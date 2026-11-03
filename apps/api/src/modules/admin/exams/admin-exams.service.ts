@@ -411,7 +411,7 @@ export class AdminExamsService {
       after.rankingsComputedAt != null &&
       after.endAt != null &&
       after.endAt.getTime() > Date.now();
-    if (reopened) {
+    if (reopened && after.endAt) {
       await this.prisma.$transaction([
         this.prisma.examRanking.deleteMany({ where: { examId: id } }),
         this.prisma.exam.update({ where: { id }, data: { rankingsComputedAt: null } }),

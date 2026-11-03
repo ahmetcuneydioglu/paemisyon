@@ -202,6 +202,24 @@
       "port": 3016
     },
     {
+      "name": "api-tahta",
+      "runtimeExecutable": "sh",
+      "runtimeArgs": [
+        "-c",
+        "cd /Users/ahmetcnd/Developer/paemisyon-worktrees/a0-guven-onarimi/apps/api && PORT=3021 DATABASE_URL='postgresql://postgres:doc52@localhost:55433/paemisyon?connection_limit=4' DIRECT_URL='postgresql://postgres:doc52@localhost:55433/paemisyon' NOTIFICATIONS_PROVIDER=console EMAIL_WORKER=0 NUDGE_CRON=0 exec npm run start:dev"
+      ],
+      "port": 3021
+    },
+    {
+      "name": "web-tahta",
+      "runtimeExecutable": "sh",
+      "runtimeArgs": [
+        "-c",
+        "cd /Users/ahmetcnd/Developer/paemisyon-worktrees/a0-guven-onarimi/apps/web && NEXT_PUBLIC_API_BASE_URL=http://localhost:3021/api/v1 API_BASE_URL=http://localhost:3021/api/v1 exec ./node_modules/.bin/next dev --webpack -p 3022"
+      ],
+      "port": 3022
+    },
+    {
       "name": "merkez-web",
       "runtimeExecutable": "sh",
       "runtimeArgs": [
