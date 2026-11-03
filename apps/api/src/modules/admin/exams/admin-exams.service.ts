@@ -395,7 +395,29 @@ export class AdminExamsService {
     if (exam.status === 'archived') {
       throw new BadRequestException('Arşivlenmiş deneme düzenlenemez.');
     }
-    await this.prisma.exam.update({ where: { id }, data: this.mapDto(dto) });
+    const data = this.mapDto(dto);
+    await this.prisma.exam.update({ where: { id }, data });
+    // Takvimli deneme yeniden açılırsa (pencere ileri alınır; "her gün 21:00" senaryosu):
+    // donmuş sıralama eski turda kalır, kapanış cron'u rankingsComputedAt dolu diye yeni turu
+    // atlar (3 Kas 2026 bulgusu: Haftalık Deneme-1, 2. tur katılımcıları sıralamaya girmedi).
+    // Pencere geleceğe taşındıysa dondurma sıfırlanır; sıralama yeni kapanışta TÜM resmî
+    // çözümlerle (eski + yeni tur) yeniden hesaplanır. Bir kullanıcı bir resmî çözüm: tekil indeks.
+    const after = await this.prisma.exam.findUniqueOrThrow({
+      where: { id },
+      select: { publishMode: true, endAt: true, rankingsComputedAt: true },
+    });
+    const reopened =
+      after.publishMode === 'takvimli' &&
+      after.rankingsComputedAt != null &&
+      after.endAt != null &&
+      after.endAt.getTime() > Date.now();
+    if (reopened) {
+      await this.prisma.$transaction([
+        this.prisma.examRanking.deleteMany({ where: { examId: id } }),
+        this.prisma.exam.update({ where: { id }, data: { rankingsComputedAt: null } }),
+      ]);
+      await this.audit.log(actor, 'exam.reopen', 'exam', id, { endAt: after.endAt.toISOString() });
+    }
     await this.audit.log(actor, 'exam.update', 'exam', id, { title: dto.title });
     return this.detail(id);
   }

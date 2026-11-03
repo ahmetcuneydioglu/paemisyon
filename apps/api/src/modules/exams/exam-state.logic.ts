@@ -77,7 +77,10 @@ export function canStartPractice(
     if (exam.publishMode === 'takvimli') return exam.practiceAfterEnd;
     return false; // serbest arşiv tarihi geçti: yeni çözüm yok
   }
-  // Açık pencerede tekrar çözüm resmî çözüm bittiyse açılır.
+  // Takvimli pencere resmî çözüm içindir: açıkken tekrar çözüm YOK (3 Kas 2026 kararı —
+  // "daha önce girenler bir daha giremeyecek"); kapanınca practiceAfterEnd karar verir.
+  if (exam.publishMode === 'takvimli') return false;
+  // Serbest denemede tekrar çözüm resmî çözüm bittiyse açılır.
   return my.officialStatus === 'completed';
 }
 
