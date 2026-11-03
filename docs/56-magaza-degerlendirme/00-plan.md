@@ -1,6 +1,6 @@
 # Doc 56 — Mağaza değerlendirme istemi (App Store / Google Play)
 
-Durum: **onaylı; F0+F1 yazıldı ve yerelde E2E doğrulandı** (3 Kas 2026). F2 Expo, F3 admin, F4 deploy sırada. Figma: dosya `1YZRWO3azniW8NU5CvV1BZ`,
+Durum: **onaylı; F0–F3 yazıldı ve yerelde E2E doğrulandı** (4 Kas 2026). F4 deploy (push + EAS/TestFlight) sırada; prod'da kill switch AÇIK başlar. Figma: dosya `1YZRWO3azniW8NU5CvV1BZ`,
 sayfa "Mağaza Değerlendirme (Doc 56)" (`114:263`); B koyu `114:401`, B açık `114:470`,
 B seri `116:27`, not kutusu `115:85`. A (satır içi kart) elendi, sayfada "ELENDİ" etiketiyle durur.
 
@@ -171,3 +171,26 @@ Tahmin: F0+F1 bir gün, F2 yarım gün, F3 yarım gün.
   premium yapılmalı (ücretsiz günlük soru kotası batch cevapları reddediyor) ve yalnız cevap
   anahtarı olan konu (`65aef8de…`) kullanılmalı.
 - Açık soru 2 (haftalık eşik): kodda üst %25 uygulandı; 4 (Android yedek yol): yok.
+
+## 11. F2+F3 uygulama notu (4 Kas 2026)
+
+- **Expo:** `expo-store-review` eklendi (app.config: `ios.appStoreUrl`, `android.playStoreUrl` yedek yol).
+  `src/features/review-prompt/api.ts` (tip, `PATCH` çağrısı, bellek içi bekleyen istem deposu),
+  `ReviewPromptSheet` (Figma B'ye birebir; tutamak · etiket · Lora başlık · gövde · Değerlendir · Şimdi değil),
+  `ReviewPromptHost` sekme kabuğunda (`app/(tabs)/_layout.tsx`). Sonuç ekranları (`sonuc.tsx`,
+  `deneme-sonuc`) yanıttaki `reviewPrompt`'u depoya bırakır; host, odak ekranı kapanıp sekme kabuğu
+  **odaklandıktan 900 ms sonra** açar. `X-Platform` başlığı `src/lib/api.ts`'te (ios/android).
+- **Tuzak (yaşandı):** sheet, tam ekran sonuç modalı henüz kapanırken sunulursa iOS sunumu yutar ve
+  ekran küçülmüş hâlde donar. Çözüm: `useIsFocused` (expo-router) + 900 ms pay. 450 ms yetmedi.
+- **Admin:** Ayarlar sayfasında kill switch anahtarı (`reviewPromptKillSwitch`) ve "Mağaza değerlendirme
+  hunisi · son 30 gün" tablosu (`GET /admin/review-prompts/summary?days=30`).
+- **Simülatör E2E (iPhone 17, Release derleme, yerel API :3023):** sonuç ekranı → Bugün'e dön → alt sayfa;
+  "Şimdi değil" → sunucuda `dismissed`; ikinci turda "Değerlendir" → yerel SKStoreReview diyaloğu açıldı,
+  sunucuda `accepted`. Tarif: Release paketi `.env.production.local`'ı gömer ve `env.ts` http adresi
+  reddeder → ikisi GEÇİCİ değiştirilip derlendi, sonra geri alındı (commit'te yok). Debug derleme bu
+  worktree'de linklenmiyor (Sealable/RCTReconnectingWebSocket), Release linkleniyor. Test DB'de soruların
+  çoğunun şıkkı yok: cevaplar `quiz_answers`'a SQL ile yazıldı, sonuç ekranı `paemisyon://sonuc?sessionId=`
+  derin bağlantısıyla açıldı (uygulama complete'i çağırır). Simülatörde metin girişi: ekran klavyesine
+  `tap` (duration 0.15) ile tek tek harf; `text`/pbcopy çalışmıyor.
+- **Prod etkisi:** ilk Release derlemesi yanlışlıkla canlı API'ye gitti; test hesabı adına prod'da bir yarım
+  tur açıldı (bayat tur cron'u kapatır). Başka etki yok.

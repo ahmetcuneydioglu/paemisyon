@@ -13,10 +13,18 @@ type Settings = {
   flashcardsEnabled: boolean;
   /** Ücretsiz adayın günlük kart hakkı (Doc 56 §3h); 0 = sınırsız, Premium hep sınırsız. */
   flashcardsFreeDailyLimit: number;
+  reviewPromptKillSwitch: boolean;
 };
 
 type BoolKey = 'showQuestionSource' | 'coachCikmisSinavKarti' | 'mobilAnasayfaV2' | 'flashcardsEnabled';
 const SETTINGS: { key: BoolKey; label: string; help: string }[] = [
+  {
+    key: 'reviewPromptKillSwitch',
+    label: 'Mağaza değerlendirme istemini DURDUR (kill switch)',
+    help:
+      'Açıkken hiçbir kullanıcıya "Değerlendir" alt sayfası üretilmez (Doc 56). Alt sayfayı içeren mobil sürüm ' +
+      'yayılana kadar AÇIK tutun; sonra kapatın. Sönüm: 30 günde en fazla 1 istem, kabulde 180 gün.',
+  },
   {
     key: 'mobilAnasayfaV2',
     label: 'Mobil yeni anasayfa herkese açık',
@@ -44,6 +52,10 @@ const SETTINGS: { key: BoolKey; label: string; help: string }[] = [
   },
 ];
 
+type ReviewSummary = { days: number; rows: { platform: string; moment: string; outcome: string; count: number }[] };
+const MOMENT: Record<string, string> = { streak_30: '30 gün seri', streak_7: '7 gün seri', weekly_top: 'Haftalık üst dilim', personal_best: 'Kişisel rekor', badge: 'Rozet' };
+const OUTCOME: Record<string, string> = { shown: 'Gösterildi', accepted: 'Değerlendir', dismissed: 'Şimdi değil' };
+
 /** Uygulama ayarları — tüm aç/kapa anahtarları tek yerde (değişiklik ~1 dk'da yansır). */
 export default function SettingsPage() {
   const qc = useQueryClient();
@@ -55,6 +67,11 @@ export default function SettingsPage() {
     mutationFn: (patch: Partial<Settings>) =>
       api<Settings>('/admin/settings', { method: 'PATCH', body: patch }),
     onSuccess: (r) => qc.setQueryData(['admin-settings'], r),
+  });
+  // Doc 56: mağaza değerlendirme hunisi (son 30 gün) — platform × an × sonuç.
+  const huni = useQuery({
+    queryKey: ['admin-review-prompt-summary'],
+    queryFn: () => api<ReviewSummary>('/admin/review-prompts/summary?days=30'),
   });
 
   return (
@@ -90,6 +107,27 @@ export default function SettingsPage() {
         </Card>
       )}
       {update.error && <div className="mt-4"><ErrorBox error={update.error} /></div>}
+      <h2 className="mt-8 mb-2 text-sm font-semibold text-slate-700">Mağaza değerlendirme hunisi · son 30 gün</h2>
+      {huni.data && (
+        <Card>
+          {huni.data.rows.length === 0 ? (
+            <p className="px-5 py-4 text-sm text-slate-500">Henüz istem gösterilmedi.</p>
+          ) : (
+            <table className="w-full text-sm">
+              <thead className="text-left text-xs text-slate-500">
+                <tr><th className="px-5 py-2">Platform</th><th className="px-5 py-2">An</th><th className="px-5 py-2">Sonuç</th><th className="px-5 py-2 text-right">Sayı</th></tr>
+              </thead>
+              <tbody>
+                {huni.data.rows.map((r) => (
+                  <tr key={`${r.platform}-${r.moment}-${r.outcome}`} className="border-t border-slate-100">
+                    <td className="px-5 py-2">{r.platform}</td><td className="px-5 py-2">{MOMENT[r.moment] ?? r.moment}</td><td className="px-5 py-2">{OUTCOME[r.outcome] ?? r.outcome}</td><td className="px-5 py-2 text-right tabular-nums">{r.count}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          )}
+        </Card>
+      )}
     </div>
   );
 }

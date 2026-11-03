@@ -31,6 +31,7 @@ import { AdminUsersService } from './users/admin-users.service';
 import { AdminLawArticlesService } from './law-articles/admin-law-articles.service';
 import { AuditService } from './audit.service';
 import { SETTING_KEYS, SettingsService } from '../../infra/settings/settings.service';
+import { ReviewPromptService } from '../review-prompt/review-prompt.service';
 import { ReportsService } from '../reports/reports.service';
 import { UpsertQuestionDto } from './dto/upsert-question.dto';
 import { UpsertLawArticleDto } from './dto/law-article.dto';
@@ -61,6 +62,7 @@ export class AdminController {
     private readonly audit: AuditService,
     private readonly reports: ReportsService,
     private readonly settings: SettingsService,
+    private readonly reviewPrompts: ReviewPromptService,
   ) {}
 
   // ── Mevzuat kimliği (Doc 29 §17): kısaltma/alias/tür/resmî URL ──
@@ -100,6 +102,11 @@ export class AdminController {
       mobilAnasayfaV2: await this.settings.mobilAnasayfaV2(),
       flashcardsEnabled: await this.settings.flashcardsEnabled(),
       flashcardsFreeDailyLimit: await this.settings.flashcardsFreeDailyLimit(),
+      // Doc 56: mağaza değerlendirme istemi kill switch (açıkken hiç istem üretilmez).
+      reviewPromptKillSwitch: await this.settings.getBool(
+        SETTING_KEYS.reviewPromptKillSwitch,
+        false,
+      ),
     };
   }
 
@@ -126,6 +133,7 @@ export class AdminController {
       mobilAnasayfaV2?: boolean;
       flashcardsEnabled?: boolean;
       flashcardsFreeDailyLimit?: number;
+      reviewPromptKillSwitch?: boolean;
     },
   ) {
     if (body.flashcardsFreeDailyLimit !== undefined) {
@@ -139,6 +147,7 @@ export class AdminController {
       [SETTING_KEYS.coachCikmisSinavKarti, body.coachCikmisSinavKarti],
       [SETTING_KEYS.mobilAnasayfaV2, body.mobilAnasayfaV2],
       [SETTING_KEYS.flashcardsEnabled, body.flashcardsEnabled],
+      [SETTING_KEYS.reviewPromptKillSwitch, body.reviewPromptKillSwitch],
     ];
     for (const [key, value] of degisenler) {
       if (typeof value !== 'boolean') continue;
@@ -620,5 +629,13 @@ export class AdminController {
   @Roles('admin')
   auditList(@Query('page') page?: string) {
     return this.audit.list(page ? Number(page) : 1);
+  }
+
+  /// Doc 56: mağaza değerlendirme hunisi — platform × an × sonuç (son N gün, varsayılan 30).
+  @Get('review-prompts/summary')
+  @Roles('admin')
+  reviewPromptSummary(@Query('days') days?: string) {
+    const n = Math.min(365, Math.max(1, Number(days) || 30));
+    return this.reviewPrompts.summary(n);
   }
 }

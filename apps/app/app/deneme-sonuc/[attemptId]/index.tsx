@@ -4,8 +4,10 @@ import { View } from "react-native";
 import { CourseBreakdown, ResultHero, WeakTopicCard } from "@/components/domain";
 import { AppText, Badge, Button, Card, IconButton, Notice, Screen, SectionHeader, Skeleton, StatTile } from "@/components/ui";
 import { fmtDate, fmtDuration, fmtNet, rankSentence, useAttempt } from "@/features/exams/queries";
+import { setPendingReviewPrompt } from "@/features/review-prompt/api";
 import { ApiError } from "@/lib/api";
 import { useTheme } from "@/theme/ThemeProvider";
+import { useEffect } from "react";
 
 /**
  * Deneme sonucu (Doc 50 M4, Figma birebir): "DENEME SONUCU" + büyük net + alt satır; D/Y/B;
@@ -17,6 +19,10 @@ export default function DenemeSonucScreen() {
   const { colors, space } = useTheme();
   const p = useLocalSearchParams<{ attemptId: string }>();
   const q = useAttempt(p.attemptId ?? null);
+  // Doc 56: haftalık üst dilim istemi, sonuçtan sekmelere dönünce açılır.
+  useEffect(() => {
+    if (q.data?.reviewPrompt) setPendingReviewPrompt(q.data.reviewPrompt);
+  }, [q.data]);
   const d = q.data;
 
   const inProgress = q.isError && q.error instanceof ApiError && q.error.code === "EXAM_IN_PROGRESS";

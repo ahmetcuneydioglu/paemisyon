@@ -2,7 +2,7 @@ import { useRouter } from "expo-router";
 import { ArrowLeft, Bell, Inbox, Play, Search, Star } from "lucide-react-native";
 import { useState } from "react";
 import { View } from "react-native";
-import { CountdownHeader, CourseTile, FeedbackPanel, FlashCard, FlashcardEntry, FlashcardKindBadge, FlashcardResultPanel, FlashcardStateBar, LegislationRow, NotificationRow, QuestionMetaRow, QuestionOption, QuestionStem, RatingBar, ResultPanel, SessionProgress, SessionTitleBlock, TaskHero, ToolRow, UndoStrip, type OptionState, ShareQuestionCard, CourseCard, ResumeStrip, TestCard, CoveragePanel, UpsellStrip, ExamContextLine, ForYouList, LeaderboardTeaser, NextStepCard, RouteList, WeekSummaryLine } from "@/components/domain";
+import { CountdownHeader, CourseTile, FeedbackPanel, FlashCard, FlashcardEntry, FlashcardKindBadge, FlashcardResultPanel, FlashcardStateBar, LegislationRow, NotificationRow, QuestionMetaRow, QuestionOption, QuestionStem, RatingBar, ResultPanel, SessionProgress, SessionTitleBlock, TaskHero, ToolRow, UndoStrip, type OptionState, ShareQuestionCard, CourseCard, ResumeStrip, TestCard, CoveragePanel, UpsellStrip, ExamContextLine, ForYouList, LeaderboardTeaser, NextStepCard, ReviewPromptSheet, RouteList, WeekSummaryLine } from "@/components/domain";
 import type { Flashcard } from "@/features/flashcards/queries";
 import type { InboxItem } from "@/features/notifications/queries";
 import type { ShareCardData } from "@/features/quiz/share";
@@ -109,6 +109,7 @@ export default function GaleriScreen() {
   const { colors, space, preference, setPreference } = useTheme();
   const [chip, setChip] = useState<"coach" | "course" | "wrongs">("coach");
   const [sheet, setSheet] = useState(false);
+  const [reviewSheet, setReviewSheet] = useState<"seri" | "varsayilan" | null>(null);
   const [picked, setPicked] = useState<string | null>(null);
   const [kartArka, setKartArka] = useState(false);
   const [kartFavori, setKartFavori] = useState(false);
@@ -267,6 +268,21 @@ export default function GaleriScreen() {
           />
           <LeaderboardTeaser data={{ period: "today", scorers: 0, top: [], me: null, line: "Tahta bugün bomboş — ilk sırayı kapma şansı." }} onPress={() => {}} />
           <WeekSummaryLine left="142 soru · 3/5 gün" right="Komiser Yardımcısı" />
+          {/* Doc 56: mağaza değerlendirme alt sayfası — metinler sunucudan gelir; burada iki örnek. */}
+          <View style={{ flexDirection: "row", gap: 12 }}>
+            <Button title="Değerlendirme · varsayılan" variant="secondary" size="sm" onPress={() => setReviewSheet("varsayilan")} />
+            <Button title="Değerlendirme · seri" variant="secondary" size="sm" onPress={() => setReviewSheet("seri")} />
+          </View>
+          <ReviewPromptSheet
+            visible={reviewSheet != null}
+            prompt={
+              reviewSheet === "seri"
+                ? { id: "g", moment: "streak_7", label: "7 günlük seri", title: "7 gündür buradasın.", body: "Bu düzeni Paemisyon'la kurduysan mağazada anlat. Bir sonraki aday belki senin cümlenle başlar." }
+                : { id: "g", moment: "personal_best", label: "Bir dakikan var mı?", title: "Bugün iyi gitti.", body: "Paemisyon'la çalışmak hoşuna gidiyorsa mağazadaki değerlendirmen bizim için çok şey ifade eder." }
+            }
+            onRate={() => setReviewSheet(null)}
+            onDismiss={() => setReviewSheet(null)}
+          />
           <View style={{ flexDirection: "row", gap: 12 }}>
             <CourseCard name="Genel Kültür ve Analitik Düşünme" accuracyPct={31} band="weak" note="Sınavda %30" onPress={() => {}} />
             <CourseCard name="Polis Mevzuatı" accuracyPct={null} band="new" note="Henüz başlanmadı" onPress={() => {}} />

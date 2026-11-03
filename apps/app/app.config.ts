@@ -25,6 +25,8 @@ const config: ExpoConfig = {
   locales: { tr: "./locales/tr.json" },
   ios: {
     bundleIdentifier: "com.paemisyon.paemisyon",
+    // expo-store-review yedek yolu (yerel istem yoksa mağaza sayfası) — Doc 56.
+    appStoreUrl: "https://apps.apple.com/tr/app/paemisyon/id6802087692",
     // buildNumber EAS'ta uzaktan tutulur (appVersionSource: remote); burada yazılmaz.
     // Ücretli takım (mağaza profillerinin takımı); kişisel takım yetenekleri imzalayamaz.
     appleTeamId: "3U4QPG9Q82",
@@ -44,6 +46,7 @@ const config: ExpoConfig = {
   },
   android: {
     package: "com.paemisyon.paemisyon",
+    playStoreUrl: "https://play.google.com/store/apps/details?id=com.paemisyon.paemisyon",
     versionCode: 1,
     adaptiveIcon: {
       backgroundColor: "#121A26",

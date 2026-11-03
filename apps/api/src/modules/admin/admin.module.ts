@@ -22,6 +22,7 @@ import { AdminFlashcardsService } from './flashcards/admin-flashcards.service';
 import { PublicModule } from '../public/public.module';
 import { ReportsModule } from '../reports/reports.module';
 import { ExamsModule } from '../exams/exams.module';
+import { ReviewPromptModule } from '../review-prompt/review-prompt.module';
 import { QuizModule } from '../quiz/quiz.module';
 import { AdminExamAdjustmentsService } from './exams/admin-exam-adjustments.service';
 
@@ -30,7 +31,7 @@ import { AdminExamAdjustmentsService } from './exams/admin-exam-adjustments.serv
  * burada, panelde değil. RBAC: admin/editor (Doc 8), audit log her işlemde.
  */
 @Module({
-  imports: [ReportsModule, PublicModule, ExamsModule, QuizModule], // ExamsModule/QuizModule: Doc 50 soru paketi, iptal yeniden puanlama
+  imports: [ReportsModule, PublicModule, ExamsModule, QuizModule, ReviewPromptModule], // ExamsModule/QuizModule: Doc 50 soru paketi, iptal yeniden puanlama
   controllers: [
     AdminController,
     AdminExamsController,
