@@ -13,6 +13,8 @@ export default function DenemelerLayout() {
       <Stack.Screen name="siralama/[examId]" options={{ title: "Sıralama" }} />
       <Stack.Screen name="[examId]/kurallar" options={{ title: "Başlamadan önce" }} />
       <Stack.Screen name="kisisel" options={{ title: "Kişisel deneme" }} />
+      <Stack.Screen name="haftalik" options={{ title: "Haftalık" }} />
+      <Stack.Screen name="serbest" options={{ title: "Serbest" }} />
     </Stack>
   );
 }

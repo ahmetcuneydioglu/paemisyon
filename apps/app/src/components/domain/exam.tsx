@@ -12,6 +12,14 @@ import { useTheme } from "@/theme/ThemeProvider";
  * ile aynı adlar; kurallar sunucuda, bileşenler yalnız çizer.
  */
 
+/** PAEM standardı 100 soru · 150 dk: standartsa yazılmaz, yalnız farklıysa (IA kararı 4, 3 Kas). */
+export function examMeta(exam: Pick<ExamListItem, "questionCount" | "durationMinutes" | "isPremium">): string | null {
+  const parts: string[] = [];
+  if (exam.questionCount !== 100 || exam.durationMinutes !== 150) parts.push(`${exam.questionCount} soru · ${exam.durationMinutes} dk`);
+  if (exam.isPremium) parts.push("Premium");
+  return parts.length ? parts.join(" · ") : null;
+}
+
 const DIFFICULTY: Record<"kolay" | "orta" | "zor", { label: string; tone: "success" | "accent" | "danger" }> = {
   kolay: { label: "Kolay", tone: "success" },
   orta: { label: "Orta", tone: "accent" },
@@ -35,9 +43,11 @@ export function ExamCard({ exam, onAction }: { exam: ExamListItem; onAction: (a:
             </View>
           ) : null}
           <AppText variant="heading">{exam.title}</AppText>
-          <AppText variant="bodySm" tone="soft">
-            {exam.questionCount} soru · {exam.durationMinutes} dk
-          </AppText>
+          {examMeta(exam) ? (
+            <AppText variant="bodySm" tone="soft">
+              {examMeta(exam)}
+            </AppText>
+          ) : null}
         </View>
         <View style={{ alignItems: "flex-end", gap: 6 }}>
           {exam.isPremium ? <Badge tone="warning">Premium</Badge> : null}
@@ -507,7 +517,7 @@ export function RemindButton({ examId, variant = "secondary", style }: { examId:
  * HAFTALIK rozeti ve tarih satırı, sağda mini sayaç (beklemede "2g 14s", açıkken kalan süre),
  * durum satırı, duruma göre düğmeler. `now` sayaç için (saniyede bir).
  */
-export function WeeklyExamCard({ exam, now, onAction }: { exam: ExamListItem; now: number; onAction: (a: ExamCardAction) => void }) {
+export function WeeklyExamCard({ exam, now, onAction, showKind = true }: { exam: ExamListItem; now: number; onAction: (a: ExamCardAction) => void; /** Tür listesinde rozet gereksiz (ekran zaten haftalık). */ showKind?: boolean }) {
   const { colors, radius, space } = useTheme();
   const m = examCardModel(exam);
   const start = Date.parse(exam.startAt), end = Date.parse(exam.endAt);
@@ -527,19 +537,23 @@ export function WeeklyExamCard({ exam, now, onAction }: { exam: ExamListItem; no
       <View style={{ flexDirection: "row", justifyContent: "space-between", alignItems: "flex-start", gap: space.s3 }}>
         <View style={{ flex: 1, gap: 6 }}>
           <View style={{ flexDirection: "row", alignItems: "center", gap: space.s2, flexWrap: "wrap" }}>
-            <View style={{ backgroundColor: colors.surface, borderRadius: radius.pill, paddingHorizontal: 9, paddingVertical: 4 }}>
-              <AppText variant="label" style={{ color: colors.liveInk }}>
-                HAFTALIK
-              </AppText>
-            </View>
+            {showKind ? (
+              <View style={{ backgroundColor: colors.surface, borderRadius: radius.pill, paddingHorizontal: 9, paddingVertical: 4 }}>
+                <AppText variant="label" style={{ color: colors.liveInk }}>
+                  HAFTALIK
+                </AppText>
+              </View>
+            ) : null}
             <AppText variant="subhead" style={{ color: colors.liveInk }}>
               {weeklyWhen(exam.startAt)}
             </AppText>
           </View>
           <AppText variant="heading">{exam.title}</AppText>
-          <AppText variant="bodySm" tone="soft">
-            {exam.questionCount} soru · {exam.durationMinutes} dk{exam.isPremium ? " · Premium" : ""}
-          </AppText>
+          {examMeta(exam) ? (
+            <AppText variant="bodySm" tone="soft">
+              {examMeta(exam)}
+            </AppText>
+          ) : null}
         </View>
         {counter ? (
           <View style={{ alignItems: "flex-end" }} accessible accessibilityLabel={`${counter[0]} kaldı`}>

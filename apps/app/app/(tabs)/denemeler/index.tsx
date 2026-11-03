@@ -1,44 +1,43 @@
 import { useRouter } from "expo-router";
-import { Archive, CalendarClock, Sparkles } from "lucide-react-native";
+import { Archive, CalendarClock, ClipboardList, Sparkles } from "lucide-react-native";
 import { Pressable, View } from "react-native";
-import { ExamCard, RemindButton, WeeklyCountdown, WeeklyExamCard } from "@/components/domain";
-import { AppText, Badge, Button, Card, EmptyState, ListRow, Notice, ProgressBar, Screen, SectionHeader, Skeleton } from "@/components/ui";
-import { countdown, fmtDate, fmtNet, heroFor, mmss, pastExamShortName, useDashboard, useExamHistory, useExams, usePastExams, type ExamCardAction, type ExamListItem } from "@/features/exams/queries";
+import { RemindButton, WeeklyCountdown, examMeta } from "@/components/domain";
+import { ActionTile, AppText, Badge, Button, Card, ListRow, Notice, ProgressBar, Screen, Skeleton } from "@/components/ui";
+import { countdown, fmtDate, fmtNet, heroFor, mmss, pastExamShortName, useDashboard, useExamHistory, useExams, usePastExams, type ExamListItem } from "@/features/exams/queries";
 import { useNow } from "@/lib/use-now";
 import { useTheme } from "@/theme/ThemeProvider";
 
 /**
- * Deneme merkezi (Doc 50 M1, Figma "Denemeler V2"): "şu an" hero'su (devam eden > sıradaki
- * haftalık > sakin boşluk) + dört grup: Denemeler (serbest) · Haftalık deneme · Bana özel ·
- * Çıkmış sınavlar. Kurallar sunucuda; kart modeli `examCardModel` yalnız düğmeyi seçer.
+ * Deneme merkezi — IA "A: ızgaralı hub" (Figma 100:1329, 3 Kas 2026). Adayın tek sorusu
+ * "Şimdi ne çözeyim?": en üstte TEK cevap ("Şimdi" bloğu: canlı/devam eden > sıradaki haftalık
+ * > serbest öner), altında dört giriş kutusu (Haftalık · Serbest · Kişisel · Çıkmış), en altta
+ * son sonuç. Listeler tür ekranlarında; bir deneme bu ekranda yalnız bir kez görünür.
+ * Kurallar sunucuda; istemci yalnız durumu çizer.
  */
 export default function DenemelerScreen() {
   const router = useRouter();
-  const { colors, space } = useTheme();
+  const { space } = useTheme();
   const exams = useExams();
   const dash = useDashboard();
   const past = usePastExams();
   const history = useExamHistory();
   const list = exams.data ?? [];
   const hero = heroFor(list);
+  const now = useNow(1000, hero.kind !== "calm");
+
   const serbest = list.filter((e) => e.publishMode === "serbest");
   const haftalik = list.filter((e) => e.publishMode === "takvimli");
-  // Sayaçlar saniyede bir: hero ya da bekleyen/açık haftalık kart varken.
-  const now = useNow(1000, hero.kind !== "calm" || haftalik.some((e) => e.availability !== "closed"));
+  const nextWeekly = haftalik.filter((e) => e.availability !== "closed").sort((a, b) => Date.parse(a.startAt) - Date.parse(b.startAt))[0] ?? null;
+  const serbestNew = serbest.find((e) => e.myState === "new" && e.canStartOfficial) ?? null;
+  const serbestDone = serbest.filter((e) => e.my?.official?.status === "completed").length;
   const solvablePast = (past.data ?? []).filter((p) => p.tur === "resmi" && p.examId);
   const pe = dash.data?.personalExam;
   const peLeft = pe ? (pe.dailyAllowance == null ? null : Math.max(0, pe.dailyAllowance - pe.usedToday)) : null;
-  const lastPersonal = history.data?.kisisel[0] ?? null;
+  const h = history.data;
+  const last = h ? [...h.denemeler, ...h.haftalik, ...h.kisisel].filter((x) => x.completedAt).sort((a, b) => Date.parse(b.completedAt!) - Date.parse(a.completedAt!))[0] ?? null : null;
 
-  const act = (e: ExamListItem, a: ExamCardAction) => {
-    switch (a.go.kind) {
-      case "rules": return router.push({ pathname: "/(tabs)/denemeler/[examId]/kurallar", params: { examId: e.id, role: a.go.role ?? "" } });
-      case "play": return router.push({ pathname: "/seans", params: { exam: e.id, role: a.go.role ?? "", title: e.title } });
-      case "result": return router.push({ pathname: "/deneme-sonuc/[attemptId]", params: { attemptId: a.go.attemptId } });
-      case "ranking": return router.push({ pathname: "/(tabs)/denemeler/siralama/[examId]", params: { examId: e.id, title: e.title } });
-      case "paywall": return router.push("/paywall");
-    }
-  };
+  const rules = (e: ExamListItem, role = "") => router.push({ pathname: "/(tabs)/denemeler/[examId]/kurallar", params: { examId: e.id, role } });
+  const play = (e: ExamListItem) => router.push({ pathname: "/seans", params: { exam: e.id, role: e.my?.active?.role ?? "", title: e.title } });
 
   return (
     <Screen>
@@ -46,91 +45,59 @@ export default function DenemelerScreen() {
         <AppText variant="bodySm" tone="soft">
           PAEM hazırlığı
         </AppText>
-        <AppText variant="title">Denemeler</AppText>
+        <AppText variant="title" accessibilityRole="header">
+          Denemeler
+        </AppText>
       </View>
 
       {exams.isPending ? (
-        <Skeleton height={180} radiusKey="card" />
+        <Skeleton height={200} radiusKey="card" />
       ) : exams.isError ? (
         <Notice tone="error" title="Denemeler yüklenemedi">
           {exams.error.message}
         </Notice>
+      ) : hero.kind === "active" ? (
+        <ActiveHero exam={hero.exam} now={now} onPress={() => play(hero.exam)} />
+      ) : hero.kind === "weekly" ? (
+        <WeeklyHero exam={hero.exam} now={now} onPrimary={() => (hero.exam.myState === "completed" && hero.exam.my?.official ? router.push({ pathname: "/deneme-sonuc/[attemptId]", params: { attemptId: hero.exam.my.official.attemptId } }) : hero.exam.myState === "in_progress" ? play(hero.exam) : rules(hero.exam))} onRules={() => rules(hero.exam)} />
       ) : (
-        <>
-          {hero.kind === "active" ? <ActiveHero exam={hero.exam} now={now} onPress={() => act(hero.exam, { label: "", variant: "primary", go: { kind: "play", role: hero.exam.my.active?.role ?? undefined } })} /> : null}
-          {hero.kind === "weekly" ? <WeeklyHero exam={hero.exam} now={now} onRules={() => act(hero.exam, { label: "", variant: "ghost", go: { kind: "rules" } })} /> : null}
-          {hero.kind === "calm" ? (
-            <Card tone="alt" style={{ gap: 4 }}>
-              <AppText variant="subhead">Bu hafta deneme yok</AppText>
-              <AppText variant="bodySm" tone="soft">
-                Serbest denemelerden birini çöz; sıradaki haftalık deneme açıklanınca burada görünür.
-              </AppText>
-            </Card>
-          ) : null}
-
-          {list.length === 0 ? <EmptyState icon={CalendarClock} title="Henüz deneme yok" body="İlk deneme yayınlanınca burada görünür. Bu arada kişisel deneme oluşturabilirsin." action={<Button title="Kişisel deneme oluştur" variant="secondary" onPress={() => router.push("/(tabs)/denemeler/kisisel")} />} /> : null}
-
-          {serbest.length > 0 ? (
-            <View style={{ gap: space.s2 }}>
-              <SectionHeader title="Denemeler" />
-              {serbest.map((e) => (
-                <ExamCard key={e.id} exam={e} onAction={(a) => act(e, a)} />
-              ))}
-            </View>
-          ) : null}
-
-          {haftalik.length > 0 ? (
-            <View style={{ gap: space.s2 }}>
-              <SectionHeader title="Haftalık deneme" action="Geçmiş" onAction={() => router.push("/(tabs)/ben/denemelerim")} />
-              {haftalik.map((e) => (
-                <WeeklyExamCard key={e.id} exam={e} now={now} onAction={(a) => act(e, a)} />
-              ))}
-            </View>
-          ) : null}
-        </>
+        <SuggestHero exam={serbestNew} onStart={() => serbestNew && rules(serbestNew)} onPersonal={() => router.push("/(tabs)/denemeler/kisisel")} />
       )}
 
+      {/* Dört giriş kutusu (2×2) */}
       <View style={{ gap: space.s2 }}>
-        <SectionHeader title="Bana özel" />
-        <Card style={{ gap: space.s3 }}>
-          <View style={{ flexDirection: "row", alignItems: "center", gap: space.s2 }}>
-            <Sparkles color={colors.accentInk} size={18} strokeWidth={1.75} />
-            <AppText variant="heading">Kişisel deneme</AppText>
-          </View>
-          <AppText variant="bodySm" tone="soft">
-            Yanlışlarından ve zayıf konularından seçilen sorular; resmî PAEM dağılımıyla. Sıralamaya girmez, sana ölçüm.
-          </AppText>
-          {pe && peLeft != null ? (
-            <AppText variant="bodySm" tone="soft">
-              {peLeft === 0 ? "Bugünkü hakkını kullandın — yarın yenileniyor. Premium'da sınırsız." : `Bugün ${peLeft} hakkın var · ${pe.maxQuestions} soruya kadar`}
-            </AppText>
-          ) : null}
-          <Button title={peLeft === 0 ? "Premium ile aç" : "Oluştur"} variant={peLeft === 0 ? "secondary" : "primary"} onPress={() => (peLeft === 0 ? router.push("/paywall") : router.push("/(tabs)/denemeler/kisisel"))} />
-          {lastPersonal ? (
-            <ListRow title={`Son: ${lastPersonal.completedAt ? fmtDate(lastPersonal.completedAt, { day: "numeric", month: "short" }) : "—"} · ${fmtNet(lastPersonal.score)} net`} subtitle="Sonucu gör" divider={false} onPress={() => router.push({ pathname: "/deneme-sonuc/[attemptId]", params: { attemptId: lastPersonal.attemptId } })} />
-          ) : null}
-        </Card>
+        <View style={{ flexDirection: "row", gap: space.s2 }}>
+          <ActionTile icon={CalendarClock} title="Haftalık" subtitle={nextWeekly ? `${fmtDate(nextWeekly.startAt, { weekday: "long", hour: "2-digit", minute: "2-digit" })} · ${countdown(Date.parse(nextWeekly.startAt) - now)}` : haftalik.length ? `${haftalik.length} geçmiş deneme` : "Yakında"} onPress={() => router.push("/(tabs)/denemeler/haftalik")} />
+          <ActionTile icon={ClipboardList} title="Serbest" subtitle={serbest.length ? `${serbest.length} deneme · ${serbestDone} çözüldü` : "Henüz yok"} onPress={() => router.push("/(tabs)/denemeler/serbest")} />
+        </View>
+        <View style={{ flexDirection: "row", gap: space.s2 }}>
+          <ActionTile icon={Sparkles} title="Kişisel" subtitle={peLeft == null ? "Sana özel · sınırsız" : peLeft === 0 ? "Bugünkü hak doldu" : `Bugün ${peLeft} hak`} onPress={() => router.push("/(tabs)/denemeler/kisisel")} />
+          <ActionTile icon={Archive} title="Çıkmış sınavlar" subtitle={solvablePast.length ? solvablePast.slice(0, 3).map(pastExamShortName).map((n) => n.replace(/ · \d{4}$/, "")).join(" · ") : "Resmî sınavlar"} onPress={() => router.push("/(tabs)/denemeler/cikmis")} />
+        </View>
       </View>
 
-      <View style={{ gap: space.s2 }}>
-        <SectionHeader title="Çıkmış sınavlar" action={solvablePast.length > 0 ? "Tümü" : undefined} onAction={() => router.push("/(tabs)/denemeler/cikmis")} />
-        <Card style={{ paddingVertical: 0 }}>
-          {solvablePast.length === 0 ? (
-            <ListRow title="PAEM çıkmış sorular" subtitle="Resmî sınavları sınav gibi çöz" leading={<Archive color={colors.accent} size={20} strokeWidth={1.75} />} divider={false} onPress={() => router.push("/(tabs)/denemeler/cikmis")} />
-          ) : (
-            solvablePast.slice(0, 3).map((p, i, arr) => (
-              <ListRow key={p.slug} title={pastExamShortName(p)} subtitle={`${p.soruSayisi ?? 100} gerçek soru · sınav gibi çöz`} leading={<Archive color={colors.accent} size={20} strokeWidth={1.75} />} divider={i < arr.length - 1} onPress={() => router.push({ pathname: "/(tabs)/denemeler/cikmis/[slug]", params: { slug: p.slug } })} />
-            ))
-          )}
-        </Card>
-      </View>
-
-      <Button title="Deneme geçmişin ›" variant="ghost" onPress={() => router.push("/(tabs)/ben/denemelerim")} />
+      {/* Son sonuç */}
+      <Card style={{ paddingVertical: 0 }}>
+        {history.isPending ? (
+          <Skeleton height={56} />
+        ) : last ? (
+          <ListRow
+            title="Son sonucun"
+            subtitle={`${last.title} · ${last.resultLocked ? "sonuç bekliyor" : `${fmtNet(last.score)} net`}${last.rank != null ? ` · ${last.rank}.` : ""}`}
+            trailing={<Pressable accessibilityRole="button" accessibilityLabel="Deneme geçmişi" onPress={() => router.push("/(tabs)/ben/denemelerim")} hitSlop={8}><AppText variant="subhead" tone="accentInk">Geçmiş</AppText></Pressable>}
+            chevron={false}
+            divider={false}
+            onPress={() => router.push({ pathname: "/deneme-sonuc/[attemptId]", params: { attemptId: last.attemptId } })}
+          />
+        ) : (
+          <ListRow title="Henüz çözüm yok" subtitle="İlk denemeni çöz; sonuçların ve gelişimin burada görünür." chevron={false} divider={false} />
+        )}
+      </Card>
     </Screen>
   );
 }
 
-/** Devam eden çözüm hero'su: lacivert panel, kalan süre, ilerleme, Devam et. */
+/** Devam eden çözüm: lacivert panel, kalan süre, ilerleme, tek düğme. */
 function ActiveHero({ exam, now, onPress }: { exam: ExamListItem; now: number; onPress: () => void }) {
   const { colors, radius, space } = useTheme();
   const a = exam.my.active!;
@@ -139,8 +106,8 @@ function ActiveHero({ exam, now, onPress }: { exam: ExamListItem; now: number; o
     <View accessible accessibilityLabel={`Devam eden deneme ${exam.title}, ${a.answered} / ${exam.questionCount} cevaplandı${left != null ? `, kalan süre ${mmss(left)}` : ""}`} style={{ backgroundColor: colors.panel, borderRadius: radius.panel, padding: space.s4, gap: space.s2 }}>
       <View style={{ flexDirection: "row", alignItems: "center", gap: 6 }}>
         <View style={{ width: 8, height: 8, borderRadius: 4, backgroundColor: colors.accent }} />
-        <AppText variant="label" tone="gold">
-          Devam ediyor{a.role === "practice" ? " · tekrar çözüm" : ""}
+        <AppText variant="label" tone="gold" style={{ letterSpacing: 1 }}>
+          ŞİMDİ · DEVAM EDİYOR{a.role === "practice" ? " · TEKRAR ÇÖZÜM" : ""}
         </AppText>
       </View>
       <AppText variant="heading" tone="panelInk">
@@ -165,38 +132,54 @@ function ActiveHero({ exam, now, onPress }: { exam: ExamListItem; now: number; o
   );
 }
 
-/** Sıradaki haftalık deneme hero'su: tarih rozeti, geri sayım, Hatırlat / Kuralları gör. */
-function WeeklyHero({ exam, now, onRules }: { exam: ExamListItem; now: number; onRules: () => void }) {
+/** Sıradaki/canlı haftalık: bordo panel, sayaç, tek birincil düğme + "Kuralları gör" bağlantısı. */
+function WeeklyHero({ exam, now, onPrimary, onRules }: { exam: ExamListItem; now: number; onPrimary: () => void; onRules: () => void }) {
   const { colors, radius, space } = useTheme();
   const open = exam.availability === "open";
   const left = open ? Date.parse(exam.endAt) - now : Date.parse(exam.startAt) - now;
+  const primary = open ? (exam.myState === "completed" ? "Sonucunu gör" : exam.myState === "in_progress" ? "Devam et" : "Katıl") : null;
   return (
-    <View accessible accessibilityLabel={`Haftalık deneme ${exam.title}, ${fmtDate(exam.startAt)}${open ? `, pencere açık, ${countdown(left)} kaldı` : `, ${countdown(left)} kaldı`}`} style={{ backgroundColor: colors.live, borderRadius: radius.panel, padding: space.s4, gap: space.s2 }}>
+    <View accessible accessibilityLabel={`Şimdi: haftalık deneme ${exam.title}, ${fmtDate(exam.startAt)}${open ? `, pencere açık, ${countdown(left)} kaldı` : `, ${countdown(left)} kaldı`}`} style={{ backgroundColor: colors.live, borderRadius: radius.panel, padding: space.s4, gap: space.s2 }}>
       <View style={{ flexDirection: "row", alignItems: "center", gap: space.s2 }}>
-        <Badge tone="accent">{open ? "Pencere açık" : fmtDate(exam.startAt, { weekday: "long", hour: "2-digit", minute: "2-digit" })}</Badge>
         <AppText variant="label" tone="panelSoft" style={{ letterSpacing: 1 }}>
-          HAFTALIK DENEME
+          ŞİMDİ · HAFTALIK DENEME
         </AppText>
+        <Badge tone="accent">{open ? "Pencere açık" : fmtDate(exam.startAt, { weekday: "long", hour: "2-digit", minute: "2-digit" })}</Badge>
       </View>
       <AppText variant="heading" tone="panelInk">
         {exam.title}
       </AppText>
       <WeeklyCountdown msLeft={left} />
       <AppText variant="bodySm" tone="panelSoft">
-        {exam.questionCount} soru · {exam.durationMinutes} dk · {exam.participantCount.toLocaleString("tr-TR")} {open ? "kişi girdi" : "kişi katılacak"}{open ? ` · ${fmtDate(exam.endAt, { hour: "2-digit", minute: "2-digit" })}'a kadar giriş açık` : ""}
+        {examMeta(exam) ? `${examMeta(exam)} · ` : ""}{exam.participantCount.toLocaleString("tr-TR")} {open ? "kişi girdi" : "kişi katılacak"}{open ? ` · ${fmtDate(exam.endAt, { hour: "2-digit", minute: "2-digit" })}'a kadar giriş açık` : ""}
       </AppText>
-      <View style={{ flexDirection: "row", gap: space.s2 }}>
-        {open ? (
-          <Button title={exam.myState === "completed" ? "Sonucunu gör" : exam.myState === "in_progress" ? "Devam et" : "Katıl"} style={{ flex: 1 }} onPress={onRules} />
-        ) : (
-          <RemindButton examId={exam.id} style={{ flex: 1 }} />
-        )}
-        <Pressable accessibilityRole="button" onPress={onRules} style={{ flex: 1, minHeight: 52, alignItems: "center", justifyContent: "center" }}>
+      <View style={{ flexDirection: "row", gap: space.s2, alignItems: "center" }}>
+        {primary ? <Button title={primary} style={{ flex: 1 }} onPress={onPrimary} /> : <RemindButton examId={exam.id} style={{ flex: 1 }} />}
+        <Pressable accessibilityRole="button" onPress={onRules} style={{ minHeight: 52, paddingHorizontal: space.s4, alignItems: "center", justifyContent: "center" }}>
           <AppText variant="subhead" tone="panelInk">
             Kuralları gör
           </AppText>
         </Pressable>
       </View>
+    </View>
+  );
+}
+
+/** Haftalık yokken: çözülmemiş bir serbest deneme öner; o da yoksa kişisel deneme. */
+function SuggestHero({ exam, onStart, onPersonal }: { exam: ExamListItem | null; onStart: () => void; onPersonal: () => void }) {
+  const { colors, radius, space } = useTheme();
+  return (
+    <View accessible accessibilityLabel={exam ? `Şimdi: ${exam.title} denemesine başla` : "Şimdi: kişisel deneme oluştur"} style={{ backgroundColor: colors.panel, borderRadius: radius.panel, padding: space.s4, gap: space.s2 }}>
+      <AppText variant="label" tone="gold" style={{ letterSpacing: 1 }}>
+        ŞİMDİ
+      </AppText>
+      <AppText variant="heading" tone="panelInk">
+        {exam ? exam.title : "Sana özel bir deneme"}
+      </AppText>
+      <AppText variant="bodySm" tone="panelSoft">
+        {exam ? `Bu hafta haftalık deneme yok; serbest denemeyle ölç. ${exam.participantCount.toLocaleString("tr-TR")} kişi çözdü.` : "Bu hafta haftalık deneme yok; yanlışlarından ve zayıf konularından kurulan bir deneme çöz."}
+      </AppText>
+      <Button title={exam ? "Başla" : "Kişisel deneme oluştur"} onPress={exam ? onStart : onPersonal} />
     </View>
   );
 }
