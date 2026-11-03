@@ -25,6 +25,7 @@ import { QuestionsModule } from './modules/questions/questions.module';
 import { QuizModule } from './modules/quiz/quiz.module';
 import { ReportsModule } from './modules/reports/reports.module';
 import { ReviewModule } from './modules/review/review.module';
+import { ReviewPromptModule } from './modules/review-prompt/review-prompt.module';
 import { ListsModule } from './modules/lists/lists.module';
 import { PlanModule } from './modules/plan/plan.module';
 import { RoomsModule } from './modules/rooms/rooms.module';
@@ -76,6 +77,7 @@ import { FlashcardsModule } from './modules/flashcards/flashcards.module';
     QuizModule,
     ProgressModule,
     ReviewModule,
+    ReviewPromptModule,
     ListsModule,
     PlanModule,
     RoomsModule,

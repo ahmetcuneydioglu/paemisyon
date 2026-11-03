@@ -1,4 +1,14 @@
-import { Body, Controller, Get, Param, ParseUUIDPipe, Post, UseGuards } from '@nestjs/common';
+import {
+  Body,
+  Controller,
+  Get,
+  Headers,
+  Param,
+  ParseUUIDPipe,
+  Post,
+  UseGuards,
+} from '@nestjs/common';
+import { normalizePlatform } from '../review-prompt/review-prompt.logic';
 import { JwtAuthGuard } from '../auth/guards/jwt-auth.guard';
 import { OptionalJwtGuard } from '../auth/guards/optional-jwt.guard';
 import { CurrentUser } from '../auth/decorators/current-user.decorator';
@@ -40,8 +50,9 @@ export class ExamsController {
   attempt(
     @CurrentUser() user: AuthenticatedUser,
     @Param('attemptId', ParseUUIDPipe) attemptId: string,
+    @Headers('x-platform') platform?: string,
   ) {
-    return this.exams.getAttempt(user, attemptId);
+    return this.exams.getAttempt(user, attemptId, { platform: normalizePlatform(platform) });
   }
 
   /** Cevap incelemesi listesi (Doc 50 M5): soru bazlı Türkiye oranı ve süre Premium. */

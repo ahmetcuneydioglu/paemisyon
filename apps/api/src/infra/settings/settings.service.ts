@@ -34,6 +34,13 @@ export const SETTING_KEYS = {
   notificationsEnvironment: 'notifications.environment',
   /// Saklama süreleri JSON: {"inbox":180,"deliveries":90,"events":180,"staleDevices":90,"inactiveDevices":180}
   notificationsRetention: 'notifications.retention',
+  /// Mağaza değerlendirme istemi (Doc 56). Kill switch açıkken hiçbir
+  /// kullanıcıya istem üretilmez; prod'da AÇIK başlar, mobil sürüm yayılınca kapanır.
+  reviewPromptKillSwitch: 'review_prompt.kill_switch',
+  /// İki istem arası en az gün (gösterim ya da 'Şimdi değil' sonrası); varsayılan 30.
+  reviewPromptMinGapDays: 'review_prompt.min_gap_days',
+  /// 'Değerlendir' denmişse bir sonraki istem için en az gün; varsayılan 180.
+  reviewPromptAfterAcceptDays: 'review_prompt.after_accept_days',
 } as const;
 
 /**

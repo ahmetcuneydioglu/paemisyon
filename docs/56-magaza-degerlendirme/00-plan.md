@@ -1,6 +1,6 @@
 # Doc 56 — Mağaza değerlendirme istemi (App Store / Google Play)
 
-Durum: **plan, onay bekliyor** (3 Kas 2026). Figma: dosya `1YZRWO3azniW8NU5CvV1BZ`,
+Durum: **onaylı; F0+F1 yazıldı ve yerelde E2E doğrulandı** (3 Kas 2026). F2 Expo, F3 admin, F4 deploy sırada. Figma: dosya `1YZRWO3azniW8NU5CvV1BZ`,
 sayfa "Mağaza Değerlendirme (Doc 56)" (`114:263`); B koyu `114:401`, B açık `114:470`,
 B seri `116:27`, not kutusu `115:85`. A (satır içi kart) elendi, sayfada "ELENDİ" etiketiyle durur.
 
@@ -152,3 +152,22 @@ Tahmin: F0+F1 bir gün, F2 yarım gün, F3 yarım gün.
 3. "Destek e-postası gönderdi" sinyali bizde yok; şimdilik yalnız soru bildirimi sayılır.
 4. Android'de In-App Review bazen hiç görünmez (Play kotası); yedek olarak "Değerlendir"e ikinci
    basışta mağaza sayfası açılsın mı? Öneri: hayır, tek basış; sessiz kalırsa kalır.
+
+## 10. F0+F1 uygulama notu (3 Kas 2026)
+
+- Kod: `apps/api/src/modules/review-prompt/` (`review-prompt.logic.ts` saf mantık + 9 spec,
+  `review-prompt.service.ts`, `review-prompt.controller.ts` `PATCH /me/review-prompts/:id`,
+  modül). `completeSession(userId, sessionId, reason, { platform })` ve
+  `ExamsService.getAttempt(user, id, { platform })` `reviewPrompt` alanı döndürür; platform
+  `X-Platform` başlığından (`ios` | `android`), yoksa hiç sorgu yapılmaz.
+- Yarış koruması: `INSERT … WHERE NOT EXISTS (son minGapDays)` tek SQL; `setOutcome` yalnız
+  `shown` satırını değiştirir, ikinci bildirim `changed:false` döner.
+- Ayar anahtarları: `review_prompt.kill_switch`, `review_prompt.min_gap_days`,
+  `review_prompt.after_accept_days` (Settings önbelleği 60 sn).
+- Yerel E2E (Docker `paem-ozet-pg`, :55432/paem; API `api-doc56` :3023; betik scratchpad
+  `doc56-e2e.sh`): kişisel rekor → `personal_best` istemi; PATCH dismissed → `changed:true`,
+  tekrar → `changed:false`; ikinci tur → null (sönüm); başlıksız → null; kill switch → null;
+  seri 6→7 → `streak_7` (rozet kazanılmasına rağmen öncelik seride). Not: test kullanıcısı
+  premium yapılmalı (ücretsiz günlük soru kotası batch cevapları reddediyor) ve yalnız cevap
+  anahtarı olan konu (`65aef8de…`) kullanılmalı.
+- Açık soru 2 (haftalık eşik): kodda üst %25 uygulandı; 4 (Android yedek yol): yok.

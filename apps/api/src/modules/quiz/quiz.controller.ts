@@ -1,4 +1,13 @@
-import { Body, Controller, Get, Param, ParseUUIDPipe, Post, UseGuards } from '@nestjs/common';
+import {
+  Body,
+  Controller,
+  Get,
+  Headers,
+  Param,
+  ParseUUIDPipe,
+  Post,
+  UseGuards,
+} from '@nestjs/common';
 import { JwtAuthGuard } from '../auth/guards/jwt-auth.guard';
 import { CurrentUser } from '../auth/decorators/current-user.decorator';
 import type { AuthenticatedUser } from '../auth/auth.types';
@@ -6,6 +15,7 @@ import { QuizService } from './quiz.service';
 import { StartSessionDto } from './dto/start-session.dto';
 import { SubmitAnswerDto } from './dto/submit-answer.dto';
 import { BatchAnswersDto } from './dto/batch-answers.dto';
+import { normalizePlatform } from '../review-prompt/review-prompt.logic';
 
 /// POST /api/v1/quiz/* — quiz motoru (Doc 7 §4.4). Kimlik zorunlu.
 @Controller('quiz')
@@ -38,8 +48,14 @@ export class QuizController {
   }
 
   @Post('sessions/:id/complete')
-  complete(@CurrentUser() user: AuthenticatedUser, @Param('id', ParseUUIDPipe) id: string) {
-    return this.quiz.completeSession(user.id, id);
+  complete(
+    @CurrentUser() user: AuthenticatedUser,
+    @Param('id', ParseUUIDPipe) id: string,
+    @Headers('x-platform') platform?: string,
+  ) {
+    return this.quiz.completeSession(user.id, id, 'submitted', {
+      platform: normalizePlatform(platform),
+    });
   }
 
   /// Devam eden tur çapası (Doc 27 §2.4) — Bugün kartı + koç rayı pili.

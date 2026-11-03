@@ -222,6 +222,7 @@ model User {
   flashcardReports     FlashcardReport[]
   studyPlans           StudyPlan[]
   questionReports      QuestionReport[]
+  reviewPrompts        ReviewPrompt[]
   badges               UserBadge[]
   masterySnapshots     TopicMasterySnapshot[]
   pushTokens           PushToken[]
@@ -1505,6 +1506,28 @@ model Streak {
   user User @relation(fields: [userId], references: [id], onDelete: Cascade)
 
   @@map("streaks")
+}
+
+/// Doc 56: mağaza değerlendirme istemi kaydı. Satır sheet açılınca `shown` ile
+/// yazılır; istemci sonucu bildirince aynı satır `accepted`/`dismissed` olur.
+/// Sönüm hesabı (30 günde 1, kabulde 180 gün) bu tabloya bakar; kural sunucuda.
+model ReviewPrompt {
+  id        String   @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  userId    String   @map("user_id") @db.Uuid
+  /// 'ios' | 'android'
+  platform  String
+  /// 'streak_30' | 'streak_7' | 'weekly_top' | 'personal_best' | 'badge'
+  moment    String
+  /// 'shown' | 'accepted' | 'dismissed'
+  outcome   String   @default("shown")
+  sessionId String?  @map("session_id") @db.Uuid
+  createdAt DateTime @default(now()) @map("created_at")
+  updatedAt DateTime @updatedAt @map("updated_at")
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId, createdAt])
+  @@map("review_prompts")
 }
 
 model Bookmark {
