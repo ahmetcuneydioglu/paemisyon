@@ -18,13 +18,15 @@ export default function CalismaScreen() {
   const p = useLocalSearchParams<{ slug: string; title?: string }>();
   const q = usePastExam(p.slug ?? null);
   const [answers, setAnswers] = useState<Record<string, string> | null>(null);
+  /** Yükleme anındaki cevaplar: açılış konumu yalnız bundan hesaplanır. */
+  const [loadedAnswers, setLoadedAnswers] = useState<Record<string, string> | null>(null);
   const [indexState, setIndex] = useState<number | null>(null);
   const [gridOpen, setGridOpen] = useState(false);
   const key = `cikmis.calisma.${p.slug}`;
 
   useEffect(() => {
     if (!p.slug) return;
-    void readLocal<Record<string, string>>(key, {}).then(setAnswers);
+    void readLocal<Record<string, string>>(key, {}).then((a) => { setAnswers(a); setLoadedAnswers(a); });
   }, [key, p.slug]);
 
   const sorular = q.data?.sorular ?? [];
@@ -32,8 +34,11 @@ export default function CalismaScreen() {
   const answered = answers ? sayilan.filter((s) => answers[String(s.sira)]).length : 0;
   const correct = answers ? sayilan.filter((s) => { const h = answers[String(s.sira)]; return h && s.siklar.find((k) => k.harf === h)?.dogru; }).length : 0;
 
-  // Açılışta ilk cevapsız soru; kullanıcı gezmeye başlayınca kendi konumu.
-  const firstOpen = answers ? Math.max(0, sorular.findIndex((s) => !answers[String(s.sira)])) : 0;
+  // Açılışta BİR KEZ ilk cevapsız soru; sonrası kullanıcının konumu. (3 Kas 2026: eski hâli
+  // her cevaptan sonra yeniden hesaplanıyor, şıkka dokununca ekran bir sonraki soruya atlıyor
+  // ve geri bildirim hiç görünmüyordu.)
+  // Açılış konumu yükleme anındaki cevaplardan türetilir (sabit); sonraki cevaplar onu oynatmaz.
+  const firstOpen = loadedAnswers ? Math.max(0, sorular.findIndex((s) => !loadedAnswers[String(s.sira)])) : 0;
   const index = indexState ?? firstOpen;
 
   const soru = sorular[index];
@@ -59,7 +64,7 @@ export default function CalismaScreen() {
   const restart = () =>
     Alert.alert("Baştan başla?", "Bu dönemdeki çalışma cevapların silinir.", [
       { text: "Vazgeç", style: "cancel" },
-      { text: "Sil ve başla", style: "destructive", onPress: () => { setAnswers({}); void writeLocal(key, {}); setIndex(0); } },
+      { text: "Sil ve başla", style: "destructive", onPress: () => { setAnswers({}); setLoadedAnswers({}); void writeLocal(key, {}); setIndex(0); } },
     ]);
 
   return (
