@@ -346,10 +346,14 @@ export function computeTodayTask(input: TodayTaskInput): TodayTask {
       title: `Deneme bugün ${saat(yaklasan.startAt)}`,
       reason: `${yaklasan.title}. Sabah ağır konu yok — kısa ısınma istersen aşağıda.`,
       progress: null,
+      // Saati gelmemiş deneme: düğme "Başla" değil "Hatırlat" (istemci hatırlatma durumunu
+      // sunucudan okur), yanında kuralları gör; pencere açılınca canlı panel kartı ezer.
       action: {
         type: 'open_exams',
-        label: 'Denemeyi gör',
-        route: '/denemeler',
+        label: 'Hatırlat',
+        route: `/denemeler/${yaklasan.id}`,
+        examId: yaklasan.id,
+        examStartAt: yaklasan.startAt.toISOString(),
         source: 'home_task',
       },
       finishSessionId: null,

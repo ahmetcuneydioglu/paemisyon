@@ -5,7 +5,7 @@ import { View } from "react-native";
 import { ExamContextLine, ForYouList, LeaderboardTeaser, LiveExamPanel, NextStepCard, RouteList, WeekSummaryLine } from "@/components/domain";
 import { AppText, Button, Card, IconBadgeButton, Notice, Screen, Skeleton } from "@/components/ui";
 import { homeKeys, todayIndexTr, useCoachBrief, useMe, type TodayTaskAction, type WeekDayState } from "@/features/home/queries";
-import { useExams } from "@/features/exams/queries";
+import { countdown, useExams, useReminder, useSetReminder } from "@/features/exams/queries";
 import { useLeaderboardTeaser } from "@/features/progress/queries";
 import { recordNotificationEvent, useUnreadCount } from "@/features/notifications/queries";
 import { routeToHref } from "@/lib/deep-links";
@@ -37,7 +37,7 @@ export default function BugunScreen() {
   const unread = useUnreadCount();
   const tahta = useLeaderboardTeaser();
   const liveExam = (examsQ.data ?? []).find((e) => e.publishMode === "takvimli" && e.availability === "open") ?? null;
-  const liveNow = useNow(1000, Boolean(liveExam));
+  const liveNow = useNow(1000, Boolean(liveExam) || Boolean(examsQ.data?.some((e) => e.publishMode === "takvimli" && e.availability === "upcoming")));
   const qc = useQueryClient();
   const { space } = useTheme();
   const me = useMe();
@@ -102,6 +102,11 @@ export default function BugunScreen() {
         ? `Bugün henüz başlamadın · hedef ${goal} soru`
         : `Bugün ${answered} soru · hedef ${goal}${answered >= goal ? " ✓" : ""}`
       : null;
+  // Saati gelmemiş deneme görevi (sunucu examId/examStartAt verir): Hatırlat + sayaç + kurallar.
+  const upcomingExamId = next?.action.examId && next.action.examStartAt && Date.parse(next.action.examStartAt) > liveNow ? next.action.examId : null;
+  const rem = useReminder(upcomingExamId);
+  const setRem = useSetReminder(upcomingExamId ?? "");
+  const reminding = rem.data?.reminding ?? false;
   const seninIcin = (v3?.forYou ?? []).map((f, i) => ({ key: `${f.kind}:${i}`, label: f.label, ctaLabel: f.ctaLabel, onPress: () => run(f.action) }));
 
   return (
@@ -190,11 +195,17 @@ export default function BugunScreen() {
               eyebrow={next.eyebrow}
               title={next.title}
               reason={next.reason}
-              badge={next.badge}
-              ctaLabel={next.action.type === "resume_session" ? "Devam et" : next.kind === "done" ? next.action.label : "Başla"}
-              onPress={() => run(next.action)}
+              badge={upcomingExamId && next.action.examStartAt ? `${countdown(Date.parse(next.action.examStartAt) - liveNow)} kaldı` : next.badge}
+              ctaLabel={upcomingExamId ? (reminding ? "Hatırlatma açık" : "Hatırlat") : next.action.type === "resume_session" ? "Devam et" : next.kind === "done" ? next.action.label : "Başla"}
+              onPress={() => (upcomingExamId ? setRem.mutate(!reminding) : run(next.action))}
               disabled={offline && next.action.type !== "resume_session"}
-              secondary={task?.kind === "resume" && task.finishSessionId ? { label: "Şimdilik bitir, sonucu gör", onPress: () => router.push({ pathname: "/sonuc", params: { sessionId: task.finishSessionId! } }) } : null}
+              secondary={
+                upcomingExamId
+                  ? { label: "Kuralları gör", onPress: () => router.push({ pathname: "/(tabs)/denemeler/[examId]/kurallar", params: { examId: upcomingExamId, role: "" } }) }
+                  : task?.kind === "resume" && task.finishSessionId
+                    ? { label: "Şimdilik bitir, sonucu gör", onPress: () => router.push({ pathname: "/sonuc", params: { sessionId: task.finishSessionId! } }) }
+                    : null
+              }
             />
           ) : null}
 

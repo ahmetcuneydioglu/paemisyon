@@ -29,6 +29,9 @@ export interface TodayTaskAction {
   fromBookmarks?: boolean;
   sessionId?: string;
   route?: string;
+  /** Deneme görevi: pencere açılmadan önce Hatırlat + sayaç (sunucu kararı). */
+  examId?: string;
+  examStartAt?: string;
   source: HomeSource;
 }
 

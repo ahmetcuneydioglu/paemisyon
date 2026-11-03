@@ -100,6 +100,10 @@ export interface TodayTaskAction {
   sessionId?: string;
   /** open_exams: istemci rotası. */
   route?: string;
+  /** open_exams (deneme görevi): deneme kimliği ve başlangıcı — pencere açılmadan önce istemci
+   *  "Hatırlat" + sayaç gösterir, açılınca "Katıl" (3 Kas 2026). */
+  examId?: string;
+  examStartAt?: string;
   source: HomeSource;
 }
 
