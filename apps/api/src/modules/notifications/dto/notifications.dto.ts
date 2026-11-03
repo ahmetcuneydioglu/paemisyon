@@ -194,6 +194,7 @@ export class UpdateUserSettingsDto {
   @IsOptional() @IsString() quietEnd?: string;
   @IsOptional() @IsBoolean() pushEnabled?: boolean;
   @IsOptional() @IsBoolean() smartTimingEnabled?: boolean;
+  @IsOptional() @IsBoolean() homeExamStripEnabled?: boolean;
 }
 
 export class PushTokenDto {

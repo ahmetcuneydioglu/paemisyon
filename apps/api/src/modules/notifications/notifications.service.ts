@@ -436,6 +436,7 @@ export class NotificationsService {
       timezone: s?.timezone ?? 'Europe/Istanbul',
       pushEnabled: s?.pushEnabled ?? true,
       smartTimingEnabled: s?.smartTimingEnabled ?? true,
+      homeExamStripEnabled: s?.homeExamStripEnabled ?? true,
       email,
       devices: tokens,
       policy: Object.fromEntries(
@@ -460,6 +461,7 @@ export class NotificationsService {
       quietEnd?: string;
       pushEnabled?: boolean;
       smartTimingEnabled?: boolean;
+      homeExamStripEnabled?: boolean;
     },
   ) {
     const hhmm = /^([01]\d|2[0-3]):[0-5]\d$/;
@@ -487,6 +489,7 @@ export class NotificationsService {
         quietEnd: patch.quietEnd ?? '08:00',
         pushEnabled: patch.pushEnabled ?? true,
         smartTimingEnabled: patch.smartTimingEnabled ?? true,
+        homeExamStripEnabled: patch.homeExamStripEnabled ?? true,
       },
       update: {
         categories: cats,
@@ -496,6 +499,9 @@ export class NotificationsService {
         ...(patch.pushEnabled != null ? { pushEnabled: patch.pushEnabled } : {}),
         ...(patch.smartTimingEnabled != null
           ? { smartTimingEnabled: patch.smartTimingEnabled }
+          : {}),
+        ...(patch.homeExamStripEnabled != null
+          ? { homeExamStripEnabled: patch.homeExamStripEnabled }
           : {}),
       },
     });

@@ -291,12 +291,8 @@ describe('computeTodayTask — tek birincil eylem (Doc 48 §4)', () => {
         },
       }),
     );
-    expect(t.kind).toBe('exam');
-    expect(t.title).toBe('Deneme bugün 10:00');
-    expect(t.secondary).toMatchObject({
-      kind: 'warmup',
-      action: { count: 5, source: 'home_suggestion' },
-    });
+    // 3 Kas 2026: saati gelmemiş deneme görev kartı değil, randevu şeridi (brief.examStrip).
+    expect(t.kind).not.toBe('exam');
   });
 
   it('saati gelmemiş deneme taze yarım turu gizlemez (1 Kas 2026)', () => {

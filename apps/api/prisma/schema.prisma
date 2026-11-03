@@ -2194,6 +2194,8 @@ model UserNotificationSettings {
   timezone           String   @default("Europe/Istanbul")
   pushEnabled        Boolean  @default(true) @map("push_enabled")
   smartTimingEnabled Boolean  @default(true) @map("smart_timing_enabled")
+  /// Bugün'de saati gelmemiş haftalık deneme şeridi (3 Kas 2026); kapatan aday rota satırını yine görür.
+  homeExamStripEnabled Boolean @default(true) @map("home_exam_strip_enabled")
   updatedAt          DateTime @default(now()) @updatedAt @map("updated_at")
 
   user User @relation(fields: [userId], references: [id], onDelete: Cascade)

@@ -264,6 +264,33 @@ export class CoachService {
       // Doc 48 A4 — görev kartı + eylem çubuğu: etiket ve davranış tek nesnede.
       todayTask,
       homeV3,
+      // Bugün üstündeki randevu şeridi (3 Kas 2026): bugün saati gelmemiş haftalık deneme.
+      examStrip: await this.examStrip(user.id, ctx.exams.todayUpcoming, ctx.exams.live != null),
+    };
+  }
+
+  /** Randevu şeridi: canlı deneme yokken bugünkü haftalık; tercih kapalıysa null. */
+  private async examStrip(
+    userId: string,
+    todayUpcoming: { id: string; title: string; startAt: Date } | null,
+    liveNow: boolean,
+  ) {
+    if (!todayUpcoming || liveNow) return null;
+    const [settings, reminding] = await Promise.all([
+      this.prisma.userNotificationSettings.findUnique({
+        where: { userId },
+        select: { homeExamStripEnabled: true },
+      }),
+      this.prisma.examReminder.count({
+        where: { examId: todayUpcoming.id, userId, kind: 'day_before' },
+      }),
+    ]);
+    if (settings && !settings.homeExamStripEnabled) return null;
+    return {
+      examId: todayUpcoming.id,
+      title: todayUpcoming.title,
+      startAt: todayUpcoming.startAt,
+      reminding: reminding > 0,
     };
   }
 

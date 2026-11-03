@@ -659,3 +659,38 @@ export function WeeklyPanel({ exam, now, label, onPrimary, onRules }: { exam: Ex
     </View>
   );
 }
+
+/* ---------------------------------------------------------------- Bugün randevu şeridi (Figma 118:1537) */
+
+/**
+ * Bugün'ün üstünde ince şerit: "Haftalık Deneme-1 · bu akşam 21:00", altında kalan süre, sağda
+ * Hatırlat çipi ("Açık ✓" ise hatırlatma var) ve ✕ (kapatma seçenekleri ekranda). Dokununca
+ * kurallar. Bordo tonlu zemin, ince bordo çerçeve; 44pt dokunma hedefleri.
+ */
+export function ExamStrip({ title, startAt, now, reminding, busy, onPress, onRemind, onDismiss }: { title: string; startAt: string; now: number; reminding: boolean; busy?: boolean; onPress: () => void; onRemind: () => void; onDismiss: () => void }) {
+  const { colors, radius, space } = useTheme();
+  const left = Date.parse(startAt) - now;
+  return (
+    <View style={{ flexDirection: "row", alignItems: "center", gap: space.s2, backgroundColor: colors.liveSoft, borderRadius: radius.card, borderWidth: 1, borderColor: colors.liveInk, paddingLeft: space.s3, paddingRight: 4, paddingVertical: space.s2 }}>
+      <View style={{ width: 8, height: 8, borderRadius: 4, backgroundColor: colors.liveInk }} />
+      <Pressable accessibilityRole="button" accessibilityLabel={`${title}, bu akşam ${fmtDate(startAt, { hour: "2-digit", minute: "2-digit" })}, ${countdown(left)} kaldı. Kuralları gör`} onPress={onPress} style={{ flex: 1, minHeight: 44, justifyContent: "center", gap: 1 }}>
+        <AppText variant="subhead" numberOfLines={2}>
+          {title} · bu akşam {fmtDate(startAt, { hour: "2-digit", minute: "2-digit" })}
+        </AppText>
+        <AppText variant="bodySm" tone="soft" style={{ fontVariant: ["tabular-nums"] }}>
+          {countdown(left)} kaldı · bir resmî çözüm
+        </AppText>
+      </Pressable>
+      <Pressable accessibilityRole="button" accessibilityState={{ selected: reminding, busy }} accessibilityLabel={reminding ? "Hatırlatma açık, kapatmak için dokun" : "Hatırlat"} onPress={onRemind} disabled={busy} style={({ pressed }) => ({ minHeight: 44, justifyContent: "center", opacity: pressed || busy ? 0.7 : 1 })}>
+        <View style={{ paddingHorizontal: 12, paddingVertical: 7, borderRadius: radius.pill, backgroundColor: reminding ? colors.surface : colors.accent, borderWidth: reminding ? 1 : 0, borderColor: colors.line }}>
+          <AppText variant="label" style={{ color: reminding ? colors.ink : colors.onAccent }}>
+            {reminding ? "Açık ✓" : "Hatırlat"}
+          </AppText>
+        </View>
+      </Pressable>
+      <Pressable accessibilityRole="button" accessibilityLabel="Şeridi kapat" onPress={onDismiss} hitSlop={6} style={{ width: 40, height: 44, alignItems: "center", justifyContent: "center" }}>
+        <X color={colors.inkSubtle} size={16} strokeWidth={1.75} />
+      </Pressable>
+    </View>
+  );
+}

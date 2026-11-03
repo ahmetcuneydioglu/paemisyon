@@ -104,6 +104,13 @@ function PreferencesForm({ s }: { s: NotificationSettings }) {
           subtitle="Hatırlatma en çok çözdüğün saatte gelir; yalnız son 28 günün saatlik cevap sayısı tutulur. Kapalıyken seçtiğin saat."
           value={s.smartTimingEnabled}
           onChange={(v) => update.mutate({ smartTimingEnabled: v })}
+          divider
+        />
+        <Row
+          title="Bugün'de haftalık deneme şeridi"
+          subtitle="Deneme günü, saati gelmemiş haftalık deneme Bugün'ün üstünde ince bir satır olarak görünür. Kapalıyken rota satırı ve 21:00 canlı panel yine gelir."
+          value={s.homeExamStripEnabled ?? true}
+          onChange={(v) => update.mutate({ homeExamStripEnabled: v })}
         />
       </Card>
 

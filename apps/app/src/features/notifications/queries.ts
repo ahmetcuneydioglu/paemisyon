@@ -53,6 +53,8 @@ export interface NotificationSettings {
   timezone: string;
   pushEnabled: boolean;
   smartTimingEnabled: boolean;
+  /** Bugün'de haftalık deneme randevu şeridi; eski sunucuda alan yok → açık sayılır. */
+  homeExamStripEnabled?: boolean;
   email: {
     subscribed: boolean;
     status: string;
@@ -63,7 +65,7 @@ export interface NotificationSettings {
   policy: Record<NotificationCategory, { label: string; optional: boolean; channels: string[] }>;
 }
 
-export type SettingsPatch = Partial<Pick<NotificationSettings, "reminderTime" | "quietStart" | "quietEnd" | "pushEnabled" | "smartTimingEnabled">> & {
+export type SettingsPatch = Partial<Pick<NotificationSettings, "reminderTime" | "quietStart" | "quietEnd" | "pushEnabled" | "smartTimingEnabled" | "homeExamStripEnabled">> & {
   categories?: Partial<Record<NotificationCategory, boolean>>;
 };
 

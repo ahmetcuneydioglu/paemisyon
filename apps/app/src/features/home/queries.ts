@@ -131,6 +131,8 @@ export interface CoachBrief {
   plan?: PlanBrief | null;
   /** Bugün v3 (Doc 49/16); eski sunucuda alan yok → ekran todayTask'a düşer. */
   homeV3?: HomeV3;
+  /** Randevu şeridi (3 Kas 2026): bugün saati gelmemiş haftalık deneme; eski sunucuda alan yok. */
+  examStrip?: { examId: string; title: string; startAt: string; reminding: boolean } | null;
 }
 
 export const homeKeys = { brief: ["me", "coach"] as const, me: ["me"] as const };

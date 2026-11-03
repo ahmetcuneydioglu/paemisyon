@@ -241,4 +241,7 @@ export interface CoachBrief {
   plan: PlanBrief | null;
   /** Doc 49/16 — Bugün v3: tek adım + rota + senin için (eklemeli). */
   homeV3: HomeV3;
+  /** Bugün üstündeki randevu şeridi (3 Kas 2026): bugün saati gelmemiş haftalık deneme; canlı
+   *  deneme varken, tercih kapalıyken ya da deneme yokken null. */
+  examStrip: { examId: string; title: string; startAt: Date; reminding: boolean } | null;
 }

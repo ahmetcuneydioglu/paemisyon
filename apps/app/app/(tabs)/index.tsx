@@ -1,15 +1,17 @@
 import { useQueryClient } from "@tanstack/react-query";
+import { useEffect, useState } from "react";
 import { useRouter } from "expo-router";
 import { Bell } from "lucide-react-native";
-import { View } from "react-native";
-import { ExamContextLine, ForYouList, LeaderboardTeaser, LiveExamPanel, NextStepCard, RouteList, WeekSummaryLine } from "@/components/domain";
+import { Alert, View } from "react-native";
+import { ExamContextLine, ExamStrip, ForYouList, LeaderboardTeaser, LiveExamPanel, NextStepCard, RouteList, WeekSummaryLine } from "@/components/domain";
 import { AppText, Button, Card, IconBadgeButton, Notice, Screen, Skeleton } from "@/components/ui";
 import { homeKeys, todayIndexTr, useCoachBrief, useMe, type TodayTaskAction, type WeekDayState } from "@/features/home/queries";
-import { countdown, useExams, useReminder, useSetReminder } from "@/features/exams/queries";
+import { useExams, useSetReminder } from "@/features/exams/queries";
 import { useLeaderboardTeaser } from "@/features/progress/queries";
-import { recordNotificationEvent, useUnreadCount } from "@/features/notifications/queries";
+import { recordNotificationEvent, useUnreadCount, useUpdateNotificationSettings } from "@/features/notifications/queries";
 import { routeToHref } from "@/lib/deep-links";
 import { ApiError, NetworkError } from "@/lib/api";
+import { readLocal, writeLocal } from "@/lib/local-store";
 import { useNow } from "@/lib/use-now";
 import { flushQueue, usePendingAnswers } from "@/lib/offline-queue";
 import { useTheme } from "@/theme/ThemeProvider";
@@ -102,11 +104,25 @@ export default function BugunScreen() {
         ? `Bugün henüz başlamadın · hedef ${goal} soru`
         : `Bugün ${answered} soru · hedef ${goal}${answered >= goal ? " ✓" : ""}`
       : null;
-  // Saati gelmemiş deneme görevi (sunucu examId/examStartAt verir): Hatırlat + sayaç + kurallar.
-  const upcomingExamId = next?.action.examId && next.action.examStartAt && Date.parse(next.action.examStartAt) > liveNow ? next.action.examId : null;
-  const rem = useReminder(upcomingExamId);
-  const setRem = useSetReminder(upcomingExamId ?? "");
-  const reminding = rem.data?.reminding ?? false;
+  // Randevu şeridi (Figma 118:1537): sunucu verir; "bugün gösterme" cihazda denemeye+güne özel.
+  const strip = data?.examStrip ?? null;
+  const [stripHidden, setStripHidden] = useState<string | null>(null);
+  const stripKey = strip ? `${strip.examId}:${new Date(liveNow).toLocaleDateString("tr-TR")}` : null;
+  useEffect(() => {
+    let alive = true;
+    void readLocal<string | null>("home.examStrip.hidden", null).then((v) => { if (alive) setStripHidden(v); });
+    return () => { alive = false; };
+  }, []);
+  const setStripRem = useSetReminder(strip?.examId ?? "");
+  const updateSettings = useUpdateNotificationSettings();
+  const dismissStrip = () => {
+    if (!strip || !stripKey) return;
+    Alert.alert("Şeridi kapat", `${strip.title} rota listende kalır; hatırlatma tercihin değişmez.`, [
+      { text: "Bugün gösterme", onPress: () => { setStripHidden(stripKey); void writeLocal("home.examStrip.hidden", stripKey); } },
+      { text: "Artık gösterme", style: "destructive", onPress: () => updateSettings.mutate({ homeExamStripEnabled: false }, { onSuccess: () => void qc.invalidateQueries({ queryKey: homeKeys.brief }) }) },
+      { text: "Vazgeç", style: "cancel" },
+    ]);
+  };
   const seninIcin = (v3?.forYou ?? []).map((f, i) => ({ key: `${f.kind}:${i}`, label: f.label, ctaLabel: f.ctaLabel, onPress: () => run(f.action) }));
 
   return (
@@ -179,6 +195,20 @@ export default function BugunScreen() {
             onPickDate={() => router.push("/(tabs)/ben/ayarlar")}
           />
 
+          {/* Randevu şeridi: bugün saati gelmemiş haftalık deneme (Figma 118:1537); ✕ ile bugün/artık gizlenir. */}
+          {strip && !liveExam && stripHidden !== stripKey ? (
+            <ExamStrip
+              title={strip.title}
+              startAt={strip.startAt}
+              now={liveNow}
+              reminding={strip.reminding}
+              busy={setStripRem.isPending}
+              onPress={() => router.push({ pathname: "/(tabs)/denemeler/[examId]/kurallar", params: { examId: strip.examId, role: "" } })}
+              onRemind={() => setStripRem.mutate(!strip.reminding, { onSuccess: () => void qc.invalidateQueries({ queryKey: homeKeys.brief }) })}
+              onDismiss={dismissStrip}
+            />
+          ) : null}
+
           {/* Canlı haftalık deneme penceresi açıkken (Doc 50) sıradaki kartın yerine geçer. */}
           {liveExam ? (
             <LiveExamPanel
@@ -195,17 +225,11 @@ export default function BugunScreen() {
               eyebrow={next.eyebrow}
               title={next.title}
               reason={next.reason}
-              badge={upcomingExamId && next.action.examStartAt ? `${countdown(Date.parse(next.action.examStartAt) - liveNow)} kaldı` : next.badge}
-              ctaLabel={upcomingExamId ? (reminding ? "Hatırlatma açık" : "Hatırlat") : next.action.type === "resume_session" ? "Devam et" : next.kind === "done" ? next.action.label : "Başla"}
-              onPress={() => (upcomingExamId ? setRem.mutate(!reminding) : run(next.action))}
+              badge={next.badge}
+              ctaLabel={next.action.type === "resume_session" ? "Devam et" : next.kind === "done" ? next.action.label : "Başla"}
+              onPress={() => run(next.action)}
               disabled={offline && next.action.type !== "resume_session"}
-              secondary={
-                upcomingExamId
-                  ? { label: "Kuralları gör", onPress: () => router.push({ pathname: "/(tabs)/denemeler/[examId]/kurallar", params: { examId: upcomingExamId, role: "" } }) }
-                  : task?.kind === "resume" && task.finishSessionId
-                    ? { label: "Şimdilik bitir, sonucu gör", onPress: () => router.push({ pathname: "/sonuc", params: { sessionId: task.finishSessionId! } }) }
-                    : null
-              }
+              secondary={task?.kind === "resume" && task.finishSessionId ? { label: "Şimdilik bitir, sonucu gör", onPress: () => router.push({ pathname: "/sonuc", params: { sessionId: task.finishSessionId! } }) } : null}
             />
           ) : null}
 

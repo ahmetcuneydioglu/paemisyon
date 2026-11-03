@@ -338,35 +338,8 @@ export function computeTodayTask(input: TodayTaskInput): TodayTask {
     };
   }
 
-  // 2b) Deneme bugün, henüz başlamadı.
-  const yaklasan = input.exams.todayUpcoming;
-  if (yaklasan) {
-    return {
-      kind: 'exam',
-      title: `Deneme bugün ${saat(yaklasan.startAt)}`,
-      reason: `${yaklasan.title}. Sabah ağır konu yok — kısa ısınma istersen aşağıda.`,
-      progress: null,
-      // Saati gelmemiş deneme: düğme "Başla" değil "Hatırlat" (istemci hatırlatma durumunu
-      // sunucudan okur), yanında kuralları gör; pencere açılınca canlı panel kartı ezer.
-      action: {
-        type: 'open_exams',
-        label: 'Hatırlat',
-        route: `/denemeler/${yaklasan.id}`,
-        examId: yaklasan.id,
-        examStartAt: yaklasan.startAt.toISOString(),
-        source: 'home_task',
-      },
-      finishSessionId: null,
-      secondary: {
-        kind: 'warmup',
-        title: 'Kısa ısınma',
-        subtitle: `${KISA_TUR} soru · yaklaşık 2 dakika`,
-        actionLabel: 'Isın',
-        action: baslat(KISA_TUR, KOC, { prefix: 'Isın', source: 'home_suggestion' }),
-      },
-    };
-  }
-
+  // 2b) Saati gelmemiş deneme görev DEĞİLDİR (3 Kas 2026, kullanıcı kararı): Bugün'ün üstünde
+  // ince "randevu şeridi" olarak gider (brief.examStrip); koçun normal görevi kartta kalır.
   // 3) İlk gün — ölçülü ilk temas (S4: 20 değil 10 soru).
   if (input.totalSolved < TUR_VARSAYILAN) {
     return {
