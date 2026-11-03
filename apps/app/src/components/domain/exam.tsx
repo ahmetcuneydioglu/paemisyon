@@ -619,3 +619,43 @@ export function LiveExamPanel({ exam, now, paemLine, onJoin, onRules, onResult }
     </View>
   );
 }
+
+/**
+ * Haftalık deneme paneli (Figma 109:1567 / 110:1573-B): bordo zemin, etiket satırı (önek + tarih
+ * ya da canlı sayımı), başlık, sayaç (BigNumber), tek satır meta, tek birincil düğme + "Kuralları
+ * gör". Merkezde "ŞİMDİ" önekiyle, Haftalık listesinde "SIRADAKİ" ile kullanılır.
+ */
+export function WeeklyPanel({ exam, now, label, onPrimary, onRules }: { exam: ExamListItem; now: number; label: string; onPrimary: () => void; onRules: () => void }) {
+  const { colors, radius, space } = useTheme();
+  const open = exam.availability === "open";
+  const left = open ? Date.parse(exam.endAt) - now : Date.parse(exam.startAt) - now;
+  const primary = open ? (exam.myState === "completed" ? "Sonucunu gör" : exam.myState === "in_progress" ? "Devam et" : "Katıl") : null;
+  return (
+    <View accessible accessibilityLabel={`${label}: haftalık deneme ${exam.title}, ${fmtDate(exam.startAt)}${open ? `, pencere açık, ${countdown(left)} kaldı` : `, ${countdown(left)} kaldı`}`} style={{ backgroundColor: colors.live, borderRadius: radius.panel, padding: space.s4, gap: space.s2 }}>
+      <View style={{ flexDirection: "row", alignItems: "center", gap: space.s2 }}>
+        {open ? <View style={{ width: 8, height: 8, borderRadius: 4, backgroundColor: colors.accent }} /> : null}
+        <AppText variant="label" tone={open ? "gold" : "panelSoft"} style={{ letterSpacing: 1, flex: 1 }}>
+          {open ? `${label} · CANLI` : `${label} · HAFTALIK DENEME`}
+        </AppText>
+        <AppText variant="bodySm" tone="panelSoft">
+          {open ? `${exam.participantCount.toLocaleString("tr-TR")} kişi içeride` : fmtDate(exam.startAt, { weekday: "long", hour: "2-digit", minute: "2-digit" })}
+        </AppText>
+      </View>
+      <AppText variant="heading" tone="panelInk">
+        {exam.title}
+      </AppText>
+      {open ? <BigNumber value={mmss(left / 1000)} suffix={`kalan · ${fmtDate(exam.endAt, { hour: "2-digit", minute: "2-digit" })}'a kadar`} /> : <WeeklyCountdown msLeft={left} />}
+      <AppText variant="bodySm" tone="panelSoft">
+        {open ? "Bir resmî çözüm hakkın var; süre teslimde durmaz." : `${examMeta(exam) ? `${examMeta(exam)} · ` : ""}${exam.participantCount.toLocaleString("tr-TR")} kişi katılacak · bitene kadar giriş açık`}
+      </AppText>
+      <View style={{ flexDirection: "row", gap: space.s2, alignItems: "center" }}>
+        {primary ? <Button title={primary} style={{ flex: 1 }} onPress={onPrimary} /> : <RemindButton examId={exam.id} style={{ flex: 1 }} />}
+        <Pressable accessibilityRole="button" onPress={onRules} style={{ minHeight: 52, paddingHorizontal: space.s4, alignItems: "center", justifyContent: "center" }}>
+          <AppText variant="subhead" tone="panelInk">
+            Kuralları gör
+          </AppText>
+        </Pressable>
+      </View>
+    </View>
+  );
+}

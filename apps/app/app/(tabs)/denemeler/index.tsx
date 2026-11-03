@@ -1,7 +1,7 @@
 import { useRouter } from "expo-router";
 import { Archive, CalendarClock, ClipboardList, Sparkles } from "lucide-react-native";
 import { Pressable, View } from "react-native";
-import { RemindButton, WeeklyCountdown, examMeta } from "@/components/domain";
+import { WeeklyPanel } from "@/components/domain";
 import { ActionTile, AppText, BigNumber, Button, Card, ListRow, Notice, ProgressBar, Screen, Skeleton } from "@/components/ui";
 import { countdown, fmtDate, fmtNet, heroFor, mmss, pastExamShortName, useDashboard, useExamHistory, useExams, usePastExams, type ExamListItem } from "@/features/exams/queries";
 import { useNow } from "@/lib/use-now";
@@ -58,7 +58,7 @@ export default function DenemelerScreen() {
       ) : hero.kind === "active" ? (
         <ActiveHero exam={hero.exam} now={now} onPress={() => play(hero.exam)} />
       ) : hero.kind === "weekly" ? (
-        <WeeklyHero exam={hero.exam} now={now} onPrimary={() => (hero.exam.myState === "completed" && hero.exam.my?.official ? router.push({ pathname: "/deneme-sonuc/[attemptId]", params: { attemptId: hero.exam.my.official.attemptId } }) : hero.exam.myState === "in_progress" ? play(hero.exam) : rules(hero.exam))} onRules={() => rules(hero.exam)} />
+        <WeeklyPanel label="ŞİMDİ" exam={hero.exam} now={now} onPrimary={() => (hero.exam.myState === "completed" && hero.exam.my?.official ? router.push({ pathname: "/deneme-sonuc/[attemptId]", params: { attemptId: hero.exam.my.official.attemptId } }) : hero.exam.myState === "in_progress" ? play(hero.exam) : rules(hero.exam))} onRules={() => rules(hero.exam)} />
       ) : hero.kind === "serbest" ? (
         <SuggestHero exam={hero.exam} weeklyHint={nextWeekly} onStart={() => rules(hero.exam)} onPersonal={() => router.push("/(tabs)/denemeler/kisisel")} />
       ) : (
@@ -124,41 +124,6 @@ function ActiveHero({ exam, now, onPress }: { exam: ExamListItem; now: number; o
   );
 }
 
-/** Sıradaki/canlı haftalık: bordo panel, sayaç, tek birincil düğme + "Kuralları gör" bağlantısı. */
-function WeeklyHero({ exam, now, onPrimary, onRules }: { exam: ExamListItem; now: number; onPrimary: () => void; onRules: () => void }) {
-  const { colors, radius, space } = useTheme();
-  const open = exam.availability === "open";
-  const left = open ? Date.parse(exam.endAt) - now : Date.parse(exam.startAt) - now;
-  const primary = open ? (exam.myState === "completed" ? "Sonucunu gör" : exam.myState === "in_progress" ? "Devam et" : "Katıl") : null;
-  return (
-    <View accessible accessibilityLabel={`Şimdi: haftalık deneme ${exam.title}, ${fmtDate(exam.startAt)}${open ? `, pencere açık, ${countdown(left)} kaldı` : `, ${countdown(left)} kaldı`}`} style={{ backgroundColor: colors.live, borderRadius: radius.panel, padding: space.s4, gap: space.s2 }}>
-      <View style={{ flexDirection: "row", alignItems: "center", gap: space.s2 }}>
-        {open ? <View style={{ width: 8, height: 8, borderRadius: 4, backgroundColor: colors.accent }} /> : null}
-        <AppText variant="label" tone={open ? "gold" : "panelSoft"} style={{ letterSpacing: 1, flex: 1 }}>
-          {open ? "ŞİMDİ · CANLI" : "ŞİMDİ · HAFTALIK DENEME"}
-        </AppText>
-        <AppText variant="bodySm" tone="panelSoft">
-          {open ? `${exam.participantCount.toLocaleString("tr-TR")} kişi içeride` : fmtDate(exam.startAt, { weekday: "long", hour: "2-digit", minute: "2-digit" })}
-        </AppText>
-      </View>
-      <AppText variant="heading" tone="panelInk">
-        {exam.title}
-      </AppText>
-      {open ? <BigNumber value={mmss(left / 1000)} suffix={`kalan · ${fmtDate(exam.endAt, { hour: "2-digit", minute: "2-digit" })}'a kadar`} /> : <WeeklyCountdown msLeft={left} />}
-      <AppText variant="bodySm" tone="panelSoft">
-        {open ? "Bir resmî çözüm hakkın var; süre teslimde durmaz." : `${examMeta(exam) ? `${examMeta(exam)} · ` : ""}${exam.participantCount.toLocaleString("tr-TR")} kişi katılacak · bitene kadar giriş açık`}
-      </AppText>
-      <View style={{ flexDirection: "row", gap: space.s2, alignItems: "center" }}>
-        {primary ? <Button title={primary} style={{ flex: 1 }} onPress={onPrimary} /> : <RemindButton examId={exam.id} style={{ flex: 1 }} />}
-        <Pressable accessibilityRole="button" onPress={onRules} style={{ minHeight: 52, paddingHorizontal: space.s4, alignItems: "center", justifyContent: "center" }}>
-          <AppText variant="subhead" tone="panelInk">
-            Kuralları gör
-          </AppText>
-        </Pressable>
-      </View>
-    </View>
-  );
-}
 
 /** Haftalık 3 günden uzakken ya da yokken: çözülmemiş bir serbest deneme öner; o da yoksa kişisel deneme. */
 function SuggestHero({ exam, weeklyHint, onStart, onPersonal }: { exam: ExamListItem | null; weeklyHint: ExamListItem | null; onStart: () => void; onPersonal: () => void }) {
