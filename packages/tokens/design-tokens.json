@@ -319,7 +319,7 @@
       "hero": {
         "family": "display",
         "size": 120,
-        "lineHeight": 108,
+        "lineHeight": 138,
         "weight": 500,
         "tracking": -0.03,
         "tabular": true,
@@ -328,7 +328,7 @@
       "display": {
         "family": "display",
         "size": 64,
-        "lineHeight": 60,
+        "lineHeight": 74,
         "weight": 500,
         "tracking": -0.03,
         "tabular": true,

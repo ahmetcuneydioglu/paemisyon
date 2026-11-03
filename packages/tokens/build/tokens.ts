@@ -78,8 +78,8 @@ export const fontFamily = {
  *  Ad `typeRoles`: `type` adlı bir dışa aktarım, içe aktarımda `{ type as x }` yazımını
  *  TypeScript'in tür-içe-aktarım sözdizimiyle çakıştırıyor. */
 export const typeRoles = {
-    hero: { family: 'display', size: 120, lineHeight: 108, weight: 500, tracking: -0.03, tabular: true },
-    display: { family: 'display', size: 64, lineHeight: 60, weight: 500, tracking: -0.03, tabular: true },
+    hero: { family: 'display', size: 120, lineHeight: 138, weight: 500, tracking: -0.03, tabular: true },
+    display: { family: 'display', size: 64, lineHeight: 74, weight: 500, tracking: -0.03, tabular: true },
     title: { family: 'display', size: 24, lineHeight: 29, weight: 600, tracking: -0.01, tabular: false },
     heading: { family: 'display', size: 20, lineHeight: 27, weight: 600, tracking: 0, tabular: false },
     subhead: { family: 'body', size: 15, lineHeight: 20, weight: 600, tracking: 0, tabular: false },

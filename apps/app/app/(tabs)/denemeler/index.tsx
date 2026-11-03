@@ -2,7 +2,7 @@ import { useRouter } from "expo-router";
 import { Archive, CalendarClock, ClipboardList, Sparkles } from "lucide-react-native";
 import { Pressable, View } from "react-native";
 import { RemindButton, WeeklyCountdown, examMeta } from "@/components/domain";
-import { ActionTile, AppText, Badge, Button, Card, ListRow, Notice, ProgressBar, Screen, Skeleton } from "@/components/ui";
+import { ActionTile, AppText, BigNumber, Button, Card, ListRow, Notice, ProgressBar, Screen, Skeleton } from "@/components/ui";
 import { countdown, fmtDate, fmtNet, heroFor, mmss, pastExamShortName, useDashboard, useExamHistory, useExams, usePastExams, type ExamListItem } from "@/features/exams/queries";
 import { useNow } from "@/lib/use-now";
 import { useTheme } from "@/theme/ThemeProvider";
@@ -114,19 +114,10 @@ function ActiveHero({ exam, now, onPress }: { exam: ExamListItem; now: number; o
       <AppText variant="heading" tone="panelInk">
         {exam.title}
       </AppText>
-      {left != null ? (
-        <AppText variant="display" tone="panelInk" style={{ fontVariant: ["tabular-nums"] }}>
-          {mmss(left)}
-        </AppText>
-      ) : null}
-      <View style={{ flexDirection: "row", justifyContent: "space-between" }}>
-        <AppText variant="bodySm" tone="panelSoft" style={{ fontVariant: ["tabular-nums"] }}>
-          {a.answered} / {exam.questionCount} cevaplandı
-        </AppText>
-        <AppText variant="bodySm" tone="panelSoft">
-          kalan süre
-        </AppText>
-      </View>
+      {left != null ? <BigNumber value={mmss(left)} suffix="kalan süre" /> : null}
+      <AppText variant="bodySm" tone="panelSoft" style={{ fontVariant: ["tabular-nums"] }}>
+        {a.answered} / {exam.questionCount} cevaplandı
+      </AppText>
       <ProgressBar value={a.answered / Math.max(1, exam.questionCount)} tone="accent" height={6} label="Cevaplanan" />
       <Button title="Devam et" onPress={onPress} />
     </View>
@@ -142,17 +133,20 @@ function WeeklyHero({ exam, now, onPrimary, onRules }: { exam: ExamListItem; now
   return (
     <View accessible accessibilityLabel={`Şimdi: haftalık deneme ${exam.title}, ${fmtDate(exam.startAt)}${open ? `, pencere açık, ${countdown(left)} kaldı` : `, ${countdown(left)} kaldı`}`} style={{ backgroundColor: colors.live, borderRadius: radius.panel, padding: space.s4, gap: space.s2 }}>
       <View style={{ flexDirection: "row", alignItems: "center", gap: space.s2 }}>
-        <AppText variant="label" tone="panelSoft" style={{ letterSpacing: 1 }}>
-          ŞİMDİ · HAFTALIK DENEME
+        {open ? <View style={{ width: 8, height: 8, borderRadius: 4, backgroundColor: colors.accent }} /> : null}
+        <AppText variant="label" tone={open ? "gold" : "panelSoft"} style={{ letterSpacing: 1, flex: 1 }}>
+          {open ? "ŞİMDİ · CANLI" : "ŞİMDİ · HAFTALIK DENEME"}
         </AppText>
-        <Badge tone="accent">{open ? "Pencere açık" : fmtDate(exam.startAt, { weekday: "long", hour: "2-digit", minute: "2-digit" })}</Badge>
+        <AppText variant="bodySm" tone="panelSoft">
+          {open ? `${exam.participantCount.toLocaleString("tr-TR")} kişi içeride` : fmtDate(exam.startAt, { weekday: "long", hour: "2-digit", minute: "2-digit" })}
+        </AppText>
       </View>
       <AppText variant="heading" tone="panelInk">
         {exam.title}
       </AppText>
-      <WeeklyCountdown msLeft={left} />
+      {open ? <BigNumber value={mmss(left / 1000)} suffix={`kalan · ${fmtDate(exam.endAt, { hour: "2-digit", minute: "2-digit" })}'a kadar`} /> : <WeeklyCountdown msLeft={left} />}
       <AppText variant="bodySm" tone="panelSoft">
-        {examMeta(exam) ? `${examMeta(exam)} · ` : ""}{exam.participantCount.toLocaleString("tr-TR")} {open ? "kişi girdi" : "kişi katılacak"}{open ? ` · ${fmtDate(exam.endAt, { hour: "2-digit", minute: "2-digit" })}'a kadar giriş açık` : ""}
+        {open ? "Bir resmî çözüm hakkın var; süre teslimde durmaz." : `${examMeta(exam) ? `${examMeta(exam)} · ` : ""}${exam.participantCount.toLocaleString("tr-TR")} kişi katılacak · bitene kadar giriş açık`}
       </AppText>
       <View style={{ flexDirection: "row", gap: space.s2, alignItems: "center" }}>
         {primary ? <Button title={primary} style={{ flex: 1 }} onPress={onPrimary} /> : <RemindButton examId={exam.id} style={{ flex: 1 }} />}
@@ -171,15 +165,23 @@ function SuggestHero({ exam, weeklyHint, onStart, onPersonal }: { exam: ExamList
   const { colors, radius, space } = useTheme();
   return (
     <View accessible accessibilityLabel={exam ? `Şimdi: ${exam.title} denemesine başla` : "Şimdi: kişisel deneme oluştur"} style={{ backgroundColor: colors.panel, borderRadius: radius.panel, padding: space.s4, gap: space.s2 }}>
-      <AppText variant="label" tone="gold" style={{ letterSpacing: 1 }}>
-        ŞİMDİ
-      </AppText>
+      <View style={{ flexDirection: "row", alignItems: "center", gap: space.s2 }}>
+        <AppText variant="label" tone="panelSoft" style={{ letterSpacing: 1, flex: 1 }}>
+          {exam ? "ŞİMDİ · SERBEST DENEME" : "ŞİMDİ · KİŞİSEL DENEME"}
+        </AppText>
+        {weeklyHint ? (
+          <AppText variant="bodySm" tone="panelSoft">
+            Haftalık {fmtDate(weeklyHint.startAt, { weekday: "long", hour: "2-digit", minute: "2-digit" })}
+          </AppText>
+        ) : null}
+      </View>
       <AppText variant="heading" tone="panelInk">
         {exam ? exam.title : "Sana özel bir deneme"}
       </AppText>
+      {exam ? <BigNumber value={String(exam.questionCount)} suffix={`soru · ${exam.durationMinutes} dk · ${exam.participantCount.toLocaleString("tr-TR")} kişi çözdü`} /> : null}
       <AppText variant="bodySm" tone="panelSoft">
         {exam
-          ? `${weeklyHint ? `Haftalık deneme ${fmtDate(weeklyHint.startAt, { weekday: "long" })} ${fmtDate(weeklyHint.startAt, { hour: "2-digit", minute: "2-digit" })}'de; o güne kadar serbest denemeyle ölç.` : "Bu hafta haftalık deneme yok; serbest denemeyle ölç."} ${exam.participantCount.toLocaleString("tr-TR")} kişi çözdü.`
+          ? `${weeklyHint ? `${fmtDate(weeklyHint.startAt, { weekday: "long" })}'a kadar serbest denemeyle ölç.` : "Bu hafta haftalık deneme yok; serbest denemeyle ölç."} İlk çözüm resmîdir ve sıralamaya girer.`
           : "Bu hafta haftalık deneme yok; yanlışlarından ve zayıf konularından kurulan bir deneme çöz."}
       </AppText>
       <Button title={exam ? "Başla" : "Kişisel deneme oluştur"} onPress={exam ? onStart : onPersonal} />

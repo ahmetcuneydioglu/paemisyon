@@ -29,7 +29,8 @@ export function CountdownHero({
   const compact = width < COMPACT_WIDTH;
   const heroSize = compact ? 96 : type.hero.fontSize;
   // Lora'nın üst çıkıntıları: satır yüksekliği boyun altına inerse rakamın tepesi kırpılır.
-  const heroLine = Math.round(heroSize * 1.04);
+  // Satır kutusu 1,15 × punto (Figma 109:1567 kuralı): Lora üst çıkıntıları kırpılmaz, üst satıra taşmaz.
+  const heroLine = Math.round(heroSize * 1.15);
   return (
     <View
       accessible

@@ -2,7 +2,7 @@ import { CalendarClock, Check, ChevronRight, Flag, LayoutGrid, Lock, Minus, Time
 import { useState } from "react";
 import { Pressable, StyleSheet, View, type StyleProp, type ViewStyle } from "react-native";
 import Svg, { Circle, Line, Polyline } from "react-native-svg";
-import { AppText, Badge, Button, Card, Chip, IconButton, Notice, ProgressBar, Sheet } from "@/components/ui";
+import { AppText, Badge, BigNumber, Button, Card, Chip, IconButton, Notice, ProgressBar, Sheet } from "@/components/ui";
 import { countdown, examCardModel, fmtDate, fmtNet, mmss, useReminder, useSetReminder, type CourseBreakdownRow, type ExamCardAction, type ExamHistory, type ExamListItem } from "@/features/exams/queries";
 import { useTheme } from "@/theme/ThemeProvider";
 
@@ -471,32 +471,17 @@ export function splitCountdown(ms: number) {
   return { d: Math.floor(s / 86400), h: Math.floor((s % 86400) / 3600), m: Math.floor((s % 3600) / 60), s: s % 60 };
 }
 
-/** Dört birimli sayaç: GÜN : SAAT : DK : SN. Bordo/lacivert panel üstünde (panelInk/panelSoft). */
-export function WeeklyCountdown({ msLeft, size = 44 }: { msLeft: number; size?: number }) {
-  const { colors, space } = useTheme();
+/**
+ * Haftalık sayaç (Figma 109:1567): tek parça büyük sayı "2:14:32" + altında/ yanında birim
+ * açıklaması. 1 günden azsa "14:32:05 · saat:dk:sn". Birim kutuları yerine tek satır: kararlı
+ * satır kutusu, taşma yok. Panel üstünde (panelInk/panelSoft).
+ */
+export function WeeklyCountdown({ msLeft, size = 56 }: { msLeft: number; size?: number }) {
   const c = splitCountdown(msLeft);
-  const units: [string, string][] = [[String(c.d), "GÜN"], [String(c.h).padStart(2, "0"), "SAAT"], [String(c.m).padStart(2, "0"), "DK"], [String(c.s).padStart(2, "0"), "SN"]];
-  return (
-    <View accessible accessibilityLabel={`${c.d} gün ${c.h} saat ${c.m} dakika ${c.s} saniye kaldı`} style={{ flexDirection: "row", alignItems: "flex-start", gap: space.s2 }}>
-      {units.map(([n, u], i) => (
-        <View key={u} style={{ flexDirection: "row", alignItems: "flex-start", gap: space.s2 }}>
-          <View style={{ alignItems: "center", minWidth: size * 1.15 }}>
-            <AppText variant="display" tone="panelInk" maxFontSizeMultiplier={1.2} style={{ fontSize: size, lineHeight: Math.round(size * 1.1), fontVariant: ["tabular-nums"] }}>
-              {n}
-            </AppText>
-            <AppText variant="label" tone="panelSoft" style={{ letterSpacing: 1 }}>
-              {u}
-            </AppText>
-          </View>
-          {i < units.length - 1 ? (
-            <AppText variant="display" style={{ color: colors.panelSoft, fontSize: Math.round(size * 0.8), lineHeight: Math.round(size * 1.1) }}>
-              :
-            </AppText>
-          ) : null}
-        </View>
-      ))}
-    </View>
-  );
+  const p = (n: number) => String(n).padStart(2, "0");
+  const value = c.d > 0 ? `${c.d}:${p(c.h)}:${p(c.m)}` : `${c.h}:${p(c.m)}:${p(c.s)}`;
+  const suffix = c.d > 0 ? "gün : saat : dk" : "saat : dk : sn";
+  return <BigNumber value={value} size={size} suffix={suffix} accessibilityLabel={`${c.d} gün ${c.h} saat ${c.m} dakika ${c.s} saniye kaldı`} />;
 }
 
 /** "Pazar 19 Eki · 21:00" — haftalık kart ve hero tarih satırı. */
@@ -615,14 +600,7 @@ export function LiveExamPanel({ exam, now, paemLine, onJoin, onRules, onResult }
       <AppText variant="title" tone="panelInk" numberOfLines={2}>
         {exam.title}
       </AppText>
-      <View style={{ flexDirection: "row", alignItems: "baseline", gap: space.s2, flexWrap: "wrap" }}>
-        <AppText variant="display" tone="panelInk" maxFontSizeMultiplier={1.2} style={{ fontSize: 48, lineHeight: 52, fontVariant: ["tabular-nums"] }}>
-          {left}
-        </AppText>
-        <AppText variant="bodySm" tone="panelSoft">
-          kalan süre · {window}
-        </AppText>
-      </View>
+      <BigNumber value={left} size={48} suffix={`kalan süre · ${window}`} />
       <View style={{ flexDirection: "row", gap: space.s2 }}>
         {submitted ? (
           <Button title="Sonucunu gör" variant="secondary" style={{ flex: 1 }} onPress={onResult} />

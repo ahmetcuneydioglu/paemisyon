@@ -14,3 +14,4 @@ export * from "./action-bar";
 export * from "./section-header";
 export * from "./count-badge";
 export * from "./action-tile";
+export * from "./big-number";

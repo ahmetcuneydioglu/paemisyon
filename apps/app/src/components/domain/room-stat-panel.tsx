@@ -24,7 +24,7 @@ export function RoomStatPanel({ pct, sub, right, label }: { pct: number | null; 
               Henüz çözülmedi
             </AppText>
           ) : (
-            <AppText variant="display" tone="gold" style={{ fontSize: 44, lineHeight: 48 }}>
+            <AppText variant="display" tone="gold" style={{ fontSize: 44, lineHeight: 51 }}>
               %{pct}
             </AppText>
           )}
