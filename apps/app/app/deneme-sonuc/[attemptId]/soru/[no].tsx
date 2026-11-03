@@ -1,10 +1,11 @@
 import { Stack, useLocalSearchParams, useRouter } from "expo-router";
-import { BookOpen, Flag } from "lucide-react-native";
+import { BookOpen, Flag, Share2 } from "lucide-react-native";
 import { useMemo, useState } from "react";
-import { View } from "react-native";
-import { QuestionOption, ReportSheet, type OptionState } from "@/components/domain";
+import { Pressable, View } from "react-native";
+import { QuestionOption, ReportSheet, ShareQuestionSheet, type OptionState } from "@/components/domain";
 import { AppText, Badge, Button, Card, Notice, Screen, Skeleton, StatTile } from "@/components/ui";
 import { fmtMs, useAttempt, useAttemptReview } from "@/features/exams/queries";
+import { buildShareCardData } from "@/features/quiz/share";
 import { useTheme } from "@/theme/ThemeProvider";
 
 /**
@@ -20,6 +21,7 @@ export default function SoruAyrintiScreen() {
   const attempt = useAttempt(p.attemptId ?? null);
   const review = useAttemptReview(p.attemptId ?? null, true);
   const [reportOpen, setReportOpen] = useState(false);
+  const [shareOpen, setShareOpen] = useState(false);
 
   const total = attempt.data?.totalQuestions ?? 0;
   const q = useMemo(() => attempt.data?.review.find((r) => r.order === no) ?? null, [attempt.data, no]);
@@ -63,6 +65,17 @@ export default function SoruAyrintiScreen() {
                 <QuestionOption key={o.id} label={o.label} text={o.text} state={state(o.id, o.isCorrect)} />
               ))}
             </View>
+            {/* Paylaş · Bildir — oynatıcıyla aynı satır (kullanıcı isteği, 3 Kas): yanlışta "soru hatalı" şüphesi buradan bildirilir. */}
+            <View style={{ flexDirection: "row", justifyContent: "flex-end", gap: space.s2 }}>
+              <Pressable accessibilityRole="button" accessibilityLabel="Soruyu paylaş" onPress={() => setShareOpen(true)} hitSlop={8} style={{ flexDirection: "row", alignItems: "center", gap: 6, minHeight: 44, paddingHorizontal: space.s2 }}>
+                <Share2 color={colors.accentInk} size={16} strokeWidth={1.75} />
+                <AppText variant="subhead" tone="accentInk">Paylaş</AppText>
+              </Pressable>
+              <Pressable accessibilityRole="button" accessibilityLabel="Soruyu bildir" onPress={() => setReportOpen(true)} hitSlop={8} style={{ flexDirection: "row", alignItems: "center", gap: 6, minHeight: 44, paddingHorizontal: space.s2 }}>
+                <Flag color={colors.accentInk} size={16} strokeWidth={1.75} />
+                <AppText variant="subhead" tone="accentInk">Bildir</AppText>
+              </Pressable>
+            </View>
             {q.adjustment ? <Notice tone="warning">{q.adjustment === "credit_all" ? "Bu soru iptal edildi; herkese doğru sayıldı." : "Bu soru iptal edildi; hesaptan çıkarıldı."}</Notice> : null}
 
             {q.explanation ? (
@@ -96,7 +109,6 @@ export default function SoruAyrintiScreen() {
             </View>
             {item?.missedMajority ? <Notice tone="warning">Çoğunluğun bildiği bir soru. Bu konuyu Çalış listene ekledik.</Notice> : null}
 
-            <Button title="Bu soruyu bildir" variant="ghost" onPress={() => setReportOpen(true)} />
             {no < total ? (
               <Button title="Sonraki soru" variant="secondary" onPress={() => router.replace({ pathname: "/deneme-sonuc/[attemptId]/soru/[no]", params: { attemptId: p.attemptId ?? "", no: String(no + 1) } })} />
             ) : null}
@@ -105,6 +117,20 @@ export default function SoruAyrintiScreen() {
       </Screen>
 
       {q ? <ReportSheet questionId={q.questionId} visible={reportOpen} onClose={() => setReportOpen(false)} /> : null}
+      {q ? (
+        <ShareQuestionSheet
+          visible={shareOpen}
+          onClose={() => setShareOpen(false)}
+          answered
+          build={(mode) =>
+            buildShareCardData(
+              { questionId: q.questionId, versionId: q.versionId, stem: q.stem, mediaUrl: q.mediaUrl, options: q.options.map((o) => ({ id: o.id, label: o.label, text: o.text })), relatedArticleRef: null },
+              { isCorrect: status === "correct", correctOptionId: q.options.find((o) => o.isCorrect)?.id ?? null, explanation: q.explanation, legalReference: q.legalReference ?? null, relatedArticle: null },
+              mode,
+            )
+          }
+        />
+      ) : null}
     </>
   );
 }
