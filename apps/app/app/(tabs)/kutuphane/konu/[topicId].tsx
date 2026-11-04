@@ -1,16 +1,17 @@
 import { Stack, useLocalSearchParams, useRouter } from "expo-router";
 import { BookOpen, Bookmark, XCircle } from "lucide-react-native";
 import { View } from "react-native";
-import { CoachLine, RoomStatPanel, SummaryUnitRow } from "@/components/domain";
+import { CoachLine, FlashcardEntry, FlashcardModeSheet, RoomStatPanel, SummaryUnitRow, roomCountsToModeCounts } from "@/components/domain";
+import { useFlashcardOverview, type FlashcardMode } from "@/features/flashcards/queries";
 import { useTopicUnits, weakestUnit } from "@/features/summaries/queries";
-import { ActionBar, AppText, Badge, Button, ListRow, Notice, Screen, SectionHeader, Skeleton } from "@/components/ui";
+import { ActionBar, AppText, Badge, Button, ListRow, Notice, Screen, SectionHeader, Skeleton, useSheetAction } from "@/components/ui";
 import { useTopicRoom } from "@/features/rooms/queries";
 import { useTheme } from "@/theme/ThemeProvider";
 
 /**
  * Konu odası (Doc 49/14): kompakt durum → koç cümlesi → "Bu konuda" (yanlışlar, favoriler,
  * ilgili maddeler) → "Başla · <konu>'dan 10 soru" + ikincil "Yanlışları çöz".
- * Bilgi kartları ve tur geçmişi karar/veri bekliyor — burada yok.
+  * Bilgi kartları (Doc 56): sunucu sayım verdiyse "Bu konuda" satırı; tur geçmişi hâlâ yok.
  */
 export default function KonuOdasiScreen() {
   const router = useRouter();
@@ -21,6 +22,9 @@ export default function KonuOdasiScreen() {
   const units = useTopicUnits(p.topicId ?? null);
   const d = q.data;
   const title = d?.topic.name ?? p.name ?? "Konu";
+  const kartlar = useSheetAction();
+  const kartOzeti = useFlashcardOverview(kartlar.visible && p.topicId ? { topicId: p.topicId } : null);
+  const kartModu = (mode: FlashcardMode) => kartlar.closeThen(() => router.push({ pathname: "/kartlar", params: { mode, source: "topic_room", topicId: p.topicId ?? "", courseId: "", unitSlug: "", title } }));
 
   const start = (n = 10) => router.push({ pathname: "/seans", params: { source: "topic_room", count: String(n), focusKind: "topic", topicId: p.topicId, courseId: "", recipe: "" } });
   const yanlislar = () => router.push({ pathname: "/seans", params: { mode: "review", source: "topic_room", count: String(Math.min(20, d?.wrongCount ?? 10)), focusKind: "topic", topicId: p.topicId, courseId: "", recipe: "" } });
@@ -68,7 +72,10 @@ export default function KonuOdasiScreen() {
             <View style={{ gap: space.s2 }}>
               <SectionHeader title="Bu konuda" />
               <ListRow title="Yanlışların" subtitle={d.wrongCount > 0 ? `${d.wrongCount} soru` : "Açık yanlış yok"} leading={<Ikon icon={XCircle} />} onPress={d.wrongCount > 0 ? yanlislar : undefined} />
-              <ListRow title="Favorilerin" subtitle={d.favoriteCount > 0 ? `${d.favoriteCount} soru` : "Henüz favori yok"} leading={<Ikon icon={Bookmark} />} onPress={d.favoriteCount > 0 ? () => router.push({ pathname: "/seans", params: { mode: "practice", fromBookmarks: "1", source: "topic_room", count: String(Math.min(20, d.favoriteCount)), focusKind: "topic", topicId: p.topicId, courseId: "", recipe: "" } }) : undefined} divider={d.legislation != null} />
+              <ListRow title="Favorilerin" subtitle={d.favoriteCount > 0 ? `${d.favoriteCount} soru` : "Henüz favori yok"} leading={<Ikon icon={Bookmark} />} onPress={d.favoriteCount > 0 ? () => router.push({ pathname: "/seans", params: { mode: "practice", fromBookmarks: "1", source: "topic_room", count: String(Math.min(20, d.favoriteCount)), focusKind: "topic", topicId: p.topicId, courseId: "", recipe: "" } }) : undefined} divider={d.legislation != null || Boolean(d.flashcards && (d.flashcards.count > 0 || d.flashcards.locked > 0))} />
+              {d.flashcards && (d.flashcards.count > 0 || d.flashcards.locked > 0) ? (
+                <FlashcardEntry counts={roomCountsToModeCounts(d.flashcards)} locked={d.flashcards.count === 0 && d.flashcards.locked > 0} onPress={() => (d.flashcards!.count === 0 ? router.push("/paywall") : kartlar.open())} divider={d.legislation != null} />
+              ) : null}
               {d.legislation ? (
                 <ListRow
                   title="İlgili maddeler"
@@ -87,6 +94,7 @@ export default function KonuOdasiScreen() {
           </>
         ) : null}
       </Screen>
+      <FlashcardModeSheet visible={kartlar.visible} onClose={kartlar.close} onDismissed={kartlar.onDismissed} overview={kartOzeti.data ?? null} onPick={kartModu} onPremium={() => kartlar.closeThen(() => router.push("/paywall"))} />
       {d ? (
         <View style={{ position: "absolute", left: 0, right: 0, bottom: 0 }}>
           <ActionBar title={`Başla · 10 soru · ${d.topic.name}`} onPress={() => start(10)} secondary={d.wrongCount > 0 ? <Button title={`Yanlışları çöz · ${Math.min(20, d.wrongCount)}`} variant="secondary" onPress={yanlislar} /> : undefined} />

@@ -1,5 +1,5 @@
 import { useRouter } from "expo-router";
-import { RotateCcw, Shuffle } from "lucide-react-native";
+import { Layers, RotateCcw, Shuffle } from "lucide-react-native";
 import { useWindowDimensions, View } from "react-native";
 import { CourseCard, ResumeStrip } from "@/components/domain";
 import { AppText, Chip, Notice, Screen, Skeleton } from "@/components/ui";
@@ -94,6 +94,9 @@ export default function CalisScreen() {
             </View>
           )}
 
+          {d.totals.flashcardsDue != null && d.totals.flashcardsDue > 0 ? (
+            <Chip label={`Kart tekrarı · ${d.totals.flashcardsDue}`} icon={Layers} onPress={() => router.push({ pathname: "/kartlar", params: { mode: "due", source: "study_hub", resume: "", title: "Kart tekrarı" } })} style={{ justifyContent: "center" }} />
+          ) : null}
           <View style={{ flexDirection: "row", gap: space.s3 }}>
             <Chip label="Karışık 10 soru" icon={Shuffle} onPress={() => router.push({ pathname: "/seans", params: { source: "study_hub", count: "10", focusKind: "coach", courseId: "", topicId: "", recipe: "" } })} style={{ flex: 1, justifyContent: "center" }} />
             <Chip

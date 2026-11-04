@@ -17,8 +17,8 @@ export interface DailyFocus {
 export type HomeSource = "home_task" | "home_resume" | "home_weak_topic" | "home_suggestion" | "plan" | "course_room" | "topic_room" | "home_next" | "home_route" | "home_for_you" | "study_hub" | "course_test";
 
 export interface TodayTaskAction {
-  /** open_summary (Doc 49/16): konu özeti ünitesi (`route` = /ozet/<slug>). */
-  type: "start_session" | "resume_session" | "open_exams" | "open_summary";
+  /** open_summary (Doc 49/16): konu özeti ünitesi (`route` = /ozet/<slug>); open_flashcards (Doc 56): kart tekrarı (`route` = /kartlar?…). */
+  type: "start_session" | "resume_session" | "open_exams" | "open_summary" | "open_flashcards";
   label: string;
   count?: number;
   recipe?: "coach" | "comeback";
@@ -46,7 +46,7 @@ export interface NextStep {
   estimateMin: number | null;
   action: TodayTaskAction;
 }
-export type RouteItemKind = "daily" | "summary" | "questions" | "review" | "exam" | "plan_topic" | "plan_review" | "plan_mock";
+export type RouteItemKind = "daily" | "summary" | "questions" | "review" | "exam" | "plan_topic" | "plan_review" | "plan_mock" | "flashcards";
 export interface RouteItem {
   key: string;
   kind: RouteItemKind;
@@ -57,7 +57,7 @@ export interface RouteItem {
   done: boolean;
   action: TodayTaskAction | null;
 }
-export type ForYouKind = "wrongs" | "favorites" | "weak_topic" | "exam" | "mixed";
+export type ForYouKind = "wrongs" | "favorites" | "weak_topic" | "exam" | "mixed" | "flashcards_due";
 export interface ForYouItem {
   kind: ForYouKind;
   label: string;

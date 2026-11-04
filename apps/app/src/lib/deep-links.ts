@@ -29,6 +29,10 @@ export function routeToHref(route: string | null | undefined): AppHref {
   // Konu özeti ünitesi (Doc 53): web /ozet/<slug> ile aynı adres.
   const ozet = r.match(/^\/?ozet\/([a-z0-9-]+)$/);
   if (ozet) return { pathname: "/ozet/[slug]", params: { slug: ozet[1]! } };
+  // Bilgi kartları (Doc 56): "/kartlar" vadesi gelenler; "flashcards:<topicUuid>" konu kapsamı.
+  if (r === "/kartlar" || r === "kartlar" || r === "flashcards") return { pathname: "/kartlar", params: { mode: "due", source: "notif" } };
+  const kart = r.match(/^flashcards:([0-9a-fA-F-]{36})$/);
+  if (kart) return { pathname: "/kartlar", params: { mode: "due", source: "notif", topicId: kart[1]! } };
   if (r === "/quiz") return { pathname: "/seans", params: { mode: "practice", count: "10", source: "notif" } };
   if (r === "/review") return { pathname: "/(tabs)/kutuphane/tekrar", params: { sekme: "yanlislar" } };
   if (r === "/catalog") return { pathname: "/(tabs)/kutuphane" };

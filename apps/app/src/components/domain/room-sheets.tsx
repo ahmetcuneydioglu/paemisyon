@@ -1,8 +1,14 @@
 import { BookOpen, ChevronRight, LayoutGrid, RotateCcw, Scale, Sparkles, Star, type LucideIcon } from "lucide-react-native";
 import { Pressable, View } from "react-native";
 import { AppText, Button, ListRow, Sheet } from "@/components/ui";
-import type { RoomTopic } from "@/features/rooms/queries";
+import type { FlashcardRoomCounts, RoomTopic } from "@/features/rooms/queries";
 import { useTheme } from "@/theme/ThemeProvider";
+import { FlashcardEntry } from "./flashcards";
+
+/** Oda sayımı → giriş satırı sayımı (durum çubuğu için öğreniliyor = kalan). */
+export function roomCountsToModeCounts(f: FlashcardRoomCounts) {
+  return { total: f.count, learned: f.learned, learning: Math.max(0, f.count - f.learned), new: 0, due: f.due, hard: 0, favorites: 0, locked: f.locked };
+}
 
 type SheetProps = { visible: boolean; onClose: () => void; onDismissed: () => void };
 type Konu = Omit<RoomTopic, "children">;
@@ -28,6 +34,7 @@ export function TopicActionSheet({
   onRead,
   onWrongs,
   onFavorites,
+  onFlashcards,
   onDetails,
   ...sheet
 }: SheetProps & {
@@ -37,6 +44,8 @@ export function TopicActionSheet({
   onRead: () => void;
   onWrongs: () => void;
   onFavorites: () => void;
+  /** Bilgi kartları (Doc 56): sunucu sayım verdiyse satır çizilir. */
+  onFlashcards?: () => void;
   /** Konu sayfası: koç notu, plan, ilgili maddeler. */
   onDetails: () => void;
 }) {
@@ -53,7 +62,8 @@ export function TopicActionSheet({
           <View>
             <EylemSatiri icon={BookOpen} title="Özeti oku" subtitle={t.units.count > 0 ? `${t.units.count} ünite · ${t.units.read} okundu` : "Bu konuda henüz özet yok"} onPress={t.units.count > 0 ? onRead : undefined} />
             <EylemSatiri icon={RotateCcw} title="Yanlışlarım" subtitle={t.wrongCount > 0 ? `${t.wrongCount} soru` : "Bu konuda açık yanlış yok"} onPress={t.wrongCount > 0 ? onWrongs : undefined} />
-            <EylemSatiri icon={Star} title="Favorilerim" subtitle={t.favoriteCount > 0 ? `${t.favoriteCount} soru` : "Bu konuda favori yok"} onPress={t.favoriteCount > 0 ? onFavorites : undefined} divider={false} />
+            <EylemSatiri icon={Star} title="Favorilerim" subtitle={t.favoriteCount > 0 ? `${t.favoriteCount} soru` : "Bu konuda favori yok"} onPress={t.favoriteCount > 0 ? onFavorites : undefined} divider={Boolean(t.flashcards)} />
+            {t.flashcards ? <FlashcardEntry counts={roomCountsToModeCounts(t.flashcards)} locked={t.flashcards.count === 0 && t.flashcards.locked > 0} onPress={onFlashcards} /> : null}
           </View>
           <Button title="Konu sayfasını aç" variant="ghost" size="sm" onPress={onDetails} style={{ alignSelf: "flex-start" }} />
         </View>
@@ -69,17 +79,23 @@ export function TopicActionSheet({
 export function ReadingSheet({
   topics,
   legislation,
+  flashcards,
   onTopic,
   onLaw,
+  onFlashcards,
   ...sheet
 }: SheetProps & {
   topics: Konu[];
   legislation: { slug: string; name: string; articleCount: number }[];
+  /** Dersin bilgi kartları (Doc 56 karar B: üçüncü bölüm); sunucu null verirse bölüm yok. */
+  flashcards?: FlashcardRoomCounts | null;
   onTopic: (t: Konu) => void;
   onLaw: (slug: string) => void;
+  onFlashcards?: () => void;
 }) {
   const { space } = useTheme();
   const ozetli = topics.filter((t) => t.units.count > 0);
+  const kartlar = flashcards && (flashcards.count > 0 || flashcards.locked > 0) ? flashcards : null;
   return (
     <Sheet visible={sheet.visible} onClose={sheet.onClose} onDismissed={sheet.onDismissed} title="Konu oku">
       {ozetli.length > 0 ? (
@@ -102,7 +118,15 @@ export function ReadingSheet({
           ))}
         </View>
       ) : null}
-      {ozetli.length === 0 && legislation.length === 0 ? (
+      {kartlar ? (
+        <View style={{ gap: space.s1 }}>
+          <AppText variant="label" tone="subtle">
+            Bilgi kartları
+          </AppText>
+          <FlashcardEntry counts={roomCountsToModeCounts(kartlar)} locked={kartlar.count === 0 && kartlar.locked > 0} onPress={onFlashcards} />
+        </View>
+      ) : null}
+      {ozetli.length === 0 && legislation.length === 0 && !kartlar ? (
         <AppText variant="bodySm" tone="soft">
           Bu derste henüz okunacak özet ya da mevzuat metni yok.
         </AppText>

@@ -19,6 +19,13 @@ test("push route sözlüğü", () => {
   assert.equal(sonuc.pathname, "/deneme-sonuc/[attemptId]");
   assert.equal(sonuc.params?.attemptId, "4f1a6b2e-1c2d-4e5f-8a9b-0c1d2e3f4a5b");
   assert.equal(routeToHref("deneme-sonuc/bozuk").pathname, "/(tabs)");
+  // Bilgi kartları (Doc 56)
+  assert.equal(routeToHref("/kartlar").pathname, "/kartlar");
+  assert.equal(routeToHref("/kartlar").params?.mode, "due");
+  const kart = routeToHref("flashcards:4f1a6b2e-1c2d-4e5f-8a9b-0c1d2e3f4a5b");
+  assert.equal(kart.pathname, "/kartlar");
+  assert.equal(kart.params?.topicId, "4f1a6b2e-1c2d-4e5f-8a9b-0c1d2e3f4a5b");
+  assert.equal(routeToHref("flashcards:bozuk").pathname, "/(tabs)");
 });
 
 test("bildirim evrensel bağlantısı", () => {
