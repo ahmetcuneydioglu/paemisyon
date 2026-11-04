@@ -37,20 +37,23 @@ function walkBlocks(node: RichTextNode, out: string[], ctx: ListCtx): void {
     case 'bulletList':
     case 'bullet_list': {
       let i = 0;
-      for (const item of node.content ?? []) walkListItem(item, out, { listKind: 'bullet', index: ++i });
+      for (const item of node.content ?? [])
+        walkListItem(item, out, { listKind: 'bullet', index: ++i });
       return;
     }
     case 'orderedList':
     case 'ordered_list': {
       let i = Number((node.attrs as { start?: number } | undefined)?.start ?? 1) - 1;
-      for (const item of node.content ?? []) walkListItem(item, out, { listKind: 'ordered', index: ++i });
+      for (const item of node.content ?? [])
+        walkListItem(item, out, { listKind: 'ordered', index: ++i });
       return;
     }
     case 'table': {
       for (const row of node.content ?? []) {
         const cells = (row.content ?? []).map((cell) => {
           const inner: string[] = [];
-          for (const child of cell.content ?? []) walkBlocks(child, inner, { listKind: null, index: 0 });
+          for (const child of cell.content ?? [])
+            walkBlocks(child, inner, { listKind: null, index: 0 });
           return inner.join(' ').trim();
         });
         out.push(cells.join(' | '));
