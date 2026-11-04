@@ -1,6 +1,6 @@
 # Doc 56 — Bilgi Kartları (flashcards): mimari analiz ve geliştirme planı
 
-Tarih: 4 Kasım 2026. Durum: **ANALİZ — onay bekliyor.** Kod yazılmadı, migration uygulanmadı,
+Tarih: 4 Kasım 2026. Durum: **ANALİZ ONAYLI (4 Kas, kararlar §11) — aşama 2 (tasarım) sırada.** Kod yazılmadı, migration uygulanmadı,
 mevcut ekran değiştirilmedi. Kaynak: kullanıcı talimatı (4 Kas) ve rakip uygulamanın üç ekran görüntüsü
 (kart ön yüzü, "Biliyorum" ve "Geç" damgaları, alt sayaç şeridi 1/266 · 8 · 258).
 
@@ -693,7 +693,19 @@ Toplam ~20 iş günü. Aşama 3 ve 4 paralel yürüyebilir (sözleşme §7.1 sab
 
 ---
 
-## 11. Kullanıcı kararı bekleyen maddeler
+## 11. Kararlar
+
+Kullanıcı kararı (4 Kas 2026):
+
+| # | Karar | Sonuç |
+|---|---|---|
+| 1 | İçerik kaynağı | **AI türetimi.** Yapı AI ile kurulur; kartlar `in_review`'a düşer, yayın öncesi kullanıcı görüp onaylar. CLAUDE.md'ye istisna maddesi yazılır (§8.3 madde 3). |
+| 2 | Ders odasında giriş | **B** — "Konu oku" sheet'inde "Bilgi kartları" bölümü. |
+| 3 | Premium kapısı | **İçerik kapısı** — her dersin ilk 2 ünitesinin kartları ücretsiz, SRS hafızası herkese tam. |
+| 4 | Puanlama | **2 düğme** — Tekrar · Biliyorum (jestle birebir). |
+| 5–8 | Animasyon altyapısı, hedef/seri, web vitrin, kart türleri | Karar verilmedi; aşağıdaki önerilen değerler varsayılır, kullanıcı aksini söylerse değişir. |
+
+Açık maddelerin özgün listesi:
 
 1. **İçerik kaynağı sırası:** (a) önce mevcut 48 üniteden AI türetimi + insan onayı, (b) önce el ile pilot deste, (c) ikisi birden.
    Öneri: pilot el ile (aşama 4'te deneyim için), ardından türetim (aşama 6–7). AI türetimi CLAUDE.md istisnası gerektirir (§8.3).
@@ -705,7 +717,7 @@ Toplam ~20 iş günü. Aşama 3 ve 4 paralel yürüyebilir (sözleşme §7.1 sab
 7. **Web public vitrin:** ilk sürümde yok (önerilen) / `(dual)` deste sayfası + sitemap.
 8. **Kart türleri ilk sürümde:** qa + numeric + trap (önerilen) / + cloze.
 
-Onay gelince aşama 2 (Figma) başlar; onaysız hiçbir migration uygulanmaz, hiçbir mevcut ekran değişmez.
+Aşama 2 (Figma) başlamadan önce 5–8 için itiraz yoksa önerilen değerlerle ilerlenir; aşama 3 öncesi migration ve CLAUDE.md istisnası kullanıcı onayıyla uygulanır.
 
 ---
 
