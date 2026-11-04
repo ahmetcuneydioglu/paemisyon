@@ -91,6 +91,19 @@ Bu kurallar her UI kodu yazımında geçerlidir; "sonradan düzeltiriz" yaklaş�
   özeti" ön ekli `sourceLabel` taşır, `in_review`'a düşer, mevzuat kontrol tarihi
   ve durumu (`verificationStatus`) tutulur. Madde metni tazelenince özet eskir ve
   yayından önce yeniden incelenir. Yayın kararı insanındır.
+  **İSTİSNA (5 Kas 2026, Doc 56):** BİLGİ KARTI (flashcard) model tarafından
+  üretilebilir (kullanıcı kararı 4 Kas 2026, Doc 56 §11 karar 1). Bu bir soru
+  değil, ayrı bir içerik türüdür; madde metninin ve konu özetinin yerine geçmez.
+  Şartı: kart bir konuya bağlıdır ve en az bir resmî maddeye referans verir
+  (`FlashcardArticle`, madde sürümüyle); cevap ve açıklamadaki her sayı/süre
+  referans maddenin metninde geçtiği betikle gösterilir (`kart-dogrulayici.ts`;
+  türetilmiş sayı yalnız açık formülle, karşı örnek `counterNumbers` ile); aynı
+  cevaba giden ikinci kart kusurdur; kanunda olmayan yetki/süre/şart/istisna
+  yazılmaz; kayıt "AI bilgi kartı" ön ekli `sourceLabel` taşır, `in_review`'a
+  düşer, mevzuat kontrol durumu (`verificationStatus`) tutulur ve madde
+  tazelenince eskir. Tuzak kartlarındaki olumsuz iddialar betikle doğrulanamaz;
+  insan incelemesi kaldırılamaz. Yayın kararı insanındır (yalnız admin; AI
+  kaynaklı kartlar toplu onaydan geçmez, tek tek yayınlanır).
 - Kaynak etiketi son kullanıcıya GÖSTERİLMEZ (4 Eyl 2026 kararı) — ne denemede,
   ne alıştırmada, ne günün sorusunda, ne de public/SEO sayfalarında. Etiket
   sorunun geldiği kitabı/sınavı işaret ediyor ve onu dağıtmak istemiyoruz.

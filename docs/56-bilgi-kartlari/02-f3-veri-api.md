@@ -1,7 +1,7 @@
 # Doc 56 / 02 — Aşama 3: veri modeli ve API
 
-Tarih: 5 Kasım 2026. Durum: **kod yazıldı, testler geçti; migration DOSYASI hazır, veritabanına
-UYGULANMADI (kullanıcı onayı bekler). Bayrak kapalı: `flashcards_enabled` (panel › Ayarlar).**
+Tarih: 5 Kasım 2026. Durum: **kod yazıldı, testler geçti; migration CANLIYA UYGULANDI (5 Kas, kullanıcı
+onayıyla); CLAUDE.md istisnası işlendi. Bayrak kapalı: `flashcards_enabled` (panel › Ayarlar).**
 
 ## 1. Ne yapıldı
 
@@ -68,10 +68,17 @@ articles[{no,title,legislationSlug}], bookmarked, state{state,due,hard,dueAt}}`.
 
 `npx tsx scripts/kart-dogrula.ts deste.json --md` → `npx tsx scripts/kart-yukle.ts deste.json [--replace]`.
 
-## 5. Sıradaki (aşama 4 öncesi onaylar)
+## 5. Canlıya uygulama (5 Kas 2026, kullanıcı onayı)
 
-1. **Migration uygulama**: deploy penceresinde `prisma migrate deploy` (kullanıcı onayı).
-2. **CLAUDE.md istisnası** ("AI bilgi kartı" üretimi) — kullanıcı onayıyla işlenir (aşama 7 planında, üretim
-   başlamadan önce).
-3. Aşama 4: Expo (reanimated + gesture-handler kurulumu, `FlashCard`/`FlashcardDeck`/`RatingBar`…, `/kartlar`),
+- Prova: boş yerel Postgres 16'da 64 migration'lık zincir (`prisma migrate deploy`) temiz geçti (Doc 50 dersi).
+- Canlı (Supabase `paemisyon`): DDL Supabase yönetim bağlantısıyla uygulandı (pooler'a dokunmadan, backend
+  durdurulmadan — yalnız ekleme, kısa kilit); `_prisma_migrations`'a `20261105000000_bilgi_kartlari` satırı
+  dosyanın sha256 checksum'uyla yazıldı, böylece Railway'in `migrate deploy` adımı bunu uygulanmış sayar
+  (yerel provadaki satırla birebir biçim). Doğrulama: 6 tablo, 2 enum, `users.flashcard_daily_goal`, 10
+  indeks, 10 FK; 64 migration uygulanmış.
+- **CLAUDE.md istisnası** ("AI bilgi kartı" üretimi) aynı gün işlendi.
+
+## 6. Sıradaki
+
+1. Aşama 4: Expo (reanimated + gesture-handler kurulumu, `FlashCard`/`FlashcardDeck`/`RatingBar`…, `/kartlar`),
    web `/kartlar`, giriş satırları; pilot deste el ile (Yasama I, 24 kart) ya da ilk AI türetimi.
