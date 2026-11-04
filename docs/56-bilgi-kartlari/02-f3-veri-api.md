@@ -74,8 +74,8 @@ articles[{no,title,legislationSlug}], bookmarked, state{state,due,hard,dueAt}}`.
 - Canlı (Supabase `paemisyon`): DDL Supabase yönetim bağlantısıyla uygulandı (pooler'a dokunmadan, backend
   durdurulmadan — yalnız ekleme, kısa kilit); `_prisma_migrations`'a `20261105000000_bilgi_kartlari` satırı
   dosyanın sha256 checksum'uyla yazıldı, böylece Railway'in `migrate deploy` adımı bunu uygulanmış sayar
-  (yerel provadaki satırla birebir biçim). Doğrulama: 6 tablo, 2 enum, `users.flashcard_daily_goal`, 10
-  indeks, 10 FK; 64 migration uygulanmış.
+  (yerel provadaki satırla birebir biçim). Doğrulama: 6 tablo, 2 enum, `users.flashcard_daily_goal` (1233 kullanıcıda
+  varsayılan 20), 16 indeks (PK dahil), 13 FK; 64 migration uygulanmış.
 - **CLAUDE.md istisnası** ("AI bilgi kartı" üretimi) aynı gün işlendi.
 
 ## 6. Sıradaki
