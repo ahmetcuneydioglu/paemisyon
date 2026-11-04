@@ -5,7 +5,12 @@ import { computeStreakUpdate, liveStreak, weeklyFreezeAllowance } from './streak
 import { GUN_KAYMASI_MS, gunAnahtari, gunBaslangici, haftaBaslangici } from '../../common/gun';
 import { computeRank, rankScore, ACTIVE_DAY_POINTS } from '../coach/rank.logic';
 import { tallyByUnit, type UnitTally } from '../summaries/unite-eslesme';
-import { teaserLine, type LeaderboardTeaser, type TeaserMe, type TeaserRow } from './leaderboard-teaser.logic';
+import {
+  teaserLine,
+  type LeaderboardTeaser,
+  type TeaserMe,
+  type TeaserRow,
+} from './leaderboard-teaser.logic';
 
 /** Liderlik dönemi — sekmelerle birebir (Bugün/Hafta/Ay/Tüm). */
 export type LeaderboardPeriod = 'today' | 'week' | 'month' | 'all';
@@ -489,9 +494,14 @@ export class ProgressService {
     ]);
 
     const meRow = meRows[0] ?? null;
-    const ids = [...new Set([...topRows.map((r) => r.user_id), meRow?.ust_id].filter(Boolean))] as string[];
+    const ids = [
+      ...new Set([...topRows.map((r) => r.user_id), meRow?.ust_id].filter(Boolean)),
+    ] as string[];
     const users = ids.length
-      ? await this.prisma.user.findMany({ where: { id: { in: ids } }, select: { id: true, displayName: true } })
+      ? await this.prisma.user.findMany({
+          where: { id: { in: ids } },
+          select: { id: true, displayName: true },
+        })
       : [];
     const adi = new Map(users.map((u) => [u.id, u.displayName || 'Aday']));
 
@@ -505,7 +515,8 @@ export class ProgressService {
       ? {
           rank: meRow.rank,
           points: meRow.points,
-          pointsToNext: meRow.ust_points != null ? Math.max(0, meRow.ust_points - meRow.points) : null,
+          pointsToNext:
+            meRow.ust_points != null ? Math.max(0, meRow.ust_points - meRow.points) : null,
           nextName: meRow.ust_id ? (adi.get(meRow.ust_id) ?? 'Aday') : null,
         }
       : null;

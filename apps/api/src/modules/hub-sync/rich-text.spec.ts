@@ -7,7 +7,13 @@ describe('richTextToPlain (Doc 55 §3: paragraflar satır satır)', () => {
     const doc = {
       type: 'doc',
       content: [
-        { type: 'paragraph', content: [{ type: 'text', text: 'Kalın ', marks: [{ type: 'bold' }] }, { type: 'text', text: 'metin.' }] },
+        {
+          type: 'paragraph',
+          content: [
+            { type: 'text', text: 'Kalın ', marks: [{ type: 'bold' }] },
+            { type: 'text', text: 'metin.' },
+          ],
+        },
         p('İkinci paragraf.'),
       ],
     };
@@ -17,10 +23,35 @@ describe('richTextToPlain (Doc 55 §3: paragraflar satır satır)', () => {
     const doc = {
       type: 'doc',
       content: [
-        { type: 'paragraph', content: [{ type: 'text', text: 'a' }, { type: 'hardBreak' }, { type: 'text', text: 'b' }] },
-        { type: 'orderedList', attrs: { start: 3 }, content: [{ type: 'listItem', content: [p('üç')] }, { type: 'listItem', content: [p('dört')] }] },
+        {
+          type: 'paragraph',
+          content: [
+            { type: 'text', text: 'a' },
+            { type: 'hardBreak' },
+            { type: 'text', text: 'b' },
+          ],
+        },
+        {
+          type: 'orderedList',
+          attrs: { start: 3 },
+          content: [
+            { type: 'listItem', content: [p('üç')] },
+            { type: 'listItem', content: [p('dört')] },
+          ],
+        },
         { type: 'bulletList', content: [{ type: 'listItem', content: [p('madde')] }] },
-        { type: 'table', content: [{ type: 'tableRow', content: [{ type: 'tableCell', content: [p('x')] }, { type: 'tableCell', content: [p('y')] }] }] },
+        {
+          type: 'table',
+          content: [
+            {
+              type: 'tableRow',
+              content: [
+                { type: 'tableCell', content: [p('x')] },
+                { type: 'tableCell', content: [p('y')] },
+              ],
+            },
+          ],
+        },
       ],
     };
     expect(richTextToPlain(doc)).toBe('a\nb\n3. üç\n4. dört\n- madde\nx | y');
@@ -30,6 +61,8 @@ describe('richTextToPlain (Doc 55 §3: paragraflar satır satır)', () => {
     expect(richTextToPlain({ type: 'doc', content: [p('  çok   boşluk  ')] })).toBe('çok boşluk');
   });
   it('normalizeForCompare tipografik tırnak/tireyi ve boşluğu eşitler', () => {
-    expect(normalizeForCompare('Polis’in  “yetkisi” – md.')).toBe(normalizeForCompare("Polis'in \"yetkisi\" - md."));
+    expect(normalizeForCompare('Polis’in  “yetkisi” – md.')).toBe(
+      normalizeForCompare('Polis\'in "yetkisi" - md.'),
+    );
   });
 });
