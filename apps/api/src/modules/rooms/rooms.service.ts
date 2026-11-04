@@ -1,6 +1,8 @@
 import { Injectable, NotFoundException } from '@nestjs/common';
 import { PrismaService } from '../../infra/prisma/prisma.service';
 import { CourseTestsService } from '../course-tests/course-tests.service';
+import { FlashcardsService } from '../flashcards/flashcards.service';
+import type { ModeCounts } from '../flashcards/flashcards.logic';
 import { haftaBasi } from '../../common/gun';
 import { LAW_NAME_RE, slugify } from '../public/public.service';
 import { enTazeYarimTur, TAZE_TUR_MS, yarimTurSorgusu } from '../coach/today-task.logic';
@@ -36,8 +38,16 @@ type Satir = {
   favoriteCount: number;
   /** Yayındaki ünite özetleri; tek ünite varsa istemci doğrudan açar. */
   units: { count: number; read: number; firstSlug: string | null };
+  /** Bilgi kartları (Doc 56): bayrak kapalıyken ya da kart yoksa null (istemci satır çizmez). */
+  flashcards: FlashcardRoomCounts | null;
   note: string;
 };
+/** Oda yanıtındaki kart sayımı: açık kartlar; kilitli kartlar yalnız `locked`'ta. */
+type FlashcardRoomCounts = { count: number; due: number; learned: number; locked: number };
+const kartSayimi = (c: ModeCounts | undefined): FlashcardRoomCounts | null =>
+  c && (c.total > 0 || c.locked > 0)
+    ? { count: c.total, due: c.due, learned: c.learned, locked: c.locked }
+    : null;
 /** İstemciye giden konu satırı: ham doğruluk/doğru sayısı dışarı çıkmaz (yüzde ve band yeter). */
 const kamu = (r: Satir) => ({
   id: r.id,
@@ -53,6 +63,7 @@ const kamu = (r: Satir) => ({
   wrongCount: r.wrongCount,
   favoriteCount: r.favoriteCount,
   units: r.units,
+  flashcards: r.flashcards,
   note: r.note,
 });
 
@@ -65,9 +76,26 @@ export class RoomsService {
   constructor(
     private readonly prisma: PrismaService,
     private readonly courseTests: CourseTestsService,
+    private readonly flashcards: FlashcardsService,
   ) {}
 
-  async courseRoom(userId: string, courseId: string, isPremiumUser = false) {
+  /** Bilgi kartı sayımları yalnız bayrak açıkken (ya da admin/beta için) hesaplanır. */
+  private async kartlar(
+    userId: string,
+    isPremiumUser: boolean,
+    roles: readonly string[],
+    by: { courseId?: string; topicId?: string },
+  ) {
+    if (!(await this.flashcards.enabledFor({ roles: [...roles] }))) return null;
+    return this.flashcards.roomCounts(userId, isPremiumUser, by);
+  }
+
+  async courseRoom(
+    userId: string,
+    courseId: string,
+    isPremiumUser = false,
+    roles: readonly string[] = [],
+  ) {
     const course = await this.prisma.course.findFirst({
       where: { id: courseId, deletedAt: null },
       select: { id: true, name: true, icon: true },
@@ -85,6 +113,7 @@ export class RoomsService {
       sayimlar,
       testler,
       units,
+      kartlar,
     ] = await Promise.all([
       this.prisma.topic.findMany({
         where: { courseId, deletedAt: null, parentId: null },
@@ -137,6 +166,7 @@ export class RoomsService {
           progress: { where: { userId, completedAt: { not: null } }, select: { unitId: true } },
         },
       }),
+      this.kartlar(userId, isPremiumUser, roles, { courseId }),
     ]);
     const examWeight = profile?.preferredModuleId
       ? await this.prisma.examSection.findFirst({
@@ -183,6 +213,7 @@ export class RoomsService {
         wrongCount: yanlis,
         favoriteCount: sayimlar.favori.get(t.id) ?? 0,
         units: u,
+        flashcards: kartlar ? kartSayimi(kartlar.byTopic.get(t.id)) : null,
         note: konuKunyesi({ solved, unitCount: u.count, wrongCount: yanlis }),
       };
     };
@@ -222,6 +253,8 @@ export class RoomsService {
         wrongCount,
         favoriteCount: favCount,
         summaryUnitCount: units.length,
+        /** Bilgi kartları (Doc 56): bayrak kapalı ya da kart yoksa null. */
+        flashcards: kartlar ? kartSayimi(kartlar.total) : null,
         /** Ders testleri (Doc 49/18): seçim sayfasının alt yazısı. */
         tests: testler,
         // Ana metin önce: madde sayısı çoktan aza (Anayasa Hukuku'nda 12 mevzuat var).
@@ -236,7 +269,12 @@ export class RoomsService {
     };
   }
 
-  async topicRoom(userId: string, topicId: string, isPremiumUser = false) {
+  async topicRoom(
+    userId: string,
+    topicId: string,
+    isPremiumUser = false,
+    roles: readonly string[] = [],
+  ) {
     const topic = await this.prisma.topic.findFirst({
       where: { id: topicId, deletedAt: null },
       select: {
@@ -250,7 +288,7 @@ export class RoomsService {
     });
     if (!topic) throw new NotFoundException('Konu bulunamadı');
     const buHafta = haftaBasi();
-    const [progress, wrongCount, favCount, son5, planItem, maddeler] = await Promise.all([
+    const [progress, wrongCount, favCount, son5, planItem, maddeler, kartlar] = await Promise.all([
       this.prisma.userTopicProgress.findUnique({
         where: { userId_topicId: { userId, topicId } },
         select: { solvedCount: true, correctCount: true },
@@ -272,6 +310,7 @@ export class RoomsService {
         where: { topicId, status: 'published' },
         select: { articleNo: true },
       }),
+      this.kartlar(userId, isPremiumUser, roles, { topicId }),
     ]);
     const solved = progress?.solvedCount ?? 0;
     const correct = progress?.correctCount ?? 0;
@@ -309,6 +348,8 @@ export class RoomsService {
       }),
       wrongCount,
       favoriteCount: favCount,
+      /** Bilgi kartları (Doc 56): bayrak kapalı ya da kart yoksa null. */
+      flashcards: kartlar ? kartSayimi(kartlar.total) : null,
       legislation:
         leg || maddeler.length
           ? {
@@ -325,7 +366,12 @@ export class RoomsService {
    * Çalış ana ekranı (Doc 49/17): hedef sınavın dersleri kart verisiyle + "kaldığın yer" + toplamlar.
    * Ders sırası ağırlığa göre (eşitlikte müfredat sırası); künye cümlesi sunucuda.
    */
-  async study(userId: string, moduleIdParam: string | null = null, now = new Date()) {
+  async study(
+    userId: string,
+    moduleIdParam: string | null = null,
+    now = new Date(),
+    ctx: { isPremium: boolean; roles: readonly string[] } = { isPremium: false, roles: [] },
+  ) {
     // Web'de sınav bağlamı seçilebilir (?sinav=); verilmezse hedef sınav.
     const [profile, secilen] = await Promise.all([
       this.prisma.user.findUnique({
@@ -341,7 +387,10 @@ export class RoomsService {
     ]);
     const modul = secilen ?? profile?.preferredModule ?? null;
     const moduleId = modul?.id ?? null;
-    const [sections, progress, yanlis, favori, uniteler, yarim] = await Promise.all([
+    const kartVade = (await this.flashcards.enabledFor({ roles: [...ctx.roles] }))
+      ? this.flashcards.dueTotal(userId, ctx.isPremium, now)
+      : Promise.resolve(null);
+    const [sections, progress, yanlis, favori, uniteler, yarim, flashcardsDue] = await Promise.all([
       moduleId
         ? this.prisma.examSection.findMany({
             where: { examTypeId: moduleId, deletedAt: null },
@@ -379,6 +428,7 @@ export class RoomsService {
         WHERE su.status = 'published' AND su.deleted_at IS NULL
         GROUP BY t.course_id`,
       this.prisma.quizSession.findMany(yarimTurSorgusu(userId)),
+      kartVade,
     ]);
     const harita = (rows: { course_id: string; cnt: number }[]) =>
       new Map(rows.map((r) => [r.course_id, r.cnt]));
@@ -439,7 +489,12 @@ export class RoomsService {
       module: modul,
       resume: kaldiginYer(enTazeYarimTur(yarim), now, TAZE_TUR_MS),
       courses,
-      totals: { wrongCount: toplam(yanlisM), favoriteCount: toplam(favoriM) },
+      totals: {
+        wrongCount: toplam(yanlisM),
+        favoriteCount: toplam(favoriM),
+        /** Bilgi kartları (Doc 56): vadesi gelen açık kart; bayrak kapalıyken null. */
+        flashcardsDue,
+      },
     };
   }
 

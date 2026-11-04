@@ -32,6 +32,7 @@ import { CourseTestsModule } from './modules/course-tests/course-tests.module';
 import { UsersModule } from './modules/users/users.module';
 import { SummariesModule } from './modules/summaries/summaries.module';
 import { HubSyncModule } from './modules/hub-sync/hub-sync.module';
+import { FlashcardsModule } from './modules/flashcards/flashcards.module';
 
 @Module({
   imports: [
@@ -91,6 +92,7 @@ import { HubSyncModule } from './modules/hub-sync/hub-sync.module';
     HealthModule,
     UsersModule,
     SummariesModule, // Doc 53 konu özetleri
+    FlashcardsModule, // Doc 56 bilgi kartları (bayrak: flashcards_enabled)
     NotificationsModule,
     EmailModule,
   ],

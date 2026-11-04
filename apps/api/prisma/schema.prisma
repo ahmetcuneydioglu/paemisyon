@@ -54,6 +54,21 @@ enum SummaryBlockType {
   bridge
 }
 
+/// Bilgi kartı türleri (Doc 56 §5.1): soru-cevap, boşluk doldurma, sayı/süre, tuzak.
+enum FlashcardKind {
+  qa
+  cloze
+  numeric
+  trap
+}
+
+/// Bilgi kartı puanı (Doc 56 karar 4: iki düğme; `easy` ileriye açık, istemci ilk sürümde göndermez).
+enum FlashcardRating {
+  again
+  known
+  easy
+}
+
 /// Mevzuat türü (Doc 29 §11) — V1'de yalnız `kanun` dolu; mimari geleceğe açık.
 enum LegislationType {
   kanun
@@ -167,6 +182,8 @@ model User {
   /// Günlük çalışma süresi hedefi, dakika (Doc 49 S1-D): onboarding'in 15/30/60
   /// seçimi; `dailyGoal` soru hedefi AYRI anlamdır ve kalır. null = seçilmedi.
   dailyMinutes          Int?       @map("daily_minutes")
+  /// Günlük bilgi kartı hedefi (Doc 56 karar 6): soru hedefinden AYRI; kullanıcı ayarlar.
+  flashcardDailyGoal    Int        @default(20) @map("flashcard_daily_goal")
   // Hedef sınav tarihi (Doc 25 §3 durum makinesi: exam_mode/taper). Kullanıcı ayarlar.
   targetExamDate        DateTime?  @map("target_exam_date") @db.Date
   /// Son etkileşim anı (Doc 52 §4.9): uygulama açılışı (saatte bir) ve cevap
@@ -198,6 +215,10 @@ model User {
   questionReviews      QuestionReview[]
   questionNotes        QuestionNote[]
   lists                UserList[]
+  flashcardReviews     FlashcardReview[]
+  flashcardEvents      FlashcardReviewEvent[]
+  flashcardBookmarks   FlashcardBookmark[]
+  flashcardSessions    FlashcardSession[]
   studyPlans           StudyPlan[]
   questionReports      QuestionReport[]
   badges               UserBadge[]
@@ -405,6 +426,7 @@ model Topic {
   summaryUnits     SummaryUnit[]
   courseTests      CourseTest[]
   hubTopicMaps     HubTopicMap[]
+  flashcards       Flashcard[]
 
   dailyFocuses DailyFocus[]
 
@@ -457,16 +479,17 @@ model LawArticle {
   /// Tam-metin arama vektörü — migration'da GENERATED ALWAYS (simple + tr_unaccent).
   search        Unsupported("tsvector")?
 
-  topic       Topic                 @relation(fields: [topicId], references: [id], onDelete: Cascade)
-  legislation Legislation?          @relation(fields: [legislationId], references: [id], onDelete: SetNull)
-  section     LegislationSection?   @relation(fields: [sectionId], references: [id], onDelete: SetNull)
-  bookmarks   ArticleBookmark[]
-  highlights  ArticleHighlight[]
-  notes       ArticleNote[]
-  questions   QuestionArticle[]
-  versions    LawArticleVersion[]
-  summaryRefs SummaryBlockArticle[]
-  summary     ArticleSummary?
+  topic         Topic                 @relation(fields: [topicId], references: [id], onDelete: Cascade)
+  legislation   Legislation?          @relation(fields: [legislationId], references: [id], onDelete: SetNull)
+  section       LegislationSection?   @relation(fields: [sectionId], references: [id], onDelete: SetNull)
+  bookmarks     ArticleBookmark[]
+  highlights    ArticleHighlight[]
+  notes         ArticleNote[]
+  questions     QuestionArticle[]
+  versions      LawArticleVersion[]
+  summaryRefs   SummaryBlockArticle[]
+  summary       ArticleSummary?
+  flashcardRefs FlashcardArticle[]
 
   // Kanun başına madde tekil; import upsert bu anahtara dayanır.
   @@unique([topicId, articleNo])
@@ -502,6 +525,7 @@ model Legislation {
   readingProgress ReadingProgress[]
   summaryUnits    SummaryUnit[]
   hubMaps         HubLegislationMap[]
+  flashcards      Flashcard[]
 
   createdAt DateTime  @default(now()) @map("created_at")
   updatedAt DateTime  @updatedAt @map("updated_at")
@@ -632,6 +656,7 @@ model SummaryUnit {
   blocks       SummaryBlock[]
   progress     SummaryProgress[]
   unitProgress UserUnitProgress[]
+  flashcards   Flashcard[]
 
   @@index([topicId, status, sortOrder])
   @@index([legislationId])
@@ -761,6 +786,167 @@ model UserUnitProgress {
   @@id([userId, unitId])
   @@index([userId, lastActivityAt])
   @@map("user_unit_progress")
+}
+
+// ─────────────────────────────────────────────
+// Bilgi Kartları (Doc 56) — konuya bağlı, madde referanslı, aralıklı tekrarla çalışılan kartlar
+// ─────────────────────────────────────────────
+
+/// Bilgi kartı. Deste ayrı tablo DEĞİLDİR: kapsam hesaplanır (ders / konu / ünite etiketi), tıpkı
+/// Doc 53 F5'teki "ünite etikettir" kararı gibi. İLKE: üretim modeldir, yayın insanındır — kart
+/// in_review doğar, admin yayınlar. Kaynak etiketi yalnız admin'de görünür (4 Eyl 2026 kuralı).
+/// Kilit (Doc 56 karar 3, içerik kapısı): ünitenin, yoksa konunun isPremium değeri; karar sunucuda.
+model Flashcard {
+  id                 String             @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  topicId            String             @map("topic_id") @db.Uuid
+  /// Ünite etiketi (alt konu filtresi); ünite silinirse kart konuda kalır.
+  summaryUnitId      String?            @map("summary_unit_id") @db.Uuid
+  legislationId      String?            @map("legislation_id") @db.Uuid
+  kind               FlashcardKind      @default(qa)
+  /// Ön yüz: soru ya da boşluklu cümle.
+  front              String
+  /// Arka yüz: kısa cevap.
+  back               String
+  /// Açıklama, markdown-lite (kalın, liste); isteğe bağlı.
+  explanation        String?
+  /// 1 kolay · 2 orta · 3 zor (editoryal; SRS'e girmez).
+  difficulty         Int                @default(2)
+  /// Metinde geçmeyen, açık formülle türetilen sayılar (ozet-dogrulayici kalıbı).
+  derivedNumbers     Json?              @map("derived_numbers")
+  counterNumbers     Int[]              @default([]) @map("counter_numbers")
+  sortOrder          Int                @default(0) @map("sort_order")
+  status             ContentStatus      @default(in_review)
+  sourceLabel        String             @map("source_label")
+  generatedBy        String?            @map("generated_by")
+  version            Int                @default(1)
+  verificationStatus VerificationStatus @default(pending_review) @map("verification_status")
+  verifiedAt         DateTime?          @map("verified_at")
+  /// Referans verdiği madde metni değiştiğinde dolar (eskime kuyruğu).
+  staleSince         DateTime?          @map("stale_since")
+  publishedAt        DateTime?          @map("published_at")
+  publishedBy        String?            @map("published_by") @db.Uuid
+  createdBy          String?            @map("created_by") @db.Uuid
+  createdAt          DateTime           @default(now()) @map("created_at")
+  updatedAt          DateTime           @updatedAt @map("updated_at")
+  deletedAt          DateTime?          @map("deleted_at")
+
+  topic       Topic                  @relation(fields: [topicId], references: [id], onDelete: Restrict)
+  summaryUnit SummaryUnit?           @relation(fields: [summaryUnitId], references: [id], onDelete: SetNull)
+  legislation Legislation?           @relation(fields: [legislationId], references: [id], onDelete: SetNull)
+  articles    FlashcardArticle[]
+  reviews     FlashcardReview[]
+  events      FlashcardReviewEvent[]
+  bookmarks   FlashcardBookmark[]
+
+  @@index([topicId, status, sortOrder])
+  @@index([summaryUnitId])
+  @@index([staleSince])
+  @@map("flashcards")
+}
+
+/// Kart → madde referansı (SummaryBlockArticle kalıbı). articleVersionNo: kartın yazıldığı anda
+/// maddenin sürümü; madde değişince eskime kıyası buna dayanır. relation: primary | related.
+model FlashcardArticle {
+  flashcardId      String @map("flashcard_id") @db.Uuid
+  lawArticleId     String @map("law_article_id") @db.Uuid
+  articleVersionNo Int?   @map("article_version_no")
+  relation         String @default("primary")
+
+  flashcard  Flashcard  @relation(fields: [flashcardId], references: [id], onDelete: Cascade)
+  lawArticle LawArticle @relation(fields: [lawArticleId], references: [id], onDelete: Cascade)
+
+  @@id([flashcardId, lawArticleId])
+  @@index([lawArticleId])
+  @@map("flashcard_articles")
+}
+
+/// Kullanıcı × kart aralıklı tekrar durumu — QuestionReview'ın kart eşi (aynı `srsGuncelle`).
+/// Öğrenme durumu (new/learning/learned/due/hard) SAKLANMAZ, bu alanlardan türetilir
+/// (flashcards.logic.ts — tek doğruluk kaynağı). Kart yayından kalksa da satır KALIR.
+model FlashcardReview {
+  userId         String          @map("user_id") @db.Uuid
+  flashcardId    String          @map("flashcard_id") @db.Uuid
+  ease           Decimal         @default(2.5) @db.Decimal(3, 2)
+  intervalDays   Int             @default(0) @map("interval_days")
+  reps           Int             @default(0)
+  lapses         Int             @default(0)
+  dueAt          DateTime        @map("due_at")
+  lastReviewedAt DateTime        @default(now()) @map("last_reviewed_at")
+  lastRating     FlashcardRating @map("last_rating")
+  reviewCount    Int             @default(0) @map("review_count")
+  knownCount     Int             @default(0) @map("known_count")
+  againCount     Int             @default(0) @map("again_count")
+
+  user      User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+  flashcard Flashcard @relation(fields: [flashcardId], references: [id], onDelete: Restrict)
+
+  @@id([userId, flashcardId])
+  @@index([userId, dueAt])
+  @@map("flashcard_reviews")
+}
+
+/// Puanlama olayı: geçmiş + geri al + idempotency. (userId, clientEventId) tekildir: istemci
+/// kuyruğu aynı olayı iki kez gönderirse ikinci istek AYNI yanıtı alır, durum ikinci kez
+/// değişmez. prevState: geri al için önceki {ease,intervalDays,reps,lapses,dueAt,...}; null = ilk
+/// karşılaşma (geri alınca satır silinir). Yalnız kartın SON olayı geri alınabilir.
+model FlashcardReviewEvent {
+  id            BigInt          @id @default(autoincrement())
+  userId        String          @map("user_id") @db.Uuid
+  flashcardId   String          @map("flashcard_id") @db.Uuid
+  sessionId     String?         @map("session_id") @db.Uuid
+  clientEventId String          @map("client_event_id") @db.Uuid
+  rating        FlashcardRating
+  prevState     Json?           @map("prev_state")
+  undoneAt      DateTime?       @map("undone_at")
+  timeSpentMs   Int?            @map("time_spent_ms")
+  reviewedAt    DateTime        @default(now()) @map("reviewed_at")
+
+  user      User              @relation(fields: [userId], references: [id], onDelete: Cascade)
+  flashcard Flashcard         @relation(fields: [flashcardId], references: [id], onDelete: Restrict)
+  session   FlashcardSession? @relation(fields: [sessionId], references: [id], onDelete: SetNull)
+
+  @@unique([userId, clientEventId])
+  @@index([userId, reviewedAt])
+  @@index([userId, flashcardId, reviewedAt])
+  @@index([sessionId])
+  @@map("flashcard_review_events")
+}
+
+/// Kart favorisi — ArticleBookmark kalıbı (varlık başına ayrı tablo).
+model FlashcardBookmark {
+  userId      String   @map("user_id") @db.Uuid
+  flashcardId String   @map("flashcard_id") @db.Uuid
+  createdAt   DateTime @default(now()) @map("created_at")
+
+  user      User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+  flashcard Flashcard @relation(fields: [flashcardId], references: [id], onDelete: Cascade)
+
+  @@id([userId, flashcardId])
+  @@map("flashcard_bookmarks")
+}
+
+/// Hafif kart oturumu: sunucunun kurduğu sıra (queue), kaldığın yer (cursor), oturum sonu
+/// paneli ve koç "devam et" şeridi. Kart içeriği burada değil; puanlar olay tablosunda.
+model FlashcardSession {
+  id             String    @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  userId         String    @map("user_id") @db.Uuid
+  /// due | new | hard | favorites | all | mixed
+  mode           String
+  /// {courseId?, topicId?, unitSlug?}
+  scope          Json
+  /// course_room | topic_room | study_hub | home_next | home_route | home_for_you | notif
+  source         String?
+  queue          String[]  @default([]) @db.Uuid
+  cursor         Int       @default(0)
+  startedAt      DateTime  @default(now()) @map("started_at")
+  lastActivityAt DateTime  @default(now()) @map("last_activity_at")
+  completedAt    DateTime? @map("completed_at")
+
+  user   User                   @relation(fields: [userId], references: [id], onDelete: Cascade)
+  events FlashcardReviewEvent[]
+
+  @@index([userId, lastActivityAt])
+  @@map("flashcard_sessions")
 }
 
 // Kararlı KİMLİK — içerik burada değil, sürümlerde.
@@ -1198,23 +1384,23 @@ model CourseTestQuestion {
 /// Kullanıcı soru hata bildirimi (eski sistemdeki question_reports'un sağlıklı hali).
 /// Panelde kuyruğa düşer; içerik kalite döngüsünün kullanıcı ayağı.
 model QuestionReport {
-  id         String       @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
-  questionId String       @map("question_id") @db.Uuid
-  userId     String       @map("user_id") @db.Uuid
-  message    String
-  status     ReportStatus @default(open)
-  resolvedBy String?      @map("resolved_by") @db.Uuid
-  createdAt  DateTime     @default(now()) @map("created_at")
-  resolvedAt DateTime?    @map("resolved_at")
+  id              String       @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  questionId      String       @map("question_id") @db.Uuid
+  userId          String       @map("user_id") @db.Uuid
+  message         String
+  status          ReportStatus @default(open)
+  resolvedBy      String?      @map("resolved_by") @db.Uuid
+  createdAt       DateTime     @default(now()) @map("created_at")
+  resolvedAt      DateTime?    @map("resolved_at")
   /// Soru Merkezi iletimi (Doc 55 F3): merkez sorusunun bildirimi merkeze `POST reports` ile
   /// iletilir (dış kimlik = bu satırın id'si, kişisel veri taşınmaz). Başarısızlık bildirimi
   /// düşürmez; cron yeniden dener, deneme sayısı ve son hata burada durur.
-  hubForwardedAt  DateTime? @map("hub_forwarded_at")
-  hubReportId     String?   @map("hub_report_id") @db.Uuid
+  hubForwardedAt  DateTime?    @map("hub_forwarded_at")
+  hubReportId     String?      @map("hub_report_id") @db.Uuid
   /// Merkez bu bildirimle soruyu inceleme listesine aldı mı (eşik aşımı).
-  hubFlagged      Boolean?  @map("hub_flagged")
-  hubForwardError String?   @map("hub_forward_error")
-  hubForwardTries Int       @default(0) @map("hub_forward_tries")
+  hubFlagged      Boolean?     @map("hub_flagged")
+  hubForwardError String?      @map("hub_forward_error")
+  hubForwardTries Int          @default(0) @map("hub_forward_tries")
 
   question Question @relation(fields: [questionId], references: [id], onDelete: Cascade)
   user     User     @relation(fields: [userId], references: [id], onDelete: Cascade)
@@ -2185,18 +2371,18 @@ model NotificationAudience {
 
 /// Aday tercihleri (Doc 52 §4.7). Satır yoksa varsayılanlar geçerli.
 model UserNotificationSettings {
-  userId             String   @id @map("user_id") @db.Uuid
+  userId               String   @id @map("user_id") @db.Uuid
   /// {"daily_question":true,…}; eksik anahtar = true; system kapatılamaz.
-  categories         Json     @default("{}")
-  reminderTime       String   @default("19:00") @map("reminder_time")
-  quietStart         String   @default("23:00") @map("quiet_start")
-  quietEnd           String   @default("08:00") @map("quiet_end")
-  timezone           String   @default("Europe/Istanbul")
-  pushEnabled        Boolean  @default(true) @map("push_enabled")
-  smartTimingEnabled Boolean  @default(true) @map("smart_timing_enabled")
+  categories           Json     @default("{}")
+  reminderTime         String   @default("19:00") @map("reminder_time")
+  quietStart           String   @default("23:00") @map("quiet_start")
+  quietEnd             String   @default("08:00") @map("quiet_end")
+  timezone             String   @default("Europe/Istanbul")
+  pushEnabled          Boolean  @default(true) @map("push_enabled")
+  smartTimingEnabled   Boolean  @default(true) @map("smart_timing_enabled")
   /// Bugün'de saati gelmemiş haftalık deneme şeridi (3 Kas 2026); kapatan aday rota satırını yine görür.
-  homeExamStripEnabled Boolean @default(true) @map("home_exam_strip_enabled")
-  updatedAt          DateTime @default(now()) @updatedAt @map("updated_at")
+  homeExamStripEnabled Boolean  @default(true) @map("home_exam_strip_enabled")
+  updatedAt            DateTime @default(now()) @updatedAt @map("updated_at")
 
   user User @relation(fields: [userId], references: [id], onDelete: Cascade)
 
@@ -2480,12 +2666,12 @@ model ExamCalendar {
 
 /// Senkron imleci: tek satır (id = 1). Merkez akış dönemi değişirse after = 0'dan okunur.
 model HubSyncState {
-  id            Int       @id @default(1)
-  streamEpoch   Int?      @map("stream_epoch")
-  lastAckedSeq  BigInt    @default(0) @map("last_acked_seq")
-  lastRunAt     DateTime? @map("last_run_at")
-  lastError     String?   @map("last_error")
-  updatedAt     DateTime  @updatedAt @map("updated_at")
+  id           Int       @id @default(1)
+  streamEpoch  Int?      @map("stream_epoch")
+  lastAckedSeq BigInt    @default(0) @map("last_acked_seq")
+  lastRunAt    DateTime? @map("last_run_at")
+  lastError    String?   @map("last_error")
+  updatedAt    DateTime  @updatedAt @map("updated_at")
 
   @@map("hub_sync_state")
 }

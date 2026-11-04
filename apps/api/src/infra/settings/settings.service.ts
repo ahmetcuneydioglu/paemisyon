@@ -15,6 +15,9 @@ export const SETTING_KEYS = {
   /// rolü görür (önce admin, sonra herkes — 14 Eki 2026 kararı). Eski ekran
   /// geri dönüş yolu olarak kalır; anahtar kapatılınca istemci ona döner.
   mobilAnasayfaV2: 'mobil_anasayfa_v2',
+  /// Bilgi kartları (Doc 56) herkese açık mı? Kapalıyken yalnız admin ve beta rolleri
+  /// görür; kapalıyken oda yanıtlarında kart sayımı YOK (istemci satırı çizmez).
+  flashcardsEnabled: 'flashcards_enabled',
   /// Bildirim Merkezi (Doc 52 §4.9). Kill switch açıkken kuyruk ve yeni
   /// bildirimler anında durur; yalnız admin değiştirir.
   notificationsKillSwitch: 'notifications.kill_switch',
@@ -39,6 +42,7 @@ export const SETTING_KEYS = {
 export const SHOW_QUESTION_SOURCE_DEFAULT = false;
 export const COACH_CIKMIS_SINAV_KARTI_DEFAULT = false;
 export const MOBIL_ANASAYFA_V2_DEFAULT = false;
+export const FLASHCARDS_ENABLED_DEFAULT = false;
 
 const CACHE_MS = 60_000;
 
@@ -74,6 +78,11 @@ export class SettingsService {
   /** Mobil yeni anasayfa herkese açık mı? Varsayılan KAPALI (admin yine görür). */
   async mobilAnasayfaV2(): Promise<boolean> {
     return this.getBool(SETTING_KEYS.mobilAnasayfaV2, MOBIL_ANASAYFA_V2_DEFAULT);
+  }
+
+  /** Bilgi kartları herkese açık mı? Varsayılan KAPALI (admin ve beta yine görür). */
+  async flashcardsEnabled(): Promise<boolean> {
+    return this.getBool(SETTING_KEYS.flashcardsEnabled, FLASHCARDS_ENABLED_DEFAULT);
   }
 
   async getString(key: string, fallback: string): Promise<string> {

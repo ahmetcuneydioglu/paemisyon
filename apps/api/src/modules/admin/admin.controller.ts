@@ -98,6 +98,7 @@ export class AdminController {
       showQuestionSource: await this.settings.showQuestionSource(),
       coachCikmisSinavKarti: await this.settings.coachCikmisSinavKarti(),
       mobilAnasayfaV2: await this.settings.mobilAnasayfaV2(),
+      flashcardsEnabled: await this.settings.flashcardsEnabled(),
     };
   }
 
@@ -109,6 +110,8 @@ export class AdminController {
   ///                             yayına çıkmadan AÇMA.
   ///   mobilAnasayfaV2         — mobil yeni anasayfa herkese (Doc 48); kapalıyken
   ///                             yalnız admin ve beta rolleri görür.
+  ///   flashcardsEnabled       — bilgi kartları herkese (Doc 56); kapalıyken yalnız
+  ///                             admin ve beta görür, odalarda kart satırı çizilmez.
   @Patch('settings')
   @Roles('admin')
   async updateSettings(
@@ -118,12 +121,14 @@ export class AdminController {
       showQuestionSource?: boolean;
       coachCikmisSinavKarti?: boolean;
       mobilAnasayfaV2?: boolean;
+      flashcardsEnabled?: boolean;
     },
   ) {
     const degisenler: [string, boolean | undefined][] = [
       [SETTING_KEYS.showQuestionSource, body.showQuestionSource],
       [SETTING_KEYS.coachCikmisSinavKarti, body.coachCikmisSinavKarti],
       [SETTING_KEYS.mobilAnasayfaV2, body.mobilAnasayfaV2],
+      [SETTING_KEYS.flashcardsEnabled, body.flashcardsEnabled],
     ];
     for (const [key, value] of degisenler) {
       if (typeof value !== 'boolean') continue;
