@@ -1,6 +1,6 @@
 # Doc 56 — Bilgi Kartları (flashcards): mimari analiz ve geliştirme planı
 
-Tarih: 4 Kasım 2026. Durum: **ANALİZ ONAYLI (4 Kas, kararlar §11) — aşama 2 (tasarım) sırada.** Kod yazılmadı, migration uygulanmadı,
+Tarih: 4 Kasım 2026. Durum: **ANALİZ ONAYLI (4 Kas, kararlar §11) — aşama 2 tasarımı Figma'da (`01-f2-tasarim.md`), inceleme bekliyor.** Kod yazılmadı, migration uygulanmadı,
 mevcut ekran değiştirilmedi. Kaynak: kullanıcı talimatı (4 Kas) ve rakip uygulamanın üç ekran görüntüsü
 (kart ön yüzü, "Biliyorum" ve "Geç" damgaları, alt sayaç şeridi 1/266 · 8 · 258).
 
