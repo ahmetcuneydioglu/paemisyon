@@ -17,6 +17,7 @@ export function ListRow({
   chevron = Boolean(onPress),
   divider = true,
   style,
+  children,
 }: {
   title: string;
   subtitle?: string | null;
@@ -26,6 +27,8 @@ export function ListRow({
   chevron?: boolean;
   divider?: boolean;
   style?: StyleProp<ViewStyle>;
+  /** Alt başlığın altında ek içerik (ilerleme/durum çubuğu). */
+  children?: ReactNode;
 }) {
   const { colors, space } = useTheme();
   const content = (
@@ -40,6 +43,7 @@ export function ListRow({
             {subtitle}
           </AppText>
         ) : null}
+        {children}
       </View>
       {trailing}
       {chevron ? <ChevronRight color={colors.inkSubtle} size={20} strokeWidth={1.75} /> : null}

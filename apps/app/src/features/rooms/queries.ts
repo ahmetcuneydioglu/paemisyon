@@ -4,6 +4,15 @@ import { api } from "@/lib/api";
 /** Çalış ana ekranı, ders/konu odası (Doc 49/14, 49/17; API rooms.service.ts). Tonlar ve cümleler sunucudan. */
 export type Band = "new" | "sparse" | "weak" | "normal" | "strong";
 
+/** Bilgi kartları (Doc 56): oda yanıtındaki sayım; bayrak kapalı ya da kart yoksa null (satır çizilmez). */
+export interface FlashcardRoomCounts {
+  count: number;
+  due: number;
+  learned: number;
+  /** Kilitli (premium) kart; sayıma girmez. */
+  locked: number;
+}
+
 export interface RoomTopic {
   id: string;
   name: string;
@@ -20,6 +29,8 @@ export interface RoomTopic {
   favoriteCount: number;
   /** Yayındaki ünite özetleri; tek ünite varsa `firstSlug` doğrudan açılır. */
   units: { count: number; read: number; firstSlug: string | null };
+  /** Bilgi kartları (Doc 56); eski sunucuda alan yok. */
+  flashcards?: FlashcardRoomCounts | null;
   /** "24 soru · 4 ünite özeti · 6 yanlış" — sunucu kurar. */
   note: string;
   children: Omit<RoomTopic, "children">[];
@@ -41,6 +52,8 @@ export interface CourseRoom {
     wrongCount: number;
     favoriteCount: number;
     summaryUnitCount: number;
+    /** Bilgi kartları (Doc 56); eski sunucuda alan yok. */
+    flashcards?: FlashcardRoomCounts | null;
     /** Ders testleri (Doc 49/18): seçim sayfasının alt yazısı. */
     tests: { count: number; completed: number; inProgressNumber: number | null };
     legislation: { slug: string; name: string; articleCount: number }[];
@@ -53,6 +66,8 @@ export interface TopicRoom {
   coach: string | null;
   wrongCount: number;
   favoriteCount: number;
+  /** Bilgi kartları (Doc 56); eski sunucuda alan yok. */
+  flashcards?: FlashcardRoomCounts | null;
   legislation: { slug: string | null; name: string | null; articleCount: number; articleRange: string | null } | null;
 }
 
@@ -77,7 +92,7 @@ export interface StudyHub {
   resume: { sessionId: string; scopeName: string; answered: number; total: number; detail: string } | null;
   /** Ağırlığa göre sıralı. */
   courses: StudyCourse[];
-  totals: { wrongCount: number; favoriteCount: number };
+  totals: { wrongCount: number; favoriteCount: number; /** Vadesi gelen açık kart (Doc 56); bayrak kapalı ya da eski sunucuda yok. */ flashcardsDue?: number | null };
 }
 
 export type TestState = "done" | "progress" | "new" | "locked";
