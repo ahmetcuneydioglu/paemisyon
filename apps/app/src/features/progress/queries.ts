@@ -52,11 +52,21 @@ export interface LeaderboardRow {
   badges: number;
   lastActive: string | null;
 }
+/** Rütbe kataloğu satırı (Doc 24 §5) — katalog sunucuda yaşar, istemci ad/eşik kopyası tutmaz. */
+export interface RankCatalogItem {
+  level: number;
+  name: string;
+  minScore: number;
+}
 export interface Leaderboard {
   period: LeaderboardPeriod;
   stats: { totalUsers: number; todayQuizCount: number; totalXp: number; todaysLeader: string | null };
   top: LeaderboardRow[];
   me: LeaderboardRow & { pointsToNext: number | null; nextName: string | null };
+  /** 8 rütbe (seviye, ad, eşik XP) — 5 Kas 2026'dan eski sunucuda yok. */
+  ranks?: RankCatalogItem[];
+  /** XP'deki aktif gün katsayısı (çözülen soru + katsayı × aktif gün) — eski sunucuda yok. */
+  activeDayPoints?: number;
 }
 
 /** Bugün'deki kompakt tahta: /progress/leaderboard/teaser (Doc 49/16 §9). */

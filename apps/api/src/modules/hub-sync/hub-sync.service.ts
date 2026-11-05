@@ -49,7 +49,9 @@ export class HubSyncService {
     private readonly prisma: PrismaService,
     private readonly applier: HubSyncApplier,
     @Optional() @Inject(HUB_SYNC_CLIENT) private readonly client: HubSyncClient | null,
-    @Optional() @Inject(HUB_SYNC_OPTIONS) private readonly options: HubSyncOptions = { enabled: false, cron: false },
+    @Optional()
+    @Inject(HUB_SYNC_OPTIONS)
+    private readonly options: HubSyncOptions = { enabled: false, cron: false },
     @Optional() private readonly reports: HubReportForwarder | null = null,
   ) {}
 
@@ -64,14 +66,17 @@ export class HubSyncService {
     if (this.running) return;
     try {
       const report = await this.run({ dryRun: false, maxPages: 20 });
-      this.logger.log(`hub-sync: ${report.events} olay, ${JSON.stringify(report.results)}, imleç ${report.lastAppliedSeq}`);
+      this.logger.log(
+        `hub-sync: ${report.events} olay, ${JSON.stringify(report.results)}, imleç ${report.lastAppliedSeq}`,
+      );
     } catch (e) {
       this.logger.error(`hub-sync başarısız: ${(e as Error).message}`);
     }
     if (this.reports) {
       try {
         const r = await this.reports.forwardPending();
-        if (r.sent || r.duplicate || r.failed || r.pending) this.logger.log(`hub-sync bildirim iletimi: ${JSON.stringify(r)}`);
+        if (r.sent || r.duplicate || r.failed || r.pending)
+          this.logger.log(`hub-sync bildirim iletimi: ${JSON.stringify(r)}`);
       } catch (e) {
         this.logger.error(`hub-sync bildirim iletimi başarısız: ${(e as Error).message}`);
       }
@@ -103,7 +108,11 @@ export class HubSyncService {
     };
     try {
       this.applier.resetRunCaches();
-      const state = await this.prisma.hubSyncState.upsert({ where: { id: 1 }, create: { id: 1 }, update: {} });
+      const state = await this.prisma.hubSyncState.upsert({
+        where: { id: 1 },
+        create: { id: 1 },
+        update: {},
+      });
       let after = opts.fromZero ? 0 : Number(state.lastAckedSeq);
       let epoch = state.streamEpoch;
       report.startSeq = after;
@@ -119,7 +128,11 @@ export class HubSyncService {
           report.samples['epoch-reset'] = [`${epoch} → ${pageData.stream_epoch}`];
           after = 0;
           epoch = pageData.stream_epoch;
-          if (!opts.dryRun) await this.prisma.hubSyncState.update({ where: { id: 1 }, data: { streamEpoch: epoch, lastAckedSeq: 0 } });
+          if (!opts.dryRun)
+            await this.prisma.hubSyncState.update({
+              where: { id: 1 },
+              data: { streamEpoch: epoch, lastAckedSeq: 0 },
+            });
           continue;
         }
         epoch = pageData.stream_epoch;
@@ -130,10 +143,18 @@ export class HubSyncService {
         for (const event of pageData.events) {
           const key = payloadKey(event);
           const item = payloads.get(key);
-          const payload = event.event_type === 'upsert' ? item?.payload ?? null : null;
+          const payload = event.event_type === 'upsert' ? (item?.payload ?? null) : null;
           let result: ApplyResult;
           if (event.event_type === 'upsert' && item?.error && !payload) {
-            result = { seq: event.seq, entityType: event.entity_type, entityId: event.entity_id, action: 'upsert', result: 'error', detail: `yük alınamadı: ${item.error}`, ackError: `${event.entity_id}: yük ${item.error}` };
+            result = {
+              seq: event.seq,
+              entityType: event.entity_type,
+              entityId: event.entity_id,
+              action: 'upsert',
+              result: 'error',
+              detail: `yük alınamadı: ${item.error}`,
+              ackError: `${event.entity_id}: yük ${item.error}`,
+            };
           } else {
             result = await this.applier.apply(event, payload, { dryRun: opts.dryRun });
           }
@@ -147,7 +168,12 @@ export class HubSyncService {
           await this.client.ack(after, lastAckError);
           await this.prisma.hubSyncState.update({
             where: { id: 1 },
-            data: { streamEpoch: epoch, lastAckedSeq: BigInt(after), lastRunAt: new Date(), lastError: lastAckError },
+            data: {
+              streamEpoch: epoch,
+              lastAckedSeq: BigInt(after),
+              lastRunAt: new Date(),
+              lastError: lastAckError,
+            },
           });
           report.acked = true;
           lastAckError = null;
@@ -157,14 +183,22 @@ export class HubSyncService {
       // Olaysız koşu da iz bırakır: `last_run_at` canlılık göstergesidir (cron çalışıyor mu?);
       // yalnız ack'li sayfalarda yazılsaydı sakin dönemde günlerce eski kalırdı.
       if (!opts.dryRun) {
-        await this.prisma.hubSyncState.update({ where: { id: 1 }, data: { lastRunAt: new Date() } });
+        await this.prisma.hubSyncState.update({
+          where: { id: 1 },
+          data: { lastRunAt: new Date() },
+        });
       }
     } catch (e) {
       const message = (e as Error).message;
       report.errors.push(message);
       report.stoppedBy = e instanceof HubTemporaryError ? 'temporary' : 'fatal';
       if (!opts.dryRun) {
-        await this.prisma.hubSyncState.update({ where: { id: 1 }, data: { lastRunAt: new Date(), lastError: message.slice(0, 2000) } }).catch(() => undefined);
+        await this.prisma.hubSyncState
+          .update({
+            where: { id: 1 },
+            data: { lastRunAt: new Date(), lastError: message.slice(0, 2000) },
+          })
+          .catch(() => undefined);
       }
       if (!(e instanceof HubTemporaryError)) throw Object.assign(e as Error, { report });
     } finally {
@@ -174,7 +208,9 @@ export class HubSyncService {
     return report;
   }
 
-  private async fetchPayloads(events: HubEvent[]): Promise<Map<string, { payload: unknown; error: string | null }>> {
+  private async fetchPayloads(
+    events: HubEvent[],
+  ): Promise<Map<string, { payload: unknown; error: string | null }>> {
     const wanted: HubPayloadRequestItem[] = [];
     const seen = new Set<string>();
     for (const e of events) {
@@ -183,12 +219,20 @@ export class HubSyncService {
       const key = payloadKey(e);
       if (seen.has(key)) continue;
       seen.add(key);
-      wanted.push({ entity_type: e.entity_type, entity_id: e.entity_id, entity_version: e.entity_version });
+      wanted.push({
+        entity_type: e.entity_type,
+        entity_id: e.entity_id,
+        entity_version: e.entity_version,
+      });
     }
     const out = new Map<string, { payload: unknown; error: string | null }>();
     for (let i = 0; i < wanted.length; i += 100) {
       const items = await this.client!.payloads(wanted.slice(i, i + 100));
-      for (const it of items) out.set(`${it.entity_type}:${it.entity_id}:${it.entity_version ?? ''}`, { payload: it.payload, error: it.error });
+      for (const it of items)
+        out.set(`${it.entity_type}:${it.entity_id}:${it.entity_version ?? ''}`, {
+          payload: it.payload,
+          error: it.error,
+        });
     }
     return out;
   }
@@ -200,9 +244,18 @@ export class HubSyncService {
     const samples = (report.samples[cls] ??= []);
     if (samples.length < 25) samples.push(`seq ${r.seq} ${r.detail}`);
     if (r.result === 'unmapped' && report.unmapped.length < 200) report.unmapped.push(r.detail);
-    if (r.result === 'error' && report.errors.length < 200) report.errors.push(`seq ${r.seq}: ${r.detail}`);
+    if (r.result === 'error' && report.errors.length < 200)
+      report.errors.push(`seq ${r.seq}: ${r.detail}`);
     await this.prisma.hubSyncLog.create({
-      data: { seq: BigInt(r.seq), entityType: r.entityType, entityId: r.entityId, action: r.action, result: r.result, detail: r.detail.slice(0, 4000), dryRun },
+      data: {
+        seq: BigInt(r.seq),
+        entityType: r.entityType,
+        entityId: r.entityId,
+        action: r.action,
+        result: r.result,
+        detail: r.detail.slice(0, 4000),
+        dryRun,
+      },
     });
   }
 }

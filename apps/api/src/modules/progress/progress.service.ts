@@ -3,9 +3,14 @@ import { Prisma } from '@prisma/client';
 import { PrismaService } from '../../infra/prisma/prisma.service';
 import { computeStreakUpdate, liveStreak, weeklyFreezeAllowance } from './streak.logic';
 import { GUN_KAYMASI_MS, gunAnahtari, gunBaslangici, haftaBaslangici } from '../../common/gun';
-import { computeRank, rankScore, ACTIVE_DAY_POINTS } from '../coach/rank.logic';
+import { computeRank, rankScore, ACTIVE_DAY_POINTS, RANKS } from '../coach/rank.logic';
 import { tallyByUnit, type UnitTally } from '../summaries/unite-eslesme';
-import { teaserLine, type LeaderboardTeaser, type TeaserMe, type TeaserRow } from './leaderboard-teaser.logic';
+import {
+  teaserLine,
+  type LeaderboardTeaser,
+  type TeaserMe,
+  type TeaserRow,
+} from './leaderboard-teaser.logic';
 
 /** Liderlik dönemi — sekmelerle birebir (Bugün/Hafta/Ay/Tüm). */
 export type LeaderboardPeriod = 'today' | 'week' | 'month' | 'all';
@@ -449,7 +454,11 @@ export class ProgressService {
       me = { ...row, rank: 0, pointsToNext: null, nextName: null };
     }
 
-    return { period, stats, top, me };
+    // Rütbe kataloğu (Doc 24 §5): "Rütbe sistemi" bilgi sayfası ve "bir üst rütbeye kaç XP"
+    // hesabı için — katalog SUNUCUDA yaşar, istemci kopya tutmaz (5 Kas 2026).
+    const ranks = RANKS.map((r) => ({ level: r.level, name: r.name, minScore: r.minScore }));
+
+    return { period, stats, top, me, ranks, activeDayPoints: ACTIVE_DAY_POINTS };
   }
 
   /**
@@ -489,9 +498,14 @@ export class ProgressService {
     ]);
 
     const meRow = meRows[0] ?? null;
-    const ids = [...new Set([...topRows.map((r) => r.user_id), meRow?.ust_id].filter(Boolean))] as string[];
+    const ids = [
+      ...new Set([...topRows.map((r) => r.user_id), meRow?.ust_id].filter(Boolean)),
+    ] as string[];
     const users = ids.length
-      ? await this.prisma.user.findMany({ where: { id: { in: ids } }, select: { id: true, displayName: true } })
+      ? await this.prisma.user.findMany({
+          where: { id: { in: ids } },
+          select: { id: true, displayName: true },
+        })
       : [];
     const adi = new Map(users.map((u) => [u.id, u.displayName || 'Aday']));
 
@@ -505,7 +519,8 @@ export class ProgressService {
       ? {
           rank: meRow.rank,
           points: meRow.points,
-          pointsToNext: meRow.ust_points != null ? Math.max(0, meRow.ust_points - meRow.points) : null,
+          pointsToNext:
+            meRow.ust_points != null ? Math.max(0, meRow.ust_points - meRow.points) : null,
           nextName: meRow.ust_id ? (adi.get(meRow.ust_id) ?? 'Aday') : null,
         }
       : null;

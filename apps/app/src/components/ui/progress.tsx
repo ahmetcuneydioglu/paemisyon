@@ -7,8 +7,11 @@ function toneColor(colors: ReturnType<typeof useTheme>["colors"], tone: Progress
   return tone === "success" ? colors.success : tone === "warning" ? colors.warning : tone === "danger" ? colors.danger : colors.accent;
 }
 
-/** Sürekli ilerleme çubuğu (0..1). Hazırlık satırlarında ders doğruluğu. */
-export function ProgressBar({ value, tone = "accent", height = 5, label, style }: { value: number; tone?: ProgressTone; height?: number; label?: string; style?: StyleProp<ViewStyle> }) {
+/**
+ * Sürekli ilerleme çubuğu (0..1). Hazırlık satırlarında ders doğruluğu. `color`: tema dışı sabit
+ * dolum rengi (lig rengi gibi); verilmezse `tone`. `track`: ray rengi (varsayılan surfaceAlt).
+ */
+export function ProgressBar({ value, tone = "accent", color, track, height = 5, label, style }: { value: number; tone?: ProgressTone; color?: string; track?: string; height?: number; label?: string; style?: StyleProp<ViewStyle> }) {
   const { colors } = useTheme();
   const pct = Math.max(0, Math.min(1, value));
   return (
@@ -17,9 +20,9 @@ export function ProgressBar({ value, tone = "accent", height = 5, label, style }
       accessibilityRole="progressbar"
       accessibilityLabel={label}
       accessibilityValue={{ min: 0, max: 100, now: Math.round(pct * 100) }}
-      style={[{ height, borderRadius: height / 2, backgroundColor: colors.surfaceAlt, overflow: "hidden" }, style]}
+      style={[{ height, borderRadius: height / 2, backgroundColor: track ?? colors.surfaceAlt, overflow: "hidden" }, style]}
     >
-      <View style={{ width: `${pct * 100}%`, height: "100%", borderRadius: height / 2, backgroundColor: toneColor(colors, tone) }} />
+      <View style={{ width: `${pct * 100}%`, height: "100%", borderRadius: height / 2, backgroundColor: color ?? toneColor(colors, tone) }} />
     </View>
   );
 }
