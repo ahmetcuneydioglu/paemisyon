@@ -12,6 +12,7 @@ import {
 } from "lucide-react";
 import { useState } from "react";
 import type { CourseRoom, RoomTopic } from "@/lib/public-api";
+import { hasFlashcards } from "@/lib/kartlar";
 import { bandBarTone, bandTextClass } from "@/lib/rooms";
 import { cn } from "@/lib/cn";
 import { ActionTile } from "@/components/ui/action-tile";
@@ -21,6 +22,7 @@ import { Dialog } from "@/components/ui/dialog";
 import { ProgressBar } from "@/components/ui/progress";
 import { SectionHeader } from "@/components/ui/section-header";
 import { ToolRow } from "@/components/rooms/tool-row";
+import { FlashcardEntry } from "@/components/kartlar/flashcard-entry";
 
 type Konu = Omit<RoomTopic, "children">;
 
@@ -36,9 +38,13 @@ const okuHref = (t: Konu) =>
     ? `/ozet/${t.units.firstSlug}`
     : `/kutuphane/konu/${t.id}`;
 
+/** İlk harf büyük (tr-TR): "madde metni · 12 kart" → "Madde metni · 12 kart". */
+const basHarf = (s: string) => s.charAt(0).toLocaleUpperCase("tr-TR") + s.slice(1);
+
 /**
  * Ders odası gövdesi (Doc 49/17; Expo ders odası ile aynı yapı): 2×2 eylem → konular. Konuya
- * tıklamak dört eylemi konuya daraltan diyaloğu açar; "Konu oku" ünite özetleri + mevzuat metni.
+ * tıklamak dört eylemi konuya daraltan diyaloğu açar; "Konu oku" ünite özetleri + mevzuat metni
+ * + bilgi kartları (Doc 56 karar B: üçüncü bölüm; sunucu sayım vermezse bölüm yok).
  */
 export function CourseRoomBody({ room: d }: { room: CourseRoom }) {
   const [konu, setKonu] = useState<Konu | null>(null);
@@ -47,7 +53,13 @@ export function CourseRoomBody({ room: d }: { room: CourseRoom }) {
   const tumKonular = d.topics.flatMap((t) => [t, ...t.children]);
   const ozetli = tumKonular.filter((t) => t.units.count > 0);
   const legs = d.tools.legislation;
-  const okunacak = d.tools.summaryUnitCount > 0 || legs.length > 0;
+  const kartlar = hasFlashcards(d.tools.flashcards) ? d.tools.flashcards : null;
+  const okunacak = d.tools.summaryUnitCount > 0 || legs.length > 0 || kartlar != null;
+  const okuAlt = [
+    d.tools.summaryUnitCount > 0 ? `${d.tools.summaryUnitCount} ünite özeti` : null,
+    legs.length > 0 ? "madde metni" : null,
+    kartlar ? `${kartlar.count || kartlar.locked} kart` : null,
+  ].filter(Boolean);
 
   return (
     <>
@@ -67,13 +79,7 @@ export function CourseRoomBody({ room: d }: { room: CourseRoom }) {
         <ActionTile
           icon={BookOpen}
           title="Konu oku"
-          subtitle={
-            d.tools.summaryUnitCount > 0
-              ? `${d.tools.summaryUnitCount} ünite özeti · madde metni`
-              : legs.length > 0
-                ? "Madde metni"
-                : "Henüz okunacak metin yok"
-          }
+          subtitle={okuAlt.length > 0 ? basHarf(okuAlt.join(" · ")) : "Henüz okunacak metin yok"}
           onClick={okunacak ? () => setOkuma(true) : null}
         />
         <ActionTile
@@ -227,8 +233,16 @@ export function CourseRoomBody({ room: d }: { room: CourseRoom }) {
                       })
                     : null
                 }
-                divider={false}
+                divider={hasFlashcards(konu.flashcards)}
               />
+              {hasFlashcards(konu.flashcards) ? (
+                <FlashcardEntry
+                  counts={konu.flashcards}
+                  scope={{ topicId: konu.id }}
+                  label={konu.name}
+                  source="topic_room"
+                />
+              ) : null}
             </div>
             <Link
               href={`/kutuphane/konu/${konu.id}`}
@@ -275,6 +289,17 @@ export function CourseRoomBody({ room: d }: { room: CourseRoom }) {
                   divider={i < legs.length - 1}
                 />
               ))}
+            </div>
+          ) : null}
+          {kartlar ? (
+            <div>
+              <p className="type-label mb-1 text-ink-subtle">Bilgi kartları</p>
+              <FlashcardEntry
+                counts={kartlar}
+                scope={{ courseId: c.id }}
+                label={c.name}
+                source="course_room"
+              />
             </div>
           ) : null}
         </div>

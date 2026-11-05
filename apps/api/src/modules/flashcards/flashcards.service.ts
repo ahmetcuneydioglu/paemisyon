@@ -63,7 +63,8 @@ interface ResolvedScope {
   topicId: string | null;
   unitId: string | null;
   unitSlug: string | null;
-  topicIds: string[];
+  /** null = kapsam yok: kullanıcının erişebildiği tüm yayındaki kartlar (Kütüphane "Kart tekrarı"). */
+  topicIds: string[] | null;
   label: string;
 }
 
@@ -225,14 +226,23 @@ export class FlashcardsService {
         label: course.name,
       };
     }
-    throw new BadRequestException('Kapsam gerekli: courseId, topicId ya da unitSlug');
+    // Kapsamsız: Kütüphane "Kart tekrarı · N" (study_hub) ve bildirim derin bağlantısı; vade
+    // sayımı `dueTotal` ile aynı kümeye bakar (tüm dersler). Kilitli kartlar yine sayılmaz.
+    return {
+      courseId: null,
+      topicId: null,
+      unitId: null,
+      unitSlug: null,
+      topicIds: null,
+      label: 'Tüm kartlar',
+    };
   }
 
   /** Kapsamdaki yayındaki kartlar + kullanıcının durumu. Kilit: ünitenin, yoksa konunun isPremium'u. */
   private async loadCards(userId: string, isPremium: boolean, s: ResolvedScope) {
     const cards = await this.prisma.flashcard.findMany({
       where: {
-        topicId: { in: s.topicIds },
+        ...(s.topicIds ? { topicId: { in: s.topicIds } } : { topic: { deletedAt: null } }),
         ...(s.unitId ? { summaryUnitId: s.unitId } : {}),
         status: 'published',
         deletedAt: null,

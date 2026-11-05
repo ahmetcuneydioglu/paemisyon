@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { RotateCcw, Shuffle } from "lucide-react";
+import { Layers, RotateCcw, Shuffle } from "lucide-react";
 import { api } from "@/lib/api";
 import { cn } from "@/lib/cn";
+import { kartlarHref } from "@/lib/kartlar";
 import type { StudyHub } from "@/lib/public-api";
 import { Card } from "@/components/ui/card";
 import { CourseCard } from "@/components/rooms/course-card";
@@ -30,12 +31,14 @@ function tekrarEtiketi(t: StudyHub["totals"]) {
   return "Yanlışlarım";
 }
 
+/* Üç hap dar ekranda ikinci satıra sarar (min 140 px); geniş ekranda tek satır. */
 const hap =
-  "tk-interactive inline-flex h-11 min-w-0 flex-1 whitespace-nowrap items-center justify-center gap-1.5 rounded-pill border border-line bg-surface px-3.5 type-subhead text-ink hover:border-ink-soft";
+  "tk-interactive inline-flex h-11 min-w-[140px] flex-1 whitespace-nowrap items-center justify-center gap-1.5 rounded-pill border border-line bg-surface px-3.5 type-subhead text-ink hover:border-ink-soft";
 
 /**
  * Kütüphane (Çalış v2, Doc 49/17; Expo Çalış ile aynı yapı) — "ders seç → ne yapacağını seç".
- * Kaldığın yer şeridi (yalnız taze yarım tur), ağırlığa göre ders kartları, iki hızlı eylem.
+ * Kaldığın yer şeridi (yalnız taze yarım tur), ağırlığa göre ders kartları, hızlı eylemler
+ * (karışık tur, yanlış/favori; vadesi gelen kart varsa "Kart tekrarı · N", Doc 56).
  * Plan, Mevzuat, Yanlışlarım ve Favorilerim kenar çubuğunda; burada tekrar edilmez. Sayılar,
  * sıralama ve kart künyesi `/me/study`'den.
  */
@@ -130,7 +133,7 @@ export default async function KutuphanePage({
           )}
         </section>
 
-        <div className="flex gap-3">
+        <div className="flex flex-wrap gap-3">
           <Link
             href={`/seans?count=10&source=study_hub&scope=${encodeURIComponent("Karışık tur")}`}
             className={hap}
@@ -159,6 +162,17 @@ export default async function KutuphanePage({
             />
             {tekrarEtiketi(d.totals)}
           </Link>
+          {(d.totals.flashcardsDue ?? 0) > 0 ? (
+            <Link href={kartlarHref({}, "due", "study_hub", "Kart tekrarı")} className={hap}>
+              <Layers
+                size={18}
+                strokeWidth={1.75}
+                aria-hidden
+                className="text-accent-ink"
+              />
+              Kart tekrarı · {d.totals.flashcardsDue}
+            </Link>
+          ) : null}
         </div>
       </div>
 
