@@ -345,13 +345,13 @@ export default function FlashcardsPage() {
                         ))}
                       </div>
                     </td>
-                    <td className="py-2 pr-3 text-xs text-slate-600">
-                      <div>
+                    <td className="min-w-[14rem] max-w-[18rem] py-2 pr-3 text-xs text-slate-600">
+                      <div className="truncate" title={`${r.courseName} › ${r.topicName}`}>
                         <span className="text-slate-400">{r.courseName} › </span>
                         {r.topicName}
                       </div>
                       {r.unit && (
-                        <div className="text-slate-500">
+                        <div className="truncate text-slate-500" title={r.unit.title}>
                           {r.unit.title}
                           {r.unit.isPremium ? ' · Premium' : ''}
                         </div>
