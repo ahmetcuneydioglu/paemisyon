@@ -1,8 +1,9 @@
-import { Trophy } from "lucide-react-native";
+import { Stack } from "expo-router";
+import { Info, Trophy } from "lucide-react-native";
 import { useState } from "react";
-import { useWindowDimensions, View } from "react-native";
-import { LeaderboardMyRank, LeaderboardPodium, LeaderboardTable } from "@/components/domain";
-import { AppText, Chip, EmptyState, Notice, Screen, Skeleton } from "@/components/ui";
+import { View } from "react-native";
+import { LeaderboardList, LeaderboardMyRank, LeaderboardPodium, RankSystemSheet } from "@/components/domain";
+import { AppText, Chip, EmptyState, IconButton, Notice, Screen, Skeleton } from "@/components/ui";
 import { useLeaderboard, type LeaderboardPeriod } from "@/features/progress/queries";
 import { useTheme } from "@/theme/ThemeProvider";
 
@@ -13,26 +14,24 @@ const PERIODS: { key: LeaderboardPeriod; label: string }[] = [
   { key: "all", label: "Genel" },
 ];
 
-/** Web tablosunun geniş kırılımı: XP / Doğru / Başarı / Quiz sütunları (büyük telefon yatay, katlanır, tablet). */
-const WIDE_WIDTH = 600;
-
 /**
- * Liderlik (Doc 25 "neredeyim?"; web `leaderboard-view` ile aynı tasarım dili, 5 Kas 2026):
- * dönem çipleri → kürsü (2·1·3; 1. taçlı, nefes alan altın halo, lig rengi çerçeve; her kartta
- * lig renkli rütbe rozeti) → kalan sıralar (lig halkalı avatar, rütbe · lig, puan) → altta SABİT
- * "senin sıran" kartı (sıra, rütbe, XP/doğru/başarı, bir üst rütbeye kalan XP).
- * Puan = dönemdeki doğru sayısı; XP = ömür boyu rütbe puanı — ikisi de sunucudan gelir, istemci
- * kural bilmez. Dönem değişince parçalar yeniden kurulur ki giriş animasyonları tekrar oynasın.
+ * Liderlik (Doc 25 "neredeyim?"; Figma PaemisyonNew › "Liderlik" 172:990, Doc 49/19, 5 Kas 2026):
+ * dönem çipleri → kürsü (tek kart, 2·1·3; 1. büyük avatar + taç; lig halkası ve lig renkli rütbe
+ * metni) → kalan sıralar → altta SABİT "senin sıran" kartı (sıra, rütbe · XP, puan, takip cümlesi,
+ * bir üst rütbeye ilerleme). Başlık çubuğundaki bilgi düğmesi "Rütbe sistemi" alt sayfasını açar.
+ * Puan = dönemdeki doğru sayısı; XP = ömür boyu rütbe puanı; rütbe kataloğu — hepsi sunucudan,
+ * istemci kural bilmez.
  */
 export default function LiderlikScreen() {
   const { colors, space } = useTheme();
-  const wide = useWindowDimensions().width >= WIDE_WIDTH;
   const [period, setPeriod] = useState<LeaderboardPeriod>("today");
+  const [info, setInfo] = useState(false);
   const q = useLeaderboard(period);
   const d = q.data;
 
   return (
     <View style={{ flex: 1, backgroundColor: colors.bg }}>
+      <Stack.Screen options={{ headerRight: () => <IconButton icon={Info} label="Rütbe sistemi" variant="ghost" onPress={() => setInfo(true)} /> }} />
       <Screen inset="none">
         <View style={{ flexDirection: "row", gap: space.s2, flexWrap: "wrap" }}>
           {PERIODS.map((p) => (
@@ -41,7 +40,7 @@ export default function LiderlikScreen() {
         </View>
         {q.isPending ? (
           <>
-            <Skeleton height={220} radiusKey="card" />
+            <Skeleton height={232} radiusKey="card" />
             <Skeleton height={56} radiusKey="card" />
             <Skeleton height={56} radiusKey="card" />
           </>
@@ -53,8 +52,8 @@ export default function LiderlikScreen() {
           <EmptyState icon={Trophy} title="Henüz kimse puan almadı" body="Bu dönemde ilk doğruyu sen çöz; puan = doğru sayısı." />
         ) : (
           <>
-            <LeaderboardPodium key={`podyum-${period}`} rows={d.top.slice(0, 3)} />
-            <LeaderboardTable key={`tablo-${period}`} rows={d.top.slice(3)} wide={wide} />
+            <LeaderboardPodium rows={d.top.slice(0, 3)} />
+            <LeaderboardList rows={d.top.slice(3)} />
             <AppText variant="bodySm" tone="subtle">
               {d.stats.totalUsers.toLocaleString("tr-TR")} kişi · bugün {d.stats.todayQuizCount.toLocaleString("tr-TR")} tur
               {d.stats.todaysLeader ? ` · günün lideri ${d.stats.todaysLeader}` : ""}
@@ -64,9 +63,10 @@ export default function LiderlikScreen() {
       </Screen>
       {d ? (
         <View style={{ paddingHorizontal: space.screenGutter, paddingTop: space.s2, paddingBottom: space.s3, backgroundColor: colors.bg }}>
-          <LeaderboardMyRank key={`sen-${period}`} me={d.me} />
+          <LeaderboardMyRank me={d.me} ranks={d.ranks} />
         </View>
       ) : null}
+      <RankSystemSheet visible={info} onClose={() => setInfo(false)} me={d?.me ?? null} ranks={d?.ranks ?? null} activeDayPoints={d?.activeDayPoints ?? null} />
     </View>
   );
 }

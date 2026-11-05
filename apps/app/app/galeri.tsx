@@ -2,8 +2,8 @@ import { useRouter } from "expo-router";
 import { ArrowLeft, Bell, Inbox, Play, Search, Star } from "lucide-react-native";
 import { useState } from "react";
 import { View } from "react-native";
-import { CountdownHeader, CourseTile, FeedbackPanel, LegislationRow, NotificationRow, QuestionMetaRow, QuestionOption, QuestionStem, ResultPanel, SessionProgress, SessionTitleBlock, TaskHero, ToolRow, type OptionState, ShareQuestionCard, CourseCard, ResumeStrip, TestCard, CoveragePanel, UpsellStrip, ExamContextLine, ForYouList, LeaderboardTeaser, NextStepCard, RouteList, WeekSummaryLine, LeaderboardAvatar, LeaderboardListRow, LeaderboardMyRank, LeaderboardPodium, LeaderboardTable, RankTierBadge, XpProgress } from "@/components/domain";
-import type { LeaderboardRow } from "@/features/progress/queries";
+import { CountdownHeader, CourseTile, FeedbackPanel, LegislationRow, NotificationRow, QuestionMetaRow, QuestionOption, QuestionStem, ResultPanel, SessionProgress, SessionTitleBlock, TaskHero, ToolRow, type OptionState, ShareQuestionCard, CourseCard, ResumeStrip, TestCard, CoveragePanel, UpsellStrip, ExamContextLine, ForYouList, LeaderboardTeaser, NextStepCard, RouteList, WeekSummaryLine, LeaderboardList, LeaderboardMyRank, LeaderboardPodium, RankAvatar, RankLabel, RankSystemSheet } from "@/components/domain";
+import type { LeaderboardRow, RankCatalogItem } from "@/features/progress/queries";
 import type { InboxItem } from "@/features/notifications/queries";
 import type { ShareCardData } from "@/features/quiz/share";
 import {
@@ -78,6 +78,9 @@ const liderlikOrnegi = [
   liderlikSatiri(4, "eneskula0655", 4, 549, 1142),
   liderlikSatiri(5, "Karga", 4, 430, 1119, { isMe: true }),
 ];
+// Sunucu kataloğunun galeri kopyası (`/progress/leaderboard` → ranks); üründe sunucudan gelir.
+const RUTBE_KATALOGU: RankCatalogItem[] = RUTBELER.map((name, i) => ({ level: i + 1, name, minScore: [0, 150, 400, 900, 1800, 3500, 7000, 12000][i] ?? 0 }));
+const benimSatirim = { ...liderlikSatiri(51, "Ahmet", 5, 33, 2793, { isMe: true }), pointsToNext: 1, nextName: "h6bz9w4584" };
 // Galeri örnekleri modül yüklenirken bir kez kurulur (render saf kalır).
 const GALERI_ANI = Date.now();
 const bildirimOrnegi = (over: Partial<InboxItem>): InboxItem => ({
@@ -114,6 +117,7 @@ export default function GaleriScreen() {
   const { colors, space, preference, setPreference } = useTheme();
   const [chip, setChip] = useState<"coach" | "course" | "wrongs">("coach");
   const [sheet, setSheet] = useState(false);
+  const [rutbeSheet, setRutbeSheet] = useState(false);
   const [picked, setPicked] = useState<string | null>(null);
   const roles: TypeRole[] = ["display", "title", "heading", "subhead", "body", "bodySm", "label", "stat"];
   const prefs: { value: ThemePreference; label: string }[] = [
@@ -233,25 +237,25 @@ export default function GaleriScreen() {
           </Card>
         </Section>
 
-        <Section title="Liderlik (Doc 24 §5 · web ile aynı dil)">
-          <View style={{ flexDirection: "row", flexWrap: "wrap", gap: space.s2 }}>
+        <Section title="Liderlik (Doc 49/19 · Figma 172:990)">
+          <View style={{ flexDirection: "row", flexWrap: "wrap", gap: space.s3 }}>
             {RUTBELER.map((ad, i) => (
-              <RankTierBadge key={ad} level={i + 1} rankName={ad} />
+              <RankLabel key={ad} level={i + 1} rankName={ad} emphasis />
             ))}
           </View>
           <View style={{ flexDirection: "row", alignItems: "flex-end", gap: space.s3 }}>
-            <LeaderboardAvatar name="Ayşe Yılmaz" avatarUrl={null} level={1} size="sm" />
-            <LeaderboardAvatar name="ilker yıldız" avatarUrl={null} level={4} size="md" />
-            <LeaderboardAvatar name="latte" avatarUrl={null} level={6} size="lg" />
-            <LeaderboardAvatar name="Komiser" avatarUrl={null} level={8} size="xl" />
+            <RankAvatar name="Ayşe Yılmaz" avatarUrl={null} level={1} size={36} />
+            <RankAvatar name="ilker yıldız" avatarUrl={null} level={4} size={40} />
+            <RankAvatar name="latte" avatarUrl={null} level={6} size={56} />
+            <RankAvatar name="Komiser" avatarUrl={null} level={8} size={72} />
           </View>
-          <XpProgress xp={3001} level={5} />
-          <XpProgress xp={15000} level={8} />
           <LeaderboardPodium rows={liderlikOrnegi.slice(0, 3)} />
-          <LeaderboardTable rows={liderlikOrnegi.slice(3)} />
-          <LeaderboardListRow row={liderlikSatiri(12, "Komiserlik Kapısı uzun ad denemesi", 8, 9999, 12340)} divider={false} />
-          <LeaderboardMyRank me={{ ...liderlikSatiri(84, "Lukas", 5, 120, 3001, { isMe: true, correct: 1214, accuracy: 61 }), pointsToNext: 3, nextName: "ahmethabil" }} />
-          <LeaderboardMyRank me={{ ...liderlikSatiri(0, "Yeni Aday", 1, 0, 0, { isMe: true }), pointsToNext: null, nextName: null }} />
+          <LeaderboardList rows={[...liderlikOrnegi.slice(3), liderlikSatiri(12, "Komiserlik Kapısı uzun ad denemesi", 8, 9999, 12340)]} />
+          <LeaderboardList rows={[]} />
+          <LeaderboardMyRank me={benimSatirim} ranks={RUTBE_KATALOGU} />
+          <LeaderboardMyRank me={{ ...liderlikSatiri(0, "Yeni Aday", 1, 0, 0, { isMe: true }), pointsToNext: null, nextName: null }} ranks={RUTBE_KATALOGU} />
+          <Button title="Rütbe sistemi sayfasını aç" variant="secondary" onPress={() => setRutbeSheet(true)} />
+          <RankSystemSheet visible={rutbeSheet} onClose={() => setRutbeSheet(false)} me={benimSatirim} ranks={RUTBE_KATALOGU} activeDayPoints={15} />
         </Section>
         <Section title="Bugün v3 (Doc 49/16)">
           <ExamContextLine daysLeft={184} examName="PAEM 2027" activeDays={3} goalDays={5} days={["done", "done", "done", "today", "future", "future", "future"]} onPickDate={() => {}} />

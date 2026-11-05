@@ -24,6 +24,7 @@ export function AppText({
   tone = "ink",
   style,
   children,
+  maxFontSizeMultiplier,
   ...props
 }: { variant?: TypeRole; tone?: Tone; style?: StyleProp<TextStyle>; children: ReactNode } & Omit<React.ComponentProps<typeof Text>, "style" | "children">) {
   const { colors, type } = useTheme();
@@ -40,8 +41,10 @@ export function AppText({
     : tone === "panelInk" ? colors.panelInk
     : tone === "panelSoft" ? colors.panelSoft
     : colors.ink;
+  // Dinamik yazı tavanı: bileşen kendi tavanını verebilir (BigNumber 1,2×, liderlik satırları 1,3×);
+  // verilmezse büyük boylar 1,35×, metin boyları 2× (5 Kas 2026'ya kadar dıştan verilen değer eziliyordu).
   return (
-    <Text {...props} maxFontSizeMultiplier={type[role].fontSize > 17 ? 1.35 : 2} style={[type[role], { color }, style]}>
+    <Text {...props} maxFontSizeMultiplier={maxFontSizeMultiplier ?? (type[role].fontSize > 17 ? 1.35 : 2)} style={[type[role], { color }, style]}>
       {children}
     </Text>
   );
