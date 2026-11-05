@@ -80,5 +80,5 @@ articles[{no,title,legislationSlug}], bookmarked, state{state,due,hard,dueAt}}`.
 
 ## 6. Sıradaki
 
-1. Aşama 4: Expo (reanimated + gesture-handler kurulumu, `FlashCard`/`FlashcardDeck`/`RatingBar`…, `/kartlar`),
-   web `/kartlar`, giriş satırları; pilot deste el ile (Yasama I, 24 kart) ya da ilk AI türetimi.
+1. ~~Aşama 4~~ yapıldı (5 Kas): `03-f4-kart-deneyimi.md` — Expo + web oynatıcı, giriş satırları, pilot deste
+   (Yasama I, 28 kart, AI türetimi, `in_review`).
