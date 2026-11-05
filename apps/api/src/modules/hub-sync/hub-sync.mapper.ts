@@ -132,7 +132,11 @@ export function citationFor(link: ResolvedLink): string {
 }
 
 /** Zorunlu bağın maddesi, yalnız sorunun konusunun kanunuysa atlas etiketine yazılır. */
-export function articleNoFor(links: ResolvedLink[], topicId: string, fallback: string | null): string | null {
+export function articleNoFor(
+  links: ResolvedLink[],
+  topicId: string,
+  fallback: string | null,
+): string | null {
   const required = links.find((l) => l.role === 'required');
   if (!required) return fallback;
   if (required.legislationTopicId && required.legislationTopicId === topicId) {
@@ -170,10 +174,18 @@ export function mapQuestion(input: MapInput): MapPlan {
 
   if (existing) {
     if (existing.current?.hubVersionId === v.id) {
-      return { kind: 'skip', reason: 'already-current', detail: `${q.code} sürüm ${q.version} zaten güncel` };
+      return {
+        kind: 'skip',
+        reason: 'already-current',
+        detail: `${q.code} sürüm ${q.version} zaten güncel`,
+      };
     }
     if (existing.hubVersionIds.includes(v.id)) {
-      return { kind: 'skip', reason: 'stale', detail: `${q.code} sürüm ${q.version} PAEMİSYON'da daha yeni bir merkez sürümüyle aşılmış` };
+      return {
+        kind: 'skip',
+        reason: 'stale',
+        detail: `${q.code} sürüm ${q.version} PAEMİSYON'da daha yeni bir merkez sürümüyle aşılmış`,
+      };
     }
   }
 
@@ -188,15 +200,27 @@ export function mapQuestion(input: MapInput): MapPlan {
       isCorrect: o.is_correct,
       sortOrder: i,
     }));
-  if (!stem || options.length < 2 || options.some((o) => !o.text) || options.filter((o) => o.isCorrect).length !== 1) {
-    return { kind: 'skip', reason: 'empty-content', detail: `${q.code}: kök/şık boş ya da doğru şık sayısı 1 değil` };
+  if (
+    !stem ||
+    options.length < 2 ||
+    options.some((o) => !o.text) ||
+    options.filter((o) => o.isCorrect).length !== 1
+  ) {
+    return {
+      kind: 'skip',
+      reason: 'empty-content',
+      detail: `${q.code}: kök/şık boş ya da doğru şık sayısı 1 değil`,
+    };
   }
 
   const articles: MappedArticle[] = [];
   for (const l of links) {
     if (!l.lawArticleId) continue;
     if (articles.some((a) => a.lawArticleId === l.lawArticleId)) continue;
-    articles.push({ lawArticleId: l.lawArticleId, relation: l.role === 'required' ? 'primary' : 'related' });
+    articles.push({
+      lawArticleId: l.lawArticleId,
+      relation: l.role === 'required' ? 'primary' : 'related',
+    });
   }
 
   if (existing && existing.current && sameContent(existing.current, stem, explanation, options)) {
@@ -217,12 +241,20 @@ export function mapQuestion(input: MapInput): MapPlan {
   }
 
   if (!existing && q.cancelled) {
-    return { kind: 'skip', reason: 'cancelled-new', detail: `${q.code} iptal işaretli; havuza alınmaz` };
+    return {
+      kind: 'skip',
+      reason: 'cancelled-new',
+      detail: `${q.code} iptal işaretli; havuza alınmaz`,
+    };
   }
 
   const topicId = existing ? existing.topicId : input.topicId;
   if (!topicId) {
-    return { kind: 'skip', reason: 'no-topic', detail: `${q.code}: merkez konusu ${q.topic_id ?? '(yok)'} için PAEMİSYON konusu eşlenmemiş` };
+    return {
+      kind: 'skip',
+      reason: 'no-topic',
+      detail: `${q.code}: merkez konusu ${q.topic_id ?? '(yok)'} için PAEMİSYON konusu eşlenmemiş`,
+    };
   }
 
   const version: MappedVersion = {
@@ -232,7 +264,10 @@ export function mapQuestion(input: MapInput): MapPlan {
     explanation,
     difficulty: mapDifficulty(q.difficulty),
     sourceLabel: mapSourceLabel(v.source?.name) ?? existing?.current?.sourceLabel ?? null,
-    contentHash: questionFingerprint(stem, options.map((o) => o.text)),
+    contentHash: questionFingerprint(
+      stem,
+      options.map((o) => o.text),
+    ),
     hubVersionId: v.id,
   };
   const legalReferences = links.map(citationFor).filter((c, i, arr) => arr.indexOf(c) === i);
@@ -248,7 +283,8 @@ export function mapQuestion(input: MapInput): MapPlan {
     options,
     legalReferences,
     articles,
-    archivePreviousVersionId: existing?.current && existing.current.status === 'published' ? existing.current.id : null,
+    archivePreviousVersionId:
+      existing?.current && existing.current.status === 'published' ? existing.current.id : null,
     revive: existing?.deletedAt != null,
     detail: existing
       ? `${q.code} → ${existing.id.slice(0, 8)} yeni sürüm ${version.versionNo} (merkez sürüm ${q.version})`

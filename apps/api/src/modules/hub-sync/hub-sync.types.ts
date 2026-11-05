@@ -71,7 +71,13 @@ export interface HubQuestionPayload {
     confidence: string;
     authoring_method: 'human' | 'ai_assisted' | 'ai_generated' | 'imported';
     option_count: number;
-    source: { id: string; name: string; url: string | null; public_note: string | null; confidence: string } | null;
+    source: {
+      id: string;
+      name: string;
+      url: string | null;
+      public_note: string | null;
+      confidence: string;
+    } | null;
   };
   options: Array<{ key: string; content: RichTextDoc; is_correct: boolean; sort_order: number }>;
   legislation_links: Array<{
@@ -90,7 +96,14 @@ export interface HubQuestionPayload {
     relationship_type: string;
   }>;
   tags: Array<{ id: string; name: string; slug: string }>;
-  assets: Array<{ id: string; mime_type: string; width: number | null; height: number | null; storage_path?: string; signed_url?: string }>;
+  assets: Array<{
+    id: string;
+    mime_type: string;
+    width: number | null;
+    height: number | null;
+    storage_path?: string;
+    signed_url?: string;
+  }>;
 }
 
 export interface HubLegislationVersionPayload {

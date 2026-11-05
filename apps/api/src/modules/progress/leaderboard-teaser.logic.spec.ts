@@ -6,7 +6,9 @@ describe('teaserLine (Bugün lider tahtası takip cümlesi)', () => {
     expect(teaserLine(null, 12)).toBe('Bugün 1 doğru yap, tahtaya adını yazdır.');
   });
   it('zirve, beraberlik ve fark cümleleri', () => {
-    expect(teaserLine({ rank: 1, points: 40, pointsToNext: null, nextName: null }, 9)).toContain('Zirvedesin');
+    expect(teaserLine({ rank: 1, points: 40, pointsToNext: null, nextName: null }, 9)).toContain(
+      'Zirvedesin',
+    );
     expect(teaserLine({ rank: 4, points: 20, pointsToNext: 0, nextName: 'Ayşe' }, 9)).toBe(
       'Ayşe ile berabersin — 1 doğruyla öne geç.',
     );

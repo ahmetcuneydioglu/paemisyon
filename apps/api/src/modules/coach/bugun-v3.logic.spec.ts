@@ -350,7 +350,12 @@ describe('rota — deneme satırı (2 Kas 2026)', () => {
       girdi({
         exams: {
           live: { id: 'canli', title: 'Haftalık Deneme-1' },
-          todayUpcoming: { id: 'aksam', title: 'Akşam Denemesi', startAt: new Date('2026-10-30T18:00:00Z'), questionCount: 100 },
+          todayUpcoming: {
+            id: 'aksam',
+            title: 'Akşam Denemesi',
+            startAt: new Date('2026-10-30T18:00:00Z'),
+            questionCount: 100,
+          },
           nextUpcoming: null,
         },
       }),
