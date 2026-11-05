@@ -164,6 +164,7 @@ export function automationVars(
     rozet: (p.badgeName as string | undefined) ?? (p.name as string | undefined) ?? null,
     sonuc: (p.message as string | undefined) ?? null,
     zayif_konu: (p.topicName as string | undefined) ?? null,
+    kart_sayisi: fmt(p.kart_sayisi),
     gelisen_konu: (p.topicName as string | undefined) ?? null,
     link,
   };

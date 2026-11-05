@@ -26,6 +26,16 @@ test("push route sözlüğü", () => {
   assert.equal(kart.pathname, "/kartlar");
   assert.equal(kart.params?.topicId, "4f1a6b2e-1c2d-4e5f-8a9b-0c1d2e3f4a5b");
   assert.equal(routeToHref("flashcards:bozuk").pathname, "/(tabs)");
+  // Koç kartı / bildirim: sorgulu adres aynen taşınır, mod doğrulanır.
+  const kocKarti = routeToHref("/kartlar?mode=due");
+  assert.equal(kocKarti.pathname, "/kartlar");
+  assert.equal(kocKarti.params?.mode, "due");
+  const konu = routeToHref("/kartlar?mode=new&topicId=4f1a6b2e-1c2d-4e5f-8a9b-0c1d2e3f4a5b&source=home_route");
+  assert.equal(konu.params?.mode, "new");
+  assert.equal(konu.params?.topicId, "4f1a6b2e-1c2d-4e5f-8a9b-0c1d2e3f4a5b");
+  assert.equal(konu.params?.source, "home_route");
+  assert.equal(routeToHref("/kartlar?mode=bozuk").params?.mode, "due");
+  assert.equal(routeToHref("flashcards").params?.mode, "due");
 });
 
 test("bildirim evrensel bağlantısı", () => {

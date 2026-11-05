@@ -8,14 +8,18 @@ import {
 import { Prisma } from '@prisma/client';
 import { PrismaService } from '../../infra/prisma/prisma.service';
 import { SettingsService } from '../../infra/settings/settings.service';
-import { gunBaslangici } from '../../common/gun';
+import { gunAnahtari, gunBaslangici } from '../../common/gun';
+import { ProgressService } from '../progress/progress.service';
+import { AppEventsService } from '../notifications/app-events.service';
 import type { AuthenticatedUser } from '../auth/auth.types';
 import {
   GERI_AL_PENCERESI_MS,
   OTURUM_VARSAYILAN_KART,
   TAZE_OTURUM_MS,
+  flashcardsAcik,
   type FlashcardMode,
 } from './flashcard.constants';
+import { countDueCards } from './kart-sorgular';
 import {
   buildQueue,
   cardState,
@@ -54,9 +58,7 @@ export interface PublicFlashcard {
 }
 
 /** Bayrak açık mı: panel anahtarı; kapalıyken yalnız admin ve beta görür (mobilAnasayfaV2 kalıbı). */
-export function flashcardsAcik(anahtar: boolean, roles: readonly string[]): boolean {
-  return anahtar || roles.includes('admin') || roles.includes('beta');
-}
+export { flashcardsAcik };
 
 interface ResolvedScope {
   courseId: string | null;
@@ -149,6 +151,8 @@ export class FlashcardsService {
   constructor(
     private readonly prisma: PrismaService,
     private readonly settings: SettingsService,
+    private readonly progress: ProgressService,
+    private readonly appEvents: AppEventsService,
   ) {}
 
   async enabledFor(user: Pick<AuthenticatedUser, 'roles'>): Promise<boolean> {
@@ -301,7 +305,8 @@ export class FlashcardsService {
 
   // ── Günlük hedef ──
 
-  private async dailyGoal(userId: string, now: Date) {
+  /** Günlük kart hedefi ve bugün çalışılan tekil kart (geri alınmamış olaylardan); koç ve istatistik de okur. */
+  async dailyGoal(userId: string, now: Date) {
     const [me, events] = await Promise.all([
       this.prisma.user.findUnique({ where: { id: userId }, select: { flashcardDailyGoal: true } }),
       this.prisma.flashcardReviewEvent.findMany({
@@ -559,6 +564,12 @@ export class FlashcardsService {
         remaining: queue.length - Math.min(session.cursor + 1, queue.length),
       };
     });
+    // Seri (Doc 56 karar 6): günün ilk gerçek kart olayı aktifliği yazar; aynı gün ikinci çağrı etkisiz,
+    // hata puanı düşürmez.
+    if (!result.idempotent)
+      await this.progress
+        .touchActivity(user.id, user.isPremium, gunAnahtari(now))
+        .catch(() => undefined);
     return { ...result, dailyGoal: await this.dailyGoal(user.id, now) };
   }
 
@@ -660,9 +671,17 @@ export class FlashcardsService {
       }),
       this.dailyGoal(user.id, now),
     ]);
+    const summary = sessionSummary(events);
+    // Olay omurgası (Doc 52): ilk tamamlamada yazılır; bildirim dönüşümü ve otomasyonlar tüketir.
+    if (!session.completedAt)
+      await this.appEvents.emit('flashcard_session_completed', user.id, {
+        entityType: 'flashcard_session',
+        entityId: session.id,
+        payload: { reviewed: summary.reviewed, known: summary.known, again: summary.again },
+      });
     return {
       sessionId: session.id,
-      summary: sessionSummary(events),
+      summary,
       due: { count: dueCount, nextAt: nextDue?.dueAt.toISOString() ?? null },
       dailyGoal: goal,
     };
@@ -792,19 +811,105 @@ export class FlashcardsService {
 
   /** Çalış ana ekranı: tüm derslerde vadesi gelen açık kart sayısı. */
   async dueTotal(userId: string, isPremium: boolean, now = new Date()): Promise<number> {
-    const due = await this.prisma.flashcardReview.findMany({
-      where: { userId, dueAt: { lte: now }, flashcard: { status: 'published', deletedAt: null } },
+    return countDueCards(this.prisma, userId, isPremium, now);
+  }
+
+  /**
+   * Performans bloğu (Doc 56 aşama 5): kapsamsız sayımlar, ders dağılımı, son 7 gün, 30 günlük hatırlama
+   * oranı (en az 10 olay; yoksa null — sıfır yüzde yazılmaz, Doc 24 §4).
+   */
+  async stats(user: AuthenticatedUser, now = new Date()) {
+    await this.assertEnabled(user);
+    const cards = await this.prisma.flashcard.findMany({
+      where: { status: 'published', deletedAt: null, topic: { deletedAt: null } },
       select: {
-        flashcard: {
-          select: {
-            topic: { select: { isPremium: true } },
-            summaryUnit: { select: { isPremium: true } },
-          },
+        id: true,
+        topic: {
+          select: { isPremium: true, courseId: true, course: { select: { name: true } } },
         },
+        summaryUnit: { select: { isPremium: true } },
       },
     });
-    if (isPremium) return due.length;
-    return due.filter((d) => !(d.flashcard.summaryUnit?.isPremium ?? d.flashcard.topic.isPremium))
-      .length;
+    const ids = cards.map((c) => c.id);
+    const since = new Date(now.getTime() - 30 * 86_400_000);
+    const [reviews, bookmarks, events, goal] = await Promise.all([
+      ids.length
+        ? this.prisma.flashcardReview.findMany({
+            where: { userId: user.id, flashcardId: { in: ids } },
+          })
+        : [],
+      ids.length
+        ? this.prisma.flashcardBookmark.findMany({
+            where: { userId: user.id, flashcardId: { in: ids } },
+            select: { flashcardId: true },
+          })
+        : [],
+      this.prisma.flashcardReviewEvent.findMany({
+        where: { userId: user.id, undoneAt: null, reviewedAt: { gte: since } },
+        select: { rating: true, reviewedAt: true },
+      }),
+      this.dailyGoal(user.id, now),
+    ]);
+    const rById = new Map(reviews.map((r) => [r.flashcardId, toReviewRow(r)]));
+    const bSet = new Set(bookmarks.map((b) => b.flashcardId));
+    const refs = cards.map((c, i) => ({
+      courseId: c.topic.courseId,
+      courseName: c.topic.course.name,
+      ref: {
+        id: c.id,
+        sortOrder: i,
+        locked: (c.summaryUnit?.isPremium ?? c.topic.isPremium) && !user.isPremium,
+        bookmarked: bSet.has(c.id),
+        review: rById.get(c.id) ?? null,
+      } satisfies CardRef,
+    }));
+    const byCourse = new Map<string, { courseId: string; courseName: string; refs: CardRef[] }>();
+    for (const r of refs)
+      (
+        byCourse.get(r.courseId) ??
+        byCourse
+          .set(r.courseId, { courseId: r.courseId, courseName: r.courseName, refs: [] })
+          .get(r.courseId)!
+      ).refs.push(r.ref);
+    const known = events.filter((e) => e.rating !== 'again').length;
+    const last7: { date: string; reviewed: number; known: number }[] = [];
+    for (let i = 6; i >= 0; i--) {
+      const bas = gunBaslangici(new Date(now.getTime() - i * 86_400_000));
+      const bit = new Date(bas.getTime() + 86_400_000);
+      const gun = events.filter((e) => e.reviewedAt >= bas && e.reviewedAt < bit);
+      last7.push({
+        date: gunAnahtari(bas).toISOString().slice(0, 10),
+        reviewed: gun.length,
+        known: gun.filter((e) => e.rating !== 'again').length,
+      });
+    }
+    return {
+      counts: modeCounts(
+        refs.map((r) => r.ref),
+        now,
+      ),
+      dailyGoal: goal,
+      last30: {
+        reviewed: events.length,
+        known,
+        knownPct: events.length >= 10 ? Math.round((known / events.length) * 100) : null,
+      },
+      last7,
+      courses: [...byCourse.values()]
+        .map((c) => {
+          const m = modeCounts(c.refs, now);
+          return {
+            courseId: c.courseId,
+            courseName: c.courseName,
+            total: m.total,
+            learned: m.learned,
+            learning: m.learning,
+            due: m.due,
+            locked: m.locked,
+          };
+        })
+        .filter((c) => c.total > 0 || c.locked > 0)
+        .sort((a, b) => b.total - a.total),
+    };
   }
 }

@@ -5,6 +5,8 @@ import { PrismaService } from '../../infra/prisma/prisma.service';
 /** Üreticilerin yazdığı olay türleri (Doc 52 §4.5). Yeni tür eklerken buraya ve preset'lere bak. */
 export const APP_EVENT_TYPES = [
   'session_completed',
+  /** Bilgi kartı oturumu bitti (Doc 56); yük: reviewed, known, again. */
+  'flashcard_session_completed',
   'daily_question_completed',
   'daily_goal_completed',
   'exam_submitted',

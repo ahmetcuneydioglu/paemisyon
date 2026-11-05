@@ -22,6 +22,7 @@ import { postExamRule } from './rules/post-exam.rule';
 import { aftermathRule } from './rules/aftermath.rule';
 import { planOfferRule } from './rules/plan-offer.rule';
 import { planWeekRule } from './rules/plan-week.rule';
+import { flashcardsDueRule } from './rules/flashcards-due.rule';
 
 /** Nötr bağlam: hiçbir kural tetiklenmez; testler tek alanı değiştirir. */
 function ctx(over: Partial<CoachContext> = {}): CoachContext {
@@ -69,6 +70,7 @@ function ctx(over: Partial<CoachContext> = {}): CoachContext {
     recentDeneme: null,
     volume: { last7: 0, prev7: 0 },
     plan: null,
+    flashcards: null,
     ...over,
   };
 }
@@ -578,5 +580,28 @@ describe('weak_topic → ünite reçetesi (Doc 53 F5-2)', () => {
       }),
     );
     expect(c?.title).toBe('Ceza konusunda zorlanıyorsun');
+  });
+});
+
+describe('flashcardsDueRule — vadesi gelen bilgi kartları (Doc 56)', () => {
+  it('kartlar kapalıysa (null), 5 karttan azsa ya da bugün çalışıldıysa susar', () => {
+    expect(flashcardsDueRule(ctx())).toBeNull();
+    expect(
+      flashcardsDueRule(ctx({ flashcards: { due: 4, reviewedToday: 0, dailyGoal: 20 } })),
+    ).toBeNull();
+    expect(
+      flashcardsDueRule(ctx({ flashcards: { due: 30, reviewedToday: 3, dailyGoal: 20 } })),
+    ).toBeNull();
+  });
+
+  it('≥5 vadeli kart ve bugün çalışma yoksa kart: tur günlük hedefle sınırlı, rota /kartlar?mode=due', () => {
+    const c = flashcardsDueRule(ctx({ flashcards: { due: 30, reviewedToday: 0, dailyGoal: 20 } }));
+    expect(c).toMatchObject({
+      type: 'flashcards_due',
+      priority: 60,
+      cta: { route: '/kartlar?mode=due' },
+    });
+    expect(c?.title).toBe('30 kart tekrar bekliyor');
+    expect(c?.body).toContain('20 kartlık tur');
   });
 });

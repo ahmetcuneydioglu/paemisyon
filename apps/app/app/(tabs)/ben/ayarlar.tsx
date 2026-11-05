@@ -3,6 +3,7 @@ import { useState } from "react";
 import { Alert, Linking, View } from "react-native";
 import { AppText, Button, Card, Chip, ListRow, Notice, Screen, SectionHeader, Sheet, Skeleton, TextField } from "@/components/ui";
 import { useModules } from "@/features/catalog/queries";
+import { useSetFlashcardDailyGoal } from "@/features/flashcards/queries";
 import { useDeleteMe, useMeFull, useUpdateMe, type MeFull } from "@/features/me/queries";
 import { NotificationPreferences } from "@/features/notifications/preferences";
 import { useAuth } from "@/lib/auth/AuthProvider";
@@ -10,6 +11,8 @@ import { supabase } from "@/lib/supabase";
 import { useTheme, type ThemePreference } from "@/theme/ThemeProvider";
 
 const GOALS = [10, 20, 30, 40, 60, 100];
+/** Günlük kart hedefi seçenekleri (Doc 56 §4.8); sınır sunucuda 5–200. */
+const KART_HEDEFLERI = [10, 20, 30, 40, 60];
 
 /**
  * Ayarlar (Doc 25 Bölge 5): ad, hedef sınav, sınav tarihi, günlük hedef (PATCH /me); görünüm
@@ -43,11 +46,13 @@ function AyarlarForm({ d }: { d: MeFull }) {
   const modules = useModules();
   const update = useUpdateMe();
   const del = useDeleteMe();
+  const kartHedefiKaydet = useSetFlashcardDailyGoal();
 
   const [name, setName] = useState(d.displayName ?? "");
   const [moduleId, setModuleId] = useState<string | null>(d.preferredModule?.id ?? null);
   const [date, setDate] = useState(d.targetExamDate ? isoToTr(d.targetExamDate) : "");
   const [goal, setGoal] = useState(d.dailyGoal);
+  const [kartHedefi, setKartHedefi] = useState(d.flashcardDailyGoal ?? 20);
   const [pwOpen, setPwOpen] = useState(false);
   const [pw1, setPw1] = useState("");
   const [pw2, setPw2] = useState("");
@@ -58,7 +63,8 @@ function AyarlarForm({ d }: { d: MeFull }) {
 
   const iso = trToIso(date);
   const dateInvalid = date.trim() !== "" && !iso;
-  const dirty = name.trim() !== (d.displayName ?? "") || moduleId !== (d.preferredModule?.id ?? null) || (iso ?? null) !== (d.targetExamDate ?? null) || goal !== d.dailyGoal;
+  const kartDegisti = d.flashcardDailyGoal != null && kartHedefi !== d.flashcardDailyGoal;
+  const dirty = name.trim() !== (d.displayName ?? "") || moduleId !== (d.preferredModule?.id ?? null) || (iso ?? null) !== (d.targetExamDate ?? null) || goal !== d.dailyGoal || kartDegisti;
 
   const save = () => {
     if (dateInvalid) return;
@@ -67,7 +73,10 @@ function AyarlarForm({ d }: { d: MeFull }) {
     if (moduleId && moduleId !== d.preferredModule?.id) body.preferredModuleId = moduleId;
     if ((iso ?? null) !== (d.targetExamDate ?? null)) body.targetExamDate = iso ?? null;
     if (goal !== d.dailyGoal) body.dailyGoal = goal;
-    update.mutate(body, { onSuccess: () => Alert.alert("Kaydedildi", "Koç yeni hedefe göre plan kurar.") });
+    const bitti = () => Alert.alert("Kaydedildi", "Koç yeni hedefe göre plan kurar.");
+    // Kart hedefi ayrı uçta (PATCH /me/flashcards/preferences); yalnız o değiştiyse onay oradan gelir.
+    if (kartDegisti) kartHedefiKaydet.mutate(kartHedefi, { onSuccess: () => (Object.keys(body).length === 0 ? bitti() : undefined) });
+    if (Object.keys(body).length > 0) update.mutate(body, { onSuccess: bitti });
   };
 
   const changePassword = async () => {
@@ -130,8 +139,24 @@ function AyarlarForm({ d }: { d: MeFull }) {
                     <Chip key={g} label={String(g)} selected={goal === g} onPress={() => setGoal(g)} />
                   ))}
                 </View>
+                {d.flashcardDailyGoal != null ? (
+                  <>
+                    <AppText variant="label" tone="subtle">
+                      Günlük kart hedefi · {kartHedefi} kart
+                    </AppText>
+                    <View style={{ flexDirection: "row", flexWrap: "wrap", gap: space.s2 }}>
+                      {KART_HEDEFLERI.map((g) => (
+                        <Chip key={g} label={String(g)} selected={kartHedefi === g} onPress={() => setKartHedefi(g)} />
+                      ))}
+                    </View>
+                    <AppText variant="bodySm" tone="subtle">
+                      Bilgi kartları için ayrı sayılır; seri ikisinden biriyle korunur.
+                    </AppText>
+                  </>
+                ) : null}
                 {update.isError ? <Notice tone="error">{update.error.message}</Notice> : null}
-                <Button title="Kaydet" disabled={!dirty || dateInvalid} loading={update.isPending} onPress={save} />
+                {kartHedefiKaydet.isError ? <Notice tone="error">{kartHedefiKaydet.error.message}</Notice> : null}
+                <Button title="Kaydet" disabled={!dirty || dateInvalid} loading={update.isPending || kartHedefiKaydet.isPending} onPress={save} />
               </Card>
               <Card style={{ paddingVertical: 0 }}>
                 <ListRow title="Haftalık planım" subtitle="Sınava kadar konuların haftalara dağılımı" divider={false} onPress={() => router.push("/planim")} />

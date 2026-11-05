@@ -93,7 +93,19 @@ function setup(
     fn(prisma),
   );
   const settings = { flashcardsEnabled: jest.fn(async () => o.enabled ?? true) };
-  return { svc: new FlashcardsService(prisma as never, settings as never), prisma };
+  const progress = { touchActivity: jest.fn(async () => undefined) };
+  const appEvents = { emit: jest.fn(async () => undefined) };
+  return {
+    svc: new FlashcardsService(
+      prisma as never,
+      settings as never,
+      progress as never,
+      appEvents as never,
+    ),
+    prisma,
+    progress,
+    appEvents,
+  };
 }
 
 describe('flashcardsAcik — bayrak kapalıyken yalnız admin ve beta', () => {
@@ -351,5 +363,82 @@ describe('FlashcardsService.roomCounts / dueTotal (oda alanları)', () => {
     ]);
     expect(await svc.dueTotal('me', false, now)).toBe(1);
     expect(await svc.dueTotal('me', true, now)).toBe(2);
+  });
+});
+
+describe('Aşama 5 — seri, olay, istatistik', () => {
+  const session = { id: 's1', userId: 'me', queue: ['c1', 'c2'], cursor: 0, completedAt: null };
+
+  it('ilk gerçek puan seriye dokunur; idempotent tekrar dokunmaz', async () => {
+    const { svc, progress } = setup({ session });
+    await svc.recordEvent(
+      me,
+      's1',
+      { clientEventId: 'e1', flashcardId: 'c1', rating: 'known' },
+      now,
+    );
+    expect(progress.touchActivity).toHaveBeenCalledTimes(1);
+    expect(progress.touchActivity).toHaveBeenCalledWith('me', false, expect.any(Date));
+    const tekrar = setup({ session, event: { flashcardId: 'c1', undoneAt: null } });
+    await tekrar.svc.recordEvent(
+      me,
+      's1',
+      { clientEventId: 'e1', flashcardId: 'c1', rating: 'known' },
+      now,
+    );
+    expect(tekrar.progress.touchActivity).not.toHaveBeenCalled();
+  });
+
+  it('oturum ilk kez tamamlanınca flashcard_session_completed olayı yazılır; ikinci tamamlama yazmaz', async () => {
+    const acik = setup({ session });
+    await acik.svc.completeSession(me, 's1', now);
+    expect(acik.appEvents.emit).toHaveBeenCalledWith(
+      'flashcard_session_completed',
+      'me',
+      expect.objectContaining({ entityId: 's1' }),
+    );
+    const kapali = setup({ session: { ...session, completedAt: now } });
+    await kapali.svc.completeSession(me, 's1', now);
+    expect(kapali.appEvents.emit).not.toHaveBeenCalled();
+  });
+
+  it('stats: kapsamsız sayımlar, ders dağılımı, 30 günlük oran (10 olaydan az → null), 7 gün', async () => {
+    const topic = {
+      id: 't1',
+      name: 'x',
+      isPremium: false,
+      courseId: 'k1',
+      course: { name: 'Anayasa Hukuku' },
+    };
+    const { svc, prisma } = setup({
+      cards: [
+        CARD('c1', { topic }),
+        CARD('c2', { topic }),
+        CARD('c3', {
+          topic: { ...topic, isPremium: true, courseId: 'k2', course: { name: 'PVSK' } },
+        }),
+      ],
+      reviews: [
+        {
+          flashcardId: 'c1',
+          reps: 3,
+          lapses: 0,
+          intervalDays: 10,
+          dueAt: new Date(now.getTime() + 86_400_000),
+          lastRating: 'known',
+        },
+      ],
+    });
+    prisma.flashcardReviewEvent.findMany.mockResolvedValue([
+      { rating: 'known', reviewedAt: now },
+      { rating: 'again', reviewedAt: now },
+    ]);
+    const r = await svc.stats(me, now);
+    expect(r.counts).toMatchObject({ total: 2, learned: 1, locked: 1 });
+    expect(r.last30).toEqual({ reviewed: 2, known: 1, knownPct: null });
+    expect(r.last7).toHaveLength(7);
+    expect(r.last7[6]).toMatchObject({ reviewed: 2, known: 1 });
+    expect(r.courses.map((c) => c.courseName)).toEqual(['Anayasa Hukuku', 'PVSK']);
+    expect(r.courses[1]).toMatchObject({ total: 0, locked: 1 });
   });
 });

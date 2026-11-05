@@ -36,6 +36,12 @@ export class FlashcardsController {
     return this.flashcards.overview(user, scope);
   }
 
+  /** Performans bloğu: kapsamsız sayımlar, ders dağılımı, son 7 gün, 30 günlük hatırlama oranı. */
+  @Get('stats')
+  stats(@CurrentUser() user: AuthenticatedUser) {
+    return this.flashcards.stats(user);
+  }
+
   @Post('sessions')
   start(@CurrentUser() user: AuthenticatedUser, @Body() dto: StartFlashcardSessionDto) {
     return this.flashcards.startSession(user, dto);
