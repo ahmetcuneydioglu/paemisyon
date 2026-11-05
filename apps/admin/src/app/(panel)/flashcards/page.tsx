@@ -28,7 +28,8 @@ const SELECT = 'rounded-lg border border-slate-300 px-3 py-2 text-sm';
 /**
  * Bilgi Kartları listesi (Doc 56 §8.2; Figma 163:1306): beş sayaç, eskimiş kuyruğu, filtre çubuğu
  * (ders › konu, durum, tür, mevzuat kontrolü, eskimiş, arama), tablo + checkbox toplu yayın (yalnız
- * admin; AI kaynaklı kartlar toplu onaydan geçmez), sayfalama. Kaynak etiketi yalnız panelde.
+ * admin; her kart kendi yayın kapısından geçer, AI kaynaklı kartlar da toplu yayınlanır — 6 Kas 2026),
+ * sayfalama. Kaynak etiketi yalnız panelde.
  */
 export default function FlashcardsPage() {
   const qc = useQueryClient();
@@ -94,6 +95,7 @@ export default function FlashcardsPage() {
 
   const rows = list.data?.items ?? [];
   const secilebilir = rows.filter((r) => r.status !== 'published' && r.status !== 'archived').map((r) => r.id);
+  const aiSecili = rows.filter((r) => selected.has(r.id) && r.synthetic).length;
   const hepsiSecili = secilebilir.length > 0 && secilebilir.every((id) => selected.has(id));
   const toggle = (id: string) =>
     setSelected((s) => {
@@ -112,7 +114,7 @@ export default function FlashcardsPage() {
     <div>
       <PageHeader
         title="Bilgi Kartları"
-        subtitle="Maddeye çivilenmiş soru-cevap kartları (Doc 56). Üretim modeldir, yayın insanındır; AI kaynaklı kartlar tek tek yayınlanır."
+        subtitle="Maddeye çivilenmiş soru-cevap kartları (Doc 56). Üretim modeldir, yayın insanındır; her kart kendi yayın kapısından (betik doğrulaması + mevzuat kontrolü) geçer."
         action={
           <div className="flex gap-2">
             <Link href="/flashcards/import" className="rounded-lg border border-slate-300 px-4 py-2 text-sm font-medium hover:bg-slate-50">
@@ -263,14 +265,18 @@ export default function FlashcardsPage() {
       {selected.size > 0 && (
         <div className="mb-3 flex flex-wrap items-center justify-between gap-3 rounded-lg bg-slate-900 px-4 py-2 text-sm text-white">
           <span>
-            {selected.size} seçili · <span className="text-slate-300">yalnız admin yayınlar · AI kaynaklı kartlar toplu onaydan geçmez</span>
+            {selected.size} seçili{aiSecili > 0 ? ` · ${aiSecili} AI kaynaklı` : ''} · <span className="text-slate-300">yalnız admin yayınlar · kapıdan geçemeyen kart gerekçesiyle atlanır</span>
           </span>
           <div className="flex gap-2">
             <button onClick={() => setSelected(new Set())} className="rounded-lg border border-slate-600 px-3 py-1.5 hover:bg-slate-800">
               Seçimi bırak
             </button>
             {isAdmin && (
-              <button onClick={() => publishMany.mutate([...selected])} disabled={publishMany.isPending} className="rounded-lg bg-emerald-600 px-3 py-1.5 font-medium hover:bg-emerald-500 disabled:opacity-50">
+              <button
+                onClick={() => {
+                  if (confirm(`${selected.size} kart yayınlanacak${aiSecili > 0 ? ` (${aiSecili} AI kaynaklı)` : ''}. Her kart kendi yayın kapısından geçer; geçemeyen atlanır. Devam?`)) publishMany.mutate([...selected]);
+                }}
+                disabled={publishMany.isPending} className="rounded-lg bg-emerald-600 px-3 py-1.5 font-medium hover:bg-emerald-500 disabled:opacity-50">
                 {publishMany.isPending ? 'Yayınlanıyor…' : 'Seçilenleri yayınla'}
               </button>
             )}

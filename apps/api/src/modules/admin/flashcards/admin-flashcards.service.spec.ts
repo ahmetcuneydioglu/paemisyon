@@ -4,7 +4,7 @@ import { AdminFlashcardsService } from './admin-flashcards.service';
 
 /**
  * Admin bilgi kartları (Doc 56 §8.1): yayın kapısı (rol, eskime, mevzuat kontrolü, doğrulama),
- * toplu yayında AI kartlarının atlanması, düzenlemede yeniden doğrulama ve sürüm/eskime kuralları.
+ * toplu yayında AI kartlarının da kapıdan geçmesi, düzenlemede yeniden doğrulama ve sürüm/eskime kuralları.
  */
 const now = new Date('2026-11-05T10:00:00Z');
 const admin = { id: 'adm', email: 'a@x', roles: ['admin'], isPremium: true } as AuthenticatedUser;
@@ -120,7 +120,7 @@ describe('AdminFlashcardsService — yayın kapısı', () => {
     expect(audit.log).toHaveBeenCalledWith(admin, 'flashcard.publish', 'flashcard', 'k1');
   });
 
-  it('toplu yayın: AI kaynaklı kart atlanır, editör kartı yayınlanır, yayındaki sayılmaz', async () => {
+  it('toplu yayın: AI kaynaklı kart da kapıdan geçer, yayındaki sayılmaz, bulunamayan atlanır', async () => {
     const { svc, prisma } = setup();
     const cards: Record<string, ReturnType<typeof CARD>> = {
       ai: CARD({ id: 'ai', sourceLabel: 'AI bilgi kartı — T.C. Anayasası md 75–86' }),
@@ -131,11 +131,8 @@ describe('AdminFlashcardsService — yayın kapısı', () => {
       async ({ where }: { where: { id: string } }) => cards[where.id] ?? null,
     );
     const r = await svc.publishMany(admin, ['ai', 'ed', 'pub', 'yok']);
-    expect(r.published).toEqual(['ed']);
-    expect(r.skipped).toEqual([
-      { id: 'ai', reason: expect.stringMatching(/AI kaynaklı/) },
-      { id: 'yok', reason: 'bulunamadı' },
-    ]);
+    expect(r.published).toEqual(['ai', 'ed']);
+    expect(r.skipped).toEqual([{ id: 'yok', reason: 'bulunamadı' }]);
   });
 });
 

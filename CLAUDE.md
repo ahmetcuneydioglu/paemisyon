@@ -102,8 +102,10 @@ Bu kurallar her UI kodu yazımında geçerlidir; "sonradan düzeltiriz" yaklaş�
   yazılmaz; kayıt "AI bilgi kartı" ön ekli `sourceLabel` taşır, `in_review`'a
   düşer, mevzuat kontrol durumu (`verificationStatus`) tutulur ve madde
   tazelenince eskir. Tuzak kartlarındaki olumsuz iddialar betikle doğrulanamaz;
-  insan incelemesi kaldırılamaz. Yayın kararı insanındır (yalnız admin; AI
-  kaynaklı kartlar toplu onaydan geçmez, tek tek yayınlanır).
+  insan incelemesi kaldırılamaz. Yayın kararı insanındır (yalnız admin). AI
+  kaynaklı kartlar da toplu yayınlanabilir (kullanıcı kararı 6 Kas 2026): toplu
+  yayın her kartı kendi kapısından (betik doğrulaması + mevzuat kontrolü +
+  eskime) tek tek geçirir, geçemeyeni gerekçesiyle atlar.
 - Kaynak etiketi son kullanıcıya GÖSTERİLMEZ (4 Eyl 2026 kararı) — ne denemede,
   ne alıştırmada, ne günün sorusunda, ne de public/SEO sayfalarında. Etiket
   sorunun geldiği kitabı/sınavı işaret ediyor ve onu dağıtmak istemiyoruz.

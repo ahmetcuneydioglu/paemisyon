@@ -536,8 +536,10 @@ export class AdminFlashcardsService {
   }
 
   /**
-   * Toplu yayın (admin): seçilen kartlardan yayında olmayanlar tek tek kapıdan geçer; AI kaynaklı
-   * kartlar ATLANIR (CLAUDE.md Doc 56 istisnası: toplu onaydan geçmez, tek tek yayınlanır).
+   * Toplu yayın (admin): seçilen kartlardan yayında olmayanlar TEK TEK yayın kapısından geçer
+   * (eskimemiş ∧ mevzuat kontrolü "yenilenmeli" değil ∧ doğrulama temiz); geçemeyen gerekçesiyle
+   * atlanır. AI kaynaklı kartlar da toplu yayınlanabilir (kullanıcı kararı 6 Kas 2026; kapı kart
+   * başına aynı kaldığı için toplu seçim denetimi gevşetmez).
    */
   async publishMany(actor: AuthenticatedUser, ids: string[]) {
     if (!actor.roles.includes('admin'))
@@ -547,17 +549,13 @@ export class AdminFlashcardsService {
     for (const id of [...new Set(ids)]) {
       const c = await this.prisma.flashcard.findFirst({
         where: { id, deletedAt: null },
-        select: { status: true, sourceLabel: true },
+        select: { status: true },
       });
       if (!c) {
         skipped.push({ id, reason: 'bulunamadı' });
         continue;
       }
       if (c.status === 'published') continue;
-      if (sentetikMi(c.sourceLabel)) {
-        skipped.push({ id, reason: 'AI kaynaklı kart toplu onaydan geçmez; tek tek yayınla' });
-        continue;
-      }
       try {
         await this.publish(actor, id, { audit: false });
         published.push(id);

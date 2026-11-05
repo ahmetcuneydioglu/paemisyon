@@ -194,7 +194,7 @@ export default function FlashcardDetailPage() {
               </ul>
             )}
             {!isAdmin && d.status !== 'published' && <p className="mt-1 text-xs text-slate-500">Yalnız admin yayınlar; sen düzenleyip mevzuat kontrolünü işaretleyebilirsin.</p>}
-            {d.synthetic && <p className="mt-1 text-xs text-violet-700">AI kaynaklı kart: toplu onaydan geçmez, tek tek yayınlanır; tuzak/olumsuz iddiaları insan okur.</p>}
+            {d.synthetic && <p className="mt-1 text-xs text-violet-700">AI kaynaklı kart: betik sayıları doğrular, tuzak/olumsuz iddiaları insan okur; yayın kapısı diğer kartlarla aynı.</p>}
           </div>
           <label className="text-sm">
             Mevzuat kontrolü

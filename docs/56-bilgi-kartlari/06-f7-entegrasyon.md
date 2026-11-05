@@ -75,11 +75,21 @@ kutu** ("Bilgi kartları", tam genişlik, üçüncü satır). Kutu yalnız sunuc
 alt yazısından "N kart" çıkarıldı. Simülatörde yerel API ile doğrulandı (28 kart → mod seçimi sayfası).
 Alternatif (Yanlışlarım + Favorilerim'i "Tekrar"da birleştirip 2×2 kalmak) önerildi, kullanıcı 5 kutuyu seçti.
 
+## 3d. Toplu yayın kararı (6 Kas)
+
+Kullanıcı prod panelde pilot kartı toplu yayınlamak isteyince "0 kart yayınlandı · 1 atlandı: AI kaynaklı kart
+toplu onaydan geçmez" aldı. **Karar: AI kaynaklı kartlar da toplu yayınlanır.** Gerekçe: toplu yayın zaten
+her kartı tek tek aynı kapıdan (betik doğrulaması temiz ∧ mevzuat kontrolü "yenilenmeli" değil ∧ eskimemiş)
+geçiriyor; AI'yı ayrıca dışlamak kapıyı güçlendirmiyor, yalnız 28 tıklama ekliyordu. Değişiklik:
+`publishMany` AI dalı kaldırıldı (spec güncellendi), panel çubuğu seçimdeki AI kart sayısını gösterip onay
+soruyor, CLAUDE.md istisna metni ve 05-f6 güncellendi. İnsan incelemesi kaldırılmadı: kapı ve "tuzak/olumsuz
+iddiayı insan okur" notu kart ayrıntısında duruyor.
+
 ## 4. Yapılmayan / sıradaki
 
 - **Cihaz testi (Expo):** simülatörde temel akış doğrulandı; gerçek cihazda jest hissi, SE boyutu ve uçak
   modu kuyruğu kullanıcı göz testine kaldı.
 - **Üretim hattı:** `kart-girdi.ts` / `kart-uret.ts` yazılmadı; 47 ünite için türetim ayrı karar (maliyet + inceleme yükü).
 - **İki cihaz arası ilerleme, yayından kaldırılan kartın kuyruktan düşmesi:** API spec'te var, canlı denenmedi.
-- **Bayrak açma sırası:** prod'da pilot kartlar panelden tek tek yayınlanır → `beta` rolüyle canlı göz testi →
+- **Bayrak açma sırası:** prod'da pilot kartlar panelden (tek tek ya da toplu) yayınlanır → `beta` rolüyle canlı göz testi →
   `flashcards_enabled` panelden açılır. Bildirim preset'i `flashcards_due` `paused` doğar, panelden açılır.
