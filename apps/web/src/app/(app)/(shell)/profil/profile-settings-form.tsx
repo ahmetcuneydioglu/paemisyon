@@ -67,6 +67,18 @@ export function ProfileSettingsForm({
           targetExamDate: String(formData.get("targetExamDate") ?? "") || null,
         },
       });
+      // Günlük kart hedefi ayrı uçta (Doc 56); yalnız değiştiyse gider.
+      const kart = formData.get("flashcardDailyGoal");
+      if (
+        kart != null &&
+        profile.flashcardDailyGoal != null &&
+        Number(kart) !== profile.flashcardDailyGoal
+      ) {
+        await apiClient("/me/flashcards/preferences", {
+          method: "PATCH",
+          body: { dailyGoal: Number(kart) },
+        });
+      }
       setMessage({
         kind: "ok",
         text: "Profil ve çalışma hedeflerin güncellendi.",
@@ -179,6 +191,28 @@ export function ProfileSettingsForm({
             min={5}
             max={200}
           />
+          {profile.flashcardDailyGoal != null ? (
+            <label className="block">
+              <span className="type-subhead text-ink">Günlük kart hedefi</span>
+              <select
+                name="flashcardDailyGoal"
+                defaultValue={String(profile.flashcardDailyGoal)}
+                className={INPUT}
+              >
+                {[...new Set([10, 20, 30, 40, 60, profile.flashcardDailyGoal])]
+                  .sort((a, b) => a - b)
+                  .map((n) => (
+                    <option key={n} value={n}>
+                      {n} kart
+                    </option>
+                  ))}
+              </select>
+              <span className="type-body-sm mt-1 block text-ink-subtle">
+                Bilgi kartları için ayrı sayılır; seri ikisinden biriyle
+                korunur.
+              </span>
+            </label>
+          ) : null}
           <label className="block">
             <span className="type-subhead text-ink">Günlük çalışma süresi</span>
             <select

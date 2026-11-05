@@ -17,6 +17,8 @@ import { AdminSummariesController } from './summaries/admin-summaries.controller
 import { AdminSummariesService } from './summaries/admin-summaries.service';
 import { AdminArticleSummariesController } from './summaries/admin-article-summaries.controller';
 import { AdminArticleSummariesService } from './summaries/admin-article-summaries.service';
+import { AdminFlashcardsController } from './flashcards/admin-flashcards.controller';
+import { AdminFlashcardsService } from './flashcards/admin-flashcards.service';
 import { PublicModule } from '../public/public.module';
 import { ReportsModule } from '../reports/reports.module';
 import { ExamsModule } from '../exams/exams.module';
@@ -36,6 +38,7 @@ import { AdminExamAdjustmentsService } from './exams/admin-exam-adjustments.serv
     AdminPlansController,
     AdminSummariesController, // Doc 53 konu özetleri
     AdminArticleSummariesController, // Doc 54 madde özetleri
+    AdminFlashcardsController, // Doc 56 bilgi kartları
   ],
   providers: [
     AuditService,
@@ -51,6 +54,7 @@ import { AdminExamAdjustmentsService } from './exams/admin-exam-adjustments.serv
     AdminPlansService,
     AdminSummariesService,
     AdminArticleSummariesService,
+    AdminFlashcardsService,
   ],
 })
 export class AdminModule {}

@@ -72,6 +72,7 @@ function girdi(over: Partial<BugunV3Input> = {}): BugunV3Input {
     reviewAnsweredToday: 0,
     nextSummary: null,
     bookmarkCount: 0,
+    flashcards: null,
     ...over,
   };
 }
@@ -363,5 +364,74 @@ describe('rota — deneme satırı (2 Kas 2026)', () => {
     const satir = r.route.find((x) => x.kind === 'exam')!;
     expect(satir.label).toBe('Haftalık Deneme-1');
     expect(satir.detail).toBe('şimdi');
+  });
+});
+
+describe('Bugün v3 — bilgi kartları (Doc 56 aşama 5)', () => {
+  const kart = { due: 12, reviewedToday: 0, dailyGoal: 20 };
+
+  it('kartlar kapalıysa (null) rota ve senin için kart içermez', () => {
+    const r = computeHomeV3(girdi());
+    expect(r.route.some((i) => i.kind === 'flashcards')).toBe(false);
+    expect(r.forYou.some((i) => i.kind === 'flashcards_due')).toBe(false);
+  });
+
+  it('vadesi gelen kart: rota kalemi "Kart tekrarı · 12 kart" ~2 dk open_flashcards; senin için satırı', () => {
+    const r = computeHomeV3(girdi({ flashcards: kart }));
+    const item = r.route.find((i) => i.kind === 'flashcards');
+    expect(item).toMatchObject({
+      label: 'Kart tekrarı · 12 kart',
+      detail: '12 bekliyor',
+      done: false,
+      estimateMin: 2,
+    });
+    expect(item?.action).toMatchObject({
+      type: 'open_flashcards',
+      route: '/kartlar?mode=due',
+      count: 12,
+      source: 'home_route',
+    });
+    const fy = r.forYou.find((i) => i.kind === 'flashcards_due');
+    expect(fy).toMatchObject({ label: 'Kart tekrarı · 12 kart', ctaLabel: 'Çalış' });
+    expect(fy?.action).toMatchObject({ type: 'open_flashcards', source: 'home_for_you' });
+  });
+
+  it('porsiyon günlük hedefle sınırlı; yarı yolda "5/20 · 40 bekliyor"; hedef dolunca ya da kuyruk boşalınca tamam', () => {
+    const r = computeHomeV3(girdi({ flashcards: { due: 40, reviewedToday: 5, dailyGoal: 20 } }));
+    expect(r.route.find((i) => i.kind === 'flashcards')).toMatchObject({
+      label: 'Kart tekrarı · 20 kart',
+      detail: '5/20 · 40 bekliyor',
+      done: false,
+      estimateMin: 3,
+    });
+    const d = computeHomeV3(girdi({ flashcards: { due: 20, reviewedToday: 20, dailyGoal: 20 } }));
+    expect(d.route.find((i) => i.kind === 'flashcards')).toMatchObject({
+      done: true,
+      estimateMin: null,
+    });
+    const temiz = computeHomeV3(girdi({ flashcards: { due: 0, reviewedToday: 8, dailyGoal: 20 } }));
+    expect(temiz.route.find((i) => i.kind === 'flashcards')).toMatchObject({
+      detail: 'kuyruk temiz',
+      done: true,
+      action: null,
+    });
+    expect(temiz.forYou.some((i) => i.kind === 'flashcards_due')).toBe(false);
+  });
+
+  it('soru hedefi dolunca sıradaki adım kart tekrarı olur (günün quizinden önce); senin için tekrar etmez', () => {
+    const r = computeHomeV3(
+      girdi({
+        todayTask: gorev({ kind: 'done', title: 'Bugünlük tamam', reason: 'Hedef doldu.' }),
+        answeredToday: 20,
+        dailyQuizPlayed: false,
+        weakestUnit: null,
+        readiness: { courses: [], weakest: [], unresolvedWrongCount: 0 },
+        flashcards: kart,
+      }),
+    );
+    expect(r.nextStep.kind).toBe('flashcards');
+    expect(r.nextStep.title).toBe('12 kart tekrar bekliyor');
+    expect(r.nextStep.action).toMatchObject({ type: 'open_flashcards', source: 'home_next' });
+    expect(r.forYou.some((i) => i.kind === 'flashcards_due')).toBe(false);
   });
 });

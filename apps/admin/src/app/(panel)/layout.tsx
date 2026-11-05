@@ -22,6 +22,7 @@ const NAV = [
   { href: "/law-articles", label: "Madde Metinleri", icon: "📖" },
   { href: "/summaries", label: "Konu Özetleri", icon: "🗒️" },
   { href: "/article-summaries", label: "Madde Özetleri", icon: "📑" },
+  { href: "/flashcards", label: "Bilgi Kartları", icon: "🃏" },
   { href: "/catalog", label: "İçerik Ağacı", icon: "🗂️" },
   { href: "/plans", label: "Planlar", icon: "💳", adminOnly: true },
   { href: "/notifications", label: "Bildirim Merkezi", icon: "🔔" },

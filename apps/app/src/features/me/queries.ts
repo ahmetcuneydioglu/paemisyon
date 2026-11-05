@@ -15,6 +15,8 @@ export interface MeFull {
   onboardingCompleted: boolean;
   preferredModule: { id: string; name: string } | null;
   dailyGoal: number;
+  /** Günlük kart hedefi (Doc 56); null = kartlar bu kullanıcıya kapalı, eski sunucuda yok. */
+  flashcardDailyGoal?: number | null;
   targetExamDate: string | null;
   memberSince: string | null;
   roles: string[];

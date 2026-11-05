@@ -32,4 +32,5 @@ export * from "./coverage-panel";
 export * from "./upsell-strip";
 export * from "./answer-review";
 export * from "./leaderboard-teaser";
+export * from "./flashcards";
 export * from "./leaderboard";

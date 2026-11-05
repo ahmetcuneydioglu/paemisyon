@@ -8,6 +8,8 @@
 export type AppHref = { pathname: string; params?: Record<string, string> };
 
 const UUID = /^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$/;
+/** Kart modları (sunucu FLASHCARD_MODES ile aynı). */
+const KART_MODLARI = ["due", "new", "hard", "favorites", "all", "mixed"];
 
 export function routeToHref(route: string | null | undefined): AppHref {
   const r = (route ?? "").trim();
@@ -29,6 +31,21 @@ export function routeToHref(route: string | null | undefined): AppHref {
   // Konu özeti ünitesi (Doc 53): web /ozet/<slug> ile aynı adres.
   const ozet = r.match(/^\/?ozet\/([a-z0-9-]+)$/);
   if (ozet) return { pathname: "/ozet/[slug]", params: { slug: ozet[1]! } };
+  // Bilgi kartları (Doc 56): "/kartlar[?mode=…&topicId=…]" (koç kartı, bildirim, web ile aynı adres);
+  // "flashcards" (push sözlüğü); "flashcards:<topicUuid>" konu kapsamı. Mod sunucu listesinden değilse vade.
+  const kartlar = r.match(/^(?:\/kartlar|kartlar|flashcards)(?:\?(.*))?$/);
+  if (kartlar) {
+    const qs = new URLSearchParams(kartlar[1] ?? "");
+    const mode = qs.get("mode") ?? "due";
+    const params: Record<string, string> = { mode: KART_MODLARI.includes(mode) ? mode : "due", source: qs.get("source") ?? "notif" };
+    for (const k of ["topicId", "courseId", "unitSlug"] as const) {
+      const v = qs.get(k);
+      if (v) params[k] = v;
+    }
+    return { pathname: "/kartlar", params };
+  }
+  const kart = r.match(/^flashcards:([0-9a-fA-F-]{36})$/);
+  if (kart) return { pathname: "/kartlar", params: { mode: "due", source: "notif", topicId: kart[1]! } };
   if (r === "/quiz") return { pathname: "/seans", params: { mode: "practice", count: "10", source: "notif" } };
   if (r === "/review") return { pathname: "/(tabs)/kutuphane/tekrar", params: { sekme: "yanlislar" } };
   if (r === "/catalog") return { pathname: "/(tabs)/kutuphane" };

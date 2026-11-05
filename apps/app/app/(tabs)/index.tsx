@@ -59,6 +59,12 @@ export default function BugunScreen() {
 
   /** Sunucunun verdiği eylemi çalıştırır — tek yer (Doc 48: istemci kural bilmez). */
   function run(action: TodayTaskAction) {
+    if (action.type === "open_flashcards") {
+      // route: "/kartlar?topicId=…&mode=due" — sorgu sunucudan, istemci yalnız aktarır.
+      const qs = new URLSearchParams((action.route ?? "").split("?")[1] ?? "");
+      router.push({ pathname: "/kartlar", params: { mode: qs.get("mode") ?? "due", topicId: qs.get("topicId") ?? "", courseId: qs.get("courseId") ?? "", unitSlug: qs.get("unitSlug") ?? "", source: action.source } });
+      return;
+    }
     if (action.type === "open_summary") {
       const slug = action.route?.replace(/^\/ozet\//, "") ?? "";
       if (slug) router.push({ pathname: "/ozet/[slug]", params: { slug } });

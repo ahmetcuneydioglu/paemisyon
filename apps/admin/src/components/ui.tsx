@@ -96,3 +96,35 @@ export function HubBadge({
     </span>
   );
 }
+
+/**
+ * Sayaç kutusu (Konu Özetleri, Madde Özetleri, Bilgi Kartları): etiket + büyük sayı; ton yalnız
+ * vurgudur, anlam etikette. Doc 56 aşama 6'da iki özet sayfasındaki kopyalar buraya taşındı.
+ */
+export function Stat({
+  label,
+  value,
+  tone,
+  hint,
+}: {
+  label: string;
+  value: number | string;
+  tone?: 'emerald' | 'amber' | 'red';
+  hint?: string;
+}) {
+  const cls =
+    tone === 'emerald'
+      ? 'text-emerald-700'
+      : tone === 'amber'
+        ? 'text-amber-700'
+        : tone === 'red'
+          ? 'text-red-700'
+          : 'text-slate-900';
+  return (
+    <div className="rounded-xl border border-slate-200 bg-white px-4 py-3 shadow-sm">
+      <div className="text-xs text-slate-500">{label}</div>
+      <div className={`text-2xl font-semibold ${cls}`}>{value}</div>
+      {hint && <div className="mt-0.5 text-xs text-slate-400">{hint}</div>}
+    </div>
+  );
+}

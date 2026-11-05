@@ -8,6 +8,11 @@ import type { Group } from './segment-dsl';
 import type { DeepLinkTarget } from './deep-links';
 import type { AppEventType } from './app-events.service';
 import type { PrismaClient } from '@prisma/client';
+import {
+  countDueCards,
+  countReviewedToday,
+  flashcardsEnabledFor,
+} from '../flashcards/kart-sorgular';
 
 /**
  * Otomasyon takvimi (Doc 52 §4.4):
@@ -42,6 +47,23 @@ async function weakTopic(ctx: EnrichContext): Promise<Record<string, unknown> | 
     select: { id: true, name: true },
   });
   return t ? { topicId: t.id, topicName: t.name } : null;
+}
+
+/**
+ * Bilgi kartları (Doc 56): vadesi gelen açık kart sayısı. Bugün kart çalışıldıysa, kapı kapalıysa
+ * (bayrak + rol) ya da bekleyen kart yoksa gönderim yok (`no_payload`). Kitle satırı kart alanı taşımaz;
+ * sayı gönderim anında sorgulanır (kitle `lastActiveDays ≤ 14` ile daraltılır).
+ */
+async function flashcardsDue(ctx: EnrichContext): Promise<Record<string, unknown> | null> {
+  const now = new Date();
+  if (!(await flashcardsEnabledFor(ctx.prisma, ctx.userId))) return null;
+  if ((await countReviewedToday(ctx.prisma, ctx.userId, now)) > 0) return null;
+  const aud = await ctx.prisma.notificationAudience.findUnique({
+    where: { userId: ctx.userId },
+    select: { isPremium: true },
+  });
+  const n = await countDueCards(ctx.prisma, ctx.userId, aud?.isPremium ?? false, now);
+  return n > 0 ? { kart_sayisi: n } : null;
 }
 
 export type AutomationPreset = {
@@ -132,6 +154,29 @@ export const AUTOMATION_PRESETS: AutomationPreset[] = [
     maxPerUserPerDay: 1,
     respectQuietHours: true,
     ttlHours: 4,
+    initialStatus: 'paused',
+  },
+  {
+    code: 'flashcards_due',
+    name: 'Kart tekrarı bekliyor',
+    description:
+      'Hatırlatma saati + 1 saat; vadesi gelmiş bilgi kartı olup bugün kart çalışmamış, son 14 günde aktif, push cihazı olan adaylara. Kartlar kapalıyken yalnız beta/admin (Doc 56).',
+    category: 'study_reminder',
+    priority: 'low',
+    channels: ['push'],
+    triggerType: 'schedule',
+    schedule: { kind: 'user_time', field: 'reminderTime', offsetMinutes: 60 },
+    conditions: and(rule('pushEnabled', 'is_true'), rule('lastActiveDays', 'lte', 14)),
+    enrich: flashcardsDue,
+    title: 'Kart tekrarı bekliyor',
+    body: '{{kart_sayisi}} kartın vadesi doldu; beş dakikalık tur hatırladıklarını uzun aralığa taşır.',
+    ctaLabel: 'Tekrara başla',
+    deepLink: { target: 'flashcards' },
+    conversionEvent: 'flashcard_session_completed',
+    cooldownHours: 20,
+    maxPerUserPerDay: 1,
+    respectQuietHours: true,
+    ttlHours: 6,
     initialStatus: 'paused',
   },
   {

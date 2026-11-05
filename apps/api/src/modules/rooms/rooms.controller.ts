@@ -16,7 +16,10 @@ export class RoomsController {
     @CurrentUser() user: AuthenticatedUser,
     @Query('moduleId', new ParseUUIDPipe({ optional: true })) moduleId?: string,
   ) {
-    return this.rooms.study(user.id, moduleId ?? null);
+    return this.rooms.study(user.id, moduleId ?? null, new Date(), {
+      isPremium: user.isPremium,
+      roles: user.roles,
+    });
   }
 
   @Get('course-room/:courseId')
@@ -24,7 +27,7 @@ export class RoomsController {
     @CurrentUser() user: AuthenticatedUser,
     @Param('courseId', ParseUUIDPipe) courseId: string,
   ) {
-    return this.rooms.courseRoom(user.id, courseId, user.isPremium);
+    return this.rooms.courseRoom(user.id, courseId, user.isPremium, user.roles);
   }
 
   @Get('topic-room/:topicId')
@@ -32,6 +35,6 @@ export class RoomsController {
     @CurrentUser() user: AuthenticatedUser,
     @Param('topicId', ParseUUIDPipe) topicId: string,
   ) {
-    return this.rooms.topicRoom(user.id, topicId, user.isPremium);
+    return this.rooms.topicRoom(user.id, topicId, user.isPremium, user.roles);
   }
 }

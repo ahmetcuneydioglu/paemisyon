@@ -7,6 +7,7 @@ export const TEMPLATE_VARIABLES = [
   'ad',
   'streak',
   'zayif_konu',
+  'kart_sayisi',
   'sinava_kalan_gun',
   'deneme_adi',
   'net',

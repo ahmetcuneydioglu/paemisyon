@@ -2,7 +2,8 @@ import { useRouter } from "expo-router";
 import { ArrowLeft, Bell, Inbox, Play, Search, Star } from "lucide-react-native";
 import { useState } from "react";
 import { View } from "react-native";
-import { CountdownHeader, CourseTile, FeedbackPanel, LegislationRow, NotificationRow, QuestionMetaRow, QuestionOption, QuestionStem, ResultPanel, SessionProgress, SessionTitleBlock, TaskHero, ToolRow, type OptionState, ShareQuestionCard, CourseCard, ResumeStrip, TestCard, CoveragePanel, UpsellStrip, ExamContextLine, ForYouList, LeaderboardTeaser, NextStepCard, RouteList, WeekSummaryLine, LeaderboardList, LeaderboardMyRank, LeaderboardPodium, RankAvatar, RankLabel, RankSystemSheet } from "@/components/domain";
+import { CountdownHeader, CourseTile, FeedbackPanel, FlashCard, FlashcardEntry, FlashcardKindBadge, FlashcardResultPanel, FlashcardStateBar, LegislationRow, NotificationRow, QuestionMetaRow, QuestionOption, QuestionStem, RatingBar, ResultPanel, SessionProgress, SessionTitleBlock, TaskHero, ToolRow, UndoStrip, type OptionState, ShareQuestionCard, CourseCard, ResumeStrip, TestCard, CoveragePanel, UpsellStrip, ExamContextLine, ForYouList, LeaderboardTeaser, NextStepCard, RouteList, WeekSummaryLine, LeaderboardList, LeaderboardMyRank, LeaderboardPodium, RankAvatar, RankLabel, RankSystemSheet } from "@/components/domain";
+import type { Flashcard } from "@/features/flashcards/queries";
 import type { LeaderboardRow, RankCatalogItem } from "@/features/progress/queries";
 import type { InboxItem } from "@/features/notifications/queries";
 import type { ShareCardData } from "@/features/quiz/share";
@@ -106,6 +107,26 @@ const bildirimOrnekleri = [
   bildirimOrnegi({ id: "00000000-0000-0000-0000-000000000003", category: "new_content", title: "Yeni kanun metni", body: "7593 sayılı Kanun bankaya işlendi.", ctaLabel: null, data: { minAppVersion: "9.9.0" } }),
 ];
 
+/** Bilgi kartı örneği (Doc 56; Figma 158:782): kaynak etiketi yok, madde rozetleri kamuya açık. */
+const kartOrnegi: Flashcard = {
+  id: "00000000-0000-0000-0000-00000000c001",
+  kind: "qa",
+  front: "Temel hak ve hürriyetler hangi hâllerde ve hangi araçla sınırlanabilir?",
+  back: "Yalnız kanunla ve Anayasa’nın ilgili maddelerinde belirtilen sebeplere bağlı olarak sınırlanabilir.",
+  explanation: "md 13: Sınırlama hakkın **özüne dokunamaz**; Anayasa’nın sözüne ve ruhuna, demokratik toplum düzenine, laik Cumhuriyete ve ölçülülük ilkesine aykırı olamaz.",
+  difficulty: 2,
+  topic: { id: "t", name: "Anayasa" },
+  unit: { slug: "anayasa-temel-haklar-rejimi", title: "Temel hakların rejimi" },
+  articles: [
+    { no: "13", title: "Temel hak ve hürriyetlerin sınırlanması", legislationSlug: "t-c-anayasasi" },
+    { no: "15", title: null, legislationSlug: "t-c-anayasasi" },
+  ],
+  bookmarked: false,
+  state: { state: "learning", due: true, hard: false, dueAt: null },
+};
+const kartSayimi = { total: 24, new: 9, learning: 13, learned: 2, due: 6, hard: 3, favorites: 0, locked: 0 };
+const kartSonucu = { sessionId: "s", summary: { reviewed: 20, known: 16, again: 4, uniqueCards: 18, knownPct: 80 }, due: { count: 0, nextAt: new Date(GALERI_ANI + 86_400_000).toISOString() }, dailyGoal: { target: 40, done: 36 } };
+
 const seansAraclari = [
   { key: "favorite" as const, label: "Favori", active: true, onPress: () => {} },
   { key: "coach" as const, label: "Koça sor", onPress: () => {} },
@@ -119,6 +140,8 @@ export default function GaleriScreen() {
   const [sheet, setSheet] = useState(false);
   const [rutbeSheet, setRutbeSheet] = useState(false);
   const [picked, setPicked] = useState<string | null>(null);
+  const [kartArka, setKartArka] = useState(false);
+  const [kartFavori, setKartFavori] = useState(false);
   const roles: TypeRole[] = ["display", "title", "heading", "subhead", "body", "bodySm", "label", "stat"];
   const prefs: { value: ThemePreference; label: string }[] = [
     { value: "system", label: "Sistem" },
@@ -373,6 +396,25 @@ export default function GaleriScreen() {
               <ShareQuestionCard data={paylasimOrnegi} />
             </View>
           </View>
+        </Section>
+
+        <Section title="Bilgi kartları (Doc 56)">
+          <View style={{ flexDirection: "row", flexWrap: "wrap", gap: space.s2 }}>
+            {(["qa", "cloze", "numeric", "trap"] as const).map((k) => (
+              <FlashcardKindBadge key={k} kind={k} />
+            ))}
+            <Badge tone="success">Cevap</Badge>
+          </View>
+          <FlashcardStateBar counts={kartSayimi} />
+          <Card style={{ paddingVertical: 0 }}>
+            <FlashcardEntry counts={kartSayimi} onPress={() => {}} />
+            <FlashcardEntry counts={{ ...kartSayimi, total: 0, locked: 24 }} locked onPress={() => {}} divider={false} title="Kilitli kapsam" />
+          </Card>
+          <FlashCard card={{ ...kartOrnegi, bookmarked: kartFavori }} flipped={kartArka} onFlip={() => setKartArka((f) => !f)} onBookmark={() => setKartFavori((b) => !b)} onSolve={() => {}} height={420} />
+          <RatingBar onAgain={() => setKartArka(false)} onKnown={() => setKartArka(false)} />
+          <UndoStrip rating="known" onUndo={() => {}} />
+          <UndoStrip rating="again" onUndo={() => {}} />
+          <FlashcardResultPanel result={kartSonucu} line="Kartların %80'ini hatırladın. Sıradaki tekrar yarın." learnedDelta={3} />
         </Section>
 
         <Section title="Form, bildirim, boş durum">

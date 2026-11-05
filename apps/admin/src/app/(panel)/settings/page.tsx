@@ -9,6 +9,7 @@ type Settings = {
   showQuestionSource: boolean;
   coachCikmisSinavKarti: boolean;
   mobilAnasayfaV2: boolean;
+  flashcardsEnabled: boolean;
 };
 
 const SETTINGS: { key: keyof Settings; label: string; help: string }[] = [
@@ -19,6 +20,13 @@ const SETTINGS: { key: keyof Settings; label: string; help: string }[] = [
       'Kapalıyken yeni "Bugün" ekranını yalnız admin ve beta hesapları görür (Doc 48). ' +
       'Açınca, ekranı içeren sürümü (1.1.0+4 ve sonrası) kullananlar ~1 dk içinde yeni ekrana geçer; ' +
       'eski sürümdekiler eski ekranda kalır. Kapatınca herkes eski ekrana döner.',
+  },
+  {
+    key: 'flashcardsEnabled',
+    label: 'Bilgi kartları herkese açık',
+    help:
+      'Kapalıyken bilgi kartlarını yalnız admin ve beta hesapları görür; ders/konu odalarında kart ' +
+      'satırı çizilmez (Doc 56). Yayında kart yoksa açmanın anlamı yok: önce panelden kart yayınlayın.',
   },
   {
     key: 'coachCikmisSinavKarti',

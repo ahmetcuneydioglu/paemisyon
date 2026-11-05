@@ -2,6 +2,7 @@ import type { UnitRecipe } from '../summaries/unite-recete';
 import type { DailyFocusView, Readiness, TodayTask, TodayTaskAction } from './home-v2.types';
 import type { ForYouItem, HomeV3, NextStep, RouteItem } from './home-v3.types';
 import { TAZE_TUR_MS, type YarimTur } from './today-task.logic';
+import { OTURUM_VARSAYILAN_KART } from '../flashcards/flashcard.constants';
 
 /**
  * Bugün v3 (Doc 49/16): tek adım + rota + senin için. Saf fonksiyon; veri bağlamı
@@ -28,6 +29,8 @@ export interface BugunV3Input {
   nextSummary: { slug: string; title: string; topicId: string; readingMinutes: number } | null;
   /** Favori soru sayısı. */
   bookmarkCount: number;
+  /** Bilgi kartları (Doc 56): vade, bugün çalışılan, günlük kart hedefi; kapalıysa null. */
+  flashcards: { due: number; reviewedToday: number; dailyGoal: number } | null;
   exams: {
     live: { id: string; title: string; attempted?: boolean } | null;
     todayUpcoming: { id: string; title: string; startAt: Date; questionCount: number } | null;
@@ -54,6 +57,29 @@ const OZET_DK = 4;
 const SORU_SN = 20;
 
 const dk = (count: number) => Math.max(1, Math.round((count * SORU_SN) / 60));
+/** Kart başına ortalama süre (sn): ön yüz, çevirme, puan (Doc 56). */
+const KART_SN = 12;
+const kartDk = (count: number) => Math.max(1, Math.round((count * KART_SN) / 60));
+
+type KartDurumu = NonNullable<BugunV3Input['flashcards']>;
+
+/**
+ * Bugünün kart porsiyonu: günlük kart hedefiyle sınırlı, bugün çalışılan + bekleyen. Hedef dolunca
+ * ya da kuyruk boşalınca adım tamamlanır; sayı istemcide hesaplanmaz.
+ */
+function kartPorsiyonu(f: KartDurumu): number {
+  return Math.min(Math.max(1, f.dailyGoal), Math.max(1, f.reviewedToday + f.due));
+}
+
+function kartAcici(count: number, source: TodayTaskAction['source']): TodayTaskAction {
+  return {
+    type: 'open_flashcards',
+    label: `Tekrara başla · ${count} kart`,
+    count,
+    route: '/kartlar?mode=due',
+    source,
+  };
+}
 
 const GUNLER = ['Paz', 'Pzt', 'Sal', 'Çar', 'Per', 'Cum', 'Cmt'];
 function gunSaat(d: Date, now: Date): string {
@@ -195,6 +221,20 @@ function sıradaki(input: BugunV3Input): NextStep {
           { kind: 'wrongs', courseId: null, topicId: null, label: 'Yanlışlar' },
           'home_next',
         ),
+      };
+    }
+    // Kart tekrarı (Doc 56): soru hedefi dolmuş, vadesi gelen kart var ve bugünkü porsiyon bitmemiş.
+    const f = input.flashcards;
+    if (f && f.due > 0 && f.reviewedToday < kartPorsiyonu(f)) {
+      const kalan = kartPorsiyonu(f) - f.reviewedToday;
+      return {
+        kind: 'flashcards',
+        eyebrow: 'SIRADAKİ · KART TEKRARI',
+        title: `${kalan} kart tekrar bekliyor`,
+        reason: `Soru hedefin tamam; ${kalan} kartlık tur ${kartDk(kalan)} dakika sürer, hatırladıkların uzun aralığa geçer.`,
+        badge: null,
+        estimateMin: kartDk(kalan),
+        action: kartAcici(kalan, 'home_next'),
       };
     }
     if (!input.dailyQuizPlayed) {
@@ -378,6 +418,27 @@ function rota(input: BugunV3Input, next: NextStep): RouteItem[] {
           : null,
     });
   }
+  // Kart tekrarı (Doc 56): vade ya da bugün çalışma varsa rotada; porsiyon günlük kart hedefiyle sınırlı.
+  const kart = input.flashcards;
+  if (kart && (kart.due > 0 || kart.reviewedToday > 0)) {
+    const porsiyon = kartPorsiyonu(kart);
+    const bitti = kart.due === 0 || kart.reviewedToday >= porsiyon;
+    const kalan = Math.max(0, porsiyon - kart.reviewedToday);
+    items.push({
+      key: 'flashcards',
+      kind: 'flashcards',
+      label: `Kart tekrarı · ${porsiyon} kart`,
+      detail:
+        kart.due === 0
+          ? 'kuyruk temiz'
+          : kart.reviewedToday > 0 && !bitti
+            ? `${kart.reviewedToday}/${porsiyon} · ${kart.due} bekliyor`
+            : `${kart.due} bekliyor`,
+      estimateMin: bitti ? null : kartDk(kalan),
+      done: bitti,
+      action: kart.due > 0 ? kartAcici(Math.max(1, kalan), 'home_route') : null,
+    });
+  }
   items.push({
     key: 'daily',
     kind: 'daily',
@@ -497,6 +558,16 @@ function seninIcin(input: BugunV3Input, next: NextStep): ForYouItem[] {
         route: `/denemeler/${ex.id}`,
         source: 'home_for_you',
       },
+    });
+  }
+  // Vadesi gelen kartlar (Doc 56): sıradaki adım kart tekrarı değilse tek dokunuşla tekrar.
+  const kart = input.flashcards;
+  if (kart && kart.due > 0 && next.kind !== 'flashcards') {
+    out.push({
+      kind: 'flashcards_due',
+      label: `Kart tekrarı · ${kart.due} kart`,
+      ctaLabel: 'Çalış',
+      action: kartAcici(Math.min(kart.due, OTURUM_VARSAYILAN_KART), 'home_for_you'),
     });
   }
   if (out.length < 3) {

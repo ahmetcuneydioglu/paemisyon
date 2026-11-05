@@ -3,6 +3,7 @@ import { Flame, Map, Trophy } from "lucide-react-native";
 import { View } from "react-native";
 import { AppText, Badge, Card, ListRow, Notice, ProgressBar, Screen, SectionHeader, Skeleton, StatTile } from "@/components/ui";
 import { useMyAttempts } from "@/features/exams/queries";
+import { useFlashcardStats } from "@/features/flashcards/queries";
 import { useActivity, useProgressSummary, useTopicProgress } from "@/features/progress/queries";
 import { useTheme } from "@/theme/ThemeProvider";
 
@@ -18,6 +19,9 @@ export default function PerformansScreen() {
   const topics = useTopicProgress();
   const activity = useActivity(84);
   const attempts = useMyAttempts();
+  // Bilgi kartları (Doc 56 aşama 5): kartlar kapalıysa 404 → blok yok.
+  const kartlar = useFlashcardStats();
+  const kart = kartlar.data && (kartlar.data.counts.total > 0 || kartlar.data.counts.locked > 0) ? kartlar.data : null;
 
   const s = summary.data;
   const weakest = (topics.data ?? []).filter((t) => t.solvedCount >= 5).slice(0, 3);
@@ -79,6 +83,30 @@ export default function PerformansScreen() {
           </Card>
         )}
       </View>
+
+      {/* Bilgi kartları (Doc 56): öğrenildi / tekrar / bugün; ders dağılımı. Oyunlaştırma yok. */}
+      {kart ? (
+        <View style={{ gap: space.s2 }}>
+          <SectionHeader title="Bilgi kartları" action={kart.counts.due > 0 ? `Tekrar · ${kart.counts.due}` : undefined} onAction={() => router.push({ pathname: "/kartlar", params: { mode: "due", source: "study_hub", title: "Kart tekrarı" } })} />
+          <View style={{ flexDirection: "row", gap: space.s3 }}>
+            <StatTile label="Öğrenildi" value={`${kart.counts.learned}/${kart.counts.total}`} progress={kart.counts.total > 0 ? kart.counts.learned / kart.counts.total : undefined} tone="success" />
+            <StatTile label="Tekrar" value={kart.counts.due} unit="kart" hint={kart.counts.due > 0 ? "vadesi geldi" : "kuyruk temiz"} tone={kart.counts.due > 0 ? "warning" : "accent"} />
+            <StatTile label="Bugün" value={`${kart.dailyGoal.done}/${kart.dailyGoal.target}`} hint={kart.last30.knownPct != null ? `30 günde %${kart.last30.knownPct}` : "henüz ölçülmedi"} progress={kart.dailyGoal.target > 0 ? Math.min(1, kart.dailyGoal.done / kart.dailyGoal.target) : undefined} />
+          </View>
+          <Card style={{ paddingVertical: 0 }}>
+            {kart.courses.map((k, i) => (
+              <ListRow
+                key={k.courseId}
+                title={k.courseName}
+                subtitle={k.total > 0 ? `${k.learned}/${k.total} öğrenildi${k.due > 0 ? ` · ${k.due} tekrar` : ""}` : `${k.locked} kart · Premium ile açılır`}
+                divider={i < kart.courses.length - 1}
+                chevron={k.total > 0}
+                onPress={k.total > 0 ? () => router.push({ pathname: "/kartlar", params: { mode: k.due > 0 ? "due" : "all", courseId: k.courseId, source: "study_hub", title: k.courseName } }) : undefined}
+              />
+            ))}
+          </Card>
+        </View>
+      ) : null}
 
       {/* Deneme net eğrisi: son 8 tamamlanmış canlı deneme. */}
       <View style={{ gap: space.s2 }}>

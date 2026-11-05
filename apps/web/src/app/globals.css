@@ -296,3 +296,60 @@ h4 {
     transform: scaleX(1);
   }
 }
+
+/* ─────────────────────────────────────────────────────────────
+   Bilgi kartları (Doc 56): 3B çevirme, puan uçuşu, sıradaki kartın girişi.
+   Süreler token'dan; prefers-reduced-motion'da token 0 ms'e iner → anlık.
+───────────────────────────────────────────────────────────── */
+.kart-sahne {
+  perspective: 1200px;
+}
+.kart-cevirici {
+  display: grid;
+  transform-style: preserve-3d;
+  transition: transform calc(var(--motion-enter-ms) * 2) var(--motion-enter-ease);
+}
+.kart-cevirici[data-flipped="true"] {
+  transform: rotateY(180deg);
+}
+.kart-yuz {
+  grid-area: 1 / 1;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+.kart-yuz-arka {
+  transform: rotateY(180deg);
+}
+.kart-ucus {
+  transition:
+    transform var(--motion-exit-ms) var(--motion-exit-ease),
+    opacity var(--motion-exit-ms) var(--motion-exit-ease);
+}
+.kart-ucus[data-ucus="known"] {
+  transform: translateX(120%) rotate(6deg);
+  opacity: 0;
+}
+.kart-ucus[data-ucus="again"] {
+  transform: translateX(-120%) rotate(-6deg);
+  opacity: 0;
+}
+/* Kenar tonu: puan yönü renkle değil, rozet metniyle de söylenir (bileşende). */
+.kart-ucus[data-ucus="known"] .kart-yuz {
+  border-color: var(--color-success);
+}
+.kart-ucus[data-ucus="again"] .kart-yuz {
+  border-color: var(--color-danger);
+}
+@keyframes kart-giris {
+  from {
+    opacity: 0;
+    transform: translateY(8px) scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+.kart-giris {
+  animation: kart-giris var(--motion-enter-ms) var(--motion-enter-ease) both;
+}

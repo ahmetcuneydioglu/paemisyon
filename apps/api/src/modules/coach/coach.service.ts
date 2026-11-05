@@ -29,6 +29,7 @@ import { yanlisKaydiFiltresi, yanlisTuruSoruFiltresi } from '../quiz/yanlis-havu
 import { coachRules, motivationRule } from './rules';
 import { PlanService } from '../plan/plan.service';
 import { SummariesService } from '../summaries/summaries.service';
+import { FlashcardsService } from '../flashcards/flashcards.service';
 import { hedefSinavTarihi } from './hedef-sinav';
 
 export { hedefSinavTarihi };
@@ -48,6 +49,7 @@ export class CoachService {
     private readonly settings: SettingsService,
     private readonly plan: PlanService,
     private readonly summaries: SummariesService,
+    private readonly flashcards: FlashcardsService,
   ) {}
 
   /**
@@ -192,6 +194,7 @@ export class CoachService {
       reviewAnsweredToday: ctx.home.reviewAnsweredToday,
       nextSummary: ctx.home.nextSummary,
       bookmarkCount: ctx.home.bookmarkCount,
+      flashcards: ctx.flashcards,
     });
     const homeV3 = {
       ...homeV3Cekirdek,
@@ -333,6 +336,23 @@ export class CoachService {
     };
   }
 
+  /** Koç girdisi (Doc 56): vadesi gelen kart + günlük kart hedefi; kartlar kapalıysa null. Hata rotayı düşürmez. */
+  private async kartDurumu(
+    user: AuthenticatedUser,
+    now: Date,
+  ): Promise<CoachContext['flashcards']> {
+    try {
+      if (!(await this.flashcards.enabledFor(user))) return null;
+      const [due, goal] = await Promise.all([
+        this.flashcards.dueTotal(user.id, user.isPremium, now),
+        this.flashcards.dailyGoal(user.id, now),
+      ]);
+      return { due, reviewedToday: goal.done, dailyGoal: goal.target };
+    } catch {
+      return null;
+    }
+  }
+
   private async buildContext(user: AuthenticatedUser): Promise<CoachContext & { home: HomeRaw }> {
     const now = new Date();
     // Uygulama günü ve haftası TR 04.00'te döner (Doc 48 D2 — common/gun.ts):
@@ -409,6 +429,7 @@ export class CoachService {
       bugunYanlisTuru,
       favoriSayisi,
       bugunYanlisCevap,
+      kartlar,
     ] = await Promise.all([
       profileP,
       this.prisma.streak.findUnique({ where: { userId: user.id } }),
@@ -571,6 +592,8 @@ export class CoachService {
           answeredAt: { gte: gunBaslangici(now) },
         },
       }),
+      // Bilgi kartları (Doc 56 aşama 5): bayrak/rol kapısı serviste; kapalıysa null → rota ve kural susar.
+      this.kartDurumu(user, now),
     ]);
 
     // ── Deneme durumları ──
@@ -861,6 +884,7 @@ export class CoachService {
         : null,
       volume: { last7, prev7 },
       plan: planOzeti,
+      flashcards: kartlar,
       home: {
         exam,
         readiness,

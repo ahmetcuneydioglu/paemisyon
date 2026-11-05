@@ -82,8 +82,9 @@ export type HomeSource =
   | 'home_for_you';
 
 export interface TodayTaskAction {
-  /** open_summary (Doc 49/16): konu özeti ünitesini açar (`route` = /ozet/<slug>). */
-  type: 'start_session' | 'resume_session' | 'open_exams' | 'open_summary';
+  /** open_summary (Doc 49/16): konu özeti ünitesini açar (`route` = /ozet/<slug>).
+   *  open_flashcards (Doc 56): bilgi kartı oynatıcısını açar (`route` = /kartlar?mode=due…). */
+  type: 'start_session' | 'resume_session' | 'open_exams' | 'open_summary' | 'open_flashcards';
   /** Düğme etiketi — davranışla aynı kaynaktan ("Başla · 10 soru"). */
   label: string;
   /** start_session: soru sayısı (etikettekiyle aynı). */

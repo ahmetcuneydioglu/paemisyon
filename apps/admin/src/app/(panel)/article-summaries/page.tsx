@@ -3,7 +3,7 @@
 import { useMutation, useQuery, useQueryClient } from '@tanstack/react-query';
 import Link from 'next/link';
 import { useState } from 'react';
-import { Card, ErrorBox, PageHeader, Spinner } from '@/components/ui';
+import { Card, ErrorBox, PageHeader, Spinner, Stat } from '@/components/ui';
 import { api } from '@/lib/api';
 import type { ArticleSummaryLawRow, ArticleSummaryStaleItem } from '@/lib/types';
 
@@ -199,16 +199,6 @@ export default function ArticleSummariesPage() {
           </div>
         </Card>
       )}
-    </div>
-  );
-}
-
-function Stat({ label, value, tone }: { label: string; value: number; tone?: 'emerald' | 'amber' | 'red' }) {
-  const cls = tone === 'emerald' ? 'text-emerald-700' : tone === 'amber' ? 'text-amber-700' : tone === 'red' ? 'text-red-700' : 'text-slate-900';
-  return (
-    <div className="rounded-xl border border-slate-200 bg-white px-4 py-3 shadow-sm">
-      <div className="text-xs text-slate-500">{label}</div>
-      <div className={`text-2xl font-semibold ${cls}`}>{value}</div>
     </div>
   );
 }

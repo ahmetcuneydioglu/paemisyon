@@ -77,6 +77,8 @@ export class StartSessionDto {
     'home_route',
     'home_for_you',
     'share',
+    // Bilgi kartı arka yüzü "Bu konudan soru çöz" köprüsü (Doc 56).
+    'flashcards',
   ])
   source?: string;
 

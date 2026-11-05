@@ -3,6 +3,7 @@ import type {
   PublicArticleSummary,
   PublicArticleSummaryBrief,
 } from "@/lib/ozet";
+import type { FlashcardRoomCounts } from "@/lib/kartlar";
 
 /**
  * Public (auth'suz) API çağrısı — SEO katmanı (Doc 23). ISR ile önbelleklenir:
@@ -409,6 +410,8 @@ export interface MeProfile {
   dailyGoal: number;
   /** Günlük çalışma süresi hedefi, dk (Doc 49 S1-D); null = seçilmedi. */
   dailyMinutes: number | null;
+  /** Günlük kart hedefi (Doc 56); null = kartlar bu kullanıcıya kapalı, eski sunucuda yok. */
+  flashcardDailyGoal?: number | null;
   targetExamDate: string | null;
   memberSince: string | null;
   roles: string[];
@@ -519,7 +522,13 @@ export type HomeSource =
 
 /** Sunucunun verdiği eylem; `homeActionHref` web adresine çevirir (Doc 48: istemci kural bilmez). */
 export interface TodayTaskAction {
-  type: "start_session" | "resume_session" | "open_exams" | "open_summary";
+  type:
+    | "start_session"
+    | "resume_session"
+    | "open_exams"
+    | "open_summary"
+    /** Bilgi kartları (Doc 56): `route` = /kartlar?topicId=…&mode=due; sorgu sunucudan. */
+    | "open_flashcards";
   label: string;
   count?: number;
   recipe?: "coach" | "comeback";
@@ -554,6 +563,8 @@ export type NextStepKind =
   | "summary_then_questions"
   | "questions"
   | "review"
+  /** Kart tekrarı (Doc 56): soru hedefi dolmuş, vadesi gelen kart var. */
+  | "flashcards"
   | "done";
 export interface NextStep {
   kind: NextStepKind;
@@ -572,7 +583,8 @@ export type RouteItemKind =
   | "exam"
   | "plan_topic"
   | "plan_review"
-  | "plan_mock";
+  | "plan_mock"
+  | "flashcards";
 export interface RouteItem {
   key: string;
   kind: RouteItemKind;
@@ -583,7 +595,12 @@ export interface RouteItem {
   action: TodayTaskAction | null;
 }
 export type ForYouKind =
-  "wrongs" | "favorites" | "weak_topic" | "exam" | "mixed";
+  | "wrongs"
+  | "favorites"
+  | "weak_topic"
+  | "exam"
+  | "mixed"
+  | "flashcards_due";
 export interface ForYouItem {
   kind: ForYouKind;
   label: string;
@@ -717,6 +734,8 @@ export interface RoomTopic {
   units: { count: number; read: number; firstSlug: string | null };
   /** "24 soru · 4 ünite özeti · 6 yanlış" — sunucu kurar. */
   note: string;
+  /** Bilgi kartları sayımı (Doc 56); bayrak kapalıyken ve eski sunucuda yok. */
+  flashcards?: FlashcardRoomCounts | null;
   children: Omit<RoomTopic, "children">[];
 }
 export interface CourseRoom {
@@ -740,6 +759,8 @@ export interface CourseRoom {
     favoriteCount: number;
     summaryUnitCount: number;
     legislation: { slug: string; name: string; articleCount: number }[];
+    /** Dersin bilgi kartları (Doc 56 karar B: "Konu oku" üçüncü bölüm). */
+    flashcards?: FlashcardRoomCounts | null;
   };
 }
 /** Çalış ana ekranı / Kütüphane (Doc 49/17) — `/me/study`. Sıralama ve künye sunucuda. */
@@ -766,7 +787,12 @@ export interface StudyHub {
     detail: string;
   } | null;
   courses: StudyCourse[];
-  totals: { wrongCount: number; favoriteCount: number };
+  totals: {
+    wrongCount: number;
+    favoriteCount: number;
+    /** Vadesi gelen kart, tüm dersler (Doc 56); eski sunucuda yok. */
+    flashcardsDue?: number;
+  };
 }
 export interface TopicRoom {
   topic: {
@@ -793,6 +819,8 @@ export interface TopicRoom {
     articleCount: number;
     articleRange: string | null;
   } | null;
+  /** Bilgi kartları sayımı (Doc 56); yoksa satır çizilmez. */
+  flashcards?: FlashcardRoomCounts | null;
 }
 
 /** `GET /public/questions/:id/share` (F10-P): cevapsız paylaşılan soru; anahtar/açıklama/kaynak etiketi yok. */

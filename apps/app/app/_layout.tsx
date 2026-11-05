@@ -6,11 +6,13 @@ import * as SplashScreen from "expo-splash-screen";
 import { StatusBar } from "expo-status-bar";
 import { useEffect } from "react";
 import { View } from "react-native";
+import { GestureHandlerRootView } from "react-native-gesture-handler";
 import { SafeAreaProvider } from "react-native-safe-area-context";
 import { AppErrorBoundary } from "@/components/AppErrorBoundary";
 import { AppText, Notice, Screen } from "@/components/ui";
 import { useStoreSync } from "@/features/billing/store";
 import { useMe } from "@/features/home/queries";
+import { flushFlashcardQueue } from "@/lib/offline-flashcards";
 import { flushQueue } from "@/lib/offline-queue";
 import { usePushNavigation } from "@/lib/push";
 import { refreshReminder } from "@/lib/reminders";
@@ -45,16 +47,19 @@ function RootLayout() {
   if (!ready) return null;
 
   return (
-    <SafeAreaProvider>
-      <ThemeProvider>
-        <QueryClientProvider client={queryClient}>
-          <AuthProvider>
-            <ThemedStatusBar />
-            <AppErrorBoundary>{isConfigured ? <RootNavigator /> : <ConfigurationError />}</AppErrorBoundary>
-          </AuthProvider>
-        </QueryClientProvider>
-      </ThemeProvider>
-    </SafeAreaProvider>
+    // Jest kökü (bilgi kartı kaydırma, Doc 56): gesture-handler v3 kök görünüm ister.
+    <GestureHandlerRootView style={{ flex: 1 }}>
+      <SafeAreaProvider>
+        <ThemeProvider>
+          <QueryClientProvider client={queryClient}>
+            <AuthProvider>
+              <ThemedStatusBar />
+              <AppErrorBoundary>{isConfigured ? <RootNavigator /> : <ConfigurationError />}</AppErrorBoundary>
+            </AuthProvider>
+          </QueryClientProvider>
+        </ThemeProvider>
+      </SafeAreaProvider>
+    </GestureHandlerRootView>
   );
 }
 
@@ -112,6 +117,7 @@ function RootNavigator() {
         <Stack.Screen name="sonuc" options={{ presentation: "fullScreenModal", gestureEnabled: false }} />
         <Stack.Screen name="inceleme/[sessionId]" options={{ presentation: "fullScreenModal" }} />
         <Stack.Screen name="oku/[slug]" options={{ presentation: "fullScreenModal" }} />
+        <Stack.Screen name="kartlar" options={{ presentation: "fullScreenModal", gestureEnabled: false }} />
         <Stack.Screen name="paywall" options={{ presentation: "modal" }} />
         <Stack.Screen name="planim" options={{ headerShown: true, title: "Planım" }} />
         <Stack.Screen name="deneme-sonuc" options={{ headerShown: false }} />
@@ -131,9 +137,13 @@ function AppServices({ userId, ready }: { userId: string | null; ready: boolean 
   useEffect(() => {
     if (!ready) return;
     void flushQueue();
+    void flushFlashcardQueue();
     void refreshReminder();
     const sub = addNetworkStateListener((s) => {
-      if (s.isConnected && s.isInternetReachable !== false) void flushQueue();
+      if (s.isConnected && s.isInternetReachable !== false) {
+        void flushQueue();
+        void flushFlashcardQueue();
+      }
     });
     return () => sub.remove();
   }, [ready]);

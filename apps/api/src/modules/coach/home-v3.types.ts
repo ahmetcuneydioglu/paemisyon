@@ -8,7 +8,14 @@ import type { TodayTaskAction } from './home-v2.types';
  */
 
 export type NextStepKind =
-  'exam' | 'resume' | 'summary_then_questions' | 'questions' | 'review' | 'done';
+  | 'exam'
+  | 'resume'
+  | 'summary_then_questions'
+  | 'questions'
+  | 'review'
+  /** Bilgi kartı tekrarı (Doc 56): soru hedefi dolmuş, vadesi gelen kart var. */
+  | 'flashcards'
+  | 'done';
 
 /** Sıradaki kartı: tek birincil eylem. */
 export interface NextStep {
@@ -35,7 +42,9 @@ export type RouteItemKind =
   | 'exam'
   | 'plan_topic'
   | 'plan_review'
-  | 'plan_mock';
+  | 'plan_mock'
+  /** Kart tekrarı (Doc 56): porsiyon günlük kart hedefiyle sınırlı. */
+  | 'flashcards';
 
 /** Bugünün rotası satırı (2–6 madde; sayı koçun — yoğunluğa göre). */
 export interface RouteItem {
@@ -53,7 +62,14 @@ export interface RouteItem {
   action: TodayTaskAction | null;
 }
 
-export type ForYouKind = 'wrongs' | 'favorites' | 'weak_topic' | 'exam' | 'mixed';
+export type ForYouKind =
+  | 'wrongs'
+  | 'favorites'
+  | 'weak_topic'
+  | 'exam'
+  | 'mixed'
+  /** Vadesi gelen bilgi kartları (Doc 56). */
+  | 'flashcards_due';
 
 /** Senin için satırı (en çok 4): tek dokunuşla eylem. */
 export interface ForYouItem {
