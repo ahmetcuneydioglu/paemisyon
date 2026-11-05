@@ -382,8 +382,9 @@ export function FlashcardDeck({
     () => kimlik.value,
     (cur, prev) => {
       if (prev != null && cur !== prev) {
-        tx.value = 0;
-        ty.value = 0;
+        // `.set()`: react-hooks/immutability hook kapsamındaki `.value =` yazımını render mutasyonu sayıyor.
+        tx.set(0);
+        ty.set(0);
       }
     },
   );
