@@ -52,22 +52,7 @@ export default function KonuOdasiScreen() {
             />
             <CoachLine text={d.coach} />
 
-            {units.data && units.data.length > 0 ? (
-              <View style={{ gap: space.s2 }}>
-                <SectionHeader title="Konu özetleri" />
-                {(() => {
-                  const z = weakestUnit(units.data);
-                  return z ? (
-                    <AppText variant="bodySm" tone="soft">
-                      En zayıf ünite: {z.title.split(" — ")[0]} (%{z.mastery!.accuracyPct ?? 0}). {z.progress?.completedAt ? "Özetini okudun; sorularla pekiştir." : "Önce özetini oku."}
-                    </AppText>
-                  ) : null;
-                })()}
-                {units.data.map((u) => (
-                  <SummaryUnitRow key={u.slug} unit={u} onPress={() => router.push({ pathname: "/ozet/[slug]", params: { slug: u.slug, title: u.title.split(" — ")[0] } })} />
-                ))}
-              </View>
-            ) : null}
+            {units.data?.length ? <ListRow title="Ünite içerikleri" subtitle={`${units.data.length} ünite · Konu anlatımı ve hızlı tekrar`} leading={<Ikon icon={BookOpen} />} onPress={() => router.push({ pathname: "/(tabs)/kutuphane/uniteler/[topicId]", params: { topicId: p.topicId, name: title } })} /> : null}
 
             <View style={{ gap: space.s2 }}>
               <SectionHeader title="Bu konuda" />

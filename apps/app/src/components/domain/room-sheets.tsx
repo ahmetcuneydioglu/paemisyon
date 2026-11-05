@@ -101,7 +101,7 @@ export function ReadingSheet({
       {ozetli.length > 0 ? (
         <View style={{ gap: space.s1 }}>
           <AppText variant="label" tone="subtle">
-            Ünite özetleri
+            Ünite içerikleri
           </AppText>
           {ozetli.map((t, i) => (
             <EylemSatiri key={t.id} icon={BookOpen} title={t.name} subtitle={`${t.units.count} ünite · ${t.units.read} okundu`} onPress={() => onTopic(t)} divider={i < ozetli.length - 1} />
