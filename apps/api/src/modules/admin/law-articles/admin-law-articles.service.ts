@@ -384,6 +384,16 @@ export class AdminLawArticlesService {
       where: { lawArticleId: { in: lawArticleIds }, staleSince: null },
       data: { staleSince: new Date(), verificationStatus: 'needs_refresh' },
     });
+    // Doc 56: maddeye referanslı bilgi kartları da eskir — yayın engeli, mevzuat kontrolü yeniden.
+    await this.prisma.flashcard.updateMany({
+      where: {
+        articles: { some: { lawArticleId: { in: lawArticleIds } } },
+        staleSince: null,
+        status: { not: 'archived' },
+        deletedAt: null,
+      },
+      data: { staleSince: new Date(), verificationStatus: 'needs_refresh' },
+    });
   }
 
   /**

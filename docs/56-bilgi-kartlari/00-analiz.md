@@ -1,6 +1,6 @@
 # Doc 56 — Bilgi Kartları (flashcards): mimari analiz ve geliştirme planı
 
-Tarih: 4 Kasım 2026. Durum: **ANALİZ ONAYLI (4 Kas, kararlar §11) — aşama 2 tasarımı onaylı (`01-f2-tasarim.md`); aşama 3 veri+API canlıda, migration uygulandı (`02-f3-veri-api.md`); aşama 4 kart deneyimi Expo+web kodu ve pilot deste `in_review` (`03-f4-kart-deneyimi.md`); aşama 5 akıllı öğrenme (Bugün rotası, koç kuralı, günlük kart hedefi, seri, bildirim preset'i, Performans bloğu — `04-f5-akilli-ogrenme.md`). Bayrak kapalı.** Analiz tarihinde kod yazılmamış, migration uygulanmamış,
+Tarih: 4 Kasım 2026. Durum: **ANALİZ ONAYLI (4 Kas, kararlar §11) — aşama 2 tasarımı onaylı (`01-f2-tasarim.md`); aşama 3 veri+API canlıda, migration uygulandı (`02-f3-veri-api.md`); aşama 4 kart deneyimi Expo+web kodu ve pilot deste `in_review` (`03-f4-kart-deneyimi.md`); aşama 5 akıllı öğrenme (`04-f5-akilli-ogrenme.md`); aşama 6 admin paneli (liste/detay/yeni/içe aktar, yayın kapısı, eskime kancası — `05-f6-admin.md`). Bayrak kapalı.** Analiz tarihinde kod yazılmamış, migration uygulanmamış,
 mevcut ekran değiştirilmemişti. Kaynak: kullanıcı talimatı (4 Kas) ve rakip uygulamanın üç ekran görüntüsü
 (kart ön yüzü, "Biliyorum" ve "Geç" damgaları, alt sayaç şeridi 1/266 · 8 · 258).
 
