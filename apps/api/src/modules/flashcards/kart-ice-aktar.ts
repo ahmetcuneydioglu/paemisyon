@@ -42,7 +42,11 @@ export class FlashcardImportError extends Error {
 /** Kaynak etiketi ön eki: AI türetimi (CLAUDE.md istisnası) ya da editör girişi. */
 export const KART_KAYNAK_ONEKLERI = ['AI bilgi kartı', 'Editör'] as const;
 
-async function latestVersionNos(db: Db, articleIds: string[]): Promise<Map<string, number>> {
+/** Maddelerin güncel sürüm numarası (kart referansı bu sürüme bağlanır; madde tazelenince eskir). */
+export async function latestVersionNos(
+  db: Pick<PrismaClient, 'lawArticleVersion'>,
+  articleIds: string[],
+): Promise<Map<string, number>> {
   if (articleIds.length === 0) return new Map();
   const g = await db.lawArticleVersion.groupBy({
     by: ['lawArticleId'],

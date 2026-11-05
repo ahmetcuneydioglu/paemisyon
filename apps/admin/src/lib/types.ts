@@ -701,3 +701,102 @@ export const VERIFICATION_LABEL: Record<VerificationStatus, string> = {
   verified: 'Mevzuat doğrulandı',
   needs_refresh: 'Tazeleme gerekli',
 };
+
+// ── Bilgi kartları (Doc 56 §8.1; API admin/flashcards) ──
+export type FlashcardKind = 'qa' | 'cloze' | 'numeric' | 'trap';
+export const FLASHCARD_KIND_LABEL: Record<FlashcardKind, string> = {
+  qa: 'Kavram',
+  cloze: 'Boşluk',
+  numeric: 'Sayı',
+  trap: 'Tuzak',
+};
+
+export interface FlashcardArticleRef {
+  no: string;
+  title: string | null;
+  versionNo: number | null;
+  relation: 'primary' | 'related' | string;
+}
+
+export interface FlashcardListItem {
+  id: string;
+  kind: FlashcardKind;
+  front: string;
+  back: string;
+  difficulty: number;
+  status: ContentStatus;
+  verificationStatus: VerificationStatus;
+  staleSince: string | null;
+  /** Yalnız panelde görünür; kullanıcı uçlarına çıkmaz. */
+  sourceLabel: string;
+  generatedBy: string | null;
+  /** AI kaynaklı (toplu onaydan geçmez). */
+  synthetic: boolean;
+  version: number;
+  sortOrder: number;
+  updatedAt: string;
+  publishedAt: string | null;
+  createdAt: string;
+  topicId: string;
+  topicName: string;
+  courseId: string;
+  courseName: string;
+  unit: { id: string; slug: string; title: string; isPremium: boolean } | null;
+  articles: FlashcardArticleRef[];
+}
+
+export interface FlashcardStats {
+  total: number;
+  published: number;
+  inReview: number;
+  draft: number;
+  archived: number;
+  stale: number;
+  pendingVerification: number;
+  needsRefresh: number;
+}
+
+export interface FlashcardDerivedNumber {
+  value: number;
+  expr: string;
+  refs: string[];
+  note?: string;
+}
+
+export interface FlashcardDetail extends FlashcardListItem {
+  explanation: string | null;
+  derivedNumbers: FlashcardDerivedNumber[] | null;
+  counterNumbers: number[];
+  verifiedAt: string | null;
+  legislation: { id: string; slug: string; name: string; shortName: string | null } | null;
+  articles: (FlashcardArticleRef & { text: string | null; currentVersionNo: number | null })[];
+  validation: { ok: boolean; issues: string[]; lines: string[] };
+  gate: { canPublish: boolean; reasons: string[] };
+  history: {
+    id: string;
+    action: string;
+    actorEmail: string;
+    createdAt: string;
+    detail: unknown;
+  }[];
+}
+
+export interface FlashcardImportPreview {
+  dryRun: true;
+  legislationName: string;
+  count: number;
+  ok: boolean;
+  fails: number;
+  cards: { index: number; kind: string; front: string; ok: boolean; lines: string[]; issues: string[] }[];
+}
+export interface FlashcardImportResult {
+  dryRun: false;
+  topicId: string;
+  unitId: string | null;
+  created: number;
+  removed: number;
+}
+export interface FlashcardPublishManyResult {
+  published: string[];
+  skipped: { id: string; reason: string }[];
+}

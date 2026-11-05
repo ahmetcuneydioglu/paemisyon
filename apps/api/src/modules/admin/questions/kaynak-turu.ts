@@ -7,6 +7,7 @@
  *
  * Etiket biçimleri kaynak hat betiklerinden gelir:
  *   - "AI üretimi — …"            (Doc 43 AAY, Doc 35 güncel, matematik)
+ *   - "AI bilgi kartı — …"        (Doc 56 bilgi kartları; toplu onaydan geçmez)
  *   - "Mevzuat türetimi — <kanun> md <no>"  (Doc 39)
  * Tek karar noktası burasıdır; istemciler bu sınıfı sunucudan alır.
  */
@@ -24,13 +25,14 @@ function sade(s: string): string {
     .replace(/\u0307/g, '');
 }
 const ONEK_AI = sade('ai üretimi');
+const ONEK_AI_KART = sade('ai bilgi kartı');
 const ONEK_TURETIM = sade('mevzuat türetimi');
 
 export function kaynakTuru(sourceLabel: string | null | undefined): KaynakTuru {
   const s = (sourceLabel ?? '').trim();
   if (!s) return 'yok';
   const k = sade(s);
-  if (k.startsWith(ONEK_AI)) return 'ai';
+  if (k.startsWith(ONEK_AI) || k.startsWith(ONEK_AI_KART)) return 'ai';
   if (k.startsWith(ONEK_TURETIM)) return 'turetim';
   return 'gercek';
 }

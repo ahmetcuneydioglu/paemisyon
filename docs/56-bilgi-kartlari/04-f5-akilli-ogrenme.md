@@ -47,7 +47,7 @@ bayrak ya da beta/admin rolü. Bildirim preset'i panelden (Bildirim Merkezi › 
 
 ## 5. Sıradaki (aşama 6)
 
-Admin: `modules/admin/flashcards/*` (liste, detay, yayınla/yayından al/arşivle, içe aktar dry-run,
+~~Yapıldı (5 Kas): `05-f6-admin.md`.~~ Admin: `modules/admin/flashcards/*` (liste, detay, yayınla/yayından al/arşivle, içe aktar dry-run,
 toplu yayın — AI kaynaklı kartlar toplu onaydan geçmez), panel sayfaları `(panel)/flashcards`,
 madde tazelenince kart eskitme (`admin-law-articles.service` stale kancası), `Stat`/`Toast`/`FilterBar`
 ortaklaştırma. Pilot deste panelden yayınlanınca aşama 7 (cihaz ve web göz testi, beta rolüyle canlı).
