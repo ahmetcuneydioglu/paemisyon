@@ -1,7 +1,9 @@
 # Paemisyon — Proje Kuralları
 
 Monorepo: `apps/api` (NestJS+Prisma), `apps/admin` (Next.js, :3001),
-`apps/web` (Next.js, :3002), `apps/mobile` (**Flutter** — SwiftUI DEĞİL).
+`apps/web` (Next.js, :3002), `apps/app` (**Expo / React Native** — Paemisyon 2.0
+mobil, Doc 49 F1; yeni mobil iş BURAYA yazılır), `apps/mobile` (Flutter 1.x
+mirası — yeni özellik almaz).
 Ürün anayasası: `docs/24` (kullanıcı yolculuğu), `docs/25` (bilgi mimarisi).
 
 ## Tasarım ve kod kalitesi standartları (kullanıcı talebi — bağlayıcı)
@@ -20,10 +22,10 @@ Bu kurallar her UI kodu yazımında geçerlidir; "sonradan düzeltiriz" yaklaş�
 4. **İlk günden:** Dark Mode desteği, animasyon/geçişler, accessibility
    (semantics/kontrast/dokunma hedefleri ≥44pt), responsive yapı (küçük telefon →
    tablet; web'de mobil → masaüstü).
-5. **Mobil (Flutter):** Apple Human Interface Guidelines'a uygun his (iOS birincil
-   hedef); Flutter'ın güncel idiyomları (Material 3 altyapısı üstünde Cupertino
-   duyarlılığı, `ThemeExtension` ile token'lar). SwiftUI kullanılmıyor — mobil
-   uygulama Flutter'dır.
+5. **Mobil (Expo / React Native, `apps/app`):** Apple Human Interface Guidelines'a
+   uygun his (iOS birincil hedef); Expo Router, bileşen kiti `src/components/ui`
+   + `src/components/domain`, token'lar `packages/tokens` → `@tokens` köprüsü
+   (`src/theme`). SwiftUI kullanılmıyor; Flutter (`apps/mobile`) 1.x mirasıdır.
 6. **Web (Next.js + Tailwind):** token'lar CSS custom property + Tailwind theme
    olarak tek kaynaktan; koç kartları/seans oynatıcı web'de de aynı tasarım dilini
    kullanır.

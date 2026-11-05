@@ -2,7 +2,8 @@ import { useRouter } from "expo-router";
 import { ArrowLeft, Bell, Inbox, Play, Search, Star } from "lucide-react-native";
 import { useState } from "react";
 import { View } from "react-native";
-import { CountdownHeader, CourseTile, FeedbackPanel, LegislationRow, NotificationRow, QuestionMetaRow, QuestionOption, QuestionStem, ResultPanel, SessionProgress, SessionTitleBlock, TaskHero, ToolRow, type OptionState, ShareQuestionCard, CourseCard, ResumeStrip, TestCard, CoveragePanel, UpsellStrip, ExamContextLine, ForYouList, LeaderboardTeaser, NextStepCard, RouteList, WeekSummaryLine } from "@/components/domain";
+import { CountdownHeader, CourseTile, FeedbackPanel, LegislationRow, NotificationRow, QuestionMetaRow, QuestionOption, QuestionStem, ResultPanel, SessionProgress, SessionTitleBlock, TaskHero, ToolRow, type OptionState, ShareQuestionCard, CourseCard, ResumeStrip, TestCard, CoveragePanel, UpsellStrip, ExamContextLine, ForYouList, LeaderboardTeaser, NextStepCard, RouteList, WeekSummaryLine, LeaderboardAvatar, LeaderboardListRow, LeaderboardMyRank, LeaderboardPodium, LeaderboardTable, RankTierBadge, XpProgress } from "@/components/domain";
+import type { LeaderboardRow } from "@/features/progress/queries";
 import type { InboxItem } from "@/features/notifications/queries";
 import type { ShareCardData } from "@/features/quiz/share";
 import {
@@ -52,6 +53,31 @@ const paylasimOrnegi: ShareCardData = {
   url: "https://paemisyon.com/s/ornek",
 };
 
+// Liderlik örnekleri: 8 rütbe adı sunucu kataloğunun kopyasıdır (yalnız galeri verisi).
+const RUTBELER = ["Aday", "Devriye", "Kıdemli Devriye", "Ekip Amiri", "Grup Amiri", "Vardiya Amiri", "Birim Amiri", "Komiserlik Kapısı"];
+const liderlikSatiri = (rank: number, displayName: string, level: number, points: number, xp: number, over: Partial<LeaderboardRow> = {}): LeaderboardRow => ({
+  rank,
+  isMe: false,
+  displayName,
+  avatarUrl: null,
+  points,
+  xp,
+  level,
+  rankName: RUTBELER[level - 1] ?? "Aday",
+  correct: Math.round(xp * 0.4),
+  accuracy: 65,
+  sessions: Math.round(xp / 13),
+  badges: level,
+  lastActive: "2026-11-03",
+  ...over,
+});
+const liderlikOrnegi = [
+  liderlikSatiri(1, "latte", 6, 2545, 4120),
+  liderlikSatiri(2, "muhammedozdogan39", 5, 1316, 2210),
+  liderlikSatiri(3, "Mustafa ÖZDALAR", 4, 716, 1180),
+  liderlikSatiri(4, "eneskula0655", 4, 549, 1142),
+  liderlikSatiri(5, "Karga", 4, 430, 1119, { isMe: true }),
+];
 // Galeri örnekleri modül yüklenirken bir kez kurulur (render saf kalır).
 const GALERI_ANI = Date.now();
 const bildirimOrnegi = (over: Partial<InboxItem>): InboxItem => ({
@@ -207,6 +233,26 @@ export default function GaleriScreen() {
           </Card>
         </Section>
 
+        <Section title="Liderlik (Doc 24 §5 · web ile aynı dil)">
+          <View style={{ flexDirection: "row", flexWrap: "wrap", gap: space.s2 }}>
+            {RUTBELER.map((ad, i) => (
+              <RankTierBadge key={ad} level={i + 1} rankName={ad} />
+            ))}
+          </View>
+          <View style={{ flexDirection: "row", alignItems: "flex-end", gap: space.s3 }}>
+            <LeaderboardAvatar name="Ayşe Yılmaz" avatarUrl={null} level={1} size="sm" />
+            <LeaderboardAvatar name="ilker yıldız" avatarUrl={null} level={4} size="md" />
+            <LeaderboardAvatar name="latte" avatarUrl={null} level={6} size="lg" />
+            <LeaderboardAvatar name="Komiser" avatarUrl={null} level={8} size="xl" />
+          </View>
+          <XpProgress xp={3001} level={5} />
+          <XpProgress xp={15000} level={8} />
+          <LeaderboardPodium rows={liderlikOrnegi.slice(0, 3)} />
+          <LeaderboardTable rows={liderlikOrnegi.slice(3)} />
+          <LeaderboardListRow row={liderlikSatiri(12, "Komiserlik Kapısı uzun ad denemesi", 8, 9999, 12340)} divider={false} />
+          <LeaderboardMyRank me={{ ...liderlikSatiri(84, "Lukas", 5, 120, 3001, { isMe: true, correct: 1214, accuracy: 61 }), pointsToNext: 3, nextName: "ahmethabil" }} />
+          <LeaderboardMyRank me={{ ...liderlikSatiri(0, "Yeni Aday", 1, 0, 0, { isMe: true }), pointsToNext: null, nextName: null }} />
+        </Section>
         <Section title="Bugün v3 (Doc 49/16)">
           <ExamContextLine daysLeft={184} examName="PAEM 2027" activeDays={3} goalDays={5} days={["done", "done", "done", "today", "future", "future", "future"]} onPickDate={() => {}} />
           <NextStepCard eyebrow="SIRADAKİ · ANAYASA · YÜRÜTME" title="4 dk özet, sonra 10 soru" reason="Dün 3 yanlışın bu konudandı; önce özeti oku, sonra soruları çöz." badge="%42 · en zayıf" ctaLabel="Başla" onPress={() => {}} />
