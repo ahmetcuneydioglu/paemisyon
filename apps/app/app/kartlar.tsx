@@ -10,6 +10,7 @@ import { FlashcardDeck, FlashcardResultPanel, RatingBar, SessionTopRow, UndoStri
 import { ArticlePeekSheet } from "@/components/domain/summary";
 import { AppText, Button, IconButton, ListRow, Notice, ProgressBar, Sheet, Skeleton } from "@/components/ui";
 import { FLASHCARD_MODE, flashcardKeys, flashcardsApi, sessionLine, type Flashcard, type FlashcardMode, type FlashcardRating, type FlashcardSession, type FlashcardSessionSummary, type FlashcardSource } from "@/features/flashcards/queries";
+import { markSwipeHintSeen, useSwipeHintSeen } from "@/lib/swipe-hint-seen";
 import { homeKeys } from "@/features/home/queries";
 import { roomKeys } from "@/features/rooms/queries";
 import { ApiError, NetworkError } from "@/lib/api";
@@ -65,6 +66,9 @@ export default function KartlarScreen() {
   const card = cards[index] ?? null;
   const next = cards[index + 1] ?? null;
   const label = session?.scope.label ?? p.title ?? "Bilgi kartları";
+  // İlk giriş ipucu (Doc 56 §3e): bayrak okunmuş ve görülmemişse ilk kartta salınım; bir kez oynayınca kalıcı işaret.
+  const swipeHintSeen = useSwipeHintSeen();
+  const teaser = swipeHintSeen === false && index === 0 && card != null && pending == null;
 
   /* ---------------- Başlatma ---------------- */
   useEffect(() => {
@@ -289,6 +293,8 @@ export default function KartlarScreen() {
             onBookmark={toggleBookmark}
             onArticle={(no, slug) => slug && setPeek({ no, slug })}
             onSolve={() => soruCoz(card)}
+            teaser={teaser}
+            onTeaserEnd={markSwipeHintSeen}
           />
           <RatingBar onAgain={() => puanla("again")} onKnown={() => puanla("known")} disabled={pending != null} />
           {sonOlay ? (

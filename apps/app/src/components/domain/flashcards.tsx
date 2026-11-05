@@ -2,7 +2,7 @@ import { AlertTriangle, Bookmark, Check, ChevronRight, Clock, Hash, Layers, Ligh
 import type { ReactNode } from "react";
 import { Pressable, ScrollView, StyleSheet, View, useWindowDimensions, type StyleProp, type ViewStyle } from "react-native";
 import { Gesture, GestureDetector } from "react-native-gesture-handler";
-import Animated, { Extrapolation, interpolate, useAnimatedReaction, useAnimatedStyle, useDerivedValue, useReducedMotion, useSharedValue, withSpring, withTiming } from "react-native-reanimated";
+import Animated, { cancelAnimation, Extrapolation, interpolate, useAnimatedReaction, useAnimatedStyle, useDerivedValue, useReducedMotion, useSharedValue, withDelay, withSequence, withSpring, withTiming } from "react-native-reanimated";
 import { scheduleOnRN } from "react-native-worklets";
 import { AppText, Badge, Button, ListRow, ProgressBar, Sheet, StatTile, type BadgeTone } from "@/components/ui";
 import { countsNote, FLASHCARD_KIND_LABEL, FLASHCARD_MODE, modeCount, relativeDay, type DailyGoal, type Flashcard, type FlashcardMode, type FlashcardOverview, type FlashcardRating, type FlashcardSessionSummary, type ModeCounts } from "@/features/flashcards/queries";
@@ -310,6 +310,8 @@ export function FlashcardDeck({
   onBookmark,
   onArticle,
   onSolve,
+  teaser = false,
+  onTeaserEnd,
 }: {
   card: Flashcard;
   next: Flashcard | null;
@@ -323,6 +325,12 @@ export function FlashcardDeck({
   onBookmark?: () => void;
   onArticle?: (no: string, legislationSlug: string | null) => void;
   onSolve?: () => void;
+  /**
+   * İlk giriş ipucu: kart kendiliğinden sağa (Biliyorum tonu) ve sola (Tekrar tonu) salınıp yerine döner;
+   * kullanıcı dokununca kesilir. Hareket azaltmada oynamaz. Bir kez oynayınca `onTeaserEnd` çağrılır.
+   */
+  teaser?: boolean;
+  onTeaserEnd?: () => void;
 }) {
   const { colors, radius, space } = useTheme();
   const { width } = useWindowDimensions();
@@ -334,11 +342,29 @@ export function FlashcardDeck({
   const sure = motion.exit.ms;
 
   const bitir = (rating: FlashcardRating) => onRate(rating);
+  // İlk giriş ipucu bayrağı (prop → paylaşılan değer); jest dokunuşu da ipucuyu bitirir.
+  const ipucu = useDerivedValue(() => teaser, [teaser]);
+  const ipucuBitti = () => onTeaserEnd?.();
 
   const pan = Gesture.Pan()
     .enabled(pending == null)
     .activeOffsetX([-14, 14])
     .failOffsetY([-28, 28])
+    .onBegin(() => {
+      // İpucu salınımı sürüyorsa parmak kazanır; dokunuş ipucuyu görülmüş sayar.
+      if (ipucu.value) {
+        cancelAnimation(tx);
+        cancelAnimation(ty);
+        scheduleOnRN(ipucuBitti);
+      }
+    })
+    .onFinalize((_e, success) => {
+      // Jest başlamadan bitti (dokunma/çevirme): kesilen ipucu konumunu yerine getir. Başarılı jestte onEnd karar verdi.
+      if (!success && tx.value !== 0) {
+        tx.value = withSpring(0, { damping: 18, stiffness: 180 });
+        ty.value = withSpring(0, { damping: 18, stiffness: 180 });
+      }
+    })
     .onUpdate((e) => {
       tx.value = e.translationX;
       ty.value = e.translationY * 0.2;
@@ -387,6 +413,33 @@ export function FlashcardDeck({
         ty.set(0);
       }
     },
+  );
+
+  // İlk giriş ipucu: bekle → sağa (ton + rozet görünür) → sola → yerine. Kaydırma eşiğinin altında kalır,
+  // puan düşmez. `prop → paylaşılan değer` kalıbı (effect yok); kesilirse `done=false`, yine de bitti sayılır.
+  useAnimatedReaction(
+    () => ipucu.value,
+    (cur, prev) => {
+      if (!cur || cur === prev) return;
+      if (reduce) {
+        scheduleOnRN(ipucuBitti);
+        return;
+      }
+      const mesafe = esik * 0.45;
+      const adim = { duration: motion.exit.ms * 2 };
+      ty.set(0);
+      tx.set(
+        withDelay(
+          700,
+          withSequence(
+            withTiming(mesafe, adim),
+            withDelay(260, withTiming(-mesafe, { duration: motion.exit.ms * 3 })),
+            withDelay(260, withSpring(0, { damping: 16, stiffness: 150 }, () => scheduleOnRN(ipucuBitti))),
+          ),
+        ),
+      );
+    },
+    [reduce, esik],
   );
 
   const kartStili = useAnimatedStyle(() => ({

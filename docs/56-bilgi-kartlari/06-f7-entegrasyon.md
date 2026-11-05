@@ -85,6 +85,17 @@ geçiriyor; AI'yı ayrıca dışlamak kapıyı güçlendirmiyor, yalnız 28 tık
 soruyor, CLAUDE.md istisna metni ve 05-f6 güncellendi. İnsan incelemesi kaldırılmadı: kapı ve "tuzak/olumsuz
 iddiayı insan okur" notu kart ayrıntısında duruyor.
 
+## 3e. İlk giriş kaydırma ipucu (6 Kas)
+
+Kullanıcı isteği: kartların sağa-sola kaydırılabildiğini ilk kez girene göstermek. Çözüm: `FlashcardDeck`
+`teaser` prop'u — ilk kart 700 ms sonra eşiğin %45'i kadar sağa (yeşil kenar + "Biliyorum" rozeti), sonra sola
+(kırmızı + "Tekrar"), sonra yaylanarak yerine döner; puan düşmez (eşiğin altında). Dokunuş salınımı keser
+(`onBegin` → `cancelAnimation`), jest başlamadan biterse `onFinalize` kartı yerine getirir. Hareket azaltmada
+oynamaz. Görüldü bayrağı cihazda `local.flashcards-swipe-hint-seen` (`src/lib/swipe-hint-seen.ts`, intro-seen
+kalıbı); oynayınca ya da dokunulunca bir daha gösterilmez. Simülatörde doğrulandı: salınım kenar/rozet/arka
+kartı tetikliyor, dokunuş çevirip yerine getiriyor. Görüldü bayrağının ikinci açılışı susturması cihazda ayrıca
+denenmedi (bayrak sıfırlanamadı; kalıp intro-seen ile aynı).
+
 ## 4. Yapılmayan / sıradaki
 
 - **Cihaz testi (Expo):** simülatörde temel akış doğrulandı; gerçek cihazda jest hissi, SE boyutu ve uçak
