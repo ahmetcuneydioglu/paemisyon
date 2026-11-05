@@ -7,14 +7,20 @@ import type {
 
 /** Geçici hata: ağ, 503/429/5xx, 55P03 geri çekilmesi tükendi. Sonraki koşu aynı imleçten sürer. */
 export class HubTemporaryError extends Error {
-  constructor(message: string, readonly status?: number) {
+  constructor(
+    message: string,
+    readonly status?: number,
+  ) {
     super(message);
     this.name = 'HubTemporaryError';
   }
 }
 /** Kalıcı hata: 401/404/4xx. İnsan müdahalesi gerekir; yeniden denemek anlamsızdır. */
 export class HubPermanentError extends Error {
-  constructor(message: string, readonly status?: number) {
+  constructor(
+    message: string,
+    readonly status?: number,
+  ) {
     super(message);
     this.name = 'HubPermanentError';
   }
@@ -80,7 +86,11 @@ export class HubSyncClient {
     return (await res.json()) as T;
   }
 
-  private async requestRaw(method: 'GET' | 'POST', path: string, body?: unknown): Promise<Response> {
+  private async requestRaw(
+    method: 'GET' | 'POST',
+    path: string,
+    body?: unknown,
+  ): Promise<Response> {
     let attempt = 0;
     for (;;) {
       let res: Response;
@@ -106,17 +116,26 @@ export class HubSyncClient {
           await this.sleep(this.backoff[attempt++]);
           continue;
         }
-        throw new HubTemporaryError(`Merkeze ulaşılamadı (${method} ${path}): ${(e as Error).message}`);
+        throw new HubTemporaryError(
+          `Merkeze ulaşılamadı (${method} ${path}): ${(e as Error).message}`,
+        );
       }
       if (res.ok) return res;
       if (res.status === 503 || res.status === 429 || res.status >= 500) {
         if (attempt < this.backoff.length) {
           const retryAfter = Number(res.headers.get('retry-after'));
-          await this.sleep(Number.isFinite(retryAfter) && retryAfter > 0 ? retryAfter * 1000 : this.backoff[attempt]);
+          await this.sleep(
+            Number.isFinite(retryAfter) && retryAfter > 0
+              ? retryAfter * 1000
+              : this.backoff[attempt],
+          );
           attempt += 1;
           continue;
         }
-        throw new HubTemporaryError(`Merkez geçici olarak yanıt vermiyor (${res.status}, ${method} ${path})`, res.status);
+        throw new HubTemporaryError(
+          `Merkez geçici olarak yanıt vermiyor (${res.status}, ${method} ${path})`,
+          res.status,
+        );
       }
       const text = await res.text().catch(() => '');
       throw new HubPermanentError(

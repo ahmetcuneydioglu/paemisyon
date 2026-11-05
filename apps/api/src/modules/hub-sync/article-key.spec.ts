@@ -19,7 +19,8 @@ describe('madde anahtarı köprüsü', () => {
     expect(hubKeyToArticleNo('ek geçici 2')).toBe('Ek Geçici 2');
   });
   it('gidiş-dönüş kararlıdır', () => {
-    for (const k of ['16', '4/a', 'ek 7', 'geçici 1', 'ek geçici 2']) expect(toHubArticleKey(hubKeyToArticleNo(k))).toBe(k);
+    for (const k of ['16', '4/a', 'ek 7', 'geçici 1', 'ek geçici 2'])
+      expect(toHubArticleKey(hubKeyToArticleNo(k))).toBe(k);
   });
   it('madde aralığı için sayısal çekirdek', () => {
     expect(articleKeyNumber('ek 7')).toBe(7);
