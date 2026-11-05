@@ -128,9 +128,18 @@ describe('FlashcardsService.overview', () => {
     expect(p.suggestedMode).toBe('new');
   });
 
-  it('kapsam yoksa 400', async () => {
-    const { svc } = setup();
-    await expect(svc.overview(me, {}, now)).rejects.toThrow(/Kapsam gerekli/);
+  it('kapsam yoksa tüm kartlar: etiket "Tüm kartlar", konu filtresi yok', async () => {
+    const { svc, prisma } = setup({ cards: [CARD('c1'), CARD('c2', { topicId: 't2' })] });
+    const r = await svc.overview(me, {}, now);
+    expect(r.scope).toEqual({
+      courseId: null,
+      topicId: null,
+      unitSlug: null,
+      label: 'Tüm kartlar',
+    });
+    expect(r.counts.total).toBe(2);
+    const where = prisma.flashcard.findMany.mock.calls[0][0].where;
+    expect(where.topicId).toBeUndefined();
   });
 });
 

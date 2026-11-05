@@ -29,6 +29,24 @@ describe("homeActionHref (Bugün v3 eylem → web adresi)", () => {
       homeActionHref({ ...base, type: "open_exams", route: "/denemeler" }),
     ).toBe("/denemeler");
   });
+  it("kart tekrarını /kartlar'a çevirir; bilinmeyen anahtar ve mod düşer", () => {
+    const u = new URL(
+      homeActionHref({
+        ...base,
+        type: "open_flashcards",
+        route: "/kartlar?topicId=t1&mode=due&evil=1",
+        focus: { kind: "topic", topicId: "t1", label: "Yasama" },
+      }),
+      "http://x",
+    );
+    expect(u.pathname).toBe("/kartlar");
+    expect(u.searchParams.get("topicId")).toBe("t1");
+    expect(u.searchParams.get("mode")).toBe("due");
+    expect(u.searchParams.get("source")).toBe("home_next");
+    expect(u.searchParams.get("scope")).toBe("Yasama");
+    expect(u.searchParams.has("evil")).toBe(false);
+    expect(homeActionHref({ ...base, type: "open_flashcards", route: "/kartlar?mode=bogus" })).toBe("/kartlar?mode=due&source=home_next");
+  });
   it("yarım oturumu resume ile açar", () => {
     expect(
       homeActionHref({ ...base, type: "resume_session", sessionId: "s1" }),

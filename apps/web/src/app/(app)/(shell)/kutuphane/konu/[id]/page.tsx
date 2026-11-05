@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import { BookOpen, Bookmark, XCircle } from "lucide-react";
 import { api } from "@/lib/api";
 import type { TopicRoom } from "@/lib/public-api";
+import { hasFlashcards } from "@/lib/kartlar";
 import { Badge } from "@/components/ui/badge";
 import { Breadcrumb } from "@/components/ui/breadcrumb";
 import { ButtonLink } from "@/components/ui/button";
@@ -10,6 +11,7 @@ import { SectionHeader } from "@/components/ui/section-header";
 import { CoachLine } from "@/components/rooms/coach-line";
 import { RoomStatPanel } from "@/components/rooms/room-stat-panel";
 import { ToolRow } from "@/components/rooms/tool-row";
+import { FlashcardEntry } from "@/components/kartlar/flashcard-entry";
 import { CoachRail } from "@/components/shell/coach-rail";
 import { UnitListSection } from "@/components/ozet/unit-list-section";
 import type { SummaryUnitListItem } from "@/lib/ozet";
@@ -19,8 +21,8 @@ export const dynamic = "force-dynamic";
 
 /**
  * Konu odası (Doc 49/14): kompakt durum → koç cümlesi → "Bu konuda" (yanlışlar, favoriler,
- * ilgili maddeler) → "Başla · 10 soru · <konu>" + "Yanlışları çöz". Bilgi kartları ve tur
- * geçmişi yok (karar/veri bekliyor).
+ * bilgi kartları, ilgili maddeler) → "Başla · 10 soru · <konu>" + "Yanlışları çöz". Bilgi
+ * kartları satırı (Doc 56) yalnız sunucu sayım verdiyse; tur geçmişi hâlâ yok.
  */
 export default async function KonuOdasiPage({
   params,
@@ -35,6 +37,7 @@ export default async function KonuOdasiPage({
   ]);
   if (!d) notFound();
   const t = d.topic;
+  const kartlar = hasFlashcards(d.flashcards) ? d.flashcards : null;
   const yanlis =
     d.wrongCount > 0
       ? `/seans?mode=review&topicId=${t.id}&count=${Math.min(20, d.wrongCount)}&source=topic_room&scope=${encodeURIComponent(`${t.name} · yanlışlar`)}`
@@ -108,8 +111,17 @@ export default async function KonuOdasiPage({
                 ? `/seans?mode=favorites&topicId=${t.id}&count=${Math.min(20, d.favoriteCount)}&source=topic_room&scope=${encodeURIComponent(`${t.name} · favoriler`)}`
                 : null
             }
-            divider={d.legislation != null}
+            divider={d.legislation != null || kartlar != null}
           />
+          {kartlar ? (
+            <FlashcardEntry
+              counts={kartlar}
+              scope={{ topicId: t.id }}
+              label={t.name}
+              source="topic_room"
+              divider={d.legislation != null}
+            />
+          ) : null}
           {d.legislation ? (
             <ToolRow
               icon={BookOpen}

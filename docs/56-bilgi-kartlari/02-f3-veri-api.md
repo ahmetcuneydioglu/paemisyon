@@ -24,7 +24,7 @@ Testler: 4 yeni spec, 43 test; tüm API paketi 70 spec / 696 test geçti. `typec
 
 | Uç | Gövde / sorgu | Yanıt |
 |---|---|---|
-| `GET overview?courseId\|topicId\|unitSlug` | kapsam (en az biri) | `{scope{courseId,topicId,unitSlug,label}, counts{total,new,learning,learned,due,hard,favorites,locked}, locked, suggestedMode, dailyGoal{target,done}, resume{sessionId,mode,remaining}\|null}` |
+| `GET overview?courseId\|topicId\|unitSlug` | kapsam; boş = tüm kartlar (etiket "Tüm kartlar"; Kütüphane "Kart tekrarı", 5 Kas) | `{scope{courseId,topicId,unitSlug,label}, counts{total,new,learning,learned,due,hard,favorites,locked}, locked, suggestedMode, dailyGoal{target,done}, resume{sessionId,mode,remaining}\|null}` |
 | `POST sessions` | `{scope, mode, limit?≤50, source?}` | `{sessionId, mode, scope, cards[], total, counts}`; 403 `PREMIUM_REQUIRED` (kapsamın tamamı kilitli), 404 `NO_CARDS` |
 | `GET sessions/resume` | — | taze (24 s) yarım oturum: `{sessionId, mode, scope, cursor, total, cards[]}` ya da `null` |
 | `POST sessions/:id/events` | `{clientEventId uuid, flashcardId, rating again\|known\|easy, timeSpentMs?}` | `{state, idempotent, requeued, remaining, dailyGoal}`; 409 `SESSION_COMPLETED` |

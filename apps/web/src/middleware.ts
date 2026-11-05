@@ -38,6 +38,7 @@ export async function middleware(request: NextRequest) {
     "/tasarim", // bileşen galerisi (Doc 49/11) — girişsiz 404 yerine girişe yönlendir
     "/calisma", // kanun/SEO sayfalarının girişli app-kabuğu sürümleri (rewrite hedefi)
     "/cikmis-sinav", // çıkmış sınav çalışma modu (Doc 36) — public vitrin /paem-cikmis-sorular
+    "/kartlar", // bilgi kartı oynatıcısı (Doc 56) — L3 odak
     "/kutuphane",
     "/performans",
     "/profil",
