@@ -3,7 +3,10 @@ import Link from "next/link";
 import { api } from "@/lib/api";
 import type { MyAttempt } from "@/lib/types";
 import { cn } from "@/lib/cn";
+import { kartlarHref, type FlashcardStats } from "@/lib/kartlar";
+import { ButtonLink } from "@/components/ui/button";
 import { Card, CardTitle } from "@/components/ui/card";
+import { ProgressBar } from "@/components/ui/progress";
 import { SectionHeader } from "@/components/ui/section-header";
 import { StatTile } from "@/components/ui/stat-tile";
 import { CoachRail } from "@/components/shell/coach-rail";
@@ -36,7 +39,7 @@ interface TopicProgressRow {
  * çalışma ısısı, deneme net trendi, en zayıf 3 konu → konu haritasına derinleşme.
  */
 export default async function PerformansPage() {
-  const [summary, topics, attempts, activity] = await Promise.all([
+  const [summary, topics, attempts, activity, kartlar] = await Promise.all([
     api<Summary>("/progress/summary"),
     api<TopicProgressRow[]>("/progress/topics").catch(
       () => [] as TopicProgressRow[],
@@ -45,7 +48,13 @@ export default async function PerformansPage() {
     api<{ date: string; questionsAnswered: number }[]>(
       "/progress/activity?days=84",
     ).catch(() => [] as { date: string; questionsAnswered: number }[]),
+    // Bilgi kartları (Doc 56 aşama 5): kartlar kapalıysa 404 → blok yok.
+    api<FlashcardStats>("/me/flashcards/stats").catch(() => null),
   ]);
+  const kart =
+    kartlar && (kartlar.counts.total > 0 || kartlar.counts.locked > 0)
+      ? kartlar
+      : null;
   const maxDay = activity.reduce((m, d) => Math.max(m, d.questionsAnswered), 0);
   const weeks: { date: string; questionsAnswered: number }[][] = [];
   for (let i = 0; i < activity.length; i += 7)
@@ -88,6 +97,96 @@ export default async function PerformansPage() {
           />
           <StatTile label="Tur" value={summary.totalSessions} />
         </div>
+
+        {kart ? (
+          <Card className="flex flex-col gap-4">
+            <div className="flex flex-wrap items-center justify-between gap-3">
+              <CardTitle>Bilgi kartları</CardTitle>
+              {kart.counts.due > 0 ? (
+                <ButtonLink
+                  href={kartlarHref({}, "due", "study_hub", "Kart tekrarı")}
+                  size="sm"
+                >
+                  Tekrara başla · {kart.counts.due}
+                </ButtonLink>
+              ) : null}
+            </div>
+            <div className="grid grid-cols-3 gap-3">
+              <StatTile
+                label="Öğrenildi"
+                value={`${kart.counts.learned}/${kart.counts.total}`}
+                progress={
+                  kart.counts.total > 0
+                    ? kart.counts.learned / kart.counts.total
+                    : undefined
+                }
+                tone="success"
+              />
+              <StatTile
+                label="Tekrar"
+                value={kart.counts.due}
+                unit="kart"
+                hint={kart.counts.due > 0 ? "vadesi geldi" : "kuyruk temiz"}
+                tone={kart.counts.due > 0 ? "warning" : "accent"}
+              />
+              <StatTile
+                label="Bugün"
+                value={`${kart.dailyGoal.done}/${kart.dailyGoal.target}`}
+                hint={
+                  kart.last30.knownPct != null
+                    ? `30 günde %${kart.last30.knownPct} hatırlama`
+                    : "henüz ölçülmedi"
+                }
+                progress={
+                  kart.dailyGoal.target > 0
+                    ? Math.min(1, kart.dailyGoal.done / kart.dailyGoal.target)
+                    : undefined
+                }
+              />
+            </div>
+            <ul className="flex flex-col">
+              {kart.courses.map((k, i) => (
+                <li
+                  key={k.courseId}
+                  className={cn(
+                    "flex items-center gap-3 py-2.5",
+                    i < kart.courses.length - 1 && "border-b border-line",
+                  )}
+                >
+                  <span className="flex min-w-0 flex-1 flex-col gap-1">
+                    <span className="type-subhead text-ink">{k.courseName}</span>
+                    <span className="type-body-sm tabular text-ink-subtle">
+                      {k.total > 0
+                        ? `${k.learned}/${k.total} öğrenildi${k.due > 0 ? ` · ${k.due} tekrar` : ""}`
+                        : `${k.locked} kart · Premium ile açılır`}
+                    </span>
+                    {k.total > 0 ? (
+                      <ProgressBar
+                        value={k.learned / k.total}
+                        tone="success"
+                        height={3}
+                        label={`${k.courseName} öğrenildi`}
+                      />
+                    ) : null}
+                  </span>
+                  {k.total > 0 ? (
+                    <Link
+                      href={kartlarHref(
+                        { courseId: k.courseId },
+                        k.due > 0 ? "due" : "all",
+                        "study_hub",
+                        k.courseName,
+                      )}
+                      className="tk-interactive inline-flex h-9 shrink-0 items-center rounded-control border border-line px-3 text-[13px] font-semibold text-ink-soft hover:border-ink-soft hover:text-ink"
+                    >
+                      {k.due > 0 ? `Tekrar · ${k.due}` : "Çalış"}
+                    </Link>
+                  ) : null}
+                </li>
+              ))}
+            </ul>
+          </Card>
+        ) : null}
 
         {maxDay > 0 ? (
           <Card className="flex flex-col gap-3">

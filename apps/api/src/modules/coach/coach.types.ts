@@ -36,6 +36,8 @@ export type CoachCardType =
   | 'plan_offer'
   /** Kampanya duyurusu (Doc 52 F2 `createInAppBanner`): kutudaki okunmamış duyuru koç kartı olarak. */
   | 'announcement'
+  /** Vadesi gelen bilgi kartları (Doc 56). */
+  | 'flashcards_due'
   | 'motivation';
 
 /**
@@ -179,6 +181,11 @@ export interface CoachContext {
   volume: { last7: number; prev7: number };
   /** Haftalık plan özeti (Doc 49/12 F8-A); plan yoksa null. */
   plan: PlanBrief | null;
+  /**
+   * Bilgi kartları (Doc 56): vadesi gelen kart, bugün çalışılan (geri alınmamış, tekil) kart ve
+   * günlük kart hedefi. Bayrak kapalı ve rol yoksa null — kural ve rota susar.
+   */
+  flashcards: { due: number; reviewedToday: number; dailyGoal: number } | null;
 }
 
 /** Kural: saf fonksiyon — tetiklenmezse null. Yenisini eklemek = yeni dosya. */

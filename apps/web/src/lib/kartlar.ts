@@ -86,6 +86,15 @@ export interface FlashcardSessionSummary {
   dailyGoal: DailyGoal;
 }
 
+/** Performans bloğu (`GET /me/flashcards/stats`): kapsamsız sayımlar, ders dağılımı, son 7 gün, 30 günlük oran. */
+export interface FlashcardStats {
+  counts: ModeCounts;
+  dailyGoal: DailyGoal;
+  last30: { reviewed: number; known: number; knownPct: number | null };
+  last7: { date: string; reviewed: number; known: number }[];
+  courses: { courseId: string; courseName: string; total: number; learned: number; learning: number; due: number; locked: number }[];
+}
+
 /** Oda yanıtındaki sayım (`course-room.tools.flashcards`, konu satırı, `topic-room.flashcards`); null = satır çizilmez. */
 export interface FlashcardRoomCounts {
   count: number;

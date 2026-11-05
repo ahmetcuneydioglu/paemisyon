@@ -36,7 +36,7 @@ export interface TodayTaskAction {
 }
 
 /* ── Bugün v3 (Doc 49/16): tek adım + rota + senin için; karar sunucuda (API coach/home-v3.types.ts). ── */
-export type NextStepKind = "exam" | "resume" | "summary_then_questions" | "questions" | "review" | "done";
+export type NextStepKind = "exam" | "resume" | "summary_then_questions" | "questions" | "review" | "flashcards" | "done";
 export interface NextStep {
   kind: NextStepKind;
   eyebrow: string;

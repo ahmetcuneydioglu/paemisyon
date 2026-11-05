@@ -410,6 +410,8 @@ export interface MeProfile {
   dailyGoal: number;
   /** Günlük çalışma süresi hedefi, dk (Doc 49 S1-D); null = seçilmedi. */
   dailyMinutes: number | null;
+  /** Günlük kart hedefi (Doc 56); null = kartlar bu kullanıcıya kapalı, eski sunucuda yok. */
+  flashcardDailyGoal?: number | null;
   targetExamDate: string | null;
   memberSince: string | null;
   roles: string[];
@@ -561,6 +563,8 @@ export type NextStepKind =
   | "summary_then_questions"
   | "questions"
   | "review"
+  /** Kart tekrarı (Doc 56): soru hedefi dolmuş, vadesi gelen kart var. */
+  | "flashcards"
   | "done";
 export interface NextStep {
   kind: NextStepKind;

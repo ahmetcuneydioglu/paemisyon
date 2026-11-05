@@ -24,6 +24,11 @@ export const TAZE_OTURUM_MS = 24 * 3_600_000;
 export const GERI_AL_PENCERESI_MS = 10 * 60_000;
 
 /** Kullanıcı ayarı sınırları. */
+/** Kapı: bayrak açık ya da admin/beta rolü (bayrak kapalıyken ön erişim — mobilAnasayfaV2 kalıbı). */
+export function flashcardsAcik(anahtar: boolean, roles: readonly string[]): boolean {
+  return anahtar || roles.includes('admin') || roles.includes('beta');
+}
+
 export const GUNLUK_KART_HEDEFI_MIN = 5;
 export const GUNLUK_KART_HEDEFI_MAX = 200;
 

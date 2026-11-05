@@ -22,6 +22,8 @@ export type DeepLinkTarget =
   | 'membership'
   | 'notifications'
   | 'settings_notifications'
+  /** Bilgi kartları (Doc 56): vadesi gelen kartlar; mobil sözlüğü `flashcards`. */
+  | 'flashcards'
   | 'home';
 
 export type DeepLink = { target: DeepLinkTarget; params?: Record<string, string> };
@@ -39,6 +41,12 @@ const SLUG = /^[a-z0-9-]{1,80}$/;
 
 export const DEEP_LINKS: Record<DeepLinkTarget, Entry> = {
   home: { route: () => '', webPath: () => '/bugun', minAppVersion: '2.0.0' },
+  // Kart ekranı 2.1.0 ile mağazaya çıkar; eski uygulama kutuya düşer (apps/app deep-links.ts `flashcards`).
+  flashcards: {
+    route: () => 'flashcards',
+    webPath: () => '/kartlar?mode=due&source=notif',
+    minAppVersion: '2.1.0',
+  },
   daily_question: {
     route: () => 'daily-quiz',
     webPath: () => '/seans?mode=daily&source=notif',

@@ -20,6 +20,7 @@ import { postExamRule } from './post-exam.rule';
 import { aftermathRule } from './aftermath.rule';
 import { planOfferRule } from './plan-offer.rule';
 import { planWeekRule } from './plan-week.rule';
+import { flashcardsDueRule } from './flashcards-due.rule';
 
 export { motivationRule } from './motivation.rule';
 
@@ -34,6 +35,7 @@ export const coachRules: CoachRule[] = [
   postExamRule,
   goalRemainingRule,
   quickReviewRule,
+  flashcardsDueRule,
   weakTopicRule,
   courseTrendRule,
   dailyQuizRule,

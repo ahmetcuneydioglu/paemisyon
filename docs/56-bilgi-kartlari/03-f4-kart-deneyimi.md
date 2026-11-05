@@ -69,7 +69,7 @@ kapalı). Aşama 7'de beta rolüyle cihaz + web göz testi.
 
 ## 6. Sıradaki (aşama 5)
 
-Modlar zaten sunucuda; aşama 5 = günlük hedef ayarı (`PATCH preferences`, profil), Bugün rotası
+~~Yapıldı (5 Kas): `04-f5-akilli-ogrenme.md`.~~ Modlar zaten sunucuda; aşama 5 = günlük hedef ayarı (`PATCH preferences`, profil), Bugün rotası
 `open_flashcards` kalemi ve "Senin için" `flashcards_due` (sunucu üretir), bildirim preset'i
 (`NotificationsService.enqueue`, Doc 52), Performans bloğu, koç dalları + spec, seri entegrasyonu.
 Expo tarafında dev build + cihaz testi (SE / Pro Max) ilk iş.

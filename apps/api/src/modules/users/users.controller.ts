@@ -31,6 +31,7 @@ import {
   PERSONAL_EXAM_MAX_QUESTIONS,
 } from '../../common/plan.constants';
 import { gunAnahtari, gunBaslangici } from '../../common/gun';
+import { flashcardsEnabledFor } from '../flashcards/kart-sorgular';
 import {
   OKUMA_KAYDI_TAVAN_SN,
   calismaSaniyesi,
@@ -334,10 +335,14 @@ export class UsersController {
 
   @Get()
   async me(@CurrentUser() user: AuthenticatedUser) {
-    const profile = await this.prisma.user.findUnique({
-      where: { id: user.id },
-      include: { entitlement: true, preferredModule: { select: { id: true, name: true } } },
-    });
+    const [profile, kartlarAcik] = await Promise.all([
+      this.prisma.user.findUnique({
+        where: { id: user.id },
+        include: { entitlement: true, preferredModule: { select: { id: true, name: true } } },
+      }),
+      // Bilgi kartları kapısı (Doc 56): kapalıysa hedef alanı null → istemci ayar satırını çizmez.
+      flashcardsEnabledFor(this.prisma, user.id),
+    ]);
     return {
       id: user.id,
       email: user.email,
@@ -348,6 +353,8 @@ export class UsersController {
       preferredModule: profile?.preferredModule ?? null,
       dailyGoal: profile?.dailyGoal ?? 20,
       dailyMinutes: profile?.dailyMinutes ?? null,
+      /** Günlük kart hedefi (Doc 56); değişiklik PATCH /me/flashcards/preferences ile. null = kartlar kapalı. */
+      flashcardDailyGoal: kartlarAcik ? (profile?.flashcardDailyGoal ?? 20) : null,
       targetExamDate: profile?.targetExamDate?.toISOString().slice(0, 10) ?? null,
       memberSince: profile?.createdAt?.toISOString() ?? null,
       roles: user.roles,

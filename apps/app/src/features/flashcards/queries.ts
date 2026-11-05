@@ -1,5 +1,6 @@
 import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
 import { api } from "@/lib/api";
+import { homeKeys } from "@/features/home/queries";
 
 /**
  * Bilgi kartları (Doc 56) — tipler backend `flashcards.service.ts` yanıtlarıyla birebir; web
@@ -94,8 +95,18 @@ export interface FlashcardSessionSummary {
 
 export type FlashcardSource = "course_room" | "topic_room" | "study_hub" | "home_next" | "home_route" | "home_for_you" | "notif" | "summary";
 
+/** Performans bloğu (`GET /me/flashcards/stats`): kapsamsız sayımlar, ders dağılımı, son 7 gün, 30 günlük oran. */
+export interface FlashcardStats {
+  counts: ModeCounts;
+  dailyGoal: DailyGoal;
+  last30: { reviewed: number; known: number; knownPct: number | null };
+  last7: { date: string; reviewed: number; known: number }[];
+  courses: { courseId: string; courseName: string; total: number; learned: number; learning: number; due: number; locked: number }[];
+}
+
 export const flashcardKeys = {
   all: ["flashcards"] as const,
+  stats: ["flashcards", "stats"] as const,
   overview: (s: FlashcardScope) => ["flashcards", "overview", s.unitSlug ?? null, s.topicId ?? null, s.courseId ?? null] as const,
   bookmarks: ["flashcards", "bookmarks"] as const,
 };
@@ -119,7 +130,26 @@ export const flashcardsApi = {
   bookmarks: () => api<Flashcard[]>("/me/flashcards/bookmarks"),
   setBookmark: (flashcardId: string, on: boolean) => api<{ bookmarked: boolean }>(`/me/flashcards/bookmarks/${flashcardId}`, { method: on ? "POST" : "DELETE" }),
   preferences: (body: { dailyGoal?: number }) => api<{ dailyGoal: DailyGoal }>("/me/flashcards/preferences", { method: "PATCH", body }),
+  stats: () => api<FlashcardStats>("/me/flashcards/stats"),
 };
+
+/** Performans bloğu; kartlar kapalıyken 404 → hata, blok çizilmez (yeniden deneme yok). */
+export function useFlashcardStats() {
+  return useQuery({ queryKey: flashcardKeys.stats, queryFn: flashcardsApi.stats, retry: false, staleTime: 30_000 });
+}
+
+/** Günlük kart hedefi (Ben › Ayarlar); profil, Bugün ve kart sorguları tazelenir. */
+export function useSetFlashcardDailyGoal() {
+  const qc = useQueryClient();
+  return useMutation({
+    mutationFn: (dailyGoal: number) => flashcardsApi.preferences({ dailyGoal }),
+    onSuccess: () => {
+      void qc.invalidateQueries({ queryKey: homeKeys.me });
+      void qc.invalidateQueries({ queryKey: homeKeys.brief });
+      void qc.invalidateQueries({ queryKey: flashcardKeys.all });
+    },
+  });
+}
 
 export function useFlashcardOverview(scope: FlashcardScope | null) {
   return useQuery({

@@ -81,6 +81,7 @@ describe('CoachService.setFocus', () => {
         {} as never,
         { ozet: async () => null } as never,
         { recipeForTopic: async () => null } as never,
+        { enabledFor: async () => false } as never,
       ),
       prisma,
     };
