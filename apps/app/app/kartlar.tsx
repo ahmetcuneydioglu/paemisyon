@@ -191,6 +191,38 @@ export default function KartlarScreen() {
     }
   }
 
+  // İlerlemeyi sıfırla (Doc 56 §3g): onay → sunucu kapsamdaki SRS durumunu siler (favoriler ve geçmiş kalır)
+  // → aynı kapsamda "Tüm kartlar" turu baştan açılır (sıfırlanınca her kart yenidir; "vade" modu boş kalırdı).
+  function sifirlamayiSor() {
+    setMenuOpen(false);
+    Alert.alert("Bilgi kartlarını sıfırla", `${label} için öğrenildi ve tekrar ilerlemesi sıfırlanacak. Favoriler ve puanlama geçmişin korunur. Devam edilsin mi?`, [
+      { text: "Vazgeç", style: "cancel" },
+      { text: "Sıfırla", style: "destructive", onPress: () => void sifirla() },
+    ]);
+  }
+  async function sifirla() {
+    setPhase("loading");
+    try {
+      await flashcardsApi.resetProgress(scope);
+      void qc.invalidateQueries({ queryKey: flashcardKeys.all });
+      void qc.invalidateQueries({ queryKey: roomKeys.all });
+      const s = await flashcardsApi.start({ scope, mode: "all", ...(source ? { source } : {}) });
+      setSession(s);
+      setCards(s.cards);
+      setIndex(0);
+      setFlipped(false);
+      setPending(null);
+      setSonOlay(null);
+      setTally({ known: 0, again: 0, learned: 0 });
+      setResult(null);
+      shownAt.current = saat.simdi();
+      setPhase("playing");
+    } catch (e) {
+      setError(baslatmaHatasi(e));
+      setPhase("error");
+    }
+  }
+
   function leave() {
     void qc.invalidateQueries({ queryKey: roomKeys.all });
     void qc.invalidateQueries({ queryKey: flashcardKeys.all });
@@ -312,7 +344,8 @@ export default function KartlarScreen() {
 
       <Sheet visible={menuOpen} onClose={() => setMenuOpen(false)} title="Kartlar">
         <ListRow title="Şimdilik bitir" subtitle="Puanladıkların kaydedilir, özet gösterilir" chevron={false} onPress={() => { setMenuOpen(false); if (session) void bitir(session.sessionId); }} />
-        <ListRow title="Turdan çık" subtitle="Kalan kartlara kaldığın yerden dönersin" chevron={false} divider={false} onPress={() => { setMenuOpen(false); leave(); }} />
+        <ListRow title="Turdan çık" subtitle="Kalan kartlara kaldığın yerden dönersin" chevron={false} onPress={() => { setMenuOpen(false); leave(); }} />
+        <ListRow title="İlerlemeyi sıfırla" subtitle={`${label}: öğrenildi ve tekrar durumu silinir, favoriler korunur`} chevron={false} divider={false} onPress={sifirlamayiSor} />
         <Button title="Vazgeç" variant="secondary" onPress={() => setMenuOpen(false)} />
       </Sheet>
 

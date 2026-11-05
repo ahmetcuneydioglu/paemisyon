@@ -113,6 +113,16 @@ Yerel E2E: web'den "Cevap hatalı" → 201, simülatörden "Mevzuat güncel değ
 listeledi, "Çözüldü" → `audit_logs` + `app_events` satırı; kart ayrıntısında rozet göründü. Testler: flashcards 48 +
 admin 11. Prod'da migration deploy ile gider; preset `paused` doğar, bildirim göndermek için panelden açılmalı.
 
+## 3g. İlerlemeyi sıfırla (6 Kas)
+
+Kullanıcı isteği (örnek uygulamadaki "Bilgi Kartlarını Sıfırla" uyarısı): oynatıcının "…" menüsüne
+**İlerlemeyi sıfırla** eklendi (mobil: sayfa + yerel onay uyarısı, "Sıfırla" kırmızı; web: menü + onay
+diyaloğu). Sunucu `POST /me/flashcards/progress/reset` (gövde kapsam; boş = tüm kartlar): kapsamdaki
+kartların `flashcard_reviews` satırları silinir (hepsi "yeni"ye döner), **favoriler ve puanlama geçmişi
+(`events`, seri, günlük hedef) korunur**, açık oturumlar kapatılır. İstemci ardından aynı kapsamda "Tüm
+kartlar" turunu baştan açar (sıfırlanmış kapsamda "vade" modu boş kalırdı). Yerel E2E: web ve simülatörde
+onay → 201 → tur 1/20'den; DB'de review 0, favori ve olay sayısı aynı. Birim: `resetProgress` testi (22/22).
+
 ## 4. Yapılmayan / sıradaki
 
 - **Cihaz testi (Expo):** simülatörde temel akış doğrulandı; gerçek cihazda jest hissi, SE boyutu ve uçak

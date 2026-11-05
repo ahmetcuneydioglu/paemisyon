@@ -463,4 +463,21 @@ describe('Aşama 5 — seri, olay, istatistik', () => {
     prisma.flashcard.findFirst.mockResolvedValue(null);
     await expect(svc.report(user, 'yok', 'kart yok')).rejects.toThrow('Kart bulunamadı');
   });
+
+  it('ilerleme sıfırlama: kapsamdaki kartların review satırları silinir, açık oturum kapanır, favoriler dokunulmaz', async () => {
+    const { svc, prisma } = setup({ cards: [CARD('c1'), CARD('c2')] });
+    prisma.flashcardReview.deleteMany.mockResolvedValue({ count: 2 });
+    const user = { id: 'u1', roles: [], isPremium: false } as never;
+    const r = await svc.resetProgress(user, { topicId: 't1' });
+    expect(r.reset).toBe(2);
+    expect(r.scope.label).toBe('Temel Haklar');
+    expect(prisma.flashcardReview.deleteMany).toHaveBeenCalledWith({
+      where: { userId: 'u1', flashcardId: { in: ['c1', 'c2'] } },
+    });
+    expect(prisma.flashcardSession.updateMany).toHaveBeenCalledWith(
+      expect.objectContaining({ where: { userId: 'u1', completedAt: null } }),
+    );
+    expect(prisma.flashcardBookmark.deleteMany).not.toHaveBeenCalled();
+    expect(prisma.flashcardReviewEvent.findMany).not.toHaveBeenCalled();
+  });
 });

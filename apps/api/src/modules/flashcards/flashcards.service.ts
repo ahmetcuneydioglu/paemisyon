@@ -715,6 +715,38 @@ export class FlashcardsService {
   }
 
   /**
+   * İlerlemeyi sıfırla (Doc 56 §3g): kapsamdaki kartların SRS durumu (`flashcard_reviews`) silinir →
+   * hepsi "yeni"ye döner; favoriler ve puanlama geçmişi (`events`, seri/günlük hedef) KORUNUR. Açık
+   * oturumlar kapatılır (kuyruk eski duruma bakıyordu). Kapsamsız çağrı tüm kartları sıfırlar.
+   */
+  async resetProgress(user: AuthenticatedUser, scope: FlashcardScopeDto, now = new Date()) {
+    await this.assertEnabled(user);
+    const s = await this.resolveScope(scope);
+    const cards = await this.prisma.flashcard.findMany({
+      where: {
+        ...(s.topicIds ? { topicId: { in: s.topicIds } } : {}),
+        ...(s.unitId ? { summaryUnitId: s.unitId } : {}),
+        deletedAt: null,
+      },
+      select: { id: true },
+    });
+    const ids = cards.map((c) => c.id);
+    const deleted = ids.length
+      ? await this.prisma.flashcardReview.deleteMany({
+          where: { userId: user.id, flashcardId: { in: ids } },
+        })
+      : { count: 0 };
+    await this.prisma.flashcardSession.updateMany({
+      where: { userId: user.id, completedAt: null },
+      data: { completedAt: now },
+    });
+    return {
+      reset: deleted.count,
+      scope: { courseId: s.courseId, topicId: s.topicId, unitSlug: s.unitSlug, label: s.label },
+    };
+  }
+
+  /**
    * Kart hata bildirimi (Doc 56 §3f): yayındaki karta; aynı kullanıcının aynı karta AÇIK bildirimi
    * varsa tekrarlamaz (`alreadyReported`). Soru bildirimiyle aynı sözleşme; panelde kuyruğa düşer.
    */

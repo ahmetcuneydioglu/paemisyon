@@ -114,6 +114,10 @@ export function FlashcardPlayer({
   const [exitAsk, setExitAsk] = useState(false);
   // Hata bildir (Doc 56 §3f): kart üstündeki bayrak → diyalog; neden + isteğe bağlı açıklama, tur yerinde kalır.
   const [reportOpen, setReportOpen] = useState(false);
+  // İlerlemeyi sıfırla (Doc 56 §3g): onay diyaloğu → sunucu kapsamdaki SRS durumunu siler (favoriler ve geçmiş
+  // kalır) → aynı kapsamda "Tüm kartlar" turu baştan açılır (sıfırlanınca her kart yenidir).
+  const [resetAsk, setResetAsk] = useState(false);
+  const [resetBusy, setResetBusy] = useState(false);
   const [reportReason, setReportReason] = useState<string | null>(null);
   const [reportText, setReportText] = useState("");
   const [reportState, setReportState] = useState<"idle" | "busy" | "done" | "already" | "error">("idle");
@@ -197,6 +201,34 @@ export function FlashcardPlayer({
     },
     [],
   );
+
+  async function sifirla() {
+    setResetBusy(true);
+    try {
+      await apiClient("/me/flashcards/progress/reset", { method: "POST", body: scope });
+      const s = await apiClient<FlashcardSession>("/me/flashcards/sessions", {
+        method: "POST",
+        body: { scope, mode: "all", ...(source ? { source } : {}) },
+      });
+      setSession(s);
+      setCards(s.cards);
+      setIndex(0);
+      setFlipped(false);
+      setPending(null);
+      setSonOlay(null);
+      setTally({ known: 0, again: 0, learned: 0 });
+      setResult(null);
+      shownAt.current = saat.simdi();
+      setResetAsk(false);
+      setPhase("playing");
+    } catch (e) {
+      setResetAsk(false);
+      setError(baslatmaHatasi(e));
+      setPhase("error");
+    } finally {
+      setResetBusy(false);
+    }
+  }
 
   /* ---------------- Puanlama ---------------- */
   /** Düğme/klavye: kartı aynı yönde uçur; geçiş bitince `kaydet`. Reduce-motion'da hemen. */
@@ -454,6 +486,17 @@ export function FlashcardPlayer({
                 <span className="type-subhead text-ink">Turdan çık</span>
                 <span className="type-body-sm text-ink-subtle">Kalan kartlara kaldığın yerden dönersin</span>
               </Link>
+              <button
+                type="button"
+                onClick={() => {
+                  close();
+                  setResetAsk(true);
+                }}
+                className="tk-interactive flex min-h-11 flex-col items-start justify-center rounded-control px-3 py-1.5 text-left hover:bg-surface-alt"
+              >
+                <span className="type-subhead text-danger-ink">İlerlemeyi sıfırla</span>
+                <span className="type-body-sm text-ink-subtle">{etiket}: öğrenildi ve tekrar durumu silinir, favoriler korunur</span>
+              </button>
             </div>
           )}
         </Popover>
@@ -581,6 +624,25 @@ export function FlashcardPlayer({
             {reportState === "error" ? <Notice tone="error">Gönderilemedi; yeniden dene.</Notice> : null}
           </div>
         )}
+      </Dialog>
+
+      <Dialog
+        open={resetAsk}
+        onClose={() => (resetBusy ? undefined : setResetAsk(false))}
+        title="Bilgi kartlarını sıfırla"
+        size="sm"
+        footer={
+          <div className="flex flex-wrap justify-end gap-2">
+            <Button variant="ghost" onClick={() => setResetAsk(false)} disabled={resetBusy}>
+              Vazgeç
+            </Button>
+            <Button variant="destructive" onClick={() => void sifirla()} loading={resetBusy} disabled={resetBusy}>
+              Sıfırla
+            </Button>
+          </div>
+        }
+      >
+        <p className="type-body text-ink-soft">{etiket} için öğrenildi ve tekrar ilerlemesi sıfırlanacak. Favoriler ve puanlama geçmişin korunur. Devam edilsin mi?</p>
       </Dialog>
 
       <Dialog
