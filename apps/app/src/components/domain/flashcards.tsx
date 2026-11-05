@@ -1,4 +1,4 @@
-import { AlertTriangle, Bookmark, Check, ChevronRight, Clock, Hash, Layers, Lightbulb, Lock, RotateCcw, Shuffle, Sparkles, Undo2, type LucideIcon } from "lucide-react-native";
+import { AlertTriangle, Bookmark, Check, ChevronRight, Clock, Flag, Hash, Layers, Lightbulb, Lock, RotateCcw, Shuffle, Sparkles, Undo2, type LucideIcon } from "lucide-react-native";
 import type { ReactNode } from "react";
 import { Pressable, ScrollView, StyleSheet, View, useWindowDimensions, type StyleProp, type ViewStyle } from "react-native";
 import { Gesture, GestureDetector } from "react-native-gesture-handler";
@@ -181,6 +181,7 @@ export function FlashCard({
   flipped,
   onFlip,
   onBookmark,
+  onReport,
   onArticle,
   onSolve,
   height,
@@ -190,6 +191,8 @@ export function FlashCard({
   flipped: boolean;
   onFlip: () => void;
   onBookmark?: () => void;
+  /** Hata bildir (Doc 56 §3f): favorinin yanında bayrak; sayfa açılır, turdan çıkılmaz. */
+  onReport?: () => void;
   onArticle?: (no: string, legislationSlug: string | null) => void;
   /** "Bu konudan soru çöz" köprüsü (arka yüz). */
   onSolve?: () => void;
@@ -224,7 +227,7 @@ export function FlashCard({
     >
       {/* Ön yüz */}
       <Animated.View style={[face, { justifyContent: "space-between" }, frontStyle]} pointerEvents={flipped ? "none" : "auto"}>
-        <KartBaslik badge={<FlashcardKindBadge kind={card.kind} />} kapsam={kapsam} bookmarked={card.bookmarked} onBookmark={onBookmark} />
+        <KartBaslik badge={<FlashcardKindBadge kind={card.kind} />} kapsam={kapsam} bookmarked={card.bookmarked} onBookmark={onBookmark} onReport={onReport} />
         <View style={{ paddingVertical: space.s3 }}>
           <AppText variant="title" style={{ textAlign: "center", ...stemSize(card.front) }}>
             {card.front}
@@ -237,7 +240,7 @@ export function FlashCard({
 
       {/* Arka yüz */}
       <Animated.View style={[face, backStyle]} pointerEvents={flipped ? "auto" : "none"}>
-        <KartBaslik badge={<Badge tone="success">Cevap</Badge>} kapsam={kapsam} bookmarked={card.bookmarked} onBookmark={onBookmark} />
+        <KartBaslik badge={<Badge tone="success">Cevap</Badge>} kapsam={kapsam} bookmarked={card.bookmarked} onBookmark={onBookmark} onReport={onReport} />
         <ScrollView style={{ flex: 1, marginTop: space.s3 }} contentContainerStyle={{ gap: space.s3, paddingBottom: space.s2 }} showsVerticalScrollIndicator={false}>
           <AppText variant="heading" style={{ fontSize: 20, lineHeight: 27 }}>
             {card.back}
@@ -269,8 +272,8 @@ export function FlashCard({
   );
 }
 
-/** Kart üst satırı: tür/cevap rozeti + kapsam etiketi solda, favori (44 pt) sağda. */
-function KartBaslik({ badge, kapsam, bookmarked, onBookmark }: { badge: ReactNode; kapsam: string; bookmarked: boolean; onBookmark?: () => void }) {
+/** Kart üst satırı: tür/cevap rozeti + kapsam etiketi solda, hata bildir + favori (44 pt) sağda. */
+function KartBaslik({ badge, kapsam, bookmarked, onBookmark, onReport }: { badge: ReactNode; kapsam: string; bookmarked: boolean; onBookmark?: () => void; onReport?: () => void }) {
   const { colors, space } = useTheme();
   return (
     <View style={{ flexDirection: "row", alignItems: "flex-start", justifyContent: "space-between", gap: space.s2 }}>
@@ -280,6 +283,17 @@ function KartBaslik({ badge, kapsam, bookmarked, onBookmark }: { badge: ReactNod
           {kapsam}
         </AppText>
       </View>
+      {onReport ? (
+        <Pressable
+          accessibilityRole="button"
+          accessibilityLabel="Hata bildir"
+          onPress={onReport}
+          hitSlop={6}
+          style={({ pressed }) => ({ width: tokenSize.touchTarget, height: tokenSize.touchTarget, alignItems: "center", justifyContent: "center", marginTop: -10, opacity: pressed ? 0.6 : 1 })}
+        >
+          <Flag color={colors.inkSoft} size={20} strokeWidth={1.75} />
+        </Pressable>
+      ) : null}
       <Pressable
         accessibilityRole="button"
         accessibilityLabel={bookmarked ? "Favorilerden çıkar" : "Favorilere ekle"}
@@ -308,6 +322,7 @@ export function FlashcardDeck({
   pending,
   height,
   onBookmark,
+  onReport,
   onArticle,
   onSolve,
   teaser = false,
@@ -323,6 +338,7 @@ export function FlashcardDeck({
   pending: FlashcardRating | null;
   height: number;
   onBookmark?: () => void;
+  onReport?: () => void;
   onArticle?: (no: string, legislationSlug: string | null) => void;
   onSolve?: () => void;
   /**
@@ -470,7 +486,7 @@ export function FlashcardDeck({
       </Animated.View>
       <GestureDetector gesture={pan}>
         <Animated.View style={[{ position: "absolute", left: 0, right: 0, top: 16, height }, kartStili]}>
-          <FlashCard key={card.id} card={card} flipped={flipped} onFlip={onFlip} onBookmark={onBookmark} onArticle={onArticle} onSolve={onSolve} height={height} />
+          <FlashCard key={card.id} card={card} flipped={flipped} onFlip={onFlip} onBookmark={onBookmark} onReport={onReport} onArticle={onArticle} onSolve={onSolve} height={height} />
           {/* Kenar tonu ve köşe rozeti: kaydırma mesafesiyle orantılı; metin eşlik eder. */}
           <Animated.View pointerEvents="none" style={[StyleSheet.absoluteFill, { borderRadius: radius.card, backgroundColor: colors.successSoft }, bilinenTon]} />
           <Animated.View pointerEvents="none" style={[StyleSheet.absoluteFill, { borderRadius: radius.card, backgroundColor: colors.dangerSoft }, tekrarTon]} />

@@ -136,6 +136,12 @@ export default function FlashcardsPage() {
         </div>
       )}
 
+      {stats.data && stats.data.openReports > 0 && (
+        <Link href="/reports?kind=flashcards" className="mb-4 flex items-center justify-between rounded-lg border border-amber-200 bg-amber-50 px-4 py-2 text-sm text-amber-900 hover:bg-amber-100">
+          <span>🚩 {stats.data.openReports} açık kullanıcı bildirimi var — kartları incele</span>
+          <span className="text-xs">Hata Bildirimleri › Bilgi kartları →</span>
+        </Link>
+      )}
       <div className="mb-6 grid grid-cols-2 gap-3 sm:grid-cols-5">
         <Stat label="Yayında" value={stats.data?.published ?? '—'} tone="emerald" />
         <Stat label="İncelemede" value={stats.data?.inReview ?? '—'} tone="amber" />

@@ -6,7 +6,7 @@ import { Ellipsis } from "lucide-react-native";
 import { useEffect, useRef, useState } from "react";
 import { Alert, ScrollView, useWindowDimensions, View } from "react-native";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
-import { FlashcardDeck, FlashcardResultPanel, RatingBar, SessionTopRow, UndoStrip } from "@/components/domain";
+import { FlashcardDeck, FlashcardResultPanel, RatingBar, ReportSheet, SessionTopRow, UndoStrip } from "@/components/domain";
 import { ArticlePeekSheet } from "@/components/domain/summary";
 import { AppText, Button, IconButton, ListRow, Notice, ProgressBar, Sheet, Skeleton } from "@/components/ui";
 import { FLASHCARD_MODE, flashcardKeys, flashcardsApi, sessionLine, type Flashcard, type FlashcardMode, type FlashcardRating, type FlashcardSession, type FlashcardSessionSummary, type FlashcardSource } from "@/features/flashcards/queries";
@@ -55,6 +55,8 @@ export default function KartlarScreen() {
   const [queuedNote, setQueuedNote] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
   const [peek, setPeek] = useState<{ no: string; slug: string } | null>(null);
+  // Hata bildir (Doc 56 §3f): kart üstündeki bayrak; sayfa açılır, tur ve kart yerinde kalır.
+  const [reportOpen, setReportOpen] = useState(false);
   const [result, setResult] = useState<FlashcardSessionSummary | null>(null);
   const shownAt = useRef(0);
   const undoTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
@@ -291,6 +293,7 @@ export default function KartlarScreen() {
             onRate={kaydet}
             height={kartYuksekligi}
             onBookmark={toggleBookmark}
+            onReport={() => setReportOpen(true)}
             onArticle={(no, slug) => slug && setPeek({ no, slug })}
             onSolve={() => soruCoz(card)}
             teaser={teaser}
@@ -313,6 +316,7 @@ export default function KartlarScreen() {
         <Button title="Vazgeç" variant="secondary" onPress={() => setMenuOpen(false)} />
       </Sheet>
 
+      {card ? <ReportSheet target={{ kind: "flashcard", id: card.id }} visible={reportOpen} onClose={() => setReportOpen(false)} /> : null}
       <ArticlePeekSheet lawSlug={peek?.slug ?? ""} no={peek?.no ?? null} title={null} onClose={() => setPeek(null)} onReadFull={(no) => { const slug = peek?.slug; setPeek(null); if (slug) router.push({ pathname: "/oku/[slug]", params: { slug, madde: no } }); }} />
     </View>
   );

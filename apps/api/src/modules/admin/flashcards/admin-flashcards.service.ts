@@ -8,6 +8,7 @@ import { Prisma } from '@prisma/client';
 import { PrismaService } from '../../../infra/prisma/prisma.service';
 import type { AuthenticatedUser } from '../../auth/auth.types';
 import { AuditService } from '../audit.service';
+import { AppEventsService } from '../../notifications/app-events.service';
 import { sentetikMi } from '../questions/kaynak-turu';
 import { loadArticleMap } from '../../summaries/ozet-ice-aktar';
 import { normalizeCounterNumbers } from '../../summaries/ozet-dogrulayici';
@@ -70,6 +71,8 @@ const DETAIL_SELECT = {
   publishedBy: true,
   createdBy: true,
   legislation: { select: { id: true, slug: true, name: true, shortName: true } },
+  /// Açık kullanıcı bildirimi sayısı (Doc 56 §3f) — kart ayrıntısında rozet.
+  _count: { select: { reports: { where: { status: 'open' } } } },
 } satisfies Prisma.FlashcardSelect;
 
 type DetailRow = Prisma.FlashcardGetPayload<{ select: typeof DETAIL_SELECT }>;
@@ -141,6 +144,7 @@ export class AdminFlashcardsService {
   constructor(
     private readonly prisma: PrismaService,
     private readonly audit: AuditService,
+    private readonly events: AppEventsService,
   ) {}
 
   // ── Liste ──
@@ -185,7 +189,7 @@ export class AdminFlashcardsService {
 
   /** Beş sayaç (Figma 163:1306): yayında, incelemede, eskimiş, mevzuat kontrolü bekleyen, toplam. */
   async stats() {
-    const [byStatus, stale, pendingVerification, needsRefresh] = await Promise.all([
+    const [byStatus, stale, pendingVerification, needsRefresh, openReports] = await Promise.all([
       this.prisma.flashcard.groupBy({
         by: ['status'],
         where: { deletedAt: null },
@@ -208,6 +212,7 @@ export class AdminFlashcardsService {
           verificationStatus: 'needs_refresh',
         },
       }),
+      this.prisma.flashcardReport.count({ where: { status: 'open' } }),
     ]);
     const n = (s: string) => byStatus.find((r) => r.status === s)?._count._all ?? 0;
     return {
@@ -219,6 +224,7 @@ export class AdminFlashcardsService {
       stale,
       pendingVerification,
       needsRefresh,
+      openReports,
     };
   }
 
@@ -258,6 +264,7 @@ export class AdminFlashcardsService {
       counterNumbers: card.counterNumbers,
       verifiedAt: card.verifiedAt,
       legislation: card.legislation,
+      openReportCount: card._count.reports,
       articles: sortedRefs(card.articles).map((r) => {
         const a = byNo.get(r.lawArticle.articleNo);
         return {
@@ -568,6 +575,78 @@ export class AdminFlashcardsService {
       skipped,
     });
     return { published, skipped };
+  }
+
+  // ── Kullanıcı hata bildirimleri (Doc 56 §3f) ──
+
+  /** Panel kuyruğu: bildirim + kart ön yüzü + konu + bildiren. Soru bildirimi listesiyle aynı şekil. */
+  async reportsList(status: 'open' | 'resolved' | 'dismissed' = 'open', page = 1) {
+    const pageSize = 20;
+    const where = { status };
+    const [items, total] = await Promise.all([
+      this.prisma.flashcardReport.findMany({
+        where,
+        orderBy: { createdAt: 'desc' },
+        skip: (page - 1) * pageSize,
+        take: pageSize,
+        include: {
+          user: { select: { email: true } },
+          flashcard: {
+            select: {
+              id: true,
+              front: true,
+              status: true,
+              topic: { select: { name: true, course: { select: { name: true } } } },
+            },
+          },
+        },
+      }),
+      this.prisma.flashcardReport.count({ where }),
+    ]);
+    return {
+      items: items.map((r) => ({
+        id: r.id,
+        flashcardId: r.flashcard.id,
+        front: r.flashcard.front,
+        cardStatus: r.flashcard.status,
+        topicName: r.flashcard.topic.name,
+        courseName: r.flashcard.topic.course.name,
+        message: r.message,
+        reporterEmail: r.user.email,
+        status: r.status,
+        createdAt: r.createdAt,
+      })),
+      total,
+      page,
+      pageSize,
+    };
+  }
+
+  /** Bildirimi kapat: çözüldü (kart düzeltildi) ya da yok sayıldı; bildiren adaya olay gider. */
+  async setReportStatus(actor: AuthenticatedUser, id: string, status: 'resolved' | 'dismissed') {
+    const report = await this.prisma.flashcardReport.findUnique({ where: { id } });
+    if (!report) throw new NotFoundException('Bildirim bulunamadı.');
+    await this.prisma.flashcardReport.update({
+      where: { id },
+      data: { status, resolvedBy: actor.id, resolvedAt: new Date() },
+    });
+    await this.audit.log(actor, `flashcard_report.${status}`, 'flashcard', report.flashcardId, {
+      reportId: id,
+    });
+    void this.events.emit('flashcard_report_resolved', report.userId, {
+      entityType: 'flashcard_report',
+      entityId: id,
+      payload: {
+        reportId: id,
+        flashcardId: report.flashcardId,
+        outcome: status,
+        sonuc:
+          status === 'resolved'
+            ? 'Teşekkürler: bildirdiğin kart düzeltildi, yeni hâlini görebilirsin.'
+            : 'İnceledik: kartta değişiklik gerekmedi. Bildirdiğin için teşekkürler.',
+      },
+    });
+    return { id, status };
   }
 
   async setVerification(actor: AuthenticatedUser, id: string, dto: VerificationDto) {

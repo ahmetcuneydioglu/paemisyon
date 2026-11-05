@@ -65,6 +65,10 @@ function setup(
       count: jest.fn().mockResolvedValue(0),
       findFirst: jest.fn().mockResolvedValue(null),
     },
+    flashcardReport: {
+      findFirst: jest.fn().mockResolvedValue(null),
+      create: jest.fn().mockResolvedValue({ id: 'r1' }),
+    },
     flashcardBookmark: {
       findMany: jest.fn().mockResolvedValue(o.bookmarks ?? []),
       upsert: jest.fn(),
@@ -440,5 +444,23 @@ describe('Aşama 5 — seri, olay, istatistik', () => {
     expect(r.last7[6]).toMatchObject({ reviewed: 2, known: 1 });
     expect(r.courses.map((c) => c.courseName)).toEqual(['Anayasa Hukuku', 'PVSK']);
     expect(r.courses[1]).toMatchObject({ total: 0, locked: 1 });
+  });
+
+  it('hata bildirimi: yayındaki karta yazılır; aynı karta açık bildirim varsa tekrarlamaz; kart yoksa 404', async () => {
+    const { svc, prisma } = setup();
+    const user = { id: 'u1', roles: [] } as never;
+    prisma.flashcard.findFirst.mockResolvedValue({ id: 'c1' });
+    const r1 = await svc.report(user, 'c1', 'Doğru cevap hatalı — 550 olmalı');
+    expect(r1).toEqual({ id: 'r1', alreadyReported: false });
+    expect(prisma.flashcardReport.create).toHaveBeenCalledWith({
+      data: { userId: 'u1', flashcardId: 'c1', message: 'Doğru cevap hatalı — 550 olmalı' },
+      select: { id: true },
+    });
+    prisma.flashcardReport.findFirst.mockResolvedValueOnce({ id: 'r1' });
+    const r2 = await svc.report(user, 'c1', 'yine');
+    expect(r2).toEqual({ id: 'r1', alreadyReported: true });
+    expect(prisma.flashcardReport.create).toHaveBeenCalledTimes(1);
+    prisma.flashcard.findFirst.mockResolvedValue(null);
+    await expect(svc.report(user, 'yok', 'kart yok')).rejects.toThrow('Kart bulunamadı');
   });
 });

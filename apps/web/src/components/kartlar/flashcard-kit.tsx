@@ -5,6 +5,7 @@ import {
   Bookmark,
   Check,
   ChevronRight,
+  Flag,
   Hash,
   Lightbulb,
   RotateCcw,
@@ -103,6 +104,7 @@ export function FlashCard({
   flipped,
   onFlip,
   onBookmark,
+  onReport,
   solveHref,
   className,
 }: {
@@ -110,6 +112,8 @@ export function FlashCard({
   flipped: boolean;
   onFlip: () => void;
   onBookmark?: () => void;
+  /** Hata bildir (Doc 56 §3f): favorinin yanında bayrak; diyalog açılır, tur yerinde kalır. */
+  onReport?: () => void;
   /** "Bu konudan soru çöz" köprüsü (arka yüz). */
   solveHref?: string;
   className?: string;
@@ -128,7 +132,7 @@ export function FlashCard({
           onClick={(e) => yuzeyTiklamasi(e) && onFlip()}
           className={cn(yuz, "cursor-pointer justify-between")}
         >
-          <KartBaslik badge={<FlashcardKindBadge kind={card.kind} />} kapsam={kapsam} bookmarked={card.bookmarked} onBookmark={onBookmark} />
+          <KartBaslik badge={<FlashcardKindBadge kind={card.kind} />} kapsam={kapsam} bookmarked={card.bookmarked} onBookmark={onBookmark} onReport={onReport} />
           <p className={cn("text-balance py-3 text-center text-ink", uzun ? "type-heading" : "type-title")}>{card.front}</p>
           <div className="flex justify-center">
             <Button variant="ghost" size="sm" onClick={onFlip} tabIndex={flipped ? -1 : 0}>
@@ -144,7 +148,7 @@ export function FlashCard({
           onClick={(e) => yuzeyTiklamasi(e) && onFlip()}
           className={cn(yuz, "kart-yuz-arka cursor-pointer")}
         >
-          <KartBaslik badge={<Badge tone="success">Cevap</Badge>} kapsam={kapsam} bookmarked={card.bookmarked} onBookmark={onBookmark} />
+          <KartBaslik badge={<Badge tone="success">Cevap</Badge>} kapsam={kapsam} bookmarked={card.bookmarked} onBookmark={onBookmark} onReport={onReport} />
           <div className="flex max-h-[55dvh] min-h-0 flex-1 flex-col gap-3 overflow-y-auto">
             <p className="type-heading text-ink">{card.back}</p>
             {card.explanation ? (
@@ -187,17 +191,19 @@ export function FlashCard({
   );
 }
 
-/** Kart üst satırı: tür/cevap rozeti + kapsam etiketi solda, favori (44 px) sağda. */
+/** Kart üst satırı: tür/cevap rozeti + kapsam etiketi solda, hata bildir + favori (44 px) sağda. */
 function KartBaslik({
   badge,
   kapsam,
   bookmarked,
   onBookmark,
+  onReport,
 }: {
   badge: ReactNode;
   kapsam: string;
   bookmarked: boolean;
   onBookmark?: () => void;
+  onReport?: () => void;
 }) {
   return (
     <div className="flex items-start justify-between gap-2">
@@ -205,6 +211,17 @@ function KartBaslik({
         {badge}
         <span className="type-label truncate text-ink-subtle">{kapsam}</span>
       </div>
+      {onReport ? (
+        <button
+          type="button"
+          onClick={onReport}
+          aria-label="Hata bildir"
+          title="Hata bildir"
+          className="tk-interactive -mt-2 flex size-11 shrink-0 items-center justify-center rounded-control text-ink-soft hover:bg-surface-alt"
+        >
+          <Flag size={20} strokeWidth={1.75} aria-hidden />
+        </button>
+      ) : null}
       {onBookmark ? (
         <button
           type="button"

@@ -96,6 +96,23 @@ kalıbı); oynayınca ya da dokunulunca bir daha gösterilmez. Simülatörde do�
 kartı tetikliyor, dokunuş çevirip yerine getiriyor. Görüldü bayrağının ikinci açılışı susturması cihazda ayrıca
 denenmedi (bayrak sıfırlanamadı; kalıp intro-seen ile aynı).
 
+## 3f. Kart hata bildirimi (6 Kas)
+
+Kullanıcı isteği: kart üstünde, favorinin yanında "hata bildir". Soru bildirimi `question_reports`'a bağlı
+olduğu için kartlar için ayrı kayıt kuruldu; Soru Merkezi iletim alanları yok (kart bizim üretimimiz).
+
+| Katman | Değişiklik |
+|---|---|
+| DB | `flashcard_reports` (kart, kullanıcı, mesaj, durum, çözen, tarihler); migration `20261106000000_bilgi_karti_bildirimleri`. |
+| API | `POST /me/flashcards/:id/report` (yayındaki kart; aynı kullanıcının açık bildirimi varsa `alreadyReported`). Admin: `GET /admin/flashcards/reports?status&page`, `POST /admin/flashcards/reports/:id/status` (`:id` yollarından önce). Kart ayrıntısında `openReportCount`, istatistikte `openReports`. Çözüm `flashcard_report.<status>` audit'i + `flashcard_report_resolved` olayı; preset aynı adla (`question_report` kategorisi, `paused` doğar, panelden açılır; derin bağlantı `flashcards`). |
+| Panel | Hata Bildirimleri sayfası iki sekme: Sorular · Bilgi kartları (`?kind=flashcards`); kart satırı kart ayrıntısına bağlanır. Kart listesinde açık bildirim şeridi, kart ayrıntısında "🚩 N açık bildirim" rozeti. |
+| Mobil | Kart başlığında bayrak (44 pt); `ReportSheet` `target` ile genelleşti (soru/kart nedenleri: cevap hatalı, mevzuat güncel değil, soru belirsiz, yazım hatası); kart kodu kimliğin ilk 8 hanesi. |
+| Web | Aynı bayrak; oynatıcıda neden listesi + açıklama diyaloğu, tur yerinde kalır. |
+
+Yerel E2E: web'den "Cevap hatalı" → 201, simülatörden "Mevzuat güncel değil" → 201; panel Kartlar sekmesi ikisini
+listeledi, "Çözüldü" → `audit_logs` + `app_events` satırı; kart ayrıntısında rozet göründü. Testler: flashcards 48 +
+admin 11. Prod'da migration deploy ile gider; preset `paused` doğar, bildirim göndermek için panelden açılmalı.
+
 ## 4. Yapılmayan / sıradaki
 
 - **Cihaz testi (Expo):** simülatörde temel akış doğrulandı; gerçek cihazda jest hissi, SE boyutu ve uçak

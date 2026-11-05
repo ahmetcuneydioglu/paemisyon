@@ -132,6 +132,11 @@ export default function FlashcardDetailPage() {
             <StatusBadge status={d.status} />
             <KindBadge kind={d.kind} />
             {d.staleSince && <span className="rounded-full bg-red-100 px-2 py-0.5 text-xs text-red-700">eskimiş · {fmt(d.staleSince)}</span>}
+            {d.openReportCount > 0 && (
+              <Link href="/reports?kind=flashcards" className="rounded-full bg-amber-100 px-2 py-0.5 text-xs text-amber-800 hover:bg-amber-200" title="Kullanıcı hata bildirimi; Hata Bildirimleri › Bilgi kartları">
+                🚩 {d.openReportCount} açık bildirim
+              </Link>
+            )}
             {d.status !== 'archived' && (
               <button
                 onClick={() => {

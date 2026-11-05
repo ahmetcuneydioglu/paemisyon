@@ -7,6 +7,7 @@ import {
   IsUUID,
   Max,
   MaxLength,
+  MinLength,
   Min,
   ValidateNested,
 } from 'class-validator';
@@ -80,4 +81,13 @@ export class FlashcardPreferencesDto {
   @Min(GUNLUK_KART_HEDEFI_MIN)
   @Max(GUNLUK_KART_HEDEFI_MAX)
   dailyGoal?: number;
+}
+
+/** POST /me/flashcards/:id/report — kart hata bildirimi (soru bildirimi DTO'suyla aynı sınırlar). */
+export class ReportFlashcardDto {
+  /// "Neden — açıklama" biçiminde kullanıcı metni.
+  @IsString()
+  @MinLength(5)
+  @MaxLength(500)
+  message!: string;
 }

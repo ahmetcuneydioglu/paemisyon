@@ -714,6 +714,29 @@ export class FlashcardsService {
       .map((id) => this.toPublic(byId.get(id)!, true, rById.get(id) ?? null, now));
   }
 
+  /**
+   * Kart hata bildirimi (Doc 56 §3f): yayındaki karta; aynı kullanıcının aynı karta AÇIK bildirimi
+   * varsa tekrarlamaz (`alreadyReported`). Soru bildirimiyle aynı sözleşme; panelde kuyruğa düşer.
+   */
+  async report(user: AuthenticatedUser, flashcardId: string, message: string) {
+    await this.assertEnabled(user);
+    const card = await this.prisma.flashcard.findFirst({
+      where: { id: flashcardId, status: 'published', deletedAt: null },
+      select: { id: true },
+    });
+    if (!card) throw new NotFoundException('Kart bulunamadı');
+    const existing = await this.prisma.flashcardReport.findFirst({
+      where: { userId: user.id, flashcardId, status: 'open' },
+      select: { id: true },
+    });
+    if (existing) return { id: existing.id, alreadyReported: true };
+    const report = await this.prisma.flashcardReport.create({
+      data: { userId: user.id, flashcardId, message },
+      select: { id: true },
+    });
+    return { id: report.id, alreadyReported: false };
+  }
+
   async addBookmark(user: AuthenticatedUser, flashcardId: string) {
     await this.assertEnabled(user);
     const card = await this.prisma.flashcard.findFirst({

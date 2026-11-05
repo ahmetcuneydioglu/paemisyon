@@ -754,6 +754,8 @@ export interface FlashcardStats {
   stale: number;
   pendingVerification: number;
   needsRefresh: number;
+  /** Açık kullanıcı hata bildirimi (Doc 56 §3f). */
+  openReports: number;
 }
 
 export interface FlashcardDerivedNumber {
@@ -772,6 +774,8 @@ export interface FlashcardDetail extends FlashcardListItem {
   articles: (FlashcardArticleRef & { text: string | null; currentVersionNo: number | null })[];
   validation: { ok: boolean; issues: string[]; lines: string[] };
   gate: { canPublish: boolean; reasons: string[] };
+  /** Bu karta açık kullanıcı bildirimi sayısı (Doc 56 §3f). */
+  openReportCount: number;
   history: {
     id: string;
     action: string;

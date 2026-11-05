@@ -219,6 +219,7 @@ model User {
   flashcardEvents      FlashcardReviewEvent[]
   flashcardBookmarks   FlashcardBookmark[]
   flashcardSessions    FlashcardSession[]
+  flashcardReports     FlashcardReport[]
   studyPlans           StudyPlan[]
   questionReports      QuestionReport[]
   badges               UserBadge[]
@@ -837,6 +838,7 @@ model Flashcard {
   reviews     FlashcardReview[]
   events      FlashcardReviewEvent[]
   bookmarks   FlashcardBookmark[]
+  reports     FlashcardReport[]
 
   @@index([topicId, status, sortOrder])
   @@index([summaryUnitId])
@@ -1409,6 +1411,26 @@ model QuestionReport {
   @@index([questionId])
   @@index([hubForwardedAt])
   @@map("question_reports")
+}
+
+/// Bilgi kartı hata bildirimi (Doc 56 §3f, 6 Kas 2026): soru bildiriminin kart eşi. Kart bizim
+/// üretimimiz olduğundan Soru Merkezi iletim alanları yoktur; düzeltme panelde yapılır.
+model FlashcardReport {
+  id          String       @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  flashcardId String       @map("flashcard_id") @db.Uuid
+  userId      String       @map("user_id") @db.Uuid
+  message     String
+  status      ReportStatus @default(open)
+  resolvedBy  String?      @map("resolved_by") @db.Uuid
+  createdAt   DateTime     @default(now()) @map("created_at")
+  resolvedAt  DateTime?    @map("resolved_at")
+
+  flashcard Flashcard @relation(fields: [flashcardId], references: [id], onDelete: Cascade)
+  user      User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([status, createdAt])
+  @@index([flashcardId])
+  @@map("flashcard_reports")
 }
 
 enum ReportStatus {

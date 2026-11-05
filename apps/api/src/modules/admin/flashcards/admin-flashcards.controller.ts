@@ -70,6 +70,28 @@ export class AdminFlashcardsController {
     });
   }
 
+  // ── Kullanıcı hata bildirimleri (Doc 56 §3f) — ':id' yollarından ÖNCE (yol çakışması) ──
+  @Get('reports')
+  @Roles('admin', 'editor')
+  reports(
+    @Query('status') status?: 'open' | 'resolved' | 'dismissed',
+    @Query('page') page?: string,
+  ) {
+    return this.flashcards.reportsList(status ?? 'open', page ? Number(page) : 1);
+  }
+
+  @Post('reports/:id/status')
+  @Roles('admin', 'editor')
+  setReportStatus(
+    @CurrentUser() actor: AuthenticatedUser,
+    @Param('id', ParseUUIDPipe) id: string,
+    @Body('status') status: 'resolved' | 'dismissed',
+  ) {
+    if (status !== 'resolved' && status !== 'dismissed')
+      throw new BadRequestException("status 'resolved' veya 'dismissed' olmalı.");
+    return this.flashcards.setReportStatus(actor, id, status);
+  }
+
   @Post('publish-many')
   @Roles('admin')
   publishMany(@CurrentUser() actor: AuthenticatedUser, @Body() dto: PublishManyDto) {

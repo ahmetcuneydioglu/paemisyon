@@ -128,6 +128,8 @@ export const flashcardsApi = {
   undo: (sessionId: string, clientEventId: string) => api<{ state: CardState; idempotent: boolean }>(`/me/flashcards/sessions/${sessionId}/events/${clientEventId}/undo`, { method: "POST" }),
   complete: (sessionId: string) => api<FlashcardSessionSummary>(`/me/flashcards/sessions/${sessionId}/complete`, { method: "POST" }),
   bookmarks: () => api<Flashcard[]>("/me/flashcards/bookmarks"),
+  /** Kart hata bildirimi (Doc 56 §3f): aynı karta açık bildirim varsa `alreadyReported`. */
+  report: (flashcardId: string, message: string) => api<{ id: string; alreadyReported: boolean }>(`/me/flashcards/${flashcardId}/report`, { method: "POST", body: { message } }),
   setBookmark: (flashcardId: string, on: boolean) => api<{ bookmarked: boolean }>(`/me/flashcards/bookmarks/${flashcardId}`, { method: on ? "POST" : "DELETE" }),
   preferences: (body: { dailyGoal?: number }) => api<{ dailyGoal: DailyGoal }>("/me/flashcards/preferences", { method: "PATCH", body }),
   stats: () => api<FlashcardStats>("/me/flashcards/stats"),
