@@ -375,6 +375,19 @@ export function FlashcardDeck({
     [reduce, cikis, sure, bitir],
   );
 
+  // Üst kart değişince konumu sıfırla (effect yok): uçan kartın tx'i sarmalayıcıda kalıyordu,
+  // yeni kart ekran dışında açılıyor ve yalnız arkadaki sade kart görünüyordu (simülatör, 5 Kas).
+  const kimlik = useDerivedValue(() => card.id);
+  useAnimatedReaction(
+    () => kimlik.value,
+    (cur, prev) => {
+      if (prev != null && cur !== prev) {
+        tx.value = 0;
+        ty.value = 0;
+      }
+    },
+  );
+
   const kartStili = useAnimatedStyle(() => ({
     transform: [{ translateX: tx.value }, { translateY: ty.value }, { rotateZ: `${interpolate(tx.value, [-width, 0, width], [-8, 0, 8])}deg` }],
   }));

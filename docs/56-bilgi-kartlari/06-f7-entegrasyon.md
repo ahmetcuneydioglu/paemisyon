@@ -41,10 +41,44 @@ Aşama 1–6 PR #19 ile main'de (5 Kas 02:24 UTC); bu belge o kodun lokal doğru
 
 İkisi de commit edilmedi (bu oturumun çalışma ağacında).
 
+## 3b. Expo — simülatör turu (5 Kas, ikinci tur)
+
+Düzenek: `expo run:ios --no-install` (CocoaPods Ruby 4 kodlama hatası → `pod install` atlandı, Pods zaten
+güncel), iPhone 17 simülatörü; `.env.local` geçici olarak `http://192.168.1.170:3007/api/v1` (Mac LAN IP'si,
+telefon da aynı Metro/API'ye bağlansın diye), Metro `--host lan` :8085 (launch.json `expo-metro`; 8081–8084
+başka oturumların eski Metro'larıydı). Giriş: yerel admin hesabı (bayrak kapalı, rolle geçti).
+
+| Senaryo | Sonuç |
+|---|---|
+| `paemisyon://kartlar?mode=all` derin bağlantısı → oynatıcı 1/20 | ✓ |
+| Dokunarak çevirme (ön → cevap, md 75 çipi, "Bu konudan soru çöz") | ✓ |
+| Sağa kaydırma → `known` olayı DB'de, 2/20 | ✓ olay yazıldı, **ama yeni kart görünmedi (kusur 3)** |
+| "Tekrar" düğmesi → kart kuyruğa döner (3/21), "Tekrar işaretlendi · Geri al" şeridi | ✓ (düzeltmeden sonra) |
+| Bugün rotası "Kart tekrarı · 1 kart · kuyruk temiz" tamamlandı işareti | ✓ |
+| Metro uyarısı | `[Reanimated] Dependencies should only be used on the web` — `useDerivedValue`/`useAnimatedReaction` bağımlılık dizileri (flashcards.tsx); zararsız, temizlenebilir. |
+
+3. **Kaydırma sonrası yeni kart ekran dışında kalıyordu.** `FlashcardDeck`'te uçan kartın `tx/ty` paylaşılan
+   değeri sarmalayıcıda yaşıyor; `FlashCard` `key={card.id}` ile yenileniyor ama sarmalayıcı `translateX =
+   1,25 × genişlik`'te kalıyordu → yalnız arkadaki sade kart (rozetli) görünüyordu. Web'de aynı kusur yok
+   (ayrı CSS). Düzeltme: `useAnimatedReaction` ile kart kimliği değişince `tx/ty = 0` (UI iş parçacığı,
+   effect yok). Simülatörde kaydırma ve düğme yollarıyla doğrulandı. Aşama 4'te jest cihazda denenmemişti.
+
+Telefon: Debug dev client `xcodebuild` ile derlendi (takım 3U4QPG9Q82, `SENTRY_DISABLE_AUTO_UPLOAD=true`),
+`devicectl` ile kuruldu ve Metro :8085'e açıldı; göz testi kullanıcıda.
+
+## 3c. Telefon turu ve giriş noktası kararı (6 Kas)
+
+Telefon (iPhone 16 Pro Max, dev client) prod API'ye bağlandı; gerçek Bugün ve Çalış doğrulandı. Kullanıcı
+bulgusu: kartların girişi "Konu oku" sayfasının içinde, bulunması zor. **Karar: ders sayfasına beşinci
+kutu** ("Bilgi kartları", tam genişlik, üçüncü satır). Kutu yalnız sunucu `tools.flashcards` verdiğinde
+çizilir (bayrak açık + derste kart var); kilitliyse Lock ikonu + "Premium · N kart" → paywall. "Konu oku"
+alt yazısından "N kart" çıkarıldı. Simülatörde yerel API ile doğrulandı (28 kart → mod seçimi sayfası).
+Alternatif (Yanlışlarım + Favorilerim'i "Tekrar"da birleştirip 2×2 kalmak) önerildi, kullanıcı 5 kutuyu seçti.
+
 ## 4. Yapılmayan / sıradaki
 
-- **Cihaz testi (Expo):** reanimated + gesture-handler yeni dev build ister; kaydırma eşiği, jest/dokunma
-  çakışması, uçak modu kuyruğu yalnız cihazda (SE / Pro Max). Henüz build alınmadı.
+- **Cihaz testi (Expo):** simülatörde temel akış doğrulandı; gerçek cihazda jest hissi, SE boyutu ve uçak
+  modu kuyruğu kullanıcı göz testine kaldı.
 - **Üretim hattı:** `kart-girdi.ts` / `kart-uret.ts` yazılmadı; 47 ünite için türetim ayrı karar (maliyet + inceleme yükü).
 - **İki cihaz arası ilerleme, yayından kaldırılan kartın kuyruktan düşmesi:** API spec'te var, canlı denenmedi.
 - **Bayrak açma sırası:** prod'da pilot kartlar panelden tek tek yayınlanır → `beta` rolüyle canlı göz testi →

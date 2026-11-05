@@ -1,5 +1,5 @@
 import { Stack, useLocalSearchParams, useRouter } from "expo-router";
-import { BookOpen, ChevronRight, Lock, Play, RotateCcw, Star } from "lucide-react-native";
+import { BookOpen, ChevronRight, Layers, Lock, Play, RotateCcw, Star } from "lucide-react-native";
 import { useState } from "react";
 import { Pressable, View } from "react-native";
 import { CoachLine, FlashcardModeSheet, ReadingSheet, RoomStatPanel, SolveChoiceSheet, TopicActionSheet } from "@/components/domain";
@@ -52,8 +52,16 @@ export default function DersOdasiScreen() {
     konuSayfasi.open();
   };
 
-  const kartSayisi = d?.tools.flashcards?.count ?? 0;
-  const okunacak = d ? d.tools.summaryUnitCount > 0 || d.tools.legislation.length > 0 || kartSayisi > 0 : false;
+  // Bilgi kartları kendi kutusunda (6 Kas 2026 kararı: beşinci kutu, tam genişlik); "Konu oku" yalnız metin sayar.
+  // Sunucu bayrak kapalıyken ya da derste hiç kart yokken `flashcards` vermez → kutu çizilmez, dört kutu kalır.
+  const kart = d?.tools.flashcards ?? null;
+  const kartKilitli = kart != null && kart.count === 0 && kart.locked > 0;
+  const kartAltYazi = kart
+    ? kartKilitli
+      ? `Premium · ${kart.locked} kart`
+      : [`${kart.count} kart`, kart.due > 0 ? `${kart.due} tekrar bekliyor` : kart.learned > 0 ? `${kart.learned} öğrenildi` : null].filter(Boolean).join(" · ")
+    : "";
+  const okunacak = d ? d.tools.summaryUnitCount > 0 || d.tools.legislation.length > 0 : false;
 
   return (
     <View style={{ flex: 1, backgroundColor: colors.bg }}>
@@ -97,7 +105,7 @@ export default function DersOdasiScreen() {
                 <ActionTile
                   icon={BookOpen}
                   title="Konu oku"
-                  subtitle={[d.tools.summaryUnitCount > 0 ? `${d.tools.summaryUnitCount} ünite özeti` : null, d.tools.legislation.length > 0 ? "madde metni" : null, kartSayisi > 0 ? `${kartSayisi} kart` : null].filter(Boolean).join(" · ") || "Henüz okunacak metin yok"}
+                  subtitle={[d.tools.summaryUnitCount > 0 ? `${d.tools.summaryUnitCount} ünite özeti` : null, d.tools.legislation.length > 0 ? "madde metni" : null].filter(Boolean).join(" · ") || "Henüz okunacak metin yok"}
                   disabled={!okunacak}
                   onPress={okuma.open}
                 />
@@ -106,6 +114,14 @@ export default function DersOdasiScreen() {
                 <ActionTile icon={RotateCcw} title="Yanlışlarım" subtitle={d.tools.wrongCount > 0 ? `${d.tools.wrongCount} soru bekliyor` : "Açık yanlış yok"} disabled={d.tools.wrongCount === 0} onPress={() => yanlislar(null, d.tools.wrongCount)} />
                 <ActionTile icon={Star} title="Favorilerim" subtitle={d.tools.favoriteCount > 0 ? `${d.tools.favoriteCount} soru` : "Henüz favori yok"} disabled={d.tools.favoriteCount === 0} onPress={() => favoriler(null, d.tools.favoriteCount)} />
               </View>
+              {kart ? (
+                <ActionTile
+                  icon={kartKilitli ? Lock : Layers}
+                  title="Bilgi kartları"
+                  subtitle={kartAltYazi}
+                  onPress={() => (kartKilitli ? router.push("/paywall") : kartlariAc({ courseId: d.course.id }))}
+                />
+              ) : null}
             </View>
 
             <View style={{ gap: space.s2 }}>
