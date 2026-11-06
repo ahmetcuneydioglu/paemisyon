@@ -1,7 +1,7 @@
 # Doc 56 / 06 — Aşama 7: entegrasyon ve test
 
-Tarih: 5 Kasım 2026. Durum: **yerel uçtan uca turu yapıldı (web + admin + API); iki görsel kusur
-düzeltildi; cihaz testi, üretim hattı betikleri ve bayrak açma bekliyor.** Önceki: [05-f6-admin.md](05-f6-admin.md).
+Tarih: 5–6 Kasım 2026. Durum: **yerel uçtan uca tur + telefon turu yapıldı; §3b–3h özellikleri canlıda; üretim
+hattı kuruldu ve Anayasa 11 ünite denetimli olarak prod'a `in_review` yüklendi (§3i); yayın ve bayrak açma insanda.** Önceki: [05-f6-admin.md](05-f6-admin.md).
 Aşama 1–6 PR #19 ile main'de (5 Kas 02:24 UTC); bu belge o kodun lokal doğrulamasını anlatır.
 
 ## 1. Düzenek (yerel; prod'a dokunulmadı)
@@ -144,11 +144,57 @@ Yerel E2E: panelden hak 2 → web ücretsiz kullanıcı: oturum 1 kartla açıld
 puanlanınca yeni oturum 403 ve "Bugünlük hak doldu" ekranı; simülatörde (premium işareti yerel SQL ile
 kaldırıldı) mod sayfası "hakkın doldu · 5 / 2". Testler: flashcards 51/51. Yerel ayar 20'ye geri alındı.
 
+## 3i. Üretim hattı: Anayasa 11 ünite + pilot düzeltmesi (6 Kas)
+
+**Karar (kullanıcı):** üretime geçildi; parti = ünite (~28 kart). Sıra Anayasa, sonra polis mevzuatı. Eşzamanlı
+**denetim oturumu** (iki bağımsız denetçi agent + hakem; raporlar `denetim/<unitSlug>.md`, ilk satır
+`KARAR: GEÇTİ | DÜZELT (n kart)`) prod yüklemesinin kapısıdır.
+
+| Adım | Araç |
+|---|---|
+| Girdi | `docs/53-konu-ozetleri/uniteler/girdi-<slug>.json` (madde metinleri + çıkmış sorular; Doc 53 hattından hazır) + ünite özeti `uniteler/<slug>.json` (rule/numbers/trap/compare blokları hammadde). |
+| Üretim | **`scripts/kart-uret.ts <girdi> <ünite> <çıktı> [--hedef 28]`** — claude-opus-5-5, 64k çıktı, `fallbacks: 'default'`; deste başlığı betikçe (`sourceLabel` "AI bilgi kartı — <kanun> md <aralık>"); model yalnız kartları yazar. |
+| Stil kapısı | Aynı betikte: açıklamada taktik/şık/çürütme kalıpları (`karıştır|…|geçmez|listede yok|sorulursa`), arka yüzde `şık|çeldirici|diye bir … yok|listede yok|maddelerinde değil`. Yakalanan kart modele tek tur yeniden yazdırılır (arka yüz kusuru = kartın tamamı, aynı maddeden); hâlâ kusurluysa açıklama düşer / kart "ELLE BAK" işaretlenir. `--onar <girdi> <deste>`: var olan desteyi yalnız kapıdan geçirir. |
+| Betik doğrulama | `kart-dogrula-uzak.ts` (canlı madde metni). **Yeni kural:** `counterNumbers`'taki sayı mevzuatın HİÇBİR maddesinde geçmiyorsa kusur (uydurma öğe; spec eklendi). |
+| Teslim | `uretim/<unitSlug>.json` (.tmp → mv, atomik) + `uretim/<unitSlug>.dogrulama.md`. Denetim raporu GEÇTİ → `kart-yukle.ts --replace` → prod `in_review`. |
+| Yayındaki kart | **`scripts/kart-yayindaki-duzelt.ts <eski> <yeni> --kartlar 2,10,… [--kopya-sil]`** — yayındaki (çalışılmış) kartı ön yüz eşleşmesiyle yerinde günceller, ilerleme korunur; refs değişmişse reddeder. |
+
+**İstemin denetimle olgunlaşması (aynı gün, sırayla):** (a) "Ancak" istisnasını doğru kayda bağla, şık dili yasak,
+Evet/Hayır koşullu, tek soru, yetki kimdeyse o (pilot raporu) → (b) sayım kartı yasak ("maddede kaç unsur sayılır?"
+metinde geçmeyen sayı üretir; genel esaslar 2 kusur) → (c) açıklama yalnız refs'teki maddenin içeriği, taktik ve
+"X listede yok" çürütmesi yok, sayısız cevaplı kart `qa` (Kişi hakları I) → (d) stil kapısı (sosyal-ekonomik:
+kural tek başına tutmadı) → (e) tuzak ön yüzü yalnız metindeki öğeyle; kapı arka yüze; karşı örnek sayı mevzuatta
+geçmeli (Yürütme II: "teminat", "ilçe", "7 gün" uydurma tuzakları). Etkisi ölçüldü: DÜZELT sayısı 8–14 karttan
+(Yasama II, Kişi hakları II v1, sosyal-ekonomik v1) 0–2'ye (Yargı I/II, Genel esaslar v2, Kişi hakları II v2) indi.
+
+| Ünite | Kart | Denetim turu | Not |
+|---|---|---|---|
+| Yasama I (pilot, **yayında**) | 28 | DÜZELT 7 → GEÇTİ | #13 YSK yetkisi (K1); prod'daki yayındaki kartlar `kart-yayindaki-duzelt.ts --kopya-sil` ile yerinde güncellendi (ilerleme korundu; `--replace` ile yanlışlıkla yüklenen 28 in_review kopya silindi). |
+| Yasama II | 28 | DÜZELT 8 → 1 → GEÇTİ | şık dili (istem öncesi) |
+| Kişi hakları I | 28 | DÜZELT 6 → GEÇTİ | #12 md 20 kişisel veri (K1) |
+| Siyasi haklar | 25 | DÜZELT 4 → GEÇTİ | #10 md 69 yabancı yardım → temelli kapatma (K1) |
+| Yürütme I | 28 | DÜZELT 2 → GEÇTİ | md 116 ikinci dönem |
+| Yürütme II | 28 | DÜZELT 5 → 2 → GEÇTİ | uydurma öğeli tuzaklar |
+| Yargı I | 28 | DÜZELT 2 → GEÇTİ | |
+| Yargı II | 28 | GEÇTİ (ilk tur) | insan notu: #7 "Adalet Bakanlığı Müsteşarı" metne sadık, kurum 2018'de kalktı |
+| Genel esaslar (v2) | 28 | DÜZELT 2 → GEÇTİ | v1 sayım kartları yüzünden yeniden üretildi; #19 çift kalıp çıkarıldı |
+| Temel haklar rejimi (v2) | 26 | DÜZELT 4 → GEÇTİ | v1 32k'da kesilmişti; #27 çift cevap çıkarıldı |
+| Kişi hakları II (v2) | 28 | DÜZELT 2 → GEÇTİ | v1 13 kusur → yeniden üretim; v2 sınav dili 1 kart |
+| Sosyal ve ekonomik haklar (v2) | 28 | DÜZELT 2 → GEÇTİ | v1 14 kusur (md 56 "düzenler", memur grev) → yeniden üretim; v2 sınav dili 0 |
+
+Prod durumu (6 Kas akşam, sayımla doğrulandı): 11 Anayasa destesi (303 kart) `in_review`; pilot (28) yayında ve 7 düzeltme `kart-yayindaki-duzelt.ts --kopya-sil` ile yerinde işlendi (kullanıcı çalıştırdı, 28 kopya silindi). 12/12 deste denetimden GEÇTİ. Model
+maliyeti ünite başına ~11–30k giriş / 21–30k çıkış token (Opus). Yayın öncesi insan notları: Yasama II #5
+(bütçe kanunu geri gönderme yorumu), Yargı II #7 (müsteşar), Kişi hakları I #6/#19/#22/#26 "listede yok" kısaltması.
+
+**Sırada:** polis mevzuatı (PVSK 5, 3201 6, 7068 5, CMK 15 ünite) aynı hatla; PVSK/3201'de "Ek 6", "4/A" madde
+numaraları (istem bunu zaten taşıyor); `kart-dogrula-uzak` yalnız yayındaki maddeyi okur (yayında olmayan ünite
+maddesi "madde yok" sayılır).
+
 ## 4. Yapılmayan / sıradaki
 
 - **Cihaz testi (Expo):** simülatörde temel akış doğrulandı; gerçek cihazda jest hissi, SE boyutu ve uçak
   modu kuyruğu kullanıcı göz testine kaldı.
-- **Üretim hattı:** `kart-girdi.ts` / `kart-uret.ts` yazılmadı; 47 ünite için türetim ayrı karar (maliyet + inceleme yükü).
+- **Üretim hattı:** Anayasa 11 ünite bitti (§3i); polis mevzuatı 31 ünite sırada.
 - **İki cihaz arası ilerleme, yayından kaldırılan kartın kuyruktan düşmesi:** API spec'te var, canlı denenmedi.
 - **Bayrak açma sırası:** prod'da pilot kartlar panelden (tek tek ya da toplu) yayınlanır → `beta` rolüyle canlı göz testi →
   `flashcards_enabled` panelden açılır. Bildirim preset'i `flashcards_due` `paused` doğar, panelden açılır.

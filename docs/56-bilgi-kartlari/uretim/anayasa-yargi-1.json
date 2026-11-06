@@ -1,0 +1,310 @@
+{
+  "deck": {
+    "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+    "legislationSlug": "t-c-anayasasi",
+    "unitSlug": "anayasa-yargi-1",
+    "sourceLabel": "AI bilgi kartı — T.C. Anayasası md 138–153",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: anayasa-yargi-1 özeti + resmî madde metni); denetim düzeltmesi 6 Kas 2026 (2 kart)"
+  },
+  "cards": [
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Yargı yetkisinin kullanılmasında mahkemelere genelge gönderilmesini, tavsiye ve telkinde bulunulmasını yasaklayan kural hangi ilkenin parçasıdır?",
+      "back": "Mahkemelerin bağımsızlığı. Hiçbir organ, makam, merci veya kişi mahkemelere ve hakimlere emir ve talimat da veremez.",
+      "explanation": "Hakimler görevlerinde bağımsızdır. Anayasaya, kanuna ve hukuka uygun olarak vicdani kanaatlerine göre hüküm verirler. Yasama ve yürütme organları ile idare, mahkeme kararlarına uymak zorundadır; bu kararları hiçbir suretle değiştiremez, yerine getirilmesini geciktiremez. Görülmekte olan bir dava hakkında Yasama Meclisinde yargı yetkisinin kullanılmasıyla ilgili soru sorulamaz, görüşme yapılamaz, beyanda bulunulamaz.",
+      "articleRefs": [
+        "138"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Bir mahkeme ya da kadro kaldırıldığında hâkim ve savcıların hangi hakları yine de korunur?",
+      "back": "Aylık, ödenek ve diğer özlük hakları. Mahkemenin veya kadronun kaldırılması sebebiyle de olsa bunlardan yoksun kılınamazlar.",
+      "explanation": "Bu güvence hakimlik ve savcılık teminatına aittir. Aynı teminat gereği hakimler ve savcılar azlolunamaz ve kendileri istemedikçe Anayasada gösterilen yaştan önce emekliye ayrılamaz.",
+      "articleRefs": [
+        "139"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Hakimlik ve savcılık teminatında kanundaki istisnalar kimler hakkında saklı tutulmuştur?",
+      "back": "Meslekten çıkarılmayı gerektiren bir suçtan hüküm giymiş olanlar, görevini sağlık bakımından yerine getiremeyeceği kesin olarak anlaşılanlar ve meslekte kalmalarının uygun olmadığına karar verilenler.",
+      "explanation": "Teminatın kuralı şudur: Hakimler ve savcılar azlolunamaz, kendileri istemedikçe Anayasada gösterilen yaştan önce emekliye ayrılamaz ve özlük haklarından yoksun kılınamaz.",
+      "articleRefs": [
+        "139"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Hakimler ve savcılar hangi yaşa kadar hizmet görür?",
+      "back": "65 yaşını bitirinceye kadar. Askeri hakimlerin yaş haddi, yükselme ve emeklilikleri kanunda gösterilir.",
+      "explanation": "Hakimler ve savcılar, kanunda belirtilenlerden başka resmî ve özel hiçbir görev alamaz. Bu görevler adli ve idari yargıda, meslekten hakim ve savcılar eliyle yürütülür.",
+      "articleRefs": [
+        "140"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Hakimler ve savcılar idari görevleri yönünden Hâkimler ve Savcılar Kuruluna mı bağlıdır?",
+      "back": "Hayır. İdari görevleri yönünden Adalet Bakanlığına bağlıdırlar.",
+      "explanation": "Hakim ve savcı olup da adalet hizmetindeki idari görevlerde çalışanlar, hakimler ve savcılar hakkındaki hükümlere tabidir. Bunlar hakimlere ve savcılara tanınan her türlü haklardan yararlanırlar.",
+      "articleRefs": [
+        "140"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Hakimlerin ve savcıların görev yerleri, kendileri istemedikçe değiştirilemez mi?",
+      "back": "Hayır, böyle bir güvence yok. Görev yerlerinin geçici veya sürekli olarak değiştirilmesi, mahkemelerin bağımsızlığı ve hakimlik teminatı esaslarına göre kanunla düzenlenir.",
+      "explanation": "Aşağıdakiler de aynı esaslara göre kanunla düzenlenir: nitelikler, atanma, meslekte ilerleme, disiplin kovuşturması ve disiplin cezası, meslekten çıkarmayı gerektiren suçluluk veya yetersizlik halleri ve diğer özlük işleri.",
+      "articleRefs": [
+        "140"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Mahkemede duruşmanın kapalı yapılmasına hangi hallerde karar verilebilir?",
+      "back": "Ancak genel ahlakın veya kamu güvenliğinin kesin olarak gerekli kıldığı hallerde. Bu durumda duruşmanın bir kısmı veya tamamı kapalı yapılabilir.",
+      "explanation": "Kural, mahkemelerde duruşmaların herkese açık olmasıdır. Küçüklerin yargılanması hakkında kanunla özel hükümler konulur. Bütün mahkemelerin her türlü kararları gerekçeli yazılır. Davaların en az giderle ve mümkün olan süratle sonuçlandırılması da yargının görevidir.",
+      "articleRefs": [
+        "141"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Disiplin mahkemeleri dışında askerî mahkeme hangi durumda kurulabilir?",
+      "back": "Savaş halinde. Bu mahkemeler, asker kişilerin görevleriyle ilgili olarak işledikleri suçlara ait davalara bakar.",
+      "explanation": "Kural, disiplin mahkemeleri dışında askerî mahkeme kurulamamasıdır. Mahkemelerin kuruluşu, görev ve yetkileri, işleyişi ve yargılama usulleri kanunla düzenlenir.",
+      "articleRefs": [
+        "142"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Adalet hizmetlerinde araştırma, inceleme ve soruşturma işlemleri kimler eliyle yapılır?",
+      "back": "Adalet müfettişleri eliyle.",
+      "explanation": "Adalet hizmetleri ile savcıların idarî görevleri yönünden denetim Adalet Bakanlığınca yapılır. Bu denetimi adalet müfettişleri ile hâkim ve savcı mesleğinden olan iç denetçiler yürütür. Usul ve esaslar kanunla düzenlenir.",
+      "articleRefs": [
+        "144"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Anayasa Mahkemesi kaç üyeden kurulur?",
+      "back": "15 üyeden. Üyeleri Türkiye Büyük Millet Meclisi ile Cumhurbaşkanı seçer.",
+      "explanation": "Türkiye Büyük Millet Meclisi gizli oylamayla seçer: 2 üyeyi Sayıştay Genel Kurulunun, 1 üyeyi baro başkanlarının gösterdiği adaylar içinden. Cumhurbaşkanı 3 üyeyi Yargıtay, 2 üyeyi Danıştay, 3 üyeyi Yükseköğretim Kurulu adayları içinden seçer. Kalan 4 üyeyi ise üst kademe yöneticileri, serbest avukatlar, birinci sınıf hâkim ve savcılar ile Anayasa Mahkemesi raportörleri arasından seçer.",
+      "articleRefs": [
+        "146"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Türkiye Büyük Millet Meclisinin Anayasa Mahkemesine üye seçiminde ikinci oylamada da üye tam sayısının üçte ikisi mi aranır?",
+      "back": "Hayır. Üçte iki yalnız ilk oylamada aranır; ikinci oylamada üye tam sayısının salt çoğunluğu yeterlidir.",
+      "explanation": "İkinci oylamada salt çoğunluk sağlanamazsa, o oylamada en çok oy alan 2 aday için üçüncü oylama yapılır. Üçüncü oylamada en fazla oy alan aday üye seçilmiş olur. Seçim gizli oylamayla yapılır ve bu çoğunluklar her boş üyelik için aranır.",
+      "articleRefs": [
+        "146"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Avukatlar arasından Anayasa Mahkemesine üye seçilebilmek için en az kaç yıl fiilen avukatlık yapmış olmak gerekir?",
+      "back": "En az 20 yıl. Ayrıca 45 yaşın doldurulmuş olması şarttır.",
+      "explanation": "Diğer gruplarda aranan şartlar şunlardır: Üst kademe yöneticilerinde yükseköğrenim ve en az 20 yıl fiilen kamu hizmeti, birinci sınıf hâkim ve savcılarda adaylık dahil en az 20 yıl çalışma, öğretim üyelerinde profesör veya doçent unvanı. Cumhurbaşkanının raportörler arasından seçeceği üyede en az 5 yıl raportörlük gerekir.",
+      "articleRefs": [
+        "146"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Anayasa Mahkemesi üyeleri kaç yıl için seçilir?",
+      "back": "12 yıl için. Bir kimse 2 defa Anayasa Mahkemesi üyesi seçilemez.",
+      "explanation": "Üyeler 65 yaşını doldurunca emekliye ayrılır. Zorunlu emeklilik yaşından önce görev süresi dolan üyelerin başka bir görevde çalışmaları ve özlük işleri kanunla düzenlenir.",
+      "articleRefs": [
+        "147"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Görevini sağlık bakımından yerine getiremeyeceği kesin olarak anlaşılan üyenin üyeliğine son vermek için Anayasa Mahkemesinde en az kaç oy gerekir?",
+      "back": "8 oy. Gereken çoğunluk, 15 üyelik tamsayının salt çoğunluğudur.",
+      "explanation": "Üye, hakimlik mesleğinden çıkarılmayı gerektiren bir suçtan dolayı hüküm giyerse üyeliği kendiliğinden sona erer. Başkan ve iki başkanvekili de üyeler arasından gizli oyla, üye tam sayısının salt çoğunluğuyla 4 yıl için seçilir.",
+      "articleRefs": [
+        "147",
+        "146"
+      ],
+      "derivedNumbers": [
+        {
+          "value": 8,
+          "expr": "floor(15 / 2) + 1",
+          "refs": [
+            "146",
+            "147"
+          ],
+          "note": "üye tamsayısının salt çoğunluğu"
+        }
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Bir kanunun şekil bozukluğuna dayalı iptali için dava açma süresi yayımdan itibaren 60 gün müdür?",
+      "back": "Hayır. Kanunun yayımlandığı tarihten itibaren 10 gün geçtikten sonra şekil bozukluğuna dayalı iptal davası açılamaz; bu bozukluk def'i yoluyla da ileri sürülemez.",
+      "explanation": "Kanunlarda şekil denetimi, son oylamanın öngörülen çoğunlukla yapılıp yapılmadığıyla sınırlıdır. Anayasa değişiklikleri ise sadece şekil bakımından denetlenir: teklif ve oylama çoğunluğuna ve ivedilikle görüşülemeyeceği şartına uyulup uyulmadığına bakılır; bu denetimi Cumhurbaşkanı veya Türkiye Büyük Millet Meclisi üyelerinin beşte biri isteyebilir.",
+      "articleRefs": [
+        "148"
+      ],
+      "counterNumbers": [
+        60
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Anayasa Mahkemesine bireysel başvuruda bulunabilmek için hangi şart aranır?",
+      "back": "Olağan kanun yollarının tüketilmiş olması.",
+      "explanation": "Herkes başvurabilir. Başvurunun konusu, Anayasada güvence altına alınmış temel hak ve özgürlüklerden Avrupa İnsan Hakları Sözleşmesi kapsamındaki herhangi birinin kamu gücü tarafından ihlal edildiği iddiasıdır. Bireysel başvuruda kanun yolunda gözetilmesi gereken hususlarda inceleme yapılamaz. Usul ve esaslar kanunla düzenlenir.",
+      "articleRefs": [
+        "148"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Silahlı kuvvetlerden hangi makam sahipleri görevleriyle ilgili suçlardan dolayı Yüce Divanda yargılanır?",
+      "back": "Genelkurmay Başkanı ile Kara, Deniz ve Hava Kuvvetleri Komutanları.",
+      "explanation": "Yüce Divan, görevleriyle ilgili suçlardan dolayı şu kişileri de yargılar: Cumhurbaşkanı, Türkiye Büyük Millet Meclisi Başkanı, Cumhurbaşkanı yardımcıları, bakanlar; Anayasa Mahkemesi, Yargıtay ve Danıştay Başkan ve üyeleri, Başsavcıları, Cumhuriyet Başsavcıvekili; Hakimler ve Savcılar Kurulu ile Sayıştay Başkan ve üyeleri. Savcılık görevini Cumhuriyet Başsavcısı veya Cumhuriyet Başsavcıvekili yapar. Kararlara karşı yeniden inceleme başvurusu yapılabilir; Genel Kurulun bu inceleme sonucunda verdiği kararlar kesindir.",
+      "articleRefs": [
+        "148"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Anayasa Mahkemesinde Bölümler kaç üyenin katılımıyla toplanır?",
+      "back": "4 üyenin katılımıyla, başkanvekili başkanlığında.",
+      "explanation": "Anayasa Mahkemesi iki bölüm ve Genel Kurul halinde çalışır. Genel Kurul, Mahkeme Başkanının veya Başkanın belirleyeceği başkanvekilinin başkanlığında en az 10 üyeyle toplanır. Bölümler ve Genel Kurul kararlarını salt çoğunlukla alır.",
+      "articleRefs": [
+        "149"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Anayasa Mahkemesinde bireysel başvuruları hangi birim karara bağlar?",
+      "back": "Bölümler karara bağlar.",
+      "explanation": "Siyasî partilere ilişkin dava ve başvurulara, iptal ve itiraz davalarına ve Yüce Divan sıfatıyla yürütülecek yargılamalara Genel Kurulca bakılır. Bireysel başvuruların kabul edilebilirlik incelemesi için komisyonlar oluşturulabilir. Bireysel başvurularda duruşma yapılmasına da karar verilebilir.",
+      "articleRefs": [
+        "149"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Anayasa Mahkemesinde hangi kararlar için toplantıya katılan üyelerin üçte iki oy çokluğu şarttır?",
+      "back": "Anayasa değişikliğinde iptal, siyasî partilerin kapatılması ve Devlet yardımından yoksun bırakılması kararları için.",
+      "explanation": "Ölçü, toplantıya katılan üyelerin sayısıdır. Genel Kurul en az 10 üyeyle toplanır; katılan sayısı arttıkça gereken oy da artar. Bunların dışındaki kararları Bölümler ve Genel Kurul salt çoğunlukla alır.",
+      "articleRefs": [
+        "149"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Bakanlar bir kanuna karşı Anayasa Mahkemesinde doğrudan iptal davası açabilir mi?",
+      "back": "Hayır. Bu hak Cumhurbaşkanına, Türkiye Büyük Millet Meclisinde en fazla üyeye sahip iki siyasi parti grubuna ve üye tamsayısının en az beşte biri tutarındaki üyelere aittir.",
+      "explanation": "Dava şunların şekil ve esas bakımından Anayasaya aykırılığı iddiasıyla açılır: kanunlar, Cumhurbaşkanlığı kararnameleri, Türkiye Büyük Millet Meclisi İçtüzüğü veya bunların belirli madde ve hükümleri.",
+      "articleRefs": [
+        "150"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Anayasa Mahkemesinde doğrudan doğruya iptal davası açma hakkı ne kadar süre sonra düşer?",
+      "back": "60 gün sonra. Süre, iptali istenen kanun, Cumhurbaşkanlığı kararnamesi veya içtüzüğün Resmî Gazetede yayımlanmasından başlar.",
+      "articleRefs": [
+        "151"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Davaya bakan mahkeme, uygulanacak bir kanun hükmünü Anayasaya aykırı görürse ne yapar?",
+      "back": "Davayı geri bırakır ve Anayasa Mahkemesinin bu konuda vereceği kararı bekler.",
+      "explanation": "Aynı yol iki durumda da işler: taraflardan birinin ileri sürdüğü aykırılık iddiası ciddi bulunduğunda ve uygulanacak hüküm bir Cumhurbaşkanlığı kararnamesi hükmü olduğunda. Mahkeme iddiayı ciddi görmezse iddia, temyiz merciince esas hükümle birlikte karara bağlanır.",
+      "articleRefs": [
+        "152"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "İtiraz yoluyla kendisine gelen işte Anayasa Mahkemesi kararını hangi süre içinde verir?",
+      "back": "5 ay içinde. Süre, işin Anayasa Mahkemesine gelişinden başlar.",
+      "explanation": "Bu süre içinde karar verilmezse mahkeme davayı yürürlükteki kanun hükümlerine göre sonuçlandırır. Ancak Anayasa Mahkemesinin kararı, esas hakkındaki karar kesinleşinceye kadar gelirse mahkeme buna uymak zorundadır.",
+      "articleRefs": [
+        "152"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Anayasa Mahkemesi işin esasına girerek ret kararı verdiyse, aynı kanun hükmü için tekrar başvurulabilmesi için ne kadar süre geçmelidir?",
+      "back": "10 yıl. Süre, ret kararının Resmî Gazetede yayımlanmasından sonra işler.",
+      "explanation": "Bu engel, Anayasa Mahkemesinin işin esasına girerek verdiği red kararları için konmuştur. Aynı kanun hükmünün Anayasaya aykırılığı iddiasıyla yapılacak başvuruları kapsar.",
+      "articleRefs": [
+        "152"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Anayasa Mahkemesinin hangi kararları gerekçesi yazılmadan açıklanamaz?",
+      "back": "İptal kararları.",
+      "explanation": "Anayasa Mahkemesi bir kanun veya Cumhurbaşkanlığı kararnamesinin tamamını veya bir hükmünü iptal ederken kanun koyucu gibi hareket edemez. Yeni bir uygulamaya yol açacak biçimde hüküm tesis edemez.",
+      "articleRefs": [
+        "153"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Anayasa Mahkemesi iptal hükmünün yürürlüğe gireceği tarihi en çok ne kadar ileriye atabilir?",
+      "back": "1 yıl. Süre, kararın Resmî Gazetede yayımlandığı günden başlar.",
+      "explanation": "Mahkeme bu tarihi gereken hallerde ayrıca kararlaştırabilir. Yürürlük ertelenirse Türkiye Büyük Millet Meclisi, iptal kararının ortaya çıkardığı hukuki boşluğu dolduracak kanun teklifini öncelikle görüşüp karara bağlar.",
+      "articleRefs": [
+        "153"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "İptal edilen bir kanun hükmü kural olarak hangi tarihte yürürlükten kalkar?",
+      "back": "İptal kararının Resmî Gazetede yayımlandığı tarihte.",
+      "explanation": "İptal kararları geriye yürümez. Anayasa Mahkemesi kararları Resmî Gazetede hemen yayımlanır. Bu kararlar yasama, yürütme ve yargı organlarını, idare makamlarını, gerçek ve tüzelkişileri bağlar.",
+      "articleRefs": [
+        "153"
+      ]
+    }
+  ]
+}

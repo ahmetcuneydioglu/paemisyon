@@ -1,0 +1,340 @@
+{
+  "deck": {
+    "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+    "legislationSlug": "t-c-anayasasi",
+    "unitSlug": "anayasa-yurutme-1",
+    "sourceLabel": "AI bilgi kartı — T.C. Anayasası md 101–122",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: anayasa-yurutme-1 özeti + resmî madde metni); denetim düzeltmesi 6 Kas 2026 (3 kart)"
+  },
+  "cards": [
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Cumhurbaşkanı seçilebilmek için en az kaç yaşını doldurmuş olmak gerekir?",
+      "back": "Kırk yaşını doldurmuş olmak gerekir. Ayrıca yükseköğrenim yapmış ve milletvekili seçilme yeterliliğine sahip bir Türk vatandaşı olmalıdır.",
+      "explanation": "Cumhurbaşkanını doğrudan halk seçer. Görev süresi beş yıldır. Bir kimse en fazla iki defa Cumhurbaşkanı seçilebilir. Cumhurbaşkanı seçilen milletvekilinin Türkiye Büyük Millet Meclisi üyeliği sona erer.",
+      "articleRefs": [
+        "101"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Bir siyasi parti, en son genel seçimlerde en az ne kadar oy almışsa Cumhurbaşkanlığına aday gösterebilir?",
+      "back": "Toplam geçerli oyların tek başına veya birlikte en az yüzde beşini almış olmalıdır. Siyasi parti grupları ve en az yüzbin seçmen de aday gösterebilir.",
+      "explanation": "Partiler bu oranı tek başına da sağlayabilir, birlikte de.",
+      "articleRefs": [
+        "101"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Cumhurbaşkanlığı seçimleri tamamlanamazsa, yeni Cumhurbaşkanı göreve başlayıncaya kadar Türkiye Büyük Millet Meclisi Başkanı mı vekâlet eder?",
+      "back": "Hayır. Yenisi göreve başlayıncaya kadar mevcut Cumhurbaşkanının görevi devam eder.",
+      "explanation": "Genel oyla yapılan seçimde geçerli oyların salt çoğunluğunu alan aday seçilir. İlk oylamada bu çoğunluk sağlanamazsa, izleyen ikinci pazar günü ikinci oylama yapılır ve bu oylamaya en çok oy almış iki aday katılır. İkinci oylamada tek aday kalırsa oylama referandum şeklinde yapılır. Aday geçerli oyların salt çoğunluğunu alamazsa sadece Cumhurbaşkanı seçimi yenilenir.",
+      "articleRefs": [
+        "101"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Cumhurbaşkanı görevine başlarken kimin önünde andiçer?",
+      "back": "Türkiye Büyük Millet Meclisi önünde andiçer.",
+      "explanation": "Andında Devletin varlığını ve bağımsızlığını, vatanın ve milletin bölünmez bütünlüğünü koruyacağına söz verir. Anayasaya, hukukun üstünlüğüne, demokrasiye, Atatürk ilke ve inkılaplarına ve laik Cumhuriyet ilkesine bağlı kalacağını söyler. Üzerine aldığı görevi tarafsızlıkla yerine getireceğine de söz verir.",
+      "articleRefs": [
+        "103"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Cumhurbaşkanı hangi kanunları gerekli gördüğü takdirde halkoyuna sunabilir?",
+      "back": "Anayasa değişikliklerine ilişkin kanunları.",
+      "explanation": "Kanunlarla ilgili diğer yetkileri şunlardır: kanunları yayımlar ve tekrar görüşülmek üzere Türkiye Büyük Millet Meclisine geri gönderir. Kanunların ya da TBMM İçtüzüğünün tümü veya belirli hükümleri hakkında, şekil veya esas bakımından Anayasaya aykırılık gerekçesiyle Anayasa Mahkemesinde iptal davası açar.",
+      "articleRefs": [
+        "104"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Olağan dönemde Cumhurbaşkanlığı kararnamesi hangi konularda çıkarılamaz?",
+      "back": "Temel haklar, kişi hakları ve ödevleri ile siyasi haklar ve ödevler kararnameyle düzenlenemez. Anayasada münhasıran kanunla düzenlenmesi öngörülen konularda ve kanunda açıkça düzenlenen konularda da kararname çıkarılamaz.",
+      "explanation": "Kararnamenin alanı yürütme yetkisine ilişkin konulardır. Düzenlenemeyen haklar, Anayasanın ikinci kısmının birinci ve ikinci bölümlerindeki temel haklar, kişi hakları ve ödevleri ile dördüncü bölümündeki siyasi haklar ve ödevlerdir.",
+      "articleRefs": [
+        "104"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Cumhurbaşkanlığı kararnamesi ile kanunda farklı hükümler bulunursa kararname hükümleri mi uygulanır?",
+      "back": "Hayır, kanun hükümleri uygulanır. Türkiye Büyük Millet Meclisi aynı konuda kanun çıkarırsa kararname hükümsüz hâle gelir.",
+      "explanation": "Kararnameler ve yönetmelikler, yayımdan sonraki bir tarih belirlenmemişse Resmî Gazetede yayımlandıkları gün yürürlüğe girer. Cumhurbaşkanı yönetmelikleri, kanunların uygulanmasını sağlamak üzere ve kanunlara aykırı olmamak şartıyla çıkarır.",
+      "articleRefs": [
+        "104"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Türkiye Büyük Millet Meclisi, Cumhurbaşkanı hakkında soruşturma açılmasına hangi çoğunlukla karar verir?",
+      "back": "Üye tamsayısının beşte üçünün gizli oyuyla karar verir; 600 üyede bu 360 eder. Soruşturma isteyen önergeyi ise üye tamsayısının salt çoğunluğu (301) verir.",
+      "explanation": "Meclis önergeyi en geç bir ay içinde görüşür. Soruşturmayı onbeş kişilik bir komisyon yapar; komisyon, partilerin güçleri oranında gösterdikleri adaylar arasından ad çekilerek kurulur. Rapor iki ay içinde sunulur. Soruşturma bu sürede bitmezse bir aylık yeni ve kesin süre verilir.",
+      "articleRefs": [
+        "105",
+        "75"
+      ],
+      "derivedNumbers": [
+        {
+          "value": 360,
+          "expr": "ceil(600 * 3 / 5)",
+          "refs": [
+            "75",
+            "105"
+          ],
+          "note": "üye tamsayısının beşte üçü"
+        },
+        {
+          "value": 301,
+          "expr": "floor(600 / 2) + 1",
+          "refs": [
+            "75",
+            "105"
+          ],
+          "note": "üye tamsayısının salt çoğunluğu"
+        }
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Türkiye Büyük Millet Meclisi, Cumhurbaşkanının Yüce Divana sevkine hangi çoğunlukla karar verir?",
+      "back": "Üye tamsayısının üçte ikisinin gizli oyuyla karar verir; 600 üyede bu 400 eder.",
+      "explanation": "Komisyon raporu, Başkanlığa verildiği tarihten itibaren on gün içinde dağıtılır. Dağıtımından itibaren on gün içinde Genel Kurulda görüşülür. Yüce Divan yargılaması üç ay içinde tamamlanır. Tamamlanamazsa bir defaya mahsus üç aylık ek süre verilir.",
+      "articleRefs": [
+        "105",
+        "75"
+      ],
+      "derivedNumbers": [
+        {
+          "value": 400,
+          "expr": "600 * 2 / 3",
+          "refs": [
+            "75",
+            "105"
+          ],
+          "note": "üye tamsayısının üçte ikisi"
+        }
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Hakkında soruşturma açılmasına karar verilen Cumhurbaşkanı hangi kararı alamaz?",
+      "back": "Seçim kararı alamaz.",
+      "explanation": "Cumhurbaşkanının görevi, Yüce Divanda seçilmeye engel bir suçtan mahkûm edilmesiyle sona erer. Görevde bulunduğu sürede işlediği iddia edilen suçlar için, görevi bittikten sonra da aynı madde uygulanır.",
+      "articleRefs": [
+        "105"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Cumhurbaşkanlığı makamı herhangi bir nedenle boşalırsa Cumhurbaşkanı seçimi ne kadar süre içinde yapılır?",
+      "back": "Kırkbeş gün içinde yapılır. Yenisi seçilene kadar Cumhurbaşkanı yardımcısı vekâlet eder ve Cumhurbaşkanına ait yetkileri kullanır.",
+      "explanation": "Genel seçime bir yıl veya daha az kalmışsa Türkiye Büyük Millet Meclisi seçimi de Cumhurbaşkanı seçimiyle birlikte yenilenir. Bir yıldan fazla kalmışsa seçilen Cumhurbaşkanı TBMM seçim tarihine kadar görev yapar; bu kalan süre onun için dönemden sayılmaz. Hastalık ve yurt dışına çıkma gibi geçici ayrılmalarda da Cumhurbaşkanı yardımcısı vekâlet eder.",
+      "articleRefs": [
+        "106"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Cumhurbaşkanı yardımcıları ve bakanlar Türkiye Büyük Millet Meclisine karşı mı sorumludur?",
+      "back": "Hayır. Cumhurbaşkanı yardımcıları ve bakanlar Cumhurbaşkanına karşı sorumludur. Görevleriyle ilgili suç iddiasında ise TBMM üye tamsayısının salt çoğunluğunun önergesiyle soruşturma açılması istenebilir.",
+      "explanation": "Cumhurbaşkanı, seçildikten sonra bir veya daha fazla yardımcı atayabilir. Yardımcılar ve bakanlar, milletvekili seçilme yeterliliğine sahip olanlar arasından Cumhurbaşkanınca atanır ve görevden alınır. Göreve başlarken TBMM önünde andiçerler. Bu görevlere atanan TBMM üyesinin üyeliği sona erer.",
+      "articleRefs": [
+        "106"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Cumhurbaşkanı yardımcıları ve bakanlar hangi suçlarda yasama dokunulmazlığına ilişkin hükümlerden yararlanır?",
+      "back": "Görevleriyle ilgili olmayan suçlarda.",
+      "explanation": "Görevleriyle ilgili suç işledikleri iddia edilirse, Türkiye Büyük Millet Meclisi üye tamsayısının salt çoğunluğunun önergesiyle soruşturma istenebilir. Soruşturma açma kararı beşte üçün, Yüce Divana sevk kararı ise üçte ikinin gizli oyuyla alınır. Bu hükümler görevleri bittikten sonra da uygulanır.",
+      "articleRefs": [
+        "106"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Devlet Denetleme Kurulunun Başkanını ve üyelerini kim atar?",
+      "back": "Cumhurbaşkanı atar; hem Başkanı hem üyeleri o belirler.",
+      "explanation": "Kurul Cumhurbaşkanlığına bağlı olarak kurulmuştur ve Cumhurbaşkanının isteği üzerine çalışır.",
+      "articleRefs": [
+        "108"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Devlet Denetleme Kurulunun işleyişi, üyelerinin görev süresi ve diğer özlük işleri hangi düzenleyici işlemle belirlenir?",
+      "back": "Cumhurbaşkanlığı kararnamesiyle.",
+      "explanation": "Kurulun amacı, idarenin hukuka uygunluğunun, düzenli ve verimli şekilde yürütülmesinin ve geliştirilmesinin sağlanmasıdır.",
+      "articleRefs": [
+        "108"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Devlet Denetleme Kurulunun görev alanı dışında bırakılan organlar hangileridir?",
+      "back": "Yargı organları.",
+      "explanation": "Kurul her türlü idari soruşturma, inceleme, araştırma ve denetlemeyi şu yerlerde yapar: tüm kamu kurum ve kuruluşlarında ve sermayesinin yarısından fazlasına bu kurum ve kuruluşların katıldığı her türlü kuruluşta, kamu kurumu niteliğinde olan meslek kuruluşlarında, her düzeydeki işçi ve işveren meslek kuruluşlarında, kamuya yararlı derneklerle vakıflarda.",
+      "articleRefs": [
+        "108"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Türkiye Büyük Millet Meclisi seçimlerin yenilenmesine hangi çoğunlukla karar verebilir?",
+      "back": "Üye tamsayısının beşte üç çoğunluğuyla karar verebilir; 600 üyede bu 360 kabul oyu eder.",
+      "articleRefs": [
+        "116",
+        "75"
+      ],
+      "derivedNumbers": [
+        {
+          "value": 360,
+          "expr": "ceil(600 * 3 / 5)",
+          "refs": [
+            "75",
+            "116"
+          ],
+          "note": "üye tamsayısının beşte üçü"
+        }
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Cumhurbaşkanı seçimlerin yenilenmesine karar verirse hangi seçimler birlikte yapılır?",
+      "back": "Türkiye Büyük Millet Meclisi genel seçimi ile Cumhurbaşkanlığı seçimi birlikte yapılır. Kararı Meclis verdiğinde de bu kural aynen geçerlidir.",
+      "explanation": "Seçimlerinin yenilenmesine karar verilen Meclisin ve Cumhurbaşkanının yetki ve görevleri, yeni Meclisin ve Cumhurbaşkanının göreve başlamasına kadar devam eder. Bu şekilde seçilen Meclisin ve Cumhurbaşkanının görev süreleri de beş yıldır.",
+      "articleRefs": [
+        "116"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "İkinci dönemindeki Cumhurbaşkanı seçimlerin yenilenmesine kendisi karar verirse bir defa daha aday olabilir mi?",
+      "back": "Hayır. md 116 bir defa daha aday olma imkânını, Cumhurbaşkanının ikinci döneminde seçimlerin yenilenmesine Meclis karar verdiğinde tanır.",
+      "explanation": "Cumhurbaşkanının ikinci döneminde Türkiye Büyük Millet Meclisi seçimlerin yenilenmesine karar verirse, Cumhurbaşkanı bir defa daha aday olabilir. Cumhurbaşkanının görev süresi beş yıldır.",
+      "articleRefs": [
+        "116",
+        "101"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Başkomutanlık kim tarafından temsil olunur?",
+      "back": "Cumhurbaşkanı tarafından temsil olunur.",
+      "explanation": "Genelkurmay Başkanını Cumhurbaşkanı atar. Genelkurmay Başkanı Silahlı Kuvvetlerin komutanıdır ve savaşta Başkomutanlık görevlerini Cumhurbaşkanlığı namına yerine getirir.",
+      "articleRefs": [
+        "117"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Başkomutanlık, Cumhurbaşkanlığının manevi varlığından mı ayrılamaz?",
+      "back": "Hayır. Başkomutanlık, Türkiye Büyük Millet Meclisinin manevi varlığından ayrılamaz; Cumhurbaşkanı ise onu temsil eder.",
+      "articleRefs": [
+        "117"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Cumhurbaşkanı, milli güvenliğin sağlanmasından ve Silahlı Kuvvetlerin yurt savunmasına hazırlanmasından kime karşı sorumludur?",
+      "back": "Türkiye Büyük Millet Meclisine karşı sorumludur.",
+      "articleRefs": [
+        "117"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Jandarma Genel Komutanı Millî Güvenlik Kurulunun üyesi midir?",
+      "back": "Hayır. Kurul, Cumhurbaşkanının başkanlığında şu üyelerden oluşur: Cumhurbaşkanı yardımcıları; Adalet, Millî Savunma, İçişleri ve Dışişleri Bakanları; Genelkurmay Başkanı; Kara, Deniz ve Hava kuvvetleri komutanları.",
+      "explanation": "Gündemin özelliğine göre ilgili bakan ve kişiler de Kurul toplantılarına çağrılıp görüşleri alınabilir.",
+      "articleRefs": [
+        "118"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Millî Güvenlik Kurulunun gündemini kim düzenler?",
+      "back": "Cumhurbaşkanı düzenler; Cumhurbaşkanı yardımcılarının ve Genelkurmay Başkanının önerilerini dikkate alır.",
+      "explanation": "Kurul, tavsiye kararlarını ve koordinasyon konusundaki görüşlerini Cumhurbaşkanına bildirir. Alınmasını zorunlu gördüğü tedbirlere ait kararları da Cumhurbaşkanı değerlendirir.",
+      "articleRefs": [
+        "118"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Cumhurbaşkanı katılamadığında Millî Güvenlik Kurulu kimin başkanlığında toplanır?",
+      "back": "Cumhurbaşkanı yardımcısının başkanlığında toplanır.",
+      "explanation": "Millî Güvenlik Kurulu Genel Sekreterliğinin teşkilatı ve görevleri Cumhurbaşkanlığı kararnamesiyle düzenlenir.",
+      "articleRefs": [
+        "118"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Cumhurbaşkanı olağanüstü hali en çok ne kadar süre için ilan edebilir?",
+      "back": "Altı ayı geçmemek üzere ilan edebilir; ilan yurdun tamamında veya bir bölgesinde yapılabilir.",
+      "explanation": "İlan kararı verildiği gün Resmî Gazetede yayımlanır ve aynı gün Türkiye Büyük Millet Meclisinin onayına sunulur. Meclis tatildeyse derhal toplantıya çağrılır. Meclis gerekli görürse süreyi kısaltabilir, uzatabilir veya olağanüstü hali kaldırabilir.",
+      "articleRefs": [
+        "119"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Türkiye Büyük Millet Meclisi olağanüstü halin süresini her defasında en çok ne kadar uzatabilir?",
+      "back": "Dört ay. Uzatmayı Cumhurbaşkanı talep eder, Meclis karar verir; savaş hallerinde bu dört aylık süre aranmaz.",
+      "explanation": "Uzatma sınırının aranmadığı hâl savaş hâlidir. Seferberlik, ayaklanma, tehlikeli salgın hastalık veya ağır ekonomik bunalım sebebiyle ilan edilen olağanüstü halde dört aylık sınır geçerlidir.",
+      "articleRefs": [
+        "119"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Olağanüstü hal sırasında çıkarılan Cumhurbaşkanlığı kararnameleri Türkiye Büyük Millet Meclisinde ne kadar süre içinde görüşülüp karara bağlanır?",
+      "back": "Üç ay içinde; aksi halde kararname kendiliğinden yürürlükten kalkar. Savaş ve mücbir sebeplerle Meclisin toplanamaması hâli bu kuralın dışındadır.",
+      "explanation": "Bu kararnameler kanun hükmündedir. Resmî Gazetede yayımlanır ve aynı gün Meclis onayına sunulur. Olağanüstü halin gerekli kıldığı konularda çıkarılır ve 104 üncü maddenin onyedinci fıkrasının ikinci cümlesindeki sınırlamalara tabi değildir.",
+      "articleRefs": [
+        "119"
+      ]
+    }
+  ]
+}

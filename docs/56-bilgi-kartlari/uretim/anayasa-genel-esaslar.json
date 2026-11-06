@@ -1,0 +1,302 @@
+{
+  "deck": {
+    "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+    "legislationSlug": "t-c-anayasasi",
+    "unitSlug": "anayasa-genel-esaslar",
+    "sourceLabel": "AI bilgi kartı — T.C. Anayasası md 1–11",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: anayasa-genel-esaslar özeti + resmî madde metni); denetim düzeltmesi 6 Kas 2026 (2 kart + #19 çıkarıldı)"
+  },
+  "cards": [
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Anayasaya göre Türkiye Devletinin şekli nedir?",
+      "back": "Cumhuriyet. Türkiye Devleti bir Cumhuriyettir.",
+      "articleRefs": [
+        "1"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Cumhuriyetin nitelikleri maddesine göre Türkiye Cumhuriyeti nasıl bir Devlettir?",
+      "back": "Demokratik, laik ve sosyal bir hukuk Devletidir.",
+      "explanation": "Bu sıfatlara eşlik eden nitelikler de aynı maddededir: toplumun huzuru, milli dayanışma ve adalet anlayışı içinde, insan haklarına saygılı, Atatürk milliyetçiliğine bağlı, başlangıçta belirtilen temel ilkelere dayanan.",
+      "articleRefs": [
+        "2"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Cumhuriyetin nitelikleri arasında milliyetçilik hangi ifadeyle yer alır?",
+      "back": "“Atatürk milliyetçiliğine bağlı” ifadesiyle yer alır.",
+      "explanation": "Milliyetçilik, maddede Atatürk adıyla anılır ve bağlılık olarak ifade edilir. Cumhuriyet aynı zamanda insan haklarına saygılı ve başlangıçta belirtilen temel ilkelere dayanan bir Devlettir.",
+      "articleRefs": [
+        "2"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Kanun önünde eşitlik, Cumhuriyetin nitelikleri arasında sayılır mı?",
+      "back": "Hayır. Cumhuriyetin nitelikleri md 2'dedir ve eşitlik orada sayılmaz. Kanun önünde eşitlik, md 10'un ayrı başlığıdır.",
+      "explanation": "md 2, Cumhuriyeti demokratik, laik ve sosyal bir hukuk Devleti olarak niteler. İnsan haklarına saygı ve Atatürk milliyetçiliğine bağlılık da bu niteliklerdendir. md 10 ise kanun önünde eşitliği, kadın ve erkeklerin eşit haklara sahip olmasını ve imtiyaz yasağını düzenler.",
+      "articleRefs": [
+        "2",
+        "10"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Türkiye Devletinin başkenti neresidir?",
+      "back": "Ankara.",
+      "explanation": "Aynı maddede Devletin dilinin Türkçe, milli marşının da İstiklal Marşı olduğu yazılıdır.",
+      "articleRefs": [
+        "3"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Türk bayrağının şekli nerede belirtilir?",
+      "back": "Kanununda. Bayrak, şekli kanununda belirtilen beyaz ay yıldızlı al bayraktır.",
+      "articleRefs": [
+        "3"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Türkiye Devleti, ülkesi ve milletiyle nasıl tanımlanır?",
+      "back": "Bölünmez bir bütün olarak tanımlanır.",
+      "explanation": "Bu hüküm, “Devletin bütünlüğü, Resmî dili, bayrağı, milli marşı ve başkenti” başlıklı maddenin açılış cümlesidir.",
+      "articleRefs": [
+        "3"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Değiştirilemeyecek hükümler için Anayasa, değiştirmenin yanında neyi de yasaklar?",
+      "back": "Değiştirilmesinin teklif edilmesini yasaklar. Bu hükümler değiştirilemez ve değiştirilmesi teklif edilemez.",
+      "explanation": "Koruma, md 1'deki Devletin şeklinin Cumhuriyet olduğu hakkındaki hükmü, md 2'deki Cumhuriyetin niteliklerini ve md 3 hükümlerini kapsar.",
+      "articleRefs": [
+        "4"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Değiştirilemeyecek hükümler, md 3'ün hangi hükümlerini kapsar?",
+      "back": "md 3'ün bütün hükümlerini kapsar: bölünmez bütünlük, Türkçe, bayrak, İstiklal Marşı ve başkent Ankara.",
+      "explanation": "md 4, md 3'ü ayırmadan “hükümleri” diye anar. Bu yüzden başkentin Ankara olması da değiştirilemez ve değiştirilmesi teklif edilemez.",
+      "articleRefs": [
+        "4",
+        "3"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Sosyal devlet niteliğinin değiştirilmesi teklif edilebilir mi?",
+      "back": "Hayır. Sosyal devlet, md 2'deki Cumhuriyet niteliklerindendir. md 4 bu nitelikleri değiştirilemez ve değiştirilmesi teklif edilemez hükümler arasında sayar.",
+      "explanation": "Aynı koruma demokratik, laik ve hukuk Devleti niteliklerini de kapsar.",
+      "articleRefs": [
+        "4",
+        "2"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Devletin temel amaç ve görevleri, değiştirilemeyecek hükümler arasında mı?",
+      "back": "Hayır. md 4 yalnız md 1'deki Cumhuriyet hükmünü, md 2'deki nitelikleri ve md 3 hükümlerini sayar. Temel amaç ve görevler (md 5) bu sayımda yok.",
+      "explanation": "md 5, Devletin korumak, sağlamak ve kaldırmaya çalışmakla görevli olduğu hususları sayar. md 4'ün değiştirilemezlik ve teklif yasağı ise md 1, 2 ve 3 hükümlerine yöneliktir.",
+      "articleRefs": [
+        "5",
+        "4"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Devletin temel amaç ve görevlerine göre Devlet neleri korumakla görevlidir?",
+      "back": "Türk milletinin bağımsızlığını ve bütünlüğünü, ülkenin bölünmezliğini, Cumhuriyeti ve demokrasiyi korumakla görevlidir.",
+      "explanation": "Koruma görevinin yanında, kişilerin ve toplumun refah, huzur ve mutluluğunu sağlamak da Devletin temel amaç ve görevlerindendir.",
+      "articleRefs": [
+        "5"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Devlet, kişinin temel hak ve hürriyetlerine ilişkin hangi engelleri kaldırmaya çalışır?",
+      "back": "Bu hak ve hürriyetleri sosyal hukuk devleti ve adalet ilkeleriyle bağdaşmayacak surette sınırlayan siyasal, ekonomik ve sosyal engelleri kaldırmaya çalışır.",
+      "explanation": "Aynı maddeye göre Devlet, insanın maddi ve manevi varlığının gelişmesi için gerekli şartları hazırlamaya da çalışır.",
+      "articleRefs": [
+        "5"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Anayasaya göre egemenlik kime aittir?",
+      "back": "Kayıtsız şartsız Millete aittir.",
+      "explanation": "Egemenliğin kullanılması hiçbir surette hiçbir kişiye, zümreye veya sınıfa bırakılamaz.",
+      "articleRefs": [
+        "6"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Türk Milleti egemenliğini kimin eliyle kullanır?",
+      "back": "Yetkili organları eliyle kullanır. Bunu Anayasanın koyduğu esaslara göre yapar.",
+      "explanation": "Hüküm tam olarak şöyledir: Türk Milleti, egemenliğini, Anayasanın koyduğu esaslara göre, yetkili organları eliyle kullanır.",
+      "articleRefs": [
+        "6"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Egemenliğin kullanılmasının bırakılamayacağı kesimler arasında “aile” de sayılır mı?",
+      "back": "Hayır. md 6 kişi, zümre ve sınıfı sayar. “Aile” ise md 10'daki imtiyaz yasağında geçer: hiçbir kişiye, aileye, zümreye veya sınıfa imtiyaz tanınamaz.",
+      "explanation": "md 6'ya göre egemenliğin kullanılması hiçbir surette hiçbir kişiye, zümreye veya sınıfa bırakılamaz. md 10 ise imtiyaz tanınmasını yasaklar; bu yasakta kişi, aile, zümre ve sınıf anılır.",
+      "articleRefs": [
+        "6",
+        "10"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Yasama yetkisi kime aittir?",
+      "back": "Türkiye Büyük Millet Meclisine aittir. Bu yetki Türk Milleti adına onundur.",
+      "explanation": "Madde, yetkinin sahibini ve yetkinin kimin adına kullanıldığını aynı cümlede söyler.",
+      "articleRefs": [
+        "7"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Türkiye Büyük Millet Meclisi yasama yetkisini Cumhurbaşkanına devredebilir mi?",
+      "back": "Hayır. Yasama yetkisi devredilemez; maddede bu kurala bağlanmış bir istisna yok.",
+      "explanation": "md 7, yasama yetkisini Türk Milleti adına Türkiye Büyük Millet Meclisine verir. md 8'e göre Cumhurbaşkanı, yürütme yetkisini ve görevini Anayasaya ve kanunlara uygun olarak kullanır ve yerine getirir.",
+      "articleRefs": [
+        "7",
+        "8"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Yürütme yetkisi ve görevi kim tarafından kullanılır ve yerine getirilir?",
+      "back": "Cumhurbaşkanı tarafından, Anayasaya ve kanunlara uygun olarak kullanılır ve yerine getirilir.",
+      "articleRefs": [
+        "8"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Yürütme yetkisi maddesinde “Türk Milleti adına” ifadesi yer alır mı?",
+      "back": "Hayır. md 8 bu ifadeye yer vermez. “Türk Milleti adına” ifadesi md 7'de yasama yetkisi, md 9'da ise yargı yetkisi için geçer.",
+      "explanation": "md 8, yürütmeyi Cumhurbaşkanına verir ve Anayasaya ve kanunlara uygunluk şartını koyar. md 7 yasama yetkisini Türk Milleti adına Türkiye Büyük Millet Meclisine verir. md 9 ise yargı yetkisinin Türk Milleti adına bağımsız ve tarafsız mahkemelerce kullanılacağını belirtir.",
+      "articleRefs": [
+        "8",
+        "7",
+        "9"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Yargı yetkisini kullanan mahkemeler hangi niteliktedir?",
+      "back": "Bağımsız ve tarafsızdır.",
+      "explanation": "Madde her iki niteliği de mahkemeler için aynı anda arar: bağımsızlık ve tarafsızlık.",
+      "articleRefs": [
+        "9"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Yargı yetkisi kimin adına kullanılır?",
+      "back": "Türk Milleti adına kullanılır.",
+      "articleRefs": [
+        "9"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Kanun önünde eşitlik hükmünde sayılan ayırım sebepleri sınırlı sayıda mıdır?",
+      "back": "Hayır. Madde dil, ırk, renk, cinsiyet, siyasi düşünce, felsefi inanç, din ve mezhebi sayar; 've benzeri sebeplerle' diyerek listeyi açık bırakır.",
+      "explanation": "Kural herkes içindir: Herkes bu sebeplerle ayırım gözetilmeksizin kanun önünde eşittir.",
+      "articleRefs": [
+        "10"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Kadınlar ve erkekler arasındaki eşitliğin yaşama geçmesini sağlamakla kim yükümlüdür?",
+      "back": "Devlet yükümlüdür. Bu amaçla alınacak tedbirler eşitlik ilkesine aykırı olarak yorumlanamaz.",
+      "explanation": "Aynı fıkra, kadınların ve erkeklerin eşit haklara sahip olduğunu da açıkça söyler.",
+      "articleRefs": [
+        "10"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Harp şehitlerinin dulları için alınacak tedbirler eşitlik ilkesine aykırı sayılır mı?",
+      "back": "Hayır. Harp ve vazife şehitlerinin dul ve yetimleri için alınacak tedbirler eşitlik ilkesine aykırı sayılmaz.",
+      "explanation": "Aynı hüküm; çocuklar, yaşlılar, özürlüler ile malul ve gaziler için alınacak tedbirleri de kapsar.",
+      "articleRefs": [
+        "10"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Anayasa hükümleri kimleri bağlar?",
+      "back": "Yasama, yürütme ve yargı organlarını, idare makamlarını ve diğer kuruluş ve kişileri bağlar. Anayasa hükümleri temel hukuk kurallarıdır.",
+      "articleRefs": [
+        "11"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "“Kanunlar Anayasaya aykırı olamaz” hükmü hangi başlık altında yer alır?",
+      "back": "Anayasanın bağlayıcılığı ve üstünlüğü başlığında (md 11) yer alır.",
+      "explanation": "Aynı başlık altında, Anayasa hükümlerinin yasama, yürütme ve yargı organlarını, idare makamlarını ve diğer kuruluş ve kişileri bağlayan temel hukuk kuralları olduğu da yazılıdır.",
+      "articleRefs": [
+        "11"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "“Hiçbir kimse veya organ kaynağını Anayasadan almayan bir Devlet yetkisi kullanamaz” hükmü, Anayasanın bağlayıcılığı ve üstünlüğü başlığında mı yer alır?",
+      "back": "Hayır. Bu cümle md 6'nın, yani Egemenlik başlığının hükmüdür.",
+      "explanation": "md 6, egemenliğin kayıtsız şartsız Millete ait olduğunu ve Türk Milletinin onu yetkili organları eliyle kullandığını söyler. md 11 ise Anayasa hükümlerinin bağlayıcılığını ve kanunların Anayasaya aykırı olamayacağını düzenler.",
+      "articleRefs": [
+        "11",
+        "6"
+      ],
+      "counterNumbers": []
+    }
+  ]
+}

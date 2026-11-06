@@ -1,0 +1,361 @@
+{
+  "deck": {
+    "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+    "legislationSlug": "t-c-anayasasi",
+    "unitSlug": "anayasa-yargi-2",
+    "sourceLabel": "AI bilgi kartı — T.C. Anayasası md 154–177",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: anayasa-yargi-2 özeti + resmî madde metni)"
+  },
+  "cards": [
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Yargıtay üyelerini kim seçer?",
+      "back": "Hâkimler ve Savcılar Kurulu seçer. Seçim, birinci sınıfa ayrılmış adli yargı hâkim ve Cumhuriyet savcıları ile bu meslekten sayılanlar arasından, üye tamsayısının salt çoğunluğu ve gizli oyla yapılır.",
+      "explanation": "Yargıtay, adliye mahkemelerince verilen ve kanunun başka bir adli yargı merciine bırakmadığı karar ve hükümlerin son inceleme merciidir. Kanunla gösterilen belli davalara ilk ve son derece mahkemesi olarak da bakar.",
+      "articleRefs": [
+        "154"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Yargıtay Cumhuriyet Başsavcısı için Yargıtay Genel Kurulu kaç aday belirler?",
+      "back": "Beşer aday belirler. Cumhurbaşkanı, Cumhuriyet Başsavcısını bu adaylar arasından dört yıl için seçer.",
+      "explanation": "Genel Kurul adayları kendi üyeleri arasından gizli oyla belirler. Aynı usul Cumhuriyet Başsavcıvekili için de geçerlidir ve süresi bitenler yeniden seçilebilir. Birinci Başkan, birinci başkanvekilleri ve daire başkanlarını ise Yargıtay Genel Kurulu seçer; bunun için üye tamsayısının salt çoğunluğu ve gizli oy aranır.",
+      "articleRefs": [
+        "154"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Danıştay üyelerinin ne kadarını Cumhurbaşkanı seçer?",
+      "back": "Dörtte birini seçer; adaylar nitelikleri kanunda belirtilen görevlilerdir. Kalan dörtte üçünü Hâkimler ve Savcılar Kurulu seçer.",
+      "explanation": "Hâkimler ve Savcılar Kurulunun seçtiği üyeler, birinci sınıf idari yargı hâkim ve savcıları ile bu meslekten sayılanlar arasından gelir. Başkan, Başsavcı, başkanvekilleri ve daire başkanlarını ise Danıştay Genel Kurulu kendi üyeleri arasından seçer.",
+      "articleRefs": [
+        "155"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Danıştay'ın kamu hizmetleriyle ilgili imtiyaz şartlaşma ve sözleşmeleri hakkındaki görevi nedir?",
+      "back": "Bunlar hakkında iki ay içinde düşüncesini bildirmektir.",
+      "explanation": "Danıştay bunun yanında davaları görür, idari uyuşmazlıkları çözer ve kanunla gösterilen diğer işleri yapar. İdari mahkemelerce verilen ve kanunun başka bir idari yargı merciine bırakmadığı karar ve hükümlerin son inceleme merciidir.",
+      "articleRefs": [
+        "155"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Adli ve idari yargı mercileri arasındaki görev ve hüküm uyuşmazlıklarını hangi mahkeme kesin olarak çözümler?",
+      "back": "Uyuşmazlık Mahkemesi çözümler.",
+      "explanation": "Bu mahkemenin kuruluşu, üyelerinin nitelikleri ve seçimleri ile işleyişi kanunla düzenlenir.",
+      "articleRefs": [
+        "158"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Uyuşmazlık Mahkemesinin başkanlığını kim yapar?",
+      "back": "Anayasa Mahkemesinin kendi üyeleri arasından görevlendirdiği üye yapar.",
+      "explanation": "Diğer mahkemelerle Anayasa Mahkemesi arasındaki görev uyuşmazlıklarında Anayasa Mahkemesinin kararı esas alınır.",
+      "articleRefs": [
+        "158"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Cumhurbaşkanı Hâkimler ve Savcılar Kuruluna kaç üye seçer?",
+      "back": "Dört üye seçer: üçünü birinci sınıf adlî yargı hâkim ve savcıları, birini birinci sınıf idarî yargı hâkim ve savcıları arasından.",
+      "explanation": "Adayların birinci sınıfa ayrılmayı gerektiren nitelikleri yitirmemiş olması gerekir. Onüç üyeli Kurulun Başkanı Adalet Bakanıdır, tabiî üyesi Adalet Bakanlığı Müsteşarıdır. Kalan üyeleri Türkiye Büyük Millet Meclisi seçer. Kurul iki daire hâlinde çalışır.",
+      "articleRefs": [
+        "159"
+      ],
+      "derivedNumbers": [
+        {
+          "value": 4,
+          "expr": "3 + 1",
+          "refs": [
+            "159"
+          ],
+          "note": "üç adlî yargı + bir idarî yargı kontenjanı"
+        }
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Hâkimler ve Savcılar Kurulu üyeliği görev süresi dolmadan boşalırsa yeni üye seçimi hangi süre içinde yapılır?",
+      "back": "Boşalmayı takip eden otuz gün içinde yapılır.",
+      "explanation": "Olağan seçim de üyelerin görev süresinin dolmasından önceki otuz gün içinde yapılır. Üyeler dört yıl için seçilir; süresi biten üye bir kez daha seçilebilir.",
+      "articleRefs": [
+        "159"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Türkiye Büyük Millet Meclisi Genel Kurulunda Hâkimler ve Savcılar Kuruluna ikinci oylamada da üye seçilemezse seçim nasıl tamamlanır?",
+      "back": "Ad çekmeyle tamamlanır: en çok oyu alan iki aday arasında ad çekme usulüyle üye seçilir.",
+      "explanation": "Seçim, Karma Komisyonun belirlediği adaylar arasından her üye için ayrı ayrı gizli oyla yapılır. Birinci oylamada üye tamsayısının üçte iki çoğunluğu (600 üyede 400), ikinci oylamada beşte üç çoğunluğu (600 üyede 360) aranır.",
+      "articleRefs": [
+        "159",
+        "75"
+      ],
+      "derivedNumbers": [
+        {
+          "value": 400,
+          "expr": "600 * 2 / 3",
+          "refs": [
+            "75",
+            "159"
+          ],
+          "note": "üye tamsayısının üçte ikisi"
+        },
+        {
+          "value": 360,
+          "expr": "600 * 3 / 5",
+          "refs": [
+            "75",
+            "159"
+          ],
+          "note": "üye tamsayısının beşte üçü"
+        }
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Sayıştay denetimini kimin adına yapar?",
+      "back": "Türkiye Büyük Millet Meclisi adına yapar.",
+      "explanation": "Sayıştay, merkezî yönetim bütçesi kapsamındaki kamu idareleri ile sosyal güvenlik kurumlarının bütün gelir ve giderlerini ve mallarını denetler; sorumluların hesap ve işlemlerini kesin hükme bağlar. Mahallî idarelerin hesap ve işlemlerinin denetimini ve kesin hükme bağlanmasını da Sayıştay yapar.",
+      "articleRefs": [
+        "160"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Sayıştayın kesin hükümleri hakkında karar düzeltilmesi istemi hangi süre içinde yapılabilir?",
+      "back": "Yazılı bildirim tarihinden itibaren onbeş gün içinde yapılabilir. Bu hak bir kereye mahsustur.",
+      "explanation": "Bu kararlar dolayısıyla idari yargı yoluna başvurulamaz.",
+      "articleRefs": [
+        "160"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Vergi konusunda Danıştay ile Sayıştay kararları arasında uyuşmazlık çıkarsa Sayıştay kararı mı esas alınır?",
+      "back": "Hayır. Vergi, benzeri mali yükümlülükler ve ödevler hakkındaki uyuşmazlıklarda Danıştay kararları esas alınır.",
+      "explanation": "Sayıştayın kuruluşu, işleyişi, denetim usulleri, mensuplarının özlük işleri ile Başkan ve üyelerinin teminatı kanunla düzenlenir.",
+      "articleRefs": [
+        "160"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Cumhurbaşkanı bütçe kanun teklifini malî yılbaşından en az kaç gün önce Türkiye Büyük Millet Meclisine sunar?",
+      "back": "En az yetmişbeş gün önce sunar.",
+      "explanation": "Teklif önce Bütçe Komisyonunda görüşülür. Komisyonun ellibeş gün içinde kabul edeceği metin Genel Kurulda görüşülür ve malî yılbaşına kadar karara bağlanır.",
+      "articleRefs": [
+        "161"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Bütçe kanunu süresinde yürürlüğe konulamazsa bir önceki yılın bütçesi hemen uygulanır mı?",
+      "back": "Hayır. Önce geçici bütçe kanunu çıkarılır. O da çıkarılamazsa yeni bütçe kabul edilinceye kadar bir önceki yılın bütçesi yeniden değerleme oranına göre artırılarak uygulanır.",
+      "explanation": "Olağan takvimde Genel Kurul bütçeyi malî yılbaşına kadar karara bağlar. Bu yapılamadığında sıra geçici bütçe kanununa gelir.",
+      "articleRefs": [
+        "161"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Sayıştay genel uygunluk bildirimini, kesinhesap kanunu teklifinin verilmesinden başlayarak en geç ne kadar sürede Meclise sunar?",
+      "back": "En geç yetmişbeş gün içinde sunar.",
+      "explanation": "Kesinhesap kanunu teklifini Cumhurbaşkanı, ilgili malî yılın sonundan başlayarak en geç altı ay sonra sunar. Teklif, yeni yıl bütçe kanunu teklifiyle birlikte görüşülür ve karara bağlanır. Teklifin ve bildirimin verilmiş olması, sonuçlandırılamamış denetim ve hesap yargılamasını önlemez ve bunların karara bağlandığı anlamına gelmez.",
+      "articleRefs": [
+        "161"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Türkiye Büyük Millet Meclisince denetlenecek kamu kuruluş ve ortaklıklarında sermayenin ne kadarının Devlete ait olması gerekir?",
+      "back": "Yarısından fazlasının, doğrudan doğruya veya dolaylı olarak Devlete ait olması gerekir.",
+      "explanation": "Bu kuruluş ve ortaklıkların Türkiye Büyük Millet Meclisince denetlenmesinin esasları kanunla düzenlenir.",
+      "articleRefs": [
+        "165"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Kalkınma planlarını kim onaylar?",
+      "back": "Türkiye Büyük Millet Meclisi onaylar.",
+      "explanation": "Planların hazırlanması, onaylanması, uygulanması ve değiştirilmesine ilişkin usul ve esaslar kanunla düzenlenir. Kalkınma girişimleri plana göre gerçekleştirilir. Ekonomik ve Sosyal Konsey ise ekonomik ve sosyal politikaların oluşturulmasında Cumhurbaşkanına istişarî nitelikte görüş bildirir.",
+      "articleRefs": [
+        "166"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Dış ticaret işlemlerine vergi ve benzeri yükümlülükler dışında ek mali yükümlülük koyma yetkisi Cumhurbaşkanına nasıl verilebilir?",
+      "back": "Kanunla verilebilir. Bu yetki, dış ticaretin ülke ekonomisinin yararına düzenlenmesi amacıyla ek mali yükümlülükleri koymayı ve kaldırmayı kapsar.",
+      "explanation": "Devlet; para, kredi, sermaye, mal ve hizmet piyasalarının sağlıklı ve düzenli işlemesi için tedbir alır. Piyasalarda fiili veya anlaşma sonucu doğacak tekelleşme ve kartelleşmeyi de önler.",
+      "articleRefs": [
+        "167"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Devlet, tabii servetlerin aranması ve işletilmesi hakkını gerçek ve tüzelkişilere ancak onlarla ortak olarak mı devredebilir?",
+      "back": "Hayır. Devlet bu hakkı belli bir süre için gerçek ve tüzelkişilere devredebilir. İşin Devletle ortak olarak mı, yoksa doğrudan bu kişiler eliyle mi yapılacağı kanunun açık iznine bağlıdır.",
+      "explanation": "Tabii servetler ve kaynaklar Devletin hüküm ve tasarrufu altındadır. Gerçek ve tüzelkişilerin uyacağı şartlar, Devletçe yapılacak gözetim ve denetimin usul ve esasları ile müeyyideler kanunda gösterilir.",
+      "articleRefs": [
+        "168"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Yanan ormanların yerinde başka çeşit tarım ve hayvancılık yapılabilir mi?",
+      "back": "Hayır. Yanan ormanların yerinde yeni orman yetiştirilir ve bu yerlerde başka çeşit tarım ve hayvancılık yapılamaz.",
+      "explanation": "Bütün ormanların gözetimi Devlete aittir. Ormanlara zarar verebilecek hiçbir faaliyet ve eyleme müsaade edilemez.",
+      "articleRefs": [
+        "169"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Hangi amaçla işlenen suçlar genel ve özel af kapsamına alınamaz?",
+      "back": "Ormanları yakmak, ormanı yok etmek veya daraltmak amacıyla işlenen suçlar. Ayrıca münhasıran orman suçları için genel ve özel af çıkarılamaz.",
+      "explanation": "Devlet ormanlarının mülkiyeti devrolunamaz. Bu ormanlar zamanaşımı ile mülk edinilemez ve kamu yararı dışında irtifak hakkına konu olamaz. Ormanların tahrip edilmesine yol açan siyasi propaganda da yapılamaz.",
+      "articleRefs": [
+        "169"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Orman içinden nakledilen köyler halkına ait arazilere ne yapılır?",
+      "back": "Devlet ormanı olarak derhal ağaçlandırılır.",
+      "explanation": "Devlet, ormanlar içinde veya bitişiğindeki köyler halkının işletme araç ve gereçleriyle diğer girdilerinin sağlanmasını kolaylaştırıcı tedbirleri alır.",
+      "articleRefs": [
+        "170"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "İnkılap kanunlarının hangi hükümleri Anayasaya aykırı olduğu şeklinde anlaşılamaz ve yorumlanamaz?",
+      "back": "Anayasanın halkoyu ile kabul edildiği tarihte yürürlükte bulunan hükümleri.",
+      "explanation": "Madde bu kanunları, Türk toplumunu çağdaş uygarlık seviyesinin üstüne çıkarma ve Türkiye Cumhuriyetinin laiklik niteliğini koruma amacını güden kanunlar olarak sayar. Aralarında Tevhidi Tedrisat Kanunu, Şapka İktisası Hakkında Kanun ve Türk Harflerinin Kabul ve Tatbiki hakkında Kanun da vardır.",
+      "articleRefs": [
+        "174"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Anayasanın değiştirilmesi için Türkiye Büyük Millet Meclisi üye tamsayısının en az ne kadarının yazılı teklifi gerekir?",
+      "back": "En az üçte birinin yazılı teklifi gerekir; 600 üyede bu en az 200 milletvekili eder.",
+      "explanation": "Teklif Genel Kurulda iki defa görüşülür. Kabul için üye tamsayısının beşte üç çoğunluğunun gizli oyu gerekir.",
+      "articleRefs": [
+        "175",
+        "75"
+      ],
+      "derivedNumbers": [
+        {
+          "value": 200,
+          "expr": "600 / 3",
+          "refs": [
+            "75",
+            "175"
+          ],
+          "note": "üye tamsayısının üçte biri"
+        }
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Anayasa değişikliği hangi oy aralığında kabul edilirse, Cumhurbaşkanı iade etmediği takdirde halkoyuna sunulmak üzere Resmî Gazetede yayımlanır?",
+      "back": "Üye tamsayısının beşte üçü ile üçte ikisinden az oy arasında kabul edilirse; 600 üyede bu 360 ile 399 oy arasıdır.",
+      "explanation": "Halkoyuna sunulan değişikliğin yürürlüğe girmesi için halkoylamasında kullanılan geçerli oyların yarısından çoğunun kabul oyu olması gerekir.",
+      "articleRefs": [
+        "175",
+        "75"
+      ],
+      "derivedNumbers": [
+        {
+          "value": 360,
+          "expr": "600 * 3 / 5",
+          "refs": [
+            "75",
+            "175"
+          ],
+          "note": "üye tamsayısının beşte üçü"
+        },
+        {
+          "value": 399,
+          "expr": "600 * 2 / 3 - 1",
+          "refs": [
+            "75",
+            "175"
+          ],
+          "note": "üye tamsayısının üçte ikisinden bir eksik"
+        }
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Üye tamsayısının üçte iki çoğunluğuyla kabul edilen Anayasa değişikliğini Cumhurbaşkanı halkoyuna sunmak zorunda mıdır?",
+      "back": "Hayır. Cumhurbaşkanı kanunu veya gerekli gördüğü maddeleri halkoyuna sunabilir; halkoyuna sunulmayan kanun veya maddeler Resmî Gazetede yayımlanır.",
+      "explanation": "Cumhurbaşkanı kanunu bir daha görüşülmek üzere Meclise geri de gönderebilir. Meclis geri gönderilen kanunu üye tamsayısının üçte iki çoğunluğuyla aynen kabul ederse, Cumhurbaşkanı onu halkoyuna sunabilir.",
+      "articleRefs": [
+        "175"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Madde kenar başlıkları da başlangıç kısmı gibi Anayasa metnine dahil midir?",
+      "back": "Hayır. Başlangıç kısmı Anayasa metnine dahildir. Madde kenar başlıkları ise Anayasa metninden sayılmaz.",
+      "explanation": "Kenar başlıkları yalnız ilgili oldukları maddelerin konusunu, maddeler arasındaki sıralamayı ve bağlantıyı gösterir. Başlangıç kısmı ise Anayasanın dayandığı temel görüş ve ilkeleri belirtir.",
+      "articleRefs": [
+        "176"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Anayasa hangi işlemle Türkiye Cumhuriyeti Anayasası olur?",
+      "back": "Halkoylaması sonucu kabul edilip Resmî Gazetede yayımlanmasıyla olur. Maddede gösterilen istisnalar dışında bütünüyle yürürlüğe girer.",
+      "explanation": "İstisnaların yürürlüğe giriş anları ayrı ayrı düzenlenmiştir. Örneğin yasama ile ilgili hükümler, ilk milletvekili genel seçimi sonucunun ilanı ile birlikte yürürlüğe girer.",
+      "articleRefs": [
+        "177"
+      ]
+    }
+  ]
+}

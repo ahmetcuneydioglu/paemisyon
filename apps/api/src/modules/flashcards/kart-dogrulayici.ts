@@ -115,6 +115,8 @@ export function validateCard(
   if (issues.length) return done();
 
   const refTexts = c.articleRefs.map((n) => articles.get(n)?.text ?? '');
+  let tum: string[] | null = null;
+  const tumMetinler = () => (tum ??= [...articles.values()].map((a) => a.text));
   const derived = c.derivedNumbers ?? [];
   const counters = normalizeCounterNumbers(c.counterNumbers);
   const sayilar = extractNumbers(cardAnswerText(c));
@@ -123,7 +125,11 @@ export function validateCard(
     if (counters.includes(n)) {
       if (numberInTexts(n, refTexts))
         bad(`${n} karşı örnek olarak verilmiş ama referans metninde GEÇİYOR`);
-      else ok(`${n} karşı örnek (yanlış şık), metinde yok`);
+      else if (!numberInTexts(n, tumMetinler()))
+        bad(
+          `${n} karşı örnek mevzuatın hiçbir maddesinde geçmiyor (uydurma öğe; denetim 6 Kas 2026)`,
+        );
+      else ok(`${n} karşı örnek (yanlış şık), referans metninde yok`);
       continue;
     }
     if (numberInTexts(n, refTexts)) {

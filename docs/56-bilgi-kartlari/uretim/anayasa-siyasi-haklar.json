@@ -1,0 +1,260 @@
+{
+  "deck": {
+    "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+    "legislationSlug": "t-c-anayasasi",
+    "unitSlug": "anayasa-siyasi-haklar",
+    "sourceLabel": "AI bilgi kartı — T.C. Anayasası md 66–74",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: anayasa-siyasi-haklar özeti + resmî madde metni); denetim düzeltmesi 6 Kas 2026 (4 kart)"
+  },
+  "cards": [
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Bir çocuğun Türk sayılması için hem anasının hem babasının Türk olması gerekir mi?",
+      "back": "Hayır. Türk babanın veya Türk ananın çocuğu Türktür; ikisinden birinin Türk olması yeter.",
+      "explanation": "Genel tanım da ayrıca vardır: Türk Devletine vatandaşlık bağı ile bağlı olan herkes Türktür.",
+      "articleRefs": [
+        "66"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Türk vatandaşlığı hangi şartlarla kazanılır?",
+      "back": "Kanunun gösterdiği şartlarla kazanılır. Kaybı da ancak kanunda belirtilen hallerde olur.",
+      "explanation": "Kazanma da kaybetme de kanuna bağlıdır. İkisinin şartlarını kanun gösterir.",
+      "articleRefs": [
+        "66"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Bir Türk hangi durumda vatandaşlıktan çıkarılabilir?",
+      "back": "Ancak vatana bağlılıkla bağdaşmayan bir eylemde bulunursa. Böyle bir eylem olmadıkça hiçbir Türk vatandaşlıktan çıkarılamaz.",
+      "explanation": "Vatandaşlıktan çıkarma ile ilgili karar ve işlemlere karşı yargı yolu kapatılamaz.",
+      "articleRefs": [
+        "66"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Anayasa'ya göre seçimler ve halkoylaması hangi esaslara göre yapılır?",
+      "back": "Serbest, eşit, gizli, tek dereceli, genel oy, açık sayım ve döküm esaslarına göre yapılır. Seçimler ve halkoylaması yargı yönetim ve denetimi altında yapılır.",
+      "explanation": "Oy gizlidir; 'açık' nitelemesi yalnız sayım ve döküm için kullanılır. Yurt dışında bulunan Türk vatandaşlarının oy hakkını kullanabilmesi için uygulanabilir tedbirleri kanun belirler. Seçim kanunları da temsilde adalet ve yönetimde istikrar ilkelerini bağdaştıracak biçimde düzenlenir.",
+      "articleRefs": [
+        "67"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Seçim kanunlarında yapılan bir değişiklik, yürürlüğe girdiği tarihten itibaren ne kadar süre içinde yapılacak seçimlerde uygulanmaz?",
+      "back": "1 yıl. Süre, değişikliğin yürürlüğe girdiği tarihten başlar.",
+      "explanation": "Kural, değişiklik yapmayı yasaklamaz. Yalnızca değişikliğin, yürürlüğe girdiği tarihten itibaren bir yıl içinde yapılacak seçimlerde uygulanmasını engeller.",
+      "articleRefs": [
+        "67"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Tutuklular seçimlerde oy kullanabilir mi?",
+      "back": "Evet. Oy kullanamayanlar yalnız silah altındaki er ve erbaşlar, askerî öğrenciler ve taksirli suçlar hariç ceza infaz kurumlarındaki hükümlülerdir.",
+      "explanation": "Anayasa tutukevlerinde oy kullanılmasını öngörür. Ceza infaz kurumları ve tutukevlerinde oy kullanılması ile oyların sayım ve dökümünde seçim emniyeti için gerekli tedbirleri Yüksek Seçim Kurulu tespit eder. Bu işlemler görevli hakimin yerinde yönetim ve denetimi altında yapılır. Seçme hakkı, 18 yaşını dolduran her Türk vatandaşına tanınır.",
+      "articleRefs": [
+        "67"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Siyasi partiye üye olabilmek için kaç yaşını doldurmuş olmak gerekir?",
+      "back": "18 yaşını doldurmuş olmak gerekir.",
+      "explanation": "Siyasi parti kurma, usulüne göre partilere girme ve partilerden ayrılma hakkı vatandaşlara tanınmıştır. Siyasi partiler önceden izin almadan kurulur.",
+      "articleRefs": [
+        "68"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Anayasa'ya göre kimler siyasi partilere üye olamaz?",
+      "back": "Hakimler ve savcılar, Sayıştay dahil yüksek yargı organları mensupları, kamu kurum ve kuruluşlarının memur statüsündeki görevlileri, yaptıkları hizmet bakımından işçi niteliği taşımayan diğer kamu görevlileri, Silahlı Kuvvetler mensupları ile yükseköğretim öncesi öğrencileri.",
+      "explanation": "Yükseköğretim elemanlarının siyasi partilere üye olmaları ancak kanunla düzenlenebilir. Kanun, bu elemanların siyasi partilerin merkez organları dışında kalan parti görevi almalarına cevaz veremez.",
+      "articleRefs": [
+        "68"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Yükseköğretim öğrencileri siyasi partilere üye olamaz mı?",
+      "back": "Hayır, olabilirler. Üyelik yasağı yükseköğretim öncesi öğrencileri içindir; yükseköğretim öğrencilerinin üyelik esasları kanunla düzenlenir.",
+      "explanation": "Ayrım öğrenim düzeyine dayanır. Yükseköğretim öncesi öğrencisi, 18 yaşını doldurmuş olsa bile siyasi partiye üye olamaz.",
+      "articleRefs": [
+        "68"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Siyasi parti kapatma davasını kim açar?",
+      "back": "Yargıtay Cumhuriyet Başsavcısı açar. Davayı Anayasa Mahkemesi kesin olarak karara bağlar.",
+      "explanation": "Temelli kapatma sebepleri şunlardır:\n- Tüzük ve programın 68 inci maddenin dördüncü fıkrası hükümlerine aykırı bulunması.\n- Bu fıkraya aykırı eylemler. Bu durumda kapatma ancak partinin bu fiillerin işlendiği bir odak hâline geldiği Anayasa Mahkemesince tespit edilirse mümkündür.\n- Yabancı devletlerden, uluslararası kuruluşlardan ve Türk uyrukluğunda olmayan gerçek ve tüzel kişilerden maddi yardım alınması.\n\nTüzük/program aykırılığı ve odak olma hallerinde Anayasa Mahkemesi temelli kapatma yerine, fiillerin ağırlığına göre Devlet yardımından kısmen veya tamamen yoksun bırakmaya da karar verebilir. Yabancı devletlerden, uluslararası kuruluşlardan ve yabancı kişilerden maddi yardım alan parti ise temelli olarak kapatılır.",
+      "articleRefs": [
+        "69"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Partinin temelli kapatılmasına beyan veya faaliyetleriyle sebep olan üyeler, ne kadar süre başka bir partinin kurucusu, üyesi, yöneticisi ve deneticisi olamaz?",
+      "back": "5 yıl. Süre, Anayasa Mahkemesinin kesin kararının Resmî Gazetede gerekçeli olarak yayımlanmasından başlar.",
+      "explanation": "Yasak, kurucuları dahil üyeleri kapsar. Temelli kapatılan parti de bir başka ad altında kurulamaz.",
+      "articleRefs": [
+        "69"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Siyasi partilerin mali denetimini Sayıştay mı yapar?",
+      "back": "Hayır. Mal edinimleri ile gelir ve giderlerin kanuna uygunluğunu Anayasa Mahkemesi denetler; Sayıştay bu denetimde yardım sağlar.",
+      "explanation": "Anayasa Mahkemesinin bu denetim sonunda vereceği kararlar kesindir. Denetim yöntemleri ve aykırılıkta uygulanacak yaptırımlar kanunda gösterilir. Siyasi partiler ticari faaliyetlere girişemez; gelir ve giderlerinin de amaçlarına uygun olması gerekir.",
+      "articleRefs": [
+        "69"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Kamu hizmetlerine girme hakkı kime tanınmıştır?",
+      "back": "Her Türke. Her Türk, kamu hizmetlerine girme hakkına sahiptir.",
+      "articleRefs": [
+        "70"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Kamu hizmetine alınmada hangi ölçüt dışında ayırım gözetilemez?",
+      "back": "Görevin gerektirdiği nitelikler. Bunlardan başka hiçbir ayırım gözetilemez.",
+      "articleRefs": [
+        "70"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Anayasa, mal bildiriminde bulunma yükümlülüğünü kimler için öngörür?",
+      "back": "Kamu hizmetine girenler için.",
+      "articleRefs": [
+        "71"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Mal bildirimlerinin tekrarlanma süreleri hangi düzenlemeyle belirlenir?",
+      "back": "Kanunla. Mal bildiriminde bulunma ve bildirimlerin tekrarlanma süreleri kanunla düzenlenir.",
+      "articleRefs": [
+        "71"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Yasama ve yürütme organlarında görev alanlar mal bildiriminden istisna edilebilir mi?",
+      "back": "Hayır. Anayasa, yasama ve yürütme organlarında görev alanların bu yükümlülükten istisna edilemeyeceğini açıkça söyler.",
+      "articleRefs": [
+        "71"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Anayasa vatan hizmetini hak olarak mı, ödev olarak mı tanımlar?",
+      "back": "İkisi birden: vatan hizmeti her Türkün hakkı ve ödevidir.",
+      "articleRefs": [
+        "72"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Vatan hizmetinin Silahlı Kuvvetlerde veya kamu kesiminde nasıl yerine getirileceğini ne düzenler?",
+      "back": "Kanun. Hizmetin ne şekilde yerine getirileceği veya getirilmiş sayılacağı kanunla düzenlenir.",
+      "articleRefs": [
+        "72"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Vergi ödeme yükümlülüğünün ölçüsü nedir?",
+      "back": "Mali güç. Vergi, kamu giderlerini karşılamak üzere mali güce göre ödenir.",
+      "explanation": "Vergi yükünün adaletli ve dengeli dağılımı, maliye politikasının sosyal amacıdır.",
+      "articleRefs": [
+        "73"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Vergi ödeme yükümlülüğü yalnız Türk vatandaşlarına mı yüklenmiştir?",
+      "back": "Hayır. Anayasa vergi ödeme yükümlülüğünü herkese yükler.",
+      "explanation": "Vergi bir yükümlülük olarak yazılmıştır: herkes vergi ödemekle yükümlüdür.",
+      "articleRefs": [
+        "73"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Vergi muaflık, istisna, indirim ve oranlarında değişiklik yapma yetkisi kime verilebilir?",
+      "back": "Cumhurbaşkanına. Bu yetki yalnız kanunun belirttiği yukarı ve aşağı sınırlar içinde kullanılabilir.",
+      "explanation": "Vergiyi koymak, değiştirmek ya da kaldırmak kanuna aittir. Vergi, resim, harç ve benzeri mali yükümlülükler kanunla konulur, değiştirilir veya kaldırılır.",
+      "articleRefs": [
+        "73"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Kamu Başdenetçisi kaç yıl için seçilir?",
+      "back": "4 yıl için. Türkiye Büyük Millet Meclisi tarafından gizli oyla seçilir.",
+      "explanation": "Kamu Denetçiliği Kurumu, Türkiye Büyük Millet Meclisi Başkanlığına bağlı olarak kurulur ve idarenin işleyişiyle ilgili şikâyetleri inceler.",
+      "articleRefs": [
+        "74"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Kamu Başdenetçisi seçiminin ilk iki oylamasında hangi çoğunluk aranır?",
+      "back": "Üye tamsayısının üçte ikisi aranır. Üçüncü oylamada ise üye tamsayısının salt çoğunluğu aranır.",
+      "explanation": "Üçüncü oylamada salt çoğunluk sağlanamazsa, bu oylamada en çok oy alan iki aday için dördüncü oylama yapılır. Dördüncü oylamada en fazla oy alan aday seçilmiş olur; böylece seçim en geç dördüncü oylamada sonuçlanır.",
+      "articleRefs": [
+        "74"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Dilekçe hakkı kimlere tanınmıştır?",
+      "back": "Vatandaşlara ve karşılıklılık esası gözetilmek kaydıyla Türkiye'de ikamet eden yabancılara. Bunlar yetkili makamlara ve Türkiye Büyük Millet Meclisine yazı ile başvurabilir.",
+      "explanation": "Başvuru, kendileriyle veya kamu ile ilgili dilek ve şikâyetler hakkında yapılır. Kendileriyle ilgili başvuruların sonucu gecikmeksizin, dilekçe sahiplerine yazılı olarak bildirilir. Bilgi edinme ve kamu denetçisine başvurma hakkı ise herkese tanınmıştır.",
+      "articleRefs": [
+        "74"
+      ]
+    }
+  ]
+}

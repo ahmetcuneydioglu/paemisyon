@@ -1,0 +1,295 @@
+{
+  "deck": {
+    "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+    "legislationSlug": "t-c-anayasasi",
+    "unitSlug": "anayasa-yurutme-2",
+    "sourceLabel": "AI bilgi kartı — T.C. Anayasası md 123–137",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: anayasa-yurutme-2 özeti + resmî madde metni); stil kapısı (--onar) 3 açıklama yeniden yazıldı; denetim düzeltmesi 6 Kas 2026 (5 kart)"
+  },
+  "cards": [
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Kamu tüzelkişiliği hangi yollarla kurulur?",
+      "back": "Kanunla veya Cumhurbaşkanlığı kararnamesiyle kurulur.",
+      "explanation": "İdare, kuruluş ve görevleriyle bir bütündür ve kanunla düzenlenir. İdarenin kuruluş ve görevleri merkezden yönetim ve yerinden yönetim esaslarına dayanır.",
+      "articleRefs": [
+        "123"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Anayasaya göre kimler yönetmelik çıkarabilir?",
+      "back": "Cumhurbaşkanı, bakanlıklar ve kamu tüzelkişileri.",
+      "explanation": "Yönetmelik, kendi görev alanlarını ilgilendiren kanunların ve Cumhurbaşkanlığı kararnamelerinin uygulanmasını sağlamak üzere çıkarılır. Bunlara aykırı olmamak şartı aranır.",
+      "articleRefs": [
+        "124"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Her yönetmeliğin Resmî Gazetede yayımlanması zorunlu mudur?",
+      "back": "Hayır. Hangi yönetmeliklerin Resmî Gazetede yayımlanacağı kanunda belirtilir.",
+      "explanation": "Anayasa yayım konusunu kendisi düzenlemez, kanuna bırakır.",
+      "articleRefs": [
+        "124"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "İdari işlemde yürütmenin durdurulmasına karar verilebilmesi için hangi şartlar birlikte gerçekleşmelidir?",
+      "back": "Uygulanması hâlinde telafisi güç veya imkânsız zararların doğması ve işlemin açıkça hukuka aykırı olması; ikisi birlikte aranır.",
+      "explanation": "Şartlardan yalnız biri gerçekleşmişse yürütmenin durdurulması kararı verilemez.",
+      "articleRefs": [
+        "125"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Yürütmenin durdurulması kararı gerekçe gösterilmeden verilebilir mi?",
+      "back": "Hayır. Karar gerekçe gösterilerek verilir; bunun için idari işlemin uygulanması halinde telafisi güç veya imkansız zararların doğması ve işlemin açıkça hukuka aykırı olması şartları birlikte gerçekleşmelidir.",
+      "explanation": "Kanun, yürütmenin durdurulması kararı verilmesini sınırlayabilir. Bunun için olağanüstü hâller, seferberlik ve savaş hâli ile millî güvenlik, kamu düzeni ve genel sağlık nedenleri gerekir.",
+      "articleRefs": [
+        "125"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "İdari işlemlere karşı açılacak davalarda süre hangi tarihten başlar?",
+      "back": "Yazılı bildirim tarihinden başlar.",
+      "explanation": "İdarenin her türlü eylem ve işlemlerine karşı yargı yolu açıktır. İdare, kendi eylem ve işlemlerinden doğan zararı ödemekle yükümlüdür.",
+      "articleRefs": [
+        "125"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Anayasa'ya göre Türkiye merkezî idare kuruluşu bakımından nasıl bölümlere ayrılır?",
+      "back": "İllere; iller de diğer kademeli bölümlere ayrılır.",
+      "explanation": "Bu ayrım coğrafya durumuna, ekonomik şartlara ve kamu hizmetlerinin gereklerine göre yapılır. İllerin idaresi yetki genişliği esasına dayanır. Verim ve uyum için birden çok ili içine alan merkezî idare teşkilatı da kurulabilir.",
+      "articleRefs": [
+        "126"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Mahallî idarelerin seçimleri kaç yılda bir yapılır?",
+      "back": "Beş yılda bir; 67 nci maddedeki esaslara göre yapılır.",
+      "explanation": "Kanun, büyük yerleşim merkezleri için özel yönetim biçimleri getirebilir.",
+      "articleRefs": [
+        "127"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Görevleriyle ilgili bir suç sebebiyle hakkında soruşturma veya kovuşturma açılan mahallî idare organını kim görevden uzaklaştırabilir?",
+      "back": "İçişleri Bakanı; geçici bir tedbir olarak, kesin hükme kadar uzaklaştırabilir.",
+      "explanation": "Kural olarak seçilmiş organların organlık sıfatını kazanmalarına ilişkin itirazların çözümü ve bu sıfatı kaybetmeleri konusundaki denetim yargı yoluyla olur. İçişleri Bakanının uzaklaştırma yetkisi bu kuralın istisnasıdır.",
+      "articleRefs": [
+        "127"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Mahallî idareler belirli kamu hizmetlerini görmek için kendi aralarında kimin izniyle birlik kurabilir?",
+      "back": "Cumhurbaşkanının izniyle kurabilir.",
+      "explanation": "Birliklerin görevleri, yetkileri, maliye ve kolluk işleri ile merkezî idareyle karşılıklı bağ ve ilgileri kanunla düzenlenir. Mahallî idarelere görevleriyle orantılı gelir kaynakları sağlanır.",
+      "articleRefs": [
+        "127"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Memurların özlük işleri kanunla düzenlenirken hangi hükümler saklı tutulur?",
+      "back": "Malî ve sosyal haklara ilişkin toplu sözleşme hükümleri saklıdır.",
+      "explanation": "Kamu hizmetlerinin gerektirdiği asli ve sürekli görevler, memurlar ve diğer kamu görevlileri eliyle görülür. Üst kademe yöneticilerinin yetiştirilme usul ve esasları kanunla özel olarak düzenlenir.",
+      "articleRefs": [
+        "128"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Hangi güvence tanınmadıkça memurlara ve diğer kamu görevlilerine disiplin cezası verilemez?",
+      "back": "Savunma hakkı. Savunma hakkı tanınmadıkça disiplin cezası verilemez; disiplin kararları da yargı denetimi dışında bırakılamaz.",
+      "explanation": "Savunma güvencesi memurları ve diğer kamu görevlilerini kapsar. Kamu kurumu niteliğindeki meslek kuruluşları ile üst kuruluşlarının mensupları da bu güvenceden yararlanır. Silahlı Kuvvetler mensupları ile hakimler ve savcılar hakkındaki hükümler saklıdır.",
+      "articleRefs": [
+        "129"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Memurlara verilen disiplin kararları yargı denetimi dışında bırakılabilir mi?",
+      "back": "Hayır; disiplin kararları yargı denetimi dışında bırakılamaz.",
+      "explanation": "Memurlar ve diğer kamu görevlileri hakkında, işledikleri iddia edilen suçlardan ötürü ceza kovuşturması açılabilmesi kanunun gösterdiği idari merciin iznine bağlıdır. Kanunla belirlenen istisnalar bu izin şartının dışındadır.",
+      "articleRefs": [
+        "129"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Kamu görevlisinin yetkisini kullanırken işlediği kusurdan doğan tazminat davası kime karşı açılır?",
+      "back": "Ancak idare aleyhine açılır; görevliye rücu edilmek kaydıyla ve kanunun gösterdiği şekil ve şartlara uygun olarak.",
+      "explanation": "Memurlar ve diğer kamu görevlileri, Anayasa ve kanunlara sadık kalarak faaliyette bulunmakla yükümlüdür.",
+      "articleRefs": [
+        "129"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Kamu tüzelkişiliğine ve bilimsel özerkliğe sahip üniversiteler nasıl kurulur?",
+      "back": "Devlet tarafından kanunla kurulur.",
+      "explanation": "Vakıflar da kanunda gösterilen usul ve esaslara göre, kazanç amacına yönelik olmamak şartıyla, Devletin gözetim ve denetimine tabi yükseköğretim kurumları kurabilir. Kanun, üniversitelerin ülke sathına dengeli bir biçimde yayılmasını gözetir.",
+      "articleRefs": [
+        "130"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Üniversite rektörlerini Yükseköğretim Kurulu mu seçer ve atar?",
+      "back": "Hayır. Rektörleri Cumhurbaşkanı, dekanları Yükseköğretim Kurulu seçer ve atar.",
+      "explanation": "Üniversite yönetim ve denetim organları ile öğretim elemanları görevlerinden uzaklaştırılamaz. Bu güvence, Yükseköğretim Kurulunun veya üniversitelerin yetkili organlarının dışında kalan makamlara karşı geçerlidir.",
+      "articleRefs": [
+        "130"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Yükseköğretim Kurulu üyeleri kim tarafından atanır veya seçilir?",
+      "back": "Cumhurbaşkanınca. Üyelerin bir kısmı üniversitelerin seçtiği adaylar arasından atanır, bir kısmı doğrudan doğruya seçilir.",
+      "explanation": "Atamada rektörlük ve öğretim üyeliğinde başarılı hizmet yapmış profesörlere öncelik verilir. Adayların sayıları, nitelikleri ve seçilme usulleri kanunla belirlenir.",
+      "articleRefs": [
+        "131"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Emniyet teşkilatına bağlı yükseköğretim kurumları hangi hükümlere tabidir?",
+      "back": "Özel kanunlarının hükümlerine tabidir.",
+      "explanation": "Aynı kural Türk Silahlı Kuvvetlerine bağlı yükseköğretim kurumları için de geçerlidir.",
+      "articleRefs": [
+        "132"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Radyo ve Televizyon Üst Kurulu kaç üyeden oluşur?",
+      "back": "Dokuz üyeden oluşur.",
+      "explanation": "Kurul, radyo ve televizyon faaliyetlerini düzenlemek ve denetlemek amacıyla kurulur. Kuruluşu, görev ve yetkileri, üyelerinin nitelikleri, seçim usulleri ve görev süreleri kanunla düzenlenir.",
+      "articleRefs": [
+        "133"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Radyo ve Televizyon Üst Kurulu üyelerini kim seçer?",
+      "back": "Türkiye Büyük Millet Meclisi Genel Kurulu seçer; seçimde her siyasi parti grubuna düşen üye sayısı esas alınır.",
+      "explanation": "Adayları siyasi parti grupları gösterir.",
+      "articleRefs": [
+        "133"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Radyo ve Televizyon Üst Kurulu seçiminde siyasi parti grupları, kendilerine düşen üye sayısının kaç katı aday gösterir?",
+      "back": "İkişer katı aday gösterirler. Her gruba düşen üye sayısı, grupların üye sayısı oranında belirlenir.",
+      "explanation": "Devletçe kamu tüzelkişiliği olarak kurulan tek radyo ve televizyon kurumu ile kamu tüzelkişilerinden yardım gören haber ajanslarının özerkliği ve yayınlarının tarafsızlığı esastır.",
+      "articleRefs": [
+        "133"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Atatürk Kültür, Dil ve Tarih Yüksek Kurumu hangi kurumlardan oluşur?",
+      "back": "Atatürk Araştırma Merkezi, Türk Dil Kurumu, Türk Tarih Kurumu ve Atatürk Kültür Merkezinden oluşur.",
+      "explanation": "Kurum kamu tüzel kişiliğine sahiptir. Atatürk'ün manevi himayelerinde, Cumhurbaşkanının gözetim ve desteğinde, Cumhurbaşkanının görevlendireceği bakana bağlıdır. Türk Dil Kurumu ile Türk Tarih Kurumu için Atatürk'ün vasiyetnamesinde belirtilen mali menfaatler saklıdır.",
+      "articleRefs": [
+        "134"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Kanunla yetkilendirilen merciin meslek kuruluşunu faaliyetten men kararı, görevli hâkimin onayına kaç saat içinde sunulur?",
+      "back": "Yirmidört saat içinde sunulur.",
+      "explanation": "Men yetkisi; millî güvenliğin, kamu düzeninin, suç işlenmesini veya suçun devamını önlemenin yahut yakalamanın gerektirdiği hallerde, gecikmede sakınca varsa tanınabilir.",
+      "articleRefs": [
+        "135"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Meslek kuruluşunu faaliyetten men kararı önüne gelen hâkim, kararını kaç saat içinde açıklar?",
+      "back": "Kırksekiz saat içinde açıklar; aksi halde idari karar kendiliğinden yürürlükten kalkar.",
+      "articleRefs": [
+        "135"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Kuruluş amaçları dışında faaliyet gösteren meslek kuruluşunun sorumlu organlarının görevine nasıl son verilir?",
+      "back": "Mahkeme kararıyla son verilir. Karar, kanunun belirlediği merciin veya Cumhuriyet savcısının istemi üzerine verilir ve yerlerine yenileri seçtirilir.",
+      "explanation": "Kamu kurumu niteliğindeki meslek kuruluşları kuruluş amaçları dışında faaliyette bulunamaz. Organlarının seçimlerinde siyasi partiler aday gösteremez. Organlar kendi üyelerince, yargı gözetimi altında, gizli oyla seçilir.",
+      "articleRefs": [
+        "135"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Kamu hizmetinde çalışan kişi, üstünden aldığı emri kanuna aykırı görürse ne yapar?",
+      "back": "Emri yerine getirmez ve bu aykırılığı emri verene bildirir.",
+      "explanation": "Emir yalnız kanuna göre değerlendirilmez; yönetmeliğe, Cumhurbaşkanlığı kararnamesine ve Anayasa hükümlerine aykırılık yönünden de değerlendirilir.",
+      "articleRefs": [
+        "137"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Üst, hukuka aykırı bulunan emrinde ısrar edip emri yazıyla yenilerse emri yerine getiren sorumlu olur mu?",
+      "back": "Hayır; bu durumda emir yerine getirilir ve emri yerine getiren sorumlu olmaz.",
+      "explanation": "Askerî hizmetlerin görülmesi ve acele hallerde kamu düzeni ve kamu güvenliğinin korunması için kanunla gösterilen istisnalar saklıdır.",
+      "articleRefs": [
+        "137"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Konusu suç teşkil eden emir, üst tarafından yazıyla yenilenirse yerine getirilir mi?",
+      "back": "Hayır. Konusu suç teşkil eden emir hiçbir suretle yerine getirilmez; yerine getiren kimse sorumluluktan kurtulamaz.",
+      "articleRefs": [
+        "137"
+      ],
+      "counterNumbers": []
+    }
+  ]
+}

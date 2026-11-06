@@ -1,0 +1,300 @@
+{
+  "deck": {
+    "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+    "legislationSlug": "t-c-anayasasi",
+    "unitSlug": "anayasa-sosyal-ekonomik-haklar",
+    "sourceLabel": "AI bilgi kartı — T.C. Anayasası md 41–65",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: anayasa-sosyal-ekonomik-haklar özeti + resmî madde metni); denetim düzeltmesi 6 Kas 2026 (2 kart + 2 öneri)"
+  },
+  "cards": [
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Anayasaya göre aile neye dayanır?",
+      "back": "Eşler arasında eşitliğe dayanır. Aile, Türk toplumunun temelidir.",
+      "explanation": "Devlet; ailenin huzur ve refahı ile özellikle ananın ve çocukların korunması ve aile planlamasının öğretimi ile uygulanmasını sağlamak için gerekli tedbirleri alır, teşkilatı kurar.",
+      "articleRefs": [
+        "41"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Her çocuğun ana ve babasıyla kişisel ve doğrudan ilişki kurma ve sürdürme hakkı hangi kayda bağlıdır?",
+      "back": "Bu ilişkinin çocuğun yüksek yararına açıkça aykırı olmaması kaydına bağlıdır.",
+      "explanation": "Her çocuk ayrıca korunma ve bakımdan yararlanma hakkına sahiptir. Devlet, çocukları her türlü istismara ve şiddete karşı koruyucu tedbirleri alır.",
+      "articleRefs": [
+        "41"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "İlköğretim kimler için zorunludur?",
+      "back": "Kız ve erkek bütün vatandaşlar için zorunludur. İlköğretim Devlet okullarında parasızdır.",
+      "explanation": "Kimse eğitim ve öğrenim hakkından yoksun bırakılamaz. Devlet, maddi imkânlardan yoksun başarılı öğrencilerin öğrenimlerini sürdürebilmeleri için burslar ve başka yollarla gerekli yardımları yapar.",
+      "articleRefs": [
+        "42"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Eğitim ve öğretim kimin gözetim ve denetimi altında yapılır?",
+      "back": "Devletin gözetim ve denetimi altında yapılır; Atatürk ilkeleri ve inkılapları doğrultusunda, çağdaş bilim ve eğitim esaslarına göre yürütülür.",
+      "explanation": "Bu esaslara aykırı eğitim ve öğretim yerleri açılamaz. Eğitim ve öğretim hürriyeti, Anayasaya sadakat borcunu ortadan kaldırmaz. Eğitim kurumlarında sadece eğitim, öğretim, araştırma ve inceleme ile ilgili faaliyetler yürütülür.",
+      "articleRefs": [
+        "42"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Devlet, bitkisel ve hayvansal ürünlerle ilgili tedbirleri hangi amaçla alır?",
+      "back": "Ürünlerin değerlendirilmesi ve gerçek değerlerinin üreticinin eline geçmesi amacıyla tedbir alır.",
+      "explanation": "Devlet ayrıca, tarım arazileri ile çayır ve mer'aların amaç dışı kullanılmasını ve tahribini önlemek ve bitkisel ve hayvansal üretimi artırmak maksadıyla, tarım ve hayvancılıkla uğraşanların işletme araç ve gereçlerinin ve diğer girdilerinin sağlanmasını kolaylaştırır.",
+      "articleRefs": [
+        "45"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Kamulaştırma bedeli kural olarak nasıl ödenir?",
+      "back": "Nakden ve peşin ödenir. Kesin hükme bağlanan artırım bedeli de nakden ve peşin ödenir.",
+      "explanation": "Devlet ve kamu tüzel kişileri, kamu yararının gerektirdiği hallerde, gerçek karşılıklarını peşin ödemek şartıyla özel mülkiyetteki taşınmaz malların tamamını veya bir kısmını kamulaştırabilir. Bunlar üzerinde idarî irtifak da kurabilir.",
+      "articleRefs": [
+        "46"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Kanun kamulaştırma bedelinin taksitle ödenmesini öngörürse taksitlendirme süresi en çok ne kadar olabilir?",
+      "back": "Beş yıl. Taksitlendirme süresi bu süreyi aşamaz ve taksitler eşit olarak ödenir.",
+      "explanation": "Taksit, şu amaçlarla kamulaştırılan topraklar için öngörülebilir: tarım reformu, büyük enerji ve sulama projeleri, iskân projeleri, yeni ormanların yetiştirilmesi, kıyıların korunması ve turizm. Taksitlerde kamu alacakları için öngörülen en yüksek faiz uygulanır.",
+      "articleRefs": [
+        "46"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Turizm amacıyla kamulaştırılan toprak, onu doğrudan doğruya işleten küçük çiftçiye aitse bedeli taksitle ödenebilir mi?",
+      "back": "Hayır. Kamulaştırılan topraklardan, o toprağı doğrudan doğruya işleten küçük çiftçiye ait olanların bedeli her halde peşin ödenir.",
+      "explanation": "Turizm, tarım reformu ve iskân gibi amaçlarla kamulaştırılan topraklarda bedelin ödenme şeklini kanun gösterir ve kanun taksit öngörebilir. Küçük çiftçinin doğrudan işlettiği toprakta ise bedel her halde peşin ödenir.",
+      "articleRefs": [
+        "46"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Kamu yararının zorunlu kıldığı hallerde her özel teşebbüs devletleştirilebilir mi?",
+      "back": "Hayır. Devletleştirilebilecek olanlar kamu hizmeti niteliği taşıyan özel teşebbüslerdir; bunun için de kamu yararının zorunlu kılması gerekir.",
+      "explanation": "Devletleştirme gerçek karşılığı üzerinden yapılır. Gerçek karşılığın hesaplanma tarzı ve usulleri kanunla düzenlenir.",
+      "articleRefs": [
+        "47"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Kamu iktisadi teşebbüslerinin yürüttüğü yatırım ve hizmetler, gerçek veya tüzelkişilere hangi tür sözleşmelerle yaptırılabilir?",
+      "back": "Özel hukuk sözleşmeleriyle yaptırılabilir. Hangilerinin yaptırılabileceğini ya da devredilebileceğini kanun belirler.",
+      "explanation": "Devletin, kamu iktisadi teşebbüslerinin ve diğer kamu tüzelkişilerinin mülkiyetindeki işletme ve varlıkların özelleştirilmesine ilişkin esas ve usuller de kanunla gösterilir.",
+      "articleRefs": [
+        "47"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Herkes hangi alanda çalışma ve sözleşme hürriyetine sahiptir?",
+      "back": "Dilediği alanda. Özel teşebbüsler kurmak da serbesttir.",
+      "explanation": "Devlet, özel teşebbüslerin millî ekonominin gereklerine ve sosyal amaçlara uygun yürümesini, güvenlik ve kararlılık içinde çalışmasını sağlayacak tedbirleri alır.",
+      "articleRefs": [
+        "48"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Çalışma şartları bakımından kimler özel olarak korunur?",
+      "back": "Küçükler ve kadınlar ile bedenî ve ruhî yetersizliği olanlar özel olarak korunur.",
+      "explanation": "Kimse yaşına, cinsiyetine ve gücüne uymayan işlerde çalıştırılamaz. Dinlenmek çalışanların hakkıdır. Ücretli hafta ve bayram tatili ile ücretli yıllık izin hakları ve şartları kanunla düzenlenir.",
+      "articleRefs": [
+        "50"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Sendika kurmak için önceden izin almak gerekir mi?",
+      "back": "Hayır. Çalışanlar ve işverenler önceden izin almaksızın sendika ve üst kuruluş kurabilir.",
+      "explanation": "Çalışanlar ve işverenler sendikalara serbestçe üye olabilir ve üyelikten serbestçe çekilebilir. Hiç kimse bir sendikaya üye olmaya ya da üyelikten ayrılmaya zorlanamaz.",
+      "articleRefs": [
+        "51"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Sendika kurma hakkı hangi sebeplerle sınırlanabilir?",
+      "back": "Millî güvenlik, kamu düzeni, suç işlenmesinin önlenmesi, genel sağlık ve genel ahlâk ile başkalarının hak ve özgürlüklerinin korunması sebepleriyle ve ancak kanunla.",
+      "explanation": "İşçi niteliği taşımayan kamu görevlilerinin bu alandaki haklarının kapsamı, istisnaları ve sınırları, gördükleri hizmetin niteliğine uygun olarak kanunla düzenlenir. Sendika tüzükleri, yönetim ve işleyişleri Cumhuriyetin temel niteliklerine ve demokrasi esaslarına aykırı olamaz.",
+      "articleRefs": [
+        "51"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Anayasa, toplu sözleşme hükümlerinin emeklilere yansıtılmasını yasaklar mı?",
+      "back": "Hayır. Toplu sözleşme hükümlerinin emeklilere yansıtılması kanunla düzenlenir.",
+      "explanation": "Kanunla düzenlenen diğer konular şunlardır: toplu sözleşme hakkının kapsamı ve istisnaları, toplu sözleşmeden yararlanacaklar, toplu sözleşmenin yapılma şekli, usulü ve yürürlüğü, Kamu Görevlileri Hakem Kurulunun teşkili ve çalışma usul ve esasları.",
+      "articleRefs": [
+        "53"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Memurlar ve diğer kamu görevlileri için toplu sözleşme uyuşmazlığında Anayasanın öngördüğü yol grev midir?",
+      "back": "Hayır. Memurlar ve diğer kamu görevlileri uyuşmazlıkta Kamu Görevlileri Hakem Kuruluna başvurabilir. Grev hakkı ise toplu iş sözleşmesi uyuşmazlığında işçilere tanınır.",
+      "explanation": "Kamu Görevlileri Hakem Kurulu kararları kesindir ve toplu sözleşme hükmündedir. Toplu iş sözleşmesini ise işçiler ve işverenler yapar.",
+      "articleRefs": [
+        "53",
+        "54"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Grev ve lokavt yasaklandığında uyuşmazlığı Kamu Görevlileri Hakem Kurulu mu çözer?",
+      "back": "Hayır. Grev ve lokavtın yasaklandığı hallerde ya da ertelemenin sonunda uyuşmazlığı Yüksek Hakem Kurulu çözer.",
+      "explanation": "Taraflar uyuşmazlığın her safhasında anlaşarak da Yüksek Hakem Kuruluna başvurabilir. Bu kurulun kararları kesindir ve toplu iş sözleşmesi hükmündedir.",
+      "articleRefs": [
+        "54"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Grev hakkı ve lokavt hangi şekillerde kullanılamaz?",
+      "back": "İyiniyet kurallarına aykırı tarzda, toplum zararına ve millî serveti tahrip edecek şekilde kullanılamaz.",
+      "explanation": "Grev hakkı, toplu iş sözleşmesinin yapılması sırasında uyuşmazlık çıkınca işçilere tanınır; lokavta ise işveren başvurur. Greve katılmayanların işyerinde çalışmaları, greve katılanlar tarafından hiçbir şekilde engellenemez.",
+      "articleRefs": [
+        "54"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Asgarî ücretin tespitinde neler göz önünde bulundurulur?",
+      "back": "Çalışanların geçim şartları ile ülkenin ekonomik durumu da göz önünde bulundurulur.",
+      "explanation": "Ücret emeğin karşılığıdır. Devlet, çalışanların yaptıkları işe uygun adaletli bir ücret elde etmeleri ve diğer sosyal yardımlardan yararlanmaları için gerekli tedbirleri alır.",
+      "articleRefs": [
+        "55"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Çevreyi geliştirmek ve çevre kirlenmesini önlemek yalnız Devletin ödevi midir?",
+      "back": "Hayır. Çevreyi geliştirmek, çevre sağlığını korumak ve çevre kirlenmesini önlemek Devletin ve vatandaşların ödevidir.",
+      "explanation": "Aynı maddede herkese sağlıklı ve dengeli bir çevrede yaşama hakkı tanınır.",
+      "articleRefs": [
+        "56"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Sağlık hizmetlerinin yaygın bir şekilde yerine getirilmesi için kanunla ne kurulabilir?",
+      "back": "Genel sağlık sigortası kurulabilir.",
+      "explanation": "Devlet sağlık kuruluşlarını tek elden planlar ve hizmet vermelerini düzenler. Bu görevini kamu ve özel kesimdeki sağlık ve sosyal kurumlardan yararlanarak ve onları denetleyerek yerine getirir.",
+      "articleRefs": [
+        "56"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Devlet konut ihtiyacını karşılamak için hangi teşebbüsleri destekler?",
+      "back": "Toplu konut teşebbüslerini destekler.",
+      "explanation": "Devlet, konut ihtiyacını karşılayacak tedbirleri şehirlerin özelliklerini ve çevre şartlarını gözeten bir planlama çerçevesinde alır.",
+      "articleRefs": [
+        "57"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Devlet gençleri nelerden korumak için gerekli tedbirleri alır?",
+      "back": "Alkol düşkünlüğünden, uyuşturucu maddelerden, suçluluk, kumar ve benzeri kötü alışkanlıklardan ve cehaletten korumak için.",
+      "explanation": "Devlet, gençlerin müsbet ilmin ışığında, Atatürk ilke ve inkılapları doğrultusunda yetişmelerini sağlayıcı tedbirleri de alır.",
+      "articleRefs": [
+        "58"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Spor federasyonlarının her kararına karşı yalnız zorunlu tahkim yoluna mı başvurulur?",
+      "back": "Hayır. Zorunlu tahkim, spor faaliyetlerinin yönetimine ve disiplinine ilişkin kararlar içindir. Tahkim kurulu kararları kesindir ve hiçbir yargı merciine başvurulamaz.",
+      "explanation": "Devlet her yaştaki Türk vatandaşlarının beden ve ruh sağlığını geliştirecek tedbirleri alır, sporun kitlelere yayılmasını teşvik eder ve başarılı sporcuyu korur.",
+      "articleRefs": [
+        "59"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Sosyal güvenlik hakkına kimler sahiptir?",
+      "back": "Herkes sosyal güvenlik hakkına sahiptir.",
+      "explanation": "Devlet bu güvenliği sağlayacak gerekli tedbirleri alır ve teşkilatı kurar.",
+      "articleRefs": [
+        "60"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Devlet, harp ve vazife şehitlerinin dul ve yetimleri ile malül ve gazilere toplumda ne sağlar?",
+      "back": "Kendilerine yaraşır bir hayat seviyesi sağlar; Devlet onları korur.",
+      "explanation": "Devlet sakatların korunmalarını ve toplum hayatına intibaklarını sağlar. Yaşlılar Devletçe korunur ve onlara sağlanacak yardımlar kanunla düzenlenir. Korunmaya muhtaç çocukların topluma kazandırılması için Devlet her türlü tedbiri alır. Bu amaçlarla gerekli teşkilat ve tesisleri kurar veya kurdurur.",
+      "articleRefs": [
+        "61"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Yabancı ülkelerde çalışan Türk vatandaşlarının yurda dönüşleriyle ilgili olarak Devletin görevi nedir?",
+      "back": "Yurda dönüşlerinde bu vatandaşlara yardımcı olunması için gereken tedbirleri almaktır.",
+      "explanation": "Devlet bu vatandaşlar için şu konularda da tedbir alır: aile birliği, çocuklarının eğitimi, kültürel ihtiyaçları, sosyal güvenlikleri ve anavatanla bağlarının korunması.",
+      "articleRefs": [
+        "62"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Devlet, sosyal ve ekonomik alanlardaki görevlerini hangi ölçüde yerine getirir?",
+      "back": "Malî kaynaklarının yeterliliği ölçüsünde yerine getirir; bunu yaparken bu görevlerin amaçlarına uygun öncelikleri gözetir.",
+      "explanation": "Bu ölçü, Anayasanın sosyal ve ekonomik alanlarda Devlete verdiği bütün görevler için geçerlidir.",
+      "articleRefs": [
+        "65"
+      ]
+    }
+  ]
+}

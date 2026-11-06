@@ -1,0 +1,397 @@
+{
+  "deck": {
+    "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+    "legislationSlug": "t-c-anayasasi",
+    "unitSlug": "anayasa-yasama-2",
+    "sourceLabel": "AI bilgi kartı — T.C. Anayasası md 87–100",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: anayasa-yasama-2 özeti + resmî madde metni); denetim düzeltmesi 6 Kas 2026 (8 kart)"
+  },
+  "cards": [
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Para basılmasına kim karar verir?",
+      "back": "Türkiye Büyük Millet Meclisi karar verir. Savaş ilânına karar vermek de Meclis'in aynı görev listesinde yer alır.",
+      "explanation": "md 87'de sayılır: kanun koymak, değiştirmek ve kaldırmak; bütçe ve kesinhesap kanun tekliflerini görüşüp kabul etmek; para basılmasına ve savaş ilânına karar vermek; milletlerarası andlaşmaların onaylanmasını uygun bulmak; genel ve özel af ilânına karar vermek. Anayasanın diğer maddelerinde öngörülen yetkiler de Meclis'indir.",
+      "articleRefs": [
+        "87"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Türkiye Büyük Millet Meclisi genel ve özel af ilânına hangi çoğunlukla karar verir?",
+      "back": "Üye tamsayısının beşte üç çoğunluğuyla karar verir. 600 üyede en az 360 kabul oyu gerekir.",
+      "explanation": "Oran toplantıya katılanlara göre değil, üye tamsayısına göre hesaplanır. Oturuma kaç kişi katılırsa katılsın eşik değişmez. Görev listesinde çoğunluk oranı yazılan tek iş af ilânıdır.",
+      "articleRefs": [
+        "87",
+        "75"
+      ],
+      "derivedNumbers": [
+        {
+          "value": 360,
+          "expr": "600 * 3 / 5",
+          "refs": [
+            "75",
+            "87"
+          ],
+          "note": "üye tamsayısının beşte üçü"
+        }
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Kanunları yayımlamak Türkiye Büyük Millet Meclisinin görevlerinden biri mi?",
+      "back": "Hayır. Meclis kanunları kabul eder, kabul edilen kanunları yayımlayan ise Cumhurbaşkanıdır.",
+      "explanation": "Meclis'in görev listesinde kanun koymak, değiştirmek ve kaldırmak yer alır. Yayım ayrı bir işlemdir ve Cumhurbaşkanına aittir. Olağanüstü hâl ilân etmek de Meclis'in görev listesinde geçmez.",
+      "articleRefs": [
+        "87",
+        "89"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Anayasa'ya göre kanun teklif etmeye kim yetkilidir?",
+      "back": "Milletvekilleri yetkilidir. Tekliflerin Meclis'te görüşülme usul ve esasları içtüzükle düzenlenir.",
+      "explanation": "Kanun teklif etme yetkisi maddede milletvekillerine tanınmıştır; milletvekili seçildiği bölgeyi değil bütün Milleti temsil ettiğinden her milletvekili her konuda teklif verebilir.",
+      "articleRefs": [
+        "88",
+        "80"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Cumhurbaşkanı, Türkiye Büyük Millet Meclisince kabul edilen kanunları kaç gün içinde yayımlar?",
+      "back": "15 gün içinde yayımlar. Uygun bulmadığı kanunu Meclis'e geri göndermek için de aynı süre geçerlidir.",
+      "explanation": "Geri gönderme gerekçeyle birlikte yapılır. Geri gönderme sebebi Anayasaya aykırılıkla sınırlı değildir, çünkü madde yalnızca “uygun bulmadığı” kanunlardan söz eder. Bütçe kanunları geri gönderme hükmüne tabi değildir.",
+      "articleRefs": [
+        "89"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Cumhurbaşkanının geri gönderdiği kanunun Meclis'te aynen kabul edilmesi için hangi çoğunluk gerekir?",
+      "back": "Üye tamsayısının salt çoğunluğu gerekir; 600 üyede 301 oy. Bu çoğunlukla aynen kabul edilen kanun Cumhurbaşkanınca yayımlanır.",
+      "explanation": "“Toplantıya katılanların salt çoğunluğu” da basit çoğunluk da yetmez. Meclis geri gönderilen kanunda yeni bir değişiklik yaparsa, Cumhurbaşkanı değiştirilen kanunu tekrar geri gönderebilir. Aynen kabulden sonraki yayım için maddede ayrı bir süre yazmaz.",
+      "articleRefs": [
+        "89",
+        "75"
+      ],
+      "derivedNumbers": [
+        {
+          "value": 301,
+          "expr": "floor(600 / 2) + 1",
+          "refs": [
+            "75",
+            "89"
+          ],
+          "note": "üye tamsayısının salt çoğunluğu"
+        }
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Cumhurbaşkanı bir kanunun bazı maddelerini uygun bulmazsa, itiraz etmediği kısmı yayımlayıp yalnız o maddeleri Meclis'e gönderebilir mi?",
+      "back": "Hayır. Kısmen uygun bulmasa da kanunun kendisini geri gönderir. Meclis isterse sadece uygun bulunmayan maddeleri görüşebilir.",
+      "explanation": "Metin “görüşebilir” der, yani yalnız uygun bulunmayan maddeleri görüşmek Meclis için bir imkândır. Seçim hakkı Meclis'tedir, Cumhurbaşkanında değil. Anayasa değişikliklerine ilişkin hükümler saklıdır.",
+      "articleRefs": [
+        "89"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Yayımlanma ile yürürlüğe konabilen ekonomik, ticari veya teknik andlaşmaların süresi en fazla ne kadar olabilir?",
+      "back": "Bir yıl. Süresi bir yılı aşmayan bu andlaşmalar, yayımlarından başlayarak iki ay içinde Meclis'in bilgisine sunulur.",
+      "explanation": "Diğer şartlar şunlardır: Devlet Maliyesi bakımından bir yüklenme getirmemek, kişi hallerine ve Türklerin yabancı memleketlerdeki mülkiyet haklarına dokunmamak. Bir yıl andlaşmanın süresi, iki ay Meclis'e bilgi sunma süresidir.",
+      "articleRefs": [
+        "90"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Türk kanunlarına değişiklik getiren ve süresi bir yılı aşmayan teknik bir andlaşma, yayımlanma ile yürürlüğe konabilir mi?",
+      "back": "Hayır. Türk kanunlarına değişiklik getiren her türlü andlaşmada Meclis'in onaylamayı bir kanunla uygun bulması gerekir.",
+      "explanation": "Süre ve konu şartları karşılansa bile kural değişmez; birinci fıkradaki kanunla uygun bulma uygulanır. Meclis bunu bir kanunla uygun bulur.",
+      "articleRefs": [
+        "90"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Usulüne göre yürürlüğe konulmuş, temel hak ve özgürlüklere ilişkin bir andlaşma ile bir kanun aynı konuda farklı hükümler içerirse hangisi esas alınır?",
+      "back": "Milletlerarası andlaşma hükümleri esas alınır.",
+      "explanation": "Usulüne göre yürürlüğe konulmuş milletlerarası andlaşmalar kanun hükmündedir; “Cumhurbaşkanlığı kararnamesi hükmündedir” ifadesi yanlıştır. Bu andlaşmalar hakkında Anayasaya aykırılık iddiası ile Anayasa Mahkemesine başvurulamaz.",
+      "articleRefs": [
+        "90"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Türk Silahlı Kuvvetlerinin yabancı ülkelere gönderilmesine izin verme yetkisi kime aittir?",
+      "back": "Türkiye Büyük Millet Meclisine aittir. Yabancı silahlı kuvvetlerin Türkiye'de bulunmasına izin vermek de Meclis'in yetkisidir.",
+      "explanation": "Milletlerarası hukukun meşru saydığı hallerde savaş hali ilanı da Meclis'e aittir. Türkiye'nin taraf olduğu milletlerarası andlaşmaların veya milletlerarası nezaket kurallarının gerektirdiği haller bu izin kuralının dışındadır.",
+      "articleRefs": [
+        "92"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Meclis tatildeyken ülke ani bir silahlı saldırıya uğrarsa, Türk Silahlı Kuvvetlerinin kullanılmasına Meclis dışında kim karar verebilir?",
+      "back": "Cumhurbaşkanı karar verebilir. Bunun için silahlı kuvvet kullanılmasına derhal karar verilmesinin kaçınılmaz olması gerekir.",
+      "explanation": "Şartlar birlikte aranır: Meclis tatilde veya ara vermede olmalı, ülke ani bir silahlı saldırıya uğramış olmalı ve derhal karar vermek kaçınılmaz olmalı. Bakanlar, Cumhurbaşkanı yardımcıları ve Meclis Başkanı bu maddede yetkili olarak geçmez.",
+      "articleRefs": [
+        "92"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Türkiye Büyük Millet Meclisi her yıl hangi gün kendiliğinden toplanır?",
+      "back": "Ekim ayının ilk günü kendiliğinden toplanır.",
+      "explanation": "Metin “ilk günü” der, “ilk iş günü” demez.",
+      "articleRefs": [
+        "93"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Meclis bir yasama yılında en çok ne kadar süre tatil yapabilir?",
+      "back": "En çok üç ay tatil yapabilir.",
+      "explanation": "Ara verme veya tatil sırasında toplanan Meclis, öncelikle bu toplantıyı gerektiren konuyu görüşmeden ara verme veya tatile devam edemez.",
+      "articleRefs": [
+        "93"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Ara verme veya tatil sırasında üyelerin beşte biri Meclis'i doğrudan toplantıya çağırabilir mi?",
+      "back": "Hayır. Üyelerin beşte biri, yani 600 üyede 120 milletvekili, Meclis Başkanından yazılı olarak ister. Meclis'i toplantıya çağıran Başkandır.",
+      "explanation": "Meclis'i toplantıya çağırabilen iki makam vardır: Cumhurbaşkanı ve Meclis Başkanı. Meclis Başkanı bunu doğrudan doğruya da yapabilir. Cumhurbaşkanı yardımcıları, bakanlar ya da genel sekreter bu maddede geçmez.",
+      "articleRefs": [
+        "93",
+        "75"
+      ],
+      "derivedNumbers": [
+        {
+          "value": 120,
+          "expr": "600 / 5",
+          "refs": [
+            "75",
+            "93"
+          ],
+          "note": "üyelerin beşte biri"
+        }
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Başkanlık Divanı için bir yasama döneminde kaç seçim yapılır?",
+      "back": "İki seçim yapılır. İlk seçilenlerin görev süresi iki yıldır; ikinci devre için seçilenler o yasama döneminin sonuna kadar görev yapar.",
+      "explanation": "Divan; Meclis Başkanı, Başkanvekilleri, Katip üyeler ve İdare Amirlerinden oluşur. Siyasi parti gruplarının üye sayısı oranında katılmasını sağlayacak şekilde kurulur. Başkanvekili, Katip Üye ve İdare Amirlerinin adedi ile seçim usulleri Meclis İçtüzüğünde belirlenir.",
+      "articleRefs": [
+        "94"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Meclis Başkanı, oturumu yönetmediği bir birleşimde Genel Kurulda oy kullanabilir mi?",
+      "back": "Hayır. Başkan oy kullanamaz. Başkanvekilleri içinse oy yasağı yalnız oturumu yönettikleri sırada geçerlidir.",
+      "explanation": "Başkan ve Başkanvekilleri, üyesi bulundukları siyasi partinin veya parti grubunun Meclis içindeki ve dışındaki faaliyetlerine katılamaz. Görevlerinin gereği olan haller dışında Meclis tartışmalarına da katılamazlar. Siyasi parti grupları Başkanlık için aday gösteremez.",
+      "articleRefs": [
+        "94"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Türkiye Büyük Millet Meclisi Başkanı seçiminin ilk iki oylamasında hangi çoğunluk aranır?",
+      "back": "Üye tamsayısının üçte ikisi aranır, yani 600 üyede 400 oy. Üçüncü oylamada salt çoğunluk (301) aranır; dördüncüde en çok oy alan iki aday yarışır.",
+      "explanation": "Seçim gizli oyla yapılır. Adaylar, Meclisin toplandığı günden itibaren beş gün içinde Başkanlık Divanına bildirilir. Seçim, aday gösterme süresinin bitiminden itibaren beş gün içinde tamamlanır. Dördüncü oylamada en fazla oy alan üye Başkan seçilir; sonuç mutlaka alınır, seçimlerin yenilenmesi söz konusu değildir.",
+      "articleRefs": [
+        "94",
+        "75"
+      ],
+      "derivedNumbers": [
+        {
+          "value": 400,
+          "expr": "600 * 2 / 3",
+          "refs": [
+            "75",
+            "94"
+          ],
+          "note": "üye tamsayısının üçte ikisi"
+        },
+        {
+          "value": 301,
+          "expr": "floor(600 / 2) + 1",
+          "refs": [
+            "75",
+            "94"
+          ],
+          "note": "üye tamsayısının salt çoğunluğu"
+        }
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Meclis'te bir siyasi parti grubu en az kaç üyeden meydana gelir?",
+      "back": "En az yirmi üyeden meydana gelir.",
+      "explanation": "Kaç partinin grup kurabileceği sorulursa, yirmi ve üzeri milletvekili olan partileri say. İçtüzük, parti gruplarının Meclis'in bütün faaliyetlerine üye sayısı oranında katılmalarını sağlayacak yolda düzenlenir.",
+      "articleRefs": [
+        "95"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Meclis'in bina, tesis, eklenti ve arazisinde kolluk ve yönetim hizmetlerini kim düzenler ve yürütür?",
+      "back": "Bu hizmetler Meclis Başkanlığı eliyle düzenlenir ve yürütülür. Emniyet ve diğer kolluk hizmetleri için yeteri kadar kuvvet, ilgili makamlarca Meclis Başkanlığına tahsis edilir.",
+      "explanation": "Meclis çalışmalarını kendi yaptığı içtüzük hükümlerine göre yürütür.",
+      "articleRefs": [
+        "95"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Türkiye Büyük Millet Meclisinin toplantı yeter sayısı nedir?",
+      "back": "Üye tamsayısının en az üçte biridir; 600 üyede 200 milletvekili. Bu kural, Meclis'in yapacağı seçimler dahil bütün işlerinde geçerlidir.",
+      "explanation": "Toplantı yeter sayısı her zaman üye tamsayısı üzerinden hesaplanır; Meclis'in yapacağı seçimler de bu kurala tabidir.",
+      "articleRefs": [
+        "96",
+        "75"
+      ],
+      "derivedNumbers": [
+        {
+          "value": 200,
+          "expr": "600 / 3",
+          "refs": [
+            "75",
+            "96"
+          ],
+          "note": "üye tamsayısının üçte biri"
+        }
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Meclis 200 üyeyle toplandı. Bir kanun teklifinin kabulü için en az kaç kabul oyu gerekir?",
+      "back": "151 oy gerekir. Katılanların salt çoğunluğu bu sayının altında kalır, oysa karar yeter sayısı üye tamsayısının dörtte birinin bir fazlasından az olamaz.",
+      "explanation": "Genel kural, Anayasada başkaca hüküm yoksa toplantıya katılanların salt çoğunluğudur. Ancak sonuç hiçbir durumda 151'in altına inemez. 301 ise üye tamsayısının salt çoğunluğudur; genel karar yeter sayısı değildir.",
+      "articleRefs": [
+        "96",
+        "75"
+      ],
+      "derivedNumbers": [
+        {
+          "value": 151,
+          "expr": "600 / 4 + 1",
+          "refs": [
+            "75",
+            "96"
+          ],
+          "note": "üye tamsayısının dörtte birinin bir fazlası"
+        },
+        {
+          "value": 301,
+          "expr": "floor(600 / 2) + 1",
+          "refs": [
+            "75",
+            "96"
+          ],
+          "note": "üye tamsayısının salt çoğunluğu"
+        }
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Kesinhesap kanun teklifinin kabulü için Anayasa'da hangi çoğunluk aranır?",
+      "back": "Toplantıya katılanların salt çoğunluğu aranır; karar yeter sayısı en az 151 olmalıdır. Kesinhesabın kendi maddesi de ayrı bir çoğunluk öngörmez, genel karar yeter sayısı işler.",
+      "explanation": "Görev listesinde bütçe, kesinhesap ve savaş ilânı için ayrı bir çoğunluk yazılmaz; çoğunluk oranı yazılan iş af ilânıdır. 151, üye tamsayısının dörtte birinin bir fazlasıdır.",
+      "articleRefs": [
+        "96",
+        "87",
+        "161",
+        "75"
+      ],
+      "derivedNumbers": [
+        {
+          "value": 151,
+          "expr": "600 / 4 + 1",
+          "refs": [
+            "75",
+            "96"
+          ],
+          "note": "üye tamsayısının dörtte birinin bir fazlası"
+        }
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Türkiye Büyük Millet Meclisi Genel Kurulundaki görüşmeler nerede tam olarak yayımlanır?",
+      "back": "Tutanak dergisinde tam olarak yayımlanır. Genel Kurul görüşmeleri açıktır.",
+      "explanation": "Açık görüşmelerin her türlü vasıta ile yayımı serbesttir. Tek istisna, o oturumdaki Başkanlık Divanının teklifi üzerine Meclis'in başkaca bir karar almasıdır.",
+      "articleRefs": [
+        "97"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Meclis'in kapalı oturumlarındaki görüşmelerin yayımı neye bağlıdır?",
+      "back": "Türkiye Büyük Millet Meclisinin kararına bağlıdır. Kapalı oturumlar İçtüzük hükümlerine göre yapılır.",
+      "articleRefs": [
+        "97"
+      ],
+      "explanation": "Genel Kurul görüşmeleri açıktır ve tutanak dergisinde tam olarak yayımlanır; açık görüşmelerin her türlü vasıtayla yayımı da, Başkanlık Divanının teklifi üzerine Meclis başkaca karar almadıkça serbesttir."
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Sözlü soru ve gensoru, Türkiye Büyük Millet Meclisinin bilgi edinme ve denetim yolları arasında sayılır mı?",
+      "back": "Hayır. Sayılan yollar Meclis araştırması, genel görüşme, Meclis soruşturması ve yazılı sorudur.",
+      "explanation": "Sözlü soru ve gensoru bu listede yer almaz. Kulağa tanıdık gelen “güvenlik soruşturması” ya da “arşiv araştırması” gibi adlar da listede yoktur.",
+      "articleRefs": [
+        "98"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Milletvekillerinin yazılı soruları kimlere yöneltilir?",
+      "back": "Cumhurbaşkanı yardımcıları ve bakanlara yöneltilir. Soru en geç 15 gün içinde yazılı olarak cevaplanır.",
+      "explanation": "Cumhurbaşkanı ve Meclis Başkanı yazılı sorunun muhatabı olarak sayılmaz. Meclis soruşturması da Cumhurbaşkanı yardımcıları ve bakanlar hakkında yapılır; milletvekilleri bu soruşturmanın muhatabı değildir. Yazılı soru önergelerinin verilme şekli ve kapsamı Meclis İçtüzüğü ile düzenlenir.",
+      "articleRefs": [
+        "98"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Toplumu ve Devlet faaliyetlerini ilgilendiren belli bir konunun Genel Kurulda görüşülmesine ne ad verilir?",
+      "back": "Genel görüşme denir.",
+      "explanation": "Meclis araştırması ile karıştırma. Meclis araştırması, belli bir konuda bilgi edinmek için yapılan incelemedir. Genel görüşme ise konunun Genel Kurulda görüşülmesidir.",
+      "articleRefs": [
+        "98"
+      ]
+    }
+  ]
+}

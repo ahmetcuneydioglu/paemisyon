@@ -1,0 +1,320 @@
+{
+  "deck": {
+    "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+    "legislationSlug": "t-c-anayasasi",
+    "unitSlug": "anayasa-yasama-1",
+    "sourceLabel": "AI bilgi kartı — T.C. Anayasası md 75–86",
+    "generatedBy": "AI türetimi (Doc 56 pilot, 5 Kas 2026; kaynak: yayındaki Yasama I özeti + resmî madde metni); denetim düzeltmesi 6 Kas 2026 (7 kart)"
+  },
+  "cards": [
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Türkiye Büyük Millet Meclisi kaç milletvekilinden oluşur?",
+      "back": "600 milletvekili; genel oyla seçilir.",
+      "explanation": "Ünitenin omurgası: salt çoğunluk ve ara seçim eşiği bu sayıdan türetilir.",
+      "articleRefs": [
+        "75"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Milletvekili kimi temsil eder?",
+      "back": "Seçildiği bölgeyi ya da kendisini seçenleri değil, bütün milleti.",
+      "explanation": "Madde, 'seçildikleri bölgeyi veya kendilerini seçenleri değil' diyerek bölge ya da seçmen vekilliği anlayışını açıkça dışlar.",
+      "articleRefs": [
+        "80"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Milletvekili seçilebilmek için kaç yaşını doldurmuş olmak gerekir?",
+      "back": "18 yaşını dolduran her Türk milletvekili seçilebilir.",
+      "explanation": "Üst yaş sınırı yoktur. Eğitim şartı en az ilkokul mezunu olmaktır; kısıtlılar, askerlikle ilişiği olanlar ve kamu hizmetinden yasaklılar seçilemez.",
+      "articleRefs": [
+        "76"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Taksirli suçlar hariç, hangi süre ve üstü hapis cezası milletvekili seçilmeye engeldir?",
+      "back": "Toplam 1 yıl veya daha fazla hapis ya da ağır hapis cezası.",
+      "explanation": "Eşik yalnız kasıtlı suçlar için geçerlidir; taksirli suçlar bu hesabın dışındadır.",
+      "articleRefs": [
+        "76"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Yüz kızartıcı bir suçtan hüküm giymiş kişi genel aftan yararlanırsa milletvekili seçilebilir mi?",
+      "back": "Hayır. Maddede sayılan suçlarda af engeli kaldırmaz; affa uğramış olsalar bile seçilemezler.",
+      "explanation": "Sayılan suçlar: zimmet, ihtilas, irtikap, rüşvet, hırsızlık, dolandırıcılık, sahtecilik, inancı kötüye kullanma, dolanlı iflas gibi yüz kızartıcı suçlar; kaçakçılık, resmî ihale ve alım satımlara fesat karıştırma, Devlet sırlarını açığa vurma, terör eylemlerine katılma ve bu gibi eylemleri tahrik ve teşvik.",
+      "articleRefs": [
+        "76"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Hâkimler, savcılar, öğretim elemanları ve memur statüsündeki kamu görevlileri milletvekili adayı olabilmek için ne yapmalıdır?",
+      "back": "Görevlerinden çekilmelidirler; çekilmedikçe aday olamaz ve milletvekili seçilemezler.",
+      "explanation": "Aynı kural yüksek yargı organları mensupları, Yükseköğretim Kurulu üyeleri, işçi niteliği taşımayan diğer kamu görevlileri ve Silahlı Kuvvetler mensupları için de geçerlidir.",
+      "articleRefs": [
+        "76"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "TBMM ve Cumhurbaşkanlığı seçimleri kaç yılda bir yapılır?",
+      "back": "5 yılda bir, aynı günde.",
+      "explanation": "Süresi biten milletvekili yeniden seçilebilir. Cumhurbaşkanlığı seçiminde ilk oylamada gerekli çoğunluk sağlanamazsa ikinci oylama md 101'deki usule göre yapılır.",
+      "articleRefs": [
+        "77"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Seçimler hangi sebeple, kimin kararıyla ve ne kadar süreyle geriye bırakılabilir?",
+      "back": "Yalnız savaş sebebiyle; TBMM, seçimlerin 1 yıl geriye bırakılmasına karar verebilir.",
+      "explanation": "Geri bırakma sebebi ortadan kalkmamışsa erteleme, karardaki usule göre tekrarlanabilir. Kararı veren Cumhurbaşkanı değil Meclis'tir.",
+      "articleRefs": [
+        "78"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Genel seçimden kaç ay geçmedikçe ara seçime gidilemez?",
+      "back": "30 ay.",
+      "explanation": "Ara seçim her seçim döneminde bir defa yapılır; genel seçimlere 1 yıl kala ara seçim yapılamaz.",
+      "articleRefs": [
+        "78"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Boşalan üyelik sayısı üye tamsayısının yüzde kaçını bulursa ara seçim zorunlu olur ve kaç ay içinde yapılır?",
+      "back": "Yüzde 5; ara seçimin 3 ay içinde yapılmasına karar verilir.",
+      "explanation": "600 üyede yüzde 5, 30 boşalma demektir. Bu hal 30 ay kaydının istisnasıdır: genel seçimden 30 ay geçmemiş olsa da ara seçimin 3 ay içinde yapılmasına karar verilir. Genel seçimlere 1 yıl kala ara seçim yapılamaz.",
+      "articleRefs": [
+        "78",
+        "75"
+      ],
+      "derivedNumbers": [
+        {
+          "value": 30,
+          "expr": "600 * 5 / 100",
+          "refs": [
+            "75",
+            "78"
+          ],
+          "note": "üye tamsayısının yüzde beşi"
+        }
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Bir ilin ya da seçim çevresinin Meclis'te hiç üyesi kalmazsa ne olur?",
+      "back": "Boşalmayı takip eden 90 günden sonraki ilk Pazar günü ara seçim yapılır.",
+      "explanation": "Madde bu hali \"yukarıda yazılı hallerden ayrı olarak\" düzenler; bu seçimlerde Anayasa'nın 127. maddesinin üçüncü fıkrası uygulanmaz.",
+      "articleRefs": [
+        "78"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Genel seçime 2 yıl kala ara seçim yapılabilir mi?",
+      "back": "Evet; 1 yıl kala yasağına takılmaz. Her seçim döneminde bir defa ve genel seçimden 30 ay geçmiş olma kuralları ayrıca aranır.",
+      "explanation": "Boşalma olunca her zaman ara seçime gidilmez: dönemde bir defa, 30 ay ve genel seçime 1 yıl kala kayıtları vardır.",
+      "articleRefs": [
+        "78"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Seçimlerin genel yönetim ve denetimi kime aittir; kararlarına karşı nereye başvurulur?",
+      "back": "Yargı organlarına aittir. Seçimin düzen içinde yönetimi ile yolsuzluk, şikâyet ve itirazları kesin karara bağlamak Yüksek Seçim Kurulunundur; YSK kararlarına karşı başka bir mercie başvurulamaz.",
+      "explanation": "YSK ayrıca TBMM üyelerinin ve Cumhurbaşkanlığı seçim tutanaklarını kabul eder. Anayasa değişikliklerinin halkoyuna sunulması ve Cumhurbaşkanının halk tarafından seçilmesi de aynı hükümlere göre yönetilir ve denetlenir.",
+      "articleRefs": [
+        "79"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Yüksek Seçim Kurulu kaç asıl ve kaç yedek üyeden oluşur; üyeler nereden gelir?",
+      "back": "7 asıl, 4 yedek üye. Üyelerin 6'sı Yargıtay, 5'i Danıştay Genel Kurullarınca kendi üyeleri arasından seçilir.",
+      "explanation": "Seçim, üye tamsayılarının salt çoğunluğunun gizli oyuyla yapılır. Üyeler aralarından bir başkan ve bir başkanvekili seçer; Yargıtay ve Danıştay'dan seçilmişler arasından ad çekmeyle ikişer yedek ayrılır, Başkan ve Başkanvekili ad çekmeye girmez.",
+      "articleRefs": [
+        "79"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Yüksek Seçim Kurulunun ve diğer seçim kurullarının görev ve yetkileri hangi düzenleyici işlemle belirlenir?",
+      "back": "Kanunla düzenlenir.",
+      "explanation": "YSK üyelerini Cumhurbaşkanı ya da TBMM değil, Yargıtay ve Danıştay Genel Kurulları kendi üyeleri arasından seçer.",
+      "articleRefs": [
+        "79"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Milletvekilleri göreve başlarken ne yaparlar?",
+      "back": "Andiçerler; ant metni md 81'de yazılıdır.",
+      "explanation": "Metnin eksenleri: Devletin varlığı ve bağımsızlığı, vatanın ve milletin bölünmez bütünlüğü, milletin kayıtsız şartsız egemenliği; hukukun üstünlüğü, demokratik ve laik Cumhuriyet, Atatürk ilke ve inkılapları; herkesin insan haklarından ve temel hürriyetlerden yararlanması ülküsü ve Anayasa'ya sadakat.",
+      "articleRefs": [
+        "81"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Milletvekili, yürütme organının hangi işlemlerine bağlı işlerle görevlendirilemez?",
+      "back": "Yürütme organının teklif, inha, atama ya da onamasına bağlı resmî ya da özel hiçbir işle.",
+      "explanation": "Ayrıca Devlet ve kamu tüzel kişileri ile bunların katıldığı teşebbüslerde, özel gelir kaynakları kanunla sağlanmış kamu yararına derneklerde, Devletten yardım alan ve vergi muafiyeti olan vakıflarda, kamu kurumu niteliğindeki meslek kuruluşları ve sendikalarda yönetim ve denetim kurulu üyeliği, vekillik, taahhüt, temsilcilik ve hakemlik yapamaz. Bağdaşmayan diğer işler kanunla düzenlenir.",
+      "articleRefs": [
+        "82"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Yasama sorumsuzluğu neyi korur?",
+      "back": "Meclis çalışmalarındaki oy ve sözleri ile Meclis'te ileri sürülen düşünceleri; milletvekili bunlardan dolayı sorumlu tutulamaz.",
+      "explanation": "Bunları Meclis dışında tekrarlamak ve açığa vurmak da korunur; ancak o oturumdaki Başkanlık Divanının teklifi üzerine Meclis başka bir karar alırsa korunmaz.",
+      "articleRefs": [
+        "83"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Yasama dokunulmazlığının istisnaları nelerdir?",
+      "back": "Ağır cezayı gerektiren suçüstü hali ve seçimden önce soruşturmasına başlanmış olmak kaydıyla Anayasa'nın 14. maddesindeki durumlar.",
+      "explanation": "Kural: seçimden önce ya da sonra suç işlediği ileri sürülen milletvekili, Meclis kararı olmadıkça tutulamaz, sorguya çekilemez, tutuklanamaz ve yargılanamaz. İstisna hallerinde yetkili makam durumu hemen ve doğrudan TBMM'ye bildirmek zorundadır.",
+      "articleRefs": [
+        "83"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Tekrar seçilen milletvekili hakkında soruşturma ve kovuşturma neye bağlıdır?",
+      "back": "Meclis'in dokunulmazlığı yeniden kaldırmasına.",
+      "explanation": "Siyasi parti grupları yasama dokunulmazlığıyla ilgili görüşme yapamaz ve karar alamaz. Ceza hükmünün yerine getirilmesi üyelik sona erince olur; üyelik süresince zamanaşımı işlemez.",
+      "articleRefs": [
+        "83"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Dokunulmazlığı kaldırılan milletvekilinin üyeliği düşer mi?",
+      "back": "Hayır. Dokunulmazlığın kaldırılması milletvekilliğini düşürmez; milletvekili Meclis'te kalır ve yargılanabilir.",
+      "explanation": "md 84'teki düşme halleri: istifa, kesin hüküm giyme ya da kısıtlanma, bağdaşmayan işte ısrar, devamsızlık. Dokunulmazlık istisnası \"ağır cezayı gerektiren suçüstü hali\"dir; \"ağır bir suç işlediğinin ortaya çıkması\" istisna değildir.",
+      "articleRefs": [
+        "83",
+        "84"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "İstifa eden milletvekilinin üyeliği nasıl düşer?",
+      "back": "İstifanın geçerli olduğu Başkanlık Divanınca tespit edildikten sonra Genel Kurul kararıyla; kendiliğinden düşmez.",
+      "explanation": "Kesin hüküm giyme ya da kısıtlanma halinde ise düşme, kesin mahkeme kararının Genel Kurula bildirilmesiyle olur; oylama yoktur.",
+      "articleRefs": [
+        "84"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Üyelikle bağdaşmayan bir görevi sürdürmekte ısrar eden milletvekilinin üyeliğinin düşmesine kim, nasıl karar verir?",
+      "back": "Yetkili komisyonun durumu tespit eden raporu üzerine Genel Kurul gizli oyla karar verir.",
+      "explanation": "Bağdaşmayan görev ve işler md 82'de sayılır; diğerleri kanunla düzenlenir.",
+      "articleRefs": [
+        "84",
+        "82"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Devamsızlık yüzünden üyeliğin düşmesi için eşik nedir ve Genel Kurul hangi çoğunlukla karar verir?",
+      "back": "Özürsüz ya da izinsiz 1 ay içinde toplam 5 birleşim günü; Genel Kurul üye tamsayısının salt çoğunluğuyla (600 üyede 301 oy) karar verebilir.",
+      "explanation": "Toplantıya katılanların değil, üye tamsayısının salt çoğunluğu aranır. Durumu Meclis Başkanlık Divanı tespit eder.",
+      "articleRefs": [
+        "84",
+        "75"
+      ],
+      "derivedNumbers": [
+        {
+          "value": 301,
+          "expr": "floor(600 / 2) + 1",
+          "refs": [
+            "75",
+            "84"
+          ],
+          "note": "üye tamsayısının salt çoğunluğu"
+        }
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Cumhurbaşkanı seçilen ya da bakan atanan milletvekilinin üyeliği için Meclis kararı gerekir mi?",
+      "back": "Hayır. Üyelik kendiliğinden sona erer: Cumhurbaşkanı seçilen milletvekilinin (md 101) ve Cumhurbaşkanı yardımcısı ya da bakan atanan milletvekilinin (md 106) TBMM üyeliği sona erer.",
+      "explanation": "Bunlar md 84'teki düşme yolları (istifa, kesin hüküm ya da kısıtlanma, bağdaşmayan işte ısrar, devamsızlık) değildir; Genel Kurul kararı aranmaz.",
+      "articleRefs": [
+        "84",
+        "101",
+        "106"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Dokunulmazlığın kaldırılması ya da üyeliğin düşmesi (istifa, bağdaşmayan işte ısrar, devamsızlık) kararına karşı kim, nereye, kaç gün içinde başvurabilir; karar kaç günde verilir?",
+      "back": "İlgili milletvekili ya da bir başka milletvekili, Genel Kurul kararından başlayarak 7 gün içinde Anayasa Mahkemesi'ne; Mahkeme 15 gün içinde kesin karara bağlar.",
+      "explanation": "İptal yolu md 84'ün birinci, üçüncü ve dördüncü fıkralarına göre verilen düşme kararlarına açıktır; kesin hüküm giyme ya da kısıtlanma halindeki düşme bu kapsamda değildir. Aykırılık iddiası Anayasa'ya, kanuna veya İçtüzüğe dayanabilir.",
+      "articleRefs": [
+        "85"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Kesin hüküm giyerek üyeliği düşen milletvekili Anayasa Mahkemesi'ne iptal istemiyle başvurabilir mi?",
+      "back": "Hayır. İptal istemi yalnız dokunulmazlığın kaldırılması ile md 84'ün birinci, üçüncü ve dördüncü fıkralarına göre verilen düşme kararları (istifa, ısrar, devamsızlık) için açıktır; kesin hüküm ya da kısıtlanma (ikinci fıkra) kapsam dışıdır.",
+      "explanation": "Başvuru mercii YSK ya da TBMM Başkanlığı değil Anayasa Mahkemesi'dir; başvuruyu yalnız ilgili değil bir diğer milletvekili de yapabilir.",
+      "articleRefs": [
+        "85",
+        "84"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Ödenek ve yollukların en çok kaç aylığı önceden ödenebilir?",
+      "back": "En çok 3 aylığı.",
+      "explanation": "Ödenek, yolluk ve emeklilik işlemleri kanunla düzenlenir. Ödeneğin aylık tutarı en yüksek Devlet memurunun aldığı miktarı, yolluk da ödeneğin yarısını aşamaz. Ödenek ve yolluk, bağlanan emekli aylığının kesilmesini gerektirmez.",
+      "articleRefs": [
+        "86"
+      ]
+    }
+  ]
+}
