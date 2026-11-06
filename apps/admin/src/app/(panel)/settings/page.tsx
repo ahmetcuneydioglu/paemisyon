@@ -1,6 +1,7 @@
 'use client';
 
 import { useMutation, useQuery, useQueryClient } from '@tanstack/react-query';
+import { useState } from 'react';
 import { Card, ErrorBox, PageHeader, Spinner } from '@/components/ui';
 import { api } from '@/lib/api';
 
@@ -10,9 +11,12 @@ type Settings = {
   coachCikmisSinavKarti: boolean;
   mobilAnasayfaV2: boolean;
   flashcardsEnabled: boolean;
+  /** Ücretsiz adayın günlük kart hakkı (Doc 56 §3h); 0 = sınırsız, Premium hep sınırsız. */
+  flashcardsFreeDailyLimit: number;
 };
 
-const SETTINGS: { key: keyof Settings; label: string; help: string }[] = [
+type BoolKey = 'showQuestionSource' | 'coachCikmisSinavKarti' | 'mobilAnasayfaV2' | 'flashcardsEnabled';
+const SETTINGS: { key: BoolKey; label: string; help: string }[] = [
   {
     key: 'mobilAnasayfaV2',
     label: 'Mobil yeni anasayfa herkese açık',
@@ -80,7 +84,51 @@ export default function SettingsPage() {
           ))}
         </Card>
       )}
+      {settings.data && (
+        <Card className="mt-4">
+          <GunlukKartHakki value={settings.data.flashcardsFreeDailyLimit} busy={update.isPending} onSave={(n) => update.mutate({ flashcardsFreeDailyLimit: n })} />
+        </Card>
+      )}
       {update.error && <div className="mt-4"><ErrorBox error={update.error} /></div>}
+    </div>
+  );
+}
+
+/** Ücretsiz günlük kart hakkı (Doc 56 §3h): sayı alanı + Kaydet; 0 = sınırsız. Premium bu sınırı görmez. */
+function GunlukKartHakki({ value, busy, onSave }: { value: number; busy: boolean; onSave: (n: number) => void }) {
+  const [taslak, setTaslak] = useState(String(value));
+  const n = Number(taslak);
+  const gecerli = Number.isInteger(n) && n >= 0 && n <= 1000;
+  return (
+    <div className="flex flex-wrap items-start justify-between gap-4">
+      <div>
+        <div className="text-sm font-medium">Ücretsiz günlük kart hakkı</div>
+        <p className="mt-0.5 max-w-xl text-xs text-slate-500">
+          Ücretsiz aday günde en çok bu kadar farklı bilgi kartı puanlayabilir; hak dolunca oynatıcı Premium teklifi gösterir (Doc 56 §3h).
+          Premium sınırsız. 0 yazarsanız herkes sınırsız olur. Değişiklik yaklaşık bir dakikada yansır.
+        </p>
+      </div>
+      <form
+        className="flex items-center gap-2"
+        onSubmit={(e) => {
+          e.preventDefault();
+          if (gecerli) onSave(n);
+        }}
+      >
+        <input
+          type="number"
+          min={0}
+          max={1000}
+          value={taslak}
+          onChange={(e) => setTaslak(e.target.value)}
+          aria-label="Ücretsiz günlük kart hakkı"
+          className="w-24 rounded-lg border border-slate-300 px-3 py-1.5 text-sm"
+        />
+        <span className="text-xs text-slate-500">kart / gün</span>
+        <button type="submit" disabled={busy || !gecerli || n === value} className="rounded-lg bg-indigo-600 px-3 py-1.5 text-sm font-medium text-white hover:bg-indigo-700 disabled:opacity-50">
+          Kaydet
+        </button>
+      </form>
     </div>
   );
 }

@@ -118,7 +118,8 @@ export function FlashCard({
   solveHref?: string;
   className?: string;
 }) {
-  const kapsam = [card.topic.name, card.unit?.title].filter(Boolean).join(" · ");
+  // Kapsam etiketi konu (kanun) adıdır; ünite üretim/doğrulama etiketi olarak arka planda kalır (6 Kas kararı).
+  const kapsam = card.topic.name;
   const yuz =
     "kart-yuz flex min-h-[380px] flex-col gap-3 rounded-card border border-line bg-surface p-5 md:min-h-[420px]";
   const uzun = card.front.length > 140;

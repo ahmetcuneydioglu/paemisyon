@@ -18,6 +18,9 @@ export const SETTING_KEYS = {
   /// Bilgi kartları (Doc 56) herkese açık mı? Kapalıyken yalnız admin ve beta rolleri
   /// görür; kapalıyken oda yanıtlarında kart sayımı YOK (istemci satırı çizmez).
   flashcardsEnabled: 'flashcards_enabled',
+  /// Ücretsiz adayın günde puanlayabileceği en çok kart (Doc 56 §3h, 6 Kas 2026 kararı: 20).
+  /// 0 = sınırsız. Premium her zaman sınırsız. Panelden değişir.
+  flashcardsFreeDailyLimit: 'flashcards_free_daily_limit',
   /// Bildirim Merkezi (Doc 52 §4.9). Kill switch açıkken kuyruk ve yeni
   /// bildirimler anında durur; yalnız admin değiştirir.
   notificationsKillSwitch: 'notifications.kill_switch',
@@ -43,6 +46,7 @@ export const SHOW_QUESTION_SOURCE_DEFAULT = false;
 export const COACH_CIKMIS_SINAV_KARTI_DEFAULT = false;
 export const MOBIL_ANASAYFA_V2_DEFAULT = false;
 export const FLASHCARDS_ENABLED_DEFAULT = false;
+export const FLASHCARDS_FREE_DAILY_LIMIT_DEFAULT = 20;
 
 const CACHE_MS = 60_000;
 
@@ -83,6 +87,11 @@ export class SettingsService {
   /** Bilgi kartları herkese açık mı? Varsayılan KAPALI (admin ve beta yine görür). */
   async flashcardsEnabled(): Promise<boolean> {
     return this.getBool(SETTING_KEYS.flashcardsEnabled, FLASHCARDS_ENABLED_DEFAULT);
+  }
+
+  /** Ücretsiz günlük kart hakkı; 0 = sınırsız. */
+  async flashcardsFreeDailyLimit(): Promise<number> {
+    return this.getInt(SETTING_KEYS.flashcardsFreeDailyLimit, FLASHCARDS_FREE_DAILY_LIMIT_DEFAULT);
   }
 
   async getString(key: string, fallback: string): Promise<string> {

@@ -64,6 +64,8 @@ export interface FlashcardOverview {
   locked: boolean;
   suggestedMode: FlashcardMode;
   dailyGoal: DailyGoal;
+  /** Günlük kart hakkı (Doc 56 §3h): `limit` null = sınırsız (Premium ya da ayar 0). Eski sunucuda yok. */
+  dailyLimit?: { limit: number | null; used: number; remaining: number | null };
   resume: { sessionId: string; mode: FlashcardMode; remaining: number } | null;
 }
 

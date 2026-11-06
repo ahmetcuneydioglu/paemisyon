@@ -30,6 +30,7 @@ const CARD = (id: string, p: Record<string, unknown> = {}) => ({
 function setup(
   o: {
     enabled?: boolean;
+    freeLimit?: number;
     cards?: unknown[];
     reviews?: unknown[];
     bookmarks?: unknown[];
@@ -96,7 +97,10 @@ function setup(
   prisma.$transaction.mockImplementation(async (fn: (tx: unknown) => Promise<unknown>) =>
     fn(prisma),
   );
-  const settings = { flashcardsEnabled: jest.fn(async () => o.enabled ?? true) };
+  const settings = {
+    flashcardsEnabled: jest.fn(async () => o.enabled ?? true),
+    flashcardsFreeDailyLimit: jest.fn(async () => o.freeLimit ?? 20),
+  };
   const progress = { touchActivity: jest.fn(async () => undefined) };
   const appEvents = { emit: jest.fn(async () => undefined) };
   return {
@@ -479,5 +483,51 @@ describe('Aşama 5 — seri, olay, istatistik', () => {
     );
     expect(prisma.flashcardBookmark.deleteMany).not.toHaveBeenCalled();
     expect(prisma.flashcardReviewEvent.findMany).not.toHaveBeenCalled();
+  });
+
+  describe('günlük kart hakkı (Doc 56 §3h)', () => {
+    const bugunOlay = (n: number) =>
+      Array.from({ length: n }, (_, i) => ({
+        flashcardId: `e${i}`,
+        rating: 'known',
+        undoneAt: null,
+      }));
+    const kartlar = Array.from({ length: 30 }, (_, i) => CARD(`c${i}`));
+
+    it('ücretsiz: hak dolunca oturum 403 DAILY_LIMIT_REACHED; özet limit/used/remaining verir', async () => {
+      const { svc, prisma } = setup({ cards: kartlar, freeLimit: 20 });
+      prisma.flashcardReviewEvent.findMany.mockResolvedValue(bugunOlay(20));
+      const user = { id: 'u1', roles: [], isPremium: false } as never;
+      const o = await svc.overview(user, {});
+      expect(o.dailyLimit).toEqual({ limit: 20, used: 20, remaining: 0 });
+      await expect(
+        svc.startSession(user, { scope: {}, mode: 'all' } as never),
+      ).rejects.toMatchObject({
+        response: { code: 'DAILY_LIMIT_REACHED' },
+      });
+    });
+
+    it('ücretsiz: kuyruk kalan hakla kesilir (20 hak, 15 kullanılmış → 5 kart)', async () => {
+      const { svc, prisma } = setup({ cards: kartlar, freeLimit: 20 });
+      prisma.flashcardReviewEvent.findMany.mockResolvedValue(bugunOlay(15));
+      const user = { id: 'u1', roles: [], isPremium: false } as never;
+      const s = await svc.startSession(user, { scope: {}, mode: 'all' } as never);
+      expect(s.total).toBe(5);
+    });
+
+    it('premium ve ayar 0: sınırsız (limit null), kuyruk varsayılan 20', async () => {
+      const { svc, prisma } = setup({ cards: kartlar, freeLimit: 20 });
+      prisma.flashcardReviewEvent.findMany.mockResolvedValue(bugunOlay(25));
+      const premium = { id: 'u1', roles: [], isPremium: true } as never;
+      expect((await svc.overview(premium, {})).dailyLimit).toEqual({
+        limit: null,
+        used: 25,
+        remaining: null,
+      });
+      expect((await svc.startSession(premium, { scope: {}, mode: 'all' } as never)).total).toBe(20);
+      const { svc: svc0 } = setup({ cards: kartlar, freeLimit: 0 });
+      const free = { id: 'u2', roles: [], isPremium: false } as never;
+      expect((await svc0.overview(free, {})).dailyLimit.limit).toBeNull();
+    });
   });
 });

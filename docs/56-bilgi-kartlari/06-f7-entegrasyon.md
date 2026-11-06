@@ -123,6 +123,27 @@ kartların `flashcard_reviews` satırları silinir (hepsi "yeni"ye döner), **fa
 kartlar" turunu baştan açar (sıfırlanmış kapsamda "vade" modu boş kalırdı). Yerel E2E: web ve simülatörde
 onay → 201 → tur 1/20'den; DB'de review 0, favori ve olay sayısı aynı. Birim: `resetProgress` testi (22/22).
 
+## 3h. Konu bazlı kapsam etiketi + ücretsiz günlük kart hakkı (6 Kas)
+
+**Kararlar (kullanıcı):** (1) Kartların kullanıcıya görünen birimi **konu** (kanun); ünite üretim/doğrulama
+etiketi olarak arka planda kalır, kart başlığından ünite adı kalktı (mobil + web; şema değişmedi, kart zaten
+konuya bağlı). Ünitelerin premium işareti beklemede. (2) Premium kapısı **günlük kart hakkı**: ücretsiz aday
+günde en çok N farklı kart puanlar, Premium sınırsız; N panelden değişir.
+
+| Katman | Değişiklik |
+|---|---|
+| Ayar | `flashcards_free_daily_limit` (varsayılan 20; 0 = sınırsız). Panel › Ayarlar'da sayı alanı + Kaydet (0–1000). |
+| API | `dailyLimit(user, done)` → `{limit, used, remaining}` (`limit` null = Premium ya da ayar 0); sayım = bugün puanlanan **farklı** kart (günlük hedefle aynı küme, `dailyDone`). `overview` yanıtına `dailyLimit` eklendi; `startSession` kalan hak 0 ise 403 `DAILY_LIMIT_REACHED`, değilse kuyruk kalan hakla kesilir. Aynı kartı tekrar puanlamak hak tüketmez. |
+| İstemci | Mod seçimi sayfası: hak dolunca modlar gizlenir, "Bugünlük kart hakkın doldu · used/limit · Yarın yeniden N kart; Premium ile sınırsız" + Premium düğmesi; açıkken alt satırda "günlük hak N kart kaldı". Oynatıcı başlatma hatası `DAILY_LIMIT_REACHED` → "Bugünlük hak doldu" + Premium düğmesi (mobil + web). |
+
+**Yakalanan kusur (düzeltildi):** son kart puanlanınca istemci `bitir` → `complete`'i puan isteğinden ÖNCE
+yolluyordu; complete önce varınca son puan 409 `SESSION_COMPLETED` ile düşüyordu (web + mobil). Düzeltme:
+puan isteği yola çıktıktan sonra bitir; `bitir` yoldaki istekleri (`Promise.allSettled`) bekler.
+
+Yerel E2E: panelden hak 2 → web ücretsiz kullanıcı: oturum 1 kartla açıldı (1 kullanılmış), 2. farklı kart
+puanlanınca yeni oturum 403 ve "Bugünlük hak doldu" ekranı; simülatörde (premium işareti yerel SQL ile
+kaldırıldı) mod sayfası "hakkın doldu · 5 / 2". Testler: flashcards 51/51. Yerel ayar 20'ye geri alındı.
+
 ## 4. Yapılmayan / sıradaki
 
 - **Cihaz testi (Expo):** simülatörde temel akış doğrulandı; gerçek cihazda jest hissi, SE boyutu ve uçak

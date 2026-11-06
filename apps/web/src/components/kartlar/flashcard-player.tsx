@@ -64,6 +64,8 @@ function baslatmaHatasi(e: unknown): Hata {
     switch (e.code) {
       case "PREMIUM_REQUIRED":
         return { code: e.code, message: "Bu kapsamın bilgi kartları Premium ile açılır." };
+      case "DAILY_LIMIT_REACHED":
+        return { code: e.code, message: e.message || "Bugünlük kart hakkın doldu; yarın devam edebilirsin. Premium ile sınırsız." };
       case "NO_CARDS":
         return { code: e.code, message: "Bu modda çalışılacak kart yok." };
       case "FLASHCARDS_DISABLED":
@@ -267,8 +269,6 @@ export function FlashcardPlayer({
     setPending(null);
     setFlipped(false);
     shownAt.current = saat.simdi();
-    if (index + 1 >= yeniKartlar.length) void bitir(session.sessionId);
-    else setIndex(index + 1);
 
     const govde: OlayGovdesi = { clientEventId, flashcardId: card.id, rating, timeSpentMs: spent };
     const istek = apiClient<FlashcardEventResult>(`/me/flashcards/sessions/${session.sessionId}/events`, { method: "POST", body: govde })
@@ -284,6 +284,10 @@ export function FlashcardPlayer({
       })
       .finally(() => yolda.current.delete(clientEventId));
     yolda.current.set(clientEventId, istek);
+    // Son kart: istek yola çıktıktan SONRA bitir; `bitir` yoldakileri bekler. Aksi hâlde complete önce
+    // varır ve son puan 409 SESSION_COMPLETED ile düşerdi (6 Kas, günlük hak testinde yakalandı).
+    if (index + 1 >= yeniKartlar.length) void bitir(session.sessionId);
+    else setIndex(index + 1);
   }
   useEffect(() => {
     kaydetRef.current = kaydet;
@@ -318,6 +322,8 @@ export function FlashcardPlayer({
   /* ---------------- Bitiş ---------------- */
   async function bitir(sessionId: string) {
     setPhase("finishing");
+    // Yoldaki puanlar sunucuya varsın; complete sonrası gelen olay reddedilir.
+    await Promise.allSettled([...yolda.current.values()]);
     for (const b of bekleyen.current.splice(0)) {
       try {
         await apiClient(`/me/flashcards/sessions/${sessionId}/events`, { method: "POST", body: b });
@@ -399,11 +405,12 @@ export function FlashcardPlayer({
   }
 
   if (phase === "error" || !session) {
-    const premium = error?.code === "PREMIUM_REQUIRED";
+    const hakDoldu = error?.code === "DAILY_LIMIT_REACHED";
+    const premium = error?.code === "PREMIUM_REQUIRED" || hakDoldu;
     return (
       <FocusFrame context={etiket} exitHref={donus}>
         <div className="flex flex-col gap-3 py-2">
-          <Notice tone={premium ? "warning" : "error"} title={premium ? "Premium gerekiyor" : "Kartlar açılamadı"}>
+          <Notice tone={premium ? "warning" : "error"} title={hakDoldu ? "Bugünlük hak doldu" : premium ? "Premium gerekiyor" : "Kartlar açılamadı"}>
             {error?.message}
           </Notice>
           <div className="flex flex-wrap gap-2">

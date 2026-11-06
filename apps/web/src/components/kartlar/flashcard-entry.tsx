@@ -180,6 +180,18 @@ export function FlashcardModeDialog({
           </p>
           <ButtonLink href="/premium">Premium&apos;u gör</ButtonLink>
         </div>
+      ) : o.dailyLimit && o.dailyLimit.remaining === 0 ? (
+        // Günlük hak doldu (Doc 56 §3h): modlar gizlenir, Premium teklifi; sayaç yarın sıfırlanır.
+        <div className="flex flex-col gap-3">
+          <p className="type-body-sm text-ink-soft">
+            {o.scope.label} · {c.total} kart
+          </p>
+          <p className="type-subhead flex items-center gap-2 text-ink">
+            <Lock size={18} strokeWidth={1.75} aria-hidden /> Bugünlük kart hakkın doldu · {o.dailyLimit.used} / {o.dailyLimit.limit}
+          </p>
+          <p className="type-body-sm text-ink-soft">Yarın yeniden {o.dailyLimit.limit} kart; Premium ile sınırsız.</p>
+          <ButtonLink href="/premium">Premium ile sınırsız çalış</ButtonLink>
+        </div>
       ) : (
         <div className="flex flex-col gap-4">
           <div className="flex flex-col gap-2">
@@ -226,6 +238,7 @@ export function FlashcardModeDialog({
           {o.dailyGoal.target > 0 ? (
             <p className="type-body-sm text-ink-subtle">
               Bugün {o.dailyGoal.done} / {o.dailyGoal.target} kart
+              {o.dailyLimit?.limit != null ? ` · günlük hak ${o.dailyLimit.remaining} kart kaldı` : ""}
             </p>
           ) : null}
         </div>

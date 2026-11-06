@@ -99,6 +99,7 @@ export class AdminController {
       coachCikmisSinavKarti: await this.settings.coachCikmisSinavKarti(),
       mobilAnasayfaV2: await this.settings.mobilAnasayfaV2(),
       flashcardsEnabled: await this.settings.flashcardsEnabled(),
+      flashcardsFreeDailyLimit: await this.settings.flashcardsFreeDailyLimit(),
     };
   }
 
@@ -112,6 +113,8 @@ export class AdminController {
   ///                             yalnız admin ve beta rolleri görür.
   ///   flashcardsEnabled       — bilgi kartları herkese (Doc 56); kapalıyken yalnız
   ///                             admin ve beta görür, odalarda kart satırı çizilmez.
+  ///   flashcardsFreeDailyLimit — ücretsiz adayın günlük kart hakkı (Doc 56 §3h);
+  ///                             0 = sınırsız, Premium hep sınırsız.
   @Patch('settings')
   @Roles('admin')
   async updateSettings(
@@ -122,8 +125,15 @@ export class AdminController {
       coachCikmisSinavKarti?: boolean;
       mobilAnasayfaV2?: boolean;
       flashcardsEnabled?: boolean;
+      flashcardsFreeDailyLimit?: number;
     },
   ) {
+    if (body.flashcardsFreeDailyLimit !== undefined) {
+      const n = body.flashcardsFreeDailyLimit;
+      if (!Number.isInteger(n) || n < 0 || n > 1000)
+        throw new BadRequestException('flashcardsFreeDailyLimit 0–1000 arası tam sayı olmalı.');
+      await this.settings.set(SETTING_KEYS.flashcardsFreeDailyLimit, String(n));
+    }
     const degisenler: [string, boolean | undefined][] = [
       [SETTING_KEYS.showQuestionSource, body.showQuestionSource],
       [SETTING_KEYS.coachCikmisSinavKarti, body.coachCikmisSinavKarti],

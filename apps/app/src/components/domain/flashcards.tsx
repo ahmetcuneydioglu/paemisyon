@@ -103,6 +103,21 @@ export function FlashcardModeSheet({ visible, onClose, onDismissed, overview, on
           </View>
           <Button title="Premium'u gör" onPress={onPremium} />
         </View>
+      ) : o.dailyLimit && o.dailyLimit.remaining === 0 ? (
+        // Günlük hak doldu (Doc 56 §3h): modlar gizlenir, Premium teklifi; sayaç yarın sıfırlanır.
+        <View style={{ gap: space.s3 }}>
+          <AppText variant="bodySm" tone="soft">
+            {o.scope.label} · {c.total} kart
+          </AppText>
+          <View style={{ flexDirection: "row", alignItems: "center", gap: space.s2 }}>
+            <Lock color={colors.ink} size={18} strokeWidth={1.75} />
+            <AppText variant="subhead">Bugünlük kart hakkın doldu · {o.dailyLimit.used} / {o.dailyLimit.limit}</AppText>
+          </View>
+          <AppText variant="bodySm" tone="soft">
+            Yarın yeniden {o.dailyLimit.limit} kart; Premium ile sınırsız.
+          </AppText>
+          <Button title="Premium ile sınırsız çalış" onPress={onPremium} />
+        </View>
       ) : (
         <View style={{ gap: space.s4 }}>
           <View style={{ gap: space.s2 }}>
@@ -143,6 +158,7 @@ export function FlashcardModeSheet({ visible, onClose, onDismissed, overview, on
           {o.dailyGoal.target > 0 ? (
             <AppText variant="bodySm" tone="subtle">
               Bugün {o.dailyGoal.done} / {o.dailyGoal.target} kart
+              {o.dailyLimit?.limit != null ? ` · günlük hak ${o.dailyLimit.remaining} kart kaldı` : ""}
             </AppText>
           ) : null}
         </View>
@@ -216,7 +232,8 @@ export function FlashCard({
   );
 
   const face: ViewStyle = { position: "absolute", left: 0, right: 0, top: 0, bottom: 0, backgroundColor: colors.surface, borderRadius: radius.card, borderWidth: StyleSheet.hairlineWidth, borderColor: colors.line, padding: space.s5, backfaceVisibility: "hidden" };
-  const kapsam = [card.topic.name, card.unit?.title].filter(Boolean).join(" · ");
+  // Kapsam etiketi konu (kanun) adıdır; ünite üretim/doğrulama etiketi olarak arka planda kalır (6 Kas kararı).
+  const kapsam = card.topic.name;
 
   return (
     <Pressable

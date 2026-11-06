@@ -306,6 +306,17 @@ export class FlashcardsService {
   // ── Günlük hedef ──
 
   /** Günlük kart hedefi ve bugün çalışılan tekil kart (geri alınmamış olaylardan); koç ve istatistik de okur. */
+  /**
+   * Günlük kart hakkı (Doc 56 §3h): ücretsiz aday günde en çok N farklı kart puanlar (panel ayarı,
+   * varsayılan 20; 0 = sınırsız). Premium sınırsız (`limit: null`). Sayım = bugün puanlanan farklı
+   * kart (günlük hedefle aynı küme); oturum kuyruğu kalan hakka göre kesilir, hak bitince 403.
+   */
+  async dailyLimit(user: AuthenticatedUser, done: number) {
+    const ayar = user.isPremium ? 0 : await this.settings.flashcardsFreeDailyLimit();
+    const limit = ayar > 0 ? ayar : null;
+    return { limit, used: done, remaining: limit == null ? null : Math.max(0, limit - done) };
+  }
+
   async dailyGoal(userId: string, now: Date) {
     const [me, events] = await Promise.all([
       this.prisma.user.findUnique({ where: { id: userId }, select: { flashcardDailyGoal: true } }),
@@ -328,6 +339,7 @@ export class FlashcardsService {
       this.activeSession(user.id, now),
     ]);
     const counts = modeCounts(refs, now);
+    const dailyLimit = await this.dailyLimit(user, goal.done);
     return {
       scope: {
         courseId: s.courseId,
@@ -339,6 +351,7 @@ export class FlashcardsService {
       locked: counts.total === 0 && counts.locked > 0,
       suggestedMode: suggestedMode(counts),
       dailyGoal: goal,
+      dailyLimit,
       resume: resume
         ? {
             sessionId: resume.id,
@@ -372,7 +385,14 @@ export class FlashcardsService {
         code: 'PREMIUM_REQUIRED',
         message: 'Bu kapsamın bilgi kartları Premium ile açılır.',
       });
-    const limit = dto.limit ?? OTURUM_VARSAYILAN_KART;
+    // Günlük hak (Doc 56 §3h): kalan hak yoksa 403; varsa kuyruk kalan hakla sınırlı.
+    const hak = await this.dailyLimit(user, (await this.dailyGoal(user.id, now)).done);
+    if (hak.remaining === 0)
+      throw new ForbiddenException({
+        code: 'DAILY_LIMIT_REACHED',
+        message: `Bugünlük kart hakkın doldu (${hak.limit} kart). Premium ile sınırsız.`,
+      });
+    const limit = Math.min(dto.limit ?? OTURUM_VARSAYILAN_KART, hak.remaining ?? Infinity);
     // Yarım oturum varsa kapatılır: tek "kaldığın yer" olsun.
     await this.prisma.flashcardSession.updateMany({
       where: { userId: user.id, completedAt: null },

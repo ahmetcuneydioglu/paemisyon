@@ -59,6 +59,8 @@ export default function KartlarScreen() {
   const [reportOpen, setReportOpen] = useState(false);
   const [result, setResult] = useState<FlashcardSessionSummary | null>(null);
   const shownAt = useRef(0);
+  // Yoldaki puan istekleri: bitiş onları bekler (son kartın puanı complete'ten önce varsın).
+  const yolda = useRef(new Set<Promise<unknown>>());
   const undoTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
 
   const scope = { courseId: p.courseId || undefined, topicId: p.topicId || undefined, unitSlug: p.unitSlug || undefined };
@@ -92,7 +94,7 @@ export default function KartlarScreen() {
         setPhase("playing");
       } catch (e) {
         if (!active) return;
-        if (e instanceof ApiError && e.code === "PREMIUM_REQUIRED") setPremiumGate(true);
+        if (e instanceof ApiError && (e.code === "PREMIUM_REQUIRED" || e.code === "DAILY_LIMIT_REACHED")) setPremiumGate(true);
         setError(baslatmaHatasi(e));
         setPhase("error");
       }
@@ -134,10 +136,8 @@ export default function KartlarScreen() {
     setPending(null);
     setFlipped(false);
     shownAt.current = saat.simdi();
-    if (index + 1 >= yeniKartlar.length) void bitir(session.sessionId);
-    else setIndex(index + 1);
 
-    flashcardsApi
+    const istek = flashcardsApi
       .event(session.sessionId, { clientEventId, flashcardId: card.id, rating, timeSpentMs: spent })
       .then((r) => {
         setCards((cs) => cs.map((c) => (c.id === card.id ? { ...c, state: r.state } : c)));
@@ -149,7 +149,12 @@ export default function KartlarScreen() {
           setQueuedNote(true);
         }
         // Sunucu reddi (bitmiş oturum vb.) sessiz: kullanıcı kartla ilerledi, sonuç bitişte netleşir.
-      });
+      })
+      .finally(() => yolda.current.delete(istek));
+    yolda.current.add(istek);
+    // Son kart: istek yola çıktıktan SONRA bitir; `bitir` yoldakileri bekler (aksi hâlde 409 SESSION_COMPLETED).
+    if (index + 1 >= yeniKartlar.length) void bitir(session.sessionId);
+    else setIndex(index + 1);
   }
 
   async function geriAl() {
@@ -177,6 +182,7 @@ export default function KartlarScreen() {
   async function bitir(sessionId: string) {
     setPhase("finishing");
     try {
+      await Promise.allSettled([...yolda.current]);
       const q = await flushFlashcardQueue();
       if (q.stoppedByNetwork) setQueuedNote(true);
       const r = await flashcardsApi.complete(sessionId);
@@ -288,7 +294,7 @@ export default function KartlarScreen() {
         </View>
       ) : phase === "error" ? (
         <View style={{ padding: space.screenGutter, gap: space.s3 }}>
-          <Notice tone={premiumGate ? "warning" : "error"} title={premiumGate ? "Premium gerekiyor" : "Kartlar açılamadı"}>
+          <Notice tone={premiumGate ? "warning" : "error"} title={premiumGate ? (error?.includes("hakkın doldu") ? "Bugünlük hak doldu" : "Premium gerekiyor") : "Kartlar açılamadı"}>
             {error}
           </Notice>
           {premiumGate ? <Button title="Premium'u gör" onPress={() => router.replace("/paywall")} /> : null}
@@ -359,6 +365,7 @@ function baslatmaHatasi(e: unknown): string {
   if (e instanceof ApiError) {
     switch (e.code) {
       case "PREMIUM_REQUIRED": return "Bu kapsamın bilgi kartları Premium ile açılır.";
+      case "DAILY_LIMIT_REACHED": return e.message || "Bugünlük kart hakkın doldu; yarın devam edebilirsin. Premium ile sınırsız.";
       case "NO_CARDS": return "Bu modda çalışılacak kart yok.";
       case "FLASHCARDS_DISABLED": return "Bilgi kartları henüz açık değil.";
       case "NO_SESSION": return "Sürdürülecek oturum yok.";
