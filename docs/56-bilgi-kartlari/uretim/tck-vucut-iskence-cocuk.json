@@ -1,0 +1,294 @@
+{
+  "deck": {
+    "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+    "legislationSlug": "turk-ceza-kanunu",
+    "sourceLabel": "AI bilgi kartı — Türk Ceza Kanunu md 86–101",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: resmî madde metni + çıkmış sorular); denetim düzeltmesi 6 Kas 2026 (6 kart)"
+  },
+  "cards": [
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Başkasının vücuduna kasten acı veren kişi, kasten yaralamanın temel şekli için hangi hapis cezasıyla cezalandırılır?",
+      "back": "Bir yıl altı aydan üç yıla kadar hapis cezasıyla.",
+      "explanation": "Suç, kasten başkasının vücuduna acı vermekle ya da sağlığının veya algılama yeteneğinin bozulmasına neden olmakla oluşur.",
+      "articleRefs": [
+        "86"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Kasten yaralamanın etkisi basit bir tıbbî müdahaleyle giderilebilecek ölçüde hafifse soruşturma neye bağlıdır ve ceza nedir?",
+      "back": "Mağdurun şikâyetine bağlıdır; ceza altı aydan bir yıl altı aya kadar hapis veya adlî para cezasıdır.",
+      "explanation": "Bu hafif hâl kadına karşı işlenirse cezanın alt sınırı dokuz aydan az olamaz. Örneğin üstsoya, altsoya, eşe, boşandığı eşe ya da kardeşe karşı veya silahla işlenmesi gibi md 86/3 hallerinde ise şikâyet aranmaz ve ceza artırılır.",
+      "articleRefs": [
+        "86"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Kasten yaralama canavarca hisle işlenirse ceza ne oranda artırılır?",
+      "back": "Bir kat artırılır. Maddedeki diğer nitelikli hâllerde ise artış yarı oranındadır.",
+      "explanation": "Canavarca hisle, silahla ya da kişinin yerine getirdiği kamu görevi nedeniyle işlenen kasten yaralamada şikâyet aranmaz.",
+      "articleRefs": [
+        "86"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Yaralama kastıyla yapılan saldırıda mağdurun yüzünde sabit iz kalırsa fail hangi suçtan sorumludur?",
+      "back": "Neticesi sebebiyle ağırlaşmış yaralamadan sorumludur. Kasten yaralama maddesine göre belirlenen ceza bir kat artırılır.",
+      "explanation": "Aynı artış; duyu ya da organ işlevinin sürekli zayıflaması, konuşmada sürekli zorluk, yaşamı tehlikeye sokan durum ve gebe kadının çocuğunun vaktinden önce doğması hâllerinde de uygulanır. Verilecek ceza, kasten yaralamanın birinci fıkrasına giren hâllerde dört yıldan, üçüncü fıkrasına giren hâllerde altı yıldan az olamaz.",
+      "articleRefs": [
+        "87"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Kasten yaralama maddesinin birinci fıkrasına giren bir yaralama sonucunda ölüm meydana gelirse hangi ceza verilir?",
+      "back": "10 yıldan 14 yıla kadar hapis cezası verilir.",
+      "explanation": "Yaralama, kasten yaralama maddesinin üçüncü fıkrasındaki nitelikli hâllerden biriyle işlenmişse (örneğin silahla) ve ölüm meydana gelmişse 14 yıldan 18 yıla kadar hapis cezasına hükmolunur.",
+      "articleRefs": [
+        "87",
+        "86"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Mağdurun beden veya ruh bakımından kendisini savunamayacak durumda olması, kasten yaralamayı neticesi sebebiyle ağırlaştıran hâllerden biri midir?",
+      "back": "Hayır. Bu, kasten yaralamanın nitelikli hâlidir: ceza yarı oranında artırılır ve şikâyet aranmaz. Neticesi sebebiyle ağırlaşma ise fiilin doğurduğu sonuçlara bağlıdır.",
+      "explanation": "Neticesi sebebiyle ağırlaşmış yaralamada sayılan sonuçlar arasında mağdurun yüzünde sabit iz, yüzünün sürekli değişikliği, çocuk yapma yeteneğinin kaybolması, kemik kırılması veya çıkığı ve ölüm bulunur.",
+      "articleRefs": [
+        "87",
+        "86"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Kasten yaralama ihmali davranışla işlenirse verilecek ceza ne kadar indirilebilir?",
+      "back": "Üçte ikisine kadar indirilebilir.",
+      "explanation": "Bu hüküm uygulanırken kasten öldürmenin ihmali davranışla işlenmesine ilişkin koşullar göz önünde bulundurulur.",
+      "articleRefs": [
+        "88"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Taksirle yaralamanın temel şekli için hangi ceza öngörülür?",
+      "back": "Dört aydan iki yıla kadar hapis veya adlî para cezası.",
+      "explanation": "Fiil birden fazla kişinin yaralanmasına neden olursa dokuz aydan beş yıla kadar hapis cezasına hükmolunur.",
+      "articleRefs": [
+        "89"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Taksirle yaralama mağdurun vücudunda kemik kırılmasına neden olursa ceza bir kat artırılır mı?",
+      "back": "Hayır. Kemik kırılmasında temel ceza yarısı oranında artırılır. Bir kat artırım; organ işlevinin yitirilmesi, yüzün sürekli değişikliği gibi daha ağır sonuçlar içindir.",
+      "explanation": "Yarısı oranında artırım gerektiren sonuçlar şunlardır: duyu ya da organ işlevinin sürekli zayıflaması, vücutta kemik kırılması, konuşmada sürekli zorluk, mağdurun yüzünde sabit iz, yaşamı tehlikeye sokan durum ve gebe kadının çocuğunun vaktinden önce doğması.",
+      "articleRefs": [
+        "89"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Taksirle yaralama suçunun soruşturulması ve kovuşturulması neye bağlıdır?",
+      "back": "Şikâyete bağlıdır. Ancak suç bilinçli taksirle işlenmişse şikâyet aranmaz; birinci fıkra kapsamındaki yaralama bu istisnanın dışındadır.",
+      "explanation": "Bilinçli taksirle işlenen ve örneğin kemik kırılması gibi ağırlaşmış bir sonuç doğuran taksirle yaralamada soruşturma, şikâyet beklenmeden yapılır.",
+      "articleRefs": [
+        "89"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Çocuklar üzerinde bilimsel deneyde, rıza açıklama yeteneğine sahip çocuğun kendi rızasının yanı sıra kimin yazılı muvafakati de alınmalıdır?",
+      "back": "Ana ve babasının veya vasisinin yazılı muvafakati alınmalıdır.",
+      "explanation": "Ayrıca deneyle ilgili izin verecek yetkili kurullarda çocuk sağlığı ve hastalıkları uzmanı bulunmalıdır. Ulaşılan bilimsel veriler de deneyin çocuklar üzerinde yapılmasını gerekli kılmalıdır. İnsan üzerinde deney için aranan genel koşullar da ayrıca sağlanmalıdır.",
+      "articleRefs": [
+        "90"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "İnsan üzerinde deney suçunun işlenmesi sonucunda mağdur yaralanırsa hangi suça ilişkin hükümler uygulanır?",
+      "back": "Kasten yaralama suçuna ilişkin hükümler uygulanır. Mağdur ölürse kasten öldürme suçuna ilişkin hükümler uygulanır.",
+      "explanation": "İnsan üzerinde bilimsel deney yapan kişinin temel cezası bir yıldan üç yıla kadar hapistir. Rızaya dayalı deneyin ceza sorumluluğu doğurmaması için md 90/2'deki yedi koşul birlikte aranır; aralarında yetkili kurul veya makam izni, deneyin önce insan dışı ortamda ya da hayvanlar üzerinde yapılmış olması ve bilgilendirmeye dayalı, menfaate bağlı olmayan yazılı rıza bulunur.",
+      "articleRefs": [
+        "90"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Hukuken geçerli rızaya dayalı olmaksızın kişiden organ alan kimseye hangi ceza verilir?",
+      "back": "Beş yıldan dokuz yıla kadar hapis cezası.",
+      "explanation": "Suçun konusu doku ise iki yıldan beş yıla kadar hapis cezası verilir. Organ veya doku satın alan, satan ya da satılmasına aracılık eden kişiye de bu cezalar uygulanır. Suç sonucunda mağdur ölürse kasten öldürme suçuna ilişkin hükümler uygulanır.",
+      "articleRefs": [
+        "91"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Organ veya dokularını satan kişinin sosyal ve ekonomik koşulları göz önünde bulundurularak cezası hakkında ne yapılabilir?",
+      "back": "Cezada indirim yapılabilir; ceza vermekten de vazgeçilebilir.",
+      "explanation": "Zorunluluk hâli başlıklı bu hüküm, organ veya dokularını satan kişinin içinde bulunduğu sosyal ve ekonomik koşullara dayanır.",
+      "articleRefs": [
+        "92"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "İşkence avukata karşı görevi dolayısıyla işlenirse hangi ceza verilir?",
+      "back": "Sekiz yıldan 15 yıla kadar hapis cezası verilir.",
+      "explanation": "Aynı ceza; çocuğa, kendisini savunamayacak durumdaki kişiye, gebe kadına ya da diğer kamu görevlisine görevi dolayısıyla işlenen işkencede de uygulanır. Temel ceza üç yıldan 12 yıla kadardır. Suç kadına karşı işlenirse alt sınır beş yıldan az olamaz.",
+      "articleRefs": [
+        "94"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "İşkence suçunun işlenişine iştirak eden diğer kişiler nasıl cezalandırılır?",
+      "back": "Kamu görevlisi gibi cezalandırılır.",
+      "explanation": "İşkencenin faili kamu görevlisidir; suça iştirak eden kamu görevlisi olmayan kişiler de aynı cezayla cezalandırılır. Suç ihmali davranışla işlenirse, salt bu nedenle cezada indirim yapılmaz.",
+      "articleRefs": [
+        "94"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "İşkence suçundan dolayı zamanaşımı işler mi?",
+      "back": "Hayır; işkence suçundan dolayı zamanaşımı işlemez.",
+      "articleRefs": [
+        "94"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "İşkence fiilinin cinsel yönden taciz şeklinde gerçekleşmesi, işkencenin neticesi sebebiyle ağırlaşmış hâllerinden biri midir?",
+      "back": "Hayır. Cinsel yönden taciz, işkencenin işleniş biçimine bağlı ağır hâlidir ve 10 yıldan 15 yıla kadar hapis gerektirir. Neticesi sebebiyle ağırlaşma ise fiilin mağdurda doğurduğu sonuçlara bağlıdır.",
+      "explanation": "Neticesi sebebiyle ağırlaşmış işkencede sayılan sonuçlar arasında şunlar bulunur: duyu ya da organ işlevinin yitirilmesi, yüzün sürekli değişikliği, gebe kadının çocuğunun düşmesi, vücutta kemik kırılması ve ölüm.",
+      "articleRefs": [
+        "95",
+        "94"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "İşkence sonucunda ölüm meydana gelirse hangi ceza verilir?",
+      "back": "Ağırlaştırılmış müebbet hapis cezası verilir.",
+      "explanation": "Diğer ağır sonuçlarda ceza şöyle artırılır: mağdurun yüzünde sabit iz ya da yaşamı tehlikeye sokan durumda yarı oranında; organ işlevinin yitirilmesi ya da yüzün sürekli değişikliğinde bir kat. Kemik kırılmasında ise sekiz yıldan 15 yıla kadar hapis cezası verilir.",
+      "articleRefs": [
+        "95"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Eziyet boşandığı eşe karşı işlenirse hangi ceza verilir?",
+      "back": "Üç yıldan sekiz yıla kadar hapis.",
+      "explanation": "Aynı ceza; üstsoy, altsoy, babalık, analık ya da eşe karşı işlenen eziyette de uygulanır. Çocuğa, kendisini savunamayacak durumdaki kişiye veya gebe kadına karşı işlenmesi de aynı cezayı gerektirir.",
+      "articleRefs": [
+        "96"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Eziyet suçunun temel şekli kadına karşı işlenirse cezanın alt sınırı nedir?",
+      "back": "İki yıl altı aydır; ceza bu süreden az olamaz.",
+      "explanation": "Bir kimsenin eziyet çekmesine yol açacak davranışları gerçekleştiren kişinin temel cezası iki yıldan beş yıla kadar hapistir.",
+      "articleRefs": [
+        "96"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Terk suçunun mağduru kimdir?",
+      "back": "Yaşı veya hastalığı dolayısıyla kendini idare edemeyecek durumda olan ve bu nedenle koruma ve gözetim yükümlülüğü altında bulunan kimsedir.",
+      "explanation": "Bu kimseyi kendi hâline terk eden kişiye üç aydan iki yıla kadar hapis cezası verilir. Terk dolayısıyla mağdur bir hastalığa yakalanır, yaralanır ya da ölürse neticesi sebebiyle ağırlaşmış suç hükümlerine göre cezaya hükmolunur.",
+      "articleRefs": [
+        "97"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Kendini idare edemeyecek durumdaki bir yaralıyı görüp ne yardım eden ne de durumu bildiren kişi hangi suçu işler?",
+      "back": "Yardım veya bildirim yükümlülüğünün yerine getirilmemesi suçunu işler. Yaralı ölürse bir yıldan üç yıla kadar hapis cezası verilir.",
+      "explanation": "Yardım, hâl ve koşulların elverdiği ölçüde beklenir; bildirim ise derhal ilgili makamlara yapılmalıdır. Temel şekilde ceza bir yıla kadar hapis veya adlî para cezasıdır.",
+      "articleRefs": [
+        "98"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Tıbbi zorunluluk yokken, rızaya dayalı olarak gebelik süresi on haftadan fazla olan kadının çocuğunu düşürten kişiye hangi ceza verilir?",
+      "back": "İki yıldan dört yıla kadar hapis cezası verilir.",
+      "explanation": "Çocuğunun düşürtülmesine rıza gösteren kadın hakkında da bir yıla kadar hapis veya adlî para cezasına hükmolunur. Yani düşürten kişi de, rıza gösteren kadın da cezalandırılır.",
+      "articleRefs": [
+        "99"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Mağduru olduğu bir suç sonucu gebe kalan kadının gebeliğini sona erdirene ceza verilmemesi için hangi koşullar aranır?",
+      "back": "Gebelik süresi yirmi haftadan fazla olmamalı ve kadının rızası olmalı; gebelik uzman hekimlerce hastane ortamında sona erdirilmelidir.",
+      "articleRefs": [
+        "99"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Rızası olmaksızın bir kadının çocuğunu düşürten kişiye hangi ceza verilir?",
+      "back": "Beş yıldan on yıla kadar hapis cezası verilir.",
+      "explanation": "Fiil kadının beden veya ruh sağlığında zarara neden olursa altı yıldan 12 yıla, ölümüne neden olursa 15 yıldan yirmi yıla kadar hapis cezası verilir. Fiil yetkili olmayan bir kişi tarafından işlenirse ceza yarı oranında artırılır.",
+      "articleRefs": [
+        "99"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Gebe kadının çocuğunu isteyerek düşürmesi, gebelik süresi kaç haftadan fazlaysa suç oluşturur?",
+      "back": "On haftadan fazlaysa; bir yıla kadar hapis veya adlî para cezası.",
+      "explanation": "Çocuk düşürmenin faili gebe kadının kendisidir.",
+      "articleRefs": [
+        "100"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Rızaya dayalı kısırlaştırma hangi durumda suç oluşturur?",
+      "back": "Fiil yetkili olmayan bir kişi tarafından işlenirse suç oluşur; ceza bir yıldan üç yıla kadar hapistir.",
+      "explanation": "Bir erkek veya kadını rızası olmaksızın kısırlaştıran kimseye üç yıldan altı yıla kadar hapis cezası verilir. Bu fiil, kısırlaştırma işlemi yapma yetkisi olmayan bir kimse tarafından yapılırsa ceza üçte bir oranında artırılır.",
+      "articleRefs": [
+        "101"
+      ]
+    }
+  ]
+}

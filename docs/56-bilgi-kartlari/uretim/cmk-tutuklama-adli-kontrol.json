@@ -1,0 +1,306 @@
+{
+  "deck": {
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "legislationSlug": "5271-sayili-ceza-muhakemesi-kanunu-cmk",
+    "unitSlug": "cmk-tutuklama-adli-kontrol",
+    "sourceLabel": "AI bilgi kartı — 5271 Sayılı Ceza Muhakemesi Kanunu (CMK) md 100–110, 110/A, 111–115",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: cmk-tutuklama-adli-kontrol özeti + resmî madde metni); denetim düzeltmesi 6 Kas 2026 (6 kart)"
+  },
+  "cards": [
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Şüpheli veya sanık hakkında tutuklama kararı verilebilmesi için hangi iki şart birlikte bulunmalıdır?",
+      "back": "Kuvvetli suç şüphesinin varlığını gösteren somut deliller ve bir tutuklama nedeni. İkisi de varsa tutuklama kararı verilebilir; ölçülülük ayrıca aranır.",
+      "explanation": "Tutuklama nedeni şu hâllerde var sayılabilir: şüpheli veya sanığın kaçması, saklanması ya da kaçacağı şüphesini uyandıran somut olgular; davranışlarının delilleri yok etme, gizleme veya değiştirme ya da tanık, mağdur veya başkaları üzerinde baskı yapma girişimi hususunda kuvvetli şüphe oluşturması. Ayrıca md 100/3'te sayılan katalog suçlarda, somut delillere dayanan kuvvetli şüphe sebepleri varsa tutuklama nedeni var sayılabilir. İşin önemi, verilmesi beklenen ceza veya güvenlik tedbiri ile ölçülü değilse tutuklama kararı verilemez.",
+      "articleRefs": [
+        "100"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Kasten yaralama, Türk Ceza Kanunundaki hangi hâlleriyle tutuklama nedeninin var sayılabildiği suçlar arasında yer alır?",
+      "back": "Madde 86 fıkra 3'ün b, e ve f bentlerindeki kasten yaralama ile neticesi sebebiyle ağırlaşmış kasten yaralama (madde 87); ayrıca kadına karşı işlenen kasten yaralama; sağlık kurum ve kuruluşlarında görev yapan personele görevleri sırasında veya dolayısıyla işlenen kasten yaralama; eğitim kurumlarında görev yapanlara görevleri sırasında veya sebebiyle işlenen kasten yaralama.",
+      "explanation": "Eğitim kurumları bendi (k): Millî Eğitim Bakanlığına bağlı resmî eğitim kurumlarında yönetici, öğretmen, usta öğretici, yabancı uyruklu öğrencilere yönelik projelerde öğretici/öğretmen veya rehber danışman; özel öğretim kurumlarında yönetici, öğretmen, uzman öğretici ve usta öğretici; bu kurumlarda ders ücreti karşılığı ders okutanlar ve diğer kamu kurum ve kuruluşlarında görev yapan öğretmenler. Bu suçlarda somut delillere dayanan kuvvetli şüphe sebepleri varsa tutuklama nedeni var sayılabilir.",
+      "articleRefs": [
+        "100"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Hapis cezasının üst sınırı iki yıldan fazla olmayan, vücut dokunulmazlığına karşı kasten işlenen bir suçta tutuklama kararı verilebilir mi?",
+      "back": "Evet; bu suçlar, üst sınırı iki yılı aşmayan suçlardaki tutuklama yasağının dışındadır. Somut deliller, bir tutuklama nedeni ve ölçülülük yine aranır.",
+      "explanation": "Tutuklama yasağı iki gruba işler: sadece adlî para cezasını gerektiren suçlar ve hapis cezasının üst sınırı iki yıldan fazla olmayan suçlar. İkinci gruptan vücut dokunulmazlığına karşı kasten işlenenler hariç tutulmuştur. Ölçüt, hapis cezasının üst sınırıdır.",
+      "articleRefs": [
+        "100"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Soruşturma evresinde şüphelinin tutuklanmasına kim karar verir?",
+      "back": "Sulh ceza hâkimi; Cumhuriyet savcısının istemi üzerine.",
+      "explanation": "Savcının isteminde mutlaka gerekçe gösterilir ve adlî kontrol uygulamasının yetersiz kalacağını belirten hukukî ve fiilî nedenlere yer verilir. Tutuklama istenince şüpheli, kendi seçeceği veya baronun görevlendireceği bir müdafiin yardımından yararlanır.",
+      "articleRefs": [
+        "101"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Kovuşturma evresinde mahkeme, sanığı tutuklamak için Cumhuriyet savcısının istemini beklemek zorunda mıdır?",
+      "back": "Hayır; kovuşturma evresinde mahkeme, Cumhuriyet savcısının istemi üzerine veya re'sen tutuklama kararı verir.",
+      "explanation": "Kararın içeriği sanığa sözlü olarak bildirilir, bir örneği yazılı olarak verilir ve bu husus kararda belirtilir. Tutuklama kararı verilmezse şüpheli veya sanık derhâl serbest bırakılır.",
+      "articleRefs": [
+        "101"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Tutuklama kararına karşı hangi kanun yoluna başvurulur?",
+      "back": "İtiraz. Tutuklama nedenleri ve tutuklama kararı hükümleri gereğince verilen kararlara itiraz edilebilir.",
+      "explanation": "Tutuklamaya, tutuklamanın devamına veya tahliye isteminin reddine ilişkin kararlarda kuvvetli suç şüphesi, tutuklama nedenlerinin varlığı, tedbirin ölçülü olduğu ve adli kontrolün yetersiz kalacağı somut olgularla gerekçelendirilerek açıkça gösterilir.",
+      "articleRefs": [
+        "101"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Ağır ceza mahkemesinin görevine girmeyen işlerde tutukluluk süresi en çok ne kadardır?",
+      "back": "Bir yıl; zorunlu hallerde gerekçeleri gösterilerek altı ay daha uzatılabilir. Soruşturma evresinde ise bu işlerde tutukluluk altı ayı geçemez.",
+      "explanation": "Uzatma kararı, Cumhuriyet savcısının, şüpheli veya sanık ile müdafiinin görüşleri alındıktan sonra verilir. Bu maddedeki süreler, fiili işlediği sırada on beş yaşını doldurmamış çocuklarda yarı, on sekiz yaşını doldurmamış çocuklarda dörtte üç oranında uygulanır.",
+      "articleRefs": [
+        "102"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Ağır ceza mahkemesinin görevine giren ve Terörle Mücadele Kanunu kapsamına giren bir suçta tutukluluk, uzatma dâhil en çok ne kadar sürebilir?",
+      "back": "Yedi yıl: asıl süre en çok iki yıl, uzatma süresi ise toplam beş yılı geçemez.",
+      "explanation": "Diğer ağır ceza işlerinde uzatma süresi toplam üç yılı geçemez. Beş yıllık uzatma tavanı, Türk Ceza Kanununun İkinci Kitap Dördüncü Kısım Dördüncü, Beşinci, Altıncı ve Yedinci Bölümünde tanımlanan suçlar için de geçerlidir. Uzatma zorunlu hallerde, gerekçesi gösterilerek yapılır.",
+      "articleRefs": [
+        "102"
+      ],
+      "derivedNumbers": [
+        {
+          "value": 7,
+          "expr": "2 + 5",
+          "refs": [
+            "102"
+          ],
+          "note": "asıl süre iki yıl ile uzatma tavanı beş yılın toplamı"
+        }
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Soruşturma evresinde, ağır ceza mahkemesinin görevine giren işlerde tutukluluk kural olarak iki yıla kadar sürebilir mi?",
+      "back": "Hayır; soruşturma evresinde bu işlerde tutukluluk bir yılı geçemez. Türk Ceza Kanununun İkinci Kitap Dördüncü Kısım Dördüncü, Beşinci, Altıncı ve Yedinci Bölümündeki suçlar, Terörle Mücadele Kanunu kapsamındaki suçlar ve toplu işlenen suçlarda ise süre bir yıl altı ay olup gerekçeyle altı ay daha uzatılabilir.",
+      "explanation": "İki yıl, ağır ceza mahkemesinin görevine giren işlerdeki genel azami tutukluluk süresidir. Soruşturma evresi için ayrıca tavan konmuştur: ağır ceza mahkemesinin görevine girmeyen işlerde altı ay, girenlerde bir yıl.",
+      "articleRefs": [
+        "102"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Tutuklu şüphelinin adlî kontrol altına alınarak serbest bırakılmasını sulh ceza hâkiminden kim isteyebilir?",
+      "back": "Cumhuriyet savcısı; hakkında tutuklama kararı verilmiş şüpheli ve müdafii de aynı istemde bulunabilir.",
+      "explanation": "Bu istem üzerine kararı sulh ceza hâkimi verir. Kovuşturmaya yer olmadığı kararı verildiğinde ise şüpheli serbest kalır.",
+      "articleRefs": [
+        "103"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Soruşturma evresinde tutuklamanın artık gereksiz olduğu kanısına varan Cumhuriyet savcısı, şüpheliyi serbest bırakmak için sulh ceza hâkiminin kararını almak zorunda mıdır?",
+      "back": "Hayır; Cumhuriyet savcısı bu kanıya varırsa şüpheliyi re'sen serbest bırakır. Aynı yetki, adlî kontrolün artık gereksiz olduğu kanısında da vardır.",
+      "explanation": "Re'sen serbest bırakma yetkisi soruşturma evresine ilişkindir. Savcı, şüphelinin adlî kontrol altına alınarak serbest bırakılmasını isterse bu isteme sulh ceza hâkimi karar verir.",
+      "articleRefs": [
+        "103"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Dosya Yargıtaya geldiğinde salıverilme istemi hakkında kim karar verir?",
+      "back": "Yargıtay ilgili dairesi veya Yargıtay Ceza Genel Kurulu; dosya üzerinde inceleme yaparak karar verir, bu kararı re'sen de verebilir.",
+      "explanation": "Dosya bölge adliye mahkemesine geldiğinde kararı bölge adliye mahkemesi verir. Şüpheli veya sanık, soruşturma ve kovuşturma evrelerinin her aşamasında salıverilmesini isteyebilir; tutukluluğun devamına veya salıverilmeye ilişkin kararlara itiraz edilebilir.",
+      "articleRefs": [
+        "104"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Salıverilme istemi üzerine merci kural olarak kaç gün içinde karar verir?",
+      "back": "Üç gün içinde; istemin kabulüne, reddine veya adlî kontrol uygulanmasına karar verir.",
+      "explanation": "Kural olarak karar, Cumhuriyet savcısı, şüpheli, sanık veya müdafiin görüşü alındıktan sonra verilir; duruşma dışında verilirken bu görüş alınmaz. Örgüt faaliyeti çerçevesinde işlenen suçlarda süre yedi gündür. Bu kararlara itiraz edilebilir.",
+      "articleRefs": [
+        "105"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Örgüt faaliyeti çerçevesinde işlenen suçlarda salıverilme istemine kaç gün içinde karar verilir?",
+      "back": "Yedi gün içinde.",
+      "explanation": "Kural süre üç gündür. Cumhuriyet savcısının, şüphelinin adlî kontrol altına alınarak serbest bırakılmasını sulh ceza hâkiminden istemesi hâlinde örgüt suçlarında da yedi günlük süre uygulanmaz.",
+      "articleRefs": [
+        "105"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Tutuklamadan tutuklunun bir yakınına haber verilmesine kim karar verir?",
+      "back": "Hâkim; haber, hâkimin kararıyla gecikmeksizin tutuklunun bir yakınına veya belirlediği bir kişiye verilir.",
+      "explanation": "Tutuklamanın uzatılmasına ilişkin her karar için de aynı bildirim yapılır. Soruşturmanın amacını tehlikeye düşürmemek kaydıyla tutuklunun durumu bizzat bildirmesine de izin verilir. Tutuklu yabancıysa, yazılı olarak karşı çıkmadıkça durum vatandaşı olduğu devletin konsolosluğuna bildirilir.",
+      "articleRefs": [
+        "107"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Soruşturma evresinde tutukluluğun devamı en geç hangi aralıklarla incelenir?",
+      "back": "Otuzar günlük süreler itibarıyla; Cumhuriyet savcısının istemi üzerine sulh ceza hâkimi, şüpheli veya müdafiini dinleyerek karar verir.",
+      "explanation": "İnceleme bu süre içinde şüpheli tarafından da istenebilir. Kovuşturma evresinde hâkim veya mahkeme, tutuklu sanığın durumuna her oturumda, koşullar gerektirdiğinde oturumlar arasında ya da aynı süre içinde re'sen karar verir.",
+      "articleRefs": [
+        "108"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Aile yükümlülüklerine ilişkin adlî kontrol yükümlülüğünde şüpheli, hangi borcu düzenli olarak ödeyeceğine güvence verir?",
+      "back": "Adlî kararlar gereğince ödemeye mahkûm edildiği nafakayı; ayrıca aile yükümlülüklerini yerine getireceğine güvence verir.",
+      "explanation": "md 109/3-i: aile yükümlülüklerini yerine getireceğine ve adlî kararlar gereğince ödemeye mahkûm edildiği nafakayı düzenli olarak ödeyeceğine dair güvence vermek.",
+      "articleRefs": [
+        "109"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Kanunda tutuklama yasağı öngörülen hâllerde adlî kontrol hükümleri uygulanabilir mi?",
+      "back": "Evet; tutuklama yasağı olan hâllerde de adlî kontrol uygulanabilir. Tutuklama sebepleri varken de tutuklama yerine adlî kontrole karar verilebilir.",
+      "explanation": "Ağır hastalık veya engellilik nedeniyle ceza infaz kurumu koşullarında hayatını yalnız idame ettiremediği tespit edilen şüpheli ile gebe olan veya doğurduğu tarihten itibaren altı ay geçmemiş bulunan kadın şüpheli hakkında da tutuklama yerine adlî kontrole karar verilebilir. Tutukluluk sürelerinin dolması nedeniyle salıverilenler hakkında da adlî kontrol uygulanabilir.",
+      "articleRefs": [
+        "109"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Konutunu terk etmemek yükümlülüğü altında geçen süre cezadan mahsup edilebilir mi?",
+      "back": "Evet; mahsup yasağı (e) ve (j) bentlerinde uygulanmaz. Konutunu terk etmemek yükümlülüğü altında geçen her iki gün, mahsupta bir gün sayılır.",
+      "explanation": "Kural olarak adlî kontrol altında geçen süre, şahsî hürriyeti sınırlama sebebi sayılarak cezadan mahsup edilemez. İstisnalar, tedavi veya muayene tedbirlerine tâbi olma (e) ile konutunu terk etmemek (j) yükümlülükleridir.",
+      "articleRefs": [
+        "109"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Adlî kontrol uygulamasında hâkim, Cumhuriyet savcısının istemiyle yükümlülüklere ilişkin hangi kararları verebilir?",
+      "back": "Yeni yükümlülük ekleyebilir; yükümlülükleri bütünüyle veya kısmen kaldırabilir, değiştirebilir ya da şüpheliyi bazılarından geçici olarak muaf tutabilir.",
+      "explanation": "Şüpheli, Cumhuriyet savcısının istemi ve sulh ceza hâkiminin kararıyla soruşturma evresinin her aşamasında adlî kontrol altına alınabilir. Bu hükümler, kovuşturma evresinin her aşamasında görevli ve yetkili diğer yargı mercileri tarafından da uygulanır.",
+      "articleRefs": [
+        "110"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Adli kontrol yükümlülüğünün devamı en geç hangi aralıklarla değerlendirilir?",
+      "back": "Dört aylık aralıklarla; soruşturmada Cumhuriyet savcısının istemi üzerine sulh ceza hâkimi, kovuşturmada re'sen mahkeme karar verir.",
+      "explanation": "Bu değerlendirmede adlî kontrolü düzenleyen 109. madde hükümleri göz önünde bulundurulur.",
+      "articleRefs": [
+        "110"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Ağır ceza mahkemesinin görevine girmeyen işlerde adli kontrol süresi en çok ne kadardır?",
+      "back": "İki yıl; zorunlu hâllerde gerekçesi gösterilerek bir yıl daha uzatılabilir.",
+      "explanation": "Bu maddedeki adli kontrol süreleri çocuklar bakımından yarı oranında uygulanır.",
+      "articleRefs": [
+        "110/A"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Ağır ceza mahkemesinin görevine giren işlerde adli kontrol süresi en çok iki yıl mıdır?",
+      "back": "Hayır; ağır ceza işlerinde adli kontrol süresi en çok üç yıldır. İki yıl, ağır ceza mahkemesinin görevine girmeyen işlerin süresidir.",
+      "explanation": "Üç yıllık süre, zorunlu hâllerde gerekçesi gösterilerek uzatılabilir; uzatma için de bu maddede toplam tavanlar öngörülmüştür.",
+      "articleRefs": [
+        "110/A"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Ağır ceza mahkemesinin görevine giren işlerde, Terörle Mücadele Kanunu kapsamına giren suçlarda adli kontrolün uzatma süresi toplam en çok ne kadar olabilir?",
+      "back": "Dört yıl; diğer ağır ceza işlerinde uzatma süresi toplam üç yılı geçemez.",
+      "explanation": "Dört yıllık tavan, Türk Ceza Kanununun İkinci Kitap Dördüncü Kısım Dördüncü, Beşinci, Altıncı ve Yedinci Bölümünde tanımlanan suçlar için de geçerlidir. Uzatma zorunlu hâllerde, gerekçesi gösterilerek yapılır.",
+      "articleRefs": [
+        "110/A"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Adlî kontrolün kaldırılması istemi üzerine hâkim veya mahkeme kaç gün içinde karar verebilir?",
+      "back": "Beş gün içinde; Cumhuriyet savcısının görüşünü aldıktan sonra.",
+      "explanation": "İstem şüpheli veya sanıktan gelir. Adlî kontrole ilişkin kararlara itiraz edilebilir.",
+      "articleRefs": [
+        "111"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Adlî kontrol hükümlerini isteyerek yerine getirmeyen şüpheli, suçun hapis cezası düşük olsa da tutuklanabilir mi?",
+      "back": "Evet; hükmedilebilecek hapis cezasının süresi ne olursa olsun yetkili yargı mercii hemen tutuklama kararı verebilir.",
+      "explanation": "Mahkûmiyet hükmüne karşı istinaf veya temyiz kanun yoluna başvurulmuşsa, UYAP kayıtlarını inceleyerek hükmü veren ilk derece mahkemesi de tutuklama kararı verebilir.",
+      "articleRefs": [
+        "112"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Azami tutukluluk süresi dolduğu için verilen adli kontrolü ihlal eden sanık, ağır ceza mahkemesinin görevine giren işlerde en çok ne kadar süreyle tutuklanabilir?",
+      "back": "Dokuz ay; diğer işlerde bu tutuklama süresi iki aydan fazla olamaz.",
+      "explanation": "Adlî kontrol hükümlerini isteyerek yerine getirmeyene tutuklama kararı verilebileceği kural, azami tutukluluk süresinin dolması nedeniyle verilen adli kontrol tedbirinin ihlalinde de uygulanabilir; yalnız bu durumda tutuklama süresi sınırlıdır.",
+      "articleRefs": [
+        "112"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Güvenceden yapılacak ödemelerde ilk sırada hangi kalemler yer alır?",
+      "back": "Katılanın yaptığı masraflar, suçun neden olduğu zararların giderilmesi ve eski hâle getirme; şüpheli veya sanık nafaka borcunu ödemediği için kovuşturuluyorsa nafaka borçları.",
+      "explanation": "Bunları kamusal giderler, en son da para cezaları izler. Güvence ayrıca şüpheli veya sanığın bütün usul işlemlerinde, hükmün infazında ve diğer yükümlülüklerini yerine getirmek üzere hazır bulunmasını sağlar. Güvence göstermeye zorunlu kılan kararda, güvencenin karşıladığı kısımlar ayrı ayrı gösterilir.",
+      "articleRefs": [
+        "113"
+      ]
+    }
+  ]
+}

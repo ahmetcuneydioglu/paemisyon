@@ -1,0 +1,326 @@
+{
+  "deck": {
+    "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+    "legislationSlug": "turk-ceza-kanunu",
+    "sourceLabel": "AI bilgi kartı — Türk Ceza Kanunu md 102–124",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: resmî madde metni + çıkmış sorular); denetim düzeltmesi 6 Kas 2026 (2 kart + md 123/A kartı eklendi)"
+  },
+  "cards": [
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Cinsel davranışlarla bir kimsenin vücut dokunulmazlığını ihlâl eden kişiye hangi hapis cezası verilir?",
+      "back": "Beş yıldan on yıla kadar hapis cezası verilir. Fail, mağdurun şikâyeti üzerine cezalandırılır.",
+      "explanation": "Cinsel davranış sarkıntılık düzeyinde kalırsa ceza iki yıldan beş yıla kadar hapistir. Sarkıntılık düzeyi cezayı aşağı çeker.",
+      "articleRefs": [
+        "102"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Vücuda organ sokulması suretiyle eşe karşı işlenen cinsel saldırıda soruşturma şikâyet aranmadan mı yapılır?",
+      "back": "Hayır. Bu fiil eşe karşı işlenirse soruşturma ve kovuşturma mağdurun şikâyetine bağlıdır. Ceza yine on iki yıldan az olamaz.",
+      "explanation": "Organ veya sair bir cisim sokulması suretiyle işlenen cinsel saldırıda on iki yıldan az olmamak üzere hapis verilir. İkinci fıkra şikâyete bağlılığı yalnız eşe karşı işlenme hâli için öngörür.",
+      "articleRefs": [
+        "102"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Cinsel saldırı için başvurulan cebir ve şiddet kasten yaralamanın ağır neticelerine yol açarsa ne olur?",
+      "back": "Cinsel saldırı cezasının yanında ayrıca kasten yaralama suçuna ilişkin hükümler de uygulanır.",
+      "explanation": "Suç sonucu mağdur bitkisel hayata girerse veya ölürse ağırlaştırılmış müebbet hapis cezasına hükmolunur.",
+      "articleRefs": [
+        "102"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "md 103/1'deki çocuğun cinsel istismarında mağdur on iki yaşını tamamlamamışsa ceza on beş yıldan az olamaz mı?",
+      "back": "Hayır. Birinci fıkrada bu durumda ceza istismarda on yıldan, sarkıntılıkta beş yıldan az olamaz; on beş yıl, temel istismar cezasının üst sınırıdır. Vücuda organ veya sair cisim sokulması hâlinde (ikinci fıkra) ise alt sınır on sekiz yıldır.",
+      "explanation": "Çocuğu cinsel yönden istismar eden kişiye sekiz yıldan on beş yıla kadar, sarkıntılıkta üç yıldan sekiz yıla kadar hapis verilir. Mağdur on iki yaşını tamamlamamışsa yalnız alt sınır yükselir.",
+      "articleRefs": [
+        "103"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Sarkıntılık düzeyinde kalan çocuk istismarının faili de çocuksa soruşturma ve kovuşturma neye bağlıdır?",
+      "back": "Mağdurun, velisinin veya vasisinin şikâyetine bağlıdır.",
+      "explanation": "Şikâyete bağlılık için iki şartın birlikte bulunması gerekir: istismar sarkıntılık düzeyinde kalmış olmalı ve fail çocuk olmalıdır.",
+      "articleRefs": [
+        "103"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Vücuda organ veya sair bir cisim sokulması suretiyle gerçekleştirilen çocuk istismarında ceza en az ne kadardır?",
+      "back": "On altı yıldan aşağı olmamak üzere hapis cezası verilir. Mağdur on iki yaşını tamamlamamışsa ceza on sekiz yıldan az olamaz.",
+      "explanation": "Suç birden fazla kişi tarafından birlikte ya da vasi, eğitici, öğretici, bakıcı gibi kişilerce işlenirse verilecek ceza yarı oranında artırılır.",
+      "articleRefs": [
+        "103"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Reşit olmayanla cinsel ilişki suçunun mağduru hangi çocuktur?",
+      "back": "Onbeş yaşını bitirmiş çocuktur. Cinsel ilişki cebir, tehdit ve hile olmaksızın kurulmuş olmalıdır.",
+      "explanation": "Temel şekilde fail, şikâyet üzerine iki yıldan beş yıla kadar hapis cezası ile cezalandırılır.",
+      "articleRefs": [
+        "104"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Reşit olmayanla cinsel ilişki, mağdurla arasında evlenme yasağı bulunan kişi tarafından işlenirse ceza nedir?",
+      "back": "On yıldan on beş yıla kadar hapis cezası verilir. Bu hâlde şikâyet aranmaz.",
+      "explanation": "Temel şekil şikâyete bağlıdır. Evlenme yasağı bulunan kişi fail olduğunda ise soruşturma şikâyet aranmaksızın yapılır.",
+      "articleRefs": [
+        "104"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Reşit olmayanla cinsel ilişkide, evlenme yasağı bulunan kişi dışında kimler şikâyet aranmaksızın ağır cezayla cezalandırılır?",
+      "back": "İki grup vardır: evlat edineceği çocuğun evlat edinme öncesi bakımını üstlenen kişi ve koruyucu aile ilişkisi çerçevesinde koruma, bakım ve gözetim yükümlülüğü bulunan kişi.",
+      "explanation": "Bu kişilere ikinci fıkradaki ceza, yani on yıldan on beş yıla kadar hapis verilir.",
+      "articleRefs": [
+        "104"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Cinsel taciz çocuğa karşı işlenirse hangi ceza verilir?",
+      "back": "Altı aydan üç yıla kadar hapis cezası verilir. Fail, mağdurun şikâyeti üzerine cezalandırılır.",
+      "explanation": "Mağdur çocuk değilse ceza üç aydan iki yıla kadar hapis veya adlî para cezasıdır.",
+      "articleRefs": [
+        "105"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Cinsel taciz yüzünden mağdur işini bırakmak zorunda kalırsa ceza en az ne kadar olur?",
+      "back": "Ceza bir yıldan az olamaz. Mağdurun okuldan veya ailesinden ayrılmak zorunda kalması da aynı sonucu doğurur.",
+      "explanation": "Bu alt sınır, cinsel tacizin nitelikli hâllerinin düzenlendiği ikinci fıkrada yer alır.",
+      "articleRefs": [
+        "105"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Teşhir suretiyle işlenen cinsel tacizde ceza temel hâldeki gibi mi kalır?",
+      "back": "Hayır. Teşhir suretiyle işlenmesi nitelikli hâldir; verilecek ceza yarı oranında artırılır.",
+      "explanation": "Aynı artırım posta veya elektronik haberleşme araçlarının sağladığı kolaylıktan faydalanılarak işlenmesinde de uygulanır. Aynı işyerinde çalışmanın ya da kamu görevinin, hizmet veya aile içi ilişkinin sağladığı kolaylıktan faydalanılması da cezayı artırır.",
+      "articleRefs": [
+        "105"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Hayata yönelik bir saldırı gerçekleştireceğinden bahisle yapılan tehdit kadına karşı işlenirse cezanın alt sınırı nedir?",
+      "back": "Alt sınır dokuz aydan az olamaz. Suçun cezası altı aydan iki yıla kadar hapistir.",
+      "explanation": "Tehdit silahla, birden fazla kişi tarafından birlikte ya da suç örgütlerinin korkutucu gücünden yararlanılarak işlenirse iki yıldan yedi yıla kadar hapis verilir.",
+      "articleRefs": [
+        "106"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Malvarlığı itibarıyla büyük bir zarara uğratacağından bahisle yapılan tehdit resen mi soruşturulur?",
+      "back": "Hayır. Bu tehdit mağdurun şikâyeti üzerine cezalandırılır. Ceza iki aydan altı aya kadar hapis veya adlî para cezasıdır.",
+      "explanation": "Sair bir kötülük edeceğinden bahisle yapılan tehdit de aynı şekilde şikâyete bağlıdır ve aynı cezayı gerektirir.",
+      "articleRefs": [
+        "106"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Tehdit amacıyla kasten yaralama suçu işlenirse fail hangi suçlardan sorumlu olur?",
+      "back": "Tehdidin yanında ayrıca kasten yaralama suçundan da ceza verilir.",
+      "explanation": "Aynı kural, tehdit amacıyla kasten öldürme ve malvarlığına zarar verme suçlarının işlenmesinde de geçerlidir.",
+      "articleRefs": [
+        "106"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Şantaj suçunun cezası nedir?",
+      "back": "Bir yıldan üç yıla kadar hapis ve beşbin güne kadar adlî para cezası verilir; iki ceza birlikte uygulanır.",
+      "explanation": "Kendisine veya başkasına yarar sağlamak maksadıyla bir kişinin şeref veya saygınlığına zarar verecek hususların açıklanacağı ya da isnat edileceği tehdidinde de aynı cezaya hükmolunur.",
+      "articleRefs": [
+        "107"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Bir şeyi yaptırmak için bir kişiye cebir kullanan faile ceza nasıl belirlenir?",
+      "back": "Kasten yaralama suçundan verilecek ceza üçte birinden yarısına kadar artırılarak hükmolunur.",
+      "explanation": "Cebir, kişiyi bir şeyi yapmaya, yapmamaya ya da kendisinin yapmasına müsaade etmeye zorlamak için kullanılır.",
+      "articleRefs": [
+        "108"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Bir kimseyi hukuka aykırı olarak bir yerde kalma hürriyetinden yoksun bırakan kişiye hangi ceza verilir?",
+      "back": "Bir yıldan beş yıla kadar hapis cezası verilir.",
+      "explanation": "Fail fiili işlemek için ya da işlediği sırada cebir, tehdit veya hile kullanırsa ceza iki yıldan yedi yıla kadar hapistir.",
+      "articleRefs": [
+        "109"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Kişiyi hürriyetinden yoksun kılma suçu hangi kişilere karşı işlenirse ceza bir kat artırılır?",
+      "back": "Üstsoy, altsoy, eş ya da boşandığı eşe karşı işlenirse. Çocuğa ya da beden veya ruh bakımından kendini savunamayacak durumdaki kişiye karşı işlenmesi de aynı sonucu doğurur.",
+      "explanation": "Silahla, birden fazla kişi tarafından birlikte, kişinin yerine getirdiği kamu görevi nedeniyle ya da kamu görevinin sağladığı nüfuz kötüye kullanılarak işlenmesi de cezayı bir kat artırır.",
+      "articleRefs": [
+        "109"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Kişiyi hürriyetinden yoksun kılma cinsel amaçla işlenirse ceza bir kat mı artırılır?",
+      "back": "Hayır. Cinsel amaçla işlenmesi hâlinde cezalar yarı oranında artırılır. Bir kat artırım silah, eş veya çocuğa karşı işlenme gibi hâllere özgüdür.",
+      "explanation": "Suç mağdurun ekonomik bakımdan önemli bir kaybına neden olursa ayrıca bin güne kadar adlî para cezasına hükmolunur.",
+      "articleRefs": [
+        "109"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Kişiyi hürriyetinden yoksun kılan fail, mağduru kendiliğinden güvenli bir yerde serbest bırakırsa ceza ne kadar indirilir?",
+      "back": "Cezanın üçte ikisine kadarı indirilir. Bunun için serbest bırakma soruşturma başlamadan önce ve mağdurun şahsına zarar dokunmadan yapılmalıdır.",
+      "explanation": "Bu etkin pişmanlık indirimi, kişiyi hürriyetinden yoksun kılma suçu için öngörülmüştür.",
+      "articleRefs": [
+        "110",
+        "109"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Bir kimseyi siyasi partiden ayrılmaya zorlamak için ona tehdit kullanan kişi hangi suçu işler?",
+      "back": "Siyasi hakların kullanılmasının engellenmesi suçunu işler. Bu suçun cezası bir yıldan üç yıla kadar hapistir.",
+      "explanation": "Kişiyi seçim yoluyla gelinen bir kamu görevine aday olmamaya ya da seçildiği görevden ayrılmaya zorlamak da bu suçu oluşturur. Bir siyasi partinin faaliyetleri engellenirse ceza iki yıldan beş yıla kadar hapistir.",
+      "articleRefs": [
+        "114"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Konutu ortak kullananlardan birinin rızası her durumda konut dokunulmazlığının ihlali suçunu ortadan kaldırır mı?",
+      "back": "Hayır. Rıza açıklamasının meşru bir amaca yönelik olması gerekir. Ancak bu durumda konut dokunulmazlığının ihlali hükümleri uygulanmaz.",
+      "explanation": "Aynı kural evlilik birliğindeki aile bireyleri için de geçerlidir. Birden fazla kişi tarafından ortak kullanılan işyerlerinde de aynı şekilde uygulanır.",
+      "articleRefs": [
+        "116"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Konut dokunulmazlığının ihlali gece vakti işlenirse ceza nedir?",
+      "back": "Bir yıldan üç yıla kadar hapis cezası verilir. Fiilin cebir veya tehdit kullanılarak işlenmesi de aynı sonucu doğurur.",
+      "explanation": "Temel şekilde ceza, mağdurun şikâyeti üzerine altı aydan iki yıla kadar hapistir.",
+      "articleRefs": [
+        "116"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Cebir veya tehditle iş ve çalışma hürriyetini ihlal eden kişi hangi şartla cezalandırılır?",
+      "back": "Mağdurun şikâyeti hâlinde cezalandırılır. Ceza altı aydan iki yıla kadar hapis veya adlî para cezasıdır.",
+      "explanation": "Cebir veya tehditle işçiyi ya da işverenleri ücretleri azaltıp çoğaltmaya zorlayan ya da bir işin durmasına neden olan kişiye altı aydan üç yıla kadar hapis cezası verilir.",
+      "articleRefs": [
+        "117"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Konut dokunulmazlığının ihlalinde cezayı bir kat artıran ortak hâller nelerdir?",
+      "back": "Silahla işlenmesi; kişinin kendini tanınmayacak hâle koyması, imzasız mektup veya özel işaret kullanması; birden fazla kişiyle birlikte işlenmesi; suç örgütlerinin korkutucu gücünden yararlanılması; kamu görevinin nüfuzunun kötüye kullanılması.",
+      "explanation": "Bu ortak hüküm eğitim ve öğretimin engellenmesi, kamu kurumu veya kamu kurumu niteliğindeki meslek kuruluşlarının faaliyetlerinin engellenmesi, siyasi hakların kullanılmasının engellenmesi, inanç, düşünce ve kanaat hürriyetinin kullanılmasını engelleme ile iş ve çalışma hürriyetinin ihlali suçlarına da uygulanır.",
+      "articleRefs": [
+        "119"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Haksız arama suçunu kim işleyebilir?",
+      "back": "Yalnız kamu görevlisi işleyebilir. Hukuka aykırı olarak bir kimsenin üstünü veya eşyasını arayan kamu görevlisine üç aydan bir yıla kadar hapis cezası verilir.",
+      "articleRefs": [
+        "120"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Nefret ve ayırımcılık suçunda nefret hangi farklılıklardan kaynaklanmalıdır?",
+      "back": "Dil, ırk, milliyet, renk, cinsiyet, engellilik, siyasi düşünce, felsefi inanç, din veya mezhep farklılığından kaynaklanmalıdır.",
+      "explanation": "Bu nefret nedeniyle bir kişinin işe alınmasını, kamuya arz edilmiş bir hizmetten yararlanmasını ya da olağan bir ekonomik etkinlikte bulunmasını engelleyen kişiye bir yıldan üç yıla kadar hapis cezası verilir.",
+      "articleRefs": [
+        "122"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Kişilerin huzur ve sükûnunu bozma suçu hangi davranışlarla işlenir?",
+      "back": "Sırf huzur ve sükûnunu bozmak maksadıyla bir kimseye ısrarla telefon edilmesi, gürültü yapılması ya da aynı maksatla hukuka aykırı başka bir davranışta bulunulmasıyla işlenir.",
+      "explanation": "Fail, mağdurun şikâyeti üzerine üç aydan bir yıla kadar hapis cezası ile cezalandırılır.",
+      "articleRefs": [
+        "123"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Bir basın ve yayın organının yayınını hukuka aykırı olarak engelleyen kişi hangi hükme göre cezalandırılır?",
+      "back": "Kamu kurumları arasındaki haberleşmeyi engelleme hükmüne göre cezalandırılır; bir yıldan beş yıla kadar hapis cezası verilir.",
+      "explanation": "Kişiler arasındaki haberleşmenin hukuka aykırı olarak engellenmesinde ise ceza altı aydan iki yıla kadar hapis veya adlî para cezasıdır.",
+      "articleRefs": [
+        "124"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Israrlı takip suçunun temel cezası nedir ve soruşturulması neye bağlıdır?",
+      "back": "Altı aydan iki yıla kadar hapis; soruşturulması ve kovuşturulması şikâyete bağlıdır.",
+      "explanation": "Suç, ısrarlı biçimde fiziken takip etmek ya da haberleşme ve iletişim araçlarını, bilişim sistemlerini veya üçüncü kişileri kullanarak temas kurmaya çalışmak suretiyle kişide ciddi huzursuzluk ya da güvenlik endişesi oluşturmaktır. Çocuğa ya da ayrılık kararı verilen veya boşandığı eşe karşı işlenmesi, mağdurun okulunu, iş yerini veya konutunu değiştirmesine ya da okulunu veya işini bırakmasına neden olması ya da hakkında uzaklaştırma veya yaklaşmama tedbiri bulunan failce işlenmesi hâlinde bir yıldan üç yıla kadar hapis verilir.",
+      "articleRefs": [
+        "123/A"
+      ]
+    }
+  ]
+}

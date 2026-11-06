@@ -1,0 +1,295 @@
+{
+  "deck": {
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "legislationSlug": "5271-sayili-ceza-muhakemesi-kanunu-cmk",
+    "unitSlug": "cmk-yetki-hakimin-reddi",
+    "sourceLabel": "AI bilgi kartı — 5271 Sayılı Ceza Muhakemesi Kanunu (CMK) md 12–33",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: cmk-yetki-hakimin-reddi özeti + resmî madde metni)"
+  },
+  "cards": [
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Türkiye'de işlenen bir suçta davaya bakmak yetkisi kural olarak hangi yer mahkemesine aittir?",
+      "back": "Suçun işlendiği yer mahkemesine.",
+      "explanation": "Özel hâller de aynı maddededir: teşebbüste son icra hareketinin yapıldığı yer, kesintisiz suçlarda kesintinin gerçekleştiği yer, zincirleme suçlarda son suçun işlendiği yer mahkemesi yetkilidir.",
+      "articleRefs": [
+        "12"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Mağdur Sivas'ta zorla araca bindiriliyor, Kırşehir üzerinden Niğde'ye götürülüyor. Orada bir süre alıkonulduktan sonra serbest bırakılıyor. Hangi yer mahkemesi yetkilidir?",
+      "back": "Niğde mahkemesi. Kesintisiz suçlarda yetki, kesintinin gerçekleştiği yer mahkemesine aittir.",
+      "explanation": "Aynı maddeye göre zincirleme suçlarda son suçun, teşebbüste ise son icra hareketinin yapıldığı yer esas alınır.",
+      "articleRefs": [
+        "12"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Ülkede yayımlanan basılı bir eserle işlenen suçta yetki, kural olarak eserin basıldığı yer mahkemesine mi aittir?",
+      "back": "Hayır. Kural, eserin yayım merkezi olan yer mahkemesidir. Basıldığı yer, suç yayım merkezi dışındaki baskıda meydana gelmişse ayrıca yetkilidir.",
+      "explanation": "Basıldığı yer mahkemesinin yetkisi için aynı eserin birden çok yerde basılmış olması gerekir. Görsel veya işitsel yayınlarda da bu kural uygulanır.",
+      "articleRefs": [
+        "12"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Suçun işlendiği yer belli değilse ve şüpheli yakalanmışsa hangi yer mahkemesi yetkilidir?",
+      "back": "Şüpheli veya sanığın yakalandığı yer mahkemesi.",
+      "explanation": "Şüpheli yakalanmamışsa yerleşim yeri mahkemesi yetkilidir. Türkiye'de yerleşim yeri yoksa Türkiye'deki en son adresinin bulunduğu yer mahkemesi yetkilidir.",
+      "articleRefs": [
+        "13"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Suç yeri belli değil. Mahkeme yakalanma yeri, yerleşim yeri ve Türkiye'deki en son adres ölçütleriyle de belirlenemiyor. Hangi yer mahkemesi yetkilidir?",
+      "back": "İlk usul işleminin yapıldığı yer mahkemesi.",
+      "explanation": "Bu ölçüt sıranın son basamağıdır. Ancak mahkeme önceki basamaklarla belirlenemiyorsa uygulanır.",
+      "articleRefs": [
+        "13"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Yabancı ülkede bulunan ve diplomatik bağışıklıktan yararlanan bir Türk kamu görevlisinin işlediği suçta hangi yer mahkemesi yetkilidir?",
+      "back": "Ankara mahkemesi.",
+      "explanation": "Bu hâlde yetkili mahkemeyi kanun doğrudan belirlemiştir: yabancı ülkede bulunup diplomatik bağışıklıktan yararlanan Türk kamu görevlilerinin suçlarına Ankara mahkemesi bakar.",
+      "articleRefs": [
+        "14"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Yabancı ülkede işlenen bir suçta şüpheli Türkiye'de yakalanmamış, yerleşmemiş ve adresi de yoksa yetkili mahkemeyi Adalet Bakanı mı belirler?",
+      "back": "Hayır. Yetkili mahkemeyi Yargıtay belirler. Adalet Bakanı yalnızca bunu ister, başvuruyu ise Yargıtay Cumhuriyet Başsavcısı yapar.",
+      "explanation": "Yargıtay, Cumhuriyet savcısının, şüphelinin veya sanığın istemi üzerine suçun işlendiği yere daha yakın olan yer mahkemesine de yetki verebilir.",
+      "articleRefs": [
+        "14"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Ülke içinde yolculuk yapan bir trende işlenen suçta hangi yer mahkemesi de yetkilidir?",
+      "back": "Trenin ilk ulaştığı yer mahkemesi.",
+      "explanation": "Aynı kural, ülke içinde deniz ve hava taşıtlarında ya da bu taşıtlarla işlenen suçlarda da uygulanır.",
+      "articleRefs": [
+        "15"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Yabancı bayrak taşıyan bir gemi, Türk kara suları dışında çevreyi kirletirse hangi yer mahkemeleri yetkilidir?",
+      "back": "Suçun işlendiği yere en yakın yer mahkemesi ile geminin Türkiye'de ilk uğradığı limanın bulunduğu yer mahkemesi; her biri yetkilidir.",
+      "explanation": "Türk bayraklı bir gemi Türkiye dışındayken gemide işlenen suçlarda ise geminin ilk uğradığı Türk limanındaki ya da bağlama limanındaki mahkeme yetkilidir.",
+      "articleRefs": [
+        "15"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Birkaç mahkeme arasında olumlu veya olumsuz yetki uyuşmazlığı çıkarsa yetkili mahkemeyi kim belirler?",
+      "back": "Ortak yüksek görevli mahkeme.",
+      "explanation": "Uyuşmazlık birkaç hâkim arasında çıkmışsa yetkili hâkimi de aynı merci belirler. Görev uyuşmazlığında da (md 4) aynı merci, ortak yüksek görevli mahkeme karar verir.",
+      "articleRefs": [
+        "17",
+        "4"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Sanık, ilk derece mahkemesinde yetkisizlik iddiasını en geç ne zaman bildirmelidir?",
+      "back": "Duruşmada sorgusundan önce.",
+      "explanation": "Mahkeme de bu iddiaya ilişkin kararı sanığın sorgusundan önce verir. Bu aşamadan sonra yetkisizlik iddiasında bulunulamaz, mahkeme de bu konuda re'sen karar veremez. Yetkisizlik kararlarına karşı itiraz yoluna gidilebilir.",
+      "articleRefs": [
+        "18"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Bölge adliye mahkemesinde duruşmasız işlerde yetkisizlik iddiasına ilişkin karar ne zaman verilir?",
+      "back": "İncelemenin hemen başlangıcında.",
+      "explanation": "Duruşmalı işlerde ise bu karar, inceleme raporu okunmadan önce verilir.",
+      "articleRefs": [
+        "18"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Yetkili mahkeme hukukî veya fiilî sebeplerle görevini yerine getiremeyecek hâldeyse davanın nakline kim karar verir?",
+      "back": "Yüksek görevli mahkeme. Dava, başka yerde bulunan aynı derecede bir mahkemeye nakledilir.",
+      "articleRefs": [
+        "19"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Kovuşturmanın görevli ve yetkili mahkemenin bulunduğu yerde yapılması kamu güvenliği için tehlikeliyse davanın naklini Yargıtaydan kim ister?",
+      "back": "Adalet Bakanı.",
+      "explanation": "Ayrıca mahkeme, fiili sebepler veya güvenlik gerekçesiyle duruşmanın il sınırları içinde başka bir yerde yapılmasına karar verebilir. Bu karara karşı itiraz yolu açıktır.",
+      "articleRefs": [
+        "19"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Yetkili olmayan bir mahkemenin yaptığı işlemler, yetkisizlik nedeniyle kural olarak hükümsüz mü sayılır?",
+      "back": "Hayır. Yetkili olmayan hâkim veya mahkemece yapılan işlemler, sadece yetkisizlik nedeniyle hükümsüz sayılmaz.",
+      "articleRefs": [
+        "20"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Hâkim, şüpheli, sanık veya mağdurla arasında hangi dereceye kadar kan hısımlığı varsa davaya bakamaz?",
+      "back": "Üçüncü derece dahil kan hısımlığı varsa hâkimlik görevini yapamaz.",
+      "explanation": "Hâkim, şüpheli, sanık veya mağdurun kan veya kayın hısımlığından üstsoy veya altsoyundan biriyse de davaya bakamaz.",
+      "articleRefs": [
+        "22"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Evlilik sona ermiş olsa bile hâkim, sanıkla arasında hangi dereceye kadar kayın hısımlığı varsa davaya bakamaz?",
+      "back": "İkinci derece dahil kayın hısımlığı varsa davaya bakamaz.",
+      "explanation": "Kan hısımlığında sınır üçüncü derece dahildir, kayın hısımlığında ise ikinci derece dahildir.",
+      "articleRefs": [
+        "22"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Hâkim, boşandığı eşinin sanık olduğu davaya bakabilir mi?",
+      "back": "Hayır. Evlilik ilişkisi sonradan kalkmış olsa bile şüpheli, sanık veya mağdurla arasında bu ilişki bulunmuşsa hâkim görev yapamaz.",
+      "explanation": "Aynı kural, sona ermiş vesayet ve kayyımlık ilişkileri için de geçerlidir.",
+      "articleRefs": [
+        "22"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Aynı işte soruşturma evresinde görev yapmış bir hâkim, hangi evrede görev yapamaz?",
+      "back": "Kovuşturma evresinde.",
+      "explanation": "Yargılamanın yenilenmesi hâlinde, önceki yargılamada görev yapan hâkim aynı işte görev alamaz. Bir karar veya hükme katılan hâkim de yüksek görevli mahkemenin bu hükme ilişkin vereceği karar veya hükme katılamaz.",
+      "articleRefs": [
+        "23"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Hâkimin reddini kimler isteyebilir?",
+      "back": "Cumhuriyet savcısı; şüpheli, sanık veya bunların müdafii; katılan veya vekili.",
+      "explanation": "Bunlardan biri isterse karar veya hükme katılacak hâkimlerin isimleri kendisine bildirilir. Red hem hâkimin davaya bakamayacağı hâllerde hem de tarafsızlığını şüpheye düşürecek diğer sebeplerle istenebilir.",
+      "articleRefs": [
+        "24"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Hâkimin tarafsızlığını şüpheye düşüren bir sebep duruşma sırasında sonradan öğrenildi. Ret istemi, öğrenmeden itibaren kaç gün içinde yapılmalıdır?",
+      "back": "Yedi gün içinde. Bu istem, duruşma veya inceleme bitinceye kadar yapılabilir.",
+      "explanation": "Sonradan ortaya çıkan veya öğrenilen sebeplerde olağan son anlar geçmiş olsa da ret istenebilir. Ancak istemin, ret sebebinin öğrenilmesinden itibaren yedi gün içinde yapılması şarttır.",
+      "articleRefs": [
+        "25"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Tarafsızlık sebebiyle hâkimin reddi, ilk derece mahkemelerinde en geç ne zamana kadar istenebilir?",
+      "back": "Sanığın sorgusu başlayıncaya kadar.",
+      "explanation": "Duruşmalı işlerde bölge adliye mahkemelerinde son an, inceleme raporunun üyelere açıklanmasıdır. Diğer hâllerde red, inceleme başlayıncaya kadar istenebilir.",
+      "articleRefs": [
+        "25"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Yargıtayda duruşmalı bir işte, görevlendirilen üye veya tetkik hâkiminin yazdığı rapor üyelere açıklandı. Bundan sonra tarafsızlık sebebiyle hâkimin reddi istenebilir mi?",
+      "back": "Hayır, kural olarak istenemez. Ancak sonradan ortaya çıkan veya öğrenilen bir sebeple, inceleme bitinceye kadar ve öğrenmeden itibaren yedi gün içinde istenebilir.",
+      "articleRefs": [
+        "25"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Reddi istenen hâkim asliye ceza mahkemesine mensup. Mahkeme bu yüzden teşekkül edemiyorsa ret istemine kim karar verir?",
+      "back": "Bu mahkemenin yargı çevresi içerisinde bulunan ağır ceza mahkemesi.",
+      "explanation": "Ret istemine kural olarak hâkimin mensup olduğu mahkeme karar verir ve reddi istenen hâkim müzakereye katılamaz. Mahkeme bu nedenle teşekkül edemezse karar başka bir merciye geçer.",
+      "articleRefs": [
+        "27"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Bir yerde birden fazla ağır ceza dairesi var. Son numaralı dairenin hâkimi reddedildi ve daire teşekkül edemiyor. Ret istemine hangi daire karar verir?",
+      "back": "(1) numaralı daire.",
+      "explanation": "Diğer dairelerde numara olarak kendisini izleyen daire karar verir. O yerde ağır ceza mahkemesinin tek dairesi varsa en yakın ağır ceza mahkemesi karar verir.",
+      "articleRefs": [
+        "27"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Hâkimin reddi isteminin kabulüne ilişkin karara karşı kanun yoluna gidilebilir mi?",
+      "back": "Hayır, kabul kararları kesindir. Kabul edilmemesine ilişkin kararlara karşı ise itiraz yoluna gidilebilir.",
+      "explanation": "İtiraz üzerine verilen ret kararı, hükümle birlikte incelenir.",
+      "articleRefs": [
+        "28"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Hâkim oturum sırasında reddedildi. Ret kararı beklenmeden 216. madde uyarınca tarafların iddia ve sözlerinin dinlenmesine geçilebilir mi?",
+      "back": "Hayır. Oturuma ara verilmeden devam edilir ama tarafların iddia ve sözleri dinlenemez. Ret kararı verilmeden, reddedilen hâkimle bir sonraki oturuma da başlanamaz.",
+      "explanation": "Reddi istenen hâkim, ret hakkında karar verilinceye kadar yalnız gecikmesinde sakınca olan işlemleri yapar. Ret istemi kabul edilirse bu işlemler dışında duruşma tekrarlanır.",
+      "articleRefs": [
+        "29"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Kovuşturma evresinde ileri sürülen hâkimin reddi istemi hangi hâllerde geri çevrilir?",
+      "back": "İstem süresinde yapılmamışsa, ret sebebi ve delili gösterilmemişse ya da istemin duruşmayı uzatmak amacıyla yapıldığı açıkça anlaşılıyorsa.",
+      "explanation": "Toplu mahkemelerde geri çevirme, reddedilen hâkimin de müzakereye katılmasıyla yapılır. Tek hâkimli mahkemelerde ise istemi reddedilen hâkimin kendisi geri çevirir. Bu kararlara karşı itiraz yoluna başvurulabilir.",
+      "articleRefs": [
+        "31"
+      ]
+    }
+  ]
+}

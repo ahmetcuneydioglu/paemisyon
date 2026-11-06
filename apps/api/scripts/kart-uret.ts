@@ -3,6 +3,7 @@
  *
  *   cd apps/api && npx tsx scripts/kart-uret.ts <girdi.json> <unite.json> <cikti.json> [--hedef 28]
  *   cd apps/api && npx tsx scripts/kart-uret.ts --onar <girdi.json> <deste.json>   (yalnız stil kapısı)
+ *   cd apps/api && npx tsx scripts/kart-uret.ts <girdi.json> - <cikti.json> --slug tck-… --baslik "…"   (ünite özeti yok: TCK)
  *   sonra: npx tsx scripts/kart-dogrula-uzak.ts <cikti.json> --md > <cikti>.dogrulama.md   (canlı madde metni)
  *   sonra: npx tsx scripts/kart-yukle.ts <cikti.json> [--replace]                           (in_review; yayın panelden)
  *
@@ -31,6 +32,10 @@ const hedefIdx = args.indexOf('--hedef');
 const hedef = hedefIdx >= 0 ? Number(args.splice(hedefIdx, 2)[1]) : 28;
 const clozeIdx = args.indexOf('--cloze');
 const clozeAcik = clozeIdx >= 0 ? (args.splice(clozeIdx, 1), true) : false;
+const baslikIdx = args.indexOf('--baslik');
+const baslik = baslikIdx >= 0 ? args.splice(baslikIdx, 2)[1] : '';
+const slugIdx = args.indexOf('--slug');
+const partiSlug = slugIdx >= 0 ? args.splice(slugIdx, 2)[1] : '';
 const onarIdx = args.indexOf('--onar');
 const onarKipi = onarIdx >= 0 ? (args.splice(onarIdx, 1), true) : false;
 const [girdiPath, unitePath, out] = args;
@@ -77,8 +82,11 @@ KESİN KURALLAR
      başka bölümden çıkan iddiaya o maddeyi de referans ver. Kartta ŞIK yoktur: "şık", "çeldirici", "seçenek"
      deme; yanlış bilgiyi doğrudan yalanla ("Yasak 1 yıl kala başlar; 2 yıl diye bir kayıt yok").
    - Tuzak kartının ön yüzü YALNIZ referans maddenin metninde geçen bir öğeyle kurulur ("teminat", "ilçe", "7 gün" gibi
-     başka kanundan ya da hiçbir metinden gelmeyen bir öğeyi anıp çürütme). Tuzak, metindeki iki öğenin karıştırılması
-     ya da metindeki şartın atlanması üzerine kurulur. counterNumbers'a yalnız mevzuatın bir maddesinde geçen sayı girer.
+     başka kanundan ya da hiçbir metinden gelmeyen bir öğeyi anıp çürütme). Tuzak, AYNI MADDEDEKİ iki öğenin
+     karıştırılması ya da o maddedeki şartın atlanması üzerine kurulur; başka bir maddedeki sayıyı, süreyi ya da
+     hali bu maddeye taşıyıp çürütme (çapraz tuzak YASAK). counterNumbers'a yalnız referans maddede geçen sayı girer.
+   - Tuzak ön yüzü OLUMLU soru kalıbında kurulur ("…kesin midir?", "…yapılabilir mi?"); "…edilemez mi?",
+     "…yasak mıdır?" gibi olumsuz kalıp kullanılmaz (verilen "Hayır" iki yöne okunur).
    - "Evet/Hayır" cevabını koşulsuz bırakma: aynı maddedeki diğer kayıtlar (dönemde bir defa, 30 ay gibi) varsa
      arka yüzde bir cümleyle an.${
        clozeAcik
@@ -173,9 +181,13 @@ function userMessage(g: OzetGirdi, u: SummaryUnitJson): string {
     '## RESMÎ MADDE METİNLERİ',
     maddeler,
     '',
-    '## ÜNİTE ÖZETİ (hammadde; cümleleri kopyalama, bilgiyi soruya çevir)',
-    ozetBloklari(u),
-    '',
+    ...(u.blocks?.length
+      ? [
+          '## ÜNİTE ÖZETİ (hammadde; cümleleri kopyalama, bilgiyi soruya çevir)',
+          ozetBloklari(u),
+          '',
+        ]
+      : []),
     '## BU MADDELERDEN ÇIKMIŞ SORULAR (✓ doğru, ✗ yanlış şık — tuzak kartları buradan)',
     sorular || '(soru yok)',
   ].join('\n');
@@ -186,11 +198,15 @@ function userMessage(g: OzetGirdi, u: SummaryUnitJson): string {
  * öğeyi çürütme kalıpları; arka yüzde yalnız şık dili. "sayılmaz" tuzak cevabında meşru olduğundan taranmaz.
  */
 const YASAK_ACIKLAMA =
-  /karıştır|yer değiştir|atlarsan|yanılırsın|hatırla|düşün\b|(?<!\p{L})şık|çeldirici|diye bir .{0,40}(yok|yazılmaz|geçmez)|geçmez|maddelerinde değil|listede yok|sorulursa|sorulduğunda/iu;
+  /(?<!fesat )karıştır|yer değiştir|atlarsan|yanılırsın|hatırla|düşün\b|(?<!\p{L})şık|çeldirici|diye bir .{0,40}(yok|yazılmaz|geçmez)|geçmez|maddelerinde değil|listede yok|sorulursa|sorulduğunda/iu;
 const YASAK_ARKA =
   /(?<!\p{L})şık|çeldirici|diye bir .{0,40}(yok|yazılmaz|geçmez)|listede yok|maddelerinde değil/iu;
 
+/** Ön yüzde olumsuz soru kalıbı ("…edilemez mi?", "…değil midir?"): cevap iki yöne okunur, kart yeniden kurulur. */
+const YASAK_ON = /(maz|mez|mazlar|mezler|değil|yok|yasak)\s*m[ıiuü](dır|dir|dur|dür)?\s*\?\s*$/iu;
+
 export function stilKusuru(c: FlashcardJson): string | null {
+  if (YASAK_ON.test(c.front ?? '')) return 'ön yüzde olumsuz soru kalıbı';
   const a = (c.back ?? '').match(YASAK_ARKA);
   if (a) return `arka yüzde yasak kalıp: "${a[0]}"`;
   const m = (c.explanation ?? '').match(YASAK_ACIKLAMA);
@@ -212,7 +228,7 @@ async function stilKapisi(
     const metin = c.articleRefs
       .map((n) => `### MADDE ${n}\n${maddeler.get(n) ?? '(metin yok)'}`)
       .join('\n\n');
-    const arkaKusur = YASAK_ARKA.test(c.back ?? '');
+    const arkaKusur = YASAK_ARKA.test(c.back ?? '') || YASAK_ON.test(c.front ?? '');
     return (
       `## KART ${i + 1}\nfront: ${c.front}\nback${arkaKusur ? ' (REDDEDİLDİ)' : ''}: ${c.back}\n` +
       `explanation${arkaKusur ? '' : ' (REDDEDİLDİ)'}: ${c.explanation ?? ''}\n${metin}`
@@ -265,7 +281,7 @@ async function stilKapisi(
   let dusurulen = 0;
   for (const { i } of kusurlu) {
     const y = yeni.cards?.find((c) => c.index === i + 1);
-    const arkaKusur = YASAK_ARKA.test(cards[i].back ?? '');
+    const arkaKusur = YASAK_ARKA.test(cards[i].back ?? '') || YASAK_ON.test(cards[i].front ?? '');
     if (arkaKusur) {
       // Arka yüz kusuru = kart maddede olmayan öğe üzerine kurulmuş: kartın tamamı yeniden yazılır (refs korunur).
       const aday: FlashcardJson = {
@@ -321,7 +337,23 @@ async function stilKapisi(
     console.log(`Onarım bitti: ${unitePath}`);
     return;
   }
-  const unite = JSON.parse(readFileSync(unitePath, 'utf8')) as SummaryUnitJson;
+  // Ünite özeti yoksa ("-"): yalnız madde metni + çıkmış sorulardan üretim (TCK gibi Doc 53 ünitesi olmayan kanunlar).
+  const unite: SummaryUnitJson =
+    unitePath === '-'
+      ? ({
+          unit: {
+            slug: partiSlug,
+            legislationSlug: girdi.legislation.slug,
+            topicId: girdi.legislation.topicId,
+            title: baslik || etiket(girdi),
+          },
+          blocks: [],
+        } as unknown as SummaryUnitJson)
+      : (JSON.parse(readFileSync(unitePath, 'utf8')) as SummaryUnitJson);
+  if (unitePath === '-' && (!partiSlug || !baslik)) {
+    console.error('Ünitesiz kipte --slug ve --baslik zorunludur.');
+    process.exit(2);
+  }
   if (unite.unit.legislationSlug !== girdi.legislation.slug) {
     console.error(
       `Mevzuat uyuşmuyor: girdi ${girdi.legislation.slug}, ünite ${unite.unit.legislationSlug}`,
@@ -377,10 +409,10 @@ async function stilKapisi(
     deck: {
       topicId,
       legislationSlug: girdi.legislation.slug,
-      unitSlug: unite.unit.slug,
+      ...(unitePath === '-' ? {} : { unitSlug: unite.unit.slug }),
       sourceLabel: `AI bilgi kartı — ${girdi.legislation.name} md ${etiket(girdi)}`,
       generatedBy:
-        `${res.model} (kart-uret.ts; kaynak: ${unite.unit.slug} özeti + resmî madde metni` +
+        `${res.model} (kart-uret.ts; kaynak: ${unitePath === '-' ? 'resmî madde metni + çıkmış sorular' : unite.unit.slug + ' özeti + resmî madde metni'}` +
         (onarim.onarilan ? `; stil kapısı ${onarim.onarilan} açıklama yeniden yazıldı` : '') +
         (onarim.dusurulen ? `; ${onarim.dusurulen} açıklama düşürüldü` : '') +
         ')',

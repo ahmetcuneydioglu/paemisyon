@@ -1,0 +1,302 @@
+{
+  "deck": {
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "legislationSlug": "5271-sayili-ceza-muhakemesi-kanunu-cmk",
+    "unitSlug": "cmk-arama-elkoyma",
+    "sourceLabel": "AI bilgi kartı — 5271 Sayılı Ceza Muhakemesi Kanunu (CMK) md 116–128, 128/A, 129–134",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: cmk-arama-elkoyma özeti + resmî madde metni); denetim düzeltmesi 6 Kas 2026 (5 kart)"
+  },
+  "cards": [
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Şüphelinin veya sanığın üstünü, eşyasını, konutunu ya da işyerini aramak için hangi derecede şüphe yeterlidir?",
+      "back": "Makul şüphe. Yakalanabileceği veya suç delillerinin elde edilebileceği hususunda makul şüphe varsa arama yapılabilir.",
+      "explanation": "Makul şüphe varsa şüphelinin veya sanığın üstü, eşyası, konutu, işyeri ve ona ait diğer yerler aranabilir.",
+      "articleRefs": [
+        "116"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Şüpheli dışındaki bir kişinin konutunda arama yapılabilmesi hangi şarta bağlıdır?",
+      "back": "Aranılan kişinin veya suç delillerinin o yerde bulunduğunun kabul edilebilmesine olanak sağlayan olayların varlığına bağlıdır.",
+      "explanation": "Şüphelinin veya sanığın yakalanabilmesi ya da suç delillerinin elde edilebilmesi amacıyla diğer bir kişinin üstü, eşyası, konutu, işyeri ve ona ait diğer yerler aranabilir. Bu sınırlama, şüphelinin veya sanığın bulunduğu yerler ile izlendiği sırada girdiği yerler için geçerli değildir.",
+      "articleRefs": [
+        "117"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 1,
+      "front": "Konutta gece vaktinde arama kural olarak yapılabilir mi?",
+      "back": "Hayır. Kural, konutta, işyerinde veya diğer kapalı yerlerde gece vaktinde arama yapılamamasıdır. Yasak yalnız maddede sayılan istisna hâllerinde uygulanmaz.",
+      "articleRefs": [
+        "118"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Konutta gece vaktinde arama yasağı hangi hâllerde uygulanmaz?",
+      "back": "Suçüstü ve gecikmesinde sakınca bulunan hâllerde. Ayrıca yakalanmış veya gözaltına alınmış olup firar eden kişi ile tutuklu veya hükümlünün tekrar yakalanması amacıyla yapılan aramalarda uygulanmaz.",
+      "articleRefs": [
+        "118"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Kolluk amirinin yazılı emriyle arama yapılabilmesi için hangi durum gerekir?",
+      "back": "Cumhuriyet savcısına ulaşılamaması gerekir; ancak konutta, işyerinde ve kamuya açık olmayan kapalı alanlarda kolluk amirinin emriyle arama yapılamaz (yalnız hâkim kararı veya gecikmesinde sakınca bulunan hâllerde Cumhuriyet savcısının yazılı emri). Kolluk amirinin emriyle yapılan aramanın sonuçları Cumhuriyet Başsavcılığına derhal bildirilir.",
+      "explanation": "Sıra şöyledir: kural olarak hâkim kararı, gecikmesinde sakınca bulunan hâllerde Cumhuriyet savcısının yazılı emri, savcıya ulaşılamazsa kolluk amirinin yazılı emri.",
+      "articleRefs": [
+        "119"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Cumhuriyet savcısına ulaşılamadığında kolluk amirinin yazılı emriyle işyerinde arama yapılabilir mi?",
+      "back": "Hayır. Konutta, işyerinde ve kamuya açık olmayan kapalı alanlarda arama ancak hâkim kararıyla ya da gecikmesinde sakınca bulunan hâllerde Cumhuriyet savcısının yazılı emriyle yapılabilir.",
+      "explanation": "Kolluk amirinin yazılı emri, Cumhuriyet savcısına ulaşılamadığı hâllerde bu yerler dışındaki aramalar için kullanılabilir. Böyle bir aramanın sonuçları Cumhuriyet Başsavcılığına derhal bildirilir.",
+      "articleRefs": [
+        "119"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Cumhuriyet savcısı hazır olmadan konutta arama yapılırken o yer ihtiyar heyetinden veya komşulardan kaç kişi bulundurulur?",
+      "back": "2 kişi bulundurulur; bu kişiler o yer ihtiyar heyetinden veya komşulardan seçilir.",
+      "explanation": "Bu kural konut, işyeri ve diğer kapalı yerlerde yapılan aramalar için geçerlidir. Arama tutanağına işlemi yapanların açık kimlikleri de yazılır.",
+      "articleRefs": [
+        "119"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Hakkında arama yapılan kişinin belge veya kâğıtlarını inceleme yetkisi kime aittir?",
+      "back": "Cumhuriyet savcısı ve hâkime aittir.",
+      "explanation": "Belgelerin zilyedi veya temsilcisi belgelere kendi mührünü koyabilir ya da imzasını atabilir. İnceleme sonucu suça ilişkin olmadığı anlaşılan belge veya kâğıtlar ilgilisine geri verilir.",
+      "articleRefs": [
+        "122"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "İstenen eşyayı göstermekten ve teslim etmekten kaçınana uygulanan disiplin hapsi hükümleri kimler hakkında uygulanmaz?",
+      "back": "Şüpheli veya sanık ile tanıklıktan çekinebilecekler hakkında uygulanmaz.",
+      "explanation": "Eşyayı yanında bulunduran kişi, istem üzerine onu göstermek ve teslim etmekle yükümlüdür. Kaçınma hâlinde zilyet hakkında md 60'taki disiplin hapsi hükümleri uygulanır.",
+      "articleRefs": [
+        "124"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Devlet sırrı niteliğindeki belgelerin mahkemece incelenmesine ilişkin hüküm, hapis cezasının alt sınırı kaç yıl olan suçlarda uygulanır?",
+      "back": "Hapis cezasının alt sınırı 5 yıl veya daha fazla olan suçlarda uygulanır.",
+      "explanation": "Bu suçlarda Devlet sırrı niteliğindeki belgeleri yalnız mahkeme hâkimi veya heyeti inceler. Suç olgusuna ilişkin bilgileri içeren belgeler, Devlet sırrı olarak mahkemeye karşı gizli tutulamaz.",
+      "articleRefs": [
+        "125"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Şüpheli ile tanıklıktan çekinebilecek kimseler arasındaki mektuplara elkoyma yasağı hangi durumda geçerlidir?",
+      "back": "Mektup ve belgeler, tanıklıktan çekinebilecek bu kimselerin nezdinde bulundukça geçerlidir.",
+      "explanation": "Yasak, şüpheli veya sanık ile md 45 ve md 46'ya göre tanıklıktan çekinebilecek kimseler arasındaki mektupları ve belgeleri kapsar.",
+      "articleRefs": [
+        "126"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Hâkim kararı olmadan yapılan elkoyma kaç saat içinde görevli hâkimin onayına sunulur?",
+      "back": "24 saat içinde görevli hâkimin onayına sunulur.",
+      "explanation": "Bu süre, hâkim kararı olmaksızın, yani Cumhuriyet savcısının veya kolluk amirinin yazılı emriyle yapılan elkoymalarda işler. Kolluk görevlisinin açık kimliği elkoyma tutanağına geçirilir.",
+      "articleRefs": [
+        "127"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Hâkimin elkoyma hakkındaki karar süresi, işlemin onayına sunulduğu andan itibaren mi işler?",
+      "back": "Hayır. Hâkim kararını elkoymadan itibaren 48 saat içinde açıklar; açıklamazsa elkoyma kendiliğinden kalkar. Onaya sunma için ayrıca 24 saat süre vardır.",
+      "articleRefs": [
+        "127"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Askerî mahalde elkoyma işlemini kim yerine getirir?",
+      "back": "Adlî kolluk görevlileri yerine getirir. İşlem Cumhuriyet savcısının nezaretinde ve askerî makamların katılımıyla yapılır.",
+      "explanation": "Gecikmesinde sakınca bulunan hâllerde, Cumhuriyet savcısının yazılı emriyle de askerî makamların katılımıyla adlî kolluk görevlileri elkoyma yapabilir.",
+      "articleRefs": [
+        "127"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Şüpheliye ait taşınmaz, banka hesabı veya ortaklık payına elkoymaya kim karar verebilir?",
+      "back": "md 128 uyarınca ancak hâkim karar verebilir. Elkonulan değerlerin idaresi için kayyım atanmasına da yalnız hâkim karar verir.",
+      "explanation": "Taşınmaza elkoyma, tapu kütüğüne şerh verilerek icra edilir. Hesaba elkoyma ise banka veya malî kuruma teknik iletişim araçlarıyla derhâl bildirilerek icra olunur. Karara aykırı hareket edene Türk Ceza Kanunu md 289 hükümleri uygulanır. md 128/A'daki geçici askıya alma bunun dışındadır.",
+      "articleRefs": [
+        "128",
+        "128/A"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Taşınmaza elkonulabilmesi için taşınmazın şüphelinin zilyetliğinde olması gerekir mi?",
+      "back": "Hayır. Taşınmaz şüpheli veya sanığa ait olmalıdır; başka bir kişinin zilyetliğinde bulunsa dahi elkonulabilir. Somut delillere dayanan kuvvetli şüphe ve sayılan suçlardan birinin varlığı ayrıca gerekir.",
+      "articleRefs": [
+        "128"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Taşınmazlara, hak ve alacaklara elkoyma için suçtan elde edilen değere ilişkin rapor en geç ne kadar sürede hazırlanır?",
+      "back": "En geç 3 ay içinde hazırlanır. Özel sebepler zorunlu kıldığında talep üzerine 2 ay daha uzatılabilir (3 + 2 ay); süre en çok 5 ay olur.",
+      "explanation": "Rapor, ilgisine göre Bankacılık Düzenleme ve Denetleme Kurumu, Sermaye Piyasası Kurulu, Mali Suçları Araştırma Kurulu, Hazine Müsteşarlığı (madde metnindeki adıyla) ve Kamu Gözetimi, Muhasebe ve Denetim Standartları Kurumundan alınır.",
+      "articleRefs": [
+        "128"
+      ],
+      "derivedNumbers": [
+        {
+          "value": 5,
+          "expr": "3 + 2",
+          "refs": [
+            "128"
+          ],
+          "note": "üç aylık süre ile iki aylık uzatmanın toplamı"
+        }
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Banka, ödeme hizmeti sağlayıcısı veya kripto varlık hizmet sağlayıcısı, suçta kullanılan hesabı en çok ne kadar süreyle askıya alabilir?",
+      "back": "48 saate kadar askıya alabilir. Bu kararı ilgili banka, ödeme hizmeti sağlayıcısı veya kripto varlık hizmet sağlayıcısı verebilir.",
+      "explanation": "Askıya alma için nitelikli hırsızlık (TCK 142/2-e), nitelikli dolandırıcılık (TCK 158/1-f ve l) ya da banka veya kredi kartlarının kötüye kullanılması (TCK 245) suçlarının işlendiğine dair makul şüphe yeterlidir. Askıya alma ve hesap hareketleri, tüm bilgi ve belgelerle birlikte derhal Cumhuriyet başsavcılığına bildirilir; hesap sahibi kaldırılması için başvurabilir ve Cumhuriyet savcısı yirmidört saat içinde karar verir.",
+      "articleRefs": [
+        "128/A"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Hesap sahibi askıya almanın kaldırılması için başvurursa, Cumhuriyet savcısı kaç saat içinde karar verir?",
+      "back": "24 saat içinde karar verir.",
+      "explanation": "Askıya alma işlemi hesap sahibine de bildirilir. Hesap sahibi, işlemin kaldırılması için Cumhuriyet başsavcılığına başvurabilir. Askıya alma işlemine karar veren gerçek ve tüzel kişiler hukukî bakımdan sorumlu tutulmaz.",
+      "articleRefs": [
+        "128/A"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Soruşturmada istenen bilgi veya belgeyi banka ya da kripto varlık hizmet sağlayıcısı kaç gün içinde göndermek zorundadır?",
+      "back": "10 gün içinde göndermek zorundadır; gönderim fiziki veya elektronik ortamda yapılabilir.",
+      "explanation": "Bilgi veya belge gönderilmez ya da eksik gönderilirse, Cumhuriyet savcısı ilgili kuruluşa elli bin Türk Lirasından üç yüz bin Türk Lirasına kadar idarî para cezası verir.",
+      "articleRefs": [
+        "128/A"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Posta hizmeti veren kuruluşlardaki gönderilere elkoymaya kim karar verir?",
+      "back": "Hâkim karar verir; gecikmesinde sakınca bulunan hâllerde Cumhuriyet savcısı da karar verebilir.",
+      "explanation": "Gönderinin suçun delillerini oluşturduğundan şüphe edilmeli ve gerçeğin ortaya çıkarılması için adliyenin eli altında olması zorunlu sayılmalıdır. Soruşturma ve kovuşturmanın amacına zarar verme olasılığı yoksa, alınan tedbir ilgililere bildirilir.",
+      "articleRefs": [
+        "129"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Postada elkonulan zarf veya paketleri kolluk memurları hangi durumda açabilir?",
+      "back": "Elkoyma maddede sayılan suçlarla ilgiliyse, Cumhuriyet savcısının talimatıyla açabilir. Örneğin uyuşturucu veya uyarıcı madde imal ve ticareti ile tehlikeli maddelerin izinsiz bulundurulması bu suçlardandır.",
+      "explanation": "Diğer hâllerde kolluk memurları zarf ve paketleri açamaz. Gönderiler ilgili posta görevlilerinin huzuruyla mühür altına alınır ve derhâl kararı veren hâkime veya Cumhuriyet savcısına teslim edilir. Ateşli Silahlar ve Bıçaklar ile Diğer Aletler Hakkında Kanun ile Kültür ve Tabiat Varlıklarını Koruma Kanunundaki belirli suçlar da sayılmıştır.",
+      "articleRefs": [
+        "129"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Avukat bürosunda aramaya Cumhuriyet savcısı karar verebilir mi?",
+      "back": "Hayır. Avukat bürosu ancak mahkeme kararıyla ve kararda belirtilen olayla ilgili olarak aranabilir; Cumhuriyet savcısı aramayı denetler. Baro başkanı veya onu temsil eden bir avukat da hazır bulundurulur.",
+      "articleRefs": [
+        "130"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Avukat bürosundaki aramada elkonulan şeyin meslekî ilişkiye ait olduğu öne sürülürse, hâkim kararını kaç saat içinde verir?",
+      "back": "24 saat içinde verir. Soruşturma evresinde sulh ceza hâkimi, kovuşturma evresinde hâkim veya mahkeme karar verir.",
+      "explanation": "İtiraz edilen şey ayrı bir zarf veya pakete konur ve hazır bulunanlarca mühürlenir. Meslekî ilişkiye ait olduğu saptanırsa derhâl avukata iade edilir; yapılan işlemi belirten tutanaklar da ortadan kaldırılır.",
+      "articleRefs": [
+        "130"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Soruşturma evresinde elkonulan eşyanın elden çıkarılmasına kim karar verir?",
+      "back": "Hâkim karar verir; kovuşturma evresinde ise mahkeme karar verir.",
+      "explanation": "Eşyanın zarara uğraması veya değerinde esaslı ölçüde kayıp tehlikesi varsa, eşya hükmün kesinleşmesinden önce elden çıkarılabilir. Karardan önce eşyanın sahibi olan şüpheli, sanık veya ilgili diğer kişiler dinlenir. Eşyayı muhafaza için birine teslim etme yetkisi ise soruşturma evresinde Cumhuriyet Başsavcılığındadır.",
+      "articleRefs": [
+        "132"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Devlet, görevini kötüye kullanan kayyıma ödediği tazminat için ne kadar süre içinde rücu eder?",
+      "back": "1 yıl içinde rücu eder.",
+      "explanation": "Kayyımın görevleriyle ilgili iş ve işlemlerinden doğan tazminat davaları, md 142 ila md 144 uyarınca Devlet aleyhine açılır. Rücu, görevinin gereklerine aykırı hareket ederek görevini kötüye kullanan kayyıma yapılır.",
+      "articleRefs": [
+        "133"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Bilgisayarda arama için somut delillere dayanan kuvvetli şüpheye ek olarak hangi şart aranır?",
+      "back": "Başka surette delil elde etme imkânının bulunmaması şartı aranır.",
+      "explanation": "Tedbir, bir suç dolayısıyla yapılan soruşturmada şüphelinin kullandığı bilgisayar, bilgisayar programları ve bilgisayar kütükleri için uygulanır. Kararı hâkim, gecikmesinde sakınca bulunan hâllerde Cumhuriyet savcısı verir.",
+      "articleRefs": [
+        "134"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Bilgisayarda arama için Cumhuriyet savcısının verdiği karar kaç saat içinde hâkim onayına sunulur?",
+      "back": "24 saat içinde hâkim onayına sunulur. Hâkim de kararını en geç 24 saat içinde verir.",
+      "explanation": "Süre dolarsa veya hâkim aksine karar verirse, çıkarılan kopyalar ve çözümü yapılan metinler derhâl imha edilir.",
+      "articleRefs": [
+        "134"
+      ]
+    }
+  ]
+}

@@ -1,7 +1,7 @@
 # Doc 56 / 06 — Aşama 7: entegrasyon ve test
 
 Tarih: 5–6 Kasım 2026. Durum: **yerel uçtan uca tur + telefon turu yapıldı; §3b–3h özellikleri canlıda; üretim
-hattı kuruldu ve Anayasa 11 ünite denetimli olarak prod'a `in_review` yüklendi (§3i); yayın ve bayrak açma insanda.** Önceki: [05-f6-admin.md](05-f6-admin.md).
+hattı kuruldu; Anayasa 12 + TCK 17 + CMK 15 deste denetimli olarak prod'a `in_review` yüklendi (§3i–§3k); yayın ve bayrak açma insanda.** Önceki: [05-f6-admin.md](05-f6-admin.md).
 Aşama 1–6 PR #19 ile main'de (5 Kas 02:24 UTC); bu belge o kodun lokal doğrulamasını anlatır.
 
 ## 1. Düzenek (yerel; prod'a dokunulmadı)
@@ -190,11 +190,88 @@ maliyeti ünite başına ~11–30k giriş / 21–30k çıkış token (Opus). Yay
 numaraları (istem bunu zaten taşıyor); `kart-dogrula-uzak` yalnız yayındaki maddeyi okur (yayında olmayan ünite
 maddesi "madde yok" sayılır).
 
+## 3j. TCK: 17 parti, ünitesiz kip (6 Kas akşam)
+
+**Karar (kullanıcı):** polis mevzuatı en sona; sıra TCK → CMK. TCK'nın Doc 53 ünitesi yok; `kart-uret.ts`'e
+**ünitesiz kip** eklendi (`<girdi> - <çıktı> --slug --baslik`; kaynak yalnız resmî madde metni + çıkmış sorular;
+deste `unitSlug` taşımaz, kartlar doğrudan konuya bağlı). Girdi `ozet-girdi.ts` ile prod'dan (salt okunur)
+`docs/56-bilgi-kartlari/girdi/tck-*.json`. Partiler kanunun kısım/bölüm yapısına ve soru ağırlığına göre
+(Genel Hükümler md 1–75 = soruların %54'ü → 6 parti × 30; Özel Hükümler 11 parti × 20–30).
+
+| Parti | md | Kart | Denetim |
+|---|---|---|---|
+| tck-temel-ilkeler-uygulama | 1–19 | 32 | GEÇTİ (ilk tur) |
+| tck-ceza-sorumlulugu | 20–34 | 31 | GEÇTİ (ilk tur) |
+| tck-tesebbus-istirak-ictima | 35–44 | 27 | GEÇTİ (ilk tur) |
+| tck-cezalar | 45–52 | 30 | GEÇTİ (ilk tur) |
+| tck-guvenlik-tedbirleri | 53–60 | 30 | GEÇTİ (ilk tur) |
+| tck-cezanin-belirlenmesi-dusmesi | 61–75 | 31 | GEÇTİ (ilk tur) |
+| tck-uluslararasi-hayata-karsi | 76–85 | 27 | GEÇTİ (ilk tur) |
+| tck-vucut-iskence-cocuk | 86–101 | 28 | GEÇTİ (ilk tur) |
+| tck-cinsel-hurriyet | 102–124 | 31 | GEÇTİ (ilk tur) |
+| tck-seref-ozel-hayat | 125–140 | 28 | GEÇTİ (ilk tur) |
+| tck-malvarligi | 141–169 | 28 | GEÇTİ (ilk tur) |
+| tck-genel-tehlike-kamu-sagligi | 170–196 | 25 | GEÇTİ (ilk tur) |
+| tck-kamu-guveni-baris-ahlak-aile | 197–234 | 24 | GEÇTİ (ilk tur) |
+| tck-ekonomi-bilisim | 235–246 | 22 | GEÇTİ (ilk tur) |
+| tck-kamu-idaresi | 247–266 | 28 | GEÇTİ (ilk tur) |
+| tck-adliye-karsi | 267–298 | 28 | GEÇTİ (ilk tur) |
+| tck-devlete-karsi-son | 299–345, Geçici 1 | 20 | GEÇTİ (ilk tur) |
+
+Toplam **470 kart**, 17/17 denetimden geçti, prod `in_review`. Denetim bu turda K10 (ceza miktarı: alt/üst
+sınır, temel/nitelikli hal, artırım-indirim bağı, şikâyet/re'sen) sınıfıyla çalıştı; hukuki ceza hatası hiçbir
+partide çıkmadı, kusurlar kapsam/ifade düzeyinde kaldı (parti başına 1–6).
+
+**Hat değişiklikleri (TCK'dan doğdu):** (1) `ozet-dogrulayici.trNumberPattern` **binler** (0–999 999; "bin günden
+onbin güne") — adlî para cezası kartları doğrulanamıyordu, spec eklendi; (2) istem: **çapraz tuzak yasak** (tuzak
+aynı maddedeki iki öğenin karıştırılması; başka maddedeki sayı/hal taşınıp çürütülmez); (3) stil kapısı
+`(?<!fesat )karıştır` istisnası (suç adı yanlış alarm veriyordu). Denetim önerisiyle eklenen kartlar: md 123/A
+ısrarlı takip, md 191 kullanmak için bulundurma, md 245/A yasak cihaz/program, md 282 aklama, md 285 gizliliğin
+ihlali.
+
+**Yayın öncesi insan notları (TCK):** md 31/4 (7593, Ağustos 2026) çok yeni hüküm; md 63 mahsup tutarı
+(500 TL) güncelliği teyit edilmeli; kısım/bölüm başlıklarına dayanan kartlar (temel ilkeler #26/#27) betikle
+doğrulanamıyor; md 83/2 a–b bentleri öğretide seçimlik okunur.
+
+## 3k. CMK: 15 ünite, ünite özetli kip (6 Kas gece)
+
+Doc 53'ün 15 CMK ünitesi (özet + girdi hazır) aynı hatla; parti = ünite, hedef 28. Denetim K11 sınıfıyla
+(süreler ve başlangıcı, yetkili merci, zorunlu/takdirî, katalog eksik-fazla) çalıştı.
+
+| Ünite | md | Kart | Denetim |
+|---|---|---|---|
+| cmk-kapsam-tanimlar-gorev | 1–11 | 28 | GEÇTİ (ilk tur) |
+| cmk-yetki-hakimin-reddi | 12–33 | 28 | GEÇTİ (ilk tur) |
+| cmk-kararlar-sureler-taniklik | 34–38, 38/A, 39–61 | 30 | GEÇTİ (ilk tur) |
+| cmk-bilirkisi-muayene-kesif | 62–89 | 28 | GEÇTİ (ilk tur) |
+| cmk-yakalama-gozalti | 90–99 | 29 | GEÇTİ (ilk tur) |
+| cmk-tutuklama-adli-kontrol | 100–110, 110/A, 111–115 | 28 | GEÇTİ (ilk tur) |
+| cmk-arama-elkoyma | 116–128, 128/A, 129–134 | 28 | GEÇTİ (ilk tur) |
+| cmk-iletisim-denetimi-gizli-sorusturmaci | 135–140, 140/A, 141–144 | 27 | GEÇTİ (ilk tur) |
+| cmk-ifade-sorgu-mudafi | 145–156 | 28 | GEÇTİ (ilk tur) |
+| cmk-sorusturma-kamu-davasi | 157–174 | 28 | GEÇTİ (ilk tur) |
+| cmk-durusma | 175–205 | 28 | GEÇTİ (ilk tur) |
+| cmk-deliller-hukum | 206–232 | 31 | GEÇTİ (ilk tur) |
+| cmk-magdur-katilma-ozel-usuller | 233–259 | 30 | GEÇTİ (ilk tur) |
+| cmk-kanun-yollari | 260–294, 296–307 | 29 | GEÇTİ (ilk tur) |
+| cmk-olaganustu-kanun-yollari-giderler | 308, 308/A, 309–333, Ek 1, Geçici 1, Geçici 2, Geçici 3, Geçici 4, Geçici 5, Geçici 6, Geçici 7, Geçici 8 | 28 | (denetimde) |
+
+Toplam **427 kart**, 15/15 denetimden geçti, prod `in_review`. Hat olayları: ana döngüde dört ünite (deliller, mağdur, kanun yolları,
+olağanüstü) Anthropic API zaman aşımıyla (ETIMEDOUT, her biri ~50 dk takıldı) düştü; `uret-cmk-tekrar.sh`
+(dosyası olmayan üniteleri yeniden üretir) hepsini 23:15–23:32 arasında temiz çıkardı. **Hat değişiklikleri:**
+isteme "tuzak ön yüzü olumlu kalıpta, '…edilemez mi?' yok" kuralı + kapıya ön yüz olumsuz soru deseni
+(…maz/mez/değil/yok/yasak + mı/midir?; yakalanan kart tamamen yeniden yazılır). Denetim önerisiyle eklenen
+kartlar: md 253/3 önödeme-uzlaştırma (7571), md 230/1-b, md 231/11 ve 231/14 (HAGB, 7589).
+
+**Yayın öncesi insan notları (CMK):** md 138/2'deki "135/6" atfı kanunda eskimiş (katalog bugün 135/8); md 94/3
+1000 TL nominal; md 128'de "Hazine Müsteşarlığı" madde metnindeki adıyla; md 80/3 ve 231 (7589, Temmuz 2026)
+ile md 174/1-e (7593, Ağustos 2026) çok yeni hükümler.
+
 ## 4. Yapılmayan / sıradaki
 
 - **Cihaz testi (Expo):** simülatörde temel akış doğrulandı; gerçek cihazda jest hissi, SE boyutu ve uçak
   modu kuyruğu kullanıcı göz testine kaldı.
-- **Üretim hattı:** Anayasa 11 ünite bitti (§3i); polis mevzuatı 31 ünite sırada.
+- **Üretim hattı:** Anayasa 12 + TCK 17 + CMK 15 parti bitti (§3i–§3k); polis mevzuatı (PVSK 5, 3201 6, 7068 5) sırada.
 - **İki cihaz arası ilerleme, yayından kaldırılan kartın kuyruktan düşmesi:** API spec'te var, canlı denenmedi.
 - **Bayrak açma sırası:** prod'da pilot kartlar panelden (tek tek ya da toplu) yayınlanır → `beta` rolüyle canlı göz testi →
   `flashcards_enabled` panelden açılır. Bildirim preset'i `flashcards_due` `paused` doğar, panelden açılır.

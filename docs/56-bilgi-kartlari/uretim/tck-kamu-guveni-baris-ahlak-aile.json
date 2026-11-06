@@ -1,0 +1,255 @@
+{
+  "deck": {
+    "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+    "legislationSlug": "turk-ceza-kanunu",
+    "sourceLabel": "AI bilgi kartı — Türk Ceza Kanunu md 197–234",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: resmî madde metni + çıkmış sorular); denetim düzeltmesi 6 Kas 2026 (3 kart)"
+  },
+  "cards": [
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Kanunen tedavülde bulunan parayı sahte olarak üreten kişiye hangi ceza verilir?",
+      "back": "İki yıldan oniki yıla kadar hapis ve onbin güne kadar adlî para cezası verilir.",
+      "explanation": "Aynı ceza, parayı ülkeye sokan, nakleden, muhafaza eden veya tedavüle koyan kişiye de verilir. Paranın memlekette ya da yabancı ülkelerde tedavülde olması yeterlidir. Sahte parayı bilerek kabul eden kişi ise bir yıldan üç yıla kadar hapis ve adlî para cezası alır.",
+      "articleRefs": [
+        "197"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Damga ve posta pulları kanunda ne sayılır?",
+      "back": "Kıymetli damga sayılır. Damgalı kağıtlar ve muayyen bir miktar vergi veya harcın ödendiğini belgeleyen pullar da kıymetli damgadır.",
+      "explanation": "Kıymetli damgayı sahte olarak üreten, ülkeye sokan, nakleden, muhafaza eden veya tedavüle koyan kişi bir yıldan beş yıla kadar hapis ve adlî para cezası alır.",
+      "articleRefs": [
+        "199"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Sahte para üreten kişi, hakkında cezaya hükmolunmaması için suç ortaklarını hangi aşamadan önce merciine haber vermelidir?",
+      "back": "Paraları tedavüle koymadan ve resmi makamlar haber almadan önce haber vermelidir. Verdiği bilgi, suç ortaklarının yakalanmasını ve paraların ele geçirilmesini sağlamalıdır.",
+      "explanation": "Haber verilecek olanlar, diğer suç ortakları ile sahte paraların üretildiği veya saklandığı yerlerdir. Üretim alet ve malzemesini izinsiz üreten veya muhafaza eden kişi için ikinci fıkra şunları arar: resmi makamlar haber almadan önce bildirim yapılması ve bilginin suç ortaklarının yakalanmasını ve malzemenin ele geçirilmesini sağlaması.",
+      "articleRefs": [
+        "201"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Görevi gereği düzenlemeye yetkili olduğu resmi belgeyi sahte olarak düzenleyen kamu görevlisine hangi ceza verilir?",
+      "back": "Üç yıldan sekiz yıla kadar hapis cezası verilir.",
+      "explanation": "Gerçeğe aykırı olarak belge düzenleyen veya sahte resmi belgeyi kullanan kamu görevlisi de aynı cezayı alır. Herhangi bir kişi (md 204/1) işlerse ceza iki yıldan beş yıla kadar hapistir. Belge, sahteliği sabit oluncaya kadar geçerli nitelikteyse ceza yarısı oranında artırılır.",
+      "articleRefs": [
+        "204"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Resmi bir belgeyi düzenlemeye yetkili kamu görevlisine yalan beyanda bulunan kişi hangi suçu işler?",
+      "back": "Resmi belgenin düzenlenmesinde yalan beyan suçunu işler. Cezası üç aydan iki yıla kadar hapis veya adlî para cezasıdır.",
+      "explanation": "Belgeyi düzenleyen, yetkili kamu görevlisidir. Fail ise ona yalan beyanda bulunan kişidir. Hapis cezası ile adlî para cezası seçimlik olarak öngörülmüştür.",
+      "articleRefs": [
+        "206"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Özel belgeyi sahte olarak düzenleyen kişi, belgeyi kullanmasa da özel belgede sahtecilikten cezalandırılır mı?",
+      "back": "Hayır. Madde, özel belgeyi sahte düzenleyen veya değiştiren ve kullanan kişiyi cezalandırır; kullanma da aranır.",
+      "explanation": "Ceza bir yıldan üç yıla kadar hapistir. Sahte bir özel belgeyi bu özelliğini bilerek kullanan kişi de birinci fıkra hükmüne göre cezalandırılır.",
+      "articleRefs": [
+        "207"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Belirli bir tarzda doldurulmak üzere kendisine teslim edilen imzalı boş kâğıdı farklı biçimde dolduran kişi hangi koşulla cezalandırılır?",
+      "back": "Şikâyet üzerine cezalandırılır; ceza üç aydan bir yıla kadar hapistir.",
+      "explanation": "Kâğıdın kısmen veya tamamen boş olması yeterlidir. İmzalı boş kâğıdı hukuka aykırı olarak ele geçirip veya elde bulundurup hukuki sonuç doğuracak şekilde dolduran kişi ise belgede sahtecilik hükümlerine göre cezalandırılır.",
+      "articleRefs": [
+        "209"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Hangi özel belgeler üzerinde sahtecilik yapıldığında resmi belgede sahtecilik hükümleri uygulanır?",
+      "back": "Emre veya hamile yazılı kambiyo senedi, emtiayı temsil eden belge, hisse senedi, tahvil veya vasiyetname üzerinde sahtecilik yapıldığında uygulanır.",
+      "explanation": "Bu belgeler özel belge olsa da suçun konusu olduklarında resmi belgede sahteciliğe ilişkin hükümler uygulanır. Kambiyo senedinde emre veya hamile yazılı olma kaydı aranır.",
+      "articleRefs": [
+        "210"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Gerçeğe aykırı belge düzenleyen tabibe, belge haksız menfaat sağlamıyor ve zarar doğurucu nitelik taşımıyorsa hangi ceza verilir?",
+      "back": "Üç aydan bir yıla kadar hapis cezası verilir.",
+      "explanation": "Aynı hüküm diş tabibi, eczacı, ebe, hemşire ve diğer sağlık mesleği mensupları için de geçerlidir. Belge kişiye haksız bir menfaat sağlar ya da kamunun veya kişilerin zararına bir sonuç doğurucu nitelik taşırsa resmi belgede sahtecilik hükümlerine göre cezaya hükmolunur.",
+      "articleRefs": [
+        "210"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Belgede sahtecilik, bir hukuki ilişkiye dayanan alacağın ispatı amacıyla işlenirse ceza ne olur?",
+      "back": "Verilecek ceza yarısı oranında indirilir.",
+      "explanation": "Aynı indirim, suç gerçek bir durumun belgelenmesi amacıyla işlendiğinde de uygulanır.",
+      "articleRefs": [
+        "211"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Sahte bir belge başka bir suçun işlenmesi sırasında kullanılırsa faile nasıl ceza verilir?",
+      "back": "Hem sahtecilikten hem de ilgili suçtan dolayı ayrı ayrı cezaya hükmolunur.",
+      "explanation": "Kural, sahte resmi belge için de sahte özel belge için de geçerlidir.",
+      "articleRefs": [
+        "212"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Halkın bir kısmını diğer bir kısmına karşı silahlandırarak birbirini öldürmeye tahrik eden kişi hangi cezayı alır?",
+      "back": "Onbeş yıldan yirmidört yıla kadar hapis cezası alır.",
+      "explanation": "Suç işlemek için alenen tahrikte bulunmanın temel cezası ise altı aydan beş yıla kadar hapistir.",
+      "articleRefs": [
+        "214"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Alenen tahrik ettiği suç işlenirse tahrik eden kişi hangi sıfatla cezalandırılır?",
+      "back": "Azmettiren sıfatıyla cezalandırılır; işlenen tahrik konusu suçlardan azmettiren olarak sorumlu olur.",
+      "explanation": "Suç işlemek için alenen tahrikte bulunmak, birinci fıkrada ayrı bir suç olarak cezalandırılır.",
+      "articleRefs": [
+        "214"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "İşlenmiş bir suçu alenen övmek, suçu ve suçluyu övme suçunun oluşmasına tek başına yeter mi?",
+      "back": "Hayır. Övme nedeniyle kamu düzeni açısından açık ve yakın bir tehlikenin ortaya çıkması da gerekir.",
+      "explanation": "Övgünün konusu işlenmiş olan bir suç ya da işlemiş olduğu suçtan dolayı bir kişidir. Övgü alenen yapılmalıdır. Ceza iki yıla kadar hapistir.",
+      "articleRefs": [
+        "215"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Halkın bir kesimini diğer kesimi aleyhine kin ve düşmanlığa alenen tahrik suçu için hangi tehlikenin ortaya çıkması gerekir?",
+      "back": "Kamu güvenliği açısından açık ve yakın bir tehlikenin ortaya çıkması gerekir; ceza bir yıldan üç yıla kadar hapistir.",
+      "explanation": "Tahrik edilen kesim; sosyal sınıf, ırk, din, mezhep veya bölge bakımından farklı özelliklere sahip olmalıdır. Halkın bir kesimini sosyal sınıf, ırk, din, mezhep, cinsiyet veya bölge farklılığına dayanarak alenen aşağılamak ise ikinci fıkrada ayrıca cezalandırılır.",
+      "articleRefs": [
+        "216"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Halkı kanunlara uymamaya alenen tahrik etmek, kamu barışını bozmaya elverişli olmasa da cezalandırılır mı?",
+      "back": "Hayır. Tahrikin kamu barışını bozmaya elverişli olması gerekir; ceza altı aydan iki yıla kadar hapis veya adlî para cezasıdır.",
+      "explanation": "Tahrik halka yönelik olmalı ve alenen yapılmalıdır.",
+      "articleRefs": [
+        "217"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Basın ve yayın yoluyla yapılan hangi düşünce açıklamaları, ortak hükme göre suç oluşturmaz?",
+      "back": "Haber verme sınırlarını aşmayan ve eleştiri amacıyla yapılan düşünce açıklamaları suç oluşturmaz.",
+      "explanation": "Kural, bu bölümdeki suçların basın ve yayın yoluyla işlenmesi hâlinde verilecek cezanın yarı oranına kadar artırılmasıdır; haber verme sınırlarını aşmayan ve eleştiri amacıyla yapılan düşünce açıklamalarının suç oluşturmaması bu kuralın istisnasıdır.",
+      "articleRefs": [
+        "218"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Suç işlemek amacıyla kurulan bir örgütün varlığı için en az kaç üye gerekir?",
+      "back": "En az üç kişi gerekir.",
+      "explanation": "Örgütün yapısı, üye sayısı ile araç ve gereç bakımından amaç suçları işlemeye elverişli olması da aranır. Örgütü kuran veya yönetenler beş yıldan on yıla kadar hapis cezası alır.",
+      "articleRefs": [
+        "220"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Örgütün hiyerarşik yapısına dahil olmayan kişi, örgüte bilerek ve isteyerek yardım ettiğinde örgüt üyesi olarak cezalandırılır mı?",
+      "back": "Evet. Örgüt üyesi olarak cezalandırılır; ceza, yapılan yardımın niteliğine göre üçte birine kadar indirilebilir.",
+      "explanation": "Örgüte üye olmanın cezası iki yıldan beş yıla kadar hapistir. Örgüt silahlıysa ceza yarısı oranında artırılır.",
+      "articleRefs": [
+        "220"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Etkin pişmanlıktan yararlanan kişi hakkındaki denetimli serbestlik tedbiri bir yılla sınırlı mıdır?",
+      "back": "Hayır. Tedbire bir yıl süreyle hükmolunur; ancak süre üç yıla kadar uzatılabilir.",
+      "explanation": "Bu maddedeki etkin pişmanlık hükümleri, aynı kişi hakkında birden fazla uygulanmaz.",
+      "articleRefs": [
+        "221"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Hukuka aykırı bir davranışla hava ulaşım aracını gitmekte olduğu yerden başka yere götüren kişiye hangi ceza verilir?",
+      "back": "Yedi yıldan oniki yıla kadar hapis cezası verilir.",
+      "explanation": "Hava ulaşım aracının hareket etmesini engelleyen kişi beş yıldan on yıla kadar hapis cezası alır. Bu suçların işlenmesi amacıyla veya sırasında başka bir suç işlenirse, ayrıca o suçtan da ceza verilir.",
+      "articleRefs": [
+        "223"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Ceza Kanununun uygulanmasında kumar nedir?",
+      "back": "Kazanç amacıyla icra edilen ve kar ve zararın talihe bağlı olduğu oyunlardır.",
+      "explanation": "Kumar oynanması için yer ve imkan sağlayan kişi, bir yıldan üç yıla kadar hapis ve iki yüz günden aşağı olmamak üzere adlî para cezası alır. Çocukların kumar oynaması için yer ve imkan sağlanırsa ceza bir katı oranında artırılır.",
+      "articleRefs": [
+        "228"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Birden çok evlilik ve hileli evlenme suçlarında zamanaşımı ne zaman işlemeye başlar?",
+      "back": "Evlenmenin iptali kararının kesinleştiği tarihten itibaren işlemeye başlar.",
+      "explanation": "Evli olmasına rağmen başkasıyla evlenme işlemi yaptıran kişi altı aydan iki yıla kadar hapis cezası alır. Gerçek kimliğini saklayarak evlenme işlemi yaptıran kişi ise üç aydan bir yıla kadar hapis cezası alır.",
+      "articleRefs": [
+        "230"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Velayet yetkisi elinden alınmış babanın kaçırdığı çocuk henüz oniki yaşını bitirmemişse ceza nasıl değişir?",
+      "back": "Ceza bir katı oranında artırılır; temel ceza üç aydan bir yıla kadar hapistir.",
+      "explanation": "Temel hal, onaltı yaşını bitirmemiş çocuğun cebir veya tehdit kullanılmaksızın veli, vasi veya bakım ve gözetimi altında bulunan kimsenin yanından kaçırılması ya da alıkonulmasıdır. Fiil cebir veya tehdit kullanılarak işlenirse de aynı artırım uygulanır.",
+      "articleRefs": [
+        "234"
+      ]
+    }
+  ]
+}

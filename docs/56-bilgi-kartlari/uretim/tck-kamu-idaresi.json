@@ -1,0 +1,293 @@
+{
+  "deck": {
+    "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+    "legislationSlug": "turk-ceza-kanunu",
+    "sourceLabel": "AI bilgi kartı — Türk Ceza Kanunu md 247–266",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: resmî madde metni + çıkmış sorular); denetim düzeltmesi 6 Kas 2026 (3 kart)"
+  },
+  "cards": [
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Görevi nedeniyle zilyedliği kendisine devredilmiş malı zimmetine geçiren kamu görevlisi hangi cezayla cezalandırılır?",
+      "back": "Beş yıldan oniki yıla kadar hapis cezası.",
+      "explanation": "Malı kendi zimmetine geçirmesi de başkasının zimmetine geçirmesi de bu suçu oluşturur.",
+      "articleRefs": [
+        "247"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Zimmet suçunun konusu olan mal, kamu görevlisiyle hangi ilişki içinde olmalıdır?",
+      "back": "Görevi nedeniyle zilyedliği kendisine devredilmiş ya da koruma ve gözetimiyle yükümlü olduğu mal olmalıdır.",
+      "explanation": "Zilyedliğin devri tek yol değildir. Kamu görevlisinin koruma ve gözetimiyle yükümlü olduğu mal da zimmetin konusu olur.",
+      "articleRefs": [
+        "247"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Zimmet, malı geçici bir süre kullandıktan sonra iade etmek üzere işlenirse ceza yarı oranında artırılır mı?",
+      "back": "Hayır; bu halde ceza yarı oranına kadar indirilebilir. Yarı oranında artırım, zimmetin açığa çıkmamasını sağlamaya yönelik hileli davranışlarla işlenmesi halidir.",
+      "explanation": "Aynı maddede iki ayrı hal vardır. Hileli davranışla işlenen zimmette ceza artırılır, geçici kullanıp iade etmek üzere işlenen zimmette ise indirilebilir.",
+      "articleRefs": [
+        "247"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Soruşturma başlamadan önce zimmete geçirilen mal aynen iade edilirse cezadan ne kadar indirilir?",
+      "back": "Verilecek cezanın üçte ikisi indirilir; uğranılan zararın tamamen tazmini de aynı sonucu doğurur.",
+      "explanation": "Mal aynen iade edilmeli ya da zarar tamamen tazmin edilmelidir.",
+      "articleRefs": [
+        "248"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Kovuşturma başlamadan önce gönüllü olarak zimmete geçirilen mal aynen iade edilirse cezanın üçte ikisi mi indirilir?",
+      "back": "Hayır; cezanın yarısı indirilir. Cezanın üçte ikisi soruşturma başlamadan önceki iade veya tam tazminde, üçte biri hükümden önceki etkin pişmanlıkta indirilir.",
+      "explanation": "İndirim oranı, etkin pişmanlığın hangi aşamada gerçekleştiğine göre değişir: soruşturma başlamadan önce, kovuşturma başlamadan önce ya da hükümden önce.",
+      "articleRefs": [
+        "248"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Zimmet suçunun konusunu oluşturan malın değeri az ise ceza ne kadar indirilir?",
+      "back": "Üçte birden yarıya kadar indirilir.",
+      "explanation": "İndirimin sebebi, zimmet konusu malın değerinin azlığıdır.",
+      "articleRefs": [
+        "249"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "İcbar yoluyla irtikapta kamu görevlisi neyi kötüye kullanır?",
+      "back": "Görevinin sağladığı nüfuzu. Bununla kendisine veya başkasına yarar sağlanmasına ya da bu yolda vaatte bulunulmasına bir kimseyi icbar eder.",
+      "explanation": "İcbar yoluyla irtikabın faili kamu görevlisidir. Cezası beş yıldan on yıla kadar hapistir.",
+      "articleRefs": [
+        "250"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "İrtikapta icbarın varlığı hangi durumda kabul edilir?",
+      "back": "Kişi, kamu görevlisinin haksız tutum ve davranışları karşısında haklı işinin gereği gibi, hiç veya vaktinde görülmeyeceği endişesiyle kendini mecbur hissedip ona ya da yönlendireceği kişiye menfaat temin ederse.",
+      "explanation": "Kişinin işi haklı bir iştir. Menfaati, işinin görülmeyeceği endişesiyle kendini mecbur hissettiği için verir.",
+      "articleRefs": [
+        "250"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "İkna yoluyla irtikapta kamu görevlisi görevinin sağladığı nüfuzu mu kötüye kullanır?",
+      "back": "Hayır; görevinin sağladığı güveni kötüye kullanır ve hileli davranışlarla kişiyi ikna eder. Nüfuzu kötüye kullanarak icbar etmek, icbar yoluyla irtikaptır.",
+      "explanation": "İkna yoluyla irtikabın cezası üç yıldan beş yıla kadar hapistir. Suç kişinin hatasından yararlanılarak işlenirse ceza bir yıldan üç yıla kadar hapistir. İrtikap edilen menfaatin değeri ve mağdurun ekonomik durumu gözetilerek ceza yarısına kadar indirilebilir.",
+      "articleRefs": [
+        "250"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Zimmet veya irtikabın işlenmesine kasten göz yuman, denetimle yükümlü kamu görevlisi nasıl sorumlu tutulur?",
+      "back": "İşlenen suçun müşterek faili olarak sorumlu tutulur.",
+      "explanation": "Burada kast aranır: denetimle yükümlü görevli, suçun işlenmesine bilerek göz yumar.",
+      "articleRefs": [
+        "251"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Denetim görevini ihmal ederek zimmet veya irtikabın işlenmesine imkan sağlayan kamu görevlisinin cezası nedir?",
+      "back": "Üç aydan üç yıla kadar hapis cezası.",
+      "explanation": "Fail kamu görevlisidir. Suç ihmalle, yani denetim görevi yerine getirilmeyerek işlenir.",
+      "articleRefs": [
+        "251"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Görevinin ifasıyla ilgili bir işi yapması veya yapmaması için kamu görevlisine menfaat sağlayan kişinin cezası nedir?",
+      "back": "Dört yıldan oniki yıla kadar hapis. Görevinin ifasıyla ilgili bir işi yapması veya yapmaması için kendisine veya göstereceği bir başka kişiye menfaat sağlayan kamu görevlisi (rüşvet alan) de aynı cezayla cezalandırılır.",
+      "explanation": "Menfaat doğrudan veya aracılar vasıtasıyla, kamu görevlisine ya da onun göstereceği bir başka kişiye sağlanabilir. Rüşvet konusunda anlaşmaya varılırsa suç tamamlanmış gibi cezaya hükmolunur. Talep ya da teklif kabul edilmezse ceza yarı oranında indirilir.",
+      "articleRefs": [
+        "252"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Rüşvet alan, talep eden ya da bu konuda anlaşmaya varan kişinin hangi sıfatları cezayı artırır?",
+      "back": "Yargı görevi yapan, hakem, bilirkişi, noter veya yeminli mali müşavir olması. Bu hallerde ceza üçte birden yarısına kadar artırılır.",
+      "articleRefs": [
+        "252"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Rüşvet anlaşmasının sağlanmasına aracılık eden kişinin müşterek fail sayılması için kamu görevlisi olması gerekir mi?",
+      "back": "Hayır; aracılık eden kişi, kamu görevlisi sıfatını taşıyıp taşımadığına bakılmaksızın müşterek fail olarak cezalandırılır.",
+      "explanation": "Aynı kural, rüşvet ilişkisinde dolaylı olarak kendisine menfaat sağlanan üçüncü kişi için de geçerlidir. Tüzel kişinin menfaati kabul eden yetkilisi de bu kurala tabidir.",
+      "articleRefs": [
+        "252"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Rüşvet veren kişi, durum resmi makamlarca öğrenilmeden önce pişmanlık duyarak yetkili makamları haberdar ederse ne olur?",
+      "back": "Hakkında rüşvet suçundan dolayı cezaya hükmolunmaz.",
+      "explanation": "Bu madde hükümleri, yabancı kamu görevlilerine rüşvet veren kişilere uygulanmaz.",
+      "articleRefs": [
+        "254"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Rüşvet alan kişinin etkin pişmanlıktan yararlanması için rüşvet konusu şeyle ne yapması gerekir?",
+      "back": "Durum resmi makamlarca öğrenilmeden önce rüşvet konusu şeyi soruşturmaya yetkili makamlara aynen teslim etmesi gerekir. Bu halde cezaya hükmolunmaz.",
+      "explanation": "Rüşvet alma konusunda başkasıyla anlaşan kamu görevlisi için durumu, resmi makamlarca öğrenilmeden önce yetkili makamlara haber vermesi yeterlidir.",
+      "articleRefs": [
+        "254"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Kamu görevlisi üzerinde nüfuz sahibi olduğundan bahisle, haksız bir işin gördürülmesi için kendisine menfaat temin eden kişinin cezası nedir?",
+      "back": "İki yıldan beş yıla kadar hapis ve beşbin güne kadar adli para cezası.",
+      "explanation": "Kişi kamu görevlisiyse hapis cezası yarı oranında artırılır. İşinin gördürülmesi karşılığında menfaat sağlayan kişi ise bir yıldan üç yıla kadar hapisle cezalandırılır.",
+      "articleRefs": [
+        "255"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Nüfuz ticaretinde menfaat temini konusunda yalnızca anlaşmaya varılmışsa ceza indirilir mi?",
+      "back": "Hayır; anlaşmaya varılması halinde dahi suç tamamlanmış gibi cezaya hükmolunur. Yarı oranında indirim, menfaat talebi, teklifi veya vaadi kabul edilmediğinde uygulanır.",
+      "explanation": "Nüfuz ticareti suçuna aracılık eden kişi de müşterek fail olarak aynı cezayla cezalandırılır.",
+      "articleRefs": [
+        "255"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Nüfuz ticaretinde, işin gördürülmesi için yapılan girişim müstakil bir suç oluşturuyorsa kişiler nasıl cezalandırılır?",
+      "back": "Ayrıca bu suç nedeniyle de cezalandırılırlar; nüfuz ticaretinden verilen ceza bunu önlemez.",
+      "explanation": "Nüfuz ticareti ilişkisinde dolaylı olarak menfaat sağlanan üçüncü gerçek kişi de müşterek fail olarak cezalandırılır. Tüzel kişinin menfaati kabul eden yetkilileri de aynı şekilde sorumludur.",
+      "articleRefs": [
+        "255"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Zor kullanma yetkisine sahip kamu görevlisi, görevini yaparken kişilere karşı görevinin gerektirdiği ölçünün dışında kuvvet kullanırsa hangi hükümler uygulanır?",
+      "back": "Kasten yaralama suçuna ilişkin hükümler uygulanır.",
+      "explanation": "Bu hüküm, görev sırasında kişilere karşı ölçüyü aşan kuvvet kullanımına ilişkindir.",
+      "articleRefs": [
+        "256"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Kanunda ayrıca suç olarak tanımlanan haller dışında, görevinin gereklerine aykırı hareket ederek kişilerin mağduriyetine neden olan kamu görevlisinin cezası nedir?",
+      "back": "Altı aydan iki yıla kadar hapis cezası.",
+      "explanation": "Görevi kötüye kullanma, kanunda ayrıca suç olarak tanımlanan haller dışında kalan fiiller içindir. Kamunun zararına neden olmak ya da kişilere haksız bir menfaat sağlamak da aynı sonucu doğurur.",
+      "articleRefs": [
+        "257"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Görevi kötüye kullanma hükümleri hangi kayıtla uygulanır?",
+      "back": "Kanunda ayrıca suç olarak tanımlanan haller dışında kalan fiillere uygulanır.",
+      "explanation": "Görevinin gereklerini yapmakta ihmal veya gecikme gösteren kamu görevlisi de bu suçu işler. Bununla kişilerin mağduriyetine, kamunun zararına ya da haksız menfaate neden olursa cezası üç aydan bir yıla kadar hapistir.",
+      "articleRefs": [
+        "257"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Kamu görevlisi sıfatı sona ermiş kişi, görevi nedeniyle kendisine verilmiş gizli kalması gereken bir belgeyi açıklarsa cezalandırılır mı?",
+      "back": "Evet; birinci fıkradaki fiilleri sıfatı sona erdikten sonra işleyen kimseye de aynı ceza, bir yıldan dört yıla kadar hapis verilir.",
+      "explanation": "Belge, karar, emir veya tebligatın gizli kalması gereken türden olması aranır. Ayrıca kişiye görevi nedeniyle verilmiş ya da aynı nedenle bilgisine ulaşmış olması gerekir.",
+      "articleRefs": [
+        "258"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Kamu görevlisinin ticareti suçunda kamu görevlisi, bir başkasına mal veya hizmet satmaya çalışırken neden yararlanır?",
+      "back": "Yürüttüğü görevin sağladığı nüfuzdan yararlanır.",
+      "explanation": "Cezası altı aya kadar hapis veya adlî para cezasıdır.",
+      "articleRefs": [
+        "259"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Hukuka aykırı ve toplu biçimde görevi terk eden kamu görevlilerinin sayısı en fazla kaç olursa cezaya hükmolunmaz?",
+      "back": "Üç. Kamu görevlisi sayısının üçten fazla olmaması halinde cezaya hükmolunmaz.",
+      "explanation": "Sayı üçten fazlaysa her biri hakkında üç aydan bir yıla kadar hapis cezası verilir. İş bırakma mesleki ve sosyal haklarla ilgili, hizmeti aksatmayan, geçici ve kısa süreli ise indirim yapılabilir ya da ceza hiç verilmeyebilir.",
+      "articleRefs": [
+        "260"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Görevini yapmasını engellemek amacıyla cebir veya tehdit, yargı görevi yapan bir kişiye karşı kullanılırsa ceza nedir?",
+      "back": "İki yıldan dört yıla kadar hapis cezası.",
+      "explanation": "Görevini yapmasını engellemek amacıyla kamu görevlisine karşı cebir veya tehdit kullananın temel cezası altı aydan üç yıla kadar hapistir.",
+      "articleRefs": [
+        "265"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Görevi yaptırmamak için direnme sırasında kasten yaralamanın neticesi sebebiyle ağırlaşmış halleri gerçekleşirse ne olur?",
+      "back": "Ayrıca kasten yaralama suçuna ilişkin hükümler uygulanır.",
+      "explanation": "Suç silahla ya da suç örgütlerinin korkutucu gücünden yararlanılarak işlenirse ceza yarı oranında artırılır. Kişi kendini tanınmayacak hale koyarak ya da birden fazla kişiyle birlikte işlerse ceza üçte biri oranında artırılır.",
+      "articleRefs": [
+        "265"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Kamu görevlisi, görevi gereği elinde bulundurduğu araç ve gereçleri bir suçun işlenmesi sırasında kullanırsa ceza ne kadar artırılır?",
+      "back": "Üçte biri oranında artırılır; yeter ki ilgili suçun tanımında kamu görevlisi sıfatı esasen göz önünde bulundurulmamış olsun.",
+      "articleRefs": [
+        "266"
+      ]
+    }
+  ]
+}

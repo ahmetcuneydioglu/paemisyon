@@ -1,0 +1,212 @@
+{
+  "deck": {
+    "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+    "legislationSlug": "turk-ceza-kanunu",
+    "sourceLabel": "AI bilgi kartı — Türk Ceza Kanunu md 299–345, Geçici 1",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: resmî madde metni + çıkmış sorular); denetim düzeltmesi 6 Kas 2026 (1 kart)"
+  },
+  "cards": [
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Cumhurbaşkanına hakaret eden kişiye hangi ceza verilir?",
+      "back": "Bir yıldan dört yıla kadar hapis cezası.",
+      "explanation": "Suç alenen işlenirse verilecek ceza altıda biri oranında artırılır.",
+      "articleRefs": [
+        "299"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Cumhurbaşkanına hakaret suçunda Adalet Bakanının izni hangi işlem için aranır?",
+      "back": "Kovuşturma yapılması için; bu suçtan dolayı kovuşturma Adalet Bakanının iznine bağlıdır.",
+      "explanation": "Madde izni kovuşturma yapılmasına bağlar; bu yüzden izin bir kovuşturma şartıdır.",
+      "articleRefs": [
+        "299"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "İstiklal Marşını alenen aşağılayan kişiye hangi ceza verilir?",
+      "back": "Altı aydan iki yıla kadar hapis cezası.",
+      "explanation": "Bu maddedeki suçlar yabancı bir ülkede bir Türk vatandaşı tarafından işlenirse verilecek ceza üçte bir oranında artırılır.",
+      "articleRefs": [
+        "300"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Türkiye Cumhuriyeti Devletini eleştiri amacıyla yapılan düşünce açıklamaları suç oluşturur mu?",
+      "back": "Hayır; eleştiri amacıyla yapılan düşünce açıklamaları suç oluşturmaz.",
+      "explanation": "Cezalandırılan; Türk Milletini, Türkiye Cumhuriyeti Devletini, Türkiye Büyük Millet Meclisini, Türkiye Cumhuriyeti Hükümetini, Devletin yargı organlarını ve Devletin askerî veya emniyet teşkilatını alenen aşağılamaktır.",
+      "articleRefs": [
+        "301"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Devletin yargı organlarını alenen aşağılama suçunda Adalet Bakanının izni hangi işlem için aranır?",
+      "back": "Soruşturma yapılması için; bu suçtan dolayı soruşturma Adalet Bakanının iznine bağlıdır.",
+      "explanation": "Suçun cezası altı aydan iki yıla kadar hapistir; Devletin askerî veya emniyet teşkilatını alenen aşağılayan da aynı cezayla cezalandırılır.",
+      "articleRefs": [
+        "301"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Devletin birliğini ve ülke bütünlüğünü bozmaya yönelik fiil işleyen kimseye hangi ceza verilir?",
+      "back": "Ağırlaştırılmış müebbet hapis cezası.",
+      "explanation": "Suçun işlenmesi sırasında başka suçlar işlenirse onlardan ayrıca cezaya hükmolunur; tüzel kişiler hakkında da bunlara özgü güvenlik tedbirlerine hükmolunur.",
+      "articleRefs": [
+        "302"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Savaş zamanında düşman devlet toprağında bulunup o devletin ordusunda hizmete alınmak mecburiyetinde kalan vatandaş bu yüzden cezalandırılır mı?",
+      "back": "Hayır; bu nedenle hakkında cezaya hükmolunmaz.",
+      "explanation": "Savaş halindeki devletin ordusunda hizmet kabul eden ya da düşman yanında silahlı mücadeleye giren vatandaşa müebbet hapis, düşman ordusunda komuta görevi üstlenen vatandaşa ağırlaştırılmış müebbet hapis verilir.",
+      "articleRefs": [
+        "303"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Ceza kanununda \"temel millî yararlar\" deyiminden ne anlaşılır?",
+      "back": "Bağımsızlık, toprak bütünlüğü, millî güvenlik ve Cumhuriyetin Anayasada belirtilen temel nitelikleri.",
+      "explanation": "Bu yararlara karşı fiillerde bulunmak maksadıyla yabancı kişi veya kuruluşlardan maddi yarar sağlamak bu maddede suç olarak tanımlanır.",
+      "articleRefs": [
+        "305"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Temel millî yararlara karşı fiillerde bulunmak maksadıyla yabancı kuruluştan maddi yarar sağlayan vatandaşa hangi ceza verilir?",
+      "back": "Üç yıldan on yıla kadar hapis ve onbin güne kadar adlî para cezası; yararı sağlayan veya vaat eden kişiye de aynı ceza verilir.",
+      "explanation": "Fiil savaş sırasında işlenirse ceza yarı oranında artırılır. Suç savaş hali dışında işlenirse kovuşturma yapılması Adalet Bakanının iznine bağlıdır.",
+      "articleRefs": [
+        "305"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Türkiye Devletini savaş tehlikesiyle karşı karşıya bırakacak şekilde, yetkisiz olarak yabancı bir devlete karşı asker toplayana hangi ceza verilir?",
+      "back": "Beş yıldan oniki yıla kadar hapis; fiil sonucu savaş meydana gelirse müebbet hapis.",
+      "explanation": "Bu suçun kovuşturulması Adalet Bakanının iznine bağlıdır. Madde, fiilî savaş halinde ülke topraklarını işgal eden yabancı devlet kuvvetlerine karşı meşru müdafaa amaçlı direniş hareketlerine uygulanmaz.",
+      "articleRefs": [
+        "306"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Anayasayı ihlal suçu için anayasal düzenin fiilen ortadan kaldırılmış olması gerekir mi?",
+      "back": "Hayır; cebir ve şiddet kullanarak düzeni ortadan kaldırmaya, yerine başka düzen getirmeye veya fiilen uygulanmasını önlemeye teşebbüs etmek yeter.",
+      "explanation": "Teşebbüs edenler ağırlaştırılmış müebbet hapis cezasıyla cezalandırılır. Suç sırasında başka suçlar işlenirse onlardan ayrıca cezaya hükmolunur; tüzel kişiler hakkında bunlara özgü güvenlik tedbirlerine hükmolunur.",
+      "articleRefs": [
+        "309"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Cumhurbaşkanına suikaste teşebbüs eden kişinin cezası, fiil teşebbüste kaldığı için indirilir mi?",
+      "back": "Hayır; teşebbüs halinde de suç tamamlanmış gibi ağırlaştırılmış müebbet hapis cezasına hükmolunur.",
+      "explanation": "Madde, Cumhurbaşkanına suikastte bulunan kişiyi de bu fiile teşebbüs edeni de aynı cezayla cezalandırır.",
+      "articleRefs": [
+        "310"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Cumhurbaşkanına suikast dışındaki fiilî saldırılarda ilgili suçun cezası nasıl belirlenir?",
+      "back": "Yarı oranında artırılarak hükmolunur; ancak bu suretle verilecek ceza beş yıldan az olamaz.",
+      "articleRefs": [
+        "310"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Yasama organına karşı suçta, Türkiye Büyük Millet Meclisini ortadan kaldırmaya teşebbüs hangi yolla yapılmış olmalıdır?",
+      "back": "Cebir ve şiddet kullanarak; teşebbüs edenler ağırlaştırılmış müebbet hapis cezasıyla cezalandırılır.",
+      "explanation": "Teşebbüs, Meclisi ortadan kaldırmaya veya görevlerini kısmen veya tamamen yapmasını engellemeye yönelmelidir. Suç sırasında başka suçlar işlenirse onlardan ayrıca cezaya hükmolunur.",
+      "articleRefs": [
+        "311"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Halkı Türkiye Cumhuriyeti Hükûmetine karşı silahlı isyana tahrik suçunun oluşması için isyanın gerçekleşmesi gerekir mi?",
+      "back": "Hayır; tahrik eden onbeş yıldan yirmi yıla kadar hapisle cezalandırılır. İsyan gerçekleşirse ceza yirmi yıldan yirmibeş yıla kadar hapis olur.",
+      "explanation": "İsyanı idare eden kişi ağırlaştırılmış müebbet hapisle cezalandırılır. Suçlar, Devletin savaş halinde olmasının sağladığı kolaylıktan yararlanılarak işlenirse ağırlaştırılmış müebbet hapis cezasına hükmolunur.",
+      "articleRefs": [
+        "313"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Devletin güvenliğine ve anayasal düzene karşı suçları işlemek amacıyla kurulan silahlı örgüte üye olan kişiye hangi ceza verilir?",
+      "back": "Beş yıldan on yıla kadar hapis; örgütü kuran veya yöneten ise on yıldan onbeş yıla kadar hapisle cezalandırılır.",
+      "explanation": "Suç işlemek amacıyla örgüt kurma suçuna ilişkin diğer hükümler bu suç açısından aynen uygulanır.",
+      "articleRefs": [
+        "314"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Suç için anlaşma (ittifak) suçunda, amaçlanan suç işlenmeden veya soruşturmaya başlanmadan önce ittifaktan çekilen kişiye ceza verilir mi?",
+      "back": "Hayır. Amaçlanan suç işlenmeden veya anlaşma dolayısıyla soruşturmaya başlanmadan önce bu ittifaktan çekilenlere ceza verilmez.",
+      "explanation": "İki veya daha fazla kişinin, bu kısmın dördüncü ve beşinci bölümlerindeki suçlardan birini elverişli vasıtalarla işlemek üzere maddi olgularla belirlenen bir biçimde anlaşması, suçların ağırlık derecesine göre üç yıldan oniki yıla kadar hapisle cezalandırılır.",
+      "articleRefs": [
+        "316"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Askerlik hizmetini yapanları firara sevk edecek şekilde telkinde bulunma fiili basın ve yayın yoluyla işlenirse ceza ne olur?",
+      "back": "Ceza yarısı oranında artırılır; temel ceza altı aydan iki yıla kadar hapistir.",
+      "explanation": "Askerlik hizmetine katılacak olanları bu hizmeti yapmaktan vazgeçirecek şekilde teşvik veya telkinde bulunmak da aynı suçu oluşturur.",
+      "articleRefs": [
+        "318"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Resmen çekilmiş yabancı devlet bayrağını alenen tahkir suçunda soruşturma ve kovuşturma yapılması neye bağlıdır?",
+      "back": "İlgili devletin şikayetine.",
+      "explanation": "Resmen çekilmiş yabancı devlet bayrağını veya diğer egemenlik alametlerini alenen tahkir eden kimseye üç aydan bir yıla kadar hapis cezası verilir.",
+      "articleRefs": [
+        "341"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Yabancı devlet başkanına, bayrağına ve temsilcilerine karşı suçları düzenleyen bölümdeki hükümlerin uygulanması hangi koşula bağlıdır?",
+      "back": "Karşılıklılık koşuluna.",
+      "explanation": "Bu bölümde yazılı hükümlerin uygulanması karşılıklılık koşuluna bağlıdır.",
+      "articleRefs": [
+        "343"
+      ]
+    }
+  ]
+}

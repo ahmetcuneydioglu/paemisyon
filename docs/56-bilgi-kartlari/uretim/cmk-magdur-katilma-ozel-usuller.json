@@ -1,0 +1,314 @@
+{
+  "deck": {
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "legislationSlug": "5271-sayili-ceza-muhakemesi-kanunu-cmk",
+    "unitSlug": "cmk-magdur-katilma-ozel-usuller",
+    "sourceLabel": "AI bilgi kartı — 5271 Sayılı Ceza Muhakemesi Kanunu (CMK) md 233–259",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: cmk-magdur-katilma-ozel-usuller özeti + resmî madde metni); denetim düzeltmesi 6 Kas 2026 (5 kart + md 253/3 kartı eklendi)"
+  },
+  "cards": [
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Mağdur, soruşturma evresinde soruşturma belgelerini ve elkonulan, muhafazaya alınan eşyayı kimin aracılığıyla inceletebilir?",
+      "back": "Vekili aracılığıyla inceletebilir; 153 üncü maddeye uygun olmak koşuluyla.",
+      "explanation": "Vekil aracılığı, soruşturma evresindeki bu inceletme hakkı için aranır. Belge örneği isteme hakkı ise soruşturmada gizlilik ve amacı bozmamak koşuluyla Cumhuriyet savcısından, kovuşturmada tutanak ve belgelerden doğrudan kullanılır.",
+      "articleRefs": [
+        "234"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Vekili bulunmayan mağdura, kaç yaşını doldurmamışsa istemi aranmaksızın vekil görevlendirilir?",
+      "back": "Onsekiz yaşını doldurmamışsa; vekili de yoksa istemi aranmaksızın vekil görevlendirilir.",
+      "explanation": "Aynı kural, sağır veya dilsiz ya da meramını ifade edemeyecek derecede malûl olan ve vekili bulunmayan mağdur için de geçerlidir. Mağdurun hakları kendisine anlatılıp açıklanır ve bu husus tutanağa yazılır.",
+      "articleRefs": [
+        "234"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "md 234'e göre mağdurun kovuşturma evresinde davayı sonuçlandıran kararlara karşı kanun yollarına başvurma hakkı hangi koşula bağlıdır?",
+      "back": "Davaya katılmış olmaya. md 260/1 ise katılma isteği karara bağlanmamış, reddedilmiş veya katılan sıfatını alabilecek surette suçtan zarar görmüş olanlara da kanun yollarını açar.",
+      "explanation": "Kamu davasına katılma da kovuşturma evresindeki haklardandır.",
+      "articleRefs": [
+        "234",
+        "260"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Mağdurun bildirdiği adres eksik olduğu için tebligat yapılamazsa, adres hangi hâlde araştırılır?",
+      "back": "Beyanının alınması zorunlu görülüyorsa araştırılır. Aksi hâlde adresin araştırılması gerekmez.",
+      "explanation": "Tebligata, mağdur, şikâyetçi veya vekilinin dilekçelerinde ya da tutanağa geçirilmiş beyanlarında belirttikleri adres esas alınır. Bu adrese çıkarılan çağrıya rağmen gelmeyen kimseye yeniden tebligatta bulunulmaz.",
+      "articleRefs": [
+        "235"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Suçun etkisiyle psikolojisi bozulmuş çocuk, o suça ilişkin soruşturma veya kovuşturmada tanık olarak kaç defa dinlenebilir?",
+      "back": "Bir defa; maddî gerçeğin ortaya çıkarılması açısından zorunluluk arz eden hâller saklıdır.",
+      "explanation": "Bu kişiler dinlenirken psikoloji, psikiyatri, tıp veya eğitim alanında uzman bir kişi bulundurulur. Cumhuriyet savcısı veya hâkim gerekli görür ya da şüpheli veya sanıkla yüz yüze gelmesinde sakınca bulunduğunu değerlendirirse ifade özel ortamda uzmanlar aracılığıyla alınır.",
+      "articleRefs": [
+        "236"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Mağdur tanık olarak dinlenirken tanıklığa ilişkin hükümlerden hangisi uygulanmaz?",
+      "back": "Yemin uygulanmaz; onun dışındaki tanıklık hükümleri uygulanır.",
+      "articleRefs": [
+        "236"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Kamu davasına kimler katılabilir?",
+      "back": "Mağdur, suçtan zarar gören gerçek ve tüzel kişiler ile malen sorumlu olanlar katılabilir.",
+      "explanation": "Katılma, ilk derece mahkemesindeki kovuşturma evresinin her aşamasında, hüküm verilinceye kadar ve şikâyetçi olunduğu bildirilerek yapılır.",
+      "articleRefs": [
+        "237"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Kanun yolu muhakemesinde davaya katılma isteğinde bulunulabilir mi?",
+      "back": "Hayır, bulunulamaz. Ancak ilk derece mahkemesinde ileri sürülüp reddolunan veya karara bağlanmayan istek, kanun yolu başvurusunda açıkça belirtilmişse incelenip karara bağlanır.",
+      "articleRefs": [
+        "237"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Davaya katılan mağdur, alt sınırı ne kadar olan hapis cezasını gerektiren suçlarda baro tarafından avukat görevlendirilmesini isteyebilir?",
+      "back": "Beş yıldan fazla; alt sınırı bu olan hapis cezasını gerektiren suçlarda baro avukatı istenebilir.",
+      "explanation": "Cinsel saldırı, çocukların cinsel istismarı veya ısrarlı takip suçları ile kadına karşı işlenen kasten yaralama, işkence veya eziyet suçlarında da bu istem yapılabilir. Mağdur veya suçtan zarar gören çocuk, sağır ve dilsiz veya kendisini savunamayacak derecede akıl hastası ise istem aranmaz.",
+      "articleRefs": [
+        "239"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Katılmadan önce verilmiş kararlara karşı katılanın kanun yoluna başvurma hakkı hangi sürenin geçmesiyle düşer?",
+      "back": "Cumhuriyet savcısı için öngörülen sürenin geçmesiyle düşer; o süre geçince katılan da başvuru hakkını kaybeder.",
+      "explanation": "Katılmadan önce verilmiş kararlar katılana tebliğ edilmez. Süre bakımından Cumhuriyet savcısının durumu esas alınır.",
+      "articleRefs": [
+        "241"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Hangi sanık gaip sayılır?",
+      "back": "Bulunduğu yer bilinmeyen ya da yurt dışında bulunup da yetkili mahkeme önüne getirilemeyen veya getirilmesi uygun bulunmayan sanık gaip sayılır.",
+      "explanation": "Gaip hakkında duruşma açılmaz. Mahkeme, delillerin ele geçirilmesi veya korunması amacıyla gerekli işlemleri yapar. Bu işlemler naip hâkim veya istinabe olunan mahkeme aracılığıyla da yapılabilir.",
+      "articleRefs": [
+        "244"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Kaçak ilanında, şüpheli veya sanık kaç gün içinde gelmezse 248 inci maddedeki tedbirlere hükmedilebileceği açıklanır?",
+      "back": "Onbeş gün. Çağrı bir gazete ile ve bilinen konutunun kapısına asılarak ilan edilir.",
+      "explanation": "İlan işlemlerinin yerine getirildiği bir tutanakla saptandıktan itibaren onbeş gün içinde başvurmayan şüpheli veya sanığın kaçak olduğuna karar verilir. Bu yol, 248 inci maddenin ikinci fıkrasındaki suçlarda, tebligata uyulmayıp zorla getirilme kararı da yerine getirilemezse işletilir.",
+      "articleRefs": [
+        "247"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Daha önce sorgusu yapılmamış kaçak sanık hakkında mahkûmiyet kararı verilebilir mi?",
+      "back": "Hayır. Kaçak sanık hakkında kovuşturma yapılabilir; ancak daha önce sorgusu yapılmamışsa mahkûmiyet ve ceza verilmesine yer olmadığı kararı verilemez.",
+      "explanation": "Güvenlik tedbirine karar verilirse kaçak sanık veya müdafii, savunma hakkını kullanmak istediğini belirterek yargılamanın yenilenmesini talep edebilir. Duruşma yapılan hâllerde müdafii yoksa mahkeme barodan avukat görevlendirilmesini ister.",
+      "articleRefs": [
+        "247"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Kaçağın Türkiye'deki mallarına zorlama amaçlı elkoymaya kim karar verir?",
+      "back": "Sulh ceza hâkimi veya mahkeme, Cumhuriyet savcısının istemi üzerine karar verir; elkoyma amaçla orantılı olur.",
+      "explanation": "Elkoyma, kaçağın Cumhuriyet savcısına başvurmasını veya duruşmaya gelmesini sağlamak amacıyla yapılır. Gerektiğinde idaresi için kayyım atanır ve karar müdafiine bildirilir. Kaçak yakalandığında veya kendiliğinden gelerek teslim olduğunda elkoymanın kaldırılmasına karar verilir.",
+      "articleRefs": [
+        "248"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Kaçak hakkında yokluğunda tutuklama kararı verilebilir mi?",
+      "back": "Evet. Sulh ceza hâkimi veya mahkeme, 100 üncü ve sonraki maddeler gereğince kaçak hakkında yokluğunda tutuklama kararı verebilir.",
+      "explanation": "Bu kararlara karşı itiraz edilebilir.",
+      "articleRefs": [
+        "248"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Seri muhakeme usulünde Cumhuriyet savcısı, belirlediği cezadan hangi oranda indirim yapar?",
+      "back": "Yarı oranında; temel cezadan ve koşulları varsa zincirleme suça ilişkin hükümler uygulandıktan sonra belirlenen cezadan indirim yapılır.",
+      "explanation": "Savcı temel cezayı, Türk Ceza Kanununun 61 inci maddesinin birinci fıkrasındaki hususları gözeterek suçun kanuni tanımındaki alt ve üst sınır arasında belirler. Sonuç hapis cezası, koşulları varsa seçenek yaptırımlara çevrilebilir veya ertelenebilir.",
+      "articleRefs": [
+        "250"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Seri muhakeme teklifini şüpheli hangi şartla kabul ederse usul uygulanır?",
+      "back": "Müdafii huzurunda kabul ederse uygulanır; teklifi Cumhuriyet savcısı yapar.",
+      "explanation": "Şüpheliyi bu usul hakkında Cumhuriyet savcısı veya kolluk görevlileri bilgilendirir. Mahkeme de şüpheliyi müdafii huzurunda dinler. Mazeretsiz olarak mahkemeye gelmeyen şüpheli bu usulden vazgeçmiş sayılır.",
+      "articleRefs": [
+        "250"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Seri muhakeme usulüyle yaptırım uygulanan şüpheli hakkında güvenlik tedbirine de hükmedilebilir mi?",
+      "back": "Evet. Bu usulle yaptırım uygulanması, güvenlik tedbirlerine ilişkin hükümlerin uygulanmasına engel teşkil etmez.",
+      "explanation": "Talep yazısında belirlenen yaptırımla birlikte güvenlik tedbirleri de gösterilir. Teklif edilen cezanın mahiyetine uygun bir güvenlik tedbiri belirtilmeyen talep yazısı, eksikliklerin tamamlanması için mahkemece Cumhuriyet başsavcılığına iade edilir.",
+      "articleRefs": [
+        "250"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Basit yargılama usulünde sanık, mağdur ve şikâyetçiden beyan ve savunmalarını ne kadar süre içinde yazılı bildirmeleri istenir?",
+      "back": "İki hafta içinde. Tebligatta duruşma yapılmaksızın hüküm verilebileceği de belirtilir.",
+      "explanation": "Süre dolduktan sonra mahkeme, duruşma yapmaksızın ve Cumhuriyet savcısının görüşünü almaksızın 223 üncü maddede belirtilen kararlardan birine hükmedebilir.",
+      "articleRefs": [
+        "251"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Basit yargılama usulünde mahkûmiyet kararı verilirse sonuç ceza hangi oranda indirilir?",
+      "back": "Dörtte bir oranında indirilir.",
+      "explanation": "Koşulları varsa kısa süreli hapis cezası seçenek yaptırımlara çevrilebilir veya hapis cezası ertelenebilir. Sanık yazılı olarak karşı çıkmazsa hükmün açıklanmasının geri bırakılmasına da karar verilebilir.",
+      "articleRefs": [
+        "251"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Basit yargılama usulü, üst sınırı en çok ne kadar olan hapis cezasını gerektiren suçlarda uygulanabilir?",
+      "back": "İki yıl veya daha az; adli para cezasını gerektiren suçlarda da uygulanabilir.",
+      "explanation": "Kararı asliye ceza mahkemesi iddianamenin kabulünden sonra verebilir. 175 inci maddenin ikinci fıkrası uyarınca duruşma günü belirlendikten sonra bu usul uygulanmaz. Yaş küçüklüğü ve akıl hastalığı hâllerinde, soruşturma veya kovuşturma yapılması izne ya da talebe bağlı suçlarda ve kapsam dışı başka bir suçla birlikte işlenen suçta da uygulanmaz.",
+      "articleRefs": [
+        "251"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Basit yargılamada itiraz üzerine duruşma açılarak verilen hüküm kesin midir?",
+      "back": "Kendiliğinden kesin değildir; itiraz üzerine verilen hükümlere karşı genel hükümlere göre kanun yoluna başvurulabilir (md 252).",
+      "explanation": "Süresi içinde itiraz edilmeyen ilk hüküm kesinleşir. İtiraz üzerine hüküm veren mahkeme, basit yargılama usulüyle verilen ilk hükümle bağlı değildir. İtiraz sanık dışındaki kişilerce yapılmışsa 251 inci maddenin üçüncü fıkrasındaki indirim uygulanır.",
+      "articleRefs": [
+        "252"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Tek asliye ceza mahkemesi bulunan yerde, basit yargılama hükmüne itiraz üzerine duruşmayı kim açar?",
+      "back": "Aynı mahkemedeki yetkili başka bir hâkim açar. Böyle bir hâkim yoksa adli yargı ilk derece mahkemesi adalet komisyonu başkanınca görevlendirilen hâkim açar.",
+      "explanation": "Birden fazla asliye ceza mahkemesi bulunan yerde dosya, tevzi kriterlerine göre belirlenen asliye ceza mahkemesine gönderilir. Taraflar gelmese bile duruşma yapılır. Duruşmadan önce itirazdan vazgeçilirse duruşma yapılmaz ve itiraz edilmemiş sayılır.",
+      "articleRefs": [
+        "252"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Uzlaşma teklifi yapılan kişi kararını kaç gün içinde bildirmezse teklifi reddetmiş sayılır?",
+      "back": "Yedi gün; süre, teklifte bulunulduğu andan itibaren işler.",
+      "explanation": "Teklif açıklamalı tebligat veya istinabe yoluyla da yapılabilir. Şüpheli, mağdur veya suçtan zarar gören reşit değilse teklif kanunî temsilcisine yapılır. Teklifte kişiye uzlaşmanın mahiyeti ile kabul veya reddetmesinin hukukî sonuçları anlatılır.",
+      "articleRefs": [
+        "253"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Uzlaştırmacı, belgelerin örneği kendisine verildikten itibaren uzlaştırma işlemlerini en geç kaç gün içinde sonuçlandırır?",
+      "back": "Otuz gün. Uzlaştırma bürosu bu süreyi her defasında yirmi günü geçmemek üzere en fazla iki kez daha uzatabilir.",
+      "explanation": "Uzlaştırmacıyı uzlaştırma bürosu görevlendirir. Uzlaştırmacı, müzakereler sonunda hazırladığı raporu kendisine verilen belge örnekleriyle birlikte büroya verir.",
+      "articleRefs": [
+        "253"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Uzlaştırma müzakerelerine kimler katılabilir?",
+      "back": "Şüpheli, mağdur, suçtan zarar gören, kanunî temsilci, müdafi ve vekil katılabilir.",
+      "explanation": "Müzakereler gizli yürütülür. Şüpheli, mağdur veya suçtan zarar görenin kendisi ya da kanunî temsilcisi veya vekili müzakerelere katılmaktan imtina ederse uzlaşmayı kabul etmemiş sayılır.",
+      "articleRefs": [
+        "253"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Kovuşturma evresinde uzlaşma sağlanır ve sanık edimini def'aten yerine getirirse mahkeme hangi kararı verir?",
+      "back": "Davanın düşmesine karar verir.",
+      "explanation": "Edimin yerine getirilmesi ileri tarihe bırakılır, takside bağlanır veya süreklilik arz ederse durma kararı verilir. Durma süresince zamanaşımı işlemez. Uzlaşmanın gerekleri yerine getirilmezse yargılamaya kaldığı yerden devam olunur.",
+      "articleRefs": [
+        "254"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Müsadere gereken hâlde kamu davası açılmamışsa, karar verilmesi için mahkemeye kim başvurabilir?",
+      "back": "Cumhuriyet savcısı veya katılan, davayı görmeye yetkili mahkemeye başvurabilir.",
+      "explanation": "Aynı yol, kamu davası açılmış olup da esasla birlikte bir karar verilmemişse de açıktır. İade edilmesi gereken eşya veya malvarlığı değerleri için esasla birlikte karar verilmemişse mahkeme re'sen veya ilgililerin istemi üzerine iadelerine karar verir.",
+      "articleRefs": [
+        "256"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Suç konusu olmayıp sadece müsadereye tâbi bulunan eşyanın müsaderesine kim karar verir?",
+      "back": "Sulh ceza hâkimi karar verir; duruşma yapılmaksızın.",
+      "articleRefs": [
+        "259"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Önödeme kapsamındaki bir suç ile uzlaştırma kapsamındaki bir suç aynı mağdura karşı birlikte işlenirse uzlaştırma uygulanır mı?",
+      "back": "Evet; uzlaştırma kapsamındaki suç bakımından uzlaşma hükümleri uygulanır. Uzlaştırma kapsamındaki suç, kapsama girmeyen başka bir suçla birlikte aynı mağdura karşı işlenmişse uzlaşma hükümleri uygulanmaz.",
+      "explanation": "Soruşturulması ve kovuşturulması şikâyete bağlı olsa bile cinsel dokunulmazlığa karşı suçlarda, ısrarlı takip suçunda ve hakaret suçunda uzlaştırma yoluna gidilemez.",
+      "articleRefs": [
+        "253"
+      ]
+    }
+  ]
+}

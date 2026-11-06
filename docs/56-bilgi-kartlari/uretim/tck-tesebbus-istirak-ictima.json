@@ -1,0 +1,278 @@
+{
+  "deck": {
+    "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+    "legislationSlug": "turk-ceza-kanunu",
+    "sourceLabel": "AI bilgi kartı — Türk Ceza Kanunu md 35–44",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: resmî madde metni + çıkmış sorular); denetim düzeltmesi 6 Kas 2026 (4 kart)"
+  },
+  "cards": [
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Suça teşebbüsten sorumlu tutulmak için fail, işlemeyi kastettiği suçun icrasına nasıl başlamış olmalıdır?",
+      "back": "Elverişli hareketlerle doğrudan doğruya başlamış olmalıdır. Suç da failin elinde olmayan nedenlerle tamamlanamamış olmalıdır.",
+      "explanation": "Teşebbüs sorumluluğu iki koşula bağlıdır. Birincisi, işlenmesi kastedilen suçun icrasına elverişli hareketlerle doğrudan doğruya başlanmasıdır. İkincisi, suçun failin elinde olmayan nedenlerle tamamlanamamasıdır.",
+      "articleRefs": [
+        "35"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Suça teşebbüs hâlinde, ağırlaştırılmış müebbet hapis cezası yerine fail hangi cezayla cezalandırılır?",
+      "back": "Ondört yıldan yirmibir yıla kadar hapis cezasıyla. Ceza, meydana gelen zarar veya tehlikenin ağırlığına göre belirlenir.",
+      "explanation": "Müebbet hapis cezası yerine ise on yıldan onsekiz yıla kadar hapis cezası verilir.",
+      "articleRefs": [
+        "35"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Suça teşebbüste ağırlaştırılmış müebbet ve müebbet hapis dışındaki hallerde ceza ne kadar indirilir?",
+      "back": "Verilecek cezanın dörtte birinden dörtte üçüne kadarı indirilir.",
+      "explanation": "Ağırlaştırılmış müebbet ve müebbet hapis cezası için indirim oranı yerine ayrı hapis aralıkları öngörülmüştür ve bu aralıklar içinde ceza, meydana gelen zarar veya tehlikenin ağırlığına göre belirlenir.",
+      "articleRefs": [
+        "35"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Suçun icra hareketlerinden gönüllü vazgeçen fail hangi sorumluluktan kurtulur?",
+      "back": "Teşebbüsten dolayı cezalandırılmaz.",
+      "articleRefs": [
+        "36"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "İcra hareketlerinden vazgeçmenin dışında, fail hangi davranışla gönüllü vazgeçme hükmünden yararlanır?",
+      "back": "Kendi çabalarıyla suçun tamamlanmasını veya neticenin gerçekleşmesini önleyerek yararlanabilir.",
+      "explanation": "Gönüllü vazgeçme iki yolla olur: icra hareketlerinden gönüllü vazgeçmek ya da kendi çabalarıyla suçun tamamlanmasını veya neticenin gerçekleşmesini önlemek.",
+      "articleRefs": [
+        "36"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Gönüllü vazgeçen failin o ana kadar tamam olan fiili kendi başına bir suç oluşturuyorsa, fail bu kısımdan cezalandırılır mı?",
+      "back": "Evet; sadece o suça ait ceza ile cezalandırılır. Teşebbüsten ise cezalandırılmaz.",
+      "explanation": "Gönüllü vazgeçme yalnız teşebbüs sorumluluğunu kaldırır. Fiilin o ana kadar tamamlanmış kısmı esasen bir suç oluşturuyorsa, o suçun cezası uygulanır.",
+      "articleRefs": [
+        "36"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Suçun kanuni tanımında yer alan fiili birlikte gerçekleştiren kişiler hangi sıfatla sorumlu olur?",
+      "back": "Her biri fail olarak sorumlu olur.",
+      "explanation": "Fiili birlikte gerçekleştiren kişilerin her biri ayrı ayrı fail olarak sorumludur.",
+      "articleRefs": [
+        "37"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Suçun işlenmesinde bir başkasını araç olarak kullanan kişi hangi sıfatla sorumlu tutulur?",
+      "back": "Fail olarak sorumlu tutulur.",
+      "articleRefs": [
+        "37"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Kusur yeteneği olmayanları suçun işlenmesinde araç olarak kullanan kişinin cezası ne kadar artırılır?",
+      "back": "Üçte birden yarısına kadar artırılır. Bu kişi fail olarak sorumlu tutulur.",
+      "explanation": "Şart, suçun işlenmesinde kusur yeteneği olmayan bir kişinin araç olarak kullanılmasıdır; bu durumda kullanan kişi fail olarak sorumlu tutulur ve cezası artırılır.",
+      "articleRefs": [
+        "37"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Başkasını suç işlemeye azmettiren kişi hangi cezayla cezalandırılır?",
+      "back": "İşlenen suçun cezası ile cezalandırılır.",
+      "explanation": "Kural budur. Azmettirenin cezasındaki artırım ve indirim halleri aynı maddenin diğer fıkralarında düzenlenmiştir.",
+      "articleRefs": [
+        "38"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Üstsoy ve altsoy ilişkisinden doğan nüfuz kullanılarak suça azmettirmede azmettirenin cezası ne kadar artırılır?",
+      "back": "Üçte birden yarısına kadar artırılır. Çocukların suça azmettirilmesinde bu artırım için üstsoy ve altsoy ilişkisi aranmaz.",
+      "articleRefs": [
+        "38"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Azmettirenin belli olmadığı hâlde, onun kim olduğunun ortaya çıkmasını sağlayan fail hakkında ağırlaştırılmış müebbet hapis cezası yerine hangi ceza verilebilir?",
+      "back": "Yirmi yıldan yirmibeş yıla kadar hapis cezasına hükmolunabilir.",
+      "explanation": "Müebbet hapis cezası yerine onbeş yıldan yirmi yıla kadar hapis cezasına hükmolunabilir. Diğer hallerde verilecek cezada üçte bir oranında indirim yapılabilir. Bu hüküm, azmettirenin ortaya çıkmasını sağlayan fail veya diğer suç ortağı için uygulanır.",
+      "articleRefs": [
+        "38"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "İşlenen suç ağırlaştırılmış müebbet hapis cezasını gerektiriyorsa, suçun işlenmesine yardım eden kişiye hangi ceza verilir?",
+      "back": "Onbeş yıldan yirmi yıla kadar hapis cezası verilir.",
+      "explanation": "İşlenen suç müebbet hapis cezasını gerektiriyorsa, yardım edene on yıldan onbeş yıla kadar hapis cezası verilir.",
+      "articleRefs": [
+        "39"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Ağırlaştırılmış müebbet ve müebbet hapis dışındaki hallerde, yardım edenin cezası nasıl belirlenir?",
+      "back": "Cezanın yarısı indirilir. Ancak verilecek ceza sekiz yılı geçemez.",
+      "explanation": "Yardım edenin cezası, işlenen suçun cezası esas alınarak indirilir. İndirimden sonra çıkan ceza sekiz yılı aşamaz.",
+      "articleRefs": [
+        "39"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Fiilin işlenmesinden sonra yardımda bulunacağını vaat eden kişi, işlenen suçtan hangi sıfatla sorumlu olur?",
+      "back": "Yardım eden sıfatıyla sorumlu olur.",
+      "explanation": "Şu haller de yardım eden sıfatıyla sorumluluk doğurur: suç işlemeye teşvik etmek, suç işleme kararını kuvvetlendirmek, suçun nasıl işleneceği hususunda yol göstermek, fiilin işlenmesinde kullanılan araçları sağlamak ve suçun işlenmesinden önce veya işlenmesi sırasında yardımda bulunarak icrasını kolaylaştırmak.",
+      "articleRefs": [
+        "39"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Suç ortaklarından birinin cezalandırılmasını önleyen kişisel bir neden, diğer ortaklara da yarar mı?",
+      "back": "Hayır. Suçun işlenişine iştirak eden her kişi, diğerinin cezalandırılmasını önleyen kişisel nedenler göz önünde bulundurulmaksızın kendi kusurlu fiiline göre cezalandırılır.",
+      "explanation": "Suça iştirak için kasten ve hukuka aykırı işlenmiş bir fiilin varlığı yeterlidir. Ortaklardan birinde bulunan kişisel neden, ötekinin cezalandırılmasını etkilemez.",
+      "articleRefs": [
+        "40"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Özgü suçlarda, özel faillik niteliğini taşımayan bir kişi suçun işlenişine iştirak ederse hangi sıfatla sorumlu tutulur?",
+      "back": "Azmettiren veya yardım eden olarak sorumlu tutulur.",
+      "explanation": "Özgü suçlarda ancak özel faillik niteliğini taşıyan kişi fail olabilir.",
+      "articleRefs": [
+        "40"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Suça iştirakten sorumlu tutulabilmek için ilgili suç en az hangi aşamaya varmış olmalıdır?",
+      "back": "En azından teşebbüs aşamasına varmış olmalıdır.",
+      "explanation": "Suç teşebbüs aşamasına varmadıkça, iştirak edenler o suçtan dolayı sorumlu tutulamaz.",
+      "articleRefs": [
+        "40"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "İştirak hâlinde işlenen suçlarda gönüllü vazgeçme hükümlerinden kim yararlanır?",
+      "back": "Sadece gönüllü vazgeçen suç ortağı yararlanır.",
+      "explanation": "Ortaklardan birinin gönüllü vazgeçmesi, vazgeçmeyen diğer ortakları bu hükümlerden yararlandırmaz.",
+      "articleRefs": [
+        "41"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "İştirak hâlinde suç, gönüllü vazgeçenin bütün gayretine rağmen işlenmişse, vazgeçen ortak gönüllü vazgeçme hükümlerinden yararlanır mı?",
+      "back": "Evet; suç bütün gayretine rağmen işlenmiş olsa da gönüllü vazgeçme hükümleri uygulanır. Bundan yalnız gönüllü vazgeçen suç ortağı yararlanır.",
+      "explanation": "Suç, gönüllü vazgeçenin gösterdiği gayret dışında başka bir sebeple işlenmemişse de gönüllü vazgeçme hükümleri uygulanır.",
+      "articleRefs": [
+        "41"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Bir suç, diğerinin unsurunu veya ağırlaştırıcı nedenini oluşturduğu için tek fiil sayılıyorsa buna ne ad verilir?",
+      "back": "Bileşik suç.",
+      "articleRefs": [
+        "42"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Bileşik suçta içtima hükümleri uygulanır mı?",
+      "back": "Hayır. Bileşik suç tek fiil sayılır ve bu tür suçlarda içtima hükümleri uygulanmaz.",
+      "articleRefs": [
+        "42"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Zincirleme suçta hükmedilen ceza ne kadar artırılır?",
+      "back": "Bir cezaya hükmedilir ve bu ceza dörtte birinden dörtte üçüne kadar artırılır.",
+      "explanation": "Zincirleme suç, bir suç işleme kararının icrası kapsamında, değişik zamanlarda bir kişiye karşı aynı suçun birden fazla işlenmesidir. Hüküm, mağduru belli bir kişi olmayan suçlarda da uygulanır. Aynı suçun birden fazla kişiye karşı tek bir fiille işlenmesi durumunda da uygulanır.",
+      "articleRefs": [
+        "43"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Zincirleme suçta, bir suçun temel şekli ile nitelikli şekli ayrı suçlar sayılır mı?",
+      "back": "Hayır. Temel şekil ile daha ağır veya daha az cezayı gerektiren nitelikli şekilleri aynı suç sayılır. Suçların bir suç işleme kararının icrası kapsamında işlenmesi de aranır.",
+      "articleRefs": [
+        "43"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Hangi suçlarda zincirleme suç hükümleri uygulanmaz?",
+      "back": "Kasten öldürme, kasten yaralama, işkence ve yağma suçlarında uygulanmaz.",
+      "explanation": "Bu suçlarda maddenin bütün hükümleri, yani bir cezaya hükmetme ve cezayı artırma kuralı, devre dışıdır.",
+      "articleRefs": [
+        "43"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Fikri içtimada fail, oluşan farklı suçlardan hangisinden dolayı cezalandırılır?",
+      "back": "En ağır cezayı gerektiren suçtan dolayı cezalandırılır.",
+      "articleRefs": [
+        "44"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Fikri içtima için failin birden fazla fiil işlemesi gerekir mi?",
+      "back": "Hayır. Fikri içtimada fail, işlediği bir fiil ile birden fazla farklı suçun oluşmasına sebebiyet verir. Oluşan suçların farklı olması da aranır.",
+      "articleRefs": [
+        "44"
+      ],
+      "counterNumbers": []
+    }
+  ]
+}

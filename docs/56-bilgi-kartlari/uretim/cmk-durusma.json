@@ -1,0 +1,298 @@
+{
+  "deck": {
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "legislationSlug": "5271-sayili-ceza-muhakemesi-kanunu-cmk",
+    "unitSlug": "cmk-durusma",
+    "sourceLabel": "AI bilgi kartı — 5271 Sayılı Ceza Muhakemesi Kanunu (CMK) md 175–205",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: cmk-durusma özeti + resmî madde metni; stil kapısı 1 açıklama yeniden yazıldı); denetim düzeltmesi 6 Kas 2026 (9 kart)"
+  },
+  "cards": [
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "İddianamenin kabulüyle hangi evre başlar?",
+      "back": "Kovuşturma evresi başlar; kamu davası da açılmış olur.",
+      "explanation": "İddianamenin kabulünden sonra mahkeme duruşma gününü belirler ve duruşmada hazır bulunması gereken kişileri çağırır.",
+      "articleRefs": [
+        "175"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Çağrı kâğıdının tebliğiyle duruşma günü arasında en az ne kadar süre bulunmalıdır?",
+      "back": "En az bir hafta. Bu süre hem tutuklu olmayan sanığın hem tutuklu sanığın çağrılmasında aranır.",
+      "explanation": "İddianame, çağrı kâğıdı ile birlikte sanığa tebliğ olunur. Tutuklu olmayan sanığın çağrı kâğıdına, mazereti olmaksızın gelmediğinde zorla getirileceği yazılır. Tutuklu sanık duruşma gününün tebliğiyle çağrılır; müdafii de sanıkla birlikte davet olunur. Bu süreye uyulmamışsa, duruşmaya ara verilmesini istemeye hakkı olduğu sanığa hatırlatılır (md 190/2).",
+      "articleRefs": [
+        "176",
+        "190"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "İddianame bilgileri ve duruşma tarihi sanığa elektronik posta ile de bildirilirse, bu bildirime çağrı kâğıdına bağlanan sonuçlar uygulanır mı?",
+      "back": "Hayır. Dosyadaki telefon, telgraf, faks, elektronik posta gibi araçlarla yapılan bu bildirimde çağrı kâğıdına bağlanan sonuçlar uygulanmaz.",
+      "explanation": "Bu bildirim, iletişim bilgilerinin dosyada bulunması hâlinde, iddianamenin çağrı kâğıdı ile birlikte tebliğine ek olarak yapılır. Tutuklu olmayan sanığa tebliğ olunan çağrı kâğıdına ise, mazereti olmaksızın gelmediğinde zorla getirileceği yazılır.",
+      "articleRefs": [
+        "176"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Sanık, tanık davetini veya savunma delillerinin toplanmasını isteyen dilekçesini duruşma gününden en az kaç gün önce vermelidir?",
+      "back": "En az beş gün önce. Dilekçe mahkeme başkanına veya hâkime verilir.",
+      "explanation": "Dilekçede istemlerin ilişkin olduğu olaylar gösterilir. Dilekçe üzerine verilen karar sanığa derhâl bildirilir; kabul edilen istemler Cumhuriyet savcısına da bildirilir.",
+      "articleRefs": [
+        "177"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Davayı gören mahkeme, büyükşehir belediye sınırları içindeki bir tanığın istinabe yoluyla dinlenmesine karar verebilir mi?",
+      "back": "Hayır, zorunluluk olmadıkça karar veremez. Bu kayıt büyükşehir belediye sınırları içindeki şikâyetçi, katılan, sanık, müdafi veya vekil ve bilirkişiler için de geçerlidir.",
+      "explanation": "İstinabe olunan mahkeme büyükşehir belediye sınırları içindeyse, ilgililer kendi yargı çevresinde bulunmasa da istinabe evrakını geri çevirmeksizin gereğini yapar. Görüntülü ve sesli iletişim tekniğiyle aynı anda dinleme olanağı varsa ifade bu yöntemle alınır.",
+      "articleRefs": [
+        "180"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Duruşmanın kapalı yapılmasına hangi hâllerde karar verilebilir?",
+      "back": "Genel ahlâkın veya kamu güvenliğinin kesin olarak gerekli kıldığı hâllerde; duruşmanın bir kısmı veya tamamı kapalı yapılabilir. Sanık onsekiz yaşını doldurmamışsa duruşma kapalı yapılır ve hüküm de kapalı duruşmada açıklanır (md 185).",
+      "explanation": "Kural, duruşmanın herkese açık olmasıdır. Kapalılık konusundaki gerekçeli karar ile hüküm açık duruşmada açıklanır.",
+      "articleRefs": [
+        "182",
+        "185"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Açıklığın kaldırılması istemine ilişkin duruşma kapalı yapılabilir mi?",
+      "back": "Evet. Açıklığın kaldırılması istemine ilişkin duruşma, istem üzerine veya mahkemece uygun görülürse kapalı yapılır.",
+      "explanation": "Bu istemler, 182 nci maddede gösterilen hâllere, yani genel ahlâkın veya kamu güvenliğinin kesin olarak gerekli kıldığı hâllere ilişkindir.",
+      "articleRefs": [
+        "184",
+        "182"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Sanık kaç yaşını doldurmamışsa duruşma kapalı yapılır?",
+      "back": "Onsekiz yaşını doldurmamışsa. Bu durumda hüküm de kapalı duruşmada açıklanır.",
+      "articleRefs": [
+        "185"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Kapalı duruşmanın içeriği herhangi bir iletişim aracıyla yayımlanabilir mi?",
+      "back": "Hayır. Kapalı duruşmanın içeriği hiçbir iletişim aracıyla yayımlanamaz.",
+      "explanation": "Mahkeme kapalı duruşmada bazı kişilerin hazır bulunmasına izin verebilir. Bu kişiler, duruşmanın kapalı olmasını gerektiren hususları açıklamamaları bakımından uyarılır ve bu husus tutanağa yazılır.",
+      "articleRefs": [
+        "187"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Mahkeme, açık duruşmanın içeriği hangi nitelikteyse bu içeriğin yayımlanmasını yasaklar?",
+      "back": "İçerik millî güvenliğe veya genel ahlâka veya kişilerin saygınlık, onur ve haklarına dokunacak ya da suç işlemeye kışkırtacak nitelikteyse yasaklar.",
+      "explanation": "Yasak, bunları önlemek amacıyla ve gerektiği ölçüde konur. İçeriğin kısmen veya tamamen yayımlanması yasaklanabilir. Mahkeme bu kararını açık duruşmada açıklar.",
+      "articleRefs": [
+        "187"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Duruşmada hazır bulunması şart olanlar kimlerdir?",
+      "back": "Hükme katılacak hâkimler, Cumhuriyet savcısı, zabıt kâtibi ve Kanunun zorunlu müdafiliği kabul ettiği hâllerde müdafi.",
+      "explanation": "Bir oturumda bitmeyecek davada, herhangi bir nedenle bulunamayacak üyenin yerine geçmek ve oya katılmak üzere yedek üye bulundurulabilir.",
+      "articleRefs": [
+        "188"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Müdafi mazeretsiz olarak duruşmaya gelmezse duruşmaya devam edilebilir mi?",
+      "back": "Evet. Müdafiin mazeretsiz olarak gelmemesi veya duruşmayı terk etmesi hâlinde duruşmaya devam edilebilir.",
+      "explanation": "Kanunun zorunlu müdafiliği kabul ettiği hâllerde müdafiin duruşmada hazır bulunması şarttır. Devam imkânı, müdafiin mazeretsiz olarak gelmemesi veya duruşmayı terk etmesi hâllerine ilişkindir.",
+      "articleRefs": [
+        "188"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Duruşmaya hangi saptama yapılarak başlanır?",
+      "back": "Sanığın ve müdafiinin hazır bulunup bulunmadığı, çağrılmış tanık ve bilirkişilerin gelip gelmedikleri saptanarak başlanır.",
+      "explanation": "Sanık duruşmaya bağsız alınır. Mahkeme başkanı veya hâkim, duruşmanın başladığını iddianamenin kabulü kararını okuyarak açıklar ve tanıklar salondan çıkarılır. Ardından sırasıyla sanığın açık kimliği saptanır, suçlama anlatılır, sanığa hakları bildirilir; sanık hazır olduğunu bildirirse sorgusu yapılır.",
+      "articleRefs": [
+        "191"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Toplanan delillere göre ceza verilmesine yer olmadığı kararı gerekiyorsa, sorgusu yapılmamış sanık hakkında dava yokluğunda bitirilebilir mi?",
+      "back": "Hayır. Kanunun ayrık tuttuğu hâller saklı kalmak üzere, sorgusuz yoklukta bitirme ancak mahkûmiyet, ceza verilmesine yer olmadığı ve güvenlik tedbiri dışında bir karar gerekiyorsa mümkündür.",
+      "explanation": "Kanunun ayrık tuttuğu hâller saklı kalmak üzere, hazır bulunmayan sanık hakkında duruşma yapılmaz. Gelmemesinin geçerli nedeni olmayan sanığın zorla getirilmesine karar verilir.",
+      "articleRefs": [
+        "193"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Duruşmadan savuşan sanık hakkında dava hangi şartlarla yokluğunda bitirilebilir?",
+      "back": "Sanık önceden sorguya çekilmiş olmalı ve hazır bulunmasına mahkemece artık gerek görülmemelidir; iki şart birlikte aranır.",
+      "explanation": "Aynı kural, ara vermeyi izleyen oturuma gelmeyen sanık için de uygulanır. Mahkemeye gelen sanığın duruşmanın devamı süresince hazır bulunması sağlanır; mahkeme savuşmasının önüne geçmek için gereken tedbirleri alır.",
+      "articleRefs": [
+        "194"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Suç neyi gerektiriyorsa sanık gelmese bile duruşma yapılabilir?",
+      "back": "Yalnız veya birlikte adlî para cezasını veya müsadereyi gerektiriyorsa.",
+      "explanation": "Bu hâllerde sanığa gönderilecek davetiyeye, gelmese de duruşmanın yapılacağı yazılır.",
+      "articleRefs": [
+        "195"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Mahkeme, sanığı duruşmada hazır bulunmaktan kimin istemi üzerine bağışık tutabilir?",
+      "back": "Mahkemece sorgusu yapılmış sanığın ya da bu hususta sanık tarafından yetkili kılınmış müdafiin istemi üzerine.",
+      "explanation": "Hastalık, disiplin önlemi ya da zorunlu diğer nedenlerle yargı çevresi dışındaki bir hastahane veya tutukevine nakledilen sanık da, sorgusu yapılmış olmak koşuluyla, hazır bulundurulmasına gerek görülmeyen oturumlar için getirilmeyebilir.",
+      "articleRefs": [
+        "196"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Alt sınırı en az kaç yıl hapis cezası gerektiren suçlarda sanık istinabe suretiyle sorguya çekilemez?",
+      "back": "Alt sınırı beş yıl ve daha fazla hapis cezası gerektiren suçlarda istinabe suretiyle sorgu yapılamaz; alt sınırı tam beş yıl olan suç da bu kapsamdadır. Diğer suçlarda sanık istinabe suretiyle sorguya çekilebilir; yurt dışında bulunan sanığın duruşmada hazır bulunmasının zorluğu hâlinde ise istinabe suretiyle sorgusu yapılabilir (md 196/6).",
+      "explanation": "Diğer suçlarda istinabe suretiyle sorgu günü Cumhuriyet savcısı ile sanık ve müdafiine bildirilir; savcı ile müdafiin sorguda hazır bulunması zorunlu değildir. Sorgudan önce sanığa, ifadesini esas mahkemesi huzurunda vermek isteyip istemediği sorulur. Sorgu tutanağı duruşmada okunur.",
+      "articleRefs": [
+        "196"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Sanık hazır bulunmaksızın yapılan duruşmada sanık, eski hâle getirme isteminde ne kadar süre içinde bulunabilir?",
+      "back": "Mahkemenin karar ve işlemlerinin kendisine tebliği tarihinden itibaren bir hafta içinde. İstem kanunî nedenlere dayanmalıdır.",
+      "explanation": "İstem, sürenin geçmesinden doğan sonuçları gidermek için mahkemenin o karar ve işlemleri hakkında yapılır.",
+      "articleRefs": [
+        "198"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Müdafii aracılığıyla temsil edilmek yetkisini kullanmış sanık eski hâle getirme isteminde bulunabilir mi?",
+      "back": "Hayır. Müdafii aracılığıyla temsil edilmek yetkisini kullanan ya da kendi istemiyle duruşmadan bağışık tutulan sanık artık bu istemde bulunamaz.",
+      "explanation": "Bu iki durum dışında sanık, karar ve işlemlerin kendisine tebliğinden itibaren bir hafta içinde, kanunî nedenlere dayanarak eski hâle getirme isteminde bulunabilir.",
+      "articleRefs": [
+        "198"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Mahkeme, sanığın zorla getirme kararı veya yakalama emriyle getirilmesine ne zaman karar verebilir?",
+      "back": "Her zaman karar verebilir.",
+      "explanation": "Mahkeme, sanığın duruşmada hazır bulunmasına da her zaman karar verebilir.",
+      "articleRefs": [
+        "199"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Sanığın yüzüne karşı tanığın gerçeği söylemeyeceğinden endişe edilirse mahkeme ne yapabilir?",
+      "back": "Sorgu ve dinleme sırasında o sanığın mahkeme salonundan çıkarılmasına karar verebilir.",
+      "explanation": "Aynı yetki, suç ortaklarından birinin gerçeği söylemeyeceğinden endişe edildiğinde de vardır. Sanık tekrar getirildiğinde tutanaklar okunur ve gerektiğinde içeriği anlatılır.",
+      "articleRefs": [
+        "200"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Heyet hâlinde görev yapan mahkemede heyeti oluşturan hâkimler duruşmada kimlere soru sorabilir?",
+      "back": "Sanığa, katılana, tanıklara, bilirkişilere ve duruşmaya çağrılmış diğer kişilere soru sorabilir.",
+      "explanation": "Cumhuriyet savcısı ile müdafi veya vekil sıfatıyla katılan avukat bu kişilere duruşma disiplinine uygun olarak doğrudan soru yöneltir. Yöneltilen soruya itiraz edilirse sorunun yöneltilmesinin gerekip gerekmediğine mahkeme başkanı karar verir.",
+      "articleRefs": [
+        "201"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Tercüman listesi il adlî yargı adalet komisyonlarınca hangi sıklıkla düzenlenir?",
+      "back": "Her yıl düzenlenir.",
+      "explanation": "Cumhuriyet savcıları ve hâkimler yalnız bulundukları il listesinden değil, diğer illerde oluşturulmuş listelerden de tercüman seçebilir. Sanık, iddianamenin anlatılması ve esas hakkındaki mütalaanın verilmesi üzerine sözlü savunmasını kendisini daha iyi ifade edebileceği başka bir dilde yapabilir; bu durumda tercümanı listeden kendisi seçer ve giderleri Devlet Hazinesince karşılanmaz.",
+      "articleRefs": [
+        "202"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Salondan çıkarılırken direnç gösteren kişi en fazla ne kadar süre disiplin hapsine konulabilir?",
+      "back": "Dört güne kadar. Kararı hâkim veya mahkeme derhâl verir; avukatlar bunun dışındadır.",
+      "explanation": "Önce duruşmanın düzenini bozan kişinin, savunma hakkının kullanılmasını engellememek koşuluyla salondan çıkarılması emredilir. Çıkarılırken direnç gösteren veya karışıklıklara neden olan kişi yakalanır.",
+      "articleRefs": [
+        "203"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Salondan çıkarılırken direnç gösteren çocuk hakkında disiplin hapsine karar verilebilir mi?",
+      "back": "Hayır. Çocuklar hakkında disiplin hapsi uygulanmaz.",
+      "explanation": "Duruşmanın düzenini mahkeme başkanı veya hâkim sağlar.",
+      "articleRefs": [
+        "203"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Düzeni tehlikeye soktuğu için salondan çıkarılan sanığın müdafii yoksa mahkeme ne yapar?",
+      "back": "Barodan bir müdafi görevlendirilmesini ister.",
+      "explanation": "Mahkeme, sanığın hazır bulunmasını savunması bakımından zorunlu görmezse oturumu yokluğunda sürdürür ve bitirir. Oturuma yeniden alınan sanığa, yokluğunda yapılan işlemler açıklanır.",
+      "articleRefs": [
+        "204"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Duruşma sırasında bir kimse suç işlerse mahkeme ne yapar?",
+      "back": "Olayı tespit eder ve düzenlediği tutanağı yetkili makama gönderir; gerek görürse failin tutuklanmasına da karar verebilir.",
+      "articleRefs": [
+        "205"
+      ]
+    }
+  ]
+}

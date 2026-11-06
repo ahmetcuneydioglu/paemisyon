@@ -70,12 +70,21 @@ export interface UnitValidation {
 const BIRLER = ['', 'bir', 'iki', 'üç', 'dört', 'beş', 'altı', 'yedi', 'sekiz', 'dokuz'];
 const ONLAR = ['', 'on', 'yirmi', 'otuz', 'kırk', 'elli', 'altmış', 'yetmiş', 'seksen', 'doksan'];
 const SAYI_PARCALARI =
-  'bir|iki|üç|dört|beş|altı|yedi|sekiz|dokuz|on|yirmi|otuz|kırk|elli|altmış|yetmiş|seksen|doksan|yüz';
+  'bir|iki|üç|dört|beş|altı|yedi|sekiz|dokuz|on|yirmi|otuz|kırk|elli|altmış|yetmiş|seksen|doksan|yüz|bin';
 
-/** 0–999 için sözcük deseni; parçalar arasında isteğe bağlı boşluk ("on\s?beş"). */
+/**
+ * 0–999 999 için sözcük deseni; parçalar arasında isteğe bağlı boşluk ("on\s?beş", "on\s?bin").
+ * Binler (TCK adlî para cezası: "bin günden onbin güne kadar") 6 Kas 2026'da eklendi.
+ */
 export function trNumberPattern(n: number): string | null {
   if (n === 0) return 'sıfır';
-  if (n >= 1000 || n < 0 || !Number.isInteger(n)) return null;
+  if (n >= 1_000_000 || n < 0 || !Number.isInteger(n)) return null;
+  if (n >= 1000) {
+    const k = Math.floor(n / 1000);
+    const kalan = n % 1000;
+    const binler = k === 1 ? 'bin' : `${trNumberPattern(k)}\\s?bin`;
+    return kalan ? `${binler}\\s?${trNumberPattern(kalan)}` : binler;
+  }
   const h = Math.floor(n / 100);
   const t = Math.floor((n % 100) / 10);
   const b = n % 10;

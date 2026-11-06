@@ -1,0 +1,288 @@
+{
+  "deck": {
+    "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+    "legislationSlug": "turk-ceza-kanunu",
+    "sourceLabel": "AI bilgi kartı — Türk Ceza Kanunu md 76–85",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: resmî madde metni + çıkmış sorular); denetim düzeltmesi 6 Kas 2026 (1 kart + #20 çıkarıldı)"
+  },
+  "cards": [
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Soykırım suçunda fail hangi maksatla hareket etmelidir?",
+      "back": "Milli, etnik, ırki veya dini bir grubun tamamen veya kısmen yokedilmesi maksadıyla. Fiiller bir planın icrası suretiyle grubun üyelerine karşı işlenir.",
+      "explanation": "Maksat ve plan birlikte aranır. Bunlar varken sayılan fiillerden birinin işlenmesi soykırım suçunu oluşturur. Fail ağırlaştırılmış müebbet hapis cezasıyla cezalandırılır.",
+      "articleRefs": [
+        "76"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Soykırım suçu yalnız grup üyelerinin kasten öldürülmesiyle mi işlenir?",
+      "back": "Hayır. Bedensel veya ruhsal bütünlüğe ağır zarar verme, yokedilme sonucunu doğuracak koşullarda yaşamaya zorlama, doğumlara engel olma tedbirleri ve çocukların başka gruba zorla nakli de yeter; plan ve yoketme maksadı her halde aranır.",
+      "explanation": "Soykırımı oluşturan fiiller şunlardır: kasten öldürme, kişilerin bedensel veya ruhsal bütünlüklerine ağır zarar verme, grubun tamamen veya kısmen yokedilmesi sonucunu doğuracak koşullarda yaşamaya zorlanması, grup içinde doğumlara engel olmaya yönelik tedbirlerin alınması ve gruba ait çocukların bir başka gruba zorla nakledilmesi.",
+      "articleRefs": [
+        "76"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Soykırım kapsamında işlenen kasten öldürme ve kasten yaralama suçlarında hangi içtima hükümleri uygulanır?",
+      "back": "Gerçek içtima hükümleri uygulanır. Bu hükümler belirlenen mağdur sayısınca uygulanır.",
+      "explanation": "Madde, soykırım failine ağırlaştırılmış müebbet hapis cezası öngörür. Ardından 'ancak' diyerek kasten öldürme ile kasten yaralama için mağdur sayısınca gerçek içtimayı ekler. Tüzel kişiler hakkında da güvenlik tedbirine hükmolunur ve zamanaşımı işlemez.",
+      "articleRefs": [
+        "76"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "İnsanlığa karşı suçu oluşturan fiiller hangileridir?",
+      "back": "Kasten öldürme; kasten yaralama; işkence, eziyet veya köleleştirme; kişi hürriyetinden yoksun kılma; bilimsel deneylere tabi kılma; cinsel saldırı, çocukların cinsel istismarı; zorla hamile bırakma; zorla fuhşa sevketme.",
+      "explanation": "Sayılan fiil, maddedeki saik ve plan doğrultusunda sistemli işlenme unsuruyla birlikte gerçekleştiğinde insanlığa karşı suç oluşur. Bu suçlardan dolayı tüzel kişiler hakkında da güvenlik tedbirine hükmolunur.",
+      "articleRefs": [
+        "77"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "İnsanlığa karşı suçta, soykırımdaki gibi milli veya etnik bir grubu yoketme maksadı aranır mı?",
+      "back": "Hayır. Fiillerin siyasal, felsefi, ırki veya dini saiklerle toplumun bir kesimine karşı bir plan doğrultusunda sistemli olarak işlenmesi aranır. Grubu yoketme maksadı soykırımın unsurudur.",
+      "explanation": "Soykırımda plan, milli, etnik, ırki veya dini bir grubun tamamen veya kısmen yokedilmesi maksadına bağlıdır. İnsanlığa karşı suçta ise saik siyasal, felsefi, ırki veya dini olabilir. Hedef toplumun bir kesimidir ve fiiller sistemli olarak işlenir.",
+      "articleRefs": [
+        "77",
+        "76"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "İnsanlığa karşı suçta kasten öldürme dışındaki fiiller için hapis cezası en az ne kadardır?",
+      "back": "8 yıldan az olmamak üzere hapis cezası verilir. Kasten öldürme fiilinde ise ceza ağırlaştırılmış müebbet hapistir.",
+      "explanation": "Kasten öldürme ve kasten yaralama bakımından ayrıca belirlenen mağdur sayısınca gerçek içtima hükümleri uygulanır.",
+      "articleRefs": [
+        "77"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Soykırım veya insanlığa karşı suçları işlemek maksadıyla örgüt kuran ya da yöneten kişiye hangi ceza verilir?",
+      "back": "10 yıldan 15 yıla kadar hapis cezası.",
+      "explanation": "Madde, örgüt kurmayı ve yönetmeyi bu suçları işleme maksadına bağlar. Bu suçlardan dolayı tüzel kişiler hakkında da güvenlik tedbirine hükmolunur.",
+      "articleRefs": [
+        "78",
+        "76",
+        "77"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Soykırım veya insanlığa karşı suçları işlemek maksadıyla kurulan örgüte üye olan kişiye hangi ceza verilir?",
+      "back": "5 yıldan 10 yıla kadar hapis cezası.",
+      "explanation": "Örgütü kuran veya yöneten kişiye ise 10 yıldan 15 yıla kadar hapis cezası verilir. Bu suçlardan dolayı zamanaşımı işlemez.",
+      "articleRefs": [
+        "78",
+        "76",
+        "77"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Soykırım, insanlığa karşı suçlar ve bunları işlemek maksadıyla örgüt kurma suçlarında zamanaşımı işler mi?",
+      "back": "Hayır. Bu suçların hiçbirinde zamanaşımı işlemez.",
+      "explanation": "Bu maddelerin her birinde, tüzel kişiler hakkında da güvenlik tedbirine hükmolunacağı ayrıca yazılıdır.",
+      "articleRefs": [
+        "78",
+        "76",
+        "77"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Göçmen kaçakçılığının temel cezası nedir?",
+      "back": "5 yıldan 8 yıla kadar hapis ve 1000 günden 10000 güne kadar adli para cezası.",
+      "explanation": "Fail, doğrudan doğruya veya dolaylı olarak maddi menfaat elde etmek maksadıyla hareket eder. Yasal olmayan yollardan bir yabancıyı ülkeye sokar, ülkede kalmasına imkan sağlar ya da Türk vatandaşı veya yabancının yurt dışına çıkmasına imkan sağlar.",
+      "articleRefs": [
+        "79"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Göçmen kaçakçılığı teşebbüs aşamasında kalırsa nasıl cezaya hükmolunur?",
+      "back": "Tamamlanmış gibi cezaya hükmolunur.",
+      "explanation": "Temel ceza 5 yıldan 8 yıla kadar hapis ve 1000 günden 10000 güne kadar adli para cezasıdır. Bu ceza, suç teşebbüs aşamasında kalmış olsa dahi verilir.",
+      "articleRefs": [
+        "79"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Göçmen kaçakçılığı bir örgütün faaliyeti çerçevesinde işlenirse ceza ne kadar artırılır?",
+      "back": "Ceza yarısından bir katına kadar artırılır.",
+      "explanation": "Suç birden fazla kişi tarafından birlikte işlenirse ceza yarısına kadar artırılır. Mağdurların hayatı bakımından bir tehlike oluşturması ya da onur kırıcı bir muameleye maruz bırakılarak işlenmesi halinde artırım yarısından üçte ikisine kadardır. Suç bir tüzel kişinin faaliyeti çerçevesinde işlenirse, tüzel kişi hakkında güvenlik tedbirlerine hükmolunur.",
+      "articleRefs": [
+        "79"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "İnsan ticareti suçunun cezası nedir?",
+      "back": "8 yıldan 12 yıla kadar hapis ve 10000 güne kadar adli para cezası.",
+      "explanation": "Fail şu maksatlardan biriyle hareket eder: zorla çalıştırmak, hizmet ettirmek, fuhuş yaptırmak, esarete tabi kılmak ya da vücut organlarının verilmesini sağlamak. Tüzel kişiler hakkında da güvenlik tedbirine hükmolunur.",
+      "articleRefs": [
+        "80"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "İnsan ticaretinde suça ait araç fiiller hangileridir?",
+      "back": "Tehdit, baskı, cebir veya şiddet uygulamak; nüfuzu kötüye kullanmak; kandırmak; kişiler üzerindeki denetim olanaklarından veya çaresizliklerinden yararlanarak rızalarını elde etmek.",
+      "explanation": "Bu araçlarla kişileri ülkeye sokmak, ülke dışına çıkarmak, tedarik etmek, kaçırmak, bir yerden başka bir yere götürmek, sevk etmek ya da barındırmak suçu oluşturur. Kanundaki amaçlarla girişilen ve suçu oluşturan fiiller varsa mağdurun rızası geçersizdir.",
+      "articleRefs": [
+        "80"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "18 yaşını doldurmamış bir kişi fuhuş yaptırmak maksadıyla barındırılırsa, insan ticareti için araç fiillere başvurulmuş olması gerekir mi?",
+      "back": "Hayır. Araç fiillerden hiçbirine başvurulmamış olsa da faile insan ticaretinin cezaları verilir; yeter ki fiil kanundaki maksatlarla işlensin.",
+      "explanation": "Bu kural tedarik etme, kaçırma, bir yerden diğer bir yere götürme, sevk etme ve barındırma hareketleri için geçerlidir. Maksat zorla çalıştırma, hizmet ettirme, fuhuş yaptırma, esarete tabi kılma ya da vücut organlarının verilmesini sağlama olmalıdır.",
+      "articleRefs": [
+        "80"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Bir insanı kasten öldüren kişiye temel ceza olarak ne verilir?",
+      "back": "Müebbet hapis cezası.",
+      "articleRefs": [
+        "81"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Kasten öldürme töre saikiyle işlenirse fail hangi cezayla cezalandırılır?",
+      "back": "Ağırlaştırılmış müebbet hapis cezasıyla. Temel şekildeki müebbet hapis yerine bu ceza verilir.",
+      "explanation": "md 82'de ağırlaştırılmış müebbet hapis gerektiren haller: tasarlayarak; canavarca hisle veya eziyet çektirerek; yangın, su baskını, tahrip, batırma veya bombalama ya da nükleer, biyolojik veya kimyasal silah kullanarak; üstsoy veya altsoydan birine ya da eş, boşandığı eş veya kardeşe karşı; çocuğa ya da beden veya ruh bakımından kendisini savunamayacak durumdaki kişiye karşı; kadına karşı; kişinin yerine getirdiği kamu görevi nedeniyle; bir suçu gizlemek, delillerini ortadan kaldırmak, işlenmesini kolaylaştırmak ya da yakalanmamak amacıyla; bir suçu işleyememekten duyulan infialle; kan gütme saikiyle; töre saikiyle.",
+      "articleRefs": [
+        "81",
+        "82"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Kasten öldürme hangi kişilere karşı işlenirse ağırlaştırılmış müebbet hapis gerekir?",
+      "back": "Üstsoy veya altsoydan birine, eşe, boşandığı eşe veya kardeşe, çocuğa, beden veya ruh bakımından kendisini savunamayacak durumdaki kişiye ve kadına karşı işlenirse.",
+      "explanation": "Boşandığı eş de açıkça sayılmıştır. Bu yüzden evlilik sona ermiş olsa da nitelikli hal uygulanır.",
+      "articleRefs": [
+        "82"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Kamu görevlisi, göreviyle ilgisi olmayan kişisel bir husumet yüzünden öldürülürse kamu görevi nitelikli hali uygulanır mı?",
+      "back": "Hayır. Bu hal, öldürmenin kişinin yerine getirdiği kamu görevi nedeniyle işlenmesini arar. Tasarlama gibi başka bir bent gerçekleşmişse o bent uygulanabilir.",
+      "explanation": "Bentteki bağlantı 'kamu görevi nedeniyle' ifadesiyle kurulur. Mağdurun kamu görevlisi olması tek başına yetmez; öldürme o görev yüzünden işlenmiş olmalıdır.",
+      "articleRefs": [
+        "82"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Yükümlü olduğu icrai davranışı gerçekleştirmeyen kişinin ölüm neticesinden sorumlu tutulabilmesi için ne gerekir?",
+      "back": "Ölüm neticesine sebebiyet veren yükümlülük ihmalinin icrai davranışa eşdeğer olması gerekir.",
+      "articleRefs": [
+        "83"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "İhmali ve icrai davranışın eşdeğer kabul edilebilmesi için kişide hangi durumlar aranır?",
+      "back": "Kanuni düzenlemelerden veya sözleşmeden kaynaklanan bir icrai davranış yükümlülüğünün bulunması; önceden gerçekleştirdiği davranışın başkalarının hayatı ile ilgili olarak tehlikeli bir durum oluşturması.",
+      "articleRefs": [
+        "83"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Belli bir yükümlülüğün ihmaliyle ölüme neden olan kişiye, müebbet hapis cezası yerine hangi temel ceza verilebilir?",
+      "back": "15 yıldan 20 yıla kadar hapis cezası. Cezada indirim de yapılmayabilir.",
+      "explanation": "Ağırlaştırılmış müebbet hapis cezası yerine 20 yıldan 25 yıla kadar, diğer hallerde ise 10 yıldan 15 yıla kadar hapis cezasına hükmolunabilir.",
+      "articleRefs": [
+        "83"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Başkasını intihara azmettiren kişiye, intihar gerçekleşirse hangi ceza verilir?",
+      "back": "4 yıldan 10 yıla kadar hapis cezası.",
+      "explanation": "İntihar gerçekleşmezse ceza 2 yıldan 5 yıla kadar hapistir. Bu ceza azmettirme, teşvik, intihar kararını kuvvetlendirme ve intihara herhangi bir şekilde yardım için verilir.",
+      "articleRefs": [
+        "84"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Başkalarını intihara alenen teşvik eden kişiye hangi ceza verilir?",
+      "back": "3 yıldan 8 yıla kadar hapis cezası.",
+      "explanation": "Başkasını intihara teşvik etmenin cezası 2 yıldan 5 yıla kadar hapistir. İntihar gerçekleşirse bu ceza 4 yıldan 10 yıla kadar olur.",
+      "articleRefs": [
+        "84"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Başkasının intihar kararını kuvvetlendiren kişi kasten öldürme suçundan sorumlu tutulur mu?",
+      "back": "Hayır; intihara yönlendirmeden cezalandırılır. Kasten öldürme sorumluluğu, cebir veya tehditle intihara mecbur etme ya da fiilin anlam ve sonuçlarını algılama yeteneği gelişmemiş veya ortadan kaldırılmış kişiyi intihara sevk etme hallerindedir.",
+      "explanation": "İntihar kararını kuvvetlendirmenin cezası 2 yıldan 5 yıla kadar hapistir. İntihar gerçekleşirse ceza 4 yıldan 10 yıla kadar hapis olur.",
+      "articleRefs": [
+        "84"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Taksirle bir insanın ölümüne neden olan kişiye hangi ceza verilir?",
+      "back": "2 yıldan 6 yıla kadar hapis cezası.",
+      "articleRefs": [
+        "85"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Taksirli bir fiille bir kişi ölür, bir kişi de yaralanırsa ceza 2 yıldan 6 yıla kadar hapis mi olur?",
+      "back": "Hayır. Ölümle birlikte yaralanma da varsa ceza 2 yıldan 15 yıla kadar hapistir. Birden fazla insanın ölümünde de aynı sınırlar uygulanır.",
+      "articleRefs": [
+        "85"
+      ],
+      "counterNumbers": []
+    }
+  ]
+}
