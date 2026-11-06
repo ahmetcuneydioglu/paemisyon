@@ -1,0 +1,267 @@
+{
+  "deck": {
+    "topicId": "9c9b822c-028f-4d9b-929f-ad8487d53db4",
+    "legislationSlug": "3201-sayili-emniyet-teskilat-kanunu",
+    "unitSlug": "etk-rutbeler-teskilat-yapisi",
+    "sourceLabel": "AI bilgi kartı — 3201 Sayılı Emniyet Teşkilat Kanunu md 13, 15, 16, 20–22, 26, 35–41",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: etk-rutbeler-teskilat-yapisi özeti + resmî madde metni); denetim düzeltmesi 7 Kas 2026 (2 kart + #18, #19, #24 çıkarıldı: 657 öncesi derece/maaş düzeni)"
+  },
+  "cards": [
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Emniyet Genel Müdürü görev unvanı cetvelde hangi rütbe ve meslek derecesi karşısında gösterilir?",
+      "back": "Sınıf Üstü Emniyet Müdürü rütbesinin Derece Üstü meslek derecesi karşısında.",
+      "explanation": "Sınıf Üstü Emniyet Müdürü rütbesinin altında iki satır vardır: Derece Üstü ve 1 numaralı meslek derecesi. Derece Üstü satırında yalnız Emniyet Genel Müdürü bulunur.",
+      "articleRefs": [
+        "13"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Genel Müdür Yardımcısı, Teftiş Kurulu Başkanı ve Polis Akademisi Başkanı görev unvanları hangi meslek derecesi karşısında gösterilir?",
+      "back": "1. meslek derecesi; bu satırın rütbesi Sınıf Üstü Emniyet Müdürüdür.",
+      "explanation": "Aynı satırda Başkan, Merkez Emniyet Müdürü ve Emniyet Müşaviri unvanları da yer alır. Polis Akademisi Başkan Yardımcısı ile Teftiş Kurulu Başkan Yardımcısı ise 2. meslek derecesinde, Birinci Sınıf Emniyet Müdürü karşısındadır.",
+      "articleRefs": [
+        "13"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "İl Emniyet Müdürü görev unvanı hangi meslek derecesi karşısında gösterilir?",
+      "back": "2. meslek derecesi; rütbesi Birinci Sınıf Emniyet Müdürüdür.",
+      "explanation": "Bu satırda Daire Başkanı, Birinci Hukuk Müşaviri, Polis Başmüfettişi ve Polis Moral Eğitim Merkezi Müdürü gibi unvanlar da bulunur. İl Emniyet Müdür Yardımcısı ise İkinci Sınıf Emniyet Müdürü karşısında, 3. meslek derecesindedir.",
+      "articleRefs": [
+        "13"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Hangi meslek derecelerindeki yüksek mektep mezunları kaymakamlıklara muadildir?",
+      "back": "Beşinci, altıncı, yedinci ve sekizinci meslek dereceleri.",
+      "explanation": "Muadillik, bu derecelerdeki emniyet teşkilatı mensuplarından yüksek mektep mezunu olanlar içindir.",
+      "articleRefs": [
+        "15"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Polis Memuru rütbesi hangi meslek derecesindedir?",
+      "back": "12. meslek derecesi; cetvelin en alt basamağı.",
+      "explanation": "Bu rütbenin karşısında Büro Memuru, Ekip Memuru, Tim Memuru, Karakol Memuru, Nokta Memuru, Devriye Memuru, Koruma Memuru, Trafik Memuru, Telsiz Memuru ve Memur unvanları gösterilir.",
+      "articleRefs": [
+        "13"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Kıdemli Başpolis Memuru rütbesi 11. meslek derecesinde midir?",
+      "back": "Hayır. Kıdemli Başpolis Memuru 10. derecededir; 11. derece Başpolis Memurunundur.",
+      "explanation": "Cetvelin alt basamakları şöyle sıralanır: Komiser Yardımcısı 9, Kıdemli Başpolis Memuru 10, Başpolis Memuru 11, Polis Memuru 12. Kıdemli Başpolis Memurunun karşısında Ekip Amiri, Tim Amiri, Grup Amiri, Büro Amir Yardımcısı, Grup Amir Yardımcısı, Büro Memuru ve Ekip Memuru unvanları yer alır.",
+      "articleRefs": [
+        "13"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Sınıf Komiseri görev unvanı hangi meslek dereceleri karşısında gösterilir?",
+      "back": "8 ve 9: Komiser ile Komiser Yardımcısı rütbelerinin karşısında.",
+      "explanation": "Komiser 8., Komiser Yardımcısı 9. meslek derecesindedir. İkisinin karşısında da Grup Amiri, Ekip Amiri, Tim Amiri, Büro Amiri, Karakol Amir Yardımcısı ve Sınıflar Amiri Yardımcısı unvanları bulunur.",
+      "articleRefs": [
+        "13"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "İlçe Emniyet Müdürü görev unvanı hangi meslek dereceleri karşısında gösterilir?",
+      "back": "3, 4 ve 5: İkinci, Üçüncü ve Dördüncü Sınıf Emniyet Müdürü rütbelerinin karşısında.",
+      "explanation": "Taşra teşkilatında ilçelerde ilçe emniyet müdürlükleri veya ilçe emniyet amirlikleri bulunur. İkinci Sınıf Emniyet Müdürü rütbesindeki polis amirleri, kriterlere göre belirlenecek ilçelere ilçe emniyet müdürü olarak atanabilir.",
+      "articleRefs": [
+        "13",
+        "16"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Karakol Amiri görev unvanı Komiser rütbesinin karşısında gösterilir mi?",
+      "back": "Hayır. Karakol Amiri Başkomiser karşısındadır; Komiser ile Komiser Yardımcısının karşısında Karakol Amir Yardımcısı yer alır.",
+      "explanation": "Başkomiser satırında Karakol Amiri, İlçe Emniyet Komiseri ve Trafik Kayıt ve Tescil Büro Amiri gibi unvanlar bulunur. Komiser satırında ise Grup Amiri, Ekip Amiri, Büro Amiri, Sınıf Komiseri ve Trafik İstasyonu Amir Yardımcısı gibi unvanlar yer alır.",
+      "articleRefs": [
+        "13"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Devriye Amiri görev unvanı hangi meslek derecesi karşısında gösterilir?",
+      "back": "11. meslek derecesi; rütbesi Başpolis Memurudur.",
+      "explanation": "Devriye Amiri unvanı cetvelde yalnız Başpolis Memuru satırında yer alır. Polis Memurunun karşısında ise Devriye Memuru unvanı bulunur.",
+      "articleRefs": [
+        "13"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Hukuk veya Siyasal Bilgiler Fakültesi mezuniyeti şartı hangi meslek derecelerindeki memurlar için aranır?",
+      "back": "Altıncı ve daha yukarıdaki meslek derecelerindeki memurlar için.",
+      "articleRefs": [
+        "26"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "İkinci Sınıf Emniyet Müdürünün ilçe emniyet müdürü olarak atandığı ilçelerde Üçüncü Sınıf Emniyet Müdürleri hangi unvanla görevlendirilebilir?",
+      "back": "İlçe emniyet müdür yardımcısı olarak görevlendirilebilirler.",
+      "explanation": "Hüküm, İkinci Sınıf Emniyet Müdürü rütbesindeki polis amirlerinin atanabildiği, kriterlere göre belirlenen ilçelere özgüdür. Cetvelde de İlçe Emniyet Müdür Yardımcısı unvanı Üçüncü Sınıf Emniyet Müdürü satırında yer alır.",
+      "articleRefs": [
+        "13"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Kriterlere göre belirlenen ilçelere ilçe emniyet müdürü olarak atanabilme hükmü Birinci Sınıf Emniyet Müdürleri için mi düzenlenmiştir?",
+      "back": "Hayır. Hüküm İkinci Sınıf Emniyet Müdürü rütbesindeki polis amirleri için konmuştur; onlar bu ilçelere ilçe emniyet müdürü olarak atanabilir.",
+      "explanation": "Birinci Sınıf Emniyet Müdürünün karşısında İl Emniyet Müdürü ve Daire Başkanı gibi unvanlar gösterilir.",
+      "articleRefs": [
+        "13"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "İkinci Sınıf Emniyet Müdürlerinin ilçe emniyet müdürü olarak atanabileceği ilçeler hangi kriterler dikkate alınarak belirlenir?",
+      "back": "Emniyet ve asayiş durumu; ekonomik, sosyal ve kültürel özellikler; nüfus büyüklüğü ve şehirleşme düzeyi gibi kriterlerle.",
+      "explanation": "Metin bu kriterleri \"gibi\" diyerek örnek olarak sayar; ilçeler bu ölçülere göre belirlenir.",
+      "articleRefs": [
+        "13"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Başkanlıklarda Şube Müdürü görev unvanı hangi meslek derecesi karşısında gösterilir?",
+      "back": "3. meslek derecesi; rütbesi İkinci Sınıf Emniyet Müdürüdür.",
+      "explanation": "Merkez teşkilatı Teftiş Kurulu Başkanlığı, Başkanlıklar, Hukuk Müşavirliği ve Daire Başkanlıklarından oluşur. Şube Müdürü unvanı ayrıca Üçüncü ve Dördüncü Sınıf Emniyet Müdürü satırlarında da gösterilir.",
+      "articleRefs": [
+        "13",
+        "16"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Hangi meslek derecelerindeki personel ihtiyaç hâlinde araştırma, inceleme ve denetleme gibi görevler için birim amirinin emrine alınabilir?",
+      "back": "2, 3, 4, 5 ve 6 ncı meslek derecelerindeki personel; görev unvanlarına bakılmaksızın.",
+      "explanation": "Şart ihtiyaç hâlidir. Bu dereceler cetvelde Birinci Sınıf Emniyet Müdüründen (2) Emniyet Amirine (6) kadar olan rütbelere karşılık gelir; personel atandığı birim amirinin emrine alınır.",
+      "articleRefs": [
+        "13"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Personelin görev yerini, rütbe ve meslek derecesi karşısında gösterilen görev unvanları arasında değiştirmeye kim yetkilidir?",
+      "back": "İdare; yetki her rütbe ve meslek derecesi karşısında gösterilen görev unvanları arasında kullanılır.",
+      "explanation": "Metin bu yetkiyi doğrudan idareye verir. Değişiklik, personelin kendi rütbe ve meslek derecesinin karşısında gösterilen unvanlar arasında yapılır.",
+      "articleRefs": [
+        "13"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "İl emniyet müdürlükleri Emniyet Genel Müdürlüğü merkez teşkilatında sayılır mı?",
+      "back": "Hayır. İl emniyet müdürlükleri taşra teşkilatındadır; merkez teşkilatı Teftiş Kurulu Başkanlığı, Başkanlıklar, Hukuk Müşavirliği ve Daire Başkanlıklarından oluşur.",
+      "explanation": "Taşra teşkilatı illerde il emniyet müdürlükleri, ilçelerde ilçe emniyet müdürlükleri veya ilçe emniyet amirlikleri ile güvenlik hizmetlerine ilişkin diğer birimlerden oluşur.",
+      "articleRefs": [
+        "16"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Merkez teşkilatındaki daire başkanlıkları en az kaç şube müdürlüğü veya koruma müdürlüğünden meydana gelir?",
+      "back": "En az üç; bu müdürlükler ihtiyaca göre kurulur.",
+      "explanation": "Yapı aşağıya doğru sürer: şube müdürlükleri veya koruma müdürlükleri de en az üç büro amirliğinden meydana gelir.",
+      "articleRefs": [
+        "16"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Polis teşkilatı biriminin kurulacağı yerleşim alanlarını Emniyet Genel Müdürlüğü mü uygun görür?",
+      "back": "Hayır. Polis teşkilatı birimi, İçişleri Bakanlığının uygun göreceği yerleşim alanlarında kurulabilir.",
+      "explanation": "Emniyet teşkilatı birimlerinin görev, yetki ve sorumlulukları ile diğer hususlar da Bakanlıkça çıkarılacak yönetmelikle düzenlenir.",
+      "articleRefs": [
+        "16"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Lüzum görülen vilayetlerde istihdam edilen hekimler kimlerin sıhhat hâlleriyle meşgul olur?",
+      "back": "Yalnız emniyet polis memurları ile ailelerinin sıhhat hâlleriyle.",
+      "explanation": "Metin \"munhasıran\" der: hekimler yalnız bu işle meşgul olmak üzere, icabı kadar istihdam olunur.",
+      "articleRefs": [
+        "22"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Polis ve komiserlerden ecnebi memleketlere stajyer hangi amaçla gönderilebilir?",
+      "back": "Polis köpek ve kuşları gibi hayvanların yetiştirme tarzlarını ve motorlu vasıtaları kullanma usullerini uygulamalı olarak öğrenmek için.",
+      "explanation": "Stajyerler polis ve komiserler arasından gönderilir; amaç bu konuları tatbikî olarak öğrenmektir.",
+      "articleRefs": [
+        "35"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Sivil polise ayrılan polislerin meslekte geçirmek zorunda olduğu staj devresi ne kadardır?",
+      "back": "En az altı ay, en çok bir sene.",
+      "explanation": "Staj, sivil polisliğe ayrıldıktan sonra meslek içinde geçirilir ve zorunludur.",
+      "articleRefs": [
+        "36"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Staj süresinde sivil sınıf için lazım olan vasıf ve şartları taşımadığı anlaşılan polise ne olur?",
+      "back": "Üniformalı sınıfa iade olunur.",
+      "explanation": "Sivil polislikte istihdam, kadronun müsaadesi nispetinde ve umumi vazifelere halel gelmeyecek şekilde yapılır.",
+      "articleRefs": [
+        "36"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Sivil polis sınıfına ayrılmada kadro içinde kimlere öncelik tanınır?",
+      "back": "Orta mektep ve daha yukarı tahsil görmüş olanlara; bunlar tercihan bu sınıfa ayrılır.",
+      "explanation": "Sivil polise ayırma vilayet emniyet müdürlerince, vilayet ve kaza kadrolarından yapılır.",
+      "articleRefs": [
+        "36"
+      ]
+    }
+  ]
+}

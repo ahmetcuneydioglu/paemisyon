@@ -60,7 +60,24 @@ kısa ve kesin cevap. Çıktın yalnızca JSON'dur.
 KESİN KURALLAR
 1. Her kart "articleRefs" ile en az bir madde numarasına bağlanır; cevabın ve açıklamanın dayanağı o maddelerin
    metnindedir. Metinde olmayan hiçbir yetki, süre, şart, istisna ya da kurum yazma. Tarihçe ("2017 değişikliğiyle…"),
-   doktrin, içtihat, amaç yorumu ("…kişiyi serbest tutmak içindir") YOK. Mülga maddeye ve mülga hükme kart yazma.
+   doktrin, içtihat, amaç yorumu ("…kişiyi serbest tutmak içindir") YOK. Mülga maddeye ve mülga hükme kart yazma;
+   Anayasa Mahkemesi iptaliyle boşluk kalan ("(İptal ibare: …) (…)" işaretli) fıkradan da kart yazma: iptalle konusu
+   kalmayan cümle (ör. "kolluk amirinin kararı 24 saatte hâkim onayına sunulur") kart olamaz. Metinde mülga olduğu
+   belirtilen bir hükme atıf yapan bentten de kart yazma (atfın hedefi yoksa kart yanlış öğretir). Aynı şekilde:
+   kalkmış kurumu anan hüküm (İcra Vekilleri Heyeti, Bakanlar Kurulu, Başbakanlık, …Müsteşarlığı), başka kanunun
+   mülga ya da başka konuda yeniden yazılmış maddesine atıf, süresi dolmuş geçici/geçiş hükmü ("…altı ay içinde
+   kurulur", "…kuruluncaya kadar"), eski para birimi tutarı ("…milyon/milyar lira", 2005 öncesi TL), kalkmış organ ya
+   da düzenleme (il daimi encümeni, Seyrüsefer Talimatnamesi, Matbuat Kanunu) ve 765 sayılı eski TCK'ya atıf
+   ("Ceza Kanununun 546 ncı maddesi") ve bileşimi ya da işleyişi kalkmış makamlara dayanan kurul/komisyon (umumi
+   müfettiş, Büyük Erkanıharbiye…) → kart yazılmaz; bunlar yürürlükteki düzeni öğretmez. Eski kanunlardaki kurum
+   adlarını metindeki hâliyle yaz; güncel karşılığı parantezle YALNIZ kesin bilinen ad değişikliğinde ekle (Dahiliye
+   Vekili → İçişleri Bakanı), kurum birleşmesi/bölünmesinde (Maliye Vekili, Umum Müdürlük…) eşleme yapma; çekim eki
+   parantezden ÖNCE gelir: "Mesuliyet Dahiliye Vekilindedir (İçişleri Bakanı)". Farklı dönem maddelerindeki derece numaralarını başka
+   maddedeki rütbe cetveline EŞLEME (1937 tarihli "altıncı derece" bugünkü cetvelin 6. satırı değildir); 657 öncesi
+   maaş/derece düzenine, "Vekaletçe" gibi kalkmış usule dayanan hükümden kart yazma. Aynı konuyu (terfi, bekleme
+   süresi, sicil, meslekten çıkarma…) kanunun güncel bir maddesi (ör. 3201 md 55) yeniden düzenliyorsa, eski tarihli
+   maddenin (md 47, 56, 65–67 gibi) düzeninden kart yazma; güncel maddeyi esas al. Atıf yapılan mülga kanunun adını
+   (743 sayılı Türk Kanunu Medenisi, 765 sayılı TCK, 1412 sayılı CMUK…) ön yüzde güncel çerçeve gibi kullanma.
    "Ancak", "bununla birlikte" ile başlayan istisna cümlesini doğru kurala bağla: istisna hangi kaydı kaldırıyorsa
    onu söyle (md 78'de yüzde beş hali 30 ay kaydının istisnasıdır; 1 yıl kala yasağını kaldırmaz). Ön yüzde tek soru
    sor; "ve" ile iki soruyu birleştirme. Cevap, maddedeki yetkiyi başka kuruma yükleme (yetki kimdeyse o).
@@ -198,7 +215,7 @@ function userMessage(g: OzetGirdi, u: SummaryUnitJson): string {
  * öğeyi çürütme kalıpları; arka yüzde yalnız şık dili. "sayılmaz" tuzak cevabında meşru olduğundan taranmaz.
  */
 const YASAK_ACIKLAMA =
-  /(?<!fesat )karıştır|yer değiştir|atlarsan|yanılırsın|hatırla|düşün\b|(?<!\p{L})şık|çeldirici|diye bir .{0,40}(yok|yazılmaz|geçmez)|geçmez|maddelerinde değil|listede yok|sorulursa|sorulduğunda/iu;
+  /(?<!fesat )karıştır|yer değiştir|atlarsan|yanılırsın|hatırla|düşün\b|(?<!\p{L})şık|çeldirici|diye bir .{0,40}(yok|yazılmaz|geçmez)|geçmez|maddelerinde değil|listede yok|sorulursa|sorulduğunda|\bmd\s*[\d\/A-ZÇĞİÖŞÜ]+['’]?(?:deki|daki|teki|taki)\b[^.]{0,80}\bise\b/iu;
 const YASAK_ARKA =
   /(?<!\p{L})şık|çeldirici|diye bir .{0,40}(yok|yazılmaz|geçmez)|listede yok|maddelerinde değil/iu;
 

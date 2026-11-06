@@ -1,0 +1,262 @@
+{
+  "deck": {
+    "topicId": "9c9b822c-028f-4d9b-929f-ad8487d53db4",
+    "legislationSlug": "3201-sayili-emniyet-teskilat-kanunu",
+    "unitSlug": "etk-ek-maddeler-2-gecici",
+    "sourceLabel": "AI bilgi kartı — 3201 Sayılı Emniyet Teşkilat Kanunu md Ek 21, Ek 24, Ek 25, Ek 26, Ek 27, Ek 29, Ek 30, Ek 31, Ek 32, Ek 33, Ek 34, Ek 35, Ek 36, Ek 37, Geçici 26",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: etk-ek-maddeler-2-gecici özeti + resmî madde metni); denetim düzeltmesi 7 Kas 2026 (2 kart + #7, #11 çıkarıldı: tek seferlik kadro işlemi)"
+  },
+  "cards": [
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Emniyet hizmetleri sınıfına dahil kadrolardaki çarşı ve mahalle bekçilerine fazla çalışma ücreti en çok ne kadar ödenebilir?",
+      "back": "% 13; 657 sayılı Devlet Memurları Kanunundaki en yüksek Devlet memuru aylığının (ek gösterge dahil) % 13'ünü geçmeyecek tutarda.",
+      "explanation": "Oran ödenecek tutar değil, aşılamayacak üst sınırdır. Ücret İçişleri Bakanlığınca belirlenecek usul ve esaslara göre ödenir. Bu ücretten damga vergisi hariç herhangi bir vergi ve kesinti yapılmaz.",
+      "articleRefs": [
+        "Ek 21"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Çevik kuvvet birimlerinde fiilen çalışan personelin fazla çalışma ücreti tavanı en yüksek Devlet memuru aylığının % 35'i midir?",
+      "back": "Hayır; çevik kuvvette fiilen çalışanların tavanı % 31'dir. % 35 yalnız özel harekat ve istihbarat birimlerinde görev yapanlara aittir.",
+      "explanation": "% 31 grubunda siyasi hizmet, çevik kuvvet birimleri, köprü ve hassas bölgeleri koruma görevlerinde fiilen çalışanlar ile panzer sürücüsü ve operatörü olarak görev yapanlar yer alır. Emniyet Hizmetleri Sınıfının diğer birimlerinde görevli olanların tavanı % 27'dir.",
+      "articleRefs": [
+        "Ek 21"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Ülke çapında büyük ölçekli yolsuzluk ve terör faaliyetlerine karşı yapılan operasyonlara katılan personele İçişleri Bakanı en çok ne kadar ilave ödeme yapabilir?",
+      "back": "Personelin hizasında gösterilen fazla çalışma oranının en çok yarısına kadar.",
+      "explanation": "Operasyonlara idari, teknik, lojistik ve sair destek hizmeti sağlayan personel de kapsamdadır. Bakan bu ödemeyi görev yeri ve süresi, görevin zorluk ve risk derecesi, görevlinin kıdemi ve sorumluluğu gibi unsurlara göre farklı miktar veya oranlarda belirleyebilir.",
+      "articleRefs": [
+        "Ek 21"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Polis meslek eğitim merkezleri İçişleri Bakanlığı kararıyla açılabilir mi?",
+      "back": "Hayır; merkezler, Emniyet Teşkilatının polis memuru ihtiyacını karşılamak üzere Cumhurbaşkanı kararı ile açılabilir.",
+      "explanation": "İçişleri Bakanlığı yönetmeliği çıkarır: kuruluş ve çalışma usul ve esasları, öğrencilerde aranacak şartlar, sınavlar, disiplin, öğrenciliğin sona ermesi, tazminat ve yükümlülük esasları ile kıyafetler bu yönetmelikle düzenlenir. Merkezlerde eğitim-öğretim parasız yatılı ve üniformalıdır; öğrencilere polis meslek yüksek okulu öğrencilerine ödenen miktar kadar harçlık ödenir.",
+      "articleRefs": [
+        "Ek 24"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Polis meslek eğitim merkezlerine alınacak önlisans mezunları toplam kontenjanın en çok yüzde kaçı olabilir?",
+      "back": "%20; bu sınırı aşmamak kaydıyla alınacak önlisans mezunu sayısını Bakanlık belirler.",
+      "explanation": "Önlisans mezunları, lisans mezunları için öngörülen usule uygun olarak alınır: Kamu Personeli Seçme Sınavında Bakanlıkça belirlenecek taban puan, yönetmelikle belirlenecek şartlar ve sınavda başarı. Kamu Personel Seçme Sınavı şartı aranmaksızın fiziki yeterlilik ve mülakatla alım, özel harekat birimlerinde istihdam edilecekler içindir; bunlarda yirmisekiz yaşından gün almamış ve en az lise veya dengi okul mezunu olmak aranır, eğitim süresi ve şeklini Bakanlık belirler.",
+      "articleRefs": [
+        "Ek 24"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Polis meslek eğitim merkezinden mezun olup aday polis memuru olarak atananlar ne kadar süre başka kurumlara nakil yoluyla atanamaz?",
+      "back": "Altı yıl; süre atanma tarihinden itibaren işler.",
+      "explanation": "Bu süre içinde memuriyetten çekilen, çekilmiş sayılan, meslekten veya memuriyetten çıkarma cezası alan ya da aslî memurluğa atanamayarak ilişiği kesilenler, kendilerine yapılmış öğretim masraflarını kanuni faizi ile birlikte, sürenin eksik kalan kısmı ile orantılı miktarda tazminat olarak öder.",
+      "articleRefs": [
+        "Ek 24"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Bomba imha tazminatı hangi gösterge rakamı üzerinden hesaplanır?",
+      "back": "13.000 gösterge rakamının memur aylık kat sayısı ile çarpımı sonucu bulunan miktar kadar.",
+      "explanation": "Tazminatın hesaplanması, ödeme şekli, kapsamı ve uygulamaya ilişkin esas ve usuller İçişleri Bakanlığınca çıkarılan yönetmelikle belirlenir.",
+      "articleRefs": [
+        "Ek 26"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Bomba imha tazminatı Emniyet Genel Müdürlüğünün taşra teşkilatında görevli personele de ödenir mi?",
+      "back": "Evet; merkez ve taşra teşkilatlarında görevli personele ödenir. Ancak Bomba Uzmanı Yetiştirme Kursu görüp sertifika almaya hak kazanmış ve bomba uzmanı olarak görev yapıyor olmak şarttır.",
+      "explanation": "Kurs ve sertifika tek başına yetmez; kişinin fiilen bomba uzmanı olarak görev yapması da aranır.",
+      "articleRefs": [
+        "Ek 26"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Bomba imha tazminatından hangi vergi kesilir?",
+      "back": "Yalnız damga vergisi; tazminat bunun dışında hiçbir vergi ve benzeri kesintiye tâbi değildir.",
+      "articleRefs": [
+        "Ek 26"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Emniyet Hizmetleri Sınıfı dışındaki kadrolu veya sözleşmeli personel emniyet teşkilatına neye göre seçilip atanır?",
+      "back": "657 sayılı Devlet Memurları Kanununa göre yapılan merkezi sınava ilave olarak sözlü sınav ve/veya uygulamalı sınav puanı ile diğer niteliklere göre.",
+      "explanation": "Alım ve ilk atamaya ilişkin sınav, sınav komisyonları, aranacak nitelikler ve diğer hususlar İçişleri Bakanlığınca çıkarılan yönetmelikle düzenlenir.",
+      "articleRefs": [
+        "Ek 29"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "657 sayılı Devlet Memurları Kanununun 53 üncü maddesinin birinci fıkrasındaki oran emniyet teşkilatı için yüzde kaç olarak uygulanır?",
+      "back": "%5; bu oran emniyet teşkilatına alınacak personel sayısının hesabında uygulanır.",
+      "articleRefs": [
+        "Ek 29"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "3713 sayılı Terörle Mücadele Kanunu gereğince emniyet teşkilatına alınacak personel sayısı hesaplanırken Emniyet Hizmetleri Sınıfındaki kadrolar da hesaba katılır mı?",
+      "back": "Hayır; hesapta yalnız Emniyet Hizmetleri Sınıfı dışındaki kadro sayısı esas alınır.",
+      "explanation": "Aynı hesap kuralı 2828 sayılı Sosyal Hizmetler Kanunu ve 657 sayılı Kanunun 53 üncü maddesi gereğince emniyet teşkilatına alınacak personel için de uygulanır.",
+      "articleRefs": [
+        "Ek 29"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Üçüncü Sınıf Emniyet Müdürü rütbesine terfi için zorunlu ikinci bölge hizmeti bakımından ne şart aranır?",
+      "back": "Bu hizmeti en az bir kez yapmış olmak ya da hâlen bu bölge hizmetini ifa ediyor olmak.",
+      "articleRefs": [
+        "Ek 30"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Zorunlu ikinci bölge hizmeti şartının kimler hakkında nasıl uygulanacağı yönetmelikle düzenlenir?",
+      "back": "3713 veya 2330 sayılı Kanun kapsamında hayatını kaybeden ya da bu kanunlar kapsamındaki görevler nedeniyle ağır malul olan emniyet teşkilatı mensuplarının eş ve çocukları hakkında.",
+      "articleRefs": [
+        "Ek 30"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Zorunlu ikinci bölge hizmeti şartına ilişkin yönetmelik kapsamındaki ağır malullük hangi merciin kararı doğrultusunda belirlenir?",
+      "back": "Sosyal Güvenlik Kurumu Sağlık Kurulunun kararı doğrultusunda.",
+      "explanation": "Aranan derece, yaşamak için gereken hareketleri yapamayacak ve başkasının yardım ve desteğine muhtaç olacak derecede malul olmaktır.",
+      "articleRefs": [
+        "Ek 30"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "5188 sayılı Özel Güvenlik Hizmetlerine Dair Kanundaki denetimleri İçişleri Bakanlığı adına kimler yapmaya yetkilidir?",
+      "back": "Polis müfettiş ve başmüfettişleri; bu denetimler sonucunda düzenledikleri raporlar yetkili makamlara intikal ettirilir.",
+      "explanation": "Bu denetime ve maddenin uygulanmasına ilişkin diğer usul ve esaslar İçişleri Bakanlığı tarafından çıkarılan yönetmelikle belirlenir.",
+      "articleRefs": [
+        "Ek 31"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Emniyet Teşkilat Kanununun Ek 31 inci maddesine göre Başkanların mali ve diğer özlük hakları hakkında hangi makama ilişkin hükümler uygulanır?",
+      "back": "Polis Teftiş Kurulu Başkanına ilişkin hükümler.",
+      "articleRefs": [
+        "Ek 31"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Akademi Başkan Yardımcılarının mali ve diğer özlük hakları hakkında Polis Teftiş Kurulu Başkanına ilişkin hükümler mi uygulanır?",
+      "back": "Hayır; Akademi Başkan Yardımcıları ve Başkan Yardımcıları hakkında Daire Başkanına ilişkin hükümler uygulanır.",
+      "explanation": "Polis Teftiş Kurulu Başkanına ilişkin hükümler, Başkanların mali ve diğer özlük hakları için öngörülmüştür.",
+      "articleRefs": [
+        "Ek 31"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Emniyet Teşkilatının her türlü göreviyle ilgili eylem ve işlemlerini kimler denetler ve teftiş eder?",
+      "back": "İçişleri Bakanlığı, mülki idare amirleri ve kendi amirleri.",
+      "articleRefs": [
+        "Ek 33"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Terörle mücadele görevi sırasında alıkonulduğu ya da kaybolduğu yetkili makamlarca tespit edilen emniyet personelinin aylığına ne olur?",
+      "back": "Herhangi bir başvuruya gerek kalmaksızın, memuriyeti devam ettiği süre zarfında ailesine ödenmeye devam olunur; aile her türlü sosyal hak ve yardımdan yararlanmaya devam eder.",
+      "explanation": "Mahkemenin gaiplik kararına istinaden Sosyal Güvenlik Kurumu hak sahiplerine aylık bağlarsa, görev aylıkları bu aylığın bağlandığı tarihten itibaren kesilir. O tarihe kadar yapılan ödemeler ilgililerden tahsil edilmez.",
+      "articleRefs": [
+        "Ek 37"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Alıkonulan ya da kaybolan emniyet personelinin ailesi, gaiplik kararı için asgari bekleme süresinin geçmesinden itibaren ne kadar süre içinde mahkemeye başvurmazsa birim de gaiplik kararı talep edebilir?",
+      "back": "Bir ay; aile bu sürede başvurmazsa personelin en son görev yaptığı birim de mahkemeden gaiplik kararı talep edebilir.",
+      "explanation": "Türk Medeni Kanununun gaipler hakkındaki hükümleri saklıdır. Gaiplik kararı alınana kadar personelin terfi ve özlük hakları dondurulur.",
+      "articleRefs": [
+        "Ek 37"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Gaiplik kararından sonra dönüp yeniden göreve başlatılan personelin gaip olduğu döneme ait görev aylıkları mahsup yapılmadan geriye dönük ödenir mi?",
+      "back": "Hayır; görev aylıkları geriye dönük ödenir, ancak Sosyal Güvenlik Kurumunca hak sahiplerine ödenmiş aylıklar mahsup edilir.",
+      "explanation": "Sonradan dönenlerin durumu önce en son görev yaptıkları birim tarafından incelenir; geriye dönük ödeme, yeniden göreve başlatılmaları halinde yapılır.",
+      "articleRefs": [
+        "Ek 37"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Geçici 26'ya göre, maddenin yürürlüğünden (27/3/2015) önce atanmış polis amirlerinden (A) grubunu kimler oluşturur?",
+      "back": "En az dört yıllık fakülte ve yüksek okullardan mezun olan polis amirleri; komiser yardımcılığı kursunu başarıyla bitirmiş diğer amirler (B) grubunu oluşturur.",
+      "explanation": "Grupları ayıran ölçüt öğrenim durumudur.",
+      "articleRefs": [
+        "Geçici 26"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Geçici 26'ya göre, maddenin yürürlüğünden (27/3/2015) önce atanmış polis amirlerinden (B) grubundaki bir Komiser Yardımcısının rütbesinde zorunlu en az bekleme süresi ne kadardır?",
+      "back": "6 yıl; (A) grubundaki Komiser Yardımcısı için bu süre 4 yıldır.",
+      "explanation": "Komiser rütbesinde de (A) grubu için 4, (B) grubu için 6 yıldır. Başkomiser rütbesinde (A) grubu için 3 yıl, (B) grubu için yaş haddi esas alınır. Bu düzen md 55'teki genel tablodan ayrıdır; genel kuralda Komiser Yardımcısı 4 yıldır.",
+      "articleRefs": [
+        "Geçici 26",
+        "55"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Geçici 26 ncı maddenin değişik fıkrasının yürürlüğünden sonra en az dört yıllık yükseköğretim kurumunu bitiren (B) grubu polis amiri (A) grubuna hangi tarih itibarıyla geçer?",
+      "back": "Mezuniyet tarihi itibarıyla; bulunduğu rütbedeki zorunlu en az bekleme süresi (A) grubuna göre hesaplanır.",
+      "explanation": "Fıkranın yürürlüğünden önce bitirenler, fıkranın yürürlüğe girdiği tarih itibarıyla geçer. (A) grubuna geçenin bulunduğu rütbede (A) grubu için belirlenen süreden fazla çalışmış olması geriye yönelik herhangi bir hak doğurmaz.",
+      "articleRefs": [
+        "Geçici 26"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,318 @@
+{
+  "deck": {
+    "topicId": "65aef8de-07cb-49f6-8665-00adc0ef5754",
+    "legislationSlug": "2559-sayili-polis-vazife-ve-salahiyet-kanunu-pvsk",
+    "unitSlug": "pvsk-onleme-aramasi-yakalama",
+    "sourceLabel": "AI bilgi kartı — 2559 Sayılı Polis Vazife ve Salâhiyet Kanunu (PVSK) md 9, 13, 13/A, 15, 20, Ek 2, Ek 3",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: pvsk-onleme-aramasi-yakalama özeti + resmî madde metni); denetim düzeltmesi 7 Kas 2026 (5 kart + #30 çıkarıldı: Ek 3/B mülga md 17 atfı)"
+  },
+  "cards": [
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Önleme aramasının amacı nedir?",
+      "back": "Tehlikenin veya suç işlenmesinin önlenmesi. Polis bu amaçla kişilerin üstlerini, araçlarını, özel kâğıtlarını ve eşyasını arar.",
+      "explanation": "Polis alınması gereken tedbirleri de alır. Arama sırasında suç delili çıkarsa delili koruma altına alır ve 5271 sayılı Ceza Muhakemesi Kanunu hükümlerine göre gerekli işlemleri yapar.",
+      "articleRefs": [
+        "9"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Önleme araması olağan yolda kimin kararıyla yapılır?",
+      "back": "Usûlüne göre verilmiş sulh ceza hâkiminin kararıyla.",
+      "explanation": "Arama talep yazısında, arama için makul sebeplerin oluştuğunun gerekçeleriyle birlikte gösterilmesi gerekir.",
+      "articleRefs": [
+        "9"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Gecikmesinde sakınca bulunan hâlde önleme araması kimin yazılı emriyle yapılır?",
+      "back": "Mülkî âmirin yazılı emriyle.",
+      "explanation": "Olağan yolda kararı sulh ceza hâkimi verir. Mülkî âmirin yazılı emri, gecikmesinde sakınca bulunan hâllerde devreye girer.",
+      "articleRefs": [
+        "9"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Önleme araması yükseköğretim kurumlarının içinde hangi koşulla yapılabilir?",
+      "back": "İdarecilerin talebiyle ve md 20'nin ikinci fıkrasının (A) bendindeki koşula uygun olarak girilmesiyle.",
+      "explanation": "(A) bendi şu durumu düzenler: kurumun imkânlarıyla önlenmesi mümkün görülmeyen olayların çıkması ihtimali karşısında rektör, acele hâllerde ise dekan veya bağlı kuruluş yetkilileri zabıtadan yardım talep eder. Bu talep derhal yerine getirilir. Arama, kurumun içinde, yakın çevresinde, giriş ve çıkışlarında yapılabilir.",
+      "articleRefs": [
+        "9",
+        "20"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Önleme araması kararında veya emrinde neler belirtilir?",
+      "back": "Aramanın sebebi, konusu ve kapsamı, yapılacağı yer, yapılacağı zaman ve geçerli olacağı süre.",
+      "explanation": "Bu içerik iki durumda da aranır: sulh ceza hâkiminin kararında ve gecikmesinde sakınca bulunan hâlde mülkî âmirin yazılı emrinde.",
+      "articleRefs": [
+        "9"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Önleme araması konutta yapılabilir mi?",
+      "back": "Hayır. Konutta, yerleşim yerinde ve kamuya açık olmayan işyerlerinde ve eklentilerinde önleme araması yapılamaz.",
+      "explanation": "Önleme araması yapılabilecek yerlerden bazıları: toplantı ve gösteri yürüyüşlerinin yapıldığı yer ve yakın çevresi; genel kurul toplantılarının yapıldığı yerin yakın çevresi; halkın topluca bulunduğu veya toplanabileceği yerler; idarecilerinin talebiyle eğitim ve öğretim kurumları; umumî veya umuma açık yerler; her türlü toplu taşıma aracı.",
+      "articleRefs": [
+        "9"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Gecikmesinde sakınca bulunan hâlde mülki idare amirinin, sonradan yazılı hâle getirilmek üzere verdiği sözlü emir hangisinde yeterlidir: önleme aramasında mı, kayıp çocuk tedbirinde mi?",
+      "back": "Kayıp çocuk tedbirinde. Önleme aramasında mülkî âmirin emri yazılı olmalıdır.",
+      "explanation": "Kaybolan çocukların bulunması amacıyla mülki idare amiri iki türlü emir verebilir: yazılı emir ya da sonradan yazılı hâle getirilmek üzere sözlü emir. Önleme aramasında ise gecikmesinde sakınca bulunan hâllerde mülkî âmirin vereceği yazılı emir aranır.",
+      "articleRefs": [
+        "9",
+        "13/A"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Önleme aramasında hangi hâllerde gecikmesinde sakınca bulunan hâl var sayılır?",
+      "back": "Spor karşılaşması, miting, konser, festival, toplantı ve gösteri yürüyüşünün düzenlendiği ya da aniden toplulukların oluştuğu hâllerde.",
+      "explanation": "Bu hâllerde arama mülkî âmirin yazılı emriyle yapılabilir. Emirde de aramanın sebebi, konusu ve kapsamı, yeri, zamanı ve geçerli olacağı süre belirtilir.",
+      "articleRefs": [
+        "9"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Polisin güvenliğini sağladığı bina ve tesislere gelenleri araması için sulh ceza hâkiminin kararı gerekir mi?",
+      "back": "Hayır. Polis, herhangi bir emir veya karar olmasına bakılmaksızın üstü, aracı ve eşyayı teknik cihazlarla, gerektiğinde el ile kontrol etmeye ve aramaya yetkilidir.",
+      "explanation": "Bu yetkinin amacı tehlikenin önlenmesi veya bertaraf edilmesidir. Bu yerlere girmek isteyenler kimliklerini sorulmaksızın ibraz etmek zorundadır. Milletlerarası anlaşmalar hükümleri saklıdır.",
+      "articleRefs": [
+        "9"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Önleme aramasının sonucu kime bildirilir?",
+      "back": "Arama kararını veya emrini veren merci ya da makama, bir tutanakla.",
+      "explanation": "Karar sulh ceza hâkiminden geldiyse ona, emir mülkî âmirden geldiyse ona bildirilir.",
+      "articleRefs": [
+        "9"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Polis, md 13'te sayılan kişilere hangi işlemleri uygular?",
+      "back": "Eylemin veya durumun niteliğine göre bu kişileri koruma altına alır, uzaklaştırır ya da yakalar; ardından gerekli kanuni işlemleri yapar.",
+      "explanation": "Hangi işlemin uygulanacağını olayın niteliği belirler. Yakalanması belirli bir usule bağlanmış kişilerle ilgili kanun hükümleri saklıdır.",
+      "articleRefs": [
+        "13"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Md 13'te başkalarının can güvenliğini tehlikeye düşürenler hangi bentte yer alır?",
+      "back": "(H) bendinde; listenin son hâlidir.",
+      "explanation": "Listede başka hâller de vardır: haklarında yakalama veya tutuklama kararı bulunanlar (B), usulüne aykırı şekilde ülkeye girenler (D) ve haklarında gözetim altında ıslahına karar verilen küçükler (G).",
+      "articleRefs": [
+        "13"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Yakalanma anındaki sağlık durumunun tabip raporuyla tespiti yalnız zor kullanılarak yakalananlar için mi yapılır?",
+      "back": "Hayır. Bu tespit şu kişiler için yapılır: uyuşturucu madde kullanmış olanlar ile sarhoş olanlar, zor kullanılarak yakalananlar ve haklarında suç soruşturması yapılacak şüpheli ve sanıklar.",
+      "explanation": "Raporla tespit edilen şey, kişinin yakalanma anındaki sağlık durumudur.",
+      "articleRefs": [
+        "13"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Kahvehanede uyarılara rağmen çevresindekilere saldırmaya yeltenen bir sarhoşa polis hangi yetkiye dayanarak işlem yapar?",
+      "back": "md 13 (C) bendindeki yetkiye: polis, eylemin veya durumun niteliğine göre bu kişiyi koruma altına alır, uzaklaştırır ya da yakalar ve gerekli kanuni işlemleri yapar.",
+      "explanation": "(C) bendi şu kişileri sayar: halkın rahatını bozacak veya rezalet çıkaracak derecede sarhoş olanlar veya sarhoşluk hâlinde başkalarına saldıranlar, uyarılara rağmen bu hareketlerine devam edenler ile başkalarına saldırmaya yeltenenler ve kavga edenler.",
+      "articleRefs": [
+        "13"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Toplu suçlarda yakalama sebebi kişiye en geç ne zamana kadar bildirilir?",
+      "back": "En geç kişiler hâkim huzuruna çıkarılıncaya kadar.",
+      "explanation": "Diğer hâllerde yakalama sebebi herhalde yazılı, bu mümkün değilse sözlü olarak derhal bildirilir. Kişinin yakalandığı da istediği kanunî yakınlarına derhal bildirilir.",
+      "articleRefs": [
+        "13"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Yakalama sebebi ortadan kalkan kişinin serbest bırakılması, adlî mercilere sevkini bekler mi?",
+      "back": "Hayır. Yakalama sebebi ortadan kalkanlar derhal serbest bırakılır. Adlî mercilere ise suç işlediği şüphesi altında olanlar sevk edilir.",
+      "explanation": "Haklarında ıslah veya tedavi tedbiri alınması gerekenleri ilgili kurum yetkilileri teslim alır. Yakalanan kişinin kaçmasını veya saldırmasını önlemek için, sağlığına zarar vermeyecek şekilde her türlü tedbir alınabilir.",
+      "articleRefs": [
+        "13"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Kaybolan çocuğun bulunması amacıyla polis hangi işlemleri yapabilir?",
+      "back": "Her türlü banka hesap hareketlerini talep edebilir, telekomünikasyon yoluyla iletişimini denetleyebilir ve sinyal bilgilerini değerlendirebilir.",
+      "explanation": "Bu yetkiler kayıp çocuğa ait olanları da, başkasına ait olup kayıp çocuk tarafından kullanılanları da kapsar. Olağan yolda sulh ceza hâkimi karar verir; gecikmesinde sakınca bulunan hâllerde mülki idare amirinin yazılı ya da sonradan yazılı hâle getirilecek sözlü emri yeter.",
+      "articleRefs": [
+        "13/A"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Kayıp çocuk tedbir kararı en çok ne kadar süre için verilebilir?",
+      "back": "En çok bir ay için. Bu süre bir defaya mahsus olmak üzere bir ay daha uzatılabilir.",
+      "explanation": "Uzatmayla birlikte ulaşılabilecek en uzun süre iki aydır; ilk kararın süresi ise en çok bir aydır.",
+      "articleRefs": [
+        "13/A"
+      ],
+      "derivedNumbers": [
+        {
+          "value": 2,
+          "expr": "1 + 1",
+          "refs": [
+            "13/A"
+          ],
+          "note": "en çok bir ay + bir defaya mahsus bir ay uzatma"
+        }
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Mülki idare amirinin kayıp çocuk kararını onaylayacak mahkeme, kararını en geç ne kadar sürede verir?",
+      "back": "En geç yirmidört saat içinde.",
+      "explanation": "Bu süre, mülki idare amirinin kararı hakkında onay kararı verecek mahkemeye tanınmıştır.",
+      "articleRefs": [
+        "13/A"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Mülki idare amirinin kayıp çocuk kararı yirmidört saat içinde mahkemenin onayına sunulur mu?",
+      "back": "Hayır. Karar derhal mahkemenin onayına sunulur. Yirmidört saat ise mahkemenin kararını vermesi için tanınan en geç süredir.",
+      "explanation": "Mülki idare amiri bu kararı gecikmesinde sakınca bulunan hâllerde verir.",
+      "articleRefs": [
+        "13/A"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Polis, yaptığı tahkikat esnasında ifadesine müracaat gereken kimselere ne yapar?",
+      "back": "Onları çağırır ve kendilerine lüzumu olan şeyleri sorar.",
+      "articleRefs": [
+        "15"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Polis, müşteki, mağdur veya tanık ifadesini kendi kararıyla onların ikamet ettiği yerde alabilir mi?",
+      "back": "Hayır; bunun için onların talebi gerekir. Talep hâlinde polis ifadeyi ikamet ettikleri yerlerde veya işyerlerinde de alabilir.",
+      "explanation": "Yerinde ifade alma imkânı müşteki, mağdur ve tanık için öngörülmüştür.",
+      "articleRefs": [
+        "15"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Müşteki, mağdur veya tanık ifadesinin ikamette ya da işyerinde alınmasına ilişkin usul ve esasları kim belirler?",
+      "back": "İçişleri Bakanlığı.",
+      "explanation": "Bakanlık, bu fıkranın kapsamını da uygulamasına ilişkin usul ve esasları da belirler.",
+      "articleRefs": [
+        "15"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Zabıta hangi hâllerde konutlara, iş yerlerine ve eklentilerine girebilir?",
+      "back": "İmdat istenmesi, yangın, su baskını ve boğulma gibi büyük tehlikelerin haber verilmesi veya görülmesi ve ağır cezalı bir suçun işlenmesine veya devamına mani olmak için.",
+      "articleRefs": [
+        "20"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Üniversite binalarında kurumun imkânlarıyla önlenemeyecek bir olay ihtimali varsa, acele hâllerde zabıtadan yardımı kim talep eder?",
+      "back": "Dekan veya bağlı kuruluş yetkilileri.",
+      "explanation": "Olağan durumda bu talebi rektör yapar. (A) bendindeki talep derhal yerine getirilir.",
+      "articleRefs": [
+        "20"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Zabıtanın suç ve suçluların kovuşturulması için üniversite binasına girmesi rektörün iznine bağlı mıdır?",
+      "back": "Hayır. Zabıta bu amaçla herhangi bir davet veya izne bağlı olmaksızın her zaman girebilir.",
+      "explanation": "İlgili kurumlar, kovuşturma dolayısıyla zabıta kuvvetlerine gereken her türlü yardım ve kolaylığı göstermekle yükümlüdür.",
+      "articleRefs": [
+        "20"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Gözaltına alınanların yeme, içme ve nakil masrafları nereden karşılanır?",
+      "back": "Emniyet Genel Müdürlüğü bütçesine konulacak ödenekten.",
+      "articleRefs": [
+        "Ek 2"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Ek 3'e göre hangi suç soruşturmalarında, ifadesine başvurulacak kişilerden adreslerinden ayrılmamaları istenebilir?",
+      "back": "Devletin bütünlüğü, genel güvenliği ve Anayasa düzeni ile kaçakçılık ve uyuşturucu maddelerle ilgili suç soruşturmalarında.",
+      "explanation": "Polis bu istemi, kişinin tespit edilmiş ikametgâh veya iş adresi için yazılı olarak yapar.",
+      "articleRefs": [
+        "Ek 3"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Adresinden ayrılmaması istenen kişiye o yerden ayrılma iznini polis verebilir mi?",
+      "back": "Hayır. İzin, mahallin en büyük mülki amirinin yazılı emriyle verilir. Şart, kişinin bulunabileceği yeni adresini bildirmesidir.",
+      "explanation": "Polisin yetkisi, adresten ayrılmamayı yazılı olarak istemektir.",
+      "articleRefs": [
+        "Ek 3"
+      ],
+      "counterNumbers": []
+    }
+  ]
+}

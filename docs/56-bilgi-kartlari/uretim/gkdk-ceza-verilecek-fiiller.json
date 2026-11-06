@@ -1,0 +1,282 @@
+{
+  "deck": {
+    "topicId": "a9e2a110-a63e-4cfa-91f2-25c187d0c3e6",
+    "legislationSlug": "7068-sayili-genel-kolluk-disiplin-hukumleri-kanunu",
+    "unitSlug": "gkdk-ceza-verilecek-fiiller",
+    "sourceLabel": "AI bilgi kartı — 7068 Sayılı Genel Kolluk Disiplin Hükümleri Kanunu md 8",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: gkdk-ceza-verilecek-fiiller özeti + resmî madde metni); betik kapısı: #23 (#21 ile aynı cevap) çıkarıldı; denetim düzeltmesi 7 Kas 2026 (1 kart + #4 ifade)"
+  },
+  "cards": [
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Silahını, araç ve gerecini, giyim ve kuşamını temiz tutmazsan hangi disiplin cezasını alırsın?",
+      "back": "Uyarma. Çalıştığın yerin temizliğine özen göstermemek de aynı cezayı gerektirir.",
+      "explanation": "Kıyafet ve teçhizatla ilgili fiiller farklı basamaklara düşer. Ciddiyetle bağdaşmayan yüzük, kolye veya rozet takmak kınama gerektirir. Mevzuat veya talimata aykırı olarak eksik kuşam ve teçhizatla göreve çıkmak ise üç günlüğe kadar aylıktan kesme gerektirir.",
+      "articleRefs": [
+        "8"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Emrin icrası veya sonuçları hakkında görevlendirme yapan amire bilgi vermemek hangi disiplin cezasını gerektirir?",
+      "back": "Uyarma. Katılım sağlanan toplantılarla ilgili olarak amire bilgi vermemek de bu kapsamdadır.",
+      "explanation": "Amir ve üstlerine iletilmesi gereken olay, bilgi ve emirleri zamanında iletmemek onbir ila onbeş günlüğe kadar aylıktan kesme gerektirir. Bu olayları ve bilgileri gizlemek ise on ay kısa süreli durdurma gerektirir.",
+      "articleRefs": [
+        "8"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Usulüne uygun verilen bir emir hakkında amir karar verene kadar fikrini savunursan uyarma cezası alır mısın?",
+      "back": "Hayır. Bu davranış disiplinsizlik teşkil etmez. Emrin kanunsuz olduğu kanaatini belirtmek için amire yapılan itiraz da disiplinsizlik sayılmaz.",
+      "explanation": "Usulüne uygun verilen bir emir üzerine amiri alenen eleştirmek ya da amire karşı itirazda bulunmak uyarma gerektirir; parantez içinde sayılan haller bunun dışında kalır. Amirin usulüne göre verdiği emri yerine getirmemek ise yirmidört ay uzun süreli durdurma gerektirir.",
+      "articleRefs": [
+        "8"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Nöbeti teslim ettikten sonra görev yerine özürsüz geç dönmek uyarma cezası mı gerektirir?",
+      "back": "Hayır, kınama gerektirir. Uyarma, özürsüz veya izinsiz mesaiye geç gelmek ve belirli zamanda yapılması gereken faaliyetlere geç kalmak için verilir.",
+      "explanation": "Nöbet görevine hiç gelmemek ya da nöbet veya nokta görevinde kurallara aykırı hareket etmek ise üç günlüğe kadar aylıktan kesme gerektirir.",
+      "articleRefs": [
+        "8"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Mesleğin ciddiyetiyle bağdaşmayacak biçimde yüzük, bilezik, kolye, madalyon veya rozet takarsan hangi disiplin cezasını alırsın?",
+      "back": "Kınama. Mevzuat veya talimatlarla taşınmasına ya da bulundurulmasına izin verilenler bu cezanın dışındadır.",
+      "explanation": "Zati demirbaş tabancada ya da geçici olarak verilen demirbaş tabancada orijinalliği bozacak boya, kaplama, gravür veya ciddiyetle bağdaşmayacak şekil, desen ve resim gibi değişiklikler yapmak da kınama gerektirir.",
+      "articleRefs": [
+        "8"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Görev sırasında veya dışında aynı rütbede çalışanlara saygısız davranmak hangi disiplin cezasını gerektirir?",
+      "back": "Kınama. Mesai arkadaşlarına karşı saygısızlık da aynı cezayı gerektirir.",
+      "explanation": "Saygısızlık amir veya üste yapılırsa ceza ağırlaşır. Görev dışında yapılırsa üç günlüğe kadar aylıktan kesme, görev sırasında yapılırsa dört ay kısa süreli durdurma verilir.",
+      "articleRefs": [
+        "8"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "İzinsiz veya kurumunca kabul edilebilir bir özrün olmadan yirmidört saate kadar göreve gelmezsen kaç günlüğe kadar aylıktan kesme alırsın?",
+      "back": "Üç günlüğe kadar aylıktan kesme.",
+      "explanation": "Nöbet görevine gelmemek de aynı basamaktaki fiillerdendir.",
+      "articleRefs": [
+        "8"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Mühür veya beratını kabul edilebilir bir neden olmaksızın kaybetmek üç günlüğe kadar aylıktan kesme mi gerektirir?",
+      "back": "Hayır, dört ila on günlüğe kadar aylıktan kesme gerektirir. Üç günlüğe kadar aylıktan kesme, personel kimlik kartını kabul edilebilir bir neden olmaksızın kaybetmek içindir.",
+      "explanation": "Resmi belge veya göreve ilişkin evrakı kaybetmek de dört ila on günlüğe kadar aylıktan kesme gerektirir. Devlet malı motorlu araçları, muhabere araçlarını, silah veya mühimmatı ihmal nedeniyle kaybetmek ise onaltı ay uzun süreli durdurma gerektirir.",
+      "articleRefs": [
+        "8"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "İzinsiz veya özürsüz olarak yirmidört saatten fazla ve iki güne kadar (ikinci gün dahil) göreve gelmemenin cezası kaç günlüğe kadar aylıktan kesmedir?",
+      "back": "Dört ila on günlüğe kadar aylıktan kesme.",
+      "explanation": "Görevle ilgili resmi belge, araç ve gereçleri, görev sona erdiği ya da kurumca istendiği hâlde geri vermemek de aynı basamaktadır.",
+      "articleRefs": [
+        "8"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "İzinsiz veya özürsüz olarak iki günden fazla ve üç güne kadar (üçüncü gün dahil) göreve gelmezsen kaç günlüğe kadar aylıktan kesme alırsın?",
+      "back": "Onbir ila onbeş günlüğe kadar aylıktan kesme.",
+      "explanation": "İzinliyken görevine derhal dönmen sözlü, yazılı ya da herhangi bir iletişim vasıtasıyla sana duyurulduğu hâlde, kabul edilebilir özrün olmadan makul sürede dönmemek de aynı cezayı gerektirir.",
+      "articleRefs": [
+        "8"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "İzinsiz veya özürsüz olarak kesintisiz üç günden fazla ve beş güne kadar (beşinci gün dahil) göreve gelmemek kaç ay kısa süreli durdurma gerektirir?",
+      "back": "Dört ay kısa süreli durdurma.",
+      "explanation": "Aynı basamakta amir ve memurlara görevle ilgili yalan söylemek, denetim görevini yerine getirmemek ve toplu olarak sözlü veya yazılı şikâyette bulunmak da yer alır.",
+      "articleRefs": [
+        "8"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Astlarından ya da iş sahiplerinden hediye veya borç almak meslekten çıkarma cezası mı gerektirir?",
+      "back": "Hayır, altı ay kısa süreli durdurma gerektirir. Hediye veya borcun doğrudan ya da aracı eliyle alınması bu sonucu değiştirmez.",
+      "explanation": "Yetkisini veya nüfuzunu kendisine veya başkalarına çıkar sağlamak amacıyla ya da kin ve dostluk gibi nedenlerle kötüye kullanmak ise meslekten çıkarma gerektirir.",
+      "articleRefs": [
+        "8"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Silahla dikkatsizlik, tedbirsizlik veya ihmal sonucu yaralamaya sebebiyet verirsen kaç ay kısa süreli durdurma alırsın?",
+      "back": "On ay kısa süreli durdurma. Kendini yaralamak ya da bu fiillerin başkaları tarafından işlenmesine neden olmak da aynı cezayı gerektirir.",
+      "explanation": "Aynı fiil ölümle sonuçlanırsa yirmidört ay uzun süreli durdurma verilir. Hizmet aracıyla, ağır kusur veya hizmetten ayrılabilen kişisel kusur sonucu trafik kazasında yaralamaya sebebiyet vermek de on ay kısa süreli durdurma gerektirir.",
+      "articleRefs": [
+        "8"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Görev sırasında kişilere ya da herhangi bir nedenle kurum binalarına gelen veya getirilenlere hakaret etmek kaç ay uzun süreli durdurma gerektirir?",
+      "back": "Oniki ay uzun süreli durdurma.",
+      "explanation": "Görev sırasında kişilere karşı onur kırıcı söz söylemek veya davranışta bulunmak daha hafif bir ceza gerektirir: onbir ila onbeş günlüğe kadar aylıktan kesme. Belirlenen durum ve sürelerde mal bildiriminde bulunmamak da oniki ay uzun süreli durdurma gerektirir.",
+      "articleRefs": [
+        "8"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Görev sırasında herhangi bir şekilde uyur veya uyuklarsan kaç ay uzun süreli durdurma alırsın?",
+      "back": "Onaltı ay uzun süreli durdurma.",
+      "explanation": "Hizmet içinde, resmi sıfatının gerektirdiği saygınlığı ve güven duygusunu sarsacak eylem ve davranışlarda bulunmak da onaltı ay gerektirir. Aynı davranış hizmet dışında olursa altı ay kısa süreli durdurma verilir.",
+      "articleRefs": [
+        "8"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "İzinsiz veya özürsüz olarak kesintisiz beş günden fazla ve dokuz güne kadar (dokuzuncu gün dahil) göreve gelmemek kaç ay uzun süreli durdurma gerektirir?",
+      "back": "Yirmi ay uzun süreli durdurma.",
+      "explanation": "Kanunun verdiği yetkiye dayalı olmaksızın spor müsabakalarına dayalı sabit ihtimalli veya müşterek bahis ya da şans oyunlarını oynamak da yirmi ay uzun süreli durdurma gerektirir.",
+      "articleRefs": [
+        "8"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Muhafazasıyla yükümlü olduğun tutuklu, senin önlem almaman yüzünden kaçarsa meslekten çıkarılır mısın?",
+      "back": "Hayır. Uyanık davranmamak ya da önlem almamak yüzünden kaçmaya neden olmak yirmi ay uzun süreli durdurma gerektirir. Kaçmasına bilerek ve isteyerek imkân vermek ise meslekten çıkarma gerektirir.",
+      "explanation": "Yakalama görevini savsaklamak da yirmi ay uzun süreli durdurma gerektiren fiillerdendir.",
+      "articleRefs": [
+        "8"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Kriptolu telsiz cihazı kaybolduğunda ya da çalındığında yirmidört ay uzun süreli durdurma gerektiren fiil nedir?",
+      "back": "Kaybı ya da çalındığını, idarece kabul edilebilir bir mazeret olmaksızın ilgili birime derhal bildirmemek.",
+      "explanation": "Hüküm, her türlü kriptolu cihaz için geçerlidir. Devlet malı muhabere araçlarını ihmal nedeniyle kaybetmek ise onaltı ay uzun süreli durdurma gerektirir.",
+      "articleRefs": [
+        "8"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Hizmet aracıyla ağır kusuru veya hizmetten ayrılabilen kişisel kusuruyla trafik kazası sonucu ölüme sebebiyet vermek on ay kısa süreli durdurma cezası mı gerektirir?",
+      "back": "Hayır; yirmidört ay uzun süreli durdurma cezası gerektirir. On ay, kazanın yaralamayla sonuçlandığı hâlin cezasıdır (8/4-c-4).",
+      "explanation": "Kaza yaralamayla sonuçlanırsa ceza on ay kısa süreli durdurmadır. Silahla dikkatsizlik, tedbirsizlik veya ihmal sonucu ölüme sebebiyet vermek de yirmidört ay uzun süreli durdurma gerektirir.",
+      "articleRefs": [
+        "8"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Görevin yerine getirilmesinde hangi ayrımları yapmak meslekten çıkarma cezasını gerektirir?",
+      "back": "Dil, ırk, cinsiyet, siyasi düşünce, felsefi inanç, din ve mezhep ayrımı. Personel arasında bu yolda ayrım yapıcı tutum ve davranışlarda bulunmak da aynı cezayı gerektirir.",
+      "articleRefs": [
+        "8"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Göreve sarhoş ya da alkollü içki içtiğin belli olacak biçimde gelirsen hangi disiplin cezasını alırsın?",
+      "back": "Meslekten çıkarma.",
+      "explanation": "Görev mahallinde veya görevli bulunduğun sırada alkollü içki içmek ya da içilmesine göz yummak da meslekten çıkarma gerektirir. Resmi kıyafetle umuma açık yerlerde alkollü içki içmek de aynı cezayı gerektirir.",
+      "articleRefs": [
+        "8"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Amirlerinin eylem ve işlemlerini olumsuz yönde eleştiren bir bildiriyi tek başına dağıtırsan hangi disiplin cezasını alırsın?",
+      "back": "Meslekten çıkarma. Bildirinin tek başına ya da topluca dağıtılması bu sonucu değiştirmez.",
+      "explanation": "Mesleğin onur ve saygınlığını zedeleyici ya da amirin eylem ve işlemlerini olumsuz eleştirici nitelikte kamuoyuna bilgi, yazı ve demeç vermek de aynı cezayı gerektirir. Bu demeç basın, haber ajansları, radyo ve televizyon kurumları veya diğer iletişim kanalları vasıtasıyla verilir. Yetkili olmadığı hâlde yalnızca kamuoyuna bilgi ya da demeç vermek ise on ay kısa süreli durdurma gerektirir.",
+      "articleRefs": [
+        "8"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Hangi derneklere üye olmak meslekten çıkarma cezasını gerektirmez?",
+      "back": "Spor derneklerine üye olmak. Dernek kurmak ya da spor dernekleri dışındaki derneklere üye olmak meslekten çıkarma gerektirir.",
+      "articleRefs": [
+        "8"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Hangi vakıfların organlarında görev almak meslekten çıkarma cezasını gerektirmez?",
+      "back": "Bakanlıkça belirlenmiş vakıfların organlarında görev almak. Vakıf kurmak ise meslekten çıkarma gerektirir.",
+      "articleRefs": [
+        "8"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Jandarma Genel Komutanlığı ve Sahil Güvenlik Komutanlığında terfisi 926, 3466, 3269 ve 6191 sayılı Kanunlara tabi personelde kısa süreli durdurma gerektiren hallerde brüt aylığın ne kadarı kesilir?",
+      "back": "Brüt aylığın 1/5’i ila 1/4’ü kesilir.",
+      "articleRefs": [
+        "8"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Jandarma Genel Komutanlığı ve Sahil Güvenlik Komutanlığında terfisi 926, 3466, 3269 ve 6191 sayılı Kanunlara tabi personelde uzun süreli durdurma gerektiren hallerde brüt aylığın ne kadarı kesilir?",
+      "back": "Brüt aylığın 1/3’ü ila 1/2’si kesilir.",
+      "articleRefs": [
+        "8"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Jandarma Genel Komutanlığı ve Sahil Güvenlik Komutanlığı personeline durdurma gerektiren hallerde uygulanan brüt aylık kesintisi cezalarını kim verir?",
+      "back": "Yetkili disiplin kurulları.",
+      "explanation": "Bu kesinti, terfileri 926, 3466, 3269 ve 6191 sayılı Kanun hükümlerine tabi olan personele uygulanır.",
+      "articleRefs": [
+        "8"
+      ]
+    }
+  ]
+}

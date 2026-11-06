@@ -1,0 +1,237 @@
+{
+  "deck": {
+    "topicId": "65aef8de-07cb-49f6-8665-00adc0ef5754",
+    "legislationSlug": "2559-sayili-polis-vazife-ve-salahiyet-kanunu-pvsk",
+    "unitSlug": "pvsk-umuma-acik-yerler",
+    "sourceLabel": "AI bilgi kartı — 2559 Sayılı Polis Vazife ve Salâhiyet Kanunu (PVSK) md 6–8, 10–12, 14, 19, 21, Ek 1, Geçici 1",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: pvsk-umuma-acik-yerler özeti + resmî madde metni); denetim düzeltmesi 7 Kas 2026 (2 kart + 6 kart çıkarıldı: eski TL, 765 TCK atfı, kalkmış talimatname/kanun, dolmuş Geçici 1)"
+  },
+  "cards": [
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Belediye sınırları içindeki bir umuma açık istirahat ve eğlence yerinin işletmecisine idarî para cezasını kim verir?",
+      "back": "Belediye encümeni.",
+      "explanation": "Ceza iş yerinin işletmecisine verilir. Sebepleri şunlardır: faaliyetten geçici olarak men edildiği hâlde süresinden önce açılmak, açık ve kapalı bulunacağı saatlere uymamak, 12 nci maddede belirtilen yasaklara uymamak ve mevzuat hükümlerine aykırı olarak işletilmek. Karar 7201 sayılı Tebligat Kanunu hükümlerine göre tebliğ edilir. Ceza, 6183 sayılı Âmme Alacaklarının Tahsil Usulü Hakkında Kanun hükümlerine göre tahsil olunur.",
+      "articleRefs": [
+        "6"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Umuma açık istirahat ve eğlence yerinde idarî para cezası gerektiren aynı fiil bir yıl içinde tekrarlanırsa ceza nasıl uygulanır?",
+      "back": "En son uygulanan para cezası bir kat artırılarak uygulanır. Bunun için tekrarın bir yıl içinde olması gerekir.",
+      "explanation": "Artırımın esası, aynı fiil için en son uygulanan para cezasıdır. Tekrar kuralı, maddede sayılan fiillerin aynısının yeniden işlenmesine bağlıdır.",
+      "articleRefs": [
+        "6"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Encümenin verdiği idarî para cezasına itiraz, cezanın yerine getirilmesini durdurur mu?",
+      "back": "Hayır; itiraz cezanın yerine getirilmesini durdurmaz. İtiraz, tebliğ tarihinden itibaren en geç yedi gün içinde yetkili idare mahkemesine yapılır.",
+      "explanation": "İtiraz, zaruret görülmeyen hâllerde evrak üzerinde incelenir ve en kısa sürede sonuçlandırılır. İtiraz üzerine verilen karar kesindir.",
+      "articleRefs": [
+        "6"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Yolcularına içkili eğlence sunan seyyar bir tur teknesi umuma açık istirahat ve eğlence yeri sayılır mı?",
+      "back": "Evet. Sabit ya da seyyar her çeşit taşıma aracında bu faaliyetler icra ediliyorsa, araç da umuma açık istirahat ve eğlence yeri sayılır.",
+      "explanation": "Ölçü faaliyetin icrasıdır. Kara, deniz, hava ve her çeşit taşıma aracı, birinci fıkradaki eğlence, dinlenme veya konaklama faaliyetleri yapıldığında bu kapsama girer. Birinci fıkrada içkili yerler olarak gazino, pavyon, meyhane, bar, birahane, içkili lokanta ve taverna sayılır.",
+      "articleRefs": [
+        "7"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Umuma açık istirahat ve eğlence yeri ruhsatında, bağlı olunan kolluk kuvveti görüşünü kaç gün içinde verir?",
+      "back": "Yedi gün içinde verir. Ruhsat, bu görüş alındıktan sonra verilir.",
+      "explanation": "Ruhsat talepleri bir ay içinde sonuçlandırılır. İzin alınmadan açılan umuma açık istirahat ve eğlence yerleri kapatılır. Düzenlenen iş yeri açma ve çalışma ruhsatının bir örneği yetkili kolluk kuvvetine gönderilir.",
+      "articleRefs": [
+        "7"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Belediye ve mücavir alan sınırları dışında umuma açık istirahat ve eğlence yerine ruhsatı İçişleri Bakanlığı mı verir?",
+      "back": "Hayır. Bu alanların dışında ruhsatı il özel idareleri, içinde ise belediyeler verir. İçişleri Bakanlığı ruhsatlandırmanın usul ve esaslarını yönetmelikle düzenler.",
+      "explanation": "İş yerlerinin faaliyet göstereceği alanları belirleme ve mevcut yerleri bu amaçla ayrılan yerlerde toplama yetkisi de aynı ayrımla belediyelere ve il özel idarelerine aittir. Bu yerler, genel güvenlik ve asayiş yönünden genel kolluk tarafından denetlenir.",
+      "articleRefs": [
+        "7"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Polisçe kat'i delil elde edilen, kumar oynanan bir umuma açık yer en çok ne kadar süreyle faaliyetten men edilir?",
+      "back": "Otuz günü geçmemek üzere, geçici süreyle. Men kararını mahallin en büyük mülkî amiri verir.",
+      "explanation": "Aynı yaptırımın uygulandığı yerlerden bazıları: mevzuata aykırı şekilde uyuşturucu madde imal edilen, satılan, kullanılan, bulundurulan yerler; mevzuata aykırı faaliyet gösteren genelevler ve fuhuş yapılan yerler; genel güvenliğe ve genel ahlâka zararı dokunacak oyun oynatılan, temsil verilen, film veya video bant gösterilen yerler. Şart, polisçe kat'i delil elde edilmesidir.",
+      "articleRefs": [
+        "8"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Yalnız üyelerinin yararlanması için açılan bir dernek lokali hangi durumda geçici olarak faaliyetten men edilir?",
+      "back": "Birden fazla denetim sonunda ve yazılı ihtara rağmen, iç yönetmeliğine aykırı faaliyet göstererek umuma açık yer durumuna geldiği tespit edilirse.",
+      "explanation": "Hüküm; derneklere, sendikalara, loca ve kulüplere, kamu kurumu niteliğindeki meslek kuruluşlarına ve benzeri kurum ve kuruluşlara ait lokalleri kapsar. Men kararını, polisçe kat'i delil elde edilmesi hâlinde mahallin en büyük mülkî amiri verir. Süre otuz günü geçemez.",
+      "articleRefs": [
+        "8"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Bir yıl içinde üç defa faaliyetten men edilen bir iş yerinin ruhsatı, yalnız bu men sayısı nedeniyle iptal edilir mi?",
+      "back": "Hayır; bu fiillerin tekrar işlenmesi de gerekir. O zaman ruhsat, mahallin en büyük mülkî amirinin bildirimi üzerine belediye veya il özel idaresince beş iş günü içinde iptal edilir.",
+      "explanation": "İptal edilen belge, iş yeri açma ve çalışma ruhsatıdır. İptal işlemini mülkî amir değil, bildirimi alan belediye veya il özel idaresi yapar.",
+      "articleRefs": [
+        "8"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Taşınması memnu olan kama, hançer ve saldırmayla ilgili olarak, taşıma dışında hangi işlemler de yasaktır?",
+      "back": "Yapılması ve satılması da yasaktır.",
+      "explanation": "Satış yasağının istisnası, eski eserlerden olup kıymetli olanlardır.",
+      "articleRefs": [
+        "10"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Kama, hançer ve saldırma yasağından hangi satış müstesnadır?",
+      "back": "Eski eserlerden olup kıymetli olanların satışı.",
+      "explanation": "İstisna yalnız satış içindir ve iki şartı birlikte arar: eski eser olmak ve kıymetli olmak.",
+      "articleRefs": [
+        "10"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Polis, genel ahlak ve edep kurallarına aykırı utanç verici davranışları engellemek için bir müracaat veya şikâyet beklemeli midir?",
+      "back": "Hayır. Herhangi bir müracaat veya şikâyet olmasa bile engeller ve davranışların devamını durdurarak yasaklar.",
+      "explanation": "Aynı yetki şu kişiler için de geçerlidir: çocuklar, kız ve kadınlar ile genç erkeklere sözle veya herhangi bir şekilde sarkıntılık edenler; kötü alışkanlıklara ve her türlü ahlaksızlığa yönelten ve teşvik edenler.",
+      "articleRefs": [
+        "11"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Genel ahlâk ve edebe aykırı sesli ve görüntülü eserler söz konusu olduğunda, polisin müdahalesi eserin kaydedildiği materyale göre değişir mi?",
+      "back": "Hayır. Polis, bu eserleri kaydedildiği materyale bakılmaksızın üreten ve satanları engeller.",
+      "explanation": "Kapsam her türlü sesli ve görüntülü eserdir. Hem üretenler hem de satanlar hükme girer.",
+      "articleRefs": [
+        "11"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Şikâyete bağlı suçlarda polis, sanıklar hakkında düzenlediği evrakı ne zaman adliyeye tevdi eder?",
+      "back": "Şikâyet ve müracaat vuku bulduğu takdirde tevdi eder. Diğer suçlarda evrak derhal adliyeye tevdi edilir.",
+      "explanation": "Polisin engelleme ve yasaklama yetkisi bir müracaat veya şikâyete bağlı değildir. Şikâyet şartı yalnız şikâyete bağlı suçlarda evrakın adliyeye gönderilmesi için aranır.",
+      "articleRefs": [
+        "11"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Eğlence, oyun, içki ve benzeri amaçlı, açılması izne bağlı umuma açık yerlerde kaç yaşından küçükler çalıştırılamaz?",
+      "back": "Onsekiz yaşından küçükler çalıştırılamaz. Kanunî istisnalar saklıdır.",
+      "explanation": "Saklı tutulan yalnız kanunî istisnalardır. Polis ayrıca içkili yerler ile kıraathane ve oyun oynatılan benzeri yerlere onsekiz yaşını doldurmamış küçüklerin girmesini de meneder.",
+      "articleRefs": [
+        "12"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Onsekiz yaşını doldurmamış bir küçük, yanında velisi varsa meyhaneye girebilir mi?",
+      "back": "Hayır. Polis, yanlarında veli ve vasileri olsa bile onsekiz yaşını doldurmamış küçüklerin içkili yerlere girmesini meneder.",
+      "explanation": "Giriş yasağı; bar, pavyon, gazino, meyhane gibi içkili yerler ile kıraathane ve oyun oynatılan benzeri yerleri kapsar.",
+      "articleRefs": [
+        "12"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Şehir ve kasabalarda civar halkının huzurunu bozan gürültü saat kaçtan sonra polisçe men olunur?",
+      "back": "Saat 24'ten sonra. Gürültü mesken içinde de dışında da yapılsa men olunur.",
+      "explanation": "Gürültünün ne suretle yapıldığı önem taşımaz. Ölçü, gürültünün civar halkının rahat ve huzurunu bozacak surette olmasıdır.",
+      "articleRefs": [
+        "14"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Zabıtadan izin alınarak yapılan bir düğün, saat 24'ten sonra polisçe men olunur mu?",
+      "back": "Hayır. Zabıtadan izin alınarak yapılan düğün, müsamere ve balolar, saat 24'ten sonraki gürültü kaydından müstesnadır.",
+      "explanation": "İstisnanın şartı, zabıtadan izin alınmış olmasıdır. Bu izin alınmamışsa düğün de gürültü kaydına tabidir.",
+      "articleRefs": [
+        "14"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Polis, nakil vasıtasını sarhoş olarak idare eden kişiye karşı ne yapar?",
+      "back": "Onu çalışmaktan men eder.",
+      "explanation": "Aynı yetki, nakil vasıtasını seyrüseferin intizam ve selametini bozacak surette idare edenler için de geçerlidir. Polis bu yetkiyi sokak, meydan ve umuma mahsus yerlerde intizamı temin için kullanır.",
+      "articleRefs": [
+        "19"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Umuma açık bir yerde oyun ve temsil vermek isteyen bir topluluk, mahallin en büyük mülkî amirine en az ne kadar önceden bildirimde bulunur?",
+      "back": "En az kırk sekiz saat önceden, yazılı olarak.",
+      "explanation": "Bildirimle oyun ve temsil verebilecek olanlar gerçek kişi veya topluluklardır. Hüküm, umumî veya umuma açık yerler ile umuma açık yer niteliğindeki ulaşım araçlarında uygulanır. Bildirim, işin yapılacağı mahallin en büyük mülkî amirine yapılır.",
+      "articleRefs": [
+        "Ek 1"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Oyun, temsil ve gösteri bildiriminde katılan kişilere ilişkin hangi bilgiler belirtilir?",
+      "back": "Oyun veya temsile katılan yönetici ve diğer kişilerin kimlik, ikametgâh ve tâbiiyetleri.",
+      "explanation": "Bu bilgiler yalnız yöneticiler için değil, oyun veya temsile katılan diğer kişiler için de belirtilir.",
+      "articleRefs": [
+        "Ek 1"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Genel ahlâka aykırı olduğu tespit edilen bir gösteri hakkında mülkî amir, Cumhuriyet savcılığına kırk sekiz saat içinde mi suç duyurusunda bulunur?",
+      "back": "Hayır. Mahallin en büyük mülkî amiri derhal suç duyurusunda bulunur. Kırk sekiz saat, yazılı bildirimin en az ne kadar önceden yapılacağını gösterir.",
+      "explanation": "Suç duyurusu; Devletin ülkesi ve milleti ile bölünmez bütünlüğüne, Anayasal düzene veya genel ahlâka aykırı olduğu tespit edilen oyun, temsil ve gösteriler için yapılır.",
+      "articleRefs": [
+        "Ek 1"
+      ],
+      "counterNumbers": []
+    }
+  ]
+}

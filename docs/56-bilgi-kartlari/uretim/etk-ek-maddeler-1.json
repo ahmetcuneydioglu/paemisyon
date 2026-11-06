@@ -1,0 +1,307 @@
+{
+  "deck": {
+    "topicId": "9c9b822c-028f-4d9b-929f-ad8487d53db4",
+    "legislationSlug": "3201-sayili-emniyet-teskilat-kanunu",
+    "unitSlug": "etk-ek-maddeler-1",
+    "sourceLabel": "AI bilgi kartı — 3201 Sayılı Emniyet Teşkilat Kanunu md Ek 1, Ek 2, Ek 3, Ek 4, Ek 5, Ek 6, Ek 7, Ek 8, Ek 9, Ek 10, Ek 11, Ek 12, Ek 13, Ek 14, Ek 15, Ek 16, Ek 17, Ek 18",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: etk-ek-maddeler-1 özeti + resmî madde metni); denetim düzeltmesi 7 Kas 2026 (2 kart)"
+  },
+  "cards": [
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Emniyet Umum Müdürü (Emniyet Genel Müdürü) kadrosu, lüzumu halinde hangi kadroyla tebdil edilebilir?",
+      "back": "Bir vali kadrosuyla.",
+      "explanation": "Tebdil zorunlu değildir. Lüzumu halinde yapılabilecek bir değişikliktir.",
+      "articleRefs": [
+        "Ek 1"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Emniyet hizmetleri sınıfı dışından atama yapılan kadronun hizmet sınıfı, atanan o kadroda kaldıkça ne kabul edilir?",
+      "back": "Genel idare hizmetleri sınıfı. Bu kabul, atananın o kadroda bulunduğu süre boyunca geçerlidir.",
+      "explanation": "Dışarıdan atama, Emniyet Genel Müdürlüğü merkez ve taşra teşkilatında tıbbi, teknik ve mali hizmetler veren daire başkanlıkları ile şube müdürlüklerine ilişkin kadrolar için öngörülmüştür.",
+      "articleRefs": [
+        "Ek 1"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Polis eğitim kurumunu başarıyla bitiren öğrencinin aday memur atanabilmesi için hangi makamın sınavını geçmesi gerekir?",
+      "back": "Polis Akademisi Başkanlığının. Bu sınav eğitim sonunda yapılır.",
+      "explanation": "Atama için iki şart birlikte aranır: öğrenim süresini başarıyla tamamlamak ve bu sınavda başarılı olmak. Atama, Emniyet Genel Müdürlüğü kadrolarına Polis Memuru ve Komiser Yardımcısı rütbelerine aday memur olarak yapılır. Hüküm, Emniyet Genel Müdürlüğü adına diğer yükseköğretim kurumlarında okuyanları ve maddenin yürürlüğe girdiği tarihte öğrenime devam edenleri de kapsar.",
+      "articleRefs": [
+        "Ek 1"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Emniyet Genel Müdürlüğüne bağlı öğretim kurumlarında görev alan üniversite öğretim üyelerine ders ücreti hangi ölçüyle ödenir?",
+      "back": "Okutacakları beher ders saati için ödenir.",
+      "explanation": "Ücret, bu kurumlarda görev alan üniversite öğretim üyeleri ve görevlilere ödenir.",
+      "articleRefs": [
+        "Ek 2"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Emniyet Genel Müdürlüğüne bağlı öğretim kurumlarında ders veren profesör, doçent ve öğretim görevlilerine ödenecek ders ücreti nerede tespit edilir?",
+      "back": "Bütçe kanunlarında.",
+      "explanation": "Bütçe kanunlarında tespit edilen bu ücret, profesörlere, doçentlere ve öğretim görevlilerine ödenir.",
+      "articleRefs": [
+        "Ek 2"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Adında “polis” ya da “emniyet” geçen dergi ve gazete yayımlama yasağının istisnası nedir?",
+      "back": "Polis emeklilerince kurulan derneklerin yayınları.",
+      "explanation": "Yasak, diğer bütün gerçek veya tüzel kişilere yöneliktir. Bu kişiler “polis” veya “emniyet” adlarıyla, eş anlama gelen adlarla ya da bu sözcüklerin baş ve sonlarına getirilen eklerle oluşturulan adlarla dergi ve gazete yayımlayamaz. İstisnadan yararlanmak için yayının, polis emeklilerince kurulan bir derneğe ait olması gerekir.",
+      "articleRefs": [
+        "Ek 10"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Bir tüzel kişi, “emniyet” sözcüğünün sonuna ek getirerek oluşturduğu bir adla gazete yayımlayabilir mi?",
+      "back": "Hayır. “Polis” veya “emniyet” sözcüklerinin baş ve sonlarına getirilen eklerle oluşturulan adlarla da dergi ve gazete yayımlanamaz.",
+      "explanation": "Bu sözcüklerle eş anlama gelen adlar da yasağın içindedir. Yasağın dışında kalan tek yayın, polis emeklilerince kurulan derneklerin yayınlarıdır.",
+      "articleRefs": [
+        "Ek 10"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Polis yıldızını sembol olarak kullanma yasağı yalnız dergi ve gazeteler için mi geçerlidir?",
+      "back": "Hayır. Polis yıldızı dergilerde, duvar ve el ilanlarında ve diğer her türlü basılıda sembol olarak kullanılamaz.",
+      "explanation": "Söz konusu yıldız, emniyet hizmetleri sınıfı kıyafet yönetmeliğinde belirtilen ve resmi kıyafet üstüne takılan polis yıldızıdır. Ad yasağı ise dergi ve gazete yayımlanmasına yöneliktir.",
+      "articleRefs": [
+        "Ek 10"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Emniyet Teşkilatı mensupları dernek kurucusu ve üyesi olamaz. Hangi derneklere üye olabilirler?",
+      "back": "Spor derneklerine.",
+      "explanation": "Dernek kurucusu ve üyesi olamama hükmü, çarşı ve mahalle bekçilerini de kapsar. Onlar da spor derneklerine üye olabilir.",
+      "articleRefs": [
+        "Ek 11"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Emniyet Teşkilatı mensubu, spor amacıyla kurulmuş her derneğin yönetim kurulunda görev alabilir mi?",
+      "back": "Hayır. Yönetim ve denetim kurullarında yalnız Emniyet Teşkilatı bünyesine spor amacıyla kurulmuş derneklerde görev alabilir. Spor derneklerine üye olmak ise serbesttir.",
+      "explanation": "Üyelik ile yönetimde görev almak ayrı düzenlenmiştir. Üyelik bütün spor dernekleri için mümkündür. Yönetim ve denetim kurulu görevi ise Emniyet Teşkilatı bünyesine spor amacıyla kurulmuş derneklerle sınırlıdır.",
+      "articleRefs": [
+        "Ek 11"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Emniyet Teşkilatı mensubunun bir vakfın kurucusu olabilmesi neye bağlıdır?",
+      "back": "Emniyet Genel Müdürünün teklifiyle İçişleri Bakanının iznine.",
+      "explanation": "Teklif Emniyet Genel Müdüründen, izin İçişleri Bakanından gelir. Aynı izin, bu vakıfların yönetim organlarında görev almak için de aranır. Hüküm çarşı ve mahalle bekçileri için de geçerlidir.",
+      "articleRefs": [
+        "Ek 11"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Polis çevik kuvvet birimleri ilçelerde hangi birime bağlı olarak kurulur?",
+      "back": "Emniyet amirliklerine.",
+      "explanation": "İl merkezlerinde ise emniyet müdürlüklerine bağlı olarak kurulurlar. Her iki durumda da birimler emniyet teşkilatı bünyesindedir.",
+      "articleRefs": [
+        "Ek 12"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Polis çevik kuvvet birimleri hangi makamın gerekli gördüğü yerlerde kurulur?",
+      "back": "İçişleri Bakanlığının. Birimler, İçişleri Bakanlığınca gerekli görülen il merkezlerinde ve ilçelerde kurulur.",
+      "explanation": "Gerekli görülen il merkezlerinde emniyet müdürlüklerine, ilçelerde emniyet amirliklerine bağlı olarak kurulurlar.",
+      "articleRefs": [
+        "Ek 12"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Polis çevik kuvvet birimlerinin kadroları içinde hangi birimler de bulunur?",
+      "back": "Özel timler.",
+      "explanation": "Polis çevik kuvvet birimleri emniyet teşkilatı bünyesinde kurulur ve kadrolarında özel timler de yer alır.",
+      "articleRefs": [
+        "Ek 12"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Polis çevik kuvvet birimleri hangi nitelikteki toplantı ve gösteri yürüyüşlerinin düzenini ve güvenliğini sağlamakla görevlendirilir?",
+      "back": "Kanuna uygun olanların.",
+      "explanation": "Kanuna aykırı sokak ve meydan hareketlerinde görev farklıdır. Bu birimler o hareketleri önler ve bu hareketlerde toplumun veya kişilerin maddi ve manevi varlıklarını tecavüzlerden korur.",
+      "articleRefs": [
+        "Ek 13"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Kamu düzenini bozabilecek toplumsal hareketlerin meydana gelmesi muhtemel yerlerde polis çevik kuvvet birimleri ne yapar?",
+      "back": "Önleyici tedbirleri alır ve bu yerlerde devriye hizmetlerini yürütür.",
+      "explanation": "Bu görev, toplumsal hareket henüz meydana gelmeden önceki aşamaya yöneliktir. Yalnız kamu düzenini bozabilecek nitelikteki hareketlerin meydana gelmesi muhtemel yerleri kapsar.",
+      "articleRefs": [
+        "Ek 13"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Polis çevik kuvvet birimleri, her türlü tören veya gösteride güvenlik önlemleri için koşulsuz görevlendirilebilir mi?",
+      "back": "Hayır. Bu görev diğer polis kuvvetlerinin yetersizliği halinde söz konusudur. O durumda birimler gerekli güvenlik önlemlerini alır ve düzeni sağlar.",
+      "explanation": "Zor kullanma da her durumda öngörülmez. Yalnız sayılan durumlarda meydana gelen kanuna aykırı olayların etkisiz hale getirilmesinde ve gerekirse başvurulur.",
+      "articleRefs": [
+        "Ek 13"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Polis çevik kuvvet birimleri ilçelerde hangi adla kurulur?",
+      "back": "Çevik kuvvet grup amirliği adıyla.",
+      "explanation": "Kuruluş, illerin teşkilat, malzeme ve kadro esaslarında belirlenen ve gruplandırılmış standart kuruluş modellerine göre yapılır.",
+      "articleRefs": [
+        "Ek 14"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "İl emniyet müdürlüklerinde polis çevik kuvvet birimi yalnız çevik kuvvet şube müdürlüğü adıyla mı kurulur?",
+      "back": "Hayır. İl emniyet müdürlüklerinde çevik kuvvet şube müdürlüğü veya çevik kuvvet grup amirliği adıyla kurulur.",
+      "explanation": "Kuruluş, illerin teşkilat, malzeme ve kadro esaslarında belirlenen ve gruplandırılmış standart kuruluş modellerine göre yapılır. İlçelerde ise birimin adı çevik kuvvet grup amirliğidir.",
+      "articleRefs": [
+        "Ek 14"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Polis çevik kuvvet birimlerinin kurulması ve donatımı hangi çerçevede sağlanır?",
+      "back": "Emniyet Genel Müdürlüğünce hazırlanacak bir plan çerçevesinde.",
+      "explanation": "Plan, illerin teşkilat, malzeme ve kadro esaslarında belirlenen ve gruplandırılmış standart kuruluş modellerine göre uygulanır.",
+      "articleRefs": [
+        "Ek 14"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Polis çevik kuvvet birimlerine seçilip görevlendirilen personelin bu birimlerdeki hizmet süresi ne kadardır?",
+      "back": "Üç yıl.",
+      "explanation": "Bu süre, idarenin gerekli görmesi veya personelin istemi üzerine uzatılabilir.",
+      "articleRefs": [
+        "Ek 15"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Polis çevik kuvvet birimlerindeki hizmet süresi en fazla ne kadar uzatılabilir?",
+      "back": "Üç yıla kadar (idarenin gerekli görmesi veya personelin istemi üzerine).",
+      "explanation": "Uzatma, idarenin gerekli görmesi veya personelin istemi üzerine yapılır.",
+      "articleRefs": [
+        "Ek 15"
+      ],
+      "derivedNumbers": [
+        {
+          "value": 6,
+          "expr": "3 + 3",
+          "refs": [
+            "Ek 15"
+          ],
+          "note": "üç yıllık hizmet süresi ile üç yıla kadar uzatmanın toplamı"
+        }
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Polis çevik kuvvet biriminde görevli personel, hizmetini tamamlamadan emniyet teşkilatının diğer hizmet birimlerinde görevlendirilebilir mi?",
+      "back": "Hayır. Ancak özel harekat temel kursuna katılıp özel harekat branşına aktarılanlar bu süreye tabi değildir.",
+      "explanation": "İstisna yalnız iki şartı birlikte taşıyanlara uygulanır: özel harekat temel kursuna katılmış olmak ve özel harekat branşına aktarılmak.",
+      "articleRefs": [
+        "Ek 15"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Polis çevik kuvvet birimlerinin başka illerde geçici görevlendirilmesinde öneriyi hangi makam yapar?",
+      "back": "Emniyet Genel Müdürü.",
+      "explanation": "Süreç ilgili valinin istemiyle başlar, Emniyet Genel Müdürünün önerisiyle ilerler ve İçişleri Bakanının onayıyla tamamlanır. Görevlendirme, emniyet ve asayişin gerektirdiği hallerde ve geçici olarak yapılır. İhtiyaç görülmesi halinde diğer emniyet hizmetleri sınıfı personeli de görevlendirilebilir.",
+      "articleRefs": [
+        "Ek 16"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Başka ile geçici olarak görevlendirilen personelin beslenme ve barınma ihtiyaçları, kuvvetin bağlı olduğu il valiliğince mi karşılanır?",
+      "back": "Hayır. Beslenme ve barınma ile geriye sevk, gönderildiği ilin valiliğince karşılanır. Kuvvetin bağlı olduğu il valiliği yalnız görev yerine sevki karşılar.",
+      "explanation": "Aynı düzen, bu personele destek olmak üzere görevlendirilen Emniyet Genel Müdürlüğünün diğer personeli için de geçerlidir.",
+      "articleRefs": [
+        "Ek 16"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Başka ile geçici görevlendirme masrafları için Emniyet Genel Müdürlüğü bütçesinde ne açılır?",
+      "back": "Özel bir harcama kalemi. Bu amaçla yapılacak harcamalarda ödeme emri aranmaz.",
+      "explanation": "Masraflar sevk, geriye sevk ve beslenme ile barınma ihtiyaçlarıdır. Bunlar valiliklerce karşılanır.",
+      "articleRefs": [
+        "Ek 16"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Polis çevik kuvvet birimlerinde görevli personel hangi amaçla eğitime tabi tutulur?",
+      "back": "Hizmetin gerektirdiği bedeni ve fikri kabiliyetlerinin geliştirilmesi amacıyla.",
+      "articleRefs": [
+        "Ek 17"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Polis çevik kuvvet birimlerinin emir ve komuta düzenini düzenleyen yönetmeliği hangi makam hazırlar?",
+      "back": "İçişleri Bakanlığı.",
+      "explanation": "Aynı yönetmelik başka konuları da düzenler: birimlerin kuruluş şekli, personelin nitelikleri ve seçilmeleri, niteliklerin değişmesi veya sağlık nedenleriyle başka hizmetlere geçirilme ya da birimlerden alınma şartları, görevlerin yerine getirilme esas ve usulleri ve eğitimlerde gözönüne alınacak esaslar.",
+      "articleRefs": [
+        "Ek 18"
+      ]
+    }
+  ]
+}

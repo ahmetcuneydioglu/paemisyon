@@ -1,0 +1,265 @@
+{
+  "deck": {
+    "topicId": "65aef8de-07cb-49f6-8665-00adc0ef5754",
+    "legislationSlug": "2559-sayili-polis-vazife-ve-salahiyet-kanunu-pvsk",
+    "unitSlug": "pvsk-teskilat-genel-hukumler",
+    "sourceLabel": "AI bilgi kartı — 2559 Sayılı Polis Vazife ve Salâhiyet Kanunu (PVSK) md 22–28, Ek 5, Ek 7, Ek 10, Geçici 2",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: pvsk-teskilat-genel-hukumler özeti + resmî madde metni); denetim düzeltmesi 7 Kas 2026 (2 kart + #6, #11, #21, #25 çıkarıldı: kalkmış kurum / mülga atıf / dolmuş geçici hüküm)"
+  },
+  "cards": [
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Polis Vazife ve Salahiyet Kanununda yazılı görevler için en büyük mülkiye amirlerinin vereceği emirleri re'sen kim verebilir?",
+      "back": "Dahiliye Vekili, yani İçişleri Bakanı, bu emirleri re'sen verebilir.",
+      "explanation": "Re'sen, kendiliğinden demektir. Kanunda yazılı vazife ve salahiyetlerin yapılması ve kullanılması için en büyük mülkiye amirlerinin vereceği emirleri Dahiliye Vekili de doğrudan verebilir.",
+      "articleRefs": [
+        "22"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Umumi ve hususi kanunlarla polise verilen, ama Polis Vazife ve Salahiyet Kanununda yazılı olmayan görev ve yetkilerin hükümlerine ne olur?",
+      "back": "Bakidir; o vazife ve salahiyetlerin hükümleri geçerliliğini korur.",
+      "explanation": "Polisin görev ve yetkileri yalnız bu Kanunda yazılanlardan ibaret değildir. Umumi ve hususi kanunlarla verilmiş vazife ve salahiyetlerin hükümleri yerinde durur.",
+      "articleRefs": [
+        "23"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Mahsus zabıta teşkilatı olan bir işte, o teşkilata mensup memur bulunmayan yerde inzıbati muameleleri yapmaya kim salahiyetlidir?",
+      "back": "Polis; o işlere ait inzıbati muameleleri yapmaya salahiyetlidir.",
+      "explanation": "Polisin bu yetkiyi kullanabilmesinin şartı, mahsus zabıta teşkilatına mensup memurun o yerde bulunmamasıdır.",
+      "articleRefs": [
+        "24"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Polis teşkilatı bulunmayan bir yerde bu Kanunda yazılı görevleri yalnız il jandarma komutanı mı yapar?",
+      "back": "Hayır. Bu görevleri il, ilçe ve bucak jandarma komutanları ile jandarma karakol komutanları yapar ve yetkileri de onlar kullanır.",
+      "explanation": "Görevin jandarmaya geçmesinin şartı, o yerde polis teşkilatının bulunmamasıdır. Sayılan komutanlar bu durumda yalnız görev yapmaz, Kanunda yazılı yetkileri de kullanır.",
+      "articleRefs": [
+        "25"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Polis Vazife ve Salahiyet Kanununun tatbik suretini gösteren yönetmeliği kim çıkarır?",
+      "back": "Cumhurbaşkanı; bu yönetmelik Cumhurbaşkanınca çıkarılır.",
+      "articleRefs": [
+        "26"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Genel güvenlik, kaçakçılık ve uyuşturucu maddelerle ilgili önemli olaylar için merkez personelinden ekipleri (timleri) kim görevlendirebilir?",
+      "back": "İçişleri Bakanlığı; bu ekipleri doğrudan ya da ilgili valinin talebi üzerine görevlendirebilir.",
+      "explanation": "Ekiplerin işi bu önemli olayları takip etmek, gerekiyorsa müdahale ederek soruşturmasını yapmaktır.",
+      "articleRefs": [
+        "Ek 5"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Bir ilde soruşturulan olay başka illerde de araştırma ve soruşturma gerektiriyorsa, iller arasında ekipleri kim görevlendirebilir?",
+      "back": "İlgili valilikler; iller arasında ekip görevlendirebilir.",
+      "explanation": "Bu yol, olayın aydınlatılması, delillerin toplanması ve sanıkların yakalanması başka illerde de araştırma ve soruşturma yapılmasını gerektirdiğinde açılır.",
+      "articleRefs": [
+        "Ek 5"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Ek 5 uyarınca görevlendirilen ekiplerin polis yetkilerini kullanması polis bölgesi sınırlarıyla kayıtlı mıdır?",
+      "back": "Hayır. Bu ekiplerin polis yetkilerini kullanması polis bölgesi sınırları ile kayıtlı değildir.",
+      "explanation": "Genel ve özel kolluk makam ve memurları bu ekiplere gereken her türlü yardımı yapmaya mecburdur.",
+      "articleRefs": [
+        "Ek 5"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Polis istihbarat faaliyetlerini hangi alanlarda yürütür?",
+      "back": "Ülke seviyesinde ve sanal ortamda; bilgi toplar, değerlendirir, yetkili mercilere veya kullanma alanına ulaştırır.",
+      "explanation": "Amaç, Devletin ülkesi ve milletiyle bölünmez bütünlüğüne, Anayasa düzenine ve genel güvenliğine dair önleyici ve koruyucu tedbirleri almak, emniyet ve asayişi sağlamaktır. Polis bu iş için Devletin diğer istihbarat kuruluşlarıyla işbirliği yapar.",
+      "articleRefs": [
+        "Ek 7"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Gecikmesinde sakınca bulunan hâlde önleme dinlemesi kimlerin yazılı emriyle yapılabilir?",
+      "back": "Emniyet Genel Müdürünün, Emniyet Genel Müdürlüğü İstihbarat Dairesi Başkanının ya da bilişim suçlarıyla sınırlı olarak bilişim suçları ile ilgili daire başkanının yazılı emriyle.",
+      "explanation": "Kural hâkim kararıdır. Yazılı emir yalnız gecikmesinde sakınca bulunan hâllerde devreye girer.",
+      "articleRefs": [
+        "Ek 7"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Ek 5'e göre görevlendirilen ekipler, görev yaptıkları mahalde kime bilgi vermek zorundadır?",
+      "back": "Mahallin en büyük mülki amirine; görevin ifası sırasında ona karşı da sorumludurlar.",
+      "explanation": "Bilgi verme yükümlülüğü de görevin ifası sırasındaki sorumluluk da aynı amire, yani mahallin en büyük mülki amirine karşıdır.",
+      "articleRefs": [
+        "Ek 5"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Bilişim suçları ile ilgili daire başkanı, gecikmesinde sakınca bulunan her önleme dinlemesinde yazılı emir verebilir mi?",
+      "back": "Hayır. Bu daire başkanının yazılı emir yetkisi bilişim suçlarıyla sınırlıdır. Diğer suçlarda emri Emniyet Genel Müdürü ya da İstihbarat Dairesi Başkanı verir.",
+      "explanation": "Hâkim kararlarını ve yazılı emirleri de bilişim suçlarıyla sınırlı olarak bilişim suçlarıyla ilgili daire başkanlığı görevlileri yerine getirir.",
+      "articleRefs": [
+        "Ek 7"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Gecikmesinde sakınca bulunan hâlde verilen yazılı dinleme emri kaç saat içinde hâkimin onayına sunulur?",
+      "back": "24 saat içinde yetkili ve görevli hâkimin onayına sunulur.",
+      "explanation": "Süre dolar ya da hâkim aksine karar verirse tedbir derhal kaldırılır.",
+      "articleRefs": [
+        "Ek 7"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Yazılı dinleme emri onaya sunulduktan sonra hâkim kararını en geç kaç saat içinde verir?",
+      "back": "En geç 48 saat içinde.",
+      "explanation": "Sıra şöyle işler: emir 24 saat içinde hâkimin onayına sunulur, hâkim de en geç 48 saat içinde karar verir.",
+      "articleRefs": [
+        "Ek 7"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Görevin icrası sırasında bir uzvunu kaybeden personelin ihtiyaç duyduğu cihaz ve sistemleri kim karşılar?",
+      "back": "Emniyet Genel Müdürlüğü; cihaz ve sistemleri aynen temin eder ya da bedelleri Emniyet Genel Müdürlüğü bütçesinden ödenir.",
+      "explanation": "Kapsamda, görevin icrası sırasında veya görevin icrasından dolayı bir uzvunu veya duyusunu tamamen veya kısmen kaybedenler vardır. Bu kişilerin rehabilitasyonu da sağlanır.",
+      "articleRefs": [
+        "Ek 10"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Polisin önleme dinlemesinde yetkili ve görevli hâkim kimdir?",
+      "back": "Ankara ağır ceza mahkemesi üyesi.",
+      "explanation": "Gecikmesinde sakınca bulunan hâlde verilen yazılı emir de bu hâkimin onayına sunulur.",
+      "articleRefs": [
+        "Ek 7"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Süre dolduğunda ya da hâkim aksine karar verdiğinde dinleme tedbiri 10 gün içinde kaldırılabilir mi?",
+      "back": "Hayır. Tedbir derhal kaldırılır; 10 gün, dinlemenin içeriğine ilişkin kayıtların en geç yok edilme süresidir.",
+      "explanation": "Kayıtların yok edildiği bir tutanakla tespit edilir. Bu tutanak denetimde ibraz edilmek üzere muhafaza edilir.",
+      "articleRefs": [
+        "Ek 7"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Önleme dinlemesi tedbiri sona erdiğinde, dinlemenin içeriğine ilişkin kayıtlar en geç kaç gün içinde yok edilir?",
+      "back": "En geç 10 gün içinde; durum bir tutanakla tespit edilir.",
+      "explanation": "Tutanak, denetimde ibraz edilmek üzere muhafaza edilir.",
+      "articleRefs": [
+        "Ek 7"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Önleme dinlemesi kararı en fazla kaç ay için verilebilir?",
+      "back": "En fazla 3 ay için; bu süre aynı usulle uzatılabilir.",
+      "explanation": "Kararda ve yazılı emirde tedbirin türü, kapsamı ve süresi ile tedbire başvurulmasını gerektiren nedenler belirtilir.",
+      "articleRefs": [
+        "Ek 7"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Terör istisnası dışında bir önleme dinlemesi kararı, uzatmalarla birlikte toplam en fazla kaç ay sürebilir?",
+      "back": "12 ay: karar en fazla 3 ay için verilir, üçer ayı geçmeyecek şekilde en fazla 3 defa uzatılabilir.",
+      "explanation": "Terör örgütünün faaliyeti çerçevesinde devam eden tehlikelerde hâkim, her biri 3 aydan fazla olmamak üzere süreyi müteaddit defalar uzatabilir.",
+      "articleRefs": [
+        "Ek 7"
+      ],
+      "derivedNumbers": [
+        {
+          "value": 12,
+          "expr": "3 + 3 * 3",
+          "refs": [
+            "Ek 7"
+          ],
+          "note": "ilk karar süresi artı üçer aylık en fazla üç uzatma"
+        }
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Teknik araçlarla izleme, gecikmesinde sakınca bulunan hâlde Emniyet Genel Müdürünün yazılı emriyle yapılabilir mi?",
+      "back": "Hayır. Teknik araçlarla izleme ancak hâkim kararı alınmak koşuluyla yapılabilir.",
+      "explanation": "Bu izleme, istihbarat faaliyetlerinde maddede belirtilen suçların önlenmesi amacıyla yapılır.",
+      "articleRefs": [
+        "Ek 7"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Bir kamu kurumu istenen bilgi ve belgeyi ticari sır gerekçesiyle vermezse polis bunlardan nasıl yararlanabilir?",
+      "back": "Ancak hâkim kararı ile yararlanabilir.",
+      "explanation": "Önce gerekçe gösterilerek yazılı talepte bulunulabilir. Kamu kurum ve kuruluşları ile kamu hizmeti veren kuruluşlar bilgi ve belgeyi kanuni sebeplerle veya ticari sır gerekçesiyle vermezse hâkim kararı gerekir.",
+      "articleRefs": [
+        "Ek 7"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Ek 7'deki istihbarat faaliyetlerinin denetimini yalnız Cumhuriyet savcıları mı yapar?",
+      "back": "Hayır. Denetimi sıralı kurum amirleri, mülki idare amirleri, Emniyet Genel Müdürlüğü ve ilgili bakanlığın teftiş elemanları yapar.",
+      "explanation": "Cumhuriyet savcıları, kayıtları amaç dışı kullanan ya da gizlilik ilkesine aykırı hareket edenler hakkında doğrudan soruşturma yapar. Fiil görev sırasında veya görevden dolayı işlenmiş olsa bile bu kural uygulanır.",
+      "articleRefs": [
+        "Ek 7"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Ek 7'deki istihbarat faaliyetleri yılda en az kaç defa denetlenir?",
+      "back": "Yılda en az bir defa; sonuçlar rapor hâlinde Türkiye Büyük Millet Meclisi Güvenlik ve İstihbarat Komisyonuna sunulur.",
+      "articleRefs": [
+        "Ek 7"
+      ]
+    }
+  ]
+}

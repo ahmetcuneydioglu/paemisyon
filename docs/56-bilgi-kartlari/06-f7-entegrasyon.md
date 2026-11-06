@@ -1,7 +1,7 @@
 # Doc 56 / 06 — Aşama 7: entegrasyon ve test
 
 Tarih: 5–6 Kasım 2026. Durum: **yerel uçtan uca tur + telefon turu yapıldı; §3b–3h özellikleri canlıda; üretim
-hattı kuruldu; Anayasa 12 + TCK 17 + CMK 15 deste denetimli olarak prod'a `in_review` yüklendi (§3i–§3k); yayın ve bayrak açma insanda.** Önceki: [05-f6-admin.md](05-f6-admin.md).
+hattı kuruldu; 60 deste (Anayasa 12, TCK 17, CMK 15, polis mevzuatı 16) denetimli olarak prod'a `in_review` yüklendi (§3i–§3l); yayın ve bayrak açma insanda.** Önceki: [05-f6-admin.md](05-f6-admin.md).
 Aşama 1–6 PR #19 ile main'de (5 Kas 02:24 UTC); bu belge o kodun lokal doğrulamasını anlatır.
 
 ## 1. Düzenek (yerel; prod'a dokunulmadı)
@@ -254,7 +254,7 @@ Doc 53'ün 15 CMK ünitesi (özet + girdi hazır) aynı hatla; parti = ünite, h
 | cmk-deliller-hukum | 206–232 | 31 | GEÇTİ (ilk tur) |
 | cmk-magdur-katilma-ozel-usuller | 233–259 | 30 | GEÇTİ (ilk tur) |
 | cmk-kanun-yollari | 260–294, 296–307 | 29 | GEÇTİ (ilk tur) |
-| cmk-olaganustu-kanun-yollari-giderler | 308, 308/A, 309–333, Ek 1, Geçici 1, Geçici 2, Geçici 3, Geçici 4, Geçici 5, Geçici 6, Geçici 7, Geçici 8 | 28 | (denetimde) |
+| cmk-olaganustu-kanun-yollari-giderler | 308, 308/A, 309–333, Ek 1, Geçici 1, Geçici 2, Geçici 3, Geçici 4, Geçici 5, Geçici 6, Geçici 7, Geçici 8 | 27 | DÜZELT 3 → GEÇTİ (Geçici 2 kartı çıkarıldı) |
 
 Toplam **427 kart**, 15/15 denetimden geçti, prod `in_review`. Hat olayları: ana döngüde dört ünite (deliller, mağdur, kanun yolları,
 olağanüstü) Anthropic API zaman aşımıyla (ETIMEDOUT, her biri ~50 dk takıldı) düştü; `uret-cmk-tekrar.sh`
@@ -267,11 +267,52 @@ kartlar: md 253/3 önödeme-uzlaştırma (7571), md 230/1-b, md 231/11 ve 231/14
 1000 TL nominal; md 128'de "Hazine Müsteşarlığı" madde metnindeki adıyla; md 80/3 ve 231 (7589, Temmuz 2026)
 ile md 174/1-e (7593, Ağustos 2026) çok yeni hükümler.
 
+## 3l. Polis mevzuatı: PVSK 5 + 3201 6 + 7068 5 ünite (7 Kas gece)
+
+Kullanıcı onayıyla son tur; Doc 53 üniteleri (özet + girdi) aynı hatla, hedef 28, zaman aşımı için
+iki geçişli döngü (bu turda hiç düşmedi). Denetim K12 (yetki sahibi, bekleme süreleri, fiil-ceza eşlemesi,
+mülga/dolmuş ek ve geçici maddeler) sınıfıyla çalıştı. Bu turun ayırt edici bulgusu **eskime**: 1934 (PVSK)
+ve 1937 (3201) tarihli kanunların metninde kalkmış kurumlar, eski TL tutarları, mülga kanunlara atıflar ve
+süresi dolmuş geçici hükümler var; model bunları yürürlükteki düzen gibi kart yapıyordu. Sonuç: 16 destede
+**24 kart çıkarıldı** (TCK/CMK'da toplam 3'tü).
+
+| Ünite | md | Kart | Denetim |
+|---|---|---|---|
+| pvsk-gorev-emir-kimlik | 1, 2, 4, 4/A, 5 | 27 | GEÇTİ (ilk tur) |
+| pvsk-onleme-aramasi-yakalama | 9, 13, 13/A, 15, 20, Ek 2, Ek 3 | 29 | GEÇTİ (ilk tur) |
+| pvsk-teskilat-genel-hukumler | 22–28, Ek 5, Ek 7, Ek 10, Geçici 2 | 24 | GEÇTİ (ilk tur) |
+| pvsk-umuma-acik-yerler | 6–8, 10–12, 14, 19, 21, Ek 1, Geçici 1 | 22 | GEÇTİ (ilk tur) |
+| pvsk-zor-silah-adli-gorev | 16, 17, Ek 4, Ek 6, Ek 9 | 28 | GEÇTİ (ilk tur) |
+| etk-teskilat-makamlar | 1–6, 8–12 | 26 | GEÇTİ (ilk tur) |
+| etk-rutbeler-teskilat-yapisi | 13, 15, 16, 20–22, 26, 35–41 | 25 | GEÇTİ (ilk tur) |
+| etk-terfi-atama-cikma | 47, 51–56, 59–67 | 22 | GEÇTİ (ilk tur) |
+| etk-performans-madalya-son-hukumler | 81, 82, 85–88, 90, 91, 93–98 | 24 | GEÇTİ (ilk tur) |
+| etk-ek-maddeler-1 | Ek 1, Ek 2, Ek 3, Ek 4, Ek 5, Ek 6, Ek 7, Ek 8, Ek 9, Ek 10, Ek 11, Ek 12, Ek 13, Ek 14, Ek 15, Ek 16, Ek 17, Ek 18 | 28 | GEÇTİ (ilk tur) |
+| etk-ek-maddeler-2-gecici | Ek 21, Ek 24, Ek 25, Ek 26, Ek 27, Ek 29, Ek 30, Ek 31, Ek 32, Ek 33, Ek 34, Ek 35, Ek 36, Ek 37, Geçici 26 | 25 | GEÇTİ (ilk tur) |
+| gkdk-amac-kapsam-tanimlar | 1–6 | 25 | GEÇTİ (ilk tur) |
+| gkdk-disiplin-cezalari | 7, 9–12 | 28 | GEÇTİ (ilk tur) |
+| gkdk-ceza-verilecek-fiiller | 8 | 27 | GEÇTİ (ilk tur) |
+| gkdk-disiplin-amirleri-kurullari | 13–26 | 28 | GEÇTİ (ilk tur) |
+| gkdk-sorusturma-usulu | 27–37, 39, Geçici 1, Geçici 2 | 26 | GEÇTİ (ilk tur) |
+
+Toplam **414 kart**, 16/16 denetimden geçti, prod `in_review`. **İstem kuralları (bu turda eklendi):** AYM iptaliyle "(…)" boşluğu
+kalan fıkradan kart yok (PVSK 4/A); mülga hükme atıf yapan bentten kart yok (Ek 3/B → md 17); kalkmış kurum
+(İcra Vekilleri Heyeti, Başbakanlık, umumi müfettiş…), eski TL tutarı, kalkmış düzenleme (il daimi encümeni,
+Seyrüsefer Talimatnamesi, Matbuat Kanunu), 765 sayılı TCK atfı, süresi dolmuş geçici hüküm → kart yok; farklı dönem
+derece numaraları md 13 cetveline eşlenmez; aynı konuyu güncel madde (3201 md 55) düzenliyorsa eski maddeden
+(47, 56, 65–67) kart yok; mülga kanun adı (743 Medeni) ön yüzde çerçeve olmaz; eski kurum adına güncel karşılık
+yalnız kesin ad değişikliğinde, çekim eki parantezden önce ("Dahiliye Vekilindedir (İçişleri Bakanı)").
+Kapıya "md X'teki … ise" karşılaştırma kalıbı eklendi.
+
+**Yayın öncesi insan notları (polis mevzuatı):** PVSK Ek 7'nin CMK 250 atfı (mülga, seri muhakeme olarak yeniden
+yazıldı) ve md 28 İcra Vekilleri Heyeti — bu hükümlerden kart yok ama üniteler panelde okunurken bilinmeli;
+PVSK zor-silah #24'teki 1481 sayılı Kanunun yürürlüğü teyit edilmeli; md 6 idari para cezası tutarları nominal.
+
 ## 4. Yapılmayan / sıradaki
 
 - **Cihaz testi (Expo):** simülatörde temel akış doğrulandı; gerçek cihazda jest hissi, SE boyutu ve uçak
   modu kuyruğu kullanıcı göz testine kaldı.
-- **Üretim hattı:** Anayasa 12 + TCK 17 + CMK 15 parti bitti (§3i–§3k); polis mevzuatı (PVSK 5, 3201 6, 7068 5) sırada.
+- **Üretim hattı:** Anayasa 12 + TCK 17 + CMK 15 + polis mevzuatı 16 = 60 deste bitti (§3i–§3l); Doc 53'teki bütün üniteler kartlandı.
 - **İki cihaz arası ilerleme, yayından kaldırılan kartın kuyruktan düşmesi:** API spec'te var, canlı denenmedi.
 - **Bayrak açma sırası:** prod'da pilot kartlar panelden (tek tek ya da toplu) yayınlanır → `beta` rolüyle canlı göz testi →
   `flashcards_enabled` panelden açılır. Bildirim preset'i `flashcards_due` `paused` doğar, panelden açılır.

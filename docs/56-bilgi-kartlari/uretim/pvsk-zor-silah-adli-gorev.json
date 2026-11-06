@@ -1,0 +1,294 @@
+{
+  "deck": {
+    "topicId": "65aef8de-07cb-49f6-8665-00adc0ef5754",
+    "legislationSlug": "2559-sayili-polis-vazife-ve-salahiyet-kanunu-pvsk",
+    "unitSlug": "pvsk-zor-silah-adli-gorev",
+    "sourceLabel": "AI bilgi kartı — 2559 Sayılı Polis Vazife ve Salâhiyet Kanunu (PVSK) md 16, 17, Ek 4, Ek 6, Ek 9",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: pvsk-zor-silah-adli-gorev özeti + resmî madde metni); denetim notları 7 Kas 2026 (#9, #19)"
+  },
+  "cards": [
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Polis görevini yaparken direnişle karşılaşırsa zor kullanma yetkisini hangi amaçla ve ne ölçüde kullanır?",
+      "back": "Direnişi kırmak amacıyla ve onu kıracak ölçüde kullanır. Yetki, görev sırasında direnişle karşılaşma hâline bağlıdır.",
+      "explanation": "Neyin ve ne kadar kullanılacağını direnmenin mahiyeti ve derecesi belirler. Hedef, direnenleri etkisiz hâle getirmektir.",
+      "articleRefs": [
+        "16"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Zor kullanma yetkisi kapsamında, kademeli olarak artan nispette hangi araçlara hangi sırayla başvurulabilir?",
+      "back": "Bedenî kuvvet, maddî güç ve kanunî şartları gerçekleştiğinde silah. Bu sıra direnmenin mahiyetine ve derecesine göre izlenir.",
+      "explanation": "Kademe, direnenleri etkisiz hâle getirecek şekilde artar. Silah için ayrıca kanunî şartların gerçekleşmesi aranır.",
+      "articleRefs": [
+        "16"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Polisin direnen kişilere karşı ya da eşya üzerinde doğrudan doğruya kullandığı bedenî güce ne ad verilir?",
+      "back": "Bedenî kuvvet.",
+      "explanation": "Bedenî kuvvetin dışında kullanılan araçlar maddî güçtür: kelepçe, cop, basınçlı ve/veya boyalı su, göz yaşartıcı gazlar veya tozlar, fizikî engeller, polis köpekleri ve atları ile sair hizmet araçları.",
+      "articleRefs": [
+        "16"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Polisin kanun ve usul dairesinde verdiği emre itaatsizlik eden kişi hakkında ne yapılır?",
+      "back": "Karakola götürülür ve hakkında tanzim olunacak evrakla beraber adliyeye verilir.",
+      "explanation": "Aynı sonuç, polisin ittihaz eylediği (aldığı) tedbirlere riayetsizlik edenler için de uygulanır.",
+      "articleRefs": [
+        "17"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Suçla karşılaşan polis, tespit ve muhafaza ettiği sanık ve suç delillerini kime teslim eder?",
+      "back": "Yetkili zabıtaya teslim eder. Bundan önce suça el koyar, suçu önler, sanık ve suç delillerini tespit ve muhafaza eder.",
+      "explanation": "Bu görev ve yetki, polisin görevli bulunduğu mülki sınırlar içinde geçerlidir.",
+      "articleRefs": [
+        "Ek 4"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Polis, bir suça ilişkin olarak kendisine yapılan sözlü ihbar ve şikâyetleri ne yapar?",
+      "back": "Yazılı hâle getirir. Görevi sırasında öğrendiği suça ilişkin bilgileri de yazılı hâle getirir.",
+      "articleRefs": [
+        "Ek 6"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Acele tedbirleri aldıktan sonra polis, el koyduğu olayları, yakalanan kişileri ve uyguladığı tedbirleri kime bildirir?",
+      "back": "Derhal Cumhuriyet savcısına bildirir. Ardından savcının emri doğrultusunda işin aydınlatılması için gerekli soruşturma işlemlerini yapar.",
+      "explanation": "Acele tedbirler, olay yerinin korunması, delillerin tespiti ve delillerin kaybolmaması ya da bozulmaması içindir. Edinilen bilgi bir kabahate ilişkinse konu araştırılır ve gerekli yasal işlem yapılır veya yapılması sağlanır.",
+      "articleRefs": [
+        "Ek 6"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Olay yeri dışında kalan ve suça ilişkin delil elde edilebileceği yönünde kuvvetli şüphe bulunan konut, işyeri ve kamuya açık olmayan kapalı alanlarda hangi hükümler uygulanır?",
+      "back": "Ceza Muhakemesi Kanununun arama ve elkoymaya ilişkin hükümleri uygulanır.",
+      "explanation": "Olay yerinde ise polis, Cumhuriyet savcısının emriyle gerekli inceleme ve teknik araştırmaları yapar. Delilleri tespit eder, muhafaza altına alır ve incelenmek üzere ilgili yerlere gönderir.",
+      "articleRefs": [
+        "Ek 6"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Adliyeye ilişkin vazife ve işlerle ilgili bir hizmeti yerine getirirken silah kullanmak zorunda kalan polis hakkında soruşturmayı kim yapar?",
+      "back": "Bizzat Cumhuriyet savcıları veya yardımcıları yapar.",
+      "explanation": "Sanık polis, hakkında dava açılırsa duruşmadan vareste tutulabilir.",
+      "articleRefs": [
+        "Ek 9"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Polis köpekleri ve atları bedenî kuvvet kapsamında mıdır?",
+      "back": "Hayır, maddî güçtür. Bedenî kuvvet, polisin doğrudan doğruya kullandığı bedenî güçtür.",
+      "explanation": "Maddî güç, polisin direnen kişilere karşı ya da eşya üzerinde bedenî kuvvetin dışında kullandığı araçlardır. Kelepçe ve cop da bunlar arasındadır.",
+      "articleRefs": [
+        "16"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Zor kullanmadan önce ihtar yapılması her durumda şart mıdır?",
+      "back": "Hayır. Kural olarak ihtar yapılır. Ancak direnmenin mahiyeti ve derecesi göz önünde bulundurularak ihtar yapılmadan da zor kullanılabilir.",
+      "explanation": "İhtar ilgililere yapılır. İçeriği, direnmeye devam etmeleri hâlinde doğrudan doğruya zor kullanılacağıdır.",
+      "articleRefs": [
+        "16"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Toplu kuvvet olarak müdahale edilen durumda zorun derecesini ve kullanılacak araç ve gereçleri her polis kendisi mi belirler?",
+      "back": "Hayır. Toplu kuvvet müdahalesinde zorun derecesini ve araç ve gereçleri müdahale eden kuvvetin amiri tayin ve tespit eder.",
+      "explanation": "Toplu kuvvet dışında ise polis, direnmeyi etkisiz kılmak için kullanacağı araç ve gereci ve zorun derecesini kendisi takdir ve tayin eder.",
+      "articleRefs": [
+        "16"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Vazife yaparken polise mukavemette bulunan kişinin karakola götürülüp adliyeye verilmesi için md 17 hangi ihtimali arar?",
+      "back": "Kişinin, yakalanmadığı takdirde hareketlerine devam etmesinin melhuz (muhtemel) olmasını arar.",
+      "explanation": "Bu bent, vazife yaparken polise mukavemette bulunanları ve polisi vazifesinden alıkoymak maksadıyla ona zorla karşı koyanları kapsar.",
+      "articleRefs": [
+        "17"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Suça müdahale eden polise karşı işlenen suçun görevli memura karşı işlenmiş sayılması için polisin kendi hizmet branşında çalışıyor olması gerekir mi?",
+      "back": "Hayır. Polis, görevli bulunduğu mülki sınırlar içinde hizmet branşı, yeri ve zamanına bakılmaksızın suça el koyar. Bu müdahalede ona karşı işlenen suç, görevli memura karşı işlenmiş sayılır.",
+      "explanation": "Hüküm iki yönlüdür: müdahalede bulunan polisin işlediği suçlar da görevli memurun işlediği suç sayılır.",
+      "articleRefs": [
+        "Ek 4"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Faille gözaltına alınan şüphelinin aynı kişi olup olmadığını belirlemek için polis teşhisi kimin talimatıyla yaptırabilir?",
+      "back": "Cumhuriyet savcısının talimatıyla yaptırabilir. Teşhisin bu belirleme bakımından zorunlu olması gerekir.",
+      "explanation": "İşleme başlanmadan önce, teşhiste bulunacak kişinin faili tarif eden beyanları tutanağa bağlanır. Teşhis işleminin kendisi de tutanağa bağlanır.",
+      "articleRefs": [
+        "Ek 6"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Teşhiste bulunmaya kimler zorlanamaz?",
+      "back": "Tanıklıktan çekinebilecek olanlar zorlanamaz.",
+      "articleRefs": [
+        "Ek 6"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Teşhis işlemine tâbi tutulan kişilerin sayısı için ne aranır?",
+      "back": "Birden fazla olmaları aranır. Bu kişiler aynı cinsten olmalı ve yaş, boy, ağırlık, giyinme gibi görünüşe ilişkin hususlarda birbirine benzemelidir.",
+      "explanation": "Teşhis için gerekliyse şüphelinin görünüşünde gerekli değişiklikler yapılabilir. Teşhis sırasında her birinde bir numara bulundurulur.",
+      "articleRefs": [
+        "Ek 6"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Silah kullanması nedeniyle sanık olan polisin vekâlet verdiği avukatın ücreti hangi ödenekten karşılanır?",
+      "back": "Emniyet Genel Müdürlüğü bütçesine konulacak ödenekten karşılanır. Bu, İçişleri Bakanlığınca durumu uygun görülen polis için geçerlidir.",
+      "explanation": "Uygunluk, olayın mahiyetine ve kusurun derecesine göre değerlendirilir. Avukat tutma ve ücret ödeme usul ve esasları yönetmelikte gösterilir.",
+      "articleRefs": [
+        "Ek 9"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Polisin kendisine ya da başkasına yönelik saldırı karşısındaki savunması hangi kanunun meşru savunma hükümleri çerçevesinde yapılır?",
+      "back": "5237 sayılı Türk Ceza Kanunu. Polis burada zor kullanmaya ilişkin koşullara bağlı kalmaksızın savunmada bulunur.",
+      "explanation": "Meşru savunma hakkının kullanılması, polise silah kullanma yetkisi veren hâllerden biridir (a bendi).",
+      "articleRefs": [
+        "16"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Polis, yakalamayı sağlamak amacıyla hangi kişilere karşı silah kullanmaya yetkilidir?",
+      "back": "Hakkında tutuklama, gözaltına alma, zorla getirme kararı veya yakalama emri verilmiş kişilere ve suçüstü hâlinde şüpheliye karşı.",
+      "explanation": "Silah, bu kişilerin yakalanmasını sağlamak amacıyla ve sağlayacak ölçüde kullanılır. Silah kullanmadan önce kişiye duyabileceği şekilde \"dur\" çağrısı yapılır.",
+      "articleRefs": [
+        "16"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Molotof, patlayıcı, yanıcı, yakıcı, boğucu ya da yaralayıcı silahlarla saldıranlara karşı polis silahı hangi amaçla ve ne ölçüde kullanır?",
+      "back": "Saldırıyı etkisiz kılmak amacıyla ve etkisiz kılacak ölçüde kullanır.",
+      "explanation": "Saldırıya teşebbüs edenler de kapsamdadır. Saldırının hedefi şunlar olabilir: polisin kendisi, başkaları, işyerleri, konutlar, kamu binaları, okullar, yurtlar, ibadethaneler, araçlar ya da kişilerin tek tek veya toplu hâlde bulunduğu açık veya kapalı alanlar.",
+      "articleRefs": [
+        "16"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Teşhiste bulunan kişi ile teşhis işlemine tâbi tutulan kişiler arasında görme bakımından hangi kural uygulanır?",
+      "back": "Birbirlerini görmemeleri gerekir.",
+      "explanation": "Teşhis işlemine tâbi tutulan kişilerin işlem sırasında birlikte fotoğrafları çekilir ya da görüntüleri kayda alınır ve soruşturma dosyasına konur.",
+      "articleRefs": [
+        "Ek 6"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Teşhis işlemi en az kaç kez tekrarlanır?",
+      "back": "En az iki kez tekrarlanır. Teşhiste bulunacak kişiye, şüphelinin teşhis edilecek kişiler arasında yer almıyor olabileceği hatırlatılır.",
+      "articleRefs": [
+        "Ek 6"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "İlan edilerek aranan sanık ve hükümlülerin yakalanmasına yardımcı olanlara para ödülü hangi sayılı kanuna göre verilebilir?",
+      "back": "1481 sayılı Asayişe Müessir Bazı Fiillerin Önlenmesi Hakkında Kanuna göre. Bu kişilerin bulundukları yeri bildirenlere de ödül verilebilir.",
+      "explanation": "Ödülün miktarı İçişleri Bakanlığınca çıkarılacak yönetmelikte gösterilir. Gider, Emniyet Genel Müdürlüğü bütçesine konulacak ödenekten karşılanır. Ödül verilen kişilerin kimlikleri, rızaları olmadıkça hiçbir şekilde açıklanamaz.",
+      "articleRefs": [
+        "Ek 9"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "\"Dur\" çağrısı ve uyarı ateşi sırası, md 16'nın hangi fıkrasının hangi bendi kapsamında silah kullanılırken uygulanır?",
+      "back": "Yedinci fıkranın (c) bendi kapsamında, yani yakalama hâlinde uygulanır.",
+      "explanation": "Bu bent; tutuklama, gözaltına alma, zorla getirme kararı veya yakalama emri bulunan kişilerin ya da suçüstü hâlinde şüphelinin yakalanmasını kapsar. Çağrı, kişinin duyabileceği şekilde yapılır.",
+      "articleRefs": [
+        "16"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Yakalama hâlinde \"dur\" çağrısına uymayan ve uyarı ateşine rağmen kaçmakta ısrar eden kişi ele geçirilemiyorsa polis ne yapabilir?",
+      "back": "Kişinin yakalanmasını sağlamak amacıyla ve sağlayacak ölçüde silahla ateş edebilir.",
+      "explanation": "Sıra şöyledir: önce duyabileceği şekilde \"dur\" çağrısı yapılır. Kişi kaçmaya devam ederse önce uyarı amacıyla ateş edilebilir. Kaçmakta ısrar eder ve ele geçirilmesi mümkün olmazsa yakalamayı sağlayacak ölçüde ateş edilebilir.",
+      "articleRefs": [
+        "16"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Direnişi kırarken ya da yakalarken kendisine silahla saldırıya teşebbüs edilen polis, ateş etmeden önce \"dur\" çağrısı yapmak zorunda mıdır?",
+      "back": "Hayır. Silahla saldırıya teşebbüs eden kişiye karşı, saldırı tehlikesini etkisiz kılacak ölçüde duraksamadan silahla ateş edebilir.",
+      "explanation": "\"Dur\" çağrısı ve uyarı ateşi sırası, yedinci fıkranın (c) bendindeki yakalama hâline bağlıdır. Silahla saldırıya teşebbüs hâlinde polis duraksamadan ateş edebilir.",
+      "articleRefs": [
+        "16"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Teşhis, şüphelinin tek bir fotoğrafı üzerinden yaptırılabilir mi?",
+      "back": "Hayır. Fotoğraf üzerinden teşhis yaptırılabilir; ancak tek bir fotoğraf veya aynı kişinin farklı fotoğrafları üzerinden yaptırılamaz.",
+      "explanation": "Değişik kişilerin fotoğraflarının aynı büyüklük ve özellikte olması gerekir.",
+      "articleRefs": [
+        "Ek 6"
+      ],
+      "counterNumbers": []
+    }
+  ]
+}

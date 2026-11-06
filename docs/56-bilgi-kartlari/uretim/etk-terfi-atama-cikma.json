@@ -1,0 +1,235 @@
+{
+  "deck": {
+    "topicId": "9c9b822c-028f-4d9b-929f-ad8487d53db4",
+    "legislationSlug": "3201-sayili-emniyet-teskilat-kanunu",
+    "unitSlug": "etk-terfi-atama-cikma",
+    "sourceLabel": "AI bilgi kartı — 3201 Sayılı Emniyet Teşkilat Kanunu md 47, 51–56, 59–67",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: etk-terfi-atama-cikma özeti + resmî madde metni); denetim düzeltmesi 7 Kas 2026 (2 kart + #1, #2, #6, #10, #27, #28 çıkarıldı: md 47/56/65–67 1937 düzeni, konuyu bugün md 55 düzenliyor)"
+  },
+  "cards": [
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Polis amirlerinin rütbelere terfileri neye göre yapılır?",
+      "back": "Liyakate göre. Terfi ettirilecek personelin kurullarda görüşülmesi ise kıdem sırasına göre yapılır.",
+      "explanation": "Kıdem sırası görüşme sırasını belirler, kimin terfi edeceğini ise liyakat belirler. Kıdem sırasını Emniyet Genel Müdürlüğü her yıl mart ayında Teşkilata duyurur.",
+      "articleRefs": [
+        "55"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Başkomiser rütbesinde zorunlu en az bekleme süresi kaç yıldır?",
+      "back": "3 yıl. Başkomiserin meslek derecesi 7'dir.",
+      "explanation": "Emniyet Amiri de 3 yıl bekler; onun meslek derecesi 6'dır.",
+      "articleRefs": [
+        "55"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Komiser rütbesinde zorunlu en az bekleme süresi 2 yıl mıdır?",
+      "back": "Hayır. Komiserin en az bekleme süresi 4 yıldır (meslek derecesi 8). 2 yıl; Dördüncü, Üçüncü, İkinci Sınıf Emniyet Müdürleri ile 2. derecedeki Birinci Sınıf Emniyet Müdürünün süresidir.",
+      "explanation": "Komiser Yardımcısı da 4 yıl bekler (meslek derecesi 9). Bekleme süresinin tamamlanması, terfiin kurulda görüşülebilmesinin şartlarından biridir.",
+      "articleRefs": [
+        "55"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "En az bekleme süreleri tablosunda iki ayrı meslek derecesinde yer alan rütbe hangisidir?",
+      "back": "Birinci Sınıf Emniyet Müdürü. 2. meslek derecesinde 2 yıl bekler, 1. meslek derecesinde bekleme süresi yaş haddidir.",
+      "explanation": "Sınıf Üstü Emniyet Müdürünün meslek derecesi 'Derece Üstü', bekleme süresi de yaş haddidir. İkinci Sınıf Emniyet Müdürü rütbesinde en az bekleme süresini tamamlayanlar, terfien Birinci Sınıf Emniyet Müdürü rütbesinde ikinci meslek derecesi karşılığı görev unvanlarına atanabilir.",
+      "articleRefs": [
+        "55"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Dördüncü Sınıf Emniyet Müdürü rütbesindeki toplam kadro sayısı, emniyet hizmetleri sınıfının toplam kadrosuna göre hangi oranı geçemez?",
+      "back": "On binde 100. Hesaplamalarda küsurat dikkate alınmaz.",
+      "explanation": "Oranlar rütbe yükseldikçe düşer: Komiser Yardımcısında on binde 330, Birinci Sınıf Emniyet Müdüründe on binde 65.",
+      "articleRefs": [
+        "55"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Kadro sayılarını aşmamak kaydıyla her amir rütbesinde bulunması gereken toplam personel sayısını kim tespit eder?",
+      "back": "Yüksek Değerlendirme Kurulu; bu sayıyı hizmet ihtiyacına göre her yıl tespit eder.",
+      "explanation": "Bu tespit, rütbe başına on binde oranlarla belirlenen kadro sayısını aşamaz.",
+      "articleRefs": [
+        "55"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Aynı tarihte terfi eden ve performans değerlendirme puanları eşit olan iki amirden hangisi kıdemli sayılır?",
+      "back": "Bulunduğu rütbede aldığı başarı ve üstün başarı belgesi fazla olan. Belge sayısı da eşitse sicil numarası daha küçük olan kıdemlidir.",
+      "explanation": "Kıdem sırasının tespitinde önce bulunulan rütbeye terfi tarihi esas alınır. Aynı tarihte terfi edenlerden performans değerlendirme puanı yüksek olan öne geçer.",
+      "articleRefs": [
+        "55"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Değerlendirme kurulları kural olarak her yıl hangi ayda toplanır?",
+      "back": "Mayıs ayında. Kararlar oy çokluğu ile alınır.",
+      "explanation": "Bakanın onayı ile kurullar yıl içinde birden fazla toplanabilir ve terfi değerlendirmesine karar verebilir. Terfiler her yıl haziran ayında topluca yapılır.",
+      "articleRefs": [
+        "55"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Kurullar Bakanın onayıyla yıl içinde ikinci kez toplanırsa, bu toplantıdaki terfiler haziran ayında topluca mı yapılır?",
+      "back": "Hayır. Kurullar yıl içinde birden fazla toplanırsa terfiler, toplantının yapıldığı ay sonunda yapılır. Haziran, olağan toplu terfi ayıdır.",
+      "explanation": "Kural olarak kurullar her yıl mayısta toplanır, terfiler de haziranda topluca yapılır. Kurulların yıl içinde birden fazla toplanması ancak Bakanın onayıyla olur.",
+      "articleRefs": [
+        "55"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "İstifa eden bir polis, istifasının kabulünden itibaren ne kadar süre içinde mesleğe dönmezse bir daha mesleğe alınmaz?",
+      "back": "Üç sene. Süre, istifanın kabulü tarihinden itibaren işler.",
+      "explanation": "Kural polis ve komiserler için geçerlidir. İstifa her ne suretle olursa olsun uygulanır.",
+      "articleRefs": [
+        "59"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Genel Müdürlük Yüksek Değerlendirme Kurulunun başkanı kimdir?",
+      "back": "Emniyet Genel Müdürü.",
+      "explanation": "Bu Kurul, Emniyet Amirleri ile Dördüncü ve Üçüncü Sınıf Emniyet Müdürlerinin liyakat koşullarını belirler ve terfilerini önerir. Komiser Yardımcısı, Komiser ve Başkomiser için kurulan Merkez Değerlendirme Kurulunun başkanı ise personel işlerinden sorumlu Genel Müdür Yardımcısıdır.",
+      "articleRefs": [
+        "55"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Yüksek Değerlendirme Kurulunda İl Emniyet Müdürleri arasından seçilen kaç üye görev yapar?",
+      "back": "İki İl Emniyet Müdürü. Kurula ayrıca Polis Başmüfettişleri arasından seçilecek bir Polis Başmüfettişi katılır.",
+      "explanation": "Seçimle gelen bu üyelerin seçimine ilişkin esaslar yönetmelikle düzenlenir. Kurulun diğer üyeleri Genel Müdür Yardımcıları, Teftiş Kurulu Başkanı, Polis Akademisi Başkanı, Özel Güvenlik Denetleme Başkanı, Birinci Hukuk Müşaviri ve Personel Dairesi Başkanıdır.",
+      "articleRefs": [
+        "55"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "İhtiyaç hâlinde polis memurlarından Komiser Yardımcılığına atanabilmek için meslekte fiilen kaç yılın doldurulmuş olması gerekir?",
+      "back": "İki yıl. Ayrıca lisans mezunu olmak, yazılı ve sözlü sınavı kazanmak ve ilk derece amirlik eğitimini başarıyla bitirmek gerekir.",
+      "explanation": "İlk derece amirlik eğitimini Polis Akademisi Başkanlığı düzenler. Adaylarda aranacak diğer nitelikler ile sınavlara ilişkin usul ve esaslar yönetmelikle düzenlenir.",
+      "articleRefs": [
+        "55"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Üç sene içinde polislik sınıfına dönüp yeniden istifa eden kişi tekrar meslekte istihdam edilebilir mi?",
+      "back": "Hayır. Üç sene zarfında polis veya komiserlik sınıfına dönüp yine istifa edenlerin tekrar meslekte istihdamı caiz olamaz.",
+      "explanation": "İlk istifadan sonra mesleğe dönüş için üç senelik süre tanınır. Bu süre içinde dönüp ikinci kez istifa eden kişinin meslekte yeniden istihdamı ise caiz değildir.",
+      "articleRefs": [
+        "59"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Kazanılmış hak aylığında değerlendirilen doktora süresi rütbe kıdeminde de değerlendirilir mi?",
+      "back": "Hayır. Kazanılmış hak aylığında değerlendirilen uzmanlık, yüksek lisans, doktora ve avukatlık stajı rütbe kıdeminde değerlendirilmez.",
+      "explanation": "Yurt dışı misyon koruma, yurt dışı kurs ve diğer görevlerle geçen süreler ile tedavi ve istirahat süreleri ise hangi rütbede geçtiyse o rütbedeki fiili çalışma süresine sayılır. Ancak bunların toplamda üç yılı aşan kısmı rütbe terfilerinde değerlendirilmez. Bu kıdem kuralları, md 55'e göre 13 üncü maddede sayılan rütbeler içerisinde uygulanır.",
+      "articleRefs": [
+        "55"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Emniyet Teşkilatına girmeden önce yapılan askerlik hizmeti hangi rütbede fiili çalışma süresinden sayılır?",
+      "back": "Atanılan ilk rütbede; adaylığın onanmasından sonra fiili çalışma süresinden sayılır.",
+      "explanation": "Bir üst rütbeye terfide esas alınan süre, bulunulan rütbedeki fiili çalışma süresidir. Askerlik bu süreye yalnız ilk rütbede eklenir.",
+      "articleRefs": [
+        "55"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Diğer şartları taşıdığı hâlde hizmet ihtiyacı sebebiyle kadrosuzluktan terfi edemeyen personele ne ödenir?",
+      "back": "Bir üst rütbeye terfi eden emsallerine ödenen ek gösterge, zam ve tazminatlar ödenir.",
+      "explanation": "Personel bulunduğu rütbede kalır; yalnızca terfi eden emsalinin ek gösterge, zam ve tazminatlarını alır.",
+      "articleRefs": [
+        "55"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "İstifa eden memur, kabul cevabını ne kadar beklemeden vazifesini terk ederse, bu yüzden cezalandırıldığında bir daha emniyet teşkilatı hizmetine kabul edilmez?",
+      "back": "Bir ay. İstifasının kabul edildiği cevabını bir ay beklemeden vazifesini terk ettiği için cezalandırılan kişi tekrar hizmete kabul edilmez.",
+      "explanation": "Hiç istifa etmeden vazifesini terk ettiği için cezalandırılan kişi de tekrar emniyet teşkilatı hizmetine kabul edilmez.",
+      "articleRefs": [
+        "60"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Emniyet Amiri rütbesine terfi ettiği tarihten itibaren kaç yıl içinde bir üst rütbeye terfi edemeyen amir, kadrosuzluktan emekliye sevk edilir?",
+      "back": "Beş yıl. Emeklilik veya yaşlılık aylığı şartlarını taşıyorsa Yüksek Değerlendirme Kurulunun teklifi ve Bakan onayı ile emekliye sevk edilir.",
+      "explanation": "Bu kural Dördüncü, Üçüncü ve İkinci Sınıf Emniyet Müdürlerine de uygulanır. Emekliye sevki uygun görülmeyenlerin fiili hizmet süresi aynı usulle iki yıl uzatılır; iki yıl sonra yeniden değerlendirilir ve en fazla bir defa daha uzatılabilir. Birinci Sınıf Emniyet Müdürlerinde ise rütbedeki en fazla bekleme süresi altı yıldır.",
+      "articleRefs": [
+        "55"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "İzinli bir memur, memuriyetinin bulunduğu belediye hudutları içinde üniforma ile gezerse hangi durumda sayılır?",
+      "back": "Vazifede addolunur.",
+      "explanation": "Memuriyetinin bulunduğu belediye hudutları dışında izinli olan memur ise üniforma ile gezemez.",
+      "articleRefs": [
+        "62"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Atandığı yerde bakmakla yükümlü olduğu kişinin sağlığı nedeniyle görevini yapamayacak duruma gelen personel hakkında ne yapılır?",
+      "back": "Bakanlıkta Genel İdare Hizmetleri sınıfından bir göreve atanır.",
+      "explanation": "Aynı sonuç, personelin kendi sağlığı nedeniyle görevini yapamayacak duruma gelmesinde de uygulanır. Sağlık nedeniyle izinli veya raporlu personel hakkında ise genel hükümler uygulanır.",
+      "articleRefs": [
+        "63"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Amirinden müsaade almadan mezuniyet müddetini ne kadar aşan emniyet polis memuru istifa etmiş addolunur?",
+      "back": "15 gün. Mezuniyet müddetini müsaadesiz olarak bu kadar aşan memur istifa etmiş addolunur.",
+      "explanation": "Bu sonucun doğması için aşımın amirden müsaade alınmadan yapılmış olması gerekir.",
+      "articleRefs": [
+        "64"
+      ]
+    }
+  ]
+}
