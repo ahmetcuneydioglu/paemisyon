@@ -100,7 +100,7 @@ export interface SessionResult {
   plannedDurationSeconds: number | null;
   topicBreakdown: { topicId: string; topicName: string; correct: number; total: number }[] | null;
   earnedBadges?: { key: string; name: string }[];
-  /** Mağaza değerlendirme alt sayfası (Doc 56); sunucu karar verir, eski sunucuda yok. */
+  /** Mağaza değerlendirme alt sayfası (Doc 57); sunucu karar verir, eski sunucuda yok. */
   reviewPrompt?: ReviewPrompt | null;
 }
 

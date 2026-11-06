@@ -1,5 +1,5 @@
 /**
- * Doc 56 — mağaza değerlendirme istemi: an seçimi, engeller ve metin. SAF mantık;
+ * Doc 57 — mağaza değerlendirme istemi: an seçimi, engeller ve metin. SAF mantık;
  * DB erişimi `ReviewPromptService`'te. Kural sunucuda yaşar; istemci yalnız
  * `{ label, title, body }` gösterir ve sonucu bildirir.
  *

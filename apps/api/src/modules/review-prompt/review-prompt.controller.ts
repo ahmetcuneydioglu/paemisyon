@@ -9,7 +9,7 @@ export class ReviewPromptOutcomeDto {
   @IsIn(['accepted', 'dismissed']) outcome!: 'accepted' | 'dismissed';
 }
 
-/** /api/v1/me/review-prompts/:id — istemci sheet sonucunu bildirir (Doc 56 §5). */
+/** /api/v1/me/review-prompts/:id — istemci sheet sonucunu bildirir (Doc 57 §5). */
 @Controller('me/review-prompts')
 @UseGuards(JwtAuthGuard)
 export class ReviewPromptController {

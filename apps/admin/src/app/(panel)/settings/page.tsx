@@ -16,13 +16,13 @@ type Settings = {
   reviewPromptKillSwitch: boolean;
 };
 
-type BoolKey = 'showQuestionSource' | 'coachCikmisSinavKarti' | 'mobilAnasayfaV2' | 'flashcardsEnabled';
+type BoolKey = 'showQuestionSource' | 'coachCikmisSinavKarti' | 'mobilAnasayfaV2' | 'flashcardsEnabled' | 'reviewPromptKillSwitch';
 const SETTINGS: { key: BoolKey; label: string; help: string }[] = [
   {
     key: 'reviewPromptKillSwitch',
     label: 'Mağaza değerlendirme istemini DURDUR (kill switch)',
     help:
-      'Açıkken hiçbir kullanıcıya "Değerlendir" alt sayfası üretilmez (Doc 56). Alt sayfayı içeren mobil sürüm ' +
+      'Açıkken hiçbir kullanıcıya "Değerlendir" alt sayfası üretilmez (Doc 57). Alt sayfayı içeren mobil sürüm ' +
       'yayılana kadar AÇIK tutun; sonra kapatın. Sönüm: 30 günde en fazla 1 istem, kabulde 180 gün.',
   },
   {
@@ -68,7 +68,7 @@ export default function SettingsPage() {
       api<Settings>('/admin/settings', { method: 'PATCH', body: patch }),
     onSuccess: (r) => qc.setQueryData(['admin-settings'], r),
   });
-  // Doc 56: mağaza değerlendirme hunisi (son 30 gün) — platform × an × sonuç.
+  // Doc 57: mağaza değerlendirme hunisi (son 30 gün) — platform × an × sonuç.
   const huni = useQuery({
     queryKey: ['admin-review-prompt-summary'],
     queryFn: () => api<ReviewSummary>('/admin/review-prompts/summary?days=30'),

@@ -268,7 +268,7 @@ export default function GaleriScreen() {
           />
           <LeaderboardTeaser data={{ period: "today", scorers: 0, top: [], me: null, line: "Tahta bugün bomboş — ilk sırayı kapma şansı." }} onPress={() => {}} />
           <WeekSummaryLine left="142 soru · 3/5 gün" right="Komiser Yardımcısı" />
-          {/* Doc 56: mağaza değerlendirme alt sayfası — metinler sunucudan gelir; burada iki örnek. */}
+          {/* Doc 57: mağaza değerlendirme alt sayfası — metinler sunucudan gelir; burada iki örnek. */}
           <View style={{ flexDirection: "row", gap: 12 }}>
             <Button title="Değerlendirme · varsayılan" variant="secondary" size="sm" onPress={() => setReviewSheet("varsayilan")} />
             <Button title="Değerlendirme · seri" variant="secondary" size="sm" onPress={() => setReviewSheet("seri")} />

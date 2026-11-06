@@ -86,7 +86,7 @@ function setup(selectedOptionExists = true, questionOrder: string[] | null = [VE
       emitMany: jest.fn().mockResolvedValue(0),
     } as never,
     {} as never, // CourseTestsService (Doc 49/18)
-    { evaluateAfterSession: jest.fn().mockResolvedValue(null) } as never, // ReviewPromptService (Doc 56)
+    { evaluateAfterSession: jest.fn().mockResolvedValue(null) } as never, // ReviewPromptService (Doc 57)
   );
   return { service, prisma, settings, progress, selectedId, correctId };
 }
@@ -400,7 +400,7 @@ describe('QuizService.splitBySeen', () => {
           emitMany: jest.fn().mockResolvedValue(0),
         } as never,
         {} as never, // CourseTestsService (Doc 49/18)
-        { evaluateAfterSession: jest.fn().mockResolvedValue(null) } as never, // ReviewPromptService (Doc 56)
+        { evaluateAfterSession: jest.fn().mockResolvedValue(null) } as never, // ReviewPromptService (Doc 57)
       ),
       prisma,
     };
@@ -535,7 +535,7 @@ function setupPersonal(
       emitMany: jest.fn().mockResolvedValue(0),
     } as never,
     {} as never, // CourseTestsService (Doc 49/18)
-    { evaluateAfterSession: jest.fn().mockResolvedValue(null) } as never, // ReviewPromptService (Doc 56)
+    { evaluateAfterSession: jest.fn().mockResolvedValue(null) } as never, // ReviewPromptService (Doc 57)
   );
   return { service, prisma };
 }
@@ -752,7 +752,7 @@ function setupSecili(opts: { premiumKonu?: string; eksikKonu?: boolean } = {}) {
       emitMany: jest.fn().mockResolvedValue(0),
     } as never,
     {} as never, // CourseTestsService (Doc 49/18)
-    { evaluateAfterSession: jest.fn().mockResolvedValue(null) } as never, // ReviewPromptService (Doc 56)
+    { evaluateAfterSession: jest.fn().mockResolvedValue(null) } as never, // ReviewPromptService (Doc 57)
   );
   return { service, prisma, havuz, progress };
 }
@@ -953,7 +953,7 @@ describe('QuizService.completeSession — kapatılmış tur yeniden işlenmez (D
         emitMany: jest.fn().mockResolvedValue(0),
       } as never,
       {} as never, // CourseTestsService (Doc 49/18)
-      { evaluateAfterSession: jest.fn().mockResolvedValue(null) } as never, // ReviewPromptService (Doc 56)
+      { evaluateAfterSession: jest.fn().mockResolvedValue(null) } as never, // ReviewPromptService (Doc 57)
     );
     const r = await service.completeSession(premiumUser.id, 's1');
     expect(r).toMatchObject({ correctCount: 3, wrongCount: 1 });

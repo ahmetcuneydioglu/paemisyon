@@ -1508,7 +1508,7 @@ model Streak {
   @@map("streaks")
 }
 
-/// Doc 56: mağaza değerlendirme istemi kaydı. Satır sheet açılınca `shown` ile
+/// Doc 57: mağaza değerlendirme istemi kaydı. Satır sheet açılınca `shown` ile
 /// yazılır; istemci sonucu bildirince aynı satır `accepted`/`dismissed` olur.
 /// Sönüm hesabı (30 günde 1, kabulde 180 gün) bu tabloya bakar; kural sunucuda.
 model ReviewPrompt {

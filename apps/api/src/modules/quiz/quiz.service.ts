@@ -1581,7 +1581,7 @@ export class QuizService {
     userId: string,
     sessionId: string,
     reason: 'submitted' | 'timeout' = 'submitted',
-    /** Doc 56: istemci platformu (X-Platform). Yoksa (web, cron, deneme finalize) değerlendirme istemi üretilmez. */
+    /** Doc 57: istemci platformu (X-Platform). Yoksa (web, cron, deneme finalize) değerlendirme istemi üretilmez. */
     opts: { platform?: ReviewPlatform | null } = {},
   ) {
     const session = await this.prisma.quizSession.findFirst({
@@ -1797,7 +1797,7 @@ export class QuizService {
     // Günlük hedef bu oturumla dolduysa (öncesinde dolu değildi) olay.
     void this.emitDailyGoalIfCrossed(userId, session.totalQuestions);
 
-    // Mağaza değerlendirme istemi (Doc 56): stats/streak/rozet TAZEyken karar;
+    // Mağaza değerlendirme istemi (Doc 57): stats/streak/rozet TAZEyken karar;
     // deneme (mode=deneme) burada asla üretmez, haftalık üst dilim sonuç yolundadır.
     const reviewPrompt = await this.reviewPrompts.evaluateAfterSession(
       userId,
@@ -1845,7 +1845,7 @@ export class QuizService {
       topicBreakdown,
       // Yeni kazanılan rozetler — istemci kutlama gösterir (Doc 19).
       earnedBadges,
-      // Mağaza değerlendirme alt sayfası (Doc 56); eski istemciler alanı yok sayar.
+      // Mağaza değerlendirme alt sayfası (Doc 57); eski istemciler alanı yok sayar.
       reviewPrompt,
     };
   }

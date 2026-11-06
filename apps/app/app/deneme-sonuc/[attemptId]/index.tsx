@@ -19,7 +19,7 @@ export default function DenemeSonucScreen() {
   const { colors, space } = useTheme();
   const p = useLocalSearchParams<{ attemptId: string }>();
   const q = useAttempt(p.attemptId ?? null);
-  // Doc 56: haftalık üst dilim istemi, sonuçtan sekmelere dönünce açılır.
+  // Doc 57: haftalık üst dilim istemi, sonuçtan sekmelere dönünce açılır.
   useEffect(() => {
     if (q.data?.reviewPrompt) setPendingReviewPrompt(q.data.reviewPrompt);
   }, [q.data]);

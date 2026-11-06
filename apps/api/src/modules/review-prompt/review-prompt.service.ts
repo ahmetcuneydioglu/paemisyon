@@ -33,7 +33,7 @@ const startOfUtcDay = (d: Date) =>
   new Date(Date.UTC(d.getUTCFullYear(), d.getUTCMonth(), d.getUTCDate()));
 
 /**
- * Doc 56: tur bitince "sorulsun mu?" kararı ve kaydı. Kural sunucuda; istemci
+ * Doc 57: tur bitince "sorulsun mu?" kararı ve kaydı. Kural sunucuda; istemci
  * `reviewPrompt` nesnesini gösterir, `setOutcome` ile sonucu bildirir.
  * Hata turu bozmaz: her çağrı yutulur, null döner (kutlama kaçar, sonuç kaybolmaz).
  */

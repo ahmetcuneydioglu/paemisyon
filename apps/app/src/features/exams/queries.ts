@@ -118,7 +118,7 @@ export interface AttemptDetail {
   totalQuestions: number;
   resultLocked: boolean;
   resultAt: string | null;
-  /** Haftalık denemede üst dilim → mağaza değerlendirme istemi (Doc 56). */
+  /** Haftalık denemede üst dilim → mağaza değerlendirme istemi (Doc 57). */
   reviewPrompt?: ReviewPrompt | null;
   answeredCount?: number;
   correctCount: number | null;

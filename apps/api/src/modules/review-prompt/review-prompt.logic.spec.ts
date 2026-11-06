@@ -28,7 +28,7 @@ function base(over: Partial<ReviewPromptInput> = {}): ReviewPromptInput {
   };
 }
 
-describe('review-prompt engelleri (Doc 56 §3)', () => {
+describe('review-prompt engelleri (Doc 57 §3)', () => {
   it('platform yoksa, kill switch açıksa, hesap/tur eşiği dolmamışsa sorulmaz', () => {
     expect(blockedBy(base({ platform: null }))).toBe('platform');
     expect(blockedBy(base({ killSwitch: true }))).toBe('kill_switch');

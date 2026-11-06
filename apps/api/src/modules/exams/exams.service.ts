@@ -633,7 +633,7 @@ export class ExamsService {
   async getAttempt(
     user: AuthenticatedUser,
     attemptId: string,
-    /** Doc 56: istemci platformu; haftalık üst dilimde değerlendirme istemi için. */
+    /** Doc 57: istemci platformu; haftalık üst dilimde değerlendirme istemi için. */
     opts: { platform?: ReviewPlatform | null } = {},
   ) {
     const session = await this.prisma.quizSession.findFirst({
@@ -863,7 +863,7 @@ export class ExamsService {
       };
     }
 
-    // Mağaza değerlendirme istemi (Doc 56): yalnız TAKVİMLİ (haftalık) denemede,
+    // Mağaza değerlendirme istemi (Doc 57): yalnız TAKVİMLİ (haftalık) denemede,
     // sıralama açık ve üst %25'teyse. Sönüm sunucuda; tekrar görüntüleme ikinci satır açmaz.
     const weeklyTop =
       !!rank?.available &&

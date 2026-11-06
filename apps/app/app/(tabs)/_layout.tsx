@@ -42,7 +42,7 @@ export default function TabsLayout() {
         <Tabs.Screen name="mevzuat" options={tab("Mevzuat", Scale)} />
         <Tabs.Screen name="ben" options={tab("Ben", User)} />
       </Tabs>
-      {/* Doc 56: bekleyen mağaza değerlendirme istemi, odak ekranı kapanınca burada açılır. */}
+      {/* Doc 57: bekleyen mağaza değerlendirme istemi, odak ekranı kapanınca burada açılır. */}
       <ReviewPromptHost />
     </>
   );

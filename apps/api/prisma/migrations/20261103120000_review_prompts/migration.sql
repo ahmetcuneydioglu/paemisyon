@@ -1,4 +1,4 @@
--- Doc 56: mağaza değerlendirme istemi kayıtları. Yalnız ekleme (tek tablo).
+-- Doc 57: mağaza değerlendirme istemi kayıtları. Yalnız ekleme (tek tablo).
 
 -- CreateTable
 CREATE TABLE "review_prompts" (

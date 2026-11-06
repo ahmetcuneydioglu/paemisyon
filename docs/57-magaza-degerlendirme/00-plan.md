@@ -1,4 +1,6 @@
-# Doc 56 — Mağaza değerlendirme istemi (App Store / Google Play)
+# Doc 57 — Mağaza değerlendirme istemi (App Store / Google Play)
+
+> Numara notu: bu doküman önce 56 olarak açıldı; aynı gün bilgi kartları da 56 numarayı aldı (önce yayına girdi). 7 Kas 2026: bu doküman 57 oldu; eski commit mesajları "Doc 56" der.
 
 Durum: **onaylı; F0–F3 yazıldı ve yerelde E2E doğrulandı** (4 Kas 2026). F4 deploy (push + EAS/TestFlight) sırada; prod'da kill switch AÇIK başlar. Figma: dosya `1YZRWO3azniW8NU5CvV1BZ`,
 sayfa "Mağaza Değerlendirme (Doc 56)" (`114:263`); B koyu `114:401`, B açık `114:470`,

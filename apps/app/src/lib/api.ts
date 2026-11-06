@@ -46,7 +46,7 @@ async function send(path: string, init: ApiInit, token: string | null): Promise<
       signal: controller.signal,
       headers: {
         Accept: "application/json",
-        // Doc 56: sunucu mağaza değerlendirme istemini yalnız ios/android'e üretir.
+        // Doc 57: sunucu mağaza değerlendirme istemini yalnız ios/android'e üretir.
         ...(Platform.OS === "ios" || Platform.OS === "android" ? { "X-Platform": Platform.OS } : {}),
         ...(init.body != null ? { "Content-Type": "application/json" } : {}),
         ...(token ? { Authorization: `Bearer ${token}` } : {}),

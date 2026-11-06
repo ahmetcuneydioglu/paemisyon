@@ -102,7 +102,7 @@ export class AdminController {
       mobilAnasayfaV2: await this.settings.mobilAnasayfaV2(),
       flashcardsEnabled: await this.settings.flashcardsEnabled(),
       flashcardsFreeDailyLimit: await this.settings.flashcardsFreeDailyLimit(),
-      // Doc 56: mağaza değerlendirme istemi kill switch (açıkken hiç istem üretilmez).
+      // Doc 57: mağaza değerlendirme istemi kill switch (açıkken hiç istem üretilmez).
       reviewPromptKillSwitch: await this.settings.getBool(
         SETTING_KEYS.reviewPromptKillSwitch,
         false,
@@ -631,7 +631,7 @@ export class AdminController {
     return this.audit.list(page ? Number(page) : 1);
   }
 
-  /// Doc 56: mağaza değerlendirme hunisi — platform × an × sonuç (son N gün, varsayılan 30).
+  /// Doc 57: mağaza değerlendirme hunisi — platform × an × sonuç (son N gün, varsayılan 30).
   @Get('review-prompts/summary')
   @Roles('admin')
   reviewPromptSummary(@Query('days') days?: string) {

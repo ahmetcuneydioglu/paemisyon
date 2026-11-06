@@ -2,7 +2,7 @@ import { useSyncExternalStore } from "react";
 import { api } from "@/lib/api";
 
 /**
- * Mağaza değerlendirme istemi (Doc 56). Kural sunucuda: tur/deneme sonucu yanıtında
+ * Mağaza değerlendirme istemi (Doc 57). Kural sunucuda: tur/deneme sonucu yanıtında
  * `reviewPrompt` gelirse istemci YALNIZ gösterir ve sonucu bildirir; ne zaman, kime, kaç
  * günde bir sorulacağını bilmez. Metinde yıldız/sayı yok; "Değerlendir" yerel istemi açar.
  */

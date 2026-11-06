@@ -5,7 +5,7 @@ import { useTheme } from "@/theme/ThemeProvider";
 import { AppText, Button } from "@/components/ui";
 
 /**
- * Mağaza değerlendirme alt sayfası (Doc 56; Figma 114:401 / 114:470 / 116:27).
+ * Mağaza değerlendirme alt sayfası (Doc 57; Figma 114:401 / 114:470 / 116:27).
  * Tutamak · etiket · Lora başlık · gövde · "Değerlendir" (birincil) · "Şimdi değil" (hayalet).
  * Başlıkta kapat ikonu yok: perdeye dokunmak ve sistem geri tuşu da "Şimdi değil" sayılır.
  * Fikir sormaz, yıldız göstermez; metinler sunucudan gelir (kural istemcide değil).

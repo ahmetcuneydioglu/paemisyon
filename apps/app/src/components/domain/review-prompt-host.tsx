@@ -10,7 +10,7 @@ import {
 } from "@/features/review-prompt/api";
 import { ReviewPromptSheet } from "./review-prompt-sheet";
 
-/** Odak ekranları: istem buralarda AÇILMAZ, sonuç kapanıp sekmelere dönülünce açılır (Doc 56 §2). */
+/** Odak ekranları: istem buralarda AÇILMAZ, sonuç kapanıp sekmelere dönülünce açılır (Doc 57 §2). */
 const FOCUS_PREFIXES = [
   "/seans",
   "/sonuc",

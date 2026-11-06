@@ -42,7 +42,7 @@ export default function SonucScreen() {
       .catch((e: Error) => setError(e.message));
   }, [p.sessionId, qc, result]);
 
-  // Doc 56: sunucu sorulsun dediyse sekmelere dönünce alt sayfa açılır (bu ekranda değil).
+  // Doc 57: sunucu sorulsun dediyse sekmelere dönünce alt sayfa açılır (bu ekranda değil).
   useEffect(() => {
     if (result?.reviewPrompt) setPendingReviewPrompt(result.reviewPrompt);
   }, [result]);
