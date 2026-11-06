@@ -1,9 +1,9 @@
 import { Stack, useLocalSearchParams, useRouter } from "expo-router";
 import { BookOpen, Bookmark, XCircle } from "lucide-react-native";
 import { View } from "react-native";
-import { CoachLine, FlashcardEntry, FlashcardModeSheet, RoomStatPanel, SummaryUnitRow, roomCountsToModeCounts } from "@/components/domain";
+import { CoachLine, FlashcardEntry, FlashcardModeSheet, RoomStatPanel, roomCountsToModeCounts } from "@/components/domain";
 import { useFlashcardOverview, type FlashcardMode } from "@/features/flashcards/queries";
-import { useTopicUnits, weakestUnit } from "@/features/summaries/queries";
+import { useTopicUnits } from "@/features/summaries/queries";
 import { ActionBar, AppText, Badge, Button, ListRow, Notice, Screen, SectionHeader, Skeleton, useSheetAction } from "@/components/ui";
 import { useTopicRoom } from "@/features/rooms/queries";
 import { useTheme } from "@/theme/ThemeProvider";
