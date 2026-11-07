@@ -4,14 +4,14 @@
     "legislationSlug": "7068-sayili-genel-kolluk-disiplin-hukumleri-kanunu",
     "unitSlug": "gkdk-disiplin-amirleri-kurullari",
     "sourceLabel": "AI bilgi kartı — 7068 Sayılı Genel Kolluk Disiplin Hükümleri Kanunu md 13–26",
-    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: gkdk-disiplin-amirleri-kurullari özeti + resmî madde metni); denetim notu 7 Kas 2026 (#5 md 14/2 müfettiş seçeneği)"
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: gkdk-disiplin-amirleri-kurullari özeti + resmî madde metni); denetim notu 7 Kas 2026 (#5 md 14/2 müfettiş seçeneği); 7 Kas 2026 kullanıcı kararı: Jandarma/Sahil Güvenlik kartları çıkarıldı (6), ibareler düşürüldü (4)"
   },
   "cards": [
     {
       "kind": "numeric",
       "difficulty": 1,
       "front": "Emniyet Genel Müdürlüğü personeline resen disiplin cezası vermeye yetkili olanlar ve verebilecekleri cezalar Kanuna ekli hangi çizelgede gösterilir?",
-      "back": "(3) sayılı çizelgede. Jandarma Genel Komutanlığı ve Sahil Güvenlik Komutanlığı personeli için (4) sayılı çizelge geçerlidir.",
+      "back": "(3) sayılı çizelgede.",
       "explanation": "Çizelgeler üç şeyi birlikte gösterir: resen ceza vermeye yetkili olanları, disiplin cezası verilecekleri ve verilebilecek cezaları.",
       "articleRefs": [
         "13"
@@ -21,7 +21,7 @@
       "kind": "qa",
       "difficulty": 2,
       "front": "Bakan, kimlerin bir üst disiplin amiridir?",
-      "back": "Emniyet Genel Müdürü, Jandarma Genel Komutanı, Sahil Güvenlik Komutanı ve valilerin.",
+      "back": "Emniyet Genel Müdürü ve valilerin.",
       "explanation": "Zincirin alt halkalarında kaymakam ilçe teşkilatında, vali de il teşkilatında diğer disiplin amirlerine göre en üst disiplin amiridir. Valiler ise kaymakamların bir üst disiplin amiridir.",
       "articleRefs": [
         "13"
@@ -52,7 +52,7 @@
       "difficulty": 3,
       "front": "Hakkında soruşturma yapılan kişinin astı konumundaki biri, soruşturma heyetine başkan olarak görevlendirilebilir mi?",
       "back": "Hayır. Gerek görülürse ast konumundakiler heyete üye olarak girebilir; heyet başkanı bu imkânın dışındadır.",
-      "explanation": "Asıl kural, soruşturmacının soruşturulanın üstü konumunda olmasıdır; soruşturmacı olarak Bakanlık ya da ilgisine göre Emniyet Genel Müdürlüğü, Jandarma Genel Komutanlığı veya Sahil Güvenlik Komutanlığı müfettişi de görevlendirilebilir (md 14/2). Ayrıca soruşturmacı yalnız şu personel arasından seçilebilir: mülki idare amirliği hizmetleri sınıfı, ilgisine göre emniyet hizmetleri sınıfı, Jandarma Genel Komutanlığı ve Sahil Güvenlik Komutanlığı personeli.",
+      "explanation": "Asıl kural, soruşturmacının soruşturulanın üstü konumunda olmasıdır; soruşturmacı olarak Bakanlık ya da Emniyet Genel Müdürlüğü müfettişi de görevlendirilebilir (md 14/2). Ayrıca soruşturmacı yalnız mülki idare amirliği hizmetleri sınıfı ile emniyet hizmetleri sınıfı personeli arasından seçilebilir.",
       "articleRefs": [
         "14"
       ],
@@ -192,72 +192,11 @@
       "counterNumbers": []
     },
     {
-      "kind": "numeric",
-      "difficulty": 2,
-      "front": "Jandarma eğitim ve öğretim kurumlarındaki disiplin kurulunda, kurum merkezinde görevli personel arasından kaç komutan üye olur?",
-      "back": "En kıdemli üç komutan üye olur. Ayrıca kurum merkezindeki öğretmenler arasından ilgili jandarma genel komutan yardımcısının seçtiği bir kişi katılır.",
-      "explanation": "Kurula kurum amiri veya yardımcısı başkanlık eder.",
-      "articleRefs": [
-        "19"
-      ]
-    },
-    {
-      "kind": "qa",
-      "difficulty": 3,
-      "front": "Jandarmada il jandarma komutanlığı kadrosundaki bir binbaşıya meslekten çıkarma cezasını hangi kurul verir?",
-      "back": "Jandarma Genel Komutanlığı Yüksek Disiplin Kurulu verir.",
-      "explanation": "Binbaşı ve yarbaylara meslekten çıkarma ve Devlet memurluğundan çıkarma dışındaki cezaları Jandarma Genel Komutanlığı Merkez Disiplin Kurulu verir. Albaylara meslekten çıkarma cezasını ve generallere tüm disiplin cezalarını vermeye Bakanlık Yüksek Disiplin Kurulu yetkilidir.",
-      "articleRefs": [
-        "20"
-      ]
-    },
-    {
-      "kind": "trap",
-      "difficulty": 3,
-      "front": "İl jandarma disiplin kurulu, il jandarma komutanlığındaki bir yüzbaşıya meslekten çıkarma cezası verebilir mi?",
-      "back": "Hayır. Yüzbaşıya meslekten çıkarma ve Devlet memurluğundan çıkarma dışındaki cezaları verebilir; meslekten çıkarmayı Jandarma Genel Komutanlığı Merkez Disiplin Kurulu verir.",
-      "explanation": "Merkez Disiplin Kurulunun bu yetkisi, il jandarma, ilçe jandarma ve geçici bölge komutanlıkları ile sayılan diğer komutanlık ve kurum kadrolarındaki kişileri kapsar: yüzbaşı ve altı rütbelerdeki subaylar, astsubaylar, uzman jandarmalar ve diğer sınıflardaki memurlar.",
-      "articleRefs": [
-        "20"
-      ],
-      "counterNumbers": []
-    },
-    {
-      "kind": "numeric",
-      "difficulty": 2,
-      "front": "Sahil Güvenlik Komutanlığı Merkez Disiplin Kurulunda kaç daire başkanı üye olur?",
-      "back": "İki daire başkanı üye olur. Bunları kurulun başkanı olan, personel işlerinden sorumlu sahil güvenlik komutan yardımcısı belirler.",
-      "explanation": "Kurulda ayrıca kurul başkanının belirleyeceği bir şube müdürü ve bir kurum avukatı yer alır.",
-      "articleRefs": [
-        "22"
-      ]
-    },
-    {
-      "kind": "qa",
-      "difficulty": 3,
-      "front": "Amiral rütbesinde olmayan bir sahil güvenlik bölge komutanına memuriyetten çıkarma dışındaki disiplin cezalarını hangi kurul verir?",
-      "back": "Sahil Güvenlik Komutanlığı Yüksek Disiplin Kurulu verir.",
-      "explanation": "Aynı yetki, amiral rütbesinde olmayan Eğitim ve Öğretim Komutanı, Hava Komutanı, merkez teşkilatındaki komutan yardımcıları ve başkanlar için de geçerlidir. Amirallere tüm disiplin cezalarını vermeye Bakanlık Yüksek Disiplin Kurulu yetkilidir.",
-      "articleRefs": [
-        "23"
-      ]
-    },
-    {
       "kind": "qa",
       "difficulty": 2,
       "front": "Emniyet Genel Müdürünün disiplin cezası gerektiren bir fiili öğrenildiğinde, hakkında soruşturma nasıl başlatılır?",
       "back": "Bakan onayıyla Bakanlık müfettişleri görevlendirilir.",
-      "explanation": "Aynı usul Jandarma Genel Komutanı ve Sahil Güvenlik Komutanı için de geçerlidir. Soruşturmada Bakanın resen verebileceği cezalardan daha ağır bir ceza gerektiren disiplinsizlik tespit edilirse dosyayı Bakanlık Yüksek Disiplin Kurulu karara bağlar.",
-      "articleRefs": [
-        "25"
-      ]
-    },
-    {
-      "kind": "qa",
-      "difficulty": 2,
-      "front": "Kurumların en üst amirleri hakkındaki dosyaları görüşen Bakanlık Yüksek Disiplin Kurulu toplantılarına hangi üyeler katılamaz?",
-      "back": "Emniyet Genel Müdürlüğü, Jandarma Genel Komutanlığı ve Sahil Güvenlik Komutanlığından gelen üyeler katılamaz.",
-      "explanation": "Kurulun bu görevine ilişkin sekretarya hizmetlerini Bakanlık Personel Genel Müdürlüğü yürütür.",
+      "explanation": "Soruşturmada Bakanın resen verebileceği cezalardan daha ağır bir ceza gerektiren disiplinsizlik tespit edilirse dosyayı Bakanlık Yüksek Disiplin Kurulu karara bağlar.",
       "articleRefs": [
         "25"
       ]

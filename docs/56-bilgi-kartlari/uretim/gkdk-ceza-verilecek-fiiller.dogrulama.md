@@ -1,4 +1,4 @@
-# 7068 Sayılı Genel Kolluk Disiplin Hükümleri Kanunu — 27 kart · geçti · kaynak https://api.paemisyon.com/api/v1
+# 7068 Sayılı Genel Kolluk Disiplin Hükümleri Kanunu — 24 kart · geçti · kaynak https://api.paemisyon.com/api/v1
 
 ## 1. [qa] Silahını, araç ve gerecini, giyim ve kuşamını temiz tutmazsan hangi disiplin cez
 - ✓ referanslar var: md 8
@@ -95,19 +95,4 @@
 ## 24. [qa] Hangi vakıfların organlarında görev almak meslekten çıkarma cezasını gerektirmez
 - ✓ referanslar var: md 8
 - ✓ cevapta sayı yok
-
-## 25. [numeric] Jandarma Genel Komutanlığı ve Sahil Güvenlik Komutanlığında terfisi 926, 3466, 3
-- ✓ referanslar var: md 8
-- ✓ cevapta sayı yok
-
-## 26. [numeric] Jandarma Genel Komutanlığı ve Sahil Güvenlik Komutanlığında terfisi 926, 3466, 3
-- ✓ referanslar var: md 8
-- ✓ cevapta sayı yok
-
-## 27. [qa] Jandarma Genel Komutanlığı ve Sahil Güvenlik Komutanlığı personeline durdurma ge
-- ✓ referanslar var: md 8
-- ✓ 926 → referans metninde
-- ✓ 3466 → referans metninde
-- ✓ 3269 → referans metninde
-- ✓ 6191 → referans metninde
 

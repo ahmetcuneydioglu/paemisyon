@@ -1,4 +1,4 @@
-# 7068 Sayılı Genel Kolluk Disiplin Hükümleri Kanunu — 26 kart · geçti · kaynak https://api.paemisyon.com/api/v1
+# 7068 Sayılı Genel Kolluk Disiplin Hükümleri Kanunu — 23 kart · geçti · kaynak https://api.paemisyon.com/api/v1
 
 ## 1. [qa] Soruşturma tamamlandığında disiplin kurulu hangi kararları verebilir?
 - ✓ referanslar var: md 27
@@ -68,39 +68,27 @@
 - ✓ referanslar var: md 32
 - ✓ cevapta sayı yok
 
-## 18. [trap] Seyir hâlindeki bir Sahil Güvenlik botunda verilen cezada dava açma süresi, kesi
-- ✓ referanslar var: md 32
-- ✓ cevapta sayı yok
-
-## 19. [qa] Disiplin cezaları kural olarak hangi andan sonra yerine getirilir?
+## 18. [qa] Disiplin cezaları kural olarak hangi andan sonra yerine getirilir?
 - ✓ referanslar var: md 33
 - ✓ cevapta sayı yok
 
-## 20. [trap] Aylıktan kesme cezası, kesinleştiği gün hemen uygulanır mı?
+## 19. [trap] Aylıktan kesme cezası, kesinleştiği gün hemen uygulanır mı?
 - ✓ referanslar var: md 33
 - ✓ cevapta sayı yok
 
-## 21. [qa] Genel Kolluk Disiplin Hükümleri Hakkında Kanunda hüküm bulunmayan hâllerde hangi
+## 20. [qa] Genel Kolluk Disiplin Hükümleri Hakkında Kanunda hüküm bulunmayan hâllerde hangi
 - ✓ referanslar var: md 34
 - ✓ 657 → referans metninde
 
-## 22. [qa] 657 sayılı Kanundaki kademe ilerlemesinin durdurulması cezası, Genel Kolluk Disi
+## 21. [qa] 657 sayılı Kanundaki kademe ilerlemesinin durdurulması cezası, Genel Kolluk Disi
 - ✓ referanslar var: md 34
 - ✓ cevapta sayı yok
 
-## 23. [qa] Jandarma Genel Komutanlığı ve Sahil Güvenlik Komutanlığında terfileri 926, 3466,
-- ✓ referanslar var: md 34
-- ✓ cevapta sayı yok
-
-## 24. [qa] Disiplin kurullarının toplanma, görüşme ve karar vermesine ilişkin usul ve esasl
+## 22. [qa] Disiplin kurullarının toplanma, görüşme ve karar vermesine ilişkin usul ve esasl
 - ✓ referanslar var: md 35
 - ✓ cevapta sayı yok
 
-## 25. [qa] Sahil güvenlik ve jandarma teşkilatlarında görev yapan Milli Savunma Bakanlığı p
-- ✓ referanslar var: md Geçici 1
-- ✓ cevapta sayı yok
-
-## 26. [qa] Genel Kolluk Disiplin Hükümleri Hakkında Kanun yürürlüğe girmeden önce verilmiş 
+## 23. [qa] Genel Kolluk Disiplin Hükümleri Hakkında Kanun yürürlüğe girmeden önce verilmiş 
 - ✓ referanslar var: md Geçici 1
 - ✓ cevapta sayı yok
 

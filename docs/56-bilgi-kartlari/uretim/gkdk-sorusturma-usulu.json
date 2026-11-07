@@ -4,7 +4,7 @@
     "legislationSlug": "7068-sayili-genel-kolluk-disiplin-hukumleri-kanunu",
     "unitSlug": "gkdk-sorusturma-usulu",
     "sourceLabel": "AI bilgi kartı — 7068 Sayılı Genel Kolluk Disiplin Hükümleri Kanunu md 27–37, 39, Geçici 1, Geçici 2",
-    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: gkdk-sorusturma-usulu özeti + resmî madde metni); denetim düzeltmesi 7 Kas 2026 (2 kart)"
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: gkdk-sorusturma-usulu özeti + resmî madde metni); denetim düzeltmesi 7 Kas 2026 (2 kart); 7 Kas 2026 kullanıcı kararı: Jandarma/Sahil Güvenlik kartları çıkarıldı (3), ibareler düşürüldü (2)"
   },
   "cards": [
     {
@@ -114,7 +114,7 @@
       "difficulty": 3,
       "front": "Valinin doğrudan verdiği disiplin cezasına itiraz bir üst disiplin amirine mi yapılır?",
       "back": "Hayır. Valinin doğrudan verdiği cezaya Bakanlık Yüksek Disiplin Kuruluna itiraz edilir; Kurulun bu itiraz üzerine verdiği karar kesindir.",
-      "explanation": "Emniyet Genel Müdürü, Jandarma Genel Komutanı ve Sahil Güvenlik Komutanının doğrudan verdiği cezalarda da itiraz mercii aynı kuruldur. Kaymakamın doğrudan verdiği cezalara ise valiye itiraz edilir.",
+      "explanation": "Emniyet Genel Müdürünün doğrudan verdiği cezalarda da itiraz mercii aynı kuruldur. Kaymakamın doğrudan verdiği cezalara ise valiye itiraz edilir.",
       "articleRefs": [
         "30"
       ],
@@ -177,21 +177,9 @@
       "difficulty": 2,
       "front": "Kesinleşen disiplin cezasına karşı dava açma süresi kural olarak hangi andan başlar?",
       "back": "Kesinleşen cezanın personele tebliğinden itibaren başlar.",
-      "explanation": "Sahil Güvenlik Komutanlığının seyir hâlindeki gemi ve botlarında verilen cezalar bu kuralın istisnasıdır.",
       "articleRefs": [
         "32"
       ]
-    },
-    {
-      "kind": "trap",
-      "difficulty": 3,
-      "front": "Seyir hâlindeki bir Sahil Güvenlik botunda verilen cezada dava açma süresi, kesinleşen cezanın personele tebliğiyle mi başlar?",
-      "back": "Hayır. Süre, geminin bağlı bulunduğu üsse veya limana dönmesiyle başlar.",
-      "explanation": "Bu istisna, Sahil Güvenlik Komutanlığının seyir hâlindeki gemi ve botlarında verilen cezalar içindir. Diğer cezalarda süre, kesinleşen cezanın personele tebliğinden başlar.",
-      "articleRefs": [
-        "32"
-      ],
-      "counterNumbers": []
     },
     {
       "kind": "qa",
@@ -233,30 +221,12 @@
     },
     {
       "kind": "qa",
-      "difficulty": 3,
-      "front": "Jandarma Genel Komutanlığı ve Sahil Güvenlik Komutanlığında terfileri 926, 3466, 3269 ve 6191 sayılı Kanunlara tabi personelin kademe ilerlemesinin durdurulması cezası nasıl yerine getirilir?",
-      "back": "8 inci maddenin yedinci fıkrasının (a) ve (b) bentleri hükmüne göre yerine getirilir.",
-      "articleRefs": [
-        "34"
-      ]
-    },
-    {
-      "kind": "qa",
       "difficulty": 2,
       "front": "Disiplin kurullarının toplanma, görüşme ve karar vermesine ilişkin usul ve esaslar hangi düzenlemeyle belirlenir?",
       "back": "Bakanlık tarafından yürürlüğe konulan yönetmelikle belirlenir.",
       "explanation": "Kanunun uygulanmasına ilişkin diğer hususlar da aynı yönetmelikle düzenlenir.",
       "articleRefs": [
         "35"
-      ]
-    },
-    {
-      "kind": "qa",
-      "difficulty": 3,
-      "front": "Sahil güvenlik ve jandarma teşkilatlarında görev yapan Milli Savunma Bakanlığı personelinin disiplin işlemleri hangi hükümlere göre yürütülür?",
-      "back": "Görevleri süresince Genel Kolluk Disiplin Hükümleri Hakkında Kanun hükümlerine göre yürütülür.",
-      "articleRefs": [
-        "Geçici 1"
       ]
     },
     {

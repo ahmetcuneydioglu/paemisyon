@@ -127,7 +127,11 @@ KESİN KURALLAR
 6. Aynı cevaba giden ikinci kart YOK (ön yüzü farklı olsa da). Her kart bağımsız okunmalı: "yukarıdaki", "bu ünite"
    deme. Soru metinlerini kopyalama. "AI", "model", "özet", "kart" sözcüklerini kart metninde kullanma. Hiçbir
    kaynak kitap ya da sınav adı yazma.
-7. Dil: sıcak, doğrudan, "sen" dili; hukuk terimleri metindeki hâliyle; kısaltma yerine tam ad (ilk geçişte).
+7. Ürün polis adaylarına yöneliktir: 7068 gibi birden çok teşkilatı kapsayan kanunlarda yalnız Emniyet Genel
+   Müdürlüğü personeline ilişkin kartlar yazılır; Jandarma Genel Komutanlığı ve Sahil Güvenlik Komutanlığına özgü
+   hükümlerden (kurulları, rütbeleri, gemi/bot istisnaları) kart yazılmaz, yan cümlede de anılmaz (kullanıcı kararı
+   7 Kas 2026).
+8. Dil: sıcak, doğrudan, "sen" dili; hukuk terimleri metindeki hâliyle; kısaltma yerine tam ad (ilk geçişte).
 
 ÖRNEK KARTLAR (biçim için; içerik başka üniteden):
 {"kind":"numeric","difficulty":1,"front":"Türkiye Büyük Millet Meclisi kaç milletvekilinden oluşur?","back":"600 milletvekili; genel oyla seçilir.","explanation":"Salt çoğunluk ve ara seçim eşiği bu sayıdan türetilir.","articleRefs":["75"]}

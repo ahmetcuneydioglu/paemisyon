@@ -4,7 +4,7 @@
     "legislationSlug": "7068-sayili-genel-kolluk-disiplin-hukumleri-kanunu",
     "unitSlug": "gkdk-disiplin-cezalari",
     "sourceLabel": "AI bilgi kartı — 7068 Sayılı Genel Kolluk Disiplin Hükümleri Kanunu md 7, 9–12",
-    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: gkdk-disiplin-cezalari özeti + resmî madde metni); denetim düzeltmesi 7 Kas 2026 (1 kart)"
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: gkdk-disiplin-cezalari özeti + resmî madde metni); denetim düzeltmesi 7 Kas 2026 (1 kart); 7 Kas 2026 kullanıcı kararı: Jandarma/Sahil Güvenlik kartları çıkarıldı (2), ibareler düşürüldü (3)"
   },
   "cards": [
     {
@@ -79,21 +79,11 @@
       "counterNumbers": []
     },
     {
-      "kind": "qa",
-      "difficulty": 2,
-      "front": "Komutanların emri altındakileri geçici olarak kontrol altına alma yetkisi hangi görev ortamlarında kullanılabilir?",
-      "back": "Jandarma Genel Komutanlığının terörle mücadele harekatı kapsamındaki operasyonlarında ve Sahil Güvenlik Komutanlığının seyir halindeki gemi ve botlarında kullanılabilir.",
-      "explanation": "Bu yetki, diğer kanunlarla verilmiş yakalama yetkisinden ayrıdır. Şu amaçlarla kullanılır: kendisine, başkalarına, çevresine ya da hizmete ait bir eşyaya zarar vereceği açıkça belli olan kişinin bu durumunu engellemek, ciddi şekilde bozulan disiplini yeniden tesis etmek, sarhoşluk süresince kişiyi kontrol altında tutmak ya da benzer bir amaç.",
-      "articleRefs": [
-        "11"
-      ]
-    },
-    {
       "kind": "numeric",
       "difficulty": 1,
       "front": "Geçici olarak kontrol altına alınan personel en fazla ne kadar süre kontrol altında bulundurulabilir?",
       "back": "Yirmidört saat. Kontrol altında bulundurma bu süreyi geçemez.",
-      "explanation": "Tedbir, bu amaç için hazırlanacak mahallerde uygulanır. Jandarma Genel Komutanlığı için operasyon komutanının uygun gördüğü mahaller de kullanılabilir.",
+      "explanation": "Tedbir, bu amaç için hazırlanacak mahallerde uygulanır.",
       "articleRefs": [
         "11"
       ]
@@ -142,7 +132,7 @@
       "kind": "trap",
       "difficulty": 2,
       "front": "Meslekten çıkarma cezası alan personel, bir daha Devlet memurluğuna atanmamak üzere mi çıkarılır?",
-      "back": "Hayır. Meslekten çıkarma, emniyet, jandarma ve sahil güvenlik teşkilatlarında bir daha çalıştırılmamak üzere çıkarılmaktır. Bir daha Devlet memurluğuna atanmamak, Devlet memurluğundan çıkarmanın sonucudur.",
+      "back": "Hayır. Meslekten çıkarma, emniyet teşkilatında bir daha çalıştırılmamak üzere çıkarılmaktır. Bir daha Devlet memurluğuna atanmamak, Devlet memurluğundan çıkarmanın sonucudur.",
       "explanation": "İki cezanın tanımında da 'bir daha' ifadesi yer alır. Meslekten çıkarmada personel teşkilatlarda bir daha çalıştırılmaz. Devlet memurluğundan çıkarmada ise bir daha Devlet memurluğuna atanmaz.",
       "articleRefs": [
         "7"
@@ -240,16 +230,6 @@
     {
       "kind": "qa",
       "difficulty": 3,
-      "front": "Uyarma veya kınama gerektiren bir fiil sahil güvenlik personelince Türk karasuları dışında işlenirse hangi cezalar verilebilir?",
-      "back": "Meydana gelen zarar ve tehlikenin ağırlığı da dikkate alınarak aylıktan kesme, kısa veya uzun süreli durdurma cezası verilebilir.",
-      "explanation": "Aynı kural yurtdışı liman ziyaretlerinde de geçerlidir. Aylıktan kesme, kısa veya uzun süreli durdurma gerektiren fiillerde ise meslekten çıkarma cezası verilebilir.",
-      "articleRefs": [
-        "10"
-      ]
-    },
-    {
-      "kind": "qa",
-      "difficulty": 3,
       "front": "Kontrol altına alınan personele disiplin cezası nasıl uygulanır?",
       "back": "Eyleminin karşılığı olan cezanın üst sınırı uygulanır; ceza zaten üst sınırdaysa ya da üst sınırı yoksa bir üst ceza uygulanır.",
       "explanation": "Kontrol altına alınanlarla ilgili olarak durumun gerektirdiği tedbirleri disiplin amirleri alır veya alınmasını sağlar.",
@@ -262,7 +242,7 @@
       "difficulty": 2,
       "front": "Aynı disiplin dosyasında birden fazla disiplin cezası verilirse, bu cezaların puanları toplanarak mı değerlendirilir?",
       "back": "Hayır. Aynı dosyada birden fazla ceza verilirse yalnızca en yüksek olanın puanı değerlendirmeye esas alınır.",
-      "explanation": "Puan hesabının usulü, Emniyet Genel Müdürlüğü personeli için ekli (1) sayılı çizelgede gösterilmiştir. Jandarma Genel Komutanlığı ve Sahil Güvenlik Komutanlığı personeli için ise ekli (2) sayılı çizelge esas alınır.",
+      "explanation": "Puan hesabının usulü, Emniyet Genel Müdürlüğü personeli için Kanuna ekli (1) sayılı çizelgede gösterilmiştir.",
       "articleRefs": [
         "12"
       ],

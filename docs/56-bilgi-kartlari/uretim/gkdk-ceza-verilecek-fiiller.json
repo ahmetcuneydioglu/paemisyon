@@ -4,7 +4,7 @@
     "legislationSlug": "7068-sayili-genel-kolluk-disiplin-hukumleri-kanunu",
     "unitSlug": "gkdk-ceza-verilecek-fiiller",
     "sourceLabel": "AI bilgi kartı — 7068 Sayılı Genel Kolluk Disiplin Hükümleri Kanunu md 8",
-    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: gkdk-ceza-verilecek-fiiller özeti + resmî madde metni); betik kapısı: #23 (#21 ile aynı cevap) çıkarıldı; denetim düzeltmesi 7 Kas 2026 (1 kart + #4 ifade)"
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: gkdk-ceza-verilecek-fiiller özeti + resmî madde metni); betik kapısı: #23 (#21 ile aynı cevap) çıkarıldı; denetim düzeltmesi 7 Kas 2026 (1 kart + #4 ifade); 7 Kas 2026 kullanıcı kararı: Jandarma/Sahil Güvenlik kartları çıkarıldı (3), ibareler düşürüldü (0)"
   },
   "cards": [
     {
@@ -246,34 +246,6 @@
       "difficulty": 3,
       "front": "Hangi vakıfların organlarında görev almak meslekten çıkarma cezasını gerektirmez?",
       "back": "Bakanlıkça belirlenmiş vakıfların organlarında görev almak. Vakıf kurmak ise meslekten çıkarma gerektirir.",
-      "articleRefs": [
-        "8"
-      ]
-    },
-    {
-      "kind": "numeric",
-      "difficulty": 3,
-      "front": "Jandarma Genel Komutanlığı ve Sahil Güvenlik Komutanlığında terfisi 926, 3466, 3269 ve 6191 sayılı Kanunlara tabi personelde kısa süreli durdurma gerektiren hallerde brüt aylığın ne kadarı kesilir?",
-      "back": "Brüt aylığın 1/5’i ila 1/4’ü kesilir.",
-      "articleRefs": [
-        "8"
-      ]
-    },
-    {
-      "kind": "numeric",
-      "difficulty": 3,
-      "front": "Jandarma Genel Komutanlığı ve Sahil Güvenlik Komutanlığında terfisi 926, 3466, 3269 ve 6191 sayılı Kanunlara tabi personelde uzun süreli durdurma gerektiren hallerde brüt aylığın ne kadarı kesilir?",
-      "back": "Brüt aylığın 1/3’ü ila 1/2’si kesilir.",
-      "articleRefs": [
-        "8"
-      ]
-    },
-    {
-      "kind": "qa",
-      "difficulty": 2,
-      "front": "Jandarma Genel Komutanlığı ve Sahil Güvenlik Komutanlığı personeline durdurma gerektiren hallerde uygulanan brüt aylık kesintisi cezalarını kim verir?",
-      "back": "Yetkili disiplin kurulları.",
-      "explanation": "Bu kesinti, terfileri 926, 3466, 3269 ve 6191 sayılı Kanun hükümlerine tabi olan personele uygulanır.",
       "articleRefs": [
         "8"
       ]

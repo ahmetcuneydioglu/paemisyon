@@ -304,6 +304,14 @@ derece numaraları md 13 cetveline eşlenmez; aynı konuyu güncel madde (3201 m
 yalnız kesin ad değişikliğinde, çekim eki parantezden önce ("Dahiliye Vekilindedir (İçişleri Bakanı)").
 Kapıya "md X'teki … ise" karşılaştırma kalıbı eklendi.
 
+**7068 kararı (kullanıcı, 7 Kas 2026):** ürün polis adaylarına yönelik; Jandarma ve Sahil Güvenlik'e özgü kart olmayacak.
+Beş 7068 destesinden 16 kart çıkarıldı (JGK/SGK kurulları, rütbeleri, gemi/bot istisnası, 926/3466 personel kesintisi…),
+11 kartta yan cümledeki JGK/SGK ibareleri düşürüldü (124 → 118 kart). Prod'a `scripts/kart-deste-esitle.ts` ile
+uygulandı: destede olmayan kartı arşivler (yayındaki 1 kart dahil), metni değişeni yerinde günceller, kısmen
+yayınlanmış ünitede `--replace`'in aksine çoğaltmaz (kuru çalıştırma varsayılan, `--uygula` ile yazar). İstem kuralı
+(7. madde): çok teşkilatlı kanunlarda yalnız EGM personeline ilişkin kart. Kullanıcının panelden arşivlediği kartlar
+(4 adet) desteyle eşitlemede dokunulmadan bırakılır.
+
 **Yayın öncesi insan notları (polis mevzuatı):** PVSK Ek 7'nin CMK 250 atfı (mülga, seri muhakeme olarak yeniden
 yazıldı) ve md 28 İcra Vekilleri Heyeti — bu hükümlerden kart yok ama üniteler panelde okunurken bilinmeli;
 PVSK zor-silah #24'teki 1481 sayılı Kanunun yürürlüğü teyit edilmeli; md 6 idari para cezası tutarları nominal.

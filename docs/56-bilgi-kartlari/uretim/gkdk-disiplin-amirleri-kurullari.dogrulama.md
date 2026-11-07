@@ -1,9 +1,8 @@
-# 7068 Sayılı Genel Kolluk Disiplin Hükümleri Kanunu — 28 kart · geçti · kaynak https://api.paemisyon.com/api/v1
+# 7068 Sayılı Genel Kolluk Disiplin Hükümleri Kanunu — 22 kart · geçti · kaynak https://api.paemisyon.com/api/v1
 
 ## 1. [numeric] Emniyet Genel Müdürlüğü personeline resen disiplin cezası vermeye yetkili olanla
 - ✓ referanslar var: md 13
 - ✓ 3 → referans metninde
-- ✓ 4 → referans metninde
 
 ## 2. [qa] Bakan, kimlerin bir üst disiplin amiridir?
 - ✓ referanslar var: md 13
@@ -82,43 +81,19 @@
 - ✓ referanslar var: md 18
 - ✓ cevapta sayı yok
 
-## 19. [numeric] Jandarma eğitim ve öğretim kurumlarındaki disiplin kurulunda, kurum merkezinde g
-- ✓ referanslar var: md 19
-- ✓ cevapta sayı yok
-
-## 20. [qa] Jandarmada il jandarma komutanlığı kadrosundaki bir binbaşıya meslekten çıkarma 
-- ✓ referanslar var: md 20
-- ✓ cevapta sayı yok
-
-## 21. [trap] İl jandarma disiplin kurulu, il jandarma komutanlığındaki bir yüzbaşıya meslekte
-- ✓ referanslar var: md 20
-- ✓ cevapta sayı yok
-
-## 22. [numeric] Sahil Güvenlik Komutanlığı Merkez Disiplin Kurulunda kaç daire başkanı üye olur?
-- ✓ referanslar var: md 22
-- ✓ cevapta sayı yok
-
-## 23. [qa] Amiral rütbesinde olmayan bir sahil güvenlik bölge komutanına memuriyetten çıkar
-- ✓ referanslar var: md 23
-- ✓ cevapta sayı yok
-
-## 24. [qa] Emniyet Genel Müdürünün disiplin cezası gerektiren bir fiili öğrenildiğinde, hak
+## 19. [qa] Emniyet Genel Müdürünün disiplin cezası gerektiren bir fiili öğrenildiğinde, hak
 - ✓ referanslar var: md 25
 - ✓ cevapta sayı yok
 
-## 25. [qa] Kurumların en üst amirleri hakkındaki dosyaları görüşen Bakanlık Yüksek Disiplin
-- ✓ referanslar var: md 25
-- ✓ cevapta sayı yok
-
-## 26. [qa] Yetkili disiplin amiri ya da disiplin kurulu saptanırken personelin hangi tariht
+## 20. [qa] Yetkili disiplin amiri ya da disiplin kurulu saptanırken personelin hangi tariht
 - ✓ referanslar var: md 26
 - ✓ cevapta sayı yok
 
-## 27. [trap] Disiplin kurulunda bir üye çekimser oy kullanabilir mi?
+## 21. [trap] Disiplin kurulunda bir üye çekimser oy kullanabilir mi?
 - ✓ referanslar var: md 26
 - ✓ cevapta sayı yok
 
-## 28. [numeric] Disiplin kurulu üyesi, hangi dereceden kan ve kayın hısımlarının durumunun görüş
+## 22. [numeric] Disiplin kurulu üyesi, hangi dereceden kan ve kayın hısımlarının durumunun görüş
 - ✓ referanslar var: md 26
 - ✓ cevapta sayı yok
 

@@ -4,15 +4,15 @@
     "legislationSlug": "7068-sayili-genel-kolluk-disiplin-hukumleri-kanunu",
     "unitSlug": "gkdk-amac-kapsam-tanimlar",
     "sourceLabel": "AI bilgi kartı — 7068 Sayılı Genel Kolluk Disiplin Hükümleri Kanunu md 1–6",
-    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: gkdk-amac-kapsam-tanimlar özeti + resmî madde metni); denetim düzeltmesi 7 Kas 2026 (1 kart + #6, #13, #21 çıkarıldı: aynı bilgi; #5 qa, #28 ifade)"
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: gkdk-amac-kapsam-tanimlar özeti + resmî madde metni); denetim düzeltmesi 7 Kas 2026 (1 kart + #6, #13, #21 çıkarıldı: aynı bilgi; #5 qa, #28 ifade); 7 Kas 2026 kullanıcı kararı: Jandarma/Sahil Güvenlik kartları çıkarıldı (2), ibareler düşürüldü (2)"
   },
   "cards": [
     {
       "kind": "qa",
       "difficulty": 1,
       "front": "Kanunun amaç maddesi hangi teşkilatların personeline ilişkin düzenleme yapar?",
-      "back": "Emniyet Genel Müdürlüğü, Jandarma Genel Komutanlığı ve Sahil Güvenlik Komutanlığı personeline.",
-      "explanation": "Amaç maddesi bu teşkilatları birlikte anar. Düzenleme bu teşkilatların personeline ilişkin disiplin konularını kapsar.",
+      "back": "Emniyet Genel Müdürlüğü personeline.",
+      "explanation": "Düzenleme bu personele ilişkin disiplin konularını kapsar.",
       "articleRefs": [
         "1"
       ]
@@ -32,26 +32,6 @@
       "front": "Emniyet Genel Müdürlüğü bakımından Kanun kimleri kapsar?",
       "back": "Emniyet Genel Müdürlüğü teşkilatında çalışan her sınıftan memurları.",
       "explanation": "Ölçüt, teşkilatta çalışmak ve memur olmaktır. \"Her sınıftan\" ifadesi sınıf ayrımı yapmaz.",
-      "articleRefs": [
-        "2"
-      ]
-    },
-    {
-      "kind": "qa",
-      "difficulty": 2,
-      "front": "Jandarma Genel Komutanlığı ve Sahil Güvenlik Komutanlığı teşkilatlarında Kanun kimleri kapsar?",
-      "back": "Subay, astsubay, sözleşmeli subay, sözleşmeli astsubay, uzman jandarma, uzman erbaş, sözleşmeli erbaş ve sözleşmeli erler ile diğer sınıflardaki memurları.",
-      "explanation": "Bu teşkilatların emrine verilen yükümlü erbaş ve erler hakkında 6413 sayılı Türk Silahlı Kuvvetleri Disiplin Kanunu hükümleri uygulanır.",
-      "articleRefs": [
-        "2"
-      ]
-    },
-    {
-      "kind": "qa",
-      "difficulty": 2,
-      "front": "Jandarma Genel Komutanlığı ve Sahil Güvenlik Komutanlığı emrine verilen yükümlü erbaş ve erler hakkında hangi kanun uygulanır?",
-      "back": "31/1/2013 tarihli ve 6413 sayılı Türk Silahlı Kuvvetleri Disiplin Kanunu.",
-      "explanation": "Sözleşmeli erbaş ve sözleşmeli erler bu Kanunun kapsamındadır. Ayrım \"sözleşmeli\" ile \"yükümlü\" arasındadır.",
       "articleRefs": [
         "2"
       ]
@@ -81,7 +61,7 @@
       "difficulty": 1,
       "front": "Kanunda geçen \"Bakanlık\" hangi bakanlığı ifade eder?",
       "back": "İçişleri Bakanlığını; \"Bakan\" da İçişleri Bakanıdır.",
-      "explanation": "Tanım personelin teşkilatına göre ayrım yapmaz. Emniyet Genel Müdürlüğü, Jandarma Genel Komutanlığı ve Sahil Güvenlik Komutanlığı için aynıdır.",
+      "explanation": "Tanım personelin teşkilatına göre ayrım yapmaz.",
       "articleRefs": [
         "3"
       ]
