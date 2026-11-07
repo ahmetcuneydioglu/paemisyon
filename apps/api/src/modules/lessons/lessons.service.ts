@@ -8,7 +8,7 @@ import type { Prisma } from '@prisma/client';
 import { PrismaService } from '../../infra/prisma/prisma.service';
 import type { AuthenticatedUser } from '../auth/auth.types';
 import { validateLesson, type LessonSourceInput, type LessonValidation } from './ders-dogrulayici';
-import { readingMinutes, type LessonBody } from './ders-markdown';
+import { parseLessonMarkdown, readingMinutes, type LessonBody } from './ders-markdown';
 
 /** İçe aktarma girdisi (betik ya da panel): bir bölüm altına bir ders sürümü. */
 export interface LessonImportInput {
@@ -30,6 +30,16 @@ export interface LessonImportInput {
   reviewNote: string;
   sourceLabel: string;
   links?: { kind: 'topic' | 'legislation' | 'unit'; targetId: string }[];
+}
+
+/** Panelden markdown ile içe aktarma: bölüm künyesi + ders slug'ı + markdown + kitap künyesi + madde atıfları. */
+export interface LessonMarkdownImportInput {
+  section: LessonImportInput['section'];
+  slug: string;
+  sortOrder: number;
+  markdown: string;
+  book: { label: string; page?: string | null };
+  articles?: string[];
 }
 
 const PUBLIC_SOURCE_SELECT = {
@@ -379,6 +389,103 @@ export class LessonsService {
       return { id: lesson.id, versionNo: 1, replaced: false, pendingVersion: false };
     });
     return { ...result, slug: input.slug, validation };
+  }
+
+  /** Markdown'ı betikle aynı kurallarla girdiye çevirir (panel içe aktarma). */
+  markdownToImport(m: LessonMarkdownImportInput): LessonImportInput {
+    const parsed = parseLessonMarkdown(m.markdown);
+    const page = m.book.page ?? null;
+    return {
+      section: m.section,
+      slug: m.slug,
+      title: parsed.title,
+      goal: parsed.goal,
+      sortOrder: m.sortOrder,
+      body: parsed.body,
+      sources: [
+        { kind: 'book', label: m.book.label, page, isPublic: false },
+        ...(m.articles ?? []).map(
+          (ref) =>
+            ({ kind: 'article' as const, label: ref, ref, isPublic: true }) as LessonSourceInput,
+        ),
+        ...parsed.urlSources.map((u) => ({
+          kind: 'url' as const,
+          label: u.label,
+          url: u.url,
+          isPublic: true,
+        })),
+      ],
+      reviewNote: parsed.reviewNotes.join('\n'),
+      sourceLabel: `${m.book.label} ${page ?? ''}`.trim(),
+      links: m.section.topicId ? [{ kind: 'topic', targetId: m.section.topicId }] : [],
+    };
+  }
+
+  async updateLesson(
+    actor: AuthenticatedUser,
+    id: string,
+    dto: {
+      title?: string;
+      goal?: string;
+      sourceLabel?: string;
+      sortOrder?: number;
+      readingMinutes?: number;
+    },
+  ) {
+    const data: Prisma.LessonUpdateInput = {};
+    if (typeof dto.title === 'string' && dto.title.trim()) data.title = dto.title.trim();
+    if (typeof dto.goal === 'string' && dto.goal.trim()) data.goal = dto.goal.trim();
+    if (typeof dto.sourceLabel === 'string' && dto.sourceLabel.trim())
+      data.sourceLabel = dto.sourceLabel.trim();
+    if (typeof dto.sortOrder === 'number') data.sortOrder = dto.sortOrder;
+    if (typeof dto.readingMinutes === 'number' && dto.readingMinutes > 0)
+      data.readingMinutes = Math.round(dto.readingMinutes);
+    await this.prisma.lesson.update({ where: { id }, data });
+    return { ok: true };
+  }
+
+  /** En son sürümün inceleme kaydı (yayın kapısı için zorunlu). */
+  async setReviewNote(actor: AuthenticatedUser, id: string, reviewNote: string) {
+    const latest = await this.prisma.lessonVersion.findFirst({
+      where: { lessonId: id },
+      orderBy: { versionNo: 'desc' },
+      select: { id: true },
+    });
+    if (!latest) throw new NotFoundException('Sürüm yok.');
+    await this.prisma.lessonVersion.update({
+      where: { id: latest.id },
+      data: { reviewNote: reviewNote.trim() || null },
+    });
+    return { ok: true };
+  }
+
+  async updateSection(
+    actor: AuthenticatedUser,
+    id: string,
+    dto: { title?: string; subtitle?: string | null; sortOrder?: number; isPremium?: boolean },
+  ) {
+    if (typeof dto.isPremium === 'boolean' && !actor.roles.includes('admin'))
+      throw new ForbiddenException('Premium kararı admin yetkisi ister.');
+    const data: Prisma.LessonSectionUpdateInput = {};
+    if (typeof dto.title === 'string' && dto.title.trim()) data.title = dto.title.trim();
+    if (dto.subtitle !== undefined) data.subtitle = dto.subtitle?.trim() || null;
+    if (typeof dto.sortOrder === 'number') data.sortOrder = dto.sortOrder;
+    if (typeof dto.isPremium === 'boolean') data.isPremium = dto.isPremium;
+    await this.prisma.lessonSection.update({ where: { id }, data });
+    return { ok: true };
+  }
+
+  async unpublishSection(actor: AuthenticatedUser, id: string) {
+    if (!actor.roles.includes('admin'))
+      throw new ForbiddenException('Yayından alma admin yetkisi ister.');
+    await this.prisma.$transaction([
+      this.prisma.lessonSection.update({ where: { id }, data: { status: 'in_review' } }),
+      this.prisma.lesson.updateMany({
+        where: { sectionId: id, status: 'published' },
+        data: { status: 'in_review' },
+      }),
+    ]);
+    return { ok: true };
   }
 
   /** "article" kaynaklarını bankadan çözer: label "<lawSlug>:<no>" ya da ayrı alanlar. */

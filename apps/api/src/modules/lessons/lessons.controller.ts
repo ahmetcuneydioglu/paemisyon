@@ -1,10 +1,12 @@
 import {
+  BadRequestException,
   Body,
   Controller,
   Get,
   Header,
   Param,
   ParseUUIDPipe,
+  Patch,
   Post,
   Query,
   UseGuards,
@@ -15,7 +17,11 @@ import { RolesGuard } from '../auth/guards/roles.guard';
 import { Roles } from '../auth/decorators/roles.decorator';
 import { CurrentUser } from '../auth/decorators/current-user.decorator';
 import type { AuthenticatedUser } from '../auth/auth.types';
-import { LessonsService, type LessonImportInput } from './lessons.service';
+import {
+  LessonsService,
+  type LessonImportInput,
+  type LessonMarkdownImportInput,
+} from './lessons.service';
 
 /** Konu anlatımı — public okuma (Doc 57). Girişliyse ilerleme ve kilit kullanıcıya göre: paylaşımlı cache yok. */
 @Controller('public/lessons')
@@ -84,6 +90,86 @@ export class AdminLessonsController {
   @Roles('admin', 'editor')
   validate(@Body() body: LessonImportInput) {
     return this.lessons.validateForImport(body);
+  }
+
+  /** Panel: markdown + künye → doğrula (dry=1) ya da in_review yaz. Hata satırları mesajda satır satır döner. */
+  @Post('import-markdown')
+  @Roles('admin', 'editor')
+  async importMarkdown(
+    @CurrentUser() actor: AuthenticatedUser,
+    @Body() body: LessonMarkdownImportInput,
+    @Query('dry') dry?: string,
+  ) {
+    if (
+      !body?.markdown?.trim() ||
+      !body.slug?.trim() ||
+      !body.section?.slug ||
+      !body.section?.courseId ||
+      !body.book?.label
+    ) {
+      throw new BadRequestException(
+        'markdown, slug, section.slug, section.courseId ve book.label gerekli.',
+      );
+    }
+    let input: LessonImportInput;
+    try {
+      input = this.lessons.markdownToImport(body);
+    } catch (e) {
+      throw new BadRequestException(`Markdown ayrıştırılamadı: ${(e as Error).message}`);
+    }
+    if (dry === '1' || dry === 'true')
+      return {
+        parsed: { title: input.title, goal: input.goal, sections: input.body.sections.length },
+        validation: await this.lessons.validateForImport(input),
+      };
+    return this.lessons.importLesson(input, actor.id);
+  }
+
+  @Patch(':id')
+  @Roles('admin', 'editor')
+  update(
+    @CurrentUser() actor: AuthenticatedUser,
+    @Param('id', ParseUUIDPipe) id: string,
+    @Body()
+    dto: {
+      title?: string;
+      goal?: string;
+      sourceLabel?: string;
+      sortOrder?: number;
+      readingMinutes?: number;
+    },
+  ) {
+    return this.lessons.updateLesson(actor, id, dto ?? {});
+  }
+
+  @Patch(':id/review-note')
+  @Roles('admin', 'editor')
+  reviewNote(
+    @CurrentUser() actor: AuthenticatedUser,
+    @Param('id', ParseUUIDPipe) id: string,
+    @Body() body: { reviewNote?: string },
+  ) {
+    return this.lessons.setReviewNote(actor, id, body?.reviewNote ?? '');
+  }
+
+  @Patch('sections/:id')
+  @Roles('admin', 'editor')
+  updateSection(
+    @CurrentUser() actor: AuthenticatedUser,
+    @Param('id', ParseUUIDPipe) id: string,
+    @Body()
+    dto: { title?: string; subtitle?: string | null; sortOrder?: number; isPremium?: boolean },
+  ) {
+    return this.lessons.updateSection(actor, id, dto ?? {});
+  }
+
+  @Post('sections/:id/unpublish')
+  @Roles('admin')
+  unpublishSection(
+    @CurrentUser() actor: AuthenticatedUser,
+    @Param('id', ParseUUIDPipe) id: string,
+  ) {
+    return this.lessons.unpublishSection(actor, id);
   }
 
   @Get(':id')

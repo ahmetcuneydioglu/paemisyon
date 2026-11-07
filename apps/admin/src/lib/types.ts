@@ -804,3 +804,66 @@ export interface FlashcardPublishManyResult {
   published: string[];
   skipped: { id: string; reason: string }[];
 }
+
+// ── Konu Anlatımı (Doc 57): bölüm → ders → sürüm ──
+export interface LessonAdminRow {
+  id: string;
+  slug: string;
+  title: string;
+  status: ContentStatus;
+  version: number;
+  sourceLabel: string;
+  readingMinutes: number;
+  publishedAt: string | null;
+  updatedAt: string;
+  _count: { versions: number };
+}
+export interface LessonSectionAdminRow {
+  id: string;
+  slug: string;
+  title: string;
+  status: ContentStatus;
+  isPremium: boolean;
+  publishedAt: string | null;
+  course: { name: string };
+  topic: { name: string } | null;
+  lessons: LessonAdminRow[];
+}
+export type LessonBlock = { kind: 'text'; text: string } | { kind: 'table'; headers: string[]; rows: string[][] };
+export interface LessonVersionRow {
+  id: string;
+  versionNo: number;
+  body: { sections: { title: string; blocks: LessonBlock[] }[] };
+  reviewNote: string | null;
+  createdAt: string;
+}
+export interface LessonSourceRow {
+  id: string;
+  kind: 'book' | 'url' | 'article';
+  label: string;
+  url: string | null;
+  page: string | null;
+  lawArticleId: string | null;
+  isPublic: boolean;
+}
+export interface LessonAdminDetail {
+  id: string;
+  slug: string;
+  title: string;
+  goal: string;
+  sortOrder: number;
+  readingMinutes: number;
+  status: ContentStatus;
+  sourceLabel: string;
+  version: number;
+  publishedAt: string | null;
+  createdAt: string;
+  updatedAt: string;
+  sectionId: string;
+  section: { slug: string; title: string; status: ContentStatus; isPremium: boolean };
+  versions: LessonVersionRow[];
+  sources: LessonSourceRow[];
+  links: { kind: string; targetId: string }[];
+  latestVersionNo: number | null;
+  validation: { ok: boolean; issues: string[]; lines: string[] };
+}
