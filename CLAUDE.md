@@ -106,6 +106,18 @@ Bu kurallar her UI kodu yazımında geçerlidir; "sonradan düzeltiriz" yaklaş�
   kaynaklı kartlar da toplu yayınlanabilir (kullanıcı kararı 6 Kas 2026): toplu
   yayın her kartı kendi kapısından (betik doğrulaması + mevzuat kontrolü +
   eskime) tek tek geçirir, geçemeyeni gerekçesiyle atlar.
+- **DERS (konu anlatımı) içerik türü (7 Kas 2026, Doc 57) — istisna DEĞİL, tanım:**
+  ders, kaynak kitaptan editoryal ÖZGÜN anlatımdır (insan yazdı/düzenledi; model
+  üretimi değildir, bu yüzden "AI" ön ekli etiket taşımaz). Model yalnız taslak
+  yardımcısı olacaksa ayrı karar ve "AI taslak" etiketi gerekir. Yapı: bölüm →
+  ders → sürüm (`lesson_sections` / `lessons` / `lesson_versions`); yayın kapısı
+  derstedir, en son sürüm `ders-dogrulayici.ts`'yi geçmeli ve `reviewNote`
+  zorunludur; yayın kararı insanındır (yalnız admin, `/lessons`). Kaynak kitap
+  künyesi (`sourceLabel`, `book` türü kaynak) kullanıcıya hiçbir yüzeyde
+  gösterilmez; kaynakçada yalnız kamuya açık kaynaklar (URL, resmî madde) yer
+  alır. Ders hâkimiyete girmez ve soru üretmez; "okundu" kullanıcı işaretidir.
+  İçe aktarma: `docs/57-konu-anlatimi/<ders>/<bölüm>/bolum.json` + markdown →
+  `scripts/ders-ice-aktar.ts` (in_review) → panel/`ders-yayinla.ts`.
 - Kaynak etiketi son kullanıcıya GÖSTERİLMEZ (4 Eyl 2026 kararı) — ne denemede,
   ne alıştırmada, ne günün sorusunda, ne de public/SEO sayfalarında. Etiket
   sorunun geldiği kitabı/sınavı işaret ediyor ve onu dağıtmak istemiyoruz.
