@@ -17,3 +17,20 @@ Kontroller: Expo ve API TypeScript; Expo lint; summaries.service ve quick-review
 ## Gezinme entegrasyonu düzeltmesi
 
 Ünite listesi Çalış sekmesinin iç yığınına taşındı; sekme çubuğu korunur. Dersin Konu oku seçimi, konu odası ve Mevzuat detayı aynı listeyi açar. Okuyucu kök Stack kaydı başlık ve geri gezinme ile açılır; geçmişi olmayan doğrudan girişte Çalış bağlantısı vardır. Telefon yeniden normal ana ekrandan başlatılır. API yayını henüz yapılmadığı için hızlı tekrar verisi canlıda mevcut değildir.
+
+## Figma karşılaştırması ve 01 ekranı (7 Kas 2026)
+
+Simülatörde (iPhone 17, koyu tema) altı ekran Figma 121:1542 ile yan yana karşılaştırıldı; farklar kapatıldı:
+
+- **01 / Okuma seçimi** eklendi: `kutuphane/konu-oku/[topicId]` — ders odasının Konu oku sayfasından konu seçilince
+  "Nasıl okumak istersin?" (Ünite içerikleri / Mevzuat metni, "Tek ünite, iki okuma biçimi" kartı). Satırlar sunucu
+  verisine göre: ünite yoksa ya da mevzuat bağı yoksa o satır çizilmez. Konu odasındaki "Ünite içerikleri" satırı ve
+  Mevzuat detayı doğrudan listeye gitmeye devam eder (orada İlgili maddeler zaten ayrı).
+- **02/03 / Üniteler:** çift üst boşluk (`Screen` güvenli alanı + Stack başlığı) kaldırıldı; ünite ve ders satırlarına
+  kitap ikonu; "Kaldığın yer" kartı okuma biçiminin hemen altına alındı. Doc 57 ders bölümü ("Anayasa Türleri") tasarımda
+  yok, bilinçli ek; madde özetleri başlığı "Üniteler" yerine "Madde özetleri".
+- **04/05 / Okuyucu:** gezinme başlığı "Konu oku", İçindekiler sağ üst düğme (gövdedeki etiket satırı kalktı); üst
+  etiket hızlı tekrarda "<kanun> · Hızlı tekrar". Kalan fark: tasarımdaki bölüm numaraları ("01  Devletin kimliği") ve
+  "Resmî metni aç · md 1–3" düğmesi yerine madde yongaları; hızlı tekrarda "Ayrıntı için anlatıma geç" düğmesi yok.
+- **06 / İçindekiler:** sheet olarak kaldı (tasarımda tam ekran); satırlara "Bölüm N" alt başlığı eklendi.
+

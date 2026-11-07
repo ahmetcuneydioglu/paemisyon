@@ -42,8 +42,8 @@ export default function DersOdasiScreen() {
   const coz = (t: Konu | null) => seans({ source: t ? "topic_room" : "course_room", ...kapsam(t) });
   const yanlislar = (t: Konu | null, n: number) => seans({ mode: "review", source: t ? "topic_room" : "course_room", count: String(Math.min(20, n)), ...kapsam(t) });
   const favoriler = (t: Konu | null, n: number) => seans({ mode: "practice", fromBookmarks: "1", source: t ? "topic_room" : "course_room", count: String(Math.min(20, n)), ...kapsam(t) });
-  // Tek ünite varsa özet doğrudan açılır; birden çoksa konu sayfası üniteleri listeler.
-  const oku = (t: Konu) => router.push({ pathname: "/(tabs)/kutuphane/uniteler/[topicId]", params: { topicId: t.id, name: t.name } });
+  // Okuma seçimi (Figma 121:1545): ünite içerikleri mi, mevzuat metni mi — konu bazında.
+  const oku = (t: Konu) => router.push({ pathname: "/(tabs)/kutuphane/konu-oku/[topicId]", params: { topicId: t.id, name: t.name } });
   const konuAc = (t: Konu) => {
     setKonu(t);
     konuSayfasi.open();

@@ -16,12 +16,14 @@ export default function OzetScreen() {
   const router = useRouter();
   const { colors, space } = useTheme();
   const [mode, setMode] = useState<ReadingMode>(p.mode === "quick" ? "quick" : "lesson");
-  return <View style={{ flex: 1, backgroundColor: colors.bg }}><Stack.Screen options={{ title: q.data ? shortTitle(q.data.title) : "Konu oku", headerBackTitle: "Geri", headerStyle: { backgroundColor: colors.bg }, headerTintColor: colors.ink, headerLeft: !router.canGoBack() ? () => <Button title="Çalış" size="sm" variant="ghost" onPress={() => router.replace("/(tabs)/kutuphane")} /> : undefined }} />
-    {q.isPending ? <View style={{ padding: space.screenGutter }}><Skeleton height={220} /></View> : q.isError || !q.data ? <Notice title="İçerik yüklenemedi" tone="error"><Button title="Tekrar dene" onPress={() => void q.refetch()} /></Notice> : <UnitReader key={`${q.data.slug}-${mode}`} unit={q.data} mode={mode === "quick" && q.data.quickReview ? "quick" : "lesson"} onMode={m => { setMode(m); }} />}
+  const [toc, setToc] = useState(false);
+  // Gezinme (Figma 121:1829): başlık "Konu oku", sağda İçindekiler; ünite adı gövdede.
+  return <View style={{ flex: 1, backgroundColor: colors.bg }}><Stack.Screen options={{ title: "Konu oku", headerBackTitle: "Geri", headerStyle: { backgroundColor: colors.bg }, headerTintColor: colors.ink, headerLeft: !router.canGoBack() ? () => <Button title="Çalış" size="sm" variant="ghost" onPress={() => router.replace("/(tabs)/kutuphane")} /> : undefined, headerRight: q.data ? () => <Button title="İçindekiler" size="sm" variant="secondary" onPress={() => setToc(true)} /> : undefined }} />
+    {q.isPending ? <View style={{ padding: space.screenGutter }}><Skeleton height={220} /></View> : q.isError || !q.data ? <Notice title="İçerik yüklenemedi" tone="error"><Button title="Tekrar dene" onPress={() => void q.refetch()} /></Notice> : <UnitReader key={`${q.data.slug}-${mode}`} unit={q.data} mode={mode === "quick" && q.data.quickReview ? "quick" : "lesson"} onMode={m => { setMode(m); }} toc={toc} onToc={setToc} />}
   </View>;
 }
 
-function UnitReader({ unit: u, mode, onMode }: { unit: SummaryUnit; mode: ReadingMode; onMode: (mode: ReadingMode) => void }) {
+function UnitReader({ unit: u, mode, onMode, toc, onToc }: { unit: SummaryUnit; mode: ReadingMode; onMode: (mode: ReadingMode) => void; toc: boolean; onToc: (open: boolean) => void }) {
   const router = useRouter();
   const { colors, space } = useTheme();
   const insets = useSafeAreaInsets();
@@ -29,7 +31,7 @@ function UnitReader({ unit: u, mode, onMode }: { unit: SummaryUnit; mode: Readin
   const save = useSaveUnitProgress();
   const peek = useArticlePeek();
   const scroll = useRef<ComponentRef<typeof ScrollView>>(null);
-  const [toc, setToc] = useState(false);
+  const setToc = onToc;
   const [storageError, setStorageError] = useState(false);
   const [read, setRead] = useState(mode === "lesson" && Boolean(u.progress?.completedAt));
   const cards = (mode === "quick" ? u.quickReview ?? [] : u.blocks).filter(b => b.type !== "bridge" && b.type !== "exam_stats");
@@ -70,14 +72,13 @@ function UnitReader({ unit: u, mode, onMode }: { unit: SummaryUnit; mode: Readin
   };
   const jump = (i: number) => { setToc(false); index.current = i; scroll.current?.scrollTo({ y: positions.current[i] ?? 0, animated: true }); persist(); };
   return <>
-    <View style={{ paddingHorizontal: space.screenGutter, paddingVertical: space.s2, flexDirection: "row", justifyContent: "space-between", alignItems: "center" }}><AppText variant="label" tone="subtle">{mode === "quick" ? "Hızlı tekrar" : "Konu anlatımı"}</AppText><Button size="sm" title="İçindekiler" variant="secondary" onPress={() => setToc(true)} /></View>
     <ScrollView ref={scroll} onContentSizeChange={restore} scrollEventThrottle={200} onScroll={e => {
       if (!restored.current) return;
       const y = e.nativeEvent.contentOffset.y + space.s5;
       const next = positions.current.reduce((last, pos, i) => pos <= y ? i : last, 0);
       if (next !== index.current) { index.current = next; if (pending.current) clearTimeout(pending.current); pending.current = setTimeout(() => persist(), 500); }
     }} contentContainerStyle={{ padding: space.screenGutter, gap: space.s5, paddingBottom: space.s8 }}>
-      <View style={{ gap: space.s2 }}><AppText variant="label" tone="accentInk">{u.legislation.shortName ?? u.legislation.name} · md {u.articleLabel ?? `${u.articleFrom}–${u.articleTo}`}</AppText><AppText variant="title">{shortTitle(u.title)}</AppText>{u.subtitle ? <AppText tone="soft">{u.subtitle}</AppText> : null}</View>
+      <View style={{ gap: space.s2 }}><AppText variant="label" tone="accentInk">{mode === "quick" ? `${u.legislation.shortName ?? u.legislation.name} · Hızlı tekrar` : `${u.legislation.shortName ?? u.legislation.name} · md ${u.articleLabel ?? `${u.articleFrom}–${u.articleTo}`}`}</AppText><AppText variant="title">{shortTitle(u.title)}</AppText>{u.subtitle ? <AppText tone="soft">{u.subtitle}</AppText> : null}</View>
       {u.quickReview ? <ChoiceTabs value={mode} onChange={m => { persist(); onMode(m as ReadingMode); }} options={READING_OPTIONS} label="Okuma biçimi" /> : null}
       {storageError || save.isError ? <Notice tone="warning" title="Okuma konumu kaydedilemedi">Okumaya devam edebilirsin; konumun bir sonraki açılışta korunmayabilir.</Notice> : null}
       {cards.map((b, i) => <View key={b.id} onLayout={e => { positions.current[i] = e.nativeEvent.layout.y; restore(); }}>
@@ -86,7 +87,7 @@ function UnitReader({ unit: u, mode, onMode }: { unit: SummaryUnit; mode: Readin
       {u.locked ? <SummaryLockCard remaining={u.totalBlocks - u.blocks.length} onPremium={() => router.push("/paywall")} /> : <Button title={read ? "Okundu" : "Okudum olarak işaretle"} variant="secondary" onPress={() => { setRead(true); persist(true); }} />}
     </ScrollView>
     {!u.locked && bridge?.session ? <View style={{ paddingHorizontal: space.screenGutter, paddingTop: space.s3, paddingBottom: Math.max(insets.bottom, space.s3), backgroundColor: colors.bg }}><Button title="Bu üniteden soru çöz" onPress={openQuestion} /></View> : null}
-    <Sheet title="İçindekiler" visible={toc} onClose={() => setToc(false)}>{cards.map((b, i) => <ListRow key={b.id} title={b.title ?? `Bölüm ${i + 1}`} onPress={() => jump(i)} />)}</Sheet>
+    <Sheet title="İçindekiler" visible={toc} onClose={() => setToc(false)}>{cards.map((b, i) => <ListRow key={b.id} title={b.title ?? `Bölüm ${i + 1}`} subtitle={`Bölüm ${i + 1}`} onPress={() => jump(i)} />)}</Sheet>
     <ArticlePeekSheet lawSlug={u.legislation.slug} no={peek.peek?.no ?? null} title={peek.peek?.title ?? null} onClose={peek.close} onReadFull={no => { peek.close(); router.push({ pathname: "/oku/[slug]", params: { slug: u.legislation.slug, madde: no } }); }} />
   </>;
 }
