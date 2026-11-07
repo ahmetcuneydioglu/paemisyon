@@ -40,6 +40,13 @@ Sınav Sened-i İttifak'ı iki kalıpla sorar: "ilk anayasal belge" ve "padişah
 :::
 
 Belgenin uygulanma şansı bulamamış olsa da gözden kaçırılmaması gereken kazanımları vardır: keyfiliğin yasaklanması, vergide adalet, kişi dokunulmazlığı ve suçta ve cezada kanunilik ilkesinin aranması.
+## Sınavda çıktı
+
+Sened-i İttifak'ın şartları liste olarak sorulur; yukarıdaki ilkeleri aklında tut.
+
+:::soru b8003d5e-4f5d-44c5-84f4-0f243a580346
+:::
+
 
 ---
 
@@ -49,3 +56,4 @@ Belgenin uygulanma şansı bulamamış olsa da gözden kaçırılmaması gereken
 - Çapraz kontrol: TÜBİTAK Sosyal Bilimler Ansiklopedisi, Sened-i İttifak: https://ansiklopedi.tubitak.gov.tr/ansiklopedi/sened-i-ittifak
 - Tarih dersi; madde bağı yok, sayı denetimi uygulanmaz. İnsan incelemesi: 1808 tarihi ve "ilk anayasal belge" nitelemesi kaynakla uyumlu.
 - AI taslak; insan düzenleme ve yayın onayı bekliyor. Soru eşlemesi yapılmadı; soru üretilmedi.
+- Gömülü soru: bankadaki yayınlı gerçek soru (b8003d5e); kullanıcı aramasıyla eşlendi (7 Kas 2026). Kaynağı bankada, kullanıcıya gösterilmez.

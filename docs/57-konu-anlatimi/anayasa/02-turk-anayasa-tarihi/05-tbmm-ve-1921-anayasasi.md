@@ -41,6 +41,13 @@ Yasama ve yürütme yetkilerinin mecliste toplandığı, yürütmenin meclisin i
 ## Neden böyle bir anayasa?
 
 Metin kısa ve çerçeve niteliğindedir; çünkü asıl ihtiyaç, işgal altındaki ülkede meşru bir karar merkezini kurmak ve egemenliğin kaynağını açıkça söylemekti. Temel haklar ve yargı düzeni, savaş bittikten sonra kurulacak düzene bırakılmıştır. Bu yüzden 1921 Anayasası, Türkiye Devleti'nin ilk anayasası olarak anılırken, Cumhuriyet'in ilk anayasası olarak 1924 Anayasası kabul edilir.
+## Sınavda çıktı
+
+1921 Anayasası'nın özellikleri "hangisi değildir" kalıbıyla sorulur.
+
+:::soru e458f91a-a912-4d35-a4f9-7c6203787f6e
+:::
+
 
 ---
 
@@ -51,3 +58,4 @@ Metin kısa ve çerçeve niteliğindedir; çünkü asıl ihtiyaç, işgal altın
 - Çapraz kontrol: TBMM, 1921 Anayasası metni: https://www.tbmm.gov.tr/anayasa/anayasa21.htm
 - Tarih dersi; madde bağı yok. "Türkiye Devleti'nin ilk anayasası / Cumhuriyet'in ilk anayasası" ayrımı kaynağın dipnotundan.
 - AI taslak; insan düzenleme ve yayın onayı bekliyor. Soru üretilmedi.
+- Gömülü soru: bankadaki yayınlı gerçek soru (e458f91a); kullanıcı aramasıyla eşlendi (7 Kas 2026). Kaynağı bankada, kullanıcıya gösterilmez.

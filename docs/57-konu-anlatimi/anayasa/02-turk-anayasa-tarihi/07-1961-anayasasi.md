@@ -57,6 +57,16 @@ Kanunların anayasaya uygunluğunun bağımsız bir mahkemece denetlenmesidir. T
 :::uyari
 Sınavın "1971 değişiklikleriyle hukukumuza ilk kez giren" diye sorduğu üç kurum: kanun hükmünde kararname, Askeri Yüksek İdare Mahkemesi ve Devlet Güvenlik Mahkemeleri. Devlet Güvenlik Mahkemeleri 2004 anayasa değişikliğiyle kaldırılmıştır.
 :::
+## Sınavda çıktı
+
+1961 Anayasası iki kalıpla sorulur: "ilk defa 1961'de düzenlenen" ve "1971–1973 değişikliklerinden olmayan".
+
+:::soru daa01265-371d-4527-81ba-925a6a9f878c
+:::
+
+:::soru c7916407-d876-4a0a-843c-9344f2fbdd04
+:::
+
 
 ---
 
@@ -67,3 +77,4 @@ Sınavın "1971 değişiklikleriyle hukukumuza ilk kez giren" diye sorduğu üç
 - Çapraz kontrol: TBMM, 1961 Anayasası metni: https://www.tbmm.gov.tr/anayasa/anayasa61.htm
 - Tarih dersi; yürürlükteki Anayasa'ya madde bağı yok.
 - AI taslak; insan düzenleme ve yayın onayı bekliyor. Soru üretilmedi.
+- Gömülü soru: bankadaki yayınlı gerçek soru (daa01265, c7916407); kullanıcı aramasıyla eşlendi (7 Kas 2026). Kaynağı bankada, kullanıcıya gösterilmez.

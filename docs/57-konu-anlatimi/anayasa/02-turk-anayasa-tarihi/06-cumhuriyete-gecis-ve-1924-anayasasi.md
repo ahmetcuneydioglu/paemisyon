@@ -57,6 +57,16 @@ Aynı gün meclis, seçime katılan üyelerin oybirliğiyle Ankara milletvekili 
 :::ornek
 "Hangi anayasa döneminde hem tek partili hem çok partili rejim uygulanmıştır?" sorusunun cevabı 1924 Anayasası'dır: aynı metin, iki farklı siyasal yaşam.
 :::
+## Sınavda çıktı
+
+1923 değişiklikleri ve 1924 Anayasası'nın hükümet sistemi sınavın iki ayrı kalıbıdır.
+
+:::soru 633932b5-b0df-4ace-8db3-fde2ea08cdde
+:::
+
+:::soru 664e06f0-5f86-46a0-8c97-c02f08812a28
+:::
+
 
 ---
 
@@ -66,3 +76,4 @@ Aynı gün meclis, seçime katılan üyelerin oybirliğiyle Ankara milletvekili 
 - Kaynakta saltanatın kaldırılması "1–2 Kasım 1922 tarihli 307 sayılı karar" diye geçer; ders 1 Kasım 1922'yi kullandı. Çapraz kontrol: TBMM, 1924 Anayasası metni: https://www.tbmm.gov.tr/anayasa/anayasa24.htm
 - Tarih dersi; yürürlükteki Anayasa'ya madde bağı yok. 1924 Anayasası'nın madde numaraları kullanıcı metnine alınmadı.
 - AI taslak; insan düzenleme ve yayın onayı bekliyor. Soru üretilmedi.
+- Gömülü soru: bankadaki yayınlı gerçek soru (633932b5, 664e06f0); kullanıcı aramasıyla eşlendi (7 Kas 2026). Kaynağı bankada, kullanıcıya gösterilmez.

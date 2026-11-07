@@ -45,7 +45,13 @@ Anayasaya dokunmaksızın, anayasada öngörülen yetkilerin kullanılmasıdır.
 
 ## Sınavda çıktı
 
-Tali kurucu iktidarın bağlı olduğu usul, yürürlükteki anayasanın değiştirilmesi maddesiyle sorulur.
+Asli ve tali kurucu iktidar "hangisi yanlıştır" kalıbıyla; tali kurucu iktidarın bağlı olduğu usul ise yürürlükteki anayasanın değiştirilmesi maddesiyle sorulur.
+
+:::soru bff3465f-5662-42a3-b59c-2f0edcb180b4
+:::
+
+:::soru 2ef4c395-c4d7-44d9-940d-f048ab45fe9d
+:::
 
 :::soru a4a866ce-6641-442e-8441-499b4d1dbd62
 :::
@@ -57,5 +63,5 @@ Tali kurucu iktidarın bağlı olduğu usul, yürürlükteki anayasanın değiş
 - Asli, tali ve kurulmuş iktidar: THEMIS Anayasa Hukuku, 24. baskı, 2020, basılı s.237–238 / PDF s.234–235 (Yedinci Bölüm II). Özgün anlatım; tablo bu ders için kuruldu.
 - Resmî metin: T.C. Anayasası md 175: https://www.mevzuat.gov.tr/mevzuatmetin/1.5.2709.pdf
 - Kaynak kitabın tali kurucu iktidar örnekleri (2001 ve 2002 iktidarı) yerine daha bilinen 2001 ve 2017 değişiklikleri verildi; ikisi de anayasada öngörülen usulle yapılmış değişikliklerdir.
-- Gömülü soru: bankadaki yayınlı, md 175 bağlı gerçek soru (a4a866ce…); sorunun kaynağı bankada kayıtlıdır, kullanıcıya gösterilmez. Soru üretilmedi.
+- Gömülü sorular: bankadaki yayınlı gerçek sorular — asli (bff3465f…), tali (2ef4c395…) ve md 175 bağlı (a4a866ce…); sorunun kaynağı bankada kayıtlıdır, kullanıcıya gösterilmez. Soru üretilmedi.
 - AI taslak; insan düzenleme ve yayın onayı bekliyor.
