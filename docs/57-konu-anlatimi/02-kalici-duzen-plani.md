@@ -59,7 +59,7 @@ kuralı ayrı iş.
 | # | İş | Teslim |
 |---|---|---|
 | A | Migration + Prisma + doğrulayıcı + içe aktarma betiği; 3 dersi prod'a in_review | YAPILDI (7 Kas): `20261107100000_konu_anlatimi`, `modules/lessons/*` (5 test), `scripts/ders-ice-aktar.ts`, `ders-yayinla.ts`; yerelde 3 ders yayınlandı, uçlar doğrulandı. Prod yükleme deploy sonrası |
-| B | Admin `/lessons` | panel turu |
+| B | Admin `/lessons` | YAPILDI (7 Kas): bölüm/ders listesi, markdown'dan içe aktarma (Doğrula → İncelemeye yaz), ders sayfası (gövde + sürüm seçici, künye, kaynaklar, inceleme kaydı, doğrulama satırları, Yayınla / bekleyen sürümü yayınla / Yayından al), bölümde Premium bayrağı ve yayından alma. Yerel panelde tur yapıldı. |
 | C | Expo: API'den okuma, gömülü içerik kaldırma, giriş satırları; simülatör + telefon | YAPILDI (7 Kas): `features/lessons/queries.ts`, `uniteler/[topicId]` bölüm/ders listesi sunucudan, `anlatim/[slug]` sunucu gövdesi + sunucu ilerlemesi (offset/okudum), premium kilit ekranı; simülatörde doğrulandı (ilerleme DB'ye yazıldı). Telefon: deploy sonrası |
 | D | Web `/anlatim` | ISR + revalidate kancası |
 | E | Yayın (admin) + CLAUDE.md'ye "ders" içerik türü notu (istisna değil, tanım) | |
