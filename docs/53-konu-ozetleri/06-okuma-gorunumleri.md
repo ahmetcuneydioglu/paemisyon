@@ -22,10 +22,11 @@ Kontroller: Expo ve API TypeScript; Expo lint; summaries.service ve quick-review
 
 Simülatörde (iPhone 17, koyu tema) altı ekran Figma 121:1542 ile yan yana karşılaştırıldı; farklar kapatıldı:
 
-- **01 / Okuma seçimi** eklendi: `kutuphane/konu-oku/[topicId]` — ders odasının Konu oku sayfasından konu seçilince
-  "Nasıl okumak istersin?" (Ünite içerikleri / Mevzuat metni, "Tek ünite, iki okuma biçimi" kartı). Satırlar sunucu
-  verisine göre: ünite yoksa ya da mevzuat bağı yoksa o satır çizilmez. Konu odasındaki "Ünite içerikleri" satırı ve
-  Mevzuat detayı doğrudan listeye gitmeye devam eder (orada İlgili maddeler zaten ayrı).
+- **01 / Okuma seçimi** eklendi: `kutuphane/konu-oku/[courseId]` — ders odasındaki Konu oku kutusu doğrudan bu
+  ekranı açar (kullanıcı kararı 7 Kas 2026: aradaki "Konu oku" sheet'i kaldırıldı). "Nasıl okumak istersin?" altında
+  iki bölüm: Ünite içerikleri (ünitesi olan konular → ünite listesi) ve Mevzuat metni (dersin kanunları → okuyucu);
+  sonda "Tek ünite, iki okuma biçimi" kartı. Satırlar sunucu verisine göre; ikisi de boşsa not. Konu odasındaki
+  "Ünite içerikleri" satırı ve Mevzuat detayı doğrudan listeye gitmeye devam eder.
 - **02/03 / Üniteler:** çift üst boşluk (`Screen` güvenli alanı + Stack başlığı) kaldırıldı; ünite ve ders satırlarına
   kitap ikonu; "Kaldığın yer" kartı okuma biçiminin hemen altına alındı. Doc 57 ders bölümü ("Anayasa Türleri") tasarımda
   yok, bilinçli ek; madde özetleri başlığı "Üniteler" yerine "Madde özetleri".
