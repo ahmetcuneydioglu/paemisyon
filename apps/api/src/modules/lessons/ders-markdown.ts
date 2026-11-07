@@ -10,8 +10,40 @@
  *   - diğer satırlar    → inceleme notu (reviewNote)
  * Kitap künyesi (book) ve madde kaynakları içe aktarma çağrısında verilir; gövdeye konmaz.
  */
+/**
+ * Blok türleri (kullanıcı kararı 7 Kas 2026: altıyla sınırlı — metin dışında tanım, karşılaştırma
+ * tablosu, uyarı, örnek, madde bağı, sınavda çıkmış soru). Markdown'da yönerge bloğu:
+ *   :::tanim <terim>      … :::      → tanım kartı
+ *   :::uyari              … :::      → "Dikkat / karıştırma" kutusu (tek ton)
+ *   :::ornek              … :::      → kısa örnek
+ *   :::madde <kanunSlug>:<no>  [tek satır not]  :::  → resmî madde bağı (madde metni yeniden yazılmaz)
+ *   :::soru <questionId>  :::        → bankadaki gerçek, kaynaklı soru (yayınlı olmalı; etiket gösterilmez)
+ * `| a | b |` tablo = karşılaştırma. Yayında madde ve soru blokları sunucuda zenginleştirilir.
+ */
 export type LessonBlock =
-  { kind: 'text'; text: string } | { kind: 'table'; headers: string[]; rows: string[][] };
+  | { kind: 'text'; text: string }
+  | { kind: 'table'; headers: string[]; rows: string[][] }
+  | { kind: 'tanim'; term: string; text: string }
+  | { kind: 'uyari'; text: string }
+  | { kind: 'ornek'; text: string }
+  | { kind: 'madde'; law: string; no: string; note?: string }
+  | { kind: 'soru'; questionId: string };
+
+/** Gövdedeki madde bağları: "<kanunSlug>:<no>" (madde kaynağı olarak otomatik eklenir). */
+export function lessonArticleRefs(body: LessonBody): string[] {
+  const out = new Set<string>();
+  for (const s of body.sections)
+    for (const b of s.blocks) if (b.kind === 'madde') out.add(`${b.law}:${b.no}`);
+  return [...out];
+}
+
+/** Gövdedeki soru blokları (bankada yayınlı olmalı). */
+export function lessonQuestionIds(body: LessonBody): string[] {
+  const out = new Set<string>();
+  for (const s of body.sections)
+    for (const b of s.blocks) if (b.kind === 'soru') out.add(b.questionId);
+  return [...out];
+}
 export interface LessonSectionBody {
   title: string;
   blocks: LessonBlock[];
@@ -51,6 +83,27 @@ export function parseLessonMarkdown(markdown: string): ParsedLesson {
     const bl = body.split('\n');
     let i = 0;
     while (i < bl.length) {
+      const directive = bl[i].match(/^:::(tanim|uyari|ornek|madde|soru)\b\s*(.*)$/);
+      if (directive) {
+        const kind = directive[1];
+        const arg = directive[2].trim();
+        const inner: string[] = [];
+        i++;
+        while (i < bl.length && bl[i].trim() !== ':::') inner.push(bl[i++]);
+        if (i >= bl.length)
+          throw new Error(`"${heading}": ":::${kind}" bloğu kapanmadı (":::" satırı yok)`);
+        i++;
+        const text = inner.join('\n').trim();
+        if (kind === 'tanim') blocks.push({ kind, term: arg, text });
+        else if (kind === 'uyari' || kind === 'ornek') blocks.push({ kind, text });
+        else if (kind === 'madde') {
+          const m = arg.match(/^([a-z0-9-]+):(\S+)$/i);
+          if (!m)
+            throw new Error(`"${heading}": madde bağı "<kanunSlug>:<no>" biçiminde olmalı: ${arg}`);
+          blocks.push({ kind, law: m[1], no: m[2], ...(text ? { note: text } : {}) });
+        } else blocks.push({ kind: 'soru', questionId: arg });
+        continue;
+      }
       if (bl[i].startsWith('|')) {
         const table: string[][] = [];
         while (i < bl.length && bl[i].startsWith('|')) {
@@ -66,7 +119,8 @@ export function parseLessonMarkdown(markdown: string): ParsedLesson {
           blocks.push({ kind: 'table', headers: table[0], rows: table.slice(1) });
       } else {
         const para: string[] = [];
-        while (i < bl.length && !bl[i].startsWith('|')) para.push(bl[i++]);
+        while (i < bl.length && !bl[i].startsWith('|') && !bl[i].startsWith(':::'))
+          para.push(bl[i++]);
         const text = para.join('\n').trim();
         if (text) blocks.push({ kind: 'text', text });
       }
@@ -100,7 +154,11 @@ export function readingMinutes(body: LessonBody): number {
   for (const s of body.sections) {
     words += s.title.split(/\s+/).length;
     for (const b of s.blocks) {
-      if (b.kind === 'text') words += b.text.split(/\s+/).filter(Boolean).length;
+      if (b.kind === 'text' || b.kind === 'uyari' || b.kind === 'ornek')
+        words += b.text.split(/\s+/).filter(Boolean).length;
+      else if (b.kind === 'tanim') words += `${b.term} ${b.text}`.split(/\s+/).length;
+      else if (b.kind === 'madde') words += 20;
+      else if (b.kind === 'soru') words += 60;
       else
         words +=
           (b.headers.length + b.rows.reduce((n, r) => n + r.length, 0)) * 0.5 +

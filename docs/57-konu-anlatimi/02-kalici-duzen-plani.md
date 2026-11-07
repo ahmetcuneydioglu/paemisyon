@@ -77,3 +77,20 @@ editoryal inceleme + panel yayını.
 2. Dersler premium mu, açık mı (bölüm bazında bayrak)?
 3. Kaynakça panelinde kitap künyesi gösterilsin mi? (Önerim: hayır; URL ve madde evet.)
 4. A–E sırası ve önce A+C (mobil) mi, yoksa A+B (panel) mi?
+
+## 8. İçerik düzeni kararları (7 Kas 2026) ve ilk iki bölüm
+
+Kullanıcı kararları: (a) 400–700 kelime/ders, 4–8 ders/bölüm; (b) blok türleri altıyla sınırlı — metin, karşılaştırma
+tablosu, `tanim`, `uyari` (tek ton; "hoca notu" gibi ikinci ses yok), `ornek`, `madde` (resmî metne bağ, madde yeniden
+yazılmaz), `soru` (bankadaki gerçek soru; etiket gösterilmez, yalnız resmî PAEM sınav adı gösterilebilir — ilk sürümde
+hiç etiket yok); (c) üretim hattı "AI taslak + insan düzenleme" (`aiDraft`, sourceLabel ön eki). Markdown yönergeleri
+`:::tanim <terim>` … `:::`, `:::uyari`, `:::ornek`, `:::madde <kanun>:<no>`, `:::soru <id>`; parser/doğrulayıcı
+`ders-markdown.ts` / `ders-dogrulayici.ts`, yayın gövdesi `enrichBody` ile zenginleşir (madde adı, soru gövdesi/şıklar/
+doğru/açıklama). Kaynak kitabın bölümleri: 1 Giriş, 2 Türk Anayasa Tarihi, 3 1982 Anayasası, 4 Yasama, 5 Yürütme,
+6 Yargı, 7 Anayasanın Değiştirilmesi, 8 Hükümet Sistemleri. Temel haklar (3/VI–VII) madde tabanlı olduğundan Doc 53
+ünitelerine bırakılır.
+
+İlk teslim: `anayasa/00-anayasa-hukukuna-giris` (3 ders, açık) ve `anayasa/02-turk-anayasa-tarihi` (7 ders, premium);
+`anayasa-turleri` bölümü sortOrder 1'e alındı (prod'da panelden). Kurucu iktidar dersinde md 175 bağlı gerçek soru
+(a4a866ce…) gömülü; teori/tarih dersleri için soru eşlemesi bankada arama ister (prod okuma izni yok — kullanıcı).
+

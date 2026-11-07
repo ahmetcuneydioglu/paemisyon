@@ -24,6 +24,8 @@ export interface LessonValidationInput {
   sources: LessonSourceInput[];
   reviewNote?: string | null;
   sourceLabel: string;
+  /** Gövdedeki soru bloklarının çözümü: id → yayınlı mı (servis doldurur; verilmezse soru bloğu denetlenmez). */
+  questions?: Record<string, boolean>;
 }
 
 export interface LessonValidation {
@@ -46,12 +48,13 @@ export function lessonText(body: LessonBody): string {
   const parts: string[] = [];
   for (const s of body.sections) {
     parts.push(s.title);
-    for (const b of s.blocks)
-      parts.push(
-        b.kind === 'text'
-          ? b.text
-          : [b.headers.join(' '), ...b.rows.map((r) => r.join(' '))].join('\n'),
-      );
+    for (const b of s.blocks) {
+      if (b.kind === 'text' || b.kind === 'uyari' || b.kind === 'ornek') parts.push(b.text);
+      else if (b.kind === 'tanim') parts.push(`${b.term}\n${b.text}`);
+      else if (b.kind === 'table')
+        parts.push([b.headers.join(' '), ...b.rows.map((r) => r.join(' '))].join('\n'));
+      else if (b.kind === 'madde' && b.note) parts.push(b.note);
+    }
   }
   return parts.join('\n');
 }
@@ -79,7 +82,26 @@ export function validateLesson(l: LessonValidationInput): LessonValidation {
         if (b.rows.some((r) => r.length !== w))
           bad(`bölüm "${s.title}": tablo satır genişlikleri başlıkla eşit değil`);
         if (b.rows.length === 0) bad(`bölüm "${s.title}": tablonun satırı yok`);
-      } else if (!b.text.trim()) bad(`bölüm "${s.title}": boş metin bloğu`);
+      } else if (b.kind === 'text' || b.kind === 'uyari' || b.kind === 'ornek') {
+        if (!b.text.trim()) bad(`bölüm "${s.title}": boş ${b.kind} bloğu`);
+      } else if (b.kind === 'tanim') {
+        if (!b.term.trim() || !b.text.trim())
+          bad(`bölüm "${s.title}": tanım bloğunda terim ve açıklama zorunlu`);
+      } else if (b.kind === 'madde') {
+        if (!/^[a-z0-9-]+$/i.test(b.law) || !b.no.trim())
+          bad(`bölüm "${s.title}": madde bağı biçimi (${b.law}:${b.no})`);
+        else if (
+          !(l.sources ?? []).some(
+            (src) => src.kind === 'article' && src.article && src.article.articleNo === b.no,
+          )
+        )
+          bad(`bölüm "${s.title}": madde bağı bankada çözülemedi (${b.law}:${b.no})`);
+      } else if (b.kind === 'soru') {
+        if (!/^[0-9a-f-]{36}$/i.test(b.questionId))
+          bad(`bölüm "${s.title}": soru kimliği UUID değil (${b.questionId})`);
+        else if (l.questions && !l.questions[b.questionId])
+          bad(`bölüm "${s.title}": soru bankada yayınlı değil (${b.questionId})`);
+      }
     }
   }
   if (!l.sources?.length) bad('en az bir kaynak zorunlu');

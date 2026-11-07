@@ -1,5 +1,21 @@
 /** Konu anlatımı (Doc 57) — API `/public/lessons/*` yanıtlarıyla birebir. Kaynak künyesi dönmez. */
-export type LessonBlock = { kind: "text"; text: string } | { kind: "table"; headers: string[]; rows: string[][] };
+/** Ders blokları (Doc 57; altı tür). `madde` ve `soru` sunucuda zenginleştirilmiş gelir; kaynak etiketi yoktur. */
+export type LessonBlock =
+  | { kind: "text"; text: string }
+  | { kind: "table"; headers: string[]; rows: string[][] }
+  | { kind: "tanim"; term: string; text: string }
+  | { kind: "uyari"; text: string }
+  | { kind: "ornek"; text: string }
+  | { kind: "madde"; law: string; no: string; note?: string; lawName?: string }
+  | {
+      kind: "soru";
+      questionId: string;
+      stem: string;
+      options: { id: string; label: string; text: string }[];
+      correctOptionId: string | null;
+      explanation: string | null;
+      topicName: string | null;
+    };
 export interface LessonBodySection {
   title: string;
   blocks: LessonBlock[];

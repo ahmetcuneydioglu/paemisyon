@@ -12,7 +12,7 @@
 import { PrismaClient } from '@prisma/client';
 import { readFileSync } from 'fs';
 import { join } from 'path';
-import { parseLessonMarkdown } from '../src/modules/lessons/ders-markdown';
+import { lessonArticleRefs, parseLessonMarkdown } from '../src/modules/lessons/ders-markdown';
 import { LessonsService, type LessonImportInput } from '../src/modules/lessons/lessons.service';
 import type { PrismaService } from '../src/infra/prisma/prisma.service';
 
@@ -34,6 +34,8 @@ interface Bolum {
   topicId?: string;
   sortOrder?: number;
   isPremium?: boolean;
+  /** Model taslağı + insan düzenlemesi (karar 7 Kas 2026): sourceLabel "AI taslak" ön eki alır. */
+  aiDraft?: boolean;
   book: { label: string; page?: string };
   lessons: { file: string; slug: string; articles?: string[]; page?: string }[];
 }
@@ -73,7 +75,7 @@ interface Bolum {
       body: parsed.body,
       sources: [
         { kind: 'book', label: b.book.label, page, isPublic: false },
-        ...(l.articles ?? []).map(
+        ...[...new Set([...(l.articles ?? []), ...lessonArticleRefs(parsed.body)])].map(
           (ref) =>
             ({
               kind: 'article' as const,
@@ -90,7 +92,7 @@ interface Bolum {
         })),
       ],
       reviewNote: parsed.reviewNotes.join('\n'),
-      sourceLabel: `${b.book.label} ${page ?? ''}`.trim(),
+      sourceLabel: `${b.aiDraft ? 'AI taslak · ' : ''}${b.book.label} ${page ?? ''}`.trim(),
       links: b.topicId ? [{ kind: 'topic', targetId: b.topicId }] : [],
     };
     const v = await svc.validateForImport(input);

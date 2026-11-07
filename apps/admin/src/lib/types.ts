@@ -829,7 +829,14 @@ export interface LessonSectionAdminRow {
   topic: { name: string } | null;
   lessons: LessonAdminRow[];
 }
-export type LessonBlock = { kind: 'text'; text: string } | { kind: 'table'; headers: string[]; rows: string[][] };
+export type LessonBlock =
+  | { kind: 'text'; text: string }
+  | { kind: 'table'; headers: string[]; rows: string[][] }
+  | { kind: 'tanim'; term: string; text: string }
+  | { kind: 'uyari'; text: string }
+  | { kind: 'ornek'; text: string }
+  | { kind: 'madde'; law: string; no: string; note?: string }
+  | { kind: 'soru'; questionId: string };
 export interface LessonVersionRow {
   id: string;
   versionNo: number;

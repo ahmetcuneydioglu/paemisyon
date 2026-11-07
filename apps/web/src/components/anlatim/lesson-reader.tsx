@@ -2,12 +2,14 @@
 
 import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
-import { ArrowLeft, ArrowRight, CheckCircle2, ExternalLink, Lock } from "lucide-react";
+import { AlertTriangle, ArrowLeft, ArrowRight, BookOpen, CheckCircle2, ExternalLink, Lightbulb, Lock, Scale } from "lucide-react";
 import { apiClient } from "@/lib/api-client";
 import type { LessonBlock, LessonDetail } from "@/lib/anlatim";
 import { Card } from "@/components/ui/card";
 import { Button, ButtonLink } from "@/components/ui/button";
 import { SummaryBody } from "@/components/ozet/summary-body";
+import { QuestionOption, QuestionStem, type QuestionOptionState } from "@/components/ui/question";
+import { formatStem } from "@/lib/stem-format";
 import { cn } from "@/lib/cn";
 
 const KAYIT_ARALIGI_MS = 2500;
@@ -50,6 +52,90 @@ function TableBlock({ b }: { b: Extract<LessonBlock, { kind: "table" }> }) {
           </div>
         ))}
       </dl>
+    </Card>
+  );
+}
+
+/** Altı blok türü (Doc 57): metin, tablo, tanım, uyarı (tek ton), örnek, madde bağı, "Sınavda çıktı". */
+function Block({ b }: { b: LessonBlock }) {
+  if (b.kind === "text") return <SummaryBody text={b.text} className="type-body text-ink" />;
+  if (b.kind === "table") return <TableBlock b={b} />;
+  if (b.kind === "tanim")
+    return (
+      <Card className="flex flex-col gap-1 border-l-4 border-l-accent p-4">
+        <span className="type-label text-accent-ink">Tanım</span>
+        <span className="type-subhead text-ink">{b.term}</span>
+        <SummaryBody text={b.text} className="type-body text-ink-soft" />
+      </Card>
+    );
+  if (b.kind === "uyari")
+    return (
+      <Card tone="alt" className="flex flex-col gap-2 p-4">
+        <span className="inline-flex items-center gap-2 type-label text-accent-ink">
+          <AlertTriangle size={14} aria-hidden /> Dikkat
+        </span>
+        <SummaryBody text={b.text} className="type-body text-ink" />
+      </Card>
+    );
+  if (b.kind === "ornek")
+    return (
+      <Card className="flex flex-col gap-2 p-4">
+        <span className="inline-flex items-center gap-2 type-label text-ink-subtle">
+          <Lightbulb size={14} aria-hidden /> Örnek
+        </span>
+        <SummaryBody text={b.text} className="type-body text-ink-soft" />
+      </Card>
+    );
+  if (b.kind === "madde")
+    return (
+      <Link href={`/kanun/${b.law}/madde/${b.no}`} className="tk-interactive flex items-center gap-3 rounded-card border border-line bg-surface p-4 hover:border-accent/50">
+        <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-control bg-surface-alt text-ink" aria-hidden>
+          <Scale size={18} />
+        </span>
+        <span className="flex min-w-0 flex-1 flex-col">
+          <span className="type-subhead text-ink">
+            {b.lawName ?? b.law} md {b.no}
+          </span>
+          <span className="type-body-sm text-ink-soft">{b.note ?? "Resmî madde metnini aç"}</span>
+        </span>
+        <ArrowRight size={16} className="shrink-0 text-ink-subtle" aria-hidden />
+      </Link>
+    );
+  return <ExamQuestion q={b} />;
+}
+
+/** "Sınavda çıktı": bankadaki gerçek soru; şık seçilince doğru/yanlış ve açıklama. Kaynak etiketi yok. */
+function ExamQuestion({ q }: { q: Extract<LessonBlock, { kind: "soru" }> }) {
+  const [picked, setPicked] = useState<string | null>(null);
+  const answered = picked != null;
+  const state = (id: string): QuestionOptionState => {
+    if (!answered) return "default";
+    if (id === q.correctOptionId) return "correct";
+    if (id === picked) return "incorrect";
+    return "disabled";
+  };
+  const correctLabel = q.options.find((o) => o.id === q.correctOptionId)?.label ?? "—";
+  return (
+    <Card className="flex flex-col gap-4 border-accent/60 p-5">
+      <span className="inline-flex items-center gap-2 type-label text-accent-ink">
+        <BookOpen size={14} aria-hidden /> Sınavda çıktı
+      </span>
+      <QuestionStem index={1} total={1} counter={false} stem={q.stem} />
+      <div className="flex flex-col gap-2">
+        {q.options.map((o) => (
+          <QuestionOption key={o.id} label={o.label} text={o.text} state={state(o.id)} onSelect={answered ? undefined : () => setPicked(o.id)} />
+        ))}
+      </div>
+      {answered ? (
+        <Card tone={picked === q.correctOptionId ? "accent" : "alt"} className="flex flex-col gap-1 p-4">
+          <span className="type-subhead text-ink">{picked === q.correctOptionId ? "Doğru" : `Yanlış · doğru cevap ${correctLabel}`}</span>
+          {q.explanation ? <p className="type-body-sm text-ink-soft whitespace-pre-line">{formatStem(q.explanation)}</p> : null}
+        </Card>
+      ) : (
+        <button type="button" className="self-start type-body-sm text-accent-ink hover:underline" onClick={() => setPicked(q.correctOptionId ?? "")}>
+          Cevabı göster
+        </button>
+      )}
     </Card>
   );
 }
@@ -134,7 +220,7 @@ export function LessonReader({ lesson, loggedIn, premiumHref, loginHref }: { les
           <section key={i} id={idOf(i)} className="flex scroll-mt-24 flex-col gap-3">
             <h2 className="type-heading text-ink">{s.title}</h2>
             <div className="flex flex-col gap-4">
-              {s.blocks.map((b, j) => (b.kind === "text" ? <SummaryBody key={j} text={b.text} className="type-body text-ink" /> : <TableBlock key={j} b={b} />))}
+              {s.blocks.map((b, j) => <Block key={j} b={b} />)}
             </div>
           </section>
         ))}

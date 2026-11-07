@@ -107,9 +107,15 @@ Bu kurallar her UI kodu yazımında geçerlidir; "sonradan düzeltiriz" yaklaş�
   yayın her kartı kendi kapısından (betik doğrulaması + mevzuat kontrolü +
   eskime) tek tek geçirir, geçemeyeni gerekçesiyle atlar.
 - **DERS (konu anlatımı) içerik türü (7 Kas 2026, Doc 57) — istisna DEĞİL, tanım:**
-  ders, kaynak kitaptan editoryal ÖZGÜN anlatımdır (insan yazdı/düzenledi; model
-  üretimi değildir, bu yüzden "AI" ön ekli etiket taşımaz). Model yalnız taslak
-  yardımcısı olacaksa ayrı karar ve "AI taslak" etiketi gerekir. Yapı: bölüm →
+  ders, kaynak kitaptan ÖZGÜN anlatımdır; kitabın cümleleri kopyalanmaz. Üretim
+  hattı (kullanıcı kararı 7 Kas 2026): kapsam dosyası → MODEL TASLAĞI → insan
+  düzenleme ve inceleme notu → panelde yayın. Model taslağı taşıyan bölüm
+  `bolum.json`'da `aiDraft: true` olur ve ders `sourceLabel`'ı "AI taslak" ön eki
+  alır (panelde görünür, kullanıcıya çıkmaz). Gövde altı blok türüyle sınırlıdır
+  (karar 7 Kas 2026): metin, karşılaştırma tablosu, tanım, uyarı (tek ton),
+  örnek, madde bağı, "sınavda çıktı" sorusu — soru BANKADAKİ gerçek kaynaklı
+  sorudur, derste yeni soru yazılmaz. Hedef uzunluk 400–700 kelime/ders,
+  4–8 ders/bölüm. Yapı: bölüm →
   ders → sürüm (`lesson_sections` / `lessons` / `lesson_versions`); yayın kapısı
   derstedir, en son sürüm `ders-dogrulayici.ts`'yi geçmeli ve `reviewNote`
   zorunludur; yayın kararı insanındır (yalnız admin, `/lessons`). Kaynak kitap

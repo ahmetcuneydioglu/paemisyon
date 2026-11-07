@@ -106,3 +106,70 @@ describe('validateLesson', () => {
     expect(validateLesson(l).issues[0]).toContain('kullanıcıya açık olamaz');
   });
 });
+
+describe('yönerge blokları (tanım, uyarı, örnek, madde, soru)', () => {
+  const md = `# Kurucu iktidar
+
+**Giriş · Ders 3**
+
+Durum: taslak. Hedef: Asli ve tali kurucu iktidarı ayırmak.
+
+## Kavram
+
+:::tanim Kurucu iktidar
+Anayasayı yapan ya da değiştiren iktidardır.
+:::
+
+Bir cümle.
+
+:::uyari
+Kurulmuş iktidarla karıştırma.
+:::
+
+:::madde t-c-anayasasi:175
+Değişiklik usulü burada.
+:::
+
+:::soru 3f0a2b4c-1111-4222-8333-944455556666
+:::
+
+---
+
+## Kaynak ve inceleme notları — kullanıcı metnine dahil değil
+
+- Editoryal okuma yapıldı.
+`;
+  it('yönergeleri bloklara çevirir ve bağları toplar', () => {
+    const p = parseLessonMarkdown(md);
+    const kinds = p.body.sections[0].blocks.map((b) => b.kind);
+    expect(kinds).toEqual(['tanim', 'text', 'uyari', 'madde', 'soru']);
+    expect(p.body.sections[0].blocks[0]).toMatchObject({ term: 'Kurucu iktidar' });
+    expect(p.body.sections[0].blocks[3]).toMatchObject({
+      law: 't-c-anayasasi',
+      no: '175',
+      note: 'Değişiklik usulü burada.',
+    });
+  });
+  it('madde bağı çözülmemişse ve soru yayınlı değilse düşer', () => {
+    const p = parseLessonMarkdown(md);
+    const v = validateLesson({
+      slug: 'kurucu-iktidar',
+      title: p.title,
+      goal: p.goal,
+      body: p.body,
+      sources: [{ kind: 'book', label: 'Kitap', isPublic: false }],
+      reviewNote: 'ok',
+      sourceLabel: 'Kitap s.1',
+      questions: { '3f0a2b4c-1111-4222-8333-944455556666': false },
+    });
+    expect(v.ok).toBe(false);
+    expect(v.issues.join('\n')).toMatch(/madde bağı bankada çözülemedi/);
+    expect(v.issues.join('\n')).toMatch(/soru bankada yayınlı değil/);
+  });
+  it('kapanmayan yönerge hata verir', () => {
+    const kesik =
+      md.split(':::uyari')[0] +
+      ':::uyari\nKurulmuş\n\n---\n\n## Kaynak ve inceleme notları — kullanıcı metnine dahil değil\n\n- not\n';
+    expect(() => parseLessonMarkdown(kesik)).toThrow(/kapanmadı/);
+  });
+});

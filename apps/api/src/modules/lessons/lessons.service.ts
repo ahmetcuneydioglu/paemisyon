@@ -8,7 +8,15 @@ import type { Prisma } from '@prisma/client';
 import { PrismaService } from '../../infra/prisma/prisma.service';
 import type { AuthenticatedUser } from '../auth/auth.types';
 import { validateLesson, type LessonSourceInput, type LessonValidation } from './ders-dogrulayici';
-import { parseLessonMarkdown, readingMinutes, type LessonBody } from './ders-markdown';
+import {
+  lessonArticleRefs,
+  lessonQuestionIds,
+  parseLessonMarkdown,
+  readingMinutes,
+  type LessonBody,
+} from './ders-markdown';
+import { SORU_OZETI_SELECT } from '../quiz/soru-ozeti';
+import { paylasimWhere } from '../public/soru-paylasim';
 import { revalidateWebPaths, type WebRevalidateResult } from '../summaries/web-revalidate';
 
 /** İçe aktarma girdisi (betik ya da panel): bir bölüm altına bir ders sürümü. */
@@ -202,7 +210,7 @@ export class LessonsService {
           ? lesson.section.lessons[order + 1]
           : null,
       locked,
-      body: version ? (version.body as unknown as LessonBody) : null,
+      body: version ? await this.enrichBody(version.body as unknown as LessonBody) : null,
       sources: lesson.sources,
       progress: progress
         ? {
@@ -247,6 +255,7 @@ export class LessonsService {
 
   async validateForImport(input: LessonImportInput): Promise<LessonValidation> {
     const sources = await this.resolveSources(input.sources);
+    const questions = await this.resolveQuestions(input.body);
     return validateLesson({
       slug: input.slug,
       title: input.title,
@@ -255,12 +264,14 @@ export class LessonsService {
       sources,
       reviewNote: input.reviewNote,
       sourceLabel: input.sourceLabel,
+      questions,
     });
   }
 
   /** Doğrulamayı geçen dersi in_review olarak yazar; ders varsa yeni sürüm açar (yayındaki sürüm değişmez). */
   async importLesson(input: LessonImportInput, actorId: string | null) {
     const sources = await this.resolveSources(input.sources);
+    const questions = await this.resolveQuestions(input.body);
     const validation = validateLesson({
       slug: input.slug,
       title: input.title,
@@ -269,6 +280,7 @@ export class LessonsService {
       sources,
       reviewNote: input.reviewNote,
       sourceLabel: input.sourceLabel,
+      questions,
     });
     if (!validation.ok)
       throw new BadRequestException(
@@ -405,7 +417,7 @@ export class LessonsService {
       body: parsed.body,
       sources: [
         { kind: 'book', label: m.book.label, page, isPublic: false },
-        ...(m.articles ?? []).map(
+        ...[...new Set([...(m.articles ?? []), ...lessonArticleRefs(parsed.body)])].map(
           (ref) =>
             ({ kind: 'article' as const, label: ref, ref, isPublic: true }) as LessonSourceInput,
         ),
@@ -503,6 +515,70 @@ export class LessonsService {
     return revalidateWebPaths(
       [...lessons.map((l) => l.slug), ...extraSlugs].map((s) => `/anlatim/${s}`),
     );
+  }
+
+  /** Gövdedeki soru bloklarını bankada çözer: id → yayınlı ve iptal edilmemiş mi. */
+  private async resolveQuestions(body: LessonBody): Promise<Record<string, boolean>> {
+    const ids = lessonQuestionIds(body).filter((id) => /^[0-9a-f-]{36}$/i.test(id));
+    const out: Record<string, boolean> = {};
+    for (const id of ids) {
+      const row = await this.prisma.question.findFirst({
+        where: paylasimWhere(id),
+        select: { id: true },
+      });
+      out[id] = Boolean(row);
+    }
+    return out;
+  }
+
+  /**
+   * Yayın gövdesini zenginleştirir: madde bloğuna kanun adı, soru bloğuna gövde/şıklar/doğru/açıklama.
+   * Kaynak etiketi (sourceLabel) HİÇ seçilmez (4 Eyl kuralı). Yayınlı olmayan soru bloğu düşer.
+   */
+  private async enrichBody(body: LessonBody): Promise<LessonBody> {
+    const sections = [];
+    for (const s of body.sections) {
+      const blocks = [];
+      for (const b of s.blocks) {
+        if (b.kind === 'madde') {
+          const law = await this.prisma.legislation.findFirst({
+            where: { slug: b.law },
+            select: { name: true, shortName: true },
+          });
+          blocks.push({ ...b, lawName: law?.shortName ?? law?.name ?? b.law });
+        } else if (b.kind === 'soru') {
+          const q = await this.prisma.question.findFirst({
+            where: paylasimWhere(b.questionId),
+            select: {
+              currentVersion: {
+                select: {
+                  ...SORU_OZETI_SELECT,
+                  explanation: true,
+                  options: {
+                    orderBy: { sortOrder: 'asc' },
+                    select: { id: true, label: true, text: true, isCorrect: true },
+                  },
+                },
+              },
+              topic: { select: { name: true } },
+            },
+          });
+          const v = q?.currentVersion;
+          if (!v) continue;
+          blocks.push({
+            kind: 'soru' as const,
+            questionId: b.questionId,
+            stem: v.stem,
+            options: v.options.map((o) => ({ id: o.id, label: o.label, text: o.text })),
+            correctOptionId: v.options.find((o) => o.isCorrect)?.id ?? null,
+            explanation: v.explanation ?? null,
+            topicName: q?.topic.name ?? null,
+          });
+        } else blocks.push(b);
+      }
+      sections.push({ title: s.title, blocks });
+    }
+    return { sections } as LessonBody;
   }
 
   /** "article" kaynaklarını bankadan çözer: label "<lawSlug>:<no>" ya da ayrı alanlar. */
@@ -616,6 +692,7 @@ export class LessonsService {
           sources,
           reviewNote: latest.reviewNote,
           sourceLabel: lesson.sourceLabel,
+          questions: await this.resolveQuestions(latest.body as unknown as LessonBody),
         })
       : { ok: false, issues: ['sürüm yok'], lines: ['✗ sürüm yok'] };
     return { ...lesson, latestVersionNo: latest?.versionNo ?? null, validation };

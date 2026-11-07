@@ -1,0 +1,31 @@
+{
+  "slug": "anayasa-hukukuna-giris",
+  "title": "Anayasa Hukukuna Giriş",
+  "subtitle": "Anayasa kavramı, anayasacılık, kurucu iktidar",
+  "courseName": "Anayasa Hukuku",
+  "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+  "sortOrder": 0,
+  "isPremium": false,
+  "book": {
+    "label": "THEMIS Anayasa Hukuku, 24. baskı, 2020",
+    "page": "s.21–24, 237–238"
+  },
+  "lessons": [
+    {
+      "file": "01-anayasa-nedir.md",
+      "slug": "anayasa-nedir",
+      "page": "s.21"
+    },
+    {
+      "file": "02-anayasacilik-ve-anayasal-devlet.md",
+      "slug": "anayasacilik-ve-anayasal-devlet",
+      "page": "s.21–22, 24"
+    },
+    {
+      "file": "03-kurucu-iktidar.md",
+      "slug": "kurucu-iktidar",
+      "page": "s.237–238"
+    }
+  ],
+  "aiDraft": true
+}

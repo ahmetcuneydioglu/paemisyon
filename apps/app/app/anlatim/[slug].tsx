@@ -4,6 +4,7 @@ import { Linking, ScrollView, View } from "react-native";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { AppText, Button, Card, ListRow, Notice, Sheet, Skeleton } from "@/components/ui";
 import { LessonContent } from "@/components/domain/lesson-content";
+import { ArticlePeekSheet } from "@/components/domain/summary";
 import { useLesson, useSaveLessonProgress, type LessonDetail } from "@/features/lessons/queries";
 import { useAuth } from "@/lib/auth/AuthProvider";
 import { useTheme } from "@/theme/ThemeProvider";
@@ -60,6 +61,7 @@ function Reader({ lesson }: { lesson: LessonDetail & { body: NonNullable<LessonD
   const [sources, setSources] = useState(false);
   const [linkError, setLinkError] = useState(false);
   const [read, setRead] = useState(Boolean(lesson.progress?.readAt));
+  const [peek, setPeek] = useState<{ law: string; no: string } | null>(null);
   const saveRef = useRef(save.mutate);
   useEffect(() => {
     saveRef.current = save.mutate;
@@ -110,7 +112,7 @@ function Reader({ lesson }: { lesson: LessonDetail & { body: NonNullable<LessonD
         {lesson.body.sections.map((section, i) => (
           <View key={section.title} onLayout={(e) => { positions.current[i] = e.nativeEvent.layout.y; }} style={{ gap: space.s3 }}>
             <AppText variant="heading" accessibilityRole="header">{section.title}</AppText>
-            <LessonContent blocks={section.blocks} />
+            <LessonContent blocks={section.blocks} onArticle={(law, no) => setPeek({ law, no })} />
           </View>
         ))}
         {lesson.sources.length > 0 ? <Button title="Kaynakları incele" variant="secondary" onPress={() => setSources(true)} /> : null}
@@ -129,6 +131,7 @@ function Reader({ lesson }: { lesson: LessonDetail & { body: NonNullable<LessonD
           <Button title="Bölüm listesine dön" onPress={() => (router.canGoBack() ? router.back() : router.replace("/(tabs)/kutuphane"))} />
         </View>
       )}
+      <ArticlePeekSheet lawSlug={peek?.law ?? ""} no={peek?.no ?? null} title={null} onClose={() => setPeek(null)} onReadFull={(no) => { const law = peek?.law; setPeek(null); if (law) router.push({ pathname: "/oku/[slug]", params: { slug: law, madde: no } }); }} />
       <Sheet title="İçindekiler" visible={toc} onClose={() => setToc(false)}>
         {lesson.body.sections.map((s, i) => (
           <ListRow key={s.title} title={s.title} onPress={() => { setToc(false); scroller.current?.scrollTo({ y: positions.current[i] ?? 0, animated: true }); }} />

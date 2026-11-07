@@ -149,6 +149,40 @@ export default function LessonDetailPage() {
 
 function Block({ b }: { b: LessonBlock }) {
   if (b.kind === 'text') return <p className="whitespace-pre-line">{kalin(b.text)}</p>;
+  if (b.kind === 'tanim')
+    return (
+      <div className="rounded-lg border-l-4 border-l-violet-400 bg-violet-50 px-4 py-3">
+        <p className="text-xs font-medium uppercase tracking-wide text-violet-700">Tanım · {b.term}</p>
+        <p className="mt-1 whitespace-pre-line">{kalin(b.text)}</p>
+      </div>
+    );
+  if (b.kind === 'uyari')
+    return (
+      <div className="rounded-lg border border-amber-200 bg-amber-50 px-4 py-3">
+        <p className="text-xs font-medium uppercase tracking-wide text-amber-800">Dikkat</p>
+        <p className="mt-1 whitespace-pre-line">{kalin(b.text)}</p>
+      </div>
+    );
+  if (b.kind === 'ornek')
+    return (
+      <div className="rounded-lg border border-slate-200 bg-slate-50 px-4 py-3">
+        <p className="text-xs font-medium uppercase tracking-wide text-slate-500">Örnek</p>
+        <p className="mt-1 whitespace-pre-line">{kalin(b.text)}</p>
+      </div>
+    );
+  if (b.kind === 'madde')
+    return (
+      <p className="rounded-lg border border-sky-200 bg-sky-50 px-4 py-2 text-sm text-sky-800">
+        Madde bağı: <span className="font-mono">{b.law}:{b.no}</span>
+        {b.note ? <span className="text-sky-700"> — {b.note}</span> : null}
+      </p>
+    );
+  if (b.kind === 'soru')
+    return (
+      <p className="rounded-lg border border-emerald-200 bg-emerald-50 px-4 py-2 text-sm text-emerald-800">
+        Sınavda çıktı: soru <span className="font-mono">{b.questionId}</span> (yayınlı olmalı; doğrulama satırlarına bak)
+      </p>
+    );
   return (
     <table className="w-full text-sm">
       <thead><tr>{b.headers.map((h, i) => <th key={i} className="border-b border-slate-200 py-1 pr-3 text-left text-xs font-medium text-slate-500">{h}</th>)}</tr></thead>
