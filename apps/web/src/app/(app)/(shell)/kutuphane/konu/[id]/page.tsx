@@ -14,6 +14,8 @@ import { ToolRow } from "@/components/rooms/tool-row";
 import { FlashcardEntry } from "@/components/kartlar/flashcard-entry";
 import { CoachRail } from "@/components/shell/coach-rail";
 import { UnitListSection } from "@/components/ozet/unit-list-section";
+import { LessonListSection } from "@/components/anlatim/lesson-list-section";
+import type { LessonSectionItem } from "@/lib/anlatim";
 import type { SummaryUnitListItem } from "@/lib/ozet";
 
 export const metadata: Metadata = { title: "Konu", robots: { index: false } };
@@ -30,10 +32,11 @@ export default async function KonuOdasiPage({
   params: Promise<{ id: string }>;
 }) {
   const { id } = await params;
-  const [d, ozet] = await Promise.all([
+  const [d, ozet, anlatim] = await Promise.all([
     api<TopicRoom>(`/me/topic-room/${id}`).catch(() => null),
     // Konu özetleri (Doc 53 §6): yayındaki üniteler + bu kullanıcının ilerlemesi/kilidi.
     api<{ units: SummaryUnitListItem[] }>(`/public/summaries/topic/${id}`).catch(() => ({ units: [] })),
+    api<{ sections: LessonSectionItem[] }>(`/public/lessons/sections?topicId=${id}`).catch(() => ({ sections: [] })),
   ]);
   if (!d) notFound();
   const t = d.topic;
@@ -86,6 +89,7 @@ export default async function KonuOdasiPage({
         />
         <CoachLine text={d.coach} />
 
+        <LessonListSection sections={anlatim.sections} />
         <UnitListSection units={ozet.units} />
 
         <section className="flex flex-col gap-2" aria-label="Bu konuda">

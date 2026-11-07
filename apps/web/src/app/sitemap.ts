@@ -1,6 +1,7 @@
 import type { MetadataRoute } from "next";
 import { config } from "@/lib/config";
 import type { SummaryUnitPublicListItem } from "@/lib/ozet";
+import type { LessonSectionItem } from "@/lib/anlatim";
 import {
   articleSlug,
   publicApi,
@@ -44,6 +45,11 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 
   // Konu özeti üniteleri (Doc 53): yalnız yayındakiler; misafire ilk kartlar açık.
   const { items: ozetler } = await publicApiList<SummaryUnitPublicListItem>("/public/summaries");
+  // Konu anlatımı dersleri (Doc 57): yayındaki bölümlerin dersleri.
+  const anlatim = await publicApi<{ sections: LessonSectionItem[] }>("/public/lessons/sections", 3600).catch(() => ({ sections: [] as LessonSectionItem[] }));
+  const anlatimPages: MetadataRoute.Sitemap = anlatim.sections.flatMap((s) =>
+    s.lessons.map((l) => ({ url: `${base}/anlatim/${l.slug}`, changeFrequency: "monthly" as const, priority: 0.6 })),
+  );
   const ozetPages: MetadataRoute.Sitemap = ozetler.map((u) => ({
     url: `${base}/ozet/${u.slug}`,
     lastModified: u.updatedAt,
@@ -106,5 +112,6 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     ...readingPages,
     ...articlePages,
     ...ozetPages,
+    ...anlatimPages,
   ];
 }

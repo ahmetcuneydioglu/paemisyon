@@ -9,6 +9,7 @@ import { PrismaService } from '../../infra/prisma/prisma.service';
 import type { AuthenticatedUser } from '../auth/auth.types';
 import { validateLesson, type LessonSourceInput, type LessonValidation } from './ders-dogrulayici';
 import { parseLessonMarkdown, readingMinutes, type LessonBody } from './ders-markdown';
+import { revalidateWebPaths, type WebRevalidateResult } from '../summaries/web-revalidate';
 
 /** İçe aktarma girdisi (betik ya da panel): bir bölüm altına bir ders sürümü. */
 export interface LessonImportInput {
@@ -472,7 +473,8 @@ export class LessonsService {
     if (typeof dto.sortOrder === 'number') data.sortOrder = dto.sortOrder;
     if (typeof dto.isPremium === 'boolean') data.isPremium = dto.isPremium;
     await this.prisma.lessonSection.update({ where: { id }, data });
-    return { ok: true };
+    const web = typeof dto.isPremium === 'boolean' ? await this.revalidateSection(id) : undefined;
+    return { ok: true, web };
   }
 
   async unpublishSection(actor: AuthenticatedUser, id: string) {
@@ -485,7 +487,22 @@ export class LessonsService {
         data: { status: 'in_review' },
       }),
     ]);
-    return { ok: true };
+    const web = await this.revalidateSection(id);
+    return { ok: true, web };
+  }
+
+  /** Web ISR (Doc 57): bölümün yayındaki ders sayfalarını tazeler; sonuç çağırana döner, hata yayını geri almaz. */
+  private async revalidateSection(
+    sectionId: string,
+    extraSlugs: string[] = [],
+  ): Promise<WebRevalidateResult> {
+    const lessons = await this.prisma.lesson.findMany({
+      where: { sectionId, deletedAt: null },
+      select: { slug: true },
+    });
+    return revalidateWebPaths(
+      [...lessons.map((l) => l.slug), ...extraSlugs].map((s) => `/anlatim/${s}`),
+    );
   }
 
   /** "article" kaynaklarını bankadan çözer: label "<lawSlug>:<no>" ya da ayrı alanlar. */
@@ -632,19 +649,27 @@ export class LessonsService {
         data: { status: 'published', publishedAt: now },
       }),
     ]);
-    return { ok: true, version: d.latestVersionNo };
+    // Komşu dersler prev/next ile bu derse bağlanır; bölümün tamamı tazelenir.
+    const web = await this.revalidateSection(d.sectionId);
+    return { ok: true, version: d.latestVersionNo, web };
   }
 
   async unpublish(actor: AuthenticatedUser, id: string) {
     if (!actor.roles.includes('admin'))
       throw new ForbiddenException('Yayından alma admin yetkisi ister.');
-    await this.prisma.lesson.update({ where: { id }, data: { status: 'in_review' } });
-    return { ok: true };
+    const l = await this.prisma.lesson.update({
+      where: { id },
+      data: { status: 'in_review' },
+      select: { sectionId: true },
+    });
+    const web = await this.revalidateSection(l.sectionId);
+    return { ok: true, web };
   }
 
   async setSectionPremium(actor: AuthenticatedUser, sectionId: string, isPremium: boolean) {
     if (!actor.roles.includes('admin')) throw new ForbiddenException('Admin yetkisi ister.');
     await this.prisma.lessonSection.update({ where: { id: sectionId }, data: { isPremium } });
-    return { ok: true };
+    const web = await this.revalidateSection(sectionId);
+    return { ok: true, web };
   }
 }
