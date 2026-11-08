@@ -4,7 +4,7 @@ import { ALargeSmall, Ellipsis, ExternalLink, Flag, Share2 } from "lucide-react-
 import { useEffect, useRef, useState } from "react";
 import { Alert, Animated, Linking, Platform, Pressable, View } from "react-native";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
-import { ExamActionBar, ExamFeedbackBox, ExamMapSheet, ExamSubmitSheet, ExamTopBar, FeedbackPanel, ReportSheet, QuestionMetaRow, QuestionOption, QuestionStem, SessionBar, SessionTitleBlock, SessionTopRow, ShareQuestionSheet, type CoachState, type ExamMapCell, type OptionState, type SliceState, type ToolAction } from "@/components/domain";
+import { ExamActionBar, ExamFeedbackBox, ExamMapSheet, ExamSubmitSheet, ExamTopBar, FeedbackPanel, ReportSheet, QuestionMedia, QuestionMetaRow, QuestionOption, QuestionStem, SessionBar, SessionTitleBlock, SessionTopRow, ShareQuestionSheet, type CoachState, type ExamMapCell, type OptionState, type SliceState, type ToolAction } from "@/components/domain";
 import { AppText, Badge, Button, IconButton, ListRow, Notice, Sheet, Skeleton } from "@/components/ui";
 import { examApi, examKeys, fmtDuration, mmss } from "@/features/exams/queries";
 import { homeKeys } from "@/features/home/queries";
@@ -569,6 +569,7 @@ export default function SeansScreen() {
                 <AppText variant="body" accessibilityRole="header" style={{ fontSize: Math.round(17 * scale), lineHeight: Math.round(26 * scale) }}>
                   {question.stem}
                 </AppText>
+                <QuestionMedia url={question.mediaUrl} />
               </>
             ) : (
               <>
@@ -576,7 +577,7 @@ export default function SeansScreen() {
                 {queuedNote ? <Notice tone="info">Çevrimdışısın; cevapların cihazda saklanıyor, bağlantı gelince gönderilecek. Geri bildirim o zaman görünür.</Notice> : null}
                 <View style={{ gap: space.s3, paddingTop: space.s1 }}>
                   <QuestionMetaRow difficulty={question.difficulty} article={question.relatedArticleRef ? { label: question.relatedArticleRef.label, onPress: openArticleBeforeAnswer } : null} />
-                  <QuestionStem index={index + 1} total={total} stem={question.stem} counter={false} scale={scale} />
+                  <QuestionStem index={index + 1} total={total} stem={question.stem} mediaUrl={question.mediaUrl} counter={false} scale={scale} />
                 </View>
               </>
             )}

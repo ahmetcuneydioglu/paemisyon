@@ -2,7 +2,7 @@ import { useRouter } from "expo-router";
 import { ArrowLeft, Bell, Inbox, Play, Search, Star } from "lucide-react-native";
 import { useState } from "react";
 import { View } from "react-native";
-import { CountdownHeader, CourseTile, FeedbackPanel, FlashCard, FlashcardEntry, FlashcardKindBadge, FlashcardResultPanel, FlashcardStateBar, LegislationRow, NotificationRow, QuestionMetaRow, QuestionOption, QuestionStem, RatingBar, ResultPanel, SessionProgress, SessionTitleBlock, TaskHero, ToolRow, UndoStrip, type OptionState, ShareQuestionCard, CourseCard, ResumeStrip, TestCard, CoveragePanel, UpsellStrip, ExamContextLine, ForYouList, LeaderboardTeaser, NextStepCard, ReviewPromptSheet, RouteList, WeekSummaryLine } from "@/components/domain";
+import { CountdownHeader, CourseTile, FeedbackPanel, FlashCard, FlashcardEntry, FlashcardKindBadge, FlashcardResultPanel, FlashcardStateBar, LegislationRow, NotificationRow, QuestionMedia, QuestionMetaRow, QuestionOption, QuestionStem, RatingBar, ResultPanel, SessionProgress, SessionTitleBlock, TaskHero, ToolRow, UndoStrip, type OptionState, ShareQuestionCard, CourseCard, ResumeStrip, TestCard, CoveragePanel, UpsellStrip, ExamContextLine, ForYouList, LeaderboardTeaser, NextStepCard, ReviewPromptSheet, RouteList, WeekSummaryLine } from "@/components/domain";
 import type { Flashcard } from "@/features/flashcards/queries";
 import type { InboxItem } from "@/features/notifications/queries";
 import type { ShareCardData } from "@/features/quiz/share";
@@ -319,6 +319,8 @@ export default function GaleriScreen() {
 
         <Section title="Soru">
           <QuestionStem index={4} total={12} topic="Koruma tedbirleri" stem="Şüpheli, gözaltına alındığı andan itibaren en geç kaç saat içinde hâkim önüne çıkarılır?" />
+          <QuestionStem index={97} total={100} topic="Matematik ve Sayısal Mantık" stem="Yukarıdaki şekilde K, L, M, N, P, R ve S sayıları doğal sayılardır. N sayısı 26 olduğuna göre, K+S toplamı kaçtır?" mediaUrl="https://paemisyon.com/soru-gorsel/paem-9/97.png" />
+          <QuestionMedia url="https://paemisyon.com/soru-gorsel/yok.png" alt="Yüklenemeyen görsel örneği" />
           {(
             [
               ["A", "On iki saat", picked === "A" ? "selected" : "default"],

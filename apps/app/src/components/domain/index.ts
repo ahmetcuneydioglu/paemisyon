@@ -4,6 +4,7 @@ export * from "./task-hero";
 export * from "./countdown-header";
 export * from "./course-tile";
 export * from "./question";
+export * from "./question-media";
 export * from "./legislation-row";
 export * from "./plan-week-card";
 export * from "./countdown-hero";

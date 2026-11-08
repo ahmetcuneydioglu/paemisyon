@@ -4,13 +4,15 @@ import { Pressable, View } from "react-native";
 import { AppText, Badge } from "@/components/ui";
 import { fontFamily } from "@/theme/tokens";
 import { useTheme } from "@/theme/ThemeProvider";
+import { QuestionMedia } from "./question-media";
 
 /**
  * Soru kökü (Doc 49/15 Figma): editoryal — kart yok, zemin üstünde Lora 400 20/28.
  * `counter` kapalıysa "Soru N/M" satırı gösterilmez (Seans başlık bloğu zaten sayar).
  * `scale` yazı boyu tercihi (0,9 / 1 / 1,15). Kaynak etiketi GÖSTERİLMEZ.
+ * `mediaUrl` doluysa kökün altında soru görseli (şekil/grafik) çizilir — `QuestionMedia`.
  */
-export function QuestionStem({ index, total, topic, stem, counter = true, scale = 1 }: { index: number; total: number; topic?: string | null; stem: string; counter?: boolean; scale?: number }) {
+export function QuestionStem({ index, total, topic, stem, mediaUrl, counter = true, scale = 1 }: { index: number; total: number; topic?: string | null; stem: string; mediaUrl?: string | null; counter?: boolean; scale?: number }) {
   const { space } = useTheme();
   return (
     <View style={{ gap: space.s3 }}>
@@ -27,6 +29,7 @@ export function QuestionStem({ index, total, topic, stem, counter = true, scale 
       <AppText variant="heading" accessibilityRole="header" style={{ fontFamily: fontFamily.display[400], fontSize: Math.round(20 * scale), lineHeight: Math.round(28 * scale) }}>
         {stem}
       </AppText>
+      <QuestionMedia url={mediaUrl} />
     </View>
   );
 }

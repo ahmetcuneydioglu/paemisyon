@@ -3,6 +3,7 @@ import { Pressable, View } from "react-native";
 import { AppText } from "@/components/ui";
 import type { SessionReviewItem } from "@/features/quiz/api";
 import { useTheme } from "@/theme/ThemeProvider";
+import { QuestionMedia } from "./question-media";
 
 /**
  * Cevap inceleme satırı (Doc 49/18 §8, Figma 113:800): numara rozeti (doğru yeşil, yanlış mercan,
@@ -44,6 +45,7 @@ export function AnswerReviewItem({ item, open, onToggle }: { item: SessionReview
       </Pressable>
       {open ? (
         <View style={{ paddingHorizontal: 14, paddingBottom: 14, gap: space.s2 }}>
+          <QuestionMedia url={item.mediaUrl} />
           {item.options.map((o) => {
             const benim = o.id === item.selectedOptionId;
             const vurgu = o.isCorrect ? colors.success : benim ? colors.danger : null;
