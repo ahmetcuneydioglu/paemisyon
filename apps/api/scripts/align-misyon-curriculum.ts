@@ -4,7 +4,11 @@
  *
  * Bağlantılar:
  *  - Polisi İlgilendiren Mevzuat: Polis Mevzuatı + CMK + TCK
- *  - Güncel ve Kültürel Konular: Genel Kültür + Güncel Konular
+ *  - Güncel ve Kültürel Konular: Genel Kültür ve Güncel Olaylar
+ *    (9 Kas 2026'ya kadar "Genel Kültür ve Analitik Düşünme" dersinin tamamı
+ *    bağlıydı; Analitik/Türkçe/Matematik Misyon'a sızıyordu. Ders ikiye
+ *    ayrıldı — bkz. misyon-gk-ayrimi.ts ve Doc 21 §2.6. Yetenek konularının
+ *    dersi "Analitik Düşünme ve Türkçe" Misyon'a BAĞLANMAZ.)
  *
  * Varsayılan salt-okunur kontrol: npx ts-node scripts/align-misyon-curriculum.ts
  * Uygulama: npx ts-node scripts/align-misyon-curriculum.ts --apply
@@ -26,7 +30,7 @@ const TARGETS = [
   },
   {
     sectionName: 'Güncel ve Kültürel Konular',
-    courseNames: ['Genel Kültür ve Analitik Düşünme', 'Güncel ve Kültürel Konular'],
+    courseNames: ['Genel Kültür ve Güncel Olaylar'],
   },
 ] as const;
 
