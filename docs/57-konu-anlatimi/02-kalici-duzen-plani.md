@@ -94,3 +94,9 @@ doğru/açıklama). Kaynak kitabın bölümleri: 1 Giriş, 2 Türk Anayasa Tarih
 `anayasa-turleri` bölümü sortOrder 1'e alındı (prod'da panelden). Kurucu iktidar dersinde md 175 bağlı gerçek soru
 (a4a866ce…) gömülü; teori/tarih dersleri için soru eşlemesi bankada arama ister (prod okuma izni yok — kullanıcı).
 
+## 9. Uzunluk kararı ve kalan bölümler (10 Kas 2026)
+
+Kullanıcı: dersler daha dolu olsun → hedef 600–1000 kelime/ders, 4–10 ders/bölüm. THEMIS Anayasa'nın kalan gövdesi
+(Yasama s.105–168, Yürütme 169–188, Yargı 189–232, Temel haklar 69–104) da ders olarak yazılacak; ünitelerle iş bölümü:
+ders sistemi/ayrımları anlatır ve maddeye bağ verir, madde metnini yeniden yazmaz. Sıra: Yasama → Yürütme → Yargı → Temel Haklar.
+
