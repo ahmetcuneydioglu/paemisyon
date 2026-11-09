@@ -6,7 +6,7 @@ Durum: İnceleme sürümü. Hedef: Cumhurbaşkanı seçilme koşullarını, aday
 
 ## Kim seçer, kim seçilir
 
-Cumhurbaşkanını halk seçer. Bu usul 2007 değişikliğiyle kabul edilmiştir; o tarihe kadar bütün Türk anayasalarında Cumhurbaşkanını Meclis seçiyordu. 2017 değişikliği halk tarafından seçilme usulünü korumuş, ayrıntılarında değişiklik yapmıştır.
+Cumhurbaşkanını halk seçer. Bu usul 2007 değişikliğiyle kabul edilmiştir; o tarihe kadar bütün Türk anayasalarında Cumhurbaşkanını Meclis seçiyordu ve halkın seçtiği ilk Cumhurbaşkanı 2014'te göreve gelmiştir. 2017 değişikliği hükümet sistemini değiştirmiş, halk tarafından seçilme usulünü korumuş ve yalnızca ayrıntılarında değişiklik yapmıştır.
 
 :::madde t-c-anayasasi:101
 Adaylık, seçim usulü ve görev süresi.
@@ -141,3 +141,4 @@ Sorular seçilme koşullarını, çoğunluk hesabını ve yeniden adaylık istis
 - Gömülü sorular: bankadaki yayınlı gerçek sorular (ec62310c… seçilme koşulları; 4e352c74… salt çoğunluk hesabı, 2020 hâkimlik; 34176819… seçim usulü; 87b4c09d… yeniden adaylık, 2021 kaymakamlık). Soru üretilmedi.
 - Eşlenmeyen adaylar: c6384271… ("Cumhurbaşkanlığı sıfatının başlaması andiçme anıdır" şıkkını doğru sayıyor; sıfatın seçimle mi andla mı kazanıldığı tartışmaya açık, ayrıca incelenmeli). 668a8cb6… ve 17d2f91b… uygun, sayı sınırı nedeniyle alınmadı. 6271 sayılı Kanun'un sürelerini soran adaylar (10d72077…, 606fe256…, 5e6e898f… vb.) derste kanun düzeyi sayı olmadığı için eşlenmedi.
 - AI taslak; insan düzenleme ve yayın onayı bekliyor.
+- DENETİM EKİ (10 Kas 2026, Fable 5.1): halk seçiminin 2007'de kabul edilip ilk kez 2014'te uygulandığı ve 2017'nin hükümet sistemini değiştirdiği açıkça yazıldı (kullanıcı sorusu üzerine; 2007 ile 2017 karışıyordu).
