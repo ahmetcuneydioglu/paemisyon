@@ -28,6 +28,13 @@ Kişinin devlet yönetimine katılmasını ve siyasi faaliyette bulunmasını sa
 
 Üç ad aynı şeyi üç yönden söyler. Bir soru "isteme hakları" diyorsa sosyal ve ekonomik hakları, "katılma hakları" diyorsa siyasi hakları, "koruyucu haklar" diyorsa kişinin haklarını sorar.
 
+Ayrımın aslında bir dördüncü basamağı daha vardır ve Anayasa'nın "haklar ve ödevler" başlığını açıklar. Pasif statü, kişinin devlete karşı yükümlü olduğu konumdur: burada kişi devletten bir şey istemez, devlet kişiden ister. Vergi ödevi, vatan hizmeti ve mal bildirimi bu konumun ürünüdür. Sınav üç hak statüsünü sorar; ödevleri ise "hangisi bir ödevdir" ya da "hangisi hem hak hem ödevdir" kalıbıyla yoklar.
+
+| Konum | Kişi ile devlet arasındaki ilişki | Anayasa'daki karşılığı |
+|---|---|---|
+| Pasif statü | Kişi devlete karşı yükümlüdür | Vergi ödevi, mal bildirimi; hak ve ödev olarak kurulan vatan hizmeti |
+| Negatif, pozitif ve aktif statü | Kişi devlete karşı hak sahibidir | Üç hak kataloğu |
+
 ## Anayasa'nın üç kataloğu
 
 Anayasa bu üçlü ayrımı başlık olarak benimsemiştir. Bir hakkın hangi kategoride sayılacağını belirleyen, öğretideki niteliği değil, Anayasa'da hangi bölümde düzenlendiğidir. Sınav da böyle sorar: "Aşağıdakilerden hangisi kişinin hakları ve ödevleri arasında düzenlenmiştir?"
@@ -81,7 +88,7 @@ Dilekçe, bilgi edinme ve kamu denetçisine başvurma hakkı; siyasi haklar ve �
 
 Birincisi, bir hakkın statüsü ile Anayasa'daki yeri her zaman örtüşmez. Çalışma ve sözleşme hürriyeti nitelikçe devletin karışmamasını isteyen bir haktır; ama sosyal ve ekonomik haklar bölümündedir. Grev hakkı da bir edim isteme hakkı değil, bir serbestliktir; yine aynı bölümdedir. Soru "Anayasa'da hangi bölümde düzenlenmiştir" diyorsa bölüme, "nitelikçe hangi statüdedir" diyorsa statüye bakılır.
 
-İkincisi, kategori sınırlama rejimini tek başına belirlemez. Hangi hakkın hangi sebeple sınırlanabileceği her maddede ayrıca yazılıdır. Kategorinin hukuki sonucu iki yerde ortaya çıkar: olağan dönem Cumhurbaşkanlığı kararnamesiyle kişinin hakları ve siyasi haklar düzenlenemez, sosyal ve ekonomik haklar düzenlenebilir; devletin sosyal ve ekonomik alandaki görevleri de mali kaynaklarının yeterliliği ölçüsüyle sınırlıdır.
+İkincisi, kategori sınırlama rejimini tek başına belirlemez. Hangi hakkın hangi sebeple sınırlanabileceği her maddede ayrıca yazılıdır. Kategorinin hukuki sonucu iki yerde ortaya çıkar: olağan dönem Cumhurbaşkanlığı kararnamesiyle kişinin hakları ve siyasi haklar hiçbir biçimde düzenlenemez; sosyal ve ekonomik haklar için böyle bir yasak yoktur, ama Anayasa'nın münhasıran kanunla düzenlenmesini öngördüğü konular yine kararnameye kapalıdır. Devletin sosyal ve ekonomik alandaki görevleri de mali kaynaklarının yeterliliği ölçüsüyle sınırlıdır.
 
 :::ornek
 "Eğitim hakkı, konut hakkı, düşünceyi yayma hürriyeti ve mal bildirimi kararnameyle düzenlenebilir mi" diye soran bir soruyu çözmek için önce her birinin kataloğunu bulmak gerekir. Eğitim ve konut sosyal ve ekonomik haklardır; düzenlenebilir. Düşünceyi yayma kişinin haklarında, mal bildirimi siyasi haklar ve ödevlerdedir; düzenlenemez.
@@ -114,6 +121,7 @@ Sorular bir hakkın kataloğunu ya da statüsünü sorar.
 - Kategori tablosu kitabın listesinden; birkaç başlık birleştirilerek yazıldı (ör. "basın ve yayın" basın hürriyeti, süreli ve süresiz yayın hakkı ile basın dışı kitle haberleşme araçlarından yararlanmayı kapsar; "kamulaştırma" kitabın "kamulaştırma, devletleştirme ve özelleştirme" başlığının kısaltmasıdır; "tarım, hayvancılık ve bu üretim dallarında çalışanların korunması" satırı sığmadığı için tabloya alınmadı). Tablo resmî metnin madde başlıklarıyla karşılaştırılmalı.
 - Kaynakta olmayıp eklenenler, insan incelemesinde teyit edilmeli: (1) üç tanım bloğu (kitabın tablo hücrelerinden ve dipnotundan genişletildi); (2) "sık karıştırılanlar" tablosunun "neden karışır" sütunu tümüyle bu derse özgüdür; "mülkiyet 1961'de sosyal ve iktisadi haklar arasındaydı" bilgisi aynı kitabın s.68'inden; (3) "vatandaşlık bir hak olmaktan çok statüdür" ve "siyasi hakların ön koşulu" nitelendirmeleri yorumdur; (4) "sınıflandırmanın sınırı" başlığının tamamı kitapta yok: çalışma hürriyeti ve grev hakkının nitelikçe negatif statüde olduğu öğretideki yaygın görüştür ve tartışmaya açıktır, yanıltıcı bulunursa çıkarılmalı; (5) kararnameyle düzenleme ayrımı md 104'ten, mali kaynak sınırı md 65'ten (bu iki maddeye bu derste bağ verilmedi; ilki "Yürütme" ve "Yasama II" bölümlerinde, ikincisi bu bölümün beşinci dersinde bağlı); (6) örnek bloğu bankadaki 59be0b89… sorusunun kurgusuna benzer, o soru "Yürütme" bölümünde gömülüdür.
 - Jellinek'in adı kitaptan; "Alman hukukçu" nitelemesi eklendi.
+- Denetim ekleri (ana oturum): (a) pasif statü paragrafı ve tablosu kitapta yok; Jellinek'in dörtlü ayrımındaki pasif statü öğretideki yaygın anlatımdır, ödev örnekleri md 71, 72 ve 73'ün başlıklarından; (b) kararname cümlesine "münhasıran kanunla düzenlenmesi öngörülen konular kararnameye kapalıdır" kaydı eklendi (md 104/17'nin lafzı; sosyal hakların kararnameyle düzenlenebilirliği bu kayıtla sınırlıdır).
 - PARALEL KOLLA ÇAKIŞMA RİSKİ: "Temel Haklar II" bölümünün altıncı dersi de kategori sorularını kullanıyor olabilir; ana oturum iki bölümün soru kimliklerini commit öncesinde karşılaştırdı (sonuç raporda).
 - Madde bağları: md 35, 48, 74. Gövdede yıl ve "md N" dışında rakam yok; yazıyla yazılan sayılar sayımdır ("üç statü", "üç katalog").
 - Gömülü sorular: bankadaki yayınlı gerçek sorular (5af7434d… kişinin hakları ve ödevlerinden olan, 2024 PAEM 8. dönem; fef0a037… sosyal ve ekonomik haklardan olan, 2021 hâkimlik; 55eb5bf7… siyasi haklar arasında düzenlenmeyen; f5fe20e0… pozitif durum haklarından olan). Soru üretilmedi.

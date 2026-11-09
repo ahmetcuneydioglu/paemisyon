@@ -45,10 +45,10 @@ Anayasa bu kurala iki istisna tanımıştır.
 
 | İstisna | Kapsamı |
 |---|---|
-| Olağanüstü hâl kararnamesi | Olağanüstü hâlde çıkarılan Cumhurbaşkanlığı kararnamesiyle bütün temel haklar düzenlenebilir |
+| Olağanüstü hâl kararnamesi | Olağanüstü hâlde çıkarılan Cumhurbaşkanlığı kararnamesiyle temel haklar, durdurma rejiminin ölçüleri ve çekirdek alan saklı kalmak üzere düzenlenebilir |
 | Olağan dönem kararnamesi | Sosyal ve ekonomik haklar ve ödevler kararnameyle düzenlenebilir; kişinin hakları ve siyasi haklar düzenlenemez |
 
-Anayasa ayrıca bazı maddelerinde yürütmeye hakka doğrudan müdahale yetkisi verir: grevin ertelenmesi, toplantı ve gösteri yürüyüşünün ertelenmesi ya da yasaklanması, gecikmesinde sakınca bulunan hâllerde derneklerin faaliyetten alıkonulması bunlardandır. Bu yetkiler de kaynağını Anayasa'dan alır.
+Anayasa ayrıca bazı maddelerinde, kanunun yetkili kıldığı bir merciin hakka doğrudan müdahale etmesine izin verir: gecikmesinde sakınca bulunan hâllerde yayının dağıtımının önlenmesi ya da toplatılması ve derneklerin faaliyetten alıkonulması bunlardandır; grev ve lokavtın yasaklanabileceği ya da ertelenebileceği hâlleri de kanun gösterir. Bu yetkiler kaynağını Anayasa'dan alır ve çoğu hâkim onayına bağlanmıştır. Toplantı ve gösteri yürüyüşünün ertelenmesi ya da yasaklanması yetkisi ise 2001 değişikliğiyle Anayasa'dan çıkarılmıştır; bugün o hak yalnızca sayılı sebeplerle ve kanunla sınırlanır.
 
 ## Özel sebep ve 2001'de kalkan genel sebepler
 
@@ -95,6 +95,14 @@ Sınırlamanın, hakkı kullanılamaz ya da kullanılması aşırı ölçüde g�
 Sınırlamada başvurulan aracın sınırlama amacını gerçekleştirmeye elverişli olması ve amaca göre aşırıya kaçmamasıdır.
 :::
 
+Ölçülülük öğretide ve Anayasa Mahkemesi uygulamasında üç alt ölçüte ayrılır; sınav bir tanım verip hangisinin anlatıldığını sorar.
+
+| Alt ölçüt | Sorusu |
+|---|---|
+| Elverişlilik | Seçilen araç amaca ulaşmaya yarar mı? |
+| Gereklilik | Aynı amaca daha hafif bir araçla ulaşmak mümkün müyse ağır araç seçilemez |
+| Orantılılık | Araçla amaç arasında makul bir denge var mı; kişiye yüklenen külfet amaca göre aşırı mı? |
+
 :::ornek
 Bir kanun, kamu düzeni sebebiyle bir meydanda toplantı yapılmasını belirli saatlerle sınırlarsa sınırlama hakkın özünü ortadan kaldırmaz. Aynı kanun bir şehirde toplantı yapılmasını süresiz olarak yasaklarsa hak kullanılamaz hâle gelir; sebep Anayasa'da yazılı olsa bile sınırlama öze dokunur.
 :::
@@ -121,7 +129,8 @@ Sorular ölçütleri sayar, tarihlerini sorar ya da bir tanımı verip ölçüt�
 - Çapraz kontrol: TBMM, 1982 Anayasası'nın ilk metni: https://www5.tbmm.gov.tr/anayasa/anayasa82.htm
 - İŞ BÖLÜMÜ: md 13'ün içeriği Doc 53 "Temel hakların rejimi" ünitesindedir; her hakkın özel sınırlama sebepleri "Kişi hakları I–II", "Sosyal ve ekonomik haklar" ve "Siyasi haklar" ünitelerinde ve "Temel Haklar II" bölümündedir. Bu derste yalnız ölçütler ve tarihleri anlatıldı.
 - İÇTİHAT SINIRI: Anayasa Mahkemesi'ne ilişkin iki cümle (ölçülülüğün 2001'den önce de kullanılması; demokratik toplum düzeninin evrensel ölçüyle yorumlanması) kitaptan, karar künyesi olmadan. Kitapta olmayan içtihat yazılmadı. Kitap "batı uygarlığı seviyesindeki demokrasi" der; derste "evrensel düzeyde kabul gören demokrasi anlayışı" yazıldı.
-- ÖLÇÜLÜLÜĞÜN TANIMI: kitap ölçülülüğü yalnız "aracın amacı gerçekleştirmeye elverişli olması" olarak tanımlar. Tanım bloğundaki "amaca göre aşırıya kaçmaması" eklemesi kitapta yok; öğretide ölçülülük elverişlilik, gereklilik ve orantılılık alt ilkeleriyle anlatılır ve bankadaki 4e1cfe57… sorusu "en hafif tedbir" (gereklilik) ifadesini ölçülülüğe bağlar. Alt ilkelerin adları derse yazılmadı; insan incelemesinde eklenip eklenmeyeceğine karar verilmeli.
+- ÖLÇÜLÜLÜĞÜN TANIMI: kitap ölçülülüğü yalnız "aracın amacı gerçekleştirmeye elverişli olması" olarak tanımlar. Tanım bloğundaki "amaca göre aşırıya kaçmaması" eklemesi kitapta yok. Denetimde (ana oturum) elverişlilik, gereklilik ve orantılılık alt ölçütleri tablo olarak eklendi: öğretideki ve Anayasa Mahkemesi uygulamasındaki yerleşik üçlü; bankadaki 4e1cfe57… sorusu "en hafif tedbir" ifadesini (gereklilik) ölçülülüğe bağlar. Karar künyesi verilmedi.
+- DENETİM DÜZELTMESİ (ana oturum): 5.2 taslağı yürütmeye tanınan müdahale yetkileri arasında "toplantı ve gösteri yürüyüşünün ertelenmesi ya da yasaklanması"nı sayıyordu; bu yetki md 34'ün 2001 öncesi metnindeydi, yürürlükteki md 34'te yoktur (yerel bankadaki metinle doğrulandı). Cümle yürürlükteki metne göre yeniden yazıldı; md 28 (dağıtımın önlenmesi, toplatma) ve md 33 (faaliyetten men) örnekleri kondu, md 54 için kanunun gösterdiği hâller denildi. Olağanüstü hâl kararnamesi satırına md 15'in ölçüleri ve çekirdek alan kaydı eklendi.
 - Kaynakta olmayıp eklenenler, insan incelemesinde teyit edilmeli: (1) sınır türleri tablosundaki kanunla sınırlama örneği ve örnek bloğu (kurgusal); (2) öze dokunma tanımındaki "kullanılması aşırı ölçüde güç hâle getirecek" ifadesi (kitap yalnız "kullanılamaz hâle getirmemesi" der); (3) "1961 Anayasası ilk metninde yalnız özel sebepler vardı" satırı kitabın "genel sınırlama sebepleri 1961 Anayasasına 1971'de girdi" tespitinden çıkarımdır; (4) "1982 ilk metninde öze dokunmama yerine demokratik toplum düzeni kondu" yorumu kitabın tablosundaki iki satırın birlikte okunmasıdır; (5) altı ölçütün iki cümleye dağıtılması md 13'ün cümle yapısından.
 - Yürütmeye tanınan müdahale yetkileri kitabın listesinden seçildi (grevin ertelenmesi, toplantının ertelenmesi ya da yasaklanması, derneklerin faaliyetten alıkonulması); kitaptaki "yakalama sırasında silah kullanma" örneği alınmadı. Kitap dernek ve vakıfları birlikte anar; derste yalnız dernek yazıldı.
 - Kanunla sınırlamanın iki istisnası kitaptan; olağan dönem kararnamesinin kapsamı md 104'e dayanır (bu derste bağ verilmedi).

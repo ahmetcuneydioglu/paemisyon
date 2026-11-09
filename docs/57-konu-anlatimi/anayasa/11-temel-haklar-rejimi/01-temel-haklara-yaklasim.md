@@ -61,12 +61,12 @@ Maddenin öznesi "herkes"tir. Bu sözcük hakkın yalnızca vatandaşlara değil
 
 Maddenin ikinci fıkrası 1982 Anayasası'nın ayırt edici yaklaşımını gösterir: temel hak ve hürriyetler, kişinin topluma, ailesine ve diğer kişilere karşı ödev ve sorumluluklarını da içerir.
 
-Bu yaklaşım Anayasa'nın başlıklarına da yansımıştır. Kısmın adı "Temel Haklar ve Ödevler"dir; üç kataloğun her biri "haklar ve ödevler" diye biter. Bazı maddeler doğrudan ödev olarak kurulmuştur: vergi ödevi, vatan hizmeti ve mal bildirimi böyledir. Bazıları da hem hak hem ödevdir: eğitim ve öğrenim, çalışma bu türdendir.
+Bu yaklaşım Anayasa'nın başlıklarına da yansımıştır. Kısmın adı "Temel Haklar ve Ödevler"dir; üç kataloğun her biri "haklar ve ödevler" diye biter. Bazı maddeler doğrudan ödev olarak kurulmuştur: vergi ödevi ve mal bildirimi böyledir. Bazıları da hem hak hem ödevdir: eğitim ve öğrenim, çalışma ve vatan hizmeti bu türdendir.
 
 | Tür | Örnek |
 |---|---|
 | Yalnızca hak | Düşünce ve kanaat hürriyeti, dilekçe hakkı |
-| Hem hak hem ödev | Eğitim ve öğrenim hakkı ve ödevi, çalışma hakkı ve ödevi |
+| Hem hak hem ödev | Eğitim ve öğrenim hakkı ve ödevi, çalışma hakkı ve ödevi, vatan hizmeti |
 | Yalnızca ödev | Vergi ödevi, mal bildirimi |
 
 ## Tabii hak mı, pozitif hak mı
@@ -125,7 +125,7 @@ Bu dersin konusundan doğrudan soru azdır; sorular çoğunlukla antlaşmaların
 - Çapraz kontrol: Anayasa Mahkemesi, önceki anayasalar (1961): https://www.anayasa.gov.tr/tr/mevzuat/onceki-anayasalar/1961-anayasasi/
 - İŞ BÖLÜMÜ: madde içerikleri Doc 53 "Temel hakların rejimi" ünitesindedir; bu derste yalnız niteleme ve yaklaşım anlatıldı. Ünitede madde içeriği var, derste ayrım var.
 - "Saygılı" ve "dayanan" tartışmasındaki iki görüş kitaptan (metinde ve dipnotta); yazar adları kullanıcı metnine alınmadı. "Dayanan" sözcüğü kitapta "dayalı" olarak da geçer; 1961 Anayasası'nın metnindeki söyleyiş "dayanan"dır.
-- Kaynakta olmayıp eklenenler, insan incelemesinde teyit edilmeli: (1) md 12'deki dört niteliğin tek tek açıklamaları (kitap yalnız "devredilemeyen, rıza ile dahi vazgeçilemeyen" der; "dokunulmaz" ve "kişiliğe bağlı" açıklamaları öğretideki yaygın anlatım); (2) ilk uyarıdaki "dokunulmaz sınırlanamaz demek değildir" açıklaması; (3) hak, hak ve ödev, yalnız ödev tablosu (madde başlıklarından türetildi; "vatan hizmeti" md 72'de "hak ve ödev" olarak geçtiği için yalnız ödev örnekleri arasına alınmadı, gövde paragrafında ödev olarak anıldı; başlık resmî metinle karşılaştırılmalı); (4) "karışmama, sağlama, koruma" üçlü yükümlülük tablosu ve örnek (öğretideki yaygın anlatım; kitapta yok); (5) md 90 son fıkrasına ilişkin paragraf (kitabın bu sayfalarında yok; bankadaki f44eba3b… sorusu 2004 tarihini doğrular) ve bunun "kataloğu genişleten kapı" olarak nitelenmesi yorumdur; (6) ikinci uyarıdaki md 5'in değiştirilemez olmadığı (md 4'ten çıkarım; "1982 Anayasası" bölümünde de işlendi).
+- Kaynakta olmayıp eklenenler, insan incelemesinde teyit edilmeli: (1) md 12'deki dört niteliğin tek tek açıklamaları (kitap yalnız "devredilemeyen, rıza ile dahi vazgeçilemeyen" der; "dokunulmaz" ve "kişiliğe bağlı" açıklamaları öğretideki yaygın anlatım); (2) ilk uyarıdaki "dokunulmaz sınırlanamaz demek değildir" açıklaması; (3) hak, hak ve ödev, yalnız ödev tablosu (madde başlıklarından türetildi; "vatan hizmeti" md 72'de "hak ve ödev" olarak geçtiği için denetimde yalnız ödev örneklerinden çıkarılıp hem hak hem ödev satırına alındı); (4) "karışmama, sağlama, koruma" üçlü yükümlülük tablosu ve örnek (öğretideki yaygın anlatım; kitapta yok); (5) md 90 son fıkrasına ilişkin paragraf (kitabın bu sayfalarında yok; bankadaki f44eba3b… sorusu 2004 tarihini doğrular) ve bunun "kataloğu genişleten kapı" olarak nitelenmesi yorumdur; (6) ikinci uyarıdaki md 5'in değiştirilemez olmadığı (md 4'ten çıkarım; "1982 Anayasası" bölümünde de işlendi).
 - Kitap, Türkiye'nin 1987'de Avrupa İnsan Hakları Komisyonu'na bireysel başvuru hakkını kabul ettiğini de anar; bu bilgi bölümün altıncı dersinde kullanıldı.
 - "Hakların kataloğu Anayasa'nın saydıklarıyla sınırlıdır" cümlesi kitabın "Anayasayla açıkça tanınmayan bir hakkın ileri sürülmesi mümkün görünmemektedir" tespitinin yeniden yazımıdır; kesinlik derecesi kitaptakinden yüksek olmamalı, gerekirse yumuşatılmalı.
 - Madde bağları: md 2, 5, 12, 90. Gövdede yıl ve "md N" dışında rakam yok; yazıyla yazılan sayı da yok ("dört nitelik", "dört bölüm", "beş madde" sayımdır: md 12'deki dört sıfat; ikinci kısmın dört bölümü; md 12–16).

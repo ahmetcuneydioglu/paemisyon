@@ -81,7 +81,7 @@ Madde tek başlık taşır; ama içinde üç ayrı hürriyet ve bir yasak vardı
 
 Üç noktaya dikkat etmek gerekir. Suç soruşturma ve kovuşturması seyahat hürriyetinin sebebidir, yerleşme hürriyetinin değil. Sosyal ve ekonomik gelişme ile kentleşme yalnızca yerleşme hürriyetinin sebebidir. Genel ahlak ve genel sağlık ise bu maddede hiçbir hürriyet için sebep olarak sayılmamıştır; oysa önceki üç maddede ikisi de vardır.
 
-Yurt dışına çıkma hürriyeti 2010 değişikliğiyle yeniden yazılmıştır. Daha önce sebepler arasında vatandaşlık ödevi de bulunuyordu ve sınırlama idari bir kararla yapılabiliyordu. Yürürlükteki metinde tek sebep suç soruşturması ya da kovuşturmasıdır ve sınırlama ancak hâkim kararına bağlı olarak yapılabilir. Böylece sözgelimi vergi borcu nedeniyle idarenin kendiliğinden çıkış yasağı koyması bu fıkrayla bağdaşmaz.
+Yurt dışına çıkma hürriyeti 2010 değişikliğiyle yeniden yazılmıştır. Daha önce sebepler arasında vatandaşlık ödevi de bulunuyordu ve Anayasa hâkim kararı aramıyordu; kanunun yetki verdiği idare çıkışı kendiliğinden yasaklayabiliyordu. Yürürlükteki metinde tek sebep suç soruşturması ya da kovuşturmasıdır ve sınırlama ancak hâkim kararına bağlı olarak yapılabilir. Böylece sözgelimi vergi borcu nedeniyle idarenin kendiliğinden çıkış yasağı koyması bu fıkrayla bağdaşmaz.
 
 :::ornek
 Bir kanun, afet riski taşıyan bir bölgede yerleşmeyi sağlıklı ve düzenli kentleşme amacıyla sınırlayabilir; bu, yerleşme hürriyetinin sayılı sebeplerinden biridir. Aynı kanun, genel ahlakı gerekçe göstererek bir bölgeye yerleşmeyi yasaklayamaz; genel ahlak bu maddede sebep olarak yer almaz. Bir vatandaşın yurt dışına çıkması ise ancak hakkındaki bir suç soruşturması ya da kovuşturması nedeniyle ve hâkim kararıyla engellenebilir.

@@ -28,7 +28,7 @@ Mali kaynakların yeterliliği ölçüsü, niteliği gereği ilk sütundaki hakl
 | Sendika kurma, md 51 | Dernek kurma ile birlikte kişinin hakları | Sosyal ve ekonomik haklar |
 | Zorla çalıştırma yasağı, md 18 | Çalışma ile birlikte sosyal haklar | Kişinin hakları |
 
-Aile maddesi iki değişiklik görmüştür: 2001'de ailenin eşler arasında eşitliğe dayandığı, 2010'da çocuk hakları eklenmiştir. Çalışma maddesi ise hem hak hem ödev diye adlandırılan az sayıdaki maddeden biridir; öteki örnek siyasi haklar bölümündeki vatan hizmetidir.
+Aile maddesi iki değişiklik görmüştür: 2001'de ailenin eşler arasında eşitliğe dayandığı, 2010'da çocuk hakları eklenmiştir. Çalışma maddesi ise hem hak hem ödev diye adlandırılan az sayıdaki maddeden biridir; öteki örnekler aynı bölümdeki eğitim ve öğrenim ile siyasi haklar bölümündeki vatan hizmetidir.
 
 ## Eğitim: iki ayrı kural
 
