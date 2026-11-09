@@ -1,0 +1,19 @@
+{
+  "slug": "yargi-mahkemeler",
+  "title": "Yargı I: Mahkemeler ve Hâkimlik",
+  "subtitle": "Yargı yetkisi, hâkimlik teminatı, Hâkimler ve Savcılar Kurulu, yüksek mahkemeler ve Sayıştay",
+  "courseName": "Anayasa Hukuku",
+  "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+  "sortOrder": 9,
+  "isPremium": true,
+  "aiDraft": true,
+  "book": { "label": "THEMIS Anayasa Hukuku, 24. baskı, 2020", "page": "s.189–203" },
+  "lessons": [
+    { "file": "01-yargi-yetkisi-ve-mahkemelerin-kurulusu.md", "slug": "yargi-yetkisi-ve-mahkemelerin-kurulusu", "page": "s.189–191, 198–199" },
+    { "file": "02-hakimlik-ve-savcilik-teminati.md", "slug": "hakimlik-ve-savcilik-teminati", "page": "s.190–191, 198" },
+    { "file": "03-hakimler-ve-savcilar-kurulu.md", "slug": "hakimler-ve-savcilar-kurulu", "page": "s.191–197" },
+    { "file": "04-kurul-kararlari-ve-diger-yargi-hukumleri.md", "slug": "kurul-kararlarina-karsi-yollar-ve-askeri-yargi", "page": "s.194–199, 201–202" },
+    { "file": "05-yuksek-mahkemeler.md", "slug": "yuksek-mahkemeler-yargitay-danistay-uyusmazlik", "page": "s.199–201" },
+    { "file": "06-sayistay.md", "slug": "sayistay", "page": "s.202–203" }
+  ]
+}
