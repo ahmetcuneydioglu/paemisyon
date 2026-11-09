@@ -29,7 +29,7 @@ Durum: İnceleme sürümü. Hedef: 1924, 1961 ve 1982 anayasalarını yapılış
 | Bakanların seçimi | Yalnız milletvekilleri arasından | Meclis dışından da atanabilir (ilk kez) | Meclis dışından da atanabilir |
 | Seçimlerin yenilenmesi | Yalnız TBMM karar verir; yürütmenin fesih yetkisi yok | TBMM ya da Cumhurbaşkanı | TBMM ya da Cumhurbaşkanı |
 | Meclis denetim araçları | Soru, Meclis soruşturması, gensoru | Bunlara genel görüşme ve Meclis araştırması eklenir | Aynı beş araç; gensoru 2017'de kaldırıldı |
-| Meclisin toplanma günü | Kasım başı | Kasım ayının ilk günü | Ekim ayının ilk günü |
+| Meclisin toplanma günü | Kasım başı | Kasım ayının ilk günü | İlk metinde Eylül ayının ilk günü; 1995 değişikliğiyle Ekim ayının ilk günü |
 
 ## Cumhurbaşkanı
 
@@ -92,3 +92,4 @@ Sorular ya üç anayasanın ortak hükmünü ya da bir kurumun ilk kez görüld�
 - Karşılaştırma dersi; madde bağı yok, sayı denetimi uygulanmaz.
 - Gömülü sorular: bankadaki yayınlı gerçek sorular (d16b8305… üç anayasanın ortak hükümleri; 764727e8… Meclis dışından bakan). Soru üretilmedi.
 - AI taslak; insan düzenleme ve yayın onayı bekliyor.
+- DENETİM DÜZELTMESİ (9 Kas 2026, Fable 5.1): 1982 sütununda toplanma günü "Ekim" yazılmıştı; ilk metinde (md 93) Eylül ayının ilk günüdür, Ekim 1995 değişikliğiyle gelmiştir. Satır düzeltildi.
