@@ -37,7 +37,7 @@ Teklif önce Anayasa Komisyonu'nda incelenir, ardından Genel Kurula gelir.
 
 Teklif Genel Kurulda iki tur hâlinde görüşülür. Önce tümü üzerinde konuşulur ve maddelere geçilmesi oylanır; bu oylamada özel bir çoğunluk aranmaz. Ardından maddeler tek tek görüşülüp oylanır. Sıradan kanunlardan farklı olarak maddelerin görüşülüp oylanması bir kez daha tekrarlanır. İkinci tur, birinci turun bitiminden kırk sekiz saat geçmeden başlayamaz. İkinci turda yalnızca hakkında değişiklik önergesi bulunan maddeler üzerinde görüşme açılır; ama her madde yeniden oylanır. İkinci turun sonunda teklifin tümü oylanır.
 
-Maddelerin kabulü de tümünün kabulü de gizli oyla ve üye tam sayısının en az beşte üç çoğunluğuyla olur. Gizli oy kuralı ve beşte üçlük kabul oranı Anayasa'ya 1987 değişikliğiyle girmiştir.
+Maddelerin kabulü de tümünün kabulü de gizli oyla ve üye tam sayısının en az beşte üç çoğunluğuyla olur. Gizli oy kuralı ilk metinden beri vardır; kabul oranı ise ilk metindeki üçte ikiden 1987 değişikliğiyle beşte üçe indirilmiştir.
 
 :::uyari
 Belirleyici olan ikinci turdur. Birinci turda yeterli oyu alamayan bir madde ikinci turda beşte üç çoğunluğa ulaşırsa kabul edilmiş olur; birinci turdaki oy yalnızca ipucu verir. Değişikliğin hangi oranla kabul edildiği ise maddelerin değil, tümü üzerindeki son oylamanın sonucuna göre belirlenir.
@@ -89,3 +89,4 @@ Sorular teklif yetkisini, iki tur arasındaki süreyi ve şekil denetiminin sın
 - Madde bağları: md 4, 148, 175. Gövdede yıl ve "md N" dışında rakam yok.
 - Gömülü sorular: bankadaki yayınlı gerçek sorular (c2f9ba50… teklif ve kabul; d63bc32d… iki görüşme arasındaki süre; cbe90118… şekil denetimi). Soru üretilmedi.
 - AI taslak; insan düzenleme ve yayın onayı bekliyor.
+- DENETİM DÜZELTMESİ (10 Kas 2026, Fable 5.1): gizli oy 1987'de gelmiş gibi yazılmıştı; 1982 ilk metni (md 175) zaten gizli oy arıyordu, 1987 yalnız kabul oranını üçte ikiden beşte üçe indirdi. Cümle düzeltildi.
