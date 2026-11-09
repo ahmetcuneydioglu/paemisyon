@@ -72,7 +72,7 @@ Tablonun gösterdiği yön tektir: ilk metinde Bakanlar Kuruluna ait olan ya da 
 
 İlk metinde Cumhurbaşkanının işlemleri ikiye ayrılırdı. Çoğu, Başbakan ve ilgili bakanla birlikte imzalanırdı ve yargı denetimine açıktı. Anayasa'nın tek başına yapabileceğini belirttiği işlemler ise karşı imzaya tabi değildi; bunlara karşı Anayasa Mahkemesi dahil hiçbir yargı merciine başvurulamazdı. Sorumlusu olmayan işlemin yargısal denetimi de yoktu.
 
-2017 değişikliği karşı imzayla birlikte bu yargı bağışıklığını da kaldırmıştır. Yürürlükteki metinde Cumhurbaşkanı bütün işlemlerini tek başına yapar ve bu işlemler, idarenin her türlü eylem ve işlemine karşı yargı yolunun açık olduğu genel kuralın içindedir.
+2017 değişikliği karşı imzayla birlikte bu yargı bağışıklığını da kaldırmıştır. Yürürlükteki metinde Cumhurbaşkanı bütün işlemlerini tek başına yapar ve bu işlemler, idarenin her türlü eylem ve işlemine karşı yargı yolunun açık olduğu genel kuralın içindedir. Bu kuralın Anayasa'da sayılı istisnaları vardır; Yüksek Askerî Şûra'nın bazı kararları ile Hâkimler ve Savcılar Kurulu'nun meslekten çıkarma dışındaki kararları gibi istisnalar Yargı bölümünde ele alınır.
 
 :::madde t-c-anayasasi:125
 İdarenin her türlü eylem ve işlemine karşı yargı yolu açıktır.
@@ -118,3 +118,4 @@ Kalıp neredeyse hep aynıdır: "Aşağıdakilerden hangisi Cumhurbaşkanının 
 - Gömülü sorular: bankadaki yayınlı gerçek sorular (79eca4d5… görev ve yetkilerden olmayan, 2026 PAEM 10. dönem; 08fac84a… aynı kalıp; 9630334e… Cumhurbaşkanına ilişkin doğru ifade). Soru üretilmedi.
 - Eşlenmeyen adaylar: 2d83e826… (08fac84a ile aynı soru; mükerrer görünüyor, bankada ayrıca bakılmalı). 148e933a… incelenmedi.
 - AI taslak; insan düzenleme ve yayın onayı bekliyor.
+- DENETİM EKİ (10 Kas 2026, Fable 5.1): md 125 genel kuralının istisnalarının (md 125/2 Yüksek Askerî Şûra, md 159 HSK kararları) bulunduğu ve Yargı bölümünde işleneceği cümlesi eklendi; rakam yok.
