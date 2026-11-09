@@ -23,7 +23,7 @@ Kurul on üç üyeden oluşur ve yedek üyesi yoktur.
 | Üye | Sayı | Kaynağı | Seçen |
 |---|---|---|---|
 | Başkan | Bir | Adalet Bakanı | Görevi gereği |
-| Tabii üye | Bir | Adalet Bakanlığı'nın ilgili bakan yardımcısı | Görevi gereği |
+| Tabii üye | Bir | Anayasa metninde Adalet Bakanlığı Müsteşarı; müsteşarlık kaldırıldığı için kanun gereği ilgili bakan yardımcısı | Görevi gereği |
 | Yargıdan gelen üyeler | Dört | Üçü birinci sınıf adli yargı, biri birinci sınıf idari yargı hâkim ve savcıları arasından | Cumhurbaşkanı |
 | Meclisin seçtiği üyeler | Yedi | Üçü Yargıtay üyeleri, biri Danıştay üyeleri, üçü hukuk öğretim üyeleri ile avukatlar arasından | Meclis |
 
@@ -130,3 +130,4 @@ Sorular görev süresini, aday belirleyen organı ve Meclisteki oylamaların ço
 - Gömülü sorular: bankadaki yayınlı gerçek sorular (5c707368… görev süresi, 2021 hâkimlik; 4172966b… aday belirleyen organ, 2020 hâkimlik; 2cd1fd78… Genel Kuruldaki oylamalar, 2020 kaymakamlık; e2711f57… ikinci oylamada gereken oy, 2021 hâkimlik). Soru üretilmedi.
 - Eşlenmeyen adaylar: edc60760… ve 20a14008… uygun; sayı sınırı nedeniyle alınmadı.
 - AI taslak; insan düzenleme ve yayın onayı bekliyor.
+- DENETİM DÜZELTMESİ (10 Kas 2026, Fable 5.1): tabii üye satırı Anayasa metnine göre yeniden yazıldı. md 159/2 hâlâ "Adalet Bakanlığı Müsteşarı" der; 703 sayılı KHK Anayasa'yı değil 6087 sayılı HSK Kanunu'nu değiştirmiştir, bakan yardımcısı o kanun gereği katılır. Yerel bankadaki madde metni bu bakımdan GÜNCELDİR, tazeleme gerekmez; kitabın "Anayasa'da değişti" okuması yanlıştır.
