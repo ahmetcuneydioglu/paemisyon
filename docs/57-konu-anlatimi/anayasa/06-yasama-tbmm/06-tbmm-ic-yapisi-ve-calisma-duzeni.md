@@ -32,6 +32,12 @@ Başkan seçiminin kuralları şöyledir:
 | Üçüncü oylama | Üye tam sayısının salt çoğunluğu |
 | Dördüncü oylama | Üçüncü oylamada en çok oy alan iki aday arasında yapılır; en fazla oyu alan seçilir |
 
+Üye tam sayısı altı yüz olduğundan üçte iki çoğunluk dört yüz (altı yüzün üçte ikisi), salt çoğunluk üç yüz bir (altı yüzün yarısı olan üç yüzün bir fazlası) milletvekilidir.
+
+:::madde t-c-anayasasi:75
+Üye tam sayısının dayanağı.
+:::
+
 Adaylar Meclisin toplandığı günden itibaren beş gün içinde Divana bildirilir; seçim de aday gösterme süresinin bitiminden itibaren beş gün içinde tamamlanır. Seçim gizli oyla yapılır. Dördüncü oylamada özel çoğunluk aranmadığı için seçim kilitlenemez.
 
 Tarafsızlığı sağlamak için üç yasak konulmuştur. Siyasi parti grupları Başkanlık için aday gösteremez. Başkan ve başkanvekilleri, üyesi oldukları partinin ya da grubun Meclis içindeki ve dışındaki faaliyetlerine ve görevlerinin gereği olan hâller dışında Meclis tartışmalarına katılamaz. Başkan ve oturumu yöneten başkanvekili oy kullanamaz.
@@ -91,6 +97,8 @@ Toplantı ve karar yeter sayısı.
 | Karar yeter sayısı | Anayasa'da başka hüküm yoksa toplantıya katılanların salt çoğunluğu |
 | Alt sınır | Karar yeter sayısı hiçbir şekilde üye tam sayısının dörtte birinin bir fazlasından az olamaz |
 
+Üye tam sayısı altı yüz olduğundan toplantı yeter sayısı iki yüz (altı yüzün üçte biri), karar yeter sayısının alt sınırı yüz elli bir (altı yüzün dörtte biri olan yüz ellinin bir fazlası) milletvekilidir.
+
 Üç noktaya dikkat etmek gerekir. Oranlar üye tam sayısı üzerinden hesaplanır; üyeliklerde boşalma olması hesabı değiştirmez. Karar yeter sayısı kabul oylarının ret oylarından fazla olması demek değildir; kabul oyları katılanların salt çoğunluğuna ulaşmalıdır, bu yüzden çekimser oylar fiilen karara engel olabilir. Alt sınır ise toplantıya az sayıda üyenin katıldığı durumlar içindir: katılanların salt çoğunluğu bu sınırın altında kalıyorsa karar alınamaz.
 
 Toplantı ya da karar yeter sayısı sağlanmadan kabul edilen kanun, son oylamadaki sakatlık nedeniyle şekil bakımından Anayasa'ya aykırı olur.
@@ -106,6 +114,8 @@ Anayasa bazı işlerde genel kuralla yetinmez, özel çoğunluk arar.
 | Devamsızlık nedeniyle üyeliğin düşmesi | Üye tam sayısının salt çoğunluğu |
 | Meclis soruşturması açılması | Üye tam sayısının beşte üçü |
 | Yüce Divana sevk | Üye tam sayısının üçte ikisi |
+
+Üye tam sayısı altı yüz olduğundan salt çoğunluk üç yüz bir, beşte üç çoğunluk üç yüz altmış (altı yüzün beşte üçü), üçte iki çoğunluk dört yüz milletvekilidir.
 
 :::uyari
 Önemli göründüğü hâlde özel çoğunluk gerektirmeyen işler şıklara sık konur: savaş ilanı, yasama dokunulmazlığının kaldırılması, bütçenin kabulü ve olağanüstü hâlde çıkarılan Cumhurbaşkanlığı kararnamelerinin onaylanması genel karar yeter sayısıyla yapılır.
@@ -157,4 +167,5 @@ Sorular Başkan seçimini, toplantıya çağrıyı ve yeter sayı hesabını yok
 - Madde bağları: md 93, 94, 95, 96, 97. Gövdede yıl ve "md N" dışında rakam yok ("beş gün", "iki yıl", "üç ay", "yirmi üye" bağ verilen maddelerde geçer).
 - Gömülü sorular: bankadaki yayınlı gerçek sorular (5e31ad96… Başkan adaylığı ve oylama biçimi, 2024 PAEM 8. dönem; 674244a4… Başkan seçimi için yanlış ifade; f205e8d9… toplanma ve tatil, 2024 KPSS; fbd4f438… karar yeter sayısı hesabı, 2021 hâkimlik). Soru üretilmedi.
 - Eşlenmeyen adaylar: 7b77e067… (Başkanlık Divanı, 2020 kaymakamlık), 10b3c5ed… ve 70e80191… (toplantıya çağrı), 10fb2f91… (asgari karar yeter sayısı), 5378dc82… (geçici başkanlık), 3b7b246e… (komisyon adları) uygun; sayı sınırı nedeniyle alınmadı. GYS etiketli adaylar (dört şıklı olma ihtimali nedeniyle) hiç incelenmedi.
+- Üye tam sayısı karşılıkları md 75'e dayanan türetilmiş sayılardır (md 75 bağı bu nedenle eklendi); yazıyla ve formülüyle verildi.
 - AI taslak; insan düzenleme ve yayın onayı bekliyor.

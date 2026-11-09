@@ -38,10 +38,14 @@ Teklif gerekçesiyle birlikte Meclis Başkanlığına verilir; Başkan onu ilgil
 
 ## Genel Kurul
 
-Görüşmenin yapılabilmesi için önce toplantı yeter sayısı bulunmalıdır. Meclis bütün işlerinde üye tam sayısının en az üçte biriyle toplanır.
+Görüşmenin yapılabilmesi için önce toplantı yeter sayısı bulunmalıdır. Meclis bütün işlerinde üye tam sayısının en az üçte biriyle toplanır. Üye tam sayısı altı yüz olduğundan bu, iki yüz milletvekilidir (altı yüzün üçte biri).
 
 :::madde t-c-anayasasi:96
 Toplantı ve karar yeter sayısı.
+:::
+
+:::madde t-c-anayasasi:75
+Üye tam sayısının dayanağı.
 :::
 
 Görüşme şu sırayla ilerler:
@@ -51,7 +55,7 @@ Görüşme şu sırayla ilerler:
 - Maddeler tek tek görüşülür ve oylanır.
 - En sonda teklifin tümü oylanır.
 
-Karar için, Anayasa'da başka bir hüküm yoksa toplantıya katılanların salt çoğunluğu yeterlidir; ancak kabul oyu hiçbir durumda üye tam sayısının dörtte birinin bir fazlasından az olamaz. Oylama kural olarak işaretle yapılır.
+Karar için, Anayasa'da başka bir hüküm yoksa toplantıya katılanların salt çoğunluğu yeterlidir; ancak kabul oyu hiçbir durumda üye tam sayısının dörtte birinin bir fazlasından az olamaz. Üye tam sayısı altı yüz olduğundan bu alt sınır yüz elli bir milletvekilidir (altı yüzün dörtte biri olan yüz ellinin bir fazlası). Oylama kural olarak işaretle yapılır.
 
 Kanunların maddeleri Genel Kurulda bir kez görüşülür. Anayasa değişikliklerini kanunlardan ayıran farklardan biri budur: onlar iki defa görüşülür. Bir hukuk dalını bütünüyle düzenleyen kapsamlı kanunlar için İçtüzük ayrıca "temel kanun" usulünü öngörür; bu usulde maddeler bölümler hâlinde görüşülür, oylama yine madde madde yapılır.
 
@@ -89,7 +93,7 @@ Cumhurbaşkanı, yayımlanmasını kısmen ya da tamamen uygun bulmadığı kanu
 
 Kısmen uygun bulmama hükmü 2001 değişikliğiyle gelmiştir. Amacı Cumhurbaşkanına kanunun bir bölümünü yayımlayıp bir bölümünü geri gönderme yetkisi vermek değil, Meclisi bütün kanunu baştan görüşme yükünden kurtarmaktır. Meclis dilerse yalnız itiraz edilen maddeleri, dilerse kanunun tamamını yeniden görüşür; her iki hâlde de sonunda kanunun tümünü oylar.
 
-Aynen kabul için üye tam sayısının salt çoğunluğu 2017 değişikliğiyle aranmaya başlanmıştır. İlk metinde özel bir çoğunluk yoktu; Meclis ilk kabuldeki çoğunlukla kanunu yeniden kabul edebiliyordu. Bu yüzden ilk metindeki yetki geciktirici veto, bugünkü yetki güçleştirici veto olarak adlandırılır. İkisinde de mutlak veto yoktur: Meclis gerekli çoğunlukla ısrar ederse kanun yayımlanır.
+Aynen kabul için üye tam sayısının salt çoğunluğu 2017 değişikliğiyle aranmaya başlanmıştır. Üye tam sayısı altı yüz olduğundan bu, üç yüz bir milletvekilidir (altı yüzün yarısı olan üç yüzün bir fazlası). İlk metinde özel bir çoğunluk yoktu; Meclis ilk kabuldeki çoğunlukla kanunu yeniden kabul edebiliyordu. Bu yüzden ilk metindeki yetki geciktirici veto, bugünkü yetki güçleştirici veto olarak adlandırılır. İkisinde de mutlak veto yoktur: Meclis gerekli çoğunlukla ısrar ederse kanun yayımlanır.
 
 :::ornek
 Meclis, toplantıya katılanların salt çoğunluğuyla kabul ettiği bir kanunu, Cumhurbaşkanı geri gönderdikten sonra aynı oyla yeniden kabul edemeyebilir; çünkü ikinci kabulde ölçü katılanlar değil, üye tam sayısıdır. Üye tam sayısının salt çoğunluğuna ulaşılamazsa kanun yayımlanamaz.
@@ -133,4 +137,5 @@ Sorular teklif yetkisini, kadük olmayı ve geri gönderme kurallarını yoklar.
 - "On beş" md 89 metninde geçer; gövdede yazıyla. Madde bağları: md 88, 89, 96. Gövdede yıl ve "md N" dışında rakam yok.
 - Gömülü sorular: bankadaki yayınlı gerçek sorular (58e2d79e… kimler teklif verebilir, 2024 hukuk mesleklerine giriş sınavı; 2bc1835d… kadük olma, 2020 kaymakamlık; ccfdb3a9… geri gönderme; b65dbd6e… kanunlaşma ve yayım). Soru üretilmedi.
 - Eşlenmeyen adaylar: 3793d011… (önceki bölümde kullanıldı); 06227487… ve bcac5cf5… (İçtüzük süresi soruları; süre derste sayıyla verilmediği için); fbd4f438… (oy sayısı hesabı; uygun, ama dört soru sınırı). 3cfb9d02… ve e1183a90… aynı konuyu ölçüyor, eşlenmedi.
+- Üye tam sayısı karşılıkları md 75'e dayanan türetilmiş sayılardır (md 75 bağı bu nedenle eklendi); yazıyla ve formülüyle verildi.
 - AI taslak; insan düzenleme ve yayın onayı bekliyor.

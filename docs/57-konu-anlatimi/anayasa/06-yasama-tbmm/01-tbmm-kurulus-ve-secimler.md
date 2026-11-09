@@ -74,6 +74,8 @@ Seçimlerin geriye bırakılması ve ara seçim.
 | Zorunlu hâl | Boşalan üyelikler üye tam sayısının yüzde beşini bulursa üç ay içinde yapılmasına karar verilir |
 | Temsilcisiz kalan çevre | Bir ilin ya da seçim çevresinin Mecliste üyesi kalmazsa boşalmayı izleyen doksan günden sonraki ilk pazar günü yapılır |
 
+Üye tam sayısı altı yüz olduğundan yüzde beş, otuz milletvekilidir (altı yüzün yüzde beşi).
+
 Kurallar arasındaki ilişki şöyledir. Yüzde beşlik boşalma, "bir defa" ve "otuz ay" kurallarının istisnasıdır; ama son bir yıl yasağını aşamaz. Temsilcisiz kalan çevre hükmü ise 2002'de eklenmiştir ve "yukarıda yazılı hâllerden ayrı olarak" uygulanır; bu yüzden bütün sınırlamaların, son bir yıl yasağının bile istisnası sayılır.
 
 Yüzde beşe ulaşmayan boşalmalarda ara seçim zorunlu değildir; otuz ay geçmiş ve son bir yıla girilmemişse Meclis isterse ara seçime karar verir. Bu karar özel çoğunluk gerektirmez.
@@ -118,4 +120,5 @@ Ara seçim koşulları senaryolarla, geriye bırakma ise süresiyle sorulur.
 - Kitap "seçimlerin kanunla yenilenmesine anayasal bir engel yoktur" der; tartışmaya açık bulunduğu için derse alınmadı.
 - Madde bağları: md 75, 77, 78, 116. Gövdede yıl ve "md N" dışında rakam yok.
 - Gömülü sorular: bankadaki yayınlı gerçek sorular (2dbe2ae0… ara seçim kararı için oy, 2022 hâkimlik; ff1ed980… ara seçim için yanlış ifade; f86a67f3… boşalma senaryosu; 1dcd2085… geriye bırakma süresi, 2025 KPSS). Soru üretilmedi.
+- Üye tam sayısı karşılıkları md 75'e dayanan türetilmiş sayılardır; yazıyla ve formülüyle verildi.
 - AI taslak; insan düzenleme ve yayın onayı bekliyor.

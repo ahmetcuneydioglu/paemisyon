@@ -79,7 +79,11 @@ Beşinci ve izleyen fıkralar soruşturma usulünü düzenler.
 | Yüce Divana sevk | Üye tam sayısının üçte ikisinin gizli oyuyla |
 | Yargılama | Üç ay içinde; tamamlanamazsa bir defaya mahsus üç aylık ek süre |
 
-Üç çoğunluk giderek yükselir: istemek için salt çoğunluk, açmak için beşte üç, sevk için üçte iki. Üçü de üye tam sayısı üzerinden hesaplanır ve son ikisi gizli oyla alınır.
+Üç çoğunluk giderek yükselir: istemek için salt çoğunluk, açmak için beşte üç, sevk için üçte iki. Üye tam sayısı altı yüz olduğundan bunlar sırasıyla üç yüz bir (altı yüzün yarısı olan üç yüzün bir fazlası), üç yüz altmış (altı yüzün beşte üçü) ve dört yüz (altı yüzün üçte ikisi) milletvekilidir. Üçü de üye tam sayısı üzerinden hesaplanır ve son ikisi gizli oyla alınır.
+
+:::madde t-c-anayasasi:75
+Üye tam sayısının dayanağı.
+:::
 
 Yüce Divana sevk tek başına görevi sona erdirmez. Görev, Yüce Divan'da seçilmeye engel bir suçtan mahkûm olunması hâlinde sona erer; herhangi bir mahkûmiyet yetmez. Soruşturma, görevi sona ermiş Cumhurbaşkanı yardımcıları ve bakanlar hakkında da, görevdeyken işledikleri iddia edilen görev suçları için açılabilir.
 
@@ -128,4 +132,5 @@ Sorular yolların listesini, muhatabını, kimin isteyebileceğini ve soruşturm
 - Gömülü sorular: bankadaki yayınlı gerçek sorular (f07e6430… denetim yollarının listesi; b5bd9f63… yazılı sorunun muhatabı, 2022 KPSS; 30454684… parti gruplarının isteyebileceği yollar; 858cb4c2… Meclis soruşturması için yanlış ifade). Soru üretilmedi.
 - f07e6430… için not: doğru şık yalnız "Meclis soruşturması ve genel görüşme"yi sayıyor; öncüllerde yazılı soru ve Meclis araştırması bulunmadığı için anahtar tutarlıdır.
 - Eşlenmeyen adaylar: e5287252… ve a480efef… ("Özgün soru" etiketli); 4b3b80d9…, dad318df…, 25e06aed…, 5bb63a35…, 569aeab5…, b4f9b835… (uygunlar; dört soru sınırı); 3cf523e4…, 0e8af8c8…, b9c3f17e… (İçtüzük sayılarını soruyor, derste sayı verilmedi); 0b322cb1… (önceki bölümde kullanıldı).
+- Üye tam sayısı karşılıkları md 75'e dayanan türetilmiş sayılardır (md 75 bağı bu nedenle eklendi); yazıyla ve formülüyle verildi.
 - AI taslak; insan düzenleme ve yayın onayı bekliyor.
