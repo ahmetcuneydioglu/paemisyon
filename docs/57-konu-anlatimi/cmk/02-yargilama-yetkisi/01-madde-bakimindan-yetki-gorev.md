@@ -34,7 +34,15 @@ Ceza Muhakemesi Kanunu hangi suça hangi mahkemenin bakacağını saymaz; bu ayr
 | Ağır ceza mahkemesi | Toplu mahkemedir | Ağırlaştırılmış müebbet hapis, müebbet hapis ve kanun düzeyindeki kurala göre on yıldan fazla hapis cezasını gerektiren suçlar; ayrıca cezasına bakılmaksızın sayılan bazı suçlar |
 | Çocuk mahkemesi ve çocuk ağır ceza mahkemesi | Suça sürüklenen çocuklar için | Yetişkin olsaydı asliye cezanın bakacağı işlere çocuk mahkemesi, ağır cezanın bakacağı işlere çocuk ağır ceza mahkemesi bakar |
 
-Cezasına bakılmaksızın ağır ceza mahkemesine bırakılan suçların başında yağma, irtikâp, resmî belgede sahtecilik, nitelikli dolandırıcılık ve hileli iflas gelir. Bu listedeki bir suçun cezası düşük olsa da dava ağır cezada görülür.
+Cezasına bakılmaksızın ağır ceza mahkemesine bırakılan suçların başında yağma, irtikâp, resmî belgede sahtecilik ve hileli iflas gelir; devletin güvenliğine karşı suçlar ile terör suçları da bu mahkemenin işidir. Bu listedeki bir suçun cezası düşük olsa da dava ağır cezada görülür.
+
+:::madde 5235-sayili-adli-yargi-ilk-derece-mahkemeleri-kurulus-gorev-ve-yetkileri-hakkinda-kanun:12
+Ağır ceza mahkemesinin görevi.
+:::
+
+:::uyari
+Nitelikli dolandırıcılık eskiden bu listedeydi; listeden çıkarılmıştır ve bugün asliye ceza mahkemesinin görevindedir. Eski kaynaklardan çalışanların en sık düştüğü hata budur: "nitelikli dolandırıcılık cezasına bakılmaksızın ağır cezalıktır" cümlesi artık yanlıştır.
+:::
 
 Sulh ceza mahkemeleri 2014 yılında kaldırılmıştır. Yargılama görevleri asliye ceza mahkemesine geçmiş; soruşturma evresinde hâkim kararı gerektiren işlemler ile bunlara karşı itirazlar için sulh ceza hâkimliği kurulmuştur. Sulh ceza hâkimliği dava görmez; bu yüzden görev sıralamasında bir basamak değildir.
 
@@ -118,6 +126,7 @@ Sorular görevsizliğin her aşamada gözetilmesini, iddianamenin kabulünden so
 - Resmî metin: T.C. Anayasası (md 142): https://www.mevzuat.gov.tr/mevzuatmetin/1.5.2709.pdf
 - Resmî metin: 5235 sayılı Adlî Yargı İlk Derece Mahkemeleri ile Bölge Adliye Mahkemelerinin Kuruluş, Görev ve Yetkileri Hakkında Kanun (mahkemelerin görev ayrımı): https://www.mevzuat.gov.tr/mevzuatmetin/1.5.5235.pdf
 - İŞ BÖLÜMÜ: md 1–11'in madde madde içeriği Doc 53 "Kapsam, tanımlar, görev ve bağlantı" ünitesindedir. Bu ders madde içeriğini yeniden anlatmaz; görev/yetki terim ayrımını, kamu düzeni sonucunu, md 6 yasağının sınırlarını ve kanun yolu ayrımını anlatır.
+- DENETİM DÜZELTMESİ (ana oturum, 5235 bankaya yüklendikten sonra): 5.2 taslağı cezasına bakılmaksızın ağır cezalık suçlar arasında "nitelikli dolandırıcılık"ı sayıyordu (kitap s.11). 5235 md 12'nin yürürlükteki metninde bu suç YOK (ibare çıkarılmış; bankadaki metin ve mevzuat.gov.tr metni aynı). Liste düzeltildi, md 12'ye bağ verildi, eski bilgi uyarı bloğuna alındı. Uyarıdaki "bugün asliye cezanın görevindedir" sonucu md 11 ve md 12'nin birlikte okunmasıdır (suçun cezasının üst sınırı on yılı aşmadığı sürece); insan incelemesinde TCK md 158'in güncel ceza sınırıyla teyit edilmeli. Aşağıdaki "bankada olmayan" notu 5235 bakımından artık geçerli değil: 5235 md 11, 12 ve 14 bankada var ve dersteki anlatımla uyumlu ("on yıldan fazla hapis", üst sınır kuralı, asliyenin genel görevi).
 - BANKADA OLMAYAN KANUNDAN GELEN BİLGİLER (madde numarası verilmedi, gövdede "kanun düzeyinde" denildi): ağır ceza mahkemesinin görev eşiği "on yıldan fazla hapis" (yazıyla; kaynağı 5235 sayılı Kanun md 12, kitap s.11); cezasına bakılmaksızın ağır cezalık suçlar listesi (aynı madde); asliye cezanın genel görevli ve tek hâkimli, ağır cezanın toplu mahkeme oluşu (5235 md 10–11, kitap s.10–11); cezanın üst sınırının esas alınması ve artırım-indirim nedenlerinin hesaba katılmaması (5235 md 14, kitap s.10); çocuk mahkemeleri (5395 sayılı Kanun, kitap s.12); sulh ceza mahkemelerinin 2014'te kaldırılması (6545 sayılı Kanun, kitap s.10). İnsan incelemesinde 5235 md 12'nin güncel metniyle teyit edilmeli.
 - KİTAPLA AYRIŞMA / İNCELENECEK: kitap asliye cezanın görevini "iki yıldan fazla ve on yıla kadar hapis" diye yazar (s.10–11). Alt eşik sulh ceza mahkemelerinin var olduğu dönemden kalma görünüyor; sulh ceza mahkemeleri kaldırıldığından derse alınmadı, asliye ceza "genel görevli" olarak anlatıldı. Teyit edilmeli.
 - Kitabın TCK madde numaralı sayısal örneği (nitelikli hâlde oran/miktar ayrımı) ve kaçakçılık kanunu örneği aktarılmadı. Yargıtay daireleri arasındaki iş bölümü son derse bırakıldı.
