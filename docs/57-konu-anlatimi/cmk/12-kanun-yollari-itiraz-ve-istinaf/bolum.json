@@ -1,0 +1,17 @@
+{
+  "slug": "cmk-kanun-yollari-itiraz-ve-istinaf",
+  "title": "Kanun Yolları I: Genel Kurallar, İtiraz ve İstinaf",
+  "subtitle": "Başvurma hakkı, süreler, vazgeçme ve aleyhe değiştirme yasağı; itiraz; istinafın konusu, nedeni, başvurusu ve bölge adliye mahkemesinin kararları",
+  "courseName": "Ceza Muhakemesi Hukuku",
+  "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+  "sortOrder": 12,
+  "isPremium": true,
+  "aiDraft": true,
+  "book": { "label": "THEMIS Ceza Muhakemesi Hukuku, 23. baskı, 2025", "page": "s.203–215" },
+  "lessons": [
+    { "file": "01-kanun-yollarinin-genel-kurallari.md", "slug": "cmk-kanun-yollarinin-genel-kurallari", "page": "s.203–206" },
+    { "file": "02-itiraz.md", "slug": "cmk-itiraz", "page": "s.206–209" },
+    { "file": "03-istinaf-konu-neden-ve-basvuru.md", "slug": "cmk-istinaf-konu-neden-ve-basvuru", "page": "s.209–212" },
+    { "file": "04-istinaf-inceleme-ve-kararlar.md", "slug": "cmk-istinaf-inceleme-ve-kararlar", "page": "s.212–215" }
+  ]
+}

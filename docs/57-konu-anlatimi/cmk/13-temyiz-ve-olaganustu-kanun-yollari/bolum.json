@@ -1,0 +1,17 @@
+{
+  "slug": "cmk-temyiz-ve-olaganustu-kanun-yollari",
+  "title": "Kanun Yolları II: Temyiz ve Olağanüstü Kanun Yolları",
+  "subtitle": "Temyize açık kararlar ve kesin hukuka aykırılık, temyiz usulü ve Yargıtay kararları, başsavcı itirazı ve kanun yararına bozma, yargılamanın yenilenmesi",
+  "courseName": "Ceza Muhakemesi Hukuku",
+  "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+  "sortOrder": 13,
+  "isPremium": true,
+  "aiDraft": true,
+  "book": { "label": "THEMIS Ceza Muhakemesi Hukuku, 23. baskı, 2025", "page": "s.215–232" },
+  "lessons": [
+    { "file": "01-temyiz-konu-nedenler-ve-sure.md", "slug": "cmk-temyiz-konu-nedenler-ve-sure", "page": "s.215–218" },
+    { "file": "02-temyiz-usul-ve-kararlar.md", "slug": "cmk-temyiz-usul-ve-kararlar", "page": "s.218–223" },
+    { "file": "03-basavci-itirazi-ve-kanun-yararina-bozma.md", "slug": "cmk-basavci-itirazi-ve-kanun-yararina-bozma", "page": "s.223–227" },
+    { "file": "04-yargilamanin-yenilenmesi.md", "slug": "cmk-yargilamanin-yenilenmesi", "page": "s.227–232" }
+  ]
+}
