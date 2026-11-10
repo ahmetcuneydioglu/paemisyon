@@ -55,7 +55,7 @@ const paylasimOrnegi: ShareCardData = {
 };
 
 // Liderlik örnekleri: 8 rütbe adı sunucu kataloğunun kopyasıdır (yalnız galeri verisi).
-const RUTBELER = ["Aday", "Devriye", "Kıdemli Devriye", "Ekip Amiri", "Grup Amiri", "Vardiya Amiri", "Birim Amiri", "Komiserlik Kapısı"];
+const RUTBELER = ["Aday", "Devriye", "Kıdemli Devriye", "Ekip Amiri", "Grup Amiri", "Ekipler Amiri", "Birim Amiri", "Komiserlik Kapısı"];
 const liderlikSatiri = (rank: number, displayName: string, level: number, points: number, xp: number, over: Partial<LeaderboardRow> = {}): LeaderboardRow => ({
   rank,
   isMe: false,

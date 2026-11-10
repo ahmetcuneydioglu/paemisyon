@@ -36,18 +36,18 @@ const KATALOG = [
   { level: 3, name: "Kıdemli Devriye", minScore: 400 },
   { level: 4, name: "Ekip Amiri", minScore: 900 },
   { level: 5, name: "Grup Amiri", minScore: 1800 },
-  { level: 6, name: "Vardiya Amiri", minScore: 3500 },
+  { level: 6, name: "Ekipler Amiri", minScore: 3500 },
   { level: 7, name: "Birim Amiri", minScore: 7000 },
   { level: 8, name: "Komiserlik Kapısı", minScore: 12000 },
 ];
 
-test("xpProgress sunucu kataloğuyla: Grup Amiri 2793 XP → Vardiya Amiri'ne 707 XP, %58", () => {
-  assert.deepEqual(xpProgress(2793, 5, KATALOG), { pct: 58, toNext: 707, nextMin: 3500, nextName: "Vardiya Amiri" });
+test("xpProgress sunucu kataloğuyla: Grup Amiri 2793 XP → Ekipler Amiri'ne 707 XP, %58", () => {
+  assert.deepEqual(xpProgress(2793, 5, KATALOG), { pct: 58, toNext: 707, nextMin: 3500, nextName: "Ekipler Amiri" });
 });
 
 test("xpProgress katalog sırası karışık gelse de seviyeye göre bulur", () => {
   const karisik = [...KATALOG].reverse();
-  assert.equal(xpProgress(2793, 5, karisik).nextName, "Vardiya Amiri");
+  assert.equal(xpProgress(2793, 5, karisik).nextName, "Ekipler Amiri");
 });
 
 test("xpProgress katalogsuz (eski sunucu): yedek eşikler, ad yok", () => {

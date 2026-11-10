@@ -27,7 +27,7 @@ describe('computeRank', () => {
     const r = computeRank(2000);
     expect(r.name).toBe('Grup Amiri');
     expect(r.minScore).toBe(1800);
-    expect(r.next).toEqual({ level: 6, name: 'Vardiya Amiri', minScore: 3500 });
+    expect(r.next).toEqual({ level: 6, name: 'Ekipler Amiri', minScore: 3500 });
   });
   it('son rütbede next null — Komiserlik Kapısı', () => {
     const r = computeRank(99999);

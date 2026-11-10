@@ -28,7 +28,7 @@ export const RANKS: ReadonlyArray<{ level: number; name: string; minScore: numbe
   { level: 3, name: 'Kıdemli Devriye', minScore: 400 },
   { level: 4, name: 'Ekip Amiri', minScore: 900 },
   { level: 5, name: 'Grup Amiri', minScore: 1800 },
-  { level: 6, name: 'Vardiya Amiri', minScore: 3500 },
+  { level: 6, name: 'Ekipler Amiri', minScore: 3500 },
   { level: 7, name: 'Birim Amiri', minScore: 7000 },
   { level: 8, name: 'Komiserlik Kapısı', minScore: 12000 },
 ];
