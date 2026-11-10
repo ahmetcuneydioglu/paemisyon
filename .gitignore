@@ -20,3 +20,6 @@ docs/31-onay-kuyrugu-inceleme/SABAH-KURU-CALISMA.txt
 
 # Doc 32 denetimi sirasinda uretilen tek seferlik analiz scriptleri
 apps/api/scripts/_tek-seferlik/
+
+# Düzeltme betiklerinin yedek JSON çıktıları (kullanıcı kimlikleri içerir)
+apps/api/scripts/out/
