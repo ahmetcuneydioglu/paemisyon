@@ -1,0 +1,319 @@
+{
+  "deck": {
+    "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+    "legislationSlug": "turk-ceza-kanunu",
+    "sourceLabel": "AI bilgi kartı — Türk Ceza Kanunu md 53–60",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: resmî madde metni + çıkmış sorular); denetim düzeltmesi 6 Kas 2026 (4 kart)"
+  },
+  "cards": [
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Kasten işlediği suçtan hapis cezasına mahkûm olan kişi, Türk Ceza Kanunu md 53'te sayılan hakları ne zamana kadar kullanamaz?",
+      "back": "Mahkûm olduğu hapis cezasının infazı tamamlanıncaya kadar.",
+      "explanation": "Bu yoksunluk, kasten işlenen suçtan hapis cezasına mahkûmiyetin kanuni sonucudur. Süresi hapis cezasının infazına bağlıdır.",
+      "articleRefs": [
+        "53"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Kasten işlenen suçtan hapis cezasına mahkûmiyetin kanuni sonucu olarak kişi, hangi tüzel kişiliklerin yöneticisi veya denetçisi olmaktan yoksun bırakılır?",
+      "back": "Vakıf, dernek, sendika, şirket, kooperatif ve siyasi parti tüzel kişiliklerinin.",
+      "explanation": "Yoksunluk bu tüzel kişiliklerde yönetici veya denetçi olmaya ilişkindir. Aynı fıkrada başka yoksunluklar da sayılır: kamu görevinin üstlenilmesi, seçme ve seçilme ehliyeti, velayet hakkı ile vesayet veya kayyımlığa ait hizmet, izne tabi meslek veya sanatı kendi sorumluluğu altında serbest meslek erbabı veya tacir olarak icra etme.",
+      "articleRefs": [
+        "53"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Hapis cezası ertelenen hükümlü, kendi altsoyu üzerindeki velayet yetkisinden de yoksun kalır mı?",
+      "back": "Hayır. Cezası ertelenen, denetimli serbestlik tedbiri uygulanarak infaz edilen ya da koşullu salıverilen hükümlünün kendi altsoyu üzerindeki velayet, vesayet ve kayyımlık yetkileri için yoksunluk uygulanmaz.",
+      "explanation": "Aynı hükümlüler için birinci fıkranın (e) bendindeki yoksunluğun uygulanmamasına da karar verilebilir. Bu bent, izne tabi meslek veya sanatı serbest meslek erbabı veya tacir olarak icra etmeyi düzenler.",
+      "articleRefs": [
+        "53"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Fiili işlediği sırada kaç yaşını doldurmamış olan kişi hakkında hem md 53/1'deki hak yoksunluğu hem de tekerrür hükümleri uygulanmaz?",
+      "back": "Onsekiz yaşını doldurmamış olan kişi hakkında. Yaş, fiilin işlendiği sıraya göre belirlenir.",
+      "explanation": "md 53'e göre birinci fıkra, kısa süreli hapis cezası ertelenmiş kişiler hakkında da uygulanmaz. md 58'e göre bu yaştaki kişilerin işlediği suçlar dolayısıyla tekerrür hükümleri uygulanmaz.",
+      "articleRefs": [
+        "53",
+        "58"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "md 53/1'deki hak ve yetkilerden birini kötüye kullanarak işlediği suçtan hapis cezasına mahkûm olan kişiye, o hakkın kullanılması ne kadar süreyle yasaklanır?",
+      "back": "Hükmolunan cezanın yarısından bir katına kadar. Yasak, cezanın infazından sonra işlemek üzere verilir.",
+      "explanation": "Bu yasağa, mahkûmiyetin kanuni sonucu olan yoksunluğa ek olarak ayrıca karar verilir.",
+      "articleRefs": [
+        "53"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Hak ve yetkinin kötüye kullanılmasıyla işlenen suçtan yalnız adlî para cezasına mahkûmiyette yasak süresi nasıl belirlenir?",
+      "back": "Hükümde belirtilen gün sayısının yarısından bir katına kadar. Süre, adlî para cezasının tamamen infazından itibaren işler.",
+      "explanation": "Hapis cezasında ölçü hükmolunan cezadır. Yalnız adlî para cezasında ise ölçü, hükümde belirtilen gün sayısıdır. Yasaklama, hükmün kesinleşmesiyle icraya konur.",
+      "articleRefs": [
+        "53"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "md 53'e göre, trafik düzeninin gerektirdiği dikkat ve özen yükümlülüğüne aykırılıkla işlenen taksirli suçtan mahkûmiyette sürücü belgesi hangi süre aralığında geri alınabilir?",
+      "back": "Üç aydan az ve üç yıldan fazla olmamak üzere; yani üç ay ile üç yıl arasında.",
+      "explanation": "Aynı aralık, meslek veya sanatın gerektirdiği dikkat ve özen yükümlülüğüne aykırılıkla işlenen taksirli suçlarda meslek veya sanatın icrasının yasaklanması için de geçerlidir. Geri alma hükmün kesinleşmesiyle yürürlüğe girer; süre, cezanın tümüyle infazından itibaren işler.",
+      "articleRefs": [
+        "53"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Trafik düzenine aykırılıkla taksirli suç işleyen sürücünün kullandığı aracın, md 54/1 uyarınca suçta kullanılan eşya olarak müsaderesine hükmolunur mu?",
+      "back": "Hayır. md 54/1, kasıtlı bir suçun işlenmesinde kullanılan eşyanın müsaderesini öngörür. Bu taksirli suçta ise sürücü belgesinin geri alınmasına karar verilebilir.",
+      "explanation": "md 54/1'deki müsadere, iyiniyetli üçüncü kişilere ait olmamak koşuluyla kasıtlı bir suçun işlenmesinde kullanılan, suçun işlenmesine tahsis edilen ya da suçtan meydana gelen eşyaya ilişkindir. md 53/6'ya göre trafik düzeninin gerektirdiği dikkat ve özen yükümlülüğüne aykırılıkla işlenen taksirli suçtan mahkûmiyette sürücü belgesinin geri alınmasına karar verilebilir.",
+      "articleRefs": [
+        "53",
+        "54"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Suçun işlenmesinde kullanılmak üzere hazırlanan eşya her durumda müsadere edilir mi?",
+      "back": "Hayır. Kamu güvenliği, kamu sağlığı veya genel ahlak açısından tehlikeli olması durumunda müsadere edilir.",
+      "explanation": "Kasıtlı suçun işlenmesinde kullanılan, suça tahsis edilen ya da suçtan meydana gelen eşyada ise ölçü farklıdır: eşyanın iyiniyetli üçüncü kişilere ait olmaması gerekir.",
+      "articleRefs": [
+        "54"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Birden fazla kişinin paydaş olduğu eşyada kimin payının müsaderesine hükmolunur?",
+      "back": "Yalnız suça iştirak eden kişinin payının.",
+      "explanation": "Paylı eşyada müsadere, suça iştirak eden paydaşın payıyla sınırlı kalır.",
+      "articleRefs": [
+        "54"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Eşya üzerinde iyiniyetli üçüncü kişiler lehine tesis edilmiş sınırlı ayni hak varsa müsadere kararı nasıl verilir?",
+      "back": "Bu hak saklı kalmak şartıyla verilir.",
+      "explanation": "Müsadere eşyaya hükmolunur, ancak iyiniyetli üçüncü kişinin eşya üzerindeki sınırlı ayni hakkı korunur.",
+      "articleRefs": [
+        "54"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Suçta kullanılan eşyanın müsaderesinin işlenen suça nazaran daha ağır sonuçlar doğuracağı ve hakkaniyete aykırı olacağı anlaşılırsa ne olur?",
+      "back": "Müsaderesine hükmedilmeyebilir.",
+      "explanation": "Bu imkân suçta kullanılan eşya içindir; iyiniyetli üçüncü kişilere ait olmamak koşuluyla, kasıtlı suçta kullanılan, suça tahsis edilen ya da suçtan meydana gelen eşyanın müsaderesi kuraldır.",
+      "articleRefs": [
+        "54"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Müsaderesi gereken eşya elden çıkarılmış ya da tüketilmişse neyin müsaderesine karar verilir?",
+      "back": "Bu eşyanın değeri kadar para tutarının.",
+      "explanation": "Aynı sonuç, eşyanın ortadan kaldırılması veya müsaderesinin başka bir surette imkânsız kılınması hâlinde de doğar.",
+      "articleRefs": [
+        "54"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Üretimi, bulundurulması, kullanılması, taşınması, alım ve satımı suç oluşturan eşya hakkında ne yapılır?",
+      "back": "Müsadere edilir.",
+      "explanation": "Kamu güvenliği, kamu sağlığı veya genel ahlak açısından tehlikelilik ölçüsü, aynı maddede yalnız suçun işlenmesinde kullanılmak üzere hazırlanan eşya için konmuştur.",
+      "articleRefs": [
+        "54"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Kazanç müsaderesine konu olan değerler nelerdir?",
+      "back": "Suçun işlenmesi ile elde edilen, suçun konusunu oluşturan ya da suçun işlenmesi için sağlanan maddi menfaatler ile bunların değerlendirilmesi veya dönüştürülmesi sonucu ortaya çıkan ekonomik kazançlar.",
+      "explanation": "Müsadere konusu eşya veya maddi menfaatlere elkonulamaz ya da bunlar merciine teslim edilmezse, bunların karşılığını oluşturan değerlerin müsaderesine hükmedilir.",
+      "articleRefs": [
+        "55"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Kazanç müsaderesi kararı verilebilmesi için maddi menfaatle ilgili hangi şart aranır?",
+      "back": "Maddi menfaatin suçun mağduruna iade edilememesi gerekir.",
+      "explanation": "Menfaat mağdura iade edilebiliyorsa, birinci fıkraya göre kazanç müsaderesi kararı verilemez.",
+      "articleRefs": [
+        "55"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Kazanç müsaderesi kapsamındaki eşyayı sonradan iktisap eden kişi varsa, müsadere için hangi şart aranır?",
+      "back": "Bu kişinin, Türk Medenî Kanununun iyiniyetin korunmasına ilişkin hükümlerinden yararlanamıyor olması gerekir.",
+      "explanation": "Sonradan iktisap eden kişi iyiniyet korumasından yararlanıyorsa, eşya bu madde uyarınca müsadere edilemez.",
+      "articleRefs": [
+        "55"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "md 32/1 uyarınca güvenlik tedbirine hükmedilen akıl hastası, ağırlaştırılmış müebbet veya müebbet hapis cezasını gerektiren suçlarda kurumda en az ne kadar kalır?",
+      "back": "Bir yıl; kurumda geçirilecek süre bundan az olamaz.",
+      "explanation": "Serbest bırakma, kurumun sağlık kurulunca düzenlenen raporda toplum açısından tehlikeliliğin ortadan kalktığının veya önemli ölçüde azaldığının belirtilmesi üzerine infaz hâkimi kararıyla olur. Bu asgari süre ayrıca aranır.",
+      "articleRefs": [
+        "57"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "md 32/1 uyarınca güvenlik tedbirine hükmedilen akıl hastası, üst sınırı on yıldan fazla hapis cezasını gerektiren suçlarda kurumda en az ne kadar kalır?",
+      "back": "Altı ay; kurumda geçirilecek süre bundan az olamaz.",
+      "explanation": "Fiili işlediği sırada akıl hastası olan kişi, koruma ve tedavi amaçlı güvenlik tedbiri olarak yüksek güvenlikli sağlık kurumunda koruma ve tedavi altına alınır.",
+      "articleRefs": [
+        "57"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Tedavi altına alınan alkol ya da uyuşturucu veya uyarıcı madde bağımlısının serbest bırakılmasına sağlık kurulu mu karar verir?",
+      "back": "Hayır. Yerleştirildiği kurumun sağlık kurulu rapor düzenler; serbest bırakma kararını bu rapor üzerine infaz hâkimi verir.",
+      "explanation": "Suç işleyen bağımlının, bağımlılara özgü sağlık kuruluşunda tedavi altına alınmasına güvenlik tedbiri olarak karar verilir. Tedavi, bağımlılıktan kurtulmasına kadar devam eder.",
+      "articleRefs": [
+        "57"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Tekerrür hükümlerinin uygulanması için önceki suçun cezasının infaz edilmiş olması gerekir mi?",
+      "back": "Hayır. Önceki suçtan verilen hüküm kesinleştikten sonra yeni suç işlenmesi gerekir; cezanın infaz edilmiş olması gerekmez. Maddedeki süre ve suç türü kayıtları ayrıca aranır.",
+      "explanation": "İnfaz tarihi, tekerrürün sona ereceği süreyi hesaplamada önem taşır: süreler, önceki cezanın infaz edildiği tarihten itibaren işler.",
+      "articleRefs": [
+        "58"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Önceki suçtan beş yıldan fazla hapis cezasına mahkûmiyette, cezanın infazından itibaren ne kadar süre geçtikten sonra işlenen suçlarda tekerrür hükümleri uygulanmaz?",
+      "back": "Beş yıl; süre, cezanın infaz edildiği tarihten itibaren işler.",
+      "explanation": "Süre, önceki cezanın infaz edildiği tarihte başlar. Hükmün kesinleşmesi ise tekerrürün doğması için aranan andır.",
+      "articleRefs": [
+        "58"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Tekerrür hâlinde, sonraki suçun kanun maddesinde hapis ile adlî para cezası seçimlik öngörülmüşse hangi cezaya hükmolunur?",
+      "back": "Hapis cezasına.",
+      "explanation": "Tekerrür hâlinde hükmolunan ceza, mükerrirlere özgü infaz rejimine göre çektirilir.",
+      "articleRefs": [
+        "58"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Daha önce kasıtlı suçtan mahkûm olan kişi, trafik düzeninin gerektirdiği dikkat ve özen yükümlülüğüne aykırılıkla taksirli suç işlerse tekerrür hükümleri uygulanır mı?",
+      "back": "Hayır. Kasıtlı suçlarla taksirli suçlar arasında tekerrür hükümleri uygulanmaz.",
+      "explanation": "Aynı kural, sırf askerî suçlarla diğer suçlar arasında da geçerlidir. Bu taksirli suçtan mahkûmiyette md 53/6'ya göre sürücü belgesinin geri alınmasına karar verilebilir.",
+      "articleRefs": [
+        "58",
+        "53"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Kasten işlediği suçtan dört yıl hapis cezasına mahkûm olan kişinin cezası infaz edildi. Tekerrür hükümleri, infazdan itibaren en fazla ne kadar süre içinde işlenen suçlarda uygulanır?",
+      "back": "Üç yıl; beş yıl veya daha az süreli hapis ya da adlî para cezasına mahkûmiyette süre budur.",
+      "explanation": "Bu süre geçtikten sonra işlenen suçlar dolayısıyla tekerrür hükümleri uygulanmaz. Süre, cezanın infaz edildiği tarihten itibaren işler.",
+      "articleRefs": [
+        "58"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Yabancı ülke mahkemesinden dolandırıcılık suçu nedeniyle verilen hüküm tekerrüre esas olur mu?",
+      "back": "Evet; kasten öldürme, kasten yaralama, yağma, dolandırıcılık, uyuşturucu veya uyarıcı madde imal ve ticareti ile parada veya kıymetli damgada sahtecilik suçlarında yabancı hükümler tekerrüre esas olur. Önceki hükmün kesinleşmesi ve süre kayıtları ayrıca aranır.",
+      "explanation": "Bu suçlar dışındaki suçlarda yabancı ülke mahkemelerinden verilen hükümler tekerrüre esas olmaz. Tekerrür için cezanın infaz edilmiş olması gerekmez.",
+      "articleRefs": [
+        "58"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Mükerrirlere özgü infaz rejimi ve cezanın infazından sonra denetimli serbestlik tedbiri, mükerrirden başka kimler hakkında da uygulanır?",
+      "back": "İtiyadi suçlu, suçu meslek edinen kişi veya örgüt mensubu suçlu hakkında.",
+      "explanation": "Mükerrir hakkında da cezanın infazından sonra denetimli serbestlik tedbiri uygulanır. Bu tedbir ve mükerrirlere özgü infaz rejimi, mahkûmiyet kararında belirtilir.",
+      "articleRefs": [
+        "58"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Hapis cezasına mahkûm edilen yabancının durumu, sınır dışı işlemleri bakımından değerlendirilmek üzere hangi kuruma bildirilir?",
+      "back": "İçişleri Bakanlığına; bildirim derhal yapılır.",
+      "explanation": "Bildirim, denetimli serbestlik tedbiri uygulanarak cezanın infazına veya koşullu salıverilmeye karar verildikten ve her hâlde cezanın infazı tamamlandıktan sonra yapılır.",
+      "articleRefs": [
+        "59"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Kamu kurumunun verdiği izne dayalı faaliyette bulunan özel hukuk tüzel kişisi hakkında, hangi suçlardan mahkûmiyette iznin iptaline karar verilir?",
+      "back": "Organ veya temsilcilerinin iştirakiyle, iznin verdiği yetkinin kötüye kullanılması suretiyle tüzel kişi yararına işlenen kasıtlı suçlardan mahkûmiyette.",
+      "explanation": "Bu madde hükümleri, kanunun ayrıca belirttiği hallerde uygulanır.",
+      "articleRefs": [
+        "60"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Müsadere hükümleri hangi suçlarda özel hukuk tüzel kişileri hakkında da uygulanır?",
+      "back": "Tüzel kişi yararına işlenen suçlarda; bu madde hükümleri kanunun ayrıca belirttiği hallerde uygulanır.",
+      "explanation": "İznin iptali ve müsadere, işlenen fiile nazaran daha ağır sonuçlar ortaya çıkarabilecekse hakim bu tedbirlere hükmetmeyebilir.",
+      "articleRefs": [
+        "60"
+      ]
+    }
+  ]
+}

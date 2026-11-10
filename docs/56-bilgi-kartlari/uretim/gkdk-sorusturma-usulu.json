@@ -1,0 +1,243 @@
+{
+  "deck": {
+    "topicId": "a9e2a110-a63e-4cfa-91f2-25c187d0c3e6",
+    "legislationSlug": "7068-sayili-genel-kolluk-disiplin-hukumleri-kanunu",
+    "unitSlug": "gkdk-sorusturma-usulu",
+    "sourceLabel": "AI bilgi kartı — 7068 Sayılı Genel Kolluk Disiplin Hükümleri Kanunu md 27–37, 39, Geçici 1, Geçici 2",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: gkdk-sorusturma-usulu özeti + resmî madde metni); denetim düzeltmesi 7 Kas 2026 (2 kart); 7 Kas 2026 kullanıcı kararı: Jandarma/Sahil Güvenlik kartları çıkarıldı (3), ibareler düşürüldü (2)"
+  },
+  "cards": [
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Soruşturma tamamlandığında disiplin kurulu hangi kararları verebilir?",
+      "back": "Disiplin cezası verilmesine yer olmadığına, karar verilmesine yer olmadığına, disiplin cezası verilmesine ya da kurulun yetkisizliğine karar verebilir.",
+      "explanation": "Hangi kararı verirse versin, disiplin kurulu kararını gerekçeli olarak yazar.",
+      "articleRefs": [
+        "27"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Soruşturmada fiilin, disiplin kurulunun görev alanına giren başka bir disiplinsizlik olduğu anlaşılırsa kurul ne yapar?",
+      "back": "O disiplinsizliğe uygun olan disiplin cezasını tayin eder.",
+      "explanation": "Şart, ortaya çıkan disiplinsizliğin de disiplin kurulunun görev alanına girmesidir. Bu durumda ceza o disiplinsizliğe uygun olarak belirlenir.",
+      "articleRefs": [
+        "27"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Disiplin kurulu kararını yalnız kurul başkanı imzalayabilir mi?",
+      "back": "Hayır. Karar, başkan ve üyeler tarafından imzalanır ve ilgililere tebliğ edilir.",
+      "explanation": "Kurul kararları gerekçeli yazılır. Ceza verilmişse gerekçede disiplinsizlik unsurları ile ceza miktarının tayininde esas alınan hususlar gösterilir.",
+      "articleRefs": [
+        "27"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Disiplin soruşturması nedeniyle görevden uzaklaştırmada hangi kanunun hükümleri uygulanır?",
+      "back": "657 sayılı Kanun hükümleri uygulanır.",
+      "explanation": "Disiplin kurulunca çıkarma cezası verilen ve görevi başında kalmasında sakınca görülen personelin uzaklaştırılması da bu kapsamda yapılır.",
+      "articleRefs": [
+        "28"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Disiplin kurulu meslekten çıkarma cezası verince personel kendiliğinden görevden uzaklaştırılmış sayılır mı?",
+      "back": "Hayır. Görevi başında kalmasında sakınca görülenler, kararın onaylanarak uygulanmasına kadar görevden uzaklaştırılabilir.",
+      "explanation": "Aynı imkân, Devlet memurluğundan çıkarma cezası verilenler için de vardır. Ölçüt, personelin görevi başında kalmasında sakınca görülmesidir.",
+      "articleRefs": [
+        "28"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Meslekten çıkarma cezası onay aşamasında daha hafif bir cezaya indirilirse görevden uzaklaştırma önlemine ne olur?",
+      "back": "Görevden uzaklaştırma önlemi derhal kaldırılır.",
+      "explanation": "Uzaklaştırma, en fazla kararın onaylanarak uygulanmasına kadar sürebilen bir önlemdir. Meslekten çıkarma onayda hafifletilirse bu an beklenmez.",
+      "articleRefs": [
+        "28"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Meslekten çıkarma cezasını gerektiren bir fiilde disiplin soruşturmasına ne kadar sürede başlanmazsa ceza verme yetkisi zamanaşımına uğrar?",
+      "back": "Altı ay. Süre, fiilin işlendiğinin disiplin amiri tarafından öğrenildiği tarihten başlar.",
+      "explanation": "Devlet memurluğundan çıkarmada da süre altı aydır. Uyarma, kınama, aylıktan kesme ile kısa ve uzun süreli durdurma cezalarında soruşturmaya başlama süresi bir aydır.",
+      "articleRefs": [
+        "29"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Fiilin işlendiği tarihten itibaren ne kadar süre içinde disiplin cezası verilmezse ceza verme yetkisi zamanaşımına uğrar?",
+      "back": "İki yıl. Bu süre, fiilin öğrenildiği tarihe değil işlendiği tarihe bağlıdır.",
+      "explanation": "Başlangıç anı suçun türüne göre belirlenir. Tamamlanmış suçlarda suçun işlendiği tarih, kesintisiz suçlarda kesintinin gerçekleştiği tarih, zincirleme suçlarda son suçun işlendiği tarih esas alınır.",
+      "articleRefs": [
+        "29"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Disiplin cezası, fiilin hatalı olarak vasıflandırılması gerekçesiyle mahkemece iptal edilirse yeniden değerlendirme ne kadar sürede yapılır?",
+      "back": "Altı ay içinde; süre kararın tebliğinden başlar. Değerlendirmeyi kararın kesinleştiği tarihteki yetkili disiplin kurulu veya disiplin amiri yapar.",
+      "explanation": "Yeniden değerlendirmeyi gerektiren iptal gerekçeleri iki tanedir: fiilin hatalı olarak vasıflandırılması ya da düzeltilebilir bir şekil noksanlığı bulunması. Değerlendirme, ceza verme yetki ve sorumluluğu kapsamında yapılır.",
+      "articleRefs": [
+        "29"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Disiplin amirinin verdiği cezaya karşı ne kadar sürede itiraz edebilirsin?",
+      "back": "On gün içinde; süre cezanın tebliğinden başlar. İtiraz kural olarak bir üst disiplin amirine yazılı yapılır.",
+      "explanation": "Süresi içinde itiraz edilmeyen cezalar kesinleşir.",
+      "articleRefs": [
+        "30"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Valinin doğrudan verdiği disiplin cezasına itiraz bir üst disiplin amirine mi yapılır?",
+      "back": "Hayır. Valinin doğrudan verdiği cezaya Bakanlık Yüksek Disiplin Kuruluna itiraz edilir; Kurulun bu itiraz üzerine verdiği karar kesindir.",
+      "explanation": "Emniyet Genel Müdürünün doğrudan verdiği cezalarda da itiraz mercii aynı kuruldur. Kaymakamın doğrudan verdiği cezalara ise valiye itiraz edilir.",
+      "articleRefs": [
+        "30"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Disiplin cezasına yapılan itiraz, yetkili merci tarafından ne kadar sürede karara bağlanır?",
+      "back": "Otuz gün içinde karara bağlanır.",
+      "explanation": "İtirazı haklı bulan merci cezayı hafifletebilir ya da tamamen kaldırabilir; haklı bulmazsa itirazı reddeder. İtiraz üzerine önceki cezadan daha ağır ceza verilemez. Karar, itiraz edene tebliğ edilerek kesinleşir.",
+      "articleRefs": [
+        "30"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Disiplin soruşturmasında savunman için sana verilecek süre en az ne kadardır?",
+      "back": "Yedi gün. Savunma için verilen süre yedi günden az olamaz.",
+      "explanation": "Süresi içinde savunmasını yapmayan personel, savunma hakkından vazgeçmiş sayılır. Savunmayı disiplin amiri ister. Kurul söz konusuysa yetkili disiplin kurulu başkanı ya da başkanın görevlendireceği kurul üyelerinden biri ister.",
+      "articleRefs": [
+        "31"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Hakkında disiplin soruşturması yapılan personel, soruşturma evrakını hangi andan itibaren inceleyebilir?",
+      "back": "Kendisinden savunma istenmesinden itibaren inceleyebilir.",
+      "explanation": "Disiplin amirleri ya da disiplin kurulları savunma almadan disiplin cezası veremez. Evrak inceleme hakkı da savunmanın istendiği andan itibaren kullanılabilir.",
+      "articleRefs": [
+        "31"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Tanık dinletme hakkı, hakkında disiplin soruşturması yapılan her personele tanınır mı?",
+      "back": "Hayır. Bu Kanun tanık dinletme hakkını açıkça, hakkında meslekten çıkarma ya da Devlet memurluğundan çıkarma cezası istenen personele tanır.",
+      "explanation": "Bu personel, disiplin kurulunda sözlü ya da yazılı olarak, kendisi veya vekili vasıtasıyla savunma da yapabilir.",
+      "articleRefs": [
+        "31"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Bakanın ya da disiplin kurulunun verdiği disiplin cezasına karşı hangi yola başvurabilirsin?",
+      "back": "Ancak idari yargı yoluna başvurabilirsin; kesinleşen disiplin cezalarına karşı iptal davası açılabilir.",
+      "explanation": "Disiplin amirlerinin verdiği cezalara karşı ise tebliğden itibaren itiraz yolu vardır.",
+      "articleRefs": [
+        "32",
+        "30"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Kesinleşen disiplin cezasına karşı dava açma süresi kural olarak hangi andan başlar?",
+      "back": "Kesinleşen cezanın personele tebliğinden itibaren başlar.",
+      "articleRefs": [
+        "32"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Disiplin cezaları kural olarak hangi andan sonra yerine getirilir?",
+      "back": "Kesinleşmesini müteakip yerine getirilir.",
+      "articleRefs": [
+        "33"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Aylıktan kesme cezası, kesinleştiği gün hemen uygulanır mı?",
+      "back": "Hayır. Aylıktan kesme, kesinleşme tarihini takip eden aybaşında uygulanır.",
+      "explanation": "Disiplin cezaları kesinleşmesini müteakip yerine getirilir; aylıktan kesmede uygulama, kesinleşmeyi takip eden aybaşına bırakılır.",
+      "articleRefs": [
+        "33"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Genel Kolluk Disiplin Hükümleri Hakkında Kanunda hüküm bulunmayan hâllerde hangi hükümler uygulanır?",
+      "back": "657 sayılı Kanunun disipline ilişkin hükümleri uygulanır.",
+      "articleRefs": [
+        "34"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "657 sayılı Kanundaki kademe ilerlemesinin durdurulması cezası, Genel Kolluk Disiplin Hükümleri Hakkında Kanundaki hangi ceza gibi telakki edilir?",
+      "back": "Uzun süreli durdurma cezası gibi telakki edilir ve uygulanır.",
+      "articleRefs": [
+        "34"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Disiplin kurullarının toplanma, görüşme ve karar vermesine ilişkin usul ve esaslar hangi düzenlemeyle belirlenir?",
+      "back": "Bakanlık tarafından yürürlüğe konulan yönetmelikle belirlenir.",
+      "explanation": "Kanunun uygulanmasına ilişkin diğer hususlar da aynı yönetmelikle düzenlenir.",
+      "articleRefs": [
+        "35"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Genel Kolluk Disiplin Hükümleri Hakkında Kanun yürürlüğe girmeden önce verilmiş ve infaz edilmiş disiplin cezalarına bağlı olarak yapılan idari işlemlere ne olur?",
+      "back": "Aynen muhafaza olunur.",
+      "explanation": "Bu cezalar disiplin amirleri ya da disiplin kurulları tarafından verilmiş ve infaz edilmiş olmalıdır.",
+      "articleRefs": [
+        "Geçici 1"
+      ]
+    }
+  ]
+}

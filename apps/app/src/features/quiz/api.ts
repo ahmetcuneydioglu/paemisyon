@@ -1,3 +1,4 @@
+import type { ReviewPrompt } from "@/features/review-prompt/api";
 import { api } from "@/lib/api";
 import type { HomeSource } from "@/features/home/queries";
 
@@ -99,6 +100,8 @@ export interface SessionResult {
   plannedDurationSeconds: number | null;
   topicBreakdown: { topicId: string; topicName: string; correct: number; total: number }[] | null;
   earnedBadges?: { key: string; name: string }[];
+  /** Mağaza değerlendirme alt sayfası (Doc 57); sunucu karar verir, eski sunucuda yok. */
+  reviewPrompt?: ReviewPrompt | null;
 }
 
 /** Cevapları incele (Doc 49/18 §8): bitmiş turun soruları; çözülen sürüm, işaretlenen ve doğru şık. */

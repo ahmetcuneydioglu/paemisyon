@@ -1,0 +1,236 @@
+{
+  "deck": {
+    "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+    "legislationSlug": "turk-ceza-kanunu",
+    "sourceLabel": "AI bilgi kartı — Türk Ceza Kanunu md 235–246",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: resmî madde metni + çıkmış sorular; stil kapısı 1 açıklama yeniden yazıldı); denetim düzeltmesi 6 Kas 2026 (2 kart + md 245/A kartı eklendi)"
+  },
+  "cards": [
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "İhaleye fesat karıştırma suçunun temel cezası nedir?",
+      "back": "Üç yıldan yedi yıla kadar hapis cezası.",
+      "explanation": "Cezayı değiştiren iki hâl var. Suç cebir veya tehdit kullanılarak işlenirse temel cezanın alt sınırı beş yıldan az olamaz. Suç sonucunda ilgili kamu kurumu veya kuruluşu açısından bir zarar meydana gelmemişse fail hakkında bir yıldan üç yıla kadar hapis cezasına hükmolunur. Bu indirimli ceza, cebir veya tehdit kullanılarak işlenen hâllerde uygulanmaz.",
+      "articleRefs": [
+        "235"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "İhaleye fesat karıştırma cebir veya tehdit kullanılarak işlenirse temel cezanın alt sınırı ne olur?",
+      "back": "Beş yıldan az olamaz.",
+      "explanation": "Kasten yaralama veya tehdit suçunun daha ağır cezayı gerektiren nitelikli hâlleri gerçekleşirse bu suçlar dolayısıyla ayrıca cezaya hükmolunur. İlgili kamu kurumu açısından zarar meydana gelmemesi hâlinde verilen bir yıldan üç yıla kadar hapis cezası, cebir veya tehdit hâlinde uygulanmaz.",
+      "articleRefs": [
+        "235"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Edimin ifasına fesat karıştırma yalnız kamu kurum veya kuruluşlarına karşı taahhüt edilen edimlerde mi oluşur?",
+      "back": "Hayır. Kamu kurumu niteliğindeki meslek kuruluşları, bunların iştirakiyle kurulmuş şirketler, bünyelerindeki vakıflar, kamu yararına çalışan dernekler ya da kooperatiflere karşı edimler de kapsamdadır.",
+      "explanation": "Ceza üç yıldan yedi yıla kadar hapistir. Sayılan fiillerin hileli olarak yapılması gerekir. Menfaat temin eden görevli kişiler ayrıca ilgili suç hükmüne göre cezalandırılır.",
+      "articleRefs": [
+        "236"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "İhale kararında veya sözleşmede belirtilen miktardan eksik malın hileli olarak teslim veya kabul edilmesi hangi suçu oluşturur?",
+      "back": "Edimin ifasına fesat karıştırma; ceza üç yıldan yedi yıla kadar hapistir.",
+      "explanation": "Aynı fıkrada şunlar da sayılır: evsafı belirtilen maldan başka bir malın teslim veya kabulü; sürede ifa edilmeyen edimin süresinde ifa edilmiş gibi kabulü; yapım ihalelerinde eserin veya kullanılan malzemenin şartname veya sözleşmede belirlenen şartlara, miktar veya niteliklere uygun olmamasına rağmen kabulü; hizmet niteliğindeki edimin şartlara göre verilmemesine veya eksik verilmesine rağmen verilmiş gibi kabulü.",
+      "articleRefs": [
+        "236"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Fiyatları etkileme suçu için malların değerlerinin fiilen artıp eksilmesi gerekir mi?",
+      "back": "Hayır. Artıp eksilme sonucunu doğurabilecek şekilde ve bu maksatla yalan haber yaymak ya da hileli yollara başvurmak yeterlidir. Değerler fiilen artıp eksilirse ceza yarısı oranında artırılır.",
+      "explanation": "Temel ceza bir yıldan üç yıla kadar hapis ve adlî para cezasıdır. İşçi ücretleri ile besin değerlerinin artıp eksilmesi de aynı kurala tabidir.",
+      "articleRefs": [
+        "237"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Fiyatları etkileme suçunun faili ruhsatlı simsar veya borsa tellalıysa ceza ne kadar artırılır?",
+      "back": "Ayrıca yarısı oranında artırılır.",
+      "explanation": "Bu artırım failin sıfatına bağlıdır ve temel cezaya da uygulanır; fiil sonucu besin veya malların değerleri ya da işçi ücretleri artıp eksildiyse uygulanan yarısı oranındaki artırımdan ayrıdır.",
+      "articleRefs": [
+        "237"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Kamuya gerekli şeylerin yokluğuna neden olma suçu hangi davranışla işlenir?",
+      "back": "Taahhüt ettiği işi yerine getirmeyerek zorunlu eşya veya besinlerin ortadan kalkmasına ya da önemli ölçüde azalmasına neden olmakla.",
+      "explanation": "Eşya veya besinler kamu kurum ve kuruluşları, kamu hizmeti ya da genel bir felaketin önlenmesi için zorunlu olmalıdır. Ceza bir yıldan üç yıla kadar hapis ve bin güne kadar adlî para cezasıdır.",
+      "articleRefs": [
+        "238"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Ticari sır, bankacılık sırrı veya müşteri sırrını yetkisiz kişilere vermek şikayet aranmadan kovuşturulur mu?",
+      "back": "Hayır. Bu suç şikayet üzerine kovuşturulur. Sır Türkiye'de oturmayan bir yabancıya veya onun memurlarına açıklanırsa şikayet koşulu aranmaz.",
+      "explanation": "Temel ceza bir yıldan üç yıla kadar hapis ve beşbin güne kadar adlî para cezasıdır. Sıfat veya görevi, meslek veya sanatı gereği sırra vakıf olan kişi cezalandırılır. Bu bilgi veya belgeleri hukuka aykırı yolla elde edip veren veya ifşa eden kişi de aynı fıkraya göre cezalandırılır.",
+      "articleRefs": [
+        "239"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Ticari sır Türkiye'de oturmayan bir yabancıya açıklanırsa faile verilecek ceza ne kadar artırılır?",
+      "back": "Üçte biri oranında artırılır.",
+      "explanation": "Artırım, sırrın yabancının memurlarına açıklanmasında da uygulanır. Bu hâlde şikayet koşulu aranmaz.",
+      "articleRefs": [
+        "239"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Mal veya hizmet satımından kaçınma suçunun oluşması için kaçınma hangi sonuca yol açmalıdır?",
+      "back": "Kamu için acil bir ihtiyacın ortaya çıkmasına.",
+      "explanation": "Kaçınma belli bir mal veya hizmeti satmakla ilgilidir. Ceza bir yıldan üç yıla kadar hapis cezasıdır.",
+      "articleRefs": [
+        "240"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Tefecilik suçunda kim cezalandırılır?",
+      "back": "Kazanç elde etmek amacıyla başkasına ödünç para veren kişi.",
+      "explanation": "Ödünç verilen şey paradır ve fail kazanç elde etmek amacıyla hareket eder.",
+      "articleRefs": [
+        "241"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Tefecilik bir örgütün faaliyeti çerçevesinde işlenirse ceza ne kadar artırılır?",
+      "back": "Bir kat artırılır.",
+      "explanation": "Temel ceza iki yıldan altı yıla kadar hapis ve beşyüz günden beşbin güne kadar adlî para cezasıdır.",
+      "articleRefs": [
+        "241"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Tefecilik, ihaleye fesat karıştırma ya da bilişim suçlarının işlenmesiyle yararına haksız menfaat sağlanan tüzel kişiler hakkında ne hükmolunur?",
+      "back": "Bunlara özgü güvenlik tedbirlerine hükmolunur.",
+      "explanation": "Tedbir, suçun işlenmesi suretiyle yararına haksız menfaat sağlanan tüzel kişiye uygulanır.",
+      "articleRefs": [
+        "242",
+        "246"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Bilişim sistemine girme suçu için hem sisteme girmek hem de orada kalmaya devam etmek gerekir mi?",
+      "back": "Hayır. Sistemin bütününe veya bir kısmına hukuka aykırı olarak giren ya da orada kalmaya devam eden kimse cezalandırılır. Hareketlerden biri yeterlidir.",
+      "explanation": "Ceza bir yıla kadar hapis veya adlî para cezasıdır. Fiil bedeli karşılığı yararlanılabilen sistemler hakkında işlenirse ceza yarı oranına kadar indirilir.",
+      "articleRefs": [
+        "243"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Bilişim sistemine girme fiili nedeniyle sistemdeki veriler yok olur veya değişirse hangi ceza verilir?",
+      "back": "Altı aydan iki yıla kadar hapis cezası.",
+      "explanation": "Bu ceza, girme veya sistemde kalma fiilinin sonucu olarak sistemin içerdiği verilerin yok olması ya da değişmesi hâlinde uygulanır.",
+      "articleRefs": [
+        "243"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Sisteme girmeden, bilişim sistemleri arasındaki veri nakillerini teknik araçlarla hukuka aykırı olarak izlemek suç oluşturur mu?",
+      "back": "Evet. Bu fiil bir yıldan üç yıla kadar hapis cezası gerektirir.",
+      "explanation": "Hüküm, bir bilişim sisteminin kendi içinde gerçekleşen veri nakillerini izlemeyi de kapsar.",
+      "articleRefs": [
+        "243"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Bir bilişim sisteminin işleyişini engelleyen veya bozan kişiye hangi ceza verilir?",
+      "back": "Bir yıldan beş yıla kadar hapis cezası.",
+      "explanation": "Fiil bir banka veya kredi kurumuna ya da bir kamu kurum veya kuruluşuna ait sistem üzerinde işlenirse ceza yarı oranında artırılır.",
+      "articleRefs": [
+        "244"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Bilişim sistemindeki verilere zarar verme suçu hangi hareketlerle işlenir?",
+      "back": "Verileri bozmak, yok etmek, değiştirmek veya erişilmez kılmak, sisteme veri yerleştirmek ya da var olan verileri başka bir yere göndermekle.",
+      "explanation": "Ceza altı aydan üç yıla kadar hapis cezasıdır. Banka, kredi kurumu ya da kamu kurum veya kuruluşuna ait sistemde işlenirse ceza yarı oranında artırılır. Bu fiillerle haksız çıkar sağlanması başka bir suç oluşturmuyorsa iki yıldan altı yıla kadar hapis ve beşbin güne kadar adlî para cezasına hükmolunur.",
+      "articleRefs": [
+        "244"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Başkasına ait banka kartını sahibinin rızası olmadan kullanarak kendine yarar sağlayan kişinin cezası nedir?",
+      "back": "Üç yıldan altı yıla kadar hapis ve beşbin güne kadar adlî para cezası.",
+      "explanation": "Kart her ne suretle olursa olsun ele geçirilmiş veya elde bulunduruluyor olabilir. Kart sahibinin ya da kartın verilmesi gereken kişinin rızası bulunmamalıdır. Fail kartı kullanarak veya kullandırtarak yarar sağlamalıdır.",
+      "articleRefs": [
+        "245"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Kardeşinin banka kartını rızası olmadan kullanarak yarar sağlayan kişi her durumda cezasız mı kalır?",
+      "back": "Hayır. Cezasızlık, aynı konutta beraber yaşayan kardeşlerden birinin zararına işlenen suç için öngörülmüştür.",
+      "explanation": "Haklarında ayrılık kararı verilmemiş eşlerden birinin zararına işlenirse de cezaya hükmolunmaz. Aynı kural üstsoy, altsoy, bu derecedeki kayın hısımları, evlat edinen ve evlâtlık için de geçerlidir. Kural birinci fıkradaki suça özgüdür.",
+      "articleRefs": [
+        "245"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Başkasının banka veya kredi kartını rızası olmadan kullanarak yarar sağlama fiillerinde hangi etkin pişmanlık hükümleri uygulanır?",
+      "back": "Türk Ceza Kanununun malvarlığına karşı suçlara ilişkin etkin pişmanlık hükümleri.",
+      "explanation": "Hüküm, birinci fıkra kapsamına giren fiiller için uygulanır.",
+      "articleRefs": [
+        "245"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Münhasıran bilişim suçlarının işlenmesi için yapılmış bir cihazı, programı, şifreyi veya güvenlik kodunu imal eden, satan ya da bulunduran kişinin cezası nedir?",
+      "back": "Bir yıldan üç yıla kadar hapis ve beşbin güne kadar adlî para cezası.",
+      "explanation": "Hüküm, bu bölümdeki suçlar ile bilişim sistemlerinin araç olarak kullanılması suretiyle işlenebilen diğer suçlar için yapılmış ya da oluşturulmuş cihaz, program, şifre veya güvenlik kodlarını kapsar; imal, ithal, sevk, nakil, depolama, kabul, satış, satışa arz, satın alma, başkasına verme ve bulundurma fiillerinin hepsi aynı cezayı gerektirir.",
+      "articleRefs": [
+        "245/A"
+      ]
+    }
+  ]
+}

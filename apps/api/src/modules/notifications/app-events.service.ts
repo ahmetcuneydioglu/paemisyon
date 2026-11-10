@@ -18,6 +18,7 @@ export const APP_EVENT_TYPES = [
   'user_registered',
   'onboarding_completed',
   'question_report_resolved',
+  'flashcard_report_resolved',
   'badge_unlocked',
   'leaderboard_overtaken',
   'past_exam_published',

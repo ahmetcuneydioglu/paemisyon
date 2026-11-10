@@ -1,0 +1,272 @@
+{
+  "deck": {
+    "topicId": "9c9b822c-028f-4d9b-929f-ad8487d53db4",
+    "legislationSlug": "3201-sayili-emniyet-teskilat-kanunu",
+    "unitSlug": "etk-performans-madalya-son-hukumler",
+    "sourceLabel": "AI bilgi kartı — 3201 Sayılı Emniyet Teşkilat Kanunu md 81, 82, 85–88, 90, 91, 93–98",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: etk-performans-madalya-son-hukumler özeti + resmî madde metni); denetim düzeltmesi 7 Kas 2026 (2 kart + #13, #25, #27 çıkarıldı: 1937 tahsisat/vekâlet düzeni, mülga md 89)"
+  },
+  "cards": [
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Memura isnat olunan fiil hem inzibati cezayı hem Türk Ceza Kanunu'na göre cezalandırmayı gerektiriyor. Deliller yetersiz ve mahkeme hükmünü beklemek zorunlu görülüyor. İnzibati cezanın uygulanması ne olur?",
+      "back": "Mahkeme kararının neticesine talik olunur. Yani disiplin tarafı, ceza mahkemesinin sonucunu bekler.",
+      "explanation": "Bu hüküm, inzibati ceza hakkında karar verebilmek için mevcut deliller kâfi görülmediğinde devreye girer. Mahkeme hükmüne intizar (bekleme) zarureti kanaati de hasıl olmalıdır.",
+      "articleRefs": [
+        "81"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Fiil hem inzibati cezayı hem Türk Ceza Kanunu'na göre cezalandırmayı gerektiriyorsa, inzibati cezanın tatbiki kendiliğinden mahkeme kararına bırakılır mı?",
+      "back": "Hayır. Ayrıca inzibati ceza için mevcut deliller kâfi görülmemeli ve mahkeme hükmünü beklemenin zorunlu olduğu kanaati oluşmalıdır.",
+      "explanation": "Talik için şu şartlar birlikte aranır: fiilin hem inzibati cezayı hem cezalandırmayı gerektirmesi, delillerin yetersiz görülmesi ve mahkeme hükmüne intizar zarureti kanaatinin hasıl olması.",
+      "articleRefs": [
+        "81"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Kısa veya uzun süreli durdurma cezası, ceza süresi içinde neye girmeyi de önler?",
+      "back": "Derece yükselmesi için açılan kurslara, yarışma sınavı veya seçmelerine girmeyi önler.",
+      "explanation": "Engel ceza süresi içinde geçerlidir. Madde bu sonucu derece yükselmesi kursları, yarışma sınavları ve seçmeler olarak sayar.",
+      "articleRefs": [
+        "82"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Derece yükselmesi kurslarına girme engeli yalnız uzun süreli durdurma cezasında mı doğar?",
+      "back": "Hayır. Kısa süreli durdurma cezası da aynı engeli doğurur. Engel, hem kısa hem uzun süreli cezada ceza süresi içinde geçerlidir.",
+      "explanation": "Madde 'kısa veya uzun süreli durdurma cezaları' der. Kısa ya da uzun olsun, her durdurma cezası ceza süresi içinde derece yükselmesi kurslarına, yarışma sınavı veya seçmelerine girmeyi önler.",
+      "articleRefs": [
+        "82"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Performans değerlendirme sonuçları, hizmet gerekleri yanında personelin hangi işlemlerinde kullanılabilir?",
+      "back": "Başarı, yeterlilik ve ehliyet tespitinde, performansının geliştirilmesinde, kıdem sırası tespitinde, rütbe terfiinde, görevde yükselmede, asli memurluğa atanmada, branş işlemlerinde, eğitim ihtiyacı belirlenmesi ve eğitiminde, ödüllendirmede, istihdamında ve görev yeri değişikliğinde.",
+      "explanation": "Madde 'kullanılabilir' der. Sonuçlar, Emniyet Genel Müdürlüğünün stratejik plan ve hedefleri doğrultusunda kurulan kurum içi bireysel performans değerlendirme sisteminden gelir.",
+      "articleRefs": [
+        "85"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Performansın iyileştirilmesi için gerekli tedbirleri görüşüp önerilerde bulunacak Performans Değerlendirme Kurulu nerede oluşturulur?",
+      "back": "Merkezde oluşturulur.",
+      "explanation": "Kurulun oluşumu ve çalışmasına ilişkin usul ve esaslar, İçişleri Bakanlığınca çıkarılan yönetmelikle düzenlenir.",
+      "articleRefs": [
+        "85"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Performans değerlendirmesi en az hangi sıklıkla yapılır?",
+      "back": "Yılda en az bir kez yapılır.",
+      "explanation": "Sıklık 'en az' kaydıyla belirlenmiştir. Bu nedenle yılda bir kezden fazla değerlendirme yapılmasına engel yoktur.",
+      "articleRefs": [
+        "85"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Performans değerlendirme sisteminin usul ve esasları ile madalya ve ödüllere ilişkin esaslar hangi makamın çıkardığı yönetmelikle belirlenir?",
+      "back": "İçişleri Bakanlığınca çıkarılan yönetmeliklerle belirlenir.",
+      "explanation": "Performans tarafında değerlendirme amirleri, Kurulun oluşumu ve itiraz başvurusunun yöntemi bu yönetmelikle düzenlenir. Madalya ve ödül tarafında ise teklif ve değerlendirme işlemleri, ödül verme yetkileri, ödülün cinsi ve miktarı bu yolla belirlenir.",
+      "articleRefs": [
+        "85",
+        "86"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Performans değerlendirme formundaki ölçütleri ve ihtiyaç duyulan bilgileri İçişleri Bakanlığı mı belirler?",
+      "back": "Hayır. Ölçütleri ve ihtiyaç duyulan bilgileri Emniyet Genel Müdürlüğü belirler. İçişleri Bakanlığı ise sistemin yönetmeliğini çıkarır.",
+      "explanation": "Maddede iş bölümü nettir. Usul ve esaslar Bakanlık yönetmeliğiyle düzenlenir, formun içeriği Emniyet Genel Müdürlüğünce belirlenir. Performans Değerlendirme Kurulunun görevi ise tedbirleri görüşüp önerilerde bulunmaktır.",
+      "articleRefs": [
+        "85"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Olağanüstü durumlarda yaşamını ortaya koyarak büyük yararlık gösteren emniyet mensubuna aylığının kaç katı para ödülü verilir?",
+      "back": "Fiilen almakta olduğu aylık tutarının altı katından yirmidört katına kadar.",
+      "explanation": "Ülkenin güvenlik ve esenliği, Devletin çıkarları ve kişilerin can, ırz ve mallarını korumada yüksek hizmeti görülenler için aralık iki katından beş katına kadardır. Bu para ödülleri 2330 sayılı Kanun hükümlerinden başka verilir.",
+      "articleRefs": [
+        "86"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Görevini cesaret, feragat, kahramanlık veya üstün başarı ile yerine getiren Emniyet Genel Müdürlüğü personeline hangi madalyalar verilebilir?",
+      "back": "Emniyet Üstün Cesaret ve Feragat Madalyası, Emniyet Şeref Madalyası ve Emniyet Üstün Hizmet Madalyası. Bunları İçişleri Bakanı verebilir.",
+      "explanation": "Madalyaların imalatı ve muhafazalarının temin giderleri, bir defaya mahsus olmak üzere bütçeden karşılanır.",
+      "articleRefs": [
+        "86"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Başka bir devletin tevcih ettiği madalyayı takabilmek için İçişleri Bakanının vermesi mi gerekir?",
+      "back": "Hayır; başka devletlerce tevcih edilen madalya ve nişanlar ile rozet ve minyatürleri, İçişleri Bakanlığınca tasvip ve tescil edildikten sonra takılabilir. İçişleri Bakanı Emniyet madalyalarını verir.",
+      "explanation": "Bu maddede yetki İçişleri tarafında toplanır: madalyayı İçişleri Bakanı verir, yabancı madalyayı da İçişleri Bakanlığı tasvip ve tescil eder.",
+      "articleRefs": [
+        "86"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Polis köpekleri ve muhabere kuşları için hangi masraflar Devlet tarafından verilir?",
+      "back": "Mübayaa (satın alma), tedavi ve iaşe masrafları. Diğer canlı ve cansız vasıtaların masrafları da Devletçe verilir.",
+      "explanation": "Hüküm bu giderleri, umumiyetle Devlet tarafından verilecek kalemler arasında sayar.",
+      "articleRefs": [
+        "87"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Kanuni evsafta hayvan tedarik eden polis ve komiserler ihtiyaç halinde hangi sınıfa nakledilir?",
+      "back": "Atlı polis sınıfına nakledilirler. Hayvan yem bedelleri Devletçe temin olunur.",
+      "articleRefs": [
+        "88"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Polis Bakım ve Yardım Sandığı, üyeleriyle arasındaki ilişkilerde hangi hukuk hükümlerine tabidir?",
+      "back": "Kamu hukuku hükümlerine tabidir. Diğer tüm iş ve işlemlerinde ise özel hukuk hükümlerine tabidir.",
+      "explanation": "Sandık, mali ve idari bakımdan özerk ve tüzel kişiliği haiz bir teşekküldür. Mevcutları ve alacakları, Devlet mallarına ait hak ve rüçhanları haizdir.",
+      "articleRefs": [
+        "90"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Polis Bakım ve Yardım Sandığı üyelik aidatı, esas alınan tutarın yüzde kaçıdır?",
+      "back": "Yüzde dokuz. Esas alınan tutar, emeklilik keseneğine esas aylık tutarı veya prime esas kazanç tutarıdır.",
+      "explanation": "Sandık Genel Kurulu oranı beş puana kadar artırıp azaltabilir. Bu yüzden aidat yüzde 4 ile yüzde 14 arasında olabilir.",
+      "articleRefs": [
+        "90"
+      ],
+      "derivedNumbers": [
+        {
+          "value": 4,
+          "expr": "9 - 5",
+          "refs": [
+            "90"
+          ],
+          "note": "oranın en çok beş puan azaltılmış hâli"
+        },
+        {
+          "value": 14,
+          "expr": "9 + 5",
+          "refs": [
+            "90"
+          ],
+          "note": "oranın en çok beş puan artırılmış hâli"
+        }
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Sandık üyelik aidatı oranını beş puana kadar artırma veya azaltma yetkisi Cumhurbaşkanında mıdır?",
+      "back": "Hayır. Aidat oranını beş puana kadar artırmaya veya azaltmaya Sandık Genel Kurulu yetkilidir.",
+      "explanation": "Cumhurbaşkanının bu maddedeki rolü yönetmelik çıkarmaktır. Sandığın organları, aidat, yardımlar gibi konulardaki usul ve esaslar bu yönetmelikle belirlenir.",
+      "articleRefs": [
+        "90"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Polis Bakım ve Yardım Sandığının organları, seçimleri ve yardımlarına ilişkin usul ve esaslar hangi makamın yönetmeliğiyle belirlenir?",
+      "back": "Cumhurbaşkanı tarafından çıkarılan yönetmelikle belirlenir.",
+      "explanation": "md 90'a göre Polis Bakım ve Yardım Sandığının organları, seçimleri ve yardımlarına ilişkin usul ve esaslar Cumhurbaşkanı tarafından çıkarılan yönetmelikle belirlenir.",
+      "articleRefs": [
+        "90"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Emniyet Teşkilatı kadrosunda hangi tarihten önce göreve başlamış olanlar, görevleri devam ediyorsa Sandığa üye olabilir?",
+      "back": "28/12/2018 tarihinden önce göreve başlamış olanlar.",
+      "explanation": "Daimi ortaklık ayrı bir kuraldır. İlgili ek fıkranın yürürlüğe girdiği tarihten sonra Emniyet Genel Müdürlüğü kadrosunda göreve başlayan memurlar, görevleri süresince Sandığın daimi ortağıdır.",
+      "articleRefs": [
+        "90"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Sandığa isteğe bağlı olarak üye olan Teşkilat mensubu, girişinden ne kadar süre geçtikten sonra nemalar dahil aidatlarını alarak ayrılabilir?",
+      "back": "Üç yıl geçtikten sonra. Ama üyelikten çıkan, bir daha Sandık üyeliğine kabul edilmez.",
+      "explanation": "Ayrılan üye, aidatlarını nemalarıyla birlikte alır. Dönüş yolu ise kapalıdır.",
+      "articleRefs": [
+        "90"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Sandığın emekli olan üyelerine maluliyet yardımı yapılır mı?",
+      "back": "Hayır. Emekli üyelere katılım payı kâr payı ve ölüm yardımı yapılır. Maluliyet yardımı, Teşkilat mensubu üyelere yapılır.",
+      "explanation": "Emniyet Teşkilatı mensubu üyelere veya ölümleri halinde mirasçılarına emeklilik yardımı, maluliyet yardımı ve ölüm yardımı yapılır. Ölüm yardımı hem mensup hem emekli üyeler için vardır.",
+      "articleRefs": [
+        "90"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Vasıtalı polis kısmına alınacaklar arasında kimler tercih edilir?",
+      "back": "Askerliğini vasıtalı sınıflarda ikmal etmiş (tamamlamış) olanlar tercih edilir.",
+      "articleRefs": [
+        "91"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Emniyet Teşkilat Kanununun tatbik şekilleri nasıl düzenlenir?",
+      "back": "Yönetmeliklerle düzenlenir. Kanunun tatbik şekilleri hakkında yönetmelikler yapılır.",
+      "articleRefs": [
+        "93"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Emniyet Teşkilat Kanunu hangi tarihten itibaren muteberdir?",
+      "back": "1 Ağustos 1937 tarihinden itibaren muteberdir.",
+      "articleRefs": [
+        "97"
+      ]
+    }
+  ]
+}

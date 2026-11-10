@@ -2,8 +2,8 @@ import { Stack, useLocalSearchParams, useRouter } from "expo-router";
 import { Bookmark, ExternalLink, NotebookPen, Search } from "lucide-react-native";
 import { useMemo, useState } from "react";
 import { FlatList, Linking, Pressable, TextInput, View } from "react-native";
-import { lawDisplayName, SummaryUnitRow } from "@/components/domain";
-import { AppText, Badge, Button, Chip, Notice, ProgressBar, Skeleton , SectionHeader } from "@/components/ui";
+import { lawDisplayName } from "@/components/domain";
+import { ListRow, AppText, Badge, Button, Chip, Notice, ProgressBar, Skeleton , SectionHeader } from "@/components/ui";
 import { TYPE_LABEL, useArticleAnnotations, useArticleBookmarks, useLawRead, useLegislation, useMevzuatMerkezi } from "@/features/mevzuat/queries";
 import { useTopicUnits } from "@/features/summaries/queries";
 import { useTheme } from "@/theme/ThemeProvider";
@@ -136,13 +136,7 @@ export default function MevzuatKanunScreen() {
 
               {units.data && units.data.length > 0 ? (
                 <View style={{ gap: space.s2 }}>
-                  <SectionHeader title={`Konu özetleri · ${units.data.length} ünite`} />
-                  <AppText variant="bodySm" tone="soft">
-                    Kanunu baştan sona okumak istemeyen için madde aralıklarına göre kısa üniteler; her kart maddeye bağlıdır.
-                  </AppText>
-                  {units.data.map((u) => (
-                    <SummaryUnitRow key={u.slug} unit={u} onPress={() => router.push({ pathname: "/ozet/[slug]", params: { slug: u.slug, title: u.title.split(" — ")[0] } })} />
-                  ))}
+                  <ListRow title="Ünite içerikleri" subtitle={`${units.data.length} ünite · Konu anlatımı ve hızlı tekrar`} onPress={() => router.push({ pathname: "/(tabs)/kutuphane/uniteler/[topicId]", params: { topicId: d.topicId!, name: d.name } })} />
                 </View>
               ) : null}
 

@@ -1,0 +1,297 @@
+{
+  "deck": {
+    "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+    "legislationSlug": "t-c-anayasasi",
+    "unitSlug": "anayasa-kisi-haklari-2",
+    "sourceLabel": "AI bilgi kartı — T.C. Anayasası md 27–40",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: anayasa-kisi-haklari-2 özeti + resmî madde metni); denetim düzeltmesi 6 Kas 2026 (2 kart)"
+  },
+  "cards": [
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Bilim ve sanat alanındaki yayma hakkı hangi amaçla kullanılamaz?",
+      "back": "Anayasanın 1 inci, 2 nci ve 3 üncü maddeleri hükümlerinin değiştirilmesini sağlamak amacıyla kullanılamaz.",
+      "explanation": "Herkes bilim ve sanatı serbestçe öğrenme, öğretme, açıklama, yayma ve bu alanlarda her türlü araştırma hakkına sahiptir. Bu hüküm, yabancı yayınların ülkeye girmesinin ve dağıtımının kanunla düzenlenmesine engel değildir.",
+      "articleRefs": [
+        "27"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Gecikmesinde sakınca bulunan hallerde süreli veya süresiz yayınlar hangi amaçlarla yetkili merciin emriyle toplatılabilir?",
+      "back": "Devletin ülkesi ve milletiyle bölünmez bütünlüğünün, milli güvenliğin, kamu düzeninin, genel ahlakın korunması ve suçların önlenmesi bakımından.",
+      "explanation": "Toplatma kural olarak hâkim kararıyla yapılır ve bunun için kanunun gösterdiği suçların soruşturma veya kovuşturmasına geçilmiş olması gerekir. Merci emri yalnız gecikmesinde sakınca bulunan hallerde mümkündür ve emri veren merciin kanunla açıkça yetkili kılınmış olması gerekir.",
+      "articleRefs": [
+        "28"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Gecikmesinde sakınca bulunan halde bir yayının dağıtımını önleyen yetkili merci, kararını yetkili hâkime en geç ne zaman bildirir?",
+      "back": "En geç 24 saat içinde yetkili hâkime bildirir.",
+      "explanation": "Dağıtımın önlenmesi kural olarak hâkim kararıyla olur. Merci yalnız gecikmesinde sakınca bulunan hallerde ve kanun onu açıkça yetkili kılmışsa dağıtımı önleyebilir. Hâkim bu kararı en geç 48 saat içinde onaylamazsa dağıtımı önleme kararı hükümsüz sayılır.",
+      "articleRefs": [
+        "28"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Yetkili merciin emriyle verilen toplatma kararını hâkim en geç kaç saat içinde onaylamalıdır?",
+      "back": "En geç 48 saat içinde; onaylamazsa toplatma kararı hükümsüz sayılır.",
+      "explanation": "Toplatma kararını veren merci, bu kararı en geç 24 saat içinde yetkili hâkime bildirir.",
+      "articleRefs": [
+        "28"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Süreli yayın çıkarabilmek için ne yapman yeterlidir?",
+      "back": "Kanunun gösterdiği bilgi ve belgeleri, kanunda belirtilen yetkili mercie vermen yeterlidir.",
+      "explanation": "Süreli veya süresiz yayın, önceden izin alma ve mali teminat yatırma şartına bağlanamaz. Süreli yayınların çıkarılması, yayım şartları, mali kaynakları ve gazetecilik mesleğiyle ilgili esaslar kanunla düzenlenir.",
+      "articleRefs": [
+        "29"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Süreli yayının verdiği bilgi ve belgeler kanuna aykırı çıkarsa yetkili merci yayını kendisi durdurur mu?",
+      "back": "Hayır. Yetkili merci, kanuna aykırılığı tespit edince yayının durdurulması için mahkemeye başvurur.",
+      "explanation": "Süreli yayın çıkarmak için kanunun gösterdiği bilgi ve belgelerin yetkili mercie verilmesi yeterlidir. Merciin görevi aykırılığı tespit etmek ve durdurma için mahkemeye başvurmaktır.",
+      "articleRefs": [
+        "29"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Süreli yayınlar, Devletin ve diğer kamu tüzelkişilerinin araç ve imkânlarından hangi esasa göre yararlanır?",
+      "back": "Eşitlik esasına göre yararlanır.",
+      "explanation": "Bu hüküm, kamu tüzelkişilerine bağlı kurumların araç ve imkânlarını da kapsar. Kanun, haber, düşünce ve kanaatlerin serbestçe yayımlanmasını engelleyici veya zorlaştırıcı siyasal, ekonomik, mali ve teknik şartlar koyamaz.",
+      "articleRefs": [
+        "29"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Kanuna uygun şekilde basın işletmesi olarak kurulan basımevi hangi gerekçeyle zapt ve müsadere edilemez?",
+      "back": "Suç aleti olduğu gerekçesiyle; basımevi, eklentileri ve basın araçları bu gerekçeyle işletilmekten de alıkonulamaz.",
+      "explanation": "Koruma, kanuna uygun şekilde basın işletmesi olarak kurulmuş olma şartına bağlıdır ve basımevinin eklentilerini ve basın araçlarını da kapsar.",
+      "articleRefs": [
+        "30"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Kanun, halkın kamu tüzel kişilerinin elindeki basın dışı kitle haberleşme araçlarıyla haber almasını hangi sebeplerle kısıtlayabilir?",
+      "back": "Yalnız millî güvenlik, kamu düzeni, genel ahlâk ve sağlığın korunması sebepleriyle.",
+      "explanation": "Kişiler ve siyasi partiler bu araçlardan yararlanma hakkına sahiptir; yararlanmanın şartları ve usulleri kanunla düzenlenir. Kanun, sayılan sebepler dışında halkın düşünce ve kanaatlere ulaşmasını ve kamuoyunun serbestçe oluşmasını engelleyici kayıtlar koyamaz.",
+      "articleRefs": [
+        "31"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Düzeltme ve cevap hakkı hangi hallerde tanınır?",
+      "back": "Ancak kişilerin haysiyet ve şereflerine dokunulması veya kendileriyle ilgili gerçeğe aykırı yayınlar yapılması hallerinde.",
+      "explanation": "Bu hak kanunla düzenlenir. Düzeltme ve cevap yayımlanmazsa, yayımlanmasının gerekip gerekmediğine hâkim karar verir.",
+      "articleRefs": [
+        "32"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Düzeltme ve cevap yayımlanmazsa hâkim, yayımlanmasının gerekip gerekmediğine en geç ne zaman karar verir?",
+      "back": "İlgilinin müracaat tarihinden itibaren en geç 7 gün içinde.",
+      "explanation": "Süre, ilgilinin hâkime müracaat ettiği tarihten başlar. Karar, düzeltme ve cevabın yayımlanmasının gerekip gerekmediğine ilişkindir.",
+      "articleRefs": [
+        "32"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Dernek kurma hürriyeti hangi sebeplerle sınırlanabilir?",
+      "back": "Ancak kanunla; millî güvenlik, kamu düzeni, suç işlenmesinin önlenmesi, genel sağlık ve genel ahlâk ile başkalarının hürriyetlerinin korunması sebepleriyle.",
+      "explanation": "Herkes önceden izin almaksızın dernek kurma, üye olma ya da üyelikten çıkma hürriyetine sahiptir. Silahlı Kuvvetler ve kolluk kuvvetleri mensuplarına, görevlerinin gerektirdiği ölçüde de Devlet memurlarına kanunla sınırlamalar getirilebilir. Bu hükümler vakıflar için de uygulanır.",
+      "articleRefs": [
+        "33"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Gecikmede sakınca varsa bir dernek, hâkim kararı olmadan bir merciin kararıyla faaliyetten men edilebilir mi?",
+      "back": "Evet; kanunla yetkilendirilen merci men edebilir. Ama yalnız millî güvenlik, kamu düzeni, suç işlenmesini veya suçun devamını önleme yahut yakalamanın gerektirdiği hallerde ve karar 24 saat içinde hâkimin onayına sunulur.",
+      "explanation": "Kural olarak dernekler, kanunun öngördüğü hallerde hâkim kararıyla kapatılabilir veya faaliyetten alıkonulabilir. Merciin yetkisi, gecikmede sakınca bulunan hallere özgü bir istisnadır.",
+      "articleRefs": [
+        "33"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Bir merciin derneği faaliyetten men kararı görevli hâkimin onayına sunulunca hâkim kararını kaç saat içinde açıklar?",
+      "back": "48 saat içinde; açıklamazsa bu idarî karar kendiliğinden yürürlükten kalkar.",
+      "explanation": "Merciin kararı 24 saat içinde görevli hâkimin onayına sunulur. Hâkim süresi içinde kararını açıklamazsa, idarî kararın yürürlükten kalkması için ayrıca bir işlem gerekmez.",
+      "articleRefs": [
+        "33"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Toplantı ve gösteri yürüyüşü düzenlemek için önceden izin almak gerekir mi?",
+      "back": "Hayır; herkes önceden izin almadan, silahsız ve saldırısız toplantı ve gösteri yürüyüşü düzenleme hakkına sahiptir.",
+      "explanation": "Hakkın kullanılmasında uygulanacak şekil, şart ve usuller kanunda gösterilir.",
+      "articleRefs": [
+        "34"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Toplantı ve gösteri yürüyüşü hakkı hangi amaçlarla sınırlanabilir?",
+      "back": "Ancak millî güvenlik, kamu düzeni, suç işlenmesinin önlenmesi, genel sağlığın ve genel ahlâkın veya başkalarının hak ve özgürlüklerinin korunması amacıyla ve kanunla sınırlanabilir.",
+      "explanation": "Herkes önceden izin almadan, silahsız ve saldırısız toplantı ve gösteri yürüyüşü düzenleme hakkına sahiptir; uygulanacak şekil, şart ve usuller kanunda gösterilir.",
+      "articleRefs": [
+        "34"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Anayasada mülkiyet hakkıyla aynı hükümde hangi hak düzenlenir?",
+      "back": "Miras hakkı; herkes mülkiyet ve miras haklarına sahiptir.",
+      "explanation": "Mülkiyet ve miras hakları aynı cümlede sayılır ve aynı sınırlama kuralına tabidir: ancak kamu yararı amacıyla, kanunla sınırlanabilirler.",
+      "articleRefs": [
+        "35"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Mülkiyet hakkı toplum yararı amacıyla sınırlanır mı?",
+      "back": "Hayır. Mülkiyet ve miras hakları ancak kamu yararı amacıyla, kanunla sınırlanabilir; toplum yararı ise mülkiyet hakkının kullanılmasının aykırı olamayacağı ölçüttür.",
+      "explanation": "Maddede iki ayrı kavram vardır. Kamu yararı, sınırlamanın tek amacıdır. Toplum yararı ise hakkın kullanılmasına ilişkindir: mülkiyet hakkının kullanılması toplum yararına aykırı olamaz.",
+      "articleRefs": [
+        "35"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Herkesin adil yargılanma hakkına sahip olduğu hüküm hangi başlık altında yer alır?",
+      "back": "Hak arama hürriyeti başlığında yer alır.",
+      "explanation": "Aynı hükme göre herkes, meşru vasıta ve yollardan faydalanarak yargı mercileri önünde davacı veya davalı olarak iddia ve savunma hakkına sahiptir.",
+      "articleRefs": [
+        "36"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Bir mahkeme, görev ve yetkisi içindeki bir davaya bakmaktan kaçınabilir mi?",
+      "back": "Hayır; hiçbir mahkeme görev ve yetkisi içindeki davaya bakmaktan kaçınamaz.",
+      "explanation": "Bu kural hak arama hürriyetinin parçasıdır. Herkes yargı mercileri önünde iddia ve savunma ile adil yargılanma hakkına sahiptir.",
+      "articleRefs": [
+        "36"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Kimsenin kanunen tabi olduğu mahkemeden başka bir merci önüne çıkarılamamasını hangi güvence sağlar?",
+      "back": "Kanuni hâkim güvencesi; bu sonucu doğuran, yargı yetkisine sahip olağanüstü merciler de kurulamaz.",
+      "explanation": "Güvencenin iki yüzü vardır: kişi kanunen tabi olduğu mahkemeden başka bir merci önüne çıkarılamaz, bu sonucu doğuracak yargı yetkili olağanüstü merci de kurulamaz.",
+      "articleRefs": [
+        "37"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Ceza ancak kanunla konulduğuna göre, bir kanunla ölüm cezası öngörülebilir mi?",
+      "back": "Hayır. Ölüm cezası ve genel müsadere cezası verilemez; metin bu yasağa hiçbir istisna tanımaz.",
+      "explanation": "Aynı maddeye göre ceza ve ceza yerine geçen güvenlik tedbirleri ancak kanunla konulur. Ölüm cezası ve genel müsadere cezası ise hiç verilemez.",
+      "articleRefs": [
+        "38"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "İdarenin kişi hürriyetini kısıtlayan müeyyide uygulayamayacağı kuralına hangi konuda kanunla istisna getirilebilir?",
+      "back": "Silahlı Kuvvetlerin iç düzeni bakımından.",
+      "explanation": "Kural, idarenin kişi hürriyetinin kısıtlanması sonucunu doğuran bir müeyyide uygulayamamasıdır. İstisna ancak kanunla ve yalnız Silahlı Kuvvetlerin iç düzeni bakımından getirilebilir.",
+      "articleRefs": [
+        "38"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Vatandaşın suç sebebiyle yabancı bir ülkeye verilememesi kuralının istisnası nedir?",
+      "back": "Uluslararası Ceza Divanına taraf olmanın gerektirdiği yükümlülükler.",
+      "explanation": "Bu kural suç ve cezalara ilişkin esaslar başlığında yer alır. Aynı başlıkta, hiç kimsenin yalnızca sözleşmeden doğan bir yükümlülüğü yerine getirememesinden dolayı özgürlüğünden alıkonulamayacağı da yazılıdır.",
+      "articleRefs": [
+        "38"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Kamu görev ve hizmetiyle ilgili olmayan isnatlardan açılan hakaret davalarında ispat istemi hangi durumda kabul edilir?",
+      "back": "İsnat olunan fiilin doğru olup olmadığının anlaşılmasında kamu yararı bulunursa ya da şikayetçi ispata razı olursa.",
+      "explanation": "Kamu görev ve hizmetinde bulunanlara, bu görevin yerine getirilmesiyle ilgili isnatlardan açılan hakaret davalarında ise sanık, isnadın doğruluğunu ispat hakkına doğrudan sahiptir.",
+      "articleRefs": [
+        "39"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Kamu görevlisine görevle ilgili isnat yüzünden açılan hakaret davasında sanığın ispat istemi şikayetçinin rızasına bağlı mıdır?",
+      "back": "Hayır. Bu davalarda sanık, isnadın doğruluğunu ispat hakkına sahiptir; kamu yararı ya da şikayetçinin rızası şartı bunun dışındaki haller içindir.",
+      "explanation": "İspat hakkının sanığa doğrudan tanınması için isnadın, kamu görev ve hizmetinin yerine getirilmesiyle ilgili olması gerekir.",
+      "articleRefs": [
+        "39"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Devlet, işlemlerinde ilgili kişilere neyi belirtmek zorundadır?",
+      "back": "Hangi kanun yolları ve mercilere başvuracaklarını ve bunların sürelerini belirtmek zorundadır.",
+      "explanation": "Anayasa ile tanınmış hak ve hürriyetleri ihlal edilen herkes, yetkili makama geciktirilmeden başvurma imkânının sağlanmasını isteme hakkına sahiptir.",
+      "articleRefs": [
+        "40"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Resmî görevlilerin haksız işlemleri sonucu uğradığın zararı kim tazmin eder?",
+      "back": "Devlet, kanuna göre tazmin eder; Devletin sorumlu olan ilgili görevliye rücu hakkı saklıdır.",
+      "explanation": "Zarar doğrudan Devletçe karşılanır. Devlet daha sonra sorumlu olan ilgili görevliye rücu edebilir.",
+      "articleRefs": [
+        "40"
+      ]
+    }
+  ]
+}

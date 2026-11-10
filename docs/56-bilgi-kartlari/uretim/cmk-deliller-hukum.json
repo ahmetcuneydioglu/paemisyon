@@ -1,0 +1,319 @@
+{
+  "deck": {
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "legislationSlug": "5271-sayili-ceza-muhakemesi-kanunu-cmk",
+    "unitSlug": "cmk-deliller-hukum",
+    "sourceLabel": "AI bilgi kartı — 5271 Sayılı Ceza Muhakemesi Kanunu (CMK) md 206–232",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: cmk-deliller-hukum özeti + resmî madde metni); denetim düzeltmesi 6 Kas 2026 (4 kart + md 230/1-b ve 231/14 ve 231/11 kartları eklendi)"
+  },
+  "cards": [
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Sanığın sorgusu yapılamamışken deliller hangi hâlde ortaya konulabilir?",
+      "back": "Sanık tebligata rağmen mazeretsiz olarak gelmediği için sorgusu yapılamamışsa. Ortaya konulan deliller sonradan gelen sanığa bildirilir.",
+      "explanation": "Kural olarak delillerin ortaya konulmasına sanığın sorguya çekilmesinden sonra başlanır. Mazeretsiz gelmeme, maddede yazılı istisnadır.",
+      "articleRefs": [
+        "206"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Ortaya konulması istenen bir delil hangi hâllerde reddolunur?",
+      "back": "Delil kanuna aykırı olarak elde edilmişse, ispat edilmek istenen olayın karara etkisi yoksa ya da istem sadece davayı uzatmak maksadıyla yapılmışsa.",
+      "articleRefs": [
+        "206"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Cumhuriyet savcısı ile sanık veya müdafii birlikte rıza gösterirse tanığın dinlenmesinden vazgeçilebilir mi?",
+      "back": "Evet; birlikte rıza varsa tanığın dinlenmesinden de, başka herhangi bir delilin ortaya konulmasından da vazgeçilebilir.",
+      "explanation": "Vazgeçme için aranan, Cumhuriyet savcısı ile sanık veya müdafiinin birlikte rıza göstermesidir.",
+      "articleRefs": [
+        "206"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Delilin ortaya konulması istemi, delil geç bildirildiği için reddedilebilir mi?",
+      "back": "Hayır; istem, delilin veya ispat edilmek istenen olayın geç bildirilmiş olması nedeniyle reddedilemez.",
+      "articleRefs": [
+        "207"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Dinlenen tanık duruşma salonundan nasıl ayrılabilir?",
+      "back": "Ancak mahkeme başkanı veya hâkimin izniyle.",
+      "articleRefs": [
+        "208"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Sanığa veya mağdura ait kişisel verilerin yer aldığı belgeler hangi şartla kapalı oturumda anlatılabilir?",
+      "back": "Sanık veya mağdur açıkça isterse; bu durumda mahkeme kapalı oturumda anlatılmasına karar verebilir.",
+      "explanation": "Naip veya istinabe yoluyla alınan sorgu ve ifade tutanakları, muayene ve keşif tutanakları gibi delil olarak kullanılacak belgeler, adlî sicil özetleri ve sanığın kişisel ve ekonomik durumuna ilişkin belgeler duruşmada anlatılır.",
+      "articleRefs": [
+        "209"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Olayın delili bir tanığın açıklamalarından ibaretse ne yapılır?",
+      "back": "Tanık duruşmada mutlaka dinlenir; önceki dinlemede düzenlenmiş tutanağın veya yazılı açıklamanın okunması dinlemenin yerine geçemez.",
+      "articleRefs": [
+        "210"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Duruşmada tanıklıktan çekinen kişinin önceki ifadesine ilişkin tutanak okunabilir mi?",
+      "back": "Hayır; tanıklıktan çekinebilecek kişi duruşmada tanıklıktan çekinirse önceki ifadesine ilişkin tutanak okunamaz.",
+      "articleRefs": [
+        "210"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Sanığın açıklamaları arasında çelişki varsa duruşmada hangi tutanaklar okunabilir?",
+      "back": "Hâkim veya mahkeme huzurundaki açıklamaları ile Cumhuriyet savcısının aldığı ya da müdafiin hazır bulunduğu kolluk ifadesine ilişkin tutanaklar.",
+      "articleRefs": [
+        "213"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Ortaya konulan delillerin tartışılmasında söz ilk önce kime verilir?",
+      "back": "Katılana veya vekiline; ardından Cumhuriyet savcısına, sanığa ve müdafiine veya kanunî temsilcisine.",
+      "explanation": "Cumhuriyet savcısı ve katılan taraf, sanık tarafının açıklamalarına; sanık ve müdafii ya da kanunî temsilcisi de Cumhuriyet savcısının ve katılanın açıklamalarına cevap verebilir.",
+      "articleRefs": [
+        "216"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Son söz aşamasında zorunlu müdafi hazır değilse hüküm açıklanabilir mi?",
+      "back": "Evet; bu aşamada zorunlu müdafiin hazır bulunmaması hükmün açıklanmasına engel değildir. Son söz, hükümden önce hazır bulunan sanığa verilir.",
+      "articleRefs": [
+        "216"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Hâkim kararını hangi delillere dayandırabilir?",
+      "back": "Ancak duruşmaya getirilmiş ve huzurunda tartışılmış delillere; bu deliller hâkimin vicdanî kanaatiyle serbestçe takdir edilir.",
+      "explanation": "Yüklenen suç, hukuka uygun bir şekilde elde edilmiş her türlü delille ispat edilebilir.",
+      "articleRefs": [
+        "217"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Suçun ispatı başka bir mahkemenin görev alanına giren bir sorunun çözümüne bağlıysa ceza mahkemesi ne yapabilir?",
+      "back": "Sorunu bu Kanun hükümlerine göre kendisi karara bağlayabilir ya da görevli mahkemede dava açılması veya açılmış davanın sonuçlanması için bekletici sorun kararı verebilir.",
+      "articleRefs": [
+        "218"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Kovuşturma evresinde mağdurun veya sanığın yaşının tespitiyle ilgili sorun çıkarsa mahkeme ne yapar?",
+      "back": "Sorunu ilgili kanunda belirlenen usule göre kendisi çözerek hükmünü verir.",
+      "articleRefs": [
+        "218"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Duruşma tutanağını kim imzalar?",
+      "back": "Mahkeme başkanı veya hâkim ile zabıt kâtibi; başkanın mazereti varsa üyelerin en kıdemlisi imzalar.",
+      "explanation": "İşlemler teknik araçlarla kayda alındıysa kayıtlar vakit geçirilmeksizin yazılı tutanağa dönüştürülür ve mahkeme başkanı veya hâkim ile zabıt kâtibi tarafından imzalanır.",
+      "articleRefs": [
+        "219"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Duruşmanın kanundaki usul ve esaslara uygun yapılıp yapılmadığı neyle ispat olunur?",
+      "back": "Ancak tutanakla. Tutanağa karşı yalnız sahtecilik iddiası yöneltilebilir.",
+      "articleRefs": [
+        "222"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Aynı fiil nedeniyle aynı sanık için önceden verilmiş bir hüküm veya açılmış bir dava varsa mahkeme hangi kararı verir?",
+      "back": "Davanın reddine karar verir.",
+      "explanation": "Davanın reddi kararı, maddede hüküm sayılan kararlardandır.",
+      "articleRefs": [
+        "223"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Meşru savunmada sınır heyecan, korku ve telaş nedeniyle aşılmışsa beraat kararı verilir mi?",
+      "back": "Hayır; kusurun bulunmaması dolayısıyla ceza verilmesine yer olmadığı kararı verilir. Beraat ise örneğin olayda hukuka uygunluk nedeni bulunduğunda verilir (md 223/2-d).",
+      "explanation": "Hukuka aykırı fakat bağlayıcı emrin yerine getirilmesi, zorunluluk hâli, cebir veya tehdit etkisi, yaş küçüklüğü ve akıl hastalığı da kusur yokluğu nedeniyle ceza verilmesine yer olmadığı kararına götürür.",
+      "articleRefs": [
+        "223"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Durma kararı hüküm sayılır mı?",
+      "back": "Hayır; md 223/1'e göre hüküm sayılanlar beraat, ceza verilmesine yer olmadığı, mahkûmiyet, güvenlik tedbirine hükmedilmesi, davanın reddi ve düşmesi kararlarıdır. Adlî yargı dışındaki bir yargı merciine yönelik görevsizlik kararı da kanun yolu bakımından hüküm sayılır (md 223/10). Durma kararına ise itiraz edilebilir.",
+      "explanation": "Durma, soruşturmanın veya kovuşturmanın yapılması şarta bağlı olup şart henüz gerçekleşmemişse, gerçekleşmesini beklemek üzere verilir. Şartın gerçekleşmeyeceği anlaşılırsa davanın düşmesine karar verilir.",
+      "articleRefs": [
+        "223"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Mahkemece karar ve hükümler ancak oybirliğiyle mi verilir?",
+      "back": "Hayır; karar ve hükümler oybirliği veya oyçokluğuyla verilir. Karşı oya ve gerekçesine tutanakta yer verilir.",
+      "articleRefs": [
+        "224"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Suçun hukukî niteliği değişirse sanık hangi şartla iddianamedeki kanun hükmünden başkasıyla mahkûm edilebilir?",
+      "back": "Nitelik değişmeden önce haber verilip savunmasını yapabilecek hâlde bulundurulursa.",
+      "explanation": "Cezanın artırılmasını veya cezaya ek olarak güvenlik tedbirlerinin uygulanmasını gerektiren hâller ilk defa duruşmada ortaya çıktığında da aynı kural uygulanır; ek savunmasını hazırlaması için sanığa istem üzerine süre verilir.",
+      "articleRefs": [
+        "226"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Ek savunmaya ilişkin bildirimin yalnız müdafie yapılması yeterli midir?",
+      "back": "Hayır; bildirimler sanığa ve varsa müdafie yapılır. Müdafie yapılan bildirim, sanığın dosyadaki son adresine bildirim yapılamazsa ya da sanık bildirime rağmen gelmezse yeterli sayılır.",
+      "explanation": "Müdafi, sanığa tanınan haklardan onun gibi yararlanır.",
+      "articleRefs": [
+        "226"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Mahkeme başkanı müzakere sırasında kimlerin hazır bulunmasına izin verebilir?",
+      "back": "Hâkim ve savcı yardımcıları ile mahkemesinde staj yapmakta olan avukat adaylarının.",
+      "explanation": "Müzakerede kural olarak ancak karara ve hükme katılacak hâkimler bulunur.",
+      "articleRefs": [
+        "227"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Üç hâkimden biri 4, biri 6, biri 8 yıl hapis önerirse oylar nasıl birleşir ve hangi öneri çoğunluğu bulur?",
+      "back": "Ortadaki öneri çoğunluğu bulur: sanığın en çok aleyhine olan (en ağır) oy, çoğunluk oluşuncaya kadar kendisine daha yakın olan oya eklenir; örnekte en ağır oy ortadaki öneriye katılır.",
+      "explanation": "Başkan oyları kıdemsiz üyeden başlayarak ayrı ayrı toplar ve kendi oyunu en son verir. Başkan ve üyelerden hiçbiri azınlıkta kaldığını ileri sürerek oylamaya katılmaktan çekinemez.",
+      "articleRefs": [
+        "229"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Hükmün açıklanmasının geri bırakılması için hükmolunan ceza en fazla ne olmalıdır?",
+      "back": "İki yıl veya daha az süreli hapis ya da adlî para cezası.",
+      "explanation": "Ayrıca sanığın daha önce kasıtlı bir suçtan mahkûm olmamış bulunması, yeniden suç işlemeyeceği kanaatine varılması ve zararın aynen iade, suçtan önceki hâle getirme veya tazmin suretiyle tamamen giderilmesi gerekir.",
+      "articleRefs": [
+        "231"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Hükmün açıklanmasının geri bırakılmasına karar verilen sanık ne kadar süre denetime tâbi tutulur?",
+      "back": "Beş yıl; bu süre içinde mahkeme bir yıldan fazla olmamak üzere denetimli serbestlik tedbirine karar verebilir.",
+      "explanation": "Denetim süresi içinde dava zamanaşımı durur. Kasten yeni suç işlenmez ve yükümlülüklere uyulursa açıklanması geri bırakılan hüküm ortadan kaldırılarak davanın düşmesine karar verilir.",
+      "articleRefs": [
+        "231"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Hükmün açıklanmasının geri bırakılması kararına karşı hangi kanun yoluna başvurulur?",
+      "back": "Kural olarak istinaf yoluna (md 272/3'teki istinaf edilemeyen kararlar saklı); kararı ilk derece mahkemesi sıfatıyla bölge adliye mahkemesi veya Yargıtay verdiyse temyiz yoluna gidilebilir.",
+      "explanation": "İstinaf ve temyiz yolunda karar ve hüküm, usul ve esasa ilişkin hukuka aykırılıklar yönünden incelenir.",
+      "articleRefs": [
+        "231",
+        "272"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Hükmün gerekçesi tümüyle tutanağa geçirilmemişse açıklanmasından itibaren en geç kaç gün içinde dava dosyasına konulur?",
+      "back": "Onbeş gün; varsa karşı oy gerekçesi de aynı süre içinde dava dosyasına konulur.",
+      "explanation": "Karar ve hükümler bunlara katılan hâkimler tarafından imzalanır.",
+      "articleRefs": [
+        "232"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Mahkûmiyet hükmünün gerekçesinde, dosyadaki hukuka aykırı yöntemlerle elde edilen deliller nasıl gösterilir?",
+      "back": "Ayrıca ve açıkça gösterilir; gerekçe, hükme esas alınan ve reddedilen delilleri belirtir.",
+      "explanation": "Gerekçede delillerin tartışılması ve değerlendirilmesi yer alır; ulaşılan kanaat, sanığın suç oluşturduğu sabit görülen fiili ve bunun nitelendirilmesi de gösterilir.",
+      "articleRefs": [
+        "230"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Hükmün açıklanmasının geri bırakılması, işkence ve eziyet suçlarında uygulanabilir mi?",
+      "back": "Hayır. Bu hükümler, işkence ve eziyet suçları ile kamu görevlisinin görevi sebebiyle işlediği ve Anayasanın 17 nci maddesi kapsamında kötü muamele kabul edilebilecek suçlar hakkında uygulanmaz.",
+      "explanation": "Denetim süresi içinde kasten yeni bir suç işlenmediği ve denetimli serbestlik yükümlülüklerine uygun davranıldığı takdirde, açıklanması geri bırakılan hüküm ortadan kaldırılarak davanın düşmesi kararı verilir.",
+      "articleRefs": [
+        "231"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Hükmün açıklanmasının geri bırakılmasında sanık denetim süresi içinde kasten yeni bir suç işlerse ne olur?",
+      "back": "Mahkeme hükmü açıklar; aynı sonuç denetimli serbestlik yükümlülüklerine aykırı davranılması hâlinde de doğar.",
+      "explanation": "Yükümlülükleri yerine getiremeyen sanık için mahkeme, durumunu değerlendirerek cezanın yarısına kadar belirleyeceği bir kısmının infaz edilmemesine ya da koşulları varsa hapis cezasının ertelenmesine veya seçenek yaptırımlara çevrilmesine karar vererek yeni bir mahkûmiyet hükmü kurabilir. Açıklanan veya yeni kurulan hükme itiraz edilebilir.",
+      "articleRefs": [
+        "231"
+      ]
+    }
+  ]
+}

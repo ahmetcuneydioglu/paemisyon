@@ -4,7 +4,7 @@ import { AdminFlashcardsService } from './admin-flashcards.service';
 
 /**
  * Admin bilgi kartları (Doc 56 §8.1): yayın kapısı (rol, eskime, mevzuat kontrolü, doğrulama),
- * toplu yayında AI kartlarının atlanması, düzenlemede yeniden doğrulama ve sürüm/eskime kuralları.
+ * toplu yayında AI kartlarının da kapıdan geçmesi, düzenlemede yeniden doğrulama ve sürüm/eskime kuralları.
  */
 const now = new Date('2026-11-05T10:00:00Z');
 const admin = { id: 'adm', email: 'a@x', roles: ['admin'], isPremium: true } as AuthenticatedUser;
@@ -43,6 +43,7 @@ const CARD = (over: Record<string, unknown> = {}) => ({
   verifiedAt: null,
   publishedBy: null,
   createdBy: null,
+  _count: { reports: 0 },
   topic: { id: 't1', name: 'T.C. Anayasası', course: { id: 'c1', name: 'Anayasa Hukuku' } },
   summaryUnit: null,
   legislation: { id: 'leg1', slug: 't-c-anayasasi', name: 'T.C. Anayasası', shortName: null },
@@ -77,6 +78,12 @@ function setup(card: ReturnType<typeof CARD> | null = CARD()) {
       groupBy: jest.fn().mockResolvedValue([{ lawArticleId: 'a75', _max: { versionNo: 2 } }]),
     },
     auditLog: { findMany: jest.fn().mockResolvedValue([]) },
+    flashcardReport: {
+      findMany: jest.fn().mockResolvedValue([]),
+      count: jest.fn().mockResolvedValue(0),
+      findUnique: jest.fn().mockResolvedValue(null),
+      update: jest.fn().mockResolvedValue({}),
+    },
     legislation: { findFirst: jest.fn().mockResolvedValue({ id: 'leg1', name: 'T.C. Anayasası' }) },
     topic: { findFirst: jest.fn().mockResolvedValue({ id: 't1' }) },
     summaryUnit: { findFirst: jest.fn().mockResolvedValue(null) },
@@ -86,7 +93,13 @@ function setup(card: ReturnType<typeof CARD> | null = CARD()) {
     fn(prisma),
   );
   const audit = { log: jest.fn(async () => undefined) };
-  return { svc: new AdminFlashcardsService(prisma, audit as never), prisma, audit };
+  const events = { emit: jest.fn(async () => undefined) };
+  return {
+    svc: new AdminFlashcardsService(prisma, audit as never, events as never),
+    prisma,
+    audit,
+    events,
+  };
 }
 
 describe('AdminFlashcardsService — yayın kapısı', () => {
@@ -120,7 +133,7 @@ describe('AdminFlashcardsService — yayın kapısı', () => {
     expect(audit.log).toHaveBeenCalledWith(admin, 'flashcard.publish', 'flashcard', 'k1');
   });
 
-  it('toplu yayın: AI kaynaklı kart atlanır, editör kartı yayınlanır, yayındaki sayılmaz', async () => {
+  it('toplu yayın: AI kaynaklı kart da kapıdan geçer, yayındaki sayılmaz, bulunamayan atlanır', async () => {
     const { svc, prisma } = setup();
     const cards: Record<string, ReturnType<typeof CARD>> = {
       ai: CARD({ id: 'ai', sourceLabel: 'AI bilgi kartı — T.C. Anayasası md 75–86' }),
@@ -131,11 +144,8 @@ describe('AdminFlashcardsService — yayın kapısı', () => {
       async ({ where }: { where: { id: string } }) => cards[where.id] ?? null,
     );
     const r = await svc.publishMany(admin, ['ai', 'ed', 'pub', 'yok']);
-    expect(r.published).toEqual(['ed']);
-    expect(r.skipped).toEqual([
-      { id: 'ai', reason: expect.stringMatching(/AI kaynaklı/) },
-      { id: 'yok', reason: 'bulunamadı' },
-    ]);
+    expect(r.published).toEqual(['ai', 'ed']);
+    expect(r.skipped).toEqual([{ id: 'yok', reason: 'bulunamadı' }]);
   });
 });
 
@@ -219,5 +229,63 @@ describe('AdminFlashcardsService — düzenleme ve içe aktarma', () => {
     expect(r).toMatchObject({ dryRun: true, count: 2, ok: false, fails: 1 });
     expect(prisma.flashcard.create).not.toHaveBeenCalled();
     expect(prisma.$transaction).not.toHaveBeenCalled();
+  });
+
+  it('kullanıcı bildirimi: liste kart ön yüzü + bildiren; çözülünce audit + flashcard_report_resolved olayı', async () => {
+    const { svc, prisma, audit, events } = setup();
+    prisma.flashcardReport.findMany.mockResolvedValue([
+      {
+        id: 'r1',
+        message: 'Doğru cevap hatalı — 550',
+        status: 'open',
+        createdAt: now,
+        user: { email: 'aday@x.com' },
+        flashcard: {
+          id: 'k1',
+          front: 'TBMM kaç üyeden oluşur?',
+          status: 'published',
+          topic: { name: 'T.C. Anayasası', course: { name: 'Anayasa Hukuku' } },
+        },
+      },
+    ]);
+    prisma.flashcardReport.count.mockResolvedValue(1);
+    const list = await svc.reportsList('open', 1);
+    expect(list.total).toBe(1);
+    expect(list.items[0]).toMatchObject({
+      id: 'r1',
+      flashcardId: 'k1',
+      front: 'TBMM kaç üyeden oluşur?',
+      courseName: 'Anayasa Hukuku',
+      reporterEmail: 'aday@x.com',
+    });
+
+    await expect(svc.setReportStatus(admin, 'yok', 'resolved')).rejects.toThrow(
+      'Bildirim bulunamadı',
+    );
+    prisma.flashcardReport.findUnique.mockResolvedValue({
+      id: 'r1',
+      flashcardId: 'k1',
+      userId: 'u9',
+    });
+    const r = await svc.setReportStatus(admin, 'r1', 'resolved');
+    expect(r).toEqual({ id: 'r1', status: 'resolved' });
+    expect(prisma.flashcardReport.update).toHaveBeenCalledWith(
+      expect.objectContaining({
+        where: { id: 'r1' },
+        data: expect.objectContaining({ status: 'resolved', resolvedBy: admin.id }),
+      }),
+    );
+    expect(audit.log).toHaveBeenCalledWith(admin, 'flashcard_report.resolved', 'flashcard', 'k1', {
+      reportId: 'r1',
+    });
+    expect(events.emit).toHaveBeenCalledWith(
+      'flashcard_report_resolved',
+      'u9',
+      expect.objectContaining({
+        entityType: 'flashcard_report',
+        entityId: 'r1',
+        payload: expect.objectContaining({ outcome: 'resolved', flashcardId: 'k1' }),
+      }),
+    );
   });
 });

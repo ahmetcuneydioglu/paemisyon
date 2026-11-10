@@ -117,15 +117,16 @@ model Topic {
 ### 2.3 Hedef müfredat (seed verisi)
 
 **İçerik ders havuzu (küresel, TEK kopya):**
-Genel Kültür ve Analitik Düşünme · Polis Mevzuatı · Ceza Muhakemesi Hukuku ·
-Ceza Hukuku · Anayasa Hukuku · İdare Hukuku · Atatürk İlkeleri ve İnkılap
-Tarihi · İnsan Hakları · Protokol Bilgisi · Silah Bilgisi · Güncel ve Kültürel
-Konular · Yabancı Dil
+Genel Kültür ve Güncel Olaylar · Analitik Düşünme ve Türkçe *(9 Kas 2026'ya
+kadar tek ders: "Genel Kültür ve Analitik Düşünme", bkz. 2.6)* · Polis Mevzuatı ·
+Ceza Muhakemesi Hukuku · Ceza Hukuku · Anayasa Hukuku · İdare Hukuku · Atatürk
+İlkeleri ve İnkılap Tarihi · İnsan Hakları · Protokol Bilgisi · Silah Bilgisi ·
+Yabancı Dil *(Güncel ve Kültürel Konular dersi 9 Kas 2026'da kaldırıldı)*
 
 **PAEM bölümleri** (toplam %100 ✓):
 | Bölüm (görünen) | % | İçerik dersi |
 |---|---|---|
-| Genel Kültür ve Analitik Düşünme | 30 | Genel Kültür ve Analitik Düşünme |
+| Genel Kültür ve Analitik Düşünme | 30 | Genel Kültür ve Güncel Olaylar + Analitik Düşünme ve Türkçe *(2 ders → 1 başlık; 9 Kas 2026)* |
 | Polis Meslek Mevzuatı | 10 | Polis Mevzuatı |
 | Ceza Muhakemesi Hukuku | 10 | Ceza Muhakemesi Hukuku |
 | Ceza Hukuku | 10 | Ceza Hukuku |
@@ -143,7 +144,7 @@ Konular · Yabancı Dil
 | Atatürk İlkeleri ve İnkılap Tarihi | 10 | Atatürk İlkeleri ve İnkılap Tarihi *(ORTAK)* |
 | Protokol Bilgisi | 10 | Protokol Bilgisi |
 | Silah Bilgisi | 20 | Silah Bilgisi |
-| Güncel ve Kültürel Konular | 10 | Genel Kültür ve Analitik Düşünme + Güncel ve Kültürel Konular *(PAEM ortak havuzu dahil)* |
+| Güncel ve Kültürel Konular | 10 | Genel Kültür ve Güncel Olaylar *(PAEM ile ORTAK; 9 Kas 2026'dan önce "Genel Kültür ve Analitik Düşünme" dersinin tamamı bağlıydı — bkz. 2.6)* |
 | Yabancı Dil | 10 | Yabancı Dil |
 
 ### 2.4 "Polis Mevzuatı" dersinin alt konuları (tekilleştirilmiş, kanun no önekli)
@@ -182,6 +183,31 @@ Bilgisi, Silah Bilgisi, Güncel ve Kültürel Konular ile Yabancı Dil eklenir.
 Misyon sunumunda CMK ve Ceza Hukuku "Polisi İlgilendiren Mevzuat", ortak
 Genel Kültür havuzu ise "Güncel ve Kültürel Konular" bölümü altında yer alır.
 Böylece soru ve konu kayıtları kopyalanmadan iki sınavda da kullanılır.
+
+### 2.6 Genel Kültür dersinin ikiye ayrılması (9 Kas 2026)
+
+Kapsam birimi DERS olduğu için (koç turu, yanlış tekrarı, hazırlık bloğu,
+kişisel deneme ve plan hepsi bölüm→ders üzerinden süzer) "Genel Kültür ve
+Analitik Düşünme" dersinin Misyon'a bağlanması, dersin içindeki Analitik Akıl
+Yürütme, Türkçe / Dil Bilgisi, Matematik ve Sayısal Mantık ve Sözel Yetenek
+konularını da Misyon kapsamına sokuyordu. Misyon sınavında bu bloklar yoktur;
+premium bir Misyon adayı 8 Kas 2026'da "koç hep analitik ve Türkçe çıkarıyor"
+diye yazdı (adayın koçtaki en zayıf konusu Analitik Akıl Yürütme çıkıyordu).
+
+Karar: ders ikiye ayrıldı, yalnız veri değişti (istemci güncellemesi yok):
+- **Genel Kültür ve Güncel Olaylar** (eski dersin kaydı, yeniden adlandırıldı;
+  ikon `newspaper`): Genel Kültür · Güncel ve Kültürel Olaylar. PAEM ve Misyon.
+- **Analitik Düşünme ve Türkçe** (yeni; ikon `lightbulb`): Sözel Yetenek ·
+  Türkçe / Dil Bilgisi · Analitik Akıl Yürütme · Matematik ve Sayısal Mantık.
+  Yalnız PAEM'in "Genel Kültür ve Analitik Düşünme" bölümüne bağlı.
+- Misyon'un boş "Güncel ve Kültürel Konular" dersi (0 konu) soft-delete edildi;
+  rolünü yeniden adlandırılan ders dolduruyor.
+- Ders testleri (Doc 49/18) derse sabit olduğundan eski dersin testleri (0
+  oturum) silinip iki ders için yeniden atandı.
+
+Betik: `apps/api/scripts/misyon-gk-ayrimi.ts` (kuru çalışma varsayılan,
+`--apply` uygular ve öncesi/sonrası havuzu ile adayın zayıf konularını raporlar).
+PAEM'de içerik kaybı yok; PAEM kullanıcısı ders listesinde bir ders fazla görür.
 
 ---
 

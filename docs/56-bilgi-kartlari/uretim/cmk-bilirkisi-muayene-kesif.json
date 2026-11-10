@@ -1,0 +1,294 @@
+{
+  "deck": {
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "legislationSlug": "5271-sayili-ceza-muhakemesi-kanunu-cmk",
+    "unitSlug": "cmk-bilirkisi-muayene-kesif",
+    "sourceLabel": "AI bilgi kartı — 5271 Sayılı Ceza Muhakemesi Kanunu (CMK) md 62–89",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: cmk-bilirkisi-muayene-kesif özeti + resmî madde metni); stil kapısı (--onar) 2 açıklama yeniden yazıldı; denetim düzeltmesi 6 Kas 2026 (5 kart)"
+  },
+  "cards": [
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Bilirkişinin oy ve görüşünün alınmasına yalnızca Cumhuriyet savcısı, katılan ya da şüphelinin istemi üzerine mi karar verilebilir?",
+      "back": "Hayır. Re'sen de karar verilebilir. Cumhuriyet savcısı, katılan, vekili, şüpheli veya sanık, müdafii veya kanunî temsilcinin istemi de yeterlidir.",
+      "explanation": "Bilirkişiye, çözümü uzmanlığı, özel veya teknik bilgiyi gerektiren hâllerde başvurulur. Bilirkişi atanması ve sayısının gerekçe gösterilerek birden çok olarak saptanması hâkim veya mahkemeye aittir. Soruşturma evresinde Cumhuriyet savcısı da bu yetkileri kullanabilir.",
+      "articleRefs": [
+        "63"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Hangi konularda bilirkişiye başvurulamaz?",
+      "back": "Genel bilgi veya tecrübeyle ya da hâkimlik mesleğinin gerektirdiği hukukî bilgiyle çözümlenmesi mümkün olan konularda.",
+      "explanation": "Bilirkişi, çözümü uzmanlığı, özel veya teknik bilgiyi gerektiren hâller içindir. Hukuk öğrenimi görmüş kişiler, hukuk alanı dışında ayrı bir uzmanlığa sahip olduğunu belgelendirmedikçe bilirkişi olarak görevlendirilemez.",
+      "articleRefs": [
+        "63"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Bilirkişiler kimin hazırladığı listede yer alan kişiler arasından seçilir?",
+      "back": "Bilirkişilik bölge kurulunun. Liste, bölge adliye mahkemelerinin yargı çevreleri esas alınarak hazırlanır.",
+      "explanation": "Başka bölgedeki bilirkişi görevlendirme yapılan yere daha yakınsa o bölgenin listesinden de görevlendirme yapılabilir. İlgili uzmanlık dalında bilirkişi yoksa önce diğer bölge kurullarının listelerine bakılır; orada da yoksa Bilirkişilik Kanunu'nda öngörülen şartları taşıyan kişiler liste dışından görevlendirilebilir ve bu kişi bölge kuruluna bildirilir. Kanunların belirli konularda görevlendirdiği resmî bilirkişiler öncelikle atanır.",
+      "articleRefs": [
+        "64"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Bilirkişilik görevini kabul etmekle kimler yükümlüdür?",
+      "back": "Resmî bilirkişiler ve md 64 listelerinde yer alanlar yükümlüdür. İncelemenin gerektirdiği fen ve sanatları meslek edinenler ile o mesleği yapmaya resmen yetkili olanlar da bu yükümlülük altındadır.",
+      "explanation": "Yükümlülük hem kişiler hem kurumlar için öngörülmüştür. Ölçüt, incelemenin yapılması için bilinmesi gerekli fen ve sanatlar ya da gerekli meslektir.",
+      "articleRefs": [
+        "65"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Bilirkişi incelemesi kararında belirtilen süre en çok ne kadar olabilir?",
+      "back": "Üç ay. Süre işin niteliğine göre belirlenir ve üç ayı geçemez.",
+      "explanation": "Kararda cevaplandırılması uzmanlığı, özel veya teknik bilgiyi gerektiren sorular, inceleme konusu ve görevin yerine getirileceği süre birlikte belirtilir.",
+      "articleRefs": [
+        "66"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Özel sebepler zorunlu kıldığında bilirkişinin inceleme süresi en çok ne kadar uzatılabilir?",
+      "back": "En çok üç ay daha. Uzatma, bilirkişinin istemi üzerine kendisini atayan merciin gerekçeli kararıyla yapılır.",
+      "explanation": "Belirlenen süre içinde raporunu vermeyen bilirkişi hemen değiştirilebilir. Bu durumda o ana kadar yaptığı işlemleri açıklayan bir rapor sunar, kendisine teslim edilen eşya ve belgeleri de hemen geri verir. Ücret ve masraf adı altında hiçbir ödeme yapılmamasına da karar verilebilir.",
+      "articleRefs": [
+        "66"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Bilirkişi raporunda hukukî nitelendirme yapabilir mi?",
+      "back": "Hayır. Hâkim tarafından yapılması gereken hukukî nitelendirme ve değerlendirmelerde bulunamaz.",
+      "explanation": "Bilirkişi, hem raporunda hem sözlü açıklamaları sırasında yalnız çözümü uzmanlığı, özel veya teknik bilgiyi gerektiren hususlarda açıklama yapabilir.",
+      "articleRefs": [
+        "67"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Yeni bilirkişi incelemesi ya da itiraz istemi reddedilirse gerekçeli karar ne kadar sürede verilir?",
+      "back": "Üç gün içinde gerekçeli karar verilir.",
+      "explanation": "İnceleme tamamlanınca Cumhuriyet savcısına, katılana, vekiline, şüpheli veya sanığa, müdafiine ya da kanunî temsilciye bu istemler için süre verilir. Bu kişiler uzmanından bilimsel mütalaa da alabilir. Ancak sadece bu nedenle ayrıca süre istenemez.",
+      "articleRefs": [
+        "67"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Soruşturma evresinde Cumhuriyet savcısının kabul etmediği bilirkişi reddi istemini davayı görmekte olan hâkim mi inceler?",
+      "back": "Hayır. Soruşturma evresinde savcının kabul etmediği ret istemini sulh ceza hâkimi inceler. Davayı görmekte olan hâkim veya mahkeme, ret istemini inceleyen genel mercidir.",
+      "explanation": "Hâkimin reddini gerektiren sebepler bilirkişi için de geçerlidir. Ret hakkını Cumhuriyet savcısı, katılan, vekili, şüpheli veya sanık, müdafii veya kanunî temsilci kullanır. Reddi isteyen kişi, nedenini dayandığı olguları göstererek açıklamak zorundadır.",
+      "articleRefs": [
+        "69"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Bilirkişi ücret ve giderlerinde esas alınan tarifeyi kim çıkarır?",
+      "back": "Adalet Bakanlığı. Tarife her yıl güncellenir.",
+      "explanation": "Bilirkişiye emek ve mesaisiyle orantılı bir ücret ödenir. İnceleme, ulaşım, konaklama ve diğer giderleri de karşılanır.",
+      "articleRefs": [
+        "72"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Para ve Devletin çıkardığı tahvil, Hazine bonosu gibi değerlerdeki sahtecilik suçlarında elkonulanlar kime incelettirilir?",
+      "back": "Asıllarını tedavüle çıkaran kurumların merkez veya taşra birimlerine. Elkonulan para ve değerlerin hepsi incelettirilir.",
+      "explanation": "Yabancı devletlerin paraları ve değerleri hakkında ise yetkili Türk makamlarının görüşlerinin alınmasına karar verilir.",
+      "articleRefs": [
+        "73"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Şüpheli veya sanık tek seferde en çok ne kadar süre gözlem altında tutulabilir?",
+      "back": "Üç hafta. Ek sürelerle birlikte toplam süre üç ayı geçemez.",
+      "explanation": "Süre yetmezse resmî sağlık kurumunun istemi üzerine ek süreler verilebilir. Her ek süre de üç haftayı geçemez.",
+      "articleRefs": [
+        "74"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Soruşturma evresinde gözlem altına alınmaya kim karar verir?",
+      "back": "Sulh ceza hâkimi. Kovuşturma evresinde ise mahkeme karar verir.",
+      "explanation": "Karar için fiili işlediği yolunda kuvvetli şüphe ve uzman hekimin önerisi gerekir. Cumhuriyet savcısı ile müdafi de dinlenir. Kişi resmî bir sağlık kurumunda gözlem altına alınır. Müdafi yoksa, hâkim veya mahkemenin istemi üzerine baro bir müdafi görevlendirir.",
+      "articleRefs": [
+        "74"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Gözlem altına alınma kararına itiraz, kararın yerine getirilmesini durdurur mu?",
+      "back": "Evet. Karara itiraz edilebilir ve itiraz, kararın yerine getirilmesini durdurur.",
+      "explanation": "Gözlemle şunlar saptanır: şüpheli veya sanığın akıl hastası olup olmadığı, akıl hastasıysa ne zamandan beri hasta olduğu ve bunun davranışları üzerindeki etkileri. Hüküm, 223 üncü maddenin sekizinci fıkrası gereğince yargılamanın durması kararı verilmesi gereken hâllerde de uygulanır.",
+      "articleRefs": [
+        "74"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Gecikmesinde sakınca bulunan hâlde Cumhuriyet savcısının verdiği iç beden muayenesi kararı kaç saat içinde hâkim veya mahkemenin onayına sunulur?",
+      "back": "Yirmidört saat içinde. Hâkim veya mahkeme de yirmidört saat içinde kararını verir.",
+      "explanation": "Onaylanmayan kararlar hükümsüz kalır ve elde edilen deliller kullanılamaz. Hâkim veya mahkeme kararlarına itiraz edilebilir.",
+      "articleRefs": [
+        "75"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Üst sınırı kaç yıldan az hapis cezasını gerektiren suçlarda şüpheli veya sanık üzerinde iç beden muayenesi yapılamaz?",
+      "back": "İki yıl. Üst sınırı iki yıldan daha az hapis cezasını gerektiren suçlarda iç beden muayenesi yapılamaz; kan, saç, tükürük, tırnak gibi örnekler de alınamaz.",
+      "explanation": "Müdahalenin kişinin sağlığına zarar verme tehlikesi bulunmamalıdır. İşlemi ancak tabip veya sağlık mesleği mensubu diğer bir kişi yapabilir. Cinsel organlar veya anüs bölgesinde yapılan muayene de iç beden muayenesi sayılır.",
+      "articleRefs": [
+        "75"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Mağdurun rızası bulunsa bile hangi araştırma için md 76/1'e göre karar alınması gerekir?",
+      "back": "Çocuğun soy bağının araştırılması. Karar, Cumhuriyet savcısının istemiyle ya da re'sen hâkim veya mahkemece, gecikmesinde sakınca bulunan hâllerde Cumhuriyet savcısınca verilir.",
+      "explanation": "Cumhuriyet savcısının kararı yirmidört saat içinde hâkim veya mahkemenin onayına sunulur. Hâkim veya mahkeme de yirmidört saat içinde kararını verir. Onaylanmayan kararlar hükümsüz kalır ve elde edilen deliller kullanılamaz. Bu madde gereğince verilen hâkim veya mahkeme kararlarına itiraz edilebilir.",
+      "articleRefs": [
+        "76"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Moleküler genetik incelemeler hangi amaçlarla yapılabilir?",
+      "back": "Zorunlu olması hâlinde iki amaçla yapılabilir: soybağının tespiti ya da elde edilen bulgunun şüpheli veya sanığa ya da mağdura ait olup olmadığının tespiti.",
+      "explanation": "Alınan örnekler üzerinde bu amaçlar dışında tespit yapmaya yönelik incelemeler yasaktır. Aynı incelemeler, bulunan ve kime ait olduğu belli olmayan beden parçaları üzerinde de yapılabilir.",
+      "articleRefs": [
+        "78"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Moleküler genetik incelemeye kim karar verebilir?",
+      "back": "Sadece hâkim. Kararda inceleme ile görevlendirilen bilirkişi de gösterilir.",
+      "explanation": "İncelenecek bulgu bilirkişiye verilirken ilgilinin adı ve soyadı, adresi, doğum tarihi bildirilmez. Bilirkişi, yasak moleküler genetik incelemelerin yapılmasını ve yetkisiz üçüncü kişilerin bilgi edinmesini önlemekle yükümlüdür.",
+      "articleRefs": [
+        "79"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Derhâl yok etme hâlleri dışında genetik inceleme sonuçları, mahkeme kararının kesinleşmesinden itibaren ne kadar süre sonra yok edilir?",
+      "back": "Yirmi yıl geçmesiyle. Yok etme Cumhuriyet savcısının huzurunda yapılır ve tutanağa geçirilir.",
+      "explanation": "Şu hâllerde bilgiler derhâl yok edilir: kovuşturmaya yer olmadığı kararına itiraz süresinin dolması, itirazın reddi, beraat veya ceza verilmesine yer olmadığı kararının kesinleşmesi. İnceleme sonuçları kişisel veri niteliğindedir; sisteme kaydedilen bilgiler, yürütülmekte olan bir soruşturma veya kovuşturmada maddî gerçeğin ortaya çıkarılması amacıyla mahkeme, hâkim veya Cumhuriyet savcısı kararıyla kullanılabilir.",
+      "articleRefs": [
+        "80"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Fizik kimliğin tespiti, üst sınırı en az kaç yıl hapis cezasını gerektiren suçlarda yapılabilir?",
+      "back": "İki yıl. Üst sınırı iki yıl veya daha fazla hapis cezasını gerektiren suçlarda, Cumhuriyet savcısının emriyle yapılır.",
+      "explanation": "Kimliğin teşhisi için gerekliyse şunlar kayda alınıp dosyaya konulur: fotoğraf, beden ölçüleri, parmak ve avuç içi izi, teşhisi kolaylaştıracak diğer bedensel özellikler, ses ve görüntüler. Kovuşturmaya yer olmadığı kararına itiraz süresinin dolması, itirazın reddi, beraat veya ceza verilmesine yer olmadığı kararının kesinleşmesi hâllerinde kayıtlar savcının huzurunda derhâl yok edilir.",
+      "articleRefs": [
+        "81"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Gecikmesinde sakınca bulunan hâllerde keşfi kim yapabilir?",
+      "back": "Cumhuriyet savcısı. Kural olarak keşfi hâkim veya mahkeme, naip hâkim ya da istinabe olunan hâkim veya mahkeme yapar.",
+      "articleRefs": [
+        "83"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Keşif tutanağına yalnızca var olan durum mu yazılır?",
+      "back": "Hayır. Olayın özel niteliğine göre varlığı umulup da elde edilemeyen delillerin yokluğu da tutanağa yazılır.",
+      "articleRefs": [
+        "83"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Yer gösterme işlemi hangi şüpheliye yaptırılabilir?",
+      "back": "Kendisine yüklenen suç hakkında açıklamada bulunmuş olan şüpheliye.",
+      "explanation": "İşlemi Cumhuriyet savcısı yaptırır. Md 250'nin birinci fıkrası kapsamına giren suçlarda adli kolluk amiri de yetkilidir. Soruşturmayı geciktirmemek kaydıyla müdafi de hazır bulunabilir. İşlem md 169'a uygun olarak tutanağa bağlanır.",
+      "articleRefs": [
+        "85"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Otopsi kural olarak kaç hekim tarafından yapılır?",
+      "back": "İki hekim; otopsi Cumhuriyet savcısının huzurunda yapılır. Zorunluluk bulunduğunda bir hekim de yapabilir ve bu durum otopsi raporunda açıkça belirtilir.",
+      "explanation": "Hekimler, biri adlî tıp, diğeri patoloji uzmanı veya diğer dallardan birisinin mensubu ya da biri pratisyen iki hekimdir. Müdafi veya vekil tarafından getirilen hekim de otopside hazır bulunabilir. Cesedin durumu olanak verirse baş, göğüs ve karın mutlaka açılır.",
+      "articleRefs": [
+        "87"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Öleni ölümünden hemen önceki hastalığında tedavi etmiş tabibin otopsi sırasında hazır bulunması istenebilir mi?",
+      "back": "Evet. Bu tabibin otopsi sırasında hazır bulunması ve hastalığın seyri hakkında bilgi vermesi istenebilir. Ancak ona otopsi yapma görevi verilemez.",
+      "articleRefs": [
+        "87"
+      ],
+      "counterNumbers": [],
+      "explanation": "Otopsi, Cumhuriyet savcısının huzurunda biri adlî tıp, diğeri patoloji uzmanı veya diğer dallardan birisinin mensubu ya da biri pratisyen iki hekim tarafından yapılır. Zorunluluk bulunduğunda otopsi işlemi bir hekim tarafından da yapılabilir; bu durum otopsi raporunda açıkça belirtilir. Müdafi veya vekil tarafından getirilen hekim de otopside hazır bulunabilir."
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Gömülmüş bir cesedin mezardan çıkarılmasına soruşturma evresinde kim karar verir?",
+      "back": "Cumhuriyet savcısı. Kovuşturma evresinde ise mahkeme karar verir.",
+      "explanation": "Araştırmanın amacını tehlikeye düşürmeyecekse ve ölünün yakınına ulaşmak zor değilse, mezardan çıkarma kararı ölünün bir yakınına derhâl bildirilir. Bu işlemler yapılırken cesedin görüntüleri kayda alınır.",
+      "articleRefs": [
+        "87"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Yeni doğanın cesedi üzerinde adlî muayene veya otopside neler saptanır?",
+      "back": "Doğum sırasında veya doğumdan sonra yaşam bulgularının varlığı ve olağan süresinde doğup doğmadığı saptanır. Biyolojik olarak yaşamını rahim dışında sürdürebilecek kadar olgunlaşmış olup olmadığı veya yaşama yeteneği bulunup bulunmadığı da saptanır.",
+      "articleRefs": [
+        "88"
+      ]
+    }
+  ]
+}

@@ -2,7 +2,7 @@ import { useRouter } from "expo-router";
 import { ArrowLeft, Bell, Inbox, Play, Search, Star } from "lucide-react-native";
 import { useState } from "react";
 import { View } from "react-native";
-import { CountdownHeader, CourseTile, FeedbackPanel, FlashCard, FlashcardEntry, FlashcardKindBadge, FlashcardResultPanel, FlashcardStateBar, LegislationRow, NotificationRow, QuestionMetaRow, QuestionOption, QuestionStem, RatingBar, ResultPanel, SessionProgress, SessionTitleBlock, TaskHero, ToolRow, UndoStrip, type OptionState, ShareQuestionCard, CourseCard, ResumeStrip, TestCard, CoveragePanel, UpsellStrip, ExamContextLine, ForYouList, LeaderboardTeaser, NextStepCard, RouteList, WeekSummaryLine, LeaderboardList, LeaderboardMyRank, LeaderboardPodium, RankAvatar, RankLabel, RankSystemSheet } from "@/components/domain";
+import { CountdownHeader, CourseTile, FeedbackPanel, FlashCard, FlashcardEntry, FlashcardKindBadge, FlashcardResultPanel, FlashcardStateBar, LegislationRow, NotificationRow, QuestionMedia, QuestionMetaRow, QuestionOption, QuestionStem, RatingBar, ResultPanel, SessionProgress, SessionTitleBlock, TaskHero, ToolRow, UndoStrip, type OptionState, ShareQuestionCard, CourseCard, ResumeStrip, TestCard, CoveragePanel, UpsellStrip, ExamContextLine, ForYouList, LeaderboardTeaser, NextStepCard, ReviewPromptSheet, RouteList, WeekSummaryLine, LeaderboardList, LeaderboardMyRank, LeaderboardPodium, RankAvatar, RankLabel, RankSystemSheet } from "@/components/domain";
 import type { Flashcard } from "@/features/flashcards/queries";
 import type { LeaderboardRow, RankCatalogItem } from "@/features/progress/queries";
 import type { InboxItem } from "@/features/notifications/queries";
@@ -139,6 +139,7 @@ export default function GaleriScreen() {
   const [chip, setChip] = useState<"coach" | "course" | "wrongs">("coach");
   const [sheet, setSheet] = useState(false);
   const [rutbeSheet, setRutbeSheet] = useState(false);
+  const [reviewSheet, setReviewSheet] = useState<"seri" | "varsayilan" | null>(null);
   const [picked, setPicked] = useState<string | null>(null);
   const [kartArka, setKartArka] = useState(false);
   const [kartFavori, setKartFavori] = useState(false);
@@ -317,6 +318,21 @@ export default function GaleriScreen() {
           />
           <LeaderboardTeaser data={{ period: "today", scorers: 0, top: [], me: null, line: "Tahta bugün bomboş — ilk sırayı kapma şansı." }} onPress={() => {}} />
           <WeekSummaryLine left="142 soru · 3/5 gün" right="Komiser Yardımcısı" />
+          {/* Doc 57: mağaza değerlendirme alt sayfası — metinler sunucudan gelir; burada iki örnek. */}
+          <View style={{ flexDirection: "row", gap: 12 }}>
+            <Button title="Değerlendirme · varsayılan" variant="secondary" size="sm" onPress={() => setReviewSheet("varsayilan")} />
+            <Button title="Değerlendirme · seri" variant="secondary" size="sm" onPress={() => setReviewSheet("seri")} />
+          </View>
+          <ReviewPromptSheet
+            visible={reviewSheet != null}
+            prompt={
+              reviewSheet === "seri"
+                ? { id: "g", moment: "streak_7", label: "7 günlük seri", title: "7 gündür buradasın.", body: "Bu düzeni Paemisyon'la kurduysan mağazada anlat. Bir sonraki aday belki senin cümlenle başlar." }
+                : { id: "g", moment: "personal_best", label: "Bir dakikan var mı?", title: "Bugün iyi gitti.", body: "Paemisyon'la çalışmak hoşuna gidiyorsa mağazadaki değerlendirmen bizim için çok şey ifade eder." }
+            }
+            onRate={() => setReviewSheet(null)}
+            onDismiss={() => setReviewSheet(null)}
+          />
           <View style={{ flexDirection: "row", gap: 12 }}>
             <CourseCard name="Genel Kültür ve Analitik Düşünme" accuracyPct={31} band="weak" note="Sınavda %30" onPress={() => {}} />
             <CourseCard name="Polis Mevzuatı" accuracyPct={null} band="new" note="Henüz başlanmadı" onPress={() => {}} />
@@ -353,6 +369,8 @@ export default function GaleriScreen() {
 
         <Section title="Soru">
           <QuestionStem index={4} total={12} topic="Koruma tedbirleri" stem="Şüpheli, gözaltına alındığı andan itibaren en geç kaç saat içinde hâkim önüne çıkarılır?" />
+          <QuestionStem index={97} total={100} topic="Matematik ve Sayısal Mantık" stem="Yukarıdaki şekilde K, L, M, N, P, R ve S sayıları doğal sayılardır. N sayısı 26 olduğuna göre, K+S toplamı kaçtır?" mediaUrl="https://paemisyon.com/soru-gorsel/paem-9/97.png" />
+          <QuestionMedia url="https://paemisyon.com/soru-gorsel/yok.png" alt="Yüklenemeyen görsel örneği" />
           {(
             [
               ["A", "On iki saat", picked === "A" ? "selected" : "default"],

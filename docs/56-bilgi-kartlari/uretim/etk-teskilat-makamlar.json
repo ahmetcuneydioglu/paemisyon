@@ -1,0 +1,270 @@
+{
+  "deck": {
+    "topicId": "9c9b822c-028f-4d9b-929f-ad8487d53db4",
+    "legislationSlug": "3201-sayili-emniyet-teskilat-kanunu",
+    "unitSlug": "etk-teskilat-makamlar",
+    "sourceLabel": "AI bilgi kartı — 3201 Sayılı Emniyet Teşkilat Kanunu md 1–6, 8–12",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: etk-teskilat-makamlar özeti + resmî madde metni); denetim düzeltmesi 7 Kas 2026 (3 kart + #4–#6 çıkarıldı: kalkmış makamlardan oluşan komisyon; eski kurum adlarına güncel karşılık)"
+  },
+  "cards": [
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Memleketin umumi emniyet ve asayiş işlerinden kim mesuldür?",
+      "back": "Dahiliye Vekili (İçişleri Bakanı) mesuldür.",
+      "explanation": "Mesuliyet Dahiliye Vekilindedir (İçişleri Bakanı). Bu işlerin hangi teşkilatlar vasıtasıyla ifa edileceği ve lüzum hâlinde ordu kuvvetlerinden istifade usulü de aynı maddede düzenlenir.",
+      "articleRefs": [
+        "1"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Dahiliye Vekili umumi emniyet ve asayiş işlerini hangi teşkilatlar vasıtasıyla ifa eder?",
+      "back": "Kendi kanunları dairesinde hareket eden Emniyet Umum Müdürlüğü ile Umum Jandarma Komutanlığı ve icabında diğer bütün zabıta teşkilatı vasıtasıyla ifa eder.",
+      "explanation": "Diğer bütün zabıta teşkilatının kullanılması “icabında” kaydına bağlıdır. Emniyet Umum Müdürlüğü ile Umum Jandarma Komutanlığı ise kendi kanunları dairesinde hareket eder.",
+      "articleRefs": [
+        "1"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Dahiliye Vekili, lüzum hâlinde ordu kuvvetlerinden doğrudan kendi emriyle istifade edebilir mi?",
+      "back": "Hayır. Dahiliye Vekili (İçişleri Bakanı) ordu kuvvetlerinden lüzum hâlinde ve Cumhurbaşkanı kararıyla istifade eder.",
+      "explanation": "Ordu kuvvetlerinden istifade hem lüzum hâline hem de Cumhurbaşkanı kararına bağlıdır.",
+      "articleRefs": [
+        "1"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Zabıta teşkilatı kaç kısma ayrılır?",
+      "back": "İki kısma ayrılır: umumi zabıta ve hususi zabıta.",
+      "explanation": "Umumi zabıta, silahlı bir kuvvet olan polis ve jandarmadır. Hususi zabıta ise umumi zabıta haricinde kalan, mahsus kanunlarına göre teşekkül edip muayyen vazifeleri gören zabıta kuvvetleridir.",
+      "articleRefs": [
+        "3"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Hususi zabıta teşkilatı bu kanun hükümlerine tabi midir?",
+      "back": "Hayır. Hususi zabıta, jandarma gibi kendi kanunlarına tabidir. Bu kanun hükümlerine emniyet teşkilatı tabidir.",
+      "explanation": "Jandarma ve hususi zabıta teşkilatı kendi kanunlarına, emniyet teşkilatı ise bu kanun hükümlerine tabidir. Hususi zabıta zaten mahsus kanunlarına göre teşekkül eder.",
+      "articleRefs": [
+        "3"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Emniyet teşkilatı, jandarma ve hususi zabıtanın merkezde ve vilayetlerde aralarındaki irtibat, muhabere ve çalışma tarzlarını hangi düzenleme belirler?",
+      "back": "Cumhurbaşkanınca çıkarılan yönetmelik belirler.",
+      "explanation": "Yönetmelik, bu kuvvetlerin hem merkezdeki hem vilayetlerdeki irtibat, muhabere ve çalışma tarzlarını kapsar.",
+      "articleRefs": [
+        "3"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Polis, üniformalı olup olmamasına göre kaç kısımdır?",
+      "back": "İki kısımdır: üniformalı ve sivil.",
+      "explanation": "Kanun polisi silahlı icra ve inzibat kuvveti olarak tanımlar.",
+      "articleRefs": [
+        "4"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Emniyet Teşkilatında kriminal laboratuvar ve trafik fenni muayene hizmetlerini kim ifa eder?",
+      "back": "Emniyet hizmetleri sınıfı mensupları ifa eder.",
+      "explanation": "Fiili polis hizmetleri dışında kalan yazı, hesap, levazım, telli veya telsiz haberleşme, kriminal laboratuvar, trafik fenni muayene, kayıt, tescil ve benzeri hizmetler bu sınıfın mensuplarınca ifa olunur.",
+      "articleRefs": [
+        "4"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Hizmet bölümlerinin görev ve çalışma şartları, bölümler arası aktarma esasları ve sağlık şartları hangi düzenlemeyle belirtilir?",
+      "back": "İçişleri Bakanlığınca hazırlanacak bir yönetmelikle belirtilir.",
+      "explanation": "Bu yönetmelik üç konuyu kapsar: her hizmet bölümü için gerekli görev ve çalışma şartları, bir hizmet bölümünden diğerine aktarılmada gözönünde bulundurulacak esaslar ve sağlık şartları.",
+      "articleRefs": [
+        "4"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Üniformalı polis hangi kısımlara ayrılır?",
+      "back": "Vasıtalı ve vasıtasız kısımlara ayrılır.",
+      "explanation": "Ayrımın ölçütü, kısmın vasıtalarla teçhiz edilip edilmemesidir.",
+      "articleRefs": [
+        "5"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Atlı ve bisikletli polis, üniformalı polisin hangi kısmında yer alır?",
+      "back": "Vasıtalı polis kısmında yer alır. Bu kısım atlı, bisikletli, motörlü ve canlı, cansız diğer vasıtalarla teçhiz edilir.",
+      "articleRefs": [
+        "5"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Sivil polis nasıl tanımlanır?",
+      "back": "Her nevi emniyet hizmetinde üniformasız çalıştırılan kısımdır.",
+      "explanation": "Tanım hizmet türünü sınırlamaz: sivil polis her nevi emniyet hizmetinde çalıştırılabilir.",
+      "articleRefs": [
+        "6"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Emniyet teşkilatının bölümlerine göre polis hangi kısımlara ayrılır?",
+      "back": "İdari, siyasi ve adli kısımlara ayrılır.",
+      "explanation": "Bu kısımların tanımları md 9'da yapılır.",
+      "articleRefs": [
+        "8"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Lüzum görülen yerlerde belediye zabıtası işlerini gören kısım adli polis kadrosundan mı ayrılır?",
+      "back": "Hayır. Bu kısım idari polis kadrosundan ayrılır ve tahsisatı belediyelerden alınır.",
+      "explanation": "Bu kısımdaki memurlar da bu kanun hükümlerine tabi tutulur.",
+      "articleRefs": [
+        "8"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Emniyet kadrosuna alınacak belediye zabıtasının maaş ve masrafları nasıl ödenir?",
+      "back": "Cumhurbaşkanı kararıyla Emniyet Umum Müdürlüğü bütçesinden ödenir.",
+      "explanation": "Belediyelerden verilecek tahsisat nispetinde, Emniyet Umum Müdürlüğü kadrosundaki şube müdürü, emniyet amiri başkomiser, komiser, komiser muavini ve polis adedi de Cumhurbaşkanı kararıyla tezyid edilebilir. Belediye zabıtası işlerinde çalışanlar, aldıkları maaş miktarına göre bu kadrolara tayin edilir.",
+      "articleRefs": [
+        "8"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "İdari polis neyle mükelleftir?",
+      "back": "İçtimai ve umumi intizamı temin etmekle mükelleftir.",
+      "articleRefs": [
+        "9"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Siyasi polis hangi işlerle mükelleftir?",
+      "back": "Devletin umumi emniyetine taalluk eden işlerle mükelleftir.",
+      "articleRefs": [
+        "9"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Adli polis hangi yerlerde, kim tarafından kadrodan ayrılır?",
+      "back": "Asgari tam teşekküllü bir polis karakolu bulunan yerlerde, Emniyet Umum Müdürlüğünce kadrodan ayrılır.",
+      "explanation": "Tam teşekküllü bir kadrodan daha az kuvvette olan polis teşekküllerinin de tamamı veya bir kısmı adli polis olarak tefrik edilebilir.",
+      "articleRefs": [
+        "9"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Adli polis, adli tahkikat vazifeleri haricindeki hizmetlerde kimin emrindedir?",
+      "back": "Mafevklerinin emrindedir.",
+      "explanation": "Bu kayıt, adli tahkikat vazifeleri haricindeki hizmetler için konmuştur.",
+      "articleRefs": [
+        "10"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Adli polis hangi düzende bulundurulur?",
+      "back": "Toplu olarak veya mıntakalara ihtiyaç nispetinde tevzi edilmiş hâlde bulundurulur.",
+      "articleRefs": [
+        "10"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Mahalli vakalar hakkında malumat istemek için Emniyet Umum Müdürlüğü hangi teşkilatla re'sen muhabereye salahiyetlidir?",
+      "back": "Vilayet emniyet teşkilatıyla re'sen muhabereye salahiyetlidir.",
+      "explanation": "Vilayet emniyet müdürlüğü de vilayet dahilindeki emniyet teşkilatıyla re'sen muhabereye salahiyetlidir.",
+      "articleRefs": [
+        "11"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Kaza emniyet amirliği, mahalli bir vaka hakkında malumat almak için kaza dahilindeki emniyet teşkilatına doğrudan yazabilir mi?",
+      "back": "Evet. Kaza emniyet amirliği kaza dahilindeki emniyet teşkilatıyla re'sen muhabereye salahiyetlidir.",
+      "explanation": "Re'sen muhabere yetkisi kademe kademe tanınmıştır: Emniyet Umum Müdürlüğü vilayet emniyet teşkilatıyla, vilayet emniyet müdürlüğü vilayet dahilindeki emniyet teşkilatıyla, kaza emniyet amirliği de kaza dahilindeki emniyet teşkilatıyla yazışır.",
+      "articleRefs": [
+        "11"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Re'sen muhabere salahiyeti yalnız zat işlerinde mi kullanılabilir?",
+      "back": "Hayır. Bu salahiyet mahalli vakalar hakkında malumat istemek ile teknik, muhasebe, levazım ve zat işlerine ait muameleleri idare etmek için kullanılır.",
+      "explanation": "Bu salahiyet Emniyet Umum Müdürlüğüne, vilayet emniyet müdürlüğüne ve kaza emniyet amirliğine, kendi alt teşkilatlarıyla yazışmak üzere tanınmıştır.",
+      "articleRefs": [
+        "11"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Adli işlere müteallik tahkikat kime yaptırılır?",
+      "back": "Kural olarak adli zabıtaya yaptırılır. Tahkikat, salahiyetli adli otoritelerin direktifleri altında ve kanunlarına tevfikan yürütülür. Polis teşkilatı yapılmayan yerlerde, teşkilat yapılıncaya kadar adli polis vazifelerini diğer zabıta yapar.",
+      "articleRefs": [
+        "12"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "İdari zabıta, adli zabıtaya yalnız Cumhuriyet Müddeiumumisinin talebi üzerine mi yardım eder?",
+      "back": "Hayır. İdari zabıta adli zabıtaya icabında veya Cumhuriyet Müddeiumumisinin talebi üzerine yardımla mükelleftir.",
+      "explanation": "Yardım yükümlülüğünün dayanağı iki ayrı hâldir: icabında ya da Cumhuriyet Müddeiumumisinin talebi üzerine. Bu hâllerden biri yeterlidir.",
+      "articleRefs": [
+        "12"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Adli zabıta vazifesini tahrik eden bir hâlle karşılaşan idari polis ne yapar?",
+      "back": "Bir taraftan adli zabıta vazifesini ifa eder, diğer taraftan adli zabıtayı haberdar eder. Adli zabıta gelince işi ona devreder.",
+      "articleRefs": [
+        "12"
+      ]
+    }
+  ]
+}

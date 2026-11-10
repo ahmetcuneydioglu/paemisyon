@@ -1,0 +1,316 @@
+{
+  "deck": {
+    "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+    "legislationSlug": "turk-ceza-kanunu",
+    "sourceLabel": "AI bilgi kartı — Türk Ceza Kanunu md 45–52",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: resmî madde metni + çıkmış sorular); denetim düzeltmesi 6 Kas 2026 (4 kart)"
+  },
+  "cards": [
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Türk Ceza Kanunu'na göre suç karşılığında uygulanan yaptırım olarak cezalar nelerdir?",
+      "back": "Hapis ve adlî para cezaları.",
+      "explanation": "Suç karşılığında uygulanan yaptırım olarak cezalar yalnızca hapis cezaları ile adlî para cezalarıdır.",
+      "articleRefs": [
+        "45"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Türk Ceza Kanunu'nda hapis cezaları hangi türlerden oluşur?",
+      "back": "Ağırlaştırılmış müebbet hapis cezası, müebbet hapis cezası ve süreli hapis cezası.",
+      "articleRefs": [
+        "46"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Ağırlaştırılmış müebbet hapis cezası hangi rejime göre çektirilir?",
+      "back": "Kanun ve Cumhurbaşkanınca çıkarılan yönetmelikte belirtilen sıkı güvenlik rejimine göre.",
+      "explanation": "Bu ceza hükümlünün hayatı boyunca devam eder.",
+      "articleRefs": [
+        "47"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Müebbet hapis cezası, ağırlaştırılmış müebbet hapis cezasından daha kısa mı sürer?",
+      "back": "Hayır. İkisi de hükümlünün hayatı boyunca devam eder; ağırlaştırılmış müebbet ayrıca sıkı güvenlik rejimine göre çektirilir.",
+      "articleRefs": [
+        "48",
+        "47"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Kanunda aksi belirtilmeyen hallerde süreli hapis cezası en fazla kaç yıl olabilir?",
+      "back": "Yirmi yıl; süreli hapis cezası yirmi yıldan fazla olamaz.",
+      "explanation": "Aynı kayıtla alt sınır da konmuştur: süreli hapis cezası bir aydan az olamaz.",
+      "articleRefs": [
+        "49"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Hükmedilen en fazla ne kadar süreli hapis cezası kısa süreli hapis cezasıdır?",
+      "back": "Bir yıl; hükmedilen bir yıl veya daha az süreli hapis cezası kısa süreli hapis cezasıdır.",
+      "explanation": "Ölçü, hükmedilen ceza süresidir; tam bir yıllık hapis de kısa süreli sayılır.",
+      "articleRefs": [
+        "49"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Kanunda aksi belirtilmeyen hallerde süreli hapis cezasının alt sınırı bir yıl mıdır?",
+      "back": "Hayır. Süreli hapis cezası bir aydan az olamaz; bir yıl, kısa süreli hapis cezasının üst sınırıdır.",
+      "articleRefs": [
+        "49"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Kısa süreli hapis cezası hangi ölçütlere göre seçenek yaptırımlara çevrilebilir?",
+      "back": "Suçlunun kişiliğine, sosyal ve ekonomik durumuna, yargılama sürecinde duyduğu pişmanlığa ve suçun işlenmesindeki özelliklere göre.",
+      "explanation": "Kısa süreli hapis, hükmedilen bir yıl veya daha az süreli hapis cezasıdır; madde bu cezanın sayılan ölçütlere göre seçenek yaptırımlara çevrilebileceğini söyler.",
+      "articleRefs": [
+        "50",
+        "49"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Kısa süreli hapis cezası hangi durumda ilgili ehliyet ve ruhsat belgelerinin geri alınmasına çevrilebilir?",
+      "back": "Sağladığı hak ve yetkiler kötüye kullanılarak ya da gerektirdiği dikkat ve özen yükümlülüğüne aykırı davranılarak suç işlenmişse.",
+      "explanation": "Bu halde ceza, mahkûm olunan cezanın yarısından bir katına kadar süreyle belli bir meslek ve sanatı yapmaktan yasaklanmaya da çevrilebilir.",
+      "articleRefs": [
+        "50"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Kamuya yararlı bir işte çalıştırma seçenek yaptırımı ne kadar süreyle uygulanır?",
+      "back": "Mahkûm olunan cezanın yarısından bir katına kadar süreyle; hükümlünün gönüllü olması koşuluyla.",
+      "explanation": "Aynı süre aralığı, belirli yerlere gitmekten veya belirli etkinlikleri yapmaktan yasaklanma ile ehliyet ve ruhsat belgelerinin geri alınması ya da meslek ve sanat yasağı için de öngörülür.",
+      "articleRefs": [
+        "50"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Fiili işlediği tarihte onsekiz yaşını doldurmamış ya da altmışbeş yaşını bitirmiş, daha önce hapis cezasına mahkûm edilmemiş kişinin en fazla ne kadarlık hapis cezası seçenek yaptırıma çevrilmek zorundadır?",
+      "back": "Bir yıl; bu kişilerin mahkûm edildiği bir yıl veya daha az süreli hapis cezası seçenek yaptırımlardan birine çevrilir.",
+      "explanation": "Burada çevirme takdire bırakılmamıştır: madde \"çevrilir\" der. Bu sınır, kısa süreli hapis cezasının sınırıyla aynıdır; yaş, fiilin işlendiği tarihe göre belirlenir.",
+      "articleRefs": [
+        "50",
+        "49"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Taksirli suçtan hükmolunan uzun süreli hapis cezası hangi seçenek yaptırıma çevrilebilir?",
+      "back": "Adlî para cezasına; hapis uzun süreli de olsa diğer koşullar varsa bu çevirme yapılabilir.",
+      "explanation": "Çevirme, birinci fıkranın (a) bendindeki adlî para cezasına yöneliktir. Kısa süreli hapis, hükmedilen bir yıl veya daha az süreli hapis cezasıdır; bu kural ondan uzun cezalar için de imkân tanır.",
+      "articleRefs": [
+        "50",
+        "49"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Bilinçli taksirle işlenen suçtan hükmolunan uzun süreli hapis cezası adlî para cezasına çevrilebilir mi?",
+      "back": "Hayır. Taksirli suçlarda uzun süreli hapsi adlî para cezasına çevirme hükmü bilinçli taksir halinde uygulanmaz.",
+      "explanation": "\"Ancak\" ile başlayan istisna, yalnızca taksirli suçlardaki uzun süreli hapsi adlî para cezasına çevirme imkânını kaldırır.",
+      "articleRefs": [
+        "50",
+        "49"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Suç tanımında hapis ile adlî para cezası seçimlik olarak öngörülmüşken hapse hükmedildiyse, bu hapis sonradan adlî para cezasına çevrilebilir mi?",
+      "back": "Hayır; bu hapis cezası artık adlî para cezasına çevrilmez.",
+      "explanation": "Hapis cezasına hükmedilmişse adlî para cezasına dönüş kapanır; kural yalnız adlî para cezasına çevirmeyi yasaklar.",
+      "articleRefs": [
+        "50"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Daha önce hapis cezasına mahkûm edilmemiş bir kişinin, yaşı ne olursa olsun, en fazla kaç günlük hapis cezası seçenek yaptırıma çevrilmek zorundadır?",
+      "back": "Otuz gün; otuz gün ve daha az süreli hapis cezası seçenek yaptırımlardan birine çevrilir.",
+      "explanation": "Bu halde de çevirme takdire bırakılmaz; aranan koşul, kişinin daha önce hapis cezasına mahkûm edilmemiş olmasıdır.",
+      "articleRefs": [
+        "50"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Kısa süreli hapis seçenek yaptırıma çevrildiğinde uygulamada asıl mahkûmiyet hangisidir?",
+      "back": "Çevrilen adlî para cezası veya tedbirdir.",
+      "explanation": "Hüküm kesinleştikten sonra Cumhuriyet savcılığının tebligatına rağmen otuz gün içinde seçenek tedbire başlanmaz ya da devam edilmezse infaz hâkimliği hapsin tamamen veya kısmen infazına karar verir; bu durumda asıl mahkûmiyet kuralı uygulanmaz.",
+      "articleRefs": [
+        "50"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Kural olarak hapis cezasının ertelenebilmesi için mahkûm olunan ceza en fazla ne kadar olmalıdır?",
+      "back": "İki yıl; iki yıl veya daha az süreyle hapis cezasına mahkûm edilen kişinin cezası ertelenebilir. Fiili işlediği sırada 18 yaşını doldurmamış veya 65 yaşını bitirmiş olanlar için bu üst sınır üç yıldır.",
+      "explanation": "Madde \"ertelenebilir\" der; erteleme için ayrıca önceki mahkûmiyete ve pişmanlığa ilişkin şartlar aranır.",
+      "articleRefs": [
+        "51"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Fiili işlediği sırada onsekiz yaşını doldurmamış ya da altmışbeş yaşını bitirmiş kişide ertelenebilecek hapis cezasının üst sınırı nedir?",
+      "back": "Üç yıl; bu kişiler bakımından ertelenebilecek cezanın üst sınırı üç yıldır.",
+      "explanation": "Diğer kişiler için sınır, iki yıl veya daha az süreli hapis cezasıdır.",
+      "articleRefs": [
+        "51"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Hapis cezasının ertelenebilmesi için kişinin daha önce hiç hapis cezasına mahkûm edilmemiş olması mı gerekir?",
+      "back": "Hayır. Aranan, daha önce kasıtlı bir suçtan dolayı üç aydan fazla hapis cezasına mahkûm edilmemiş olmaktır; pişmanlığa dayalı mahkeme kanaati de ayrıca gerekir.",
+      "articleRefs": [
+        "51"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Hapis cezasının ertelenmesi hangi koşula bağlı tutulabilir?",
+      "back": "Mağdurun veya kamunun uğradığı zararın aynen iade, suçtan önceki hale getirme veya tazmin suretiyle tamamen giderilmesi koşuluna.",
+      "explanation": "Koşul gerçekleşinceye kadar ceza infaz kurumunda çektirilir; koşul yerine getirilince infaz hâkimi kararıyla hükümlü derhal salıverilir.",
+      "articleRefs": [
+        "51"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Denetim süresinde kasıtlı bir suç işleyen hükümlünün ertelenen cezasının infaz kurumunda çektirilmesine kim karar verir?",
+      "back": "İnfaz hâkimliği; ertelenen ceza kısmen veya tamamen infaz kurumunda çektirilebilir.",
+      "explanation": "Aynı sonuç, hükümlünün yükümlülüklere infaz hâkiminin uyarısına rağmen uymamakta ısrar etmesinde de doğar.",
+      "articleRefs": [
+        "51"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Cezası ertelenen hükümlü için denetim süresi hangi sınırlar içinde belirlenir?",
+      "back": "Bir yıldan az, üç yıldan fazla olmamak üzere; alt sınır mahkûm olunan ceza süresinden az olamaz.",
+      "articleRefs": [
+        "51"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Mahkeme, ertelemede denetim süresi için yükümlülük belirlemek zorunda mıdır?",
+      "back": "Hayır; hükümlünün kişiliğini ve sosyal durumunu gözeterek denetim süresinin herhangi bir yükümlülük belirlemeden veya uzman kişi görevlendirmeden geçirilmesine karar verebilir.",
+      "explanation": "İsterse meslek veya sanat sahibi olmayan hükümlünün eğitim programına devamına, meslek sahibinin gözetim altında ücret karşılığında çalıştırılmasına ya da onsekiz yaşından küçük hükümlünün eğitim kurumuna devamına karar verebilir; rehberlik için uzman kişi de görevlendirebilir.",
+      "articleRefs": [
+        "51"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Denetim süresi yükümlülüklere uygun veya iyi halli geçirilirse ertelenen ceza ne olur?",
+      "back": "İnfaz edilmiş sayılır.",
+      "explanation": "Denetim süresinde uzman kişi görevlendirilmişse, hükümlünün davranışları, sosyal uyumu ve sorumluluk bilincindeki gelişme hakkında üçer aylık sürelerle rapor düzenleyerek infaz hâkimine verir.",
+      "articleRefs": [
+        "51"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Adlî para cezası en az kaç tam gün olarak belirlenir; kanunda aksine hüküm bulunmayan hallerde üst sınır kaç tam gündür?",
+      "back": "En az beş tam gün; kanunda aksine hüküm bulunmayan hallerde en çok yediyüzotuz tam gün. Alt sınır her durumda beş gündür.",
+      "explanation": "Bu tam gün sayısı, bir gün karşılığı olarak takdir edilen miktarla çarpılarak ödenecek meblağ bulunur.",
+      "articleRefs": [
+        "52"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Bir gün karşılığı adlî para cezasının miktarı en az ve en çok kaç Türk Lirasıdır?",
+      "back": "En az yüz, en fazla beşyüz Türk Lirası.",
+      "explanation": "Miktar, kişinin ekonomik ve diğer şahsi halleri göz önünde bulundurularak takdir edilir.",
+      "articleRefs": [
+        "52"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Adlî para cezası kararında yalnızca hesaplanan meblağı göstermek yeterli midir?",
+      "back": "Hayır. Kararda esas alınan tam gün sayısı ile bir gün karşılığı olarak takdir edilen miktar ayrı ayrı gösterilir.",
+      "articleRefs": [
+        "52"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Adlî para cezasının meblağı kime ödenir?",
+      "back": "Devlet Hazinesine; hükümlü tarafından ödenir.",
+      "explanation": "Adlî para cezası, hapis cezalarıyla birlikte suç karşılığında uygulanan cezalardandır.",
+      "articleRefs": [
+        "52",
+        "45"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Hâkim, adlî para cezasının ödenmesi için en fazla ne kadar mehil verebilir?",
+      "back": "Bir yıl; hükmün kesinleşme tarihinden itibaren bir yıldan fazla olmamak üzere.",
+      "explanation": "Hâkim, kişinin ekonomik ve şahsi hallerini gözeterek cezanın belirli taksitler halinde ödenmesine de karar verebilir.",
+      "articleRefs": [
+        "52"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Adlî para cezası taksitlendirilirse taksit sayısı en az kaç olmalıdır?",
+      "back": "Dört; taksit miktarı dörtten az olamaz ve taksit süresi iki yılı geçemez.",
+      "explanation": "Kararda, taksitlerden biri zamanında ödenmezse geri kalan kısmın tamamının tahsil edileceği ve ödenmeyen adlî para cezasının hapse çevrileceği belirtilir.",
+      "articleRefs": [
+        "52"
+      ]
+    }
+  ]
+}

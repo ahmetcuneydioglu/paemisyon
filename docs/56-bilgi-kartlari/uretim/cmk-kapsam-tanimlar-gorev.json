@@ -1,0 +1,300 @@
+{
+  "deck": {
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "legislationSlug": "5271-sayili-ceza-muhakemesi-kanunu-cmk",
+    "unitSlug": "cmk-kapsam-tanimlar-gorev",
+    "sourceLabel": "AI bilgi kartı — 5271 Sayılı Ceza Muhakemesi Kanunu (CMK) md 1–11",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: cmk-kapsam-tanimlar-gorev özeti + resmî madde metni); denetim düzeltmesi 6 Kas 2026 (2 kart)"
+  },
+  "cards": [
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Ceza Muhakemesi Kanunu neyi düzenler?",
+      "back": "Ceza muhakemesinin nasıl yapılacağına ilişkin kuralları ve bu sürece katılan kişilerin hak, yetki ve yükümlülüklerini düzenler.",
+      "explanation": "Kanunun konusu hem muhakemenin işleyiş kuralları hem de sürece katılan kişilerin hak, yetki ve yükümlülükleridir.",
+      "articleRefs": [
+        "1"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Soruşturma evresi hangi anla başlar?",
+      "back": "Suç şüphesinin kanuna göre yetkili mercilerce öğrenilmesiyle başlar.",
+      "explanation": "Soruşturma, bu andan iddianamenin kabulüne kadar geçen evredir. Bu evrede suç şüphesi altında bulunan kişi şüphelidir.",
+      "articleRefs": [
+        "2"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Soruşturma evresini bitiren ve kovuşturma evresini başlatan an hangisidir?",
+      "back": "İddianamenin kabulü. Soruşturma bu ana kadar sürer, kovuşturma bu anla başlar.",
+      "explanation": "Kanun evre sınırını iddianamenin kabulüne bağlar. Kovuşturmanın başlamasından itibaren suç şüphesi altındaki kişi sanıktır.",
+      "articleRefs": [
+        "2"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Kovuşturma evresi hangi anda sona erer?",
+      "back": "Hükmün kesinleşmesiyle sona erer. Sanık sıfatı da bu ana kadar sürer.",
+      "explanation": "Sanık, kovuşturmanın başlamasından itibaren hükmün kesinleşmesine kadar suç şüphesi altında bulunan kişidir.",
+      "articleRefs": [
+        "2"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Davaya bakan mahkeme, görevli olup olmadığına hangi evrede re'sen karar verebilir?",
+      "back": "Kovuşturma evresinin her aşamasında re'sen karar verebilir. 6 ncı madde hükmü saklıdır.",
+      "explanation": "Kovuşturma evresi iddianamenin kabulüyle başlar ve hükmün kesinleşmesine kadar sürer. Saklı tutulan md 6'ya göre duruşmada suçun hukuki niteliğinin değiştiğinden bahisle görevsizlik kararı verilerek dosya alt dereceli mahkemeye gönderilemez.",
+      "articleRefs": [
+        "2",
+        "4",
+        "6"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Soruşturma evresinde suç şüphesi altında bulunan kişiye ne ad verilir?",
+      "back": "Şüpheli.",
+      "explanation": "Şüpheli sıfatı soruşturma evresine bağlıdır. Bu evre, suç şüphesinin yetkili mercilerce öğrenilmesinden iddianamenin kabulüne kadar sürer.",
+      "articleRefs": [
+        "2"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "İddianame kabul edildikten sonra suç şüphesi altında bulunan kişi hâlâ şüpheli midir?",
+      "back": "Hayır. İddianamenin kabulüyle kovuşturma başlar ve kişi artık sanıktır; sanıklık hükmün kesinleşmesine kadar sürer.",
+      "explanation": "Sıfat evreye bağlıdır: Soruşturma evresinde kişi şüphelidir. Kovuşturmanın başlamasından hükmün kesinleşmesine kadar ise sanıktır.",
+      "articleRefs": [
+        "2"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Müdafi yalnız şüphelinin savunmasını yapan avukat mıdır?",
+      "back": "Hayır. Müdafi, şüpheli veya sanığın ceza muhakemesinde savunmasını yapan avukattır.",
+      "explanation": "Katılanı, suçtan zarar göreni veya malen sorumluyu ceza muhakemesinde temsil eden avukat ise vekildir.",
+      "articleRefs": [
+        "2"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "İddianamenin kabulünden sonra işin, davayı gören mahkemenin görevini aştığı anlaşılırsa mahkeme ne yapar?",
+      "back": "Bir kararla işi görevli mahkemeye gönderir.",
+      "explanation": "Aynı sonuç, işin mahkemenin görevi dışında kaldığı anlaşıldığında da doğar. İddianamenin kabulü, kovuşturma evresinin başladığı andır.",
+      "articleRefs": [
+        "2",
+        "5"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Katılanı, suçtan zarar göreni veya malen sorumlu kişiyi ceza muhakemesinde temsil eden avukata ne denir?",
+      "back": "Vekil.",
+      "explanation": "Vekil temsil eden avukattır. Şüpheli veya sanığın savunmasını yapan avukat ise müdafidir.",
+      "articleRefs": [
+        "2"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Yargılama konusu iş hükme bağlanıp kesinleştikten sonra, maddî ve malî sorumluluk taşıyarak hükmün sonuçlarından etkilenecek kişiye ne denir?",
+      "back": "Malen sorumlu. Bu kişi hükmün sonuçlarından etkilenir veya bunlara katlanır.",
+      "explanation": "Malen sorumlu kişiyi ceza muhakemesinde temsil eden avukat vekildir.",
+      "articleRefs": [
+        "2"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Soruşturma evresinde şüphelinin hâkim tarafından dinlenmesi ifade alma mıdır?",
+      "back": "Hayır. Evre soruşturma olsa bile, şüpheli veya sanığın hâkim veya mahkeme tarafından dinlenmesi sorgudur. İfade almayı kolluk görevlileri veya Cumhuriyet savcısı yapar.",
+      "explanation": "Ayırt edici ölçüt, dinleyen makamdır. İfade alma yalnız şüpheliden ve soruşturma konusu suçla ilgili yapılır. Sorgu ise soruşturma veya kovuşturma konusu suçla ilgili yapılır.",
+      "articleRefs": [
+        "2"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Bağlantılı ceza davalarının birleştirilmesine veya ayrılmasına hangi mahkeme karar verir?",
+      "back": "Yüksek görevli mahkeme. Bu kararı kovuşturma evresinin her aşamasında verebilir.",
+      "explanation": "Kovuşturma evresi, iddianamenin kabulüyle başlayıp hükmün kesinleşmesine kadar geçen evredir. Birleştirme ve ayırma kararı bu evrenin her aşamasında verilebilir.",
+      "articleRefs": [
+        "2",
+        "10"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Kanuna göre hangi hâller suçüstü sayılır?",
+      "back": "Dört hâl: işlenmekte olan suç; henüz işlenmiş olan fiil; fiilin işlenmesinden hemen sonra kolluk, suçtan zarar gören veya başkaları tarafından takip edilerek yakalanan kişinin işlediği suç; fiilin pek az önce işlendiğini gösteren eşya veya delille yakalanan kimsenin işlediği suç.",
+      "explanation": "Ölçüt zamandır: suç ya işlenmektedir, ya henüz işlenmiştir, ya fail fiilin hemen ardından takip edilerek yakalanmıştır, ya da fail fiilin pek az önce işlendiğini gösteren eşya veya delille yakalanmıştır.",
+      "articleRefs": [
+        "2"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Toplu suç için suçun en az kaç kişi tarafından işlenmesi gerekir?",
+      "back": "En az üç kişi. Üç veya daha fazla kişi tarafından işlenen suç, aralarında iştirak iradesi bulunmasa da toplu suçtur.",
+      "explanation": "Toplu suçta ölçüt, suçu işleyen kişi sayısıdır. Failler arasında iştirak iradesinin bulunması gerekmez.",
+      "articleRefs": [
+        "2"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Bağlantı var sayılması için bir kişi kaç suçtan sanık olmalıdır?",
+      "back": "Birden fazla suçtan. Bir suçta her ne sıfatla olursa olsun birden fazla sanık bulunması da bağlantı sayılır.",
+      "explanation": "Sanık, kovuşturmanın başlamasından hükmün kesinleşmesine kadar suç şüphesi altında bulunan kişidir.",
+      "articleRefs": [
+        "2",
+        "8"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Disiplin hapsi tekerrüre esas olur mu?",
+      "back": "Hayır. Disiplin hapsi tekerrüre esas olmaz; ayrıca ertelenemez ve adlî sicil kayıtlarına geçirilmez.",
+      "explanation": "Disiplin hapsi, kısmî bir düzeni korumak amacıyla yaptırım altına alınmış fiil dolayısıyla verilir. Önödeme ve şartla salıverilme hükümleri de uygulanamaz.",
+      "articleRefs": [
+        "2"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Mahkemelerin görevleri neyle belirlenir?",
+      "back": "Kanunla belirlenir.",
+      "articleRefs": [
+        "3"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Görev konusunda mahkemeler arasında uyuşmazlık çıkarsa görevli mahkemeyi kim belirler?",
+      "back": "Ortak yüksek görevli mahkeme belirler.",
+      "explanation": "Uyuşmazlık dışında, davaya bakan mahkeme görevli olup olmadığına kovuşturma evresinin her aşamasında re'sen karar verebilir.",
+      "articleRefs": [
+        "4"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Adlî yargı içerisindeki mahkemelerin verdiği görevsizlik kararlarına karşı itiraz yolu kapalı mıdır?",
+      "back": "Hayır. Bu kararlara karşı itiraz yoluna gidilebilir.",
+      "explanation": "Görevsizlik kararı, iddianamenin kabulünden sonra işin davayı gören mahkemenin görevini aştığı veya dışında kaldığı anlaşılınca verilir. Bu kararla iş görevli mahkemeye gönderilir.",
+      "articleRefs": [
+        "5"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Duruşmada suçun hukukî niteliğinin değiştiği anlaşılırsa dosya görevsizlik kararıyla alt dereceli mahkemeye gönderilebilir mi?",
+      "back": "Hayır. Duruşmada suçun hukukî niteliğinin değiştiğinden bahisle görevsizlik kararı verilerek dosya alt dereceli mahkemeye gönderilemez.",
+      "explanation": "Yasak, duruşmada ortaya çıkan nitelik değişikliği gerekçesiyle dosyanın alt dereceli mahkemeye gönderilmesine ilişkindir.",
+      "articleRefs": [
+        "6"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Görevli olmayan hâkim veya mahkemenin yaptığı işlemlerin tamamı hükümsüz müdür?",
+      "back": "Hayır. Kural hükümsüzlüktür, ancak yenilenmesi mümkün olmayan işlemler bu kuralın dışında kalır.",
+      "explanation": "Hükümsüzlük kuralı hem görevli olmayan hâkimin hem de görevli olmayan mahkemenin işlemlerini kapsar.",
+      "articleRefs": [
+        "7"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Suçun işlenmesinden sonra gerçekleşen hangi fiiller de bağlantılı suç sayılır?",
+      "back": "Suçluyu kayırma ile suç delillerini yok etme, gizleme veya değiştirme fiilleri.",
+      "explanation": "Bu fiiller suçun işlenmesinden sonra gerçekleşse de bağlantılı suç sayılır.",
+      "articleRefs": [
+        "8"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Bağlantılı suçlardan her biri değişik mahkemelerin görevine giriyorsa dava nasıl açılabilir?",
+      "back": "Bu suçlar hakkında birleştirilmek suretiyle yüksek görevli mahkemede dava açılabilir.",
+      "articleRefs": [
+        "9"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Birleştirilen davalarda hangi yargılama usulü uygulanır?",
+      "back": "Bu davaları gören mahkemenin tâbi olduğu yargılama usulü uygulanır.",
+      "articleRefs": [
+        "10"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "İşin esasına girdikten sonra ayrılan davalar başka mahkemelerde mi görülmeye devam eder?",
+      "back": "Hayır. İşin esasına girdikten sonra ayrılan davalara aynı mahkemede devam olunur.",
+      "explanation": "Bağlantılı davaların birleştirilmesine veya ayrılmasına kovuşturma evresinin her aşamasında yüksek görevli mahkemece karar verilebilir.",
+      "articleRefs": [
+        "10"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Mahkemenin bakmakta olduğu davalar arasındaki bağlantı 8 inci maddedeki türden değilse, mahkeme bu davaları birleştirebilir mi?",
+      "back": "Evet. Bağlantı 8 inci maddede gösterilen türden olmasa bile mahkeme davaların birleştirilmesine karar verebilir.",
+      "explanation": "Bu birleştirme, mahkemenin bakmakta olduğu birden çok dava arasında bağlantı görmesine dayanır.",
+      "articleRefs": [
+        "11"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Geniş bağlantı sebebiyle davalar hangi amaçla birleştirilir?",
+      "back": "Birlikte bakmak ve hükme bağlamak üzere birleştirilir.",
+      "articleRefs": [
+        "11"
+      ]
+    }
+  ]
+}

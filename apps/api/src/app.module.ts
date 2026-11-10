@@ -25,12 +25,14 @@ import { QuestionsModule } from './modules/questions/questions.module';
 import { QuizModule } from './modules/quiz/quiz.module';
 import { ReportsModule } from './modules/reports/reports.module';
 import { ReviewModule } from './modules/review/review.module';
+import { ReviewPromptModule } from './modules/review-prompt/review-prompt.module';
 import { ListsModule } from './modules/lists/lists.module';
 import { PlanModule } from './modules/plan/plan.module';
 import { RoomsModule } from './modules/rooms/rooms.module';
 import { CourseTestsModule } from './modules/course-tests/course-tests.module';
 import { UsersModule } from './modules/users/users.module';
 import { SummariesModule } from './modules/summaries/summaries.module';
+import { LessonsModule } from './modules/lessons/lessons.module';
 import { HubSyncModule } from './modules/hub-sync/hub-sync.module';
 import { FlashcardsModule } from './modules/flashcards/flashcards.module';
 
@@ -76,6 +78,7 @@ import { FlashcardsModule } from './modules/flashcards/flashcards.module';
     QuizModule,
     ProgressModule,
     ReviewModule,
+    ReviewPromptModule,
     ListsModule,
     PlanModule,
     RoomsModule,
@@ -92,6 +95,7 @@ import { FlashcardsModule } from './modules/flashcards/flashcards.module';
     HealthModule,
     UsersModule,
     SummariesModule, // Doc 53 konu özetleri
+    LessonsModule, // Doc 57 konu anlatımı
     FlashcardsModule, // Doc 56 bilgi kartları (bayrak: flashcards_enabled)
     NotificationsModule,
     EmailModule,

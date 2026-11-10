@@ -2,6 +2,7 @@
 
 import { useMutation, useQuery, useQueryClient } from '@tanstack/react-query';
 import Link from 'next/link';
+import { useSearchParams } from 'next/navigation';
 import { useState } from 'react';
 import { Card, ErrorBox, HubBadge, PageHeader, Spinner } from '@/components/ui';
 import { api } from '@/lib/api';
@@ -25,6 +26,20 @@ interface ReportItem {
     tries: number;
   } | null;
 }
+/** Bilgi kartı bildirimi (Doc 56 §3f) — sunucu şekli; listede soru bildirimiyle aynı karta normalize edilir. */
+interface FlashcardReportItem {
+  id: string;
+  flashcardId: string;
+  front: string;
+  cardStatus: string;
+  topicName: string;
+  courseName: string;
+  message: string;
+  reporterEmail: string;
+  status: 'open' | 'resolved' | 'dismissed';
+  createdAt: string;
+}
+type Kind = 'questions' | 'flashcards';
 interface Paged<T> {
   items: T[];
   total: number;
@@ -59,18 +74,43 @@ function HubForwardState({ hub }: { hub: NonNullable<ReportItem['hub']> }) {
 /** Soru hata bildirimleri: kullanıcı kalite döngüsü (özellikle eski içerik için). */
 export default function ReportsPage() {
   const qc = useQueryClient();
+  const params = useSearchParams();
+  // Sekme: sorular (question_reports) · kartlar (flashcard_reports, Doc 56 §3f). ?kind=flashcards ile açılır.
+  const [kind, setKind] = useState<Kind>(params.get('kind') === 'flashcards' ? 'flashcards' : 'questions');
   const [status, setStatus] = useState<'open' | 'resolved' | 'dismissed'>('open');
   const [page, setPage] = useState(1);
 
   const q = useQuery({
-    queryKey: ['reports', status, page],
-    queryFn: () => api<Paged<ReportItem>>(`/admin/reports?status=${status}&page=${page}`),
+    queryKey: ['reports', kind, status, page],
+    queryFn: async (): Promise<Paged<ReportItem>> => {
+      if (kind === 'questions') return api<Paged<ReportItem>>(`/admin/reports?status=${status}&page=${page}`);
+      const r = await api<Paged<FlashcardReportItem>>(`/admin/flashcards/reports?status=${status}&page=${page}`);
+      // Kart satırı aynı kart bileşenine girer: `questionId` yerine kart kimliği, bağlantı kart ayrıntısına.
+      return {
+        ...r,
+        items: r.items.map((x) => ({
+          id: x.id,
+          questionId: x.flashcardId,
+          stem: x.front,
+          topicName: x.topicName,
+          courseName: x.courseName,
+          message: x.message,
+          reporterEmail: x.reporterEmail,
+          status: x.status,
+          createdAt: x.createdAt,
+          hub: null,
+        })),
+      };
+    },
   });
 
   const setReportStatus = useMutation({
     mutationFn: ({ id, s }: { id: string; s: 'resolved' | 'dismissed' }) =>
-      api(`/admin/reports/${id}/status`, { method: 'POST', body: { status: s } }),
-    onSuccess: () => qc.invalidateQueries({ queryKey: ['reports'] }),
+      api(kind === 'questions' ? `/admin/reports/${id}/status` : `/admin/flashcards/reports/${id}/status`, { method: 'POST', body: { status: s } }),
+    onSuccess: () => {
+      qc.invalidateQueries({ queryKey: ['reports'] });
+      qc.invalidateQueries({ queryKey: ['admin-flashcards-stats'] });
+    },
   });
 
   const totalPages = q.data ? Math.max(1, Math.ceil(q.data.total / q.data.pageSize)) : 1;
@@ -78,9 +118,26 @@ export default function ReportsPage() {
   return (
     <>
       <PageHeader
-        title="Soru Bildirimleri"
-        subtitle="Kullanıcıların bildirdiği soru hataları — düzelt, çöz olarak işaretle"
+        title="Hata Bildirimleri"
+        subtitle={kind === 'questions' ? 'Kullanıcıların bildirdiği soru hataları — düzelt, çöz olarak işaretle' : 'Kullanıcıların bildirdiği bilgi kartı hataları (Doc 56) — kartı düzelt, çöz olarak işaretle'}
       />
+
+      <div className="mb-3 flex gap-1 border-b border-slate-200" role="tablist" aria-label="Bildirim türü">
+        {(['questions', 'flashcards'] as const).map((k) => (
+          <button
+            key={k}
+            role="tab"
+            aria-selected={kind === k}
+            onClick={() => {
+              setKind(k);
+              setPage(1);
+            }}
+            className={`-mb-px border-b-2 px-3 py-2 text-sm font-medium ${kind === k ? 'border-indigo-600 text-indigo-700' : 'border-transparent text-slate-500 hover:text-slate-700'}`}
+          >
+            {k === 'questions' ? 'Sorular' : 'Bilgi kartları'}
+          </button>
+        ))}
+      </div>
 
       <div className="mb-4 flex gap-2">
         {(['open', 'resolved', 'dismissed'] as const).map((s) => (
@@ -123,7 +180,7 @@ export default function ReportsPage() {
                 <div className="flex items-start justify-between gap-4">
                   <div className="min-w-0">
                     <Link
-                      href={`/questions/${r.questionId}`}
+                      href={kind === 'questions' ? `/questions/${r.questionId}` : `/flashcards/${r.questionId}`}
                       className="block truncate text-sm font-medium text-indigo-700 hover:underline"
                     >
                       {r.stem}

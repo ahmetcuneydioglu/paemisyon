@@ -2,7 +2,7 @@ import { Stack, useLocalSearchParams, useRouter } from "expo-router";
 import { BookOpen, Flag, Share2 } from "lucide-react-native";
 import { useMemo, useState } from "react";
 import { Pressable, View } from "react-native";
-import { QuestionOption, ReportSheet, ShareQuestionSheet, type OptionState } from "@/components/domain";
+import { QuestionMedia, QuestionOption, ReportSheet, ShareQuestionSheet, type OptionState } from "@/components/domain";
 import { AppText, Badge, Button, Card, Notice, Screen, Skeleton, StatTile } from "@/components/ui";
 import { fmtMs, useAttempt, useAttemptReview } from "@/features/exams/queries";
 import { buildShareCardData } from "@/features/quiz/share";
@@ -60,6 +60,7 @@ export default function SoruAyrintiScreen() {
             <AppText variant="body" accessibilityRole="header" style={{ fontSize: 17, lineHeight: 26 }}>
               {q.stem}
             </AppText>
+            <QuestionMedia url={q.mediaUrl} />
             <View style={{ gap: 10 }}>
               {q.options.map((o) => (
                 <QuestionOption key={o.id} label={o.label} text={o.text} state={state(o.id, o.isCorrect)} />

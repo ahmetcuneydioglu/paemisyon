@@ -101,7 +101,7 @@ export default function CalismaScreen() {
                 <Badge tone="neutral">{soru.ders}</Badge>
                 {soru.iptal ? <Badge tone="warning">İptal edilen soru</Badge> : null}
               </View>
-              <QuestionStem index={index + 1} total={sorular.length} stem={soru.kok} />
+              <QuestionStem index={index + 1} total={sorular.length} stem={soru.kok} mediaUrl={soru.gorselUrl} />
               {soru.siklar.map((k) => (
                 <QuestionOption key={k.harf} label={k.harf} text={k.metin} state={state(k.harf)} onPress={() => pick(k.harf)} />
               ))}

@@ -1,0 +1,273 @@
+{
+  "deck": {
+    "topicId": "a9e2a110-a63e-4cfa-91f2-25c187d0c3e6",
+    "legislationSlug": "7068-sayili-genel-kolluk-disiplin-hukumleri-kanunu",
+    "unitSlug": "gkdk-disiplin-cezalari",
+    "sourceLabel": "AI bilgi kartı — 7068 Sayılı Genel Kolluk Disiplin Hükümleri Kanunu md 7, 9–12",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: gkdk-disiplin-cezalari özeti + resmî madde metni); denetim düzeltmesi 7 Kas 2026 (1 kart); 7 Kas 2026 kullanıcı kararı: Jandarma/Sahil Güvenlik kartları çıkarıldı (2), ibareler düşürüldü (3)"
+  },
+  "cards": [
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Görevinde ya da hal ve hareketlerinde kusurlu olduğun sana yazıyla bildirilirse hangi disiplin cezasını almış olursun?",
+      "back": "Kınama cezası: personele kusurlu olduğunun yazı ile bildirilmesidir.",
+      "explanation": "Uyarma cezası da yazı ile bildirilir. Ancak uyarmada bildirilen şey, görevinin icrasında veya hal ve hareketlerinde daha dikkatli olman gerektiğidir. Kınamayı ayırt eden ifade 'kusurlu olduğunun' sözüdür.",
+      "articleRefs": [
+        "7"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Aylıktan kesme cezasında brüt aylıktan en fazla kaç günlük kesinti yapılabilir?",
+      "back": "Onbeş günlüğe kadar. Kesinti, fiilin ağırlık derecesine göre zam ve tazminatlar hariç brüt aylıktan yapılır.",
+      "explanation": "Kesintinin miktarı fiilin ağırlık derecesine göre belirlenir. Hüküm 'onbeş günlüğe kadar' dediği için bu sınırın altında da kesinti yapılabilir.",
+      "articleRefs": [
+        "7"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Aylıktan kesme cezası hangi birim tarafından yerine getirilir?",
+      "back": "Aylığı tahakkuk ettiren birim yerine getirir. Ceza, personelin aylığından kesilerek uygulanır.",
+      "explanation": "Kesinti tam Türk Lirası üzerinden yapılır ve kuruşlar dikkate alınmaz.",
+      "articleRefs": [
+        "7"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Devlet memurluğundan çıkarma cezası uygulanacak fiiller ve bu cezayı verme yetkisi bakımından hangi kanunun hükümleri uygulanır?",
+      "back": "657 sayılı Kanun hükümleri uygulanır.",
+      "explanation": "Madde bunlara ek olarak iki fiili daha Devlet memurluğundan çıkarmaya bağlar. Birincisi, ülkenin bağımsızlığını zedelemeye, bütünlüğünü bozmaya ve milli güvenliği tehlikeye düşürmeye yönelik faaliyetler ve bu nitelikteki yapılarla bağlantıdır. İkincisi işkence yapmaktır.",
+      "articleRefs": [
+        "9"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "İşkence yapan personel hangi disiplin cezasıyla cezalandırılır?",
+      "back": "Devlet memurluğundan çıkarma cezasıyla cezalandırılır.",
+      "explanation": "İşkence yapmak, maddede 657 sayılı Kanun'daki fiillere ek olarak Devlet memurluğundan çıkarmayı gerektiren fiiller arasında açıkça sayılır.",
+      "articleRefs": [
+        "9"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Amirin emrinin yapılmaması fiili hangi sonuçları doğurursa meslekten çıkarma cezası uygulanabilir?",
+      "back": "Devlet ya da kişiler zarara uğratılmışsa ya da hizmetin gecikmesine veya durmasına neden olunmuşsa uygulanabilir.",
+      "explanation": "Meslekten çıkarma zorunlu bir ceza olarak öngörülmemiştir. Doğan zararın derecesine ya da durumun ağırlığına göre 'uygulanabilir'.",
+      "articleRefs": [
+        "10"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Görev yerinden ayrılan personele meslekten çıkarma cezası uygulanabilmesi için Devletin ya da kişilerin zarara uğraması şart mıdır?",
+      "back": "Hayır. Ayrılma uzun süreli olmuşsa ya da görevi aksatacak biçimde gerçekleşmişse de meslekten çıkarma uygulanabilir. Zarar, bu hallerden yalnızca biridir.",
+      "explanation": "Karar, durumun niteliğine, ağırlığına ya da zararın derecesine göre verilir. Hüküm 'uygulanabilir' dediği için ceza takdire bağlıdır.",
+      "articleRefs": [
+        "10"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Geçici olarak kontrol altına alınan personel en fazla ne kadar süre kontrol altında bulundurulabilir?",
+      "back": "Yirmidört saat. Kontrol altında bulundurma bu süreyi geçemez.",
+      "explanation": "Tedbir, bu amaç için hazırlanacak mahallerde uygulanır.",
+      "articleRefs": [
+        "11"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Disiplinsizliği alışkanlık haline getiren personele meslekten çıkarma cezasını kim verir?",
+      "back": "Yetkili disiplin kurulları verir.",
+      "explanation": "Disiplinsizliği alışkanlık haline getirme, ceza puanı ya da ceza sayısı eşiklerine göre belirlenir. Sözleşmeli personelin sözleşmelerinin feshine ilişkin özel kanunlardaki hükümler saklıdır.",
+      "articleRefs": [
+        "12"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Ceza puanına bağlı meslekten çıkarmada geriye doğru süre hangi tarihten itibaren hesaplanır?",
+      "back": "En son alınan disiplin cezasının kesinleştiği tarihten geriye doğru hesaplanır.",
+      "explanation": "Bu tarihten geriye doğru son bir yıl ve son beş yıl içinde alınan puanlara ve ceza sayılarına bakılır.",
+      "articleRefs": [
+        "12"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Kısa süreli durdurma cezasında kademe ilerlemesi hangi sürelerle durdurulabilir?",
+      "back": "Dört, altı veya on ay süreyle durdurulabilir.",
+      "explanation": "Bu cezada personelin bulunduğu kademede ilerlemesi durdurulur. Süre, maddede sayılan bu sürelerden biri olarak verilir.",
+      "articleRefs": [
+        "7"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Uzun süreli durdurma cezasında kademe ilerlemesi hangi sürelerle durdurulabilir?",
+      "back": "Oniki, onaltı, yirmi veya yirmidört ay süreyle durdurulabilir.",
+      "explanation": "Kademe ilerlemesi yirmi ay süreyle durdurulan bir personelin aldığı ceza uzun süreli durdurmadır.",
+      "articleRefs": [
+        "7"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Meslekten çıkarma cezası alan personel, bir daha Devlet memurluğuna atanmamak üzere mi çıkarılır?",
+      "back": "Hayır. Meslekten çıkarma, emniyet teşkilatında bir daha çalıştırılmamak üzere çıkarılmaktır. Bir daha Devlet memurluğuna atanmamak, Devlet memurluğundan çıkarmanın sonucudur.",
+      "explanation": "İki cezanın tanımında da 'bir daha' ifadesi yer alır. Meslekten çıkarmada personel teşkilatlarda bir daha çalıştırılmaz. Devlet memurluğundan çıkarmada ise bir daha Devlet memurluğuna atanmaz.",
+      "articleRefs": [
+        "7"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Milli güvenliği tehlikeye düşürmeye yönelik faaliyet gösteren bir dernekle personelin hangi bağlantıları Devlet memurluğundan çıkarmayı gerektirir?",
+      "back": "Böyle bir yapıya katılmak, ona yardım etmek veya onunla ilişki içerisinde bulunmak bu cezayı gerektirir.",
+      "explanation": "Hüküm hareket, gruplaşma, vakıf, dernek ve benzeri teşekkülleri birlikte anar. Yapıya katılmadan yalnızca onunla ilişki içerisinde bulunmak da cezaya yeter.",
+      "articleRefs": [
+        "9"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Görevin takdir ve yerine getirilmesinde müsamaha veya savsaklama fiili hizmeti aksatmışsa hangi ceza verilebilir?",
+      "back": "Durumun ağırlığına ve zararın derecesine göre daha ağır cezalardan birisi verilebilir.",
+      "explanation": "Aynı sonuç, fiil Devleti veya kişileri zarara uğrattığında ya da hizmetin gecikmesine veya durmasına yol açtığında da doğar.",
+      "articleRefs": [
+        "10"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Denetleme ve soruşturma görevlerini savsaklamak hizmeti aksatmış ya da zarara yol açmışsa ne kadar süreli kısa süreli durdurma uygulanabilir?",
+      "back": "Dört ay kısa süreli durdurma cezası uygulanabilir.",
+      "explanation": "Bu ceza, fiil hizmetin gecikmesine, durmasına veya aksamasına neden olduğunda ya da Devleti veya kişileri zarara uğrattığında uygulanabilir. Karar, durumun ağırlığına yahut zararın derecesine göre verilir.",
+      "articleRefs": [
+        "10"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Kontrol altında bulundurma kaç saati geçerse personelin yakınlarına bilgi verilir?",
+      "back": "Oniki saati geçerse. Personelin yakınlarına ve tedbiri uygulayan komutanın üstüne en kısa sürede bilgi verilir.",
+      "articleRefs": [
+        "11"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Son bir yılda kaç disiplin cezası puanı almak disiplinsizliği alışkanlık haline getirme sayılır?",
+      "back": "Yirmi disiplin cezası puanı. Süre, en son alınan cezanın kesinleştiği tarihten geriye doğru sayılır.",
+      "explanation": "Son beş yıl için eşik kırk disiplin cezası puanıdır.",
+      "articleRefs": [
+        "12"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Puan eşiği dışında, son bir yılda kaç disiplin cezası almak disiplinsizliği alışkanlık haline getirme sayılır?",
+      "back": "En az iki farklı disiplin amirinden toplam oniki defa veya daha fazla disiplin cezası almak.",
+      "explanation": "Son beş yıl için ölçüt, yine en az iki farklı disiplin amirinden toplam yirmibeş defa veya daha fazla disiplin cezası almaktır.",
+      "articleRefs": [
+        "12"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Verilecek cezanın bir derece hafif olanının uygulanabilmesi için personelde hangi şart aranır?",
+      "back": "Kurumda geçmiş hizmetleri sırasında çalışmalarının olumlu bulunması ve iyi veya çok iyi derecede değerlendirme puanı alması aranır.",
+      "explanation": "Hüküm 'uygulanabilir' der. Yani şartlar bulunsa bile hafif cezanın verilmesi takdire bağlıdır.",
+      "articleRefs": [
+        "7"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Aylıktan kesme ile kısa ve uzun süreli durdurma cezalarında, cezanın üst ve alt kademeleri nasıl değerlendirilir?",
+      "back": "Üst ve alt kademeler ağır ya da hafif ceza sayılmaz.",
+      "explanation": "Örneğin uzun süreli durdurmada yirmidört ay da oniki ay da aynı cezanın kademeleridir. Bu kademeler birbirine göre ağır ya da hafif ceza sayılmaz.",
+      "articleRefs": [
+        "7"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Uyarma veya kınama cezası alan personel, bu cezanın özlük dosyasından silinmesini ne zaman isteyebilir?",
+      "back": "Cezanın uygulanmasından başlayarak beş yıl geçtikten sonra, atamaya yetkili amire başvurarak isteyebilir.",
+      "articleRefs": [
+        "7"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Kontrol altına alınan personele disiplin cezası nasıl uygulanır?",
+      "back": "Eyleminin karşılığı olan cezanın üst sınırı uygulanır; ceza zaten üst sınırdaysa ya da üst sınırı yoksa bir üst ceza uygulanır.",
+      "explanation": "Kontrol altına alınanlarla ilgili olarak durumun gerektirdiği tedbirleri disiplin amirleri alır veya alınmasını sağlar.",
+      "articleRefs": [
+        "11"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Aynı disiplin dosyasında birden fazla disiplin cezası verilirse, bu cezaların puanları toplanarak mı değerlendirilir?",
+      "back": "Hayır. Aynı dosyada birden fazla ceza verilirse yalnızca en yüksek olanın puanı değerlendirmeye esas alınır.",
+      "explanation": "Puan hesabının usulü, Emniyet Genel Müdürlüğü personeli için Kanuna ekli (1) sayılı çizelgede gösterilmiştir.",
+      "articleRefs": [
+        "12"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Aylıktan kesme ya da durdurma cezası alan personel, bu cezanın özlük dosyasından silinmesini istemek için kaç yıl beklemelidir?",
+      "back": "On yıl. Süre, cezanın uygulanmasından başlar.",
+      "explanation": "Silinme talebi, Devlet memurluğundan çıkarma ve meslekten çıkarma dışındaki disiplin cezaları için tanınmıştır.",
+      "articleRefs": [
+        "7"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Silinme için gereken süre dolunca disiplin cezası özlük dosyasından kendiliğinden silinir mi?",
+      "back": "Hayır. Personel atamaya yetkili amire başvurarak silinmesini isteyebilir. Bu süreler içindeki davranışları isteğini haklı kılacak nitelikte görülürse ceza silinir.",
+      "explanation": "Sürenin dolması yalnızca başvuru hakkını doğurur. Silinme kararı, ilgilinin süre içindeki davranışlarının değerlendirilmesine bağlıdır.",
+      "articleRefs": [
+        "7"
+      ],
+      "counterNumbers": []
+    }
+  ]
+}

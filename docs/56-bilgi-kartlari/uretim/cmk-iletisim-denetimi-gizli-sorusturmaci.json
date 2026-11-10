@@ -1,0 +1,304 @@
+{
+  "deck": {
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "legislationSlug": "5271-sayili-ceza-muhakemesi-kanunu-cmk",
+    "unitSlug": "cmk-iletisim-denetimi-gizli-sorusturmaci",
+    "sourceLabel": "AI bilgi kartı — 5271 Sayılı Ceza Muhakemesi Kanunu (CMK) md 135–140, 140/A, 141–144",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: cmk-iletisim-denetimi-gizli-sorusturmaci özeti + resmî madde metni); denetim düzeltmesi 6 Kas 2026 (2 kart)"
+  },
+  "cards": [
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "İletişimin dinlenmesi ve kayda alınması kararı en çok ne kadar süre için verilebilir?",
+      "back": "En çok iki ay; bu süre bir ay daha uzatılabilir.",
+      "explanation": "Örgütün faaliyeti çerçevesinde işlenen suçlarda gerekli görülürse hâkim, bu sürelere ek olarak uzatma kararı verebilir. Her uzatma bir aydan fazla olamaz, toplamı üç ayı geçemez. Kararı hâkim, gecikmesinde sakınca bulunan hâllerde Cumhuriyet savcısı verir. Savcı kararını derhâl hâkimin onayına sunar; hâkim en geç yirmi dört saat içinde karar verir. Mobil telefonun yerinin tespiti de en çok iki ay için yapılır ve bir ay daha uzatılabilir.",
+      "articleRefs": [
+        "135"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Şüphelinin tanıklıktan çekinebilecek kişilerle arasındaki iletişimi kayda alınabilir mi?",
+      "back": "Hayır; bu iletişim kayda alınamaz. Kayda alındıktan sonra durum anlaşılırsa alınan kayıtlar derhâl yok edilir.",
+      "explanation": "Kural hem şüpheli hem sanık için geçerlidir. Bu madde kapsamında alınan karar ve yapılan işlemler tedbir süresince gizli tutulur.",
+      "articleRefs": [
+        "135"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Şüphelinin telekomünikasyon yoluyla iletişiminin tespiti için de maddede sayılan suçlardan birinin bulunması şart mıdır?",
+      "back": "Hayır. Suç sayımı yalnız dinleme, kayda alma ve sinyal bilgilerinin değerlendirilmesi için aranır; tespit bu sayımda anılmaz.",
+      "explanation": "Tespite soruşturma aşamasında hâkim, gecikmesinde sakınca bulunan hâllerde Cumhuriyet savcısı karar verir. Kovuşturma aşamasında ise mahkeme karar verir. Savcı kararını yirmi dört saat içinde hâkimin onayına sunar; hâkim en geç yirmi dört saat içinde karar verir. Süre dolarsa ya da hâkim aksine karar verirse kayıtlar derhâl imha edilir.",
+      "articleRefs": [
+        "135"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Şüpheliye yüklenen suç dolayısıyla müdafiin hangi yerlerdeki telekomünikasyon araçlarına 135 inci madde uygulanamaz?",
+      "back": "Müdafiin bürosu, konutu ve yerleşim yerindeki telekomünikasyon araçlarına.",
+      "explanation": "Hüküm şüpheli için olduğu kadar sanık için de geçerlidir. Sanığa yüklenen suç dolayısıyla da bu araçlar hakkında 135 inci madde hükmü uygulanamaz.",
+      "articleRefs": [
+        "136"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Telekomünikasyon hizmeti veren kuruluş, dinleme için yapılan yazılı istemi yerine getirmezse ne olur?",
+      "back": "Zor kullanılabilir. Bu istem derhâl yerine getirilir.",
+      "explanation": "İstemi Cumhuriyet savcısı veya görevlendireceği adlî kolluk görevlisi yazılı olarak yapar. İstem iletişimin tespiti, dinlenmesi veya kayda alınmasını ve bu amaçla cihazların yerleştirilmesini kapsar. İşlemin başladığı ve bitirildiği tarih ve saat ile işlemi yapanın kimliği tutanakla saptanır. Kayıtları Cumhuriyet Savcılığınca görevlendirilen kişiler çözerek metin hâline getirir. Yabancı dildeki kayıtlar tercüman aracılığıyla Türkçe'ye çevrilir.",
+      "articleRefs": [
+        "137"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Şüpheli hakkında kovuşturmaya yer olmadığına karar verilirse dinleme kayıtları en geç ne kadar sürede yok edilir?",
+      "back": "En geç on gün içinde; Cumhuriyet savcısının denetimi altında yok edilir ve durum tutanakla tespit edilir.",
+      "explanation": "Aynı usul, savcı kararına hâkim onayı alınamadığında da uygulanır; tedbire savcı derhâl son verir. Beraat kararı verilirse kayıtlar hâkim denetimi altında aynı usulle yok edilir.",
+      "articleRefs": [
+        "137"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Dinleme kayıtları yok edildiyse ilgilisine en geç ne zamana kadar yazılı bilgi verilir?",
+      "back": "Soruşturma veya kovuşturma evresinin bitiminden itibaren en geç onbeş gün içinde.",
+      "explanation": "Bilgiyi Cumhuriyet başsavcılığı veya mahkeme verir. Bildirimde tedbirin nedeni, kapsamı, süresi ve sonucu yer alır.",
+      "articleRefs": [
+        "137"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Arama veya elkoyma sırasında başka bir suçun işlendiği şüphesini uyandıran bir delil bulunursa durum kime bildirilir?",
+      "back": "Cumhuriyet Savcılığına, derhâl. Delil de muhafaza altına alınır.",
+      "explanation": "Kural, yapılmakta olan soruşturma veya kovuşturmayla ilgisi olmayan delil içindir.",
+      "articleRefs": [
+        "138"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "İletişimin denetlenmesi sırasında soruşturmayla ilgisiz bir delil bulunursa, muhafaza altına alınması için bu delil hangi şüpheyi uyandırmalıdır?",
+      "back": "md 135'te sayılan katalog suçlardan birinin işlendiği şüphesini.",
+      "explanation": "Bu şüphe varsa delil muhafaza altına alınır ve durum Cumhuriyet Savcılığına derhâl bildirilir. md 138/2'nin metni \"135 inci maddenin altıncı fıkrası\" der; güncel metinde katalog suçlar md 135'in sekizinci fıkrasındadır, altıncı fıkra iletişimin tespitini düzenler.",
+      "articleRefs": [
+        "138",
+        "135"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Gizli soruşturmacı görevlendirilmesine kim karar verir?",
+      "back": "Hâkim. Gizli soruşturmacı olarak kamu görevlileri görevlendirilebilir.",
+      "explanation": "Görevlendirme için iki şart aranır: soruşturma konusu suçun işlendiğine dair somut delillere dayanan kuvvetli şüphe sebepleri bulunmalı ve başka surette delil elde edilememeli. Madde ancak sayılan suçlarda uygulanır. Bunlardan bazıları şunlardır: örgüt faaliyeti çerçevesinde işlenip işlenmediğine bakılmaksızın uyuşturucu veya uyarıcı madde imal ve ticareti, silahlı örgüt veya bu örgütlere silah sağlama, silah kaçakçılığı.",
+      "articleRefs": [
+        "139"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Gizli soruşturmacının kimliği, görevi sona erdikten sonra açıklanabilir mi?",
+      "back": "Hayır; kimliği görevinin sona ermesinden sonra da gizli tutulur.",
+      "explanation": "Görevlendirme kararı ve diğer belgeler ilgili Cumhuriyet Başsavcılığında muhafaza edilir. Kovuşturma evresinde tanık olarak dinlenmesi zorunluysa özel ortamda dinlenir. Bu dinleme ya duruşmada hazır bulunma hakkı olanlar olmadan ya da ses veya görüntüsü değiştirilerek yapılır.",
+      "articleRefs": [
+        "139"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Gizli soruşturmacı görevini yerine getirirken suç işleyebilir mi?",
+      "back": "Hayır; suç işleyemez. Görevlendirildiği örgütün işlemekte olduğu suçlardan ise sorumlu tutulamaz.",
+      "explanation": "Yükümlülüğü, izlemekle görevlendirildiği örgüte ilişkin her türlü araştırmada bulunmak ve örgütün faaliyetleri çerçevesinde işlenen suçlarla ilgili delilleri toplamaktır. Hâkim, uyuşturucu veya uyarıcı madde imal ve ticareti suçu bakımından izin verebilir: soruşturmacı kamuya açık yerlerde ve işyerlerinde ses veya görüntü kaydı yapabilir. Elde edilen kişisel bilgiler görevlendirildiği ceza soruşturması ve kovuşturması dışında kullanılamaz.",
+      "articleRefs": [
+        "139"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Teknik araçlarla izleme hangi yerde uygulanamaz?",
+      "back": "Kişinin konutunda. İzlenebilenler şüpheli veya sanığın kamuya açık yerlerdeki faaliyetleri ve işyeridir.",
+      "explanation": "Karar hâkimindir; gecikmesinde sakınca bulunan hâllerde Cumhuriyet savcısı karar verir. Savcı kararı yirmi dört saat içinde hâkim onayına sunulur; hâkim en geç yirmi dört saat içinde karar verir. Süre dolarsa ya da hâkim aksine karar verirse kayıtlar derhâl imha edilir. Elde edilen deliller yalnız sayılan suçlara ilişkin soruşturma ve kovuşturmada kullanılabilir.",
+      "articleRefs": [
+        "140"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Teknik araçlarla izleme kararı en çok kaç haftalık süre için verilebilir?",
+      "back": "En çok üç hafta; gerektiğinde bir hafta daha uzatılabilir.",
+      "explanation": "Tedbir iki şarta bağlıdır: sayılan suçların işlendiğine dair somut delillere dayanan kuvvetli şüphe sebepleri bulunmalı ve başka suretle delil elde edilememeli.",
+      "articleRefs": [
+        "140"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Örgüt faaliyeti çerçevesindeki bir suçta ek uzatmalar da tam kullanılırsa teknik araçlarla izleme en çok kaç hafta sürer?",
+      "back": "8 hafta. Bu süre üç haftalık ilk karar, bir haftalık uzatma ve hâkimin her defasında bir haftayı aşmayan, toplam dört haftalık ek uzatmasından oluşur.",
+      "explanation": "İzlemeyle birlikte gizli soruşturmacı da görevlendirilmişse bu süreler bir kat artırılarak uygulanır. Bu durumda ilk karar en çok 6 hafta için verilir.",
+      "articleRefs": [
+        "140"
+      ],
+      "derivedNumbers": [
+        {
+          "value": 8,
+          "expr": "3 + 1 + 4",
+          "refs": [
+            "140"
+          ],
+          "note": "ilk karar + uzatma + örgüt suçlarında toplam ek uzatma"
+        },
+        {
+          "value": 6,
+          "expr": "3 * 2",
+          "refs": [
+            "140"
+          ],
+          "note": "gizli soruşturmacıyla birlikte ilk karar süresi bir kat artırılır"
+        }
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "135 ila 140 ıncı maddelerde düzenlenen koruma tedbirlerinin uygulanmasına ilişkin usul ve esaslar neyle düzenlenir?",
+      "back": "Yönetmelikle düzenlenir.",
+      "articleRefs": [
+        "140/A"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Kanuna uygun olarak tutuklanıp sonra beraat eden kişi Devletten tazminat isteyebilir mi?",
+      "back": "Kural olarak isteyebilir (md 141/1-e): kanuna uygun tutuklandıktan sonra beraatine karar verilen kişi maddî ve manevî zararını Devletten isteyebilir; md 144'te sayılan tazminat isteyemeyecek kişiler saklıdır. Kararı veren merci tazminat hakkını ilgiliye bildirir.",
+      "explanation": "Aynı hak, kanuna uygun yakalandıktan veya tutuklandıktan sonra hakkında kovuşturmaya yer olmadığına karar verilen kişiye de tanınır. Bazı adli kontrol yükümlülüklerinden sonra bu kararları alanlar da tazminat isteyebilir: konutunu terk etmemek ya da hastaneye yatmak dâhil tedavi veya muayene tedbirlerine tâbi olmak bunlardandır. Tazminat hakkının bildirilmesi verilen karara geçirilir.",
+      "articleRefs": [
+        "141",
+        "144"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Hâkim ve Cumhuriyet savcılarının verdikleri kararlar nedeniyle tazminat davası kime karşı açılır?",
+      "back": "Ancak Devlet aleyhine açılır. Kişisel kusur ve haksız fiil hâlleri de buna dâhildir.",
+      "articleRefs": [
+        "141"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Devlet, ödediği tazminat için görevini kötüye kullanan hâkim veya Cumhuriyet savcısına hangi süre içinde rücu eder?",
+      "back": "Bir yıl içinde.",
+      "explanation": "Rücu, görevinin gereklerine aykırı hareket ederek görevini kötüye kullanan hâkim ve Cumhuriyet savcılarına yöneliktir.",
+      "articleRefs": [
+        "141"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Tazminat istemi, kararın kesinleştiğinin ilgilisine tebliğinden itibaren hangi süre içinde yapılmalıdır?",
+      "back": "Üç ay içinde; her hâlde kesinleşme tarihini izleyen bir yıl içinde.",
+      "explanation": "İki süre birlikte işler. Tebliğden itibaren üç ay dolmamış olsa bile, kesinleşmeyi izleyen bir yıl geçmişse istemde bulunulamaz.",
+      "articleRefs": [
+        "142"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Tazminat istemi kural olarak hangi mahkemede karara bağlanır?",
+      "back": "Zarara uğrayanın oturduğu yer ağır ceza mahkemesinde.",
+      "explanation": "O yer ağır ceza mahkemesi tazminat konusu işlemle ilişkiliyse ve aynı yerde başka ağır ceza dairesi yoksa en yakın yer ağır ceza mahkemesi karar verir. 141 inci maddenin birinci fıkrasının (e), (f) ve (l) bentlerindeki istemlerde Tazminat Komisyonu hakkındaki kanun hükümleri uygulanır. Bu istemler ağır ceza mahkemesine yapılmışsa Komisyona gönderilir; bu durumda mahkemeye yapılan istem tarihi esas alınır.",
+      "articleRefs": [
+        "142"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Tazminat dilekçesi Devlet Hazinesinin temsilcisine tebliğ edilince temsilci beyan ve itirazlarını hangi süre içinde bildirir?",
+      "back": "İki hafta içinde, yazılı olarak.",
+      "explanation": "Dilekçede bilgi ve belge eksikse mahkeme, eksikliğin bir ay içinde giderilmesini ister. Süresinde tamamlanmayan dilekçe itiraz yolu açık olmak üzere reddolunur. Karar duruşmalı verilir. İstinafta karar yerinde görülmezse bölge adliye mahkemesi işin esası hakkında karar verir ve bu karar kesindir. Kesinleşen tazminat, bildirilen banka hesabına bildirimden itibaren otuz gün içinde ödenir.",
+      "articleRefs": [
+        "142"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Kovuşturmaya yer olmadığı kararı sonradan kaldırılıp mahkûm edilen kişiye ödenmiş tazminatın hangi kısmı geri alınır?",
+      "back": "Mahkûmiyet süresine ilişkin kısmı. Geri alma, Cumhuriyet savcısının yazılı istemiyle aynı mahkemeden alınacak kararla yapılır.",
+      "explanation": "Aynı kural, yargılamanın aleyhte yenilenmesiyle beraat kararı kaldırılıp mahkûm edilenler için de geçerlidir. Tahsilde kamu alacaklarının tahsiline ilişkin mevzuat hükümleri uygulanır. Geri alma kararına itiraz edilebilir.",
+      "articleRefs": [
+        "143"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "İftira nedeniyle tutuklanan kişiye tazminat ödeyen Devlet, kime de rücu eder?",
+      "back": "İftira eden kişiye. Yalan tanıklık nedeniyle gözaltı ve tutuklamada ise yalan tanıklıkta bulunan kişiye de rücu eder.",
+      "articleRefs": [
+        "143"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Kanuna uygun tutuklanan ve kusur yeteneği bulunmadığı için hakkında ceza verilmesine yer olmadığına karar verilen kişi tazminat isteyebilir mi?",
+      "back": "Hayır; kusur yeteneğinin bulunmaması nedeniyle hakkında ceza verilmesine yer olmadığına karar verilen kişi tazminat isteyemez.",
+      "explanation": "Bu sınırlama, kanuna uygun olarak yakalanan, adli kontrol altına alınan veya tutuklanan kişiler için geçerlidir.",
+      "articleRefs": [
+        "144"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Kanuna uygun yakalanan kişi hakkında hangi nedenlerle kovuşturmaya yer olmadığına karar verilirse tazminat isteyemez?",
+      "back": "Genel veya özel af, şikâyetten vazgeçme, uzlaşma gibi nedenlerle.",
+      "explanation": "Aynı nedenlerle davanın düşmesine karar verilenler de tazminat isteyemez. Kamu davası geçici olarak durdurulan, ertelenen veya düşürülenler için de durum aynıdır.",
+      "articleRefs": [
+        "144"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Hangi davranışla gözaltına, adli kontrol altına alınmasına veya tutuklanmasına yol açan kişi tazminat isteyemez?",
+      "back": "Adlî makamlar huzurunda gerçek dışı beyanla suç işlediğini veya suça katıldığını bildirmek.",
+      "explanation": "Tazminata hak kazanmamışken sonradan yürürlüğe giren lehte kanun gereği durumu tazminat istemeye uygun hâle dönüşenler de tazminat isteyemez.",
+      "articleRefs": [
+        "144"
+      ]
+    }
+  ]
+}

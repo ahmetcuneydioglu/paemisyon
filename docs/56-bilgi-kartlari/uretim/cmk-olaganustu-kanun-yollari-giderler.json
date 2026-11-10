@@ -1,0 +1,285 @@
+{
+  "deck": {
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "legislationSlug": "5271-sayili-ceza-muhakemesi-kanunu-cmk",
+    "unitSlug": "cmk-olaganustu-kanun-yollari-giderler",
+    "sourceLabel": "AI bilgi kartı — 5271 Sayılı Ceza Muhakemesi Kanunu (CMK) md 308, 308/A, 309–333, Ek 1, Geçici 1, Geçici 2, Geçici 3, Geçici 4, Geçici 5, Geçici 6, Geçici 7, Geçici 8",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: cmk-olaganustu-kanun-yollari-giderler özeti + resmî madde metni); denetim düzeltmesi 6 Kas 2026 (3 kart + #27 çıkarıldı)"
+  },
+  "cards": [
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Yargıtay Cumhuriyet Başsavcısı, Yargıtay ceza dairesinin kararına karşı Ceza Genel Kuruluna ne kadar süre içinde itiraz edebilir?",
+      "back": "Üç ay içinde; süre, dosyanın kendisine teslim edildiği tarihten itibaren işler. Sanığın lehine itirazda süre aranmaz.",
+      "explanation": "Başsavcı bu yola re'sen veya istem üzerine gider. İstemi şunlar yapar: sanık veya sanık adına kanun yoluna başvurma hakkı olanlar, katılan, katılma isteği karara bağlanmamış olanlar ya da katılan sıfatını alabilecek surette suçtan zarar görmüş bulunanlar.",
+      "articleRefs": [
+        "308"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Yargıtay ceza dairelerinin hangi kararları, Yargıtay Cumhuriyet Başsavcısının itiraz yetkisinin dışında kalır?",
+      "back": "Yargı yeri belirlenmesi ve görevsizlik kararları. Bunların dışındaki tüm kararlara itiraz edilebilir.",
+      "explanation": "İtiraz üzerine dosya önce kararına itiraz edilen daireye gönderilir. Daire itirazı mümkün olan en kısa sürede inceler. Yerinde görürse kararını düzeltir, görmezse dosyayı Yargıtay Ceza Genel Kuruluna gönderir.",
+      "articleRefs": [
+        "308"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Bölge adliye mahkemesi Cumhuriyet başsavcılığı, ceza dairesinin kesin nitelikteki kararına ne kadar süre içinde itiraz edebilir?",
+      "back": "Bir ay içinde; süre kararın kendisine verildiği tarihten işler ve itiraz kararı veren daireye yapılır. Sanığın lehine itirazda süre aranmaz.",
+      "explanation": "Başsavcılık bu yola re'sen veya istem üzerine gider. Daire itirazı mümkün olan en kısa sürede inceler ve yerinde görürse kararını düzeltir.",
+      "articleRefs": [
+        "308/A"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Dörtten fazla ceza dairesi olan bölge adliye mahkemesinde, dairenin yerinde görmediği itirazı inceleyen başkanlar kurulu kaç üyeden oluşur?",
+      "back": "Dört üyeden; üyeler Hâkimler ve Savcılar Kurulunca daire başkanları arasından belirlenir. Kurulun verdiği kararlar kesindir.",
+      "explanation": "Daire itirazı yerinde görmezse dosyayı ceza daireleri başkanlar kuruluna gönderir. Kurula sunulmak üzere, kararına itiraz edilen dairenin başkanı veya görevlendireceği üye bir rapor hazırlar. Kurulun itirazın kabulüne ilişkin kararları gereği için dairesine gönderilir.",
+      "articleRefs": [
+        "308/A"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Bölge adliye mahkemesi Cumhuriyet başsavcılığı, kararı etkileyecek esaslı bir hata bulunmadan da sanık aleyhine itiraz edebilir mi?",
+      "back": "Hayır. Sanık aleyhine itiraz için kararı etkileyecek nitelikte esaslı bir hatanın bulunması zorunludur. Bu itiraz, sanık veya müdafiine daire tarafından tebliğ olunur.",
+      "explanation": "Tebligat, ilgililerin dava dosyasından belirlenen son adreslerine yapılmasıyla geçerli olur. İlgililer tebliğden itibaren iki hafta içinde yazılı olarak cevap verebilir. Aleyhe itiraz, kararın başsavcılığa verildiği tarihten itibaren bir ay içinde yapılır; süre aranmaması sanığın lehine itiraz için öngörülmüştür.",
+      "articleRefs": [
+        "308/A"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "İstinaf veya temyiz incelemesinden geçmeksizin kesinleşen bir karardaki hukuka aykırılık üzerine kanun yararına bozma istemini kim başlatır?",
+      "back": "Adalet Bakanlığı; bozma istemini yasal nedenleriyle birlikte Yargıtay Cumhuriyet Başsavcılığına yazılı olarak bildirir. md 310'a göre 309/4-d hâllerinde Yargıtay Cumhuriyet Başsavcısı da kanun yararına re'sen başvurabilir.",
+      "explanation": "Yargıtay Cumhuriyet Başsavcısı bu nedenleri aynen yazarak bozma istemini Yargıtayın ilgili ceza dairesine verir. Daire ileri sürülen nedenleri yerinde görürse karar veya hükmü kanun yararına bozar. Mahkûmiyete ilişkin yeniden yargılamada verilecek hüküm, önceki hükümle belirlenmiş cezadan daha ağır olamaz.",
+      "articleRefs": [
+        "309",
+        "310"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Kanun yararına bozma kararına karşı direnilebilir mi?",
+      "back": "Hayır; kanun yararına verilen bozma kararına karşı direnilemez.",
+      "explanation": "Hükümlünün cezasının kaldırılması gerekiyorsa cezanın kaldırılmasına, daha hafif ceza gerekiyorsa bu hafif cezaya Yargıtay ceza dairesi doğrudan hükmeder. Davanın esasını çözen ve mahkûmiyet dışındaki hükümlere ilişkin bozma ise aleyhte sonuç doğurmaz ve yeniden yargılamayı gerektirmez.",
+      "articleRefs": [
+        "309"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Adalet Bakanlığı kanun yararına bozma için başvurmuşsa Yargıtay Cumhuriyet Başsavcısı aynı yetkiyi re'sen kullanabilir mi?",
+      "back": "Hayır. Bakanlık başvurduğunda bu yetki artık Başsavcı tarafından kullanılamaz. Başsavcının re'sen yetkisi zaten yalnız cezanın kaldırılması veya daha hafif ceza verilmesi gereken hâllerle sınırlıdır.",
+      "explanation": "Başsavcının re'sen kanun yararına başvurusu, 309 uncu maddenin dördüncü fıkrasının (d) bendindeki hâllere özgüdür. Bu hâllerde cezanın kaldırılmasına ya da hafif cezaya Yargıtay ceza dairesi doğrudan hükmeder.",
+      "articleRefs": [
+        "310",
+        "309"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Ceza hükmünün İnsan Haklarını ve Ana Hürriyetleri Korumaya Dair Sözleşmenin ihlaliyle verildiğini tespit eden Avrupa İnsan Hakları Mahkemesi kararına dayanarak yargılamanın yenilenmesi ne kadar süre içinde istenebilir?",
+      "back": "Bir yıl içinde. Süre, Avrupa İnsan Hakları Mahkemesi kararının kesinleştiği tarihten işler.",
+      "explanation": "Aynı yol, başvuru hakkında dostane çözüm ya da tek taraflı deklarasyon sonucunda düşme kararı verilmesi hâlinde de açıktır. Bu bent, 4.2.2003 tarihinde Avrupa İnsan Hakları Mahkemesinin kesinleşmiş kararları ile bu tarihten sonra yapılan başvurular üzerine verilecek kararlar hakkında uygulanır.",
+      "articleRefs": [
+        "311"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Yeni olaylar veya yeni deliller hangi nitelikte olursa hükümlü lehine yargılamanın yenilenmesine yol açar?",
+      "back": "Yalnız başına veya önceden sunulan delillerle birlikte, sanığın beraatini ya da daha hafif bir cezayı içeren kanun hükmünün uygulanmasıyla mahkûm edilmesini gerektirecek nitelikteyse.",
+      "explanation": "Kesinleşen hükümle sonuçlanmış dava bu durumda hükümlü lehine tekrar görülür. Duruşmada kullanılan ve hükmü etkileyen bir belgenin sahteliğinin anlaşılması da hükümlü lehine yenileme nedenleri arasında yer alır.",
+      "articleRefs": [
+        "311"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Yargılamanın yenilenmesi istemi hükmün infazını erteler mi?",
+      "back": "Hayır; istem infazı ertelemez. Ancak mahkeme infazın geri bırakılmasına veya durdurulmasına karar verebilir.",
+      "articleRefs": [
+        "312"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Ölen hükümlünün eşi, üstsoyu, altsoyu ve kardeşleri yoksa yargılamanın yenilenmesini kim isteyebilir?",
+      "back": "Adalet Bakanı.",
+      "explanation": "Hükmün infaz edilmiş olması veya hükümlünün ölümü yenileme istemine engel olmaz. Ölenin eşi, üstsoyu, altsoyu ve kardeşleri istemde bulunabilir. Adalet Bakanı bu kişilerin yokluğu hâlinde istemde bulunabilir.",
+      "articleRefs": [
+        "313"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Mahkûm edilmiş bir sanığın sonradan hâkim önünde yaptığı güvenilebilir ikrar, aleyhine yargılamanın yenilenmesine yol açar mı?",
+      "back": "Hayır. İkrar nedeni, sanığın beraat ettikten sonra suçla ilgili olarak hâkim önünde güvenilebilir nitelikte ikrarda bulunmasını arar. Beraat şartı yoksa bu neden işlemez.",
+      "explanation": "Aleyhe yenileme nedenleri şunlardır: duruşmada sanık veya hükümlü lehine ileri sürülen ve hükme etkili olan bir belgenin sahteliğinin anlaşılması; hükme katılan hâkimlerden birinin, aleyhine ceza kovuşturmasını veya bir ceza ile mahkûmiyetini gerektirecek nitelikte olarak görevlerini yapmada sanık veya hükümlü lehine kusur etmesi; sanığın beraat ettikten sonra suçla ilgili olarak hâkim önünde güvenilebilir nitelikte ikrarda bulunması.",
+      "articleRefs": [
+        "314"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Yargılamanın yenilenmesi istemi hangi mahkemeye sunulur?",
+      "back": "Hükmü veren mahkemeye. İstemin kabule değer olup olmadığına da bu mahkeme duruşma yapılmaksızın karar verir.",
+      "explanation": "303 üncü madde gereğince Yargıtayın doğrudan hüküm kurduğu hâllerde de hükmü vermiş olan mahkemeye başvurulur.",
+      "articleRefs": [
+        "318"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Yargılamanın yenilenmesinde deliller toplandıktan sonra, Cumhuriyet savcısı ve hakkında hüküm kurulan kişi görüşlerini ne kadar süre içinde bildirir?",
+      "back": "İki hafta içinde. Görüş ve düşünceleri, delillerin toplanması bittikten sonra istenir.",
+      "explanation": "Mahkeme delilleri kendisi toplayabilir. Bunun için naip hâkimi veya istinabe olunan mahkemeyi de görevlendirebilir. Delillerin toplanması sırasında soruşturmaya ilişkin hükümler uygulanır.",
+      "articleRefs": [
+        "320"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Hükümlü lehine yapılan yargılamanın yenilenmesi sonunda yeni hüküm, önceki hükümdeki cezadan daha ağır ceza içerebilir mi?",
+      "back": "Hayır. İstem hükümlü lehine yapılmışsa yeni hüküm, önceki hükümle belirlenen cezadan daha ağır cezayı içeremez. Mahkeme önceki hükmü onaylar ya da iptal ederek yeniden hüküm verir.",
+      "explanation": "Yenileme sonunda beraat veya ceza verilmesine yer olmadığı kararı verilebilir. Bu durumda önceki mahkûmiyetin tamamen veya kısmen infazı yüzünden uğranılan maddî ve manevî zararlar 141 ilâ 144 üncü maddelere göre tazmin edilir.",
+      "articleRefs": [
+        "323"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Türkçe bilmeyen ya da engelli olan şüpheli, sanık, mağdur veya tanık için görevlendirilen tercümanın giderlerini kim karşılar?",
+      "back": "Devlet Hazinesi; bu giderler yargılama gideri sayılmaz.",
+      "explanation": "Yargılama giderleri şunlardır: harçlar, tarifesine göre ödenmesi gereken avukatlık ücretleri, soruşturma ve kovuşturma evrelerinde yargılamanın yürütülmesi amacıyla Devlet Hazinesinden yapılan her türlü harcamalar ve taraflarca yapılan ödemeler. Giderlerin miktarını mahkeme başkanı veya hâkim belirler.",
+      "articleRefs": [
+        "324"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Cezası ertelenen sanık yargılama giderlerinden kurtulur mu?",
+      "back": "Hayır. Cezanın ertelenmesi ve hükmün açıklanmasının geri bırakılması hâllerinde de bütün yargılama giderleri sanığa yüklenir.",
+      "explanation": "Araştırma veya işlemlerden doğan bazı giderlerde sonuç sanık lehine çıkmış olabilir. Bu giderleri sanığa yüklemek hakkaniyete aykırı olacaksa mahkeme bunları kısmen veya tamamen Devlet Hazinesine yükler.",
+      "articleRefs": [
+        "325"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Hüküm kesinleşmeden ölen sanığın yargılama giderlerini mirasçıları öder mi?",
+      "back": "Hayır. Hüküm kesinleşmeden sanık ölürse mirasçılar giderleri ödemekle yükümlü tutulmaz.",
+      "explanation": "Sanık cezaya veya güvenlik tedbirine mahkûm edilirse bütün yargılama giderleri ona yüklenir.",
+      "articleRefs": [
+        "325"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "İştirak hâlinde işlenmiş bir suç nedeniyle mahkûm edilenlere yargılama giderleri nasıl yükletilir?",
+      "back": "Ayrı ayrı; her birine sebebiyet verdiği yargılama giderleri yükletilir.",
+      "explanation": "Kişi birden çok suçtan kovuşturulup bunların bir kısmından mahkûm olabilir. Bu durumda beraat ettiği suçların duruşmasının gerektirdiği giderleri ödemekle yükümlü değildir.",
+      "articleRefs": [
+        "326"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Hakkında beraat kararı verilen kişi bütün yargılama giderlerinden muaf mıdır?",
+      "back": "Hayır. Hakkında beraat ya da ceza verilmesine yer olmadığı kararı verilen kişi, sadece kendi kusurundan ileri gelen giderleri ödemeye mahkûm edilir.",
+      "explanation": "Bu kişinin önceden ödemek zorunda kaldığı giderleri Devlet Hazinesi üstlenir.",
+      "articleRefs": [
+        "327"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Ceza işlerini gören makam ve mahkemeler hangi tarihler arasında çalışmaya ara verir?",
+      "back": "Yirmi temmuzdan otuz bir ağustosa kadar; bu ara her yıl verilir.",
+      "articleRefs": [
+        "331"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Adlî tatilde soruşturma, tutuklu işlere ilişkin kovuşturmalar ve ivedi sayılacak diğer hususların nasıl yürütüleceğini kim belirler?",
+      "back": "Hâkimler ve Savcılar Yüksek Kurulu (madde metnindeki adıyla).",
+      "explanation": "Tatil süresince bölge adliye mahkemeleri ile Yargıtay yalnız tutuklu hükümlere ilişkin işlerin incelemelerini yapar. Meşhud Suçların Muhakeme Usulü Kanunu gereğince görülen işleri de incelerler.",
+      "articleRefs": [
+        "331"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Adlî tatile rastlayan süreler, tatilin bittiği günden itibaren kaç gün uzatılmış sayılır?",
+      "back": "Üç gün; adlî tatile rastlayan süreler işlemez.",
+      "articleRefs": [
+        "331"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Cumhuriyet savcısı, hâkim veya mahkeme soruşturma ya da kovuşturmada yazılı olarak bilgi isterse, bu bilgiye kaç gün içinde cevap vermek zorunludur?",
+      "back": "On gün içinde. Bilgi bu sürede verilemiyorsa, sebebi ve en geç hangi tarihte cevap verilebileceği aynı süre içinde bildirilir.",
+      "explanation": "Bilgi istenen yazıda iki şey yazılır: bu hüküm ve ona aykırı davranmanın Türk Ceza Kanununun 257 nci maddesine aykırılık oluşturabileceği. Hakkında kamu davası açılması izin veya karar alınmasına bağlı kişiler hakkında, yasama dokunulmazlığı saklı kalmak üzere, doğrudan soruşturma yapılır.",
+      "articleRefs": [
+        "332"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Kolluk görevlileri hakkındaki işkence iddialarına ilişkin soruşturmaları kim yapar?",
+      "back": "Cumhuriyet savcıları; soruşturmayı bizzat ve öncelikle yaparlar.",
+      "explanation": "Aynı kural öldürme, kasten yaralama, zor kullanma yetkisine ilişkin sınırın aşılması ve suç işlemek amacıyla örgüt kurma suçlarıyla ilgili iddialarda da geçerlidir. Örgüt faaliyeti çerçevesinde işlenen suçlar da kapsamdadır. Bu suçlardan kolluk görevlileri hakkında açılan davalar acele işlerden sayılır. Kanun yolu incelemesi de öncelikli olarak yapılır.",
+      "articleRefs": [
+        "Ek 1"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Seri muhakeme usulü ile basit yargılama usulüne ilişkin hükümler hangi tarihten itibaren uygulanır?",
+      "back": "1/1/2020 tarihinden itibaren. Bu tarih itibarıyla kovuşturma evresine geçilmiş, hükme bağlanmış veya kesinleşmiş dosyalarda bu usuller uygulanmaz.",
+      "articleRefs": [
+        "Geçici 5"
+      ]
+    }
+  ]
+}

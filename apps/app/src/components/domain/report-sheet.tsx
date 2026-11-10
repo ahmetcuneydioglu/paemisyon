@@ -3,6 +3,7 @@ import { useState } from "react";
 import { KeyboardAvoidingView, Modal, Platform, Pressable, ScrollView, StyleSheet, TextInput, View } from "react-native";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { AppText, Button, Notice } from "@/components/ui";
+import { flashcardsApi } from "@/features/flashcards/queries";
 import { sessionToolsApi } from "@/features/quiz/api";
 import { useTheme } from "@/theme/ThemeProvider";
 
@@ -15,6 +16,17 @@ export const REPORT_REASONS = [
 ] as const;
 export type ReportReason = (typeof REPORT_REASONS)[number]["code"];
 
+/** Bilgi kartı nedenleri (Doc 56 §3f): aynı kodlar, kart diliyle. */
+export const FLASHCARD_REPORT_REASONS = [
+  { code: "wrong_answer", label: "Cevap hatalı" },
+  { code: "outdated_law", label: "Mevzuat güncel değil" },
+  { code: "ambiguous", label: "Soru belirsiz / cevap tartışmalı" },
+  { code: "typo", label: "Yazım hatası" },
+] as const;
+
+/** Bildirim hedefi: soru (varsayılan) ya da bilgi kartı. */
+export type ReportTarget = { kind: "question"; id: string } | { kind: "flashcard"; id: string };
+
 /** Kullanıcıya görünen kısa soru kodu: kimliğin ilk 8 hanesi (admin aramasında önek olarak işe yarar). */
 export function questionCode(questionId: string): string {
   return questionId.replace(/-/g, "").slice(0, 8).toUpperCase();
@@ -25,8 +37,12 @@ export function questionCode(questionId: string): string {
  * isteğe bağlı açıklama, Gönder. Klavye açılınca içerik kayar (KeyboardAvoidingView + ScrollView).
  * Aynı soruya ikinci bildirim sunucudan `alreadyReported` döner; ayrı mesajla gösterilir.
  */
-export function ReportSheet({ questionId, visible, onClose }: { questionId: string; visible: boolean; onClose: () => void }) {
+export function ReportSheet({ questionId, target, visible, onClose }: { questionId?: string; target?: ReportTarget; visible: boolean; onClose: () => void }) {
   const { colors, radius, space, type } = useTheme();
+  // Geriye uyumluluk: `questionId` verildiyse soru hedefi; kartlar `target` ile gelir.
+  const hedef: ReportTarget = target ?? { kind: "question", id: questionId ?? "" };
+  const kart = hedef.kind === "flashcard";
+  const nedenler = kart ? FLASHCARD_REPORT_REASONS : REPORT_REASONS;
   const insets = useSafeAreaInsets();
   const [reason, setReason] = useState<ReportReason | null>(null);
   const [description, setDescription] = useState("");
@@ -42,11 +58,12 @@ export function ReportSheet({ questionId, visible, onClose }: { questionId: stri
   };
 
   const submit = async () => {
-    const r = REPORT_REASONS.find((x) => x.code === reason);
+    const r = nedenler.find((x) => x.code === reason);
     if (!r) return;
     setState("busy");
     try {
-      const res = await sessionToolsApi.report(questionId, description.trim() ? `${r.label} — ${description.trim()}` : r.label);
+      const mesaj = description.trim() ? `${r.label} — ${description.trim()}` : r.label;
+      const res = kart ? await flashcardsApi.report(hedef.id, mesaj) : await sessionToolsApi.report(hedef.id, mesaj);
       setState(res.alreadyReported ? "already" : "done");
     } catch {
       setState("error");
@@ -59,7 +76,7 @@ export function ReportSheet({ questionId, visible, onClose }: { questionId: stri
         <ScrollView keyboardShouldPersistTaps="handled" contentContainerStyle={{ paddingTop: Platform.OS === "ios" ? space.s4 : insets.top, paddingHorizontal: space.screenGutter, paddingBottom: insets.bottom + space.s6, gap: space.s3 }}>
           <View style={{ flexDirection: "row", alignItems: "center", justifyContent: "space-between", marginBottom: space.s2 }}>
             <AppText variant="heading" accessibilityRole="header">
-              Soruyu bildir · {questionCode(questionId)}
+              {kart ? "Kartı bildir" : "Soruyu bildir"} · {questionCode(hedef.id)}
             </AppText>
             <Pressable accessibilityRole="button" accessibilityLabel="Kapat" onPress={close} hitSlop={12} style={{ minHeight: 44, justifyContent: "center" }}>
               <AppText variant="subhead" tone="accentInk">
@@ -74,13 +91,13 @@ export function ReportSheet({ questionId, visible, onClose }: { questionId: stri
             </Notice>
           ) : state === "already" ? (
             <Notice tone="info" title="Zaten bildirilmiş">
-              Bu soru için daha önce bildirim göndermişsin; editör sırada.
+              {kart ? "Bu kart" : "Bu soru"} için daha önce bildirim göndermişsin; editör sırada.
             </Notice>
           ) : (
             <>
               <AppText variant="subhead">Sorun ne?</AppText>
               <View accessibilityRole="radiogroup" style={{ backgroundColor: colors.surface, borderRadius: radius.card, borderWidth: StyleSheet.hairlineWidth, borderColor: colors.line }}>
-                {REPORT_REASONS.map((item, index) => {
+                {nedenler.map((item, index) => {
                   const active = item.code === reason;
                   return (
                     <Pressable

@@ -1,0 +1,18 @@
+{
+  "slug": "hukumet-sistemleri",
+  "title": "Hükümet Sistemleri",
+  "subtitle": "Kuvvetler birliğinden Cumhurbaşkanlığı hükümet sistemine",
+  "courseName": "Anayasa Hukuku",
+  "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+  "sortOrder": 5,
+  "isPremium": true,
+  "aiDraft": true,
+  "book": { "label": "THEMIS Anayasa Hukuku, 24. baskı, 2020", "page": "s.241–246" },
+  "lessons": [
+    { "file": "01-hukumet-sistemlerinin-siniflandirilmasi.md", "slug": "hukumet-sistemlerinin-siniflandirilmasi", "page": "s.241, 243" },
+    { "file": "02-kuvvetler-birligi-sistemleri.md", "slug": "kuvvetler-birligi-sistemleri", "page": "s.241–242" },
+    { "file": "03-parlamenter-sistem.md", "slug": "parlamenter-sistem", "page": "s.243–244" },
+    { "file": "04-baskanlik-ve-yari-baskanlik.md", "slug": "baskanlik-ve-yari-baskanlik-sistemleri", "page": "s.244–246" },
+    { "file": "05-turkiyenin-hukumet-sistemi.md", "slug": "turkiyenin-hukumet-sistemi", "page": "s.169, 186, 244–245" }
+  ]
+}

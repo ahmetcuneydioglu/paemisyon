@@ -1,0 +1,236 @@
+{
+  "deck": {
+    "topicId": "a9e2a110-a63e-4cfa-91f2-25c187d0c3e6",
+    "legislationSlug": "7068-sayili-genel-kolluk-disiplin-hukumleri-kanunu",
+    "unitSlug": "gkdk-disiplin-amirleri-kurullari",
+    "sourceLabel": "AI bilgi kartı — 7068 Sayılı Genel Kolluk Disiplin Hükümleri Kanunu md 13–26",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: gkdk-disiplin-amirleri-kurullari özeti + resmî madde metni); denetim notu 7 Kas 2026 (#5 md 14/2 müfettiş seçeneği); 7 Kas 2026 kullanıcı kararı: Jandarma/Sahil Güvenlik kartları çıkarıldı (6), ibareler düşürüldü (4)"
+  },
+  "cards": [
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Emniyet Genel Müdürlüğü personeline resen disiplin cezası vermeye yetkili olanlar ve verebilecekleri cezalar Kanuna ekli hangi çizelgede gösterilir?",
+      "back": "(3) sayılı çizelgede.",
+      "explanation": "Çizelgeler üç şeyi birlikte gösterir: resen ceza vermeye yetkili olanları, disiplin cezası verilecekleri ve verilebilecek cezaları.",
+      "articleRefs": [
+        "13"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Bakan, kimlerin bir üst disiplin amiridir?",
+      "back": "Emniyet Genel Müdürü ve valilerin.",
+      "explanation": "Zincirin alt halkalarında kaymakam ilçe teşkilatında, vali de il teşkilatında diğer disiplin amirlerine göre en üst disiplin amiridir. Valiler ise kaymakamların bir üst disiplin amiridir.",
+      "articleRefs": [
+        "13"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Görevlendirme ya da atama nedeniyle mensubu olduğu teşkilat dışında görev yapan personelin disiplin soruşturması nerede yapılır?",
+      "back": "Fiilen görevli olduğu teşkilat bünyesinde yapılır. Dosya ise mensubu olduğu teşkilatın yetkili disiplin amiri ve kurullarına gönderilir.",
+      "explanation": "Soruşturmayı yapan teşkilat ile işlemi yapan teşkilat ayrıdır. Dosya, bu Kanun hükümlerine göre işlem yapılmak üzere personelin mensubu olduğu teşkilata gider.",
+      "articleRefs": [
+        "13"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Maiyetindeki birinin disiplinsizliğini öğrenen disiplin amiri, soruşturmayı bizzat yapmazsa soruşturmacıyı nasıl görevlendirir?",
+      "back": "Yazılı olarak. Soruşturmayı, yazılı olarak görevlendirdiği soruşturmacılar vasıtasıyla yaptırır.",
+      "explanation": "Amirin önce olayın araştırılması gerektiğine kanaat getirmesi gerekir. Soruşturmacı olarak şunlar görevlendirilebilir: soruşturulanın üstü konumundaki bir veya birden fazla kişi ya da Bakanlık ve/veya ilgisine göre teşkilat müfettişleri.",
+      "articleRefs": [
+        "14"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Hakkında soruşturma yapılan kişinin astı konumundaki biri, soruşturma heyetine başkan olarak görevlendirilebilir mi?",
+      "back": "Hayır. Gerek görülürse ast konumundakiler heyete üye olarak girebilir; heyet başkanı bu imkânın dışındadır.",
+      "explanation": "Asıl kural, soruşturmacının soruşturulanın üstü konumunda olmasıdır; soruşturmacı olarak Bakanlık ya da Emniyet Genel Müdürlüğü müfettişi de görevlendirilebilir (md 14/2). Ayrıca soruşturmacı yalnız mülki idare amirliği hizmetleri sınıfı ile emniyet hizmetleri sınıfı personeli arasından seçilebilir.",
+      "articleRefs": [
+        "14"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Disiplin soruşturmacıları ve heyeti, ifade alma ve tanık dinleme gibi yetkilerini kimin adına kullanır?",
+      "back": "Kendilerini görevlendiren disiplin amiri adına kullanır.",
+      "explanation": "Bu yetkiler şunları da kapsar: bilgi ve belge toplama, bilirkişi görevlendirme, keşif yapma, hâkim veya savcı kararı gerektirmeyen durumlarda kriminal inceleme yaptırma ve ilgili makamlarla yazışma. Müfettişlerin özel mevzuatlarından doğan yetkileri saklıdır.",
+      "articleRefs": [
+        "14"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Disiplin amiri, hangi dereceye kadar kan ve kayın hısımları hakkında disiplin amirliği yetkisini kullanamaz?",
+      "back": "İkinci dereceye kadar. Boşanmış olsa dahi eşi için de aynı yasak geçerlidir; bu hallerde yetkiyi üst konumdaki disiplin amiri kullanır.",
+      "explanation": "Yasak, disiplin amirinin bu sıfatından doğan tüm yetkilerini kapsar.",
+      "articleRefs": [
+        "15"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Disiplin amiri unvanına ait görevi vekâleten yürüten kişi, disiplin amirlerine tanınan yetkileri kullanabilir mi?",
+      "back": "Evet. Bu görevi yürüttüğü sürece disiplin amirlerine tanınan yetkileri kullanabilir.",
+      "explanation": "Aynı kural, görevi ikinci görevle, geçici görevle ya da kanunlarda yazılı diğer hallerde yetkili olarak yürütenler için de geçerlidir.",
+      "articleRefs": [
+        "15"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Disiplin amirliği yetkisi devredilebilir mi?",
+      "back": "Hayır. Disiplin amirliği yetkisi devredilemez.",
+      "explanation": "Disiplinsizlik yaptığı tespit edilen personele cezayı, bu Kanundaki esaslara uygun olarak disiplin amiri verir.",
+      "articleRefs": [
+        "15"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 1,
+      "front": "İl polis disiplin kuruluna vali başkanlık eder mi?",
+      "back": "Hayır. İl polis disiplin kuruluna vali yardımcısı başkanlık eder.",
+      "explanation": "Kurulun üyeleri şunlardır: il hukuk işleri müdürü, emniyet müdürü veya görevlendireceği müdür yardımcılarından biri, asayiş şube müdürü ve personel şube müdürü. Merkezde ise Merkez Disiplin Kuruluna personel işleriyle görevli genel müdür yardımcısı, Yüksek Disiplin Kuruluna Emniyet Genel Müdürü başkanlık eder.",
+      "articleRefs": [
+        "16"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Eğitim ve öğretim kurumlarındaki polis disiplin kurulunda, başkan olan kurum müdürünün yanında kaç amir üye bulunur?",
+      "back": "Üç amir bulunur. Bunlar aynı kurumdaki en yüksek rütbeli (rütbelerde eşitlik durumunda kıdemli) amirlerdir; ayrıca öğretmenler arasından Emniyet Genel Müdürünce seçilen bir kişi katılır.",
+      "explanation": "Hangi eğitim ve öğretim kurumunda polis disiplin kurulu oluşturulacağını Bakanlık belirler. Kurul oluşturulmayan kurumların personeli hakkında karar vermeye yetkili kurulları da Bakanlık belirler.",
+      "articleRefs": [
+        "16"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Emniyet Genel Müdürlüğü Yüksek Disiplin Kurulunda kaç emniyet genel müdür yardımcısı üye olarak yer alır?",
+      "back": "İki. Bu genel müdür yardımcılarını Bakan görevlendirir.",
+      "explanation": "Kurulun başkanı Emniyet Genel Müdürüdür. Diğer üyeler Polis Teftiş Kurulu Başkanı ve Birinci Hukuk Müşaviridir.",
+      "articleRefs": [
+        "16"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Emniyet Genel Müdürlüğü Merkez Disiplin Kurulu, emniyet hizmetleri sınıfında hangi meslek derecelerindeki personele meslekten çıkarma dışındaki cezaları verir?",
+      "back": "8 inci meslek derecesinden 5 inci meslek derecesine kadar olanlara verir; 5 inci derece de dahildir. Genel Müdürlük, il, eğitim ve öğretim kurumları kadroları bu kapsamdadır.",
+      "explanation": "Aynı derece aralığındaki personele meslekten çıkarma cezasını Emniyet Genel Müdürlüğü Yüksek Disiplin Kurulu verir.",
+      "articleRefs": [
+        "17"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Emniyet Genel Müdürlüğü Yüksek Disiplin Kurulu, emniyet hizmetleri sınıfında hangi meslek derecelerindeki personele durdurma cezaları ile daha alt cezaları verebilir?",
+      "back": "1 inci, 2 nci, 3 üncü ve 4 üncü meslek derecelerindekilere. Bu derecelere meslekten çıkarma cezasını Bakanlık Yüksek Disiplin Kurulu verir.",
+      "explanation": "Yetki Genel Müdürlük, il, eğitim ve öğretim kurumları kadrolarındaki bu derecelerdeki personeli kapsar.",
+      "articleRefs": [
+        "17"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Emniyet hizmetleri sınıfında 5 inci meslek derecesindeki bir emniyet müdürüne meslekten çıkarma cezasını Bakanlık Yüksek Disiplin Kurulu mu verir?",
+      "back": "Hayır. 5 inci derece, 8 inci–5 inci aralığına dahildir; bu personele meslekten çıkarma cezasını Emniyet Genel Müdürlüğü Yüksek Disiplin Kurulu verir.",
+      "explanation": "Bakanlık Yüksek Disiplin Kurulunun meslekten çıkarma yetkisi, 1 inci, 2 nci, 3 üncü ve 4 üncü meslek derecelerindeki personel içindir.",
+      "articleRefs": [
+        "17"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "İl polis disiplin kurulunun verdiği meslekten çıkarma cezası kararı nasıl kesinleşir?",
+      "back": "Valinin önerisi, Emniyet Genel Müdürlüğü Yüksek Disiplin Kurulunun uygun görüşü ve Bakanın onayıyla kesinleşir.",
+      "explanation": "İl kurulunun meslekten çıkarma dışındaki kararları valinin onayıyla kesinleşir. Yüksek Disiplin Kurulunca uygun görüş belirtilmeyen dosyaları Bakanlık Yüksek Disiplin Kurulu kesin karara bağlar.",
+      "articleRefs": [
+        "18"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Emniyet Genel Müdürlüğü Merkez Disiplin Kurulunun meslekten çıkarma dışındaki kararları kimin onayıyla kesinleşir?",
+      "back": "Emniyet Genel Müdürünün onayıyla kesinleşir.",
+      "explanation": "Aynı kural eğitim ve öğretim kurumlarındaki polis disiplin kurulları için de geçerlidir. Emniyet Genel Müdürünün uygun görmediği kararları Bakanlık Yüksek Disiplin Kurulu kesin karara bağlar.",
+      "articleRefs": [
+        "18"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Bakan onayına sunulup uygun görülmeyen disiplin kurulu kararlarını Emniyet Genel Müdürlüğü Yüksek Disiplin Kurulu mu kesin karara bağlar?",
+      "back": "Hayır. Bakanın uygun görmediği kararları Bakanlık Yüksek Disiplin Kurulu kesin karara bağlar.",
+      "explanation": "Emniyet Genel Müdürlüğü Yüksek Disiplin Kurulu ise il polis disiplin kurulunca verilen ve valinin uygun görmediği kararları kesin karara bağlar. Bu kurulun kendi kararları Bakanın onayıyla kesinleşir.",
+      "articleRefs": [
+        "18"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Emniyet Genel Müdürünün disiplin cezası gerektiren bir fiili öğrenildiğinde, hakkında soruşturma nasıl başlatılır?",
+      "back": "Bakan onayıyla Bakanlık müfettişleri görevlendirilir.",
+      "explanation": "Soruşturmada Bakanın resen verebileceği cezalardan daha ağır bir ceza gerektiren disiplinsizlik tespit edilirse dosyayı Bakanlık Yüksek Disiplin Kurulu karara bağlar.",
+      "articleRefs": [
+        "25"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Yetkili disiplin amiri ya da disiplin kurulu saptanırken personelin hangi tarihte çalıştığı yer esas alınır?",
+      "back": "Fiili işlediği tarihte çalıştığı yer esas alınır. Fiil mehil müddetinde işlendiyse personel, ilişik kestiği yerde görevli kabul edilir.",
+      "explanation": "Fiilden sonra rütbe ya da kadro/görev unvanı değişirse yetkili amir veya kurul, son kadro/görev unvanı karşılığı rütbeye göre belirlenir. Ast ile üst memur aynı fiile iştirak ederse, üst memur hakkında ceza vermeye yetkili disiplin kurulu yetkilidir.",
+      "articleRefs": [
+        "26"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 1,
+      "front": "Disiplin kurulunda bir üye çekimser oy kullanabilir mi?",
+      "back": "Hayır. Çekimser oy kullanılamaz; oyların eşitliği hâlinde başkanın oyu yönünde karar alınmış sayılır.",
+      "explanation": "Disiplin kurulları salt çoğunlukla toplanır, kararlar oy çokluğu ile alınır.",
+      "articleRefs": [
+        "26"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Disiplin kurulu üyesi, hangi dereceden kan ve kayın hısımlarının durumunun görüşüleceği toplantıya katılamaz?",
+      "back": "Birinci ve ikinci derece kan ve kayın hısımlarının. Boşanmış olsa dahi eşi ile disiplin cezası verdiği ya da soruşturmasını yaptığı personel için de katılamaz.",
+      "explanation": "Bu durumda kurul, geri kalan üyeleriyle toplanır ve eksiksiz toplanmış kabul edilir.",
+      "articleRefs": [
+        "26"
+      ]
+    }
+  ]
+}

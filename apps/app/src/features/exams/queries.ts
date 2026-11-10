@@ -1,4 +1,5 @@
 import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
+import type { ReviewPrompt } from "@/features/review-prompt/api";
 import { api } from "@/lib/api";
 import type { QuizOption } from "@/features/quiz/api";
 
@@ -117,6 +118,8 @@ export interface AttemptDetail {
   totalQuestions: number;
   resultLocked: boolean;
   resultAt: string | null;
+  /** Haftalık denemede üst dilim → mağaza değerlendirme istemi (Doc 57). */
+  reviewPrompt?: ReviewPrompt | null;
   answeredCount?: number;
   correctCount: number | null;
   wrongCount: number | null;

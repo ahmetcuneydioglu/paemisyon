@@ -732,6 +732,8 @@ export interface RoomTopic {
   favoriteCount: number;
   /** Yayındaki ünite özetleri; tek ünite varsa `firstSlug` doğrudan açılır. */
   units: { count: number; read: number; firstSlug: string | null };
+  /** Yayındaki konu anlatımı dersleri (Doc 57); üniteden bağımsız. Eski sunucuda alan yok. */
+  lessons?: { count: number; read: number };
   /** "24 soru · 4 ünite özeti · 6 yanlış" — sunucu kurar. */
   note: string;
   /** Bilgi kartları sayımı (Doc 56); bayrak kapalıyken ve eski sunucuda yok. */
@@ -758,6 +760,8 @@ export interface CourseRoom {
     wrongCount: number;
     favoriteCount: number;
     summaryUnitCount: number;
+    /** Yayındaki konu anlatımı dersi sayısı (Doc 57); eski sunucuda alan yok. */
+    lessonCount?: number;
     legislation: { slug: string; name: string; articleCount: number }[];
     /** Dersin bilgi kartları (Doc 56 karar B: "Konu oku" üçüncü bölüm). */
     flashcards?: FlashcardRoomCounts | null;

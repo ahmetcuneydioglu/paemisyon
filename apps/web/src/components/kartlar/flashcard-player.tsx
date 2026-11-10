@@ -1,6 +1,6 @@
 "use client";
 
-import { Ellipsis } from "lucide-react";
+import { Check, Ellipsis } from "lucide-react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useEffect, useRef, useState, type TransitionEvent } from "react";
@@ -64,6 +64,8 @@ function baslatmaHatasi(e: unknown): Hata {
     switch (e.code) {
       case "PREMIUM_REQUIRED":
         return { code: e.code, message: "Bu kapsamın bilgi kartları Premium ile açılır." };
+      case "DAILY_LIMIT_REACHED":
+        return { code: e.code, message: e.message || "Bugünlük kart hakkın doldu; yarın devam edebilirsin. Premium ile sınırsız." };
       case "NO_CARDS":
         return { code: e.code, message: "Bu modda çalışılacak kart yok." };
       case "FLASHCARDS_DISABLED":
@@ -112,6 +114,39 @@ export function FlashcardPlayer({
   const [tally, setTally] = useState({ known: 0, again: 0, learned: 0 });
   const [note, setNote] = useState<{ tone: "info" | "warning"; text: string } | null>(null);
   const [exitAsk, setExitAsk] = useState(false);
+  // Hata bildir (Doc 56 §3f): kart üstündeki bayrak → diyalog; neden + isteğe bağlı açıklama, tur yerinde kalır.
+  const [reportOpen, setReportOpen] = useState(false);
+  // İlerlemeyi sıfırla (Doc 56 §3g): onay diyaloğu → sunucu kapsamdaki SRS durumunu siler (favoriler ve geçmiş
+  // kalır) → aynı kapsamda "Tüm kartlar" turu baştan açılır (sıfırlanınca her kart yenidir).
+  const [resetAsk, setResetAsk] = useState(false);
+  const [resetBusy, setResetBusy] = useState(false);
+  const [reportReason, setReportReason] = useState<string | null>(null);
+  const [reportText, setReportText] = useState("");
+  const [reportState, setReportState] = useState<"idle" | "busy" | "done" | "already" | "error">("idle");
+  const REPORT_REASONS = [
+    { code: "wrong_answer", label: "Cevap hatalı" },
+    { code: "outdated_law", label: "Mevzuat güncel değil" },
+    { code: "ambiguous", label: "Soru belirsiz / cevap tartışmalı" },
+    { code: "typo", label: "Yazım hatası" },
+  ] as const;
+  function reportKapat() {
+    setReportOpen(false);
+    setReportReason(null);
+    setReportText("");
+    setReportState("idle");
+  }
+  async function reportGonder(flashcardId: string) {
+    const r = REPORT_REASONS.find((x) => x.code === reportReason);
+    if (!r) return;
+    setReportState("busy");
+    try {
+      const mesaj = reportText.trim() ? `${r.label} — ${reportText.trim()}` : r.label;
+      const res = await apiClient<{ alreadyReported: boolean }>(`/me/flashcards/${flashcardId}/report`, { method: "POST", body: { message: mesaj } });
+      setReportState(res.alreadyReported ? "already" : "done");
+    } catch {
+      setReportState("error");
+    }
+  }
   const [result, setResult] = useState<FlashcardSessionSummary | null>(null);
   const shownAt = useRef(0);
   const undoTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
@@ -169,6 +204,34 @@ export function FlashcardPlayer({
     [],
   );
 
+  async function sifirla() {
+    setResetBusy(true);
+    try {
+      await apiClient("/me/flashcards/progress/reset", { method: "POST", body: scope });
+      const s = await apiClient<FlashcardSession>("/me/flashcards/sessions", {
+        method: "POST",
+        body: { scope, mode: "all", ...(source ? { source } : {}) },
+      });
+      setSession(s);
+      setCards(s.cards);
+      setIndex(0);
+      setFlipped(false);
+      setPending(null);
+      setSonOlay(null);
+      setTally({ known: 0, again: 0, learned: 0 });
+      setResult(null);
+      shownAt.current = saat.simdi();
+      setResetAsk(false);
+      setPhase("playing");
+    } catch (e) {
+      setResetAsk(false);
+      setError(baslatmaHatasi(e));
+      setPhase("error");
+    } finally {
+      setResetBusy(false);
+    }
+  }
+
   /* ---------------- Puanlama ---------------- */
   /** Düğme/klavye: kartı aynı yönde uçur; geçiş bitince `kaydet`. Reduce-motion'da hemen. */
   function puanla(rating: FlashcardRating) {
@@ -206,8 +269,6 @@ export function FlashcardPlayer({
     setPending(null);
     setFlipped(false);
     shownAt.current = saat.simdi();
-    if (index + 1 >= yeniKartlar.length) void bitir(session.sessionId);
-    else setIndex(index + 1);
 
     const govde: OlayGovdesi = { clientEventId, flashcardId: card.id, rating, timeSpentMs: spent };
     const istek = apiClient<FlashcardEventResult>(`/me/flashcards/sessions/${session.sessionId}/events`, { method: "POST", body: govde })
@@ -223,6 +284,10 @@ export function FlashcardPlayer({
       })
       .finally(() => yolda.current.delete(clientEventId));
     yolda.current.set(clientEventId, istek);
+    // Son kart: istek yola çıktıktan SONRA bitir; `bitir` yoldakileri bekler. Aksi hâlde complete önce
+    // varır ve son puan 409 SESSION_COMPLETED ile düşerdi (6 Kas, günlük hak testinde yakalandı).
+    if (index + 1 >= yeniKartlar.length) void bitir(session.sessionId);
+    else setIndex(index + 1);
   }
   useEffect(() => {
     kaydetRef.current = kaydet;
@@ -257,6 +322,8 @@ export function FlashcardPlayer({
   /* ---------------- Bitiş ---------------- */
   async function bitir(sessionId: string) {
     setPhase("finishing");
+    // Yoldaki puanlar sunucuya varsın; complete sonrası gelen olay reddedilir.
+    await Promise.allSettled([...yolda.current.values()]);
     for (const b of bekleyen.current.splice(0)) {
       try {
         await apiClient(`/me/flashcards/sessions/${sessionId}/events`, { method: "POST", body: b });
@@ -338,11 +405,12 @@ export function FlashcardPlayer({
   }
 
   if (phase === "error" || !session) {
-    const premium = error?.code === "PREMIUM_REQUIRED";
+    const hakDoldu = error?.code === "DAILY_LIMIT_REACHED";
+    const premium = error?.code === "PREMIUM_REQUIRED" || hakDoldu;
     return (
       <FocusFrame context={etiket} exitHref={donus}>
         <div className="flex flex-col gap-3 py-2">
-          <Notice tone={premium ? "warning" : "error"} title={premium ? "Premium gerekiyor" : "Kartlar açılamadı"}>
+          <Notice tone={premium ? "warning" : "error"} title={hakDoldu ? "Bugünlük hak doldu" : premium ? "Premium gerekiyor" : "Kartlar açılamadı"}>
             {error?.message}
           </Notice>
           <div className="flex flex-wrap gap-2">
@@ -425,6 +493,17 @@ export function FlashcardPlayer({
                 <span className="type-subhead text-ink">Turdan çık</span>
                 <span className="type-body-sm text-ink-subtle">Kalan kartlara kaldığın yerden dönersin</span>
               </Link>
+              <button
+                type="button"
+                onClick={() => {
+                  close();
+                  setResetAsk(true);
+                }}
+                className="tk-interactive flex min-h-11 flex-col items-start justify-center rounded-control px-3 py-1.5 text-left hover:bg-surface-alt"
+              >
+                <span className="type-subhead text-danger-ink">İlerlemeyi sıfırla</span>
+                <span className="type-body-sm text-ink-subtle">{etiket}: öğrenildi ve tekrar durumu silinir, favoriler korunur</span>
+              </button>
             </div>
           )}
         </Popover>
@@ -473,7 +552,7 @@ export function FlashcardPlayer({
           data-ucus={pending ?? undefined}
           onTransitionEnd={ucusBitti}
         >
-          <FlashCard card={card} flipped={flipped} onFlip={() => setFlipped((f) => !f)} onBookmark={toggleBookmark} solveHref={soruHref(card)} />
+          <FlashCard card={card} flipped={flipped} onFlip={() => setFlipped((f) => !f)} onBookmark={toggleBookmark} onReport={() => setReportOpen(true)} solveHref={soruHref(card)} />
           {pending ? <KoseRozeti rating={pending} /> : null}
         </div>
         <RatingBar onAgain={() => puanla("again")} onKnown={() => puanla("known")} disabled={pending != null} />
@@ -483,6 +562,95 @@ export function FlashcardPlayer({
           <p className="type-body-sm text-center text-ink-subtle">{tallyLine(tally.known, tally.again)}</p>
         )}
       </div>
+
+      <Dialog
+        open={reportOpen}
+        onClose={reportKapat}
+        title={`Kartı bildir · ${card.id.replace(/-/g, "").slice(0, 8).toUpperCase()}`}
+        size="sm"
+        footer={
+          <div className="flex flex-wrap justify-end gap-2">
+            {reportState === "done" || reportState === "already" ? (
+              <Button variant="secondary" onClick={reportKapat}>
+                Kapat
+              </Button>
+            ) : (
+              <>
+                <Button variant="ghost" onClick={reportKapat}>
+                  Vazgeç
+                </Button>
+                <Button variant="destructive" onClick={() => void reportGonder(card.id)} disabled={!reportReason || reportState === "busy"} loading={reportState === "busy"}>
+                  Gönder
+                </Button>
+              </>
+            )}
+          </div>
+        }
+      >
+        {reportState === "done" ? (
+          <Notice tone="success" title="Bildirim alındı">
+            Editör ekibi inceleyecek. Teşekkürler.
+          </Notice>
+        ) : reportState === "already" ? (
+          <Notice tone="info" title="Zaten bildirilmiş">
+            Bu kart için daha önce bildirim göndermişsin; editör sırada.
+          </Notice>
+        ) : (
+          <div className="flex flex-col gap-3">
+            <p className="type-subhead text-ink">Sorun ne?</p>
+            <div role="radiogroup" aria-label="Neden" className="divide-y divide-line rounded-card border border-line bg-surface">
+              {REPORT_REASONS.map((r) => {
+                const active = r.code === reportReason;
+                return (
+                  <button
+                    key={r.code}
+                    type="button"
+                    role="radio"
+                    aria-checked={active}
+                    onClick={() => setReportReason(r.code)}
+                    className={`tk-interactive flex min-h-11 w-full items-center justify-between px-4 py-2.5 text-left ${active ? "type-subhead text-accent-ink" : "type-body text-ink"}`}
+                  >
+                    <span>{r.label}</span>
+                    {active ? <Check size={18} strokeWidth={2} aria-hidden /> : null}
+                  </button>
+                );
+              })}
+            </div>
+            <label htmlFor="kart-bildirim" className="type-subhead text-ink">
+              Açıklama (isteğe bağlı)
+            </label>
+            <textarea
+              id="kart-bildirim"
+              value={reportText}
+              onChange={(e) => setReportText(e.target.value.slice(0, 480))}
+              onKeyDown={(e) => e.stopPropagation()}
+              rows={3}
+              placeholder="Neyin yanlış olduğunu kısaca yaz."
+              className="type-body-sm w-full rounded-control border border-line bg-surface px-2.5 py-2 text-ink outline-none placeholder:text-ink-subtle focus:border-ink-soft"
+            />
+            {reportState === "error" ? <Notice tone="error">Gönderilemedi; yeniden dene.</Notice> : null}
+          </div>
+        )}
+      </Dialog>
+
+      <Dialog
+        open={resetAsk}
+        onClose={() => (resetBusy ? undefined : setResetAsk(false))}
+        title="Bilgi kartlarını sıfırla"
+        size="sm"
+        footer={
+          <div className="flex flex-wrap justify-end gap-2">
+            <Button variant="ghost" onClick={() => setResetAsk(false)} disabled={resetBusy}>
+              Vazgeç
+            </Button>
+            <Button variant="destructive" onClick={() => void sifirla()} loading={resetBusy} disabled={resetBusy}>
+              Sıfırla
+            </Button>
+          </div>
+        }
+      >
+        <p className="type-body text-ink-soft">{etiket} için öğrenildi ve tekrar ilerlemesi sıfırlanacak. Favoriler ve puanlama geçmişin korunur. Devam edilsin mi?</p>
+      </Dialog>
 
       <Dialog
         open={exitAsk}

@@ -36,6 +36,7 @@ export interface SummaryUnitListItem {
   isPremium: boolean;
   locked: boolean;
   blockCount: number;
+  hasQuickReview?: boolean;
   progress: { lastBlockIndex: number; completedAt: string | null } | null;
   mastery?: UnitMastery | null;
 }
@@ -67,6 +68,7 @@ export interface SummaryUnit {
   progress: { lastBlockIndex: number; completedAt: string | null } | null;
   mastery?: UnitMastery | null;
   blocks: SummaryBlock[];
+  quickReview?: SummaryBlock[] | null;
 }
 
 export const summaryKeys = {

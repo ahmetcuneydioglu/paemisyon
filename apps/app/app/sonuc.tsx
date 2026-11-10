@@ -7,6 +7,7 @@ import { ResultPanel, SessionTopRow, UpsellStrip } from "@/components/domain";
 import { AppText, Badge, Button, Notice, ProgressBar, Skeleton, StatTile } from "@/components/ui";
 import { homeKeys } from "@/features/home/queries";
 import { quizApi, type SessionResult } from "@/features/quiz/api";
+import { setPendingReviewPrompt } from "@/features/review-prompt/api";
 import { useTestResult, type TestResultContext } from "@/features/rooms/queries";
 import { fontFamily } from "@/theme/tokens";
 import { useTheme } from "@/theme/ThemeProvider";
@@ -40,6 +41,11 @@ export default function SonucScreen() {
       })
       .catch((e: Error) => setError(e.message));
   }, [p.sessionId, qc, result]);
+
+  // Doc 57: sunucu sorulsun dediyse sekmelere dönünce alt sayfa açılır (bu ekranda değil).
+  useEffect(() => {
+    if (result?.reviewPrompt) setPendingReviewPrompt(result.reviewPrompt);
+  }, [result]);
 
   const pct = result && result.totalQuestions > 0 ? Math.round((result.correctCount / result.totalQuestions) * 100) : null;
   const sure = result ? sureMetni(result.durationSeconds) : null;

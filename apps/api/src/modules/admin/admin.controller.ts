@@ -31,6 +31,7 @@ import { AdminUsersService } from './users/admin-users.service';
 import { AdminLawArticlesService } from './law-articles/admin-law-articles.service';
 import { AuditService } from './audit.service';
 import { SETTING_KEYS, SettingsService } from '../../infra/settings/settings.service';
+import { ReviewPromptService } from '../review-prompt/review-prompt.service';
 import { ReportsService } from '../reports/reports.service';
 import { UpsertQuestionDto } from './dto/upsert-question.dto';
 import { UpsertLawArticleDto } from './dto/law-article.dto';
@@ -61,6 +62,7 @@ export class AdminController {
     private readonly audit: AuditService,
     private readonly reports: ReportsService,
     private readonly settings: SettingsService,
+    private readonly reviewPrompts: ReviewPromptService,
   ) {}
 
   // ── Mevzuat kimliği (Doc 29 §17): kısaltma/alias/tür/resmî URL ──
@@ -99,6 +101,12 @@ export class AdminController {
       coachCikmisSinavKarti: await this.settings.coachCikmisSinavKarti(),
       mobilAnasayfaV2: await this.settings.mobilAnasayfaV2(),
       flashcardsEnabled: await this.settings.flashcardsEnabled(),
+      flashcardsFreeDailyLimit: await this.settings.flashcardsFreeDailyLimit(),
+      // Doc 57: mağaza değerlendirme istemi kill switch (açıkken hiç istem üretilmez).
+      reviewPromptKillSwitch: await this.settings.getBool(
+        SETTING_KEYS.reviewPromptKillSwitch,
+        false,
+      ),
     };
   }
 
@@ -112,6 +120,8 @@ export class AdminController {
   ///                             yalnız admin ve beta rolleri görür.
   ///   flashcardsEnabled       — bilgi kartları herkese (Doc 56); kapalıyken yalnız
   ///                             admin ve beta görür, odalarda kart satırı çizilmez.
+  ///   flashcardsFreeDailyLimit — ücretsiz adayın günlük kart hakkı (Doc 56 §3h);
+  ///                             0 = sınırsız, Premium hep sınırsız.
   @Patch('settings')
   @Roles('admin')
   async updateSettings(
@@ -122,13 +132,22 @@ export class AdminController {
       coachCikmisSinavKarti?: boolean;
       mobilAnasayfaV2?: boolean;
       flashcardsEnabled?: boolean;
+      flashcardsFreeDailyLimit?: number;
+      reviewPromptKillSwitch?: boolean;
     },
   ) {
+    if (body.flashcardsFreeDailyLimit !== undefined) {
+      const n = body.flashcardsFreeDailyLimit;
+      if (!Number.isInteger(n) || n < 0 || n > 1000)
+        throw new BadRequestException('flashcardsFreeDailyLimit 0–1000 arası tam sayı olmalı.');
+      await this.settings.set(SETTING_KEYS.flashcardsFreeDailyLimit, String(n));
+    }
     const degisenler: [string, boolean | undefined][] = [
       [SETTING_KEYS.showQuestionSource, body.showQuestionSource],
       [SETTING_KEYS.coachCikmisSinavKarti, body.coachCikmisSinavKarti],
       [SETTING_KEYS.mobilAnasayfaV2, body.mobilAnasayfaV2],
       [SETTING_KEYS.flashcardsEnabled, body.flashcardsEnabled],
+      [SETTING_KEYS.reviewPromptKillSwitch, body.reviewPromptKillSwitch],
     ];
     for (const [key, value] of degisenler) {
       if (typeof value !== 'boolean') continue;
@@ -610,5 +629,13 @@ export class AdminController {
   @Roles('admin')
   auditList(@Query('page') page?: string) {
     return this.audit.list(page ? Number(page) : 1);
+  }
+
+  /// Doc 57: mağaza değerlendirme hunisi — platform × an × sonuç (son N gün, varsayılan 30).
+  @Get('review-prompts/summary')
+  @Roles('admin')
+  reviewPromptSummary(@Query('days') days?: string) {
+    const n = Math.min(365, Math.max(1, Number(days) || 30));
+    return this.reviewPrompts.summary(n);
   }
 }

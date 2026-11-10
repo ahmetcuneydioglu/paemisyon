@@ -1,0 +1,241 @@
+{
+  "deck": {
+    "topicId": "a9e2a110-a63e-4cfa-91f2-25c187d0c3e6",
+    "legislationSlug": "7068-sayili-genel-kolluk-disiplin-hukumleri-kanunu",
+    "unitSlug": "gkdk-amac-kapsam-tanimlar",
+    "sourceLabel": "AI bilgi kartı — 7068 Sayılı Genel Kolluk Disiplin Hükümleri Kanunu md 1–6",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: gkdk-amac-kapsam-tanimlar özeti + resmî madde metni); denetim düzeltmesi 7 Kas 2026 (1 kart + #6, #13, #21 çıkarıldı: aynı bilgi; #5 qa, #28 ifade); 7 Kas 2026 kullanıcı kararı: Jandarma/Sahil Güvenlik kartları çıkarıldı (2), ibareler düşürüldü (2)"
+  },
+  "cards": [
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Kanunun amaç maddesi hangi teşkilatların personeline ilişkin düzenleme yapar?",
+      "back": "Emniyet Genel Müdürlüğü personeline.",
+      "explanation": "Düzenleme bu personele ilişkin disiplin konularını kapsar.",
+      "articleRefs": [
+        "1"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Kanunun amaç maddesine göre düzenlenen konular nelerdir?",
+      "back": "Disiplinsizlik ve cezalar, disiplin amirleri ve kurulları, disiplin soruşturma usulü ile diğer ilgili hususlar.",
+      "articleRefs": [
+        "1"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Emniyet Genel Müdürlüğü bakımından Kanun kimleri kapsar?",
+      "back": "Emniyet Genel Müdürlüğü teşkilatında çalışan her sınıftan memurları.",
+      "explanation": "Ölçüt, teşkilatta çalışmak ve memur olmaktır. \"Her sınıftan\" ifadesi sınıf ayrımı yapmaz.",
+      "articleRefs": [
+        "2"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Kanundaki tanıma göre \"amir\" kimdir?",
+      "back": "Kadro ve kuruluş yönünden bağlı olunan kimse ile amir olarak yetkilendirilmiş olan diğer kişiler.",
+      "articleRefs": [
+        "3"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Tanımlara göre \"üst\", kadro ve kuruluş yönünden bağlı olunan kimse midir?",
+      "back": "Hayır; o tanım amire aittir. Üst, makam, rütbe veya kıdem büyüklüğünü ifade eder.",
+      "explanation": "Amir bir kişiyi anlatır: bağlı olunan kimse ile amir olarak yetkilendirilmiş diğer kişiler. Üst ise bir büyüklük ilişkisidir; makam, rütbe veya kıdem büyüklüğü.",
+      "articleRefs": [
+        "3"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Kanunda geçen \"Bakanlık\" hangi bakanlığı ifade eder?",
+      "back": "İçişleri Bakanlığını; \"Bakan\" da İçişleri Bakanıdır.",
+      "explanation": "Tanım personelin teşkilatına göre ayrım yapmaz.",
+      "articleRefs": [
+        "3"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Disiplinsizlik hangi kusur biçimleriyle oluşabilir?",
+      "back": "Kasten veya taksirle.",
+      "explanation": "Disiplinsizlik, bu Kanuna göre disiplin cezası ile cezalandırılan fiillerdir. Böyle bir fiil kasten de taksirle de işlenebilir.",
+      "articleRefs": [
+        "3",
+        "4"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Kanuna göre \"disiplin amiri\" kimdir?",
+      "back": "Bu Kanun ile disiplin cezası vermeye yetkili kılınmış ilk amir.",
+      "explanation": "\"Disiplin amirleri\" ise disiplin amiri ile üst disiplin amirlerinin birlikte adıdır.",
+      "articleRefs": [
+        "3"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Bir amirin \"üst disiplin amiri\" sayılması için tanımda hangi unsurlar aranır?",
+      "back": "Disiplin amirinin kadro ve kuruluş yönünden ona bağlı olması, cezası verilecek personelden makam, rütbe veya kıdemce büyük olması ve yetkili sıralı amir olması.",
+      "explanation": "Tanım, bu nitelikleri taşıyan yetkili sıralı tüm amirleri kapsar.",
+      "articleRefs": [
+        "3"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Personel hakkında adli soruşturma sürerken aynı fiil için disiplin soruşturması yapılabilir mi?",
+      "back": "Evet; adli soruşturma veya kovuşturma; disiplin soruşturması yapılmasını, disiplin cezası verilmesini ve bu cezanın yerine getirilmesini engellemez.",
+      "explanation": "Disiplin soruşturması, disiplinsizlik yaptığı iddia edilen personel hakkında karar vermek amacıyla disiplin amirleri veya kurulları tarafından yapılan veya yaptırılan araştırma ve incelemedir.",
+      "articleRefs": [
+        "3",
+        "5"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Emir asta hangi biçimlerde bildirilebilir?",
+      "back": "Söz, yazı ve sair surette.",
+      "explanation": "Emir, hizmete ilişkin bir fiilin yapılmasının veya yapılmamasının asta bildirilmesidir. \"Sair surette\" ifadesi, söz ve yazı dışındaki bildirim yollarını da içine alır.",
+      "articleRefs": [
+        "3"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "\"Hizmetin gerektirdiği fiili yapmak ve menettiği fiili yapmamak\" hizmetin tanımı mıdır?",
+      "back": "Hayır; bu, görevin tanımıdır. Hizmet ise mevzuatla yapılması veya yapılmaması hükme bağlanmış hususlar ile amir tarafından emredilen veya yasaklanan işlerdir.",
+      "articleRefs": [
+        "3"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Disiplin amirleri veya kurulları disiplin soruşturmasını başkasına yaptırabilir mi?",
+      "back": "Evet; disiplin soruşturması, disiplin amirleri veya kurulları tarafından yapılan veya yaptırılan araştırma ve incelemedir.",
+      "explanation": "Soruşturmanın amacı, disiplinsizlik yaptığı iddia edilen personel hakkında karar vermektir.",
+      "articleRefs": [
+        "3"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Aynı fiil nedeniyle bu Kanunda yazılı disiplin cezalarından en fazla kaçı verilebilir?",
+      "back": "Bir; aynı fiil nedeniyle birden fazla disiplin cezası verilemez.",
+      "articleRefs": [
+        "4"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Bir fiil birden fazla disiplinsizlik teşkil ederse hangi disiplin cezası verilir?",
+      "back": "Ağır olan disiplin cezası.",
+      "articleRefs": [
+        "4"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Bir fiilin başka bir kanunla idari yaptırıma bağlanmış olması, bu Kanuna göre disiplin cezası verilmesine engel olur mu?",
+      "back": "Hayır; engel teşkil etmez. Aynı fiile bu Kanun kapsamında disiplin cezası verilebilir.",
+      "articleRefs": [
+        "4"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Disiplin cezası uygulamasında takdir hakkı nasıl bir şekilde kullanılır?",
+      "back": "Ölçülü, adaletli ve hakkaniyetli bir şekilde.",
+      "explanation": "Takdir hakkı ayrıca mutlaka gerekçeli olarak kullanılır.",
+      "articleRefs": [
+        "6"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Disiplin kurulları takdir hakkını gerekçe göstermeden kullanabilir mi?",
+      "back": "Hayır; takdir hakkı mutlaka gerekçeli olarak kullanılır. Bu kural disiplin amirleri için de geçerlidir.",
+      "articleRefs": [
+        "6"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Takdir hakkı kullanılırken disiplinsizliğin kendisine ve sonuçlarına ilişkin hangi hususlar gözönüne alınır?",
+      "back": "Disiplinsizliğin işleniş biçimi; işlendiği zaman ve yer; hizmete olumsuz etkisinin ağırlığı; meydana gelen zarar veya tehlikenin ağırlığı.",
+      "articleRefs": [
+        "6"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Disiplin cezası uygulanmasında takdir hakkını kimler kullanır?",
+      "back": "Bu Kanun ile disiplin cezası vermeye yetkilendirilen disiplin amirleri veya kurulları.",
+      "explanation": "Disiplin amirleri, disiplin amiri ile üst disiplin amirlerini ifade eder.",
+      "articleRefs": [
+        "6",
+        "3"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Takdir hakkı kullanılırken disiplinsizlik yapan personele ilişkin hangi hususlar gözönüne alınır?",
+      "back": "Kast veya taksire dayalı kusurunun ağırlığı, daha önceki disiplin durumu, samimi ikrarı ve gösterdiği pişmanlık.",
+      "articleRefs": [
+        "6"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Disiplin cezası ile ilgili takdir hakkının kaldırılması sonucunu doğuran karar verme yasağı kimleri bağlar?",
+      "back": "İtiraz üzerine yetkili makamlarca verilen kararlar hariç, bütün idari makamları; bu sonucu doğuran karar veremez, uygulama yapamazlar.",
+      "explanation": "Yasak, karar vermenin yanında aynı sonucu doğuran uygulamayı da kapsar.",
+      "articleRefs": [
+        "6"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "İtiraz üzerine yetkili makamlarca verilen bir karar, takdir hakkının kaldırılması sonucunu doğurabilir mi?",
+      "back": "İtiraz üzerine yetkili makamlarca verilen kararlar bu yasağın kapsamı dışındadır. Bunun dışında hiçbir idari makam, takdir hakkının kaldırılması sonucunu doğuran bir karar veremez veya uygulama yapamaz.",
+      "articleRefs": [
+        "6"
+      ],
+      "counterNumbers": []
+    }
+  ]
+}

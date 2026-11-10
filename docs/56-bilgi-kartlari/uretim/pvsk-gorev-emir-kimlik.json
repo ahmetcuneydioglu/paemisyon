@@ -1,0 +1,287 @@
+{
+  "deck": {
+    "topicId": "65aef8de-07cb-49f6-8665-00adc0ef5754",
+    "legislationSlug": "2559-sayili-polis-vazife-ve-salahiyet-kanunu-pvsk",
+    "unitSlug": "pvsk-gorev-emir-kimlik",
+    "sourceLabel": "AI bilgi kartı — 2559 Sayılı Polis Vazife ve Salâhiyet Kanunu (PVSK) md 1, 2, 4, 4/A, 5",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: pvsk-gorev-emir-kimlik özeti + resmî madde metni); denetim düzeltmesi 7 Kas 2026 (4 kart + #18 çıkarıldı; AYM iptali 4/A)"
+  },
+  "cards": [
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Polis, halkın hangi değerlerini muhafaza eder?",
+      "back": "Halkın ırz, can ve malını muhafaza eder; ayrıca ammenin istirahatini temin eder.",
+      "explanation": "Aynı maddede polisin koruduğu alanlar da sayılır: asayiş, amme, şahıs ve tasarruf emniyeti ile mesken masuniyeti.",
+      "articleRefs": [
+        "1"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Polis kimlere muavenet eder?",
+      "back": "Yardım isteyenlere ve yardıma muhtaç olan çocuk, alil ve acizlere muavenet eder.",
+      "explanation": "Polis bunların yanında kanun, Cumhurbaşkanlığı kararnameleri ve ilgili mevzuatın kendisine verdiği vazifeleri de yapar.",
+      "articleRefs": [
+        "1"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Polisin genel emniyetle ilgili görevleri kaç kısımdır?",
+      "back": "İki kısımdır: uygun olmayan hareketlerin işlenmesinden önce önünü almak ve işlenmiş suç hakkında kanunlarda yazılı görevleri yapmak.",
+      "explanation": "A kısmı; kanunlara, Cumhurbaşkanlığı kararnamelerine, yönetmeliklere, Hükümet emirlerine ve kamu düzenine uygun olmayan hareketlerin önünü bu kanun hükümleri dairesinde almaktır. B kısmı; işlenmiş olan bir suç hakkında Ceza Muhakemeleri Usulü Kanunu ile diğer kanunlarda yazılı görevleri yapmaktır.",
+      "articleRefs": [
+        "2"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Amirinden aldığı emri kanun, Cumhurbaşkanlığı kararnamesi veya yönetmelik hükümlerine aykırı gören polis ne yapar?",
+      "back": "Emri yerine getirmez ve bu aykırılığı emri verene bildirir.",
+      "explanation": "Kamu düzeni ve kamu güvenliğinin sağlanmasından sorumlu olan polis için kural budur. Amir emrinde ısrar eder ve emrini yazılı olarak yenilerse emir yerine getirilir; ancak konusu suç teşkil eden emir hiçbir suretle yerine getirilmez.",
+      "articleRefs": [
+        "2"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Amir, polisin aykırı bulduğu emrinde ısrar edip emrini yazılı olarak yenilerse polis bu emri ne yapar?",
+      "back": "Emri yerine getirir; bu hâlde emri yerine getiren sorumlu olmaz.",
+      "explanation": "Bu sonuç, konusu suç teşkil etmeyen aykırı emir içindir. Konusu suç teşkil eden emir hiçbir suretle yerine getirilmez; yerine getirenler sorumluluktan kurtulamaz.",
+      "articleRefs": [
+        "2"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Polis hangi durumda vazifesinden başka bir işte kullanılabilir?",
+      "back": "Hiçbir durumda. Polis hiçbir suretle vazifesinden başka bir işte kullanılamaz.",
+      "explanation": "Kuralı 'hiçbir suretle' ifadesi kesinleştirir: hangi gerekçe ileri sürülürse sürülsün polis yalnız kendi vazifesinde kullanılır.",
+      "articleRefs": [
+        "4"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Polis kişileri ve araçları hangi amaçlarla durdurabilir?",
+      "back": "Suç veya kabahati önlemek; kaçan failleri yakalamak, faillerin kimliğini tespit etmek; yakalama emri ya da zorla getirme kararı olanları tespit etmek; hayata, vücut bütünlüğüne, malvarlığına ya da topluma yönelik tehlikeyi önlemek.",
+      "explanation": "Önlenecek tehlike mevcut olabileceği gibi muhtemel de olabilir. Faillerin kimliğinin tespiti, işlenen suçların yanında işlenen kabahatler için de durdurma amacıdır.",
+      "articleRefs": [
+        "4/A"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Durdurma yetkisinin kullanılabilmesi için hangi sebebin bulunması gerekir?",
+      "back": "Polisin tecrübesine ve içinde bulunulan durumdan edindiği izlenime dayanan makul bir sebep.",
+      "explanation": "Süreklilik arz edecek, fiilî durum ve keyfilik oluşturacak şekilde durdurma işlemi yapılamaz. Aynı maddedeki 'yeterli şüphe' ölçüsü ise durdurulan kişinin üzerinde veya aracında silah ya da tehlike oluşturan eşya bulunmasına ilişkin tedbirler için aranır.",
+      "articleRefs": [
+        "4/A"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Durdurma süresi yirmi dört saatle mi sınırlıdır?",
+      "back": "Hayır. Durdurma süresi, durdurma sebebine esas teşkil eden işlemin gerçekleştirilmesi için zorunlu olan süreden fazla olamaz.",
+      "explanation": "Durdurma sebebi ortadan kalkınca kişilerin ve araçların ayrılmalarına izin verilir.",
+      "articleRefs": [
+        "4/A"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Polis, hangi belgeleri almak için başvuranların parmak izini alır?",
+      "back": "Her çeşit silah ruhsatı, sürücü belgesi, pasaport veya pasaport yerine geçen belge almak için başvuranların.",
+      "explanation": "Başvuru üzerine parmak izi alınan bir başka grup da Türk vatandaşlığına başvuruda bulunanlardır. Bu kişilerin fotoğrafları da alınarak parmak izi ile birlikte sisteme kaydedilir.",
+      "articleRefs": [
+        "5"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Sistemdeki parmak izi ve fotoğraflar, kişinin ölümünden itibaren kaç yıl geçince silinir?",
+      "back": "On yıl geçtikten sonra silinir.",
+      "explanation": "Kişinin ölümüne bağlı bu sürenin yanında, kayıt tarihinden itibaren işleyen ayrı bir süre de vardır.",
+      "articleRefs": [
+        "5"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Sistemdeki parmak izi ve fotoğraflar, her hâlde kayıt tarihinden itibaren kaç yıl geçince silinir?",
+      "back": "Seksen yıl geçtikten sonra silinir.",
+      "explanation": "Maddede bu sürenin yanında kişinin ölümünden itibaren on yıl kuralı da yer alır.",
+      "articleRefs": [
+        "5"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Konusu suç teşkil eden emri amir yazılı olarak yenilerse polis bu emri yerine getirebilir mi?",
+      "back": "Hayır. Konusu suç teşkil eden emir hiçbir suretle yerine getirilmez ve yerine getirenler sorumluluktan kurtulamaz; yazılı yenileme bunu değiştirmez.",
+      "explanation": "Yazılı yenileme, kanun, Cumhurbaşkanlığı kararnamesi ve yönetmelik hükümlerine aykırı görülen emirde sonuç doğurur: amir ısrar edip emrini yazılı yenilerse emir yerine getirilir ve yerine getiren sorumlu olmaz.",
+      "articleRefs": [
+        "2"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "md 2'de sayılan hâllerde (ör. işlenmekte olan suça mani olmak) polis, yetkili amirin sözlü emrinin yazılı olarak verilmesini isteyebilir mi?",
+      "back": "Hayır. Bu emirlerin yazılı olarak verilmesi istenilemez; sözlü emir derhal yerine getirilir ve sorumluluk emri verene aittir.",
+      "explanation": "Sayılan hâllerden bazıları: can, ırz veya mal emniyetini korumak; işlenmekte olan bir suçun işlenmesine veya devamına mani olmak; kanunsuz toplantı veya kanunsuz yürüyüşleri dağıtmak; yangın, su baskını, yer sarsıntısı gibi afetlerde olay yerinde gereken tedbirleri almak.",
+      "articleRefs": [
+        "2"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Ağır cezalı bir suçun sanığı olarak yakalandıktan sonra zabıta kuvvetlerinin elinden kaçmakta olan kişinin yakalanması için yetkili amir emri hangi biçimde verebilir?",
+      "back": "Sözlü olarak verebilir; bu emir derhal yerine getirilir.",
+      "explanation": "Herhangi bir sebeple tıkanmış olan yolların trafiğe açılması ve umuma açık yerlerdeki toplantı, yürüyüş veya törenlerde bozulan düzenin sağlanması da sözlü emir hâlleri arasındadır.",
+      "articleRefs": [
+        "2"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Polis, durdurduğu kişiden hangi belgelerin ibraz edilmesini isteyebilir?",
+      "back": "Kimliğinin veya bulundurulması gerekli diğer belgelerin ibraz edilmesini isteyebilir.",
+      "explanation": "Polis ayrıca durdurduğu kişiye durdurma sebebini bildirir ve durdurma sebebine ilişkin sorular sorabilir.",
+      "articleRefs": [
+        "4/A"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Durdurduğu kişinin üzerinde silah bulunduğu hususunda yeterli şüphe varsa polis, kişiden elbisesini çıkarmasını isteyebilir mi?",
+      "back": "Hayır. Polis kendisine veya başkalarına zarar verilmesini önlemeye yönelik gerekli tedbirleri alabilir; ama bu amaçla kişinin üzerindeki elbisenin çıkarılması istenemez.",
+      "explanation": "Araç için de aynı sınır vardır: bu amaçla aracın, dışarıdan bakıldığında içerisi görünmeyen bölümlerinin açılması istenemez.",
+      "articleRefs": [
+        "4/A"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Parmak izi sisteme kaydedilirken hangi sebeple alındığı da kaydedilir mi?",
+      "back": "Hayır. Parmak izinin hangi sebeple alındığı sisteme kaydedilmez; kimlik bilgileriyle birlikte ne zaman ve kim tarafından alındığı belirtilir.",
+      "explanation": "Kayıt bu amaca özgü sistemde saklanır. Sistemde yer alan kayıtlar gizlidir ve maddede belirlenen amaçlar dışında kullanılamaz.",
+      "articleRefs": [
+        "5"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "5271 sayılı Ceza Muhakemesi Kanununun hangi maddesine göre alınan parmak izleri de bu amaca özgü sisteme kaydedilir?",
+      "back": "81 inci maddesine göre alınan parmak izleri.",
+      "explanation": "Sistemdeki bilgiler kimlik tespiti, suçun önlenmesi veya yürütülmekte olan soruşturma ve kovuşturmada maddî gerçeğin ortaya çıkarılması amacıyla kullanılabilir.",
+      "articleRefs": [
+        "5"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "5275 sayılı Ceza ve Güvenlik Tedbirlerinin İnfazı Hakkında Kanunun hangi maddesine göre alınan parmak izleri de sisteme kaydedilir?",
+      "back": "21 inci maddesine göre alınan parmak izleri.",
+      "explanation": "Bu kişilerin fotoğrafları da alınır ve parmak izi ile birlikte, kimlik bilgileri ile ne zaman ve kim tarafından alındığı belirtilerek kaydedilir.",
+      "articleRefs": [
+        "5"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Polis kişilere kimliğini sormadan önce ne yapmalıdır?",
+      "back": "Kendisinin polis olduğunu belirleyen belgeyi göstermelidir; ardından kimlik sorabilir.",
+      "explanation": "Kimliği sorulan kişilere kimliğini ispatlamaları hususunda gerekli kolaylık gösterilir.",
+      "articleRefs": [
+        "4/A"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Kimliği belirlenemeyen kişi tutulduğunda durumdan kim haberdar edilir?",
+      "back": "Cumhuriyet savcısı; durumdan derhal haberdar edilir.",
+      "explanation": "Kişi, kimliği açık bir şekilde anlaşılıncaya kadar gözaltına alınır ve gerekirse tutuklanır. Kimlik belirlenince gözaltına alınma veya tutuklanma hâline derhal son verilir.",
+      "articleRefs": [
+        "4/A"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Kimliği belirlenemeyen kişinin gözaltına alınmasına ve tutuklanmasına karar verme yetkisi ve usulü bakımından hangi kanun uygulanır?",
+      "back": "5271 sayılı Ceza Muhakemesi Kanunu hükümleri uygulanır.",
+      "explanation": "Belgesinin bulunmaması, açıklamada bulunmaktan kaçınması, gerçeğe aykırı beyanda bulunması dolayısıyla ya da sair surette kimliği belirlenemeyen kişi bu kapsamdadır.",
+      "articleRefs": [
+        "4/A"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Parmak izi ve fotoğraf kayıtlarına ilişkin yönetmeliği İçişleri Bakanlığı kimin görüşünü alarak çıkarır?",
+      "back": "Adalet Bakanlığının görüşünü alarak çıkarır.",
+      "explanation": "Bu yönetmelik; parmak izi ile fotoğrafların sistemde kaydedilmesi ve saklanması ile bu kayıtlardan yararlanmaya ilişkin diğer esas ve usulleri düzenler.",
+      "articleRefs": [
+        "5"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Kimliğinin tespiti amacıyla tutulan kişiye, tutulduğuna ve tutulma süresine dair belge kişi istemese de verilir mi?",
+      "back": "Hayır. Belge, kimliği tespit edildikten sonra ve kişi talepte bulunursa verilir; resen verilmez.",
+      "explanation": "Belge, kişinin kimliğinin tespiti amacıyla tutulduğunu ve tutulma süresini gösterir.",
+      "articleRefs": [
+        "4/A"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Kimliği tespit edilemeyen kişinin yabancı olduğu anlaşılırsa hangi kanunlara göre işlem yapılır?",
+      "back": "5682 sayılı Pasaport Kanunu ve 5683 sayılı Yabancıların Türkiye'de İkamet ve Seyahatleri Hakkında Kanun hükümlerine göre.",
+      "explanation": "Nüfusa kayıtlı olmadığı için kimliği tespit edilemeyen kişi için ise nüfus kaydının temini için gerekli işlemler yapılır, ardından fotoğraf ve parmak izi tespit edilerek kayda alınır.",
+      "articleRefs": [
+        "4/A"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Olay yerinden elde edilen ve kime ait olduğu henüz tespit edilemeyen parmak izleri sisteme neyle birlikte kaydedilir?",
+      "back": "İlgili soruşturma dosya numarası ile birlikte; kime ait olduğu tespit edilinceye kadar bu şekilde kaydedilir.",
+      "explanation": "Kolluk birimleri, olay yerinden alınan parmak izini karşılaştırmak ya da kimlik tespiti yapmak amacıyla bu sistemle doğrudan bağlantı kurabilir.",
+      "articleRefs": [
+        "5"
+      ]
+    }
+  ]
+}

@@ -18,6 +18,7 @@ import {
   FlashcardEventDto,
   FlashcardPreferencesDto,
   FlashcardScopeDto,
+  ReportFlashcardDto,
   StartFlashcardSessionDto,
 } from './dto/flashcards.dto';
 
@@ -73,6 +74,22 @@ export class FlashcardsController {
   @Post('sessions/:id/complete')
   complete(@CurrentUser() user: AuthenticatedUser, @Param('id', ParseUUIDPipe) id: string) {
     return this.flashcards.completeSession(user, id);
+  }
+
+  /** İlerlemeyi sıfırla (Doc 56 §3g): kapsamdaki SRS durumu silinir, favoriler ve geçmiş korunur. */
+  @Post('progress/reset')
+  resetProgress(@CurrentUser() user: AuthenticatedUser, @Body() scope: FlashcardScopeDto) {
+    return this.flashcards.resetProgress(user, scope ?? {});
+  }
+
+  /** Kart hata bildirimi (Doc 56 §3f); aynı karta açık bildirim varsa `alreadyReported`. */
+  @Post(':id/report')
+  report(
+    @CurrentUser() user: AuthenticatedUser,
+    @Param('id', ParseUUIDPipe) id: string,
+    @Body() dto: ReportFlashcardDto,
+  ) {
+    return this.flashcards.report(user, id, dto.message);
   }
 
   @Get('bookmarks')

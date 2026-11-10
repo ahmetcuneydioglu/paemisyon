@@ -1,3 +1,4 @@
+import { hasQuickReview, quickReview } from './quick-review';
 import { Injectable, NotFoundException } from '@nestjs/common';
 import type { SummaryBlock, SummaryBlockType } from '@prisma/client';
 import { PrismaService } from '../../infra/prisma/prisma.service';
@@ -23,6 +24,7 @@ export interface PublicUnitListItem {
   /** Bu kullanıcı için kilitli mi (premium ünite + premium olmayan kullanıcı). */
   locked: boolean;
   blockCount: number;
+  hasQuickReview: boolean;
   progress: { lastBlockIndex: number; completedAt: string | null } | null;
   /** Ünite hâkimiyeti (Doc 53 F5): girişli kullanıcı için; misafirde null. Kilitli ünitede de görünür (kilitli olan özet). */
   mastery: Omit<UnitMasteryRow, 'accuracy' | 'correct'> | null;
@@ -131,6 +133,7 @@ export class SummariesService {
           isPremium: u.isPremium,
           locked: u.isPremium && !(user?.isPremium ?? false),
           blockCount: u._count.blocks,
+          hasQuickReview: hasQuickReview(u.slug),
           progress: p
             ? {
                 lastBlockIndex: p.lastBlockIndex,
@@ -207,6 +210,7 @@ export class SummariesService {
       mastery: user
         ? this.masteryOut(hakimiyet?.solvedCount ?? 0, hakimiyet?.correctCount ?? 0)
         : null,
+      quickReview: locked ? null : quickReview(unit.slug, visible.map((b) => this.toPublicBlock(b, unit.topicId))),
       blocks: visible.map((b) => this.toPublicBlock(b, unit.topicId)),
     };
   }

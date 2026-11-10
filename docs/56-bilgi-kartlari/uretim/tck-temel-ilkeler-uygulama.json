@@ -1,0 +1,325 @@
+{
+  "deck": {
+    "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+    "legislationSlug": "turk-ceza-kanunu",
+    "sourceLabel": "AI bilgi kartı — Türk Ceza Kanunu md 1–19",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: resmî madde metni + çıkmış sorular); denetim düzeltmesi 6 Kas 2026 (3 kart + 2 öneri)"
+  },
+  "cards": [
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Türk Ceza Kanununun amacı nedir?",
+      "back": "Kişi hak ve özgürlüklerini, kamu düzen ve güvenliğini, hukuk devletini, kamu sağlığını ve çevreyi, toplum barışını korumak ve suç işlenmesini önlemek.",
+      "explanation": "Bu amaç için Kanunda ceza sorumluluğunun temel esasları ile suçlar, ceza ve güvenlik tedbirlerinin türleri düzenlenmiştir.",
+      "articleRefs": [
+        "1"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "İdarenin düzenleyici işlemleriyle suç ve ceza konulabilir mi?",
+      "back": "Hayır; idarenin düzenleyici işlemleriyle suç ve ceza konulamaz.",
+      "explanation": "Kanunilik ilkesi gereği kanunda yazılı cezalardan ve güvenlik tedbirlerinden başka bir ceza ve güvenlik tedbirine hükmolunamaz.",
+      "articleRefs": [
+        "2"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Suç ve ceza içeren hükümler hangi biçimde geniş yorumlanamaz?",
+      "back": "Kıyasa yol açacak biçimde geniş yorumlanamaz; bu hükümlerin uygulanmasında kıyas da yapılamaz.",
+      "explanation": "Üçüncü fıkra iki yasak koyar: suç ve ceza içeren hükümlerin uygulanmasında kıyas yapılamaz ve bu hükümler kıyasa yol açacak biçimde geniş yorumlanamaz.",
+      "articleRefs": [
+        "2"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Kanunun açıkça suç saymadığı bir fiil için ceza verilemese de güvenlik tedbiri uygulanabilir mi?",
+      "back": "Hayır. Kanunun açıkça suç saymadığı bir fiil için ceza verilemez, güvenlik tedbiri de uygulanamaz.",
+      "explanation": "Kanunilik ilkesi cezayı da güvenlik tedbirini de kapsar: yalnız kanunda yazılı ceza ve güvenlik tedbirlerine hükmolunur.",
+      "articleRefs": [
+        "2"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "trap",
+      "difficulty": 1,
+      "front": "Ceza Kanununun uygulamasında kişiler arasında ayrım yapılabilir ya da bir kimseye ayrıcalık tanınabilir mi?",
+      "back": "Hayır. Kişiler arasında ayrım yapılamaz ve hiçbir kimseye ayrıcalık tanınamaz.",
+      "explanation": "Sayılan yönler: ırk, dil, din, mezhep, milliyet, renk, cinsiyet, siyasal veya diğer fikir yahut düşünceler, felsefi inanç, milli veya sosyal köken, doğum, ekonomik ve diğer toplumsal konumlar. Birinci fıkra ise suç işleyen kişi hakkında fiilin ağırlığıyla orantılı ceza ve güvenlik tedbirine hükmolunmasını ister.",
+      "articleRefs": [
+        "3"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Ceza kanunlarını bilmemek mazeret sayılır mı?",
+      "back": "Hayır; ceza kanunlarını bilmemek mazeret sayılmaz.",
+      "articleRefs": [
+        "4"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Türk Ceza Kanununun genel hükümleri, kendi suçları dışında hangi suçlar hakkında da uygulanır?",
+      "back": "Özel ceza kanunları ve ceza içeren kanunlardaki suçlar hakkında da uygulanır.",
+      "articleRefs": [
+        "5"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Ceza kanunlarında \"çocuk\" kimdir?",
+      "back": "Henüz onsekiz yaşını doldurmamış kişi.",
+      "articleRefs": [
+        "6"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Ceza kanunlarında \"gece vakti\" hangi zaman dilimidir?",
+      "back": "Güneşin batmasından bir saat sonra başlayıp doğmasından bir saat evvele kadar devam eden zaman süresi.",
+      "articleRefs": [
+        "6"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Ceza kanunlarına göre itiyadi suçlu sayılmanın süre ve tekrar ölçütü nedir?",
+      "back": "Kasıtlı bir suçun temel şeklini ya da daha ağır veya daha az cezayı gerektiren nitelikli şekillerini bir yıl içinde ve farklı zamanlarda ikiden fazla işlemek.",
+      "explanation": "Aynı maddede suçu meslek edinen kişi ayrıca tanımlanır: kısmen de olsa geçimini suçtan elde ettiği kazançla sağlamaya alışmış kişi. Örgüt mensubu suçlu ise bir suç örgütünü kuran, yöneten, örgüte katılan veya örgüt adına suç işleyen kişidir.",
+      "articleRefs": [
+        "6"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "İşlendikten sonra yürürlüğe giren kanuna göre suç sayılmayan bir fiil için hükmolunmuş cezanın infazına ne olur?",
+      "back": "Kendiliğinden kalkar; infazla birlikte kanuni neticeleri de kendiliğinden kalkar.",
+      "explanation": "Böyle bir fiilden dolayı kimse cezalandırılamaz ve hakkında güvenlik tedbiri uygulanamaz. Suçun işlendiği zamanki kanun ile sonraki kanunların hükümleri farklıysa failin lehine olan kanun uygulanır ve infaz olunur.",
+      "articleRefs": [
+        "7"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Hapis cezasının ertelenmesine ilişkin hükümler, infaz rejimine ilişkin hükümler gibi derhal uygulanır mı?",
+      "back": "Hayır. Hapis cezasının ertelenmesi, koşullu salıverilme ve tekerrürle ilgili olanlar hariç tutulmuştur; infaz rejimine ilişkin diğer hükümler derhal uygulanır.",
+      "explanation": "Kural, infaz rejimine ilişkin hükümlerin derhal uygulanmasıdır; ertelenme, koşullu salıverilme ve tekerrüre ilişkin hükümler bu kuralın dışında bırakılmıştır.",
+      "articleRefs": [
+        "7"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Geçici veya süreli bir kanun yürürlükten kalkınca, yürürlükteyken işlenmiş suçlara uygulanmaya devam eder mi?",
+      "back": "Evet; geçici veya süreli kanunların, yürürlükte bulundukları süre içinde işlenmiş suçlar hakkında uygulanmasına devam edilir.",
+      "articleRefs": [
+        "7"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Fiil Türkiye'de işlenip netice yabancı ülkede gerçekleşirse suç yabancı ülkede işlenmiş mi sayılır?",
+      "back": "Hayır. Fiilin kısmen veya tamamen Türkiye'de işlenmesi yeterlidir; suç Türkiye'de işlenmiş sayılır. Netice Türkiye'de gerçekleşse de suç Türkiye'de işlenmiş sayılır.",
+      "explanation": "Türkiye'de işlenen suçlar hakkında Türk kanunları uygulanır.",
+      "articleRefs": [
+        "8"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Türk deniz ve hava araçlarında işlenen suç, araç nerede bulunursa bulunsun Türkiye'de işlenmiş sayılır mı?",
+      "back": "Hayır. Türk deniz ve hava araçları için açık denizde ve bunun üzerindeki hava sahasında olma kaydı vardır; Türk deniz ve hava savaş araçları ise ayrı bentte bu yer kaydı olmadan sayılır.",
+      "explanation": "Türk kara ve hava sahaları ile Türk karasularında işlenen suç da Türkiye'de işlenmiş sayılır.",
+      "articleRefs": [
+        "8"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Türkiye'nin kıt'a sahanlığında veya münhasır ekonomik bölgesinde işlenen hangi suçlar Türkiye'de işlenmiş sayılır?",
+      "back": "Orada tesis edilmiş sabit platformlarda veya bunlara karşı işlenen suçlar.",
+      "articleRefs": [
+        "8"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 1,
+      "front": "Türkiye'de işlediği suçtan dolayı yabancı ülkede hakkında hüküm verilmiş kişi, Türkiye'de yeniden yargılanır mı?",
+      "back": "Evet; Türkiye'de yeniden yargılanır. Yabancı ülkede verilen hüküm buna engel olmaz.",
+      "articleRefs": [
+        "9"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Yabancı ülkede mahkûmiyet hükmü verilmiş olsa bile görev suçu yüzünden Türkiye'de yeniden yargılanan kimdir?",
+      "back": "Yabancı ülkede Türkiye namına memuriyet veya görev üstlenmiş olup da bundan dolayı suç işleyen kimse.",
+      "articleRefs": [
+        "10"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Türk vatandaşının yabancı ülkede işlediği suçtan Türk kanunlarına göre cezalandırılması için suçun hapis cezasının aşağı sınırı ne olmalıdır?",
+      "back": "Bir yıldan az olmamalı. Ayrıca fail Türkiye'de bulunmalı, bu suçtan yabancı ülkede hüküm verilmemiş olmalı ve Türkiye'de kovuşturulabilirlik bulunmalıdır.",
+      "explanation": "Kural, 13. maddede yazılı suçlar dışındaki suçlar içindir. Koşullardan biri yabancı ülkede bu suçtan hüküm verilmemiş olmasıdır.",
+      "articleRefs": [
+        "11"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Türk vatandaşının yabancı ülkede işlediği suçun aşağı sınırı bir yıldan az hapis cezasıysa şikayet hangi süre içinde yapılmalıdır?",
+      "back": "Altı ay içinde; vatandaşın Türkiye'ye girdiği tarihten itibaren. Yargılama zarar görenin veya yabancı hükûmetin şikayetine bağlıdır.",
+      "articleRefs": [
+        "11"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Yabancı ülkede suç işleyen kişinin ceza kanunları bakımından Türk vatandaşı sayılması hangi ana göre belirlenir?",
+      "back": "Fiili işlediği sıraya göre; vatandaş, fiili işlediği sırada Türk vatandaşı olan kişidir.",
+      "explanation": "Türk vatandaşının yabancı ülkede işlediği suçtan Türk kanunlarına göre cezalandırılma koşulları, fiil anında Türk vatandaşı olan kişi için uygulanır.",
+      "articleRefs": [
+        "11",
+        "6"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Yabancının yabancı ülkede Türkiye'nin zararına işlediği suçtan Türkiye'de cezalandırılması için hapis cezasının aşağı sınırı en az ne olmalıdır?",
+      "back": "En az bir yıl; fail Türkiye'de bulunmalıdır. Yargılama Adalet Bakanının istemine bağlıdır.",
+      "explanation": "Kural, 13. maddede yazılı suçlar dışındaki suçlar içindir.",
+      "articleRefs": [
+        "12"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Mağdurun yabancı olduğu hâlde, yabancı ülkede suç işleyen yabancının Türkiye'de yargılanabilmesi için suçun hapis cezasının aşağı sınırı ne olmalıdır?",
+      "back": "Üç yıldan az olmamalı. Ayrıca suçluların geri verilmesi anlaşması bulunmamalı ya da geri verme istemi kabul edilmemiş olmalı; fail Adalet Bakanının istemi ile yargılanır.",
+      "explanation": "Geri verme istemi, suçun işlendiği ülkenin veya failin uyruğunda bulunduğu devletin hükûmeti tarafından kabul edilmemiş olabilir.",
+      "articleRefs": [
+        "12"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Yabancının yabancı ülkede Türkiye'nin zararına işlediği rüşvet suçundan yargılanması Adalet Bakanının istemine bağlı mıdır?",
+      "back": "Hayır. Birinci fıkra kapsamındaki hâllerde rüşvet ve nüfuz ticareti suçlarından yargılama Adalet Bakanının istemine bağlı değildir.",
+      "explanation": "Birinci fıkranın diğer koşulları yine aranır: suçun Türk kanunlarına göre aşağı sınırı en az bir yıl hapis cezasını gerektirmesi ve failin Türkiye'de bulunması.",
+      "articleRefs": [
+        "12"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Vatandaş veya yabancı tarafından yabancı ülkede işlense de Türk kanunlarının uygulandığı sahtecilik suçları hangileridir?",
+      "back": "Parada sahtecilik, para ve kıymetli damgaları imale yarayan araçların üretimi ve ticareti ile mühürde sahtecilik.",
+      "articleRefs": [
+        "13"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "İkinci Kitap, Birinci Kısımdaki bir suçtan yabancı ülkede beraat kararı verilmişse Türkiye'de yargılama yapılabilir mi?",
+      "back": "Evet. Birinci fıkranın (a) ve (b) bentlerindeki suçlarda yabancı ülkede mahkûmiyet veya beraat kararı verilmiş olsa bile Adalet Bakanının talebi üzerine Türkiye'de yargılama yapılır.",
+      "articleRefs": [
+        "13"
+      ],
+      "explanation": "İkinci Kitap, Birinci Kısım \"Uluslararası Suçlar\" kısmıdır (soykırım, insanlığa karşı suçlar, göçmen kaçakçılığı, insan ticareti)."
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Yabancı ülkede işlense de Türk kanunlarının uygulandığı suçlardan hangilerinde Türkiye'de yargılama Adalet Bakanının talebine bağlı değildir?",
+      "back": "İkinci Kitap, Dördüncü Kısım altındaki Üçüncü, Dördüncü, Beşinci, Altıncı ve Yedinci Bölümlerde yer alan suçlarda; birinci fıkradaki diğer suçlarda talep gerekir.",
+      "articleRefs": [
+        "13"
+      ],
+      "explanation": "Dördüncü Kısım'ın bu bölümleri: Üçüncü (Devletin egemenlik alametlerine ve organlarının saygınlığına karşı suçlar), Dördüncü (Devletin güvenliğine karşı suçlar), Beşinci (Anayasal düzene ve bu düzenin işleyişine karşı suçlar), Altıncı (Milli savunmaya karşı suçlar), Yedinci (Devlet sırlarına karşı suçlar ve casusluk). Sekizinci Bölüm (yabancı devletlerle olan ilişkilere karşı suçlar) bu istisnada sayılmaz; orada yargılama Adalet Bakanının talebine bağlı kalır."
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Vatandaşın ya da yabancının yabancı ülkede işlediği suçta, kanun maddesi hapis cezası ile adli para cezasından birini seçimlik saymışsa ne olur?",
+      "back": "Soruşturma veya kovuşturma açılmaz.",
+      "explanation": "Kural, vatandaş ve yabancı tarafından yabancı ülkede işlenen suçlara ilişkin 11 ve 12. maddelerde belirtilen hâller için konmuştur.",
+      "articleRefs": [
+        "14"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Bir suçtan dolayı yabancı ülkede geçen hangi süreler, aynı suçtan Türkiye'de verilecek cezadan mahsup edilir?",
+      "back": "Gözaltında, gözlem altında, tutuklulukta veya hükümlülükte geçen süreler; suç nerede işlenmiş olursa olsun.",
+      "articleRefs": [
+        "16"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Yabancı mahkeme hükmü Türk kanunlarına göre bir haktan yoksunluğu gerektiriyorsa, Türk kanunlarındaki sonuçlarının geçerli olmasına kim karar verir?",
+      "back": "Mahkeme; Cumhuriyet savcısının istemi üzerine ve hükmün Türk hukuk düzenine aykırı düşmemesi şartıyla.",
+      "articleRefs": [
+        "17"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Türkiye'nin egemenlik alanı dışında işlenen suçtan Türkiye'de yargılama yapılırken Türk kanununa göre verilecek ceza hangi sınırı aşamaz?",
+      "back": "Suçun işlendiği ülke kanununda öngörülen cezanın üst sınırını.",
+      "explanation": "İkinci fıkrada sayılan hâllerde bu sınır uygulanmaz.",
+      "articleRefs": [
+        "19"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Yabancı ülkede Türk vatandaşına karşı işlenen suçta da Türk cezası, o ülke kanunundaki cezanın üst sınırıyla sınırlı mıdır?",
+      "back": "Hayır. Suç Türk vatandaşına karşı işlenmişse üst sınır kuralı uygulanmaz; Türkiye'nin güvenliğine karşı veya zararına ya da Türk kanunlarına göre kurulmuş özel hukuk tüzel kişisi zararına işlenen suçlarda da uygulanmaz.",
+      "articleRefs": [
+        "19"
+      ],
+      "counterNumbers": []
+    }
+  ]
+}

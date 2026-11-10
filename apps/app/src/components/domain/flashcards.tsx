@@ -1,8 +1,8 @@
-import { AlertTriangle, Bookmark, Check, ChevronRight, Clock, Hash, Layers, Lightbulb, Lock, RotateCcw, Shuffle, Sparkles, Undo2, type LucideIcon } from "lucide-react-native";
+import { AlertTriangle, Bookmark, Check, ChevronRight, Clock, Flag, Hash, Layers, Lightbulb, Lock, RotateCcw, Shuffle, Sparkles, Undo2, type LucideIcon } from "lucide-react-native";
 import type { ReactNode } from "react";
 import { Pressable, ScrollView, StyleSheet, View, useWindowDimensions, type StyleProp, type ViewStyle } from "react-native";
 import { Gesture, GestureDetector } from "react-native-gesture-handler";
-import Animated, { Extrapolation, interpolate, useAnimatedReaction, useAnimatedStyle, useDerivedValue, useReducedMotion, useSharedValue, withSpring, withTiming } from "react-native-reanimated";
+import Animated, { cancelAnimation, Extrapolation, interpolate, useAnimatedReaction, useAnimatedStyle, useDerivedValue, useReducedMotion, useSharedValue, withDelay, withSequence, withSpring, withTiming } from "react-native-reanimated";
 import { scheduleOnRN } from "react-native-worklets";
 import { AppText, Badge, Button, ListRow, ProgressBar, Sheet, StatTile, type BadgeTone } from "@/components/ui";
 import { countsNote, FLASHCARD_KIND_LABEL, FLASHCARD_MODE, modeCount, relativeDay, type DailyGoal, type Flashcard, type FlashcardMode, type FlashcardOverview, type FlashcardRating, type FlashcardSessionSummary, type ModeCounts } from "@/features/flashcards/queries";
@@ -103,6 +103,21 @@ export function FlashcardModeSheet({ visible, onClose, onDismissed, overview, on
           </View>
           <Button title="Premium'u gör" onPress={onPremium} />
         </View>
+      ) : o.dailyLimit && o.dailyLimit.remaining === 0 ? (
+        // Günlük hak doldu (Doc 56 §3h): modlar gizlenir, Premium teklifi; sayaç yarın sıfırlanır.
+        <View style={{ gap: space.s3 }}>
+          <AppText variant="bodySm" tone="soft">
+            {o.scope.label} · {c.total} kart
+          </AppText>
+          <View style={{ flexDirection: "row", alignItems: "center", gap: space.s2 }}>
+            <Lock color={colors.ink} size={18} strokeWidth={1.75} />
+            <AppText variant="subhead">Bugünlük kart hakkın doldu · {o.dailyLimit.used} / {o.dailyLimit.limit}</AppText>
+          </View>
+          <AppText variant="bodySm" tone="soft">
+            Yarın yeniden {o.dailyLimit.limit} kart; Premium ile sınırsız.
+          </AppText>
+          <Button title="Premium ile sınırsız çalış" onPress={onPremium} />
+        </View>
       ) : (
         <View style={{ gap: space.s4 }}>
           <View style={{ gap: space.s2 }}>
@@ -143,6 +158,7 @@ export function FlashcardModeSheet({ visible, onClose, onDismissed, overview, on
           {o.dailyGoal.target > 0 ? (
             <AppText variant="bodySm" tone="subtle">
               Bugün {o.dailyGoal.done} / {o.dailyGoal.target} kart
+              {o.dailyLimit?.limit != null ? ` · günlük hak ${o.dailyLimit.remaining} kart kaldı` : ""}
             </AppText>
           ) : null}
         </View>
@@ -181,6 +197,7 @@ export function FlashCard({
   flipped,
   onFlip,
   onBookmark,
+  onReport,
   onArticle,
   onSolve,
   height,
@@ -190,6 +207,8 @@ export function FlashCard({
   flipped: boolean;
   onFlip: () => void;
   onBookmark?: () => void;
+  /** Hata bildir (Doc 56 §3f): favorinin yanında bayrak; sayfa açılır, turdan çıkılmaz. */
+  onReport?: () => void;
   onArticle?: (no: string, legislationSlug: string | null) => void;
   /** "Bu konudan soru çöz" köprüsü (arka yüz). */
   onSolve?: () => void;
@@ -213,7 +232,8 @@ export function FlashCard({
   );
 
   const face: ViewStyle = { position: "absolute", left: 0, right: 0, top: 0, bottom: 0, backgroundColor: colors.surface, borderRadius: radius.card, borderWidth: StyleSheet.hairlineWidth, borderColor: colors.line, padding: space.s5, backfaceVisibility: "hidden" };
-  const kapsam = [card.topic.name, card.unit?.title].filter(Boolean).join(" · ");
+  // Kapsam etiketi konu (kanun) adıdır; ünite üretim/doğrulama etiketi olarak arka planda kalır (6 Kas kararı).
+  const kapsam = card.topic.name;
 
   return (
     <Pressable
@@ -224,7 +244,7 @@ export function FlashCard({
     >
       {/* Ön yüz */}
       <Animated.View style={[face, { justifyContent: "space-between" }, frontStyle]} pointerEvents={flipped ? "none" : "auto"}>
-        <KartBaslik badge={<FlashcardKindBadge kind={card.kind} />} kapsam={kapsam} bookmarked={card.bookmarked} onBookmark={onBookmark} />
+        <KartBaslik badge={<FlashcardKindBadge kind={card.kind} />} kapsam={kapsam} bookmarked={card.bookmarked} onBookmark={onBookmark} onReport={onReport} />
         <View style={{ paddingVertical: space.s3 }}>
           <AppText variant="title" style={{ textAlign: "center", ...stemSize(card.front) }}>
             {card.front}
@@ -237,7 +257,7 @@ export function FlashCard({
 
       {/* Arka yüz */}
       <Animated.View style={[face, backStyle]} pointerEvents={flipped ? "auto" : "none"}>
-        <KartBaslik badge={<Badge tone="success">Cevap</Badge>} kapsam={kapsam} bookmarked={card.bookmarked} onBookmark={onBookmark} />
+        <KartBaslik badge={<Badge tone="success">Cevap</Badge>} kapsam={kapsam} bookmarked={card.bookmarked} onBookmark={onBookmark} onReport={onReport} />
         <ScrollView style={{ flex: 1, marginTop: space.s3 }} contentContainerStyle={{ gap: space.s3, paddingBottom: space.s2 }} showsVerticalScrollIndicator={false}>
           <AppText variant="heading" style={{ fontSize: 20, lineHeight: 27 }}>
             {card.back}
@@ -269,8 +289,8 @@ export function FlashCard({
   );
 }
 
-/** Kart üst satırı: tür/cevap rozeti + kapsam etiketi solda, favori (44 pt) sağda. */
-function KartBaslik({ badge, kapsam, bookmarked, onBookmark }: { badge: ReactNode; kapsam: string; bookmarked: boolean; onBookmark?: () => void }) {
+/** Kart üst satırı: tür/cevap rozeti + kapsam etiketi solda, hata bildir + favori (44 pt) sağda. */
+function KartBaslik({ badge, kapsam, bookmarked, onBookmark, onReport }: { badge: ReactNode; kapsam: string; bookmarked: boolean; onBookmark?: () => void; onReport?: () => void }) {
   const { colors, space } = useTheme();
   return (
     <View style={{ flexDirection: "row", alignItems: "flex-start", justifyContent: "space-between", gap: space.s2 }}>
@@ -280,6 +300,17 @@ function KartBaslik({ badge, kapsam, bookmarked, onBookmark }: { badge: ReactNod
           {kapsam}
         </AppText>
       </View>
+      {onReport ? (
+        <Pressable
+          accessibilityRole="button"
+          accessibilityLabel="Hata bildir"
+          onPress={onReport}
+          hitSlop={6}
+          style={({ pressed }) => ({ width: tokenSize.touchTarget, height: tokenSize.touchTarget, alignItems: "center", justifyContent: "center", marginTop: -10, opacity: pressed ? 0.6 : 1 })}
+        >
+          <Flag color={colors.inkSoft} size={20} strokeWidth={1.75} />
+        </Pressable>
+      ) : null}
       <Pressable
         accessibilityRole="button"
         accessibilityLabel={bookmarked ? "Favorilerden çıkar" : "Favorilere ekle"}
@@ -308,8 +339,11 @@ export function FlashcardDeck({
   pending,
   height,
   onBookmark,
+  onReport,
   onArticle,
   onSolve,
+  teaser = false,
+  onTeaserEnd,
 }: {
   card: Flashcard;
   next: Flashcard | null;
@@ -321,8 +355,15 @@ export function FlashcardDeck({
   pending: FlashcardRating | null;
   height: number;
   onBookmark?: () => void;
+  onReport?: () => void;
   onArticle?: (no: string, legislationSlug: string | null) => void;
   onSolve?: () => void;
+  /**
+   * İlk giriş ipucu: kart kendiliğinden sağa (Biliyorum tonu) ve sola (Tekrar tonu) salınıp yerine döner;
+   * kullanıcı dokununca kesilir. Hareket azaltmada oynamaz. Bir kez oynayınca `onTeaserEnd` çağrılır.
+   */
+  teaser?: boolean;
+  onTeaserEnd?: () => void;
 }) {
   const { colors, radius, space } = useTheme();
   const { width } = useWindowDimensions();
@@ -334,11 +375,29 @@ export function FlashcardDeck({
   const sure = motion.exit.ms;
 
   const bitir = (rating: FlashcardRating) => onRate(rating);
+  // İlk giriş ipucu bayrağı (prop → paylaşılan değer); jest dokunuşu da ipucuyu bitirir.
+  const ipucu = useDerivedValue(() => teaser, [teaser]);
+  const ipucuBitti = () => onTeaserEnd?.();
 
   const pan = Gesture.Pan()
     .enabled(pending == null)
     .activeOffsetX([-14, 14])
     .failOffsetY([-28, 28])
+    .onBegin(() => {
+      // İpucu salınımı sürüyorsa parmak kazanır; dokunuş ipucuyu görülmüş sayar.
+      if (ipucu.value) {
+        cancelAnimation(tx);
+        cancelAnimation(ty);
+        scheduleOnRN(ipucuBitti);
+      }
+    })
+    .onFinalize((_e, success) => {
+      // Jest başlamadan bitti (dokunma/çevirme): kesilen ipucu konumunu yerine getir. Başarılı jestte onEnd karar verdi.
+      if (!success && tx.value !== 0) {
+        tx.value = withSpring(0, { damping: 18, stiffness: 180 });
+        ty.value = withSpring(0, { damping: 18, stiffness: 180 });
+      }
+    })
     .onUpdate((e) => {
       tx.value = e.translationX;
       ty.value = e.translationY * 0.2;
@@ -375,6 +434,47 @@ export function FlashcardDeck({
     [reduce, cikis, sure, bitir],
   );
 
+  // Üst kart değişince konumu sıfırla (effect yok): uçan kartın tx'i sarmalayıcıda kalıyordu,
+  // yeni kart ekran dışında açılıyor ve yalnız arkadaki sade kart görünüyordu (simülatör, 5 Kas).
+  const kimlik = useDerivedValue(() => card.id);
+  useAnimatedReaction(
+    () => kimlik.value,
+    (cur, prev) => {
+      if (prev != null && cur !== prev) {
+        // `.set()`: react-hooks/immutability hook kapsamındaki `.value =` yazımını render mutasyonu sayıyor.
+        tx.set(0);
+        ty.set(0);
+      }
+    },
+  );
+
+  // İlk giriş ipucu: bekle → sağa (ton + rozet görünür) → sola → yerine. Kaydırma eşiğinin altında kalır,
+  // puan düşmez. `prop → paylaşılan değer` kalıbı (effect yok); kesilirse `done=false`, yine de bitti sayılır.
+  useAnimatedReaction(
+    () => ipucu.value,
+    (cur, prev) => {
+      if (!cur || cur === prev) return;
+      if (reduce) {
+        scheduleOnRN(ipucuBitti);
+        return;
+      }
+      const mesafe = esik * 0.45;
+      const adim = { duration: motion.exit.ms * 2 };
+      ty.set(0);
+      tx.set(
+        withDelay(
+          700,
+          withSequence(
+            withTiming(mesafe, adim),
+            withDelay(260, withTiming(-mesafe, { duration: motion.exit.ms * 3 })),
+            withDelay(260, withSpring(0, { damping: 16, stiffness: 150 }, () => scheduleOnRN(ipucuBitti))),
+          ),
+        ),
+      );
+    },
+    [reduce, esik],
+  );
+
   const kartStili = useAnimatedStyle(() => ({
     transform: [{ translateX: tx.value }, { translateY: ty.value }, { rotateZ: `${interpolate(tx.value, [-width, 0, width], [-8, 0, 8])}deg` }],
   }));
@@ -403,7 +503,7 @@ export function FlashcardDeck({
       </Animated.View>
       <GestureDetector gesture={pan}>
         <Animated.View style={[{ position: "absolute", left: 0, right: 0, top: 16, height }, kartStili]}>
-          <FlashCard key={card.id} card={card} flipped={flipped} onFlip={onFlip} onBookmark={onBookmark} onArticle={onArticle} onSolve={onSolve} height={height} />
+          <FlashCard key={card.id} card={card} flipped={flipped} onFlip={onFlip} onBookmark={onBookmark} onReport={onReport} onArticle={onArticle} onSolve={onSolve} height={height} />
           {/* Kenar tonu ve köşe rozeti: kaydırma mesafesiyle orantılı; metin eşlik eder. */}
           <Animated.View pointerEvents="none" style={[StyleSheet.absoluteFill, { borderRadius: radius.card, backgroundColor: colors.successSoft }, bilinenTon]} />
           <Animated.View pointerEvents="none" style={[StyleSheet.absoluteFill, { borderRadius: radius.card, backgroundColor: colors.dangerSoft }, tekrarTon]} />

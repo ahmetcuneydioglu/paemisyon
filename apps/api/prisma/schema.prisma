@@ -211,6 +211,7 @@ model User {
   readingProgress      ReadingProgress[]
   summaryProgress      SummaryProgress[]
   unitProgress         UserUnitProgress[]
+  lessonProgress       LessonProgress[]
   wrongAnswers         WrongAnswer[]
   questionReviews      QuestionReview[]
   questionNotes        QuestionNote[]
@@ -219,8 +220,10 @@ model User {
   flashcardEvents      FlashcardReviewEvent[]
   flashcardBookmarks   FlashcardBookmark[]
   flashcardSessions    FlashcardSession[]
+  flashcardReports     FlashcardReport[]
   studyPlans           StudyPlan[]
   questionReports      QuestionReport[]
+  reviewPrompts        ReviewPrompt[]
   badges               UserBadge[]
   masterySnapshots     TopicMasterySnapshot[]
   pushTokens           PushToken[]
@@ -387,11 +390,12 @@ model Course {
   createdAt DateTime  @default(now()) @map("created_at")
   deletedAt DateTime? @map("deleted_at")
 
-  sections     ExamSectionCourse[]
-  topics       Topic[]
-  quizSessions QuizSession[]
-  dailyFocuses DailyFocus[]
-  courseTests  CourseTest[]
+  sections       ExamSectionCourse[]
+  topics         Topic[]
+  lessonSections LessonSection[]
+  quizSessions   QuizSession[]
+  dailyFocuses   DailyFocus[]
+  courseTests    CourseTest[]
 
   @@map("courses")
 }
@@ -424,6 +428,7 @@ model Topic {
   lawArticles      LawArticle[]
   legislation      Legislation?
   summaryUnits     SummaryUnit[]
+  lessonSections   LessonSection[]
   courseTests      CourseTest[]
   hubTopicMaps     HubTopicMap[]
   flashcards       Flashcard[]
@@ -837,6 +842,7 @@ model Flashcard {
   reviews     FlashcardReview[]
   events      FlashcardReviewEvent[]
   bookmarks   FlashcardBookmark[]
+  reports     FlashcardReport[]
 
   @@index([topicId, status, sortOrder])
   @@index([summaryUnitId])
@@ -1411,6 +1417,26 @@ model QuestionReport {
   @@map("question_reports")
 }
 
+/// Bilgi kartı hata bildirimi (Doc 56 §3f, 6 Kas 2026): soru bildiriminin kart eşi. Kart bizim
+/// üretimimiz olduğundan Soru Merkezi iletim alanları yoktur; düzeltme panelde yapılır.
+model FlashcardReport {
+  id          String       @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  flashcardId String       @map("flashcard_id") @db.Uuid
+  userId      String       @map("user_id") @db.Uuid
+  message     String
+  status      ReportStatus @default(open)
+  resolvedBy  String?      @map("resolved_by") @db.Uuid
+  createdAt   DateTime     @default(now()) @map("created_at")
+  resolvedAt  DateTime?    @map("resolved_at")
+
+  flashcard Flashcard @relation(fields: [flashcardId], references: [id], onDelete: Cascade)
+  user      User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([status, createdAt])
+  @@index([flashcardId])
+  @@map("flashcard_reports")
+}
+
 enum ReportStatus {
   open
   resolved
@@ -1483,6 +1509,28 @@ model Streak {
   user User @relation(fields: [userId], references: [id], onDelete: Cascade)
 
   @@map("streaks")
+}
+
+/// Doc 57: mağaza değerlendirme istemi kaydı. Satır sheet açılınca `shown` ile
+/// yazılır; istemci sonucu bildirince aynı satır `accepted`/`dismissed` olur.
+/// Sönüm hesabı (30 günde 1, kabulde 180 gün) bu tabloya bakar; kural sunucuda.
+model ReviewPrompt {
+  id        String   @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  userId    String   @map("user_id") @db.Uuid
+  /// 'ios' | 'android'
+  platform  String
+  /// 'streak_30' | 'streak_7' | 'weekly_top' | 'personal_best' | 'badge'
+  moment    String
+  /// 'shown' | 'accepted' | 'dismissed'
+  outcome   String   @default("shown")
+  sessionId String?  @map("session_id") @db.Uuid
+  createdAt DateTime @default(now()) @map("created_at")
+  updatedAt DateTime @updatedAt @map("updated_at")
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId, createdAt])
+  @@map("review_prompts")
 }
 
 model Bookmark {
@@ -2726,4 +2774,129 @@ model HubSyncLog {
   @@index([createdAt])
   @@index([result, createdAt])
   @@map("hub_sync_log")
+}
+
+// ── Doc 57 — Konu anlatımı: bölüm → ders → sürümlü içerik (kaynak kitaptan özgün anlatım; ünite ağacından bağımsız) ──
+enum LessonSourceKind {
+  book
+  url
+  article
+}
+
+model LessonSection {
+  id          String        @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  courseId    String        @map("course_id") @db.Uuid
+  topicId     String?       @map("topic_id") @db.Uuid
+  slug        String        @unique
+  title       String
+  subtitle    String?
+  sortOrder   Int           @default(0) @map("sort_order")
+  isPremium   Boolean       @default(false) @map("is_premium")
+  status      ContentStatus @default(in_review)
+  publishedAt DateTime?     @map("published_at")
+  createdAt   DateTime      @default(now()) @map("created_at")
+  updatedAt   DateTime      @updatedAt @map("updated_at")
+  deletedAt   DateTime?     @map("deleted_at")
+
+  course  Course   @relation(fields: [courseId], references: [id], onDelete: Cascade)
+  topic   Topic?   @relation(fields: [topicId], references: [id], onDelete: SetNull)
+  lessons Lesson[]
+
+  @@index([courseId, status, sortOrder])
+  @@index([topicId])
+  @@map("lesson_sections")
+}
+
+model Lesson {
+  id             String        @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  sectionId      String        @map("section_id") @db.Uuid
+  slug           String        @unique
+  title          String
+  goal           String
+  sortOrder      Int           @default(0) @map("sort_order")
+  readingMinutes Int           @default(8) @map("reading_minutes")
+  status         ContentStatus @default(in_review)
+  /// Yalnız panelde görünür (4 Eyl 2026 kuralı): "THEMIS Anayasa Hukuku 24. baskı s.22"
+  sourceLabel    String        @map("source_label")
+  /// Yayındaki sürüm numarası; okuma konumu sürüme bağlıdır.
+  version        Int           @default(1)
+  publishedAt    DateTime?     @map("published_at")
+  publishedBy    String?       @map("published_by") @db.Uuid
+  createdBy      String?       @map("created_by") @db.Uuid
+  createdAt      DateTime      @default(now()) @map("created_at")
+  updatedAt      DateTime      @updatedAt @map("updated_at")
+  deletedAt      DateTime?     @map("deleted_at")
+
+  section  LessonSection    @relation(fields: [sectionId], references: [id], onDelete: Cascade)
+  versions LessonVersion[]
+  sources  LessonSource[]
+  links    LessonLink[]
+  progress LessonProgress[]
+
+  @@index([sectionId, status, sortOrder])
+  @@map("lessons")
+}
+
+model LessonVersion {
+  id         String   @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  lessonId   String   @map("lesson_id") @db.Uuid
+  versionNo  Int      @map("version_no")
+  /// sections[] → { title, blocks[] : {kind:"text",text} | {kind:"table",headers,rows} }
+  body       Json
+  /// Editoryal inceleme kaydı (kaynak/anlam kontrolü) — yayın öncesi zorunlu.
+  reviewNote String?  @map("review_note")
+  createdBy  String?  @map("created_by") @db.Uuid
+  createdAt  DateTime @default(now()) @map("created_at")
+
+  lesson Lesson @relation(fields: [lessonId], references: [id], onDelete: Cascade)
+
+  @@unique([lessonId, versionNo])
+  @@map("lesson_versions")
+}
+
+model LessonSource {
+  id           String           @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  lessonId     String           @map("lesson_id") @db.Uuid
+  kind         LessonSourceKind
+  label        String
+  url          String?
+  page         String?
+  lawArticleId String?          @map("law_article_id") @db.Uuid
+  /// Kullanıcıya gösterilir mi (kitap künyesi panelde kalır; URL ve madde açık).
+  isPublic     Boolean          @default(true) @map("is_public")
+  sortOrder    Int              @default(0) @map("sort_order")
+
+  lesson Lesson @relation(fields: [lessonId], references: [id], onDelete: Cascade)
+
+  @@index([lessonId])
+  @@map("lesson_sources")
+}
+
+model LessonLink {
+  lessonId String @map("lesson_id") @db.Uuid
+  /// topic | legislation | unit
+  kind     String
+  targetId String @map("target_id")
+
+  lesson Lesson @relation(fields: [lessonId], references: [id], onDelete: Cascade)
+
+  @@id([lessonId, kind, targetId])
+  @@index([kind, targetId])
+  @@map("lesson_links")
+}
+
+model LessonProgress {
+  userId    String    @map("user_id") @db.Uuid
+  lessonId  String    @map("lesson_id") @db.Uuid
+  versionNo Int       @map("version_no")
+  offset    Int       @default(0)
+  readAt    DateTime? @map("read_at")
+  updatedAt DateTime  @updatedAt @map("updated_at")
+
+  user   User   @relation(fields: [userId], references: [id], onDelete: Cascade)
+  lesson Lesson @relation(fields: [lessonId], references: [id], onDelete: Cascade)
+
+  @@id([userId, lessonId])
+  @@index([userId, updatedAt])
+  @@map("lesson_progress")
 }

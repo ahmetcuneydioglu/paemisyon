@@ -245,6 +245,33 @@
         "cd /Users/ahmetcnd/Developer/paemisyon/apps/admin && NEXT_PUBLIC_API_BASE_URL=http://localhost:3055/api/v1 NEXT_PUBLIC_SUPABASE_URL=http://localhost:3299 exec ./node_modules/.bin/next dev -p 3056"
       ],
       "port": 3056
+    },
+    {
+      "name": "expo-metro",
+      "runtimeExecutable": "sh",
+      "runtimeArgs": [
+        "-c",
+        "cd /Users/ahmetcnd/Developer/paemisyon/apps/app && exec npx expo start --dev-client --port 8085 --host lan"
+      ],
+      "port": 8085
+    },
+    {
+      "name": "api-doc56",
+      "runtimeExecutable": "sh",
+      "runtimeArgs": [
+        "-c",
+        "cd /Users/ahmetcnd/Developer/paemisyon-worktrees/a0-guven-onarimi/apps/api && PORT=3023 DATABASE_URL='postgresql://postgres:paem@localhost:55432/paem?connection_limit=4' DIRECT_URL='postgresql://postgres:paem@localhost:55432/paem' NOTIFICATIONS_PROVIDER=console EMAIL_WORKER=0 NUDGE_CRON=0 exec npm run start:dev"
+      ],
+      "port": 3023
+    },
+    {
+      "name": "admin-doc56",
+      "runtimeExecutable": "sh",
+      "runtimeArgs": [
+        "-c",
+        "cd /Users/ahmetcnd/Developer/paemisyon-worktrees/a0-guven-onarimi/apps/admin && NEXT_PUBLIC_API_BASE_URL=http://localhost:3023/api/v1 exec ./node_modules/.bin/next dev -p 3024 --webpack"
+      ],
+      "port": 3024
     }
   ]
 }

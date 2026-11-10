@@ -306,6 +306,8 @@ h4 {
 }
 .kart-cevirici {
   display: grid;
+  /* Sütun içerik genişliğine (auto) açılmasın: uzun soru metni kartı viewport dışına taşırıyordu (375/718). */
+  grid-template-columns: minmax(0, 1fr);
   transform-style: preserve-3d;
   transition: transform calc(var(--motion-enter-ms) * 2) var(--motion-enter-ease);
 }
@@ -314,6 +316,7 @@ h4 {
 }
 .kart-yuz {
   grid-area: 1 / 1;
+  min-width: 0;
   backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
 }

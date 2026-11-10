@@ -1,0 +1,297 @@
+{
+  "deck": {
+    "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+    "legislationSlug": "turk-ceza-kanunu",
+    "sourceLabel": "AI bilgi kartı — Türk Ceza Kanunu md 267–298",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: resmî madde metni + çıkmış sorular); denetim düzeltmesi 6 Kas 2026 (2 kart + md 282, 285 kartları eklendi)"
+  },
+  "cards": [
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "İftira suçunda fail, isnat ettiği hukuka aykırı fiili mağdurun işleyip işlemediği hakkında ne bilmelidir?",
+      "back": "Mağdurun o fiili işlemediğini bilmelidir. Madde, işlemediğini bildiği halde bir kimseye hukuka aykırı bir fiil isnat edilmesini arar.",
+      "explanation": "İsnat, yetkili makamlara ihbar veya şikayetle ya da basın ve yayın yoluyla yapılır. Fail bunu, mağdur hakkında soruşturma ve kovuşturma başlatılmasını ya da idari bir yaptırım uygulanmasını sağlamak için yapar. Ceza bir yıldan dört yıla kadar hapistir.",
+      "articleRefs": [
+        "267"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "İftira suçunda dava zamanaşımı hangi tarihten itibaren başlar?",
+      "back": "Mağdurun fiili işlemediğinin sabit olduğu tarihten başlar.",
+      "explanation": "Basın ve yayın yoluyla işlenen iftirada mahkûmiyet kararı, aynı veya eşdeğerde basın ve yayın organıyla ilan olunur. İlan masrafı hükümlüden tahsil edilir.",
+      "articleRefs": [
+        "267"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "İftira yüzünden tutuklanan, sonra beraat eden mağdur için iftira edenin cezası yalnızca yarı oranında mı artırılır?",
+      "back": "Hayır. Mağdur gözaltına alınmış veya tutuklanmışsa iftira eden, ayrıca kişiyi hürriyetinden yoksun kılma suçuna ilişkin hükümlere göre dolaylı fail olarak sorumlu tutulur.",
+      "explanation": "Yarı oranında artırım, beraat kararı veya kovuşturmaya yer olmadığına dair karar verilmiş mağdura gözaltına alma ve tutuklama dışında başka bir koruma tedbiri uygulanması halidir. Fiilin maddî eser ve delilleri uydurularak yapılan iftirada da ceza yarı oranında artırılır.",
+      "articleRefs": [
+        "267"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "İftira eden, mağdur hakkında adlî veya idari soruşturma başlamadan önce iftirasından dönerse cezasının ne kadarı indirilir?",
+      "back": "Beşte dördü indirilir.",
+      "explanation": "Mağdur hakkında kovuşturma başlamadan önce dönmede cezanın dörtte üçü indirilir. Etkin pişmanlık mağdur hakkında hükümden önce gerçekleşirse üçte ikisi, mağdurun mahkûmiyetinden sonra gerçekleşirse yarısı indirilebilir.",
+      "articleRefs": [
+        "269"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "İftira eden, mağdurun hükmolunan cezasının infazına başlandıktan sonra iftirasından dönerse etkin pişmanlıktan yararlanabilir mi?",
+      "back": "Evet. Hükmolunan cezanın infazına başlanması halinde de verilecek cezanın üçte biri indirilebilir. Basın ve yayın yoluyla yapılan iftirada dönüşün aynı yöntemle yayınlanması da gerekir.",
+      "explanation": "Münhasıran idari yaptırım gerektiren fiil dolayısıyla yapılan iftirada da idari yaptırım uygulandıktan sonraki etkin pişmanlıkta cezanın üçte biri indirilebilir.",
+      "articleRefs": [
+        "269"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Yetkili makamlara gerçeğe aykırı olarak suçu kendisinin işlediğini bildiren kişiye hangi ceza verilir?",
+      "back": "İki yıla kadar hapis cezası verilir; bu fiil suç üstlenmedir.",
+      "explanation": "Suça katıldığını gerçeğe aykırı olarak bildirmek de aynı suçu oluşturur. Suç üstsoy, altsoy, eş veya kardeşi cezadan kurtarmak amacıyla işlenirse verilecek cezanın dörtte üçü indirilebilir ya da ceza tamamen kaldırılabilir.",
+      "articleRefs": [
+        "270"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "İşlenmediğini bildiği bir öldürme olayını yetkili makamlara işlenmiş gibi ihbar eden kişi hangi suçu işler?",
+      "back": "Suç uydurma; üç yıla kadar hapis cezası verilir.",
+      "explanation": "İşlenmeyen bir suçun delil veya emarelerini soruşturma yapılmasını sağlayacak biçimde uydurmak da bu suçu oluşturur.",
+      "articleRefs": [
+        "271"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Bir suçun işlendiğini gerçekten sanarak yetkili makamlara ihbar eden kişi, ihbar asılsız çıkınca suç uydurmadan sorumlu olur mu?",
+      "back": "Hayır. Suç uydurma, failin suçun işlenmediğini bildiği halde ihbarda bulunmasını arar; işlendiğini sanarak yapılan ihbar bu suçu oluşturmaz.",
+      "explanation": "Suç, işlenmediği bilinen bir suçun yetkili makamlara işlenmiş gibi ihbarıyla ya da işlenmeyen bir suçun delil veya emarelerinin soruşturma yapılmasını sağlayacak biçimde uydurulmasıyla oluşur.",
+      "articleRefs": [
+        "271"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Temel hâlde, mahkeme huzurunda gerçeğe aykırı olarak tanıklık yapan kişiye hangi ceza verilir?",
+      "back": "Bir yıldan üç yıla kadar hapis cezası verilir. Üç yıldan fazla hapis gerektiren bir suçun soruşturma veya kovuşturmasında yalan tanıklıkta ise ceza iki yıldan dört yıla kadar hapistir.",
+      "explanation": "Aynı ceza, yemin ettirerek tanık dinlemeye kanunen yetkili kişi veya kurul önündeki yalan tanıklık için de geçerlidir. Hukuka aykırı bir fiil nedeniyle başlatılan soruşturmada tanık dinlemeye yetkili kişi veya kurul önündeki yalan tanıklıkta ceza dört aydan bir yıla kadar hapistir.",
+      "articleRefs": [
+        "272"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Yalan tanıklık, hangi ağırlıkta bir suçun soruşturma veya kovuşturmasında yapılırsa ceza iki yıldan dört yıla kadar hapis olur?",
+      "back": "Üç yıldan fazla hapis cezasını gerektiren bir suçun soruşturma veya kovuşturmasında.",
+      "explanation": "Aleyhine tanıklık edilen kimse ağırlaştırılmış müebbet hapis veya müebbet hapis cezasına mahkûm olmuşsa ceza yirmi yıldan otuz yıla kadar hapistir. Bu kimsenin mahkûm olduğu hapis cezasının infazına başlanmışsa bu ceza yarısı kadar artırılır.",
+      "articleRefs": [
+        "272"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Aleyhine tanıklık edilen kişiye hapis cezası dışında idari bir yaptırım uygulanmışsa yalan tanıklık yapan cezasız kalır mı?",
+      "back": "Hayır. Bu halde yalan tanıklıkta bulunan kişi üç yıldan yedi yıla kadar hapis cezası ile cezalandırılır.",
+      "explanation": "Aynı ceza, aleyhine tanıklık edilen kişiye hapis cezası dışında adlî bir yaptırım uygulanması halinde de verilir.",
+      "articleRefs": [
+        "272"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Tanıklıktan çekinme hakkı olduğu halde bu hakkı kendisine hatırlatılmadan gerçeğe aykırı tanıklık yapan kişi hakkında ne yapılabilir?",
+      "back": "Verilecek cezada indirim yapılabilir ya da ceza vermekten vazgeçilebilir.",
+      "explanation": "Kişinin kendisinin, üstsoy, altsoy, eş veya kardeşinin soruşturma ve kovuşturmaya uğramasına neden olabilecek bir hususta yalan tanıklıkta bulunmasında da aynı imkân vardır. Bu hüküm, özel hukuk uyuşmazlıkları kapsamında yapılan yalan tanıklık hallerinde uygulanmaz.",
+      "articleRefs": [
+        "273"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Aleyhine tanıklık yapılan kişi hakkında hak kısıtlamasını sonuçlayan karar verildikten sonra, ama hükümden önce gerçeği söyleyen kişi cezadan tamamen kurtulur mu?",
+      "back": "Hayır. Bu halde verilecek cezanın üçte ikisinden yarısına kadarı indirilebilir; cezaya hükmolunmaması, böyle bir karar verilmeden veya hükümden önce gerçeğin söylenmesi halidir.",
+      "explanation": "Aleyhine tanıklık yapılan kişi hakkındaki mahkûmiyet kararı kesinleşmeden önce gerçeğin söylenmesinde verilecek cezanın yarısından üçte birine kadarı indirilebilir.",
+      "articleRefs": [
+        "274"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Hukuk davasında yalan yere yemin eden taraf, dava hakkında hüküm verilmeden önce gerçeği söylerse ne olur?",
+      "back": "Cezaya hükmolunmaz; hüküm verilmeden önce gerçeği söyleyen davacı veya davalı cezalandırılmaz.",
+      "explanation": "Suç, hukuk davalarında yalan yere yemin eden davacı veya davalı tarafından işlenir ve cezası bir yıldan beş yıla kadar hapistir. Hükmün icraya konulmasından veya kesinleşmesinden önce gerçeğin söylenmesinde verilecek cezanın yarısı indirilir.",
+      "articleRefs": [
+        "275"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Yargı mercilerince görevlendirilen tercüman ifade veya belgeleri gerçeğe aykırı olarak tercüme ederse hangi hüküm uygulanır?",
+      "back": "Gerçeğe aykırı bilirkişiliğe ilişkin birinci fıkra hükmü uygulanır: üç yıldan yedi yıla kadar hapis cezası.",
+      "explanation": "Bilirkişi için ceza, yargı mercileri veya suçtan dolayı kanunen soruşturma yapmak ya da yemin altında tanık dinlemek yetkisine sahip kişi veya kurulca görevlendirilen bilirkişinin gerçeğe aykırı mütalaada bulunması halinde verilir.",
+      "articleRefs": [
+        "276"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "İşlenmekte olan bir suçu yetkili makamlara bildirmeyen kişi hangi suçu işler?",
+      "back": "Suçu bildirmeme; bir yıla kadar hapis cezası ile cezalandırılır.",
+      "explanation": "İşlenmiş olmakla birlikte sebebiyet verdiği neticelerin sınırlandırılması halen mümkün bulunan bir suçu bildirmemek de aynı cezayı gerektirir. Mağdur onbeşyaşını bitirmemiş bir çocuk, bedensel veya ruhsal bakımdan engelli ya da hamileliği nedeniyle kendisini savunamayacak durumdaysa ceza yarı oranında artırılır. Tanıklıktan çekinebilecek olan kişiler bakımından cezaya hükmolunmaz.",
+      "articleRefs": [
+        "278"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Kamu görevlisinin suçu bildirmemesi suçunu adlî kolluk görevini yapan kişi işlerse ceza nasıl değişir?",
+      "back": "Yarı oranında artırılır.",
+      "explanation": "Suç, kamu adına soruşturma ve kovuşturmayı gerektiren bir suçun işlendiğini göreviyle bağlantılı olarak öğrenip yetkili makamlara bildirimi ihmal eden veya geciktiren kamu görevlisince işlenir. Temel ceza altı aydan iki yıla kadar hapistir.",
+      "articleRefs": [
+        "279"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Nöbeti sırasında bir suçun işlendiğine dair belirtiyle karşılaşan ve durumu yetkili makamlara bildirmeyen tabip hangi suçu işler?",
+      "back": "Sağlık mesleği mensuplarının suçu bildirmemesi; bir yıla kadar hapis cezası ile cezalandırılır.",
+      "explanation": "Bildirmede gecikme göstermek de suçu oluşturur. Sağlık mesleği mensubu deyiminden tabip, diş tabibi, eczacı, ebe, hemşire ve sağlık hizmeti veren diğer kişiler anlaşılır.",
+      "articleRefs": [
+        "280"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Kendi işlediği suçun delillerini gerçeğin meydana çıkmasını engellemek için yok eden kişi, suç delillerini yok etme suçundan cezalandırılır mı?",
+      "back": "Hayır; kendi işlediği veya işlenişine iştirak ettiği suçla ilgili olarak kişiye bu fıkra hükmüne göre ceza verilmez.",
+      "explanation": "Bir suçun delillerini yok eden, silen, gizleyen, değiştiren veya bozan kişi altı aydan beş yıla kadar hapisle cezalandırılır; kamu görevlisi göreviyle bağlantılı işlerse ceza yarı oranında artırılır. Hüküm verilmeden önce gizlenen delilleri mahkemeye teslim edene verilecek cezanın beşte dördü indirilir.",
+      "articleRefs": [
+        "281"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Suç işleyen birinin yakalanmaktan kurtulması için kaçmasına imkân sağlayan kişi hangi suçu işler?",
+      "back": "Suçluyu kayırma; altı aydan beş yıla kadar hapis cezası ile cezalandırılır.",
+      "explanation": "Suç işleyen kişiye araştırma, tutuklanma veya hükmün infazından kurtulması için imkân sağlamak da aynı suçu oluşturur.",
+      "articleRefs": [
+        "283"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Suçluyu kayırma suçunu, suç işleyenin kardeşi işlerse ceza yarı oranında mı artırılır?",
+      "back": "Hayır. Suç üstsoy, altsoy, eş, kardeş veya diğer suç ortağı tarafından işlenirse cezaya hükmolunmaz.",
+      "explanation": "Yarı oranında artırım, suçun kamu görevlisi tarafından göreviyle bağlantılı olarak işlenmesi halidir.",
+      "articleRefs": [
+        "283"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Yetkili hakim ve savcı kararı olmaksızın yapılan genital muayenede kim cezalandırılır?",
+      "back": "Kişiyi genital muayeneye gönderen de bu muayeneyi yapan da; ceza üç aydan bir yıla kadar hapistir.",
+      "explanation": "Bulaşıcı hastalıklar dolayısıyla kamu sağlığını korumak amacıyla kanun ve yönetmeliklerde öngörülen hükümlere uygun olarak yapılan muayenelerde bu hüküm uygulanmaz.",
+      "articleRefs": [
+        "287"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Görülmekte olan bir davada yargı görevi yapanı hukuka aykırı olarak etkilemek amacıyla alenen beyanda bulunan kişiye hangi ceza verilir?",
+      "back": "Elli günden az olmamak üzere adli para cezası.",
+      "explanation": "Bilirkişiyi veya tanığı etkilemek amacıyla alenen sözlü veya yazılı beyanda bulunmak da aynı suçu oluşturur; hüküm yapılmakta olan bir soruşturma için de uygulanır.",
+      "articleRefs": [
+        "288"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Kaçma suçunun cezasında, kaçtıktan sonra kendiliğinden teslim olan tutuklu veya hükümlü için kaçma süresi ne kadarı geçerse indirim yapılmaz?",
+      "back": "Altı ay; kaçma süresi altı ayı geçerse cezada indirim yapılmaz.",
+      "explanation": "md 292'deki kaçma suçunun cezası üzerinden, kaçtığı günden teslimin gerçekleştiği güne kadar geçen süre dikkate alınarak verilecek cezanın altıda beşinden altıda birine kadarı indirilir.",
+      "articleRefs": [
+        "293",
+        "292"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Hükümlü veya tutukluların toplu ayaklanmasında, katılanların sayısı kaçı geçmezse bu suçtan cezaya hükmedilmez?",
+      "back": "Üç; hükümlü veya tutuklu sayısı üçten fazla değilse bu suçtan cezaya hükmedilmez.",
+      "explanation": "Sayı üçten fazlaysa her biri hakkında altı aydan üç yıla kadar hapis cezasına hükmolunur. Ayaklanma sırasında başka suçlar işlenirse ayrıca bu suçlara ilişkin hükümlere göre cezaya hükmolunur.",
+      "articleRefs": [
+        "296"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "İnfaz kurumuna uyuşturucu sokulmasında, eşyanın temin edilmesi veya bulundurulması ayrı bir suç oluşturuyorsa ceza nasıl belirlenir?",
+      "back": "Fikri içtima hükümlerine göre belirlenecek ceza yarı oranında artırılır.",
+      "explanation": "İnfaz kurumuna veya tutukevine silah, uyuşturucu veya uyarıcı madde ya da elektronik haberleşme aracı sokan veya bulunduran kişi iki yıldan beş yıla kadar hapisle cezalandırılır. Suç, hükümlü veya tutukluların muhafazasıyla görevli kişiler tarafından işlenirse ceza bir kat artırılır.",
+      "articleRefs": [
+        "297"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Suçtan kaynaklanan malvarlığı değerlerini aklama suçu hangi suçlardan kaynaklanan değerler için işlenebilir ve cezası nedir?",
+      "back": "Alt sınırı altı ay veya daha fazla hapis cezasını gerektiren bir suçtan kaynaklanan değerler için; ceza üç yıldan yedi yıla kadar hapis ve yirmibin güne kadar adlî para cezasıdır.",
+      "explanation": "Fiil, değerleri yurt dışına çıkarmak ya da gayrimeşru kaynağını gizlemek veya meşru yolla elde edildiği kanaatini uyandırmak maksadıyla çeşitli işlemlere tabi tutmaktır. Suça iştirak etmeksizin bu değerleri özelliğini bilerek satın alan, kabul eden, bulunduran veya kullanan kişiye iki yıldan beş yıla kadar hapis verilir.",
+      "articleRefs": [
+        "282"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Soruşturmanın gizliliğini alenen ihlal suçunun oluşması için hangi koşullar aranır?",
+      "back": "Soruşturma evresindeki işlemin içeriğinin açıklanmasıyla suçlu sayılmama karinesinin, haberleşmenin gizliliğinin ya da özel hayatın gizliliğinin ihlal edilmesi ve açıklamanın maddi gerçeğin ortaya çıkmasını engellemeye elverişli olması gerekir.",
+      "explanation": "Ceza bir yıldan üç yıla kadar hapis veya adlî para cezasıdır.",
+      "articleRefs": [
+        "285"
+      ]
+    }
+  ]
+}

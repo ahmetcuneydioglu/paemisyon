@@ -7,6 +7,8 @@ import {
   Logger,
 } from '@nestjs/common';
 import { PrismaService } from '../../infra/prisma/prisma.service';
+import { ReviewPromptService } from '../review-prompt/review-prompt.service';
+import type { ReviewPlatform } from '../review-prompt/review-prompt.logic';
 import { AppEventsService } from '../notifications/app-events.service';
 import { SettingsService } from '../../infra/settings/settings.service';
 import { BadgeService } from '../coach/badge.service';
@@ -62,6 +64,7 @@ export class QuizService {
     private readonly moduleRef: ModuleRef,
     private readonly events: AppEventsService,
     private readonly courseTests: CourseTestsService,
+    private readonly reviewPrompts: ReviewPromptService,
   ) {}
 
   /** Oturum başlat: konudan rastgele yayında sorular → exam-güvenli (cevapsız) döner. */
@@ -1578,6 +1581,8 @@ export class QuizService {
     userId: string,
     sessionId: string,
     reason: 'submitted' | 'timeout' = 'submitted',
+    /** Doc 57: istemci platformu (X-Platform). Yoksa (web, cron, deneme finalize) değerlendirme istemi üretilmez. */
+    opts: { platform?: ReviewPlatform | null } = {},
   ) {
     const session = await this.prisma.quizSession.findFirst({
       where: { id: sessionId, userId },
@@ -1602,6 +1607,7 @@ export class QuizService {
         plannedDurationSeconds: session.plannedDurationSeconds,
         topicBreakdown: null,
         earnedBadges: [],
+        reviewPrompt: null,
       };
     }
 
@@ -1748,6 +1754,7 @@ export class QuizService {
         closedReason: reason,
         topicBreakdown: null,
         earnedBadges: [],
+        reviewPrompt: null,
       };
     }
 
@@ -1790,6 +1797,20 @@ export class QuizService {
     // Günlük hedef bu oturumla dolduysa (öncesinde dolu değildi) olay.
     void this.emitDailyGoalIfCrossed(userId, session.totalQuestions);
 
+    // Mağaza değerlendirme istemi (Doc 57): stats/streak/rozet TAZEyken karar;
+    // deneme (mode=deneme) burada asla üretmez, haftalık üst dilim sonuç yolundadır.
+    const reviewPrompt = await this.reviewPrompts.evaluateAfterSession(
+      userId,
+      opts.platform ?? null,
+      {
+        sessionId,
+        mode: session.mode,
+        totalQuestions: session.totalQuestions,
+        correctCount,
+        earnedBadges: earnedBadges.length,
+      },
+    );
+
     // Konu karnesi: çok-konulu oturumlarda (ders denemesi, karışık koç turu,
     // İlk Devriye) konu bazında doğru/toplam kırılımı (Doc 12 §7, Doc 24 Gün 0).
     let topicBreakdown:
@@ -1824,6 +1845,8 @@ export class QuizService {
       topicBreakdown,
       // Yeni kazanılan rozetler — istemci kutlama gösterir (Doc 19).
       earnedBadges,
+      // Mağaza değerlendirme alt sayfası (Doc 57); eski istemciler alanı yok sayar.
+      reviewPrompt,
     };
   }
 

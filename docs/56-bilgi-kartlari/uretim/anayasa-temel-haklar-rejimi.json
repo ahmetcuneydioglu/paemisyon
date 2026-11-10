@@ -1,0 +1,275 @@
+{
+  "deck": {
+    "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+    "legislationSlug": "t-c-anayasasi",
+    "unitSlug": "anayasa-temel-haklar-rejimi",
+    "sourceLabel": "AI bilgi kartı — T.C. Anayasası md 12–16",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: anayasa-temel-haklar-rejimi özeti + resmî madde metni); denetim düzeltmesi 6 Kas 2026 (3 kart + #27 çıkarıldı)"
+  },
+  "cards": [
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Anayasaya göre temel hak ve hürriyetler hangi niteliklere sahiptir?",
+      "back": "Kişiliğine bağlı, dokunulmaz, devredilmez ve vazgeçilmez niteliktedir. Herkes bu nitelikteki temel hak ve hürriyetlere sahiptir.",
+      "explanation": "Devredilmez ve vazgeçilmez nitelik, hak sahibinin bu hakları başkasına aktaramayacağını ve onlardan vazgeçemeyeceğini anlatır.",
+      "articleRefs": [
+        "12"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Temel hak ve hürriyetler, kişinin hangi taraflara karşı ödev ve sorumluluklarını da ihtiva eder?",
+      "back": "Topluma, ailesine ve diğer kişilere karşı ödev ve sorumluluklarını.",
+      "explanation": "Aynı madde hakla ödevi birlikte düzenler: hak sahibi kişi, topluma, ailesine ve diğer kişilere karşı sorumluluk da taşır.",
+      "articleRefs": [
+        "12"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "md 12'ye göre temel hak ve hürriyetlerin sahibi kimdir; yabancılar bu kapsamda mıdır?",
+      "back": "Herkes; yabancılar da kapsamdadır. Yabancılar için sınırlama md 16 uyarınca milletlerarası hukuka uygun olarak kanunla yapılır.",
+      "explanation": "md 12 hak sahibini \"herkes\" diye belirler; md 16 yabancılar bakımından sınırlamanın milletlerarası hukuka uygun olarak ve kanunla yapılmasını şart koşar.",
+      "articleRefs": [
+        "12",
+        "16"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "\"Dokunulmaz\" diye nitelenen temel hak ve hürriyetler hiçbir şekilde sınırlanamaz mı?",
+      "back": "Hayır, sınırlanabilir: özlerine dokunulmaksızın, Anayasanın ilgili maddelerinde belirtilen sebeplere bağlı olarak ve ancak kanunla.",
+      "explanation": "Sınırlama ayrıca Anayasanın sözüne ve ruhuna, demokratik toplum düzeninin ve lâik Cumhuriyetin gereklerine ve ölçülülük ilkesine aykırı olamaz.",
+      "articleRefs": [
+        "12",
+        "13"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Temel hak ve hürriyetler hangi hukuki araçla sınırlanabilir?",
+      "back": "Ancak kanunla.",
+      "explanation": "Kanun şartının yanında sınırlama, hakların özlerine dokunmadan ve yalnızca Anayasanın ilgili maddelerinde belirtilen sebeplere bağlı olarak yapılır.",
+      "articleRefs": [
+        "13"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Temel hak ve hürriyetler sınırlanırken hakkın neresine dokunulamaz?",
+      "back": "Özüne; sınırlama, hakların özlerine dokunulmaksızın yapılır.",
+      "articleRefs": [
+        "13"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Temel hak ve hürriyetler hangi sebeplere bağlı olarak sınırlanabilir?",
+      "back": "Yalnızca Anayasanın ilgili maddelerinde belirtilen sebeplere bağlı olarak.",
+      "articleRefs": [
+        "13"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Temel hak ve hürriyetler yalnız savaş, seferberlik veya olağanüstü hallerde mi sınırlanabilir?",
+      "back": "Hayır. Sınırlama, Anayasanın ilgili maddelerinde belirtilen sebeplere bağlı olarak ve ancak kanunla yapılır; savaş, seferberlik veya olağanüstü haller hakların kullanılmasının durdurulmasına ilişkindir.",
+      "explanation": "Sınırlamada hakların özüne dokunulamaz. Durdurmada ise hakların kullanılması kısmen veya tamamen durdurulabilir ya da Anayasada öngörülen güvencelere aykırı tedbirler alınabilir.",
+      "articleRefs": [
+        "13",
+        "15"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Temel hak ve hürriyetlere getirilen sınırlamalar hangi ilkeye aykırı olamaz?",
+      "back": "Ölçülülük ilkesine.",
+      "explanation": "Sınırlamaların aykırı olamayacağı ölçütler arasında ölçülülük ilkesi, Anayasanın sözü ve ruhu ile demokratik toplum düzeninin ve lâik Cumhuriyetin gerekleri yan yana sayılır.",
+      "articleRefs": [
+        "13"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Sınırlamaların aykırı olamayacağı \"gerekler\" kimin gerekleridir?",
+      "back": "Demokratik toplum düzeninin ve lâik Cumhuriyetin gerekleri.",
+      "articleRefs": [
+        "13"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Kanunla getirilen sınırlama, Anayasanın sözüne uyduğu sürece ruhuna aykırı olabilir mi?",
+      "back": "Hayır; sınırlamalar Anayasanın hem sözüne hem ruhuna aykırı olamaz.",
+      "explanation": "Söz ve ruh birlikte anılır. Sınırlama ayrıca demokratik toplum düzeninin ve lâik Cumhuriyetin gereklerine ve ölçülülük ilkesine de aykırı olamaz.",
+      "articleRefs": [
+        "13"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Kötüye kullanma yasağı Anayasadaki hangi hak ve hürriyetleri kapsar?",
+      "back": "Hepsini; Anayasada yer alan hak ve hürriyetlerden hiçbiri yasaklanan amaçlara yönelik faaliyetler biçiminde kullanılamaz.",
+      "articleRefs": [
+        "14"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Anayasadaki hak ve hürriyetler hangi amaçları taşıyan faaliyetler biçiminde kullanılamaz?",
+      "back": "Devletin ülkesi ve milletiyle bölünmez bütünlüğünü bozmayı ve insan haklarına dayanan demokratik ve lâik Cumhuriyeti ortadan kaldırmayı amaçlayan faaliyetler biçiminde.",
+      "articleRefs": [
+        "14"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Anayasa hükümleri hangi amaçla yapılan faaliyete imkân verecek şekilde yorumlanamaz?",
+      "back": "Temel hak ve hürriyetlerin yok edilmesini veya Anayasada belirtilenden daha geniş şekilde sınırlandırılmasını amaçlayan faaliyete.",
+      "explanation": "Anayasadaki sınırlama çerçevesi şudur: özlere dokunmamak, ilgili maddelerdeki sebeplere bağlı kalmak ve kanunla sınırlamak. Bu çerçeveyi aşmayı amaçlayan faaliyete Anayasa hükümleri dayanak yapılamaz.",
+      "articleRefs": [
+        "14",
+        "13"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Anayasa hükümlerini hakları yok etmeye imkân verecek şekilde yorumlama yasağı yalnız kişileri mi bağlar?",
+      "back": "Hayır; yasak Devleti de kapsar. Anayasa hükümleri Devlete veya kişilere bu tür faaliyet imkânı verecek şekilde yorumlanamaz.",
+      "explanation": "Yasak, hakları yok etmeyi ya da Anayasada belirtilenden daha geniş şekilde sınırlandırmayı amaçlayan faaliyetlere yöneliktir.",
+      "articleRefs": [
+        "14"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Kötüye kullanma yasağına aykırı faaliyette bulunanlara uygulanacak müeyyideler nasıl düzenlenir?",
+      "back": "Kanunla düzenlenir.",
+      "articleRefs": [
+        "14"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Temel hak ve hürriyetlerin kullanılması hangi hallerde durdurulabilir?",
+      "back": "Savaş, seferberlik veya olağanüstü hallerde.",
+      "explanation": "Bu hallerde durdurma, durumun gerektirdiği ölçüde ve milletlerarası hukuktan doğan yükümlülükler ihlal edilmemek kaydıyla yapılır.",
+      "articleRefs": [
+        "15"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Savaş, seferberlik veya olağanüstü hallerde hakların kullanılması yalnız kısmen mi durdurulabilir?",
+      "back": "Hayır; kısmen veya tamamen durdurulabilir. Durumun gerektirdiği ölçü ve milletlerarası hukuktan doğan yükümlülükler kaydı yine aranır.",
+      "articleRefs": [
+        "15"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Durdurma hallerinde hakların kullanılmasını durdurmanın dışında hangi tedbirler alınabilir?",
+      "back": "Anayasada öngörülen güvencelere aykırı tedbirler alınabilir.",
+      "explanation": "Bu tedbirler de durumun gerektirdiği ölçüde kalır; son fıkradaki güvencelere savaş, seferberlik ve olağanüstü hallerde de dokunulamaz.",
+      "articleRefs": [
+        "15"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Ölçü kaydı temel hak ve hürriyetlerin hem sınırlanmasında hem durdurulmasında aranır mı?",
+      "back": "Evet. Sınırlamalar ölçülülük ilkesine aykırı olamaz; durdurma ise durumun gerektirdiği ölçüde yapılır.",
+      "explanation": "Sınırlamada ayrıca hakların özü, Anayasanın sözü ve ruhu, demokratik toplum düzeninin ve lâik Cumhuriyetin gerekleri korunur. Durdurmada milletlerarası hukuktan doğan yükümlülükler ihlal edilmez ve son fıkradaki güvencelere dokunulmaz.",
+      "articleRefs": [
+        "15",
+        "13"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Durdurma hallerinde savaş hukukuna uygun fiiller sonucu meydana gelen ölümler de yaşama hakkı güvencesinin içinde midir?",
+      "back": "Hayır; bu ölümler güvencenin dışında bırakılır. Bunun dışında kişinin yaşama hakkına, maddi ve manevi varlığının bütünlüğüne dokunulamaz.",
+      "explanation": "Son fıkradaki güvenceler savaş, seferberlik ve olağanüstü hallerde de geçerlidir.",
+      "articleRefs": [
+        "15"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Olağanüstü hallerde kişi din, vicdan, düşünce ve kanaatlerini açıklamaya zorlanabilir mi?",
+      "back": "Hayır; savaş, seferberlik ve olağanüstü hallerde de kimse bunları açıklamaya zorlanamaz ve bunlardan dolayı suçlanamaz.",
+      "articleRefs": [
+        "15"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Savaş, seferberlik veya olağanüstü hallerde suç ve cezalar geçmişe yürütülebilir mi?",
+      "back": "Hayır; bu hallerde de suç ve cezalar geçmişe yürütülemez.",
+      "articleRefs": [
+        "15"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Hem durdurma hallerinde hem yabancılar için sınırlamada uyulması gereken hukuk hangisidir?",
+      "back": "Milletlerarası hukuk: durdurma bu hukuktan doğan yükümlülükler ihlal edilmemek kaydıyla yapılır; yabancılar için sınırlama milletlerarası hukuka uygun olarak yapılır.",
+      "explanation": "Yabancılar için sınırlamada milletlerarası hukuka uygunluğun yanında kanun şartı da aranır.",
+      "articleRefs": [
+        "15",
+        "16"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Savaş, seferberlik veya olağanüstü hallerde kimse ne zamana kadar suçlu sayılamaz?",
+      "back": "Suçluluğu mahkeme kararı ile saptanıncaya kadar.",
+      "articleRefs": [
+        "15"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Yabancıların temel hak ve hürriyetleri hangi şartlarla sınırlanabilir?",
+      "back": "Milletlerarası hukuka uygun olarak kanunla; bu şartlar birlikte aranır.",
+      "articleRefs": [
+        "16"
+      ]
+    }
+  ]
+}

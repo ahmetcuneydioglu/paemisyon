@@ -1,0 +1,264 @@
+{
+  "deck": {
+    "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+    "legislationSlug": "turk-ceza-kanunu",
+    "sourceLabel": "AI bilgi kartı — Türk Ceza Kanunu md 170–196",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: resmî madde metni + çıkmış sorular); denetim düzeltmesi 6 Kas 2026 (3 kart + md 191 kartı eklendi)"
+  },
+  "cards": [
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Genel güvenliğin kasten tehlikeye sokulması suçunu oluşturan hareketler hangileridir?",
+      "back": "Yangın çıkarmak; bina çökmesine, toprak kaymasına, çığ düşmesine, sel veya taşkına neden olmak; silahla ateş etmek veya patlayıcı madde kullanmak.",
+      "explanation": "Bu hareketler kişilerin hayatı, sağlığı veya malvarlığı bakımından tehlikeli olacak biçimde yapılmalıdır. Kişilerde korku, kaygı veya panik yaratabilecek tarzda yapılmaları da yeterlidir. Yangın, bina çökmesi, toprak kayması, çığ düşmesi, sel veya taşkın tehlikesine neden olmak ise aynı maddede ayrı bir fıkrada, daha hafif cezayla (üç aydan bir yıla kadar hapis veya adlî para cezası) karşılanır.",
+      "articleRefs": [
+        "170"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Ses ve gaz fişeği atabilen silahla ateş ederek genel güvenliği kasten tehlikeye sokan kişiye de bir yıldan beş yıla kadar hapis mi verilir?",
+      "back": "Hayır. Bu hâlde ceza altı aydan üç yıla kadar hapistir. Bir yıldan beş yıla kadar hapis, fıkradaki diğer hareketler içindir.",
+      "explanation": "Hafif ceza yalnız ses ve gaz fişeği atabilen silahla ateş etme hâline özgüdür. Başka bir silahla ateş etme ya da patlayıcı madde kullanma bir yıldan beş yıla kadar hapisle cezalandırılır.",
+      "articleRefs": [
+        "170"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Genel güvenliğin kasten tehlikeye sokulması, kişilerin toplu olarak bulundukları bir yerde işlenirse ceza nasıl değişir?",
+      "back": "Yarı oranında artırılır.",
+      "explanation": "Artırım, birinci fıkrada tanımlanan suçun bütün hâllerine uygulanır: yangın çıkarma, çökme veya taşkına neden olma, silahla ateş etme ya da patlayıcı madde kullanma.",
+      "articleRefs": [
+        "170"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Taksirle yangına neden olan kişi, fiil kimsenin hayatı, sağlığı veya malvarlığı için tehlike oluşturmasa da cezalandırılır mı?",
+      "back": "Hayır. Ceza için fiilin başkalarının hayatı, sağlığı veya malvarlığı bakımından tehlikeli olması gerekir. Bu durumda ceza üç aydan bir yıla kadar hapistir.",
+      "explanation": "Aynı tehlike şartı, bina çökmesine, toprak kaymasına, çığ düşmesine, sel veya taşkına taksirle neden olma hâlinde de aranır.",
+      "articleRefs": [
+        "171"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Bir başkasını sağlığını bozmak amacıyla radyasyona tabi tutma fiili belirsiz sayıda kişiye karşı işlenirse hapis cezası en az ne kadardır?",
+      "back": "Beş yıl; beş yıldan az olmamak üzere hapis cezasına hükmolunur.",
+      "explanation": "Temel hâlde ceza üç yıldan onbeş yıla kadar hapistir. Fiilin, sağlığı bozma amacını gerçekleştirmeye elverişli olacak surette yapılması aranır.",
+      "articleRefs": [
+        "172"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Önemsiz tür ve miktarda patlayıcı maddeyi satın alan, kabul eden veya bulunduran kişinin cezası belirlenirken neye bakılır?",
+      "back": "Maddenin kullanılış amacına bakılır. Bu amaç gözetilerek bir yıla kadar hapis cezasına hükmolunur.",
+      "explanation": "Yetkili makamlardan izin almadan patlayıcı, yakıcı, zehirleyici gibi maddeleri imal eden, nakleden, muhafaza eden, satan veya satın alan kişiye dört yıldan sekiz yıla kadar hapis ve beşbin güne kadar adlî para cezası verilir. Fiil, suç işlemek için teşkil edilmiş bir örgütün faaliyeti çerçevesinde işlenirse ceza bir kat artırılır.",
+      "articleRefs": [
+        "174"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Gözetimindeki hayvanı tehlikeli şekilde serbest bırakmak dışında hangi davranış da aynı suçu oluşturur?",
+      "back": "Hayvanın kontrol altına alınmasında ihmal göstermek. Ceza altı aya kadar hapis veya adlî para cezasıdır.",
+      "explanation": "İki hâlde de davranışın başkalarının hayatı veya sağlığı bakımından tehlikeli olabilecek şekilde gerçekleşmesi aranır.",
+      "articleRefs": [
+        "177"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Herkesin gelip geçtiği yerde gerekli işaret veya engeli koymamanın yanı sıra hangi hareketler de aynı suçu oluşturur?",
+      "back": "Konulmuş olan işaret veya engelleri kaldırmak ya da bunların yerini değiştirmek.",
+      "explanation": "Bu işaret veya engeller, yapılmakta olan işlerden ya da bırakılan eşyadan doğan tehlikeyi önlemek için gereklidir. Ceza iki aydan altı aya kadar hapis veya adlî para cezasıdır.",
+      "articleRefs": [
+        "178"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Alkol veya uyuşturucu madde etkisiyle emniyetli şekilde araç sevk ve idare edemeyecek hâldeyken araç kullanan kişiye hangi ceza verilir?",
+      "back": "Altı aydan iki yıla kadar hapis cezası.",
+      "explanation": "Aynı ceza, başka bir nedenle emniyetli araç kullanamayacak hâlde olan kişi için de geçerlidir. Ulaşım işaretlerini değiştirerek, kaldırarak ya da yanlış işaret vererek başkalarının hayatı, sağlığı veya malvarlığı bakımından tehlikeye neden olmak ise bir yıldan altı yıla kadar hapisle cezalandırılır.",
+      "articleRefs": [
+        "179"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Trafik güvenliğini taksirle tehlikeye sokma suçu hangi ulaşım türlerinde işlenebilir?",
+      "back": "Deniz, hava veya demiryolu ulaşımında.",
+      "explanation": "Kişilerin hayatı, sağlığı veya malvarlığı bakımından bir tehlikeye taksirle neden olunması gerekir. Ceza üç aydan üç yıla kadar hapistir.",
+      "articleRefs": [
+        "180"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Çevrenin kasten kirletilmesinde atık veya artıklar toprakta, suda veya havada kalıcı özellik gösterirse ceza ne kadar artırılır?",
+      "back": "İki katı kadar artırılır.",
+      "explanation": "Artırım iki hâle uygulanır. Birincisi, atık veya artıkları teknik usullere aykırı ve çevreye zarar verecek şekilde toprağa, suya veya havaya kasten vermektir. İkincisi, atık veya artıkları izinsiz olarak ülkeye sokmaktır.",
+      "articleRefs": [
+        "181"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Atık veya artıkların toprağa, suya veya havaya verilmesine taksirle neden olan kişiye temel olarak hangi tür ceza verilir?",
+      "back": "Adlî para cezası. Atık veya artıklar kalıcı etki bırakırsa iki aydan bir yıla kadar hapis cezasına hükmolunur.",
+      "explanation": "Bazı atıklar insan veya hayvanlarda tedavisi zor hastalıklara, üreme yeteneğinin körelmesine ya da hayvanların veya bitkilerin doğal özelliklerini değiştirmeye neden olabilecek niteliktedir. Bu atıklarda taksirli fiilin cezası bir yıldan beş yıla kadar hapistir.",
+      "articleRefs": [
+        "182"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Yapı ruhsatiyesi alınmadan veya ruhsata aykırı olarak bina yapan ya da yaptıran kişiye hangi ceza verilir?",
+      "back": "Bir yıldan beş yıla kadar hapis cezası.",
+      "explanation": "Ruhsatsız başlatılan inşaatların şantiyelerine elektrik, su veya telefon bağlantısı yapılmasına müsaade eden kişi de aynı hükme göre cezalandırılır.",
+      "articleRefs": [
+        "184"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Yapı kullanma izni alınmamış binada sınai faaliyetin icrasına müsaade etme suçu yalnız belediye sınırları içinde mi uygulanır?",
+      "back": "Hayır. Belediye sınırları veya özel imar rejimine tabi yerler kaydı üçüncü fıkrayı kapsamaz. Bu suçun cezası iki yıldan beş yıla kadar hapistir.",
+      "explanation": "Ruhsatsız bina yapma ve şantiyeye bağlantı yapılmasına müsaade etme hükümleri ise ancak belediye sınırları içinde veya özel imar rejimine tabi yerlerde uygulanır.",
+      "articleRefs": [
+        "184"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Ruhsatsız ya da ruhsata aykırı bina yapan kişi, binayı imar planına ve ruhsatına uygun hâle getirirse ne olur?",
+      "back": "Kamu davası açılmaz, açılmış olan dava düşer, mahkum olunan ceza bütün sonuçlarıyla ortadan kalkar.",
+      "explanation": "Bu sonuç iki hâl için öngörülmüştür: ruhsatsız veya ruhsata aykırı bina yapma ya da yaptırma ile ruhsatsız şantiyeye elektrik, su veya telefon bağlantısı yapılmasına müsaade etme.",
+      "articleRefs": [
+        "184"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Kişilerin hayatını ve sağlığını tehlikeye sokacak biçimde ilaç üretme veya satma suçunda ceza hangi hâllerde artırılır?",
+      "back": "Suç tabip veya eczacı tarafından ya da resmi izne dayalı olarak yürütülen bir meslek ve sanatın icrası kapsamında işlenirse ceza üçte bir oranında artırılır.",
+      "explanation": "Temel ceza bir yıldan beş yıla kadar hapis ve adlî para cezasıdır.",
+      "articleRefs": [
+        "187"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Uyuşturucu veya uyarıcı maddeyi ruhsatsız ya da ruhsata aykırı olarak imal, ithal veya ihraç eden kişiye hangi hapis cezası verilir?",
+      "back": "Yirmi yıldan otuz yıla kadar hapis. Yanında ikibin günden yirmibin güne kadar adlî para cezası da verilir.",
+      "explanation": "Ülke içinde satma, satışa arz etme, nakletme, bulundurma gibi fiillerde hapis cezası on yıldan az olamaz. Madde çocuğa verilir veya satılırsa hapis cezası on beş yıldan az olamaz.",
+      "articleRefs": [
+        "188"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Uyuşturucu veya uyarıcı madde imal ve ticareti üç veya daha fazla kişi tarafından birlikte işlenirse ceza bir kat mı artırılır?",
+      "back": "Hayır. Üç veya daha fazla kişiyle birlikte işlemede ceza yarı oranında artırılır. Bir kat artırım, suçun suç işlemek için teşkil edilmiş bir örgütün faaliyeti çerçevesinde işlenmesi hâlidir.",
+      "explanation": "Yarı oranında artırım başka hâllerde de uygulanır: madde eroin, kokain, morfin gibi maddelerdense; üçüncü fıkradaki fiiller (satma, satışa arz, başkasına verme, sevk, nakil, depolama, satın alma, kabul etme, bulundurma) okul, yurt, hastane, kışla veya ibadethane gibi yerlerin sınırlarına iki yüz metreden yakın umumi yerlerde işlenmişse; suç tabip, eczacı gibi kişilerce işlenmişse.",
+      "articleRefs": [
+        "188"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Uyuşturucu veya uyarıcı madde kullanılmasını kolaylaştırma suçu hangi hareketlerle işlenir?",
+      "back": "Özel yer, donanım veya malzeme sağlamak; kullananların yakalanmalarını zorlaştıracak önlemler almak; kullanma yöntemleri konusunda başkalarına bilgi vermek.",
+      "explanation": "Kullanmayı alenen özendirmek veya bu nitelikte yayın yapmak maddenin ayrı fıkrasında düzenlenir ve aynı cezaya bağlanır: beş yıldan on yıla kadar hapis ve bin günden onbin güne kadar adlî para cezası.",
+      "articleRefs": [
+        "190"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Kullanmak için uyuşturucu madde bulunduran şüpheli hakkında kamu davasının açılması kaç yıl süreyle ertelenir?",
+      "back": "Beş yıl. Ceza Muhakemesi Kanunu md 171'deki şartlar aranmaz.",
+      "explanation": "Cumhuriyet savcısı şüpheliyi uyarır: yükümlülüklere uymaz veya yasakları ihlal ederse bunun sonuçlarıyla karşılaşacaktır. Erteleme kararı kolluk birimlerine de bildirilir.",
+      "articleRefs": [
+        "191"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Uyuşturucu kullanma suçunda erteleme süresi boyunca şüpheliye uygulanan denetimli serbestlik tedbiri en az ne kadardır?",
+      "back": "Asgari bir yıl. Süre altışar aylık sürelerle en fazla iki yıl daha uzatılabilir.",
+      "explanation": "Uzatma, denetimli serbestlik müdürlüğünün teklifi üzerine veya resen Cumhuriyet savcısının kararıyla yapılır. Savcı, madde kullanılıp kullanılmadığını tespit için yılda en az iki defa şüphelinin ilgili kuruma sevkine karar verir. Gerek görülürse kişi tedaviye tabi tutulabilir.",
+      "articleRefs": [
+        "191"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Erteleme süresinde kişinin yeniden kullanmak için uyuşturucu satın alması ayrı bir soruşturma konusu yapılır mı?",
+      "back": "Hayır. Bu fiil dördüncü fıkra uyarınca ihlal nedeni sayılır ve kişi hakkında kamu davası açılır.",
+      "explanation": "Yükümlülüklere aykırı davranmayan ve yasakları ihlal etmeyen şüpheli hakkında kovuşturmaya yer olmadığı kararı verilir. Kamu davası açıldıktan sonra, suçun tekrar işlendiği iddiasıyla başlayan soruşturmada yeniden erteleme kararı verilemez.",
+      "articleRefs": [
+        "191"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Uyuşturucu imal ve ticaretine iştirak eden kişi, resmi makamlar haber almadan önce suç ortaklarını bildirir ve bilgi maddenin ele geçirilmesini sağlarsa sonuç nedir?",
+      "back": "Hakkında cezaya hükmolunmaz.",
+      "explanation": "Bildirim, diğer suç ortaklarını ve maddenin saklandığı ya da imal edildiği yerleri kapsar. Bilginin ortakların yakalanmasını veya maddenin ele geçirilmesini sağlaması gerekir. Haber alındıktan sonra gönüllü yardımda ise ceza, yardımın niteliğine göre dörtte birden yarısına kadarı indirilir.",
+      "articleRefs": [
+        "192"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Bulaşıcı hastalığa yakalanmış ya da bu hastalıktan ölmüş kimsenin bulunduğu yer için alınan hangi tedbirlere uymamak suçtur?",
+      "back": "Yetkili makamlarca alınan, o yerin karantina altına alınmasına dair tedbirlere uymamak. Ceza iki aydan bir yıla kadar hapistir.",
+      "articleRefs": [
+        "195"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Kullanmak için uyuşturucu veya uyarıcı madde satın alan, kabul eden ya da bulunduran kişinin temel cezası nedir?",
+      "back": "İki yıldan beş yıla kadar hapis; uyuşturucu veya uyarıcı madde kullanan kişi için de aynı ceza öngörülür.",
+      "explanation": "Bu fiillerin okul, yurt, hastane, kışla veya ibadethane gibi toplu bulunulan bina ve tesislerin sınırlarına iki yüz metreden yakın umumi veya umuma açık yerlerde işlenmesi hâlinde verilecek ceza yarı oranında artırılır. Bu suçtan başlatılan soruşturmada şüpheli hakkında beş yıl süreyle kamu davasının açılmasının ertelenmesine karar verilir.",
+      "articleRefs": [
+        "191"
+      ]
+    }
+  ]
+}

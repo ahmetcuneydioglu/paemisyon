@@ -30,6 +30,7 @@ const CARD = (id: string, p: Record<string, unknown> = {}) => ({
 function setup(
   o: {
     enabled?: boolean;
+    freeLimit?: number;
     cards?: unknown[];
     reviews?: unknown[];
     bookmarks?: unknown[];
@@ -65,6 +66,10 @@ function setup(
       count: jest.fn().mockResolvedValue(0),
       findFirst: jest.fn().mockResolvedValue(null),
     },
+    flashcardReport: {
+      findFirst: jest.fn().mockResolvedValue(null),
+      create: jest.fn().mockResolvedValue({ id: 'r1' }),
+    },
     flashcardBookmark: {
       findMany: jest.fn().mockResolvedValue(o.bookmarks ?? []),
       upsert: jest.fn(),
@@ -92,7 +97,10 @@ function setup(
   prisma.$transaction.mockImplementation(async (fn: (tx: unknown) => Promise<unknown>) =>
     fn(prisma),
   );
-  const settings = { flashcardsEnabled: jest.fn(async () => o.enabled ?? true) };
+  const settings = {
+    flashcardsEnabled: jest.fn(async () => o.enabled ?? true),
+    flashcardsFreeDailyLimit: jest.fn(async () => o.freeLimit ?? 20),
+  };
   const progress = { touchActivity: jest.fn(async () => undefined) };
   const appEvents = { emit: jest.fn(async () => undefined) };
   return {
@@ -440,5 +448,86 @@ describe('Aşama 5 — seri, olay, istatistik', () => {
     expect(r.last7[6]).toMatchObject({ reviewed: 2, known: 1 });
     expect(r.courses.map((c) => c.courseName)).toEqual(['Anayasa Hukuku', 'PVSK']);
     expect(r.courses[1]).toMatchObject({ total: 0, locked: 1 });
+  });
+
+  it('hata bildirimi: yayındaki karta yazılır; aynı karta açık bildirim varsa tekrarlamaz; kart yoksa 404', async () => {
+    const { svc, prisma } = setup();
+    const user = { id: 'u1', roles: [] } as never;
+    prisma.flashcard.findFirst.mockResolvedValue({ id: 'c1' });
+    const r1 = await svc.report(user, 'c1', 'Doğru cevap hatalı — 550 olmalı');
+    expect(r1).toEqual({ id: 'r1', alreadyReported: false });
+    expect(prisma.flashcardReport.create).toHaveBeenCalledWith({
+      data: { userId: 'u1', flashcardId: 'c1', message: 'Doğru cevap hatalı — 550 olmalı' },
+      select: { id: true },
+    });
+    prisma.flashcardReport.findFirst.mockResolvedValueOnce({ id: 'r1' });
+    const r2 = await svc.report(user, 'c1', 'yine');
+    expect(r2).toEqual({ id: 'r1', alreadyReported: true });
+    expect(prisma.flashcardReport.create).toHaveBeenCalledTimes(1);
+    prisma.flashcard.findFirst.mockResolvedValue(null);
+    await expect(svc.report(user, 'yok', 'kart yok')).rejects.toThrow('Kart bulunamadı');
+  });
+
+  it('ilerleme sıfırlama: kapsamdaki kartların review satırları silinir, açık oturum kapanır, favoriler dokunulmaz', async () => {
+    const { svc, prisma } = setup({ cards: [CARD('c1'), CARD('c2')] });
+    prisma.flashcardReview.deleteMany.mockResolvedValue({ count: 2 });
+    const user = { id: 'u1', roles: [], isPremium: false } as never;
+    const r = await svc.resetProgress(user, { topicId: 't1' });
+    expect(r.reset).toBe(2);
+    expect(r.scope.label).toBe('Temel Haklar');
+    expect(prisma.flashcardReview.deleteMany).toHaveBeenCalledWith({
+      where: { userId: 'u1', flashcardId: { in: ['c1', 'c2'] } },
+    });
+    expect(prisma.flashcardSession.updateMany).toHaveBeenCalledWith(
+      expect.objectContaining({ where: { userId: 'u1', completedAt: null } }),
+    );
+    expect(prisma.flashcardBookmark.deleteMany).not.toHaveBeenCalled();
+    expect(prisma.flashcardReviewEvent.findMany).not.toHaveBeenCalled();
+  });
+
+  describe('günlük kart hakkı (Doc 56 §3h)', () => {
+    const bugunOlay = (n: number) =>
+      Array.from({ length: n }, (_, i) => ({
+        flashcardId: `e${i}`,
+        rating: 'known',
+        undoneAt: null,
+      }));
+    const kartlar = Array.from({ length: 30 }, (_, i) => CARD(`c${i}`));
+
+    it('ücretsiz: hak dolunca oturum 403 DAILY_LIMIT_REACHED; özet limit/used/remaining verir', async () => {
+      const { svc, prisma } = setup({ cards: kartlar, freeLimit: 20 });
+      prisma.flashcardReviewEvent.findMany.mockResolvedValue(bugunOlay(20));
+      const user = { id: 'u1', roles: [], isPremium: false } as never;
+      const o = await svc.overview(user, {});
+      expect(o.dailyLimit).toEqual({ limit: 20, used: 20, remaining: 0 });
+      await expect(
+        svc.startSession(user, { scope: {}, mode: 'all' } as never),
+      ).rejects.toMatchObject({
+        response: { code: 'DAILY_LIMIT_REACHED' },
+      });
+    });
+
+    it('ücretsiz: kuyruk kalan hakla kesilir (20 hak, 15 kullanılmış → 5 kart)', async () => {
+      const { svc, prisma } = setup({ cards: kartlar, freeLimit: 20 });
+      prisma.flashcardReviewEvent.findMany.mockResolvedValue(bugunOlay(15));
+      const user = { id: 'u1', roles: [], isPremium: false } as never;
+      const s = await svc.startSession(user, { scope: {}, mode: 'all' } as never);
+      expect(s.total).toBe(5);
+    });
+
+    it('premium ve ayar 0: sınırsız (limit null), kuyruk varsayılan 20', async () => {
+      const { svc, prisma } = setup({ cards: kartlar, freeLimit: 20 });
+      prisma.flashcardReviewEvent.findMany.mockResolvedValue(bugunOlay(25));
+      const premium = { id: 'u1', roles: [], isPremium: true } as never;
+      expect((await svc.overview(premium, {})).dailyLimit).toEqual({
+        limit: null,
+        used: 25,
+        remaining: null,
+      });
+      expect((await svc.startSession(premium, { scope: {}, mode: 'all' } as never)).total).toBe(20);
+      const { svc: svc0 } = setup({ cards: kartlar, freeLimit: 0 });
+      const free = { id: 'u2', roles: [], isPremium: false } as never;
+      expect((await svc0.overview(free, {})).dailyLimit.limit).toBeNull();
+    });
   });
 });

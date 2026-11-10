@@ -1,4 +1,9 @@
 /**
+ * TARİHÎ BETİK (uygulandı). 9 Kas 2026'da ders ikiye ayrıldı: yetenek konuları
+ * "Analitik Düşünme ve Türkçe" dersine taşındı, kalan ders "Genel Kültür ve
+ * Güncel Olaylar" oldu (misyon-gk-ayrimi.ts, Doc 21 §2.6). Bu betik artık
+ * DERS'i bulamaz ve durur — yeniden çalıştırma.
+ *
  * "Genel Kültür ve Analitik Düşünme" dersini gerçek sınavdaki alt bloklara açar.
  *
  * Neden: gerçek sınavın SON 30 sorusu (71-100) tek tip değil —

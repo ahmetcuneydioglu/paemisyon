@@ -1,0 +1,20 @@
+{
+  "slug": "turk-anayasa-tarihi",
+  "title": "Türk Anayasa Tarihi",
+  "subtitle": "Sened-i İttifak'tan 1961 Anayasası'na",
+  "courseName": "Anayasa Hukuku",
+  "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+  "sortOrder": 2,
+  "isPremium": true,
+  "aiDraft": true,
+  "book": { "label": "THEMIS Anayasa Hukuku, 24. baskı, 2020", "page": "s.25–41" },
+  "lessons": [
+    { "file": "01-sened-i-ittifak.md", "slug": "sened-i-ittifak", "page": "s.25–26" },
+    { "file": "02-tanzimat-ve-islahat-fermanlari.md", "slug": "tanzimat-ve-islahat-fermanlari", "page": "s.26–28" },
+    { "file": "03-1876-kanun-i-esasi.md", "slug": "1876-kanun-i-esasi", "page": "s.28–31" },
+    { "file": "04-1909-degisiklikleri.md", "slug": "1909-anayasa-degisiklikleri", "page": "s.31–32" },
+    { "file": "05-tbmm-ve-1921-anayasasi.md", "slug": "tbmm-ve-1921-anayasasi", "page": "s.33–34" },
+    { "file": "06-cumhuriyete-gecis-ve-1924-anayasasi.md", "slug": "cumhuriyete-gecis-ve-1924-anayasasi", "page": "s.34–36" },
+    { "file": "07-1961-anayasasi.md", "slug": "1961-anayasasi", "page": "s.37–41" }
+  ]
+}

@@ -96,14 +96,28 @@ describe('validateCard (Doc 56 §8.3)', () => {
       {
         kind: 'trap',
         front: 'Yanlış olan hangisi?',
-        back: '500 değil; TBMM 600 üyedir.',
+        back: '5 değil; TBMM 600 üyedir.',
         articleRefs: ['75'],
-        counterNumbers: [500],
+        counterNumbers: [5],
       },
       0,
       articles,
     );
     expect(v.ok).toBe(true);
+    // 500 mevzuatın hiçbir maddesinde geçmez: uydurma öğe (denetim bulgusu 6 Kas 2026)
+    const u = validateCard(
+      {
+        ...v,
+        kind: 'trap',
+        front: 'x',
+        back: '500 değil',
+        articleRefs: ['75'],
+        counterNumbers: [500],
+      } as FlashcardJson,
+      0,
+      articles,
+    );
+    expect(u.issues[0]).toMatch(/karşı örnek mevzuatın hiçbir maddesinde geçmiyor/);
     const w = validateCard(
       {
         ...v,

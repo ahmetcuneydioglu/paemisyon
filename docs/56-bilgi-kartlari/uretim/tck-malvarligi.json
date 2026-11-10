@@ -1,0 +1,287 @@
+{
+  "deck": {
+    "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+    "legislationSlug": "turk-ceza-kanunu",
+    "sourceLabel": "AI bilgi kartı — Türk Ceza Kanunu md 141–169",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: resmî madde metni + çıkmış sorular); denetim düzeltmesi 6 Kas 2026 (5 kart)"
+  },
+  "cards": [
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Hırsızlık suçunun temel hâli için öngörülen ceza nedir?",
+      "back": "Bir yıldan üç yıla kadar hapis cezası.",
+      "explanation": "Fail, malı kendisine veya başkasına bir yarar sağlamak maksadıyla bulunduğu yerden aldığında suç oluşur.",
+      "articleRefs": [
+        "141"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Hırsızlıkta mal kimin rızası olmadan alınmış olmalıdır?",
+      "back": "Zilyedinin rızası olmadan. Alınan şey başkasına ait taşınır bir mal olmalıdır.",
+      "explanation": "Fail, malı kendisine veya başkasına bir yarar sağlamak maksadıyla bulunduğu yerden alır.",
+      "articleRefs": [
+        "141"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Kamu kurum ve kuruluşlarında ya da ibadete ayrılmış yerlerde bulunan eşya hakkında işlenen hırsızlığın cezası nedir?",
+      "back": "Üç yıldan yedi yıla kadar hapis cezası. Eşyanın kime ait olduğu önemli değildir.",
+      "explanation": "Aynı ceza şu eşyalar için de uygulanır: halkın yararlanmasına sunulmuş ulaşım aracındaki eşya, afet zararlarını önlemek veya hafifletmek için hazırlanan eşya ve adet, tahsis ya da kullanımı gereği açıkta bırakılmış eşya.",
+      "articleRefs": [
+        "142"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Elde veya üstte taşınan eşyayı çekip alarak işlenen hırsızlık hangi suçu oluşturur?",
+      "back": "Nitelikli hırsızlığı oluşturur. Beş yıldan on yıla kadar hapis cezası verilir.",
+      "explanation": "Suç bu yolla, beden veya ruh bakımından kendisini savunamayacak durumdaki birine karşı işlenirse ceza üçte biri oranına kadar artırılır.",
+      "articleRefs": [
+        "142"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Hırsızlık amacıyla işlenen konut dokunulmazlığının ihlâli suçunun soruşturulması şikâyete bağlı mıdır?",
+      "back": "Hayır. Hırsızlık amacıyla konut dokunulmazlığının ihlâli veya mala zarar verme işlenirse, soruşturma ve kovuşturma için şikâyet aranmaz.",
+      "articleRefs": [
+        "142"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Hırsızlık gece vakti işlenirse ceza hangi oranda artırılır?",
+      "back": "Verilecek ceza yarı oranında artırılır.",
+      "articleRefs": [
+        "143"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Mal, geçici bir süre kullanılıp zilyedine iade edilmek üzere çalınırsa ceza ne ölçüde indirilir?",
+      "back": "Bu hâlde ceza şikâyet üzerine verilir ve yarı oranına kadar indirilir.",
+      "explanation": "Bu hâl kullanma hırsızlığıdır; şikâyet, suçun kovuşturulmasının şartıdır ve indirim verilecek ceza üzerinden yapılır.",
+      "articleRefs": [
+        "146"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Kullanma hırsızlığında mal suç işlemek için kullanılmışsa indirim uygulanır mı?",
+      "back": "Hayır. Malın suç işlemek için kullanılmış olması hâlinde md 146 hükmü bütünüyle uygulanmaz.",
+      "explanation": "Hüküm, malın geçici bir süre kullanılıp zilyedine iade edilmek üzere alınmasına bağlıdır.",
+      "articleRefs": [
+        "146"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Hırsızlık ağır ve acil bir ihtiyacı karşılamak için işlenirse hâkim ne yapabilir?",
+      "back": "Olayın özelliğine göre cezada indirim yapabilir ya da ceza vermekten vazgeçebilir.",
+      "explanation": "Bu hüküm hırsızlığa özgü, daha az cezayı gerektiren bir hâldir.",
+      "articleRefs": [
+        "147"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Cebir veya tehdit kullanarak bir başkasını bir malı teslime mecbur kılan kişiye hangi ceza verilir?",
+      "back": "Altı yıldan on yıla kadar hapis cezası verilir; bu fiil yağmadır.",
+      "explanation": "Mağdur, cebir veya tehditle kendisini ya da başkasını borç altına sokabilecek bir senedi vermeye mecbur edilirse de aynı ceza verilir.",
+      "articleRefs": [
+        "148"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Yağmada tehdidin konusu hangi saldırı ya da zarar olabilir?",
+      "back": "Mağdurun kendisinin veya yakınının hayatına, vücut veya cinsel dokunulmazlığına yönelik bir saldırı ya da malvarlığı itibarıyla büyük bir zarar.",
+      "articleRefs": [
+        "148"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Mağdurun herhangi bir vasıtayla kendisini bilmeyecek ve savunamayacak hâle getirilmesi yağmada ne sayılır?",
+      "back": "Cebir sayılır.",
+      "articleRefs": [
+        "148"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Nitelikli yağmanın cezası nedir?",
+      "back": "On yıldan onbeş yıla kadar hapis cezası.",
+      "explanation": "Yağmanın silahla, birden fazla kişi tarafından birlikte ya da gece vaktinde işlenmesi bu cezayı gerektiren hâllerdendir.",
+      "articleRefs": [
+        "149"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Yağma bir işyerinin eklentisinde işlenirse hangi suç oluşur?",
+      "back": "Nitelikli yağma oluşur. Yağmanın konutta, işyerinde, bunların eklentilerinde ya da yol kesmek suretiyle işlenmesi bu kapsamdadır.",
+      "articleRefs": [
+        "149"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Yağma sırasında kasten yaralamanın neticesi sebebiyle ağırlaşmış hâlleri gerçekleşirse ne olur?",
+      "back": "Yağma hükümlerine ek olarak, ayrıca kasten yaralama suçuna ilişkin hükümler uygulanır.",
+      "articleRefs": [
+        "149"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Hukuki bir ilişkiye dayanan alacağını tahsil amacıyla tehdit veya cebir kullanan kişiye hangi hükümler uygulanır?",
+      "back": "Ancak tehdit veya kasten yaralama suçuna ilişkin hükümler uygulanır.",
+      "explanation": "Aynı maddeye göre, yağmanın konusunu oluşturan malın değeri azsa ceza üçte birden yarıya kadar indirilebilir.",
+      "articleRefs": [
+        "150"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Mala zarar verme suçunun temel hâlinin cezası nedir?",
+      "back": "Mağdurun şikâyeti üzerine dört aydan üç yıla kadar hapis veya adlî para cezası.",
+      "explanation": "Başkasının taşınır veya taşınmaz malını kısmen veya tamamen yıkmak, tahrip etmek, yok etmek, bozmak, kullanılamaz hâle getirmek veya kirletmek bu suçu oluşturur.",
+      "articleRefs": [
+        "151"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Güveni kötüye kullanma suçu hangi hareketlerle işlenir?",
+      "back": "Zilyedliği devredilen mal üzerinde devir amacı dışında tasarrufta bulunarak ya da bu devir olgusunu inkâr ederek.",
+      "explanation": "Mal, muhafaza etmek veya belirli bir şekilde kullanmak üzere faile devredilmiş olmalıdır. Tasarruf failin ya da başkasının yararına olabilir. Ceza şikâyet üzerine verilir.",
+      "articleRefs": [
+        "155"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Güveni kötüye kullanma, hizmet ilişkisinin gereği olarak tevdi ve teslim edilmiş eşya hakkında işlenirse ceza nedir?",
+      "back": "Bir yıldan yedi yıla kadar hapis ve üçbin güne kadar adlî para cezası.",
+      "explanation": "Aynı ceza; meslek ve sanat, ticaret ilişkisi ya da başkasının mallarını idare etme yetkisi gereği teslim edilen eşya için de verilir. Suçun konusu motorlu kara, deniz veya hava taşıtıysa ceza bir kat artırılır.",
+      "articleRefs": [
+        "155"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Dolandırıcılık suçunun temel hâlinin cezası nedir?",
+      "back": "Bir yıldan beş yıla kadar hapis ve beşbin güne kadar adlî para cezası.",
+      "explanation": "Suç, hileli davranışlarla bir kimseyi aldatıp onun veya başkasının zararına olarak kendine ya da başkasına yarar sağlamakla oluşur.",
+      "articleRefs": [
+        "157"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Dolandırıcılık bilişim sistemlerinin araç olarak kullanılması suretiyle işlenirse hapis cezasının alt sınırı nedir?",
+      "back": "Dört yıldan az olamaz. Adlî para cezası da suçtan elde edilen menfaatin iki katından az olamaz.",
+      "explanation": "Bu alt sınırlar şu hâllerde de uygulanır: kamu kurum ve kuruluşlarının zararına işlenme, tahsis edilmemesi gereken bir kredinin açılmasını sağlama, sigorta bedelini alma ve kişinin kendisini kamu görevlisi ya da banka, sigorta veya kredi kurumu çalışanı olarak tanıtması.",
+      "articleRefs": [
+        "158"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Hata sonucu ele geçen eşya üzerinde, iade etmeden malik gibi tasarrufta bulunan kişi hangi suçu işler?",
+      "back": "Kaybolmuş veya hata sonucu ele geçmiş eşya üzerinde tasarruf suçunu işler. Şikâyet üzerine bir yıla kadar hapis veya adlî para cezası verilir.",
+      "explanation": "Aynı hüküm, kaybedilmiş olması nedeniyle malikinin zilyedliğinden çıkmış eşya için de geçerlidir. Fail eşyayı iade etmemiş veya yetkili mercileri durumdan haberdar etmemiş olmalıdır.",
+      "articleRefs": [
+        "160"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Taksirli iflastan cezalandırılabilmek için iflasla ilgili hangi şart gerçekleşmiş olmalıdır?",
+      "back": "İflasa karar verilmiş olmalıdır. Bu hâlde iki aydan bir yıla kadar hapis cezası verilir.",
+      "explanation": "Fail, tacir olmanın gerekli kıldığı dikkat ve özeni göstermeyerek iflasa sebebiyet vermiş olmalıdır.",
+      "articleRefs": [
+        "162"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Abonelik esasına göre yararlanılan elektriği, sahibinin rızası olmadan ve tüketim miktarının belirlenmesini engelleyecek şekilde tüketen kişi hangi suçu işler?",
+      "back": "Karşılıksız yararlanma suçunu işler. Bir yıldan üç yıla kadar hapis cezasına hükmolunur.",
+      "explanation": "Aynı hüküm, suyun ve doğal gazın bu şekilde tüketilmesine de uygulanır. Otomatlar aracılığıyla sunulan bir hizmetten ödeme yapmadan yararlanmak da karşılıksız yararlanmadır.",
+      "articleRefs": [
+        "163"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Hırsızlık, haklarında ayrılık kararı verilmiş eşlerden birinin zararına işlenirse fail hakkında cezaya hükmolunmaz mı?",
+      "back": "Hayır. Ceza verilir, ancak şikâyet üzerine yarısı oranında indirilir. Cezaya hükmolunmaması, haklarında ayrılık kararı verilmemiş eşler için geçerlidir.",
+      "explanation": "Cezaya hükmolunmayan hâller: haklarında ayrılık kararı verilmemiş eş; üstsoy, altsoy veya bu derecede kayın hısımları; evlat edinen veya evlatlık; aynı konutta beraber yaşayan kardeş. Yağma ve nitelikli yağma hariç, bu bölümdeki suçların bunların zararına işlenmesi hâlinde ilgili akraba hakkında cezaya hükmolunmaz.",
+      "articleRefs": [
+        "167"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Yağma, aynı konutta beraber yaşayan kardeşin zararına işlenirse fail hakkında cezaya hükmolunur mu?",
+      "back": "Evet; md 167'deki şahsi cezasızlık sebebi yağma ve nitelikli yağmayı kapsamaz. Aynı konuttaki kardeşin zararına işlenen hırsızlıkta ise cezaya hükmolunmaz.",
+      "articleRefs": [
+        "167"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Yağma suçunda kovuşturma başlamadan önce etkin pişmanlık gösterene cezanın üçte ikisine kadarı mı indirilir?",
+      "back": "Hayır. Yağmada bu hâlde cezanın yarısına kadarı indirilir. Üçte ikisine kadar indirim, hırsızlık ve dolandırıcılık gibi birinci fıkrada sayılan suçlar içindir.",
+      "explanation": "Pişmanlık kovuşturma başladıktan sonra ve hüküm verilmezden önce gösterilirse, yağmada indirim cezanın üçte birine kadardır. Zarar kısmen geri verilir veya tazmin edilirse ayrıca mağdurun rızası aranır.",
+      "articleRefs": [
+        "168"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Karşılıksız yararlanmada zarar soruşturma tamamlanmadan önce tamamen tazmin edilirse ceza üçte birine kadar mı indirilir?",
+      "back": "Hayır, bu hâlde kamu davası açılmaz. Üçte birine kadar indirim, zararın hüküm verilinceye kadar tamamen tazmin edildiği hâl içindir. Kişi bu hükümden iki defadan fazla yararlanamaz.",
+      "articleRefs": [
+        "168"
+      ],
+      "counterNumbers": []
+    }
+  ]
+}

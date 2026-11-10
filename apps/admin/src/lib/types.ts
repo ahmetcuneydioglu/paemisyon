@@ -754,6 +754,8 @@ export interface FlashcardStats {
   stale: number;
   pendingVerification: number;
   needsRefresh: number;
+  /** Açık kullanıcı hata bildirimi (Doc 56 §3f). */
+  openReports: number;
 }
 
 export interface FlashcardDerivedNumber {
@@ -772,6 +774,8 @@ export interface FlashcardDetail extends FlashcardListItem {
   articles: (FlashcardArticleRef & { text: string | null; currentVersionNo: number | null })[];
   validation: { ok: boolean; issues: string[]; lines: string[] };
   gate: { canPublish: boolean; reasons: string[] };
+  /** Bu karta açık kullanıcı bildirimi sayısı (Doc 56 §3f). */
+  openReportCount: number;
   history: {
     id: string;
     action: string;
@@ -799,4 +803,74 @@ export interface FlashcardImportResult {
 export interface FlashcardPublishManyResult {
   published: string[];
   skipped: { id: string; reason: string }[];
+}
+
+// ── Konu Anlatımı (Doc 57): bölüm → ders → sürüm ──
+export interface LessonAdminRow {
+  id: string;
+  slug: string;
+  title: string;
+  status: ContentStatus;
+  version: number;
+  sourceLabel: string;
+  readingMinutes: number;
+  publishedAt: string | null;
+  updatedAt: string;
+  _count: { versions: number };
+}
+export interface LessonSectionAdminRow {
+  id: string;
+  slug: string;
+  title: string;
+  status: ContentStatus;
+  isPremium: boolean;
+  publishedAt: string | null;
+  course: { name: string };
+  topic: { name: string } | null;
+  lessons: LessonAdminRow[];
+}
+export type LessonBlock =
+  | { kind: 'text'; text: string }
+  | { kind: 'table'; headers: string[]; rows: string[][] }
+  | { kind: 'tanim'; term: string; text: string }
+  | { kind: 'uyari'; text: string }
+  | { kind: 'ornek'; text: string }
+  | { kind: 'madde'; law: string; no: string; note?: string }
+  | { kind: 'soru'; questionId: string };
+export interface LessonVersionRow {
+  id: string;
+  versionNo: number;
+  body: { sections: { title: string; blocks: LessonBlock[] }[] };
+  reviewNote: string | null;
+  createdAt: string;
+}
+export interface LessonSourceRow {
+  id: string;
+  kind: 'book' | 'url' | 'article';
+  label: string;
+  url: string | null;
+  page: string | null;
+  lawArticleId: string | null;
+  isPublic: boolean;
+}
+export interface LessonAdminDetail {
+  id: string;
+  slug: string;
+  title: string;
+  goal: string;
+  sortOrder: number;
+  readingMinutes: number;
+  status: ContentStatus;
+  sourceLabel: string;
+  version: number;
+  publishedAt: string | null;
+  createdAt: string;
+  updatedAt: string;
+  sectionId: string;
+  section: { slug: string; title: string; status: ContentStatus; isPremium: boolean };
+  versions: LessonVersionRow[];
+  sources: LessonSourceRow[];
+  links: { kind: string; targetId: string }[];
+  latestVersionNo: number | null;
+  validation: { ok: boolean; issues: string[]; lines: string[] };
 }

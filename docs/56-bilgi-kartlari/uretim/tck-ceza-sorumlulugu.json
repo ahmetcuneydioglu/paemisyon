@@ -1,0 +1,319 @@
+{
+  "deck": {
+    "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+    "legislationSlug": "turk-ceza-kanunu",
+    "sourceLabel": "AI bilgi kartı — Türk Ceza Kanunu md 20–34",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: resmî madde metni + çıkmış sorular); denetim düzeltmesi 6 Kas 2026 (4 kart)"
+  },
+  "cards": [
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Tüzel kişiler hakkında ceza yaptırımı uygulanabilir mi?",
+      "back": "Hayır; tüzel kişiler hakkında ceza yaptırımı uygulanamaz. Suç dolayısıyla kanunda öngörülen güvenlik tedbiri niteliğindeki yaptırımlar ise saklıdır.",
+      "explanation": "Madde ceza sorumluluğunun şahsiliğini düzenler. Ceza sorumluluğu şahsidir ve kimse başkasının fiilinden dolayı sorumlu tutulamaz.",
+      "articleRefs": [
+        "20"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Türk Ceza Kanunu'na göre kast nedir?",
+      "back": "Suçun kanuni tanımındaki unsurların bilerek ve istenerek gerçekleştirilmesidir.",
+      "explanation": "Maddeye göre suçun oluşması kastın varlığına bağlıdır.",
+      "articleRefs": [
+        "21"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Fail, suçun kanuni tanımındaki unsurların gerçekleşebileceğini öngördüğü hâlde fiili işlerse hangi kast türü vardır?",
+      "back": "Olası kast vardır.",
+      "explanation": "Olası kastta daha hafif ceza öngörülür. Ağırlaştırılmış müebbet hapis cezasını gerektiren suçlarda müebbet hapis verilir. Müebbet hapis cezasını gerektiren suçlarda ise 20 yıldan 25 yıla kadar hapis cezasına hükmolunur.",
+      "articleRefs": [
+        "21"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Olası kastla işlenen ve ağırlaştırılmış müebbet ya da müebbet hapis cezasını gerektirmeyen bir suçta temel cezaya ne yapılır?",
+      "back": "Temel ceza üçte birden yarısına kadar indirilir.",
+      "explanation": "Bu indirim, failin unsurların gerçekleşebileceğini öngörmesine rağmen fiili işlediği olası kast hâline bağlanmıştır.",
+      "articleRefs": [
+        "21"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Taksirle işlenen fiiller hangi hâllerde cezalandırılır?",
+      "back": "Kanunun açıkça belirttiği hâllerde cezalandırılır.",
+      "explanation": "Taksir, dikkat ve özen yükümlülüğüne aykırılık dolayısıyla bir davranışın suçun kanuni tanımında belirtilen neticesi öngörülmeyerek gerçekleştirilmesidir. Taksirle işlenen suçtan verilecek ceza failin kusuruna göre belirlenir.",
+      "articleRefs": [
+        "22"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Bilinçli taksir hâlinde taksirli suça ilişkin ceza ne oranda artırılır?",
+      "back": "Üçte birden yarısına kadar artırılır.",
+      "explanation": "Bilinçli taksirde kişi öngördüğü neticeyi istemez, ancak netice yine de meydana gelir. Taksirli hareketin neticesi, münhasıran failin kişisel ve ailevi durumu bakımından artık bir cezanın hükmedilmesini gereksiz kılacak derecede mağdur olmasına yol açmışsa ceza verilmez; bu mağduriyet hâlinde bilinçli taksirde ise ceza yarıdan altıda bire kadar indirilebilir.",
+      "articleRefs": [
+        "22"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Birden fazla kişinin taksirle işlediği suçta failler birbirinin kusurundan da sorumlu olur mu?",
+      "back": "Hayır. Herkes kendi kusurundan dolayı sorumlu olur. Her failin cezası kusuruna göre ayrı ayrı belirlenir.",
+      "explanation": "Taksirle işlenen suçtan verilecek ceza failin kusuruna göre belirlenir. Birden fazla failde bu belirleme her biri için ayrı yapılır.",
+      "articleRefs": [
+        "22"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Fiil kastedilenden daha ağır veya başka bir neticeye sebebiyet verirse, kişinin bu neticeden sorumlu tutulabilmesi için o netice bakımından en az hangi kusur gerekir?",
+      "back": "En azından taksir gerekir. Kişi bu netice bakımından en azından taksirle hareket etmiş olmalıdır.",
+      "articleRefs": [
+        "23"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Konusu suç teşkil eden emir yerine getirilirse kim sorumlu olur?",
+      "back": "Yerine getiren ile emri veren sorumlu olur. Böyle bir emir hiçbir surette yerine getirilemez.",
+      "explanation": "Yetkili bir merciden verilip yerine getirilmesi görev gereği zorunlu olan bir emri uygulayan ise sorumlu olmaz. Kanunun hükmünü yerine getiren kimseye de ceza verilmez.",
+      "articleRefs": [
+        "24"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Emrin hukuka uygunluğunun denetlenmesi kanun tarafından engellenmişse, emri yerine getiren mi sorumlu olur?",
+      "back": "Hayır. Bu hâllerde emrin yerine getirilmesinden emri veren sorumlu olur.",
+      "articleRefs": [
+        "24"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Meşru savunma yalnız kişinin kendisine ait bir hakka yönelen saldırıda mı uygulanır?",
+      "back": "Hayır. Gerek kendisine gerek başkasına ait bir hakka yönelmiş haksız saldırıyı defetmek için meşru savunma vardır.",
+      "explanation": "Saldırı haksız olmalıdır. Ayrıca gerçekleşen, gerçekleşmesi veya tekrarı muhakkak olan bir saldırı bulunmalıdır. Saldırı o anda, hal ve koşullara göre saldırı ile orantılı biçimde defedilmelidir.",
+      "articleRefs": [
+        "25"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Zorunluluk hâlinden yararlanmak için tehlike hangi nitelikte olmalıdır?",
+      "back": "Tehlike ağır ve muhakkak olmalıdır. Kişi tehlikeye bilerek neden olmamalı ve başka suretle korunma olanağı bulunmamalıdır.",
+      "explanation": "Tehlike kişinin kendisine ya da başkasına ait bir hakka yönelik olabilir. Ayrıca tehlikenin ağırlığı ile konu ve kullanılan vasıta arasında orantı bulunmalıdır.",
+      "articleRefs": [
+        "25"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "İlgilinin rızasıyla işlenen fiilden ceza verilmemesi için rıza hangi hakka ilişkin olmalıdır?",
+      "back": "Kişinin üzerinde mutlak surette tasarruf edebileceği bir hakkına ilişkin olmalıdır. Fiil de açıkladığı rızası çerçevesinde işlenmelidir.",
+      "explanation": "Aynı maddeye göre hakkını kullanan kimseye de ceza verilmez.",
+      "articleRefs": [
+        "26"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Ceza sorumluluğunu kaldıran bir nedende sınır kast olmaksızın aşılırsa ve fiil taksirle de cezalandırılıyorsa ceza nasıl belirlenir?",
+      "back": "Taksirli suç için kanunda yazılı cezanın altıda birinden üçte birine kadarı indirilerek hükmolunur.",
+      "explanation": "Bu indirim, fiilin taksirle işlendiğinde de cezalandırılması şartına bağlıdır.",
+      "articleRefs": [
+        "27"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Meşru savunmada sınır, mazur görülebilecek bir korku yüzünden aşılırsa ceza altıda birinden üçte birine kadar mı indirilir?",
+      "back": "Hayır. Sınırın aşılması mazur görülebilecek bir heyecan, korku veya telaştan ileri gelmişse faile ceza verilmez.",
+      "explanation": "Altıda birinden üçte birine kadar indirim başka bir hâle aittir. Bu indirim, ceza sorumluluğunu kaldıran nedenlerde sınırın kast olmaksızın aşıldığı ve fiilin taksirle de cezalandırıldığı hâlde uygulanır.",
+      "articleRefs": [
+        "27"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Kişi, karşı koyamayacağı cebir ve şiddet sonucu suç işlerse suçun faili kim sayılır?",
+      "back": "Cebir ve şiddet, korkutma ve tehdidi kullanan kişi suçun faili sayılır. Zorlanarak suç işleyen kimseye ceza verilmez.",
+      "explanation": "Kural, muhakkak ve ağır bir korkutma veya tehdit sonucu işlenen suçlarda da aynıdır. Cebir ve şiddet, kişinin karşı koyamayacağı veya kurtulamayacağı nitelikte olmalıdır.",
+      "articleRefs": [
+        "28"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Haksız tahrik hükmünden yararlanmak için fail suçu hangi etki altında işlemiş olmalıdır?",
+      "back": "Haksız bir fiilin meydana getirdiği hiddet veya şiddetli elemin etkisi altında işlemiş olmalıdır.",
+      "explanation": "Haksız tahrik hâlinde ceza indirilir. Ağırlaştırılmış müebbet ve müebbet hapis cezası yerine ise süreli hapis cezası verilir.",
+      "articleRefs": [
+        "29"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Haksız tahrikte, ağırlaştırılmış müebbet ve müebbet hapis dışındaki hâllerde ceza ne kadar indirilir?",
+      "back": "Verilecek cezanın dörtte birinden dörtte üçüne kadarı indirilir.",
+      "articleRefs": [
+        "29"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Haksız tahrik altında işlenen ve müebbet hapis gerektiren suçta 18 yıldan 24 yıla kadar hapis mi verilir?",
+      "back": "Hayır. Müebbet hapis yerine 12 yıldan 18 yıla kadar hapis verilir. 18 yıldan 24 yıla kadar hapis ise ağırlaştırılmış müebbet hapis yerine verilir.",
+      "articleRefs": [
+        "29"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Fiilin icrası sırasında suçun kanuni tanımındaki maddi unsurları bilmeyen kişi kasten hareket etmiş olur mu?",
+      "back": "Hayır, kasten hareket etmiş olmaz. Ancak bu hata dolayısıyla taksirli sorumluluk hâli saklıdır.",
+      "articleRefs": [
+        "30"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Bir suçun daha ağır ya da daha az cezayı gerektiren nitelikli hâllerinin gerçekleştiği konusunda hataya düşen kişi bu hatadan nasıl etkilenir?",
+      "back": "Bu hatasından yararlanır.",
+      "explanation": "Ceza sorumluluğunu kaldıran veya azaltan nedenlere ait koşulların gerçekleştiği konusunda kaçınılmaz hataya düşen kişi de hatasından yararlanır. İşlediği fiilin haksızlık oluşturduğu konusunda kaçınılmaz bir hataya düşen kişi ise cezalandırılmaz.",
+      "articleRefs": [
+        "30"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Fiili işlediği sırada kaç yaşını doldurmamış çocukların ceza sorumluluğu yoktur?",
+      "back": "12 yaşını doldurmamış çocukların ceza sorumluluğu yoktur. Bu kişiler hakkında ceza kovuşturması yapılamaz.",
+      "explanation": "Bu çocuklar hakkında çocuklara özgü güvenlik tedbirleri uygulanabilir.",
+      "articleRefs": [
+        "31"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "12 yaşını doldurmuş, 15 yaşını doldurmamış ve ceza sorumluluğu bulunan kişiye, ağırlaştırılmış müebbet ve müebbet dışındaki cezalarda ne kadar indirim yapılır?",
+      "back": "Diğer cezaların yarısı indirilir. Bu hâlde her fiil için verilecek hapis cezası 9 yıldan fazla olamaz.",
+      "explanation": "Ceza sorumluluğu, fiilin hukuki anlam ve sonuçlarını algılama ve davranışlarını yönlendirme yeteneğinin varlığına bağlıdır. Bu yetenek yoksa ceza sorumluluğu yoktur ve çocuklara özgü güvenlik tedbirlerine hükmolunur. Suç ağırlaştırılmış müebbet gerektiriyorsa 13 yıldan 18 yıla kadar, müebbet gerektiriyorsa 10 yıldan 12 yıla kadar hapis verilir. Kasten öldürme (md 81, 82) ve neticesi sebebiyle ağırlaşmış yaralama (md 87 fıkra 2 ve 4) suçlarında, dördüncü fıkradaki hususlar göz önünde bulundurularak bu kişiler hakkında ikinci fıkra yerine üçüncü fıkra hükümleri uygulanabilir.",
+      "articleRefs": [
+        "31"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "15 yaşını doldurmuş, 18 yaşını doldurmamış kişiye, ağırlaştırılmış müebbet ve müebbet dışındaki cezalarda ne kadar indirim yapılır?",
+      "back": "Diğer cezaların üçte biri indirilir. Bu hâlde her fiil için verilecek hapis cezası 15 yıldan fazla olamaz.",
+      "explanation": "Suç ağırlaştırılmış müebbet gerektiriyorsa 19 yıldan 27 yıla kadar, müebbet gerektiriyorsa 15 yıldan 18 yıla kadar hapis verilir. Yalnız kasten öldürme (md 81, 82) ve neticesi sebebiyle ağırlaşmış yaralama (md 87 fıkra 2 ve 4) suçlarında bu fıkra hükümleri uygulanmayabilir; bunun için kasta dayalı kusurun ağırlığı, güdülen amaç ve saik, suçun işleniş şekli ya da daha önceden kasıtlı bir suçtan hapis cezasına mahkûm edilmiş olma hususlarından biri ya da birkaçı göz önünde bulundurulur.",
+      "articleRefs": [
+        "31"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Akıl hastalığı nedeniyle davranışlarını yönlendirme yeteneği, önemli derecede olmamakla birlikte azalmış kişiye ağırlaştırılmış müebbet hapis yerine hangi ceza verilir?",
+      "back": "25 yıl hapis cezası verilir. Müebbet hapis yerine ise 20 yıl hapis verilir.",
+      "explanation": "Kişi hakkında ayrıca akıl hastalarına özgü güvenlik tedbirine hükmolunur.",
+      "articleRefs": [
+        "32"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Davranışlarını yönlendirme yeteneği akıl hastalığı nedeniyle önemli derecede olmamakla birlikte azalmış kişiye, ağırlaştırılmış müebbet ve müebbet dışındaki hâllerde ceza en çok ne kadar indirilebilir?",
+      "back": "Verilecek ceza altıda birden fazla olmamak üzere indirilebilir.",
+      "explanation": "Bu indirim, yetenek birinci fıkrada yazılı derecede azalmamışsa uygulanır.",
+      "articleRefs": [
+        "32"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Akıl hastalığı nedeniyle işlediği fiilin hukuki anlam ve sonuçlarını algılayamayan kişi hakkında ne hükmolunur?",
+      "back": "Ceza verilmez; güvenlik tedbirine hükmolunur.",
+      "explanation": "Aynı sonuç, bu fiille ilgili davranışlarını yönlendirme yeteneği önemli derecede azalmış kişi için de geçerlidir.",
+      "articleRefs": [
+        "32"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Fiili işlediği sırada 15 yaşını doldurmamış sağır ve dilsiz hakkında, 12 yaşını doldurmuş olup 15 yaşını doldurmamış olanlara ilişkin hükümler mi uygulanır?",
+      "back": "Hayır. 15 yaşını doldurmamış sağır ve dilsizlere, fiili işlediği sırada 12 yaşını doldurmamış çocuklara ilişkin hükümler uygulanır.",
+      "explanation": "12 yaşını doldurmuş olup 15 yaşını doldurmamış olanlara ilişkin hükümler, 15 yaşını doldurmuş olup 18 yaşını doldurmamış sağır ve dilsizlere uygulanır.",
+      "articleRefs": [
+        "33"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "15 yaşını doldurmuş olup 18 yaşını doldurmamış olanlara ilişkin hükümler, sağır ve dilsizlerde hangi yaş aralığında uygulanır?",
+      "back": "18 yaşını doldurmuş olup 21 yaşını doldurmamış sağır ve dilsizlere uygulanır.",
+      "articleRefs": [
+        "33"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Geçici bir nedenle işlediği fiilin hukuki anlam ve sonuçlarını algılayamayan kişiye ceza verilir mi?",
+      "back": "Hayır; ceza verilmez. Aynı kural, irade dışı alınan alkol veya uyuşturucu madde etkisiyle bu duruma düşen ya da davranışlarını yönlendirme yeteneği önemli derecede azalan kişi için de geçerlidir.",
+      "articleRefs": [
+        "34"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 1,
+      "front": "İradi olarak alınan alkol etkisinde suç işleyen kişiye ceza verilmez mi?",
+      "back": "Hayır. İradi olarak alınan alkol veya uyuşturucu madde etkisinde suç işleyen kişi hakkında, ceza verilmemesini öngören birinci fıkra hükmü uygulanmaz.",
+      "articleRefs": [
+        "34"
+      ],
+      "counterNumbers": []
+    }
+  ]
+}

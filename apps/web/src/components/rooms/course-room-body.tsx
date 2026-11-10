@@ -32,9 +32,27 @@ const q = (o: Record<string, string | number>) =>
     Object.entries(o).map(([k, v]) => [k, String(v)]),
   ).toString();
 
-/** Tek ünite varsa özet doğrudan; birden çoksa konu sayfası üniteleri listeler. */
+/**
+ * Konunun okunacak içeriği: ünite özeti YA DA konu anlatımı dersi (Doc 57). İkisi ayrı yayınlanır;
+ * yalnız üniteye bakmak, özeti henüz yayınlanmamış derste dersleri erişilmez bırakıyordu.
+ */
+const dersSayisi = (t: Konu) => t.lessons?.count ?? 0;
+const okunur = (t: Konu) => t.units.count > 0 || dersSayisi(t) > 0;
+/** "6 ders · 4 ünite · 3 okundu" — yalnız var olanlar yazılır. */
+const okumaKunyesi = (t: Konu) => {
+  const okundu = t.units.read + (t.lessons?.read ?? 0);
+  return [
+    dersSayisi(t) > 0 ? `${dersSayisi(t)} ders` : null,
+    t.units.count > 0 ? `${t.units.count} ünite` : null,
+    okundu > 0 ? `${okundu} okundu` : null,
+  ]
+    .filter(Boolean)
+    .join(" · ");
+};
+
+/** Yalnız tek ünite varsa (ders yoksa) özet doğrudan; aksi hâlde konu sayfası dersleri ve üniteleri listeler. */
 const okuHref = (t: Konu) =>
-  t.units.count === 1 && t.units.firstSlug
+  dersSayisi(t) === 0 && t.units.count === 1 && t.units.firstSlug
     ? `/ozet/${t.units.firstSlug}`
     : `/kutuphane/konu/${t.id}`;
 
@@ -51,11 +69,14 @@ export function CourseRoomBody({ room: d }: { room: CourseRoom }) {
   const [okuma, setOkuma] = useState(false);
   const c = d.course;
   const tumKonular = d.topics.flatMap((t) => [t, ...t.children]);
-  const ozetli = tumKonular.filter((t) => t.units.count > 0);
+  const ozetli = tumKonular.filter(okunur);
   const legs = d.tools.legislation;
   const kartlar = hasFlashcards(d.tools.flashcards) ? d.tools.flashcards : null;
-  const okunacak = d.tools.summaryUnitCount > 0 || legs.length > 0 || kartlar != null;
+  const dersToplam = d.tools.lessonCount ?? 0;
+  const okunacak =
+    d.tools.summaryUnitCount > 0 || dersToplam > 0 || legs.length > 0 || kartlar != null;
   const okuAlt = [
+    dersToplam > 0 ? `${dersToplam} ders` : null,
     d.tools.summaryUnitCount > 0 ? `${d.tools.summaryUnitCount} ünite özeti` : null,
     legs.length > 0 ? "madde metni" : null,
     kartlar ? `${kartlar.count || kartlar.locked} kart` : null,
@@ -186,13 +207,9 @@ export function CourseRoomBody({ room: d }: { room: CourseRoom }) {
             <div>
               <ToolRow
                 icon={BookOpen}
-                title="Özeti oku"
-                subtitle={
-                  konu.units.count > 0
-                    ? `${konu.units.count} ünite · ${konu.units.read} okundu`
-                    : "Bu konuda henüz özet yok"
-                }
-                href={konu.units.count > 0 ? okuHref(konu) : null}
+                title="Konu oku"
+                subtitle={okunur(konu) ? okumaKunyesi(konu) : "Bu konuda henüz okunacak içerik yok"}
+                href={okunur(konu) ? okuHref(konu) : null}
               />
               <ToolRow
                 icon={RotateCcw}
@@ -263,13 +280,13 @@ export function CourseRoomBody({ room: d }: { room: CourseRoom }) {
         <div className="flex flex-col gap-4">
           {ozetli.length > 0 ? (
             <div>
-              <p className="type-label mb-1 text-ink-subtle">Ünite özetleri</p>
+              <p className="type-label mb-1 text-ink-subtle">Konu anlatımı ve özetler</p>
               {ozetli.map((t, i) => (
                 <ToolRow
                   key={t.id}
                   icon={BookOpen}
                   title={t.name}
-                  subtitle={`${t.units.count} ünite · ${t.units.read} okundu`}
+                  subtitle={okumaKunyesi(t)}
                   href={okuHref(t)}
                   divider={i < ozetli.length - 1}
                 />

@@ -1,0 +1,334 @@
+{
+  "deck": {
+    "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+    "legislationSlug": "turk-ceza-kanunu",
+    "sourceLabel": "AI bilgi kartı — Türk Ceza Kanunu md 61–75",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: resmî madde metni + çıkmış sorular); denetim düzeltmesi 6 Kas 2026 (5 kart)"
+  },
+  "cards": [
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Süreli hapis cezası gerektiren bir suçta, cezanın belirlenmesi hükümleri uygulandıktan sonra ulaşılan sonuç ceza en fazla ne kadar olabilir?",
+      "back": "30 yıl. Sonuç ceza otuz yıldan fazla olamaz.",
+      "explanation": "Hapis cezasının süresi gün, ay ve yıl hesabıyla belirlenir. Bir gün yirmidört saat, bir ay otuz gündür; yıl resmi takvime göre hesaplanır. Hapis cezasında bir günün artakalanı hesaba katılmaz ve infaz edilmez.",
+      "articleRefs": [
+        "61"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "md 61/5'e göre, temel ceza ile nitelikli hallere göre artırma ve indirimler yapıldıktan sonra belirlenen ceza üzerinden sonuç cezaya giderken ilk olarak hangi hüküm uygulanır?",
+      "back": "Teşebbüs. Ardından sırasıyla iştirak, zincirleme suç, haksız tahrik, yaş küçüklüğü, akıl hastalığı ve şahsi indirim sebepleri gelir; en son takdiri indirim nedenleri uygulanır.",
+      "explanation": "Bu sıra, temel ceza ve nitelikli hallere göre yapılan artırma ve indirimlerden sonra belirlenen ceza üzerinden işletilir. Sonuçta ulaşılan ceza, sonuç cezadır.",
+      "articleRefs": [
+        "61"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Bir suçta hem daha ağır hem daha az ceza gerektiren birden fazla nitelikli hal varsa temel cezada önce indirme mi yapılır?",
+      "back": "Hayır. Temel cezada önce artırma, sonra indirme yapılır.",
+      "explanation": "Olası kast ya da bilinçli taksir nedeniyle yapılan indirim veya artırım da, birinci fıkraya göre belirlenen ceza üzerinden yapılır.",
+      "articleRefs": [
+        "61"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Takdiri indirim nedeni varsa, ağırlaştırılmış müebbet ve müebbet hapis dışındaki cezalar en çok ne kadar indirilir?",
+      "back": "Altıda birine kadarı indirilir. Ağırlaştırılmış müebbet yerine müebbet hapis, müebbet yerine 25 yıl hapis verilir.",
+      "explanation": "İndirim fail yararınadır. Takdiri indirim nedenleri kararda gerekçeleriyle gösterilir.",
+      "articleRefs": [
+        "62"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Failin duruşmada mahkemeyi etkilemeye yönelik şeklî tutum ve davranışları takdiri indirim nedeni sayılır mı?",
+      "back": "Hayır, bu davranışlar takdiri indirim nedeni olarak dikkate alınmaz.",
+      "explanation": "Takdiri indirim nedeni olarak gözetilebilecek hususlar şunlardır: failin geçmişi, sosyal ilişkileri, fiilden sonraki ve yargılama sürecindeki pişmanlığını gösteren davranışları, cezanın failin geleceği üzerindeki olası etkileri.",
+      "articleRefs": [
+        "62"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Failin güttüğü amaç ve saik, takdiri indirim nedeni olarak mı göz önünde bulundurulur?",
+      "back": "Hayır. Amaç ve saik, hâkimin temel cezayı belirlerken gözettiği hususlardandır. Takdiri indirim nedeni olarak göz önünde bulundurulabilecekler: failin geçmişi, sosyal ilişkileri, fiilden sonraki ve yargılama sürecindeki pişmanlığını gösteren davranışları veya cezanın failin geleceği üzerindeki olası etkileri.",
+      "explanation": "Hâkim temel cezayı alt ve üst sınır arasında belirlerken şunları gözetir: suçun işleniş biçimi, kullanılan araçlar, zaman ve yer, suç konusunun önem ve değeri, zarar veya tehlikenin ağırlığı, kusurun ağırlığı, amaç ve saik. Bu hususlar suçun unsurunu oluşturuyorsa temel ceza belirlenirken ayrıca göz önünde bulundurulmaz.",
+      "articleRefs": [
+        "62",
+        "61"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Hüküm kesinleşmeden önce şahsi hürriyeti sınırlayan hallerde geçen süre adlî para cezasından indirilirken bir gün kaç Türk Lirası sayılır?",
+      "back": "500 Türk Lirası. Hapis cezasına hükmedilmişse geçirilen süre hükmolunan hapis cezasından indirilir.",
+      "explanation": "Mahsup, hüküm kesinleşmeden önce gerçekleşen ve şahsi hürriyeti sınırlama sonucunu doğuran bütün haller için uygulanır.",
+      "articleRefs": [
+        "63"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Sanık ölürse kamu davası hakkında hangi karar verilir?",
+      "back": "Kamu davasının düşürülmesine karar verilir. Ancak niteliği itibarıyla müsadereye tabi eşya ve maddi menfaatler için davaya devam edilip müsadereye hükmolunabilir.",
+      "articleRefs": [
+        "64"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Hükümlünün ölümü hangi cezaları ortadan kaldırır?",
+      "back": "Hapis cezalarını ve henüz infaz edilmemiş adlî para cezalarını. Müsadereye ve yargılama giderlerine ilişkin olup ölümden önce kesinleşmiş hüküm ise infaz olunur.",
+      "articleRefs": [
+        "64"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Genel af halinde hükmolunan cezalar ne olur?",
+      "back": "Bütün neticeleriyle birlikte ortadan kalkar; kamu davası da düşer.",
+      "articleRefs": [
+        "65"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Özel af ile hapis cezası hakkında ne yapılabilir?",
+      "back": "İnfaz kurumunda çektirilmesine son verilebilir, infaz kurumunda çektirilecek süresi kısaltılabilir ya da adlî para cezasına çevrilebilir.",
+      "articleRefs": [
+        "65"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Özel af, cezaya bağlı olan veya hükümde belirtilen hak yoksunluklarını da ortadan kaldırır mı?",
+      "back": "Hayır. Cezaya bağlı olan veya hükümde belirtilen hak yoksunlukları, özel affa rağmen etkisini devam ettirir.",
+      "explanation": "Özel af hapis cezasının infazına yönelir: infazına son verebilir, süresini kısaltabilir ya da cezayı adlî para cezasına çevirebilir. Genel af ise kamu davasını düşürür, cezaları bütün neticeleriyle ortadan kaldırır.",
+      "articleRefs": [
+        "65"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Kanunda başka türlü yazılmış haller dışında, ağırlaştırılmış müebbet hapis gerektiren suçlarda kamu davası kaç yıl geçmesiyle düşer?",
+      "back": "30 yıl.",
+      "explanation": "Diğer süreler şöyledir: müebbet hapiste 25 yıl; 20 yıldan aşağı olmamak üzere hapiste 20 yıl; 5 yıldan fazla ve 20 yıldan az hapiste 15 yıl; 5 yılı aşmayan hapis veya adlî para cezasında 8 yıl. Süre belirlenirken cezanın yukarı sınırı esas alınır. Seçimlik cezalarda hapis cezası esas alınır.",
+      "articleRefs": [
+        "66"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Müebbet hapis cezası gerektiren suçlarda dava zamanaşımı 20 yıl mıdır?",
+      "back": "Hayır. Kanunda başka türlü yazılmış haller dışında süre 25 yıldır. 20 yıl, 20 yıldan aşağı olmamak üzere hapis cezası gerektiren suçlardaki süredir.",
+      "explanation": "Fiili işlediği sırada 12 yaşını doldurmuş ama 15 yaşını doldurmamış olanlarda bu sürelerin yarısı geçince kamu davası düşer. 15 yaşını doldurmuş ama 18 yaşını doldurmamış olanlarda ise üçte ikisi geçince düşer.",
+      "articleRefs": [
+        "66"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Çocuklara karşı üstsoy veya üzerlerinde hüküm ve nüfuzu olan kimselerce işlenen suçlarda dava zamanaşımı ne zaman işlemeye başlar?",
+      "back": "Çocuğun 18 yaşını bitirdiği günden itibaren.",
+      "explanation": "Diğer başlangıç anları şöyledir: tamamlanmış suçlarda suçun işlendiği gün, teşebbüste son hareketin yapıldığı gün, kesintisiz suçlarda kesintinin gerçekleştiği gün, zincirleme suçlarda son suçun işlendiği gün.",
+      "articleRefs": [
+        "66"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Soruşturma yapılmasının izin alınmasına bağlı olması dava zamanaşımını keser mi?",
+      "back": "Hayır, keser değil durdurur: izin alınıncaya kadar dava zamanaşımı durur. Kesme nedenleri ise savcı huzurunda ifade alınması veya sorgu, tutuklama kararı, iddianame ve mahkûmiyet kararıdır.",
+      "explanation": "Zamanaşımı şu hallerde de durur: karar alınıncaya kadar, başka bir mercide çözülmesi gereken bir mesele çözülünceye kadar, fail hakkında verilmiş kaçaklık kararı kaldırılıncaya kadar.",
+      "articleRefs": [
+        "67"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Dava zamanaşımını kesen birden fazla neden varsa süre hangi tarihten itibaren yeniden işler?",
+      "back": "Son kesme nedeninin gerçekleştiği tarihten itibaren yeniden işlemeye başlar.",
+      "explanation": "Mahkûmiyet kararı sanıkların yalnız bir kısmı hakkında verilmiş olsa da zamanaşımını keser.",
+      "articleRefs": [
+        "67"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Beş yıldan fazla olmamak üzere hapis veya adlî para cezası gerektiren bir suçta (fiil sırasında 18 yaşını doldurmuş fail için) dava zamanaşımı, kesilmelerle en fazla kaç yıla uzayabilir?",
+      "back": "12 yıl. Kesilme halinde 8 yıllık süre en fazla yarısına kadar uzar.",
+      "explanation": "Kesilmeyle zamanaşımı süresi yeniden işlemeye başlar. Ancak toplam süre, Kanunda belirlenen sürenin en fazla yarısı kadar uzayabilir.",
+      "articleRefs": [
+        "67",
+        "66"
+      ],
+      "derivedNumbers": [
+        {
+          "value": 12,
+          "expr": "8 + 8 / 2",
+          "refs": [
+            "66",
+            "67"
+          ],
+          "note": "8 yıllık dava zamanaşımı süresine en fazla yarısı eklenir"
+        }
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Kural olarak ağırlaştırılmış müebbet hapis cezasında ceza zamanaşımı süresi kaç yıldır?",
+      "back": "40 yıl. Bu süre geçince ceza infaz edilmez.",
+      "explanation": "Diğer süreler şöyledir: müebbet hapiste 30 yıl; 20 yıl ve daha fazla süreli hapiste 24 yıl; 5 yıldan fazla hapiste 20 yıl; 5 yıla kadar hapis ve adlî para cezalarında 10 yıl. İstisnalar: fiil sırasında 12–15 yaşındakiler için sürelerin yarısı, 15–18 yaşındakiler için üçte ikisi geçince ceza infaz edilmez; İkinci Kitap Dördüncü Kısım'daki yurt dışında işlenmiş suçlardan verilen ağırlaştırılmış müebbet, müebbet veya 10 yıldan fazla hapis cezalarında ceza zamanaşımı uygulanmaz.",
+      "articleRefs": [
+        "68"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Ceza zamanaşımı hangi günden itibaren işlemeye başlar?",
+      "back": "Hükmün kesinleştiği ya da infazın herhangi bir suretle kesintiye uğradığı günden. Süre, kalan ceza miktarı esas alınarak hesaplanır.",
+      "explanation": "Türleri farklı cezaları içeren hükümler, en ağır ceza için konulan sürenin geçmesiyle infaz edilmez.",
+      "articleRefs": [
+        "68"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Cezaya bağlı olan veya hükümde belirtilen hak yoksunluklarının süresi ne zamana kadar devam eder?",
+      "back": "Ceza zamanaşımı doluncaya kadar devam eder.",
+      "articleRefs": [
+        "69"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Müsadereye ilişkin hüküm, kesinleşmeden itibaren kaç yıl geçince infaz edilmez?",
+      "back": "20 yıl.",
+      "articleRefs": [
+        "70"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Mahkûm olan kimse üst sınırı kaç yıldan fazla hapis gerektiren kasıtlı bir suç işlerse ceza zamanaşımı kesilir?",
+      "back": "2 yıl. Üst sınırı 2 yıldan fazla hapis cezası gerektiren kasıtlı bir suç işlemesi ceza zamanaşımını keser.",
+      "explanation": "Ceza zamanaşımını şunlar da keser: infaz için yetkili merci tarafından hükümlüye kanuna göre yapılan tebligat, bu maksatla hükümlünün yakalanması.",
+      "articleRefs": [
+        "71"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Şüpheli, sanık veya hükümlü zamanaşımından vazgeçebilir mi?",
+      "back": "Hayır. Dava ve ceza zamanaşımı re'sen uygulanır; şüpheli, sanık ve hükümlü bundan vazgeçemez.",
+      "explanation": "Zamanaşımı süreleri gün, ay ve yıl hesabıyla belirlenir. Bir gün 24 saat, bir ay 30 gündür; yıl resmi takvime göre hesaplanır.",
+      "articleRefs": [
+        "72"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Şikâyete bağlı bir suçta yetkili kimse şikâyetini en geç ne kadar süre içinde yapmalıdır?",
+      "back": "6 ay. Süre, fiili ve failin kim olduğunu bildiği veya öğrendiği günden başlar; zamanaşımı süresini geçemez.",
+      "explanation": "Şikâyet hakkı olan birkaç kişiden biri 6 aylık süreyi geçirirse diğerlerinin hakları düşmez.",
+      "articleRefs": [
+        "73"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Şikâyete bağlı hakaret suçunda şikâyet süresi, fiilin gerçekleştiği tarihten itibaren en fazla ne kadar olabilir?",
+      "back": "2 yıl. Fiil ve fail ne zaman öğrenilmiş olursa olsun bu süre aşılamaz.",
+      "explanation": "Genel kuralda 6 aylık şikâyet süresi, fiil ve failin öğrenildiği günden başlar. Hakaret suçunda buna ek olarak, fiilin gerçekleştiği tarihten itibaren 2 yıllık bir üst sınır vardır.",
+      "articleRefs": [
+        "73"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "İştirak halinde suç işlemiş sanıklardan biri hakkında şikâyetten vazgeçme diğerlerini de kapsar mı?",
+      "back": "Evet, diğerlerini de kapsar. Ancak kanunda aksi yazılı olmadıkça vazgeçme, onu kabul etmeyen sanığı etkilemez.",
+      "explanation": "Vazgeçme, kanunda aksi yazılı olmadıkça davayı düşürür. Hükmün kesinleşmesinden sonraki vazgeçme ise cezanın infazına engel olmaz.",
+      "articleRefs": [
+        "73"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Genel af, ödenen adlî para cezasının geri alınmasını gerektirir mi?",
+      "back": "Hayır. Genel af, özel af ve şikâyetten vazgeçme, müsadere olunan şeylerin veya ödenen adlî para cezasının geri alınmasını gerektirmez. Ancak genel af halinde yargılama giderleri de istenemez.",
+      "explanation": "Kamu davasının düşmesi, malların geri alınması ve zararın tazmini için açılan şahsi hak davasını etkilemez. Cezanın düşmesi de şahsi haklar, tazminat ve yargılama giderlerine ilişkin hükümleri etkilemez.",
+      "articleRefs": [
+        "74"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Önödeme için kanun maddesinde öngörülen hapis cezasının yukarı sınırı en fazla ne kadar olabilir?",
+      "back": "6 ay. Yalnız adlî para cezası gerektiren suçlar da kapsamdadır; uzlaşma kapsamındaki suçlar hariçtir.",
+      "explanation": "Fail, hapis cezasının aşağı sınırının her günü için 100 Türk Lirası üzerinden bulunan miktarı soruşturma giderleriyle birlikte öder. Ödeme, Cumhuriyet savcılığının tebliği üzerine 10 gün içinde yapılırsa kamu davası açılmaz. Bu durum kişisel hakkın istenmesine, malın geri alınmasına ve müsadereye ilişkin hükümleri etkilemez.",
+      "articleRefs": [
+        "75"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Önödeme miktarı, tebliğ üzerine 10 gün içinde tek seferde ödenmek zorunda mıdır?",
+      "back": "Hayır. Fail 10 gün içinde talep ederse Cumhuriyet savcısı, miktarın birer ay ara ile 3 eşit taksitle ödenmesine karar verir. Taksitler süresinde ödenmezse önödeme hükümsüz kalır ve soruşturmaya devam edilir.",
+      "explanation": "Taksirli suçlar hariç, önödemeye bağlı kovuşturmaya yer olmadığı veya düşme kararından itibaren 5 yıl içinde önödemeye tabi bir suç işleyen faile teklif edilecek miktar yarı oranında artırılır.",
+      "articleRefs": [
+        "75"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Türk Ceza Kanunu'nda yer alan hangi suçlar bakımından önödeme hükümleri ayrıca uygulanır?",
+      "back": "Yardım veya bildirim yükümlülüğünün yerine getirilmemesi, hakaret (üçüncü fıkranın (a) bendi hariç), genel güvenliğin taksirle tehlikeye sokulması, çevrenin taksirle kirletilmesi, özel işaret ve kıyafetleri usulsüz kullanma ve suçu bildirmeme.",
+      "explanation": "Bu suçların beş yıl içinde tekrar işlenmesi halinde, fail hakkında aynı suçtan dolayı önödeme hükümleri uygulanmaz.",
+      "articleRefs": [
+        "75"
+      ]
+    }
+  ]
+}

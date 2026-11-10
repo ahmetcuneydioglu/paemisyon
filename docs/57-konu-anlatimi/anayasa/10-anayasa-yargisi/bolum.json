@@ -1,0 +1,20 @@
+{
+  "slug": "anayasa-yargisi",
+  "title": "Yargı II: Anayasa Mahkemesi ve Anayasa Yargısı",
+  "subtitle": "Mahkemenin kuruluşu, denetimin konusu ve kapsamı, başvuru yolları, bireysel başvuru ve kararların özellikleri",
+  "courseName": "Anayasa Hukuku",
+  "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+  "sortOrder": 10,
+  "isPremium": true,
+  "aiDraft": true,
+  "book": { "label": "THEMIS Anayasa Hukuku, 24. baskı, 2020", "page": "s.203–231" },
+  "lessons": [
+    { "file": "01-anayasa-mahkemesinin-kurulusu.md", "slug": "anayasa-mahkemesinin-kurulusu-ve-uyeleri", "page": "s.203–206" },
+    { "file": "02-calisma-usulu-gorevler-ve-cogunluklar.md", "slug": "anayasa-mahkemesinin-calisma-usulu-ve-gorevleri", "page": "s.206–211" },
+    { "file": "03-anayasa-yargisinin-konusu-ve-olcu-normlar.md", "slug": "anayasa-yargisinin-konusu-ve-olcu-normlar", "page": "s.211–214" },
+    { "file": "04-sekil-ve-esas-denetimi.md", "slug": "sekil-ve-esas-denetimi", "page": "s.215–218" },
+    { "file": "05-iptal-davasi-ve-itiraz-yolu.md", "slug": "iptal-davasi-ve-itiraz-yolu", "page": "s.218–223, 230–231" },
+    { "file": "06-bireysel-basvuru.md", "slug": "anayasa-mahkemesine-bireysel-basvuru", "page": "s.223–227" },
+    { "file": "07-anayasa-mahkemesi-kararlarinin-ozellikleri.md", "slug": "anayasa-mahkemesi-kararlarinin-ozellikleri", "page": "s.227–231" }
+  ]
+}

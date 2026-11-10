@@ -1,0 +1,19 @@
+{
+  "slug": "yasama-tbmm",
+  "title": "Yasama I: TBMM ve Milletvekilliği",
+  "subtitle": "Meclisin kuruluşu, seçimler, milletvekilinin statüsü ve Meclisin iç düzeni",
+  "courseName": "Anayasa Hukuku",
+  "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+  "sortOrder": 6,
+  "isPremium": true,
+  "aiDraft": true,
+  "book": { "label": "THEMIS Anayasa Hukuku, 24. baskı, 2020", "page": "s.119–160" },
+  "lessons": [
+    { "file": "01-tbmm-kurulus-ve-secimler.md", "slug": "tbmm-kurulus-secim-donemi-ve-ara-secim", "page": "s.119–125" },
+    { "file": "02-secim-sistemleri.md", "slug": "secim-sistemleri", "page": "s.126–134" },
+    { "file": "03-milletvekili-secilme-ve-bagdasmazlik.md", "slug": "milletvekili-secilme-yeterliligi-ve-bagdasmazlik", "page": "s.134–139" },
+    { "file": "04-yasama-sorumsuzlugu-ve-dokunulmazligi.md", "slug": "yasama-sorumsuzlugu-ve-dokunulmazligi", "page": "s.139–145" },
+    { "file": "05-milletvekilliginin-dusmesi.md", "slug": "milletvekilliginin-dusmesi-ve-mali-statu", "page": "s.145–150" },
+    { "file": "06-tbmm-ic-yapisi-ve-calisma-duzeni.md", "slug": "tbmm-ic-yapisi-ve-calisma-duzeni", "page": "s.150–160" }
+  ]
+}

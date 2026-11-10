@@ -1,4 +1,5 @@
 import { Module } from '@nestjs/common';
+import { ReviewPromptModule } from '../review-prompt/review-prompt.module';
 import { QuizModule } from '../quiz/quiz.module';
 import { PublicModule } from '../public/public.module';
 import { ExamsController } from './exams.controller';
@@ -7,7 +8,7 @@ import { ExamsService } from './exams.service';
 
 /** Randevulu canlı denemeler (Doc 18). Cevap/bitirme motoru QuizModule'den. */
 @Module({
-  imports: [QuizModule, PublicModule],
+  imports: [QuizModule, PublicModule, ReviewPromptModule],
   controllers: [ExamsController, PastExamsController],
   providers: [ExamsService],
   exports: [ExamsService],

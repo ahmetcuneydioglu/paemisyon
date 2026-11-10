@@ -15,3 +15,5 @@ export * from "./section-header";
 export * from "./count-badge";
 export * from "./action-tile";
 export * from "./big-number";
+
+export * from "./choice-tabs";

@@ -1,8 +1,8 @@
 import { Stack, useLocalSearchParams, useRouter } from "expo-router";
-import { BookOpen, ChevronRight, Lock, Play, RotateCcw, Star } from "lucide-react-native";
+import { BookOpen, ChevronRight, Layers, Lock, Play, RotateCcw, Star } from "lucide-react-native";
 import { useState } from "react";
 import { Pressable, View } from "react-native";
-import { CoachLine, FlashcardModeSheet, ReadingSheet, RoomStatPanel, SolveChoiceSheet, TopicActionSheet } from "@/components/domain";
+import { CoachLine, FlashcardModeSheet, RoomStatPanel, SolveChoiceSheet, TopicActionSheet } from "@/components/domain";
 import { ActionTile, AppText, Badge, Card, Notice, ProgressBar, Screen, SectionHeader, Skeleton, useSheetAction } from "@/components/ui";
 import { useFlashcardOverview, type FlashcardMode, type FlashcardScope } from "@/features/flashcards/queries";
 import { bandBarTone, bandTone, useCourseRoom, type RoomTopic } from "@/features/rooms/queries";
@@ -23,7 +23,6 @@ export default function DersOdasiScreen() {
   const d = q.data;
   const title = d?.course.name ?? p.name ?? "Ders";
   const konuSayfasi = useSheetAction();
-  const okuma = useSheetAction();
   const cozum = useSheetAction();
   const [konu, setKonu] = useState<Konu | null>(null);
   // Bilgi kartları (Doc 56): mod seçimi sayfası kapsamı (ders ya da konu); özet sheet açılınca çekilir.
@@ -42,18 +41,25 @@ export default function DersOdasiScreen() {
   const coz = (t: Konu | null) => seans({ source: t ? "topic_room" : "course_room", ...kapsam(t) });
   const yanlislar = (t: Konu | null, n: number) => seans({ mode: "review", source: t ? "topic_room" : "course_room", count: String(Math.min(20, n)), ...kapsam(t) });
   const favoriler = (t: Konu | null, n: number) => seans({ mode: "practice", fromBookmarks: "1", source: t ? "topic_room" : "course_room", count: String(Math.min(20, n)), ...kapsam(t) });
-  // Tek ünite varsa özet doğrudan açılır; birden çoksa konu sayfası üniteleri listeler.
-  const oku = (t: Konu) =>
-    t.units.count === 1 && t.units.firstSlug
-      ? router.push({ pathname: "/ozet/[slug]", params: { slug: t.units.firstSlug } })
-      : router.push({ pathname: "/(tabs)/kutuphane/konu/[topicId]", params: { topicId: t.id, name: t.name } });
+  const oku = (t: Konu) => router.push({ pathname: "/(tabs)/kutuphane/uniteler/[topicId]", params: { topicId: t.id, name: t.name } });
+  // Konu oku kutusu doğrudan okuma seçimi ekranını açar (Figma 121:1545; kullanıcı kararı 7 Kas 2026: ara sheet yok).
+  const okumaSecimi = () => router.push({ pathname: "/(tabs)/kutuphane/konu-oku/[courseId]", params: { courseId: p.id ?? "", name: d?.course.name ?? "" } });
   const konuAc = (t: Konu) => {
     setKonu(t);
     konuSayfasi.open();
   };
 
-  const kartSayisi = d?.tools.flashcards?.count ?? 0;
-  const okunacak = d ? d.tools.summaryUnitCount > 0 || d.tools.legislation.length > 0 || kartSayisi > 0 : false;
+  // Bilgi kartları kendi kutusunda (6 Kas 2026 kararı: beşinci kutu, tam genişlik); "Konu oku" yalnız metin sayar.
+  // Sunucu bayrak kapalıyken ya da derste hiç kart yokken `flashcards` vermez → kutu çizilmez, dört kutu kalır.
+  const kart = d?.tools.flashcards ?? null;
+  const kartKilitli = kart != null && kart.count === 0 && kart.locked > 0;
+  const kartAltYazi = kart
+    ? kartKilitli
+      ? `Premium · ${kart.locked} kart`
+      : [`${kart.count} kart`, kart.due > 0 ? `${kart.due} tekrar bekliyor` : kart.learned > 0 ? `${kart.learned} öğrenildi` : null].filter(Boolean).join(" · ")
+    : "";
+  const dersSayisi = d?.tools.lessonCount ?? 0;
+  const okunacak = d ? d.tools.summaryUnitCount > 0 || dersSayisi > 0 || d.tools.legislation.length > 0 : false;
 
   return (
     <View style={{ flex: 1, backgroundColor: colors.bg }}>
@@ -97,15 +103,23 @@ export default function DersOdasiScreen() {
                 <ActionTile
                   icon={BookOpen}
                   title="Konu oku"
-                  subtitle={[d.tools.summaryUnitCount > 0 ? `${d.tools.summaryUnitCount} ünite özeti` : null, d.tools.legislation.length > 0 ? "madde metni" : null, kartSayisi > 0 ? `${kartSayisi} kart` : null].filter(Boolean).join(" · ") || "Henüz okunacak metin yok"}
+                  subtitle={[dersSayisi > 0 ? `${dersSayisi} ders` : null, d.tools.summaryUnitCount > 0 ? `${d.tools.summaryUnitCount} ünite özeti` : null, d.tools.legislation.length > 0 ? "madde metni" : null].filter(Boolean).join(" · ") || "Henüz okunacak metin yok"}
                   disabled={!okunacak}
-                  onPress={okuma.open}
+                  onPress={okumaSecimi}
                 />
               </View>
               <View style={{ flexDirection: "row", gap: space.s3 }}>
                 <ActionTile icon={RotateCcw} title="Yanlışlarım" subtitle={d.tools.wrongCount > 0 ? `${d.tools.wrongCount} soru bekliyor` : "Açık yanlış yok"} disabled={d.tools.wrongCount === 0} onPress={() => yanlislar(null, d.tools.wrongCount)} />
                 <ActionTile icon={Star} title="Favorilerim" subtitle={d.tools.favoriteCount > 0 ? `${d.tools.favoriteCount} soru` : "Henüz favori yok"} disabled={d.tools.favoriteCount === 0} onPress={() => favoriler(null, d.tools.favoriteCount)} />
               </View>
+              {kart ? (
+                <ActionTile
+                  icon={kartKilitli ? Lock : Layers}
+                  title="Bilgi kartları"
+                  subtitle={kartAltYazi}
+                  onPress={() => (kartKilitli ? router.push("/paywall") : kartlariAc({ courseId: d.course.id }))}
+                />
+              ) : null}
             </View>
 
             <View style={{ gap: space.s2 }}>
@@ -155,19 +169,6 @@ export default function DersOdasiScreen() {
           tests={d.tools.tests}
           onSmart={() => cozum.closeThen(() => coz(null))}
           onTests={() => cozum.closeThen(() => router.push({ pathname: "/(tabs)/kutuphane/testler/[courseId]", params: { courseId: d.course.id, name: d.course.name } }))}
-        />
-      ) : null}
-      {d ? (
-        <ReadingSheet
-          visible={okuma.visible}
-          onClose={okuma.close}
-          onDismissed={okuma.onDismissed}
-          topics={d.topics.flatMap((t) => [t, ...t.children])}
-          legislation={d.tools.legislation}
-          flashcards={d.tools.flashcards ?? null}
-          onTopic={(t) => okuma.closeThen(() => oku(t))}
-          onLaw={(slug) => okuma.closeThen(() => router.push({ pathname: "/oku/[slug]", params: { slug } }))}
-          onFlashcards={() => okuma.closeThen(() => (d.tools.flashcards && d.tools.flashcards.count === 0 && d.tools.flashcards.locked > 0 ? router.push("/paywall") : kartlariAc({ courseId: d.course.id })))}
         />
       ) : null}
       <FlashcardModeSheet visible={kartlar.visible} onClose={kartlar.close} onDismissed={kartlar.onDismissed} overview={kartOzeti.data ?? null} onPick={kartModu} onPremium={() => kartlar.closeThen(() => router.push("/paywall"))} />

@@ -1,0 +1,319 @@
+{
+  "deck": {
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "legislationSlug": "5271-sayili-ceza-muhakemesi-kanunu-cmk",
+    "unitSlug": "cmk-kararlar-sureler-taniklik",
+    "sourceLabel": "AI bilgi kartı — 5271 Sayılı Ceza Muhakemesi Kanunu (CMK) md 34–38, 38/A, 39–61",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: cmk-kararlar-sureler-taniklik özeti + resmî madde metni); denetim düzeltmesi 6 Kas 2026 (5 kart)"
+  },
+  "cards": [
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Bir hâkim ya da mahkeme kararında, başvurulabilecek kanun yoluyla ilgili neleri görmen gerekir?",
+      "back": "Başvurulabilecek kanun yolunu, süresini, merciini ve şekillerini görmen gerekir; bunların hepsi kararda belirtilir.",
+      "explanation": "Hâkim ve mahkemelerin her türlü kararı, karşı oy dahil, gerekçeli olarak yazılır. Kararların örneklerinde karşı oylar da gösterilir.",
+      "articleRefs": [
+        "34"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Aleyhine kanun yoluna başvurulabilecek kararlar, hazır bulunamayan ilgilisine tebliğ edilir. Hangi kararlar bu kuralın dışında kalır?",
+      "back": "Koruma tedbirlerine ilişkin kararlar bu kuralın dışında kalır.",
+      "explanation": "İlgili tarafın yüzüne karşı verilen karar kendisine açıklanır. İlgili isterse kararın bir örneği de verilir. Serbest olmayan kişiye ya da tutukluya tebliğ edilen karar, kendisine okunup anlatılır.",
+      "articleRefs": [
+        "35"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Ceza mahkemesinin infaz edilecek kararları kime verilir?",
+      "back": "Cumhuriyet Başsavcılığına verilir.",
+      "explanation": "Her türlü tebligatı mahkeme başkanı veya hâkim yapar. Gerçek kişiler, özel hukuk tüzel kişileri ve kamu kurum ve kuruluşlarıyla ilgili yazışmaları da yine mahkeme başkanı veya hâkim yürütür.",
+      "articleRefs": [
+        "36"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Cumhuriyet Başsavcılığına tebligat nasıl yapılır?",
+      "back": "Tebliği gereken evrakın aslı verilerek yapılır.",
+      "explanation": "Tebliğle bir süre işlemeye başlıyorsa, evrakın verildiği gün Cumhuriyet Başsavcılığı tarafından evrakın aslına yazılır.",
+      "articleRefs": [
+        "38"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Güvenli elektronik imzalı bir belge, elle imzalanmış belgeyle çelişirse hangisi geçerli kabul edilir?",
+      "back": "Ulusal Yargı Ağı Bilişim Sistemi'nde (UYAP) kayıtlı olan güvenli elektronik imzalı belge geçerli kabul edilir.",
+      "explanation": "Her türlü ceza muhakemesi işleminde UYAP kullanılır. Veri, belge ve kararlar UYAP vasıtasıyla işlenir, kaydedilir ve saklanır. Güvenli elektronik imzalı belge, diğer kişi ve kurumlara elektronik ortamda gönderilir ve gerekmedikçe ayrıca fiziki olarak düzenlenmez.",
+      "articleRefs": [
+        "38/A"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Güvenli elektronik imzayla imzalanan bir kararda mühürleme işlemine ilişkin hükümler uygulanır mı?",
+      "back": "Hayır. Güvenli elektronik imzalı belge ve kararlarda, mühürleme işlemiyle birden fazla nüsha düzenlenmesini öngören hükümler uygulanmaz.",
+      "explanation": "Elektronik ortamdan fiziki örnek çıkarılması gereken hâlde tutanak veya belgenin aslının aynı olduğu belirtilir; örneği hâkim, Cumhuriyet savcısı veya görevlendirilen yetkili kişi imzalar ve mühürler.",
+      "articleRefs": [
+        "38/A"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Ulusal Yargı Ağı Bilişim Sistemi (UYAP) üzerinden elektronik ortamda yapılan bir işlemde süre ne zaman biter?",
+      "back": "Gün sonunda biter.",
+      "explanation": "Ceza muhakemesi işlemlerinin UYAP'ta yapılmasına dair usul ve esaslar, Adalet Bakanlığınca çıkarılacak yönetmelikle düzenlenir.",
+      "articleRefs": [
+        "38/A"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Gün ile belirlenen bir süre, tebligatın yapıldığı gün mü işlemeye başlar?",
+      "back": "Hayır. Gün ile belirlenen süre, tebligatın yapıldığının ertesi günü işlemeye başlar.",
+      "explanation": "Hesaplanan sürenin son günü bir tatile rastlarsa süre, tatilin ertesi günü biter.",
+      "articleRefs": [
+        "39"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Hafta olarak belirlenen bir sürenin bitiş günü neye göre bulunur?",
+      "back": "Tebligatın yapıldığı günün, son haftada isim itibarıyla karşılığı olan gününe göre bulunur. Süre o günün mesai saati bitiminde sona erer.",
+      "explanation": "Örneğin Pazartesi tebliğ edilen haftalık süre, son haftanın Pazartesi günü biter. Ay olarak belirlenen sürede ise gün adına değil, son ayda sayı itibarıyla karşılığı olan güne bakılır. O gün son ayda yoksa süre, ayın son günü mesai saati bitiminde sona erer.",
+      "articleRefs": [
+        "39"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Hesapladığın sürenin son günü bir tatile rastlarsa süre ne zaman biter?",
+      "back": "Tatilin ertesi günü biter.",
+      "explanation": "Kural son güne bağlıdır. Süre gün, hafta ya da ay olarak hesaplanır. Son gün tatile denk gelirse bitiş, tatilin ertesi gününe geçer.",
+      "articleRefs": [
+        "39"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Kanun yoluna başvuru hakkı kendisine bildirilmediği için süreyi kaçıran kişi nasıl sayılır?",
+      "back": "Kusursuz sayılır. Bu yüzden eski hâle getirme isteminde bulunabilir.",
+      "explanation": "Eski hâle getirme, kusuru olmaksızın bir süreyi geçirmiş olan kişiye tanınan bir imkândır.",
+      "articleRefs": [
+        "40"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Eski hâle getirme dilekçesini hangi süre içinde vermelisin?",
+      "back": "Engelin kalkmasından itibaren iki hafta içinde vermelisin.",
+      "explanation": "Dilekçe sahibi, sürenin geçmesinde kusuru olmadığını gösteren olguları açıklar. Varsa bunlara ilişkin belgeleri de dilekçeye ekler.",
+      "articleRefs": [
+        "41"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Eski hâle getirme dilekçesi hangi mahkemeye verilir?",
+      "back": "Süreye uyulduğunda usule ilişkin işlemleri yapacak olan mahkemeye verilir.",
+      "explanation": "Süre geçtiği için yapılamayan usul işlemleri, dilekçe verildiği anda yerine getirilir.",
+      "articleRefs": [
+        "41"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Eski hâle getirme isteminin kabulüne ilişkin karara karşı itiraz edilebilir mi?",
+      "back": "Hayır. Kabul kararı kesindir. İtiraz yolu yalnızca reddine ilişkin karara karşı açıktır.",
+      "explanation": "Süresinde usul işlemi yapılsaydı esasa hangi mahkeme hükmedecek idiyse, dilekçe hakkında da o mahkeme karar verir. Dilekçe, kararın yerine getirilmesini durdurmaz. Ancak mahkeme yerine getirmeyi erteleyebilir.",
+      "articleRefs": [
+        "42"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Tanık telefonla ya da elektronik postayla çağrıldığında, çağrı kâğıdına bağlanan sonuçlar uygulanır mı?",
+      "back": "Hayır. Çağrı bu araçlarla da yapılabilir. Ancak çağrı kâğıdına bağlanan sonuçlar bu durumda uygulanmaz.",
+      "explanation": "Asıl yol çağrı kâğıdıdır ve gelmemenin sonuçları çağrı kâğıdında bildirilir. Tutuklu işlerde tanık için zorla getirme kararı verilebilir. Karar yazısında bu yoldan getirilmenin nedenleri gösterilir.",
+      "articleRefs": [
+        "43"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Usulüne uygun çağrılıp mazeretini bildirmeden gelmeyen tanık hakkında ne yapılır?",
+      "back": "Tanık zorla getirilir. Gelmemesinin sebep olduğu giderler takdir edilir ve kamu alacaklarının tahsili usulüne göre ödettirilir.",
+      "explanation": "Tanık, gelmemesini haklı gösterecek sebepleri sonradan bildirirse aleyhine hükmedilen giderler kaldırılır. Fiilî hizmette bulunan askerler hakkındaki zorla getirme kararı, askerî makamlar aracılığıyla infaz olunur.",
+      "articleRefs": [
+        "44"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Şüpheli veya sanığın kan hısımları hangi dereceye kadar tanıklıktan çekinebilir?",
+      "back": "Üçüncü derece dahil kan hısımları tanıklıktan çekinebilir.",
+      "explanation": "Şüpheli veya sanığın kan hısımlığından veya kayın hısımlığından üstsoyu ve altsoyu ayrıca sayılır. Nişanlı, evlilik bağı kalmasa bile eş ve evlâtlık bağı bulunanlar da tanıklıktan çekinebilir.",
+      "articleRefs": [
+        "45"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Şüpheli veya sanığın kayın hısımları hangi dereceye kadar tanıklıktan çekinebilir?",
+      "back": "İkinci derece dahil kayın hısımları tanıklıktan çekinebilir.",
+      "explanation": "Kayın hısımlığından üstsoy ve altsoy için derece sınırı yoktur; derece sınırı yan hısımlar içindir (üçüncü derece dahil kan, ikinci derece dahil kayın). Tanıklıktan çekinebilecek kimselere bu hak dinlenmeden önce bildirilir.",
+      "articleRefs": [
+        "45"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Hastasının rızası varken hekim, hastası hakkında öğrendiği bilgiler için tanıklıktan çekinebilir mi?",
+      "back": "Hayır. Avukatlar, stajyerleri ve yardımcıları dışında kalanlar, ilgilinin rızası varsa tanıklıktan çekinemez.",
+      "explanation": "Çekinme yalnızca bu sıfatla öğrenilen bilgiler için geçerlidir. Hekimler, diş hekimleri, eczacılar, ebeler ve bunların yardımcıları hastaları ve yakınları hakkında öğrendikleri bilgilerde çekinebilir. Malî işlerde görevlendirilmiş müşavirler ve noterler ise hizmet verdikleri kişiler hakkında öğrendikleri bilgilerde çekinebilir.",
+      "articleRefs": [
+        "46"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Devlet sırrı niteliğindeki bilgilerle ilgili tanıklık hükmü hangi suçlarda uygulanır?",
+      "back": "Hapis cezasının alt sınırı beş yıl veya daha fazla olan suçlarda uygulanır.",
+      "explanation": "Bir suç olgusuna ilişkin bilgiler, Devlet sırrı olarak mahkemeye karşı gizli tutulamaz. Cumhurbaşkanının tanıklığı söz konusuysa sırrın niteliğini ve mahkemeye bildirilip bildirilmeyeceğini kendisi takdir eder.",
+      "articleRefs": [
+        "47"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Tanıklık konusu bilgi Devlet sırrıysa, tanığı mahkeme heyeti zâbıt kâtibiyle birlikte mi dinler?",
+      "back": "Hayır. Tanık sadece mahkeme hâkimi veya heyeti tarafından, zâbıt kâtibi dahi olmaksızın dinlenir.",
+      "explanation": "Hâkim veya mahkeme başkanı, tanığın açıklamalarından yalnızca yüklenen suçu açıklığa kavuşturabilecek nitelikteki bilgileri daha sonra tutanağa kaydettirir.",
+      "articleRefs": [
+        "47"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Hangi yaşı doldurmamış tanık yeminsiz dinlenir?",
+      "back": "Dinlenme sırasında onbeş yaşını doldurmamış tanık yeminsiz dinlenir.",
+      "explanation": "Yaş, dinlenme anına göre belirlenir. Ayırt etme gücüne sahip olmadığı için yeminin niteliğini ve önemini kavrayamayanlar da yeminsiz dinlenir.",
+      "articleRefs": [
+        "50"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Soruşturma konusu suçun delillerini gizlemekten şüpheli olan kişi tanık olarak nasıl dinlenir?",
+      "back": "Yeminsiz dinlenir.",
+      "explanation": "Aynı bent birkaç grubu kapsar. Soruşturma veya kovuşturma konusu suçlara iştirakten şüpheli, sanık veya hükümlü olanlar bu bende girer. Bu suçlar nedeniyle suçluyu kayırmaktan ya da suç delillerini yok etme, gizleme veya değiştirmekten şüpheli, sanık veya hükümlü olanlar da yeminsiz dinlenir.",
+      "articleRefs": [
+        "50"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Tanıklıktan çekinebilecek bir kimse (örneğin şüphelinin nişanlısı) tanıklık ederse, ona yemin verilip verilmeyeceğine kim karar verir?",
+      "back": "Hâkim veya mahkeme takdir eder; tanık ise yemin etmekten çekinebilir ve bu hak kendisine bildirilir.",
+      "explanation": "Bu kural, yakınlık nedeniyle tanıklıktan çekinebilecek herkes için geçerlidir. Nişanlı, evlilik bağı kalmasa bile eş, kan ve kayın hısımları ile evlâtlık bağı bulunanlar bu kapsamdadır.",
+      "articleRefs": [
+        "51",
+        "45"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Tanığın dinlenmesi sırasında görüntü ve ses kaydı hangi kişilerin tanıklığında zorunludur?",
+      "back": "Mağdur çocukların tanıklığında zorunludur. Duruşmaya getirilmesi mümkün olmayan ve tanıklığı maddî gerçeğin ortaya çıkarılması açısından zorunlu olan kişilerin tanıklığında da zorunludur.",
+      "explanation": "Diğer tanıklarda görüntü ve ses kaydı alınabilir. Bu yolla elde edilen kayıtlar sadece ceza muhakemesinde kullanılır.",
+      "articleRefs": [
+        "52"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Soruşturma evresinde tanıklara yemin verme yetkisi kime de tanınmıştır?",
+      "back": "Cumhuriyet savcılarına. Soruşturma evresinde onlar da tanıklara yemin verir.",
+      "explanation": "Tanıklar, tanıklıktan önce ayrı ayrı yemin eder. Gerektiğinde ya da kişinin tanık sıfatıyla dinlenmesinin uygun olup olmadığında tereddüt varsa yemin, tanıklıktan sonraya bırakılabilir.",
+      "articleRefs": [
+        "54"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Kimliği saklı tutulan tanığın kişisel bilgilerini kim muhafaza eder?",
+      "back": "Cumhuriyet savcısı, hâkim veya mahkeme muhafaza eder.",
+      "explanation": "Kimliğin ortaya çıkması tanık veya yakınları için ağır bir tehlike oluşturacaksa, kimliğin saklı tutulması için önlem alınır. Kimliği saklı tutulan tanık, olayları hangi sebep ve vesileyle öğrendiğini açıklamakla yükümlüdür. Bu koruma ancak bir örgütün faaliyeti çerçevesinde işlenen suçlarda uygulanabilir.",
+      "articleRefs": [
+        "58"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Yasal bir sebep olmadan tanıklıktan veya yeminden çekinen tanığa verilebilecek disiplin hapsi en fazla ne kadar sürebilir?",
+      "back": "Dava hakkında hüküm verilinceye kadar sürebilir; ancak her hâlde üç ayı geçemez.",
+      "explanation": "Disiplin hapsiyle birlikte bundan doğan giderlere de hükmedilir. Tanık yükümlülüğüne uygun davranırsa derhâl serbest bırakılır. Süreler tümüyle uygulandıktan sonra tedbir, o dava veya aynı işe ilişkin diğer davada tekrar edilmez.",
+      "articleRefs": [
+        "60"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Soruşturma evresinde disiplin hapsi tedbirini almaya kim yetkilidir?",
+      "back": "Soruşturma evresinde sulh ceza hâkimi yetkilidir.",
+      "explanation": "Naip hâkim ve istinabe olunan mahkeme de bu tedbirleri almaya yetkilidir; \"soruşturma evresinde\" kaydı yalnız sulh ceza hâkimine aittir.",
+      "articleRefs": [
+        "60"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Disiplin hapsi kararı kesin midir?",
+      "back": "Hayır. Disiplin hapsi kararına itiraz edilebilir.",
+      "explanation": "Tanık, tanıklığa ilişkin yükümlülüğüne uygun davrandığı anda derhâl serbest bırakılır.",
+      "articleRefs": [
+        "60"
+      ],
+      "counterNumbers": []
+    }
+  ]
+}

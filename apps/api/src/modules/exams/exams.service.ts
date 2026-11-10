@@ -8,6 +8,8 @@ import {
 import { Cron } from '@nestjs/schedule';
 import type { Prisma } from '@prisma/client';
 import { PrismaService } from '../../infra/prisma/prisma.service';
+import { ReviewPromptService } from '../review-prompt/review-prompt.service';
+import type { ReviewPlatform } from '../review-prompt/review-prompt.logic';
 import { QuizService } from '../quiz/quiz.service';
 import { AppEventsService } from '../notifications/app-events.service';
 import type { AuthenticatedUser } from '../auth/auth.types';
@@ -68,6 +70,7 @@ export class ExamsService {
     private readonly prisma: PrismaService,
     private readonly quiz: QuizService,
     private readonly events: AppEventsService,
+    private readonly reviewPrompts: ReviewPromptService,
   ) {}
 
   private window(e: {
@@ -627,7 +630,12 @@ export class ExamsService {
   }
 
   // ── Sonuç (Doc 50 §2.4) ──
-  async getAttempt(user: AuthenticatedUser, attemptId: string) {
+  async getAttempt(
+    user: AuthenticatedUser,
+    attemptId: string,
+    /** Doc 57: istemci platformu; haftalık üst dilimde değerlendirme istemi için. */
+    opts: { platform?: ReviewPlatform | null } = {},
+  ) {
     const session = await this.prisma.quizSession.findFirst({
       where: {
         id: attemptId,
@@ -855,10 +863,30 @@ export class ExamsService {
       };
     }
 
+    // Mağaza değerlendirme istemi (Doc 57): yalnız TAKVİMLİ (haftalık) denemede,
+    // sıralama açık ve üst %25'teyse. Sönüm sunucuda; tekrar görüntüleme ikinci satır açmaz.
+    const weeklyTop =
+      !!rank?.available &&
+      rank.rank != null &&
+      rank.total > 0 &&
+      rank.rank / rank.total <= 0.25 &&
+      examRow?.publishMode === 'takvimli';
+    const reviewPrompt = weeklyTop
+      ? await this.reviewPrompts.evaluateAfterSession(user.id, opts.platform ?? null, {
+          sessionId: session.id,
+          mode: 'deneme',
+          totalQuestions: session.totalQuestions,
+          correctCount: fresh.correctCount,
+          earnedBadges: 0,
+          weeklyTop: true,
+        })
+      : null;
+
     return {
       ...base,
       resultLocked: false,
       resultAt: null,
+      reviewPrompt,
       correctCount: fresh.correctCount,
       wrongCount: fresh.wrongCount,
       blankCount: fresh.blankCount,

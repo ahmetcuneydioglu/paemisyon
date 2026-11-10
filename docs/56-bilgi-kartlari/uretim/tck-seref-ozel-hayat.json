@@ -1,0 +1,296 @@
+{
+  "deck": {
+    "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+    "legislationSlug": "turk-ceza-kanunu",
+    "sourceLabel": "AI bilgi kartı — Türk Ceza Kanunu md 125–140",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: resmî madde metni + çıkmış sorular); denetim düzeltmesi 6 Kas 2026 (2 kart)"
+  },
+  "cards": [
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Mağdurun gıyabında söylenen hakaret, kaç kişiyle ihtilat edildiğine bakılmaksızın cezalandırılır mı?",
+      "back": "Hayır. Mağdurun gıyabında hakaretin cezalandırılabilmesi için fiilin en az üç kişiyle ihtilat ederek işlenmesi gerekir.",
+      "explanation": "Mağduru muhatap alan sesli, yazılı veya görüntülü bir iletiyle işlenen hakarette de aynı cezaya hükmolunur: üç aydan iki yıla kadar hapis veya adlî para cezası.",
+      "articleRefs": [
+        "125"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Hakaret kamu görevlisine karşı görevinden dolayı işlenirse cezanın alt sınırı ne olur?",
+      "back": "Bir yıldan az olamaz. Bu kayıt, hakaretin kamu görevlisine görevinden dolayı işlenmesine bağlıdır.",
+      "explanation": "Aynı alt sınır; dini, siyasi, sosyal, felsefi inanç, düşünce ve kanaatlerini açıklamasından, değiştirmesinden, yaymaya çalışmasından, mensup olduğu dinin emir ve yasaklarına uygun davranmasından dolayı ya da kişinin mensup bulunduğu dine göre kutsal sayılan değerlerden bahisle işlenen hakarette de geçerlidir. Hakaret alenen işlenirse ceza ayrıca altıda biri oranında artırılır.",
+      "articleRefs": [
+        "125"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Kurul hâlinde çalışan kamu görevlilerine görevlerinden dolayı hakaret edilirse fail hangi hükümlere göre cezalandırılır?",
+      "back": "Zincirleme suça ilişkin hükümlere göre; suç, kurulu oluşturan üyelere karşı işlenmiş sayılır.",
+      "explanation": "Madde önce suçun kurulu oluşturan üyelere karşı işlenmiş sayılacağını söyler; 'Ancak' ile başlayan cümle de bu durumda zincirleme suça ilişkin madde hükümlerinin uygulanacağını belirtir.",
+      "articleRefs": [
+        "125"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Hakaret edilen hakkında hangi karar verilmişse, isnat edilen suç fiili ispatlanmış sayılır?",
+      "back": "Bu suç nedeniyle hakaret edilen hakkında kesinleşmiş bir mahkûmiyet kararı verilmişse isnat ispatlanmış sayılır.",
+      "explanation": "İsnat edilen ve suç oluşturan fiil ispat edilirse kişiye ceza verilmez. Kesinleşmiş mahkûmiyet dışındaki hâllerde ispat istemi ancak isnat olunan fiilin doğru olup olmadığının anlaşılmasında kamu yararı bulunmasına veya şikayetçinin ispata razı olmasına bağlı olarak kabul edilir.",
+      "articleRefs": [
+        "127"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Daha önce ispat edilmiş bir fiilinden söz edilerek kişiye hakaret edilmesi de cezasız kalır mı?",
+      "back": "Hayır. İspat edilmiş fiilinden söz edilerek kişiye hakaret edilmesi hâlinde cezaya hükmedilir.",
+      "explanation": "Ceza verilmemesi, isnat edilen ve suç oluşturan fiilin ispat edilmesi hâline bağlıdır. Fiil ispatlandıktan sonra ondan söz ederek kişiye hakaret etmek ise ayrıca cezalandırılır.",
+      "articleRefs": [
+        "127"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Yargı mercileri veya idari makamlar nezdindeki iddia ve savunmalarda yapılan somut isnatlara ceza verilmemesi hangi şarta bağlıdır?",
+      "back": "İsnat ve değerlendirmelerin gerçek ve somut vakıalara dayanması ve uyuşmazlıkla bağlantılı olması gerekir.",
+      "explanation": "Koruma, yazılı veya sözlü başvuru, iddia ve savunmaları kapsar; kişilerle ilgili somut isnatlar da olumsuz değerlendirmeler de buna girer. 'Ancak' ile başlayan cümle bu korumanın şartını koyar.",
+      "articleRefs": [
+        "128"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Hakaret haksız bir fiile tepki olarak işlenirse ceza hangi orana kadar indirilebilir?",
+      "back": "Üçte birine kadar indirilebilir; ceza vermekten de vazgeçilebilir.",
+      "explanation": "İndirim ya da vazgeçme takdire bağlıdır: kanun 'indirilebileceği gibi … vazgeçilebilir' der. Aynı imkân hakaretin karşılıklı olarak işlenmesi hâlinde de vardır.",
+      "articleRefs": [
+        "129"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Hakaret kasten yaralama suçuna tepki olarak işlenirse ceza yalnızca üçte birine kadar mı indirilebilir?",
+      "back": "Hayır. Hakaret kasten yaralama suçuna tepki olarak işlenmişse kişiye ceza verilmez.",
+      "explanation": "Haksız bir fiile tepki olarak işlenen hakarette ceza üçte birine kadar indirilebilir veya ceza vermekten vazgeçilebilir; kasten yaralamaya tepkide ise kanun doğrudan 'ceza verilmez' der.",
+      "articleRefs": [
+        "129"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Hakaret karşılıklı olarak işlenirse indirim ya da cezadan vazgeçme kimler hakkında uygulanabilir?",
+      "back": "Olayın mahiyetine göre taraflardan her ikisi veya biri hakkında; ceza üçte birine kadar indirilebilir ya da ceza vermekten vazgeçilebilir.",
+      "explanation": "Hüküm her iki tarafı da kapsar; hangisi hakkında indirim ya da vazgeçme uygulanacağı olayın mahiyetine göre belirlenir.",
+      "articleRefs": [
+        "129"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Bir kimsenin öldükten sonra hatırasına hakaret eden kişi hangi cezayla cezalandırılır?",
+      "back": "Üç aydan iki yıla kadar hapis veya adlî para cezası.",
+      "explanation": "Suçun oluşması için hakaretin en az üç kişiyle ihtilat ederek işlenmesi gerekir.",
+      "articleRefs": [
+        "130"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Kişinin hatırasına hakaret alenen işlenirse ceza hangi oranda artırılır?",
+      "back": "Altıda biri oranında artırılır.",
+      "explanation": "Temel ceza üç aydan iki yıla kadar hapis veya adlî para cezasıdır; maddede artırım nedeni olarak hakaretin alenen işlenmesi sayılmıştır.",
+      "articleRefs": [
+        "130"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Bir ölünün ceset veya kemikleri hakkında tahkir edici fiil için md 130/2'de öngörülen ceza seçimlik midir?",
+      "back": "Hayır; yalnız üç aydan iki yıla kadar hapis. Ölünün hatırasına hakarette (130/1) ise ceza seçimliktir: hapis veya adlî para cezası.",
+      "explanation": "Bir ölünün cesedini veya kemiklerini kısmen ya da tamamen almak da aynı hapis cezasını gerektirir.",
+      "articleRefs": [
+        "130"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Hakaret suçunda soruşturma ve kovuşturma hangi hâlde mağdurun şikayetine bağlı değildir?",
+      "back": "Kamu görevlisine karşı görevinden dolayı işlenen hakarette; diğer hâllerde hakaret mağdurun şikayetine bağlıdır.",
+      "explanation": "İstisna için hakaretin kamu görevlisine görevinden dolayı işlenmesi gerekir; bu bağ yoksa hakaret şikayete bağlı kalır.",
+      "articleRefs": [
+        "131"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Hakaret mağduru şikayet etmeden önce ölürse şikayette kimler bulunabilir?",
+      "back": "Ölenin ikinci dereceye kadar üstsoy ve altsoyu, eşi veya kardeşleri.",
+      "explanation": "Aynı kişiler, suç ölmüş olan kişinin hatırasına karşı işlenmişse de şikayette bulunabilir.",
+      "articleRefs": [
+        "131"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Kişiler arasındaki haberleşmenin gizliliğini ihlal eden kimse hangi cezayla cezalandırılır?",
+      "back": "Bir yıldan üç yıla kadar hapis cezası; ihlal haberleşme içeriklerinin kaydı suretiyle gerçekleşirse ceza bir kat artırılır.",
+      "explanation": "Kişiler arasındaki haberleşme içeriklerini hukuka aykırı olarak ifşa eden kimseye ise iki yıldan beş yıla kadar hapis cezası verilir.",
+      "articleRefs": [
+        "132"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Kendisiyle yapılan haberleşmenin içeriğini ifşa eden kişi hangi şartlarla cezalandırılır?",
+      "back": "İçeriği diğer tarafın rızası olmaksızın, hukuka aykırı olarak ve alenen ifşa ederse; ceza bir yıldan üç yıla kadar hapistir.",
+      "explanation": "İfşa edilen bu verilerin basın ve yayın yoluyla yayımlanması hâlinde de aynı cezaya hükmolunur; yayımlama cezayı artırmaz.",
+      "articleRefs": [
+        "132"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Kişiler arasındaki aleni olmayan konuşmaları, taraflardan herhangi birinin rızası olmaksızın bir aletle dinleyen kişinin cezası nedir?",
+      "back": "İki yıldan beş yıla kadar hapis cezası; bu konuşmaları ses alma cihazıyla kaydetmek de aynı cezayı gerektirir.",
+      "explanation": "Konuşmaların kaydedilmesiyle elde edilen verileri hukuka aykırı olarak ifşa eden kişiye iki yıldan beş yıla kadar hapis ve dörtbin güne kadar adlî para cezası verilir; verilerin basın ve yayın yoluyla yayımlanmasında da aynı cezaya hükmolunur.",
+      "articleRefs": [
+        "133"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Katıldığı aleni olmayan bir söyleşiyi diğer konuşanların rızası olmadan ses alma cihazıyla kayda alan kişinin cezası nedir?",
+      "back": "Altı aydan iki yıla kadar hapis veya adlî para cezası.",
+      "explanation": "Burada fail söyleşinin katılanıdır ve kayıt diğer konuşanların rızası olmadan yapılır. Kişiler arasındaki aleni olmayan konuşmaları taraflardan herhangi birinin rızası olmaksızın aletle dinlemek veya kaydetmek ise iki yıldan beş yıla kadar hapis gerektirir.",
+      "articleRefs": [
+        "133"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Aleni olmayan bir konuşmayı hiçbir alet kullanmadan dinleyen kişi, konuşmaların dinlenmesi suçunu işlemiş olur mu?",
+      "back": "Hayır. Suç, aleni olmayan konuşmaların bir aletle dinlenmesi ya da ses alma cihazıyla kaydedilmesiyle oluşur; taraflardan herhangi birinin rızasının bulunmaması da gerekir.",
+      "explanation": "Dinleme ya da kayıt, kişiler arasındaki aleni olmayan konuşmalara yönelmelidir.",
+      "articleRefs": [
+        "133"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Özel hayatın gizliliğini ihlal suçunda ceza hangi hâlde bir kat artırılır?",
+      "back": "Gizlilik görüntü veya seslerin kayda alınması suretiyle ihlal edilirse.",
+      "explanation": "Temel ceza bir yıldan üç yıla kadar hapistir. Kişilerin özel hayatına ilişkin görüntü veya sesleri hukuka aykırı olarak ifşa eden kimse ise iki yıldan beş yıla kadar hapis cezası ile cezalandırılır.",
+      "articleRefs": [
+        "134"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Özel hayata ilişkin görüntü veya seslerin ifşa edildikten sonra basın ve yayın yoluyla yayımlanması cezayı artırır mı?",
+      "back": "Hayır. İfşa edilen bu verilerin basın ve yayın yoluyla yayımlanması hâlinde de aynı cezaya, iki yıldan beş yıla kadar hapis cezasına hükmolunur.",
+      "explanation": "Basın ve yayın yoluyla yayımlama, ifşa ile aynı cezaya bağlanmıştır. Bu maddede bir kat artırım, gizliliğin görüntü veya seslerin kayda alınması suretiyle ihlal edilmesi hâline özgüdür.",
+      "articleRefs": [
+        "134"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Hukuka aykırı olarak kişisel verileri kaydeden kimseye hangi ceza verilir?",
+      "back": "Bir yıldan üç yıla kadar hapis cezası.",
+      "explanation": "Suçun unsuru, kişisel verilerin hukuka aykırı olarak kaydedilmesidir.",
+      "articleRefs": [
+        "135"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Kişisel veriler hangi konulara ilişkinse kaydetme suçunun cezası artırılır?",
+      "back": "İki grup: (1) kişilerin siyasi, felsefi veya dini görüşlerine ya da ırki kökenlerine ilişkinse; (2) hukuka aykırı olarak ahlaki eğilimlerine, cinsel yaşamlarına, sağlık durumlarına veya sendikal bağlantılarına ilişkinse.",
+      "explanation": "\"Hukuka aykırı olarak\" kaydı maddede yalnız ikinci gruba bağlıdır. Bu hâlde birinci fıkra uyarınca verilecek bir yıldan üç yıla kadar hapis cezası yarı oranında artırılır.",
+      "articleRefs": [
+        "135"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Kişisel verileri hukuka aykırı olarak bir başkasına veren, yayan veya ele geçiren kişinin cezası nedir?",
+      "back": "İki yıldan dört yıla kadar hapis cezası.",
+      "explanation": "Suçun konusu, Ceza Muhakemesi Kanununun 236 ncı maddesinin beşinci ve altıncı fıkraları uyarınca kayda alınan beyan ve görüntülerse ceza bir kat artırılır.",
+      "articleRefs": [
+        "136"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Özel hayatın gizliliğini ihlal ya da kişisel verileri kaydetme gibi suçlarda ceza hangi hâllerde yarı oranında artırılır?",
+      "back": "Suç, kamu görevlisi tarafından görevinin verdiği yetki kötüye kullanılarak ya da belli bir meslek ve sanatın sağladığı kolaylıktan yararlanılarak işlenirse.",
+      "explanation": "Kamu görevlisi bakımından görevin verdiği yetkinin kötüye kullanılması da aranır; failin yalnızca kamu görevlisi olması artırım için yetmez.",
+      "articleRefs": [
+        "137"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Kanunların belirlediği süreler geçmesine karşın verileri sistem içinde yok etmeyen yükümlüye hangi ceza verilir?",
+      "back": "Bir yıldan iki yıla kadar hapis cezası.",
+      "explanation": "Suçun konusu, Ceza Muhakemesi Kanunu hükümlerine göre ortadan kaldırılması veya yok edilmesi gereken veri ise ceza bir kat artırılır.",
+      "articleRefs": [
+        "138"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Özel hayat ve kişisel verilerle ilgili suçlardan hangilerinin soruşturulması ve kovuşturulması şikayete bağlı değildir?",
+      "back": "Kişisel verilerin kaydedilmesi, verileri hukuka aykırı olarak verme veya ele geçirme ve verileri yok etmeme; bölümdeki diğer suçlar şikayete bağlıdır.",
+      "explanation": "Kural 'hariç' ifadesiyle kurulur: sayılanlar dışında bölümde yer alan suçların soruşturulması ve kovuşturulması şikayete bağlıdır.",
+      "articleRefs": [
+        "139"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Kişisel verilerin kaydedilmesi gibi suçların işlenmesi dolayısıyla tüzel kişiler hakkında neye hükmolunur?",
+      "back": "Tüzel kişiler hakkında bunlara özgü güvenlik tedbirlerine hükmolunur.",
+      "explanation": "Tedbir, maddeden önce tanımlanan suçların işlenmesi dolayısıyla uygulanır.",
+      "articleRefs": [
+        "140"
+      ]
+    }
+  ]
+}

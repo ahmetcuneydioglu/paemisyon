@@ -40,6 +40,13 @@ describe('Türkçe sayı eşlemesi (Doc 53 doğrulayıcı)', () => {
     expect(numberInTexts(15, [MD85])).toBe(true);
     expect(numberInTexts(7, [MD85])).toBe(true);
     expect(trNumberPattern(15)).toBe('on\\s?beş');
+    // binler (TCK adlî para cezası "bin günden onbin güne kadar", 6 Kas 2026)
+    expect(trNumberPattern(1000)).toBe('bin');
+    expect(trNumberPattern(10000)).toBe('on\\s?bin');
+    expect(trNumberPattern(2500)).toBe('iki\\s?bin\\s?beş\\s?yüz');
+    expect(numberInTexts(10000, ['bin günden onbin güne kadar adlî para cezası'])).toBe(true);
+    expect(numberInTexts(1000, ['bin günden onbin güne kadar adlî para cezası'])).toBe(true);
+    expect(numberInTexts(1000, ['onbin güne kadar'])).toBe(false);
   });
 
   it('ek kabul edilir: "beşini" → 5, "altısı" → 6', () => {
