@@ -1,0 +1,278 @@
+{
+  "deck": {
+    "topicId": "28eaa9b8-d646-4d32-af33-618d8e1c7ea7",
+    "legislationSlug": "5393-belediye-kanunu",
+    "sourceLabel": "AI bilgi kartı — 5393 Belediye Kanunu md 39–49",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: resmî madde metni + çıkmış sorular)"
+  },
+  "cards": [
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Nüfusu 2.000.001'den fazla olan bir beldede belediye başkanının aylık brüt ödeneği hangi gösterge rakamı esas alınarak hesaplanır?",
+      "back": "230.000 gösterge rakamı. Bu rakam Devlet memurları için belirlenen aylık katsayı ile çarpılır; sonuç aylık brüt ödenektir.",
+      "explanation": "Gösterge, beldenin nüfus dilimine göre artar. En düşük gösterge, nüfusu 10.000'e kadar olan beldelerdeki 70.000'dir.",
+      "articleRefs": [
+        "39"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Belediye başkanlığı yapmış biri personel kanunlarına tâbi bir kadroya atanırsa, başkanlıkta geçen süresi nasıl değerlendirilir?",
+      "back": "Memuriyette geçmiş sayılır.",
+      "explanation": "Başkanın görevli, izinli ve hasta bulunduğu sürelerde ödeneği kesilmez. 657 sayılı Devlet Memurları Kanunu uyarınca memurlara uygulanan sosyal hak ve yardımlar, aynı esas ve usûllerle belediye başkanlarına ve bakmakla yükümlü oldukları kişilere de uygulanır.",
+      "articleRefs": [
+        "39"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Belediye başkanı izin ya da hastalık nedeniyle görev başında değilken başkan vekilini kimler arasından görevlendirir?",
+      "back": "Belediye meclisi üyeleri arasından. Görevlendirmeyi belediye başkanı yapar.",
+      "explanation": "Başkan vekili, vekâlet süresince başkanın yetkilerine sahiptir.",
+      "articleRefs": [
+        "40"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Başkan vekiline, vekâlet ettiği süre için ödenek nasıl verilir?",
+      "back": "Görev süresince, başkana ödenen aylık brüt ödeneğin gün hesabı üzerinden ödenir.",
+      "explanation": "Başkan vekili; izin, hastalık veya başka bir sebeple görev başında bulunmayan başkana vekâlet eder ve bu sürede başkanın yetkilerine sahiptir.",
+      "articleRefs": [
+        "40"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Belediye başkanı stratejik plânı, mahallî idareler genel seçimlerinden itibaren ne kadar süre içinde hazırlayıp belediye meclisine sunar?",
+      "back": "Altı ay içinde. Plân, kalkınma plânı ve programı ile varsa bölge plânına uygun hazırlanır.",
+      "explanation": "Yıllık performans programı ise ilgili olduğu yıl başından önce hazırlanıp belediye meclisine sunulur.",
+      "articleRefs": [
+        "41"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Nüfusu kaçın altında olan belediyelerde stratejik plân yapılması zorunlu değildir?",
+      "back": "50.000. Nüfusu 50.000'in altındaki belediyelerde stratejik plân zorunlu değildir.",
+      "articleRefs": [
+        "41"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Stratejik plân, belediye başkanı tarafından hazırlanınca yürürlüğe girer mi?",
+      "back": "Hayır. Stratejik plân, belediye meclisi tarafından kabul edildikten sonra yürürlüğe girer.",
+      "explanation": "Plân hazırlanırken varsa üniversitelerin ve meslek odalarının, ayrıca konuyla ilgili sivil toplum örgütlerinin görüşleri alınır. Stratejik plân ve performans programı bütçenin hazırlanmasına esas teşkil eder. İkisi de mecliste bütçeden önce görüşülerek kabul edilir.",
+      "articleRefs": [
+        "41"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Belediye başkanı görev ve yetkilerinden bir kısmını kimlere devredebilir?",
+      "back": "Yöneticilik sıfatı bulunan belediye görevlilerine. Devri, uygun gördüğü takdirde yapar.",
+      "articleRefs": [
+        "42"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Belediye başkanı belediyeyle ihtilâflı olduğunda dava açma ve belediyeyi temsil görevi kime geçer?",
+      "back": "Meclis birinci başkan vekiline geçer. O bulunmazsa ikinci başkan vekili ya da bunların yetkilendireceği kişiler bu görevi yürütür.",
+      "articleRefs": [
+        "43"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Belediyeyle ihtilâfta dava açma ve temsil görevinin başkandan alınması, başkanın kendisi dışında hangi yakınları için de uygulanır?",
+      "back": "Birinci ve ikinci derecedeki kan ve kayın hısımları ile evlatlıkları için.",
+      "articleRefs": [
+        "43"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Belediye başkanlığının Danıştay kararıyla sona ermesi kimin başvurusu üzerine olur?",
+      "back": "İçişleri Bakanlığının başvurusu üzerine. Başkanlık sıfatı Danıştay kararıyla sona erer.",
+      "explanation": "Bu yol şu hâllerde işler: mazeretsiz ve kesintisiz görev terki, seçilme yeterliğinin kaybı, görevi sürdürmeye engel bir hastalık veya engellilik durumunun yetkili sağlık kuruluşu raporuyla belgelenmesi ve meclisin feshine neden olan eylem ve işlemlere katılma.",
+      "articleRefs": [
+        "44"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Görevi terk nedeniyle belediye başkanlığının Danıştay kararıyla sona ermesi için başkan, görevini mazeretsiz ve kesintisiz olarak kaç günden fazla terk etmiş olmalıdır?",
+      "back": "Yirmi günden fazla. Terk durumunun mahallin mülkî idare amiri tarafından belirlenmesi de gerekir.",
+      "explanation": "Bu hâlde başkanlık sıfatı, İçişleri Bakanlığının başvurusu üzerine Danıştay kararıyla sona erer.",
+      "articleRefs": [
+        "44"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "İstifa eden belediye başkanının başkanlığı Danıştay kararıyla mı sona erer?",
+      "back": "Hayır. Ölüm ve istifa hâllerinde belediye başkanlığı kendiliğinden sona erer.",
+      "explanation": "Danıştay kararı, maddede sayılan diğer hâllerde İçişleri Bakanlığının başvurusu üzerine aranır.",
+      "articleRefs": [
+        "44"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Belediye başkanlığı boşalınca vali, belediye meclisinin kaç gün içinde toplanmasını sağlar?",
+      "back": "On gün içinde. Toplantıyı vali sağlar.",
+      "explanation": "Meclis, birinci başkan vekilinin başkanlığında toplanır. O yoksa ikinci başkan vekili, o da yoksa en yaşlı üye başkanlık eder.",
+      "articleRefs": [
+        "45"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Meclis belediye başkanı ya da başkan vekili seçerken ilk iki oylamada hangi çoğunluğu arar?",
+      "back": "Üye tam sayısının üçte iki çoğunluğunu. Üçüncü oylamada üye tam sayısının salt çoğunluğu aranır.",
+      "explanation": "Seçim gizli oyla ve meclis üyeleri arasından yapılır. Üçüncü oylamada salt çoğunluk sağlanamazsa, en çok oy alan iki aday için dördüncü oylama yapılır. Bu oylamada en fazla oy alan üye seçilir; eşitlikte kur'a çekilir. Seçim en geç onbeş gün içinde tamamlanmazsa meclisin feshine ilişkin hükümler uygulanır.",
+      "articleRefs": [
+        "45"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Başkan terör suçları dışındaki bir sebeple tutuklanırsa belediye meclisi yeni bir belediye başkanı mı seçer?",
+      "back": "Hayır, meclis bir başkan vekili seçer. Başkan vekili, yeni başkan seçilinceye ya da tutuklanan başkan göreve dönünceye kadar görev yapar.",
+      "explanation": "Görevden uzaklaştırmada ve seçim dönemini aşmayacak biçimde kamu hizmetinden yasaklamada da başkan vekili seçilir. Başkanlığın boşalmasında ya da seçim dönemini aşan yasaklamada ise başkan seçilir. Terör veya terör örgütlerine yardım ve yataklık suçları sebebiyle tutuklamada seçim yapılmaz; 46 ncı maddedeki makamlar görevlendirme yapar.",
+      "articleRefs": [
+        "45"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Belediye başkanlığı boşalır ve seçim yapılamazsa, seçim yapılıncaya kadar il belediyesinde başkanlığa kim görevlendirme yapar?",
+      "back": "İçişleri Bakanı. Büyükşehir belediyelerinde de görevlendirmeyi İçişleri Bakanı yapar.",
+      "articleRefs": [
+        "46"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Büyükşehir ve il belediyeleri dışındaki bir belediyede seçim yapılamazsa, başkanlığa görevlendirmeyi İçişleri Bakanı mı yapar?",
+      "back": "Hayır. Diğer belediyelerde görevlendirmeyi vali yapar.",
+      "explanation": "Görevlendirme seçim yapılıncaya kadar sürer. Görevlendirilecek kişinin belediye başkanı seçilme yeterliğine sahip olması şarttır.",
+      "articleRefs": [
+        "46"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Görevleriyle ilgili bir suç nedeniyle hakkında soruşturma açılan belediye başkanını kim görevden uzaklaştırabilir?",
+      "back": "İçişleri Bakanı. Görevden uzaklaştırma kesin hükme kadar sürebilir.",
+      "explanation": "Hüküm, belediye organlarını ve bu organların üyelerini kapsar. Soruşturma ya da kovuşturmanın görevleriyle ilgili bir suç nedeniyle açılmış olması gerekir.",
+      "articleRefs": [
+        "47"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Belediye organlarıyla ilgili görevden uzaklaştırma kararı hangi aralıklarla gözden geçirilir?",
+      "back": "İki ayda bir. Devamında kamu yararı bulunmayan görevden uzaklaştırma kararı kaldırılır.",
+      "explanation": "Karar şu hâllerde de kaldırılır: kovuşturma açılmaması, kamu davasının düşmesi, beraat kararı, davanın genel af ile ortadan kalkması ve görevden düşürülmeyi gerektirmeyen bir suçla mahkûmiyet.",
+      "articleRefs": [
+        "47"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Görevden uzaklaştırılan belediye başkanına, görevden uzak kaldığı sürece aylık ödeneğinin ne kadarı ödenir?",
+      "back": "Üçte ikisi. Bu süre içinde diğer sosyal hak ve yardımlardan yararlanmaya devam eder.",
+      "articleRefs": [
+        "47"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Norm kadroya uygun olarak belediye teşkilâtını oluşturan temel birimler hangileridir?",
+      "back": "Yazı işleri, malî hizmetler, fen işleri ve zabıta birimleri.",
+      "articleRefs": [
+        "48"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "İtfaiye birimi, belediye teşkilâtının her belediyede bulunan temel birimlerinden midir?",
+      "back": "Hayır. İtfaiye; sağlık, imar, insan kaynakları ve hukuk işleri gibi gerektiğinde oluşturulabilen birimlerdendir.",
+      "explanation": "Bu birimler; beldenin nüfusu, fizikî ve coğrafî yapısı, ekonomik, sosyal ve kültürel özellikleri ile gelişme potansiyeli dikkate alınarak kurulur. Kuruluşta norm kadro ilke ve standartlarına uyulur.",
+      "articleRefs": [
+        "48"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Belediyede gerektiğinde oluşturulan sağlık, itfaiye, imar gibi birimlerin kurulması, kaldırılması veya birleştirilmesi kimin kararıyla olur?",
+      "back": "Belediye meclisinin kararıyla.",
+      "explanation": "Bu birimlerin yanında ihtiyaca göre diğer birimler de oluşturulabilir. Hepsinde norm kadro ilke ve standartlarına uyulur.",
+      "articleRefs": [
+        "48"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Belediyenin yıllık toplam personel giderleri, yeniden değerlenmiş en son yıl bütçe gelirlerinin yüzde kaçını aşamaz?",
+      "back": "Yüzde otuzunu. Nüfusu 10.000'in altındaki belediyelerde bu oran yüzde kırk olarak uygulanır.",
+      "explanation": "Hesap, gerçekleşen en son yıl bütçe gelirlerinin 213 sayılı Vergi Usul Kanununa göre belirlenen yeniden değerleme katsayısıyla çarpımı üzerinden yapılır. Aylık ve ücretlerdeki beklenmedik artış yüzünden oran aşılırsa, giderler oranın altına ininceye kadar yeni personel alımı yapılamaz. Oran yeni personel alımı nedeniyle aşılırsa doğan kamu zararı, kanunî faiziyle birlikte belediye başkanından tahsil edilir.",
+      "articleRefs": [
+        "49"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Belediye memurlarına ikramiye kimin kararıyla ödenebilir?",
+      "back": "Encümen kararıyla. İkramiye başarı durumuna göre, toplam memur sayısının yüzde onunu geçmemek üzere, yılda en fazla iki kez ödenebilir.",
+      "explanation": "Sözleşmeli ve işçi statüsünde çalışanlar kapsam dışındadır. Ödeme, hastalık ve yıllık izinler dâhil çalışılan sürelerle orantılıdır. Tutar, Devlet memurlarına uygulanan aylık katsayının (20.000) gösterge rakamıyla çarpımını geçemez.",
+      "articleRefs": [
+        "49"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Belediyede yıllık sözleşmeyle çalışan uzman ve teknik personel, kaç yıllık çalışma süresini tamamlayınca talebi hâlinde memur kadrosuna atanır?",
+      "back": "Üç yıllık çalışma süresini tamamlayınca. Bu kadrolara atananların bir yıl süreyle diğer kamu kurum ve kuruluşlarına nakli yapılamaz.",
+      "explanation": "Sözleşmeli personelin işe alınması, memur kadrolarına ilk defa alınma usulüne tabidir. Atananlar, atandıkları kadronun mali ve sosyal haklarına göreve başladıkları tarihi takip eden aybaşından itibaren hak kazanır. Önceki pozisyonlarında aldıkları mali ve sosyal haklar için mahsuplaşma yapılmaz.",
+      "articleRefs": [
+        "49"
+      ]
+    }
+  ]
+}

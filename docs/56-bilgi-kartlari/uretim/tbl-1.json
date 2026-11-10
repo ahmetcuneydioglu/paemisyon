@@ -1,0 +1,291 @@
+{
+  "deck": {
+    "topicId": "fc664c8f-e47b-4601-a661-9b6c5bd06e97",
+    "legislationSlug": "7201-sayili-tebligat-kanunu",
+    "sourceLabel": "AI bilgi kartı — 7201 Sayılı Tebligat Kanunu md 1–7, 7/A, 8–25, 25/A",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: resmî madde metni + çıkmış sorular)"
+  },
+  "cards": [
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Kazaî merciler, belediyeler, barolar ve noterler tarafından yapılacak tebligat kimin vasıtasıyla yapılır?",
+      "back": "Posta ve Telgraf Teşkilatı Anonim Şirketi (metinde: Posta ve Telgraf Teşkilatı Genel Müdürlüğü) veya memur vasıtasıyla yapılır. Elektronik ortam dâhil tüm tebligat bu Kanun hükümlerine göre yapılır.",
+      "explanation": "Kapsamda ayrıca 5018 sayılı Kamu Malî Yönetimi ve Kontrol Kanununa ekli (I), (II), (III) ve (IV) sayılı cetvellerdeki idareler bulunur. Vakıf yükseköğretim kurumları, il özel idareleri ve köy hükmî şahsiyetleri de bu kapsamdadır.",
+      "articleRefs": [
+        "1"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Tehirinde zarar umulan işlerde tebligat zabıta vasıtasıyla kimin emriyle yaptırılır?",
+      "back": "Mahalli mülkiye amirinin emriyle yaptırılır. Bu işlerde tebligat kendi memurlarıyla da yaptırılabilir.",
+      "explanation": "Aynı yol, diğer kanunlarda özel hüküm bulunan hallerde de kullanılır. Aynı yerde bulunan 1 inci maddede yazılı daire ve müesseseler arasındaki tebligatta ve bu daire ve müesseselerde bulunan şahıslara yapılacak tebligatta da geçerlidir.",
+      "articleRefs": [
+        "2"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Zor kullanılmasını gerektiren vazifelerin zabıta tarafından yapılacağına dair hükümler Tebligat Kanunu karşısında hangi durumdadır?",
+      "back": "Mahfuzdur, yani saklıdır; bu hükümler uygulanmaya devam eder.",
+      "explanation": "Hazırlık tahkikatına taallük eden vazifelerin zabıta tarafından yapılacağına dair hükümler de aynı şekilde mahfuzdur. Kanunun ikinci babında yazılı hususi hükümler de saklıdır.",
+      "articleRefs": [
+        "2"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Tebliği çıkaran merciin verdiği mehil içinde gerekli masrafı yatırmayan kişi ne sayılır?",
+      "back": "Talebinden sarfınazar etmiş, yani vazgeçmiş sayılır. Zaruri sebeplerle mehle uyulamamışsa yeni bir mehil verilir.",
+      "explanation": "Tarifedeki PTT ücretlerini veya zaruri masrafları, hilafına bir hüküm bulunmadıkça tebliğin yapılmasını isteyen peşin olarak öder.",
+      "articleRefs": [
+        "5"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Tebliğin uçakla ya da işaretli telgrafla yapılmasına kim karar verir?",
+      "back": "Mahkeme reisi, hâkim ya da tebliği yaptıracak diğer merciler tensip eder. Bu karar alakalının talebi üzerine veya re'sen verilir.",
+      "explanation": "Bu vasıtalara ait ücretler PTT ücretleri tarifesine göre belirlenir. Ücretler, tebliğ ücretinden ayrı olarak bu vasıtalarla tebliği isteyenden alınır.",
+      "articleRefs": [
+        "7"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Tebligat Kanunu uyarınca yapılan elektronik tebligat işlemleri hangi sistem üzerinden yürütülür?",
+      "back": "Ulusal Elektronik Tebligat Sistemi (UETS) üzerinden yürütülür. Sistemi Posta ve Telgraf Teşkilatı Anonim Şirketi kurar ve işletir.",
+      "explanation": "Sistemin güvenliğini ve kayıtlı verilerin muhafazasını sağlayacak her türlü tedbiri Posta ve Telgraf Teşkilatı Anonim Şirketi alır. Elektronik tebligat maddesinin uygulanmasına ilişkin usul ve esaslar yönetmelikle belirlenir.",
+      "articleRefs": [
+        "7/A"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Elektronik yolla tebligat ne zaman yapılmış sayılır?",
+      "back": "Muhatabın elektronik adresine ulaştığı tarihi izleyen beşinci günün sonunda yapılmış sayılır.",
+      "explanation": "Elektronik tebligat zorunlu bir sebeple yapılamazsa Kanunda belirtilen diğer usullerle tebligat yapılır. Zorunlu kapsam dışındaki kişilere talepleri hâlinde elektronik tebligat adresi verilir; bu durumda onlara da tebligatın elektronik yolla yapılması zorunludur.",
+      "articleRefs": [
+        "7/A"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Sermayesinin ne kadarı kamuya ait olan ortaklıklara tebligatın elektronik yolla yapılması zorunludur?",
+      "back": "Sermayesinin yüzde ellisinden fazlası kamuya ait ortaklıklara elektronik tebligat zorunludur.",
+      "explanation": "Kamu iktisadi teşebbüsleri ile bunların bağlı ortaklıkları, müessese ve işletmeleri ayrıca sayılır. Kanunla kurulanlar da dahil tüm özel hukuk tüzel kişileri de zorunlu kapsamdadır.",
+      "articleRefs": [
+        "7/A"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Bilinen en son adres tebligata elverişli değilse tebligat nereye yapılır?",
+      "back": "Muhatabın adres kayıt sisteminde bulunan yerleşim yeri adresine yapılır. Bu adres, bilinen en son adres olarak kabul edilir.",
+      "explanation": "Aynı yol, bilinen en son adreste tebligat yapılamaması hâlinde de izlenir. Asıl kural, tebligatın bilinen en son adreste yapılmasıdır.",
+      "articleRefs": [
+        "10"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Tebligat, muhatabın adresi dışında bir yerde yapılabilir mi?",
+      "back": "Evet; muhatabın müracaatı veya kabulü şartıyla her yerde tebligat yapılması caizdir.",
+      "explanation": "Bu şart yoksa tebligat, tebliğ yapılacak şahsa bilinen en son adresinde yapılır.",
+      "articleRefs": [
+        "10"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Vekil birden çok ise her birine ayrı ayrı tebligat yapılması mecburi midir?",
+      "back": "Hayır; vekillerden birine tebligat yapılması yeterlidir. Birden fazlasına yapılmışsa ilkine yapılan tebliğ tarihi asıl tebliğ tarihi sayılır.",
+      "explanation": "Vekil vasıtasıyla takip edilen işlerde tebligat vekile yapılır. Ancak Ceza Muhakemesi Kanununun kararların sanıklara tebliğine ilişkin hükümleri saklıdır.",
+      "articleRefs": [
+        "11"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Avukatın takip ettiği işlerde, avukatın bürosunda yapılacak tebligat hangi zaman diliminde yapılır?",
+      "back": "Resmî çalışma gün ve saatleri içinde yapılır.",
+      "explanation": "Kanuni mümessilleri bulunanlara yapılacak tebligat da, kanunlara göre bizzat kendilerine yapılması gerekmedikçe bu mümessillere yapılır.",
+      "articleRefs": [
+        "11"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Bir ticarethanenin muamelelerinden doğan ihtilaflarda kime yapılan tebliğ muteberdir?",
+      "back": "Ticari mümessile yapılan tebliğ muteberdir.",
+      "explanation": "Hükmi şahıslara tebliğ, salahiyetli mümessillerine yapılır. Mümessil birden ziyade ise tebliğ yalnız birine yapılır.",
+      "articleRefs": [
+        "12"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Hükmi şahıs adına tebliğ alacak kişi mutat iş saatlerinde iş yerinde bulunmazsa tebliğ kime yapılır?",
+      "back": "Orada hazır bulunan memur veya müstahdemlerinden birine yapılır.",
+      "explanation": "Aynı kural, o kişi iş yerinde olup evrakı bizzat alamayacak hâldeyse de uygulanır.",
+      "articleRefs": [
+        "13"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Astsubaylara yapılacak tebliğ, erata olduğu gibi en yakın üste mi yapılır?",
+      "back": "Hayır; en yakın üste yapılan tebliğ, astsubaylar hariç erat içindir. Birlik veya müessesedeki diğer askeri şahıslarda tebliği nöbetçi amiri veya subayı temin eder.",
+      "explanation": "Nöbetçi amiri veya subayı muhatabı derhal bulunduramaz ya da tebliği temin edemezse tebliğ kendilerine yapılır.",
+      "articleRefs": [
+        "14"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Kendisine tebliğ yapılacak kişi adresinde bulunmazsa tebliğ kime yapılır?",
+      "back": "Kendisiyle aynı konutta oturan kişilere veya hizmetçilerinden birine yapılır.",
+      "articleRefs": [
+        "16"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Muhatap hastane, otel ya da talebe yurdu gibi içine serbestçe girilemeyen bir yerdeyse tebliğin yapılmasını kim temin eder?",
+      "back": "O yeri idare eden veya muhatabın bulunduğu kısmın amiri temin eder. Muhatabı derhal buldurmak ya da tebliği temin etmek mümkün olmazsa tebliğ kendilerine yapılır.",
+      "articleRefs": [
+        "18"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Mevkuf ve mahkûmlara ait tebliğlerin yapılmasını kim temin eder?",
+      "back": "Bulundukları müessesenin müdür veya memuru temin eder.",
+      "articleRefs": [
+        "19"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Muhatabın muvakkaten başka yere gittiği beyan edilmiş ve ihbarname kapıya yapıştırılmışsa tebliğ ne zaman yapılmış sayılır?",
+      "back": "İhbarnamenin kapıya yapıştırıldığı tarihten itibaren onbeş gün sonra yapılmış sayılır.",
+      "explanation": "Evrak beyanda bulunan kişilere verilmişse tebliğ, verildiği tarihte yapılmış sayılır. Bu kişiler evrakı kabule mecburdur. Beyanda bulunan kişi beyanını imzadan imtina ederse tebliğ eden bu beyanı şerh ve imza eder.",
+      "articleRefs": [
+        "20"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Muhatap ve tebliğ alabilecek kimselerden hiçbiri adreste yoksa tebliğ memuru evrakı kime teslim eder?",
+      "back": "O yerin muhtar veya ihtiyar heyeti azasından birine ya da zabıta amir veya memurlarına, imza mukabilinde teslim eder.",
+      "explanation": "Teslim alanın adresini içeren ihbarname, gösterilen adresteki binanın kapısına yapıştırılır. İhbarnamenin kapıya yapıştırıldığı tarih tebliğ tarihi sayılır. Adreste bulunmama hâlinde durum mümkün oldukça en yakın komşulardan birine, varsa yönetici veya kapıcıya da bildirilir. Aynı yol, tebellüğden imtina hâlinde de izlenir.",
+      "articleRefs": [
+        "21"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Zabıta memuru, tebliğ memurunun kendisine teslim ettiği tebliğ evrakını kabul edip etmemekte serbest midir?",
+      "back": "Hayır; muhtar, ihtiyar heyeti azaları, zabıta amir ve memurları kendilerine teslim edilen evrakı kabule mecburdur.",
+      "explanation": "Bu yükümlülük, adres kayıt sistemindeki adreste yapılan teslimde de geçerlidir. Muhatap o adreste hiç oturmamış veya o adresten sürekli olarak ayrılmış olsa bile bu yükümlülük değişmez.",
+      "articleRefs": [
+        "21"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Muhatap yerine kendisine tebliğ yapılacak kişi görünüşüne göre en az kaç yaşında olmalıdır?",
+      "back": "Görünüşüne nazaran onsekiz yaşından aşağı olmamalıdır. Ayrıca bariz bir surette ehliyetsiz bulunmamalıdır.",
+      "articleRefs": [
+        "22"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 1,
+      "front": "İmza atamayan muhataba tebliğde önce sağ elinin baş parmağı mı bastırılır?",
+      "back": "Hayır; önce sol elinin baş parmağı bastırılır. Bu parmak yoksa aynı elin diğer bir parmağı, sol el yoksa sağ elin baş parmağı kullanılır.",
+      "explanation": "Tebliğ yapılacak kimsenin iki eli de yoksa tebliğ evrakı kendisine verilir. Bu durum tebliğ mazbatasında tasrih edilir.",
+      "articleRefs": [
+        "24"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "İmza edecek kadar yazı bilmeyen muhataba parmak bastırılarak yapılan tebliğ, kaç komşunun huzurunda yapılır?",
+      "back": "Komşularından bir kişinin huzurunda yapılır. Hazır bulunan bu kişiye de tebliğ mazbatası imza ettirilir.",
+      "articleRefs": [
+        "24"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Parmak bastırılarak yapılacak tebliğde okur yazar bir komşu bulunmazsa tebliğ memuru ne yapar?",
+      "back": "O mahalle veya köyün muhtar veya ihtiyar heyeti azasından birini ya da bir zabıta memurunu hazır bulunmak üzere davet eder. Tebligat onların huzurunda yapılır.",
+      "explanation": "Aynı yol, bulunan komşu imzadan imtina ederse de izlenir.",
+      "articleRefs": [
+        "24"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Yabancı memlekette tebliğ kim vasıtasıyla yapılır?",
+      "back": "O memleketin salahiyetli makamı vasıtasıyla yapılır.",
+      "explanation": "Anlaşma veya o memleket kanunları müsaitse, oradaki Türkiye siyasi memuru veya konsolosu tebligatın yapılmasını salahiyetli makamdan ister. Dışişleri Bakanlığının aracılığına lüzum görülmeyen hallerde tebligat evrakı, ilgili Bakanlıkça doğrudan o yerdeki Türkiye Büyükelçiliğine veya Başkonsolosluğuna gönderilebilir.",
+      "articleRefs": [
+        "25"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Yabancı ülkedeki Türk vatandaşına bildirimin tebliğ edildiği belgelendirilmiş, muhatap Türkiye Büyükelçiliği veya Konsolosluğuna başvurmamışsa tebligat ne zaman yapılmış sayılır?",
+      "back": "Tebliğ tarihinden itibaren otuz gün içinde başvurulmazsa tebligat otuzuncu günün bitiminde yapılmış sayılır.",
+      "explanation": "Bildirim, tebliğin konusunu ve hangi merci tarafından çıkarıldığını içerir. Otuz gün içinde başvurulmazsa tebliğin yapılmış sayılacağı ihtarı da bildirimde yer alır. Bildirim, o ülkenin mevzuatının izin verdiği yöntemle gönderilir.",
+      "articleRefs": [
+        "25/A"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Türkiye Büyükelçiliğine başvuran muhatap tebliğ evrakını almaktan kaçınırsa tebligat otuzuncu günün bitiminde mi yapılmış sayılır?",
+      "back": "Hayır; bu hususta düzenlenecek tutanak tarihinde tebliğ yapılmış sayılır. Evrak bekletilmeksizin merciine iade edilir.",
+      "explanation": "Kazaî merciler bu maddeye göre çıkaracakları tebligatta, tebliğ evrakını doğrudan o yerdeki Türkiye Büyükelçiliği veya Konsolosluğuna gönderebilir.",
+      "articleRefs": [
+        "25/A"
+      ],
+      "counterNumbers": []
+    }
+  ]
+}

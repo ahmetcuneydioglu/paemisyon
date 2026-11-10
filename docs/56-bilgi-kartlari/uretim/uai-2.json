@@ -1,0 +1,288 @@
+{
+  "deck": {
+    "topicId": "8acb1d24-36dc-4517-89d0-68043758dcd1",
+    "legislationSlug": "6706-cezai-konularda-uluslararasi-adli-is-birligi-kanunu",
+    "sourceLabel": "AI bilgi kartı — 6706 Cezai Konularda Uluslararası Adli İş Birliği Kanunu md 23–38",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: resmî madde metni + çıkmış sorular)"
+  },
+  "cards": [
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Milletlerarası andlaşma yoksa Türkiye, soruşturma veya kovuşturmaları hangi ilkeye dayanarak devredebilir ya da devralabilir?",
+      "back": "Mütekabiliyet ilkesine dayanır; devir ya da devralma bu Kanun çerçevesinde yapılır.",
+      "explanation": "Andlaşma varsa devir ve devralma bu Kanun ile taraf olunan milletlerarası andlaşmalar çerçevesinde yürür. Andlaşma yoksa karşılıklılık esas alınır.",
+      "articleRefs": [
+        "23"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Türkiye'de yürütülen bir soruşturma veya kovuşturmanın yabancı devlete devredilebilmesi için suçun üst sınırı en az ne olmalıdır?",
+      "back": "Bir yıl veya daha fazla hapis cezası olmalıdır. Ayrıca maddede sayılan devir hâllerinden biri bulunmalıdır.",
+      "explanation": "Devir hâlleri: yabancı vatandaş şüpheli ya da sanığın Türkiye'de hazır bulundurulamaması veya adlî yardımlaşma yoluyla savunmasının alınamaması; Türk vatandaşı şüpheli ya da sanığın yabancı devlette mutat olarak bulunması veya delillerin orada olması nedeniyle devrin gerçeğin ortaya çıkarılmasına imkân vermesi. Talebi adlî merciler yapar. Talep, Merkezî Makamın olumlu görüşü üzerine ilgili devlete gönderilir.",
+      "articleRefs": [
+        "24"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Kovuşturmanın yabancı devlete devri talebi kabul edilince Türk mahkemesi hangi kararı verir?",
+      "back": "Durma kararı verir. Yabancı adlî merci sanık hakkında mahkûmiyet kararı verirse düşme kararı verilir.",
+      "explanation": "Yabancı merci mahkûmiyet dışında bir karar verirse, kararın gerekçesi değerlendirilerek kovuşturmaya devam edilebilir. Kovuşturmanın yürütülmesine iki hâlde karar verilir: yabancı devlet kabulden vazgeçtiğini bildirirse ya da devredilen kovuşturmanın sağlıklı yürütülmediğini Merkezî Makam adlî mercie bildirirse.",
+      "articleRefs": [
+        "24"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Soruşturmanın devri talebi kabul edilince, kamu davasının açılmasının ertelenmesi için Ceza Muhakemesi Kanununun 171 inci maddesindeki koşullar aranır mı?",
+      "back": "Hayır. Bu koşullara ve sonuçlarına bakılmaksızın kamu davasının açılmasının ertelenmesine karar verilir.",
+      "explanation": "Yabancı adlî merci şüpheli hakkında dava açarsa kovuşturmaya yer olmadığına karar verilir. Dava açılmazsa, buna ilişkin kararın gerekçesi değerlendirilerek soruşturmaya devam edilebilir.",
+      "articleRefs": [
+        "24"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Merkezî Makam, yabancı devletin soruşturma veya kovuşturma devri talebini uygun görürse talep nereye gönderilir?",
+      "back": "Yetkili Cumhuriyet başsavcılığına gönderilir. Başsavcılık devre konu suç için soruşturma başlatır ve sonucuna göre işlem yapar.",
+      "articleRefs": [
+        "25"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Yabancı devletteki soruşturma veya kovuşturmanın devralınması talebi hangi hâllerde kabul edilmez?",
+      "back": "Kişi Türkiye'de mutat olarak bulunmuyorsa ya da Türk vatandaşı değilse kabul edilmez. Suç talep eden devletin sınırları dışında işlenmişse ya da kişi aynı fiilden daha önce Türkiye'de yargılanmışsa da kabul edilmez.",
+      "explanation": "Devralınacak suç yurt dışında işlenmiş olmalıdır. Türk hukukuna göre zamanaşımına veya affa uğramamış olmalı ve üst sınırı bir yıl veya daha fazla hapis cezasını gerektirmelidir.",
+      "articleRefs": [
+        "25"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Talepte bulunan yabancı devletin mevzuatına göre elde edilen deliller, devralınan soruşturmada Türk hukuku bakımından geçerli sayılır mı?",
+      "back": "Evet. O devletin mevzuatına göre yapılmış soruşturma veya kovuşturma işlemleri ve elde edilen deliller Türk hukuku bakımından geçerli sayılır.",
+      "articleRefs": [
+        "25"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Yabancı mahkemenin verdiği hürriyeti bağlayıcı cezanın Türkiye'de infazı için, merkezî makamlarca aksi kararlaştırılmadıkça, talep tarihinde hükümlünün infazı gereken en az ne kadar cezası olmalıdır?",
+      "back": "En az altı ay olmalıdır. Hükümlünün Türkiye'de bulunması ve mahkûmiyet kararının kesinleşmiş olması da birlikte aranır.",
+      "explanation": "Diğer koşullar: fiilin Türk hukukuna göre suç teşkil etmesi ve zamanaşımına uğramamış olması, aynı suçtan dolayı Türkiye'de soruşturma veya kovuşturma yapılmamış olması. Koşullar yoksa ya da devir Türkiye'nin millî güvenliği ile temel çıkarlarına uygun düşmüyorsa, talebi Merkezî Makam reddeder.",
+      "articleRefs": [
+        "26"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "İnfazın devralınması talebinde Ankara ağır ceza mahkemesi uyarlama kararını kaç gün içinde verir?",
+      "back": "On beş gün içinde verir. Yabancı kararda sübutu kabul edilen fiile Türk kanunlarına göre verilmesi gereken cezayı tayin eder.",
+      "explanation": "Ağır ceza mahkemesi koruma tedbirleri hakkında da karar vermeye yetkilidir. Uyarlama kararı, talep eden devlet makamlarına bildirilmek üzere Merkezî Makama gönderilir.",
+      "articleRefs": [
+        "26"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Uyarlama kararında Türk kanunlarına göre belirlenen ceza, yabancı mahkemenin tayin ettiği ceza süresini geçebilir mi?",
+      "back": "Hayır. Belirlenen ceza, yabancı mahkeme kararında tayin edilen ceza süresini geçemez. Uyarlama kararına karşı itiraz kanun yoluna başvurulabilir.",
+      "articleRefs": [
+        "26"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Yabancı devletten devralınan infaz sırasında af kabul edilirse, hükümlünün hukukî durumuna kim karar verir?",
+      "back": "Uyarlama kararını veren ağır ceza mahkemesi karar verir.",
+      "explanation": "Genel veya özel af, hükmün verildiği devlette ya da Türkiye'de kabul edilmiş olabilir. Suç ve cezayı ortadan kaldıran veya hafifleten bir sebebin ortaya çıkmasında da aynı mahkeme karar verir. Mahkûmiyetin esasına ilişkin talepler hükmü veren devletin mahkemelerine yapılır; verilen kararlar ağır ceza mahkemesince yeniden uyarlanır.",
+      "articleRefs": [
+        "27"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Türk mahkemesi kararının yabancı devlette infazı için yapılan devir talebini Merkezî Makam hangi gerekçelerle reddeder?",
+      "back": "Devir ceza adaletinin amaçlarına hizmet etmeyecekse reddeder. Türkiye'nin millî güvenliği ile temel çıkarlarına uygun düşmeyecekse de reddeder.",
+      "explanation": "Talebi Cumhuriyet başsavcılığı yapar. Merkezî Makamın olumlu görüşü de devir koşulları arasındadır. Devir talebinde bulunulması, infaz işlemlerinin yürütülmesine engel değildir.",
+      "articleRefs": [
+        "28"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Cezası denetimli serbestlik tedbiri uygulanarak infaz edilen hükümlünün cezası yabancı devlete devredilebilir mi?",
+      "back": "Evet. Bu hükümlülerin cezalarının devredilebileceği maddede açıkça düzenlenmiştir.",
+      "explanation": "İnfazın yabancı devlette yapılmasını Cumhuriyet başsavcılığı talep eder. Talep, infaz işlemlerinin yürütülmesine engel değildir.",
+      "articleRefs": [
+        "28"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Devredilecek devlet infazı nasıl yapacağını bildirdikten sonra, bu bilgiye göre infazın devri talebini kim geri alabilir?",
+      "back": "Cumhuriyet başsavcılığı, Merkezî Makamın uygun görüşüyle geri alabilir.",
+      "explanation": "İnfazın devredilebilmesi için, devrin yapılacağı devletten infazın nasıl yapılacağının bildirilmesi istenir.",
+      "articleRefs": [
+        "28"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Türk kararının yabancı devlette infazı sırasında hükümlünün firarı gibi bilgiler Merkezî Makama ulaşınca kime bildirilir?",
+      "back": "Cumhuriyet başsavcılığına bildirilir.",
+      "explanation": "Merkezî Makam, yabancı devletten şu bilgileri bildirmesini ister: infaz sırasında ortaya çıkacak özel durumlar, infazın tamamlanması ve hükümlünün firarı gibi önemli bilgiler.",
+      "articleRefs": [
+        "29"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Yabancı devlet, kendisine devredilen Türk mahkûmiyet kararını infaz etmez ya da edemezse ne olur?",
+      "back": "İnfaz işlemlerine Türkiye'de devam edilir.",
+      "explanation": "Kararın yabancı devlette tamamen infaz edilmesi, Türk hukuku bakımından da aynı sonucu doğurur. Kararın infaz kabiliyetini kısmen veya tamamen kaybetmesi için de bu geçerlidir.",
+      "articleRefs": [
+        "29"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Yabancı devlette hükümlü olan kişinin cezasını çekmek üzere Türkiye'ye nakli için kimin rızası gerekir?",
+      "back": "Hükümlünün ya da kanunî temsilcisinin rızası gerekir.",
+      "explanation": "Şu koşullar da birlikte aranır: hükümlünün Türk vatandaşı olması veya Türkiye ile güçlü sosyal bağlarının bulunması, kararın kesinleşmiş olması, fiilin Türk hukukuna göre suç teşkil etmesi. Merkezî makamlarca aksi kararlaştırılmadıkça, infazı gereken en az altı ay hapis cezasının bulunması da gerekir.",
+      "articleRefs": [
+        "30"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Merkezî Makam, hükümlünün Türkiye'ye nakil talebini hangi gerekçelerle reddedebilir?",
+      "back": "Nakil koşulları yoksa reddedebilir. Nakil hükümlünün sosyal rehabilitasyonuna katkı sağlamayacak, ceza adaletinin amaçlarına hizmet etmeyecek ya da Türkiye'nin millî güvenliği ile temel çıkarlarına uygun düşmeyecekse de reddedebilir.",
+      "articleRefs": [
+        "30"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Yabancı devletteki hükümlünün Türkiye’ye nakline kim karar verir?",
+      "back": "Adalet Bakanı. Merkezî Makam (Adalet Bakanlığı) ise koşullar yoksa nakil talebini reddedebilir.",
+      "articleRefs": [
+        "30",
+        "2"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Türkiye'ye nakledilen hükümlünün infazı sırasında suçu ya da cezayı hafifleten bir sebep ortaya çıkarsa, hukukî durumuna hangi mahkeme karar verir?",
+      "back": "Hükümlünün bulunduğu yer ağır ceza mahkemesi karar verir.",
+      "explanation": "Hükmün verildiği devlette ya da Türkiye'de genel veya özel af kabul edilmesinde de aynı mahkeme karar verir. Hükümlü hakkındaki mahkûmiyet kararı Türk kanunlarına göre infaz edilir.",
+      "articleRefs": [
+        "31"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Türkiye'de ceza infaz kurumundaki hükümlünün yabancı devlete nakli için, merkezî makamlarca aksi kararlaştırılmadıkça, talep tarihinde infazı gereken en az ne kadar hapis cezası olmalıdır?",
+      "back": "En az altı ay olmalıdır. Ayrıca hükümlü hakkında başka bir suçtan dolayı Türkiye'de soruşturma veya kovuşturma bulunmamalıdır.",
+      "explanation": "Diğer koşullar: hükümlünün nakledileceği devletin vatandaşı olması veya bu devletle güçlü sosyal bağlarının bulunması, hükümlünün ya da kanunî temsilcisinin rızası, kararın kesinleşmesi ve fiilin o devletin hukukuna göre suç teşkil etmesi. Yabancı devletin muvafakati üzerine nakle Adalet Bakanı karar verir.",
+      "articleRefs": [
+        "32"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Hapis cezasının yanında adlî para cezası da bulunan hükümlü bu cezayı ödemezse, yabancı devlete nakil için ne yapılır?",
+      "back": "Ödenmeyen kısma karşılık gelen gün miktarı hapis cezasına çevrilir. Bulunan ceza miktarı yabancı devlete bildirilir; devlet kabul ederse nakle karar verilebilir.",
+      "explanation": "Nakle karar verilebilmesi için kural olarak adlî para cezasının ödenmesi gerekir. Türkiye'de infaz edilen ceza önce adlî para cezasından çevrilen hapis cezasına mahsup edilir. Bu süre yetmezse kalan bakiye hapis cezasına eklenir.",
+      "articleRefs": [
+        "32"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Yargılama giderlerini ödememiş hükümlünün yabancı devlete nakline karar verilebilir mi?",
+      "back": "Evet, ama yalnız hükümlünün bu giderleri ödeyebilecek durumda olmadığı anlaşılırsa. Kural olarak nakil talebinin kabulü için yargılama giderlerinin ödenmiş olması gerekir.",
+      "articleRefs": [
+        "32"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Türkiye'den yabancı devlete nakledilen hükümlünün firarına ilişkin bilgiler Merkezî Makama ulaşınca kime bildirilir?",
+      "back": "Kararı veren mahkemeye bildirilir.",
+      "explanation": "Kararın yabancı devletçe tamamen infaz edilmesi, Türk hukuku bakımından da aynı sonucu doğurur; infaz kabiliyetini kısmen veya tamamen kaybetmesi de öyle. Yabancı devlet kararı infaz edemezse infaz işlemlerine Türkiye'de devam edilir.",
+      "articleRefs": [
+        "33"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Adlî iş birliği taleplerinin yerine getirilmesine ilişkin giderleri, merkezî makamların aksine bir mutabakatı yoksa kim karşılar?",
+      "back": "Talebi yerine getiren devlet karşılar.",
+      "articleRefs": [
+        "34"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Mahkûmiyetin infazı amacıyla yapılan iade talebinin masraflarını faiziyle birlikte ödemesi için hükümlüye ne kadar süre tanınır?",
+      "back": "Bir ay tanınır. Bu süre içinde ödeme yapılmazsa alacak, takip ve tahsil için Cumhuriyet başsavcılığınca ilgili vergi dairesine bildirilir.",
+      "explanation": "Faiz, masrafın ödendiği tarihten tahsil edildiği tarihe kadar hesaplanır. Oran, 6183 sayılı Amme Alacaklarının Tahsil Usulü Hakkında Kanunun 51 inci maddesindeki gecikme zammı oranıdır. Ödeme gereğini hükümlüye, iadeyi talep eden Cumhuriyet başsavcılığı bildirir. Soruşturma veya kovuşturmayı sonuçlandırmak için yapılan iade talebinin masrafları ise yargılama giderlerinden sayılır.",
+      "articleRefs": [
+        "34"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Hükümlünün bulunduğu devletten Türkiye'ye nakli için gerekli masrafları kural olarak kim karşılar?",
+      "back": "Hükümlü karşılar. Masraf, hükümlü ya da onun adına herhangi bir kişi tarafından Adalet Bakanlığının bu maksatla açtığı hesaba yatırılır.",
+      "explanation": "Hükümlünün masrafları karşılayacak durumda olmadığı tespit edilirse, masraf Adalet Bakanlığı bütçesindeki ödenekten karşılanabilir. Bu kararda suçun niteliği, naklin kamusal yararı, bulunduğu devletteki cezaevi koşulları ve bakiye cezanın süresi gibi hususlar gözetilir. Görevlilere ilişkin nakil masrafları Harcırah Kanunu hükümlerine göre hesaplanır.",
+      "articleRefs": [
+        "34"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Cezai Konularda Uluslararası Adli İş Birliği Kanununun uygulanmasına ilişkin yönetmelikleri kim yürürlüğe koyar?",
+      "back": "Adalet Bakanlığı yürürlüğe koyar.",
+      "articleRefs": [
+        "35"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,303 @@
+{
+  "deck": {
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "legislationSlug": "5271-sayili-ceza-muhakemesi-kanunu-cmk",
+    "sourceLabel": "AI bilgi kartı — 5271 Sayılı Ceza Muhakemesi Kanunu (CMK) md 16, 21, 26, 30, 32, 33, 37, 48, 49, 53, 55–57, 59, 61, 62, 68, 70, 71, 77, 82, 84, 86, 89, 106, 114, 115, 120, 121, 123, 131, 165, 166, 168, 178, 179, 181, 183, 186, 189, 192, 197, 211, 212, 214, 215, 220, 221, 225, 233, 238",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: resmî madde metni + çıkmış sorular)"
+  },
+  "cards": [
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Bağlantılı ceza davaları değişik mahkemelerde görülmeye başlanmış ve mahkemeler birleştirme konusunda uyuşamamışsa birleştirmeye kim karar verir?",
+      "back": "Ortak yüksek görevli mahkeme. Cumhuriyet savcısı veya sanığın istemi üzerine birleştirmeye gerek olup olmadığına ve hangi mahkemede birleştirileceğine karar verir.",
+      "explanation": "Önce mahkemeler arasında uyuşma aranır. Cumhuriyet savcılarının istemlerine uygun olmak koşuluyla davaların hepsi ya da bir kısmı mahkemelerden birinde birleştirilebilir. Birleştirilmiş davaların ayrılması da aynı yolla olur.",
+      "articleRefs": [
+        "16"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Bağlantılı davalar değişik mahkemelerde başlamışsa, mahkemeler Cumhuriyet savcılarının istemine bakmadan kendi aralarında uyuşarak davaları birleştirebilir mi?",
+      "back": "Hayır. Mahkemeler arasındaki uyuşmayla birleştirme, Cumhuriyet savcılarının istemlerine uygun olmak koşuluyla yapılabilir.",
+      "explanation": "Bu koşul sağlanırsa davaların hepsi ya da bir kısmı mahkemelerden birinde birleştirilebilir. Uyuşma olmazsa Cumhuriyet savcısı veya sanığın istemi üzerine ortak yüksek görevli mahkeme karar verir.",
+      "articleRefs": [
+        "16"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Hâkimin reddini isteyen kişi, öğrendiği ret sebeplerini kaç defada açıklamakla yükümlüdür?",
+      "back": "Bir defada. Öğrendiği ret sebeplerinin tümünü süresi içinde olgularıyla birlikte ortaya koymalıdır.",
+      "explanation": "Ret, hâkimin mensup olduğu mahkemeye dilekçe verilerek ya da zabıt kâtibine tutanak düzenlenmesi için başvurularak istenir. Reddi istenen hâkim, ret sebepleri hakkındaki görüşlerini yazılı olarak bildirir.",
+      "articleRefs": [
+        "26"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Hâkim, tarafsızlığını şüpheye düşürecek sebepler ileri sürerek çekinirse merci ne yapar?",
+      "back": "Çekinmenin uygun olup olmadığına karar verir. Uygun bulursa davaya bakmakla başka bir hâkim veya mahkeme görevlendirilir.",
+      "explanation": "Hâkim yasaklılığını gerektiren sebeplere dayanarak çekindiğinde ise merci, davaya bakmakla bir başka hâkimi veya mahkemeyi görevlendirir.",
+      "articleRefs": [
+        "30"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Duruşma dışında verilecek kararlardan önce kimin görüşü alınır?",
+      "back": "Cumhuriyet savcısının; yazılı veya sözlü görüşü alındıktan sonra karar verilir.",
+      "explanation": "Duruşmada verilecek kararlarda ise önce Cumhuriyet savcısı, duruşmada hazır bulunan müdafi, vekil ve diğer ilgililer dinlenir.",
+      "articleRefs": [
+        "33"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Tanık hangi sorulara cevap vermekten çekinebilir?",
+      "back": "Kendisini veya 45 inci maddede gösterilen yakınlarını ceza kovuşturmasına uğratabilecek nitelikteki sorulara.",
+      "explanation": "Tanığa, bu sorulara cevap vermekten çekinebileceği önceden bildirilir.",
+      "articleRefs": [
+        "48"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "CMK’ya göre tanık dinlenmeden önce kendisine hangi hususlar anlatılır?",
+      "back": "Gerçeği söylemesinin önemi, gerçeği söylemezse yalan tanıklık suçundan cezalandırılacağı, doğruyu söyleyeceğine yemin edeceği ve duruşmada mahkeme başkanı veya hâkimin açık izni olmadan salonu terk edemeyeceği.",
+      "articleRefs": [
+        "53"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Tanıklıktan sonra verilen yeminde tanık hangi sözleri söyler?",
+      "back": "\"Bildiğimi dosdoğru söylediğime namusum ve vicdanım üzerine yemin ederim.\"",
+      "explanation": "Tanıklıktan önce verilen yemin \"Bildiğimi dosdoğru söyleyeceğime namusum ve vicdanım üzerine yemin ederim.\" biçimindedir. Yemin edilirken herkes ayağa kalkar.",
+      "articleRefs": [
+        "55"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Yeminle dinlenen tanık aynı evrede yeniden dinlenirken tekrar yemin ettirilmesi zorunlu mudur?",
+      "back": "Hayır. Aynı soruşturma veya kovuşturma evresinde yeniden yemin verilmeyip önceki yemininin hatırlatılmasıyla yetinilebilir.",
+      "articleRefs": [
+        "57"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Cumhuriyet savcısı, mahkeme başkanı veya hâkimin çağırdığı tanığa verilecek tazminat neye göre belirlenir?",
+      "back": "Adalet Bakanlığınca her yıl hazırlanan tarifeye göre, tanığın kaybettiği zamanla orantılı olarak belirlenir.",
+      "explanation": "Seyahat etmek zorunda kalan tanığın yol giderleri ile çağrıldığı yerdeki ikamet ve beslenme giderleri de karşılanır. Bu ödemeler hiçbir vergi, resim ve harç alınmadan yapılır.",
+      "articleRefs": [
+        "61"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Usulünce çağrıldığı hâlde gelmeyen bilirkişinin durumu nereye bildirilir?",
+      "back": "Bilirkişilik bölge kuruluna. Ayrıca bilirkişi hakkında 60 ıncı maddenin ilgili fıkrası uygulanır.",
+      "explanation": "Aynı işlem, gelip de yeminden ya da oy ve görüş bildirmekten çekinen bilirkişi için de uygulanır.",
+      "articleRefs": [
+        "71"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 1,
+      "front": "Kadının muayenesi her durumda kadın hekim tarafından mı yapılır?",
+      "back": "Hayır. Muayenenin kadın hekim tarafından yapılması, kadının istemi hâlinde ve olanaklar elverdiğinde söz konusudur.",
+      "articleRefs": [
+        "77"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Tutuklu şüpheli veya sanık keşifte hazır bulundurulabilir mi?",
+      "back": "Evet, ancak hâkim veya mahkeme bunu zorunlu saydığı hâllerde kararlaştırabilir.",
+      "explanation": "Keşifte şüpheli, sanık, mağdur ve bunların müdafii ile vekili hazır bulunabilir. Hazır bulunma hakkı olanlar, işin geri bırakılmasına yol açmamak koşuluyla önceden haberdar edilir. Şüpheli veya sanığın huzuru tanığın gerçeğe uygun tanıklık etmesine engel olabilecekse, o işte bulunmamasına karar verilebilir.",
+      "articleRefs": [
+        "84"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Ölünün adlî muayenesi, Cumhuriyet savcısı bulunmadan yalnız görevlendirilen hekimce yapılabilir mi?",
+      "back": "Hayır. Bu muayene Cumhuriyet savcısının huzurunda ve bir hekim görevlendirilerek yapılır.",
+      "explanation": "Muayenede tıbbî belirtiler, ölüm zamanı ve ölüm nedenini belirlemek için tüm bulgular saptanır.",
+      "articleRefs": [
+        "86"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Ölü muayenesinden veya otopsiden önce ölünün kimliği nasıl belirlenir?",
+      "back": "Engelleyici sebepler yoksa her suretle ve özellikle ölüyü tanıyanlara gösterilerek belirlenir.",
+      "explanation": "Elde edilmiş bir şüpheli veya sanık varsa, teşhis edilmek üzere ölü ona da gösterilebilir.",
+      "articleRefs": [
+        "86"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Zehirlenme şüphesi olan hâlde, ölüde bulunan şüpheli maddeleri kim inceleyerek tahlil eder?",
+      "back": "Görevlendirilen uzman.",
+      "explanation": "Cumhuriyet savcısı veya mahkeme, bu incelemenin hekimin katılmasıyla ya da onun yönetiminde yapılmasına karar verebilir. Organlardan parça alınırken organın görünen şekli ve tahribatı tanımlanır.",
+      "articleRefs": [
+        "89"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Güvencenin mağdurun haklarını karşılayan kısmının mağdura ödenmesi, şüpheli veya sanığın rızası olmadan emredilebilir mi?",
+      "back": "Evet, ancak soruşturma ve kovuşturmanın konusu olaylar nedeniyle mağdur lehine bir yargı kararı verilmişse. Böyle bir karar yoksa şüpheli veya sanığın rızası aranır.",
+      "explanation": "Rızaya dayalı önceden ödetmeyi hâkim, mahkeme veya Cumhuriyet savcısı emredebilir. Bu ödeme, mağdur veya nafaka alacaklısı istediği takdirde yapılır. Aynı kural güvencenin nafaka borcuna ilişkin kısmı için de geçerlidir.",
+      "articleRefs": [
+        "114"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Kovuşturmaya yer olmadığı veya beraat kararı verildiğinde, güvencenin mağdura verilmemiş ikinci kısmı ne olur?",
+      "back": "Şüpheli veya sanığa geri verilir.",
+      "explanation": "Aksi hâlde, geçerli mazereti dışında, güvence Devlet Hazinesine gelir yazılır. Hükümlülük hâlinde güvence 113 üncü maddedeki ilgili bende göre kullanılır, fazlası geri verilir.",
+      "articleRefs": [
+        "115"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Aranacak yerin sahibi aramada bulunmazsa kim hazır bulundurulur?",
+      "back": "Temsilcisi ya da ayırt etme gücüne sahip hısımlarından biri, kendisiyle birlikte oturan bir kişi veya komşusu.",
+      "explanation": "Kişinin avukatının aramada hazır bulunmasına engel olunamaz.",
+      "articleRefs": [
+        "120"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Elkonulan eşyanın geri verilmesine yalnız mahkeme mi karar verir?",
+      "back": "Hayır. Geri verme kararını Cumhuriyet savcısı, hâkim veya mahkeme re'sen ya da istem üzerine verir.",
+      "explanation": "Eşyanın muhafazasına gerek kalmamışsa veya müsadereye tabi tutulmayacağı anlaşılmışsa geri verilir. İstemin reddi kararlarına itiraz edilebilir. 128 inci maddeye göre elkonulan değerler suçtan zarar gören mağdura aitse ve delil olarak artık ihtiyaç yoksa sahibine iade edilir.",
+      "articleRefs": [
+        "131"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Diğer kolluk birimleri hangi hâllerde adlî kolluk görevini yerine getirmekle yükümlüdür?",
+      "back": "Gerektiğinde veya Cumhuriyet savcısının talebi hâlinde.",
+      "explanation": "Bu durumda kolluk görevlileri hakkında, adlî görevleri dolayısıyla Ceza Muhakemesi Kanunu hükümleri uygulanır.",
+      "articleRefs": [
+        "165"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Adlî kolluğun sorumluları hakkındaki değerlendirme raporlarını kim düzenler?",
+      "back": "Cumhuriyet başsavcıları. Raporları her yılın sonunda düzenleyip mülkî idare amirlerine gönderirler.",
+      "articleRefs": [
+        "166"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Olay yerinde adlî kolluk görevlisinin işlemlerine engel olan kişiye görevli ne yapabilir?",
+      "back": "Onu işlemler sonuçlanıncaya kadar, gerektiğinde zor kullanarak bundan men eder.",
+      "explanation": "Aynı yetki, görevlinin yetkisi içinde aldığı tedbirlere aykırı davranan kişiler için de geçerlidir.",
+      "articleRefs": [
+        "168"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Mahkeme, sanığın gösterdiği tanığın çağrılması dilekçesini reddederse sanık ne yapabilir?",
+      "back": "Tanığı mahkemeye kendisi getirebilir; getirilen kişi duruşmada dinlenir.",
+      "explanation": "Aynı imkân katılan için ve uzman kişiler için de vardır. Ancak davayı uzatmak amacıyla yapılan talepler reddedilir.",
+      "articleRefs": [
+        "178"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Duruşma başladıktan sonra salonda sesli veya görüntülü kayıt ya da nakil sağlayan aletler kullanılabilir mi?",
+      "back": "Hayır. Kanunda saklı tutulan hükümler dışında bu aletler adliye binası içinde ve duruşma salonunda kullanılamaz.",
+      "explanation": "Bu yasak, adliye binası içinde ve dışındaki diğer adlî işlemlerin icrasında da uygulanır.",
+      "articleRefs": [
+        "183"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 1,
+      "front": "Sanık duruşmada hazır bulunmazsa müdafii oturumlara katılabilir mi?",
+      "back": "Evet. Sanık hazır bulunmasa da müdafii bütün oturumlarda hazır bulunma yetkisine sahiptir.",
+      "articleRefs": [
+        "197"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Kanunun okunmasıyla yetinilmesine izin verdiği hâller dışındaki tutanakların duruşmada okunması için ne gerekir?",
+      "back": "Cumhuriyet savcısı, katılan veya vekili ile sanık veya müdafiinin okunmaya birlikte rıza göstermesi.",
+      "explanation": "Tanık veya sanığın suç ortağı ölmüş, akıl hastalığına tutulmuş ya da bulunduğu yer öğrenilememişse, dinleme yerine önceki tutanaklar ve kendi yazdığı belgeler okunabilir.",
+      "articleRefs": [
+        "211"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Mahkeme, fiilin nitelendirilmesinde iddia ve savunmalarla bağlı mıdır?",
+      "back": "Hayır. Mahkeme fiilin nitelendirilmesinde iddia ve savunmalarla bağlı değildir.",
+      "explanation": "Hüküm ise ancak iddianamede unsurları gösterilen suça ilişkin fiil ve faili hakkında verilir.",
+      "articleRefs": [
+        "225"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Kamu davasına katılma hangi yollarla olur?",
+      "back": "Kamu davası açıldıktan sonra mahkemeye dilekçe verilerek ya da katılma istemini içeren sözlü başvuru duruşma tutanağına geçirilerek olur.",
+      "explanation": "Duruşmada şikâyeti belirten ifade üzerine suçtan zarar görene davaya katılmak isteyip istemediği sorulur. İstemin uygun olup olmadığına Cumhuriyet savcısı, sanık ve varsa müdafii dinlendikten sonra karar verilir.",
+      "articleRefs": [
+        "238"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,273 @@
+{
+  "deck": {
+    "topicId": "52223b97-98b3-408b-93f4-3e3a03bf509b",
+    "legislationSlug": "2820-siyasi-partiler-kanunu",
+    "sourceLabel": "AI bilgi kartı — 2820 Siyasi Partiler Kanunu md 77–90, 93–96, 98–102",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: resmî madde metni + çıkmış sorular; 1 açıklama düşürüldü)"
+  },
+  "cards": [
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Bir siyasi partinin, Kanunun 68 inci maddesindeki esaslara aykırı olarak taşınmaz mala sahip olduğu anlaşılırsa ne yapılır?",
+      "back": "Mallar, Anayasa Mahkemesinin kararıyla ve bu Mahkemenin göstereceği süre içinde siyasi partinin kendisi tarafından paraya çevrilir.",
+      "explanation": "Süreyi Anayasa Mahkemesi gösterir. Paraya çevirme işlemini siyasi partinin kendisi yapar.",
+      "articleRefs": [
+        "77"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Siyasi partiler hangi esaslara dayanamaz ya da bunların adlarını kullanamaz?",
+      "back": "Bölge, ırk, belli kişi, aile, zümre veya cemaat, din, mezhep veya tarikat esaslarına.",
+      "explanation": "Yasak iki yönlüdür. Parti bu esaslara dayanamaz, bu adları da kullanamaz.",
+      "articleRefs": [
+        "78"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Siyasi partiler hangi hizmetlere hazırlayıcı nitelikte eğitim ve öğretim faaliyetinde bulunamaz?",
+      "back": "Askerlik, güvenlik veya sivil savunma hizmetlerine.",
+      "explanation": "Siyasi partiler genel ahlak ve adaba aykırı amaçlar da güdemez. Herhangi bir tür diktatörlüğü savunmayı ve yerleştirmeyi de amaçlayamaz.",
+      "articleRefs": [
+        "78"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Siyasi partiler yabancı devlet ve uluslararası kuruluşların hangi karar ve faaliyetlerine katılamaz?",
+      "back": "Türkiye’nin bağımsızlığı ve ülke bütünlüğü aleyhindeki karar ve faaliyetlerine.",
+      "articleRefs": [
+        "79"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Siyasi partiler kongre, miting ve propagandalarında hangi dili kullanmak zorundadır?",
+      "back": "Türkçe. Başka dillerde yazılmış pankart, levha, broşür ve beyanname de kullanamaz, dağıtamazlar.",
+      "explanation": "Yasak, tüzük ve programların yazımını ve yayınlanmasını da kapsar. Açık veya kapalı salon toplantıları da bu kapsamdadır. Partiler bu eylemlerin başkalarınca yapılmasına da kayıtsız kalamaz.",
+      "articleRefs": [
+        "81"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Bir siyasi parti tüzük ve programını yabancı bir dile çevirebilir mi?",
+      "back": "Evet. Kanunla yasaklanmış diller dışındaki yabancı bir dile çevrilmesi mümkündür. Tüzük ve programın yazımı ve yayınlanması ise Türkçe yapılır.",
+      "explanation": "Kural, yazımda ve yayında Türkçeden başka dil kullanılamamasıdır. Çeviri izni bu kuralın istisnasıdır ve kanunla yasaklanmış dillere çeviri bu izne girmez.",
+      "articleRefs": [
+        "81"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Siyasi Partiler Kanununun eşitlik ilkesine göre herkes hangi sebeplerle ayırım gözetilmeksizin kanun önünde eşittir?",
+      "back": "Dil, ırk, renk, cinsiyet, siyasi düşünce, felsefi inanç, din, mezhep ve benzeri sebeplerle.",
+      "explanation": "Partiler bu prensibe aykırı amaç güdemez ve bu yönde faaliyette bulunamaz.",
+      "articleRefs": [
+        "83"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "2820 sayılı Kanunun 84. maddesinde sayılan inkılap kanunları hangi iki amacı güder?",
+      "back": "Türk toplumunu çağdaş uygarlık seviyesinin üstüne çıkarmak ve Türkiye Cumhuriyetinin laiklik niteliğini korumak.",
+      "articleRefs": [
+        "84"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Siyasi partiler parti adı ve amblemlerinde neyi kullanamaz?",
+      "back": "Atatürk'ün adını veya resmini.",
+      "explanation": "Partiler Atatürk'ün şahsiyet ve faaliyetlerini veya hatırasını kötülemek ya da küçük düşürmek amacını da güdemez. Buna yol açabilecek davranış ve faaliyetlerde de bulunamaz.",
+      "articleRefs": [
+        "85"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Siyasi partiler, siyasi menfaat temin etmek maksadıyla neyi alet ederek propaganda yapamaz?",
+      "back": "Dini, dini hissiyatı veya dince mukaddes tanınan şeyleri; her ne suretle olursa olsun.",
+      "explanation": "Yasak, Devletin sosyal, ekonomik, siyasi veya hukuki temel düzenini kısmen de olsa dini esas ve inançlara uydurma amacını da kapsar. Partiler bunları istismar edemez ve kötüye kullanamaz.",
+      "articleRefs": [
+        "87"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Bir siyasi parti, parti nezaketinin gereği olarak bağımsız bir kişinin cenaze töreninde temsil edilip parti adına çelenk gönderebilir mi?",
+      "back": "Evet. Siyasi propagandaya dönüştürülmemek şartıyla bu, dini tören ve ayinlere katılma yasağının dışındadır.",
+      "explanation": "Temel kural şudur: partiler dini tören ve ayin tertipleyemez, parti sıfatıyla bunlara katılamaz. Aynı şartla şunlar da yasak dışındadır: Devlet protokolünce düzenlenen cenaze törenleri, partili bir üyenin ölümü, anma törenleri ve bayramlaşmalar.",
+      "articleRefs": [
+        "88"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Siyasi partiler, Diyanet İşleri Başkanlığının nerede yer almasına ilişkin Anayasa hükmüne aykırı amaç güdemez?",
+      "back": "Genel idare içinde yer almasına (Anayasa md 136).",
+      "articleRefs": [
+        "89"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Parti içi çalışmalar, parti organları için yapılan seçimler ve genel merkez organlarının kararları nelere aykırı olamaz?",
+      "back": "Parti tüzüğüne, parti üyeleri arasındaki eşitlik ilkesine ve demokrasi esaslarına.",
+      "explanation": "Aynı kayıt şunlar için de geçerlidir: parti yönetimi ve denetimi, parti genel başkanlığınca alınan kararlar ve parti gruplarınca yapılan eylem ve işlemler.",
+      "articleRefs": [
+        "93"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Parti kongresinde görevlendirilen parti üyeleri, görevleri gereği şerit ve kurdela kullanabilir mi?",
+      "back": "Evet. Her kademedeki kongre ve toplantılarda görevli üye ve personel şerit, kurdela ve benzeri işaretler kullanabilir. Üniforma, üniforma niteliğinde kıyafet veya kol bağı ise ihdas edilemez.",
+      "explanation": "Partiler hiçbir kimseye veya topluluğa güvenlik kuvvetlerinin görev veya yetkilerini üstlenme görevi veremez. Kongre ve toplantılarda üyelerin bu şekilde hareket etmesine de müsaade edemez.",
+      "articleRefs": [
+        "94"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Bir partinin kapatılmasına neden olan üyeleri başka bir siyasi parti seçimlerde aday gösterebilir mi?",
+      "back": "Hayır. Siyasi partiler bu kişileri hiçbir suretle seçimlerde aday gösteremez.",
+      "articleRefs": [
+        "95"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Hangi adlarla siyasi parti kurulamaz?",
+      "back": "Komünist, anarşist, faşist, teokratik, nasyonal sosyalist, din, dil, ırk, mezhep ve bölge adlarıyla veya aynı anlama gelen adlarla. Bu kelimeler parti adında da kullanılamaz.",
+      "explanation": "Kurulacak partiler, Anayasa Mahkemesince kapatılan partilerin devamı olduklarını beyan edemez. Daha önce kurulmuş Türk devletlerine ait, topluma mal olmuş bayrak, amblem ve flamalar da partilerce kullanılmaz.",
+      "articleRefs": [
+        "96"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Siyasi partiler, Cumhuriyet Başsavcılığının isteklerine en geç ne kadar sürede cevap vermek zorundadır?",
+      "back": "En geç onbeş gün içinde.",
+      "explanation": "Yargıtay Cumhuriyet Başsavcılığı, siyasi partilerden incelenmek üzere gerekli gördüğü belgeleri isteyebilir.",
+      "articleRefs": [
+        "98"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Siyasi Partilerle İlgili Yasakları İnceleme Kurulu kaç üyeyle toplanır?",
+      "back": "Üye tamsayısı ile toplanır.",
+      "explanation": "Kurul, kapatma isteklerinin Cumhuriyet Başsavcılığınca reddi hâlinde yapılan itirazları inceler.",
+      "articleRefs": [
+        "99"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Siyasi Partilerle İlgili Yasakları İnceleme Kurulunun karar yeter sayısı nedir?",
+      "back": "Üye tamsayısının salt çoğunluğu.",
+      "explanation": "Kurul Yargıtay ceza daireleri başkanlarından kurulur.",
+      "articleRefs": [
+        "99"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Bir Yargıtay ceza dairesi başkanının özrü hâlinde Kurula o dairenin en kıdemli üyesi mi katılır?",
+      "back": "Evet, özrü olan daire başkanının yerine o dairenin en kıdemli üyesi katılır. Kurulun Başkanı ise daire başkanlarının en kıdemlisidir.",
+      "explanation": "Kurul Yargıtay ceza daireleri başkanlarından oluşur. Başkanların en kıdemlisi Kurula başkanlık eder.",
+      "articleRefs": [
+        "99"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Türkiye Büyük Millet Meclisinde grubu bulunmayan bir siyasi parti, Cumhuriyet Başsavcılığından kapatma davası açılmasını isteyebilir mi?",
+      "back": "Hayır, partinin Meclis'te grubu bulunması şarttır. Ayrıca son milletvekili genel seçimlerine katılmış ve ilk büyük kongresini yapmış olması gerekir.",
+      "explanation": "Partinin merkez karar ve yönetim kurulu, üye tamsayısının salt çoğunluğunun oyuyla dava istenmesi yönünde karar almalıdır. İstem parti adına parti genel başkanı tarafından Cumhuriyet Başsavcılığına yazılı olarak yapılır.",
+      "articleRefs": [
+        "100"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Cumhuriyet Başsavcılığı dava açmayacağını bildirirse, istemde bulunan siyasi parti hangi süre içinde itiraz edebilir?",
+      "back": "Bildirimin tebliği tarihinden başlayarak otuz gün içinde. İtiraz, Siyasi Partilerle İlgili Yasakları İnceleme Kuruluna yazıyla yapılır.",
+      "explanation": "Başsavcılık, yazılı istemde yeterli delil bulunmadığı kanısına varırsa dava açmayacağını siyasi parti genel başkanlığına yazıyla bildirir.",
+      "articleRefs": [
+        "100"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Siyasi Partilerle İlgili Yasakları İnceleme Kurulu, kapatma davası açılmamasına yapılan itirazı haklı görürse ne olur?",
+      "back": "Cumhuriyet Başsavcılığı Anayasa Mahkemesine dava açmakla yükümlüdür. Kurul itirazı haklı görmezse dava açılmaz.",
+      "explanation": "Kurul itirazı ivedilikle, en geç otuz gün içinde inceler.",
+      "articleRefs": [
+        "100"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Anayasanın 68 inci maddesinin dördüncü fıkrası yönünden, bir siyasi parti hangi durumda kapatılır?",
+      "back": "Partinin bu fıkraya aykırı eylemlerin işlendiği odak hâline geldiği Anayasa Mahkemesince tespit edilirse.",
+      "explanation": "Diğer kapatma hâlleri şunlardır: tüzük ve programın maddede sayılan ilkelere aykırı olması ya da suç işlenmesini teşvik etmesi. Yabancı devletlerden, uluslararası kuruluşlardan ve Türk uyrukluğunda olmayan gerçek ve tüzel kişilerden maddi yardım alınması da kapatma sebebidir.",
+      "articleRefs": [
+        "101"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Anayasanın 68 inci maddesinin dördüncü fıkrasına aykırı fiil işleyen parti organının işten el çektirilmesi, fiilden itibaren hangi süre içinde istenebilir?",
+      "back": "İki yıl. Fiilin işlendiği tarihten başlayarak iki yıl geçmemişse Yargıtay Cumhuriyet Başsavcılığı el çektirmeyi yazıyla o partiden ister.",
+      "explanation": "Bu hükümlere aykırı fiil ve konuşmalarından dolayı hüküm giyen parti üyeleri için de bir istem vardır. Başsavcılık bu üyelerin partiden kesin olarak çıkarılmasını o partiden ister.",
+      "articleRefs": [
+        "102"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Yargıtay Cumhuriyet Başsavcılığı, parti genel başkanının işten el çektirilmesini partiden isteyebilir mi?",
+      "back": "Hayır. El çektirme yalnız büyük kongre, merkez karar ve yönetim kurulu, TBMM grup yönetim kurulu, grup genel kurulu ve genel başkan dışındaki parti organı, mercii veya kurulu için istenebilir; fiilden itibaren iki yıl geçmemiş olmalıdır.",
+      "explanation": "Sayılan bu organların fiilleri el çektirme yoluyla değil, odak hâli değerlendirmesiyle ele alınır.",
+      "articleRefs": [
+        "102"
+      ],
+      "counterNumbers": []
+    }
+  ]
+}

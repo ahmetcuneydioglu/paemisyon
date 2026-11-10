@@ -1,0 +1,285 @@
+{
+  "deck": {
+    "topicId": "be738fb3-fc30-4d1e-9306-c1cb2eb7d0c3",
+    "legislationSlug": "2575-danistay-kanunu",
+    "sourceLabel": "AI bilgi kartı — 2575 Danıştay Kanunu md 21–27, 35, 36, 38–41, 45, 47–52, 52/A, 53–61",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: resmî madde metni + çıkmış sorular)"
+  },
+  "cards": [
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Danıştay Disiplin Kuruluna kim başkanlık eder?",
+      "back": "Genel Kurulun Kurula seçtiği daire başkanı başkanlık eder. Kurul oyçokluğu ile karar verir.",
+      "explanation": "Genel Kurul her takvim yılı başında Kurula bir daire başkanı, bir üye, bir tetkik hakimi ve bir Danıştay savcısı seçer. Aynı şekilde birer yedek de seçilir. Genel Sekreter Kurulun tabii üyesidir.",
+      "articleRefs": [
+        "21"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Danıştay Disiplin Kuruluna seçilecek tetkik hakimi hangi sınıfa ayrılmış olmalıdır?",
+      "back": "Birinci sınıfa ayrılmış olmalıdır. Seçimi Genel Kurul her takvim yılı başında yapar.",
+      "explanation": "Tetkik hakiminin yanında Kurulda Genel Kurulun seçtiği bir daire başkanı, bir üye ve bir Danıştay savcısı da yer alır.",
+      "articleRefs": [
+        "21"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Danıştay Başkanlığı boşalırsa Danıştay Başkanına kim vekalet eder?",
+      "back": "Başkanvekillerinden en kıdemlisi vekalet eder.",
+      "explanation": "Aynı kural, Danıştay Başkanının izinli veya özürlü olduğu hallerde de uygulanır.",
+      "articleRefs": [
+        "22"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Danıştay'da daire başkanına, Danıştay Başkanının seçeceği bir üye mi vekalet eder?",
+      "back": "Hayır. Dairelerde başkana o dairenin en kıdemli üyesi vekalet eder. Danıştay Başkanının seçimi Başsavcıya vekalet için öngörülmüştür.",
+      "explanation": "Başsavcıya vekalet edecek kişiyi Danıştay Başkanı seçer. Bu kişi, Başsavcılığa seçilme niteliğine sahip bir Danıştay üyesi olmalıdır.",
+      "articleRefs": [
+        "22"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Danıştayın temyiz mercii olarak görevi hangi denetimle sınırlıdır?",
+      "back": "Bir hukuk kuralının uygulanmaması veya yanlış uygulanması şeklinde ortaya çıkan hukuka aykırılıkların denetimiyle sınırlıdır.",
+      "explanation": "Danıştay, idare ve vergi mahkemelerinden verilen kararlara karşı temyiz istemlerini inceler ve karara bağlar. İlk derece mahkemesi olarak Danıştayda görülen davalarla ilgili kararlara karşı temyiz istemleri de bu kapsamdadır.",
+      "articleRefs": [
+        "23"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Bir bakanlığın çıkardığı her düzenleyici işleme karşı açılan dava, Danıştay'da ilk derece mahkemesi olarak görülür mü?",
+      "back": "Hayır. Bakanlıkların düzenleyici işlemlerinden yalnız ülke çapında uygulanacak olanlar Danıştay'da ilk derecede görülür. Aynı kayıt kamu kuruluşları ve kamu kurumu niteliğindeki meslek kuruluşları için de geçerlidir.",
+      "explanation": "Danıştay ilk derece mahkemesi olarak şu işlemlere karşı açılan iptal ve tam yargı davalarını da karara bağlar: Cumhurbaşkanı kararları ve Cumhurbaşkanınca çıkarılan, Cumhurbaşkanlığı kararnameleri dışındaki düzenleyici işlemler.",
+      "articleRefs": [
+        "24"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Belediyelerin ve il özel idarelerinin seçimle gelen organlarının organlık sıfatını kaybetmesine ilişkin istemleri kim karara bağlar?",
+      "back": "Danıştay bu istemleri inceler ve karara bağlar.",
+      "articleRefs": [
+        "24"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Danıştay'da idari uyuşmazlıklar ve davalar hangi numaralı dairelerde incelenir?",
+      "back": "İkinci daireden Onuncu daireye kadar olan dairelerde incelenir. İdari ve vergi dava daireleri kurulları da bu uyuşmazlıkları inceler ve karara bağlar.",
+      "explanation": "Bir daire başka bir alanda görevlendirilirse, o dairenin başkanı ve üyeleri dairenin görevlendirildiği işlere bakan dava dairesi genel kuruluna katılır.",
+      "articleRefs": [
+        "26"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "İş yükü bakımından zorunluluk doğarsa, bir vergi dava dairesini idari dava dairesi olarak kim görevlendirebilir?",
+      "back": "Başkanlık Kurulu, dairenin görev alanını değiştirerek bu görevlendirmeyi yapabilir.",
+      "explanation": "Görevlendirilen dairedeki dosyaların hangi daireye ve nasıl devredileceğini de Başkanlık Kurulu kararıyla belirler. Bu kararlar Resmî Gazete'de yayımlanır ve yayımını izleyen ay başından itibaren uygulanır.",
+      "articleRefs": [
+        "26"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Danıştay'da hangi dava daireleri vergi dava dairesi olarak görev yapar?",
+      "back": "Üçüncü, Dördüncü, Yedinci ve Dokuzuncu daireler vergi dava dairesidir. Diğer dava daireleri idari dava dairesi olarak görev yapar.",
+      "explanation": "İdari ve vergi dava daireleri kendi aralarında işbölümü esasına göre çalışır. Özel kanunlarda başkaca hüküm yoksa bu işbölümünü Başkanlık Kurulu belirler.",
+      "articleRefs": [
+        "27"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Zarar idari eylemden kaynaklanmışsa, tam yargı davalarında daireler arasındaki işbölümü neye göre belirlenir?",
+      "back": "Hizmetin niteliğine göre belirlenir.",
+      "explanation": "Zarar idari işlemden doğmuşsa işbölümü, o işlemden doğan uyuşmazlığı çözmekle görevli daireye göre belirlenir. İptal davalarında ve idari sözleşmelerden doğan davalarda ise uyuşmazlığın kaynaklandığı mevzuat esas alınır.",
+      "articleRefs": [
+        "27"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Danıştay idari dava dairelerinin ilk derece mahkemesi olarak verdiği kararları hangi kurul temyizen inceler?",
+      "back": "İdari Dava Daireleri Kurulu.",
+      "explanation": "Bu Kurul, idari dava dairelerinin ilk derece mahkemesi olarak verdiği kararları da temyizen inceler. Vergi mahkemelerinin ısrar kararlarını ve vergi dava dairelerinin ilk derece kararlarını ise Vergi Dava Daireleri Kurulu inceler.",
+      "articleRefs": [
+        "38"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "İçtihatları Birleştirme Kurulu işi kimin düşüncesini aldıktan sonra inceler?",
+      "back": "Başsavcının düşüncesini aldıktan sonra inceler. İş Kurula Danıştay Başkanının havalesi üzerine gelir.",
+      "explanation": "Kurul, dava dairelerinin veya idari ve vergi dava daireleri kurullarının kararları arasında aykırılık ya da uyuşmazlık görüldüğünde işi inceler. Birleştirilmiş içtihatların değiştirilmesi gerekli görüldüğünde de aynı yol izlenir. Kurul, lüzumlu görürse birleştirme ya da değiştirme kararı verir.",
+      "articleRefs": [
+        "39"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "İçtihatların birleştirilmesini hangi makam ve kurullar isteyebilir?",
+      "back": "Danıştay Başkanı, konu ile ilgili daireler, idari ve vergi dava daireleri kurulları veya Başsavcı isteyebilir.",
+      "explanation": "Aykırı kararlarla ilgili kişiler de içtihatların birleştirilmesi için Danıştay Başkanlığına başvurabilir. Birleştirilmiş içtihatların değiştirilmesini de aynı makam ve kurullar isteyebilir.",
+      "articleRefs": [
+        "40"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "İçtihatların birleştirilmesi hakkındaki kararlar, gönderildikleri tarihten itibaren ne kadar sürede Resmi Gazete'de yayımlanır?",
+      "back": "Bir ay içerisinde yayımlanır.",
+      "explanation": "Aynı süre, birleştirilmiş içtihatların değiştirilmesi hakkındaki kararlar için de geçerlidir.",
+      "articleRefs": [
+        "40"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "İçtihadı birleştirme kararlarına yalnız Danıştay daire ve kurulları mı uymak zorundadır?",
+      "back": "Hayır. Danıştay daire ve kurullarının yanında idari mahkemeler ve idare de bu kararlara uymak zorundadır.",
+      "explanation": "Uyma zorunluluğu, içtihatların değiştirilmesi hakkındaki kararlar için de geçerlidir.",
+      "articleRefs": [
+        "40"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "İdari işlere ilişkin idari uyuşmazlıklar ve görevler Danıştay'da hangi daire ve kurulda görülür?",
+      "back": "Birinci Daire ile İdari İşler Kurulunda görülür.",
+      "articleRefs": [
+        "41"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Danıştay Kanununda öngörülen içtüzük ve yönetmelikleri kim kabul eder?",
+      "back": "Danıştay Genel Kurulu kabul eder.",
+      "explanation": "Genel Kurul ayrıca bu Kanunla ve diğer kanunlarla kendisine verilen seçim görevlerini ve diğer görevleri yapar.",
+      "articleRefs": [
+        "45"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Devletin güvenliğine ilişkin bilgi ve belgeleri vermeyen ilgili makamın gerekçe bildirmesi gerekir mi?",
+      "back": "Evet. İlgili makam bu bilgi ve belgeleri, gerekçesini bildirmek suretiyle vermeyebilir.",
+      "explanation": "Kural, Devletin yüksek menfaatlerine ilişkin bilgi ve belgeler için de uygulanır. Devletin güvenliği ve yüksek menfaatleriyle birlikte yabancı devletlere de ilişkin olanlar da bu kapsamdadır. Bunların dışında, incelenen işler hakkında lüzum görülen her türlü evrak getirtilebilir; yetkili memur ve uzmanlar da çağırılabilir.",
+      "articleRefs": [
+        "49"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Göreve ve usule ait meselede azınlıkta kalan üye, işin esası hakkında oy kullanmaktan kaçınabilir mi?",
+      "back": "Hayır. Göreve ve usule ait meselelerde azınlıkta kalanlar, işin esası hakkında oylarını kullanmak zorundadır.",
+      "explanation": "Görüşmeleri Başkan idare eder ve oya sunulacak hususları Başkan belirler.",
+      "articleRefs": [
+        "50"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Danıştay daireleri arasında çıkan görev uyuşmazlıklarını hangi kurul karara bağlar?",
+      "back": "Başkanlar Kurulu karara bağlar.",
+      "explanation": "Başkanlar Kurulu, Danıştay Başkanının davetiyle toplanır. Ayrı yargı çevrelerindeki idare ve vergi mahkemeleri arasında görev ve yetkiye ilişkin uyuşmazlıklarda ve bağlantılı davalarda merci tayinini de bu Kurul yapar. Başkanlar Kurulunun kararları kesindir.",
+      "articleRefs": [
+        "52"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Danıştay Başkanlık Kurulunun kararlarına karşı Başkanlar Kuruluna ne kadar sürede itiraz edilebilir?",
+      "back": "Yedi gün içinde itiraz edilebilir. İtirazı ilgililer yapar.",
+      "explanation": "Başkanlar Kurulu, Başkanlık Kurulu kararlarını aynen onaylayabilir ya da değiştirerek onaylayabilir.",
+      "articleRefs": [
+        "52/A"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Başkanlık Kurulu kararına itiraz üzerine verilen karar aleyhine başka bir yargı merciine başvurulabilir mi?",
+      "back": "Hayır. İtiraz üzerine verilen kararlar kesindir; aleyhine başka bir yargı merciine başvurulamaz.",
+      "explanation": "Başkanlık Kurulu kararlarına karşı tek yol, ilgililerin Başkanlar Kuruluna yedi gün içinde itiraz etmesidir. Başkanlık Kurulu; daireler arasındaki iş bölümünü belirlemek ve tetkik hâkimlerinin çalışacakları daireleri belli etmek gibi görevler yürütür.",
+      "articleRefs": [
+        "52/A"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Danıştay Başkanı hangi kurullara başkanlık eder?",
+      "back": "Danıştay Genel Kurulu, İçtihatları Birleştirme Kurulu, İdari İşler Kurulu, idari ve vergi dava daireleri kurulları, Yüksek Disiplin Kurulu, Başkanlar Kurulu ve Başkanlık Kurulu.",
+      "explanation": "Danıştay Başkanı, Danıştayın genel işleyişinden sorumludur. Gerekirse ilgili daire başkanları veya Başkanlar Kurulu ile istişare ederek lüzumlu idari tedbirleri alır.",
+      "articleRefs": [
+        "55"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Danıştay'da hangi idari birimler Genel Sekreterin yönetim ve denetimi altındadır?",
+      "back": "Dairelere ve Başsavcılığa bağlı olanlar dışındaki müdürlükler ve diğer idari birimler.",
+      "explanation": "Genel Sekreter, bu Kanunun görevli kıldığı işleri ve Danıştay Başkanının vereceği idare ve yazı işlerini yürütür.",
+      "articleRefs": [
+        "59"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Danıştay savcıları, kendilerine havale olunan dava dosyası hakkındaki esas düşüncelerini ne kadar sürede verir?",
+      "back": "Bir ay içinde, gerekçeli ve yazılı olarak verirler.",
+      "explanation": "Söz konusu dosyalar, ilk derece mahkemesi sıfatıyla Danıştayda görülen ve savcılara havale olunan davalardır; savcılar bunları Başsavcı adına inceler. Süre geçirilirse savcılar durumu sebepleriyle birlikte Başsavcıya bildirir.",
+      "articleRefs": [
+        "61"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Danıştay savcıları esas hakkındaki düşüncelerini sözlü olarak da açıklayabilir mi?",
+      "back": "Evet. Dava dairelerince gerekli görülürse, önceden haber verilmek suretiyle düşüncelerini sözlü olarak da açıklarlar.",
+      "explanation": "Savcılar ilgili yerlerden Danıştay Başkanlığı aracılığı ile her türlü bilgiyi isteyebilir ve işlem dosyalarını getirtebilir.",
+      "articleRefs": [
+        "61"
+      ],
+      "counterNumbers": []
+    }
+  ]
+}

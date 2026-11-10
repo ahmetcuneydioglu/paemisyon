@@ -1,0 +1,315 @@
+{
+  "deck": {
+    "topicId": "8b68257c-bd1e-4a44-bb49-830ee4d8e4c9",
+    "legislationSlug": "657-sayili-devlet-memurlari-kanunu",
+    "sourceLabel": "AI bilgi kartı — 657 Sayılı Devlet Memurları Kanunu md 73, 74, 76–91",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: resmî madde metni + çıkmış sorular)"
+  },
+  "cards": [
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Karşılıklı yer değiştirme suretiyle atanmayı hangi memurlar isteyebilir?",
+      "back": "Aynı kurumun başka başka yerlerde bulunan aynı sınıftaki memurları. İsteğin yerine getirilmesi atamaya yetkili amirlerin uygun bulmasına bağlıdır.",
+      "explanation": "Şartlar birlikte aranır: aynı kurum, farklı yerler, aynı sınıf. Memurlar kendi aralarında anlaşsa bile son söz atamaya yetkili amirlerindir.",
+      "articleRefs": [
+        "73"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Memurun bu Kanuna tabi başka bir kuruma kazanılmış hak derecesi üzerinden nakli neye bağlıdır?",
+      "back": "Kurumların muvafakatına. Memur, bulunduğu sınıftan ya da öğrenim durumu itibarıyla girebileceği sınıftan bir kadroya nakledilebilir.",
+      "explanation": "Nakil, kazanılmış hak derecesi üzerinden ya da 68 inci maddedeki esaslar çerçevesinde derece yükselmesi suretiyle yapılabilir. Kazanılmış hak derecesinin altındaki bir dereceye atanmada ayrıca memurun isteği aranır. Atanacağı kadro derecesiyle kazanılmış hak derecesi arasındaki fark da 3 dereceden çok olamaz.",
+      "articleRefs": [
+        "74"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Memur, kendi kurumunda isteğiyle kazanılmış hak derecesinin en çok kaç derece altındaki bir kadroya atanabilir?",
+      "back": "En çok üç derece altına. Bu atama aynı ya da başka yerlerdeki kadrolara yapılabilir.",
+      "explanation": "Aşağı dereceye atama memurun isteğine bağlıdır. Kurum ise memuru görev ve unvan eşitliği gözetmeden atayabilir. Bunun için memurun kazanılmış hak aylık derecesiyle bulunduğu kadro derecesine eşit ya da 68 inci maddedeki esaslar çerçevesinde daha üst kadrolar söz konusu olmalıdır.",
+      "articleRefs": [
+        "76"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Aşağı dereceye atanan memurun eski derecesine tekrar atanması için 68 inci maddedeki süre kaydı aranır mı?",
+      "back": "Hayır. 68 inci maddede yazılı süre kaydı aranmadan eski derecesine tekrar atanabilir.",
+      "explanation": "Memur isteğiyle kazanılmış hak derecesinin en çok üç derece altına atanabilir. Bu durumdan eski derecesine dönerken bekleme süresini doldurması gerekmez.",
+      "articleRefs": [
+        "76"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Kurumunun muvafakatiyle yabancı bir memleketin resmî kurumunda görev alacak memura en fazla kaç yıl aylıksız izin verilebilir?",
+      "back": "On yıla kadar. İzin ilgili Bakanın onayıyla verilir ve bu onay her üç yılda bir yenilenir.",
+      "explanation": "Aynı on yıllık üst sınır, Cumhurbaşkanınca belirlenen yurtdışındaki kuruluşlar için de geçerlidir. İzin süresince memurun kadro ile ilişkisi devam eder.",
+      "articleRefs": [
+        "77"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Uluslararası kuruluşlarda görev alacak memura verilebilecek aylıksız izin de on yılla mı sınırlıdır?",
+      "back": "Hayır. Uluslararası kuruluşlarda yirmi bir yıla kadar aylıksız izin verilebilir. On yıl sınırı, yabancı memleketlerin resmî kurumları ile Cumhurbaşkanınca belirlenen yurtdışındaki kuruluşlar içindir.",
+      "explanation": "Her iki hâlde de kurumun muvafakati ve ilgili Bakanın onayı gerekir. Bakan onayı her üç yılda bir yenilenir.",
+      "articleRefs": [
+        "77"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Aylıksız izinden görevine dönen memurun yurtdışındaki görevlerde geçen hizmeti derece yükselmesinde nasıl değerlendirilir?",
+      "back": "Her 3 yılı bir derece yükselmesine esas alınır. Her yılı da bir kademe ilerlemesine esas olur.",
+      "explanation": "Bu değerlendirme, bu Kanunun sınav veya seçmeye ilişkin hükümleri dikkate alınarak yapılır. Boş kadro bulunması da şarttır.",
+      "articleRefs": [
+        "77"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Mesleğinde yetiştirilmek üzere dış memlekete gönderilen asli memura verilen ayrılma müsaadesi uzatmayla birlikte en çok ne kadar olabilir?",
+      "back": "İki yıla kadar verilir ve gerekirse en çok bir kat uzatılabilir. Böylece toplam süre en çok dört yıldır.",
+      "explanation": "Müsaade iki gruba verilebilir: kurumlarınca açılan seçme veya yarışma sınavlarında başarı gösterenler ve dış burslara dayanılarak gönderilenler. Amaç yetiştirilmek, eğitilmek, bilgilerini artırmak veya staj yapmaktır.",
+      "articleRefs": [
+        "78"
+      ],
+      "derivedNumbers": [
+        {
+          "value": 4,
+          "expr": "2 * 2",
+          "refs": [
+            "78"
+          ],
+          "note": "iki yıllık sürenin en çok bir kat uzatılması"
+        }
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "78 inci maddeye göre dış memlekete gönderilen memur, kanuni kesintilerden sonra kalan net aylık ve ödemelerinin yüzde kaçını kurumundan alır?",
+      "back": "% 60'ını alır. Şahsen özel burs sağlayıp kurumunca maaşsız izin verilmesi uygun görülenler bu ödemenin dışındadır.",
+      "explanation": "Bu kişiler kadrolarında bırakılır. Kademe ilerlemesi, emeklilik ve diğer bütün hak ve yükümlülükleri devam eder.",
+      "articleRefs": [
+        "79"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Yetiştirilmek üzere dış memlekete gönderilen memur, izin bitiminde kaç gün içinde görevine dönmek zorundadır?",
+      "back": "15 gün içinde. Yol süresi bu süreye dahil değildir.",
+      "explanation": "Kadrolarında bırakılan bu memurların kademe ilerlemesi yurt dışında geçen süre boyunca devam eder.",
+      "articleRefs": [
+        "79"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Dış memlekette yetiştirilme süresinin bitiminde görevine başlamayan memurun durumu nedir?",
+      "back": "Çekilmiş sayılır. Aylık ve yol giderleri dahil, kurumunun kendisi için yaptığı bütün masrafları iki kat olarak ödemeye mecburdur.",
+      "explanation": "Göreve başlayıp mecburi hizmetini bitirmeden ayrılan da ödeme yapar. Bir ceza sebebiyle memurluktan çıkarılan da aynı yükümlülük altındadır. Bunlar mecburi hizmetin eksik kalan kısmıyla orantılı miktarı iki kat ödemek zorundadır.",
+      "articleRefs": [
+        "79"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "78 ve 79 uncu maddelerde yazılı memurların ayırma ve seçilme usulü hangi düzenlemeyle belirlenir?",
+      "back": "Kanunun 2 nci maddesi gereğince çıkarılacak bir yönetmelikle düzenlenir.",
+      "explanation": "Aynı yönetmelik başka konuları da düzenler: bu memurların çalışmalarının nasıl izlenip denetleneceği, haklarındaki disiplin kovuşturmasının nasıl yapılacağı ve geri çağrılmalarını gerektiren hâller. MİT mensupları hakkındaki esaslar ise Cumhurbaşkanınca onaylanacak bir talimatla belirtilir.",
+      "articleRefs": [
+        "80"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Her yıl yurt dışına gönderilebilecek Devlet memurlarının kurumlar itibarıyla sayıları yönetmelikle mi belirlenir?",
+      "back": "Hayır. Bu sayılar Cumhurbaşkanı kararı ile belirlenir. Yönetmelik ise ayırma, seçilme, izleme, disiplin kovuşturması ve geri çağırma usullerini düzenler.",
+      "explanation": "Şahsen özel burs sağlayan ve bu burstan yararlanmak için kendilerine maaşsız izin verilenler bu sayının dışında tutulur.",
+      "articleRefs": [
+        "80"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Hazarda veya seferde muvazzaflık hizmeti dışında silah altına alınan Devlet memuru, silah altında kaldığı sürece hangi durumda sayılır?",
+      "back": "İzinli sayılır.",
+      "explanation": "Kural, muvazzaflık hizmeti dışındaki silah altına alınmalar içindir. Hazarda da seferde de uygulanır.",
+      "articleRefs": [
+        "81"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Muvazzaf askerlik için silah altına alınan memur, memuriyete dönmek isterse kaç gün içinde kurumuna başvurmalıdır?",
+      "back": "30 gün içinde. Bu süre terhis tarihinden itibaren işler.",
+      "explanation": "Başvuru üzerine kurumun da memuru göreve başlatmak için uyması gereken azami bir süre vardır. O süre başvurma tarihinden itibaren işler.",
+      "articleRefs": [
+        "83"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Kurumun, askerlik dönüşü başvuran memuru göreve başlatma süresi terhis tarihinden mi işler?",
+      "back": "Hayır. Kurum, memuru başvurma tarihinden itibaren azami 30 gün içinde göreve başlatmak zorundadır. Terhis tarihinden işleyen 30 gün, memurun başvuru süresidir.",
+      "explanation": "İki süre de 30 gündür; aralarındaki fark başlangıç anındadır. Memurun süresi terhisle, kurumun süresi başvuruyla başlar.",
+      "articleRefs": [
+        "83"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Askerlik öncesi kademe ilerlemeleri ile askerlikte geçen sürenin toplamının hangi süreyi aşan kısmı üst derecede değerlendirilir?",
+      "back": "3 yılı aşan kısmı. Memur usulü dairesinde üst dereceye terfi ettiğinde bu kısım o derecede kademe ilerlemesi yapılarak değerlendirilir.",
+      "explanation": "Muvazzaf askerlikte geçen süre önce, memurun askerliğe ayrılırken kazanmış olduğu derecede kademe ilerlemesi yapılarak değerlendirilir. Askerlik öncesinde işgal ettiği kadroda kazandığı kademe ilerlemeleri de ayrıca göz önünde bulundurulur.",
+      "articleRefs": [
+        "83"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Muvazzaf askerlikten sonra memurluğa atananların askerlikte geçen süreleri ne zaman kademe ilerlemesinde değerlendirilir?",
+      "back": "Asaletlerinin tasdikinden sonra. Bu kişiler önce adaylık esaslarına tabi olur.",
+      "explanation": "Askerlikte geçen süre derece yükseltilmesinde de değerlendirilir. Bunun için memurun sınav veya seçmeye tabi tutulması gerekir.",
+      "articleRefs": [
+        "84"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Talim ve manevra maksadıyla silah altına alınan memurun derece yükselmesi gerektiğinde, silah altındaki süresi üst derecenin kademelerinde hangi şartlarla dikkate alınır?",
+      "back": "Terhisten sonra açık kadro bulunması ve memurun sınav veya seçmede başarı göstermesi şartıyla.",
+      "explanation": "Muvazzaflık hizmeti dışında silah altına alınan memurların kademe ilerlemeleri bu süre içinde devam eder. Bu, talim ve manevra maksadıyla ya da seferde silah altına alınanların hepsi için geçerlidir.",
+      "articleRefs": [
+        "85"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Mahallî idarelerde tabiplik boş kadrosuna açıktan vekil atanması için bakanlık izni gerekir mi?",
+      "back": "Hayır. Mahallî idarelerde izin şartı aranmaz. Diğer kurumlarda bu boş kadrolara açıktan vekil ancak Hazine ve Maliye Bakanlığının (metinde: Maliye Bakanlığı) izniyle atanabilir.",
+      "explanation": "Bu kapsamdaki boş kadrolar şunlardır: ilkokul öğretmenliği (yaz tatili hariç), tabiplik, diş tabipliği, eczacılık, köy ve beldelerdeki ebelik ve hemşirelik, mühendis ve mimarlık, veterinerlik, vaizlik, Kur'an kursu öğreticiliği, imam-hatiplik ve müezzin-kayyımlık. Bir görev memurlar eliyle vekâleten yürütülüyorsa aylıksız vekâlet asıldır.",
+      "articleRefs": [
+        "86"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Açıktan vekil olarak atanan kişiye yıllık izin hangi ölçüyle verilir?",
+      "back": "Çalıştığı her ay için iki gün verilir; toplam bir yılda yirmi günü geçemez.",
+      "explanation": "Bu iznin kullanımında, bir sonraki yıla devredilme hâli dışında, Devlet memurları için öngörülen hükümler uygulanır.",
+      "articleRefs": [
+        "86"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "87 nci maddede sayılan kurumlarda memura ikinci görev verilmesi yasağının yanında, bu kurumların memura yönelik hangi işlemi yasaktır?",
+      "back": "Bu kurumlardan memura her ne ad ile olursa olsun para ödenemez ve yarar sağlanamaz.",
+      "explanation": "Sayılan kurumlar arasında şunlar bulunur: bu Kanuna tabi kurumlar, sermayesinin tamamı Devlet tarafından verilerek kurulan iktisadi kurumlar, sermayesinin yarısından fazlası Devlete ait bankalar ve özel kanunlarla veya Cumhurbaşkanlığı kararnameleriyle kurulan banka ve kuruluşlar.",
+      "articleRefs": [
+        "87"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Memura meslekî bilgisiyle ilgili olarak 87 nci maddedeki kurumların tabiplik ya da avukatlık hizmetleri hangi şartlarla ikinci görev olarak verilebilir?",
+      "back": "Hizmet olanaklarının elverişli bulunması ve atamaya yetkili amir tarafından uygun görülmesi şartıyla.",
+      "explanation": "Bu kapsamdaki görevler arasında 87 nci maddede yazılı kurumların tabiplikleri, diş tabiplikleri, eczacılıkları, kimyagerlikleri, veterinerlikleri ve avukatlıkları bulunur. Adli Tıp Kurumu Uzmanlıkları da bu kapsamdadır.",
+      "articleRefs": [
+        "88"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Öğretmenlere asıl görevlerinin yanında ikinci görev olarak hangi görevler yaptırılabilir?",
+      "back": "Okul ve enstitü müdürlüğü, başyardımcılığı ve yardımcılığı görevleri.",
+      "explanation": "Aynı fıkra sağlık meslekleri için de ikinci görev öngörür. Tabiplere sağlık müdürlüğü ve baştabiplik gibi görevler yaptırılabilir. Diş hekimleri ile veterinerlere meslekleriyle ilgili baştabiplik verilebilir. Veteriner, diş hekimi ve eczacılara da baştabip yardımcılığı yaptırılabilir.",
+      "articleRefs": [
+        "88"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Ücretle okutulacak ders saatlerinin sayısı ve ders görevi alacakların nitelikleri kimin kararıyla tespit edilir?",
+      "back": "Cumhurbaşkanı kararı ile.",
+      "explanation": "Ücretli ek ders görevi, öğretmen veya öğretim üyesi bulunmaması hâlinde verilebilir. Görev öğretmenlere, öğretim üyelerine, diğer memurlara ya da açıktan atanacaklara verilebilir. Bu kural eğitim ve öğretim kurumları, üniversite ve akademiler (askerî akademiler dahil), okul, kurs ve yaygın eğitim yapan kurumlar için geçerlidir.",
+      "articleRefs": [
+        "89"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Bir Devlet memuruna vekâlet görevi, ikinci görev ve ders görevlerinden kaçı verilebilir?",
+      "back": "Ancak birisi verilebilir. Bir memurun üstünde birden çok ücretli vekâlet görevi veya ikinci görev de bulunamaz.",
+      "explanation": "Öğretmenlerin idari görevi bu sınırlamanın dışındadır.",
+      "articleRefs": [
+        "90"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Kadrosu kaldırılan memur, kendi kurumunda niteliklerine uygun bir kadroya en geç ne kadar süre içinde atanır?",
+      "back": "En geç altı ay içinde.",
+      "articleRefs": [
+        "91"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Kadrosu kaldırılan memur, yeni bir kadroya atanıncaya kadar hangi malî haklardan yararlanır?",
+      "back": "Eski kadrosuna ait malî haklardan ve sosyal yardımlardan yararlanmaya devam eder. Bu sürede kurumunda niteliklerine uygun işlerde çalıştırılır.",
+      "explanation": "Yeni kadrodaki net ödemeler eski kadrodakinden az olabilir. Bu durumda aradaki fark, farklılık giderilinceye kadar tazminat olarak ödenir ve herhangi bir vergi ya da kesintiye tabi tutulmaz.",
+      "articleRefs": [
+        "91"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Kadrosu kaldırılan memurun fark tazminatı hesaplanırken nöbet ücreti en son aylık tutarına eklenir mi?",
+      "back": "Hayır. Fazla çalışma ücreti, fiilen yapılan ders karşılığı ek ders ücreti ve nöbet ücreti gibi ilave çalışma karşılığı ödemeler aylık tutarına eklenmez.",
+      "explanation": "Aylık mutat olarak yapılmayıp belirli bir dönemi kapsayan ödemeler ise hesaba katılır. Bunların net toplamı yılı içinde çalışılan aylara bölünür ve bulunan tutar en son aylık tutarına ilave edilir.",
+      "articleRefs": [
+        "91"
+      ],
+      "counterNumbers": []
+    }
+  ]
+}

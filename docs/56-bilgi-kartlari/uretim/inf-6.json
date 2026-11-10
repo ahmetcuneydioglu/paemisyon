@@ -1,0 +1,277 @@
+{
+  "deck": {
+    "topicId": "3a7fb703-175b-4a01-a217-a00766c51d07",
+    "legislationSlug": "5275-ceza-ve-guvenlik-tedbirlerinin-infazi-hakkinda-kanun",
+    "sourceLabel": "AI bilgi kartı — 5275 Ceza ve Güvenlik Tedbirlerinin İnfazı Hakkında Kanun md 60–68",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: resmî madde metni + çıkmış sorular)"
+  },
+  "cards": [
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Ceza infaz kurumunda kültür ve sanat programlarını kim düzenler?",
+      "back": "Kurum en üst amiri düzenler; Adalet Bakanlığınca belirlenen esaslara göre.",
+      "explanation": "Devletin kültür ve sanat işleriyle görevli kuruluşları bu maksatla gerekli yardımları yapar. Programlar, olanaklar elverdiğince, kültürün ve sanatın çeşitli dallarını temsil edecek biçimde hazırlanır.",
+      "articleRefs": [
+        "60"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Ceza infaz kurumlarındaki kültür ve sanat programlarının temel hedefi nedir?",
+      "back": "Hükümlülerin ifade yeteneklerini geliştirmelerini ve bilgilerini artırmalarını sağlamak.",
+      "explanation": "Programlar kurumlarda olanaklar elverdiğince hazırlanır. Hükümlülerin bu programlara katılma usulleri de ayrıca düzenlenir.",
+      "articleRefs": [
+        "60"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Hükümlülerin ifade özgürlüğü çerçevesinde gerçekleştirebilecekleri yayın etkinlikleri neye bağlıdır?",
+      "back": "Kurumda çalışma esaslarını düzenleyen hükümlere ve bu husustaki koşullara bağlıdır.",
+      "explanation": "Hükümlülerin yayın etkinlikleri, ifade özgürlüğü çerçevesinde ele alınır. Bu etkinlikler, kurumdaki çalışma esaslarına ilişkin hükümlere ve bu konudaki koşullara bağlıdır.",
+      "articleRefs": [
+        "60"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Ceza infaz kurumunda kütüphane mi yoksa kitaplık mı oluşturulacağı neye göre belirlenir?",
+      "back": "Kurumun büyüklüğüne göre belirlenir.",
+      "explanation": "Kütüphanelerde ve kitaplıklarda verilen derslere kaynaklık edecek kitaplar bulunur. Bunların yanı sıra, olanaklar ölçüsünde, hükümlülerin boş zamanlarını değerlendirmelerini, okuma alışkanlığı edinmelerini ve kültür bakımından ufuklarını geliştirmelerini sağlayacak kitaplar da bulundurulur.",
+      "articleRefs": [
+        "61"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Hükümlü, kurum kütüphanesi dışında hangi kütüphanelerdeki yayınlardan yararlandırılabilir?",
+      "back": "Kamu kurum ve kuruluşlarına bağlı kütüphanelerdeki yayınlardan yararlandırılabilir; bu yayınların md 62'deki şartları taşıması gerekir.",
+      "explanation": "Hükümlüye kurum kütüphanesinden yararlanma imkânı verilir. Kamu kütüphanelerindeki yayınlardan ise hükümlü yararlandırılabilir.",
+      "articleRefs": [
+        "61"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Kütüphane hizmeti hükümlüye yalnız kurum kütüphanesi ya da kitaplığı üzerinden mi verilebilir?",
+      "back": "Hayır. Bu hizmet gezici kitaplıklarla da yerine getirilebilir.",
+      "explanation": "Kurumun büyüklüğüne göre kütüphane veya kitaplık oluşturulur. Hükümlüye kurum kütüphanesinden yararlanma imkânı verilir. Hizmet ayrıca gezici kitaplıklarla da sunulabilir.",
+      "articleRefs": [
+        "61"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Hükümlü süreli ve süresiz yayınlardan hangi koşulla yararlanır?",
+      "back": "Yayın mahkemelerce yasaklanmamış olmalıdır; hükümlü yayının bedelini öder.",
+      "explanation": "Bazı yayınlar hükümlülere ücretsiz ve serbestçe verilir. Bunlar resmî kurumlar, üniversiteler, kamu kurumu niteliğindeki meslek kuruluşları ile vergi muafiyeti tanınan vakıflar ve kamu yararına çalışan derneklerin çıkardığı gazete, kitap ve basılı yayınlardır. Eğitim ve öğretimine devam eden hükümlülerin ders kitapları denetime tâbi tutulamaz.",
+      "articleRefs": [
+        "62"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Resmî ilan ve reklamı geçici süreyle kesilmiş bir gazete ceza infaz kurumuna kabul edilebilir mi?",
+      "back": "Evet. İlan ve reklamın geçici süreyle kesilmesi hâli yasağın dışındadır. Yasak, Basın İlân Kurumu aracılığıyla resmî ilan ve reklam yayınlama hakkı bulunmayan gazeteler içindir.",
+      "explanation": "Kurum disiplinini, düzenini veya güvenliğini bozan ya da tehlikeye düşüren yayın hükümlüye yine verilmez. İyileştirme amacına ulaşmayı zorlaştıran ya da müstehcen haber, yazı, fotoğraf ve yorum içeren yayın da verilmez.",
+      "articleRefs": [
+        "62"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Yabancı dilde yayımlanmış gazete ve dergilerin ceza infaz kurumuna kabulünde kim yetkilidir?",
+      "back": "Adalet Bakanlığı yetkilidir.",
+      "explanation": "Bazı yayınlar hiçbir durumda hükümlüye verilmez. Bunlar kurum disiplinini, düzenini veya güvenliğini bozan ya da tehlikeye düşüren, hükümlülerin iyileştirilmesi amacına ulaşmayı zorlaştıran ya da müstehcen haber, yazı, fotoğraf ve yorumları kapsayan yayınlardır.",
+      "articleRefs": [
+        "62"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Tehlikeli hâli bulunan hükümlü kaç kişilik odalarda barındırılabilir?",
+      "back": "Ancak bir veya üç kişilik odalarda barındırılabilir.",
+      "explanation": "Diğer hükümlülerin kalacağı odalardaki kişi sayısını cezaevi yönetimi belirler. Yönetim bunu yaparken kurumun fizikî yapısını, kapasite durumunu ve güvenlik gereklerini göz önüne alır.",
+      "articleRefs": [
+        "63"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Tehlikeli hâli bulunmayan hükümlülerin kalacağı odalardaki kişi sayısını kim belirler?",
+      "back": "Cezaevi yönetimi belirler. Bunu yaparken kurumun fizikî yapısını, kapasite durumunu ve güvenlik gereklerini göz önüne alır.",
+      "explanation": "Oda ve kısımlarda, iklim koşulları göz önüne alınarak yeterli yer, ışık, ısınma, havalandırma ve hijyen sağlanır. Her hükümlüye yöresel iklime uygun yatak ve yeterli sayıda yatak takımı verilir.",
+      "articleRefs": [
+        "63"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Ceza infaz kurumunda hangi grupların bir araya gelmesine ve bağlantı kurmasına izin verilmez?",
+      "back": "Kadınlarla erkeklerin, hükümlülerle tutukluların, çocuklarla yetişkinlerin ve örgüt veya çıkar amaçlı örgüt suçlularıyla terör suçlularının bir araya gelmesine izin verilmez. Kanunda sayılan hâller bunun dışındadır.",
+      "explanation": "Yasak hem bir araya gelmeyi hem de bağlantı kurmayı kapsar. Ayrık tutulan hâller yalnız Kanunda sayılanlardır.",
+      "articleRefs": [
+        "63"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Hükümlülerin giysileri hangi üniformalara benzer olamaz?",
+      "back": "İç ve dış güvenlik görevlilerinin giymekte olduğu üniformalara şekil ve renk bakımından benzeyemez.",
+      "explanation": "Muhtaç hükümlülere, talepleri hâlinde idare tarafından iklime ve sağlığa uygun giysiler verilir.",
+      "articleRefs": [
+        "64"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "İdare her hükümlüye giysi vermek zorunda mıdır?",
+      "back": "Hayır. İdare giysiyi muhtaç hükümlülere ve ancak talepleri hâlinde verir. Verilen giysiler iklime ve sağlığa uygun olur.",
+      "explanation": "Giysi verilmesi için iki şart birlikte aranır: hükümlünün muhtaç olması ve giysiyi talep etmesi. Giysiler, iç ve dış güvenlik görevlilerinin üniformalarına benzer şekil ve renkte olamaz.",
+      "articleRefs": [
+        "64"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Hükümlü annesinin yanında hangi yaş grubundaki çocuklar kalabilir?",
+      "back": "Sıfır-altı yaş grubundaki çocuklar kalabilir; dışarıda korumasına bırakılacak kimsesinin bulunmaması gerekir.",
+      "explanation": "Annesinin yanında kalan çocuklara yaş, durum ve ihtiyaçlarına göre yiyecek ve içecek verilir.",
+      "articleRefs": [
+        "65"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Hükümlü annesinin yanında kalan çocuk kaç yaşını doldurunca çocuk yuvasına veya yetiştirme yurduna yerleştirilebilir?",
+      "back": "Üç yaşını doldurunca yerleştirilebilir; yerleştirme hâkim kararıyla yapılır.",
+      "explanation": "Hükümde 'yerleştirilebilirler' denir; karar hâkime aittir.",
+      "articleRefs": [
+        "65"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Çocuk yuvasına yerleştirilen çocuğun hükümlü annesiyle teması kesilir mi?",
+      "back": "Hayır. Çocuğun annesiyle teması, belirlenecek bir program ve usule göre zaman zaman sağlanır.",
+      "explanation": "Yerleştirme, üç yaşını doldurmuş çocuklar için hâkim kararıyla yapılabilir. Sıfır-altı yaş grubundaki, dışarıda korumasına bırakılacak kimsesi bulunmayan çocuklar ise annelerinin yanında kalabilir.",
+      "articleRefs": [
+        "65"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Kapalı ceza infaz kurumunda hükümlünün ücretli telefonla yaptığı görüşmeye idare ne yapar?",
+      "back": "İdare görüşmeyi dinler ve kayıt altına alır.",
+      "explanation": "Görüşmeler, Cumhurbaşkanınca çıkarılan yönetmelikteki esas ve usullere göre idarenin kontrolündeki ücretli telefonlarla yapılır. Bu hak, tehlikeli hâlde bulunan ve örgüt mensubu hükümlüler bakımından kısıtlanabilir. Açık ceza infaz kurumları ile çocuk eğitimevlerinde hükümlüler ücretli telefonlarla serbestçe görüşebilir.",
+      "articleRefs": [
+        "66"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Hükümlünün eşi ağır hastalandığında hükümlü hangi cihazlardan yararlandırılır?",
+      "back": "Kuruma ait telefon ve faks cihazından derhâl yararlandırılır.",
+      "explanation": "Bu imkân açık ve kapalı ceza infaz kurumlarındaki hükümlüler için geçerlidir. Altsoy, üstsoy, eş ve kardeşlerin ölüm, ağır hastalık, salgın hastalık veya doğal afet hâllerinde tanınır. Görüşmeler tutanakla belgelenir ve tutanaklar özel bir dosyada saklanır.",
+      "articleRefs": [
+        "66"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Açık ceza infaz kurumundaki hükümlü kendi cep telefonunu kullanabilir mi?",
+      "back": "Hayır. Açık ve kapalı ceza infaz kurumlarında ve çocuk eğitimevlerinde hükümlüler araç telefonu, telsiz telefon, cep telefonu ve benzeri iletişim araçlarını bulunduramaz ve kullanamaz.",
+      "explanation": "Açık ceza infaz kurumları ile çocuk eğitimevlerinde hükümlüler ücretli telefonlarla serbestçe görüşebilir. Ancak kendi iletişim araçlarını bulunduramaz ve kullanamaz.",
+      "articleRefs": [
+        "66"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Merkezî yayın sistemi bulunmayan ceza infaz kurumunda hükümlü televizyon ve radyoyu nasıl izler?",
+      "back": "Bağımsız anten kullanılarak izler. Yararlı olmayan yayınların izlenmesini ve dinlenmesini engelleyecek önlemler alınır.",
+      "explanation": "Merkezî yayın sistemi bulunan kurumlarda hükümlü yayınları bu sisteme bağlı olarak izler. Bu haklar, tehlikeli hâlde bulunan veya örgüt mensubu hükümlüler bakımından kısıtlanabilir.",
+      "articleRefs": [
+        "67"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Dışarıdan gelen birinin getirdiği radyo ceza infaz kurumuna alınabilir mi?",
+      "back": "Hayır. Dışarıdan gelenlerin getirdiği radyo, televizyon ve bilgisayarlar, her ne biçimde olursa olsun kuruma alınmaz.",
+      "explanation": "Merkezî yayın sistemi bulunmayan kurumlarda bu cihazlar hükümlü adına kurumca satın alınır. Bedelini hükümlü öder.",
+      "articleRefs": [
+        "67"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Eğitim ve kültürel amaçlı bilgisayarın ceza infaz kurumuna alınmasına hangi hâlde izin verilebilir?",
+      "back": "Adalet Bakanlığı uygun görürse izin verilebilir.",
+      "explanation": "Hükümlü odasında bilgisayar bulunduramaz. Eğitim ve iyileştirme programları gerekli kıldığı takdirde internetten denetim altında yararlanılabilir. Görsel ve işitsel eğitim araçları, kurum yönetimince belirlenen yerlerde kullanılabilir.",
+      "articleRefs": [
+        "67"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Hangi içerikteki mektup, faks ve telgraflar hükümlüye verilmez?",
+      "back": "Kurumun asayiş ve güvenliğini tehlikeye düşüren, görevlileri hedef gösteren, terör ve çıkar amaçlı suç örgütü veya diğer suç örgütleri mensuplarının haberleşmesine neden olan, paniğe yöneltecek yalan ve yanlış bilgileri, tehdit ve hakareti içerenler.",
+      "explanation": "Bu içerikteki bir mektup hükümlü tarafından yazılmışsa gönderilmez. Denetimi mektup okuma komisyonu yapar; komisyon bulunmayan kurumlarda kurumun en üst amiri yapar.",
+      "articleRefs": [
+        "68"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Hükümlünün savunması için avukatına gönderdiği mektup denetlenir mi?",
+      "back": "Hayır. Hükümlünün resmî makamlara ya da savunması için avukatına gönderdiği mektup, faks ve telgraflar denetime tâbi değildir.",
+      "explanation": "Bu iletiler, alıcısı dışındaki kişilerin erişimini engelleyici tüm tedbirler alınarak ulaştırılır. Hükümlünün talebine göre posta yoluyla veya elektronik ortamda gönderilebilir. Mektupların dijital kaydına ve saklanmasına ilişkin hüküm bu iletilere uygulanmaz.",
+      "articleRefs": [
+        "68"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Örgüt suçundan mahkûm hükümlünün kaydedilen ya da saklanan mektupları, soruşturma veya kovuşturmaya konu edilmemişse en geç ne zaman silinir?",
+      "back": "En geç bir yıl sonunda silinir veya imha edilir.",
+      "explanation": "Silme veya imha işlemini Cumhuriyet savcısı denetler. Bu kayıtlar amacı dışında kullanılamaz. Kanunda açıkça belirtilen hâller dışında hiçbir kişi veya kurumla paylaşılamaz.",
+      "articleRefs": [
+        "68"
+      ]
+    }
+  ]
+}

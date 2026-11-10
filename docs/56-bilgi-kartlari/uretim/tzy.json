@@ -1,0 +1,152 @@
+{
+  "deck": {
+    "topicId": "931c3a08-1e30-40ec-bca4-0eb9fb75aa44",
+    "legislationSlug": "teror-ve-terorle-mucadeleden-dogan-zararlarin-karsilanmasi-hakkinda-yonetmelik",
+    "sourceLabel": "AI bilgi kartı — Terör ve Terörle Mücadeleden Doğan Zararların Karşılanması Hakkında Yönetmelik md 2–10, 12, 16, 18, 21, 22, 26",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: resmî madde metni + çıkmış sorular)"
+  },
+  "cards": [
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Zararların karşılanmasına ilişkin bu Yönetmelik hangi kanun maddesi gereğince hazırlanmıştır?",
+      "back": "5233 sayılı Terör ve Terörle Mücadeleden Doğan Zararların Karşılanması Hakkında Kanunun 17 nci maddesi gereğince.",
+      "articleRefs": [
+        "3"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Komisyonun ilk kuruluşunda baro yönetim kurulu, avukat üyenin ismini valiliğin talebi üzerine en geç ne kadar sürede bildirir?",
+      "back": "En geç bir hafta içinde valiliğe bildirir.",
+      "explanation": "Sonraki yıllarda baro, avukat üyenin ismini her yıl Aralık ayının sonuna kadar valiliğe bildirir. Avukat üye görevini yapamaz hâle gelirse baro, valinin bildirimi üzerine en geç bir hafta içinde yeni üye belirler.",
+      "articleRefs": [
+        "6"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Önceki dönem komisyonda görev yapmış eski üyeler yeniden komisyonda görevlendirilebilir mi?",
+      "back": "Evet; eski üyeler yeniden görevlendirilebilir. Başkan ve üyeler her yıl ocak ayının ilk haftasında yeniden belirlenir.",
+      "explanation": "Başka yere atanma, hastalık, kaza, engellilik gibi nedenlerle görevini yapamayacağı anlaşılan ve vali tarafından seçilmiş üyenin görevine vali onayıyla son verilir; yerine vali en geç bir hafta içinde yeni üye tespit eder.",
+      "articleRefs": [
+        "6"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Sulhname tasarısı kabul edilmez ya da kabul edilmemiş sayılırsa komisyon ne düzenler?",
+      "back": "Bir uyuşmazlık tutanağı düzenler ve bir örneğini ilgiliye tebliğ eder.",
+      "articleRefs": [
+        "7"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Yaralanma ve engelli hâle gelme durumlarında başvuru süresinin hesabında hangi süre dikkate alınmaz?",
+      "back": "Yaralının hastaneye kabulünden çıkışına kadar geçen süre.",
+      "explanation": "Zarar görenin başvurusu, olayın öğrenilmesinden itibaren altmış gün içinde ve her hâlde olayın meydana gelmesinden itibaren bir yıl içinde yapılır; bu sürelerden sonraki başvurular kabul edilmez.",
+      "articleRefs": [
+        "8"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Mirasçıların ya da yetkili temsilcilerin yaptığı başvuruda dilekçeye hangi belgeler eklenir?",
+      "back": "Veraset ilâmı ve noterden tasdikli vekâletname.",
+      "explanation": "Dilekçede zarar görenin veya mirasçılarının adı, soyadı, ikametgâh adresi, zararın nev'i, tutarı, gerçekleşme şekli ile gerçekleştiği yer ve tarih belirtilir. Elden yapılan başvurularda başvuru sahibine başvurunun alındığına dair bir belge verilir.",
+      "articleRefs": [
+        "8"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Zarar gören, başvurusunu ilgili valilik yerine bir kaymakamlığa yaparsa başvurusu reddedilir mi?",
+      "back": "Hayır; kaymakamlığa yapılan başvuru ilgili valiliğe gönderilir.",
+      "explanation": "Diğer valiliklere, Türkiye Cumhuriyeti dış temsilciliklerine, diğer bakanlıklar ile kamu kurum ve kuruluşlarına yapılan başvurular da ilgili valiliğe gönderilir. Bu durumda komisyonun altı aylık çalışma süresi, başvurunun ilgili valiliğe ulaşmasından itibaren işler. İlgili valilik, zararın gerçekleştiği veya zarar konusu olayın meydana geldiği il valiliğidir.",
+      "articleRefs": [
+        "8"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Komisyonun nerede, hangi gün ve hangi sıklıkla toplanacağını kim tespit eder?",
+      "back": "Vali; iş yoğunluğuna ve müracaat sayısına göre komisyon başkanının önerisi üzerine tespit eder ve üyelere bildirir.",
+      "explanation": "Komisyonun gündemi ise başkan tarafından tespit edilir.",
+      "articleRefs": [
+        "9"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Memuriyet mahalli dışında keşfe katılan avukat üyenin harcırahı hangi esasa göre belirlenir?",
+      "back": "Birinci dereceden maaş alan Devlet memuruna ödenen harcırah miktarı esas alınır.",
+      "explanation": "Zararların tespiti amacıyla memuriyet mahalli dışında keşfe katılan komisyon üyeleri ile bilirkişilere 6245 sayılı Harcırah Kanununa göre harcırah ödenir. Bu ödemeler damga vergisi hariç herhangi bir vergi ve kesintiye tâbi tutulmaz.",
+      "articleRefs": [
+        "9"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Komisyon, hangi teşkilatlarda çalışanları bilirkişi olarak görevlendiremez?",
+      "back": "Adli ve askeri teşkilat ile kolluk kuvvetlerinde çalışanları; bunların dışındaki kamu kurum ve kuruluşlarının çalışanlarını görevlendirebilir.",
+      "explanation": "Komisyonca görevlendirilen kamu görevlileri öncelikli olarak komisyonun verdiği görevleri yerine getirir. Komisyon gerekli gördüğü uzmanları çalıştırabilir veya bunlardan görüş alabilir.",
+      "articleRefs": [
+        "10"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Zarar Tespit Komisyonunun giderleri hangi bütçeden karşılanır?",
+      "back": "Bakanlık ve/veya il özel idaresi bütçesinden.",
+      "explanation": "Yönetmelikte Bakanlık, İçişleri Bakanlığını ifade eder.",
+      "articleRefs": [
+        "12",
+        "4"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Taşınmaza ilişkin zarar tespitinde hangi esaslar kıyasen uygulanır?",
+      "back": "2942 sayılı Kamulaştırma Kanununun 11 inci maddesinde belirtilen kıymet takdiri esasları.",
+      "explanation": "Zararlar; zarar görenin beyanı, adlî, idarî ve askerî mercilerdeki bilgi ve belgeler, olayın oluş şekli, zarar görenin aldığı tedbirler ve varsa kusur veya ihmali göz önünde tutularak, hakkaniyete ve günün ekonomik koşullarına uygun biçimde komisyon tarafından doğrudan doğruya veya bilirkişi aracılığıyla belirlenir.",
+      "articleRefs": [
+        "16"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Yaralananlara yapılacak nakdî ödemenin üst sınırı nedir?",
+      "back": "(7000) göstergenin memur aylık katsayısıyla çarpımının altı katı. Ödeme, bu temel tutarın (altı katın değil) onda birinin iş ve güce engel olma süresiyle çarpımıyla bulunur.",
+      "explanation": "İş ve güce engel olma süresi doktor veya sağlık kurulu raporuyla belirlenir. Tutarın tespitinde, ödeme yapılmasına ilişkin valinin veya Bakanın onayı tarihinde geçerli gösterge ve katsayı rakamları esas alınır.",
+      "articleRefs": [
+        "21"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Zarar gören kişiye bir özel hukuk tüzel kişisinin yaptığı ödeme sebebiyle Devlete rücu edilebilir mi?",
+      "back": "Hayır; gerçek veya özel hukuk tüzel kişilerinin zarar görene yaptığı ödemeler sebebiyle Devlete rücu edilemez.",
+      "explanation": "Kural, bu Yönetmelik kapsamındaki zararlardan dolayı yapılan ödemeler için geçerlidir.",
+      "articleRefs": [
+        "21"
+      ],
+      "counterNumbers": []
+    }
+  ]
+}

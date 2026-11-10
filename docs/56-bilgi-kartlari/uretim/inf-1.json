@@ -1,0 +1,291 @@
+{
+  "deck": {
+    "topicId": "3a7fb703-175b-4a01-a217-a00766c51d07",
+    "legislationSlug": "5275-ceza-ve-guvenlik-tedbirlerinin-infazi-hakkinda-kanun",
+    "sourceLabel": "AI bilgi kartı — 5275 Ceza ve Güvenlik Tedbirlerinin İnfazı Hakkında Kanun md 1–16",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: resmî madde metni + çıkmış sorular)"
+  },
+  "cards": [
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "İnfaz kuralları hükümlüler arasında hangi yönlerden ayırım yapılmaksızın uygulanır?",
+      "back": "Irk, dil, din, mezhep, milliyet, renk, cinsiyet, doğum, felsefî inanç, millî veya sosyal köken, siyasî veya diğer fikir yahut düşünceler, ekonomik güç ve diğer toplumsal konumlar yönünden.",
+      "explanation": "Kurallar hiçbir kimseye ayrıcalık tanınmaksızın uygulanır. İlke iki yönlüdür: hem ayırım yasağını hem ayrıcalık yasağını kapsar.",
+      "articleRefs": [
+        "2"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Ceza ve güvenlik tedbirlerinin infazında hangi davranışlarda bulunulamaz?",
+      "back": "Zalimane, insanlık dışı, aşağılayıcı ve onur kırıcı davranışlarda bulunulamaz.",
+      "articleRefs": [
+        "2"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Ceza ve güvenlik tedbirlerinin infazıyla ulaşılmak istenen temel amaç öncelikle neyi sağlamaktır?",
+      "back": "Genel ve özel önlemeyi. Bu maksatla hükümlünün yeniden suç işlemesini engelleyici etkenler güçlendirilir.",
+      "explanation": "Temel amacın diğer parçaları şunlardır: toplumu suça karşı korumak, hükümlünün yeniden sosyalleşmesini teşvik etmek, kanunlara, nizamlara ve toplumsal kurallara saygılı, sorumluluk taşıyan bir yaşam biçimine uyumunu kolaylaştırmak.",
+      "articleRefs": [
+        "3"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 1,
+      "front": "Kesinleşmemiş bir mahkûmiyet hükmü infaz edilebilir mi?",
+      "back": "Hayır. Mahkûmiyet hükümleri kesinleşmedikçe infaz olunamaz.",
+      "explanation": "İnfazın koşulu, mahkûmiyet hükmünün kesinleşmiş olmasıdır.",
+      "articleRefs": [
+        "4"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Kesinleşen hükme göre cezanın infazını kim izler ve denetler?",
+      "back": "Cumhuriyet savcısı. Mahkeme, kesinleşen ve yerine getirilmesini onayladığı hükmü Cumhuriyet Başsavcılığına gönderir.",
+      "articleRefs": [
+        "5"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Hükümlülerin Anayasada yer alan diğer hakları hangi kurallar uyarınca kısıtlanabilir?",
+      "back": "Ceza ve Güvenlik Tedbirlerinin İnfazı Hakkında Kanunda öngörülen kurallar uyarınca. Bu kısıtlama, infazın temel amaçları saklı kalmak üzere yapılır.",
+      "explanation": "Hürriyeti bağlayıcı cezanın zorunlu kıldığı hürriyetten yoksunluk, insan onuruna saygının korunmasını sağlayan maddî ve manevî koşullar altında çektirilir.",
+      "articleRefs": [
+        "6"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Cezanın infazında adalet esaslarına uygun hareket edilmesi için ceza infaz kurumları kimlerce denetlenir?",
+      "back": "Nitelikli elemanlarca. Bu elemanlar kanun ve yönetmeliklerin verdiği yetkilere dayanarak denetler.",
+      "explanation": "Hükümlünün kanun ve yönetmeliklerle tanınmış haklarının dokunulmazlığını sağlamak için, infazda ve iyileştirme çabalarında kanunîlik ve hukuka uygunluk ilkeleri esas alınır.",
+      "articleRefs": [
+        "6"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Hapis cezasının infazında iyileştirme programlarının başarısı neyle orantılı olarak ölçülür?",
+      "back": "Hükümlülerin elde ettikleri yeni tutum ve becerilerle.",
+      "explanation": "Bunun için hükümlünün iyileştirme çabalarına istekli olması teşvik edilir. İyileştirme araçları, hükümlünün sağlığını ve kişiliğine olan saygısını korumasını sağlayacak usûl ve esaslara göre uygulanır.",
+      "articleRefs": [
+        "7"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Oda ve koridor kapıları kapalı tutulan kapalı ceza infaz kurumlarında hükümlülerin dış çevre ile teması mümkün müdür?",
+      "back": "Evet. Mevzuatın belirttiği hâllerde, aynı oda dışındaki hükümlüler arasında ve dış çevre ile temas olanaklıdır.",
+      "explanation": "Kapalı ceza infaz kurumlarında iç ve dış güvenlik görevlileri bulunur. Firara karşı teknik, mekanik, elektronik veya fizikî engeller vardır. İyileştirme yöntemleri, hükümlünün gereksinimine göre bireysel, grup hâlinde veya toplu olarak uygulanabilir.",
+      "articleRefs": [
+        "8"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Yüksek güvenlikli kapalı ceza infaz kurumlarında hükümlüler kaç kişilik odalarda barındırılır?",
+      "back": "Bir veya üç kişilik odalarda. Bu hükümlüler sıkı güvenlik rejimine tâbidir.",
+      "explanation": "Bu kurumlarda oda ve koridor kapıları sürekli kapalı tutulur. İyileştirme yöntemleri bireysel veya grup hâlinde uygulanır.",
+      "articleRefs": [
+        "9"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Ağırlaştırılmış müebbet hapis cezasına mahkûm olan birinin cezasının yüksek güvenlikli kurumda infazı için suçun örgüt faaliyeti çerçevesinde işlenmiş olması gerekir mi?",
+      "back": "Hayır. Ağırlaştırılmış müebbet hapis cezasına mahkûm olanların cezası bu kurumlarda infaz edilir. Örgüt kaydı yalnız sayılan suçlardan mahkûm olanlar için aranır.",
+      "explanation": "Sayılan suçlardan mahkûm olanların cezaları da, süresine bakılmaksızın bu kurumlarda infaz edilir; yeter ki suç, örgüt kurmak, yönetmek veya örgütün faaliyeti çerçevesinde işlenmiş olsun. Türk Ceza Kanununda yer alan bu suçlar şunlardır: insanlığa karşı suçlar, kasten öldürme suçları, uyuşturucu veya uyarıcı madde imal ve ticareti, Devletin güvenliğine karşı suçlar, Anayasal düzene ve bu düzenin işleyişine karşı suçlar.",
+      "articleRefs": [
+        "9"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Müebbet hapis cezasına hükümlü, başka bir kuruma gönderilebilmek için koşullu salıverilme süresinin ne kadarını yüksek güvenlikli kurumda iyi hâlle geçirmelidir?",
+      "back": "Üçte ikisini. İyi hâl gösterirse, tutum ve kişiliğine uygun diğer ceza infaz kurumlarına gönderilmesine karar verilebilir.",
+      "explanation": "Diğer hükümlülerde aranan süreler şöyledir: süreli hapis cezasına hükümlülerde toplam cezanın üçte biri; tehlikeli hâlde bulunan, düzen ve disiplini bozan ya da iyileştirmeye ısrarla karşı koyan hükümlülerde geriye kalan toplam cezanın üçte biri.",
+      "articleRefs": [
+        "9"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Kadın kapalı ceza infaz kurumlarında iç güvenlik görevlileri kimlerden oluşturulur?",
+      "back": "Kadınlardan.",
+      "explanation": "Kadın kapalı ceza infaz kurumları, kadın hükümlülerin hapis cezalarının infaz edildiği kurumlardır. Kapalı ve yüksek güvenlikli kapalı kurumlara ilişkin hükümlere göre kurulurlar.",
+      "articleRefs": [
+        "10"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Kadın kapalı ceza infaz kurumları ihtiyacı karşılamazsa kadın hükümlülerin cezası nerede infaz edilir?",
+      "back": "Diğer kurumların, erkek hükümlülerin kaldığı bölümlerle bağlantısı olmayan bölümlerinde.",
+      "articleRefs": [
+        "10"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Çocuk kapalı ceza infaz kurumlarının ayrı ayrı bölümlerinde barındırılan çocuklar hangi yaş grubundadır?",
+      "back": "Oniki-onsekiz yaş grubu. Bölümlere ayırmada suç türleri, cinsiyetleri ve fizikî gelişim durumları göz önüne alınır.",
+      "explanation": "Bu kurumlar eğitim ve öğretime dayalıdır. Çocuklara eğitim ve öğretim verilmesi ilkesine tam olarak uyulur.",
+      "articleRefs": [
+        "11"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Kurumlarda çocuklara ayrılmış ayrı bölüm bulunmuyorsa kız çocukları nerede barındırılır?",
+      "back": "Kadın kapalı ceza infaz kurumlarının bir bölümünde veya diğer kapalı ceza infaz kurumlarının kendilerine ayrılan bölümlerinde.",
+      "explanation": "Kendilerine özgü kurum yoksa çocuk hükümlüler, kapalı ceza infaz kurumlarının çocuklara ayrılan bölümlerine yerleştirilir.",
+      "articleRefs": [
+        "11"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Gençlik kapalı ceza infaz kurumları, cezanın infazına başlandığı tarihte hangi yaştaki hükümlüler içindir?",
+      "back": "Onsekiz yaşını bitirmiş olup yirmibir yaşını doldurmamış genç hükümlüler için.",
+      "explanation": "Ayrı kurum kurulamazsa bu hükümlüler, diğer kapalı ceza infaz kurumlarının gençlere ayrılan bölümlerinde barındırılır.",
+      "articleRefs": [
+        "12"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Cezası yüksek güvenlikli kapalı ceza infaz kurumunda infaz edilmesi gereken genç hükümlülerin cezaları nerede yerine getirilir?",
+      "back": "Gençlik kapalı ceza infaz kurumlarının güvenlikli bölümlerinde.",
+      "articleRefs": [
+        "12"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Hükümlülerin durumlarına uygun kurumlara ayrımını kim yapar?",
+      "back": "Gözlem ve sınıflandırma merkezleri.",
+      "explanation": "Bu merkezlerin kuruluş, görev, çalışma esas ve usûlleri yönetmelikte gösterilir.",
+      "articleRefs": [
+        "13"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Kasıtlı suçtan toplam ne kadar hapis cezasına mahkûm olanların cezası doğrudan açık ceza infaz kurumunda yerine getirilir?",
+      "back": "Toplam üç yıl veya daha az. Belirli suç gruplarından mahkûm olanlar ve bazı hükümlüler bu kuralın dışında tutulur.",
+      "explanation": "Kapsam dışında kalanlar şunlardır: terör suçları, örgüt kurmak, yönetmek veya örgüte üye olmak suçları, örgüt faaliyeti kapsamında işlenen suçlar ve cinsel dokunulmazlığa karşı suçlardan mahkûm olanlar; ikinci defa mükerrir olanlar; koşullu salıverilme kararının geri alınması nedeniyle cezası aynen infaz edilenler. Adlî para cezası infaz sürecinde hapis cezasına çevrilenler ile İcra ve İflas Kanunu gereğince tazyik hapsine tabi tutulanlar da doğrudan açık kuruma alınır.",
+      "articleRefs": [
+        "14"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Taksirli suçtan toplam beş yıl hapis cezası alan hükümlünün cezası doğrudan açık ceza infaz kurumunda yerine getirilir mi?",
+      "back": "Evet. Taksirli suçlarda sınır toplam beş yıl veya daha azdır; üç yıl sınırı kasıtlı suçlar içindir.",
+      "explanation": "Doğrudan açık kuruma alınan hükümlü de bazı hâllerde idare ve gözlem kurulu kararıyla kapalı ceza infaz kurumuna gönderilir: firar ederse, başka bir fiilden tutuklanırsa ya da kınamadan başka bir disiplin cezası alıp bu cezası kesinleşirse.",
+      "articleRefs": [
+        "14"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Toplam ne kadar hapis cezasına mahkûm olanların açık ceza infaz kurumuna ayrılmasına ilişkin idare ve gözlem kurulu kararı, infaz hâkiminin onayından sonra uygulanır?",
+      "back": "Toplam on yıl ve daha fazla hapis cezasına mahkûm olanlarda.",
+      "explanation": "Şu suçlardan mahkûm olanlar için de aynı onay aranır: terör suçları, örgüt kurmak, yönetmek veya örgüte üye olmak suçları, örgüt faaliyeti kapsamında işlenen suçlar, kasten öldürme suçları, cinsel dokunulmazlığa karşı işlenen suçlar, uyuşturucu veya uyarıcı madde imal ve ticareti suçları.",
+      "articleRefs": [
+        "14"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 1,
+      "front": "Çocuk eğitimevlerinde firara karşı engel bulundurulur mu?",
+      "back": "Hayır. Çocuk eğitimevlerinde firara karşı engel bulundurulmaz; kurum güvenliği iç güvenlik görevlilerinin gözetim ve sorumluluğunda sağlanır.",
+      "explanation": "Bu tesislerde cezalar; hükümlülerin eğitilmeleri, meslek edinmeleri ve yeniden toplumla bütünleştirilmeleri amaçlarıyla yerine getirilir.",
+      "articleRefs": [
+        "15"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Eğitim ve öğretim programına devam ederken onsekiz yaşını dolduran çocuğun çocuk eğitimevinde ne zamana kadar kalmasına izin verilebilir?",
+      "back": "Yirmibir yaşını bitirinceye kadar. Bu izin, eğitim ve öğretimini tamamlayabilmesi için verilir.",
+      "articleRefs": [
+        "15"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Çocuk hükümlünün çocuk eğitimevine ayrılması için idare ve gözlem kurulu değerlendirmeyi en geç hangi aralıklarla yapar?",
+      "back": "En geç üç ayda bir. Değerlendirmeye en az bir uzman görevli de katılır.",
+      "explanation": "Tutum ve davranışları olumsuz değerlendirilen çocuğun yeniden değerlendirilmeye tabi tutulma süresi altı ayı geçemez. Uzman görevliler arasında psikolog, pedagog, çocuk gelişimcisi, sosyal çalışmacı, psikolojik danışman, rehberlik uzmanı, öğretmen ve Türkiye Barolar Birliğinin çocuk hakları komisyonundan görevlendireceği avukat sayılır.",
+      "articleRefs": [
+        "15"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Hastalık nedeniyle hapis cezasının infazının geri bırakılmasına hangi makam karar verir?",
+      "back": "İnfazın yapıldığı yer Cumhuriyet Başsavcılığı. Karar, Adlî Tıp Kurumunca düzenlenen ya da onaylanan rapor üzerine verilir.",
+      "explanation": "Rapor iki yoldan gelir: Adlî Tıp Kurumu düzenler ya da Adalet Bakanlığınca belirlenen tam teşekküllü hastanelerin sağlık kurulları düzenleyip Adlî Tıp Kurumu onaylar. Raporda süre yoksa mahkûmun sağlık durumu birer yıllık dönemlerle incelettirilir. Yükümlülüklere aykırı davranılırsa kararı veren Cumhuriyet Başsavcılığı geri bırakmayı kaldırır; buna karşı infaz hâkimliğine başvurulabilir.",
+      "articleRefs": [
+        "16"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Hapis cezasının infazı, doğurduğu tarihten itibaren ne kadar süre geçmemiş kadınlar hakkında geri bırakılır?",
+      "back": "Bir yıl altı ay. Gebe olan kadınlar hakkında da infaz geri bırakılır.",
+      "explanation": "Çocuk ölmüş veya anasından başka birine verilmişse ceza, doğumdan itibaren iki ay geçince infaz olunur.",
+      "articleRefs": [
+        "16"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Kapalı ceza infaz kurumuna girdikten sonra gebe kalan ve koşullu salıverilmesine altı yıldan fazla süre kalan hükümlünün cezasının infazı gebelik nedeniyle geri bırakılır mı?",
+      "back": "Hayır. Bu kişiler hakkında gebelik ve doğum nedeniyle geri bırakma uygulanmaz. Cezanın o kısmı, ceza infaz kurumlarında kendileri için düzenlenen uygun yerlerde infaz olunur.",
+      "explanation": "Kuruma girdikten sonra gebe kalıp eylem ve tutumları nedeniyle tehlikeli sayılanlar hakkında da aynı kural uygulanır.",
+      "articleRefs": [
+        "16"
+      ],
+      "counterNumbers": []
+    }
+  ]
+}

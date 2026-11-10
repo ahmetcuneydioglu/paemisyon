@@ -1,0 +1,284 @@
+{
+  "deck": {
+    "topicId": "28eaa9b8-d646-4d32-af33-618d8e1c7ea7",
+    "legislationSlug": "5393-belediye-kanunu",
+    "sourceLabel": "AI bilgi kartı — 5393 Belediye Kanunu md 15–20",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: resmî madde metni + çıkmış sorular)"
+  },
+  "cards": [
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Belediye su, toplu taşıma ve katı atık hizmetlerini imtiyaz yoluyla devretmek için hangi görüşe ve karara ihtiyaç duyar?",
+      "back": "Danıştayın görüşüne ve Çevre, Şehircilik ve İklim Değişikliği Bakanlığının (metinde: Çevre ve Şehircilik Bakanlığı) kararına ihtiyaç duyar.",
+      "explanation": "İmtiyazla devredilebilen hizmetler (e), (f) ve (g) bentlerinde sayılır: içme, kullanma ve endüstri suyu sağlamak ile atık su ve yağmur suyunu uzaklaştırmak; toplu taşıma; katı atık hizmetleri.",
+      "articleRefs": [
+        "15"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Belediye, imtiyaz yoluyla devredebildiği hizmetleri en çok ne kadar süreyle devredebilir?",
+      "back": "Kırkdokuz yıl. İmtiyaz süresi bunu geçemez.",
+      "explanation": "Devir için Danıştayın görüşü ve Çevre, Şehircilik ve İklim Değişikliği Bakanlığının (metinde: Çevre ve Şehircilik Bakanlığı) kararı gerekir. Devrin kapsamı (e), (f) ve (g) bentlerindeki su, toplu taşıma ve katı atık hizmetleridir.",
+      "articleRefs": [
+        "15"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Belediyenin kamu hizmetine ayrılan, gelir getirmeyen taşınmazları hangi vergilerden muaf değildir?",
+      "back": "Katma değer vergisi ile özel tüketim vergisinden muaf değildir. Bunların dışındaki her türlü vergi, resim, harç, katılma ve katkı payından muaftır.",
+      "explanation": "Muafiyet, kamunun yararlanmasına açık ve gelir getirmeyen taşınmazları da kapsar. Bu taşınmazların inşası ve kullanımı da muafiyete dahildir.",
+      "articleRefs": [
+        "16"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Belediye meclisi, belediyenin hangi organıdır?",
+      "back": "Karar organıdır. Üyeleri, ilgili kanunda gösterilen esas ve usûllere göre seçilir.",
+      "articleRefs": [
+        "17"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Belediye başkanı ile belediye encümeni arasındaki anlaşmazlıkları kim karara bağlar?",
+      "back": "Belediye meclisi karara bağlar.",
+      "explanation": "Bu yetki meclisin görev ve yetkileri arasında sayılır. Aynı listede meclis başkanlık divanını, encümen üyelerini ve ihtisas komisyonları üyelerini seçmek de yer alır.",
+      "articleRefs": [
+        "18"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Belediye adına imtiyaz verilmesine karar vermek belediye meclisinin yetkileri arasında mıdır?",
+      "back": "Evet. Belediye adına imtiyaz verilmesine meclis karar verir. Yatırımların yap-işlet veya yap-işlet-devret modeliyle yapılmasına da meclis karar verir.",
+      "explanation": "Aynı bende göre belediyeye ait şirket, işletme ve iştiraklerin özelleştirilmesine karar vermek de meclisin yetkisidir.",
+      "articleRefs": [
+        "18"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Belediye taşınmazının kaç yıldan fazla kiralanmasına belediye meclisi karar verir?",
+      "back": "Üç yıldan fazla kiralanmasına meclis karar verir.",
+      "explanation": "Aynı bentte meclisin kararına bağlanan başka işlemler de vardır: taşınmaz alımı, satımı, takası ve tahsisi, tahsis şeklinin değiştirilmesi ve ihtiyaç kalmayan tahsisin kaldırılması.",
+      "articleRefs": [
+        "18"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Belediye meclisi, seçim sonuçlarının ilânını takip eden kaçıncı gün kendiliğinden toplanır?",
+      "back": "Beşinci gün toplanır. Bu toplantıya belediye başkanı başkanlık eder.",
+      "explanation": "Bu ilk toplantıda meclis, üyeleri arasından gizli oyla birinci ve ikinci başkan vekili ile en az iki kâtip üyeyi seçer.",
+      "articleRefs": [
+        "19"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Belediye meclisinde başkanlık divanı seçimi kaç gün içinde tamamlanır?",
+      "back": "Üç gün içinde tamamlanır.",
+      "explanation": "Başkanlık divanı, meclis üyeleri arasından gizli oyla seçilir. Divanda meclis birinci ve ikinci başkan vekili ile en az iki kâtip üye bulunur.",
+      "articleRefs": [
+        "19"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "İlk iki yıldan sonra seçilen belediye meclisi başkanlık divanı ne zamana kadar görev yapar?",
+      "back": "Yapılacak ilk mahallî idareler seçimlerine kadar görev yapar.",
+      "explanation": "Seçimden sonraki ilk toplantıda seçilen divan ilk iki yıl için görev yapar. Divanda boşalma olursa, kalan süreyi tamamlamak üzere yenisi seçilir.",
+      "articleRefs": [
+        "19"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Belediye meclisi olağan olarak ne zaman toplanır?",
+      "back": "Her ayın ilk haftası, önceden kararlaştırdığı günde toplanır.",
+      "explanation": "Meclis, resmî tatile rastlayan günlerde çalışmasına ara verebilir. Ayrıca her yıl bir ay tatil kararı alabilir.",
+      "articleRefs": [
+        "20"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Bütçe görüşmesine rastlayan belediye meclisi toplantısı en çok kaç gün sürebilir?",
+      "back": "Yirmi gün sürebilir.",
+      "explanation": "Bütçe görüşmesine rastlamayan diğer toplantılar en çok beş gün sürebilir.",
+      "articleRefs": [
+        "20"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Bütçe görüşmesine rastlamayan bir belediye meclisi toplantısı yirmi gün sürebilir mi?",
+      "back": "Hayır. Diğer toplantılar en çok beş gün sürer; yirmi gün sınırı yalnız bütçe görüşmesine rastlayan toplantıya aittir.",
+      "explanation": "Her iki süre de üst sınırdır. Meclis bunun dışında resmî tatile rastlayan günlerde çalışmasına ara verebilir.",
+      "articleRefs": [
+        "20"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "İzinsiz satış yaptığı için faaliyetten men edilen seyyar satıcının gıda maddeleri, cezası ödenmeyerek kaç gün içinde geri alınmazsa gıda bankalarına verilir?",
+      "back": "İki gün içinde geri alınmazsa gıda bankalarına verilir.",
+      "explanation": "Gıda dışı mallarda süre otuz gündür. Cezası ödenmeyerek bu süre içinde geri alınmayan gıda dışı mallar yoksullara verilir.",
+      "articleRefs": [
+        "15"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Belediyeye yapılan şartlı bağışlar haczedilebilir mi?",
+      "back": "Hayır. Şartlı bağışlar haczedilemez.",
+      "explanation": "Haczedilemeyen gelir ve mallar şunlardır: proje karşılığı borçlanma yoluyla elde edilen gelirler, şartlı bağışlar, kamu hizmetlerinde fiilen kullanılan mallar ve belediye tarafından tahsil edilen vergi, resim ve harç gelirleri.",
+      "articleRefs": [
+        "15"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "İcra dairesi haciz öncesinde belediyeden mal göstermesini istediğinde, yeterli mal beyanı için süre ne kadardır?",
+      "back": "On gün. Bu sürede yeterli mal beyan edilmezse haciz, alacak miktarını aşacak şekilde yapılamaz.",
+      "explanation": "İcra dairesi, haciz kararı almadan önce belediyeden borca yetecek miktarda haczedilebilecek mal göstermesini ister.",
+      "articleRefs": [
+        "15"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Belediye meclisi, belediye taşınmazları üzerinde en çok ne kadar süreli sınırlı aynî hak tesisine karar verebilir?",
+      "back": "Otuz yıl. Sınırlı aynî hakkın süresi otuz yılı geçemez.",
+      "explanation": "Aynı bentte taşınmaz alımı, satımı, takası ve tahsisi de meclisin kararına bağlanmıştır.",
+      "articleRefs": [
+        "18"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Belediye meclisi bütçede hangi kalemler arasında aktarma yapabilir?",
+      "back": "Kurumsal kodlama yapılan birimler ile fonksiyonel sınıflandırmanın birinci düzeyleri arasında aktarma yapabilir.",
+      "explanation": "Bütçeyi ve kesinhesabı kabul etmek de meclisin aynı bentte sayılan yetkisidir.",
+      "articleRefs": [
+        "18"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Belediye meclisinin yurt dışındaki belediyelerle karşılıklı iş birliği yapılmasına karar verebilmesi için kimin izni gerekir?",
+      "back": "Çevre, Şehircilik ve İklim Değişikliği Bakanlığının (metinde: Çevre ve Şehircilik Bakanlığı) izni gerekir.",
+      "explanation": "Bakanlık izni yurt dışındaki belediyeler ve mahallî idare birlikleri için öngörülmüştür. Yurt içindekilerle iş birliğine meclis doğrudan karar verir. Kardeş kent ilişkileri kurulması da aynı bentte yer alır.",
+      "articleRefs": [
+        "18"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Yıllık faaliyet raporunun görüşüldüğü belediye meclisi toplantısı belediye başkanının başkanlığında mı yapılır?",
+      "back": "Hayır. Bu toplantı meclis başkan vekilinin başkanlığında yapılır.",
+      "explanation": "Kural olarak meclise belediye başkanı başkanlık eder. Yıllık faaliyet raporunun görüşüldüğü toplantı, bu kuralın istisnasıdır.",
+      "articleRefs": [
+        "19"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Belediye başkanı toplantıya katılamazsa belediye meclisine kim başkanlık eder?",
+      "back": "Meclis birinci başkan vekili başkanlık eder. O da katılamazsa ikinci başkan vekili başkanlık eder.",
+      "explanation": "Meclis başkanı, meclis çalışmalarında düzeni sağlamakla yükümlüdür.",
+      "articleRefs": [
+        "19"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Belediye meclisinde kapalı oturum yapılmasına hangi çoğunlukla karar verilir?",
+      "back": "Toplantıya katılanların salt çoğunluğuyla karar verilir. Bunun için meclis başkanının ya da herhangi bir üyenin gerekçeli önerisi gerekir.",
+      "explanation": "Kural olarak meclis toplantıları açıktır. Görüşmeler görevlilerce tutanağa geçirilir; tutanağı başkan ve kâtip üyeler imzalar.",
+      "articleRefs": [
+        "20"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Belediye başkanı, acil durumlarda belediye meclisini bir yılda en çok kaç defa toplantıya çağırabilir?",
+      "back": "Üç defa çağırabilir. Her toplantı bir birleşimi geçemez.",
+      "explanation": "Olağanüstü toplantı çağrısı ve gündem, meclis üyelerine en az üç gün önceden yazılı olarak duyurulur. Ayrıca mutat usûllerle ilan edilir.",
+      "articleRefs": [
+        "20"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Olağanüstü belediye meclisi toplantısında, çağrıyı gerektiren konuların dışında bir konu görüşülebilir mi?",
+      "back": "Hayır. Olağanüstü toplantılarda çağrıyı gerektiren konuların dışında hiçbir konu görüşülemez.",
+      "explanation": "Belediye başkanı meclisi acil durumlarda, lüzum görmesi hâlinde olağanüstü toplantıya çağırır. Her toplantı bir birleşimi geçemez.",
+      "articleRefs": [
+        "20"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Belediye mallarına karşı suç işleyenler hangi suçu işlemiş sayılır?",
+      "back": "Devlet malına karşı suç işlemiş sayılır.",
+      "explanation": "Aynı fıkraya göre 2886 sayılı Devlet İhale Kanununun 75 inci maddesi hükümleri belediye taşınmazları hakkında da uygulanır.",
+      "articleRefs": [
+        "15"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Belediyeler, yatırımların alt yapı çalışmalarını meclis kararıyla faizsiz geri ödemeli ya da ücretsiz yapabilir. İl belediyeleri dışında bu yetki hangi nüfusu geçen belediyelere tanınır?",
+      "back": "Nüfusu 10.000'i geçen belediyelere tanınır. Bu belediyeler yetkiyi belediye ve mücavir alan sınırları içinde kullanır.",
+      "explanation": "Büyükşehir belediyeleri bu yetkiyi il sınırları içinde kullanır. Geri ödeme, faiz alınmaksızın on yıla kadar olabilir. Kapsam; turizm, sağlık, sanayi ve ticaret yatırımları ile eğitim kurumlarının su, termal su, kanalizasyon, doğal gaz, yol ve aydınlatma gibi alt yapı çalışmalarıdır.",
+      "articleRefs": [
+        "15"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Büyükşehir ve il merkez belediyeleri dışındaki yerlerde birinci sınıf gayrisıhhî müesseseleri kim ruhsatlandırır ve denetler?",
+      "back": "İl özel idaresi.",
+      "explanation": "Gayrisıhhî müesseseler ile umuma açık istirahat ve eğlence yerlerini ruhsatlandırmak ve denetlemek, kural olarak belediyenin yetkisidir. Birinci sınıf gayrisıhhî müesseseler için bu istisna uygulanır.",
+      "articleRefs": [
+        "15"
+      ]
+    }
+  ]
+}

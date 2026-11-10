@@ -1,0 +1,223 @@
+{
+  "deck": {
+    "topicId": "3a4a4920-5abf-48ac-8e49-4c409475d7e5",
+    "legislationSlug": "3686-sayili-insan-haklarini-inceleme-komisyonu-kanunu",
+    "sourceLabel": "AI bilgi kartı — 3686 Sayılı İnsan Haklarını İnceleme Komisyonu Kanunu md 1–10",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: resmî madde metni + çıkmış sorular)"
+  },
+  "cards": [
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "İnsan Haklarını İnceleme Komisyonu hangi organın bünyesinde kurulur?",
+      "back": "Türkiye Büyük Millet Meclisinde (TBMM) kurulur.",
+      "articleRefs": [
+        "1"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "İnsan Haklarını İnceleme Komisyonu hangi amaçlarla kurulur?",
+      "back": "İnsan haklarına saygı ve bu konudaki gelişmeleri Dünya'da ve ülkemizde izleyerek uygulamaların bu gelişmelere uyumunu sağlamak ve başvuruları incelemek için.",
+      "articleRefs": [
+        "1"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "3686 sayılı Kanun, İnsan Haklarını İnceleme Komisyonunun hangi yönlerini düzenler?",
+      "back": "Komisyonun kuruluşunu, görevlerini, yetkilerini, çalışma usul ve esaslarını düzenler.",
+      "articleRefs": [
+        "1"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Kanunun kapsamında örnek olarak anılan çok taraflı uluslararası belgeler hangileridir?",
+      "back": "İnsan Hakları Evrensel Beyannamesi ve Avrupa İnsan Hakları Sözleşmesi.",
+      "explanation": "Kanun, bu belgeler gibi çok taraflı uluslararası belgelerde belirlenmiş insan hak ve hürriyetlerini kapsar.",
+      "articleRefs": [
+        "2"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Kanun yalnız T.C. Anayasası ile uluslararası belgelerde belirlenmiş hak ve hürriyetleri mi kapsar?",
+      "back": "Hayır. Bunların yanında uluslararası alanda genel kabul gören insan haklarını da kapsar.",
+      "articleRefs": [
+        "2"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "İnsan Haklarını İnceleme Komisyonunun üye sayısını Danışma Kurulu mu belirler?",
+      "back": "Hayır. Danışma Kurulu teklif eder; üye sayısını Genel Kurul belirler.",
+      "explanation": "Komisyonda siyasi parti grupları ile bağımsızlar, Meclisteki sayılarının (boş üyelikler hariç) üye tamsayısına oranıyla bulunan yüzde oranına göre temsil edilir.",
+      "articleRefs": [
+        "3"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Bir yasama döneminde ilk seçilen Komisyon üyelerinin görev süresi ne kadardır?",
+      "back": "İki yıl. İkinci devre için seçilenler ise o yasama döneminin sonuna kadar görev yapar.",
+      "explanation": "Komisyon üyelikleri için bir yasama döneminde iki seçim yapılır.",
+      "articleRefs": [
+        "3"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "İnsan Haklarını İnceleme Komisyonu kaç başkanvekili seçer?",
+      "back": "İki başkanvekili; ayrıca bir başkan, bir sözcü ve bir katip seçer.",
+      "explanation": "Seçim siyasi parti gruplarının yüzde oranlarına göre yapılır. Üye tamsayısının salt çoğunluğuyla toplanan Komisyonda, toplantıya katılanların salt çoğunluğunun gizli oyuyla seçilirler.",
+      "articleRefs": [
+        "3"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Komisyon, olağanüstü hal sırasında çıkarılan hangi düzenlemeleri görüşür?",
+      "back": "Cumhurbaşkanlığı kararnamelerini görüşür.",
+      "explanation": "Komisyon ayrıca Türkiye Büyük Millet Meclisi (TBMM) Başkanlığınca havale edilen kanun tekliflerini görüşür; TBMM komisyonlarının gündemindeki konular hakkında istem üzerine görüş ve öneri bildirir.",
+      "articleRefs": [
+        "4"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Komisyon dış ülkelerdeki insan hakları ihlallerini incelediğinde bu ihlalleri kimin dikkatine sunar?",
+      "back": "O ülke parlamenterlerinin dikkatine; doğrudan veya mevcut parlamenter forumlar aracılığıyla sunar.",
+      "explanation": "Dış ülkelerdeki ihlallerin incelenmesi gerektiğinde yapılır.",
+      "articleRefs": [
+        "4"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Komisyon, çalışmalarını ve sonuçlarını kapsayan raporu hangi sıklıkla hazırlar?",
+      "back": "Her yıl; yapılan çalışmaları, elde edilen sonuçları, yurtiçi ve dışında insan haklarına saygı ve uygulamaları kapsayan bir rapor hazırlar.",
+      "articleRefs": [
+        "4"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Komisyonun, görevleriyle ilgili olarak kurum ve kuruluşlar karşısındaki yetkileri nelerdir?",
+      "back": "Bilgi istemek, buralarda inceleme yapmak ve ilgililerini çağırıp bilgi almak.",
+      "articleRefs": [
+        "5"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Komisyon bilgi isteme yetkisini yalnız kamu kurum ve kuruluşlarına karşı mı kullanabilir?",
+      "back": "Hayır. Özel kuruluşlardan da bilgi isteyebilir, buralarda inceleme yapabilir ve ilgililerini çağırıp bilgi alabilir.",
+      "explanation": "Yetkinin muhatapları arasında bakanlıklar, mahalli idareler, muhtarlıklar ve üniversiteler de sayılır.",
+      "articleRefs": [
+        "5"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Komisyon gerekli gördüğünde kimlerin bilgisine başvurabilir?",
+      "back": "Uygun bulacağı uzmanların bilgilerine başvurabilir.",
+      "explanation": "Aynı hükümle Komisyon, gerekli gördüğünde Ankara dışında da çalışabilir.",
+      "articleRefs": [
+        "5"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "İnsan Haklarını İnceleme Komisyonunda karar yeter sayısı hangi alt sınırın altına düşemez?",
+      "back": "Üye tamsayısının dörtte birinin bir fazlası. Kararlar toplantıya katılanların salt çoğunluğuyla alınır, ama bu sınırın altına inilemez.",
+      "articleRefs": [
+        "6"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Sorumlular hakkında kovuşturma veya işlem yapılabilmesi için Komisyon raporunu ilgili mercie Komisyon mu bildirir?",
+      "back": "Hayır. Komisyonun gerekli görmesi halinde rapor, Türkiye Büyük Millet Meclisi (TBMM) Başkanlığınca ilgili mercie bildirilir.",
+      "explanation": "Kovuşturma veya işlem genel hükümlere göre yapılır. Komisyon raporlarını Cumhurbaşkanlığı ve ilgili bakanlıklara da TBMM Başkanlığı gönderir.",
+      "articleRefs": [
+        "6"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "İnsan Haklarını İnceleme Komisyonu hangi başvuruları inceler?",
+      "back": "Türkiye Büyük Millet Meclisi (TBMM) Başkanlığınca havale olunan başvurular ile ilgili konuları inceler.",
+      "articleRefs": [
+        "7"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Komisyon başvuru sahibine en geç kaç gün içinde bilgi verir?",
+      "back": "Altmış gün içinde.",
+      "articleRefs": [
+        "7"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Komisyon başvuru sahibine yalnız başvurunun sonucu hakkında mı bilgi verir?",
+      "back": "Hayır. Başvurunun sonucu veya yapılmakta olan işlem hakkında, en geç altmış gün içinde bilgi verir.",
+      "articleRefs": [
+        "7"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Kanunda açık hüküm bulunmayan hallerde Komisyonun çalışmalarında hangi hükümler uygulanır?",
+      "back": "Türkiye Büyük Millet Meclisi İçtüzüğü hükümleri uygulanır.",
+      "articleRefs": [
+        "8"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Türkiye Büyük Millet Meclisi Başkanının İçtüzük gereğince komisyonlar üzerindeki denetleme yetkisi İnsan Haklarını İnceleme Komisyonu için de geçerli midir?",
+      "back": "Evet. Bu denetleme yetkisi İnsan Haklarını İnceleme Komisyonu için de geçerlidir.",
+      "articleRefs": [
+        "8"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "3686 sayılı İnsan Haklarını İnceleme Komisyonu Kanunu ne zaman yürürlüğe girmiştir?",
+      "back": "Yayımı tarihinde yürürlüğe girmiştir.",
+      "articleRefs": [
+        "9"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,308 @@
+{
+  "deck": {
+    "topicId": "8b991a24-eecf-48c9-a068-0aecfc65cfd1",
+    "legislationSlug": "aihs",
+    "sourceLabel": "AI bilgi kartı — Avrupa İnsan Hakları Sözleşmesi md 1–26",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: resmî madde metni + çıkmış sorular)"
+  },
+  "cards": [
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Yüksek Sözleşmeci Taraflar, Sözleşme'nin birinci bölümündeki hak ve özgürlüklerden kimlerin yararlanmasını sağlar?",
+      "back": "Kendi yetki alanları içinde bulunan herkesin.",
+      "explanation": "Madde \"herkes\" der. Ölçüt, kişinin Tarafın yetki alanı içinde bulunmasıdır.",
+      "articleRefs": [
+        "1"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Yaşam hakkına göre, güç kullanımı sonucu meydana gelen ölümün ihlal sayılmaması için güç hangi ölçüyü aşmamalıdır?",
+      "back": "Mutlak zorunlu olanı aşmamalıdır. Ölüm ayrıca maddede sayılan durumlardan birinde meydana gelmiş olmalıdır.",
+      "explanation": "Maddede sayılan durumlar şunlardır: bir kimsenin yasa dışı şiddete karşı korunması; usulüne uygun yakalamanın gerçekleştirilmesi ya da usulüne uygun olarak tutulu bulunan kişinin kaçmasının önlenmesi; bir ayaklanma veya isyanın yasaya uygun olarak bastırılması.",
+      "articleRefs": [
+        "2"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Sözleşme'ye uygun olarak tutulu bulunan bir kimseden istenen hangi iş zorla çalıştırma sayılmaz?",
+      "back": "Tutulu bulunduğu sırada ya da şartlı tahliyeden yararlandığı süre içinde olağan olarak yapması istenen iş.",
+      "explanation": "Zorla çalıştırma sayılmayan diğer haller şunlardır: askeri nitelikli hizmet ya da vicdani reddin meşru sayıldığı ülkelerde askerlik yerine gördürülen hizmet; toplumun hayat veya refahını tehdit eden kriz veya afet hallerinde gerekli görülen hizmet; olağan yurttaşlık yükümlülükleri kapsamındaki çalışma veya hizmet.",
+      "articleRefs": [
+        "4"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Suç işlediğinden şüphelenmek için inandırıcı sebepler bulunduğu için yakalanan kişi kimin önüne çıkarılmalıdır?",
+      "back": "Derhal bir yargıcın ya da yasayla adli görev yapmaya yetkili kılınmış başka bir kamu görevlisinin önüne.",
+      "explanation": "Bu kişi makul bir süre içinde yargılanma ya da yargılama süresince serbest bırakılma hakkına sahiptir.",
+      "articleRefs": [
+        "5"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Suç şüphesiyle tutulan kişinin salıverilmesi bir teminat şartına bağlanabilir mi?",
+      "back": "Evet. Salıverilme, kişinin duruşmada hazır bulunmasını sağlayacak bir teminat şartına bağlanabilir.",
+      "explanation": "Özgürlüğünden yoksun kılınan herkes, tutulmanın yasaya uygunluğu hakkında kısa sürede karar verilmesi için mahkemeye başvurabilir. Tutulma yasaya aykırıysa serbest bırakılmasını isteyebilir.",
+      "articleRefs": [
+        "5"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Özgürlük ve güvenlik hakkına aykırı bir yakalama veya tutma işleminin mağduru hangi hakka sahiptir?",
+      "back": "Tazminat hakkına.",
+      "explanation": "Bu hak, madde hükümlerine aykırı her yakalama veya tutma işleminin mağduru olan herkese tanınır.",
+      "articleRefs": [
+        "5"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "AİHS’e göre bir suç ile itham edilen kişi ne zamana kadar masum sayılır?",
+      "back": "Suçluluğu yasal olarak sabit oluncaya kadar.",
+      "explanation": "Bu güvence, bir suç ile itham edilen herkese tanınır.",
+      "articleRefs": [
+        "6"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Avukat tutacak maddi olanağı olmayan sanık, hangi koşulla resen atanan avukattan ücretsiz yararlanır?",
+      "back": "Adaletin yerine gelmesi için gerekli görüldüğünde.",
+      "explanation": "Sanık kendini bizzat savunabilir ya da seçeceği bir müdafinin yardımından yararlanabilir. Ücretsiz avukat için iki şart birlikte aranır: maddi olanaklardan yoksunluk ve adaletin gerektirmesi.",
+      "articleRefs": [
+        "6"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Duruşma salonu basına ve dinleyicilere kapatılan bir davada karar da gizli verilebilir mi?",
+      "back": "Hayır. Karar alenî olarak verilir; kapatılabilen yalnız duruşma salonudur.",
+      "explanation": "Duruşma salonu şu durumlarda tüm dava süresince ya da kısmen kapatılabilir: ahlak, kamu düzeni veya ulusal güvenlik yararına; küçüklerin çıkarları ya da tarafların özel hayatının gizliliği gerektirdiğinde; aleniyetin adil yargılamaya zarar verebileceği özel durumlarda. Kapatma, mahkemece kaçınılmaz görüldüğü ölçüde yapılır.",
+      "articleRefs": [
+        "6"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Kimse, işlendiği zaman hangi hukuka göre suç oluşturmayan bir eylem veya ihmalden dolayı suçlu bulunamaz?",
+      "back": "Ulusal veya uluslararası hukuka göre.",
+      "explanation": "Suçun işlendiği sırada uygulanabilir olandan daha ağır bir ceza da verilemez. Bu kural, işlendiği zaman uygar uluslar tarafından tanınan genel hukuk ilkelerine göre suç sayılan eylemin yargılanmasına ve cezalandırılmasına engel değildir.",
+      "articleRefs": [
+        "7"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Bir kamu makamı, özel ve aile hayatına saygı hakkının kullanılmasına hangi şartlarla müdahale edebilir?",
+      "back": "Müdahale yasayla öngörülmüş olmalı ve demokratik bir toplumda maddede sayılan amaçlar için gerekli bir tedbir olmalıdır.",
+      "explanation": "Sayılan amaçlar şunlardır: ulusal güvenlik, kamu güvenliği, ülkenin ekonomik refahı, düzenin korunması, suç işlenmesinin önlenmesi, sağlığın veya ahlakın ya da başkalarının hak ve özgürlüklerinin korunması. Hak; özel ve aile hayatını, konutu ve yazışmayı kapsar.",
+      "articleRefs": [
+        "8"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "AİHS md 10’a göre ifade özgürlüğü, devletlerin hangi işletmeleri izin rejimine tabi tutmasına engel değildir?",
+      "back": "Radyo, televizyon ve sinema işletmelerini.",
+      "explanation": "İfade özgürlüğü, kamu makamlarının müdahalesi olmaksızın ve ülke sınırları gözetilmeksizin kanaat özgürlüğünü kapsar. Haber ve görüş alma ve verme özgürlüğü de bu hakkın içindedir.",
+      "articleRefs": [
+        "10"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Toplantı ve dernek kurma özgürlüğü, hangi grupların bu hakları kullanmasına meşru sınırlamalar getirilmesine engel değildir?",
+      "back": "Silahlı kuvvetler, kolluk kuvvetleri veya devlet idaresi mensuplarının.",
+      "explanation": "Genel kural şudur: sınırlama ancak yasayla öngörülür ve demokratik bir toplumda gerekli olmalıdır. Gereklilik amaçları ulusal güvenlik, kamu güvenliği, kamu düzeni, suçun önlenmesi, sağlık veya ahlak ya da başkalarının hak ve özgürlükleridir. Hak, barışçıl toplanmayı ve sendika kurma ile sendikaya üye olmayı da içerir.",
+      "articleRefs": [
+        "11"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Hakkı, resmi bir hizmetin ifası için davranan kişilerce ihlal edilen kişi ulusal bir merci önünde etkili bir yola başvurabilir mi?",
+      "back": "Evet. İhlal resmi görev ifa edenlerce gerçekleştirilmiş olsa dahi, hak ve özgürlükleri ihlal edilen herkes bu hakka sahiptir.",
+      "explanation": "Başvuru, ulusal bir merci önünde etkili bir yola yapılır.",
+      "articleRefs": [
+        "13"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Sözleşme'deki haklardan yararlanmada hangi sebeplere dayalı ayrımcılık gözetilemez?",
+      "back": "Cinsiyet, ırk, renk, dil, din, siyasal veya diğer kanaatler, ulusal veya toplumsal köken, ulusal bir azınlığa aidiyet, servet, doğum başta olmak üzere herhangi başka bir duruma dayalı ayrımcılık gözetilemez.",
+      "explanation": "Liste \"başta olmak üzere\" diye kurulmuştur; sayılanlar örnektir. Herhangi başka bir duruma dayalı ayrımcılık da yasaktır.",
+      "articleRefs": [
+        "14"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Savaş veya ulusun varlığını tehdit eden genel tehlike halinde bile hangi maddelere aykırı tedbir alınamaz?",
+      "back": "Md 2 (meşru savaş fiilleri sonucu ölüm hali dışında), md 3, md 4 fıkra 1 ve md 7.",
+      "explanation": "Diğer yükümlülüklere aykırı tedbir iki koşulla alınabilir: durumun kesinlikle gerektirdiği ölçüde olmalı ve uluslararası hukuktan doğan başka yükümlülüklere ters düşmemelidir. Tedbirler ve nedenleri hakkında Avrupa Konseyi Genel Sekreteri'ne tam bilgi verilir.",
+      "articleRefs": [
+        "15"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Savaş halinde bir Yüksek Sözleşmeci Taraf, zorla çalıştırma yasağına aykırı tedbir alabilir mi?",
+      "back": "Evet, durumun kesinlikle gerektirdiği ölçüde alabilir. Dokunulmaz sayılan yalnız md 4 fıkra 1'dir (kölelik ve kulluk yasağı); zorla çalıştırma yasağı fıkra 2'dedir.",
+      "explanation": "Hiç kimseyi köle ya da kul durumunda tutmama yükümlülüğü olağanüstü halde de askıya alınamaz. Tedbirin yürürlükten kalktığı tarih de Avrupa Konseyi Genel Sekreteri'ne bildirilir.",
+      "articleRefs": [
+        "15",
+        "4"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Md 10, 11 ve 14, Taraflar'ın hangi kişilerin siyasal etkinliklerine kısıtlama getirmesini yasaklamış sayılmaz?",
+      "back": "Yabancıların.",
+      "explanation": "Söz konusu maddeler ifade özgürlüğü, toplantı ve dernek kurma özgürlüğü ile ayrımcılık yasağıdır.",
+      "articleRefs": [
+        "16",
+        "10",
+        "11",
+        "14"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Avrupa İnsan Hakları Mahkemesi kaç yargıçtan oluşur?",
+      "back": "Yüksek Sözleşmeci Taraflar'ın sayısına eşit sayıda yargıçtan.",
+      "explanation": "Mahkeme, Taraflar'ın Sözleşme ve protokollerinden doğan taahhütlere uyulmasını sağlamak için kurulmuştur ve devamlı görev yapar.",
+      "articleRefs": [
+        "20",
+        "19"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Avrupa İnsan Hakları Mahkemesi yargıç adayları için yaş sınırı nedir?",
+      "back": "65 yaşın altında olmak. Yaş, üç adaylık listenin Parlamenterler Meclisi tarafından talep edildiği tarihe göre belirlenir.",
+      "explanation": "Yargıçlar en üstün ahlaki vasıflarla donanmış olmalıdır. Ayrıca yüksek yargısal görevler için gerekli niteliklere sahip ya da alanında uzmanlığı herkesçe malum hukukçu olmalıdırlar. Mahkeme'ye kendi adlarına katılırlar.",
+      "articleRefs": [
+        "21"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Her Yüksek Sözleşmeci Taraf, yargıç seçimi için Parlamenterler Meclisi'ne kaç adaylık liste sunar?",
+      "back": "Üç adaylık liste. Parlamenterler Meclisi yargıcı bu listeden oy çokluğu ile seçer.",
+      "articleRefs": [
+        "22"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Avrupa İnsan Hakları Mahkemesi yargıçları kaç yıllık süre için seçilir?",
+      "back": "Dokuz yıllık süre için; tekrar seçilmeleri mümkün değildir.",
+      "explanation": "Yargıçlar, yerlerine başkası seçilinceye kadar görevlerini sürdürür.",
+      "articleRefs": [
+        "23"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Bir yargıcın görevden alınması için diğer yargıçların hangi çoğunlukla karar alması gerekir?",
+      "back": "Üçte iki çoğunlukla. Karar, yargıcın yargıçlık için gerekli koşulları artık taşımadığına dair olmalıdır.",
+      "articleRefs": [
+        "23"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Görev süresi sona eren bir yargıç, daha önce katıldığı davalara bakmaya devam edebilir mi?",
+      "back": "Evet. Görevi sona erdikten sonra da daha önce katıldığı davalara bakmaya devam eder.",
+      "explanation": "Yargıçlar, yerlerine başkası seçilinceye kadar görevlerini sürdürür.",
+      "articleRefs": [
+        "23"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Genel Kurul halinde toplanan Mahkeme, başkanını kaç yıllık süre için seçer?",
+      "back": "Üç yıllık süre için; başkanın tekrar seçilmesi mümkündür.",
+      "explanation": "Genel Kurul ayrıca belirli süreler için Daireler oluşturur ve daire başkanlarını seçer. Daire başkanları da tekrar seçilebilir.",
+      "articleRefs": [
+        "25"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Mahkeme Genel Kurulu, başkanın yanında kaç başkan yardımcısı seçer?",
+      "back": "Bir veya iki başkan yardımcısı seçer; bunların tekrar seçilmesi mümkündür.",
+      "explanation": "Genel Kurul mahkeme içtüzüğünü kabul eder. Yazı İşleri Müdürü'nü ve bir veya birden fazla Müdür yardımcısını da seçer.",
+      "articleRefs": [
+        "25"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Avrupa İnsan Hakları Mahkemesi'nde bir Daire kaç yargıçtan oluşur?",
+      "back": "Yedi yargıçtan.",
+      "explanation": "Mahkeme başvuruları dört düzende inceler: tek yargıç, üç yargıçlı komite, yedi yargıçlı Daire ve onyedi yargıçlı Büyük Daire. Komiteleri Daireler belirli bir süre için kurar.",
+      "articleRefs": [
+        "26"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Bakanlar Komitesi, Daire yargıçlarının sayısını kaça düşürebilir?",
+      "back": "Beşe. Bunun için Mahkeme Genel Kurulu'nun talebi gerekir; Bakanlar Komitesi oybirliğiyle ve belirli bir süre için karar verir.",
+      "articleRefs": [
+        "26"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Tek yargıç düzeninde görev alan yargıç, adına seçildiği Yüksek Sözleşmeci Taraf aleyhine yapılan başvuruyu inceleyebilir mi?",
+      "back": "Hayır. Adına seçildiği Taraf aleyhine yapılmış hiçbir başvuruyu inceleyemez.",
+      "explanation": "Daire ve Büyük Daire'de durum farklıdır: uyuşmazlığa taraf olan Devlet adına seçilmiş yargıç bu heyetlerin doğal üyesidir. Bu yargıç yoksa ya da görev alamıyorsa, Taraf'ın önceden sunduğu listeden Mahkeme Başkanı'nca seçilen kişi görev alır.",
+      "articleRefs": [
+        "26"
+      ],
+      "counterNumbers": []
+    }
+  ]
+}

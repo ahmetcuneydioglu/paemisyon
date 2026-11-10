@@ -1,0 +1,293 @@
+{
+  "deck": {
+    "topicId": "fc5b7d84-ad74-446c-9ac6-3d4172a04ccf",
+    "legislationSlug": "298-sayili-secimlerin-temel-hukumleri-kanunu",
+    "sourceLabel": "AI bilgi kartı — 298 Sayılı Seçimlerin Temel Hükümleri Kanunu md 109–138, 140–148",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: resmî madde metni + çıkmış sorular)"
+  },
+  "cards": [
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "İl seçim kurulu kapısına asılan birleştirme tutanağı sureti ne kadar süre asılı kalır?",
+      "back": "Bir hafta. Sureti il seçim kurulu başkanı kurul kapısına asar.",
+      "explanation": "Birleştirme sonucunu gösteren tutanağın içindekiler hazır bulunanlara da ilan edilir.",
+      "articleRefs": [
+        "109"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Kesin olduğu yazılı olmayan seçim kurulu kararlarına karşı itiraz mercii neresidir?",
+      "back": "Kurulun bağlı olduğu üst kurul.",
+      "explanation": "Yüksek Seçim Kurulunun re'sen ya da itiraz üzerine vereceği kararlar kesindir.",
+      "articleRefs": [
+        "111"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Yüksek Seçim Kuruluna sözle itiraz yapılabilir mi?",
+      "back": "Hayır. Yüksek Seçim Kuruluna yapılacak itirazların yazılı olması lazımdır. Sözle itiraz, kanunun genel kuralı olarak öteki kurullara yapılabilir.",
+      "explanation": "Sözle yapılan itirazlar gerekçesiyle birlikte tutanağa yazılır. İtiraz edenin adı, soyadı ve açık adresi yazılarak imzası alınır.",
+      "articleRefs": [
+        "112"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Seçim kurulu başkanı bulunamazsa yazılı itiraz kime yapılır?",
+      "back": "Nöbetçi savcıya, alındı belgesi ile yapılır.",
+      "explanation": "Savcı itirazın kaydını işler ve itirazı hemen seçim kurulu başkanına gönderir. Her itirazda, itirazın alındığını ve tarihini gösteren alındı belgesi itiraz edene verilir.",
+      "articleRefs": [
+        "112"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Siyasi parti adına itiraz edecek kişilerden kimlik aranır mı?",
+      "back": "Hayır; parti adına itiraz edeceklerden kimlik aranmaz. Bu kişileri parti, seçim başlangıcında mühür ve imzalı bir yazıyla seçim kurullarına bildirir.",
+      "explanation": "İtiraz edebileceklerin imza sirküleri parti başkanınca onaylanarak bildirilir. Parti adına olmayan itirazlarda ise kimliğini ispat edemeyenlerin itirazları incelenmez.",
+      "articleRefs": [
+        "112"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Seçim kurullarında oylar eşit çıkarsa ne olur?",
+      "back": "Başkanın katıldığı taraf tercih olunur.",
+      "explanation": "Kurullar kararlarını salt çoğunlukla verir. İtirazı kabul eden üst kurul, yapılması gereken işlem hakkında da karar verir.",
+      "articleRefs": [
+        "113"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Yüksek Seçim Kurulu hangi incelemede tam sayısı ile toplanır?",
+      "back": "Seçimin sonunda verilecek tutanaklara karşı yapılan itirazların incelenmesinde.",
+      "explanation": "Diğer hususlarda kurul, mürettep adedinin çoğunluğu ile toplanabilir. Her iki hâlde de salt çoğunlukla karar verir.",
+      "articleRefs": [
+        "113"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Seçim kurullarının kesin kararları itiraz edene tebliğ edilir mi?",
+      "back": "Hayır; kesin kararlar tebliğ olunmaz. İtiraz eden başvurursa karar kendisine gösterilir, isterse bir suret de verilir.",
+      "explanation": "Kesin olmayan kararlar ise itiraz eden hazırsa sözle bildirilir; bildirimin günü ve saati tutanağa geçirilip kendisine imza ettirilir. Hazır değilse, gösterilmiş belli bir yer varsa karar o yere tebliğ olunur.",
+      "articleRefs": [
+        "114"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Şikayet ve itiraza ilişkin evrak nelerden muaftır?",
+      "back": "Resim ve harçtan. Şikayet ve itiraza ilişkin her türlü evrak bu muafiyetten yararlanır.",
+      "articleRefs": [
+        "115"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Şikayetin kabul edilmemesine dair karara karşı, kanunda ayrıca bir süre yoksa ne kadar sürede itiraz olunur?",
+      "back": "Kırksekiz saat içinde.",
+      "explanation": "Şikayet kabul edilmezse derhal tutanağa geçirilerek karara bağlanır ve kararın bir sureti şikayetçiye verilir. Şikayet kabul edilirse işlem düzeltilir, kanuna aykırı hareket önlenir.",
+      "articleRefs": [
+        "117"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 1,
+      "front": "Seçim işlemlerine karşı şikayet yapılması oy vermenin devamını durdurur mu?",
+      "back": "Hayır. İşlemlere, tedbirlere ve kararlara karşı yapılan şikayet ve itirazlar, oy vermeye ve her türlü seçim işlerinin devamına engel olmaz.",
+      "articleRefs": [
+        "118"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Sandık kurullarının teşkiline dair ilçe seçim kurulu işlemlerinin düzeltilmesi için şikayet en geç ne zaman yapılabilir?",
+      "back": "İşlemlerin neticesinden itibaren en geç iki gün içinde.",
+      "explanation": "Şikayetin reddine karşı, bildirilmesinden ya da tebliğinden itibaren iki gün içinde il seçim kuruluna itiraz olunur. İl seçim kurulu iki gün içinde kesin karar verir.",
+      "articleRefs": [
+        "119"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "İlçe seçim kurulu teşkili işlemlerine karşı itiraz hangi kurula yapılır?",
+      "back": "İl seçim kuruluna; teşekkülden itibaren en geç iki gün içinde yapılır.",
+      "explanation": "İl seçim kurulu itirazı en geç iki gün içinde kesin olarak karara bağlar.",
+      "articleRefs": [
+        "120"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "İl seçim kurullarının teşekkülüne karşı itiraz hangi kurula yapılır?",
+      "back": "Yüksek Seçim Kuruluna; kurulun teşkilinden itibaren en geç üç gün içinde yapılır.",
+      "explanation": "Yüksek Seçim Kurulu bu itiraz hakkında üç gün içinde karar verir.",
+      "articleRefs": [
+        "121"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Muhtarlık bölgesi askı listesine yapılan itirazı kim kesin karara bağlar?",
+      "back": "İtirazın yapıldığı kurul başkanı.",
+      "explanation": "Seçmen niteliğindeki vatandaşlar, kendileriyle ilgili itirazı ilçe seçim kurulu başkanına yapar. Siyasi partilerin genel merkez yetkilileri ise tüm seçmen kütüğü için Yüksek Seçim Kurulu Başkanlığına başvurabilir.",
+      "articleRefs": [
+        "122"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Özel kanunda aykırı hüküm yoksa, adaylık şart veya vasıflarını taşımama sebebiyle adaya ilandan itibaren ne kadar sürede itiraz edilebilir?",
+      "back": "İki gün içinde.",
+      "explanation": "İtiraz yazıyla yapılır ve itiraza sebep gösterilen belgeler dilekçeye bağlanır. İtiraz, seçimi idare ile görevli seçim kuruluna yapılır. Bu kurulun kararına karşı, kesin karar verme yetkisi olan üst seçim kuruluna da itiraz olunabilir.",
+      "articleRefs": [
+        "125"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Aday tespitinde parti tüzük ve yönetmeliklerine aykırı davranıldığı iddiasıyla kimler itiraz edebilir?",
+      "back": "Yalnız ilgili siyasi partinin üyeleri.",
+      "explanation": "Bu tür itirazlarda, itiraz edenin aynı partiye kayıtlı olduğunu kanıtlayan belge dilekçeye eklenmelidir. Bu belge eklenmemiş dilekçeler işleme konulmaz.",
+      "articleRefs": [
+        "125"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Sandık başı işlerine ilişkin şikayetin reddine karşı itiraz kime yapılır?",
+      "back": "Derhal ilçe seçim kurulu başkanına yapılır. Başkan itirazı derhal inceleyip kesin karara bağlar.",
+      "explanation": "Başkanın düzeltme ya da iptal niteliğindeki kararı derhal sandık kurulu başkanına bildirilir ve bu karara uymak mecburidir. Şikayet ve itirazlar en geç seçim sonuçlarını tesbit eden tutanağın düzenlenmesine kadar yapılır.",
+      "articleRefs": [
+        "127"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Sandık kurulu işlemlerine karşı doğrudan ilçe seçim kuruluna yazılı itiraz en geç ne zamana kadar yapılabilir?",
+      "back": "Oy verme gününden sonraki salı günü saat 15.00'e kadar.",
+      "explanation": "Sandık sonuç tutanağı başkan ve üyelerce imzalanana kadar itiraz, sözle veya yazıyla sandık kurulları vasıtasıyla da yapılabilir.",
+      "articleRefs": [
+        "128"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Sandık başı işlemlerine karşı ilçe seçim kuruluna itiraz edebilmek için önce sandık kuruluna şikâyette bulunmak şart mıdır?",
+      "back": "Hayır. Önce sandık kuruluna şikâyet veya itirazda bulunulmuş olması şart değildir.",
+      "explanation": "Sandık kurullarının kararlarına, sayım ve dökümle tutanak düzenleme işlemlerine karşı doğrudan ilçe seçim kuruluna itiraz olunabilir.",
+      "articleRefs": [
+        "128"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "İlçe seçim kurulu, sandık işlemlerine yapılan itirazı en geç ne zamana kadar karara bağlar?",
+      "back": "İtirazın yapıldığı tarihten sonraki ikinci gün saat 17.00'ye kadar.",
+      "explanation": "İtiraz süresi bitmeden ya da süresinde yapılan itirazlar karara bağlanmadan ilçe birleştirme tutanağı düzenlenemez. İtiraz eden hazırsa karar kendisine bildirilir, değilse tebliğ edilir.",
+      "articleRefs": [
+        "128"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Siyasi partilerin il başkanları, genel merkezleri veya bağımsız aday, seçimin neticesine müessir olaylar sebebiyle tutanağın düzenlenmesinden sonra kaç gün içinde itiraz edebilir?",
+      "back": "7 gün içinde.",
+      "explanation": "Seçimin neticesine müessir görülürse bu itiraz incelenir. Alt kademe kararlarının kesin ya da kesinleşmiş olması bunu engellemez; kurullara derece derece ve süresinde başvurulmamış olması da engellemez. İtiraz yazılı yapılır.",
+      "articleRefs": [
+        "130"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Adaylığın kesinleşmesinden sonra adaya hangi iddialarla itiraz olunabilir?",
+      "back": "Yalnız şu iddialarla: adayın Türk olmadığı, yaşının kanunda gösterilenden küçük olduğu, okur-yazar olmadığı ya da seçilme yeterliğini kaybettiren bir mahkümiyeti bulunduğu.",
+      "explanation": "Bu sınırlama olağanüstü itirazlar için de geçerlidir.",
+      "articleRefs": [
+        "130"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Yüksek Seçim Kurulunun istediği bilgi ve belgeyi ilgili merciler en geç ne kadar sürede vermek zorundadır?",
+      "back": "En kısa zamanda ve en geç yedi gün içinde.",
+      "explanation": "Kurul evrak üzerinde inceleme yapar, lüzum gördüğü her türlü tahkik ve tetkiki de yapabilir.",
+      "articleRefs": [
+        "132"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Yüksek Seçim Kurulu kendisine verilen itiraz ve ihbarları en geç ne kadar sürede karara bağlar?",
+      "back": "Verildiği tarihten itibaren en geç üç ay içinde. Kararı kesindir; aleyhine hiçbir mercie ve kanun yoluna başvurulamaz.",
+      "explanation": "Seçim sonuçları hakkında kesin karar vermeye yetkili mercie yapılan itirazlar ise onbeş gün içinde kesin karara bağlanır. Tutanağına itiraz edilen kişi yazıyla savunma yapabilir. İsterse kurulun belirleyeceği günde bizzat ya da vekil aracılığıyla kurul huzurunda da savunabilir.",
+      "articleRefs": [
+        "132"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Hileli faaliyet, cebir, şiddet veya tehditle seçim kurullarının toplanmasına mani olana hangi ceza verilir?",
+      "back": "İki yıldan beş yıla kadar hapis. Fiil silahla işlenirse ceza üç yıldan aşağı olamaz.",
+      "explanation": "Fiil, aralarından biri silahlı en az üç kişi tarafından birlikte işlenirse failler beş yıldan onbeş yıla kadar hapis cezası alır.",
+      "articleRefs": [
+        "133"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Kurula seçildiği hâlde haklı sebep olmaksızın görevine gelmeyene hapis cezası verilir mi?",
+      "back": "Hayır; elli günden az olmamak üzere adlî para cezası verilir. Hapis cezası (üç aydan bir yıla kadar), seçim başladıktan sonra görevini haklı sebep olmaksızın terk edene verilir.",
+      "articleRefs": [
+        "136"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Sahte seçmen kütüğü düzenleyen kişinin cezası nasıl belirlenir?",
+      "back": "Türk Ceza Kanununun belgede sahtecilik suçuna ilişkin hükümlerine göre verilecek ceza yarı oranında artırılır.",
+      "explanation": "Aynı ceza şu kişilere de verilir: seçmen kütüğünü ya da listesini bozan, çalan veya yok eden kişiye; bunlara ait vesikaları çalan, bozan, yok eden veya tahrip eden kişiye.",
+      "articleRefs": [
+        "148"
+      ]
+    }
+  ]
+}

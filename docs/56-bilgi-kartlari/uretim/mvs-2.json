@@ -1,0 +1,279 @@
+{
+  "deck": {
+    "topicId": "fd517cd6-8889-4a46-b644-e6b156a5a9f3",
+    "legislationSlug": "2839-milletvekili-secimi-kanunu",
+    "sourceLabel": "AI bilgi kartı — 2839 Milletvekili Seçimi Kanunu md 27–29, 31–34, 34/A, 35–44, 62–66",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: resmî madde metni + çıkmış sorular)"
+  },
+  "cards": [
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Sandıklarda kullanılacak birleşik oy pusulaları seçim çevrelerine kaçlık paketler hâlinde gönderilir?",
+      "back": "Dörtyüzlük paketler hâlinde. Yüksek Seçim Kurulu paketleri numaralayıp mühürledikten sonra yeteri kadar zarfla birlikte gönderir.",
+      "explanation": "Paketleri numaralamak ve mühürlemek Yüksek Seçim Kurulunun işidir. Pusulalar zarflarla birlikte seçim çevrelerine ulaşır.",
+      "articleRefs": [
+        "27"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Hangi numaralı oy pusulası paketinin hangi sandık kuruluna verildiğini hangi kurul tespit eder?",
+      "back": "İlçe seçim kurulu. Paketleri alan ilçe seçim kurulu bunu bir tutanakla tespit eder.",
+      "articleRefs": [
+        "27"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Sandık kurulu oy pusulası paketini ne zaman açar?",
+      "back": "Oy verme günü, oy vermeye başlamadan evvel açar. Ardından birleşik oy pusulalarının tamamını sandık kurulu mührüyle mühürler.",
+      "explanation": "Seçmene pusula verilirken pusulanın sandık kurulu mührünü taşıdığı ve hiçbir tarafında işaret bulunmadığı gösterilir. Bu, kurul üyelerine, müşahitlere ve seçmene yapılır.",
+      "articleRefs": [
+        "27"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Seçmen \"Evet\" mührünü oy pusulasında nereye basar?",
+      "back": "Yalnız tercih ettiği siyasi partiye ya da varsa oy vermek istediği bağımsız adaya ait özel dairenin içine basar.",
+      "explanation": "Seçmen, mührü bastığı siyasi partiye veya bağımsız adaya oy vermiş sayılır. Mührü Yüksek Seçim Kurulu yaptırır. Mührün oy verme süresince sandık kurulu başkanında bulundurulması mecburidir.",
+      "articleRefs": [
+        "28"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Oyunu kullanan seçmen \"Evet\" yazılı mührü kime geri verir?",
+      "back": "Sandık kurulu başkanına verir; ardından oyunu sandığa atar.",
+      "explanation": "Sıra şöyledir: pusula katlanır, zarfa konur, zarf yapıştırılır, mühür başkana geri verilir, zarf sandığa atılır.",
+      "articleRefs": [
+        "28"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "İttifak içindeki bir siyasi partiye ittifakın ortak oylarından düşen pay nasıl hesaplanır?",
+      "back": "Partinin tek başına aldığı oy, ittifaktaki partilerin toplam oyuna bölünür. Çıkan katsayı ittifakın ortak oyuyla çarpılır.",
+      "explanation": "Partinin o seçim çevresindeki geçerli oyu, tek başına aldığı oya ortak oylardan gelen payın eklenmesiyle bulunur. Bağımsız adayın geçerli oyu ise 28 inci maddenin ikinci fıkrası uyarınca elde ettiği geçerli oyların toplamıdır.",
+      "articleRefs": [
+        "29"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Sandık tutanakları birleştirilirken ittifakların ortak oy sayısını ve ortak oylardan gelen payı hangi kurul tutanağa geçirir?",
+      "back": "İlçe seçim kurulu. Siyasi partiler ile bağımsız adayların her birinin aldığı oy sayısını da tespit edip tutanağa geçirir.",
+      "articleRefs": [
+        "31"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Bir siyasi partinin milletvekili çıkarabilmesi için geçerli oyların yüzde kaçını geçmesi gerekir?",
+      "back": "Yüzde yedisini. Genel seçimlerde ülke genelinde, ara seçimlerde seçim yapılan çevrelerin tümünde geçmesi gerekir.",
+      "explanation": "Oranı Yüksek Seçim Kurulu hesaplar: her siyasi partinin ve ittifakın geçerli oy toplamını genel geçerli oy toplamına böler. Yüzde yedilik barajı aşanların isimlerini il seçim kurullarına bildirir ve ilan eder.",
+      "articleRefs": [
+        "33"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Seçim ittifakı yapan siyasi partilerin her biri için ayrıca yüzde yedilik baraj hesaplaması yapılır mı?",
+      "back": "Hayır. Barajda ittifak yapan partilerin aldıkları geçerli oyların toplamı esas alınır; bu partiler için ayrıca baraj hesaplaması yapılmaz.",
+      "explanation": "Bir siyasi parti listesinde yer alan bağımsız adayın seçilebilmesi de partisinin barajı aşmasına bağlıdır. Partinin yüzde yedilik barajı genel seçimde ülke genelinde, ara seçimde seçim yapılan çevrelerin tümünde aşması gerekir.",
+      "articleRefs": [
+        "33"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Barajı aşanlar ilan edildikten sonra bir seçim çevresinde seçim iptal edilirse ülke genelindeki oy yüzdesi yeniden tespit edilir mi?",
+      "back": "Hayır. Bu ilandan sonra bir veya birkaç seçim çevresinde seçimin iptaline karar verilmesi, ülke genelindeki oy yüzdesinin yeniden tespitini gerektirmez.",
+      "explanation": "İl seçim kurulları birleştirme tutanağını düzenledikten sonra sonuçları en seri şekilde telgrafla, ayrıca telefon veya telsizle Yüksek Seçim Kuruluna bildirir. Ülke geneli yüzde bu bilgilere göre hesaplanır.",
+      "articleRefs": [
+        "33"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Barajı aşamamış bir siyasi partinin oyları, seçim çevresindeki milletvekili hesabına katılır mı?",
+      "back": "Hayır. Hesap bağımsız adaylar, 33 üncü maddedeki oranı aşan partiler ve bu oranı aşan ittifakı oluşturan partiler için yapılır. Hiçbir parti ya da ittifak oranı aşamamışsa milletvekilleri üçüncü ve dördüncü fıkraya göre paylaştırılır.",
+      "explanation": "İttifak genel barajı geçerse, seçim çevresindeki hesap ve dağılım üçüncü fıkraya göre yapılır. Bu hesapta ittifaktaki her partinin o çevrede aldığı oy sayısı dikkate alınır.",
+      "articleRefs": [
+        "34"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Bir seçim çevresinde siyasi partilerin oy sayıları hangi sayılara bölünür?",
+      "back": "Önce bire, sonra ikiye, sonra üçe bölünür. Bölme, o çevrenin çıkaracağı milletvekili sayısına ulaşıncaya kadar sürer.",
+      "explanation": "Elde edilen paylar ile bağımsız adayların oyları, ayrım yapılmaksızın en büyükten en küçüğe sıralanır. Çevreden çıkacak milletvekili sayısı kadar milletvekili, rakamların büyüklük sırasına göre tahsis edilir. Son kalan milletvekilliği için eşit rakamlar varsa ad çekilir.",
+      "articleRefs": [
+        "34"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Bağımsız adayın aldığı oy da bire, ikiye, üçe bölünerek sıralamaya girer mi?",
+      "back": "Hayır. Bölme siyasi partilerin oy sayılarına uygulanır. Bağımsız adayların aldıkları oylar bölünmeden, paylarla birlikte en büyükten en küçüğe sıralanır.",
+      "explanation": "Sıralamada partilerin payları ile bağımsız adayların oyları arasında ayrım yapılmaz. Milletvekilliği rakamların büyüklük sırasına göre tahsis edilir.",
+      "articleRefs": [
+        "34"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Milletvekili seçilenler belli olur olmaz il seçim kurulları Yüksek Seçim Kuruluna hangi bilgileri bildirir?",
+      "back": "Seçilenlerin ad ve soyadlarını, parti adayı iseler mensup oldukları siyasi partiyi bildirir. Seçim çevreleri de gösterilir.",
+      "explanation": "Bildirim en seri şekilde telgrafla, ayrıca telefon veya telsizle yapılır.",
+      "articleRefs": [
+        "36"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Yüksek Seçim Kurulu, partilerin kazandığı milletvekili sayısını yayımlamak için itirazların karara bağlanmasını bekler mi?",
+      "back": "Hayır. Bütün illerden bilgiler tamamlanır tamamlanmaz yayın yapılır; tasdikli tutanak suretleri de itirazın karara bağlanması da beklenmez. Yayın Türkiye Radyo ve Televizyonları ile derhal yapılır.",
+      "explanation": "İl seçim kurullarından bilgi geldikçe de Yüksek Seçim Kurulu bu bilgileri bekletmeden radyo ve televizyonla yayımlar.",
+      "articleRefs": [
+        "37"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Yüksek Seçim Kurulunun seçim sonuçlarını açıklayan ikinci bildirisi hangi yollarla yayımlanır?",
+      "back": "Radyo ve Televizyon ile Resmi Gazete'de yayımlanır. Tutanaklar bütün illerden gönderildikten sonra en kısa zamanda yayımlanır.",
+      "explanation": "Bildiri iller ve seçim çevreleri itibarıyla şunlar arasındaki bilgileri açıklar: seçilenlerin ad ve soyadları, seçmen sayısı, oy kullanan seçmen sayısı, katılma oranı, geçerli oy pusulası sayısı, her parti ile bağımsız adayların kazandığı oy sayısı.",
+      "articleRefs": [
+        "37"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Seçim kurulları arasında seçimle ilgili haber, yazı, bilgi ve malzeme ulaştırılırken hangi araçlar öncelikle kullanılır?",
+      "back": "Devlete ait bütün ulaştırma ve haberleşme araçları.",
+      "articleRefs": [
+        "37"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Sandık kurulları tutanaklarındaki bilgiler, seçimi takip eden en geç ne kadar süre içinde yayımlanır?",
+      "back": "Bir yıl içinde. Devlet İstatistik Enstitüsü Başkanlığı (Türkiye İstatistik Kurumu Başkanlığı) yayımlar; Yüksek Seçim Kurulunun vereceği belgelere dayanır.",
+      "explanation": "Yayın iller, seçim çevreleri ve ilçeler, seçim bölgeleri ve sandık bölgeleri itibarıyla yapılır.",
+      "articleRefs": [
+        "38"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Milletvekili tutanaklarına yapılan itiraz üzerine yeniden döküm ve sayım yapılıp tutanaklar iptal edilirse yeni tutanağı kim verir?",
+      "back": "Yüksek Seçim Kurulu. Yeniden yapılan döküm, sayım ve hesap sonucuna göre seçildiği anlaşılanlara verir.",
+      "articleRefs": [
+        "39"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Bir seçim çevresinde seçim, seçim işlemleri sebebiyle iptal edilirse yeniden yapılacak seçimde oy verme günü hangisidir?",
+      "back": "Yüksek Seçim Kurulunun ilanından sonra gelen doksanıncı günü takip eden ilk Pazar günü.",
+      "explanation": "Yüksek Seçim Kurulu, iptal kararıyla birlikte o çevrede seçim yapılacağını Resmi Gazete ve diğer vasıtalarla derhal ilan eder.",
+      "articleRefs": [
+        "39"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Bir milletvekilinin tutanağı iptal edilirse yerine doğrudan ara seçim yapılır mı?",
+      "back": "Hayır. 34 ve 35 inci madde esaslarına göre sıradaki adaya tutanak verilir. Sırada olanlar yetmezse ara seçime ilişkin hükümlere uyulur.",
+      "explanation": "Bu kural iki hâlin dışındaki tutanak iptallerinde uygulanır: itiraz üzerine yeniden döküm ve sayımla verilen iptal ve seçimin seçim işlemleri sebebiyle iptali.",
+      "articleRefs": [
+        "39"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Oy pusulaları ve seçimle ilgili diğer evrak ne kadar süre saklanır?",
+      "back": "İki yıl. İlçelerde ilçe seçim kurulu başkanı, illerde il seçim kurulu başkanı saklar.",
+      "explanation": "Saklanan evrak arasında hesaba katılan, katılmayan ve itiraza uğrayan oy pusulaları vardır. Sayım ve döküm cetvelleri ile milletvekilliğine seçilme tutanakları da bunlara dahildir.",
+      "articleRefs": [
+        "40"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Saklanan seçim evrakı kimin talebi olmadıkça hiçbir yere gönderilemez?",
+      "back": "Yüksek Seçim Kurulunun.",
+      "articleRefs": [
+        "40"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Bağımsız adayın aldığı oy seçilmesine yetmezse emanete alınan para ne olur?",
+      "back": "Hazineye gelir yazılır.",
+      "articleRefs": [
+        "41"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Ölen bağımsız adayın emanetteki parası Hazineye gelir yazılır mı?",
+      "back": "Hayır. Para, seçimden sonra müracaat etmeleri hâlinde kanuni mirasçılarına geri verilir.",
+      "explanation": "Emanetteki para iki hâlde daha geri verilir: aday kanuni süre içinde adaylıktan vazgeçmişse ya da adaylığı reddedilmişse. Bunun için de seçimden sonra müracaat gerekir.",
+      "articleRefs": [
+        "41"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Milletvekili Seçimi Kanununda özel hüküm bulunmayan hâllerde hangi kanunun hükümleri uygulanır?",
+      "back": "298 sayılı Seçimlerin Temel Hükümleri ve Seçmen Kütükleri Hakkında Kanunun bu Kanuna aykırı olmayan hükümleri.",
+      "articleRefs": [
+        "42"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Milletvekili seçimlerinin sağlıklı ve düzenli gerçekleşmesi için ilke kararları almaya kim yetkilidir?",
+      "back": "Yüksek Seçim Kurulu.",
+      "articleRefs": [
+        "42"
+      ]
+    }
+  ]
+}

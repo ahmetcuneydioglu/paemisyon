@@ -1,0 +1,254 @@
+{
+  "deck": {
+    "topicId": "746633d6-5e90-404b-b0ea-ebcd670b4dc8",
+    "legislationSlug": "6216-anayasa-mahkemesinin-kurulusu-ve-yargilama-usulleri-hakkinda-kanun",
+    "sourceLabel": "AI bilgi kartı — 6216 Anayasa Mahkemesinin Kuruluşu ve Yargılama Usulleri Hakkında Kanun md 28–43",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: resmî madde metni + çıkmış sorular)"
+  },
+  "cards": [
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Anayasa Mahkemesinde Yüksek Disiplin Kurulu kaç raportörden oluşur?",
+      "back": "Üç raportörden; raportörler Genel Sekreterin önerisi ve Başkanın onayıyla belirlenir.",
+      "explanation": "Raportörlerden kıdemli olanı Kurula başkanlık eder. Disiplin cezasını gerektiren hâllerde ve verilecek cezalarda 657 sayılı Kanunun bu Kanuna aykırı olmayan hükümleri uygulanır.",
+      "articleRefs": [
+        "28"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Anayasa Mahkemesi personelinin atamasını kim yapar?",
+      "back": "Başkan; atama Genel Sekreterin önerisi üzerine yapılır.",
+      "explanation": "Mahkeme, hukuki, idari ve mali alanlarda çalışmak üzere yeterli sayıda personel istihdam eder. Bu personel hakkında 657 sayılı Kanunun bu Kanuna aykırı olmayan hükümleri uygulanır.",
+      "articleRefs": [
+        "30"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Anayasa Mahkemesinde geçici görevlendirmenin süresi kaç yılı geçemez?",
+      "back": "Bir yılı geçemez; ihtiyaç hâlinde bu süre altı aylık dönemler hâlinde uzatılabilir.",
+      "explanation": "Hâkim, savcı, Sayıştay denetçileri ile memur ve diğer kamu görevlileri geçici olarak görevlendirilebilir. Görevlendirmede kamu görevlisinin muvafakati aranır. Aylık, ödenek, zam, tazminat ve diğer mali ve sosyal haklar kurumlarınca ödenir.",
+      "articleRefs": [
+        "31"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Başkanın geçici görevlendirme talebi ilgili kurum ve kurullarca kaç gün içinde yerine getirilir?",
+      "back": "On gün içinde; kanuni bir engel olmaması hâlinde.",
+      "explanation": "Geçici görev süresi ilgililerin terfi ve emekliliklerinde kurumlarınca hesaba katılır, özlük hakları devam eder. Kendi kurumlarında aldıkları net aylık ile emsallerin aldığı ödemeler arasındaki fark ayrıca ödenir. Emsal, hâkim, savcı ve Sayıştay meslek mensupları için raportörlerdir. Memurlar ve diğer kamu görevlileri için emsal, Mahkemedeki emsali memurlardır. Bu fark, damga vergisi hariç herhangi bir vergiye tabi tutulmaz.",
+      "articleRefs": [
+        "31"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Anayasa Mahkemesi Başkanlığında sözleşmeli olarak kimler çalıştırılabilir?",
+      "back": "Basın müşaviri ve mütercim; kadroları karşılık gösterilmek suretiyle.",
+      "explanation": "Bu kişiler, 657 sayılı Kanun ve diğer kanunların sözleşmeli personel hükümlerine bağlı olmaksızın çalıştırılır. Brüt sözleşme ücretini Başkanlık tespit eder. Ücret, birinci derecedeki raportör yardımcısı için belirlenen brüt ortalama aylıkları geçemez.",
+      "articleRefs": [
+        "32"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Anayasa Mahkemesinde hizmet alımı yoluyla yerli ve yabancı uzman çalıştırmaya kim yetkilidir?",
+      "back": "Başkan; zaruri ve istisnai hâllerle sınırlı olarak, özel bir meslek bilgisi ve ihtisas gerektiren işlerde.",
+      "explanation": "Yetki, Mahkemenin ihtiyaç duyduğu alanlarda projelerin hazırlanması, gerçekleştirilmesi, işletilmesi ve işlerliği için şart olan işlere münhasırdır.",
+      "articleRefs": [
+        "33"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Anayasa Mahkemesinin hizmet birimlerinde çalışan 657 sayılı Kanuna tabi personel hangi bakanlığın kadrolarına atanabilir?",
+      "back": "Adalet Bakanlığının merkez ve taşra teşkilatı kadrolarına; mükteseplerine uygun olarak.",
+      "explanation": "Atamayı Adalet Bakanlığı yapar. Atama, Genel Sekreterin teklifi ve Başkanın uygun görmesi üzerine olur. 27 nci maddenin birinci fıkrasına göre atananlar bu hükmün dışında tutulmuştur.",
+      "articleRefs": [
+        "34"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Türkiye Büyük Millet Meclisindeki üye sayılarında eşitlik varsa iptal davası açabilecek siyasi parti grupları nasıl belirlenir?",
+      "back": "Son milletvekili genel seçiminde alınan geçerli oy sayısına göre.",
+      "explanation": "Bu ölçüt, en fazla üyeye sahip iki siyasi parti grubu belirlenirken üye sayılarının eşit çıktığı hâlde uygulanır.",
+      "articleRefs": [
+        "35"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Türkiye Büyük Millet Meclisinde en fazla üyeye sahip siyasi parti grubu, bir kanunun şekil bakımından Anayasaya aykırılığı iddiasıyla iptal davası açabilir mi?",
+      "back": "Hayır. Anayasa değişikliklerinin ve kanunların şekil bakımından aykırılığı iddiasıyla dava açmaya Cumhurbaşkanı veya Meclis üye tamsayısının en az beşte biri oranındaki milletvekilleri yetkilidir.",
+      "explanation": "Kanunlar, Cumhurbaşkanlığı kararnameleri ve İçtüzük aleyhine açılan genel iptal davasında siyasi parti grupları da yetkilidir. Anayasa değişikliklerinin ve kanunların şekil bakımından aykırılığına özgü hükümde ise yalnız Cumhurbaşkanı ve en az beşte bir oranındaki milletvekilleri sayılır.",
+      "articleRefs": [
+        "35"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Anayasa değişikliklerine karşı esas bakımından aykırılık iddiasıyla iptal davası açılabilir mi?",
+      "back": "Hayır. Anayasa değişikliklerine karşı iptal davaları yalnız şekil bakımından aykırılık iddiasıyla açılabilir.",
+      "explanation": "Şekil bozukluğuna dayanan iptal davaları Mahkeme tarafından öncelikle incelenerek karara bağlanır.",
+      "articleRefs": [
+        "36"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Bir davaya bakan mahkeme, şekil bozukluğuna dayanan Anayasaya aykırılık iddiasını ileri sürebilir mi?",
+      "back": "Hayır; şekil bozukluğuna dayanan Anayasaya aykırılık iddiası mahkemeler tarafından ileri sürülemez.",
+      "explanation": "Şekil bozukluğu iptal davasıyla ileri sürülür. Bu davalar Mahkemece öncelikle incelenerek karara bağlanır.",
+      "articleRefs": [
+        "36"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Cumhurbaşkanlığı kararnamesinin şekil yönünden Anayasaya aykırılığı iddiasıyla iptal davası açma süresi on gün müdür?",
+      "back": "Hayır. Cumhurbaşkanlığı kararnamelerinde şekil ve esas yönünden süre altmış gündür. On gün, Anayasa değişiklikleri ile kanunların şekil yönü içindir.",
+      "explanation": "Türkiye Büyük Millet Meclisi İçtüzüğü için de şekil ve esas yönünden süre altmış gündür. Süreler Resmî Gazetede yayımlanmasından başlar.",
+      "articleRefs": [
+        "37"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Siyasi parti grubunun iptal davası açabilmesi için hangi karar gerekir?",
+      "back": "Grup genel kurulunun, üye tam sayısının salt çoğunluğuyla alacağı karar.",
+      "explanation": "Grup genel kurulu kararının onaylı örnekleri dava dilekçesiyle birlikte Genel Sekreterliğe verilir. Dilekçeyi imzalayanların grup başkanı veya vekili olduğunu gösteren onaylı belge örnekleri de eklenir.",
+      "articleRefs": [
+        "38"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Anayasa Mahkemesinde iptal davası hangi tarihte açılmış sayılır?",
+      "back": "Dava dilekçesinin Genel Sekreterlikçe Yazı İşleri Müdürlüğüne havale edildiği tarihte.",
+      "explanation": "Davayı açanlara Genel Sekreterlikçe başvurunun kayda alındığına dair bir belge verilir.",
+      "articleRefs": [
+        "38"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Milletvekillerince açılan iptal davasında, Mahkemece tebligat yapılmak üzere dilekçede kaç üyenin adı gösterilir?",
+      "back": "İki üyenin adı gösterilir.",
+      "explanation": "Dilekçede davayı açanların sıra numarasıyla ad ve soyadları, seçildikleri bölgeler ve imzaları yer alır. İmzaları içeren her sayfa Türkiye Büyük Millet Meclisi Başkanı veya belirleyeceği görevlice imza ve mühürle onaylanır.",
+      "articleRefs": [
+        "38"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "İptal davası dilekçesinin gerekli şartları taşıyıp taşımadığı kayıt tarihinden itibaren kaç gün içinde incelenir?",
+      "back": "On gün içinde.",
+      "explanation": "İnceleme, dilekçenin 38 inci maddede gösterilen şartları taşıyıp taşımadığına yöneliktir. Eksiklik varsa kararla saptanır ve tamamlanması ilgililere tebliğ olunur.",
+      "articleRefs": [
+        "39"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "İptal davası dilekçesindeki eksikliklerin tamamlanması için verilecek süre kaç günden az olamaz?",
+      "back": "Onbeş günden az olamaz. Eksiklik bu süre içinde tamamlanmazsa Genel Kurulca iptal davasının açılmamış sayılmasına karar verilir.",
+      "explanation": "Milletvekillerince açılan davada tebligat, dilekçede belirtilen milletvekillerine yapılır. Dilekçede belirtilmemişse tebligat, dilekçenin en başında adı ve soyadı yazılı iki üyeye yapılır.",
+      "articleRefs": [
+        "39"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Esasın incelenmesine karar verilen iptal davasında dava dilekçesi ve ekleri kimlere gönderilir?",
+      "back": "Türkiye Büyük Millet Meclisi Başkanlığına, Cumhurbaşkanlığına ve iptal davası açmaya yetkili siyasi parti gruplarına.",
+      "explanation": "Bu makamlar, iptal davasıyla ilgili yazılı görüşlerini değerlendirilmek üzere Mahkemeye bildirebilirler.",
+      "articleRefs": [
+        "39"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Anayasa Mahkemesi beş ay içinde karar vermezse, davaya bakan mahkeme kararı beklemek zorunda mıdır?",
+      "back": "Hayır. Mahkeme davayı yürürlükteki hükümlere göre sonuçlandırır. Ancak Anayasa Mahkemesinin kararı esas hakkındaki karar kesinleşinceye kadar gelirse mahkeme ona uymak zorundadır.",
+      "explanation": "Anayasa Mahkemesi kararını işin kendisine noksansız olarak gelişinden başlayarak beş ay içinde verir ve açıklar.",
+      "articleRefs": [
+        "40"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Taraflardan birinin ileri sürdüğü Anayasaya aykırılık iddiası davaya bakan mahkemece ciddi görülmezse ne olur?",
+      "back": "Talep gerekçeleri gösterilerek reddedilir; bu husus esas hükümle birlikte temyiz konusu yapılabilir.",
+      "explanation": "Mahkeme iddiayı ciddi bulursa ya da uygulanacak kuralı kendisi Anayasaya aykırı görürse belgeleri dizi listesine bağlayarak Anayasa Mahkemesine gönderir. Gönderilecek belgeler gerekçeli başvuru kararının aslı ve tutanağın onaylı örneğidir. Dava dilekçesi, iddianame veya davayı açan belgeler ile dosyanın ilgili bölümlerinin onaylı örnekleri de eklenir.",
+      "articleRefs": [
+        "40"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "İtiraz yoluna başvuran mahkemede itiraz konusu kuralın uygulanacağı başka dava dosyaları varsa, yapılan itiraz başvurusu bu dosyalar için ne sayılır?",
+      "back": "Bu dosyalar için de bekletici mesele sayılır.",
+      "articleRefs": [
+        "41"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Usulüne göre yürürlüğe konulmuş bir milletlerarası andlaşma aleyhine esas bakımından iptal davası açılabilir mi?",
+      "back": "Hayır. Bu andlaşmalar aleyhine şekil ve esas bakımından iptal davası açılamaz; mahkemeler de Anayasaya aykırılık iddiası ileri süremez.",
+      "articleRefs": [
+        "42"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "İptal davaları ve itiraz başvurularında Anayasa Mahkemesi incelemeyi nasıl yapar?",
+      "back": "Dosya üzerinden yapar. Gerekli gördüğü hâllerde ilgilileri ve konu hakkında bilgisi olanları sözlü açıklama için çağırabilir.",
+      "explanation": "Cumhurbaşkanı adına sözlü açıklamada Cumhurbaşkanının tensip edeceği görevli bulunur.",
+      "articleRefs": [
+        "43"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Anayasa Mahkemesi, iptal davasında ileri sürülen gerekçelerle bağlı mıdır?",
+      "back": "Hayır. Başka gerekçeyle de Anayasaya aykırılık kararı verebilir; ancak taleple bağlı kalmak zorundadır.",
+      "explanation": "Başvuru yalnız belirli madde veya hükümlere karşı yapılmış olabilir. Bunların iptali diğer hükümleri ya da tümünü uygulanamaz kılıyorsa Mahkeme bu öteki hükümlerin ya da tümünün iptaline de karar verebilir. Bunun şartı, durumu gerekçesinde belirtmesidir.",
+      "articleRefs": [
+        "43"
+      ],
+      "counterNumbers": []
+    }
+  ]
+}

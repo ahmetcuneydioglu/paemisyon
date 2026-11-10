@@ -1,0 +1,220 @@
+{
+  "deck": {
+    "topicId": "f9277971-f73f-4134-914d-0584c1190e6b",
+    "legislationSlug": "7062-yuksek-secim-kurulunun-teskilat-ve-gorevleri-hakkinda-kanun",
+    "sourceLabel": "AI bilgi kartı — 7062 Yüksek Seçim Kurulunun Teşkilat ve Görevleri Hakkında Kanun md 1–14",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: resmî madde metni + çıkmış sorular)"
+  },
+  "cards": [
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Yüksek Seçim Kuruluna emir ve talimat verebilecek bir organ ya da makam var mı?",
+      "back": "Hayır. Hiçbir organ, makam, merci veya kişi Kurula emir ve talimat veremez.",
+      "explanation": "Kurul, görevlerini yerine getirirken ve yetkilerini kullanırken bağımsız ve tarafsızdır.",
+      "articleRefs": [
+        "3"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Yüksek Seçim Kurulu üyelerinin görev süresi kaç yıldır?",
+      "back": "Altı yıldır. Süresi biten üye yeniden seçilebilir.",
+      "explanation": "Görev süresi biten üyelerin yerine üç yılda bir, ocak ayının ikinci yarısında seçim yapılır. Görev süresi, seçilme tarihine bakılmaksızın bu ayın son gününden itibaren hesaplanır. Yeni üyelerin tamamı seçilinceye kadar eski üyeler görevlerine devam eder.",
+      "articleRefs": [
+        "4"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Başkan ve Başkanvekili seçildikten sonra Yargıtay ve Danıştaydan seçilmiş üyeler arasından ad çekmeyle kaçar yedek üye belirlenir?",
+      "back": "İkişer yedek üye belirlenir. Başkan ve Başkanvekili ad çekmeye girmez.",
+      "explanation": "Başkan ve Başkanvekili, Kurul üyeleri arasından gizli oyla ve üye tamsayısının salt çoğunluğuyla seçilir. Her yenileme seçiminden sonra yedek üyeler aynı ad çekme usulüyle yeniden belirlenir.",
+      "articleRefs": [
+        "4"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Yüksek Seçim Kurulunun prensip kararları kaç gün içinde Resmî Gazete'de yayımlanır?",
+      "back": "On beş gün içinde yayımlanır.",
+      "articleRefs": [
+        "5"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Yüksek Seçim Kurulunun seçime ilişkin bütün kararları Resmî Gazete'de yayımlanır mı?",
+      "back": "Hayır. Resmî Gazete'de yayımlanan kararlar prensip kararlarıdır. Seçime ilişkin diğer kararlar Kurulun resmî internet sitesinde yayımlanır.",
+      "explanation": "Prensip kararları için Resmî Gazete'de yayım süresi on beş gündür.",
+      "articleRefs": [
+        "5"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Yüksek Seçim Kurulunun Cumhurbaşkanı seçimi tutanaklarına ilişkin görevi nedir?",
+      "back": "Cumhurbaşkanı seçimi tutanaklarını kabul eder. Seçilen Cumhurbaşkanı adına seçildiğine dair tutanak düzenler.",
+      "explanation": "Türkiye Büyük Millet Meclisi üyelerinin seçim tutanaklarını kabul etmek de Kurulun görevidir.",
+      "articleRefs": [
+        "6"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Yüksek Seçim Kurulunun engelli seçmenlere ilişkin görevi nedir?",
+      "back": "Engelli seçmenlerin oy kullanmalarını kolaylaştıracak her türlü tedbiri almaktır.",
+      "explanation": "Yurt dışındaki seçmenlerin oy kullanmalarını kolaylaştıracak tedbirleri almak da Kurulun görevleri arasındadır.",
+      "articleRefs": [
+        "6"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Yüksek Seçim Kurulunun merkez teşkilatı hangi birimlerden oluşur?",
+      "back": "Seçmen Kütüğü Genel Müdürlüğü, Seçim Hizmetleri Genel Müdürlüğü, İnsan Kaynakları Dairesi Başkanlığı, Strateji Geliştirme Dairesi Başkanlığı ve Özel Kalem Müdürlüğünden oluşur.",
+      "explanation": "Kurul teşkilatı, merkez ve taşra birimlerinden oluşur.",
+      "articleRefs": [
+        "7"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Yüksek Seçim Kurulunun taşra teşkilatında her ilde, il seçim kuruluna bağlı bir seçim müdürlüğü bulunur mu?",
+      "back": "Hayır. Taşra teşkilatı, ilçe ve yurt dışı ilçe seçim kurullarına bağlı seçim müdürlüklerinden oluşur. İl seçim kuruluna bağlı seçim müdürlüğünü ise Kurul, gerekli gördüğü illerde kurabilir.",
+      "articleRefs": [
+        "7"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Yüksek Seçim Kurulu Başkanına, yokluğunda kim vekâlet eder?",
+      "back": "Başkanvekili vekâlet eder; onun da yokluğunda en yaşlı üye vekâlet eder.",
+      "explanation": "Başkan, Kurulun genel yönetim ve temsilinden sorumludur.",
+      "articleRefs": [
+        "8"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Yüksek Seçim Kurulunda genel müdür, genel müdür yardımcısı ve daire başkanlarını kim atar?",
+      "back": "Başkan atar. Diğer personeli atama yetkisi de Başkandadır.",
+      "explanation": "Başkanın diğer görevleri arasında şunlar da vardır: Kurulun toplantı gündemini belirlemek, toplantılara başkanlık etmek ve Kurul kararlarının yerine getirilmesini sağlamak. Başkan ayrıca gerektiğinde komisyon kurulmasını Kurula teklif eder.",
+      "articleRefs": [
+        "8"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Yüksek Seçim Kurulu Başkanı yetkilerinin bir kısmını en yaşlı üyeye devredebilir mi?",
+      "back": "Hayır. Başkan, yetkilerinin bir kısmını yazılı olarak yalnızca Başkanvekiline devredebilir. En yaşlı üye ise Başkan ve Başkanvekilinin yokluğunda vekâlet eder.",
+      "articleRefs": [
+        "8"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Yüksek Seçim Kurulunda mükerrer oy kullanan seçmenleri tespit etmek hangi birimin görevidir?",
+      "back": "Seçmen Kütüğü Genel Müdürlüğünün görevidir.",
+      "explanation": "Bu birimin başka görevleri de vardır: seçmen kütüğünü oluşturmak ve güncellemek, seçmenleri eksiksiz belirlemek, mükerrer seçmen kaydını önlemek ve Kurulun bilgi işlem hizmetlerini yürütmek.",
+      "articleRefs": [
+        "9"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Seçmen Kütüğü Genel Müdürlüğü çalışmalarını Yüksek Seçim Kuruluna hangi aralıklarla raporlar?",
+      "back": "Üç aylık raporlarla raporlar. Raporlar, Kurulca onaylanan programa uygun olarak sunulur.",
+      "explanation": "Genel Müdürlük, Kurulca belirlenecek ilkeler doğrultusunda yıllık programları hazırlar ve Kurulun onayına sunar.",
+      "articleRefs": [
+        "9"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Yüksek Seçim Kurulunun yazışmalarını Seçmen Kütüğü Genel Müdürlüğü mü yapar?",
+      "back": "Hayır. Kurulun yazışmalarını Seçim Hizmetleri Genel Müdürlüğü yapar.",
+      "explanation": "Seçim Hizmetleri Genel Müdürlüğünün başka görevleri de vardır: seçim araç ve gereçlerine ilişkin işleri yürütür. 5018 sayılı Kamu Malî Yönetimi ve Kontrol Kanunu çerçevesinde kiralama ve satın alma işlerini yürütür. Genel evrak ve arşiv faaliyetleri ile sivil savunma ve seferberlik hizmetleri de bu birimdedir.",
+      "articleRefs": [
+        "9"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Yüksek Seçim Kurulu Başkanı ile il ve ilçe seçim kurulu başkanları, seçim iş ve işlemlerinde kimleri görevlendiremez?",
+      "back": "Hâkimleri, Cumhuriyet savcılarını, vali ve kaymakamları, asker kişileri, kolluk amir ve memurlarını görevlendiremez.",
+      "explanation": "Bunlar dışındaki kişiler görevlendirilebilir: kamu kurum ve kuruluşları, kamu iktisadi teşebbüsleri ve iktisadi devlet teşekküllerindeki bütün memur, işçi ve hizmetliler. Görevlendirme, Kurulun belirleyeceği ilkeler çerçevesinde yapılır. Bunların dışında da gerekli görülen kimseler çalıştırılabilir.",
+      "articleRefs": [
+        "10"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Seçim müdürü, geçici görevde geçen süreler de dâhil, aynı yerde kural olarak en fazla kaç yıl çalışabilir?",
+      "back": "Altı yıl çalışabilir. İhtiyaç duyulursa Başkanın kararıyla en fazla bir yıl daha aynı yerde çalışabilir.",
+      "explanation": "Seçim müdürü ve seçim müdür yardımcıları, nüfusa kayıtlı oldukları ilçelerde görev yapamaz. Görev süreleri bölge esasına göre belirlenir. Bölgeleri ve buralarda geçirilecek süreleri, coğrafi şartlar ile sosyal ve ekonomik imkânları dikkate alarak Kurul belirler.",
+      "articleRefs": [
+        "10"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Seçim müdürlüğüne ve seçim müdür yardımcılığına atanacaklarda en az kaç yıllık yükseköğrenim aranır?",
+      "back": "En az dört yıllık yükseköğrenim aranır. Bu öğrenim hukuk fakültesi ya da siyasal bilgiler, idari bilimler, iktisat ve maliye alanlarında yapılmış olmalıdır; bunlara denkliği kabul edilmiş yabancı öğretim kurumları da geçerlidir.",
+      "explanation": "Seçim müdürü ve seçim müdür yardımcıları, Kurul personeli arasında yapılacak veya yaptırılacak yazılı ve sözlü sınav sonucuna göre Başkan tarafından atanır.",
+      "articleRefs": [
+        "10"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Seçim müdürlükleri, seçim kurulu başkanlarınca yılda en az kaç defa denetlenir?",
+      "back": "Yılda en az bir defa denetlenir. Denetim her yıl ocak ayı içinde yapılır ve geçen bir yıllık işlemleri kapsar.",
+      "articleRefs": [
+        "11"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Seçim müdürlüğünün yıllık denetim raporu yalnızca seçim müdürlüğünde mi saklanır?",
+      "back": "Hayır. Raporun bir örneği seçim müdürlüğünde saklanır. Diğer örneği en geç ocak ayının sonuna kadar Kurul Başkanlığına gönderilir.",
+      "articleRefs": [
+        "11"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Seçim müdürlüklerini seçim iş ve işlemleri dışındaki konularda kimler denetler?",
+      "back": "Adalet müfettişleri denetler. Denetim, Kurulun görüşü alınarak Adalet Bakanlığınca çıkarılan yönetmelikteki usul ve esaslara göre yapılır.",
+      "explanation": "İl ve ilçe seçim müdürlüklerini seçim kurulu başkanları yönetir. Yönetim, bu Kanun ile 298 sayılı Seçimlerin Temel Hükümleri ve Seçmen Kütükleri Hakkında Kanun çerçevesinde yapılır. Seçim müdürlükleri seçim kurulu başkanlarınca da denetlenir.",
+      "articleRefs": [
+        "11"
+      ]
+    }
+  ]
+}

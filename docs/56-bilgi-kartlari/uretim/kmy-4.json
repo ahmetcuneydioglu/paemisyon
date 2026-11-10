@@ -1,0 +1,305 @@
+{
+  "deck": {
+    "topicId": "270990de-e156-4db0-b5fb-eb469562dd8a",
+    "legislationSlug": "5018-sayili-kamu-mali-yonetimi-ve-kontrol-kanunu",
+    "sourceLabel": "AI bilgi kartı — 5018 Sayılı Kamu Malî Yönetimi ve Kontrol Kanunu md 62–83, Ek 1, Ek 2, Ek 3, Ek 4, Ek 5, Ek 6, Ek 7, Ek 8, Ek 9",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: resmî madde metni + çıkmış sorular)"
+  },
+  "cards": [
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Muhasebe yetkilisi olarak atanmak için kamu idarelerinin muhasebe hizmetlerinde en az ne kadar çalışmış olmak gerekir?",
+      "back": "En az dört yıl. Bu süreyle birlikte bu idarelerde muhasebe yetkilisi yardımcısı veya eşiti görevlerde bulunmuş olmak da aranır.",
+      "explanation": "Ayrıca en az dört yıllık yüksek öğrenim görmüş olmak ve muhasebe yetkilisi sertifikası almış olmak gerekir. Aylıktan kesme ve kademe ilerlemesinin durdurulması cezası almamış olmak da şartlar arasındadır.",
+      "articleRefs": [
+        "62"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Nüfusu 25.000'in altındaki bir ilçe belediyesine atanacak muhasebe yetkilisinde sertifika şartı aranır mı?",
+      "back": "Evet. Bu yerlerde en az lise mezuniyeti ve kamu idarelerinin muhasebe hizmetlerinde en az dört yıl çalışmış olmak yeterlidir; sertifika şartı ise aynen korunur.",
+      "explanation": "Aynı kolaylık belde belediyeleri ile mahalli idare birliklerinde de uygulanır. Bu yerlerde de aylıktan kesme ve kademe ilerlemesinin durdurulması cezası almamış olmak ile görevin gerektirdiği bilgi ve temsil yeteneğine sahip olmak aranır.",
+      "articleRefs": [
+        "62"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Genel bütçe kapsamındaki kamu idarelerinde muhasebe yetkilisini kim atar?",
+      "back": "Hazine ve Maliye Bakanlığı atar. Diğer kamu idarelerinde muhasebe yetkilisini üst yöneticiler atar.",
+      "explanation": "Muhasebe yetkilisi olacak görevlileri meslekî konularda eğitime tâbi tutan da Hazine ve Maliye Bakanlığıdır. Bu eğitimi başarıyla tamamlayanlara sertifika verilir.",
+      "articleRefs": [
+        "62"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Doğrudan üst yöneticiye bağlı iç denetim birimi başkanlıkları kimin uygun görüşü üzerine kurulabilir?",
+      "back": "İç Denetim Koordinasyon Kurulunun uygun görüşü üzerine kurulabilir. Kamu idaresinin yapısı ve personel sayısı dikkate alınır.",
+      "explanation": "İç denetim, iç denetçiler tarafından yapılan bağımsız, nesnel güvence sağlama ve danışmanlık faaliyetidir. Kaynakların ekonomiklik, etkililik ve verimlilik esaslarına göre yönetilip yönetilmediğini değerlendirir.",
+      "articleRefs": [
+        "63"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Kamu idaresinin yıllık iç denetim programını kim hazırlar?",
+      "back": "İç denetçiler hazırlar. Üst yöneticinin önerileri dikkate alınır ve programı üst yönetici onaylar.",
+      "explanation": "İç denetçi bu programı, İç Denetim Koordinasyon Kurulunca belirlenen ve uluslararası kabul görmüş kontrol ve denetim standartlarına uygun şekilde yürütür.",
+      "articleRefs": [
+        "64"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Üst yönetici, iç denetim raporlarını ve bunlar üzerine yapılan işlemleri İç Denetim Koordinasyon Kuruluna en geç ne kadar süre içinde gönderir?",
+      "back": "En geç iki ay içinde gönderir.",
+      "explanation": "Raporlar önce üst yöneticiye sunulur. Üst yönetici raporları değerlendirir ve gereği için ilgili birimler ile malî hizmetler birimine verir.",
+      "articleRefs": [
+        "64"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "İç denetçi raporunu doğrudan malî hizmetler birimine sunabilir mi?",
+      "back": "Hayır. İç denetçiler raporlarını doğrudan üst yöneticiye sunar; raporu malî hizmetler birimine, değerlendirdikten sonra üst yönetici verir.",
+      "explanation": "İç denetçi görevinde bağımsızdır. Kendisine asli görevi dışında hiçbir görev verilemez ve yaptırılamaz.",
+      "articleRefs": [
+        "64"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "İç denetçi olarak atanmak için kamu idarelerinde denetim elemanı olarak sekiz yıl çalışmış olmak mı gerekir?",
+      "back": "Hayır. Denetim elemanı olarak en az beş yıl yeterlidir; en az sekiz yıl, İç Denetim Koordinasyon Kurulunca belirlenen alanlarda çalışanlar için aranır.",
+      "explanation": "Ayrıca Kurulun belirlediği alanlarda en az dört yıllık yüksek öğrenim görmüş olmak gerekir. Atama, iç denetim eğitimini başarıyla tamamlamış sertifikalı adaylar arasından yapılır.",
+      "articleRefs": [
+        "65"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Bakanlıklar ve bağlı idarelerde iç denetçiyi kim atar?",
+      "back": "Üst yöneticinin teklifi üzerine Bakan atar. Diğer idarelerde iç denetçiyi üst yöneticiler atar.",
+      "explanation": "Atama sertifikalı adaylar arasından yapılır. İç denetçi aynı usulle görevden alınır.",
+      "articleRefs": [
+        "65"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Hazine ve Maliye Bakanlığına bağlı İç Denetim Koordinasyon Kurulu kaç üyeden oluşur?",
+      "back": "Yedi üyeden oluşur.",
+      "explanation": "Kurul, gerekli görülen hallerde oy hakkı olmamak kaydıyla uzman kişileri toplantılara davet edebilir. Kurulda görevlendirilenlerin asli görevleri devam eder.",
+      "articleRefs": [
+        "66"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "İç Denetim Koordinasyon Kurulunun başkan ve üyelerine ayda en çok kaç toplantı günü için toplantı ücreti ödenir?",
+      "back": "Ayda dört toplantı gününe kadar ödenir. Her toplantı günü için ücret, (3000) gösterge rakamının memur aylık katsayısıyla çarpımıyla bulunur.",
+      "articleRefs": [
+        "66"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "İlçe ve belde belediyeleri için iç denetçi atanıp atanmayacağına kim karar verir?",
+      "back": "İç Denetim Koordinasyon Kurulu karar verir. Bunu yaparken işlem hacimlerini ve personel sayılarını dikkate alır.",
+      "explanation": "Kurul ayrıca iç denetçilerin uyacakları etik kuralları belirler ve eğitim programlarını düzenler. İdarelerin iç denetim raporlarını konsolide ederek yıllık rapor halinde Hazine ve Maliye Bakanına sunar.",
+      "articleRefs": [
+        "67"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Sayıştay, dış denetim genel değerlendirme raporunu kime sunar?",
+      "back": "Türkiye Büyük Millet Meclisine sunar.",
+      "explanation": "Rapor, denetim raporları ve bunlara üst yöneticilerin verdiği cevaplar dikkate alınarak düzenlenir. Dış denetim sırasında iç denetçi raporları, talep edilmesi halinde Sayıştay denetçilerinin bilgisine sunulur.",
+      "articleRefs": [
+        "68"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Sayıştayın denetimini kim yapar?",
+      "back": "Her yıl Türkiye Büyük Millet Meclisi Başkanlık Divanınca görevlendirilen bir komisyon yapar. Komisyon, gerekli mesleki niteliklere sahip denetim elemanlarından oluşur.",
+      "explanation": "Komisyon denetimi Türkiye Büyük Millet Meclisi adına yapar. Denetimde hesaplar ve bunlara ilişkin belgeler esas alınır.",
+      "articleRefs": [
+        "69"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Kamu zararı oluşmadıysa, ödenek gönderme belgesindeki ödenek miktarını aşan harcama talimatı veren harcama yetkilisine para cezası verilebilir mi?",
+      "back": "Evet. Kamu zararı oluşmasa da bir aylık net ödemeler toplamının iki katı tutarına kadar para cezası verilir.",
+      "explanation": "Aynı ceza; bütçelere, ayrıntılı harcama programlarına ve serbest bırakma oranlarına aykırı harcama talimatında da uygulanır. Net ödemeler toplamına her türlü aylık, ödenek, zam ve tazminat dahildir.",
+      "articleRefs": [
+        "70"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Tespit edilen kamu zararı hangi tarihten itibaren faiziyle birlikte tahsil edilir?",
+      "back": "Zararın oluştuğu tarihten itibaren tahsil edilir. Faiz ilgili mevzuatına göre hesaplanır ve ilgililerden alınır.",
+      "explanation": "Kamu zararı, kamu görevlilerinin kasıt, kusur veya ihmallerinden kaynaklanan mevzuata aykırı karar, işlem veya eylemleri sonucunda kamu kaynağında artışa engel olunması veya eksilmeye neden olunmasıdır. Mal alınmadan ödeme yapılması ve rayiç bedelinden daha yüksek fiyatla alım, kamu zararının belirlenmesinde esas alınan haller arasındadır.",
+      "articleRefs": [
+        "71"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "5018 sayılı Kanundaki para cezaları, ilgilinin bir aylık net ödemelerinin hangi oranında kesilerek tahsil edilir?",
+      "back": "Dörtte biri oranında kesilir. Kesinti, karar verilmesini izleyen ay başından başlar.",
+      "explanation": "Kesinti hesabında her türlü aylık, ödenek, zam ve tazminat dahil bir aylık net ödemeler esas alınır.",
+      "articleRefs": [
+        "73"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Para cezasının aylıktan kesilerek tahsil edilmesi için hüküm alınması gerekir mi?",
+      "back": "Hayır. Para cezası, herhangi bir hüküm almaya gerek kalmaksızın ilgilinin aylık net ödemelerinden kesilerek tahsil olunur.",
+      "explanation": "Para cezasını ilgili kamu idaresinin üst yöneticisi verir.",
+      "articleRefs": [
+        "73"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Tespit ve tahsil edilemeyen kamu zararları ile para cezaları kaçıncı yılın sonunda zamanaşımına uğrar?",
+      "back": "Onuncu yılın sonunda zamanaşımına uğrar. Süre, fiilin işlendiği yılı izleyen malî yılın başından başlar.",
+      "explanation": "Zamanaşımını kesen ve durduran genel hükümler saklıdır.",
+      "articleRefs": [
+        "74"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Merkezî yönetim kapsamındaki kamu idarelerinde malî yönetim ve kontrol sistemi zaafa uğradığında teftişi kim ettirir?",
+      "back": "Cumhurbaşkanı teftiş ettirir. Teftiş, tüm malî yönetim ve kontrol sistemleri ile malî karar ve işlemlerin mevzuata uygunluğu yönünden yapılır.",
+      "explanation": "Aynı yetki, yolsuzluk veya kamu zararına yönelik emarelerin ortaya çıktığı durumlarda da kullanılır. Mahallî idarelerde ise teftişi İçişleri Bakanı ettirir (md 77).",
+      "articleRefs": [
+        "75",
+        "77"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Bir belediyede yolsuzluk emaresi ortaya çıktığında yetkili denetim elemanlarına teftişi kim yaptırır?",
+      "back": "İçişleri Bakanı yaptırır. Bunun için belediye başkanının talep etmesi ya da doğrudan Cumhurbaşkanının onayı gerekir.",
+      "explanation": "İl özel idarelerinde talep ilgili validen gelir. Teftiş raporlarının bir örneği İç Denetim Koordinasyon Kuruluna gönderilir. Bir örneği de gerekli işlemler için ilgili vali veya belediye başkanına gönderilir.",
+      "articleRefs": [
+        "77"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Kamu iktisadi teşebbüsleri ve kamu şirketlerinden, gayrisafi hasılatın en çok yüzde kaçı tutarında bedel tahsil edilip genel bütçeye gelir kaydedilebilir?",
+      "back": "Yüzde onbeşine kadar tahsil edilebilir. Bedel alınacak kurumları, oranları, ödeme yerini ve zamanını Cumhurbaşkanı belirler.",
+      "explanation": "Zamanında ödenmeyen hasılat paylarına Cumhurbaşkanınca belirlenen oranda zam uygulanır ve 6183 sayılı Kanuna göre tahsil edilir. Zam, payları ödeme yetkisi verilmiş görevlilerden alınır. Hazine ve Maliye Bakanlığınca verilmiş ek süreler için zam uygulanmaz.",
+      "articleRefs": [
+        "78"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Düzenleyici ve denetleyici kurumların üçer aylık gelir fazlaları genel bütçeye ne zamana kadar aktarılır?",
+      "back": "Her üç ayda bir, izleyen ayın onbeşine kadar aktarılır.",
+      "explanation": "Süresi içinde ödenmeyen tutarlar 6183 sayılı Kanuna göre gecikme zammı uygulanarak takip ve tahsil edilir.",
+      "articleRefs": [
+        "78"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Takibat giderleri asıl alacak tutarından fazla olacak kamu alacaklarını kayıtlardan çıkarmaya kim yetkilidir?",
+      "back": "Üst yöneticiler yetkilidir. Bu yetki, merkezî yönetim bütçe kanununda gösterilen tutarlara kadar olan alacakları kapsar.",
+      "explanation": "Zarurî veya mücbir sebeplerle takip ve tahsil imkânı kalmayan alacaklar da bu kapsamdadır. 6183 sayılı Kanun kapsamında izlenen kamu alacakları bu yetkinin dışında kalır; özel mevzuatındaki hükümler saklıdır.",
+      "articleRefs": [
+        "79"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Eğitimde Fırsatları Artırma ve Teknolojiyi İyileştirme Hareketi (FATİH) Projesi kapsamında Millî Eğitim Bakanlığı kaç yıla kadar gelecek yıllara yaygın yüklenmeye girişebilir?",
+      "back": "15 yıla kadar girişebilir. Bunun için üst yöneticinin onayı gerekir.",
+      "explanation": "Kapsamda yazılım, donanım, dijital içerik alımı, internet erişim hizmetleri ve ağ altyapısı vardır. AR-GE merkezi ile veri merkezi kurulumu ve bunların bakım, onarım ve işletme işleri de bu kapsamdadır.",
+      "articleRefs": [
+        "Ek 3"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Yeniden teşkilatlanmada personel giderleri tertiplerinden diğer tertiplere yapılan ödenek aktarması, md 21'deki sınırlamalardan muaf mıdır?",
+      "back": "Hayır. Personel giderleri tertiplerinden diğer tertiplere aktarmalar muafiyetin dışındadır. Yeniden teşkilatlanmadaki diğer ödenek aktarmaları md 21 ve yılı bütçe kanunu sınırlamalarına tabi değildir.",
+      "explanation": "Kapatılan harcama birimi ve idareler için faaliyet raporu düzenlenmez. Bunların yılı faaliyet sonuçları, görev, yetki ve sorumluluklarının devredildiği idarelerin faaliyet raporlarında gösterilir.",
+      "articleRefs": [
+        "Ek 6"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Mücbir sebeple Hazine ve Maliye Bakanlığı bilişim sistemleri üzerinden yürütülen işlemlerde gecikme olursa ilgililere hangi yaptırımlar uygulanmaz?",
+      "back": "Gecikme faizi, gecikme zammı ve ceza gibi yaptırımlar uygulanmaz.",
+      "explanation": "Deprem, yangın, sel gibi doğal afetler, salgın hastalık ve Bakanlık bilişim sistemlerinin çalışmaması mücbir sebep halleri arasındadır. Bu hallerde veri, bilgi ve belgelere ilişkin yöntemleri Hazine ve Maliye Bakanlığı belirler.",
+      "articleRefs": [
+        "Ek 7"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Mevzuatta orta vadeli mali plana yapılan atıflar neye yapılmış sayılır?",
+      "back": "Orta vadeli programa yapılmış sayılır.",
+      "articleRefs": [
+        "Ek 8"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Tasarruf tedbirlerine aykırı iş ve işlemleri tespit edilenler hakkında uygulanan disiplin hükümlerinin sonuçları kime bildirilir?",
+      "back": "Cumhurbaşkanlığına bildirilir. Bildirimi idareler yapar.",
+      "explanation": "Harcama ve uygulamaların tasarruf tedbirlerine uygunluğunu idareler ve/veya Hazine ve Maliye Bakanlığı izler ve denetler. Aykırılık tespit edilenlere tabi oldukları mevzuat uyarınca disiplin hükümleri uygulanır.",
+      "articleRefs": [
+        "Ek 9"
+      ]
+    }
+  ]
+}

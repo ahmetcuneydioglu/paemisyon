@@ -1,0 +1,289 @@
+{
+  "deck": {
+    "topicId": "3a7fb703-175b-4a01-a217-a00766c51d07",
+    "legislationSlug": "5275-ceza-ve-guvenlik-tedbirlerinin-infazi-hakkinda-kanun",
+    "sourceLabel": "AI bilgi kartı — 5275 Ceza ve Güvenlik Tedbirlerinin İnfazı Hakkında Kanun md 48–58",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: resmî madde metni + çıkmış sorular)"
+  },
+  "cards": [
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Hücreye koyma ve odaya kapatma disiplin cezalarının infazına kimin onayıyla başlanır?",
+      "back": "İnfaz hâkiminin onayıyla. Diğer kesinleşen disiplin cezalarının infazına ise derhâl başlanır.",
+      "explanation": "Birden fazla disiplin cezası verilmişse cezalar kesinleşme tarihleri sırasına göre ayrı ayrı infaz edilir. Bir cezanın infazı tamamlanmadan diğerinin infazına başlanmaz.",
+      "articleRefs": [
+        "48"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Koşullu salıverilme tarihine kadar iyileşemeyeceği sağlık kurulu raporuyla saptanan hükümlüye, hücreye koyma cezası yerine ziyaretçi kabulünden yoksun bırakma cezası ne süreyle uygulanır?",
+      "back": "İki ay (md 44'ün ikinci fıkrasının uygulandığı hâllerde) ya da dört ay (üçüncü fıkrasının uygulandığı hâllerde).",
+      "explanation": "Rapor tam teşekküllü Devlet veya üniversite hastanesi sağlık kurulundan alınır ve infaz dosyasına konulur. Hükümlü cezaya katlanamayacaksa ama iyileşebilecekse ceza sonraya bırakılır ya da hekimin belirleyeceği aralıklarla infaz edilir. Hücreye koyma cezasının infazından önce ve infazı sırasında hükümlü hekime muayene ettirilir.",
+      "articleRefs": [
+        "48"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Çocuk hükümlüye verilen odaya kapatma cezası ne kadar süre sonunda kendiliğinden kalkmış sayılır?",
+      "back": "Doksan gün sonunda. Süre karar tarihinden, firar hâlinde ise infaz tarihinden başlar.",
+      "explanation": "Uyarma ve kınama cezaları kararla birlikte kalkar. Çocuğun bulunduğu kurumun disiplin kurulu, şu durumlarda disiplin cezasını süre koşulu aranmaksızın her zaman kaldırabilir: kurum kurallarına uyma, iyileştirme programında ilerleme ya da cezayla amaçlanan sonucun gerçekleşmesi.",
+      "articleRefs": [
+        "48"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Disiplin soruşturması yapılan hükümlü hakkında yönetim hangi tedbirleri alabilir?",
+      "back": "Hükümlünün odasını, iş ve çalışma yerini değiştirebilir. Onu kurumun başka kesimine nakledebilir ya da diğer hükümlülerden ayırabilir.",
+      "explanation": "Kurumun düzeni ve kişilerin güvenliği ciddî tehlikeyle karşı karşıya kalırsa, asayiş ve düzeni sağlamak için Kanunda açıkça belirtilmeyen diğer tedbirler de alınır.",
+      "articleRefs": [
+        "49"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Yönetimin aldığı tedbirler uygulandıktan sonra hükümlüye ayrıca disiplin cezası verilebilir mi?",
+      "back": "Evet. Tedbirlerin uygulanması, disiplin cezasının verilmesine engel olmaz.",
+      "articleRefs": [
+        "49"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 1,
+      "front": "Zincir ve demire vurma, hükümlüye tedbir olarak uygulanabilir mi?",
+      "back": "Hayır; hiçbir hâlde uygulanmaz. Kelepçe ve bedensel hareketleri kısıtlayıcı araçlar ise yalnız maddede sayılan hâllerde kullanılabilir.",
+      "explanation": "Kelepçe üç hâlde kullanılabilir: sevk ve nakil sırasında kaçmayı önlemek için (yetkili makamın önüne getirildiğinde çıkarılmak kaydıyla), hekimin talimat ve gözetiminde tıbbî nedenlerle ve diğer kontrol usûlleri yetersiz kaldığında kurum en üst amirinin emriyle.",
+      "articleRefs": [
+        "50"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Diğer kontrol usûlleri yetersiz kaldığında, hükümlünün kendisine ya da başkalarına zarar vermesini önlemek için kelepçe kimin emriyle kullanılır?",
+      "back": "Kurum en üst amirinin emriyle.",
+      "explanation": "Bu hâlde amaç, hükümlünün kendisine veya başkalarına zarar vermesine ya da eşyayı tahrip etmesine engel olmaktır. Tıbbî nedenlerle kullanım ise hekimin talimat ve gözetiminde olur.",
+      "articleRefs": [
+        "50"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Kelepçe ve bedensel hareketleri kısıtlayıcı araçların hangi kullanım hâli çocuk hükümlülere uygulanmaz?",
+      "back": "Sevk ve nakil sırasında kaçmayı önlemek için kullanım hâli; birinci fıkranın (a) bendi çocuk hükümlüler için uygulanmaz.",
+      "explanation": "Maddenin ikinci fıkrası çocuk hükümlüler için yalnız (a) bendini dışarıda bırakır. (b) bendi hekimin talimat ve gözetiminde tıbbî nedenlerle kullanımı düzenler. (c) bendi ise kurum en üst amirinin emriyle zarar vermeyi ve eşyanın tahribini önlemeyi düzenler.",
+      "articleRefs": [
+        "50"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Kapalı ceza infaz kurumundaki evli hükümlüye ödül olarak verilen eşiyle mahrem görüşme ne kadar sürebilir?",
+      "back": "Üç saatten yirmidört saate kadar; en geç üç ayda bir kez.",
+      "explanation": "Görüşme kurum veya eklentilerinde, ceza infaz kurumu personelinin yakın nezareti olmaksızın yapılır.",
+      "articleRefs": [
+        "51"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Ödül olarak hükümlünün haftalık harcama miktarı ne oranda artırılabilir?",
+      "back": "Yarı oranında.",
+      "explanation": "Ödüllerden yararlandırmada şunlar dikkate alınır: hükümlünün kurum içindeki veya dışındaki genel durumu, eğitim ve iyileştirme faaliyetlerine etkin katılımı, kurum düzenine karşı tutumu ve kendisine verilen işlerdeki gayreti. Ödüllendirmenin usul ve esasları suç türleri dikkate alınarak yönetmelikle belirlenir.",
+      "articleRefs": [
+        "51"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Ödül olarak hükümlünün haftalık ziyaret süresi iki katına kadar artırılabilir mi?",
+      "back": "Hayır. Haftalık ziyaret süresi iki saate kadar uzatılabilir; iki katına kadar artırma haftalık telefonla görüşme süresi ya da sayısı içindir.",
+      "explanation": "Ziyaretle ilgili diğer ödüller arasında kapalı ziyaret yerine açık ziyaret yaptırılması da vardır. Üst üste kullanılmayan en fazla üç haftalık ziyaret süresi de toplu olarak kullandırılabilir. Ödüllendirme hükümleri çocuk hükümlüler için de geçerlidir.",
+      "articleRefs": [
+        "51"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Disiplin cezalarına ve tedbirlerine karşı şikâyet ve itirazda hangi kanunun hükümleri uygulanır?",
+      "back": "4675 sayılı İnfaz Hâkimliği Kanunu hükümleri uygulanır.",
+      "explanation": "Diğer mevzuattan kaynaklanan dilekçe ve şikâyet hakkı saklıdır.",
+      "articleRefs": [
+        "52"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Hükümlü hangi nedenlerle başka bir kuruma nakledilebilir?",
+      "back": "Kendi isteği ya da toplu sevk, disiplin, asayiş ve güvenlik, hastalık, eğitim, öğretim, suç ve yargılama yeri nedenleriyle.",
+      "articleRefs": [
+        "53"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Nakilden önce hükümlüyü kim muayene eder?",
+      "back": "Kurum hekimi; kurum hekimi yoksa diğer bir resmî hekim. Hükümlü nakilden önce ayrıca aranır.",
+      "explanation": "Muayene sonucunda yola çıkarılamayacağı anlaşılan hükümlü, kurumun en üst amirince derhâl resmî bir sağlık kuruluşuna sevk edilir.",
+      "articleRefs": [
+        "53"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Hükümlünün nakil mazereti resmî raporla belgelenirse nakil ne olur?",
+      "back": "Mazeret ortadan kalkıncaya kadar geri bırakılır ve durum Adalet Bakanlığına bildirilir.",
+      "explanation": "Rapor resmî olmalı ve biri hastalığın uzmanı olmak üzere en az iki uzman hekimce imzalanmalıdır. Raporu hastane başhekimi onaylar.",
+      "articleRefs": [
+        "53"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Kendi isteğiyle nakil isteyen hükümlü, dilekçesinde gitmek istediği kurumlardan en az kaç yer belirtmelidir?",
+      "back": "En az üç yer; durumuna uygun kurumlardan seçilir.",
+      "explanation": "Diğer şartlar arasında nakil giderlerini peşin ödemeyi kabul etmek, ceza infaz kurumunda bulunulması gereken sürenin üç aydan fazla olması, iyi hâl göstermek ve istenen kurumun tutukevi olmaması da vardır.",
+      "articleRefs": [
+        "54"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Kendi isteğiyle nakledilen hükümlü, nakledildiği kurumda ne kadar kalmak zorundadır?",
+      "back": "Bir yıl. Çocuklar bakımından bu süre altı ay olarak uygulanır.",
+      "explanation": "Eğitim öğretim veya hastalık nedeniyle yapılan nakil, bu kalma zorunluluğunun dışındadır.",
+      "articleRefs": [
+        "54"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Maddi durumunun yetersiz olduğunu belgelendiren hükümlü, kendi isteğiyle nakil için nakil giderlerini peşin ödemeyi kabul etmek zorunda mıdır?",
+      "back": "Hayır. Peşin ödeme şartı, çocuk hükümlüler ile maddi durumunun yetersiz olduğunu belgelendiren hükümlüler bakımından uygulanmaz. Diğer nakil şartları onlar için de aranır.",
+      "explanation": "Örneğin hükümlünün iyi hâl göstermesi ve disiplin cezası almamış ya da cezasının kaldırılmış olması gerekir. İstenen kurum da daha önce disiplin nedeniyle ayrılmak zorunda kaldığı kurum olmamalıdır.",
+      "articleRefs": [
+        "54"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Hücreye koyma cezasını gerektiren eylemde bulunan hükümlü, kimin istemi üzerine başka kuruma nakledilebilir?",
+      "back": "Kurum en üst amirinin istemi üzerine; nakli Bakanlık yapar.",
+      "explanation": "Hükümlü hakkındaki disiplin işlemini kurum yönetimi yapar.",
+      "articleRefs": [
+        "55"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Disiplin nedeniyle başka kuruma nakledilen hükümlünün disiplin cezaları nerede çektirilir?",
+      "back": "Yeni kurumunda; disiplin cezaları nakledildiği kurumda çektirilir.",
+      "articleRefs": [
+        "55"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Disiplin nedeniyle nakledilen hükümlü, nakledildiği kurumda ne kadar kalmak zorundadır?",
+      "back": "Altı ay. Mahkeme kararı, kurum güvenliği, can güvenliği veya hastalık sebepleriyle yapılan nakil bu zorunluluğun dışındadır.",
+      "articleRefs": [
+        "55"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Kapasite aşımı, doğal afet ya da yangın gibi zorunlu nedenlerle nakledilecek hükümlüler hangi kurumlara gönderilebilir?",
+      "back": "Yargı çevresi dışında, Adalet Bakanlığınca belirlenen ve konumlarına uygun olan diğer kurumlara.",
+      "explanation": "Zorunlu nedenler arasında kurumların elverişsiz ve yetersiz kalması, kullanılamaz hâle gelmesi, asayiş, güvenlik ve büyük onarım da sayılır.",
+      "articleRefs": [
+        "56"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Hastaneye sevki zorunlu görülen hükümlü nereye yatırılır?",
+      "back": "Bulunduğu yere en yakın tam teşekküllü Devlet veya üniversite hastanesinin hükümlü koğuşuna.",
+      "explanation": "Kontrol ve tedavinin bu hastanelerde sürüp sürmeyeceği sağlık kurulu raporuyla belgelenir; aksi hâlde hükümlü ait olduğu kuruma iade edilir.",
+      "articleRefs": [
+        "57"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Acil ve yaşamsal tehlikesi bulunan hükümlünün başka yerdeki bir hastaneye sevki için gereken raporu kaç uzman hekim verir?",
+      "back": "İki uzman hekim; varsa biri hastalığın uzmanıdır. Raporu başhekim onaylar.",
+      "explanation": "Rapor hastalığın sebebini açıkça belirtir. Tedavinin bulunulan hastanede neden gerçekleştirilemediğini ve hastaya nerede, ne tür tedavi gerektiğini de yazar. Bu durumda da en yakın ve hükümlü koğuşu bulunan Devlet veya üniversite hastaneleri tercih edilir.",
+      "articleRefs": [
+        "57"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Acil olmayan bir hâlde hükümlü özel bir sağlık kuruluşunda tedavi edilebilir mi?",
+      "back": "Hayır. Hükümlü acil hâller dışında özel sağlık kuruluşlarında tedavi edilemez. Acil hâl varsa Adalet Bakanlığına bilgi verilir.",
+      "articleRefs": [
+        "57"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Hükümlü kuruma ya da başka bir yere götürülüp getirilirken hangi tedbirler alınır?",
+      "back": "Halkla bir araya gelmesine ve başkaları tarafından görülmesine engel olacak tedbirler alınır.",
+      "explanation": "Hükümlü havalandırma ve ışık durumu yetersiz araçlarla nakledilemez; eziyet verici veya onur kırıcı şekilde de nakledilemez. Görevli nezaretinde yapılan nakillerde hükümlünün iaşe ve bedensel ihtiyaçları giderilir.",
+      "articleRefs": [
+        "58"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Açık ceza infaz kurumuna nakiller, çocuk eğitimevine nakiller gibi kurum görevlisinin nezaretinde mi yapılır?",
+      "back": "Hayır. Çocuk eğitimevlerine nakiller kurum görevlisinin nezaretinde yapılır; açık ceza infaz kurumlarına nakiller ise kurum görevlisi olmaksızın yapılır.",
+      "explanation": "Belirlenen sürede açık ceza infaz kurumuna giriş yapmayan hükümlüler hakkında md 97 hükümleri uygulanır.",
+      "articleRefs": [
+        "58"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Farklı illerdeki kurumlar arasında açık ceza infaz kurumuna görevlisiz nakledilen hükümlüye, giriş yapması için en çok ne kadar süre tanınabilir?",
+      "back": "Kırksekiz saati geçmeyecek, kurum amirinin belirlediği süre. Aynı il sınırları içindeki nakillerde giriş aynı gün içinde yapılmalıdır.",
+      "articleRefs": [
+        "58"
+      ]
+    }
+  ]
+}

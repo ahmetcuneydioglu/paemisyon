@@ -1,0 +1,290 @@
+{
+  "deck": {
+    "topicId": "28eaa9b8-d646-4d32-af33-618d8e1c7ea7",
+    "legislationSlug": "5393-belediye-kanunu",
+    "sourceLabel": "AI bilgi kartı — 5393 Belediye Kanunu md 74–87, Ek 1, Ek 2, Ek 3",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: resmî madde metni + çıkmış sorular)"
+  },
+  "cards": [
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Belediye, görev alanıyla ilgili uluslararası teşekkül ve organizasyonlara hangi organın kararına bağlı olarak üye olabilir?",
+      "back": "Belediye meclisinin kararına bağlı olarak kurucu üye ya da üye olabilir.",
+      "explanation": "Belediye bu teşekkül, organizasyon ve yabancı mahallî idarelerle ortak faaliyet ve hizmet projeleri de gerçekleştirebilir ya da kardeş kent ilişkisi kurabilir.",
+      "articleRefs": [
+        "74"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Belediyenin uluslararası teşekküllere üyelik, ortak proje ve kardeş kent faaliyetleri hangi çerçeveye uygun yürütülmek zorundadır?",
+      "back": "Dış politikaya ve uluslararası anlaşmalara uygun yürütülmelidir.",
+      "explanation": "Bu faaliyetler yabancı mahallî idarelerle yapılan ortak faaliyet ve hizmet projelerini de kapsar.",
+      "articleRefs": [
+        "74"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Belediyenin dış politikaya ve uluslararası anlaşmalara uygun bir kardeş kent ilişkisi, Bakanlık izni alınmadan kurulabilir mi?",
+      "back": "Hayır. Uygunluk tek başına yetmez; önceden Çevre, Şehircilik ve İklim Değişikliği Bakanlığının (metinde: Çevre ve Şehircilik Bakanlığı) izninin alınması da zorunludur.",
+      "explanation": "İki şart birlikte aranır: faaliyetin dış politikaya ve uluslararası anlaşmalara uygunluğu ile önceden alınan Bakanlık izni. Aynı kural uluslararası teşekküllere üyelik ve yabancı mahallî idarelerle ortak projeler için de geçerlidir.",
+      "articleRefs": [
+        "74"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Belediye, kamu yararına çalışan dernek niteliği taşımayan bir dernekle ortak hizmet projesini yalnız meclis kararıyla gerçekleştirebilir mi?",
+      "back": "Hayır. Diğer dernek ve vakıflarla gerçekleştirilecek ortak hizmet projeleri için mahallin en büyük mülki idare amirinin izninin alınması gerekir.",
+      "explanation": "Kamu kurumu niteliğindeki meslek kuruluşları, kamu yararına çalışan dernekler, Cumhurbaşkanınca vergi muafiyeti tanınmış vakıflar ve 5362 sayılı Esnaf ve Sanatkârlar Meslek Kuruluşları Kanunu kapsamındaki meslek odalarıyla ortak hizmet projesi gerçekleştirilebilir; izin kaydı diğer dernek ve vakıflar için konmuştur.",
+      "articleRefs": [
+        "75"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Belediye kendine ait bir taşınmazı, aslî görev ve hizmetlerinde kullanılmak üzere bir kamu kurumuna en fazla ne kadar süreyle tahsis edebilir?",
+      "back": "Süresi yirmibeş yılı geçmemek üzere; bedelli ya da bedelsiz tahsis edebilir.",
+      "explanation": "Taşınmaz bu kuruluşlara devredilebilir ya da kiraya da verilebilir. Tahsis amacı dışında kullanılırsa tahsis işlemi iptal edilir; süre sonunda aynı esaslara göre yeniden tahsis mümkündür.",
+      "articleRefs": [
+        "75"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Belediyenin bir kamu kurumuna tahsis ettiği taşınmaz, o kurumca kamu konutu olarak kullanılabilir mi?",
+      "back": "Hayır. Belediyeler, bağlı kuruluşları ve belediye şirketlerince devir veya tahsis edilen taşınmazlar kamu konutu ve sosyal tesis olarak kullanılamaz.",
+      "explanation": "Taşınmazlar kamu kurum ve kuruluşlarına aslî görev ve hizmetlerinde kullanılmak üzere devredilir ya da tahsis edilir; tahsis amacı dışında kullanım tahsis işleminin iptaline yol açar.",
+      "articleRefs": [
+        "75"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Kent konseyinde oluşturulan görüşler belediye meclisinde ne zaman gündeme alınır?",
+      "back": "Belediye meclisinin ilk toplantısında gündeme alınarak değerlendirilir.",
+      "explanation": "Kent konseyinin çalışma usûl ve esasları Çevre, Şehircilik ve İklim Değişikliği Bakanlığınca (metinde: Çevre ve Şehircilik Bakanlığı) hazırlanan yönetmelikle belirlenir.",
+      "articleRefs": [
+        "76"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Kent konseyi kimlerin temsilcilerinin katılımıyla oluşur?",
+      "back": "Kamu kurumu niteliğindeki meslek kuruluşları, sendikalar, noterler, varsa üniversiteler, ilgili sivil toplum örgütleri, siyasî partiler, kamu kurum ve kuruluşları ve mahalle muhtarlarının temsilcileri ile diğer ilgililer.",
+      "explanation": "Belediye, kent konseyinin faaliyetlerinin etkili ve verimli yürütülmesi konusunda yardım ve destek sağlar.",
+      "articleRefs": [
+        "76"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Belediye, gönüllü kişilerin katılımına yönelik programları hangi hizmetlerde uygular?",
+      "back": "Sağlık, eğitim, spor, çevre, sosyal hizmet ve yardım, kütüphane, park, trafik ve kültür hizmetleriyle yaşlılara, kadın ve çocuklara, engellilere, yoksul ve düşkünlere yönelik hizmetlerde.",
+      "explanation": "Bu programlarla beldede dayanışma ve katılımı sağlamak, hizmetlerde etkinlik, tasarruf ve verimliliği artırmak amaçlanır.",
+      "articleRefs": [
+        "77"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Belediye hizmetlerine katılacak gönüllülerin nitelikleri hangi düzenlemeyle belirlenir?",
+      "back": "Çevre, Şehircilik ve İklim Değişikliği Bakanlığı (metinde: Çevre ve Şehircilik Bakanlığı) tarafından çıkarılacak yönetmelikle belirlenir.",
+      "explanation": "Gönüllülerin çalıştırılmalarına ilişkin usûl ve esaslar da aynı yönetmelikle düzenlenir.",
+      "articleRefs": [
+        "77"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Belediye, kamu kurum ve kuruluşlarıyla yazışmayı nasıl yapar?",
+      "back": "Doğrudan yazışabilir.",
+      "articleRefs": [
+        "78"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Belediye sınırları içinde sahipsiz arazi niteliğindeki hangi yerler belediyenin tasarrufundadır?",
+      "back": "Seyrangâh, harman yeri, koruluk, dinlenme yerleri, meydanlar, bataklık, çöp döküm sahaları, yıkılmış kale ve kulelerin arsaları ve enkazı ile benzeri yerler.",
+      "explanation": "Mezarlıklar da belediyenin tasarrufundadır. Diğer kanunlarla getirilen hükümler saklıdır.",
+      "articleRefs": [
+        "79"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Belediye sınırları ve mücavir alanlar içinde şehirlerarası otobüs terminali kurmak ve işletmek için kimlere izin verilebilir?",
+      "back": "Kara yolu ile yolcu taşıma hakkına sahip gerçek ve tüzel kişilere; izni belediye verir.",
+      "explanation": "İzin, nazım imar ve uygulama imar plânına uygun olmak kaydıyla verilebilir.",
+      "articleRefs": [
+        "80"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Uygulama imar plânına uygun bir akaryakıt istasyonuna, nazım imar plânında akaryakıt istasyonu olarak gösterilmeden izin verilebilir mi?",
+      "back": "Hayır. Akaryakıt istasyonlarına izin verilmesi için nazım imar plânında akaryakıt istasyonu olarak gösterilmesi şarttır.",
+      "explanation": "Akaryakıt, sıvılaştırılmış petrol gazı (LPG) ve sıvılaştırılmış doğal gaz (LNG) istasyonlarına izin, nazım imar ve uygulama imar plânına uygun olmak kaydıyla verilir; akaryakıt istasyonunda nazım imar plânında ayrıca gösterilme şartı aranır.",
+      "articleRefs": [
+        "80"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Büyükşehirlerde akaryakıt, sıvılaştırılmış petrol gazı (LPG) ve sıvılaştırılmış doğal gaz (LNG) istasyonlarına çalışma ruhsatını kim verir?",
+      "back": "Büyükşehir belediyesi verir.",
+      "articleRefs": [
+        "80"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Bir caddeye ad verilmesi kararı belediye meclisinde hangi çoğunlukla alınır?",
+      "back": "Belediye meclisinin üye tam sayısının salt çoğunluğuyla alınır.",
+      "explanation": "Aynı çoğunluk sokak, meydan, park, tesis ve benzerlerine ad verilmesinde ve beldeyi tanıtıcı amblem, flama ve benzerlerinin tespitinde de aranır.",
+      "articleRefs": [
+        "81"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Bir parkın adının ya da beldeyi tanıtıcı amblemin değiştirilmesi kararı hangi çoğunlukla alınır?",
+      "back": "Meclis üye tam sayısının üçte iki çoğunluğuyla alınır.",
+      "explanation": "Ad verme ve amblemin tespitinde üye tam sayısının salt çoğunluğu yeterlidir; değiştirmede daha ağır çoğunluk aranır.",
+      "articleRefs": [
+        "81"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Belediye meclisinin ad verme ve tanıtıcı amblem kararları nasıl yürürlüğe girer?",
+      "back": "Mülkî idare amirinin onayı ile yürürlüğe girer.",
+      "articleRefs": [
+        "81"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Belediye lehine sonuçlanan davalarda karşı taraftan tahsil edilen vekâlet ücretleri kimlere dağıtılır?",
+      "back": "Avukatlara (49 uncu maddeye göre çalıştırılanlar dâhil) ve hukuk servisinde fiilen görev yapan memurlara dağıtılır.",
+      "explanation": "Dağıtımda 1389 sayılı Devlet Davalarını İntaç Eden Avukat ve Saireye Verilecek Ücreti Vekâlet Hakkında Kanun hükümleri kıyas yolu ile uygulanır. İcra takipleri nedeniyle tahsil edilen vekâlet ücretleri de kapsamdadır.",
+      "articleRefs": [
+        "82"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Belediye Kanununun 15, 18 ve 34 üncü maddelerindeki parasal miktarlar her yıl hangi orana göre artırılır?",
+      "back": "213 sayılı Vergi Usul Kanununa göre belirlenecek yeniden değerleme oranına göre artırılır.",
+      "articleRefs": [
+        "83"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Belediyenin görev ve hizmetleri konusunda Polis Vazife ve Selâhiyet Kanunu ile Belediye Kanunu arasında aykırılık varsa hangisi uygulanır?",
+      "back": "Belediye Kanunu hükümleri uygulanır.",
+      "explanation": "Aynı kural Umumî Hıfzıssıhha Kanunu, İl İdaresi Kanunu, Karayolları Trafik Kanunu, İmar Kanunu ve Devlet Memurları Kanunu gibi maddede sayılan kanunlar için de geçerlidir.",
+      "articleRefs": [
+        "84"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Belediye Kanununun Karayolları Trafik Kanunu karşısındaki önceliği belediyenin bütün işlerinde geçerli midir?",
+      "back": "Hayır. Öncelik belediyenin sorumlu ve yetkili kılındığı görev ve hizmetlerle sınırlıdır; Belediye Kanunu yalnız aykırılık bulunması durumunda uygulanır.",
+      "articleRefs": [
+        "84"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Asansör yıllık kontrol yetkisinin usulüne uygun kullanılmaması sonucu yaralanma ya da ölüm olursa ilgili belediye yetkilileri hangi kanuna göre sorumludur?",
+      "back": "5237 sayılı Türk Ceza Kanunu hükümlerine göre sorumludur.",
+      "explanation": "Söz konusu yetki Belediye Kanununun 15 inci maddesinin birinci fıkrasının (s) bendinde düzenlenmiştir.",
+      "articleRefs": [
+        "Ek 1"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Kamu kurum ve kuruluşlarına uygulanan su ve atık su tarife ücreti hangi sınırı geçemez?",
+      "back": "Konutlar için belirlenen en düşük su ve atık su tarife ücretinin yüzde 50 fazlasını geçemez.",
+      "explanation": "Bu ücret tüketim miktarına bakılmaksızın sabit tarife ücreti olarak belirlenir.",
+      "articleRefs": [
+        "Ek 2"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Kamuya ait hangi kurumlardan abonelik, bağlantı ya da teminat adı altında ücret talep edilemez?",
+      "back": "Kamuya ait eğitim kurumları, yurtlar, okul pansiyonları ve hastanelerden.",
+      "explanation": "Abonelik, açma kapama, bağlantı, teminat, güvence bedeli, katılma payı ve benzeri ad altında ücret istenemez. Belediyeler temiz şebeke suyu hizmeti vermediği yerleşim yerlerindeki kamu kurumlarından da herhangi bir ad altında ücret talep edemez.",
+      "articleRefs": [
+        "Ek 2"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Aboneliği Kültür ve Turizm Bakanlığına ait müze ve ören yerlerinde kullanılan jeotermal akışkan ve buhar tarifesi hangi sınırı geçemez?",
+      "back": "Aynı dönemde kamu kurum ve kuruluşlarına uygulanan su ve atık su tarifesinin yüzde onunu geçemez; tüketim miktarına bakılmaz.",
+      "explanation": "Bu müze ve ören yerlerinin su ve atık su tarifeleri ise kamu kurum ve kuruluşlarına uygulanan su ve atık su tarifesini geçemez. Kaynaklar 5686 sayılı Jeotermal Kaynaklar ve Doğal Mineralli Sular Kanununda yer alanlardır.",
+      "articleRefs": [
+        "Ek 2"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Belediyelerin görev ve hizmetlerini yürüttüğü ve vatandaş başvurularını sonuçlandırdığı bilgi sisteminin adı nedir?",
+      "back": "e-Belediye bilgi sistemi; belediyelerin her türlü idari iş ve işlemi bu sistemde yürütülür.",
+      "articleRefs": [
+        "Ek 3"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "e-Belediye bilgi sisteminin çalışma usul ve esaslarını İçişleri Bakanlığı tek başına belirleyebilir mi?",
+      "back": "Hayır. İçişleri Bakanlığı ile Çevre, Şehircilik ve İklim Değişikliği Bakanlığı (metinde: Çevre ve Şehircilik Bakanlığı) müştereken yetkilidir.",
+      "explanation": "Müşterek yetki sistemi kurmayı, işletmeyi, veri saklama, veri iletimi ve veri paylaşımı politikalarını tespit etmeyi ve merkezî bir hizmet standardizasyonu oluşturmayı da kapsar.",
+      "articleRefs": [
+        "Ek 3"
+      ],
+      "counterNumbers": []
+    }
+  ]
+}

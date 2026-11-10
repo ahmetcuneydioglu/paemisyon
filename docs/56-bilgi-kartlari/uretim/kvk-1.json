@@ -1,0 +1,294 @@
+{
+  "deck": {
+    "topicId": "efcd80f1-04c1-42b1-90bc-2d6f22df40c2",
+    "legislationSlug": "6698-sayili-kisisel-verilerin-korunmasi-kanunu",
+    "sourceLabel": "AI bilgi kartı — 6698 Sayılı Kişisel Verilerin Korunması Kanunu md 1–12",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: resmî madde metni + çıkmış sorular)"
+  },
+  "cards": [
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Kişisel Verilerin Korunması Kanununun amacında, kişilerin temel hak ve özgürlükleri arasında başta hangisinin korunması anılır?",
+      "back": "Özel hayatın gizliliği. Kanun, kişisel verilerin işlenmesinde başta bu olmak üzere kişilerin temel hak ve özgürlüklerini korumayı amaçlar.",
+      "explanation": "Kanunun amacı ayrıca, kişisel verileri işleyen gerçek ve tüzel kişilerin yükümlülüklerini ve uyacakları usul ve esasları düzenlemektir.",
+      "articleRefs": [
+        "1"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Otomatik olmayan yollarla yapılan her kişisel veri işleme, Kişisel Verilerin Korunması Kanununun kapsamına girer mi?",
+      "back": "Hayır. Otomatik olmayan işleme ancak herhangi bir veri kayıt sisteminin parçası olmak kaydıyla kapsamdadır. Tamamen veya kısmen otomatik işlemede bu kayıt aranmaz.",
+      "explanation": "Kanun, kişisel verileri işlenen gerçek kişiler ile bu verileri işleyen gerçek ve tüzel kişiler hakkında uygulanır.",
+      "articleRefs": [
+        "2"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Kanuna göre açık rıza nasıl bir rızadır?",
+      "back": "Belirli bir konuya ilişkin, bilgilendirilmeye dayanan ve özgür iradeyle açıklanan rızadır.",
+      "articleRefs": [
+        "3"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Veri sorumlusunun verdiği yetkiye dayanarak onun adına kişisel verileri işleyen gerçek veya tüzel kişiye ne denir?",
+      "back": "Veri işleyen.",
+      "explanation": "Veri sorumlusu ise kişisel verilerin işleme amaçlarını ve vasıtalarını belirleyen, veri kayıt sisteminin kurulmasından ve yönetilmesinden sorumlu olan gerçek veya tüzel kişidir.",
+      "articleRefs": [
+        "3"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Başka verilerle eşleştirildiğinde kişiyle yeniden ilişkilendirilebilen veri, anonim hâle getirilmiş sayılır mı?",
+      "back": "Hayır. Anonim hâle getirmede veri, başka verilerle eşleştirilerek dahi hiçbir surette kimliği belirli veya belirlenebilir bir gerçek kişiyle ilişkilendirilemeyecek hâle gelmelidir.",
+      "explanation": "Kişisel veri, kimliği belirli veya belirlenebilir gerçek kişiye ilişkin her türlü bilgidir. Anonim hâle getirilen veri bu ilişkiyi hiçbir surette kurdurmamalıdır.",
+      "articleRefs": [
+        "3"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Kişisel veriler ne kadar süre muhafaza edilebilir?",
+      "back": "İlgili mevzuatta öngörülen veya işlendikleri amaç için gerekli olan süre kadar.",
+      "explanation": "Kişisel veriler ancak bu Kanunda ve diğer kanunlarda öngörülen usul ve esaslara uygun olarak işlenebilir. Muhafaza süresi de bu ilkelerden biridir.",
+      "articleRefs": [
+        "4"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Kişisel verilerin her durumda güncel tutulması, genel ilkelerin gereği midir?",
+      "back": "Hayır. İlke 'doğru ve gerektiğinde güncel olma'dır. Doğruluk her zaman aranır; güncellik ise gerektiğinde aranır.",
+      "articleRefs": [
+        "4"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "İşlenen kişisel veriler, işlendikleri amaç bakımından hangi nitelikleri taşımalıdır?",
+      "back": "İşlendikleri amaçla bağlantılı, sınırlı ve ölçülü olmalıdır.",
+      "explanation": "Amacın kendisi de belirli, açık ve meşru olmalıdır. Veriler ayrıca hukuka ve dürüstlük kurallarına uygun işlenir.",
+      "articleRefs": [
+        "4"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Kişisel verilerin işlenmesinde temel kural nedir?",
+      "back": "Kişisel veriler, ilgili kişinin açık rızası olmaksızın işlenemez.",
+      "explanation": "Rıza, sayılan şartlardan birinin varlığında aranmaz. Bu şartlar arasında kanunlarda açıkça öngörülmesi, veri sorumlusunun hukuki yükümlülüğünü yerine getirebilmesi için zorunlu olması ve bir hakkın tesisi, kullanılması veya korunması için veri işlemenin zorunlu olması vardır.",
+      "articleRefs": [
+        "5"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Veri sorumlusunun meşru menfaati, açık rıza olmadan veri işlemeye her durumda yeter mi?",
+      "back": "Hayır. İşleme, veri sorumlusunun meşru menfaatleri için zorunlu olmalıdır. Ayrıca ilgili kişinin temel hak ve özgürlüklerine zarar vermemelidir.",
+      "explanation": "Açık rıza aranmayan diğer haller arasında, verinin ilgili kişinin kendisi tarafından alenileştirilmiş olması da vardır.",
+      "articleRefs": [
+        "5"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Sözleşmeye dayanarak açık rıza aranmadan kişisel veri işlenebilmesi için hangi kayıt aranır?",
+      "back": "İşleme, bir sözleşmenin kurulması veya ifasıyla doğrudan doğruya ilgili olmalıdır. Bu kayıtla sözleşmenin taraflarına ait kişisel verilerin işlenmesi gerekli olmalıdır.",
+      "articleRefs": [
+        "5"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Kanuna göre hangi veriler özel nitelikli kişisel veridir?",
+      "back": "Irkı, etnik kökeni, siyasi düşüncesi, felsefi inancı, dini, mezhebi veya diğer inançları, kılık ve kıyafeti, dernek, vakıf ya da sendika üyeliği, sağlığı, cinsel hayatı, ceza mahkûmiyeti ve güvenlik tedbirleriyle ilgili veriler ile biyometrik ve genetik veriler.",
+      "explanation": "Bu verilerin işlenmesi yasaktır. Ancak sayılan hallerde işlenmeleri mümkündür. Bu haller arasında ilgili kişinin açık rızası, kanunlarda açıkça öngörülmesi ve alenileştirme iradesine uygun olma vardır.",
+      "articleRefs": [
+        "6"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Özel nitelikli kişisel veri, işleme hallerinden biri varsa başka bir şart aranmadan işlenebilir mi?",
+      "back": "Hayır. Bu hallerden birinin varlığına ek olarak, Kişisel Verileri Koruma Kurulu tarafından belirlenen yeterli önlemlerin alınması şarttır.",
+      "articleRefs": [
+        "6"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Kamu sağlığı ve tıbbi teşhis gibi amaçlarla özel nitelikli kişisel veriyi kimler işleyebilir?",
+      "back": "Sır saklama yükümlülüğü altında bulunan kişiler veya yetkili kurum ve kuruluşlar. İşleme bu amaçlar için gerekli olmalıdır.",
+      "explanation": "Sayılan amaçlar şunlardır: kamu sağlığının korunması, koruyucu hekimlik, tıbbi teşhis, tedavi ve bakım hizmetlerinin yürütülmesi ile sağlık hizmetlerinin planlanması, yönetimi ve finansmanı.",
+      "articleRefs": [
+        "6"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Hukuka uygun işlenmiş kişisel verilerin işlenmesini gerektiren sebepler ortadan kalkarsa ne olur?",
+      "back": "Veriler, veri sorumlusu tarafından resen veya ilgili kişinin talebi üzerine silinir, yok edilir veya anonim hâle getirilir.",
+      "explanation": "Bu konuda diğer kanunlarda yer alan hükümler saklıdır. Usul ve esaslar yönetmelikle düzenlenir.",
+      "articleRefs": [
+        "7"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Kişisel veriler kural olarak ilgili kişinin hangi iradesi olmadan aktarılamaz?",
+      "back": "Açık rızası olmadan. Ancak 5 inci maddenin ikinci fıkrasındaki şartlardan biri varsa veriler rıza aranmaksızın aktarılabilir.",
+      "explanation": "Bu şartlar arasında kanunlarda açıkça öngörülmesi ve ilgili kişinin kendisi tarafından alenileştirilmiş olması vardır. Aktarıma ilişkin diğer kanunlarda yer alan hükümler saklıdır.",
+      "articleRefs": [
+        "8",
+        "5"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Özel nitelikli kişisel veriler, açık rıza aranmadan hangi kayıtla aktarılabilir?",
+      "back": "Yeterli önlemler alınmak kaydıyla aktarılabilir. Ayrıca 6 ncı maddenin üçüncü fıkrasındaki şartlardan birinin bulunması gerekir.",
+      "explanation": "Bu şartlar arasında şunlar vardır: kanunlarda açıkça öngörülmesi, bir hakkın tesisi, kullanılması veya korunması için zorunlu olması, istihdam ve sosyal güvenlik alanlarındaki hukuki yükümlülüklerin yerine getirilmesi için zorunlu olması.",
+      "articleRefs": [
+        "8",
+        "6"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Yurt dışına aktarım için verilen yeterlilik kararı en geç hangi aralıkla değerlendirilir?",
+      "back": "En geç dört yılda bir. Kişisel Verileri Koruma Kurulu, kararı ileriye etkili olmak üzere değiştirebilir, askıya alabilir veya kaldırabilir.",
+      "explanation": "Yeterlilik kararını Kurul verir ve karar Resmî Gazete'de yayımlanır. Kurul, ihtiyaç duyarsa ilgili kurum ve kuruluşların görüşünü alır. Karar verilirken öncelikle karşılıklılık durumu, aktarılacak ülkenin mevzuatı ve uygulaması gibi hususlar dikkate alınır.",
+      "articleRefs": [
+        "9"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Yurt dışı aktarım için imzalanan standart sözleşme, imzalanmasından itibaren ne kadar sürede bildirilir?",
+      "back": "Beş iş günü içinde bildirilir. Bildirimi veri sorumlusu veya veri işleyen, Kişisel Verileri Koruma Kurumuna yapar.",
+      "explanation": "Standart sözleşme, yeterlilik kararı bulunmadığında taraflarca sağlanabilecek uygun güvencelerden biridir. Sözleşme Kurul tarafından ilan edilir. Veri kategorileri, aktarım amaçları, alıcı ve alıcı grupları ile alınacak teknik ve idari tedbirler gibi hususları içerir.",
+      "articleRefs": [
+        "9"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Kamu kurum ve kuruluşları, kamu hukukuna tâbi faaliyetlerinde ilgili kişinin açık rızasına dayanarak arızi yurt dışı aktarım yapabilir mi?",
+      "back": "Hayır. Altıncı fıkranın (a), (b) ve (c) bentleri bu faaliyetlere uygulanmaz. Açık rıza ve sözleşmeye dayalı arızi aktarım halleri bu faaliyetler için kullanılamaz.",
+      "explanation": "Arızi aktarım, yeterlilik kararı bulunmayan ve uygun güvencelerden hiçbirinin sağlanamadığı durumda başvurulan yoldur. Açık rıza halinde ilgili kişi muhtemel riskler hakkında bilgilendirilmelidir. Üstün kamu yararı gibi diğer arızi haller bu sınırlamanın dışındadır.",
+      "articleRefs": [
+        "9"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Veri sorumlusunun aydınlatma yükümlülüğü hangi anda yerine getirilir?",
+      "back": "Kişisel verilerin elde edilmesi sırasında.",
+      "explanation": "Bilgiyi veri sorumlusu veya onun yetkilendirdiği kişi, ilgili kişilere verir.",
+      "articleRefs": [
+        "10"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Aydınlatma yükümlülüğü kapsamında ilgili kişiye hangi konularda bilgi verilir?",
+      "back": "Şu konularda bilgi verilir: veri sorumlusunun ve varsa temsilcisinin kimliği, işleme amacı, verilerin kimlere ve hangi amaçla aktarılabileceği, veri toplamanın yöntemi ve hukuki sebebi, 11 inci maddede sayılan diğer haklar.",
+      "articleRefs": [
+        "10"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "İlgili kişi, kişisel verileriyle ilgili haklarını kime başvurarak kullanır?",
+      "back": "Veri sorumlusuna başvurarak kullanır.",
+      "explanation": "Bu haklar arasında şunlar vardır: kişisel veri işlenip işlenmediğini öğrenme, eksik veya yanlış işlenen verilerin düzeltilmesini isteme, kanuna aykırı işleme sebebiyle zarara uğranmışsa zararın giderilmesini talep etme.",
+      "articleRefs": [
+        "11"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "İlgili kişi, verilerinin otomatik sistemlerle analiz edilmesinden doğan her sonuca itiraz edebilir mi?",
+      "back": "Hayır. İtiraz hakkı, verilerin münhasıran otomatik sistemler vasıtasıyla analiz edilmesi suretiyle kişinin kendisi aleyhine bir sonuç ortaya çıkmasına yöneliktir.",
+      "articleRefs": [
+        "11"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Kişisel verileri düzeltilen ya da silinen ilgili kişi, bu işlemlerin kimlere bildirilmesini isteyebilir?",
+      "back": "Kişisel verilerin aktarıldığı üçüncü kişilere.",
+      "explanation": "Düzeltme, verilerin eksik veya yanlış işlenmiş olması hâlinde istenir. Silme ya da yok etme ise 7 nci maddede öngörülen şartlar çerçevesinde istenir.",
+      "articleRefs": [
+        "11"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Kişisel veriler veri sorumlusu adına başka bir kişi tarafından işlenirse, güvenlik tedbirlerinin alınmasından kim sorumludur?",
+      "back": "Veri sorumlusu, bu kişilerle birlikte müştereken sorumludur.",
+      "explanation": "Bu tedbirler, uygun güvenlik düzeyini temin etmeye yönelik teknik ve idari tedbirlerdir. Amaçları şunlardır: verilerin hukuka aykırı işlenmesini önlemek, verilere hukuka aykırı erişilmesini önlemek ve verilerin muhafazasını sağlamak.",
+      "articleRefs": [
+        "12"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Veri işleyenin, öğrendiği kişisel verileri Kanuna aykırı olarak açıklamama yükümlülüğü görevden ayrılınca sona erer mi?",
+      "back": "Hayır. Bu yükümlülük görevden ayrılmalarından sonra da devam eder. Veri sorumluları da aynı yükümlülük altındadır.",
+      "explanation": "Veri sorumluları ile veri işleyen kişiler, öğrendikleri kişisel verileri Kanuna aykırı olarak başkasına açıklayamaz. Bu verileri işleme amacı dışında da kullanamazlar.",
+      "articleRefs": [
+        "12"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "İşlenen kişisel veriler kanuni olmayan yollarla başkalarınca elde edilirse veri sorumlusu ne yapar?",
+      "back": "Durumu en kısa sürede ilgilisine ve Kişisel Verileri Koruma Kuruluna bildirir.",
+      "explanation": "Kurul, gerekmesi hâlinde bu durumu kendi internet sitesinde ya da uygun göreceği başka bir yöntemle ilan edebilir.",
+      "articleRefs": [
+        "12"
+      ]
+    }
+  ]
+}

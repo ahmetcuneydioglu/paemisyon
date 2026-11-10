@@ -1,0 +1,241 @@
+{
+  "deck": {
+    "topicId": "c8f4a045-6e4c-4fa6-b3a6-557cd0032d20",
+    "legislationSlug": "6085-sayistay-kanunu",
+    "sourceLabel": "AI bilgi kartı — 6085 Sayıştay Kanunu md 38–60",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: resmî madde metni + çıkmış sorular)"
+  },
+  "cards": [
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Sayıştayın gönderdiği denetim raporunu kamu idaresinin üst yöneticisi kaç gün içinde cevaplandırır?",
+      "back": "Otuz gün içinde. Süre raporun alındığı tarihten itibaren işler.",
+      "explanation": "Bu cevaplar dikkate alınarak yeniden düzenlenen denetim raporları, idarelerin cevapları da eklenerek, raporun ilgili olduğu yılın bitimini takip eden mayıs ayı sonuna kadar Sayıştay Başkanlığına sunulur.",
+      "articleRefs": [
+        "38"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Sayıştay daireleri, denetim raporları hakkındaki görüşlerini Sayıştay Başkanlığına en geç ne zamana kadar sunar?",
+      "back": "Temmuz ayının onbeşine kadar.",
+      "explanation": "Daireler görüş oluştururken raporların bu Kanunda öngörülen amaç, çerçeve ve sınırlar içinde olup olmadığını inceler. Bu hususlara uygun olmayan raporların düzeltilmesine ilişkin görüşlerini de Başkanlığa sunar.",
+      "articleRefs": [
+        "38"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Türkiye Büyük Millet Meclisi, kamu idarelerinin yönetim ve hesap verme sorumluluklarını görüşürken Sayıştay adına kimin katılması zorunludur?",
+      "back": "Sayıştay Başkanı veya denetimden sorumlu başkan yardımcısının katılması zorunludur.",
+      "explanation": "Kamu idarelerinin üst yöneticisinin ya da görevlendireceği yardımcısının da ilgili bakanla birlikte katılması zorunludur. Görüşmeler dış denetim genel değerlendirme raporu, faaliyet genel değerlendirme raporu ve 42 nci maddede belirtilen raporlar ile değerlendirmeler çerçevesinde yapılır.",
+      "articleRefs": [
+        "38"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Genel uygunluk bildirimi taslaklarına hangi organ son şeklini verir?",
+      "back": "Sayıştay Genel Kurulu. Taslaklar Genel Kurulda görüşülerek son şeklini alır.",
+      "explanation": "Taslakları denetim grup başkanlıkları hazırlar ve Sayıştay Başkanlığına sunar. Görüşme sırasında açıklama yapması için ilgili kamu idaresinin üst yöneticisi veya görevlendireceği yardımcısı çağrılabilir. Sayıştay Başsavcısı da görüşmede hazır bulunur.",
+      "articleRefs": [
+        "41"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Kanunun 4 üncü maddesinin son fıkrası kapsamındaki kuruluşların yıllık denetim raporlarına Rapor Değerlendirme Kurulu ne zamana kadar son şeklini verir?",
+      "back": "Ekim ayı sonuna kadar. Raporlar Kurula en geç eylül ayı sonuna kadar gönderilir.",
+      "explanation": "Raporlar denetlenen kuruluşa, bir örneği de ilgili bakanlığa gönderilir. Kuruluş cevabını varsa yönetim kurulundan, yoksa yetkili organından geçirir ve raporun alındığı tarihten itibaren otuz gün içinde gönderir. İlgili bakanlık bu cevapları kendi görüşleriyle birlikte en geç onbeş gün içinde Sayıştaya iletir.",
+      "articleRefs": [
+        "43"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Savunma, güvenlik ve istihbaratla ilgili kamu idarelerinin elindeki devlet mallarının denetim raporlarının kamuoyuna duyurulması hangi düzenlemeyle belirlenir?",
+      "back": "Sayıştayca hazırlanıp Cumhurbaşkanınca çıkarılacak bir yönetmelikle. Yönetmelik hazırlanırken ilgili kamu idarelerinin görüşleri alınır.",
+      "explanation": "Sayıştay raporları genel kural olarak Meclise sunulduğu ve ilgili kamu idarelerine verildiği tarihten itibaren onbeş gün içinde kamuoyuna duyurulur. Kanunların açıklanmasını yasakladığı durumlar bunun dışındadır. Duyuruyu Sayıştay Başkanı veya görevlendireceği başkan yardımcısı yapar.",
+      "articleRefs": [
+        "44"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Türkiye Büyük Millet Meclisi Başkanlığı, Sayıştaydan denetim talebini hangi komisyonların kararına istinaden yapar?",
+      "back": "Araştırma, soruşturma ve ihtisas komisyonlarının kararına istinaden.",
+      "explanation": "Talep, istenen konuyla sınırlıdır. Özelleştirme, teşvik, borç ve kredi uygulamaları dahil tüm kamu kurum ve kuruluşlarının hesap ve işlemlerini kapsayabilir. Bu taleplere öncelik verilir; denetim sonuçları Meclis Başkanlığına sunulur.",
+      "articleRefs": [
+        "45"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Türkiye Büyük Millet Meclisi Başkanlığının Sayıştaydan denetim talebi Cumhurbaşkanlığının hesap ve işlemlerini kapsayabilir mi?",
+      "back": "Hayır. Cumhurbaşkanlığı bu madde kapsamı dışındadır.",
+      "explanation": "Talep, Sayıştay denetimine tâbi olup olmadığına bakılmaksızın kamu kurum ve kuruluşlarını kapsayabilir. Kamu kaynak ve imkânlarından yararlanan şirket, kooperatif, vakıf ve dernek gibi teşekküllerin hesap ve işlemleri de istenebilir.",
+      "articleRefs": [
+        "45"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Denetimler sırasında Sayıştay dışından uzman görevlendirmeye kim yetkilidir?",
+      "back": "Sayıştay Başkanı. Görevlendirme, denetçiler gerekli görürse yapılır; uzman meslek mensuplarının koordinasyonunda ve incelenecek konuyla sınırlı olarak çalışır.",
+      "explanation": "Görevlendirmenin esas ve usulleri yönetmelikle düzenlenir. Kamu idaresinden görevlendirilen uzman, görevli olduğu sürece kurumundan izinli sayılır. Aylık, tazminat, yan ödeme ile diğer özlük ve sosyal haklarından yararlanmaya devam eder.",
+      "articleRefs": [
+        "47"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Yargılamaya esas rapor düzenlenirken sorumlu, tebliğden itibaren kaç gün içinde cevap vermezse savunması dikkate alınmaz?",
+      "back": "Otuz gün.",
+      "explanation": "Rapor, kamu zararına yol açan bir husus tespit edildiğinde sorumluların savunmaları alınarak mali yıl sonu itibariyle düzenlenir. 6 ncı maddenin dördüncü fıkrasındaki hususlarda mali yıl sonu beklenmez. Başkanlık raporları en geç onbeş gün içinde hesap yargılamasının yapılacağı daireye gönderir.",
+      "articleRefs": [
+        "48"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Daire başkanı, dairesine verilen yargılamaya esas rapor hakkında kimin yazılı düşüncesini alır?",
+      "back": "Başsavcılığın. Ardından rapor, düşüncesini bildirmesi için üyelerden birine verilir.",
+      "explanation": "Üye gerekli incelemeyi yapar ve raporu yazılı düşüncesiyle birlikte daire başkanlığına geri verir. Bundan sonra raporda konu edilen hesap ve işlemlerin yargılanmasına başlanır. Hesap yargılaması sırasında savcı da hazır bulunur ve görüşünü açıklar.",
+      "articleRefs": [
+        "49"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Hesap yargılamasında, belgeleri bir soruşturma için ilgili idari mercie verilmiş bir işlem hakkında daire ne yapabilir?",
+      "back": "Yargılamayı durdurarak o hesap ve işlemleri hüküm dışı bırakabilir. Noksanlıklar giderilince yargılamaya devam edilir.",
+      "explanation": "Bunun için bilgi ve belgelerin yeterli görülmemesi ve kovuşturma veya soruşturma sonucunun beklenmesine gerek görülmesi gerekir. Hesap yargılaması sonucunda ise hesap ve işlemlerin yasal düzenlemelere uygunluğuna ya da kamu zararının sorumlulardan tazminine hükmedilir.",
+      "articleRefs": [
+        "50"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Tazmin hükmolunan hallerde ilamda, tazmin miktarının yanında hangi bilgi yer alır?",
+      "back": "Uygulanacak faizin başlangıç tarihi. Kararın hukuki dayanakları ve gerekçesi de ilamda yazılır.",
+      "explanation": "İlamlar gerekçeli olarak düzenlenir; daire başkanı ve üyelerce imzalanan nüshalardan biri dairede alıkonulur. İlamda yer alanlar arasında hüküm dışı bırakılan hususlar da vardır. Kararın oybirliği veya oy çokluğuyla verildiği ve varsa muhalefet şerhi de ilamda bulunur.",
+      "articleRefs": [
+        "51"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Sayıştay dairesi kararının tavzihi veya düzeltilmesi ne zamana kadar istenebilir?",
+      "back": "Kararın yerine getirilmesine kadar.",
+      "explanation": "Karar müphemse taraflardan her biri tavzih isteyebilir. Tarafların adı, soyadı ve sıfatına, iddiaların sonucuna ilişkin yanlışlıklar ile hüküm fıkrasındaki hesap yanlışlıklarının düzeltilmesi de istenebilir. Dilekçe, karşı taraf sayısından bir nüsha fazlasıyla verilir.",
+      "articleRefs": [
+        "52"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Sayıştay ilamları kesinleştikten sonra kaç gün içinde yerine getirilir?",
+      "back": "Doksan gün içinde. Yerine getirmeden ilamların gönderildiği kamu idarelerinin üst yöneticileri sorumludur.",
+      "articleRefs": [
+        "53"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "İlamlarda gösterilen tazmin miktarı hangi kanun hükümlerine göre tahsil olunur?",
+      "back": "2004 sayılı İcra ve İflas Kanunu hükümlerine göre. Tazmin miktarı hüküm tarihinden itibaren kanuni faize tabi tutulur.",
+      "articleRefs": [
+        "53"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Sayıştay dairesinin ilamına karşı temyiz süresi kaç gündür?",
+      "back": "Altmış gün. Süre ilamın ilgiliye tebliğinden itibaren işler.",
+      "explanation": "Temyiz dilekçesi ve ekleri karşı tarafa tebliğ edilir; cevap süresi tebliğden itibaren otuz gündür. Temyiz eden bu cevaplara onbeş gün içinde cevap verir. Buna da onbeş gün içinde karşılık verilir.",
+      "articleRefs": [
+        "55"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Temyiz Kurulu, temyiz olunan hükmü hangi çoğunlukla kaldırabilir?",
+      "back": "Kurul üye tamsayısının üçte iki çoğunluğuyla.",
+      "explanation": "Temyiz Kurulu hükmü olduğu gibi veya düzelterek tasdik edebilir ya da bozabilir. Bozma halinde evrak, yeniden karara bağlanmak üzere kararı veren daireye gönderilir. Tazmin hükmünün kaldırılmasına ilişkin kararlar, ilam maddesindeki bütün sorumluları kapsar.",
+      "articleRefs": [
+        "55"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Daire, Temyiz Kurulunun bozma kararına karşı ilk kararında ısrar edebilir mi?",
+      "back": "Evet. Ancak ısrar kararı temyiz olunup Temyiz Kurulunca tekrar bozulursa daire bu karara uymak zorundadır.",
+      "explanation": "Sayıştay dairelerinin ilamları Temyiz Kurulunda temyiz olunur ve bu Kurulun verdiği kararlar kesindir.",
+      "articleRefs": [
+        "55"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Yargılamanın iadesi isteminde bulunma süresi nedir?",
+      "back": "Beş yıl. Süre ilamın tebliği tarihinden itibaren işler.",
+      "explanation": "İstemi ilgililer yapabileceği gibi Sayıştay daireleri de doğrudan buna karar verebilir. Sebepler arasında hükme etki yapmış bir belgede sahtecilik bulunması ve bilirkişi veya uzmanın gerçeğe aykırı rapor düzenlediğinin ortaya çıkması vardır.",
+      "articleRefs": [
+        "56"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Yargılamanın iadesi istemi ilamın icrasını kendiliğinden durdurur mu?",
+      "back": "Hayır, istem ilamın icrasını alıkoymaz. Dilekçeyi inceleyen daire gerekli görürse, kanunen geçerli teminat karşılığında icranın geciktirilmesine karar verebilir.",
+      "explanation": "İstemi hükmü veren daire inceler ve önce talebin kabulüne veya reddine karar verir. Kabul halinde yalnızca iade edilen hususlarla sınırlı hesap yargılaması yapılır.",
+      "articleRefs": [
+        "56"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Aynı konuda dairelerce verilmiş birbirine aykırı ilamları, içtihatların birleştirilmesi için Genel Kurula kim gönderir?",
+      "back": "Sayıştay Başkanı. Birleşmiş içtihadın değiştirilmesi için de istemde bulunabilir.",
+      "explanation": "İçtihatların birleştirilmesi veya değiştirilmesi kararları Resmi Gazetede yayımlanır. Sayıştay daire ve kurulları ile kamu idareleri ve sorumlular bu kararlara uymak zorundadır.",
+      "articleRefs": [
+        "58"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Vergi konusunda Danıştay ile Sayıştayın kesinleşmiş kararları arasında uyuşmazlık varsa Sayıştay kararı hangi yolla yeniden görüşülür?",
+      "back": "Yargılamanın iadesi yoluyla; uyuşmazlık Danıştay kararı doğrultusunda giderilir.",
+      "explanation": "Kural vergi, benzeri mali yükümlülükler ve ödevler hakkındaki kesinleşmiş kararlar için geçerlidir. Uyuşmazlığın mevcut olmadığı tespit edilinceye kadar Sayıştay ilamının yerine getirilmesi durdurulur.",
+      "articleRefs": [
+        "60"
+      ]
+    }
+  ]
+}

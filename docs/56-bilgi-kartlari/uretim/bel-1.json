@@ -1,0 +1,289 @@
+{
+  "deck": {
+    "topicId": "28eaa9b8-d646-4d32-af33-618d8e1c7ea7",
+    "legislationSlug": "5393-belediye-kanunu",
+    "sourceLabel": "AI bilgi kartı — 5393 Belediye Kanunu md 1–14",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: resmî madde metni + çıkmış sorular)"
+  },
+  "cards": [
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Belediye Kanununa göre belediyenin organları nelerdir?",
+      "back": "Belediye meclisi, belediye encümeni ve belediye başkanı.",
+      "explanation": "Belediye, belde sakinlerinin mahallî müşterek nitelikteki ihtiyaçlarını karşılamak üzere kurulur. Karar organı seçmenler tarafından seçilir. İdarî ve malî özerkliğe sahip bir kamu tüzel kişisidir.",
+      "articleRefs": [
+        "3"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Bir yerleşim biriminde belediye kurulabilmesi için nüfus en az kaç olmalıdır?",
+      "back": "5.000. Nüfusu 5.000 ve üzerinde olan yerleşim birimlerinde belediye kurulabilir. İl ve ilçe merkezlerinde belediye kurulması ise zorunludur.",
+      "explanation": "Nüfus eşiği yalnız 'kurulabilir' der, kuruluşu zorunlu kılmaz. Zorunluluk il ve ilçe merkezleri içindir.",
+      "articleRefs": [
+        "4"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Meskûn sahası kurulu bir belediyenin sınırlarına kaç metreden daha yakın olan yerleşim yerlerinde belediye kurulamaz?",
+      "back": "5.000 metre. İçme ve kullanma suyu havzaları ile sit ve diğer koruma alanlarında da belediye kurulamaz.",
+      "explanation": "Köyler birleşerek belediye kuracaksa iki şart aranır: meskûn sahaları, merkez kabul edilecek yerleşim yerinin meskûn sahasına azami 5.000 metre mesafede olmalı ve toplam nüfusları 5.000 ve üzerinde olmalıdır.",
+      "articleRefs": [
+        "4"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Köylerin birleşerek belediye kurması sürecinde seçmenlerin oylarını vali mi alır?",
+      "back": "Hayır. Oyları mahallî seçim kurulları alır. Bunu valinin bildirimi üzerine, onbeş gün içinde köyde veya köy kısımlarında kayıtlı seçmenler arasında yapar ve sonucu tutanakla valiliğe bildirir.",
+      "explanation": "Süreç şu yollardan biriyle başlar: köy ihtiyar meclisinin kararı, seçmenlerin en az yarısından bir fazlasının mahallin en büyük mülkî idare amirine yazılı başvurusu ya da valinin kendiliğinden gerek görmesi.",
+      "articleRefs": [
+        "4"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Yeni kurulan bir belediyenin sınırları kuruluşu izleyen ne kadar süre içinde tespit edilir?",
+      "back": "Altı ay içinde.",
+      "explanation": "Eskiden beri o yerleşim yerine ait sayılan tarla, bağ, bahçe, çayır, mera, otlak gibi yerler ile kumsal ve plajlar belediye sınırı içine alınır.",
+      "articleRefs": [
+        "5"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Belediye sınırları çizilirken esas olan nedir?",
+      "back": "Sınırları dere, tepe, yol gibi belirli ve sabit noktalardan geçirmek esastır. Bu mümkün değilse sınır düz olarak çizilir ve işaretlerle belirtilir.",
+      "explanation": "Sınırların geçtiği yerlerin bilinen adları sınır kâğıdına yazılır. Yetkili fen elemanının düzenlediği kroki sınır tespit tutanağına eklenir. Komşu belde veya köy halkının eskiden beri yararlandığı yayla, mera, kaynak gibi yerlerde geleneksel yararlanma hakları devam eder ve bu haklar için sınır kâğıdına şerh konulur.",
+      "articleRefs": [
+        "5"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Belediye sınırları nasıl kesinleşir?",
+      "back": "Belediye meclisinin kararı ve kaymakamın görüşü üzerine valinin onayı ile.",
+      "explanation": "Kesinleşen sınırlar valilikçe yerinde uygulanarak taraflara gösterilir ve durum tutanakla belirlenir. Sınır kararları ile dayanağı olan belgelerin birer örneği belediyesine, mahallî tapu dairesine, il özel idaresine ve o yerin mülkî idare amirine gönderilir.",
+      "articleRefs": [
+        "6"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Kesinleşen belediye sınırları zorunlu nedenler olmadıkça ne kadar süre değiştirilemez?",
+      "back": "Beş yıl. Bu yasak 'zorunlu nedenler olmadıkça' kaydıyla konmuştur.",
+      "articleRefs": [
+        "6"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Aynı il içindeki iki belde arasında, il ve ilçe sınırlarını değiştirmeyi gerektirmeyen bir sınır uyuşmazlığını kim karara bağlar?",
+      "back": "Vali. İlgili belediye meclisi ve köy ihtiyar meclisi ile kaymakamın görüşlerini değerlendirerek karar verir.",
+      "explanation": "İl ve ilçe sınırlarının değiştirilmesini gerektiren uyuşmazlıklarda 5442 sayılı İl İdaresi Kanunu hükümleri uygulanır. Büyükşehir belediyesi sınırları içindeki ilçe ve ilk kademe belediyelerinin sınır değişikliklerinde büyükşehir belediye meclisinin de görüşü alınır.",
+      "articleRefs": [
+        "7"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Belde ve köyler arasındaki sınır uyuşmazlığında ilgili meclislerin ve kaymakamın görüşleri ne kadar süre verilerek istenir?",
+      "back": "Otuz gün. Vali bu görüşleri değerlendirerek uyuşmazlığı karara bağlar.",
+      "articleRefs": [
+        "7"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Büyükşehir belediyesi bulunan yerlerde ayrılma yoluyla yeni bir belde kurulması için hangi nüfus şartları aranır?",
+      "back": "Beldenin nüfusu 100.000'den aşağı düşmemeli, yeni kurulacak beldenin nüfusu da 20.000'den az olmamalıdır.",
+      "explanation": "Genel kural şudur: bir beldenin bazı kısımlarının komşu beldeye katılmasında veya yeni bir belde ya da köy kurulmasında beldenin nüfusu 5.000'den aşağı düşmemelidir.",
+      "articleRefs": [
+        "8"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Büyükşehirlerde birleşme ve katılma işlemleri nerede karara bağlanır?",
+      "back": "Büyükşehir belediye meclisinde; katılınacak ilçe belediye meclisinin görüşü üzerine.",
+      "explanation": "Katılma sonrası oluşan yeni sınır için 6 ncı maddeye göre işlem yapılır ve sonuç Çevre, Şehircilik ve İklim Değişikliği Bakanlığına (metinde: Çevre ve Şehircilik Bakanlığı) bildirilir. Taşınır ve taşınmaz mal, hak, alacak ve borçların devri ve paylaşımı, taraflar arasında düzenlenecek protokolle belirlenir.",
+      "articleRefs": [
+        "8"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Bir köyün komşu beldeye katılması için katılınacak belde sakinlerinin de oyuna başvurulur mu?",
+      "back": "Hayır. Oylama yalnız katılmak isteyen köy, belde ya da bunların kısımlarında yapılır. Sonuç olumluysa katılınacak belediyenin meclisi otuz gün içinde kararını verir.",
+      "explanation": "Başvuru için iki şart aranır: meskûn sahalar birleşmiş ya da aradaki mesafe 5.000 metrenin altına düşmüş olmalı ve orada oturan seçmenlerin yarısından bir fazlası başvurmalıdır. Olumlu oylamanın evrakını valilik katılınacak belediyeye gönderir. Katılım, belediye meclisinin uygun görmesiyle gerçekleşir.",
+      "articleRefs": [
+        "8"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Mahalle kim tarafından yönetilir?",
+      "back": "Muhtar ve ihtiyar heyeti tarafından.",
+      "explanation": "Muhtarın görevleri arasında şunlar sayılır: mahalle sakinlerinin gönüllü katılımıyla ortak ihtiyaçları belirlemek, mahallenin yaşam kalitesini geliştirmek, belediye ve diğer kamu kurum ve kuruluşlarıyla ilişkileri yürütmek ve mahalle ile ilgili konularda görüş bildirmek.",
+      "articleRefs": [
+        "9"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Belediye sınırları içinde yeni bir mahalle kurulması hangi makamın onayıyla olur?",
+      "back": "Valinin onayıyla. Onay, belediye meclisinin kararı ve kaymakamın görüşü üzerine verilir.",
+      "explanation": "Aynı usul mahallenin kaldırılması, birleştirilmesi, bölünmesi, adlarıyla sınırlarının tespiti ve değiştirilmesi için de geçerlidir.",
+      "articleRefs": [
+        "9"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Belediye sınırları içinde mahalle kurulabilmesi için nüfus en az kaç olmalıdır?",
+      "back": "500. Belediye sınırları içinde nüfusu 500'ün altında mahalle kurulamaz.",
+      "articleRefs": [
+        "9"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Belde adının değiştirilmesi için belediye meclisinde hangi çoğunlukla karar alınmalıdır?",
+      "back": "Üye tam sayısının en az dörtte üç çoğunluğuyla.",
+      "explanation": "Meclis kararından sonra valinin görüşü alınır ve değişiklik İçişleri Bakanlığının onayıyla gerçekleşir. Karar Resmî Gazetede yayımlanır. Beldenin adı değişince belediyenin adı da değişmiş sayılır.",
+      "articleRefs": [
+        "10"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Belde adının değiştirilmesinde onay makamı vali midir?",
+      "back": "Hayır. Vali yalnız görüş bildirir; onay İçişleri Bakanlığınındır. Ayrıca belediye meclisinin üye tam sayısının en az dörtte üç çoğunluğuyla karar alması aranır.",
+      "articleRefs": [
+        "10"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Nüfusu kaçın altına düşen belediyeler köye dönüştürülür?",
+      "back": "2.000. Bu belediyelerin taşınır ve taşınmaz malları ile hak, alacak ve borçları ilgili köy tüzel kişiliğine intikal eder.",
+      "articleRefs": [
+        "11"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Meskûn sahası, bağlı olduğu il veya ilçe belediyesinin sınırına 5.000 metreden daha yakın duruma gelen bir köyün tüzel kişiliği hangi durumda kaldırılarak bu belediyeye katılır?",
+      "back": "Genel imar düzeni veya temel alt yapı hizmetleri bunu gerekli kılarsa. Köyün mal, hak, alacak ve borçları katıldığı belediyeye intikal eder.",
+      "explanation": "Aynı kural, meskûn sahası, nüfusu 50.000 ve üzerinde olan bir belediyenin sınırına 5.000 metreden daha yakın duruma gelen belediye ve köyler için de işler. Tüzel kişiliği kaldırılan belediyenin mahalleleri, katıldıkları belediyenin mahalleleri hâline gelir.",
+      "articleRefs": [
+        "11"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Tüzel kişiliği kaldırılan belediyenin tasfiyesini İller Bankası mı yapar?",
+      "back": "Hayır. Tasfiyeyi il özel idaresi yapar. İller Bankası yalnız il özel idaresinin üstlendiği borç miktarını keserek il özel idaresi hesabına aktarır.",
+      "explanation": "İntikal eden borçların karşılanamayan kısmını il özel idaresi üstlenir ve vali bunu İller Bankasına bildirir. İller Bankası bu miktarı, takip eden ayın genel bütçe vergi gelirleri tahsilat toplamının belediyelere ayrılan kısmından keser.",
+      "articleRefs": [
+        "11"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Mahalle kaldırılmasına dair bir karar, kesinleşmeyi takip eden yılın ocak ayının birinci gününden itibaren mi uygulanır?",
+      "back": "Hayır. Mahalle kaldırılmasına dair kararlar ilk mahallî idareler seçimlerinde uygulanır ve seçimler bu yerlerin yeni durumuna göre yapılır.",
+      "explanation": "Ocak ayının birinci günü kuralı, 4, 6, 7, 8 ve 9 uncu maddelerde belirtilen kararlar için genel kuraldır. Şu kararlar ise ilk mahallî idareler seçimlerinde uygulanır: birleşme ve katılma, mahalle kaldırılması, belediye ve köy tüzel kişiliğinin kaldırılması ve beldenin köye dönüştürülmesi.",
+      "articleRefs": [
+        "12"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Tüzel kişiliği sona erecek bir belediyenin taşınmazlarını satması hangi makamın onayına tabidir?",
+      "back": "Çevre ve Şehircilik Bakanlığının (Çevre, Şehircilik ve İklim Değişikliği Bakanlığı) onayına. Vadesi tüzel kişiliğin sona ereceği tarihi aşan borçlanma da aynı onaya tabidir.",
+      "explanation": "Kayıt, tüzel kişiliği sona erecek köylerin taşınmaz satışları ve borçlanmaları için de geçerlidir.",
+      "articleRefs": [
+        "12"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Bir kişi hangi beldenin hemşehrisidir?",
+      "back": "İkamet ettiği beldenin; herkes ikamet ettiği beldenin hemşehrisidir.",
+      "explanation": "Hemşehrilerin şu hakları vardır: belediye karar ve hizmetlerine katılma, belediye faaliyetleri hakkında bilgilenme ve belediye idaresinin yardımlarından yararlanma. Yardımların insan onurunu zedelemeyecek koşullarda sunulması zorunludur.",
+      "articleRefs": [
+        "13"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Belediyenin kanunlara dayanan kararlarına uymak ve belediye vergi, resim ve harçlarını ödemekle kimler yükümlüdür?",
+      "back": "Belediye sınırları içinde oturan, bulunan veya ilişiği olan her şahıs.",
+      "explanation": "Yükümlülük, belediyenin kanunlara dayanan kararlarını, emirlerini ve duyurularını kapsar. Ödeme yükümlülüğü ise belediye vergi, resim, harç, katkı ve katılma paylarını içerir.",
+      "articleRefs": [
+        "13"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Belediyelerin sporu teşvik etmek amacıyla yapacağı nakdi yardımın üst sınırı nedir?",
+      "back": "Bir önceki yıl genel bütçe vergi gelirlerinden belediyesi için tahakkuk eden miktarın büyükşehir belediyelerinde binde yedisi, diğer belediyelerde binde on ikisi.",
+      "articleRefs": [
+        "14"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Nüfusu 100.000'in üzerindeki bir belediye için kadınlar ve çocuklar için konukevi açmak isteğe bağlı mıdır?",
+      "back": "Hayır. Büyükşehir belediyeleri ile nüfusu 100.000'in üzerindeki belediyeler konukevi açmak zorundadır. Diğer belediyeler mali durumlarını ve hizmet önceliklerini değerlendirerek açabilir.",
+      "articleRefs": [
+        "14"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Belediye hizmetleri mücavir alanlara hangi kararla götürülebilir?",
+      "back": "Belediye meclisinin kararıyla. Belediyenin görev, sorumluluk ve yetki alanı belediye sınırlarını kapsar.",
+      "explanation": "Sivil hava ulaşımına açık havaalanları ile bunların bünyesindeki tüm tesisler bu Kanunun kapsamı dışındadır. 4562 sayılı Organize Sanayi Bölgeleri Kanunu hükümleri saklıdır.",
+      "articleRefs": [
+        "14"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,287 @@
+{
+  "deck": {
+    "topicId": "be738fb3-fc30-4d1e-9306-c1cb2eb7d0c3",
+    "legislationSlug": "2575-danistay-kanunu",
+    "sourceLabel": "AI bilgi kartı — 2575 Danıştay Kanunu md 62–98, Ek 1, Ek 2, Ek 3",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: resmî madde metni + çıkmış sorular)"
+  },
+  "cards": [
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Bir Danıştay dairesinde memurların görevlerine devamını ve dosya, yazı ve tebligat işlerinin gecikmeden yürütülmesini izlemekle kim görevlendirilir?",
+      "back": "O daire başkanınca birinci sınıfa ayrılmış bir tetkik hakimi görevlendirilir.",
+      "explanation": "Bu tetkik hakimi memurların yetişmesini ve verimli çalışmasını da izler. Danıştay Başkanının, daire ve kurul başkanının vereceği diğer işleri de yapar. Kurullarda bu görevlendirmeyi kurul başkanı yapar.",
+      "articleRefs": [
+        "62"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Danıştay Başkanı ve üyelerinin sağlık giderleri hangi kişilerin tabi olduğu hükümler çerçevesinde ödenir?",
+      "back": "Türkiye Büyük Millet Meclisi üyelerinin tabi oldukları hükümler ve esaslar çerçevesinde ödenir; ödeme Danıştay bütçesinden yapılır.",
+      "explanation": "Kural Danıştay Başkanı, Başsavcısı, başkanvekilleri, daire başkanları ve üyelerini kapsar. Bunların emeklileri ve bakmakla yükümlü oldukları aile fertleri de kapsamdadır. Aylık, ödenek ve diğer özlük haklarında ise sırasıyla Yargıtay Birinci Başkanı, Cumhuriyet Başsavcısı, birinci başkanvekilleri, daire başkanları ve üyeleri hakkındaki kanun hükümleri uygulanır.",
+      "articleRefs": [
+        "64"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Danıştay meslek mensupları idari yargı sisteminin uygulandığı yabancı memleketlere en çok ne kadar süreyle gönderilebilir?",
+      "back": "Bir yılı geçmemek şartıyla gönderilebilirler; gönderme Başkanlık Kurulunun kararıyla yapılır.",
+      "explanation": "Gönderme, idare ve vergi hukuku alanında bilimsel araştırma yapmak ve mesleki incelemelerde bulunmak için yapılır. Bu süre içinde aylık ve ödenekleri, hakiki yol masrafları ve gündelikleri verilir.",
+      "articleRefs": [
+        "65"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Danıştay meslek mensubunun davet edildiği bilimsel toplantıya katılması için onbeş günü aşan izni Danıştay Başkanı verebilir mi?",
+      "back": "Hayır. Danıştay Başkanı onbeş güne kadar olan izinleri verir; onbeş günü aşan izinler Başkanlık Kurulunca verilir.",
+      "explanation": "Meslek mensupları bu toplantılara kurumlarından yolluk almaksızın katılır. Başkanlık Kurulu kararıyla görevli olarak da gönderilebilirler. Yükseköğretim kurumlarında ders ve konferans vermeleri de Başkanlık Kurulunun kararına bağlıdır.",
+      "articleRefs": [
+        "66"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Danıştay üyesinin yüksek hakimlik vakar ve şerefiyle bağdaşmayan bir hareketi öğrenilince, konunun Yüksek Disiplin Kuruluna intikal ettirilmesine kim karar verir?",
+      "back": "Başkanlık Kurulu karar verir; duruma göre takdir eder ve karara bağlar.",
+      "explanation": "Kural Danıştay Başkanı, Başsavcı, başkanvekilleri, daire başkanları ve üyeleri kapsar. Hizmetin aksamasına yol açan hal ve hareketler de disiplin kovuşturması sebebidir.",
+      "articleRefs": [
+        "68",
+        "67"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Yüksek Disiplin Kurulu disiplin kovuşturmasına karar verirse soruşturmayı kaç kişi yapar?",
+      "back": "Üç kişi yapar; Kurul bu kişileri kendisi dışındaki daire başkanları ve üyeler arasından seçer.",
+      "explanation": "Hakkında isnatta bulunulan kişi Yüksek Disiplin Kurulu üyesiyse, Kurulun bu husustaki toplantılarına katılamaz. Yeri 20 nci maddedeki usule göre doldurulur.",
+      "articleRefs": [
+        "69"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Yüksek Disiplin Kurulu Başkanının ilgiliye yazılı savunma için tanıyacağı süre en az kaç gündür?",
+      "back": "En az beş gündür; Kurul Başkanı süreyi beş günden az olmamak üzere kendisi tayin eder.",
+      "explanation": "Kurul Başkanı soruşturma sonucunu ilgiliye yazılı olarak bildirir ve dosyayı üyelerin birine havale eder. Kurul işi evrak üzerinde inceler. İlgili, dosyayı raportör üyenin huzurunda inceleyebilir. Soruşturmayı yapmış olanlar bu Kurula katılamaz.",
+      "articleRefs": [
+        "72"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Yüksek Disiplin Kurulu, isnat olunan hal ve hareketi sabit görürse hangi kararları verebilir?",
+      "back": "İlgilinin uyarılmasına ya da hizmet süresine göre istifa etmeye veya emekliliğini istemeye davet edilmesine karar verir.",
+      "explanation": "Kurul bu kararlardan birini hal ve hareketin mahiyetine ve ağırlığına göre seçer. Hal ve hareket sabit görülmezse dosya işlemden kaldırılır. Karar Danıştay Başkanı hakkındaysa vekili, diğerleri hakkındaysa Danıştay Başkanı tarafından ilgiliye tebliğ edilir.",
+      "articleRefs": [
+        "73"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Emekliliğini istemeye davet kararına bir ay içinde uymayan Danıştay üyesi emekli olmuş sayılır mı?",
+      "back": "Hayır. Tebliğ tarihinden itibaren bir ay içinde karara uymayan ilgili istifa etmiş sayılır.",
+      "explanation": "Aynı sonuç, istifa etmeye davet kararına uymayan için de geçerlidir. Bir aylık süre içinde ilgili izinli sayılır.",
+      "articleRefs": [
+        "74"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "İlgili, Yüksek Disiplin Kurulu kararına karşı tebliğden itibaren kaç gün içinde dava açabilir?",
+      "back": "Onbeş gün içinde dava açabilir.",
+      "explanation": "Yüksek Disiplin Kurulunda karar vermiş veya soruşturmayı yapmış olanlar bu davaların görüşülmesine katılamaz.",
+      "articleRefs": [
+        "75"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Disiplin kararına karşı açılan dava kaç ay içinde karara bağlanır?",
+      "back": "Üç ay içinde karara bağlanır. Süre, savunmaların alındığı veya cevap sürelerinin geçtiği tarihten başlar; çalışmaya ara verme süresi hesaba katılmaz.",
+      "explanation": "Bu hükümler, 83 üncü maddenin ikinci fıkrası ile 84 üncü maddeye göre görevine son verilenlerin açacağı davalarda da uygulanır.",
+      "articleRefs": [
+        "75",
+        "85"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Disiplin kararına karşı açılan dava sonuçlanmadan, ilgiliden boşalan yer doldurulabilir mi?",
+      "back": "Hayır. Dava sonuçlanıncaya kadar ilgililerden boşalan yerler doldurulmaz.",
+      "explanation": "Dava, Yüksek Disiplin Kurulu kararının tebliğinden itibaren onbeş gün içinde açılabilir.",
+      "articleRefs": [
+        "75"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Danıştay üyelerinin görevlerinden doğan suçlarında ilk soruşturmayı yapan kurul kimlerden oluşur?",
+      "back": "Bir daire başkanı ile iki üyeden oluşur; kurulu Danıştay Başkanı seçer.",
+      "explanation": "Kural, görevleri sırasında işlenen suçları da kapsar. Danıştay Başkanı hakkındaki soruşturmada kurulu, Başkanın katılmayacağı Başkanlık Kurulu seçer.",
+      "articleRefs": [
+        "76"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Yargılamanın men'i kararı Danıştay Genel Kurulunda hangi yolla incelenir?",
+      "back": "Kendiliğinden incelenir; son soruşturmanın açılmasına dair kararlar ise itiraz üzerine incelenir.",
+      "explanation": "Bu kararları İdari İşler Kurulu verir ve kararlar sanığa ve varsa şikayetçiye tebliğ olunur. Genel Kuruldaki incelemeye İdari İşler Kurulu Başkan ve üyeleri katılmaz.",
+      "articleRefs": [
+        "76"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Danıştay Genel Kurulu yargılamanın men'i ve son soruşturma kararlarını incelerken toplantı yeter sayısı nedir?",
+      "back": "Yeter sayı en az otuzbirdir. Hazır bulunanlar çift sayıda ise en kıdemsiz üye toplantıya katılmaz.",
+      "articleRefs": [
+        "76"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Danıştay meslek mensupları hakkındaki soruşturmada İdari İşler Kurulunun birinci derecede verdiği kararlara itiraz süresi nedir?",
+      "back": "On gündür; süre kararın sanığa veya şikayetçiye tebliğ tarihinden itibaren işler.",
+      "articleRefs": [
+        "77",
+        "76"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Sanık, soruşturma dosyasını kimin gözetimi altında inceleyebilir?",
+      "back": "Kararı veren kurulun tetkik hakiminin gözetimi altında inceleyebilir. Bu hak, son soruşturmanın açılmasına dair kararın tebliği üzerine doğar.",
+      "explanation": "Bu kurullarda inceleme evrak üzerinde yapılır. Kararlar da kurulun tetkik hakimi tarafından Tebligat Kanunu hükümlerine göre ilgililere tebliğ edilir.",
+      "articleRefs": [
+        "78"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Son soruşturmanın açılmasına dair karar kesinleşince soruşturma dosyası kime gönderilir?",
+      "back": "Cumhuriyet Başsavcısına gönderilir; dosyayı gereği yapılmak üzere Danıştay Başkanı veya vekili gönderir.",
+      "explanation": "Karar, üst kurulca onanmak veya itiraz olunmamak suretiyle kesinleşir.",
+      "articleRefs": [
+        "79"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Kasıtlı bir suçtan altı aydan aşağı hapis cezasıyla hüküm giyen Danıştay meslek mensubunun görevi kendiliğinden sona erer mi?",
+      "back": "Hayır. Suç mesleğin vakar ve şerefini bozan nitelikte görülürse, meslekten çıkarılması gerekip gerekmediğine Yüksek Disiplin Kurulu karar verir.",
+      "explanation": "Görev, kasıtlı bir suçtan altı ay veya daha fazla hapis cezasıyla kesin olarak hüküm giyilince kendiliğinden sona erer. Altı aydan aşağı cezada Kurul, suçun mesleğin vakar ve şerefini bozup bozmadığına ya da mesleğe karşı genel saygı ve güveni giderip gidermediğine bakar.",
+      "articleRefs": [
+        "83"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Görevini sağlık bakımından yerine getiremeyeceği anlaşılan Danıştay meslek mensubunun görevine son verilmesine kim karar verir?",
+      "back": "Başkanlar Kurulu karar verir. Bunun için durumun tam teşekküllü resmî sağlık kurulu raporuyla kesin olarak anlaşılması gerekir.",
+      "explanation": "İlgili bu karara karşı dava açabilir. Bu davada disiplin kararlarına karşı davalara ilişkin 75 inci madde hükümleri uygulanır.",
+      "articleRefs": [
+        "84",
+        "85"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Danıştay daireleri hangi tarihler arasında çalışmaya ara verir?",
+      "back": "Yirmi temmuzdan otuz bir ağustosa kadar ara verir; daireler her yıl bir eylülde çalışmaya başlar.",
+      "explanation": "Danıştay'da çalışan diğer memurlar çalışmaya devam eder; görevde kalmaları lüzumlu görülmeyenler kanuni izinlerini kullanır. Ara verme süresinde görev başında kalan üyeler, yılın diğer dönemlerinde yol süresi dâhil bu süre kadar izin kullanabilir.",
+      "articleRefs": [
+        "86"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Çalışmaya ara verme süresinde görev yapacak nöbetçi dairenin başkan ve üyelerini kim seçer?",
+      "back": "Başkanlar Kurulu seçer; seçimi Danıştay dairelerinin başkan ve üyeleri arasından karma olarak yapar.",
+      "explanation": "Nöbetçi daire bir daire başkanı ile dört üyeden ve bir yedek üyeden oluşur. Yedek üye aynı zamanda Genel Sekreterlik görevini yapar. Ayrıca lüzumu kadar savcı ve tetkik hâkimi görevine devam eder.",
+      "articleRefs": [
+        "86"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Çalışmaya ara verme süresinde Danıştay Başkanına başkanvekillerinden biri mi vekalet eder?",
+      "back": "Hayır. Bu süre içinde Danıştay Başkanına nöbetçi daire başkanı vekalet eder.",
+      "explanation": "Görevli olarak kalanlar dışında Danıştay Başkanı, Başsavcı, başkanvekilleri, daire başkanları ve üyeler ile savcılar ve tetkik hakimleri çalışmaya ara verir.",
+      "articleRefs": [
+        "86"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Nöbetçi daire, çalışmaya ara verme süresinde yalnız yürütmenin durdurulmasına ait işleri mi görür?",
+      "back": "Hayır. Delillerin tespitine ait işleri ve kanunen belli süre içinde karara bağlanması gereken işleri de görür.",
+      "explanation": "Maddede sayılan işler arasında yürütmenin durdurulmasına ait işler ile delillerin tespitine ait işler aynı bentte birlikte yer alır.",
+      "articleRefs": [
+        "87"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Danıştay meslek mensupları, tetkik hakimleri ve savcıları kamu hizmetleriyle ilgili gizli bilgileri görevden ayrıldıktan sonra açıklayabilir mi?",
+      "back": "Hayır; görevlerinden ayrılmış olsalar bile bu bilgileri açıklayamazlar.",
+      "articleRefs": [
+        "89"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Danıştay meslek mensubu hakkındaki isnadın garez veya hakaret kastıyla yapıldığı anlaşılırsa, isnatta bulunanlar hakkında kamu davası açılmasını kim ister?",
+      "back": "Danıştay Başkanı ister; kamu davası açılmasını Cumhuriyet Savcılığından talep eder.",
+      "explanation": "Bunun için ihbar ve şikayetin inceleme, soruşturma veya yargılama sonunda sabit olmadığının anlaşılması gerekir. İsnadın uydurma bir isnat mahiyetinde olduğu anlaşılırsa da aynı yol izlenir.",
+      "articleRefs": [
+        "90"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "İki dava dairesinin görevine ilişkin davaya bakan ortak toplantının toplanma ve görüşme yeter sayısı nedir?",
+      "back": "Yeter sayı dokuzdur; kararlar oy çokluğuyla verilir.",
+      "explanation": "Toplantı, ilgili dava dairesinin isteği üzerine yapılır ve daire başkanlarından kıdemlisi başkanlık eder. Dava, açıldığı dairenin esas ve karar numaralarını alır.",
+      "articleRefs": [
+        "Ek 1"
+      ]
+    }
+  ]
+}

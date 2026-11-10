@@ -1,0 +1,293 @@
+{
+  "deck": {
+    "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+    "legislationSlug": "turk-ceza-kanunu",
+    "sourceLabel": "AI bilgi kartı — Türk Ceza Kanunu md 15, 56, 93, 111–113, 115, 118, 121, 126, 144, 145, 152–154, 156, 159, 161, 164–166, 169, 173, 175, 176, 183, 185, 186, 189, 193, 194, 196, 198, 200, 202, 203, 205, 208, 213, 217/A, 219",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: resmî madde metni + çıkmış sorular)"
+  },
+  "cards": [
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Miktarı soruşturma koşulu oluşturan hallerde ceza hesaplanırken ağırlaştırıcı ve hafifletici nedenlerin hangi sınırları esas alınır?",
+      "back": "Kanuni ağırlaştırıcı nedenlerin aşağı sınırı, kanuni hafifletici nedenlerin yukarı sınırı esas alınır.",
+      "explanation": "Hesapta soruşturma evresinde ileri sürülen kanuni ağırlaştırıcı ve hafifletici nedenler göz önünde bulundurulur.",
+      "articleRefs": [
+        "15"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Organ veya dokularını satan kişi, suç resmi makamlarca haber alındıktan sonra diğer suçluların yakalanmasına yardım ederse cezasızlıktan yararlanır mı?",
+      "back": "Hayır. Cezasızlık için durumu resmi makamlar haber almadan önce merciine bildirmesi gerekir. Haber alındıktan sonraki gönüllü yardımda ceza, yardımın niteliğine göre dörtte birden yarısına kadarı indirilir.",
+      "explanation": "İlk fıkrada kişi, resmi makamlar haber almadan önce durumu merciine bildirip suçluların yakalanmalarını kolaylaştırırsa hakkında cezaya hükmolunmaz. Sonraki fıkradaki indirim, suçun meydana çıkmasına ve diğer suçluların yakalanmasına gönüllü hizmet ve yardıma bağlıdır.",
+      "articleRefs": [
+        "93"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Madde 111'e göre tüzel kişiye özgü güvenlik tedbiri, hangi suçlar yoluyla yararına haksız menfaat sağlanmasında uygulanır?",
+      "back": "Tehdit, şantaj, cebir veya kişiyi hürriyetinden yoksun kılma suçlarında.",
+      "explanation": "Bu suçların işlenmesi sonucunda yararına haksız menfaat sağlanan tüzel kişiler hakkında bunlara özgü güvenlik tedbirlerine hükmolunur.",
+      "articleRefs": [
+        "111"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Cebir veya tehdit kullanarak kişinin eğitim ve öğretim hakkını kullanmasına engel olan faile hangi ceza verilir?",
+      "back": "İki yıldan beş yıla kadar hapis cezası.",
+      "explanation": "Aynı ceza, Devletçe kurulan ya da kamu makamlarının verdiği izne dayalı yürütülen eğitim ve öğretim faaliyetlerinin ve öğrencilerin toplu olarak oturdukları binalara girilmesinin veya orada kalınmasının engellenmesinde de verilir. Engelleme hukuka aykırı başka bir davranışla da gerçekleşebilir.",
+      "articleRefs": [
+        "112"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Kamu hizmetlerinden yararlanma hakkının engellenmesinde suçun konusu sağlık hizmeti ise ceza ne kadar artırılır?",
+      "back": "Altıda biri oranına kadar artırılır; temel ceza iki yıldan beş yıla kadar hapistir.",
+      "explanation": "Suç; cebir, tehdit ya da hukuka aykırı başka bir davranışla bir kamu faaliyetinin yürütülmesine veya kamu kurumlarında, kamu kurumu niteliğindeki meslek kuruluşlarında verilen ya da kamu makamlarının verdiği izne dayalı sunulan hizmetlerden yararlanılmasına engel olunmasıyla oluşur.",
+      "articleRefs": [
+        "113"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Cebir veya tehdit kullanarak bir sendikanın faaliyetlerini engelleyen kişiye hangi ceza verilir?",
+      "back": "Bir yıldan üç yıla kadar hapis cezası; engelleme hukuka aykırı başka bir davranışla da olabilir.",
+      "explanation": "Bir kimseyi sendikaya üye olmaya veya olmamaya, faaliyetlerine katılmaya veya katılmamaya, sendikadan ya da yönetimdeki görevinden ayrılmaya zorlamak amacıyla cebir veya tehdit kullanan kişiye ise altı aydan iki yıla kadar hapis cezası verilir.",
+      "articleRefs": [
+        "118"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Dilekçe hakkının kullanılmasının engellenmesi suçu, dilekçenin hangi makama verildiğine bakılmaksızın oluşur mu?",
+      "back": "Hayır. Dilekçe, kişinin belli bir hakkı kullanmak için yetkili kamu makamlarına verilmiş olmalı ve hukuki bir neden olmaksızın kabul edilmemelidir.",
+      "explanation": "Suç, yetkili kamu makamına verilen dilekçenin hukuki bir neden olmaksızın kabul edilmemesiyle oluşur; fail hakkında altı aya kadar hapis cezasına hükmolunur.",
+      "articleRefs": [
+        "121"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Hakaret suçunda mağdurun ismi açıkça belirtilmemişse, hangi durumda ismi belirtilmiş sayılır?",
+      "back": "Hakaretin niteliğinde ve mağdurun şahsına yönelik bulunduğunda duraksanmayacak bir durum varsa.",
+      "explanation": "Bu durumda isnat üstü kapalı geçiştirilmiş olsa bile hem mağdurun ismi belirtilmiş hem de hakaret açıklanmış sayılır.",
+      "articleRefs": [
+        "126"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Hırsızlığın paydaş veya elbirliği ile malik olunan mal üzerinde işlenmesinde faile hangi ceza verilir?",
+      "back": "İki aydan bir yıla kadar hapis veya adlî para cezası; cezaya şikâyet üzerine hükmolunur.",
+      "explanation": "Aynı daha az ceza, hırsızlığın bir hukuki ilişkiye dayanan alacağı tahsil amacıyla işlenmesinde de uygulanır.",
+      "articleRefs": [
+        "144"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Hırsızlıkta malın değerinin az olması cezada hangi sonuçlara yol açabilir?",
+      "back": "Cezada indirim yapılabilir; suçun işleniş şekli ve özellikleri de göz önünde bulundurularak ceza vermekten de vazgeçilebilir.",
+      "explanation": "Kural, hırsızlık suçunun konusunu oluşturan malın değerinin azlığına bağlıdır. Cezadan vazgeçerken suçun işleniş şekli ve özellikleri de dikkate alınır.",
+      "articleRefs": [
+        "145"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Mala zarar verme suçunda hangi işleniş biçimleri cezanın bir katına kadar artırılmasını gerektirir?",
+      "back": "Yakarak, yakıcı veya patlayıcı madde kullanarak; toprak kaymasına, çığ düşmesine, sel veya taşkına neden olarak; radyasyona maruz bırakarak, nükleer, biyolojik veya kimyasal silah kullanarak işlenmesi.",
+      "articleRefs": [
+        "152"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Mala zarar verme sonucunda enerji alanında kamu hizmeti geçici de olsa aksarsa ceza ne kadar artırılır?",
+      "back": "Yarısından iki katına kadar artırılır.",
+      "explanation": "Aynı artırım, haberleşme ile demiryolu veya havayolu ulaşımı alanında kamu hizmetinin aksamasında da uygulanır. Artırım, önceki fıkralara göre verilecek cezaya yapılır.",
+      "articleRefs": [
+        "152"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Devlet ormanı statüsündeki yerlerdeki ağaçlara zarar verilmesi, dikili ağaç ve fidana ilişkin nitelikli hâle girer mi?",
+      "back": "Hayır. Bu bent Devlet ormanı statüsündeki yerleri hariç tutar; bunların dışında nerede olursa olsun her türlü dikili ağaç, fidan veya bağ çubuğu kapsamdadır.",
+      "explanation": "Nitelikli hâllerde fail hakkında bir yıldan dört yıla kadar hapis cezasına hükmolunur.",
+      "articleRefs": [
+        "152"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "İbadethanelere ve mezarlıklara zarar verme ya da bu yerleri kirletme hangi maksatla işlenirse ceza üçte biri oranında artırılır?",
+      "back": "İlgili dini inanışı benimseyen toplum kesimini tahkir maksadıyla işlenirse.",
+      "explanation": "Yıkmak, bozmak veya kırmak suretiyle zarar veren kişi bir yıldan dört yıla kadar hapis cezası alır. Bu yerleri ve yapıları kirleten kişi ise üç aydan bir yıla kadar hapis veya adlî para cezası ile cezalandırılır.",
+      "articleRefs": [
+        "153"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Bedelsiz senedi kullanma suçunda faile ceza verilmesi şikâyete bağlı mıdır?",
+      "back": "Evet; şikâyet üzerine altı aydan iki yıla kadar hapis ve adlî para cezası verilir.",
+      "explanation": "Suç, bedelsiz kalmış bir senedi kullanmakla oluşur; hapis ve adlî para cezası birlikte verilir.",
+      "articleRefs": [
+        "156"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Dolandırıcılığın bir hukuki ilişkiye dayanan alacağı tahsil amacıyla işlenmesi cezayı artırır mı?",
+      "back": "Hayır; bu daha az cezayı gerektiren hâldir: şikâyet üzerine altı aydan bir yıla kadar hapis veya adlî para cezasına hükmolunur.",
+      "explanation": "Madde başlığı \"Daha az cezayı gerektiren hal\"dir. Bu hâlde cezaya şikâyet üzerine hükmolunur.",
+      "articleRefs": [
+        "159"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Hileli iflas için iflas kararının hileli tasarruflardan önce verilmiş olması şart mıdır?",
+      "back": "Hayır; iflasa hileli tasarruflardan önce veya sonra karar verilmiş olması yeterlidir. Ceza üç yıldan sekiz yıla kadar hapistir.",
+      "explanation": "Hileli iflasın varlığı için sayılan tasarruflar arasında şunlar bulunur: alacakların teminatı mahiyetindeki malların kaçırılması, gizlenmesi veya değerinin azalmasına neden olunması; ticari defter, kayıt veya belgelerin gizlenmesi veya yok edilmesi; gerçekte olmayan bir alacak ve borç ilişkisi için belge düzenlenmesi; aktifin olduğundan az gösterilmesi.",
+      "articleRefs": [
+        "161"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Bir suçun işlenmesiyle elde edilen eşyayı, o suça iştirak etmeksizin satın alan kişiye hangi ceza verilir?",
+      "back": "Altı aydan üç yıla kadar hapis ve onbin güne kadar adlî para cezası.",
+      "explanation": "Aynı ceza, bu eşyayı veya diğer malvarlığı değerini satan, devreden ya da kabul eden kişiye de verilir.",
+      "articleRefs": [
+        "165"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Hukuki bir ilişkiyle elde ettiği eşyanın suç işlenerek elde edildiğini öğrenen kişi kime bildirimde bulunmalıdır?",
+      "back": "Suçu takibe yetkili makamlara, vakit geçirmeksizin.",
+      "explanation": "Bildirimde bulunmayan kişi altı aya kadar hapis veya adlî para cezası ile cezalandırılır.",
+      "articleRefs": [
+        "166"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Madde 169'a göre hangi suçların işlenmesiyle yararına haksız menfaat sağlanan tüzel kişiye özgü güvenlik tedbiri uygulanır?",
+      "back": "Hırsızlık, güveni kötüye kullanma ve dolandırıcılık suçlarında.",
+      "articleRefs": [
+        "169"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "İçilecek sulara zehir katarak kişilerin hayatını ve sağlığını tehlikeye düşüren kişiye hangi ceza verilir?",
+      "back": "İki yıldan onbeş yıla kadar hapis cezası.",
+      "explanation": "Fiil dikkat ve özen yükümlülüğüne aykırı olarak işlenirse üç aydan bir yıla kadar hapis cezasına hükmolunur. Kapsama yenilecek, içilecek, kullanılacak veya tüketilecek her çeşit besin veya şeye zehir katmak ya da bunları başka suretlerle bozmak da girer.",
+      "articleRefs": [
+        "185"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Sağlık için tehlike oluşturabilecek maddeleri kimlere vermek suç oluşturur?",
+      "back": "Çocuklara, akıl hastalarına veya uçucu madde kullananlara.",
+      "explanation": "Bu kişilere söz konusu maddeleri veren veya tüketimine sunan kişi altı aydan bir yıla kadar hapis cezası ile cezalandırılır.",
+      "articleRefs": [
+        "194"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Milli ziynet altınları Türk Ceza Kanununa göre neyin hükmündedir?",
+      "back": "Para hükmündedir.",
+      "explanation": "Paraya eşit sayılan değerler arasında Devlet tarafından ihraç edilip de hamiline yazılı bonolar, hisse senetleri, tahviller ve kuponlar da bulunur. Yetkili kurumlarca çıkarılmış olup kanunen tedavül eden senetler, tahviller ve evrak da bu değerlerdendir.",
+      "articleRefs": [
+        "198"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Gerçek bir resmi belgeyi yok etme suçu kamu görevlisi tarafından işlenirse ceza ne kadar artırılır?",
+      "back": "Yarı oranında artırılır; temel ceza iki yıldan beş yıla kadar hapistir.",
+      "explanation": "Suç, gerçek bir resmi belgeyi bozmak, yok etmek veya gizlemekle oluşur.",
+      "articleRefs": [
+        "205"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Gerçeğe aykırı bir bilgiyi alenen yaymak tek başına halkı yanıltıcı bilgiyi alenen yayma suçunu oluşturur mu?",
+      "back": "Hayır. Ayrıca sırf halk arasında endişe, korku veya panik yaratmak saiki aranır; bilginin kamu barışını bozmaya elverişli şekilde yayılması da gerekir.",
+      "explanation": "Yayılan bilgi gerçeğe aykırı olmalı ve ülkenin iç ve dış güvenliği, kamu düzeni ve genel sağlığı ile ilgili bulunmalıdır.",
+      "articleRefs": [
+        "217/A"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Halkı yanıltıcı bilgiyi alenen yayma suçunda hangi hâllerde ceza yarı oranında artırılır?",
+      "back": "Fail suçu gerçek kimliğini gizleyerek ya da bir örgütün faaliyeti çerçevesinde işlerse.",
+      "explanation": "Artırım, birinci fıkraya göre verilen cezaya uygulanır.",
+      "articleRefs": [
+        "217/A"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Halkı yanıltıcı bilgiyi alenen yayma suçunun temel cezası nedir?",
+      "back": "Bir yıldan üç yıla kadar hapis cezası.",
+      "articleRefs": [
+        "217/A"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Dini reislerden biri dini sıfatından istifade ederek birinci fıkradaki fiiller dışında başka bir cürüm işlerse, o cürmün cezası ne kadar çoğaltılır?",
+      "back": "Altıda bir miktarı çoğaltılır. Kanun bu sıfatı esasen nazarıitibara almışsa çoğaltmaya mahal yoktur.",
+      "explanation": "Hüküm imam, hatip, vaiz, rahip, haham gibi dini reisleri kapsar.",
+      "articleRefs": [
+        "219"
+      ]
+    }
+  ]
+}

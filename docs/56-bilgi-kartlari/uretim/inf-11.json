@@ -1,0 +1,238 @@
+{
+  "deck": {
+    "topicId": "3a7fb703-175b-4a01-a217-a00766c51d07",
+    "legislationSlug": "5275-ceza-ve-guvenlik-tedbirlerinin-infazi-hakkinda-kanun",
+    "sourceLabel": "AI bilgi kartı — 5275 Ceza ve Güvenlik Tedbirlerinin İnfazı Hakkında Kanun md 111–124, Ek 1",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: resmî madde metni + çıkmış sorular)"
+  },
+  "cards": [
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Tutuklular kural olarak hangi tür kurumda tutulur?",
+      "back": "Normal güvenlik esasına dayalı tutukevlerinde tutulurlar. Maddî olanak yoksa diğer kapalı ceza infaz kurumlarının bu amaca ayrılmış bölümlerinde tutulurlar.",
+      "explanation": "Bu tutukevlerinin özellikleri şunlardır: İç ve dış güvenlik görevlisi bulunur. Firara karşı teknik, mekanik, elektronik veya fizikî engeller vardır. Oda ve koridor kapıları 34 üncü maddede sayılan hâller dışında sürekli kapalı tutulur. Yasal zorunluluklar ayrık, dışarıyla irtibat ve haberleşme olanağı bulunmaz.",
+      "articleRefs": [
+        "111"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Eylem ve davranışları ile 9 uncu madde kapsamına giren tutuklular nerede barındırılır?",
+      "back": "Yüksek güvenlikli tutukevlerinde barındırılırlar. Buna olanak yoksa yüksek güvenlikli kapalı ceza infaz kurumlarının tutuklulara ayrılan bölümlerinde kalırlar.",
+      "explanation": "Ayrımı tutuklunun eylem ve davranışları belirler. Diğer tutuklular normal güvenlik esasına dayalı tutukevlerinde tutulur.",
+      "articleRefs": [
+        "111"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Tutuklular tutukevlerinde hangi gruplara ayrılarak barındırılır?",
+      "back": "Büyükler, kadınlar, gençler ve çocuklar olarak ayrılırlar. Suç türleri de gözetilerek ayrı yerlerde barındırılırlar.",
+      "explanation": "Maddî olanak yoksa aynı ayrım, kapalı ceza infaz kurumlarının tutuklulara ayrılan bölümlerinde uygulanır. Kadın, çocuk ve gençlik tutukevleri müstakil olarak kurulabilir.",
+      "articleRefs": [
+        "111"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Sanığın tutukevine kabul edilebilmesi için ne zorunludur?",
+      "back": "Hâkim veya mahkeme tarafından verilmiş bir tutuklama kararının bulunması zorunludur.",
+      "articleRefs": [
+        "112"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Tutuklunun tutukevine konulduğu kime bildirilir?",
+      "back": "Kararı veren hâkim veya mahkemeye bildirilir. Bildirimde gün ve saat belirtilir.",
+      "articleRefs": [
+        "112"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Maddî olanaklar yetersizse iştirak hâlinde suç işlemiş tutuklular aynı odada barındırılabilir mi?",
+      "back": "Hayır. İştirak hâlinde suç işlemiş olanlar ve aralarında husumet bulunanlar aynı odalarda barındırılmaz. Birbirleriyle temas etmelerini engelleyecek tedbirler de alınır.",
+      "explanation": "Bu ayırma maddî olanak kaydına bağlı değildir; maddî olanaklar elverdiğince yapılan ayırma ise suç türü ve güvenlik riskine göredir.",
+      "articleRefs": [
+        "113"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Maddî olanaklar elverdiğince tutuklular hangi ölçütlere göre ayrı odalarda barındırılır?",
+      "back": "Suç türlerine ve taşıdıkları güvenlik riskine göre ayrı odalarda barındırılırlar.",
+      "articleRefs": [
+        "113"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 1,
+      "front": "Tutuklu çalışmaya mecbur tutulabilir mi?",
+      "back": "Hayır. Tutuklulardan çalışmaları istenebilir ama buna mecbur tutulamazlar.",
+      "explanation": "Tutuklu isterse idare, barındırıldığı odada çalışmasına izin verebilir. Odada çalışma imkânı yoksa iş yerlerinde çalışmasına da izin verilebilir. Bu durumda tutukluya, çalışmakta olan hükümlülere ait rejim uygulanır.",
+      "articleRefs": [
+        "114"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Soruşturma evresinde tutuklunun ziyaretçi kabulünü kim yasaklayabilir?",
+      "back": "Cumhuriyet savcısı. Soruşturmanın selameti bakımından ziyaretçi kabulünü yasaklayabilir veya kısıtlamalar koyabilir.",
+      "explanation": "Kovuşturma evresinde bu yetki hâkim veya mahkemededir. Yazılı haberleşme ve telefonla görüşmeler de aynı ayrımla kısıtlanabilir: Soruşturmada Cumhuriyet savcısı, kovuşturmada hâkim veya mahkemesi karar verir. Kısıtlama yoksa tutuklu, kurumun genel düzenine uyarak ziyaretçi kabul eder.",
+      "articleRefs": [
+        "114"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Soruşturma evresinde Cumhuriyet savcısı, tutuklunun müdafiiyle görüşmesine kısıtlama koyabilir mi?",
+      "back": "Hayır. Tutuklunun müdafii ile haberleşmesine, kurum düzeni çerçevesindeki temas ve görüşmelerine hiçbir suretle engel olunamaz, kısıtlama konulamaz. Özel kanun hükümleri saklıdır.",
+      "explanation": "Tutuklu, savunması için istediği müdafii seçmek ve görevlendirmek hakkına sahiptir. Her dereceden kurum görevlileri bu konuda tutukluya tavsiyede bulunamaz. Cumhuriyet savcısının kısıtlama yetkisi ise ziyaretçi kabulü, yazılı haberleşme ve telefon görüşmeleriyle ilgilidir.",
+      "articleRefs": [
+        "114"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Hangi tutuklulara kısıtlayıcı önlemler uygulanabilir?",
+      "back": "Tehlikeli hâlde bulunan, delil karartma tehlikesi olan tutuklulara uygulanabilir. Soruşturmanın amacını veya tutukevinin güvenliğini tehlikeye düşüren ya da suçun tekrarına olanak verecek davranışlarda bulunanlara da uygulanabilir.",
+      "explanation": "Önlemleri soruşturma evresinde Cumhuriyet savcısı, kovuşturma evresinde hâkim veya mahkemesi uygular.",
+      "articleRefs": [
+        "115"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Saldırganlık gösteren tutukluya hangi kısıtlayıcı önlem uygulanabilir?",
+      "back": "Belirli süreyle kelepçelenebilir veya hareketleri engellenebilir.",
+      "explanation": "Gerekiyorsa tutuklu, kendisine veya başkalarına zarar vermesini önleyecek biçimde hazırlanmış özel bir odada barındırılabilir. Kaldığı oda kamera ile izlenebilir; bu da önlemler arasındadır.",
+      "articleRefs": [
+        "115"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Kısıtlayıcı önlem olarak tutuklunun ziyaretçi kabulü ve telefon görüşmeleri süre sınırı olmaksızın kısıtlanabilir mi?",
+      "back": "Hayır. Dışarıyla ilişkinin, ziyaretçi kabulünün ve telefon görüşmelerinin kısıtlanması belirli süre ile uygulanır.",
+      "explanation": "Önlemler arasında başkaları da vardır. Tutuklu tek başına, sıkı bir rejim altında muhafaza edilebilir ve odası kamera ile izlenebilir. Yüksek güvenlikli bir kuruma da nakledilebilir.",
+      "articleRefs": [
+        "115"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "İkinci derece dâhil kan veya kayın hısımlarından birinin ya da eşinin ölümünde tutukluya cenazeye katılması için en fazla ne kadar izin verilebilir?",
+      "back": "Yol süresi dışında iki güne kadar izin verilebilir. Tutukluya dış güvenlik görevlisi refakat eder.",
+      "explanation": "İzin, ceza infaz kurumu en üst amirinin önerisi ve Cumhuriyet başsavcılığının onayı ile verilir. Soruşturmanın veya kovuşturmanın selameti ve güvenlik bakımından sakınca oluşturmaması şarttır.",
+      "articleRefs": [
+        "116"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Ağır hasta babasını ziyaret etmek isteyen tutukluya her izinde en fazla ne kadar süre verilebilir?",
+      "back": "Yol süresi dışında bir güne kadar izin verilebilir. Bu izin her yakın için toplam iki defaya mahsustur.",
+      "explanation": "Hastalığın yaşamsal tehlike oluşturacak önemli ve ağır bir hastalık olması ve sağlık kurulu raporu ile belgelendirilmesi gerekir. İzin şu yakınlar için verilebilir: ana, baba, eş, kardeş, çocuk ile eşin anne veya babası. İzni ceza infaz kurumu en üst amiri önerir, Cumhuriyet başsavcılığı onaylar. Tutukluya dış güvenlik görevlisi refakat eder.",
+      "articleRefs": [
+        "116"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Cenaze veya hasta ziyareti izni alan tutuklunun gece konaklaması gerekirse nerede kalacağına kim karar verir?",
+      "back": "Gidilen yerin valisi karar verir. Vali, güvenlik hususunu değerlendirir ve gerekli güvenlik tedbirlerini alır.",
+      "explanation": "Tutuklu şu yerlerde kalabilir: kendi evi, ikinci fıkrada belirtilen bir yakınının evi, güvenli görülen başka bir yer ya da gidilen yerdeki kapalı ceza infaz kurumu. İzin yurt dışına çıkmayı gerektiriyorsa bu madde gereğince verilemez. Usul ve esaslar, Adalet ve İçişleri bakanlıklarınca müştereken hazırlanacak yönetmelikle belirlenir.",
+      "articleRefs": [
+        "116"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Er ve erbaşlar hakkında kısa süreli hapis cezası yerine hükmedilen, Türk Ceza Kanununun 50 nci maddesinin birinci fıkrasının (c), (e) ve (f) bentlerindeki tedbirlerin yerine getirilmesi ne zamana bırakılır?",
+      "back": "Askerlik hizmetlerinin sonuna bırakılır. Bu Kanunun 106 ncı maddesindeki adlî para cezası için de aynı kural geçerlidir.",
+      "explanation": "Kural, askere alınmadan önce ve askerlik sırasında işlenen suçlar için uygulanır. Kapsamdakiler: er ve erbaşlar ile yedek astsubay ve yedek subaylar.",
+      "articleRefs": [
+        "118"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Yerine getirilmesi askerlik hizmetinin sonuna bırakılan adlî para cezası için bu süre içinde zamanaşımı işler mi?",
+      "back": "Hayır. Askerlik hizmetlerinin sonuna bırakılan tedbirler ve adlî para cezası için bu süreler içinde zamanaşımı işlemez.",
+      "articleRefs": [
+        "118"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Cezanın askerlik hizmetinin sonuna bırakılması kuralı hangi suçlarda uygulanmaz?",
+      "back": "Sırf askerî suçlar ile askerî disiplin suçlarında uygulanmaz.",
+      "explanation": "Bu ayrık hâller dışında kural, kısa süreli hapis cezası yerine hükmedilen tedbirlere ve adlî para cezasına uygulanır.",
+      "articleRefs": [
+        "118"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Ceza ve Güvenlik Tedbirlerinin İnfazı Hakkında Kanunda kullanılan terimler, mevzuatta bunların karşılığı olarak kullanılmış terimler karşısında nasıl bir etki doğurur?",
+      "back": "Onların yerini alır. Bu Kanundaki terimler, mevzuatta karşılığı olarak kullanılan terimlerin yerine geçer.",
+      "articleRefs": [
+        "119"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Diğer kanunlarda 647 sayılı Cezaların İnfazı Hakkında Kanunun hapis cezaları ile tedbirlerin infazına ilişkin hükümlerine yapılan yollamalar nereye yapılmış sayılır?",
+      "back": "Ceza ve Güvenlik Tedbirlerinin İnfazı Hakkında Kanunda düzenlenen ilgili hükümlere yapılmış sayılır.",
+      "articleRefs": [
+        "120"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Ceza ve Güvenlik Tedbirlerinin İnfazı Hakkında Kanun gereğince çıkarılması gereken yönetmelikleri kim çıkarır?",
+      "back": "Cumhurbaşkanı veya ilgili bakanlıklar çıkarır.",
+      "articleRefs": [
+        "121"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Ceza ve Güvenlik Tedbirlerinin İnfazı Hakkında Kanunun Geçici 1 inci maddesi dışındaki hükümleri hangi tarihte yürürlüğe girmiştir?",
+      "back": "1 Haziran 2005 tarihinde yürürlüğe girmiştir.",
+      "explanation": "Geçici 1 inci madde ise 1 Ocak 2005 tarihinde yürürlüğe girmiştir.",
+      "articleRefs": [
+        "123"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,311 @@
+{
+  "deck": {
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "legislationSlug": "5271-sayili-ceza-muhakemesi-kanunu-cmk",
+    "sourceLabel": "AI bilgi kartı — 5271 Sayılı Ceza Muhakemesi Kanunu (CMK) md 240, 242, 243, 245, 246, 249, 255, 257, 258, 269, 270, 274, 277–282, 284, 285, 287, 290, 292, 296, 298, 300–304, 306, 315–317, 319, 321, 322, 328–330, 333",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: resmî madde metni + çıkmış sorular)"
+  },
+  "cards": [
+    {
+      "kind": "trap",
+      "difficulty": 1,
+      "front": "Katılma, görülmekte olan davayı durdurur mu?",
+      "back": "Hayır. Katılma davayı durdurmaz.",
+      "explanation": "Tarihi belirlenmiş duruşma ve yargılama usulüne ilişkin diğer işlemler, vaktin darlığından dolayı katılan kimse çağrılamasa ya da kendisine haber verilemese bile belirli gününde yapılır.",
+      "articleRefs": [
+        "240"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Katılanın başvurusu üzerine karar bozulursa işi kim yeniden takip eder?",
+      "back": "Cumhuriyet savcısı işi yeniden takip eder.",
+      "explanation": "Katılan, kanun yollarına Cumhuriyet savcısına bağlı olmaksızın başvurabilir.",
+      "articleRefs": [
+        "242"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Katılan ölürse katılmanın durumu ne olur?",
+      "back": "Katılma hükümsüz kalır; mirasçılar, katılanın haklarını takip etmek üzere davaya katılabilir.",
+      "explanation": "Katılanın vazgeçmesi de katılmayı hükümsüz kılar.",
+      "articleRefs": [
+        "243"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Gaip sanığa verilen güvence belgesi hangi hâllerde hükümsüz kalır?",
+      "back": "Sanık hapis cezasıyla mahkûm olursa, kaçmak hazırlığında bulunursa ya da belgenin bağlı olduğu koşullara uymazsa belgenin hükmü kalmaz.",
+      "explanation": "Mahkeme, gaip olan sanığa duruşmaya gelmesi hâlinde tutuklanmayacağına dair bir güvence belgesi verebilir ve bu güvenceyi koşullara bağlayabilir.",
+      "articleRefs": [
+        "246"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Tüzel kişinin faaliyeti çerçevesinde işlenen suçta, tüzel kişinin organ ya da temsilcisi hangi durumda katılan veya savunma makamı yanında yer alan sıfatıyla duruşmaya kabul edilmez?",
+      "back": "Sanık aynı zamanda tüzel kişinin organ veya temsilcisi sıfatını taşıyorsa.",
+      "explanation": "Kural olarak organ ya da temsilci bu sıfatla duruşmaya kabul edilir ve Kanunun katılana veya sanığa sağladığı haklardan yararlanır.",
+      "articleRefs": [
+        "249"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Birden çok kişinin işlediği bir suçta uzlaşmadan kim yararlanır?",
+      "back": "Yalnız uzlaşan kişi; aralarında iştirak ilişkisi olsun ya da olmasın.",
+      "articleRefs": [
+        "255"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Müsadere veya iade olunacak eşya üzerinde hakkı olan kimseler duruşmaya çağrılıp gelmezse ne olur?",
+      "back": "Çağrıya uymamaları işlemin ertelenmesine neden olmaz ve hükmün verilmesini engellemez.",
+      "explanation": "Bu kişiler duruşmaya çağrılır ve sanığın sahip olduğu hakları kullanabilir; 256 ncı maddeye göre verilmesi gereken kararlar duruşmalı olarak verilir.",
+      "articleRefs": [
+        "257"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "İtiraz edilen kararın yerine getirilmesinin geri bırakılmasına kim karar verebilir?",
+      "back": "Kararına itiraz edilen makam veya kararı inceleyecek merci.",
+      "explanation": "İtiraz tek başına kararın yerine getirilmesinin geri bırakılması sonucunu doğurmaz.",
+      "articleRefs": [
+        "269"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "101 ve 105 inci maddeler uyarınca yapılan itirazda Cumhuriyet savcısının görüşü bildirilen şüpheli, sanık veya müdafii kendi görüşünü hangi süre içinde bildirebilir?",
+      "back": "Üç gün içinde.",
+      "explanation": "Bu itiraz üzerine Cumhuriyet savcısından görüş alınırsa, görüş şüpheli, sanık veya müdafiine bildirilir. Merci, yazılı cevap verebilmeleri için itirazı Cumhuriyet savcısı ve karşı tarafa bildirebilir.",
+      "articleRefs": [
+        "270"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Yokluğunda aleyhine verilen hükme karşı eski hâle getirme isteyen sanık, istinaf için ayrıca ne yapmalıdır?",
+      "back": "Ayrıca istinaf isteminde bulunmalıdır; istinafla ilişkili işler, eski hâle getirme istemi hakkında karar verilinceye kadar ertelenir.",
+      "explanation": "Eski hâle getirme süresi içinde istinaf süresi de işler.",
+      "articleRefs": [
+        "274"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "İstinaf dilekçesi tebliğ edilen karşı taraf, cevabını hangi süre içinde verebilir?",
+      "back": "Tebliğ tarihinden itibaren iki hafta içinde, yazılı olarak.",
+      "explanation": "Karşı taraf sanıksa, cevabını tutanağa bağlanmak üzere zabıt kâtibine yapacağı beyanla da verebilir. Cevap verildikten ya da süre bittikten sonra dava dosyası bölge adliye mahkemesine gönderilir.",
+      "articleRefs": [
+        "277"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Bölge adliye mahkemesinin dosya üzerindeki ön incelemesinde hangi hâllerde istinaf başvurusunun reddine karar verilir?",
+      "back": "Başvuru süresi içinde yapılmamışsa, karar bölge adliye mahkemesinde incelenebilecek kararlardan değilse ya da başvuranın buna hakkı yoksa.",
+      "explanation": "Bölge adliye mahkemesinin yetkili olmadığı anlaşılırsa dosya yetkili bölge adliye mahkemesine gönderilir. Ön inceleme sonunda verilen bu kararlar itiraza tabidir.",
+      "articleRefs": [
+        "279"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Bölge adliye mahkemesi istinaf duruşmasının sonunda hangi kararları verir?",
+      "back": "İstinaf başvurusunu esastan reddeder ya da ilk derece mahkemesi hükmünü kaldırarak yeniden hüküm kurar.",
+      "explanation": "Bu kararlar sanık lehineyse ve istinaf isteminde bulunmamış diğer sanıklara da uygulanma olanağı varsa, o sanıklar da istinaf isteminde bulunmuşçasına kararlardan yararlanır.",
+      "articleRefs": [
+        "280"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Bölge adliye mahkemesinde, davetiye tebliğine rağmen gelmeyen sanığa ilk derece mahkemesinin verdiğinden daha ağır ceza, sanık dinlenmeden verilebilir mi?",
+      "back": "Hayır. Verilecek ceza ilk derece mahkemesininkinden ağırsa, 195 inci madde hükümleri saklı kalmak üzere her hâlde sanığın dinlenmesi gerekir.",
+      "explanation": "Sanık, müdafii, katılan ve vekili davetiye tebliğine rağmen gelmezse duruşmaya devam edilebilir; sanığın sorgu tutanakları anlatılarak dava yokluklarında bitirilebilir.",
+      "articleRefs": [
+        "282"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Bölge adliye mahkemesinin karar ve hükümlerine karşı direnilebilir mi?",
+      "back": "Hayır. Bunlara karşı direnilemez ve herhangi bir kanun yoluna gidilemez; itiraz ve temyize ilişkin hükümler saklıdır.",
+      "articleRefs": [
+        "284"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "trap",
+      "difficulty": 1,
+      "front": "Başka bir kanunda temyiz edilebileceği yazılı olsa da bölge adliye mahkemesinin görev alanındaki işlerde ilk derece kararına karşı doğrudan Yargıtaya gidilir mi?",
+      "back": "Hayır. Bu karar ve hükümlere karşı istinaf yoluna başvurulur.",
+      "explanation": "Kural, 6706 sayılı Cezaî Konularda Uluslararası Adlî İş Birliği Kanununun 18 inci maddesinin dördüncü fıkrası hükmü hariç, diğer kanunlardaki temyiz ve Yargıtaya başvuru hükümleri için geçerlidir.",
+      "articleRefs": [
+        "285"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Hükümden önce verilip hükme esas teşkil eden mahkeme kararları ne zaman temyiz olunabilir?",
+      "back": "Hükümle beraber temyiz olunabilir.",
+      "explanation": "Başkaca kanun yolu öngörülmemiş mahkeme kararları da hükümle beraber temyiz olunabilir.",
+      "articleRefs": [
+        "287"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Sanığın yararına olan bir hukuk kuralına aykırılık, Cumhuriyet savcısına sanık aleyhine hükmü bozdurma hakkı verir mi?",
+      "back": "Hayır. Sanığın yararına olan hukuk kurallarına aykırılık, sanık aleyhine hükmün bozdurulması için Cumhuriyet savcısına bir hak vermez.",
+      "articleRefs": [
+        "290"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Kanunî süre geçtikten sonra yapılan temyiz istemini hangi mahkeme bir kararla reddeder?",
+      "back": "Hükmü temyiz olunan bölge adliye veya ilk derece mahkemesi.",
+      "explanation": "Temyiz edilemeyecek bir hüküm temyiz edilmişse ya da temyiz edenin buna hakkı yoksa da aynı mahkeme temyiz istemini reddeder.",
+      "articleRefs": [
+        "296"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Temyiz istemi hükmü veren mahkemece reddedilen kişi, Yargıtaydan bu konuda karar verilmesini hangi süre içinde isteyebilir?",
+      "back": "Ret kararının kendisine tebliğinden itibaren iki hafta (14 gün) içinde; bu durumda dosya Yargıtaya gönderilir.",
+      "articleRefs": [
+        "296"
+      ],
+      "derivedNumbers": [
+        {
+          "value": 14,
+          "expr": "2 * 7",
+          "refs": [
+            "296"
+          ],
+          "note": "iki haftanın gün karşılığı"
+        }
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Temyiz eden, ret kararı üzerine Yargıtaydan karar istediğinde hükmün infazı ertelenir mi?",
+      "back": "Hayır. Ret kararına karşı Yargıtaydan karar istenmesi nedeniyle hükmün infazı ertelenemez.",
+      "articleRefs": [
+        "296"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Yargıtaydaki temyiz duruşmasında son söz kimindir?",
+      "back": "Sanığın; temyizi istemiş olan tarafa önce söz verilir, ama her hâlde son söz sanığındır.",
+      "explanation": "Duruşmadan önce görevlendirilen üye veya tetkik hâkiminin hazırladığı rapor üyelere açıklanır, üyeler ayrıca dosyayı bizzat inceler; bundan sonra duruşma açılır.",
+      "articleRefs": [
+        "300"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Hüküm temyiz dilekçesinde gösterilen sebeplerle bozulduğunda, dilekçede açıklanmamış diğer hukuka aykırılıklar için ne yapılır?",
+      "back": "Saptanan bütün diğer hukuka aykırılık hâlleri de ilâmda gösterilir.",
+      "explanation": "Bozma sebepleri ilâmda ayrı ayrı gösterilir. Bozmaya neden olan hukuka aykırılık hükme esas olarak saptanan işlemlerden kaynaklanmışsa, o işlemler de aynı zamanda bozulur.",
+      "articleRefs": [
+        "302"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Hükmü temyiz etmeyen sanık, başka bir sanığın temyizi üzerine verilen bozma kararından yararlanabilir mi?",
+      "back": "Evet; hüküm sanık lehine bozulmuşsa ve bozma hususlarının ona da uygulanma olanağı varsa, temyiz isteminde bulunmuşçasına yararlanır.",
+      "explanation": "Koşullar birlikte aranır: bozmanın sanık lehine olması ve bozma hususlarının temyiz etmeyen sanığa da uygulanabilmesi.",
+      "articleRefs": [
+        "306"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Hangi amaçla yargılamanın yenilenmesi kabul edilemez?",
+      "back": "Kanunun aynı maddesinde yer almış sınır içinde cezanın değiştirilmesi amacıyla.",
+      "explanation": "Hatanın giderilebilmesini sağlayacak başka bir yol varsa da yargılamanın yenilenmesi yoluna gidilemez.",
+      "articleRefs": [
+        "315"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Reddedilmeyen yargılamanın yenilenmesi istemi tebliğ edilen Cumhuriyet savcısı ve ilgili taraf, diyeceklerini hangi süre içinde bildirir?",
+      "back": "Bir diyeceği varsa iki hafta içinde bildirir.",
+      "explanation": "İstem kanunda belirlenen şekilde yapılmamışsa, yasal hiçbir neden gösterilmemişse ya da bunu doğrulayacak deliller açıklanmamışsa kabule değer görülmeyerek reddedilir. Bu madde gereğince verilen kararlara itiraz edilebilir.",
+      "articleRefs": [
+        "319"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Yargılamanın yenilenmesi isteminde hükümlü ölmüşse mahkeme hangi kararları verebilir?",
+      "back": "Yeniden duruşma yapmaksızın, gerekli delilleri topladıktan sonra hükümlünün beraatine veya istemin reddine karar verir.",
+      "explanation": "Beraat kararıyla birlikte önceki hükmün ortadan kaldırılması da karar altına alınır. İstem sahibi isterse, önceki hükmün iptaline ilişkin karar gideri Devlet Hazinesine ait olmak üzere Resmî Gazete ile ilân olunur.",
+      "articleRefs": [
+        "322"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Kanun yoluna Cumhuriyet savcısı başvurmuşsa, sanığın ödemek zorunda bulunduğu giderler kime yükletilir?",
+      "back": "Devlet Hazinesine.",
+      "explanation": "Kural olarak kanun yoluna başvuran taraf, başvurusunu geri almasından ya da başvurunun reddolunmasından ileri gelen giderleri öder. İstem kısmen kabul olunursa mahkeme giderleri uygun gördüğü şekilde bölüştürür.",
+      "articleRefs": [
+        "330"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Ceza Muhakemesi Kanununda öngörülen yönetmelikleri, aksine hüküm yoksa kim çıkarır?",
+      "back": "Adalet Bakanlığı; ilgili bakanlıkların görüşünü alarak çıkarır.",
+      "articleRefs": [
+        "333"
+      ]
+    }
+  ]
+}

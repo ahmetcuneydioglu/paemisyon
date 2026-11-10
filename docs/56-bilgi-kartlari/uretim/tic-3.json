@@ -1,0 +1,290 @@
+{
+  "deck": {
+    "topicId": "d4a6b734-0110-4c9e-ae57-8cc39091a369",
+    "legislationSlug": "tbmm-ictuzugu",
+    "sourceLabel": "AI bilgi kartı — Türkiye Büyük Millet Meclisi İçtüzüğü md 92–97, 99–105, 107–120, 122, 126, 128–134",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: resmî madde metni + çıkmış sorular)"
+  },
+  "cards": [
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Af ilanı içeren teklifte gerekli çoğunluk hangi oylamalarda aranır?",
+      "back": "Afla ilgili maddelerde ve teklifin tümünün oylamasında ayrı ayrı aranır.",
+      "articleRefs": [
+        "92"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Anayasa değişikliği teklifinin ikinci görüşmesinde Genel Kurulda neler görüşülür?",
+      "back": "Yalnızca maddeler üzerinde verilmiş değişiklik önergeleri görüşülür. Birinci görüşmede üzerinde değişiklik teklifi bulunmayan bir madde hakkında ikinci görüşmede önerge verilemez.",
+      "explanation": "Anayasa değişiklik teklifleri, diğer kanun tekliflerinin görüşülmesindeki usule tabidir. Ancak Genel Kurulda iki defa görüşülürler. İkinci görüşmeye, birinci görüşmenin bitiminden kırksekiz saat geçmeden başlanamaz.",
+      "articleRefs": [
+        "93"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Anayasa değişikliği tekliflerinde maddelerin ve teklifin tümünün kabulü hangi oylama yöntemiyle yapılır?",
+      "back": "Gizli oyla yapılır. Kabul için üye tamsayısının beşte üç çoğunluğu gerekir.",
+      "explanation": "Bu kural, birinci ve ikinci görüşmede maddelerin kabulü ile ikinci görüşmenin sonunda tümünün kabulü için geçerlidir. Değişiklik önergesi kabul edilirse, beşte üç çoğunluğu tespit etmek için önergenin oylaması gizli oylamayla tekrarlanır.",
+      "articleRefs": [
+        "94"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Anayasa değişikliğinin birinci görüşmesinde gerekli çoğunlukla kabul oyu alamayan madde reddedilmiş olur mu?",
+      "back": "Hayır. Madde, ancak ikinci görüşmede de gerekli çoğunlukta kabul oyu alamazsa reddedilmiş olur.",
+      "explanation": "Gerekli çoğunluk, üye tamsayısının beşte üç çoğunluğunun gizli oyudur. Birinci görüşmede bu çoğunluğa ulaşamamak, maddeyi tek başına düşürmez.",
+      "articleRefs": [
+        "94"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Seçimlerin yenilenmesine dair önergeler hangi komisyonda görüşülür?",
+      "back": "Anayasa Komisyonunda görüşülür. Komisyon raporu, Genel Kurulda gündemdeki bütün konulardan önce görüşülür ve açık oya sunulur.",
+      "explanation": "Türkiye Büyük Millet Meclisi, üye tamsayısının beşte üç çoğunluğunun oyuyla seçimlerin yenilenmesine karar verebilir.",
+      "articleRefs": [
+        "95"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Hangi sorular Başkanlıkça kabul edilmez?",
+      "back": "Başka bir kaynaktan kolayca öğrenilmesi mümkün olan konular ile tek amacı istişare sağlamaktan ibaret konular kabul edilmez.",
+      "explanation": "Yazılı soru kısa ve gerekçesiz olur, kişisel görüş içermez, kişilik ve özel yaşama ilişkin konulara girmez. Önergeyi sadece bir milletvekili imzalar ve Başkanlığa verir. Önergeye belge eklenemez.",
+      "articleRefs": [
+        "97",
+        "96"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Tatil ve aravermede verilen yazılı sorunun onbeş günlük cevap süresi ne zaman başlar?",
+      "back": "Tatil ve aravermeden sonra; havale işlemi bu sırada da yapılır.",
+      "articleRefs": [
+        "99"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Genel görüşme açılmasını bir önergeyle en az kaç milletvekili isteyebilir?",
+      "back": "En az yirmi milletvekili isteyebilir. Siyasi parti grupları da bu istemde bulunabilir.",
+      "explanation": "Önerge metni beşyüz kelimeden fazlaysa, istek sahipleri beşyüz kelimeyi geçmeyen bir özet eklemek zorundadır. Genel görüşme açılıp açılmamasına Genel Kurul işaretle oylama suretiyle karar verir.",
+      "articleRefs": [
+        "102"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Genel görüşme açılmasına karar verilirse genel görüşme günü kim tarafından tespit edilir?",
+      "back": "Danışma Kurulunca, bir özel gündem halinde tespit edilir.",
+      "explanation": "Genel görüşmede ilk söz hakkı şunlara aittir: önerge sahibi siyasi parti grubu veya gruplarına, yahut önergedeki birinci imza sahibi milletvekiline ya da onun göstereceği bir diğer imza sahibi milletvekiline.",
+      "articleRefs": [
+        "103"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Genel görüşme, açılmasına karar verildiği gün başlayabilir mi?",
+      "back": "Hayır. Başlama günü, açılma kararından itibaren kırksekiz saatten önce olamaz. Yedi tam günden sonraya da bırakılamaz.",
+      "explanation": "Görüşme günü Danışma Kurulunca bir özel gündem halinde belirlenir. Sonraki görüşmelerde genel hükümler uygulanır.",
+      "articleRefs": [
+        "103"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Meclis araştırma komisyonunun raporu hakkında Genel Kurulda ne yapılır?",
+      "back": "Rapor hakkında Genel Kurulda genel görüşme açılır.",
+      "explanation": "Meclis araştırması, belli bir konuda bilgi edinmek için yapılan incelemeden ibarettir. Araştırmanın açılmasında genel görüşme açılmasındaki hükümler uygulanır. Araştırma istemi önergesi beşyüz kelimeden fazlaysa, beşyüz kelimeyi geçmeyen bir özet eklenmesi zorunludur.",
+      "articleRefs": [
+        "104"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Araştırmasını üç ay içinde bitiremeyen Meclis araştırma komisyonuna ne kadar ek süre verilir?",
+      "back": "Bir aylık kesin süre verilir. Bu süre sonunda da bitmezse, süre bitiminden itibaren onbeş gün içinde Genel Kurulda görüşme açılır.",
+      "explanation": "Bu görüşme, araştırmanın tamamlanmama nedenleri veya o ana kadar varılan sonuçlar üzerinde yapılır. Genel Kurul bu görüşmeyle yetinebilir ya da yeni bir komisyon kurabilir. Devlet sırları ile ticari sırlar Meclis araştırmasının kapsamı dışında kalır.",
+      "articleRefs": [
+        "105"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Cumhurbaşkanı yardımcısı veya bakan hakkında Meclis soruşturması açılmasına hangi çoğunlukla karar verilir?",
+      "back": "Üye tamsayısının beşte üçünün gizli oyuyla karar verilir.",
+      "explanation": "Soruşturma önergesini üye tamsayısının salt çoğunluğu verir. Görüşme günü, önerge verilişinden itibaren bir ay içinde karara bağlanacak şekilde belirlenir. Bu günü, Danışma Kurulunun teklifi üzerine Genel Kurul tespit eder. Görüşmede sırasıyla şunlar konuşur: ilk imza sahibi ya da onun göstereceği imza sahibi, şahısları adına üç milletvekili ve hakkında soruşturma açılması istenen kişi.",
+      "articleRefs": [
+        "108",
+        "107"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Cumhurbaşkanı yardımcısı veya bakan hakkındaki Meclis soruşturmasını yürüten komisyon kaç kişiliktir?",
+      "back": "Onbeş kişiliktir. Siyasi partiler, güçleri oranında verebilecekleri üye sayısının üç katı aday gösterir. Komisyon bu adaylar arasından her parti için ayrı ayrı ad çekmeyle kurulur.",
+      "explanation": "Komisyon kendisine bir başkan, bir başkanvekili, bir sözcü ve bir kâtip seçer. Ceza Muhakemesi Kanununa göre hâkimlerin davaya bakmasına veya karara katılmasına engel durumda bulunan milletvekilleri bu komisyona seçilemez. Komisyonda görevlendirilecek kamu görevlileri için de aynı hüküm uygulanır.",
+      "articleRefs": [
+        "109"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Soruşturma komisyonu, Ceza Muhakemesi Kanununun tanık, bilirkişi, zapt ve arama konusundaki hürriyetleri kısıtlayıcı yetkilerinin kullanılmasını nasıl sağlar?",
+      "back": "Gerekçesini bildirerek görevli adli merciden yazıyla ister. Bu yetkiler genel hükümler çerçevesinde kullanılır.",
+      "explanation": "Komisyon ayrıca naip veya istinabe yoluyla adli mercilerden yardım isteyebilir. Kamusal ve özel kuruluşlardan bilgi ve belge isteyebilir, gerekli gördüklerine el koyabilir. Cumhurbaşkanı yardımcılarını ve bakanları, tanık ve bilirkişileri dinleyebilir. Hakkında soruşturma açılması istenen kişinin savunmasını da alır.",
+      "articleRefs": [
+        "111"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Türkiye Büyük Millet Meclisi Yüce Divana sevk kararı alırsa dosya en geç ne kadar sürede Anayasa Mahkemesi Başkanlığına gönderilir?",
+      "back": "En geç yedi gün içinde gönderilir. Dosya Başkanlıkça dizi pusulasına bağlanır.",
+      "explanation": "Cumhurbaşkanı yardımcısı veya bakan hakkında Yüce Divana sevk kararı ancak üye tamsayısının üçte iki çoğunluğuyla alınır. Komisyonun sevk yönündeki raporlarında ve Genel Kurulun sevk kararlarında hangi ceza hükmüne dayanıldığı belirtilir.",
+      "articleRefs": [
+        "112"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Siyasi parti grupları Meclis soruşturması hakkında grup kararı alabilir mi?",
+      "back": "Hayır. Siyasi parti gruplarında Meclis soruşturmasıyla ilgili görüşme yapılamaz ve karar alınamaz. Ancak soruşturma komisyonu üyeliklerine gösterilecek adayları belirlemek için grupta seçim yapılabilir.",
+      "articleRefs": [
+        "113"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Cumhurbaşkanı hakkındaki Meclis soruşturması komisyonu raporunu ne kadar sürede sunar?",
+      "back": "İki ay içinde Meclis Başkanlığına sunar; bu sürede bitiremezse bir aylık yeni ve kesin bir süre verilir.",
+      "articleRefs": [
+        "114"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Soruşturma raporunun Genel Kurul görüşmesinde Cumhurbaşkanı savunmasını yazılı gönderirse ne olur?",
+      "back": "Savunma Genel Kurulda aynen okunur. Son söz Cumhurbaşkanınındır ve süresi sınırlandırılamaz.",
+      "explanation": "Bu görüşmede şunlara söz verilir: komisyona, şahısları adına altı milletvekiline ve görevde bulunsun veya bulunmasın hakkında soruşturma açılması istenen Cumhurbaşkanına. Rapor, Başkanlığa verildiği tarihten itibaren on gün içinde dağıtılır. Dağıtımından itibaren on gün içinde Genel Kurulda görüşülür.",
+      "articleRefs": [
+        "114"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Dilekçe Komisyonu kimlerin dilek ve şikâyetlerini inceler?",
+      "back": "Türk vatandaşlarının ve karşılıklılık esası gözetilmek kaydıyla Türkiye'de ikamet eden yabancıların dilek ve şikâyetlerini inceler. Bunlar, kendileriyle veya kamu ile ilgili olarak Türkiye Büyük Millet Meclisi Başkanlığına gönderilmiş olmalıdır.",
+      "articleRefs": [
+        "115"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Milletvekili, Dilekçe Komisyonu Genel Kurulunun kararına ne kadar sürede itiraz edebilir?",
+      "back": "Kararın dağıtım gününden itibaren otuz gün içinde, gerekçeli bir yazıyla itiraz edebilir. İtiraz edilmezse karar kesinleşir.",
+      "explanation": "Komisyon Genel Kurulu, itiraz edilen dilekçeler için itiraz tarihinden itibaren otuz gün içinde bir rapor düzenler ve Türkiye Büyük Millet Meclisi Başkanlığına sunar. Meclisin alacağı karar kesindir. Kesinleşen kararlar dilekçe sahiplerine ve ilgili Cumhurbaşkanı yardımcılıkları ile bakanlıklara bildirilir.",
+      "articleRefs": [
+        "119"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Cumhurbaşkanı andiçme töreninde ne giyer?",
+      "back": "Siyah elbise giyer.",
+      "explanation": "Cumhurbaşkanı, en yaşlı Başkanvekili vasıtasıyla Genel Kurul Salonuna davet edilir ve hitabet kürsüsünde ayakta andiçer. Andiçme bitince İstiklal Marşı çalınır. Tören, eski Cumhurbaşkanının görev süresinin dolduğu gün yapılır.",
+      "articleRefs": [
+        "122"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Olağanüstü hâl süresinin kısaltılması veya uzatılması için önergeyi kimler verebilir?",
+      "back": "Siyasi parti grupları veya en az yirmi milletvekili, görüşme sırasında.",
+      "articleRefs": [
+        "126"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Olağanüstü hâl Cumhurbaşkanlığı kararnameleri bir ay içinde komisyonlarda görüşülmezse ne olur?",
+      "back": "Meclis Başkanlığınca doğrudan doğruya Genel Kurul gündemine alınır.",
+      "articleRefs": [
+        "128"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Savaş hali ilanına kim karar verir?",
+      "back": "Türkiye Büyük Millet Meclisi, Cumhurbaşkanının istemi üzerine karar verir. Kararı Cumhurbaşkanı uygular.",
+      "explanation": "Anayasanın 92 nci maddesinin ikinci fıkrasında belirtilen hallerde Cumhurbaşkanı da Türk Silahlı Kuvvetlerinin kullanılmasına karar verebilir. Bu durumda derhal Meclisi toplantıya çağırır.",
+      "articleRefs": [
+        "129"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Bir milletvekilinin dokunulmazlığının kaldırılması istemi Başkanlıkça hangi komisyona havale edilir?",
+      "back": "Anayasa ve Adalet komisyonları üyelerinden kurulu Karma Komisyona havale edilir.",
+      "explanation": "Görevleriyle ilgili olmayan suçlardan dolayı Cumhurbaşkanı yardımcıları ve bakanların dokunulmazlığının kaldırılması istemleri de bu komisyona gider. Karma Komisyonun başkanı, başkanvekili, sözcüsü ve kâtibi, Anayasa Komisyonunun başkanı, başkanvekili, sözcüsü ve kâtibidir.",
+      "articleRefs": [
+        "131"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Dokunulmazlık dosyalarını inceleyen hazırlık komisyonu tanık dinleyebilir mi?",
+      "back": "Hayır. Bütün kâğıtları inceler, gerekirse ilgili milletvekilini, Cumhurbaşkanı yardımcısını veya bakanı dinler; ama tanık dinleyemez.",
+      "explanation": "Hazırlık komisyonu, Karma Komisyon başkanınca ad çekme suretiyle beş üyeli olarak kurulur. Raporunu göreve başlamasından itibaren en geç bir ayda verir. Rapor, Karma Komisyonda bir ayda sonuçlandırılır.",
+      "articleRefs": [
+        "132"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Milletvekilinin kendi dokunulmazlığının kaldırılmasını bizzat istemesi yeterli midir?",
+      "back": "Hayır. Dokunulmazlığın kaldırılmasını üyenin bizzat istemesi yeterli değildir.",
+      "explanation": "Dokunulmazlığının kaldırılması istenen kişi isterse hazırlık komisyonunda, Karma Komisyonda ve Genel Kurulda kendini savunur veya bir üyeye savundurur. Son söz her halde savunmanındır. Savunma için çağrıya uymazsa evrak üzerinde karar verilir.",
+      "articleRefs": [
+        "134"
+      ],
+      "counterNumbers": []
+    }
+  ]
+}

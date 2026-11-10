@@ -1,0 +1,284 @@
+{
+  "deck": {
+    "topicId": "28eaa9b8-d646-4d32-af33-618d8e1c7ea7",
+    "legislationSlug": "5393-belediye-kanunu",
+    "sourceLabel": "AI bilgi kartı — 5393 Belediye Kanunu md 21–38",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: resmî madde metni + çıkmış sorular)"
+  },
+  "cards": [
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Belediye meclisinin her ayın ilk günündeki gündemi üyelere en az kaç gün önceden bildirilir?",
+      "back": "En az üç gün önceden. Gündemi belediye başkanı belirler ve gündem çeşitli yöntemlerle halka da duyurulur.",
+      "explanation": "Her ayın ilk toplantısında belediye başkanı ve meclis üyeleri, belediyeye ait işlerle ilgili konuların gündeme alınmasını önerebilir. Öneri, toplantıya katılanların salt çoğunluğuyla kabul edilirse gündeme alınır.",
+      "articleRefs": [
+        "21"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Belediye meclisinde hangi konular, katılanların salt çoğunluğu kabul etse bile komisyonlara havale edilmeksizin karara bağlanamaz?",
+      "back": "İmar konuları ile yıllık bütçe. Gündemdeki diğer konular ve üyelerin teklifleri, toplantıya katılanların salt çoğunluğunun kabulüyle komisyona havale edilmeden karara bağlanabilir.",
+      "explanation": "Komisyona havale edilmeden görüşme kendiliğinden olmaz. Bunun için toplantıya katılanların salt çoğunluğunun kabulü aranır.",
+      "articleRefs": [
+        "21"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Belediye meclisinde karar yeter sayısının alt sınırı nedir?",
+      "back": "Üye tam sayısının dörtte biri. Karar yeter sayısı bundan az olamaz.",
+      "explanation": "Meclis, üye tam sayısının salt çoğunluğuyla toplanır ve katılanların salt çoğunluğuyla karar verir. Bu çoğunluk, üye tam sayısının dörtte birinin altına düşemez.",
+      "articleRefs": [
+        "22"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Belediye meclisinin toplanmasında üye tam sayısının salt çoğunluğu sağlanamazsa başkan ne yapar?",
+      "back": "Gün ve saatini tespit ederek, en geç üç gün içinde toplanmak üzere meclisi tatil eder.",
+      "explanation": "Gelecek toplantı, üye tam sayısının dörtte birinden az olmayan üye sayısıyla yapılır. Görüşmeler sırasında başkanın veya bir üyenin talebiyle yapılan yoklamada karar yeter sayısı bulunmazsa da aynı hükümler uygulanır.",
+      "articleRefs": [
+        "22"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Belediye meclisinde gizli oylamada eşitlik çıkarsa meclis başkanının bulunduğu taraf çoğunluk sayılır mı?",
+      "back": "Hayır. Gizli oylamada eşitlik çıkarsa oylama tekrarlanır; eşitlik yine bozulmazsa meclis başkanı kur’a çeker.",
+      "explanation": "Meclis başkanının bulunduğu tarafın çoğunluk sayılması, oylamadaki eşitlik için konan genel kuraldır; gizli oylamaya ayrı bir usul öngörülmüştür. Oylama gizli, işaretle veya ad okunarak yapılır. Oy kabul, ret veya çekimser şeklinde verilir.",
+      "articleRefs": [
+        "22"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Belediye başkanı hukuka aykırı gördüğü meclis kararını yeniden görüşülmek üzere kaç gün içinde meclise iade edebilir?",
+      "back": "Beş gün içinde; iadede gerekçesini de belirtir.",
+      "explanation": "Meclis, iade edilen kararda üye tam sayısının salt çoğunluğuyla ısrar ederse karar kesinleşir. Yeniden görüşülmesi istenmeyen kararlar da kesinleşir.",
+      "articleRefs": [
+        "23"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Kesinleşen belediye meclisi kararı on gün içinde mahallin en büyük mülkî idare amirine gönderilir mi?",
+      "back": "Hayır. Karar, kesinleştiği tarihten itibaren en geç yedi gün içinde gönderilir. On gün ise başkanın, ısrarla kesinleşen karara karşı idarî yargıya başvuru süresidir.",
+      "explanation": "Mülkî idare amirine gönderilmeyen kararlar yürürlüğe girmez. Kesinleşen kararların özetleri de yedi gün içinde uygun araçlarla halka duyurulur.",
+      "articleRefs": [
+        "23"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Belediye meclisinin ihtisas komisyonları kaç üyeden oluşur?",
+      "back": "En az üç, en fazla beş üyeden. Üyeler meclis üyeleri arasından belirlenir.",
+      "explanation": "Komisyonun ne kadar süre için kurulacağı aynı meclis kararında belirtilir ve bu süre bir yılı geçemez. Komisyonlar, her siyasî parti grubunun ve bağımsız üyelerin meclisteki üye sayısının meclis üye tam sayısına oranlanmasıyla oluşturulur.",
+      "articleRefs": [
+        "24"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "İl ve ilçe belediyeleri ile nüfusu 10.000'in üzerindeki belediyelerde hangi ihtisas komisyonlarının kurulması zorunludur?",
+      "back": "Plân ve bütçe komisyonu ile imar komisyonu.",
+      "explanation": "İhtisas komisyonlarının görev alanına giren işler önce bu komisyonlarda görüşülür, sonra belediye meclisinde karara bağlanır.",
+      "articleRefs": [
+        "24"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Meclis toplantısını müteakip imar komisyonu kendisine havale edilen işleri en fazla kaç iş gününde sonuçlandırır?",
+      "back": "En fazla on iş gününde. Diğer ihtisas komisyonları için süre beş iş günüdür.",
+      "explanation": "Komisyon, raporunu bu sürenin sonunda meclise sunmazsa konu meclis başkanı tarafından doğrudan gündeme alınır. Komisyon raporları alenîdir ve çeşitli yollarla halka duyurulur.",
+      "articleRefs": [
+        "24"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Belediye denetim komisyonu çalışmasını kaç işgünü içinde tamamlar?",
+      "back": "Kırkbeş işgünü içinde. Raporunu mart ayının sonuna kadar meclis başkanlığına sunar.",
+      "explanation": "Komisyon, belediye birimleri ve bağlı kuruluşlarından her türlü bilgi ve belgeyi isteyebilir; bu istekler gecikmeksizin yerine getirilir. Konusu suç teşkil eden hususlarda meclis başkanlığı yetkili mercilere suç duyurusunda bulunur.",
+      "articleRefs": [
+        "25"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Belediye meclisi denetim komisyonunu hangi ayın toplantısında oluşturur?",
+      "back": "Her ocak ayı toplantısında. Komisyon üyelerini kendi üyeleri arasından gizli oyla seçer.",
+      "explanation": "Komisyon, belediyenin bir önceki yıl gelir ve giderleri ile bunlara ilişkin hesap kayıt ve işlemlerini denetler. Üye sayısı üçten az, beşten çok olamaz. Komisyon il ve ilçe belediyeleri ile nüfusu 10.000'in üzerindeki belediyelerde kurulur.",
+      "articleRefs": [
+        "25"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Belediye meclisi bilgi edinme ve denetim yetkisini hangi yollarla kullanır?",
+      "back": "Faaliyet raporunu değerlendirme, denetim komisyonu, soru, genel görüşme ve gensoru yoluyla.",
+      "explanation": "Soru, meclis başkanlığına verilen önergeyle sözlü veya yazılı olarak sorulur; belediye başkanı veya görevlendireceği kişi cevaplar. Genel görüşme, meclis üyelerinin en az üçte birinin isteğiyle istenir ve meclis kabul ederse gündeme alınır.",
+      "articleRefs": [
+        "26"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Belediye başkanının faaliyet raporundaki açıklamaların yeterli görülmemesi için meclis hangi çoğunluğu arar?",
+      "back": "Meclis üye tam sayısının dörtte üç çoğunluğunu.",
+      "explanation": "Yetersizlik kararı ile görüşmeleri kapsayan tutanak, meclis başkan vekili tarafından mahallin mülkî idare amirine gönderilir. Vali, dosyayı gerekçeli görüşüyle birlikte Danıştaya gönderir. Danıştay kararı uygun görürse belediye başkanı başkanlıktan düşer.",
+      "articleRefs": [
+        "26"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Belediye başkanı hakkındaki gensoru önergesi, meclis üye tam sayısının üçte birinin oyuyla gündeme alınır mı?",
+      "back": "Hayır. Üçte bir, önergeyi vermek için gereken imza oranıdır. Önerge, meclis üye tam sayısının salt çoğunluğunun oyuyla gündeme alınır.",
+      "explanation": "Gündeme alınan gensoru önergesi üç tam gün geçmedikçe görüşülemez. Önerge, faaliyet raporu yetersizliğine ilişkin fıkraya göre karara bağlanır: meclis üye tam sayısının dörtte üç çoğunluğu aranır, son karar Danıştayındır.",
+      "articleRefs": [
+        "26"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Belediye başkanı ve meclis üyeleri hangi işlerin görüşüldüğü meclis toplantılarına katılamaz?",
+      "back": "Münhasıran kendileri, ikinci derece dâhil kan ve kayın hısımları ve evlatlıkları ile ilgili işlerin görüşüldüğü toplantılara.",
+      "articleRefs": [
+        "27"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Belediye meclis üyesinin belediyeye karşı taahhüde girme yasağı, görevi sona erdikten sonra iki yıl sürer mi?",
+      "back": "Hayır. Meclis üyesi için yasak görevi süresince ve görevinin sona ermesinden itibaren bir yıl sürer. İki yıl, belediye başkanı için öngörülen süredir.",
+      "explanation": "Yasak, belediye ve bağlı kuruluşlarına karşı doğrudan doğruya veya dolaylı olarak taahhüde girmeyi, komisyonculuk ve temsilcilik yapmayı kapsar.",
+      "articleRefs": [
+        "28"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Özürsüz veya izinsiz olarak arka arkaya üç birleşim günü toplantıya katılmayan meclis üyesinin üyeliği kendiliğinden sona erer mi?",
+      "back": "Hayır. Üyenin savunması alındıktan sonra, üye tam sayısının salt çoğunluğuyla üyeliğinin düşmesine karar verilir. Üyelik kendiliğinden yalnız ölüm ve istifa durumunda sona erer.",
+      "explanation": "Aynı usul, bir yıl içinde yapılan toplantıların yarısına özürsüz veya izinsiz katılmayan üye için de uygulanır. İstifa dilekçesi belediye başkanlığına verilir ve başkan tarafından meclisin bilgisine sunulur.",
+      "articleRefs": [
+        "29"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Belediye meclisi üyeliğine seçilme yeterliğini kaybeden üyenin üyeliğinin düşmesine kim karar verir?",
+      "back": "Danıştay; valinin bildirmesi üzerine karar verir.",
+      "articleRefs": [
+        "29"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Belediye meclisi hangi usulle feshedilir?",
+      "back": "İçişleri Bakanlığının bildirimi üzerine Danıştayın kararıyla.",
+      "explanation": "Fesih sebepleri iki hâldir. Birincisi, meclisin kanunla verilen görevleri süresi içinde yapmayı ihmal etmesi ve bunun belediye işlerini sekteye veya gecikmeye uğratmasıdır. İkincisi, belediyeye verilen görevlerle ilgisi olmayan siyasî konularda karar almasıdır. Feshedilen meclisin yerine seçilen meclis kalan süreyi tamamlar.",
+      "articleRefs": [
+        "30"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "İçişleri Bakanlığı fesih bildirimiyle birlikte meclis toplantılarının ertelenmesini isterse, Danıştay bu hususu en geç ne kadar sürede karara bağlar?",
+      "back": "En geç bir ay içinde.",
+      "explanation": "Bakanlık, gerekli gördüğü takdirde fesih bildirimiyle birlikte, karar verilinceye kadar meclis toplantılarının ertelenmesini de ister.",
+      "articleRefs": [
+        "30"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Belediye meclisi Danıştayca feshedildiğinde meclis görevini kim yürütür?",
+      "back": "Belediye encümeninin memur üyeleri. Görevi, meclis çalışabilir duruma gelinceye veya yeni meclis seçimi yapılıncaya kadar yürütürler.",
+      "explanation": "Aynı kural şu hâllerde de uygulanır: meclis toplantılarının ertelenmesi, meclis üye tam sayısının yarıdan fazlasının tutuklanması, yedek üyeler getirildikten sonra da üye tam sayısının yarısından aşağı düşülmesi ve meclisin geçici olarak görevden uzaklaştırılması.",
+      "articleRefs": [
+        "31"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "İl belediyelerinde belediye encümeni kaç kişiden oluşur?",
+      "back": "Yedi kişiden. Encümen, belediye başkanının başkanlığında, meclisin gizli oyla seçtiği üç üye, malî hizmetler birim amiri ve başkanın birim amirleri arasından seçtiği iki üyeden oluşur.",
+      "explanation": "Aynı yapı, nüfusu 100.000'in üzerindeki belediyelerde de geçerlidir. Diğer belediyelerde encümen beş kişidir: meclisin seçeceği iki üye, malî hizmetler birim amiri ve başkanın seçeceği bir üye. Seçimler bir yıl için yapılır.",
+      "articleRefs": [
+        "33"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Belediye Kanununa göre belediyede umuma açık yerlerin açılış ve kapanış saatlerini hangi organ belirler?",
+      "back": "Belediye encümenine.",
+      "explanation": "Encümenin diğer görevleri arasında şunlar da vardır: kanunlarda öngörülen cezaları vermek, öngörülmeyen giderler ödeneğinin harcama yerlerini belirlemek, yıllık çalışma programına alınan işlerle ilgili kamulaştırma kararlarını almak ve uygulamak.",
+      "articleRefs": [
+        "34"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Belediye encümeni 2886 sayılı Devlet İhale Kanunu uyarınca ihale komisyonu olarak toplandığında farklı bir toplantı ve karar yeter sayısı uygulanır mı?",
+      "back": "Hayır. İhale komisyonu toplantılarında da encümen üye tam sayısının salt çoğunluğuyla toplanır ve katılanların salt çoğunluğuyla karar verir.",
+      "explanation": "Oyların eşitliği durumunda başkanın bulunduğu taraf çoğunluk sayılır; encümende çekimser oy kullanılamaz. Encümen haftada birden az olmamak üzere önceden belirlenen gün ve saatte toplanır. Belediye başkanı acil durumlarda encümeni toplantıya çağırabilir.",
+      "articleRefs": [
+        "35"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Belediye başkanı görevinin devamı süresince siyasî partilerin hangi organlarında görev alamaz?",
+      "back": "Yönetim ve denetim organlarında. Ayrıca profesyonel spor kulüplerinin başkanlığını yapamaz ve yönetiminde bulunamaz.",
+      "explanation": "Belediye başkanı, belediye idaresinin başı ve belediye tüzel kişiliğinin temsilcisidir; ilgili kanunda gösterilen esas ve usûllere göre seçilir.",
+      "articleRefs": [
+        "37"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Belediye başkanı hangi nitelikteki bağışları kabul etme yetkisine sahiptir?",
+      "back": "Şartsız bağışları.",
+      "explanation": "Başkanın görev ve yetkileri arasında şunlar da vardır: belediyenin taşınır ve taşınmaz mallarını idare etmek, gelir ve alacaklarını takip ve tahsil etmek, belediye personelini atamak, yetkili organların kararını almak şartıyla sözleşme yapmak.",
+      "articleRefs": [
+        "38"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,296 @@
+{
+  "deck": {
+    "topicId": "fc5b7d84-ad74-446c-9ac6-3d4172a04ccf",
+    "legislationSlug": "298-sayili-secimlerin-temel-hukumleri-kanunu",
+    "sourceLabel": "AI bilgi kartı — 298 Sayılı Seçimlerin Temel Hükümleri Kanunu md 26, 27, 32–47, 49–51, 51/A, 52–54",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: resmî madde metni + çıkmış sorular)"
+  },
+  "cards": [
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Seçimlerin Temel Hükümleri ve Seçmen Kütükleri Hakkında Kanunda gösterilen seçim kurullarına kimler seçilemez?",
+      "back": "İdare amirleri, zabıta amir ve memurları, Askeri Ceza Kanununun 3 üncü maddesinde yazılı askeri şahıslar, Türkiye Büyük Millet Meclisi üyeleri ve adaylar.",
+      "explanation": "Siyasi Partiler Kanununa göre siyasi partilere üye olamayacak kimseler de bu kurullarda üye, müşahit veya temsilci olarak siyasi partilerce görevlendirilemez.",
+      "articleRefs": [
+        "26"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Yüksek Seçim Kurulu ile il ve ilçe seçim kurullarında görevlerine başlamadan önce kimler and içer?",
+      "back": "Başkan, asıl ve yedek üyeler; kurul önünde birer birer and içerler.",
+      "explanation": "And metninde görevin hiçbir tesir altında kalmaksızın, hiç kimseden korkmadan, seçim sonuçlarının tam ve doğru olarak belirmesi için kanuna göre dosdoğru yapılacağı taahhüt edilir.",
+      "articleRefs": [
+        "27"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Seçmen kütüğünün kurulması ve güncelleştirilmesi için Yüksek Seçim Kurulunca alınan kararlar kimleri bağlar?",
+      "back": "Bütün kamu kuruluşlarını ve görevlilerini bağlar.",
+      "explanation": "Bu kararlar kütükten elde edilen liste, çizelge ve diğer malzemenin gerekli yerlere ulaştırılmasını ve dağıtılmasını da kapsar. Yazım ve denetim formlarının şekli, nasıl doldurulacağı ve yazımın denetlenme ilke ve yöntemleri de Yüksek Seçim Kurulunca belirtilir.",
+      "articleRefs": [
+        "32"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Mahalli idareler genel seçiminde güncelleme işlemleri hangi seçmen kütüğü üzerinden yapılır?",
+      "back": "Seçimin başlangıç tarihinden üç ay önceki, yerleşim yeri adresine göre oluşturulan seçmen kütüğü üzerinden yapılır.",
+      "explanation": "Seçmen kütüğü, adres kayıt sistemindeki yerleşim yeri adresi bilgileri esas alınarak her yıl yeniden düzenlenir ve sürekli bilgi toplama ile her seçim döneminde güncelleştirilir.",
+      "articleRefs": [
+        "33"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Seçim yapılan yıl seçmen listeleri hazırlanırken on sekiz yaşın doldurulmuş olmasının hesabında hangi gün esas alınır?",
+      "back": "Seçim günü esas alınır; o gün de dahildir.",
+      "explanation": "Kanunun uygulanmasında herkes, nüfus kütüğünde yazılı doğduğu ay ve güne göre işleme tabi tutulur; seçim yılında liste hazırlanırken yaş hesabı seçim gününe göre yapılır.",
+      "articleRefs": [
+        "34"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Sandık seçmen listesinde kaydı olmayan seçmen oy kullanabilir mi?",
+      "back": "Kural olarak hayır; Kanunda sayılan istisnalar dışında sandık seçmen listesinde kaydı olmayanların oy kullanmasına izin verilmez.",
+      "explanation": "Seçmenlik sıfatının tayininde esas seçmen kütüğüdür; sandık seçmen listeleri bu kütükten çıkarılır. Seçmen kütüğe bir kez yazılır ve birden fazla oy kullanamaz.",
+      "articleRefs": [
+        "34",
+        "86"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Yurt dışı seçmen kütüğü hangi bilgiler esas alınarak oluşturulur?",
+      "back": "Adres kayıt sistemindeki yerleşim yeri adresi bilgileri esas alınarak, Yüksek Seçim Kurulunca belirlenecek usul ve esaslar çerçevesinde oluşturulur.",
+      "articleRefs": [
+        "35"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Seçmen kütüğü yazım günü, görevliler dışındakilerin bulundukları yerden ayrılma yasağı saat kaçta başlar?",
+      "back": "Saat 05.00'te başlar; yazımın bittiği alışılmış araçlarla ilan edilinceye kadar sürer.",
+      "explanation": "Yazım ve denetim işleminin her hâlde aynı gün saat 19.00'a kadar bitirilmiş olması gerekir. Gerektiğinde Yüksek Seçim Kurulu, bütün Türkiye'de aynı zamanda Nisan ayının ikinci pazar günü yazım yapılmasına karar verir.",
+      "articleRefs": [
+        "36"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Adresi kapanmış olduğu için adres kayıt sisteminde görünmeyen kişiler seçmen kütüğüne nasıl kaydedilir?",
+      "back": "Nüfus ve Vatandaşlık İşleri Genel Müdürlüğünün adres kayıt sisteminde bulunan en son geçerli adres kayıt bilgileri kapsamında kaydedilir.",
+      "explanation": "Kütük düzenlemesi nedeniyle seçmen hiçbir şekilde oy kullanma hakkından yoksun bırakılamaz.",
+      "articleRefs": [
+        "36"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Seçmen kütüğü yazımında seçmenin devamlı oturduğu adresin tespitinde kimlerin kayıtlarından faydalanılır?",
+      "back": "Muhtarlıkların ve varsa apartman yöneticilerinin kayıtlarından faydalanılır.",
+      "explanation": "Formlara yazılacak bilginin tespitinde resmi belgeler esas tutulur; yazım sırasında muhtarlık krokisi ve binalar cetvelinden yararlanılır.",
+      "articleRefs": [
+        "37"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Köylerde kroki yerini tutan Binalar Cetvelini kim düzenler?",
+      "back": "Muhtarlıklar düzenler; bu iş ilçe seçim kurulu başkanının denetimi altında yapılır.",
+      "explanation": "Şehir ve kasabalarda belediyeler her muhtarlık için iki yılda bir Muhtarlık Krokisi düzenler; kroki yapılmasına teknik imkan bulunmayan şehir ve kasabalarda Binalar Cetvelini belediyeler yapar. Kroki ve cetvel yıl sonu durumunu gösterecek şekilde düzenlenir.",
+      "articleRefs": [
+        "38"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Muhtarlık bölgesi askı listesi seçim dönemlerinde muhtarlıklarda ne kadar süre askıda kalır?",
+      "back": "İki hafta askıda kalır.",
+      "explanation": "Listeler halkın kolaylıkla görüp okuyabileceği yerlere asılır. Asıldıkları tarih ve yerler ilçe seçim kurulu başkanının görevlendirdiği kimselerce tutanakla tespit edilir; askıdan indirildiği tarih de ayrı bir tutanağa bağlanır.",
+      "articleRefs": [
+        "40"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Askıda kaldıkları sürece muhtarlık bölgesi askı listelerinin korunmasından kim sorumludur?",
+      "back": "İdare amirleriyle zabıta amir ve memurları sorumludur.",
+      "explanation": "İlçe seçim kurulu başkanı, askı listelerinin asıldıkları tarih ve yerleri bir yazı ile mahallin mülki amirine derhal bildirir.",
+      "articleRefs": [
+        "40"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Askı süresinde başka seçim çevresine yapılan nakil istemi ilçe seçim kurulu başkanınca kabul edilmezse seçmen kaydı dondurulur mu?",
+      "back": "Hayır. Seçmen kaydı dondurulmaz; bir önce kayıtlı olduğu adreste seçmen kaydı devam eder.",
+      "explanation": "İlçe seçim kurulu başkanı araştırma ve incelemeyi itiraz üzerine ya da nakil isteminin şüpheli bir girişim olduğu kanaatine vararak resen yapar.",
+      "articleRefs": [
+        "40"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Seçmen kütüğünde mükerrer listesine alınan bilgi ne kadar süre saklanır?",
+      "back": "İki yıl saklanır.",
+      "explanation": "Adı ve soyadı, ana ve baba adı, doğum yeri ve doğduğu yılı aynı olan iki bilgi tek seçmeni tanımlar. Yüksek Seçim Kurulu Seçmen Kütüğü Genel Müdürlüğü seçmen sıra numarası büyük olan bilgiyi kütükte bırakır, diğerini mükerrer listesine alır.",
+      "articleRefs": [
+        "41"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Sandık seçmen listeleri, oy verme gününden 30 gün önce seçmen kütüğünde kesinleşmiş bilgilere dayanılarak mı çıkarılır?",
+      "back": "Hayır. Listeler oy verme gününden 120 gün önce kesinleşmiş mevcut bilgilere dayanılarak çıkarılır; 30 gün önce ise ilgili seçim kurulu başkanlıklarına gönderilir.",
+      "explanation": "Seçime katılan siyasi partilerin ilçe başkanlıklarına birer nüsha ve ilgili muhtarlığa bir nüsha oy verme gününden 20 gün önce teslim edilir.",
+      "articleRefs": [
+        "43"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Muhtarlar, seçmenlerin sandık numarası ve sandık yeriyle ilgili sorularını hangi dönemde cevaplandırmak zorundadır?",
+      "back": "Oy verme gününden 10 gün önceden oy verme günü saat 17.00'ye kadar, çalışma saatleri içinde.",
+      "explanation": "Bu dönemde muhtarlar seçim kurullarının yayınlarını dağıtır, afiş, işaret ve levhaları asar; seçim kurulu ayrıca personel görevlendirirse bu personele yardımcı olur. Muhtarlıklardaki sandık seçmen listelerini vatandaşlar her zaman inceleyebilir.",
+      "articleRefs": [
+        "43"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 1,
+      "front": "Seçmen bilgi kağıdı kimlik belirlemesinde belge olarak kullanılabilir mi?",
+      "back": "Hayır. Hiçbir surette kimlik belirlemesinde belge olarak kullanılmaz; bu husus kağıdın üzerine yazılır.",
+      "explanation": "Kağıt, seçmene hangi seçim bölgesinde, kaç numaralı sandıkta oy vereceğini, seçmen sıra numarasını ve diğer bilgileri bildirmek için hazırlanır.",
+      "articleRefs": [
+        "44"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Seçmen Kütüğü Genel Müdürlüğünün raporunun görüşüldüğü toplantı ne sıklıkla yapılır?",
+      "back": "Üç ayda bir yapılır; toplantı gününü Yüksek Seçim Kurulu Başkanı saptar.",
+      "explanation": "Toplantıda katılanların çalışmalar hakkında bilgi alması amaçlanır, karar alınmaz. Toplantı belirlenen gün ve saatte gelenlerle yetinilerek açılır; görüşme özeti katılanlara toplantıdan sonraki bir ay içinde gönderilir.",
+      "articleRefs": [
+        "46"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Seçimlere katılma yeterliliğini taşıyan siyasi partilere seçmen kütükleri bir seçim döneminde en fazla kaç defa verilir?",
+      "back": "İki defadan fazla verilmez; ilçe seçim kurulu başkanınca, bilgisayar ortamında veya liste düzeyinde imza karşılığında verilir.",
+      "explanation": "Talep parti merkezlerince ya da yetkilendirilmiş il veya ilçe başkanlarınca yapılır; Yüksek Seçim Kurulunca belirlenen gider Maliye veznesine yatırılır ve makbuz ibraz edilir.",
+      "articleRefs": [
+        "47"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Seçim propagandası ne zaman başlar?",
+      "back": "Oy verme gününden önceki onuncu günün sabahında başlar; oy verme gününden önceki günün saat 18.00'inde sona erer.",
+      "explanation": "Seçimlerde propaganda, kanun hükümleri dairesinde serbesttir.",
+      "articleRefs": [
+        "49"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Açık yerlerde toplu olarak sözlü propaganda hangi zaman diliminde yapılamaz?",
+      "back": "Güneşin batmasını müteakip ikinci saatin sonundan güneşin doğmasına kadar yapılamaz.",
+      "explanation": "Seçim zamanında genel yollar üzerinde, mabetlerde, kamu hizmeti görülen bina ve tesislerde ve ilçe seçim kurullarınca gösterilenler dışındaki meydanlarda toplu sözlü propaganda yasaktır. Toplantı, meydan, gün, sıra ve saatleri ilçe seçim kurulu ad çekme ile belirler; bağımsız adaylar için haftada bir gün ayrılır.",
+      "articleRefs": [
+        "50"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Kapalı yer toplantısı yapmak isteyenler kaç kişilik heyet kurar?",
+      "back": "Üç kişilik bir heyet kurar ve en yakın zabıta amir veya memuruna haber verirler; köylerde muhtara veya vekiline haber vermek yeterlidir.",
+      "explanation": "Heyet toplantının düzenini sağlar; kanunlara karşı hareketleri, edep törelerine aykırı veya suç işlemeye kışkırtıcı söz ve fiilleri önler, gerekirse zabıtayı çağırır. Söz alacak olanları tayin ve tahdit edebilir.",
+      "articleRefs": [
+        "51"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Zabıta amir ve memurları kapalı yer toplantısına kendiliğinden müdahale edebilir mi?",
+      "back": "Hayır. Ancak toplantıyı idare eden heyetin isteği ya da yetkili seçim kurullarının kararı üzerine müdahale edebilirler.",
+      "explanation": "Aynı kayıt muhtar ve ihtiyar meclisleri için de geçerlidir. Mabetlerde, okullarda, kışla, karargah, ordugah gibi askeri bina ve tesislerde, askeri mahfillerde ve kamu hizmeti görülen diğer yerlerde kapalı yer toplantısı yapılamaz.",
+      "articleRefs": [
+        "51"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Seçim büroları hangi saatler arasında halka açık faaliyette bulunabilir?",
+      "back": "Saat 09.00'dan 23.00'e kadar.",
+      "explanation": "Seçim bürolarında görüntülü ve sesli propaganda yapılabilir; sesli yayınlar çevresel gürültü ile ilgili mevzuata uygun olmak zorundadır. Seçim bürosu olarak kullanılamayacak bina ve tesisler arasında Devlete ve diğer kamu tüzel kişilerine, bankalara ve sendikalara ait olanlar vardır.",
+      "articleRefs": [
+        "51/A"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Propaganda süresi başladıktan sonra seçim bürosu açma bildirimi kime verilir?",
+      "back": "İlçe seçim kuruluna verilir; seçimin başlangıcından yazılı propagandanın başlangıç tarihine kadar ise mahallin en büyük mülki amirine verilir.",
+      "explanation": "Bildirim büronun adresini ve en az bir sorumlusunun kimlik ve iletişim bilgilerini içerir; bildirimle büro açılmış sayılır. Açılma şartlarını taşımayan büroya eksiklikler için üç gün süre verilir; uyulmazsa büro, şartlar tamamlanıncaya kadar mülki amirlerce kapatılır.",
+      "articleRefs": [
+        "51/A"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Siyasi partiler radyo ve televizyondaki propaganda sürelerinin tamamını görüntülü olarak verebilir mi?",
+      "back": "Hayır. Görüntülü propaganda, propaganda sürelerinin yarısını aşamaz; bir defada iki dakikadan az olamaz, bir günde toplam on dakikayı geçemez.",
+      "explanation": "Görüntülü propagandalar Türkiye Radyo ve Televizyon Kurumu (TRT) dışında hazırlatılır; suç teşkil eden bir husus bulunursa Yüksek Seçim Kurulu bunların yayımına izin vermez.",
+      "articleRefs": [
+        "52"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Radyo ve televizyondaki seçim propagandası yayınları en geç saat kaça kadar devam eder?",
+      "back": "En geç saat 22.00'ye kadar devam eder.",
+      "explanation": "Yayın zaman ve sıralarını Yüksek Seçim Kurulu, partilerin birer temsilcisi ile Türkiye Radyo - Televizyon Kurumu temsilcilerinin önünde ad çekerek belirler; ad çekme oy verme gününden en az yirmi gün önce yapılır.",
+      "articleRefs": [
+        "54"
+      ]
+    }
+  ]
+}

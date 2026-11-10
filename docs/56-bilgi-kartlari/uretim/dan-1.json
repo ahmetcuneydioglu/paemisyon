@@ -1,0 +1,279 @@
+{
+  "deck": {
+    "topicId": "be738fb3-fc30-4d1e-9306-c1cb2eb7d0c3",
+    "legislationSlug": "2575-danistay-kanunu",
+    "sourceLabel": "AI bilgi kartı — 2575 Danıştay Kanunu md 1–19, 19/A, 19/B, 20",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: resmî madde metni + çıkmış sorular)"
+  },
+  "cards": [
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Danıştay, Anayasa ile hangi sıfatlarla görevlendirilmiş bir mercidir?",
+      "back": "Yüksek İdare Mahkemesi, danışma ve inceleme mercii olarak; bu görevler Türkiye Cumhuriyeti Anayasası ile verilmiştir.",
+      "articleRefs": [
+        "1"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Danıştay'ın yönetimi ve temsili kime aittir?",
+      "back": "Danıştay Başkanına. Danıştay bağımsızdır.",
+      "explanation": "Danıştay'ın yürütmeyle ilgili işleri Cumhurbaşkanlığı aracılığı ile yürütülür.",
+      "articleRefs": [
+        "2"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Danıştay meslek mensupları kimlerdir?",
+      "back": "Danıştay Başkanı, Danıştay Başsavcısı, Danıştay başkanvekili, daire başkanları ile üyeler.",
+      "articleRefs": [
+        "3"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Danıştay'ın karar organları arasında disiplinle ilgili hangi kurullar sayılır?",
+      "back": "Yüksek Disiplin Kurulu ve Disiplin Kurulu.",
+      "explanation": "Karar organları arasında daireler, Danıştay Genel Kurulu, İdari İşler Kurulu, İdari Dava Daireleri Kurulu, Vergi Dava Daireleri Kurulu, İçtihatları Birleştirme Kurulu, Başkanlar Kurulu ve Başkanlık Kurulu da yer alır.",
+      "articleRefs": [
+        "5"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Danıştay Genel Sekreterliği görevini kim yapar?",
+      "back": "Danıştay Başkanının seçeceği bir üye.",
+      "explanation": "Birinci sınıfa ayrılmış Danıştay tetkik hakimlerinden veya savcılarından en çok ikisi genel sekreter yardımcısı olarak görevlendirilebilir.",
+      "articleRefs": [
+        "6"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "İdari yargı hakim ve savcısının Danıştay üyeliğine seçilebilmesi için birinci sınıfa ayrıldıktan sonra en az kaç yıl çalışmış olması gerekir?",
+      "back": "En az üç yıl; bu görevlerde başarı ile çalışmış ve birinci sınıfa ayrılma niteliğini kaybetmemiş olmalıdır.",
+      "articleRefs": [
+        "8"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "İdari yargı dışındaki görevlerden gelen Danıştay üyelerini de Hâkimler ve Savcılar Kurulu mu seçer?",
+      "back": "Hayır. Bu üyeleri Cumhurbaşkanı seçer; Hâkimler ve Savcılar Kurulu (metinde: Hâkimler ve Savcılar Yüksek Kurulu) yalnız idari yargı hakim ve savcılarını Danıştay üyeliğine seçer.",
+      "articleRefs": [
+        "9"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Danıştay üyeleri hangi süre için seçilir?",
+      "back": "On iki yıl için; bir kimse iki defa Danıştay üyesi seçilemez.",
+      "articleRefs": [
+        "9"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Danıştay Başkanını, Başsavcısını, başkanvekillerini ve daire başkanlarını hangi organ seçer?",
+      "back": "Danıştay Genel Kurulu; kendi üyeleri arasından, üye tam sayısının salt çoğunluğu ile seçer.",
+      "explanation": "Seçim gizli oyla yapılır. İlk üç oylamada sonuç alınamazsa seçim, üçüncü oylamada en çok oy alan iki aday arasında yapılır.",
+      "articleRefs": [
+        "10"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Danıştay Başkanı seçilebilmek için üç yıl Danıştay üyeliği yapmış olmak yeterli midir?",
+      "back": "Hayır. Başkan ve Başsavcı seçilebilmek için altı yıl Danıştay üyeliği zorunludur; üç yıl, başkanvekili ve daire başkanı seçilebilmek için aranan süredir.",
+      "articleRefs": [
+        "10"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Danıştay Başsavcısı hangi süre için görev yapar?",
+      "back": "Dört yıl; süresi bitenler yeniden seçilebilir.",
+      "explanation": "Aynı süre Danıştay Başkanı, başkanvekilleri ve daire başkanları için de geçerlidir. Yeniden seçilemeyenler, seçime girmeyenler veya süresi dolmadan bu görevden çekilenler Danıştay üyeliği görevlerine devam eder.",
+      "articleRefs": [
+        "10"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Danıştaya açıktan ilk defa Devlet memuru olarak alınacaklar kim tarafından atanır?",
+      "back": "Danıştay Başkanınca; Genel Sekreterin teklifi üzerine, sözlü ve gerektiğinde uygulamalı sınav sonucuna göre atanırlar.",
+      "explanation": "Adaylar Devlet memurluğuna giriş için yapılan merkezi sınava girmiş olmalıdır. Sınavı, Genel Sekreterin görevlendireceği genel sekreter yardımcısının başkanlığında iki tetkik hâkiminden oluşturulan üç kişilik komisyon düzenler.",
+      "articleRefs": [
+        "12"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Danıştay kaç daireden oluşur?",
+      "back": "On daireden: dokuzu dava, biri idari daire.",
+      "explanation": "Her dairede bir başkan ile yeteri kadar üye bulunur; heyetler bir başkan ve dört üyenin katılmasıyla toplanır ve salt çoğunluk ile karar verir.",
+      "articleRefs": [
+        "13"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Bir dairede birden fazla heyet oluşturulursa diğer heyetlere de daire başkanı mı başkanlık eder?",
+      "back": "Hayır. Diğer heyetlere, heyette yer alan en kıdemli üye başkanlık eder; birden fazla heyet ancak üye sayısı yeterliyse oluşturulabilir.",
+      "explanation": "Dairelerde müzakereler gizli yapılır.",
+      "articleRefs": [
+        "13"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Danıştay dairelerinde vukubulacak noksanlıklar nasıl tamamlanır?",
+      "back": "Diğer dairelerden üye alınarak; bu üyeler Başkanlık Kurulunun kararı ile önceden tespit edilir.",
+      "explanation": "Üyeler de Başkanlık Kurulunun kararı ile dairelere ayrılır ve hizmetin icaplarına göre daireleri aynı usulle değiştirilebilir. Daire başkanları ise belirli bir dairenin başkanı olarak seçilir.",
+      "articleRefs": [
+        "14"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Danıştay Genel Kurulu kimlerden oluşur?",
+      "back": "Danıştay Başkanı, Başsavcı, başkanvekilleri, daire başkanları ve üyeler ile Genel Sekreterden.",
+      "explanation": "Toplanma ve görüşme yeter sayısı Başkan ve üyeler tam sayısının yarısından fazlasıdır. Oylarda eşitlik halinde Başkanın bulunduğu taraf çoğunluğu sağlamış sayılır.",
+      "articleRefs": [
+        "15"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "İdari İşler Kurulu kimlerden oluşur?",
+      "back": "İdari daire başkanı, Başkanlık Kurulunca her takvim yılı başında idari daireden seçilecek iki üye ve her dava dairesi başkan veya üyeleri arasından seçilecek birer üyeden.",
+      "explanation": "Kurula Danıştay Başkanı veya başkanvekillerinden biri başkanlık eder. Seçimle belirlenen üyeliklerde boşalma olursa Başkanlık Kurulu otuz gün içinde seçim yapar.",
+      "articleRefs": [
+        "16"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Memurların yargılanmasıyla ilgili işlerde İdari İşler Kurulunun toplanma ve görüşme yeter sayısı dokuz mudur?",
+      "back": "Hayır. Bu toplantılarda yeter sayı yedidir; dokuz, Kurulun genel toplanma ve görüşme yeter sayısıdır.",
+      "explanation": "Memurların yargılanması ile ilgili işlerin görüşülmesinde, incelenmekte olan kararı veren daire başkan ve üyeleri toplantıya katılamaz. Kararlar oyçokluğu ile verilir.",
+      "articleRefs": [
+        "16"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "İdari ve Vergi Dava Daireleri Kurullarına daire başkanları dışındaki üyeleri kim görevlendirir?",
+      "back": "Başkanlık Kurulu; her dava dairesinden iki yıl için görevlendirir.",
+      "explanation": "Asıl üyeler üst üste en fazla iki dönem görevlendirilebilir. Asıl veya yedek üyeliklerde boşalma olursa Başkanlık Kurulu yedi gün içinde, kalan süreyi tamamlamak üzere yeni üye görevlendirir.",
+      "articleRefs": [
+        "17"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Vergi Dava Daireleri Kuruluna her vergi dava dairesinden iki asıl ve iki yedek üye mi görevlendirilir?",
+      "back": "Hayır. Vergi Dava Daireleri Kuruluna her daireden üç asıl ve üç yedek üye görevlendirilir; iki asıl ve iki yedek üye İdari Dava Daireleri Kurulu içindir.",
+      "explanation": "Her iki kurulda da ilgili dava dairelerinin başkanları ayrıca yer alır.",
+      "articleRefs": [
+        "17"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "İdari Dava Daireleri Kurulunun toplantı ve görüşme yeter sayısı kaçtır?",
+      "back": "On beş; Vergi Dava Daireleri Kurulu için ise on birdir.",
+      "explanation": "Toplantıda hazır bulunanlar çift sayıda olursa en kıdemsiz üye kurula katılamaz. Kararlar oyçokluğu ile verilir.",
+      "articleRefs": [
+        "17"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "İçtihatları Birleştirme Kurulunun toplanma ve görüşme yeter sayısı en az kaçtır?",
+      "back": "En az otuzbir; toplantıda hazır bulunanlar çift sayıda olursa en kıdemsiz üye Kurula katılmaz.",
+      "explanation": "Kurul; Danıştay Başkanı, Başsavcı, başkanvekilleri, dava daireleri başkanları ve üyelerinden kurulur.",
+      "articleRefs": [
+        "18"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "İçtihatları Birleştirme Kurulunda ikinci toplantıda da esas hakkındaki karar Kurul üye tamsayısının salt çoğunluğuyla mı verilir?",
+      "back": "Hayır. İkinci toplantıda esas hakkındaki kararlar mevcudun salt çoğunluğu ile verilir; üye tamsayısının salt çoğunluğu birinci toplantıda aranır.",
+      "explanation": "İkinci toplantıya, birinci toplantıda karar yetersayısı sağlanamazsa gidilir. Kurulun diğer kararları oyçokluğu ile verilir.",
+      "articleRefs": [
+        "18"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Danıştay Başkanlık Kurulunun asıl ve yedek üye yapısı nasıldır?",
+      "back": "Altı asıl (üçü daire başkanı, üçü Danıştay üyesi) ve dört yedek (ikisi daire başkanı, ikisi Danıştay üyesi) üye; Danıştay Başkanının başkanlığında.",
+      "articleRefs": [
+        "19/A"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Başkanlık Kurulunun asıl ve yedek üyelerini hangi organ seçer?",
+      "back": "Danıştay Genel Kurulu; aynı daireden birden fazla kimse Başkanlık Kurulu üyeliğine seçilemez.",
+      "explanation": "Başkanlık Kurulu üye tamsayısı ile toplanır; asıl üyelerden biri katılamazsa noksanlık yedeği ile tamamlanır. Üyeler kendileri ile ilgili konularda toplantılara katılamaz.",
+      "articleRefs": [
+        "19/B"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Başkanlık Kuruluna seçilenlerin görev süresi ne kadardır?",
+      "back": "İki yıl; bir seçim dönemi geçmeden yeniden seçilemezler.",
+      "explanation": "Üyelik herhangi bir nedenle boşalırsa on beş gün içinde seçim yapılır ve seçilen üye, yerine seçildiği üyenin süresini tamamlar.",
+      "articleRefs": [
+        "19/B"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Danıştay Yüksek Disiplin Kurulu hangi oyçokluğuyla karar verir?",
+      "back": "Üçte iki oyçokluğu ile; Kurul üye tam sayısı ile toplanır.",
+      "explanation": "Danıştay Başsavcısı Kurulun tabii üyesidir. Kurula iki daire başkanı ve beş üye yedek olarak seçilir; boşalmada en çok on gün içinde Genel Kurulca yeniden seçim yapılır.",
+      "articleRefs": [
+        "20"
+      ]
+    }
+  ]
+}

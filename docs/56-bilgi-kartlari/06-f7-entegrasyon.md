@@ -427,11 +427,47 @@ gelirse aynı hatla kartlanır. 2918 ve 3713'ün geçici maddeleri bilinçli ola
 **Prod:** 65 deste 10–11 Kas 2026 gecesi `in_review` olarak yüklendi (kullanıcının "onay isteme" talimatıyla). Yayın
 kararı panelde, insanda. Bu turla birlikte polis mevzuatı toplam 16 (7 Kas) + 16 (§3m) + 65 = 97 deste.
 
+## 3o. Polis dışı mevzuat turu (11 Kas 2026)
+
+Kullanıcı görevi: kaçan terör zararları yönetmeliği, ardından 5275/657/5442, idare ve seçim mevzuatı, ceza-yargı ve
+insan hakları mevzuatı, en sonda Anayasa/TCK/CMK boşluk maddeleri — "sırayla git". Aynı hat (§3n). **107 deste,
+2808 kart, hepsi GEÇTİ ve prod'da `in_review`** (raporlar `denetim/<deste>.md`).
+
+| Grup | Mevzuat (deste) | Kart |
+|---|---|---|
+| 1 | Terör Zararları Yön. (tzy 1), 5275 İnfaz (inf 11), 657 DMK (dmk 11), 5442 İl İdaresi (iik 4) | 698 |
+| 2 | 5302 (ioi 4), 5393 (bel 7), 5018 (kmy 4), 2577 İYUK (iyu 5), 2575 Danıştay (dan 3), 2576 (bim 1), 6085 Sayıştay (say 4), 3628 (mbk 1), 4982 (bed 1), 3071 (dlk 1), 7201 Tebligat (tbl 2), 6216 AYM (aym 5), 2820 SPK (spk 6), 298 (stk 7), 2839 (mvs 2), 6271 (cbs 1), 7062 YSK (ysk 1), 3376 (hok 1), TBMM İçtüzüğü (tic 4) | 1581 |
+| 3 | 5352 Adli Sicil (ads 1), 5235 (ayk 2), 6706 (uai 2), AİHS (aih 4), 6698 KVKK (kvk 3), 6328 KDK (kdk 2), 6701 TİHEK (tih 3), 3686 (ihk 1), 5253 Dernekler (der 2) | 529 |
+
+**Bulgular (deste başına çoğunlukla 0–3 hukuki kusur; asıl iş çift kart):**
+- **Anayasa ile çift kart** en büyük kusur sınıfıydı: 6216, 6271, 2839, 7062, 2820, İçtüzük, Sayıştay, Danıştay
+  Anayasa maddelerini tekrarlar; aynı cevaba giden kart çıkarıldı ya da kanuna özgü ayrıntıya (oylama usulü,
+  süre, merci) çevrildi. Kardeş kanunlar (5302↔5393, 6328↔6701, 657↔7068, 4982↔3071) için ön yüze kanun/kurum adı.
+- **Eski merci/ad:** Çevre ve Şehircilik → Çevre, Şehircilik ve İklim Değişikliği; HSYK → HSK; Maliye → Hazine ve
+  Maliye; PTT Genel Müdürlüğü → PTT A.Ş.; sicil amirliği, müşterek kararname, ilk kademe belediyesi kalktı.
+  Biçim "güncel ad (metinde: eski ad)"; üretici ters biçime yatkın, `scratchpad/ekmev/ad.py` ile toplu düzeltildi.
+- **Eski kanun hükmünün Anayasa/yeni kanun karşısında düşmesi:** 2820 md 98 beşte üç (Anayasa md 149: üçte iki),
+  2839 md 8 seçim tarihi (6271 md 3/4), 3628 md 16/20 çevirme-erteleme yasağı (TCK md 5) — kart çıkarıldı.
+- **Parasal sınırlar** (2577, 2576, KVKK) metindeki nominal tutar; yeniden değerleme notu eklendi.
+- TBMM İçtüzüğü metni 1200 sayılı Kararla (2018) uyarlanmış; md 24 son fıkra, 112/2, 77/3 eski düzen, kart yok.
+
+**Boşluk desteleri (aynı gün):** mevcut destelerde karta girmemiş, mülga olmayan maddeler için 8 ek deste, 211
+kart, hepsi GEÇTİ ve `in_review`: anayasa-ek (Başlangıç, md 43–44, 49, 63–64, 136, 171–173), tck-ek-1..3 (93 madde),
+cmk-ek-1..2 (92 madde), aih-ek (AİHS md 3, 5/1 a–f yakalama hâlleri, 5/2–5, 9, 10, 12, 17, 18, 33, 38), der-ek
+(5253 md 19/2 denetimde kolluk yasağı dahil). Kusur sınıfı neredeyse yalnız mevcut destelerle K6.
+
+**Mevzuat kaydı kusurları (yayından bağımsız, düzeltilmeli):** Terör Zararları Yön. md 22 metni md 21 içine kaymış
+("22" kaydı 22/A'yı taşıyor); AİHS P16-1, 2, 3, 8, 10 madde başları kesik (ilgili kartlar çıkarıldı).
+
+**İnsan notları:** 657 md 4/B MEB sözleşmeli öğretmen (7528 sonrası teyit); 3628 md 20 "müebbeten yasaklanma"
+(TCK 53 düzeni); 2575 md 76–79 eski CMUK terimleri metne sadık; AİHS P4 ve P12'yi Türkiye onaylamadı (kartlar
+Türk hukuku gibi sunmuyor).
+
 ## 4. Yapılmayan / sıradaki
 
 - **Cihaz testi (Expo):** simülatörde temel akış doğrulandı; gerçek cihazda jest hissi, SE boyutu ve uçak
   modu kuyruğu kullanıcı göz testine kaldı.
-- **Üretim hattı:** Anayasa 12 + TCK 17 + CMK 15 + polis mevzuatı 97 (§3i–§3n) deste bitti; Doc 53 üniteleri ve platformdaki bütün polis mevzuatı kartlandı (7245, 6458, Polis Merkezi Amirliği Yön. platformda yok).
+- **Üretim hattı:** Anayasa 12 + TCK 17 + CMK 15 + polis mevzuatı 97 (§3i–§3n) + polis dışı mevzuat 107 + boşluk 8 (§3o) deste bitti; Doc 53 üniteleri ve platformdaki bütün polis mevzuatı kartlandı (7245, 6458, Polis Merkezi Amirliği Yön. platformda yok).
 - **İki cihaz arası ilerleme, yayından kaldırılan kartın kuyruktan düşmesi:** API spec'te var, canlı denenmedi.
 - **Bayrak açma sırası:** prod'da pilot kartlar panelden (tek tek ya da toplu) yayınlanır → `beta` rolüyle canlı göz testi →
   `flashcards_enabled` panelden açılır. Bildirim preset'i `flashcards_due` `paused` doğar, panelden açılır.

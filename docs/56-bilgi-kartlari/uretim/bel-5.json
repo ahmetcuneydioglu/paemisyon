@@ -1,0 +1,291 @@
+{
+  "deck": {
+    "topicId": "28eaa9b8-d646-4d32-af33-618d8e1c7ea7",
+    "legislationSlug": "5393-belediye-kanunu",
+    "sourceLabel": "AI bilgi kartı — 5393 Belediye Kanunu md 50–62",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: resmî madde metni + çıkmış sorular)"
+  },
+  "cards": [
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Tüzel kişiliği kaldırılan belediyeden devredilen personelden durumuna uygun boş kadro olmayanların kadro unvanları kaç ay içinde değiştirilir?",
+      "back": "Üç ay içinde; ilgili belediye meclisi veya il genel meclisince, aynı sınıf içinde kalmak kaydıyla değiştirilir.",
+      "explanation": "Kadrolar ve personel, katılma hâlinde katıldıkları belediyeye, köye dönüştürülme hâlinde ilgili il özel idaresine devredilir. Kadro ve görev unvanları değişmeyenler aynı unvanlı kadrolara atanmış sayılır. Unvan değişikliği, mevcut kadro unvanıyla ataması yapılamayanlar için de uygulanır.",
+      "articleRefs": [
+        "50"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Devredilen personelin kadro unvanları değiştirildikten sonra, uygun kadrolara atamaları kaç ay içinde yapılır?",
+      "back": "Bir ay içinde; süre unvan değişikliğinden itibaren işler.",
+      "explanation": "Atama yapılıncaya kadar personel, devredildiği belediye veya il özel idaresince ihtiyaç duyulan işlerde görevlendirilebilir. Bu sürede eski kadrosuna ait aylık, ücret, ek gösterge, her türlü zam ve tazminat ile diğer malî haklarını almaya devam eder.",
+      "articleRefs": [
+        "50"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Devredilen memurun yeni kadrosundaki net malî hakları eski kadrosundakinden azsa, aradaki fark kesintiye tâbi tutularak mı ödenir?",
+      "back": "Hayır. Fark, giderilinceye kadar ve atandığı kadroda kaldığı sürece herhangi bir kesintiye tâbi olmaksızın tazminat olarak ödenir.",
+      "explanation": "Karşılaştırma iki net tutar arasında yapılır: yeni kadronun aylık, ek gösterge, zam, tazminat ve diğer malî hakları toplamı ile eski kadroya bağlı olarak en son ayda alınan toplam. Bu güvence memur statüsünde görev yapanlar içindir.",
+      "articleRefs": [
+        "50"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Belediye zabıtası beldede neyin sağlanmasıyla görevlidir?",
+      "back": "Esenlik, huzur, sağlık ve düzenin sağlanmasıyla görevlidir.",
+      "explanation": "Bu amaçla zabıta, belediye meclisinin aldığı ve kendisinin yerine getirmesi gereken emir ve yasakları uygular. Bunlara uymayanlar hakkında mevzuatta öngörülen ceza ve diğer yaptırımları da uygular.",
+      "articleRefs": [
+        "51"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Görevini yaptığı sırada belediye zabıtasına karşı gelen kişi nasıl cezalandırılır?",
+      "back": "Kolluk kuvvetlerine karşı gelenler gibi cezalandırılır.",
+      "explanation": "Zabıta ve özel güvenlik hizmetlerinde fiilen çalışanlara fazla mesai ücreti olarak maktu bir tutar ödenir. Bu tutarı belediye meclisi kararla tespit eder; yılı bütçe kanununda belirlenen üst sınır aşılamaz.",
+      "articleRefs": [
+        "51"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Belediye itfaiye teşkilâtının çalışma usûl ve esaslarını düzenleyen yönetmeliği hangi bakanlık çıkarır?",
+      "back": "Çevre, Şehircilik ve İklim Değişikliği Bakanlığı (metinde: Çevre ve Şehircilik Bakanlığı) çıkarır; İçişleri Bakanlığının görüşü alınır.",
+      "explanation": "Yönetmelikle düzenlenen konular arasında memurluğa alınma nitelikleri, meslek içi eğitim, görevde yükselme, meslekten çıkarılma, kıyafet ve savunma amaçlı aletler bulunur. Belediye bu yönetmeliğe aykırı olmamak üzere ek düzenlemeler yapabilir.",
+      "articleRefs": [
+        "52"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "İtfaiye personelinin çalışma süre ve saatleri 657 sayılı Devlet Memurları Kanunundaki süre ve saatlere bağlı mıdır?",
+      "back": "Hayır. İtfaiye hizmetleri kesintisiz yürütülür. Çalışma süre ve saatleri 657 sayılı Kanuna bağlı olmaksızın, hizmetin aksatılmadan yürütülmesini sağlayacak şekilde düzenlenir.",
+      "explanation": "İtfaiye teşkilâtında fiilen çalışanlara fazla mesai ücreti olarak maktu bir tutar ödenir. Bu tutarı belediye meclisi kararla tespit eder; yılı bütçe kanununda belirlenen üst sınır aşılamaz.",
+      "articleRefs": [
+        "52"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Belediye hangi tehlikelere karşı afet ve acil durum plânları yapar?",
+      "back": "Yangın, sanayi kazaları, deprem ve diğer doğal afetlere karşı; bunlardan korunmak ya da zararlarını azaltmak için.",
+      "explanation": "Belediye plânları beldenin özelliklerini dikkate alarak yapar, ekip ve donanımı da hazırlar. Hazırlıkta varsa il ölçeğindeki diğer acil durum plânlarıyla koordinasyon sağlanır. İlgili bakanlık, kamu kuruluşları, meslek teşekkülleri, üniversiteler ve diğer mahallî idarelerin görüşleri alınır. Halkın eğitimi için bu kurumlarla ortak programlar yapılabilir.",
+      "articleRefs": [
+        "53"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Belediye sınırları dışında yangın ya da doğal afet meydana gelirse belediye ne yapabilir?",
+      "back": "Bu bölgelere gerekli yardım ve destek sağlayabilir.",
+      "articleRefs": [
+        "53"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Belediye denetiminde hizmetlerin süreç ve sonuçları neye göre analiz edilir?",
+      "back": "Mevzuata, önceden belirlenmiş amaç ve hedeflere, performans ölçütlerine ve kalite standartlarına göre; tarafsız olarak analiz edilir.",
+      "explanation": "Denetimin amaçları şunlardır: faaliyet ve işlemlerde hataların önlenmesine yardımcı olmak, çalışanların ve teşkilâtın gelişmesine rehberlik etmek, yönetim ve kontrol sistemlerinin geçerli, güvenilir ve tutarlı duruma gelmesine rehberlik etmek. Değerlendirme kanıtlara dayanır; sonuçlar rapor hâline getirilip ilgililere duyurulur.",
+      "articleRefs": [
+        "54"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Belediyelerde yapılan denetim neleri kapsar?",
+      "back": "İş ve işlemlerin hukuka uygunluk, malî ve performans denetimini kapsar; belediyelerde iç ve dış denetim yapılır.",
+      "explanation": "İç ve dış denetim 5018 sayılı Kamu Malî Yönetimi ve Kontrol Kanunu hükümlerine göre yapılır. Belediyelere bağlı kuruluş ve işletmeler de aynı esaslara göre denetlenir. Denetim sonuçları kamuoyuna açıklanır ve meclisin bilgisine sunulur.",
+      "articleRefs": [
+        "55"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Belediyenin malî işlemler dışında kalan idarî işlemlerini hukuka uygunluk ve idarenin bütünlüğü açısından ayrıca kim denetler?",
+      "back": "İçişleri Bakanlığı denetler.",
+      "articleRefs": [
+        "55"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Belediye başkanının meclise sunduğu faaliyet raporunun bir örneği hangi bakanlığa gönderilir?",
+      "back": "Çevre, Şehircilik ve İklim Değişikliği Bakanlığına (metinde: Çevre ve Şehircilik Bakanlığı) gönderilir; rapor ayrıca kamuoyuna açıklanır.",
+      "explanation": "Raporu belediye başkanı hazırlar ve nisan ayı toplantısında meclise sunar. Rapor şunları açıklar: stratejik plân ve performans programına göre yürütülen faaliyetler, performans ölçütlerine göre hedef ve gerçekleşme durumu, sapmaların nedenleri ve belediye borçlarının durumu.",
+      "articleRefs": [
+        "56"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Belediyenin faaliyet raporunda yalnız belediyenin kendi faaliyetlerine mi yer verilir?",
+      "back": "Hayır. Bağlı kuruluş ve işletmeler ile belediye ortaklıklarına ilişkin bilgi ve değerlendirmelere de yer verilir.",
+      "explanation": "Rapor, 5018 sayılı Kamu Malî Yönetimi ve Kontrol Kanununun 41 inci maddesinin dördüncü fıkrasında belirtilen biçimde hazırlanır.",
+      "articleRefs": [
+        "56"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Belediye hizmetlerinin ciddi biçimde aksatıldığını İçişleri Bakanlığının talebi üzerine kim belirler?",
+      "back": "Yetkili sulh hukuk hâkimi belirler.",
+      "explanation": "Aksamanın halkın sağlık, huzur ve esenliğini hayati derecede olumsuz etkilemesi de aranır. Belirlemeden sonra İçişleri Bakanı, hizmetin özelliğine göre makul bir süre vererek aksamanın giderilmesini belediye başkanından ister. Sulh hukuk hâkiminin kararına karşı ilgili belediye asliye hukuk mahkemesine itiraz edebilir.",
+      "articleRefs": [
+        "57"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Aksama giderilemeyince hizmetin yerine getirilmesi istenen vali, aksaklığı doğrudan diğer kamu kurum ve kuruluşlarının imkânlarıyla mı giderir?",
+      "back": "Hayır. Vali aksaklığı öncelikle belediyenin araç, gereç, personel ve diğer kaynaklarıyla giderir. Bu mümkün olmazsa diğer kamu kurum ve kuruluşlarının imkânlarını da kullanabilir.",
+      "explanation": "Ortaya çıkan maliyeti vali İller Bankasına bildirir. İller Bankası bu tutarı, o belediyenin müteakip ay genel bütçe vergi gelirleri tahsilâtı toplamı üzerinden belediyeye ayrılan paydan keserek valilik emrine gönderir.",
+      "articleRefs": [
+        "57"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Belediye taşınırlarının terör veya şiddet olaylarına destek amacıyla kullanıldığı valilikçe belirlenirse bu taşınırlara kim el koyar?",
+      "back": "Mahallin en büyük mülki idare amiri el koyar.",
+      "explanation": "Bu kapsamda sorumluluğu tespit edilen belediye veya bağlı idare personeli vali veya kaymakam tarafından görevden uzaklaştırılabilir. Bu durumda göreve iade işlemini ancak uzaklaştırma işlemini yapan makam yapabilir.",
+      "articleRefs": [
+        "57"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Denetim ve faaliyet raporunun hazırlanması konusunda Belediye Kanununda hüküm bulunmayan durumlarda hangi sayılı kanun uygulanır?",
+      "back": "5018 sayılı Kamu Malî Yönetimi ve Kontrol Kanunu uygulanır; diğer kanunların ilgili hükümleri de uygulanır.",
+      "articleRefs": [
+        "58"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Belediyenin hizmet karşılığı ücretleri hangi tarifelere göre tahsil edilir?",
+      "back": "Belediye meclisi tarafından belirlenecek tarifelere göre tahsil edilir.",
+      "explanation": "Belediyenin gelirleri arasında şunlar da bulunur: kanunlarla gösterilen belediye vergi, resim, harç ve katılma payları; genel bütçe vergi gelirlerinden ayrılan pay; genel ve özel bütçeli idarelerden yapılacak ödemeler; faiz ve ceza gelirleri; bağışlar.",
+      "articleRefs": [
+        "59"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Belediye, taşınır ve taşınmaz mallarından hangi yollarla gelir elde eder?",
+      "back": "Bu malların kira, satış ve başka suretle değerlendirilmesinden gelir elde eder.",
+      "explanation": "Her türlü girişim, iştirak ve faaliyetler karşılığı sağlanacak gelirler de belediye gelirleri arasındadır.",
+      "articleRefs": [
+        "59"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Belediye zabıta ve itfaiye hizmetlerinin yürütülmesi için yapılan harcamalar belediyenin giderleri arasında mıdır?",
+      "back": "Evet; zabıta ve itfaiye hizmetleri ile diğer görev ve hizmetlerin yürütülmesi için yapılacak giderler belediye giderlerindendir.",
+      "explanation": "Giderler arasında şunlar da sayılır: personele ve seçilmiş organ üyelerine ödenen maaş, ücret, ödenek, huzur hakkı ve yolluklar; dava takip ve icra giderleri; mezarlıkların tesisi, korunması ve bakımına ilişkin giderler.",
+      "articleRefs": [
+        "60"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Kamuoyu yoklaması ve araştırması giderleri hangi kayıtla belediye giderleri arasında sayılır?",
+      "back": "Belediye hizmetleriyle ilgili olarak yapılmaları kaydıyla.",
+      "explanation": "Aynı maddede belediye giderleri arasında şunlar da sayılır: dar gelirli, yoksul, muhtaç ve kimsesizler ile engellilere yapılacak sosyal hizmet ve yardımlar; temsil, tören, ağırlama ve tanıtım giderleri; imar düzenleme giderleri.",
+      "articleRefs": [
+        "60"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Belediye bütçesi, malî yılın yanı sıra izleyen kaç yılın gelir ve gider tahminlerini gösterir?",
+      "back": "İzleyen iki yılın; bütçe malî yıl ve izleyen iki yıl içindeki gelir ve gider tahminlerini gösterir.",
+      "explanation": "Bütçe, belediyenin stratejik plânına ve performans programına uygun olarak hazırlanır. Gelirlerin toplanmasına ve harcamaların yapılmasına izin verir. Bütçeye ayrıntılı harcama programları ile finansman programları eklenir.",
+      "articleRefs": [
+        "61"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 1,
+      "front": "Belediye bütçe dışı harcama yapabilir mi?",
+      "back": "Hayır. Bütçe dışı harcama yapılamaz; harcamaların yapılmasına bütçe izin verir.",
+      "explanation": "Belediyenin bütçe yılı Devlet malî yılı ile aynıdır.",
+      "articleRefs": [
+        "61"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Belediyede bütçe ödeneklerinin verimli, tutumlu ve yerinde harcanmasından kim sorumludur?",
+      "back": "Belediye başkanı ve harcama yetkisi verilen diğer görevliler sorumludur.",
+      "articleRefs": [
+        "61"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Belediye başkanının hazırladığı bütçe tasarısı hangi tarihten önce encümene sunulur?",
+      "back": "Eylül ayının birinci gününden önce sunulur. Tasarı aynı zamanda Çevre, Şehircilik ve İklim Değişikliği Bakanlığına (metinde: Çevre ve Şehircilik Bakanlığı) gönderilir.",
+      "explanation": "Çevre, Şehircilik ve İklim Değişikliği Bakanlığı (metinde: Çevre ve Şehircilik Bakanlığı) belediye bütçe tahminlerini konsolide eder.",
+      "articleRefs": [
+        "62"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Encümen, incelediği bütçe tasarısını görüşüyle birlikte hangi tarihten önce belediye meclisine sunar?",
+      "back": "Kasım ayının birinci gününden önce sunar.",
+      "explanation": "Meclis bütçe tasarısını yılbaşından önce kabul eder. Kabul edilen bütçe malî yılbaşından itibaren yürürlüğe girer.",
+      "articleRefs": [
+        "62"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Belediye meclisi bütçe tasarısını değiştirerek kabul edebilir mi?",
+      "back": "Evet; meclis tasarıyı aynen veya değiştirerek kabul eder. Ancak bütçe denkliğini bozacak biçimde gider artırıcı ve gelir azaltıcı değişiklik yapamaz.",
+      "articleRefs": [
+        "62"
+      ],
+      "counterNumbers": []
+    }
+  ]
+}

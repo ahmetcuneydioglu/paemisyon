@@ -1,0 +1,289 @@
+{
+  "deck": {
+    "topicId": "3a7fb703-175b-4a01-a217-a00766c51d07",
+    "legislationSlug": "5275-ceza-ve-guvenlik-tedbirlerinin-infazi-hakkinda-kanun",
+    "sourceLabel": "AI bilgi kartı — 5275 Ceza ve Güvenlik Tedbirlerinin İnfazı Hakkında Kanun md 108–110",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: resmî madde metni + çıkmış sorular)"
+  },
+  "cards": [
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Tekerrür hâlinde işlediği suçtan ağırlaştırılmış müebbet hapis cezasına mahkûm olan kişi, koşullu salıverilmeden yararlanmak için cezasının kaç yılını çekmiş olmalıdır?",
+      "back": "39 yılını; cezayı infaz kurumunda iyi hâlli olarak çekmesi gerekir.",
+      "explanation": "Sürenin dolması tek başına yetmez. Cezanın infaz kurumunda iyi hâlli olarak çekilmesi şartı da aranır.",
+      "articleRefs": [
+        "108"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Tekerrür hâlinde işlediği suçtan müebbet hapis cezasına mahkûm olan kişi, koşullu salıverilmeden yararlanmak için cezasının kaç yılını çekmiş olmalıdır?",
+      "back": "33 yılını; cezayı infaz kurumunda iyi hâlli olarak çekmesi gerekir.",
+      "articleRefs": [
+        "108"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Tekerrür hâlinde işlenen suçlar nedeniyle birden fazla süreli hapis cezasına mahkûm olan kişi için koşullu salıverilme süresinin üst sınırı nedir?",
+      "back": "32 yıl: birden fazla süreli hapis cezasında en fazla bu süre aranır. Cezanın iyi hâlli olarak çekilmesi şartı da vardır.",
+      "articleRefs": [
+        "108"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Mükerrir, koşullu salıverilme oranı üçte ikiden fazla olan bir suçtan süreli hapis cezası aldıysa, cezasının üçte ikisini çekince koşullu salıverilebilir mi?",
+      "back": "Hayır. Koşullu salıverilme oranı üçte ikiden fazla olan suçlarda, o suçun tabi olduğu oran uygulanır.",
+      "explanation": "Mükerrirlerde süreli hapis cezası için temel kural, cezanın üçte ikisinin infaz kurumunda iyi hâlli olarak çekilmesidir. \"Ancak\" cümlesi bu oranı yalnız daha yüksek oranlı suçlar için değiştirir.",
+      "articleRefs": [
+        "108"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Tekerrür nedeniyle koşullu salıverilme süresine eklenecek miktarın üst sınırı nedir?",
+      "back": "Tekerrüre esas alınan cezaların en ağırı; eklenecek miktar bundan fazla olamaz.",
+      "explanation": "İkinci defa tekerrür hâlinde bu sınır uygulanmaz.",
+      "articleRefs": [
+        "108"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "İkinci defa tekerrür hükümleri uygulanan hükümlünün süreli hapis cezasında koşullu salıverilme oranı nedir?",
+      "back": "Dörtte üç. İkinci defa tekerrürde birinci fıkradaki koşullu salıverilme süreleri uygulanır, süreli hapis cezalarında ise oran dörtte üçtür.",
+      "explanation": "İkinci defa tekerrür hükümlerinin uygulanacağı hükümde belirtilir. Bu hâlde, ekleme miktarını tekerrüre esas en ağır cezayla sınırlayan kural uygulanmaz.",
+      "articleRefs": [
+        "108"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "İnfaz hâkiminin mükerrir hakkında belirleyeceği denetim süresi en az ne kadardır?",
+      "back": "1 yıl; denetim süresi cezanın infazının tamamlanmasından sonra başlar.",
+      "explanation": "İnfaz hâkimi denetim süresinin uzatılmasına karar verebilir; süre en fazla 5 yıla kadar uzatılabilir. Denetim süresinde koşullu salıverilmeye ilişkin hükümler uygulanır.",
+      "articleRefs": [
+        "108"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Cezası bitmiş, denetim süresinde yükümlülük ve yasaklara aykırı hareket eden mükerrire verilecek disiplin hapsi hangi süre aralığındadır?",
+      "back": "15 gün ile 3 ay arası: disiplin hapsi 15 günden az, 3 aydan fazla olamaz. Karar infaz hâkimince verilir.",
+      "explanation": "Disiplin hapsi, cezanın infazı tamamlandıktan sonra devam eden denetim süresi içinde, bu maddeye göre yüklenen yükümlülüklere ve yasaklara aykırılık için öngörülür.",
+      "articleRefs": [
+        "108"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Çocuğa karşı işlenen bir suçtan ağırlaştırılmış müebbet ya da müebbet hapis cezası alan hükümlüye hangi koşullu salıverilme süreleri uygulanır?",
+      "back": "Mükerrirler için birinci fıkrada öngörülen koşullu salıverilme süreleri uygulanır.",
+      "articleRefs": [
+        "108"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Mükerrirlere özgü koşullu salıverilme süreleri, hangi Türk Ceza Kanunu suçlarından hapis cezası alanlara da uygulanır?",
+      "back": "Cinsel saldırı (Türk Ceza Kanunu md 102, ikinci fıkra), çocukların cinsel istismarı (md 103), reşit olmayanla cinsel ilişki (md 104, ikinci ve üçüncü fıkra), uyuşturucu veya uyarıcı madde imal ve ticareti (md 188).",
+      "explanation": "Bu suçlarda süreli hapis cezaları için koşullu salıverilme oranı dörtte üç olarak uygulanır.",
+      "articleRefs": [
+        "108"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Cinsel saldırı, çocukların cinsel istismarı veya reşit olmayanla cinsel ilişki suçundan hapis cezası alan hükümlü hakkında infaz hâkimi hangi tedavi veya yükümlülüklere karar verir?",
+      "back": "Bir veya birkaçına: tıbbi tedavi, tedavi amaçlı programlar, mağdurun oturduğu ve çalıştığı bölgede ikamet yasağı, mağdurun bulunduğu yerlere yaklaşma yasağı, çocuklarla bir arada çalışma yasağı, çocuklara bakım ve gözetim faaliyeti yasağı.",
+      "explanation": "Bu tedavi veya yükümlülükler cezanın infazı sırasında uygulanır. Hükümlü koşullu salıverilirse denetim süresi içinde de devam eder.",
+      "articleRefs": [
+        "108"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Uyuşturucu veya uyarıcı madde imal ve ticareti suçundan hapis cezası alan hükümlü hakkında da infaz hâkimi tıbbi tedavi ya da mağdura yaklaşma yasağı gibi yükümlülüklere karar verir mi?",
+      "back": "Hayır. Bu tedavi ve yükümlülükler Türk Ceza Kanunu md 188 suçu hariç tutularak öngörülmüştür. O suçta birinci fıkradaki koşullu salıverilme süreleri uygulanır.",
+      "explanation": "Uyuşturucu veya uyarıcı madde imal ve ticareti suçunda da süreli hapis cezaları için koşullu salıverilme oranı dörtte üç olarak uygulanır.",
+      "articleRefs": [
+        "108"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Cinsel suçlar ve uyuşturucu ticareti için öngörülen ağır koşullu salıverilme süreleri ile tedavi ve yükümlülükler çocuklar hakkında da uygulanır mı?",
+      "back": "Hayır. Bu suçlar için öngörülen koşullu salıverilme süreleri, oran ve tedavi ile yükümlülüklere ilişkin hükümler çocuklar hakkında uygulanmaz.",
+      "explanation": "Dokuzuncu fıkranın uygulanmasına ilişkin usul ve esaslar, Sağlık Bakanlığının görüşü alınarak Adalet Bakanlığınca hazırlanan yönetmelikle düzenlenir.",
+      "articleRefs": [
+        "108"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Kısa süreli hapis cezası yerine Türk Ceza Kanununun 50. maddesine göre hükmedilen seçenekli yaptırımların infaz rejimi nerede gösterilir?",
+      "back": "Cumhurbaşkanınca çıkarılan yönetmelikte.",
+      "articleRefs": [
+        "109"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Kasten işlenen suçlarda hapis cezasının hafta sonları ya da geceleri ceza infaz kurumunda çektirilebilmesi için toplam ceza en fazla ne kadar olmalıdır?",
+      "back": "Toplam 3 yıl veya daha az. Karar, hükümlünün talebi üzerine infaz hâkimince verilir.",
+      "explanation": "Taksirle işlenen suçlarda sınır toplam 5 yıldır. Taksirle öldürme suçu ise bu kapsamın dışında tutulmuştur.",
+      "articleRefs": [
+        "110"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Gece infazı usulünde hükümlünün ceza infaz kurumunda kalacağı saat aralığı nedir?",
+      "back": "19.00–07.00: hafta sonları hariç her gün saat 19.00'da girer, ertesi gün saat 07.00'de çıkar.",
+      "explanation": "Hafta sonu usulünde ise hükümlü her hafta cuma günü saat 19.00'da kuruma girer, pazar günü aynı saatte çıkar.",
+      "articleRefs": [
+        "110"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Hafta sonu infazının hafta içi günlerde uygulanmasına infaz hâkimi mi karar verir?",
+      "back": "Hayır. Hafta sonu usulünü, süresi aynı kalmak koşuluyla hafta içi günlerde ceza infaz kurumu uygulayabilir.",
+      "explanation": "Kurum bunu hükümlünün iş yaşamı ve ailevi durumu ile ceza infaz kurumlarının düzen ve işleyişine göre yapar. Hafta sonu ya da gece infazına karar verme yetkisi ise hükümlünün talebi üzerine infaz hâkimindedir.",
+      "articleRefs": [
+        "110"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Kadın, çocuk veya altmışbeş yaşını bitirmiş hükümlünün hapis cezası en fazla ne kadarsa konutunda çektirilebilir?",
+      "back": "Toplam 3 yıl veya daha az. Konutta infaza infaz hâkimi karar verir.",
+      "explanation": "Yaş ilerledikçe sınır yükselir; yetmiş yaşını bitirmiş kişilerde sınır toplam 4 yıldır.",
+      "articleRefs": [
+        "110"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Yetmişbeş yaşını bitirmiş hükümlünün toplam 6 yıllık hapis cezası konutunda çektirilebilir mi?",
+      "back": "Hayır. Yetmişbeş yaşını bitirmişlerde sınır toplam 5 yıl veya daha azdır. Toplam 6 yıl sınırı seksen yaşını bitirmiş kişiler içindir.",
+      "explanation": "Yaşa bağlı konutta infaz kararında, suçtan doğan zararın giderilmesine dair hukuki sorumluluk saklı kalır.",
+      "articleRefs": [
+        "110"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Yaş, kadınlık ya da çocukluk nedeniyle konutta infaz kararı verilirken hükümlünün hangi sorumluluğu saklı tutulur?",
+      "back": "Mahkûmiyete konu suç nedeniyle doğan zararın aynen iade, suçtan önceki hâle getirme veya tazmin suretiyle tamamen giderilmesine dair hukuki sorumluluğu.",
+      "articleRefs": [
+        "110"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 1,
+      "front": "Ağırlaştırılmış müebbet hapis cezasına mahkûm olan ağır hasta hükümlünün cezası konutunda çektirilebilir mi?",
+      "back": "Hayır. Ağır hastalık veya engellilik nedeniyle konutta infaz, ağırlaştırılmış müebbet hapis cezasına mahkûm olanlar hariç tutularak düzenlenmiştir.",
+      "articleRefs": [
+        "110"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Ağır hastalık veya engellilik nedeniyle konutta infaz kararı verilebilmesi için hükümlü hakkında hangi tespit ve değerlendirme yapılmış olmalıdır?",
+      "back": "Ceza infaz kurumu koşullarında hayatını yalnız idame ettiremeyeceği tespit edilmeli ve toplum güvenliği bakımından ağır ve somut tehlike oluşturmayacağı değerlendirilmelidir.",
+      "explanation": "Tespit, 16. maddenin üçüncü fıkrasında belirlenen usule göre yapılır. Adli para cezası infaz sürecinde hapis cezasına çevrilen hükümlüler de bu fıkranın kapsamındadır.",
+      "articleRefs": [
+        "110"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Ağır hastalığı nedeniyle cezasını konutunda çeken hükümlünün durumunu düzenli olarak kim incelettirir?",
+      "back": "Cumhuriyet başsavcılığı; hükümlünün durumu birer yıllık dönemlerle incelettirilir.",
+      "explanation": "İnceleme sonucunda hükümlünün iyileştiği tespit edilirse infaz hâkimi, cezanın konutta çektirilmesine dair kararı kaldırır.",
+      "articleRefs": [
+        "110"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Ağır hastalık veya engellilik nedeniyle cezasını konutunda çeken mahkûmu kimler izler?",
+      "back": "Denetimli serbestlik müdürlüğü ve mahkûmun bulunduğu yerin kolluk makamları.",
+      "explanation": "Bu fıkradaki yükümlülüklere aykırı hareket edilirse, cezanın konutta çektirilmesine dair karar infaz hâkimliğince kaldırılır.",
+      "articleRefs": [
+        "110"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Ağır hastalık veya engellilik nedeniyle konutta infazda elektronik cihazla takip hangi hükümlüler için zorunludur?",
+      "back": "Toplam cezası 10 yıldan fazla olan hükümlüler için.",
+      "articleRefs": [
+        "110"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Doğum yapan hükümlü kadının konutta infaz talebinde bulunabilmesi için doğum tarihinden itibaren en fazla ne kadar süre geçmiş olabilir?",
+      "back": "1 yıl 6 ay; talep bu süre geçmeden yapılmalıdır.",
+      "explanation": "Konutta infaz, doğurduğu tarihten itibaren 6 ay geçen ve toplam 5 yıl veya daha az süreli hapis cezasına mahkûm olan ya da adli para cezası hapse çevrilen kadınlar için öngörülür. Karardan sonra çocuk ölür ya da anasından başka birine verilirse infaz hâkimi kararı kaldırır.",
+      "articleRefs": [
+        "110"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Özel infaz usulünün gereklerine geçerli bir mazeret olmaksızın uymayan hükümlünün cezası nasıl infaz edilir?",
+      "back": "Usulün uygulanmasına son verilir; infaza genel hükümlere göre ceza infaz kurumlarında devam edilir.",
+      "explanation": "Özel infaz usulüyle geçirilen süre mahsup edilir ve bu hâlde 105/A maddesi hükümleri uygulanmaz. Özel infaz kararı infaza başlandıktan sonra da verilebilir. Bu maddeye göre verilen kararlara itiraz yolu açıktır.",
+      "articleRefs": [
+        "110"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Hafta sonu ve gece infazı ile yaşa bağlı konutta infaz gibi özel infaz usulleri hangi hükümlüler hakkında uygulanmaz?",
+      "back": "Terör ve örgüt suçlarından ya da cinsel dokunulmazlığa karşı suçlardan mahkûm olanlar, adli para cezası hapse çevrilenler, koşullu salıverilmesi geri alınıp cezası aynen infaz edilenler ve 105/A uyarınca açık kuruma gönderilenler.",
+      "explanation": "Bu istisnalar, ağır hastalık veya engellilik ile doğum nedeniyle konutta infazı düzenleyen üçüncü ve dördüncü fıkralara uygulanmaz.",
+      "articleRefs": [
+        "110"
+      ]
+    }
+  ]
+}

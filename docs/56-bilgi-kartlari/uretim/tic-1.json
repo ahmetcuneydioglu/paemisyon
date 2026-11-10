@@ -1,0 +1,278 @@
+{
+  "deck": {
+    "topicId": "d4a6b734-0110-4c9e-ae57-8cc39091a369",
+    "legislationSlug": "tbmm-ictuzugu",
+    "sourceLabel": "AI bilgi kartı — Türkiye Büyük Millet Meclisi İçtüzüğü md 1–38, 41–46",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: resmî madde metni + çıkmış sorular)"
+  },
+  "cards": [
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "İçtüzüğe göre yasama yılı hangi tarihler arasındaki süredir?",
+      "back": "1 Ekimde başlayıp 30 Eylülde sona eren süredir.",
+      "articleRefs": [
+        "1"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Genel Kurulun bir birleşiminin ara ile bölünen kısımlarından her birine ne ad verilir?",
+      "back": "Oturum. Birleşim ise Genel Kurulun belli bir gününde açılan toplantısıdır.",
+      "articleRefs": [
+        "1"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Milletvekili genel seçiminden sonra Türkiye Büyük Millet Meclisi Genel Kurulu ne zaman çağrısız toplanır?",
+      "back": "Kesin sonuçların Yüksek Seçim Kurulunca ilanını takip eden üçüncü gün, saat 14.00'te çağrısız toplanır.",
+      "explanation": "Bu birleşimde önce andiçme töreni yapılır. Milletvekilleri seçim çevresi, soyadı ve adlarının alfabe sırasına göre, Anayasadaki metni kürsüden yüksek sesle aynen okuyarak andiçer.",
+      "articleRefs": [
+        "3"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Andiçmekten imtina eden milletvekili, milletvekili sıfatından kaynaklanan haklardan yararlanabilir mi?",
+      "back": "Hayır. Andiçmekten imtina eden milletvekilleri milletvekili sıfatından kaynaklanan haklardan yararlanamaz; milletvekilleri andiçerek göreve başlar.",
+      "explanation": "Madde, imtinanın sonucunu sıfattan kaynaklanan haklardan yararlanamamak olarak belirler.",
+      "articleRefs": [
+        "3"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Cumhurbaşkanı yardımcıları ve bakanlar ne zaman andiçer?",
+      "back": "Atandıkları tarihten sonra yapılan ilk birleşimde andiçerler.",
+      "explanation": "Andiçme töreninde bulunmayan milletvekilleri ya da ara seçimde milletvekili seçilenler de katıldıkları ilk birleşimin başında andiçer.",
+      "articleRefs": [
+        "3"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Genel Kurulca başka bir karar alınmadıkça TBMM hangi gün tatile girer?",
+      "back": "1 Temmuz günü.",
+      "articleRefs": [
+        "5"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Türkiye Büyük Millet Meclisinin ara vermesi en fazla ne kadar sürebilir?",
+      "back": "Onbeş gün; ara verme, Meclisin onbeş günü geçmemek üzere çalışmalarını ertelemesidir.",
+      "explanation": "Ara verme kararı, Danışma Kurulunun görüşü alındıktan sonra teklifin Genel Kurulca oylanmasıyla alınır.",
+      "articleRefs": [
+        "6"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Tatil ya da ara verme sırasında, üyelerin beşte birinin imzasını taşıyan gerekçeli önergedeki toplantı çağrısı istemini Meclis Başkanı en geç ne zaman yerine getirir?",
+      "back": "En geç yedi gün içinde yerine getirir.",
+      "explanation": "Meclis Başkanı doğrudan gerek görürse de toplantı çağrısına karar verebilir. Çağrıda toplantı gün ve saati ile toplantıyı gerektiren konu belirtilmelidir; birleşimde yeterli çoğunluk sağlanamazsa çağrı düşer.",
+      "articleRefs": [
+        "7"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Yasama döneminin birinci birleşiminde Başkan seçilinceye kadar Geçici Başkanlık görevini kim yapar?",
+      "back": "En yaşlı milletvekili. İkinci derecede en yaşlı üye Başkanvekilliği görevini yerine getirir.",
+      "explanation": "En genç altı milletvekili de geçici olarak Kâtip Üyelik yapar.",
+      "articleRefs": [
+        "8"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Başkanlık Divanı hangi üyelerden, kaçar kişiyle kurulur?",
+      "back": "Bir Başkan, dört Başkanvekili, yedi Kâtip Üye ve üç İdare Amirinden kurulur.",
+      "explanation": "Gerektiğinde Genel Kurul, Danışma Kurulunun teklifi üzerine Kâtip Üyelerin veya İdare Amirlerinin sayısını artırabilir.",
+      "articleRefs": [
+        "9"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Bir yasama döneminde Meclis Başkanlığı için yapılan seçimlerde görev süreleri nasıldır?",
+      "back": "İlk seçilenin görev süresi iki, ikinci devre için seçilenin görev süresi üç yıldır.",
+      "explanation": "Başkanlık için bir yasama döneminde iki seçim yapılır.",
+      "articleRefs": [
+        "10"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "İkinci devre Meclis Başkanlığı seçiminde adaylar ne zaman ve nereye bildirilir?",
+      "back": "Birinci devre için seçilen Başkanın görev süresinin dolmasından on gün önce başlamak üzere beş gün içinde, Başkanlık Divanına.",
+      "articleRefs": [
+        "10"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Meclis Başkanlığında boşalma olursa yeni Başkan seçilinceye kadar Geçici Başkanlık görevini kim yerine getirir?",
+      "back": "En yaşlı Başkanvekili.",
+      "explanation": "Başkanlık Divanının diğer üyeliklerinde boşalma olursa noksan üyelik tamamlanıncaya kadar Divanın görev ve yetkisi aynen devam eder; noksan üyelik en kısa zamanda tamamlanır.",
+      "articleRefs": [
+        "12"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Başkanlık Divanının toplanıp karar alabilmesi için kimin hazır bulunması şarttır?",
+      "back": "Başkanın ya da vekil olarak görevlendirdiği Başkanvekilinin; o hazır bulunmadan Divan toplanamaz ve karar alamaz.",
+      "explanation": "Divanın toplantı yeter sayısı üye tamsayısının, karar yeter sayısı hazır bulunan üyelerin salt çoğunluğudur. Divan üyelerinin tek başlarına üzerlerine aldıkları işlerden şikâyette toplantı yeter sayısı, şikâyet edilen üye dışındaki bütün üyelerin tamamıdır.",
+      "articleRefs": [
+        "13"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Meclis Başkanı özürlü olduğunda görevlerini yerine getirmek üzere kimi vekil tayin eder?",
+      "back": "Başkanvekillerinden birini, yazıyla vekil olarak tayin eder.",
+      "explanation": "Meclis toplantı halindeyken Başkanın Ankara dışında bulunduğu durumda da aynı yol izlenir. Meclisi Meclis dışında temsil etmek, Başkanlık Divanına ve Danışma Kuruluna başkanlık etmek Başkanın görevleri arasındadır.",
+      "articleRefs": [
+        "14"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Meclisteki sükûn ve düzenin korunmasında ve gereken hallerde emniyet kuvvetinin kullanılmasında Başkanlığın yürütme vasıtaları kimlerdir?",
+      "back": "İdare Amirleri; ortak sorumluluk içinde görev yapar ve yetki kullanırlar.",
+      "explanation": "İdare Amirleri, Meclisin idari ve mali işleri ile kolluk işlerini Başkanın talimatına uygun olarak yürütmekle Başkana yardımcı olur. Tatil ve ara verme sırasında sıra ile Ankara'da otururlar; bu sırayı Başkan tespit eder.",
+      "articleRefs": [
+        "17"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Siyasi parti grubu Meclis Başkanlığına neleri verir?",
+      "back": "İlk kuruluşta grup iç yönetmeliğini; her yasama dönemi başında da gruba mensup milletvekillerinin ad, soyadı ve seçim çevrelerini gösteren listeyi.",
+      "articleRefs": [
+        "18"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Danışma Kurulu kimlerden kurulur?",
+      "back": "Meclis Başkanı veya görevlendireceği başkanvekili başkanlığında, siyasi parti grup başkanları veya başkanvekillerinden kurulur.",
+      "explanation": "Gerektiğinde Meclis Başkanvekilleri de Kurula çağrılabilir. Kurul, Başkanın gerekli görmesi veya bir siyasi parti grubu başkanlığının istemi üzerine en geç yirmidört saat içinde Başkan tarafından toplantıya çağrılır.",
+      "articleRefs": [
+        "19"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Üye sayısı Danışma Kurulunun teklifi üzerine Genel Kurulca belirlenen komisyonların dışında kalan komisyonlar hangileridir?",
+      "back": "Plan ve Bütçe Komisyonu ile Kamu İktisadi Teşebbüsleri Komisyonu.",
+      "explanation": "Diğer komisyonların her birinin üye sayısı, Danışma Kurulunun teklifi üzerine Genel Kurulca işaret oyuyla belirlenir. Komisyonlar için bir yasama döneminde iki seçim yapılır.",
+      "articleRefs": [
+        "20"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Başkanlık Divanı üyeleri Meclis komisyonlarında görev alabilir mi?",
+      "back": "Hayır; Türkiye Büyük Millet Meclisi Başkanlık Divanı üyeleri Meclis komisyonlarında görev alamaz.",
+      "explanation": "Komisyonlarda siyasi parti gruplarına düşen üye sayısını Başkan tespit eder; bir grup herhangi bir komisyonda kendisine düşen üyelikten vazgeçebilir. Aday listeleri Genel Kurulca işaret oyuyla onaylanınca seçim tamamlanır.",
+      "articleRefs": [
+        "21"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Komisyonun başkan, başkanvekili, sözcü ve kâtiplerini seçeceği toplantıda toplantı yeter sayısı nedir?",
+      "back": "Komisyon üye tamsayısının salt çoğunluğu.",
+      "explanation": "Seçim gizli oyla yapılır; seçilmek için toplantıda hazır bulunanların salt çoğunluğunun oyu gerekir. Üye seçimi tamamlanınca komisyonlar Meclis Başkanı tarafından toplantıya çağrılır.",
+      "articleRefs": [
+        "24"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Komisyonların toplantı yeter sayısı üye tamsayısının salt çoğunluğu mudur?",
+      "back": "Hayır. Komisyonlar üye tamsayısının üçte biriyle toplanır; salt çoğunluk, hazır bulunan üyeler üzerinden aranan karar yeter sayısıdır.",
+      "explanation": "Komisyonlar başkanlarının yönetiminde çalışır; başkan yoksa başkanvekili, o da yoksa sözcü komisyona başkanlık eder.",
+      "articleRefs": [
+        "27"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "İzinsiz ya da özürsüz olarak üst üste kaç komisyon toplantısına katılmayan üye, grubunca komisyondan geri çekilebilir?",
+      "back": "Üç toplantıya. Bir yıl içindeki toplantıların üçte birine katılmayan üye de mensubu olduğu siyasi parti grubunca geri çekilebilir.",
+      "explanation": "Komisyon üyeleri toplantılara devama mecburdur; devam cetvelleri Meclis Başkanlığına ve siyasi parti grubu başkanlıklarına sunulur. Boşalan üyelik en kısa zamanda tamamlanır.",
+      "articleRefs": [
+        "28"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Komisyon üyesi olmayan bir milletvekili, komisyonda değişiklik önergesi verebilir mi?",
+      "back": "Hayır. Milletvekilleri komisyonlarda söz alabilir, ama komisyon üyeleri dışında kimse değişiklik önergesi veremez ve oy kullanamaz.",
+      "explanation": "Komisyon toplantıları Meclis üyelerine, Cumhurbaşkanı yardımcılarına, bakanlara, bakan yardımcılarına ve üst kademe kamu yöneticilerine açıktır. Her milletvekili üyesi olmadığı bir komisyonun belgelerini görüp okuyabilir.",
+      "articleRefs": [
+        "31"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Cumhurbaşkanınca yayımlanması kısmen uygun bulunmayıp Meclise geri gönderilen kanunda komisyonlar neyi görüşebilir?",
+      "back": "Yalnız uygun bulunmayan maddeleri; görüşme de sadece bu maddelerle ilgili açılır.",
+      "explanation": "Komisyonlar kanun teklif edemez, kendilerine havale edilenler dışındaki işlerle uğraşamaz ve kanun tekliflerini bölerek ayrı metinler halinde Genel Kurula sunamaz.",
+      "articleRefs": [
+        "35"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Kanun teklifleri esas komisyonlarda en geç ne kadar sürede sonuçlandırılmalıdır?",
+      "back": "Esas komisyona havale gününden itibaren en geç kırkbeş gün içinde.",
+      "explanation": "Sürenin bitiminde teklif sahipleri teklifin doğrudan Genel Kurul gündemine alınmasını isteyebilir; Genel Kurul işaret oyuyla karar verir. Bir milletvekili bir yasama yılında bu kapsamda bir defadan fazla istemde bulunamaz.",
+      "articleRefs": [
+        "37"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Bir komisyonda söz kesilir ya da düzeni bozan hareketler olursa düzeni kim sağlar?",
+      "back": "Komisyon başkanı; gerekiyorsa toplantıya ara verir veya erteleyerek durumu Türkiye Büyük Millet Meclisi Başkanına bildirir.",
+      "articleRefs": [
+        "46"
+      ]
+    }
+  ]
+}

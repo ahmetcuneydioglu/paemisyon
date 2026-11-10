@@ -1,0 +1,295 @@
+{
+  "deck": {
+    "topicId": "92736577-adb7-4e81-8935-9eb3391f748e",
+    "legislationSlug": "5253-sayili-dernekler-kanunu",
+    "sourceLabel": "AI bilgi kartı — 5253 Sayılı Dernekler Kanunu md 26/B, 27, 27/A, 28–30, 30/A, 31–40, Ek 1, Ek 2",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: resmî madde metni + çıkmış sorular)"
+  },
+  "cards": [
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Dernek lokali denetimi, önceden bildirim yapılarak ve mesai saatleri içinde mi yapılmalıdır?",
+      "back": "Hayır. Lokal denetiminde önceden bildirimde bulunma ve mesai saatleri içinde yapılma şartı aranmaz.",
+      "explanation": "Denetimi mülki idare amiri kamu görevlilerine veya kolluk kuvvetlerine yaptırır. Denetim habersiz ve mesai saatleri dışında da yapılabilir.",
+      "articleRefs": [
+        "26/B"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Denetimde kumar oynandığı tespit edilen dernek lokali en fazla ne kadar süreyle faaliyetten men edilir?",
+      "back": "Otuz günü geçmemek üzere geçici süreyle; men kararını mülki idare amiri verir.",
+      "explanation": "Aynı yaptırım şu tespitlerde de uygulanır: Kanuna aykırı faaliyet, alkollü içki sunumuna ilişkin izinler alınmadan alkollü içki kullandırılması, Hayvanları Koruma Kanunu kapsamında hayvanlara kötü muamele ya da fiziki veya psikolojik acı çektirilmesi. Tespiti denetimde yetkilendirilmiş kişiler yapar.",
+      "articleRefs": [
+        "26/B"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Dernek lokalinde uyuşturucu madde ticareti yapıldığı denetimde tespit edilirse mülki idare amiri ne yapar?",
+      "back": "Lokal açma ve işletme belgesini iptal eder.",
+      "explanation": "Aynı sonuç başka tespitlerde de doğar: lokalde kumar oynanması için yer ve imkân sağlanması, uyuşturucu veya uyarıcı madde imali, kullanımı ya da kullanımının kolaylaştırılması, Ateşli Silahlar ve Bıçaklar ile Diğer Aletler Hakkında Kanuna aykırı silah bulundurulması veya satılması. Kumar ya da izinsiz alkollü içki kullandırılması gibi fiiller nedeniyle bir yıl içinde üç defa faaliyetten men edilen lokalde bu fiiller tekrar işlenirse belge yine iptal edilir.",
+      "articleRefs": [
+        "26/B"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Bir derneğin kamu yararına çalışan dernek sayılabilmesi için en az iki yıldan beri faaliyette bulunması mı gerekir?",
+      "back": "Hayır. En az bir yıldan beri faaliyette bulunması yeter. Ayrıca amacı ve faaliyetleri topluma yararlı sonuçlar verecek nitelikte ve ölçüde olmalıdır.",
+      "explanation": "Kamu yararına çalışan dernekler Cumhurbaşkanı kararıyla tespit edilir. Statünün kazanılması, kaybedilmesi ve gerekli belgelere ilişkin esas ve usuller yönetmelikte düzenlenir. Bu dernekler en az iki yılda bir denetlenir.",
+      "articleRefs": [
+        "27"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Kamu yararına çalışan dernekler en az kaç yılda bir denetlenir?",
+      "back": "En az iki yılda bir.",
+      "explanation": "Denetim sonunda kamu yararına çalışma niteliğini kaybettiği tespit edilen derneğin bu statüdeki yeri sona erer. Kamu yararına çalışan dernek sayılma kararı, statünün verildiği usulle, yani Cumhurbaşkanı kararıyla kaldırılır.",
+      "articleRefs": [
+        "27"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Kamu yararına çalışan derneğin görevden uzaklaştırılan organları yerine sulh hukuk mahkemesi ne kadar süre içinde kayyım atar?",
+      "back": "Bir hafta içinde. Mahkeme, öncelikle dernek üyeleri arasından ve görevden uzaklaştırılanların sayısı kadar kayyım atar.",
+      "explanation": "Denetim raporlarıyla hapis cezası gerektiren suçların işlendiği tespit edilirse İçişleri Bakanı, geçici tedbir olarak görevden uzaklaştırma kararı verebilir. Dernek merkezinin bulunduğu ilin valisi, bu karar derneğe bildirildiği anda dernek merkezinin bulunduğu yerdeki sulh hukuk mahkemesinden kayyım atanmasını ister. Kayyımın ücretini dernek öder. Kayyımın görevi, dava sonucu verilen hüküm kesinleşinceye kadar sürer.",
+      "articleRefs": [
+        "27"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Türkiye Kızılay Derneğinin şubelerinde denetim kurulu oluşturulması şart mıdır?",
+      "back": "Hayır. Şubelerde genel kurul ve yönetim kurulu oluşturulması şarttır; denetim kurulu merkez için aranır.",
+      "explanation": "Kızılay, uluslararası anlaşmalara göre tayin edilen nitelik ve duruma göre, tüzüğünde belirlenen şekilde teşkilatlanır. Merkezinde genel kurul, yönetim kurulu ve denetim kurulu bulunur. İş ve işlemleri kanunlara, tüzüğüne ve yönetim kurulunca çıkarılan yönetmeliklere göre yürütülür.",
+      "articleRefs": [
+        "27/A"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Türkiye Kızılay Derneğinin tüzüğünü onaylamaya kim yetkilidir?",
+      "back": "Cumhurbaşkanı. Türk Hava Kurumunun tüzüğünü onaylama yetkisi de ondadır.",
+      "articleRefs": [
+        "27/A",
+        "27"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Dernek adında 'Şehit' kelimesi hangi izinle kullanılabilir?",
+      "back": "İçişleri Bakanlığının izniyle.",
+      "explanation": "İzne bağlı kelimeler şunlardır: Türk, Türkiye, Milli, Cumhuriyet, Atatürk, Mustafa Kemal, Şehit, Gazi ve bu kelimelerin baş ve sonlarına getirilen eklerle oluşturulan kelimeler.",
+      "articleRefs": [
+        "28"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "İzin almadan dernek adında 'Atatürk' kelimesini kullanan dernek yöneticisine hangi ceza verilir?",
+      "back": "Yüz günden az olmamak üzere adlî para cezası verilir; derneğin feshine de karar verilir.",
+      "explanation": "Bu ceza, fiil daha ağır bir cezayı gerektirmediği takdirde uygulanır.",
+      "articleRefs": [
+        "28",
+        "32"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Bir dernek, mahkeme kararıyla kapatılmış bir siyasî partinin amblemini kullanabilir mi?",
+      "back": "Hayır. Mevcut ya da mahkeme kararıyla kapatılmış veya feshedilmiş siyasî partinin adını, amblemini, rumuzunu, rozetini ve benzeri işaretlerini kullanmak yasaktır.",
+      "explanation": "Yasak; sendika, dernek ve bunların üst kuruluşlarının adı, amblemi, rumuzu, rozeti ve benzeri işaretleri için de geçerlidir.",
+      "articleRefs": [
+        "29"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Dernekler hangi devletlere ait bayrak, amblem ve flamaları kullanamaz?",
+      "back": "Başka bir ülkeye ve daha önce kurulmuş Türk devletlerine ait olanları.",
+      "articleRefs": [
+        "29"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Başka bir derneğin adını ve amblemini kullanan dernek yöneticisinin cezalandırılması için hangi ön şart aranır?",
+      "back": "Yazılı olarak uyarılmasına rağmen aykırı hareket etmesi. Bu durumda yüz günden az olmamak üzere adlî para cezası verilir ve derneğin feshine de karar verilir.",
+      "explanation": "Ceza, fiil daha ağır bir cezayı gerektirmediği takdirde uygulanır.",
+      "articleRefs": [
+        "29",
+        "32"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Dernekler hangi hizmetlere hazırlayıcı öğretim ve eğitim faaliyetinde bulunamaz?",
+      "back": "Askerliğe, millî savunma ve genel kolluk hizmetlerine. Bu amaçlarla kamp veya eğitim yeri de açamazlar.",
+      "explanation": "Aynı bende göre dernekler üyeleri için özel kıyafet veya üniforma da kullanamaz.",
+      "articleRefs": [
+        "30"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Askerliğe hazırlayıcı eğitim faaliyetinde bulunan dernek yöneticisine hangi hapis cezası verilir?",
+      "back": "Bir yıldan üç yıla kadar hapis cezası verilir; tesisin kapatılmasına da karar verilir.",
+      "explanation": "Ceza, fiil daha ağır bir cezayı gerektirmediği takdirde uygulanır. Anayasa ve kanunlarla açıkça yasaklanan amaçlarla kurulan dernekleri kuranlara da bir yıldan üç yıla kadar hapis ve elli günden az olmamak üzere adlî para cezası verilir; bu durumda derneğin feshine karar verilir.",
+      "articleRefs": [
+        "30",
+        "32"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Tüzüğündeki amaç ve çalışma konuları dışında faaliyette bulunan dernek yöneticisine hangi ceza verilir?",
+      "back": "Elli günden az olmamak üzere adlî para cezası.",
+      "articleRefs": [
+        "30",
+        "32"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Dernekler Kanunundaki kayıt ve yazışma dili zorunluluğuna uymayanlara hangi ceza verilir?",
+      "back": "Bin Türk Lirası idarî para cezası.",
+      "articleRefs": [
+        "31",
+        "32"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Dernekler defterlerinde, kayıtlarında ve Türkiye Cumhuriyetinin resmî kurumlarıyla yazışmalarında hangi dili kullanır?",
+      "back": "Türkçe.",
+      "articleRefs": [
+        "31"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Derneğin tutması gereken defterleri hiç tutmayan dernek yöneticisine idarî para cezası mı verilir?",
+      "back": "Hayır. Defter veya kayıtları tutmayan ya da tasdiksiz defter tutan yönetici, üç aydan bir yıla kadar hapis veya adlî para cezasıyla cezalandırılır.",
+      "explanation": "Beşyüz Türk Lirası idarî para cezası, defter ve kayıtların usulüne uygun tutulmaması hâlinde verilir. Bu ceza dernek yöneticilerine ve defterleri tutmakla sorumlu kişilere uygulanır.",
+      "articleRefs": [
+        "32"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Yurt dışı yardımı bankalar aracılığıyla almayan dernek yöneticisine hangi oranda idarî para cezası verilir?",
+      "back": "Bu şekilde alınan paranın yüzde yirmi beşi oranında.",
+      "articleRefs": [
+        "32"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Dernek yöneticileri hangi tutarı aşan gelir, tahsilat, gider ve ödemeleri bankalar, diğer finans kuruluşları veya Posta ve Telgraf Teşkilatı Anonim Şirketi aracılığıyla yapmalıdır?",
+      "back": "Yedi bin Türk lirasını aşanları. Aksi hâlde her işlem için, işleme konu tutarın %10'una kadar idarî para cezası verilir.",
+      "explanation": "Bu sınır her takvim yılı başından geçerli olmak üzere artırılır. Artış, Hazine ve Maliye Bakanlığınca tespit ve ilan edilen yeniden değerleme oranında yapılır. Sınırın hesabında bir Türk lirasının küsuru dikkate alınmaz.",
+      "articleRefs": [
+        "32"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Dernekler Kanunundaki cezalar, çocuk derneklerine ilk aykırılıkta doğrudan uygulanır mı?",
+      "back": "Hayır. Çocuk dernekleri hakkında cezalar, yazılı olarak uyarılmasına rağmen aykırılık tekrar edilirse uygulanır.",
+      "articleRefs": [
+        "33"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Genel kurulu süresinde toplantıya çağırmayan 'dernek yöneticisi' için öngörülen idarî para cezası kime uygulanır?",
+      "back": "Dernek yönetim kurulu başkanına; beşyüz Türk Lirası idarî para cezası verilir.",
+      "explanation": "Ceza hükümlerinde geçen 'dernek yöneticileri' ibaresi, dernek yönetim kurulu başkanını ifade eder.",
+      "articleRefs": [
+        "33",
+        "32"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Dernekler Kanununda yazılı idarî yaptırımlara karar vermeye kim yetkilidir?",
+      "back": "Mahalli mülki amir.",
+      "articleRefs": [
+        "33"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Dernekler Kanununda hüküm bulunmayan hâllerde hangi kanunun hükümleri uygulanır?",
+      "back": "Türk Medenî Kanunu hükümleri.",
+      "articleRefs": [
+        "34",
+        "36"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Dernekler Kanunundaki dernek adı, işaret yasağı ve yasak faaliyet hükümleri, ceza hükümleriyle birlikte hangi kuruluşlara da uygulanır?",
+      "back": "Kamu kurumu niteliğindeki meslek kuruluşları ile işçi ve işveren sendikaları ve üst kuruluşlarına; özel kanunlarında hüküm bulunmamak kaydıyla.",
+      "explanation": "Bu kuruluşlara uygulanan maddeler md 19, md 20, md 23, md 26, md 28, md 29, md 30 ve md 31'dir.",
+      "articleRefs": [
+        "35"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Dernekler Kanunu, derneklerin yanında hangi yapılar hakkında da ceza hükümleriyle birlikte uygulanır?",
+      "back": "Derneklerin şubeleri, dernek ve vakıfların üst kuruluşları ile merkezi yurt dışındaki dernek, vakıf ve diğer kâr amacı gütmeyen kuruluşların Türkiye'deki şube veya temsilcilikleri hakkında.",
+      "explanation": "Kanun, yurt dışı merkezli bu kuruluşların Türkiye'de faaliyette veya iş birliğinde bulunma izinleri hakkında da uygulanır.",
+      "articleRefs": [
+        "36"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Derneklere ait kayıtlar, İçişleri Bakanlığınca oluşturulan hangi kütüğe kaydedilir?",
+      "back": "Dernekler kütüğüne. Kayıtları İçişleri Bakanlığı ve mülki idare amirlikleri tutar.",
+      "explanation": "Türk vatandaşlarının yurt dışında kurduğu dernek ve diğer kâr amacı gütmeyen kuruluşların kayıtlarını da İçişleri Bakanlığı, ilgili makamlar aracılığıyla tutar. Derneklerle ilgili her türlü kayıt ile iş ve işlem elektronik ortamda da yapılabilir. Usul ve esaslar İçişleri Bakanlığının çıkardığı yönetmelikle belirlenir.",
+      "articleRefs": [
+        "Ek 2"
+      ]
+    }
+  ]
+}

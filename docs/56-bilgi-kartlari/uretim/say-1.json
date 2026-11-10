@@ -1,0 +1,283 @@
+{
+  "deck": {
+    "topicId": "c8f4a045-6e4c-4fa6-b3a6-557cd0032d20",
+    "legislationSlug": "6085-sayistay-kanunu",
+    "sourceLabel": "AI bilgi kartı — 6085 Sayıştay Kanunu md 1–17",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: resmî madde metni + çıkmış sorular)"
+  },
+  "cards": [
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Kanuna göre Sayıştay denetimi hangi denetimlerden oluşur?",
+      "back": "Düzenlilik denetimi ve performans denetiminden.",
+      "explanation": "Performans denetimi, hesap verme sorumluluğu çerçevesinde idarelerce belirlenen hedef ve göstergelerle ilgili faaliyet sonuçlarının ölçülmesidir.",
+      "articleRefs": [
+        "2"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Kamu idarelerinin gelir, gider ve mallarına ilişkin hesap ve işlemlerinin kanunlara ve diğer hukuki düzenlemelere uygunluğunun incelenmesi hangi denetimdir?",
+      "back": "Uygunluk denetimi. Mali denetimle birlikte düzenlilik denetimini oluşturur.",
+      "explanation": "Mali denetim ise mali rapor ve tabloların güvenilirliği ve doğruluğuna ilişkin denetimdir. Bu denetimde hesap ve işlemler ile mali faaliyet, mali yönetim ve kontrol sistemlerinin değerlendirme sonuçları esas alınır.",
+      "articleRefs": [
+        "2"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Sayıştay inceleme, denetleme ve kesin hükme bağlama işlerini yaparken nasıl bir bağımsızlığa sahiptir?",
+      "back": "İşlevsel ve kurumsal bağımsızlığa sahip bir kurumdur.",
+      "articleRefs": [
+        "3"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Kamu kurumu niteliğindeki meslek kuruluşları, Sayıştayın denetlediği diğer kamu idareleri arasında yer alır mı?",
+      "back": "Hayır. Kanun diğer kamu idarelerini denetim alanına alırken kamu kurumu niteliğindeki meslek kuruluşlarını açıkça hariç tutar.",
+      "explanation": "Aynı bentte şu idareler denetim alanında sayılır: merkezi yönetim bütçesi kapsamındaki kamu idareleri, sosyal güvenlik kurumları ve mahallî idareler. Sermayesinde doğrudan veya dolaylı kamu payı olan ve özel kanunlar veya Cumhurbaşkanlığı kararnameleriyle kurulmuş anonim ortaklıklar da bu bentte yer alır.",
+      "articleRefs": [
+        "4"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Bağımsız denetime tabi şirketlerde kamu payı hangi oranın altında kalırsa Sayıştay denetimi bağımsız denetim raporları esas alınarak yapılır?",
+      "back": "%50'den az kamu payında. Bu durumda denetim, Sayıştaya gönderilen bağımsız denetim raporlarına dayanır.",
+      "explanation": "Kural, (a) ve (b) bentleri kapsamındaki şirketler ile bunların iştirakleri ve bağlı ortaklıkları için geçerlidir. Kamu payı doğrudan veya dolaylı olabilir. Sayıştay, yalnızca kendisine sunulan bu raporlara dayanarak hazırladığı raporu Türkiye Büyük Millet Meclisine sunar.",
+      "articleRefs": [
+        "4"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Sayıştay, hangi kamu idarelerinin sorumlularının hesap ve işlemlerinden kamu zararına yol açan hususları kesin hükme bağlar?",
+      "back": "Genel yönetim kapsamındaki kamu idarelerinin.",
+      "explanation": "Sayıştay bu idarelerin gelir, gider ve mallarına ilişkin hesap ve işlemlerinin kanunlara ve diğer hukuki düzenlemelere uygun olup olmadığını da denetler.",
+      "articleRefs": [
+        "5"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Sayıştay, görevi sırasında kamu idarelerinin mallarını dilediği yere getirtebilir mi?",
+      "back": "Hayır. Gerekli gördüğü belge, defter ve kayıtları dilediği yere getirtebilir; mallar bu yetkinin dışındadır.",
+      "explanation": "Mallar yerinde incelenir. Sayıştay, denetimine giren kamu idarelerinin eşya ve mallarını görevlendireceği mensupları veya bilirkişiler eliyle inceleyebilir. Bu inceleme yerinde ve işlem ve olayın her safhasında yapılabilir.",
+      "articleRefs": [
+        "6"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Sayıştay, denetimine giren işlemlerle ilgili bilgi ve belgeyi kimlerden isteyebilir?",
+      "back": "Kamu idareleri ile bankalar dahil diğer gerçek ve tüzel kişilerden; her türlü bilgi ve belgeyi isteyebilir.",
+      "explanation": "Sayıştay ayrıca kamu idareleri ve görevlileriyle doğrudan yazışabilir. Sözlü bilgi almak için her derece ve sınıftan ilgili memurları çağırabilir, kamu idarelerinden temsilci de isteyebilir.",
+      "articleRefs": [
+        "6"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Sayıştayın yaptığı performans denetimleri mali ve hukuki sorumluluk doğurur mu?",
+      "back": "Hayır. Kanun, Sayıştayın gerçekleştirdiği performans denetimlerinin mali ve hukuki sorumluluk doğurmadığını açıkça belirtir.",
+      "explanation": "Kamu zararına sebep olunan durumlar ise zararın tazminine ilişkin hükme bağlama işlemiyle sonuçlandırılır. Sorumlular, ilamda yer alan kamu zararından tek başlarına veya birlikte tazminle yükümlüdür.",
+      "articleRefs": [
+        "7"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Bakanlar, kamu kaynaklarının etkili, ekonomik ve verimli kullanılmasından kime karşı sorumludur?",
+      "back": "Cumhurbaşkanına. Hukuki ve mali konulardaki sorumlulukları da Cumhurbaşkanına karşıdır.",
+      "articleRefs": [
+        "7"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Usulüne uygun görevlendirilmeden mali işlem yürütenlerin işlemi yöneticinin yazılı emri üzerine yapılmışsa sorumluluğa kim ortak olur?",
+      "back": "Yöneticiler. İşlemler bir hesaba dahil edilmemişse sorumluluk bu kişilere uygulanır; yazılı emir varsa yöneticiler de sorumluluğa ortak olur.",
+      "explanation": "Kapsama, kendiliğinden veya emir üzerine gelir tahakkuk ettiren, toplayan, harcayan ve bu işlemleri onaylayanlar girer. Malları muhafaza eden ve idare edenler de bu kapsamdadır.",
+      "articleRefs": [
+        "7"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Muhasebe birimleri ve muhasebe yetkililerinde yıl içinde yapılan değişiklik Sayıştaya en geç ne zaman bildirilir?",
+      "back": "Değişiklik tarihinden itibaren en geç bir ay içinde.",
+      "explanation": "Sayıştay denetimine tabi kamu idareleri, her hesap yılı başında muhasebe birimlerini ve muhasebe yetkililerinin ad ve soyadlarını Sayıştaya bildirmekle yükümlüdür.",
+      "articleRefs": [
+        "8"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Hesabı zamanında ve tam vermeyen ya da denetleme ve yargılamayı güçleştiren görevlinin aylığına ne uygulanır?",
+      "back": "Aylığı yarım olarak ödenir. Sayıştayın istemi üzerine ilgili kamu idaresi bunu uygular; hesap veya istenen belgeler eksiksiz verilinceye kadar sürer.",
+      "explanation": "Aynı hükümler, Sayıştay ilamlarının infazını izlemeyen ve gereklerini yerine getirmeyenler hakkında da uygulanır.",
+      "articleRefs": [
+        "9"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Yarım aylık kesilmeye başlanan her görevliye, görevden uzaklaştırılmadan önce en çok üç ay süre mi tanınır?",
+      "back": "Hayır. En çok üç ay süre yalnız muhasebe yetkilileri içindir; diğer görevliler için süreyi Sayıştay belli eder.",
+      "explanation": "Süre, yarım aylık kesilmeye başlandığı tarihten itibaren işler. Bu sürede hesap ya da istenen bilgi, belge ve defterler verilmez veya güçleştiren sebepler kaldırılmazsa ilgililer görevden uzaklaştırılır. Uzaklaştırmayı ilgili kamu idareleri mevzuattaki usule göre yapar; haklarında gerekli soruşturma veya kovuşturma da yürütülür.",
+      "articleRefs": [
+        "9"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Sayıştayın meslek mensupları kimlerdir?",
+      "back": "Sayıştay Başkanı, daire başkanları ve üyeler ile Sayıştay denetçileri.",
+      "explanation": "Sayıştay mensupları bunlara ek olarak başsavcı ve savcılar ile yönetim mensuplarından oluşur. Bu iki grup ayrı bentlerde yer alır.",
+      "articleRefs": [
+        "10"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Sayıştay Başkanı ve üyeleri, fakülte veya yüksekokul mezuniyetinden sonra kamu idarelerinde en az ne kadar çalışmış olmalıdır?",
+      "back": "En az onaltı yıl. Mezun olunan fakülte veya yüksekokulun da en az dört yıllık olması gerekir.",
+      "explanation": "Mezuniyet hukuk, siyasal bilgiler, iktisat, işletme, iktisadi ve idari bilimler fakültelerinden biri olmalıdır. Öğrenim itibarıyla bunlara denkliği Yükseköğretim Kurulunca onanmış yurt içi veya yurt dışı fakülte ve yüksekokullar da kabul edilir.",
+      "articleRefs": [
+        "12"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Sayıştay Başkanının görev süresi ne kadardır?",
+      "back": "Beş yıl. Bir kimse en fazla iki defa Sayıştay Başkanı seçilebilir.",
+      "explanation": "Başkanın görevi yeni Başkan göreve başlayıncaya kadar sürer. Görevi sona eren Başkan, boş kadro şartı aranmaksızın Sayıştay üyesi olarak devam eder ve en kıdemli üye sayılır.",
+      "articleRefs": [
+        "13"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Türkiye Büyük Millet Meclisi Genel Kurulunda Sayıştay Başkanı seçilebilmek için hangi oy çoğunluğu aranır?",
+      "back": "Toplantıya katılanların salt çoğunluğu. Bu sayı, üye tamsayısının dörtte birinin bir fazlasından az olamaz.",
+      "explanation": "Başkan, kanundaki nitelikleri taşıyan isteklilerden belirlenen iki aday arasından Genel Kurulca gizli oyla seçilir.",
+      "articleRefs": [
+        "13"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Sayıştay Başkanlığı makamı herhangi bir sebeple boşalırsa seçime boşalmadan otuz gün sonra mı başlanır?",
+      "back": "Hayır. Boşalmadan on gün sonra başlanır. Otuz gün, görev süresi dolarken seçime ne kadar önce başlanacağını ve seçimin sonuçlandırılma süresini gösterir.",
+      "explanation": "Bu sürelerin hesabında Meclisin ara verme veya tatilde bulunduğu günler dikkate alınmaz.",
+      "articleRefs": [
+        "13"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Sayıştay daire başkanlarının görev süresi ne kadardır?",
+      "back": "Dört yıl. Süresi dolan veya kendi isteğiyle üyeliğe dönmüş olanlar yeniden seçilebilir.",
+      "explanation": "Daire başkanlarını Sayıştay Genel Kurulu seçer. Adaylar en az üç yılını doldurmuş üyeler arasından olur; seçim gizli oy ve üye tamsayısının salt çoğunluğuyla yapılır. Görevi sona erenler, boş üye kadrosu şartı aranmaksızın üyeliğe döner.",
+      "articleRefs": [
+        "14"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Sayıştay daire başkanı seçiminde ilk üç oylamada salt çoğunluk sağlanamazsa ne yapılır?",
+      "back": "Üçüncü oylamada en çok oy alan iki aday için dördüncü oylama yapılır. Bu oylamada en fazla oy alan üye daire başkanı seçilir.",
+      "explanation": "Seçim, görev süresinin bittiği ya da boşalmanın olduğu tarihten itibaren onbeş gün içinde yapılır. Çalışmaya ara verme müddeti bu sürenin hesabına katılmaz.",
+      "articleRefs": [
+        "14"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Sayıştay üyelerinin ne kadarı Sayıştay meslek mensupları arasından seçilir?",
+      "back": "Beşte üçü. Kalanların en az yarısı Hazine ve Maliye Bakanlığı (metinde: Maliye Bakanlığı) meslek mensuplarından olmak üzere, 12 nci maddedeki nitelikleri taşıyan diğer adaylar arasından seçilir.",
+      "explanation": "Boşalma olduğunda, daire başkanlığı kadroları da dahil olmak üzere boşalan kontenjan için seçim yapılır. Boşalan üyelik sayısı beşi bulunca Sayıştay Başkanlığı yedi gün içinde başlamak üzere duyuru yapar. Başvuru süresi ilk duyurudan itibaren otuz gündür.",
+      "articleRefs": [
+        "15"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Sayıştay Başkanı ve Üyeleri Ön Seçim Geçici Komisyonu kaç kişiden oluşur?",
+      "back": "Onbeş kişiden. Üyeler Plan ve Bütçe Komisyonu üyeleri arasından, temsil güçleri oranında ve ad çekme usulüyle belirlenir.",
+      "explanation": "Komisyon salt çoğunlukla toplanır ve gerekli gördüğü hallerde adaylarla mülakat yapabilir. Aday seçimleri gizli oyla yapılır.",
+      "articleRefs": [
+        "16"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Sayıştay Başkanı ve Üyeleri Ön Seçim Geçici Komisyonuna kim başkanlık eder?",
+      "back": "Plan ve Bütçe Komisyonu Başkanı. Komisyona kendi siyasi parti grubunun kontenjanından katılır.",
+      "articleRefs": [
+        "16"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Sayıştay denetçi yardımcılığı giriş sınavına girebilmek için yaş sınırı nedir?",
+      "back": "Sınav yılının ocak ayının ilk günü itibarıyla 31 yaşını bitirmemiş olmak gerekir. Yüksek lisans veya doktora derecesi olanlar için sınır 35 yaştır.",
+      "explanation": "Ayrıca 657 sayılı Devlet Memurları Kanununun 48 inci maddesindeki genel nitelikleri taşımak şarttır. Giriş sınavını kazananlar Sayıştay Başkanı tarafından aday olarak atanır.",
+      "articleRefs": [
+        "17"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Denetçi yardımcılığı yazılı sınavından sonra mülakata, ilan edilen kadronun beş katına kadar aday mı çağrılır?",
+      "back": "Hayır. Mülakata, yetmiş puandan az olmamak üzere kadronun üç katına kadar aday çağrılır. Beş katı, eleme sınavından yazılı sınava çağrılacak aday sınırıdır.",
+      "explanation": "Her iki aşamada da çağrı en yüksek puandan başlanarak yapılır. Eleme ve yazılı sınavları, Sayıştay Başkanlığıyla imzalanacak protokole göre Öğrenci Seçme ve Yerleştirme Merkezi yapar.",
+      "articleRefs": [
+        "17"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Denetçi yardımcılığı mülakatında başarılı sayılmak için puan ortalaması en az kaç olmalıdır?",
+      "back": "En az yetmiş. Komisyon başkan ve üyelerinin yüz tam puan üzerinden verdiği puanların aritmetik ortalaması esas alınır.",
+      "explanation": "Mülakat komisyonu altı kişiden oluşur: Sayıştay Başkanının veya görevlendireceği bir daire başkanının başkanlığında iki üye ve üç uzman denetçi. Her özellik için yirmişer puan üzerinden değerlendirme yapılır ve puanlar ayrı ayrı tutanağa geçirilir.",
+      "articleRefs": [
+        "17"
+      ]
+    }
+  ]
+}

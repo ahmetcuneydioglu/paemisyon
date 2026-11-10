@@ -1,0 +1,286 @@
+{
+  "deck": {
+    "topicId": "8b68257c-bd1e-4a44-bb49-830ee4d8e4c9",
+    "legislationSlug": "657-sayili-devlet-memurlari-kanunu",
+    "sourceLabel": "AI bilgi kartı — 657 Sayılı Devlet Memurları Kanunu md 39–41, 43, 45–56, 58, 59",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: resmî madde metni + çıkmış sorular)"
+  },
+  "cards": [
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "657 sayılı Devlet Memurları Kanununa tabi kurumlarda memurluk kadroları neyin dışında ihdas edilemez?",
+      "back": "Sınıfların dışında. Bu Kanuna tabi kurumlarda sınıflar dışında memurluk kadrosu ihdas edilemez.",
+      "articleRefs": [
+        "39"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Devlet Memurları Kanununa göre genel olarak kaç yaşını tamamlayanlar Devlet memuru olabilir?",
+      "back": "18 yaşını tamamlayanlar. Bu, memurluk için genel yaş kuralıdır.",
+      "explanation": "Meslek veya sanat okulu mezunları için kazai rüşt kararına bağlı ayrı bir alt yaş sınırı vardır.",
+      "articleRefs": [
+        "40"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Meslek veya sanat okulunu bitirenler en az kaç yaşını doldurmuş olarak Devlet memurluğuna atanabilir?",
+      "back": "15 yaşını doldurmuş olarak. Ayrıca Türk Medeni Kanununun 12 nci maddesine göre kazai rüşt kararı almış olmaları şarttır.",
+      "explanation": "Genel kural 18 yaşını tamamlamaktır. Meslek veya sanat okulu mezunu için iki şart birlikte aranır: en az 15 yaşını doldurmuş olmak ve kazai rüşt kararı almak.",
+      "articleRefs": [
+        "40"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Devlet Memurları Kanununa göre genel olarak hangi okulu bitirenler memur olabilir?",
+      "back": "Ortaokulu bitirenler. Kanun öğrenimde genel kural olarak ortaokulu esas alır.",
+      "explanation": "Belli görevlere atanmak ya da belli derecelere yükselmek için kuruluş kanunları, bu Kanun, Cumhurbaşkanlığı kararnameleri ve yönetmeliklerle ek şartlar konulabilir. Daha yüksek öğrenim derecesi, belirli fakülte veya okulu bitirmek ve yabancı dil bilmek bu şartlar arasındadır.",
+      "articleRefs": [
+        "41"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Ortaokul mezunlarından istekli bulunmazsa memurluğa kimlerin alınması caizdir?",
+      "back": "İlkokulu bitirenlerin. Bu yol, ortaokul mezunlarından istekli bulunmadığı takdirde açılır.",
+      "articleRefs": [
+        "41"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Ek göstergeler terfi bakımından kazanılmış hak sayılır mı?",
+      "back": "Hayır. Ek göstergeler, ilgililer belirtilen sınıf ve görevlerde bulundukları sürece ödemelere esas alınır; terfi bakımından kazanılmış hak sayılmaz.",
+      "explanation": "Ek gösterge rakamları hizmet sınıfı, görev türü ve aylık alınan derece dikkate alınarak belirlenir. Bu rakamlar Kanuna ekli cetvellerden alınıp aylığa eklenir.",
+      "articleRefs": [
+        "43"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Ek göstergesi, önceki kariyerine göre alabileceği ek göstergeden düşük olamayacak olanlar hangi dereceli kadrolara atananlardır?",
+      "back": "1, 2, 3 ve 4 üncü dereceli kadrolara atananlar. Önceki kariyerleriyle ilgili sınıftaki ya da Genel İdare Hizmetleri Sınıfı (g) bölümündeki kazanılmış hak aylık derecelerine göre alabileceklerinden düşük ek gösterge alamazlar.",
+      "articleRefs": [
+        "43"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Bir memur, sınıfının içindeki derecesinin altında bir derecenin görevinde çalıştırılabilir mi?",
+      "back": "Hayır. Hiçbir memur sınıfının dışında ve sınıfının içindeki derecesinin altında bir derecenin görevinde çalıştırılamaz.",
+      "articleRefs": [
+        "45"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Derece yükselmesi için gerekli nitelikte memur yoksa, aynı sınıftan bir memura kazanılmış hak aylık derecesinin en fazla kaç üst derecesi karşılık gösterilebilir?",
+      "back": "Üç üst derecesi. Bu yol yalnız 5 inci ve daha aşağı derecelerdeki kadrolar için açıktır; öğrenim durumuna göre yükselinebilecek derece de aşılamaz.",
+      "articleRefs": [
+        "45"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Üst dereceli bir kadro karşılık gösterilerek atanan memur hangi aylığı alır?",
+      "back": "Kazanılmış derece ve kademesinin aylığını almaya devam eder. Karşılık gösterilen kadro onun için kazanılmış hak teşkil etmez.",
+      "explanation": "Kazanılmış aylığındaki kademe ilerlemesi ve derece yükselmesi genel esaslara göre yürür.",
+      "articleRefs": [
+        "45"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Kasten işlenen bir suçtan en az ne kadar süreli hapis cezasına mahkûmiyet Devlet memurluğuna alınmaya engeldir?",
+      "back": "Bir yıl. Bir yıl veya daha fazla süreli hapis cezası, Türk Ceza Kanununun 53 üncü maddesindeki süreler geçmiş olsa bile engeldir.",
+      "explanation": "Engel için iki şart birlikte aranır: suç kasten işlenmiş olmalı ve hapis cezası bir yıl veya daha fazla olmalıdır.",
+      "articleRefs": [
+        "48"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Rüşvet suçundan mahkûm olup cezası affa uğrayan kişi Devlet memurluğuna alınabilir mi?",
+      "back": "Hayır. Rüşvet, affa uğramış olsa bile memurluğa alınmaya engel olan suçlar arasındadır.",
+      "explanation": "Aynı kayıt sayılan diğer suçlar için de geçerlidir. Zimmet, irtikâp, hırsızlık, dolandırıcılık, sahtecilik, güveni kötüye kullanma, ihaleye fesat karıştırma ve kaçakçılık bunlar arasındadır.",
+      "articleRefs": [
+        "48"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Askerlik çağına gelmiş bir aday, askerlik durumu bakımından hangi hâlde Devlet memurluğuna alınabilir?",
+      "back": "Muvazzaf askerlik hizmetini yapmışsa, askerliği ertelenmişse ya da yedek sınıfa geçirilmişse.",
+      "explanation": "Askerlikle ilgisi bulunmayanlar ve askerlik çağına gelmemiş olanlar da askerlik durumu şartını taşır.",
+      "articleRefs": [
+        "48"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Devlet memuru olarak atanacak kişi için sınav bakımından aranan şart nedir?",
+      "back": "Açılacak Devlet memurluğu sınavlarına girmek ve sınavı kazanmak. Kanun bunu şart olarak arar.",
+      "articleRefs": [
+        "50"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "İlan edilen Devlet memurluğu sınav sonuçları ne zamana kadar geçerlidir?",
+      "back": "Müteakip sınav tarihine kadar.",
+      "explanation": "Başarılı olanların isimleri, ilgili kurumda kurulan sınav komisyonlarının sorumluluğunda başarı sırasına göre ilan edilir. Ayrıca yazıyla ilgililere bildirilir.",
+      "articleRefs": [
+        "51"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Müteakip sınav dönemine kadar kurumların acil memur ihtiyacı kimlerden karşılanabilir?",
+      "back": "Sınavı kazandığı hâlde yeterli kadro olmaması nedeniyle ataması yapılamayanlardan. Bu atamalar yayınlanan başarı sırasına göre yapılır.",
+      "explanation": "Kural olarak kurumların memur ihtiyacı, yayınlanan sınav sonuçlarındaki başarı sırasına göre ilgili kurumlarca atama yapılarak karşılanır.",
+      "articleRefs": [
+        "52"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Kurumlar, Devlet Memurları Kanununa göre çalıştırdıkları personelin kadrolarında hangi oranda engelli çalıştırmak zorundadır?",
+      "back": "%3 oranında. Bu, kurum ve kuruluşlar için bir zorunluluktur.",
+      "explanation": "Oran, ilgili kurum veya kuruluşun toplam dolu kadro sayısı üzerinden hesaplanır.",
+      "articleRefs": [
+        "53"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Engelli çalıştırma oranı hesaplanırken kurumun yurtdışı teşkilatındaki dolu kadrolar da sayılır mı?",
+      "back": "Hayır. %3'ün hesabında kurumun yurtdışı teşkilatı hariç toplam dolu kadro sayısı dikkate alınır.",
+      "explanation": "Engelliler için sınavlar, ilk defa Devlet memuru olarak atanacaklar için açılan sınavlardan ayrı zamanlı olarak merkezi biçimde yapılır.",
+      "articleRefs": [
+        "53"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Aday olarak atanan Devlet memurunun adaylık süresi hangi sınırlar içinde kalır?",
+      "back": "Bir yıldan az, iki yıldan çok olamaz.",
+      "articleRefs": [
+        "54"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Aday memurun adaylık süresi içinde başka bir kuruma nakli yapılabilir mi?",
+      "back": "Hayır. Adaylık süresi içinde aday memurun başka kurumlara nakli yapılamaz.",
+      "explanation": "Nakil yasağı adaylık süresi boyunca sürer. Bu süre bir yıldan az, iki yıldan çok olamaz.",
+      "articleRefs": [
+        "54"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Aday memur hangi sırayla eğitime tabi tutulur?",
+      "back": "Önce bütün memurların ortak vasıflarıyla ilgili temel eğitime, sonra sınıfıyla ilgili hazırlayıcı eğitime ve staja tabi tutulur.",
+      "explanation": "Devlet memuru olarak atanabilmek için bu aşamalarda başarılı olmak şarttır. Temel eğitim ile hazırlayıcı eğitim aynı kurumda yapılır.",
+      "articleRefs": [
+        "55"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Adaylık süresinde başarısızlık ya da disiplin cezası nedeniyle ilişiği kesilen kişi kaç yıl Devlet memurluğuna alınmaz?",
+      "back": "Üç yıl. Sağlık nedenleriyle ilişiği kesilenler bu kuralın dışındadır.",
+      "explanation": "İlişiği kesilenler, ilgili kurumlarca derhal Kamu Personel Bilgi Sisteminin bulunduğu kuruma bildirilir.",
+      "articleRefs": [
+        "56"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Adaylık süresinde tek başına alınması ilişik kesilmesine yol açan disiplin cezaları hangileridir?",
+      "back": "Aylıktan kesme ya da kademe ilerlemesinin durdurulması cezası.",
+      "explanation": "İlişik, disiplin amirlerinin teklifi ve atamaya yetkili amirin onayıyla kesilir. Temel ve hazırlayıcı eğitim ile staj devrelerinin herhangi birinde başarısız olmak da ilişik kesme nedenidir.",
+      "articleRefs": [
+        "56"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Adaylık süresinde bir kez kınama cezası alan adayın ilişiği kesilir mi?",
+      "back": "Hayır. Uyarma ve/veya kınama cezalarında ilişik kesilmesi için birden fazla ceza almış olmak gerekir.",
+      "explanation": "Aylıktan kesme ya da kademe ilerlemesinin durdurulması cezası ise tek başına ilişik kesme nedenidir.",
+      "articleRefs": [
+        "56"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Adaylık devresinde eğitimde başarılı olan aday hangi usulle asli memurluğa atanır?",
+      "back": "Disiplin amirlerinin teklifi ve atamaya yetkili amirin onayıyla atanır. Atama onay tarihinden geçerli olur.",
+      "articleRefs": [
+        "58"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Asli memurluğa geçme tarihi en geç hangi tarih olabilir?",
+      "back": "Adaylık süresinin sonu. Asli memurluğa geçme tarihi adaylık süresinin sonunu geçemez.",
+      "articleRefs": [
+        "58"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Atanma, sınav, kademe ilerlemesi ve dereceye yükselme hükümlerine bağlı olmaksızın, tahsis edilmiş derece aylığıyla memur atanabilecek görevler arasında hangileri vardır?",
+      "back": "Valilikler, Özel Kalem Müdürlükleri, Bakan Yardımcılıkları, Büyükelçilikler ve Milli İstihbarat Teşkilatı memurlukları bunlar arasındadır.",
+      "explanation": "Sayılanlar arasında şunlar da vardır: Türkiye Büyük Millet Meclisinin memurlukları, Din İşleri Yüksek Kurulu Üyelikleri, Daimi Temsilcilikler, Dışişleri Bakanlığı Stratejik Araştırmalar Merkezi Başkanlığı ve Milli Güvenlik Kurulu Genel Sekreterliği Müşavirlikleri.",
+      "articleRefs": [
+        "59"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Valilik gibi tahsis edilmiş derece aylığıyla atanılan bir kadro, diğer memurluklara naklen atanmada kazanılmış hak sayılır mı?",
+      "back": "Hayır. Bu kadrolar emeklilik aylığının hesabında ve diğer memurluklara naklen atanmada hiçbir sınıf için kazanılmış hak sayılmaz. Emeklilik kıdemi ise yürümeye devam eder.",
+      "articleRefs": [
+        "59"
+      ],
+      "counterNumbers": []
+    }
+  ]
+}

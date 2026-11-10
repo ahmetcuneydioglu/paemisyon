@@ -1,0 +1,256 @@
+{
+  "deck": {
+    "topicId": "8b991a24-eecf-48c9-a068-0aecfc65cfd1",
+    "legislationSlug": "aihs",
+    "sourceLabel": "AI bilgi kartı — Avrupa İnsan Hakları Sözleşmesi md 59, Ek P-1, Ek P-2, Ek P-3, Ek P-4, Ek P-5, Ek P-6, P4-1, P4-2, P4-3, P4-4, P4-5, P4-6, P4-7, P6-1, P6-2, P6-3, P6-4, P6-5, P6-6, P6-7, P6-8, P6-9, P7-1, P7-2, P7-3, P7-4, P7-5, P7-6",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: resmî madde metni + çıkmış sorular)"
+  },
+  "cards": [
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Avrupa İnsan Hakları Sözleşmesi kaç onaylama belgesinin verilmesinden sonra yürürlüğe girer?",
+      "back": "On onaylama belgesinin verilmesinden sonra yürürlüğe girer. Belgeler Avrupa Konseyi Genel Sekreteri'ne verilir.",
+      "explanation": "Sözleşme'yi daha sonra onaylayan imzacılar için Sözleşme, onaylama belgesinin verilmesinden itibaren yürürlüğe girer. Genel Sekreter şu hususları bütün Avrupa Konseyi üyelerine bildirir: yürürlüğe girişi, onaylayan Yüksek Sözleşmeci Tarafların adlarını ve sonradan gelen onaylama belgelerinin verilişini.",
+      "articleRefs": [
+        "59"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Avrupa İnsan Hakları Sözleşmesi'ne Avrupa Konseyi üyeleri dışında hangi yapının katılabileceği açıkça yazılıdır?",
+      "back": "Avrupa Birliği. Sözleşme, Avrupa Birliği'nin Sözleşme'ye katılabileceğini açıkça düzenler.",
+      "explanation": "Sözleşme, Avrupa Konseyi üyelerinin imzalarına açıktır ve imzacılarca onaylanır. Avrupa Birliği için ayrıca katılma imkânı tanınmıştır.",
+      "articleRefs": [
+        "59"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Kamu yararı bulunması, bir kimsenin mal ve mülkünden yoksun bırakılması için tek başına yeterli midir?",
+      "back": "Hayır. Kamu yararının yanında yasada öngörülen koşullara ve uluslararası hukukun genel ilkelerine uygunluk da gerekir.",
+      "explanation": "Mal ve mülk dokunulmazlığına saygı gösterilmesini isteme hakkı her gerçek ve tüzel kişiye tanınır. Devletlerin bazı yasaları uygulama hakkı ise saklıdır. Bu yasalar, mülkiyetin kamu yararına uygun kullanılmasını düzenlemek ya da vergilerin, başka katkıların veya para cezalarının ödenmesini sağlamak için gerekli görülen yasalardır.",
+      "articleRefs": [
+        "Ek P-1"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Devlet, eğitim ve öğretim alanındaki görevlerini yerine getirirken ana ve babanın hangi hakkına saygı gösterir?",
+      "back": "Eğitim ve öğretimin kendi dini ve felsefi inançlarına göre yapılmasını sağlama hakkına saygı gösterir.",
+      "explanation": "Aynı hüküm, hiç kimsenin eğitim hakkından yoksun bırakılamayacağını da güvenceye alır.",
+      "articleRefs": [
+        "Ek P-2"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Sözleşme'ye Ek Protokol uyarınca taraflar, yasama organı seçimlerini hangi oy usulüyle yapmayı taahhüt eder?",
+      "back": "Gizli oyla. Seçimler makul aralıklarla yapılan serbest seçimler olmalıdır.",
+      "explanation": "Seçimler, halkın kanaatlerinin özgürce açıklanmasını sağlayacak şartlar içinde yapılır.",
+      "articleRefs": [
+        "Ek P-3"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "4 No.lu Protokol’e göre borçtan dolayı özgürlüğünden yoksun bırakılma yasağı neyi yasaklar?",
+      "back": "Bir kimsenin yalnızca akdî ilişkiden doğan bir yükümlülüğü yerine getirememiş olması yüzünden özgürlüğünden yoksun bırakılmasını yasaklar.",
+      "articleRefs": [
+        "P4-1"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "4 No.lu Protokol’e göre bir devletin ülkesinde bulunan herkes, orada bulunma biçimine bakılmaksızın serbestçe dolaşma hakkına sahip midir?",
+      "back": "Hayır. Serbestçe dolaşma ve ikametgâhını seçebilme hakkı, ülke içinde usulüne uygun olarak bulunan herkese tanınır.",
+      "explanation": "Ülkeyi terk etme serbestliği ise herkese tanınır; buna kişinin kendi ülkesi de dahildir.",
+      "articleRefs": [
+        "P4-2"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "4 No.lu Protokol’e göre serbest dolaşım ve ülkeyi terk etme hakları hangi amaçlarla sınırlanabilir?",
+      "back": "Ulusal güvenlik, kamu emniyeti, kamu düzeninin korunması ve suç işlenmesinin önlenmesi amaçlarıyla sınırlanabilir. Sağlık ve ahlakın ya da başkalarının hak ve özgürlüklerinin korunması da bu amaçlar arasındadır.",
+      "explanation": "Sınırlama, demokratik bir toplumda zorunlu bir tedbir olmalı ve yasayla öngörülmelidir. Ülke içinde dolaşma ve ikametgâh seçme hakları ayrıca belli yerlerde de sınırlanabilir. Bu sınırlamalar yasayla konmuş olmalı ve demokratik bir toplumda kamu yararının gerektirdiği ölçüde kalmalıdır.",
+      "articleRefs": [
+        "P4-2"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "4 No.lu Protokol’e göre hiç kimse, uyruğunda bulunduğu devletin ülkesiyle ilgili hangi haktan yoksun bırakılamaz?",
+      "back": "O devletin ülkesine girme hakkından yoksun bırakılamaz.",
+      "explanation": "Aynı maddeye göre hiç kimse, tek başına ya da toplu olarak, uyruğu bulunduğu devletin ülkesinden sınır dışı edilemez.",
+      "articleRefs": [
+        "P4-3"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "4 No.lu Protokol’e göre tek başına ya da toplu sınır dışı edilmeme güvencesi yabancılara da tanınmış mıdır?",
+      "back": "Hayır. Tek başına ya da toplu olarak sınır dışı edilmeme güvencesi, kişinin uyruğu bulunduğu devletin ülkesi için geçerlidir. Yabancılar bakımından yasaklanan, toplu olarak sınır dışı edilmedir.",
+      "explanation": "Yasal olarak ikamet eden yabancının bireysel olarak sınır dışı edilmesine ilişkin usuli güvenceler ayrı bir Protokolde düzenlenmiştir.",
+      "articleRefs": [
+        "P4-3",
+        "P4-4"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Serbest dolaşım özgürlüğünü ve sınır dışı etme yasaklarını düzenleyen Protokol kaç onaylama belgesinin verilmesinden sonra yürürlüğe girer?",
+      "back": "Beş onaylama belgesinin verilmesinden sonra yürürlüğe girer.",
+      "explanation": "Daha sonra onaylayan imzacı devletler bakımından Protokol, onaylama belgesinin verildiği tarihten itibaren yürürlüğe girer. Onaylama belgeleri Avrupa Konseyi Genel Sekreteri'ne verilir. Genel Sekreter, onaylayan devletlerin adlarını bütün üyelere bildirir.",
+      "articleRefs": [
+        "P4-7"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "6 No.lu Protokol’ün (Ölüm Cezasının Kaldırılması) temel kuralı nedir?",
+      "back": "Ölüm cezası kaldırılmıştır. Hiç kimse bu cezaya çarptırılamaz ve idam edilemez.",
+      "articleRefs": [
+        "P6-1"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "6 No.lu Protokol'e taraf bir devlet, yasasında savaş zamanında işlenen fiiller için ölüm cezası öngörebilir mi?",
+      "back": "Evet. Savaş veya yakın savaş tehlikesi zamanında işlenmiş fiiller için öngörebilir. Ceza ancak yasanın belirlediği hallerde ve yasanın hükümlerine uygun olarak uygulanabilir.",
+      "explanation": "İlgili devlet, yasasının bu duruma ilişkin hükümlerini Avrupa Konseyi Genel Sekreteri'ne bildirir.",
+      "articleRefs": [
+        "P6-2"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "6 No.lu Protokol'ün hükümleri, Sözleşme'nin 15. maddesine dayanılarak askıya alınabilir mi?",
+      "back": "Hayır. Sözleşme'nin 15. maddesine dayanılarak bu Protokol'ün hükümleri ihlal edilemez.",
+      "explanation": "Sözleşme'nin 57. maddesine dayanılarak da Protokol'ün hükümleriyle ilgili hiçbir çekince konulamaz.",
+      "articleRefs": [
+        "P6-3",
+        "P6-4"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "6 No.lu Protokol, sonradan bildirimle uygulama kapsamına alınan bir ülkede ne zaman yürürlüğe girer?",
+      "back": "Bildirimin Avrupa Konseyi Genel Sekreteri tarafından alınışını izleyen ayın birinci günü yürürlüğe girer.",
+      "explanation": "Bildirim, Genel Sekreter'e gönderilecek bir ihbarla geri alınabilir. Geri alma, Genel Sekreter'in ihbarı alışını izleyen ayın birinci günü yürürlüğe girer. Devlet, uygulanacak ülkeleri imza sırasında ya da onaylama, kabul veya katılma belgesinin verilmesi sırasında da belirleyebilir.",
+      "articleRefs": [
+        "P6-5"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Avrupa Konseyi üyesi bir devlet, 6 No.lu Protokol'ü hangi şartla onaylayabilir?",
+      "back": "Sözleşme'yi aynı zamanda ya da daha önceden onaylamış olması şartıyla onaylayabilir.",
+      "explanation": "Bu şart, Protokol'ün kabul edilmesi ve uygun bulunması için de aranır. Onaylama, kabul veya uygun bulma belgeleri Avrupa Konseyi Genel Sekreteri'ne verilir.",
+      "articleRefs": [
+        "P6-7"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "6 No.lu Protokol, kaç Avrupa Konseyi üyesi devletin bağlanma rızasını bildirmesiyle yürürlüğe girer?",
+      "back": "Beş üye devletin rızalarını bildirdikleri tarihi izleyen ayın birinci günü yürürlüğe girer.",
+      "explanation": "Rızasını daha sonra bildiren Sözleşmeci Devletler için Protokol, onaylama belgesinin verilmesi, kabul edilmesi ya da onaylanması tarihini izleyen ayın birinci günü yürürlüğe girer.",
+      "articleRefs": [
+        "P6-8"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Bir devletin ülkesinde kurallara uygun olarak ikamet eden yabancının, sınır dışı edilmesi durumunda hangi usuli hakları vardır?",
+      "back": "Sınır dışı edilmesine karşı gerekçeler öne sürebilir ve durumunu yeniden inceletebilir. Bu amaçlarla yetkili merci önünde kendini temsil ettirme hakkı da vardır.",
+      "explanation": "Temsil, yetkili merci önünde ya da bu merci tarafından tayin edilecek biri veya birileri önünde olabilir. Böyle bir yabancı, yalnızca yasaya uygun şekilde verilmiş bir kararın uygulanmasıyla sınır dışı edilebilir.",
+      "articleRefs": [
+        "P7-1"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Kurallara uygun ikamet eden bir yabancı, gerekçe öne sürme ve durumunu inceletme haklarını kullanmadan sınır dışı edilebilir mi?",
+      "back": "Evet. Sınır dışı edilmenin kamu düzeni yararı ya da ulusal güvenlik nedenleri açısından gerektiği hallerde edilebilir. Yine de yasaya uygun şekilde verilmiş bir karar gerekir.",
+      "explanation": "Olağan durumda yabancı, sınır dışı edilmesine karşı gerekçe öne sürebilir, durumunu yeniden inceletebilir ve yetkili merci önünde kendini temsil ettirebilir.",
+      "articleRefs": [
+        "P7-1"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Cezai bir suçtan mahkûm edilen kişinin, hükmü daha yüksek bir mahkemeye inceletme hakkı hangi hallerde istisnaya tabi tutulabilir?",
+      "back": "Üç halde istisna mümkündür: önem derecesi düşük suçlarda, kişi birinci derece mahkemesi olarak en yüksek mahkemede yargılandığında ve beraat kararının temyizi üzerine mahkûm edildiğinde.",
+      "explanation": "Bu hakkın kullanılması, kullanılabilme gerekçeleri de dahil olmak üzere yasayla düzenlenir. Önem derecesi düşük suçlar da yasada düzenlenmiş hâliyle belirlenir.",
+      "articleRefs": [
+        "P7-2"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Cezai kararı adli hata nedeniyle iptal edilen kişi hangi hâlde tazmin edilmez?",
+      "back": "Bilinmeyen delilin açıklanmamış olmasının tamamen veya kısmen kendisine atfedildiği ispatlanırsa tazmin edilmez.",
+      "explanation": "Tazminat için kişinin kesin bir kararla cezai bir suçtan mahkûm edilmiş olması gerekir. Kararın iptali de şu iki nedenden birine dayanmalıdır: yeni veya yakın zamanda keşfedilmiş bir delilin kesinlikle yanlış bir adalet uygulamasını göstermesi ya da kişinin affedilmesi. Tazmin, ilgili devletin yasası ve uygulamasına göre yapılır.",
+      "articleRefs": [
+        "P7-3"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "7 No.lu Protokol md 4’e göre kesin hükümle mahkûm olunan ya da beraat edilen bir suçta dava hangi hallerde yeniden açılabilir?",
+      "back": "Yeni veya yakın zamanda ortaya çıkarılan deliller varsa dava yeniden açılabilir. Önceki muamelelerde davanın sonucunu etkileyebilecek esaslı bir kusur bulunması da yeterlidir.",
+      "explanation": "Yeniden açılma, ilgili devletin ceza yargılaması usulü ve yasasına uygun olmalıdır. Kural, aynı devletin yargısal yetkisi altında yeniden yargılanmayı ve mahkûm edilmeyi yasaklar. Sözleşme'nin 15. maddesi çerçevesinde bu yükümlülüklere aykırı hiçbir tedbir alınamaz.",
+      "articleRefs": [
+        "P7-4"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Eşler arasında eşitlik hükmü, devletlerin hangi tedbirleri almasını engellemez?",
+      "back": "Çocuklar yararına gereken tedbirleri almasını engellemez.",
+      "explanation": "Eşler; evlilikte, evlilik süresince ve evliliğin sona ermesi durumunda medeni haklar ve sorumluluklardan eşit şekilde yararlanır. Bu eşitlik hem kendi aralarındaki ilişkilerde hem de çocuklarıyla ilişkilerinde geçerlidir.",
+      "articleRefs": [
+        "P7-5"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Eşler arasında eşitliği düzenleyen Protokol'ün uygulanmasını yeni bir toprağa genişleten beyan, o toprak için ne zaman yürürlüğe girer?",
+      "back": "Genel Sekreter'in beyanı teslim aldığı tarihten itibaren iki aylık sürenin bitişini izleyen ayın ilk günü yürürlüğe girer.",
+      "explanation": "Beyanın geri alınması ya da değiştirilmesi de aynı takvime bağlıdır: bildirimin Avrupa Konseyi Genel Sekreteri'ne tesliminden sonraki iki aylık sürenin bitimini izleyen ay başında yürürlüğe girer.",
+      "articleRefs": [
+        "P7-6"
+      ]
+    }
+  ]
+}
