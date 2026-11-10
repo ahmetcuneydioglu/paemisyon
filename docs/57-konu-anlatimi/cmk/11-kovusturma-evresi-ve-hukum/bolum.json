@@ -1,0 +1,18 @@
+{
+  "slug": "cmk-kovusturma-evresi-ve-hukum",
+  "title": "Kovuşturma Evresi ve Hüküm",
+  "subtitle": "İddianamenin kabulü ve duruşma hazırlığı, duruşmanın yürüyüşü, açıklık ve düzen, hüküm türleri, hükmün açıklanmasının geri bırakılması",
+  "courseName": "Ceza Muhakemesi Hukuku",
+  "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+  "sortOrder": 11,
+  "isPremium": true,
+  "aiDraft": true,
+  "book": { "label": "THEMIS Ceza Muhakemesi Hukuku, 23. baskı, 2025", "page": "s.180–202" },
+  "lessons": [
+    { "file": "01-iddianamenin-kabulu-ve-durusma-hazirligi.md", "slug": "cmk-iddianamenin-kabulu-ve-durusma-hazirligi", "page": "s.180–183" },
+    { "file": "02-durusmanin-yuruyusu-ve-tutanak.md", "slug": "cmk-durusmanin-yuruyusu-ve-tutanak", "page": "s.183–186" },
+    { "file": "03-durusmanin-acikligi-ve-duzeni.md", "slug": "cmk-durusmanin-acikligi-ve-duzeni", "page": "s.185–189" },
+    { "file": "04-hukum-turleri-ve-aciklanmasi.md", "slug": "cmk-hukum-turleri-ve-aciklanmasi", "page": "s.189–195" },
+    { "file": "05-hukmun-aciklanmasinin-geri-birakilmasi.md", "slug": "cmk-hukmun-aciklanmasinin-geri-birakilmasi", "page": "s.195–202" }
+  ]
+}

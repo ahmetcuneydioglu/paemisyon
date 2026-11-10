@@ -1,0 +1,17 @@
+{
+  "slug": "cmk-sorusturma-evresi",
+  "title": "Soruşturma Evresi",
+  "subtitle": "Soruşturmanın başlaması, kovuşturmaya yer olmadığı kararı ve itiraz, iddianame ve iadesi, kamu davasının açılmasının ertelenmesi",
+  "courseName": "Ceza Muhakemesi Hukuku",
+  "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+  "sortOrder": 10,
+  "isPremium": true,
+  "aiDraft": true,
+  "book": { "label": "THEMIS Ceza Muhakemesi Hukuku, 23. baskı, 2025", "page": "s.163–180" },
+  "lessons": [
+    { "file": "01-sorusturmanin-baslamasi.md", "slug": "cmk-sorusturmanin-baslamasi", "page": "s.163–168" },
+    { "file": "02-kovusturmaya-yer-olmadigi-karari-ve-itiraz.md", "slug": "cmk-kovusturmaya-yer-olmadigi-karari-ve-itiraz", "page": "s.167–171" },
+    { "file": "03-iddianame-ve-iade.md", "slug": "cmk-iddianame-ve-iade", "page": "s.171–177" },
+    { "file": "04-kamu-davasinin-ertelenmesi-ve-diger-kararlar.md", "slug": "cmk-kamu-davasinin-ertelenmesi-ve-diger-kararlar", "page": "s.177–180" }
+  ]
+}
