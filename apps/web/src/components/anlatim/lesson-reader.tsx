@@ -2,6 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 import { AlertTriangle, ArrowLeft, ArrowRight, BookOpen, CheckCircle2, ExternalLink, Lightbulb, Lock, Scale } from "lucide-react";
 import { apiClient } from "@/lib/api-client";
 import type { LessonBlock, LessonDetail } from "@/lib/anlatim";
@@ -147,6 +148,7 @@ function ExamQuestion({ q }: { q: Extract<LessonBlock, { kind: "soru" }> }) {
 export function LessonReader({ lesson, loggedIn, premiumHref, loginHref }: { lesson: LessonDetail; loggedIn: boolean; premiumHref: string; loginHref: string }) {
   const [read, setRead] = useState(Boolean(lesson.progress?.readAt));
   const [saving, setSaving] = useState(false);
+  const router = useRouter();
   const offset = useRef(lesson.progress?.offset ?? 0);
   const lastSent = useRef(lesson.progress?.offset ?? 0);
   const timer = useRef<ReturnType<typeof setTimeout> | null>(null);
@@ -184,6 +186,9 @@ export function LessonReader({ lesson, loggedIn, premiumHref, loginHref }: { les
     setSaving(true);
     try {
       await apiClient("/me/lessons/progress", { method: "POST", body: { slug: lesson.slug, offset: offset.current, read: true } });
+      // İstemci yönlendirici önbelleği konu odasının eski (okunmamış) listesini "geri"de geri getiriyordu
+      // (11 Kas 2026): refresh önbelleği boşaltır, liste dönüşte sunucudan taze çizilir.
+      router.refresh();
     } catch {
       /* sessiz: okuma sürer */
     } finally {

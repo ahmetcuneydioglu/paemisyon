@@ -62,6 +62,13 @@ export interface LessonDetail {
   progress: LessonProgressInfo | null;
 }
 
+/** Listede dersin okuma durumu: okundu (kullanıcı işareti) > devam (konum var) > yok. */
+export type LessonReadState = "read" | "resume" | null;
+export function lessonReadState(progress: LessonProgressInfo | null): LessonReadState {
+  if (progress?.readAt) return "read";
+  return progress && progress.offset > 0 ? "resume" : null;
+}
+
 export const lessonKeys = {
   sections: (topicId: string | null) => ["lessons", "sections", topicId] as const,
   lesson: (slug: string | null) => ["lessons", "lesson", slug] as const,

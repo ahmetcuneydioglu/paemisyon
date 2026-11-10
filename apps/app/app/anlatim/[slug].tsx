@@ -1,5 +1,6 @@
 import { Stack, useLocalSearchParams, useRouter } from "expo-router";
 import { useEffect, useRef, useState, type ComponentRef } from "react";
+import { CheckCircle2 } from "lucide-react-native";
 import { Linking, ScrollView, View } from "react-native";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { AppText, Button, Card, ListRow, Notice, Sheet, Skeleton } from "@/components/ui";
@@ -66,17 +67,19 @@ function Reader({ lesson }: { lesson: LessonDetail & { body: NonNullable<LessonD
   useEffect(() => {
     saveRef.current = save.mutate;
   }, [save.mutate]);
-  const readRef = useRef(read);
-  useEffect(() => {
-    readRef.current = read;
-  }, [read]);
   // Ekrandan çıkarken son konum yazılır (girişliyse).
   useEffect(() => () => {
-    if (session && restored.current) saveRef.current({ offset: offset.current, read: readRef.current });
+    if (session && restored.current) saveRef.current({ offset: offset.current });
   }, [session]);
-  const persist = (markRead = readRef.current) => {
-    setRead(markRead);
-    if (session) save.mutate({ offset: offset.current, read: markRead });
+  /** Yalnız okuma konumu: `read` alanı GÖNDERİLMEZ (sunucu mevcut işareti korur). `read: false` sunucuda işareti
+   * kaldırır; kaydırma bitişi butona dokunuşla aynı anda gelince eski değer "okundu"yu siliyordu (11 Kas 2026). */
+  const savePosition = () => {
+    if (session) save.mutate({ offset: offset.current });
+  };
+  /** "Okudum": tek yönlü; geri alma eylemi yok. */
+  const markRead = () => {
+    setRead(true);
+    if (session) save.mutate({ offset: offset.current, read: true });
   };
   const openSource = (url: string) => void Linking.openURL(url).catch(() => setLinkError(true));
 
@@ -92,8 +95,8 @@ function Reader({ lesson }: { lesson: LessonDetail & { body: NonNullable<LessonD
         onScroll={(e) => {
           if (restored.current) offset.current = Math.max(0, e.nativeEvent.contentOffset.y);
         }}
-        onMomentumScrollEnd={() => persist()}
-        onScrollEndDrag={() => persist()}
+        onMomentumScrollEnd={savePosition}
+        onScrollEndDrag={savePosition}
         onContentSizeChange={() => {
           if (!restored.current) {
             scroller.current?.scrollTo({ y: offset.current, animated: false });
@@ -117,14 +120,17 @@ function Reader({ lesson }: { lesson: LessonDetail & { body: NonNullable<LessonD
         ))}
         {lesson.sources.length > 0 ? <Button title="Kaynakları incele" variant="secondary" onPress={() => setSources(true)} /> : null}
         <Card>
-          <AppText variant="subhead">{read ? "Bu dersi okudun" : "Dersin sonuna geldin"}</AppText>
+          <View style={{ flexDirection: "row", alignItems: "center", gap: space.s2 }}>
+            {read ? <CheckCircle2 color={colors.successInk} size={18} strokeWidth={2} accessibilityElementsHidden importantForAccessibility="no" /> : null}
+            <AppText variant="subhead">{read ? "Bu dersi okudun" : "Dersin sonuna geldin"}</AppText>
+          </View>
           <AppText variant="bodySm" tone="soft">Okundu bilgisi, konuya hâkimiyet ölçümü değildir.</AppText>
-          <Button title={read ? "Okundu" : "Okudum olarak işaretle"} variant="secondary" onPress={() => persist(true)} />
+          <Button title={read ? "Okundu" : "Okudum olarak işaretle"} variant="secondary" onPress={markRead} disabled={read} accessibilityHint={read ? "Bu ders okundu olarak işaretli" : undefined} />
         </Card>
       </ScrollView>
       {lesson.next ? (
         <View style={{ paddingHorizontal: space.screenGutter, paddingTop: space.s3, paddingBottom: Math.max(insets.bottom, space.s3), backgroundColor: colors.bg }}>
-          <Button title={`Sonraki ders · ${lesson.next.title}`} onPress={() => { persist(); router.replace({ pathname: "/anlatim/[slug]", params: { slug: lesson.next!.slug } }); }} />
+          <Button title={`Sonraki ders · ${lesson.next.title}`} onPress={() => { savePosition(); router.replace({ pathname: "/anlatim/[slug]", params: { slug: lesson.next!.slug } }); }} />
         </View>
       ) : (
         <View style={{ paddingHorizontal: space.screenGutter, paddingBottom: Math.max(insets.bottom, space.s3) }}>
