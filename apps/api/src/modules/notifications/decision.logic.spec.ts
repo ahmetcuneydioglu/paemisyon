@@ -1,6 +1,7 @@
 import {
   decide,
   emailConsentFor,
+  engagementTierFor,
   inQuietHours,
   quietHoursEnd,
   trClock,
@@ -154,6 +155,28 @@ describe('karar akışı (Doc 52 §6)', () => {
     expect(t2.channels.push).toEqual({ action: 'drop', reason: 'decay_email_only' });
   });
 
+  it("sönüm muafiyeti: soru bildirimi sonucu ve system push'u tier 2'de de gider (kullanıcı kendi eylemine yanıt bekler)", () => {
+    const qr = decide(
+      input({ category: 'question_report', channels: ['push', 'inbox', 'email'] }),
+      ctx({ engagementTier: 2 }),
+    );
+    expect(qr.channels.push).toEqual({ action: 'send' });
+    expect(qr.channels.email).toEqual({ action: 'send' });
+    const qr1 = decide(
+      input({ category: 'question_report' }),
+      ctx({ engagementTier: 1, pushesThisWeek: 5 }),
+    );
+    expect(qr1.channels.push).toEqual({ action: 'send' });
+    const sys = decide(input({ category: 'system' }), ctx({ engagementTier: 2 }));
+    expect(sys.channels.push).toEqual({ action: 'send' });
+    // Muafiyet yalnız sönümü aşar; günlük kapı ve cihaz kuralı olduğu gibi kalır.
+    const nodev = decide(
+      input({ category: 'question_report' }),
+      ctx({ engagementTier: 2, hasActiveDevice: false }),
+    );
+    expect(nodev.channels.push).toEqual({ action: 'drop', reason: 'no_device' });
+  });
+
   it('cihaz yoksa push düşer, kutu yazılır', () => {
     const d = decide(input(), ctx({ hasActiveDevice: false }));
     expect(d.channels.push).toEqual({ action: 'drop', reason: 'no_device' });
@@ -199,5 +222,41 @@ describe('emailConsentFor — rıza kişide yaşar, kişisiz hesap hizmet e-post
     expect(
       emailConsentFor('duyuru', [{ status: 'unsubscribed', unsubscribedTopics: [] }, sub()]),
     ).toBe(true);
+  });
+});
+
+describe('engagementTierFor — sönüm (Doc 24 §7/6): cevap = push açma YA DA uygulama içi etkinlik', () => {
+  const now = at(20);
+  const daysAgo = (d: number) => new Date(now.getTime() - d * 86_400_000);
+  const base = {
+    now,
+    pushSent7d: 6,
+    pushSent30d: 20,
+    lastPushOpenedAt: null,
+    answered7d: 0,
+    lastAnsweredAt: null,
+  };
+
+  it('push hiç açılmamış, uygulama da açılmamış: 30 günde ≥5 push → 2; 7 günde → 1', () => {
+    expect(engagementTierFor(base)).toBe(2);
+    expect(engagementTierFor({ ...base, pushSent30d: 4 })).toBe(1);
+    expect(engagementTierFor({ ...base, pushSent30d: 4, pushSent7d: 4 })).toBe(0);
+  });
+
+  it('push açılmışsa süre ölçüsüyle: 7 gün içi → 0, 8–30 gün → 1, 30+ gün → 2', () => {
+    expect(engagementTierFor({ ...base, lastPushOpenedAt: daysAgo(2) })).toBe(0);
+    expect(engagementTierFor({ ...base, lastPushOpenedAt: daysAgo(10) })).toBe(1);
+    expect(engagementTierFor({ ...base, lastPushOpenedAt: daysAgo(40) })).toBe(2);
+  });
+
+  it('aktif ama push açmamış kullanıcı (10 Kas 2026 bulgusu): son 7 günde ≥20 cevap → 0', () => {
+    expect(engagementTierFor({ ...base, answered7d: 105 * 7, lastAnsweredAt: daysAgo(0) })).toBe(0);
+    expect(engagementTierFor({ ...base, answered7d: 20, lastAnsweredAt: daysAgo(5) })).toBe(0);
+  });
+
+  it('az cevaplı ama son 3 günde cevap vermiş → 0; 3 günden eski ve <20 cevap → sönüm işler', () => {
+    expect(engagementTierFor({ ...base, answered7d: 3, lastAnsweredAt: daysAgo(2) })).toBe(0);
+    expect(engagementTierFor({ ...base, answered7d: 3, lastAnsweredAt: daysAgo(5) })).toBe(2);
+    expect(engagementTierFor({ ...base, answered7d: 19, lastAnsweredAt: daysAgo(4) })).toBe(2);
   });
 });

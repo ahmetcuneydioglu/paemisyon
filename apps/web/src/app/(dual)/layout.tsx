@@ -1,6 +1,8 @@
+import { Suspense } from "react";
 import { SiteHeader } from "@/components/site-header";
 import { SiteFooter } from "@/components/site-footer";
 import { AppShell } from "@/components/shell/app-shell";
+import { NotificationOpenTracker } from "@/components/notifications/notification-open-tracker";
 import { getCurrentUser } from "@/lib/auth/current-user";
 
 /**
@@ -27,6 +29,9 @@ export default async function DualLayout({
   return (
     <div className="min-h-screen">
       <AppShell>{children}</AppShell>
+      <Suspense fallback={null}>
+        <NotificationOpenTracker />
+      </Suspense>
     </div>
   );
 }

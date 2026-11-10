@@ -14,6 +14,12 @@ export type CategoryPolicy = {
   emailTopic: 'duyuru' | 'kampanya' | null;
   /** Günlük kategori: sessiz saatte ertesi güne ertelenmez, düşer (§6 kural 10). */
   dailyOnly: boolean;
+  /**
+   * Sönümden muaf (§6 kural 10a): kullanıcının KENDİ eylemine verilen yanıt
+   * (soru/kart bildirimi sonucu) ya da hizmet duyurusu. Sönüm "sessiz kalan
+   * kullanıcıyı rahatsız etme" içindir; beklenen yanıtı bastırmak güveni kırar.
+   */
+  decayExempt: boolean;
 };
 
 export const CATEGORY_POLICY: Record<NotificationCategory, CategoryPolicy> = {
@@ -23,6 +29,7 @@ export const CATEGORY_POLICY: Record<NotificationCategory, CategoryPolicy> = {
     optional: true,
     emailTopic: null,
     dailyOnly: true,
+    decayExempt: false,
   },
   study_reminder: {
     label: 'Çalışma hatırlatması',
@@ -30,6 +37,7 @@ export const CATEGORY_POLICY: Record<NotificationCategory, CategoryPolicy> = {
     optional: true,
     emailTopic: null,
     dailyOnly: true,
+    decayExempt: false,
   },
   streak: {
     label: 'Seri',
@@ -37,6 +45,7 @@ export const CATEGORY_POLICY: Record<NotificationCategory, CategoryPolicy> = {
     optional: true,
     emailTopic: null,
     dailyOnly: true,
+    decayExempt: false,
   },
   exam: {
     label: 'Denemeler',
@@ -44,6 +53,7 @@ export const CATEGORY_POLICY: Record<NotificationCategory, CategoryPolicy> = {
     optional: true,
     emailTopic: 'duyuru',
     dailyOnly: false,
+    decayExempt: false,
   },
   exam_countdown: {
     label: 'Sınav geri sayımı',
@@ -51,6 +61,7 @@ export const CATEGORY_POLICY: Record<NotificationCategory, CategoryPolicy> = {
     optional: true,
     emailTopic: null,
     dailyOnly: false,
+    decayExempt: false,
   },
   new_content: {
     label: 'Yeni içerik',
@@ -58,6 +69,7 @@ export const CATEGORY_POLICY: Record<NotificationCategory, CategoryPolicy> = {
     optional: true,
     emailTopic: 'duyuru',
     dailyOnly: false,
+    decayExempt: false,
   },
   achievement: {
     label: 'Rozetler',
@@ -65,6 +77,7 @@ export const CATEGORY_POLICY: Record<NotificationCategory, CategoryPolicy> = {
     optional: true,
     emailTopic: null,
     dailyOnly: false,
+    decayExempt: false,
   },
   statistics: {
     label: 'Haftalık rapor',
@@ -72,6 +85,7 @@ export const CATEGORY_POLICY: Record<NotificationCategory, CategoryPolicy> = {
     optional: true,
     emailTopic: 'duyuru',
     dailyOnly: false,
+    decayExempt: false,
   },
   leaderboard: {
     label: 'Sıralama',
@@ -79,6 +93,7 @@ export const CATEGORY_POLICY: Record<NotificationCategory, CategoryPolicy> = {
     optional: true,
     emailTopic: null,
     dailyOnly: true,
+    decayExempt: false,
   },
   question_report: {
     label: 'Soru bildirimleri',
@@ -86,6 +101,7 @@ export const CATEGORY_POLICY: Record<NotificationCategory, CategoryPolicy> = {
     optional: false,
     emailTopic: 'duyuru',
     dailyOnly: false,
+    decayExempt: true,
   },
   marketing: {
     label: 'Kampanyalar',
@@ -93,6 +109,7 @@ export const CATEGORY_POLICY: Record<NotificationCategory, CategoryPolicy> = {
     optional: true,
     emailTopic: 'kampanya',
     dailyOnly: false,
+    decayExempt: false,
   },
   system: {
     label: 'Sistem ve güvenlik',
@@ -100,6 +117,7 @@ export const CATEGORY_POLICY: Record<NotificationCategory, CategoryPolicy> = {
     optional: false,
     emailTopic: 'duyuru',
     dailyOnly: false,
+    decayExempt: true,
   },
 };
 

@@ -31,6 +31,46 @@ export function emailConsentFor(
   return contact.status === 'subscribed' && !contact.unsubscribedTopics.includes(topic);
 }
 
+/** Sönüm için "aktif" eşiği: son 7 günde bu kadar cevap (Doc 52/08). */
+export const ACTIVE_ANSWERS_7D = 20;
+/** Sönüm için "aktif" eşiği: son 3 günde en az bir cevap. */
+export const ACTIVE_ANSWER_DAYS = 3;
+
+export type EngagementSignals = {
+  now: Date;
+  /** Son 7 / 30 günde gönderilmiş (status=sent) push sayısı. */
+  pushSent7d: number;
+  pushSent30d: number;
+  /** Son push açma/tıklama olayı (`notification_events` opened/clicked). */
+  lastPushOpenedAt: Date | null;
+  /** Son 7 günde verilen cevap sayısı ve son cevap anı (quiz_answers). */
+  answered7d: number;
+  lastAnsweredAt: Date | null;
+};
+
+/**
+ * Sönüm katmanı (Doc 24 §7 madde 6): "7 gün cevapsızsa haftada 2'ye düşer,
+ * 30 gün sonra yalnız haftalık e-posta." Cevap = push açma/tıklama YA DA
+ * uygulama içi etkinlik: uygulamada soru çözen kullanıcı ürüne cevap
+ * vermektedir; push'u açmaması sönüm değil kanal tercihidir (10 Kas 2026
+ * bulgusu — günde 105 soru çözen kullanıcı tier 2'ye düşmüştü).
+ * Kitle SQL'indeki CASE (audience.service.ts) bu fonksiyonun aynısıdır.
+ *  0 normal · 1 haftada `decayWeeklyCap` push · 2 yalnız e-posta/kutu.
+ */
+export function engagementTierFor(s: EngagementSignals): 0 | 1 | 2 {
+  const day = 86_400_000;
+  const t = s.now.getTime();
+  const activeRecently =
+    s.answered7d >= ACTIVE_ANSWERS_7D ||
+    (s.lastAnsweredAt !== null && t - s.lastAnsweredAt.getTime() <= ACTIVE_ANSWER_DAYS * day);
+  if (activeRecently) return 0;
+  const openedWithin = (days: number) =>
+    s.lastPushOpenedAt !== null && t - s.lastPushOpenedAt.getTime() <= days * day;
+  if (s.pushSent30d >= 5 && !openedWithin(30)) return 2;
+  if (s.pushSent7d >= 5 && !openedWithin(7)) return 1;
+  return 0;
+}
+
 export type ChannelDecision =
   { action: 'send' } | { action: 'defer'; until: Date } | { action: 'drop'; reason: string };
 
@@ -210,12 +250,18 @@ export function decide(input: DecisionInput, ctx: DecisionContext): Decision {
       out.channels.push = { action: 'drop', reason: 'quiet_hours_expired' };
       continue;
     }
-    // 10a: sönüm (Doc 24) — yalnız push
-    if (c === 'push' && ctx.engagementTier >= 2) {
+    // 10a: sönüm (Doc 24) — yalnız push; kullanıcının kendi eylemine yanıt
+    // olan kategoriler (question_report) ve system muaf (policy.decayExempt).
+    if (c === 'push' && !policy.decayExempt && ctx.engagementTier >= 2) {
       out.channels.push = { action: 'drop', reason: 'decay_email_only' };
       continue;
     }
-    if (c === 'push' && ctx.engagementTier === 1 && ctx.pushesThisWeek >= ctx.decayWeeklyCap) {
+    if (
+      c === 'push' &&
+      !policy.decayExempt &&
+      ctx.engagementTier === 1 &&
+      ctx.pushesThisWeek >= ctx.decayWeeklyCap
+    ) {
       out.channels.push = { action: 'drop', reason: 'decay_weekly' };
       continue;
     }

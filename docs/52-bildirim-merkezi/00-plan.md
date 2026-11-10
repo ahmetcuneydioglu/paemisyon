@@ -364,7 +364,9 @@ Notlar: erteleme `Notification.scheduledAt`'i ileri alır (aday listesi bu satı
 üzerinden TR takvim gününde sayılır (kitle tablosunun saatlik gecikmesi kapıyı deldirmesin). Öncelik varsayılanları:
 deneme `normal`, streak/günün sorusu/hatırlatma `low`, sınava 1 gün ve sistem duyurusu `high`, `critical` yalnız
 bakım/güvenlik. Sönüm katmanı: `engagementTier` kitle yenilemesinde hesaplanır: son 7 günde hiç `opened/read` yok ve
-≥ 5 push gitti → 1; son 30 günde yok → 2; herhangi bir açılma → 0'a döner.
+≥ 5 push gitti → 1; son 30 günde yok → 2; herhangi bir açılma → 0'a döner. **10 Kas 2026 (Doc 52/08):** uygulama içi
+etkinlik de "cevap"tır — son 7 günde ≥ 20 cevap ya da son 3 günde bir cevap → 0; `question_report` ve `system`
+sönümden muaf (`decayExempt`).
 
 ---
 

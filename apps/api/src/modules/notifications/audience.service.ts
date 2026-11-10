@@ -5,13 +5,18 @@ import { PrismaService } from '../../infra/prisma/prisma.service';
 import { gunAnahtari, gunBaslangici } from '../../common/gun';
 import { notificationsWorkerEnabled } from './notifications.config';
 import { trDayStart } from './decision.service';
+import { ACTIVE_ANSWERS_7D } from './decision.logic';
 
 /**
  * Kitle tablosu (Doc 52 §4.2): kullanıcı başına bir satır, saat başı tek
  * set-tabanlı SQL ile yenilenir (pooler için tek bağlantı, tek ifade).
  * Segment DSL yalnız bu tabloyu okur. Zayıf konu eşiği mevcut koç eşiğidir
- * (solved ≥ 3, mastery < 0.7). Sönüm katmanı (Doc 24): 7 gün açılmamış ve
- * ≥ 5 push → 1; 30 gün → 2.
+ * (solved ≥ 3, mastery < 0.7). Sönüm katmanı (Doc 24 §7/6): 7 gün cevapsız ve
+ * ≥ 5 push → 1; 30 gün → 2. "Cevap" push açma/tıklama YA DA uygulama içi
+ * etkinliktir: son 7 günde ≥ 20 cevap ya da son 3 günde bir cevap veren
+ * kullanıcı sönmüş sayılmaz (10 Kas 2026 bulgusu, Doc 52/08). Kural tek yerde
+ * tanımlıdır: `engagementTierFor` (decision.logic.ts) — buradaki CASE onun SQL
+ * karşılığıdır; ikisi birlikte değişir.
  */
 @Injectable()
 export class AudienceService {
@@ -63,6 +68,8 @@ export class AudienceService {
         ex.last_exam_at, ex.last_net, COALESCE(ex.cnt, 0), oe.session_id,
         COALESCE(wt.ids, '{}'::uuid[]), u.onboarding_completed_at IS NOT NULL, COALESCE(sp.active, false),
         CASE
+          -- Uygulama içi etkinlik = cevap (engagementTierFor ile aynı eşikler).
+          WHEN COALESCE(a7.n, 0) >= ${ACTIVE_ANSWERS_7D} OR a7.last_at >= now() - interval '3 days' THEN 0
           WHEN COALESCE(ps.sent30, 0) >= 5 AND (po.last_open IS NULL OR po.last_open < now() - interval '30 days') THEN 2
           WHEN COALESCE(ps.sent7, 0) >= 5 AND (po.last_open IS NULL OR po.last_open < now() - interval '7 days') THEN 1
           ELSE 0
@@ -89,7 +96,8 @@ export class AudienceService {
         WHERE q.user_id = u.id AND q.mode = 'daily' AND q.status = 'completed' AND q.started_at >= ${dayStart} LIMIT 1
       ) dq ON true
       LEFT JOIN LATERAL (
-        SELECT count(*)::int AS n FROM quiz_answers a JOIN quiz_sessions q ON q.id = a.session_id
+        SELECT count(*)::int AS n, max(a.answered_at) AS last_at
+        FROM quiz_answers a JOIN quiz_sessions q ON q.id = a.session_id
         WHERE q.user_id = u.id AND a.answered_at >= now() - interval '7 days'
       ) a7 ON true
       LEFT JOIN LATERAL (
