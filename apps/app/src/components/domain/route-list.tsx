@@ -2,6 +2,7 @@ import { Check } from "lucide-react-native";
 import { Pressable, View } from "react-native";
 import { AppText } from "@/components/ui";
 import { useTheme } from "@/theme/ThemeProvider";
+import { useLargeText } from "@/theme/text-scale";
 
 export interface RouteRow {
   key: string;
@@ -19,6 +20,8 @@ export interface RouteRow {
  * Bugünün rotası (Bugün v3; kullanıcı geri bildirimi 30 Eki: GYSROTA'daki gibi SIRA NUMARASI ve
  * tamamlanınca TİK): numaralı daireler dikey çizgiyle bağlı; tamamlanan adım success dolgu +
  * onay işareti ve soluk metin; sağda "~dk" tahmini. Sıra sunucunun; tamamlanma gerçek veriden.
+ * Büyük yazıda (`useLargeText`) alt satır ("Günlük hedef 20 soru · 5") kesilmez, "Planım ›"
+ * altına iner.
  */
 export function RouteList({
   rows,
@@ -34,6 +37,7 @@ export function RouteList({
   onPlan?: () => void;
 }) {
   const { colors, radius, space } = useTheme();
+  const large = useLargeText();
   const done = rows.filter((r) => r.done).length;
   const R = 28; // daire çapı
   return (
@@ -106,9 +110,9 @@ export function RouteList({
         })}
       </View>
       {footer || onPlan ? (
-        <View style={{ flexDirection: "row", justifyContent: "space-between", alignItems: "center", gap: space.s2 }}>
-          <Pressable accessibilityRole={onFooter ? "button" : undefined} disabled={!onFooter} onPress={onFooter} hitSlop={8} style={{ flex: 1, minHeight: 32, justifyContent: "center" }}>
-            <AppText variant="bodySm" tone="soft" style={{ fontVariant: ["tabular-nums"] }} numberOfLines={1}>
+        <View style={large ? { alignItems: "flex-start", gap: space.s1 } : { flexDirection: "row", justifyContent: "space-between", alignItems: "center", gap: space.s2 }}>
+          <Pressable accessibilityRole={onFooter ? "button" : undefined} disabled={!onFooter} onPress={onFooter} hitSlop={8} style={{ flex: large ? undefined : 1, minHeight: 32, justifyContent: "center" }}>
+            <AppText variant="bodySm" tone="soft" style={{ fontVariant: ["tabular-nums"] }} numberOfLines={large ? undefined : 1}>
               {footer ?? ""}
             </AppText>
           </Pressable>

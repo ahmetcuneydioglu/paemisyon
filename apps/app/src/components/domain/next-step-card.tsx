@@ -1,12 +1,14 @@
 import { View } from "react-native";
 import { AppText, Button } from "@/components/ui";
 import { useTheme } from "@/theme/ThemeProvider";
+import { useLargeText } from "@/theme/text-scale";
 
 /**
  * Sıradaki kartı (Bugün v3, Figma 68:474): ekranın TEK birincil eylemi. `panel` laciverti
  * (iki temada koyu), köşe `radius.panel`, iç boşluk 20; üstte etiket + küçük hap, Lora başlık,
  * tek cümle gerekçe, altın düğme. Koyu temada panel = surface; ayrım kenarsızlık + köşe 4 +
- * düğmeyle (Doc 49/16 §8 not 1).
+ * düğmeyle (Doc 49/16 §8 not 1). Büyük yazıda (`useLargeText`) etiket tam görünür (kesilmez,
+ * gerekirse kırılır) ve hap etiketin altına iner.
  */
 export function NextStepCard({
   eyebrow,
@@ -29,18 +31,22 @@ export function NextStepCard({
   secondary?: { label: string; onPress: () => void } | null;
 }) {
   const { colors, radius, space } = useTheme();
+  const large = useLargeText();
   return (
     <View
       accessible
       accessibilityLabel={`Sıradaki: ${title}. ${reason}`}
       style={{ backgroundColor: colors.panel, borderRadius: radius.panel, padding: space.s5, gap: space.s4 }}
     >
-      <View style={{ flexDirection: "row", alignItems: "center", justifyContent: "space-between", gap: space.s2 }}>
-        <AppText variant="label" tone="panelSoft" numberOfLines={1} style={{ flex: 1 }}>
+      <View style={large ? { alignItems: "flex-start", gap: space.s2 } : { flexDirection: "row", alignItems: "center", justifyContent: "space-between", gap: space.s2 }}>
+        <AppText variant="label" tone="panelSoft" numberOfLines={large ? undefined : 1} style={large ? undefined : { flex: 1 }}>
           {eyebrow}
         </AppText>
         {badge ? (
-          <View style={{ backgroundColor: colors.surfaceAlt, borderRadius: radius.pill, paddingHorizontal: 8, paddingVertical: 3 }}>
+          // Hap panelin üstündedir (iki temada koyu): zemin `surfaceAlt` DEĞİL — açık temada o açık
+          // bej olur ve panelInk yazı kaybolurdu. Şeffaf zemin + panelSoft kenar; yazı panelInk
+          // panel üstünde (token kontrast çifti, AA).
+          <View style={{ borderWidth: 1, borderColor: colors.panelSoft, borderRadius: radius.pill, paddingHorizontal: 8, paddingVertical: 3 }}>
             <AppText variant="bodySm" tone="panelInk" style={{ fontSize: 11, lineHeight: 14 }}>
               {badge}
             </AppText>

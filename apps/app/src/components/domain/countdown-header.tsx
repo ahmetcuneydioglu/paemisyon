@@ -1,10 +1,12 @@
 import { View } from "react-native";
 import { AppText, WeekDots, type DayState } from "@/components/ui";
 import { useTheme } from "@/theme/ThemeProvider";
+import { useLargeText } from "@/theme/text-scale";
 
 /**
  * Durum satırı (Yerleşim B üstü): sınava kalan gün büyük rakam (display), haftalık aktif
- * gün noktaları. Tarih yoksa "—" ve "tarih bekleniyor" (sayı uydurulmaz).
+ * gün noktaları. Tarih yoksa "—" ve "tarih bekleniyor" (sayı uydurulmaz). Büyük yazıda
+ * (`useLargeText`) noktalar ve "Bu hafta" sayının altına iner; sağdan taşmaz.
  */
 export function CountdownHeader({
   examName,
@@ -21,10 +23,11 @@ export function CountdownHeader({
   todayIndex: number;
 }) {
   const { space } = useTheme();
+  const large = useLargeText();
   const days: DayState[] = Array.from({ length: 7 }, (_, i) => (i < activeDays ? "done" : i === todayIndex ? "today" : "empty"));
   return (
-    <View style={{ flexDirection: "row", alignItems: "flex-end", justifyContent: "space-between", gap: space.s4 }}>
-      <View style={{ gap: 2 }}>
+    <View style={large ? { gap: space.s3 } : { flexDirection: "row", alignItems: "flex-end", justifyContent: "space-between", gap: space.s4 }}>
+      <View style={{ gap: 2, flexShrink: 1 }}>
         <AppText variant="label" tone="subtle">
           {examName ? `${examName}'e` : "Hedef sınava"}
         </AppText>
@@ -42,7 +45,7 @@ export function CountdownHeader({
           </View>
         )}
       </View>
-      <View style={{ alignItems: "flex-end", gap: 8, paddingBottom: 6 }}>
+      <View style={{ alignItems: large ? "flex-start" : "flex-end", gap: 8, paddingBottom: large ? 0 : 6 }}>
         <WeekDots days={days} />
         <AppText variant="bodySm" tone="soft">
           Bu hafta {activeDays}/{targetDays} gün
