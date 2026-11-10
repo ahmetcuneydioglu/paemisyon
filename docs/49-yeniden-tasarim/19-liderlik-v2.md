@@ -44,7 +44,30 @@ yalnız "bir üst rütbeye kaç XP" için kalır; katalog yoksa sheet'te liste g
 - Kit: `ProgressBar` `color` / `track` parametreleri (lig rengi dolum, line rayı).
 - Galeri: Liderlik bölümü (8 rütbe metni, 4 avatar boyu, kürsü, liste, sen kartı — puanı yok dahil).
 
-## 5. Cihazda bakılacaklar
+## 5. Cihazda bakılacaklar → simülatör turu (10 Kas 2026)
 
-iPhone SE genişliğinde kürsü adlarının kırpılması (ellipsis), büyük yazı ayarı (AX3) ile sabit
-kart yüksekliği, açık şemada Altın/Gümüş rütbe metninin okunurluğu.
+iPhone SE (3. nesil, 375 pt) simülatöründe galeri Liderlik bölümü ve Rütbe sistemi sayfası;
+açık + koyu şema; yazı boyutu Large ve AX3 (accessibility-extra-large).
+
+- **SE genişliği, kürsü adları:** uzun adlar ("muhammedozdogan39", "Mustafa ÖZDALAR") tek satırda
+  üç noktayla kısalıyor. Sorun yok.
+- **Açık şema okunurluğu — DÜZELTİLDİ:** rütbe adı 12 pt metin; eski açık tonlardan Altın
+  `#B7791F` ve Elmas `#0891B2` beyaz kartta 3,6:1'de kalıyordu (AA 4,5:1). "Sen" satırının
+  accentSoft zemininde (#F6E9D2) Demir, Bronz ve Gümüş de eşiğin altındaydı. Yeni açık tonlar
+  (her biri beyazda ve #F6E9D2'de ≥ 4,5:1, `rank-tier.test.mjs` bunu sınar):
+  Demir `#5A697E`, Bronz `#8B4E1C`, Gümüş `#606977`, **Altın `#866300`** (zeytin-altın; Bronz'dan
+  ayrışsın diye ton kaydırıldı), Zümrüt `#04704F`, Safir `#1E40AF` (aynı), Ametist `#6D28D9`
+  (aynı), **Elmas `#06718B`**. Koyu şema tonları değişmedi. Web'in pil degradesi değişmedi (orada
+  renk zemindir, yazı `ink`). Figma "Lig renkleri" 177:989 açık tonları henüz eski değerlerde.
+- **AX3, sıra numarası — DÜZELTİLDİ:** sabit 22 pt sütunda iki basamaklı sıralar ("12", "51")
+  iki satıra kırılıyordu (listede ve "senin sıran" kartında). Sütun artık `minWidth: 22` +
+  tek satır.
+- **AX3, kürsü puanı — DÜZELTİLDİ:** üç sütunun "1.316 puan" satırları yan sütuna taşıp
+  çakışıyordu. Kürsüde yazı ölçeği 1,15'i aşınca "puan" üç sütunda birden sayının altına iner;
+  sayı tek satırda kalır, gerekirse %75'e kadar küçülür. Normal boyda Figma'daki yan yana düzen.
+- **AX3, Rütbe sistemi sayfası:** katalog satırları ve XP sütunu (12.000 XP) taşmıyor.
+- Kapsam dışı, ayrıca not: Bugün v3 parçaları AX3'te bozuluyor (geri sayım satırında "PAEM" ile
+  "Bu hafta" üst üste biniyor, gün kutularında "Cum"/"Cmt" kırılıyor; "Bugünün tahtası"nda
+  "1." kırılıyor). Bu PR'ın değil, ana daldan.
+- Gerçek liderlik ekranı (oturum açık, sunucudan `ranks`) bu turda açılmadı: simülatörde oturum
+  yoktu. Galeri aynı parçaları kullanıyor.

@@ -21,9 +21,9 @@ test("rankTier aralık dışı ve bozuk seviyeyi kırpar", () => {
 
 test("leagueColor: koyuda açık ton, açıkta koyu ton", () => {
   assert.equal(leagueColor(4, "dark"), "#F4C430");
-  assert.equal(leagueColor(4, "light"), "#B7791F");
+  assert.equal(leagueColor(4, "light"), "#866300");
   assert.equal(leagueColor(5, "dark"), "#34D399");
-  assert.equal(leagueColor(5, "light"), "#047857");
+  assert.equal(leagueColor(5, "light"), "#04704F");
 });
 
 test("yedek eşikler api/coach/rank.logic RANKS ile birebir", () => {
@@ -66,4 +66,26 @@ test("withAlpha hex'i rgba'ya çevirir; bozuk girdiyi olduğu gibi bırakır", (
   assert.equal(withAlpha("#E8B46C", 0.4), "rgba(232,180,108,0.4)");
   assert.equal(withAlpha("#E8B46C", 2), "rgba(232,180,108,1)");
   assert.equal(withAlpha("rgb(1,2,3)", 0.5), "rgb(1,2,3)");
+});
+
+// Açık şema lig tonları 12 pt metin rengidir: beyaz kartta ve "sen" satırının accentSoft
+// zemininde (#F6E9D2) WCAG AA 4,5:1'i geçmeli (10 Kas 2026 ölçümü).
+test("açık şema lig metni AA kontrastı", () => {
+  const lum = (hex) => {
+    const [r, g, b] = [1, 3, 5].map((i) => {
+      const v = parseInt(hex.slice(i, i + 2), 16) / 255;
+      return v <= 0.03928 ? v / 12.92 : ((v + 0.055) / 1.055) ** 2.4;
+    });
+    return 0.2126 * r + 0.7152 * g + 0.0722 * b;
+  };
+  const ratio = (a, b) => {
+    const [x, y] = [lum(a), lum(b)].sort((m, n) => n - m);
+    return (x + 0.05) / (y + 0.05);
+  };
+  for (let level = 1; level <= 8; level++) {
+    const c = leagueColor(level, "light");
+    for (const zemin of ["#FFFFFF", "#F6E9D2"]) {
+      assert.ok(ratio(c, zemin) >= 4.5, `seviye ${level} ${c} / ${zemin}: ${ratio(c, zemin).toFixed(2)}`);
+    }
+  }
 });

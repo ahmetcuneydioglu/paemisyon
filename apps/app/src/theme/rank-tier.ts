@@ -8,8 +8,11 @@ import type { Scheme } from "./tokens";
  * koyu ton. Degrade, pil ya da hale yok — düz renk.
  *
  * Madalya renkleri tema token'ı DEĞİLDİR (altın her iki şemada altındır) — bu yüzden
- * `packages/tokens`'a girmez, burada bilinçli olarak sabit hex tutulur. Web
- * `components/leaderboard/rank-tier.ts` ile aynı değerler.
+ * `packages/tokens`'a girmez, burada bilinçli olarak sabit hex tutulur. Koyu tonlar web
+ * `components/leaderboard/rank-tier.ts` degradesinin açık ucuyla aynıdır. Açık şema tonları
+ * webden KOYUDUR: webde bu renk pil zeminidir (yazı `ink`), burada 12 pt METİN rengidir —
+ * her biri beyaz kartta ve "sen" satırının accentSoft zemininde (#F6E9D2) ≥ 4,5:1 (WCAG AA;
+ * 10 Kas 2026 ölçümü, eski Altın #B7791F ve Elmas #0891B2 beyazda 3,6:1'de kalıyordu).
  */
 export interface RankTier {
   /** Rütbe seviyesi (1–8) — sunucunun `level`'ı ile aynı. */
@@ -23,14 +26,14 @@ export interface RankTier {
 }
 
 export const RANK_TIERS: readonly RankTier[] = [
-  { level: 1, league: "Demir", dark: "#94A3B8", light: "#64748B" },
-  { level: 2, league: "Bronz", dark: "#D98A44", light: "#9A5B24" },
-  { level: 3, league: "Gümüş", dark: "#C7D0D9", light: "#6B7685" },
-  { level: 4, league: "Altın", dark: "#F4C430", light: "#B7791F" },
-  { level: 5, league: "Zümrüt", dark: "#34D399", light: "#047857" },
+  { level: 1, league: "Demir", dark: "#94A3B8", light: "#5A697E" },
+  { level: 2, league: "Bronz", dark: "#D98A44", light: "#8B4E1C" },
+  { level: 3, league: "Gümüş", dark: "#C7D0D9", light: "#606977" },
+  { level: 4, league: "Altın", dark: "#F4C430", light: "#866300" },
+  { level: 5, league: "Zümrüt", dark: "#34D399", light: "#04704F" },
   { level: 6, league: "Safir", dark: "#3B82F6", light: "#1E40AF" },
   { level: 7, league: "Ametist", dark: "#A78BFA", light: "#6D28D9" },
-  { level: 8, league: "Elmas", dark: "#67E8F9", light: "#0891B2" },
+  { level: 8, league: "Elmas", dark: "#67E8F9", light: "#06718B" },
 ];
 
 /** Seviyeye karşılık gelen lig (aralık dışı ve bozuk değerler kırpılır). */

@@ -1,6 +1,6 @@
 import { Crown } from "lucide-react-native";
 import { useState, type ReactNode } from "react";
-import { Image, StyleSheet, View } from "react-native";
+import { Image, StyleSheet, View, useWindowDimensions } from "react-native";
 import { AppText, Button, Card, ProgressBar, Sheet } from "@/components/ui";
 import { fmtInt, initials, motivationLine } from "@/features/progress/leaderboard-text";
 import type { Leaderboard, LeaderboardRow, RankCatalogItem } from "@/features/progress/queries";
@@ -16,6 +16,9 @@ import { fontFamily } from "@/theme/tokens";
  * Dinamik yazı: sıkışık satırlarda 1,3× tavan — telefonun büyük yazı ayarında ad ve puan taşmaz.
  */
 const MAX_SCALE = 1.3;
+// Sıra numarası sütunu: sabit genişlik değil alt sınır — 1,3× yazıda "12" ve üç basamaklı
+// sıralar ("123", "1.234") iki satıra kırılmasın; tek satırda kalır, sütun gerektiği kadar büyür.
+const RANK_NO_STYLE = { minWidth: 22, textAlign: "right", fontVariant: ["tabular-nums"] } as const;
 
 /* ---------------------------------------------------------------- Avatar */
 
@@ -59,11 +62,18 @@ export function RankLabel({ level, rankName, emphasis = false, align = "left" }:
   );
 }
 
-/** Dönem puanı: Lora 22 + "puan" 12 (kürsü ve sabit kart). */
-function Points({ value }: { value: number }) {
+/**
+ * Dönem puanı: Lora 22 + "puan" 12 (kürsü ve sabit kart). `fit` (kürsü): dar sütunda büyük yazı
+ * ayarında (ölçek > 1,15) "puan" ÜÇ sütunda birden sayının altına iner ve sayı tek satırda kalıp
+ * gerekirse küçülür — yan sütunun puanına taşmaz, sütunlar aynı dizilimi korur. Normal boyda
+ * Figma'daki yan yana düzen.
+ */
+function Points({ value, fit = false }: { value: number; fit?: boolean }) {
+  const { fontScale } = useWindowDimensions();
+  const stacked = fit && fontScale > 1.15;
   return (
-    <View style={{ flexDirection: "row", alignItems: "baseline", gap: 4 }}>
-      <AppText variant="stat" maxFontSizeMultiplier={MAX_SCALE}>
+    <View style={stacked ? { alignItems: "center", maxWidth: "100%" } : { flexDirection: "row", alignItems: "baseline", gap: 4, maxWidth: "100%" }}>
+      <AppText variant="stat" maxFontSizeMultiplier={MAX_SCALE} numberOfLines={fit ? 1 : undefined} adjustsFontSizeToFit={fit} minimumFontScale={0.75} style={fit ? { flexShrink: 1 } : undefined}>
         {fmtInt(value)}
       </AppText>
       <AppText variant="bodySm" tone="soft" maxFontSizeMultiplier={MAX_SCALE} style={{ fontSize: 12, lineHeight: 16 }}>
@@ -94,7 +104,7 @@ function PodiumSlot({ row, place }: { row: LeaderboardRow; place: 1 | 2 | 3 }) {
         {row.displayName}
       </AppText>
       <RankLabel level={row.level} rankName={row.rankName} align="center" />
-      <Points value={row.points} />
+      <Points value={row.points} fit />
     </View>
   );
 }
@@ -137,7 +147,7 @@ function ListRow({ row, last }: { row: LeaderboardRow; last: boolean }) {
         borderBottomColor: colors.line,
       }}
     >
-      <AppText variant="subhead" tone="soft" maxFontSizeMultiplier={MAX_SCALE} style={{ width: 22, textAlign: "right", fontVariant: ["tabular-nums"] }}>
+      <AppText variant="subhead" tone="soft" numberOfLines={1} maxFontSizeMultiplier={MAX_SCALE} style={RANK_NO_STYLE}>
         {row.rank}
       </AppText>
       <RankAvatar name={row.displayName} avatarUrl={row.avatarUrl} level={row.level} size={36} />
@@ -202,7 +212,7 @@ export function LeaderboardMyRank({ me, ranks }: { me: Leaderboard["me"]; ranks?
       style={{ backgroundColor: colors.surface, borderRadius: radius.card, borderWidth: 1, borderColor: withAlpha(colors.accent, 0.4), padding: space.s4, gap: space.s3 }}
     >
       <View style={{ flexDirection: "row", alignItems: "center", gap: space.s3 }}>
-        <AppText variant="subhead" tone="soft" maxFontSizeMultiplier={MAX_SCALE} style={{ width: 22, textAlign: "right", fontVariant: ["tabular-nums"] }}>
+        <AppText variant="subhead" tone="soft" numberOfLines={1} maxFontSizeMultiplier={MAX_SCALE} style={RANK_NO_STYLE}>
           {hasRank ? fmtInt(me.rank) : "—"}
         </AppText>
         <RankAvatar name={me.displayName} avatarUrl={me.avatarUrl} level={me.level} size={40} />
