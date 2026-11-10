@@ -273,3 +273,35 @@ kutusu; Senin için 56 pt satırlar + altın kenarlı haplar; Bu hafta surfaceAl
   Serbest deneme anasayfada "yeni yayınlandı" kartı (48 sa) ve Denemeler listesiyle görünmeye
   devam eder; şerit ve Sıradaki yalnız randevulu deneme içindir.
 
+
+## 10. Büyük yazı (AX3) turu — 10 Kas 2026
+
+iPhone SE (375 pt) simülatöründe galeri "Bugün v3" ve "Bugün parçaları" bölümleri; Large ve AX3
+(`accessibility-extra-large`), açık ve koyu şema.
+
+**Ortak karar** (`src/theme/text-scale.ts`): `useLargeText()` yazı ölçeği 1,3'ü aşınca true döner
+(XXXL ve AX1–AX5). Yan yana iki bloklu satırlar o zaman alt alta dizilir; metin kesilmez, büyür.
+Yan yana dizilmek ZORUNDA olan sıkışık parçalar (7 gün etiketi, tahta sıra · ad · puan) yerine
+`COMPACT_TEXT_SCALE` (1,3×) tavanı alır. `AppText` artık dıştan verilen `maxFontSizeMultiplier`'ı
+ezmiyor (PR 21'deki düzeltmenin aynısı; iki dal çakışmadan birleşir).
+
+| Parça | AX3'te sorun | Çözüm |
+|---|---|---|
+| `ExamContextLine` | "184 gün · PAEM 2027" ile "bu hafta 3/5" üst üste biniyordu | büyük yazıda "bu hafta" alta iner |
+| `WeekStrip7` | "Cum"/"Cmt" iki satıra kırılıp kutuları kaydırıyordu | etiket tek satır, 1,3× tavan, gerekirse küçülür |
+| `LeaderboardTeaser` | "1." kırılıyor, ad aşırı kısalıyordu | sıra minWidth + tek satır; satır 1,3× tavan |
+| `WeekSummaryLine` | rütbe adı sağdan kesiliyordu | büyük yazıda iki blok alt alta |
+| `CountdownHeader` | "Bu hafta 4/5 gün" sağdan taşıyordu | büyük yazıda noktalar + metin sayının altında |
+| `NextStepCard` | etiket "SIRADA…" diye kesiliyordu | büyük yazıda etiket tam, hap altında |
+| `ForYouList` | "Deneme 4 · Cmt 20:0…" saat bilgisi kayboluyordu | büyük yazıda satır sınırı yok |
+| `RouteList` | "Günlük hed…" kesiliyordu | büyük yazıda "Planım ›" alta iner |
+
+Normal boyda (Large) bütün parçalar Figma 68:474 düzeninde kalır.
+
+**Yan düzeltme (açık şema):** `NextStepCard` hapı `surfaceAlt` zeminliydi; panel iki temada koyu
+olduğu için açık şemada açık bej hap üstünde panelInk yazı neredeyse görünmüyordu. Hap artık
+şeffaf zemin + panelSoft kenar (ForYouList hapıyla aynı dil); yazı panelInk/panel AA çifti.
+Figma 68:474'teki hap zemini bu değişikliğe göre güncellenmeli.
+
+**Kapsam dışı, not:** galerideki Çalış parçaları AX3'te kelime ortasından kırılıyor
+(`CourseCard` "Polis Mevzuat|ı", `ResumeStrip` etiketi "KALDI|ĞIN") — ayrı iş.

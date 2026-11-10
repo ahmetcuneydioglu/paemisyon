@@ -1,0 +1,188 @@
+{
+  "deck": {
+    "topicId": "8b991a24-eecf-48c9-a068-0aecfc65cfd1",
+    "legislationSlug": "aihs",
+    "sourceLabel": "AI bilgi kartı — Avrupa İnsan Hakları Sözleşmesi md P7-7, P7-8, P7-9, P7-10, P12-1, P12-2, P12-3, P12-4, P12-5, P12-6, P13-1, P13-2, P13-3, P13-4, P13-5, P13-6, P13-7, P13-8, P16-1, P16-2, P16-3, P16-4, P16-5, P16-6, P16-7, P16-8, P16-9, P16-10, P16-11",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: resmî madde metni + çıkmış sorular)"
+  },
+  "cards": [
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "7 No.lu Protokol'ün hangi maddeleri Sözleşme'nin ek maddeleri olarak değerlendirilir?",
+      "back": "1'den 6'ya kadar olan maddeleri; Sözleşme'nin tüm hükümleri bunlara göre uygulanır.",
+      "articleRefs": [
+        "P7-7"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 1,
+      "front": "Avrupa Konseyi üyesi bir devlet, Sözleşme'yi onaylamadan 7 No.lu Protokol'ü onaylayabilir mi?",
+      "back": "Hayır. Sözleşme'yi aynı anda ya da daha önceden onaylamış olması gerekir; aksi hâlde Protokol'ü onaylayamaz, kabul edemez ya da uygun bulamaz.",
+      "explanation": "Protokol, Sözleşme'yi imza eden Avrupa Konseyi üyesi ülkelerin imzasına açıktır. Onay, kabul ya da uygun bulma belgeleri Avrupa Konseyi Genel Sekreteri'ne tevdi edilir.",
+      "articleRefs": [
+        "P7-8"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "7 No.lu Protokol'ün yürürlüğe girmesi için kaç Avrupa Konseyi üyesi devletin Protokol'e bağlı kalacağını ifade etmesi gerekir?",
+      "back": "Yedi devlet; bu tarihten itibaren iki aylık sürenin bitişini izleyen ayın ilk günü yürürlüğe girer.",
+      "explanation": "Bağlı kalma iradesi 8. madde hükümlerine uygun biçimde ifade edilir: Protokol onaylama, kabul ya da uygun bulma ile yürürlüğe girer.",
+      "articleRefs": [
+        "P7-9",
+        "P7-8"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "7 No.lu Protokol'e sonradan katılan bir devlet için Protokol ne zaman yürürlüğe girer?",
+      "back": "Onaylama, kabul ya da uygun bulma belgesinin tevdi edildiği tarihten itibaren iki aylık sürenin bitişini izleyen ayın ilk günü.",
+      "articleRefs": [
+        "P7-9"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Ayrımcılığın genel olarak yasaklanmasına dair Protokol'e göre hangi haklardan yararlanma ayrımcılık yapılmadan sağlanır?",
+      "back": "Hukuken temin edilmiş olan tüm haklardan yararlanma, hiçbir ayrımcılık yapılmadan sağlanır.",
+      "articleRefs": [
+        "P12-1"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Ayrımcılığın genel yasağına göre hiç kimse hangi makam tarafından ayrımcılığa maruz bırakılamaz?",
+      "back": "Hiçbir kamu makamı tarafından; 1. paragrafta belirtilen gerekçelerin hiçbiriyle ayrımcılığa maruz bırakılamaz.",
+      "articleRefs": [
+        "P12-1"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "12 No.lu Protokol'ün uygulanacağı toprağı devlet hangi aşamada belirtir?",
+      "back": "İmzalama veya onay, kabul ya da uygun bulma belgesinin verilmesi sırasında belirtir.",
+      "explanation": "Devlet daha sonra Avrupa Konseyi Genel Sekreteri'ne hitaben bir beyanla uygulamayı başka bir toprağa genişletebilir. Bu madde uyarınca yapılan beyan, Sözleşme'nin 56. maddesinin 1. fıkrasına uygun olarak gerçekleştirilmiş sayılır.",
+      "articleRefs": [
+        "P12-2"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "12 No.lu Protokol'ün uygulanmasını yeni bir toprağa genişleten beyan, o toprak için ne zaman yürürlüğe girer?",
+      "back": "Genel Sekreter'in beyanı teslim aldığı tarihten sonraki üç aylık sürenin bitimini izleyen ayın ilk günü.",
+      "explanation": "Beyanın geri alınması ya da değiştirilmesi de Genel Sekreter'in bildirimi teslim aldığı tarihten sonraki üç aylık sürenin bitimini izleyen ayın ilk günü yürürlüğe girer.",
+      "articleRefs": [
+        "P12-2"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "12 No.lu Protokol'de ülkesel beyanda bulunan devlet, o ülke için sonradan Mahkeme'nin hangi yetkisini kabul ettiğini beyan edebilir?",
+      "back": "Her gerçek kişiden, sivil toplum kuruluşundan veya her kişi grubundan Sözleşme'nin 34. maddesine göre ve Protokol'ün 1. maddesi uyarınca başvuruları alma yetkisini.",
+      "articleRefs": [
+        "P12-2"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "12 No.lu Protokol'ün yürürlüğe girmesi için kaç Avrupa Konseyi üyesi devletin bağlanma rızasını bildirmesi gerekir?",
+      "back": "On devlet; rıza bildirim tarihinden itibaren üç aylık süreyi izleyen ayın birinci günü yürürlüğe girer.",
+      "explanation": "Rızasını daha sonra bildiren devlet için Protokol, onay, kabul ya da uygun bulma belgesini teslim ettiği tarihten itibaren üç aylık süreyi izleyen ayın birinci günü yürürlüğe girer.",
+      "articleRefs": [
+        "P12-5"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "13 No.lu Protokol'ün belirli bir ülkeye uygulanmasına ilişkin bildirim geri çekilirse, geri çekme ne zaman yürürlüğe girer?",
+      "back": "İhbarın Genel Sekreter tarafından teslim alınışından sonra üç aylık süreyi izleyen ayın birinci günü.",
+      "explanation": "Her devlet imza sırasında ya da onaylama, kabul veya uygun bulma belgesinin verilmesi sırasında Protokol'ün uygulanacağı ülkeyi veya ülkeleri belirleyebilir. Sonradan başka bir ülkeyi kapsama almak da Avrupa Konseyi Genel Sekreteri'ne yapılacak bildirimle olur.",
+      "articleRefs": [
+        "P13-4"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "16 No.lu Protokol'e göre Avrupa İnsan Hakları Mahkemesinden danışma görüşünü kimler isteyebilir?",
+      "back": "Yüksek Sözleşmeci Tarafların bildirimde belirteceği en yüksek mahkemeleri veya yargı kurumları.",
+      "explanation": "Görüş, Sözleşme ve Protokolleri'nde tanımlanan hak ve özgürlüklerin yorumlanması ve uygulanmasıyla ilgili ilke sorunları üzerine istenir. Seçilen mahkemeler, Avrupa Konseyi Genel Sekreteri'ne gönderilen bildirimle Protokol'ün imzalanması ya da belgenin teslimi sırasında belirtilir.",
+      "articleRefs": [
+        "P16-1",
+        "P16-10"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Bir yüksek mahkeme, önünde derdest bir dava olmadan Avrupa İnsan Hakları Mahkemesinden danışma görüşü isteyebilir mi?",
+      "back": "Hayır. Talepte bulunan mahkeme veya yargı kurumu yalnızca önünde derdest olan bir dava çerçevesinde danışma görüşü isteyebilir.",
+      "articleRefs": [
+        "P16-1"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Danışma görüşü talebinde bulunan mahkeme veya yargı kurumu, talebiyle birlikte ne sunar?",
+      "back": "Talebine dair gerekçe belirtir ve derdest davanın hukuksal ve olgusal arka planına dair bilgi sunar.",
+      "articleRefs": [
+        "P16-1"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Danışma görüşü talebini kabul eden beş yargıçlı kurul, görüşü kendisi verir mi?",
+      "back": "Hayır. Kurul talebi kabul ederse danışma görüşü Büyük Daire tarafından verilir.",
+      "articleRefs": [
+        "P16-2"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Danışma görüşü sürecinde kurula ve Büyük Daireye kendiliğinden resen dahil olan yargıç kimdir?",
+      "back": "Talepte bulunan mahkemenin bağlı olduğu Yüksek Sözleşmeci Taraf bakımından seçilmiş olan Avrupa İnsan Hakları Mahkemesi yargıcı.",
+      "explanation": "Böyle bir yargıç yoksa ya da oturumda görev alması mümkün değilse, ilgili Sözleşmeci Taraf'ın önceden sunduğu listeden Mahkeme Başkanı tarafından seçilen kişi yargıç sıfatıyla görev alır.",
+      "articleRefs": [
+        "P16-2"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 1,
+      "front": "16 No.lu Protokol uyarınca verilen danışma görüşü, onu isteyen mahkeme için bağlayıcı mıdır?",
+      "back": "Hayır. Danışma görüşleri bağlayıcı değildir.",
+      "articleRefs": [
+        "P16-5"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Danışma görüşü isteyebilecek mahkemelerin seçimine dair bildirim sonradan değiştirilebilir mi?",
+      "back": "Evet. Bildirim aynı şekle tabi olarak ve her zaman değiştirilebilir.",
+      "explanation": "İlk bildirim, Avrupa Konseyi Genel Sekreteri'ne gönderilerek Protokol'ün imzalanması sırasında ya da onaylama, kabul veya uygun bulma belgesinin teslimi esnasında yapılır.",
+      "articleRefs": [
+        "P16-10"
+      ],
+      "counterNumbers": []
+    }
+  ]
+}

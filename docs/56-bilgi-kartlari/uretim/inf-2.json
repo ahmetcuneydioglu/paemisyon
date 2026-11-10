@@ -1,0 +1,295 @@
+{
+  "deck": {
+    "topicId": "3a7fb703-175b-4a01-a217-a00766c51d07",
+    "legislationSlug": "5275-ceza-ve-guvenlik-tedbirlerinin-infazi-hakkinda-kanun",
+    "sourceLabel": "AI bilgi kartı — 5275 Ceza ve Güvenlik Tedbirlerinin İnfazı Hakkında Kanun md 16/A, 17, 17/A, 18–25",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: resmî madde metni + çıkmış sorular)"
+  },
+  "cards": [
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Çocuğunun hastalığı nedeniyle kadın hükümlünün cezasının infazının ertelenmesi, toplam hangi süreye kadar olan hapis cezalarında mümkündür?",
+      "back": "Toplam on yıl veya daha az süreli hapis cezalarında. Adli para cezası infaz sürecinde hapis cezasına çevrilmişse de uygulanır.",
+      "explanation": "Çocuk on sekiz yaşını doldurmamış olmalıdır. Ayrıca engelliliği nedeniyle bakıma muhtaç olmalı ya da ağır bir hastalığa maruz kalmalıdır. Hükümlünün toplum güvenliği bakımından ağır ve somut tehlike oluşturmayacağı da değerlendirilmelidir. Erteleme kararını Cumhuriyet Başsavcılığı verir; infaza başlanmış olsa bile karar verilebilir.",
+      "articleRefs": [
+        "16/A"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Çocuğunun hastalığı nedeniyle kadın hükümlüye verilen infaz ertelemesi en çok kaç kez uzatılabilir?",
+      "back": "En çok dört kez uzatılabilir; her uzatma altı ayı geçemez. İlk erteleme bir yıla kadar verilir.",
+      "explanation": "Erteleme süresi içinde zamanaşımı işlemez. Şu hâllerde erteleme kararı kaldırılır ve ceza derhâl infaz olunur: denetimli serbestlik müdürlüğü veya kolluk birimlerinin, hükümlünün ertelemenin amacına ya da yükümlülüklere aykırı davrandığını tespit etmesi; kasten işlenen bir suçtan kamu davası açılması; çocuğun iyileşmesi.",
+      "articleRefs": [
+        "16/A"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Çocuğunun hastalığı nedeniyle infazı ertelenen kadın hükümlüye yurt dışına çıkamama yükümlülüğü konulması Cumhuriyet savcısının tercihine mi bırakılmıştır?",
+      "back": "Hayır. Yurt dışına çıkamama yükümlülüğü Cumhuriyet savcısınca ayrıca ve mutlaka konulur. Hükümlü bunun yanında yerleşim bölgesini terk etmeme, düzenli başvurma ve güvence yatırma yükümlülüklerinden en az birine tâbi tutulur.",
+      "explanation": "Güvence miktarı belirlenirken hükümlünün ekonomik durumu göz önünde bulundurulur. Başvuru yükümlülüğünde hükümlü, belirlenen yerlere belirtilen süreler içinde düzenli olarak başvurur.",
+      "articleRefs": [
+        "16/A"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Hükümlünün istemiyle verilen infaz ertelemesi en fazla kaç kez uygulanabilir?",
+      "back": "En fazla iki kez uygulanabilir; her defasında bir yılı geçemez.",
+      "explanation": "Erteleme, çağrı üzerine gelen hükümlünün istemi üzerine Cumhuriyet Başsavcılığınca verilir. İstemin kabulü güvence gösterilmesine veya diğer bir şarta bağlanabilir. Erteleme süresinde kasten işlenen bir suçtan kamu davası açılırsa erteleme kaldırılır ve ceza derhal infaz olunur. İnfaza başlanmışsa zorunlu ve çok ivedi hâllerde bir yılı geçmeyen sürelerle ara verilebilir; ara verme de iki defadan fazla olamaz.",
+      "articleRefs": [
+        "17"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Hükümlünün istemiyle infaz ertelemesinde taksirle işlenen suçlar için üst sınır üç yıl mıdır?",
+      "back": "Hayır. Taksirle işlenen suçlarda beş yıl veya daha az süreli hapis cezası ertelenebilir. Üç yıl sınırı kasten işlenen suçlar içindir.",
+      "explanation": "Ertelemeyi Cumhuriyet Başsavcılığı verir. Hükümlünün çağrı üzerine gelmiş olması ve ertelemeyi istemesi gerekir.",
+      "articleRefs": [
+        "17"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Hükümlünün istemiyle infazın ertelenmesi ve infaza ara verilmesi hükümleri kimler hakkında uygulanmaz?",
+      "back": "Terör suçları, örgüt faaliyetleri çerçevesinde işlenen suçlar ve cinsel dokunulmazlığa karşı suçlardan mahkûm olanlar; mükerrirlere özgü infaz rejimi uygulananlar; disiplin veya tazyik hapsine mahkûm olanlar.",
+      "explanation": "İstisna maddenin tüm hükümlerini kapsar. Bu hükümlüler için ne istem üzerine erteleme ne de zorunlu ve çok ivedi hâllerde infaza ara verme uygulanır.",
+      "articleRefs": [
+        "17"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Birlikte işlenen suçta Ceza Muhakemesi Kanununun 280. maddesinin üçüncü fıkrası ve 306. maddesi uygulanabilecekse, infazın ertelenmesine veya durdurulmasına hangi merci karar verir?",
+      "back": "Hükmü veren ilk derece mahkemesi karar verir.",
+      "explanation": "Karar verilmeden önce Cumhuriyet savcısının ve hükümlünün görüşlerini yazılı olarak bildirmesi istenebilir. Erteleme veya durdurma talebinin kabulü, güvence gösterilmesine veya diğer bir şarta bağlanabilir.",
+      "articleRefs": [
+        "17/A"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Mahkemenin infazın ertelenmesi veya durdurulması hakkında verdiği karar kesin midir?",
+      "back": "Hayır. Bu karara karşı itiraz yoluna gidilebilir.",
+      "explanation": "Karar duruşma açılmaksızın verilir. Talebin kabulü güvence gösterilmesine veya diğer bir şarta bağlanabilir.",
+      "articleRefs": [
+        "17/A"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Akıl hastalığı dışında ruhsal rahatsızlığı olan ve ruh ve sinir hastalıkları hastanesinde tutulması gerekli görülmeyerek infaz kurumuna geri gönderilen hükümlünün cezası nerede infaz edilir?",
+      "back": "Belirlenen infaz kurumlarının mahsus bölümlerinde infaz edilir.",
+      "explanation": "Bu infaz kurumlarının ihtiyaç duyduğu uzman ve diğer tıp görevlilerini Sağlık Bakanlığı karşılar.",
+      "articleRefs": [
+        "18"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Çağrı kâğıdı tebliğ edilen hükümlü kaç gün içinde gelmezse hakkında yakalama emri çıkarılır?",
+      "back": "On gün içinde gelmezse Cumhuriyet savcısı yakalama emri çıkarır.",
+      "explanation": "Hükümlü kaçarsa ya da kaçacağına dair şüphe uyandırırsa da yakalama emri çıkarılır. Bu hüküm hem hapis cezasının hem güvenlik tedbirinin infazı için geçerlidir.",
+      "articleRefs": [
+        "19"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Kasten işlenen suçlarda hangi süreyi aşan hapis cezasının infazı için doğrudan yakalama emri çıkarılır?",
+      "back": "Üç yıldan fazla hapis cezasında. Taksirle işlenen suçlarda bu eşik beş yıldan fazladır.",
+      "explanation": "Adlî para cezasından çevrilen hapsin infazında ise hükümlüye öncelikle çağrı kâğıdı gönderilir.",
+      "articleRefs": [
+        "19"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Hakkında yakalama emri çıkarılan hükümlüyü yakalamak için konutta arama yapılacaksa arama kararını hangi hâkim verir?",
+      "back": "Sulh ceza hâkimi verir. Aramada Ceza Muhakemesi Kanununun 119 uncu maddesi uygulanır.",
+      "explanation": "Hükümlünün yakalanabilmesi için gerektiğinde konutta, işyerinde ve kamuya açık olmayan kapalı alanlarda arama yapılabilir.",
+      "articleRefs": [
+        "19"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Mahkeme, infaz için Cumhuriyet Başsavcılığına verdiği kesinleşmiş mahkûmiyet kararında neyi açıkça belirtir?",
+      "back": "Kararın hangi hükümlü ve hangi cezanın infazına ilişkin olduğunu.",
+      "explanation": "Cumhuriyet Başsavcılığı ilamı infaz defterine kaydeder. İlamdaki cezanın süresini gözeterek hükümlü hakkında çağrı kâğıdı veya yakalama emri çıkarır.",
+      "articleRefs": [
+        "20"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Adres değişikliğini bildirmeyen hükümlüye çağrı kâğıdı hangi adreste tebliğ edildiğinde tebligat geçerli olur?",
+      "back": "Hükümde gösterilen adreste tebliğ edildiğinde geçerli olur.",
+      "explanation": "Hükümlü, adres değişikliklerini mahkemeye veya Cumhuriyet Başsavcılığına bildirmekle yükümlüdür. Bildirmezse hükümdeki adrese yapılan tebligat geçerlidir.",
+      "articleRefs": [
+        "20"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Cumhuriyet Başsavcılığının hükümlüye verdiği belgede hangi bilgiler yer alır?",
+      "back": "Hükümlünün ceza infaz kurumuna alındığı ve salıverileceği tarih, ceza süresi ve cezanın hangi hükme ilişkin olduğu.",
+      "articleRefs": [
+        "20"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Hakkında kesinleşmiş hapis cezası bulunan kişi ceza infaz kurumuna ne ile gönderilir?",
+      "back": "Cumhuriyet Başsavcılığının yazılı emriyle gönderilir.",
+      "explanation": "Ödenmeyen adlî para cezasının hapse çevrilmesine ilişkin karar bulunanlar için de aynı usul uygulanır. Kurumda önce üst ve eşya araması yapılır, kişi kabul odasına konulur; hekim muayenesinden sonra kuruma yerleştirilir.",
+      "articleRefs": [
+        "21"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Ceza infaz kurumunda hükümlünün numarası neye göre belirlenir?",
+      "back": "Hükümlü defterindeki sıra numarasına göre belirlenir; bu sıra numarası hükümlünün numarasıdır.",
+      "explanation": "Hükümlü defterine şunlar kaydedilir: adı ve soyadı, işlediği suç, cezasının türü ve süresi, mahkûmiyet ilâmının tarih ve numarası, infaza başlandığı gün.",
+      "articleRefs": [
+        "21"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Hükümlünün parmak izi, fotoğrafı ve kan grubu gibi tanı bilgileri, isteyen kurum ve kişilere verilebilir mi?",
+      "back": "Hayır. Bu bilgiler Kanunun zorunlu kıldığı hâller dışında hiçbir kurum ve kişiye verilemez.",
+      "explanation": "Tanı amacıyla hükümlünün parmak ve avuç içi izleri alınır, fotoğrafı çekilir; kan grubu, vücudunun dış özellikleri ve ölçüleri belirlenir. Bu bilgiler kişisel dosyasında veya elektronik ortamda saklanır.",
+      "articleRefs": [
+        "21"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Türkçe bilmeyen yabancı uyruklu hükümlüye kurumdaki hak ve sorumlulukları hangi dilde bildirilir?",
+      "back": "Kendi dilinde bildirilir; bu mümkün olmazsa İngilizce, Fransızca veya Almanca olarak.",
+      "explanation": "Bu bilgileri kurum yöneticileri sözlü olarak anlatır ve yazılı olarak tebliğ eder. Duyma ve konuşma engellilere işaret diliyle anlatılır. Görme engellilere kendi alfabeleriyle yazılmış kitapçık verilir. İnfaz sonrası koruma ve yardım konusunda da ayrıca bilgi verilir.",
+      "articleRefs": [
+        "22"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Yabancı hükümlünün kuruma alınması, uyruğu olduğu devletin konsolosluğuna yalnız hükümlü isterse mi bildirilir?",
+      "back": "Hayır. Hükümlü yazılı olarak karşı çıkmadıkça durum diplomatik temsilcilik veya konsolosluğa bildirilir. İstek şartı, aileye veya hükümlünün gösterdiği kişilere yapılan bildirim içindir.",
+      "explanation": "Bu bildirim kuruma alınmada, başka kuruma nakilde ve hastaneye yatırılmada yapılır.",
+      "articleRefs": [
+        "22"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Hükümlü ölürse durum ailesine ne zaman bildirilir?",
+      "back": "Derhâl bildirilir.",
+      "explanation": "Ölüm hâlinde aile, gösterilen kişiler, diplomatik temsilcilik veya konsolosluk ve askerlik şubesine bildirime ilişkin hükümler de uygulanır.",
+      "articleRefs": [
+        "22"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Hükümlünün gözlem süresi en çok kaç gündür?",
+      "back": "Altmış gündür; gözlem süresi altmış günü geçemez.",
+      "explanation": "Gözlemi gözlem kurulu, kuruma kabul tarihinden başlayarak tek kişilik odalarda yapar. Kurumda tek kişilik oda yoksa ya da sayısı kısıtlıysa gözlem, tahsis edilmiş özel bölümlerde de yapılabilir.",
+      "articleRefs": [
+        "23"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Süreli hapis cezasına mahkûm olanlardan hangileri gözleme tâbi tutulur?",
+      "back": "İki yıldan fazla süreli hapis cezasına mahkûm olanlar. Ağırlaştırılmış müebbet ve müebbet hapis hükümlüleri de gözleme tâbi tutulur.",
+      "explanation": "Hükümlü; kişiliğine, sair hâllerine ve suçun işlenmesindeki özelliklere göre gerektiğinde gözleme tâbi tutulmayabilir.",
+      "articleRefs": [
+        "23"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Gözlem sonunda hükümlünün gönderileceği infaz kurumunu kim belirler?",
+      "back": "Adalet Bakanlığı belirler. Gözlem merkezi, hükümlünün dosyasını görüşüyle birlikte Bakanlığa gönderir.",
+      "explanation": "Ancak idare ve gözlem kurulu, hükümlünün aynı kurumda veya o yer Cumhuriyet Başsavcılığına bağlı diğer kurumlarda kalmasını uygun bulursa dosya Bakanlığa gönderilmez. Bu durumda infaz, hükümlünün bulunduğu ya da Cumhuriyet Başsavcılığınca gönderileceği bağlı kurumda devam eder.",
+      "articleRefs": [
+        "23"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Hükümlülerin ayrıldığı gruplar arasında hangileri sayılır?",
+      "back": "Bazıları: ilk defa suç işleyenler, mükerrirler, itiyadî suçlular veya suç işlemeyi meslek edinenler, tehlike hâli taşıyanlar, terör suçluları, suç örgütlerine mensup olanlar.",
+      "explanation": "Aklî ve bedensel durumları ya da yaşları nedeniyle özel bir infaz rejimine tâbi tutulması gerekenler de ayrı bir grup oluşturur. Hükümlüler ayrıca yaşları, hükümlülük süreleri ve suç türleri itibarıyla da gruplandırılır.",
+      "articleRefs": [
+        "24"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Ağırlaştırılmış müebbet hapis hükümlüsüne günde ne kadar açık havaya çıkma ve spor yapma hakkı tanınır?",
+      "back": "Günde bir saat. Bu süre, risk ve güvenlik gereklerine, hükümlünün çalışmalardaki gayretine ve iyi hâline göre uzatılabilir.",
+      "explanation": "Hükümlü tek kişilik odada barındırılır. Aynı şartlarla, aynı ünitede kalan hükümlülerle sınırlı olarak temas etmesine izin verilebilir.",
+      "articleRefs": [
+        "25"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Ağırlaştırılmış müebbet hapis hükümlüsünün telefon görüşmesi en çok kaç dakika sürebilir?",
+      "back": "On dakika. Hükümlü, kurum idare kurulunun uygun gördüğü hâllerde onbeş günde bir kez telefon edebilir.",
+      "explanation": "Telefon görüşmesi yalnız eşi, altsoy ve üstsoyu, kardeşleri ve vasisiyle yapılabilir. Bu kişiler hükümlüyü belirlenen gün, saat ve koşullarda, onbeş günlük aralıklarla ve günde bir saati geçmemek üzere ziyaret edebilir.",
+      "articleRefs": [
+        "25"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Ağırlaştırılmış müebbet hapis hükümlüsünün cezasının infazına ara verilebilir mi?",
+      "back": "Hayır. Cezanın infazına hiçbir surette ara verilemez. Hükümlü kurum dışında da çalıştırılamaz ve kendisine izin verilmez.",
+      "explanation": "Sağlık tedbirleri, tıbbî tetkik ve zorunluluklar hariç, ceza infaz kurumunda uygulanır. Bu mümkün değilse tam teşekküllü Devlet ya da üniversite hastanelerinin tek kişilik ve yüksek güvenlikli mahkûm koğuşlarında uygulanır.",
+      "articleRefs": [
+        "25"
+      ],
+      "counterNumbers": []
+    }
+  ]
+}

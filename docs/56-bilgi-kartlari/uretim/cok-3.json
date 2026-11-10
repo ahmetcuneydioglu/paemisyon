@@ -1,0 +1,276 @@
+{
+  "deck": {
+    "topicId": "48443974-0207-4ac2-b51a-34ba2a7b8070",
+    "legislationSlug": "5395-sayili-cocuk-koruma-kanunu",
+    "sourceLabel": "AI bilgi kartı — 5395 Sayılı Çocuk Koruma Kanunu md 39–41, 41/A, 41/B, 41/C, 41/D, 41/E, 41/F",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: resmî madde metni + çıkmış sorular)"
+  },
+  "cards": [
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Çocuğa uygulanacak denetimin yöntemini belirleyen plân, görevlendirmeyi takip eden kaç gün içinde hazırlanır?",
+      "back": "On gün içinde. Plânı denetim görevlisi, sosyal incelemeyi yapan uzman veya sosyal çalışma görevlisiyle birlikte hazırlar.",
+      "explanation": "Plân, mahkeme veya çocuk hâkimince onaylandıktan sonra derhâl uygulanır.",
+      "articleRefs": [
+        "39"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Denetim plânı hazırlanırken çocuk hâkiminin görüşü dikkate alınır mı?",
+      "back": "Hayır. Dikkate alınan görüş çocuğun görüşüdür. Çocuk hâkimi ya da mahkeme hazırlanan plânı onaylar.",
+      "explanation": "Plân hazırlanırken şu hususlar dikkate alınır: tedbirin amacı, niteliği ve süresi; çocuğun ihtiyaçları; içinde bulunduğu tehlike hâlinin ciddiyeti; ana ve babası, vasisi, bakım ve gözetiminden sorumlu kimse tarafından çocuğa verilen desteğin derecesi; adli süreç sebebiyle tedbir alınmışsa suç teşkil eden fiilin mahiyeti; çocuğun görüşü.",
+      "articleRefs": [
+        "39"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Onaylanan denetim plânı uygulanırken denetim görevlisi, kararın değiştirilmesini gerektiren bir durum olup olmadığı konusunda mahkeme veya çocuk hâkimine ne zaman rapor verir?",
+      "back": "Her ay rapor verir; ayrıca talep hâlinde de rapor verir.",
+      "explanation": "Raporda şunlar yer alır: kararın uygulama biçimi ve çocuk üzerindeki etkileri; ana ve babası, vasisi, bakım ve gözetiminden sorumlu kimselerin veya kurumların sorumluluklarını gereğince yerine getirip getirmedikleri; kararın değiştirilmesini gerektiren bir durum olup olmadığı; istenen diğer hususlar.",
+      "articleRefs": [
+        "39"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Çocuk hakkındaki denetim kural olarak ne zaman sona erer?",
+      "back": "Kararda öngörülen sürenin dolmasıyla sona erer.",
+      "articleRefs": [
+        "40"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Denetim, kararda öngörülen süre dolmadan hangi hâlde kaldırılabilir?",
+      "back": "Tedbirden beklenen yararın elde edilmesi hâlinde kaldırılabilir.",
+      "articleRefs": [
+        "40"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Çocuğun başka bir suçtan dolayı hangi durumları denetimi sona erdirir?",
+      "back": "Çocuğun başka bir suçtan dolayı tutuklanması ya da cezasının yerine getirilmesine başlanması denetimi sona erdirir.",
+      "articleRefs": [
+        "40"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Sosyal inceleme raporu ile denetim plânı ve raporunun bir örneğini kimler alabilir?",
+      "back": "Çocuğun avukatı veya yasal temsilcisi alabilir. Örneği Cumhuriyet savcısından, mahkemeden veya çocuk hâkiminden alırlar.",
+      "articleRefs": [
+        "41"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Sosyal inceleme raporunun içeriği hakkında çocuğa bilgi verilir mi?",
+      "back": "Evet. Çocuğa raporun içeriği hakkında bilgi verilir.",
+      "articleRefs": [
+        "41"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Bilgi sahibi olmanın çocuğun yararına aykırı olduğuna kanaat getirilirse, sosyal inceleme raporunun incelenmesi çocuğun avukatı bakımından da yasaklanabilir mi?",
+      "back": "Hayır. İnceleme yasağı çocuk ve avukatı hariç tutularak konulur. Yasal temsilci bakımından ise inceleme kısmen veya tamamen yasaklanabilir.",
+      "explanation": "Yasak; sosyal inceleme raporu ile denetim plânı ve raporunu kapsar. Yasak konulabilmesi için bu belgelerden bilgi sahibi olunmasının çocuğun yararına aykırı olduğuna kanaat getirilmesi gerekir.",
+      "articleRefs": [
+        "41"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Aile mahkemelerinin çocuk teslimi veya çocukla kişisel ilişki kurulmasına dair ilam ve tedbir kararlarını hangi birimler yerine getirir?",
+      "back": "Adalet Bakanlığınca kurulan adli destek ve mağdur hizmetleri müdürlükleri yerine getirir. Bu sırada çocuğun üstün yararı esas alınır.",
+      "explanation": "Müdürlüklerde müdür, yeteri kadar müdür yardımcısı ve personel ile psikolog, pedagog ve sosyal çalışmacı Adalet Bakanlığı tarafından görevlendirilir.",
+      "articleRefs": [
+        "41/A"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Adli destek ve mağdur hizmetleri müdürlüğü bulunmayan yerlerde, çocuk teslimi ve kişisel ilişki kararlarının yerine getirilmesi görevi kime aittir?",
+      "back": "Adalet Bakanlığınca belirlenen hukuk mahkemeleri yazı işleri müdürlüğüne aittir.",
+      "articleRefs": [
+        "41/A"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Çocuk teslimi ve kişisel ilişki ilam ve tedbir kararlarının yerine getirilmesinde hangi yerin müdürlüğü yetkilidir?",
+      "back": "Çocuğun yerleşim yeri müdürlüğü yetkilidir.",
+      "explanation": "Kararlar, müdürlükçe görevlendirilen psikolog, pedagog, sosyal çalışmacı, çocuk gelişimci ve rehber öğretmen gibi uzmanlar eliyle yerine getirilir. Uzman bulunmayan yerlerde bu görevi öğretmen üstlenir. Valilikler, müdürlüğün talebi üzerine bu uzmanlardan oluşan bir görevli listesi oluşturur.",
+      "articleRefs": [
+        "41/A"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Yükümlü teslim emrinin gereğini yerine getirmeyince müdürlük kolluktan yardım isterse, kolluk zor kullanabilir mi?",
+      "back": "Evet. Kolluk birimleri, zor kullanma dâhil bu konudaki talepleri derhâl yerine getirir. Çocuk nerede bulunursa bulunsun müdürlükçe alınarak hak sahibine teslim edilir.",
+      "explanation": "Teslim emrinde de yükümlüye bir uyarı yer alır: Çocuğu getirmezse ya da haklı mazeretiyle müdürlükçe alınmasını talep etmezse, çocuk uzman veya öğretmen marifetiyle, gerekirse kolluktan yardım alınarak ve zor kullanılarak teslim alınır.",
+      "articleRefs": [
+        "41/B"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Çocuk hak sahibine teslim edildikten sonra yükümlü haklı bir sebep olmaksızın çocuğu tekrar alırsa, yeni bir hüküm gerekir mi?",
+      "back": "Hayır. Yeni bir hükme, yükümlüyle irtibata ya da teslim emri tebliğine gerek olmaksızın çocuk, beşinci fıkra uyarınca hak sahibine teslim edilir.",
+      "explanation": "Beşinci fıkraya göre çocuk nerede bulunursa bulunsun müdürlük tarafından alınır. Bu sırada kolluktan yardım istenebilir.",
+      "articleRefs": [
+        "41/B"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Müdürlük, çocuk teslimi sürecinde yükümlüyle irtibata geçmeden ve teslim emri tebliğ etmeden çocuğu hangi hâllerde doğrudan alıp hak sahibine teslim edebilir?",
+      "back": "Çocuğun üstün yararının gerektirdiği hâllerde. Müdürlük bu durumda beşinci fıkra hükmünü doğrudan uygulayabilir.",
+      "articleRefs": [
+        "41/B"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Kişisel ilişki dosyasında, teslim emrinin tebliğinden sonra hak sahibi çocuğu teslim almaya geleceğini müdürlüğe teslim saatinden en az kaç saat önce bildirmelidir?",
+      "back": "En az kırk sekiz saat önce. Bildirimi yazılı olarak, elektronik ortamda veya başvuru aşamasında beyan ettiği iletişim kanalıyla yapar.",
+      "explanation": "Hak sahibi bildirimde bulunmazsa ya da gelemeyeceğini bildirirse, bu durum yükümlüye bildirilir. Aynı bildirimde, yükümlünün çocuğu emirde belirtilen yere getirme zorunluluğu bulunmadığı da belirtilir. Tüm bu işlemler tutanak altına alınır.",
+      "articleRefs": [
+        "41/C"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Kişisel ilişki dosyasında hak sahibi, geleceğini bildirdiği hâlde haklı bir mazeret olmaksızın kaç kez gelmezse dosya işlemden kaldırılır?",
+      "back": "Art arda iki kez veya bir yılda üç kez gelmezse. Bu durumda müdürlük, dosyanın işlemden kaldırılmasına ve teslim emrinin hükümsüz hâle gelmesine karar verir.",
+      "explanation": "Bu karar hak sahibine ve yükümlüye tebliğ edilir. Müdürlük ise ayrı bir hâlde suç duyurusunda bulunur: hak sahibinin, sürenin bitiminde çocuğu belirlenen yere getirmemesi hâlinde.",
+      "articleRefs": [
+        "41/C"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Kişisel ilişki dosyasında yükümlü, teslim emrinin tebliğinden sonra en az ne kadar süre emrin gereğini usulüne uygun yerine getirirse müdürlük dosyayı işlemden kaldırabilir?",
+      "back": "En az bir yıl. Ayrıca yükümlünün, sonraki dönemde de mahkeme kararına uygun hareket edeceğini taahhüt etmesi gerekir.",
+      "explanation": "Müdürlük, ilgili uzmanın kanaatini de alarak dosyanın işlemden kaldırılmasına ve teslim emrinin hükümsüz hâle gelmesine karar verebilir. Yükümlü taahhüdünü yerine getirmezse, hak sahibinin talebiyle yükümlüye doğrudan teslim emri tebliğ edilir.",
+      "articleRefs": [
+        "41/C"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Çocuk teslimi ve çocukla kişisel ilişki kurulmasına dair kararların yerine getirilmesine ilişkin işlemler nerede gerçekleştirilir?",
+      "back": "Müdürlükçe belirlenen teslim mekânlarında gerçekleştirilir.",
+      "articleRefs": [
+        "41/D"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Teslim işlemleri için elverişli teslim mekânlarını kimler belirler, yoksa oluşturur, araç tahsis eder ve sürücü görevlendirir?",
+      "back": "Müdürlüğün talebi üzerine valilikler ve belediyeler.",
+      "articleRefs": [
+        "41/D"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Teslim mekânlarının güvenliğinin sağlanmasında ve teslim hizmetlerinin sunumunda müdürlüğe her türlü desteği sağlamakla kimler yükümlüdür?",
+      "back": "Kamu kurum ve kuruluşları ile belediyeler yükümlüdür.",
+      "explanation": "Bu destek yükümlülüğü teslim mekânlarının belirlenmesini, oluşturulmasını ve tefrişini de kapsar.",
+      "articleRefs": [
+        "41/D"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Çocuk teslimi ve kişisel ilişki kararlarının yerine getirilmesinde müdürlükçe yapılan işlemlere karşı şikâyet süresi nedir?",
+      "back": "Bir hafta. Süre öğrenme veya tebliğ tarihinden itibaren işler; şikâyet, işlemi yapan müdürlüğün bulunduğu yer aile mahkemesine yapılır.",
+      "explanation": "Mahkeme, yapılan işlemlerin yerine getirilmesini durdurabilir. Kararını dosya üzerinden ya da gerektiğinde ilgilileri dinleyerek ivedilikle verir.",
+      "articleRefs": [
+        "41/E"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Müdürlük işlemine karşı yapılan şikâyet üzerine aile mahkemesinin verdiği karara hangi süre içinde itiraz edilebilir?",
+      "back": "Tebliğ tarihinden itibaren iki hafta içinde. İtiraz mercii kararını bir hafta içinde verir ve bu karar kesindir.",
+      "explanation": "Merci itirazı yerinde görürse işin esası hakkında karar verir.",
+      "articleRefs": [
+        "41/E"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Aile mahkemesinin üç dairesi bulunan bir yerde, 3 No.lu dairenin şikâyet kararına yapılan itiraz 2 No.lu daireye mi gönderilir?",
+      "back": "Hayır. Son numaralı dairenin kararına yapılan itiraz birinci daireye gönderilir. Numara olarak kendisini izleyen daireye gönderme kuralı, son daire dışındaki daireler içindir.",
+      "explanation": "O yerde aile mahkemesinin tek dairesi varsa dosya asliye hukuk mahkemesine gönderilir. Aile mahkemesi hâkimi ile asliye hukuk mahkemesi hâkimi aynı hâkimse, dosya en yakın aile mahkemesine veya asliye hukuk mahkemesine ivedilikle gönderilir.",
+      "articleRefs": [
+        "41/E"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Teslim emrine aykırı hareket eden kişinin disiplin hapsiyle cezalandırılması için şikâyet hangi süre içinde yapılmalıdır?",
+      "back": "Bir ay içinde. Şikâyete bakacak görevli ve yetkili mahkeme, işlemi yapan müdürlüğün bulunduğu yer aile mahkemesidir.",
+      "explanation": "Şikâyetten vazgeçilirse dava ve bütün sonuçlarıyla beraber ceza düşer. Çocuk teslimi emrine aykırılık ile süre bitiminde çocuğu getirmeyen hak sahibi hâllerinde, çocuğun velayet hakkı sahibine teslim edilmesi de cezayı düşürür.",
+      "articleRefs": [
+        "41/F"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Çocukla kişisel ilişki kurulmasına dair teslim emrine aykırı hareket eden yükümlü, üç aya kadar disiplin hapsiyle mi cezalandırılır?",
+      "back": "Hayır. Bu hâlde ceza üç günden on güne kadar disiplin hapsidir. Üç aya kadar disiplin hapsi, çocuk teslimi emrine aykırılık ile süre bitiminde çocuğu getirmeyen hak sahibi içindir.",
+      "explanation": "Üç aya kadar disiplin hapsi öngörülen iki hâlde bu ceza, fiil suç teşkil etse dahi verilir. Tüm hâllerde cezalandırma, bir ay içinde yapılacak şikâyete bağlıdır.",
+      "articleRefs": [
+        "41/F"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Teslim emrine muhalefetten verilen disiplin hapsi kararı, kesinleştiği tarihten itibaren ne kadar süre geçince yerine getirilemez?",
+      "back": "İki yıl geçince yerine getirilemez. Kesinleşen karar Cumhuriyet başsavcılığınca infaz edilir.",
+      "explanation": "Aile mahkemesinin bu kararlarına karşı 41/E maddesinin üçüncü fıkrası uyarınca itiraz edilebilir.",
+      "articleRefs": [
+        "41/F"
+      ]
+    }
+  ]
+}

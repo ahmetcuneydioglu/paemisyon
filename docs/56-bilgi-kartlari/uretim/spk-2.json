@@ -1,0 +1,284 @@
+{
+  "deck": {
+    "topicId": "52223b97-98b3-408b-93f4-3e3a03bf509b",
+    "legislationSlug": "2820-siyasi-partiler-kanunu",
+    "sourceLabel": "AI bilgi kartı — 2820 Siyasi Partiler Kanunu md 20–37",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: resmî madde metni + çıkmış sorular)"
+  },
+  "cards": [
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Siyasi partinin ilçe yönetim kurulu en az kaç üyeden oluşur?",
+      "back": "En az 5 üyeden. Üye sayısını parti tüzüğü belirler, ama bu sayı 5'ten az olamaz.",
+      "explanation": "İlçe başkanını ve ilçe yönetim kurulunu ilçe kongresi seçer. İlçe başkanı en çok üç yıl için seçilir. Seçim şeklini ve geçici yönetim kurulunun nasıl oluşturulacağını parti tüzüğü gösterir.",
+      "articleRefs": [
+        "20"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Delege sıfatı olmayan geçici ilçe yönetim kurulu üyesi, ilçe kongresinde oy kullanabilir mi?",
+      "back": "Hayır. Geçici ilçe yönetim kurulu başkan ve üyeleri kongreye katılabilir; ama delege sıfatı olmayanların oy kullanma hakkı yoktur.",
+      "explanation": "İlçe kongresi, üyelerin seçtiği ve sayısı 400'ü aşmayan delegelerden oluşur. İlçe yönetim kurulu ve varsa ilçe disiplin kurulu başkan ve üyeleri kongrenin tabii üyeleridir.",
+      "articleRefs": [
+        "20"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "İlçe yönetim kuruluna işten el çektirildiğinde, yeni yönetim kurulunu seçmek için ilçe kongresi hangi süre içinde toplanır?",
+      "back": "Otuz gün içinde. Süre, el çektirme kararının ilçe yönetim kuruluna bildirilmesinden itibaren işler.",
+      "explanation": "Bu süre içinde ilçe kongresi için yeni delegeler seçilmemişse kongre eski delegelerle toplanır.",
+      "articleRefs": [
+        "20"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Seçim yapılacak ilçe kongresinde, kongreye katılacak üyelerin listesi toplantıdan en az kaç gün önce verilir?",
+      "back": "En az onbeş gün önce verilir. Liste iki nüsha olarak o yer ilçe seçim kurulu başkanına teslim edilir.",
+      "explanation": "Büyük kongre ve il kongreleri için liste, Yüksek Seçim Kurulunun önceden belirleyeceği seçim kurulu başkanına verilir. Onaylanan liste, kongreden yedi gün önce partinin ilgili teşkilatının binasına asılarak ilan edilir. İlan süresi üç gündür.",
+      "articleRefs": [
+        "21"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Kongre listesine yapılan itirazı hâkim yedi gün içinde karara bağlar mı?",
+      "back": "Hayır. İlan süresi içindeki itirazı hâkim en geç iki gün içinde kesin olarak karara bağlar. Yedi gün, listenin kongreden önce ilan edileceği süredir.",
+      "explanation": "Kesinleşen listeler ve toplantıya ilişkin diğer hususlar hâkim tarafından onaylanır ve siyasi partinin ilgili teşkilatına gönderilir.",
+      "articleRefs": [
+        "21"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Hâkim kongre seçimlerinin iptaline karar verirse, seçimlerin yenileneceği tarih hangi aralıkta belirlenir?",
+      "back": "Bir aydan az ve iki aydan fazla olmamak üzere belirlenir. Hâkim tarihi tespit eder ve ilgili siyasi partiye bildirir.",
+      "explanation": "İptal, seçim sonuçlarını etkileyecek ölçüde bir usulsüzlük veya kanuna aykırı uygulama nedeniyle olur. Belirlenen günde yalnız seçim yapılır. Seçim sonuçlarına itiraz, tutanakların düzenlenmesinden itibaren iki gün içinde yapılır; hâkim itirazı aynı gün inceler ve kesin olarak karara bağlar.",
+      "articleRefs": [
+        "21"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Bir siyasi partinin Türkiye Büyük Millet Meclisinde grup kurabilmesi için en az kaç milletvekili gerekir?",
+      "back": "En az yirmi milletvekili gerekir.",
+      "articleRefs": [
+        "22"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Bir siyasi partinin grup kurduğunu Türkiye Büyük Millet Meclisi Başkanlığına kim bildirir?",
+      "back": "Partinin genel başkanlığı bildirir. Bildirim Türkiye Büyük Millet Meclisi Başkanlığına yazıyla yapılır.",
+      "articleRefs": [
+        "22"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Siyasi parti grubunun iç yönetmeliği hangi süre içinde hazırlanır?",
+      "back": "Onbeş gün içinde hazırlanır. Süre, grubun kurulduğunun bildirildiği tarihten başlar.",
+      "explanation": "İçyönetmeliği grubu oluşturan milletvekilleri hazırlar.",
+      "articleRefs": [
+        "23"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Grup içyönetmeliğinin kabulü için hangi çoğunluk zorunludur?",
+      "back": "Milletvekillerinin salt çoğunluğu. Kabul edilen içyönetmelik Türkiye Büyük Millet Meclisi Başkanlığına gönderilir.",
+      "explanation": "Grup içyönetmeliğine parti tüzük ve programına aykırı hükümler konulamaz.",
+      "articleRefs": [
+        "23"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Bir siyasi partinin grup genel kurulu kimlerden oluşur?",
+      "back": "O partinin milletvekillerinden oluşur.",
+      "articleRefs": [
+        "24"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Türkiye Büyük Millet Meclisi Başkanı, yeniden milletvekili adayı olmaya ilişkin parti faaliyetlerine katılabilir mi?",
+      "back": "Evet. Başkan ve başkanvekilleri, partilerinin ve parti grubunun Meclis içindeki ya da dışındaki faaliyetlerine katılamaz; ancak yeniden milletvekili adayı olmaya ilişkin faaliyetler bu yasağın dışındadır.",
+      "articleRefs": [
+        "24"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Her siyasi parti grubunda hangi kurullar bulunur?",
+      "back": "Birer yönetim ve disiplin kurulu bulunur. Bu kurulların kuruluşu, görev ve yetkileri grup içyönetmeliğinde belirtilir.",
+      "articleRefs": [
+        "25"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Grup disiplin kurulunun hangi hâllerde merkez disiplin kurulu ile bir arada çalışacağı nerede gösterilir?",
+      "back": "Parti tüzüğünde gösterilir.",
+      "articleRefs": [
+        "25"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Partinin genel başkanı milletvekili değilse parti grubunun başkanı nasıl belirlenir?",
+      "back": "Grup üyeleri arasından, içyönetmelikte gösterilen yöntemle seçilir. Genel başkan milletvekiliyse grubun da başkanıdır.",
+      "articleRefs": [
+        "26"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Grup genel kurulunda hangi oylamalar gizli oyla yapılır?",
+      "back": "Seçimlere ait oylamalar ile milletvekillerini bağlayıcı nitelikteki konulara ilişkin kararların oylamaları gizli oyla yapılır.",
+      "articleRefs": [
+        "27"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Kongrede tabii üye olarak bulunan yönetim kurulu üyesi, kendi kurulunun ibrası için yapılan oylamaya katılabilir mi?",
+      "back": "Hayır. Kongrelerde tabii üye olarak bulunan merkez karar ve yönetim kurulu ile yönetim kurulları üyeleri, mensup oldukları kurulun ibra oylamasına katılamaz.",
+      "articleRefs": [
+        "30"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Siyasi partilerin yan kuruluşları ve yurt dışı temsilcilikleri nerede bulunur?",
+      "back": "Parti tüzüklerinde belirtilen yerlerde.",
+      "articleRefs": [
+        "31"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Merkez karar ve yönetim kurulu üyesi, partisinin Türkiye Büyük Millet Meclisi grubu yönetim kurulunda görev alabilir mi?",
+      "back": "Hayır. Merkez karar ve yönetim kuruluna üye olanlar, o partinin Türkiye Büyük Millet Meclisi parti grubu yönetim kurulunda görev alamaz.",
+      "explanation": "Disiplin kurullarında görev alanlar ise Türkiye Büyük Millet Meclisindeki parti grubu üyeliğinde bulunabilir.",
+      "articleRefs": [
+        "32"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Parti disiplin kurulunda görev alan kişi hangi parti görevlerinde yine de bulunabilir?",
+      "back": "Kongrelerde ve Türkiye Büyük Millet Meclisindeki parti grubu üyeliğinde bulunabilir. Bunlar dışında partinin diğer organ, kurul ve görevlerinde bulunamaz.",
+      "explanation": "Disiplin kurulunda görev alan kişi partiye hizmet bağıyla bağlı olamaz ve partiden herhangi bir suretle gelir sağlayamaz. Diğer bir disiplin kurulunda da görev alamaz.",
+      "articleRefs": [
+        "32"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Hangi yakınlar aynı parti disiplin kurulunda görev alamaz?",
+      "back": "Eşler ile bir ve ikinci derecedeki kan ve sıhri hısımlar. Bunlarla ilgili kararlara da katılamazlar.",
+      "articleRefs": [
+        "32"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Parti organlarına seçilen ya da atananların bilgileri hangi süre içinde mülki amirliğe bildirilir?",
+      "back": "Onbeş gün içinde. Süre seçim veya atanmadan başlar; bildirim o mahallin en büyük mülki amirliğine yazıyla yapılır.",
+      "explanation": "Bildirilen bilgiler arasında ad, soyad, doğum yeri ve tarihi, meslek veya sanat, ikametgâh ve nüfus cüzdanı örneği bulunur. Parti kongreleri bu yükümlülüğün dışındadır.",
+      "articleRefs": [
+        "33"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Siyasi partinin merkez organlarında görevlendirilenlerin bilgi ve belgeleri kime verilir?",
+      "back": "Doğrudan İçişleri Bakanlığına ve Cumhuriyet Başsavcılığına verilir; süre, diğer organlar için öngörülen süreyle aynıdır.",
+      "explanation": "Mülki amirliğe bildirilen bilgi ve belgeleri valilikler birleştirir ve İçişleri Bakanlığına ve Cumhuriyet Başsavcılığına gönderir.",
+      "articleRefs": [
+        "33"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Bir siyasi parti bir ilde teşkilatlanmış sayılmak için o ilin ilçelerinin en az ne kadarında teşkilat kurmalıdır?",
+      "back": "En az üçte birinde teşkilat kurmalıdır. Merkez ilçe de bu hesaba dahildir.",
+      "articleRefs": [
+        "36"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Seçime katılma yeterliliği olan parti, kongrelerini süresinde yapmadığı ilk dönemde bu yeterliliği kaybeder mi?",
+      "back": "Hayır. Yeterlilik, ilçe, il ve büyük kongreler süreleri içinde üst üste iki defa yapılmamışsa kaybedilir.",
+      "explanation": "Kongreler, teşkilatlanma yeter sayısı esas alınarak, bu Kanunda ve parti tüzüğünde belirtilen süreler içinde yapılmalıdır.",
+      "articleRefs": [
+        "36"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Milletvekili adaylarının tespit edileceği gün, genel seçimlerden en az kaç gün önceye belirlenir?",
+      "back": "En az yetmişbeş gün önceye belirlenir. Tarihi Yüksek Seçim Kurulu belirler ve ilan eder.",
+      "explanation": "Seçime katılacak bütün siyasi partilerin, tüzüklerindeki usullere göre il ve ilçelerde yapacakları aday tespitleri bütün yurtta aynı günde yapılır. Aday tespitinde genel seçimler için kabul edilen seçim çevresi esas alınır.",
+      "articleRefs": [
+        "37"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Ön seçim ya da aday yoklaması yapılan seçim çevrelerinde gösterilen merkez adaylarının toplamı hangi sınırı aşamaz?",
+      "back": "Türkiye Büyük Millet Meclisi üye tamsayısının % 5'ini aşamaz.",
+      "explanation": "Merkez adayının ili, seçim çevresi ve aday listesindeki sırası, ön seçim veya aday yoklaması tarihinden en az on gün önce Yüksek Seçim Kuruluna bildirilmelidir.",
+      "articleRefs": [
+        "37"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Ön seçim ya da aday yoklaması yapılmayan yerlerde siyasi partiler adaylarını hangi usullerle belirleyebilir?",
+      "back": "Merkez yoklaması veya diğer usullerden biri ya da birkaçıyla belirleyebilir. Partilerin bu aday belirleme yetkileri saklıdır.",
+      "explanation": "Aday tespiti serbest, eşit, gizli oy ve açık tasnif esasları çerçevesinde yapılır. Usul ve esasları partiler tüzüklerinde belirler.",
+      "articleRefs": [
+        "37"
+      ]
+    }
+  ]
+}

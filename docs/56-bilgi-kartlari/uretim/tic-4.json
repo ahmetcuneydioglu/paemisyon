@@ -1,0 +1,287 @@
+{
+  "deck": {
+    "topicId": "d4a6b734-0110-4c9e-ae57-8cc39091a369",
+    "legislationSlug": "tbmm-ictuzugu",
+    "sourceLabel": "AI bilgi kartı — Türkiye Büyük Millet Meclisi İçtüzüğü md 135–186",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: resmî madde metni + çıkmış sorular)"
+  },
+  "cards": [
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Milletvekilinin istifa yazısının gerçekliği Başkanlık Divanınca kaç gün içinde incelenip tespit edilir?",
+      "back": "Yedi gün içinde. Ardından üyeliğin düşmesine Genel Kurulca görüşmesiz karar verilir.",
+      "explanation": "İstifada Genel Kurul ayrıca karar verir, ama bu karar görüşme açılmadan alınır.",
+      "articleRefs": [
+        "136"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Seçilmeye engel bir suçtan kesin hüküm giyen milletvekilinin üyelik sıfatı ne zaman sona erer?",
+      "back": "Kesinleşmiş mahkeme kararının Genel Kurulun bilgisine sunulmasıyla sona erer.",
+      "explanation": "Aynı kural kısıtlanan milletvekili için de geçerlidir. Bu halde Genel Kurulda oylama yapılmaz. İstifada ise Genel Kurul görüşmesiz karar verir.",
+      "articleRefs": [
+        "136"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Bağdaşmayan bir görevi sürdürmekte ısrar eden milletvekilinin üyeliğinin düşmesi oylaması, Karma Komisyon raporu üzerindeki görüşmeler bittikten sonra en erken ne zaman yapılabilir?",
+      "back": "Yirmi dört saat geçmeden yapılamaz. Üyeliğin düşmesi Genel Kurulda gizli oyla karara bağlanır.",
+      "explanation": "Durumu önce Başkanlık Divanı inceler. Karar, Anayasa ve Adalet Komisyonları üyelerinden kurulu Karma Komisyona gönderilir. Milletvekili Karma Komisyonda ve Genel Kurulda kendini savunabilir ya da bir üyeye savundurabilir. Son söz her halde savunmanındır.",
+      "articleRefs": [
+        "137"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Devamsızlık nedeniyle üyeliğin düşmesinde devamsızlığı kim tespit eder ve dosya hangi komisyona gönderilir?",
+      "back": "Başkanlık Divanı tespit eder; dosya Anayasa ve Adalet Komisyonları üyelerinden kurulu Karma Komisyona gönderilir.",
+      "articleRefs": [
+        "138"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Gizli oylamada yeşil yuvarlak ne anlama gelir?",
+      "back": "Çekimser oy anlamına gelir.",
+      "explanation": "Beyaz yuvarlak olumlu, kırmızı yuvarlak olumsuz oydur. Yuvarlakların üzerinde hiçbir işaret bulunmaz ve kürsüden kutuya atılır.",
+      "articleRefs": [
+        "139"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Açık veya gizli oylamanın zorunlu olduğu belirtilmeyen hususlarda kaide olarak hangi oylamaya başvurulur?",
+      "back": "İşaret oyuna başvurulur.",
+      "explanation": "İçtüzükte işaret oyuyla halledileceği belirtilen hususlarda oylamanın işaretle yapılması zorunludur.",
+      "articleRefs": [
+        "140"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Milletlerarası andlaşmaların onaylanmasının uygun bulunması hakkındaki kanun tekliflerinin tümü hangi yöntemle oylanır?",
+      "back": "Açık oylama ile oylanır.",
+      "explanation": "Açık oylamanın zorunlu olduğu konular arasında şunlar da vardır: merkezî yönetim bütçe kanun teklifleri; vergi, resim ve harçlar konulmasına, kaldırılmasına, eksiltilmesine veya artırılmasına dair kanun tekliflerinin tümü; merkezî yönetim kesinhesap kanunu teklifleri; uzun vadeli kalkınma planının tümü.",
+      "articleRefs": [
+        "142"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Açık oylama zorunlu olmayan hallerde açık oylama yapılması kaç milletvekilinin yazılı istemine bağlıdır?",
+      "back": "En az yirmi milletvekilinin yazılı istemine bağlıdır. Önerge, oylamaya geçilmeden önce Başkanlığa verilmelidir.",
+      "explanation": "Başkan, önerge sahiplerinden en az yirmisinin Genel Kurul salonunda bulunup bulunmadığını tespit eder. Oylamaya ilk olarak istemde bulunan üyelerden başlanır. Bunlardan en az yirmisi salonda bulunmaz veya oylamaya katılmazsa istem düşer.",
+      "articleRefs": [
+        "143"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Açık oylama önergesini imzalayan en az yirmi milletvekilinden biri oyunu kutuya atmazsa, yapılan oylama açık oylama olarak geçerli sayılır mı?",
+      "back": "Hayır. Bu durum tasnif sonunda anlaşılırsa yapılan oylama işaret oyu niteliğinde işlem görür.",
+      "explanation": "Basılı oy pusulası bulunmayan milletvekili, beyaz bir kâğıda adını ve seçim çevresini yazıp imzalayarak oyunu kullanabilir.",
+      "articleRefs": [
+        "143"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Başkan gerekli görürse açık oylamayı haftanın belli bir gününe bırakabilir mi?",
+      "back": "Evet. Açık oylamayı oturumun sonuna ya da haftanın belli bir gününe bırakabilir. Ancak muhtevası itibariyle çelişki doğurması muhtemel maddeler ayrı ayrı oylanır.",
+      "explanation": "Birden fazla husus hakkında açık oylama gerekiyorsa, oy pusulaları değişik kutulara aynı zamanda atılarak da oylama yapılabilir.",
+      "articleRefs": [
+        "145"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Genel Kurulda bulunup da oya katılmayan milletvekilleri yeter sayıya dahil edilir mi?",
+      "back": "Evet, yeter sayıya dahil edilirler.",
+      "articleRefs": [
+        "146"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Yirmi milletvekilinin önergesiyle gizli oylama kendiliğinden yapılır mı?",
+      "back": "Hayır. İstemin Genel Kurulca kabulü de gerekir. Bu karar görüşmesiz işaret oyuyla alınır.",
+      "explanation": "Bazı hallerde gizli oylama hiç yapılmaz: Anayasa veya kanun gereği açık oylamanın zorunlu olduğu hallerde, İçtüzüğün işaret oyunu zorunlu kıldığı konularda ve açık oylamanın istem üzerine yapıldığı hallerde.",
+      "articleRefs": [
+        "147"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Meclis Başkanı, yazıyla başvuran bir milletvekiline en çok kaç gün izin verebilir?",
+      "back": "On günü aşmamak üzere izin verebilir.",
+      "explanation": "Daha uzun izinler için Genel Kurul, Başkanlık Divanının sunuşlar arasında yer alacak teklifi üzerine görüşmesiz ve işaretle oylamayla karar verir. Yoklama veya açık oylamada özürsüz ve izinsiz olarak bulunmayan milletvekili o birleşimde yok sayılır.",
+      "articleRefs": [
+        "151"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Milletvekili, devamsızlık cetvelini aldığından başlayarak kaç gün içinde itiraz edebilir?",
+      "back": "Yedi gün içinde, yazı ile itiraz edebilir.",
+      "explanation": "İtirazı Başkanlık Divanı inceler; gerekirse ilgili üyeden bilgi ve belge ister. Devamsızlık cetveli bir yasama yılı içinde en az üç defa yayımlanır.",
+      "articleRefs": [
+        "152"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Bir yasama yılında izinsiz ve özürsüz olarak kaç birleşimden fazla yok sayılan milletvekilinin yollukları kesilir?",
+      "back": "Toplam kırkbeş birleşimden fazla yok sayılan milletvekilinin yolluklarının üç aylığı kesilir.",
+      "explanation": "Hesap bir yasama yılı içindeki toplam yok sayılan birleşimler üzerinden yapılır.",
+      "articleRefs": [
+        "153"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Tam tutanakta düzeltme isteyenler, tutanağın bastırılıp dağıtılmasından başlayarak kaç gün içinde Başkanlığa başvurabilir?",
+      "back": "On beş gün içinde, yazıyla başvurabilirler.",
+      "explanation": "Başkanlık Divanı başvuru üzerine gereken incelemeyi yapar. İstemi haklı görürse bir düzeltme yayımlanır ve ait olduğu tutanak dergisine eklenir.",
+      "articleRefs": [
+        "155"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Hangi haller uyarma cezasını gerektirir?",
+      "back": "Söz kesmek, süküneti ve çalışma düzenini bozmak ve şahsiyatla uğraşmak.",
+      "explanation": "Uyarma, milletvekillerine verilebilecek disiplin cezalarının ilkidir. Diğerleri kınama ve Meclisten geçici olarak çıkarmadır.",
+      "articleRefs": [
+        "157",
+        "156"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Milletvekiline uyarma cezası verilmesinin gereğini takdir ve yerine getirme yetkisi kime aittir?",
+      "back": "Başkana aittir.",
+      "explanation": "Savunma için söz isteyen milletvekiline oturumun veya birleşimin sonunda söz verilir; Başkan gerekirse daha önce de söz verebilir. Başkan açıklamayı yeterli görürse cezayı kaldırdığını bildirir, yeterli görmezse cezayı kaldırmaz.",
+      "articleRefs": [
+        "158"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Aynı birleşimde iki defa uyarma cezası alan milletvekilinin söz söylemesini Başkan tek başına yasaklayabilir mi?",
+      "back": "Hayır. Başkanın teklifi üzerine Genel Kurul, görüşmesiz ve işaret oyuyla, o birleşimin sonuna kadar söz söylemeyi yasaklayabilir.",
+      "explanation": "Uyarma cezasının gereğini takdir ve yerine getirme yetkisi doğrudan Başkana aittir. Söz yasağı için ise Başkanın teklifi ve Genel Kurulun kararı aranır.",
+      "articleRefs": [
+        "159",
+        "158"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Bir ay içinde kaç kere uyarma cezasına uğramak kınama cezasını gerektirir?",
+      "back": "Üç kere. Bir ay içinde üç kere uyarma cezasına uğramak kınama sebebidir.",
+      "explanation": "Kınamayı gerektiren haller arasında şunlar da vardır: aynı birleşimde iki kere uyarma cezası aldığı halde bunu gerektiren hareketten vazgeçmemek; kaba ve yaralayıcı sözler sarf etmek ve hareketler yapmak; Genel Kurulun çalışma düzenini ve huzurunu bozucu döviz, pankart ve benzeri materyali getirmek ve kullanmak.",
+      "articleRefs": [
+        "160"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Türkiye Büyük Millet Meclisi Genel Kuruluna ve komisyonlara silahlı olarak giren milletvekiline hangi disiplin cezası verilir?",
+      "back": "Meclisten geçici olarak çıkarma cezası verilir.",
+      "explanation": "Türkiye Büyük Millet Meclisi bina, tesis, eklenti ve arazisine silahlı olarak girmek ise kınama cezasını gerektirir.",
+      "articleRefs": [
+        "161",
+        "160"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Meclisten geçici olarak çıkarma cezası en çok kaç birleşim için verilir?",
+      "back": "En çok üç birleşim için verilir ve verilir verilmez derhal yerine getirilir.",
+      "explanation": "Cezalı milletvekili, ceza süresince Genel Kurul, komisyon, Başkanlık Divanı ve Danışma Kurulu çalışmalarına katılamaz. Cezanın yerine getirilmesine karşı gelirse Başkan oturumu derhal kapatır ve milletvekilinin salondan çıkartılmasını İdare Amirlerinden ister.",
+      "articleRefs": [
+        "162"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Meclisten geçici olarak çıkarma cezasına çarptırılan milletvekilinin bir aylık ödenek ve yolluğunun ne kadarı kesilir?",
+      "back": "Üçte ikisi kesilir.",
+      "explanation": "Kınama cezasında bir aylık ödenek ve yolluğun üçte biri kesilir. Bu cezalar Başkanın teklifi üzerine Genel Kurulca görüşmesiz, işaret oyuyla kararlaştırılır.",
+      "articleRefs": [
+        "163"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Meclisten geçici olarak çıkarılan milletvekili Meclise girme hakkını nasıl yeniden kazanır?",
+      "back": "İzin alıp kürsüden açıkça af dilerse, izleyen birleşimden itibaren Meclise girme hakkını kazanır.",
+      "explanation": "Cezası teklif edilen milletvekili savunmasını kendisi yapabilir ya da bir arkadaşına yaptırabilir. Disiplin cezaları Cumhurbaşkanı yardımcıları veya bakanlar hakkında da uygulanır.",
+      "articleRefs": [
+        "163"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Türkiye Büyük Millet Meclisinin güvenliği için tahsis edilen kuvvet kimin emri altındadır?",
+      "back": "Ancak Başkanın emri altındadır.",
+      "explanation": "Başkan, Meclise ait bina, bahçe ve arsaların iç ve dış güvenliğiyle ilgili tertip ve tedbirleri almakla yükümlüdür.",
+      "articleRefs": [
+        "164"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Türkiye Büyük Millet Meclisi bina, bahçe ve arsalarına silahla girme yasağı emniyet kuvvetlerindeki görevlilere uygulanır mı?",
+      "back": "Hayır. Yasak, emniyet kuvvetlerindeki görevlilere ve Başkanın istemi üzerine çağırılan silahlı kuvvetler ile güvenlik kuvvetleri mensuplarına uygulanmaz.",
+      "explanation": "Yasağa aykırı hareket edenler Başkanlıkça derhal dışarı çıkartılır.",
+      "articleRefs": [
+        "165"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Milletvekili, Cumhurbaşkanı yardımcısı veya bakan olmayan biri Meclis binasında savcılığın kendiliğinden kovuşturma açabileceği bir suç işlerse sanığa ne yapılır?",
+      "back": "Sanık hemen savcılığa teslim edilir.",
+      "explanation": "Suç, savcılığın kendiliğinden kovuşturma açamayacağı fiillerdense görevliler sanığı dışarı çıkartır. Milletvekillerinin suç işlemesi halinde Anayasanın 83 üncü maddesindeki hükümlere göre işlem yapılır.",
+      "articleRefs": [
+        "170"
+      ]
+    }
+  ]
+}

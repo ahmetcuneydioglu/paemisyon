@@ -1,0 +1,292 @@
+{
+  "deck": {
+    "topicId": "f8aedb6a-9fd5-436b-a51f-3a6f23805ee2",
+    "legislationSlug": "6222-sayili-sporda-siddetin-onlenmesine-dair-kanun",
+    "sourceLabel": "AI bilgi kartı — 6222 Sayılı Sporda Şiddetin Önlenmesine Dair Kanun md 1–6",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: resmî madde metni + çıkmış sorular)"
+  },
+  "cards": [
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "6222 sayılı Sporda Şiddet ve Düzensizliğin Önlenmesine Dair Kanunun amacı nedir?",
+      "back": "Müsabaka öncesinde, esnasında veya sonrasında spor alanları ve çevresinde, taraftarların gruplar halinde bulunduğu yerlerde ve gidiş-geliş güzergâhlarında şiddet ve düzensizliği önlemek.",
+      "explanation": "Yer bakımından spor alanları ve çevresi, taraftarların sürekli veya geçici olarak gruplar halinde bulundukları yerler ve müsabakanın yapılacağı yere gidiş ve geliş güzergâhları anılır. Zaman bakımından müsabaka öncesi, esnası ve sonrası birlikte sayılır.",
+      "articleRefs": [
+        "1"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Sporda şiddet kanununun kapsamında adıyla anılan yasak fiiller hangileridir?",
+      "back": "Şike ve teşvik primi. Kanun diğer yasak fiil ve davranışları ve bunlara uygulanacak yaptırımları da kapsar.",
+      "explanation": "Kapsam, takımların kamp yaptığı yerlerde uygulanacak güvenlik önlemlerini de içine alır. Görev ve sorumlulukları düzenlenen kişi ve kurumlar arasında spor kulüpleri, hakemler, taraftar dernekleri, genel kolluk veya özel güvenlik görevlileri ve kitle iletişim kuruluşları bulunur.",
+      "articleRefs": [
+        "2"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Merkezi spor güvenlik birimi hangi kurumun bünyesinde kurulur?",
+      "back": "Emniyet Genel Müdürlüğü bünyesinde kurulur.",
+      "explanation": "Tanım maddesi merkezi birimi, il ve ilçe düzeyinde kurulan spor güvenlik biriminden ayrı tanımlar.",
+      "articleRefs": [
+        "3"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "İlçe spor güvenlik kurulu her ilçede oluşturulur mu?",
+      "back": "Hayır. Yalnız spor kulübü bulunan ilçelerde oluşturulur. Her ilde oluşturulan kurul, il spor güvenlik kuruludur.",
+      "explanation": "Tanım maddesi il kurulu için 'her ilde', ilçe kurulu için 'spor kulübü bulunan ilçelerde' ifadesini kullanır.",
+      "articleRefs": [
+        "3"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Müsabaka güvenlik amiri ve yardımcılarını kim görevlendirir?",
+      "back": "Mülki idare amiri görevlendirir. Görevlendirilen kişiler kolluk amiri ve yardımcılarıdır.",
+      "explanation": "Tanıma göre görevlendirmenin amacı, spor alanlarında güvenliğin sağlanmasıdır.",
+      "articleRefs": [
+        "3"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 1,
+      "front": "İl spor güvenlik kuruluna il emniyet müdürü başkanlık eder mi?",
+      "back": "Hayır. Kurula vali veya görevlendireceği vali yardımcısı başkanlık eder. İl emniyet müdürlüğü kurulun üyesidir.",
+      "explanation": "Kurulda temsil edilen kurumlar arasında belediye başkanlığı, gençlik ve spor il müdürlüğü, il sağlık müdürlüğü ve il milli eğitim müdürlüğü de bulunur. Başkanlık yalnız valiye ya da görevlendireceği vali yardımcısına aittir.",
+      "articleRefs": [
+        "4"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Özel seyir alanını kim belirler?",
+      "back": "İl ve ilçe spor güvenlik kurulları belirler. Bunlar, seyircilerin müsabakayı dijital ortamda seyretmesi için müsabaka alanı dışında belirlenen geçici yerlerdir.",
+      "articleRefs": [
+        "3"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Takım veya taraftarların toplu olarak seyahat ettikleri araçlar 'spor alanı' tanımına girer mi?",
+      "back": "Evet. Kanunun tanımına göre bu araçlar da spor alanı sayılır.",
+      "explanation": "Spor alanı tanımına giren yerler arasında seyir alanları, özel seyir alanları ve sporculara ait soyunma odası bulunur. Taraftarların gruplar hâlinde toplandıkları yerler, gidiş ve geliş güzergâhları ve takımların kamp yaptığı yerler de bu yerlerdendir.",
+      "articleRefs": [
+        "3"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "İl spor güvenlik kurulunda vali tarafından kaç hukukçu belirlenir?",
+      "back": "Bir hukukçu belirlenir. Bu hukukçu kurulda üye olarak yer alır.",
+      "explanation": "İlçe spor güvenlik kurulunda da bir hukukçu bulunur; onu kaymakam belirler.",
+      "articleRefs": [
+        "4"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "İl spor güvenlik kurulunda spor kulüplerini hangi üyeler temsil eder?",
+      "back": "Farklı spor kulüplerine mensup stat güvenliğinden sorumlu yönetim kurulu üyeleri temsil eder.",
+      "explanation": "İlçe kurulunda bu üyeler 'varsa' kaydıyla yer alır. Gerekli görüldüğünde basın kuruluşlarının ve ilgili kamu kuruluşlarının temsilcileri de kurula davet edilir.",
+      "articleRefs": [
+        "4"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "İlçe spor güvenlik kuruluna vali yardımcısı başkanlık eder mi?",
+      "back": "Hayır. İlçe kuruluna kaymakam başkanlık eder. Vali veya görevlendireceği vali yardımcısı il kuruluna başkanlık eder.",
+      "explanation": "İlçe kurulu, il kurulunda yer alan kurum ve kuruluşların ilçedeki temsilcilerinden oluşur. Kurulda kaymakamın belirleyeceği bir hukukçu da yer alır.",
+      "articleRefs": [
+        "4"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Müsabakanın yapılacağı yerde konuk takım seyircilerine bağımsız bir bölüm ayırmakla kim yükümlüdür?",
+      "back": "Ev sahibi spor kulüpleri yükümlüdür. Taraftarlar arasında temas olmamasını sağlayacak önlemleri de onlar alır.",
+      "explanation": "Bu önlemleri ilgili spor federasyonları ve uluslararası spor federasyonları belirler. Ev sahibi kulüp, müsabaka ve seyir alanlarında sağlık ve güvenliğe ilişkin önlemleri almakla da yükümlüdür.",
+      "articleRefs": [
+        "5"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Seyirci ile müsabaka yeri arasındaki fizikî engelleri ilgili spor güvenlik birimi kendi kararıyla kaldırabilir mi?",
+      "back": "Hayır. Fizikî engeller, ilgili spor güvenlik biriminin görüşü alınarak il veya ilçe spor güvenlik kurullarının kararıyla kaldırılabilir.",
+      "explanation": "Tel, duvar, bariyer ve benzeri engeller seyri engellemeyecek şekilde konulabilir. Engeller, federasyonun bağlı olduğu uluslararası federasyonun talimatlarına da uygun olmalıdır.",
+      "articleRefs": [
+        "5"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Müsabaka ve seyir alanlarında kameraların yerleştirileceği yerleri ve sayılarını kim belirler?",
+      "back": "İl veya ilçe spor güvenlik kurulları belirler.",
+      "explanation": "Teknik donanımlar, güvenliğin sağlanması ve kanuna aykırı davrananların tespiti amacıyla kurulur.",
+      "articleRefs": [
+        "5"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Profesyonel spor dallarında müsabakaya katılan kulüpler, özel güvenlik görevlilerini müsabaka yerinde hangi dönem boyunca bulundurmalıdır?",
+      "back": "Müsabaka öncesinden başlayarak, müsabaka tamamlanıp seyirci ve sporcular tahliye edilinceye kadar bulundurmalıdır.",
+      "explanation": "Bu yükümlülük basketbol en üst ligindeki spor kulüpleri için de geçerlidir. Özel güvenlik görevlileri genel kolluk ile birlikte görev yapar. Kulüpler ayrıca seyirci sağlığı ve emniyeti için kulüp görevlileri bulundurur.",
+      "articleRefs": [
+        "6"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Müsabakada görevlendirilecek özel güvenlik görevlilerinin kimlik bilgileri en geç ne zaman bildirilir?",
+      "back": "Müsabakanın başlangıç saatinden en geç kırk sekiz saat önce bildirilir.",
+      "explanation": "Federasyonlar ve spor kulüpleri, bu Kanundaki yükümlülüklerini yerine getirmek için özel güvenlik hizmeti satın alabilir.",
+      "articleRefs": [
+        "6"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Müsabakada görevlendirilecek özel güvenlik görevlilerinin kimlik bilgileri federasyona mı bildirilir?",
+      "back": "Hayır. Bu bilgiler ilgili kolluk birimine bildirilir. Bildirim, müsabakanın başlangıç saatinden en geç kırk sekiz saat önce yapılır.",
+      "articleRefs": [
+        "6"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Futbolda en üst lig ile bir altındaki ligde elektronik biletlerin oluşturulma usul ve esaslarını hangi bakanlık belirler?",
+      "back": "Hazine ve Maliye Bakanlığı belirler.",
+      "explanation": "Bu liglerde seyir alanlarına girişi sağlayacak biletler, elektronik sistem üzerinden elektronik olarak oluşturulur.",
+      "articleRefs": [
+        "5"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Spor müsabakaları için bilet satışı nerede ve kimlerce yapılabilir?",
+      "back": "Yalnız ilgili federasyon, spor kulüpleri ve yetkili diğer kişilerce uygun görülen yerlerde ve görevlilerce yapılabilir.",
+      "explanation": "Biletlerin basım, satış ve dağıtımına ilişkin yerel uygulamaları kulüpler yürütür. Sistem üzerinden merkezi satışları ise ilgili federasyonlar gerçekleştirir.",
+      "articleRefs": [
+        "5"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Milli müsabakalarda izleyici olarak girecek kişilerin kontrolünü kim yapar?",
+      "back": "İlgili federasyon yapar.",
+      "explanation": "Kural olarak kontrol yükümlülüğü ev sahibi kulübündür. Ev sahibi olmayan müsabakalarda bu yükümlülüğü müsabakaya katılan her iki kulüp yerine getirir.",
+      "articleRefs": [
+        "5"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "En üst profesyonel futbol ligi müsabakalarında görevde olmayan genel kolluk görevlilerini kim görevlendirir?",
+      "back": "Müsabakanın yapılacağı yerdeki yetkili kolluk birimi görevlendirir. Görevlendirme, ilgili kulübün başvurusu ve federasyonun talebi üzerine yapılır.",
+      "explanation": "Bu görevlilere yapılacak ödemeyi federasyon doğrudan kolluk görevlilerinin hesabına yatırır. Federasyon bu tutarı, genel kolluğa verilen kumanya bedeliyle birlikte ilgili spor kulübünün alacaklarından öncelikle mahsup eder.",
+      "articleRefs": [
+        "6"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Görevde olmayan genel kolluk görevlilerine, görevlendirildikleri müsabaka için ne kadar ödeme yapılır?",
+      "back": "Günlük harcırah miktarının üç katı ödenir. Ödeme, görevlendirildikleri müsabaka ile sınırlıdır.",
+      "explanation": "Gözlemci kolluk görevlilerine seyahat ve konaklama giderleri ile günlük harcırah üç katı olarak ödenir. Müsabaka güvenlik amirleri ile yardımcılarına ise federasyon temsilcisine ödenen miktar kadar ödeme yapılır.",
+      "articleRefs": [
+        "6"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "En üst profesyonel futbol liginde yüksek riskli olmayan bir müsabakada, özel güvenlik görevlilerinin yerine en çok ne kadar genel kolluk görevlisi görevlendirilebilir?",
+      "back": "İl veya ilçe spor güvenlik kurullarınca belirlenen özel güvenlik görevlisi sayısının yarısını geçmeyecek kadar görevlendirilebilir.",
+      "articleRefs": [
+        "6"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Bekletme odalarının kapasitesi en fazla kaç kişidir?",
+      "back": "Azami yirmi kişidir.",
+      "explanation": "Bekletme odaları, futbolda en üst profesyonel lig ve bir altındaki ligde bulunan kulüplerin müsabakalarının yapıldığı müsabaka alanlarında oluşturulur. Ev sahibi ve misafir takım için ayrı ayrı oluşturulur.",
+      "articleRefs": [
+        "5"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Futbolda en üst profesyonel lig müsabakalarının yapıldığı alanlarda en az kaç bekletme odası bulunmalıdır?",
+      "back": "En az iki bekletme odası bulunmalıdır. Odalar ev sahibi ve misafir takım için ayrı ayrı ve gerektiğinde kullanılmak üzere oluşturulur.",
+      "explanation": "Kanunda sayılan diğer spor branşlarında bu zorunluluk, uluslararası spor müsabakalarının yapıldığı müsabaka alanları içindir. Aynı alanlarda güvenlik kameraları ve anons sistemlerinin yönetildiği yeteri kadar kontrol odası da oluşturulur.",
+      "articleRefs": [
+        "5"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Müsabaka alanında kayıt altına alınan görüntü ve dokümanların birer örneği, müsabakanın sonunda kimlere verilir?",
+      "back": "İlgili spor güvenlik birimine, federasyona ve her iki kulüp temsilcisine verilir.",
+      "explanation": "Kontrol odası, genel kolluk görevlileri ile özel güvenlik görevlilerinin kullanımına açık tutulur. Odada federasyon ve spor kulübü temsilcileri de bulunur.",
+      "articleRefs": [
+        "5"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "En üst profesyonel futbol liginde yüksek riskli müsabakalarda, özel güvenlik görevlilerinin yerine görevlendirilebilecek genel kolluk görevlisi sayısının üst sınırı nedir?",
+      "back": "Üst sınır, il veya ilçe spor güvenlik kurullarınca belirlenen özel güvenlik görevlisi sayısının üçte ikisidir; bu sayı geçilemez.",
+      "articleRefs": [
+        "6"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 1,
+      "front": "Özel güvenlik görevlileri, bu Kanundan doğan görevlerini yaparken ateşli silah taşıyabilir mi?",
+      "back": "Hayır. Bu görevlerin ifası sırasında ateşli silah taşımaları yasaktır.",
+      "explanation": "Müsabaka, antrenman ve seyir alanlarında görev yapan özel güvenlik görevlileri, 5188 sayılı Özel Güvenlik Hizmetlerine Dair Kanunda belirtilen görev ve yetkilere sahiptir.",
+      "articleRefs": [
+        "6"
+      ],
+      "counterNumbers": []
+    }
+  ]
+}

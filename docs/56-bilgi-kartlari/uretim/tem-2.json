@@ -1,0 +1,294 @@
+{
+  "deck": {
+    "topicId": "c345c19d-c850-4798-b194-d552edf39708",
+    "legislationSlug": "3713-sayili-terorle-mucadele-kanunu",
+    "sourceLabel": "AI bilgi kartı — 3713 Sayılı Terörle Mücadele Kanunu md 21–25, Ek 1",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: resmî madde metni + çıkmış sorular)"
+  },
+  "cards": [
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Görevini yaparken terör eylemine muhatap olarak yaralanan, engelli hâle gelen ya da ölen kamu görevlisi hakkında hangi kanunun hükümleri uygulanır?",
+      "back": "2330 sayılı Nakdi Tazminat ve Aylık Bağlanması Hakkında Kanun hükümleri uygulanır.",
+      "explanation": "Görev yurtiçinde ya da yurtdışında ifa ediliyor olabilir. Madde bu kanunun yanında aylık, ikramiye, konut ve tedavi gibi ek haklar da sayar.",
+      "articleRefs": [
+        "21"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Sıfatı kalkmış bir kamu görevlisi, eski görevini yapmış olmasından dolayı terör eylemine muhatap olursa 2330 sayılı Kanun hükümleri uygulanır mı?",
+      "back": "Evet. Sıfatı kalkmış olsa bile görevini yapmasından dolayı terör eylemine muhatap olup yaralanan, engelli hâle gelen, ölen veya öldürülenler de kapsamdadır.",
+      "explanation": "Kapsam iki hâli içerir: görevini yurtiçinde ya da yurtdışında ifa ederken terör eylemine muhatap olmak ve sıfatı kalktıktan sonra bu görevden dolayı muhatap olmak.",
+      "articleRefs": [
+        "21"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Terör nedeniyle malul olan kamu görevlisine bağlanacak aylığın toplam tutarı neyden az olamaz?",
+      "back": "Görevde olan emsallerinin almakta oldukları aylıklardan az olamaz.",
+      "explanation": "Aynı kural, ölenlerin aylığa müstehak dul ve yetimleri için de geçerlidir. Emekli biri terör nedeniyle öldürülürse dul ve yetimlerine bağlanacak aylığın toplam tutarı, Kanuna göre kendisine bağlanabilecek emekli aylığından az olamaz.",
+      "articleRefs": [
+        "21"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Terör nedeniyle malul olanlara ve ölenlerin dul ve yetimlerine emekli ikramiyesi kaç yıl hizmet yapmış gibi ödenir?",
+      "back": "30 yıl hizmet yapmış gibi ödenir.",
+      "explanation": "Hesapta esas alınan aylık malulün durumuna göre değişir; kabul edilen hizmet süresi ise herkes için aynıdır.",
+      "articleRefs": [
+        "21"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Terör nedeniyle malul olan herkese emekli ikramiyesi en yüksek devlet memuru aylığı üzerinden mi ödenir?",
+      "back": "Hayır. En yüksek devlet memuru aylığı, yaşamak için gereken hareketleri yapamayacak ve başkasının yardımına muhtaç malullerle ölenlerin dul ve yetimlerine uygulanır; diğerlerine mevcut aylıkları üzerinden ödenir.",
+      "explanation": "Her iki grupta da ikramiye 30 yıl hizmet yapmış gibi hesaplanır. Bu bent uyarınca fazla yapılan ödemeler, faturası karşılığı ilgili sosyal güvenlik kuruluşlarınca Hazineden tahsil edilir.",
+      "articleRefs": [
+        "21"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Özel tahsisli olmayan kamu konutunda otururken terör nedeniyle malul olan kişi, kira bedeli ödemeden kamu konutundan kaç yıl yararlanmaya devam edebilir?",
+      "back": "On yıl; ölenlerin aylığa müstehak dul ve yetimleri de aynı süreyle yararlanabilir.",
+      "explanation": "Kamu konutundan çıkanların ya da hiç yararlanmayanların ikametgâh olarak kullanacakları yurtiçindeki taşınmazın kira bedeli de istekleri hâlinde on yıl süreyle Devletçe karşılanır. Kamu konutunda kirasız geçen süre, kira yardımından yararlanılan süreden düşülür.",
+      "articleRefs": [
+        "21"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "2946 sayılı Kamu Konutları Kanununda gösterilen özel tahsisli konutta oturan malul, kira bedeli ödemeden on yıl o konutta kalmaya devam edebilir mi?",
+      "back": "Hayır. Özel tahsisli konutlarda oturanlar bu haktan hariç tutulur; istekleri hâlinde ikametgâh olarak kullanacakları yurtiçindeki taşınmazın kira bedeli on yıl süreyle Devletçe karşılanır.",
+      "explanation": "Kira yardımında da kamu konutunda kira ödemeksizin geçirilen süre, kira yardımından yararlanılan süreden düşülür.",
+      "articleRefs": [
+        "21"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Yurtdışında özel tahsisli konutta oturan malulün yurtdışı kira bedeli, isteği hâlinde kaç yıl süreyle Devletçe karşılanır?",
+      "back": "Bir yıl süreyle Devletçe karşılanır.",
+      "explanation": "Bu süre yurtdışı kira bedeli içindir. Yurtiçinde ikametgâh olarak kullanılacak taşınmazın kira bedeli ise on yıl süreyle Devletçe karşılanır.",
+      "articleRefs": [
+        "21"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Bu Kanuna göre aylık alan maluller ile hayatını kaybedenlerin dul ve yetimlerine yapılan gayrimenkul hibeleri hangi vergi ve ödemelerden müstesnadır?",
+      "back": "Veraset ve intikal vergisinden, devir işlemleri harçlarından, döner sermaye ücretlerinden ve bu işlemler için düzenlenen kâğıtların damga vergisinden müstesnadır.",
+      "explanation": "Hibe edenler, bu gayrimenkullerin maliyet bedellerinin tamamını 193 sayılı Gelir Vergisi Kanununun 89 uncu maddesi ve 5520 sayılı Kurumlar Vergisi Kanununun 10 uncu maddesi kapsamında dönem gelirinden veya kurum kazancından indirebilir.",
+      "articleRefs": [
+        "21"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Terör nedeniyle malul olan kişi bir kamu kurumunda çalışıyorsa her türlü tedavi giderini kim karşılar?",
+      "back": "Çalıştığı kamu kurumu veya kuruluşu karşılar.",
+      "explanation": "Emekli, yaşlılık, malullük ya da dul ve yetim aylığı alanların giderlerini bağlı oldukları sosyal güvenlik kurumu karşılar. Hiçbir kuruma tabi olarak çalışmayan ve bu aylıkları almayanların giderleri ise Millî Savunma veya İçişleri Bakanlığınca karşılanır.",
+      "articleRefs": [
+        "21"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Terör olaylarının önlenmesi amacıyla ifa edilen göreve gidiş dönüş sırasında kaza geçirip yaralanan kamu görevlisi, md 21'in haklarından yararlanır mı?",
+      "back": "Evet. Bu görevlere gidiş dönüşlerde meydana gelen kazalarda yaralanan, engelli hâle gelen, hastalanan veya hayatını kaybedenler birinci fıkranın durumlarına uygun hükümlerinden yararlanır.",
+      "explanation": "Kapsam, terör olaylarını önlemek amacıyla patlayıcı maddeye bağlı olarak meydana gelen olayları ve terör olaylarının önlenmesi, takibi veya etkisiz hâle getirilmesi amacıyla ifa edilen görevler sırasındaki kazaları da içerir.",
+      "articleRefs": [
+        "21"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Md 21'in birinci fıkrasının (h), (i) ve (j) bentleri kapsamındakilerden en az dört yıllık yüksek öğrenim mezunu olanların aylığı, hangi derece ve kademe esas alınarak hesaplanan tutardan düşük olamaz?",
+      "back": "Sekizinci derecenin birinci kademesi esas alınır; diğerleri için eğitim durumlarına bakılmaksızın onuncu derecenin birinci kademesi esas alınır.",
+      "explanation": "Hesap, bu derece ve kademede bulunanların emekli keseneğine esas aylıkları üzerinden yapılan vazife malullüğü aylığına göre yapılır. Bitirdikleri okullar sonucunda hak kazandıkları unvanlarla yürüttükleri kamu görevleri sebebiyle daha yüksek aylık bağlanmasına ilişkin hakları saklıdır.",
+      "articleRefs": [
+        "21"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Md 21'in (h), (i) ve (j) bentleri kapsamındakilere bağlanacak aylığın toplam tutarı, hangi gösterge rakamının memur aylık katsayısıyla çarpımından az olamaz?",
+      "back": "35.398 gösterge rakamı esas alınır; hak sahiplerinin aylığı da bulunan tutarın hisseleri oranında tespit edilecek tutardan az olamaz.",
+      "explanation": "Bu fıkra uyarınca ilgililere fazla olarak yapılan ödemeler, faturası karşılığı Sosyal Güvenlik Kurumunca Hazineden tahsil edilir.",
+      "articleRefs": [
+        "21"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Md 21'in (h), (i) ve (j) bentlerindekilerden bu Kanun kapsamındaki olaylar sebebiyle yaralananların tedavi giderlerini kim karşılar?",
+      "back": "Sosyal Güvenlik Kurumu karşılar; ilgililerin genel sağlık sigortalısı olup olmadığına bakılmaksızın giderlerin tamamı bu kurumca ödenir.",
+      "explanation": "Erbaş ve erlerin Türk Silahlı Kuvvetlerine ait sağlık kurum ve kuruluşlarında yapılan tedavileri bunun dışındadır. Bu kişiler, tedavileri sonuçlanıncaya veya maluliyetleri kesinleşinceye kadar 5510 sayılı Kanuna göre sağlanan sağlık hizmetlerinden ve diğer haklardan yararlanır.",
+      "articleRefs": [
+        "21"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Kendilerine aylık bağlanan dul ve yetimlerin aylıkları sosyal güvenlik mevzuatı gereği kesilirse md 21'in verdiği diğer haklar ne olur?",
+      "back": "Dul ve yetimler bu madde ile verilen diğer haklardan da yararlanamazlar.",
+      "explanation": "Kesintinin ilgili sosyal güvenlik kurumları mevzuatı gereği olması gerekir. Bu durumda aylıkla birlikte maddedeki diğer haklar da sona erer.",
+      "articleRefs": [
+        "21"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Terör eylemlerinden dolayı yaralananların tedavileri kim tarafından yapılır?",
+      "back": "Devlet tarafından yapılır.",
+      "explanation": "Zarar gören, can ve mal kaybına uğrayan vatandaşlara ayrıca Sosyal Yardımlaşma ve Dayanışmayı Teşvik Fonundan öncelikle yardım yapılır.",
+      "articleRefs": [
+        "22"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Sosyal Yardımlaşma ve Dayanışmayı Teşvik Fonundan hangi öğrenim çağındaki şehit çocuklarının öğrenim masrafları karşılanır?",
+      "back": "İlk ve orta öğrenim çağındaki şehit çocuklarının öğrenim masrafları karşılanır.",
+      "explanation": "Bu Fon, terör eylemlerinden zarar gören, can ve mal kaybına uğrayan vatandaşlara öncelikle yardım yapılan kaynaktır.",
+      "articleRefs": [
+        "22"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Terörden zarar gören vatandaşlara Fondan yapılacak yardımın kapsam ve ölçüsünü Fonun mahalli yetkilileri mi tespit eder?",
+      "back": "Hayır. Kapsam ve ölçüyü Fon Kurulu tespit eder; bunu yaparken Fonun mahalli yetkililerince belirlenecek miktarı aşamaz.",
+      "explanation": "Mahalli yetkililer miktarı belirler, Fon Kurulu ise bu miktarı aşmamak kaydıyla yardımın kapsam ve ölçüsünü tespit eder.",
+      "articleRefs": [
+        "22"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "3713 sayılı Terörle Mücadele Kanunu ne zaman yürürlüğe girmiştir?",
+      "back": "Yayımı tarihinde yürürlüğe girmiştir.",
+      "articleRefs": [
+        "24"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Emniyet Teşkilatından hangi sınıfa mensup personel, Ek 1'in ikinci fıkrasının (b) bendine göre vazife malulü sayılınca istihdam hakkı doğurur?",
+      "back": "Emniyet Hizmetleri Sınıfına mensup personel.",
+      "explanation": "Bu bent, 5510 sayılı Kanunun 47 nci maddesinin birinci fıkrasında belirtilen haller kapsamında vazife malulü sayılanları kapsar. Bentte sayılanlar arasında ceza infaz kurumu müdürü, infaz ve koruma başmemuru ve infaz ve koruma memuru unvanlı ceza infaz kurumu personeli de vardır.",
+      "articleRefs": [
+        "Ek 1"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Ek 1'in ikinci fıkrasının (a) ve (b) bentleri kapsamında hayatını kaybedenlerin yakınlarından toplam kaç kişi istihdam hakkından yararlanır?",
+      "back": "Toplam iki kişi yararlanır; esas olarak eş veya çocuklarından birisi ile ana, baba veya kardeşlerinden birisi.",
+      "explanation": "Ana, baba ve kardeşi yoksa eş veya çocuklarından iki kişi yararlanır. Eş veya çocuğu yoksa ana veya babası ile kardeşlerinden birisi yararlanır. Ana, baba veya kardeşler bu hakkı kullanmazsa eş veya çocuklardan iki kişi yararlanır.",
+      "articleRefs": [
+        "Ek 1"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Ek 1'in ikinci fıkrasının (a) ve (b) bentlerinde sayılan malullerde istihdam hakkından toplam kaç kişi yararlanır?",
+      "back": "Toplam bir kişi yararlanır: malulün kendisi veya eş ya da çocuklarından birisi.",
+      "explanation": "Malulün eşi veya çocuğu yoksa hak, kendisine ya da kardeşlerinden birisine tanınır.",
+      "articleRefs": [
+        "Ek 1"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Ek 1 kapsamında atanacakların, atanacakları kadro için mevzuatta öngörülen sınav şartını sağlaması gerekir mi?",
+      "back": "Hayır. Sınavlara ilişkin hükümler hariç tutulur; ancak ilgili mevzuatta öngörülen diğer nitelik ve şartları taşımaları zorunludur.",
+      "explanation": "Kadro veya pozisyon için aranan nitelik ve şartlar geçerliliğini korur. Hariç tutulan, yalnız sınavlara ilişkin hükümlerdir.",
+      "articleRefs": [
+        "Ek 1"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Ek 1'e göre istihdam hakkından faydalanamayanlar arasında kimler vardır?",
+      "back": "Bunlar arasında bir başkasının bakımına muhtaç olacak derecede engelli olanlar, birinci fıkrada sayılan kurumlarda görev yapanlar ve olaydan sonra bu kurumlardaki görevinden ayrılmış olanlar vardır.",
+      "explanation": "Terör örgütlerine ya da Milli Güvenlik Kurulunca Devletin milli güvenliğine karşı faaliyette bulunduğuna karar verilen yapı, oluşum veya gruplara üyeliği, mensubiyeti, iltisakı ya da bunlarla irtibatı tespit edilenler de faydalanamaz. Bu durumda olanlar, istihdam hakkına ilişkin fıkraların uygulanmasında dikkate alınmaz.",
+      "articleRefs": [
+        "Ek 1"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Terör örgütleriyle üyelik, mensubiyet, iltisak veya irtibatı nedeniyle istihdam hakkından faydalanamayacak kişilerin bu durumunu kim tespit eder?",
+      "back": "İlgili valiler tespit eder.",
+      "explanation": "Aynı kayıt, Milli Güvenlik Kurulunca Devletin milli güvenliğine karşı faaliyette bulunduğuna karar verilen yapı, oluşum veya gruplarla bağlantısı olanlar için de geçerlidir.",
+      "articleRefs": [
+        "Ek 1"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Ek 1 kapsamındaki atama işlemleri, atama teklifinin kamu kurum ve kuruluşuna intikalinden itibaren kaç gün içinde yapılmak zorundadır?",
+      "back": "Otuz gün içinde yapılması zorunludur.",
+      "explanation": "Atama emri ilgili kurum tarafından 7201 sayılı Tebligat Kanunu hükümlerine göre tebliğ edilir. İşe başlama süreleri ve işe başlamama hâlinde yapılacak işlemler için 657 sayılı Kanunun 62 nci ve 63 üncü maddeleri uygulanır.",
+      "articleRefs": [
+        "Ek 1"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Ek 1 kapsamında atama onayı alındığı hâlde görevine başlamayan kişi, sonradan aynı madde kapsamında yeniden istihdam edilebilir mi?",
+      "back": "Hayır; bu madde kapsamında yeniden istihdam edilemez.",
+      "explanation": "Aynı yasak, göreve başladıktan sonra herhangi bir sebeple görevden ayrılanlar için de geçerlidir.",
+      "articleRefs": [
+        "Ek 1"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Ek 1'in uygulanmasında izlenecek usul ve esaslar hangi düzenlemeyle belirlenir?",
+      "back": "Cumhurbaşkanınca yürürlüğe konulan yönetmelikle belirlenir.",
+      "articleRefs": [
+        "Ek 1"
+      ]
+    }
+  ]
+}

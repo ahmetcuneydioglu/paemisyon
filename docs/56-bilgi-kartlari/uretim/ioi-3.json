@@ -1,0 +1,294 @@
+{
+  "deck": {
+    "topicId": "cc810ce5-feac-47bd-b4f9-9a9edf7c4672",
+    "legislationSlug": "5302-il-ozel-idaresi-kanunu",
+    "sourceLabel": "AI bilgi kartı — 5302 İl Özel İdaresi Kanunu md 31–45",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: resmî madde metni + çıkmış sorular)"
+  },
+  "cards": [
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Vali stratejik plânı mahallî idareler genel seçimlerinden itibaren ne kadar süre içinde il genel meclisine sunar?",
+      "back": "Altı ay içinde; plânı kalkınma plân ve programları ile varsa bölge plânına uygun olarak hazırlar.",
+      "explanation": "Yıllık performans plânını ise ilgili olduğu yıl başından önce hazırlayıp sunar. Stratejik plân ve performans plânı bütçenin hazırlanmasına esas teşkil eder.",
+      "articleRefs": [
+        "31"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Stratejik plân hazırlanırken kimlerin görüşleri alınır?",
+      "back": "Varsa üniversitelerin ve meslek odalarının, ayrıca konuyla ilgili sivil toplum örgütlerinin görüşleri alınır.",
+      "explanation": "Stratejik plânı vali hazırlar. Görüş alma, plânın hazırlanma aşamasında yapılır.",
+      "articleRefs": [
+        "31"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Vali tarafından hazırlanan stratejik plân, hazırlanmasıyla birlikte yürürlüğe girer mi?",
+      "back": "Hayır. Stratejik plân il genel meclisinde kabul edildikten sonra yürürlüğe girer.",
+      "explanation": "Stratejik plân ve performans plânı il genel meclisinde bütçeden önce görüşülerek kabul edilir.",
+      "articleRefs": [
+        "31"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Vali görev ve yetkilerinin bir kısmını il özel idaresinin herhangi bir görevlisine devredebilir mi?",
+      "back": "Hayır. Yalnız yöneticilik sıfatı bulunan il özel idaresi görevlilerine devredebilir. Bunun dışında vali yardımcılarına ve ilçelerde kaymakamlara da devredebilir.",
+      "explanation": "Devir valinin takdirindedir. Vali, uygun gördüğü takdirde görev ve yetkilerinin bir kısmını devreder.",
+      "articleRefs": [
+        "32"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Valinin hangi derecedeki kan ve kayın hısımları il özel idaresiyle ihtilâflı olduğunda dava açma ve temsil işi meclis başkanınca yerine getirilir?",
+      "back": "Birinci ve ikinci derecedeki kan ve kayın hısımları. Valinin kendisi ihtilâflı olduğunda da aynı kural uygulanır.",
+      "explanation": "Meclis başkanı bulunmadığı takdirde bu görevi başkan vekili ya da bunların yetkilendireceği kişiler yerine getirir.",
+      "articleRefs": [
+        "33"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Bir il özel idaresi organı ya da üyesi hangi durumda geçici önlem olarak görevden uzaklaştırılabilir?",
+      "back": "Görevleriyle ilgili bir suç nedeniyle hakkında soruşturma veya kovuşturma açılmışsa. Önlem kesin hükme kadar uygulanabilir.",
+      "explanation": "Görevden uzaklaştırma geçici bir önlemdir. Devamında kamu yararı bakımından yarar görülmezse kaldırılır.",
+      "articleRefs": [
+        "34"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "İl özel idaresi organları veya üyeleri hakkındaki görevden uzaklaştırma önlemi hangi aralıkla gözden geçirilir?",
+      "back": "İki ayda bir. Devamında kamu yararı bakımından yarar görülmezse önlem kaldırılır.",
+      "articleRefs": [
+        "34"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Görevden uzaklaştırılan il özel idaresi üyesi, görevden düşürülmeyi gerektirmeyen bir suçla mahkûm olursa uzaklaştırma önlemi sürer mi?",
+      "back": "Hayır, bu durumda görevden uzaklaştırma önlemi kaldırılır.",
+      "explanation": "Önlemi kaldıran diğer haller arasında şunlar vardır: 4483 sayılı Kanuna göre soruşturma izni verilmemesi, takipsizlik, kamu davasının düşmesi, beraat kararı verilmesi ve davanın genel af ile ortadan kaldırılması.",
+      "articleRefs": [
+        "34"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "İl özel idaresinde ihtiyaca göre yeni birimlerin kurulması, kaldırılması veya birleştirilmesi kimin kararıyla olur?",
+      "back": "İl genel meclisinin kararıyla olur; bu işlem norm kadro sistemine ve ihtiyaca göre yapılır.",
+      "explanation": "Kanun şu birimleri sayar: genel sekreterlik, malî işler, sağlık, tarım, imar, insan kaynakları ve hukuk işleri. Yeni birimler büyükşehir belediyesi olan illerde daire başkanlığı ve müdürlük, diğer illerde müdürlük şeklinde kurulur.",
+      "articleRefs": [
+        "35"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Genel sekreter, il özel idaresi hizmetlerinin yürütülmesinden kime karşı sorumludur?",
+      "back": "Valiye karşı. Genel sekreter hizmetleri vali adına ve onun emirleri yönünde düzenler ve yürütür.",
+      "explanation": "Genel sekreter mevzuata, il genel meclisi ve il encümeni kararlarına, stratejik plana ve yıllık çalışma programına göre çalışır. İlçelerde ise özel idare işleri için kaymakama bağlı ilçe özel idare teşkilâtı oluşturulabilir.",
+      "articleRefs": [
+        "35"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Toplam nüfusu 3.000.000'a kadar olan bir ilde en fazla kaç genel sekreter yardımcılığı kadrosu ihdas edilebilir?",
+      "back": "En fazla iki. Nüfusu 3.000.000'un üzerindeki illerde bu sayı en fazla dörttür.",
+      "explanation": "Kadrolar ihtiyaca göre ihdas edilebilir. Üst sınırı belirleyen ölçüt ilin toplam nüfusudur.",
+      "articleRefs": [
+        "35"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "İl özel idaresinde genel sekreter nasıl atanır?",
+      "back": "Valinin teklifi ve İçişleri Bakanının onayı ile atanır; görevden de aynı usulle alınır.",
+      "explanation": "Diğer il özel idaresi personelini vali atar ve atama ilk toplantıda il genel meclisinin bilgisine sunulur. Genel sekreterlikte geçen süreler meslekî kıdemde geçmiş sayılır.",
+      "articleRefs": [
+        "36"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "İl özel idaresi memurlarına encümen kararıyla yılda en fazla kaç kez ikramiye ödenebilir?",
+      "back": "En fazla iki kez. Ödeme toplam memur sayısının %10'unu ve aylık katsayısının 20000 gösterge rakamıyla çarpımını geçemez; büyükşehirlerde bu rakam 30000'dir.",
+      "explanation": "İkramiye başarı durumuna göre ödenir ve çalışılan sürelerle (hastalık ve yıllık izinler dahil) orantılıdır. Sözleşmeli ve işçi statüsünde çalışanlar bu ödemeden yararlanmaz.",
+      "articleRefs": [
+        "36"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Valinin talebiyle il özel idaresinin yönetici kadrosunda görevlendirilen memur, görevlendirme bitince eski kurumuna kaç gün içinde yazılı başvurmalıdır?",
+      "back": "Onbeş gün içinde. Başvuran memur en geç bir ay içinde kadrosunda göreve başlatılır.",
+      "explanation": "Görevlendirme valinin talebi, memurun isteği ve kurumunun muvafakatiyle birim müdürü ve üstü kadrolar için yapılır. Memur bu sürede kurumundan izinli sayılır; malî ve sosyal güvenlik haklarını il özel idaresi öder. Kadrosu kaldırılmış ya da kadrosuna zorunlu sebeplerle atama yapılmışsa durumuna uygun bir kadroya atanır.",
+      "articleRefs": [
+        "36"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "İl özel idarelerinin denetiminde hizmetlerin süreç ve sonuçları neye göre analiz edilir?",
+      "back": "Mevzuata, önceden belirlenmiş amaç ve hedeflere, performans ölçütlerine ve kalite standartlarına göre; bu analiz tarafsız olarak yapılır.",
+      "explanation": "Sonuçlar kanıtlara dayalı olarak değerlendirilir, rapor hâline getirilir ve ilgililere duyurulur.",
+      "articleRefs": [
+        "37"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "İl özel idarelerinde iç ve dış denetim hangi kanun hükümlerine göre yapılır?",
+      "back": "5018 sayılı Kamu Malî Yönetimi ve Kontrol Kanunu hükümlerine göre.",
+      "explanation": "Denetim; iş ve işlemlerin hukuka uygunluk, malî ve performans denetimini kapsar. Sonuçlar kamuoyuna açıklanır ve meclisin bilgisine sunulur.",
+      "articleRefs": [
+        "38"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "İl özel idaresinin malî işlemler dışında kalan idarî işlemlerini kimler denetler?",
+      "back": "İçişleri Bakanlığı, vali veya görevlendireceği elemanlar. Denetim, idarenin bütünlüğüne ve kalkınma plânı ve stratejilerine uygunluk açısından yapılır.",
+      "explanation": "İl özel idaresine bağlı kuruluş ve işletmeler de aynı esaslara göre denetlenir.",
+      "articleRefs": [
+        "38"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Faaliyet raporu il genel meclisine hangi ayın toplantısında sunulur?",
+      "back": "Mart ayı toplantısında; raporu vali veya genel sekreter sunar.",
+      "explanation": "Raporu vali hazırlar. Raporun bir örneği İçişleri Bakanlığına gönderilir ve kamuoyuna da açıklanır.",
+      "articleRefs": [
+        "39"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "İl özel idaresi hizmetlerindeki ciddî aksamayı İçişleri Bakanlığı mı belirler?",
+      "back": "Hayır. Aksamayı, ilgili bakanlığın talebi üzerine yetkili sulh hukuk hâkimi belirler. İçişleri Bakanlığı bu belirlemeden sonra harekete geçer.",
+      "explanation": "Hâkimin belirlediği durum iki unsurdan oluşur: hizmetlerin ciddî biçimde aksatılması ve bunun halkın sağlık, huzur ve esenliğini hayatî derecede olumsuz etkilemesi. Ardından İçişleri Bakanlığı, hizmetin özelliğine göre makul bir süre vererek aksamanın giderilmesini il özel idaresinden ister.",
+      "articleRefs": [
+        "40"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Verilen makul süreye rağmen aksama giderilemezse İçişleri Bakanlığı hizmetin yerine getirilmesini kimden ister?",
+      "back": "O ilin valisinden. Vali aksaklığı öncelikle il özel idaresinin araç, gereç, personel ve diğer kaynaklarıyla giderir.",
+      "explanation": "Bu mümkün olmazsa vali, diğer kamu kurum ve kuruluşlarının imkânlarını da kullanabilir.",
+      "articleRefs": [
+        "40"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Valinin giderdiği hizmet aksaklığının maliyeti nasıl karşılanır?",
+      "back": "Vali maliyeti İller Bankasına bildirir. İller Bankası bu tutarı, o il özel idaresine ayrılan paydan valilik emrine gönderir.",
+      "explanation": "Tutar, il özel idaresinin müteakip ay genel bütçe vergi gelirleri tahsilâtı toplamı üzerinden ayrılan paydan karşılanır.",
+      "articleRefs": [
+        "40"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "İl özel idaresinin hizmet karşılığı ücretleri hangi tarifelere göre tahsil edilir?",
+      "back": "İl genel meclisi tarafından belirlenecek tarifelere göre.",
+      "explanation": "İl özel idaresinin gelirleri arasında şunlar da vardır: kanunlarla gösterilen vergi, resim, harç ve katılma payları; genel bütçe vergi gelirlerinden ayrılan paylar; faiz ve ceza gelirleri; bağışlar.",
+      "articleRefs": [
+        "42"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "İl özel idaresinin köylere veya köylerin aralarında kurdukları birliklere yapacağı yardımlar hangi çerçevede yapılır?",
+      "back": "İl genel meclisince belirlenecek ilkeler çerçevesinde. Bu yardımlar il özel idaresinin giderleri arasındadır.",
+      "explanation": "Giderler arasında yoksul, muhtaç ve kimsesizler ile engellilere yapılacak sosyal hizmet ve yardımlar da vardır. Doğal afet giderleri de bu kapsamda sayılır.",
+      "articleRefs": [
+        "43"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "İl özel idaresi bütçesi, malî yılla birlikte izleyen kaç yılın gelir ve gider tahminlerini gösterir?",
+      "back": "İzleyen iki yılın. Bütçe ilin stratejik plânına uygun olarak hazırlanır.",
+      "explanation": "Bütçe, gelirlerin toplanmasına ve harcamaların yapılmasına izin verir. Bütçeye ayrıntılı harcama programları ile finansman programları eklenir.",
+      "articleRefs": [
+        "44"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "İl özel idaresinin bütçe yılı neyle aynıdır?",
+      "back": "Devlet malî yılı ile aynıdır.",
+      "explanation": "Bütçe dışı harcama yapılamaz. Vali ve harcama yetkisi verilen diğer görevliler, ödeneklerin verimli, tutumlu ve yerinde harcanmasından sorumludur.",
+      "articleRefs": [
+        "44"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Vali hazırladığı bütçe tasarısını hangi ayın başında il encümenine sunar?",
+      "back": "Eylül ayı başında. Encümen tasarıyı inceler ve görüşüyle birlikte kasım ayının birinci gününden önce il genel meclisine sunar.",
+      "explanation": "İl genel meclisi bütçe tasarısını yıl başından önce kabul eder.",
+      "articleRefs": [
+        "45"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Bütçe tasarısı süresi içinde kesinleşmezse İçişleri Bakanı kaç gün içinde karar verir?",
+      "back": "Otuz gün içinde; Bakanın bu kararı kesindir.",
+      "explanation": "Tasarı süresinde kesinleşmezse vali, görüşüyle birlikte durumu İçişleri Bakanlığına bildirir. Bakanın kararı bu bildirim üzerine verilir.",
+      "articleRefs": [
+        "45"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "İl genel meclisi bütçe tasarısını değiştirerek kabul edebilir mi?",
+      "back": "Evet; tasarıyı aynen veya değiştirerek kabul edebilir. Ancak bütçe denkliğini bozacak biçimde gider artırıcı ve gelir azaltıcı değişiklik yapamaz.",
+      "explanation": "Meclis bu kabulü yıl başından önce yapar.",
+      "articleRefs": [
+        "45"
+      ],
+      "counterNumbers": []
+    }
+  ]
+}

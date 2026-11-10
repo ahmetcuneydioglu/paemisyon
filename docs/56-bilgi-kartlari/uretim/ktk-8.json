@@ -1,0 +1,293 @@
+{
+  "deck": {
+    "topicId": "3f91916c-8d15-40f4-bb20-5bcca9253c34",
+    "legislationSlug": "2918-sayili-karayollari-trafik-kanunu",
+    "sourceLabel": "AI bilgi kartı — 2918 Sayılı Karayolları Trafik Kanunu md 48–53",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: resmî madde metni + çıkmış sorular)"
+  },
+  "cards": [
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Ölümlü ya da yaralanmalı trafik kazasına karışan sürücü, teknik cihazla yapılan alkol ölçümüne itiraz ederse hakkında ne yapılır?",
+      "back": "En yakın adli tıp kurumuna, adli tabipliğe veya Sağlık Bakanlığına bağlı sağlık kuruluşlarına götürülür ve vücudundan kan, tükürük veya idrar gibi örnekler alınır.",
+      "explanation": "Aynı işlem, cihazla ölçüm yapılmasına müsaade etmeyen sürücüye de uygulanır. Örnek alma işleminde Ceza Muhakemesi Kanununun 75 inci maddesi, beşinci fıkrası hariç olmak üzere uygulanır. Kaza sonucu ölen ya da teknik cihaza üfleyemeyecek kadar yaralanan kişiden de örnek alınır.",
+      "articleRefs": [
+        "48"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Hususi otomobili 0.50 promilin üzerinde alkollü kullanan sürücüye ilk defasında hangi idari yaptırım uygulanır?",
+      "back": "25.000 Türk lirası idari para cezası verilir ve sürücü belgesi altı ay süreyle geri alınır.",
+      "explanation": "Fiil ayrıca bir suç oluştursa bile bu ceza verilir. Belge herhangi bir nedenle geçici olarak geri alınmışsa geri alma süresi, geçici alma süresinin bitiminde başlar.",
+      "articleRefs": [
+        "48"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Hususi otomobil dışındaki araçları kullanan sürücüler için idari para cezası ve belge geri alma bakımından promil alt sınırı 0.20 midir?",
+      "back": "Hayır; alt sınır 0.21 promildir. 0.20 promilin üzerinde alkollü olup trafik kazasına sebebiyet verme hâli ise Türk Ceza Kanununun ilgili hükümlerinin ayrıca uygulanmasına bağlanır.",
+      "explanation": "Hususi otomobil sürücüleri için idari yaptırım 0.50 promilin üzerinde uygulanır; kazaya sebebiyet hâlinde de bu sürücüler için aynı eşik geçerlidir.",
+      "articleRefs": [
+        "48"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Takograf cihazı zorunlu taşıtın taşıt kullanma sürelerine aykırı kullanılmaması için tedbir alma ve denetim yükümlülüğü kimdedir?",
+      "back": "İşletendedir; sürücünün kendisi olup olmadığına bakılmaksızın gerekli tedbirleri almak ve denetimini yapmakla yükümlüdür.",
+      "explanation": "Bu taşıtları taşıt kullanma sürelerine aykırı kullanmak da kullandırmak da yasaktır. Taşıt kullanma, mola ve dinlenme süreleri ile işletenlerin sorumlulukları yönetmelikte belirtilir.",
+      "articleRefs": [
+        "49"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Takograf zorunlu taşıtta haftalık ya da birleşik iki haftalık taşıt kullanma süresi on beş saat ve daha fazla aşılırsa sürücüye kaç Türk lirası idari para cezası verilir?",
+      "back": "20.000 Türk lirası.",
+      "explanation": "Aynı süre dört saate kadar aşılırsa 10.000, dört saatten on beş saate kadar aşılırsa 15.000 Türk lirası idari para cezası uygulanır.",
+      "articleRefs": [
+        "49"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Yönetmelikte belirlenecek en çok hız sınırı otoyollarda hangi değeri geçemez?",
+      "back": "120 km/s.",
+      "explanation": "Şehirlerarası çift yönlü karayollarında 90 km/s, bölünmüş yollarda 110 km/s geçilemez. Sınırlar motorlu araçların cins ve kullanma amaçlarına göre yönetmelikte belirlenir.",
+      "articleRefs": [
+        "50"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "İçişleri Bakanlığı, kanundaki hız sınırlarını otomobiller için ne kadar artırmaya yetkilidir?",
+      "back": "20 km/s; yol standartlarını dikkate alarak.",
+      "explanation": "Bu artırma yetkisi yalnız otomobiller için verilmiştir ve şehirlerarası çift yönlü karayolu, bölünmüş yol ve otoyol için belirlenen hız sınırlarına ilişkindir.",
+      "articleRefs": [
+        "50"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Yerleşim yeri dışında hız sınırını 6-10 km/s aşan sürücüye idari para cezası verilir mi?",
+      "back": "Hayır; yerleşim yeri dışındaki ceza kademesi 11-15 km/s aşımla başlar ve 2.000 Türk lirasıdır. 6-10 km/s kademesi yerleşim yeri içine aittir.",
+      "explanation": "Yerleşim yeri içinde 6-10 km/s aşım 2.000 Türk lirası cezayla başlar. En üst kademe her iki yerde de 30.000 Türk lirasıdır: içeride 66, dışarıda 71 km/s ve daha fazla aşımda.",
+      "articleRefs": [
+        "51"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Hız denetim cihazlarının yerini tespit eden ya da sürücüyü ikaz eden cihazlara kim el koyar?",
+      "back": "Mülki amir el koyar; bu cihazların mülkiyetinin kamuya geçirilmesine de mülki amir karar verir.",
+      "explanation": "Bu cihazların imali, ithali ve araçlarda bulundurulması yasaktır.",
+      "articleRefs": [
+        "51"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Hız denetim cihazlarının yerini tespit eden ya da sürücüyü ikaz eden cihazı aracında bulunduran işletene kaç Türk lirası idari para cezası verilir?",
+      "back": "185.000 Türk lirası.",
+      "explanation": "Bu cihazları imal ve ithal edenlere, fiil başka bir suç oluştursa bile ayrıca 370.000 Türk lirası idari para cezası uygulanır.",
+      "articleRefs": [
+        "51"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Sürücü hangi durumlarda hızını azaltmak zorundadır?",
+      "back": "Kavşaklara, tepe üstlerine, yaya geçitlerine, hemzemin geçitlere, tünellere, dar köprü ve menfezlere yaklaşırken; dönemeçlere ve yapım ve onarım alanlarına girerken; dönemeçli yollarda ilerlerken.",
+      "explanation": "Diğer bir aracı izleyen sürücü de bu durumları göz önünde tutarak güvenli bir mesafe bırakmak zorundadır.",
+      "articleRefs": [
+        "52"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Sürücü hızını hangi şartlara uydurmak zorundadır?",
+      "back": "Kullandığı aracın yük ve teknik özelliğine; görüş, yol, hava ve trafik durumunun gerektirdiği şartlara.",
+      "articleRefs": [
+        "52"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Dönel kavşaklarda geriye dönüş yapan sürücü, sola dönüş kurallarına ek olarak neye uymak zorundadır?",
+      "back": "Orta ada etrafında dönerken gireceği yola yaklaşıncaya kadar şeridini muhafaza etmeye.",
+      "explanation": "Sola dönüş kuralları arasında sola dönüş işareti vermek, yolun gidişe ayrılmış kısmının soluna yaklaşmak ve hızını azaltmak bulunur; geriye dönüşte bunlara şeridi muhafaza etme zorunluluğu eklenir.",
+      "articleRefs": [
+        "53"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Sola dönüş yapan sürücünün dar bir kavisle dönmesi gerekir mi?",
+      "back": "Hayır; sola dönüşte arkadan gelen ve sola dönecek diğer taşıtları engellememek için geniş kavisle döner. Dar bir kavisle dönme kuralı sağa dönüşlere aittir.",
+      "explanation": "Sağa dönüşte sürücü sağ şeride ya da dönüşe ayrılmış şeride girer, hızını azaltır, dar bir kavisle döner ve dönülen karayolunun gidiş şeridine veya gidişine ayrılmış en sağ şeridine girer.",
+      "articleRefs": [
+        "53"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Alkollü araç kullanma nedeniyle son ihlalden geriye doğru beş yıl içinde ikinci defa tespit edilen sürücüye hangi yaptırım uygulanır?",
+      "back": "50.000 Türk lirası idari para cezası verilir ve sürücü belgesi iki yıl süreyle geri alınır.",
+      "explanation": "Üç veya üçten fazlasında 150.000 Türk lirası idari para cezası verilir ve sürücü belgesi her seferinde beşer yıl süreyle geri alınır.",
+      "articleRefs": [
+        "48"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Alkollü araç kullandığı için son ihlalden geriye doğru beş yıl içinde sürücü belgesi ikinci defa geri alınan sürücü neye tabi tutulur?",
+      "back": "Sağlık Bakanlığınca verilen sürücü davranışlarını geliştirme eğitimine.",
+      "explanation": "Üç veya üçten fazla geri alınan sürücüler ise psiko-teknik değerlendirmeye ve psikiyatri uzmanının muayenesine tabi tutulur. Eğitimin usul ve esasları İçişleri, Millî Eğitim ve Sağlık bakanlıklarınca çıkarılan yönetmelikte gösterilir.",
+      "articleRefs": [
+        "48"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Uyuşturucu, uyarıcı madde ya da alkol tespiti için kolluğa ölçüm yaptırmayan sürücüye hangi yaptırım uygulanır?",
+      "back": "150.000 Türk lirası idari para cezası verilir ve sürücü belgesi beş yıl süreyle geri alınır.",
+      "explanation": "Bu madde hükümlerine göre geçici olarak geri alınan sürücü belgesinin iadesi için, bu Kanun kapsamında verilen idari para cezalarının tamamının tahsil edilmiş olması şarttır.",
+      "articleRefs": [
+        "48"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Takograf süre ihlalinde sürücü aynı zamanda işletense idari para cezası olağan tutarında mı uygulanır?",
+      "back": "Hayır; sürücü aynı zamanda işletense cezalar iki kat uygulanır. Sürücü işleten değilse, tedbir ve denetim yükümlülüğünü yerine getirmeyen işletene de aynı cezalar tescil plakası üzerinden iki kat uygulanır.",
+      "articleRefs": [
+        "49"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Birden fazla sürücü görevlendirilmesinin zorunlu olduğu hâllerde araçta bulunması gereken sürücülere ilişkin yönetmelik hükümlerine uymayan işletene kaç Türk lirası idari para cezası verilir?",
+      "back": "10.000 Türk lirası.",
+      "explanation": "Bu ceza işletene uygulanır; taşıtta birden fazla sürücü görevlendirilmesi gereken hâller yönetmelikte belirtilir.",
+      "articleRefs": [
+        "49"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Kanunla yetki verilen kuruluşlar, yönetmelikteki hız sınırlarını yalnız azaltabilir mi?",
+      "back": "Hayır; yol ve trafik durumuna göre azaltabilir veya çoğaltabilir. Bu durum trafik işaretleriyle belirtilir ve uygun vasıtalarla duyurulur.",
+      "explanation": "En çok ve en az hız sınırlarını gösteren işaret levhaları, gerekli görülen yerlere ilgili kuruluşlarca konulur.",
+      "articleRefs": [
+        "50"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Yerleşim yeri içinde hız sınırını 46-55 km/s aşan sürücünün sürücü belgesi kaç gün süreyle geri alınır?",
+      "back": "Her seferinde 30 gün; ayrıca 20.000 Türk lirası idari para cezası verilir.",
+      "explanation": "56-65 km/s aşımda 60 gün, 66 km/s ve daha fazla aşımda 90 gün geri alma uygulanır. Yerleşim yeri dışında aynı süreler 51-60, 61-70 ve 71 km/s ve daha fazla aşımlara bağlanır.",
+      "articleRefs": [
+        "51"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Nüfusu 5.000'in altında olan yerleşim yerlerinde hız denetiminin yapılacağı yeri kim belirler?",
+      "back": "Mahalli mülki idare amiri.",
+      "explanation": "Hız ihlali nedeniyle sürücü belgesi geri alma işlemleri ise bu Kanunun 6 ncı maddesinde sayılan görevlilerce gerçekleştirilir.",
+      "articleRefs": [
+        "51"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Hız ihlali nedeniyle son ihlalden geriye doğru bir yıl içinde beşinci kez geri alınan sürücü belgesi hangi şartla iade edilir?",
+      "back": "Geri alma süresi sonunda sürücü psiko-teknik değerlendirmeden ve psikiyatri uzmanının muayenesinden geçirilir; sürücü belgesi almasına mâni hâli olmadığı anlaşılırsa iade edilir.",
+      "explanation": "Bu madde kapsamında geri alınan her sürücü belgesinin iadesi için ayrıca bu Kanun kapsamında verilen idari para cezalarının tamamının tahsil edilmiş olması şarttır.",
+      "articleRefs": [
+        "51"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Kol ve grup hâlinde araç kullanan sürücüler, araçları arasında ne bulundurmak zorundadır?",
+      "back": "Diğer araçların güvenle girebilecekleri açıklıklar; yönetmelikte belirtilen esaslara uygun olarak.",
+      "articleRefs": [
+        "52"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Dönel kavşakta dönüş yapacak sürücü kavşağa hangi şeritten girer?",
+      "back": "Orta adaya yakın şeritten.",
+      "explanation": "Sürücü dönüş işareti verir, hızını azaltır, ada etrafında dönerken gereksiz şerit değiştirmez; gireceği yola yaklaşırken sağa dönüş işaretiyle birlikte sağa yaklaşarak dönel kavşaktan çıkar.",
+      "articleRefs": [
+        "53"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Sola dönen sürücü, gireceği yol gidiş yönünde çok şeritliyse en sağ şeride mi girer?",
+      "back": "Hayır; en sağ şerit dışında uygun bir şeride girer. Yola girdikten sonra en kısa sürede, trafiği tehlikeye düşürmeden sağa yaklaşır.",
+      "explanation": "Sola dönüşlerde sürücü, kurallara uygun olarak geçiş yapan yayalara, varsa bisiklet yolundaki ve bisiklet şeridindeki bisiklet ve elektrikli skuter kullananlara, sağdan ve karşıdan gelen trafiğe ilk geçiş hakkını vermek zorundadır.",
+      "articleRefs": [
+        "53"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Uyuşturucu veya uyarıcı madde nedeniyle sürücü belgesi iptal edilen kişi, sürücü kursunda eğitime başlayabilmek için iptalden itibaren en az ne kadar beklemelidir?",
+      "back": "En az beş yıl geçmiş olmalıdır.",
+      "explanation": "Ayrıca bu Kanun kapsamında verilen idari para cezalarının tamamının tahsil edilmiş olması, psiko-teknik değerlendirmeden geçilmesi ve resmî sağlık kurumlarından alınan, sürücülüğe engel hâli bulunmadığını gösteren sağlık kurulu raporunun sürücü kursuna ibrazı zorunludur. Tespitte 150.000 Türk lirası idari para cezası verilir ve belge iptal edilir.",
+      "articleRefs": [
+        "48"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "1.00 promilin üzerinde alkollü olduğu tespit edilen sürücü hakkında idari yaptırıma ek olarak hangi hüküm uygulanır?",
+      "back": "Türk Ceza Kanununun 179 uncu maddesinin üçüncü fıkrası.",
+      "explanation": "Bu hüküm, 0.50 promilin üzerindeki alkol için öngörülen idari para cezası ve sürücü belgesinin geri alınmasına ek olarak uygulanır.",
+      "articleRefs": [
+        "48"
+      ]
+    }
+  ]
+}

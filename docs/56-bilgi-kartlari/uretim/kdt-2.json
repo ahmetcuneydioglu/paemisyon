@@ -1,0 +1,266 @@
+{
+  "deck": {
+    "topicId": "3e609f93-00e7-42de-9c16-59d4d43d6a89",
+    "legislationSlug": "koruyucu-ve-destekleyici-tedbir-kararlarinin-uygulanmasi-hakkinda-yonetmelik",
+    "sourceLabel": "AI bilgi kartı — Koruyucu ve Destekleyici Tedbir Kararlarının Uygulanması Hakkında Yönetmelik md 13–18",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: resmî madde metni + çıkmış sorular)"
+  },
+  "cards": [
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Eğitim tedbirini hangi bakanlıkların ilgili birimleri yerine getirir?",
+      "back": "Millî Eğitim Bakanlığı ile Çalışma ve Sosyal Güvenlik Bakanlığının ilgili birimleri.",
+      "explanation": "Eğitim tedbirinin kapsadıkları arasında şunlar var: çocuğun bir eğitim kurumuna gündüzlü veya yatılı devamı, bu mümkün değilse evde eğitim almasıdır. Meslek veya sanat edinme kursuna gitmesi de bunlardan biridir. Çocuğun meslek sahibi bir ustanın yanına ya da kamu veya özel sektöre ait işyerlerine yerleştirilmesi de bu tedbirin içindedir.",
+      "articleRefs": [
+        "13"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Mahkeme veya çocuk hâkimi, eğitim tedbirine karar vermeden önce kimlerden bilgi isteyebilir?",
+      "back": "Çocuğun eğitim alacağı kişi, kamu veya özel kurumlardan.",
+      "explanation": "Amaç, eğitimin verileceği yerin durumunu karar öncesinde öğrenmektir.",
+      "articleRefs": [
+        "13"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Açtıkları ve açacakları kurs ya da programların listelerini periyodik olarak mahkeme veya çocuk hâkimine kimler bildirir?",
+      "back": "Halk eğitimi ve meslekî eğitim merkezleri ile Türkiye İş Kurumu il müdürlükleri.",
+      "explanation": "Listeler süre, konu, hedef kitle gibi hususları içerir. Bilgi, mahkeme veya çocuk hâkiminin yanı sıra il ve ilçelerdeki koordinasyon makamlarına da verilir.",
+      "articleRefs": [
+        "13"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Bakım tedbirini kim yerine getirir?",
+      "back": "Aile ve Sosyal Hizmetler Bakanlığı il ve ilçe müdürlükleri (Yönetmelikte eski adıyla: Aile ve Sosyal Politikalar).",
+      "explanation": "Bakım tedbiri, çocuğun bakımından sorumlu kimsenin herhangi bir nedenle görevini yerine getirememesi hâlinde uygulanır. Çocuk resmî veya özel bakım yurduna yerleştirilir ya da koruyucu aile hizmetlerinden yararlandırılır.",
+      "articleRefs": [
+        "14"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Eğitim tedbiri kararında uluslararası sözleşmeler ve kanunların öngördüğü sınırlar hangi yaşı doldurmamış çocuklar bakımından dikkate alınır?",
+      "back": "Onbeş yaşını doldurmamış çocuklar bakımından.",
+      "explanation": "Bu sınırlar, söz konusu yaştaki çocuklar hakkında verilecek eğitim tedbiri kararında gözetilir.",
+      "articleRefs": [
+        "13"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Onbeş yaşını doldurmamış çocuk hakkında eğitiminin devamına ilişkin tedbir kararı verilebilir mi?",
+      "back": "Evet. Uluslararası sözleşmeler ve kanunların öngördüğü sınırlar dikkate alınarak, bu çocuklar hakkında eğitimlerinin devamına ilişkin tedbir kararı verilebilir.",
+      "explanation": "İş ve meslek edinme amaçlı kursa gönderme, ustanın yanına ya da işyerine yerleştirme kararlarının yerine getirilme usulü maddede ayrıca düzenlenmiştir. Bu usul onbeş yaşını doldurmuş çocuklar için öngörülmüştür.",
+      "articleRefs": [
+        "13"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Onbeş yaşını doldurmuş çocuk için işyerine yerleştirme kararı Çalışma ve Sosyal Güvenlik Bakanlığınca yerine getirilecekse çocuk hangi programlara yönlendirilir?",
+      "back": "Türkiye İş Kurumu Genel Müdürlüğünce geliştirilen işgücü yetiştirme, meslekî eğitim ve işgücü uyum programlarına.",
+      "explanation": "Kararın Millî Eğitim Bakanlığınca yerine getirileceği hükme bağlanmışsa çocuk, bu Bakanlığın koordinasyonunda meslekî eğitim merkezlerine yönlendirilir. Programlara erişimde güçlük yaşanırsa çocuk Türkiye İş Kurumu Genel Müdürlüğüne başvurur. Bu başvurudan sonra vasıflarına uygun işçi arayan özel işyerleriyle bağlantısı sağlanır. Kamuda işe yerleştirme, kamuda işe alınacaklarla ilgili kanun hükümleri çerçevesinde yapılır.",
+      "articleRefs": [
+        "13"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "İstismara uğramış ve rehabilitasyona ihtiyacı tespit edilen çocuk, rehabilitasyonu sağlanmadan korunma ihtiyacı olan diğer çocuklarla aynı ortamda bakılabilir mi?",
+      "back": "Hayır. Rehabilitasyonu sağlanıncaya kadar korunma ihtiyacı olan diğer çocuklarla aynı ortamda bakılmamaları esastır.",
+      "explanation": "Bu çocukların rehabilitasyonu öncelikle Aile ve Sosyal Hizmetler Bakanlığı il ve ilçe müdürlüklerince bu amaçla kurulmuş merkezlerde sağlanır. Kural, bakım veya barınma tedbir kararı alınan çocukları kapsar. Bunlar arasında ihmal veya istismara uğrayanlar ile psiko-sosyal sorunları nedeniyle uyum sorunu yaşayanlar vardır.",
+      "articleRefs": [
+        "14"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Sağlık ve bakım tedbiri birlikte uygulanacaksa, ağır ruhsal hastalığı ya da madde bağımlılığı nedeniyle fiziksel sorunları olan çocuğun rehabilitasyonu öncelikle nerede yapılır?",
+      "back": "Bu amaçla kurulmuş resmî veya özel sağlık kuruluşlarında.",
+      "explanation": "Bu çocuklardan bakım tedbirini gerektirenler, yatarak tedavileri tamamlandıktan sonra yerleştirilir. Yerleştirme, bakım amacıyla aile yanına ya da bu amaçla kurulmuş resmî veya özel kuruluşa yapılır.",
+      "articleRefs": [
+        "14"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Barınma tedbirini hangi kurumlar yerine getirir?",
+      "back": "Aile ve Sosyal Hizmetler Bakanlığı (Yönetmelikte eski adıyla: Aile ve Sosyal Politikalar) il ve ilçe müdürlükleri, Millî Eğitim Bakanlığı ve yerel yönetimler.",
+      "explanation": "Barınma tedbiri, yaşamını sürdürmek için yeterli ve sağlıklı barınma yeri olmayan çocuklu kimselere uygun barınma yeri sağlamaya yönelir. Hayatı tehlikede olan hamile kadınlar ile bunların çocukları da tedbirin kapsamındadır.",
+      "articleRefs": [
+        "15"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Kolluk, bakım tedbiri kararı verilen çocuğu Aile ve Sosyal Hizmetler Bakanlığı il veya ilçe müdürlüğüne teslim etmeden önce ne yapılmasını sağlar?",
+      "back": "Çocuğun ilk sağlık kontrolünün yapılmasını; teslim bu kontrolden sonra sağlanır.",
+      "explanation": "Bulaşıcı hastalığı olan çocukların tedavisi Sağlık Bakanlığınca yapılır. Bu durumdaki çocuklar hakkında derhâl sağlık tedbiri alınması için mahkeme veya çocuk hâkimine başvurulur.",
+      "articleRefs": [
+        "14"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Bakım ya da barınma tedbirinde sağlık kontrolü ve tedaviye ilişkin hizmetlerden doğan giderleri kim karşılar?",
+      "back": "Sağlık Bakanlığı; bu hizmetlerden doğan tüm giderler bu Bakanlıkça karşılanır.",
+      "explanation": "Her iki tedbirde de kolluk teslimden önce ilk sağlık kontrolünü yaptırır. Bulaşıcı hastalığı olanların tedavisini de Sağlık Bakanlığı gerçekleştirir.",
+      "articleRefs": [
+        "14",
+        "15"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Suça sürüklenen veya korunma ihtiyacı olan akıl hastası çocuk hakkında, ruhsal sağlığının tedavisi için öncelikle hangi tedbire karar verilmesi esastır?",
+      "back": "Sağlık tedbirine.",
+      "explanation": "Sağlık tedbiri, çocuğun fiziksel ve ruhsal sağlığının korunması ve tedavisi için gerekli geçici veya sürekli tıbbî bakım ve rehabilitasyonu kapsar. Madde bağımlısı olanların tedavisi de bu tedbirin içindedir.",
+      "articleRefs": [
+        "16"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Akıl hastalığı veya madde bağımlılığı sebebiyle sağlık tedbirine ve kısıtlamaya kural olarak hangi belge üzerine karar verilir?",
+      "back": "Resmî sağlık kurulu raporu üzerine.",
+      "explanation": "Mahkeme veya çocuk hâkimi, acil korunma kararı ya da koruyucu ve destekleyici tedbir kararı vermeden önce de çocuğun sağlık durumu hakkında sağlık kuruluşlarından rapor isteyebilir.",
+      "articleRefs": [
+        "16"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Çocuğun madde bağımlılığı açıkça belli ise rapor alınmadan sağlık tedbirine karar verilebilir mi?",
+      "back": "Evet. Tedavi talebi üzerine veya re'sen, rapor alınmadan karar verilebilir. Talepte bulunabilecekler: çocuğun kendisi ya da anası, babası, vasisi, bakım ve gözetiminden sorumlu kimse.",
+      "explanation": "Kural, resmî sağlık kurulu raporu üzerine karar verilmesidir. Rapor aranmayan istisna, akıl hastalığı veya madde bağımlılığının açıkça belli olduğu hâllerdir.",
+      "articleRefs": [
+        "16"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Akıl hastası çocuğun toplum açısından tehlikeliliğinin sürüp sürmediği konusunda mahkeme veya çocuk hâkimine en geç hangi aralıklarla bilgi verilir?",
+      "back": "En geç üçer aylık dönemler hâlinde; tehlikeliliğin devam edip etmediği ya da önemli ölçüde azalıp azalmadığı bildirilir.",
+      "explanation": "Bilgi, mahkeme veya çocuk hâkimine verilir. Konusu, akıl hastası çocuğun toplum açısından tehlikeliliğindeki değişimdir.",
+      "articleRefs": [
+        "16"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Yüksek güvenlikli sağlık kurumunda koruma ve tedavi altındaki çocuğun serbest bırakılmasına kim karar verir?",
+      "back": "Mahkeme veya çocuk hâkimi karar verir. Bunun için yerleştirildiği kurumun sağlık kurulu raporunda tehlikeliliğin ortadan kalktığı ya da önemli ölçüde azaldığı belirtilmelidir.",
+      "explanation": "Sağlık kurulu raporuna göre toplum açısından tehlikeli olan akıl hastası çocuk hakkındaki sağlık tedbiri, yüksek güvenlikli sağlık kurumlarında korunma ve tedavi altına alınarak yerine getirilir. Rapor ayrıca güvenlik bakımından tıbbî kontrol ve takibin gerekip gerekmediğini gösterir; gerekiyorsa süre ve aralıklarını da belirtir.",
+      "articleRefs": [
+        "16"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Bakım ve barınma tedbirlerinin yerine getirilmesi sırasında talep edilen kolluk hizmetlerini kolluk birimleri ne zaman yerine getirir?",
+      "back": "Geciktirmeksizin.",
+      "explanation": "Bu tedbirlerin yerine getirilmesi sırasında ihtiyaç duyulan kolluk hizmetleri ilgili kolluk birimlerinden talep edilir.",
+      "articleRefs": [
+        "17"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Madde bağımlısı çocuğun tedavisine ilişkin sağlık tedbiri kararı yerine getirilirken çocuğun rızası aranır mı?",
+      "back": "Hayır. Alkol ya da uyuşturucu veya uyarıcı madde bağımlısı çocuğun tedavisinde rızası aranmaz.",
+      "explanation": "Tedbirin uygulanması süresince ilgili kurum uzmanı çocuğa maddenin kullanılmasının etki ve sonuçları hakkında bilgi verir. Ayrıca sorumluluk bilincinin gelişmesine yönelik öğütte bulunur ve yol gösterir.",
+      "articleRefs": [
+        "16"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Ayakta tedavisi uygun görülen çocuğun sağlık kurumuna gönderilmesinde kolluk birimlerinden ne amaçla yardım istenebilir?",
+      "back": "Güvenliğin sağlanması için; gerektiğinde bu yardım istenebilir.",
+      "explanation": "Sağlık tedbirinin yerine getirileceği uygun kurumu, Sağlık Bakanlığı il sağlık müdürlükleri marifetiyle belirler. Çocuğun bu kuruma ilk müracaatını sağlamak da Bakanlığın görevidir. Ayakta tedavide çocuğu belirlenen sağlık kurumuna şunlar gönderir: ana, baba, vasi, bakım ve gözetimini üstlenen kimseler ya da bakım veya barınma tedbirini yerine getirmekle yükümlü kurum veya kuruluşlar.",
+      "articleRefs": [
+        "16"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Tedbir uygulama plânı, çocuğun teslim edildiği ya da teslim alındığı tarihten itibaren en geç kaç gün içinde mahkeme veya çocuk hâkiminin onayına sunulur?",
+      "back": "En geç on gün içinde.",
+      "explanation": "Plân, tedbir kararlarını yerine getirmekle görevli kişi, kurum veya kuruluşlarca hazırlanıp uygulamaya konulur. Mahkeme veya çocuk hâkimi gerektiğinde plânın değiştirilmesini isteyebilir.",
+      "articleRefs": [
+        "18"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Tedbir uygulama plânında hangi bilgilere yer verilir?",
+      "back": "Kararın uygulanmasından sorumlu kişi, tedbirin türü ve süresi, işbirliği yapılacak kurumlar, sağlanacak hizmetler, nelerin amaçlandığı ve ilerlemenin nasıl ölçüleceği.",
+      "explanation": "Plân hazırlanırken çocuk hakkında düzenlenmiş sosyal inceleme raporundan da yararlanılabilir.",
+      "articleRefs": [
+        "18"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Aile ve Sosyal Hizmetler Bakanlığı il ve ilçe müdürlüklerinin bakım ve barınma tedbiri kararı alınanlarla ilgili yardım ve destek taleplerini hangi kurumlar yerine getirir?",
+      "back": "Millî Eğitim Bakanlığı, İçişleri Bakanlığı, Sağlık Bakanlığı, ilgili diğer bakanlıklar ile kamu kurum ve kuruluşları.",
+      "explanation": "Talepler kişiler ile çocukların rehabilitasyonu, eğitimi ve diğer bakanlıkların görev alanına giren hususlarla ilgilidir. Bu talepler geciktirilmeksizin yerine getirilir.",
+      "articleRefs": [
+        "17"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "İncelemeyi yapan sosyal çalışma görevlisi ya da uzman, düzenlediği raporu kaç gün içinde mahkemeye veya hâkime verir?",
+      "back": "On gün içinde.",
+      "explanation": "Gerekli görülürse raporu düzenleyen uzman dinlenebilir. Rapor yeterli görülmezse yeniden inceleme yaptırılır.",
+      "articleRefs": [
+        "18"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Koruyucu ve destekleyici tedbirlerin yerine getirilmesinde ceza infaz kurumlarına görev yüklenebilir mi?",
+      "back": "Hayır. Bu tedbirlerin yerine getirilmesinde ceza infaz kurumlarına herhangi bir görev yüklenemez.",
+      "explanation": "Tedbirlerin uygulanması için özel ve resmî kişi, kurum ve kuruluşlarca hizmet verilir. Bu hizmetler, Kanunun ilgili tedbiri yerine getirmekle sorumlu tuttuğu Bakanlığın denetiminde yürütülür.",
+      "articleRefs": [
+        "18"
+      ],
+      "counterNumbers": []
+    }
+  ]
+}

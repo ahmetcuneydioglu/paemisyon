@@ -1,0 +1,291 @@
+{
+  "deck": {
+    "topicId": "c345c19d-c850-4798-b194-d552edf39708",
+    "legislationSlug": "3713-sayili-terorle-mucadele-kanunu",
+    "sourceLabel": "AI bilgi kartı — 3713 Sayılı Terörle Mücadele Kanunu md 1–8, 8/A, 8/B, 9–20, 20/A",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: resmî madde metni + çıkmış sorular)"
+  },
+  "cards": [
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Terör tanımına göre suç teşkil eden eylemlerin kimler tarafından girişilmesi aranır?",
+      "back": "Bir örgüte mensup kişi veya kişiler tarafından girişilmesi aranır.",
+      "explanation": "Eylem cebir ve şiddet kullanılarak, baskı, korkutma, yıldırma, sindirme veya tehdit yöntemlerinden biriyle girişilir. Tanımda sayılan amaçlar arasında Cumhuriyetin niteliklerini değiştirmek, Devletin ülkesi ve milletiyle bölünmez bütünlüğünü bozmak, Devlet otoritesini zaafa uğratmak, temel hak ve hürriyetleri yok etmek ile kamu düzenini veya genel sağlığı bozmak vardır.",
+      "articleRefs": [
+        "1"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Terör amacıyla kurulmuş bir örgütün mensubunun terör suçlusu sayılması için amaçlanan suçu işlemiş olması gerekir mi?",
+      "back": "Hayır. Amaçlanan suçu işlemese dahi örgütün mensubu olan kişi terör suçlusudur.",
+      "explanation": "Örgüt mensubu, bu amaçlar doğrultusunda diğerleri ile beraber veya tek başına suç işlediğinde de terör suçlusudur; mensubiyet tek başına yeterlidir.",
+      "articleRefs": [
+        "2"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Türk Ceza Kanununun 310 uncu maddesinin hangi fıkrasında yazılı suç, ayrıca bir şart aranmadan terör suçudur?",
+      "back": "Birinci fıkrası; bu fıkradaki suç doğrudan terör suçları arasında sayılır.",
+      "explanation": "Aynı maddenin ikinci fıkrasındaki suç ise ancak 1 inci maddedeki amaçlar doğrultusunda suç işlemek üzere kurulmuş bir terör örgütünün faaliyeti çerçevesinde işlenirse terör suçu sayılır.",
+      "articleRefs": [
+        "3",
+        "4"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Ateşli Silahlar ve Bıçaklar ile Diğer Aletler Hakkında Kanunda tanımlanan suçlar her durumda terör suçu sayılır mı?",
+      "back": "Hayır. Ancak 1 inci maddedeki amaçlar doğrultusunda suç işlemek üzere kurulmuş bir terör örgütünün faaliyeti çerçevesinde işlenirse terör suçu sayılır.",
+      "explanation": "Aynı şart, maddede sayılan Türk Ceza Kanunu suçları ile Orman Kanunundaki kasten orman yakma suçları için de geçerlidir.",
+      "articleRefs": [
+        "4"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Orman Kanununda tanımlanan hangi suçlar, terör örgütünün faaliyeti çerçevesinde işlenirse terör suçu sayılır?",
+      "back": "Kasten orman yakma suçları; Orman Kanununun 110 uncu maddesinin dördüncü ve beşinci fıkralarında tanımlananlar.",
+      "explanation": "Aynı kapsamda 2863 sayılı Kültür ve Tabiat Varlıklarını Koruma Kanununun 68 inci maddesinde tanımlanan suç da yer alır.",
+      "articleRefs": [
+        "4"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Kural olarak (ilgili maddede örgüt nedeniyle artırım öngörülmemişse) 3 ve 4 üncü maddelerde yazılı suçları işleyen yetişkinlere verilecek hapis veya adlî para cezaları hangi oranda artırılır?",
+      "back": "Yarı oranında; bu artırımla cezanın yukarı sınırı aşılabilir.",
+      "explanation": "Müebbet hapis cezası söz konusuysa onun yerine ağırlaştırılmış müebbet hapis cezasına hükmolunur.",
+      "articleRefs": [
+        "5"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Suçun örgüt faaliyeti çerçevesinde işlenmesi nedeniyle ilgili maddesinde zaten artırım öngörülmüşse, yapılacak artırım en az ne kadar olur?",
+      "back": "Cezanın üçte ikisi; bu halde yalnız cezaların artırılması maddesine göre artırım yapılır ve artırım üçte ikiden az olamaz.",
+      "articleRefs": [
+        "5"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Terör suçlarında cezaların yarı oranında artırılmasına ilişkin hüküm çocuklar hakkında da uygulanır mı?",
+      "back": "Hayır. Cezaların artırılmasına ilişkin madde hükümleri çocuklar hakkında uygulanmaz.",
+      "articleRefs": [
+        "5"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Terörle mücadelede görev almış kamu görevlilerinin hüviyetlerini açıklayan ya da yayınlayan kişiye hangi ceza verilir?",
+      "back": "Bir yıldan üç yıla kadar hapis cezası.",
+      "explanation": "Aynı ceza, kişilere karşı terör örgütlerince suç işleneceğini açıklayanlara, bu yolla kişileri hedef gösterenlere ve 14 üncü maddeye aykırı olarak muhbirlerin hüviyetlerini açıklayanlara da verilir.",
+      "articleRefs": [
+        "6"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Terör örgütünün cebir, şiddet veya tehdit içeren yöntemlerini meşru gösterecek ya da övecek şekilde propagandasını yapan kişiye hangi ceza verilir?",
+      "back": "Bir yıldan beş yıla kadar hapis; suç basın ve yayın yoluyla işlenirse ceza yarı oranında artırılır.",
+      "explanation": "Suçun işlenmesine iştirak etmemiş yayın sorumluları hakkında da bin günden beş bin güne kadar adli para cezasına hükmolunur. Haber verme sınırlarını aşmayan veya eleştiri amacıyla yapılan düşünce açıklamaları suç oluşturmaz.",
+      "articleRefs": [
+        "7"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Terör örgütünün propagandasına dönüştürülen toplantıda kimliğini gizlemek için yüzünü kapatan kişi molotof bulundurursa cezanın alt sınırı kaç yıldan az olamaz?",
+      "back": "Dört yıldan az olamaz; yüz kapatma suçunun temel cezası üç yıldan beş yıla kadar hapistir.",
+      "explanation": "Bu alt sınır, failin cebir ve şiddete başvurması ya da her türlü silah, molotof ve benzeri patlayıcı, yakıcı ya da yaralayıcı madde bulundurması veya kullanması halinde uygulanır. Temel suçta yüzün kimliği gizlemek amacıyla tamamen veya kısmen kapatılması aranır.",
+      "articleRefs": [
+        "7"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Örgüt amblemini, örgütün destekçisi olduğunu belli edecek şekilde taşımanın propaganda olarak cezalandırılması için toplantı ve gösteri yürüyüşü sırasında olması gerekir mi?",
+      "back": "Hayır. Toplantı ve gösteri yürüyüşü sırasında gerçekleşmese dahi propaganda hükümlerine göre cezalandırılır; örgütün üyesi veya destekçisi olduğunu belli etmesi yeter.",
+      "explanation": "Aynı kapsamdaki fiiller arasında slogan atılması, ses cihazları ile yayın yapılması ve örgüte ait amblem, resim veya işaretlerin bulunduğu üniformanın giyilmesi de vardır.",
+      "articleRefs": [
+        "7"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Terörle Mücadele Kanunu kapsamındaki suç, kamu görevinin sağladığı nüfuz kötüye kullanılarak işlenirse ne olur?",
+      "back": "Suçun kamu görevinin sağladığı nüfuz kötüye kullanılmak suretiyle işlenmesi; bu halde ceza yarı oranında artırılır.",
+      "articleRefs": [
+        "8/A"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Bu Kanun kapsamına giren bir suç, tüzel kişinin faaliyeti çerçevesinde işlenirse tüzel kişi hakkında ne yapılır?",
+      "back": "Türk Ceza Kanununun 60 ıncı maddesine göre tüzel kişilere özgü güvenlik tedbirlerine hükmolunur.",
+      "articleRefs": [
+        "8/B"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Bu Kanun kapsamındaki suçları ve suçluları ihbar eden kişinin hüviyeti hangi hallerde açıklanabilir?",
+      "back": "Rızası varsa ya da ihbarın mahiyeti onun hakkında suç teşkil ediyorsa; bunlar dışında açıklanamaz.",
+      "explanation": "Bu hükme aykırı olarak muhbirlerin hüviyetlerini açıklayan veya yayınlayan kişi bir yıldan üç yıla kadar hapis cezası ile cezalandırılır.",
+      "articleRefs": [
+        "14",
+        "6"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Terörle mücadeledeki görevinden doğduğu iddia edilen suç nedeniyle soruşturulan kolluk görevlisinin belirleyeceği en fazla kaç avukatın ücreti ödenir?",
+      "back": "En fazla üç avukatın; ödemeler avukatlık ücret tarifesine bağlı olmaksızın ilgili kuruluşların bütçelerine konulacak ödenekten karşılanır.",
+      "explanation": "Hüküm Türk Silahlı Kuvvetleri personeli, mülki idare amirleri, istihbarat ve kolluk görevlileri ile bu amaçla görevlendirilmiş diğer personeli kapsar.",
+      "articleRefs": [
+        "15"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Görevinin ifasından dolayı davacı konumundaki personelin seçtiği avukatın ücreti, başkaca bir işleme gerek olmadan ödenir mi?",
+      "back": "Hayır. Davacı konumundaki personelin seçeceği bir avukata ücret ödenmesi ilgili Bakanın onayına tabidir.",
+      "explanation": "Görevinin ifasından dolayı mağdur, şikâyetçi, katılan, davalı ya da davacı konumunda olan personelin seçeceği bir avukatın ücreti ödenir; Bakan onayı kaydı davacı konumu için konmuştur.",
+      "articleRefs": [
+        "15"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Terörle mücadelede görevli personelin avukat ücretlerinin ödenmesine ilişkin esas ve usuller hangi yönetmelikle düzenlenir?",
+      "back": "Millî Savunma ve İçişleri bakanlıklarınca müştereken çıkarılacak yönetmelikle.",
+      "articleRefs": [
+        "15"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Bu Kanun kapsamındaki suçlardan süreli hapis cezasına mahkûm olanlarda koşullu salıverilme oranı nedir?",
+      "back": "Dörtte üç. Koşullu salıverilme ve denetimli serbestlikte ayrıca 5275 sayılı Kanunun 107 nci maddesinin dördüncü fıkrası ile 108 inci maddesi uygulanır.",
+      "articleRefs": [
+        "17"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Disiplin cezası olarak üç defa hücre hapsi almış hükümlü, bu cezalar kaldırılmışsa şartla salıverilmeden yararlanabilir mi?",
+      "back": "Hayır. Disiplin cezaları kaldırılmış olsa bile şartla salıverilmeden yararlanamaz.",
+      "explanation": "Tutuklu veya hükümlü iken firar veya ayaklanma suçundan mahkûm edilmiş olanlar ile hükmü kesinleştikten sonra yine bu Kanun kapsamına giren bir suç işleyenler de şartla salıverilmeden yararlanamaz.",
+      "articleRefs": [
+        "17"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Terör suçlarının ortaya çıkarılmasına yardım edenlere verilecek ödülün miktarı ve verilme usulü hangi yönetmelikle belirlenir?",
+      "back": "İçişleri Bakanlığınca çıkarılacak yönetmelikle.",
+      "articleRefs": [
+        "19"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Bu Kanun kapsamındaki bir suçun faillerinin yerini bildiren kişiye para ödülü verilebilmesi için hangi koşul aranır?",
+      "back": "Suçun işlenişine iştirak etmemiş olması; bu koşulla para ödülü verilebilir.",
+      "explanation": "Ödül; suçun ortaya çıkarılmasına, delillerin ele geçirilmesine ya da suç faillerinin yakalanabilmesine yardımcı olanlara veya faillerin yerlerini yahut kimliklerini bildirenlere verilebilir.",
+      "articleRefs": [
+        "19"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Korumaya alınmış emekli personelden meskende korunması mutlak surette zorunlu olanlar, İçişleri Bakanlığınca belirlenecek konutlardan mı yararlandırılır?",
+      "back": "Hayır. Cumhurbaşkanlığınca belirlenecek konutlardan yararlandırılır.",
+      "explanation": "İçişleri Bakanlığı bu maddede, koruma tedbirlerinin uygulanmasında ilgili diğer kurum ve kuruluşlarla birlikte her türlü gizlilik kurallarına uymak zorunda olan makam olarak yer alır.",
+      "articleRefs": [
+        "20"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Terörle mücadelede koruma tedbirleriyle ilgili esas ve usuller kim tarafından çıkarılan yönetmelikle belirlenir?",
+      "back": "Cumhurbaşkanınca çıkarılacak yönetmelikle.",
+      "explanation": "Koruma tedbirlerini Devlet alır. Tedbirler talep halinde estetik cerrahi yoluyla fizyolojik görünümün değiştirilmesini, nüfus kaydı, ehliyet, evlenme cüzdanı, diploma ve benzeri belgelerin değiştirilmesini kapsayabilir.",
+      "articleRefs": [
+        "20"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Koruma kapsamındaki bir kamu görevlisi, görevinden ayrıldıktan sonra hangi amaçla silah kullanmaya yetkilidir?",
+      "back": "Terör suçluları tarafından kendisine veya eş ve çocuklarının canına vuku bulan bir taarruzu savmak için; görevden ayrılmış olsa dahi bu yetki sürer.",
+      "articleRefs": [
+        "20"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Terör suçlarının yol açtığı zararların tazmini için şüpheliye ait taşınmaza şerh düşülmesine soruşturma aşamasında kim karar verir?",
+      "back": "Cumhuriyet savcısının talebi üzerine sulh ceza hâkimi; kovuşturma aşamasında ise mahkeme karar verir.",
+      "explanation": "Taşınmazlarla ilgili karar tapu kütüğüne, kara, deniz ve hava ulaşım araçlarıyla ilgili karar ise bu araçların kayıtlı bulunduğu sicile şerh verilerek icra olunur. Şüpheli veya sanıkların yardımlaşma kurum ve sandıklarından olan alacaklarına da tedbir konulabilir.",
+      "articleRefs": [
+        "20/A"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Zararların tazmini amacıyla konulan şerh, hangi süre içinde hukuk mahkemesinden ihtiyati haciz veya ihtiyati tedbir kararı ibraz edilmezse kendiliğinden terkin edilir?",
+      "back": "Şerhin konulduğu tarihten itibaren iki yıl içinde.",
+      "explanation": "Kovuşturmaya yer olmadığına dair kararın kesinleşmesi hâlinde de, hukuk mahkemesinden ihtiyati haciz veya ihtiyati tedbir kararı ibraz edilmezse şerh kendiliğinden terkin edilir.",
+      "articleRefs": [
+        "20/A"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Adres kayıt sisteminde adresi bulunmayan davalıya karşı açılan tazminat davasında, ilanda davalıya adres bildirmesi ya da avukatla temsil edilmesi için ne kadar süre tanınır?",
+      "back": "Bir ay; aksi halde yargılamaya yokluğunda devam olunacağı ihtar edilir.",
+      "explanation": "Dava dilekçesinin özeti, tirajı ellibinin üzerinde olan ve yurt düzeyinde dağıtımı yapılan gazetelerden biri vasıtasıyla ilan edilir. Bildirilecek adres yurtiçinde tebligata elverişli bir adres veya 7201 sayılı Tebligat Kanununun 7/a maddesi uyarınca kayıtlı elektronik posta adresidir.",
+      "articleRefs": [
+        "20/A"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,244 @@
+{
+  "deck": {
+    "topicId": "980956db-8563-41cc-b9f1-e409a5d4e283",
+    "legislationSlug": "adli-ve-onleme-aramalari-yonetmeligi",
+    "sourceLabel": "AI bilgi kartı — Adli ve Önleme Aramaları Yönetmeliği md 14–24",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: resmî madde metni + çıkmış sorular)"
+  },
+  "cards": [
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Cumhuriyet savcısına ulaşılamadığı hâllerde, arama sonucunda bulunan eşyaya kolluk âmirinin sözlü emriyle elkonulabilir mi?",
+      "back": "Hayır. Cumhuriyet savcısına ulaşılamadığı hâllerde kolluk âmirinin yazılı emri gerekir; sözlü emirle elkoyma yoktur.",
+      "explanation": "Elkoyma sırası şöyledir: önce hâkim kararı gelir. Gecikmesinde sakınca bulunan hâllerde Cumhuriyet savcısının yazılı emri yeterlidir. Cumhuriyet savcısına da ulaşılamazsa kolluk âmirinin yazılı emri devreye girer.",
+      "articleRefs": [
+        "15"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Arama sırasında hangi malvarlığı değerleri koruma altına alınır?",
+      "back": "İspat aracı olarak yararlı görülen ya da eşya veya kazanç müsaderesinin konusunu oluşturan malvarlığı değerleri.",
+      "explanation": "Bu değerleri yanında bulunduran kişi, talep üzerine bunları göstermek ve teslim etmekle yükümlüdür. Kişi bu eşyayı rızasıyla teslim etmezse eşyaya elkonulabilir.",
+      "articleRefs": [
+        "15"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Evsafı belirlenen eşya kollukça bulunamazsa ve zilyet de teslimden kaçınırsa, Ceza Muhakemesi Kanununun hangi maddesindeki disiplin hapsi hükümleri için durum bildirilir?",
+      "back": "60 ıncı madde: 5271 sayılı Ceza Muhakemesi Kanununun 60 ıncı maddesindeki disiplin hapsi hükümlerinin uygulanması için durum Cumhuriyet başsavcılığına bildirilir.",
+      "explanation": "Bu yol, şüpheli veya sanık ile tanıklıktan çekinebilecekler dışındaki zilyet hakkında işletilir.",
+      "articleRefs": [
+        "15"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Kolluk, arama sırasında ele geçen belge veya kâğıtlara hangi amaçla ve nasıl bakabilir?",
+      "back": "Suçla ilgisi olup olmadığını tespit amacıyla, incelemeksizin bakabilir; inceleme yetkisi Cumhuriyet savcısı ve hâkime aittir.",
+      "explanation": "İnceleme sonucunda soruşturma veya kovuşturma konusu suça ilişkin olmadığı anlaşılan belge veya kâğıtlar ilgilisine geri verilir.",
+      "articleRefs": [
+        "16"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Kolluk, suçla ilgisi olabileceğinden şüphelendiği belge ve kâğıtlar için ne yapar?",
+      "back": "Kanunun öngördüğü şekilde incelenecek belge ve kâğıtları ambalajlayarak mühürler.",
+      "explanation": "Zilyet veya temsilcisi kendi mührünü koyabilir ya da imzasını atabilir. İleride mührün kaldırılmasına ve incelemeye karar verilirse zilyet, temsilcisi, müdafi veya vekili hazır bulunmak üzere çağrılır.",
+      "articleRefs": [
+        "16"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Şüpheli veya sanıkla aralarındaki mektup ve belgelere elkonulamayan, tanıklıktan çekinebilecek kimseler Ceza Muhakemesi Kanununun hangi maddelerine göre belirlenir?",
+      "back": "45 ve 46 ncı maddeler (5271 sayılı Ceza Muhakemesi Kanunu).",
+      "explanation": "Elkoyma yasağı, mektup ve belgeler bu kimselerin nezdinde bulunduğu sürece geçerlidir.",
+      "articleRefs": [
+        "16"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Şifre çözülüp gerekli kopyalar alındıktan sonra, elkonulan bilgisayar tedbir amaçlı saklanabilir mi?",
+      "back": "Hayır. Şifrenin çözümü yapılıp gerekli kopyalar alınınca elkonulan cihazlar gecikme olmaksızın iade edilir.",
+      "explanation": "Elkoyma, şifrenin çözülebilmesi ve gerekli kopyaların alınabilmesi için yapılır.",
+      "articleRefs": [
+        "17"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Bilgisayara elkoyma sırasında alınan yedekten şüpheliye ne verilir?",
+      "back": "Yedekten elektronik ortamda çıkarılan bir kopya şüpheliye veya vekiline verilir. Bu husus tutanağa geçirilip imza altına alınır.",
+      "explanation": "Elkoyma sırasında sistemdeki bütün verilerin yedeklemesi yapılır. Bu işlem bilgisayar ağları, diğer uzak bilgisayar kütükleri ve çıkarılabilir donanımlar hakkında da uygulanır.",
+      "articleRefs": [
+        "17"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Kolluk, hangi yaştan küçükleri çalıştırdığından şüphelendiği içkili yerleri kendiliğinden denetleyebilir?",
+      "back": "Onsekiz yaşından küçükleri. Onsekiz yaşını doldurmamış küçüklerin girdiğinden şüphelenilen yerler de bu kapsamdadır.",
+      "explanation": "Kapsamdaki yerler, açılması izne bağlı bar, pavyon, gazino, meyhane gibi içkili yerler ile kıraathane gibi oyun oynatılan benzeri yerlerdir. Kanunlardaki istisnalar saklıdır.",
+      "articleRefs": [
+        "18"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Kolluğun kendiliğinden yapabileceği, araçlarda bulunması gerekli eşyanın denetimi hangi sayılı kanuna göre yapılır?",
+      "back": "2918 sayılı Karayolları Trafik Kanunu. Aynı bentte motorlu araç trafik belgesi, motorlu araç tescil belgesi ve sürücü belgelerinin denetimi de yer alır.",
+      "explanation": "Bu denetim, şartları oluştuğunda kolluk tarafından kendiliğinden yapılabilir.",
+      "articleRefs": [
+        "18"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Gürültü yapanların men edilmesi, Türk Ceza Kanununun hangi maddesi kapsamında kolluğun kendiliğinden yapabileceği işlemlerdendir?",
+      "back": "183 üncü madde (5237 sayılı Türk Ceza Kanunu).",
+      "explanation": "Kolluğun kendiliğinden yapabileceği diğer denetimlerden bazıları: umuma açık istirahat ve eğlence yerleri ile internet kafelerin genel güvenlik ve asayiş yönünden denetimi, suç işlenmesini önlemek için kişilerden kimlik sorma ve hudut kapılarından giriş çıkış yapanların pasaport denetimleri.",
+      "articleRefs": [
+        "18"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Önleme araması hangi amaçlarla yapılır?",
+      "back": "Millî güvenlik ve kamu düzeninin, genel sağlık ve genel ahlâkın veya başkalarının hak ve hürriyetlerinin korunması; suç işlenmesinin önlenmesi; taşınması veya bulundurulması yasak olan her türlü silâh, patlayıcı madde veya eşyanın tespiti.",
+      "explanation": "Arama, hâkim kararı veya gecikmesinde sakınca bulunan hâllerde mülkî âmirin yazılı emriyle yapılır. Kişilerin üstlerinde, aracında, özel kâğıtlarında ve eşyasında uygulanır.",
+      "articleRefs": [
+        "19"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Ticarethane, işyeri ve eğlence yerlerinde önleme araması, hangi sayılı kanunda öngörülen suçların işlenmesini önlemek amacıyla yapılabilir?",
+      "back": "5607 sayılı Kaçakçılıkla Mücadele Kanunu. Arama bu yerlerin eklentilerinde de yapılabilir.",
+      "explanation": "Bu bent; ticarethane, işyeri, eğlence ve benzeri yerler ile eklentilerini kapsar.",
+      "articleRefs": [
+        "19"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Kolluk, önleme araması gerektiren belirlemeleri, önerdiği yer ve zamanla birlikte gerekçeleriyle kime yazılı olarak iletir?",
+      "back": "O yerin mülkî âmirine.",
+      "explanation": "Yetkili merci kolluğun talebini uygun bulursa hâkimden arama kararı talep eder. Gecikmesinde sakınca bulunan hâllerde ise yazılı arama emri verir. Hâkim tarafından verilen kararlar aleyhine mülkî âmir kanun yollarına başvurabilir.",
+      "articleRefs": [
+        "20"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Önleme aramasında, usulüne uygun arama kararı üzerine yetkili âmirin kolluk memurlarına verdiği sözlü emrin yazılı olarak verilmesi istenebilir mi?",
+      "back": "Hayır. Sözlü emirler derhâl yerine getirilir ve yazılı olarak verilmesi istenemez. Doğabilecek sorumluluk emri verene aittir.",
+      "explanation": "Bu kural, usulüne uygun olarak verilmiş bir arama kararı veya emri üzerine yetkili âmirin aramanın yapılması için verdiği sözlü emirler için geçerlidir.",
+      "articleRefs": [
+        "20"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Özel güvenlik görevlileri, koruma ve güvenliğini sağladıkları alanlara girmek isteyenlere hangi kontrolleri uygulayabilir?",
+      "back": "Duyarlı kapıdan geçirme, üstlerini dedektörle kontrol etme ve eşyaları X-ray cihazından veya benzeri güvenlik sistemlerinden geçirme.",
+      "explanation": "Bu yetkiler, görevlinin koruma ve güvenliğini sağladığı alana girmek isteyenler hakkında kullanılır.",
+      "articleRefs": [
+        "21"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Özel güvenlik görevlilerinin kimlik sorma yetkisi hangi hâllerde sayılmıştır?",
+      "back": "Toplantı, konser, spor müsabakası, sahne gösterileri ve benzeri etkinlikler ile cenaze ve düğün törenlerinde; hava meydanı, liman, gar, istasyon ve terminal gibi toplu ulaşım tesislerinde.",
+      "explanation": "Bu hâllerde kimlik sormanın yanında duyarlı kapıdan geçirme, üstleri dedektörle kontrol etme ve eşyaları X-ray cihazından veya benzeri güvenlik sistemlerinden geçirme yetkisi de vardır.",
+      "articleRefs": [
+        "21"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Özel güvenlik görevlileri görev alanındaki işyeri ve konutlara hangi durumlarda girebilir?",
+      "back": "Yangın, deprem gibi tabiî afet durumlarında ve imdat istenmesi hâlinde.",
+      "explanation": "Bu yetki, görevlinin görev alanındaki işyeri ve konutlarla sınırlıdır.",
+      "articleRefs": [
+        "21"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Kolluğun derneğe girmesi, arama yapması ve eşyaya el koyması için gereken hâkim kararı ya da yazılı emir hangi nedenlere bağlı olmalıdır?",
+      "back": "Kamu düzeninin korunması veya suç işlenmesinin önlenmesi nedenlerinden birine.",
+      "explanation": "Asıl olan, usulüne göre verilmiş hâkim kararıdır. Aynı nedenlere bağlı olarak gecikmesinde sakınca bulunan hâllerde mülkî âmirin yazılı emri yeterlidir. Bunlardan biri olmadıkça kolluk dernek ve eklentilerine giremez, arama yapamaz, eşyaya el koyamaz.",
+      "articleRefs": [
+        "22"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Dernekte el koymaya ilişkin hâkim kararı dernek yöneticilerine kim tarafından ve nasıl duyurulur?",
+      "back": "Mülkî âmir tarafından, yazıyla duyurulur.",
+      "explanation": "Gecikmesinde sakınca bulunan hâllerde el koymaya mülkî âmirin yazılı emriyle başlanabilir; bu karar yirmidört saat içinde görevli hâkimin onayına sunulur.",
+      "articleRefs": [
+        "22"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Seyirci, spor alanına alındıktan sonra mı güvenlik güçlerince kontrol edilir?",
+      "back": "Hayır. Seyirci, güvenlik güçlerince gerçekleştirilecek kontrolden sonra spor alanına alınır.",
+      "explanation": "Kontrol, seyirci spor müsabakalarının yapılacağı spor alanına alınmadan önce yapılır.",
+      "articleRefs": [
+        "23"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Stadyum, spor salonu ve turnike girişlerindeki üst aramasında, hangi sayılı kanunun amacına aykırı madde ve cisimler geçici olarak koruma altına alınır?",
+      "back": "6222 sayılı Sporda Şiddet ve Düzensizliğin Önlenmesine Dair Kanunun amacına aykırı madde ve cisimler.",
+      "explanation": "Üst araması, hâkim kararı veya gecikmesinde sakınca olan hâllerde mülkî âmirin yazılı izni ile yapılır. Aramayı kolluk ya da kolluğun denetiminde özel güvenlik görevlileri yapar.",
+      "articleRefs": [
+        "23"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Önleme aramasının konusu ve kapsamı içinde olan, ancak suç unsuru oluşturmayan eşyaya ne yapılır?",
+      "back": "Geçici olarak koruma altına alınır ve aramaya sebep teşkil eden husus sona erdiğinde ilgiliye teslim edilir.",
+      "explanation": "Eşyanın teslim zamanı, aramaya sebep olan hususun sona ermesine bağlıdır.",
+      "articleRefs": [
+        "24"
+      ]
+    }
+  ]
+}

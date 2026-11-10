@@ -1,0 +1,294 @@
+{
+  "deck": {
+    "topicId": "270990de-e156-4db0-b5fb-eb469562dd8a",
+    "legislationSlug": "5018-sayili-kamu-mali-yonetimi-ve-kontrol-kanunu",
+    "sourceLabel": "AI bilgi kartı — 5018 Sayılı Kamu Malî Yönetimi ve Kontrol Kanunu md 1–21",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: resmî madde metni + çıkmış sorular)"
+  },
+  "cards": [
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "5018 sayılı Kamu Malî Yönetimi ve Kontrol Kanunu hangi kamu idarelerinin malî yönetim ve kontrolünü kapsar?",
+      "back": "Genel yönetim kapsamındaki kamu idarelerinin. Bunlar merkezî yönetim kapsamındaki kamu idareleri, sosyal güvenlik kurumları ve mahallî idarelerdir.",
+      "explanation": "Avrupa Birliği fonlarının kullanımı ve kontrolü de bu Kanuna tâbidir. Yurt içi ve yurt dışından kamu idarelerine sağlanan kaynaklar için de aynı kural geçerlidir. Her iki durumda uluslararası anlaşmaların hükümleri saklıdır.",
+      "articleRefs": [
+        "2"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Kamu Malî Yönetimi ve Kontrol Kanununun uygulanmasında malî yıl neyi ifade eder?",
+      "back": "Takvim yılını.",
+      "explanation": "Bütçe ise belirli bir dönemdeki gelir ve gider tahminleri ile bunların uygulanmasına ilişkin hususları gösteren belgedir. Bütçe usulüne uygun olarak yürürlüğe konulur.",
+      "articleRefs": [
+        "3"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "(I) sayılı cetvelde yer alan kamu idareleri özel vezne açabilir mi?",
+      "back": "Hayır. Bu idarelerin tüm gelirleri Hazine veznelerine girer, giderleri de bu veznelerden ödenir; özel vezne açamazlar.",
+      "explanation": "Merkezî yönetim kapsamındaki kamu idarelerinin gelir, gider, tahsilat, ödeme, nakit planlaması ve borç yönetimi Hazine birliğini sağlayacak şekilde yürütülür.",
+      "articleRefs": [
+        "6"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "(I) sayılı cetveldeki idarelerin muhasebe birimlerince yapılan tahsilat ve ödeme işlemleri hangi kurum aracılığıyla gerçekleştirilebilir?",
+      "back": "Türkiye Cumhuriyet Merkez Bankası aracılığıyla. İşlemler güvenli elektronik imzayla ya da Bankanın belirlediği güvenlik kriterlerine uygun elektronik talimatlarla yapılır.",
+      "explanation": "Genel yönetim kapsamındaki diğer kamu idarelerini bu uygulamaya almaya Hazine ve Maliye Bakanlığı yetkilidir. Uygulamanın usul ve esaslarını da aynı Bakanlık, Merkez Bankasının görüşünü alarak belirler.",
+      "articleRefs": [
+        "6"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Genel yönetim kapsamındaki kamu idarelerinin sağladığı teşvik ve desteklemeler hangi süreyi aşmayan dönemlerle kamuoyuna açıklanır?",
+      "back": "Bir yılı geçmemek üzere belirli dönemler itibarıyla açıklanır.",
+      "explanation": "Malî saydamlık için gerekli düzenlemeleri yapmaktan ve önlemleri almaktan kamu idareleri sorumludur. Bu hususlar Hazine ve Maliye Bakanlığınca izlenir.",
+      "articleRefs": [
+        "7"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Kamu idarelerinin program bütçeye uygun yürütecekleri faaliyetleri, bunların kaynak ihtiyacını ve performans göstergelerini içeren belge hangisidir?",
+      "back": "Performans programı. Bu programı kamu idareleri hazırlar.",
+      "explanation": "Kamu idareleri bütçelerini, stratejik planlarını ve performans programlarını izlemek ve değerlendirmek için nesnel, sistematik ve düzenli olarak veri toplar ve analiz eder. İzleme ve değerlendirme sonuçları idare faaliyet raporlarında gösterilir.",
+      "articleRefs": [
+        "9"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Mahallî idarelerin stratejik plan ve bütçelerinin kalkınma planlarına ve yıllık programlara uygun hazırlanmasından hangi bakan sorumludur?",
+      "back": "Çevre, Şehircilik ve İklim Değişikliği Bakanı (metinde: Çevre ve Şehircilik Bakanı).",
+      "explanation": "Yükseköğretim Kurulu, Ölçme, Seçme ve Yerleştirme Merkezi Başkanlığı, üniversiteler ve yüksek teknoloji enstitüleri için bu sorumluluk Millî Eğitim Bakanına aittir. Bakanlar ayrıca kamu kaynaklarının etkili, ekonomik ve verimli kullanılmasından Cumhurbaşkanına karşı sorumludur. Hukuki ve mali konulardaki sorumlulukları da Cumhurbaşkanına karşıdır.",
+      "articleRefs": [
+        "10"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Mahallî idarelerde üst yöneticiler Bakana karşı mı sorumludur?",
+      "back": "Hayır. Mahallî idarelerde üst yöneticiler meclislerine karşı sorumludur. Bakana karşı sorumluluk diğer idarelerin üst yöneticileri içindir.",
+      "explanation": "Üst yöneticiler şu konulardan sorumludur: stratejik plan ve bütçelerin uygun hazırlanması ve uygulanması, kaynakların etkili, ekonomik ve verimli elde edilip kullanılması, kayıp ve kötüye kullanımın önlenmesi. Malî yönetim ve kontrol sisteminin işleyişini gözetmek ve izlemek de bu sorumluluğa dahildir.",
+      "articleRefs": [
+        "11"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "İl özel idarelerinde üst yönetici kimdir?",
+      "back": "Vali. Belediyelerde ise üst yönetici belediye başkanıdır.",
+      "explanation": "Bakanlıklarda ve diğer kamu idarelerinde üst yönetici, o idarenin en üst yöneticisidir. Bakanlıklarda en üst yöneticiyi Cumhurbaşkanı belirler.",
+      "articleRefs": [
+        "11"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Üst yöneticiler malî sorumluluklarının gereklerini kimler aracılığıyla yerine getirir?",
+      "back": "Harcama yetkilileri, malî hizmetler birimi ve iç denetçiler aracılığıyla.",
+      "articleRefs": [
+        "11"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Hangi sayılı cetvelde yer alan kamu idarelerinin bütçesi genel bütçedir?",
+      "back": "(I) sayılı cetveldeki idarelerin bütçesi. Genel bütçe, Devlet tüzel kişiliğine dahil olan bu idarelerin bütçesidir.",
+      "explanation": "Diğer bütçe türleri cetvellere şöyle dağılır: özel bütçe (II), düzenleyici ve denetleyici kurum bütçesi (III), sosyal güvenlik kurumu bütçesi (IV) sayılı cetveldeki idarelere aittir. Merkezî yönetim bütçesi (I), (II) ve (III) sayılı cetvellerdeki idarelerin bütçelerinden oluşur. Kamu idareleri sayılan bütçeler dışında herhangi bir ad altında bütçe oluşturamaz.",
+      "articleRefs": [
+        "12"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Bütçeler, stratejik planlar dikkate alınarak izleyen kaç yılın bütçe tahminleriyle birlikte görüşülür?",
+      "back": "İzleyen iki yılın bütçe tahminleriyle birlikte görüşülür ve değerlendirilir.",
+      "explanation": "Bütçeler, ait olduğu yıl başlamadan önce Türkiye Büyük Millet Meclisi veya yetkili organlarca kabul edilmeli ya da onaylanmalıdır. Aksi hâlde uygulanamaz.",
+      "articleRefs": [
+        "13"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Belirli gelirlerin belirli giderlere tahsis edilmesi bir bütçe ilkesi midir?",
+      "back": "Hayır. Esas olan, belirli gelirlerin belirli giderlere tahsis edilmemesidir. Belirli amaçlara tahsis edilen şey ödeneklerdir.",
+      "explanation": "Tüm gelir ve giderler bütçelerde gayri safi olarak gösterilir. Bütçelerde gelir ve gider denkliğinin sağlanması da esastır.",
+      "articleRefs": [
+        "13"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Merkezî yönetim bütçesinin hazırlanma sürecini başlatan orta vadeli program en geç ne zamana kadar Resmî Gazete'de yayımlanır?",
+      "back": "Eylül ayının ilk haftası sonuna kadar. Programı Cumhurbaşkanı yayımlar.",
+      "explanation": "Orta vadeli program şunları içerir: makro politikalar, ilkeler, hedef ve gösterge niteliğindeki temel ekonomik büyüklükler, bütçe dengesi ve borçlanma durumu. Kamu idarelerinin ödenek teklif tavanları da bu programda yer alır.",
+      "articleRefs": [
+        "16"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Bütçe Çağrısı ve eki Bütçe Hazırlama Rehberi en geç hangi tarihe kadar Resmî Gazete'de yayımlanır?",
+      "back": "Eylül ayının onbeşine kadar. İkisini de Cumhurbaşkanlığı hazırlar.",
+      "explanation": "Yatırım Genelgesi ve eki Yatırım Programı Hazırlama Rehberi de aynı tarihe kadar yayımlanır. Rehberler, kamu idarelerinin uyacağı genel ilkeleri, nesnel ve ölçülebilir standartları ve hesaplama yöntemlerini içerir. Kullanılacak cetvel ve tablo örnekleri de rehberlerde yer alır.",
+      "articleRefs": [
+        "16"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Orta vadeli program toplam gelir ve gider tahminlerini gelecek kaç yıl için içerir?",
+      "back": "Gelecek üç yıl için.",
+      "articleRefs": [
+        "16"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Kamu idareleri bütçe gelir ve gider tekliflerini Cumhurbaşkanlığına en geç ne zamana kadar gönderir?",
+      "back": "Eylül ayı sonuna kadar. Teklifler gerekçeli ve yetkililerince imzalanmış olarak gönderilir.",
+      "explanation": "Teklifler, stratejik planlar ile Bütçe Hazırlama Rehberindeki esaslar çerçevesinde hazırlanır. Cumhurbaşkanlığına verildikten sonra idarelerin yetkilileriyle teklifler hakkında görüşme yapılabilir.",
+      "articleRefs": [
+        "17"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Genel bütçe gelir teklifini kim hazırlar?",
+      "back": "Cumhurbaşkanlığı. Diğer bütçelerin gelir tekliflerini ise ilgili idareler hazırlar.",
+      "explanation": "Gider tekliflerini kamu idareleri hazırlar. Bunu yaparken merkez ve merkez dışı birimlerinin ödenek taleplerini dikkate alırlar.",
+      "articleRefs": [
+        "17"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Merkezî yönetim bütçe kanun teklifi, malî yılbaşından en az kaç gün önce Türkiye Büyük Millet Meclisine sunulur?",
+      "back": "En az yetmiş beş gün önce. Teklifi Cumhurbaşkanı sunar.",
+      "explanation": "Teklife, Meclisteki görüşmede dikkate alınmak üzere Cumhurbaşkanlığınca belgeler eklenir. Bunların arasında orta vadeli programı da içeren bütçe gerekçesi, yıllık ekonomik rapor ve kamu borç yönetimi raporu vardır.",
+      "articleRefs": [
+        "18"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Sayıştay bütçesini Türkiye Büyük Millet Meclisine Cumhurbaşkanlığı aracılığıyla mı gönderir?",
+      "back": "Hayır. Sayıştay bütçesini Eylül ayı sonuna kadar doğrudan Türkiye Büyük Millet Meclisine gönderir. Bir örneğini de Cumhurbaşkanlığına iletir.",
+      "explanation": "Türkiye Büyük Millet Meclisi ile düzenleyici ve denetleyici kurumlar da bütçelerini aynı yolla gönderir.",
+      "articleRefs": [
+        "18"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Kamu yatırım programı, merkezî yönetim bütçe kanununun yürürlüğe girdiği tarihten itibaren kaç gün içinde yayımlanır?",
+      "back": "On beş gün içinde. Program Cumhurbaşkanı kararıyla Resmî Gazete'de yayımlanır.",
+      "explanation": "Merkezî yönetim bütçe kanunu ise malî yıl başından önce Resmî Gazete'de yayımlanır.",
+      "articleRefs": [
+        "19"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Geçici bütçe kanunu da çıkarılamazsa bir önceki yılın bütçesi aynen mi uygulanır?",
+      "back": "Hayır. Yeni bütçe kanunu kabul edilinceye kadar bir önceki yılın bütçesi yeniden değerleme oranına göre artırılarak uygulanır.",
+      "explanation": "Bütçe kanunu süresinde yürürlüğe konulamazsa önce geçici bütçe kanunu çıkarılır. Geçici bütçe ödenekleri, bir önceki yıl bütçe başlangıç ödeneklerinin belirli bir oranına göre belirlenir. Cari yıl bütçesi yürürlüğe girince bu uygulamalar sona erer. O tarihe kadar yapılan harcamalar ve tahsil olunan gelirler cari yıl bütçesine dahil edilir.",
+      "articleRefs": [
+        "19"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Merkezî yönetim kapsamındaki idarelerin ödenekleri yetersiz kalırsa ek bütçe hangi yolla yapılır?",
+      "back": "Kanunla. Ek bütçenin karşılığı olarak gelir gösterilmesi gerekir.",
+      "explanation": "Ek bütçe, öngörülmeyen hizmetlerin yerine getirilmesi amacıyla da yapılabilir.",
+      "articleRefs": [
+        "19"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Genel bütçe kapsamındaki kamu idarelerinin ayrıntılı harcama programlarını kim vize eder?",
+      "back": "Cumhurbaşkanlığı.",
+      "explanation": "Ödenekler, vize edilen ayrıntılı harcama programları ve serbest bırakma oranlarına göre kullanılır; nakit planlaması da dikkate alınır. Özel bütçeli idareler ve sosyal güvenlik kurumları ise ayrıntılı finansman programı hazırlar. Harcamalarını da bu programa uygun yaparlar.",
+      "articleRefs": [
+        "20"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Ait olduğu malî yılda ödenemeyen, emanet hesabına alınamayan ve zamanaşımına uğramamış geçen yıllar borçları hangi bütçeden ödenir?",
+      "back": "İlgili kamu idaresinin cari yıl bütçesinden. İlama bağlı borçlar da bu bütçeden ödenir.",
+      "explanation": "Kural olarak kamu idareleri bütçelerindeki ödeneklerin üzerinde harcama yapamaz. Cari yılda kullanılmayan ödenekler yıl sonunda iptal edilir.",
+      "articleRefs": [
+        "20"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Bütçeler arası ödenek aktarmasının usul ve esaslarının merkezî yönetim bütçe kanununda belirlenmesi hangi sınıra bağlıdır?",
+      "back": "Genel bütçe ödeneklerinin yüzde onunu geçmemek kaydına. Kural olarak bütçeler arası ödenek aktarması kanunla yapılır.",
+      "explanation": "Bu imkân, harcamalarda tasarrufu sağlamak ve dengeli, etkili bir bütçe politikasını gerçekleştirmek üzere tanınmıştır.",
+      "articleRefs": [
+        "21"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Merkezî yönetim kapsamındaki kamu idareleri kendi bütçeleri içinde, aktarma yapılacak tertipteki ödeneğin yüzde kaçına kadar aktarma yapabilir?",
+      "back": "Yüzde yirmisine kadar.",
+      "explanation": "Yüzde yirmiyi aşan aktarmaları ihtiyaç hâlinde Cumhurbaşkanlığı yapabilir. Bu aktarmalar kurum bütçesinin başlangıç ödenekleri toplamının yüzde yirmisini geçemez. Yılı yatırım programına ek yatırım cetvellerindeki projelerde değişiklik yapılırsa, gereken tertipler arası aktarmaların tamamını ilgili idareler yapar.",
+      "articleRefs": [
+        "21"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Kamu idarelerinin bütçeleri içinde personel giderleri tertiplerinden diğer tertiplere ödenek aktarılabilir mi?",
+      "back": "Hayır. Personel giderleri tertiplerinden diğer tertiplere ödenek aktarılamaz.",
+      "explanation": "Aynı yasak aktarma yapılmış tertipler için de geçerlidir; yedek ödenekten aktarma yapılmış tertipler de bu yasağa girer. Bir istisna vardır: yılı yatırım programına ek yatırım cetvellerindeki projelerde değişiklik yapılırsa, aktarma yapılan tertiplerden diğer tertiplere ödenek aktarılabilir.",
+      "articleRefs": [
+        "21"
+      ],
+      "counterNumbers": []
+    }
+  ]
+}

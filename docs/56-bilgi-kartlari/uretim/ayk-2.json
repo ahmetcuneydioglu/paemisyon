@@ -1,0 +1,296 @@
+{
+  "deck": {
+    "topicId": "5e2abdb1-eeb5-4fc0-8cb3-57b4aa6e07b2",
+    "legislationSlug": "5235-sayili-adli-yargi-ilk-derece-mahkemeleri-kurulus-gorev-ve-yetkileri-hakkinda-kanun",
+    "sourceLabel": "AI bilgi kartı — 5235 Sayılı Adlî Yargı İlk Derece Mahkemeleri Kuruluş, Görev ve Yetkileri Hakkında Kanun md 32–35, 35/A, 36–49, 51–56, Ek 1",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: resmî madde metni + çıkmış sorular)"
+  },
+  "cards": [
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Bölge adliye mahkemesi Cumhuriyet başsavcılığında, yazı işleri müdürlüğüne ek olarak hangi müdürlük kurulur?",
+      "back": "İdarî işler müdürlüğü; ihtiyaç duyulan diğer müdürlükler de kurulur.",
+      "explanation": "Yazı işleri müdürlüğü başkanlıkta, dairelerde, Cumhuriyet başsavcılığında ve adalet komisyonunda birer tane kurulur. Her müdürlükte bir müdür ile yeterli sayıda memur bulunur. Çalışanların atama, disiplin ve diğer özlük işlerinde adlî yargı ilk derece mahkemelerinde görevli personelin tâbi olduğu hükümler uygulanır.",
+      "articleRefs": [
+        "32"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Bölge adliye mahkemeleri, adlî yargı ilk derece mahkemelerinin hangi hüküm ve kararlarına karşı yapılan başvuruları inceler?",
+      "back": "Kesin olmayan hüküm ve kararlara karşı yapılan başvuruları inceleyip karara bağlar.",
+      "explanation": "Bölge adliye mahkemeleri bunun yanında kanunlarla verilen diğer görevleri de yapar.",
+      "articleRefs": [
+        "33"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Bölge adliye mahkemesi başkanı hangi kurullara başkanlık eder?",
+      "back": "Ceza daireleri başkanlar kuruluna, hukuk daireleri başkanlar kuruluna ve adalet komisyonuna başkanlık eder.",
+      "explanation": "Başkan bu kurulların ve komisyonun kararlarını da yürütür. Ayrıca mahkemeyi temsil eder, mahkemenin uyumlu, verimli ve düzenli çalışmasını sağlar ve genel yönetim işlerini yürütür.",
+      "articleRefs": [
+        "34"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Hükme bağlanan işlerde adlî yargı ilk derece mahkeme hâkim ve savcılarına verilen not fişlerini mercilerine kim gönderir?",
+      "back": "Bölge adliye mahkemesi başkanı.",
+      "explanation": "Başkan ayrıca bölge adliye mahkemesi memurlarını denetler ya da denetletir. Kendisine doğrudan bağlı personel hakkında ilgili kanunda belirtilen disiplin cezalarını uygular.",
+      "articleRefs": [
+        "34"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Ceza davalarında, bölge adliye mahkemesi dairelerinin kesin kararları arasındaki uyuşmazlığın giderilmesine ilişkin başkanlar kurulu istemi kime iletilir?",
+      "back": "Yargıtay Cumhuriyet Başsavcılığına. Uyuşmazlık bulunduğu kanaatine varırsa ilgili ceza dairesinden karar verilmesini talep eder.",
+      "explanation": "Hukuk davalarında istem ilgili hukuk dairesine iletilir. Başkanlar kurulu bu istemi re'sen yapabilir. İlgili dairenin, Cumhuriyet başsavcısının ya da istinaf yoluna başvurma hakkı bulunanların gerekçeli istemi üzerine de yapabilir; her durumda kendi görüşünü ekler. Uyuşmazlığın giderilmesine ilişkin olarak dairece verilen kararlar kesindir.",
+      "articleRefs": [
+        "35"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Bölge adliye mahkemesi başkanlar kurulu, üyelerin çoğunluğuyla toplanabilir mi?",
+      "back": "Hayır. Başkanlar kurulu eksiksiz toplanır; çoğunluk yalnız karar verirken aranır.",
+      "explanation": "Ceza daireleri başkanlar kurulu ve hukuk daireleri başkanlar kurulu kendi aralarında toplanır. Bu kurullar daireler arasında çıkan iş bölümü uyuşmazlıklarını karara bağlar.",
+      "articleRefs": [
+        "35"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Bölge adliye mahkemelerinde ceza ve hukuk daireleri arasındaki iş bölümünü kim belirler?",
+      "back": "Hâkimler ve Savcılar Kurulu; gelen işlerin yoğunluğunu ve niteliğini dikkate alarak belirler.",
+      "explanation": "Daireler arasında çıkan iş bölümü uyuşmazlıklarını ise ceza daireleri başkanlar kurulu ve hukuk daireleri başkanlar kurulu karara bağlar.",
+      "articleRefs": [
+        "35"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "İstinaf dosyası kendisine gönderilen hukuk dairesi, iş bölümü bakımından ön incelemeyi hangi süre içinde yapar?",
+      "back": "Bir ay içinde. Kendini görevli görmezse dosyayı gerekçesiyle, görevli olduğu kanısına vardığı hukuk dairesine gönderir.",
+      "explanation": "Gönderme kararı iş bölümü bakımından yapılan ön incelemenin sonucunda verilir.",
+      "articleRefs": [
+        "35/A"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Gönderme kararıyla dosya kendisine gelen hukuk dairesi, görevli olup olmadığına ilişkin ön incelemeyi hangi süre içinde yapar?",
+      "back": "İki hafta içinde. Görevli olmadığı kanaatine varırsa dosyayı hukuk daireleri başkanlar kuruluna gönderir.",
+      "explanation": "Daire dosyayı kurula gönderirken, varsa geçici hukuki koruma tedbirlerine dair talepler hakkında da karar verir. İki haftalık süre bittikten sonra gönderme kararı verilemez. Kurulun ön inceleme sonunda verdiği iş bölümü kararı kesindir.",
+      "articleRefs": [
+        "35/A"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Duruşma günü verilmiş bir istinaf dosyasında, bir aylık süre dolmadan iş bölümü nedeniyle gönderme kararı verilebilir mi?",
+      "back": "Hayır. Duruşma günü verilen dosya hakkında gönderme kararı verilemez; bir aylık sürenin bitiminden sonra da verilemez.",
+      "explanation": "Hukuk dairesi kendini iş bölümü bakımından görevli görmezse, bir ay içinde yaptığı ön incelemeyle dosyayı gerekçesiyle görevli gördüğü hukuk dairesine gönderir.",
+      "articleRefs": [
+        "35/A"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Yetkili hukuk mahkemesinin davaya bakmasına fiilî veya hukukî bir engel çıkarsa, davanın yargı çevresindeki başka bir hukuk mahkemesine nakline kim karar verir?",
+      "back": "Bölge adliye mahkemesi hukuk dairesi.",
+      "explanation": "İki mahkemenin yargı sınırları kapsamının belirlenmesinde tereddüt edilirse yetkili mahkemenin tayinine de hukuk dairesi karar verir. Hukuk dairesi ayrıca yargı çevresindeki ilk derece hukuk mahkemeleri arasındaki yetki ve görev uyuşmazlıklarını çözer.",
+      "articleRefs": [
+        "36"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Yargı çevresindeki adlî yargı ilk derece ceza mahkemeleri arasındaki yetki ve görev uyuşmazlıklarını kim çözer?",
+      "back": "Bölge adliye mahkemesi ceza daireleri.",
+      "explanation": "İlk derece ceza mahkemesi hâkimlerinin davayı görmeye hukukî veya fiilî engeli çıkabilir. Bu durumda davanın yargı çevresindeki başka bir ilk derece ceza mahkemesine nakline de ceza dairesi karar verir.",
+      "articleRefs": [
+        "37"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Bölge adliye mahkemesi dairesinde, dosya hakkında rapor hazırlayacak olanları kim tespit eder?",
+      "back": "Daire başkanı; kararların yazılmasını da o sağlar.",
+      "explanation": "Daire başkanı personelin sicil raporlarını düzenler. İzin isteklerini düşünceleriyle birlikte adalet komisyonuna aktarır. Dairenin kendi kararları arasındaki farklılık ve uyumsuzlukların giderilmesi için de tedbir alır.",
+      "articleRefs": [
+        "38"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Bölge adliye mahkemesi üyeleri dairelerinde hangi çalışmalara katılır?",
+      "back": "Dairelerindeki duruşma ve müzakerelere katılırlar.",
+      "explanation": "Üyeler daire başkanınca verilen dosyaları gerekli şekilde ve zamanında inceleyip heyete sunar, rapor hazırlar ve kararları yazar. İşlerin makul süre içinde karara bağlanmasında daire başkanına yardım ederler.",
+      "articleRefs": [
+        "39"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Bölge adliye mahkemesi Cumhuriyet savcılarının soruşturmayı sonlandıran kararları arasındaki farklılıkları gidermekle kim görevli ve yetkilidir?",
+      "back": "Bölge adliye mahkemesi Cumhuriyet başsavcısı. Bu kararların kanuna uygunluğunu denetlemede de o görevli ve yetkilidir.",
+      "explanation": "Başsavcı bölge adliye mahkemesi Cumhuriyet savcılarının ilerleme belgelerini düzenler ve savcılar üzerinde gözetim ve denetim yetkisini kullanır. Dairelerin benzer olaylarda kesin olarak verdikleri kararlar arasındaki uyuşmazlığın giderilmesi için de başkanlar kuruluna başvurur.",
+      "articleRefs": [
+        "40"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Bölge adliye mahkemesi adalet komisyonu hangi personel hakkında görev yapar?",
+      "back": "Bölge adliye mahkemelerinin hâkim ve savcıları dışında kalan personeli hakkında.",
+      "explanation": "Komisyon bu personel hakkında, kanunlarla adlî yargı ilk derece mahkemesi adalet komisyonuna verilen tüm görevleri yerine getirir. Kanunlarla verilen diğer görevleri de yapar.",
+      "articleRefs": [
+        "42"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Bölge adliye mahkemesi daire üyeliğine atanmak için birinci sınıf olmak şart mıdır?",
+      "back": "Hayır. Daire üyeleri için en az birinci sınıfa ayrılmış olmak yeterlidir. Birinci sınıf olma şartı bölge adliye mahkemesi başkanı ve daire başkanları için aranır.",
+      "explanation": "Her iki grupta da birinci sınıfa ayrılmayı gerektiren nitelikleri yitirmemiş olmak gerekir. Atama, adli yargı hâkim ve savcıları arasından Hâkimler ve Savcılar Kurulunca (metinde: Hâkimler ve Savcılar Yüksek Kurulu) yapılır.",
+      "articleRefs": [
+        "43"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Bölge adliye mahkemesi Cumhuriyet savcısı olarak atanmak için hâkimlik ve savcılık mesleğinde fiilen en az ne kadar görev yapmış olmak gerekir?",
+      "back": "En az sekiz yıl. Ayrıca üstün başarısıyla bölge adliye mahkemesinde yararlı olacağının anlaşılmış olması aranır.",
+      "explanation": "Atama, adli yargı hâkim ve savcıları arasından Hâkimler ve Savcılar Kurulunca (metinde: Hâkimler ve Savcılar Yüksek Kurulu) yapılır.",
+      "articleRefs": [
+        "44"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Bölge adliye mahkemesi Cumhuriyet başsavcıvekilleri hangi sınıftan atanır?",
+      "back": "Birinci sınıf olanlar arasından; birinci sınıfa ayrılmayı gerektiren nitelikleri yitirmemiş olmaları da gerekir.",
+      "explanation": "Aynı şart bölge adliye mahkemesi Cumhuriyet başsavcıları için de aranır. Atamayı Hâkimler ve Savcılar Kurulu (metinde: Hâkimler ve Savcılar Yüksek Kurulu) yapar.",
+      "articleRefs": [
+        "44"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Yargıtay daire başkanı ve üyeleri, istekleri üzerine bölge adliye mahkemesi başkanlığına kaç yıllığına atanabilir?",
+      "back": "Dört yıllığına; atamayı Hâkimler ve Savcılar Kurulu (metinde: Hâkimler ve Savcılar Yüksek Kurulu) yapar.",
+      "explanation": "Aynı usul daire başkanlıklarına, Cumhuriyet başsavcılığına ve başka bir bölge adliye mahkemesine yapılacak atamalarda da uygulanır.",
+      "articleRefs": [
+        "45"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Bölge adliye mahkemesine atanan Yargıtay üyesinin disiplin soruşturması, bölge adliye mahkemesi üyeleri hakkındaki hükümlere mi tabidir?",
+      "back": "Hayır. Disiplin ve ceza soruşturma ve kovuşturmaları Yargıtay üyeleri hakkındaki hükümlere tabidir.",
+      "explanation": "Bu şekilde atananların Yargıtay üyeliği sıfatı, kadrosu, aylık ve ödeneği ile her türlü özlük hakları korunur. Aylık ve ödenekleri Yargıtay bütçesinden ödenir. Bu görevde geçen süre Yargıtay üyeliğinde geçmiş sayılır. İstekleri üzerine Yargıtaydaki görevlerine geri dönerler.",
+      "articleRefs": [
+        "45"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Bölge adliye mahkemesinde her daire kaç kişinin katılmasıyla toplanır?",
+      "back": "Bir başkan ve iki üyenin katılmasıyla toplanır; kararlar çoğunlukla verilir.",
+      "explanation": "Görüşmeler gizli yapılır. İş yoğunluğu dikkate alınarak, üye sayısı yeterliyse dairede birden fazla heyet oluşturulabilir. Diğer heyetlere Hâkimler ve Savcılar Kurulunun belirleyeceği üye başkanlık eder.",
+      "articleRefs": [
+        "46"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Daire başkanı hukukî veya fiilî nedenlerle bulunamadığında daireye, bölge adliye mahkemesi başkanının görevlendireceği üye mi başkanlık eder?",
+      "back": "Hayır. Daire başkanı bulunamazsa daireye dairenin en kıdemli üyesi başkanlık eder.",
+      "explanation": "Bölge adliye mahkemesi başkanının kararı, dairenin toplanamadığı hâle ilişkindir. Bu hâlde eksiklik önce başkanın kararıyla diğer dairelerden tamamlanır. Bu da mümkün olmazsa Hâkimler ve Savcılar Kurulunca (metinde: Hâkimler ve Savcılar Yüksek Kurulu) diğer bölge adliye mahkemelerinden görevlendirilen üyelerle tamamlanır.",
+      "articleRefs": [
+        "46"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Bölge adliye mahkemesi üyesinin görevden doğan suçunda kovuşturma mercii, en yakın bölge adliye mahkemesinin görevli ceza dairesi midir?",
+      "back": "Hayır. Kovuşturma mercii Yargıtayın görevli ceza dairesidir. En yakın bölge adliye mahkemesinin görevli ceza dairesi ve Cumhuriyet başsavcısı, kanunda ağır ceza mahkemesine ve başsavcısına verilen soruşturma görevlerini yürütür.",
+      "explanation": "Şahsî suçlarda soruşturma en yakın bölge adliye mahkemesi Cumhuriyet başsavcısına aittir. Kovuşturma ise bu mahkemenin suç türüne göre görevli ceza dairesine aittir. Daire kararlarına karşı Ceza Muhakemesi Kanununun 272 nci maddesi çerçevesinde temyiz başvurusu yapılabilir.",
+      "articleRefs": [
+        "47"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Bölge adliye mahkemesi Cumhuriyet başsavcılığının, soruşturma aşamasında hâkim kararı gerektiren işlemlere dair taleplerine kim karar verir?",
+      "back": "Soruşturma konusu suçların en ağırına bakmakla görevli ceza dairesini, numara itibarıyla izleyen ceza dairesinin başkanı karar verir.",
+      "explanation": "Suç son numaralı ceza dairesinin görevine giriyorsa talebi birinci ceza dairesi başkanı inceler. Kovuşturmaya yer olmadığına dair kararlara itirazlarda da aynı kural uygulanır. Başkanın verdiği karara itirazı numara itibarıyla izleyen ceza dairesi başkanı inceler; son numaralı daire başkanının kararını birinci ceza dairesi başkanı inceler.",
+      "articleRefs": [
+        "47"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Bölge adliye mahkemeleri, Cumhuriyet başsavcılıkları ve adalet komisyonlarının denetimini kimler yapar?",
+      "back": "İlgisine göre Hâkimler ve Savcılar Kurulu (metinde: Hâkimler ve Savcılar Yüksek Kurulu) başmüfettişleri ya da adalet başmüfettişleri.",
+      "articleRefs": [
+        "48"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Bölge adliye mahkemesinin yargı çevresi değişince, değişikliğin uygulanma tarihinden önce verilmiş bir ilk derece kararının istinaf incelemesinde yetkisizlik kararı verilebilir mi?",
+      "back": "Hayır. Karar tarihi itibarıyla yetkili bölge adliye mahkemesi, yargı çevresinin değiştiği gerekçesiyle yetkisizlik kararı veremez.",
+      "explanation": "Uygulama tarihi Resmî Gazetede belirlenir. Bu tarihten önce bölge adliye mahkemesi Cumhuriyet başsavcılığınca açılan soruşturmalarda da yetkisizlik kararı verilemez; bölge adliye mahkemesinde yürütülen kovuşturmalar için de aynı kural geçerlidir. Soruşturma sonunda açılacak kamu davaları da aynı yer bölge adliye mahkemesinde görülür.",
+      "articleRefs": [
+        "Ek 1"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Yargı çevresi değişmeden önce istinaf incelemesinden geçen bir dosya yeniden istinafa gelirse, onu hangi bölge adliye mahkemesi sonuçlandırır?",
+      "back": "İlk incelemeyi yapan bölge adliye mahkemesi sonuçlandırır.",
+      "explanation": "Yargı çevresi değişikliği bölge adliye mahkemesinin yargı çevresini düzenleyen hükme göre yapılır ve uygulanma tarihi Resmî Gazetede belirlenir.",
+      "articleRefs": [
+        "Ek 1"
+      ]
+    }
+  ]
+}

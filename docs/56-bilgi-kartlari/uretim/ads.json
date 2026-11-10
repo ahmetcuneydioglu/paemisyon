@@ -1,0 +1,279 @@
+{
+  "deck": {
+    "topicId": "96b6ca9d-9c80-4b37-8bba-ef13eef075e8",
+    "legislationSlug": "5352-adli-sicil-kanunu",
+    "sourceLabel": "AI bilgi kartı — 5352 Adli Sicil Kanunu md 1–13, 13/A, 14–16, 18–20",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: resmî madde metni + çıkmış sorular)"
+  },
+  "cards": [
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Adlî Sicil Kanunu hangi bilgilerin toplanma ve bildirilme usulünü düzenler?",
+      "back": "Kesinleşmiş ceza ve güvenlik tedbirlerine mahkûmiyete ilişkin bilgilerin. Bu bilgiler otomatik işleme tâbi bir sistemle toplanır, sınıflandırılır, değerlendirilir, muhafaza edilir ve ilgililere bildirilir.",
+      "explanation": "Kanun, bu bilgilerin gerektiğinde en seri ve sağlıklı biçimde ilgililere bildirilmesini amaçlar.",
+      "articleRefs": [
+        "1"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Tüm adlî sicil bilgileri hangi birimde tutulur?",
+      "back": "Adalet Bakanlığı Adlî Sicil ve İstatistik Genel Müdürlüğündeki Merkezî Adlî Sicilde. Bilgiler önce mahallinde bilgisayar ortamına aktarılır.",
+      "explanation": "Burada Türk vatandaşlarının kayıtları tutulur. Türkiye'de suç işlemiş yabancıların kayıtları da aynı yerde bulunur.",
+      "articleRefs": [
+        "2"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Türk vatandaşı hakkında yabancı ülke mahkemesinin verdiği mahkûmiyet kararı adlî sicilde tutulabilir mi?",
+      "back": "Evet. Kararın kesinleşmiş olması ve Türk Hukukuna göre tanınan bir mahkûmiyet kararı olması şartıyla Merkezî Adlî Sicilde tutulur.",
+      "explanation": "Bu iki şart birlikte aranır: kararın kesinleşmiş olması ve Türk Hukukuna göre tanınması.",
+      "articleRefs": [
+        "2"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Adlî sicil bilgilerini bilgisayara girip merkezî adlî sicile aktarmak hangi birimin görevidir?",
+      "back": "Mahalli adlî sicilin. Merkezî adlî sicilden bilgileri alıp ilgili şahıs ve kurumlara iletmek de onun görevidir.",
+      "explanation": "Merkezî Adlî Sicil ise kayıtları güncelleştirir, düzenler ve düzeltir. Kayıtları mahalli adlî sicillere ulaştırmak da onun görevidir.",
+      "articleRefs": [
+        "3"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Akıl hastalığı nedeniyle hükmedilen güvenlik tedbirlerine ilişkin kararlar adlî sicile kaydedilir mi?",
+      "back": "Evet, adlî sicile kaydedilecek bilgiler arasında sayılır. Bu kayıtlar, infazın tamamlanmasıyla tamamen silinir.",
+      "articleRefs": [
+        "4",
+        "12"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "İdarî para cezasına ilişkin karar adlî sicile kaydedilir mi?",
+      "back": "Hayır. İdarî para cezasına ilişkin kararlar, Türk mahkemelerince verilmiş olsa bile adlî sicile kaydedilmez.",
+      "explanation": "Kaydedilmeyenler arasında disiplin suçlarına ve sırf askerî suçlara ilişkin mahkûmiyet hükümleri de vardır. Disiplin veya tazyik hapsine ilişkin kararlar da kaydedilmez.",
+      "articleRefs": [
+        "5"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Kamu davasının açılmasının ertelenmesine ilişkin kararlar adlî sicilden hangi halde verilir?",
+      "back": "Ancak bir soruşturma veya kovuşturmayla bağlantılı olarak mahkeme, hâkim veya Cumhuriyet Başsavcılığı istediğinde verilir.",
+      "explanation": "Hükmün açıklanmasının geri bırakılmasına ilişkin kararlar da aynı kurala tabidir. Her iki karar türü yalnız bu amaçla verilmek üzere kaydedilir.",
+      "articleRefs": [
+        "6"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Karşılıksız yararlanma suçunda etkin pişmanlık dolayısıyla verilen kararlar adlî sicilde ne kadar süre muhafaza edilir?",
+      "back": "Onbeş yıl. Bu kararlar adlî sicilde bunlara mahsus bir sistemde tutulur.",
+      "explanation": "Bu kayıtlar ancak bir soruşturma veya kovuşturmayla bağlantılı olarak istenirse verilebilir. İsteyebilecek olanlar Cumhuriyet savcısı veya mahkemedir.",
+      "articleRefs": [
+        "6"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Adlî sicil bilgileri vekile hangi koşulla verilebilir?",
+      "back": "Vekâletnamede açıkça belirtilmek koşuluyla verilebilir. Kullanılış amacının da belirtilmesi gerekir.",
+      "explanation": "Bilgiler, kullanılış amacı belirtilerek ilgili kişiye de verilebilir. Kamu kurum ve kuruluşları ile kamu kurumu niteliğindeki meslek kuruluşları da aynı şekilde bilgi alabilir.",
+      "articleRefs": [
+        "7"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Yabancı devletlerin istediği adlî sicil bilgileri hangi esasa göre verilir?",
+      "back": "Mütekabiliyet esasına göre verilir.",
+      "articleRefs": [
+        "7"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Yurt dışında adlî sicil bilgilerini hangi makamlar verir?",
+      "back": "Elçilik ve konsolosluklar verir.",
+      "explanation": "Mahalli adlî sicillerde bilgileri Cumhuriyet başsavcılıkları ve kaymakamlıklar verir. Merkezî adlî sicilde ise Adalet Bakanlığı Adlî Sicil ve İstatistik Genel Müdürlüğü verir.",
+      "articleRefs": [
+        "8"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Adlî sicildeki bilgiler hangi hallerde silinerek arşiv kaydına alınır?",
+      "back": "Şu hallerde: cezanın veya güvenlik tedbirinin infazının tamamlanması; mahkûmiyeti bütün sonuçlarıyla kaldıran şikayetten vazgeçme veya etkin pişmanlık; ceza zamanaşımının dolması; genel af.",
+      "explanation": "Silme ve arşive alma işlemini Adlî Sicil ve İstatistik Genel Müdürlüğü yapar.",
+      "articleRefs": [
+        "9"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Türk vatandaşı hakkında yabancı mahkemece verilip adlî sicile kaydedilen hürriyeti bağlayıcı cezaya mahkûmiyet hükmü ne zaman arşive alınır?",
+      "back": "Kesinleştiği tarihten itibaren mahkûmiyet kararında belirtilen sürenin geçmesiyle. Adlî Sicil ve İstatistik Genel Müdürlüğü kaydı adlî sicilden çıkartarak arşive alır.",
+      "explanation": "Aynı fıkraya göre adlî para cezasına mahkûmiyet hükümleri adlî sicil kaydına alınmadan doğrudan arşive kaydedilir. Cezanın ertelenmesine ilişkin hükümler için de aynı kural geçerlidir.",
+      "articleRefs": [
+        "9"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "İlgilinin ölümü üzerine adlî sicil bilgileri arşiv kaydına alınır mı?",
+      "back": "Hayır. İlgilinin ölümü üzerine adlî sicil bilgileri tamamen silinir.",
+      "explanation": "Ölüm halinde kayıt arşive alınmaz, doğrudan ve tamamen silinir.",
+      "articleRefs": [
+        "9"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Arşiv bilgilerini kimler isteyebilir?",
+      "back": "Kişinin kendisi veya vekili. Soruşturma veya kovuşturma kapsamında Cumhuriyet başsavcılıkları, hâkim veya mahkemeler. Yetkili seçim kurulları. Özel kanunlarda gösterilen hallerde ilgili kamu kurum ve kuruluşları.",
+      "explanation": "Kişi veya vekili kullanılış amacını belirtmelidir. Vekil için bu yetki vekâletnamede açıkça belirtilmiş olmalıdır.",
+      "articleRefs": [
+        "10"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Hangi yaştan küçüklerin adlî sicil ve arşiv kayıtları yalnız soruşturma ve kovuşturma kapsamında istenebilir?",
+      "back": "Onsekiz yaşından küçüklerin. Bu kayıtları ancak Cumhuriyet başsavcılıkları, hâkim veya mahkemeler isteyebilir.",
+      "articleRefs": [
+        "10"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Kişi hakkında yapılacak bir işlem için yakınının adlî sicil kaydı istenebilir mi?",
+      "back": "Hayır. Kanunda açıkça belirtilmedikçe kişinin bir yakınının adlî sicil ve arşiv kayıtları istenemez.",
+      "explanation": "Bu bilgiler, kişiyi herhangi bir haktan yoksun bırakmak için dayanak olarak da kullanılamaz.",
+      "articleRefs": [
+        "10"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Adlî sicil ve arşiv bilgilerini alan kurum bunları hangi amaçla kullanabilir?",
+      "back": "Yalnız veriliş amacıyla. Bu bilgiler gizlidir ve görevlilerce açıklanamaz.",
+      "articleRefs": [
+        "11"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Anayasa md 76 ya da Türk Ceza Kanunu dışındaki kanunlarda hak yoksunluğuna yol açan mahkûmiyette, yasaklanmış hakların geri verilmesi kararı alınmışsa arşiv kaydı kaç yılda silinir?",
+      "back": "Onbeş yıl geçmesiyle silinir; süre, kaydın arşive alınma koşullarının oluştuğu tarihten işler. Bu karar aranmaksızın silinme için otuz yıl geçmelidir.",
+      "articleRefs": [
+        "12"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Anayasa md 76 ve Türk Ceza Kanunu dışındaki kanunlarda hak yoksunluğuna yol açanlar dışında kalan diğer mahkûmiyetlerde arşiv kaydı kaç yılda tamamen silinir?",
+      "back": "Beş yıl geçmesiyle silinir. Süre, kaydın arşive alınma koşullarının oluştuğu tarihten itibaren işler.",
+      "explanation": "Arşiv bilgileri, ilgilinin ölümü üzerine de tamamen silinir.",
+      "articleRefs": [
+        "12"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Fiil kanunla suç olmaktan çıkarılırsa ilgili adlî sicil ve arşiv kayıtlarının silinmesi talebe bağlı mıdır?",
+      "back": "Hayır. Bu suçtan mahkûmiyete ilişkin adlî sicil ve arşiv kayıtları talep aranmaksızın tamamen silinir.",
+      "explanation": "Kanun yararına bozma veya yargılamanın yenilenmesi sonucunda beraat kararı kesinleşirse önceki mahkûmiyet kaydı da tamamen silinir. Ceza verilmesine yer olmadığı kararının kesinleşmesinde de aynı sonuç doğar.",
+      "articleRefs": [
+        "12"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Bir suça ilişkin soruşturmada kolluk adlî sicil ve arşiv kayıtlarında hangi şartla sorgulama yapabilir?",
+      "back": "Adalet Bakanının onayı ile yapabilir. Mahkeme, hâkim ve Cumhuriyet Başsavcılığı ise doğrudan doğruya sorgulama yapabilir.",
+      "explanation": "Diğer kamu kurum ve kuruluşları da soruşturma ve kovuşturma kapsamında Adalet Bakanının onayı ile sorgulama yapar.",
+      "articleRefs": [
+        "13"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Gerçek kişiler kendi adlî sicil ve arşiv kayıtlarını hangi araçlarla sorgulayabilir?",
+      "back": "Güvenli kimlik doğrulama araçlarıyla, Adalet Bakanlığının belirleyeceği usul ve esaslar çerçevesinde sorgulayabilirler. Sonucu fiziki veya elektronik ortamda merciine verebilirler.",
+      "articleRefs": [
+        "13"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Yasaklanmış hakların geri verilmesi için kural olarak infazın tamamlandığı tarihten itibaren ne kadar süre geçmelidir?",
+      "back": "Üç yıl. Kişi bu sürede yeni suç işlememiş olmalı ve iyi halli yaşadığı konusunda mahkemede kanaat oluşmalıdır.",
+      "explanation": "Bu yol, 5237 sayılı Türk Ceza Kanunu dışındaki kanunların mahkûmiyete bağladığı hak yoksunluklarını gidermek için kullanılır. Türk Ceza Kanunu md 53'ün beşinci ve altıncı fıkraları saklıdır.",
+      "articleRefs": [
+        "13/A"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "İnfaza genel af veya etkin pişmanlık dışında bir hukukî nedenle son verilmişse, yasaklanmış hakların geri verilmesi için hükmün kesinleşmesinden itibaren kaç yıl geçmelidir?",
+      "back": "Beş yıl. Ancak bu süre, mahkûm olunan hapis cezasına üç yıl eklenerek bulunacak süreden az olamaz.",
+      "articleRefs": [
+        "13/A"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Yasaklanmış hakların geri verilmesine hangi mahkeme karar verir?",
+      "back": "Hükmü veren mahkeme veya hükümlünün ikametgâhının bulunduğu yerdeki aynı derecedeki mahkeme karar verir. Karar, hükümlünün veya vekilinin talebi üzerine verilir.",
+      "explanation": "Mahkeme dosya üzerinden ya da Cumhuriyet savcısını ve hükümlüyü dinleyerek karar verebilir. Karara karşı Ceza Muhakemesi Kanununda hükümle ilgili öngörülen kanun yoluna başvurulabilir. Bütün masrafları hükümlü karşılar.",
+      "articleRefs": [
+        "13/A"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Adlî sicil ve arşiv kayıtlarının silinmesiyle ilgili kararları alan komisyon kaç hâkimden oluşur?",
+      "back": "Üç hâkimden oluşur. Komisyon, Adlî Sicil ve İstatistik Genel Müdürlüğünün teklifi ve Bakan onayı ile kurulur.",
+      "articleRefs": [
+        "14"
+      ]
+    }
+  ]
+}

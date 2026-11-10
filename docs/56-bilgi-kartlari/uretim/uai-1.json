@@ -1,0 +1,286 @@
+{
+  "deck": {
+    "topicId": "8acb1d24-36dc-4517-89d0-68043758dcd1",
+    "legislationSlug": "6706-cezai-konularda-uluslararasi-adli-is-birligi-kanunu",
+    "sourceLabel": "AI bilgi kartı — 6706 Cezai Konularda Uluslararası Adli İş Birliği Kanunu md 1–22",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: resmî madde metni + çıkmış sorular)"
+  },
+  "cards": [
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Cezai Konularda Uluslararası Adli İş Birliği Kanunu hangi iş birliğini kapsar?",
+      "back": "Yabancı devletlerle cezaî konularda yapılacak adlî iş birliğini kapsar.",
+      "explanation": "Kanunun amacı, cezaî konularda uluslararası adlî iş birliğinin usul ve esaslarını düzenlemektir. Türkiye'nin taraf olduğu adlî iş birliğine ilişkin milletlerarası andlaşmalar ile diğer kanun hükümleri saklıdır.",
+      "articleRefs": [
+        "1"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Cezai Konularda Uluslararası Adli İş Birliği Kanununun uygulanmasında 'Merkezî Makam' hangi kurumdur?",
+      "back": "Adalet Bakanlığı.",
+      "explanation": "Uluslararası adlî iş birliği, cezaî konularda bir devletin adlî mercilerinin diğer bir devletin adlî mercileri adına yerine getirdiği işlemlerdir.",
+      "articleRefs": [
+        "2"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Merkezî Makam, yabancı devletin ileri sürdüğü bir şartı yargı yetkisine giren bir hususta da kabul edebilir mi?",
+      "back": "Hayır. Yargı yetkisine giren hususlar hariç tutulur. Bunun dışında Merkezî Makamın kabul ettiği şartlar ve verdiği teminatlar adlî mercileri bağlar.",
+      "explanation": "Merkezî Makam, yabancı devletin talebinin yerine getirilmesini de şarta veya teminata bağlayabilir. Hukukî ve fiilî mütekabiliyet yoksa talep, karşı devletin Türkiye'nin aynı konudaki taleplerini karşılamayı garanti etmesi şartına bağlanabilir.",
+      "articleRefs": [
+        "3"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Talebe konu fiilin hangi suç niteliğinde olması hâlinde yabancı devletin adlî iş birliği talebi reddedilebilir?",
+      "back": "Fiil sırf askerî suç, düşünce suçu, siyasî suç veya siyasî suçla bağlantılı bir suç ise talep reddedilebilir.",
+      "explanation": "Ret sebeplerinden biri, Türkiye'nin egemenlik hakları, millî güvenliği, kamu düzeni veya diğer temel çıkarlarının ihlal edilmesidir. Diğeri, talepte bulunan devlette savunma hakkına ilişkin temel güvencelerin bulunmamasıdır. Hüküm 'reddedilebilir' der; yani ret takdire bağlıdır.",
+      "articleRefs": [
+        "4"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Adlî iş birliği talepleri yerine getirilirken, Kanunda ve diğer kanunlarda hüküm bulunmayan hâllerde hangi kanun uygulanır?",
+      "back": "Ceza Muhakemesi Kanunu (5271 sayılı) hükümleri uygulanır.",
+      "articleRefs": [
+        "5"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Talebe konu suçun hukukî vasfı değişirse, adlî iş birliğiyle gelen belgeleri kullanmak için gönderen devletin izni gerekir mi?",
+      "back": "Hayır. Talebe konu suçun hukukî vasfı değiştiğinde izin şartı aranmaz.",
+      "explanation": "Temel kurala göre gelen bilgi ve belgeler, gönderen devlet izin vermedikçe yalnız talebe konu soruşturma, kovuşturma ya da infaz işlemlerinde kullanılabilir. İzin aranmayan iki hâl daha vardır. Birincisi, adlî iş birliği işleminden sonra ortaya çıkan yeni şüpheli veya sanıkların soruşturma ya da kovuşturmaya dâhil edilmesidir. İkincisi, bilgi ve belgelerin bu suçla bağlantılı hukuk davalarında gerekli olmasıdır.",
+      "articleRefs": [
+        "6"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Türk adlî mercileri, tebligata ilişkin adlî yardımlaşma talebinde hangi ihtara yer vermez?",
+      "back": "Kısıtlayıcı veya zorlayıcı tedbir uygulanacağına ilişkin ihtarlara yer vermez.",
+      "explanation": "Türk adlî mercileri, gecikmesinde sakınca bulunan hâllerde delillerin korunması için geçici tedbir isteyebilir. İşlem sırasında hazır bulunma talebinde de bulunabilirler. İlgili devletin kendi iç hukukuna uygun olarak yaptığı işlemler Türk hukuku bakımından da geçerli sayılır.",
+      "articleRefs": [
+        "7"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Yabancı devlet adına alınan geçici tedbirden sonra, adlî yardımlaşma talebi Merkezî Makama ne kadar sürede ulaşmalıdır?",
+      "back": "Kırk gün içinde ulaşmalıdır; süre geçici tedbirin alındığı tarihten başlar. Talep bu sürede ulaşmazsa tedbir, yetkili makam veya merciler tarafından derhâl kaldırılır.",
+      "explanation": "Bu geçici tedbir, gecikmesinde sakınca bulunan hâllerde ve adlî yardımlaşma talebi gönderilmeden önce delillerin korunması amacıyla alınır.",
+      "articleRefs": [
+        "8"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Yabancı devletin arama veya elkoyma talebi, konu suç iadeye elverişli olmasa da yerine getirilebilir mi?",
+      "back": "Hayır. Arama veya elkoyma talebinde, talebin konusu olan suçun iadeye elverişli bir suç olması gerekir.",
+      "explanation": "Talep üzerine elkonulan malvarlığı değerleri ile taşınmaz, hak ve alacaklar için Türk adlî mercileri yılda en az bir defa talep eden devletten bilgi ister. Sorulan, tedbirin devamının istenip istenmediğidir.",
+      "articleRefs": [
+        "8"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Soruşturma veya kovuşturma aşamasında yabancı devlete iade talebinin kabul edilebilmesi için suçun cezasının üst sınırı en az ne olmalıdır?",
+      "back": "Bir yıl veya daha fazla hürriyeti bağlayıcı ceza. Bu şart hem talep eden devlet hukukuna hem Türk hukukuna göre aranır.",
+      "explanation": "İadesi istenen kişinin birden fazla suçu varsa, bazılarının cezası bu sınırın altında kalsa da hepsi birlikte iadeye konu edilebilir.",
+      "articleRefs": [
+        "10"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Kesinleşmiş mahkûmiyet kararlarında, yabancı devletin iade talebinin kabul edilebilmesi için hükmolunan ceza en az ne olmalıdır?",
+      "back": "En az dört ay hürriyeti bağlayıcı ceza.",
+      "explanation": "İade, yabancı ülkede işlenen bir suç nedeniyle hakkında soruşturma veya kovuşturma başlatılan ya da mahkûmiyet kararı verilen yabancı için söz konusudur. Amaç, soruşturma veya kovuşturmanın sonuçlandırılması ya da hükmedilen cezanın infazıdır.",
+      "articleRefs": [
+        "10"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Aynı kişi için birden fazla devlet iade talebinde bulunursa, hangi talebin öncelikle işleme alınacağını kim belirler?",
+      "back": "Merkezî Makam belirler.",
+      "explanation": "Merkezî Makamın dikkate aldığı şartlar arasında şunlar vardır: suçların ağırlığı ve işlendiği yer, taleplerin geliş sırası, kişinin vatandaşlığı ve yeniden iade edilme ihtimali. İade hâlinde kişi ancak iade kararına dayanak suçlardan yargılanabilir ya da yalnız bu suçlardan mahkûm olduğu ceza infaz edilebilir.",
+      "articleRefs": [
+        "10"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Soykırım suçu siyasî suç sayılarak iade talebi reddedilebilir mi?",
+      "back": "Hayır. Soykırım ve insanlığa karşı suçlar siyasî suç olarak kabul edilmez.",
+      "explanation": "Düşünce suçu, siyasî suç veya siyasî suçla bağlantılı suç niteliğindeki fiil için iade talebi kabul edilmez. Ancak fiilin bütün unsurları, özellikle işleniş şekli, kullanılan araçların veya ortaya çıkan sonuçların ağırlığı dikkate alınarak fiil siyasî suç kabul edilmeyebilir.",
+      "articleRefs": [
+        "11"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "İadesi talep edilen kişi, talep tarihinde hangi yaşı doldurmamışsa bu kişisel hâl nedeniyle iade talebi kabul edilmeyebilir?",
+      "back": "On sekiz yaş. Bunun için iadenin, kişiyi veya ailesini fiilin ağırlığı ile orantısız şekilde mağdur edecek olması gerekir.",
+      "explanation": "Kişisel hâller arasında uzun zamandan beri Türkiye'de bulunuyor olmak ve evli bulunmak da sayılır. Hüküm 'kabul edilmeyebilir' der; yani karar takdire bağlıdır.",
+      "articleRefs": [
+        "11"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "İade sürecindeki bir yabancı, kimin görüşü alınmadan sınır dışı edilemez?",
+      "back": "Merkezî Makamın. Yabancı, Merkezî Makamın görüşü alınmadan iade talebi reddedilen devlete de sınır dışı edilemez.",
+      "explanation": "Kanunda Merkezî Makam, Adalet Bakanlığıdır.",
+      "articleRefs": [
+        "12",
+        "2"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Geçici tutuklama talebi üzerine yakalanan kişi, en geç ne kadar sürede sulh ceza hâkimi önüne çıkarılır?",
+      "back": "En geç yirmi dört saat içinde. Geçici tutuklama hakkında sulh ceza hâkimi karar verir.",
+      "explanation": "Hâkim, karar vermeden önce kişiye rızaya dayalı iade imkânını ve bunun hukukî sonuçlarını anlatır. İlgili devletin geçici tutuklama talebini Merkezî Makam İçişleri Bakanlığına gönderir; amaç, kişinin iade amacıyla yakalanması ve Cumhuriyet başsavcılığına sevkidir.",
+      "articleRefs": [
+        "14"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Mütekabiliyet ilkesi çerçevesinde geçici tutuklanan kişi en fazla ne kadar süre geçici tutuklu kalabilir?",
+      "back": "En fazla kırk gün. Milletlerarası andlaşma varsa süre, andlaşma hükümlerine göre belirlenir.",
+      "explanation": "İlgili devlet bu süre içinde iade evrakını göndermezse geçici tutuklama veya adlî kontrol kararı kaldırılır. Bu durum, iade talebi alındıktan sonra iade amacıyla koruma tedbiri uygulanmasına engel olmaz.",
+      "articleRefs": [
+        "14"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Türk Ceza Kanununun 12 nci maddesinin üçüncü fıkrasının (a) bendi kapsamındaki bir suçu işlediği yönünde kuvvetli şüphe bulunan kişinin geçici tutuklanması için ilgili devletin talebi gerekir mi?",
+      "back": "Hayır. Bu kişi, ilgili devletin talebi aranmaksızın geçici olarak tutuklanabilir.",
+      "explanation": "Diğer hâllerde geçici tutuklama için üç şart aranır: kuvvetli şüphe, ilgili devletin talebi ve Merkezî Makamın uygun bulması. Bu durumda tutuklama, iade talebi Merkezî Makama ulaşmadan önce yapılabilir. Geçici tutuklama yerine, kaçmayı engelleyecek şekilde adlî kontrol kararı da verilebilir.",
+      "articleRefs": [
+        "14"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "İadesi istenen kişinin bulunduğu yer belli değilse, iade talebi hakkında hangi mahkeme karar verir?",
+      "back": "Ankara ağır ceza mahkemesi.",
+      "explanation": "Kişinin bulunduğu yer belliyse o yer ağır ceza mahkemesi yetkilidir. Karar için ağır ceza mahkemesinden talepte bulunan makam, Cumhuriyet başsavcılığıdır.",
+      "articleRefs": [
+        "15"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "İade sürecinde tutuklanan kişinin tutukluluk durumu, ağır ceza mahkemesince hangi aralıklarla incelenir?",
+      "back": "En geç otuzar günlük sürelerle incelenir. Bu inceleme, teslime kadar geçen süre boyunca sürer.",
+      "explanation": "Toplam tutukluluk süresi, kişinin iade talebine konu suçtan dolayı alabileceği veya mahkûm olduğu cezanın infaz süresini geçemez.",
+      "articleRefs": [
+        "16"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Rızaya dayalı iade usulüyle verilen iade kararının yerine getirilmesi kimin onayına bağlıdır?",
+      "back": "Merkezî Makamın onayına bağlıdır.",
+      "explanation": "Kişi iadeye rıza gösterirse normal iade usulü uygulanmaz. Ağır ceza mahkemesi kişiye haklarını, rızaya dayalı iadenin mahiyetini ve hukukî sonuçlarını anlatır. Mahkemenin kabul edilebilirlik kararına karşı itiraz yoluna başvurulabilir. Karar kesinleşince iade evrakı Merkezî Makama gönderilir.",
+      "articleRefs": [
+        "17"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "İade yargılamasında katılma talebinde bulunulabilir mi?",
+      "back": "Hayır. İade yargılamasında katılma talebinde bulunulamaz.",
+      "explanation": "Kişi rızaya dayalı iade usulünü kabul etmezse mahkeme, iade şartlarını Kanuna ve Türkiye'nin taraf olduğu milletlerarası andlaşmalara göre inceler. Belgeler yeterli görülmezse uygun bir süre içinde ek bilgi ve belge isteyebilir.",
+      "articleRefs": [
+        "18"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "İade yargılamasında verilen karara karşı yapılan temyiz başvurusunu Yargıtay ne kadar sürede sonuçlandırır?",
+      "back": "Üç ay içinde sonuçlandırır.",
+      "explanation": "Karar kesinleşince iade evrakı, karar ile birlikte Merkezî Makama gönderilir.",
+      "articleRefs": [
+        "18"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Ağır ceza mahkemesinin iade talebini kabul edilebilir bulan kararının yerine getirilmesi kimin onayına bağlıdır?",
+      "back": "Cumhurbaşkanının onayına bağlıdır. Önce Dışişleri ve İçişleri bakanlıklarının görüşü alınır, ardından Adalet Bakanı teklifte bulunur.",
+      "explanation": "Merkezî Makam, iade talebinin kabul veya reddedildiğini talep eden devlete ve iadesi talep edilen kişiye bildirir.",
+      "articleRefs": [
+        "19"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "İadesine karar verilen kişi, kararlaştırılan tarihte haklı bir neden olmaksızın teslim alınmazsa koruma tedbirleri ne zaman kaldırılır?",
+      "back": "Kararlaştırılan tarihten itibaren otuz gün sonra mahkemece kaldırılır.",
+      "explanation": "Teslim işlemleri ilgili bakanlıklarla iş birliği hâlinde yürütülür. Merkezî Makam iki durumda teslimin ertelenmesine karar verebilir: kişi hakkında Türkiye'de başka bir suçtan soruşturma, kovuşturma ya da infazı gereken hapis cezası bulunması veya kişinin seyahat edebilecek durumda olmaması.",
+      "articleRefs": [
+        "20"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Türkiye'den transit geçişin sağlanması için sulh ceza hâkimi en fazla ne kadar süreli geçici tutuklama kararı verebilir?",
+      "back": "Yedi günü geçmemek üzere. Bunun için transit geçişin yirmi dört saatten fazla sürmesi ve kişinin hürriyetinin kısıtlanması ihtiyacının doğması gerekir.",
+      "explanation": "Transit geçiş talebini Merkezî Makam değerlendirir. Ret nedenleri ortaya çıkarsa ya da kişi geçiş sırasında resen soruşturma gerektiren bir suç işlerse geçiş durdurulabilir. Hükümlü nakillerindeki transit geçişlere de aynı hükümler uygulanır.",
+      "articleRefs": [
+        "21"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Merkezî Makam, Türk adlî mercilerinin iade talebini hangi hâllerde yabancı devlete göndermeden reddedebilir?",
+      "back": "Üç hâlde reddedebilir: talep gerekli şartları taşımıyorsa, iade kişi yararı ile kamu yararı arasında açık orantısızlığa yol açıyorsa ya da Türkiye'nin millî güvenliği veya uluslararası ilişkileri zarar görebilecekse.",
+      "explanation": "Orantısızlık değerlendirilirken ceza infaz kurumlarında geçirilecek süre dikkate alınır. Türkiye'ye iade, yabancı bir ülkede bulunan ve hakkında yakalama emri veya tutuklama kararı verilen kişi için adlî mercilerce istenir.",
+      "articleRefs": [
+        "22"
+      ]
+    }
+  ]
+}

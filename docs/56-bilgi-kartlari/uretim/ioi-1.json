@@ -1,0 +1,251 @@
+{
+  "deck": {
+    "topicId": "cc810ce5-feac-47bd-b4f9-9a9edf7c4672",
+    "legislationSlug": "5302-il-ozel-idaresi-kanunu",
+    "sourceLabel": "AI bilgi kartı — 5302 İl Özel İdaresi Kanunu md 1–12",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: resmî madde metni + çıkmış sorular)"
+  },
+  "cards": [
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "5302 sayılı İl Özel İdaresi Kanunu'nun amacı nedir?",
+      "back": "İl özel idaresinin kuruluşunu, organlarını, yönetimini, görev, yetki ve sorumlulukları ile çalışma usul ve esaslarını düzenlemek.",
+      "articleRefs": [
+        "1"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Kanuna göre il özel idaresi nasıl bir kamu tüzel kişisidir?",
+      "back": "İdarî ve malî özerkliğe sahip bir kamu tüzel kişisidir. İl halkının mahallî müşterek nitelikteki ihtiyaçlarını karşılamak üzere kurulur.",
+      "articleRefs": [
+        "3"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "İl özel idaresinin organları nelerdir?",
+      "back": "İl genel meclisi, il encümeni ve vali.",
+      "explanation": "Vali, il özel idaresinin organları arasında doğrudan sayılır.",
+      "articleRefs": [
+        "3"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "İl özel idaresi hangi işlemle kurulur?",
+      "back": "Kanunla: ilin kurulmasına dair kanunla kurulur.",
+      "articleRefs": [
+        "4"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "İl özel idaresinin tüzel kişiliği ne zaman sona erer?",
+      "back": "İlin kaldırılmasıyla sona erer.",
+      "articleRefs": [
+        "4"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "İl özel idaresinin görev alanı hangi sınırları kapsar?",
+      "back": "İl sınırlarını kapsar.",
+      "articleRefs": [
+        "5"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "İl özel idaresi katı atık hizmetini il sınırlarının tamamında yürütmekle mi görevlidir?",
+      "back": "Hayır. Katı atık hizmeti belediye sınırları dışında yürütülür. Gençlik ve spor, sağlık, tarım, turizm gibi hizmetler ise il sınırları içinde yürütülür.",
+      "explanation": "Belediye sınırları dışında görülen hizmetler imar, yol, su, kanalizasyon, katı atık, çevre, acil yardım ve kurtarma, orman köylerinin desteklenmesi, ağaçlandırma, park ve bahçe tesisidir. Toprağın korunması, erozyonun önlenmesi, kültür, sanat, sosyal hizmet ve yardımlar ise il sınırları içinde yürütülür.",
+      "articleRefs": [
+        "6"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Bakanlıklar ve diğer merkezi idare kuruluşlarının aktardığı kaynakla il özel idaresince yapılan yatırımlar belediye sınırları dışıyla sınırlı mıdır?",
+      "back": "Hayır. Bu yatırımlar, birinci fıkradaki görev alanı sınırlamasına tabi olmaksızın bütün il sınırları içinde yapılabilir.",
+      "explanation": "Aktarma işlemi ilgili bakanın onayıyla yapılır ve bu ödenekler tahsis amacı dışında kullanılamaz. İş, il özel idaresinin tabi olduğu usul ve esaslara göre sonuçlandırılır.",
+      "articleRefs": [
+        "6"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Emniyet hizmetlerinin gerektirdiği teçhizat alımıyla ilgili harcamalar hangi bütçeden karşılanabilir?",
+      "back": "İl özel idaresi bütçesinden karşılanabilir.",
+      "explanation": "Aynı hükme göre şu harcamalar da il özel idaresi bütçesinden karşılanabilir: kamu kurum ve kuruluşlarının Taşıt Kanunu kapsamındaki araçlarının alımı, işletilmesi, bakım ve onarımı; bürolarının ihtiyaçları; kamu konutlarının yapım, bakım, işletme ve onarımı.",
+      "articleRefs": [
+        "6"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Belediye sınırları dışındaki, sivil hava ulaşımına açık bir havaalanında açılacak işyerine ruhsatı il özel idaresi mi verir?",
+      "back": "Hayır. Sivil hava ulaşımına açık havaalanları bünyesindeki tüm tesislere, işyeri açma ve çalışma ruhsatı dahil her türlü ruhsatı Sivil Havacılık Genel Müdürlüğü verir.",
+      "explanation": "İl özel idaresi kural olarak belediye sınırları dışındaki gayri sıhhî müesseseler ile umuma açık istirahat ve eğlence yerlerine ruhsat verir ve bunları denetler. Havaalanı tesisleri bu yetkinin istisnasıdır. Usul ve esaslar, Sivil Havacılık Genel Müdürlüğünce hazırlanacak bir yönetmelikle düzenlenir.",
+      "articleRefs": [
+        "7"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "İl özel idaresinin hangi gelir ve malları haczedilemez?",
+      "back": "Proje karşılığı borçlanma yoluyla elde edilen gelirleri; vergi, resim ve harçları; şartlı bağışlar ve kamu hizmetlerinde fiilen kullanılan malları haczedilemez.",
+      "articleRefs": [
+        "7"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "İl özel idaresinin mallarına karşı suç işleyen kişi hangi suçu işlemiş sayılır?",
+      "back": "Devlet malına karşı suç işlemiş sayılır.",
+      "articleRefs": [
+        "7"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "İl özel idaresinin taşınmazlarına tanınan muafiyet hangi vergileri kapsamaz?",
+      "back": "Katma değer vergisi ile özel tüketim vergisini kapsamaz. Bunlar dışındaki her türlü vergi, resim, harç, katkı ve katılma payından muafiyet vardır.",
+      "articleRefs": [
+        "8"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "İl özel idaresinin gelir getiren taşınmazları da vergi, resim ve harçlardan muaf mıdır?",
+      "back": "Hayır. Muafiyet; kamu hizmetine ayrılan veya kamunun yararlanmasına açık, gelir getirmeyen taşınmaz mallar ile bunların inşa ve kullanımları içindir.",
+      "articleRefs": [
+        "8"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "İl genel meclisi, il özel idaresinin hangi organıdır?",
+      "back": "Karar organıdır.",
+      "articleRefs": [
+        "9"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "İl genel meclisinin üyeleri kimler tarafından seçilir?",
+      "back": "İldeki seçmenler tarafından, ilgili kanunda gösterilen esas ve usullere göre seçilir.",
+      "articleRefs": [
+        "9"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "İl özel idaresinde bütçe ve kesinhesabı kabul etmek hangi organın görevidir?",
+      "back": "İl genel meclisinin görevidir. Meclis ayrıca bütçede kurumsal kodlama yapılan birimler ile fonksiyonel sınıflandırmanın birinci düzeyleri arasında aktarma yapar.",
+      "articleRefs": [
+        "10"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "İl özel idaresi taşınmazının kaç yıldan fazla kiralanmasına il genel meclisi karar verir?",
+      "back": "Üç yıldan fazla kiralanmasına il genel meclisi karar verir.",
+      "explanation": "Taşınmaz mal alımına, satımına, trampa edilmesine, tahsisine, tahsis şeklinin değiştirilmesine ve tahsisli bir taşınmazın akar haline getirilmesine izin vermek de il genel meclisinin görevleri arasındadır.",
+      "articleRefs": [
+        "10"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "İl genel meclisi kararıyla il özel idaresi taşınmazları üzerinde kurulacak sınırlı aynî hakkın süresi en çok ne kadar olabilir?",
+      "back": "Yirmibeş yıl; sınırlı aynî hakkın süresi bunu geçemez.",
+      "articleRefs": [
+        "10"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "İl genel meclisi, seçim sonuçlarının ilânından sonra ilk kez ne zaman kendiliğinden toplanır?",
+      "back": "Seçim sonuçlarının ilânını izleyen beşinci gün kendiliğinden toplanır.",
+      "explanation": "Bu toplantıda meclis, üyeleri arasından ve gizli oyla şunları seçer: meclis başkanını, birinci ve ikinci başkan vekillerini, ikisi yedek olmak üzere dört kâtip üyeyi. Başkanlık divanı seçimi üç gün içinde tamamlanır.",
+      "articleRefs": [
+        "11"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "İl genel meclisinin seçim sonrası ilk toplantısında meclise en yaşlı üye mi başkanlık eder?",
+      "back": "Evet. İlk toplantıda meclise en yaşlı üye başkanlık eder. Meclis başkanı da bu toplantıda gizli oyla seçilir.",
+      "explanation": "Seçimden sonra meclise meclis başkanı başkanlık eder. O bulunmazsa birinci başkan vekili, o da bulunmazsa ikinci başkan vekili başkanlık eder.",
+      "articleRefs": [
+        "11"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "İlk toplantıda seçilen il genel meclisi başkanlık divanı ne kadar süre görev yapar?",
+      "back": "İlk iki yıl görev yapar. Bu sürenin ardından seçilen divan, yapılacak ilk mahallî idareler seçimlerine kadar görev yapar.",
+      "explanation": "Başkanlık divanında boşalma olursa, kalan süreyi tamamlamak üzere yenisi seçilir.",
+      "articleRefs": [
+        "11"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "İl genel meclisinde bütçe görüşmesine rastlayan toplantı en çok kaç gün sürebilir?",
+      "back": "En çok yirmi gün sürebilir. Diğer toplantıların süresi ise en çok beş gündür.",
+      "articleRefs": [
+        "12"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "İl genel meclisi her yıl üç ay tatil yapar mı?",
+      "back": "Hayır. Tatil bir aydır ve il genel meclisince belirlenir. Tatil dışında meclis, her ayın ilk haftası önceden belirlenen günde mutat toplantı yerinde toplanır.",
+      "articleRefs": [
+        "12"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "İl genel meclisi başkanı acil durumlarda meclisi bir yılda en çok kaç defa olağanüstü toplantıya çağırabilir?",
+      "back": "En çok üç defa çağırabilir ve her toplantı bir birleşimi geçemez.",
+      "explanation": "Olağanüstü toplantı çağrısı ve gündem, en az üç gün önceden meclis üyelerine yazılı olarak duyurulur; ayrıca mutat usullerle ilan edilir. Bu toplantılarda çağrıyı gerektiren konuların dışında hiçbir konu görüşülemez.",
+      "articleRefs": [
+        "12"
+      ]
+    }
+  ]
+}

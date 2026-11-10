@@ -1,0 +1,283 @@
+{
+  "deck": {
+    "topicId": "8b68257c-bd1e-4a44-bb49-830ee4d8e4c9",
+    "legislationSlug": "657-sayili-devlet-memurlari-kanunu",
+    "sourceLabel": "AI bilgi kartı — 657 Sayılı Devlet Memurları Kanunu md 60, 61, 61/A, 62–64, 67–69, 71, 72",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: resmî madde metni + çıkmış sorular; stil kapısı 1 açıklama yeniden yazıldı)"
+  },
+  "cards": [
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "İstisnai Devlet memurluklarına kimler atanabilir?",
+      "back": "48 inci maddede yazılı genel şartları taşıyan kimseler. Kuruluş kanunlarındaki veya Cumhurbaşkanlığı kararnamelerindeki özel hükümler saklıdır.",
+      "explanation": "Devlet sanatçılarında aranacak nitelikler ayrıca bir yönetmelikle belirtilir.",
+      "articleRefs": [
+        "60"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Dışişleri Bakanlığı Hukuk Müşavirliğine atanabilmek için hangi dil şartı aranır?",
+      "back": "Bir yabancı dili çok iyi bilmek şarttır. Ayrıca özel yönetmeliğinde belirtilecek diğer nitelikleri taşımak gerekir.",
+      "explanation": "Bu görev istisnai Devlet memurlukları arasındadır. Genel şartlara ek olarak dil ve yönetmelik nitelikleri aranır.",
+      "articleRefs": [
+        "60"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "İstisnai memurluklara atananlara bu Kanunun sınavlara ilişkin hükümleri uygulanır mı?",
+      "back": "Hayır. Bu Kanunun atanma, sınavlar, kademe ilerlemesi ve derece yükselmesi dışında kalan bütün hükümleri uygulanır.",
+      "explanation": "Kademe ilerlemesi ve derece yükselmesi hükümleri de kural olarak dışarıda kalır. Bunlar, kadronun derece aylığının ilk kademesi kazanılmış hak olarak elde edildiği tarihten itibaren uygulanmaya başlar.",
+      "articleRefs": [
+        "61"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "İstisnai bir memuriyet kadrosuna atanana kademe ilerlemesi ve derece yükselmesi hükümleri hangi tarihten itibaren uygulanır?",
+      "back": "Atandığı kadronun derece aylığının ilk kademesini kazanılmış hak olarak elde ettiği tarihten itibaren uygulanır.",
+      "explanation": "O tarihe kadar istisnai memura bu Kanunun atanma, sınavlar, kademe ilerlemesi ve derece yükselmesi dışında kalan hükümleri uygulanır.",
+      "articleRefs": [
+        "61"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Bakan müşavirleri kime bağlı olarak çalışır?",
+      "back": "Doğrudan bakana bağlı çalışırlar. Görevleri bakanın görev süresiyle sınırlıdır.",
+      "explanation": "Bakanlıklarda özel önem ve öncelik taşıyan konularda bakana danışmanlık yapmak üzere atanırlar. Bakanın görevi sona erince onların görevi de sona erer. Gerektiğinde bakanın görev süresi dolmadan da görevden alınabilirler.",
+      "articleRefs": [
+        "61/A"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Kamu görevlisi iken bakan müşavirliğine atanan biri görevden alınınca önceki kadrosuna en geç ne kadar sürede atanır?",
+      "back": "En geç bir ay içinde önceki kadro veya pozisyonuna atanır. Yönetici kadro, pozisyon ve görevleri bu kapsamın dışındadır.",
+      "explanation": "Uygun boş kadro veya pozisyon yoksa, bu kadro başka bir işleme gerek kalmaksızın ihdas edilmiş sayılır. Atama tamamlanıncaya kadar her türlü mali ve sosyal hak ve yardımı kurumunca ödenmeye devam eder.",
+      "articleRefs": [
+        "61/A"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Bakan müşaviri olarak atanmış olmak, kamudaki başka bir kadroya atanma açısından kazanılmış hak doğurur mu?",
+      "back": "Hayır, kazanılmış hak teşkil etmez. Açıktan atananlardan görevi sona erenlerin veya görevden alınanların memuriyetle ilişiği de kesilir.",
+      "explanation": "Bakan müşaviri kadrolarına bu Kanunun atanma, sınavlar, kademe ilerlemesi ve dereceye yükselmesine ilişkin hükümleriyle bağlı olmaksızın atama yapılabilir.",
+      "articleRefs": [
+        "61/A"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Başka yerdeki bir göreve atanan memur, atama emrinin tebliğinden itibaren kaç gün içinde o yere hareket etmelidir?",
+      "back": "15 gün içinde hareket etmelidir. Belli yol süresini izleyen iş günü içinde de işe başlamak zorundadır.",
+      "explanation": "Savaş ve olağanüstü hallerde bu süre Cumhurbaşkanı Kararı ile kısaltılabilir.",
+      "articleRefs": [
+        "62"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Aynı yerdeki bir göreve atanan memur, atama emrinin tebliğ edildiği gün işe başlamak zorunda mıdır?",
+      "back": "Hayır. Tebliğ gününü izleyen iş günü içinde işe başlamak zorundadır.",
+      "explanation": "Aynı yerdeki göreve atanan memur, atama emrinin tebliğ gününü izleyen iş günü içinde işe başlar. Memurun izinli ya da raporlu olması tebligata engel olmaz; süre izin ve rapor müddetinin bitmesinde başlar. Kanuni izin kullanırken ya da geçici görevdeyken başka göreve atananlarda süre, iznin veya geçici görevin bitiminde başlar.",
+      "articleRefs": [
+        "62"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Atama emri tebliğ edilen memur raporluysa işe başlama süreleri ne zaman başlar?",
+      "back": "Rapor müddetinin bitmesinde başlar. Memurun izinli veya raporlu olması tebligata engel değildir.",
+      "explanation": "Kanuni izin kullanırken ya da geçici bir görevi yaparken başka göreve atanan memurlarda da süreler, iznin veya geçici görevin bitiminde başlar.",
+      "articleRefs": [
+        "62"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "İlk defa atanan biri zorlayıcı sebep olmadan süresi içinde işe başlamazsa ne kadar süreyle Devlet memuru olarak istihdam edilemez?",
+      "back": "1 yıl süreyle istihdam edilemez. Ayrıca ataması iptal edilir.",
+      "explanation": "Bu sonuç, belge ile ispatı mümkün zorlayıcı sebep olmaksızın 62 nci maddedeki süre içinde işe başlamayan, ilk defa veya yeniden atanan kişiler için öngörülmüştür.",
+      "articleRefs": [
+        "63"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "İlk defa atanan birinin belgeyle ispatlanabilen zorlayıcı sebeple göreve başlamaması hangi süreyi aşarsa atama iptal edilir?",
+      "back": "İki ayı aşarsa atama işlemi, atamaya yetkili makamlarca iptal edilir.",
+      "explanation": "Kural bir göreve ilk defa veya yeniden atananlar için geçerlidir. Zorlayıcı sebep bulunmadığında ise süresinde başlamayanın ataması doğrudan iptal edilir.",
+      "articleRefs": [
+        "63"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Başka yere atanıp süresi içinde yeni görevine başlamayan memura kaç günlük ek süre verilebilir?",
+      "back": "10 günlük ek süre verilebilir; ayrılış ile başlayış tarihleri arasında aylık verilmemek şartıyla. Zorlayıcı sebep olmadan bu sürede de başlamayan memuriyetten çekilmiş sayılır.",
+      "explanation": "Ek süre, 62 nci maddedeki süre içinde hareket ettiği hâlde belli yol süresi sonunda yeni görevine başlamayan memur için öngörülmüştür.",
+      "articleRefs": [
+        "63"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Kademe ilerlemesi için memurun bulunduğu kademede en az ne kadar çalışmış olması gerekir?",
+      "back": "En az bir yıl çalışmış olması gerekir. Ayrıca bulunduğu derecede ilerleyebileceği bir kademenin bulunması şarttır.",
+      "explanation": "Kademe; derece içinde, görevin önemi veya sorumluluğu artmadan, memurun aylığındaki ilerlemedir. Şartları taşıyan memur, hak kazandığı tarihten geçerli olarak ve başkaca bir işleme gerek kalmaksızın bir ileri kademeye ilerlemiş sayılır.",
+      "articleRefs": [
+        "64"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Memura aylık derecesinin yükseltilmesinde dikkate alınacak bir kademe ilerlemesi verilmesi için son kaç yıl içinde disiplin cezası almamış olması gerekir?",
+      "back": "Son sekiz yıl içinde herhangi bir disiplin cezası almamış olması gerekir.",
+      "explanation": "Bu ilerleme, aylık derecelerinin yükseltilmesinde dikkate alınmak üzere uygulanır.",
+      "articleRefs": [
+        "64"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Kademe ilerlemesinin onay mercii olan atamaya yetkili amir bu yetkisini devredebilir mi?",
+      "back": "Evet. Onay mercileri, kademe ilerlemeleriyle ilgili yetkilerini devredebilir.",
+      "explanation": "Kademe ilerlemesine hak kazanamayan memurlar, kurumlarınca her ay alınacak toplu onaylarla belirlenir. İlerlemeye müstahak olmadığı sonradan tespit edilenin kademe ilerlemesi, ilerlemiş sayıldığı tarihten geçerli olmak üzere iptal edilir.",
+      "articleRefs": [
+        "64"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Diğer şartları taşıdığı hâlde üst derecede kadro olmadığı için derece yükselmesi yapamayan memurun kazanılmış hak aylığına ne olur?",
+      "back": "İşgal ettiği kadronun üst derecelerine yükseltilir. Ancak öğrenim durumu itibarıyla yükselebileceği dereceyi aşamaz.",
+      "articleRefs": [
+        "67"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Derece yükselmesi için memurun derecesi içinde en az kaç yıl bulunmuş olması gerekir?",
+      "back": "Derecesi içinde en az 3 yıl ve bu derecenin 3 üncü kademesinde 1 yıl bulunmuş olması gerekir.",
+      "explanation": "Ayrıca üst derecelerden boş bir kadronun bulunması ve kadronun tahsis edildiği görev için öngörülen niteliklerin elde edilmiş olması şarttır.",
+      "articleRefs": [
+        "68"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Ek göstergesi 5300 ve daha yukarıda olan 1 inci dereceli bir kadroya, süre kaydı aranmaksızın aşağı dereceden atanabilmek için en az kaç yıl hizmet gerekir?",
+      "back": "En az 12 yıl hizmet ve yükseköğrenim görmüş olmak gerekir. Dört yıldan az süreli yükseköğrenim görenler için bu süreye iki yıl eklenir.",
+      "explanation": "Ek göstergesi 5300'den az olan 1 inci ve 2 nci dereceli kadrolar için en az 10 yıl, 3 üncü ve 4 üncü dereceli kadrolar için en az 8 yıl hizmet aranır. Eğitim ve Öğretim Hizmetleri Sınıfı ile Sağlık Hizmetleri ve Yardımcı Sağlık Hizmetleri Sınıfı bu atama usulünün dışında tutulur.",
+      "articleRefs": [
+        "68"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Kurumlar, kariyerlerinden yararlanmak istedikleri hangi sınıflardaki memurları idari görev kadrolarına atayabilir?",
+      "back": "Eğitim ve Öğretim, Sağlık ve Yardımcı Sağlık ve Teknik Hizmetler Sınıflarına dahil memurları atayabilir.",
+      "explanation": "Atama, 2 - 4 üncü dereceler arasındaki idari görevlere ait kadrolara yapılır.",
+      "articleRefs": [
+        "69"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Kariyerinden yararlanılmak istenen Teknik Hizmetler Sınıfı memuru, kazanılmış hak derecesinin kaç altındaki dereceden ihdas edilmiş idari görev kadrosuna atanabilir?",
+      "back": "İki altındaki derecelerden tespit ve ihdas edilmiş kadrolara atanabilir. Bu kadrolar 2 - 4 üncü dereceler arasındaki idari görevlere aittir.",
+      "articleRefs": [
+        "69"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Kariyerinden yararlanılmak üzere idari görev kadrosuna atanan memurun aylığı hangi derece üzerinden ödenir?",
+      "back": "Kazanılmış hak derecesi üzerinden ödenir. Ek gösterge, zam ve tazminatlar farklıysa fazla olanı ödenir.",
+      "explanation": "Karşılaştırma, kazanılmış aylık derecesi ve kariyer hizmet sınıfı için tespit edilen ek gösterge, zam ve tazminatlar ile atanılan görevinkiler arasında yapılır.",
+      "articleRefs": [
+        "69"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Memurlar hangi yollarla sınıf değiştirebilir?",
+      "back": "Eşit dereceler arasında veya derece yükselmesi suretiyle sınıf değiştirebilir. Geçecekleri sınıf ve görev için belirtilen niteliklere sahip olmaları şarttır.",
+      "explanation": "Sınıfı değişen memurun eski sınıfının derecesinde elde ettiği kademelerde geçirdiği süreler, yeni sınıfındaki derecesinde dikkate alınır.",
+      "articleRefs": [
+        "71"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Memurun mesleğiyle ilgili sınıftan genel idare hizmetleri sınıfına atanmasında görev ve unvan eşitliği aranır mı?",
+      "back": "Hayır. Kurumlar bu atamayı görev ve unvan eşitliği gözetmeden, kazanılmış hak aylık dereceleriyle yapabilir; genel idare hizmetleri sınıfından mesleğiyle ilgili sınıfa geçişte de böyledir.",
+      "explanation": "Eski sınıfında memurluğa daha yüksek bir derece ve kademeden başlamış olan memurun yeni görevindeki ilk ilerleme süresi uzatılır. Bu süre tamamlanıncaya kadar ona sınıf değiştirdiği sırada bulunduğu derecede kademe ilerlemesi verilmez.",
+      "articleRefs": [
+        "71"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Kurumlarda yer değiştirme suretiyle atamalar hangi sistem içinde yapılır?",
+      "back": "İller gruplandırılarak tespit edilen bölgeler arasında, adil ve dengeli bir sistem içinde yapılır.",
+      "explanation": "İller; hizmetlerin gereklerine, özelliklerine ve Türkiye'nin ekonomik, sosyal, kültürel ve ulaşım şartları yönünden benzerlik ve yakınlık göstermelerine göre gruplandırılır.",
+      "articleRefs": [
+        "72"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Eşinin görev yeri nedeniyle izin verilen memurun kadrosu, memuriyet boyunca en çok kaç yıl saklı tutulabilir?",
+      "back": "4 yıl. Kadro eşin görevlendirme süresiyle sınırlı olarak saklı tutulur ve bu süre memuriyet boyunca 4 yılı hiçbir surette geçemez.",
+      "explanation": "İzin, eşin atandığı yerde memurun teşkilatı ya da niteliğine uygun münhal bir görev bulunmaması ve memurun talebi hâlinde verilir. Bu sürede kademe ilerlemesi, emeklilik ve diğer bütün hakları ile yükümlülükleri devam eder.",
+      "articleRefs": [
+        "72"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Kendisi, eşi ya da bakmakla yükümlü olduğu birinci derece kan hısmı engelli olan memurun hangi talebi için düzenleme yapılır?",
+      "back": "Engellilik durumundan kaynaklanan yer değiştirme talepleri için düzenleme yapılır.",
+      "explanation": "Engellilik durumu, ilgili mevzuatı uyarınca verilecek rapora göre belirlenir.",
+      "articleRefs": [
+        "72"
+      ]
+    }
+  ]
+}

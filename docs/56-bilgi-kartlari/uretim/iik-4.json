@@ -1,0 +1,286 @@
+{
+  "deck": {
+    "topicId": "4d185b8e-a24f-4f0e-8c29-d17e03eeec11",
+    "legislationSlug": "5442-il-idaresi-kanunu",
+    "sourceLabel": "AI bilgi kartı — 5442 İl İdaresi Kanunu md 43, 44, 46–70, Ek 1, Ek 2",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: resmî madde metni + çıkmış sorular)"
+  },
+  "cards": [
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Bucakta genel ve özel kolluk kuvvetleri kimin emri altındadır?",
+      "back": "Bucak müdürünün. Kolluk kuvvetleri müdürden aldıkları emri yerine getirmeye mecburdur.",
+      "explanation": "Bucağın güven ve düzeninin korunmasından bucak müdürü sorumludur. Suç işlenmesini önlemek için gereken tedbirleri de o alır ve uygular.",
+      "articleRefs": [
+        "43"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Silahlı ayaklanma gibi olağanüstü hallerde kaymakamla muhabere mümkün değilse bucak müdürü durumu kime bildirir?",
+      "back": "En yakın idare üstüne bildirir ve valiliğin haberdar edilmesini ister.",
+      "explanation": "Silahlı ayaklanma ya da kanun, tüzük ve bunlara müstenit emirlerin yürütülmesine karşı koyma gibi hallerde bucak müdürü lüzumlu tedbirleri alır ve kolluk kuvvetlerini harekete getirir. Bununla beraber kaymakamı haberdar eder ve yardım ister. Su baskını, kıtlık, yangın, deprem gibi afetlerde de keyfiyeti kaymakama bildirir ve gereken bütün tedbirleri alıp uygular.",
+      "articleRefs": [
+        "44"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Bucak müdürü her yıl bucağın bütün köy ve kasabalarını en az kaç kere dolaşır?",
+      "back": "En az birer kere. Dolaşırken halkın müracaat ve şikayetlerini dinler.",
+      "explanation": "Yetkileri içindeki işleri yapar, yapamadıklarını kaymakama bildirir.",
+      "articleRefs": [
+        "46"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "İlk defa bucak müdürü olabilmek için yaş şartı nedir?",
+      "back": "Yaşı 30'u geçmemiş olmak. Ayrıca bilfiil askerlik hizmetini bitirmiş olmak gerekir.",
+      "explanation": "Öbür şartlar şunlardır: en az lise veya bu dereceli okul mezunu olmak; vücutça sağlam olmak ve memleketin her ikliminde vazife görmeye, her vasıta ile dolaşmaya kabiliyetli olduğunun hastaneler sağlık kurullarınca tasdik edilmesi.",
+      "articleRefs": [
+        "48"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Bucak meclisinin tabii üyeleri kimlerdir?",
+      "back": "Bucağın sabit veya gezici doktoru (doktoru olmıyan yerlerde sağlık memurları), veterineri, ziraat muallimi ve sabit ve gezici başöğretmenleri.",
+      "explanation": "Seçilmiş üyeler ise bucağa bağlı belediye meclisleri ve köy ihtiyar kurullarınca seçilir. Her biri, kendi aralarından veya kendi köy ve kasabaları halkından olmak üzere hariçten birer üye seçer. Meclis bucak müdürünün başkanlığında toplanır.",
+      "articleRefs": [
+        "52"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Bucakta kasaba ve köy adedi 12'den az ise bucak meclisine seçilen üye sayısı en az kaç olur?",
+      "back": "12'den az olamaz. Bu durumda üyeler kasaba ve köylerce eşit sayıda seçilir.",
+      "explanation": "Olağan düzende bucağa bağlı her belediye meclisi ve köy ihtiyar kurulu birer üye seçer.",
+      "articleRefs": [
+        "52"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Bucak meclisine seçilen üyelerin görev süresi ne kadardır?",
+      "back": "Dört yıl. Yeniden seçilmeleri caizdir.",
+      "explanation": "Bucak meclis ve komisyonlarının başkanlık ve üyelikleri fahridir. Meclisin müzakere usulünü İçişleri Bakanlığı yönetmelikle tesbit eder.",
+      "articleRefs": [
+        "52"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Bucak meclisi hangi ayın başında toplanır?",
+      "back": "Ekim ayının başında. Meclis yılda bir defa toplanır.",
+      "explanation": "Toplantı süresini meclis kendisi belirtir.",
+      "articleRefs": [
+        "53"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Bucak komisyonu kaç üyeden oluşur?",
+      "back": "Dört üyeden. Bucak meclisi bu üyeleri bir yıl süreyle kendi üyeleri arasından seçer.",
+      "articleRefs": [
+        "54"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Bucak komisyonunun başkanını bucak meclisi kendi üyeleri arasından mı seçer?",
+      "back": "Hayır. Komisyonun başkanı bucak müdürüdür; meclis kendi üyeleri arasından komisyon üyelerini seçer.",
+      "explanation": "Bucak meclisi komisyonu bir yıl süreyle seçer. Komisyonun başkanlığı ise kanun gereği bucak müdürüne aittir.",
+      "articleRefs": [
+        "54"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Bucak komisyonu en az ne sıklıkla toplanır?",
+      "back": "En az ayda bir kere. Bucak meclisinin toplantı halinde olmadığı zamanlarda meclis görevini yapar.",
+      "articleRefs": [
+        "54"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "İl idare kurulu kimlerden oluşur?",
+      "back": "Valinin başkanlığında hukuk işleri müdürü, defterdar ile milli eğitim, bayındırlık, sağlık ve sosyal yardım, tarım ve veteriner müdürlerinden (kanun metnindeki unvanlar; bugün ilgili müdürlükler farklı adlarla örgütlenmiştir).",
+      "articleRefs": [
+        "57"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Vali, il idare kuruluna başkanlık etmek üzere kimi görevlendirebilir?",
+      "back": "Vali muavinini. Kurulun başkanı validir.",
+      "articleRefs": [
+        "57"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "İlçe idare kurulu kimlerden oluşur?",
+      "back": "Kaymakamın başkanlığında tahrirat katibi, malmüdürü, Hükümet hekimi, milli eğitim memuru, tarım memuru ve veterinerden (kanun metnindeki unvanlar; bugün ilgili birimler farklı adlarla örgütlenmiştir).",
+      "articleRefs": [
+        "58"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "İl veya ilçe idare kuruluna dahil olmayan bir idare şubesinin başkanı hangi işlerin görüşülmesine çağrılır?",
+      "back": "Kendi idaresine ait idari ve istişari işlerin görüşülmesine. Bu görüşmelere üye sıfatıyla çağrılır.",
+      "explanation": "Çağrılan şube başkanı o iş hakkında gerekli izahatı verir ve oya katılır.",
+      "articleRefs": [
+        "59"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "İdare kurulları hangi türlerde karar alır?",
+      "back": "İdari, istişari ve kazai kararlar alır.",
+      "articleRefs": [
+        "60"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "İdare kurullarında görüşme yapılabilmesi için mürettep üyenin yarısının hazır olması yeterli midir?",
+      "back": "Hayır. Kazai, idari ve istişari görüşmeler mürettep üyenin yarısından bir fazlası hazır olmadıkça yapılamaz.",
+      "explanation": "Teşkilat noksanı, tayin edilmemek ve vekili bulunmamak gibi sebeplerle üyelerden bir veya ikisi noksan olursa bunlar mürettep üye ve belli heyet nisabında hesaba katılmaz.",
+      "articleRefs": [
+        "61"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "İdare kurulunda oyların eşitliği halinde hangi taraf çokluk sayılır?",
+      "back": "Başkanın bulunduğu taraf.",
+      "articleRefs": [
+        "61"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "İl idare kurullarının idari kaza işlerinde kanun sözcüsü vazifesini kim görür?",
+      "back": "Hukuk işleri müdürleri.",
+      "articleRefs": [
+        "63"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Kazai görev için toplanan idare kurulunda, idari davaya esas olan kararı vermiş idare amiri oya katılabilir mi?",
+      "back": "Hayır. Bu idare amiri o toplantıda üye sıfatıyla bulunamaz ve oya katılamaz.",
+      "articleRefs": [
+        "64"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Toplumsal olaylar baş gösterdiğinde valinin kamu düzenini sağlamak için alıp usulüne göre ilan ettiği karar ve tedbirlere aykırı davrananlara hangi ceza verilir?",
+      "back": "Üç aydan bir yıla kadar hapis cezası.",
+      "explanation": "Bu hüküm, kamu düzenini ve güvenliğini ya da kişilerin can ve mal emniyetini tehlikeye düşürecek toplumsal olayların baş gösterdiği hâli kapsar.",
+      "articleRefs": [
+        "66"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "İl genel kurulu, idare kurulları veya en büyük mülkiye amirlerinin usulen tebliğ ya da ilan edilen karar ve tedbirlerine riayet etmeyenleri kim cezalandırır?",
+      "back": "Mahallî mülkî amir. Ceza, Kabahatler Kanununun 32 nci maddesi hükmü uyarınca verilir.",
+      "explanation": "Kararların tatbik ve icrasına muhalefet edenler ve müşkülat gösterenler de bu kapsamdadır. Toplumsal olaylarda valinin ilan ettiği tedbirlere aykırılık için ise ayrıca hapis cezası öngörülmüştür.",
+      "articleRefs": [
+        "66"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "5442 sayılı İl İdaresi Kanunu hangi tarihte yürürlüğe girmiştir?",
+      "back": "31 Temmuz 1949 tarihinde.",
+      "articleRefs": [
+        "69"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Sivil hava meydanları, limanlar ve sınır kapılarında hizmet veren kuruluşlar kime karşı sorumludur?",
+      "back": "Vali tarafından görevlendirilen mülki idare amirine.",
+      "explanation": "Vali, İçişleri Bakanlığının uygun göreceği bu yerlerde mülki idare amiri görevlendirir. Yetkilerinin tamamını veya bir kısmını ona devredebilir.",
+      "articleRefs": [
+        "Ek 1"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Görevli mülki idare amiri, ivedi durumlarda arama emrini sözlü verebilir mi?",
+      "back": "Evet. İvedi durumlarda sözlü emir derhal yerine getirilir ve en kısa zamanda yazılı olarak teyit edilir.",
+      "explanation": "Kural olarak arama emri, aramanın kimler tarafından yapılacağı kaydını da taşıyan yazılı bir emirdir. Kaçakçılığın Men ve Takibine Dair Kanun ile Gümrük Kanununun arama ile ilgili hükümleri saklıdır.",
+      "articleRefs": [
+        "Ek 1"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Görevli mülki idare amiri, kuruluş personeline uyarma ve kınama dışındaki disiplin cezalarını da verebilir mi?",
+      "back": "Hayır. Uyarma ve kınama cezası verebilir; diğer cezalar için yalnızca öneride bulunabilir.",
+      "explanation": "Personel hakkında değerlendirme raporu düzenleyebilir, disiplin kovuşturması yaptırabilir ve mazeret izni verebilir. Yıllık izin için ise görüş bildirir.",
+      "articleRefs": [
+        "Ek 1"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Ek 2 uyarınca elde edilen telefon abone ve konum bilgileri başka amaçlarla kullanılabilir mi?",
+      "back": "Hayır. Bu madde uyarınca elde edilen veriler başka amaçlar için kullanılamaz.",
+      "explanation": "Afet ve acil durum hallerinde bilgiler, Bilgi Teknolojileri ve İletişim Kurumu tarafından gecikmeksizin karşılanır. Bu bilgiler afetten veya acil durumdan etkilenen kişilerle sınırlıdır ve Afet ve Acil Durum Yönetimi Başkanlığının ya da ilgili valiliğin ihtiyacı için verilir.",
+      "articleRefs": [
+        "Ek 2"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "112 acil çağrı merkezlerine yapılan çağrılarda telefon abone ve konum bilgileri neyle sınırlı olarak karşılanır?",
+      "back": "Arama zamanıyla. Bilgiler, arayan kişilere ulaşılması amacıyla 112 acil çağrı merkezlerinin veya ilgili valiliğin ihtiyacı için verilir.",
+      "explanation": "Bilgileri Bilgi Teknolojileri ve İletişim Kurumu gecikmeksizin karşılar. İlgili Bakanlık ile bu Kurumun birlikte belirleyeceği usul ve esaslar dâhilinde bir erişim sistemi kurulabilir.",
+      "articleRefs": [
+        "Ek 2"
+      ]
+    }
+  ]
+}

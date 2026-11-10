@@ -1,0 +1,293 @@
+{
+  "deck": {
+    "topicId": "c8f4a045-6e4c-4fa6-b3a6-557cd0032d20",
+    "legislationSlug": "6085-sayistay-kanunu",
+    "sourceLabel": "AI bilgi kartı — 6085 Sayıştay Kanunu md 61–84, Ek 1",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: resmî madde metni + çıkmış sorular)"
+  },
+  "cards": [
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Sayıştayın muhasebe hizmetlerini kim yerine getirir?",
+      "back": "Türkiye Büyük Millet Meclisi Başkanı tarafından atanan muhasebe yetkilisi.",
+      "articleRefs": [
+        "62"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Çeşitli kanunların Cumhurbaşkanı kararına bağladığı işlerden Sayıştay hizmetleriyle ilgili olanlar Cumhurbaşkanı kararıyla mı yürütülür?",
+      "back": "Hayır. Bu işler Sayıştay Genel Kurulunun idari işler niteliğindeki kararlarıyla yürütülür.",
+      "explanation": "Hüküm, Sayıştay hizmetlerine ilişkin bu tür işlerde kararı Sayıştayın kendi Genel Kuruluna bırakır.",
+      "articleRefs": [
+        "62"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Aylık, ödenek ve teminatlar bakımından Sayıştay Başkanı hangi makama ilişkin hükümlere tabidir?",
+      "back": "Yargıtay Birinci Başkanına ilişkin hükümlere tabidir.",
+      "explanation": "Aynı sırayla Sayıştay daire başkanları Yargıtay daire başkanlarına, üyeler de Yargıtay üyelerine ilişkin hükümlere tabidir. Diğer meslek mensupları kıdem, sınıf ve derecelerine göre hakim ve savcılara ilişkin hükümlere tabidir. Denetçi yardımcıları, hakim ve savcı yardımcıları gibi aylık ve ek ödeme alır.",
+      "articleRefs": [
+        "63"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Üç sicil döneminde iki olumlu sicil alan Sayıştay denetçisi yükselebilir mi?",
+      "back": "Evet. Asıl şart üst üste iki olumlu sicildir, ama üç sicil döneminde iki olumlu sicil alan da yükselebilir. İki yıllık yükselme süresini doldurmuş olmak da gerekir.",
+      "explanation": "Yükselmede sicile göre belirlenen yeterlik esastır. Atanma ve görevde yükselme, Meslek Mensupları Yükseltme ve Disiplin Kurulu kararı ve Sayıştay Başkanının onayıyla olur.",
+      "articleRefs": [
+        "63"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Boşalan üst kadroya atanmada aynı derecede yeterli birden fazla Sayıştay denetçisi varsa hangi tercih sebeplerine bakılır?",
+      "back": "Disiplin cezası almamış bulunmak, mesleki inceleme ve yayınlarda bulunmuş olmak ve kıdem.",
+      "explanation": "Tercih sebepleri yoksa yapılacak sınavda üstün başarı gösterenler yükseltilir.",
+      "articleRefs": [
+        "63"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Sayıştay Genel Kurulu, kurulları ve daireleri her yıl hangi tarihler arasında çalışmaya ara verir?",
+      "back": "Yirmi temmuzdan otuz bir ağustosa kadar ara verirler. Bu sürede sıra ile bir daire çalışmaya devam eder.",
+      "explanation": "Çalışmaya devam eden daire, Rapor Değerlendirme Kurulu ile Sayıştaya gelecek ivedi işlere bakar ve gereken kararları verir. Sayıştay Başkanı bu süre içinde daire ve kurulları toplantıya çağırabilir. Bu sürede görevli olan daire başkanları ve üyeler, takip eden yılın sonuna kadar aynı müddetle izin kullanabilir.",
+      "articleRefs": [
+        "64"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Daire başkanı ya da üye hakkındaki istifaya veya emekliliğe davet kararı Sayıştay Genel Kurulunda hangi yeter sayılarla görüşülür?",
+      "back": "Genel Kurul üye tamsayısının üçte iki çoğunluğuyla toplanır. Kararı katılanların üçte iki çoğunluğuyla verir.",
+      "explanation": "Olay en geç bir hafta içinde bir defa da Genel Kurulda görüşülür. Süre kanuni tatile ya da çalışmaya ara verme süresine rastlarsa tatilin bitiminden başlar. Genel Kurul, Yüksek Disiplin Kurulu kararını onaylar ya da ilgilinin uyarılmasına karar verir. Hakkında kovuşturma yapılan üye toplantıya katılamaz.",
+      "articleRefs": [
+        "65"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Yüksek Disiplin Kurulu, isnadı sabit gördüğü daire başkanının istifa etmiş sayılmasına doğrudan karar verebilir mi?",
+      "back": "Hayır. Kurul ya uyarmaya ya da istifa etmeye yahut emekliliğini istemeye davete karar verir. Davete tebliğden itibaren bir ay içinde uymayan istifa etmiş sayılır.",
+      "explanation": "Kurul isnadı sabit görmezse dosyanın işlemden kaldırılmasına karar verir. Savunma ve ek savunma için yedi günden az olmamak üzere süre verilir. Davete uyma süresi içinde ilgili izinli kabul edilir.",
+      "articleRefs": [
+        "65"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Görevi sebebiyle suç işlediği iddia edilen Sayıştay üyesi hakkında ön incelemeyi yapan heyet kimlerden oluşur?",
+      "back": "Sayıştay Genel Kurulunca seçilen üç daire başkanı ve iki üyeden oluşur.",
+      "explanation": "Heyetin raporu ve diğer evrak, soruşturma izni verilip verilmemesine esas alınmak üzere Daireler Kuruluna verilir. Soruşturma kurulunun seçimine ilgililer katılamaz.",
+      "articleRefs": [
+        "66"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Daireler Kurulunun soruşturma izni verilmemesine ilişkin kararı kesin midir?",
+      "back": "Hayır. Bu karar kendiliğinden Genel Kurulca incelenir. Kesin olan, Genel Kurulun soruşturma izni verilmemesine ilişkin kararıdır.",
+      "explanation": "Daireler Kurulunun katılanların üçte iki çoğunluğuyla verdiği soruşturma izni kararı ise itiraz üzerine Genel Kurulca incelenir. İtiraz süresi kararın tebliğinden itibaren onbeş gündür.",
+      "articleRefs": [
+        "66"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Sayıştay Başkanı hakkında görev suçundan soruşturma izni verilmesine ilişkin kesin karardan sonra dosya nereye gönderilir?",
+      "back": "Dosya Anayasa Mahkemesine tevdi olunur.",
+      "explanation": "Soruşturma izni verilmesine ilişkin karar katılanların üçte iki çoğunluğuyla alınır. Görevle ilgisi bulunmayan şahsi suçların kovuşturmasında Yargıtay üyelerinin şahsi suçlarına ilişkin hükümler uygulanır.",
+      "articleRefs": [
+        "66"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Daire başkanları ve üyeler dışındaki Sayıştay meslek mensupları hakkında disiplin soruşturmasını kim yapar?",
+      "back": "Meslek Mensupları Yükseltme ve Disiplin Kurulunun kendi dışından seçtiği bir üyenin başkanlığında kurulan heyet yapar. Heyette bir uzman denetçi ile bir başdenetçi bulunur.",
+      "explanation": "Durumu Sayıştay Başkanı inceler ve Kurula bildirir. Kovuşturmaya lüzum olup olmadığını Kurul takdir eder. Kurul dosyayı gizli olarak inceler; isnat sabit görülmezse dosya işlemden kaldırılır.",
+      "articleRefs": [
+        "67"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Daire başkanları ve üyeler dışındaki Sayıştay meslek mensuplarına hangi kanunun disiplin cezası hükümleri uygulanır?",
+      "back": "657 sayılı Kanunun ilgili hükümleri uygulanır.",
+      "articleRefs": [
+        "68"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Daire başkanları ve üyeler dışındaki bir Sayıştay meslek mensubu hakkında verilen soruşturma izni kararına itiraz süresi ne kadardır?",
+      "back": "Tebliğ tarihinden itibaren onbeş gündür. İtiraz halinde dosya bir defa da Yüksek Disiplin Kurulunda incelenir.",
+      "explanation": "Ön incelemeyi, Sayıştay Başkanının görevlendirdiği bir üyenin başkanlığında bir uzman denetçi ile bir başdenetçiden oluşan kurul yapar. İzin kararını Meslek Mensupları Yükseltme ve Disiplin Kurulu verir. Yüksek Disiplin Kurulu da izin verirse dosya Yargıtaya gönderilir; yargılama Yargıtayın görevli ceza dairesinde yapılır.",
+      "articleRefs": [
+        "69"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Grup başkanlığı kurulan illerde Sayıştay meslek mensuplarının kişisel suçlarında soruşturma yetkisi kimdedir?",
+      "back": "Grup başkanlığının kurulduğu ilin Cumhuriyet başsavcısındadır. Kovuşturma yetkisi o ilin ağır ceza mahkemesine aittir.",
+      "explanation": "Diğer hallerde bu yetki Ankara Cumhuriyet Başsavcısı ile Ağır Ceza Mahkemesine aittir. Hüküm, Sayıştay Başkanı, daire başkanları ve üyeler dışındaki meslek mensuplarına ilişkindir.",
+      "articleRefs": [
+        "69"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Sayıştay daire başkanları ve üyeleri kendileri istemedikçe hangi yaştan önce emekliye sevk edilemez?",
+      "back": "65 yaşından önce emekliye sevk edilemezler. Disiplin kovuşturmasına ilişkin md 65 hükmü saklıdır.",
+      "explanation": "Sayıştay Başkanı, daire başkanları ve üyeler azlolunamaz.",
+      "articleRefs": [
+        "70"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Memuriyetten çıkarılmayı gerektiren suçtan kesin hüküm giyen Sayıştay üyesinin görevi Genel Kurul kararıyla mı sona erer?",
+      "back": "Hayır. Görevi kendiliğinden sona erer. Sayıştay Genel Kurulu kararı, görevini sağlık bakımından yapamayacağı anlaşılan üye için aranır.",
+      "explanation": "Sağlık sebebinde durumun tam teşekküllü resmi hastane sağlık kurulu raporuyla anlaşılması gerekir.",
+      "articleRefs": [
+        "70"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Sağlık bakımından görevini yapamayacağı anlaşılan Sayıştay denetçisinin görevine nasıl son verilir?",
+      "back": "Meslek Mensupları Yükseltme ve Disiplin Kurulu kararı ve Sayıştay Başkanının onayıyla son verilir.",
+      "explanation": "Durumun tam teşekküllü resmi hastane sağlık kurulu raporuyla anlaşılması gerekir. Hakkında disiplin ya da ceza kovuşturması kararı verilen meslek mensubu da Kurul kararıyla, geçici bir süre için Sayıştay Başkanı tarafından görevden uzaklaştırılabilir.",
+      "articleRefs": [
+        "71"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Birinci ve ikinci derece siciller arasında aykırılık olduğunda geçerli sicili veren komisyon kimlerden oluşur?",
+      "back": "Genel Kurulca her yıl için seçilen bir daire başkanı ile dört üyeden oluşur.",
+      "explanation": "Sicil her takvim yılı sonunda düzenlenir ve meslek mensubunun yükselmeye yeterli olup olmadığını belirtir.",
+      "articleRefs": [
+        "72"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Sayıştay meslek mensubunun sicil notunun yüzde kaçı rapor değerlendirme puanından oluşur?",
+      "back": "Yüzde yirmisi bu puandan oluşur. Puan, raporun hükme bağlanması ya da görüşülmesi sonrasında daire ve kurulca verilir.",
+      "explanation": "Başarısız ya da yükselmeye yeterli bulunmayan sicil alanlara durum bildirilir. Bildirimi Sayıştay Başkanı, izleyen yılın mart ayı sonuna kadar gizli bir yazıyla yapar.",
+      "articleRefs": [
+        "72"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "İki defa üst üste olumsuz sicil alan Sayıştay meslek mensubu emekliliğe ya da istifaya davet edilir mi?",
+      "back": "Hayır. İki defa üst üste olumsuz sicilde sicil amirleri değiştirilir. Davet, üç defa üst üste olumsuz sicilde yapılır.",
+      "explanation": "Davet, Meslek Mensupları Yükseltme ve Disiplin Kurulu kararı ve Sayıştay Başkanının onayı üzerine bildirilir. Bir ay içinde davete uymayan istifa etmiş sayılır.",
+      "articleRefs": [
+        "72"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Sayıştay mensubu üniversitede hangi şartla ders verebilir?",
+      "back": "Başkanın onayıyla ve mesleki konularda ders verebilir.",
+      "explanation": "Özel bir kanun olmadıkça Sayıştay mensupları paralı ya da parasız başka görev alamaz ve bilirkişilik yapamaz. İstisnalar arasında kooperatifler ve hayır kurumlarının yönetim ve denetim kurullarında görev almak ile ilmî ve mesleki araştırma ve yayınlarda bulunmak da vardır. Aykırı hareket edenlerin durumu disiplin kurullarınca karara bağlanır.",
+      "articleRefs": [
+        "73"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Kamu idaresinde görev yapıp Sayıştaya dönen meslek mensubu, görev yaptığı idarenin denetiminde ne kadar süre görevlendirilemez?",
+      "back": "Üç yıl süreyle görevlendirilemez.",
+      "explanation": "Sayıştay Başkanının izniyle kamu idaresine atanan meslek mensubu, dönmek isterse Meslek Mensupları Yükseltme ve Disiplin Kurulu kararı ve Başkanın onayıyla yeniden atanır. Kurum dışında geçen süresi, özel kanun hükümleri saklı kalmak üzere meslekte geçmiş gibi değerlendirilir.",
+      "articleRefs": [
+        "73"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Yabancı memlekette ya da uluslararası kuruluşta çalışmak üzere görevlendirilen Sayıştay meslek mensubu en çok ne kadar süreyle yurt dışına gönderilebilir?",
+      "back": "Beş yılı aşmamak üzere gönderilebilir. Süre gerekirse en çok bir katına kadar uzatılabilir.",
+      "explanation": "Araştırma, kurs, öğrenim ya da burs için gönderilenlerde üst sınır iki yıldır. Yurt dışında altı aydan fazla kalanlar, dönüp mesleğe başladıktan sonra iki kat süre mecburi hizmet yapar.",
+      "articleRefs": [
+        "74"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Genel bütçe kapsamındaki kamu idarelerinin hesap ve işlemlerine ilişkin belgeler nerede saklanır?",
+      "back": "İlgili idarenin muhasebe biriminde saklanır.",
+      "explanation": "Diğer idarelerin hesap ve işlemlerine ilişkin belge ve bilgileri ilgili idareler saklar. Gönderme, iade, saklama ve yok etme esasları Sayıştayca hazırlanacak yönetmelikle belirlenir.",
+      "articleRefs": [
+        "77"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Denetimde suç teşkil eden bir fiile rastlanırsa Sayıştay Başkanının görevlendirdiği daire incelemeyi kaç gün içinde yapar?",
+      "back": "Onbeş gün içinde yapar. İlk deliller kamu davasını gerektirecek nitelikteyse dosya Sayıştay Başsavcılığına verilir.",
+      "explanation": "Denetçi delilleri derhal tespit eder ve durumu Sayıştay Başkanlığına bildirir. Dosya, sorumluların bağlı olduğu kamu idaresine ya da suçun niteliğine göre doğrudan Cumhuriyet savcılığına gönderilmek üzere Başsavcılığa verilir. Adli, idari ve askeri mahkemelerin hükümleri Sayıştayın denetim yapmasına ve hükme bağlamasına engel değildir.",
+      "articleRefs": [
+        "78"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Sayıştayın Türkiye Cumhuriyet Merkez Bankası üzerindeki denetim yetkisi hangi hesap ve işlemlerle sınırlıdır?",
+      "back": "1211 sayılı Kanunun 4 üncü maddesinde sayılan temel görev ve yetkiler dışında kalan faaliyetlerle ilgili hesap ve işlemlerle sınırlıdır.",
+      "articleRefs": [
+        "81"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Sayıştay kadro cetvelindeki boş kadrolarda unvan değişikliği nasıl yapılır?",
+      "back": "Sayıştay Genel Kurulu kararıyla yapılır.",
+      "explanation": "Sayıştay meslek mensupları ile Başsavcı, savcı ve iç denetçilerin kadroları Kanuna ekli (I) sayılı Kadro Cetvelinde düzenlenir.",
+      "articleRefs": [
+        "Ek 1"
+      ]
+    }
+  ]
+}

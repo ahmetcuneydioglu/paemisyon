@@ -1,0 +1,305 @@
+{
+  "deck": {
+    "topicId": "8b68257c-bd1e-4a44-bb49-830ee4d8e4c9",
+    "legislationSlug": "657-sayili-devlet-memurlari-kanunu",
+    "sourceLabel": "AI bilgi kartı — 657 Sayılı Devlet Memurları Kanunu md 1–21, 23–25, 27",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: resmî madde metni + çıkmış sorular)"
+  },
+  "cards": [
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Emniyet Teşkilatı mensupları hangi hükümlere tabidir?",
+      "back": "Özel kanunları hükümlerine tabidirler.",
+      "explanation": "Aynı fıkrada özel kanunlarına tabi olanlar arasında Anayasa Mahkemesi üye ve yedek üyeleri ile raportörleri, Sayıştay savcı ve yardımcıları, Cumhurbaşkanlığı Senfoni Orkestrası üyeleri, subay, astsubay, uzman erbaş, sözleşmeli erbaş ve erler de sayılır.",
+      "articleRefs": [
+        "1"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Belediyelerin kurdukları birliklerde çalışan memurlar özel kanunlarına tabi midir?",
+      "back": "Hayır. Devlet Memurları Kanunu, il özel idareleri ve belediyelerin kurdukları birlikler ile bunlara bağlı döner sermayeli kuruluşlarda çalışan memurlar hakkında uygulanır.",
+      "explanation": "Özel kanunlarına tabi olanlar ayrı bir fıkrada tek tek sayılır. Belediye opera ve tiyatroları ile şehir ve belediye konservatuvar ve orkestralarının sanatkâr memurları bunlar arasındadır.",
+      "articleRefs": [
+        "1"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Devlet Memurları Kanununda öngörülen yönetmelikleri kim yürürlüğe koyar?",
+      "back": "Cumhurbaşkanı. Kanunda öngörülen yönetmelikler Cumhurbaşkanınca yürürlüğe konulur.",
+      "explanation": "Aynı madde kanunun düzenlediği konuları da sayar: hizmet şartları, nitelikler, atanma ve yetiştirilme, ilerleme ve yükselme, ödev, hak, yüküm ve sorumluluklar, aylık ve ödenekler ile diğer özlük işleri.",
+      "articleRefs": [
+        "2"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Kamu hizmeti görevlerini ve bu görevlerdeki memurları, görevlerin gerektirdiği niteliklere ve mesleklere göre sınıflara ayırmak hangi temel ilkedir?",
+      "back": "Sınıflandırma ilkesidir.",
+      "explanation": "Kanunun temel ilkeleri sınıflandırma, kariyer ve liyakattir.",
+      "articleRefs": [
+        "3"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Göreve girmeyi, sınıflar içinde ilerleme ve yükselmeyi ve görevin sona erdirilmesini hangi sisteme dayandırmak temel ilkedir?",
+      "back": "Liyakat sistemine dayandırmak temel ilkedir. Bu ilke, sistemin eşit imkânlarla uygulanmasında memurları güvenliğe sahip kılmayı da kapsar.",
+      "articleRefs": [
+        "3"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Memurlara sınıfları içinde en yüksek derecelere kadar ilerleme imkânı sağlamak, liyakat ilkesinin tanımı mıdır?",
+      "back": "Hayır, bu kariyer ilkesidir. Kariyer, hizmet için lüzumlu bilgilere ve yetişme şartlarına uygun şekilde sınıf içinde en yüksek derecelere kadar ilerleme imkânıdır.",
+      "explanation": "Liyakat ilkesi ise göreve girmeyi, ilerleme ve yükselmeyi ve görevin sona erdirilmesini liyakat sistemine dayandırır.",
+      "articleRefs": [
+        "3"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Devlet ve diğer kamu tüzel kişiliklerince genel idare esaslarına göre yürütülen asli ve sürekli kamu hizmetlerini kim yerine getirir?",
+      "back": "Memur. Bu hizmetleri ifa ile görevlendirilenler, mevcut kuruluş biçimine bakılmaksızın memur sayılır.",
+      "explanation": "Bu tanım dışındaki kurumlarda genel politika tespiti, araştırma, planlama, programlama, yönetim ve denetim gibi işlerde görevli ve yetkili olanlar da memur sayılır.",
+      "articleRefs": [
+        "4"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "İşin geçici olması şartı aranmadan istihdam edilen sözleşmeli personel, aynı kurumda üç yılı tamamlayınca kaç gün içinde talepte bulunursa memur kadrosuna atanır?",
+      "back": "Otuz gün içinde. Süre, üç yıllık çalışma süresinin bitiminden itibaren işler; talep edenler bulundukları yerde aynı unvanlı memur kadrolarına atanır.",
+      "explanation": "Bu personel, can güvenliği ve sağlık sebepleri hariç üç yıl süreyle başka bir yere atanamaz. Memur kadrosuna atananlar aynı yerde en az bir yıl daha görev yapar ve kendilerine iş sonu tazminatı ödenmez.",
+      "articleRefs": [
+        "4"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Millî Eğitim Bakanlığında öğretmenler sözleşmeyle istihdam edilebilir mi?",
+      "back": "Evet, zorunlu hâllerde edilebilir. Norm kadro sonucu ortaya çıkan öğretmen ihtiyacı kadrolu öğretmen istihdamıyla kapatılamıyorsa sözleşmeyle istihdam caizdir.",
+      "explanation": "Zorunlu hâllerde sözleşmeyle istihdamı caiz olanlar arasında yabancı uyruklular, hizmetine kısmi zamanlı ihtiyaç duyulanlar, Devlet Konservatuvarları sanatçı öğretim üyeleri, İstanbul Belediyesi Konservatuvarı sanatçıları ile dış kuruluşlarda ve yurtdışı teşkilatlarında belirli bazı hizmetlerde çalıştırılacak personel de vardır.",
+      "articleRefs": [
+        "4"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Devlet memuru, asli Devlet memurluğuna atandıktan sonra en geç ne kadar süre içinde yemin eder?",
+      "back": "En geç bir ay içinde. Yemin, kurumunca düzenlenen merasimle yetkili amirlerin huzurunda yapılır.",
+      "explanation": "Yeminle memur, Anayasaya ve kanunlara sadakatla bağlı kalma ve kanunları milletin hizmetinde sadakatla uygulama yükümlülüğünü belirtir.",
+      "articleRefs": [
+        "6"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Memurun yemin ettikten sonra imzaladığı Yemin Belgesi nereye konulur?",
+      "back": "Özlük dosyasına konulur. Memur bu belgeyi imzalayarak göreve başlar.",
+      "articleRefs": [
+        "6"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Devlet memurları siyasi partiye üye olabilir mi?",
+      "back": "Hayır. Devlet memurları siyasi partiye üye olamaz. Herhangi bir siyasi parti, kişi veya zümrenin yararını ya da zararını hedef tutan bir davranışta da bulunamazlar.",
+      "explanation": "Memurlar hiçbir şekilde siyasi ve ideolojik amaçlı beyanda ve eylemde bulunamaz, bu eylemlere de katılamaz.",
+      "articleRefs": [
+        "7"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Devlet memurları görevlerini yerine getirirken hangi sebeplerle ayırım yapamaz?",
+      "back": "Dil, ırk, cinsiyet, siyasi düşünce, felsefi inanç, din ve mezhep gibi sebeplerle ayırım yapamaz.",
+      "explanation": "Memurlar her durumda Devletin menfaatlerini korumak mecburiyetindedir. Memleketin bağımsızlığını ve bütünlüğünü bozan, Türkiye Cumhuriyetinin güvenliğini tehlikeye düşüren faaliyette bulunamazlar. Aynı nitelikteki hareket, gruplaşma, teşekkül veya derneğe katılamaz, bunlara yardım edemezler.",
+      "articleRefs": [
+        "7"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Devlet memurlarının çalışmasında esas olan nedir?",
+      "back": "İşbirliği. Memurların işbirliği içinde çalışmaları esastır.",
+      "explanation": "Aynı madde, memurların resmî sıfatlarının gerektirdiği itibar ve güvene lâyık olduklarını hizmet içindeki ve dışındaki davranışlarıyla göstermelerini de zorunlu tutar.",
+      "articleRefs": [
+        "8"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Amir, maiyetindeki memurdan neleri isteyemez veya kabul edemez?",
+      "back": "Hususi bir menfaat temin edecek talepte bulunamaz, hediyesini kabul edemez ve borç alamaz.",
+      "explanation": "Amir maiyetindeki memurlara hakkaniyet ve eşitlik içinde davranır ve amirlik yetkisini kanun ve diğer mevzuatta belirtilen esaslar içinde kullanır. Maiyetindeki memurları yetiştirmekten, hal ve hareketlerini takip ve kontrol etmekten de görevli ve sorumludur.",
+      "articleRefs": [
+        "10"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Amir, maiyetindeki memura Cumhurbaşkanlığı kararnamesine aykırı emir verebilir mi?",
+      "back": "Hayır. Amir, maiyetindeki memurlara kanunlara ve Cumhurbaşkanlığı kararnamelerine aykırı emir veremez.",
+      "explanation": "Amirlik yetkisi, kanun ve diğer mevzuatta belirtilen esaslar içinde kullanılır.",
+      "articleRefs": [
+        "10"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Memur, mevzuata aykırı gördüğü ama konusu suç teşkil etmeyen emri amirine bildirdi; amir emrini yazıyla yenilerse ne olur?",
+      "back": "Memur emri yapmaya mecburdur. Emrin yerine getirilmesinden doğacak sorumluluk emri verene aittir.",
+      "explanation": "Memur, Anayasa, kanun, Cumhurbaşkanlığı kararnamesi ve yönetmelik hükümlerine aykırı gördüğü emri önce yerine getirmez ve aykırılığı emri verene bildirir. Acele hâllerde kamu düzeninin ve kamu güvenliğinin korunması için kanunla gösterilen istisnalar saklıdır.",
+      "articleRefs": [
+        "11"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Konusu suç teşkil eden emri amir yazıyla yenilerse memur bu emri yerine getirebilir mi?",
+      "back": "Hayır. Konusu suç teşkil eden emir hiçbir suretle yerine getirilmez; yerine getiren kimse sorumluluktan kurtulamaz.",
+      "explanation": "Yazılı yenilemeyle sorumluluğun emri verene geçmesi, yalnız mevzuata aykırı görülen emirler için geçerlidir. Suç teşkil eden emirde bu yol işlemez.",
+      "articleRefs": [
+        "11"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Memurun kasıt, kusur, ihmal veya tedbirsizliğiyle idareye verdiği zarar hangi bedel üzerinden ödenir?",
+      "back": "Rayiç bedeli üzerinden ödenir. Zararın ilgili memur tarafından ödenmesi esastır.",
+      "explanation": "Memurlar görevlerini dikkat ve itina ile yerine getirmek zorundadır. Kendilerine teslim edilen Devlet malını korumak ve her an hizmete hazır bulundurmak için gerekli tedbirleri almakla da yükümlüdürler. Zararların ödettirilmesinde genel hükümler uygulanır.",
+      "articleRefs": [
+        "12"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Memur kabul ederse, hangi tutarı geçmeyen zararlar disiplin amiri veya yetkili disiplin kurulu kararına göre ödenir?",
+      "back": "Fiilin meydana geldiği tarihte en alt derecenin birinci kademesindeki memurun brüt aylığının yarısını geçmeyen zararlar.",
+      "explanation": "Bu yol memurun kabulüne bağlıdır. Aksi hâlde zararların ödettirilmesinde bu konudaki genel hükümler uygulanır.",
+      "articleRefs": [
+        "12"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Kişiler, kamu hukukuna tabi bir görevle ilgili uğradıkları zarar için görevi yapan personel aleyhine dava açabilir mi?",
+      "back": "Hayır. Dava personel aleyhine değil, ilgili kurum aleyhine açılır; kurumun genel hükümlere göre sorumlu personele rücu hakkı saklıdır.",
+      "explanation": "İşkence ya da zalimane, gayri insani veya haysiyet kırıcı muamele suçları nedeniyle Avrupa İnsan Hakları Mahkemesince verilen kararlar sonucunda Devletçe ödenen tazminatlar için de sorumlu personele aynı şekilde rücu edilir.",
+      "articleRefs": [
+        "13"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Devlet dairesine tevdi edilen para personel tarafından zimmete geçirilirse, zimmete geçirilen miktar hak sahibine kim tarafından ödenir?",
+      "back": "Hazine tarafından ödenir; cezai takibatın sonucu beklenmez.",
+      "explanation": "Hüküm, para ve para hükmündeki değerli kâğıtlar için geçerlidir: Devlet dairelerine tevdi edilenler ya da bu dairelerce tahsil veya muhafaza edilenler. Kurumun sorumlu personele rücu hakkı saklıdır.",
+      "articleRefs": [
+        "13"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Devlet memurları mal bildiriminde kimlere ait malları, alacak ve borçları bildirir?",
+      "back": "Kendilerine, eşlerine ve velayetleri altındaki çocuklarına ait taşınır ve taşınmaz malları, alacak ve borçları bildirir.",
+      "explanation": "Mal bildirimi, özel kanunda yazılı hükümler uyarınca verilir.",
+      "articleRefs": [
+        "14"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Kamu görevleri hakkında basına gerekli bilgiyi kim verebilir?",
+      "back": "Bakanın yetkili kılacağı görevli; illerde ise valiler veya yetkili kılacağı görevli verebilir.",
+      "explanation": "Devlet memurları kamu görevleri hakkında basına, haber ajanslarına veya radyo ve televizyon kurumlarına bilgi veya demeç veremez.",
+      "articleRefs": [
+        "15"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Görev icabı teslim edilen resmî belge, araç ve gereçleri iade zorunluluğu memurun mirasçılarına da geçer mi?",
+      "back": "Evet. Memur görevi sona erince bunları iade etmek zorundadır; bu zorunluluk mirasçılarına da şamildir.",
+      "explanation": "Memur görevleriyle ilgili resmî belge, araç ve gereçleri yetki verilen mahaller dışına çıkaramaz ve hususi işlerinde kullanamaz.",
+      "articleRefs": [
+        "16"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Yürürlükteki hükümlerin kendileri hakkında aynen uygulanmasını istemek, memurların sahip olduğu bir hak mıdır?",
+      "back": "Evet, bu bir haktır. Memurlar, bu kanun ve diğer mevzuata göre tayin ve tespit olunup yürürlükte bulunan hükümlerin kendileri hakkında aynen uygulanmasını istemek hakkına sahiptir.",
+      "articleRefs": [
+        "17"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Memurların müracaat ve şikâyetleri hangi yolla yapılır?",
+      "back": "Söz veya yazıyla, en yakın amirden başlayarak silsile yoluyla yapılır; şikâyet edilen amirler atlanır.",
+      "explanation": "Memurlar, kurumlarıyla ilgili resmî ve şahsi işlerinden dolayı müracaat hakkına sahiptir. Kendilerine uygulanan idari eylem ve işlemlerden dolayı da şikâyet ve dava açabilirler. Müracaat ve şikâyetler incelenerek en kısa zamanda ilgiliye bildirilir; esas ve usulleri Cumhurbaşkanınca hazırlanacak bir yönetmelikle düzenlenir.",
+      "articleRefs": [
+        "21"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Memura garaz veya mücerret hakaret için uydurma suç isnadı yapılmış ve isnat sabit olmamışsa, illerde isnatta bulunanlar hakkında kamu davası açılmasını kim ister?",
+      "back": "Valiler ister; merkezde ise memurun en büyük amiri. Kamu davası açılması Cumhuriyet Savcılığından istenir.",
+      "explanation": "Şart, isnadın soruşturma veya yargılamanın tabi olduğu kanuni işlem sonucunda sabit olmamasıdır.",
+      "articleRefs": [
+        "25"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Devlet memurlarına grevle ilgili hangi davranışlar yasaktır?",
+      "back": "Greve karar vermek, grev tertiplemek, ilan etmek ve bu yolda propaganda yapmak yasaktır. Memurlar herhangi bir greve veya grev teşebbüsüne katılamaz, grevi destekleyemez veya teşvik edemez.",
+      "articleRefs": [
+        "27"
+      ]
+    }
+  ]
+}

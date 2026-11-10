@@ -1,0 +1,240 @@
+{
+  "deck": {
+    "topicId": "477f97e4-2862-4836-a40a-6812e0609898",
+    "legislationSlug": "2911-sayili-toplanti-ve-gosteri-yuruyusleri-kanunu",
+    "sourceLabel": "AI bilgi kartı — 2911 Sayılı Toplantı ve Gösteri Yürüyüşleri Kanunu md 13–24",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: resmî madde metni + çıkmış sorular)"
+  },
+  "cards": [
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Düzenleme kurulu bir toplantıyı en çok ne kadar süreyle geri bırakabilir?",
+      "back": "Kırksekiz saati geçmemek üzere, yalnız bir kez geri bırakabilir.",
+      "explanation": "Geri bırakma kararını düzenleme kurulunun çoğunluğu verir. Kararın, bildirimin verildiği valilik veya kaymakamlığa yazı ile bildirilmesi şarttır.",
+      "articleRefs": [
+        "14"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Düzenleme kurulu, toplantıyı geri bıraktığını en geç ne zamana kadar bildirmelidir?",
+      "back": "Toplantının yapılacağı saatten en az yirmidört saat önce, yazı ile bildirmelidir.",
+      "explanation": "Bu süre bildirimin zamanıdır. Geri bırakmanın kendisi kırksekiz saati geçemez ve yalnız bir kez yapılabilir.",
+      "articleRefs": [
+        "14"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Düzenleme kurulu toplantıyı geri bırakırsa bunu hangi makama bildirir?",
+      "back": "Bildirimin verildiği valilik veya kaymakamlığa, yazı ile bildirir.",
+      "explanation": "Geri bırakma kararı düzenleme kurulunun çoğunluğu tarafından alınır.",
+      "articleRefs": [
+        "14"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Aynı gün il sınırı içinde birden çok toplantı yapılmak isteniyor ve güvenlik güçleri yetersiz kalıyor. Vali bu toplantıların bir kısmını en çok ne kadar erteleyebilir?",
+      "back": "On günü aşmamak üzere, bir kez erteleyebilir.",
+      "explanation": "Erteleme bütün toplantıları değil, toplantılardan bir kısmını kapsar. Hangilerinin erteleneceğinde müracaat önceliği göz önünde bulundurulur.",
+      "articleRefs": [
+        "15"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Vali, aynı gün il sınırı içindeki toplantılardan bir kısmını ertelerken hangi ölçütü göz önünde bulundurur?",
+      "back": "Müracaat önceliğini göz önünde bulundurur.",
+      "explanation": "Bu erteleme on günü aşmamak üzere ve bir kez yapılabilir.",
+      "articleRefs": [
+        "15"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Valinin aynı gün yapılacak toplantılardan bir kısmını erteleyebilmesi hangi kanıya varmasına bağlıdır?",
+      "back": "Emrindeki güvenlik kuvvetlerinin ve gerektiğinde yararlanabileceği diğer güçlerin, toplantıların güvenlik içinde yapılmasını sağlamaya yeterli olmadığı kanısına.",
+      "explanation": "Bu yetki, bir il sınırı içinde aynı günde birden çok toplantı yapılmak istenmesi hâlinde doğar.",
+      "articleRefs": [
+        "15"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Vali veya kaymakam belirli bir toplantıyı en çok ne kadar süreyle erteleyebilir?",
+      "back": "Bir ayı aşmamak üzere erteleyebilir.",
+      "explanation": "Erteleme şu amaçlarla yapılabilir: millî güvenlik, kamu düzeni, suç işlenmesinin önlenmesi, genel sağlığın ve genel ahlâkın veya başkalarının hak ve özgürlüklerinin korunması.",
+      "articleRefs": [
+        "17"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Vali veya kaymakam belirli bir toplantıyı ertelemekle kalmayıp hangi durumda yasaklayabilir?",
+      "back": "Suç işleneceğine dair açık ve yakın tehlike mevcut olması hâlinde yasaklayabilir.",
+      "explanation": "Erteleme için maddede sayılan amaçlardan biri yeterlidir ve süresi bir ayı aşamaz. Yasaklama ise ayrıca açık ve yakın tehlike şartına bağlıdır.",
+      "articleRefs": [
+        "17"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Gerekçeli erteleme veya yasaklama kararı, toplantının başlama saatinden en az kaç saat önce tebliğ edilir?",
+      "back": "En az yirmidört saat önce, bir yazı ile tebliğ edilir.",
+      "explanation": "17 nci maddede belirtilen durumlarda bu tebliğ şartı aranmaksızın erteleme veya yasaklama yapılabilecek haller yönetmelikte gösterilir.",
+      "articleRefs": [
+        "18"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Gerekçeli erteleme veya yasaklama kararı kime tebliğ edilir?",
+      "back": "Düzenleme kurulu başkanına; başkan bulunamadığı takdirde üyelerden birine tebliğ edilir.",
+      "explanation": "Vali veya kaymakamlarca ertelenen ya da yasaklanan toplantılar için İçişleri Bakanlığına da bilgi verilir.",
+      "articleRefs": [
+        "18"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Ertelenen bir toplantının, ertelenen günden sonraki bir günde yapılabilmesi neye bağlıdır?",
+      "back": "Düzenleme kurulunun 10 uncu maddeye göre yeni bildirimde bulunmasına bağlıdır.",
+      "articleRefs": [
+        "18"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Vali, iline bağlı bir ilçede bütün toplantıları yasaklayabilir mi?",
+      "back": "Evet. Aynı sebeplere dayanarak ve suç işleneceğine dair açık ve yakın tehlike varsa, ilçelerin birinde veya birkaçında bütün toplantıları bir ayı geçmemek üzere yasaklayabilir.",
+      "explanation": "Valinin bu yetkisi, maddede sayılan amaçlara ek olarak suç işleneceğine dair açık ve yakın tehlike şartına bağlıdır.",
+      "articleRefs": [
+        "19"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Valinin, iline bağlı ilçelerde bütün toplantıları yasaklayan kararının özeti nasıl duyurulur?",
+      "back": "Yasaklamanın uygulanacağı yerlerde mutat vasıtalarla ilan edilir.",
+      "explanation": "Yasaklama kararı gerekçeli olarak verilir. Ayrıca İçişleri Bakanlığına bilgi verilir.",
+      "articleRefs": [
+        "19"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Gösteri yürüyüşlerinin şekil ve şartları ile ertelenmesi veya yasaklanması hakkında hangi hükümler uygulanır?",
+      "back": "Kanunun 3 üncü ve 4 üncü bölümlerindeki hükümler uygulanır.",
+      "articleRefs": [
+        "20"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Şehir ve kasaba içindeki genel yollarda yapılacak bir yürüyüşün bildiriminde neleri belirtmek zorunludur?",
+      "back": "Yürüyüşe geçmek için seçilecek toplanma yerini, izlenecek yolu ve dağılma yerini belirtmek zorunludur.",
+      "articleRefs": [
+        "20"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Genel yollardaki bir yürüyüşte izlenecek yol, 6 ncı madde gereğince ilan olunan yol ve yönlerden farklı seçilebilir mi?",
+      "back": "Hayır. Toplanma yeri, izlenecek yol ve dağılma yeri, 6 ncı madde gereğince ilan olunan yol ve yönlere uyulmak şartıyla belirtilir.",
+      "articleRefs": [
+        "20"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Genel meydanlardaki toplantılarda halkın ve ulaşım araçlarının gelip geçmesini sağlamak için düzenlemeyi kim yapar?",
+      "back": "Valilik ve kaymakamlıklar yapar; bu düzenlemelere uyulması zorunludur.",
+      "articleRefs": [
+        "22"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Toplantıya yüzü örtülü katılmak hangi amaçla yapılırsa toplantıyı Kanuna aykırı hâle getirir?",
+      "back": "Kimliklerini gizlemek amacıyla yüzlerini tamamen veya kısmen bez vesair unsurlarla örterek katılma Kanuna aykırılık sayılır.",
+      "explanation": "Aynı bentte başka hâller de sayılır: ateşli silahlar, patlayıcı maddeler, kesici ve delici aletler, yasadışı örgüt ve topluluklara ait amblem ve işaret taşınması ile kanunların suç saydığı nitelikte sloganlar söylenmesi.",
+      "articleRefs": [
+        "23"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "12 nci madde gereğince dağılmasına karar verilen bir toplantı sürdürülürse hukuki durumu nedir?",
+      "back": "Kanuna aykırı toplantı sayılır.",
+      "explanation": "Erteleme veya yasaklama süresi sona ermeden yapılan toplantılar da Kanuna aykırıdır. Bu hüküm, 14, 15, 16, 17 ve 19 uncu maddelere dayanılarak verilen kararlar için geçerlidir.",
+      "articleRefs": [
+        "23"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Kanun kapsamı dışında bırakılan konulardaki bir toplantı da Kanuna aykırı sayılabilir mi?",
+      "back": "Evet. 4 üncü madde ile kapsam dışı bırakılan konularda kendi amaç, kural ve sınırları dışına çıkılırsa toplantı Kanuna aykırı sayılır.",
+      "explanation": "Bildirimde belirtilen amaç dışına çıkılması da Kanuna aykırılık hâllerinden biridir.",
+      "articleRefs": [
+        "23"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Kanuna uygun başlayan bir toplantı sonradan Kanuna aykırı hâle dönüşürse, toplantının sona erdiğini topluluğa ilan etmek kimin görevidir?",
+      "back": "Düzenleme kurulunun veya kurul başkanının görevidir; durumu derhâl yetkili kolluk amirine de bildirir.",
+      "explanation": "Bu görev yerine getirilmezse yetkili kolluk amiri durumu mahallin en büyük mülki amirine bildirir; toplantının sona erdirilip erdirilmeyeceğine o karar verir. Mülki amir, güvenlik amirini yazılı emirle ya da acele hâllerde sonradan yazı ile teyit edilmek kaydıyla sözlü emirle olay yerine gönderir. Bu amir dağılma ihtarını yapar; topluluk dağılmazsa zor kullanılır.",
+      "articleRefs": [
+        "24"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Kanuna uygun başlayıp sonradan Kanuna aykırı hâle dönüşen bir toplantıda güvenlik kuvvetlerine fiilî saldırı varsa, zor kullanmadan önce dağılma ihtarı yapmak gerekir mi?",
+      "back": "Hayır. Güvenlik kuvvetlerine karşı fiili saldırı veya mukavemet ya da korudukları yerlere ve kişilere karşı fiili saldırı hali varsa, ihtara gerek olmaksızın zor kullanılır.",
+      "explanation": "Bu hâller dışında olay yerine gönderilen amir, topluluğa Kanuna uyularak dağılmalarını, dağılmazlarsa zor kullanılacağını ihtar eder.",
+      "articleRefs": [
+        "24"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Kanuna uygun bir yürüyüşe az sayıda kişi zincir ve sopa ile katılmış, ancak sayıları ve davranışları yürüyüşün dağıtılmasını gerektirmiyor. Ne yapılır?",
+      "back": "Bu kişiler güvenlik kuvvetlerince uzaklaştırılır ve yürüyüşe devam edilir.",
+      "explanation": "Sayıları ve davranışları dağıtmayı gerektirecek derecedeyse dağıtmaya ilişkin hükümler uygulanır. Düzenleme kurulu, bu kişilerin tanınması ve uzaklaştırılmasında güvenlik kuvvetlerine yardım etmekle yükümlüdür.",
+      "articleRefs": [
+        "24",
+        "23"
+      ]
+    }
+  ]
+}

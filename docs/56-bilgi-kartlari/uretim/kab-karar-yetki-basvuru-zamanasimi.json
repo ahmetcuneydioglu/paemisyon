@@ -1,0 +1,297 @@
+{
+  "deck": {
+    "topicId": "569628d2-5e1c-4788-ad66-1ef20d9374f6",
+    "legislationSlug": "5326-sayili-kabahatler-kanunu",
+    "sourceLabel": "AI bilgi kartı — 5326 Sayılı Kabahatler Kanunu md 22–31",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: resmî madde metni + çıkmış sorular)"
+  },
+  "cards": [
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Kanunda açık hüküm yoksa bir kabahat dolayısıyla idarî yaptırım kararı vermeye kim yetkilidir?",
+      "back": "İlgili kamu kurum ve kuruluşunun en üst amiri yetkilidir.",
+      "explanation": "Önce ilgili kanuna bakılır: kanunda açıkça gösterilen idarî kurul, makam veya kamu görevlileri yetkilidir. Kanunda açık hüküm yoksa yetki ilgili kamu kurum ve kuruluşunun en üst amirine aittir.",
+      "articleRefs": [
+        "22"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "İdarî kurul, makam veya kamu görevlileri, kurumlarının görev alanı dışındaki bir yerde işlenen kabahat için idarî yaptırım kararı verebilir mi?",
+      "back": "Hayır. Yalnız ilgili kamu kurum ve kuruluşunun görev alanına giren yerlerde işlenen kabahatler için idarî yaptırım kararı verebilirler.",
+      "explanation": "Maddedeki 'ancak' kaydı, karar verme yetkisini ilgili kamu kurum ve kuruluşunun görev alanına giren yerlerde işlenen kabahatlerle sınırlar.",
+      "articleRefs": [
+        "22"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Kabahatlerde yer bakımından yetki hangi kanunun kurallarına göre belirlenir?",
+      "back": "5271 sayılı Ceza Muhakemesi Kanununun yer bakımından yetki kurallarına göre belirlenir. Bu kurallar kabahatler açısından da geçerlidir.",
+      "explanation": "Hüküm, Ceza Muhakemesi Kanunundaki yer bakımından yetki kurallarını kabahatlere de uygular.",
+      "articleRefs": [
+        "22"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Bir suç soruşturması sırasında kabahat işlendiğini öğrenen Cumhuriyet savcısı ne yapabilir?",
+      "back": "Durumu ilgili kamu kurum ve kuruluşuna bildirebilir ya da idarî yaptırım kararını kendisi verebilir.",
+      "explanation": "Cumhuriyet savcısı, kanunda açıkça hüküm bulunan hallerde de bir kabahat dolayısıyla idarî yaptırım kararı vermeye yetkilidir.",
+      "articleRefs": [
+        "23"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Soruşturma konusu fiilin kabahat oluşturduğu anlaşıldı ve ilgili kamu kurumu idarî yaptırım kararı vermiş. Cumhuriyet savcısı yine de idarî yaptırım kararı verebilir mi?",
+      "back": "Hayır. Savcının bu durumda karar verebilmesi için ilgili kamu kurum ve kuruluşunca idarî yaptırım kararı verilmemiş olması gerekir.",
+      "explanation": "Soruşturma konusu fiil kabahat çıkarsa kural olarak Cumhuriyet savcısı idarî yaptırım kararı verir. 'Ancak' ile başlayan cümle bu yetkiyi, ilgili kamu kurum ve kuruluşunun daha önce karar vermemiş olması şartına bağlar.",
+      "articleRefs": [
+        "23"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Cumhuriyet savcısı, fiilin suç değil kabahat olduğu gerekçesiyle idarî yaptırım kararı verdi. Kovuşturmaya yer olmadığı kararına da itiraz edildi. İdarî yaptırım kararına karşı başvuru nerede incelenir?",
+      "back": "Kovuşturmaya yer olmadığı kararına yapılan itirazı inceleyen mercide incelenir. İdarî yaptırım kararına karşı başvuru da bu itiraz merciinde görülür.",
+      "explanation": "Soruşturma konusu fiilin kabahat oluşturduğu anlaşılınca Cumhuriyet savcısı idarî yaptırım kararı verir. Hüküm, bu kararın 'suç değil de kabahat' gerekçesiyle verildiği ve kovuşturmaya yer olmadığı kararına itiraz edildiği hali düzenler.",
+      "articleRefs": [
+        "23",
+        "27"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Kovuşturma konusu fiilin kabahat oluşturduğu anlaşılırsa idarî yaptırım kararını kim verir?",
+      "back": "Mahkeme verir.",
+      "articleRefs": [
+        "24"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Mahkemenin bizzat verdiği idarî yaptırım kararına karşı sulh ceza mahkemesine başvurulabilir mi?",
+      "back": "Hayır. İdarî yaptırım kararı mahkeme tarafından verilmişse bu karara karşı ancak itiraz yoluna gidilebilir.",
+      "explanation": "Kovuşturma konusu fiilin kabahat oluşturduğu anlaşılınca idarî yaptırım kararını mahkeme verir. Sulh ceza mahkemesine başvuru, idarî para cezası ve mülkiyetin kamuya geçirilmesine ilişkin kararlara karşı öngörülen yoldur. Mahkemenin verdiği kararda ise tek yol itirazdır.",
+      "articleRefs": [
+        "24",
+        "27"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Mahkeme, fiilin suç değil kabahat oluşturduğu gerekçesiyle idarî yaptırım kararı verdi. Beraat kararına karşı da kanun yoluna gidildi. İdarî yaptırım kararına itiraz nerede incelenir?",
+      "back": "Beraat kararına karşı gidilen kanun yolunun merciinde incelenir.",
+      "explanation": "Hüküm, fiilin suç oluşturmaması nedeniyle beraat kararı verildiği ve aynı gerekçeyle idarî yaptırım kararı verildiği hali düzenler.",
+      "articleRefs": [
+        "24",
+        "27"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "İdarî yaptırım kararına ilişkin tutanakta neler açık bir şekilde yazılır?",
+      "back": "Kişinin kimlik ve adresi, kabahat fiili, fiilin işlendiğini ispata yarayacak bütün deliller, karar tarihi ve kararı veren kamu görevlilerinin kimliği yazılır.",
+      "explanation": "Delillerde 'bütün' kaydı vardır: fiilin işlendiğini ispata yarayacak delillerin tamamı tutanağa yazılır.",
+      "articleRefs": [
+        "25"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "İdarî yaptırım tutanağında kabahati oluşturan fiil nasıl açıklanır?",
+      "back": "Fiilin işlendiği yer ve zaman gösterilerek açıklanır.",
+      "articleRefs": [
+        "25"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "İdarî yaptırım kararının tebligat metninde neler açıkça belirtilir?",
+      "back": "Karara karşı başvurulabilecek kanun yolu, mercii ve süresi belirtilir.",
+      "explanation": "Karar, 7201 sayılı Tebligat Kanunu hükümlerine göre ilgili kişiye tebliğ edilir. Tüzel kişi hakkında verilen idarî yaptırım kararları her halde ilgili tüzel kişiye tebliğ edilir.",
+      "articleRefs": [
+        "26"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Huzurunda idarî yaptırım kararı verilen kişi tutanağı imzalamaktan kaçınırsa, karar tutanağının bir örneği ona yine verilir mi?",
+      "back": "Evet. İmzadan kaçınıldığı tutanakta açıkça belirtilir ve karar tutanağının bir örneği kişiye verilir.",
+      "explanation": "Kararın kişinin huzurunda verildiği tutanakta açıkça yazılır. İmza, kişi başvurabileceği kanun yolu, mercii ve süresi hakkında bilgilendirildikten sonra istenir.",
+      "articleRefs": [
+        "26"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "İdarî yaptırım kararının elektronik ortamda tebliğinde tebligat ne zaman yapılmış sayılır?",
+      "back": "Muhatabın elektronik adresine ulaştığı tarihi izleyen beşinci günün sonunda yapılmış sayılır.",
+      "explanation": "Elektronik ortamda yapılan bu tebligat, Tebligat Kanunu hükümlerine göre yapılan tebliğin yerine geçer.",
+      "articleRefs": [
+        "26"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "İdarî para cezasına karşı sulh ceza mahkemesine en geç ne zamana kadar başvurabilirsin?",
+      "back": "Kararın tebliği veya tefhimi tarihinden itibaren en geç 15 gün içinde başvurabilirsin.",
+      "explanation": "Bu yol, idarî para cezası ve mülkiyetin kamuya geçirilmesine ilişkin kararlar için öngörülür. Süre içinde başvurulmazsa idarî yaptırım kararı kesinleşir.",
+      "articleRefs": [
+        "27"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Başvuru süresini mücbir sebeple kaçıran kişi, sebep ortadan kalktıktan sonra en geç ne kadar sürede başvurabilir?",
+      "back": "Mücbir sebebin ortadan kalktığı tarihten itibaren en geç 7 gün içinde başvurabilir. Bu başvuru kararın kesinleşmesini engellemez; ancak mahkeme yerine getirmeyi durdurabilir.",
+      "explanation": "Başvuru dilekçesinde, başvurunun süresinde yapılmasını engelleyen mücbir sebep dayanaklarıyla birlikte gösterilir.",
+      "articleRefs": [
+        "27"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Aynı işlem kapsamında aynı kişi hakkında idarî yargının görev alanına giren kararlar da verilmişse, idarî yaptırım kararına ilişkin hukuka aykırılık iddiaları nerede görülür?",
+      "back": "İdarî yargı merciinde görülür; bu işlemin iptali talebiyle birlikte incelenir.",
+      "explanation": "Hüküm, idarî yaptırım kararının verildiği işlem kapsamında idarî yargının görev alanına giren kararların da bulunduğu hali düzenler.",
+      "articleRefs": [
+        "27"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Başvuru usulden kabul edildikten sonra ilgili kamu kurum ve kuruluşu mahkemeye en geç ne kadar sürede cevap verir?",
+      "back": "Başvuru dilekçesinin tebliği tarihinden itibaren en geç 15 gün içinde cevap verir.",
+      "explanation": "İşlem dosyasının tamamının bir örneği cevap dilekçesiyle birlikte mahkemeye verilir; mahkeme dosyanın aslını da isteyebilir. Cevap dilekçesi, başvuran kişi sayısından bir fazla nüsha olarak verilir.",
+      "articleRefs": [
+        "28"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Mahkeme tarafları dinlemeye çağırırsa, dinleme günü ile tebligat günü arasında en az ne kadar zaman olmasına dikkat edilir?",
+      "back": "En az bir haftalık zaman olmasına dikkat edilir.",
+      "explanation": "Dinleme talep üzerine veya re'sen yapılabilir. Taraflar veya avukatları hazır bulunur. Mazeretsiz olarak hazır bulunmamak, yoklukta karar verilmesine engel değildir; bu husus tebligat yazısında açıkça belirtilir.",
+      "articleRefs": [
+        "28"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Mahkeme başvuruyu inceledikten sonra son karar olarak hangi kararları verir?",
+      "back": "İdarî yaptırım kararı hukuka uygunsa 'başvurunun reddine', hukuka aykırıysa 'idarî yaptırım kararının kaldırılmasına' karar verir.",
+      "explanation": "Alt ve üst sınırı kanunda gösterilen idarî para cezalarında mahkeme, cezanın miktarında değişiklik yaparak da başvurunun kabulüne karar verebilir.",
+      "articleRefs": [
+        "28"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Mahkemenin başvuru üzerine verdiği son karara karşı itiraz en geç ne kadar sürede yapılır?",
+      "back": "Kararın tebliği tarihinden itibaren en geç iki hafta içinde, Ceza Muhakemesi Kanununa göre yapılır.",
+      "explanation": "Mahkeme her bir itirazla ilgili olarak 'itirazın kabulüne' veya 'itirazın reddine' karar verir.",
+      "articleRefs": [
+        "29"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Mahkemenin son kararına yapılan itirazla ilgili karar hangi usulle verilir?",
+      "back": "Dosya üzerinden inceleme yapılarak verilir.",
+      "explanation": "Verilen karar taraflara tebliğ edilir. Vekil olarak avukatla temsil edilme halinde ayrıca taraflara tebligat yapılmaz.",
+      "articleRefs": [
+        "29"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "15.000 Türk Lirası tutarındaki idarî para cezasına karşı başvuru üzerine verilen karara itiraz edilebilir mi?",
+      "back": "Hayır. 15.000 Türk Lirası dahil idarî para cezalarına karşı başvuru üzerine verilen kararlar kesindir.",
+      "explanation": "Sınır 'dahil' kaydıyla konmuştur; tam 15.000 Türk Lirası olan ceza da kesinlik kapsamındadır. Mahkemenin son kararına itiraz Ceza Muhakemesi Kanununa göre yapılır.",
+      "articleRefs": [
+        "29",
+        "28"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Kanun yoluna başvuran kişi başvurusundan ne zamana kadar vazgeçebilir?",
+      "back": "Bu konuda karar verilinceye kadar vazgeçebilir.",
+      "articleRefs": [
+        "30"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Kanun yolu başvurusundan vazgeçen kişi aynı konuda yeniden başvurabilir mi?",
+      "back": "Hayır. Vazgeçme halinde bir daha aynı konuda başvuruda bulunulamaz.",
+      "explanation": "Hüküm vazgeçme hakkını kanun yoluna başvuran kişiye tanır. Vazgeçmenin sonucu, aynı konuda yeniden başvuru yapılamamasıdır.",
+      "articleRefs": [
+        "30"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "İdarî yaptırım kararına karşı başvuru karara bağlanmadan önce ilgili kamu kurum ve kuruluşu ne yapabilir?",
+      "back": "Kanun yolu başvurusunu kabul ederek idarî yaptırım kararını geri alabilir. Bunu mahkeme karar verinceye kadar yapabilir.",
+      "articleRefs": [
+        "30"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 1,
+      "front": "İdarî yaptırım kararına karşı başvuru yolu harca tâbi midir?",
+      "back": "Hayır. İdarî yaptırım kararına karşı başvuru yolu harca tâbi değildir.",
+      "explanation": "Kanun yoluna başvuru dolayısıyla oluşan masraflar ve vekalet ücreti ise başvurusu veya savunması reddedilen tarafça ödenir.",
+      "articleRefs": [
+        "31"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Kanun yoluna başvuru dolayısıyla oluşan masrafları ve vekalet ücretini kim öder?",
+      "back": "Başvurusu veya savunması reddedilen taraf öder.",
+      "explanation": "Hüküm, kanun yoluna başvuru dolayısıyla oluşan bütün masrafları ve vekalet ücretini kapsar.",
+      "articleRefs": [
+        "31"
+      ]
+    }
+  ]
+}

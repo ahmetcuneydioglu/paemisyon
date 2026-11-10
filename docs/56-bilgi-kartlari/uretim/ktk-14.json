@@ -1,0 +1,290 @@
+{
+  "deck": {
+    "topicId": "3f91916c-8d15-40f4-bb20-5bcca9253c34",
+    "legislationSlug": "2918-sayili-karayollari-trafik-kanunu",
+    "sourceLabel": "AI bilgi kartı — 2918 Sayılı Karayolları Trafik Kanunu md 103–118",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: resmî madde metni + çıkmış sorular)"
+  },
+  "cards": [
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Motorsuz taşıt ile motorlu bisiklet sürücülerinin hukuki sorumluluğu hangi hükümlere tabidir?",
+      "back": "Genel hükümlere tabidir.",
+      "articleRefs": [
+        "103"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Motorlu araçlarla ilgili mesleki faaliyette bulunan bir teşebbüse onarım için bırakılan aracın verdiği zarardan kim sorumlu tutulur?",
+      "back": "Teşebbüsün sahibi işleten gibi sorumlu tutulur. Aracın işleteni ve zorunlu mali sorumluluk sigortacısı bu zararlardan sorumlu değildir.",
+      "explanation": "Kural gözetim, onarım, bakım, alım-satım, araçta değişiklik yapılması ya da benzeri bir amaçla bırakılan araçlar için geçerlidir. Teşebbüs sahipleri kendilerine bırakılan araçların tümünü kapsayan zorunlu mali sorumluluk sigortası yaptırmak ve denetimlerde bu sigortayı belgelemek zorundadır.",
+      "articleRefs": [
+        "104"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Kendisine bırakılan araçlar için zorunlu mali sorumluluk sigortası yaptırmayan teşebbüs sahibinin işyeri en çok ne kadar süre faaliyetten men edilir?",
+      "back": "15 güne kadar; men kararını mahallin en büyük mülki amiri verir.",
+      "articleRefs": [
+        "104"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Yetkili makamdan izin alınmadan düzenlenen bir yarışta doğan zararları kim karşılar?",
+      "back": "Zarara sebep olan motorlu aracın sorumluluk sigortacısı karşılar.",
+      "explanation": "Sigortacı, yarış için özel bir sigorta yapılmadığını bilen ya da gerekli özeni gösterseydi bilebilecek olan işletene rücu edebilir.",
+      "articleRefs": [
+        "105"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Yarış sorumluluğu hükümleri hangi ortalama hızdaki motorlu araç veya bisiklet sporu gösterilerinde uygulanır?",
+      "back": "Ortalama hızı saatte en az elli kilometrenin üstünde olan gösterilerde; ulaşılacak hıza göre değerlendirme yapılan gösterilerde de uygulanır.",
+      "explanation": "Yarış güzergâhı diğer trafiğe kapatılmış olsa da bu hükümler geçerlidir. İçişleri Bakanlığı bu hükümlerin başka yarışlarda da uygulanmasına karar verebilir.",
+      "articleRefs": [
+        "105"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Yarış sigortasında motorlu araçlar için en az sigorta tutarı, zorunlu mali sorumluluk sigortasındaki tutarlardan düşük belirlenebilir mi?",
+      "back": "Hayır. Motorlu araçlar için yapılacak yarış sigortalarında en az tutarlar, zorunlu mali sorumluluk sigortasındaki tutarlardan az olamaz.",
+      "explanation": "En az sigorta tutarlarını, yarışlara izin vermeye yetkili makamın talebi üzerine Ticaret Bakanlığı durum ve şartlara göre belirler. Bu sigorta; yarış düzenleyicilerinin, yarışa katılanların ve yardımcı kişilerin yarış sırasında üçüncü kişilere karşı sorumluluğunu karşılar.",
+      "articleRefs": [
+        "105"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Bir motorlu aracı çalan ya da gasbeden kişi, aracın verdiği zarardan nasıl sorumlu tutulur?",
+      "back": "İşleten gibi sorumlu tutulur.",
+      "explanation": "Aracın çalındığını bilen ya da gereken özeni gösterse öğrenebilecek olan sürücü de onunla birlikte müteselsilen sorumludur. Aracın çalındığını bilerek binen yolculara karşı sorumluluk genel hükümlere tabidir.",
+      "articleRefs": [
+        "107"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Aracı çalınan işleten, çalınmada kendisinin ve eylemlerinden sorumlu olduğu kişilerin kusurlu olmadığını ispat ederse yine de sorumlu tutulur mu?",
+      "back": "Hayır. Bu ispatı yapan işleten sorumlu tutulamaz.",
+      "explanation": "İşleten, sorumlu olduğu durumlarda diğer sorumlulara rücu edebilir.",
+      "articleRefs": [
+        "107"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Motorlu araç kazasından doğan maddi zararın tazmini talebi, zarar görenin zararı ve tazminat yükümlüsünü öğrendiği tarihten itibaren kaç yılda zamanaşımına uğrar?",
+      "back": "İki yılda; herhâlde kaza gününden başlayarak on yıl içinde zamanaşımına uğrar.",
+      "explanation": "Dava cezayı gerektiren bir fiilden doğmuşsa ve ceza kanunu bu fiil için daha uzun bir zamanaşımı öngörüyorsa, o süre maddi tazminat talepleri için de geçerlidir.",
+      "articleRefs": [
+        "109"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Tazminat yükümlülerinin birbirine karşı rücu haklarında kaza gününden başlayan on yıllık süre mi uygulanır?",
+      "back": "Hayır. Rücu hakları, yükümlülüğün tam olarak yerine getirildiği ve rücu edilecek kişinin öğrenildiği günden başlayarak iki yılda zamanaşımına uğrar.",
+      "explanation": "Rücu süresi, rücu edenin kendi yükümlülüğünü tam olarak yerine getirmesiyle ve rücu edeceği kişiyi öğrenmesiyle başlar.",
+      "articleRefs": [
+        "109"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Motorlu araç kazasında zamanaşımı tazminat yükümlüsüne karşı kesilirse sigortacı bakımından ne olur?",
+      "back": "Sigortacıya karşı da kesilmiş olur. Sigortacı bakımından kesilen zamanaşımı da tazminat yükümlüsü için kesilmiş sayılır.",
+      "articleRefs": [
+        "109"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Zarar görenin kamu görevlisi olması, bu Kanundan doğan sorumluluk davasının adli yargıda görülmesine engel olur mu?",
+      "back": "Hayır. İşleteni ya da sahibi Devlet ve diğer kamu kuruluşları olan araçların verdiği zararlar dâhil, bu davalar adli yargıda görülür.",
+      "explanation": "Hemzemin geçitte meydana gelen tren-trafik kazalarında da bu Kanun hükümleri uygulanır.",
+      "articleRefs": [
+        "110"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Motorlu araç kazasından doğan hukuki sorumluluk davası hangi yer mahkemelerinde açılabilir?",
+      "back": "Sigortacının şubesinin ya da sigorta sözleşmesini yapan acentenin bulunduğu yer mahkemelerinden birinde ya da kazanın vuku bulduğu yer mahkemesinde.",
+      "articleRefs": [
+        "110"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Tazminat miktarına ilişkin, yetersiz ya da fahiş olduğu açıkça belli olan bir anlaşma ne kadar süre içinde iptal edilebilir?",
+      "back": "Yapıldığı tarihten başlayarak iki yıl içinde iptal edilebilir.",
+      "explanation": "Bu Kanunla öngörülen hukuki sorumluluğu kaldıran ya da daraltan anlaşmalar ise geçersizdir.",
+      "articleRefs": [
+        "111"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Kanunun yetkilendirdiği görevli ve kuruluşlar dışında, sürücü belgesinin geri alınmasına ve iptaline kim karar verir?",
+      "back": "Sulh ceza mahkemeleri karar verir.",
+      "explanation": "Kural, Kanunun 6 ncı maddesinde sayılan görevlilerin ve trafik tescil kuruluşlarının yetkilendirildiği hâller dışında geçerlidir. Kesinleşen geri alma ya da iptal kararlarının örnekleri, sürücü siciline işlenmek üzere mahkemelerce ilgili trafik birimlerine gönderilir.",
+      "articleRefs": [
+        "112"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Ceza puanını doldurma nedeniyle sürücü belgesinin geri alınmasına kim yetkilidir?",
+      "back": "Kanunun 6 ncı maddesinde sayılan görevliler; 100 ceza puanını doldurma eylemi bu yetkinin kapsamındadır.",
+      "explanation": "Kanunun 51 inci maddesinin ihlali hâlinde de sürücü belgesini geri alma yetkisi bu görevlilerdedir.",
+      "articleRefs": [
+        "112"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Ulaştırma ve Altyapı Bakanlığı ile Karayolları Genel Müdürlüğü personelinden hangileri trafik suçları için tutanak düzenler?",
+      "back": "İlgili birimlerin il ve ilçe kuruluşlarında görevli ve yetkili kılınmış personel; yetki sınırları içinde düzenler.",
+      "explanation": "Trafik suçları için tutanak düzenleyenler arasında Emniyet Genel Müdürlüğü personeli de vardır.",
+      "articleRefs": [
+        "114"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Trafik idari para cezası karar tutanağına, düzenleyen personelin açık kimliği yerine ne yazılır?",
+      "back": "Personel tanıtım numarası yazılır.",
+      "explanation": "Kural, bu Kanun kapsamında düzenlenen diğer tutanaklar için de geçerlidir.",
+      "articleRefs": [
+        "114"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Yargı yetkisine giren trafik suçlarıyla ilgili tutanağın bir sureti ilgili mahkemeye ne kadar süre içinde gönderilir?",
+      "back": "7 iş günü içinde gönderilir.",
+      "articleRefs": [
+        "114"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Süresinde ödenmeyen trafik para cezasına her ay hangi oranda faiz uygulanır?",
+      "back": "Yüzde 5; ay kesirleri tam ay sayılır ve bulunan tutar cezanın iki katını geçemez.",
+      "explanation": "Ödeme derhal yapılmazsa ceza, tutanağın tebliğ tarihinden itibaren bir ay içinde ödenmelidir. Süresinde ödenmeyen cezalar için 6183 sayılı Amme Alacaklarının Tahsil Usulü Hakkında Kanun hükümleri uygulanır.",
+      "articleRefs": [
+        "115"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Trafik idari para cezası karar tutanağı düzenlemeyle yetkilendirilen personel, bu cezanın tahsilatını yapabilir mi?",
+      "back": "Hayır. Tutanak düzenlemeyle yetkilendirilen personel trafik idari para cezası tahsilatı yapamaz.",
+      "explanation": "Kural, 114 üncü maddeye göre karar tutanağı düzenlemeyle yetkilendirilen personelin tamamı için konmuştur.",
+      "articleRefs": [
+        "115",
+        "114"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Yabancı uyruklu kişiye uygulanan ve ülkeden çıkışına kadar tahsil edilemeyen trafik idari para cezası ne zaman tahsil edilir?",
+      "back": "Kişinin tekrar yurda girişi sırasında tahsil edilir; bu şekilde tahsil edilemezse yurda girişine izin verilmez.",
+      "articleRefs": [
+        "115"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Trafik kural ve yasaklarına aykırı davranışı belirlenen bir araca tescil plakasına göre tutanak düzenlenmesi için hangi şart aranır?",
+      "back": "Aracın sürücüsünün tespit edilememiş olması aranır.",
+      "explanation": "Madde, trafiği tehlikeye düşürecek, engel olacak şekilde ya da yasaklanmış yerlerde park etmiş araçlara da plakaya göre tutanak düzenlenmesini öngörür. Karayolları ağırlık kontrol mahallerinde ikaza rağmen tartı sistemine girmeden seyre devam eden araçlar da madde kapsamındadır.",
+      "articleRefs": [
+        "116"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Posta yoluyla tebliğ edilemeyen plaka tutanağı ilan edildiğinde tebligat hangi gün yapılmış sayılır?",
+      "back": "İlan tarihini takip eden otuzuncu gün tebligat yapılmış sayılır.",
+      "explanation": "Posta tebligatı, trafik kaydında araç sahibi görünen kişiye yapılır. Tebliğ edilemeyen tutanaklar ilgili tahsil dairesinin ilan asmaya mahsus yerinde liste hâlinde ilan edilir.",
+      "articleRefs": [
+        "116"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "İhlal tarihinde kiralık olduğu kimlik bildirme verilerinden tespit edilen ve kiracısının tebligata uygun adresi bulunan araç için idari para cezası tutanağı kimin adına düzenlenir?",
+      "back": "Kiracı adına düzenlenip tebliğ edilir; ceza kiracıdan tahsil edilir.",
+      "explanation": "Ancak bu kiralama, 4925 sayılı Kanun kapsamındaki yetki belgesi sahibi taşımacının sorumluluk ve yükümlülüklerini ortadan kaldırmaz.",
+      "articleRefs": [
+        "116"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Trafik suçunun işlendiği tarihten geriye doğru bir yıl içinde 100 ceza puanını dolduran sürücünün belgesi kaç ay süreyle geri alınır?",
+      "back": "2 ay süreyle geri alınır; sürücü ayrıca eğitime tabi tutulur.",
+      "explanation": "Geri alma süresi içinde araç kullandığı tespit edilen sürücü, Kanunun 36 ncı maddesinin üçüncü fıkrasına göre cezalandırılır.",
+      "articleRefs": [
+        "118"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Ölümle sonuçlanan trafik kazasına asli kusurlu olarak sebebiyet veren sürücünün belgesi ne kadar süreyle geri alınır?",
+      "back": "1 yıl süreyle geri alınır.",
+      "articleRefs": [
+        "118"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Bir yıl içinde üç defa 100 ceza puanını dolduran sürücünün belgesi 4 ay süreyle mi geri alınır?",
+      "back": "Hayır. Belgesi süresiz olarak iptal edilir; 4 ay geri alma, aynı yıl içinde ikinci defa 100 puanı dolduranlara uygulanır.",
+      "explanation": "İkinci defa dolduranlar ayrıca psiko-teknik değerlendirmeye ve psikiyatri uzmanının muayenesine tabi tutulur; sürücülüğe engel hâli bulunmayanların belgesi süre sonunda iade edilir.",
+      "articleRefs": [
+        "118"
+      ],
+      "counterNumbers": []
+    }
+  ]
+}

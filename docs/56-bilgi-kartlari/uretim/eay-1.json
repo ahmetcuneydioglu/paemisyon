@@ -1,0 +1,279 @@
+{
+  "deck": {
+    "topicId": "ca720f44-72d7-4159-9c40-806f47ef136f",
+    "legislationSlug": "emniyet-atama-ve-yer-degistirme-yonetmeligi",
+    "sourceLabel": "AI bilgi kartı — Emniyet Atama ve Yer Değiştirme Yönetmeliği md 1–14",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: resmî madde metni + çıkmış sorular; 3 açıklama düşürüldü)"
+  },
+  "cards": [
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Emniyet hizmetleri sınıfında hangi unvanlı personel, Emniyet Teşkilatı Atama ve Yer Değiştirme Yönetmeliğinin dışında kalır?",
+      "back": "Çarşı ve mahalle bekçisi unvanlı personel. Sınıfın diğer mensuplarının atama ve yer değiştirmeleri bu Yönetmeliğe tabidir.",
+      "articleRefs": [
+        "1"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Atama ve Yer Değiştirme Yönetmeliği, bölgelerle ilgili hangi konuları kapsar?",
+      "back": "Bölgeleri, personelin bu bölgelerdeki hizmet sürelerini, bölgeler arasında ve bölge içinde yer değiştirme esas ve usullerini kapsar.",
+      "articleRefs": [
+        "2"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Genel atama dönemi hangi aylarda yapılır?",
+      "back": "Her yıl Mayıs ve Haziran aylarında yapılır.",
+      "explanation": "Genel atama dönemi, Yönetmelikte gösterilen esaslara göre her yıl bu aylarda yapılan atama dönemidir. Zamandışı atama ise genel ve mazeret atama dönemlerine bağlı kalınmaksızın, Yönetmelikte belirtilen sebeplerle yılın her ayında yapılır.",
+      "articleRefs": [
+        "3"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Mazeret atama dönemi Mayıs ve Haziran aylarında mı yapılır?",
+      "back": "Hayır. Mazeret atama dönemi, genel atama dönemi dışında Şubat ve Eylül aylarındadır. Mayıs ve Haziran, genel atama dönemidir.",
+      "explanation": "Mazeret atama dönemindeki atamalar da Yönetmelikte gösterilen esaslara göre yapılır.",
+      "articleRefs": [
+        "3"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Birinci bölge için zorunlu hizmet süresi nasıl belirlenir?",
+      "back": "Ek (1) sayılı cetvelde il merkezi için belirlenen hizmet süreleri esas alınır.",
+      "explanation": "İkinci bölge için zorunlu hizmet süresi, cetvelde il merkezi veya ilçeler için belirlenen hizmet süreleridir. Zorunlu bölge, ikinci bölgeyi ifade eder.",
+      "articleRefs": [
+        "3"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Atama ve Yer Değiştirme Yönetmeliğinin uygulanmasında iller kaç bölgeye ayrılır?",
+      "back": "İki bölgeye ayrılır: birinci bölge ve ikinci bölge.",
+      "explanation": "Ayrım, illerin emniyet ve asayiş, ekonomik, sosyal, kültürel, ulaşım imkanı ve şartları yönünden birbirine benzerlik ve yakınlıklarına göre yapılır.",
+      "articleRefs": [
+        "4"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Atama ve Yer Değiştirme Yönetmeliğine ekli (1) sayılı cetvelde neler gösterilir?",
+      "back": "Birimler, bölgeler ve hizmet süreleri gösterilir.",
+      "articleRefs": [
+        "4"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Personel atandığı bölgede ne kadar süre görev yapmak zorundadır?",
+      "back": "Ek (1) sayılı cetvelde belirlenmiş süre kadar görev yapmak zorundadır. Bu yükümlülük, Yönetmelikle öngörülen süreden önce alınmasını gerektiren bir sebep olmadıkça geçerlidir.",
+      "explanation": "Personelin süre dolmadan bölgeden alınması, ancak Yönetmelikte öngörülen bir sebeple mümkündür.",
+      "articleRefs": [
+        "5"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Bakanlık onayıyla geçici süre için yapılan kadro takviyesi, standart kadronun aşılmaması kuralına tabi midir?",
+      "back": "Hayır. Emniyet ve asayiş hizmetlerinin gerektirdiği hallerde Bakanlık onayıyla yapılan geçici kadro takviyesi ve iller arası kuvvet kaydırma bu sınırlamaya tabi değildir.",
+      "explanation": "Takviye ve kuvvet kaydırma geçici süre içindir ve Bakanlık onayına bağlıdır.",
+      "articleRefs": [
+        "6"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Atamalarda aşılamayan standart kadro sayısı hangi bakımdan tespit edilir?",
+      "back": "Birimler için hizmet bölümleri ve rütbeleri itibariyle tespit edilir.",
+      "explanation": "Bu sayı; Genel Müdürlük merkez kuruluşu, bağlı kurum ve kuruluşlar ile il ve ilçe kuruluşlarının kadrolarına yapılacak atamalarda herhangi bir sebep veya suretle aşılmaz.",
+      "articleRefs": [
+        "6"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Büyükşehir belediyesi bulunan illere atamalarda, personelin nüfusa kayıtlı olduğu yere atanamaması kuralı hangi sınıra kadar uygulanmaz?",
+      "back": "İlin toplam emniyet hizmetleri sınıfı personel sayısının %20'sini aşmamak kaydıyla uygulanmaz.",
+      "explanation": "18 inci maddenin birinci fıkrasının (e) bendi ile 38 inci madde kapsamına girenler bu imkândan yararlanamaz. Bu illere atananlar, merkez ilçeler dışında nüfusa kayıtlı oldukları ilçeye atanamaz. Bayan personel için evlenmeden önce nüfusa kayıtlı olduğu yer esas alınır.",
+      "articleRefs": [
+        "7"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Personelin teklifle alındığı il veya birime tekrar atanabilmesi için aradan en az ne kadar süre geçmelidir?",
+      "back": "En az beş yıl geçmelidir. Bu süre dolmamışsa, o yere dönüşüne engel bir hali bulunmadığına dair uygun görüş aranır.",
+      "explanation": "Uygun görüşü atanacağı il valiliği verir; Genel Müdürlüğe bağlı birimlerde ise birim amirleri verir. Beş yıl şartının ya da uygun görüş şartının sağlanması yeterlidir.",
+      "articleRefs": [
+        "7"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Erişkinler İçin Engellilik Değerlendirmesi kapsamındaki Sağlık Kurulu Raporunda kendisi, eşi veya çocuğu için engel oranı en az ne olan personele nüfus kaydı yasağı uygulanmayabilir?",
+      "back": "%50 ve üzeri engel oranı. Kadro durumu uygunsa (a) ve (b) bendi hükümleri bu personel hakkında uygulanmayabilir.",
+      "explanation": "Çocuğu hakkında Çocuklar İçin Özel Gereksinim Değerlendirmesi kapsamında verilen raporda \"3-Orta Düzeyde Özel Gereksinimi Vardır (%50-59)\" ya da daha ileri düzey ibarelerden biri bulunanlar da bu imkândan yararlanabilir. Vazife malûlü idari polisler ve yakınları ile gazilik unvanı verilenler ve yakınları da bu personel arasındadır.",
+      "articleRefs": [
+        "7"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Personelin asgari derecede yer değiştirmesi için atamalar neye göre yapılır?",
+      "back": "Birkaç yıl sonraki durum gözönüne alınarak yapılır.",
+      "articleRefs": [
+        "9"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Birinci meslek derecesindeki personel, kendi isteğiyle ikinci meslek derecesinde görevlendirilebilir mi?",
+      "back": "Evet. Bu isteğe bağlı hal dışında personel, rütbe ve meslek derecesi karşılığı olan görev unvanından daha alt görev unvanlarına atanamaz ve çalıştırılamaz.",
+      "explanation": "İdare, her rütbe ve meslek derecesi karşısında gösterilen görev unvanları arasında personelin görev yerini değiştirebilir.",
+      "articleRefs": [
+        "10"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "İkinci sınıf emniyet müdürü rütbesinde en az bekleme süresini tamamlayanlar, terfien hangi meslek derecesi karşılığı görev unvanlarına atanabilir?",
+      "back": "Birinci sınıf emniyet müdürü rütbesinde, ikinci meslek derecesi karşılığı görev unvanlarına atanabilir.",
+      "explanation": "3 sayılı Üst Kademe Kamu Yöneticileri ile Kamu Kurum ve Kuruluşlarında Atama Usûllerine Dair Cumhurbaşkanlığı Kararnamesine tabi unvanlar bu imkânın dışındadır.",
+      "articleRefs": [
+        "10"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Aday memur, adaylık süresi içinde Genel Müdürlük merkez teşkilatına atanabilir mi?",
+      "back": "Evet. Adaylık süresinde birimler arasında yer değiştirme yapılmaz; ancak Genel Müdürlük merkez teşkilatına yapılacak atamalar bu kuralın dışındadır.",
+      "articleRefs": [
+        "11"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Adaylık süresindeki bir memurun yer değiştirmesi hangi durumda adaylığına bakılmaksızın yapılabilir?",
+      "back": "Eşi kamu kurum veya kuruluşlarında kadrolu veya sözleşmeli personel statüsünde görev yapıyorsa yapılabilir.",
+      "articleRefs": [
+        "11"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Başkomiser ve altı rütbelerdeki atamalarda görev puanı eşit olanlar arasında hizmet yılı fazla olana mı öncelik tanınır?",
+      "back": "Hayır. Görev puanı eşit olanlar arasında sicil numarası düşük olana öncelik tanınır. Hizmet yılı, kontenjanların belirlenmesinde dikkate alınır.",
+      "explanation": "Bu rütbelerdeki atamalar; rütbe, branş, hizmet yılı ve cinsiyet gibi hususlar dikkate alınarak Genel Müdürlükçe belirlenen kontenjanlara yapılır. Yerleştirme, personelin tercihlerine göre ve her kontenjan için kendi aralarındaki görev puanı esas alınarak elektronik ortamda gerçekleşir.",
+      "articleRefs": [
+        "12"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Tercihte bulunmayan ya da tercihlerine yerleşemeyen başkomiser ve altı rütbedeki personel nasıl yerleştirilir?",
+      "back": "Boş kalan kontenjanlara yerleştirilir: görev yeri puanı en düşük olandan başlanır ve personelin görev puanı esas alınır.",
+      "articleRefs": [
+        "12"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Hangi atamalarda görev puanı ve bilgisayar destekli sistem uygulanmaz?",
+      "back": "Merkez teşkilatına yapılacak atamalarda uygulanmaz. Eşi emniyet amiri ve üstü rütbelerde olan personelin eşine tabi olarak yapılacak atamalarında da uygulanmaz.",
+      "explanation": "Emniyet amiri ve üstü rütbelerde görev yapan personelin atamaları, birimlerin talep ve ihtiyaçlarına göre ve personelin tercihleri de dikkate alınarak yapılır.",
+      "articleRefs": [
+        "12"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Polis amiri ve polis memuru yetiştiren eğitim kurumlarından mezun olup sınavda başarılı olanların ilk ataması ikinci bölgeye yapılabilir mi?",
+      "back": "Evet, ihtiyaç halinde yapılabilir. Esas olan, ilk atamaların öncelikle birinci bölge illere yapılmasıdır.",
+      "explanation": "İlk atamalar, 7 nci maddede belirtilen hükümler saklı kalmak kaydıyla yapılır.",
+      "articleRefs": [
+        "13"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Devlet memuruyla evli olan adayın ilk ataması, eşinin görev yaptığı yere hangi şartla yapılabilir?",
+      "back": "Atamadan önce dilekçeyle talep etmesi hâlinde, Genel Müdürlükçe eşinin görev yaptığı yere de yapılabilir.",
+      "explanation": "Tercih listesinden eşinin görev yaptığı yeri seçme imkânı varken seçmeyenlerin yerleri değiştirilmez. Bu kişilerin atamalar yapıldıktan sonra eşinin görevi nedeniyle verdikleri atama talepleri değerlendirmeye alınmaz.",
+      "articleRefs": [
+        "13"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Polis memuru yetiştiren eğitim kurumlarından mezun olan polis memurları öncelikle hangi birimlere atanır?",
+      "back": "Öncelikle polis merkezleri, çevik kuvvet veya koruma hizmet birimlerine atanır.",
+      "explanation": "Asayiş gerekleri, hizmet branşındaki ihtiyaç ya da personelin teknik bilgisi ve mesleki uzmanlığından yararlanma mecburiyeti varsa bu öncelik aranmaz.",
+      "articleRefs": [
+        "13"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "İstifa eden veya isteği ile emekli olan personelin yeniden mesleğe alınma isteğinin kabulü kimin takdirine bağlıdır?",
+      "back": "Bakanlığın takdirine bağlıdır.",
+      "explanation": "Yeniden mesleğe alınmada 657 sayılı Devlet Memurları Kanununun 92, 93 ve 94 üncü maddeleri hükümleri uygulanır.",
+      "articleRefs": [
+        "14"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "657 sayılı Kanuna göre yeniden mesleğe alınan personel tekrar istifa ederse mesleğe yeniden kabul edilebilir mi?",
+      "back": "Hayır. Yeniden mesleğe alınanlar istifa veya emeklilik suretiyle yeniden ayrılırlarsa tekrar mesleğe kabul edilmezler.",
+      "articleRefs": [
+        "14"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Yeniden mesleğe alınan personel kural olarak hangi bölgeye atanır?",
+      "back": "İstifa ettiği veya emekliye ayrıldığı tarihte atanmış olduğu ya da görevli bulunduğu bölgeye atanır.",
+      "explanation": "Birinci bölgeye atanma durumunda olan personel, sicil numarasına göre emsalleri ikinci bölge hizmetini yapmış veya yapmakta ise ikinci bölgeye atanır. Bu personel, o bölge için tespit olunan hizmet süresi sonuna kadar orada kalır.",
+      "articleRefs": [
+        "14"
+      ]
+    }
+  ]
+}

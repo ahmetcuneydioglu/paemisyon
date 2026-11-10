@@ -3,11 +3,14 @@ import { Pressable, View } from "react-native";
 import { AppText } from "@/components/ui";
 import type { LeaderboardTeaser as TeaserData } from "@/features/progress/queries";
 import { useTheme } from "@/theme/ThemeProvider";
+import { COMPACT_TEXT_SCALE } from "@/theme/text-scale";
 
 /**
  * Bugünün tahtası (Bugün v3 §9 eki, 2 Kas 2026; web `LeaderboardTeaser`): ilk 3 satır, "Sen"
  * ilk 3'te değilse ayraç + vurgulu satır, altta sunucunun takip cümlesi (Doc 12 tonu — metin
  * istemcide üretilmez). Kartın tamamı Liderlik'e götürür; Sıradaki kartla yarışmaz (akış sonu).
+ * Satırlar sıkışıktır (sıra · ad · puan): büyük yazıda `COMPACT_TEXT_SCALE` tavanı; sıra sütunu
+ * sabit genişlik değil alt sınır + tek satır ("1." ve "123." kırılmaz).
  */
 export function LeaderboardTeaser({
   data,
@@ -111,7 +114,9 @@ function Satir({
       <AppText
         variant="subhead"
         tone="soft"
-        style={{ width: 24, fontVariant: ["tabular-nums"] }}
+        numberOfLines={1}
+        maxFontSizeMultiplier={COMPACT_TEXT_SCALE}
+        style={{ minWidth: 24, fontVariant: ["tabular-nums"] }}
       >
         {rank}.
       </AppText>
@@ -119,6 +124,7 @@ function Satir({
         variant="body"
         tone={me ? "accentInk" : "ink"}
         numberOfLines={1}
+        maxFontSizeMultiplier={COMPACT_TEXT_SCALE}
         style={{
           flex: 1,
           fontSize: 15,
@@ -131,6 +137,8 @@ function Satir({
       <AppText
         variant="subhead"
         tone={me ? "accentInk" : "ink"}
+        numberOfLines={1}
+        maxFontSizeMultiplier={COMPACT_TEXT_SCALE}
         style={{ fontVariant: ["tabular-nums"] }}
       >
         {points} doğru

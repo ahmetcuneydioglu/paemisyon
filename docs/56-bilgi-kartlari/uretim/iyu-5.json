@@ -1,0 +1,284 @@
+{
+  "deck": {
+    "topicId": "e22d1f78-8191-4099-9134-044c59114bd7",
+    "legislationSlug": "2577-idari-yargilama-usulu-kanunu-iyuk",
+    "sourceLabel": "AI bilgi kartı — 2577 İdari Yargılama Usulü Kanunu (İYUK) md 49–53, 55–65, Ek 1, Ek 2, Ek 3",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: resmî madde metni + çıkmış sorular)"
+  },
+  "cards": [
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Danıştay, temyiz ettiğin kararın sonucunu hukuka uygun ama gerekçesini eksik bulursa ne yapar?",
+      "back": "Kararı, gerekçesini değiştirerek onar.",
+      "explanation": "Sonuç hukuka uygunsa karar bozulmaz; gerekçe doğru bulunmazsa ya da eksik bulunursa değiştirilerek onanır. Kararda yeniden yargılama gerektirmeyen maddi hatalar ile düzeltilmesi mümkün eksiklik veya yanlışlıklar varsa da karar düzeltilerek onanır.",
+      "articleRefs": [
+        "49"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Danıştay temyiz incelemesi sonunda incelenen kararı hangi sebeplerle bozar?",
+      "back": "Görev ve yetki dışında bir işe bakılmış olması, hukuka aykırı karar verilmesi ve usul hükümlerinin uygulanmasında kararı etkileyebilecek nitelikte hata veya eksikliklerin bulunması.",
+      "explanation": "Karar kısmen onanıp kısmen bozulursa kesinleşen kısım Danıştay kararında belirtilir.",
+      "articleRefs": [
+        "49"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Bölge idare mahkemesi Danıştayın bozma kararına uymayıp kararında ısrar ederse, ısrar kararının temyizini kim inceler?",
+      "back": "Konusuna göre Danıştay İdari Dava Daireleri Kurulu ya da Vergi Dava Daireleri Kurulu inceler ve karara bağlar.",
+      "explanation": "Bölge idare mahkemesi bozma kararına uyabileceği gibi kararında ısrar da edebilir. Israr kararının temyizi üzerine Danıştay İdari ve Vergi Dava Daireleri Kurullarının verdiği kararlara uyulması zorunludur.",
+      "articleRefs": [
+        "50"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Danıştay dairesinin onama kararı dosyayla ilk derece mahkemesine gelince taraflara ne kadar sürede tebliğe çıkarılır?",
+      "back": "Yedi gün içinde; süre dosyanın geldiği tarihten itibaren işler.",
+      "explanation": "Onama kararı dosyayla birlikte kararı veren ilk derece mahkemesine gönderilir; kararın bir örneği de bölge idare mahkemesine gönderilir.",
+      "articleRefs": [
+        "50"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Bölge idare mahkemesi Danıştayın bozma kararına uyarsa, yeni kararın temyiz incelemesi neyle sınırlı yapılır?",
+      "back": "Bozma kararına uygunlukla sınırlı yapılır.",
+      "explanation": "Bozma kararı üzerine ilgili merci dosyayı öncelikle inceler, varsa gerekli tahkik işlemlerini tamamlar ve yeniden karar verir.",
+      "articleRefs": [
+        "50"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Kanun yararına temyiz yoluna kim başvurur?",
+      "back": "Başsavcı; ilgili bakanlıkların göstereceği lüzum üzerine ya da kendiliğinden.",
+      "explanation": "Kanun yararına temyiz edilebilen kararlar: idare ve vergi mahkemeleri ile bölge idare mahkemelerinin kesin olarak verdiği kararlar ile istinaf veya temyiz incelemesinden geçmeden kesinleşmiş kararlardan niteliği bakımından yürürlükteki hukuka aykırı bir sonucu ifade edenler.",
+      "articleRefs": [
+        "51"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Kanun yararına bozma kararı, daha önce kesinleşmiş merci kararının hukuki sonuçlarını kaldırır mı?",
+      "back": "Hayır. Temyiz isteği yerinde görülürse karar kanun yararına bozulur; ama bu bozma, kesinleşmiş merci kararının hukuki sonuçlarını kaldırmaz.",
+      "explanation": "Bozma kararının bir örneği ilgili bakanlığa gönderilir ve karar Resmî Gazete'de yayımlanır.",
+      "articleRefs": [
+        "51"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Kararı temyiz ya da istinaf yoluna taşımak, kararın yürütülmesini durdurur mu?",
+      "back": "Hayır; temyiz veya istinaf yoluna başvurulmuş olması yürütmeyi durdurmaz. Kararın bozulması ise yürütmeyi kendiliğinden durdurur.",
+      "explanation": "Teminat karşılığında yürütmenin durdurulmasına temyiz istemini incelemeye yetkili Danıştay dava dairesi, kurulu veya istinaf başvurusunu incelemeye yetkili bölge idare mahkemesi karar verebilir.",
+      "articleRefs": [
+        "52"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "İptal davasında temyiz ya da istinaf aşamasında yürütmenin durdurulması için teminat istenmesi zorunlu mudur?",
+      "back": "Hayır; iptal davalarında teminat istenmeyebilir.",
+      "explanation": "Temyiz veya istinaf aşamasında yürütmenin durdurulmasına teminat karşılığında karar verilebilir. İdareden ve adli yardımdan yararlananlardan ise teminat alınmaz.",
+      "articleRefs": [
+        "52"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Temyiz veya istinaf incelemesi sırasında yürütmenin durdurulması istemi hakkında verilen karar hangi niteliktedir?",
+      "back": "Kesindir.",
+      "explanation": "Davanın reddine ilişkin kararlara karşı temyiz ya da istinaf yoluna başvurulduğunda, dava konusu işlem hakkında yürütmenin durdurulması kararı verilebilmesi md 27'de öngörülen koşulun varlığına bağlıdır.",
+      "articleRefs": [
+        "52"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Hükmün İnsan Haklarını ve Ana Hürriyetleri Korumaya Dair Sözleşmenin ihlali suretiyle verildiği Avrupa İnsan Hakları Mahkemesinin kesinleşmiş kararıyla tespit edilirse yargılamanın yenilenmesi süresi nedir?",
+      "back": "Bir yıl; Avrupa İnsan Hakları Mahkemesi kararının kesinleştiği tarihten itibaren.",
+      "explanation": "Aynı bent, hüküm aleyhine Avrupa İnsan Hakları Mahkemesine yapılan başvuru hakkında dostane çözüm ya da tek taraflı deklarasyon sonucunda düşme kararı verilmesini de kapsar.",
+      "articleRefs": [
+        "53"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Önceki ilamın hükmüne aykırı karar verilmiş olması sebebine dayanan yargılamanın yenilenmesi süresi altmış gün müdür?",
+      "back": "Hayır; bu sebepte süre on yıldır. Altmış gün, (h) ve (ı) bentleri dışındaki sebepler içindir.",
+      "explanation": "(h) bendi: tarafları, konusu ve sebebi aynı olan bir dava hakkında, kanuni bir dayanak yokken önceki ilamın hükmüne aykırı karar verilmesi. Süreler, dayanılan sebebin istemde bulunan yönünden gerçekleştiği tarihi izleyen günden başlatılarak hesaplanır.",
+      "articleRefs": [
+        "53"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Yargılamanın yenilenmesi istemini hangi mahkeme karara bağlar?",
+      "back": "Esas kararı vermiş olan mahkeme; istemin konusu başka bir daire veya mahkemenin görevine girmişse o merci karar verir.",
+      "explanation": "Yargılamanın yenilenmesi Danıştay ile bölge idare, idare ve vergi mahkemelerinden verilen kararlar hakkında istenebilir; istem esas kararı vermiş olan mahkemece karara bağlanır.",
+      "articleRefs": [
+        "53",
+        "55"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Danıştay idari dava dairesinde çekinen veya reddedilen başkan ve üyeler ikiden fazlaysa istemi kim inceler?",
+      "back": "İdari Dava Daireleri Kurulu; istemi kabul ederse davanın esası hakkında da bu kurul karar verir.",
+      "explanation": "Vergi dava dairesi başkan ve üyeleri için yetkili kurul Vergi Dava Daireleri Kuruludur. Çekinen veya reddedilen başkan ve üyeler bu kurullara katılamaz; üye noksanı diğer dava dairelerinden tamamlanır. Kurulların toplanmasına engel olacak sayıda ret isteminde bulunulamaz ve çekinilemez.",
+      "articleRefs": [
+        "56"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Danıştay tetkik hâkimleri taraflarca reddedilebilir mi?",
+      "back": "Evet; Danıştay tetkik hâkimleri ve savcıları sebeplerini bildirerek çekinebilir, taraflarca da reddedilebilir.",
+      "explanation": "Tetkik hâkimleri ve savcılar hakkındaki çekinme veya ret istemleri davaya bakmakla görevli daire tarafından incelenerek karara bağlanır.",
+      "articleRefs": [
+        "56"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Tek hâkimle görülen idari davada hâkimin reddi istemini kim inceler?",
+      "back": "Reddedilen hâkimin katılmadığı idare veya vergi mahkemesi.",
+      "articleRefs": [
+        "57"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "İdare mahkemesinde reddedilen başkan ve üye birden çoksa ret istemini kim inceler?",
+      "back": "Bölge idare mahkemesi.",
+      "explanation": "Bölge idare mahkemesinde reddedilen başkan veya üye birden çok ise istem Danıştayca incelenir. Davaya bakmaktan çekinme hâlinde de aynı hükümler uygulanır.",
+      "articleRefs": [
+        "57"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Ret istemini inceleyen bölge idare mahkemesi istemi yerinde bulursa davanın esası hakkında kim karar verir?",
+      "back": "Ret istemini yerinde bulan bölge idare mahkemesi; işin esası hakkında da kendisi karar verir.",
+      "explanation": "Danıştay ve ret istemini inceleyen mahkemeler, istemi yerinde görürse işin esası hakkında da karar verir.",
+      "articleRefs": [
+        "57"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "İdari dava açıldıktan sonra taraflar delillerin tespitini hangi mercilerden isteyebilir?",
+      "back": "Yalnız davaya bakan Danıştay, idare ve vergi mahkemelerinden.",
+      "explanation": "Davaya bakan merci istemi uygun görürse üyelerden birini bu işle görevlendirebilir ya da tespitin mahalli idari veya adli yargı mercilerince yaptırılmasına karar verebilir. Delillerin tespiti istemi ivedilikle karara bağlanır.",
+      "articleRefs": [
+        "58"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Keşif, bilirkişi incelemesi veya delillerin tespiti için görevlendirilen Danıştay meslek mensubuna görevde geçen her gün için ne kadar gündelik verilir?",
+      "back": "Net aylık tutarının otuzda biri oranında; ayrıca gerçek yol giderleri ödenir.",
+      "articleRefs": [
+        "59"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Danıştay ile bölge idare, idare ve vergi mahkemelerine ait tebliğlerin ücretleri nasıl ödenir?",
+      "back": "İlgililer tarafından peşin olarak ödenir.",
+      "explanation": "Bu mercilere ait her türlü tebliğ işleri Tebligat Kanunu hükümlerine göre yapılır.",
+      "articleRefs": [
+        "60"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Bölge idare, idare ve vergi mahkemeleri hangi tarihler arasında çalışmaya ara verir?",
+      "back": "Yirmi temmuzdan otuz bir ağustosa kadar; çalışma her yıl bir eylülde yeniden başlar.",
+      "explanation": "Ara verme süresinde bölge idare mahkemesi başkanının önerisi üzerine nöbetçi mahkeme, bölge idare mahkemeleri için de nöbetçi daire kurulur.",
+      "articleRefs": [
+        "61"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Bölge idare mahkemesinin bulunduğu il merkezi dışındaki bütün idare ve vergi mahkemeleri çalışmaya ara verme süresinde görevine devam eder mi?",
+      "back": "Hayır; yalnız il merkezi dışında kalan ve sadece bir idare veya bir vergi mahkemesi bulunan yerlerdeki idari yargı mercileri ara vermeden yararlanamaz.",
+      "explanation": "Bu mahkemeler md 62'deki sınırlamaya tabi olmaksızın görevlerine devam eder. Çalışmaya ara vermeden yararlanamayanlar ile nöbetçi kalanların yıllık izin hakları saklıdır.",
+      "articleRefs": [
+        "61"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Çalışmaya ara verme süresinde nöbetçi mahkeme hangi işleri görür?",
+      "back": "Yürütmenin durdurulmasına ve delillerin tespitine ait işler ile kanunen belli süre içinde karara bağlanması gereken işler.",
+      "articleRefs": [
+        "62"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Yeniden değerleme oranında artırılan parasal sınırların hangi kısmı dikkate alınmaz?",
+      "back": "Bin Türk lirasını aşmayan kısımları.",
+      "explanation": "Parasal sınırlar her yıl, bir önceki yıla ilişkin olarak Vergi Usul Kanununun mükerrer 298 inci maddesine göre ilan edilen yeniden değerleme oranında, takvim yılı başından geçerli olarak artırılır. Duruşma zorunluluğu ile istinaf veya temyize başvurulabilecek kararların belirlenmesinde davanın açıldığı tarihteki parasal sınır esas alınır.",
+      "articleRefs": [
+        "Ek 1"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Belediye başkanının düşmesi istemine ilişkin Danıştaya gönderilen dosyada belediye başkanının savunması ne kadar sürede alınır?",
+      "back": "Onbeş gün içinde; savunma verilmezse dosya sürenin bittiği tarihte tekemmül etmiş sayılır.",
+      "explanation": "Kanunlarda gösterilen karar süreleri dosyanın tekemmül ettiği tarihten itibaren işlemeye başlar. Belediye meclisi veya il genel meclisi feshi istemlerinde savunma meclis başkanvekilinden alınır; karar dosya üzerinden verilir.",
+      "articleRefs": [
+        "Ek 2"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Seçilmiş organların organlık sıfatının kaybına ilişkin Danıştay kararına itiraz edilirse İdari Dava Daireleri Kurulu itirazı ne kadar sürede sonuçlandırır?",
+      "back": "Bir ay içinde; itiraz üzerine verilen karar kesindir.",
+      "explanation": "İtiraz, kararın tebliğini izleyen günden itibaren onbeş gün içinde İdari Dava Daireleri Kuruluna yapılır.",
+      "articleRefs": [
+        "Ek 2"
+      ]
+    }
+  ]
+}

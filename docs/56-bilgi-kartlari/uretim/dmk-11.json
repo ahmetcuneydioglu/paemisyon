@@ -1,0 +1,280 @@
+{
+  "deck": {
+    "topicId": "8b68257c-bd1e-4a44-bb49-830ee4d8e4c9",
+    "legislationSlug": "657-sayili-devlet-memurlari-kanunu",
+    "sourceLabel": "AI bilgi kartı — 657 Sayılı Devlet Memurları Kanunu md Ek 35, Ek 36, Ek 37, Ek 38, Ek 39, Ek 40, Ek 41, Ek 42, Ek 43, Ek 44",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: resmî madde metni + çıkmış sorular)"
+  },
+  "cards": [
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Kamu kurumları, personel kanunları ve diğer özel kanunlara göre okutacakları yeni öğrencilere mecburi hizmet yükümlülüğü getirebilir mi?",
+      "back": "Hayır. Ek 35'in yürürlüğe girdiği tarihten itibaren okutulacak yeni öğrencilere mecburi hizmet yükümlülüğü getirilemez.",
+      "explanation": "Kural, kamu kurum ve kuruluşlarının personel kanunları ve diğer özel kanunlardaki hükümlere göre okuttuğu öğrencileri kapsar. Kuralın uygulanmadığı öğrenciler arasında yurt dışında okutulanlar ve Emniyet Genel Müdürlüğü tarafından okutulanlar vardır.",
+      "articleRefs": [
+        "Ek 35"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Emniyet Genel Müdürlüğü tarafından okutulan öğrenciler, yeni öğrencilere mecburi hizmet yükümlülüğü getirme yasağının kapsamında mıdır?",
+      "back": "Hayır. Ek 35, Emniyet Genel Müdürlüğü tarafından okutulanlar hakkında uygulanmaz; bu öğrenciler için mecburi hizmet getirme yasağı işlemez.",
+      "explanation": "Maddenin son fıkrası, yurt dışında okutulanları ve Emniyet Genel Müdürlüğü tarafından okutulanları madde hükmünün dışında tutar.",
+      "articleRefs": [
+        "Ek 35"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Bakanlıklararası Ortak Kültür Komisyonu tarafından Türk kültürünü tanıtmak amacıyla yurt dışında görevlendirilen memur, bu görev süresince hangi statüde sayılır?",
+      "back": "Aylıklı izinli sayılır. Ayrıca kendisine Cumhurbaşkanınca tespit edilen bir ödeme yapılır.",
+      "explanation": "Kapsam, Devlet Memurları Kanunu ile 2914 sayılı Yükseköğretim Personel Kanununa tabi personeldir. Görevlendirme; Türk kültürünün yurt dışında tanıtılması, yayılması ve korunması, yurt dışındaki Türk vatandaşları ile soydaşların kültürel bağlarının korunması, güçlendirilmesi ve dini konularda aydınlatılması ile Türk dilinin öğretilmesi amacıyla yapılır.",
+      "articleRefs": [
+        "Ek 36"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Kültür göreviyle yurt dışında görevlendirilen personele yapılacak ödemenin üst sınırı nedir?",
+      "back": "Görevlendirildiği ülkede sürekli görevle bulunan ve 9 uncu derecenin 1 inci kademesinden aylık alan bekar meslek memurunun yurt dışı aylığının %60'ı.",
+      "explanation": "Ödeme hiçbir vergiye tabi tutulmaz; miktarını bu sınırı geçmemek üzere Cumhurbaşkanı tespit eder.",
+      "articleRefs": [
+        "Ek 36"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Kültür göreviyle yurt dışında görevlendirilen personele ayni veya nakdi olarak yapılan diğer ödemeler, Cumhurbaşkanınca tespit edilen ödemeye eklenerek mi verilir?",
+      "back": "Hayır. Bu personele ayni veya nakdi olarak yapılan diğer ödemeler, Cumhurbaşkanınca tespit edilen ödemeden mahsup edilir.",
+      "explanation": "Kapsamdaki personel, yurt dışı görevi karşılığında ödemenin diğer kurumlar tarafından yapılması suretiyle de Bakanlıklararası Ortak Kültür Komisyonunca görevlendirilebilir.",
+      "articleRefs": [
+        "Ek 36"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "36. maddenin Ortak Hükümler bölümü (B) bendinin (3) numaralı alt bendindeki yükselinebilecek derece ve kademe sınırlamaları hangi maddenin uygulanmasında dikkate alınmaz?",
+      "back": "67 nci madde hükmünün uygulanmasında dikkate alınmaz.",
+      "articleRefs": [
+        "Ek 37"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Kamu kurumlarınca lisansüstü eğitim için yurt dışına gönderilenler hangi yabancı yükseköğretim kurumlarında eğitim görebilir?",
+      "back": "Yükseköğretim Kurulu tarafından tespit edilen yabancı yükseköğretim kurumlarında.",
+      "explanation": "Kapsam; yüksek lisans ve doktora için yetiştirilmek amacıyla gönderilen öğrenci, araştırma görevlisi ve kamu görevlileridir. Gönderileceklerin sayısı, kurum bütçelerine bu amaçla konulan ödenek tutarını aşmayacak şekilde belirlenir.",
+      "articleRefs": [
+        "Ek 38"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Yurt dışındaki lisansüstü eğitim giderleri hangi koşulla ödenir?",
+      "back": "Fatura veya benzeri gider belgesinin bizzat öğrenim görülen yükseköğretim kurumu tarafından düzenlenmesi koşuluyla.",
+      "explanation": "Koşul, belgeyi düzenleyen tarafa bağlıdır: gider belgesini öğrenim görülen yükseköğretim kurumunun kendisi düzenlemelidir.",
+      "articleRefs": [
+        "Ek 38"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Eğitim amacıyla yurt dışına gönderilecek kamu görevlisinin öğrenim konusu hangi şartı taşımalıdır?",
+      "back": "Çalışmakta olduğu birimin görev alanıyla doğrudan ilgili olmak zorundadır.",
+      "articleRefs": [
+        "Ek 38"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Ek 39'a göre memur, hangi yakınlarının engelli olması sebebiyle eğitim kuruluşunun bulunduğu yere atanmayı talep edebilir?",
+      "back": "Eşi, çocukları ve kardeşleri; hayatını başkasının yardım veya bakımı olmadan devam ettiremeyecek derecede engelli olmaları şartıyla.",
+      "explanation": "Atama ilgilinin talebi üzerine yapılır. Yakının memuriyet mahalli dışında resmî veya özel bir eğitim ve öğretim kuruluşunda eğitim ve öğretim yapacağının belgelendirilmesi gerekir.",
+      "articleRefs": [
+        "Ek 39"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Ek 39 kapsamında engelli yakının memuriyet mahalli dışındaki bir kuruluşta eğitim ve öğretim yapacağını hangi kurul belgelendirir?",
+      "back": "Özel eğitim değerlendirme kurulu. Engellilik derecesi ise sağlık kurulu raporuyla tespit edilir.",
+      "articleRefs": [
+        "Ek 39"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Ek 39 kapsamındaki atama, eğitim kuruluşunun bulunduğu yerdeki herhangi bir kamu kurumunun boş kadrosuna yapılabilir mi?",
+      "back": "Hayır. Atama, eğitim ve öğretim kuruluşunun bulunduğu il veya ilçe sınırları dahilinde, memurun kendi kurumunda bulunan durumuna uygun boş bir kadroya yapılır.",
+      "explanation": "Atama memurun talebi üzerine yapılır; yakının engelliliği sağlık kurulu raporuyla, eğitim göreceği yer de özel eğitim değerlendirme kurulunca belgelendirilmiş olmalıdır.",
+      "articleRefs": [
+        "Ek 39"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Mesleğe özel yarışma sınavıyla alınan ve 36. madde Ortak Hükümler (A) fıkrasının (11) numaralı bendinde sayılan kadrolara yapılan sınav başvurularında üst yaş sınırı nedir?",
+      "back": "Otuz beş yaşını doldurmamış olmak; özel mevzuattaki yaş şartına ilişkin hükümlere bağlı kalınmaz.",
+      "articleRefs": [
+        "Ek 40"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Mesleğe özel yarışma sınavındaki otuz beş yaş sınırı, başvuru tarihi itibarıyla mı hesaplanır?",
+      "back": "Hayır. Yaş, giriş sınavının yapıldığı yılın ocak ayının birinci günü itibarıyla hesaplanır; o gün otuz beş yaşını doldurmamış olmak gerekir.",
+      "articleRefs": [
+        "Ek 40"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Ek 40'taki otuz beş yaş kuralı, 36. maddedeki kadrolar dışında hangi kurumların mesleğe özel yarışma sınavıyla yaptığı alımlarda da uygulanır?",
+      "back": "Kanunlarla veya Cumhurbaşkanlığı kararnameleriyle kurulmuş diğer kamu kurum, kurul, üst kurul ve kuruluşlarının alımlarında.",
+      "articleRefs": [
+        "Ek 40"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Uzman yardımcılığı yazılı sınavından sonra sözlü sınava kaç aday çağrılır?",
+      "back": "Yetmiş puandan az olmamak üzere, en yüksek puandan başlanarak giriş sınavı duyurusunda belirtilen kadronun dört katına kadar aday.",
+      "explanation": "Yazılı sınav, kurumun görev alanına göre yönetmelikle belirlenen konulardan yapılır. Giriş sınavı, merkezi sınav sonuçlarına göre yazılı ve sözlü sınav veya yalnızca sözlü sınavdan oluşur.",
+      "articleRefs": [
+        "Ek 41"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Uzman yardımcılığı sözlü sınavında başarılı sayılmak için gereken puan nedir?",
+      "back": "Komisyon başkan ve üyelerinin yüz tam puan üzerinden verdikleri puanların aritmetik ortalaması en az yetmiş olmalıdır.",
+      "explanation": "Sınav konularına ilişkin bilgi düzeyi elli puan, (b) ila (f) bentlerindeki özelliklerin her biri onar puan üzerinden değerlendirilir; puanlar ayrı ayrı tutanağa geçirilir ve başka bir kayıt sistemi kullanılmaz. Başarılı olanlardan, duyurudaki kadro sayısının yarısını geçmemek üzere komisyonca belirlenen sayıda yedek aday da ilan edilir.",
+      "articleRefs": [
+        "Ek 41"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Uzman yardımcısı, yeterlik sınavına girmeye hak kazanmak için en az ne kadar süre çalışmalıdır?",
+      "back": "En az üç yıl; ayrıca hazırladığı uzmanlık tezinin tez jürisince kabul edilmesi gerekir.",
+      "explanation": "Tezini süresinde sunmayan ya da tezi kabul edilmeyene altı ayı aşmamak üzere ilave süre verilir; yeterlik sınavı en geç altı ay içinde yapılır. Başarısız olana bir yıl içinde ikinci kez sınav hakkı verilir. Uzman kadrosuna atanma, yeterlik sınavından itibaren en geç iki yıl içinde Kamu Personeli Yabancı Dil Bilgisi Seviye Tespit Sınavından asgari (C) düzeyine ya da denk belgeye sahip olmaya bağlıdır. Bu şartları yerine getiremeyen uzman yardımcısı unvanını kaybeder ve kurumunda durumuna uygun memur unvanlı kadroya atanır.",
+      "articleRefs": [
+        "Ek 41"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Ek 42'deki geniş başvuru imkânı hangi kadrolara yapılacak sınavları kapsar?",
+      "back": "36 ncı maddenin Ortak Hükümler bölümü (A) fıkrasının (11) numaralı bendindeki unvanlı kadrolar ile kamu kurumlarının yarışma ve yeterlik sınavıyla atanılan kadro ve pozisyonlarına yapılacak sınavları.",
+      "articleRefs": [
+        "Ek 42"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Ek 42'ye göre, kanununda sayılmayan bir yükseköğretim kurumundan mezun olan kişinin sınava başvurabilmesi için o kurum en az kaç yıllık lisans eğitimi vermelidir?",
+      "back": "En az dört yıllık lisans eğitimi; ayrıca kurumun, ilgili kamu kurumunun yönetmeliğinde belirlenmiş olması gerekir.",
+      "explanation": "Belirleme, ilgili kamu kurum ve kuruluşunca yürütülen kurumsal hizmet gerekleri çerçevesinde yapılır.",
+      "articleRefs": [
+        "Ek 42"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Ek 42 kapsamındaki sınavlara yalnız kanunlarında belirtilen fakülte veya bölümlerin mezunları mı başvurabilir?",
+      "back": "Hayır. Yönetmeliklerde belirlenen yükseköğretim kurumlarından ya da Yükseköğretim Kurulunca denkliği kabul edilen yurt içi veya yurt dışı kurumlardan mezun olanlar da başvurabilir.",
+      "articleRefs": [
+        "Ek 42"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Doğum yapan memur, yarım zamanlı çalışmayı hangi tarihe kadar süren dönem için talep edebilir?",
+      "back": "Çocuğun mecburi ilköğretim çağının başladığı tarihi takip eden ay başına kadar; dönem, doğum sonrası analık izninin ya da 104 üncü maddenin (F) fıkrasına göre kullanılan iznin bitiminden başlar.",
+      "explanation": "Bu dönemde haftalık çalışma süresi normal çalışma süresinin yarısı olarak düzenlenir ve ayrıca süt izni verilmez. Eşi doğum yapan memur, babalık izninin bitiminden itibaren aynı haktan yararlanabilir. Çalışma saatlerini ilgili kurum belirler.",
+      "articleRefs": [
+        "Ek 43"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Yarım zamanlı çalışmadan normal zamanlı çalışmaya dönen memur, aynı çocuk için yeniden yarım zamanlı çalışabilir mi?",
+      "back": "Hayır. Normal zamanlı çalışmaya dönüş, aynı çocuk için bir daha bu haktan yararlanmamak kaydıyla yapılır; dönüş, başvuru tarihini izleyen ay başından geçerlidir.",
+      "articleRefs": [
+        "Ek 43"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Yarım zamanlı çalışılan dönemdeki hizmet, derece yükselmesi ve kademe ilerlemesi için aranan sürelerde nasıl dikkate alınır?",
+      "back": "Yarım olarak dikkate alınır.",
+      "explanation": "Yarım zamanlı çalışmaya başlanan tarihi izleyen ay başından itibaren mali haklar ile sosyal yardımlardaki her ödeme unsurunun yarısı esas alınarak ödeme yapılır; fiili çalışmaya bağlı ödemelerde ilgili mevzuat hükümleri uygulanmaya devam eder.",
+      "articleRefs": [
+        "Ek 43"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Taşra teşkilatında uzman yardımcılığı giriş sınavına, atama yapılacak kadro sayısının en fazla kaç katı aday çağrılabilir?",
+      "back": "Yirmi katı. Yalnızca sözlü sınav yapılıyorsa sözlüye çağrılacak aday sayısı duyurudaki kadronun dört katını geçemez.",
+      "explanation": "Taşra teşkilatındaki uzman ve uzman yardımcısı istihdamında Ek 41'in ikinci, üçüncü ve dördüncü fıkraları kıyasen uygulanır; aday sayısı sınırı bu fıkralardan gelir.",
+      "articleRefs": [
+        "Ek 44",
+        "Ek 41"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Taşra teşkilatındaki uzman yardımcıları için yabancı dil ve tez hazırlama şartı uygulanır mı?",
+      "back": "Hayır. Ek 41'in beşinci fıkrası taşra teşkilatına, yabancı dil ve tez hazırlama şartı hariç olmak üzere kıyasen uygulanır.",
+      "explanation": "Taşradaki uzman ve uzman yardımcılarının mesleğe alınmaları, yetiştirilmeleri, yarışma ve yeterlik sınavları ile çalışma usul ve esasları kurumlarınca çıkarılan yönetmelikte düzenlenir.",
+      "articleRefs": [
+        "Ek 44",
+        "Ek 41"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Taşra teşkilatında teftiş, denetim, inceleme ve soruşturma yapmakla görevlendirilen uzman ve uzman yardımcıları hangi atama usulüne tabidir?",
+      "back": "Yer değiştirme suretiyle atamaya tabi tutulurlar.",
+      "explanation": "Bu görevlerin yaptırılabilmesi teşkilatlanmaya ilişkin Cumhurbaşkanlığı kararnamelerinde öngörülmesine bağlıdır. Görevlendirmelerde 6245 sayılı Kanunun 33 üncü maddesinin (b) fıkrası uygulanır.",
+      "articleRefs": [
+        "Ek 44"
+      ]
+    }
+  ]
+}

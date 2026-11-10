@@ -1,0 +1,286 @@
+{
+  "deck": {
+    "topicId": "980956db-8563-41cc-b9f1-e409a5d4e283",
+    "legislationSlug": "adli-ve-onleme-aramalari-yonetmeligi",
+    "sourceLabel": "AI bilgi kartı — Adli ve Önleme Aramaları Yönetmeliği md 25–36",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: resmî madde metni + çıkmış sorular)"
+  },
+  "cards": [
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Olağanüstü hâl kapsamında kişilerin üstü ve eşyaları, ayrıca arama emri ya da kararı alınmadan kimin emriyle aranır?",
+      "back": "Olağanüstü Hâl Valisinin emriyle aranır; dayanak 2935 sayılı Olağanüstü Hâl Kanununun 11 inci maddesidir.",
+      "explanation": "Bu aramalar, 2935 sayılı Olağanüstü Hâl Kanununun 11 inci maddesi kapsamında Olağanüstü Hâl Valisinin emriyle yapılır.",
+      "articleRefs": [
+        "25"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Seçimlerdeki silâh taşıma yasağı kapsamında silâh taşıdığından şüphelenilen kişinin üstü ve eşyası, hangi kanun maddesine dayanılarak ayrıca karar alınmadan aranır?",
+      "back": "298 sayılı Seçimlerin Temel Hükümleri ve Seçmen Kütükleri Hakkında Kanunun 79 uncu maddesine dayanılarak aranır. Aramayı bu Kanun çerçevesinde görevli kolluk yapar.",
+      "articleRefs": [
+        "25"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Umuma açık olmayan özel bir işletmenin girişinde kontrol edilmeyi kabul etmeyen kişi o yere girebilir mi?",
+      "back": "Hayır. Bu girişlerdeki kontroller girmek isteyenin rızasına bağlıdır ve kontrol edilmeyi kabul etmeyenler bu gibi yerlere giremez.",
+      "explanation": "Bu gibi yerlerde kontrolü esas olarak özel güvenlik görevlileri yapar. Ancak yerin ve katılanların taşıyabilecekleri özel niteliklere göre önleme aramaları kolluk güçlerince de yapılabilir.",
+      "articleRefs": [
+        "25"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Önleme aramasında suç unsuruna rastlanınca düzenlenen tutanak, Yönetmeliğin hangi maddesinde yazılı unsurları içerir?",
+      "back": "11 inci maddede yazılı unsurları içerir. Suç unsuruna rastlandığı için önleme araması tutanağa bağlanır.",
+      "explanation": "Tutanağı arama işlemine katılmış olanlar ve hazır bulunanlar imzalar.",
+      "articleRefs": [
+        "26"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Suç unsuruna rastlanan önleme aramasında tutanağın sureti ilgiliye yalnız talep ederse mi verilir?",
+      "back": "Hayır. Tutanağın bir sureti ilgiliye verilir ve talep şartı aranmaz. Talep şartı, suç unsuruna rastlanmayan aramadan sonra verilen belge için geçerlidir.",
+      "articleRefs": [
+        "26"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Suç unsuruna rastlanmayan önleme aramasından sonra kişiye talebi hâlinde verilen belgede hangi bilgiler yer alır?",
+      "back": "Belgede arama kararı veya emrinin tarih ve sayısı, aramanın tarih ve saati, yeri, aranan şahsın ve arayan görevlinin kimlik bilgileri yer alır.",
+      "articleRefs": [
+        "26"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Kolluğun durdurma yetkisini kullanabilmesi için hangi derecede şüphe bulunmalıdır?",
+      "back": "\"Umma\" derecesinde makul şüphe bulunmalıdır. Somut emarelerle desteklenen şüphe olmadan süreklilik arz edecek, fiilî durum ve keyfilik oluşturacak şekilde durdurma yapılamaz.",
+      "explanation": "Kolluk, tecrübesine ve içinde bulunulan durumdan edindiği izlenime dayanmalıdır. Kişinin bir suç işleyeceği veya işlediği ya da silâhlı olup hâlen tehlike yarattığı konusunda makul bir sebep bulunmalıdır.",
+      "articleRefs": [
+        "27"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Durdurulan kişi, şüpheye yol açan davranışlarıyla ilgili sorulara cevap vermekle yükümlü müdür?",
+      "back": "Hayır. Kişi, kimliğine ilişkin olanlar dışındaki sorulara cevap vermekle yükümlü değildir.",
+      "explanation": "Kolluk, görevli olduğunu gösteren belgeyi gösterdikten sonra durdurma sebebini bildirir. Şüpheye yol açan davranışlar ve durdurma sebebi hakkında soru sorabilir, kimlik ve bulundurulması gereken belgeleri isteyebilir. Şüphe açıklamayla ya da başka bir şekilde ortadan kalkarsa kişinin gitmesine izin verilir.",
+      "articleRefs": [
+        "27"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Durdurulan aracın dışarıdan bakıldığında içi görünmeyen bölümleri kimin emriyle aranabilir?",
+      "back": "Mülki amirin görevlendireceği kolluk amirinin yazılı emriyle aranabilir. Acele hâllerde, sonradan yazıyla teyit edilmek üzere sözlü emir yeterlidir. Esasları İçişleri Bakanlığı belirler.",
+      "explanation": "Silâh veya tehlikeli eşya şüphesiyle alınan tedbirler kapsamında kişiden elbisesini çıkarması ya da aracın bu bölümlerini açması istenemez. El ile dıştan kontrol ise bu emir şartının dışında tutulmuştur.",
+      "articleRefs": [
+        "27"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Durdurma üzerine kişinin üstü, eşyası ve aracı aranacaksa hangi maddelerde belirtilen usuller uygulanır?",
+      "back": "28 ve 29 uncu maddelerde belirtilen usuller uygulanır: üst ve eşya aramasında 28 inci madde, araçlarda aramada 29 uncu madde.",
+      "articleRefs": [
+        "27",
+        "28",
+        "29"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Karar veya yazılı emir üzerine yapılan üst ve eşya araması, mümkün olduğunca başkalarının görebileceği tarzda mı yapılır?",
+      "back": "Hayır. Arama, kişinin veya aracın ilk durdurulduğu yerde veya yakınında, mümkün olduğu kadar başkalarının göremeyeceği tarzda yapılır.",
+      "explanation": "Kişi başka yere götürülerek aranamaz. Gerektiğinde kolluk aracından veya yakındaki kapalı bir yerden yararlanılabilir.",
+      "articleRefs": [
+        "28"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Giysiler çıkartılarak yapılacak üst aramasında, aramanın neden gerekli olduğunu ve nasıl yapılacağını ilgiliye kim bildirir?",
+      "back": "O birimde görevli en üst kolluk âmiri bildirir; bildirim arama yapılmadan önce yapılır.",
+      "explanation": "Bu arama için iki şart aranır: kişinin kanunlara göre izin verilmeyecek bir şey taşıdığına ilişkin makul şüphe ve aramanın amacına başka türlü ulaşılamaması. Arama aynı cinsiyetten görevlilerce, kimsenin görmemesini sağlayacak tedbirlerle yapılır. Önce bedenin üst kısmındaki giysiler çıkarttırılır; alt kısmındakiler, üsttekiler giyildikten sonra çıkarttırılır. Bedene dokunulmamasına özen gösterilir ve arama mümkün olduğunca kısa sürede bitirilir.",
+      "articleRefs": [
+        "28"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Üst araması sırasında kişinin beraberindeki eşya, elektromanyetik cihazla aranamıyorsa nasıl aranır?",
+      "back": "Beş duyu organı aracılığıyla aranır. Aynı hüküm sahipsiz eşyaya da uygulanır.",
+      "explanation": "Mümkünse elektromanyetik cihazlar kullanılır. Kişi direnirse üst ve eşya araması orantılı güç kullanılarak yapılır.",
+      "articleRefs": [
+        "28"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Araç araması, aracın başka bir yere götürülmesiyle yapılabilir mi?",
+      "back": "Evet, detaylı inceleme yapılması gereken hâllerde başka bir yere götürülerek aranabilir. Esas olan, aracın ilk durdurulduğu yerde veya yakınında aranmasıdır.",
+      "explanation": "Araç araması kişiye en az sıkıntı verici şekilde ve makul olan en kısa sürede yapılır. Aramanın konusu olan eşya veya aramanın sebepleri ilgiliye açıklanır.",
+      "articleRefs": [
+        "29"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Deniz şartları yüzünden aramanın denizde yapılamadığı şüpheli bir deniz aracında arama nerede yapılabilir?",
+      "back": "Deniz aracı en yakın ve uygun limana çekilir ve arama limanda yapılabilir. Deniz aracının ayrıntılı aranması gereken hâllerde de bu yola gidilebilir.",
+      "articleRefs": [
+        "29"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Boş bir araç arandığında araca ne bırakılır?",
+      "back": "Arama yapıldığını belirten bir not bırakılır. Notta arama tutanağının bir kopyasının alınabileceği yer belirtilir.",
+      "articleRefs": [
+        "29"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Hakkında yakalama emri bulunan kişiyi yakalamak için yapılan aramada, o yerde bulunan diğer kişiler de aranabilir mi?",
+      "back": "Hayır. O yerde bulunan diğer kişiler hakkında ayrıca karar verilmemişse arama yapılamaz.",
+      "explanation": "Yakalanacak kişi için ayrıca arama kararı verilmesi gerekli değildir.",
+      "articleRefs": [
+        "30"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Konutta arama kararı gösterilip bilgilendirme yapıldığı hâlde kapı açılmazsa kolluk ne yapar?",
+      "back": "Önce güç kullanılacağını ihtar eder. Kapı buna rağmen açılmazsa zorla eve girer ve aramayı gerçekleştirir; güç kademeli olarak artırılarak kullanılabilir.",
+      "explanation": "Aramaya karşı çıkılırsa direnç, durumun haklı kıldığı ölçüde güç kullanılarak ortadan kaldırılabilir.",
+      "articleRefs": [
+        "30"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Aranacak yerin sahibi veya eşyanın zilyedi aramada bulunmazsa onun yerine kim hazır bulundurulur?",
+      "back": "Temsilcisi, ayırt etme gücüne sahip hısımlarından biri, kendisiyle birlikte oturmakta olan bir kişi veya komşusu hazır bulundurulur.",
+      "explanation": "Kişinin avukatının aramada hazır bulunmasına engel olunamaz.",
+      "articleRefs": [
+        "30"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Bir arama kararı, aksine bir hüküm içermiyorsa kaç kez arama yapma yetkisi verir?",
+      "back": "Yalnız bir kez arama yapma yetkisi verir. Arama, kararda veya yazılı emirde belirtilen süre içinde yapılır.",
+      "articleRefs": [
+        "31"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Önleme aramaları gece yapılabilir mi?",
+      "back": "Evet. Önleme aramaları, denetimler ve kontroller her zaman yapılabilir. Gece yasağı konut, işyeri ve diğer kapalı yerlerdeki adlî arama içindir.",
+      "explanation": "Adlî arama ise, aramanın amacını tehlikeye sokan acil bir durum yoksa gündüz yapılır.",
+      "articleRefs": [
+        "31"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Yönetmeliğe göre geceleyin herkesin girip çıkabileceği hangi yerlerde gece adlî arama yapılabilir?",
+      "back": "2559 sayılı Polis Vazife ve Salâhiyet Kanununun 7 nci maddesinde sayılan umuma açık istirahat ve eğlence yerlerinde.",
+      "explanation": "Suçüstü, gecikmesinde sakınca bulunan hâller ve firar eden kişinin yeniden yakalanması amacıyla yapılan aramalarda da gece arama yapılabilir.",
+      "articleRefs": [
+        "31"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Nezarethanelerde yapılacak aramalar için hangi düzenlemenin hükümleri saklıdır?",
+      "back": "Yakalama, Gözaltına Alma ve İfade Alma Yönetmeliğinin hükümleri saklıdır.",
+      "articleRefs": [
+        "32"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Aramalara ilişkin kayıt defteri nerede tutulur?",
+      "back": "Her kolluk biriminde tutulur. Bu deftere Yönetmelik uyarınca yapılan aramalara ilişkin karar, yazılı emir ve diğer bilgiler kaydedilir.",
+      "articleRefs": [
+        "33"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Aramalara ilişkin kayıt defterindeki bilgiler hangi amaçlarla kullanılabilir?",
+      "back": "Yalnız adlî ve idarî soruşturmalar, ilgilinin taleplerinin karşılanması ve istatistikî çalışmalar için kullanılabilir; bunların dışında kullanılamaz.",
+      "articleRefs": [
+        "33"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Aramalara ilişkin kayıt defteri bilgisayar ortamında hangi şartla tutulabilir?",
+      "back": "Silinme ve muhtemel bilgi kaybı riskine karşı gerekli önlemler alınır ve bilgiler yedeklenirse bilgisayar ortamında da tutulabilir.",
+      "articleRefs": [
+        "33"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Adlî ve Önleme Aramaları Yönetmeliği, hangi Resmî Gazetede yayımlanan önceki yönetmeliği yürürlükten kaldırmıştır?",
+      "back": "24/5/2003 tarihli ve 25117 sayılı Resmî Gazetede yayımlanan Adlî ve Önleme Aramaları Yönetmeliğini yürürlükten kaldırmıştır.",
+      "articleRefs": [
+        "34"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Adlî ve Önleme Aramaları Yönetmeliğinin hükümlerini kim yürütür?",
+      "back": "Adalet ve İçişleri Bakanları yürütür.",
+      "articleRefs": [
+        "36"
+      ]
+    }
+  ]
+}

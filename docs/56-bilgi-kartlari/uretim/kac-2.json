@@ -1,0 +1,233 @@
+{
+  "deck": {
+    "topicId": "1589379f-ddfe-4ce9-b572-543838b93032",
+    "legislationSlug": "5607-sayili-kacakcilikla-mucadele-kanunu",
+    "sourceLabel": "AI bilgi kartı — 5607 Sayılı Kaçakçılıkla Mücadele Kanunu md 7–16, 16/A",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: resmî madde metni + çıkmış sorular)"
+  },
+  "cards": [
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Hukuken geçerli mazereti olmadan izinsiz olarak gümrük bölgesine girip sahile ya da başka bir gemiye yanaşan geminin kaptanı, hangi hallerde kaçakçılık suçu hükümlerine göre cezalandırılır?",
+      "back": "Gemide yasak eşya ya da yükleme veya taşıma belgelerinde yer almayan eşya bulunması hallerinde.",
+      "explanation": "Bu unsurlar birlikte aranır: hukuken geçerli mazeretin olmaması, izinsiz olarak gümrük bölgesine girme, sahile veya başka bir gemiye yanaşma ve gemide bu nitelikte eşya bulunması. Kaptan, Kanundaki kaçakçılık suçuna ilişkin hükümlere göre cezalandırılır.",
+      "articleRefs": [
+        "7"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Kaçak eşya, silâh, mühimmat, patlayıcı ya da uyuşturucu bulunduğundan şüphe edilen kap, ambalaj, taşıma araçları ve kişilerin üzerinde arama ve elkoyma hangi kanuna göre yapılır?",
+      "back": "Ceza Muhakemesi Kanunu (5271 sayılı) uyarınca yerine getirilir.",
+      "explanation": "Kural her türlü kap, ambalaj ve taşımaya yarayan diğer araçlar ile kişilerin üzerlerinde yapılacak arama ve elkoymaları kapsar.",
+      "articleRefs": [
+        "9"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Gümrük salonları ve gümrük kapılarında kaçak eşya sakladığından kuşkulanılan kişinin üzerini, eşyasını ve aracını kim arayabilir?",
+      "back": "Gümrük görevlileri; gümrük kontrolü amacıyla arayabilir.",
+      "explanation": "Arama kişinin üzerini, eşyasını, yüklerini ve araçlarını kapsar. Arama sonucunda tespit edilen kaçak eşyaya derhal elkonulur.",
+      "articleRefs": [
+        "9"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Gümrük bölgesine Gümrük Kanunu gereğince belirlenen kapı ve yollar dışından girerken rastlanan kişi ve taşıma araçlarına ne yapılır?",
+      "back": "Yetkili memurlarca durdurulur; kişilerin eşya, yük ve üzerleri ile varsa taşıma araçları aranır.",
+      "explanation": "Gümrük bölgesine belirlenen kapı ve yollar dışından girmek, çıkmak veya geçmek yasaktır. Aramada tespit edilen kaçak eşyaya derhal elkonulur.",
+      "articleRefs": [
+        "9"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Kaçakçılık suçunda kullanıldığı için elkonulan taşıt hangi hallerde elkoyma kararı veren mercilerce alıkonulur?",
+      "back": "13 üncü maddenin birinci fıkrasının (a) bendine girmesi, Türkiye’de sicile kayıtlı olmaması ya da soruşturma ve kovuşturma sürerken kaçakçılık suçunda tekrar kullanılması halinde.",
+      "explanation": "(a) bendi, kaçak eşyanın suçun işlenmesini kolaylaştıracak veya fiilin ortaya çıkmasını engelleyecek şekilde özel olarak hazırlanmış gizli tertibat içinde saklanması ya da taşınmasıdır.",
+      "articleRefs": [
+        "10",
+        "13"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Alıkonulan taşıtı geri almak isteyen sahip, teminatı gümrük idaresine hangi süre içinde teslim etmelidir?",
+      "back": "Alıkoyma tarihinden itibaren otuz gün içinde; taşıtın değeri kadar teminat teslim edilirse taşıt iade edilir.",
+      "explanation": "Teminat verilmezse taşıt, soruşturma ve kovuşturma sonucu beklenmeksizin tasfiye idaresince derhal tasfiye olunur. Değer; kara taşıtlarında kasko değeri, deniz taşıtlarında tekne ve makine sigortasına esas değer, sigortasız taşıtlar ile hava ve demiryolu taşıtlarında piyasa değeridir.",
+      "articleRefs": [
+        "10"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Hakkında elkoyma kararı olduğu hâlde alıkonulmayan ve gümrük idaresine ya da yediemine teslim edilmiş taşıt, sahibince hangi süre içinde teslim alınmazsa tasfiye edilir?",
+      "back": "Gümrük idaresinin tebligatından itibaren doksan gün içinde; muhafaza ve diğer masraflar karşılanarak teslim alınmazsa derhal tasfiye olunur.",
+      "explanation": "Tasfiyeyi tasfiye idaresi, soruşturma ve kovuşturma sonucunu beklemeden yapar. Satış yoluyla tasfiyede gelirden muhafaza ve satış masrafları karşılanır; kalan miktar kovuşturma sonucuna göre işlem yapılmak üzere emanet hesabına alınır.",
+      "articleRefs": [
+        "10"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Muhafazası özel tesis gerektiren ya da gümrük idaresinin depolama kapasitesini aşan elkonulmuş eşya, ilgili idarelere verilemiyorsa nereye konulur?",
+      "back": "Büyükşehirler dahil ilçelerde kaymakamın, illerde valinin uygun göreceği yerlere.",
+      "explanation": "Bu eşya önce özelliklerine göre doğrudan ilgili idarelere konulur; bu mümkün olmazsa kaymakam ya da valinin uygun göreceği yerler devreye girer.",
+      "articleRefs": [
+        "11"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Ambalajında bandrol, etiket, hologram, pul veya damga gibi işaret bulunmayan elkonulmuş tütün mamulleri ve alkollü içkiler için el koyan idare ne yapar?",
+      "back": "Numune alarak (mümkün değilse ayırt edici bilgileri tespit ederek) tutanağa bağlar ve imha eder.",
+      "explanation": "Kapsamda etil alkol, metanol, makaron, yaprak sigara kâğıdı, ilaç, tıbbi cihaz ve malzemeler, elektronik sigara ve elektronik nargile ile bunların cihaz, aksam, yedek parça ve solüsyonları da bulunur. Ancak ilaç, ilaç hammaddeleri, tıbbi cihaz ve malzemeler ile etil alkolden imha dışındaki yöntemlerle tasfiyesi uygun görülenler, ilgili bakanlıkların görüşü alınarak Ticaret Bakanlığının çıkardığı yönetmelikle belirlenir.",
+      "articleRefs": [
+        "11"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Yakalanan kaçak akaryakıt, il özel idaresi bulunan bir ilde kime teslim edilir?",
+      "back": "Yakalandığı ildeki il özel idaresine; miktarı, cinsi ve özelliklerini gösteren tutanakla, yakalandığı yerde.",
+      "explanation": "İl özel idaresi bulunmayan yerlerde teslim yatırım izleme ve koordinasyon başkanlığına yapılır. Muhafaza, depolama, yükleme, boşaltma ve nakliye masraflarını da duruma göre il özel idaresi veya yatırım izleme ve koordinasyon başkanlığı karşılar.",
+      "articleRefs": [
+        "11"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Yabancı ülkeden gelen yasak eşya, yükleme veya taşıma belgelerinde belirtilerek gümrüğe getirilirse ne yapılır?",
+      "back": "Teminat altında ve gerekli güvenlik tedbirleri alınarak geldiği yere ya da başka bir ülkeye iade ve sevk olunur.",
+      "articleRefs": [
+        "12"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Toplum ve çevre sağlığı yönünden tehlikeli kaçak eşya, ilgililer hakkında soruşturma başlatılmışken getirildiği ülkeye iade edilebilir mi?",
+      "back": "Evet. Soruşturma işlemleri başlatılmakla birlikte bu eşya ve atık maddeler gümrük yetkililerince derhal getirildiği ülkeye iade edilir.",
+      "explanation": "Soruşturmanın başlatılması iadeyi bekletmez; iadeyi gümrük yetkilileri yapar.",
+      "articleRefs": [
+        "12"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Kaçakçılıkla Mücadele Kanununda tanımlanan suçlarda eşya ve kazanç müsaderesine hangi kanunun hükümleri uygulanır?",
+      "back": "Türk Ceza Kanununun (5237 sayılı) eşya ve kazanç müsaderesine ilişkin hükümleri.",
+      "explanation": "Kaçak eşya taşımasında kullanılan taşıma araçlarının müsaderesi ise maddede sayılan koşullardan birinin gerçekleşmesine bağlıdır.",
+      "articleRefs": [
+        "13"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Kaçak eşya taşımasında bilerek kullanılan taşıma aracı, başka bir koşul aranmadan müsadere edilebilir mi?",
+      "back": "Hayır. Gizli tertibat, kaçak eşyanın yükün tamamını ya da ağırlıklı bölümünü oluşturması veya eşyanın yasak ya da sağlığa zararlı olması koşullarından biri gerekir.",
+      "explanation": "Koşullar: kaçak eşyanın özel hazırlanmış gizli tertibatta saklanması veya taşınması; taşıma aracı yüküne göre miktar ya da hacimce tamamını veya ağırlıklı bölümünü oluşturması ya da naklinin aracın kullanılmasını gerekli kılması; Türkiye’ye girmesi veya Türkiye’den çıkması yasak ya da toplum veya çevre sağlığı açısından zararlı olması. Kullanılmaya teşebbüs edilen araç için de aynı koşullar aranır.",
+      "articleRefs": [
+        "13"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Etkin pişmanlık nedeniyle faile ceza verilmezse suç konusu eşya müsadere edilebilir mi?",
+      "back": "Evet. Cezaya hükmolunmaması ya da kamu davasının düşmesine karar verilmesi, suç konusu eşya bakımından müsadere hükümlerinin uygulanmasına engel değildir.",
+      "explanation": "Hüküm 'sadece suç konusu eşya ile ilgili olarak' kurulmuştur; etkin pişmanlık hâli eşyanın müsaderesini ortadan kaldırmaz.",
+      "articleRefs": [
+        "13"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Kaçakçılık suçları dolayısıyla müsadere yaptırımının konusu olan eşyanın kaim değerinden ne anlaşılır?",
+      "back": "Eşyanın gümrüklenmiş değeri.",
+      "articleRefs": [
+        "15"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Kaçak şüphesiyle el konulan eşya hakkında tasfiye kararı, kural olarak el koyma tarihinden itibaren hangi süre içinde verilir?",
+      "back": "Altı ay içinde; gerekli tespitler yaptırılarak tasfiye kararı verilir.",
+      "explanation": "Kaçak akaryakıt bu kuralın dışındadır. Süre içinde karar verilmezse eşya derhal tasfiye edilir; tasfiyeden önce mümkünse numune alınır, değilse eşyanın her türlü ayırt edici özelliği tespit edilir.",
+      "articleRefs": [
+        "16"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "El konulan eşyanın değerinde esaslı ölçüde kayıp meydana gelme tehlikesi varsa tasfiye kararı el koyma tarihinden itibaren hangi süre içinde verilir?",
+      "back": "Bir ay içinde.",
+      "explanation": "Aynı kısa süre, eşyanın zarara uğraması tehlikesinde ve muhafazasının ciddi külfet oluşturduğu hâlde de uygulanır.",
+      "articleRefs": [
+        "16"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Kovuşturma aşamasında el konulan eşya hakkında tasfiye kararını hâkim mi verir?",
+      "back": "Hayır. Kovuşturma aşamasında tasfiye kararını mahkeme verir; hâkim soruşturma aşamasında karar verir.",
+      "explanation": "Müsadere yaptırımının uygulanabileceği eşya sahibine iade edilemez. Tasfiyenin kendisi ise tasfiye idaresi tarafından Gümrük Kanunu hükümlerine göre yapılır.",
+      "articleRefs": [
+        "16"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Sahipsiz yakalanan kaçak akaryakıtın ulusal marker saha ölçüm sonucu Enerji Piyasası Düzenleme Kurumunun belirlediği şart ve seviyede değilse ne olur?",
+      "back": "Analiz yapılmaksızın teknik düzenlemelere aykırı kabul edilir ve tasfiye edilir.",
+      "articleRefs": [
+        "16/A"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Teknik düzenlemelere uygun olmayan kaçak akaryakıt rafineriye satılırken beyaz ürünler dışındaki ürünlerde satış bedelinin alt sınırı nedir?",
+      "back": "Rafineride bir önceki ay sonunda oluşan ham petrol/devir maliyet fiyatının yüzde altmışı; bedel bundan az olamaz.",
+      "explanation": "Beyaz ürünlerde (benzin, motorin türleri, nafta, gaz yağı, jet yakıtı ve solvent türleri) bedel bu maliyet fiyatından az olamaz. Satışı il özel idaresi veya yatırım izleme ve koordinasyon başkanlığı en yakın rafineriye yapar; bedel bu idarelerin bütçesine gelir kaydedilir.",
+      "articleRefs": [
+        "16/A"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Rafineriler teknik düzenlemelere uygun olmayan her kaçak akaryakıtı teslim almakla yükümlü müdür?",
+      "back": "Hayır. Yalnız üretim süreçlerine zarar vermeyecek evsafta olduğu numune analiz sonuçlarıyla kanıtlanan kaçak akaryakıtı teslim almakla yükümlüdür.",
+      "explanation": "Analizde rafineri işlem süreçlerine zarar vereceği anlaşılan kaçak akaryakıt, geçici faaliyet belgesi ve/veya çevre lisansı almış atık yakma ve beraber yakma tesislerinde bertaraf ettirilir.",
+      "articleRefs": [
+        "16/A"
+      ],
+      "counterNumbers": []
+    }
+  ]
+}

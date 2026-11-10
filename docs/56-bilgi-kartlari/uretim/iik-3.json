@@ -1,0 +1,295 @@
+{
+  "deck": {
+    "topicId": "4d185b8e-a24f-4f0e-8c29-d17e03eeec11",
+    "legislationSlug": "5442-il-idaresi-kanunu",
+    "sourceLabel": "AI bilgi kartı — 5442 İl İdaresi Kanunu md 22–28, 30–32, 34–42",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: resmî madde metni + çıkmış sorular; stil kapısı 1 açıklama yeniden yazıldı)"
+  },
+  "cards": [
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "İl idare şube başkanları ve kaymakamlar, mevzuatın uygulanmasında istizana muhtaç gördükleri bir konuyu valiye sorduğunda vali meseleyi kimle görüşüp inceler?",
+      "back": "Meselenin ait olduğu şube başkanıyla görüşüp inceler.",
+      "explanation": "Soru; kanun, Cumhurbaşkanlığı kararnamesi, diğer mevzuat ve Cumhurbaşkanınca alınmış karar ve tedbirlerin uygulanması sırasında doğar. Soranlar il idare şube başkanları ve kaymakamlardır.",
+      "articleRefs": [
+        "22"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "İl idare şube başkanı, valinin re'sen verdiği emri mevzuata aykırı bulduğunu yazdı. Vali emrin uygunluğunda ısrar ederse ne yapar?",
+      "back": "Yazılı olarak emir verir ve aynı zamanda işi ilgili mercie yazar.",
+      "explanation": "Süreç, şube başkanının ya da kaymakamın aykırılık kanaatini valiye yazmasıyla başlar. Vali ısrar ederse emir yazılı hâle gelir.",
+      "articleRefs": [
+        "23"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Vali, idarede birliği sağlamak için idare şube başkanlarını yılda en az kaç defa heyet hâlinde toplar?",
+      "back": "Yılda dört defadan az olmamak üzere, lüzum gördüğü zamanlarda toplar.",
+      "explanation": "Dört, alt sınırdır. Toplantı zamanlarını vali lüzum gördükçe belirler. Amaç; idarede birliğin sağlanması, işlerin düzenleştirilmesi ve teşkilatın ahenkli çalışmasıdır.",
+      "articleRefs": [
+        "24"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Valinin idare şube başkanlarıyla yaptığı heyet toplantısında alınan kararların yürütülmesi kimler için mecburidir?",
+      "back": "Bütün idare şubeleri için mecburidir.",
+      "explanation": "Bu görüşmelerde istihsalin artırılması, ticaret ve ulaştırma işlerinin kolaylaştırılması, çiftçinin kalkındırılması ve umumi refahın sağlanması gibi konularda gerekli tedbirler planlaştırılır.",
+      "articleRefs": [
+        "24"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Valinin idare şube başkanları toplantısına başka kimler çağrılabilir?",
+      "back": "Kaymakamlar, belediye başkanları, ticaret ve ziraat odası başkanları ile diğer memur ve ilgililer çağrılabilir.",
+      "explanation": "Kanun bu kişiler için \"çağrılabilir\" ifadesini kullanır. Çağırıp çağırmamak valinin takdirindedir.",
+      "articleRefs": [
+        "24"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Vali, ilçe hizmetlerinin ahenkli yürütülmesini görüşmek için kaymakamları yılda kaç defa toplantıya çağırır?",
+      "back": "Yılda bir defa çağırır.",
+      "explanation": "Toplantıda ilin yönetim, ekonomi, sağlık ve sosyal yardım, kültür ve bayındırlık işleriyle ilgili alınması gereken en uygun tedbirler görüşülür.",
+      "articleRefs": [
+        "25"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Valinin kaymakamlarla yaptığı yıllık toplantıda işler neye göre sıralanarak programlanır?",
+      "back": "Önemlerine ve eldeki imkânlara göre programlanır; ardından ilçeye düşen vazifeler ayrılır.",
+      "explanation": "Aynı toplantıda bir yıl önceki programın uygulama neticeleri de gözden geçirilir.",
+      "articleRefs": [
+        "25"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Vali, ilin durumu ve Cumhurbaşkanınca alınan karar ve tedbirlerin sonuçları hakkındaki raporu kimlere verir?",
+      "back": "Cumhurbaşkanlığına ve ilgili Bakanlıklara verir; yıl sonunda veya lüzum gördüğü diğer zamanlarda.",
+      "explanation": "Rapor; ilin idari, mali, ekonomik, kültürel, sağlık ve sosyal durumunu, ayrıca karar ve tedbirlerin halk üzerindeki etkilerini kapsar.",
+      "articleRefs": [
+        "26"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Vali her yıl ilin bütün köylerini teftiş eder mi?",
+      "back": "Hayır. Her yıl ilin bütün ilçe ve bucaklarını teftiş eder; köylerden ise sırasıyla programa alınan köyleri.",
+      "explanation": "Vali, il içindeki teşkilatı da teftiş eder ve halkın dilek ve ihtiyaçlarını yerinde gözden geçirerek gereğini yapar. Teftiş zamanını kendisi münasip gördüğü şekilde belirler.",
+      "articleRefs": [
+        "26"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Kaymakam, ilçede kimin idari yürütme vasıtasıdır?",
+      "back": "Cumhurbaşkanının idari yürütme vasıtasıdır.",
+      "explanation": "İlçe genel idaresinin başı ve mercii kaymakamdır. İlçenin genel idaresinden de kaymakam sorumludur.",
+      "articleRefs": [
+        "27"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "İlçe idare şube başkanlarının emri altında çalışan memurlar nasıl adlandırılır?",
+      "back": "İlçenin ikinci derecede memurları olarak adlandırılır.",
+      "explanation": "İlçedeki genel idare teşkilatının başında bulunanlar ise ilçe idare şube başkanlarıdır.",
+      "articleRefs": [
+        "28"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Kaymakam, ilçe idare şube başkanlarına ve ikinci derecedeki memurlara savunma aldıktan sonra hangi disiplin cezalarını verip uygular?",
+      "back": "Uyarma ve kınama cezalarını verir. Re'sen verdiği bu cezalar kesindir ve tebliğ tarihinden itibaren sicile geçer.",
+      "explanation": "Daha ağır disiplin cezaları için kaymakam, özel kanun hükümlerine göre teklif ve talepte bulunabilir. Ayrıca ilçe memurlarına takdirname verebilir.",
+      "articleRefs": [
+        "31"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Kaymakam, ilçe idare şube başkanlarına acele hâllerde kaç güne kadar izin verebilir?",
+      "back": "8 güne kadar izin verebilir.",
+      "explanation": "Tayini kendisine ait memurlara ise yıllık izin süresine mahsup edilmek üzere bir aya kadar izin verebilir. Tayini kaymakama ait olmayan memur ve müstahdemlere izin verilmeden önce kaymakamın mütalaası alınır.",
+      "articleRefs": [
+        "31"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Kaymakam, denetleme sırasında iş başında kalmasında mahzur gördüğü ilçe idare şube başkanını kendiliğinden işten el çektirebilir mi?",
+      "back": "Hayır. İlçe idare şube başkanlarını ancak valinin muvafakatiyle işten el çektirebilir. Re'sen ve kendi sorumluluğu altında el çektirebildiği kişiler diğer memur ve müstahdemlerdir.",
+      "explanation": "Bu yetki, kaymakamın denetlemesi sırasında gördüğü mahzur üzerine kullanılır.",
+      "articleRefs": [
+        "31"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "İlçe sınırları içindeki genel ve özel kolluk kuvvet ve teşkilatının amiri kimdir?",
+      "back": "Kaymakamdır.",
+      "explanation": "Kaymakam, suç işlenmesini önlemek ve kamu düzen ve güvenini korumak için kolluk kuvvetlerini istihdam eder. Kolluk amir ve memurları, kaymakamın verdiği emirleri derhal yerine getirmekle ödevlidir.",
+      "articleRefs": [
+        "32"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Kaymakam, ilçe genel ve özel kolluk kuvvetleri mensuplarının yerlerini sürekli olarak değiştirebilir mi?",
+      "back": "Evet. Valinin tasvibiyle, geçici veya sürekli olarak değiştirebilir.",
+      "explanation": "Kaymakam, ilçe sınırları içindeki genel ve özel kolluk kuvvet ve teşkilatının amiridir. Bu kuvvetleri istihdam eder. Bu teşkilatın amir ve memurları, kaymakamın verdiği emirleri derhal yerine getirmekle ödevlidir. Kolluk mensuplarının yerlerini kaymakam değiştirir; değişiklik geçici ya da sürekli olabilir, ama her iki hâlde de valinin tasvibi gerekir.",
+      "articleRefs": [
+        "32"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Kaymakam, ilçedeki olayların emrindeki kolluk kuvvetleriyle önlenemeyeceği kanısına varırsa ne yapar?",
+      "back": "Hemen valiye bilgi vererek yardım ister ve en yakın askeri (Kara, Deniz ve Hava) komutanlara haber verir.",
+      "explanation": "Aynı yol, ilçe içindeki kolluk kuvvetleriyle önlenemeyecek olağanüstü ve ani olaylar karşısında da izlenir. Yardıma gelen askeri kuvvet, bu kanunun 11/D maddesi uyarınca kendisine verilecek görevi yerine getirir.",
+      "articleRefs": [
+        "32"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "İlçedeki belediye başkanları ve köy muhtarları, idarelerinin iş ve ihtiyaçlarıyla ilgili üst makamlara yazışmalarını hangi yolla yapar?",
+      "back": "Kaymakamlık vasıtasıyla yaparlar.",
+      "explanation": "Bu kural, ilçe çevresindeki belediyelerin başkanlarını ve köy muhtarlarını kapsar.",
+      "articleRefs": [
+        "35"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Kaymakam her yıl ilçedeki köylerin en az ne kadarını teftiş eder?",
+      "back": "Köylerin en az yarısını teftiş eder.",
+      "explanation": "Kaymakam teftiş sırasında halkın dilek ve ihtiyaçlarını yerinde gözden geçirir ve gereğini yapar.",
+      "articleRefs": [
+        "36"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Kaymakam, her yıl ilçedeki bucakların yarısını teftiş etmekle yetinebilir mi?",
+      "back": "Hayır. Her yıl ilçenin bütün bucaklarını teftiş eder; en az yarısı kaydı köyler içindir.",
+      "explanation": "Kaymakam, ilçe içindeki teşkilatı da her yıl teftiş eder.",
+      "articleRefs": [
+        "36"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Kaymakam devir ve teftiş sonucunu kime bildirir?",
+      "back": "Valiye bildirir; sonucu bir raporla iletir.",
+      "explanation": "Kaymakam, devir ve teftişe çıkacağı zaman da valiyi haberdar eder.",
+      "articleRefs": [
+        "36"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "İlçe idare şube başkanları, şubelerine ait görevlerin sürat ve intizamla görülmesinden kime karşı sorumludur?",
+      "back": "Doğrudan doğruya kaymakama karşı sorumludur.",
+      "explanation": "Şube başkanları ayrıca kaymakamın emirlerini yerine getirmek, tevdi edilen işleri tetkik edip mütalaalarını zamanında bildirmek ve istenen her türlü malumatı vermekle mükelleftir.",
+      "articleRefs": [
+        "37"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "İlçe idare şube başkanı, kaymakamın re'sen verdiği emri mevzuata aykırı bulduğunu yazdı. Kaymakam ısrar ederse ne yapar?",
+      "back": "Yazılı olarak emir verir ve aynı zamanda keyfiyeti valiye de bildirir.",
+      "explanation": "Süreç, şube başkanının aykırılık kanaatini kaymakama yazmasıyla başlar. Kaymakam ısrar ederse emir yazılı hâle gelir.",
+      "articleRefs": [
+        "38"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Kaymakamın ilçe idare şube başkanları, memurlar ve oda başkanlarıyla yapacağı heyet toplantısına gelmemek ne sayılır?",
+      "back": "Vazifeden kaçınma sayılır.",
+      "explanation": "Kaymakam bu toplantıyı lüzum gördüğü zamanlarda yapar. Toplantıya belediye, ticaret ve ziraat odaları başkanları da çağrılır. Alınan kararlar valiye bildirilir.",
+      "articleRefs": [
+        "40"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Bucak nedir?",
+      "back": "Coğrafya, ekonomi, güvenlik ve mahalli hizmet bakımlarından aralarında münasebet bulunan kasaba ve köylerden meydana gelen bir idare bölümüdür.",
+      "explanation": "Bucağı oluşturan birimler kasaba ve köylerdir. Bunları bir arada tutan, aralarındaki coğrafi, ekonomik, güvenlik ve mahalli hizmet münasebetidir.",
+      "articleRefs": [
+        "41"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Bucakta en büyük Hükümet memuru ve temsilcisi kimdir?",
+      "back": "Bucak müdürüdür.",
+      "explanation": "Bucak müdürü bu sıfatla bucağın genel idaresinden sorumludur. Kaymakamlar bucağa ait bütün işleri doğrudan doğruya bucak müdürüne yazar.",
+      "articleRefs": [
+        "42"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Bucak müdürü, gözetim ve teftişi altındaki bucak teşkilatı amir ve memurlarına savunmalarını aldıktan sonra hangi disiplin cezasını verir?",
+      "back": "Uyarma cezası verir. Bu ceza kesindir ve tebliğ tarihinden itibaren sicile geçer.",
+      "explanation": "Adli ve askeri teşkilat bu yetkinin dışındadır.",
+      "articleRefs": [
+        "42"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Bucak müdürü, gözetimi altındaki memurlara takdirname verebilir mi?",
+      "back": "Hayır. Takdirname verilmesini ve daha ağır disiplin cezalarını gerektiren hâllerde vali ve kaymakama tekliflerde bulunur.",
+      "explanation": "Bucak müdürünün kendisi verip uyguladığı ceza uyarmadır. Bu ceza kesindir.",
+      "articleRefs": [
+        "42"
+      ],
+      "counterNumbers": []
+    }
+  ]
+}

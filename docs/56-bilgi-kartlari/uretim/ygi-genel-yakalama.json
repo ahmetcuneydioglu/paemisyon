@@ -1,0 +1,167 @@
+{
+  "deck": {
+    "topicId": "f50bc484-d0b4-490d-a104-ab1fc2166120",
+    "legislationSlug": "yakalama-gozaltina-alma-ve-ifade-alma-yonetmeligi",
+    "sourceLabel": "AI bilgi kartı — Yakalama, Gözaltına Alma ve İfade Alma Yönetmeliği md 1–8",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: resmî madde metni + çıkmış sorular)"
+  },
+  "cards": [
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Yakalama, Gözaltına Alma ve İfade Alma Yönetmeliği, kolluğun hangi işlemlerinde uyulacak usul ve esasları düzenler?",
+      "back": "Yakalama, gözaltına alma, muhafaza altına alma ve ifade alma işlemlerinde.",
+      "explanation": "Bu işlemler, adlî soruşturma sırasında kolluk tarafından gerçekleştirilen işlemlerdir.",
+      "articleRefs": [
+        "1"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Kolluk, adlî soruşturma sırasında yakalama, gözaltı ve ifade alma işlemlerini kimin bilgi ve emirleri doğrultusunda yürütür?",
+      "back": "Cumhuriyet savcılarının bilgi ve emirleri doğrultusunda yürütür.",
+      "articleRefs": [
+        "1"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Adlî kolluk görevlisi olmayan kolluk birimleri hangi durumda Yönetmeliğin kapsamına girer?",
+      "back": "Gerektiğinde veya Cumhuriyet savcısının talebi üzerine adlî kolluk görevini ifa ettiklerinde kapsama girerler.",
+      "explanation": "Yönetmelik; yakalama, gözaltına alma, muhafaza altına alma ve ifade alma işlemleriyle birlikte adlî kolluk görevlilerini ve bu görevi ifa eden bütün kolluk birimlerini kapsar.",
+      "articleRefs": [
+        "2"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Yönetmeliğin dayanakları arasında yer alan Ceza Muhakemesi Kanunu kaç sayılıdır?",
+      "back": "5271 sayılı Ceza Muhakemesi Kanunu; 4/12/2004 tarihlidir.",
+      "articleRefs": [
+        "3"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Yönetmeliğin dayanakları arasında yer alan Polis Vazife ve Salahiyet Kanunu kaç sayılıdır?",
+      "back": "2559 sayılı Polis Vazife ve Salahiyet Kanunu; 4/7/1934 tarihlidir.",
+      "articleRefs": [
+        "3"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Yönetmelikte tanımlanan \"gecikmesinde sakınca bulunan hâl\" nedir?",
+      "back": "Derhâl işlem yapılmazsa suçun iz, eser, emare ve delillerinin kaybolması, şüphelinin kaçması veya kimliğinin saptanamaması ihtimalinin ortaya çıkması hâlidir.",
+      "articleRefs": [
+        "4"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Müştekinin kolluk tarafından dinlenip tutanağa geçirilmesi ifade alma mıdır?",
+      "back": "Hayır, bu bilgi almadır. İfade alma, şüphelinin kolluk görevlileri veya Cumhuriyet savcısı tarafından soruşturma konusu suçla ilgili olarak dinlenmesidir.",
+      "explanation": "Bilgi alma; müşteki, suçtan zarar gören ve suç işleme şüphesi altında bulunmayan diğer kişilerin dinlenip tutanağa geçirilmesidir. Şüpheli veya sanığın hâkim ya da mahkeme tarafından dinlenmesinin adı ise sorgudur.",
+      "articleRefs": [
+        "4"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Herkes tarafından geçici olarak yakalama hangi hâllerde yapılabilir?",
+      "back": "Kişiye suçu işlerken rastlandığında ya da suçüstü bir fiilden dolayı izlenen kişinin kaçma ihtimali varsa veya hemen kimliğini belirleme imkânı yoksa.",
+      "explanation": "Maddede ayrıca kolluk görevlilerinin yakalama yetkisi sayılır. Bunlara örnek olarak emre itaatsizlik edenler, hakkında yakalama emri bulunanlar ve uyuşturucu ve uyarıcı maddeleri alan, satan, bulunduran veya kullananlar gösterilebilir.",
+      "articleRefs": [
+        "5"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Kimliğini ispat edemeyen kişi en fazla ne kadar süreyle yakalanıp muhafaza altına alınabilir?",
+      "back": "En fazla yirmidört saat. Bu süre, aranan kişilerden olup olmadığı anlaşılıncaya veya gerçek kimliği ortaya çıkıncaya kadar geçerlidir.",
+      "explanation": "Yetki iki grup kişiyi kapsar: kimliğini bir belgeyle ya da kolluk kuvvetince tanınmış veya güvenilir kişilerin tanıklığıyla ispat edemeyenler ve gösterdikleri belgelerin doğruluğundan şüphe edilenler. Bu kişilere kimliklerini ispatlamaları için gerekli kolaylık gösterilir.",
+      "articleRefs": [
+        "5"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Yakalanan kişiye yakalama sebebi ve hakları hangi biçimde bildirilir?",
+      "back": "Herhâlde yazılı olarak bildirilir; bu hemen mümkün değilse sözlü olarak derhâl bildirilir. Bildirimde suç ayrımı gözetilmez.",
+      "explanation": "Bildirilenler şunlardır: yakalama sebebi ve hakkındaki iddialar; susma, müdafiden yararlanma ve yakalanmaya itiraz etme hakları; diğer kanunî hakları ve itiraz hakkını nasıl kullanacağı. Ayrıca \"Yakalama ve Gözaltına Alma Tutanağı Şüpheli ve Sanık Hakları Formu\" (EK-A) düzenlenir ve imzalı bir örneği kişiye verilir.",
+      "articleRefs": [
+        "6"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Kolluk, Cumhuriyet savcısının sözlü emrini uygulamak için emrin yazılı hâle getirilmesini bekler mi?",
+      "back": "Hayır. Kolluk görevlisi, emrin yazılı hâle getirilmesini beklemeden sözlü emrin gereğini yerine getirir.",
+      "explanation": "Sözlü emir en kısa zamanda yazılı hâle dönüştürülür. Mümkünse en seri iletişim vasıtasıyla ilgili kolluğa bildirilir; mümkün değilse kolluk görevlilerinin alması için hazır edilir.",
+      "articleRefs": [
+        "6"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Muhafaza altına alınan ve ıslah ya da tedavi kurumuna götürülmesi gereken kişi, kurumca teslim alınmazsa ne yapılır?",
+      "back": "Durum bir tutanakla tespit edilir ve tutanağın bir sureti mülkî amire gönderilir.",
+      "explanation": "Muhafaza altına alınmak amacıyla yakalanan kişiye önce kaba üst araması yapılır ve kişi silâh ve benzeri unsurlardan arındırılır. Ardından yakalama sebebi, yakalamaya itiraz hakkı ve bu hakkın nasıl kullanılacağı derhâl bildirilir.",
+      "articleRefs": [
+        "6"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Kelepçe yalnız tutuklanarak nakledilen kişilere mi takılabilir?",
+      "back": "Hayır. Gerekli belirtiler varsa yakalanan kişilere de kelepçe takılabilir.",
+      "explanation": "Hüküm, yakalanan kişileri ve tutuklanarak bir yerden diğer bir yere nakledilen kişileri birlikte kapsar. İki durumda da belirtilerin varlığı aranır.",
+      "articleRefs": [
+        "7"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Yönetmeliğe göre yakalanan yabancının durumu hangi temsilciliklere haber verilir?",
+      "back": "Vatandaşı olduğu ülkenin büyükelçiliği veya konsolosluğuna; yabancı yazılı olarak karşı çıkmadıkça.",
+      "articleRefs": [
+        "8"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Yakalanan kişi, haber vereceği yakınının telefon numarasını bilmiyorsa haber verme nasıl yapılır?",
+      "back": "İlgili yer kolluğu vasıtasıyla haber verilir.",
+      "explanation": "Haber verme, Cumhuriyet savcısının emriyle gecikmeksizin bir yakına veya kişinin belirlediği birine yapılır. Kişinin yanında biri varsa o kişi aracılığıyla haber verilir. Kişi suçun işlendiği veya yakalandığı yerde oturuyorsa ve numara biliniyor ya da kolluk vasıtasıyla tespit edilebiliyorsa telefonla haber verilir.",
+      "articleRefs": [
+        "8"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Muhafaza altına alınmak amacıyla yakalanan kişinin yakalandığı kimlere bildirilir?",
+      "back": "Kişinin istediği kanunî yakınlarına derhâl bildirilir.",
+      "articleRefs": [
+        "8"
+      ]
+    }
+  ]
+}

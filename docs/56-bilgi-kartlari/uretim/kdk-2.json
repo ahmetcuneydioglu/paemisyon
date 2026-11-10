@@ -1,0 +1,288 @@
+{
+  "deck": {
+    "topicId": "387f7067-fbf4-4f00-876c-e9cdc903039a",
+    "legislationSlug": "6328-sayili-kamu-denetciligi-kurumu-kanunu",
+    "sourceLabel": "AI bilgi kartı — 6328 Sayılı Kamu Denetçiliği Kurumu Kanunu md 18–37",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: resmî madde metni + çıkmış sorular)"
+  },
+  "cards": [
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Kamu Denetçiliği Kurumunun inceleme ve araştırma konusuyla ilgili istediği bilgi ve belgeler kaç gün içinde verilmelidir?",
+      "back": "Otuz gün içinde. Süre, isteğin tebliğ edildiği tarihten itibaren işler.",
+      "explanation": "İstek, Kurumun inceleme ve araştırma konusuyla ilgili bilgi ve belgeleri kapsar. Bu bilgi ve belgelerin süresi içinde verilmesi zorunludur.",
+      "articleRefs": [
+        "18"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Kurumun istediği bilgi ve belgeleri haklı bir neden olmaksızın süresinde vermeyen hakkında soruşturmayı kim açar?",
+      "back": "İlgili merci açar. Soruşturma, Başdenetçi veya denetçinin başvurusu üzerine açılır.",
+      "explanation": "Devlet sırrı veya ticari sır niteliğindeki bilgi ve belgeler, yetkili mercilerin en üst makam veya kurulunca gerekçesi belirtilerek verilmeyebilir. Ancak Devlet sırrı niteliğindekileri Başdenetçi veya görevlendireceği denetçi yerinde inceleyebilir.",
+      "articleRefs": [
+        "18"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Kurumda bilirkişi olarak görevlendirilen bir kamu görevlisine ödenecek ücretin üst sınırı hangi gösterge rakamıyla hesaplanır?",
+      "back": "(1.000) gösterge rakamının memur aylık katsayısıyla çarpımıyla hesaplanır. Her inceleme ve araştırma konusu için bu miktar geçilemez.",
+      "explanation": "Kamu görevlisi olmayan bilirkişide gösterge rakamı (2.000)'dir. Ücret, görevlendirmeyi yapanın kararıyla ödenir. Ödemeler damga vergisi hariç herhangi bir vergi ve kesintiye tabi tutulmaz. 6245 sayılı Harcırah Kanunu hükümleri saklıdır.",
+      "articleRefs": [
+        "19"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Kamu denetçiliği uzmanları inceleme ve araştırmada bilirkişi görevlendirebilir mi?",
+      "back": "Hayır. Bilirkişi görevlendirme yetkisi Başdenetçi veya denetçilere aittir.",
+      "explanation": "Aynı maddede uzmanlara tanınan yetki, tanık ya da ilgili kişileri dinlemektir. Bu yetkiyi Başdenetçi ve denetçiler de kullanır.",
+      "articleRefs": [
+        "19"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Kurum inceleme ve araştırmasını en geç ne kadar sürede sonuçlandırır?",
+      "back": "En geç altı ay içinde. Süre başvuru tarihinden itibaren işler.",
+      "explanation": "Kurum, inceleme ve araştırma sonucunu ve varsa önerilerini ilgili mercie ve başvurana bildirir.",
+      "articleRefs": [
+        "20"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Kurum inceleme ve araştırma sonucunu bildirirken başvurana ayrıca neleri gösterir?",
+      "back": "İşleme karşı başvuru yollarını, başvuru süresini ve başvurulacak makamı gösterir.",
+      "explanation": "İlgili merci, Kurumun önerdiği çözümü uygulanabilir nitelikte görmezse bunun gerekçesini otuz gün içinde Kuruma bildirir.",
+      "articleRefs": [
+        "20"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Başvuru Kamu Denetçiliği Kurumunca reddedilirse dava açma süresi baştan mı başlar?",
+      "back": "Hayır. Durmuş olan dava açma süresi, gerekçeli ret kararının ilgiliye tebliğinden itibaren kaldığı yerden işlemeye başlar.",
+      "explanation": "Ret hâlinde sürenin yeniden işlediği an, gerekçeli ret kararının ilgiliye tebliğidir. Süre sıfırlanmaz; kalan kısmı işler.",
+      "articleRefs": [
+        "21"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Kurum başvuruyu yerinde görüp kabul etti. İlgili merci öneri üzerine kaç gün içinde işlem tesis etmez veya eylemde bulunmazsa dava açma süresi yeniden işler?",
+      "back": "Otuz gün. Bu süre içinde işlem ya da eylem olmazsa durmuş olan dava açma süresi kaldığı yerden işlemeye başlar.",
+      "articleRefs": [
+        "21"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Kurum inceleme ve araştırmasını başvuru tarihinden itibaren altı ay içinde sonuçlandıramazsa durmuş olan dava açma süresine ne olur?",
+      "back": "Kaldığı yerden işlemeye başlar.",
+      "articleRefs": [
+        "21"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Komisyon, Kamu Denetçiliği Kurumunun yıllık raporunu kaç ay içinde görüşür?",
+      "back": "İki ay içinde; araverme ve tatil dönemleri hariçtir. Komisyon hazırladığı raporu Genel Kurula sunulmak üzere Başkanlığa gönderir.",
+      "explanation": "Kurum raporu her takvim yılı sonunda hazırlayıp Komisyona sunar. Komisyonun raporu Genel Kurulda ivedilikle görüşülür. Kurumun yıllık raporu ayrıca Resmî Gazetede yayımlanır. Kurum, açıklanmasında fayda gördüğü hususları yıllık raporu beklemeksizin her zaman kamuoyuna duyurabilir.",
+      "articleRefs": [
+        "22"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Kamu Denetçiliği Kurumunun faaliyetleri hakkında açıklama yapmaya kim yetkilidir?",
+      "back": "Başdenetçi veya görevlendireceği denetçi yetkilidir.",
+      "articleRefs": [
+        "23"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Genel Sekreter olarak atanacak kişinin Devlet Memurları Kanununa tabi görevlerde kaç yıl hizmeti bulunmalıdır?",
+      "back": "On yıl. Ayrıca en az dört yıllık yükseköğretim kurumu mezunu olmalı ve aynı Kanunun 48 inci maddesindeki şartları taşımalıdır.",
+      "explanation": "Genel Sekreteri Başdenetçi atar. Diğer personeli de Başdenetçi atar.",
+      "articleRefs": [
+        "24"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Kamu denetçiliği uzman yardımcılığına atanabilmek için yaş sınırı nedir?",
+      "back": "Sınavın yapıldığı yılın ocak ayının ilk günü itibarıyla otuzbeş yaşını doldurmamış olmak gerekir.",
+      "explanation": "Devlet Memurları Kanununun 48 inci maddesindeki genel şartlar da aranır. Bunların yanında dört yıllık eğitim veren fakülteden ya da denkliği kabul edilmiş yurt içi veya yurt dışı yükseköğretim kurumundan mezuniyet ve giriş sınavında başarı gerekir.",
+      "articleRefs": [
+        "25"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Kamu denetçiliği uzman yardımcıları yeterlik sınavına girebilmek için en az kaç yıl çalışmalıdır?",
+      "back": "En az üç yıl.",
+      "explanation": "Yeterlik sınavında başarılı olanlar, yabancı dil şartını da sağlarsa kamu denetçiliği uzmanı unvanını alır. Mesleğe alınma, yetiştirilme ve yeterlik sınavının şekli yönetmelikle düzenlenir.",
+      "articleRefs": [
+        "26"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Kamu Denetçiliği Kurumu personeli hakkında 6328 sayılı Kanunda hüküm bulunmayan hususlarda hangi kanun uygulanır?",
+      "back": "Devlet Memurları Kanunu hükümleri uygulanır.",
+      "articleRefs": [
+        "27"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Kamu denetçiliği uzmanlarına hangi personele uygulanan mali ve sosyal hak ve yardım hükümleri uygulanır?",
+      "back": "Aynı derecede bulunan adalet uzmanlarına uygulanan hükümler uygulanır.",
+      "explanation": "Uzman yardımcılarına adalet uzman yardımcılarına uygulanan hükümler uygulanır. Kurumun diğer personeline Adalet Bakanlığında aynı unvanlı ve aynı dereceli kadrolarda çalışanların hükümleri uygulanır. Genel Sekretere ise bakanlık genel müdürlerine uygulanan mali ve sosyal hak ve yardımlar uygulanır.",
+      "articleRefs": [
+        "27"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Kamu kurum ve kuruluşlarından Kamu Denetçiliği Kurumunda görevlendirilenlerin sayısı en çok ne kadar olabilir?",
+      "back": "Kamu Denetçiliği Uzmanı kadro sayısının yüzde yirmisini aşamaz.",
+      "explanation": "Görevlendirme kişinin muvafakatiyle yapılır. Süre iki yılı geçemez; ihtiyaç hâlinde bir yıllık dönemler hâlinde uzatılabilir. Kurumun talebi ilgili kurumca on iş günü içinde yerine getirilir. Görevlendirilen personel kurumundan aylıklı izinli sayılır.",
+      "articleRefs": [
+        "28"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Kamu Denetçiliği Kurumunun gelirleri nelerdir?",
+      "back": "Türkiye Büyük Millet Meclisi bütçesinden alınacak Hazine yardımı ile diğer gelirler.",
+      "explanation": "Kurum bütçesinden bu Kanun kapsamındaki görevlerin gerçekleştirilmesine ilişkin giderler yapılır.",
+      "articleRefs": [
+        "29"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Başdenetçi ve Kurum personeli görevlerini yerine getirirken hangi ayırımları yapamaz?",
+      "back": "Dil, ırk, cinsiyet, siyasi düşünce, felsefi inanç, din ve mezhep ayırımı yapamaz.",
+      "explanation": "Aynı kişiler siyasi partilere üye olamaz. Herhangi bir siyasî parti, kişi veya zümrenin yararını veya zararını hedef alan davranışta bulunamaz. Görevleri sebebiyle öğrendikleri mesleki veya ticari sırları görevden ayrılsalar bile açıklayamaz; kendilerinin veya başkalarının yararına kullanamazlar.",
+      "articleRefs": [
+        "30"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Başdenetçi, denetçiler, Genel Sekreter ve kamu denetçiliği uzman ile uzman yardımcıları hangi dereceye kadar hısımlarının şikâyetlerini inceleyemez?",
+      "back": "Üçüncü dereceye kadar (bu derece dâhil) kan ve kayın hısımlarının şikâyetlerini inceleyemezler. Kendilerinin ve eşlerinin şikâyetlerini de inceleyemezler.",
+      "articleRefs": [
+        "30"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Kamu Denetçiliği Kurumu personeli kâr amacı gütmeyen bir kooperatife ortak olabilir mi?",
+      "back": "Evet. Kâr amacı gütmeyen kooperatiflerde ortaklık, resmî veya özel görev alma ve ticaretle uğraşma yasağının dışındadır.",
+      "explanation": "Bilimsel yayında bulunma da bu yasağın dışındadır. Görev veya meslekle ilgili davet edilen ulusal veya uluslararası kongre, konferans ve benzeri toplantılara katılma ile derneklerde üyelik de yasak dışında kalır.",
+      "articleRefs": [
+        "30"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Başdenetçi ve denetçiler hakkında görevleri sebebiyle işledikleri ileri sürülen suçtan ceza soruşturması yapılabilmesi kimin iznine bağlıdır?",
+      "back": "Türkiye Büyük Millet Meclisi Başkanının iznine bağlıdır.",
+      "explanation": "İzin verilmesi veya verilmemesine ilişkin karara karşı itiraz mercii Danıştayın ilgili dairesidir. Ağır ceza mahkemesinin görev alanına giren suçlara ilişkin suçüstü hâli genel hükümlere tabidir.",
+      "articleRefs": [
+        "31"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Başdenetçi ve denetçiler hakkındaki ceza soruşturmasını kim yapar?",
+      "back": "Yargıtay Cumhuriyet Başsavcısı yapar. Açılacak kamu davası Yargıtayın ilgili ceza dairesinde görülür.",
+      "explanation": "Temyiz mercii Yargıtay Ceza Genel Kuruludur. Maddede hüküm bulunmayan hususlarda 4483 sayılı Memurlar ve Diğer Kamu Görevlilerinin Yargılanması Hakkında Kanun uygulanır.",
+      "articleRefs": [
+        "31"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Genel Sekreter, kamu denetçiliği uzman ve uzman yardımcıları hakkında görev suçundan ceza soruşturması yapılabilmesi kimin iznine bağlıdır?",
+      "back": "Başdenetçinin iznine bağlıdır. İzin kararına karşı itiraz mercii Ankara Bölge İdare Mahkemesidir.",
+      "articleRefs": [
+        "32"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Genel Sekreter hakkındaki görev suçu soruşturmasını Ankara Cumhuriyet başsavcısı mı yapar?",
+      "back": "Hayır. Soruşturmayı suçun işlendiği yer Cumhuriyet başsavcısı veya görevlendireceği Cumhuriyet savcısı yapar. Dava aynı yer mahkemesinde görülür.",
+      "explanation": "Maddede Ankara Bölge İdare Mahkemesi, Başdenetçinin izin kararına karşı itiraz merciidir; soruşturma ve dava ise suçun işlendiği yere bağlıdır. Maddede hüküm bulunmayan hususlarda Memurlar ve Diğer Kamu Görevlilerinin Yargılanması Hakkında Kanun uygulanır.",
+      "articleRefs": [
+        "32"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Başdenetçinin sigorta primine esas kazanç tutarı kim esas alınarak belirlenir?",
+      "back": "En yüksek Devlet memuru esas alınarak belirlenir. Denetçiler için bakanlık genel müdürleri esas alınır.",
+      "explanation": "Kurumun tüm personeli 5510 sayılı Kanunun 4 üncü maddesinin birinci fıkrasının (c) bendi kapsamında sigortalı sayılır. Geçici 4 üncü madde kapsamına girenlerin bu görevde geçen süreleri, makam tazminatı ile temsil tazminatı ödenmesi gereken süre olarak değerlendirilir.",
+      "articleRefs": [
+        "33"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Emekli aylığı alırken Başdenetçi seçilen kişinin emekli aylığı kendiliğinden kesilir mi?",
+      "back": "Hayır. Emekli aylığı isteği hâlinde kesilir ve kişi 5510 sayılı Kanunun 4 üncü maddesinin birinci fıkrasının (c) bendi kapsamında yeniden sigortalı sayılır.",
+      "explanation": "Aynı hüküm denetçi seçilenler için de geçerlidir. Aylığını kestirip yeniden prim ödeyenlerin emekli aylıkları, görev süresi bitince genel hükümlere göre yeniden belirlenir.",
+      "articleRefs": [
+        "33"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Başdenetçi ve denetçiler hakkında yaş haddine ilişkin hükümler uygulanır mı?",
+      "back": "Hayır. 5434 sayılı Türkiye Cumhuriyeti Emekli Sandığı Kanununun 40 ıncı maddesinin birinci fıkrası ile 5510 sayılı Kanundaki yaş haddi hükümleri uygulanmaz.",
+      "articleRefs": [
+        "33"
+      ]
+    }
+  ]
+}

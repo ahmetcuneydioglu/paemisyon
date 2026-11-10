@@ -1,0 +1,290 @@
+{
+  "deck": {
+    "topicId": "3f91916c-8d15-40f4-bb20-5bcca9253c34",
+    "legislationSlug": "2918-sayili-karayollari-trafik-kanunu",
+    "sourceLabel": "AI bilgi kartı — 2918 Sayılı Karayolları Trafik Kanunu md 42–47",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: resmî madde metni + çıkmış sorular)"
+  },
+  "cards": [
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Sürücü kurslarında teorik eğitimini tamamlayan adayların teorik sınavını hangi kurum yapar?",
+      "back": "Millî Eğitim Bakanlığı yapar. Sınav yazılı ya da elektronik ortamda olur.",
+      "explanation": "Teorik sınavı geçen ve uygulamalı eğitimini sürücü kursundan alan aday, yine Millî Eğitim Bakanlığınca yapılan uygulamalı sınava girer. O sınavı da geçene motorlu taşıt sürücüsü sertifikası verilir.",
+      "articleRefs": [
+        "42"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Sürücü adaylarından alınacak teorik ve uygulamalı sınav ücretini İçişleri Bakanlığı mı belirler?",
+      "back": "Hayır. Sınav ücretini ve sınav işlerinde görev alanlara ödenecek ücretleri her yıl Millî Eğitim Bakanlığı belirler.",
+      "explanation": "Eğitim ve sınavların süresi, içeriği ve sınav yapıcıların nitelikleri gibi usul ve esaslar, İçişleri Bakanlığının uygun görüşü alınarak Millî Eğitim Bakanlığınca çıkarılacak yönetmelikle belirlenir.",
+      "articleRefs": [
+        "42"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Emniyet Genel Müdürlüğü personeline, sürücü belgesine dönüştürülmek üzere verilecek motorlu taşıt sürücüsü sertifikası illerde Emniyet Genel Müdürünün onayıyla mı verilir?",
+      "back": "Hayır. İllerde valinin onayı gerekir; Emniyet Genel Müdürünün onayı merkez teşkilatı içindir.",
+      "explanation": "Sertifika, Emniyet Genel Müdürlüğünün motorlu araç sürücüsü ihtiyacını karşılamak için verilir. Belirli eğitim programları çerçevesinde ve yönetmelikteki esas ve şartlara uygun olmalıdır. Emniyet Genel Müdürlüğüne bağlı eğitim ve öğretim kurumlarında öğrenim görenler de kapsamdadır.",
+      "articleRefs": [
+        "42"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Er ve erbaş sınıfından askeri araç sürücülerinin özel sınavları ve belge verme usulü hangi düzenlemede gösterilir?",
+      "back": "Milli Savunma Bakanlığınca çıkarılacak yönetmelikte gösterilir. Bu belgelerle hangi cins taşıtların nerelerde kullanılacağı da orada yer alır.",
+      "articleRefs": [
+        "43"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Sürücü belgesi sahibi, ikamet adresi değişikliğini belgeyi veren kuruluşa kaç gün içinde bildirmek zorundadır?",
+      "back": "Otuz gün içinde bildirmelidir. Bildirim, belgeyi veren kuruluşa yapılır.",
+      "articleRefs": [
+        "44"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Sürücü belgesi sahibinde sağlığı bakımından sürücülüğe engel aşikâr bir değişiklik görülüp tespit edilirse trafik görevlileri ne yapar?",
+      "back": "Sürücü belgesini geri alır ve kişinin sağlık kuruluşlarında muayenesini ister.",
+      "explanation": "Geri alma işlemini trafik görevlileri yapar. Bunun için değişikliğin sağlık bakımından sürücülüğe engel ve aşikâr olması, ayrıca tespit edilmesi gerekir.",
+      "articleRefs": [
+        "45"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Karayollarında trafik hangi yönden akar?",
+      "back": "Sağdan akar. Aksine işaret yoksa sürücü aracını gidiş yönüne göre yolun sağından sürer.",
+      "explanation": "Çok şeritli yollarda araç, yol ve trafik durumuna göre hızının gerektirdiği şeritten sürülür. Gidişe ayrılan en soldaki şerit sürekli olarak işgal edilmez.",
+      "articleRefs": [
+        "46"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Aynı yönde ikiden fazla şeridi bulunan yolda otobüs kullanan sürücü, geçme dışında da sağdan ikinci şeridi kullanabilir mi?",
+      "back": "Evet. Bu kısıtlama motosiklet, otomobil, kamyonet, panelvan, minibüs ve otobüs dışındaki araçlar içindir. Otobüs sürücüsü de hızının gerektirdiği şeritten gider, en soldaki şeridi sürekli işgal etmez.",
+      "explanation": "Kısıtlamaya bağlı araçlar iki şeritli yollarda geçme ve dönme dışında soldaki şeridi kullanamaz. İkiden fazla şeritli yollarda ise sola dönme dışında en sağdaki iki şerit dışındaki şeritlere giremez. Bu kurala uymayan sürücüye 10.000 Türk lirası idari para cezası uygulanır.",
+      "articleRefs": [
+        "46"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Trafikte saldırı amacıyla başka bir aracı ısrarla takip eden ya da bu amaçla araçtan inen kişiye ne kadar idari para cezası uygulanır?",
+      "back": "180.000 Türk lirası. Ayrıca sürücünün belgesi altmış gün geri alınır, aracı altmış gün trafikten menedilir.",
+      "explanation": "Bu hâlde geri alınan belge, süre sonunda sürücü psiko-teknik değerlendirmeden geçirilir. Sürücü belgesi almasına mâni hâli olmadığı anlaşılırsa belge iade edilir.",
+      "articleRefs": [
+        "46"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Karayolundan faydalananların uyma sıralamasında trafik ışıkları, trafik zabıtasının uyarı ve işaretlerinden önce mi gelir?",
+      "back": "Hayır. Önce trafik zabıtası ya da yetkili kişilerin uyarı ve işaretleri gelir. Ardından trafik ışıkları, sonra trafik işaret levhaları, cihazları ve yer işaretlemeleri gelir.",
+      "explanation": "Sıranın sonunda, trafik güvenliği ve düzeniyle ilgili olup yönetmelikte gösterilen diğer kural, yasak, zorunluluk veya yükümlülükler yer alır.",
+      "articleRefs": [
+        "47"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Trafik ışıklarına uymayan sürücüye kaç Türk lirası idari para cezası verilir?",
+      "back": "5.000 Türk lirası.",
+      "explanation": "Aynı fıkrada trafik zabıtası ve yetkili kişilerin uyarı ve işaretlerine uymayan sürücüye 3.000 Türk lirası öngörülür. İşaret levhaları, cihazlar, yer işaretlemeleri ve yönetmelikteki diğer kurallara uymayan sürücüye ise 1.000 Türk lirası öngörülür.",
+      "articleRefs": [
+        "47"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Sabit ya da seyir hâlindeki denetimde zabıtanın uyarı ve işaretlerine rağmen dur ikazına uymayıp kaçan sürücüye ne kadar idari para cezası uygulanır?",
+      "back": "200.000 Türk lirası. Sürücü belgesi altmış gün geri alınır, araç da altmış gün trafikten menedilir.",
+      "explanation": "Geri alınan belge, bu Kanun kapsamında verilen idari para cezalarının tamamı tahsil edilmişse iade edilir. Geri alma ve iptal işlemlerini Kanunun 6 ncı maddesinde sayılan görevliler yapar.",
+      "articleRefs": [
+        "47"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Emniyet Genel Müdürlüğü personeline verilecek motorlu taşıt sürücüsü sertifikasının sınavlarını kim yapar?",
+      "back": "Nitelikleri Emniyet Genel Müdürlüğünce belirlenen sınav sorumluları yapar.",
+      "explanation": "Bu sertifika, Emniyet Genel Müdürlüğü personeline ve bağlı eğitim ve öğretim kurumlarında öğrenim görenlere verilir. Amacı sürücü belgesine dönüştürülmektir. Maddede sayılanlar dışında kimseye verilmez.",
+      "articleRefs": [
+        "42"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Sınavı başaranların sürücü belgelerini düzenleme, kişiselleştirme, basım ve teslim işlemlerini hangi kurum yapar?",
+      "back": "İçişleri Bakanlığı yapar. Sertifikadaki ya da Millî Eğitim Bakanlığından elektronik ortamda alınan bilgileri esas alır.",
+      "explanation": "Kişiselleştirilen belgelerin ilgililerine teslimi başkalarına da yaptırılabilir. Bunlar, İçişleri Bakanlığının belirlediği kamu kurum veya kuruluşları ile özel hukuk tüzel kişileridir.",
+      "articleRefs": [
+        "42"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Sürücü sertifikasını sürücü belgesine dönüştürmeden karayolunda araç kullanan sürücüye ne kadar idari para cezası verilir?",
+      "back": "700 Türk Lirası. Bu kişiye araç kullandıran araç sahibine de tescil plakası üzerinden aynı miktarda ceza verilir.",
+      "explanation": "Sürücü sertifikası, sınıfına uygun sürücü belgesine dönüştürülmedikçe sahibine karayolunda araç kullanma yetkisi vermez.",
+      "articleRefs": [
+        "42"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Er ve erbaş sınıfından askeri araç sürücülerine verilen belge, askerlik süresi bittikten sonra da geçerli midir?",
+      "back": "Hayır. Bu belgeler sadece askeri araçlar için ve askerlik süresince geçerlidir.",
+      "explanation": "Geçerlilik hem araç türüne hem süreye bağlıdır. Belge, askerlik süresi içinde de yalnız askeri araçlarda kullanılabilir.",
+      "articleRefs": [
+        "43"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Sürücü belgesi sahibinin araç kullanırken belgesiyle ilgili yükümlülüğü nedir?",
+      "back": "Belgesini yanında bulundurmak ve yetkililerin her isteyişinde göstermek zorundadır.",
+      "articleRefs": [
+        "44"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Sağlık bakımından sürücülüğe engel aşikâr değişiklik nedeniyle geri alınan sürücü belgesi hangi durumda kişiye iade edilir?",
+      "back": "Sürücülüğe engel bir hâlin olmadığı ya da bu hâlin sonradan ortadan kalktığı sağlık raporuyla tespit edilince iade edilir.",
+      "explanation": "Maddenin uygulanmasına ilişkin diğer usul ve esaslar yönetmelikle belirlenir.",
+      "articleRefs": [
+        "45"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Emniyet şeritlerini ve banketleri izin verilen durumlar dışında kullanan sürücüye kaç Türk lirası idari para cezası uygulanır?",
+      "back": "20.000 Türk lirası.",
+      "explanation": "Emniyet şeridi ve banket ancak belirli durumlarda kullanılabilir: trafik kazası, arıza hâlleri, acil yardım, kurtarma, kar mücadelesi, kaza incelemesi, genel güvenlik ve asayişin sağlanması gibi. Yerleşim yeri içindeki bölünmüş karayolunda ters istikamette sürmenin cezası da 20.000 Türk lirasıdır.",
+      "articleRefs": [
+        "46"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Otoyolda aracını ters istikamette süren sürücünün sürücü belgesi kaç gün süreyle geri alınır?",
+      "back": "Altmış gün. Araç da altmış gün trafikten menedilir ve 90.000 Türk lirası idari para cezası uygulanır.",
+      "explanation": "Yerleşim yeri dışındaki bölünmüş karayollarında ters istikamette sürüşte de yaptırım aynıdır. Belgenin iadesi için süre sonunda psiko-teknik değerlendirmede sürücü belgesi almasına mâni hâl bulunmamalıdır. Ayrıca bu Kanun kapsamındaki idari para cezalarının tamamı tahsil edilmiş olmalıdır.",
+      "articleRefs": [
+        "46"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Kanuna uygun düzenlenen bir toplantı ve gösteri yürüyüşü sırasında sürücüler araçlarını karayolunda durdurup trafiğin akışını engellerse 90.000 Türk lirası idari para cezası uygulanır mı?",
+      "back": "Hayır. Kanunda öngörülen şekil, şart ve usullere uygun toplantı ve gösteri yürüyüşü sırasında bu fiil işlenirse bentteki ihlale konu kabahat oluşmaz.",
+      "explanation": "Bu toplantı ve gösteri dışında durum farklıdır. Araçlarını kol, grup hâlinde ya da münferiden sürerken keyfi hareketlerle karayolunda durdurup trafiğin akışını engelleyen sürücüye 90.000 Türk lirası ceza uygulanır. Belgesi altmış gün geri alınır, aracı altmış gün trafikten menedilir.",
+      "articleRefs": [
+        "46"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Son ihlalden geriye doğru bir yıl içinde kırmızı ışığı ikinci defa ihlal eden sürücüye kaç Türk lirası idari para cezası uygulanır?",
+      "back": "10.000 Türk lirası.",
+      "explanation": "Aynı bir yıl içinde ceza her ihlalde artar: üçüncü defada 15.000, dördüncü defada 20.000, beşinci defada 30.000, altıncı defada 80.000 Türk lirası uygulanır.",
+      "articleRefs": [
+        "47"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Kırmızı ışığı ihlal ederek trafik kazasına sebebiyet veren sürücünün sürücü belgesi kaç gün süreyle geri alınır?",
+      "back": "Altmış gün.",
+      "explanation": "Son ihlalden geriye bir yıl içinde kırmızı ışığı üç defa ihlal edenin belgesi otuz gün, dört defa ihlal edenin altmış gün, beş defa ihlal edenin doksan gün geri alınır. Belge, süre sonunda psiko-teknik değerlendirmede mâni hâl bulunmazsa iade edilir.",
+      "articleRefs": [
+        "47"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Son ihlalden geriye doğru bir yıl içinde kırmızı ışığı altı defa ihlal ettiği tespit edilen sürücünün belgesine ne olur?",
+      "back": "Belgesi iptal edilir. Yeniden belge alabilmek için sürücü kursuna devam etmeli ve sınavlarda başarılı olarak motorlu taşıt sürücüsü sertifikası almalıdır.",
+      "articleRefs": [
+        "47"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "İş makinesi sürücülerinin eğitimlerini ve sınavda başarılı olanların belgelerini kim verir?",
+      "back": "Millî Eğitim Bakanlığı ya da Millî Eğitim Bakanlığınca yetkilendirilen kurumlar verir.",
+      "explanation": "Bu kurumların işleyişine ilişkin usul ve esasları ve uygulanacak öğretim programlarını da Millî Eğitim Bakanlığı belirler.",
+      "articleRefs": [
+        "42"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Araçları karayolunda keyfi hareketlerle durdurup trafiğin akışını engelleme ihlali otoyol, köprü, viyadük ya da tünelde işlenirse yaptırım nasıl uygulanır?",
+      "back": "İki kat olarak uygulanır. İdari para cezası, sürücü belgesi geri alma ve araç trafikten men süreleri iki katına çıkar.",
+      "articleRefs": [
+        "46"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "md 46 kapsamında sürücü belgesi, son ihlalden geriye doğru kaç yıl içinde ikinci defa geri alınırsa iptal edilir?",
+      "back": "Beş yıl içinde ikinci defa geri alınırsa belge iptal edilir.",
+      "explanation": "Yeniden belge için sürücü kursuna devam edip sertifika almak gerekir. Kursa başlamak için şu şartlar aranır: iptal tarihinden itibaren iptal nedenlerindeki geri alma süreleri kadar zaman geçmiş olmalı. Bu Kanun kapsamındaki idari para cezalarının tamamı tahsil edilmiş olmalı. Psiko-teknik değerlendirmede sürücülüğe engel hâl bulunmadığı belgelenmeli.",
+      "articleRefs": [
+        "46"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Kırmızı ışık ihlalleri yüzünden sürücü belgesi iptal edilen kişi, sürücü kursunda eğitime başlamak için iptal tarihinden itibaren en az ne kadar süre beklemelidir?",
+      "back": "En az bir yıl. Ayrıca idari para cezalarının tamamı tahsil edilmiş olmalı; psiko-teknik değerlendirme ve psikiyatri uzmanı muayenesinde engel bulunmadığı belgelenmelidir.",
+      "articleRefs": [
+        "47"
+      ]
+    }
+  ]
+}

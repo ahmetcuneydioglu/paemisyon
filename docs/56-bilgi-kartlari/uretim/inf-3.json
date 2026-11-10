@@ -1,0 +1,294 @@
+{
+  "deck": {
+    "topicId": "3a7fb703-175b-4a01-a217-a00766c51d07",
+    "legislationSlug": "5275-ceza-ve-guvenlik-tedbirlerinin-infazi-hakkinda-kanun",
+    "sourceLabel": "AI bilgi kartı — 5275 Ceza ve Güvenlik Tedbirlerinin İnfazı Hakkında Kanun md 26–43",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: resmî madde metni + çıkmış sorular)"
+  },
+  "cards": [
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Hükümlü, ceza infaz kurumunun hangi programlarına tam bir uyum göstermekle yükümlüdür?",
+      "back": "Güvenlik ve iyileştirme programlarına tam uyum göstermekle yükümlüdür.",
+      "explanation": "Hükümlü ayrıca hapis cezasının yerine getirilmesine katlanmak ve bu amaçla düzenlenen infaz rejimine uygun tutum ve davranışlar içinde bulunmakla yükümlüdür.",
+      "articleRefs": [
+        "26"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Hükümlünün bilerek kendi yaşamını tehlikeye düşüren bir eylemi, amacına göre katlanma yükümlülüğünün ihlali sayılmaktan çıkabilir mi?",
+      "back": "Hayır. Her ne amaçla olursa olsun, bilerek kendi yaşamını ve bedensel bütünlüğünü tehlikeye düşürecek eylemlere girişmek, cezanın yerine getirilmesine katlanma yükümlülüğünün ihlali sayılır.",
+      "explanation": "Belirleyici olan, hükümlünün bu eylemlere bilerek girişmesidir; eylemin amacı sonucu değiştirmez.",
+      "articleRefs": [
+        "26"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Hükümlü, kişi sağlığı için tehlike doğuran bir durumu fark ettiğinde ne yapmak zorundadır?",
+      "back": "Gecikmeksizin kurum yönetimine bildirmek zorundadır.",
+      "explanation": "Hükümlü ayrıca sağlığının korunması ve salgın hastalıkların önlenmesi için alınmış tedbirlere uymak, kendi ve içinde yaşadığı ortamın temizliğine uygun davranmak, hem kendi hem diğer hükümlülerin sağlığını tehlikeye düşürebilecek eylemlerden kaçınmakla yükümlüdür.",
+      "articleRefs": [
+        "27"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Meslek sahibi olan hükümlüler, istekleri aranmaksızın atölye veya işyurtlarında çalıştırılabilir mi?",
+      "back": "Hayır. Meslek sahibi olan hükümlüler ancak istekli olmaları hâlinde çalıştırılabilir.",
+      "explanation": "Meslek sahibi olmayan hükümlülerin çalıştırılması için kurum hekimince ruhsal ve bedensel olarak sağlıklı oldukları belirlenmelidir. Çalıştırma, kurum imkânları ölçüsünde belirlenen ücret karşılığında yapılır; hükümlünün yeteneği, becerisi, eğilimi, zihinsel ve bedensel durumları göz önünde bulundurulur.",
+      "articleRefs": [
+        "29"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Öğretim kurumlarına veya örgün eğitime devam eden çocuk ve genç hükümlüler hangi dönemde atölye ve işyerlerinde çalıştırılmaz?",
+      "back": "Öğretim yılı içinde çalıştırılmazlar.",
+      "explanation": "Çocuk hükümlülerin çalıştırılması yalnızca meslek eğitimine yönelik olur. Bunların çalıştırılmasında 3308 sayılı Meslekî Eğitim Kanununun bu Kanuna aykırı olmayan hükümleri uygulanır.",
+      "articleRefs": [
+        "29"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Kapalı ceza infaz kurumunda bulunan bir hükümlü hangi durumda kurum dışındaki iş alanlarında çalıştırılabilir?",
+      "back": "Açık ceza infaz kurumuna ayrılmaya hak kazanmışsa çalıştırılabilir; bu durumda iç ve dış güvenlik görevlilerince alınacak tedbirler altında çalışır.",
+      "explanation": "Açık ceza infaz kurumlarında bulunanlar ise ceza infaz kurumu görevlileri gözetiminde çalıştırılır. Çocuk eğitimevlerindeki hükümlülerin kurum dışında çalıştırılmasında kurum görevlilerinin gözetimi ve muhafazası aranmaz.",
+      "articleRefs": [
+        "30"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Kurum dışında çalıştırılan hükümlüler için prim ödeme yükümlülüğünü kim yerine getirir?",
+      "back": "Hükümlünün çalıştırıldığı kurum ve kuruluşlar yerine getirir.",
+      "explanation": "Bu madde kapsamında çalıştırılan hükümlüler hakkında 5510 sayılı Sosyal Sigortalar ve Genel Sağlık Sigortası Kanununun 5 inci maddesinin birinci fıkrasının (a) bendindeki hükümler uygulanır.",
+      "articleRefs": [
+        "30"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "İyi halli hükümlüler kimin kararıyla kurum içi hizmetlerde çalıştırılabilir?",
+      "back": "İdare ve gözlem kurulu kararıyla; çalıştırmayı kurum yönetimi, durumlarına uygun kurum içi hizmetlerde yapar.",
+      "explanation": "Çocuk hükümlüler ise kendi yaşam alanları veya eğitsel amaçlar dışında çalıştırılamaz.",
+      "articleRefs": [
+        "31"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Hükümlü, kurum görevlilerinin kişisel işlerinde çalıştırılabilir mi?",
+      "back": "Hayır. Hükümlü, yöneticilerin ve görevlilerin kişisel işlerinde çalıştırılamaz.",
+      "explanation": "Yasak hem kurum yöneticilerini hem görevlileri kapsar.",
+      "articleRefs": [
+        "31"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Çalışan hükümlülerin ücreti hangi kaynaktan ödenir?",
+      "back": "Ürettiklerinden elde edilen gelirden ödenir; bu hükümlüler sosyal haklardan da yararlandırılır.",
+      "explanation": "Sosyal güvenlik kurumlarına tâbi olanlar ile hak sahiplerine yapılan her türlü yardım ve giderler, kendi mevzuatları çerçevesinde ilgili sosyal güvenlik kurumunca karşılanır.",
+      "articleRefs": [
+        "32"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Ceza infaz kurumlarının iç güvenliğini kim sağlar?",
+      "back": "Adalet Bakanlığına bağlı infaz ve koruma görevlileri sağlar.",
+      "explanation": "İç güvenlik görevlileri gerektiğinde dış güvenlik görevlileriyle işbirliği yapar. Açık kurumlar ile çocuk eğitimevlerinde idare ile infaz ve koruma görevlileri, firarların önlenmesi, asayiş ve disiplinin sağlanması için gözetim ve denetimle yükümlüdür.",
+      "articleRefs": [
+        "33"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Yüksek güvenlikli kapalı ceza infaz kurumundaki tutuklu ve hükümlülerle ilgili tutanaklara, görevlinin açık kimliği yerine ne yazılır?",
+      "back": "Yalnızca sicil numarası yazılır.",
+      "explanation": "Bu görevlilerin ifadesine başvurulursa davetiye veya çağrı kâğıdı iş yeri adresine tebliğ edilir; ifade ve duruşma tutanaklarında adres olarak yalnız iş yeri adresi gösterilir. Kural, diğer kapalı ceza infaz kurumlarının yüksek güvenlikli bölümleri için de geçerlidir.",
+      "articleRefs": [
+        "33"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Kapalı ceza infaz kurumunda hükümlüler, kapıların açılabileceği hâller dışında kimlerle temasta bulunamaz?",
+      "back": "Diğer odalardaki hükümlüler ve kurum görevlileriyle temasta bulunamazlar.",
+      "explanation": "Oda ve koridor kapıları kapalı tutulur. Açılabileceği hâller arasında kurum hekimine, revir, hamam ve berbere gitme; hastane ve duruşmaya gönderme; tahliye, ziyaret, arama, sayım; kurullara çağrılma; ölüm, deprem veya yangın gibi olağanüstü hâller ve cezaevi idaresince gerekli görülen hâller vardır.",
+      "articleRefs": [
+        "34"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Kapalı ceza infaz kurumunda hükümlünün odasında bulundurabileceği kişisel eşya, gıda ve tıbbî malzeme hangi düzenlemeyle belirlenir?",
+      "back": "Yönetmelikle düzenlenir.",
+      "explanation": "Yönetmelik, oda ve eklentilerinde bulundurulabilecek ve bulundurulamayacak kişisel eşya, gıda, tıbbî malzeme ve diğer ihtiyaç maddelerini birlikte düzenler.",
+      "articleRefs": [
+        "35"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Kurumlarda odalar, eklentiler ile hükümlülerin üst ve eşyasında en az hangi sıklıkla arama yapılması zorunludur?",
+      "back": "Her ay bir kez mutlaka arama yapılır.",
+      "explanation": "Bunun dışında habersiz olarak her zaman arama yapılabilir. Aramalar gerektiğinde dış güvenlik görevlileri, kolluk kuvvetleri veya diğer kamu görevlileriyle ortaklaşa gerçekleştirilebilir.",
+      "articleRefs": [
+        "36"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Hükümlü duruşma, sağlık, eğitim veya çalışma için geçici olarak kurum dışındaysa, disiplin hükümleri bakımından bulunduğu yer nasıl kabul edilir?",
+      "back": "Kurum olarak kabul edilir; orada kusurlu olarak yapılan ihlallere de disiplin cezası uygulanır.",
+      "explanation": "Disiplin cezası, hükümlünün kanun, yönetmelikler ve idarenin uyulmasını emrettiği veya gerekli kıldığı davranış ve tutumları kusurlu olarak ihlal etmesi hâlinde, eyleminin niteliği ile ağırlık derecesine göre uygulanır.",
+      "articleRefs": [
+        "37"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Suç oluşturan bir eylem için kamu davası açıldığında, disiplin soruşturması davanın sonuçlanmasını bekler mi?",
+      "back": "Hayır. Açılan kamu davası, disiplin soruşturması yapılmasını ve disiplin cezasının uygulanmasını engellemez.",
+      "explanation": "Hem disiplin soruşturması hem de disiplin cezasının uygulanması, aynı eylem için kamu davası açılmış olsa da yürütülebilir.",
+      "articleRefs": [
+        "37"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Çocuklar haricindeki hükümlülere uygulanabilecek disiplin cezaları arasında en ağırı hangisidir?",
+      "back": "Hücreye koyma; ağırlık derecesine göre yapılan sıralamada son sırada yer alır.",
+      "explanation": "Ağırlık sırası: kınama, bazı etkinliklere katılmaktan alıkoyma, ücret karşılığı çalışılan işten yoksun bırakma, haberleşme veya iletişim araçlarından yoksun bırakma veya kısıtlama, ziyaretçi kabulünden yoksun bırakma, hücreye koyma.",
+      "articleRefs": [
+        "38"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Hangi nitelikteki cezalar disiplin cezası olarak uygulanamaz?",
+      "back": "Toplu, bedensel, zalimane, insanlık dışı veya küçültücü cezalar disiplin cezası olarak uygulanamaz.",
+      "articleRefs": [
+        "38"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Görevlilere hediye vermeye yalnızca kalkışan, ama hediyeyi veremeyen hükümlüye disiplin cezası verilebilir mi?",
+      "back": "Evet; kınama cezası verilir. Görevlilere hediye vermek de buna kalkışmak da aynı bentte kınama gerektiren eylem olarak sayılır.",
+      "explanation": "Kınama, hükümlüye eyleminin kötü niteliğinin ve uygunsuzluğunun açıklanması ve tekrarı durumunda doğuracağı sonuçlara dikkatinin çekilmesidir. Bu cezayı gerektiren eylemler arasında görevlilere herhangi bir taahhütte bulunmak, hükümlü kimliğini yanında bulundurmamak ve yatma plânına uymamak da vardır.",
+      "articleRefs": [
+        "39"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Bazı etkinliklere katılmaktan alıkoyma cezası en az ne kadar süreyle verilir?",
+      "back": "Bir ay; ceza, hükümlünün bir aydan üç aya kadar kurumun kültürel ve spor etkinliklerine katılmaktan yoksun bırakılmasıdır.",
+      "articleRefs": [
+        "40"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Açlık grevi yapan hükümlüye hangi disiplin cezası verilir?",
+      "back": "Bazı etkinliklere katılmaktan alıkoyma cezası verilir.",
+      "explanation": "Aynı cezayı gerektiren eylemler arasında idarenin izni olmaksızın yasak yerlere girmek, eğitim yerini terk etmek, olumsuz davranışa yönelik gruplaşmaya neden olmak ve kurum görevlilerine karşı uygunsuz söz sarf etmek de vardır.",
+      "articleRefs": [
+        "40"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Ücret karşılığı çalışılan işten yoksun bırakma cezası hangi süre için verilir?",
+      "back": "Bir aydan üç aya kadar; hükümlü kurum yönetiminde ücret karşılığı çalıştığı işten yoksun bırakılır.",
+      "explanation": "Bu cezayı gerektiren eylemler arasında iş elbisesini giymemek, iş yerini izinsiz terk etmek, işte kullanılan aletleri ve gereçleri kasten bozmak ve işi kasten kötü yapmak vardır.",
+      "articleRefs": [
+        "41"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Haberleşme veya iletişim araçlarından yoksun bırakma veya kısıtlama cezası en çok ne kadar sürebilir?",
+      "back": "Üç aya kadar; ceza bir aydan üç aya kadar verilir.",
+      "explanation": "Hükümlü bu süre boyunca mektup, faks ve telgraf almak ve yollamaktan, televizyon izlemekten, radyo dinlemekten, telefon etmekten ve diğer iletişim araçlarından yararlanmaktan tamamen veya kısmen yoksun bırakılır.",
+      "articleRefs": [
+        "42"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Haberleşme cezası süresince hükümlüye gelen mektup, faks ve telgraflar ne zaman kendisine verilir?",
+      "back": "Disiplin cezasının infazından sonra kendisine verilir.",
+      "explanation": "Aynı türden olsa bile sonraki disiplin cezasının infazına, bu teslim yapılmadan başlanamaz.",
+      "articleRefs": [
+        "42"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Haberleşme araçlarından yoksun bırakılan hükümlü, avukatıyla ilişkilerinde de bu cezaya tabi olur mu?",
+      "back": "Hayır. Avukat ile ilişkilerde bu ceza uygulanmaz.",
+      "explanation": "Anne, baba, eş, çocuk ve kardeşlerin ölüm veya ağır hastalıkları ile doğal afet hâllerinde yapılması gereken haberleşmelerde de bu ceza uygulanmaz.",
+      "articleRefs": [
+        "42"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Ziyaretçi kabulünden yoksun bırakma cezasında hükümlü hangi süreyle ziyaretçi görüşüne çıkarılmaz?",
+      "back": "Bir aydan üç aya kadar ziyaretçi görüşüne çıkarılmaz.",
+      "explanation": "Resmî ve yetkili merciler ile avukatlar ve yasal temsilcilerle görüşmelerde bu ceza uygulanmaz.",
+      "articleRefs": [
+        "43"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Sayım yapılmasına karşı çıkan hükümlüye hangi disiplin cezası verilir?",
+      "back": "Ziyaretçi kabulünden yoksun bırakma cezası verilir.",
+      "explanation": "Aynı cezayı gerektiren eylemler arasında aramaya karşı çıkmak, sevke veya nakle karşı çıkmak, kurumda korku, kaygı veya panik yaratabilecek biçimde söz söylemek veya davranışta bulunmak ve kumar ve benzeri oyunlar oynamak veya oynatmak da vardır.",
+      "articleRefs": [
+        "43"
+      ]
+    }
+  ]
+}

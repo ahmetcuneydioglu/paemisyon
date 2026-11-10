@@ -1,0 +1,197 @@
+{
+  "deck": {
+    "topicId": "35a52e25-aef4-4ae2-b76f-9585db6ffd74",
+    "legislationSlug": "3376-anayasa-degisikliklerinin-halkoyuna-sunulmasi-hakkinda-kanun",
+    "sourceLabel": "AI bilgi kartı — 3376 Anayasa Değişikliklerinin Halkoyuna Sunulması Hakkında Kanun md 1–10",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: resmî madde metni + çıkmış sorular)"
+  },
+  "cards": [
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Anayasa gereğince yapılacak halk oylamalarında öncelikle hangi kanunun hükümleri uygulanır?",
+      "back": "Anayasa Değişikliklerinin Halkoyuna Sunulması Hakkında Kanunun hükümleri uygulanır.",
+      "articleRefs": [
+        "1"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Halkoylamasıyla ilgili bir konuda Anayasa Değişikliklerinin Halkoyuna Sunulması Hakkında Kanunda hüküm yoksa hangi kanuna başvurulur?",
+      "back": "298 sayılı Seçimlerin Temel Hükümleri ve Seçmen Kütükleri hakkında Kanuna başvurulur.",
+      "articleRefs": [
+        "1"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Halkoylaması kanununda hüküm bulunmayan bir halde 298 sayılı Kanunun her hükmü uygulanabilir mi?",
+      "back": "Hayır. 298 sayılı Kanunun yalnız halkoylaması kanununa aykırı olmayan hükümleri uygulanır.",
+      "explanation": "298 sayılı Kanun tamamlayıcı niteliktedir. Halkoylaması kanununda hüküm bulunmayan hallerde devreye girer ve bu kanuna aykırı olmayan hükümleriyle sınırlı kalır.",
+      "articleRefs": [
+        "1"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Anayasa değişikliğinin halkoylaması hangi gün yapılır?",
+      "back": "Anayasa değişikliği Kanununun Resmi Gazetede yayımını takip eden altmışıncı günden sonraki ilk pazar günü yapılır.",
+      "articleRefs": [
+        "2"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Halkoyuna sunulma işlemlerini kim yürütür?",
+      "back": "Seçim kurulları yürütür. İşlemler Yüksek Seçim Kurulunun yönetim ve denetiminde yapılır.",
+      "articleRefs": [
+        "3"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Anayasa değişikliklerinin halkoyuna sunulması için bütün tedbirleri almak ve hazırlıkları yapmak kimin görevidir?",
+      "back": "Yüksek Seçim Kurulunun görevidir.",
+      "articleRefs": [
+        "3"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Yüksek Seçim Kurulu, halkoylamasıyla ilgili ilke kararlarını hangi amaçla alır?",
+      "back": "Halkoylamasının sağlıklı ve düzenli bir şekilde gerçekleşmesini sağlamak amacıyla alır.",
+      "articleRefs": [
+        "3"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Halkoylamasında kullanılan birleşik oy pusulası kaç ayrı renkten oluşur?",
+      "back": "İki ayrı renkten oluşur.",
+      "articleRefs": [
+        "4"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Oy pusulasında \"Hayır\" ibaresi beyaz renkli kısımda mı bulunur?",
+      "back": "Hayır. \"Hayır\" ibaresi Kahverengi, \"Evet\" ibaresi ise Beyaz renk üzerindedir.",
+      "articleRefs": [
+        "4"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Halkoylamasına katılan kişi oyunu nasıl kullanır?",
+      "back": "Üzerinde özel işaret bulunan mühürü, birleşik oy pusulasında tercih ettiği kısmın üzerine basarak kullanır.",
+      "articleRefs": [
+        "4"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Anayasa değişikliklerini tanıtmak için radyo ve televizyonla kimler propaganda yapabilir?",
+      "back": "Türkiye Büyük Millet Meclisinde grubu bulunan siyasi partiler ve Cumhurbaşkanı yapabilir. Özel kanunlardaki hükümler saklıdır.",
+      "articleRefs": [
+        "5"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Anayasa değişiklikleri için radyo ve televizyonla propaganda hangi zaman aralığında yapılabilir?",
+      "back": "Halkoylaması gününden önceki yedinci günden itibaren, halkoylamasından önceki gün saat 18.00'e kadar yapılabilir.",
+      "explanation": "298 sayılı Kanunun propaganda serbestliğine ilişkin hükümleri de halkoylaması gününden önceki yedinci günden başlayarak uygulanır.",
+      "articleRefs": [
+        "5"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Türkiye Büyük Millet Meclisinde grubu bulunan partilere, halkoylaması için radyo ve televizyonda ne kadar konuşma hakkı tanınır?",
+      "back": "Her partiye 10'ar dakikalık ikişer konuşma hakkı tanınır.",
+      "articleRefs": [
+        "5"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Yabancı ülkelerdeki vatandaşlar halkoylamasında oylarını ne zamandan itibaren kullanabilir?",
+      "back": "Halkoylamasından yirmi gün öncesinden başlayarak kullanabilirler. Bu, 298 sayılı Kanun uyarınca yapılır.",
+      "articleRefs": [
+        "6"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Halkoylamasına katılmadığı için para cezası verilen seçmen, cezanın tahsil edilmemesi için mazeretini hangi süre içinde bildirmelidir?",
+      "back": "Halkoylaması gününden itibaren üç ay içinde bildirmelidir. Mazeret ilçe seçim kurulu başkanınca geçerli görülürse para tahsil edilmez.",
+      "articleRefs": [
+        "6"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "İlçe seçim kurulu başkanının, halkoylamasına katılmayanlar hakkında verdiği para cezası kararları kesin midir?",
+      "back": "Evet, kesindir. Ancak halkoylaması gününden itibaren üç ay içinde bildirilen ve geçerli görülen mazerette para tahsil edilmez.",
+      "explanation": "Ceza, seçmen kütüğünde ve sandık listesinde kaydı ve oy kullanma yeterliği bulunduğu halde hukuki veya fiili mazereti olmaksızın halkoylamasına katılmayanlara verilir. Cezayı veren ve mazereti değerlendiren makam ilçe seçim kurulu başkanıdır.",
+      "articleRefs": [
+        "6"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Halkoylaması tutanaklarını hangi kurullar düzenler?",
+      "back": "Sandık, ilçe ve il seçim kurulları düzenler.",
+      "articleRefs": [
+        "7"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Halkoylaması tutanaklarında hangi bilgiler ayrı ayrı gösterilir?",
+      "back": "Sandık listesinde kayıtlı olanların, halkoylamasına katılanların, geçerli ve geçerli olmayan oyların ve \"Evet\" ile \"Hayır\" oyu verenlerin sayısı ayrı ayrı gösterilir.",
+      "articleRefs": [
+        "7"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "İl seçim kurulu, il birleştirme tutanağındaki sonuçları Yüksek Seçim Kuruluna nasıl bildirir?",
+      "back": "Sonuçları derhal en seri vasıta ile bildirir ve tutanağın onaylı bir örneğini gönderir.",
+      "explanation": "İl seçim kurulları, ilçe seçim kurullarından gelen tutanakları toplar. Yüksek Seçim Kurulu da il seçim kurullarından gelen sonuçları birleştirerek ilan eder.",
+      "articleRefs": [
+        "8"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Anayasa değişikliğinin halkoylamasında kabul edilmiş sayılması için ne gerekir?",
+      "back": "Geçerli oyların yarısından çoğunun \"Evet\" olması gerekir. Bu durumda değişiklik Türk Milleti tarafından kabul edilmiş olur.",
+      "articleRefs": [
+        "8"
+      ]
+    }
+  ]
+}

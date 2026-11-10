@@ -1,0 +1,278 @@
+{
+  "deck": {
+    "topicId": "fc5b7d84-ad74-446c-9ac6-3d4172a04ccf",
+    "legislationSlug": "298-sayili-secimlerin-temel-hukumleri-kanunu",
+    "sourceLabel": "AI bilgi kartı — 298 Sayılı Seçimlerin Temel Hükümleri Kanunu md 1–10, 14–20, 20/A, 21–25",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: resmî madde metni + çıkmış sorular)"
+  },
+  "cards": [
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Seçimlerin Temel Hükümleri ve Seçmen Kütükleri Hakkında Kanun hangi halk oylamasında uygulanır?",
+      "back": "Anayasa değişikliklerine ilişkin kanunların halk oyuna sunulmasında uygulanır.",
+      "explanation": "Kanun ayrıca özel kanunlarına göre yapılan şu seçimlerde de uygulanır: Cumhurbaşkanı, milletvekili, il genel meclisi üyeliği, belediye başkanlığı, belediye meclisi üyeliği, muhtarlık, ihtiyar meclisi üyeliği ve ihtiyar heyeti üyeliği.",
+      "articleRefs": [
+        "1"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Özel kanunlardaki çevre ayırmaları saklı kalmak üzere, seçimlerde seçim çevresi hangi birimdir?",
+      "back": "İl. Seçimlerde her il bir seçim çevresidir.",
+      "articleRefs": [
+        "3"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Seçimlerde seçim bölgesini hangi birim oluşturur?",
+      "back": "Muhtarlık. Her muhtarlık bir seçim bölgesidir.",
+      "articleRefs": [
+        "4"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Aynı binada oturan seçmenler farklı sandık bölgelerine kaydedilebilir mi?",
+      "back": "Evet. Bunun için hane bütünlüklerinin korunması ve seçmenlerin aynı seçim bölgesinde kalması şarttır.",
+      "explanation": "Her seçim bölgesi gerektiği kadar sandık bölgesine ayrılır. Aynı binadaki seçmenlerin dağıtılması, hane bütünlüğünün korunması ve aynı seçim bölgesinde kalma şartlarına bağlıdır.",
+      "articleRefs": [
+        "5"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Seçme ve halk oylamasına katılma hakkı hangi yaşta kazanılır?",
+      "back": "Onsekiz yaşını dolduran her Türk vatandaşı bu hakka sahiptir.",
+      "articleRefs": [
+        "6"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Silah altında bulunan bir er izinliyken oy kullanabilir mi?",
+      "back": "Hayır. Silah altında bulunan erler, onbaşılar ve kıta çavuşları, her ne sebeple olursa olsun izinli olsalar da oy kullanamaz.",
+      "explanation": "Oy kullanamayanlar arasında askeri öğrenciler de vardır.",
+      "articleRefs": [
+        "7"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Kimler seçmen olamaz?",
+      "back": "Kısıtlı olanlar ile kamu hizmetinden yasaklı olanlar.",
+      "articleRefs": [
+        "8"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Son nüfus sayımına göre nüfusu kaçı aşan ilçelerde birden fazla ilçe seçim kurulu kurulur?",
+      "back": "200.000. Nüfusu bunu aşan ilçelerde birden fazla ilçe seçim kurulu teşkil edilir.",
+      "explanation": "Bölünmede köy ve mahalle sınırları (seçim bölgeleri) esas alınır. Mümkün olduğu nispette nüfus sayısında eşitlik gözetilir.",
+      "articleRefs": [
+        "10"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Yurt Dışı İlçe Seçim Kurulu hangi kurula bağlı olarak oluşturulur?",
+      "back": "Ankara İl Seçim Kuruluna bağlı olarak oluşturulur.",
+      "explanation": "Kurul, yurt dışında bulunan vatandaşların oy kullanmasıyla ilgili seçim işlerini yönetir. İhtiyaç duyulursa birden fazla yurt dışı ilçe seçim kurulu teşkil edilebilir.",
+      "articleRefs": [
+        "10"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Milletvekili adaylığına ait itirazlarda kesin kararı hangi kurul verir?",
+      "back": "Yüksek Seçim Kurulu. Adaylığa ait itirazlar hakkında bu Kanun ve özel kanunları gereğince kesin karar verir.",
+      "articleRefs": [
+        "14"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Siyasi partinin milletvekili genel seçimine katılabilmesi için illerin en az yarısında teşkilatı oy verme gününden en az ne kadar önce kurmuş olması gerekir?",
+      "back": "En az altı ay evvel. Parti ayrıca büyük kongresini de yapmış olmalıdır.",
+      "explanation": "Bir ilde teşkilatlanmış sayılmak için, merkez ilçesi dahil o ilin ilçelerinin en az üçte birinde teşkilat kurmak gerekir.",
+      "articleRefs": [
+        "14"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Seçim güvenliği için sandıkların en yakın seçim bölgelerine taşınmasını vali veya il seçim kurulu başkanı en geç ne zaman talep etmelidir?",
+      "back": "Oy verme gününden en geç bir ay önce. Taşımaya Yüksek Seçim Kurulu karar verir.",
+      "explanation": "Aynı talep üzerine şunlara da karar verilebilir: sandık bölgelerinin birleştirilmesi, muhtarlık seçimleri hariç seçim bölgelerinin birleştirilmesi ve seçmen listelerinin karma şekilde düzenlenmesi.",
+      "articleRefs": [
+        "14"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "İl seçim kurulu hangi bileşimle kurulur?",
+      "back": "Bir başkan, iki asıl üye ve iki yedek üyeden oluşur. Hepsi adli yargı ilk derece mahkemesi adalet komisyonunca hâkimler arasından ad çekmeyle tespit edilir; ad çekmeye katılacak hâkim sayısı beşten azsa eksik kalan asıl ve yedek üyeler en kıdemli hâkimden başlanarak belirlenir.",
+      "explanation": "Ad çekmede ilk çıkan hâkim başkan, sonraki iki hâkim asıl üye, son çıkan iki hâkim yedek üye olur. Kurul iki yılda bir, ocak ayının son haftasında belirlenir ve iki yıl görev yapar.",
+      "articleRefs": [
+        "15"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "İl seçim kurulu başkanlığı boşalırsa kurula kim başkanlık eder?",
+      "back": "Asıl ve yedek üyelerden en kıdemli hâkim başkanlık eder.",
+      "explanation": "Üyeliklerde boşalma olursa, boşalan üyelik kuruluştaki ad çekme usulüyle tamamlanır. Kıdem belirlenirken kınama veya daha ağır disiplin cezası almış olanlar diğerlerinden kıdemsiz sayılır.",
+      "articleRefs": [
+        "15"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Aday beyanname veya listelerini almak ve ilan etmek hangi seçim kurulunun görevidir?",
+      "back": "İl seçim kurulunun görevidir. Kurul bunlara yapılan itirazları da inceler ve kanuna göre muteber olmayanlar hakkında karar verir.",
+      "explanation": "İl seçim kurulu geçici ve kesin aday listelerini yerlerine gönderip ilan eder. Ayrıca ilçe seçim kurullarından gelen tutanakları birleştirerek il seçim çevresi için bir tutanak düzenler.",
+      "articleRefs": [
+        "16"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Yüksek Seçim Kurulundaki siyasi parti temsilcisi kurul görüşmelerinde oy kullanabilir mi?",
+      "back": "Hayır. Temsilciler kurulun bütün çalışmalarına ve görüşmelerine katılır ama oy kullanamaz.",
+      "explanation": "Seçime katılan partilerden şunlar Yüksek Seçim Kurulunda bir asıl ve bir yedek temsilci bulundurabilir: en son milletvekili genel seçiminde en çok oy almış dört parti ile Türkiye Büyük Millet Meclisinde grubu bulunan partiler. Bunun için genel başkanın yazılı yetkisi gerekir. Temsilcilerin toplantılara katılmaması işlerin görüşülmesini durdurmaz.",
+      "articleRefs": [
+        "17"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "İlçe seçim kurulu hangi aralıkla ve ne zaman kurulur?",
+      "back": "İki yılda bir, ocak ayının son haftasında kurulur ve iki yıl süreyle görev yapar.",
+      "explanation": "Kurul bir başkan ile altı asıl ve altı yedek üyeden oluşur ve asıl üyeleriyle toplanır. Toplantıya katılmayan asıl üyenin yerine öncelikle onun yedeği çağrılır.",
+      "articleRefs": [
+        "18"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Geçici ilçe seçim kurulları seçmen sayısı kaçı aşan ilçelerde oluşturulabilir?",
+      "back": "25 000. Seçmen sayısı bunu aşan ilçelerde, bir başkan ve altı üyeden oluşan geçici ilçe seçim kurulları oluşturulabilir.",
+      "explanation": "Kurulun iki üyesini kurul başkanı kamu görevlileri arasından belirler. Dört üye, dört yedeğiyle birlikte siyasi partilerden alınır. Çalışma usul ve esaslarını, kurulacağı ilçeleri, sayısını ve görev süresini Yüksek Seçim Kurulu kararlaştırır.",
+      "articleRefs": [
+        "18"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "İlçe seçim kuruluna ad çekmeyle alınacak Devlet memurlarının toplam memuriyet süresi ne kadar olmalıdır?",
+      "back": "On yıldan fazla. Ad, ilçe merkezinde görev yapan memurların listesinin ilk sekiz sırasında yer alanlar arasından çekilir.",
+      "explanation": "Memur, yasama meclisleri veya yerel idare seçimlerinden birine siyasi parti adayı veya aday adayı olarak katılmamış olmalıdır. Ayrıca daha önce hiçbir siyasi partiye kaydolmamış olmalıdır. Ad çekmeyi, partilerden gelen asıl üyeler huzurunda ilçe seçim kurulu başkanı yapar.",
+      "articleRefs": [
+        "19"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Aynı bakanlığa mensup iki memur aynı ilçe seçim kurulunda asıl üye olabilir mi?",
+      "back": "Hayır. Aynı bakanlığa mensup memurlardan birden fazla asıl üye olamaz; zorunlu durumlar saklıdır.",
+      "explanation": "Ad çekmede adı önce çıkanlar asıl, sonrakiler sırayla yedek üye olur. Bu yoldan her asıl üyenin yedeği belirlenir.",
+      "articleRefs": [
+        "19"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "İlçedeki sandık kurullarını hangi kurul kurar?",
+      "back": "İlçe seçim kurulu kurar.",
+      "explanation": "İlçe seçim kurulu, sandık kurullarının teşekküllerine, işlemlerine ve kararlarına karşı yapılan itirazları inceleyip karara bağlar. Sandık tutanaklarını birleştirerek ilçe seçim tutanağını düzenler ve il seçim kuruluna derhal teslim eder.",
+      "articleRefs": [
+        "20"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Yurt Dışı İlçe Seçim Kurulu, oy pusulalarının ve oy zarflarının yurt dışı temsilciliklerinde en geç ne zaman hazır bulunmasını sağlar?",
+      "back": "Oy verme işleminin başlayacağı günden en geç yedi gün önce. Gönderim Dışişleri Bakanlığı aracılığıyla yapılır.",
+      "explanation": "Oy zarflarının arkası kurulun kendi mührüyle mühürlenir. Gerekirse kurul, oy sandığı ve oy verme kabinleri gibi araçların mahallinden teminini Dışişleri Bakanlığından isteyebilir.",
+      "articleRefs": [
+        "20/A"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Sandık kurulu hangi bileşimle kurulur?",
+      "back": "Bir başkan ile altı asıl ve altı yedek üyeden kurulur. Kurul asıl üyeleriyle toplanır.",
+      "articleRefs": [
+        "21"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Sandık kurulu başkanı göreve gelmezse kurula kim başkanlık eder?",
+      "back": "Kamu görevlileri arasından belirlenen üye başkanlık eder; o da yoksa en yaşlı üye başkanlık eder.",
+      "explanation": "Mülki idare amiri, ilçede görev yapan kamu görevlilerinin listesini ilçe seçim kurulu başkanlığına gönderir. Bu listeden, ihtiyaç duyulan başkan sayısının iki katı kadar kamu görevlisi ad çekmeyle tespit edilir. Bunlardan mani hali bulunmayanlar sandık kurulu başkanı olur.",
+      "articleRefs": [
+        "22"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "İlçe seçim kurulu başkanı, sandık kurulu üyelerinin adını bildirmeleri için partilere kaç gün süre verir?",
+      "back": "Beş gün. İlçede en çok oy almış beş partiye, her sandık için birer asıl ve birer yedek üye adı bildirmeleri tebliğ edilir.",
+      "explanation": "Bu partiler, o seçim çevresinde seçime katılan ve ilçede teşkilatı bulunan partilerdir. Sıralama, son milletvekili genel seçiminde o ilçede alınan oya göre yapılır. Kalan bir asıl ve bir yedek üye, kamu görevlileri arasından ad çekmeyle belirlenir.",
+      "articleRefs": [
+        "23"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Sandık kurulları hangi tarihte kurulur?",
+      "back": "Yüksek Seçim Kurulunca tespit ve ilan edilen tarihte kurulur.",
+      "explanation": "Asıl ve yedek üyeler, Yüksek Seçim Kurulunun yerel özellikleri gözeterek tespit ettiği tarihlerde göreve başlar. Sayıma ilişkin evrak ve belgeler ilçe seçim kuruluna teslim edilinceye kadar aralıksız çalışırlar.",
+      "articleRefs": [
+        "24"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Bağımsız adaylar sandık başı işlemlerini takip etmek için müşahit gönderebilir mi?",
+      "back": "Evet. Siyasi partiler gibi bağımsız adaylar da sandık başına birer müşahit gönderebilir.",
+      "articleRefs": [
+        "25"
+      ],
+      "counterNumbers": []
+    }
+  ]
+}

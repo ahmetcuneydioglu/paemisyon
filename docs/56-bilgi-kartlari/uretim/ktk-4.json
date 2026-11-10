@@ -1,0 +1,286 @@
+{
+  "deck": {
+    "topicId": "3f91916c-8d15-40f4-bb20-5bcca9253c34",
+    "legislationSlug": "2918-sayili-karayollari-trafik-kanunu",
+    "sourceLabel": "AI bilgi kartı — 2918 Sayılı Karayolları Trafik Kanunu md 21–24",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: resmî madde metni + çıkmış sorular)"
+  },
+  "cards": [
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Tescil edilen bir araç, neler alınmadan karayollarına çıkarılamaz?",
+      "back": "Tescil Belgesi ve Tescil Plakası alınmadan karayollarına çıkarılamaz.",
+      "explanation": "İlk tescili yapılan araçlarda, tescile ilişkin geçici belgelerin geçerlilik süresi içinde tescil belgesi alma zorunluluğu aranmaz.",
+      "articleRefs": [
+        "21"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Tescil Belgesi ve Tescil Plakası alınmadan aracı karayoluna çıkaran sürücüye kaç Türk lirası idari para cezası verilir?",
+      "back": "46.000 Türk lirası idari para cezası verilir.",
+      "explanation": "Bu aykırılığın tespit edildiği araç ayrıca trafikten menedilir.",
+      "articleRefs": [
+        "21"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Tescil belgesi ve plakası olmadan karayoluna çıkarıldığı tespit edilen araç ne zamana kadar trafikten menedilir?",
+      "back": "Eksiklikleri giderilinceye kadar trafikten menedilir.",
+      "explanation": "Sürücüsüne de birinci fıkra hükmüne uymadığı için idari para cezası verilir.",
+      "articleRefs": [
+        "21"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "İlk tescili yapılan araçta, tescile ilişkin geçici belge düzenlendiğinde tescil belgesi alma zorunluluğu ne kadar süre aranmaz?",
+      "back": "Bir ay; elektronik ortamda oluşturulan geçici belge bir ay süreyle geçerlidir ve bu süre içinde tescil belgesi aranmaz.",
+      "explanation": "Emniyet Genel Müdürlüğü, bu geçici belgeyi basmak ve araç sahibine vermek üzere kamu kurum veya kuruluşları ile gerçek veya özel hukuk tüzel kişilerini yetkilendirebilir.",
+      "articleRefs": [
+        "21",
+        "22"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Tescil belgesi ve plakası olmadan karayoluna çıkarıldığı tespit edilen araç daha önce trafikten çekilmiş bir araçsa tescil kaydı için ne yapılır?",
+      "back": "Trafikten çekme tarihi itibarıyla trafik tescil kaydı açılır ve ilgili vergi dairesine bildirilir.",
+      "explanation": "Araç ayrıca eksiklikleri giderilinceye kadar trafikten menedilir.",
+      "articleRefs": [
+        "21"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Üzerinde yanlış bilgi bulunan tescil belgesi trafik zabıtasınca sürekli olarak geri alınır mı?",
+      "back": "Hayır; eksik veya yanlış bilgi hâlinde belge geçici olarak geri alınır. Sürekli geri alma, belgenin geçersiz duruma gelmesi hâlidir.",
+      "explanation": "Geri alma işlemini her iki hâlde de trafik zabıtası yapar.",
+      "articleRefs": [
+        "21"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Hurdaya çıkarılmış olduğu hâlde karayolunda sürüldüğü tespit edilen araç, trafikten menedildikten sonra sahibine iade edilir mi?",
+      "back": "Hayır; araç trafikten menedilir, mülki amir tarafından el konulur ve aracın mülkiyeti kamuya geçer.",
+      "explanation": "Hurdaya çıkarılmış araçların karayolunda sürülmesi yasaktır; sürücüsüne ayrıca 46.000 Türk lirası idari para cezası verilir. Araçların hurdaya çıkarılmasına dair usul ve esaslar Yönetmelikte belirlenir.",
+      "articleRefs": [
+        "21"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Askerî maksatlarla kullanılan Türk Silahlı Kuvvetlerine ait araçların tescilini kim yapar?",
+      "back": "Türk Silahlı Kuvvetleri yapar; belge ve plakaları da Türk Silahlı Kuvvetlerince verilir.",
+      "explanation": "Çeşitli anlaşmalara göre askerî amaçla yurdumuzda bulunan kuruluşlara ait araçların tescilleri de Türk Silahlı Kuvvetlerince yapılır.",
+      "articleRefs": [
+        "22"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Özel veya tüzel kişilere ait olup tarım kesiminde kullanılan iş makinelerinin tescilini kim yapar?",
+      "back": "Ziraat odaları yapar.",
+      "explanation": "Kamu kuruluşlarına ait iş makinelerinin tescilini ise ilgili kuruluşları yapar.",
+      "articleRefs": [
+        "22"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Özel kişiye ait, bayındırlık kesiminde kullanılan bir iş makinesinin tescilini ziraat odası yapar mı?",
+      "back": "Hayır; tarım kesimi dışında kullanılanları üyesi oldukları ticaret, sanayi veya ticaret ve sanayi odaları tescil eder. Ziraat odaları yalnız tarım kesiminde kullanılanları tescil eder.",
+      "explanation": "Sanayi, bayındırlık ve diğer kesimlerde kullanılan iş makineleri aynı kurala bağlıdır.",
+      "articleRefs": [
+        "22"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Tescil belgesi ve tescil plakalarının verilmesi şartları, geçerlilikleri ve süreleri nerede gösterilir?",
+      "back": "Yönetmelikte gösterilir; nitelik ve nicelikleri ile diğer esaslar da yönetmelikte yer alır.",
+      "explanation": "Türk Silahlı Kuvvetleri, ilgili kuruluşlar, odalar ve belediyeler de tescili yönetmelikte gösterilen esaslara göre yapar ve belge ile plakaları verir.",
+      "articleRefs": [
+        "22",
+        "24"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Belediyeler, motorsuz taşıtlardan gerekli görülenlerin tescilini hangi şartla yapar?",
+      "back": "İl Trafik Komisyonlarından karar alınmak şartıyla yapar; tarım kesiminde kullanılanlar bunun dışındadır.",
+      "explanation": "Tescili yapan belediye, belge ve plakaları da verir.",
+      "articleRefs": [
+        "22"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Kanunda özel olarak sayılanlar dışında kalan bütün araçların tescilini kim yapar?",
+      "back": "Emniyet Genel Müdürlüğü veya bağlı trafik tescil kuruluşları yapar.",
+      "explanation": "Araca ait belgelerin düzenlenmesi, kişiselleştirilmesi, basımı ve ilgililerine elden veya posta aracılığıyla teslimi de bu kuruluşlarca yapılır. Kişiselleştirilen belgelerin basımı ve teslimi, Emniyet Genel Müdürlüğünün belirlediği kamu kurum veya kuruluşları ile özel hukuk tüzel kişilerine de yaptırılabilir.",
+      "articleRefs": [
+        "22"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Emniyet Genel Müdürlüğünce yetkilendirilmiş gerçek veya özel hukuk tüzel kişileri, belirlenen usul ve esaslara aykırı davranırsa kaç Türk lirası idari para cezası verilir?",
+      "back": "On bin Türk lirası idari para cezası verilir.",
+      "explanation": "Cezayı tespitin yapıldığı yerin mülki amiri ya da onun bu konuda yetkilendireceği trafik tescil birim amiri verir. Genel hükümlerden kaynaklanan sorumluluklar saklıdır.",
+      "articleRefs": [
+        "22"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Araç tescil belgesi ve tescil plakası nasıl bulundurulmalıdır?",
+      "back": "Araç üzerinde, uygun durumda bulundurulmaları zorunludur.",
+      "explanation": "Tescil belgesini araçta bulundurmayan sürücüye idari para cezası verilir ve araç trafikten men edilir.",
+      "articleRefs": [
+        "23"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Araç tescil belgesini araçta bulundurmayan sürücüye kaç Türk lirası idari para cezası verilir?",
+      "back": "92 Türk lirası; araç bilgileri doğrulanıncaya kadar araç trafikten men edilir.",
+      "explanation": "Tescil plakasını monte edilmesi gereken yerin dışında farklı bir yere takan sürücüye de aynı ceza verilir; araç, plaka uygun yere takılıncaya kadar men edilir.",
+      "articleRefs": [
+        "23"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Tescil plakasının farklı okunmasına ya da okunamamasına bilerek yol açacak şekilde plakasında değişiklik yapan sürücüye kaç Türk lirası idari para cezası verilir?",
+      "back": "140.000 Türk lirası; araç ayrıca otuz gün süreyle trafikten menedilir.",
+      "articleRefs": [
+        "23"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Yönetmelikte belirtilen nitelik veya ölçülere aykırı plaka takan sürücüye kaç Türk lirası idari para cezası verilir?",
+      "back": "4.000 Türk lirası idari para cezası verilir; öngörülen sayıda plaka takmayan sürücüye de aynı ceza uygulanır.",
+      "explanation": "Tescil plakalarının nitelik ve nicelikleri ile diğer esaslar yönetmelikte gösterilir.",
+      "articleRefs": [
+        "23",
+        "24"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Son ihlalden geriye doğru bir yıl içinde iki veya daha fazla kez plakasında bilerek okunmayı engelleyen değişiklik yapan sürücüye her seferinde kaç Türk lirası ceza verilir?",
+      "back": "280.000 Türk lirası; araç altmış gün süreyle trafikten menedilir.",
+      "explanation": "Süre, son ihlalin gerçekleştiği tarihten geriye doğru bir yıl olarak hesaplanır.",
+      "articleRefs": [
+        "23"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Tescilli aracı plakasız kullanan sürücünün sürücü belgesi kaç gün süreyle geri alınır?",
+      "back": "Otuz gün; sürücüye 46.000 Türk lirası idari para cezası verilir ve araç otuz gün trafikten menedilir.",
+      "articleRefs": [
+        "23"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Tescilli aracı plakasız kullanmayı son ihlalden geriye doğru bir yıl içinde iki veya daha fazla kez tekrarlayan sürücünün sürücü belgesi kaç gün geri alınır?",
+      "back": "Altmış gün; her seferinde 140.000 Türk lirası idari para cezası verilir ve araç altmış gün trafikten menedilir.",
+      "articleRefs": [
+        "23"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Yönetmelikte belirtilen nitelik veya ölçülere aykırı plaka takan sürücünün aracı otuz gün süreyle trafikten menedilir mi?",
+      "back": "Hayır; araç, plakaları uygun duruma getirilene kadar trafikten menedilir. Otuz günlük men, plakada bilerek okunmayı engelleyen değişiklik yapılması hâlidir.",
+      "explanation": "Men süresi sonunda da tescil plakaları uygun duruma getirilmeden araç teslim edilmez. Plakaların nitelik ve nicelikleri yönetmelikte gösterilir.",
+      "articleRefs": [
+        "23",
+        "24"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Sahte plaka ya da başka bir araca ait tescil plakası takan veya kullananlar, idari yaptırımların yanında hangi hükme göre cezalandırılır?",
+      "back": "Türk Ceza Kanununun 204 üncü maddesine göre cezalandırılır.",
+      "explanation": "Bu kişilere ayrıca 140.000 Türk lirası idari para cezası verilir, sürücü belgeleri otuz gün geri alınır ve araç otuz gün trafikten menedilir. Plaka basım işlemini gerçekleştiren kuruluş tarafından verilmemiş plaka ile tescil kaydı bulunmayan plaka da aynı hükme bağlıdır.",
+      "articleRefs": [
+        "23"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Tescil belgesi ve plakaların araç üzerinde uygun durumda bulundurulması için tedbir alma ve denetim yükümlülüğü kime aittir?",
+      "back": "İşletene veya sahibine aittir; sürücünün kendisi olup olmadığına bakılmaz.",
+      "explanation": "Yükümlülük, aracın plaka ve tescil belgesine ilişkin hususlara uygun olarak kullanılmasını da kapsar.",
+      "articleRefs": [
+        "23"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Plaka ihlalleri nedeniyle geri alınan sürücü belgesi, idari para cezalarının bir kısmı ödendiğinde iade edilebilir mi?",
+      "back": "Hayır; iade için bu Kanun kapsamında verilen idari para cezalarının tamamının tahsil edilmiş olması şarttır.",
+      "explanation": "Sürücü belgesi geri alma işlemlerini Kanunun 6 ncı maddesinde sayılan görevliler yapar.",
+      "articleRefs": [
+        "23"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Araç muayene raporu düzenlenebilmesi için tescil ya da sahiplik belgesinin yanında hangi sigortanın ibrazı zorunludur?",
+      "back": "Zorunlu mali sorumluluk sigortasının ibrazı zorunludur.",
+      "explanation": "Raporu, Kanunun 35 inci maddesiyle yetkilendirilen kuruluşlar tanzim eder.",
+      "articleRefs": [
+        "24"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Araç muayene raporu, tescil belgesi yerine sahiplik belgesi ibraz edilerek düzenlenebilir mi?",
+      "back": "Evet; araç tescil belgesi veya sahiplik belgesi ibrazı yeterlidir. Zorunlu mali sorumluluk sigortasının ibrazı ise her durumda zorunludur.",
+      "articleRefs": [
+        "24"
+      ],
+      "counterNumbers": []
+    }
+  ]
+}

@@ -1,0 +1,211 @@
+{
+  "deck": {
+    "topicId": "7b47e1cc-1573-4cfc-99fa-6c82b73b88ec",
+    "legislationSlug": "cocuk-koruma-kanunu-uygulama-yonetmeligi",
+    "sourceLabel": "AI bilgi kartı — Çocuk Koruma Kanunu Uygulama Yönetmeliği md 1–16",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: resmî madde metni + çıkmış sorular)"
+  },
+  "cards": [
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Çocuk Koruma Kanununun Uygulanmasına İlişkin Yönetmelik, bu konuda görev yapanların hangi eğitimine dair usul ve esasları da kapsar?",
+      "back": "Hizmet öncesi ve hizmet içi eğitimine dair usul ve esasları kapsar.",
+      "explanation": "Kapsamda ayrıca şunlar da vardır: denetim altına alınmasına karar verilen, korunma ihtiyacı olan ve suça sürüklenen çocuklar hakkındaki uygulamalar, sosyal inceleme raporları ve suça sürüklenen çocukların soruşturma ile yargılama usullerine ilişkin kurallar.",
+      "articleRefs": [
+        "2"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Çocuk Koruma Kanununun Uygulanmasına İlişkin Yönetmelik, Çocuk Koruma Kanununun hangi maddelerine dayanılarak hazırlanmıştır?",
+      "back": "5395 sayılı Çocuk Koruma Kanununun 32 ve 47 nci maddelerine dayanılarak hazırlanmıştır.",
+      "articleRefs": [
+        "3"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Çocuk Koruma Kanununun Uygulanmasına İlişkin Yönetmelikte 'Kurum' terimi neyi ifade eder?",
+      "back": "Yönetmelik kapsamındaki çocuğun bakılıp gözetildiği ve hakkında verilen tedbir kararlarının yerine getirildiği resmî veya özel kurumları ifade eder.",
+      "articleRefs": [
+        "4"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Çocuk mahkemesi bulunmayan yerlerde, yönetmelikteki 'Mahkeme' tanımına hangi mahkemeler girer?",
+      "back": "Aile ya da asliye hukuk mahkemeleri ile ceza mahkemeleri girer.",
+      "explanation": "Tanımın esasını çocuk mahkemeleri ile çocuk ağır ceza mahkemeleri oluşturur.",
+      "articleRefs": [
+        "4"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Çocukların yakalanması, gözaltına alınması ve ifadelerinin alınmasında hangi yönetmeliğin hükümleri uygulanır?",
+      "back": "Yakalama, Gözaltına Alma ve İfade Alma Yönetmeliğinin çocuklara ilişkin hükümleri uygulanır.",
+      "explanation": "Söz konusu yönetmelik, 1/6/2005 tarihli ve 25832 sayılı Resmî Gazete'de yayımlanmıştır.",
+      "articleRefs": [
+        "5"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Fiili işlediği sırada hangi yaşın altında olan çocuklar hakkında, delilleri toplamak ya da başka failleri belirlemek için soruşturma yapılabilir?",
+      "back": "Oniki yaşından küçük çocuklar hakkında yapılabilir. Onbeş yaşını doldurmamış sağır ve dilsizler için de aynı imkân vardır.",
+      "explanation": "Bu soruşturma, iddia olunan suça dair delillerin toplanmasına ya da başka fail veya faillerin bulunup bulunmadığının belirlenmesine yöneliktir.",
+      "articleRefs": [
+        "5"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Nüfus kaydına göre oniki yaşından küçük olup görünüşte oniki yaşından büyük olan çocuk hakkında, yaşı düzeltilmeden kamu davası açılabilir mi?",
+      "back": "Hayır. Çocuğun yaşı, hukuk mahkemesinde dava açılarak düzeltilmeden kamu davası açılamaz.",
+      "explanation": "Aynı kural, çocuğun nüfusa kayıtlı yaşının gerçek yaşı olmadığının başka bir şekilde anlaşıldığı hâlde de uygulanır.",
+      "articleRefs": [
+        "5"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Çocuklar yetişkinlerle birlikte suç işlediğinde, adlî kolluk çocuklar hakkındaki evrakı nasıl düzenler?",
+      "back": "Adlî kolluk, çocuklar hakkında ayrı evrak düzenler. Soruşturma ve kovuşturma da ayrı yürütülür.",
+      "explanation": "Mahkeme lüzum görürse, çocuk hakkındaki yargılamayı genel mahkemedeki davanın sonucuna kadar bekletebilir. Bu hâlde de çocuklar hakkında gerekli tedbirler uygulanır.",
+      "articleRefs": [
+        "7"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Davaların birleştirilmesini genel mahkeme istediğinde, ara karar verilebilmesi için hangi mahkemenin birleştirmeyi uygun bulması gerekir?",
+      "back": "Çocuk hakkında davayı yürüten mahkemenin uygun bulması gerekir. Uygun bulursa genel mahkeme birleştirme ara kararını verir ve bunu o mahkemeye bildirir.",
+      "explanation": "Birleştirme, davaların birlikte yürütülmesi zorunlu görüldüğünde verilebilir. Yargılamanın her aşamasında mümkündür; şartı, mahkemelerin uygun bulmasıdır.",
+      "articleRefs": [
+        "7"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Suça sürüklenen çocuk (Kanunun güncel metninde: adli süreçteki çocuk) adlî kontrol tedbirlerine uymadığında, yükümlülükler hakkında tutuklama dışında ne yapılabilir?",
+      "back": "Yükümlülükler bütünüyle veya kısmen kaldırılabilir ya da değiştirilebilir. Çocuk, bunlardan bazılarına uymaktan geçici olarak muaf da tutulabilir.",
+      "explanation": "Tutuklamanın bir sınırı vardır: onbeş yaşını doldurmamış çocuklar hakkında, üst sınırı beş yılı aşmayan hapis cezasını gerektiren fiillerinden dolayı tutuklama kararı verilemez.",
+      "articleRefs": [
+        "10",
+        "11"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Suça sürüklenen çocuk (Kanunun güncel metninde: adli süreçteki çocuk) hakkında tutuklama kararı, yalnız çocuk adlî kontrol tedbirlerine uymadığında mı verilebilir?",
+      "back": "Hayır. Tedbirlerden sonuç alınamaması ya da sonuç alınamayacağının anlaşılması hâlinde de yetkili yargı mercii tutuklama kararı verebilir.",
+      "explanation": "Bu kararı vermeye yetkili olan, yetkili yargı merciidir.",
+      "articleRefs": [
+        "10"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Kapalı yapılan çocuk duruşmasında kimler hazır bulunabilir?",
+      "back": "Çocuk, velisi, vasisi ve mahkemece görevlendirilmiş sosyal çalışma görevlisi bulunabilir. Çocuğun bakımını üstlenen aile ve çocuk kurumda bakılıyorsa kurumun temsilcisi de bulunabilir.",
+      "explanation": "Çocukların duruşmaları kapalı yapılır; hüküm de kapalı duruşmada açıklanır.",
+      "articleRefs": [
+        "13"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Kovuşturma sırasında kaç yaşını doldurmuş çocuklar hakkında yargılama açık yapılır?",
+      "back": "Onsekiz yaşını doldurmuş çocuklar hakkında yargılama açık yapılır; hüküm de açık tefhim edilir.",
+      "explanation": "Ceza Muhakemesi Kanununun 182 nci maddesinin ikinci fıkrasındaki koşullar varsa, mahkeme duruşmanın kapalı yapılmasına karar verebilir.",
+      "articleRefs": [
+        "13"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Çocuğun sorgusu sırasında yanında bulundurulan sosyal çalışma görevlisinin görevi nedir?",
+      "back": "Çocuğa haklarını öğretmek ve onu yargılama süreci hakkında bilgilendirmektir. Ayrıca kendini güvende hissetmesi, süreci anlaması ve görüşlerini serbestçe ifade etmesi için ona yardım eder.",
+      "explanation": "Mahkeme veya hâkim, çocuğun sorgusu ya da çocuk hakkındaki diğer işlemler sırasında çocuğun yanında sosyal çalışma görevlisi bulundurabilir.",
+      "articleRefs": [
+        "13"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Cumhuriyet başsavcılığındaki çocuk bürosunda görev yapacak Cumhuriyet savcılarını kim görevlendirir?",
+      "back": "Cumhuriyet başsavcısı görevlendirir. Seçim, Çocuk Koruma Kanununun 28 inci maddesinin birinci fıkrasındaki nitelikleri taşıyanlar arasından ve yeterli sayıda yapılır.",
+      "explanation": "Çocuk bürosu, Cumhuriyet başsavcılıklarında kurulur.",
+      "articleRefs": [
+        "14"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Çocuk bürosunda Cumhuriyet savcılarıyla çalışmak üzere kaç müdür görevlendirilir?",
+      "back": "Bir müdür görevlendirilir; yanında yeterli sayıda zabıt kâtibi de görev alır.",
+      "explanation": "Müdür ve zabıt kâtipleri, büroda görevli Cumhuriyet savcılarıyla çalışır. Büro görevlerini Kanunun 4 üncü maddesine uygun olarak yerine getirirler.",
+      "articleRefs": [
+        "14"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Cumhuriyet savcılığı çocuk bürosunun görevleri arasında hangileri vardır?",
+      "back": "Suça sürüklenen çocuklar (Kanunun güncel metninde: adli süreçteki çocuk) hakkındaki soruşturma işlemlerini yürütmek bu görevler arasındadır. Tedbir alınması gereken durumlarda gecikmeksizin tedbir alınmasını sağlamak da öyle.",
+      "explanation": "Büro ayrıca destek hizmetleri için ilgili kamu kurum ve kuruluşları ve sivil toplum kuruluşlarıyla işbirliği içinde çalışır. Bu hizmetler; yardıma, eğitime, işe, barınmaya ihtiyacı olan veya uyum güçlüğü çeken çocuklara yöneliktir. Çocuk Koruma Kanununda ve diğer kanunlarla verilen görevleri de yerine getirir.",
+      "articleRefs": [
+        "15"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Çocuk bürosu, koruyucu ve destekleyici tedbir kararlarının uygulanmasıyla ilgili yönetmelik hükümleri gereğince hangi makamlarla işbirliği içinde çalışır?",
+      "back": "İl veya ilçe koordinasyon makamlarıyla işbirliği içinde çalışır.",
+      "explanation": "Dayanak, Çocuk Koruma Kanununa Göre Verilen Koruyucu ve Destekleyici Tedbir Kararlarının Uygulanması Hakkında Yönetmeliktir.",
+      "articleRefs": [
+        "15"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Kollukta çocuklarla ilgili işlemler yürütülürken hangi karşılaşmayı engellemek için gerekli tedbirler alınır?",
+      "back": "Çocukların, soruşturma nedeniyle kolluk biriminde bulunan yetişkinlerle karşılaşmasını engellemek için.",
+      "explanation": "Çocuklarla ilgili kolluk görevi, öncelikle kolluğun çocuk birimleri tarafından yerine getirilir.",
+      "articleRefs": [
+        "16"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Çocuğun yararı aksini gerektirmiyorsa, kollukta bulunduğu süre boyunca yanında kimin bulunmasına imkân sağlanır?",
+      "back": "Yakınlarından birinin devamlı olarak yanında bulunmasına imkân sağlanır.",
+      "explanation": "Çocuğu suça azmettirdiğinden veya istismar ettiğinden şüphelenilen yakınları yanında bulundurulmaz. Bu durum tutanağa yazılır ve adlî veya idarî makamlara sevk edilen evraka eklenir.",
+      "articleRefs": [
+        "16"
+      ]
+    }
+  ]
+}

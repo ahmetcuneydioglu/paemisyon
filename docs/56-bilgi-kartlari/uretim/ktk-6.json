@@ -1,0 +1,247 @@
+{
+  "deck": {
+    "topicId": "3f91916c-8d15-40f4-bb20-5bcca9253c34",
+    "legislationSlug": "2918-sayili-karayollari-trafik-kanunu",
+    "sourceLabel": "AI bilgi kartı — 2918 Sayılı Karayolları Trafik Kanunu md 33–41",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: resmî madde metni + çıkmış sorular)"
+  },
+  "cards": [
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Taşıma sınırını aşan özel yüklerin taşınması için hangi kurumdan izin alınması zorunludur?",
+      "back": "Karayolları Genel Müdürlüğünden. Trafiğe çıkışı özel izne bağlı araçlar için de bu kurumdan izin alınır.",
+      "explanation": "Özel yük, ağırlık ve boyutları bakımından özelliği olan, başka ulaşım sistemleriyle taşınması olmayan ve taşıma sınırını aşıp da taşınması zorunlu olan yüktür. Verilecek iznin usul ve esaslarını, İçişleri Bakanlığının görüşünü alarak Ulaştırma ve Altyapı Bakanlığı yönetmelikle belirler.",
+      "articleRefs": [
+        "33"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Özel yükler için alınan karayolu kullanım bedeli Karayolları Genel Müdürlüğünce bir kez belirlenip sabit mi kalır?",
+      "back": "Hayır. Bedel her takvim yılı için Karayolları Genel Müdürlüğünce belirlenir ve ilan edilir. Bedeli, yolun yapım, bakım ve işletilmesinden sorumlu kurum/kuruluş alır.",
+      "explanation": "Bedel belirlenirken şunlar dikkate alınır: dingil başına tonaj miktarı, dingil sayısı, taşıma mesafesi ve karayolunun proje ömrünün azaltılmasına karşılık olan bedel.",
+      "articleRefs": [
+        "33"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Özel yük taşınmasında trafik zabıtası desteği alınırsa, destek verilen her gün için ne kadar hizmet bedeli alınır?",
+      "back": "16.000 Türk lirası. Bu bedel genel bütçeye gelir kaydedilir.",
+      "explanation": "Bedel her yıl artırılarak uygulanır. Artışta, bir önceki yıl için 213 sayılı Vergi Usul Kanununun mükerrer 298 inci maddesi uyarınca tespit ve ilan edilen yeniden değerleme oranı esas alınır.",
+      "articleRefs": [
+        "33"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Zorunlu mali sorumluluk sigortası geçerli teminat tutarları üzerinden yaptırılmamış bir araç muayeneye alınır mı?",
+      "back": "Hayır. Bu araçlar muayeneye alınmaz.",
+      "explanation": "Motorlu araçların muayenelerini yönetmelikte belirtilen süreler içinde yaptırmak zorunludur. Muayenede, aracın teknik şartlara uyup uymadığı ekonomik yapısı da dikkate alınarak tespit edilir.",
+      "articleRefs": [
+        "34"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Muayene süresi dolmadan hangi araçlara ayrıca özel muayene yapılması zorunludur?",
+      "back": "İki grup araca: kazaya karışması sonucu yetkili zabıtaca muayenesi gerekli görülenlere ve üzerinde değişiklik yapılanlara. Bu muayeneler öncelikle yapılır.",
+      "explanation": "Karayollarında kullanılan araçların teknik şartlara uyup uymadığını trafik zabıtası da her an kontrol edebilir ve muayenelerini yapabilir.",
+      "articleRefs": [
+        "34"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Muayenesi yapılmamış bir araçla trafiğe çıkılırsa araç sahibine ne kadar idari para cezası verilir?",
+      "back": "235 Türk lirası. Ayrıca araca, muayenesini yaptırması için Karayolları Trafik Yönetmeliğindeki süre ve şartlarla izin verilir.",
+      "explanation": "İzin süresi sonunda muayene yaptırılmadan ya da emniyetsiz raporu verilmiş hâlde trafiğe çıkılırsa araç sahibine 488 Türk lirası ceza verilir. Bu durumda araç trafikten men edilir ve en yakın muayene istasyonuna gönderilir.",
+      "articleRefs": [
+        "34"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Emniyet Genel Müdürlüğüne ait taşıtların muayenesini kim yapar?",
+      "back": "Emniyet Genel Müdürlüğü yapar.",
+      "explanation": "Askeri araçlar, raylı sistemle çalışan araçlar ve iş makinesi türünden araçlar ise yönetmelikte belirlenen esaslara göre tescilini yapan kuruluşlarca muayene edilir.",
+      "articleRefs": [
+        "35"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Muayene süresi geçirilen her ay için muayene ücreti ne kadar fazlasıyla tahsil edilir?",
+      "back": "% 5 fazlasıyla. Ay kesirleri tam ay olarak hesap edilir.",
+      "explanation": "Fazla ücreti, yetki verilen gerçek veya tüzel kişi ya da alt işleticiler tahsil eder.",
+      "articleRefs": [
+        "35"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Muayene istasyonu işletme yetkisini alt işleticiye devreden gerçek veya tüzel kişinin sorumluluğu devirle sona erer mi?",
+      "back": "Hayır. Devir, yetki verilen gerçek ve tüzel kişilerin sorumluluklarını ortadan kaldırmaz.",
+      "explanation": "Yetkinin alt işleticiye devri iki koşula bağlıdır: Bakanlığın onayı (Kanun metninde eski adıyla Ulaştırma Bakanlığı; bugün Ulaştırma ve Altyapı Bakanlığı) ve alt işleticinin aynı standartları sağlaması. İstasyonun işletme belgesi, yönetmelikteki nitelik ve şartlara uygunluk saptandıktan sonra verilir.",
+      "articleRefs": [
+        "35"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Karayollarında araçları hangi belgelere sahip kişiler sürebilir?",
+      "back": "Şu kişiler sürebilir: yönetmelikte sınıfları belirtilen sürücü belgesine sahip olanlar, çok taraflı anlaşmalara göre sürücü belgesi bulunanlar ve geçerli uluslararası sürücü belgesi olanlar.",
+      "explanation": "Sürücü belgesi olmayan kişilerin motorlu araçları karayollarında sürmesi yasaktır. Bu kişilerin aracı sürmesine izin vermek de yasaktır.",
+      "articleRefs": [
+        "36"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Sürücü belgesi geçici olarak ya da tedbiren geri alındığı hâlde motorlu araç kullanan kişiye ne kadar idari para cezası verilir?",
+      "back": "200.000 Türk lirası. Sürücü belgesi iptal edildiği hâlde motorlu araç kullanana da aynı tutar uygulanır.",
+      "explanation": "Belgeyi mahkemeler, Cumhuriyet savcılıkları ya da Kanunda belirtilen yetkililer geri almış olabilir. Hiç sürücü belgesi olmadan motorlu araç kullanan kişiye ise 40.000 Türk lirası ceza verilir.",
+      "articleRefs": [
+        "36"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Sürücü belgesi olmayan birinin motorlu aracı kullanmasına izin veren işletene de idari para cezası verilir mi?",
+      "back": "Evet. İşletene de tescil plakası üzerinden 40.000 Türk lirası idari para cezası verilir. Sorumluluk yalnız aracı kullanana ait değildir.",
+      "explanation": "Kanun iki eylemi birlikte yasaklar: sürücü belgesi olmayanın motorlu aracı karayolunda sürmesi ve sürülmesine izin verilmesi. Belgesi geri alınmış ya da iptal edilmiş kişiye aracı kullandıran işleten de bu cezayı alır.",
+      "articleRefs": [
+        "36"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Bisiklet kullananların kaç yaşını bitirmiş olması zorunludur?",
+      "back": "11 yaşını. Ayrıca bedensel ve ruhsal bakımdan sağlıklı olmaları gerekir.",
+      "explanation": "Bisiklet kullananların sürücü belgesi alması zorunlu değildir. Yine de yaş ve sağlık şartını taşımaları gerekir.",
+      "articleRefs": [
+        "37"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Elektrikli bisiklet ve elektrikli skuter kullananların kaç yaşını bitirmiş olması zorunludur?",
+      "back": "15 yaşını. Bedensel ve ruhsal bakımdan sağlıklı olmaları da zorunludur.",
+      "explanation": "Bu araçları kullananlardan sürücü belgesi istenmez. Yaş ve sağlık şartı ise aranır.",
+      "articleRefs": [
+        "37"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Hayvan sürücüleri için 11 yaşını bitirmiş olmak yeterli midir?",
+      "back": "Hayır. Motorsuz taşıt kullananlar ile hayvan sürücülerinin 13 yaşını bitirmiş olması gerekir. 11 yaş sınırı bisiklet kullananlar içindir.",
+      "explanation": "Bu kişilerin bedensel ve ruhsal bakımdan sağlıklı olmaları da zorunludur. Sürücü belgesi almaları ise zorunlu değildir.",
+      "articleRefs": [
+        "37"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Sürücü belgesi sınıfları ve her sınıfın sürme yetkisi verdiği motorlu araçlar hangi düzenlemeyle belirlenir?",
+      "back": "Yönetmelikle. Uluslararası Sürücü Belgesinin verilme usul ve esasları da yönetmelikle belirlenir.",
+      "explanation": "Yönetmelik ayrıca şu konuları düzenler: belge sahiplerine sürme yetkisi verilen araçların cinsleri ve özellikleri, sürücü belgelerinin şekli, içeriği ve verilmesine ilişkin hususlar.",
+      "articleRefs": [
+        "38"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Sürücü adaylarının hangi şartlarda hangi sınıf sürücü belgesi alabileceğine dair usul ve esasları hangi bakanlıklar yönetmelikle belirler?",
+      "back": "İçişleri ve Sağlık bakanlıkları.",
+      "explanation": "Bu yönetmelik şu konuları da düzenler: araç kullanma şartları, kullanılabilecek araçların nitelikleri ve sağlık şartları. Sürücü belgesi sınıfları ile belgenin şekli ve içeriği de yönetmelikle belirlenir.",
+      "articleRefs": [
+        "38",
+        "41"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Sürücü belgesinin sınıfı dışındaki bir aracı süren sürücüye ne kadar idari para cezası verilir?",
+      "back": "700 Türk lirası. Bu kişiye aracı kullandıran araç sahibine de tescil plakası üzerinden aynı miktarda ceza verilir.",
+      "explanation": "Sürücü belgesi sahipleri, belgelerinin sınıfına göre sürmeye yetkili oldukları araçların dışındaki araçları süremez. Hangi sınıfın hangi araçları kapsadığı yönetmelikle belirlenir.",
+      "articleRefs": [
+        "39"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Geçerlilik süresi dolmuş sürücü belgesiyle araç kullanan sürücüye yalnızca idari para cezası mı verilir?",
+      "back": "Hayır. Sürücüye 343 Türk lirası idari para cezası verilir ve sürücü belgesi de geri alınır.",
+      "explanation": "Sürücü belgeleri süreli olarak verilir. Geçerlilik süreleri ve yenileme şartları yönetmelikle belirlenir. Bu şekilde yenilenen sürücü belgelerinden harç alınmaz.",
+      "articleRefs": [
+        "39"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Dış ülkeden aldığı sürücü belgesiyle yönetmelikteki süre ve şartlara aykırı araç kullanan kişiye ne kadar idari para cezası verilir?",
+      "back": "343 Türk lirası. Bu ceza her seferinde verilir.",
+      "explanation": "Yönetmelikle belirlenen konular arasında şunlar var: dış ülkelerden alınan sürücü belgelerinin ülkemiz belgeleriyle değiştirilmesi ve bu belgelerle ülkemizde araç kullanılmasına ilişkin usul ve esaslar.",
+      "articleRefs": [
+        "39"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Sürücü belgesi alacakların öğrenim durumu bakımından en az hangi düzeyde eğitim almış olması zorunludur?",
+      "back": "En az ilkokul düzeyinde.",
+      "explanation": "Diğer zorunlu şartlardan bazıları: yönetmelikte belirlenen yaş ve deneyim şartları, İçişleri ve Sağlık bakanlıklarınca müştereken çıkarılan yönetmelikteki sağlık şartları ve önceden verilmiş aynı sınıf başka bir sürücü belgesinin bulunmaması. Sürücü kursunda teorik ve uygulamalı eğitimi tamamlayıp sınavları başararak motorlu taşıt sürücüsü sertifikası almış olmak da şartlar arasındadır.",
+      "articleRefs": [
+        "41"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Sürücü belgesi alma şartlarından biri olmadan belge verildiği ya da şartların hileli yollarla temin edildiği anlaşılırsa belgeye ne olur?",
+      "back": "Sürücü belgesi, vermeye yetkili kurumca iptal edilir.",
+      "explanation": "İptalden sonra kişi, maddedeki hükümlere uygun olarak yeniden sürücü sertifikası alırsa kendisine yeniden sürücü belgesi verilir.",
+      "articleRefs": [
+        "41"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Sürücü belgesini aldıktan sonra adli sicil şartına konu suçlardan biriyle mahkûm olan kişinin belgesi süresiz olarak mı geri alınır?",
+      "back": "Hayır. Belge, Kanunun 6 ncı maddesinde sayılan görevlilerce geri alınır ve adli sicil şartı sağlanıncaya kadar geri alınmış kalır. 48 inci madde hükümleri saklıdır.",
+      "explanation": "Adli sicil şartı, şu suçlardan hüküm giyilmemiş olmasıdır: 5237 sayılı Türk Ceza Kanununun 188, 190 ve 191 inci maddeleri, 5607 sayılı Kaçakçılıkla Mücadele Kanununun 4 üncü maddesinin yedinci fıkrası ve 6136 sayılı Kanunun 12 nci maddesinin ikinci ve takip eden fıkralarında belirtilen suçlar.",
+      "articleRefs": [
+        "41"
+      ],
+      "counterNumbers": []
+    }
+  ]
+}

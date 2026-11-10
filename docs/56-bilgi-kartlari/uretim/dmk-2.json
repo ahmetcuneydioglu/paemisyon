@@ -1,0 +1,268 @@
+{
+  "deck": {
+    "topicId": "8b68257c-bd1e-4a44-bb49-830ee4d8e4c9",
+    "legislationSlug": "657-sayili-devlet-memurlari-kanunu",
+    "sourceLabel": "AI bilgi kartı — 657 Sayılı Devlet Memurları Kanunu md 28–31, 33, 36, 37",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: resmî madde metni + çıkmış sorular)"
+  },
+  "cards": [
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Memurlar, Türk Ticaret Kanununa göre hangi sıfatı kazandıracak bir faaliyette bulunamaz?",
+      "back": "Tacir ya da esnaf sayılmalarını gerektirecek hiçbir faaliyette bulunamazlar.",
+      "explanation": "Aynı hüküm ticaret ve sanayi müesseselerinde görev almayı da yasaklar. Görevli oldukları kurumların iştiraklerinde kurumlarını temsilen alacakları görevler bu yasağın dışındadır.",
+      "articleRefs": [
+        "28"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Hediye alma yasağının kapsamını belirlemeye hangi kurul yetkilidir?",
+      "back": "Kamu Görevlileri Etik Kurulu.",
+      "explanation": "Kurul, en az genel müdür veya eşiti seviyedeki üst düzey kamu görevlilerince alınan hediyelerin listesini gerektiğinde her takvim yılı sonunda bu görevlilerden istemeye de yetkilidir.",
+      "articleRefs": [
+        "29"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Devlet memurunun hangi teşebbüslerden menfaat sağlaması yasaktır?",
+      "back": "Denetimi altında bulunan ya da kendi görevi veya mensup olduğu kurumla ilgisi olan teşebbüslerden.",
+      "explanation": "Yasak, menfaatin doğrudan doğruya ya da aracı eliyle sağlanmasını kapsar. Menfaat her ne ad altında olursa olsun yasaktır.",
+      "articleRefs": [
+        "30"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Görevinden ayrılan memur, kamu hizmetleriyle ilgili gizli bilgileri izin almadan açıklayabilir mi?",
+      "back": "Hayır. Görevinden ayrılmış olsa bile yetkili bakanın yazılı izni olmadıkça bu bilgileri açıklayamaz.",
+      "explanation": "Yasak görevdeki memurla sınırlı değildir. Açıklamayı serbest kılan tek şey yetkili bakanın yazılı iznidir.",
+      "articleRefs": [
+        "31"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Devlet Memurları Kanununa göre kadrosuz memur çalıştırılabilir mi?",
+      "back": "Hayır. Kadrosuz memur çalıştırılamaz.",
+      "articleRefs": [
+        "33"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Emniyet Hizmetleri Sınıfı hangi memurları kapsar?",
+      "back": "Özel kanunlarına göre çarşı ve mahalle bekçisi, polis, komiser yardımcısı (metinde: komiser muavini), komiser, başkomiser, emniyet amiri ve emniyet müdürü gibi emniyet mensubu memurları kapsar.",
+      "explanation": "Sınıfta sayılanlar arasında emniyet müfettişi, polis müfettişi ve emniyet müdürü sıfatını kazanmış emniyet mensubu memurlar da bulunur.",
+      "articleRefs": [
+        "36"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Kimyager hangi memur sınıfında yer alır?",
+      "back": "Teknik Hizmetler Sınıfında.",
+      "explanation": "Bu sınıf, kurumlarda meslekleriyle ilgili görevleri fiilen ifa eden unvan sahiplerini kapsar. Bunlar arasında yüksek mühendis, mühendis, mimar, jeolog, fizikçi, matematikçi ve istatistikçi vardır. En az orta derecede mesleki tahsil görmüş fen memuru, tekniker ve teknisyen de bu sınıftadır.",
+      "articleRefs": [
+        "36"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Sosyal hizmetler mütehassısı Genel İdare Hizmetleri Sınıfında mı yer alır?",
+      "back": "Hayır. Sosyal hizmetler mütehassısı Sağlık Hizmetleri ve Yardımcı Sağlık Hizmetleri Sınıfındadır. Bu sınıfta, sağlık hizmet sahasında çalışan yüksek öğrenim görmüş personel arasında sayılır.",
+      "explanation": "Genel İdare Hizmetleri Sınıfı; yönetim, icra, büro ve benzeri hizmetleri gören ve diğer sınıflara girmeyen memurları kapsar. Sağlık sınıfındaki aynı grupta fizikoterapist, tıp teknoloğu, biyolog, pisikolog ve diyetçi de sayılır.",
+      "articleRefs": [
+        "36"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Azami yükselebileceği derecedeki memurun kazanılmış hak aylığının bir üst dereceye yükseltilmesi için, memurun o derecenin hangi kademesinden aylık almaya hak kazanması gerekir?",
+      "back": "Dördüncü kademesinden. Ayrıca son sekiz yıllık süre içinde herhangi bir disiplin cezası almamış olması gerekir.",
+      "explanation": "Azami derece, öğrenim durumu, hizmet sınıfı ve görev unvanına göre belirlenir.",
+      "articleRefs": [
+        "37"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Ticaret yasağı gereği memur hangi şirket ortaklıklarını üstlenemez?",
+      "back": "Kollektif şirkette ortak, komandit şirkette ise komandite ortak olamaz.",
+      "explanation": "Aynı cümleye göre memur ticari mümessil veya ticari vekil de olamaz.",
+      "articleRefs": [
+        "28"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Memur, görevi sırasında olmamak kaydıyla menfaat sağlama amacıyla hediye kabul edebilir mi?",
+      "back": "Hayır. Menfaat sağlama amacıyla hediye kabul etmek, görev sırasında olmasa dahi yasaktır.",
+      "explanation": "Madde, doğrudan doğruya ya da aracı eliyle hediye istemeyi de yasaklar. İş sahiplerinden borç para istemek ve almak da aynı yasağın kapsamındadır.",
+      "articleRefs": [
+        "29"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Memur kadroları hangi düzenlemede gösterildiği şekilde düzenlenir?",
+      "back": "Cumhurbaşkanlığı kararnamesinde gösterildiği şekilde düzenlenir.",
+      "articleRefs": [
+        "33"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Avukatlık Hizmetleri Sınıfındaki memurlarda hangi nitelikler bulunur?",
+      "back": "Bu memurlar özel kanunlarına göre avukatlık ruhsatına sahip ve baroya kayıtlıdır. Ayrıca kurumlarını yargı mercilerinde temsil yetkisini haizdirler.",
+      "articleRefs": [
+        "36"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Azami derecenin dördüncü kademesinden aylık almaya hak kazanan memurun kazanılmış hak aylığının bir üst dereceye yükseltilmesi için kadro şartı aranır mı?",
+      "back": "Hayır. Yükseltme kadro şartı aranmaksızın yapılır. Son sekiz yıllık süre içinde disiplin cezası almamış olmak ise şarttır.",
+      "articleRefs": [
+        "37"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Eşi yasaklanan faaliyetlerde bulunan memur, bu durumu kaç gün içinde bağlı olduğu kuruma bildirmelidir?",
+      "back": "15 gün içinde bağlı olduğu kuruma bildirmekle yükümlüdür.",
+      "explanation": "Aynı yükümlülük, reşit olmayan veya mahcur olan çocukları yasaklanan faaliyetlerde bulunan memur için de geçerlidir.",
+      "articleRefs": [
+        "28"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Liseyi bitirip Emniyet Hizmetleri Sınıfına giren memur hangi derece ve kademeden göreve başlar?",
+      "back": "12. derecenin 4. kademesinden başlar. Liseyi bitirenlerin 13/3 olan giriş derece ve kademesine bir derece bir kademe eklenir.",
+      "explanation": "Emniyet hizmetleri sınıfına girenlerde ekleme öğrenime göre değişir. İlkokul ve ortaokul bitirenlere iki derece, lise ve dengi okul bitirenlere bir derece bir kademe, yüksek öğrenim bitirenlere bir derece eklenir.",
+      "articleRefs": [
+        "36"
+      ],
+      "derivedNumbers": [
+        {
+          "value": 12,
+          "expr": "13 - 1",
+          "refs": [
+            "36"
+          ],
+          "note": "lise giriş derecesine bir derece eklenmesi"
+        },
+        {
+          "value": 4,
+          "expr": "3 + 1",
+          "refs": [
+            "36"
+          ],
+          "note": "lise giriş kademesine bir kademe eklenmesi"
+        }
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "4 yıl süreli yüksek öğrenimi bitirip Emniyet Hizmetleri Sınıfına giren memur hangi derece ve kademeden göreve başlar?",
+      "back": "8. derecenin 1. kademesinden başlar. 4 yıl süreli yüksek öğrenimin 9/1 olan giriş derece ve kademesine bir derece eklenir.",
+      "articleRefs": [
+        "36"
+      ],
+      "derivedNumbers": [
+        {
+          "value": 8,
+          "expr": "9 - 1",
+          "refs": [
+            "36"
+          ],
+          "note": "yüksek öğrenim giriş derecesine bir derece eklenmesi"
+        }
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Memur, üyesi olduğu yapı kooperatifinin yönetim kurulunda görev alabilir mi?",
+      "back": "Evet. Üyesi olduğu yapı, kalkınma ve tüketim kooperatiflerinin yönetim, denetim ve disiplin kurulu üyelikleri yasaklamanın dışındadır.",
+      "explanation": "Bu istisna, kamu kurumu niteliğindeki meslek kuruluşlarının yönetim, denetim ve disiplin kurulu üyeliklerini de kapsar. Kanunla veya Cumhurbaşkanlığı kararnamesiyle kurulmuş yardım sandıklarının bu kurullarındaki üyelikler ve özel kanunlarda belirtilen görevler de istisnadadır. Memurun söz konusu kooperatife üye olması gerekir.",
+      "articleRefs": [
+        "28"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Emniyet müdürü, başkomiser ya da emniyet amiri olmayan ve yükseköğrenim görmemiş bir Emniyet Hizmetleri Sınıfı mensubu en fazla hangi dereceye yükselebilir?",
+      "back": "3. derecenin son kademesine kadar yükselebilir.",
+      "explanation": "Bu gruptakilerden yükseköğrenimli olanlar 1. derecenin son kademesine kadar yükselebilir. Emniyet müdürleri ve bu sıfatı taşıyan emniyet teşkilatı mensupları da 1. derecenin son kademesine kadar çıkabilir.",
+      "articleRefs": [
+        "36"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Avukatlık Hizmetleri Sınıfına giren memurun, memuriyete girmeden önce avukatlıkla geçirdiği sürenin ne kadarı memuriyette geçmiş sayılır?",
+      "back": "3/4'ü memuriyette geçmiş sayılır. Bu sürenin her yılı bir kademe ilerlemesine, her üç yılı bir derece yükselmesine esas olur.",
+      "explanation": "Aynı kural, memurluktan ayrılarak avukatlıkla geçirilen süreler için de uygulanır.",
+      "articleRefs": [
+        "36"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Memur, mesleki faaliyette veya serbest meslek icrasında bulunmak üzere hangi yerleri açamaz?",
+      "back": "Ofis, büro, muayenehane ve benzeri yerler açamaz.",
+      "explanation": "Aynı cümleye göre memur, gerçek kişilere, özel hukuk tüzel kişilerine veya kamu kurumu niteliğindeki meslek kuruluşlarına ait herhangi bir iş yerinde çalışamaz. Vakıf yükseköğretim kurumlarında da çalışamaz.",
+      "articleRefs": [
+        "28"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Master derecesiyle bir kademe ilerlemesinden yararlanan memur, mesleğiyle ilgili öğrenim dalında doktora yaparsa ne kadar ilerleme alır?",
+      "back": "İki kademe ilerlemesi uygulanır.",
+      "explanation": "Master derecesi alana ya da yüksek öğrenim kurumunda en az bir yıl ilave öğrenimle lisans üstü ihtisas sertifikası alana bir kademe ilerlemesi uygulanır. Tıpta uzmanlık belgesi alana ve mesleğiyle ilgili dalda doktora yapana ise bir derece yükselmesi uygulanır.",
+      "articleRefs": [
+        "36"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Memuriyet öncesi hizmetler derece ve kademeye değerlendirilirken, yalnız özel sektörde geçen süre en çok ne kadar hesaba katılabilir?",
+      "back": "12 yıl. Değerlendirilecek hizmet süresinden yalnız özel sektörde geçen kısım bu süreyi geçemez.",
+      "explanation": "Yapılacak intibak sonucunda girilecek derece, öğrenim durumuna göre yükselinebilecek derecenin son kademe aylığını geçemez.",
+      "articleRefs": [
+        "36"
+      ]
+    }
+  ]
+}

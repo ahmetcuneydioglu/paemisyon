@@ -1,0 +1,259 @@
+{
+  "deck": {
+    "topicId": "ca720f44-72d7-4159-9c40-806f47ef136f",
+    "legislationSlug": "emniyet-atama-ve-yer-degistirme-yonetmeligi",
+    "sourceLabel": "AI bilgi kartı — Emniyet Atama ve Yer Değiştirme Yönetmeliği md 15–24",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: resmî madde metni + çıkmış sorular; 2 açıklama düşürüldü)"
+  },
+  "cards": [
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Emniyet personelinin atamaları kural olarak ne zaman yapılır?",
+      "back": "Her yıl genel atama döneminde ve Yönetmelikte gösterilen esaslara göre yapılır.",
+      "explanation": "Bu kural md 18 ve md 19 hükümleri saklı kalmak kaydıyla geçerlidir. Mazeret atamaları md 18'deki hâllerde talep edilebilir. Zamandışı atamalar ise md 19'da sayılan hâllerde genel atama zamanına bağlı kalınmadan her zaman yapılabilir.",
+      "articleRefs": [
+        "15",
+        "18",
+        "19"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "İkinci bölge görev sırası gelen personelin isimleri, Genel Müdürlükçe ilgili birimlere en geç ne zamana kadar bildirilir?",
+      "back": "En geç Şubat ayı sonuna kadar bildirilir.",
+      "articleRefs": [
+        "15"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "İkinci bölge görev sırası gelen personelin sayısı neye göre tespit edilir?",
+      "back": "İkinci bölgedeki personel ihtiyacı göz önünde bulundurularak tespit edilir.",
+      "articleRefs": [
+        "15"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "3 sayılı Cumhurbaşkanlığı Kararnamesinin eki (II) sayılı cetvelde yer alan emniyet kadro ve görevlerine atama hangi işlemle yapılır?",
+      "back": "Cumhurbaşkanı Kararı ile yapılır. Bu kadrolardaki yer değiştirmeler de aynı işlemle yapılır.",
+      "explanation": "Bu bent, Yönetmelik kapsamındaki personelden (II) sayılı cetveldeki kadro, pozisyon ve görevlere atananları kapsar.",
+      "articleRefs": [
+        "16"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "(II) sayılı cetvel dışında kalan ve emniyet müdürü meslek derecelerine mahsus unvanları taşıyan kadrolara atama, Genel Müdürün onayıyla mı yapılır?",
+      "back": "Hayır. Bu atamalar Genel Müdürün önerisi üzerine Bakan onayı ile yapılır. Bu personelin yer değiştirmeleri de aynı usule tabidir.",
+      "articleRefs": [
+        "16"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Cumhurbaşkanı Kararı ve Bakan onayı kapsamı dışında kalan emniyet personelinin atamaları kimin onayıyla yapılır?",
+      "back": "Genel Müdürün onayıyla yapılır. Bu personelin yer değiştirme suretiyle atamaları da Genel Müdürün onayına tabidir.",
+      "articleRefs": [
+        "16"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "İkinci bölgeye atama sırası gelen personelin atama tercih formunu kim hazırlayıp Genel Müdürlüğe gönderir?",
+      "back": "Personelin bağlı bulunduğu birim gönderir. Formu usulüne uygun şekilde hazırlar ve Genel Müdürlüğe iletir.",
+      "explanation": "Aynı usul, ikinci bölgedeki hizmet süresini doldurduğu için genel atamaya tabi olan personelin formları için de geçerlidir.",
+      "articleRefs": [
+        "17"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Genel Müdürlük, atama tercih formunda yazılan taleple bağlı mıdır?",
+      "back": "Hayır. Genel Müdürlük atama tercih formundaki taleple bağlı değildir. Form, ancak bir talep bildirir.",
+      "explanation": "Tercih formunu personelin bağlı bulunduğu birim usulüne uygun şekilde hazırlayıp gönderir. Atama kararı Genel Müdürlüğün değerlendirmesine kalır.",
+      "articleRefs": [
+        "17"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Zamandışı ve mazeret atamalarına esas belgeler ne kadar süre içinde Genel Müdürlükte olacak şekilde gönderilir?",
+      "back": "Bir ay içinde Genel Müdürlükte olacak şekilde gönderilir.",
+      "explanation": "Zamandışı atama kapsamındaki personelin durumu Genel Müdürlükçe öncelikle değerlendirilir.",
+      "articleRefs": [
+        "17"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Hastalık mazeretiyle atamada, tedavinin personelin bulunduğu yerde yapılamayacağını gösteren sağlık kurulu raporu hangi hastanelerden alınır?",
+      "back": "Tam teşekküllü Devlet hastaneleri, Devlet eğitim ve araştırma hastaneleri ve üniversite hastanelerinden alınır. Özel hastaneler ile özel veya vakıf üniversitelerine bağlı hastaneler hariçtir.",
+      "explanation": "Rapor; personelin kendisi, eşi veya çocuklarının hastalığında aranır. Anne, baba veya kardeşin hastalığında ise ek şart vardır: personelin anne ve babası için tek çocuk, kardeşi için tek kardeş olması gerekir. Bu şartla, bu kişilerden birine vasi tayin edilmiş olmalıdır.",
+      "articleRefs": [
+        "18"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Personelin eşi veya çocuğu vefat ederse, mazeret ataması talebi vefat tarihinden itibaren ne kadar süre içinde yapılmalıdır?",
+      "back": "İki yıl içinde yapılmalıdır. Süre vefat tarihi itibarıyla işler.",
+      "explanation": "Genel atama döneminde atamaya tabi olan personel, mazeret belgelerini en geç Şubat ayında yayımlanan genelgede belirtilen süre içinde iletmek zorundadır.",
+      "articleRefs": [
+        "18"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Boşanma nedeniyle mazeret ataması için talep süresi iki yıl mıdır?",
+      "back": "Hayır. Boşanmada süre bir yıldır. Bu süre, boşanmanın kesinleşmiş mahkeme ilamıyla belgelenmesinin ardından kesinleşme tarihi itibarıyla işler. İki yıl, eş veya çocuk vefatına ilişkin süredir.",
+      "articleRefs": [
+        "18"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "trap",
+      "difficulty": 1,
+      "front": "Aynı il içindeki farklı birimler arasında, genel atama zamanı beklenmeden atama yapılabilir mi?",
+      "back": "Evet. Aynı il içindeki farklı birimler arasında ve birimlerin kendi içinde her zaman atama ve yer değiştirme yapılabilir.",
+      "explanation": "Genel atama zamanına bağlı kalınmayan diğer hâller arasında şunlar bulunur: emniyet ve asayişe ilişkin sebepler, birimlerin kuruluşu, değişikliği veya kaldırılması ve mevzuat değişikliği. İdari tahkikatlar kapsamında müfettişlerce birim değişikliği teklif edilmesi de bu hâllerdendir.",
+      "articleRefs": [
+        "19"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Tabii afet sebebiyle zamandışı atama hangi durumda yapılır?",
+      "back": "Deprem, heyelan ve sel baskını gibi tabii bir afet sebebiyle, hizmet yaptığı bölgede evi yıkılan personelin kendi isteği üzerine yapılır.",
+      "articleRefs": [
+        "19"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Personelin can güvenliği sebebiyle çalıştığı birimde hizmet görme imkânını kaybettiğini kim tespit eder?",
+      "back": "En üst birim amiri tespit eder. Bu tespit üzerine genel atama zamanına bağlı kalınmaksızın atama yapılabilir.",
+      "articleRefs": [
+        "19"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Atama ve yer değiştirme emri, atanan personelin ilk amirine geldikten sonra en geç kaç gün içinde ilgiliye tebliğ edilir?",
+      "back": "En geç 10 gün içinde tebliğ edilir. Ardından yolluğu verilerek ilişiği kesilir.",
+      "explanation": "Daha üst makamlar atama emrini geciktirmeksizin aşağı kademelere ulaştırmakla sorumludur. Mehil müddeti bakımından 657 sayılı Devlet Memurları Kanununun 62 nci maddesi uygulanır.",
+      "articleRefs": [
+        "20"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Genel atama döneminde atanan personelin ilişik kesme tarihlerini kim belirler?",
+      "back": "Genel Müdürlük belirler.",
+      "explanation": "Kural olarak atama emri ilk amire geldikten sonra en geç 10 gün içinde tebliğ edilir ve yolluğu verilerek ilişik kesilir. Genel atama döneminde atananlar için ise ilişik kesme tarihleri Genel Müdürlükçe belirlenir.",
+      "articleRefs": [
+        "20"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Sayman, mutemet ve mal sorumlusu görevini yapan atanmış personele, üzerindeki hesap ve malları devir ve teslim için ne kadar süre verilebilir?",
+      "back": "Bir aya kadar süre verilebilir.",
+      "explanation": "Atanan personel hakkında mehil müddeti bakımından 657 sayılı Devlet Memurları Kanununun 62 nci maddesi uygulanır. Bu görevleri ifa edenler için ise devir ve teslim amacıyla ek süre öngörülmüştür.",
+      "articleRefs": [
+        "20"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "İkinci bölgede il ve ilçe kuruluşları dışında kalan, doğrudan merkeze bağlı taşra teşkilatında görevli personelin bölge hizmet süresi nasıl belirlenir?",
+      "back": "Birimin bağlı bulunduğu il veya ilçe merkezinin cetveldeki hizmet süresine bir yıl eklenerek belirlenir.",
+      "articleRefs": [
+        "21"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "İkinci bölgeye ikinci defa atanan emniyet müdürü rütbesindeki personel, cetvelde yedi yıl görünen birimde beş yıl görev yapınca ikinci bölge görevini tamamlamış sayılır mı?",
+      "back": "Hayır. İkinci ve sonraki atamalardaki kısaltılmış süreler, emniyet amiri ve emniyet müdürü rütbesindeki personel ile özel harekat branşlı personele uygulanmaz.",
+      "explanation": "Diğer personel için kısaltılmış süreler şöyledir: cetvelde yedi yıl olan birimde beş yıl, altı yılda dört yıl, beş yılda üç yıl. Dört yıl ile üç ve iki yıl olan birimlerde süre iki yıldır. Personel, süreden önce atanmasını gerektiren bir sebep olmadıkça birim için tespit edilen süre kadar hizmet görmek zorundadır.",
+      "articleRefs": [
+        "23"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Erişkinler İçin Engellilik Değerlendirmesi Hakkında Yönetmeliğe göre verilen raporda tek engelli bireyi olan eşi bağımsız ve kısmi bağımlı durumda görünen personel, talep hâlinde ikinci bölge hizmetinden muaf tutulmak için eşinin engel oranının en az kaç olmasına ihtiyaç duyar?",
+      "back": "%80 ve üzeri olmalıdır. Muafiyet ancak personel talep ederse uygulanır.",
+      "explanation": "Kendisi, eşi veya çocuklarından tam bağımlı durumunda olan personel de talep hâlinde muaf tutulur. Engel oranı %50 ve üzerinde, bağımsız ve kısmi bağımlı durumunda birden fazla engelli bireyi olanlar da muafiyetten yararlanır. Bu durumları ortadan kalkan personelin muafiyet hakkı sona erer.",
+      "articleRefs": [
+        "23"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Bölgedeki hizmet süresinin hesabında, ne kadara kadar eksik hizmeti olan personel süreyi tamamlamış sayılır?",
+      "back": "Üç aya kadar eksik hizmeti olanlar süreyi tamamlamış sayılır. Yıl döngüsü olarak genel atama dönemleri esas alınır.",
+      "explanation": "Süre, atandığı yerde göreve başlama tarihinden başlar. Aynı il sınırları içindeki farklı birimlerde geçirilen süreler birleştirilir.",
+      "articleRefs": [
+        "23"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Birinci bölgeden ikinci bölgeye ilk kez atanacak personel için birinci bölge hizmet süresini doldurma şartı aranır mı?",
+      "back": "Hayır. İlk defa atanacakların sırası, birinci bölgedeki hizmet sürelerine bakılmaksızın belirlenir. Belirleyici olanlar sicil numarası, rütbe ve hizmet branşları ile ikinci bölgedeki kadro ve personel ihtiyacıdır.",
+      "explanation": "Birden fazla kez atanacaklarda sıralama farklıdır. Polis memurlarında sıra branş, bu bölgeden önceki dönüş yılı ve sicil numarasına göre belirlenir. Diğer rütbelerde ise rütbe, önceki dönüş yılı ve sicil numarası esas alınır.",
+      "articleRefs": [
+        "24"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Kendi talebiyle ikinci bölgeye birden fazla kez atanmak isteyen personelin, en az ne kadar birinci bölge hizmetini tamamlamış olması gerekir?",
+      "back": "En az üç yıl birinci bölge hizmetini tamamlamış olması gerekir. Atama, ihtiyaç durumu göz önünde bulundurularak yapılabilir.",
+      "articleRefs": [
+        "24"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Kendi talebiyle ikinci bölgeye ikinci defa atanan, özel harekat branşlı olmayan polis memuru, cetvelde hizmet süresi dört yıl olan birimde kaç yıl görev yaparak bölge hizmetini tamamlar?",
+      "back": "İki yıl görev yaparak tamamlar. Gönüllü olarak ikinci defa atanan personel de bölgedeki süreyi md 23'ün birinci fıkrasındaki kısaltılmış sürelere göre tamamlamak zorundadır.",
+      "explanation": "Aynı fıkraya göre cetvelde üç ve iki yıl gösterilen birimlerde de görev süresi iki yıldır.",
+      "articleRefs": [
+        "24",
+        "23"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,296 @@
+{
+  "deck": {
+    "topicId": "270990de-e156-4db0-b5fb-eb469562dd8a",
+    "legislationSlug": "5018-sayili-kamu-mali-yonetimi-ve-kontrol-kanunu",
+    "sourceLabel": "AI bilgi kartı — 5018 Sayılı Kamu Malî Yönetimi ve Kontrol Kanunu md 22–40",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: resmî madde metni + çıkmış sorular)"
+  },
+  "cards": [
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Merkez teşkilatındaki harcama yetkilileri, merkez dışı birimlere ödeneği hangi belgeyle gönderir?",
+      "back": "Ödenek Gönderme Belgesi düzenleyerek gönderirler. Ödenek, merkez dışı birimlerin ihtiyaçlarında kullanılır.",
+      "explanation": "Merkezî yönetim kapsamındaki kamu idarelerinde ödenek gönderilmesine ilişkin usul ve esasları Hazine ve Maliye Bakanı belirler.",
+      "articleRefs": [
+        "22"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Yedek ödenek en fazla ne kadar konulabilir?",
+      "back": "Genel bütçe ödeneklerinin yüzde ikisine kadar konulabilir. Bu ödenekten aktarma yapmaya Cumhurbaşkanı yetkilidir.",
+      "explanation": "Yedek ödenek üç amaçla konulur: bütçe kanununda belirtilen hizmet ve amaçları gerçekleştirmek, ödenek yetersizliğini gidermek ya da bütçelerde öngörülmeyen hizmetleri karşılamak. Ödenek, kanuna ekli cetvellerde yer alan idarelerin bütçelerine aktarılmak üzere konulur.",
+      "articleRefs": [
+        "23"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Yedek ödenekten yapılan aktarmaların dağılımı, yılın bitimini takip eden hangi süre içinde ilan edilir?",
+      "back": "On beş gün içinde. Aktarmaların tür, tutar ve idareler itibarıyla dağılımını Cumhurbaşkanlığı ilan eder.",
+      "explanation": "İlan edilen, malî yıl içinde yedek ödenekten yapılan aktarmaların dağılımıdır.",
+      "articleRefs": [
+        "23"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Örtülü ödenek hangi bütçeye konulan ödenektir?",
+      "back": "Cumhurbaşkanlığı bütçesine konulur. Kanun ya da Cumhurbaşkanlığı kararnamesiyle verilen görevler gereği istihbarat hizmeti yürüten diğer kamu idarelerinin bütçelerine de konulabilir.",
+      "explanation": "Kullanım amaçları arasında şunlar bulunur: kapalı istihbarat ve kapalı savunma hizmetleri, Devletin millî güvenliği ve yüksek menfaatleri, Devlet itibarının gerekleri ve olağanüstü hizmetlerle ilgili Devlet ve Hükümet icapları. Kullanılma yerini, giderin kimin tarafından yapılacağını ve hesapların tutulma yöntemini Cumhurbaşkanı belirler.",
+      "articleRefs": [
+        "24"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Bir yılda örtülü ödenek olarak tahsis edilen ödeneklerin toplamı en çok ne kadar olabilir?",
+      "back": "Genel bütçe başlangıç ödenekleri toplamının binde beşini geçemez.",
+      "explanation": "Sınır, ilgili yılda bu amaçla tahsis edilen ödeneklerin toplamına uygulanır. Yani Cumhurbaşkanlığı bütçesindeki örtülü ödenek ile diğer ilgili idare bütçelerindeki örtülü ödenekler birlikte hesaplanır.",
+      "articleRefs": [
+        "24"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Örtülü ödenek, siyasi partilerin propaganda ve seçim ihtiyaçlarında kullanılabilir mi?",
+      "back": "Hayır. Siyasi amaçlar maddede sayılsa da örtülü ödenek, siyasi partilerin idare, propaganda ve seçim ihtiyaçlarında kullanılamaz.",
+      "explanation": "Aynı yasak Cumhurbaşkanının ve ailesinin kişisel harcamaları için de geçerlidir. Örtülü ödeneklere ilişkin giderler, Cumhurbaşkanının belirlediği esaslara göre gerçekleştirilir ve ödenir.",
+      "articleRefs": [
+        "24"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Kamu malî yönetiminde yüklenme ne demektir?",
+      "back": "İş yaptırılması, mal veya hizmet alınması karşılığında geleceğe yönelik bir ödeme yükümlülüğüne girilmesidir. Dayanağı sözleşme esasları ya da kanun veya Cumhurbaşkanlığı kararnamesi hükmüdür.",
+      "explanation": "Yüklenme süresi malî yılla sınırlıdır. Bütçede yeterli ödeneği bulunmayan işler için yüklenmeye girişilemez. Harcama yetkilileri, tahsis edilen ödenekler dahilinde yüklenmeye girer. Yüklenilen tutara ait ödenekler saklı tutulur; başka iş, mal veya hizmet için kullanılamaz.",
+      "articleRefs": [
+        "26"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Malî yılla sınırlı tutulamayan sürekli işlerde, ertesi yıla geçen yüklenmeye her iş itibarıyla ödeneklerin en fazla ne kadarı için girişilebilir?",
+      "back": "Yüzde ellisi için. Ayrıca izleyen yılın Haziran ayını geçmemek, yüklenme süresi on iki ayı aşmamak ve ilgili üst yöneticinin onayını almak gerekir.",
+      "explanation": "Kapsamdaki işler arasında şunlar bulunur: yiyecek, yakacak, akaryakıt ve madeni yağ ihtiyaçları; temini ve korunması güç olan ilaç, aşı, serum ve tıbbi sarf malzemeleri; koruma ve güvenlik, temizlik ve yemek hizmetleri.",
+      "articleRefs": [
+        "27"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Ertesi yıla geçen yüklenme kapsamında Emniyet Genel Müdürlüğünün hangi işleri yer alır?",
+      "back": "Yapım, onarım, etüt ve proje işleri; araştırma-geliştirme projeleri; yiyecek ve giyecek alımları; makine-teçhizat ile silah, mühimmat ve teçhizat alımları; bunların bakım, onarım ve imalat işleri.",
+      "explanation": "Bu işler için de şu sınırlar aranır: her iş itibarıyla ödeneklerin yüzde ellisi, izleyen yılın Haziran ayı, on iki aylık yüklenme süresi ve üst yönetici onayı.",
+      "articleRefs": [
+        "27"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Millî Eğitim Bakanlığının temizlik ve yemek hizmetlerinde, ertesi yıla geçen yüklenme için ödeneklerin yüzde ellisi sınırı aranır mı?",
+      "back": "Hayır. (d) bendinde sayılan işler için yüzde elli sınırı Millî Eğitim Bakanlığı için aranmaz.",
+      "explanation": "(d) bendinde süreli yayın alımı, taşıma, koruma ve güvenlik, temizlik ve yemek hizmetleri sayılır. İstisna yalnız ödeneklerin yüzde ellisinin aşılmaması kaydını kaldırır. İzleyen yılın Haziran ayını geçmeme, on iki aylık yüklenme süresi ve üst yönetici onayı kayıtları yerinde durur.",
+      "articleRefs": [
+        "27"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Emniyet Genel Müdürlüğünün bir malî yılda tamamlanamayan asayiş ve güvenlik alımları için gelecek yıllara yaygın yüklenmeye girişmeye kim yetkilidir?",
+      "back": "İçişleri Bakanlığı yetkilidir.",
+      "explanation": "Merkezî yönetim kapsamındaki kamu idareleri, bir malî yıl içinde tamamlanması mümkün olmayan yatırım projeleri için de gelecek yıllara yaygın yüklenmeye girişebilir.",
+      "articleRefs": [
+        "28"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Cumhurbaşkanı, kiralama ve hizmet alımlarında gelecek yıllara yaygın yüklenme için öngörülen süreleri kaç katına kadar artırabilir?",
+      "back": "Beş katına kadar artırabilir.",
+      "explanation": "Cumhurbaşkanı ayrıca sayılan kiralama ve hizmet alımları dışında kalan mal ve hizmet alımlarını da belirleyebilir. Bunun şartları: birden fazla yıla yaygın olması zorunlu ya da ekonomik olması ve yüklenme süresinin 3 yılı geçmemesi.",
+      "articleRefs": [
+        "28"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Finansal kiralama suretiyle temin edilecek taşıtlarda gelecek yıllara yaygın yüklenme süresi üç yıl mıdır?",
+      "back": "Hayır, dört yıldır. Üç yıl sınırı, finansal kiralama dışındaki kiralama ve hizmet alımları için geçerlidir.",
+      "explanation": "Bu yüklenmeler için şunlar gerekir: yılı bütçesinde ödenek bulunması, merkezî yönetim kapsamındaki idarelerde Cumhurbaşkanlığının onayı ve üst yöneticinin onayı.",
+      "articleRefs": [
+        "28"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Genel yönetim kapsamındaki kamu idareleri dernek, vakıf ve benzeri teşekküllere hangi şartla yardım yapabilir?",
+      "back": "Yardımın bütçelerinde öngörülmüş olması ve kamu yararının gözetilmesi şartıyla yapabilir.",
+      "explanation": "Temel kural şudur: gerçek veya tüzel kişilere, kanunda ya da Cumhurbaşkanlığı kararnamesinde dayanağı olmadan kamu kaynağı kullandırılamaz, yardımda bulunulamaz, menfaat sağlanamaz. Bu yardımların yapılması, kullanılması, izlenmesi, denetlenmesi ve kamuoyuna açıklanması Cumhurbaşkanının çıkardığı yönetmelikle düzenlenir.",
+      "articleRefs": [
+        "29"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Cumhurbaşkanlığı, merkezî yönetim bütçe kanununun ilk altı aylık uygulama sonuçlarını hangi ay kamuoyuna açıklar?",
+      "back": "Temmuz ayı içinde açıklar. Açıklama finansman durumunu, ikinci altı aya ilişkin beklenti ve hedefleri ve faaliyetleri de kapsar.",
+      "explanation": "Genel yönetim kapsamındaki idareler de aynı ay içinde kendi bütçelerinin ilk altı aylık uygulama sonuçlarını, ikinci altı aya ilişkin beklenti ve hedeflerini ve faaliyetlerini kamuoyuna açıklar.",
+      "articleRefs": [
+        "30"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Bütçeyle ödenek tahsis edilen bir harcama biriminde harcama yetkilisi kimdir?",
+      "back": "O harcama biriminin en üst yöneticisidir.",
+      "explanation": "Teşkilât yapısı ve personel durumu gibi nedenlerle harcama yetkilisini belirlemenin güç olduğu idarelerde, harcama yetkisini üst yönetici veya onun belirleyeceği kişiler yürütebilir. Bunun için mahallî idarelerde İçişleri veya Çevre, Şehircilik ve İklim Değişikliği Bakanlığının (metinde: Çevre ve Şehircilik Bakanlığı), diğer idarelerde Hazine ve Maliye Bakanlığının uygun görüşü gerekir.",
+      "articleRefs": [
+        "31"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Harcama yetkisinin devredilmesi, yetkiyi devredenin idarî sorumluluğunu ortadan kaldırır mı?",
+      "back": "Hayır. Harcama yetkisinin devredilmesi, yetkiyi devredenin idarî sorumluluğunu ortadan kaldırmaz.",
+      "explanation": "Harcama yetkisinin bir üst yönetim kademesinde birleştirilmesine ve devredilmesine ilişkin usul ve esasları Hazine ve Maliye Bakanlığı belirler.",
+      "articleRefs": [
+        "31"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Kanunun verdiği yetkiye dayanarak yönetim kurulu ya da komisyon kararıyla yapılan harcamada, harcama yetkisinden doğan sorumluluk kime aittir?",
+      "back": "Kurul, komite veya komisyona aittir.",
+      "explanation": "Kural, kanunların veya Cumhurbaşkanlığı kararnamelerinin verdiği yetkiye istinaden şu kararlarla yapılan harcamalar için geçerlidir: yönetim kurulu, icra komitesi, komisyon ve benzeri kurul veya komite kararları.",
+      "articleRefs": [
+        "31"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Bütçeden harcama yapılabilmesi hangi işleme bağlıdır?",
+      "back": "Harcama yetkilisinin harcama talimatı vermesine bağlıdır.",
+      "explanation": "Talimatta şu bilgiler yer alır: hizmet gerekçesi, yapılacak işin konusu ve tutarı, süresi, kullanılabilir ödeneği, gerçekleştirme usulü ve gerçekleştirmeyle görevli olanlar. Harcama yetkilisi, talimatın mevzuata uygunluğundan ve ödeneklerin etkili, ekonomik ve verimli kullanılmasından sorumludur.",
+      "articleRefs": [
+        "32"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Bütçeden yapılan giderlerin gerçekleştirilmesi hangi işlemle tamamlanır?",
+      "back": "Görevlinin düzenlediği ödeme emri belgesinin harcama yetkilisince imzalanması ve tutarın hak sahibine ödenmesiyle tamamlanır.",
+      "explanation": "Ödeme emri belgesini düzenleyecek görevliyi harcama yetkilileri belirler. Gerçekleştirme görevlileri, harcama talimatı üzerine işin yaptırılmasını, mal veya hizmetin alınmasını, teslim alma işlemlerini ve ödeme belgelerinin hazırlanmasını yürütür. Ortak veri tabanından yapılan harcamalarda veri giriş işlemleri de gerçekleştirme görevi sayılır.",
+      "articleRefs": [
+        "33"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Emanet hesaplarına alınıp talep edilmeyen tutarlar hangi süre sonunda bütçeye gelir kaydedilir?",
+      "back": "Malın alındığı ya da hizmetin yapıldığı malî yılı izleyen beşinci yılın sonuna kadar talep edilmezlerse gelir kaydedilir. Gelir kaydedilen tutarlar ancak mahkeme kararı üzerine ödenir.",
+      "explanation": "Ödeme emri belgesine bağlandığı hâlde ödenemeyen tutarlar, bütçeye gider yazılarak emanet hesaplarına alınır ve buradan ödenir.",
+      "articleRefs": [
+        "34"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Alacaklı geçerli bir mazereti olmadan yazılı talepte bulunmazsa, ödenemeyen borç hangi süre sonunda zamanaşımına uğrar?",
+      "back": "İlgili olduğu malî yılın sonundan başlayarak beş yıl içinde zamanaşımına uğrar ve borç kamu idaresi lehine düşer.",
+      "explanation": "Aynı sonuç, alacaklı belgeleri vermediği için ödenemeyen borçlar için de doğar.",
+      "articleRefs": [
+        "34"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Yüklenicilere teminat karşılığında ödenebilecek bütçe dışı avans, yüklenme tutarının en fazla ne kadarı olabilir?",
+      "back": "Yüzde otuzu. Avansın sözleşmesinde belirtilmesi de gerekir.",
+      "explanation": "İlgili kanunların veya Cumhurbaşkanlığı kararnamelerinin bütçe dışı avans ödenmesine ilişkin hükümleri saklıdır.",
+      "articleRefs": [
+        "35"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Mutemedin avanstan harcadığı tutara ilişkin belgeleri muhasebe yetkilisine verme süresi üç ay mıdır?",
+      "back": "Hayır. İlgili kanunlarında belirtilmemişse süre avanslarda bir ay, kredilerde üç aydır. Mutemet bu süre içinde artan tutarı da iade eder.",
+      "explanation": "Süresi içinde mahsup edilmeyen avanslar hakkında 21.7.1953 tarihli ve 6183 sayılı Kanun hükümleri uygulanır.",
+      "articleRefs": [
+        "35"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Vergi, resim, harç ve benzeri malî yükümlülükler hangi düzenlemeyle konulur?",
+      "back": "Kanunla konulur; değiştirilmeleri ve kaldırılmaları da kanunla olur.",
+      "explanation": "Genel yönetim kapsamındaki kamu idarelerinin gelirlerinin kanuni dayanakları bütçelerinde gösterilir. Genel bütçe gelirlerinin tarh, tahakkuk ve tahsilini Hazine ve Maliye Bakanlığı ya da tarh ve tahakkuka ilgili mevzuatına göre yetkili idareler yapar.",
+      "articleRefs": [
+        "37"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Tahsil edilen özel gelir bütçedeki özel ödenek tutarını aşarsa, aradaki fark kadar ödenek eklenebilir mi?",
+      "back": "Hayır. Tahsil edilen özel gelirlerin ödenek tutarını aşması hâlinde ödenek eklenemez.",
+      "explanation": "Malî yıl içinde kullanılabilecek özel ödenek miktarı da tahsil edilen özel gelir tutarını geçemez. Özel gelirlerin ödenek kaydı, gelecek yıla devri ve iptaline ilişkin yetki ve işlemler merkezî yönetim bütçe kanununda gösterilir.",
+      "articleRefs": [
+        "39"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Kamu yararına kullanılmak üzere kamu idaresine yapılan şartlı bağışın bütçeye gelir ve ödenek kaydedilmesi kimin uygun görmesine bağlıdır?",
+      "back": "Hizmeti yapacak idarenin üst yöneticisinin uygun görmesine bağlıdır.",
+      "explanation": "Bağış, bütçede açılacak bir tertibe gelir; şart kılındığı amaca harcanmak üzere açılacak bir tertibe ödenek kaydedilir. Bu ödenekten amaç dışında başka bir tertibe aktarma yapılamaz. Dış finansman kaynağından sağlananlarda 28.3.2002 tarihli ve 4749 sayılı Kanun hükümleri saklıdır.",
+      "articleRefs": [
+        "40"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Şartlı bağıştan doğan ve yılı bütçesinde belirlenen tutarı aşmayan ödenek, kaç yıl devredildiği hâlde harcanmazsa iptal edilebilir?",
+      "back": "İki yıl. İptale genel bütçe kapsamındaki idarelerde Cumhurbaşkanı, diğer kamu idarelerinde üst yönetici yetkilidir.",
+      "explanation": "Malî yıl sonuna kadar harcanmayan tutarlar, bağış ve yardımın amacı gerçekleşinceye kadar ertesi yıl bütçesine devredilerek ödenek kaydedilir.",
+      "articleRefs": [
+        "40"
+      ]
+    }
+  ]
+}

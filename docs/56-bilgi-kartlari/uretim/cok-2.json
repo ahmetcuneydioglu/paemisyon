@@ -1,0 +1,292 @@
+{
+  "deck": {
+    "topicId": "48443974-0207-4ac2-b51a-34ba2a7b8070",
+    "legislationSlug": "5395-sayili-cocuk-koruma-kanunu",
+    "sourceLabel": "AI bilgi kartı — 5395 Sayılı Çocuk Koruma Kanunu md 17–38",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: resmî madde metni + çıkmış sorular)"
+  },
+  "cards": [
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Çocuk yetişkinlerle birlikte suç işlerse soruşturma ve kovuşturma nasıl yürütülür?",
+      "back": "Ayrı yürütülür. Bu hâlde de çocuk hakkında gerekli tedbirler uygulanır.",
+      "explanation": "Mahkeme lüzum görürse çocuk hakkındaki yargılamayı genel mahkemedeki davanın sonucuna kadar bekletebilir. Davaların birlikte yürütülmesi zorunlu görülürse, mahkemelerin uygun bulması şartıyla genel mahkemelerde yargılamanın her aşamasında birleştirme kararı verilebilir.",
+      "articleRefs": [
+        "17"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Çocuk ile yetişkinin davaları birleştirilirse birleştirilen davalar çocuk mahkemesinde mi görülür?",
+      "back": "Hayır. Birleştirilen davalar genel mahkemelerde görülür.",
+      "explanation": "Birleştirme kararı, davaların birlikte yürütülmesinin zorunlu görülmesi hâlinde verilebilir. Mahkemelerin uygun bulması şartı aranır ve karar genel mahkemelerde yargılamanın her aşamasında verilebilir.",
+      "articleRefs": [
+        "17"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Çocuğun naklinde kolluk, zorunlu hâllerde hangi tehlikeleri önlemek için gerekli önlemi alabilir?",
+      "back": "Çocuğun kaçmasını ve kendisinin ya da başkalarının hayat veya beden bütünlükleri bakımından doğabilecek tehlikeleri önlemek için alabilir.",
+      "explanation": "Kural olarak çocuklara zincir, kelepçe ve benzeri aletler takılamaz. Önlem yetkisi ancak zorunlu hâllerde ve kolluğa tanınmıştır.",
+      "articleRefs": [
+        "18"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Çocuğa yüklenen suçtan dolayı kamu davasının açılmasının ertelenmesine karar verilirse erteleme süresi ne kadardır?",
+      "back": "Üç yıl. Ceza Muhakemesi Kanunundaki koşullar varsa bu karar verilebilir.",
+      "explanation": "Ertelemenin koşulları Ceza Muhakemesi Kanunundan gelir. Süre bakımından ise çocuklara özgü kural uygulanır.",
+      "articleRefs": [
+        "19"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Ceza Muhakemesi Kanununun 171 inci maddesinin ikinci fıkrasındaki hapis cezası üst sınırı, on beş yaşını doldurmamış çocuklarda kaç yıl olarak uygulanır?",
+      "back": "Beş yıl. Bu sınır on beş yaşını doldurmamış çocuklar bakımından uygulanır.",
+      "explanation": "Bu üst sınır kuralı on beş yaşını doldurmamış çocuklar içindir. Kamu davasının açılmasının ertelenmesinde çocuklar açısından erteleme süresi ise üç yıldır.",
+      "articleRefs": [
+        "19"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Adli süreçteki çocuk hakkında, Ceza Muhakemesi Kanununun 109 uncu maddesinde sayılanlara ek olarak hangi adlî kontrol tedbirlerine karar verilebilir?",
+      "back": "Belirlenen çevre sınırları dışına çıkmamak, belirlenen bazı yerlere gidememek veya ancak bazı yerlere gidebilmek ve belirlenen kişi ve kuruluşlarla ilişki kurmamak.",
+      "explanation": "Bu tedbirlerden bir ya da birkaçına soruşturma veya kovuşturma evrelerinde karar verilebilir.",
+      "articleRefs": [
+        "20"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Adli süreçteki çocuk adlî kontrol tedbirlerine uymazsa hangi karar verilebilir?",
+      "back": "Tutuklama kararı verilebilir.",
+      "explanation": "Tedbirlerden sonuç alınamaması ya da sonuç alınamayacağının anlaşılması hâlinde de tutuklama kararı verilebilir.",
+      "articleRefs": [
+        "20"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Denetimli serbestlik müdürlüğünce takip edilen çocuk için adlî kontrol süresince kim görevlendirilir?",
+      "back": "Rehberlik edecek bir uzman görevlendirilir.",
+      "explanation": "Çocuk hakkında yapılacak ihtiyaç değerlendirmesine göre iyileştirme çalışmaları da yürütülür.",
+      "articleRefs": [
+        "20"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Onbeş yaşını doldurmamış çocuk hakkında, üst sınırı kaç yılı aşmayan hapis cezasını gerektiren fiil için tutuklama kararı verilemez?",
+      "back": "Beş yıl. Üst sınırı beş yılı aşmayan hapis cezasını gerektiren fiillerden dolayı onbeş yaşını doldurmamış çocuk hakkında tutuklama kararı verilemez.",
+      "articleRefs": [
+        "21"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Çocuk hakkında hükmün açıklanmasının geri bırakılmasına karar verilirse denetim süresi ne kadardır?",
+      "back": "Üç yıl. Ceza Muhakemesi Kanunundaki koşullar varsa mahkeme bu kararı verebilir.",
+      "articleRefs": [
+        "23"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Adli süreçteki çocuk hakkında hükmün açıklanmasının geri bırakılmasına karar verilirse, 5/A maddesindeki yönlendirme tedbirleri hangi nitelikte uygulanır?",
+      "back": "Denetimli serbestlik tedbiri olarak uygulanır. Uygun görülen biri veya birkaçı seçilir.",
+      "explanation": "Bu kapsamda hükmedilen yükümlülükleri 5/A maddesinde belirtilen kurumlar yerine getirir.",
+      "articleRefs": [
+        "23"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Mağdurun uğradığı zarar az olsa da, adli süreçteki çocuk hakkında hükmün açıklanmasının geri bırakılması için zararın giderilmesi şartı aranmak zorunda mıdır?",
+      "back": "Hayır. Suç nedeniyle mağdurun veya kamunun uğradığı zarar azsa zararın giderilmesi şartı aranmayabilir.",
+      "explanation": "Takdir mahkemededir; şart \"aranmayabilir\". Hükmün açıklanmasının geri bırakılması için Ceza Muhakemesi Kanunundaki koşulların varlığı gerekir. Çocuklar açısından denetim süresi üç yıldır.",
+      "articleRefs": [
+        "23"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Çocuk mahkemesi kaç hâkimden oluşur?",
+      "back": "Tek hâkimden oluşur.",
+      "explanation": "Çocuk mahkemeleri her il merkezinde kurulur. Coğrafi durum ve iş yoğunluğuna göre belirlenen ilçelerde de Hâkimler ve Savcılar Yüksek Kurulunun olumlu görüşü alınarak kurulabilir. İş durumu gerektirirse birden fazla dairesi oluşturulabilir; bu daireler numaralandırılır.",
+      "articleRefs": [
+        "25"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Çocuk mahkemelerinde yapılan duruşmalarda Cumhuriyet savcısı bulunur mu?",
+      "back": "Hayır, bulunmaz. Ancak mahkemelerin bulunduğu yerlerdeki Cumhuriyet savcıları, çocuk mahkemesi kararlarına karşı kanun yoluna başvurabilir.",
+      "articleRefs": [
+        "25"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Çocuk ağır ceza mahkemesi hangi heyetle toplanır?",
+      "back": "Bir başkan ve iki üyeyle toplanır. Mahkemede bir başkan ile yeteri kadar üye bulunur.",
+      "explanation": "Bu mahkemeler, coğrafi durum ve iş yoğunluğuna göre belirlenen yerlerde Hâkimler ve Savcılar Yüksek Kurulunun olumlu görüşü alınarak kurulur.",
+      "articleRefs": [
+        "25"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Çocuk mahkemesi, adli süreçteki çocuklar hakkında hangi mahkemelerin görev alanına giren suçlarda açılan davalara bakar?",
+      "back": "Asliye ceza mahkemesi ile sulh ceza mahkemesinin görev alanına giren suçlara ilişkin davalara bakar.",
+      "explanation": "Çocuklarca işlenen ve ağır ceza mahkemesinin görev alanına giren suçlarla ilgili davalara çocuk ağır ceza mahkemesi bakar. Çocuklar hakkındaki kamu davaları, md 17 hükümleri saklı kalmak kaydıyla bu Kanunla kurulan mahkemelerde görülür.",
+      "articleRefs": [
+        "26"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Görevine gelemeyen çocuk mahkemesi hâkiminin yerine, yetkilendirme yapılıncaya kadar hangi hâkimin bakacağını Hâkimler ve Savcılar Yüksek Kurulu mu belirler?",
+      "back": "Hayır. Hâkim görevine başlayıncaya veya yetkilendirme yapılıncaya kadar bakacak hâkimi, birinci fıkradaki nitelikleri gözeterek adlî yargı adalet komisyonu başkanı belirler.",
+      "explanation": "Hâkimler ve Savcılar Yüksek Kurulu atamayı ve yetkilendirmeyi yapar. Aradaki süre için o yerdeki hâkimlerden birini adlî yargı adalet komisyonu başkanı belirler. Atamalarda istekli olanlara ve daha önce bu görevlerde bulunmuş olanlara öncelik tanınır.",
+      "articleRefs": [
+        "28"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Gecikmesinde sakınca bulunan hâllerde çocuk bürosunun görevleri, büroda görevli olmayan Cumhuriyet savcısınca yerine getirilebilir mi?",
+      "back": "Evet. Gecikmesinde sakınca bulunan hâllerde bu görevler, çocuk bürosunda görevli olmayan Cumhuriyet savcılarınca da yerine getirilebilir.",
+      "explanation": "Çocuk bürosunun görevleri arasında adli süreçteki çocuklar hakkındaki soruşturma işlemlerini yürütmek bulunur. Tedbir alınması gereken durumlarda gecikmeksizin tedbir alınmasını sağlamak da bu görevlerdendir.",
+      "articleRefs": [
+        "30"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Çocuklarla ilgili kolluk görevi öncelikle kim tarafından yerine getirilir?",
+      "back": "Kolluğun çocuk birimleri tarafından yerine getirilir.",
+      "explanation": "Çocuk kollukta bulunduğu sırada yanında yakınlarından birinin bulunmasına imkân sağlanır.",
+      "articleRefs": [
+        "31"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Kolluğun çocuk birimi, çocuk hakkında işleme başlandığını hangi yakınlarına bildirmez?",
+      "back": "Çocuğu suça azmettirdiğinden veya istismar ettiğinden şüphelenilen yakınlarına bildirmez.",
+      "explanation": "Bildirim yapılanlar arasında çocuğun veli veya vasisi ya da bakımını üstlenen kimse ve baro bulunur. Çocuk resmî bir kurumda kalıyorsa kurum temsilcisine de bildirim yapılır.",
+      "articleRefs": [
+        "31"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Kolluğun çocuk birimlerindeki personele çocuk hukuku ve çocuk gelişimi gibi konularda eğitimi kim verir?",
+      "back": "Personelin kendi kurumları verir.",
+      "explanation": "Eğitim konuları arasında çocuk hukuku, çocuk suçluluğunun önlenmesi, çocuk gelişimi ve psikolojisi ile sosyal hizmet sayılır.",
+      "articleRefs": [
+        "31"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Mahkemelere görevlendirilen sosyal çalışma görevlilerine, aylıklarının brüt tutarının yüzde kaçı oranında ödeme yapılır?",
+      "back": "Yüzde ellisi oranında ödeme yapılır. Hesapta ek gösterge dahil aylığın brüt tutarı esas alınır.",
+      "explanation": "Ödemeyi personelin kadro veya pozisyonunun bulunduğu kurum yapar. Emsal memur esas alınarak sözleşmeli personele de ödenir. Sosyal çalışma görevlisi bulunmaması gibi durumlarda diğer kamu kurumlarından veya serbest meslekten görevlendirilenlere bu ödeme ayrıca yapılmaz.",
+      "articleRefs": [
+        "33"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Çocuğun incelenecek çevresi, davayı gören mahkemenin yetki alanı dışında ve büyükşehir belediye sınırları dışında kalıyor. Sosyal inceleme nasıl yaptırılır?",
+      "back": "Davayı gören mahkemenin talimatına bağlı olarak çocuğun bulunduğu yerdeki mahkemece yaptırılır.",
+      "explanation": "Büyükşehir belediye sınırları içinde kalan yerlerde bu inceleme, davayı gören mahkemeye bağlı olarak çalışan sosyal çalışma görevlilerince yapılabilir.",
+      "articleRefs": [
+        "33"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Sosyal çalışma görevlisi, adli süreçteki çocuğun hangi işlemleri sırasında yanında bulunur?",
+      "back": "İfadesinin alınması veya sorgusu sırasında yanında bulunur.",
+      "explanation": "Görevleri arasında, görevlendirildiği çocuk hakkında derhâl sosyal inceleme yapıp raporu kendisini görevlendiren mercie sunmak da vardır. Görev sırasında yaptığı ve hâkimin takdir ettiği masraflar Cumhuriyet başsavcılığının suçüstü ödeneğinden ödenir.",
+      "articleRefs": [
+        "34"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Sosyal inceleme raporu, mahkemenin çocuğun hangi yeteneğini takdir ederken göz önünde bulundurulur?",
+      "back": "Çocuğun işlediği fiilin hukukî anlam ve sonuçlarını algılama ve bu fiille ilgili davranışlarını yönlendirme yeteneğini.",
+      "explanation": "İnceleme, çocuğun bireysel özelliklerini ve sosyal çevresini gösterir. Mahkemeler, çocuk hâkimleri veya Cumhuriyet savcıları tarafından yaptırılır. Derhâl tedbir alınmasını gerektiren durumlarda daha sonra da yaptırılabilir.",
+      "articleRefs": [
+        "35"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Kaç yaşını doldurmamış çocuk hakkında sosyal inceleme yaptırılması zorunludur?",
+      "back": "Onbeş yaşını doldurmamış çocuk hakkında zorunludur.",
+      "explanation": "Onbeş yaşını doldurmuş çocuk hakkında sosyal inceleme yaptırılmazsa, Cumhuriyet savcısı, mahkeme veya çocuk hâkimi bunun gerekçesini iddianamede veya kararda gösterir.",
+      "articleRefs": [
+        "35"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Denetim altına alınan çocuk için denetim görevlisini genel kural olarak kim görevlendirir?",
+      "back": "Denetimli serbestlik ve yardım merkezi şube müdürlüğü görevlendirir.",
+      "explanation": "Görevlendirmede çocuğun kişisel özellik ve ihtiyaçları dikkate alınır. Çocuğa kolay ulaşabilecek olanlar tercih edilir.",
+      "articleRefs": [
+        "37"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Denetim görevlisi çocuğun gelişimi hakkında hangi aralıklarla rapor verir?",
+      "back": "Üçer aylık sürelerle rapor verir. Raporu Cumhuriyet savcısına veya mahkemeye sunar.",
+      "explanation": "Denetim görevlisi gerektiğinde çocuğun ana ve babası, vasisi, bakım ve gözetiminden sorumlu kimse ve öğretmenleriyle işbirliği yapar. Çocuğun yakınları denetim görevlisinin yetkilerine müdahale edemez.",
+      "articleRefs": [
+        "38"
+      ]
+    }
+  ]
+}

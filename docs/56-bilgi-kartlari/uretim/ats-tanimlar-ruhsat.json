@@ -1,0 +1,216 @@
+{
+  "deck": {
+    "topicId": "c030675a-0fc7-434a-9d39-980eb0456196",
+    "legislationSlug": "6136-sayili-atesli-silahlar-ve-bicaklar-hakkinda-kanun",
+    "sourceLabel": "AI bilgi kartı — 6136 Sayılı Ateşli Silahlar ve Bıçaklar Hakkında Kanun md 1–6",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: resmî madde metni + çıkmış sorular)"
+  },
+  "cards": [
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Ateşli silahlara ait hangi parçalar, ana veya balistik önemi haiz parça olarak kanun kapsamında sayılır?",
+      "back": "Namlu, sürgü, gövde, çerçeve, silindir, mekanizma başı, çıkarıcı, tırnak ve ateşleme iğnesi.",
+      "explanation": "Bu parçaların memlekete sokulması, yapılması, satılması, satın alınması ve taşınması, ateşli silahlar ve mermileriyle birlikte aynı hükümde düzenlenir.",
+      "articleRefs": [
+        "1"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Bıçakların yanı sıra hangi aletler kanun kapsamına girer?",
+      "back": "Salt saldırı ve savunmada kullanılmak üzere özel olarak yapılmış bulunan diğer aletler.",
+      "explanation": "Ölçüt, aletin yapılış amacıdır: salt saldırı ve savunmada kullanılmak üzere özel olarak yapılmış olması.",
+      "articleRefs": [
+        "1"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Kanun, ateşli silahların yalnız taşınmasını mı düzenler?",
+      "back": "Hayır. Ateşli silahların memlekete sokulması, yapılması, satılması ve satın alınması da düzenlenir; yalnız taşımayla sınırlı değildir.",
+      "explanation": "Aynı fiiller mermiler, ana veya balistik önemi haiz parçalar, bıçaklar ve salt saldırı ve savunmada kullanılmak üzere özel olarak yapılmış diğer aletler için de düzenlenir.",
+      "articleRefs": [
+        "1"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Yabancı elçilikte görevli olup diplomatik ayrıcalık ve bağışıklıklardan yararlanmayan kişinin getirdiği silahın yurda sokulmasını hangi bakanlık uygun görür?",
+      "back": "İçişleri Bakanlığı; kişiyi, gerek görüldüğü için Dışişleri Bakanlığı önerir.",
+      "explanation": "Bu kişilere izin tek bir silah ve bu silahın mermileriyle sınırlıdır. Karşılıklı olmak ve saptanan belirli tiplerden bulunmak koşulları aranır.",
+      "articleRefs": [
+        "2"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Resmî görevle yurt dışına gidene, gidilen ülkenin devlet başkanınca armağan edilen silahın yurda sokulması hangi koşula bağlıdır?",
+      "back": "Silahın ve merminin armağan olarak verildiğinin belgelenmesine bağlıdır. Gümrük vergi ve resmi ödenmez.",
+      "explanation": "Armağan; gidilen yabancı ülkenin devlet veya hükümet başkanları, hükümet üyeleri, genelkurmay başkanları, kuvvet komutanları tarafından ya da hükümetleri adına verilmiş olmalıdır.",
+      "articleRefs": [
+        "2"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Dış temsilciliklerimizde elçi sınıfından olanlar, memuriyetleri boyunca getirdikleri silahın yurda sokulması iznini kaç defa kullanabilir?",
+      "back": "Bir defa ve tek bir silah için; bu sınır memuriyetleri devamınca geçerlidir.",
+      "explanation": "Aynı izin, aynı sınırlarla konsoloslara, daimi görevlerde bulunan subaylara ve güvenlik memurlarına da tanınır.",
+      "articleRefs": [
+        "2"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Ülke içinde yapımı yasaklanan bıçak ve aletler hangileridir?",
+      "back": "Kama, hançer, saldırma, şişli baston, sustalı çakı, pala, kılıç, kasatura, süngü, sivri uçlu ve oluklu bıçaklar, topuz, topuzlu kamçı, boğma teli veya zinciri, muşta ile salt saldırı ve savunma için özel nitelikteki benzeri aletler.",
+      "articleRefs": [
+        "4"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Yapımı yasak aletlerden, bir sanat veya mesleğin icrası için kullanılması zorunlu olanların yapımına hangi kurallara göre izin verilir?",
+      "back": "İçişleri Bakanlığınca yapılacak bir yönetmelikte belirlenen kurallara göre izin verilir.",
+      "explanation": "Kural, bu aletlerin ülke içinde yapımının yasak olmasıdır. İzin yalnız bir sanat veya mesleğin icrası için kullanılması zorunlu olanlara tanınır.",
+      "articleRefs": [
+        "4"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Hangi bıçak ve aletlerin kullanılması bu Kanun hükümlerine tabi değildir?",
+      "back": "Ev gereçlerinden olan ya da tababet, sanayi, tarım ve spor için kullanılan aletler ile bir meslek veya sanatın icrası için gerekli bıçak, şiş, raspa ve benzerleri.",
+      "articleRefs": [
+        "4"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Bir sanat veya mesleğin icrası için kullanılmasına izin verilen bıçaklar, md 5'teki satma, satın alma, taşıma ve bulundurma yasağına girer mi?",
+      "back": "Hayır; kullanılmasına 4 üncü maddeye göre izin verilen bu bıçaklar md 5'teki yasağın dışındadır.",
+      "explanation": "Yasak, kama, hançer, sustalı çakı, muşta gibi yapımı yasaklanan bıçak ve aletleri kapsar.",
+      "articleRefs": [
+        "4",
+        "5"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Yalnız sporda kullanılan yivli ateşsiz silahların kullanılması bu Kanun hükümlerine tabi midir?",
+      "back": "Hayır. Yalnız sporda kullanılan yivli ateşsiz silahlar ve mermileri bu Kanun hükümlerine tabi değildir.",
+      "explanation": "Yivsiz tüfekler ve mermilerinin kullanılması da bu Kanun hükümlerine tabi değildir.",
+      "articleRefs": [
+        "4"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Avda kullanılan ateşli yivli bir silahı kullanmak için ne gerekir?",
+      "back": "Ruhsat gerekir. Avda veya sporda kullanılan her nevi ateşli yivli silah, 7 nci maddeye göre ruhsata tabidir.",
+      "articleRefs": [
+        "4"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Yurda sokulması ve yapımı yasaklanan sustalı çakı, muşta gibi bıçak ve aletler için başka hangi fiiller yasaktır?",
+      "back": "Bu bıçak ve aletlerin satılması, satın alınması, taşınması ve bulundurulması yasaktır.",
+      "explanation": "Yasak, ülke içinde yapımı yasaklanan bıçak ve aletlerin tamamını kapsar. Bir sanat veya mesleğin icrası için kullanılmasına izin verilen bıçaklar yasağın dışındadır.",
+      "articleRefs": [
+        "5",
+        "4"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Bu Kanun kapsamındaki silahlar için verilen taşıma ve bulundurma ruhsatları kaç yıl geçerlidir?",
+      "back": "Kural olarak beş yıl; yenileme harcı alınmak şartıyla. Kanunda sayılan bazı kişilerin ruhsatlarında süre kaydı aranmaz.",
+      "explanation": "Ruhsata bağlanmış silahın yerli ve yabancı menşeli mermileri için ayrıca ruhsat aranmaz; ruhsat mermiler için de geçerlidir.",
+      "articleRefs": [
+        "6"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Ruhsatın veriliş sebebi ortadan kalkarsa, ruhsat sahibi bu durumu ruhsatı veren makama ne kadar sürede bildirmelidir?",
+      "back": "Altı ay içinde bildirmelidir; bu bildirim ruhsat sahibinin yükümlülüğüdür.",
+      "explanation": "Bu yükümlülüğe aykırı hareket edenlerin ruhsatı iptal edilir.",
+      "articleRefs": [
+        "6"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Süresi dolan ruhsat, süre biter bitmez iptal edilir mi?",
+      "back": "Hayır. Süresi dolduğu halde altı ay içerisinde yeniletilmeyen ruhsat iptal edilir.",
+      "explanation": "Ruhsatlar, yenileme harcı alınmak şartıyla beş yıl için geçerlidir. Süre dolduktan sonra ruhsat sahibinin yenileme için altı ay süresi vardır.",
+      "articleRefs": [
+        "6"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Bu Kanuna göre armağan edilen silahın bulundurma izni veren belgesi beş yılda bir yenilenir mi?",
+      "back": "Hayır. Armağan edilen silahlar için bulundurma veya taşıma izni veren kayıt ve belgelerde süre kaydı aranmaz.",
+      "explanation": "Armağan silah, resmî görevle yurt dışına giden kişiye gidilen ülkenin devlet veya hükümet başkanları, hükümet üyeleri, genelkurmay başkanları, kuvvet komutanları tarafından ya da hükümetleri adına verilen silahtır. Yurda sokulması, armağan olarak verildiğinin belgelenmesine bağlıdır.",
+      "articleRefs": [
+        "6",
+        "2"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Ruhsatı iptal edilen ve gerekli şartları haiz olan kişiye tekrar ruhsat verilebilmesi için ne kadar idari para cezası ödemesi gerekir?",
+      "back": "Üçbin Türk Lirası idari para cezası; bu ödeme kaydıyla tekrar ruhsat verilebilir.",
+      "explanation": "Ruhsat, veriliş sebebinin kalktığını süresinde bildirmeyenler ile süresi dolduğu halde altı ay içerisinde yeniletmeyenler için iptal edilir.",
+      "articleRefs": [
+        "6"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "İptal edilen ruhsatın yeniden verilmesi için öngörülen idari para cezasını vermeye kim yetkilidir?",
+      "back": "Mülki amir yetkilidir.",
+      "explanation": "Bu ceza, gerekli şartları haiz olan kişiye tekrar ruhsat verilebilmesi için ödenir.",
+      "articleRefs": [
+        "6"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Ruhsatların renk, şekil ve muhtevası doğrudan Kanunda mı belirlenir?",
+      "back": "Hayır. Ruhsatların renk, şekil, muhtevası ile diğer hususlar yönetmelikte belirlenir.",
+      "explanation": "Silah taşıma ruhsatları nereden verilmiş olursa olsun Ek 1 inci maddede sayılan yerler dışında geçerlidir. Birden fazla silaha sahip olup durumu silah taşımaya uygun olan kişiye, isteği halinde silahlarının hepsi için ayrı ayrı taşıma ruhsatı verilir.",
+      "articleRefs": [
+        "6"
+      ],
+      "counterNumbers": []
+    }
+  ]
+}

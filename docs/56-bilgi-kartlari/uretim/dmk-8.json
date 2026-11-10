@@ -1,0 +1,287 @@
+{
+  "deck": {
+    "topicId": "8b68257c-bd1e-4a44-bb49-830ee4d8e4c9",
+    "legislationSlug": "657-sayili-devlet-memurlari-kanunu",
+    "sourceLabel": "AI bilgi kartı — 657 Sayılı Devlet Memurları Kanunu md 135, 137–147, 149–151, 154–161, 163–167, 169–172, 174–176",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: resmî madde metni + çıkmış sorular)"
+  },
+  "cards": [
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Uyarma cezasına karşı yüksek disiplin kuruluna itiraz edilebilir mi?",
+      "back": "Hayır. Uyarma, kınama ve aylıktan kesme cezalarına karşı disiplin kuruluna itiraz edilir. Yüksek disiplin kuruluna yalnız kademe ilerlemesinin durdurulması cezasına karşı itiraz edilir.",
+      "explanation": "Bu cezaları disiplin amirleri verir. İtiraz kabul edilirse disiplin amirleri kararı gözden geçirir; verilen cezayı hafifletebilir veya tamamen kaldırabilir. Disiplin cezalarına karşı idari yargı yoluna da başvurulabilir.",
+      "articleRefs": [
+        "135"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "657 sayılı DMK’ya göre disiplin cezasına itiraz süresi ne kadardır?",
+      "back": "Yedi gün. Süre, kararın ilgiliye tebliği tarihinden itibaren işler.",
+      "explanation": "Süresi içinde itiraz edilmeyen disiplin cezaları kesinleşir.",
+      "articleRefs": [
+        "135"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Görevden uzaklaştırma hukuken nasıl bir işlemdir?",
+      "back": "İhtiyati bir tedbirdir. Devlet kamu hizmetlerinin gerektirdiği hâllerde, görevi başında kalmasında sakınca görülen memur hakkında alınır.",
+      "explanation": "Tedbir, soruşturmanın herhangi bir safhasında da alınabilir.",
+      "articleRefs": [
+        "137"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "657 sayılı Devlet Memurları Kanunu'na göre görevden uzaklaştırmaya kimler yetkilidir?",
+      "back": "Atamaya yetkili amirler, bakanlık ve genel müdürlük müfettişleri, illerde valiler ve ilçelerde kaymakamlar.",
+      "explanation": "Valilerin ve kaymakamların aldığı görevden uzaklaştırma tedbiri, memurun kurumuna derhal bildirilir.",
+      "articleRefs": [
+        "138"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Kaymakam, ilçe idare şube başkanını kendi başına görevden uzaklaştırabilir mi?",
+      "back": "Hayır. İlçe idare şube başkanları hakkında kaymakamın görevden uzaklaştırma tedbiri alabilmesi için valinin muvafakati şarttır.",
+      "explanation": "Kaymakamlar ilçelerde görevden uzaklaştırmaya yetkilidir. İlçe idare şube başkanları için bu yetki valinin muvafakatine bağlanmıştır.",
+      "articleRefs": [
+        "138"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Görevden uzaklaştırılan memur hakkında soruşturmaya en geç ne zaman başlanmalıdır?",
+      "back": "Görevden uzaklaştırmayı izleyen 10 iş günü içinde.",
+      "explanation": "Bu süre içinde soruşturmaya başlanması şarttır.",
+      "articleRefs": [
+        "139"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Memuru keyfi olarak ya da garaz veya kini yüzünden görevden uzaklaştırdığı soruşturmayla anlaşılan amir hangi sorumluluğa tabidir?",
+      "back": "Hukuki, mali ve cezai sorumluluğa.",
+      "explanation": "Aynı sorumluluk, memuru görevden uzaklaştırdıktan sonra derhal soruşturmaya başlamayan amir için de öngörülmüştür.",
+      "articleRefs": [
+        "139"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Hakkında mahkemelerce cezai kovuşturma yapılan memurun görevden uzaklaştırılmasına mahkeme mi karar verir?",
+      "back": "Hayır. Bu memurları da 138 inci maddedeki yetkililer görevden uzaklaştırabilir: atamaya yetkili amirler, bakanlık ve genel müdürlük müfettişleri, illerde valiler, ilçelerde kaymakamlar.",
+      "explanation": "Cezai kovuşturmayı mahkeme yürütür. Görevden uzaklaştırma tedbirini ise 138 inci maddede sayılan yetkililer alır.",
+      "articleRefs": [
+        "140",
+        "138"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Görevden uzaklaştırılan memura, uzaklaştırma süresi içinde aylığının ne kadarı ödenir?",
+      "back": "Üçte ikisi. Memur, Kanunun öngördüğü sosyal hak ve yardımlardan da yararlanmaya devam eder.",
+      "explanation": "Aynı kural, görevi ile ilgili olsun veya olmasın herhangi bir suçtan tutuklanan veya gözaltına alınan memurlar için de geçerlidir.",
+      "articleRefs": [
+        "141"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Görevden uzaklaştırılan memura memurluktan çıkarmadan başka bir disiplin cezası verilirse, aylığının kesilen kısmına ne olur?",
+      "back": "Kesilmiş olan üçte biri memura ödenir. Görevden uzakta geçirdiği süre de derecesindeki kademe ilerlemesinde değerlendirilir.",
+      "explanation": "Bu sonuç, 143 üncü maddede sayılan durumların tümünde doğar. Uzakta geçen sürenin, derece yükselmesi için gerekli en az bekleme süresini aşan kısmı da değerlendirilir: memur üst dereceye yükselince bu kısım için o derecede kademe ilerlemesi yapılır.",
+      "articleRefs": [
+        "141",
+        "143"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Soruşturma sonunda memurluktan çıkarma ya da cezai işlem gerekmezse, müfettişin aldığı görevden uzaklaştırma tedbirini kim kaldırır?",
+      "back": "Atamaya yetkili amir. Tedbiri derhal kaldırır.",
+      "explanation": "Diğer hâllerde tedbiri 138 inci maddedeki yetkililer kaldırır. Tedbiri kaldırmayan görevli hakkında 139 uncu madde hükmü uygulanır.",
+      "articleRefs": [
+        "142"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Soruşturma veya yargılama sonunda hangi kararlar kesinleşince görevden uzaklaştırma tedbiri kaldırılır?",
+      "back": "Memurluktan çıkarmadan başka bir disiplin cezası, yargılamanın men'i ya da beraat, kovuşturmanın hükümden önce genel afla kaldırılması ve memurluğa engel olmayan bir cezanın ertelenmesi.",
+      "explanation": "Ertelenen cezanın görevle ya da memurlukla ilgili olup olmaması önem taşımaz; yeter ki ceza memurluğa engel olmasın.",
+      "articleRefs": [
+        "143"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Görevden uzaklaştırma tedbiri hangi durumda her zaman kaldırılabilir?",
+      "back": "Memurun soruşturmaya konu fiilleri, hizmetlerini devama engel olmadığında.",
+      "explanation": "Hüküm, 140 ıncı ve 142 nci maddelerde yazılı memurlar ile 143 üncü maddenin a, b ve c bentlerinde yazılı olanlar hakkındadır.",
+      "articleRefs": [
+        "144"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Disiplin kovuşturması gereği alınan görevden uzaklaştırma tedbiri en çok ne kadar sürebilir?",
+      "back": "En çok 3 ay. Bu süre sonunda hakkında karar verilmezse memur görevine başlatılır.",
+      "articleRefs": [
+        "145"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Ceza kovuşturması nedeniyle görevden uzaklaştırılan memurun durumu 3 ayda bir mi incelenir?",
+      "back": "Hayır. Ceza kovuşturmasında yetkili amir memurun durumunu her iki ayda bir inceler. En çok 3 ay sınırı disiplin kovuşturması içindir.",
+      "explanation": "İncelemeyle memurun görevine dönüp dönmeyeceğine karar verilir ve karar ilgiliye yazıyla tebliğ edilir. Müfettişin görevden uzaklaştırdığı memur hakkında bu kararı atamaya yetkili amir verir.",
+      "articleRefs": [
+        "145"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Sayıştay'a hesap vermekle yükümlü saymanlarla vezne açığından sorumlu veznedarlara ödenen paranın adı nedir?",
+      "back": "Mali sorumluluk tazminatı.",
+      "articleRefs": [
+        "147"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Hayat ve sağlık için tehlike arz eden hizmetlerde çalışanlara ödenen paraya ne denir?",
+      "back": "İş riski zammı.",
+      "articleRefs": [
+        "147"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Niteliği ve çalışma şartları bakımından güç olan işlerde çalışanlara ödenen para eleman teminindeki güçlük zammı mıdır?",
+      "back": "Hayır, bu iş güçlüğü zammıdır. Eleman teminindeki güçlük zammı; temininde, görevde tutulmasında ya da belli yerlerde istihdamında güçlük bulunan elemanlara ödenir.",
+      "explanation": "İş güçlüğü zammı işin niteliğine ve çalışma şartlarına bağlıdır. Eleman teminindeki güçlük zammı ise o elemanı bulmanın ve tutmanın güçlüğüne bağlıdır.",
+      "articleRefs": [
+        "147"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Mali yılın ikinci yarısında aylık katsayısını ve taban aylık katsayısını değiştirmeye kim yetkilidir?",
+      "back": "Cumhurbaşkanı. Katsayıları ikinci yarının tamamı veya üçer aylık dönemler için değiştirebilir.",
+      "explanation": "Katsayılar üçer veya altışar aylık dönemler için Genel Bütçe Kanunu ile tespit edilir. Değişiklikte memleketin ekonomik gelişmesi, genel geçim şartları ve Devletin mali imkânları gözetilir. Katsayılardaki değişiklik aylıklarda artış veya eksiliş sayılmaz.",
+      "articleRefs": [
+        "154"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Aday memura asaleti tasdik edilinceye kadar hangi aylık işlemi uygulanmaz?",
+      "back": "Kademe ilerlemesi.",
+      "explanation": "Asıl memurluğa atananların adaylıkta geçirdikleri süreler sonradan kademe ilerlemesinde ve derece yükselmesinde değerlendirilir.",
+      "articleRefs": [
+        "158",
+        "159"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Yukarı dereceye atanan memurun yeni derecesindeki ilk kademe göstergesi, evvelce iktisap ettiği göstergeden düşükse hangi aylığı alır?",
+      "back": "Evvelce iktisap ettiği göstergeye eşit olan kademenin göstergesine tekabül eden aylığı alır.",
+      "explanation": "İlk kademe göstergesi düşük değilse memur, yeni girdiği derecenin ilk kademe göstergesine tekabül eden aylığı alır. Alt derecede eşit göstergeli kademede geçirilen süre dikkate alınır.",
+      "articleRefs": [
+        "161"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Emekliye ayrılan memura o ay için peşin ödenen aylık geri alınır mı?",
+      "back": "Hayır. Emekliye ayrılma ve ölüm hâllerinde o aya ait peşin ödenen aylık geri alınmaz.",
+      "explanation": "Memurlara aylıkları her ayın başında peşin ödenir.",
+      "articleRefs": [
+        "164"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Bir göreve açıktan atanan memur aylığa ay sonunda mı hak kazanır?",
+      "back": "Hayır. Göreve başladığı günden itibaren aylığa hak kazanır. Ay sonu, ilk aylığın gün hesabıyla ödendiği zamandır.",
+      "explanation": "Kural, bir göreve açıktan aday veya asıl memur olarak atananlar için geçerlidir.",
+      "articleRefs": [
+        "165"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Kademe ilerlemesine hak kazanan memur, bir ileri kademenin aylığını ne zamandan itibaren alır?",
+      "back": "İlerlemeye müstehak olduğu tarihi takip eden ay başından itibaren.",
+      "explanation": "Memur, aynı derecenin bir ileri kademesine ait aylığa hak kazanır.",
+      "articleRefs": [
+        "166"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Bir göreve vekaleten atanan memura, vekalet edilen görevin kadro derecesinin birinci kademesinin ne kadarı verilir?",
+      "back": "Üçte biri. Açıktan vekil olarak atananlara ise üçte ikisi verilir.",
+      "explanation": "Vekalet aylığının ödenebilmesi için görevin fiilen yapılması şarttır. Kurum içinden veya diğer kurumlardan vekalet edenlere ödeme yapılabilmesi için vekilin, asilde aranan şartları taşıması zorunludur.",
+      "articleRefs": [
+        "174",
+        "175"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "88 inci maddeye göre ikinci görev verilen memura bu görev karşılığında ne ödenir?",
+      "back": "Görevlendirildiği kadro derecesinin ilk kademe aylığının üçte ikisi. Bunun için boş bir kadroya ait görevin ikinci görev olarak yürütülmesi gerekir.",
+      "articleRefs": [
+        "175"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "89 uncu maddeye göre ders görevi verilen memura gündüz öğretiminde ders saati başına ek ders ücreti hangi gösterge rakamı üzerinden ödenir?",
+      "back": "140 gösterge rakamı. Bu rakam, Kanuna göre belirlenen aylık katsayısıyla çarpılarak ücret bulunur.",
+      "explanation": "Şu hâllerde 150 gösterge rakamı esas alınır: örgün ve yaygın eğitim kurumlarında yarıyıl ve yaz tatilleri, cumartesi ve pazar günleri ile saat 18.00'den sonra başlayan öğretim faaliyetleri.",
+      "articleRefs": [
+        "176"
+      ]
+    }
+  ]
+}

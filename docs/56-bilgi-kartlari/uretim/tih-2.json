@@ -1,0 +1,296 @@
+{
+  "deck": {
+    "topicId": "a0798f24-de4a-42a3-95aa-ef133be3d387",
+    "legislationSlug": "6701-sayili-turkiye-insan-haklari-ve-esitlik-kurumu-kanunu",
+    "sourceLabel": "AI bilgi kartı — 6701 Sayılı Türkiye İnsan Hakları ve Eşitlik Kurumu Kanunu md 11–15",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: resmî madde metni + çıkmış sorular)"
+  },
+  "cards": [
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Ayrımcılık yasağı ihlallerine ilişkin, Kanunda öngörülen idari yaptırımlara hangi organ karar verir?",
+      "back": "Kurul. Ayrımcılık yasağı ihlallerinde idari yaptırım kararı Kurulun görevidir.",
+      "explanation": "Aynı bentte Kurul, ayrımcılık yasağı ihlallerine ilişkin başvuruları ve insan hakları ya da ayrımcılık yasağı ihlallerine ilişkin resen yapılan incelemeleri karara bağlar. Gerekli hâllerde uzlaşma sürecini de sonuçlandırır.",
+      "articleRefs": [
+        "11"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Ulusal önleme mekanizması kapsamında Kurul hangi kişilerin başvurularını karara bağlar?",
+      "back": "Özgürlüğünden mahrum bırakılan ya da koruma altına alınan kişilerin başvurularını.",
+      "explanation": "Kurul, ulusal önleme mekanizması kapsamında resen yürütülen incelemeleri de karara bağlar.",
+      "articleRefs": [
+        "11"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Kurul, görev alanıyla ilgili olarak yargı organlarına ve kamu kurum ve kuruluşlarına hangi durumda görüş bildirir?",
+      "back": "Talepleri hâlinde. Kurul yargı organlarına, kamu kurum ve kuruluşlarına ve ilgili kişilere talep üzerine görüş bildirir.",
+      "articleRefs": [
+        "11"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Kurumun stratejik planını kim hazırlar?",
+      "back": "Başkan hazırlar. Planı karara bağlayan ise Kuruldur.",
+      "explanation": "Başkan, stratejik planı ve performans ölçütlerini hazırlar. Kurul planı karara bağlar; amaç ve hedefleri, hizmet kalite standartlarını ve performans ölçütlerini belirler. Bütçede de aynı ayrım vardır: yıllık bütçeyi Başkan hazırlar, bütçe teklifini Kurul görüşüp karara bağlar.",
+      "articleRefs": [
+        "11",
+        "13"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Başkan dışında en az kaç üye birlikte talep ederse Kurul toplantıya çağrılır?",
+      "back": "En az beş üye. Bu durumda Başkan, Kurulu beş gün içinde toplanmak üzere derhâl toplantıya çağırır.",
+      "explanation": "Talep, üyelerin birlikte yapması şartına bağlıdır. Çağrı derhâl yapılır, toplantı ise beş gün içinde gerçekleşir.",
+      "articleRefs": [
+        "12"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Kurul toplantısının gündemi üyelere toplantıdan en az kaç gün önce bildirilir?",
+      "back": "En az üç gün önce. Gündemi Başkan hazırlar.",
+      "articleRefs": [
+        "12"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Kurul toplantısında gündeme yeni madde eklenebilmesi için ne gerekir?",
+      "back": "Toplantıda üyelerden birinin öneride bulunması ve önerilen maddenin Kurulca kabul edilmesi gerekir.",
+      "explanation": "İki şart birlikte aranır: Öneri toplantıda bir üyeden gelir, ekleme ise Kurulun kabulüne bağlıdır.",
+      "articleRefs": [
+        "12"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Kurul toplantılarını kim yönetir?",
+      "back": "Başkan. Kurul da Başkanın çağrısı üzerine toplanır.",
+      "explanation": "Kurul toplantılarının gündemini, gün ve saatini belirlemek de Başkanın görevidir.",
+      "articleRefs": [
+        "12",
+        "13"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Kurul bir karar alabilmek için en az kaç üyenin aynı yöndeki oyunu arar?",
+      "back": "En az altı üyenin aynı yöndeki oyunu.",
+      "explanation": "Karar için aranan, aynı yönde kullanılmış en az altı oydur. Toplantı yeter sayısı aynı fıkrada ayrıca düzenlenmiştir.",
+      "articleRefs": [
+        "12"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Kurul en az altı üye ile toplanabilir mi?",
+      "back": "Hayır. Kurul en az yedi üye ile toplanır; altı ise karar için aranan aynı yöndeki oy sayısıdır.",
+      "articleRefs": [
+        "12"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Kurul kararlarında çekimser oy kullanılabilir mi?",
+      "back": "Hayır. Kararlarda çekimser oy kullanılamaz; karar en az altı üyenin aynı yöndeki oyuyla alınır.",
+      "articleRefs": [
+        "12"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Türkiye İnsan Hakları ve Eşitlik Kurumu, görev alanındaki çalışmalar için kamu kurumları, sivil toplum kuruluşları ve uzmanların katılımıyla hangi süreli komisyonlar oluşturabilir?",
+      "back": "Altı ay süreli geçici komisyonlar.",
+      "explanation": "Geçici komisyonlara kamu kurum ve kuruluşları, sivil toplum kuruluşları ve konuyla ilgili uzmanlar katılır. Kurulun komisyonları ise Kurulun kendi üyeleri arasından, her çalışma alanı için üçer üyeli olarak oluşturulur.",
+      "articleRefs": [
+        "12",
+        "14"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Kurulun başvuruları görüşmek ve sonuçlandırmak için oluşturabileceği daireler, Başkan hariç kaç üyelidir?",
+      "back": "Beş üyelidir. Başkan ise dairelerin doğal üyesidir.",
+      "explanation": "Dairelerin oluşumu ve çalışma esasları yönetmelikle düzenlenir.",
+      "articleRefs": [
+        "12"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Kurul kararlarının gerekçeleri, toplantı tarihinden itibaren en geç kaç iş günü içinde yazılır?",
+      "back": "En geç on beş iş günü içinde; varsa karşı oy gerekçeleri de bu sürede yazılır. Gerektiğinde Kurul bu süreyi uzatabilir.",
+      "explanation": "Karar tutanağı ise toplantı esnasında ya da en geç toplantıyı izleyen beş iş günü içinde, toplantıya katılan tüm üyelerce imzalanarak tekemmül ettirilir.",
+      "articleRefs": [
+        "12"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Kurul kararları, tekemmül etmesinden itibaren en geç kaç iş günü içinde ilgililere gönderilir?",
+      "back": "En geç beş iş günü içinde. Kararlarda, ilgililerin başvurabileceği hukuki yollar süreleriyle birlikte belirtilir.",
+      "explanation": "Kurul kararlarının tebliğini sağlamak Başkanın görevidir.",
+      "articleRefs": [
+        "12",
+        "13"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Başkan ve üyeler, hangi yakınlarıyla ilgili konularda Kurul toplantı ve oylamasına katılamaz?",
+      "back": "Eşleri (evlilik bağı kalkmış olsa bile), evlatlıkları, üçüncü derece dâhil kan hısımları ve ikinci derece dâhil kayın hısımlarıyla ilgili konularda katılamazlar.",
+      "explanation": "Kendileriyle ilgili ya da kişisel menfaat ilişkisi içinde oldukları konularda da toplantı ve oylamaya katılamazlar. Bu durum karar metninde ayrıca belirtilir.",
+      "articleRefs": [
+        "12"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Kurul, görüşlerinden yararlanmak için toplantıya davet ettiği ilgililerin yanında karar alabilir mi?",
+      "back": "Hayır. İlgililer görüş için toplantıya davet edilebilir; ancak Kurul kararları toplantıya dışarıdan katılanların yanında alınamaz.",
+      "explanation": "Aksi kararlaştırılmadıkça Kurul toplantılarındaki müzakereler de gizlidir.",
+      "articleRefs": [
+        "12"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Kurum Başkanının yokluğunda Başkana kim vekâlet eder?",
+      "back": "İkinci Başkan.",
+      "articleRefs": [
+        "13"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Hizmet birimi koordinatörlerini kim görevlendirir?",
+      "back": "Başkan. Diğer Kurum personelini atamak da Başkanın görevidir.",
+      "articleRefs": [
+        "13"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Kurul Başkanı ile Kurumun başkanı arasındaki ilişki nedir?",
+      "back": "Aynı kişidir: Kurul Başkanı, Kurumun da başkanıdır.",
+      "explanation": "Başkan, Kurumun en üst amiridir. Kurum hizmetlerini düzenler, yürütür ve hizmet birimleri arasında eşgüdümü sağlar; Kurumun genel yönetim ve temsilinden sorumludur.",
+      "articleRefs": [
+        "13",
+        "14"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Kurumda hizmet birimlerinin sayısı en fazla kaç olabilir?",
+      "back": "On. Hizmet birimlerinin sayısı onu geçemez.",
+      "explanation": "Başkanlık, Kurul kararlarını uygulamakla ve diğer konularda Başkana ve Kurula yardımcı olmakla görevlidir.",
+      "articleRefs": [
+        "14"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Geçici komisyonların altı aylık süresini Başkan iki katına kadar uzatabilir mi?",
+      "back": "Hayır. Başkan bu süreyi üç aya kadar uzatabilir; altı aylık süreyi iki katına kadar uzatma yetkisi, gerekli görülmesi hâlinde Kuruldadır.",
+      "explanation": "Ayda ikiyi geçmemek kaydıyla komisyon toplantılarına ilişkin giderler Kurum bütçesinden karşılanır.",
+      "articleRefs": [
+        "14"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Kurumda kaç Başkan Yardımcısı atanır?",
+      "back": "Üç. Başkan Yardımcılarını, Kurumun görev alanlarını dikkate alarak Kurul atar.",
+      "explanation": "Başkanlık; Başkan Yardımcıları, hizmet birimleri ve çalışma gruplarından oluşur. Başkan Yardımcılarında en az dört yıllık lisans düzeyinde yükseköğrenim ve kamu hizmetinde en az on yıllık mesleki tecrübe aranır. Görev süreleri dört yıldır, yeniden atanabilirler.",
+      "articleRefs": [
+        "14",
+        "15"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Kuruma bağlı bürolar nasıl kurulur?",
+      "back": "Gerek görülmesi hâlinde, Kurumun teklifi üzerine Cumhurbaşkanı kararıyla kurulur.",
+      "explanation": "Hizmet birimleri ve büroların çalışma usul ve esasları, Kurumun teklifi üzerine Cumhurbaşkanınca yürürlüğe konulan yönetmelikle belirlenir.",
+      "articleRefs": [
+        "14"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Başkan, Kurula ilişkin olmayan görev ve yetkilerinin bir bölümünü kimlere devredebilir?",
+      "back": "Başkan yardımcılarına veya hizmet birimi koordinatörlerine. Devrin sınırları yazılı ve açık olarak belirlenmelidir.",
+      "explanation": "Yetki devri, uygun araçlarla ilgililere duyurulur. Hizmet birimleri, Başkan tarafından belirlenen koordinatörlerin eşgüdümünde faaliyet gösterir.",
+      "articleRefs": [
+        "14",
+        "15"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Hakim ve savcıların Kurumda geçici olarak görevlendirilmesi için kurumlarının muvafakati mi aranır?",
+      "back": "Hayır. Hakim ve savcılarda kendilerinin muvafakati aranır; kurumlarının muvafakati memurlar ile diğer kamu görevlileri için aranır.",
+      "explanation": "Görevlendirilenlerin aylık, ödenek, zam, tazminat ve diğer mali ve sosyal hakları kurumlarınca ödenir. Kurumlarından aylıklı izinli sayılırlar ve Kurumda geçirdikleri süreler kendi kurumlarında geçirilmiş sayılır.",
+      "articleRefs": [
+        "15"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Kurumda istihdam edilecek sözleşmeli personelin sayısı hangi oranı geçemez?",
+      "back": "İnsan Hakları ve Eşitlik Uzmanı ve İnsan Hakları ve Eşitlik Uzman Yardımcısı toplam kadro sayısının yüzde on beşini geçemez.",
+      "explanation": "Bu personel, 5510 sayılı Kanunun 4 üncü maddesinin birinci fıkrasının (a) bendi kapsamında sigortalı sayılır. Net ücretini, birinci dereceli İnsan Hakları ve Eşitlik Uzmanına ödenen aylık ortalama net tutarı aşmamak üzere Başkan tespit eder.",
+      "articleRefs": [
+        "15"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Kamu görevlilerinin Kuruma geçici görevlendirilme süresi kaç yılı geçemez?",
+      "back": "İki yılı geçemez. Ancak ihtiyaç hâlinde bu süre bir yıllık dönemler hâlinde uzatılabilir.",
+      "explanation": "Kurumun görevlendirme talepleri, ilgili kurum ve kuruluşlarca öncelikle sonuçlandırılır.",
+      "articleRefs": [
+        "15"
+      ]
+    }
+  ]
+}

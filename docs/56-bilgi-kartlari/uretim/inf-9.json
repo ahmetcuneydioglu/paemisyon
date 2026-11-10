@@ -1,0 +1,277 @@
+{
+  "deck": {
+    "topicId": "3a7fb703-175b-4a01-a217-a00766c51d07",
+    "legislationSlug": "5275-ceza-ve-guvenlik-tedbirlerinin-infazi-hakkinda-kanun",
+    "sourceLabel": "AI bilgi kartı — 5275 Ceza ve Güvenlik Tedbirlerinin İnfazı Hakkında Kanun md 100–105, 105/A, 106, 107",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: resmî madde metni + çıkmış sorular)"
+  },
+  "cards": [
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Cezanın infazına başlandıktan sonra hastalık nedeniyle ceza infaz kurumundan hastaneye kaldırılan hükümlünün hastanede geçirdiği süre ne olur?",
+      "back": "Cezadan indirilir.",
+      "explanation": "Hüküm, infaza başlandıktan sonra hastalık nedeniyle hastaneye kaldırılan hükümlüyü kapsar. Cezanın infazını durdurmak için hastalığına kasten neden olan hükümlü bu indirimden yararlanamaz.",
+      "articleRefs": [
+        "100"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Cezanın infazını durdurmak için hastalığına kasten neden olan hükümlünün hastanede geçirdiği süre de cezadan indirilir mi?",
+      "back": "Hayır. Cezanın infazını durdurmak için hastalığına kasten neden olan hükümlü bu indirimden yararlanamaz.",
+      "explanation": "Genel kural, hastalık nedeniyle hastaneye kaldırılan hükümlünün hastanede geçirdiği sürenin cezadan indirilmesidir. 'Ancak' ile başlayan cümle, hastalığına kasten neden olan hükümlüyü bu kuralın dışında bırakır.",
+      "articleRefs": [
+        "100"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Hükümlü cezanın infazını durdurmak için hastalığına kasten neden olmuşsa Cumhuriyet savcısı hangi merciden karar verilmesini ister?",
+      "back": "İnfaz hâkimliğinden.",
+      "explanation": "Böyle bir hükümlü, hastanede geçirdiği sürenin cezadan indirilmesinden yararlanamaz. Bu konudaki kararı infaz hâkimliğinin vermesi için Cumhuriyet savcısı talepte bulunur.",
+      "articleRefs": [
+        "100"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Cezanın infazı sırasında 98 ilâ 100. maddeler gereğince mahkemeden veya infaz hâkimliğinden alınması gereken kararlar nasıl verilir?",
+      "back": "Duruşma yapılmaksızın verilir.",
+      "explanation": "Karar verilmeden önce Cumhuriyet savcısından ve hükümlüden görüşlerini yazılı olarak bildirmeleri istenebilir. Bu madde uyarınca verilen kararlara karşı itiraz yoluna gidilebilir.",
+      "articleRefs": [
+        "101"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Cezaların toplanması gerektiğinde bu konuda hüküm verme yetkisi kural olarak hangi infaz hâkimliğine aittir?",
+      "back": "En fazla cezaya hükmetmiş mahkemenin bulunduğu yer infaz hâkimliğine; birden çok infaz hâkimliği yetkiliyse son hükmü vermiş mahkemenin bulunduğu yer infaz hâkimliğine.",
+      "explanation": "En fazla ceza bölge adliye mahkemesince ilk derece mahkemesi sıfatıyla verilmişse bölge adliye mahkemesinin bulunduğu il infaz hâkimliği karar verir. Bölge adliye mahkemesi cezayı duruşma açarak vermişse karar, hükmü kaldırılan ilk derece mahkemesinin bulunduğu yer infaz hâkimliğine aittir.",
+      "articleRefs": [
+        "101"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Toplanacak cezalardan en fazlası Yargıtay tarafından ilk derece mahkemesi sıfatıyla verilmişse cezaların toplanmasına hangi infaz hâkimliği karar verir?",
+      "back": "Ankara infaz hâkimliği.",
+      "explanation": "Cezaların toplanmasında genel kural, en fazla cezaya hükmetmiş mahkemenin bulunduğu yer infaz hâkimliğinin yetkili olmasıdır; Yargıtay'ın ilk derece mahkemesi sıfatıyla verdiği cezada yetki Ankara infaz hâkimliğindedir. Bu kararlara karşı itiraz yoluna gidilebilir.",
+      "articleRefs": [
+        "101"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Hükümlülerin salıverilmeden önce veya sonra kişisel zorluklarını aşmaları ve dışarıdaki yaşama uyumları için destek ve hizmet vermekle kimler yükümlüdür?",
+      "back": "İlgili bakanlıklar, kamu kurum ve kuruluşları ile kamu tüzel kişileri; görev alanlarına giren konularda.",
+      "explanation": "Destek ve hizmet; hükümlülerin kişisel zorluklarını aşmaları, iyileştirilmeleri ve dışarıdaki yaşama uyumları amacıyla verilir.",
+      "articleRefs": [
+        "102"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Gönüllü kişi, kurum ve kuruluşlar da hükümlülere destek ve hizmet vermekle yükümlü müdür?",
+      "back": "Hayır. Gönüllü kişi, kurum ve kuruluşlardan yalnızca yardım alınabilir; yükümlülük ilgili bakanlıklar, kamu kurum ve kuruluşları ile kamu tüzel kişilerindedir.",
+      "explanation": "Madde yükümlülüğü kamu tarafına yükler; gönüllüler için 'yardım alınabilir' ifadesini kullanır.",
+      "articleRefs": [
+        "102"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Hükümlülere yönelik dış yardım yükümlülüğünün ve yardımların yöntem ve esasları hangi düzenlemeyle belirlenir?",
+      "back": "Cumhurbaşkanınca çıkarılan yönetmelikle.",
+      "articleRefs": [
+        "102"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Ceza infaz kurumunda diğer hükümlülerin iş, meslek veya sanat öğrenmelerine hangi hükümlüler katkıda bulunabilir?",
+      "back": "Meslek ve sanatlarında becerili olan hükümlüler; yönetimle işbirliği yaparak.",
+      "articleRefs": [
+        "103"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Hükümlüler arası yardımlaşmada iş, meslek veya sanat öğrenimi hangi dönem için amaçlanır?",
+      "back": "Hem ceza infaz kurumundaki yaşam hem de salıverilmeden sonraki yaşam için.",
+      "articleRefs": [
+        "103"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Becerili hükümlülerin katkısı, hangi niteliklere sahip diğer hükümlülere yöneliktir?",
+      "back": "Çalışma yeteneğine sahip ve istekli hükümlülere.",
+      "articleRefs": [
+        "103"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Salıverilme sonrasında hükümlülere iş sağlanması için hangi kurullar kurulur?",
+      "back": "Koruma kurulları.",
+      "articleRefs": [
+        "104"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Yargılanan kişiler hakkında sosyal araştırma raporlarının düzenlenmesi hangi merkezlerin görevleri arasındadır?",
+      "back": "Denetimli serbestlik ve yardım merkezlerinin.",
+      "explanation": "Bu merkezlerin görevleri arasında; cezaları ertelenen, salıverilen veya haklarında hapis cezası dışında bir tedbire hükmedilen hükümlülerin toplum içinde izlenmesi, iyileştirilmesi, psiko-sosyal problemlerinin çözülmesi, salıverme sonrası korunması ve mağdurun korunması da bulunur.",
+      "articleRefs": [
+        "104"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Denetimli serbestlik ve yardım merkezleri ile koruma kurullarının kuruluşu, çalışma yöntem ve esasları nerede düzenlenir?",
+      "back": "İlgili kanununda.",
+      "articleRefs": [
+        "104"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Kamuya yararlı bir işte çalıştırmada hükümlünün kaç saat çalışması bir güne karşılık gelir?",
+      "back": "2 saat çalışma 1 gün sayılır; hükümlü ücretsiz çalışır.",
+      "explanation": "Çalışma, bir kamu kurumunun veya kamu yararına hizmet veren bir özel kuruluşun belirli hizmetlerinde yapılır. Kamuya yararlı bir işte çalıştırma, Türk Ceza Kanununun 50. maddesindeki kısa süreli hapis cezasının yaptırım seçeneklerindendir.",
+      "articleRefs": [
+        "105"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Kamuya yararlı işte çalıştırmada günlük çalışma süresi hangi aralıkta belirlenir?",
+      "back": "En az 2, en fazla 8 saat; süreyi denetimli serbestlik müdürlüğü belirler.",
+      "articleRefs": [
+        "105"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Hükümlülerin kamuya yararlı işte çalıştırılabileceği hizmetler listesini kim oluşturur?",
+      "back": "Denetimli serbestlik müdürlükleri; bölgelerindeki kurumlardan hükümlüleri ne suretle çalıştırabileceklerine dair bilgi alarak.",
+      "articleRefs": [
+        "105"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Açık ceza infaz kurumundaki iyi hâlli hükümlünün talebiyle cezasının denetimli serbestlik tedbiri uygulanarak infazına karar verilebilmesi için koşullu salıverilmesine en fazla ne kadar süre kalmış olmalıdır?",
+      "back": "1 yıl veya daha az süre; karar, ceza infaz kurumu idaresinin değerlendirme raporu dikkate alınarak infaz hâkimince verilebilir.",
+      "explanation": "Hüküm çocuk eğitimevindeki hükümlüleri de kapsar. Hükümlünün ayrıca, beş günden az olmamak üzere koşullu salıverilme tarihine kadar kurumda geçirmesi gereken sürenin en az onda birini ceza infaz kurumunda geçirmiş olması gerekir. Kararı, hükmün infazına ilişkin işlemleri yapan Cumhuriyet başsavcılığının bulunduğu yer infaz hâkimi verir.",
+      "articleRefs": [
+        "105/A"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Sıfır-altı yaş grubunda çocuğu bulunan kadın hükümlü, koşullu salıverilmesine en fazla ne kadar süre kala cezasının denetimli serbestlik tedbiri uygulanarak infazından yararlanabilir?",
+      "back": "2 yıl veya daha az süre kala; diğer şartları da taşıması gerekir.",
+      "explanation": "Ağır bir hastalık, engellilik veya kocama nedeniyle hayatını yalnız idame ettiremeyen hükümlülerde bu süre 3 yıl veya daha azdır. Bu hâl, Adlî Tıp Kurumundan alınan ya da Adalet Bakanlığınca belirlenen tam teşekküllü hastanelerin sağlık kurullarınca düzenlenip Adlî Tıp Kurumunca onaylanan raporla belgelendirilir.",
+      "articleRefs": [
+        "105/A"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Adli para cezasını ödemediği için cezası hapse çevrilen hükümlü, cezasının denetimli serbestlik tedbiri uygulanarak infazından yararlanabilir mi?",
+      "back": "Hayır. Adli para cezasının ödenmemesi nedeniyle cezası hapse çevrilen hükümlüler bu infaz usulünden yararlanamaz.",
+      "explanation": "Usulden; açık ceza infaz kurumunda veya çocuk eğitimevinde bulunan iyi hâlli hükümlüler yararlanabilir. İradesi dışındaki bir nedenle açık kuruma ayrılamayan ya da kapalı kuruma geri gönderilen iyi hâlli hükümlüler de diğer şartları taşıyorsa yararlanabilir.",
+      "articleRefs": [
+        "105/A"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Hükümde taksit yoksa, adlî para cezasının ne kadarını süresinde ödeyen hükümlüye kalan kısım için taksit izni verilir?",
+      "back": "Üçte birini; bir aylık süre içinde bunu ödeyen hükümlünün isteği üzerine kalan kısım birer ay arayla 2 eşit taksitte ödenebilir.",
+      "explanation": "İlk taksit süresinde ödenmezse ikinci takside ilişkin izin hükümsüz kalır.",
+      "articleRefs": [
+        "106"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Tek bir hükümle verilen adlî para cezası yerine çektirilen hapis süresi en fazla ne kadar olabilir?",
+      "back": "3 yıl.",
+      "explanation": "Birden fazla hükümle adlî para cezalarına mahkûmiyet hâlinde bu süre 5 yılı geçemez. Adlî para cezasından çevrilen hapsin infazı, 16. madde hükümleri saklı kalmak üzere ertelenemez ve bu infazda koşullu salıverilme hükümleri uygulanmaz.",
+      "articleRefs": [
+        "106"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Çocuk hakkında hükmedilen adlî para cezası ödenmezse bu ceza hapse çevrilebilir mi?",
+      "back": "Hayır. Çocuklar hakkında hükmedilen adlî para cezası hapse çevrilemez; ilam mahallin en büyük mal memuruna verilir ve ceza Amme Alacaklarının Tahsil Usulü Hakkında Kanuna göre tahsil edilir.",
+      "explanation": "Çocuk olmayan hükümlü ödeme emrine rağmen ödemezse, Cumhuriyet savcısının kararıyla ödenmeyen kısma karşılık gelen gün miktarı hapse çevrilir ve hükümlünün kamuya yararlı bir işte çalıştırılmasına karar verilir.",
+      "articleRefs": [
+        "106"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Müebbet hapis cezasına mahkûm edilen kişi, koşullu salıverilmeden yararlanmak için infaz kurumunda kaç yılını çekmelidir?",
+      "back": "24 yılını; kurumdaki infaz süresini iyi hâlli olarak geçirmesi de gerekir.",
+      "explanation": "Ağırlaştırılmış müebbet hapiste bu süre 30 yıl, diğer süreli hapis cezalarında cezanın yarısıdır. Kasten öldürme, işkence, eziyet gibi maddede sayılan bazı suçlardan süreli hapis cezasına mahkûm olanlarda cezanın üçte ikisi aranır.",
+      "articleRefs": [
+        "107"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Koşullu salıverilme süresi hesaplanırken hükümlünün hangi yaşı dolduruncaya kadar infaz kurumunda geçirdiği bir gün, iki gün olarak dikkate alınır?",
+      "back": "15 yaşını dolduruncaya kadar geçirdiği günler için.",
+      "explanation": "Kural; kasten öldürme suçları (madde 81, 82 ve 83), cinsel dokunulmazlığa karşı işlenen suçlar (madde 102 ve 103), uyuşturucu veya uyarıcı madde imal ve ticareti suçu (madde 188) ve suç işlemek amacıyla örgüt kurma suçu (madde 220) için uygulanmaz.",
+      "articleRefs": [
+        "107"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Koşullu salıverilme kararı geri alınan hükümlü hakkında aynı hükmün infazı için yeniden koşullu salıverilme kararı verilebilir mi?",
+      "back": "Hayır. Koşullu salıverilme kararı geri alındıktan sonra aynı hükmün infazı ile ilgili bir daha koşullu salıverilme kararı verilmez.",
+      "explanation": "Karar; denetim süresinde hapis cezasını gerektiren kasıtlı bir suç işlenmesi ya da infaz hâkiminin uyarısına rağmen yükümlülüklere uymamakta ısrar edilmesi hâlinde geri alınır. Sonraki suç hâlinde, hak ederek tahliye tarihini geçmemek koşuluyla her bir suç için verilen hapis cezasının 2 katı süre ceza infaz kurumunda aynen çektirilir.",
+      "articleRefs": [
+        "107"
+      ],
+      "counterNumbers": []
+    }
+  ]
+}

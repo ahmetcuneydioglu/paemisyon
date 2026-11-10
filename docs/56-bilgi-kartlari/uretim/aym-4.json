@@ -1,0 +1,263 @@
+{
+  "deck": {
+    "topicId": "746633d6-5e90-404b-b0ea-ebcd670b4dc8",
+    "legislationSlug": "6216-anayasa-mahkemesinin-kurulusu-ve-yargilama-usulleri-hakkinda-kanun",
+    "sourceLabel": "AI bilgi kartı — 6216 Anayasa Mahkemesinin Kuruluşu ve Yargılama Usulleri Hakkında Kanun md 44–59",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: resmî madde metni + çıkmış sorular)"
+  },
+  "cards": [
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Anayasa Mahkemesinin müzakereleri hangi nitelikte yürütülür?",
+      "back": "Gizli olarak yürütülür. Müzakerelerin kaydı, Başkanın uygun göreceği teknik araçlarla yapılır.",
+      "explanation": "Müzakerelerin düzenini ve yönetimini Başkan sağlar. Başkan toplantıya katılmazsa bu görevi onun görevlendireceği başkanvekili üstlenir. Üyelere talep sırasına göre söz verilir. Kayıtların muhafazası ve kullanımı yönetmelikle düzenlenir.",
+      "articleRefs": [
+        "44"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Bireysel başvuruda ileri sürülen hak ihlali kimin tarafından gerçekleştirilmiş olmalıdır?",
+      "back": "Kamu gücü tarafından. Anayasada güvence altına alınmış ve Avrupa İnsan Hakları Sözleşmesi ile Türkiye'nin taraf olduğu ek protokoller kapsamındaki bir hakkın ihlali iddia edilir.",
+      "explanation": "Başvurudan önce, ihlale neden olduğu ileri sürülen işlem, eylem ya da ihmal için kanunda öngörülmüş idari ve yargısal başvuru yollarının tamamı tüketilmiş olmalıdır.",
+      "articleRefs": [
+        "45"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Düzenleyici idari işlemler aleyhine doğrudan bireysel başvuru yapılabilir mi?",
+      "back": "Hayır. Yasama işlemleri ile düzenleyici idari işlemler aleyhine doğrudan bireysel başvuru yapılamaz.",
+      "explanation": "Anayasa Mahkemesi kararları ile Anayasanın yargı denetimi dışında bıraktığı işlemler de bireysel başvurunun konusu olamaz.",
+      "articleRefs": [
+        "45"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Bireysel başvuruyu kimler yapabilir?",
+      "back": "İhlale yol açtığı ileri sürülen işlem, eylem ya da ihmal nedeniyle güncel ve kişisel bir hakkı doğrudan etkilenenler yapabilir.",
+      "explanation": "Yabancılar, yalnızca Türk vatandaşlarına tanınan haklarla ilgili olarak bireysel başvuru yapamaz.",
+      "articleRefs": [
+        "46"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Kamu tüzel kişileri bireysel başvuru yapabilir mi?",
+      "back": "Hayır. Kamu tüzel kişileri bireysel başvuru yapamaz.",
+      "explanation": "Özel hukuk tüzel kişileri ise yalnızca tüzel kişiliğe ait haklarının ihlal edildiği gerekçesiyle bireysel başvuruda bulunabilir.",
+      "articleRefs": [
+        "46"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Bireysel başvuru hangi yollarla yapılabilir?",
+      "back": "Doğrudan yapılabilir; mahkemeler veya yurt dışı temsilcilikler vasıtasıyla da yapılabilir.",
+      "explanation": "Başvurunun diğer yollarla kabulüne ilişkin usul ve esaslar İçtüzükle düzenlenir. Bireysel başvurular harca tabidir; harcın ödendiğine dair belgenin dilekçeye eklenmesi şarttır.",
+      "articleRefs": [
+        "47"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Başvuru yollarının tüketildiği tarihten itibaren bireysel başvuru hangi süre içinde yapılmalıdır?",
+      "back": "Otuz gün içinde.",
+      "explanation": "Başvuru yolu öngörülmemişse otuz günlük süre, ihlalin öğrenildiği tarihten itibaren işler.",
+      "articleRefs": [
+        "47"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Haklı bir mazeret nedeniyle süresinde bireysel başvuru yapamayan kişi, mazeretin kalktığı tarihten itibaren hangi süre içinde başvurabilir?",
+      "back": "Onbeş gün içinde. Mazeretini belgeleyen delillerle birlikte başvurması gerekir.",
+      "explanation": "Mahkeme önce mazeretin geçerli görülüp görülmediğini inceler, ardından talebi kabul veya reddeder. Başvuru evrakında eksiklik varsa Mahkeme yazı işlerinin eksikliği gidermek için verdiği süre de onbeş günü geçemez.",
+      "articleRefs": [
+        "47"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Bireysel başvuruda komisyonda kabul edilemezlik için oy birliği sağlanamayan dosya ne olur?",
+      "back": "Bölümlere havale edilir.",
+      "explanation": "Kabul edilebilirlik şartlarını taşımadığına oy birliğiyle karar verilen başvurular hakkında kabul edilemezlik kararı verilir.",
+      "articleRefs": [
+        "48"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Bölüm esas inceleme aşamasında tedbire karar verirse, esas hakkındaki karar en geç hangi süre içinde verilmelidir?",
+      "back": "En geç altı ay içinde. Bu sürede karar verilmezse tedbir kararı kendiliğinden kalkar.",
+      "explanation": "Bölümler, başvurucunun temel haklarının korunması için zorunlu gördükleri tedbirlere resen veya başvurucunun talebi üzerine karar verebilir.",
+      "articleRefs": [
+        "49"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Bölümler, bir mahkeme kararına karşı yapılan bireysel başvuruda kanun yolunda gözetilmesi gereken hususları inceleyebilir mi?",
+      "back": "Hayır. İnceleme, bir temel hakkın ihlal edilip edilmediği ve bu ihlalin nasıl ortadan kaldırılacağının belirlenmesiyle sınırlıdır.",
+      "explanation": "Mahkeme incelemesini dosya üzerinden yapar; gerekli görürse duruşma yapılmasına da karar verebilir.",
+      "articleRefs": [
+        "49"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Anayasa Mahkemesinin tespit ettiği ihlal bir mahkeme kararından kaynaklanmışsa dosya nereye gönderilir?",
+      "back": "İlgili mahkemeye gönderilir. Amaç, ihlali ve sonuçlarını ortadan kaldırmak için yeniden yargılama yapılmasıdır.",
+      "explanation": "Yeniden yargılama yapılmasında hukuki yarar yoksa başvurucu lehine tazminata hükmedilebilir ya da genel mahkemelerde dava açılması yolu gösterilebilir. Yeniden yargılama yapan mahkeme, mümkünse dosya üzerinden karar verir.",
+      "articleRefs": [
+        "50"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Anayasa Mahkemesi ihlal kararında idari işlem niteliğinde karar verebilir mi?",
+      "back": "Hayır. İhlalin ve sonuçlarının ortadan kaldırılması için yapılması gerekenlere hükmedilir; ancak idari eylem ve işlem niteliğinde karar verilemez, yerindelik denetimi de yapılamaz.",
+      "explanation": "Davadan feragat edilmesi hâlinde düşme kararı verilir.",
+      "articleRefs": [
+        "50"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Anayasa Mahkemesinde bölümler arasındaki içtihat farklılıklarını kim karara bağlar?",
+      "back": "Genel Kurul karara bağlar.",
+      "explanation": "Komisyonlar arasındaki içtihat farklılıklarını ise komisyonların bağlı oldukları bölümler karara bağlar. Buna ilişkin diğer hususlar İçtüzükle düzenlenir.",
+      "articleRefs": [
+        "50"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Bireysel başvuru hakkını açıkça kötüye kullanan başvurucu aleyhine en fazla ne kadar disiplin para cezasına hükmedilebilir?",
+      "back": "En fazla ikibin Türk Lirası. Bu ceza, yargılama giderlerinin dışında ayrıca verilir.",
+      "articleRefs": [
+        "51"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Siyasi parti kapatma davasında Yargıtay Cumhuriyet Başsavcısından sonra kimin sözlü savunması dinlenir?",
+      "back": "Kapatılması istenen siyasi partinin genel başkanının veya tayin edeceği bir vekilin.",
+      "articleRefs": [
+        "52"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Yargıtay Cumhuriyet Başsavcısı, 2820 sayılı Siyasi Partiler Kanununun hangi maddesi dışında kalan emredici hükümlerine aykırılık iddiasıyla ihtar istemiyle başvurabilir?",
+      "back": "101 inci maddesi dışında kalan emredici hükümlerine aykırılık iddiasıyla. Diğer kanunların siyasi partilerle ilgili emredici hükümlerine aykırılık da başvuru sebebidir.",
+      "explanation": "Mahkemenin vereceği süre içinde partinin savunması alınır. Aykırılık tespit edilirse, giderilmesi için ihtar kararı verilir. Karar Yargıtay Cumhuriyet Başsavcısı ile ilgili partiye tebliğ edilir ve Resmî Gazetede yayımlanır.",
+      "articleRefs": [
+        "53"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Mali denetimde inceleme raporu gönderilen siyasi parti, görüşünü en geç hangi süre içinde bildirmelidir?",
+      "back": "En geç iki ay içinde.",
+      "explanation": "Mahkeme, mali denetim sırasında partinin raporlar hakkındaki görüşlerini de değerlendirir. Mali denetim kararları Resmî Gazetede yayımlanır. Kararların birer örneği partiye gönderilir; bir örneği de sicil dosyasına konulmak üzere Yargıtay Cumhuriyet Başsavcılığına iletilir.",
+      "articleRefs": [
+        "56"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Cumhurbaşkanı, Cumhurbaşkanı yardımcıları ve bakanlar hakkındaki Yüce Divan yargılaması hangi süre içinde tamamlanır?",
+      "back": "Üç ay içinde. Bu sürede tamamlanamazsa ilave üç aylık süre içinde kesin olarak tamamlanır.",
+      "articleRefs": [
+        "57"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Yüce Divanda sorgusu yapılmış sanığın yokluğunda duruşmaya devam edilmesi için vâreste tutulma talebi şart mıdır?",
+      "back": "Hayır. Sanık sonraki oturumlara gelmezse ve Yüce Divan onun hazır bulunmasına gerek görmezse, talep olmasa dahi yokluğunda devam edilerek kamu davası sonuçlandırılabilir.",
+      "explanation": "Müdafi her zaman duruşmada hazır bulunabilir.",
+      "articleRefs": [
+        "57"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Yüce Divanda savcılık görevini kim yapar?",
+      "back": "Yargıtay Cumhuriyet Başsavcısı veya Yargıtay Cumhuriyet Başsavcıvekili yapar.",
+      "explanation": "Yargıtay Cumhuriyet savcılarından görevlendirilenler de Başsavcı veya Başsavcıvekiliyle birlikte duruşmaya katılabilir.",
+      "articleRefs": [
+        "57"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Yüce Divan hükmüne karşı yeniden inceleme başvurusu hangi süre içinde yapılır?",
+      "back": "Hükmün açıklanmasından itibaren onbeş gün içinde, Yüce Divana dilekçe verilerek yapılır.",
+      "explanation": "Hüküm, yeniden incelemeye başvurma hakkı olanların yokluğunda açıklanmışsa süre tebliğ tarihinden başlar. Başvuruyu Yargıtay Cumhuriyet Başsavcısı veya Başsavcıvekili, sanık, müdafi, katılan veya vekili yapabilir.",
+      "articleRefs": [
+        "58"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Yeniden inceleme duruşmasında son söz, başvuruyu yapan tarafa mı verilir?",
+      "back": "Hayır. Başvuruda bulunan tarafa önce söz verilir; her hâlde son söz sanığındır.",
+      "explanation": "Yeniden inceleme kural olarak dosya üzerinden yapılır; istem üzerine ya da resen duruşma açılmasına da karar verilebilir. İnceleme yalnızca başvuruda belirtilen hususlarla sınırlıdır ve verilen kararlar kesindir.",
+      "articleRefs": [
+        "58"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Anayasa Mahkemesi Başkanı ve üyeleri, kan yönünden hangi dereceye kadar civar hısımlarının dava ve işlerine bakamaz?",
+      "back": "Dördüncü dereceye kadar (bu derece dâhil).",
+      "explanation": "Akrabalık yönünden civar hısımlarında sınır üçüncü derecedir (bu derece dâhil). Bu engel, akrabalığı doğuran evlilik bağı kalkmış olsa bile devam eder.",
+      "articleRefs": [
+        "59"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Anayasa Mahkemesi Başkanı ve üyeleri, hangi sıfatla bakmış oldukları dava ve işlere bakamaz?",
+      "back": "Hâkim, savcı veya hakem sıfatıyla baktıkları dava ve işlere bakamazlar. Tanık ya da bilirkişi olarak beyanda bulundukları dava ve işlere de bakamazlar.",
+      "explanation": "Kendilerine ait veya kendilerini ilgilendiren dava ve işlere de bakamazlar. Dava ve iş sahiplerinin vekili, vasisi ya da kayyımı sıfatıyla hareket ettikleri işler de buna dahildir. İstişarî görüş ve düşüncelerini ifade ettikleri dava ve işler de bu engelin kapsamındadır.",
+      "articleRefs": [
+        "59"
+      ]
+    }
+  ]
+}

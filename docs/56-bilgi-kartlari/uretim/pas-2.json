@@ -1,0 +1,272 @@
+{
+  "deck": {
+    "topicId": "baaa49b6-e1cc-410a-9391-3ea8c36e2a49",
+    "legislationSlug": "5682-sayili-pasaport-kanunu",
+    "sourceLabel": "AI bilgi kartı — 5682 Sayılı Pasaport Kanunu md 16–30, 32–41, Ek 1, Ek 2, Ek 3, Ek 4, Ek 5, Ek 6, Ek 7, Geçici 1",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: resmî madde metni + çıkmış sorular)"
+  },
+  "cards": [
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Umuma mahsus müşterek pasaport verilebilmesi için kafile en az kaç kişiden oluşmalıdır?",
+      "back": "En az 5 kişi. Toplu yolculuk etmek isteyen Türk vatandaşlarına, istedikleri takdirde verilir.",
+      "explanation": "Müşterek pasaport kafilenin isteğine bağlıdır. Umuma mahsus münferit pasaportlar gibi düzenlenir ve kafileyi oluşturanların fotoğraflarını içeren bir liste eklenir.",
+      "articleRefs": [
+        "16"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Umuma mahsus müşterek pasaport, verildiği tarihten itibaren hangi geçerlik süreleriyle düzenlenir?",
+      "back": "3 ay, 6 ay ve 1 yıl geçerli olmak üzere düzenlenir.",
+      "explanation": "Bu pasaportla seyahat ederken kafileden ayrılan kişi ayrıca pasaport almaya mecburdur.",
+      "articleRefs": [
+        "16"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Kafile hâlinde ilmi tetkik ya da yabancı memleketlerdeki spor temas ve müsabakaları için gezi yapacak öğretmen, öğrenci ve sporculara verilen pasaportların harçtan muaf olması için hangi bakanlığın müsaadesi aranır?",
+      "back": "Milli Eğitim Bakanlığının müsaadesi aranır. Bu pasaportlar hiçbir harca tabi değildir.",
+      "explanation": "Aynı hüküm, seyahatlerinin Türkiye için kültürel, ticari veya sosyal bir menfaat temin edecek mahiyette olduğu sabit olanlara verilen pasaportları da harçtan muaf tutar.",
+      "articleRefs": [
+        "16"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Umuma mahsus pasaport almak isteyenlerin başvuru yerlerini ve kendilerinden istenecek belgeleri kim tespit eder?",
+      "back": "İçişleri Bakanlığı tespit eder.",
+      "explanation": "Yabancı memleketlerde kayıtlı bulunulan konsolosluğa başvuranlara pasaport, konsolosluk kütüğündeki kayıtlar esas alınarak verilir.",
+      "articleRefs": [
+        "17"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Reşit olmayanlar ve mahcurlar, yalnız seyahat etmek üzere pasaport alabilmek için hangi belgeyi ibraz etmelidir?",
+      "back": "Kanuni mümessillerinin muvafakatini havi, resmi bir makamdan tasdikli vesikayı ibraz etmelidir.",
+      "explanation": "Muvafakat kanuni mümessilden gelir. Belgenin ayrıca resmi bir makamca tasdik edilmiş olması gerekir.",
+      "articleRefs": [
+        "17"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Yabancı ülke adli veya idari makamlarınca verilen velayet ya da vesayet kararı hangi pasaport başvurularında kabul edilebilir?",
+      "back": "Kararın verildiği ülkede bulunan Türkiye Cumhuriyeti dış temsilciliklerindeki pasaport başvurularında kabul edilebilir.",
+      "explanation": "Hüküm, yabancı makamın kararını o kararın verildiği ülkedeki dış temsilciliğe yapılan başvuruyla sınırlar. Metin \"kabul edilebilir\" ifadesini kullanır.",
+      "articleRefs": [
+        "17"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "\"Yabancılara mahsus\" damgalı pasaport, Türkiye'ye yalnız bir giriş ya da Türkiye'den yalnız bir çıkış için verilmişse, itasından itibaren ne kadar süre içinde kullanılmalıdır?",
+      "back": "Bir ay içinde kullanılmalıdır. Sahibi bulunduğu memleketi bu süre içinde terk etmezse pasaportun yenilenmesi gerekir.",
+      "explanation": "Giriş için verilen pasaportun geçerliği Türkiye'ye girişle, çıkış için verilenin geçerliği ise şerhte yazılı memlekete varışla sona erer. Pasaportun yürürlüğünü kaybetmesinden itibaren iki ay geçmişse yenilenmesi İçişleri Bakanlığının kararına bağlıdır.",
+      "articleRefs": [
+        "18"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "\"Yabancılara mahsus\" damgalı pasaportlardan bir gidiş ve geliş için verilenler en az ne kadar süreyle geçerli olmak üzere tanzim edilir?",
+      "back": "Üç aydan az olmamak kaydıyla tanzim edilir. Süreyi İçişleri Bakanlığı takdirine göre belirler.",
+      "explanation": "Her iki neviden pasaportu yurt içinde İçişleri Bakanlığı verir. Yabancı memleketlerde ise Türkiye Cumhuriyeti konsolosluk makamları verir; bunun için İçişleri Bakanlığının talebi veya tasvibi üzerine Dışişleri Bakanlığınca verilecek talimat gerekir.",
+      "articleRefs": [
+        "18"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "\"Yabancılara mahsus\" damgalı pasaportun refakat hanesinde kayıtlı olan kişi, pasaport sahibi olmadan bu pasaportla seyahat edebilir mi?",
+      "back": "Hayır. Refakat hanesinde kayıtlı olanlar, pasaport sahibiyle seyahat etmedikleri takdirde o pasaportu kullanamaz.",
+      "explanation": "Refakate şu kişiler kaydedilebilir: pasaport sahibiyle tabiiyet bakımından aynı durumda olan, reşit olmayan ve iş sahibi bulunmayan çocuklar ile kocasıyla aynı durumdaki karısı. Pasaport, refakatte kayıtlı olanların da birer kıta fotoğrafisini ihtiva eder.",
+      "articleRefs": [
+        "18"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Pasavanlar kimlere ve nerede pasaport yerine kullanılmak üzere verilir?",
+      "back": "Türk vatandaşlarına verilir. Türkiye Cumhuriyeti ile hemhudut memleketlerin hudut mıntıkaları dahilinde pasaport yerine kullanılır.",
+      "explanation": "Hüküm pasavanlarla birlikte benzeri belgeleri de kapsar.",
+      "articleRefs": [
+        "19"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Pasavanların şekli, ita tarzı, muteberlik müddeti ve kimlere verileceği kim tarafından tespit edilir?",
+      "back": "İç ve Dışişleri Bakanlıklarınca müştereken tespit edilir. Tespit, Türkiye Cumhuriyeti ile alakalı Devletler arasındaki anlaşmaların hükümlerine uygun olarak yapılır.",
+      "articleRefs": [
+        "19"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Pasavanlar pasaport harcına tabi midir?",
+      "back": "Hayır. Pasavanlar ve benzeri belgeler pasaport harcına değil, hususi tarifeleri mucibince resme ve harca tabidir.",
+      "articleRefs": [
+        "19"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Gemiadamları ve uçak mürettebatına verilecek belgelerin şekil ve muhtevasını hangi bakanlıklar müştereken tespit eder?",
+      "back": "İçişleri, Dışişleri ve Ulaştırma Bakanlıkları müştereken tespit eder.",
+      "explanation": "\"Uçak Mürettebatı Belgesi\" havayolu uluslararası ulaşım araçlarının memur ve mürettebatına verilir. Belge, anlaşmalarda belirtilen örneğe ve usule uygun olarak idarelerince fotoğraflı düzenlenir.",
+      "articleRefs": [
+        "20"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "\"Demiryolu Personeli Kimlik Belgesi\" düzenlendiği anda pasaport yerine kullanılabilir mi?",
+      "back": "Hayır. Anlaşmalarda öngörülen yetkili makamlarca tasdik edilmedikçe pasaport yerine kullanılamaz.",
+      "explanation": "Belge, demiryolu uluslararası ulaşım araçlarının memur ve mürettebatına verilir. Anlaşmalarda öngörülen yetkili makamlarca, örneğine ve usulüne uygun olarak fotoğraflı düzenlenir.",
+      "articleRefs": [
+        "20"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Gemiadamı cüzdanı ve uçak mürettebatı belgesini düzenlemeye yetkili kurum ve kuruluşlar, ilgililer hakkında neyi yetkili merciden teyit etmek zorundadır?",
+      "back": "İlgililerin md 22 kapsamındaki durumlarını yetkili merciden teyit etmek zorundadır.",
+      "explanation": "md 22, pasaport veya seyahat vesikası verilmeyecek kişileri düzenler; yurt dışına çıkmaları mahkemelerce yasaklananlar bunlardandır. Belgeyi düzenleyen kurum, ilgilinin bu durumda olup olmadığını teyit eder.",
+      "articleRefs": [
+        "20",
+        "22"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Pasaport tahdidine ilişkin bilgileri alan mahallin polis makamları bu bilgileri nerelere bildirir?",
+      "back": "Üç yere bildirir: hudut kapısı bulunan emniyet müdürlüklerine, şahsın nüfusa kayıtlı olduğu il emniyet müdürlüğüne ve Emniyet Genel Müdürlüğüne.",
+      "explanation": "Bildirim, polis makamının bağlı bulunduğu il emniyet müdürlüğü kanalıyla, en seri haberleşme aracıyla ve yazılı olarak yapılır. İlgili daireler polise şu bilgileri bildirir: kişinin açık kimliği (adı, soyadı, doğum yeri ve tarihi, ana ve baba adı ile nüfusa kayıtlı olduğu yer) ve tahdit sebebi.",
+      "articleRefs": [
+        "22"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Yurt dışına çıkması mahkemece yasaklanan kişiye, zaruri hâlde Cumhurbaşkanının onayıyla pasaport verilebilir mi?",
+      "back": "Hayır. Zaruri hâlde Cumhurbaşkanının onayıyla pasaport veya seyahat vesikası verilmesi, yalnız mahkemelerce yasaklananlar dışında kalanlar için mümkündür.",
+      "explanation": "Maddede mahkeme yasağı dışında kalan grup şudur: terör örgütlerine aidiyeti, iltisakı veya irtibatı belirlenen yurt dışındaki kuruluşların kurucu ve yöneticisi olduğu ya da bu yerlerde çalıştığı İçişleri Bakanlığınca tespit edilenler. Tahdit kapsamındakilerin yurt dışına çıkışı engellenir; pasaport veya vesika verilmişse geri alınır.",
+      "articleRefs": [
+        "22"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Yurt dışında kalmalarında genel güvenlik bakımından mahzur bulunduğu tespit edilenlerin süresi dolan pasaportları için ne yapılır?",
+      "back": "Pasaportları yenilenmez. Kendilerine Türkiye'ye dönmeleri için seyahat vesikası verilir.",
+      "explanation": "Aynı işlem, birinci fıkradaki makamlarca pasaport verilmesi veya yurt dışına çıkması yasaklananlara da uygulanır. Ayrıca iki gruba, bulundukları ülkeden çıkarılış sebepleri gözönünde tutularak pasaport veya vesika verilmeyebilir: pasaportunu haklı bir sebebe dayanmadan kaybedenler ve bulundukları ülkeden sınır dışı edilenler.",
+      "articleRefs": [
+        "22"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Harp tehlikesi gibi olağanüstü hâller dolayısıyla Türk vatandaşlarının yabancı memleketlere gitmesini kısmen veya tamamen men etme yetkisi kime aittir?",
+      "back": "Cumhurbaşkanına aittir.",
+      "explanation": "Yetkinin sebepleri şunlardır: harp tehlikesi veya memleket güvenliğine ya da sağlık durumuna dokunan diğer olağanüstü hâller.",
+      "articleRefs": [
+        "23"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Cumhurbaşkanı siyasi ve ekonomik mülahazalarla pasaport düzenlenmesine ilişkin hangi kararı verebilir?",
+      "back": "Pasaportların sadece belli ülkeler için geçerli olarak düzenlenmesine karar verebilir.",
+      "articleRefs": [
+        "23"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Dış memleketlerdeki pasaport vermeye yetkili Türkiye Cumhuriyeti makamları, yalnız belli memleketlere gitmek için geçerli pasaportu kimin talimatı veya muvafakatiyle düzenleyebilir?",
+      "back": "Dışişleri Bakanlığının talimatı veya muvafakati ile düzenleyebilir.",
+      "explanation": "Bu yetkinin sebepleri şunlardır: harp tehlikesi, yabancı memleketlerde zuhur edebilecek dahili karışıklıklar, salgın hastalıklar ya da siyasi veya ekonomik nedenler.",
+      "articleRefs": [
+        "23"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Yabancıların diplomatik pasaportlarının vizeleri hangi harç veya resme tabidir?",
+      "back": "Hiçbir harca veya resme tabi değildir.",
+      "explanation": "Muafiyet, bu Kanundaki hususi ve servis damgalı pasaportlara tekabül eden yabancı pasaportların vizelerini de kapsar.",
+      "articleRefs": [
+        "27"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Türkiye Cumhuriyeti sınırlarından her nasılsa pasaportsuz olarak giren vatandaşa ne kadar idari para cezası verilir?",
+      "back": "Bin Türk Lirasından üçbin Türk Lirasına kadar idari para cezası verilir.",
+      "explanation": "Yaptırım, bir idari para cezasıdır.",
+      "articleRefs": [
+        "34"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Pasaport Kanununda yer alan harç ve resimler için hangi kanunun hükümleri uygulanır?",
+      "back": "492 sayılı Harçlar Kanununun pasaportlarla ilgili hükümleri uygulanır.",
+      "articleRefs": [
+        "Ek 3"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Hususi Damgalı Pasaport hakkı veren unvan veya rütbeyi taşıyıp 1 inci, 2 nci ve 3 üncü derece kadroları almadan emekli olan ya da ayrılan memur, subay ve astsubaylara ne verilir?",
+      "back": "Emsal alınmak suretiyle Hususi Pasaport verilir.",
+      "explanation": "Emsal alınanlar, Devlet memuriyetindeki hizmet süreleri ve taşıdıkları unvan ve/veya rütbeleri itibarıyla bugün Hususi Damgalı Pasaport almaya hak kazananlardır.",
+      "articleRefs": [
+        "Ek 4"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Elektronik pasaport temdit edilebilir mi?",
+      "back": "Hayır. Elektronik pasaportlar temdit edilemez.",
+      "explanation": "Elektronik pasaportlarda refakate kayıt işlemi de yapılamaz. Müşterek e-pasaport da düzenlenemez.",
+      "articleRefs": [
+        "Ek 6"
+      ],
+      "counterNumbers": []
+    }
+  ]
+}

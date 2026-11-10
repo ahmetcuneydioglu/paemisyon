@@ -1,0 +1,307 @@
+{
+  "deck": {
+    "topicId": "8b68257c-bd1e-4a44-bb49-830ee4d8e4c9",
+    "legislationSlug": "657-sayili-devlet-memurlari-kanunu",
+    "sourceLabel": "AI bilgi kartı — 657 Sayılı Devlet Memurları Kanunu md 92–105, 108",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: resmî madde metni + çıkmış sorular)"
+  },
+  "cards": [
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Kendi isteğiyle memurluktan çekilen biri hangi şartlarla ayrıldığı sınıfa yeniden atanabilir?",
+      "back": "Ayrıldığı sınıfta boş kadro bulunması ve o sınıfın niteliklerini taşıması şartıyla. Ayrıldığı tarihteki aylık derecesine eşit derecenin aynı kademesine atanır.",
+      "explanation": "Bu dönüş iki defadan fazla olmamak üzere çekilenler için geçerlidir. Kanun hükümlerine göre çekilmiş sayılanlar da aynı kurala bağlıdır. 71 inci madde hükümlerine uyularak başka bir sınıfta eşit derecedeki kadrolara da atanabilirler.",
+      "articleRefs": [
+        "92"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "İzinsiz ya da kurumunca kabul edilen mazereti olmadan görevini terk eden memur, terk kesintisiz kaç gün sürerse çekilme isteğinde bulunmuş sayılır?",
+      "back": "10 gün. Bu hâlde yazılı müracaat şartı aranmaz.",
+      "explanation": "Olağan yolda memur, bağlı olduğu kuruma yazılı olarak müracaat ederek çekilme isteğinde bulunur. Terk hâlinde ise terkin kesintisiz sürmesi yeterlidir.",
+      "articleRefs": [
+        "94"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Çekilmek isteyen memur ne zamana kadar görevine devam etmek zorundadır?",
+      "back": "Yerine atanan kimse gelinceye ya da çekilme isteği kabul edilinceye kadar.",
+      "explanation": "Yerine atanan kimse bir aya kadar gelmezse ya da yerine vekil atanmazsa memur, üstüne haber vererek görevini bırakabilir.",
+      "articleRefs": [
+        "94"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Olağanüstü mazeretle çekilen memur, görevini bırakmak için bir ay beklemek zorunda mıdır?",
+      "back": "Hayır. Olağanüstü mazeretle çekilenler bir ay kaydına tabi değildir. Yalnız üstüne haber vermek şartı aranır.",
+      "explanation": "Diğer çekilmelerde memur, yerine atanan gelinceye ya da isteği kabul edilinceye kadar çalışır. Atanan kimse bir aya kadar gelmezse ya da vekil atanmazsa memur, üstüne haber vererek ayrılabilir.",
+      "articleRefs": [
+        "94"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Yerine atanan kimsenin gelmesini ya da çekilme isteğinin kabulünü beklemeden görevden ayrılan memur, altı ay geçince yeniden memurluğa alınabilir mi?",
+      "back": "Hayır. 94 üncü maddenin 2 nci fıkrasına uymadan görevinden ayrılanlar bir yıl geçmeden Devlet memurluğuna alınamaz.",
+      "explanation": "Altı aylık yasak, 94 üncü maddenin 2 nci ve 3 üncü fıkralarına uygun olarak çekilenler içindir. Çekilmiş sayılanlar da bir yıl geçmeden alınamaz. Mali ve cezai sorumluluklar her durumda saklıdır.",
+      "articleRefs": [
+        "97"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Devir ve teslim işlemleri bitmeden görevini bırakan memur ne kadar süre Devlet memurluğuna alınamaz?",
+      "back": "3 yıl geçmeden Devlet memurluğuna alınamaz.",
+      "explanation": "Çekilen memurlardan devir ve teslimle yükümlü olanlar, bu işlemlerin sonuna kadar görevlerini bırakamaz. İşlemler için gerekli süreler yönetmelikte belirtilir.",
+      "articleRefs": [
+        "97",
+        "95"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Savaş hâlinde, çekilme isteği kabul edilmeden ya da yerine atanan gelip işe başlamadan görevini bırakan memur ne zaman yeniden memurluğa alınabilir?",
+      "back": "Hiçbir surette alınamaz; bu memur Devlet memurluğuna bir daha alınmaz.",
+      "explanation": "Görevi bırakma yasağı olağanüstü hal, seferberlik ve savaş hâllerinde geçerlidir. Genel hayata müessir afetlere uğrayan yerlerdeki memurlar için de aynı yasak vardır. Bu yasağa aykırı hareket edenler hiçbir surette memurluğa alınamaz.",
+      "articleRefs": [
+        "97",
+        "96"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Devlet memurunun memurluğu hangi hâllerde sona erer?",
+      "back": "Memurluğu şu hâllerde sona erer: memurluktan çıkarılma, alınma şartlarından birini taşımadığının sonradan anlaşılması ya da bu şartı kaybetmesi, çekilme, emekliye ayrılma ve ölüm.",
+      "explanation": "Emekliye ayrılmanın sebepleri istek, yaş haddi ve malûllüktür. Memurluğa alınma şartlarından herhangi birinin memurluk sırasında kaybedilmesi de memurluğu sona erdirir.",
+      "articleRefs": [
+        "98"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Memurların haftalık çalışma süresi hangi günler tatil olacak şekilde düzenlenir?",
+      "back": "Cumartesi ve Pazar tatil olacak şekilde düzenlenir. Haftalık çalışma süresi genel olarak 40 saattir.",
+      "explanation": "Kurumların ve hizmetlerin özelliklerine göre farklı çalışma süreleri tespit edilebilir. Bunun dayanağı Kanun, özel kanunlar, Cumhurbaşkanlığı kararnameleri ya da bunlara dayanan yönetmeliklerdir. Yurt dışı kuruluşlarda hizmet gerektirirse Cumhurbaşkanı hafta tatilini başka günler olarak tespit edebilir.",
+      "articleRefs": [
+        "99"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Günlük çalışmanın başlama ve bitme saatleri ile öğle dinlenme süresini illerde kim tespit eder?",
+      "back": "Valiler tespit eder; merkezde ise Cumhurbaşkanı.",
+      "explanation": "Tespit, bölgelerin ve hizmetin özelliklerine göre yapılır. Hizmetin özelliğine göre memurlar bu saat ve sürelere ve görev yerlerine bağlı olmaksızın da çalışabilir. Bunun usul ve esaslarını Cumhurbaşkanı belirler.",
+      "articleRefs": [
+        "100"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Engelli memurların günlük çalışma saatlerini ve öğle dinlenme süresini taşrada kim farklı belirleyebilir?",
+      "back": "Mülki amirler belirleyebilir; merkezde ise üst yönetici.",
+      "explanation": "Farklı belirleme yapılırken engel durumu, hizmet gerekleri, iklim ve ulaşım şartları göz önünde bulundurulur.",
+      "articleRefs": [
+        "100"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Kadın memura hangi dönemde gece nöbeti ve gece vardiyası görevi verilemez?",
+      "back": "Hamileliğin 24. haftasından itibaren ve doğumdan sonraki iki yıl boyunca verilemez. Tabip raporunda belirtilirse 24. haftadan önce de verilemez.",
+      "explanation": "Tabip raporu yalnız 24. haftadan önceki dönem için aranır. 24. haftadan itibaren ve doğumdan sonraki iki yıl boyunca bu görev her hâlde verilemez.",
+      "articleRefs": [
+        "101"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Engelli memura gece nöbeti ve gece vardiyası görevi hangi şartla verilebilir?",
+      "back": "Yalnız kendi isteğiyle. Engelli memura isteği dışında gece nöbeti ve gece vardiyası görevi verilemez.",
+      "explanation": "Günün yirmidört saatinde devamlılık gösteren hizmetlerde çalışma saat ve şekillerini kurumlar düzenler. Bu kayıt, kurumların bu düzenleme yetkisine getirilmiş bir sınırdır.",
+      "articleRefs": [
+        "101"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Hizmeti on yılı aşan Devlet memurunun yıllık izin süresi kaç gündür?",
+      "back": "30 gündür.",
+      "articleRefs": [
+        "102"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Hizmeti tam on yıl olan memurun yıllık izni 30 gün müdür?",
+      "back": "Hayır. On yıl dahil, 1 yıldan on yıla kadar hizmeti olanların izni 20 gündür. 30 gün, hizmeti on yıldan fazla olanlar içindir.",
+      "explanation": "Zorunlu hâllerde bu sürelere gidiş ve dönüş için en çok ikişer gün eklenebilir.",
+      "articleRefs": [
+        "102"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Zorunlu hâllerde yıllık izne gidiş ve dönüş için en çok kaçar gün eklenebilir?",
+      "back": "İkişer gün: gidiş için en çok iki gün, dönüş için en çok iki gün.",
+      "explanation": "Bu ekleme yalnız zorunlu hâllerde yapılır ve yıllık izin süresine eklenir.",
+      "articleRefs": [
+        "102"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Yıllık izin, memurun kendi uygun gördüğü zamanda kullanılır mı?",
+      "back": "Hayır. Yıllık izinler amirin uygun bulacağı zamanlarda kullanılır; toptan ya da ihtiyaca göre kısım kısım kullanılabilir.",
+      "explanation": "Kullanım zamanını amir belirler. İzin tek seferde ya da ihtiyaca göre parçalar hâlinde kullanılabilir.",
+      "articleRefs": [
+        "103"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Hizmeti sırasında radyoaktif ışınlarla çalışan personele her yıl yıllık iznine ek olarak ne kadar sağlık izni verilir?",
+      "back": "Bir aylık sağlık izni verilir; yıllık izne ilave olarak her yıl kullanılır.",
+      "articleRefs": [
+        "103"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Hangi yıllara ait kullanılmayan yıllık izin hakları düşer?",
+      "back": "Cari yıl ile bir önceki yıl dışında kalan, önceki yıllara ait kullanılmayan izin hakları düşer.",
+      "explanation": "Birbirini izleyen iki yılın izni bir arada verilebilir. Öğretmenler yaz tatili ile dinlenme tatillerinde izinli sayılır. Onlara hastalık ve diğer mazeret izinleri dışında ayrıca yıllık izin verilmez.",
+      "articleRefs": [
+        "103"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Eşi doğum yapan memura isteği üzerine kaç gün babalık izni verilir?",
+      "back": "10 gün babalık izni verilir.",
+      "explanation": "Aynı fıkraya göre memura isteği üzerine yedi gün izin verilen hâller şunlardır: kendisinin ya da çocuğunun evlenmesi; eşinin, çocuğunun, kendisinin veya eşinin ana, baba ve kardeşinin ölümü.",
+      "articleRefs": [
+        "104"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Süt izninin hangi saatler arasında ve günde kaç kez kullanılacağını kim belirler?",
+      "back": "Kadın memur belirler; bu konuda onun tercihi esastır.",
+      "explanation": "Süt izni, doğum sonrası analık izninin bitiminden itibaren hesaplanır. İlk altı ayda günde üç saat, ikinci altı ayda günde birbuçuk saattir.",
+      "articleRefs": [
+        "104"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Analık izni bitiminde kadın memur, birinci doğumda ne kadar süre günlük çalışma süresinin yarısı kadar çalışabilir?",
+      "back": "İki ay çalışabilir. Bu süre ikinci doğumda dört ay, sonraki doğumlarda altı aydır.",
+      "explanation": "Bunun için memurun istemesi ve çocuğun hayatta olması gerekir; bu sürede ayrıca süt izni verilmez. Çoğul doğumlarda sürelere birer ay eklenir. Çocuk engelli doğarsa ya da doğumdan sonraki on iki ay içinde engelliliği tespit edilirse süreler on iki ay olarak uygulanır. Çalışılacak süreleri ilgili kurum belirler.",
+      "articleRefs": [
+        "104"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Kanser, verem ya da akıl hastalığı gibi uzun süreli tedavi gerektiren bir hastalıkta memura, uzatmayla birlikte en fazla kaç ay hastalık izni verilebilir?",
+      "back": "36 ay. Önce 18 aya kadar izin verilir; hastalık sürüyorsa resmî sağlık kurulu raporuyla 18 ay daha uzatılır.",
+      "explanation": "Diğer hastalık hâllerinde süre 12 aya kadardır ve aynı şekilde uzatılır. Uzatma sonunda da iyileşemeyen memur hakkında emeklilik hükümleri uygulanır. Yataklı tedavi kurumunda geçen süreler izin süresinin hesabında dikkate alınır.",
+      "articleRefs": [
+        "105"
+      ],
+      "derivedNumbers": [
+        {
+          "value": 36,
+          "expr": "18 * 2",
+          "refs": [
+            "105"
+          ],
+          "note": "18 aylık izin, birinci fıkradaki süre kadar bir kez uzatılır"
+        }
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Refakat izni memura hangi yakınları için verilebilir?",
+      "back": "Ana, baba, eş, çocuklar ve kardeşlerden biri için verilebilir. Bu kişinin memurun bakmakla yükümlü olduğu ya da memur refakat etmezse hayatı tehlikeye girecek biri olması gerekir. İzin 3 aya kadardır; aylık ve özlük hakları korunur.",
+      "explanation": "Yakının ağır bir kaza geçirmesi ya da tedavisi uzun süren bir hastalığının bulunması gerekir. Bu durum sağlık kurulu raporuyla belgelenmelidir. Süre gerektiğinde bir katına kadar uzatılır. Bu iznin bitiminden itibaren, sağlık kurulu raporuyla belgelenmesi şartıyla, istek üzerine 18 aya kadar aylıksız izin verilebilir.",
+      "articleRefs": [
+        "105",
+        "108"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Görevi sırasında meslek hastalığına tutulan memurun izni 12 ayla sınırlı mıdır?",
+      "back": "Hayır. Görevi sırasında ya da görevinden dolayı kazaya, saldırıya uğrayan veya meslek hastalığına tutulan memur iyileşinceye kadar izinli sayılır.",
+      "explanation": "12 aya kadar izin, birinci fıkradaki diğer hastalık hâlleri içindir. Kanser, verem ve akıl hastalığı gibi uzun süreli tedavi gerektiren hastalıklarda ilk izin 18 aya kadardır; rapor üzerine bir o kadar uzatılır.",
+      "articleRefs": [
+        "105"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Eşi doğum yapan memurun aylıksız izni hangi tarihten itibaren başlar?",
+      "back": "Doğum tarihinden itibaren başlar; isteği üzerine 24 aya kadar verilir.",
+      "explanation": "Doğum yapan memurun aylıksız izni ise doğum sonrası analık izninin bitiminden başlar. 104 üncü maddenin (F) fıkrası uyarınca verilen izin kullanıldıysa, o iznin bitiminden başlar. Bu izin de 24 aya kadardır.",
+      "articleRefs": [
+        "108"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Memuriyet boyunca kullanılabilen toplam bir yıllık aylıksız izin için 10 hizmet yılını tamamlamak gerekir mi?",
+      "back": "Hayır. Yıllık izinde esas alınan süreler itibarıyla beş hizmet yılını tamamlamak yeter. İzin, isteğe bağlıdır ve en fazla iki defada kullanılır.",
+      "explanation": "Olağanüstü hâl veya genel hayata müessir afet hâli ilan edilen bölgelere 72 nci madde gereğince zorunlu olarak sürekli görevle atananlar için istisna vardır: bu bölgelerdeki görev süreleri içinde bu izin uygulanmaz.",
+      "articleRefs": [
+        "108"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Aylıksız izin bitmeden mazeret sebebi ortadan kalkan memur kaç gün içinde göreve dönmek zorundadır?",
+      "back": "10 gün içinde dönmek zorundadır. Dönmezse memuriyetten çekilmiş sayılır.",
+      "explanation": "Aylıksız izin süresinin bitiminde görevine dönmeyen memur da memuriyetten çekilmiş sayılır.",
+      "articleRefs": [
+        "108"
+      ]
+    }
+  ]
+}

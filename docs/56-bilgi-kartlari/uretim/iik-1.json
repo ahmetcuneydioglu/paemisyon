@@ -1,0 +1,245 @@
+{
+  "deck": {
+    "topicId": "4d185b8e-a24f-4f0e-8c29-d17e03eeec11",
+    "legislationSlug": "5442-il-idaresi-kanunu",
+    "sourceLabel": "AI bilgi kartı — 5442 İl İdaresi Kanunu md 1–5, 8, 9, 11",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: resmî madde metni + çıkmış sorular)"
+  },
+  "cards": [
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Türkiye'nin illere, illerin ilçelere ve ilçelerin bucaklara bölünmesi hangi idare kuruluşu bakımından yapılır?",
+      "back": "Merkezi idare kuruluşu bakımından.",
+      "explanation": "Bu bölünmede coğrafya durumu, iktisadi şartlar ve kamu hizmetlerinin gerekleri esas alınır.",
+      "articleRefs": [
+        "1"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Türkiye illere yalnız coğrafya durumu gözetilerek mi bölünür?",
+      "back": "Hayır. Coğrafya durumu, iktisadi şartlar ve kamu hizmetlerinin gerekleri birlikte gözetilir.",
+      "explanation": "Madde bu ölçütleri Türkiye'nin illere, illerin ilçelere ve ilçelerin bucaklara bölünmesi için birlikte sayar.",
+      "articleRefs": [
+        "1"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Merkezi idare kuruluşu bakımından ilçeler hangi birimlere bölünür?",
+      "back": "Bucaklara.",
+      "explanation": "Sıralama şöyledir: Türkiye illere, iller ilçelere, ilçeler de bucaklara bölünmüştür.",
+      "articleRefs": [
+        "1"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "İl ve ilçe kurulması, kaldırılması ya da bir ilçenin başka bir ile bağlanması hangi yolla yapılır?",
+      "back": "Kanun ile.",
+      "explanation": "İl ve ilçe merkezlerinin belirtilmesi ve adlarının değiştirilmesi de kanunla yapılır.",
+      "articleRefs": [
+        "2"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Bucak kurulması ve kaldırılması hangi yolla yapılır?",
+      "back": "Cumhurbaşkanı onayı ile.",
+      "explanation": "Cumhurbaşkanı onayı; bucak merkezinin belirtilmesi, il, ilçe ve bucak sınırlarının ve bucak adlarının değiştirilmesi, bir köyün, kasabanın veya bucağın başka bir il ve ilçeye bağlanması ile mühim mevki ve tabii arazi adlarının değiştirilmesi için de aranır.",
+      "articleRefs": [
+        "2"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Köy adlarının değiştirilmesi Cumhurbaşkanı onayıyla mı yapılır?",
+      "back": "Hayır. Köy adlarının değiştirilmesi İçişleri Bakanlığının tasvibiyle yapılır.",
+      "explanation": "İçişleri Bakanlığının tasvibi; köy ve kasabaların aynı ilçe içinde bir bucaktan başka bir bucağa bağlanması, köylerin birleştirilmesi ve ayrılması, bir köy, mahalle veya semtin o köyden ayrılıp başka bir köyle birleştirilmesi için de aranır.",
+      "articleRefs": [
+        "2"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "İllerin idaresi hangi esasa dayanır?",
+      "back": "Yetki genişliği esasına.",
+      "explanation": "Bu esas il idaresine ilişkindir; yetki genişliğine sahip kuruluşlar belli kamu hizmetleri için birden çok ili içine alan çevrede de meydana getirilebilir.",
+      "articleRefs": [
+        "3"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "İllerde genel idare teşkilatı neye uygun olarak düzenlenir?",
+      "back": "İl, ilçe ve bucak bölümlerine uygun olarak.",
+      "explanation": "Teşkilat, Türkiye'nin merkezi idare bakımından yapılan bölünmesini izler.",
+      "articleRefs": [
+        "3"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Birden çok ili içine alan bir çevrede yetki genişliğine sahip kuruluş meydana getirilebilir mi?",
+      "back": "Evet; belli kamu hizmetlerinin görülmesi amacıyla ve bu hizmetler için meydana getirilebilir.",
+      "explanation": "Yetki genişliği yalnız tek tek illerin idaresinde değil, belli kamu hizmetleri için kurulan bu çevre kuruluşlarında da söz konusudur.",
+      "articleRefs": [
+        "3"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "İl genel idaresinin başı ve mercii kimdir?",
+      "back": "Vali.",
+      "explanation": "Bakanlıkların kuruluş mevzuatına göre illerde bulunan teşkilat da valinin emri altındadır.",
+      "articleRefs": [
+        "4"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Bakanlıkların il teşkilatının başında bulunanların emri altında çalışanlar nasıl adlandırılır?",
+      "back": "İlin ikinci derecede memurları.",
+      "explanation": "Bakanlıkların kuruluş mevzuatına göre illerde lüzumu kadar teşkilat bulunur; her birinin başında bulunanlar il idare şube başkanlarıdır. Bu teşkilat valinin emri altındadır.",
+      "articleRefs": [
+        "4"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Cumhuriyet savcıları valinin emri altında mıdır?",
+      "back": "Hayır. Hakimler Kanunu ile İcra ve İflas Kanununda yazılı yargıç, Cumhuriyet savcısı ve yargıç sınıfında bulunanlar valinin emri altında bulunma hükmünden müstesnadır.",
+      "explanation": "İstisna ayrıca bu kanunlarda yazılı adalet memurlarını, askeri birlikleri, askeri fabrika ve müesseseleri, askerlik daire ve şubelerini kapsar.",
+      "articleRefs": [
+        "4"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Valiliğin yazı işlerinin düzenlenmesinden kim sorumludur?",
+      "back": "Vali muavini.",
+      "explanation": "Vali muavinleri ayrıca valinin tayin ve tespit ettiği işlerde yardımcılık, valinin bulunmadığı zamanlarda da vekillik yapar.",
+      "articleRefs": [
+        "5"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Vali muavinlerinin hangi işlerde yardımcılık yapacağını kim tayin ve tespit eder?",
+      "back": "Vali; vali muavinleri valinin tayin ve tespit ettiği işlerde yardımcılık yapar.",
+      "explanation": "Valinin bulunmadığı zamanlarda vekilliği de vali muavinleri yapar.",
+      "articleRefs": [
+        "5"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "İl merkezindeki lise müdür ve öğretmenleri ile hastanelerin mütehassıs hekimleri kim tarafından tayin edilir?",
+      "back": "Bakanlıklar veya tüzelkişiliği haiz genel müdürlükler tarafından.",
+      "explanation": "Aynı tayin yolu; ilçe idare şube başkanı sıfatını haiz olanlar, il merkezinde Devlet gelir, giderlerinin ve mallarının tahakkuk, tahsil, ödeme ve idaresiyle ilgili ikinci derecedeki müdürler, şube şefleri, kontrol memurları ve nakit muhasipleri ile orta ve o derecelerdeki okul müdür ve öğretmenleri için de geçerlidir.",
+      "articleRefs": [
+        "8"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Bakanlıklarca tayin edilen meslek, fen ve uzmanlık kadrolarındaki memurların lüzumu hâlinde il içinde nakil ve tahvilini kim yapar?",
+      "back": "Valiler; mensup olunan il idare şube başkanının inhası üzerine yapar ve sebepleriyle ilgili Bakanlık veya genel müdürlüğe bildirir.",
+      "explanation": "Valilik emrine tayin edilen memurların istihdam yerlerini de valiler, il idare şube başkanının inhası üzerine tespit eder.",
+      "articleRefs": [
+        "8"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Tayin, nakil ve tahviller için gereken yolluk ödenekleri ne zaman valiler emrine gönderilir?",
+      "back": "Bütçe yılı başında; ilgili Bakanlık veya genel müdürlüklerce gönderilir.",
+      "explanation": "Ödenek, valilerin yaptığı tayin, nakil ve tahvil işlemlerinin giderini karşılamak üzere valiler emrine gönderilir.",
+      "articleRefs": [
+        "8"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Vali, ilde bakanların temsilcisi midir?",
+      "back": "Hayır. Vali, ilde Cumhurbaşkanının temsilcisi ve idari yürütme vasıtasıdır.",
+      "explanation": "Valiler ilin genel idaresinden Cumhurbaşkanına karşı sorumludur. Cumhurbaşkanı yardımcıları ve bakanlar ise görevlerine ait işler için valilere re'sen emir ve talimat verir.",
+      "articleRefs": [
+        "9"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Kanun ve Cumhurbaşkanlığı kararnamesinin verdiği yetkiyi kullanmak için ilde genel emir çıkarma yetkisi kime aittir?",
+      "back": "Valiye; vali genel emirler çıkarabilir ve bunları ilan eder.",
+      "explanation": "Genel emir, kanun, Cumhurbaşkanlığı kararnamesi ve diğer mevzuatın verdiği yetkiyi kullanmak ve bunların yüklediği ödevleri yerine getirmek için çıkarılır.",
+      "articleRefs": [
+        "9"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Valiler hesabata ve teknik hususlara ait işlerde kime vali adına imza yetkisi verebilir?",
+      "back": "İdare şube başkanlarına.",
+      "explanation": "Bakanlıklar ve tüzelkişiliği haiz genel müdürlükler il genel idare teşkilatına ait bütün işleri doğrudan doğruya valiliklere yazar; valilikler de illere ait işler için bunlarla doğrudan doğruya muhaberede bulunur.",
+      "articleRefs": [
+        "9"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Kamu düzeni olağan hayatı durduracak şekilde bozulduğunda vali, ildeki belirli yerlere giriş ve çıkışı en çok ne kadar süreyle sınırlayabilir?",
+      "back": "On beş gün; sınırlama kamu düzeni ya da kamu güvenliğini bozabileceği şüphesi bulunan kişiler için uygulanır.",
+      "explanation": "Aynı hâllerde vali belli yerlerde veya saatlerde kişilerin dolaşmalarını, toplanmalarını ve araçların seyirlerini düzenleyebilir veya kısıtlayabilir; ruhsatlı da olsa her çeşit silah ve merminin taşınmasını ve naklini yasaklayabilir. Karar ve tedbirlere uymayanlar hakkında 66 ncı madde hükmü uygulanır.",
+      "articleRefs": [
+        "11"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Kamuya açık alanlarda kurulacak güvenlik sistemlerinin altyapı, kurulum ve işletilmesine ilişkin valilik talebini belediye kaç gün içinde sonuçlandırır?",
+      "back": "Yedi gün içinde; bu sürede sonuçlandırılmayan iş ve işlemleri vali resen tamamlattırır.",
+      "explanation": "Vali; kamu düzeni ve güvenliği, can ve mal emniyeti, suç işlenmesinin önlenmesi, trafik güvenliği ve kontrolü amacıyla meydan, karayolları, cadde, sokak ve park gibi alanlarda kurulacak sistemlerin yer tespiti, kurulumu ve altyapı faaliyetlerini koordine eder. Süre il özel idaresi, köy ve diğer kamu tüzelkişiliklerini de bağlar.",
+      "articleRefs": [
+        "11"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Türk Silahlı Kuvvetlerinin terörle mücadele için görevlendirildiği hâllerde Devlet, ödediği tazminatı görevini kötüye kullanan kolluk personelinden ne kadar süre içinde rücu eder?",
+      "back": "Bir yıl içinde; mülki idare amirleri ve kolluk kuvvetleri için İçişleri Bakanının uygun bulması şartıyla.",
+      "explanation": "Bu görevler sırasındaki kararlar, işlemler ve faaliyetler sebebiyle tazminat davaları, kişisel kusur ve haksız fiil hâlleri de dahil olmak üzere ancak Devlet aleyhine açılabilir. Rücu, görevinin gereklerine aykırı hareket ederek görevini kötüye kullananlara yöneliktir.",
+      "articleRefs": [
+        "11"
+      ]
+    }
+  ]
+}

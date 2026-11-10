@@ -1,0 +1,208 @@
+{
+  "deck": {
+    "topicId": "3f91916c-8d15-40f4-bb20-5bcca9253c34",
+    "legislationSlug": "2918-sayili-karayollari-trafik-kanunu",
+    "sourceLabel": "AI bilgi kartı — 2918 Sayılı Karayolları Trafik Kanunu md 4, 5, 5/A, 6–8",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: resmî madde metni + çıkmış sorular)"
+  },
+  "cards": [
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Karayolu güvenliği konusunda hedefleri tespit etmek, uygulatmak ve koordinasyonu sağlamak amacıyla 2918 sayılı Karayolları Trafik Kanunu hangi kurulu öngörür?",
+      "back": "Karayolu Trafik Güvenliği Kurulunu.",
+      "explanation": "Kurulun görevleri öneride bulunma, tespit etme ve eksiklik belirleme niteliğindedir.",
+      "articleRefs": [
+        "4"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Karayolu Trafik Güvenliği Kurulunun görev ve yetkileri nelerdir?",
+      "back": "Trafikle ilgili kuruluşlar arasında koordinasyon ve trafik kazalarının azaltılmasına ilişkin önerilerde bulunmak, uygulamadaki aksaklıkları tespit etmek, görev alanındaki yasal düzenlemeden kaynaklanan eksiklikleri belirlemek.",
+      "explanation": "Kurul kendi görev alanına giren konularda, yasal düzenlemeden kaynaklanan eksiklikleri belirler. Trafik kazalarının azaltılmasına ilişkin önerilerde bulunmak da bu görevlerden biridir.",
+      "articleRefs": [
+        "4"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Belediyeler, 2918 sayılı Kanunla kendilerine verilen trafik görevlerini İçişleri Bakanlığından bağımsız yürütebilir mi?",
+      "back": "Hayır. Kanunla yetkili kılınan diğer bakanlık, kuruluş ve belediyeler bu görevleri İçişleri Bakanlığı ile işbirliği içinde yürütür.",
+      "explanation": "Bu Kanunla ve diğer kanunlarla verilen trafik hizmetleri İçişleri Bakanlığınca yürütülür. Diğer yetkili bakanlık, kuruluş ve belediyeler de görevlerini İçişleri Bakanlığı ile işbirliği içinde yerine getirir.",
+      "articleRefs": [
+        "4"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Duran ve akan trafik bakımından İçişleri Bakanlığının görevi nedir?",
+      "back": "Duran ve akan trafiği düzenlemek ve yönetmek.",
+      "explanation": "İçişleri Bakanlığı ayrıca araçları, sürücüleri ve karayolunu kullanan diğer kişilerin kurallara uyup uymadığını denetler.",
+      "articleRefs": [
+        "5"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Trafik kazalarının oluş nedenleriyle ilgili tüm unsurları kapsayan istatistik verilerini toplamak, değerlendirmek ve ilgili kuruluşlara teklifte bulunmak hangi kurumun görevidir?",
+      "back": "İçişleri Bakanlığının. Bakanlık, sonuçlara göre gereken önlemlerin alınmasını da sağlar.",
+      "explanation": "Aynı bakanlık ülke çapında taşıtların ve sürücülerin sicillerini tutar. Bunlara ilişkin istatistiksel bilgileri de toplar ve değerlendirir.",
+      "articleRefs": [
+        "5"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Araçlar üzerindeki haciz, rehin, ihtiyati tedbir ve belge iptali gibi kısıtlayıcı şerhleri elektronik sicile kim işleyebilir ya da kaldırabilir?",
+      "back": "Bu şerhlere karar veren yargı ve icra birimleri ile kamu kurum veya kuruluşları. İşlem elektronik sistemle yapılabilir.",
+      "explanation": "Aynı kural, sürücülere ait bilgilerdeki değişiklikler ile araçlardaki teknik veya hukuki değişiklikler için de geçerlidir. Usul ve esaslar yönetmelikte belirlenir.",
+      "articleRefs": [
+        "5"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Karayolları üzerinde ilk yardım istasyonları kurmak İçişleri Bakanlığının görevi midir?",
+      "back": "Hayır. İstasyonları Sağlık Bakanlığı, İçişleri Bakanlığının uygun görüşünü de alarak kurar ve gerekli personeli, araç ve gereci sağlar.",
+      "explanation": "Karayollarındaki trafik kazalarıyla ilgili ilk ve acil yardım hizmetlerini Sağlık Bakanlığı planlar ve uygular. İçişleri Bakanlığının görevleri arasında araçların tescili ve sürücü belgelerinin verilmesi yer alır.",
+      "articleRefs": [
+        "5",
+        "8"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Trafik kazası neticesinde hastalanan veya yaralananlar için İçişleri Bakanlığının görevi nedir?",
+      "back": "Bakımlarını sağlayacak tedbirlerin süratle alınmasına yardımcı olmak ve yakınlarına haber vermek.",
+      "explanation": "Bakanlık ayrıca el koyduğu trafik kazalarında trafik kaza tespit tutanağı düzenler.",
+      "articleRefs": [
+        "5"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Trafik kuruluşlarının çalışma şekil ve şartları ile görevlendirilecek personelin nitelikleri nerede belirtilir?",
+      "back": "İçişleri Bakanlığınca çıkarılacak yönetmelikte.",
+      "explanation": "Personelin seçimi, çalışma usulleri, görev, yetki ve sorumluluklarına ait esaslar da aynı yönetmelikte yer alır.",
+      "articleRefs": [
+        "5"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "İçişleri Bakanlığı, sürücü belgesi ve tescil işlemlerine esas teşkil edecek bilgileri nasıl temin edebilir?",
+      "back": "İlgili kamu kurum veya kuruluşlarından elektronik sistemle.",
+      "explanation": "Bu bilgiler, kanunlardaki istisnalar hariç olmak üzere, bu amaçla sınırlı olarak paylaşılabilir. Usul ve esaslar yönetmelikte belirlenir.",
+      "articleRefs": [
+        "5"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Trafik zabıtasının görevi sırasında karşılaştığı acil ve zorunlu bir hâlde genel zabıta görevi yapabilmesi İçişleri Bakanının uygun görmesine bağlı mıdır?",
+      "back": "Hayır. Bu hâllerde trafik zabıtası genel zabıta görevi yapmakla yetkilidir. İçişleri Bakanının uygun görmesi, otoyollardan sorumlu birimlerdeki trafik zabıtasının genel zabıta olarak görevlendirilmesinde aranır.",
+      "explanation": "Otoyollardan sorumlu birimlerde görevli trafik zabıtası, İçişleri Bakanının uygun görmesi hâlinde genel zabıta olarak da görevlendirilebilir. Bu görevlendirme sorumluluk sahası ile sınırlıdır.",
+      "articleRefs": [
+        "6"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Mülki idare amirleri trafik zabıtasına her durumda genel zabıta görevi verebilir mi?",
+      "back": "Hayır. Yalnız emniyet ve asayiş bakımından zorunlu görülen hâllerde verebilirler.",
+      "explanation": "Aynı hükme göre trafik zabıtasının araç, gereç ve özel teçhizatı trafik hizmetleri dışında kullanılamaz.",
+      "articleRefs": [
+        "6"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Genel zabıta hangi yerlerde trafiği düzenlemeye ve trafik suçlarına el koymaya görevli ve yetkilidir?",
+      "back": "Trafik zabıtasının bulunmadığı veya yeterli olmadığı yerlerde, sorumluluk bölgesine göre.",
+      "explanation": "Genel zabıta bu görevi ilgili mevzuatta belirtilen esas ve usullere uygun olarak yerine getirir.",
+      "articleRefs": [
+        "6"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Tüm karayollarındaki işaretleme standartlarını tespit etmek, yayınlamak ve kontrol etmek hangi kurumun görevidir?",
+      "back": "Karayolları Genel Müdürlüğünün.",
+      "explanation": "Genel Müdürlük, yapım ve bakımından sorumlu olduğu karayollarında can ve mal güvenliği yönünden gerekli düzenleme ve işaretlemeleri de yapar.",
+      "articleRefs": [
+        "7"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Karayolları Genel Müdürlüğü, yapım ve bakımından sorumlu olduğu karayollarında yönetmelikteki hız sınırlarından farklı bir sınırı tek başına belirleyebilir mi?",
+      "back": "Hayır. Yönetmelikteki hız sınırlarının üstünde veya altında sınır belirleyip işaretlemek için İçişleri Bakanlığının uygun görüşünü alması gerekir.",
+      "explanation": "Bu yetki yalnız Genel Müdürlüğün yapım ve bakımından sorumlu olduğu karayolları için tanınmıştır.",
+      "articleRefs": [
+        "7"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Karayolları Genel Müdürlüğü görevlileri, 47 nci maddenin (b), (c) ve (d) bentlerindeki kural ihlallerinde doğrudan suç veya ceza tutanağı düzenleyebilir mi?",
+      "back": "Hayır. Görevliler durumu bir tutanakla belirler ve gerekli işlemin yapılması için en yakın trafik kuruluşuna teslim eder.",
+      "explanation": "Suç veya ceza tutanağı düzenleme yetkisi 13, 14, 16, 17, 18, 47/a ve 65 inci maddelere aykırı hareket edenler içindir. Bu yetkide de trafik zabıtasının görev ve yetkileri saklıdır.",
+      "articleRefs": [
+        "7"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Okul öncesi, okul içi ve okul dışı trafik eğitimini düzenleyen trafik genel eğitim planını hangi bakanlık hazırlar?",
+      "back": "Millî Eğitim Bakanlığı. Bakanlık planı ilgili kuruluşlarla iş birliği yaparak uygular.",
+      "explanation": "Aynı bakanlık sürücü kursları açar, özel sürücü kursu açılmasına izin verir ve bunları her safhada denetler. Sürücü adaylarının teorik ve uygulamalı sınavlarını da bu bakanlık yapar.",
+      "articleRefs": [
+        "8"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Sağlık Bakanlığı, trafik kazasından sonra otuz gün içinde ölenlerin kayıtlarını otuz gün içinde mi bildirir?",
+      "back": "Hayır. Otuz gün, kazanın sebep ve tesiriyle ölümün gerçekleştiği süredir. Kayıtlar takip eden ayın sonuna kadar Emniyet Genel Müdürlüğüne bildirilir.",
+      "explanation": "Kayıt, trafik kazalarında yaralanıp sağlık kuruluşlarına sevk edilenlerden kazanın sebep ve tesiriyle otuz gün içinde ölenler için tutulur.",
+      "articleRefs": [
+        "8"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Ağırlık ve boyut kontrolü için yetkilendirilen bir işletmede giderilebilecek bir eksiklik varsa işletme sahibine en çok ne kadar süre verilir?",
+      "back": "Azamî on beş gün. Bu sürede eksiklikler giderilmezse izin belgesi iptal edilir.",
+      "explanation": "Yetkilendirilenleri Ulaştırma ve Altyapı Bakanlığı (Kanun metninde eski adıyla Ulaştırma, Denizcilik ve Haberleşme Bakanlığı) denetler. Aykırı hareketi tespit edilen işletme sahiplerine idari para cezası verilir.",
+      "articleRefs": [
+        "8"
+      ]
+    }
+  ]
+}

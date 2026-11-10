@@ -1,0 +1,289 @@
+{
+  "deck": {
+    "topicId": "fc5b7d84-ad74-446c-9ac6-3d4172a04ccf",
+    "legislationSlug": "298-sayili-secimlerin-temel-hukumleri-kanunu",
+    "sourceLabel": "AI bilgi kartı — 298 Sayılı Seçimlerin Temel Hükümleri Kanunu md 55, 55/A, 55/B, 56–60, 62–82",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: resmî madde metni + çıkmış sorular)"
+  },
+  "cards": [
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Siyasi parti adına radyo ve televizyonda yapılan konuşma suç teşkil ederse, konuşmayı yapana verilecek ceza nasıl belirlenir?",
+      "back": "Kanunen belli olan ceza bir mislinden iki misline kadar artırılarak hükmolunur.",
+      "explanation": "Bu konuşmalar, Yüksek Seçim Kurulunun görevlendirdiği bir kurul üyesinin huzurunda ses ve görüntü alma cihazıyla tespit edilir. Bantları ve diğer tespit araçlarını Yüksek Seçim Kurulu saklar. Konuşma dava konusu yapılır ve istenirse merciine verilir.",
+      "articleRefs": [
+        "55"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Siyasi partiler ve adaylar radyo ve televizyonda açık oturum, röportaj, panel gibi programlara en geç ne zamana kadar katılabilir?",
+      "back": "Oy verme gününden önceki yirmi dört saate kadar katılabilirler. Bu imkân seçimin başlangıç tarihinden itibaren tanınır.",
+      "explanation": "Partiler ve adaylar bu programlara birlikte ya da ayrı ayrı katılabilir. Açık veya kapalı yer toplantıları da radyo ve televizyonlarda canlı yayınlanabilir. Özel radyo ve televizyonların yayın ilkelerini Yüksek Seçim Kurulu belirler.",
+      "articleRefs": [
+        "55/A"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Ülke çapında yayın yapan özel bir televizyonun seçim yayınlarını, yayının yapıldığı yerin ilçe seçim kurulu denetleyebilir mi?",
+      "back": "Hayır. Ülke çapında yayın yapan özel radyo ve televizyonları Yüksek Seçim Kurulu denetler; ilçe seçim kurulu yalnız bunların dışındaki kuruluşları denetler.",
+      "explanation": "Hangi özel radyo ve televizyonların ülke çapında yayın yaptığını Yüksek Seçim Kurulu belirler ve bu karar Resmî Gazetede yayımlanır.",
+      "articleRefs": [
+        "55/A"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "İlçe seçim kurulunun özel radyo ve televizyon yayınlarına ilişkin kararına karşı hangi süre içinde itiraz edilebilir?",
+      "back": "Yirmidört saat içinde il seçim kuruluna itiraz edilebilir; il seçim kurulunun kararı kesindir.",
+      "articleRefs": [
+        "55/A"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Seçmenin oyunu etkileyebilecek anket ve kamuoyu araştırması yayını, oy verme gününden önceki hangi sürede yasaktır?",
+      "back": "Oy verme gününden önceki on günlük sürede. Bu sürede hem yayın hem de herhangi bir surette dağıtım yasaktır.",
+      "explanation": "Yasak; yazılı, sözlü ve görsel basın ve yayın araçlarıyla yapılan kamuoyu araştırmalarını, anketleri ve tahminleri kapsar. Bilgi ve iletişim telefonlarıyla yapılan mini referandum gibi yayınlar da yasaktır. Bu süre dışındaki yayınlar tarafsızlık, gerçeklik ve doğruluk ilkelerine uygun olmalıdır.",
+      "articleRefs": [
+        "55/B"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Bir siyasi parti, kendi üyelerinin telefonlarına propaganda içerikli mesaj gönderebilir mi?",
+      "back": "Evet. Siyasi partilerin kendi üyelerine gönderdiği sesli, görüntülü veya yazılı mesajlar her zaman serbesttir.",
+      "explanation": "Vatandaşların elektronik posta adreslerine mesaj göndererek propaganda yapılamaz. Taşınabilir veya sabit telefonlarına sesli, görüntülü ya da yazılı mesaj göndererek de propaganda yapılamaz. Serbest olan, yalnız partinin kendi üyelerine gönderdiği mesajlardır.",
+      "articleRefs": [
+        "55/B"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Kamuoyu araştırması veya anket yayınlanırken hangi bilgilerin açıklanması zorunludur?",
+      "back": "Araştırmanın hangi kuruluş tarafından yapıldığı, denek sayısı ve araştırmanın kim tarafından finanse edildiği.",
+      "explanation": "Bu madde kapsamında yapılacak propagandaların ve yayınların ilkelerini Yüksek Seçim Kurulu belirler.",
+      "articleRefs": [
+        "55/B"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Hoparlörle propaganda yayınının yerini, zamanını ve süresini belirlemeye hangi kurul yetkilidir?",
+      "back": "İlçe seçim kurulları. Kurul bunu kendiliğinden ya da siyasi partilerin isteği üzerine, mahallin özelliklerini gözeterek belirler.",
+      "explanation": "Hoparlörle propaganda, halkın huzur ve rahatını bozmamak şartıyla serbesttir. Ancak başka bir parti veya bağımsız aday adına toplantı yapılan saatlerde, o toplantıyı rahatsız edecek biçimde hoparlör kullanılamaz. Partiler, varsa belediye hoparlörlerinden ilçe seçim kurulunun programına göre bedeli karşılığında eşit surette yararlanabilir.",
+      "articleRefs": [
+        "56"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Propaganda amaçlı broşür, el ilanı ve afiş dağıtacak kişilerin kaç yaşını doldurmuş olması gerekir?",
+      "back": "On sekiz yaşını doldurmuş olmaları şarttır.",
+      "explanation": "Partiler ve adaylar, seçimin başlangıç tarihinden propaganda süresinin sonuna kadar kendilerini tanıtıcı yayınları dağıtmakta serbesttir. Bunlar broşür, el ilanı, parti bayrağı, poster, afiş ve CD, DVD gibi yayınlardır.",
+      "articleRefs": [
+        "57"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Bir aday, seçim propagandası sırasında tanıtıcı broşürünün yanında seçmenlere hediye dağıtabilir mi?",
+      "back": "Hayır. Tanıtıcı yayınlar dışında hediye ve eşantiyon dağıtmak ya da dağıttırmak yasaktır. Bunların üçüncü şahıslar veya kurum ve kuruluşlar aracılığıyla dağıtılması da yasaktır.",
+      "explanation": "Serbest olan, kendilerini tanıtıcı nitelikteki yayınlardır: broşür, el ilanı, parti bayrağı, poster, afiş ve CD, DVD gibi ses ve görüntü içeren yayınlar.",
+      "articleRefs": [
+        "57"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Propaganda için kullanılan el ilanları ve diğer matbuat üzerinde neler bulundurulması yasaktır?",
+      "back": "Türk Bayrağı ve dini ibareler.",
+      "explanation": "Siyasi partiler ve adaylar her türlü propagandayı Türkçenin yanı sıra farklı dil ve lehçelerde de yapabilir.",
+      "articleRefs": [
+        "58"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Siyasi partiler ve bağımsız adaylar, ilçe seçim kurullarınca belirlenen belediye ilan ve reklam yerlerinden hangi günden itibaren yararlanabilir?",
+      "back": "Oy verme gününden önceki otuzuncu günden itibaren yararlanabilirler; süresi, sayısı ve ücreti eşit olmak şartıyla.",
+      "explanation": "Seçim zamanı dışında ücretsiz tahsis edilen ilan ve reklam yerleri için ücret talep edilemez. Bu yerler siyasi partiler ve bağımsız adaylar arasında eşit olarak paylaştırılır.",
+      "articleRefs": [
+        "60"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Kamuya açık alanlardaki sabit dijital reklam panolarında sesli propaganda yapılabilir mi?",
+      "back": "Hayır. Bu panolarla yalnız görüntülü propaganda yapılabilir; sesli propaganda yapılamaz.",
+      "explanation": "Panoların hangi gün ve saatlerde siyasi propaganda için kullanılacağını seçim kurulları belirler. Propagandaların sırası ve süresi, ilan ve reklam yerlerinin tahsisindeki usule göre partilere ve bağımsız adaylara tahsis edilir.",
+      "articleRefs": [
+        "60"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Seçim süresince belediye gibi kamu kurum ve kuruluşlarına, siyasi partiler ve adaylarla ilişkilerinde neler yasaktır?",
+      "back": "Her ne nam ile olursa olsun bağış ve yardımda bulunmak yasaktır. Memur, hizmetli, araç, gereç ve imkânlarını bir parti veya adayın emrinde ya da siyasi faaliyette çalıştırmak, kullanmak veya kullandırmak da yasaktır.",
+      "explanation": "Devlet, il özel idareleri, belediyeler ve diğer kamu tüzel kişilikleri bu kapsamdadır. Umumi menfaatlere hadim cemiyetler ve bunlarda görev alan memur ve hizmetliler de seçimlerde tarafsızlıklarını korumak zorundadır. Bir partinin lehinde veya aleyhinde ya da vatandaşın oyuna tesir amacıyla yayında da bulunamazlar.",
+      "articleRefs": [
+        "63",
+        "62"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Seçim propagandasının başlangıcından oy verme gününü takip eden güne kadar, kamu kaynaklarıyla yapılan iş ve hizmetler için ne yasaktır?",
+      "back": "Açılış ve temel atma dahil tören tertiplemek, nutuk söylemek ve demeç vermek. Bunlar hakkında her türlü vasıtayla yayın yapmak da yasaktır.",
+      "articleRefs": [
+        "64"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Bir memur, bakanın seçim propagandası gezisine katılabilir mi?",
+      "back": "Hayır. Propagandanın başlangıcından oy verme gününü takip eden güne kadar bakanlar, milletvekilleri ve adayların propaganda gezilerine hiçbir memur katılamaz.",
+      "articleRefs": [
+        "66"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Seçim kurulu başkanlarının seçim araçları ve parasının sağlanmasına ilişkin emirleri üzerine kimler yardım etmek zorundadır?",
+      "back": "Zabıta amir ve memurları, belediyeler ve muhtarlıklar.",
+      "explanation": "Seçim için gerekli bütün araçları ve parayı zamanında ve muntazam şekilde sağlamak ve yerlerine göndermek, seçim kurulu başkanlarının yükümlülüğüdür.",
+      "articleRefs": [
+        "67"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Oy sandıklarının eni, boyu ve yüksekliği ne kadardır?",
+      "back": "Eni 40, boyu 55, yüksekliği 50 santimetredir. Sandıklar şeffaf, ısıya ve kırılmaya dayanıklı sert plastikten yapılır.",
+      "explanation": "Sandığın kapağı iple bağlanıp mühürlenmeye elverişlidir ve üzerinde zarfların atılmasına uygun bir açıklık bulunur. Sandık ve kabinlerin üzerinde Yüksek Seçim Kurulu ibaresi ve logosu yer alır. Zorunlu hallerde sandık standartlarını Yüksek Seçim Kurulu değiştirebilir.",
+      "articleRefs": [
+        "68"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "İlçe seçim kurulu başkanı, seçim malzemesinin sandık kurulu başkanlarına teslimini en geç ne zaman sağlar?",
+      "back": "Oy verme gününden en az kırksekiz saat önce. İl seçim kurulu başkanları da ilçelere teslimi en az on gün önce sağlar.",
+      "articleRefs": [
+        "68"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Sandık kurulunun itiraza uğrayan kararları nereye gönderilir?",
+      "back": "Derhal ilçe seçim kuruluna gönderilir.",
+      "explanation": "Sandık kurulu, oy verme işleri hakkındaki itirazları inceler ve karara bağlar. Kararlarını tutanak defterine geçirip altını imzalar.",
+      "articleRefs": [
+        "71"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Bağımsız aday müşahitlerinden en fazla kaçı sandık başında kalabilir?",
+      "back": "Üç. Üçten fazla olursa sandık kurulu başkanı ad çeker; adları ilk çıkan üç müşahit sandık başında kalır, diğerleri sandık çevresi dışında kalabilir.",
+      "articleRefs": [
+        "72"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Sandık kurulunda görevini yapmayan parti üyesinin yerine yedek üye getirilemez ve kurul üyeleri üçten aşağı düşerse ne yapılır?",
+      "back": "Durum tutanağa geçirilir. Eksikler, o seçim bölgesinde seçme yeterliğini haiz ve okur-yazar olanlar arasından başkanın seçeceği kişilerle doldurulur.",
+      "articleRefs": [
+        "73"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Hangi yerlere oy sandığı konulamaz?",
+      "back": "Kışla, karargah, ordugah gibi askeri bina ve tesislere, karakollara, parti binalarına ve muhtarlık odalarına.",
+      "explanation": "Sandıklar okul avlusu ve salonların elverişli kısımları gibi genel yerlere konur; bunlar yetmezse kiralanacak kahvehane, lokanta gibi yerlere konur. Engelli seçmenlerin oylarını rahatlıkla kullanabilmeleri için gerekli tedbirler alınır.",
+      "articleRefs": [
+        "74"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Oy verme günü köy, kasaba ve şehirlerde kimler silah taşıyabilir?",
+      "back": "Yalnız emniyet ve asayişi korumakla görevli olanlar.",
+      "explanation": "Oy verme günü ispirtolu içki satılması yasaktır; içkili yerlerle umumi mahallerde içki verilmesi ve içilmesi de yasaktır. Umumi eğlence yerleri oy verme süresince kapalı kalır. Eğlence yeri niteliğindeki lokantalarda yalnız yemek verilir.",
+      "articleRefs": [
+        "79"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Seçim günü radyolarda yalnız Yüksek Seçim Kurulunun seçimle ilgili haber ve tebliğleri hangi saatler arasında yayınlanabilir?",
+      "back": "Saat 18 ile 21 arasında. Saat 18'e kadar seçimle ilgili haber, tahmin ve yorum yasaktır; 21'den sonra bütün yayınlar serbesttir.",
+      "articleRefs": [
+        "80"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Sandık çevresinde düzeni sağlama görevi kime aittir?",
+      "back": "Sandık kurulu başkanına. Başkan bu görevi yapmazsa sandık kurulu karar alarak yetkiyi kullanır ve durumu derhal ilçe seçim kurulu başkanına bildirir.",
+      "explanation": "Başkan, düzeni bozmaya kalkışanları uyarır; uyarıya uymayan kişi kolluk gücü çağrılarak sandık çevresinden uzaklaştırılır. Alınan tedbirler, sandık çevresinde bulunma hakkı olanların seçim iş ve işlemlerini takip etmesini engelleyemez.",
+      "articleRefs": [
+        "82"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Özel güvenlik görevlisi, üniforması ve silahıyla sandığın konulduğu binaya girebilir mi?",
+      "back": "Hayır. Seçimin güvenliğini sağlamakla görevli kolluk güçleri dışında resmî üniforma ve silah taşıyan kişiler bina, yapı ve müştemilatına giremez; özel güvenlik görevlileri ve belediye zabıtaları da buna dahildir.",
+      "articleRefs": [
+        "82"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Sandık çevresine çağrılan kolluk güçleri oradan ne zaman ayrılır?",
+      "back": "Çağrı veya ihbar sebebi ortadan kalkınca ayrılır. O zamana kadar başkanın talebine veya kurulun kararına uymak zorundadır.",
+      "explanation": "Cebir, şiddet veya tehditle sandık başı düzenini bozmaya kalkışanlar derhal sandık çevresinden uzaklaştırılır. Bunu, kurul başkanı ya da üyelerinden birinin çağrısı veya seçmenlerin ihbarı üzerine gelen kolluk güçleri yapar. Seçmen ihbarı o yer kolluk güçlerine şahsen yapılır.",
+      "articleRefs": [
+        "82"
+      ]
+    }
+  ]
+}

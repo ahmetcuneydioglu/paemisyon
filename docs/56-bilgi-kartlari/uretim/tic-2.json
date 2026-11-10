@@ -1,0 +1,296 @@
+{
+  "deck": {
+    "topicId": "d4a6b734-0110-4c9e-ae57-8cc39091a369",
+    "legislationSlug": "tbmm-ictuzugu",
+    "sourceLabel": "AI bilgi kartı — Türkiye Büyük Millet Meclisi İçtüzüğü md 47–72, 74–77, 79–91",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: resmî madde metni + çıkmış sorular)"
+  },
+  "cards": [
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Türkiye Büyük Millet Meclisi Genel Kurulunda gündemdeki işlerin görüşme sırası neye göre tespit edilir?",
+      "back": "Alınış tarihlerine göre. Sırayı Başkanlık tespit eder.",
+      "explanation": "Başkanlık lüzum görürse, kanun teklifleri ile komisyonlardan gelen diğer işlerin görüşme sırası Danışma Kurulunca Genel Kurula teklif olunabilir. Esas komisyonların ve kanun teklifi sahiplerinin bu konudaki istemleri de Danışma Kurulunda görüşülür. Danışma Kurulunun görüşü Genel Kurulun onayına sunulur.",
+      "articleRefs": [
+        "49"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Belli bir sürede sonuçlanması gereken konular için özel gündemleri ve görüşme günlerini kim tespit edebilir?",
+      "back": "Danışma Kurulu. Bunu Anayasa ve İçtüzüğün emredici hükümleri gereğince yapar.",
+      "explanation": "Özel gündemdeki konular Başkanlık sunuşundan sonra yer alır. Genel hükümlere göre tespit olunmuş gündem maddeleri, özel gündem maddelerinden sonra gelir.",
+      "articleRefs": [
+        "50"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Başkanlığa gelen kanun teklifleri ve önergelerin yer aldığı gelen kâğıtlar listesi nerede yayımlanır?",
+      "back": "Türkiye Büyük Millet Meclisinin resmî internet sitesinde. Liste ayrıca ilk birleşim tutanağına eklenir.",
+      "explanation": "Liste, tatile rastlamadığı takdirde Cumartesi ve Pazar hariç her gün yayımlanır. Kanun teklifleri, resmî tezkereler ve komisyon raporları bu listede yer alır. Yazılı soru, genel görüşme, Meclis araştırması ve Meclis soruşturması önergeleri de listededir. Genel Kurula sevk edilenler ve Başkanlığa geliş tarihleri ayrıca gösterilir.",
+      "articleRefs": [
+        "51"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Genel Kurula sevk edilen bir komisyon raporu, dağıtımından itibaren ne kadar süre geçmeden görüşülemez?",
+      "back": "48 saat. Aksine karar alınmadıkça bu süre dolmadan görüşülemez.",
+      "explanation": "Kural yalnız komisyon raporları için geçerli olmayıp Genel Kurula sevk edilen herhangi bir metin için de uygulanır.",
+      "articleRefs": [
+        "52"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Bir komisyon raporu, dağıtımından itibaren 48 saat dolmadan gündeme alınıp görüşülebilir mi?",
+      "back": "Evet. Esas komisyon gerekçeli olarak isterse Genel Kurul işaret oyuyla karar verir.",
+      "explanation": "Esas komisyon aynı yolla bir başka istemde de bulunabilir: gündemdeki kanun teklifleri ile komisyonlardan gelen diğer işlerden birine öncelik verilerek o kısmın ilk sırasına geçirilmesini Genel Kuruldan isteyebilir.",
+      "articleRefs": [
+        "52"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Resmî tatile rastlamadığı takdirde Genel Kurul Salı günü hangi saatler arasında toplanır?",
+      "back": "15.00'ten 21.00'e kadar. Çarşamba ve Perşembe günleri ise 14.00'ten 21.00'e kadar toplanır.",
+      "explanation": "Genel Kurul, Danışma Kurulunun teklifi üzerine toplantı hafta, gün ve saatlerini değiştirebilir. Aynı yolla diğer günlerde de toplantı yapılmasına karar verebilir.",
+      "articleRefs": [
+        "54"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Genel Kurulda oturumun uzatılmasına kim karar verebilir?",
+      "back": "Genel Kurul. Bu karar zorunlu hallerde, yalnız o birleşim için ve sona ermek üzere olan işlerin tamamlanması amacıyla verilebilir.",
+      "explanation": "Oturumu Başkan açar ve gerekirse kapatır. Oturum devam ettiği sürece Başkanlık makamı ve Kâtip Üyelikler boş kalamaz.",
+      "articleRefs": [
+        "55"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Olağanüstü acele hallerde Başkanın takdiriyle gündem dışı söz en çok kaç kişiye verilebilir?",
+      "back": "En çok üç kişiye. Her konuşma beşer dakikayı geçemez.",
+      "explanation": "Cumhurbaşkanı, Cumhurbaşkanı yardımcıları ve bakanlar olağanüstü acele hallerde gündem dışı söz isterse Başkan bu istemi yerine getirir. Bu açıklamadan sonra siyasî parti grupları birer defa ve onar dakikayı aşmamak üzere konuşabilir. Grubu bulunmayan milletvekillerinden birine de beş dakikayı geçmemek üzere söz verilir.",
+      "articleRefs": [
+        "59"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "İçtüzükte başka bir süre belirtilmemişse üyelerin Genel Kuruldaki konuşmaları kaç dakikayla sınırlıdır?",
+      "back": "On dakika. Siyasi parti grupları ve komisyon adına yapılan konuşmalar ise yirmi dakikadır.",
+      "explanation": "Danışma Kurulunun teklifiyle Genel Kurul aksini kararlaştırabilir. İkinci defa yapılan konuşmalarda süre bunun yarısı kadardır.",
+      "articleRefs": [
+        "60"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Genel Kurulda söz almada ilk öncelik kime aittir?",
+      "back": "Esas komisyona. İkinci öncelik siyasi parti gruplarınındır.",
+      "explanation": "Siyasi parti gruplarına istem sırasına göre söz verilir. Grup sözcüleri yetki belgelerini Başkanlığa vermek zorundadır. Son söz milletvekilinindir.",
+      "articleRefs": [
+        "61"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Bütçe sunuş konuşmasını Yürütme adına kim yapar?",
+      "back": "Cumhurbaşkanı yardımcısı veya bir bakan.",
+      "explanation": "Bütçe ve kesinhesap kanun tekliflerinin görüşüldüğü Genel Kurul oturumlarına Yürütme adına Cumhurbaşkanı yardımcıları ve bakanlar katılabilir ve görüş bildirebilir.",
+      "articleRefs": [
+        "62"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Genel Kurula başkanlık eden Başkan veya Başkanvekili, asıl konu görüşülürken görüşünü açıklayabilir mi?",
+      "back": "Hayır. Asıl konu görüşülürken ve oylanırken hiçbir surette görüşünü açıklayamaz.",
+      "articleRefs": [
+        "64"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Başkanın davetlerine rağmen konuya gelmeyen milletvekilinin o birleşimde aynı konuda konuşmaktan menedilmesine kim karar verir?",
+      "back": "Genel Kurul. Başkanın teklifi üzerine görüşmesiz işaret oyuyla karar verir.",
+      "explanation": "Kürsüdeki üyenin sözünü yalnız Başkan kesebilir. Bunun amacı, üyeyi İçtüzüğe uymaya ve konudan ayrılmamaya davet etmektir. Menetme teklifi için iki defa yapılmış davete rağmen konuya gelinmemiş olması gerekir.",
+      "articleRefs": [
+        "66"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Ara verilen oturum yeniden açıldığında gürültü veya kavgaya son verilemiyorsa Başkan ne yapar?",
+      "back": "Birleşimi kapatır.",
+      "explanation": "Başkan önce kürsüde ayağa kalkar ve toplantıya ara vereceğini ihtar eder. Gürültü ve kavga buna rağmen sürerse oturuma en çok bir saat ara verir.",
+      "articleRefs": [
+        "68"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Genel Kurulun kapalı oturum yapması kaç milletvekilinin yazılı istemi üzerine mümkündür?",
+      "back": "Yirmi milletvekilinin yazılı istemi üzerine. Bir siyasi parti grubunun yazılı istemi de yeterlidir.",
+      "explanation": "Önerge verilince kapalı oturumda bulunabilecek şahıslar dışında herkes salondan çıkarılır. Ardından önergenin gerekçesi dinlenir ve Genel Kurul işaret oyuyla karar verir. Kapalı oturumdaki görüşmeler Devlet sırrı olarak saklanır.",
+      "articleRefs": [
+        "70"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Kapalı oturum tutanakları ve özetleri, kapalı oturum tarihinden itibaren ne kadar süre geçtikten sonra yayımlanabilir?",
+      "back": "On yıl geçtikten sonra.",
+      "explanation": "Tutanak, özetle birlikte bir zarfa konur. Hazır bulunan Kâtip Üyeler zarfı hemen mumla mühürler ve tutanak Meclis arşivine verilir.",
+      "articleRefs": [
+        "71"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Kapalı oturum tutanakları, on yıllık süre dolmadan yayımlanabilir mi?",
+      "back": "Evet. Genel Kurul, Danışma Kurulunun teklifi üzerine işaret oyuyla daha önce yayımlanmasına karar verebilir; aynı yolla daha sonra yayımlanmasına da karar verilebilir.",
+      "explanation": "Süre kapalı oturum tarihinden itibaren işler. Bu süre dolmadan yayım ancak Genel Kurul kararıyla mümkündür.",
+      "articleRefs": [
+        "71"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Şartlarına uymayan kanun tekliflerini sahiplerine tamamlatmaya kim yetkilidir?",
+      "back": "Komisyonlar.",
+      "explanation": "Kanun teklifleri gerekçesiyle birlikte Başkanlığa verilir. Başkanlık bunları komisyonlara doğrudan doğruya havale eder. Milletvekillerince verilen tekliflerde bir veya daha çok imza bulunabilir.",
+      "articleRefs": [
+        "74"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Gündeme alınmış bir kanun teklifi geri alınabilir mi?",
+      "back": "Evet. Ancak gündeme alınmış teklifin geri alınması için Genel Kurulun karar vermesi gerekir.",
+      "explanation": "Gündeme alınmadan önce teklif sahibi, Genel Kurula bilgi verilmek şartıyla teklifini geri alabilir. Bu durumda teklifi diğer bir üye veya esas komisyon üzerine alırsa görüşmeye devam olunur.",
+      "articleRefs": [
+        "75"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Türkiye Büyük Millet Meclisince reddedilen bir kanun teklifi, ret tarihinden itibaren ne kadar süre geçmedikçe aynı yasama döneminde yeniden verilemez?",
+      "back": "Bir tam yıl.",
+      "explanation": "Süre ret tarihinden itibaren işler. Yasak, Türkiye Büyük Millet Meclisinin aynı yasama dönemiyle sınırlıdır.",
+      "articleRefs": [
+        "76"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Reddedilen bir kanun teklifi, ret tarihinden bir tam yıl geçmeden yeni yasama döneminde yeniden verilebilir mi?",
+      "back": "Evet. Bir tam yıl yasağı yalnız Türkiye Büyük Millet Meclisinin aynı yasama dönemi içinde uygulanır.",
+      "explanation": "Yasak, teklifin Türkiye Büyük Millet Meclisi tarafından reddedilmiş olmasına bağlıdır. Süre ret tarihinden itibaren hesaplanır.",
+      "articleRefs": [
+        "76"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Bir yasama döneminde sonuçlandırılamamış kanun tekliflerinin durumu nedir?",
+      "back": "Hükümsüz sayılır. Ancak Türkiye Büyük Millet Meclisi üyeleri bu teklifleri yenileyebilir.",
+      "explanation": "Yenilenen teklifin tümü üzerindeki görüşmelerden sonra komisyon, önceki dönemlere ait rapor ve metinleri açıkça belirtmek kaydıyla benimseyebilir. Yasama dönemi başında, önceki dönemde verilmiş yazılı soru, Meclis araştırması ve genel görüşme önergeleri de hükümsüz sayılır.",
+      "articleRefs": [
+        "77"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Maddelerine geçilmesi Genel Kurulca kabul edilmeyen kanun teklifinin sonucu nedir?",
+      "back": "Genel Kurulca reddedilmiş olur. Tümü kabul edilmeyen teklif de reddedilmiş olur.",
+      "explanation": "Görüşme şu sırayla yürür: önce teklifin tümü hakkında görüşme açılır ve komisyonla soru-cevap yapılır. Sonra maddelere geçilmesi oylanır ve maddeler görüşülür. En son teklifin tümü oylanır.",
+      "articleRefs": [
+        "81"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Kanun teklifinin tümünün görüşülmesinden sonra komisyonla soru ve cevap işlemi ne kadar sürer?",
+      "back": "Yirmi dakika. Maddeler üzerinde bu süre on dakikadır.",
+      "explanation": "Aksi Danışma Kurulunun teklifiyle Genel Kurulca kararlaştırılmamışsa, tümü hakkında siyasî parti grupları ve komisyon adına konuşmalar yirmişer, üyelerin konuşmaları onar dakikadır. Maddeler hakkındaki konuşma süreleri bunun yarısı kadardır.",
+      "articleRefs": [
+        "81"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Bir maddenin Anayasa'ya aykırı olduğu gerekçesiyle reddini isteyen önergeler Genel Kurulda ne zaman oylanır?",
+      "back": "Diğer önergelerden önce oylanır.",
+      "explanation": "Kural, bir kanun teklifinin Genel Kuruldaki görüşmesi sırasında teklifin belli bir maddesi hakkında verilen önergeler için geçerlidir.",
+      "articleRefs": [
+        "84"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Temel kanun usulü dışında, milletvekilleri bir kanun teklifinin her maddesi için Anayasaya aykırılık önergeleri dahil kaç önerge verebilir?",
+      "back": "Yedi önerge. Her siyasi parti grubuna mensup milletvekillerinin birer önerge verme hakkı saklıdır.",
+      "explanation": "Bir grubun mensupları bu hakkı kullanmazsa, hak diğer siyasi parti grubuna mensup olanlarca ve bağımsız sayılan milletvekillerince kullanılabilir. Temel kanunlarda madde üzerinde iki önerge verilebilir.",
+      "articleRefs": [
+        "87",
+        "91"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Anayasa değişikliği görüşmelerinde esas komisyon, tümün oylanmasından önce bir maddenin yeniden görüşülmesini isteyebilir mi?",
+      "back": "Hayır. Yeniden görüşme hükmü Anayasa değişikliği görüşmelerinde uygulanmaz.",
+      "explanation": "Diğer tekliflerde esas komisyon, belli bir maddenin yeniden görüşülmesini gerekçeli bir önergeyle bir defaya mahsus isteyebilir. Genel Kurul bu istemi Danışma Kurulunun görüşünü aldıktan sonra görüşmesiz ve işaret oyuyla karara bağlar.",
+      "articleRefs": [
+        "89"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Temel kanunlar Genel Kurulda bölümler halinde görüşülürken her bölüm en çok kaç maddeden oluşabilir?",
+      "back": "Otuz maddeyi geçemez. Bölümlerin hangi maddelerden oluşacağına Genel Kurul karar verir.",
+      "explanation": "Genel Kurul bu kararı esas komisyonun veya grupların teklifi ve Danışma Kurulunun oybirliği ile önerisi üzerine verir. Oybirliği sağlanamazsa siyasi parti gruplarının önerisi üzerine de karar verebilir. Bölümler maddeler okunmaksızın görüşülür, bölümdeki maddeler ise ayrı ayrı oylanır.",
+      "articleRefs": [
+        "91"
+      ]
+    }
+  ]
+}

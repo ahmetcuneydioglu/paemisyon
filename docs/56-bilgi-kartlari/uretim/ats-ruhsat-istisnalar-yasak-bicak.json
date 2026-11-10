@@ -1,0 +1,272 @@
+{
+  "deck": {
+    "topicId": "c030675a-0fc7-434a-9d39-980eb0456196",
+    "legislationSlug": "6136-sayili-atesli-silahlar-ve-bicaklar-hakkinda-kanun",
+    "sourceLabel": "AI bilgi kartı — 6136 Sayılı Ateşli Silahlar ve Bıçaklar Hakkında Kanun md 7–10",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: resmî madde metni + çıkmış sorular)"
+  },
+  "cards": [
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "6136 sayılı Kanunun 7. maddesinde sayılan kişiler ateşli silahı taşımanın dışında nerede bulundurabilir?",
+      "back": "Mesken ya da işyerinde. Bu kişiler ateşli silah taşıyabilir veya mesken ya da işyerinde bulundurabilir.",
+      "explanation": "Maddenin birinci fıkrası, sayılan kişilerin ateşli silahları taşıyabileceğini veya mesken ya da işyerinde bulundurabileceğini söyler. Özel kanunlarına göre silah taşıma yetkisine sahip bulunanlar da bu kişilerdendir.",
+      "articleRefs": [
+        "7"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Kamu iktisadi teşebbüsü memurlarının, mensup oldukları kurum sıfatıyla md 7/1-3 kapsamında silah taşıyabileceklerine valiler mi karar verir?",
+      "back": "Hayır. Devlet, belediye, özel idare ve kamu iktisadi teşebbüsleri memur ve mensuplarının silah taşıyabileceğine Cumhurbaşkanı kararıyla karar verilir.",
+      "explanation": "Valilerin bu maddedeki rolü farklıdır: Cumhurbaşkanınca çıkarılan yönetmelikte belirlenecek esaslara göre izin vesikası verirler.",
+      "articleRefs": [
+        "7"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Valiler tarafından verilecek silah izin vesikasının esasları hangi düzenlemede belirlenir?",
+      "back": "Cumhurbaşkanınca çıkarılan yönetmelikte. Valiler izin vesikasını bu yönetmelikte belirlenecek esaslara göre verir.",
+      "explanation": "İzin vesikasını alan kişi ateşli silah taşıyabilir veya mesken ya da işyerinde bulundurabilir.",
+      "articleRefs": [
+        "7"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Lüzum görülen mıntakalarda halka silah bulundurma ve taşıma müsaadesini kim verebilir?",
+      "back": "Valiler; Cumhurbaşkanı kararıyla.",
+      "explanation": "Müsaade lüzum görülen mıntakalar için söz konusudur ve Cumhurbaşkanı kararına dayanır; kararı uygulayan makam validir.",
+      "articleRefs": [
+        "8"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "İç güvenlik ve asayiş hizmetlerinin sebep ve etkileriyle vefat edenden intikal eden silah yoksa, ana, baba, eş ve çocuklarından kaçının silah belgesi harçtan muaf olur?",
+      "back": "Sadece birinin; o da bir ateşli silahla sınırlı olmak kaydıyla. Silah taşımasına veya bulundurmasına yetki veren kayıt ve belgeler her türlü vergi, resim ve harçtan muaftır.",
+      "explanation": "Kapsama şehit, er, erbaş ve malûl gaziler de dahildir. Vefat; barışta veya olağanüstü hallerde faaliyet, eğitim, tatbikat ve manevralar ile birlik veya grup halinde intikaller sırasında bu hizmetlerin sebep ve etkileriyle gerçekleşmiş olmalıdır.",
+      "articleRefs": [
+        "7"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Kanun hükümlerine göre armağan edilen silahlar için kişilere verilen bulundurma veya taşıma izni belgeleri vergi, resim ve harç bakımından nasıl değerlendirilir?",
+      "back": "Her türlü vergi, resim ve harçtan muaftır.",
+      "explanation": "Muafiyet, armağan edilen silahlar için kişilere bulundurma veya taşıma izni veren kayıt ve belgelerin tamamını kapsar.",
+      "articleRefs": [
+        "7"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Silah taşımaya yetki veren kimlik kartları ile belgelerin düzenlenmesi, yenilenmesi ya da geri alınmasına ilişkin yönetmeliği hangi bakanlıklar hazırlar?",
+      "back": "Milli Savunma Bakanlığı ve İçişleri Bakanlığı; yönetmeliği müştereken hazırlarlar.",
+      "articleRefs": [
+        "7"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Ateşli silah taşıma müsaadesi olan kişi silahını kime satabilir?",
+      "back": "Yalnız resmi ruhsatı haiz bulunanlara; bunlardan başkasına satamaz.",
+      "articleRefs": [
+        "9"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Ateşli silah taşıma müsaadesi olan kişi silahını muvakkaten (geçici olarak) bir arkadaşına verebilir mi?",
+      "back": "Hayır. Ateşli silah taşıma müsaadesi olan kişi, silahını muvakkaten de olsa başkalarına veremez.",
+      "explanation": "Satışta da sınır vardır: silah ancak resmi ruhsatı haiz bulunanlara satılabilir.",
+      "articleRefs": [
+        "9"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Ruhsat sahibinin ruhsatlı silahıyla bağlantılı hangi hallerde silah vesikası geri alınır ve bir daha izin verilmez?",
+      "back": "Bu silahla suç işlemesi, silahın muhafazasındaki ihmal ve kusur neticesi başkalarınca suç işlenmesi ya da intihar ve intihara teşebbüs edilmesi hallerinde.",
+      "explanation": "Bu hallerde silah vesikası da geri alınır.",
+      "articleRefs": [
+        "9"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Hangi suçlardan mahkûm olanlara, affa uğramış olsalar bile ateşli silah taşıma ve bulundurma izni verilemez?",
+      "back": "Türk Ceza Kanununun İkinci Kitap Dördüncü Kısım Dördüncü, Beşinci, Altıncı ve Yedinci Bölümünde tanımlanan suçlar ile Terörle Mücadele Kanunu kapsamına giren suçlar.",
+      "explanation": "Bu suçlarda af izin yasağını kaldırmaz. Ateşli silahla işlenen suçlardan ya da taksirli olmayan suçtan bir yıldan fazla hapis cezasıyla hükümlü olanlarda ise infazın tamamlanmasından itibaren beş yıl geçmesi ve yasaklanmış hakların geri verilmesi kararı aranır.",
+      "articleRefs": [
+        "7"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Taksirli olmayan bir suçtan bir yıldan fazla hapis cezasına mahkûm olan kişiye, kaç yıl geçmedikçe ateşli silah taşıma ve bulundurma izni verilemez?",
+      "back": "Beş yıl; süre mahkûm olunan cezanın infazının tamamlandığı tarihten itibaren işler. Ayrıca yasaklanmış hakların geri verilmesine ilişkin karar da gerekir.",
+      "articleRefs": [
+        "7"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Ateşli silahla işlenmemiş, taksirli olmayan bir suçta, beş yıllık bekleme kuralına girmek için hapis cezası ne kadar olmalıdır?",
+      "back": "Bir yıldan fazla.",
+      "articleRefs": [
+        "7"
+      ],
+      "explanation": "Ateşli silahla işlenen suçlardan hükümlü olanlarda ceza süresi şartı aranmaz."
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Silahı ikinci kez çalınan ya da silahını ikinci kez kaybeden kişiye, yeni silah müracaatında kaç silah için izin verilebilir?",
+      "back": "Tek bir silah için taşıma veya bulundurma izni verilebilir.",
+      "articleRefs": [
+        "9"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "İkinci kez silahını kaybettiği için yalnız tek silah izni alan kişi o silahı devrederse ne olur?",
+      "back": "Yeniden taşıma veya bulundurma izni verilebilir.",
+      "articleRefs": [
+        "9"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Ateşli silahla işlenmemiş taksirli bir suçtan bir yıldan fazla hapis cezasına mahkûm olan kişi, infazdan sonraki beş yıllık bekleme kuralına tabi midir?",
+      "back": "Hayır. Bu kural taksirli suçlar hariç olmak üzere bir yıldan fazla hapis cezasına mahkûm olanlar için konmuştur.",
+      "explanation": "Kural, ateşli silahla işlenen suçlardan hükümlü bulunanları da kapsar; süre cezanın infazının tamamlandığı tarihten itibaren işler ve yasaklanmış hakların geri verilmesi kararı da aranır.",
+      "articleRefs": [
+        "7"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Cezanın infazının tamamlanmasından beş yıl geçmesi, ateşli silah izni için tek başına yeterli midir?",
+      "back": "Hayır. Beş yılın geçmesi yanında, hakkında yasaklanmış hakların geri verilmesine ilişkin karar verilmiş olması da gerekir.",
+      "articleRefs": [
+        "7"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "6284 sayılı Ailenin Korunması ve Kadına Karşı Şiddetin Önlenmesine Dair Kanun kapsamında hakkında tedbir kararı verilen kişinin ruhsatlı silahlarına ne olur?",
+      "back": "Tedbir kararı kalkıncaya kadar genel kolluk kuvvetleri tarafından muhafaza altına alınır.",
+      "explanation": "Tedbir kararı süresince bu kişiye ateşli silah taşıma ve bulundurma izni verilmez; varsa ruhsat verilmesine ve yenilemesine ilişkin işlemler bekletilir.",
+      "articleRefs": [
+        "7"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Mahkemelerce zoralımına karar verilen ateşli silahlar, mermiler ve bıçaklar kimin emrine verilir?",
+      "back": "Milli Savunma Bakanlığının emrine; bir tutanak karşılığı.",
+      "articleRefs": [
+        "10"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Milli Savunma Bakanlığı emrine verilecek silahlar yalnız mahkemelerce zoralımına karar verilenler midir?",
+      "back": "Hayır. Güvenlik kuvvetlerince herhangi bir şekilde ele geçirilen ateşli silahlar, mermiler ve bıçaklar da tutanak karşılığı Milli Savunma Bakanlığı emrine verilir.",
+      "articleRefs": [
+        "10"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Milli Savunma Bakanlığı emrine verilen silahlardan tabanca niteliğinde olanları satın almada hangi polisler öncelik hakkına sahiptir?",
+      "back": "Emniyet Genel Müdürlüğünce zati silah edinmelerine izin verilen polisler.",
+      "articleRefs": [
+        "10"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Silahı ikinci kez çalınan kişinin, kayıp ya da çalıntı olmayan diğer silahlarına ait ruhsat yenilemesi tek silah sınırına girer mi?",
+      "back": "Hayır. Kayıp veya çalıntı olmayan silahlara ait ruhsatların yenilenmesi bu kapsamda değerlendirilmez; tek silah sınırı yeni silah müracaatları içindir.",
+      "articleRefs": [
+        "9"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Silahı kaçıncı kez çalınan ya da silahını kaçıncı kez kaybeden kişinin silah vesikası geri alınır?",
+      "back": "Üçüncü kez çalınma ya da kaybetmede silah vesikası geri alınır.",
+      "explanation": "İkinci kez çalınma ya da kaybetmede ise yeni silah müracaatlarında tek bir silah için taşıma veya bulundurma izni verilebilir.",
+      "articleRefs": [
+        "9"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Silahı üçüncü kez çalınan kişiye kaç yıl geçmedikçe silah bulundurma ve taşıma izni verilmez?",
+      "back": "Beş yıl; süre fiil tarihinden itibaren işler. Bu süreden sonra yeni müracaatta tek bir silah için izin verilebilir.",
+      "articleRefs": [
+        "9"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Zati silah edinme izni olan polislerin öncelikli satın alma hakkı hangi nitelikteki silahları kapsar?",
+      "back": "Tabanca niteliğinde olanları.",
+      "articleRefs": [
+        "10"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Öncelik hakkına sahip polis, Milli Savunma Bakanlığı emrindeki tabanca niteliğindeki silahı hangi bedelle satın alır?",
+      "back": "Takdir olunan bedelin yarısı bir bedelle.",
+      "articleRefs": [
+        "10"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Emniyet Genel Müdürlüğünce zati silah edinmesine izin verilen polis, tabanca niteliğindeki bu silahlardan kaç adet satın almada önceliklidir?",
+      "back": "Bir adet olarak satın almada öncelik hakkına sahiptir.",
+      "articleRefs": [
+        "10"
+      ]
+    }
+  ]
+}

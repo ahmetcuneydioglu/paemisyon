@@ -1,0 +1,283 @@
+{
+  "deck": {
+    "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+    "legislationSlug": "t-c-anayasasi",
+    "sourceLabel": "AI bilgi kartı — T.C. Anayasası md Başlangıç, 43, 44, 49, 63, 64, 136, 171–173",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: resmî madde metni + çıkmış sorular; 1 açıklama düşürüldü)"
+  },
+  "cards": [
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Başlangıç'a göre Anayasa hangi milliyetçilik anlayışı doğrultusundadır?",
+      "back": "Atatürk'ün belirlediği milliyetçilik anlayışı ve onun inkılap ve ilkeleri doğrultusundadır.",
+      "explanation": "Başlangıç, Atatürk'ü Türkiye Cumhuriyetinin kurucusu, ölümsüz önder ve eşsiz kahraman olarak anar. Anayasa, Türk Vatanı ve Milletinin ebedi varlığını ve Yüce Türk Devletinin bölünmez bütünlüğünü belirler.",
+      "articleRefs": [
+        "Başlangıç"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Başlangıç'ta Türkiye Cumhuriyeti dünya milletleri ailesinin nasıl bir üyesi olarak anılır?",
+      "back": "Eşit haklara sahip şerefli bir üyesi olarak anılır.",
+      "explanation": "Bu nitelik, Türkiye Cumhuriyetinin ebedi varlığı, refahı, maddi ve manevi mutluluğu ile çağdaş medeniyet düzeyine ulaşma azmiyle birlikte geçer.",
+      "articleRefs": [
+        "Başlangıç"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Kıyılar kimin hüküm ve tasarrufu altındadır?",
+      "back": "Devletin hüküm ve tasarrufu altındadır.",
+      "articleRefs": [
+        "43"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Egemenliği millet adına kullanmaya yetkili kılınan bir kuruluş, Anayasada gösterilen hürriyetçi demokrasi düzeninin dışına çıkabilir mi?",
+      "back": "Hayır. Hiçbir kişi ve kuruluş, hürriyetçi demokrasi ve bunun icaplarıyla belirlenmiş hukuk düzeni dışına çıkamaz.",
+      "explanation": "Başlangıç bu kaydı, millet iradesinin mutlak üstünlüğü ve egemenliğin kayıtsız şartsız Türk Milletine ait olduğu ilkesiyle aynı paragrafta yazar.",
+      "articleRefs": [
+        "Başlangıç"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Başlangıç'a göre kuvvetler ayrımı Devlet organları arasında bir üstünlük sıralaması mıdır?",
+      "back": "Hayır. Kuvvetler ayrımı üstünlük sıralaması anlamına gelmez; medeni bir işbölümü ve işbirliğidir.",
+      "explanation": "Bu işbölümü, belli Devlet yetki ve görevlerinin kullanılmasından ibaret ve bununla sınırlıdır.",
+      "articleRefs": [
+        "Başlangıç"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Başlangıç'a göre üstünlük Devlet organlarında mı bulunur?",
+      "back": "Hayır. Üstünlük ancak Anayasa ve kanunlarda bulunur.",
+      "explanation": "Bu ifade, kuvvetler ayrımının Devlet organları arasında üstünlük sıralaması anlamına gelmediğini söyleyen cümlenin devamıdır.",
+      "articleRefs": [
+        "Başlangıç"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Deniz, göl ve akarsu kıyılarından ve sahil şeritlerinden yararlanmada öncelikle ne gözetilir?",
+      "back": "Kamu yararı gözetilir.",
+      "explanation": "Kişilerin bu yerlerden yararlanma imkân ve şartları kanunla düzenlenir.",
+      "articleRefs": [
+        "43"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Başlangıç'a göre hiçbir faaliyet hangi değerlerin karşısında korunma göremez?",
+      "back": "Türk milli menfaatleri, Türk varlığı, Devleti ve ülkesiyle bölünmezliği esası, Türklüğün tarihi ve manevi değerleri, Atatürk milliyetçiliği, ilke ve inkılapları ve medeniyetçiliği.",
+      "explanation": "Başlangıç burada 'hiçbir faaliyetin' ifadesini kullanır; aynı cümle laiklik ilkesinin gereğine de yer verir.",
+      "articleRefs": [
+        "Başlangıç"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Başlangıç'a göre laiklik ilkesinin gereği olarak kutsal din duyguları nereye karıştırılamaz?",
+      "back": "Devlet işlerine ve politikaya kesinlikle karıştırılamaz.",
+      "explanation": "Bu hüküm, Başlangıç'ta laiklik ilkesinin gereği olarak açıkça yer alır.",
+      "articleRefs": [
+        "Başlangıç"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Başlangıç'a göre her Türk vatandaşı temel hak ve hürriyetlerden yalnız eşitlik gereğince mi yararlanır?",
+      "back": "Hayır. Eşitlik ve sosyal adalet gereklerince yararlanır.",
+      "explanation": "Bu yararlanma, milli kültür, medeniyet ve hukuk düzeni içinde onurlu bir hayat sürdürme ve maddi ve manevi varlığını geliştirme hak ve yetkisine bağlanır; Başlangıç bu hak ve yetkiye doğuştan sahip olunduğunu belirtir.",
+      "articleRefs": [
+        "Başlangıç"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Kıyılarla sahil şeritlerinin derinliği neye göre düzenlenir?",
+      "back": "Kullanılış amaçlarına göre düzenlenir; bu derinlik kanunla belirlenir.",
+      "explanation": "Aynı kanun, kişilerin bu yerlerden yararlanma imkân ve şartlarını da düzenler.",
+      "articleRefs": [
+        "43"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Anayasaya göre sahil şeritleri akarsu kıyılarını da çevreler mi?",
+      "back": "Hayır. Maddede sahil şeritleri deniz ve göllerin kıyılarını çevreler; akarsu yalnız kıyı olarak anılır.",
+      "explanation": "Yararlanmada öncelikle kamu yararı gözetilen yerler: deniz, göl ve akarsu kıyıları ile deniz ve göllerin kıyılarını çevreleyen sahil şeritleri.",
+      "articleRefs": [
+        "43"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Başlangıç'ta Türk vatandaşlarının huzurlu bir hayat talebi hangi arzu ve inanç içinde dile getirilir?",
+      "back": "\"Yurtta sulh, cihanda sulh\" arzu ve inancı içinde.",
+      "explanation": "Başlangıç, Türk vatandaşlarının birbirinin hak ve hürriyetlerine kesin saygı, karşılıklı içten sevgi ve kardeşlik duygularıyla huzurlu bir hayat talebine hakları bulunduğunu açıkça yazar.",
+      "articleRefs": [
+        "Başlangıç"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Devlet toprak mülkiyeti konusunda hangi amaçlarla gerekli tedbirleri alır?",
+      "back": "Toprağın verimli işletilmesini korumak ve geliştirmek, erozyonla kaybedilmesini önlemek ve topraksız ya da yeter toprağı bulunmayan çiftçilikle uğraşan köylüye toprak sağlamak için.",
+      "explanation": "Kanun bu amaçla değişik tarım bölgeleri ve çeşitlerine göre toprağın genişliğini tespit edebilir.",
+      "articleRefs": [
+        "44"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Topraksız ya da yeter toprağı bulunmayan çiftçiye toprak sağlanması hangi sonuçları doğuramaz?",
+      "back": "Üretimin düşürülmesi, ormanların küçülmesi ve diğer toprak ve yeraltı servetlerinin azalması sonucunu doğuramaz.",
+      "articleRefs": [
+        "44"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Toprak sağlama amacıyla dağıtılan bir toprak miras yoluyla geçebilir mi?",
+      "back": "Evet. Miras hükümleri dışında başkalarına devredilemez; ayrıca bölünemez ve ancak dağıtılan çiftçilerle mirasçıları tarafından işletilebilir.",
+      "explanation": "Bu şartların kaybı halinde dağıtılan toprağın Devletçe geri alınmasına ilişkin esaslar kanunla düzenlenir.",
+      "articleRefs": [
+        "44"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "trap",
+      "difficulty": 1,
+      "front": "Anayasaya göre çalışma herkes için yalnız bir hak mıdır?",
+      "back": "Hayır. Çalışma herkesin hakkı ve ödevidir.",
+      "explanation": "Maddenin başlığı da 'Çalışma hakkı ve ödevi'dir.",
+      "articleRefs": [
+        "49"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Devlet, çalışanların hayat seviyesini yükseltmek ve çalışma hayatını geliştirmek için kimleri korur?",
+      "back": "Çalışanları ve işsizleri korur.",
+      "explanation": "Devlet bu amaçla çalışmayı da destekler ve çalışma barışını sağlamak için gerekli tedbirleri alır.",
+      "articleRefs": [
+        "49"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Devlet, işsizliği önlemek için nasıl bir ortam yaratır?",
+      "back": "İşsizliği önlemeye elverişli ekonomik bir ortam yaratır.",
+      "explanation": "Bu, Devletin çalışma hayatını geliştirmek için aldığı gerekli tedbirler arasındadır.",
+      "articleRefs": [
+        "49"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Devlet, tarih, kültür ve tabiat varlıklarının korunması amacıyla hangi nitelikte tedbirler alır?",
+      "back": "Destekleyici ve teşvik edici tedbirler alır; bu varlık ve değerlerin korunmasını Devlet sağlar.",
+      "articleRefs": [
+        "63"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Özel mülkiyet konusu tarih, kültür ve tabiat varlıklarına getirilen sınırlamalar nedeniyle hak sahiplerine ne sağlanır?",
+      "back": "Yardımlar yapılır ve muafiyetler tanınır; sınırlamalar, yardımlar ve muafiyetler kanunla düzenlenir.",
+      "explanation": "Bu düzenleme, bu varlıklar ve değerlerden özel mülkiyet konusu olanlar için geçerlidir.",
+      "articleRefs": [
+        "63"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Devlet sanat alanında hangi amaçlar için gereken tedbirleri alır?",
+      "back": "Sanat eserlerinin ve sanatçının korunması, değerlendirilmesi, desteklenmesi ve sanat sevgisinin yayılması için.",
+      "explanation": "Maddenin ilk cümlesine göre Devlet sanat faaliyetlerini ve sanatçıyı korur.",
+      "articleRefs": [
+        "64"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Diyanet İşleri Başkanlığı genel idare dışında yer alan bir kuruluş mudur?",
+      "back": "Hayır. Diyanet İşleri Başkanlığı genel idare içinde yer alır.",
+      "explanation": "Görevleri özel kanununda gösterilir.",
+      "articleRefs": [
+        "136"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Diyanet İşleri Başkanlığı görevlerini yerine getirirken neyi amaç edinir?",
+      "back": "Milletçe dayanışma ve bütünleşmeyi amaç edinir.",
+      "articleRefs": [
+        "136"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Devlet, öncelikle hangi amaçları güden kooperatifçiliğin gelişmesini sağlayacak tedbirleri alır?",
+      "back": "Üretimin artırılmasını ve tüketicinin korunmasını öncelikle amaçlayan kooperatifçiliğin.",
+      "explanation": "Devlet bu tedbirleri milli ekonominin yararlarını dikkate alarak alır.",
+      "articleRefs": [
+        "171"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Devlet tüketicilere yönelik hangi nitelikte tedbirler alır?",
+      "back": "Koruyucu ve aydınlatıcı tedbirler alır.",
+      "explanation": "Devlet ayrıca tüketicilerin kendilerini koruyucu girişimlerini teşvik eder.",
+      "articleRefs": [
+        "172"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Devlet esnaf ve sanatkar için hangi nitelikte tedbirler alır?",
+      "back": "Koruyucu ve destekleyici tedbirler alır.",
+      "articleRefs": [
+        "173"
+      ]
+    }
+  ]
+}

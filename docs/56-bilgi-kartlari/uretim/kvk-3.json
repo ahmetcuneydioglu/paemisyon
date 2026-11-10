@@ -1,0 +1,208 @@
+{
+  "deck": {
+    "topicId": "efcd80f1-04c1-42b1-90bc-2d6f22df40c2",
+    "legislationSlug": "6698-sayili-kisisel-verilerin-korunmasi-kanunu",
+    "sourceLabel": "AI bilgi kartı — 6698 Sayılı Kişisel Verilerin Korunması Kanunu md 23–33",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: resmî madde metni + çıkmış sorular)"
+  },
+  "cards": [
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Kişisel Verileri Koruma Kurulu, başkan dâhil en az kaç üyeyle toplanır?",
+      "back": "En az altı üyeyle toplanır; Başkan da bu sayıya dâhildir.",
+      "explanation": "Kararlar üye tam sayısının salt çoğunluğuyla alınır ve üyeler çekimser oy kullanamaz. Toplantı günlerini ve gündemi Başkan belirler; gereken hâllerde Kurulu olağanüstü toplantıya da çağırabilir.",
+      "articleRefs": [
+        "23"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Kişisel Verileri Koruma Kurulu üyesi, hangi dereceye kadar kan hısımlarını ilgilendiren konulardaki toplantı ve oylamaya katılamaz?",
+      "back": "Üçüncü dereceye kadar kan hısımlarını ilgilendiren konularda katılamaz; kayın hısımlarında sınır ikinci derecedir.",
+      "explanation": "Üye ayrıca kendisini, evlatlıklarını ve aralarındaki evlilik bağı kalkmış olsa bile eşlerini ilgilendiren konulardaki toplantı ve oylamaya da katılamaz.",
+      "articleRefs": [
+        "23"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Kişisel Verileri Koruma Kurulu üyelerinin görev sırasında öğrendikleri sırları saklama yükümlülüğü, görevden ayrılınca sona erer mi?",
+      "back": "Hayır; bu yükümlülük görevden ayrılmalarından sonra da devam eder. Sırlar yalnız kanunen yetkili kılınan mercilere açıklanabilir ve kendi yararlarına kullanılamaz.",
+      "explanation": "Yükümlülük, çalışmalar sırasında ilgililere ve üçüncü kişilere ait öğrenilen sırları kapsar. Kurulda görüşülen işler tutanağa bağlanır; kararlar ve varsa karşı oy gerekçeleri karar tarihinden itibaren en geç on beş gün içinde yazılır. Aksi kararlaştırılmadıkça Kurul toplantılarındaki görüşmeler gizlidir.",
+      "articleRefs": [
+        "23"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Kişisel Verileri Koruma Kurulu kararlarının tebliğini sağlamak ve uygulanmalarını izlemek kimin görevidir?",
+      "back": "Kurum Başkanının; Kurulca gerekli görülen kararların kamuoyuna duyurulmasını da Başkan sağlar.",
+      "explanation": "Başkan, Kurul ve Kurumun başkanı sıfatıyla Kurumun en üst amiridir. Kurul toplantılarını idare etmek ile Başkan Yardımcısını, daire başkanlarını ve Kurum personelini atamak da görevleri arasındadır.",
+      "articleRefs": [
+        "24"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Kişisel Verileri Koruma Kurumu Başkanının yokluğunda Başkana, Başkan Yardımcısı mı vekâlet eder?",
+      "back": "Hayır; Kurum Başkanının yokluğunda Başkana İkinci Başkan vekâlet eder. Başkan Yardımcısı, Başkanın atadığı görevlidir.",
+      "explanation": "Başkan Yardımcısını, daire başkanlarını ve Kurum personelini atamak Başkanın görevleri arasında sayılır.",
+      "articleRefs": [
+        "24"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Kişisel Verileri Koruma Kurumu Başkanının genel yönetim ve temsil sorumluluğu hangi görev ve yetkileri kapsar?",
+      "back": "Kurum çalışmalarının düzenlenmesi, yürütülmesi, denetlenmesi, değerlendirilmesi ve gerektiğinde kamuoyuna duyurulması görev ve yetkilerini kapsar.",
+      "explanation": "Başkan, Kurum hizmetlerini mevzuata, Kurumun amaç ve politikalarına, stratejik planına, performans ölçütlerine ve hizmet kalite standartlarına uygun olarak düzenler, yürütür ve hizmet birimleri arasında koordinasyonu sağlar.",
+      "articleRefs": [
+        "24"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Kişisel Verileri Koruma Kurumu Başkanlığında daire başkanlıklarının sayısı en fazla kaç olabilir?",
+      "back": "Yedi; daire başkanlıklarının sayısı yediyi geçemez.",
+      "explanation": "Başkanlık, Başkan Yardımcısı ve hizmet birimlerinden oluşur; görevlerini daire başkanlıkları şeklinde teşkilatlanan hizmet birimleri aracılığıyla yerine getirir. Hizmet birimleri ile çalışma usul ve esasları, Kurumun teklifi üzerine Cumhurbaşkanınca yürürlüğe konulan yönetmelikle belirlenir.",
+      "articleRefs": [
+        "25"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Kişisel Verileri Koruma Kurumunda Başkan Yardımcısı ya da daire başkanı olarak atanabilmek için kaç yıl kamu hizmeti aranır?",
+      "back": "On yıl kamu hizmeti aranır; ayrıca en az dört yıllık yükseköğretim kurumu mezunu olmak gerekir. Atamayı Başkan yapar.",
+      "articleRefs": [
+        "25"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Kişisel Verileri Koruma Kurumunun taraf olduğu davalar ve icra takiplerinde Kurumu kim, hangi yolla temsil eder?",
+      "back": "Başkanlık; avukatlar vasıtasıyla temsil eder.",
+      "articleRefs": [
+        "25"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Kişisel Verileri Koruma Kurumunda hangi uzman kadroları istihdam edilebilir?",
+      "back": "Kişisel Verileri Koruma Uzmanı ve Kişisel Verileri Koruma Uzman Yardımcısı istihdam edilebilir.",
+      "articleRefs": [
+        "26"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "657 sayılı Kanunun ek 41 inci maddesi çerçevesinde Kişisel Verileri Koruma Uzmanı kadrosuna atananlara ne kadar derece yükseltilmesi uygulanır?",
+      "back": "Bir derece yükseltilmesi uygulanır; bu bir defaya mahsustur.",
+      "articleRefs": [
+        "26"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Hâkimler ve savcılar, Kişisel Verileri Koruma Kurumunda geçici olarak kimin muvafakatiyle görevlendirilebilir?",
+      "back": "Kendilerinin muvafakatiyle görevlendirilebilirler; memurlar ve diğer kamu görevlileri ise kurumlarının muvafakatiyle görevlendirilir.",
+      "explanation": "Görevlendirilenlerin aylık, ödenek, her türlü zam ve tazminatları ile diğer mali ve sosyal hak ve yardımları kurumlarınca ödenir. Bu kişiler kurumlarından aylıklı izinli sayılır ve Kurumda geçirdikleri süreler kendi kurumlarında geçirilmiş sayılır.",
+      "articleRefs": [
+        "27"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Kişisel Verileri Koruma Kurumunda geçici olarak görevlendirilenlerin sayısı hangi oranı aşamaz?",
+      "back": "Yüzde onu aşamaz; ölçü, Kişisel Verileri Koruma Uzmanı ve Uzman Yardımcısı toplam kadro sayısıdır.",
+      "explanation": "Kurumun geçici görevlendirme talepleri, ilgili kurum ve kuruluşlarca öncelikle sonuçlandırılır.",
+      "articleRefs": [
+        "27"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Kişisel Verileri Koruma Kurumuna geçici görevlendirmenin iki yıllık süresi dolunca görevlendirme uzatılabilir mi?",
+      "back": "Evet; süre iki yılı geçemez, ancak ihtiyaç hâlinde bir yıllık dönemler hâlinde uzatılabilir. Görevlendirilenlerin sayısı ise uzman ve uzman yardımcısı toplam kadro sayısının yüzde onunu aşamaz.",
+      "articleRefs": [
+        "27"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Kamu düzenini sağlamakla kanunla görevli kamu kurumlarının önleyici, koruyucu ve istihbari faaliyetleri kapsamında veri işlemesine 6698 sayılı Kanun uygulanır mı?",
+      "back": "Hayır; bu faaliyetler kapsamında kişisel verilerin işlenmesinde Kanun hükümleri uygulanmaz.",
+      "explanation": "Millî savunma, millî güvenlik, kamu güvenliği ve ekonomik güvenliği sağlamaya yönelik bu tür faaliyetler de aynı kapsamdadır. Yargı makamları veya infaz mercilerinin soruşturma, kovuşturma, yargılama veya infaz işlemlerine ilişkin veri işlemesinde de Kanun uygulanmaz.",
+      "articleRefs": [
+        "28"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Gerçek kişinin tamamen kendisiyle ya da aynı konutta yaşayan aile fertleriyle ilgili faaliyetlerde veri işlemesi hangi kayıtla Kanunun dışında kalır?",
+      "back": "Veriler üçüncü kişilere verilmemeli ve veri güvenliğine ilişkin yükümlülüklere uyulmalıdır.",
+      "explanation": "Kişisel verilerin resmi istatistik ile anonim hâle getirilmek suretiyle araştırma, planlama ve istatistik gibi amaçlarla işlenmesi de Kanunun uygulanmadığı hâller arasındadır.",
+      "articleRefs": [
+        "28"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Suç işlenmesinin önlenmesi için gerekli veri işleme, 6698 sayılı Kanunun tamamen dışında mı kalır?",
+      "back": "Hayır; bu hâlde yalnız aydınlatma yükümlülüğü (md 10), ilgili kişinin hakları (md 11) ve Veri Sorumluları Siciline kayıt yükümlülüğü (md 16) uygulanmaz. Zararın giderilmesini talep etme hakkı saklıdır.",
+      "explanation": "Bu kısmi istisna, Kanunun amacına ve temel ilkelerine uygun ve orantılı olmak kaydıyla işler. Suç soruşturması için gerekli olma, ilgili kişinin kendisi tarafından alenileştirilmiş verilerin işlenmesi, kamu kurumlarının denetleme ya da düzenleme görevleri ile disiplin soruşturma veya kovuşturması ve Devletin ekonomik ve mali çıkarlarının korunması da bu hâller arasındadır.",
+      "articleRefs": [
+        "28"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Kişisel Verileri Koruma Kurumunun bütçesi hangi kanunda belirlenen usul ve esaslara göre hazırlanır ve kabul edilir?",
+      "back": "5018 sayılı Kamu Malî Yönetimi ve Kontrol Kanununda belirlenen usul ve esaslara göre hazırlanır ve kabul edilir.",
+      "articleRefs": [
+        "29"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Kişisel Verileri Koruma Kurumunun gelirleri nelerdir?",
+      "back": "Genel bütçeden yapılacak hazine yardımları, Kuruma ait taşınır ve taşınmazlardan elde edilen gelirler, alınan bağış ve yardımlar, gelirlerinin değerlendirilmesinden elde edilen gelirler ve diğer gelirler.",
+      "articleRefs": [
+        "29"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "6698 sayılı Kanunun uygulanmasına ilişkin yönetmelikleri kim yürürlüğe koyar?",
+      "back": "Kişisel Verileri Koruma Kurumu yürürlüğe koyar.",
+      "explanation": "Hizmet birimleri ile bu birimlerin çalışma usul ve esaslarını belirleyen yönetmelik ise Kurumun teklifi üzerine Cumhurbaşkanınca yürürlüğe konulur.",
+      "articleRefs": [
+        "31",
+        "25"
+      ]
+    }
+  ]
+}

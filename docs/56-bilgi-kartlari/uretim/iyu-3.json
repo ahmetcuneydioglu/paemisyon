@@ -1,0 +1,306 @@
+{
+  "deck": {
+    "topicId": "e22d1f78-8191-4099-9134-044c59114bd7",
+    "legislationSlug": "2577-idari-yargilama-usulu-kanunu-iyuk",
+    "sourceLabel": "AI bilgi kartı — 2577 İdari Yargılama Usulü Kanunu (İYUK) md 27–39",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: resmî madde metni + çıkmış sorular)"
+  },
+  "cards": [
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Yürütmenin durdurulmasına karar verilmesi için idari işlemin açıkça hukuka aykırı olması tek başına yeterli midir?",
+      "back": "Hayır. İşlemin uygulanması hâlinde telafisi güç veya imkânsız zararların doğması ve işlemin açıkça hukuka aykırı olması şartları birlikte gerçekleşmelidir.",
+      "explanation": "Danıştayda veya idari mahkemelerde dava açılması, dava edilen işlemin yürütülmesini durdurmaz. Durdurma ayrı bir karar gerektirir. Mahkeme bu kararı davalı idarenin savunması alındıktan veya savunma süresi geçtikten sonra, gerekçe göstererek verir. Kararda işlemin hangi gerekçelerle açıkça hukuka aykırı olduğu ve doğacak telafisi güç veya imkânsız zararların neler olduğu belirtilmek zorundadır.",
+      "articleRefs": [
+        "27"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "İdare mahkemesinin yürütmenin durdurulması istemi hakkında verdiği karara karşı ne kadar sürede itiraz edilebilir?",
+      "back": "Kararın tebliğini izleyen günden itibaren yedi gün içinde itiraz edilebilir. İtiraz bölge idare mahkemesine, bir defaya mahsus olmak üzere yapılır.",
+      "explanation": "İtiraz edilen merci, dosyanın kendisine gelişinden itibaren yedi gün içinde karar vermek zorundadır. İtiraz üzerine verilen kararlar kesindir. Danıştay dava dairelerinin kararlarına karşı itiraz, konusuna göre İdari veya Vergi Dava Daireleri Kurullarına yapılır.",
+      "articleRefs": [
+        "27"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Yürütmenin durdurulmasına dair verilen kararlar kaç gün içinde yazılıp imzalanır?",
+      "back": "Onbeş gün içinde yazılır ve imzalanır.",
+      "explanation": "Yürütmenin durdurulması kararı verilen dava dosyaları öncelikle incelenir ve karara bağlanır. Aynı sebeplere dayanılarak ikinci kez yürütmenin durdurulması isteminde bulunulamaz. Kararlar teminat karşılığında verilir, ancak durumun gereklerine göre teminat aranmayabilir. İdareden ve adli yardımdan faydalanan kimselerden teminat alınmaz.",
+      "articleRefs": [
+        "27"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "İdare, yargı yerinin esasa veya yürütmenin durdurulmasına ilişkin kararının gereğini en geç ne zamana kadar yerine getirmek zorundadır?",
+      "back": "Gecikmeksizin yerine getirmek zorundadır. Bu süre hiçbir şekilde kararın idareye tebliğinden başlayarak otuz günü geçemez.",
+      "explanation": "Konusu belli bir miktar paranın ödenmesini gerektiren davalarda hükmedilen miktar, vekalet ücreti ve yargılama giderleri aynı usulle ödenir. Ödeme, davacının veya vekilinin davalı idareye yazılı şekilde bildireceği banka hesap numarasına yatırılarak yapılır. Süresinde ödeme yapılmazsa genel hükümler dairesinde infaz ve icra olunur.",
+      "articleRefs": [
+        "28"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Mahkeme kararı süresinde yerine getirilmezse tazminat davası, kararı uygulamayan kamu görevlisi aleyhine açılabilir mi?",
+      "back": "Hayır. Kararların süresi içinde kamu görevlilerince yerine getirilmemesi hâlinde tazminat davası ancak ilgili idare aleyhine açılabilir.",
+      "explanation": "Karara göre işlem tesis edilmeyen veya eylemde bulunulmayan hâllerde, idare aleyhine Danıştay ve ilgili idari mahkemede maddi ve manevi tazminat davası açılabilir. Tazminat davalarında idare, kararın tebliğ tarihi ile ödeme tarihi arasındaki süre için tecil faizi oranında faiz öder.",
+      "articleRefs": [
+        "28"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Terör örgütleriyle iltisaklı olmak gerekçesiyle meslekten çıkarılan Emniyet teşkilatı personeli dava açıp göreve iadesine karar verilirse, bu karar uyarınca işlem ne zaman yerine getirilir?",
+      "back": "Nihai kararların kesinleşmesinden sonra yerine getirilir.",
+      "explanation": "Kural, Emniyet teşkilatında görevli personel ve adayları ile Polis Akademisi ve bağlı eğitim ve öğretim kurumlarındaki öğrenciler ve adayları için geçerlidir. Gerekçeler arasında terör örgütleriyle eylem birliği içinde olmak, bu örgütlere yardım etmek ve propagandalarını yapmak da vardır. Güvenlik soruşturması ve arşiv araştırmasının idarece olumsuz değerlendirilmesine karşı açılan davalarda da aynı kural uygulanır.",
+      "articleRefs": [
+        "28"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Kararın açıklanması için verilen dilekçe kaç nüsha olarak verilir?",
+      "back": "Karşı taraf sayısından bir nüsha fazla verilir.",
+      "explanation": "Karar yeterince açık değilse ya da birbirine aykırı hüküm fıkraları taşıyorsa, taraflardan her biri açıklama isteyebilir. Kararı vermiş olan daire veya mahkeme işi inceler. Gerek görürse dilekçenin bir örneğini cevap için karşı tarafa tebliğ eder; cevap iki nüsha olarak verilir.",
+      "articleRefs": [
+        "29"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Kararın açıklanması, karar yerine getirildikten sonra da istenebilir mi?",
+      "back": "Hayır. Açıklama veya aykırılığın kaldırılması, kararın yerine getirilmesine kadar istenebilir.",
+      "explanation": "Talebi, kararı vermiş olan daire veya mahkeme inceler. Görevli daire veya mahkemenin bu husustaki kararı taraflara tebliğ olunur.",
+      "articleRefs": [
+        "29"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Kararda hangi yanlışlıkların düzeltilmesi istenebilir?",
+      "back": "İki tarafın adı ve soyadı, sıfatı ve iddiaları sonucuna ilişkin yanlışlıklar ile hüküm fıkrasındaki hesap yanlışlıkları.",
+      "explanation": "Yanlışlıkların düzeltilmesine karar verilirse düzeltme ilamın altına yazılır.",
+      "articleRefs": [
+        "30"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Yanlışlıkların düzeltilmesi de açıklama gibi ancak kararın yerine getirilmesine kadar mı istenebilir?",
+      "back": "Hayır. Açıklamaya ilişkin hükümler düzeltme isteklerine de uygulanır. Ancak “kararın yerine getirilmesine kadar” kaydını koyan son fıkra bunun dışında bırakılmıştır.",
+      "explanation": "Dilekçenin karşı taraf sayısından bir nüsha fazla verilmesi, gerekirse karşı tarafa tebliğ edilmesi ve kararın taraflara tebliği düzeltme isteklerinde de uygulanır.",
+      "articleRefs": [
+        "30",
+        "29"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "İdari yargılamada davanın ihbarı kim tarafından yapılır?",
+      "back": "Danıştay, mahkeme veya hakim tarafından re'sen yapılır.",
+      "explanation": "Kanunda hüküm bulunmayan hususlarda davanın ihbarı da usul kanunu hükümlerine bağlıdır. Ancak ihbar, yargı yeri tarafından kendiliğinden yapılır. Aynı atıf; hakimin reddi, üçüncü şahısların davaya katılması, tarafların vekilleri, feragat ve kabul, keşif, adli yardım ve elektronik işlemler gibi konuları da kapsar.",
+      "articleRefs": [
+        "31"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "İdari yargıda bilirkişiler hangi listelerden seçilir?",
+      "back": "Bilirkişilik bölge kurulları tarafından hazırlanan listelerden seçilir.",
+      "explanation": "Bilirkişiler hakkında Bilirkişilik Kanunu ve 6100 sayılı Hukuk Muhakemeleri Kanununun ilgili hükümleri uygulanır. Vergi uyuşmazlıklarının çözümünde ise, atıf yapılan hâller saklı kalmak üzere Vergi Usul Kanununun ilgili hükümleri uygulanır.",
+      "articleRefs": [
+        "31"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Kanunda veya özel kanunlarda yetkili idare mahkemesi gösterilmemişse yetkili mahkeme hangisidir?",
+      "back": "Dava konusu idari işlemi veya idari sözleşmeyi yapan idari merciin bulunduğu yerdeki idare mahkemesi.",
+      "explanation": "Bu genel yetki kuralı, göreve ilişkin hükümler saklı kalmak şartıyla uygulanır.",
+      "articleRefs": [
+        "32"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "İdari Yargılama Usulü Kanununun uygulanmasında yetki kuralları nasıl nitelendirilir?",
+      "back": "Yetki kamu düzenindendir.",
+      "articleRefs": [
+        "32"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Kamu görevlisinin naklen atanmasına karşı açılan davada yetkili mahkeme yalnızca yeni görev yeri idare mahkemesi midir?",
+      "back": "Hayır. Atanma ve nakil davalarında yeni veya eski görev yeri idare mahkemesi yetkilidir.",
+      "explanation": "Davacı, eski görev yeri idare mahkemesinde de yeni görev yeri idare mahkemesinde de dava açabilir.",
+      "articleRefs": [
+        "33"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Kamu görevlisinin emekli edilmesine karşı açılan davada yetkili mahkeme hangisidir?",
+      "back": "Kamu görevlisinin son görev yaptığı yer idare mahkemesi.",
+      "explanation": "Aynı kural, görevine son verilmesi ve görevden uzaklaştırılmasıyla ilgili davalarda da geçerlidir.",
+      "articleRefs": [
+        "33"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Kamu görevlisinin, görevle ilişkisini kesmeyen bir disiplin cezasına karşı açtığı davada yetkili mahkeme hangisidir?",
+      "back": "İlgilinin görevli bulunduğu yer idare mahkemesi.",
+      "explanation": "Aynı kural ilerleme, yükselme, sicil, intibak ve diğer özlük ve parasal haklarla ilgili davalarda da uygulanır. Mahalli idare organları ile bu organların üyelerinin geçici bir tedbir olarak görevden uzaklaştırılmalarına ilişkin davalar da bu kurala tabidir.",
+      "articleRefs": [
+        "33"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Kamulaştırma ya da imar gibi taşınmaz mallarla ilgili mevzuatın uygulanmasından doğan idari davada yetkili mahkeme hangisidir?",
+      "back": "Taşınmaz malların bulunduğu yer idare mahkemesi.",
+      "explanation": "Kural imar, kamulaştırma, yıkım, işgal, tahsis, ruhsat ve iskan gibi işlemleri kapsar. Bunlara bağlı her türlü haklara ve kamu mallarına ilişkin idari davalarda da aynı mahkeme yetkilidir.",
+      "articleRefs": [
+        "34"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "İdari bağlılığı değiştirilen bir köyün sınır uyuşmazlığında yalnızca köyün yeni bağlandığı yer idare mahkemesi mi yetkilidir?",
+      "back": "Hayır. Köyün bulunduğu yahut yeni bağlandığı yer idare mahkemesi yetkilidir.",
+      "explanation": "Köy, belediye ve özel idareleri ilgilendiren mevzuatın uygulanmasına ilişkin davalarda da aynı kural geçerlidir. Bu davalarda mülki idari birimin, köy, belediye veya mahallenin bulunduğu yahut yeni bağlandığı yer idare mahkemesi yetkilidir.",
+      "articleRefs": [
+        "34"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Taşınır mallara ilişkin idari davalarda yetkili mahkeme hangisidir?",
+      "back": "Taşınır malın bulunduğu yer idare mahkemesi.",
+      "articleRefs": [
+        "35"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "İdari sözleşmelerden doğanlar dışındaki tam yargı davalarında yetki bakımından ilk sırada hangi mahkeme gelir?",
+      "back": "Zararı doğuran idari uyuşmazlığı çözümlemeye yetkili idare mahkemesi.",
+      "explanation": "Yetki sırayla belirlenir. Zarar bayındırlık ve ulaştırma gibi bir hizmetten doğmuşsa hizmetin görüldüğü yer idare mahkemesi yetkilidir. Diğer hallerde davacının ikametgahının bulunduğu yer idare mahkemesi yetkilidir.",
+      "articleRefs": [
+        "36"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "İdarenin bir eyleminden doğan zarar için açılan tam yargı davasında, davacının ikametgahının bulunduğu yer idare mahkemesi mi yetkilidir?",
+      "back": "Hayır. Zarar idarenin bir eyleminden doğmuşsa eylemin yapıldığı yer idare mahkemesi yetkilidir. İkametgah yeri yalnız diğer hallerde yetkilidir.",
+      "explanation": "Sıra şöyledir: önce zararı doğuran idari uyuşmazlığı çözümlemeye yetkili mahkeme gelir. Zarar bir hizmetten ya da idarenin bir eyleminden doğmuşsa hizmetin görüldüğü veya eylemin yapıldığı yer yetkilidir. Bunların dışında davacının ikametgahının bulunduğu yer idare mahkemesi yetkilidir.",
+      "articleRefs": [
+        "36"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Amme Alacaklarının Tahsil Usulü Kanununun uygulanmasından doğan vergi uyuşmazlığında yetkili mahkeme hangisidir?",
+      "back": "Ödeme emrini düzenleyen dairenin bulunduğu yerdeki vergi mahkemesi.",
+      "explanation": "Bu Kanun kapsamındaki uyuşmazlıklarda yetki, ödeme emrini düzenleyen daireye göre belirlenir.",
+      "articleRefs": [
+        "37"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Vergi Usul Kanunu gereğince şikayet yoluyla yapılan vergi düzeltme talebinin reddine karşı açılan davada yetkili vergi mahkemesi hangisidir?",
+      "back": "Vergi, resim, harç ve benzeri mali yükümleri tarh ve tahakkuk ettiren dairenin bulunduğu yerdeki vergi mahkemesi.",
+      "explanation": "Aynı kural, Gümrük Kanununa göre alınması gereken vergilerle ilgili işlemlerde de uygulanır. Sayılan hâllerin dışında kalan uyuşmazlıklarda dava konusu işlemi yapan dairenin bulunduğu yerdeki vergi mahkemesi yetkilidir.",
+      "articleRefs": [
+        "37"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Hangi davalar bağlantılı dava sayılır?",
+      "back": "Aynı maddi veya hukuki sebepten doğan ya da biri hakkında verilecek hüküm diğerini etkileyecek nitelikte olan davalar.",
+      "articleRefs": [
+        "38"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Bağlantının varlığına mahkeme, taraflardan biri istemeden kendiliğinden karar verebilir mi?",
+      "back": "Evet. Bağlantının varlığına taraflardan birinin isteği üzerine veya doğrudan doğruya mahkemece karar verilir.",
+      "explanation": "Bağlantılı davalardan biri Danıştayda bulunuyorsa dava dosyası Danıştaya gönderilir.",
+      "articleRefs": [
+        "38"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Bağlantılı davalar değişik bölge idare mahkemelerinin yargı çevrelerindeki mahkemelerde bulunuyorsa dosyalar nereye gönderilir?",
+      "back": "Danıştaya gönderilir.",
+      "explanation": "Bağlantılı davalar aynı bölge idare mahkemesinin yargı çevresindeki mahkemelerdeyse dosyalar o yer bölge idare mahkemesine gönderilir.",
+      "articleRefs": [
+        "38"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Bağlantılı davalar ayrı bölge idare mahkemelerinin yargı çevresindeki mahkemelerin görevine giriyorsa ve Danıştay bağlantıyı kabul ederse, davaları hangi mahkeme görür?",
+      "back": "Danıştayın ilgili dairesinin kararında belirttiği yetkili mahkeme görür; dosyalar bu mahkemeye gönderilir.",
+      "explanation": "Danıştay, diğer mahkemeye veya mahkemelere durumu bildirir; yetkili mahkeme de durumu ilgililere duyurur. Davalardan biri Danıştayda açılmış ve Danıştayın görevine giren bir uyuşmazlıkla ilgiliyse davaların tümü Danıştayda görülür.",
+      "articleRefs": [
+        "39"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Danıştay bağlantı bulunmadığına karar verirse dava dosyaları ne olur?",
+      "back": "Dosyalar ilgili mahkemelere geri gönderilir.",
+      "explanation": "Danıştayın dava konusu uyuşmazlığı incelemeye yetkili dairesi, bağlantılı dava dosyalarını öncelikle ve ivedilikle inceler ve karar verir.",
+      "articleRefs": [
+        "39"
+      ]
+    }
+  ]
+}

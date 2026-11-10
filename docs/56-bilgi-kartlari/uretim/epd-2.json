@@ -1,0 +1,213 @@
+{
+  "deck": {
+    "topicId": "f614ccc4-e39b-4715-ba55-f8a621775354",
+    "legislationSlug": "emniyet-performans-degerlendirme-yonetmeligi",
+    "sourceLabel": "AI bilgi kartı — Emniyet Performans Değerlendirme Yönetmeliği md 11–17",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: resmî madde metni + çıkmış sorular)"
+  },
+  "cards": [
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Sıralı ilk amir, personelle ilk performans görüşmesini hangi süre içinde yapmalıdır?",
+      "back": "Beraber çalıştıkları ilk üç ay içerisinde.",
+      "explanation": "Görüşme, personelin halen çalıştığı ve değerlendirme amiri unvanındaki sıralı ilk amiri ile yapılır. Performans görüşmesi yılda en az bir kez yapılır. Görüşmenin tarihi ve görüşülen yer, görüşmeyi yapan amir tarafından PBS'ye kaydedilir.",
+      "articleRefs": [
+        "11"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Görüşmeye engel olan hal ortadan kalkınca performans görüşmesi, takip eden ilk üç ay içinde yapılabilir mi?",
+      "back": "Hayır. Görüşme, fiili durumun ortadan kalkmasını takip eden ilk ay içerisinde yapılır. İlk üç ay süresi, beraber çalışmaya başlanınca yapılan ilk görüşme içindir.",
+      "explanation": "Engel kalktıktan sonraki görüşmeyi de personelin halen çalıştığı ve değerlendirme amiri unvanındaki sıralı ilk amiri yapar.",
+      "articleRefs": [
+        "11"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Birime bağlı tüm personel ile performans görüşmesinin zamanında yapılmasından kim sorumludur?",
+      "back": "Personel işlerinden sorumlu şube müdürü/büro amiri.",
+      "explanation": "Kendisine bağlı personel ile görüşmenin zamanında yapılmasından ikinci değerlendirme amiri sorumludur. İkinci değerlendirme amiri bulunmayan durumlarda bu sorumluluk birinci değerlendirme amirindedir.",
+      "articleRefs": [
+        "11"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Formlara ilişkin önerileri değerlendiren ilgili daire başkanlıkları, görüşlerini Personel Dairesi Başkanlığına en geç ne zamana kadar bildirir?",
+      "back": "Her yıl en geç Ekim ayı başına kadar, yazılı olarak bildirir.",
+      "explanation": "Formda değiştirilmesi, eklenmesi veya çıkarılması istenen hususları birimler, hizmetin ve formun ilgili olduğu daire başkanlıklarına gönderir. Bunlardan uygun görülenler Kurulun onayıyla değiştirilebilir.",
+      "articleRefs": [
+        "12"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Kurulun onayıyla değiştirilen performans değerlendirme formu, aynı değerlendirme döneminde kullanılabilir mi?",
+      "back": "Hayır. Değiştirilen formlar bir sonraki değerlendirme döneminde kullanılır. Personelin bilgisine sunulmak üzere dönem öncesinde PBS'de yayınlanır.",
+      "explanation": "Form doldurulurken değerlendirme amirlerine PBS'de şu bilgiler gösterilir: personelin değerlendirme dönemi içindeki izin, rapor, ödül, sürücü belgesi sınıfı, ceza ve soruşturma bilgileri ile formun doldurulmasında ihtiyaç duyulacak diğer bilgiler.",
+      "articleRefs": [
+        "12"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Performans değerlendirme formunda \"Gözlenen performans ortalamanın üzerinde\" ölçeğinin karşılığı kaç puandır?",
+      "back": "4 puan. Davranışın ortalamanın üzerinde olduğunu ve çoğu zaman gerçekleştirildiğini gösterir.",
+      "explanation": "Ölçekler, formdaki değerlendirme ölçütlerinin karşısında yer alır. En düşük karşılık 1 puan, en yüksek karşılık 5 puandır.",
+      "articleRefs": [
+        "13"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "\"Gözlenen performans ortalamanın altında, geliştirilmeye ihtiyacı var\" ölçeğinin karşılığı kaç puandır?",
+      "back": "2 puan. Davranışın ortalamanın altında olduğunu ve zaman zaman tekrarlandığını gösterir.",
+      "explanation": "Bunun altındaki \"Gözlenen performans ortalamanın çok altında\" ölçeği 1 puandır ve istisnai bir durumu ifade eder.",
+      "articleRefs": [
+        "13"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "\"Gözlenen performans ortalamanın çok üzerinde\" ölçeğinin karşılığı kaç puandır?",
+      "back": "5 puan. Fazladan gayret gösterildiğini ve bu davranışın sürekli gerçekleştirildiğini ifade eden istisnai bir durumdur.",
+      "explanation": "\"Gözlenen performans ortalama düzeyde\" ölçeğinin karşılığı 3 puandır. Bu ölçek, davranışın o ölçüt için ortalama düzeyde olduğunu ifade eder.",
+      "articleRefs": [
+        "13"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Atış, eğitim ve fiziksel yeterlilik performansının uygulanmasına ilişkin hususları Personel Dairesi Başkanlığına hangi birim yazılı olarak bildirir?",
+      "back": "Polis Akademisi Başkanlığı bildirir. Bunlardan uygun görülenler Kurulun onayıyla geçerlilik kazanır.",
+      "explanation": "Bildirilen hususlar arasında performansın kimlere uygulanacağı, nasıl ölçüleceği ve performans değerlendirme puanına etkisi yer alır.",
+      "articleRefs": [
+        "14",
+        "15",
+        "16"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Atış performansının ölçülmesinde hangi silahlar kullanılır?",
+      "back": "Genel Müdürlüğün uhdesinde atış yapmak için belirlenen silahlar ile zati demirbaş silahlar.",
+      "explanation": "Emniyet Hizmetleri Sınıfı personelinin atış performansı, performans değerlendirme formu içerisinde değerlendirilebilir.",
+      "articleRefs": [
+        "14"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Atış hedefleri, mesafesi, süresi, pozisyonu ve tekniği personele göre farklı belirlenebilir mi?",
+      "back": "Hayır. Bunlar bütün personel için aynı olarak belirlenir.",
+      "explanation": "Atış performansının kimlere uygulanacağını Polis Akademisi Başkanlığı Personel Dairesi Başkanlığına bildirir. Uygun görülenler Kurulun onayıyla geçerlilik kazanır.",
+      "articleRefs": [
+        "14"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Hangi eğitimler performans değerlendirme formunda değerlendirmeye alınabilir?",
+      "back": "Personelin meslek içerisinde kendi çalıştığı birimi ya da branşı ile ilgili almış olduğu eğitimler.",
+      "articleRefs": [
+        "15"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Merkezdeki ilgili birim, performans değerlendirmesine etki etmesini önerdiği eğitimler için neyle yükümlüdür?",
+      "back": "O birim veya branştaki tüm personelin bu eğitimlere erişimine imkân sağlamakla.",
+      "articleRefs": [
+        "15"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Değerlendirmeye alınacak eğitimlerin düzenlendiği ortamlara örnek olarak hangileri anılır?",
+      "back": "Dijital, yüz yüze ve uygulamalı ortamlar; sayım \"vb.\" ile açık bırakılmıştır.",
+      "explanation": "Hangi birim veya branş için, hangi ortamda ve hangi konularda düzenlenen eğitimlerin değerlendirmeye alınacağı, Polis Akademisi Başkanlığının Personel Dairesi Başkanlığına bildirdiği hususlar arasındadır.",
+      "articleRefs": [
+        "15"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Fiziksel yeterlilik performansının ölçülmesinde ne kullanılır?",
+      "back": "Uygulamalı fiziksel testler ve/veya fiziksel ölçütler.",
+      "explanation": "Emniyet Hizmetleri Sınıfı personelinin fiziksel yeterlilikleriyle ilgili ölçütler belirlenerek performans değerlendirme formu içerisinde değerlendirmeye alınabilir.",
+      "articleRefs": [
+        "16"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Fiziksel yeterlilik ölçümleri yalnız birimler bünyesinde kurulacak komisyonlarca mı yapılabilir?",
+      "back": "Hayır. Ölçümler bu komisyonlarca yapılabileceği gibi kurum dışında da yaptırılabilir.",
+      "articleRefs": [
+        "16"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Fiziksel yeterlilik ölçütleri hangi özelliklere göre belirlenebilir?",
+      "back": "Rütbe, yaş veya cinsiyete göre belirlenebilir. Bu ölçütlerin belirlenmesine ilişkin hususları Polis Akademisi Başkanlığı bildirir.",
+      "explanation": "Bildirilen hususlar arasında ölçütlerin ölçülmesi, performans değerlendirme puanına etkisi ve kimlere uygulanacağı da yer alır. Uygun görülenler Kurulun onayıyla geçerlilik kazanır.",
+      "articleRefs": [
+        "16"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "İkinci değerlendirme amiri, formdaki bütün performans değerlendirme ölçütlerini yeniden değerlendirir mi?",
+      "back": "Hayır. Varsa yalnız birinci değerlendirme amirinin değerlendirmesine katılmadığı ölçütleri değerlendirir. Diğer ölçütler birinci amirin değerlendirmesiyle aynı hesaplanır.",
+      "explanation": "İkinci değerlendirme amiri, birinci değerlendirme amirinin değerlendirmesinden sonra değerlendirme yapar ve değerlendirmesi bitince bunu onaylar.",
+      "articleRefs": [
+        "17"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Değerlendirme amirleri, değerlendirme formunu doldurmadan önce neyi onaylar?",
+      "back": "Yönetmelikte belirtilen genel esaslara uygun değerlendirme yapacağına ilişkin beyanı.",
+      "explanation": "Değerlendirme amirleri personelinin çalışmalarını yakından takip eder. Değerlendirmelerini bu beyanı onayladıktan sonra yaparlar.",
+      "articleRefs": [
+        "17"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Birinci değerlendirme amiri, formdaki performans değerlendirme ölçütlerini nasıl değerlendirir?",
+      "back": "Gözlem ve algılarına göre değerlendirme ölçeklerinden uygun olanı işaretler; değerlendirmesi bitince onaylar.",
+      "articleRefs": [
+        "17"
+      ]
+    }
+  ]
+}

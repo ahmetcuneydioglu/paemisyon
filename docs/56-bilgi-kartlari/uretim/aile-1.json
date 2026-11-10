@@ -1,0 +1,280 @@
+{
+  "deck": {
+    "topicId": "6787ab70-76ef-4fcf-88a8-fbd3e0d7f563",
+    "legislationSlug": "6284-sayili-ailenin-korunmasi-kanunu",
+    "sourceLabel": "AI bilgi kartı — 6284 Sayılı Ailenin Korunması Kanunu md 1–10",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: resmî madde metni + çıkmış sorular)"
+  },
+  "cards": [
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "6284 sayılı Ailenin Korunması ve Kadına Karşı Şiddetin Önlenmesine Dair Kanun kimlerin korunmasını amaçlar?",
+      "back": "Şiddete uğrayan veya şiddete uğrama tehlikesi bulunan kadınların, çocukların, aile bireylerinin ve tek taraflı ısrarlı takip mağduru olan kişilerin.",
+      "explanation": "Kanun, bu kişilerin korunması ve onlara yönelik şiddetin önlenmesi için alınacak tedbirlerin usul ve esaslarını düzenler.",
+      "articleRefs": [
+        "1"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Şiddet mağdurlarına destek ve hizmet sunulurken nasıl bir usul izlenir?",
+      "back": "Temel insan haklarına dayalı, kadın erkek eşitliğine duyarlı, sosyal devlet ilkesine uygun, adil, etkili ve süratli bir usul izlenir.",
+      "explanation": "Temel ilkeler arasında şu da vardır: Şiddet mağduru ve şiddet uygulayan için alınan tedbir kararları insan onuruna yaraşır bir şekilde yerine getirilir.",
+      "articleRefs": [
+        "1"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Kadınları cinsiyete dayalı şiddetten koruyan özel tedbirler ayrımcılık olarak yorumlanabilir mi?",
+      "back": "Hayır. Kadınlara yönelik cinsiyete dayalı şiddeti önleyen ve kadınları bu şiddetten koruyan özel tedbirler ayrımcılık olarak yorumlanamaz.",
+      "explanation": "Bu kural, Kanunun uygulanmasında ve hizmetlerin sunulmasında uyulan temel ilkeler arasındadır.",
+      "articleRefs": [
+        "1"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Kanunda geçen \"hâkim\" kavramı hangi hâkimi ifade eder?",
+      "back": "Aile mahkemesi hâkimini ifade eder.",
+      "explanation": "Tanıma göre tedbir kararlarını hâkim, kolluk görevlileri ve mülkî amirler verir. Bu kararlar istem üzerine ya da resen verilebilir.",
+      "articleRefs": [
+        "2"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Ev içi şiddet sayılması için mağdurla şiddet uygulayanın aynı haneyi paylaşması gerekir mi?",
+      "back": "Hayır. Aynı haneyi paylaşmasalar da aile veya hanede ya da aile mensubu sayılan diğer kişiler arasında meydana gelen şiddet, ev içi şiddettir.",
+      "explanation": "Tanım her türlü fiziksel, cinsel, psikolojik ve ekonomik şiddeti kapsar.",
+      "articleRefs": [
+        "2"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Mülkî amir hangi koruyucu tedbirlere karar verebilir?",
+      "back": "Uygun barınma yeri sağlanması, geçici maddi yardım, psikolojik, meslekî, hukukî ve sosyal rehberlik ve danışmanlık, hayatî tehlikede geçici koruma altına alma ve kreş imkânı sağlanması. Uygun görülecek benzer tedbirlere de karar verebilir.",
+      "explanation": "Geçici koruma altına alma, hayatî tehlike bulunduğunda ilgilinin talebi üzerine veya resen yapılır. Geçici maddi yardım, diğer kanunlar kapsamında yapılacak yardımları saklı tutar.",
+      "articleRefs": [
+        "3"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Korunan kişinin çocukları varsa, çalışma yaşamına katılımını desteklemek için kreş imkânı en çok ne kadar süreyle sağlanır?",
+      "back": "Dört ay. Kişi çalışıyorsa süre iki ayla sınırlıdır.",
+      "explanation": "Kreş desteği, gerekli olması hâlinde mülkî amirin kararıyla sağlanır. Tutarı, on altı yaşından büyükler için her yıl belirlenen aylık net asgari ücret tutarının yarısını geçemez ve belgelendirilmesi gerekir.",
+      "articleRefs": [
+        "3"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Gecikmesinde sakınca bulunan hâlde kolluk amirinin aldığı barınma yeri veya geçici koruma tedbiri, mülkî amirce ne kadar sürede onaylanmazsa kendiliğinden kalkar?",
+      "back": "Kırksekiz saat içinde onaylanmazsa kendiliğinden kalkar.",
+      "explanation": "Gecikmesinde sakınca bulunan hâllerde kolluk amiri yalnız iki tedbiri alabilir: uygun barınma yeri sağlanması ve hayatî tehlikede geçici koruma altına alma. Evrakı en geç kararın alındığı tarihi takip eden ilk işgünü içinde mülkî amirin onayına sunar.",
+      "articleRefs": [
+        "3"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Hâkim, korunan kişi lehine hangi koruyucu tedbirlere karar verebilir?",
+      "back": "İşyerinin değiştirilmesi, evliyse müşterek yerleşim yerinden ayrı yerleşim yeri belirlenmesi, tapu kütüğüne aile konutu şerhi konulması ve şartları varsa kimlik ile ilgili bilgi ve belgelerin değiştirilmesi. Benzer tedbirlere de karar verebilir.",
+      "explanation": "Hâkim bu tedbirlerden birkaçına birlikte de karar verebilir.",
+      "articleRefs": [
+        "4"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Tapu kütüğüne aile konutu şerhi konulması için Türk Medenî Kanunundaki şartların varlığı yeterli midir?",
+      "back": "Hayır. Şartların varlığının yanında korunan kişinin talebi de aranır; şerhe hâkim karar verir.",
+      "explanation": "Aile konutu şerhi, hâkimin korunan kişiler için verebileceği koruyucu tedbirlerdendir. Hem Türk Medenî Kanunundaki şartların varlığı hem de korunan kişinin talebi gerekir.",
+      "articleRefs": [
+        "4"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Hâkim, korunan kişinin kimlik ve ilgili bilgi ve belgelerinin değiştirilmesine hangi şartlarla karar verebilir?",
+      "back": "Hayatî tehlike bulunmalı, diğer tedbirlerin bu tehlikeyi önlemeye yetmeyeceği anlaşılmalı ve ilgilinin aydınlatılmış rızası olmalı. Değişiklik Tanık Koruma Kanunu hükümlerine göre yapılır.",
+      "explanation": "Bu tedbir hâkimin koruyucu tedbirleri arasındadır ve ilgilinin aydınlatılmış rızasına dayanır.",
+      "articleRefs": [
+        "4"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Gecikmesinde sakınca bulunan hâlde kolluk amirinin aldığı önleyici tedbir, hâkimce ne kadar sürede onaylanmazsa kendiliğinden kalkar?",
+      "back": "Yirmidört saat içinde onaylanmazsa kendiliğinden kalkar.",
+      "explanation": "Kolluk amiri evrakı en geç kararın alındığı tarihi takip eden ilk işgünü içinde hâkimin onayına sunar.",
+      "articleRefs": [
+        "5"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Gecikmesinde sakınca bulunan hâlde kolluk amiri, şiddet uygulayanın silahlarını kolluğa teslim etmesi tedbirini alabilir mi?",
+      "back": "Hayır. Kolluk amiri yalnız şu tedbirleri alabilir: şiddet tehdidi, hakaret ve aşağılama içeren davranışlarda bulunmama, konuttan uzaklaştırma, korunan kişilere yaklaşmama ve yakınlarına, tanıklarına, çocuklarına yaklaşmama.",
+      "explanation": "Silahların kolluğa teslimi hâkimin önleyici tedbirlerindendir. Gecikmesinde sakınca bulunan hâlde kolluk amirine tanınan yetki (a), (b), (c) ve (d) bentleriyle sınırlıdır.",
+      "articleRefs": [
+        "5"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Hâkimin tedbir nafakasına hükmedebilmesi için şiddet mağdurunun bunu talep etmesi şart mıdır?",
+      "back": "Hayır. Hâkim talep edilmese dahi, şiddet mağdurunun yaşam düzeyini göz önünde bulundurarak tedbir nafakasına hükmedebilir.",
+      "explanation": "Bunun için iki koşul gerekir: şiddet uygulayan ailenin geçimini sağlayan yahut geçimine katkıda bulunan kişi olmalı ve Türk Medenî Kanunu hükümlerine göre nafakaya hükmedilmemiş olmalıdır.",
+      "articleRefs": [
+        "5"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Şiddet uygulayanın fiili ayrıca suç oluşturuyorsa, soruşturma ve kovuşturma evresinde hangi tedbirlere ilişkin kanun hükümleri saklıdır?",
+      "back": "Koruma tedbirlerine veya denetimli serbestlik tedbirlerine ilişkin kanun hükümleri saklıdır.",
+      "explanation": "Bu kural üç durumda uygulanır: kişinin silah bulundurması suç oluşturuyorsa, uyuşturucu veya uyarıcı madde kullanması suç oluşturuyorsa ya da fiili başka bir suç oluşturuyorsa.",
+      "articleRefs": [
+        "6"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Şiddet uygulayan suçtan mahkûm olursa hangi kanun hükümleri saklı kalır?",
+      "back": "Ceza veya güvenlik tedbirlerinin infazına ve bu çerçevede uygulanabilecek denetimli serbestlik tedbirlerine ilişkin kanun hükümleri saklı kalır.",
+      "articleRefs": [
+        "6"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Şiddet veya şiddet uygulanma tehlikesi olduğunda kim ihbarda bulunabilir?",
+      "back": "Herkes. Bu durumu resmi makam veya mercilere ihbar edebilir.",
+      "articleRefs": [
+        "7"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Şiddet ihbarını alan kamu görevlisi neyle yükümlüdür?",
+      "back": "Bu Kanun kapsamındaki görevlerini gecikmeksizin yerine getirmekle ve uygulanması gereken diğer tedbirler için yetkilileri haberdar etmekle yükümlüdür.",
+      "articleRefs": [
+        "7"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Tedbir kararı ilk defasında en çok ne kadar süre için verilebilir?",
+      "back": "En çok altı ay için verilebilir.",
+      "explanation": "Şiddet veya şiddet uygulanma tehlikesinin devam edeceği anlaşılırsa, resen veya talep üzerine şu kararlar verilebilir: tedbirin süresi veya şekli değiştirilir, tedbir kaldırılır ya da aynen devam ettirilir.",
+      "articleRefs": [
+        "8"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Koruyucu tedbir kararı verilebilmesi için şiddetin uygulandığına dair delil veya belge aranır mı?",
+      "back": "Hayır. Koruyucu tedbir kararı için şiddetin uygulandığı hususunda delil veya belge aranmaz.",
+      "explanation": "Delil veya belge aranmaması kuralı koruyucu tedbire özgüdür. Önleyici tedbir için ayrı kural vardır: geciktirilmeksizin verilir.",
+      "articleRefs": [
+        "8"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Tedbir kararı tefhim veya tebliğ edilirken şiddet uygulayana hangi ihtar yapılır?",
+      "back": "Tedbir kararına aykırılık hâlinde hakkında zorlama hapsinin uygulanacağı ihtar edilir.",
+      "explanation": "Tedbir kararı korunan kişiye ve şiddet uygulayana tefhim veya tebliğ edilir; tedbir talebinin reddine ilişkin karar ise sadece korunan kişiye tebliğ edilir. Gecikmesinde sakınca bulunan hâllerde kolluk biriminin verdiği tedbir kararı, şiddet uygulayana bir tutanakla derhâl tebliğ edilir.",
+      "articleRefs": [
+        "8"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Tedbir kararlarına itiraz süresi, tefhim veya tebliğ tarihinden itibaren bir hafta mıdır?",
+      "back": "Hayır. İtiraz süresi iki haftadır; bir hafta, itiraz merciinin kararını vereceği süredir.",
+      "explanation": "İtirazı ilgililer yapar ve aile mahkemesine yapılır.",
+      "articleRefs": [
+        "9"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Tedbir kararına yapılan itirazda itiraz mercii kararını hangi süre içinde verir?",
+      "back": "Bir hafta içinde verir; itiraz üzerine verilen kararlar kesindir.",
+      "articleRefs": [
+        "9"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Hâkimin verdiği tedbir kararına itiraz edildiğinde, o yerde aile mahkemesinin tek dairesi varsa dosya nereye gönderilir?",
+      "back": "Asliye hukuk mahkemesine gönderilir. Aile mahkemesi hâkimi ile asliye hukuk mahkemesi hâkimi aynı kişiyse dosya en yakın asliye hukuk mahkemesine gider.",
+      "explanation": "Aile mahkemesinin birden fazla dairesi varsa dosya, numara olarak kendisini izleyen daireye gecikmeksizin gönderilir; son numaralı daire için birinci daireye gider.",
+      "articleRefs": [
+        "9"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Geçici koruma altına alma ve önleyici tedbir kararlarının yerine getirilmesinden hangi kolluk birimi görevli ve yetkilidir?",
+      "back": "Hakkında tedbir kararı verilen kişinin yerleşim yerindeki, bulunduğu yerdeki ya da tedbirin uygulanacağı yerdeki kolluk birimi.",
+      "articleRefs": [
+        "10"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Tefhim veya tebliğ edilmemiş tedbir kararı uygulanabilir mi?",
+      "back": "Evet. Tedbir kararının ilgililere tefhim veya tebliğ edilmemesi, kararın uygulanmasına engel teşkil etmez.",
+      "explanation": "Tedbir kararları, niteliğine göre Cumhuriyet başsavcılığına veya kolluğa da en seri vasıtalarla bildirilir.",
+      "articleRefs": [
+        "10"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "İşyerinin değiştirilmesine ilişkin tedbir kararını kim yerine getirir?",
+      "back": "Kişinin tabi olduğu ilgili mevzuat hükümlerine göre yetkili merci veya kişi yerine getirir.",
+      "articleRefs": [
+        "10"
+      ]
+    }
+  ]
+}

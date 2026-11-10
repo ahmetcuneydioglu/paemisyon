@@ -1,0 +1,239 @@
+{
+  "deck": {
+    "topicId": "e22d1f78-8191-4099-9134-044c59114bd7",
+    "legislationSlug": "2577-idari-yargilama-usulu-kanunu-iyuk",
+    "sourceLabel": "AI bilgi kartı — 2577 İdari Yargılama Usulü Kanunu (İYUK) md 40–46, 48",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: resmî madde metni + çıkmış sorular)"
+  },
+  "cards": [
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Bölge idare mahkemesi bağlantılı dava dosyalarını nasıl inceler?",
+      "back": "Öncelikle ve ivedilikle inceler ve kararını verir.",
+      "articleRefs": [
+        "40"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Bölge idare mahkemesi bağlantı bulunduğuna karar verirse dosyalar nereye gönderilir?",
+      "back": "Kararda belirtilen yetkili mahkemeye gönderilir. Durum ayrıca diğer mahkemeye de duyurulur.",
+      "explanation": "Yetkili kılınan mahkeme de durumu ilgililere bildirir.",
+      "articleRefs": [
+        "40"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Bölge idare mahkemesi bağlantı olmadığına karar verirse dosyalara ne olur?",
+      "back": "Dosyalar ilgili mahkemelere geri gönderilir.",
+      "articleRefs": [
+        "40"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Mahkeme bağlantı iddiasını kabul etmezse taraflar bu ara karara karşı kaç gün içinde başvurabilir?",
+      "back": "On beş gün içinde. Süre, ara kararın tebliğ tarihini izleyen günden işlemeye başlar.",
+      "explanation": "Mahkemelerce kabul edilmeyen bağlantı iddiasına ilişkin ara karar taraflara tebliğ edilir. Başvuru yeri aynı yargı çevresindeki mahkemeler için o yer bölge idare mahkemesidir. md 38'in ilgili fıkralarındaki durumlarla ilgili davalarda başvuru Danıştaya yapılır.",
+      "articleRefs": [
+        "41"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Bağlantı iddiasının reddi üzerine Danıştaya yapılan başvuruyu kim karara bağlar?",
+      "back": "Danıştay görevli dairesi karara bağlar. Durumu bağlantıya ilişkin usullere göre inceler.",
+      "explanation": "Başvuru bölge idare mahkemesine yapılmışsa durumu bölge idare mahkemesi aynı usullere göre inceleyerek karara bağlar.",
+      "articleRefs": [
+        "41"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Bağlantı hakkında karar verilinceye kadar davadaki usuli işlemlere ne olur?",
+      "back": "Usuli işlemler durur. Bu durma, idare ve vergi mahkemelerince ya da itiraz üzerine bölge idare mahkemesi veya Danıştayca karar verilinceye kadar sürer.",
+      "articleRefs": [
+        "42"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Bağlantıya ilişkin işlemler sonuçlanınca yetkili kılınan mahkeme davaya nereden devam eder?",
+      "back": "Davaya bırakıldığı yerden devam eder.",
+      "explanation": "Bu kural, davalara bakmakla yetkili kılınan mahkeme için de Danıştay için de aynıdır.",
+      "articleRefs": [
+        "42"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Bölge idare mahkemesinin bağlantı bulunmadığı yolundaki kararı kesin midir?",
+      "back": "Evet. Bağlantının bulunup bulunmadığı yolunda bölge idare mahkemesi ve Danıştayın verdiği kararlar kesindir.",
+      "explanation": "Kesinlik, bağlantının varlığına karar verilmesinde de yokluğuna karar verilmesinde de aynıdır.",
+      "articleRefs": [
+        "42"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Görevsizlik sebebiyle Danıştaya gönderilen dosyada Danıştay davayı görevi içinde görmezse ne yapar?",
+      "back": "Dosyanın yetkili ve görevli mahkemeye gönderilmesine karar verir.",
+      "explanation": "İdare ve vergi mahkemeleri, idari yargının görev alanına giren bir davayı görevsizlik veya yetkisizlik sebebiyle reddederse dosyayı Danıştaya ya da görevli ve yetkili idare veya vergi mahkemesine gönderir.",
+      "articleRefs": [
+        "43"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Görevsizlik kararıyla dosyanın gönderildiği mahkeme de kendini görevsiz görürse ve iki mahkeme aynı bölge idare mahkemesinin yargı çevresindeyse uyuşmazlığı kim çözer?",
+      "back": "Uyuşmazlığı bölge idare mahkemesi çözer. Mahkemeler aynı yargı çevresinde değilse uyuşmazlığı Danıştay çözümler.",
+      "explanation": "Görev ve yetki uyuşmazlıklarında verilen kararlar ilgili mahkemelere bildirilir ve taraflara tebliğ olunur. Bu kararlar kesindir.",
+      "articleRefs": [
+        "43"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Görev veya yetki uyuşmazlığında verilen kararla görevli ve yetkili kılınan mahkemeye yeniden dava açılırsa harç alınır mı?",
+      "back": "Hayır, harç alınmaz.",
+      "articleRefs": [
+        "43"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "İdari yargıda dava dosyaları hangi hâllerde merci tayini için gönderilir?",
+      "back": "Üç hâlde gönderilir: yetkili mahkemenin davaya bakmasına fiili veya hukuki engel çıkması, iki mahkemenin yargı çevresi sınırlarında tereddüt edilmesi ya da iki mahkemenin de aynı davaya bakmaya yetkili olduklarına karar vermesi.",
+      "explanation": "Bu hâllerde Danıştay veya bölge idare mahkemesi görevli ve yetkili mahkemeyi kararlaştırır.",
+      "articleRefs": [
+        "44"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Merci tayini için dava dosyaları kimin istemi üzerine gönderilir?",
+      "back": "Tarafların veya mahkemelerin istemi üzerine gönderilir.",
+      "articleRefs": [
+        "44"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Farklı yargı çevrelerindeki mahkemeler arasında çıkan merci tayini uyuşmazlığına bölge idare mahkemesi bakabilir mi?",
+      "back": "Hayır. Bölge idare mahkemesi yalnız aynı yargı çevresindeki mahkemeler arasında çıkan uyuşmazlıkta merci tayin eder. Sair hâllerde dosya Danıştaya gönderilir.",
+      "explanation": "Merci tayini konusunda Danıştay ve bölge idare mahkemesinin verdiği kararlar kesindir.",
+      "articleRefs": [
+        "44"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "İdare ve vergi mahkemesi kararlarına karşı istinaf yoluna başvurma süresi nedir?",
+      "back": "Kararın tebliğinden itibaren otuz gündür. Başvuru, mahkemenin bulunduğu yargı çevresindeki bölge idare mahkemesine yapılır.",
+      "explanation": "Bu kural, başka kanunlarda farklı bir kanun yolu öngörülmüş olsa dahi uygulanır. İstinaf, temyizin şekil ve usullerine tabidir. Dosyalar, dilekçedeki hitap ve istekle bağlı kalınmaksızın bölge idare mahkemesine gönderilir.",
+      "articleRefs": [
+        "45"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Konusu hangi tutarı geçmeyen vergi davalarında, tam yargı davalarında ve iptal davalarında idare ve vergi mahkemesi kararları kesindir?",
+      "back": "Otuz bir bin Türk lirasıdır. Konusu bu tutarı geçmeyen davalardaki kararlara karşı istinaf yoluna başvurulamaz.",
+      "explanation": "Bu sınır vergi davaları, tam yargı davaları ve idari işlemlere karşı açılan iptal davaları için ortaktır. Tutar metindeki tutardır; Kanunun ek maddesi uyarınca her yıl yeniden değerleme oranında artırılarak uygulanır.",
+      "articleRefs": [
+        "45"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "İvedi yargılama usulüne tabi bir davada verilen karara karşı istinaf yoluna başvurulabilir mi?",
+      "back": "Hayır. İvedi yargılama usulüne tabi davalarda istinaf yoluna başvurulamaz.",
+      "explanation": "İstinafa açık davalarda bölge idare mahkemesi, kararı hukuka uygun bulursa istinaf başvurusunun reddine karar verir. Kararı hukuka uygun bulmazsa başvurunun kabulüyle kararın kaldırılmasına karar verir ve kural olarak işin esası hakkında yeniden karar verir. Kararı veren ya da karara katılan hâkim, aynı davanın istinaf incelemesinde bulunamaz.",
+      "articleRefs": [
+        "45"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Bölge idare mahkemesinin, belli bir meslekten veya kamu görevinden çıkarılma sonucunu doğuran işleme karşı açılan iptal davasında verdiği karar kaç gün içinde Danıştayda temyiz edilebilir?",
+      "back": "Kararın tebliğinden itibaren otuz gün içinde temyiz edilebilir.",
+      "explanation": "Aynı süre Danıştay dava dairelerinin nihai kararları için de geçerlidir. Öğrencilik statüsünden çıkarılma sonucunu doğuran işlemlere karşı açılan iptal davaları da temyize açık davalar arasındadır.",
+      "articleRefs": [
+        "46"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Bölge idare mahkemesinin vergi, tam yargı ve idari işlem davalarında verdiği kararın Danıştayda temyiz edilebilmesi için dava konusu hangi tutarı aşmalıdır?",
+      "back": "Dokuz yüz yirmi bin Türk lirasını aşmalıdır. Konusu bu tutarı aşan davalardaki kararlar Danıştayda temyiz edilebilir.",
+      "explanation": "Temyize açık davalar arasında düzenleyici işlemlere karşı açılan iptal davaları ile imar planları ve parselasyon işlemlerinden kaynaklanan davalar da sayılır. Tutar metindeki tutardır; Kanunun ek maddesi uyarınca her yıl yeniden değerleme oranında artırılarak uygulanır.",
+      "articleRefs": [
+        "46"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "İdare mahkemesinde tek hâkimle görülen bir davada, bölge idare mahkemesinin ilk derece kararını kaldırıp yeniden verdiği karar Danıştayda temyiz edilebilir mi?",
+      "back": "Hayır. Kaldırma üzerine yeniden verilen kararlar kural olarak tebliğden itibaren otuz gün içinde temyiz edilebilir. Ancak idare ve vergi mahkemelerinde tek hâkimle görülen davalarda temyiz yoluna başvurulamaz.",
+      "explanation": "Kaldırma kararı üzerine yeniden karar verilmiş olsa dahi temyize kapalı tutulan davalar arasında 6458 sayılı Yabancılar ve Uluslararası Koruma Kanununun uygulanmasından kaynaklanan davalar da vardır. Sadece vekalet ücreti ve yargılama giderlerine ilişkin verilen kararlar da bu kapsamdadır.",
+      "articleRefs": [
+        "46"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Temyiz dilekçesi md 3 esaslarına göre düzenlenmemişse eksiklikler kaç gün içinde tamamlatılır?",
+      "back": "On beş gün içinde tamamlatılır. Bu sürede tamamlanmazsa temyiz isteminde bulunulmamış sayılmasına karar verilir.",
+      "explanation": "Eksikliklerin tamamlatılması hususunu kararı veren Danıştay veya bölge idare mahkemesi ilgiliye tebliğ eder. Temyiz istemleri Danıştay Başkanlığına hitaben yazılmış dilekçelerle yapılır.",
+      "articleRefs": [
+        "48"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Temyiz dilekçesi kendisine tebliğ edilen karşı taraf kaç gün içinde cevap verebilir?",
+      "back": "Tebliğ tarihini izleyen otuz gün içinde cevap verebilir.",
+      "explanation": "Cevap veren, kararı süresinde temyiz etmemiş olsa bile cevap dilekçesinde temyiz isteminde bulunabilir; bu dilekçe temyiz dilekçesi yerine geçer. Dosya, cevap dilekçesi verildikten veya cevap süresi geçtikten sonra dizi listesine bağlı olarak gönderilir.",
+      "articleRefs": [
+        "48"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Temyiz dilekçesi verilirken gerekli harç ve giderler tam ödenmemişse temyiz edene tamamlaması için ne kadar süre verilir?",
+      "back": "Yedi gün verilir. Süre içinde tamamlanmazsa ilgili merci, kararın temyiz edilmemiş sayılmasına karar verir.",
+      "explanation": "Temyiz kanuni süre geçtikten sonra yapılmışsa ya da kesin bir karar hakkındaysa kararı veren merci temyiz isteminin reddine karar verir. Bu kararlara karşı tebliğ tarihini izleyen günden itibaren yedi gün içinde temyiz yoluna başvurulabilir.",
+      "articleRefs": [
+        "48"
+      ]
+    }
+  ]
+}

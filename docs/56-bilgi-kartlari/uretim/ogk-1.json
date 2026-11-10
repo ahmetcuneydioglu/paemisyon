@@ -1,0 +1,280 @@
+{
+  "deck": {
+    "topicId": "b451923e-eac4-44f2-9d0b-49d741cb0cfc",
+    "legislationSlug": "5188-sayili-ozel-guvenlik-hizmetlerine-dair-kanun",
+    "sourceLabel": "AI bilgi kartı — 5188 Sayılı Özel Güvenlik Hizmetlerine Dair Kanun md 1–11",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: resmî madde metni + çıkmış sorular)"
+  },
+  "cards": [
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Özel Güvenlik Hizmetlerine Dair Kanuna göre özel güvenlik hizmetleri, kamu güvenliği karşısında hangi niteliktedir?",
+      "back": "Tamamlayıcı niteliktedir. Kanunun amacı, kamu güvenliğini tamamlayıcı özel güvenlik hizmetlerinin yerine getirilmesine ilişkin esas ve usulleri belirlemektir.",
+      "articleRefs": [
+        "1"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Özel Güvenlik Hizmetlerine Dair Kanun hangi hususları kapsar?",
+      "back": "Özel güvenlik izninin verilmesini, bu hizmeti yerine getirecek kişi ve kuruluşların ruhsatlandırılmasını ve denetlenmesini kapsar.",
+      "articleRefs": [
+        "2"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Kişilerin silahlı personel tarafından korunmasına kim izin verir?",
+      "back": "Vali izin verir; bu izin, özel güvenlik komisyonunun kararı üzerine verilir.",
+      "explanation": "Kurum ve kuruluşlar bünyesinde özel güvenlik birimi kurulması ve güvenlik hizmetinin şirketlere gördürülmesi de aynı usule bağlıdır: komisyon kararı üzerine valinin izni gerekir.",
+      "articleRefs": [
+        "3"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Konser ya da para nakli gibi geçici veya acil hallerde özel güvenlik izni için komisyon kararı şart mıdır?",
+      "back": "Hayır. Toplantı, konser, sahne gösterileri, para veya değerli eşya nakli gibi geçici ya da acil hallerde valilik, komisyon kararı aranmaksızın izin verebilir.",
+      "explanation": "Geçici haller dışındaki izinlerde kural değişir: izin, özel güvenlik komisyonunun kararı üzerine vali tarafından verilir.",
+      "articleRefs": [
+        "3"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Geçici haller dışındaki özel güvenlik uygulamasının sona erdirilmesi için en az ne kadar önce başvurulmalıdır?",
+      "back": "En az bir ay önce başvurulmalıdır. Uygulama, komisyonun kararı ve valinin onayı ile sona erdirilebilir.",
+      "articleRefs": [
+        "3"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Özel güvenlik komisyonuna kim başkanlık eder?",
+      "back": "Valinin görevlendireceği bir vali yardımcısı başkanlık eder.",
+      "explanation": "Üyeler arasında il emniyet müdürlüğü, ticaret odası başkanlığı ve sanayi odası başkanlığı temsilcileri bulunur. Sanayi odasının bulunmadığı illerde komisyona ticaret ve sanayi odası başkanlığının temsilcisi katılır.",
+      "articleRefs": [
+        "4"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Özel güvenlik izni için başvuran kişi ya da kuruluşun temsilcisi ilgili komisyon toplantısına hangi sıfatla katılır?",
+      "back": "Üye olarak katılır.",
+      "explanation": "Kural, özel güvenlik izni verilmesi ya da bu uygulamanın kaldırılması için başvuran kişi veya kuruluşun temsilcisini kapsar ve ilgili komisyon toplantısına katılımı düzenler.",
+      "articleRefs": [
+        "4"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Özel güvenlik komisyonunda üyeler çekimser oy kullanabilir mi?",
+      "back": "Hayır, çekimser oy kullanılamaz. Komisyon kararlarını oy çokluğuyla alır; oylar eşit çıkarsa başkanın bulunduğu taraf çoğunluk sayılır.",
+      "articleRefs": [
+        "4"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Özel güvenlik şirketleri şubelerini ne kadar süre içinde bildirmek zorundadır?",
+      "back": "Bir ay içinde bildirmek zorundadır. Bildirim, Bakanlığa ve ilgili valiliğe yazılı olarak yapılır.",
+      "explanation": "Hisse devirleri de bir ay içinde Bakanlığa bildirilir. Şirketlerin özel güvenlik alanında faaliyette bulunması İçişleri Bakanlığının iznine tâbidir.",
+      "articleRefs": [
+        "5"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Kaç ve üzeri özel güvenlik görevlisi istihdam edilen yerlerde güvenlik sorumlusu belirlenmesi zorunludur?",
+      "back": "Onbeş kişi ve üzerinde özel güvenlik görevlisi istihdam edilen yerlerde en az bir güvenlik sorumlusu belirlenir.",
+      "explanation": "Özel güvenlik birimlerinde ve özel güvenlik şirketlerinin şubelerinde de en az bir güvenlik sorumlusu belirlenir. Güvenlik sorumlusunda md 10'daki şartlara ek olarak en az önlisans mezunu olma şartı aranır.",
+      "articleRefs": [
+        "5"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Kurucu, temsilci veya yöneticide aranan şartlar kaybedilirse eksiklik ne kadar sürede giderilmelidir?",
+      "back": "İki ay içinde giderilmelidir. Bu sürede eksiklik giderilmez ya da bu kişiler değiştirilmezse faaliyet izni iptal edilir.",
+      "explanation": "Yöneticilerin ayrıca lisans mezunu olmaları ve özel güvenlik temel eğitimini başarıyla tamamlamış olmaları gerekir. Bir yönetici sadece bir faaliyet izin belgesinde yönetici unvanı alabilir.",
+      "articleRefs": [
+        "5"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Kamu güvenliğinin gerektirdiği hallerde, özel güvenlik izni verilen yerlerdeki tedbirleri denetleyip yetersiz bulursa ek önlem aldırmaya kim yetkilidir?",
+      "back": "Mülki idare amirleri yetkilidir.",
+      "articleRefs": [
+        "6"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Vali veya kaymakam İl İdaresi Kanunundaki kamu güvenliği yetkilerini kullandığında, özel güvenlik personeli kimin emirlerini yerine getirmek zorundadır?",
+      "back": "Mülkî idare amirinin ve genel kolluk amirinin emirlerini yerine getirmek zorundadır.",
+      "explanation": "Bu yükümlülük özel güvenlik birimi için de geçerlidir. Kamu güvenliğinin sağlanması yönünden 5442 sayılı İl İdaresi Kanunu ile vali ve kaymakamlara verilen yetkiler saklıdır.",
+      "articleRefs": [
+        "6"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Özel güvenlik görevlisi görev alanında hangi kişileri yakalayıp arayabilir?",
+      "back": "Haklarında yakalama emri veya mahkûmiyet kararı bulunan kişileri yakalayıp arayabilir.",
+      "explanation": "Görevli ayrıca Ceza Muhakemesi Kanununun 90 ıncı maddesine göre yakalama yapabilir. Olay yerini ve delilleri korumak amacıyla da aynı Kanunun 168 inci maddesine göre yakalama yetkisi vardır.",
+      "articleRefs": [
+        "7"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Özel güvenlik görevlisi, aramada bulduğu ve suç teşkil etmeyen ama tehlike doğurabilecek bir eşyayı emanete alabilir mi?",
+      "back": "Evet, ancak genel kolluk kuvvetlerine derhal bildirmek şartıyla alabilir. Aynı şart, suç teşkil eden veya delil olabilecek eşya için de geçerlidir.",
+      "explanation": "Terk edilmiş ve bulunmuş eşyayı emanete alma, maddede ayrı bir yetki olarak sayılır.",
+      "articleRefs": [
+        "7"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Hangi koruma ve güvenlik hizmeti için ne miktar ve özellikte ateşli silah bulundurulabileceğini kim belirler?",
+      "back": "Özel güvenlik komisyonu belirler.",
+      "explanation": "Koruma ve güvenlik hizmetinde kullanılacak silah ve teçhizatı ilgili kişi veya kuruluş temin eder.",
+      "articleRefs": [
+        "8"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Hangi yerlerde silahlı özel güvenlik görevlisi çalıştırılmasına izin verilmez?",
+      "back": "Eğitim ve öğretim kurumlarında, sağlık tesislerinde, talih oyunları işletmelerinde ve içkili yerlerde izin verilmez.",
+      "explanation": "Özel güvenlik görevlileri ayrıca özel toplantılarda, spor müsabakalarında, sahne gösterileri ve benzeri etkinliklerde silahlı olarak görev yapamaz.",
+      "articleRefs": [
+        "8"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Özel güvenlik şirketleri ateşli silah alıp bulundurabilir mi?",
+      "back": "Hayır, kural olarak alamaz ve bulunduramaz. Ancak para ve değerli eşya nakli ile geçici süreli koruma ve güvenlik hizmetlerinde kullanılmak üzere, komisyonun kararı ve valinin onayıyla silah alma, kullanma ve taşıma izni verilebilir.",
+      "explanation": "Aynı izin, silah eğitiminde kullanılmak üzere özel güvenlik eğitimi veren kurumlara da komisyonun kararı ve valinin onayıyla verilebilir.",
+      "articleRefs": [
+        "8"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Özel güvenlik görevlisi silahını görev alanı dışına çıkarabilir mi?",
+      "back": "Hayır, silahını görev alanı dışına çıkaramaz. Güzergâh ifade eden durumlarda ise güzergâh boyu görev alanı sayılır.",
+      "explanation": "Güzergâh ifade eden durumlar arasında şunlar bulunur: işlenmiş bir suçun sanığının veya suç işleyeceğinden kuvvetle şüphe edilen kişinin takibi, dışarıdan yapılan saldırılara karşı tedbir alınması, para ve değerli eşya nakli, cenaze töreni. Görev alanı, zorunlu hallerde Komisyon kararıyla genişletilebilir.",
+      "articleRefs": [
+        "9"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Kişi korumasında çalışan özel güvenlik görevlisinin görev alanı her durumda kişi koruma izni verilen ilin sınırları mıdır?",
+      "back": "Hayır. Koruduğu kişiyle birlikteyken görev alanı ülke genelidir; koruduğu kişi yanında değilken kişi koruma izni verilen ilin sınırlarıdır.",
+      "explanation": "Özel güvenlik görevlisi, md 7'de sayılan yetkileri sadece görevli olduğu süre içinde ve görev alanında kullanabilir.",
+      "articleRefs": [
+        "9"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Zor kullanma veya yakalama yetkisinin kullanıldığı olayda yakalanan kişi kime teslim edilir?",
+      "back": "Genel kolluğa teslim edilir; zapt edilen eşya da genel kolluğa teslim edilir.",
+      "explanation": "Zor kullanma ve yakalama yetkilerinin kullanılmasını gerektiren olaylar, en seri vasıtayla yetkili genel kolluğa bildirilir.",
+      "articleRefs": [
+        "9"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Özel güvenlik görevlisi olabilmek için kaç yaşını doldurmuş olmak gerekir?",
+      "back": "18 yaşını doldurmuş olmak gerekir.",
+      "explanation": "Türkiye Cumhuriyeti vatandaşı olmak da aranan şartlar arasındadır.",
+      "articleRefs": [
+        "10"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Silahsız görev yapacak özel güvenlik görevlisi için en az kaç yıllık ilköğretim mezuniyeti aranır?",
+      "back": "Sekiz yıllık ilköğretim veya ortaokul mezuniyeti aranır. Silahlı görev yapacaklar için ise en az lise veya dengi okul mezuniyeti gerekir.",
+      "articleRefs": [
+        "10"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Özel güvenlik temel eğitimini başarıyla tamamlayan kişi, güvenlik soruşturması olumsuz olsa da özel güvenlik görevlisi olabilir mi?",
+      "back": "Hayır. Temel eğitimi tamamlamak tek başına yetmez; güvenlik soruşturmasının olumlu olması da şarttır.",
+      "explanation": "Aranan şartlar arasında, görevin yapılmasına engel olabilecek vücut ve akıl hastalığı ile engelli bulunmamak da vardır.",
+      "articleRefs": [
+        "10"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Valilikçe yapılan güvenlik soruşturması ve arşiv araştırması ne kadar sürede tamamlanır?",
+      "back": "Bir ay içinde tamamlanır. Her kimlik verilmesinde veya ihtiyaç duyulması halinde yenilenir.",
+      "explanation": "Soruşturma sonucu olumlu olanlara, özel güvenlik temel eğitimini başarıyla bitirmiş olmak şartıyla valilikçe çalışma izni verilir. Bu araştırma, özel güvenlik şirketlerinde kurucu ve/veya yönetici olarak çalışacaklar hakkında da yapılır.",
+      "articleRefs": [
+        "11"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Göreve başlayan özel güvenlik görevlileri işveren tarafından ne kadar süre içinde valiliğe bildirilir?",
+      "back": "Onbeş gün içinde bildirilir. Bildirim yükümlülüğü işverene aittir.",
+      "articleRefs": [
+        "11"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Özel güvenlik görevlisi olabilme şartlarından birini sonradan kaybettiği tespit edilen kişinin kimliğine ne olur?",
+      "back": "Kimliği iptal edilir. Aynı sonuç, şartları hiç taşımadığı tespit edilenler ve yöneticiler için de geçerlidir.",
+      "explanation": "Terör örgütlerine ya da Milli Güvenlik Kurulunca Devletin milli güvenliğine karşı faaliyette bulunduğuna karar verilen yapı, oluşum veya gruplara iltisakı veya irtibatı olduğu tespit edilen kişiler, özel güvenlik alanında faaliyet yürüten şirket veya birimlerde çalışamaz.",
+      "articleRefs": [
+        "11"
+      ]
+    }
+  ]
+}

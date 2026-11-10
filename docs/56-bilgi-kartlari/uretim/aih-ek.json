@@ -1,0 +1,204 @@
+{
+  "deck": {
+    "topicId": "8b991a24-eecf-48c9-a068-0aecfc65cfd1",
+    "legislationSlug": "aihs",
+    "sourceLabel": "AI bilgi kartı — Avrupa İnsan Hakları Sözleşmesi md 3, 5, 9, 10, 12, 17, 18, 33, 38",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: resmî madde metni + çıkmış sorular)"
+  },
+  "cards": [
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Avrupa İnsan Hakları Sözleşmesi md 3'e göre işkencenin yanı sıra hiç kimse hangi nitelikte muamele veya cezaya tabi tutulamaz?",
+      "back": "İnsanlık dışı ya da aşağılayıcı muamele veya cezaya. Madde bunları işkenceyle birlikte yasaklar.",
+      "explanation": "Md 3 'hiç kimse' diye başlar. İşkence, insanlık dışı muamele ya da ceza ve aşağılayıcı muamele ya da ceza aynı cümlede yasaklanır.",
+      "articleRefs": [
+        "3"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Avrupa İnsan Hakları Sözleşmesi md 3'teki insanlık dışı ya da aşağılayıcı olma yasağı yalnız muameleler için mi geçerlidir?",
+      "back": "Hayır. Yasak cezayı da kapsar: hiç kimse insanlık dışı ya da aşağılayıcı muamele veya cezaya tabi tutulamaz.",
+      "explanation": "Maddede 'muamele veya ceza' birlikte geçer. Bir uygulama ister muamele ister ceza biçiminde olsun, insanlık dışı ya da aşağılayıcıysa yasağın kapsamındadır.",
+      "articleRefs": [
+        "3"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Avrupa İnsan Hakları Sözleşmesi md 5'e göre yakalanan kişiye yakalanma nedenleri ve kendisine yöneltilen suçlamalar nasıl bildirilmelidir?",
+      "back": "En kısa sürede ve anladığı bir dilde. Bu bildirim, yakalanan her kişi için zorunludur.",
+      "explanation": "Bildirim yalnız yakalanma nedenlerini kapsamaz. Kişiye yöneltilen her türlü suçlama da bildirilmelidir.",
+      "articleRefs": [
+        "5"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Avrupa İnsan Hakları Sözleşmesi md 5/1’e göre kişi hangi hâllerde yasaya uygun olarak özgürlüğünden yoksun bırakılabilir?",
+      "back": "a) Mahkûmiyet kararı sonrası tutulma; b) mahkeme kararına uymama ya da yasal yükümlülüğü sağlama; c) suç şüphesi ya da suçu veya kaçmayı önleme zorunluluğuyla adli merci önüne çıkarılmak üzere yakalama; d) küçüğün gözetim altında eğitimi; e) bulaşıcı hastalık, akıl hastalığı, alkol veya uyuşturucu bağımlılığı, serserilik; f) usulsüz girişin önlenmesi, sınır dışı veya iade.",
+      "explanation": "Bu hâller dışında ve yasanın öngördüğü usule uygun olmadan hiç kimse özgürlüğünden yoksun bırakılamaz.",
+      "articleRefs": [
+        "5"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Avrupa İnsan Hakları Sözleşmesi md 5'e göre tutulmanın yasaya uygunluğunun denetlenmesi için yasayla adli görev yapmaya yetkili bir kamu görevlisine başvurmak yeterli midir?",
+      "back": "Hayır. Özgürlüğünden yoksun kılınan kişi, tutulmanın yasaya uygunluğu hakkında kısa sürede karar verilmesi için bir mahkemeye başvurma hakkına sahiptir.",
+      "explanation": "Yargıç ya da adli görev yapmaya yetkili kamu görevlisi önüne derhal çıkarılma, 1.c'ye göre yakalananlara tanınan ayrı bir güvencedir (md 5/3). Mahkemeye başvuru hakkı ise yakalama ya da tutulma yoluyla özgürlüğünden yoksun kılınan herkese tanınır (md 5/4); tutulma yasaya aykırıysa kişi serbest bırakılır. Bu maddeye aykırı bir yakalama ya da tutma işleminin mağduru olan herkes tazminat hakkına sahiptir.",
+      "articleRefs": [
+        "5"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Avrupa İnsan Hakları Sözleşmesi md 9'daki düşünce, vicdan ve din özgürlüğü, din veya inanç konusunda hangi özgürlüğü de içerir?",
+      "back": "Din veya inanç değiştirme özgürlüğünü.",
+      "explanation": "Hak, dinini veya inancını açıklama özgürlüğünü de kapsar. Bu açıklama tek başına veya topluca, kamuya açık veya kapalı biçimde ibadet, öğretim, uygulama ve ayin yaparak gerçekleşebilir.",
+      "articleRefs": [
+        "9"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Avrupa İnsan Hakları Sözleşmesi md 9'a göre din veya inancını açıklama özgürlüğü hangi amaçlarla sınırlanabilir?",
+      "back": "Kamu güvenliğinin, kamu düzeninin, genel sağlık veya ahlakın ya da başkalarının hak ve özgürlüklerinin korunması amacıyla.",
+      "explanation": "Sınırlama ayrıca yasayla öngörülmüş olmalı ve demokratik bir toplumda gerekli bulunmalıdır. Madde, 'sadece' bu şartları taşıyan sınırlamalara izin verir.",
+      "articleRefs": [
+        "9"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Avrupa İnsan Hakları Sözleşmesi md 9/2'deki sınırlama hükmü, düşünce, vicdan ve din özgürlüğünün tamamına mı yöneliktir?",
+      "back": "Hayır. Md 9/2, sınırlamayı din veya inancını açıklama özgürlüğü için düzenler.",
+      "explanation": "Md 9/1 hakkı düşünce, vicdan ve din özgürlüğü olarak geniş tanımlar. Md 9/2'nin öznesi ise din veya inancını açıklama özgürlüğüdür. Bu özgürlük, yasayla öngörülen ve demokratik bir toplumda gerekli sınırlamalara tabi tutulabilir.",
+      "articleRefs": [
+        "9"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Avrupa İnsan Hakları Sözleşmesi md 10'a göre ifade özgürlüğü hakkı hangi özgürlükleri de kapsar?",
+      "back": "Kanaat özgürlüğünü ve haber ve görüş alma ve verme özgürlüğünü. Bu özgürlükler kamu makamlarının müdahalesi olmaksızın ve ülke sınırları gözetilmeksizin kullanılır.",
+      "articleRefs": [
+        "10"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Avrupa İnsan Hakları Sözleşmesi md 10'a göre ifade özgürlüğünün kullanılmasına getirilecek formalite, koşul, sınırlama veya yaptırımlar hangi genel şartları taşımalıdır?",
+      "back": "Yasayla öngörülmüş olmalı ve demokratik bir toplumda maddede sayılan amaçlardan biri için gerekli bulunmalıdır.",
+      "explanation": "Bu amaçlar arasında şunlar yer alır: ulusal güvenliğin, toprak bütünlüğünün veya kamu güvenliğinin korunması, kamu düzeninin sağlanması, suç işlenmesinin önlenmesi, sağlığın veya ahlakın korunması, başkalarının şöhret ve haklarının korunması, gizli bilgilerin yayılmasının önlenmesi ve yargı erkinin yetki ve tarafsızlığının güvence altına alınması. Madde, bu özgürlüklerin görev ve sorumluluklar da yüklediğini belirtir.",
+      "articleRefs": [
+        "10"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Avrupa İnsan Hakları Sözleşmesi md 12'ye göre evlenme ve aile kurma hakkına kim sahiptir?",
+      "back": "Evlenme çağına gelen her erkek ve kadın.",
+      "articleRefs": [
+        "12"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Avrupa İnsan Hakları Sözleşmesi md 12'ye göre evlenme hakkı hangi düzenlemelere uygun olarak kullanılır?",
+      "back": "Bu hakkın kullanımını düzenleyen ulusal yasalara uygun olarak.",
+      "articleRefs": [
+        "12"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Avrupa İnsan Hakları Sözleşmesi md 17'ye göre Sözleşme hükümleri, hangi amaçla etkinliğe girişme ya da eylemde bulunma hakkı verdiği biçiminde yorumlanamaz?",
+      "back": "Sözleşme'de tanınan hak ve özgürlüklerin yok edilmesi ya da Sözleşme'de öngörülmüş olandan daha geniş ölçüde sınırlandırılması amacıyla.",
+      "articleRefs": [
+        "17"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Avrupa İnsan Hakları Sözleşmesi md 17'deki hakları kötüye kullanma yasağı kimlere yönelik olarak kurulmuştur?",
+      "back": "Devlete, topluluğa ve kişiye. Sözleşme hükümleri bunlardan hiçbirine hakları yok etmeye yönelik bir hak verdiği biçiminde yorumlanamaz.",
+      "articleRefs": [
+        "17"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Avrupa İnsan Hakları Sözleşmesi md 18'e göre Sözleşme hükümleriyle izin verilen kısıtlamalar hangi sınır içinde uygulanabilir?",
+      "back": "Yalnız öngörüldükleri amaç doğrultusunda. Bu kısıtlamalar öngörüldükleri amaç dışında uygulanamaz.",
+      "articleRefs": [
+        "18"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Avrupa İnsan Hakları Sözleşmesi md 33'e göre Mahkeme'ye devletlerarası başvuruyu kim yapabilir?",
+      "back": "Her Yüksek Sözleşmeci Taraf. Başvuru, diğer bir Yüksek Sözleşmeci Taraf'a karşı yapılır.",
+      "articleRefs": [
+        "33"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Avrupa İnsan Hakları Sözleşmesi md 33'e göre devletlerarası başvuruda yalnız Sözleşme hükümlerinin ihlali mi ileri sürülebilir?",
+      "back": "Hayır. Başvuru, Sözleşme ve Protokollerinin hükümlerinin ihlali iddiasıyla yapılabilir.",
+      "articleRefs": [
+        "33"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Avrupa İnsan Hakları Sözleşmesi md 38'e göre Mahkeme başvuruyu kimlerle birlikte inceler?",
+      "back": "Tarafların temsilcileriyle birlikte.",
+      "articleRefs": [
+        "38"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Avrupa İnsan Hakları Sözleşmesi md 38'e göre Mahkeme her başvuruda soruşturma yapmak zorunda mıdır?",
+      "back": "Hayır. Mahkeme soruşturmayı gerekirse yapar.",
+      "articleRefs": [
+        "38"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Avrupa İnsan Hakları Sözleşmesi md 38'e göre Mahkeme soruşturma yaptığında ilgili Yüksek Sözleşmeci Tarafların yükümlülüğü nedir?",
+      "back": "Soruşturmanın etkin olarak yürütülmesi için gerekli tüm kolaylıkları sağlamak.",
+      "articleRefs": [
+        "38"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,300 @@
+{
+  "deck": {
+    "topicId": "3a7fb703-175b-4a01-a217-a00766c51d07",
+    "legislationSlug": "5275-ceza-ve-guvenlik-tedbirlerinin-infazi-hakkinda-kanun",
+    "sourceLabel": "AI bilgi kartı — 5275 Ceza ve Güvenlik Tedbirlerinin İnfazı Hakkında Kanun md 44–47",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: resmî madde metni + çıkmış sorular)"
+  },
+  "cards": [
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Hücreye koyma cezası hangi süre aralığında verilir?",
+      "back": "1 günden 20 güne kadar. Süre, hükümlünün eylemlerinin nitelik ve ağırlığına göre belirlenir.",
+      "explanation": "Hükümlü geceli ve gündüzlü bir hücrede tek başına tutulur ve her türlü temastan yoksun bırakılır. Eylemler iki gruba ayrılır: 1 günden 10 güne kadar ve 11 günden 20 güne kadar hücreye koyma gerektirenler.",
+      "articleRefs": [
+        "44"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Hücreye koyma cezasının tanımında hangi hak saklı tutulur?",
+      "back": "Açık havaya çıkma hakkı. Hükümlü hücrede tek başına tutulsa da bu hak korunur.",
+      "explanation": "Hücre, yaşamsal gereksinmeleri karşılayacak biçimde düzenlenir.",
+      "articleRefs": [
+        "44"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Kuruma cep telefonu sokmak, 1 günden 10 güne kadar hücreye koyma cezasını gerektiren eylemlerden midir?",
+      "back": "Hayır. Cep telefonu, telsiz ve sair elektronik haberleşme aracını kuruma sokmak, bulundurmak ya da kullanmak 11 günden 20 güne kadar hücreye koyma gerektirir.",
+      "explanation": "Hafif gruptaki yasak eşya bendi, ağır grubun (g) bendinde sayılanlar dışında kalan ve Kanuna uygun olarak yasaklanmış eşya, araç, gereç veya malzemeyi kapsar. Ateşli silâh, patlayıcı madde, zehir, uyuşturucu ve elektronik haberleşme araçları ağır gruptadır.",
+      "articleRefs": [
+        "44"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Hükümlünün hücreye koyma cezasını gerektiren eylemi öğrenildiğinde disiplin soruşturmasına kim başlar?",
+      "back": "Kurumun en üst amirince atanan bir görevli başlar.",
+      "explanation": "Uyarma, kınama ve bazı etkinliklere katılmaktan alıkoyma cezalarını kurumun en üst amiri doğrudan verir ve uygular; diğer disiplin cezalarında soruşturma yapılır. Hükümlünün ceza infaz kurumu dışındaki eylemlerinde soruşturma, eylem öncesi en son barındırıldığı ceza infaz kurumunun disiplin kurulunca yapılır.",
+      "articleRefs": [
+        "44",
+        "47"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Firara teşebbüs etmek, 11 günden 20 güne kadar hücreye koyma cezasını gerektirir mi?",
+      "back": "Hayır. Firara teşebbüs 1 günden 10 güne kadar hücreye koyma gerektirir. 11–20 gün grubunda olan, firar etmek ya da tünel kazmaktır.",
+      "explanation": "Aynı ayrım tünel için de geçerlidir: tünel kazmaya teşebbüs 1–10 gün, tünel kazmak 11–20 gün hücreye koyma gerektirir.",
+      "articleRefs": [
+        "44"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Kurum görevlilerine rüşvet teklif etmek hangi süre aralığında hücreye koyma cezası gerektirir?",
+      "back": "1 günden 10 güne kadar. Rüşvet vermek ise 11 günden 20 güne kadar hücreye koyma gerektirir.",
+      "explanation": "Hüküm, kurum görevlileriyle birlikte dış güvenlik görevlilerini de kapsar. Rüşvet teklif etmek veya vermeye kalkışmak hafif grupta, rüşvet vermek ağır grupta yer alır.",
+      "articleRefs": [
+        "44"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Hücreye konulan hükümlünün kimlerle görüşmesine engel olunmaz?",
+      "back": "Resmî ve yetkili merciler ile avukatla görüşmesine engel olunmaz.",
+      "explanation": "Hücreye koyma her türlü temastan yoksun bırakmayı içerir. Bu görüşmeler ise ceza sırasında da saklıdır.",
+      "articleRefs": [
+        "44"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Çocuk hükümlüler hakkında uygulanabilecek disiplin tedbirleri hangi niteliktedir?",
+      "back": "Ceza niteliği taşımayan, koruma ve önleme amaçlı tedbirlerdir.",
+      "explanation": "Teşvik esaslı ayrıcalıkları ertelemek, kaldığı odayı ve yatakhaneyi değiştirmek ve belli yerlere girmesini yasaklamak bu tedbirler arasındadır.",
+      "articleRefs": [
+        "45"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Çocuk hükümlü hakkında disiplin tedbiri hangi amaçlarla uygulanır?",
+      "back": "Disiplin cezası gerektiren eylemin gerçekleşme riskini ortadan kaldırmak ya da soruşturma sürerken giderilmesi güç ve imkânsız zararların doğmasını önlemek için uygulanır.",
+      "explanation": "Bulunduğu kurumun başka bir kısmına nakletmek ve bazı eşyaları bulundurmasını veya kullanmasını yasaklamak da bu tedbirler arasındadır.",
+      "articleRefs": [
+        "45"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Çocuğun çalıştığı işyerini veya atölyeyi değiştirme tedbiri hangi kayıtla uygulanır?",
+      "back": "Meslek eğitiminin bütünlüğünü ve sürekliliğini bozmayacak şekilde uygulanır.",
+      "explanation": "Bu da ceza niteliği taşımayan, koruma ve önleme amaçlı bir disiplin tedbiridir.",
+      "articleRefs": [
+        "45"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Çocuk, daha önce uyarma cezası almasına sebep olan davranışı ikinci kez tekrarlarsa hangi disiplin cezası verilir?",
+      "back": "Kınama. Çocuğun dikkati, davranışının sonuçlarına ikinci kez çekilir.",
+      "explanation": "Uyarma, çocuğa eyleminin kötü ve uygunsuz olduğunun açıklanması ve tekrarında doğuracağı sonuçlara dikkatinin çekilmesidir. Yatma ve kalkma zamanına uymamak ile sayımı geciktirmek uyarma gerektiren eylemler arasındadır.",
+      "articleRefs": [
+        "46"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Onarma, tazmin etme ve eski hâle getirme cezası hangi koşulla uygulanır?",
+      "back": "Çocuğun istekli olması koşuluyla uygulanır. Eylemin sonuçlarını çocuk; onarma, tazmin etme veya eski hâle getirme yoluyla giderir.",
+      "explanation": "Çevre temizliğine dikkat etmemek ve kurum içindeki iş ve eğitim yerini izinsiz terk etmek bu cezayı gerektiren eylemler arasındadır.",
+      "articleRefs": [
+        "46"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Harcamalarına sınır koyma cezasında çocuğun haftalık harcama limitinin ne kadarı kesilir?",
+      "back": "Üçte biri. Çalışması karşılığında aldığı ücret ve ailesinden gelen paranın haftalık harcama limitinin üçte biri 30 gün süreyle kesilir.",
+      "explanation": "Bu ceza, daha önce onarma, tazmin etme ve eski hâle getirme cezası verilmiş davranışın ikinci kez tekrarında uygulanır.",
+      "articleRefs": [
+        "46"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Çocuğa bazı etkinliklere katılmaktan alıkoyma cezasını kim verir?",
+      "back": "Kurumun en üst amiri. Cezayı hem verir hem uygular.",
+      "explanation": "Kurumun en üst amiri uyarma ve kınama cezalarını da verir ve uygular. Kumar oynamak ve kavga etmek, alıkoyma cezasını gerektiren eylemler arasındadır.",
+      "articleRefs": [
+        "46",
+        "47"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Bazı etkinliklere katılmaktan alıkoyma cezasıyla çocuk en fazla ne kadar süre yoksun bırakılır?",
+      "back": "30 güne kadar. Bu süre boyunca sosyal, kültürel ve sportif faaliyetlere katılamaz.",
+      "explanation": "Başkasına ait eşyaya kasten zarar vermek ile kurum veya dış güvenlik görevlilerine rüşvet vermek bu cezayı gerektiren eylemler arasındadır.",
+      "articleRefs": [
+        "46"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Teşvik esaslı ayrıcalıkları geri alma cezası, bazı etkinliklere katılmaktan alıkoyma cezasını gerektiren davranışın ilk işlenişinde verilebilir mi?",
+      "back": "Hayır. Daha önce alıkoyma cezası verilmiş davranış ikinci kez tekrarlanınca verilir ve ayrıcalıklar 30 gün süreyle geri alınır.",
+      "explanation": "İlk işlenişte uygulanan ceza, bazı etkinliklere katılmaktan alıkoymadır. Ayrıcalıkların geri alınması bu davranışın tekrarına bağlanmıştır.",
+      "articleRefs": [
+        "46"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "İznin ertelenmesi cezasında çocuğun izni en fazla ne kadar ertelenebilir?",
+      "back": "60 güne kadar. Süre, eylemin niteliğine ve ağırlık derecesine göre belirlenir.",
+      "explanation": "Aynı fıkra, kapalı ceza infaz kurumlarında açık ziyaretlerin 60 güne kadar kapalı şekilde yaptırılmasını da düzenler. Kurum görevlilerine hakaret etmek, karşı gelmek ve kurum dışına izinsiz çıkmak bu cezayı gerektiren eylemler arasındadır.",
+      "articleRefs": [
+        "46"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Çocuk hükümlünün kapalı ceza infaz kurumuna iadeyi gerektiren eylemi öğrenildiğinde soruşturmaya en geç ne zaman başlanır?",
+      "back": "Derhâl ve en geç 5 gün içinde başlanır.",
+      "explanation": "Uyarma, kınama ve bazı etkinliklere katılmaktan alıkoyma dışındaki disiplin cezalarında soruşturmayı, eylemin öğrenilmesinden itibaren kurumun en üst amirince atanan görevli başlatır. Firara teşebbüs etmek veya firar etmek iadeyi gerektiren eylemler arasındadır.",
+      "articleRefs": [
+        "46",
+        "47"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Kapalı ceza infaz kurumuna iade cezası ilk uygulamada ne kadar süreyle verilir?",
+      "back": "6 ay. Aynı fıkrada sayılan eylemlerin ikinci veya daha fazla tekrarında süre 1 yıldır.",
+      "explanation": "Çocuk, çocuk kapalı ceza infaz kurumuna iade edilir. Böyle bir kurum yoksa kapalı ceza infaz kurumlarının çocuklara ayrılan bölümlerine iade edilir.",
+      "articleRefs": [
+        "46"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Çocuk, uyarma cezası gerektiren bir eylem nedeniyle çocuk kapalı infaz kurumuna iade edilebilir mi?",
+      "back": "Hayır. İade yalnız kapalı ceza infaz kurumuna iade fıkrasında sayılan eylemler için uygulanır. Bu fıkra dışındaki disiplin suçları ve cezalarından dolayı çocuk iade edilemez.",
+      "explanation": "İadeyi gerektiren eylemlerden bazıları: bir kimseyi rızası hilafına alıkoymak, şiddet ve tehdit ile kurum görevlilerinin görevini engellemek, görevlilere ya da diğer çocuklara işkence yapmak veya yaptırmak.",
+      "articleRefs": [
+        "46"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Kapalı infaz kurumunda bulunan çocuğa odaya kapatma cezası en fazla kaç gün uygulanır?",
+      "back": "5 güne kadar. Çocuk, açık havaya çıkma hakkı saklı kalmak üzere gece ve gündüz tek başına bir odada tutulur.",
+      "explanation": "Bu ceza, iadeyi gerektiren eylemler kapalı infaz kurumunda işlenirse verilir. Çocuk cezanın infazı öncesinde, sırasında ve sonrasında doktor kontrolünden geçirilir. Kurum görevlilerine istediği zaman ulaşabilir; ailesi, avukatı ve yasal temsilcisiyle görüşebilir.",
+      "articleRefs": [
+        "46"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Disiplin soruşturması en geç ne kadar sürede tamamlanır?",
+      "back": "15 gün içinde. Düzenlenen rapor ve ekleri disiplin kuruluna sunulur.",
+      "explanation": "Süre, eylemin ve soruşturmanın niteliğine göre infaz hâkiminin yazılı onayıyla 7 güne kadar uzatılabilir.",
+      "articleRefs": [
+        "47"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Disiplin soruşturmasının süresini kurumun en üst amiri uzatabilir mi?",
+      "back": "Hayır. Uzatma infaz hâkiminin yazılı onayıyla yapılır ve en çok 7 gün olabilir.",
+      "explanation": "Soruşturma en geç 15 gün içinde tamamlanır; uzatma, eylemin ve soruşturmanın niteliğine göre yapılır. Kurumun en üst amiri, soruşturmayı başlatacak görevliyi atar.",
+      "articleRefs": [
+        "47"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Hükümlü firar ettiğinde disiplin soruşturmasının tamamlanma süresi ne zaman başlar?",
+      "back": "Hükümlünün yakalandığının öğrenildiği tarihte başlar.",
+      "explanation": "Soruşturma bu tarihten itibaren en geç 15 gün içinde tamamlanır.",
+      "articleRefs": [
+        "47"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Hücreye koyma cezası, hükümlünün savunması alınmadan verilebilir mi?",
+      "back": "Hayır. Savunma alınmadan disiplin cezası verilemez; savunma yazılı ya da sözlü yapılabilir.",
+      "explanation": "Hücreye koyma cezası, hükümlünün eylemlerinin nitelik ve ağırlığına göre 1 günden 20 güne kadar verilir. Savunmasını süresinde vermeyen hükümlü bu hakkından vazgeçmiş sayılır.",
+      "articleRefs": [
+        "47",
+        "44"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Disiplin soruşturması yapılan hükümlüye savunmasını vermesi için ne kadar süre tanınır?",
+      "back": "3 gün. Bu süre içinde savunma vermezse bu hakkından vazgeçmiş sayılacağı kendisine yazılı olarak bildirilir.",
+      "explanation": "Bildirimde yüklenen eylemin niteliği ve sonuçları da gösterilir.",
+      "articleRefs": [
+        "47"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Disiplin kurulu kararında açıkça neler gösterilir?",
+      "back": "Şikâyet mercii ve süresi. Karar ayrıca gerekçeli olarak yazılır.",
+      "explanation": "Disiplin kurulu, cezayı evrak üzerinden görüşerek en geç 3 gün içinde karara bağlar. Yasada yazılı disiplin cezasının uygulanmasına ya da disiplin cezası verilmesine yer olmadığına karar verebilir. Karar, haklarında soruşturma yapılanlara yönetim tarafından derhâl tebliğ edilir.",
+      "articleRefs": [
+        "47"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Hükümlünün sözlü olarak yaptığı savunma nasıl saptanır?",
+      "back": "Tutanakla saptanır.",
+      "explanation": "Savunma yazılı olarak da sunulabilir. Türkçe bilmeyenlerin ve sağır ve dilsizlerin savunmaları tercüman aracılığıyla alınır.",
+      "articleRefs": [
+        "47"
+      ]
+    }
+  ]
+}

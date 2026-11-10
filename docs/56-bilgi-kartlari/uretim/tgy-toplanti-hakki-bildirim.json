@@ -1,0 +1,283 @@
+{
+  "deck": {
+    "topicId": "477f97e4-2862-4836-a40a-6812e0609898",
+    "legislationSlug": "2911-sayili-toplanti-ve-gosteri-yuruyusleri-kanunu",
+    "sourceLabel": "AI bilgi kartı — 2911 Sayılı Toplantı ve Gösteri Yürüyüşleri Kanunu md 1–12",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: resmî madde metni + çıkmış sorular)"
+  },
+  "cards": [
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "2911 sayılı Toplantı ve Gösteri Yürüyüşleri Kanunu, yetkili merciin hangi hallerini düzenler?",
+      "back": "Yasaklama ve erteleme hallerini düzenler.",
+      "explanation": "Kanunun düzenlediği konular şunlardır: hakkın kullanılmasındaki şekil, şart ve usuller; toplantı ve gösteri yürüyüşlerinin yeri, zamanı, usul ve şartları; düzenleme kurulunun görev ve sorumlulukları; güvenlik kuvvetlerinin görev ve yetkileri; yasaklar ve ceza hükümleri.",
+      "articleRefs": [
+        "1"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Toplantı ve Gösteri Yürüyüşleri Kanununa göre mahallin en büyük mülki amiri kimdir?",
+      "back": "İllerde vali, ilçelerde kaymakamdır.",
+      "articleRefs": [
+        "2"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Toplantı ve Gösteri Yürüyüşleri Kanununa göre emniyet teşkilatından hangi amirler mahallin güvenlik amiri sayılır?",
+      "back": "İllerde il emniyet müdürü, ilçelerde ilçe emniyet amiri veya komiseri.",
+      "articleRefs": [
+        "2"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "İle bağlı bir ilçenin, o ilin belediye sınırları içindeki kısmında Kanunun uygulanması yönünden mahallin en büyük mülki amiri ilçe kaymakamı mıdır?",
+      "back": "Hayır; bu kısımlar için mahallin en büyük mülki amiri ilin valisidir.",
+      "explanation": "Genel kural illerde vali, ilçelerde kaymakamdır. İle bağlı ilçelerin o ilin belediye sınırları içinde kalan kısımlarında ise Kanunun uygulanması yönünden yetkili amir ilin valisidir.",
+      "articleRefs": [
+        "2"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Toplantı ve Gösteri Yürüyüşleri Kanununa göre yabancıların toplantı ve gösteri yürüyüşü düzenlemesi neye bağlıdır?",
+      "back": "İçişleri Bakanlığının iznine bağlıdır.",
+      "articleRefs": [
+        "3"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Yabancıların, Toplantı ve Gösteri Yürüyüşleri Kanununa göre düzenlenen bir toplantıda topluluğa hitap etmesi İçişleri Bakanlığının iznine mi bağlıdır?",
+      "back": "Hayır; topluluğa hitap, toplantının yapılacağı mahallin en büyük mülkî idare amirliğine yapılacak bildirimle mümkündür. İçişleri Bakanlığının izni, yabancıların toplantıyı kendilerinin düzenlemesi için aranır.",
+      "articleRefs": [
+        "3"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Yabancıların bir toplantıda afiş ya da pankart taşıması için mülki idare amirliğine yapılacak bildirim, toplantıdan en az kaç saat önce yapılmalıdır?",
+      "back": "En az 48 saat önce; bildirim, toplantının yapılacağı mahallin en büyük mülkî idare amirliğine yapılır.",
+      "explanation": "Topluluğa hitap etmek ile resim, flama, levha, araç ve gereç taşımak da aynı bildirime bağlıdır.",
+      "articleRefs": [
+        "3"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Bir sendikanın kendi tüzüğüne göre yaptığı her toplantı Toplantı ve Gösteri Yürüyüşleri Kanunu hükümlerinin dışında mı kalır?",
+      "back": "Hayır; md 4/a'daki istisna, özel kanunlarına ve kendi tüzüklerine göre yapılan kapalı yer toplantılarını kapsar. Açık yer toplantısı bu bent kapsamında Kanunun dışında kalmaz.",
+      "explanation": "Bu istisna siyasi partiler, kamu kurumu niteliğindeki meslek kuruluşları, vakıflar, dernekler, ticari ortaklıklar ve diğer tüzelkişiler için de geçerlidir.",
+      "articleRefs": [
+        "4"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Kanun veya gelenek ve göreneklere göre yapılan tören, şenlik, karşılama ve uğurlamalar hangi şartla Toplantı ve Gösteri Yürüyüşleri Kanununa tabi olmaz?",
+      "back": "Kanunlara uymak ve kendi kural ve sınırları içinde kalmak şartıyla.",
+      "explanation": "Spor faaliyetleri ile bilimsel, ticari ve ekonomik amaçlarla yapılan toplantılar da bu Kanun hükümlerine tabi değildir.",
+      "articleRefs": [
+        "4"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Türkiye Büyük Millet Meclisi üyelerinin halkla yaptığı görüşmelerin Toplantı ve Gösteri Yürüyüşleri Kanununa tabi olmaması için görüşme hangi nitelikte olmalıdır?",
+      "back": "Sohbet niteliğinde olmalıdır.",
+      "explanation": "Aynı bentte Cumhurbaşkanı, Cumhurbaşkanı yardımcıları ve bakanların Devlet işleri hakkındaki toplantı ve konuşmaları da Kanun hükümlerinin dışında tutulmuştur.",
+      "articleRefs": [
+        "4"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Seçim zamanlarında yapılacak propaganda toplantıları hakkında Toplantı ve Gösteri Yürüyüşleri Kanunu ne öngörür?",
+      "back": "Bu toplantılarla ilgili kanun hükümleri saklıdır.",
+      "articleRefs": [
+        "5"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "İl ve ilçelerde toplantı ve gösteri yürüyüşü yer ve güzergâhı belirlenirken en çok üyeye sahip kaç sendikanın il ve ilçe temsilcilerinin görüşü alınır?",
+      "back": "3 sendikanın; görüşler alındıktan sonra yer ve güzergâhı mahallin en büyük mülki amiri belirler.",
+      "explanation": "Ayrıca Türkiye Büyük Millet Meclisinde grubu bulunan siyasi partilerin il ve ilçe temsilcileri, güzergâhın geçeceği ilçe ve il belediye başkanları ve kamu kurumu niteliğindeki meslek kuruluşlarının il ve ilçe temsilcilerinin görüşü alınır.",
+      "articleRefs": [
+        "6"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Belirlenmiş toplantı ve gösteri yürüyüşü yer ve güzergâhında sonradan yapılan değişiklik, duyurudan kaç gün sonra geçerli olur?",
+      "back": "15 gün sonra geçerli olur.",
+      "explanation": "Değişiklikler de ilk belirlemedeki yöntemle yapılır: yerel gazeteler ve internet haber siteleri ile valilik ve kaymakamlık internet sitelerinden ilan edilerek halka duyurulur.",
+      "articleRefs": [
+        "6"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Birden fazla yer ve güzergâh belirlenmiş bir ilçede, toplantının bunlardan hangisinde yapılacağını mahallin en büyük mülki amiri mi seçer?",
+      "back": "Hayır; belirlenen yer ve güzergâhlardan birini düzenleme kurulu tercih edebilir. Mülki amirin görevi bu yer ve güzergâhları belirlemektir.",
+      "explanation": "Kurul bu tercihi kamu düzenini ve genel asayişi bozmayacak şekilde yapar. Birden fazla yer ve güzergâh, il ve ilçenin büyüklüğü, gelişmişliği ve yerleşim özellikleri dikkate alınarak belirlenebilir.",
+      "articleRefs": [
+        "6"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Toplantı ve Gösteri Yürüyüşleri Kanununa göre toplantı ve yürüyüşlere hangi andan önce başlanamaz?",
+      "back": "Güneş doğmadan başlanamaz; bu kural, bu amaçla yapılan toplanmalar için de geçerlidir.",
+      "articleRefs": [
+        "7"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Toplantının yapıldığı yer, toplantı süresince hangi nitelikte sayılır?",
+      "back": "Umuma açık yer sayılır.",
+      "articleRefs": [
+        "8"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Toplantı ve Gösteri Yürüyüşleri Kanununa göre toplantıyı düzenleyecek düzenleme kurulu en az kaç kişiden oluşur?",
+      "back": "En az 7 kişiden oluşur.",
+      "explanation": "Kurul kendi aralarından birini başkan seçer. Diplomatik dokunulmazlıkları bulunan kişiler düzenleme kurulu başkan veya üyesi olamaz.",
+      "articleRefs": [
+        "9"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Düzenleme kurulu üyelerinin kaç yaşını doldurmuş olması gerekir?",
+      "back": "18 yaşını doldurmuş olmaları gerekir; ayrıca fiil ehliyetine sahip olmaları aranır.",
+      "articleRefs": [
+        "9"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Tüzel kişilerin toplantı ve gösteri yürüyüşü düzenlemesi neye bağlıdır?",
+      "back": "Yetkili organlarının kararına bağlıdır.",
+      "articleRefs": [
+        "9"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Toplantı bildirimi, toplantının yapılmasından en az kaç saat önce verilmelidir?",
+      "back": "En az 48 saat önce ve çalışma saatleri içinde verilir. Bildirimi düzenleme kurulu üyelerinin tamamı imzalar ve toplantı yerinin bağlı olduğu valilik veya kaymakamlığa verir.",
+      "explanation": "Bildirimde toplantının amacı; yapılacağı yer, gün, başlayış ve bitiş saatleri; düzenleme kurulunun başkan ile üyelerinin açık kimlikleri, meslekleri, ikametgahları ve varsa çalışma yerleri belirtilir. Bildirime yönetmelikte gösterilecek belgeler eklenir.",
+      "articleRefs": [
+        "10"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Toplantı bildirimi valilik veya kaymakamlıkça kabul edilmez ya da karşılığında alındı belgesi verilmezse ne yapılır?",
+      "back": "Durum tutanakla tespit edilir ve noter vasıtasıyla ihbar yapılır; ihbar saati bildirimin verilme saati sayılır.",
+      "explanation": "Bildirim karşılığında gün ve saati gösteren alındı belgesi verilmesi zorunludur.",
+      "articleRefs": [
+        "10"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Aynı yerde aynı gün toplantı için ayrı ayrı düzenleme kurullarınca bildirim verilirse hangi bildirim geçerlidir?",
+      "back": "İlk verilen bildirim geçerlidir; diğerlerine durum hemen yazılı olarak bildirilir.",
+      "articleRefs": [
+        "10"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Düzenleme kurulunun toplantı yerinde bulundurması gereken en az 7 kişinin içinde kurul başkanı sayılır mı?",
+      "back": "Evet; kurul kendi üyelerinden başkan dahil en az 7 kişiyi toplantının yapıldığı yerde bulundurmakla yükümlüdür.",
+      "explanation": "Toplantı, 6 ncı madde hükümlerine uyularak bildirimde belirtilen yerde yapılır.",
+      "articleRefs": [
+        "11"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Kurul üyelerini toplantı yerinde bulundurma yükümlülüğünün yerine getirildiğine dair tutanağı kim hazırlar?",
+      "back": "Düzenleme kurulu hazırlar ve yetkili kolluk amirine teslim eder.",
+      "articleRefs": [
+        "11"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Kolluğun toplantı ve gösteri yürüyüşlerinde kaydettiği ses ve görüntüler, şüphelilerin ve suç delillerinin tespiti dışında bir amaçla kullanılabilir mi?",
+      "back": "Hayır; bu kayıt ve görüntüler o tespit dışında başka bir amaçla kullanılamaz. Kolluk, katılımcıların ve konuşmacıların ses ve görüntülerini yapıldığı belli olacak şekilde kaydedebilir.",
+      "articleRefs": [
+        "11"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Toplantı ve Gösteri Yürüyüşleri Kanununa göre düzenleme kurulunun sorumluluğu ne zamana kadar sürer?",
+      "back": "Topluluk toplantı yerinden tamamen dağılıncaya kadar sürer.",
+      "articleRefs": [
+        "12"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Toplantı amacı dışına çıktığında düzenleme kurulu toplanamıyorsa dağılma kararını kim alır?",
+      "back": "Kurul başkanı alır ve durumu derhâl yetkili kolluk amirine bildirir.",
+      "explanation": "Toplantı amacı dışına çıktığında ya da kurul toplantının düzen içinde gerçekleşmesini imkânsız gördüğünde dağılma kararını kurul alır; kurul toplanamadığında bu kararı kurul başkanı alır.",
+      "articleRefs": [
+        "12"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Düzenleme kurulu, toplantının sükun ve düzenini sağlamak için gerektiğinde kimin yardımını ister?",
+      "back": "Güvenlik kuvvetlerinin yardımını ister.",
+      "explanation": "Kurul, toplantının sükun ve düzenini sağlamakla ve bildirimde yazılı amaç dışına çıkılmamasını sağlamakla yükümlü ve sorumludur; bunun için gereken önlemleri alır.",
+      "articleRefs": [
+        "12"
+      ]
+    }
+  ]
+}

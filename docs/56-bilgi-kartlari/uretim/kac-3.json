@@ -1,0 +1,193 @@
+{
+  "deck": {
+    "topicId": "1589379f-ddfe-4ce9-b572-543838b93032",
+    "legislationSlug": "5607-sayili-kacakcilikla-mucadele-kanunu",
+    "sourceLabel": "AI bilgi kartı — 5607 Sayılı Kaçakçılıkla Mücadele Kanunu md 17–27",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: resmî madde metni + çıkmış sorular)"
+  },
+  "cards": [
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Kaçakçılık davalarına bakacak asliye ceza mahkemelerini Adalet Bakanlığı mı belirler?",
+      "back": "Hayır. Adalet Bakanlığı yalnız teklif eder; mahkemeleri Hâkimler ve Savcılar Kurulu (Kanun metninde eski adıyla Hakimler ve Savcılar Yüksek Kurulu) belirler.",
+      "explanation": "Belirleme yetkisi Kuruldadır; Adalet Bakanlığının rolü teklifle sınırlıdır. Bağlantılı resmî belgede sahtecilik varsa görevli mahkeme ağır ceza mahkemesidir.",
+      "articleRefs": [
+        "17"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "5607 sayılı Kanun kapsamındaki suçlarla bağlantılı olarak resmî belgede sahtecilik suçu işlenirse görevli mahkeme hangisidir?",
+      "back": "Ağır ceza mahkemesi.",
+      "explanation": "Bu bağlantı yoksa davalar, Adalet Bakanlığının teklifi üzerine Hâkimler ve Savcılar Kurulunca belirlenen asliye ceza mahkemelerinde görülür.",
+      "articleRefs": [
+        "17"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Kaçakçılık suçlarından açılan davada mahkeme, iddianamenin bir örneğini hangi idareye de gönderir?",
+      "back": "İlgili gümrük idaresine.",
+      "explanation": "Bu gönderme, bu Kanunda tanımlanan suçlar dolayısıyla açılan bütün davalarda yapılır.",
+      "articleRefs": [
+        "18"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "İddianamenin örneği kendisine gönderilen ilgili gümrük idaresi, davaya kendiliğinden katılan olur mu?",
+      "back": "Hayır. İlgili gümrük idaresi ancak başvurusu üzerine davaya katılan olarak kabul edilir.",
+      "explanation": "Mahkeme iddianamenin bir örneğini ilgili gümrük idaresine gönderir; katılan sıfatı için idarenin başvurusu gerekir.",
+      "articleRefs": [
+        "18"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Kaçakçılığı önlemekle görevli olanlar, operasyon gerektiren bir olaydan haberdar olunca görevlerine mahallin en büyük mülkî amirine bilgi verdikten sonra mı başlar?",
+      "back": "Hayır. Kanunî görevlerini yapmaya başlarlar ve aynı zamanda mahallin en büyük mülkî amirine bilgi verirler.",
+      "explanation": "Göreve başlama ile mülkî amire bilgi verme aynı anda yürür; görevliler göreve başlamak için bilgi vermeyi beklemez.",
+      "articleRefs": [
+        "19"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Kaçakçılıkla görevli olanların, Kanun kapsamındaki suçlarla ilgili bilgi ve belge talepleri hangi hükümler saklı kalmak kaydıyla eksiksiz karşılanmak zorundadır?",
+      "back": "Savunma hakkına ilişkin hükümler saklı kalmak kaydıyla.",
+      "explanation": "Bu yükümlülük kamu veya özel, gerçek veya tüzel kişiler için geçerlidir. Talep, kaçakçılığı önleme, izleme ve soruşturmakla görevli olanlardan gelir.",
+      "articleRefs": [
+        "19"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Kaçakçılık suçlarını ihbar edenlerin kimliği hangi hâllerde açıklanabilir?",
+      "back": "İzinleri varsa ya da ihbarın niteliği haklarında suç oluşturuyorsa açıklanabilir; bunun dışında kimlikleri hiçbir şekilde açıklanamaz.",
+      "explanation": "Bu kişiler hakkında tanıkların korunmasına ilişkin hükümler uygulanır. Aynı koruma, md 3 ile md 23'ün birinci fıkrasının (a) ve (b) bentlerindeki suçlardan elde edilen malvarlığı değerlerini ihbar edenleri kapsar. Bu değerleri aklama suçunu ihbar edenler de korunur.",
+      "articleRefs": [
+        "19"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Kaçakçılık fiillerinin izlenmesi Cumhuriyet savcısının yazılı emriyle yapılmışsa, tutanakta emre ilişkin hangi bilgiler yer alır?",
+      "back": "Emrin tarih ve sayısı.",
+      "explanation": "Hâkim kararıyla yapılan izlemede hâkim kararının tarih ve sayısı yazılır. Tutanakta ayrıca tarih, yer ve düzenleyenlerin unvan ve isimleri de bulunur.",
+      "articleRefs": [
+        "20"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Kaçakçılık izleme tutanağının, işlemde hazır bulunan ilgililere mutlaka okunması mı gerekir?",
+      "back": "Hayır. Tutanağın kendilerini ilgilendiren kısımları ya okunur ya da okumaları için kendilerine verilir.",
+      "explanation": "Okuma ya da okumaya verme, ilgililerce onanmak üzere yapılır. Bu husus tutanağa yazılır ve ilgililere imza ettirilir.",
+      "articleRefs": [
+        "20"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Kaçakçılık izleme tutanağını imzalamaktan kaçınan ilgili için ne yapılır?",
+      "back": "İmzadan kaçınmanın nedenleri tutanağa geçirilir.",
+      "explanation": "Tutanak ilgilinin kimliğini, iş ve yerleşim yerini ve varsa ifadesini de kapsar; tutanağın imza altına alınması gereklidir.",
+      "articleRefs": [
+        "20"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Gümrük Kanunu gereğince belirlenen kapı ve yollar dışından gümrük bölgesine girmek isteyen kişi “dur” uyarısına uymazsa ne yapılır?",
+      "back": "Havaya ateş edilerek uyarı yinelenir.",
+      "explanation": "Silahla karşılık vermeye yeltenilirse ve sair surette meşru müdafaa durumuna düşülürse, yetkili memurlar doğrudan hedefe ateş edebilir. Bu ateş, saldırıyı etkisiz kılacak oranda olmalıdır.",
+      "articleRefs": [
+        "22"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Silah kullandığı için hakkında soruşturma açılan memur, avukatlık ücretini kendisi mi karşılar?",
+      "back": "Hayır. Bağlı bulunduğu kurum avukat sağlar ve avukatlık ücreti kurumlarınca karşılanır.",
+      "explanation": "Bu kural, memurun silah kullanmasından dolayı hem soruşturma hem kovuşturma açılması hâlinde uygulanır.",
+      "articleRefs": [
+        "22"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Görevlilerin yanaşmasına izin vermeyip kaçan deniz aracı, işaretle durma ihtarına ve uyarı ateşine de uymazsa ne yapılır?",
+      "back": "Durmaya zorlayacak şekilde üzerine ateş edilir.",
+      "explanation": "Önce uluslararası deniz işaretlerine göre telsiz, flama, mors ve benzeri işaretlerle durması ihtar olunur. Uymazsa uyarı mahiyetinde ateş edilir. Kaçmaya devam ederse üzerine ateş edilir. Görevliler gümrük bölgesindeki her nevi deniz aracına yanaşıp yük ve belgelerini incelemeye yetkilidir.",
+      "articleRefs": [
+        "22"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "İhbar üzerine yapılan kaçakçılık yakalamasında dağıtılacak ikramiye muhbirler ile elkoyma ikramiyesine hak kazananlar arasında nasıl paylaştırılır?",
+      "back": "Yüzde ellisi muhbirlere, yüzde ellisi elkoyma ikramiyesine hak kazananlara verilir.",
+      "explanation": "İhbarsız yakalamada ikramiyenin tamamı elkoyma ikramiyesine hak kazananlara ödenir. Kaçakçılığı önleme, izleme ve soruşturmakla yükümlü olanlara muhbir ikramiyesi ödenmez. Bunlardan yakalamaya bizzat ve fiilen katılanlar elkoyma ikramiyesine hak kazanır. İletişimin tespiti, gizli soruşturmacı, teknik araçla izleme, bilgi toplama ya da fiziki takip gibi çalışmalarla katkı sağlayanlar da hak kazanır.",
+      "articleRefs": [
+        "23"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Birim miktarı aşan sahipli uyuşturucu yakalamasında, ikramiyenin ne kadarı kamu davasının açılmasına bağlı olarak ödenir?",
+      "back": "Yarısı; kamu davasının açılmasını takip eden üç ay içinde ödenir. Diğer yarısı, mahkûmiyet hükmünün ya da müsadere kararının kesinleşmesini takip eden üç ay içinde ödenir.",
+      "explanation": "Birim miktarını aşmayan yakalamalarda ikramiye tek seferde ödenir. Sahipsiz yakalamada ikramiyenin tamamı, müsadere kararının kesinleşmesini takip eden üç ay içinde ödenir. Değer, Cumhurbaşkanınca tespit edilecek sabit rakamın memur aylık katsayısıyla çarpılmasıyla bulunur. Sabit rakam, uyuşturucunun birim miktarı ve ekili alanın yüzölçümü esas alınarak belirlenir.",
+      "articleRefs": [
+        "23"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Elkoyma ikramiyesine hak kazananlara olay başına ödenecek ikramiyenin üst sınırı nedir?",
+      "back": "30.000 gösterge rakamının memur aylık katsayısıyla çarpımı. Katsayı, kamu davasının açılması, mahkûmiyet ya da müsadere kararının kesinleştiği tarihteki katsayıdır.",
+      "explanation": "Bir yılda ödenecek ikramiye de 120.000 gösterge rakamının memur aylık katsayısıyla çarpımını geçemez. Bu sınırlar, kaçak akaryakıt yakalamalarında altıncı fıkra kapsamında yapılan ikramiye ödemelerine uygulanmaz.",
+      "articleRefs": [
+        "23"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "5607 sayılı Kaçakçılıkla Mücadele Kanunu hangi kanunu yürürlükten kaldırmıştır?",
+      "back": "10/7/2003 tarihli ve 4926 sayılı Kaçakçılıkla Mücadele Kanununu.",
+      "articleRefs": [
+        "25"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "5607 sayılı Kaçakçılıkla Mücadele Kanunu ne zaman yürürlüğe girer?",
+      "back": "Yayımı tarihinde.",
+      "articleRefs": [
+        "26"
+      ]
+    }
+  ]
+}

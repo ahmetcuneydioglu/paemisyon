@@ -1,0 +1,306 @@
+{
+  "deck": {
+    "topicId": "e22d1f78-8191-4099-9134-044c59114bd7",
+    "legislationSlug": "2577-idari-yargilama-usulu-kanunu-iyuk",
+    "sourceLabel": "AI bilgi kartı — 2577 İdari Yargılama Usulü Kanunu (İYUK) md 1–16",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: resmî madde metni + çıkmış sorular)"
+  },
+  "cards": [
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Danıştay, bölge idare mahkemeleri, idare mahkemeleri ve vergi mahkemelerinde hangi yargılama usulü uygulanır?",
+      "back": "Yazılı yargılama usulü uygulanır; inceleme evrak üzerinde yapılır.",
+      "explanation": "Bu yargı yerlerinin görevine giren uyuşmazlıkların çözümü, İdari Yargılama Usulü Kanununda gösterilen usullere tabidir.",
+      "articleRefs": [
+        "1"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "İdari dava türleri nelerdir?",
+      "back": "İptal davaları, tam yargı davaları ve kamu hizmetlerinden birinin yürütülmesi için yapılan idari sözleşmelerden doğan uyuşmazlıklara ilişkin davalar.",
+      "explanation": "İptal davasını, idari işlemin yetki, şekil, sebep, konu ve maksat yönlerinden biriyle hukuka aykırı olması nedeniyle menfaati ihlal edilenler açar. Tam yargı davasını, idari eylem ve işlemlerden kişisel hakları doğrudan muhtel olanlar açar. Sözleşme davalarından tahkim yolu öngörülen imtiyaz şartlaşma ve sözleşmelerinden doğan uyuşmazlıklar hariç tutulur.",
+      "articleRefs": [
+        "2"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "İdari mahkeme, hukuka aykırı bulduğu işlemin yerine geçecek biçimde idari işlem niteliğinde karar verebilir mi?",
+      "back": "Hayır. İdari mahkemeler idari eylem ve işlem niteliğinde ya da idarenin takdir yetkisini kaldıracak biçimde yargı kararı veremez.",
+      "explanation": "İdari yargı yetkisi, idari eylem ve işlemlerin hukuka uygunluğunun denetimiyle sınırlıdır. İdari mahkemeler yerindelik denetimi yapamaz; yürütme görevinin kanunlarda ve Cumhurbaşkanlığı Kararnamelerinde gösterilen şekil ve esaslara uygun olarak yerine getirilmesini kısıtlayacak karar da veremez.",
+      "articleRefs": [
+        "2"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "İdari davalar hangi başkanlıklara hitaben yazılmış dilekçelerle açılır?",
+      "back": "Danıştay, idare mahkemesi ve vergi mahkemesi başkanlıklarına hitaben yazılmış imzalı dilekçelerle.",
+      "explanation": "Dava konusu kararın ve belgelerin asılları veya örnekleri dilekçeye eklenir; dilekçe ile ekli evrakın örnekleri karşı taraf sayısından bir fazla olur.",
+      "articleRefs": [
+        "3"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "İdare veya vergi mahkemesi bulunmayan bir yerde dava dilekçeni nereye verebilirsin?",
+      "back": "Asliye hukuk hâkimliğine; büyükşehir belediyesi sınırları içinde kalıp kalmadığına bakılmaz.",
+      "explanation": "Dilekçe, savunma ve davalara ilişkin her türlü evrak Danıştay veya ait olduğu mahkeme başkanlığına ya da bunlara gönderilmek üzere idare veya vergi mahkemesi başkanlıklarına da verilebilir. Yabancı memlekette ise Türk konsolosluklarına verilebilir.",
+      "articleRefs": [
+        "4"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Birden fazla idari işleme karşı tek dilekçeyle hangi hâlde dava açılabilir?",
+      "back": "İşlemler arasında maddi veya hukuki yönden bağlılık ya da sebep-sonuç ilişkisi bulunuyorsa.",
+      "explanation": "Kural, her idari işlem aleyhine ayrı ayrı dava açılmasıdır; bağlılık ya da sebep-sonuç ilişkisi bu kuralın istisnasıdır.",
+      "articleRefs": [
+        "5"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Birden fazla kişinin müşterek dilekçeyle dava açması için hak veya menfaatlerinde iştirak bulunması tek başına yeterli midir?",
+      "back": "Hayır. Ayrıca davaya yol açan maddi olay veya hukuki sebeplerin aynı olması gerekir; şartlar birlikte aranır.",
+      "explanation": "Müşterek dilekçe için hem davacıların hak veya menfaatlerinde iştirak bulunmalı hem de davaya yol açan maddi olay veya hukuki sebepler aynı olmalıdır.",
+      "articleRefs": [
+        "5"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "İdari dava hangi tarihte açılmış sayılır?",
+      "back": "Harç ve posta ücreti alındıktan sonra dilekçenin deftere kaydının yapıldığı tarihte.",
+      "explanation": "Kayıt tarih ve sayısı dilekçenin üzerine yazılır; davacıya bunları gösteren imzalı ve mühürlü, pulsuz bir alındı kâğıdı verilir.",
+      "articleRefs": [
+        "6"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Harcı veya posta ücreti verilmeden ya da eksik ödenerek açılan davada, eksiğin tamamlanması için kaç günlük süre tebliğ edilir?",
+      "back": "Otuz gün. Gereği yapılmazsa bildirim bir daha tekrarlanır; süresinde ödenmezse davanın açılmamış sayılmasına karar verilir.",
+      "explanation": "Bildirimi daire başkanı veya görevlendireceği tetkik hâkimi, mahkeme başkanı veya hâkim yapar; bu tebligat re'sen genel bütçeden yapılır.",
+      "articleRefs": [
+        "6"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Dava açıldıktan sonra posta ücreti tebliğleri engelleyecek ölçüde azalır ve tekrarlanan bildirime rağmen tamamlanmazsa ilk olarak hangi karar verilir?",
+      "back": "Dosyanın işlemden kaldırılmasına karar verilir.",
+      "explanation": "Tamamlama için verilen süre otuz gündür. İşlemden kaldırma kararının tebliği tarihinden başlayarak üç ay içinde noksan tamamlanıp dosyanın yeniden işleme konulması istenmezse davanın açılmamış sayılmasına karar verilir ve davacıya tebliğ olunur.",
+      "articleRefs": [
+        "6"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Özel kanunda ayrı süre yoksa Danıştayda ve idare mahkemelerinde dava açma süresi kaç gündür?",
+      "back": "Altmış gün. Vergi mahkemelerinde bu süre otuz gündür.",
+      "explanation": "İdari uyuşmazlıklarda süre, yazılı bildirimin yapıldığı tarihi izleyen günden başlar.",
+      "articleRefs": [
+        "7"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Düzenleyici işleme dayalı bir işlemin iptali için düzenleyici işlemin de iptal edilmiş olması gerekir mi?",
+      "back": "Hayır. Düzenleyici işlemin iptal edilmemiş olması, bu düzenlemeye dayalı işlemin iptaline engel olmaz.",
+      "explanation": "İlanı gereken düzenleyici işlemlerde dava süresi ilan tarihini izleyen günden başlar. İşlem uygulanınca ilgililer düzenleyici işlem veya uygulanan işlem yahut her ikisi aleyhine birden dava açabilir.",
+      "articleRefs": [
+        "7"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Dava açma süresinin son günü tatil gününe rastlarsa ne olur?",
+      "back": "Süre, tatil gününü izleyen çalışma gününün bitimine kadar uzar.",
+      "explanation": "Tatil günleri sürelere dahildir; uzama, sürenin son günü tatile rastladığında söz konusudur. Süreler tebliğ, yayın veya ilan tarihini izleyen günden işlemeye başlar.",
+      "articleRefs": [
+        "8"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Kanunda yazılı bir sürenin bitimi çalışmaya ara verme zamanına rastlarsa süre ne kadar uzar?",
+      "back": "Ara vermenin sona erdiği günü izleyen tarihten itibaren yedi gün uzamış sayılır.",
+      "articleRefs": [
+        "8"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Adli yargı yerinde görev yönünden reddedilen davada, ret kararının kesinleşmesinden itibaren görevli idari yargı yerinde kaç gün içinde dava açılabilir?",
+      "back": "Otuz gün; süre kararın kesinleşmesini izleyen günden başlar.",
+      "explanation": "Bu durumda görevsiz yargı merciine başvurma tarihi, Danıştaya, idare ve vergi mahkemelerine başvurma tarihi olarak kabul edilir.",
+      "articleRefs": [
+        "9"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Adli yargı yerinin görevsizlik kararının kesinleşmesinden sonra otuz günlük süre geçirilmişse yine de idari dava açılabilir mi?",
+      "back": "Evet; idari dava açılması için öngörülen süre henüz dolmamışsa bu süre içinde idari dava açılabilir.",
+      "explanation": "Otuz günlük süre kesinleşmeyi izleyen günden işler; bu süre geçse de asıl idari dava açma süresi dolmamışsa dava açma imkânı devam eder.",
+      "articleRefs": [
+        "9"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "İdari makama yapılan başvuruya kaç gün içinde cevap verilmezse istek reddedilmiş sayılır?",
+      "back": "Otuz gün. İlgili, bu sürenin bittiği tarihten itibaren dava açma süresi içinde konusuna göre Danıştaya, idare ve vergi mahkemelerine dava açabilir.",
+      "articleRefs": [
+        "10"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "İdareden kesin olmayan cevap alan ilgili kesin cevabı beklemeyi seçerse, bekleme süresi en çok ne kadar olabilir?",
+      "back": "Başvuru tarihinden itibaren dört ay. Bekleme sırasında dava açma süresi işlemez.",
+      "explanation": "İlgili, kesin olmayan cevabı isteminin reddi sayarak dava da açabilir. Dava açılmamış ya da süreden reddedilmişse, otuz günlük süreden sonra yetkili idari makamın verdiği cevabın tebliğinden itibaren altmış gün içinde dava açılabilir.",
+      "articleRefs": [
+        "10"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Dava açmadan önce üst makama yapılan başvuru, dava açma süresinin baştan işlemesine yol açar mı?",
+      "back": "Hayır. Başvuru, işlemeye başlamış süreyi durdurur; ret ya da reddedilmiş sayılma hâlinde süre yeniden işler ve başvuru tarihine kadar geçmiş süre de hesaba katılır.",
+      "explanation": "Başvuruya otuz gün içinde cevap verilmezse istek reddedilmiş sayılır.",
+      "articleRefs": [
+        "11"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Dava açmadan önce idari işlemin değiştirilmesini, üst makam yoksa hangi makamdan isteyebilirsin?",
+      "back": "İşlemi yapmış olan makamdan; başvuru idari dava açma süresi içinde yapılır.",
+      "explanation": "Bu başvuruyla işlemin kaldırılması, geri alınması, değiştirilmesi veya yeni bir işlem yapılması istenebilir; kural olarak başvuru üst makama yapılır.",
+      "articleRefs": [
+        "11"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Önce iptal davası açan ilgili, tam yargı davasını hangi tarihten itibaren dava süresi içinde açabilir?",
+      "back": "İptal kararının ya da kanun yoluna başvurulmuşsa verilecek kararın tebliğinden; işlemin icrasından doğan zararlarda icra tarihinden itibaren.",
+      "explanation": "İlgili, isterse doğrudan tam yargı davası ya da iptal ve tam yargı davalarını birlikte de açabilir. Bu hâlde de 11 inci madde uyarınca idareye başvurma hakkı saklıdır.",
+      "articleRefs": [
+        "12"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "İdari eylemden hakkı ihlal edilen kişi, dava açmadan önce idareye hangi süreler içinde başvurmalıdır?",
+      "back": "Eylemi öğrendiği tarihten itibaren bir yıl ve her hâlde eylem tarihinden itibaren beş yıl içinde.",
+      "explanation": "İstek kısmen veya tamamen reddedilirse ya da otuz gün içinde cevap verilmezse dava süresi içinde dava açılabilir. Görevli olmayan adli yargı mercilerine açılıp görev yönünden reddedilen tam yargı davasında bu başvuru şartı aranmaz.",
+      "articleRefs": [
+        "13"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "İlk incelemede dava dilekçesi en önce hangi yönden incelenir?",
+      "back": "Görev ve yetki yönünden.",
+      "explanation": "İnceleme sırası: görev ve yetki, idari merci tecavüzü, ehliyet, idari davaya konu olacak kesin ve yürütülmesi gereken bir işlem olup olmadığı, süre aşımı, husumet ve 3 ile 5 inci maddelere uygunluk.",
+      "articleRefs": [
+        "14"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "İlk inceleme ve buna bağlı işlemler, dilekçenin alındığı tarihten itibaren en geç kaç gün içinde sonuçlandırılır?",
+      "back": "En geç onbeş gün içinde.",
+      "explanation": "Danıştayda daire başkanının görevlendireceği bir tetkik hâkimi, idare ve vergi mahkemelerinde mahkeme başkanı veya görevlendireceği bir üye inceler. Tek hâkimle çözümlenecek dava dilekçeleri için rapor düzenlenmez.",
+      "articleRefs": [
+        "14"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "İdari yargının görevli olduğu bir konuda dava görevsiz idari yargı yerinde açılmışsa ilk incelemede hangi karar verilir?",
+      "back": "Dava görev yönünden reddedilir ve dosya görevli mahkemeye gönderilir.",
+      "explanation": "Yetkisiz mahkemeye açılan davada da yetki yönünden ret ve dosyanın yetkili mahkemeye gönderilmesi kararı verilir. Adli yargının görevli olduğu konularda açılan davalar ise reddedilir.",
+      "articleRefs": [
+        "15",
+        "14"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Ehliyetli kişinin avukat olmayan vekili dava açmışsa, dilekçe hangi süreyle reddedilir?",
+      "back": "Otuz gün içinde bizzat veya bir avukat vasıtasıyla dava açılmak üzere dilekçe reddedilir.",
+      "explanation": "Dilekçenin 3 ve 5 inci maddelere aykırılığında da otuz gün içinde yeniden düzenlenmek üzere dilekçe reddedilir; yeniden verilen dilekçede aynı yanlışlıklar yapılırsa dava reddedilir. 3 üncü maddeye uygun olmama nedeniyle ret hâlinde yeni dilekçe için ayrıca harç alınmaz.",
+      "articleRefs": [
+        "15"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "İlk incelemede verilen, dilekçenin görevli idare merciine tevdii kararına karşı istinaf veya temyiz yoluna başvurulabilir mi?",
+      "back": "Evet. Kanun yolu kapalı olanlar; idari yargının görevli olduğu konularda görev ve yetki yönünden ret, gerçek hasma tebliğ ve 1/d bendindeki dilekçe ret kararlarıdır.",
+      "explanation": "Tevdi hâlinde Danıştaya veya ilgili mahkemeye başvurma tarihi, merciine başvurma tarihi olarak kabul edilir.",
+      "articleRefs": [
+        "15"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Taraflar, yapılan tebliğlere karşı kaç gün içinde cevap verebilir?",
+      "back": "Tebliğ tarihinden itibaren otuz gün içinde.",
+      "explanation": "Haklı sebep varsa taraflardan birinin isteği üzerine görevli mahkeme kararıyla, otuz günü geçmemek ve bir defaya mahsus olmak üzere uzatılabilir; süre geçtikten sonra yapılan uzatma talebi kabul edilmez.",
+      "articleRefs": [
+        "16"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Tam yargı davasında dava dilekçesindeki miktarın artırılmasına ilişkin dilekçe, cevap verilmek üzere karşı tarafa tebliğ edilir mi?",
+      "back": "Evet; otuz gün içinde cevap verilmek üzere karşı tarafa tebliğ edilir. Artırım nihai karar verilinceye kadar, harcı ödenerek bir defaya mahsus yapılabilir.",
+      "explanation": "Taraflar kural olarak süre geçtikten sonra verdikleri savunma veya ikinci dilekçelere dayanarak hak iddia edemez; tam yargı davalarında miktar artırımı bu kuralın istisnasıdır.",
+      "articleRefs": [
+        "16"
+      ],
+      "counterNumbers": []
+    }
+  ]
+}

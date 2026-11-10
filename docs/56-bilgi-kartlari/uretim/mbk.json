@@ -1,0 +1,284 @@
+{
+  "deck": {
+    "topicId": "726855b4-e896-4e23-b5f0-32975a8f6684",
+    "legislationSlug": "3628-sayili-mal-bildiriminde-bulunulmasi-kanunu",
+    "sourceLabel": "AI bilgi kartı — 3628 Sayılı Mal Bildiriminde Bulunulması Kanunu md 1–20, 22–25",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: resmî madde metni + çıkmış sorular)"
+  },
+  "cards": [
+    {
+      "kind": "trap",
+      "difficulty": 1,
+      "front": "Seçimle iş başına gelen muhtarlar mal bildiriminde bulunmak zorunda mı?",
+      "back": "Hayır. Seçimle iş başına gelen kamu görevlileri bildirim verir, ama muhtarlar ve ihtiyar heyeti üyeleri bu kuraldan hariç tutulur.",
+      "explanation": "Aynı bentte Cumhurbaşkanı yardımcıları ve bakanlar da bildirim verecekler arasında sayılır. Noterler ile gazete sahibi gerçek kişiler de bildirimle yükümlüdür.",
+      "articleRefs": [
+        "2"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Yabancı bir devletten aldığın hediye hangi değeri aşarsa kurumuna teslim etmen gerekir?",
+      "back": "Aldığın tarihteki değeri on aylık net asgari ücret toplamını aşan hediye veya hibe niteliğindeki eşyayı bir ay içinde kendi kurumuna teslim edersin.",
+      "explanation": "Kural milletlerarası kuruluşlardan ve Türk uyruğunda olmayan kişi ya da kuruluşlardan gelen hediyeler için de geçerlidir. Yabancı devlet adamları ve milletlerarası kuruluş temsilcilerinin verdiği imzalı hatıra fotoğraflarının çerçeveleri bu hükme dahil değildir.",
+      "articleRefs": [
+        "3"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "İlgilinin sosyal yaşantısı bakımından geliriyle uygun olduğu kabul edilemeyecek harcamalar şeklinde ortaya çıkan artışlar ne sayılır?",
+      "back": "Haksız mal edinme.",
+      "explanation": "Kanuna veya genel ahlaka uygun olarak sağlandığı ispat edilmeyen mallar da haksız mal edinme sayılır.",
+      "articleRefs": [
+        "4"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Para, hisse senedi, altın gibi taşınırlardan hangileri mal bildirimine yazılır?",
+      "back": "Görevliye yapılan aylık net ödemenin beş katından fazla tutarda olanlar; her biri ayrı ayrı değerlendirilir.",
+      "explanation": "Ödeme yapılmayan görevlilerde ölçü, 1 inci derece Devlet memurlarına yapılan aylık net ödemenin beş katıdır. Haklar, alacaklar, gelirler ve bunların kaynakları ile borçlar ve sebepleri de bildirimin konusudur.",
+      "articleRefs": [
+        "5"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Mal varlığında önemli bir değişiklik olursa bildirimi ne kadar sürede vermelisin?",
+      "back": "Bir ay içinde.",
+      "explanation": "Cumhurbaşkanı yardımcısı veya bakan atamasında atamayı, yönetim ve denetim kurulu ile komisyon üyeliklerinde göreve başlamayı, görevin sona ermesinde ayrılma tarihini izleyen süre de bir aydır.",
+      "articleRefs": [
+        "6"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Seçimle gelinen görevlerde mal bildirimi hangi süre içinde verilir?",
+      "back": "Seçimin kesinleşmesi tarihini izleyen iki ay içinde.",
+      "explanation": "Kanun kapsamındaki göreve atanmada ise bildirim, göreve giriş için gerekli belgelerle birlikte verilir; bu bildirim verilmedikçe göreve atama yapılamaz.",
+      "articleRefs": [
+        "6"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Görevin sona ermesi halinde mal bildirimi ayrılma tarihini izleyen iki ay içinde verilebilir mi?",
+      "back": "Hayır. Ayrılma tarihini izleyen bir ay içinde verilir; iki aylık süre yalnız seçimle gelinen görevlerde, seçimin kesinleşmesinden itibaren işler.",
+      "explanation": "Gazete sahibi gerçek kişiler faaliyete geçme tarihini, sorumlu müdür, başyazar ve fıkra yazarları göreve başlama tarihini izleyen bir ay içinde bildirim verir.",
+      "articleRefs": [
+        "6"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Kanun kapsamındaki görevlere devam edenler bildirimlerini en geç hangi ayın sonuna kadar yeniler?",
+      "back": "Şubat ayı sonuna kadar; sonu (0) ve (5) ile biten yıllarda.",
+      "explanation": "Yeni bildirimler yetkili merci tarafından daha önceki bildirimlerle karşılaştırılır.",
+      "articleRefs": [
+        "7"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Siyasi parti genel başkanları mal bildirimini hangi merciye verir?",
+      "back": "Yargıtay Cumhuriyet Başsavcılığına.",
+      "explanation": "Noterler Adalet Bakanlığına, vakıfların idare organlarında görev alanlar Vakıflar Genel Müdürlüğüne, yüksek mahkemelerin daire başkan ve üyeleri mahkemenin başkanına bildirim verir. Görevleri sebebiyle birden fazla bildirim vermesi gerekenler asli görevlerinden dolayı tek bildirim verir.",
+      "articleRefs": [
+        "8"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Türkiye Büyük Millet Meclisi üyeleri mal bildirimini Cumhurbaşkanlığına verir mi?",
+      "back": "Hayır. Türkiye Büyük Millet Meclisi Başkanlığına verirler; Cumhurbaşkanlığı, Cumhurbaşkanı yardımcıları ve bakanların merciidir.",
+      "articleRefs": [
+        "8"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "İl genel meclisi üyeleri mal bildirimini kime verir?",
+      "back": "Valilere.",
+      "explanation": "Belediye meclis üyeleri belediye başkanlarına, belediye başkanları ise İçişleri Bakanlığına bildirim verir.",
+      "articleRefs": [
+        "8"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Mal bildirimlerini gerektiğinde inceleme yetkisi hangi kurula aittir?",
+      "back": "Kamu Görevlileri Etik Kuruluna.",
+      "explanation": "Bildirimler, bildirimde bulunanın özel dosyasında saklanır. İçerikleri hakkında 20 nci madde hükmü dışında açıklama yapılamaz, bilgi verilemez ve bildirimdeki bilgiler esas alınarak yayında bulunulamaz.",
+      "articleRefs": [
+        "9"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Kamu Görevlileri Etik Kurulunun bildirimlerin doğruluğunu kontrol için istediği bilgiler, bankalar dahil ilgili kuruluşlarca en geç ne kadar sürede verilir?",
+      "back": "En geç otuz gün içinde.",
+      "explanation": "Yükümlülük bankalar ve özel finans kurumları dahil ilgili kişi ve kuruluşları kapsar.",
+      "articleRefs": [
+        "9"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Süresinde bildirim vermeyene ihtar yapılır. İhtarın tebliğinden itibaren hangi süre içinde mazeretsiz bildirim vermeyen cezalandırılır?",
+      "back": "Otuz gün; bu durumda üç aya kadar hapis cezası verilir.",
+      "explanation": "İhtarı bildirimlerin verileceği merci yapar. Soruşturma ile ilgili olarak verilen süre içinde bildirim vermeyene ise üç aydan bir yıla kadar hapis cezası verilir.",
+      "articleRefs": [
+        "10"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Mal bildiriminin muhtevasına ilişkin gizlilik basın yoluyla ihlal edilirse ceza ne kadar artırılır?",
+      "back": "Yarı oranında; temel ceza üç aydan bir yıla kadar hapistir.",
+      "explanation": "Ceza, mal bildiriminin muhtevası hakkında 9 uncu maddeye aykırı davranana verilir.",
+      "articleRefs": [
+        "11"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Gerçeğe aykırı bildirimde bulunana hangi hapis cezası verilir?",
+      "back": "Altı aydan üç yıla kadar hapis cezası; kanunen daha ağır bir cezayı gerektirmediği takdirde.",
+      "articleRefs": [
+        "12"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Haksız edinilen malı gizleyene, haksız mal edinenden daha hafif ceza verilir mi?",
+      "back": "Hayır. Haksız edinilen malı kaçıran veya gizleyene de haksız mal edinene verilen ceza aynen verilir.",
+      "explanation": "Haksız mal edinene, kanun daha ağır bir cezayı gerektirmediği takdirde üç yıldan beş yıla kadar hapis ve para cezası birlikte verilir.",
+      "articleRefs": [
+        "13"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Haksız edinilen malın zoralımı mümkün olmazsa mahkeme neye karar verir?",
+      "back": "Haksız edinilen değere eşit bedelin hazineye ödenmesine.",
+      "explanation": "Zoralım, malın elde edilememesi ya da malın tümünün haksız mal edinme konusu olmaması hallerinde mümkün olmaz. Bedel, Amme Alacaklarının Tahsil Usulü Hakkında Kanun hükümlerine göre tahsil edilir.",
+      "articleRefs": [
+        "14"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Haksız mal edinmekten cezalandırılana kamu hizmetlerinden yasaklanma ne kadar süreyle hükmolunur?",
+      "back": "Müebbeten.",
+      "explanation": "11 ve 12 nci madde hükümleriyle cezalandırılanlara ise kamu hizmetlerinden yasaklanma ceza süresi kadar hükmolunur.",
+      "articleRefs": [
+        "15"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "İrtikâp, rüşvet ve zimmet suçlarından sanık olanlar hakkında hangi kanunun hükümleri uygulanmaz?",
+      "back": "4483 sayılı Memurlar ve Diğer Kamu Görevlilerinin Yargılanması Hakkında Kanun hükümleri. Ancak bu kural valiler ve kaymakamlar (metinde ayrıca: müsteşarlar) hakkında uygulanmaz.",
+      "explanation": "Kural bu Kanundaki suçlar ile görev sırasında veya görevinden dolayı kaçakçılık, resmî ihale ve alım ve satımlara fesat karıştırma, Devlet sırlarının açıklanması suçlarına ve bunlara iştirake de uygulanır. Görevleri veya sıfatları sebebiyle özel soruşturma ve kovuşturma usulüne tabi olanlarla ilgili kanun hükümleri saklıdır.",
+      "articleRefs": [
+        "17"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Rüşvet, irtikâp ve zimmet gibi suçlara ilişkin ihbar nereye yapılır?",
+      "back": "Doğrudan Cumhuriyet Başsavcılıklarına; derhal ihbar tutanağı düzenlenir ve bir örneği muhbire verilir.",
+      "explanation": "Acele ve gecikmesinde sakınca umulan hallerde tutanak sonraya bırakılabilir. İhbar veya takipsizlik kararı ve iddianame ilgili kamu kurum veya kuruluşlarına bildirilir; bu kurumlar yazılı başvuruda bulunursa başvuru tarihinde müdahil sıfatını kazanır.",
+      "articleRefs": [
+        "18",
+        "17"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "İhbar asılsız çıkarsa muhbirin kimliği açıklanabilir mi?",
+      "back": "Evet; aleyhine takibat yapılanın istemi üzerine açıklanır. Bunun dışında muhbirin kimliği, rızası olmadıkça açıklanmaz.",
+      "articleRefs": [
+        "18"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "İhbar konusu suç hakkında dava açılmadan önce bilgi verilebilir mi?",
+      "back": "Hayır. İhbar konusu müsnet suç hakkında dava açılıncaya kadar bilgi vermek ve yayın yapmak yasaktır.",
+      "explanation": "Soruşturmada delil veya emare elde eden müfettiş ve muhakkikler de işi yetkili ve görevli Cumhuriyet Başsavcılığına ihbar eder ve evrakı tevdi eder.",
+      "articleRefs": [
+        "18"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Cumhuriyet savcısının mal bildirimi istemi sanığa ulaştıktan sonra bildirim ne kadar sürede verilmelidir?",
+      "back": "Yedi gün içinde.",
+      "explanation": "Soruşturmayı müfettiş veya muhakkik yürütüyorsa istem onlardan gelir ve bildirim yine yedi gün içinde onlara verilir. Savcı soruşturmaya doğrudan ve bizzat başlar, durumu atamaya yetkili amire veya mal bildirimi mercilerine bildirir.",
+      "articleRefs": [
+        "19"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Haksız edinilen malın kaçırıldığına dair delil elde edilirse savcı sanık dışında kimlerden mal bildirimi ister?",
+      "back": "Sanığın ikinci dereceye kadar kan ve sıhri hısımları ile gelini ve damadından.",
+      "explanation": "Savcı, kamu davası açılmadan önce, haksız edinildiğine dair delil veya emare bulunan para ya da mal için tedbiri görevli mahkemeden veya para ya da malın bulunduğu yer hukuk mahkemesinden isteyebilir.",
+      "articleRefs": [
+        "19"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Kanuna göre yetkili mercilerin istediği bilgileri vermeyen kişiye hangi ceza verilir?",
+      "back": "Bir yıldan üç yıla kadar hapis cezası.",
+      "explanation": "Bilgiler, özel kanunlarında aksine hüküm bulunsa bile gecikmeksizin makul sürede eksiksiz verilmelidir.",
+      "articleRefs": [
+        "20"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Mal bildiriminin şekli ve Kanunun uygulanmasına ilişkin diğer konular kimin çıkardığı yönetmelikle düzenlenir?",
+      "back": "Cumhurbaşkanının; yönetmelik Resmî Gazete'de yayımlanır.",
+      "explanation": "Yönetmelik bildirimin şeklini, düzenleniş biçimini, sayısını, neleri kapsayacağını ve merciine nasıl ulaştırılacağını düzenler.",
+      "articleRefs": [
+        "22"
+      ]
+    }
+  ]
+}

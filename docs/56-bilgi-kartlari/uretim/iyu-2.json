@@ -1,0 +1,286 @@
+{
+  "deck": {
+    "topicId": "e22d1f78-8191-4099-9134-044c59114bd7",
+    "legislationSlug": "2577-idari-yargilama-usulu-kanunu-iyuk",
+    "sourceLabel": "AI bilgi kartı — 2577 İdari Yargılama Usulü Kanunu (İYUK) md 17–20, 20/A, 20/B, 20/C, 21–26",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: resmî madde metni + çıkmış sorular)"
+  },
+  "cards": [
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "İdari yargıda duruşma davetiyeleri taraflara en geç ne zaman gönderilir?",
+      "back": "Duruşma gününden en az otuz gün önce gönderilir.",
+      "explanation": "Davetiye süresi duruşma gününden geriye doğru sayılır. Taraflar böylece duruşmaya hazırlanacak zamanı bulur.",
+      "articleRefs": [
+        "17"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Temyizde taraflardan biri duruşma isterse duruşma yapılması zorunlu mu?",
+      "back": "Hayır. Temyiz ve istinafta duruşma, tarafların istemine ve Danıştayın ya da ilgili bölge idare mahkemesinin kararına bağlıdır.",
+      "explanation": "Duruşma talebi dava dilekçesinde ya da cevap ve savunmalarda yapılabilir. Danıştay, mahkeme ve hâkim, istem olmasa da kendiliğinden duruşma yapılmasına karar verebilir.",
+      "articleRefs": [
+        "17"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "trap",
+      "difficulty": 1,
+      "front": "İdari yargıda duruşmalar kural olarak gizli mi yapılır?",
+      "back": "Hayır. Duruşmalar açık yapılır. Genel ahlak veya kamu güvenliği gerektirirse görevli daire ya da mahkemenin kararıyla duruşmanın bir kısmı veya tamamı gizli yapılır.",
+      "explanation": "Gizlilik kararını görevli daire veya mahkeme verir. Duruşmaları başkan yönetir.",
+      "articleRefs": [
+        "18"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "İdari yargıda duruşmalarda taraflara kaçar defa söz verilir?",
+      "back": "İkişer defa söz verilir.",
+      "explanation": "Taraflardan yalnız biri gelirse onun açıklamaları dinlenir. Hiçbiri gelmezse duruşma açılmaz ve inceleme evrak üzerinde yapılır.",
+      "articleRefs": [
+        "18"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Danıştayda görülen bir davanın duruşmasında savcı yazılı düşüncesini ne zaman açıklar?",
+      "back": "Taraflar dinlendikten sonra açıklar. Ardından taraflara son olarak ne diyecekleri sorulur ve duruşmaya son verilir.",
+      "explanation": "Danıştaydaki duruşmalarda savcının bulunması şarttır. Savcı keşif, bilirkişi incelemesi, delil tespiti ya da işlem dosyasının getirtilmesini isteyebilir. Bu istek görevli daire veya kurulca kabul edilmezse savcı, işin esası hakkında ayrıca yazılı düşünce bildirir.",
+      "articleRefs": [
+        "18"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "İdari yargıda duruşma yapıldıktan sonra en geç ne kadar sürede karar verilir?",
+      "back": "En geç on beş gün içinde karar verilir.",
+      "explanation": "Ara kararı verilen hallerde, bu karar yerine getirilince dosyalar öncelikle incelenir.",
+      "articleRefs": [
+        "19"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Mahkemenin evrak ve bilgi istemi için belirlediği süre, haklı sebep varsa birden fazla kez uzatılabilir mi?",
+      "back": "Hayır. Haklı sebepler varsa süre bir defaya mahsus uzatılabilir. İstenen evrak ve bilgiyi süresinde vermek ilgililer için mecburidir.",
+      "explanation": "Süreyi mahkeme belirler. Taraf ara kararının gereğini yerine getirmezse bunun verilecek karara etkisini mahkeme önceden takdir eder ve bunu ara kararında ayrıca belirtir.",
+      "articleRefs": [
+        "20"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Mahkemenin istediği bilgi ve belgeler Devletin güvenliğine veya yüksek menfaatlerine ilişkinse bunları kim vermeyebilir?",
+      "back": "Cumhurbaşkanı ya da ilgili Cumhurbaşkanı yardımcısı veya bakan, gerekçesini bildirerek vermeyebilir.",
+      "explanation": "Aynı yetki, bilgi ve belgeler Devletin güvenliği ve yüksek menfaatleriyle birlikte yabancı devletlere de ilişkinse kullanılır. Verilmeyen bilgi ve belgelere dayanılarak ileri sürülen savunmaya göre karar verilemez.",
+      "articleRefs": [
+        "20"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Kanundaki öncelik veya ivedilik durumlarına ve ilan edilen öncelikli işlere girmeyen dosyalar en geç ne kadar sürede sonuçlandırılır?",
+      "back": "Tekemmül tarihinden itibaren en geç altı ay içinde, tekemmül sırasına göre sonuçlandırılır.",
+      "explanation": "Öncelikli işleri Danıştay için Başkanlar Kurulu, diğer mahkemeler için Hakimler ve Savcılar Yüksek Kurulu konu itibarıyla tespit eder ve Resmî Gazete'de ilan eder. Dosyalar geliş tarihlerine göre incelenir.",
+      "articleRefs": [
+        "20"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "İhale işlemlerinden doğan uyuşmazlıklarda, hangi ihale işlemi ivedi yargılama usulünün dışında kalır?",
+      "back": "İhaleden yasaklama kararları. Bunlar dışındaki ihale işlemlerinden doğan uyuşmazlıklarda ivedi yargılama usulü uygulanır.",
+      "explanation": "İvedi yargılama usulünün uygulandığı diğer işlemler şunlardır: acele kamulaştırma işlemleri; Özelleştirme Yüksek Kurulu kararları; 2634 sayılı Turizmi Teşvik Kanunu uyarınca yapılan satış, tahsis ve kiralama işlemleri; 2872 sayılı Çevre Kanunu uyarınca, idari yaptırım kararları hariç, çevresel etki değerlendirmesi sonucu alınan kararlar; 6306 sayılı Kanun uyarınca alınan Cumhurbaşkanı kararları.",
+      "articleRefs": [
+        "20/A"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "İvedi yargılama usulünde dava açma süresi ne kadardır?",
+      "back": "Otuz gündür.",
+      "explanation": "Bu usulde Kanunun 11 inci maddesi hükümleri uygulanmaz. Yürütmenin durdurulması talebine ilişkin kararlara da itiraz edilemez.",
+      "articleRefs": [
+        "20/A"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "İvedi yargılama usulünde ilk inceleme on beş gün içinde mi yapılır?",
+      "back": "Hayır. İlk inceleme yedi gün içinde yapılır ve dava dilekçesi ile ekleri tebliğe çıkarılır. On beş gün, savunma süresidir.",
+      "explanation": "Savunma süresi tebliğden itibaren on beş gündür ve bir defaya mahsus en fazla on beş gün uzatılabilir. Nihai kararlara karşı tebliğden itibaren on beş gün içinde temyize gidilir. Temyiz dilekçeleri üç gün içinde incelenir. Temyiz istemi en geç iki ay içinde karara bağlanır.",
+      "articleRefs": [
+        "20/A"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Millî Eğitim Bakanlığı ile Ölçme, Seçme ve Yerleştirme Merkezinin yaptığı merkezî ve ortak sınavlara ilişkin davalarda dava açma süresi ne kadardır?",
+      "back": "On gündür.",
+      "explanation": "Bu usul; sınavlara, sınavlara ilişkin iş ve işlemlere ve sınav sonuçlarına karşı açılan davalarda uygulanır. İlk inceleme yedi gün içinde yapılır ve dava dilekçesi ile ekleri tebliğe çıkarılır.",
+      "articleRefs": [
+        "20/B"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Millî Eğitim Bakanlığı ile Ölçme, Seçme ve Yerleştirme Merkezinin sınavlarına ilişkin davalarda savunma süresi uzatılabilir mi?",
+      "back": "Evet. Tebliğden itibaren üç gün olan savunma süresi, bir defaya mahsus en fazla üç gün uzatılabilir.",
+      "explanation": "Savunmanın verilmesiyle ya da savunma verme süresinin geçmesiyle dosya tekemmül etmiş sayılır. Dava, tekemmülden itibaren en geç on beş gün içinde karara bağlanır.",
+      "articleRefs": [
+        "20/B"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Merkezî ve ortak sınavlara ilişkin davalarda verilen yürütmenin durdurulması ve iptal kararları nasıl uygulanır?",
+      "back": "Söz konusu sınava katılan kişilerin lehine sonuç doğuracak şekilde uygulanır.",
+      "explanation": "Bu kural, Millî Eğitim Bakanlığı ile Ölçme, Seçme ve Yerleştirme Merkezinin yaptığı sınavlara, bu sınavlara ilişkin iş ve işlemlere ve sınav sonuçlarına karşı açılan davalarda geçerlidir.",
+      "articleRefs": [
+        "20/B"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Millî Savunma Bakanlığı kadrolarında çalışan kamu görevlilerinin askerî hizmete ilişkin işlemlerinden doğan uyuşmazlıklarda hangi idare mahkemesi yetkilidir?",
+      "back": "İlgilinin görev yaptığı yerin idari yargı yetkisi yönünden bağlı olduğu bölge idare mahkemesinin bulunduğu yerdeki idare mahkemesi yetkilidir.",
+      "explanation": "Bu davaların dilekçelerinde ilgilinin sicili, varsa sınıfı ve rütbesi de gösterilir. Dilekçeler ve evrak, ilgili idari yargı merciine gönderilmek üzere en yakın amirlere de verilebilir.",
+      "articleRefs": [
+        "20/C"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Askerî hizmete ilişkin idari işlem ve eylemlerden doğan uyuşmazlıklarda savaş hâlinde yürütmenin durdurulmasına karar verilebilir mi?",
+      "back": "Hayır. Savaş hâlinde yürütmenin durdurulmasına karar verilemez.",
+      "explanation": "Olağanüstü hâller sebebiyle alınan tedbirlerin uygulanmasında görevlendirilenlerin naklen atanmalarına ilişkin iptal davalarında da yürütmenin durdurulmasına karar verilemez.",
+      "articleRefs": [
+        "20/C"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Dilekçe ve savunmayla birlikte verilmeyen belgeler hangi durumda kabul edilir?",
+      "back": "Vaktinde ibraz edilmelerine imkân bulunmadığına mahkeme kanaat getirirse kabul edilir ve diğer tarafa tebliğ edilir.",
+      "explanation": "Belge duruşmada ibraz edilebilir. Diğer taraf cevabını hemen verebileceğini beyan eder ya da cevap vermeye lüzum görmezse belge ayrıca tebliğ edilmez.",
+      "articleRefs": [
+        "21"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Yargılama usulüne ilişkin bir meselede azınlıkta kalan üye, işin esası hakkında oy kullanır mı?",
+      "back": "Evet. 15 inci maddede sayılan sebeplerden biriyle ya da yargılama usullerine ilişkin meselelerde azınlıkta kalanlar, işin esası hakkında da oy kullanır.",
+      "explanation": "Konular aydınlandığında meseleler sırasıyla oya konulur ve karara bağlanır.",
+      "articleRefs": [
+        "22"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "İdari yargıda azınlıkta kalan hâkimlerin görüşleri nereye yazılır?",
+      "back": "Kararların altına yazılır.",
+      "explanation": "Azınlıkta kalanlar, usul meselelerinde de olsa işin esası hakkında oylarını kullanır; görüşleri karara eklenmiş olur.",
+      "articleRefs": [
+        "22"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Her dava dosyası için düzenlenen görüşme tutanağını kimler imzalar?",
+      "back": "Görüşmelere katılanlar imzalar. Tutanak aynı toplantıda imzalanır ve dosyasında saklanır.",
+      "explanation": "Tutanakta şunlar gösterilir: görüşmelere katılan başkan ve üyelerin, Danıştayda düşünce veren savcının, tetkik hâkiminin ve tarafların ad ve soyadları; dosya numarası; kısaca dava konusu; kararın neticesi; çoğunlukta ve azınlıkta bulunanlar.",
+      "articleRefs": [
+        "23"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "İdari yargıda kararlar, verildikleri tarihten itibaren en geç ne kadar sürede yazılıp imzalanır?",
+      "back": "Verildiği tarihten itibaren otuz gün içinde yazılır ve imzalanır.",
+      "explanation": "Kararda başka bilgiler de yer alır. Bunlar arasında kararın tarihi, oybirliğiyle mi oyçokluğuyla mı verildiği ve kararı verenlerin ad, soyad ve imzaları bulunur.",
+      "articleRefs": [
+        "24"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Hükmedilen tazminatın miktarı hangi davaların kararında belirtilir?",
+      "back": "Tazminat davalarının kararında belirtilir. Kararın dayandığı hukuki sebepler, gerekçe ve hükümle birlikte yazılır.",
+      "explanation": "Danıştayda görülen davalarda tetkik hâkimi ile savcının ad, soyad ve düşünceleri de kararda belirtilir. Ayrıca yargılama giderleri ve bunların hangi tarafa yükletildiği de karara yazılır.",
+      "articleRefs": [
+        "24"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Danıştayda kararın taraflara tebliğ edilen örneğini kim tasdik eder?",
+      "back": "Daire veya kurul başkanı ya da başkanın görevlendireceği bir üye imzasıyla tasdik eder.",
+      "explanation": "İmzalı asıllardan biri karar dosyasına, diğeri dava dosyasına konur. Mahkemelerde örnek, mahkeme mührü ile başkan ya da hâkim imzasıyla tasdik edilip taraflara tebliğ edilir.",
+      "articleRefs": [
+        "25"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Dava sırasında bir tarafın kişilik veya niteliğinde değişiklik olursa mahkeme ne karar verir?",
+      "back": "Davayı takip hakkı kendisine geçen kişi başvurana kadar dosyanın işlemden kaldırılmasına karar verir.",
+      "explanation": "Gerçek kişi olan taraf ölürse dosya, idare mirasçılar aleyhine takibi yenileyene kadar işlemden kaldırılır. Yalnız öleni ilgilendiren davalara ait dilekçeler iptal edilir. İşlemden kaldırma kararı diğer tarafa tebliğ edilir.",
+      "articleRefs": [
+        "26"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Tarafın kişilik veya niteliği değiştiği için işlemden kaldırılan dosyada, yenileme dilekçesi ne kadar süre içinde verilmezse yürütmenin durdurulması kararı hükümsüz kalır?",
+      "back": "Dört ay. Bu süre içinde yenileme dilekçesi verilmezse, varsa yürütmenin durdurulması kararı kendiliğinden hükümsüz kalır.",
+      "explanation": "Dosya, davayı takip hakkı kendisine geçenin başvurusuna kadar işlemden kaldırılır. Gerçek kişi olan taraf ölmüşse bu, idarenin mirasçılar aleyhine takibi yenilemesine kadar sürer.",
+      "articleRefs": [
+        "26"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Davacının adresine tebligat yapılamadığı için işlemden kaldırılan dosyada, dört ay içinde yeni adres bildirilmezse dava açılmamış mı sayılır?",
+      "back": "Hayır. Süre bir yıldır. İşlemden kaldırma tarihinden itibaren bir yıl içinde yeni adres bildirilip yeniden işleme konulması istenmezse dava açılmamış sayılır.",
+      "explanation": "Dört ay, tarafların kişilik veya niteliğindeki değişiklik hâlinde yenileme dilekçesi için öngörülen süredir. Adrese tebligat yapılamazsa, varsa yürütmenin durdurulması kararı dosya işlemden kaldırılırken kendiliğinden hükümsüz kalır. İşlemden kaldırma ve davanın açılmamış sayılması kararları diğer tarafa tebliğ edilir.",
+      "articleRefs": [
+        "26"
+      ],
+      "counterNumbers": []
+    }
+  ]
+}

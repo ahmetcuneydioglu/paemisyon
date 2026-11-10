@@ -1,0 +1,275 @@
+{
+  "deck": {
+    "topicId": "ca720f44-72d7-4159-9c40-806f47ef136f",
+    "legislationSlug": "emniyet-atama-ve-yer-degistirme-yonetmeligi",
+    "sourceLabel": "AI bilgi kartı — Emniyet Atama ve Yer Değiştirme Yönetmeliği md 43–50, Ek 1, Ek 2, Ek 3, Ek 4, Ek 5, Ek 6",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: resmî madde metni + çıkmış sorular; 2 açıklama düşürüldü)"
+  },
+  "cards": [
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "İkinci bölgeden birinci bölgeye eğitim, kurs, refakat izni, dış sevk, staj veya geçici görevlendirme gibi nedenlerle yurt içinde görevlendirme yapılabilir. Bu görevlendirmelerin toplamı hangi süreyi aşarsa bölgedeki hizmet süresinden sayılmaz?",
+      "back": "4 ay. Görevlendirmelerin birine veya birkaçına bağlı olarak toplamı 4 aydan fazla olan ve diğer bölgelerde geçen süreler sayılmaz.",
+      "explanation": "Süre tek tek değil toplam olarak değerlendirilir. Birden çok görevlendirme bir araya gelerek eşiği aşabilir.",
+      "articleRefs": [
+        "43"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Görevden uzaklaştırılan, tutuklanan veya hüküm giyen personelin hangi süreleri bölgedeki hizmet süresinden sayılmaz?",
+      "back": "3 ayı aşan süreleri sayılmaz.",
+      "explanation": "Aynı maddeye göre iki süre daha hizmet süresinden sayılmaz. Birincisi, 657 sayılı Devlet Memurları Kanunu hükümlerine göre aylıksız izin alarak geçirilen sürelerdir. İkincisi, ayrılma, ihraç ve benzeri sebeplerle Emniyet Teşkilatından ayrı kalınan sürelerdir.",
+      "articleRefs": [
+        "43"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Yurt dışında barış gücü görevinde geçirilen süre bölgedeki hizmet süresinden sayılır mı?",
+      "back": "Hayır. Yurt dışında kurs ve öğrenim, misyon koruma, barış gücü gibi görevlerde geçen süreler sayılmaz. İstisna: 375 sayılı Kanun Hükmünde Kararnamenin 28 inci maddesinin (Ç) fıkrası kapsamındaki görevlendirmeler.",
+      "explanation": "Kural, yurt dışı görevlerini hizmet süresi dışında tutar. Yalnız 375 sayılı Kanun Hükmünde Kararnamenin 28 inci maddesinin (Ç) fıkrası kapsamında yapılan görevlendirmeler bu kuralın dışında kalır.",
+      "articleRefs": [
+        "43"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Görev yaptığı birimin hizmet süresini tamamlayan personelden kanuni yaş haddine kaç yıl kalanlar, isterlerse yerinde bırakılabilir?",
+      "back": "Beş yıl kalanlar. Kadro müsait olmalı ve personel bunu istemelidir.",
+      "explanation": "Yerinde bırakılmak için üç şart daha aranır: birimden 34 üncü ve 35 inci maddeler çerçevesinde teklif yapılmamış olması, hakkında herhangi bir soruşturma yapılıyor olmaması ve görev yerinin değiştirilmesi için müfettiş raporu bulunmaması.",
+      "articleRefs": [
+        "44"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Kanuni yaş haddine beş yıl kalan personel, talebiyle istediği illerden birine atanabilir. Bunun için bulunduğu yerde en az ne kadar çalışmış olması gerekir?",
+      "back": "En az iki yıl. Ayrıca 7 nci maddede belirtilen engel hallerin bulunmaması şarttır.",
+      "explanation": "Bu atama hakkı, görev yaptığı birimin hizmet süresini tamamlamış ve kanuni yaş haddine beş yıl kalmış personele tanınır.",
+      "articleRefs": [
+        "44"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "İkinci bölgede ikinci kez görev yapan ve yaş haddine beş yıl kalan bir personel istediği ile atanmak istiyor. Bulunduğu yerde en az iki yıl çalışmış olması aranır mı?",
+      "back": "Hayır. İkinci bölgede ikinci veya daha fazla kez görev yapanlarda bu şart aranmaz. 7 nci maddedeki engel hallerin bulunmaması şartı ise geçerlidir.",
+      "explanation": "Bu istisna yalnız bulunduğu yerde en az iki yıl çalışma şartını kaldırır. Talep hakkı yine kanuni yaş haddine beş yıl kalmış personele aittir.",
+      "articleRefs": [
+        "44"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Personel atama ve yer değiştirmeye dayanak olarak Genel Müdürlüğe belge vermiştir. Belgenin sahte olduğu tespit edilirse yapılan işleme ne olur?",
+      "back": "Atama ve yer değiştirme işlemi iptal edilir.",
+      "explanation": "Aynı sonuç, belgelerdeki bilgilerin gerçek dışı olduğunun tespit edilmesi halinde de doğar.",
+      "articleRefs": [
+        "46"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Gerçek dışı bilgi içeren belgeye dayalı atamada, sorumlular hakkında yalnız idari soruşturma mı yapılır?",
+      "back": "Hayır. Sorumlular hakkında hem adli hem idari soruşturma yapılır.",
+      "articleRefs": [
+        "46"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Emniyet Teşkilatında emniyet hizmetleri sınıfı dışındaki personel de görev yapar. Bu personelin atama ve yer değiştirmelerinde bu Yönetmelik hükümleri ne zaman uygulanabilir?",
+      "back": "Gerektiğinde uygulanabilir.",
+      "articleRefs": [
+        "47"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Emniyet Teşkilatı Atama ve Yer Değiştirme Yönetmeliği hangi tarihte yürürlüğe girer?",
+      "back": "Yayımı tarihinde yürürlüğe girer.",
+      "articleRefs": [
+        "49"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Emniyet Teşkilatı Atama ve Yer Değiştirme Yönetmeliğinin hükümlerini kim yürütür?",
+      "back": "İçişleri Bakanı yürütür.",
+      "articleRefs": [
+        "50"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "İlk derece amirlik eğitimini başarıyla bitirenlerden ikinci bölge zorunlu hizmetini daha önce yapmış olanlar hangi atama listesinden seçme yapar?",
+      "back": "Birinci bölge atama listesinden. İkinci bölgeden dönüşe tabi olanlar da bu listeden seçer.",
+      "explanation": "İkinci bölge atama listesinden seçenler şunlardır: zorunlu hizmetini henüz tamamlamamış olanlar, ikinci bölge hizmetini hiç yapmamış olanlar ve 24 üncü maddeye göre birinci bölgeye dönüş yılları, ikinci bölge ikinci kez görev sırası gelen komiser yardımcılarıyla aynı olanlar. Atanacak yerler birinci ve ikinci bölge birimleri olarak ayrı ayrı belirlenir.",
+      "articleRefs": [
+        "Ek 1"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "İlk derece amirlik eğitimini bitiren personel, büyükşehir belediyesi bulunmayan bir ildeki eski birimini atanmak üzere seçebilir mi?",
+      "back": "Hayır. Eski çalıştıkları birimleri seçemezler. Bu yasağın dışında kalan yalnız büyükşehir belediyesi bulunan illerdir.",
+      "explanation": "Atamalarda eğitim kurumu mevzuatına göre oluşturulan sıralama esas alınır. Personel, Genel Müdürlükçe kadro ve hizmet ihtiyacına göre tespit olunan yerler arasından seçim yapar.",
+      "articleRefs": [
+        "Ek 1"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "İlk derece amirlik eğitimi mezunlarının atamaları yapılmıştır. Bundan sonra eş durumu mazeretine dayalı atanma talebi değerlendirmeye alınır mı?",
+      "back": "Hayır. Atamalar yapıldıktan sonra eş durumu ya da sağlık mazeretine dayalı atanma talepleri değerlendirmeye alınmaz.",
+      "explanation": "Atamadan önce yer Genel Müdürlükçe değiştirilebilir. Bunun için Devlet memuru eşin seçilen yere kanuni gerekçelerle atanamaması ya da 37 nci madde çerçevesinde kendisinin, eş veya çocuğunun tedavi imkânı bulunmaması gerekir. Tercih listesinde mazerete uygun yer seçme imkânı varken seçmeyenin yeri değiştirilmez.",
+      "articleRefs": [
+        "Ek 1"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Rütbelere göre belirlenen standart kadro sayısı aşılırsa personel başka il veya birime atanır. Bu atamaya öncelikle kimlerden başlanır?",
+      "back": "Öncelikle ikinci bölge hizmet sırası gelenlerden başlanır. Ardından bulunduğu il veya birimdeki hizmet süresi fazla olanlara geçilir.",
+      "explanation": "Atama, öngörülen kadro aşımı sayısı kadar personel için genel atama döneminde yapılır.",
+      "articleRefs": [
+        "Ek 2"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Kadrosuzluk sebebiyle atamada hizmet süreleri eşit olan personel arasında sıralama yapılırken son kaç performans değerlendirme puanının ortalamasına bakılır?",
+      "back": "Son üç performans değerlendirme puanının ortalamasına bakılır. Ortalaması düşük olanlardan başlanır.",
+      "articleRefs": [
+        "Ek 2"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Kadrosuzluk sebebiyle başka il veya birime atanacak personelde, bulunduğu yerin hizmet süresini doldurmuş olma şartı aranır mı?",
+      "back": "Hayır. Hizmet süresini doldurma şartı aranmadan, kadro aşımı sayısı kadar personel atanır.",
+      "explanation": "Hizmet süresi yıl bazında hesaplanır; yıl döngüsü olarak genel atama dönemleri esas alınır. Farklı zamanlarda aynı ildeki farklı birimlerde geçen süreler toplanır.",
+      "articleRefs": [
+        "Ek 2"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Bir ilin hizmet süresi düşürülürse, değişiklik yürürlüğe girmeden önce orada göreve başlamış personelin hizmet süresi nasıl hesaplanır?",
+      "back": "Yeni hizmet süreleri üzerinden hesaplanır.",
+      "articleRefs": [
+        "Ek 3"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Bir ilin hizmet süresi artırılırsa, yeni süre değişiklikten önce orada göreve başlamış personele de uygulanır mı?",
+      "back": "Hayır. Artırılan yeni hizmet süreleri, değişiklik yürürlüğe girmeden önce o yerde göreve başlamış olanlara uygulanmaz.",
+      "explanation": "Süre düşürüldüğünde ise sonuç farklıdır: o yerde önceden göreve başlamış olanların hesabı da yeni süre üzerinden yapılır.",
+      "articleRefs": [
+        "Ek 3"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Görev yaptığı il içinde doğrudan merkeze bağlı bir birime atanan personel hangi hizmet süresine tabidir?",
+      "back": "Yeni atandığı birimin, göreve başladığı tarihteki hizmet süresine tabidir.",
+      "articleRefs": [
+        "Ek 3"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "İkinci bölgedeki bir il birinci bölge kapsamına alınırsa, değişiklikten önce orada göreve başlayan personel ikinci bölge hizmetini ne zaman tamamlamış sayılır?",
+      "back": "Göreve başladığı tarihte geçerli olan hizmet süresini tamamladığında tamamlamış sayılır.",
+      "articleRefs": [
+        "Ek 4"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Bir ilçe birinci bölge kapsamından ikinci bölge kapsamına alınmıştır. Orada çalışan personelin hangi süreleri ikinci bölge hizmetinden sayılır?",
+      "back": "Bu değişikliği getiren yönetmelik hükmünün yürürlüğe girmesinden sonra o yerde çalıştığı süreler sayılır.",
+      "articleRefs": [
+        "Ek 4"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Personelin yıllık görev puanı nasıl hesaplanır?",
+      "back": "Çalıştığı birimin görev yeri puanı, o birimde çalıştığı gün sayısıyla çarpılır. Hesapta personelin fiili kadrosu esas alınır.",
+      "articleRefs": [
+        "Ek 5"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Personel, yıllık görev puanına kaç gün içinde itiraz edebilir?",
+      "back": "On beş gün içinde itiraz edebilir. İtiraz, Personel Bilgi Sistemi üzerinden elektronik ortamda yapılır.",
+      "explanation": "Yıllık görev puanı, takip eden yılın Ocak ayında Personel Bilgi Sistemine yüklenince tebliğ edilmiş sayılır. İtiraz işlemleri Şubat ayında tamamlanır, sonuçlar Mart ayında bildirilir. Süresinde itiraz edilmezse ya da itiraz reddedilirse puan kesinleşir. İtiraz üzerine yeni hesaplanan puan ise kesindir.",
+      "articleRefs": [
+        "Ek 5"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Deprem, sel ve benzeri doğal afetler nedeniyle olağanüstü hal ilan edilen il veya ilçelerin görev yeri puanı en fazla ne kadar artırılabilir?",
+      "back": "İki katına kadar artırılabilir. Artış geçicidir; Genel Müdürün teklifi ve Bakan onayıyla yapılır ve uygulama süresi iki yılı geçemez.",
+      "articleRefs": [
+        "Ek 5"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "İl emrine atanan personel il merkezinde veya ilçelerde istihdam edilirken neler dikkate alınır?",
+      "back": "Branş ve görev puanı dikkate alınır.",
+      "articleRefs": [
+        "Ek 6"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Emniyet ve asayişin gerektirdiği zorunluluklar ya da tecrübeli personel ihtiyacı gibi zaruri durumlarda, ilde görev yapan personelin yer değişikliklerini kim yapar?",
+      "back": "Valilikler yapar.",
+      "explanation": "İl içi atama onaylarının personele tebliği ve yeni görevlere başlama takvimini de valilikler belirler; takvim hizmeti aksatmayacak şekilde hazırlanır.",
+      "articleRefs": [
+        "Ek 6"
+      ]
+    }
+  ]
+}

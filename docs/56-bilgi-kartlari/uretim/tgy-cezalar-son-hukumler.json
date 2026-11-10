@@ -1,0 +1,287 @@
+{
+  "deck": {
+    "topicId": "477f97e4-2862-4836-a40a-6812e0609898",
+    "legislationSlug": "2911-sayili-toplanti-ve-gosteri-yuruyusleri-kanunu",
+    "sourceLabel": "AI bilgi kartı — 2911 Sayılı Toplantı ve Gösteri Yürüyüşleri Kanunu md 25–34, 34/A, 35–41, Ek 1",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: resmî madde metni + çıkmış sorular)"
+  },
+  "cards": [
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Topluluk içinde suç işleyenleri ve suçluları yakalamak için önce 24 üncü maddedeki emir ve ihtarların yapılması gerekir mi?",
+      "back": "Hayır. Topluluk içinde suç işleyenleri ve suçluları yakalamak için 24 üncü maddedeki emir ve ihtarların yapılmasına gerek yoktur.",
+      "explanation": "Topluluğa emir ve ihtar yapılmasını beklemeden, topluluk içinde suç işleyen kişi yakalanabilir.",
+      "articleRefs": [
+        "25"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Toplantı çağrısı için kullanılan davetiye, levha ve ilanlarda düzenleme kurulu başkanının yanında en az kaç üyenin adı, soyadı ve imzası bulunmalıdır?",
+      "back": "En az altı üyenin. Başkanla birlikte bu üyelerin adları, soyadları ve imzaları yer almalıdır.",
+      "explanation": "Asılması gereken davetiye, levha ve ilanlar, Kanunun 6 ncı maddesindeki yönteme de uyulmak şartıyla, valilik veya kaymakamlıklarca önceden tespit edilmiş yerlere asılır.",
+      "articleRefs": [
+        "26"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Toplantıdan bir önceki gün, güneş battıktan sonra ses yükselten bir araçla toplantı çağrısı yapılabilir mi?",
+      "back": "Hayır. Ses yükselten veya ileten araçla çağrı, bir önceki günden toplantının başlayacağı saate kadar ve yalnız güneşin doğuşundan batışına kadarki zaman içinde yapılabilir.",
+      "explanation": "Belirtilen sürenin dışında çağrı için ses yükselten veya ileten alet ya da araç kullanılamaz.",
+      "articleRefs": [
+        "26"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Kapalı yer toplantılarında ses yükseltici alet veya araçlarla ilgili hangi yasak vardır?",
+      "back": "Ses yükseltici alet veya araçlarla dışarıya yayın yapılamaz.",
+      "explanation": "Yasak, kapalı yerden dışarıya yapılan yayına yöneliktir.",
+      "articleRefs": [
+        "26"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Halkı kanuna aykırı toplantı veya yürüyüşe kışkırtma hareketleri karşısında güvenlik kuvvetleri ne yapar?",
+      "back": "Bu hareketleri derhal meneder.",
+      "articleRefs": [
+        "27"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Halkı kanuna aykırı toplantı veya yürüyüşe kışkırtma yasağı hangi yollarla ihlal edilebilir?",
+      "back": "Doğrudan ya da ses yükselten veya ileten araçla seslenerek, basılmış, çoğaltılmış, elle yazılmış veya çizilmiş kâğıtları yapıştırarak ya da dağıtarak veya benzeri araç ve yollarla.",
+      "explanation": "Sayım sınırlı değildir. \"Benzeri araç ve yollar\" ifadesi de hükmün kapsamındadır. Yasak, halkı kanuna aykırı toplantı veya yürüyüşe özendirmeyi de kapsar.",
+      "articleRefs": [
+        "27"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Kanuna aykırı toplantı veya gösteri yürüyüşünü düzenleyen, yöneten ya da bunların hareketlerine katılan kişiye hangi hapis cezası verilir?",
+      "back": "Bir yıl altı aydan üç yıla kadar hapis cezası verilir. Bu ceza, fiil daha ağır cezayı gerektiren ayrı bir suç oluşturmuyorsa uygulanır.",
+      "articleRefs": [
+        "28"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Güvenlik kuvvetlerine ya da toplantı safahatını teknik araçlarla tespit için görevlendirilenlere görev sırasında cebir, şiddet veya tehditle mani olan kişiye hangi ceza verilir?",
+      "back": "İki yıldan beş yıla kadar hapis cezası verilir. Bu ceza, fiil daha ağır bir cezayı gerektirmiyorsa uygulanır.",
+      "explanation": "Engel olma; cebir ve şiddet, tehdit veya nüfuz ve müessir kuvvet sarfıyla, görevliler görevlerini yaptıkları sırada gerçekleşmelidir.",
+      "articleRefs": [
+        "28"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Bildirimde düzenleme kurulu üyesi gösterilip 9 uncu maddedeki nitelikleri taşımayan kişi, toplantı yapılırsa altı aydan iki yıla kadar hapisle mi cezalandırılır?",
+      "back": "Hayır, bu kişiye bir yıla kadar hapis cezası verilir. Altı aydan iki yıla kadar hapis, 11 ve 12 nci maddelerdeki görevleri yerine getirmeyen düzenleme kurulu üyeleri içindir.",
+      "explanation": "Nitelik eksikliği cezası ancak toplantı veya yürüyüşün yapılması hâlinde uygulanır.",
+      "articleRefs": [
+        "28"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Toplantı veya yürüyüşe engel olan, devamına imkân vermeyecek tertiplere girişen ya da toplantıyı ihlal eden kişiye hangi hapis cezası verilir?",
+      "back": "Dokuz aydan bir yıl altı aya kadar hapis cezası verilir. Bu ceza, fiil daha ağır cezayı gerektiren ayrı bir suç oluşturmuyorsa uygulanır.",
+      "articleRefs": [
+        "29"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Yapılmakta olan toplantı veya yürüyüşte huzur ve sükûnu bozma suçunu hangi fiiller oluşturur?",
+      "back": "Huzur ve sükûnu bozmak maksadıyla tehdit, hakaret, saldırı veya mukavemette bulunmak ya da başka bir suretle huzur ve sükûnun bozulmasına sebebiyet vermek.",
+      "explanation": "Fiil daha ağır cezayı gerektiren ayrı bir suç oluşturmuyorsa ceza bir yıl altı aydan üç yıla kadar hapistir.",
+      "articleRefs": [
+        "30"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Düzenleme kurulu başkanı ve en az altı üyesinin ad, soyad ve imzasını taşımayan propaganda vasıtasını bastıran kişiye hangi hapis cezası verilir?",
+      "back": "Altı aydan bir yıla kadar hapis cezası verilir. Bu vasıtayı hazırlayan, yazdıran ya da propaganda maksadıyla kullanan da aynı cezayı alır.",
+      "explanation": "Aynı ceza, 26 ncı maddedeki yasak ve şartlara sair surette uymayanlar için de öngörülmüştür.",
+      "articleRefs": [
+        "31"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Propaganda vasıtasında halkı suç işlemeye tahrik eden yazı bulunması, hiç suç işlenmese de üç yıldan beş yıla kadar hapis gerektirir mi?",
+      "back": "Hayır. Böyle bir yazı, resim veya işaret bir yıl altı aydan üç yıla kadar hapis gerektirir. Üç yıldan beş yıla kadar hapis, tahrik sonucu suç işlenir veya teşebbüs edilirse uygulanır.",
+      "explanation": "Her iki ceza da fiilin daha ağır cezayı gerektiren ayrı bir suç oluşturmaması kaydıyla uygulanır.",
+      "articleRefs": [
+        "31"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "İhtara ve zor kullanmaya rağmen dağılmamakta ısrar etme suçunu toplantıyı tertip edenler işlerse ceza nasıl belirlenir?",
+      "back": "Ceza yarı oranında artırılarak hükmolunur. Katılanlar için temel ceza altı aydan üç yıla kadar hapistir.",
+      "explanation": "Suç, kanuna aykırı toplantı veya gösteri yürüyüşüne katılıp ihtara ve zor kullanmaya rağmen dağılmamakta ısrar etmekle oluşur.",
+      "articleRefs": [
+        "32"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "İhtara ve zor kullanmaya rağmen kolluk görevlilerine karşı cebir veya tehditle direnen kişiye, direnme cezasına ek olarak hangi suçtan ceza verilir?",
+      "back": "5237 sayılı Türk Ceza Kanununun 265 inci maddesinde tanımlanan suçtan da ayrıca cezaya hükmolunur.",
+      "articleRefs": [
+        "32"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "23 üncü maddedeki hâller gerçekleşmeden, yetki sınırı aşılarak dağıtılan toplantıda dağılmayanlara ceza vermekten vazgeçilebilir mi?",
+      "back": "Evet. Bu hâlde cezalar dörttebire kadar indirilerek uygulanabilir ya da ceza vermekten vazgeçilebilir. Toplantı 24 üncü madde hükmü yerine getirilmeden dağıtılmışsa da aynı kural geçerlidir.",
+      "articleRefs": [
+        "32"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Kimliğini gizlemek amacıyla yüzünü kısmen bezle örterek gösteri yürüyüşüne katılan kişiye hangi hapis cezası verilir?",
+      "back": "İki yıl altı aydan dört yıla kadar hapis cezası verilir. Yüzün tamamen örtülmesi de aynı cezayı gerektirir.",
+      "explanation": "Aynı ceza; ateşli silah, havai fişek ve molotof dâhil patlayıcı madde, kesici veya delici alet, taş, sopa ya da sis, gaz ve benzeri maddeler taşıyarak katılanlara da verilir.",
+      "articleRefs": [
+        "33"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Yasadışı örgüte ait amblem taşıyarak toplantıya katılmanın cezası iki yıl altı aydan dört yıla kadar hapis midir?",
+      "back": "Hayır, bu fiilin cezası altı aydan üç yıla kadar hapistir. İki yıl altı aydan dört yıla kadar hapis; silah veya patlayıcı gibi araçlar taşıyarak ya da kimliği gizlemek için yüzü örterek katılanlar içindir.",
+      "explanation": "Altı aydan üç yıla kadar hapis cezası şu kişilere de verilir: kanunların suç saydığı nitelikte afiş, pankart veya döviz taşıyanlar ve bu nitelikte slogan söyleyenler.",
+      "articleRefs": [
+        "33"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "33 üncü maddede sayılan silah, araç, amblem ya da yüz örtüsüyle katılınan toplantı Kanuna aykırıysa ve dağılmamak için direnilirse fail hakkında nasıl hüküm kurulur?",
+      "back": "33 üncü maddenin (a) ya da (b) bendine göre verilen cezanın yanında ayrıca 32 nci madde hükümlerine göre de cezaya hükmolunur.",
+      "articleRefs": [
+        "33"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Halkı kanuna aykırı toplantıya kışkırtan kişiye, toplantı hiç gerçekleşmemişse hangi hapis cezası verilir?",
+      "back": "Bir yıl altı aydan dört yıla kadar hapis cezası verilir. Toplantı gerçekleşip ilk emir ve ihtar üzerine dağıtılmışsa da aynı ceza uygulanır.",
+      "explanation": "Bu ceza, fiil daha ağır cezayı gerektiren ayrı bir suç oluşturmuyorsa uygulanır.",
+      "articleRefs": [
+        "34"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Kışkırtma yasağına aykırı davranan kişi, toplantı zorla dağıtılmışsa da bir yıl altı aydan dört yıla kadar hapisle mi cezalandırılır?",
+      "back": "Hayır. Toplantı ve yürüyüş zorla dağıtılmışsa ceza üç yıldan beş yıla kadar hapistir.",
+      "explanation": "Ceza, 27 nci maddedeki kışkırtma yasağına aykırı harekete bağlıdır. Cezanın ağırlığı toplantının akıbetine göre değişir.",
+      "articleRefs": [
+        "34"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Kanuna aykırı toplantıya katılıp direnme suçunu işleyen çocuk hakkında, bu suça bağlı olarak hangi hüküm ayrıca uygulanmaz?",
+      "back": "3713 sayılı Terörle Mücadele Kanununun 2 nci maddesinin ikinci fıkrası hükmü uygulanmaz.",
+      "explanation": "Aynı kural, katıldıkları toplantı ve gösteri yürüyüşü sırasında propaganda suçunu işleyen çocuklar için de geçerlidir.",
+      "articleRefs": [
+        "34/A"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Toplantı ve Gösteri Yürüyüşleri Kanununun uygulanmasına ilişkin yönetmelik hangi bakanlıklarca çıkarılır?",
+      "back": "Adalet, Millî Savunma ve İçişleri bakanlıklarınca çıkarılır. Yönetmelik Resmî Gazetede yayımlanır.",
+      "explanation": "Yönetmelik şunları düzenler: düzenleme kurulunun, güvenlik kuvvetlerinin ve görevli askerî birliklerin görev, yetki ve sorumluluklarının uygulanış biçimi; 10 ve 18 inci maddelerdeki hususlar.",
+      "articleRefs": [
+        "37"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Toplantı ve Gösteri Yürüyüşleri Kanunu kapsamındaki konularla ilgili yetkileri açıkça saklı tutulan kanun hangisidir?",
+      "back": "İl İdaresi Kanunu. Diğer kanunlardaki bu konulara ilişkin yetkiler de saklıdır.",
+      "articleRefs": [
+        "38"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "2911 sayılı Toplantı ve Gösteri Yürüyüşleri Kanunuyla hangi kanun yürürlükten kaldırılmıştır?",
+      "back": "10/2/1963 tarih ve 171 sayılı Toplantı ve Gösteri Yürüyüşü Hürriyeti Hakkında Kanun.",
+      "articleRefs": [
+        "39"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "2911 sayılı Toplantı ve Gösteri Yürüyüşleri Kanunu ne zaman yürürlüğe girer?",
+      "back": "Yayımı tarihinden üç ay sonra.",
+      "articleRefs": [
+        "40"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Şiddetin yaygınlaştığı toplumsal olaylarda mallara verilen zararları Devlet karşılarsa, ilgili idare ne yapar?",
+      "back": "Ödeme nedeniyle genel hükümlere göre sorumlulara rücu eder.",
+      "explanation": "Hüküm, kamu düzeninin ciddi şekilde bozulmasına yol açabilecek toplumsal olaylarda verilen zararları kapsar. Kamu mallarına verilen zararlar da gerçek ve tüzel kişilerin mallarına verilen zararlar da bu kapsamdadır.",
+      "articleRefs": [
+        "Ek 1"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Toplantı ve Gösteri Yürüyüşleri Kanunu kapsamındaki rücu istemlerinde zamanaşımı süreleri nasıl uygulanır?",
+      "back": "Zamanaşımı süreleri bir kat artırılarak uygulanır.",
+      "explanation": "Rücunun kendisi genel hükümlere göre yapılır. Zamanaşımı süreleri ise bu Kanun kapsamındaki rücu istemi için artırılmıştır.",
+      "articleRefs": [
+        "Ek 1"
+      ]
+    }
+  ]
+}

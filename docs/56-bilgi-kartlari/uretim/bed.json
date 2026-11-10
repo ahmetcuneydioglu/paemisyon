@@ -1,0 +1,301 @@
+{
+  "deck": {
+    "topicId": "5c959129-bee5-4aca-bb94-c97fbc7eddf9",
+    "legislationSlug": "4982-sayili-bilgi-edinme-hakki-kanunu",
+    "sourceLabel": "AI bilgi kartı — 4982 Sayılı Bilgi Edinme Hakkı Kanunu md 1–33",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: resmî madde metni + çıkmış sorular)"
+  },
+  "cards": [
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Bilgi Edinme Hakkı Kanunu'nun amacında hangi ilkeler sayılır?",
+      "back": "Eşitlik, tarafsızlık ve açıklık ilkeleri. Kanun bunları demokratik ve şeffaf yönetimin gereği olarak anar.",
+      "explanation": "Kanun, kişilerin bilgi edinme hakkını kullanmalarına ilişkin esas ve usulleri bu ilkelere uygun olarak düzenler.",
+      "articleRefs": [
+        "1"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Bilgi Edinme Hakkı Kanunu hangi kuruluşların faaliyetlerinde uygulanır?",
+      "back": "Kamu kurum ve kuruluşları ile kamu kurumu niteliğindeki meslek kuruluşlarının faaliyetlerinde uygulanır.",
+      "explanation": "Maddeye göre 3071 sayılı Dilekçe Hakkının Kullanılmasına Dair Kanun hükümleri saklıdır.",
+      "articleRefs": [
+        "2"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Kanundaki 'belge' tanımına kâğıt dışındaki hangi taşıyıcılar girer?",
+      "back": "Film, fotoğraf, teyp ve video kaseti, harita ve elektronik ortamda kaydedilen her türlü bilgi, haber ve veri taşıyıcıları bunlar arasındadır.",
+      "explanation": "Tanım, kurum ve kuruluşların sahip olduğu yazılı, basılı veya çoğaltılmış dosya, evrak, kitap, dergi, broşür, etüt, mektup, program, talimat, kroki ve plânı da sayar.",
+      "articleRefs": [
+        "3"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Bilgi edinme hakkına kim sahiptir?",
+      "back": "Herkes bilgi edinme hakkına sahiptir.",
+      "explanation": "Türkiye'nin taraf olduğu uluslararası sözleşmelerden doğan hak ve yükümlülükler saklıdır.",
+      "articleRefs": [
+        "4"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Türkiye'de ikamet eden bir yabancı, kendisiyle ilgisi olmayan bir konuda bu Kanuna dayanarak bilgi isteyebilir mi?",
+      "back": "Hayır. Yabancı, istediği bilgi kendisiyle ilgiliyse ve karşılıklılık ilkesi çerçevesinde Kanundan yararlanır.",
+      "explanation": "Türkiye'de faaliyette bulunan yabancı tüzel kişiler için de benzer bir kural vardır. İstenen bilgi faaliyet alanlarıyla ilgili olmalı ve karşılıklılık ilkesi bulunmalıdır.",
+      "articleRefs": [
+        "4"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Tüzel kişinin bilgi edinme dilekçesinde hangi bilgiler bulunur?",
+      "back": "Tüzel kişinin unvanı ve adresi ile yetkili kişinin imzası ve yetki belgesi bulunur.",
+      "explanation": "Dilekçe, istenen bilgi veya belgenin bulunduğu kurum veya kuruluşa yapılır. İstenen bilgi veya belgeler dilekçede açıkça belirtilir. Gerçek kişi ise adını ve soyadını, imzasını, oturma yeri veya iş adresini yazar.",
+      "articleRefs": [
+        "6"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Bir bilgi ancak ayrı veya özel bir analizle oluşturulabiliyorsa, kurum bu başvuruya nasıl karşılık verebilir?",
+      "back": "Olumsuz cevap verebilir.",
+      "explanation": "Başvuru, kurumun elinde bulunan veya görevi gereği bulunması gereken bilgi veya belgelere ilişkin olmalıdır. İstenen bilgi başka bir kurumda bulunuyorsa dilekçe o kuruma gönderilir ve durum ilgiliye yazılı olarak bildirilir.",
+      "articleRefs": [
+        "7"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Kurumca broşür ya da ilânla kamuya açıklanmış bir bilgi istendiğinde kurum başvurana ne bildirir?",
+      "back": "Bilginin ne şekilde, ne zaman ve nerede yayımlandığını veya açıklandığını bildirir.",
+      "explanation": "Yayımlanmış veya kamuya açıklanmış bilgi veya belgeler bilgi edinme başvurularına konu olamaz.",
+      "articleRefs": [
+        "8"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "İstenen belgede gizlilik dereceli bilgiler açıklanabilir bilgilerle birlikte bulunuyor ve birbirinden ayrılabiliyorsa kurum ne yapar?",
+      "back": "Gizlilik dereceli ya da açıklanması yasaklanan bilgileri çıkarır ve kalan kısmı başvuranın bilgisine sunar.",
+      "explanation": "Ayırma gerekçesi başvurana yazılı olarak bildirilir.",
+      "articleRefs": [
+        "9"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Kurum, başvuru sahibine istenen belgenin nasıl bir kopyasını verir?",
+      "back": "Onaylı bir kopyasını verir.",
+      "explanation": "Kopya verilemiyorsa ya da kopya aslına zarar verecekse başka yollarla erişim sağlanır. Yazılı veya basılı belgede aslını inceleme ve not alma, ses kaydında dinleme, görüntü kaydında izleme imkânı tanınır.",
+      "articleRefs": [
+        "10"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Kurum, istenen bilgi veya belgeye erişimi kural olarak kaç iş günü içinde sağlar?",
+      "back": "15 iş günü içinde sağlar.",
+      "explanation": "Bazı hâllerde erişim 30 iş günü içinde sağlanır: bilgi kurum içindeki başka bir birimden sağlanacaksa, başka bir kurumun görüşü gerekiyorsa ya da başvuru birden fazla kurumu ilgilendiriyorsa.",
+      "articleRefs": [
+        "11"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Erişim süresi 30 iş gününe uzatılacaksa, uzatmayı ve gerekçesini 30 iş günü dolmadan bildirmek yeterli midir?",
+      "back": "Hayır. Uzatma ve gerekçesi, başvuru sahibine yazılı olarak ve 15 iş günlük süre bitmeden bildirilir.",
+      "articleRefs": [
+        "11"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Kurumun bildirdiği erişim ücretini kaç iş günü içinde ödemeyen başvuru sahibi talebinden vazgeçmiş sayılır?",
+      "back": "15 iş günü içinde ödemeyen başvuru sahibi talebinden vazgeçmiş sayılır.",
+      "explanation": "Erişim için gereken maliyet tutarı idarece başvuru sahibine bildirilince 15 iş günlük erişim süresi kesilir.",
+      "articleRefs": [
+        "11"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Bilgi edinme başvurusu reddedilirse cevapta neler belirtilir?",
+      "back": "Ret kararının gerekçesi ve bu karara karşı başvuru yolları belirtilir.",
+      "explanation": "Kurum ve kuruluşlar cevaplarını yazılı olarak veya elektronik ortamda başvuru sahibine bildirir.",
+      "articleRefs": [
+        "12"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Bilgi edinme istemi reddedilen başvuru sahibi, Bilgi Edinme Değerlendirme Kuruluna kaç gün içinde itiraz edebilir?",
+      "back": "Kararın tebliğinden itibaren 15 gün içinde itiraz edebilir. İtiraz, yargı yoluna başvurmadan önce yapılır.",
+      "explanation": "Kurula itiraz, başvuru sahibinin idarî yargıya başvurma süresini durdurur.",
+      "articleRefs": [
+        "13"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Bilgi Edinme Değerlendirme Kurulu, itiraz hakkındaki kararını 15 iş günü içinde mi verir?",
+      "back": "Hayır. Kurul kararını 30 iş günü içinde verir.",
+      "explanation": "Maddedeki 15 iş günü, kurum ve kuruluşların Kurulun istediği bilgi veya belgeyi verme süresidir. Başvuru sahibinin itiraz süresi ise tebliğden itibaren 15 gündür.",
+      "articleRefs": [
+        "13"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Bilgi Edinme Değerlendirme Kurulu kaç üyeden oluşur?",
+      "back": "9 üyeden oluşur ve üyeleri Cumhurbaşkanı seçer.",
+      "explanation": "Yargıtay ve Danıştay genel kurulları, birer üye için kendi kurumları içinden ikişer aday önerir. Türkiye Barolar Birliği de bir üye için iki aday gösterir. Kurul Başkanı, üyelerce kendi aralarından seçilir.",
+      "articleRefs": [
+        "14"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Bilgi Edinme Değerlendirme Kurulu üyelerinin görev süresi kaç yıldır?",
+      "back": "4 yıldır. Görev süresi sona erenler yeniden seçilebilir.",
+      "explanation": "Süresi dolmadan ayrılan üyenin yerine aynı usulle bir üye seçilir; bu üye, yerine seçildiği üyenin görev süresini tamamlar. Yeni Kurul göreve başlayıncaya kadar önceki Kurul görevine devam eder.",
+      "articleRefs": [
+        "14"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Bilgi Edinme Değerlendirme Kurulu olağan olarak en az ne sıklıkla toplanır?",
+      "back": "En az ayda bir defa toplanır. Ayrıca ihtiyaç duyulduğu her zaman Başkanın çağrısıyla toplanır.",
+      "explanation": "Kurulun sekretarya hizmetlerini Adalet Bakanlığı yerine getirir.",
+      "articleRefs": [
+        "14"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Yargı denetimi dışındaki bir idarî işlem hakkında bilgi edinme hakkı tanınınca, bu işlem yargı denetimine açılmış olur mu?",
+      "back": "Hayır. Kişinin çalışma hayatını ve mesleki onurunu etkileyen bu işlemler Kanun kapsamına girer, ancak bu hak işlemi yargı denetimine açmaz.",
+      "articleRefs": [
+        "15"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Sivil ve askerî istihbarat birimlerinin görev ve faaliyetlerine ilişkin bilgiler her durumda bilgi edinme hakkı dışında mı kalır?",
+      "back": "Hayır. Bu bilgiler kural olarak kapsam dışındadır; ama kişilerin çalışma hayatını ve meslek onurunu etkileyecek nitelikteyse bilgi edinme hakkı kapsamındadır.",
+      "articleRefs": [
+        "18"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "İdarî soruşturmaya ilişkin bilgiler, açıklanmaları hangi sonuçlara yol açacaksa Kanun kapsamı dışında kalır?",
+      "back": "Özel hayata açıkça haksız müdahale, kişilerin veya soruşturmayı yürüten görevlilerin hayatını ya da güvenliğini tehlikeye sokma, soruşturmanın güvenliğini tehlikeye düşürme ve gizli kalması gereken bilgi kaynağını açığa çıkarma.",
+      "explanation": "Bu sonuçlar zamanından önce açıklanma için de geçerlidir. Bilgi kaynağına ilişkin bentte, soruşturmayla ilgili benzeri bilgi ve bilgi kaynaklarının temininin güçleşmesi de sayılır.",
+      "articleRefs": [
+        "19"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Adlî soruşturma ve kovuşturmaya ilişkin bilgiler, açıklanmaları hangi sonuçlara yol açacaksa Kanun kapsamı dışında kalır?",
+      "back": "Suç işlenmesine yol açma, suçların önlenmesini ve soruşturulmasını ya da suçluların yakalanıp kovuşturulmasını tehlikeye düşürme, yargılama görevinin gereğince yerine getirilmesini engelleme ve dava açılmış kişinin adil yargılanma hakkını ihlâl etme.",
+      "explanation": "Bu sonuçlar zamanından önce açıklanma için de geçerlidir.",
+      "articleRefs": [
+        "20"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Kamu yararı gerektirdiğinde, kişisel bilgiler açıklanmadan en az kaç gün önce ilgili kişiye haber verilir?",
+      "back": "En az 7 gün önceden haber verilir. Ayrıca ilgilinin yazılı rızası alınır.",
+      "explanation": "Kişinin izin verdiği hâller saklıdır. Bunun dışında, açıklanması kişinin sağlık bilgileri ile özel ve aile hayatına, şeref ve haysiyetine, meslekî ve ekonomik değerlerine haksız müdahale oluşturacak bilgiler kapsam dışındadır.",
+      "articleRefs": [
+        "21"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Yalnız kurum personeline ve kurum içi uygulamalara ilişkin bir düzenlemeden etkilenen kurum çalışanı, bu düzenleme hakkında bilgi isteyebilir mi?",
+      "back": "Evet. Kamuoyunu ilgilendirmeyen kurum içi düzenlemeler kapsam dışıdır; ancak düzenlemeden etkilenen kurum çalışanlarının bilgi edinme hakları saklıdır.",
+      "articleRefs": [
+        "25"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Yasal olarak görüş verme yükümlülüğü bulunan uzmanların görüşleri hangi kayıtla bilgi edinme istemlerine açıktır?",
+      "back": "Kurum ve kuruluşların alacakları kararlara esas teşkil etmeleri kaydıyla açıktır.",
+      "explanation": "Kurumun faaliyetlerini yürütmek için elde ettiği görüş, bilgi notu, teklif ve tavsiyeler de kurum aksini kararlaştırmadıkça bilgi edinme hakkı kapsamındadır.",
+      "articleRefs": [
+        "26"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Kanunun uygulanmasında ihmâli, kusuru veya kastı bulunan memurlara hangi cezalar uygulanır?",
+      "back": "Tâbi oldukları mevzuattaki disiplin cezaları uygulanır. Fiil genel hükümlere göre ceza kovuşturması gerektiriyorsa bu yol da saklıdır.",
+      "explanation": "Kanunla erişilen bilgi ve belgeler ticarî amaçla çoğaltılamaz ve kullanılamaz.",
+      "articleRefs": [
+        "29"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Bilgi Edinme Değerlendirme Kurulunun genel raporu ve kurum raporları, Türkiye Büyük Millet Meclisi Başkanlığınca ne zamana kadar kamuoyuna açıklanır?",
+      "back": "Raporların Meclise gönderilmesini takip eden iki ay içinde açıklanır.",
+      "explanation": "Kurumlar bir önceki yıla ait raporlarını her yıl Şubat ayının sonuna kadar Kurula gönderir. Kurul, genel raporunu bu raporlarla birlikte Nisan ayının sonuna kadar Türkiye Büyük Millet Meclisine iletir.",
+      "articleRefs": [
+        "30"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Bilgi Edinme Hakkı Kanunu'nun hükümlerini kim yürütür?",
+      "back": "Cumhurbaşkanı yürütür.",
+      "articleRefs": [
+        "33"
+      ]
+    }
+  ]
+}
