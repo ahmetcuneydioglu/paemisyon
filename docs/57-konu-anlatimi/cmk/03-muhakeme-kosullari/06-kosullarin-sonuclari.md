@@ -84,7 +84,7 @@ Dava zamanaşımı süresinin durması veya kesilmesi.
 |---|---|---|---|
 | İlk derece mahkemesi | Verir | Verir | Verir |
 | Bölge adliye mahkemesi | Verir | Verir | Verir |
-| Yargıtay | Verebilir | Verebilir | Veremez; hükmü bozar ve dosyayı mahkemesine gönderir |
+| Yargıtay | Verebilir | Verebilir | Öğretide kabul edilen görüşe göre veremez; hükmü bozar ve dosyayı mahkemesine gönderir |
 
 ## Sınavda çıktı
 
@@ -105,6 +105,8 @@ Sorular savcının soruşturma sonundaki kararını, iade ile nitelendirme aras�
 ---
 
 ## Kaynak ve inceleme notları — kullanıcı metnine dahil değil
+
+- DENETİM (ana oturum): Yargıtay'ın durma kararı veremeyeceği bilgisi kitapta öğretiye dayandığı için tabloda "öğretide kabul edilen görüşe göre" kaydıyla verildi. Kitabın s.44'teki bozuk OCR satırı (bekleme sırasında yapılamayacak işlemler) yeniden okundu: satır "yasada açık hüküm varsa suç isnat edici işlemlerin yapılması da mümkündür. Örneğin…" diye devam ediyor ve yalnız md 90/3 örneğini veriyor; başka istisna içermiyor. md 223/7–9, md 254/2 (2024: taksitli edimde durma kararı), TCK md 67 ve md 73 bankadaki metinle karşılaştırıldı; uyumlu.
 
 - Muhakeme koşullarının sonuçları, soruşturma ve kovuşturma evreleri, istinaf ve temyiz: THEMIS Ceza Muhakemesi Hukuku, 23. baskı, 2025, basılı s.44–45 / PDF s.29–30 (4. Bölüm, III). Kitabın 4. bölümü basılı s.45'te biter; görev tanımındaki s.46 boş sayfadır. Özgün anlatım; tablolar bu ders için kuruldu.
 - Resmî metin: 5271 sayılı Ceza Muhakemesi Kanunu (md 90, 172, 174, 223): https://www.mevzuat.gov.tr/mevzuatmetin/1.5.5271.pdf

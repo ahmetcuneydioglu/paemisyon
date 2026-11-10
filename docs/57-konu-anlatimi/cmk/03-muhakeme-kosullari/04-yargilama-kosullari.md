@@ -92,7 +92,7 @@ Sanığın duruşmadan bağışık tutulması.
 | Bağışık tutma | Sorgusu yapılmış sanık ya da yetkili kıldığı müdafii istemelidir |
 | İstinabe ile sorgu | Alt sınırı beş yıl ve daha fazla hapis cezasını gerektiren suçlarda bu yola gidilemez |
 
-Bu hâllerin ortak paydası sorgudur: sanık aleyhine sonuç doğabilecek her durumda, önce sorgusunun yapılmış olması aranır.
+Bu hâllerin çoğunda ortak payda sorgudur: savuşmada ve bağışık tutmada önce sorgunun yapılmış olması aranır. İki hâl bunun dışındadır. Sanık lehine sonuçlanacak davada sorgu aranmaz, çünkü karar sanığın aleyhine değildir. Yalnız adli para cezasını ya da müsadereyi gerektiren suçlarda da sorgu aranmaz; orada güvence, davetiyeye yazılan uyarıdır.
 
 :::ornek
 Sorgusu yapılmış sanık, işi nedeniyle sonraki duruşmalara gelemeyeceğini bildirir ve bağışık tutulmayı ister. Mahkeme isteği kabul edebilir. Karar mahkemeyi bağlamaz: gerek görürse sanığı yeniden çağırabilir, gelmezse zorla getirtebilir. Sanığı da bağlamaz: dilerse duruşmaya gelebilir.
@@ -137,6 +137,8 @@ Sorular gaip ile kaçağın tanımını karıştırtır, kaçak ve bağışık t
 ---
 
 ## Kaynak ve inceleme notları — kullanıcı metnine dahil değil
+
+- DENETİM DÜZELTMESİ (ana oturum): "yokluk hâllerinin ortak paydası sorgudur; aleyhe sonuç doğabilecek her durumda sorgu aranır" genellemesi md 195 ile çelişiyordu (adli para cezası ve müsadere aleyhe sonuçtur, sorgu aranmaz). Cümle md 193/2, 194, 195 ve 196'nın metnine göre yeniden yazıldı. md 193/2 (2023), md 247/3 (2024 ve 2026) ve md 196/2 bankadaki yürürlükteki metinle karşılaştırıldı; dersteki anlatım uyumlu.
 
 - Yargılama koşulları: sanığın hazır bulunması (gaiplik, kaçaklık, yokluk), akıl hastalığı, yasama dokunulmazlığı, bekletici sorun: THEMIS Ceza Muhakemesi Hukuku, 23. baskı, 2025, basılı s.39–43 / PDF s.27–29 (4. Bölüm, II/A–D). Özgün anlatım; tablolar bu ders için kuruldu.
 - Resmî metin: 5271 sayılı Ceza Muhakemesi Kanunu (md 193, 194, 195, 196, 218, 244, 247, 248): https://www.mevzuat.gov.tr/mevzuatmetin/1.5.5271.pdf

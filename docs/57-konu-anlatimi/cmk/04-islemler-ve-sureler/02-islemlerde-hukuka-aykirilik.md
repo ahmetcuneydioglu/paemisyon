@@ -49,7 +49,7 @@ Ceza muhakemesindeki butlan, özel hukuktaki butlanla aynı şey değildir. Öze
 
 Kanun bir işlemin yapılması için sınırlayıcı bir süre koymuşsa ve süre geçmişse, işlemi yapma hakkı düşer. Buradaki sakatlık işlemin içeriğinde değil, zamanındadır. Tarafların rızası sonucu değiştirmez; karşı taraf süresinden sonra yapılan başvuruya razı olsa bile hak geri gelmez. Kanun yolu süresini geçiren kişinin başvuru hakkı bu yüzden düşer.
 
-Hak düşümünün tek çaresi eski hâle getirmedir: süre kusur olmaksızın geçirilmişse hak geri kazanılabilir. Bu kurum bölümün dördüncü dersinde anlatılır.
+Hak düşümünün çaresi eski hâle getirmedir: süre kusur olmaksızın geçirilmişse hak geri kazanılabilir. Bu kurum bölümün dördüncü dersinde anlatılır.
 
 ## Kabul edilmezlik
 

@@ -82,7 +82,7 @@ Kararın türüne göre sonuç değişir.
 
 Kabul kararının kesin olmasının mantığı açıktır: kabul, kişiye yalnız kaçırdığı işlemi yapma imkânı verir; karşı tarafın esas hakkındaki iddia ve savunmaları saklı kalır. Ret kararı ise hakkı kesin olarak ortadan kaldırdığı için denetime açık tutulmuştur.
 
-Eski hâle getirme dilekçesi, hakkında süre kaçırılan kararın yerine getirilmesini kendiliğinden durdurmaz. Karar kesinleşmiş gibi infaz edilebilir. Ancak mahkeme yerine getirmeyi erteleyebilir; bu bir zorunluluk değil, takdir yetkisidir.
+Eski hâle getirme dilekçesi, hakkında süre kaçırılan kararın yerine getirilmesini kendiliğinden durdurmaz. Ancak mahkeme yerine getirmeyi erteleyebilir; bu bir zorunluluk değil, takdir yetkisidir.
 
 :::uyari
 İki çeldirici sıkça görülür: "kabul kararına karşı itiraz edilebilir" ve "dilekçe kararın yerine getirilmesini durdurur". İkisi de yanlıştır. İtiraza açık olan ret kararıdır; yerine getirmeyi durduran da dilekçe değil, mahkemenin ayrıca vereceği erteleme kararıdır.
@@ -120,6 +120,8 @@ Sorular istemin süresini, kabul ve ret kararlarının kanun yolunu ve kurumun a
 ---
 
 ## Kaynak ve inceleme notları — kullanıcı metnine dahil değil
+
+- DENETİM DÜZELTMESİ (ana oturum): "karar kesinleşmiş gibi infaz edilebilir" cümlesi çıkarıldı; md 42/3 yalnız dilekçenin yerine getirmeyi durdurmadığını ve mahkemenin erteleyebileceğini söyler. md 40, 41 (iki hafta; 2024) ve 42 bankadaki metinle karşılaştırıldı; uyumlu. İkinci dersteki "hak düşümünün tek çaresi" ifadesinden "tek" çıkarıldı.
 
 - Kaynak: THEMIS Ceza Muhakemesi Hukuku, 23. baskı, 2025, basılı s.51 / PDF s.33 (5. Bölüm, II/B Eski Hâle Getirme); hak düşümü ile bağ için basılı s.49 / PDF s.32. Özgün anlatım; tablolar ve örnek bu ders için kuruldu.
 - Resmî metin: 5271 sayılı Ceza Muhakemesi Kanunu (md 34, 39, 40, 41, 42): https://www.mevzuat.gov.tr/mevzuatmetin/1.5.5271.pdf
