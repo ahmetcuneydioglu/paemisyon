@@ -1,0 +1,241 @@
+{
+  "deck": {
+    "topicId": "3f91916c-8d15-40f4-bb20-5bcca9253c34",
+    "legislationSlug": "2918-sayili-karayollari-trafik-kanunu",
+    "sourceLabel": "AI bilgi kartı — 2918 Sayılı Karayolları Trafik Kanunu md 67–74",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: resmî madde metni + çıkmış sorular)"
+  },
+  "cards": [
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Zorunluluk yokken el frenini çekerek aracını ani yön değiştiren ya da kendi etrafında döndüren sürücünün sürücü belgesi ne kadar süreyle geri alınır?",
+      "back": "Altmış gün. Ayrıca 140.000 Türk lirası idari para cezası verilir ve araç altmış gün trafikten menedilir.",
+      "explanation": "Belge, geri alma süresi sonunda iade edilir. Bunun için sürücünün psiko-teknik değerlendirmeden ve psikiyatri uzmanının muayenesinden geçmesi gerekir. Sürücü belgesi almasına mâni hâli olmadığı anlaşılmalı ve bu Kanun kapsamında verilen trafik idari para cezaları tahsil edilmiş olmalıdır.",
+      "articleRefs": [
+        "67"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Dönüşte ya da şerit değiştirmede verdiğin işaret ne zaman sona erdirilmelidir?",
+      "back": "Manevra biter bitmez. İşaret manevra süresince devam etmelidir.",
+      "explanation": "Sürücü niyetini dönüş işaret ışıkları veya kol işaretiyle açıkça ve yeterli şekilde belirtmek zorundadır. Bu bende uymayan sürücüye 235 Türk lirası idari para cezası verilir.",
+      "articleRefs": [
+        "67"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Her iki tarafında yaya yolu ve banket bulunmayan iki yönlü karayolunda, yaya kafilesi dışındaki yayalar taşıt yolunun hangi kenarını izler?",
+      "back": "Sol kenarını. Bu kural yaya kafileleri dışındaki yayalar içindir.",
+      "explanation": "Yaya yolu yoksa ya da kullanılamıyorsa yaya, bisiklet trafiğine engel olmamak şartıyla bisiklet yolunda veya şeridinde yürüyebilir. Bunlar da yoksa imkân oranında taşıt yolu kenarına yakın yürür.",
+      "articleRefs": [
+        "68"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Bir yetkili veya görevli yönetiminde düzenli yürüyen yaya kafilesi taşıt yolunda hangi şartla yürüyebilir?",
+      "back": "Taşıt yolunun en sağ şeridinden fazla kısmını işgal etmemek şartıyla. Gece ve gündüz görüşün az olduğu hâllerde imkân oranında tek sıra hâlinde yürümek de gerekir.",
+      "explanation": "Diğer yayalar için ciddi rahatsızlık verecek boyutta eşya iten veya taşıyan kişiler de taşıt yolunda yürüyebilir. Bunun şartı, yönetmelikte belirtilen tedbirlerin alınmasıdır.",
+      "articleRefs": [
+        "68"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Yüz metre kadar mesafede yaya geçidi ya da kavşak bulunmayan yerde yaya, taşıt yolunu geçit dışından geçebilir mi?",
+      "back": "Evet. Taşıt trafiğine engel olmamak ve yolu kontrol edip kendi güvenliğini sağlamak şartıyla, en kısa doğrultuda ve en kısa zamanda geçebilir.",
+      "explanation": "Genel kural şudur: yaya, taşıt yolunu yalnız yaya ve okul geçidi ile kavşak giriş ve çıkışlarından geçer. Geçitte yayalar için ışıklı işaret varsa bu işarete uyar.",
+      "articleRefs": [
+        "68"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Hayvanla çekilen veya elle sürülen araçlar ile hayvanlar kimin yönetimine verilemez?",
+      "back": "Bunları sürme yeteneğinden yoksun kimselerin yönetimine. Bunları başıboş bırakmak da yasaktır.",
+      "explanation": "Karayollarının yasaklanmamış kesimlerinde hayvanla çekilen veya elle sürülen araçları, hayvanları, hayvan sürülerini ve binek hayvanlarını trafik kurallarına uymadan sürmek de yasaktır.",
+      "articleRefs": [
+        "69"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Taşıt yolunu kullanmak zorunda olan hayvan sürü ve kümelerini sevk ve idare edenler hangi kurallara uyar?",
+      "back": "Yönetmelikte belirtilen usul ve şartlara uymak zorundadırlar.",
+      "articleRefs": [
+        "69"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Yerleşim birimleri dışındaki karayolunda, zorunlu bir hâlde taşıt yolu üzerinde hayvan bulundurulabilir mi?",
+      "back": "Evet. Taşıt yolu üzerinde hayvan bulundurma yasağı zorunlu hâller dışındaki durumları kapsar.",
+      "explanation": "Yasak, yerleşim birimleri dışındaki karayolunda taşıt yolu üzerinde hayvan bulundurmayı hedefler. Hayvanları başıboş bırakmak ise ayrıca yasaktır.",
+      "articleRefs": [
+        "69"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Birden fazla il sınırı içindeki şehirlerarası karayolunda yapılacak milletlerarası bir yarış için izni kim verir?",
+      "back": "İçişleri Bakanlığı. İzin verilirken Ulaştırma ve Altyapı Bakanlığının uygun görüşü alınır.",
+      "explanation": "Bir il sınırı içindeki karayollarında yapılacak yarış ve koşular için izin o ilin valiliğinden alınır. İzinsiz yapılan yarış ve koşular görevlilerce derhal durdurulur.",
+      "articleRefs": [
+        "70"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Yarış yapan motorlu araç sürücüsünün sürücü belgesi ne kadar süreyle geri alınır?",
+      "back": "İki yıl. Ayrıca 46.000 Türk lirası idari para cezası uygulanır ve yarış yapılan araç altmış gün trafikten menedilir.",
+      "explanation": "İade için iki şart vardır: psiko-teknik değerlendirmeyle sürücülüğe engel hâl bulunmadığını gösteren belge ve idari para cezalarının tamamının tahsili. Son ihlalden geriye doğru beş yıl içinde ikinci defa geri almada belge iptal edilir. Bu durumda kursa başlamak için iptalden itibaren en az iki yıl geçmesi gerekir.",
+      "articleRefs": [
+        "70"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "İzin alınmadan yapılan yarış ve koşuları düzenleyen ilgililere 46.000 Türk lirası idari para cezası mı uygulanır?",
+      "back": "Hayır. Düzenleyen ilgililere 16.000 Türk lirası uygulanır; 46.000 Türk lirası yarış yapan motorlu araç sürücülerine verilen cezadır.",
+      "explanation": "İzinsiz yarış ve koşular görevlilerce derhal durdurulur. Yarış ve koşularda trafik güvenliği yönünden uygulanacak usul ve şartlar yönetmelikte gösterilir.",
+      "articleRefs": [
+        "70"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Geçiş üstünlüğüne sahip araçların öncelik sırasında en başta hangi araçlar yer alır?",
+      "back": "Cankurtaran araçları ile yaralı veya acil hasta taşıyan araçlar.",
+      "explanation": "Sıra şöyle devam eder: itfaiye ve orman yangınlarıyla mücadele eden araçlar; zabıta araçları; trafik görevlilerine ait araçlar; afet ve acil durum hizmetlerinde görevli araçlar; yasama, yürütme ve yargı organlarının üst makamlarına ait (1) sayılı listedeki araçlar; yönetmelikte belirlenen araçlar. Araçlar karşılaşınca üstünlük bu sıraya göredir.",
+      "articleRefs": [
+        "71"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Hükümlü ya da sanığı takip eden zabıta aracı, orman yangınıyla mücadele eden araçla karşılaşınca geçiş üstünlüğü zabıta aracında mıdır?",
+      "back": "Hayır. Orman yangınlarıyla mücadele eden araçlar itfaiye araçlarıyla birlikte (b) sırasındadır ve (c) sırasındaki zabıta araçlarından önce geçer.",
+      "explanation": "Afet ve acil durum hâllerinde afet ve acil durum hizmetlerinde görevli araçlar (e) sırasındadır. Bunlar zabıta araçlarından ve trafik görevlilerine ait araçlardan sonra gelir.",
+      "articleRefs": [
+        "71"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Zorunluluk olmadığı hâlde geçiş üstünlüğü hakkını kullanan sürücüye ne kadar idari para cezası uygulanır?",
+      "back": "46.000 Türk lirası.",
+      "explanation": "Bu araçlar geçiş üstünlüğüne yalnız görev hâlindeyken sahiptir. Hak, halkın can ve mal güvenliğini tehlikeye sokmamak ve duyulur ve görünür geçiş üstünlüğü işaretini vermek şartıyla kullanılır. Bu araçlar Kanun ve yönetmelikteki trafik kısıtlama ve yasaklarına bağlı değildir.",
+      "articleRefs": [
+        "71"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Araçta ses, müzik, görüntü ve haberleşme cihazları hangi şartla kullanılabilir?",
+      "back": "Yönetmelikte gösterilen şartlara uygun olarak ve kamunun rahat ve huzurunu bozmayacak şekilde.",
+      "explanation": "Bu hükme uymayanlara 3.000 Türk lirası idari para cezası uygulanır.",
+      "articleRefs": [
+        "72"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Aracında sürücünün izleme ve kullanma sahası içinde kalan bir görüntü cihazı bulunduran kişinin aracı ne kadar süre trafikten menedilir?",
+      "back": "Otuz gün. Ayrıca 21.000 Türk lirası idari para cezası uygulanır.",
+      "explanation": "Aynı yaptırım, Kanun ve yönetmelikte belirtilen şartlara uymayan ses, müzik, görüntü ve haberleşme cihazlarını araçta bulundurmak veya kullanmak için de uygulanır.",
+      "articleRefs": [
+        "72"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Kanun ve yönetmelikteki şartlara uymayan ses, müzik, görüntü ve haberleşme cihazları için araçta hangi işlem yapılır?",
+      "back": "Araçlardan söktürülür. Sürücünün izleme ve kullanma sahası içinde kalan görüntü cihazları için de aynı işlem uygulanır.",
+      "articleRefs": [
+        "72"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Seyir hâlinde cep telefonu kullanan sürücüye ilk ihlalde ne kadar idari para cezası uygulanır?",
+      "back": "5.000 Türk lirası.",
+      "explanation": "Son ihlalden geriye doğru bir yıl içinde kural ikinci defa ihlal edilirse ceza 10.000 Türk lirasıdır. Aynı süre içinde üç veya daha fazla ihlalde ceza her seferinde 20.000 Türk lirası olur.",
+      "articleRefs": [
+        "73"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Son ihlalden geriye doğru bir yıl içinde üçüncü kez seyir hâlinde telefon kullanan sürücünün sürücü belgesi ne kadar süre geri alınır?",
+      "back": "Otuz gün. Üç veya daha fazla ihlalde her seferinde 20.000 Türk lirası ceza verilir ve belge her seferinde otuz gün geri alınır.",
+      "explanation": "Geri alınan belgenin iade edilebilmesi için bu Kanun kapsamında verilen idari para cezalarının tamamının tahsil edilmiş olması şarttır.",
+      "articleRefs": [
+        "73"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Seyir hâlinde telefon kullanımı nedeniyle sürücü belgesini geri alma işlemini kimler yapar?",
+      "back": "Karayolları Trafik Kanununun 6 ncı maddesinde sayılan görevliler.",
+      "explanation": "Araçların kamunun rahat ve huzurunu bozacak şekilde saygısızca sürülmesi ve araçlardan bir şey atılması veya dökülmesi de yasaktır. Bu diğer hükümlere uymayanlara 1.000 Türk lirası idari para cezası uygulanır.",
+      "articleRefs": [
+        "73"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Sürücünün yavaşlayıp yayalara durarak ilk geçiş hakkı verme yükümlülüğü hangi yerlerde geçerlidir?",
+      "back": "Görevli kişi veya ışıklı trafik işareti bulunmayan, ancak trafik işareti veya levhalarıyla belirlenmiş kavşak giriş ve çıkışları ile yaya veya okul geçitlerinde.",
+      "articleRefs": [
+        "74"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Levhayla belirlenmiş yaya geçidinde yayaya ilk geçiş hakkını vermeyen sürücüye ne kadar idari para cezası verilir?",
+      "back": "488 Türk lirası.",
+      "articleRefs": [
+        "74"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Levhayla belirlenmiş yaya geçidine yaklaşan sürücü, geçmek üzere bir yaya varken yalnız hızını azaltarak geçidi geçebilir mi?",
+      "back": "Hayır. Yavaşlamak ve geçen ya da geçmek üzere bulunan yayalara durarak ilk geçiş hakkını vermek zorundadır; okul geçitlerinde de kural aynıdır.",
+      "explanation": "Yükümlülük, görevli kişi veya ışıklı trafik işareti bulunmayan, ancak trafik işareti veya levhalarıyla belirlenmiş kavşak giriş ve çıkışları ile yaya ve okul geçitlerinde geçerlidir.",
+      "articleRefs": [
+        "74"
+      ],
+      "counterNumbers": []
+    }
+  ]
+}

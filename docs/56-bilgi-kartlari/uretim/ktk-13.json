@@ -1,0 +1,287 @@
+{
+  "deck": {
+    "topicId": "3f91916c-8d15-40f4-bb20-5bcca9253c34",
+    "legislationSlug": "2918-sayili-karayollari-trafik-kanunu",
+    "sourceLabel": "AI bilgi kartı — 2918 Sayılı Karayolları Trafik Kanunu md 87–102",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: resmî madde metni + çıkmış sorular)"
+  },
+  "cards": [
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Yaralanan kişi araçta hatır için karşılıksız taşınıyorsa, işletenin sorumluluğu hangi hükümlere tabidir?",
+      "back": "Genel hükümlere. Motorlu araç, yaralanan ya da ölen kişiye hatır için karşılıksız verilmişse de aynı kural uygulanır.",
+      "explanation": "Aynı madde, motorlu aracın maliki ile işleteni arasındaki ilişkide araca gelen zararlardan doğan sorumluluğu da genel hükümlere bağlar. Hatır taşımasında araç işleticisinin bağlı olduğu teşebbüs sahibinin sorumluluğu da genel hükümlere tabidir.",
+      "articleRefs": [
+        "87"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Zarar görenin beraberindeki bagajın uğradığı zarardan işletenin sorumluluğu, araçta taşınan eşya kuralı gereği genel hükümlere mi tabidir?",
+      "back": "Hayır. Genel hükümlere bağlanan, zarar görenin beraberinde bulunan bagaj ve benzeri eşya dışında araçta taşınan eşyanın uğradığı zararlardır.",
+      "explanation": "Bu kural, işletenin ve araç işleticisinin bağlı olduğu teşebbüs sahibinin sorumluluğu için geçerlidir. Zarar görenin beraberindeki bagaj ve benzeri eşya, kuralın kapsamından açıkça ayrılmıştır.",
+      "articleRefs": [
+        "87"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Bir motorlu aracın katıldığı kazada, üçüncü kişinin zararından birden fazla kişi tazminatla yükümlüyse bunlar nasıl sorumlu tutulur?",
+      "back": "Müteselsil olarak sorumlu tutulurlar.",
+      "articleRefs": [
+        "88"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Birden fazla kişinin sorumlu olduğu kazada, bu kişiler arasındaki ilişkide zarar nasıl paylaştırılır?",
+      "back": "Olayın bütün şartları değerlendirilerek paylaştırılır.",
+      "explanation": "İşletenler ve araç işleticisinin bağlı olduğu teşebbüs sahipleri, kural olarak kusurları oranında zarara katlanır. Özel durumlar ve özellikle araçların işletme tehlikeleri, iç ilişkide başka türlü bir paylaştırmayı haklı gösterebilir.",
+      "articleRefs": [
+        "88"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Birden çok motorlu aracın katıldığı kazada işletenlerden biri bedensel zarara uğrarsa, kazaya katılan araçların işletenleri bu zararı hangi ölçüde giderir?",
+      "back": "Kendilerine düşen kusur oranında giderirler. Özel durumlar ve özellikle işletme tehlikeleri başka türlü paylaştırmayı haklı gösteriyorsa bu oran değişebilir.",
+      "explanation": "Tazminatla yükümlü işletenler ve işleticinin bağlı olduğu teşebbüs sahipleri, zarar gören işletene karşı müteselsilen sorumludur.",
+      "articleRefs": [
+        "89"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Kazada işletenlerden birine ait bir şey zarar görürse, zarar gören tazminat alabilmek için neyi ispat etmelidir?",
+      "back": "Zararın şu sebeplerden biriyle doğduğunu ispat etmelidir: zarar veren işletenin ya da eylemlerinden sorumlu tutulduğu kimsenin kusuru, geçici olarak temyiz gücünü kaybetmesi ya da zarar verene ait araçtaki bir bozukluk.",
+      "explanation": "Bu ispat yapıldığında, zarar veren işleten ya da işleticinin bağlı olduğu teşebbüs sahibi tazminatla yükümlü tutulur.",
+      "articleRefs": [
+        "89"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Sigorta yaptıranların ödediği zorunlu mali sorumluluk sigortası priminin yüzde kaçı İçişleri Bakanlığı Merkez Saymanlığı hesabına yatırılır?",
+      "back": "%5'i yatırılır. Yatırılan bu tutarlar bütçeye gelir kaydedilir.",
+      "articleRefs": [
+        "91"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Sigorta şirketi, tahsil ettiği prim payını İçişleri Bakanlığı Merkez Saymanlığı hesabına en geç ne zamana kadar yatırır?",
+      "back": "Tahsil edildiği ayı takip eden ayın en geç 20'sine kadar yatırır.",
+      "articleRefs": [
+        "91"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Geçerli teminat tutarları üzerinden zorunlu mali sorumluluk sigortası bulunmayan araçlar hakkında ne yapılır?",
+      "back": "Bu araçlar trafikten men edilir.",
+      "explanation": "İşletenlerin, sorumluluklarının karşılanmasını sağlamak üzere mali sorumluluk sigortası yaptırması zorunludur.",
+      "articleRefs": [
+        "91"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 1,
+      "front": "Manevi tazminat talepleri zorunlu mali sorumluluk sigortası kapsamına girer mi?",
+      "back": "Hayır. Manevi tazminata ilişkin talepler zorunlu mali sorumluluk sigortası kapsamı dışındadır.",
+      "explanation": "Aynı maddede kapsam dışı sayılanlar arasında motorlu araçta taşınan eşyanın uğrayacağı zararlar ile hak sahibinin kendi kusuruna denk gelen tazminat talepleri de vardır.",
+      "articleRefs": [
+        "92"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Zorunlu mali sorumluluk sigortası kapsamı dışında kalan dolaylı zararlara hangi örnekler verilir?",
+      "back": "Gelir kaybı, kâr kaybı, iş durması ve kira mahrumiyeti.",
+      "explanation": "Madde bunları \"gibi\" diyerek örnek olarak sayar; dolaylı zararlar zorunlu mali sorumluluk sigortası kapsamı dışındadır.",
+      "articleRefs": [
+        "92"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "İşletenin hangi yakınlarının, mallarına gelen zararlar nedeniyle ileri sürebilecekleri talepler zorunlu mali sorumluluk sigortası kapsamı dışındadır?",
+      "back": "Eşinin, usul ve füruunun, kendisine evlat edinme ilişkisiyle bağlı olanların ve birlikte yaşadığı kardeşlerinin talepleri.",
+      "explanation": "Kapsam dışı olan, bu kişilerin mallarına gelen zararlara ilişkin taleplerdir. Kardeşler için birlikte yaşama şartı aranır.",
+      "articleRefs": [
+        "92"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Zorunlu mali sorumluluk sigortası tarifelerinde, sigorta süresi içinde hiç hasar ödemesine neden olmayan işletenler nasıl ödüllendirilir?",
+      "back": "Primleri indirilerek ödüllendirilirler.",
+      "explanation": "Hasar ödemesine neden olan işletenler ise primlerinin yükseltilmesi yoluyla cezalandırılır. Tarife ve talimatların tespitinde araç türleri ve coğrafi bölge de dikkate alınır.",
+      "articleRefs": [
+        "93"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Sigortalı aracı işleten kişi değişirse, devreden kişi durumu kaç gün içinde sigortacıya bildirmek zorundadır?",
+      "back": "15 gün içinde bildirmek zorundadır. Bildirim yükümlülüğü devreden kişiye aittir.",
+      "articleRefs": [
+        "94"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Sigorta sözleşmesinden doğan ve tazminat miktarını azaltan bir hal, zarar görene karşı ileri sürülebilir mi?",
+      "back": "Hayır. Sözleşmeden ya da ona ilişkin kanun hükümlerinden doğan, tazminat yükümlülüğünü kaldıran veya azaltan haller zarar görene karşı ileri sürülemez.",
+      "articleRefs": [
+        "95"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Zarar görene ödemede bulunan sigortacı, sözleşmeye göre tazminatı kaldırabileceği ya da azaltabileceği hallerde kime başvurabilir?",
+      "back": "Sigorta ettirene başvurabilir; tazminatın kaldırılmasını veya azaltılmasını sağlayabileceği oranda.",
+      "explanation": "Başvuru, sigorta sözleşmesine ve bu sözleşmeye ilişkin kanun hükümlerine göre yapılır.",
+      "articleRefs": [
+        "95"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Zarar görenlerin tazminat alacakları sigorta tutarını aşarsa, her birinin sigortacıya yöneltebileceği talep nasıl belirlenir?",
+      "back": "Sigorta tutarının, tazminat alacakları toplamına olan oranına göre indirilir.",
+      "articleRefs": [
+        "96"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Başka talepleri bilmeden bir zarar görene payından fazla ödeme yapan iyiniyetli sigortacı, diğer zarar görenlere karşı borcunun tamamından sorumlu kalır mı?",
+      "back": "Hayır. Yaptığı ödeme çerçevesinde diğer zarar görenlere karşı da borcundan kurtulmuş sayılır.",
+      "explanation": "Bu koruma, başka tazminat taleplerinin bulunduğunu bilmeyen iyiniyetli sigortacı için öngörülmüştür.",
+      "articleRefs": [
+        "96"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Zarar gören, zorunlu mali sorumluluk sigortası sınırları içinde dava açmadan önce ne yapmalıdır?",
+      "back": "İlgili sigorta kuruluşuna yazılı başvuruda bulunmalıdır.",
+      "articleRefs": [
+        "97"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Sigorta kuruluşu, zarar görenin yazılı başvurusunu en geç kaç gün içinde yazılı olarak cevaplamalıdır?",
+      "back": "Başvuru tarihinden itibaren en geç 15 gün içinde cevaplamalıdır.",
+      "explanation": "Bu sürede cevap verilmezse ya da verilen cevabın talebi karşılamadığı konusunda uyuşmazlık çıkarsa, zarar gören dava açabilir veya 5684 sayılı Kanun çerçevesinde tahkime başvurabilir.",
+      "articleRefs": [
+        "97"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Trafik kazası nedeniyle sunulan sağlık hizmetlerinin bedelini kim karşılar?",
+      "back": "Sosyal Güvenlik Kurumu karşılar; kazazedenin sosyal güvencesi olup olmadığına bakılmaz.",
+      "explanation": "Üniversitelere bağlı hastaneler ile diğer bütün resmî ve özel sağlık kurum ve kuruluşlarının hizmet bedelleri bu kapsamdadır. Bedeller, genel sağlık sigortalısı sayılanlar için belirlenen geri ödeme usul ve esasları çerçevesinde karşılanır.",
+      "articleRefs": [
+        "98"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Trafik kazalarına sağlık teminatı sağlayan zorunlu sigortalarda, Sosyal Güvenlik Kurumuna aktarılacak tutarı Cumhurbaşkanı hangi orana kadar artırabilir ya da azaltabilir?",
+      "back": "%50'sine kadar artırmaya veya azaltmaya yetkilidir.",
+      "explanation": "Bu aktarımla, sigorta şirketlerinin ve Güvence Hesabının bu teminat kapsamındaki yükümlülükleri sona erer.",
+      "articleRefs": [
+        "98"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Sigortacı, zorunlu mali sorumluluk sigortası sınırları içindeki tutarı hak sahibine kaç iş günü içinde ödemek zorundadır?",
+      "back": "Sekiz iş günü içinde ödemek zorundadır.",
+      "explanation": "Süre, hak sahibinin genel şartlarla belirlenen belgeleri sigortacının merkezine veya kuruluşlarından birine ilettiği tarihten itibaren işler.",
+      "articleRefs": [
+        "99"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Ödemeyi yapan sigortacının paylaşım talebi üzerine, diğer sigortacılar kendilerine düşen miktarı kaç iş günü içinde öder?",
+      "back": "Talep tarihinden itibaren sekiz iş günü içinde öderler.",
+      "explanation": "Ödeyen sigortacı, ödenen miktarın sorumluluk oranlarında paylaşılmasını diğer sigortacılardan yazılı olarak talep eder.",
+      "articleRefs": [
+        "99"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Sorumluluğun kaldırılması veya tazminatın azaltılmasına ilişkin md 95 yalnız zorunlu mali sorumluluk sigortasında mı uygulanır?",
+      "back": "Hayır. md 95, ihtiyari mali sorumluluk sigortasında da uygulanır. Doğrudan talep ve dava hakkına ilişkin md 97 ile zamanaşımına ilişkin md 109 da öyle.",
+      "articleRefs": [
+        "100"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Zorunlu mali sorumluluk sigortasını hangi sigorta şirketleri yapar?",
+      "back": "Türkiye'de kaza sigortası dalında çalışmaya yetkili olan sigorta şirketleri yapar. Bu şirketler sigortayı yapmakla yükümlüdür.",
+      "articleRefs": [
+        "101"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Bir römorkun sebep olduğu zarardan kim sorumlu tutulur?",
+      "back": "Çekicinin işleteni sorumlu tutulur; motorlu aracı işletenin sorumluluğuna ilişkin hükümlere göre.",
+      "explanation": "Aynı kural, yarı römorkun ve çekilen bir aracın sebep olduğu zarar için de geçerlidir. Çekicinin sorumluluk sigortası, römorkun sebep olduğu zarardan doğan sorumluluğu da kapsar.",
+      "articleRefs": [
+        "102"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "İnsan taşımada kullanılan bir römork, yalnız çekicinin sorumluluk sigortasıyla trafiğe çıkarılabilir mi?",
+      "back": "Hayır. Römork için ek bir sorumluluk sigortası yaptırılıp tüm katar en az zorunlu mali sorumluluk sigortası tutarlarının kapsamına alınmadıkça trafiğe çıkarılamaz.",
+      "explanation": "Çekicinin sorumluluk sigortası, römorkun sebep olduğu zarardan doğan sorumluluğu da kapsar. İnsan taşımada kullanılan römorklar için ise ek sigorta şartı aranır.",
+      "articleRefs": [
+        "102"
+      ],
+      "counterNumbers": []
+    }
+  ]
+}

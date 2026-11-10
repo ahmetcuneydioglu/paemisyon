@@ -1,0 +1,294 @@
+{
+  "deck": {
+    "topicId": "5f4ee087-a19b-4e99-84e6-aadc837acc77",
+    "legislationSlug": "5901-sayili-turk-vatandasligi-kanunu",
+    "sourceLabel": "AI bilgi kartı — 5901 Sayılı Türk Vatandaşlığı Kanunu md 29–49, Ek 1, Geçici 1, Geçici 2",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: resmî madde metni + çıkmış sorular)"
+  },
+  "cards": [
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Yabancı bir devletin Türkiye'nin menfaatlerine uymayan bir hizmetinde bulunan kişiye, bu görevi bırakması için en az ne kadar süre verilir?",
+      "back": "En az üç ay. Bu süre içinde görevi kendi isteğiyle bırakmayanın Türk vatandaşlığı Cumhurbaşkanı kararıyla kaybettirilebilir.",
+      "explanation": "Görevi bırakması gerektiği kişiye yurt dışında dış temsilcilikler, yurt içinde mülki idare amirleri tarafından bildirilir. Makam uygun bir süre verir, ama bu süre üç aydan az olamaz.",
+      "articleRefs": [
+        "29"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Türk Ceza Kanununun 302 ve 309–315 inci maddelerindeki suçlar nedeniyle hakkında soruşturma veya kovuşturma yürütülen, yabancı ülkede olduğu için ulaşılamayan vatandaş, bu durum öğrenildikten sonra ne kadar süre içinde Bakanlığa bildirilir?",
+      "back": "Bir ay içinde. Soruşturma aşamasında Cumhuriyet savcısı, kovuşturma aşamasında mahkeme bildirir.",
+      "explanation": "Bildirimin amacı vatandaşlığın kaybettirilmesidir. Bakanlık Resmî Gazetede yurda dön ilanı yapar. Kişi üç ay içinde yurda dönmezse Türk vatandaşlığı Cumhurbaşkanı kararıyla kaybettirilebilir.",
+      "articleRefs": [
+        "29"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Türkiye ile savaş hâlinde bulunan bir devletin hizmetinde Cumhurbaşkanının izniyle çalışmaya devam etmek, vatandaşlığın kaybettirilmesi sebebi sayılır mı?",
+      "back": "Hayır. Kaybettirme sebebi, Cumhurbaşkanının izni olmaksızın kendi isteğiyle çalışmaya devam etmektir.",
+      "explanation": "Bu sebep, savaş hâlindeki devletin her türlü hizmetini kapsar. Aranan iki şart vardır: Cumhurbaşkanının izninin bulunmaması ve kişinin kendi isteğiyle çalışmaya devam etmesi.",
+      "articleRefs": [
+        "29"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Türk vatandaşlığının kaybettirilmesi hangi tarihten itibaren hüküm ifade eder?",
+      "back": "Cumhurbaşkanı kararının Resmî Gazetede yayımlandığı tarihten itibaren.",
+      "explanation": "Kaybettirme Cumhurbaşkanı kararıyla yapılır. Kararın sonucu, Resmî Gazetede yayımlandığı gün doğar.",
+      "articleRefs": [
+        "30"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Türk vatandaşlığı kaybettirilen kişinin eş ve çocukları bu karardan etkilenir mi?",
+      "back": "Hayır. Kaybettirme kararları şahsidir, ilgilinin eş ve çocuklarına tesir etmez.",
+      "articleRefs": [
+        "30"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "İlgilinin yalan beyanı sonucunda verilmiş bir Türk vatandaşlığını kazanma kararını hangi makam iptal eder?",
+      "back": "Kararı veren makam iptal eder.",
+      "explanation": "İptal için kararın iki durumdan biriyle verilmiş olması gerekir: ilgilinin yalan beyanı ya da vatandaşlığı kazanmaya esas teşkil eden önemli hususları gizlemesi.",
+      "articleRefs": [
+        "31"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Türk vatandaşlığını kazanma kararının iptali hangi tarihten itibaren hüküm ifade eder?",
+      "back": "İptal kararının tarihinden itibaren.",
+      "articleRefs": [
+        "32"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Vatandaşlığın iptali kararı, ilgilinin dışında kimler hakkında da uygulanır?",
+      "back": "İlgili kişiye bağlı olarak Türk vatandaşlığını kazanan eş ve çocuklar hakkında da uygulanır.",
+      "articleRefs": [
+        "32"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Vatandaşlığı iptal edilen ve mallarının tasfiyesi gerekli görülen kişi, Türkiye'deki mallarını en geç ne kadar sürede tasfiye etmek zorundadır?",
+      "back": "En geç bir yıl içinde.",
+      "explanation": "Malların tasfiyesinin gerekli görüldüğü hâl iptal kararında belirtilir. Kişi süresinde tasfiye yapmazsa mallar Hazinece satılır.",
+      "articleRefs": [
+        "33"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Süresinde tasfiye edilmeyen mallar Hazinece satıldığında, bedelleri Hazineye gelir kaydedilir mi?",
+      "back": "Hayır. Bedeller kişinin nam ve hesabına, kamu haznedarlığı sistemine dahil bir kamu bankasına yatırılır.",
+      "explanation": "Satışı Hazine yapar, ama elde edilen bedel kişinin hesabında kalır. Tasfiye süresi en geç bir yıldır.",
+      "articleRefs": [
+        "33"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Vatandaşlığı iptal edilen kişi iptal kararına karşı yargı yoluna başvurursa malların tasfiyesine ne olur?",
+      "back": "Malların tasfiyesi dava sonuna bırakılır.",
+      "articleRefs": [
+        "33"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Seçme hakkıyla Türk vatandaşlığından ayrılabilecek kişiler bu hakkı hangi süre içinde kullanabilir?",
+      "back": "Ergin olmalarından itibaren üç yıl içinde.",
+      "explanation": "Süre, kişinin ergin olduğu andan itibaren işlemeye başlar.",
+      "articleRefs": [
+        "34"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Hangi durumda seçme hakkıyla Türk vatandaşlığından ayrılma hakkı kullanılamaz?",
+      "back": "Vatandaşlığın kaybı ilgiliyi vatansız kılacaksa seçme hakkı kullanılamaz.",
+      "articleRefs": [
+        "34"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Evlat edinilme yoluyla Türk vatandaşlığını kazanan kişi, ergin olduktan sonra seçme hakkıyla Türk vatandaşlığından ayrılabilir mi?",
+      "back": "Evet. Ergin olmasından itibaren üç yıl içinde ayrılabilir. Ancak kayıp onu vatansız kılacaksa bu hakkı kullanamaz.",
+      "explanation": "Seçme hakkı tanınanların bazıları şunlardır: evlat edinilme yoluyla Türk vatandaşlığını kazananlar; herhangi bir şekilde Türk vatandaşlığını kazanmış ana veya babaya bağlı olarak Türk vatandaşlığını kazananlar; ana ya da babadan dolayı soy bağı nedeniyle doğumla Türk vatandaşı olup yabancı ana veya babanın vatandaşlığını doğumla veya sonradan kazananlar.",
+      "articleRefs": [
+        "34"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Seçme hakkıyla Türk vatandaşlığının kaybı hangi tarihten itibaren hüküm ifade eder?",
+      "back": "Seçme hakkının kullanılmasına dair şartların varlığının tespitine ilişkin karar tarihinden itibaren.",
+      "explanation": "Seçme hakkını kullanarak Türk vatandaşlığından ayrılan kişinin eşi ve çocukları hakkında 27 nci madde hükümleri uygulanır.",
+      "articleRefs": [
+        "35"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Nüfus cüzdanı, Türk vatandaşlığının kesin delili midir?",
+      "back": "Hayır. Nüfus cüzdanı, aksi sabit oluncaya kadar ilgilinin Türk vatandaşı olduğuna karine teşkil eder.",
+      "explanation": "Nüfus kayıtları ile pasaport veya pasaport yerine geçen belgeler de aynı şekilde karine teşkil eder. Türk vatandaşlığının ispatı herhangi bir şekle tabi değildir.",
+      "articleRefs": [
+        "36"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Bir kişinin Türk vatandaşı olup olmadığı konusunda tereddüde düşülürse bu husus nereye sorulur?",
+      "back": "Bakanlığa sorulur.",
+      "articleRefs": [
+        "36"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Yurt içinde Türk vatandaşlığının kazanılması ve kaybına ilişkin başvuru hangi makama yapılır?",
+      "back": "İkamet edilen yer valiliğine yapılır. Yurt dışında ise başvuru dış temsilciliklere yapılır.",
+      "articleRefs": [
+        "37"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Türk vatandaşlığının kazanılması ya da kaybına ilişkin başvuru vekâletname ile yapılabilir mi?",
+      "back": "Evet. Başvuru bizzat ya da bu hakkın kullanılmasına ilişkin vekâletname ile yapılabilir.",
+      "explanation": "Başvuru makamı yurt içinde ikamet edilen yer valiliği, yurt dışında dış temsilciliklerdir.",
+      "articleRefs": [
+        "37"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Vatandaşlık kararlarında maddi bir hata veya eksiklik olduğu sonradan anlaşılırsa düzeltme ya da tamamlama kararını kim alır?",
+      "back": "Genel Müdürlük alır. Karar, dayanağına uygun şekilde verilir.",
+      "articleRefs": [
+        "39"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Türk vatandaşlığının kazanılmasına ilişkin bir kararın mükerrer olarak verildiği sonradan anlaşılırsa bu karar hakkında ne yapılır?",
+      "back": "Karar geri alınır.",
+      "explanation": "Kazanma veya kayba ilişkin bir kararın hukuki şartlar oluşmadan verildiğinin sonradan anlaşılması da kararın geri alınmasını gerektirir.",
+      "articleRefs": [
+        "40"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Türk vatandaşlığının kazanılmasına ve kaybına ilişkin kararlar kimlere tebliğ olunur?",
+      "back": "İlgiliye ve başvuru makamlarına tebliğ olunur.",
+      "explanation": "29 uncu madde uyarınca verilen kaybettirme kararları Resmî Gazetede yayımlanır. Bu kararlar yayımlandıkları tarihte tebliğ edilmiş sayılır.",
+      "articleRefs": [
+        "41"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Türk vatandaşlığını kazanmak için başvuran, Kuzey Kıbrıs Türk Cumhuriyeti vatandaşlığını sonradan kazanmamış bir Kuzey Kıbrıs Türk Cumhuriyeti vatandaşı hangi şartla Türk vatandaşı olur?",
+      "back": "Türk vatandaşı olmak istediğini yazılı olarak beyan ederse Türk vatandaşlığını kazanır.",
+      "explanation": "Kuzey Kıbrıs Türk Cumhuriyeti vatandaşlığını sonradan kazanmış olanlar hakkında 11 inci maddede belirtilen hükümler uygulanır.",
+      "articleRefs": [
+        "42"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Yabancı bir devlet vatandaşlığını kazanan kişi belgelerini ibraz eder ve kayden aynı kişi olduğu tespit edilirse nüfus aile kütüğündeki kaydına ne yapılır?",
+      "back": "Kaydına, çok vatandaşlığa sahip olduğuna dair açıklama yapılır.",
+      "articleRefs": [
+        "44"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Türk vatandaşlığının sonradan kazanılmasına ilişkin hizmet bedeli karşılığını kim belirler?",
+      "back": "İçişleri Bakanlığı ile metindeki adıyla Maliye Bakanlığı birlikte belirler; tahsil edilen tutarlar bütçeye gelir kaydedilir.",
+      "articleRefs": [
+        "45"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "193 sayılı Gelir Vergisi Kanununa göre geliri olmayan kişiyle birlikte işlem gören ergin olmayan çocuktan vatandaşlık hizmet bedeli alınır mı?",
+      "back": "Hayır. Geliri olmayanlardan da, onlarla birlikte işlem gören ergin olmayan çocuklarından da hizmet bedeli alınmaz.",
+      "explanation": "Hizmet bedeli Türk vatandaşlığının sonradan kazanılmasına ilişkindir.",
+      "articleRefs": [
+        "45"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Türk Vatandaşlığı Kanununun uygulanmasına ilişkin usul ve esasları düzenleyen yönetmeliği kim çıkarır?",
+      "back": "Cumhurbaşkanı çıkarır.",
+      "articleRefs": [
+        "46"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Saklı nüfus hükmünden yararlanacak kişi, kaç yaşını tamamlayıncaya kadar aile kütüğüne kaydedilmemiş olmalıdır?",
+      "back": "Onsekiz yaşını tamamlayıncaya kadar. Ayrıca kişinin yabancı bir devletle vatandaşlık bağı bulunmamalıdır.",
+      "explanation": "Kaydedilmemiş olmanın nedeni önemli değildir; hüküm, herhangi bir nedenle aile kütüğüne kaydedilmemiş olanları kapsar.",
+      "articleRefs": [
+        "Ek 1"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Saklı nüfus kapsamındaki kişi, Türk vatandaşlığını kazanmak için hangi belgeyi ibraz eder?",
+      "back": "Hısımlığını gösterir tıbbî raporu ibraz eder. Rapor ana veya babayla, bunlar ölmüşse varsa kardeşleriyle hısımlığı göstermelidir.",
+      "articleRefs": [
+        "Ek 1"
+      ]
+    }
+  ]
+}

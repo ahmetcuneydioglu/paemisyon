@@ -1,0 +1,277 @@
+{
+  "deck": {
+    "topicId": "61f85a6c-e9a1-4f19-85bc-dd8cbf04287e",
+    "legislationSlug": "6284-sayili-kanuna-iliskin-uygulama-yonetmeligi",
+    "sourceLabel": "AI bilgi kartı — 6284 Sayılı Kanuna İlişkin Uygulama Yönetmeliği md 11–32",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: resmî madde metni + çıkmış sorular)"
+  },
+  "cards": [
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Korunan kişiye sağlanan kreş imkânı tedbirinde kreş bedeli kime ödenir?",
+      "back": "Kreşe ödenir. Ödemeyi Müdürlük, hizmetin alınması süresi üzerinden aylık olarak yapar.",
+      "explanation": "Korunan kişi iki belgeyi Müdürlüğe ibraz eder: çocuğun kamuya ait veya özel kreşe kaydedildiğine ya da kreşe devam ettiğine dair belge ve aylık kreş bedelini gösteren belge. Tedbirin suiistimal edildiği öğrenilirse ödenen meblağ korunan kişiden tahsil edilir.",
+      "articleRefs": [
+        "11"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Çocuk kreşten bir aydan kısa süre yararlandıysa kreş bedeli aylık tutar üzerinden mi ödenir?",
+      "back": "Hayır. Çocuk bir aydan daha kısa süre faydalanmışsa ödeme, hizmet aldığı gün üzerinden yapılır.",
+      "explanation": "Müdürlük kural olarak hizmetin alınması süresi üzerinden aylık ödeme yapar. Kısa süreli yararlanmada hesap, hizmet alınan günlere göre yapılır.",
+      "articleRefs": [
+        "11"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Kreş bedeli, kreş imkânı tedbirinde belirlenen üst tutardan fazlaysa Müdürlük ne kadar öder?",
+      "back": "Üst tutarı öder: aylık net asgari ücret tutarının yarısını geçmeyen miktar. Kreş bedeli bu tutardan azsa belgedeki tutar ödenir.",
+      "explanation": "Ödeme, korunan kişinin ibraz ettiği aylık kreş bedelini gösteren belgeye dayanır. Ödemeyi Müdürlük doğrudan kreşe yapar.",
+      "articleRefs": [
+        "11"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "İşyerinin değiştirilmesine ilişkin hâkim kararı nereye tebliğ edilir?",
+      "back": "Korunan kişinin iş yerine tebliğ edilir. Tedbir kararı kaldırıldığında da karar iş yerine tebliğ edilir.",
+      "explanation": "Hâkim kararı, korunan kişi bakımından en uygun koşullar göz önüne alınarak yerine getirilmek üzere tebliğ eder. Kararı yetkili kurum veya kişi yerine getirir.",
+      "articleRefs": [
+        "13"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Hâkim, korunan kişinin işyerinin il dışında değiştirilmesine karar verebilir mi?",
+      "back": "Evet. İşyeri il içinde ya da il dışında değiştirilebilir. Bunun için korunan kişinin talebinin bulunması ya da onayının alınması gerekir.",
+      "explanation": "Karar, korunan kişinin tabi olduğu ilgili mevzuat hükümlerine göre verilir.",
+      "articleRefs": [
+        "13"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Hâkim, müşterek yerleşim yerinden ayrı yerleşim yeri belirlenmesine hangi hâlde karar verebilir?",
+      "back": "Korunan kişinin evli olması hâlinde ve onun talebi üzerine karar verebilir.",
+      "articleRefs": [
+        "14"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Ayrı yerleşim yeri belirlenmesi kararı verilen kişinin adres işlemlerini hangi birim yapar?",
+      "back": "Nüfus müdürlüğü yapar. İşlemler kişinin müracaatı üzerine ve talebine uygun olarak yerine getirilir.",
+      "articleRefs": [
+        "14"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Aile konutu şerhi konulması kararı yerine getirilmek üzere nereye gönderilir?",
+      "back": "İlgili tapu sicil müdürlüğüne gönderilir. Hâkim kararı ivedilikle yerine getirilmek üzere gönderir.",
+      "explanation": "Şerh kararı, Türk Medenî Kanunundaki şartların varlığı hâlinde ve korunan kişinin talebi üzerine verilir.",
+      "articleRefs": [
+        "15"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Kimlik ve diğer bilgi ve belgelerin değiştirilmesi kararını hâkim doğrudan İçişleri Bakanlığına mı gönderir?",
+      "back": "Hayır. Hâkim kararı Cumhuriyet başsavcılığına gönderir. Başsavcılık da kararı ivedilikle İçişleri Bakanlığına iletir.",
+      "explanation": "Kararın gereğini İçişleri Bakanlığı yerine getirir. Yapılan işlemin sonucunu da Cumhuriyet başsavcılığına bildirir. Tedbir, Tanık Koruma Kanunu hükümlerine göre verilir.",
+      "articleRefs": [
+        "16"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Kişisel eşya ve belgelerin kolluk marifetiyle teslimine mülki amir karar verebilir mi?",
+      "back": "Evet. Talep edilmesi hâlinde mülki amir ya da hâkim bu teslime karar verebilir.",
+      "explanation": "Teslim; korunan kişiye, şiddet uygulayana ya da bu kişilerin yakınlarına ait kişisel eşya ve belgeleri kapsar.",
+      "articleRefs": [
+        "19"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Kolluk marifetiyle teslim edilecek kişisel eşya ve belgeler nerede gösterilir?",
+      "back": "Tedbir kararında gösterilir.",
+      "articleRefs": [
+        "19"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Şiddet uygulayanın kira sözleşmesini feshetmemesine ilişkin tedbir kararı kime bildirilir?",
+      "back": "Kiralayana bildirilir. Kamu konutu tahsisinin kaldırılmamasına yönelik tedbir kararı ise ilgili kamu kurumuna bildirilir.",
+      "explanation": "Konuttan uzaklaştırma tedbiri, şiddet uygulayanın konutun kira, elektrik, su, telefon, doğalgaz ve benzeri giderlerini karşılamaya devam etmesine engel teşkil etmez. Hâkim, koruma kararı süresince aile konutunun kira sözleşmesinin feshedilmemesine de karar verebilir.",
+      "articleRefs": [
+        "19"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Yaklaşmama tedbiriyle şiddet uygulayanın hangi kişi ve yerlere yaklaşması yasaklanabilir?",
+      "back": "Korunan kişiye, konuta, okula, işyerine ve korunan kişinin bulunabileceği sair yerlere yaklaşması yasaklanabilir.",
+      "articleRefs": [
+        "20"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Rahatsız etmeme tedbiri, korunan kişinin hangi yollarla rahatsız edilmesini yasaklar?",
+      "back": "Görsel, işitsel, yazılı, internet ve benzeri iletişim araçlarıyla ya da sair surette rahatsız edilmesini yasaklar.",
+      "articleRefs": [
+        "24"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Hâkim kararıyla kolluğa teslim edilen silahlar ne zamana kadar emanette kalır?",
+      "back": "Tedbir süresinin sonuna kadar emanette kalır.",
+      "articleRefs": [
+        "25"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Zimmetli silahın kuruma teslimi ve iadesine ilişkin tutanakta kaç tanık imzası bulunur?",
+      "back": "Bir tanık. Tutanak kurum amiri, şiddet uygulayan ve bir tanık arasında imzalanır.",
+      "articleRefs": [
+        "26"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Şiddet uygulayan silah taşıması zorunlu bir kamu görevi yapıyorsa, kurum amiri tedbir sürerken zimmetli silahı iade edebilir mi?",
+      "back": "Hayır. Karar süresi sona ermedikçe ya da tedbirin değiştirildiğine veya kaldırıldığına dair yeni bir karar verilmedikçe kurum amiri silahı hiçbir şekilde iade etmez.",
+      "explanation": "Silahı teslim alan kurum amiri, bu süre boyunca tedbir kararını uygulamaya devam eder.",
+      "articleRefs": [
+        "26"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Önleyici tedbir kapsamında şiddet uygulayanın muayene ve tedavisinin sağlanmasını ve tedbirin etkilerinin takibini kim yürütür?",
+      "back": "Şiddet Önleme ve İzleme Merkezi (ŞÖNİM) yürütür. Bu işi ilgili kurum veya kuruluşla koordinasyon içerisinde yapar.",
+      "explanation": "ŞÖNİM, olayın özelliğine göre kararın yerine getirilmesi sırasında kolluktan yardım isteyebilir.",
+      "articleRefs": [
+        "27"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Tedbir kararı verilen kişi sağlık kuruluşunda tedaviyi reddederse ne yapılır?",
+      "back": "Durum tutanakla tespit edilir. Ardından ivedilikle Cumhuriyet başsavcılığına ve Şiddet Önleme ve İzleme Merkezine (ŞÖNİM) bildirilir.",
+      "articleRefs": [
+        "27"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Kolluk amirinin gecikmesinde sakınca bulunan hâlde aldığı tedbirin onay süresi hesaplanırken tatil günleri sayılır mı?",
+      "back": "Evet, tatil günleri sürenin hesabına dâhildir. Ancak sürenin bitimi resmi tatil veya hafta sonuna rastlarsa süre, takip eden ilk iş günü sona erer.",
+      "explanation": "Mülki amirin kırk sekiz saatlik ve hâkimin yirmi dört saatlik onay süreleri bu kurala göre hesaplanır. Bu sürelerde onaylanmayan tedbirler kendiliğinden kalkar.",
+      "articleRefs": [
+        "29"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Verilen tedbirlerin kaldırılmasına hangi merci karar verir?",
+      "back": "Kararı veren merci karar verir. Bunun için şiddet veya şiddet uygulama tehlikesinin ortadan kalktığının anlaşılması gerekir.",
+      "explanation": "Kaldırma, hâkim veya mülki amir tarafından resen ya da korunan kişi, müdürlük, Şiddet Önleme ve İzleme Merkezi (ŞÖNİM) veya kolluk görevlilerinin talebi üzerine gündeme gelir.",
+      "articleRefs": [
+        "30"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Tedbirlerin kaldırılmasına karar verilirse bu karar ayrıca kime tebliğ edilir?",
+      "back": "Korunan kişiye de tebliğ edilir.",
+      "articleRefs": [
+        "30"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Tedbir talebinin reddine ilişkin karar şiddet uygulayana da tebliğ edilir mi?",
+      "back": "Hayır. Red kararı sadece korunan kişiye tebliğ edilir.",
+      "explanation": "Tedbir kararı ise kararı veren merci tarafından hem korunan kişiye hem şiddet uygulayana tefhim veya tebliğ edilir. Ayrıca yerine getirilmek üzere görevli kurum veya kuruluşa gönderilir.",
+      "articleRefs": [
+        "31"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Gecikmesinde sakınca bulunan hâlde kolluk biriminin aldığı önleyici tedbir şiddet uygulayana nasıl tebliğ edilir?",
+      "back": "Bir tutanakla derhâl tebliğ edilir. Ayrıca Şiddet Önleme ve İzleme Merkezine (ŞÖNİM) ve mahkemeye bildirimde bulunulur.",
+      "articleRefs": [
+        "31"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Korunan kişiye yapılacak tebligatlarda hangi adres bilgileri kullanılır?",
+      "back": "Şiddet Önleme ve İzleme Merkezine (ŞÖNİM) ait adres bilgileri kullanılır.",
+      "articleRefs": [
+        "32"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Korunan kişinin nüfus kaydına işlenen gizlilik şerhi, Merkezî Nüfus İdaresi Sistemi (MERNİS) veri tabanından ne zaman silinir?",
+      "back": "Tedbir kararının süresinin sona ermesini takip eden onbeşinci gün silinir.",
+      "explanation": "Gizlilik kararı, Şiddet Önleme ve İzleme Merkezi (ŞÖNİM) müdürü aracılığıyla, tedbir kararının uygulanacağı yer nüfus müdürlüklerinde nüfus kaydına işlenir. Şerhte kararı veren mercinin adı ile kararın tarihi ve sayısı bulunur. Gizliliğe ilişkin karar değiştirilir veya kaldırılırsa nüfus müdürlüğü kararı gecikmeksizin yerine getirir.",
+      "articleRefs": [
+        "32"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Hakkında gizlilik kararı verilen korunan kişiden resmi başvurularında adres beyanı istenebilir mi?",
+      "back": "Hayır. Gizlilik kararı verilmesi hâlinde korunan kişinin resmi başvuru, iş ve işlemlerinde adres beyanı istenilmez.",
+      "explanation": "Gizlilik kararı verilen kayıtlar sadece elektronik ortamda tutulur. Bilgilerin gizli tutulduğu kayıtlar arasında Milli Eğitim Bakanlığı, Sosyal Güvenlik Kurumu, Ulusal Yargı Ağı Bilişim Sistemi, kolluk, bankalar ile sağlık kurum ve kuruluşlarının kayıtları bulunur.",
+      "articleRefs": [
+        "32"
+      ],
+      "counterNumbers": []
+    }
+  ]
+}

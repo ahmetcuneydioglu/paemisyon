@@ -1,0 +1,296 @@
+{
+  "deck": {
+    "topicId": "335363f4-e751-432d-9747-aea1edc32b39",
+    "legislationSlug": "5233-sayili-teror-ve-terorle-mucadeleden-dogan-zararlarin-karsilanmasi-hakkinda-kanun",
+    "sourceLabel": "AI bilgi kartı — 5233 Sayılı Terör ve Terörle Mücadeleden Doğan Zararların Karşılanması Hakkında Kanun md 1–19, Ek 1",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: resmî madde metni + çıkmış sorular)"
+  },
+  "cards": [
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Terör ve Terörle Mücadeleden Doğan Zararların Karşılanması Hakkında Kanun hangi tür zararların karşılanmasını düzenler?",
+      "back": "Maddî zararların karşılanmasını düzenler. Bu zararlar terör eylemleri ya da terörle mücadele kapsamında yürütülen faaliyetler nedeniyle uğranılan zararlardır.",
+      "explanation": "Kanunun amacı, bu zararların karşılanmasına ilişkin esas ve usulleri belirlemektir.",
+      "articleRefs": [
+        "1"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Terörden doğan maddî zararların sulhen karşılanmasından hangi kişiler yararlanır?",
+      "back": "Zarar gören gerçek kişiler ile özel hukuk tüzel kişileri yararlanır; maddî zararları sulhen karşılanır.",
+      "explanation": "Kapsama iki tür zarar girer: 3713 sayılı Terörle Mücadele Kanununun 1 inci, 3 üncü ve 4 üncü maddeleri kapsamına giren eylemlerden doğan zararlar ve terörle mücadele kapsamında yürütülen faaliyetlerden doğan zararlar.",
+      "articleRefs": [
+        "2"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Güvenlik kaygısı olmadan kendi isteğiyle yaşadığı yeri terk eden kişinin bu yüzden uğradığı zarar bu Kanunla karşılanır mı?",
+      "back": "Hayır. Güvenlik kaygıları dışında kendi istekleriyle bulundukları yerleri terk edenlerin bu sebeple uğradıkları zararlar Kanunun kapsamı dışındadır.",
+      "explanation": "Kapsam dışında kalan zararlar arasında başkaları da vardır: terör dışındaki ekonomik ve sosyal sebeplerle uğranılan zararlar, kişilerin kendi kasıtları sonucunda oluşan zararlar ve Devletçe arazi veya konut tahsisiyle karşılanan zararlar.",
+      "articleRefs": [
+        "2"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "3713 sayılı Terörle Mücadele Kanunu kapsamındaki suçlardan ya da terör olaylarında yardım ve yataklık suçlarından ceza kovuşturması açılan kişinin başvurusunda ne zamana kadar işlem yapılmaz?",
+      "back": "Kovuşturma sonuçlanıncaya kadar işlem yapılmaz; o zamana dek bu Kanuna göre işlem yürütülmez.",
+      "explanation": "Bu suçlardan mahkûm olanların bu fiillerinden dolayı uğradığı zararlar ise Kanunun kapsamı dışındadır.",
+      "articleRefs": [
+        "2"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Zarar tespit komisyonu kaç kişiden oluşur?",
+      "back": "Bir başkan ve altı üyeden oluşur. Başkan, valinin görevlendireceği vali yardımcısıdır.",
+      "explanation": "Üyelerin bir kısmı, ilgili konularda uzman olan ve o ilde görev yapan kamu görevlilerinden vali tarafından birer kişi olarak belirlenir. Bir üye de baro yönetim kurulunca baroya kayıtlı olanlar arasından görevlendirilen avukattır. Başkan ve üyeler her yıl ocak ayının ilk haftasında yeniden belirlenir; eski üyeler yeniden görevlendirilebilir.",
+      "articleRefs": [
+        "4"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Zarar tespit komisyonu, Kanun kapsamındaki başvurular üzerine kaç gün içinde kurulur?",
+      "back": "On gün içinde kurulur; komisyonlar illerde oluşturulur.",
+      "explanation": "İş yoğunluğuna göre aynı ilde birden fazla komisyon kurulabilir.",
+      "articleRefs": [
+        "4"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Zarar tespit komisyonunun kararları toplantıya katılanların salt çoğunluğuyla mı alınır?",
+      "back": "Hayır. Komisyon salt çoğunlukla toplanır, ancak kararlar üye tam sayısının salt çoğunluğuyla alınır.",
+      "explanation": "Komisyonun çalışma esas ve usulleri yönetmelikle belirlenir.",
+      "articleRefs": [
+        "4"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Başvuranın Kanun kapsamına giren bir zararı olmadığı tespit edilirse zarar tespit komisyonu ne yapar?",
+      "back": "Karar tutanağı düzenler ve bir örneğini ilgiliye tebliğ eder.",
+      "explanation": "Sulhname tasarısı kabul edilmez ya da kabul edilmemiş sayılırsa komisyonun düzenlediği belge farklıdır: uyuşmazlık tutanağı düzenlenir ve bir örneği ilgiliye tebliğ edilir.",
+      "articleRefs": [
+        "5"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Zarar tespit komisyonu bir başvuruyla ilgili çalışmalarını ne kadar sürede tamamlamak zorundadır?",
+      "back": "Başvuru tarihinden itibaren altı ay içinde tamamlamak zorundadır. Zorunlu hâllerde vali bu süreyi üç ay daha uzatabilir.",
+      "explanation": "Komisyon, ilgili kamu kurum ve kuruluşlarından başvuruyla ilgili her türlü bilgi ve yardımı isteyebilir. Gerekli gördüğü uzmanları çalıştırabilir ya da onlardan görüş alabilir.",
+      "articleRefs": [
+        "6"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Komisyon başkan ve üyeleri, hangi dereceye kadar kan ve kayın hısımlarının zararlarıyla ilgili toplantılara katılamaz?",
+      "back": "Üçüncü dereceye kadar (bu derece dahil) kan ve kayın hısımlarının zararlarıyla ilgili toplantılara katılamazlar.",
+      "explanation": "Kendilerinin, eşlerinin ve vekili, vasisi ya da kayyımı oldukları kişilerin zararlarıyla ilgili toplantılara da katılamazlar.",
+      "articleRefs": [
+        "6"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Zarar tespit komisyonunun bir üyesi bilirkişi olarak görevlendirilebilir mi?",
+      "back": "Hayır. Komisyon üyeleri bilirkişi olarak görevlendirilemez.",
+      "explanation": "Komisyon, kamu kurum ve kuruluşlarında çalışanları bilirkişi olarak görevlendirebilir. Bilirkişiye ödeme komisyon kararıyla yapılır ve her başvuru dosyası için şu tutarları geçemez: kamu görevlilerine (500), diğer kişilere (1000) gösterge rakamının memur aylık katsayısıyla çarpımı.",
+      "articleRefs": [
+        "6"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Terörle mücadele faaliyetleri nedeniyle mal varlığına ulaşamayan kişinin bu yüzden uğradığı maddî zarar sulh yoluyla karşılanabilir mi?",
+      "back": "Evet. Terörle mücadele kapsamında yürütülen faaliyetler nedeniyle kişilerin mal varlıklarına ulaşamamalarından kaynaklanan maddî zararlar sulh yoluyla karşılanabilir.",
+      "explanation": "Sulh yoluyla karşılanabilecek diğer zararlar şunlardır: hayvanlara, ağaçlara, ürünlere ve diğer taşınır ve taşınmazlara verilen her türlü zararlar; yaralanma, engelli hâle gelme ve ölüm hâllerinde uğranılan zararlar ile tedavi ve cenaze giderleri.",
+      "articleRefs": [
+        "7"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Zarar tespitinde zarar görenin kusur veya ihmali dikkate alınır mı?",
+      "back": "Evet. Zarar görenin varsa kusur veya ihmali de göz önünde bulundurulur; zarar hakkaniyete ve günün ekonomik koşullarına uygun biçimde belirlenir.",
+      "explanation": "Komisyon zararı doğrudan doğruya ya da bilirkişi aracılığıyla belirler. Bunu yaparken zarar görenin beyanını, adlî, idarî ve askerî mercilerdeki bilgi ve belgeleri, olayın oluş şeklini ve zarar görenin aldığı tedbirleri göz önünde tutar. Taşınmaz zararında 2942 sayılı Kamulaştırma Kanununun 11 inci maddesindeki kıymet takdiri esasları kıyasen uygulanır.",
+      "articleRefs": [
+        "8"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Terör eylemi sonucu ölenlerin mirasçılarına yapılacak nakdî ödeme, esas tutarın kaç katıdır?",
+      "back": "Elli katıdır. Esas tutar, (7000) gösterge rakamının memur aylık katsayısıyla çarpımıdır.",
+      "explanation": "Bu ödemenin mirasçılara intikalinde 4721 sayılı Türk Medenî Kanununun mirasa ilişkin hükümleri uygulanır. Tutar, ödemeye ilişkin valinin veya Bakanın onayı tarihinde geçerli gösterge ve katsayı rakamlarıyla belirlenir.",
+      "articleRefs": [
+        "9"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Çalışma gücü kaybı birinci derece olarak tespit edilenlere yapılacak nakdî ödeme hangi aralıktadır?",
+      "back": "Esas tutarın kırkdokuz katından yetmişiki katı tutarına kadardır. Esas tutar, (7000) gösterge rakamının memur aylık katsayısıyla çarpımıdır.",
+      "explanation": "Diğer dereceler şöyledir: ikinci derecede yirmibeş katından kırksekiz katına, üçüncü derecede dört katından yirmidört katına kadar ödeme yapılır. Yaralananlara ise yaralanma derecesine göre altı katını geçmemek üzere ödeme yapılır.",
+      "articleRefs": [
+        "9"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Cumhurbaşkanı nakdî ödemeye esas gösterge rakamını yüzde otuza kadar indirebilir mi?",
+      "back": "Hayır. Yüzde otuz sınırı artırma içindir; indirme ise ancak kanunî sınıra kadar yapılabilir.",
+      "explanation": "Nakdî ödemeye esas tutulan gösterge rakamı (7000)'dir.",
+      "articleRefs": [
+        "9"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Taşınır ve taşınmazlara verilen zararlar karşılanırken hangi ifa tarzına öncelik verilir?",
+      "back": "İmkânlar ölçüsünde aynî ifaya öncelik verilir. Bu zararlar aynî ya da nakdî olarak karşılanabilir.",
+      "explanation": "Mal varlığına ulaşamamaktan doğan maddî zararlar için de aynı kural geçerlidir. Aynî ifa bireysel veya genel nitelikli projeler çerçevesinde yapılabilir; aynî ifa tarzının esas ve usulleri yönetmelikle belirlenir.",
+      "articleRefs": [
+        "10",
+        "7"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Mahsup edilecek miktarlar toplam gayrisafi ifa bedelinden hangi tarihteki değerleri üzerinden düşülür?",
+      "back": "Mahsup tarihindeki değerleri üzerinden düşülür.",
+      "explanation": "Mahsup edilen kalemler arasında şunlar bulunur: kamu kurum ve kuruluşlarınca uygulanmış projelerin zararın giderilmesine katkıları, zarar görenin değerlendirebileceği enkaz ve diğer yararlar, sigorta şirketlerince ödenen tazminatlar. Mahsup edilecek değerlerin hesaplanması yönetmelikle belirlenir.",
+      "articleRefs": [
+        "11",
+        "5"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Sulhname tasarısını imzalamaya davet edilen hak sahibi kaç gün içinde gelmelidir?",
+      "back": "Otuz gün içinde gelmelidir; kendisi gelebilir ya da yetkili bir temsilcisini gönderebilir.",
+      "explanation": "Kabul edilen tasarıyı hak sahibi veya yetkili temsilcisi ile komisyon başkanı imzalar.",
+      "articleRefs": [
+        "12"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Sulhname davetine süresinde gelmeyen hak sahibi yargı yoluna başvurma hakkını kaybeder mi?",
+      "back": "Hayır. Sulhname tasarısını kabul etmemiş sayılır; yargı yoluna başvurarak zararının tazminini isteme hakkı saklıdır.",
+      "explanation": "Bu durumda uyuşmazlık tutanağı düzenlenir ve bir örneği ilgiliye gönderilir.",
+      "articleRefs": [
+        "12"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Sulhnamede belirlenen zararlar, sulhname imzalandıktan sonra ne kadar sürede karşılanır?",
+      "back": "Üç ay içerisinde karşılanır. Ödeme valinin onayı üzerine, ifa tarzına göre Bakanlık bütçesine bu amaçla konulan ödenekten yapılır.",
+      "articleRefs": [
+        "13"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Devletin ödeme nedeniyle sorumlulara rücu isteminde zamanaşımı süreleri nasıl uygulanır?",
+      "back": "Bir kat artırılarak uygulanır. Devlet, genel hükümlere göre sorumlulara rücu eder.",
+      "articleRefs": [
+        "13"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Zarar tespit komisyonlarını hangi makamlar denetler?",
+      "back": "Bakanlık (İçişleri Bakanlığı) ve valilik denetler.",
+      "articleRefs": [
+        "14",
+        "3"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Bu Kanun gereğince yapılacak tebligatta hangi yöntem esastır?",
+      "back": "Tebligatın memur vasıtasıyla yapılması esastır. Tebligatlarda 7201 sayılı Tebligat Kanunu hükümleri uygulanır.",
+      "articleRefs": [
+        "16"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Zarar tespit komisyonunun çalışma esas ve usullerini düzenleyen yönetmeliği kim yürürlüğe koyar?",
+      "back": "Cumhurbaşkanı yürürlüğe koyar.",
+      "explanation": "Bu yönetmelikle düzenlenen konular arasında şunlar da vardır: başvuru usulleri, zararların tespiti, safi miktarların belirlenmesi, nakdî ödemenin şekli ve tutarı, çalışma gücü kaybı oranlarının tespiti.",
+      "articleRefs": [
+        "17"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Ek 1 uyarınca malullere ve hak sahiplerine bağlanan aylıkta hangi gösterge rakamı esas alınır?",
+      "back": "(9.500) gösterge rakamı esas alınır. Aylık, bunun memur aylık katsayısıyla çarpımı sonucu bulunan tutar üzerinden bağlanır.",
+      "explanation": "İlgili kişi valiliğe müracaat eder. Valilik, aylık bağlanmaya ilişkin belgeleri tanzim ederek Sosyal Güvenlik Kurumuna gönderir.",
+      "articleRefs": [
+        "Ek 1"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Çalışma gücü kaybı ikinci derece olan malule Ek 1 uyarınca bağlanan aylık, esas tutarın yüzde kaçıdır?",
+      "back": "Yüzde sekseni tutarındadır. Esas tutar, (9.500) gösterge rakamının memur aylık katsayısıyla çarpımıdır.",
+      "explanation": "Birinci derece malullere esas tutarın tamamı tutarında aylık bağlanır. Üçüncü derece malullere yüzde altmışı tutarında aylık bağlanır; ancak çalışma gücü kaybı yüzde kırktan daha aşağı olanlar bunun dışında kalır.",
+      "articleRefs": [
+        "Ek 1",
+        "9"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Güvenlik kuvvetlerince yaralanan terör örgütü mensubuna Ek 1 kapsamında aylık bağlanabilir mi?",
+      "back": "Hayır. Terör örgütü mensuplarına, onların yakınlarına ve terör suçlarından dolayı hüküm giyenlere bu madde kapsamında aylık bağlanmaz.",
+      "explanation": "Hüküm giymeden önce aylık bağlanmış olanın aylığı, hükmün kesinleştiği tarihten itibaren kesilir. Haksız ödenen tutarlar ilgililerden tahsil olunur.",
+      "articleRefs": [
+        "Ek 1"
+      ],
+      "counterNumbers": []
+    }
+  ]
+}

@@ -1,0 +1,284 @@
+{
+  "deck": {
+    "topicId": "6787ab70-76ef-4fcf-88a8-fbd3e0d7f563",
+    "legislationSlug": "6284-sayili-ailenin-korunmasi-kanunu",
+    "sourceLabel": "AI bilgi kartı — 6284 Sayılı Ailenin Korunması Kanunu md 11–25, Geçici 1",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: resmî madde metni + çıkmış sorular)"
+  },
+  "cards": [
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "6284 sayılı Kanunda belirtilen kolluk görevlerini hangi personel yerine getirir?",
+      "back": "Çocuk ve kadının insan hakları ile kadın erkek eşitliği konusunda eğitim almış, ilgili kolluk birimlerince belirlenmiş yeteri kadar personel.",
+      "explanation": "Bu kural, Kanunda belirtilen hizmetler için kolluğun hem merkez hem taşra teşkilâtında geçerlidir.",
+      "articleRefs": [
+        "11"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "6284 sayılı Kanuna göre verilen tedbir kararlarının uygulanmasında teknik araç ve yöntemler hangi kararla kullanılabilir?",
+      "back": "Hâkim kararıyla kullanılabilir.",
+      "articleRefs": [
+        "12"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Tedbir kararının uygulanmasında hâkim kararıyla teknik araçla takip edilen kişinin ses ve görüntüleri kayda alınabilir mi?",
+      "back": "Hayır. Hâkim kararı olsa bile kişilerin ses ve görüntüleri dinlenemez, izlenemez ve kayda alınamaz.",
+      "explanation": "Hâkim kararı yalnız teknik araç ve yöntemlerin kullanılmasına izin verir. Ses ve görüntüye yönelik dinleme, izleme ve kayıt bu yolla yapılamaz.",
+      "articleRefs": [
+        "12"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Teknik araç ve yöntemlerle takibe ilişkin usul ve esaslar hangi düzenleyici işlemle belirlenir?",
+      "back": "Yönetmelikle düzenlenir.",
+      "articleRefs": [
+        "12"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Hakkında tedbir kararı verilen şiddet uygulayan, kararın gereklerine ilk kez aykırı davranırsa ne kadar zorlama hapsine tabi tutulur?",
+      "back": "Üç günden on güne kadar zorlama hapsine tabi tutulur; bu hapse hâkim kararıyla hükmedilir.",
+      "explanation": "Süre, ihlal edilen tedbirin niteliğine ve aykırılığın ağırlığına göre belirlenir. Fiil ayrıca bir suç oluştursa bile zorlama hapsi uygulanır. Kararları Cumhuriyet başsavcılığı yerine getirir; kararlar Bakanlığın ilgili il ve ilçe müdürlüklerine bildirilir.",
+      "articleRefs": [
+        "13"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Tedbir kararına aykırılığın her tekrarında zorlama hapsinin süresi nedir?",
+      "back": "Onbeş günden otuz güne kadardır. Süre, ihlal edilen tedbirin niteliğine ve aykırılığın ağırlığına göre belirlenir.",
+      "articleRefs": [
+        "13"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Tedbir kararına tekrarlanan aykırılıklarda zorlama hapsinin toplam süresi en fazla ne olabilir?",
+      "back": "Altı ay. Zorlama hapsinin toplam süresi bunu geçemez.",
+      "explanation": "Her tekrarda süre onbeş günden otuz güne kadar belirlenir. Tekrarlar ne kadar çok olursa olsun, toplam üst sınır altı aydır.",
+      "articleRefs": [
+        "13"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Şiddet önleme ve izleme merkezlerini hangi makam kurar?",
+      "back": "Bakanlık kurar. Merkezlerde gerekli uzman personel görev yapar ve tercihen kadın personel istihdam edilir.",
+      "explanation": "Merkezlerde şiddetin önlenmesi ile koruyucu ve önleyici tedbirlerin etkin uygulanmasına yönelik izleme çalışmaları yapılır ve destek hizmetleri verilir. Merkezlerin çalışma usul ve esasları yönetmelikle belirlenir.",
+      "articleRefs": [
+        "14"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Şiddet önleme ve izleme merkezleri hangi çalışma esasına göre hizmet verir?",
+      "back": "Yedi gün yirmidört saat esasına göre çalışır.",
+      "articleRefs": [
+        "14"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Hâkimin isteği üzerine korunan kişi ya da şiddet uygulayan hakkında ayrıntılı sosyal araştırma raporunu kim hazırlayıp sunar?",
+      "back": "Şiddet önleme ve izleme merkezleri hazırlayıp sunar.",
+      "explanation": "Rapor kişinin geçmişini, ailesini, çevresini, eğitimini ve kişisel, sosyal, ekonomik ve psikolojik durumunu kapsar. Şiddet uygulayan için ayrıca diğer kişiler ve toplum açısından taşıdığı risk de raporlanır.",
+      "articleRefs": [
+        "15"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Şiddet önleme ve izleme merkezleri, şiddet uygulayanın hangi faaliyetlere katılmasına yönelik çalışma yapar?",
+      "back": "Öfke kontrolü ve stresle başa çıkma gibi eğitim ve rehabilitasyon programlarına katılmasına, bağımlılık ya da ruhsal bozukluk hâlinde sağlık kuruluşunda muayene veya tedavi olmasına ve meslek edindirme kurslarına katılmasına.",
+      "explanation": "Bu faaliyetler teşvik edici, aydınlatıcı ve yol gösterici mahiyettedir. Bağımlılık hâli; alkol, uyuşturucu, uçucu veya uyarıcı madde bağımlılığını kapsar.",
+      "articleRefs": [
+        "15"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Şiddet mağduruna ve şiddet uygulayana yönelik hizmetler kural olarak aynı birimde sunulur mu?",
+      "back": "Hayır. Zorunlu hâller dışında bu hizmetler farklı birimlerde sunulur.",
+      "explanation": "Ayrı birim kuralının tek istisnası zorunlu hâllerdir.",
+      "articleRefs": [
+        "15"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Türkiye Radyo ve Televizyon Kurumu ile özel televizyon ve radyolar, Bakanlığın bilgilendirme materyallerini ayda en az ne kadar yayınlamak zorundadır?",
+      "back": "Ayda en az doksan dakika. Konu, kadınların çalışma yaşamına katılımı ve şiddetle mücadele mekanizmaları gibi politikalardır.",
+      "explanation": "Yükümlülük ulusal, bölgesel ve yerel yayın yapan özel televizyon kuruluşlarını ve radyoları da kapsar. Materyaller Bakanlık birimlerince üniversiteler, ilgili meslek kuruluşları ve sivil toplum kuruluşlarının görüşleri alınarak hazırlanır.",
+      "articleRefs": [
+        "16"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Aylık bilgilendirme yayınlarının en az ne kadarı akşam saatlerinde yapılmalıdır?",
+      "back": "Asgari otuz dakikası 17.00-22.00 saatleri arasında yapılmalıdır. Yayınların tamamı 08.00-22.00 saatleri arasında yapılır.",
+      "articleRefs": [
+        "16"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "08.00-22.00 saatleri dışında yapılan bilgilendirme yayınları aylık zorunlu yayın süresine sayılır mı?",
+      "back": "Hayır. Bu saatler dışında yapılan yayınlar aylık doksan dakikalık süreye dâhil edilmez.",
+      "explanation": "Süreleri Radyo ve Televizyon Üst Kurulu denetler. Yayınların kopyaları da her ay düzenli olarak bu Kurula teslim edilir.",
+      "articleRefs": [
+        "16"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Geçici maddi yardıma karar verilirse günlük ödemenin üst sınırı nedir?",
+      "back": "Onaltı yaşından büyükler için, her yıl belirlenen aylık net asgari ücret tutarının otuzda birine kadar günlük ödeme yapılır.",
+      "explanation": "Ödemeler, Bakanlık bütçesinde geçici maddi yardımlar için konulan ödenekten karşılanır. Şiddet uygulayandan tebliğ tarihinden itibaren bir ay içinde tahsil edilir. Bu şekilde tahsil edilemeyenleri, 6183 sayılı Kanun hükümlerine göre ilgili vergi dairesi takip ve tahsil eder.",
+      "articleRefs": [
+        "17"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Korunan kişi birden fazlaysa geçici maddi yardımda ödenecek günlük tutar en fazla ne olabilir?",
+      "back": "Belirlenen günlük ödeme tutarının bir buçuk katı. İlave her kişi için bu tutarın yüzde yirmisi kadar ödense de bu sınır geçilemez.",
+      "articleRefs": [
+        "17"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Korunan kişilere barınma yeri sağlanırsa geçici maddi yardım tutarları yüzde yirmi oranında azaltılır mı?",
+      "back": "Hayır. Barınma yeri sağlanırsa tutarlar yüzde elli oranında azaltılır. Yüzde yirmi, ilave her korunan kişi için ödenen orandır.",
+      "explanation": "Korunan kişinin gerçeğe aykırı beyanda bulunduğu tespit edilirse, yapılan yardımlar bu kişiden 6183 sayılı Kanun hükümlerine göre tahsil edilir.",
+      "articleRefs": [
+        "17"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "6284 sayılı Kanuna göre verilen nafaka kararının örneği nereye gönderilir?",
+      "back": "Resen, nafaka alacaklısının veya borçlusunun yerleşim yeri icra müdürlüğüne gönderilir.",
+      "articleRefs": [
+        "18"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Nafaka ödemekle yükümlü kişinin Sosyal Güvenlik Kurumu ile bağlantısı varsa nafaka nasıl tahsil edilir?",
+      "back": "Korunan kişinin başvurusu aranmaksızın, ilgilinin aylık, maaş ya da ücretinden icra müdürlüğü tarafından tahsil edilir.",
+      "explanation": "İcra müdürlüklerinin nafakanın tahsiline ilişkin posta giderleri, Cumhuriyet başsavcılığının suçüstü ödeneğinden karşılanır.",
+      "articleRefs": [
+        "18"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Hakkında koruyucu tedbir kararı verilen ve genel sağlık sigortasından yararlanamayan kişi nasıl sağlık güvencesine kavuşur?",
+      "back": "Bu hâl sürdükçe, gelir testine tabi tutulmaksızın genel sağlık sigortalısı sayılır.",
+      "explanation": "Kapsamdaki kişiler şunlardır: genel sağlık sigortalısı olmayan ve sigortalının bakmakla yükümlü olduğu kişi kapsamına da girmeyenler, prim borcu sebebiyle fiilen yararlanamayanlar ya da diğer mevzuata göre tedavi yardımı hakkı bulunmayanlar.",
+      "articleRefs": [
+        "19"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Hakkında önleyici tedbir kararı verilen kişinin rehabilitasyonuna karar verilirse, genel sağlık sigortasının karşılamadığı giderler nereden karşılanır?",
+      "back": "Bakanlık bütçesinin ilgili tertiplerinden karşılanır.",
+      "explanation": "Rehabilitasyon hizmetleri kapsamında verilmesi gereken diğer sağlık hizmetlerinin giderleri de aynı kaynaktan karşılanır.",
+      "articleRefs": [
+        "19"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "6284 sayılı Kanun kapsamındaki başvurulardan ve kararların icra ve infazı için yapılan işlemlerden hangi masraflar alınır?",
+      "back": "Hiçbiri. Yargılama giderleri, harç, posta gideri ve benzeri hiçbir ad altında masraf alınmaz.",
+      "articleRefs": [
+        "20"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Geçici maddi yardım kapsamında yapılan ödemeler hangi vergilerden müstesnadır?",
+      "back": "Gelir vergisi ile veraset ve intikal vergisinden müstesnadır. Bu ödemeler için düzenlenen kâğıtlar da damga vergisinden müstesnadır.",
+      "articleRefs": [
+        "20"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Bakanlık, şiddet veya şiddet tehlikesi dolayısıyla açılan her davaya katılmakla yükümlü müdür?",
+      "back": "Hayır. Bakanlık gerekli görmesi hâlinde idarî, cezaî, hukukî her tür davaya ve çekişmesiz yargıya katılabilir.",
+      "explanation": "Katılma imkânı, kadın, çocuk ve aile bireylerine yönelik şiddet veya şiddet tehlikesi dolayısıyla açılan davaları kapsar.",
+      "articleRefs": [
+        "20"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "6284 sayılı Kanun hangi kanunu yürürlükten kaldırmıştır?",
+      "back": "4320 sayılı Ailenin Korunmasına Dair Kanunu. Mevzuatta o kanuna yapılan atıflar yeni Kanuna yapılmış sayılır.",
+      "articleRefs": [
+        "23"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "4320 sayılı Kanuna göre verilmiş kararların uygulanması, yeni Kanunun yürürlüğe girmesiyle sona erer mi?",
+      "back": "Hayır. Yeni Kanun yürürlüğe girmeden önce 4320 sayılı Kanuna göre verilen kararların uygulanmasına devam olunur.",
+      "articleRefs": [
+        "23"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "6284 sayılı Kanun ne zaman yürürlüğe girmiştir?",
+      "back": "Yayımı tarihinde yürürlüğe girmiştir.",
+      "articleRefs": [
+        "24"
+      ]
+    }
+  ]
+}

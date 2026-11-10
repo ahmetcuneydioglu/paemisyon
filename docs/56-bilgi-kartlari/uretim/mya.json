@@ -1,0 +1,310 @@
+{
+  "deck": {
+    "topicId": "ad5ea381-8b05-403b-98ff-8d1158f0cf79",
+    "legislationSlug": "4483-sayili-memurlarin-yargilanmasi-hakkinda-kanun",
+    "sourceLabel": "AI bilgi kartı — 4483 Sayılı Memurların Yargılanması Hakkında Kanun md 1–20, Ek 1, Geçici 1, Geçici 2, Geçici 3, Geçici 4",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: resmî madde metni + çıkmış sorular)"
+  },
+  "cards": [
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "4483 sayılı Memurların Yargılanması Hakkında Kanun hangi görevleri ifa eden memur ve kamu görevlilerine uygulanır?",
+      "back": "Devletin ve diğer kamu tüzel kişilerinin genel idare esaslarına göre yürüttükleri kamu hizmetlerinin gerektirdiği asli ve sürekli görevleri ifa edenlere uygulanır. Yalnız görevleri sebebiyle işledikleri suçlar için uygulanır.",
+      "explanation": "Kanun her suça değil, görev sebebiyle işlenen suçlara uygulanır. Görevleri ve sıfatları sebebiyle özel soruşturma ve kovuşturma usullerine tabi olanlara ilişkin kanun hükümleri saklıdır. Suçun niteliği yönünden kanunlarda gösterilen soruşturma ve kovuşturma usullerine ilişkin hükümler de saklıdır.",
+      "articleRefs": [
+        "2"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Memurun görevi sebebiyle işlediği suçta ağır cezayı gerektiren suçüstü hali varsa hangi hükümler uygulanır?",
+      "back": "Genel hükümler uygulanır. Ağır cezayı gerektiren suçüstü hali genel hükümlere tabidir.",
+      "explanation": "Kanunun amacı, görev suçlarında yargılama için izin vermeye yetkili mercileri ve izlenecek usulü düzenlemektir. Ağır cezayı gerektiren suçüstü hali ise bu usulün değil, genel hükümlerin alanında kalır.",
+      "articleRefs": [
+        "2",
+        "1"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "4483 sayılı Kanun kapsamındaki bir suç için memur hakkında disiplin hükümleri de uygulanabilir mi?",
+      "back": "Evet. Kanun disiplin hükümlerini açıkça saklı tutar; yargılama usulü disiplin hükümlerini ortadan kaldırmaz.",
+      "explanation": "Kanun, görev sebebiyle işlenen suçların yargılanma usulünü düzenler. Disiplin hükümleri ise bundan bağımsız olarak saklı kalır.",
+      "articleRefs": [
+        "2"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "İlçede görevli memurlar ve diğer kamu görevlileri hakkında soruşturma izni vermeye kim yetkilidir?",
+      "back": "Kaymakam yetkilidir.",
+      "explanation": "İlde ve merkez ilçede görevli olanlar ile kaymakamlar hakkında vali yetkilidir. Bölge düzeyinde teşkilatlanan kurumlarda görev yapanlar için görev yaptıkları ilin valisi yetkilidir. Köy ve mahalle muhtarları için ilçelerde kaymakam, merkez ilçede vali yetkilidir. Yetkili merci belirlenirken memurun suç tarihindeki görevi esas alınır. Merci yoksa yetkiyi vekili bizzat kullanır.",
+      "articleRefs": [
+        "3"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Büyükşehir, il ve ilçe belediye başkanları ile il genel meclisi üyeleri hakkında soruşturma izni vermeye kim yetkilidir?",
+      "back": "İçişleri Bakanı yetkilidir. Büyükşehir, il ve ilçe belediye meclisi üyeleri de bu kapsama girer.",
+      "explanation": "Belde belediyeleri ayrı tutulur. İlçelerdeki belde belediye başkanları ve belde belediye meclisi üyeleri hakkında kaymakam yetkilidir. Merkez ilçelerdekiler hakkında ise bulundukları ilin valisi yetkilidir.",
+      "articleRefs": [
+        "3"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Türkiye Büyük Millet Meclisinde görevli memurlar hakkında soruşturma izni Türkiye Büyük Millet Meclisi Başkanına mı aittir?",
+      "back": "Hayır. Bu yetki Türkiye Büyük Millet Meclisi Genel Sekreterindedir. Başkan yalnız Genel Sekreter ve yardımcıları hakkında izin verir.",
+      "explanation": "Cumhurbaşkanlığında da benzer bir kademe vardır. Görevli memurlar için Cumhurbaşkanlığı Genel Sekreteri yetkilidir. Cumhurbaşkanlığı Genel Sekreteri hakkında ise Cumhurbaşkanı yetkilidir.",
+      "articleRefs": [
+        "3"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Cumhuriyet başsavcısı, bir memurun görev suçuna ilişkin ihbar aldığında soruşturma izni istemeden önce hangi işlemi yapabilir?",
+      "back": "Yalnız ivedilikle toplanması gerekli ve kaybolma ihtimali bulunan delilleri tespit edebilir; başka hiçbir işlem yapmaz.",
+      "explanation": "Başsavcı, hakkında ihbar veya şikâyette bulunulan memurun ifadesine başvurmaz. Evrakın bir örneğini ilgili makama göndererek soruşturma izni ister. Diğer makamlar ve kamu görevlileri de böyle bir suçu öğrendiklerinde durumu izin vermeye yetkili mercie iletir.",
+      "articleRefs": [
+        "4"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 1,
+      "front": "Memur hakkındaki ihbar veya şikâyetin işleme konulması için soyut ve genel nitelikte olması gerekir mi?",
+      "back": "Hayır. Tam tersine, ihbar ve şikâyetin soyut ve genel nitelikte olmaması zorunludur.",
+      "explanation": "Zorunlu şartlar şunlardır: ihbar soyut ve genel nitelikte olmamalı, kişi veya olay belirtilmeli, iddialar ciddî bulgu ve belgelere dayanmalı. Ayrıca dilekçede dilekçe sahibinin doğru ad, soyad ve imzası ile iş veya ikametgâh adresi bulunmalıdır. Bu şartları taşımayan başvuruyu Cumhuriyet başsavcıları ve izin vermeye yetkili merciler işleme koymaz. Durum, başvurana bildirilir.",
+      "articleRefs": [
+        "4"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Memur hakkındaki iddialar sıhhati şüpheye mahal vermeyecek belgelerle ortaya konulmuşsa, ihbar veya şikâyette hangi şart aranmaz?",
+      "back": "Ad, soyad ve imza ile iş veya ikametgâh adresinin doğruluğu şartı aranmaz.",
+      "explanation": "Bu istisna yalnız kimlik ve adres bilgisinin doğruluğu kaydını kaldırır. Başsavcılar ve yetkili merciler, ihbarcı veya şikâyetçinin kimlik bilgilerini gizli tutmak zorundadır.",
+      "articleRefs": [
+        "4"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Konusunda daha önce sonuçlandırılmış bir ön inceleme bulunan ihbar veya şikâyet hangi durumda işleme konulabilir?",
+      "back": "İhbar veya şikâyet eden kişi, önceki ön incelemenin neticesini etkileyecek yeni belge sunarsa işleme konulabilir.",
+      "explanation": "Kural olarak Cumhuriyet başsavcılıkları ve izin vermeye yetkili merciler böyle bir müracaatı işleme koymaz. Neticeyi etkileyecek yeni belge sunulduğunda ise işleme koyabilirler.",
+      "articleRefs": [
+        "5"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Yargı mensupları başka bir mercinin ön incelemesinde görevlendirilebilir mi?",
+      "back": "Hayır. Yargı mensupları, yargı kuruluşlarında çalışanlar ve askerler başka mercilerin ön incelemelerinde görevlendirilemez.",
+      "explanation": "Ön incelemeyi merci bizzat yapabilir. Görevlendireceği bir veya birkaç denetim elemanına ya da incelenenin üstü konumundaki memurlardan biri veya birkaçına da yaptırabilir. İnceleme yapacakların merciin bulunduğu kurum içinden belirlenmesi esastır. İşin özelliğine göre başka kurumdan eleman istenebilir; bu isteği yerine getirip getirmemek o kuruluşun takdirindedir. Görevlendirilenler birden fazlaysa içlerinden biri başkan olarak belirlenir.",
+      "articleRefs": [
+        "5"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Ön inceleme ile görevlendirilen kişiler kimlerin yetkilerine sahiptir?",
+      "back": "Bakanlık müfettişlerinin ve kendilerini görevlendiren merciin bütün yetkilerine sahiptir.",
+      "explanation": "Görevliler, hakkında inceleme yapılan memurun ifadesini de alır ve gerekli bilgi ve belgeleri toplar. Ardından görüşlerini içeren bir rapor düzenleyip izin vermeye yetkili mercie sunar. İnceleme birden çok kişiyle yapıldıysa farklı görüşler raporda gerekçeleriyle ayrı ayrı belirtilir.",
+      "articleRefs": [
+        "6"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Yetkili merci, ön inceleme raporu üzerine soruşturma izni vermeme kararını gerekçesiz verebilir mi?",
+      "back": "Hayır. Soruşturma izni verilmesi kararında da verilmemesi kararında da gerekçe gösterilmesi zorunludur.",
+      "explanation": "Yetkili merci, ön inceleme raporu üzerine soruşturma izni verilip verilmemesine karar verir. Her iki kararda da gerekçe gösterilmesi zorunludur.",
+      "articleRefs": [
+        "6"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Yetkili merci soruşturma izni kararını, suçu öğrenmesinden itibaren ön inceleme dâhil en geç kaç gün içinde verir?",
+      "back": "En geç otuz gün içinde verir. Süre suçun öğrenilmesinden başlar ve ön incelemeyi de kapsar.",
+      "explanation": "Yetkili merci, belirlenen süreler içinde soruşturma izni verilmesi veya verilmemesi konusunda karar vermek zorundadır.",
+      "articleRefs": [
+        "7"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Soruşturma izni kararı için öngörülen süre zorunlu hâllerde en fazla kaç gün uzatılabilir?",
+      "back": "En fazla onbeş gün uzatılabilir. Uzatma yalnız bir defa yapılabilir.",
+      "explanation": "Uzatma yalnız zorunlu hâllerde mümkündür. Merci, uzatılmış süre içinde de izin konusunda karar vermek zorundadır.",
+      "articleRefs": [
+        "7"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Zorunlu hâl nedeniyle süre uzatılırsa yetkili merci soruşturma izni kararını, suçu öğrenmesinden itibaren en geç kaç günde vermiş olmalıdır?",
+      "back": "En geç 45 günde vermiş olmalıdır. Bu, otuz günlük süre ile bir defalık onbeş günlük uzatmanın toplamıdır.",
+      "explanation": "Süre, suçun yetkili merci tarafından öğrenilmesinden başlar ve ön incelemeyi de kapsar.",
+      "articleRefs": [
+        "7"
+      ],
+      "derivedNumbers": [
+        {
+          "value": 45,
+          "expr": "30 + 15",
+          "refs": [
+            "7"
+          ],
+          "note": "otuz günlük süre ile en fazla onbeş günlük tek uzatmanın toplamı"
+        }
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Memur hakkında verilen soruşturma izni hangi konuları kapsar?",
+      "back": "Şikâyet, ihbar veya iddia konusu olayları kapsar. Bunlara bağlı olarak ileride soruşturma sırasında ortaya çıkabilecek konular da izne dâhildir.",
+      "explanation": "Soruşturma sırasında, izin verilen olay ve konudan tamamen ayrı veya farklı bir suç olarak nitelendirilebilecek bir fiil ortaya çıkarsa yeniden izin alınması zorunludur.",
+      "articleRefs": [
+        "8"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Soruşturma sırasında suçun hukuki niteliği değişirse yeniden soruşturma izni alınması gerekir mi?",
+      "back": "Hayır. Hukuki nitelik değişikliği yeniden izin gerektirmez. Yeniden izin, yalnız tamamen ayrı veya farklı bir suç sayılabilecek bir fiil ortaya çıkarsa zorunludur.",
+      "explanation": "İzin, ihbar veya iddia konusu olayları ve bunlara bağlı olarak sonradan ortaya çıkan konuları zaten kapsar.",
+      "articleRefs": [
+        "8"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Soruşturma izni verilmesi veya verilmemesi kararına karşı itiraz süresi ne kadardır?",
+      "back": "On gündür. Süre, yetkili merciin kararının tebliğinden itibaren işler.",
+      "explanation": "İzin verilmesine karşı hakkında inceleme yapılan memur veya diğer kamu görevlisi itiraz edebilir. İzin verilmemesine karşı Cumhuriyet başsavcılığı veya şikâyetçi itiraz edebilir. Yetkili merciin işleme koymama kararına karşı ise şikâyetçi itiraz edebilir. Merci kararını Cumhuriyet başsavcılığına, incelenen kişiye ve varsa şikâyetçiye bildirir.",
+      "articleRefs": [
+        "9"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Soruşturma izni kararına yapılan itirazlar en geç ne kadar sürede karara bağlanır?",
+      "back": "En geç üç ay içinde karara bağlanır. İtirazlar öncelikle incelenir ve verilen kararlar kesindir.",
+      "explanation": "İtiraz süresi bundan ayrıdır: yetkili merciin kararının tebliğinden itibaren on gündür.",
+      "articleRefs": [
+        "9"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Cumhurbaşkanlığında görevli bir memur hakkında Cumhurbaşkanlığı Genel Sekreterinin verdiği soruşturma iznine yapılan itirazı hangi merci inceler?",
+      "back": "Danıştay İkinci Dairesi inceler.",
+      "explanation": "Danıştay İkinci Dairesi, md 3'ün (e), (f), (g) ve (h) bentlerinde sayılanlara ilişkin itirazlara bakar. (g) bendinde Cumhurbaşkanınca verilen izin bunun dışındadır. Diğer itirazları, yetkili merciin yargı çevresinde bulunduğu bölge idare mahkemesi inceler. Örneğin kaymakamın ilçede görevli memur için verdiği izne itiraz bölge idare mahkemesine gider.",
+      "articleRefs": [
+        "9",
+        "3"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Ast memur ile üst memur görev suçunu iştirak hâlinde işlerse ast memur hangi mahkemede yargılanır?",
+      "back": "Üst memurla aynı mahkemede yargılanır. Aynı fiile iştirakte soruşturma izni de üst memurun bağlı olduğu merciden istenir.",
+      "explanation": "İştirak hâlinde memur olmayan kişi de memur olanla aynı mahkemede yargılanır.",
+      "articleRefs": [
+        "10",
+        "3"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Valiler hakkında hazırlık soruşturmasını kim yapar?",
+      "back": "Yargıtay Cumhuriyet Başsavcısı veya Başsavcıvekili yapar.",
+      "explanation": "Aynı kural Cumhurbaşkanlığı Genel Sekreteri, Türkiye Büyük Millet Meclisi Genel Sekreteri ve Bakan yardımcıları için de geçerlidir. Kaymakamlar hakkındaki hazırlık soruşturmasını il Cumhuriyet başsavcısı veya başsavcıvekili yapar. Diğerleri için genel hükümlere göre yetkili ve görevli Cumhuriyet Başsavcılığı yetkilidir.",
+      "articleRefs": [
+        "12"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Hazırlık soruşturması sırasında hâkim kararı gerekirse Türkiye Büyük Millet Meclisi Genel Sekreteri için nereye başvurulur?",
+      "back": "Yargıtayın ilgili ceza dairesine başvurulur.",
+      "explanation": "Cumhurbaşkanlığı Genel Sekreteri, Bakan yardımcıları ve valiler için de aynı daireye başvurulur.",
+      "articleRefs": [
+        "12"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Hazırlık soruşturması sırasında hâkim kararı gerekirse kaymakamlar için sulh ceza hâkimine mi başvurulur?",
+      "back": "Hayır. Kaymakamlar için il asliye ceza mahkemesine başvurulur. Sulh ceza hâkimi, sayılanlar dışındaki diğerleri içindir.",
+      "explanation": "Cumhurbaşkanlığı Genel Sekreteri, Türkiye Büyük Millet Meclisi Genel Sekreteri, Bakan yardımcıları ve valiler için hâkim kararı Yargıtayın ilgili ceza dairesinden istenir. Diğerleri için genel hükümlere göre yetkili ve görevli sulh ceza hâkimine başvurulur.",
+      "articleRefs": [
+        "12"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Kaymakamlar hakkındaki davaya bakmaya yetkili ve görevli mahkeme hangisidir?",
+      "back": "İl ağır ceza mahkemesidir.",
+      "explanation": "Cumhurbaşkanlığı Genel Sekreteri, Türkiye Büyük Millet Meclisi Genel Sekreteri, Bakan yardımcıları ve valiler için davaya Yargıtayın ilgili ceza dairesi bakar. Diğerleri için genel hükümlere göre yetkili ve görevli mahkeme yetkilidir.",
+      "articleRefs": [
+        "13"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Ön inceleme görevlisinin düzenlediği rapordan dolayı tazminat davası kime karşı açılabilir?",
+      "back": "Ancak idare aleyhine açılabilir. Kişisel kusur ve haksız fiil hâlleri de buna dâhildir.",
+      "explanation": "Kural; disiplin ve diğer idari soruşturmaları yapanları, teftiş ve denetim elemanlarını ve kanunla verilen yetkiye dayanarak aldıkları tedbirleri de kapsar. Bu raporlara dayanarak karar verenler ve işlem tesis edenler için de aynı kural geçerlidir. Bu kararları hazırlayan, inha ya da teklif edenler de kural kapsamındadır.",
+      "articleRefs": [
+        "Ek 1"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Ön inceleme görevlisinin işlemlerinden doğan tazminat davasında idarenin görevliye rücu hakkı hangi durumda saklıdır?",
+      "back": "Görevlinin suç sayılan eylemleri ya da kin, garez ve hatıra dayalı veya baskı ya da telkinle kanaat oluşturduğu veya değiştirdiği kesinleşmiş yargı ya da disiplin kurulu kararıyla tespit edilirse saklıdır.",
+      "explanation": "Dava görevliye karşı değil, ancak idare aleyhine açılabilir. Rücu hakkı için bu durumların kesinleşmiş bir yargı ya da disiplin kurulu kararıyla tespit edilmesi gerekir.",
+      "articleRefs": [
+        "Ek 1"
+      ]
+    }
+  ]
+}

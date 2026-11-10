@@ -1,0 +1,191 @@
+{
+  "deck": {
+    "topicId": "f50bc484-d0b4-490d-a104-ab1fc2166120",
+    "legislationSlug": "yakalama-gozaltina-alma-ve-ifade-alma-yonetmeligi",
+    "sourceLabel": "AI bilgi kartı — Yakalama, Gözaltına Alma ve İfade Alma Yönetmeliği md 9–18",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: resmî madde metni + çıkmış sorular)"
+  },
+  "cards": [
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Yakalanan kişi hangi hâllerde hekim kontrolünden geçirilir ve yakalanma anındaki sağlık durumu belirlenir?",
+      "back": "Gözaltına alınacak olması ya da zor kullanılarak yakalanması hâllerinde.",
+      "explanation": "Gözaltındaki kişinin yerinin değiştirilmesinden, gözaltı süresinin uzatılmasından, serbest bırakılmasından veya adlî mercilere sevkinden önce de sağlık durumu hekim raporuyla tespit edilir. Muayenede işkence, neticesi sebebiyle ağırlaşmış işkence ya da eziyet bulgusuna rastlayan hekim, keyfiyeti derhâl Cumhuriyet savcısına bildirir.",
+      "articleRefs": [
+        "9"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Gözaltındaki kişinin ifadesini alan kolluk görevlisi, aynı kişiyi tıbbî muayeneye de götürebilir mi?",
+      "back": "Hayır. İfadeyi alan ya da soruşturmayı yürüten görevli ile muayeneye götüren görevlinin farklı olması zorunludur. Personel yetersizliği yüzünden farklı görevli bulunamazsa bu durum belgelendirilir.",
+      "explanation": "Muayene, kontrol ve tedavi adlî tıp kurumu veya resmî sağlık kuruluşlarınca yapılır. Hekim ile muayene edilen kişinin yalnız kalması esastır. Hekim, kişisel güvenlik endişesini ileri sürerek muayenenin kolluk görevlisinin gözetiminde yapılmasını isteyebilir; bu istek belgelendirilerek yerine getirilir.",
+      "articleRefs": [
+        "9"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Gözaltındaki kişi için hekim raporu kaç nüsha hâlinde düzenlenir?",
+      "back": "3 nüsha. Giriş raporunun bir nüshası sağlık kuruluşunda saklanır, biri gözaltına alınana verilir, biri de soruşturma dosyasına eklenmek üzere kolluk görevlisine verilir.",
+      "explanation": "Gözaltı süresinin uzatılması, yer değişikliği ya da nezarethaneden çıkış sırasında düzenlenen raporun iki nüshası, sağlık kuruluşunca kapalı ve mühürlü bir zarf içinde Cumhuriyet başsavcılığına en seri şekilde gönderilir. Cumhuriyet savcısı bunlardan birini gözaltına alınana ya da vekiline verir, diğerini soruşturma dosyasına ekler.",
+      "articleRefs": [
+        "9"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Gözaltı birimine getirilen kadının üst veya vücut araması kim tarafından yapılır?",
+      "back": "Bir kadın görevli ya da bu amaçla görevlendirilecek başka bir kadın tarafından yapılır.",
+      "explanation": "Arama, kişi nezarethaneye ya da zorunlu hâllerde bu amaca tahsis edilen yerlere konulmadan önce usulünce yapılır.",
+      "articleRefs": [
+        "10"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Gözaltı birimine getirilen kişi hangi nesnelerden arındırılır?",
+      "back": "Kendisine zarar verebilecek kemer, kravat, ip, kesici ve delici alet gibi nesnelerden arındırılır.",
+      "explanation": "Kişinin üzerinden çıkan eşya ve para muhafaza altına alınır.",
+      "articleRefs": [
+        "10"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Gözaltı birimine getirilen kişinin üzerinden çıkan eşya için düzenlenen tutanağa eşyanın markası yazılır mı?",
+      "back": "Evet. Tutanakta eşyanın vasıfları ve markası ile paranın nev'i, seri numarası ve miktarı belirtilir.",
+      "explanation": "Eşya ve para muhafaza altına alınır. Düzenlenen tutanağın bir sureti üstü aranan kişiye verilir.",
+      "articleRefs": [
+        "10"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Nezarethanede zarurî hâller dışında bir arada en fazla kaç kişi bulundurulabilir?",
+      "back": "5 kişi; zarurî hâller dışında nezarethanede beşten fazla kişi bir arada bulundurulmaz.",
+      "explanation": "Aynı suçla ilgisi olanlar, birbirine hasım olanlar, erkek ve kadınlar bir araya konulmaz. Çocuklar yetişkinlerden ayrı tutulur.",
+      "articleRefs": [
+        "11"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Saldırgan tutum sergileyen ya da kendisine zarar vermeye kalkışan gözaltındaki kişi önce nasıl kontrol altına alınmaya çalışılır?",
+      "back": "Sözle. Bu mümkün olmazsa, hareketini giderecek derecede kuvvet kullanılabilir.",
+      "explanation": "Zarurî olmadıkça, yani kendisinin ya da başkasının hayatı, vücut bütünlüğü veya sağlığı tehlikeye girmedikçe kuvvet kullanılmaz. Saldırgan tutum ve davranışları kontrol altına alınamayan kişiler, tıbbî müdahalede bulunulması için sağlık kuruluşlarına gönderilir.",
+      "articleRefs": [
+        "11"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Gözaltındaki kişinin beslenme ve nakil giderleri nereden karşılanır?",
+      "back": "İlgili birimin bağlı olduğu Bakanlığın bütçe ödeneklerinden karşılanır.",
+      "explanation": "Kişinin sağlığının korunması, gerektiğinde tedavisi ve yakalandığının yakınlarına haber verilmesi giderleri de aynı ödeneklerden karşılanır.",
+      "articleRefs": [
+        "11"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Nezarethaneye alınanların kaydına ait defterde \"gözaltına alınmasına esas bilgiler\" başlığında hangi bilgiler yer alır?",
+      "back": "İsnat edilen suç ve gözaltına alınma nedeni, suç yeri ve tarihi, kimin emriyle yakalanıp nezarete alındığı, haber verilen Cumhuriyet savcısının adı ve soyadı, savcıya haber verildiği tarih ve saat, bilgi toplama işlem kısmı kaydı.",
+      "explanation": "Müdafi istediği hakkındaki beyan ve imza, \"şüpheli ile ilgili işlemler\" başlığında yer alır.",
+      "articleRefs": [
+        "12"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Girişte alınan hekim raporunun tarihi ve sayısı, defterin \"çıkış işlemleri\" bölümüne mi yazılır?",
+      "back": "Hayır. Girişte alınan hekim raporunun verildiği makam, tarihi, sayısı ve özeti \"giriş işlemleri\" bölümüne yazılır.",
+      "explanation": "Çıkış işlemleri bölümünde başka bilgiler yer alır: çıkarıldığı tarih ve saat, sevk edildiği makam, sevk evrakının tarihi ve sayısı, geçici ayrılışlar, kontrol eden âmirin adı, soyadı, rütbesi ve imzası.",
+      "articleRefs": [
+        "12"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Nezarethaneye alınanların kaydına ait deftere zorunlu bilgiler dışında başka bilgi yazılabilir mi?",
+      "back": "Evet; zorunlu bilgilerin dışında gerekli görülen diğer bilgilere de yer verilebilir.",
+      "explanation": "Gözaltı işlemleri bu deftere yazılarak tespit edilir ve defter denetime tâbidir.",
+      "articleRefs": [
+        "12"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Ceza Muhakemesi Kanununun 90 ıncı maddesine göre yakalanan kişi, Cumhuriyet savcısı bırakılmasını emretmezse hangi amaçla gözaltına alınır?",
+      "back": "Soruşturmanın tamamlanması için gözaltına alınır.",
+      "articleRefs": [
+        "13"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Yakalanan kişinin sulh ceza hâkimine başvuru dilekçesi yetkili hâkime nasıl ulaştırılır?",
+      "back": "En seri şekilde ulaştırılır.",
+      "articleRefs": [
+        "15"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Gözaltı süresinin uzatılmasına ilişkin savcı emrine karşı yapılan başvuru üzerine hâkimin verdiği serbest bırakma kararı ne zaman uygulanır?",
+      "back": "Derhâl uygulanır; kişi gözaltından salıverilir.",
+      "explanation": "Sevk veya serbest bırakma işlemi ve sebebi \"Sevk/Serbest Bırakma Tutanağı\"na (EK-C) bağlanır. Tutanağın bir sureti gözaltından çıkarılan kişiye verilir.",
+      "articleRefs": [
+        "17"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "İşlemleri bitirilen gözaltındaki kişi, gözaltı süresinin sonuna kadar tutulabilir mi?",
+      "back": "Hayır. Gözaltı süreleri azamî sürelerdir; işlemleri biten kişi, sürenin dolması beklenmeksizin kolluk kuvvetince ilgili Cumhuriyet başsavcılığına derhâl sevk edilir.",
+      "explanation": "Gözaltına alınan kişilerin işlemlerinin en kısa sürede bitirilmesi esastır.",
+      "articleRefs": [
+        "17"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Yakalanan kişi hakkında ıslah veya tedavi tedbiri alınması gerekiyorsa ne yapılır?",
+      "back": "Kişi ilgili kuruma teslim edilir.",
+      "explanation": "Gözaltına alınmasını gerektirecek bir neden tespit edilemeyen ya da yakalama sebebi ortadan kalkan kişi ise Cumhuriyet savcısının emriyle kolluk kuvvetince derhâl salıverilir.",
+      "articleRefs": [
+        "17"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Yeniden yakalama yasağı, hangi sebeple serbest bırakılan kişileri korur?",
+      "back": "Gözaltı süresinin dolması ya da sulh ceza hâkiminin kararı üzerine serbest bırakılan kişileri korur.",
+      "articleRefs": [
+        "18"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,233 @@
+{
+  "deck": {
+    "topicId": "c245c059-861e-4c26-995a-f0518502cce8",
+    "legislationSlug": "teknik-yontemlerle-takip-sistemlerinin-kullanilmasina-dair-yonetmelik",
+    "sourceLabel": "AI bilgi kartı — Teknik Yöntemlerle Takip Sistemlerinin Kullanılmasına Dair Yönetmelik md 1–8",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: resmî madde metni + çıkmış sorular)"
+  },
+  "cards": [
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Teknik Yöntemlerle Takip Sistemlerinin Kullanılmasına Dair Yönetmelik hangi kararların takibinin usul ve esaslarını düzenler?",
+      "back": "6284 sayılı Ailenin Korunması ve Kadına Karşı Şiddetin Önlenmesine Dair Kanun hükümlerine göre verilen tedbir kararlarının teknik araç ve yöntemlerle takibinin.",
+      "explanation": "Yönetmeliğin amacı, bu tedbir kararlarının teknik araç ve yöntemlerle takibine ilişkin usul ve esasları düzenlemektir.",
+      "articleRefs": [
+        "1"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Yönetmelik, teknik araç ve yöntemlerle takip uygulamasında hangi bakanlıkların iş ve işlemlerini kapsar?",
+      "back": "Aile ve Sosyal Hizmetler Bakanlığı ile İçişleri Bakanlığının iş ve işlemlerini kapsar.",
+      "explanation": "Kapsamda, Kanun kapsamındaki teknik araç ve yöntemlerle takip uygulamasına ilişkin görev, yetki ve sorumluluğu bulunan bu bakanlıkların konuyla ilgili iş ve işlemleri yer alır.",
+      "articleRefs": [
+        "1"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Teknik takip kararlarının dayandığı 6284 sayılı Kanun hangi tarihlidir?",
+      "back": "8/3/2012 tarihlidir. Kanunun adı Ailenin Korunması ve Kadına Karşı Şiddetin Önlenmesine Dair Kanundur.",
+      "articleRefs": [
+        "1"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Teknik Yöntemlerle Takip Sistemlerinin Kullanılmasına Dair Yönetmelik, 6284 sayılı Kanunun hangi maddesine dayanılarak hazırlanmıştır?",
+      "back": "Kanunun 12 nci maddesine dayanılarak hazırlanmıştır.",
+      "articleRefs": [
+        "2"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Yönetmelikte elektronik kelepçe nasıl tanımlanır?",
+      "back": "Elektronik kelepçe, yükümlünün ayak veya kol bileğine takılan elektronik cihazdır.",
+      "explanation": "Yükümlü, hakkında Kanunun 12 nci maddesi kapsamında teknik yöntemlerle takip kararına hükmedilen kişidir. İzleme ünitelerinin görevleri arasında şunlar vardır: kelepçe ile birlikte yükümlü ve şiddet mağdurunun konumunu tanımlamak, izleme merkeziyle karşılıklı iletişim kurmak, tampon bölge ve/veya yasaklı bölge ihlal edildiğinde izleme merkezine, mağdura ve yükümlüye uyarı vermek.",
+      "articleRefs": [
+        "3"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Tampon bölge mahkeme kararında mı belirlenir?",
+      "back": "Hayır. Tampon bölge, mahkeme kararındaki yasak bölgeye ilaveten izleme merkezi ve uygulama ekibince koordineli olarak belirlenen ek ya da ara bölgedir.",
+      "explanation": "Tampon bölge, kolluk birimlerinin vakaya hızlı ve etkin müdahalesini sağlamak ve şiddet mağdurunu güvenli bölgeye ulaştırmak amacıyla belirlenir. Yasak bölge ise yükümlünün Karara göre şiddet mağduruna yaklaşmasının yasak olduğu yerlerdir: mağdurun konutu, işyeri, okulu ve benzeri yerler.",
+      "articleRefs": [
+        "3"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Yönetmelikte polis irtibat görevlisi kimdir?",
+      "back": "İl Emniyet Müdürlüğü tarafından Şiddet Önleme ve İzleme Merkezinde (ŞÖNİM) görevlendirilen ve bağlı bulunduğu birimin kurumsal temsilini yapan polis memurudur.",
+      "explanation": "ŞÖNİM; şiddetin önlenmesi ile koruyucu ve önleyici tedbirlerin etkin uygulanmasına yönelik danışmanlık, rehberlik, yönlendirme ve izleme hizmetleri veren merkezdir. Bu merkezlerde tercihen kadın personel istihdam edilir ve çalışmalar yedi gün yirmi dört saat esasına göre yürütülür.",
+      "articleRefs": [
+        "3"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "İzleme merkezinde takip işlemleri hangi zaman esasına göre yürütülür?",
+      "back": "Yedi gün yirmi dört saat esasına göre yürütülür. İşlemleri izleme merkez amiri ve izleme personeli yürütür.",
+      "explanation": "Teknik yöntemlerle takip kararlarının gereği, İçişleri Bakanlığı Emniyet Genel Müdürlüğünde kurulu izleme merkezinde yerine getirilir. İzlemenin yapıldığı ekranlar sürekli açık ve güncel tutulur ve ilgili personel tarafından takip edilir.",
+      "articleRefs": [
+        "4"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "İhlal tespit edildiğinde izleme merkezi önce ilgili kolluk birimiyle mi irtibata geçer?",
+      "back": "Hayır. Önce yükümlü ile irtibata geçilir. İhlal devam ederse ilgili kolluk birimleriyle irtibat kurulur ve yükümlü ile mağdurun bulunduğu bölgenin koordinat bilgisi paylaşılır.",
+      "explanation": "Şiddet mağduru ile de irtibata geçilir; güvenli bir konuma geçmesi için yönlendirme yapılır ve güvende olduğu teyit edilir. İhlale ilişkin tespit tutanağı düzenlenerek ivedilikle ilgili kolluk birimi ile ŞÖNİM'e ulaştırılır.",
+      "articleRefs": [
+        "4"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "İzleme merkezine hangi tür cihazlarla girilemez?",
+      "back": "Elektronik ve görsel kayıt alma özelliği bulunan cihazlarla girilemez: mobil telefon, kamera, bilgisayar, fotoğraf makinesi, flaş bellek gibi.",
+      "explanation": "Görevli ve yetkililer hariç üçüncü kişiler izleme merkezine giremez; izleme merkezine ziyaretçi kabul edilmez.",
+      "articleRefs": [
+        "4"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "İzleme merkezinde günlük vardiya listesinin hazırlanmasını sağlamak ve kontrolünü yapmak kimin görevidir?",
+      "back": "İzleme merkezi amirinin görevidir.",
+      "explanation": "İzleme merkezi amirinin diğer görevleri arasında şunlar vardır: görev alanındaki iş ve işlemlerin mevzuata uygun yürütülmesini sağlamak, izleme merkezindeki işbirliği ve koordinasyonu sağlamak, takip sistemine dâhil tüm vakaların veri sistemine işlenmesini sağlamak.",
+      "articleRefs": [
+        "5"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "İzleme merkezi amiri, çalışma ortamı ve personelin çalışmasıyla ilgili hangi görevi üstlenir?",
+      "back": "Çalışma ortamlarının düzenini sağlar. Personelin etkin ve verimli çalışmasına yönelik tedbirler alır ve bunları denetler.",
+      "explanation": "Amir bu görevlerle birlikte mevzuata uygun olarak verilen diğer görevleri de yerine getirmekle görevli, yetkili ve sorumludur.",
+      "articleRefs": [
+        "5"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "İzleme merkezi amiri iletişim listesiyle ilgili hangi görevi yürütür?",
+      "back": "Listenin hazırlanmasını ve sürekli güncel tutulmasını sağlar. Listeyi hazırlamak ise izleme personelinin görevidir.",
+      "explanation": "İletişim listesi, izleme personelinin acil aramalarında hızlı yönlendirme ve müdahaleyi kolaylaştırmak için ilgili kurum, kuruluş ve personelin iletişim bilgilerinin yer aldığı formdur.",
+      "articleRefs": [
+        "5",
+        "6",
+        "3"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "İzleme personeli, kararın sona ermesinden kaç gün önce bilgilendirme yapar?",
+      "back": "On beş gün önce bilgilendirme yapar. Uygulama ekibini, ilgili kolluk birimini ve ŞÖNİM'i bilgilendirir.",
+      "articleRefs": [
+        "6"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "İzleme personeli hangi bilgileri üçüncü kişilerle paylaşamaz?",
+      "back": "İzleme merkezinin işleyişine ve Kararların taraflarına ilişkin bilgileri paylaşamaz. Görevini yerine getirirken gizliliğe riayet eder.",
+      "explanation": "İzleme personeli ayrıca çalışma ortamında mevzuata, disiplin kurallarına ve etik ilkelerine uygun davranmakla görevlidir.",
+      "articleRefs": [
+        "6"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "İzleme personeli, vakanın durum değerlendirmesine esas teknik detayları içeren raporu nereden çekerek oluşturur?",
+      "back": "Veri sisteminden çekerek oluşturur. Bunu gerektiğinde yapar ve raporu ilgili kurumlarla paylaşır.",
+      "explanation": "İzleme personeli, takip ettiği kişilerle ilgili genel bilgileri, Karara ilişkin bilgileri ve ihlal bilgilerini veri sistemine kaydeder ve gerektiğinde raporlar.",
+      "articleRefs": [
+        "6"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Emniyet teşkilatında teknik yöntemlerle takip uygulama ekibi kimler arasından oluşturulur?",
+      "back": "Aile İçi ve Kadına Karşı Şiddetle Mücadele Büro Amirliğinde görevli, kadına yönelik şiddetle mücadele ve teknik yöntemlerle takip konularında eğitim almış kolluk görevlileri arasından oluşturulur.",
+      "explanation": "Ekip, teknik yöntemlerle takip uygulama iş ve işlemlerini illerde yürütür. Görevleri arasında şunlar vardır: izleme ünitelerini izleme merkezinden yazılı olarak talep etmek, ünitelerin taraflara teslimi ve geri alınması, arızaların giderilmesi, izleme merkezinden gelen ihlal bilgisinin takibi.",
+      "articleRefs": [
+        "7"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Kararın tebliği kurulum esnasında yapılır ve taraflar Karara itiraz edeceğini belirtirse uygulama ekibi tutanağı nereye gönderir?",
+      "back": "Cumhuriyet Başsavcılığına gönderir. Kurulum işlemleri tamamlandıktan sonra taraflara itiraz prosedürü hakkında bilgilendirme de yapılır.",
+      "articleRefs": [
+        "7"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Takip sürecinde farklı il emniyet müdürlükleri yetkiliyse işlemleri yükümlünün ikamet ettiği yerdeki kolluk birimi mi yürütür?",
+      "back": "Hayır. İşlemleri şiddet mağdurunun ikamet ettiği yerdeki sorumlu kolluk birimi yürütür.",
+      "explanation": "Mağdur ile yükümlünün farklı illerde ikamet ettiği vakalarda, izleme ünitesinin sevki ya da talebi gibi iller arası işbirliği gerektiren konular olabilir. Bu durumlarda uygulama ekibi, koordinasyonun sağlanması için izleme merkezine bilgi verir.",
+      "articleRefs": [
+        "7"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Hangi nedenlerle bir vakanın teknik yöntemlerle takibe uygun olabileceği kanaati oluşabilir?",
+      "back": "Koruyucu ve önleyici tedbir kararlarının yetersiz kalması ya da mağdurun hayatının olağan akışının aksaması gibi nedenlerle.",
+      "explanation": "Bu tespit, Kanunda yer alan tedbirlerin etkin uygulanması ve takibi amacıyla yapılır.",
+      "articleRefs": [
+        "8"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Vakanın teknik yöntemlerle takibe uygunluğunu Aile İçi ve Kadına Karşı Şiddetle Mücadele Büro Amirliği mi değerlendirir?",
+      "back": "Hayır. Büro Amirliği vakayı tespit eder; uygunluğu Komisyon değerlendirir. Vaka, elde edilen bilgi, belge ve delillerle birlikte ŞÖNİM'e gönderilir.",
+      "explanation": "Vakaları tespit eden birimler arasında Aile İçi ve Kadına Karşı Şiddetle Mücadele Büro Amirliği ile Aile ve Sosyal Hizmetler Bakanlığına bağlı birimler bulunur.",
+      "articleRefs": [
+        "8"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Vakanın teknik takibe uygunluğunu değerlendiren Komisyon asgari kaç personelden oluşur?",
+      "back": "Asgari üç personelden oluşur: ŞÖNİM Müdürü, ŞÖNİM'de görevli en az bir meslek elemanı ve polis irtibat görevlisi.",
+      "explanation": "Komisyon ŞÖNİM bünyesinde oluşturulur ve şiddet vakasının teknik yöntem ve araçlarla takibe elverişli olup olmadığını değerlendirir. Meslek elemanı; sosyal hizmet, psikoloji, çocuk gelişimi, psikolojik danışmanlık ve rehberlik ile sosyoloji bölümlerinden mezun olup il müdürlüğü bünyesinde görev yapan meslek mensubudur.",
+      "articleRefs": [
+        "8",
+        "3"
+      ]
+    }
+  ]
+}

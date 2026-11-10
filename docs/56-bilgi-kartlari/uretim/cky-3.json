@@ -1,0 +1,248 @@
+{
+  "deck": {
+    "topicId": "7b47e1cc-1573-4cfc-99fa-6c82b73b88ec",
+    "legislationSlug": "cocuk-koruma-kanunu-uygulama-yonetmeligi",
+    "sourceLabel": "AI bilgi kartı — Çocuk Koruma Kanunu Uygulama Yönetmeliği md 25–42",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: resmî madde metni + çıkmış sorular)"
+  },
+  "cards": [
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Kamu davasının açılması ertelenen ve denetim altına alınmasına da karar verilen çocuğa ilişkin mahkeme kararı ilk olarak nereye gönderilir?",
+      "back": "Cumhuriyet başsavcılığına. Başsavcılık kararı denetimli serbestlik genel defterine kaydeder, ardından şube müdürlüğü veya büroya iletir.",
+      "explanation": "Şube müdürlüğü veya büro kararı çocukların denetimine ilişkin deftere kaydeder ve çocuğun ailesine ya da kanuni temsilcisine, çocukla birlikte başvurması için bildirim yapar. Süresinde başvurulursa md 24 gereğince denetim görevlisi görevlendirilir.",
+      "articleRefs": [
+        "26"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Kamu davasının açılmasının ertelenmesi kararı verilen ama denetim altına alınmayan çocuklara ilişkin ilâmları kim takip eder?",
+      "back": "Cumhuriyet başsavcılığı takip eder.",
+      "explanation": "Erteleme kararıyla birlikte denetim kararı da verilmişse başsavcılık kararı denetimli serbestlik genel defterine kaydeder, şube müdürlüğü veya büroya iletir ve süreç denetim görevlisinin görevlendirilmesiyle sürer.",
+      "articleRefs": [
+        "26"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Kamu davasının açılmasının ertelenmesine ilişkin Adlî Sicil kayıtları, hiçbir soruşturma veya kovuşturmayla bağlantısı olmadan Cumhuriyet savcısının isteğiyle kullanılabilir mi?",
+      "back": "Hayır. Bu kayıtlar ancak bir soruşturma veya kovuşturmayla bağlantılı olarak Cumhuriyet savcısı, hâkim veya mahkeme isterse kullanılabilir.",
+      "explanation": "Kullanım amacı da sınırlıdır: kayıtlar yalnız kanunun kamu davasının açılmasının ertelenmesi ile hükmün açıklanmasının geri bırakılması kararına ilişkin maddelerinde belirtilen amaçlar için kullanılabilir. Erteleme kararları talî karar fişi düzenlenerek Adlî Sicil ve İstatistik Genel Müdürlüğüne gönderilir.",
+      "articleRefs": [
+        "26"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Hükmün açıklanmasının geri bırakılması kararı verilen, ancak yükümlülük belirlenmeyen ve denetim altına alınmayan çocuğa ilişkin karar nereye gönderilir?",
+      "back": "Adlî Sicil ve İstatistik Genel Müdürlüğüne; talî karar fişi düzenlenerek sisteme kaydedilmek üzere gönderilir.",
+      "explanation": "Yükümlülük belirlenen ya da denetim altına alma kararı verilen çocukta ise mahkeme kararı Cumhuriyet başsavcılığına gönderilir; başsavcılık kararı denetimli serbestlik genel defterine kaydedip şube müdürlüğü veya büroya iletir.",
+      "articleRefs": [
+        "27"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Şube müdürlüğü veya büro, denetim kararını deftere kaydettikten sonra çocuğun ailesine çocukla birlikte başvurması için ne kadar süre tanır?",
+      "back": "On gün; aile veya kanunî temsilci bu süre içinde çocukla birlikte şube müdürlüğü veya büroya başvurur.",
+      "explanation": "Bu bildirim, hükmün açıklanmasının geri bırakılmasında yükümlülük ya da denetim kararı verilen çocuk için de, kamu davasının açılması ertelenip denetim altına alınan çocuk için de aynı biçimde yapılır.",
+      "articleRefs": [
+        "27",
+        "26"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Hükmün açıklanmasının geri bırakılması hâlinde aile, bildirimdeki süre içinde çocukla birlikte şube müdürlüğü veya büroya başvurmazsa ne yapılır?",
+      "back": "Defterdeki kayıt kapatılır ve durum Cumhuriyet başsavcılığı aracılığıyla mahkemeye bildirilir.",
+      "explanation": "Süresinde başvurulursa karar türüne göre yerine getirilir: yalnız denetim altına alma kararında md 24 ve 25 uygulanır; yükümlülükle birlikte denetim altına alma kararında (a) ve (b) bentleri birlikte uygulanır.",
+      "articleRefs": [
+        "27"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Çocuklar hakkında verilen denetimli serbestlik kararlarının infazı, denetim plânının hazırlandığı tarihte mi başlar?",
+      "back": "Hayır. İnfaza başlama tarihi, denetim plânının hâkim tarafından onaylandığı tarihtir.",
+      "explanation": "Denetim plânı mahkeme veya çocuk hâkimince onaylandıktan sonra derhal uygulanır. Plânı denetim görevlisi, sosyal incelemeyi yapan uzman veya mahkeme nezdindeki sosyal çalışma görevlisiyle birlikte hazırlar.",
+      "articleRefs": [
+        "28"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Denetime ara verilmesi kararını kim verir?",
+      "back": "Cumhuriyet başsavcılığı karar verir; bu karar md 33'e göre tebliğ edilir.",
+      "explanation": "Ara verme, denetim altına alınanın askere gitmesi ya da sağlık, yurtdışı eğitimi gibi sebeplerle yerleşim yerinden geçici süreyle ayrılmasını haklı, geçerli ve gerektiğinde belgelendirilebilen bir mazerete dayandırabilmesi hâlinde söz konusudur.",
+      "articleRefs": [
+        "31"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Denetim altına alınan kişinin yurtdışı eğitimi için yerleşim yerinden geçici süreyle ayrılması denetime ara verilmesine yol açabilir mi?",
+      "back": "Evet; ancak ayrılışını haklı, geçerli ve gerektiğinde belgelendirilebilen bir mazerete dayandırabilmesi şartıyla denetime ara verilir.",
+      "explanation": "Askere gitme ve sağlık sebebiyle geçici ayrılma da aynı şartla ara verme sebebidir. Ayrılış geçici süreli olmalıdır.",
+      "articleRefs": [
+        "31"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Şube müdürlüğü veya büronun suça sürüklenen çocukların (Kanunun güncel metninde: adli süreçteki çocuk) ailelerine ya da kanunî temsilcilerine yapacağı bildirim hangi kanun hükümlerine göre yapılır?",
+      "back": "7201 sayılı Tebligat Kanunu hükümlerine göre yapılır.",
+      "explanation": "Bildirim, hükümde gösterilen adrese yapılır.",
+      "articleRefs": [
+        "33"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Hükümlü adres değişikliklerini kime bildirmekle yükümlüdür?",
+      "back": "Mahkemeye veya Cumhuriyet başsavcılığına bildirmekle yükümlüdür.",
+      "articleRefs": [
+        "33"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Adres değişikliğini bildirmeyen hükümlüye, hükümde gösterilen adrese yapılan tebligat geçerli midir?",
+      "back": "Evet. Bildirim hükümde gösterilen adrese yapılır; adres değişikliği bildirilmemişse bu adrese yapılan tebligat geçerlidir.",
+      "articleRefs": [
+        "33"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Yetki alanında şube müdürlüğü veya büro bulunmayan Cumhuriyet başsavcılığı denetim kararını ne yapar?",
+      "back": "Kararı denetimli serbestlik genel defterine kaydeder, sonra şube müdürlüğünün bağlı bulunduğu Cumhuriyet başsavcılığına gönderir.",
+      "explanation": "Karar, o başsavcılıkça da denetimli serbestlik genel defterine kaydedildikten sonra şube müdürlüğüne gönderilir.",
+      "articleRefs": [
+        "34"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Denetim altına alınan çocuğun yerleşim yeri infaz sırasında değişirse dosya nereye gönderilir?",
+      "back": "Çocuğun yerleşim yerinin bulunduğu şube müdürlüğü veya büroya gönderilir.",
+      "explanation": "Aynı kural, hakkında denetimli serbestlik tedbiri hükmedilen çocuk için de geçerlidir.",
+      "articleRefs": [
+        "34"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Adalet Bakanlığında adaylık dönemlerinde çocuk hukuku, sosyal hizmet, çocuk gelişimi ve psikolojisi gibi konularda eğitim verilen görevliler kimlerdir?",
+      "back": "Sosyal çalışma görevlileri ile denetimli serbestlik ve yardım merkezî şube müdürlüğünde görevli denetim görevlileri.",
+      "explanation": "Aynı görevlilere hizmet içi eğitimle de bu konularda uzmanlaşmalarını sağlamak ve kendilerini geliştirmelerine yönelik eğitim verilir.",
+      "articleRefs": [
+        "37"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Cumhuriyet başsavcılığında kamu davasının açılmasının ertelenmesi kararlarının saklandığı özel kartona konulan nüshalarda neler bulunmak zorundadır?",
+      "back": "Cumhuriyet savcısının imzası ile Cumhuriyet başsavcılığı mührü.",
+      "articleRefs": [
+        "38"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Denetim altına alınan çocuklar hakkındaki kararların saklandığı kartona konulan nüshalarda hâkimin imzası tek başına yeterli midir?",
+      "back": "Hayır. İlgisine göre hâkim veya mahkeme başkanı ile zabıt kâtibinin imzaları ve mahkeme mührü birlikte bulunmalıdır.",
+      "explanation": "Bu kartondaki kararlar tarih ve sıra numarasına göre saklanır.",
+      "articleRefs": [
+        "38"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Denetim altına alınan çocukların isimlerini ve karar numaralarını gösteren listeler hangi amaçla mahkemelere bildirilir?",
+      "back": "Çocuk hakkında mükerrer karar verilmesini önlemek için; listeler o yerde bulunan çocuk ve çocuk ağır ceza mahkemelerine bildirilir.",
+      "articleRefs": [
+        "38"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Sosyal inceleme raporu, denetim plânı, denetim ve değerlendirme raporları dava dosyasında nasıl muhafaza edilir?",
+      "back": "Dava dosyası içinde ayrı bir bölümde, tarih sırasına uygun olarak muhafaza edilir.",
+      "explanation": "Çocukların kişilik gelişimlerini, aile ve sosyal çevrelerini gösteren her türlü evrak da aynı bölümde saklanır.",
+      "articleRefs": [
+        "39"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Sosyal inceleme raporlarının bir örneğini ayrı bir kartonda kim tutar?",
+      "back": "Raporu hazırlatan mahkeme veya Cumhuriyet başsavcılığı tutar; örnekler isme göre listelenir.",
+      "articleRefs": [
+        "39"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Sosyal inceleme raporu listelerinin örnekleri hangi sıklıkla güncellenerek gönderilir?",
+      "back": "Her ay güncellenerek; aynı yerdeki çocuk ve çocuk ağır ceza mahkemeleri ile Cumhuriyet başsavcılığına bilgileri bakımından gönderilir.",
+      "articleRefs": [
+        "39"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Elektronik ortamda kayıt tutulmaya başlanınca defter tutma uygulamasına hemen son verilir mi?",
+      "back": "Hayır. Defterlerle birlikte tüm kayıtlar ayrıca elektronik ortamda tutulur; yazılı kayıttan ancak elektronik kayıtların ihtiyacı karşıladığı tespit edilirse vazgeçilebilir.",
+      "articleRefs": [
+        "40"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Çocuk Koruma Kanununun Uygulanmasına İlişkin Yönetmelik ne zaman yürürlüğe girer?",
+      "back": "Yayımı tarihinde yürürlüğe girer.",
+      "articleRefs": [
+        "41"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Çocuk Koruma Kanununun Uygulanmasına İlişkin Yönetmelik hükümlerini kim yürütür?",
+      "back": "Adalet Bakanı yürütür.",
+      "articleRefs": [
+        "42"
+      ]
+    }
+  ]
+}

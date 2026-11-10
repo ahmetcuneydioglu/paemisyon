@@ -1,0 +1,296 @@
+{
+  "deck": {
+    "topicId": "569628d2-5e1c-4788-ad66-1ef20d9374f6",
+    "legislationSlug": "5326-sayili-kabahatler-kanunu",
+    "sourceLabel": "AI bilgi kartı — 5326 Sayılı Kabahatler Kanunu md 1–21",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: resmî madde metni + çıkmış sorular)"
+  },
+  "cards": [
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "5326 sayılı Kabahatler Kanununa göre \"kabahat\" deyiminden ne anlaşılır?",
+      "back": "Kanunun, karşılığında idarî yaptırım uygulanmasını öngördüğü haksızlık anlaşılır.",
+      "explanation": "Tanımın belirleyici öğesi yaptırımın türüdür: kanun bir haksızlığa idarî yaptırım bağlamışsa o haksızlık kabahattir.",
+      "articleRefs": [
+        "2"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Kabahatler Kanununun idarî yaptırım kararlarına karşı kanun yoluna ilişkin hükümleri hangi şartla uygulanır?",
+      "back": "Diğer kanunlarda aksine hüküm bulunmaması halinde uygulanır.",
+      "explanation": "Kanunun diğer genel hükümleri ise idarî para cezası veya mülkiyetin kamuya geçirilmesi yaptırımını gerektiren bütün fiiller hakkında uygulanır.",
+      "articleRefs": [
+        "3"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Kabahat karşılığı yaptırımın miktarı idarenin genel ve düzenleyici işlemleriyle belirlenebilir mi?",
+      "back": "Hayır. Kabahat karşılığı yaptırımların türü, süresi ve miktarı ancak kanunla belirlenebilir.",
+      "explanation": "İdarenin genel ve düzenleyici işlemleri, hangi fiillerin kabahat oluşturduğu konusunda kanunun kapsam ve koşullarını belirlediği çerçeve hükmün içeriğini doldurabilir. Yaptırımın türü, süresi ve miktarı ise yalnız kanunla belirlenir.",
+      "articleRefs": [
+        "4"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Kabahat, neticenin oluştuğu zaman işlenmiş sayılır mı?",
+      "back": "Hayır. Kabahat, failin icraî veya ihmali davranışı gerçekleştirdiği zaman işlenmiş sayılır; neticenin oluştuğu zaman dikkate alınmaz.",
+      "explanation": "Davranış ile netice farklı zamanlarda gerçekleşse de esas alınan an, failin davranışı gerçekleştirdiği andır.",
+      "articleRefs": [
+        "5"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Kabahatler karşılığında öngörülen idarî yaptırımlara ilişkin kararların yerine getirilmesinde hangi zaman kuralı geçerlidir?",
+      "back": "Derhal uygulama kuralı geçerlidir.",
+      "explanation": "Zaman bakımından uygulamada Türk Ceza Kanununun ilgili hükümleri kabahatlere de uygulanır. Maddedeki \"Ancak\" cümlesi bu kurala istisna getirir: yaptırım kararlarının yerine getirilmesinde derhal uygulama esastır.",
+      "articleRefs": [
+        "5"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Tüzel kişinin organı ya da temsilcisi olmayan, ama faaliyeti çerçevesinde görev üstlenen kişi bu görevi kapsamında kabahat işlerse kim hakkında da idarî yaptırım uygulanabilir?",
+      "back": "Tüzel kişi hakkında da idarî yaptırım uygulanabilir.",
+      "explanation": "Aynı kural, organ veya temsilcilik görevi yapanların bu görevleri kapsamında işledikleri kabahatler için de geçerlidir. Kanunun organda ya da temsilcide özel nitelikler aradığı hallerde de uygulanır.",
+      "articleRefs": [
+        "8"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Temsilcilik ilişkisinin dayanağı olan işlem hukuken geçersizse, temsilcinin bu sıfatla bağlantılı işlediği kabahatten dolayı temsil edilen gerçek kişiye idarî yaptırım uygulanabilir mi?",
+      "back": "Evet. Organ veya temsilcilik ya da hizmet ilişkisinin dayanağını oluşturan işlem hukuken geçerli olmasa da bu sorumluluk hükümleri uygulanır.",
+      "explanation": "Aynı kural, gerçek kişiye ait işte çalışanın bu faaliyet çerçevesinde işlediği kabahatte iş sahibi için de geçerlidir. Tüzel kişinin organı, temsilcisi ya da faaliyeti çerçevesinde görev üstlenen kişi bakımından da uygulanır.",
+      "articleRefs": [
+        "8"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Kanunda açıkça hüküm bulunmayan hallerde kabahat hangi kusur biçimleriyle işlenebilir?",
+      "back": "Hem kasten hem de taksirle işlenebilir.",
+      "explanation": "Kural, kanunda açıkça hüküm bulunmayan haller içindir. Kanun bir kabahat için açıkça başka bir düzen öngörmüşse o hüküm uygulanır.",
+      "articleRefs": [
+        "9"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Türk Ceza Kanununun hata hallerine ilişkin hükümleri hangi kabahatler bakımından uygulanır?",
+      "back": "Ancak kasten işlenen kabahatler bakımından uygulanır.",
+      "explanation": "\"Ancak\" sözcüğü uygulamayı kasten işlenen kabahatlerle sınırlar. Bu nedenle hata hükümleri taksirle işlenen kabahatlerde uygulanmaz.",
+      "articleRefs": [
+        "10"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Fiili işlediği sırada kaç yaşını doldurmamış çocuk hakkında idarî para cezası uygulanamaz?",
+      "back": "Onbeş yaşını doldurmamış çocuk hakkında uygulanamaz; yaş, fiilin işlendiği sıraya göre belirlenir.",
+      "explanation": "Akıl hastalığı nedeniyle fiilin hukukî anlam ve sonuçlarını algılayamayan ya da bu fiille ilgili davranışlarını yönlendirme yeteneği önemli derecede azalmış kişi hakkında da idarî para cezası uygulanmaz.",
+      "articleRefs": [
+        "11"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Türk Ceza Kanununun hukuka uygunluk nedenlerine ilişkin hükümleri kabahatler bakımından uygulanır mı?",
+      "back": "Evet; Kabahatler Kanununda aksine hüküm bulunmayan hallerde uygulanır.",
+      "explanation": "Aynı kayıtla, kusurluluğu ortadan kaldıran nedenlere ilişkin hükümler de kabahatler bakımından uygulanır.",
+      "articleRefs": [
+        "12"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Kabahate teşebbüs cezalandırılır mı?",
+      "back": "Hayır. Ancak teşebbüsün de cezalandırılabileceğine dair ilgili kanunda hüküm bulunan haller saklıdır.",
+      "explanation": "İlgili kanunda böyle bir hüküm varsa, Türk Ceza Kanununun suça teşebbüse ve gönüllü vazgeçmeye ilişkin hükümleri kabahatler bakımından da uygulanır.",
+      "articleRefs": [
+        "13"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Kabahatin işlenişine birden fazla kişi iştirak ederse bu kişiler hakkında hangi sıfatla idarî para cezası verilir?",
+      "back": "Her biri hakkında fail olarak idarî para cezası verilir.",
+      "explanation": "Özel faillik niteliğinin arandığı durumlarda, bu niteliği taşımayan iştirakçi hakkında da fail olarak ceza verilir. İştirak için kasten ve hukuka aykırı işlenmiş bir fiilin varlığı yeterlidir. Diğerlerinin sorumlu olup olmadığına bakılmaz. Ancak fiil özel faillik niteliğini taşıyan kişi için suç, diğerleri için kabahat olarak tanımlanmışsa ve ortaklaşa işlenirse suça iştirak hükümleri uygulanır (md 14/4).",
+      "articleRefs": [
+        "14"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Tek fiille, tanımlarında sadece idarî para cezası öngörülen birden fazla kabahat işlenirse nasıl bir ceza verilir?",
+      "back": "En ağır idarî para cezası verilir.",
+      "explanation": "Bu kabahatler için kanunda idarî para cezasından başka idarî yaptırımlar da öngörülmüşse, bu yaptırımların her birinin uygulanmasına karar verilir. Aynı kabahat birden fazla işlenirse her biri için ayrı ayrı idarî para cezası verilir. Kesintisiz fiille işlenebilen kabahatte fiil, idarî yaptırım kararı verilinceye kadar tek sayılır.",
+      "articleRefs": [
+        "15"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Bir fiil hem kabahat hem de suç olarak tanımlanmışsa her ikisinden dolayı yaptırım uygulanabilir mi?",
+      "back": "Hayır. Sadece suçtan dolayı yaptırım uygulanabilir; suçtan dolayı yaptırım uygulanamayan hallerde ise kabahat dolayısıyla yaptırım uygulanır.",
+      "explanation": "Kabahat yaptırımı tamamen ortadan kalkmaz. Suçtan dolayı yaptırım uygulanamayan hallerde kabahat yaptırımı devreye girer.",
+      "articleRefs": [
+        "15"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Kabahatler karşılığında uygulanacak idarî yaptırımlar nelerden ibarettir?",
+      "back": "İdarî para cezası ve idarî tedbirlerden ibarettir.",
+      "explanation": "İdarî tedbirler, mülkiyetin kamuya geçirilmesi ve ilgili kanunlarda yer alan diğer tedbirlerdir.",
+      "articleRefs": [
+        "16"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Ekonomik durumu müsait olmayan kişinin idarî para cezasını hangi süre içinde taksitle ödemesine karar verilebilir?",
+      "back": "Bir yıl içinde ve dört eşit taksit halinde ödenmesine karar verilebilir; ilk taksitin peşin ödenmesi şarttır.",
+      "explanation": "Taksitlendirme zorunlu değildir, verilebilecek bir karardır. Taksitler zamanında ve tam olarak ödenmezse idarî para cezasının kalan kısmının tamamı tahsil edilir.",
+      "articleRefs": [
+        "17"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "İdarî para cezası ödeme süresi içinde ödenirse cezadan ne kadar indirim yapılır?",
+      "back": "Yüzde yirmi beş (%25) oranında indirim yapılır.",
+      "explanation": "Kanunlarında ödeme süresi düzenlenmemiş idarî para cezaları tebliğinden itibaren bir ay içinde ödenir. Ödeme yapılması, kişinin karara karşı kanun yoluna başvurma hakkını etkilemez.",
+      "articleRefs": [
+        "17"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Mahalli idarelerin verdiği idarî para cezaları Genel Bütçeye gelir kaydedilir mi?",
+      "back": "Hayır. Sosyal güvenlik kurumları ile mahalli idarelerin verdiği idarî para cezaları kendi bütçelerine gelir kaydedilir.",
+      "explanation": "Cumhuriyet başsavcılıkları ve mahkemelerin verdiği idarî para cezaları Genel Bütçeye gelir kaydedilir. Mahalli idareler, ilgili kanunlarında aksine hüküm yoksa kendi cezalarını Amme Alacaklarının Tahsil Usulü Hakkında Kanun hükümlerine göre kendileri tahsil eder.",
+      "articleRefs": [
+        "17"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Eşyanın mülkiyetinin kamuya geçirilmesine karar verilebilmesi için fail hakkında idarî para cezası verilmiş olması şart mıdır?",
+      "back": "Hayır. Fail hakkında idarî para cezası ya da başka bir idarî yaptırım kararı verilmiş olması şart değildir; ancak kanunda açık hüküm bulunmalıdır.",
+      "explanation": "Mülkiyetin kamuya geçirilmesi, kabahatin konusunu oluşturan veya kabahatin işlenmesiyle elde edilen eşya için söz konusudur. Kaim değerin mülkiyetinin kamuya geçirilmesine de karar verilebilir.",
+      "articleRefs": [
+        "18"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Mülkiyetin kamuya geçirilmesi kararı, eşyaya ilişkin hangi koşullardan birinin yerine getirilmesine bağlı olarak geciktirilebilir?",
+      "back": "Eşyanın kullanılmaz hale getirilmesi, niteliğinin değiştirilmesi ya da ancak belli bir surette kullanılması koşullarından birine bağlı olarak geciktirilebilir.",
+      "explanation": "Geciktirme belli bir süre içindir. Bu süre içinde koşul yerine getirilmezse eşyanın mülkiyetinin kamuya geçirilmesine karar verilir.",
+      "articleRefs": [
+        "18"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Kamuya geçirilmesine karar verilen eşyanın mülkiyeti kime geçer?",
+      "back": "Kanunda açık hüküm bulunan hallerde ilgili kamu kurum ve kuruluşuna, aksi takdirde Devlete geçer.",
+      "explanation": "Karar ancak kesinleşirse yerine getirilir. Kesinleşinceye kadar eşyaya ilgili kamu kurum ve kuruluşunca elkonulabilir ya da eşya kişilerin muhafazasına bırakılabilir. Başka suretle değerlendirilmesi mümkün olmayan eşya imha edilir.",
+      "articleRefs": [
+        "18"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Nispî idarî para cezasını gerektiren kabahatlerde soruşturma zamanaşımı süresi kaç yıldır?",
+      "back": "Sekiz yıldır.",
+      "explanation": "Zamanaşımı süresi, kabahate ilişkin tanımdaki fiilin işlenmesiyle veya neticenin gerçekleşmesiyle işlemeye başlar. Süre dolarsa kişi hakkında idarî para cezasına karar verilemez.",
+      "articleRefs": [
+        "20"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Yüzbin Türk Lirası veya daha fazla idarî para cezasını gerektiren kabahatte soruşturma zamanaşımı süresi kaç yıldır?",
+      "back": "Beş yıldır.",
+      "explanation": "Ellibin Türk Lirası veya daha fazla idarî para cezasını gerektiren kabahatlerde süre dört yıl, Ellibin Türk Lirasından az idarî para cezasını gerektirenlerde üç yıldır. Fiil aynı zamanda suç oluşturuyorsa suça ilişkin dava zamanaşımı hükümleri uygulanır.",
+      "articleRefs": [
+        "20"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Karayolları Trafik Kanununda belirtilen ve idarî para cezası gerektiren bir fiilde ceza en geç ne zamana kadar verilip tebliğ edilmelidir?",
+      "back": "Fiilin işlendiği tarihi takip eden takvim yılının son günü bitimine kadar. Bu süre içinde verilip tebliğ edilmezse idarî yaptırım kararı verilemez, verilmiş olanlar düşer.",
+      "explanation": "Aynı özel kural, maddede sayılan Milletvekili Seçimi Kanunu, Karayolu Taşıma Kanunu ve Nüfus Hizmetleri Kanunu gibi kanunlarda belirtilen fiiller için de geçerlidir.",
+      "articleRefs": [
+        "20"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Mülkiyetin kamuya geçirilmesine ilişkin yerine getirme zamanaşımı süresi kaç yıldır?",
+      "back": "On yıldır.",
+      "explanation": "Yerine getirme zamanaşımı dolduktan sonra mülkiyetin kamuya geçirilmesine ilişkin karar artık yerine getirilemez.",
+      "articleRefs": [
+        "21"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Yerine getirme zamanaşımı süresi ne zamandan itibaren işlemeye başlar?",
+      "back": "Kararın kesinleşmesinin rastladığı takvim yılını takip eden takvim yılı başından itibaren işlemeye başlar.",
+      "explanation": "Kanun hükmü gereği idarî yaptırımın yerine getirilmesine başlanamazsa veya yaptırım yerine getirilemezse zamanaşımı işlemez.",
+      "articleRefs": [
+        "21"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Ellibin Türk Lirası veya daha fazla idarî para cezasına karar verilmişse yerine getirme zamanaşımı süresi kaç yıldır?",
+      "back": "Yedi yıldır.",
+      "explanation": "Yirmibin Türk Lirası veya daha fazla cezada süre beş yıl, Onbin Türk Lirası veya daha fazla cezada dört yıl, Onbin Türk Lirasından az cezada üç yıldır.",
+      "articleRefs": [
+        "21"
+      ]
+    }
+  ]
+}

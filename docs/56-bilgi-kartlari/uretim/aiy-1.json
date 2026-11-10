@@ -1,0 +1,229 @@
+{
+  "deck": {
+    "topicId": "61f85a6c-e9a1-4f19-85bc-dd8cbf04287e",
+    "legislationSlug": "6284-sayili-kanuna-iliskin-uygulama-yonetmeligi",
+    "sourceLabel": "AI bilgi kartı — 6284 Sayılı Kanuna İlişkin Uygulama Yönetmeliği md 1–10",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: resmî madde metni + çıkmış sorular)"
+  },
+  "cards": [
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Uygulama Yönetmeliği, 6284 sayılı Kanunun hangi maddesine dayanılarak hazırlanmıştır?",
+      "back": "Md 22'ye; Yönetmelik, 6284 sayılı Ailenin Korunması ve Kadına Karşı Şiddetin Önlenmesine Dair Kanunun bu maddesine dayanır.",
+      "explanation": "Dayanak kanun, 8/3/2012 tarihli ve 6284 sayılı Ailenin Korunması ve Kadına Karşı Şiddetin Önlenmesine Dair Kanundur.",
+      "articleRefs": [
+        "2"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Geçici koruma, hayati tehlikesi bulunan şiddet mağduru için hangi zaman esasına göre yürütülür?",
+      "back": "Yirmidört saat esasına göre ve kesintisiz yürütülür; kolluk gerektiğinde her türlü teknik cihaz ve donanımı kullanır.",
+      "explanation": "Geçici koruma, mağduru şiddet uygulayan veya uygulama tehlikesi bulunan kişilerden gelebilecek tehlikelerden korumak için kolluğun yerine getirdiği tedbirdir. Hayati tehlike ise bir kimsenin ölümle sonuçlanabilecek bir şiddet olayına maruz kalması ya da kalma ihtimalinin bulunmasıdır.",
+      "articleRefs": [
+        "3"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Şiddet mağdurunun kendisinin ilgili makama başvurması ihbar sayılır mı?",
+      "back": "Hayır, bu şikâyettir. İhbar, olayın üçüncü kişiler tarafından ilgili makam veya mercilere yazılı, sözlü veya başka bir suretle bildirilmesidir.",
+      "explanation": "Şikâyet, şiddet mağdurunun şiddet veya şiddet tehlikesi halinde ilgili makam veya mercilere müracaat etmesidir. İhbarda ise bildirimi yapan kişi üçüncü kişidir.",
+      "articleRefs": [
+        "3"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Gecikmesinde sakınca bulunan hal, kimin yapacağı tahkikat ve risk değerlendirmesi sonucunda ortaya çıkar?",
+      "back": "Kolluğun. Derhal işlem yapılmazsa sakıncalı ihtimaller doğar ve mülki amirden ya da hâkimden karar almak için yeterince vakit bulunamaz.",
+      "explanation": "Tanımdaki ihtimallerden bazıları şunlardır: şiddet eyleminin önlenememesi, kişinin can güvenliğinin tehlikeye girmesi, korunan kişinin zarar görmesi, iz, eser, emare ve delillerin kaybolması, şiddet uygulayanın kaçması veya kimliğinin tespit edilememesi. Karar alma ihtiyacı resen ya da ilgilinin talebi üzerine doğabilir.",
+      "articleRefs": [
+        "3"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Şiddet veya şiddete uğrama tehlikesinden haberdar olan kamu kurum ve kuruluşları durumu hangi mercilere bildirmek zorundadır?",
+      "back": "Şikâyet mercilerine ve derhal. Bu merciler arasında kolluk, mülki amir, Cumhuriyet başsavcılığı ve hâkim vardır.",
+      "explanation": "Aynı yükümlülük kamu kurumu niteliğindeki meslek kuruluşları için de geçerlidir. Şikâyet mercileri de Kanun kapsamındaki görevlerini gecikmeksizin yerine getirmekle yükümlüdür.",
+      "articleRefs": [
+        "4",
+        "3"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Bir kişinin şiddete uğradığını öğrenen herkes durumu ihbar etmek zorunda mıdır?",
+      "back": "Hayır, herkes ihbar edebilir; zorunluluk yoktur. Derhal bildirme zorunluluğu kamu kurum ve kuruluşları ile kamu kurumu niteliğindeki meslek kuruluşlarına aittir.",
+      "explanation": "Herkes durumu ilgili makam ve mercilere yazılı, sözlü veya başka bir suretle ihbar edebilir. Kamu kurum ve kuruluşları ile kamu kurumu niteliğindeki meslek kuruluşları ise durumu derhal şikâyet mercilerine bildirmek zorundadır.",
+      "articleRefs": [
+        "4"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Sözlü yapılan şikâyet ve ihbarlar için derhal hangi işlem yapılır?",
+      "back": "Tutanağa geçirilir; bu işlem derhal yapılır.",
+      "explanation": "Şiddet mağduru durumu şikâyet mercilerine yazılı, sözlü veya başka bir şekilde bildirebilir. Sözlü bildirim yapıldığında, kayıt altına alınması için derhal tutanak düzenlenir.",
+      "articleRefs": [
+        "4"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Kolluk, kendisine intikal eden her olay hakkında hangi merkeze bilgi verir?",
+      "back": "ŞÖNİM'e (Şiddet Önleme ve İzleme Merkezi); bilgiyi gecikmeksizin ve en seri vasıtalarla verir.",
+      "explanation": "ŞÖNİM, tercihen kadın personelin istihdam edildiği ve çalışmaların yedi gün yirmidört saat esasına göre yürütüldüğü merkezdir. Hâkim veya mülki amirin verdiği kararlar da ivedilikle ŞÖNİM'e bildirilir.",
+      "articleRefs": [
+        "5",
+        "3"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Kolluk, gecikmesinde sakınca bulunan hallerde aldığı koruyucu ve önleyici tedbirleri onaylanmak üzere kime sunar?",
+      "back": "Tedbirin niteliğine göre mülki amire veya hâkime sunar.",
+      "explanation": "Koruyucu tedbir kararı korunan kişi hakkında verilir. Önleyici tedbir kararı ise şiddet uygulayan veya uygulama tehlikesi bulunan kişi hakkında verilir. Olağan durumda kolluk, ihbar veya şikâyet üzerine genel hükümler doğrultusunda gerekli işlemleri yapar.",
+      "articleRefs": [
+        "5",
+        "3"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Mülki amir, kendisine yapılan ihbar veya şikâyeti kolluğa ya da Cumhuriyet başsavcılığına bildirebilir mi?",
+      "back": "Evet, olayın niteliğine göre bildirir. Ayrıca Kanun md 3'teki koruyucu tedbirlerden birine, birkaçına veya uygun görülecek benzer tedbirlere de karar verebilir.",
+      "explanation": "Mülki amir hem kendisi koruyucu tedbire karar verebilir hem de olayın niteliğine göre dosyayı kolluğa veya Cumhuriyet başsavcılığına iletir. Verdiği kararlar ivedilikle ŞÖNİM'e bildirilir.",
+      "articleRefs": [
+        "5"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Korunan kişi sosyal tesis, yurt ve benzeri yerlerde geçici olarak barındırıldığında barınma ve iaşe giderlerini kim öder?",
+      "back": "ŞÖNİM öder; geçici barınma bedeli ödenerek sağlanır.",
+      "explanation": "Kişinin güvenliğini, geçici barınmanın sağlandığı yerin kolluğu sağlar. Kişinin yerleştirildiği yere ilişkin bilgi ŞÖNİM'e bildirilir. ŞÖNİM, kişinin talebini de dikkate alarak uygun ilk kabul birimini veya konukevi hizmeti verilecek yeri belirler.",
+      "articleRefs": [
+        "7"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Mülki amirin veya kolluk amirinin kararıyla kamuya ait barınma yerine getirilen şiddet mağdurunun kabulü için ayrıca bir onay gerekir mi?",
+      "back": "Hayır. Başka herhangi bir karar veya onay aranmaz; mağdur barınma yerine derhal kabul edilir.",
+      "explanation": "Kamu kurum ve kuruluşlarına ait barınma yerleri, mülki amir veya kolluk amiri kararıyla getirilen şiddet mağdurunu bekletmeden kabul eder.",
+      "articleRefs": [
+        "7"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Hakkında resen barınma yeri sağlanması tedbiri verilen kişi barınma yerinde kalmak istemezse ne yapılır?",
+      "back": "Aydınlatılmış rızası alınır ve kişi kalmak istediği yere ŞÖNİM tarafından ulaştırılır. Hayati tehlikesi varsa kolluk refakati talep edilir.",
+      "explanation": "Aydınlatılmış rıza, korunan kişinin tedbir kararının sebepleri, aşamaları ve sonuçları hakkında anlayabileceği biçimde bilgilendirilmesidir. Kişinin özgür iradesiyle bunların tamamını anlayıp kabul ettiğine dair yazılı beyanını da kapsar.",
+      "articleRefs": [
+        "7",
+        "3"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Geçici maddi yardım bordrosu her ayın hangi günlerinde düzenlenir?",
+      "back": "Her ayın onbeşinde ve otuzunda düzenlenir; tahakkuk eden meblağ ilgililerin banka hesabına yatırılır.",
+      "explanation": "Bordro, kararın ŞÖNİM'e tebliğ edilmesinin ardından hazırlanır. Esas alınan bilgiler, korunan kişinin kimlik numarası ve banka hesap numarası beyanıdır. Ödemelere kararın geçerliliği süresince devam edilir.",
+      "articleRefs": [
+        "8"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 1,
+      "front": "Geçici maddi yardım korunan kişiye elden ödenebilir mi?",
+      "back": "Hayır, korunan kişiye elden ödeme yapılmaz. Tahakkuk eden meblağ bordroyla ilgililerin banka hesabına yatırılır.",
+      "explanation": "Ödeme, korunan kişinin kimlik numarası ve banka hesap numarası beyanına göre hazırlanan bordroyla yapılır. Ödeme evrakına karar örneği eklenir.",
+      "articleRefs": [
+        "8"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Aynı tedbir kararında birden fazla kişiye geçici maddi yardım yapılmasına karar verilirse ödeme nasıl yapılır?",
+      "back": "Bu kişiler aynı bordroda gösterilir ve ödemeler aynı banka hesap numarasına yapılır.",
+      "explanation": "Yardımın kaldırılmasına ya da değiştirilmesine karar verilirse ödeme, kararın geçerli olduğu gün üzerinden hesaplanır.",
+      "articleRefs": [
+        "8"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Korunan kişiye verilecek rehberlik, danışmanlık ve psikolojik destek hizmetlerinde koordinasyonu kim sağlar?",
+      "back": "ŞÖNİM sağlar; hizmetler ilgili kamu kurum ve kuruluşlarıyla işbirliği içinde verilir.",
+      "explanation": "Hizmetler, kişinin psikolojik ve sosyo-ekonomik durumu değerlendirilerek verilir. Kapsamında haklar, destek alınabilecek kurumlar, meslek edindirme kurslarına katılma ve iş bulma gibi konular ile psikolojik destek vardır.",
+      "articleRefs": [
+        "9"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Korunan kişinin hukuki rehberliğe ihtiyacı olduğunda verilen destek ve danışmanlık hizmeti neyi de içerir?",
+      "back": "İlgili davalara müdahil olmayı da içerir.",
+      "explanation": "Bu hukuki destek, korunan kişiye verilen diğer rehberlik ve danışmanlık hizmetleriyle birlikte yürütülür. Koordinasyonu ŞÖNİM sağlar.",
+      "articleRefs": [
+        "9"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Geçici koruma altındaki kişi, acil durum dışında gideceği yeri görevli ve yetkili kolluğa ne kadar önceden bildirir?",
+      "back": "Yirmidört saat öncesinden bildirir; acil durumlarda ise hemen bilgi verir.",
+      "explanation": "Görevli kolluk; korunan kişinin yerleşim yeri, bulunduğu yer veya tedbirin uygulanacağı yerdeki kolluktur. Bu kolluk, gidilecek yerdeki kolluğu gecikmeksizin haberdar eder ve tedbir kararı orada uygulanmaya devam eder.",
+      "articleRefs": [
+        "10"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Korunan kişiye uygulanacak fiziki koruma tedbirleri hangi yönetmelikte yer alan tedbirlerden belirlenir?",
+      "back": "Cumhuriyet Başsavcılıkları ve Mahkemelerce Alınacak Tanık Koruma Tedbirlerine İlişkin Esas ve Usuller Hakkında Yönetmelikteki fiziki koruma tedbirlerinden belirlenir.",
+      "explanation": "Bu tedbirleri hâkim veya mülki amir, gecikmesinde sakınca bulunan hallerde ise kolluk belirler. Belirlerken şiddet mağduruna yönelik muhtemel tehdit ve risk göz önüne alınır; mağdurun ve şiddet uygulayanın durumu değerlendirilir.",
+      "articleRefs": [
+        "10"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Geçici koruma kararının kapsamı ve korunan kişinin arayabileceği telefon numaraları gibi hususlar kişiye açıklandıktan sonra hangi işlem yapılır?",
+      "back": "Kolluk bu hususları tutanağa geçirir ve korunan kişiye tebliğ eder.",
+      "explanation": "Açıklanan hususlar arasında şunlar vardır: geçici koruma kararının kapsam ve içeriği, şiddet halinde arayabileceği telefon numaraları, kolluğun sorumlulukları, hangi durumlarda kolluğa bilgi vermesi gerektiği ve geçici koruma hizmetinden hangi kolluk biriminin sorumlu olduğu.",
+      "articleRefs": [
+        "10"
+      ]
+    }
+  ]
+}

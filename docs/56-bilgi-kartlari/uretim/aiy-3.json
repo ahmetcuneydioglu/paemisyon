@@ -1,0 +1,195 @@
+{
+  "deck": {
+    "topicId": "61f85a6c-e9a1-4f19-85bc-dd8cbf04287e",
+    "legislationSlug": "6284-sayili-kanuna-iliskin-uygulama-yonetmeligi",
+    "sourceLabel": "AI bilgi kartı — 6284 Sayılı Kanuna İlişkin Uygulama Yönetmeliği md 33–48",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: resmî madde metni + çıkmış sorular)"
+  },
+  "cards": [
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Mülki amirin verdiği koruyucu tedbir kararına yapılan itirazı inceleyen hâkim hangi kararları verebilir?",
+      "back": "Tedbir kararının kaldırılmasına, uygun görülecek başka bir tedbirle değiştirilmesine ya da aynen devamına karar verebilir.",
+      "explanation": "İtiraz, tefhim veya tebliğ tarihinden itibaren iki hafta içinde ilgililer tarafından aile mahkemesine yapılır. İtiraz üzerine verilen karar kesindir.",
+      "articleRefs": [
+        "33"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Mülki amirin koruyucu tedbir kararına itiraz edilecek yerde aile mahkemesi bulunmuyorsa hangi usul izlenir?",
+      "back": "Hâkimin tedbir kararlarına yapılan itirazda dosyanın gönderileceği mahkemeyi belirleyen usul izlenir. Dosya, itirazı inceleyecek mahkemeye gecikmeksizin gönderilir.",
+      "explanation": "Bu usule göre dosya şöyle gönderilir: Aile mahkemesinin birden fazla dairesi varsa numara olarak izleyen daireye gider. Tek dairesi varsa asliye hukuk mahkemesine gider. Aile mahkemesi hâkimi ile asliye hukuk mahkemesi hâkimi aynıysa en yakın asliye hukuk mahkemesine gider.",
+      "articleRefs": [
+        "33",
+        "34"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Mülki amirin tedbir kararına yapılan itiraz duruşma yapılarak mı karara bağlanır?",
+      "back": "Hayır; itiraz hakkında duruşma yapılmaksızın karar verilir. Hâkim gerekli görürse ilgilileri dinleyebilir; karar bir hafta içinde verilir ve kesindir.",
+      "articleRefs": [
+        "33"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Aile mahkemesinin birden fazla dairesi bulunan yerde, hâkimin verdiği tedbir kararına itiraz dosyası hangi daireye gönderilir?",
+      "back": "Numara olarak kendisini izleyen daireye gönderilir. Kararı son numaralı daire verdiyse dosya birinci daireye gider.",
+      "explanation": "O yerde aile mahkemesinin tek dairesi varsa dosya asliye hukuk mahkemesine gönderilir. İtiraz, tefhim veya tebliğ tarihinden itibaren iki hafta içinde ilgililer tarafından yapılır.",
+      "articleRefs": [
+        "34"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Asıl dava ile birlikte talep edilen tedbirler hakkında verilen kararlara nasıl itiraz edilir?",
+      "back": "Esas davadan bağımsız olarak itiraz edilir. Dosya, itiraz merciine gönderilme usulüne göre işlem görür.",
+      "explanation": "İtirazı inceleyen merci şu kararları verebilir: itiraz talebinin kabulü veya reddi, tedbirin kaldırılması, başka bir tedbirle değiştirilmesi ya da aynen devamı. Karar bir hafta içinde verilir ve kesindir.",
+      "articleRefs": [
+        "34"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Önleyici tedbir kararının uygulanmasını kontrol eden kolluk, korunan kişinin bulunduğu konutu en az ne sıklıkta ziyaret eder?",
+      "back": "Haftada en az bir kez. Kontrol karar süresince devam eder.",
+      "explanation": "Kontrol şu yollarla da yapılır: ikinci derece dâhil yakınlarla iletişim kurmak, komşuların bilgisine başvurmak, muhtardan bilgi almak ve konutun çevresinde araştırma yapmak. Aykırılık tespit edilirse tutanak tutulur ve Cumhuriyet başsavcılığına gönderilir.",
+      "articleRefs": [
+        "35"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Tedbir kararlarının alınması ve uygulanmasına ilişkin işlemlerin aşamaları ve sonucu, Şiddet Önleme ve İzleme Merkezine (ŞÖNİM) en geç ne zaman bildirilir?",
+      "back": "Aynı gün en geç saat 16.00'ya kadar. Bildirimi ilgili kurum en seri vasıtalarla yapar.",
+      "explanation": "Kanun kapsamındaki başvurular da bu merkeze bildirilir. Bu başvuruların kabul ya da reddine ilişkin kararlar da aynı şekilde bildirilir. Bildirimi başvuru yapılan merci gecikmeksizin yapar.",
+      "articleRefs": [
+        "35"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Kolluğun tedbir kararının ihlalini tespit ederek tuttuğu tutanak nereye iletilir?",
+      "back": "Cumhuriyet başsavcılığına iletilir. Başsavcılık da tutanağı ivedilikle aile mahkemesine gönderir.",
+      "explanation": "İhlali aile mahkemesi kendisi tespit ederse başka bir işleme gerek kalmaz; mahkeme resen zorlama hapsine karar verebilir.",
+      "articleRefs": [
+        "38"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Tedbir kararı, karar veren mahkemenin yargı alanı dışında ihlal edilirse zorlama hapsi kararından önce ne yapılır?",
+      "back": "Kararı veren mahkemeden, aynı tedbir için daha önce zorlama hapsine karar verilip verilmediği sorulur. Amaç mükerrerliği önlemektir; karar verilen bilgiye göre verilir.",
+      "explanation": "İhlal, tedbire karar veren mahkemenin yargı alanı içindeyse zorlama hapsi kararını bu mahkeme verir.",
+      "articleRefs": [
+        "38"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Zorlama hapsine karar verilebilmesi için şiddet uygulayana ne tefhim veya tebliğ edilmiş olmalıdır?",
+      "back": "İçinde ihtar bulunan tedbir kararı tefhim veya tebliğ edilmiş olmalıdır. Bu ihtar, karara aykırı davranırsa hakkında zorlama hapsi uygulanacağını bildirir.",
+      "explanation": "Zorlama hapsine ilişkin kararlar duruşma yapılmaksızın verilir; hâkim gerekli görürse ilgilileri dinleyebilir. Bu kararlar tekerrüre esas olmaz ve adli sicil kayıtlarına işlenmez. Koşullu salıverilme hükümleri de uygulanmaz.",
+      "articleRefs": [
+        "38"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Şiddet Önleme ve İzleme Merkezinde (ŞÖNİM) hangi hizmetler verilir?",
+      "back": "Güçlendirici ve destekleyici danışmanlık, rehberlik, yönlendirme ve izleme hizmetleri verilir. Bu hizmetler koruyucu ve önleyici tedbirlerin etkin uygulanmasına yöneliktir.",
+      "explanation": "Merkezi Bakanlık kurar. Merkezde yeterli ve gerekli uzman personel görev yapar; tercihen kadın personel istihdam edilir. Çalışmalar yedi gün yirmidört saat esasına göre yürütülür.",
+      "articleRefs": [
+        "39"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Kanunun uygulanmasında kurumlar arası koordinasyonu ve sivil toplum kuruluşlarıyla koordinasyonu kim gerçekleştirir?",
+      "back": "Bakanlık.",
+      "explanation": "Kamu kurum ve kuruluşları ile diğer gerçek ve tüzel kişiler, kendi görev alanlarında işbirliği ve yardımda bulunmakla yükümlüdür. Alınan tedbir kararlarını da ivedilikle yerine getirmek zorundadırlar.",
+      "articleRefs": [
+        "40"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "İlköğretim ve ortaöğretim müfredatına eklenen kadının insan hakları ve kadın erkek eşitliği derslerinin içeriğini kim hazırlar?",
+      "back": "Milli Eğitim Bakanlığının ilgili birimi ile Kadının Statüsü Genel Müdürlüğü (Yönetmelikte: Genel Müdürlük) birlikte hazırlar.",
+      "articleRefs": [
+        "41"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Bakanlığın görev alanındaki sosyal sorumluluk projelerine teşvik edilen ortaöğretim ve yükseköğrenim öğrencilerine mezuniyette ne verilir?",
+      "back": "Bir sertifika verilir. Sertifikayı Bakanlık ile Milli Eğitim Bakanlığı ya da Yükseköğretim Kurumu hazırlar.",
+      "articleRefs": [
+        "41"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Geçici maddi yardım için yapılan ödemenin tahsilinde, şiddet uygulayana ödeme için ne kadar süre tanınır?",
+      "back": "Tebliğ tarihinden itibaren bir ay. Ödeme tutarı ve ödemenin yapılacağı yer de kendisine tebliğ edilir.",
+      "articleRefs": [
+        "42"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Geçici maddi yardım tutarını süresinde ödemeyen şiddet uygulayandan bu tutarı kim takip ve tahsil eder?",
+      "back": "İlgili vergi dairesi takip ve tahsil eder. Bunu 6183 sayılı Amme Alacaklarının Tahsil Usulü Hakkında Kanun hükümlerine göre yapar.",
+      "articleRefs": [
+        "42"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Korunan kişinin gerçeğe aykırı beyanda bulunduğu tespit edilirse, şiddet uygulayandan tahsil edilmiş tutar kime iade edilir?",
+      "back": "Şiddet uygulayana iade edilir. Yapılan ödemeler ise kendisine ödeme yapılan kişiden 6183 sayılı Kanuna göre tahsil edilir.",
+      "explanation": "Gerçeğe aykırı beyan, müdürlüğe yapılan ihbar üzerine ya da kararların uygulanması izlenirken tespit edilebilir. Bu durumda tutanak tutulur ve sosyal inceleme raporu düzenlenir.",
+      "articleRefs": [
+        "42"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "İcra müdürlüklerinin nafakanın tahsili işlemlerine ilişkin posta giderleri nereden karşılanır?",
+      "back": "Cumhuriyet başsavcılığının suçüstü ödeneğinden karşılanır. Ayrıca harç ve benzeri hiçbir ad altında masraf alınmaz.",
+      "articleRefs": [
+        "43"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Kimlik ve adres bilgilerinin gizlenmesi kararı bulunan korunan kişi sağlık hizmetlerinden nasıl yararlanır?",
+      "back": "Başvurusu gizli tutulur ve sıra beklemez. İşlemleri öncelikli olarak ve en kısa zamanda tamamlanır.",
+      "articleRefs": [
+        "44"
+      ]
+    }
+  ]
+}

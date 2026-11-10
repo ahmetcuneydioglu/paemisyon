@@ -1,0 +1,233 @@
+{
+  "deck": {
+    "topicId": "55edda12-a684-4664-9564-a9844de0b7f3",
+    "legislationSlug": "adli-kolluk-yonetmeligi",
+    "sourceLabel": "AI bilgi kartı — Adli Kolluk Yönetmeliği md 1–15",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: resmî madde metni + çıkmış sorular)"
+  },
+  "cards": [
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Adlî Kolluk Yönetmeliğinin düzenlediği konular arasında neler vardır?",
+      "back": "Adlî kolluğun çalışma esasları, görevlilerin nitelikleri, adlî işlemlerinin denetimi, hizmet öncesi ve hizmet içi eğitimi ile değerlendirme raporlarının düzenlenmesi bunlar arasındadır.",
+      "explanation": "Yönetmelik ayrıca görevlilerin diğer hizmet birimleriyle ilişkilerini ve uzmanlık dallarına göre hangi bölümlerde çalıştırılacaklarını da düzenler.",
+      "articleRefs": [
+        "1"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Adlî Kolluk Yönetmeliği, Ceza Muhakemesi Kanununun kaçıncı maddesine dayanılarak hazırlanmıştır?",
+      "back": "167 nci madde. Yönetmeliğin dayanağı, 5271 sayılı Ceza Muhakemesi Kanununun bu maddesidir.",
+      "articleRefs": [
+        "2"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Adlî kolluk sorumlusunu kim görevlendirir?",
+      "back": "Mahallin en büyük mülki idare amiri. Görevlendirdiği kişi adlî kolluğun komutanı, amiri veya sorumlusudur.",
+      "articleRefs": [
+        "3"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Emniyet Genel Müdürlüğünde \"en üst dereceli kolluk amiri\" kimdir?",
+      "back": "İl emniyet müdürü ile ilçe emniyet müdürü veya amiri.",
+      "articleRefs": [
+        "3"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Emniyet Genel Müdürlüğü, soruşturma yapmak üzere adlî kolluk personelini hangi yerlerde görevlendirir?",
+      "back": "Asgarî tam teşekküllü bir polis karakolu bulunan yerlerde. Mevcut imkânlar ölçüsünde yeterince personel görevlendirilir.",
+      "articleRefs": [
+        "4"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Adlî görevlerle ilgili emir ve talimatları, kolluk birimlerinin işbölümüne ve görev-yetki alanlarına göre mülki idare amiri mi verir?",
+      "back": "Hayır. Bu emir ve talimatları Cumhuriyet savcıları verir; kolluk birimlerinin aralarındaki işbölümü ile kolluk teşkilâtlarının görev ve yetki alanları esas alınır.",
+      "explanation": "Mülki idare amirinin bu maddedeki rolü bildirimdir. En üst dereceli kolluk amiri, adlî olayları, suç işlenmesini önlemek, kamu düzen ve güvenini korumakla görevli mülki idare amirine derhal bildirir. Cumhuriyet başsavcılığı ise adlî görevlere ilişkin emir ve talimatlarını öncelikle adlî kolluk sorumlularına veya adlî kolluk görevi ifa eden diğer birim âmirlerine verir.",
+      "articleRefs": [
+        "5"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Adlî kolluğun öncelikli görevi nedir?",
+      "back": "Karşılaştığı suçun işlenmesini önlemek. Adlî kolluk, bağlı bulunduğu kolluk teşkilâtının bir parçasıdır.",
+      "explanation": "Adlî kolluk görevlileri, kadrolarında yer aldıkları birimlere mevzuatla verilmiş ve adlî görev kapsamı dışında kalan görev ve hizmetleri de yerine getirir. Özlük hakları da bağlı oldukları teşkilât tarafından yürütülür.",
+      "articleRefs": [
+        "5"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Adlî görevi bulunmayan bir üst, yürütülen soruşturmayla ilgili olarak adlî kolluk görevlisine emir ve talimat verebilir mi?",
+      "back": "Hayır. Adlî görevi bulunmayan üstler yürütülen soruşturmayla ilgili emir ve talimat veremez. Adlî görevler dışındaki hizmetlerde ise adlî kolluk üstlerinin emrindedir.",
+      "explanation": "Madde bu yasağı koyarken Yönetmeliğin 7 nci maddesi hükümlerini saklı tutar.",
+      "articleRefs": [
+        "5"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Adlî kolluk görevlileri, kendilerine yapılan bir suç ihbarını derhâl kime bildirir?",
+      "back": "Cumhuriyet başsavcılığına ve en üst dereceli kolluk amirine. Ardından ilgili Cumhuriyet savcısının emri doğrultusunda soruşturma işlemlerine başlar.",
+      "explanation": "Aynı bildirim şikâyetler, el konulan olaylar, yakalanan kişiler ve uygulanan tedbirler için de yapılır. En üst dereceli kolluk amiri, adlî kolluk görevlileri üzerinde gözetim, denetim ve planlama yapmaya, gerektiğinde diğer idari tedbirleri almaya ve iş bölümü yapmaya yetkilidir.",
+      "articleRefs": [
+        "6"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Olay yerinde işlemlere engel olan kişi, adlî kolluk görevlisince doğrudan zor kullanılarak uzaklaştırılabilir mi?",
+      "back": "Hayır. Kişi önce sözlü olarak ikâz edilir. Uymazsa zor kullanılarak olay yerinden uzaklaştırılır; ısrar ederse yakalama işlemi uygulanır.",
+      "explanation": "Aynı sıra, görevlinin yetkisi içinde aldığı tedbirlere aykırı davrananlar için de uygulanır ve işlemler sonuçlanıncaya kadar geçerlidir.",
+      "articleRefs": [
+        "6"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Adlî kolluk görevini yerine getiren diğer kolluk birimlerinin görevlilerine, adlî görevleri dolayısıyla hangi kanunun hükümleri uygulanır?",
+      "back": "Ceza Muhakemesi Kanunu hükümleri.",
+      "articleRefs": [
+        "7"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Adlî kollukta her hizmet bölümü için gerekli koşullar nerede belirtilir?",
+      "back": "Kanunda veya kolluk birimlerinin bağlı bulundukları bakanlıklarca çıkarılan mevzuatta.",
+      "explanation": "Adlî kolluk görevlileri, kolluk görevlilerinin ilgili mevzuatına göre taşıması gereken niteliklere sahip olmalıdır. Yüklendikleri görevlerin gerektirdiği bilgi ve vasıfları taşımaları da sağlanır.",
+      "articleRefs": [
+        "8"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Adlî kolluğa verilen hizmet içi eğitimde hangi hedefler gözetilir?",
+      "back": "Hizmet öncesi eğitimin eksikliklerini tamamlamak, personelin gördüğü hizmetle ilgili değişiklik ve gelişmelere uyumunu sağlamak, hizmet dallarında çalıştırılacak personel ihtiyacını karşılamak.",
+      "explanation": "Hizmet içi eğitim, hizmet öncesi eğitimde verilen temel konular yanında, yüklenilen görevin içeriğine uygun alanlarda verilir.",
+      "articleRefs": [
+        "9"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Adlî kolluk görevlilerinin eğitiminde, kolluğun bağlı olduğu Bakanlık talep ettiğinde eğitici personeli İçişleri Bakanlığı mı görevlendirir?",
+      "back": "Hayır. Kolluğun bağlı olduğu Bakanlık talep ederse eğitici personeli Adalet Bakanlığı görevlendirir.",
+      "articleRefs": [
+        "9"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Adlî kolluğun hizmet içi eğitimleri planlanırken kimlerin görüşleri de alınır?",
+      "back": "Adalet Bakanlığının veya yetkili Cumhuriyet başsavcısının.",
+      "articleRefs": [
+        "9"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Adlî görevlere yalnız sertifikası olan kolluk personeli mi görevlendirilebilir?",
+      "back": "Hayır. Sertifikası olan personel öncelikli olarak görevlendirilir. Sertifikayı, adlî kolluk eğitimini başarıyla bitirene ilgili eğitim birimleri verir.",
+      "articleRefs": [
+        "10"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Cumhuriyet başsavcıları, adlî kolluk sorumluları hakkında düzenledikleri değerlendirme raporunu kime gönderir?",
+      "back": "Mülki idare amirlerine. Rapor her yılın sonunda düzenlenir.",
+      "articleRefs": [
+        "11"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Birden fazla Cumhuriyet başsavcılığının yetki çevresinde faaliyet gösteren adlî kolluk sorumlusunun değerlendirme raporunu kim düzenler?",
+      "back": "Adlî kolluk biriminin merkezinin bulunduğu yer Cumhuriyet başsavcısı. Diğer yer Cumhuriyet başsavcılıklarının görüşü de alınır.",
+      "articleRefs": [
+        "11"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Adlî kolluk görevlileri belirli branşlarda hangi yolla ihtisaslaşır?",
+      "back": "Yürütülecek soruşturmalarla ilgili olarak katılacakları meslek içi kurslar sonunda.",
+      "explanation": "Uzmanlaşma için personelin mümkün olduğunca aynı veya benzer görevlerde çalışması amacıyla kendi teşkilâtlarınca gerekli tedbirler alınır.",
+      "articleRefs": [
+        "12"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Olayın özelliğine göre, soruşturmada ihtiyaç duyulan konularda ihtisaslaşmış personeli kim görevlendirir?",
+      "back": "Kolluk âmiri. Böylece soruşturmanın daha kapsamlı yapılmasını sağlar.",
+      "articleRefs": [
+        "12"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Adlî kolluk görevlilerinin yaptığı adlî işlemleri denetleme yetkisi kimdedir?",
+      "back": "Cumhuriyet başsavcıları ve Cumhuriyet savcılarındadır. Bu işlemleri her zaman denetlerler.",
+      "explanation": "Denetimin amacı, adlî kolluk hizmetlerinin etkin ve verimli yürütülmesidir.",
+      "articleRefs": [
+        "13"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Cumhuriyet savcısı, yürütülen soruşturmanın evrakını yalnız Cumhuriyet başsavcılığına getirterek mi inceleyebilir?",
+      "back": "Hayır. Evrakı gerektiğinde ilgili adlî kolluk biriminde inceleyebilir ve eksik gördüğü hususların ikmalini emredebilir. Evrakın ve tarafların bulunduğu hâl üzere başsavcılığa intikal ettirilmesi talimatını da verebilir.",
+      "articleRefs": [
+        "13"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Adlî Kolluk Yönetmeliğinin hükümlerini kim yürütür?",
+      "back": "Adalet ve İçişleri Bakanları birlikte yürütür.",
+      "articleRefs": [
+        "15"
+      ]
+    }
+  ]
+}

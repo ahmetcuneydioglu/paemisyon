@@ -1,0 +1,251 @@
+{
+  "deck": {
+    "topicId": "980956db-8563-41cc-b9f1-e409a5d4e283",
+    "legislationSlug": "adli-ve-onleme-aramalari-yonetmeligi",
+    "sourceLabel": "AI bilgi kartı — Adli ve Önleme Aramaları Yönetmeliği md 1–13",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: resmî madde metni + çıkmış sorular)"
+  },
+  "cards": [
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Adlî ve Önleme Aramaları Yönetmeliğinin amacı nedir?",
+      "back": "Kanunlarla düzenlenen adlî ve önleme aramasına karar verme yetkisini göstermek. Aramaların uygulanmasında uyulacak esas ve usulleri göstermek de bu amaca girer.",
+      "articleRefs": [
+        "1"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Adlî ve Önleme Aramaları Yönetmeliği hangi aramalarda uyulacak esas ve usulleri kapsar?",
+      "back": "Kolluğun yaptığı aramaları kapsar: kişilerin üstlerinin, eşyasının, araçlarının, özel kâğıtlarının, konut, işyeri ve eklentilerinin aranması.",
+      "articleRefs": [
+        "2"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Suç işlenmesinin önlenememesi ihtimali, adlî aramalar bakımından gecikmesinde sakınca bulunan hâl tanımında yer alır mı?",
+      "back": "Hayır; bu ihtimal önleme aramaları bakımından sayılır. Adlî aramalarda ise suçun iz, eser, emare ve delillerinin kaybolması, şüphelinin kaçması veya kimliğinin tespit edilememesi ihtimali aranır.",
+      "explanation": "İki tanımın ortak şartı, gerektiğinde hâkimden karar almak için vakit bulunmamasıdır. Önleme aramaları bakımından şu ihtimaller de sayılır: millî güvenlik ve kamu düzeninin, genel sağlık ve genel ahlâkın veya başkalarının hak ve hürriyetlerinin korunmasının tehlikeye girmesi ya da taşınması veya bulundurulması yasak olan silâh, patlayıcı madde veya eşyanın tespit edilememesi.",
+      "articleRefs": [
+        "4"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Eşyayı zilyedinin kendiliğinden vermesi ya da eşyanın el konulana kadar geçici olarak alıkonulması hangi kavramla ifade edilir?",
+      "back": "Koruma altına alma.",
+      "explanation": "El koyma ise zilyedin rızası olmamasına rağmen eşya üzerindeki tasarruf yetkisinin kaldırılması işlemidir. Suçun veya tehlikelerin önlenmesi amacıyla ya da eşya suçun delili olabileceği veya müsadereye tâbi olduğu için yapılır.",
+      "articleRefs": [
+        "4"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Adlî arama, kişinin hangi hayatının gizliliği sınırlandırılarak yapılan bir araştırma işlemidir?",
+      "back": "Özel hayatının ve aile hayatının gizliliği sınırlandırılarak yapılır.",
+      "explanation": "Arama; konutta, işyerinde, kişiye ait diğer yerlerde, üzerinde, özel kâğıtlarında, eşyasında ve aracında yapılır. Dayanağı 5271 sayılı Ceza Muhakemesi Kanunu ile diğer kanunlardır.",
+      "articleRefs": [
+        "5"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Adlî aramada kişinin özel kâğıtları aranabilir mi?",
+      "back": "Evet; özel kâğıtlar, adlî aramanın yapılabileceği yerler arasında açıkça sayılır.",
+      "explanation": "Adlî aramanın iki amacı vardır. Birincisi şu kişilerin yakalanmasıdır: suç işlemek, suça iştirak etmek veya yataklık etmek makul şüphesi altındaki kimse, saklanan, şüpheli, sanık veya hükümlü. İkincisi suçun iz, eser, emare veya delillerinin elde edilmesidir.",
+      "articleRefs": [
+        "5"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Makul şüphe nasıl tanımlanır?",
+      "back": "Hayatın akışına göre somut olaylar karşısında genellikle duyulan şüphedir.",
+      "articleRefs": [
+        "6"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Bir ihbar veya şikâyete dayanan makul şüphe için ne gerekir?",
+      "back": "İhbar veya şikâyeti destekleyen emarelerin var olması gerekir.",
+      "explanation": "Şüphenin somut olgulara dayanması şarttır. Arama sonunda belirli bir şeyin bulunacağını veya belirli bir kişinin yakalanacağını öngörmeyi gerektiren somut olgular mevcut bulunmalıdır.",
+      "articleRefs": [
+        "6"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Kolluk memurunun taşındığından şüphe ettiği eşyanın niteliği, makul şüphe belirlenirken dikkate alınır mı?",
+      "back": "Evet; aramanın yapılacağı zaman ve yer de dikkate alınır. İlgili kişinin veya onunla birlikte olanların davranış, tutum ve biçimleri de göz önünde tutulur.",
+      "explanation": "Bu sebepler göz önünde tutularak makul şüphe belirlenir. Şüphenin somut olgulara dayanması şarttır.",
+      "articleRefs": [
+        "6"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Cumhuriyet savcısına ulaşılamadığı için kolluk âmirinin yazılı emriyle yapılan arama ve elkoymadan sonra hangi tutanak düzenlenir?",
+      "back": "Neden Cumhuriyet savcısına ulaşılamadığını ve savcının hangi vasıtalarla arandığını belirten ayrıntılı tutanak; ilgili soruşturma evrakına eklenir.",
+      "explanation": "Kolluk âmirlerince konutta, iş yerinde ve kamuya açık olmayan kapalı alanlarda arama kararı verilemez.",
+      "articleRefs": [
+        "7"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Cumhuriyet başsavcılıklarınca, arama ile ilgili kararları vermek üzere nöbetçi Cumhuriyet savcısı ne kadar süreyle görevlendirilir?",
+      "back": "24 saat süreyle görevlendirilir.",
+      "explanation": "Kolluk arama kararı talep ederken makul şüphe sebeplerini belirten ayrıntılı ve gerekçeli bir rapor hazırlar. Bu raporla Cumhuriyet savcısına başvurur.",
+      "articleRefs": [
+        "7"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Arama talep, karar veya emrinde, aranılacak eşyanın elde edilmesi hâline ilişkin hangi husus açıkça gösterilir?",
+      "back": "Eşyaya el konulup konulmayacağı açıkça gösterilir.",
+      "explanation": "Talep, karar veya emirde şunlar da açıkça gösterilir: aramanın nedenini oluşturan fiil, aranılacak kişi, aramanın yapılacağı konut veya diğer yerin adresi ya da eşya ve karar veya emrin geçerli olacağı zaman süresi.",
+      "articleRefs": [
+        "7"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Yakalanan kişinin kendisine, başkalarına veya yakalamayı yapan kolluk görevlilerine zarar vermesini önlemek için yapılan ve ayrıca karar gerektirmeyen arama hangisidir?",
+      "back": "Kaba üst araması. Kişinin hâkim kararıyla, Cumhuriyet savcısının yazılı emriyle ya da doğrudan kolluk tarafından yakalanmış olması fark etmez.",
+      "explanation": "Gözaltına alınan kişinin nezarethaneye konmadan önce yapılan üst araması için de ayrıca bir arama emri ya da kararı aranmaz.",
+      "articleRefs": [
+        "8"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Hakkında zorla getirme kararı bulunan kişinin yakalanması amacıyla aracında arama yapmak için ayrıca arama kararı gerekir mi?",
+      "back": "Hayır. Bu kişinin yakalanması amacıyla konutunda, işyerinde, yerleşim yerinde, bunların eklentilerinde ve aracında yapılan aramada ayrıca emir ya da karar aranmaz.",
+      "explanation": "Aynı kural, hakkında tutuklama kararı bulunan kişi ve gıyabî tutuklama kararı verilen kaçak için de geçerlidir. Bu kişiler yakalandığında üstleri de karar gerekmeden aranır.",
+      "articleRefs": [
+        "8"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Kapalı bir yerden gelen yardım çağrısı üzerine konuta girmek için ayrıca arama emri ya da kararı gerekir mi?",
+      "back": "Hayır; kapalı yerlerden gelen yardım çağrıları üzerine konut, işyeri ve yerleşim yeri ile eklentilerine girmek için ayrıca emir ya da karar aranmaz.",
+      "explanation": "Toplum için veya kişiler bakımından hayatî tehlikeyi ortadan kaldırmak amacıyla girişte de aynı kural geçerlidir. Suçüstü hâlinde yapılan aramalar da bu kapsamdadır. 5237 sayılı Türk Ceza Kanununun 24, 25 ve 26 ncı maddelerindeki hukuka uygunluk sebepleriyle yapılan aramalar da kapsama girer.",
+      "articleRefs": [
+        "8"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Herkesin girip çıkabileceği kamuya açık bir alanda olay yeri inceleme yapmak için kolluk âmirinin yazılı emri gerekir mi?",
+      "back": "Hayır; herkesin girip çıkabileceği kamuya açık alanlarda bu işlemler için bir emir veya karar gerekmez.",
+      "explanation": "Olay yeri inceleme, suç işlenen yerlerde yürütülen bilimsel ve teknik araştırma işlemleridir. Amacı, sebep ve sonuç ilişkisini ortaya koyacak delilleri aramak, bulmak ve bunlara el koymaktır.",
+      "articleRefs": [
+        "9"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Kamuya açık alanlar dışındaki olay yeri incelemesinde Cumhuriyet savcısına ulaşılamazsa, kolluk âmirinin yazılı emriyle hangi yerler dışında inceleme yapılabilir?",
+      "back": "Konut, işyeri ve kamuya açık olmayan kapalı alanlar dışında yapılabilir.",
+      "explanation": "Kamuya açık alanlar dışındaki incelemeler hâkimin kararıyla ya da gecikmesinde sakınca bulunan hâllerde Cumhuriyet savcısının emriyle yapılır. Kolluk âmirinin yazılı emri ancak savcıya ulaşılamadığında ve sayılan yerler dışında devreye girer.",
+      "articleRefs": [
+        "9"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Usulüne uygun bir aramada, karar veya yazılı emirde konu edilmeyen bir delil elde edilirse ilk olarak ne yapılır?",
+      "back": "Delil koruma altına alınır ve durum Cumhuriyet başsavcılığına derhâl bildirilir. El koyma için Cumhuriyet savcısından yeni bir yazılı emir istenir.",
+      "explanation": "Bu usul iki tür delil için uygulanır: soruşturmayla ilgili olup emirde konu edilmeyen delil ve soruşturmayla ilgisiz olup başka bir suçun işlendiği şüphesini uyandıran delil. Cumhuriyet savcısına ulaşılamazsa kolluk âmirinin yazılı emriyle el konulabilir.",
+      "articleRefs": [
+        "10"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Adlî arama tutanağı kimlerce imzalanır?",
+      "back": "Arama işlemine katılmış olanlar ve hazır bulunanlarca imzalanır; tutanağın bir sureti ilgiliye verilir.",
+      "explanation": "Tutanakta arama işlemini yapanların adı, soyadı, sicili ve unvanı yer alır. Arama sonucunda yaralanma veya maddî bir zarar meydana gelip gelmediği de tutanağa yazılır.",
+      "articleRefs": [
+        "11"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Su üstü aracında yapılan adlî aramada, tutanağa araca ilişkin hangi bilgiler yazılır?",
+      "back": "Su üstü aracının cinsi, ismi, sahibi ve kullananı yazılır.",
+      "explanation": "Deniz aracının aranması hâlinde şu bilgiler yazılır: deniz aracının cinsi, ismi, donatanı, bağlama limanı, tonajı, acentesi, kaptanı ve arama mevkiî. Karadaki araç için aracın plaka numarası ve markası tutanağa geçer.",
+      "articleRefs": [
+        "11"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Arama sonunda, hakkında arama işlemi uygulanan kişiye belge hangi durumda verilir?",
+      "back": "Kişinin talebi hâlinde verilir.",
+      "explanation": "Belgede şunlar yer alır: aramanın sebebi veya amacı, soruşturma veya kovuşturma konusu fiilin niteliği ve el konulan veya koruma altına alınan eşyanın listesi. Şüpheyi haklı kılan bir şey elde edilmemişse bu husus da yazılır. Kişinin el konulan eşyanın mülkiyetine ilişkin görüş ve iddiaları da belgeye geçer.",
+      "articleRefs": [
+        "12"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Koruma altına alınan veya el konulan eşyanın listesine hangi işlem uygulanır?",
+      "back": "Eşyanın tam bir listesi yapılarak resmî mühürle mühürlenir. Mühürlendiğine dair bir tutanak düzenlenir ve tutanağın bir sureti ilgilisine verilir.",
+      "articleRefs": [
+        "12"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Cumhuriyet savcısı hazır olmadan avukat bürosunda arama yapılabilir mi?",
+      "back": "Hayır. Cumhuriyet savcısı hazır olmaksızın avukat bürolarında arama yapılamaz.",
+      "explanation": "Avukat büroları ancak mahkeme kararı ile ve kararda belirtilen olayla ilgili olarak Cumhuriyet savcısının denetiminde aranabilir; baro başkanı veya onu temsil eden bir avukat aramada hazır bulundurulur.",
+      "articleRefs": [
+        "13"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Avukat bürosunda el konulan şeyin meslekî ilişkiye ait olduğu ileri sürülerek karşı konulursa, soruşturma evresinde gerekli karar kimden istenir?",
+      "back": "Sulh ceza hâkiminden istenir; kovuşturma evresinde ise hâkim veya mahkemeden istenir.",
+      "explanation": "Karşı koyma üzerine o şey ayrı bir zarf veya paket içine konur ve hazır bulunanlarca mühürlenir. Yetkili hâkim meslekî ilişkiye ait olduğunu tespit ederse şey derhâl avukata iade edilir. Yapılan işlemi belirten tutanaklar da ortadan kaldırılır.",
+      "articleRefs": [
+        "13"
+      ]
+    }
+  ]
+}

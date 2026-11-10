@@ -81,6 +81,12 @@ KESİN KURALLAR
    "Ancak", "bununla birlikte" ile başlayan istisna cümlesini doğru kurala bağla: istisna hangi kaydı kaldırıyorsa
    onu söyle (md 78'de yüzde beş hali 30 ay kaydının istisnasıdır; 1 yıl kala yasağını kaldırmaz). Ön yüzde tek soru
    sor; "ve" ile iki soruyu birleştirme. Cevap, maddedeki yetkiyi başka kuruma yükleme (yetki kimdeyse o).
+   YÖNETMELİK destelerinde: yönetmelik bir kanun maddesini (CMK, PVSK…) kelimesi kelimesine tekrarlıyorsa o kuralı
+   kart yapma (kanun destesinde zaten var); yalnız yönetmeliğe özgü ayrıntıyı sor (form, tutanak, defter, görevli,
+   işlem sırası, ölçü). Yönetmelik hükmü üst kanunun bilinen güncel metninden geri kalmış görünüyorsa (eski süre,
+   eski merci, kanunun sonradan değiştirdiği eşik) o hükümden kart yazma. Kalkmış düzene atıf yapan bölge valiliği
+   gibi hiç kurulmamış kurumların yetkilerinden kart yazma. Liste veren açıklamada liste eksikse "…arasında",
+   "bazıları" kalıbını kullan; "şunlardır" deme. Ön yüzde kural birden çok hâle açıksa hâli ön yüzde belirt.
 2. "back" ve "explanation" içindeki her SAYI (rakam ya da yazıyla: 600, üç, yüzde beş, 15 gün) ya referans maddenin
    metninde geçer ya da "derivedNumbers" içinde açık formülle türetilir:
    {"value":301,"expr":"floor(600 / 2) + 1","refs":["75","84"],"note":"üye tamsayısının salt çoğunluğu"}.

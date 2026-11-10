@@ -1,0 +1,294 @@
+{
+  "deck": {
+    "topicId": "3f91916c-8d15-40f4-bb20-5bcca9253c34",
+    "legislationSlug": "2918-sayili-karayollari-trafik-kanunu",
+    "sourceLabel": "AI bilgi kartı — 2918 Sayılı Karayolları Trafik Kanunu md 9–20",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: resmî madde metni + çıkmış sorular)"
+  },
+  "cards": [
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Çocuklar için trafik eğitim tesisleri yapmak ya da yapılmasını sağlamak kimin görevidir?",
+      "back": "Belediyenin; bu iş belediyenin trafikle ilgili görev ve yetkileri arasında sayılır.",
+      "explanation": "Belediyenin diğer görevleri arasında şunlar da var: gerekli görülen kavşaklara ve yerlere trafik ışıklı işaretleri ve işaret levhaları koymak, yer işaretlemeleri yapmak, karayolu yapısında ve üzerinde yapılacak çalışmalarda gerekli tedbirleri almak, aldırmak ve denetlemek.",
+      "articleRefs": [
+        "10"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Belediyeler Karayolları Trafik Kanunuyla kendilerine verilen görevleri kimlerle işbirliği yaparak yürütür?",
+      "back": "İl ve ilçe trafik komisyonları ve mahalli trafik birimleriyle işbirliği yaparak yürütür.",
+      "explanation": "Bu görevlerin bazıları şunlar: yapım ve bakımından sorumlu olduğu yolları trafik düzeni ve güvenliğini sağlayacak durumda bulundurmak, trafik için tehlike teşkil eden engelleri gece ya da gündüz kolayca görülecek şekilde işaretlemek ya da ortadan kaldırmak.",
+      "articleRefs": [
+        "10"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Belediye trafik şube müdürlüğü, şefliği ya da memurluğunun kuruluş ölçülerini il ve ilçe trafik komisyonları mı tespit eder?",
+      "back": "Hayır. Bu birimler, hizmet kapasitesi gözönünde tutularak İçişleri Bakanlığınca tespit edilecek ölçülere ve genel hükümlere göre kurulur.",
+      "explanation": "Her belediye başkanlığı bünyesinde belediye trafik şube müdürlüğü, şefliği ya da memurluğu kurulur. Belediyeye verilen görevler il ve ilçe trafik komisyonları ve mahalli trafik birimleriyle işbirliği yapılarak yürütülür.",
+      "articleRefs": [
+        "10"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "İl Trafik Komisyonundaki üniversite, vakıf ve kamuya yararlı dernek veya kuruluş temsilcilerinin toplam sayısı en çok kaç olabilir?",
+      "back": "En çok 3; bu temsilcilerin toplam sayısı 3'ü geçemez.",
+      "explanation": "Bu temsilciler, Valilikçe uygun görülen ve trafikle ilgili kuruluşlardan birer kişi olarak katılır. Komisyonun başkanı vali ya da yardımcısıdır. Kararlar oy çokluğuyla alınır; oylar eşit çıkarsa başkanın bulunduğu taraf çoğunluk sayılır.",
+      "articleRefs": [
+        "12"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "İl Trafik Komisyonunun gündem konularını Türkiye Şoförler ve Otomobilciler Federasyonuna bağlı ilgili odanın temsilcileri mi belirler?",
+      "back": "Hayır. Gündem konularını vali ya da kaymakamlar belirler; ilgili odanın temsilcisi ise komisyonun üyelerinden biridir.",
+      "explanation": "İl Trafik Komisyonu kararları valinin onayıyla yürürlüğe girer. İlçe Trafik Komisyonu kararları ise önce İl Trafik Komisyonunca incelenir, vali onayladıktan sonra yürürlüğe girer. Bütün resmi ve özel kuruluşlar bu kararları uygulamakla yükümlüdür.",
+      "articleRefs": [
+        "12"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Otopark olmaya müsait boş alan, arazi ve arsaları geçici otopark yeri olarak ilan etmek kimin yetkisidir?",
+      "back": "İl ve İlçe Trafik Komisyonlarının; komisyonlar bu alanların sahiplerine ya da üçüncü kişilere işletme izni de verir.",
+      "explanation": "Komisyonların görevlerinden biri daha: karayolu taşımacılığına ait mevzuat hükümleri saklı kalmak üzere, belediye sınırları içinde ticari amaçla çalıştırılacak yolcu ve yük taşıtları ile motorsuz taşıtların çalışma şekil ve şartlarını, güzergahlarını ve sayılarını belirlemek.",
+      "articleRefs": [
+        "12"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Karayolu yapısında çalışma yapacak kişi, kurum ve kuruluşlar kimden izin almak zorundadır?",
+      "back": "Yolun yapım ve bakımı ile görevli kuruluştan izin almak zorundadırlar.",
+      "explanation": "Çalışmalar gerekli önlemler alınarak, aldırılarak ve sürekliliği sağlanarak, trafik akımını ve güvenliğini bozmayacak tarzda yapılır. Zorunlu nedenlerle ortaya çıkan arıza ve engeller en kısa zamanda giderilir.",
+      "articleRefs": [
+        "13"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Şehiriçi karayolu kenarında bir tesisin yapımı süresince yayalar için ne yapılması zorunludur?",
+      "back": "Kaldırımlarda tünel, tünel aydınlatılması ve benzerleri yapılarak güvenli geçiş sağlanır ve yaya yolları trafiğe açık bulundurulur.",
+      "explanation": "Bu yükümlülük, karayolu yapısında çalışma yapan kişi, kurum ve kuruluşların uymak zorunda oldukları kurallar arasındadır.",
+      "articleRefs": [
+        "13"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Karayolu yapısındaki çalışmalar sırasında ortaya çıkan tehlikeli durum ve engelleri kim kaldırır?",
+      "back": "Zabıta kaldırır; bütün sorumluluk bunları yaratan kişilere aittir, yapılan masraflar da sorumlulara ödetilir.",
+      "explanation": "Karayolunun yapımı, bakımı ve işletilmesiyle görevli ve sorumlu bütün kuruluşlar, karayolu yapısını trafik güvenliğini sağlayacak durumda bulundurmakla yükümlüdür.",
+      "articleRefs": [
+        "13"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Karayolu yapısı üzerine bir şey koymak, atmak ya da dökmek hangi durumda yasaktır?",
+      "back": "Trafiği güçleştirecek, tehlikeye sokacak ya da engel yaratacak şekilde yapıldığında; trafik işaretlerinin görülmesini engelleyecek ya da güçleştirecek şekilde yapıldığında da yasaktır.",
+      "explanation": "Yasak; koymak, atmak, dökmek, bırakmak ve benzeri hareketlerin hepsini kapsar.",
+      "articleRefs": [
+        "14"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Trafik işaretinin yerini değiştirmeden üzerine yazı yazmak ya da çizmek serbest midir?",
+      "back": "Hayır. Trafik işaretlerini üzerlerine yazı yazarak, çizerek ya da başka şekillerde bozmak da yasaktır; yerlerini değiştirmek ve ortadan kaldırmak ayrıca yasaktır.",
+      "explanation": "Yasak; karayolu yapısını, trafik işaretlerini ve karayoluna ait diğer yapı ve güvenlik tesislerini birlikte kapsar.",
+      "articleRefs": [
+        "14"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Karayolu yapısında ve trafik işaretlerinde ortaya çıkan bozukluk ve eksiklikleri hangi kuruluş giderir?",
+      "back": "Yolun yapım ve bakımından sorumlu kuruluş derhal giderir; zarar karşılıkları ve masraflar sorumlulara ödetilir.",
+      "explanation": "Ortaya çıkan tehlike ve engeller ise ilgili kuruluşlar ve zabıta tarafından ortadan kaldırılır.",
+      "articleRefs": [
+        "14"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Trafik işaret levhaları, ışıklı ve sesli işaretler ile yer işaretlemeleri kimlerce temin ve tesis edilir?",
+      "back": "Karayolunun yapımı, bakımı ve işletilmesiyle görevli kuruluşlarca temin ve tesis edilir; işaretlerin sürekliliğini ve işlerliğini de bu kuruluşlar sağlar.",
+      "articleRefs": [
+        "15"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Trafik işaretlerinde görülen eksiklikler hangi yolla giderilir?",
+      "back": "İlgili kuruluşlara bildirilir ve eksikliğin giderilmesi sağlatılır.",
+      "articleRefs": [
+        "15"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Trafik işaretlerinin görülmesini engelleyecek şekilde levha ya da direk dikme yasağı yalnız karayolu sınırı içinde mi geçerlidir?",
+      "back": "Hayır. Yasak; karayolu dışında, karayolu kenarında ya da karayolu sınırı içinde dikilen, konulan veya bulundurulan şeylerin hepsini kapsar.",
+      "explanation": "Yasak; levhaları, ışıkları ve işaretlemeleri kapsar. Ağaç, direk, yangın musluğu, çeşme, parmaklık gibi yapı elemanları ve benzerleri de bu kapsamdadır.",
+      "articleRefs": [
+        "16"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Karayolu kenarına dikilen bir levha ya da ışık, trafik işaretlerini nasıl etkilerse yasak kapsamına girer?",
+      "back": "Trafik işaretlerinin görülmesini engelleyecek, anlamlarını değiştirecek ya da güçleştirecek, tereddüde sebep olacak ya da yanıltacak ve trafik için tehlike veya engel yaratacak şekildeyse.",
+      "articleRefs": [
+        "16"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Karayolu kenarında trafik işaretlerinin görülmesini engelleyecek şekilde dikilmiş levha ve direkleri kim kaldırır?",
+      "back": "Yolun yapımı, bakımı ve işletilmesiyle ilgili kuruluş kaldırır; bütün sorumluluk ve giderler mal sahibine aittir.",
+      "explanation": "Zorunlu hallerde bunların bulunabileceği yerler ve hangilerinin izne bağlı olduğu yönetmelikle düzenlenir; verilen izinler ilgili valiliğe bildirilir.",
+      "articleRefs": [
+        "16"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Akaryakıt istasyonu gibi tesislerin karayoluna bağlantısı için, karayolunun sınır çizgisine kaç metre mesafe içinde izin alınması zorunludur?",
+      "back": "Elli metre; karayolunun her iki tarafında sınır çizgisine elli metre mesafe içindeki bağlantı yolları için izin gerekir.",
+      "explanation": "İzin gereken tesisler arasında şunlar var: akaryakıt, servis, dolum ve muayene istasyonları, umuma açık park yeri ve garaj, terminal, fabrika, işhanı, çarşı, pazar yeri, eğlence yerleri, turistik tesisler, araç bakım, onarım ve satım işyerleri.",
+      "articleRefs": [
+        "17"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Karayolu kenarında açılacak bir terminalin bağlantı yolu için izin valilikten mi alınır?",
+      "back": "Hayır. İzin, o karayolunun yapım ve bakımıyla sorumlu kuruluştan alınır; verilen izinler ilgili valiliğe yalnızca bildirilir.",
+      "explanation": "Bu izin, karayolunun her iki tarafında sınır çizgisine elli metre mesafe içindeki bağlantı yolları için aranır.",
+      "articleRefs": [
+        "17"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "İzinsiz yapılan bir akaryakıt istasyonunun karayoluna bağlantı yolunu kim ortadan kaldırır?",
+      "back": "Yolun yapım ve bakımıyla ilgili kuruluş kaldırır; her türlü gider sorumlulara aittir.",
+      "explanation": "İzinsiz tesisin yapımı ve işletilmesi yetkililerce durdurulur. Yönetmelikteki şartlar yerine getirilmeden işletme izni verilmez.",
+      "articleRefs": [
+        "17"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Belediye sınırları içinde, Karayolları Genel Müdürlüğünün sorumlu olduğu yolun kenarında açılacak akaryakıt istasyonuna izni Genel Müdürlüğün bölge müdürlüğü mü verir?",
+      "back": "Hayır. İzin belediyeden alınır; belediye, yola bağlantı için Karayolları Genel Müdürlüğünün ilgili bölge müdürlüğünden uygun görüş alır.",
+      "explanation": "İzinsiz yapılan tesislerin yapımı ve işletilmesi yetkililerce durdurulur. Bağlantı yolu da, her türlü gider sorumlulara ait olmak üzere, yolun yapım ve bakımıyla ilgili kuruluşlarca ortadan kaldırılır.",
+      "articleRefs": [
+        "18"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Belediye, karayolu kenarında açılacak akaryakıt istasyonu gibi tesislere izin verirken neyin yerine getirilmesini sağlamak zorundadır?",
+      "back": "Trafik güvenliği bakımından bu tesisler için Yönetmelikte belirlenen şartların yerine getirilmesini sağlamak zorundadır.",
+      "explanation": "Bu zorunluluk, belediye sınırları içindeki karayolları kenarında yapılacak ya da açılacak, 17 nci maddede sayılan yapı ve tesisler için geçerlidir.",
+      "articleRefs": [
+        "18"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Tescili zorunlu bir aracın ilk tescili için araç sahibi, satın alma ya da gümrükten çekme tarihinden itibaren ne kadar süre içinde başvurmalıdır?",
+      "back": "Üç ay içinde; ilgili trafik tescil kuruluşuna ya da Emniyet Genel Müdürlüğünün belirleyeceği kamu kurum, kuruluş veya kişilere başvurur.",
+      "explanation": "Araç sahipleri aracını yetkili kuruluşa tescil ettirmek ve tescil belgesi almak zorundadır. Araç hurda durumuna gelirse tescilin silinmesi için bir ay içinde başvurulur. 22 nci maddenin ikinci fıkrası kapsamında yetkilendirilenlerin sattığı ve ilk tescili elektronik ortamda yapılacak araçlarda üç aylık süre uygulanmaz; tescil, satıştan sonra on beş iş günü içerisinde yapılır.",
+      "articleRefs": [
+        "19",
+        "20"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Türkiye'ye geçici olarak girmesine izin verilmiş, başka ülkede tescilli bir araç hangi şartla tescil zorunluluğunun dışında kalır?",
+      "back": "Tescil edildiği ülkenin tescil belgesi ve tescil plakası bulunuyorsa tescil zorunluluğunun dışında kalır.",
+      "explanation": "Tescil edildiği ülkenin belgesi ve plakası bulunan, ikili ve çok taraflı anlaşmalara göre Türkiye'de tescil zorunluluğundan muaf tutulmuş araçlar da bu zorunluluğun dışındadır.",
+      "articleRefs": [
+        "19"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Motorsuz taşıtlardan hangileri tescil zorunluluğunun dışında kalmaz?",
+      "back": "Tescil zorunluluğu bulunan motorlu taşıtlarla çekilenler ile 22 nci maddenin (c) bendine göre tescili gerekli görülenler; diğer bütün motorsuz taşıtlar tescil zorunluluğunun dışındadır.",
+      "explanation": "Tescil zorunluluğunun dışında kalan bir grup daha var: araç imal, ithal, ihraç edenlerin ve satıcıların; ithal, ihraç, depolama, teşhir ve satış amacıyla bu işlere mahsus yerlerde geçici olarak maliki olarak bulundurdukları motorlu araçlar.",
+      "articleRefs": [
+        "19"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Noterde yapılan araç satış ve devri, siciline işlenmek üzere trafik tescil kuruluşu ile vergi dairesine kaç iş günü içinde bildirilir?",
+      "back": "Üç işgünü içerisinde bildirilir; bu bildirimle birlikte alıcı adına trafik tescil işlemi gerçekleşmiş sayılır.",
+      "explanation": "Tescil edilmiş araçların her çeşit satış ve devri noterlerce yapılır; noterler tarafından yapılmayan satış ve devirler geçersizdir. Noter, yeni malik adına bir ay süreyle geçerli geçici belge düzenler. Satış ve devir tarihi itibarıyla eski malikin vergi mükellefiyeti sona erer, yeni malikinki başlar.",
+      "articleRefs": [
+        "20"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Araçların giriş işlemlerini yapan gümrük idareleri bu durumu, araç sahibinin beyan ettiği tescil kuruluşuna kaç gün içinde bildirir?",
+      "back": "15 gün içinde bildirmekle yükümlüdür.",
+      "explanation": "Bildirim, araç sahiplerinin beyan ettikleri tescil kuruluşuna yapılır. Araç sahibi de ilk tescil için satın alma ya da gümrükten çekme tarihinden itibaren üç ay içinde başvurmak zorundadır.",
+      "articleRefs": [
+        "20"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Araç sahibi vefat ederse mirasçılar, adlarına tescil belgesi almak için vefat tarihinden itibaren kaç gün içinde başvurmalıdır?",
+      "back": "Doksan gün içerisinde başvurmalıdır; tescil, vefat tarihi itibarıyla yapılır.",
+      "explanation": "Süre sonunda mirasçılar adına tescil edilmeden karayoluna çıkarıldığı tespit edilen araç, mirasçılar adına tescil ettirilinceye kadar trafikten menedilir. Sürücüye de idari para cezası verilir.",
+      "articleRefs": [
+        "20"
+      ]
+    }
+  ]
+}

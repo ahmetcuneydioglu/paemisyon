@@ -1,0 +1,298 @@
+{
+  "deck": {
+    "topicId": "11f0f172-a435-4a78-97bc-9815f65f7e1c",
+    "legislationSlug": "2860-sayili-yardim-toplama-kanunu",
+    "sourceLabel": "AI bilgi kartı — 2860 Sayılı Yardım Toplama Kanunu md 1–21, 24–32, Geçici 1, 33, 34",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: resmî madde metni + çıkmış sorular)"
+  },
+  "cards": [
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Hangi kuruluşlara kendi statülerine göre yapılan bağış ve yardımlar 2860 sayılı Yardım Toplama Kanununun kapsamı dışındadır?",
+      "back": "Dernekler, sendikalar ve bunların üst kuruluşları, spor kulüpleri, mesleki kuruluşlar ve bağış kabulüne yetkili vakıflar.",
+      "explanation": "Bu kuruluşlara üyeleri ve diğer kişilerce yapılan bağış ve yardımlar kapsam dışıdır. Kuruluşların öz kaynaklarından sağlayacakları gelirler de kapsam dışıdır. Türk Silahlı Kuvvetlerinin kendi bünyesindeki yardım toplama faaliyetleri de Kanunun kapsamında değildir.",
+      "articleRefs": [
+        "2"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Yardım Toplama Kanununa göre kimler yardım toplayabilir?",
+      "back": "Gerçek kişiler, dernekler, kurumlar, vakıflar, spor kulüpleri, gazete ve dergiler.",
+      "explanation": "Yardım kamu yararına uygun olarak toplanır. Amaç; bu kişi ve kuruluşların amaçlarını gerçekleştirmek, muhtaç kişilere yardım sağlamak ya da kamu hizmetlerinden bir veya birkaçını gerçekleştirmek veya bunlara destek olmaktır.",
+      "articleRefs": [
+        "3"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Yardım Toplama Kanununa göre hangi yollarla yardım toplanabilir?",
+      "back": "Makbuzla, belirli yerlere kutu koyarak, bankalarda hesap açtırarak ya da yardım pulu çıkararak. Eşya piyangosu, kültürel gösteri, sergi, spor gösterisi, gezi ve eğlence düzenleyerek ya da elektronik sistemlerle de toplanabilir.",
+      "explanation": "Bir faaliyette bu şekillerden bir veya birkaçı kullanılabilir. Makbuz ve biletlerde yardımın hangi amaç için toplandığını belirtmek zorunludur. Gerçek kişiler, bu iş için hazırlanacak özel makbuz veya biletleri kullanır.",
+      "articleRefs": [
+        "5"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Kamu yararına çalışan dernek, kurum ve vakıflardan hangilerinin izin almadan yardım toplayabileceğini kim belirler?",
+      "back": "Cumhurbaşkanı; bunları belirleyip ilan eder.",
+      "explanation": "Genel kural şudur: kişi ve kuruluşlar yetkili makamdan izin almadan yardım toplayamaz. Cumhurbaşkanınca belirlenip ilan edilen kamu yararına çalışan dernek, kurum ve vakıflar bu kuralın istisnasıdır.",
+      "articleRefs": [
+        "6"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "İzin alınmadan girişilen yardım toplama faaliyetine karşı güvenlik kuvvetleri ne yapar?",
+      "back": "Faaliyeti derhal men eder; sorumlular hakkında da kovuşturma yapılır.",
+      "articleRefs": [
+        "6"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Yardım toplama faaliyeti bir ilçenin sınırları içindeyse izin validen mi alınır?",
+      "back": "Hayır; o ilçenin kaymakamından izin alınır. Validen izin, faaliyet bir ilin birden fazla ilçesini kapsıyorsa alınır.",
+      "articleRefs": [
+        "7"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Yardım toplama faaliyeti birden fazla ili kapsıyorsa izin kimden alınır?",
+      "back": "Faaliyete girişecek gerçek veya tüzel kişilerin yerleşim yerinin bulunduğu ilin valisinden.",
+      "explanation": "İzni veren valilik, ilgili valiliklere ve İçişleri Bakanlığına bilgi verir. Yardım toplama faaliyetleriyle ilgili işlemleri dernekler birimleri yürütür.",
+      "articleRefs": [
+        "7"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Gazete ve dergiler adına yardım toplama dilekçesini kim verir?",
+      "back": "Sorumlu yazı işleri müdürü; dilekçe, izin vermeye yetkili makama verilir.",
+      "explanation": "Yardım toplama öğrenim kurumları yararına ya da kurum içinde yapılacaksa, başvuru dilekçesine kurum sorumlusunun yazılı iznini eklemek zorunludur.",
+      "articleRefs": [
+        "8"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Yetkili makam, yardım toplama başvurusunun sonucunu başvurana en geç ne kadar sürede bildirir?",
+      "back": "En geç iki ay içinde.",
+      "explanation": "Yetkili makam şu konuları inceler: işin önemi, girişeceklerin yeterlikleri, hizmetin amaca ve kamu yararına uygunluğu, faaliyetin başarıya ulaşıp ulaşamayacağı ve gerekli görülen diğer konular.",
+      "articleRefs": [
+        "9"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Yardım toplayacak gerçek kişiler en az kaç kişilik sorumlu kurul oluşturmak zorundadır?",
+      "back": "En az üç kişiden oluşan bir sorumlu kurul.",
+      "explanation": "Tüzelkişilerde sorumlu kurul, bunların yönetim organlarıdır.",
+      "articleRefs": [
+        "11"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Sorumlu kurulda görev alanlar ve kuruldaki değişiklikler izin veren makama kaç gün içinde bildirilir?",
+      "back": "On gün içinde.",
+      "articleRefs": [
+        "11"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Gazete ve dergiye yardım edenin adı ve yardım tutarı her durumda yayımlanır mı?",
+      "back": "Hayır; yardımda bulunan aksini isterse yayımlanmaz. Böyle bir istek yoksa ad ve tutar gazete ve dergide yayımlanır.",
+      "explanation": "Gazete ve dergilerin topladığı para yardımları, bankada açılacak özel bir hesaba yatırılır. Faaliyet sonunda toplanan yardımın miktarı gazete ve dergi ile açıklanır.",
+      "articleRefs": [
+        "12"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Vali veya kaymakam izniyle yardım toplama faaliyetinde çalışan kamu görevlisine ücret verilebilir mi?",
+      "back": "Hayır; her ne ad altında olursa olsun ücret verilemez. İstisna: Türk Hava Kurumu, kurban derisi, bağırsak toplama, fitre ve zekât zarfı dağıtma işlerinde görevlendirdiği kamu personeline ücret verebilir.",
+      "explanation": "Kamu görevlileri, vali veya kaymakamdan izin almadıkça yardım toplama faaliyetlerinde çalışamaz.",
+      "articleRefs": [
+        "13"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Güvenlik kuvvetleri mensupları vali veya kaymakam izniyle yardım toplama faaliyetinde çalışabilir mi?",
+      "back": "Hayır; güvenlik kuvvetleri mensupları yardım toplama faaliyetlerinde çalışamaz. Vali veya kaymakam izni kaydı, diğer kamu görevlileri içindir.",
+      "explanation": "Aynı yasak Silahlı Kuvvetler mensupları, adli ve idari yargıda görevli hakim ve savcılar ile özel kolluk görevlileri için de geçerlidir.",
+      "articleRefs": [
+        "13"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Yardım toplama faaliyetinde görev alacaklara ne verilir?",
+      "back": "Faaliyetin konu ve süresini belirten fotoğraflı bir kimlik belgesi.",
+      "explanation": "Kimlik belgesi faaliyetin sonunda geri alınır. Belge, izin veren makamın her yardım toplama faaliyeti için tuttuğu dosyada saklanır.",
+      "articleRefs": [
+        "15"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Eski eser ve anıtların onarılması için toplanan yardımı, izin veren makam dışında kim ayrıca denetleyebilir?",
+      "back": "Vakıflar Genel Müdürlüğü veya Kültür ve Turizm Bakanlığı.",
+      "explanation": "Net gelirin amaç doğrultusunda kullanılıp kullanılmadığı, izin veren makamın gözetim ve denetimine tabidir. Bu makam, memurlar arasından veya dışarıdan yeterli sayıda denetçi görevlendirir ve ilgililere bildirir.",
+      "articleRefs": [
+        "16"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Sorumlu kurul, yardım toplama süresinin bitiminden itibaren kesinhesabı kaç gün içinde çıkarmalıdır?",
+      "back": "On gün içinde. Zorunlu hallerde izin veren makam bu süreyi otuz güne kadar uzatabilir.",
+      "explanation": "Sorumlu kurul, kesinhesabın bir örneğini izin veren makama vermekle yükümlüdür.",
+      "articleRefs": [
+        "17"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Yardım toplama faaliyetinin kesinhesabını denetçiler mi çıkarır?",
+      "back": "Hayır; kesinhesabı sorumlu kurullar çıkarır ve bir örneğini izin veren makama verir. İzin veren makam da bir örneğini denetçilere gönderir.",
+      "articleRefs": [
+        "17"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Yardım toplama faaliyetine ilişkin denetleme raporunda hangi bilgilerin bulunması gerekir?",
+      "back": "Brüt gelir, yapılan gider ve net gelir. Ayrıca net gelirin amaca yeterli olup olmayacağı ve izin veren makamın incelenmesini istediği hususlara ilişkin açıklamalar.",
+      "explanation": "Denetçiler, faaliyetin belgelerini ve kesinhesabını inceler. Raporu belirlenen süre içinde görevlendiren makama verirler. Girmesinde yarar gördükleri hususları da rapora yazarlar.",
+      "articleRefs": [
+        "18",
+        "19"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Makbuz, kutu, banka hesabı, yardım pulu ya da elektronik sistemle yardım toplamada giderler brüt gelirin en çok yüzde kaçı olabilir?",
+      "back": "Yüzde on; bu yollarla toplamada giderler brüt gelirin yüzde onunu geçemez.",
+      "articleRefs": [
+        "24"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Eşya piyangosu, kültürel gösteri, sergi, spor gösterisi, gezi ve eğlence yoluyla yardım toplamada giderler brüt gelirin en çok yüzde kaçı olabilir?",
+      "back": "Yüzde kırk; bu yollarla toplamada giderler brüt gelirin yüzde kırkını geçemez.",
+      "articleRefs": [
+        "24"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Yardım toplama giderleri kanunda gösterilen oranları aşarsa aradaki fark kime ödettirilir?",
+      "back": "Haklı nedenler yoksa, sorumlu kurul üyelerine.",
+      "articleRefs": [
+        "24"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Toplanan yardım, amacı gerçekleştirecek miktara ulaşmazsa ne yapılır?",
+      "back": "İzin veren makam, yardımı toplandığı amacı ya da benzer bir amacı gerçekleştirebilecek kuruluş veya kuruluşlara devrettirir.",
+      "explanation": "Aynı kural, amaç gerçekleştikten sonra yardımın bir miktarı artarsa da uygulanır.",
+      "articleRefs": [
+        "25"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Basımevleri, izinli yardım toplama için makbuz, bilet ve yardım pullarını bastıktan sonra durumu izin veren makama kaç gün içinde bildirir?",
+      "back": "Yedi gün içinde; basılanların birer örneğini de gönderir.",
+      "explanation": "Bildirim, basılan makbuz, bilet ve pulların seri ve numaraları basıldıktan sonra yapılır.",
+      "articleRefs": [
+        "26"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Türkiye'de yabancı temsilciliklerin yardım toplaması kimin iznine bağlıdır?",
+      "back": "Dışişleri Bakanlığının; bu faaliyetlerde Yardım Toplama Kanunu hükümleri uygulanmaz.",
+      "articleRefs": [
+        "27"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Yardım toplama faaliyetinden elde edilen parayı zimmetine geçiren kişi kamu görevlisi değilse, zimmet suçu hükümlerine göre cezalandırılır mı?",
+      "back": "Evet; kişinin kamu görevlisi olup olmadığına bakılmaz. Türk Ceza Kanununun zimmet suçuna ilişkin hükümlerine göre cezalandırılır.",
+      "explanation": "Kural, faaliyetten elde edilen hem mal hem de paralar için geçerlidir.",
+      "articleRefs": [
+        "28"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "İnternet ortamı dışında izinsiz yardım toplayana ne kadar idari para cezası verilir?",
+      "back": "Beş bin Türk lirasından yüz bin Türk lirasına kadar idari para cezası.",
+      "explanation": "İzinsiz yardım toplanmasına yer ve imkân sağlayanlar, uyarılmalarına rağmen faaliyeti sonlandırmazsa beş bin Türk lirası idari para cezası ile cezalandırılır.",
+      "articleRefs": [
+        "29"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "İzinsiz yardım internet ortamında toplanırsa ne kadar idari para cezası verilir?",
+      "back": "On bin Türk lirasından iki yüz bin Türk lirasına kadar idari para cezası.",
+      "articleRefs": [
+        "29"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "İzinsiz yardım toplanması hâlinde idari yaptırımlara kim karar verir?",
+      "back": "Vali; bu yetkisini vali yardımcılarına veya kaymakamlara devredebilir.",
+      "explanation": "Maddede yazılı diğer idari yaptırımlara, yardım toplama iznini veren makam karar verir.",
+      "articleRefs": [
+        "29"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,200 @@
+{
+  "deck": {
+    "topicId": "c345c19d-c850-4798-b194-d552edf39708",
+    "legislationSlug": "3713-sayili-terorle-mucadele-kanunu",
+    "sourceLabel": "AI bilgi kartı — 3713 Sayılı Terörle Mücadele Kanunu md Ek 2, Ek 3, Ek 4",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: resmî madde metni + çıkmış sorular)"
+  },
+  "cards": [
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Terör örgütlerine karşı icra edilen bir operasyonda kolluk görevlilerinin hedefe karşı silah kullanma yetkisi hangi hâllerde doğar?",
+      "back": "\"Teslim ol\" emrine itaat edilmemesi veya silah kullanmaya teşebbüs edilmesi hâlinde.",
+      "explanation": "Bu hâllerden biri gerçekleşince kolluk görevlileri doğrudan ve duraksamadan hedefe karşı silah kullanmaya yetkilidir. Silah, tehlikeyi etkisiz kılabilecek ölçü ve orantıda kullanılır.",
+      "articleRefs": [
+        "Ek 2"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Ek 3 uyarınca aylık bağlanabilecek kişiler hangi gruptan çıkar?",
+      "back": "21 inci maddenin birinci fıkrasının (a), (h), (i) ve (j) bentleri kapsamında terör eylemi nedeniyle yaralanıp malul sayılmadıkları için aylık bağlanamayanlardan.",
+      "explanation": "Bu kişilere ilgili mevzuatına göre malul sayılmadıkları için aylık bağlanamamıştır. Ek 3 onlara, tespit edilen dereceyi esas alan bir aylık bağlar.",
+      "articleRefs": [
+        "Ek 3"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Terör eylemi nedeniyle yaralanıp malul sayılmayanlar için Ek 3 aylığına esas derece tespiti kişinin talebi aranmadan yapılır mı?",
+      "back": "Hayır; derece tespiti ilgilinin talebi üzerine yapılır. Tespit, Vazife Malullüklerinin Nevileri ile Dereceleri Hakkında Nizamname hükümlerine göre yapılır.",
+      "explanation": "Aylık, tespit edilen bu derece esas alınarak bağlanır.",
+      "articleRefs": [
+        "Ek 3"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Ek 3 kapsamındaki aylığın tutarı nasıl hesaplanır?",
+      "back": "Tespit edilen dereceye karşılık gelen gösterge rakamı memur aylık katsayısı ile çarpılır; çıkan tutar aylık olarak bağlanır.",
+      "explanation": "Derece, ilgilinin talebi üzerine Vazife Malullüklerinin Nevileri ile Dereceleri Hakkında Nizamname hükümlerine göre tespit edilir.",
+      "articleRefs": [
+        "Ek 3"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Terör örgütlerine karşı operasyonda \"teslim ol\" emrine uyulmayınca kolluk görevlileri silahı hangi ölçüde kullanır?",
+      "back": "Tehlikeyi etkisiz kılabilecek ölçü ve orantıda.",
+      "explanation": "Kolluk görevlileri bu hâlde doğrudan ve duraksamadan hedefe karşı silah kullanmaya yetkilidir; yetkinin sınırı, tehlikeyi etkisiz kılabilecek ölçü ve orantıdır.",
+      "articleRefs": [
+        "Ek 2"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Ek 3 kapsamında derece tespiti yapılan kişiye aylık hangi tarihten itibaren bağlanır?",
+      "back": "Nakdi tazminat karar tarihini takip eden aybaşından başlamak üzere.",
+      "articleRefs": [
+        "Ek 3"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Ek 3 aylığında 1. derece için gösterge rakamı kaçtır?",
+      "back": "27.288; bu rakam memur aylık katsayısı ile çarpılarak aylık bulunur.",
+      "explanation": "Tablonun en yüksek göstergesidir; gösterge, dereceler ilerledikçe azalır.",
+      "articleRefs": [
+        "Ek 3"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Ek 3 aylığında 2. derece için gösterge rakamı kaçtır?",
+      "back": "25.385; memur aylık katsayısı ile çarpılarak aylık tutarı bulunur.",
+      "explanation": "Gösterge, Nizamname hükümlerine göre tespit edilen dereceye göre belirlenir.",
+      "articleRefs": [
+        "Ek 3"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Ek 3 aylığında 4. derece için gösterge rakamı kaçtır?",
+      "back": "21.578; memur aylık katsayısı ile çarpılarak aylık tutarı bulunur.",
+      "explanation": "Komşu dereceler: 3. derece 23.485, 5. derece 19.673.",
+      "articleRefs": [
+        "Ek 3"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Ek 3 aylığında 6. derece için gösterge rakamı kaçtır?",
+      "back": "17.820; tablonun en düşük göstergesidir.",
+      "explanation": "Aylık, bu gösterge rakamının memur aylık katsayısı ile çarpımı sonucu bulunur.",
+      "articleRefs": [
+        "Ek 3"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Herhangi bir sigortalılık statüsüne tabi çalışması olan kişiye Ek 3 uyarınca bağlanacak ilk aylık en az ne kadar olmalıdır?",
+      "back": "Hesaplanacak emekli veya yaşlılık aylığının % 25 artırımlı tutarı kadar; ilk aylık bundan az olamaz.",
+      "explanation": "Bu hesapta aylık bağlanmasına ilişkin şartlar aranmaz; aylığa hak kazanılan tarihteki unsurlar ve mevcut hizmet süreleri esas alınır.",
+      "articleRefs": [
+        "Ek 3"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Terör örgütlerine karşı operasyonda silah kullanmaya teşebbüs edilince kolluk görevlileri silahı hangi biçimde kullanmaya yetkilidir?",
+      "back": "Doğrudan ve duraksamadan hedefe karşı.",
+      "explanation": "Yetkinin sınırı, tehlikeyi etkisiz kılabilecek ölçü ve orantıdır.",
+      "articleRefs": [
+        "Ek 2"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Ek 3 uyarınca aylık bağlanan kişi vefat ederse bu aylık hak sahiplerine hangi esasa göre geçer?",
+      "back": "5510 sayılı Kanunun 34 üncü maddesi esas alınarak ölüm aylığı olarak intikal ettirilir.",
+      "articleRefs": [
+        "Ek 3"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Ek 3 aylığı, aylık sahibinin vefatıyla ölüm aylığı olarak intikal ederken anne ve baba için şart aranır mı?",
+      "back": "Hayır; anne ve baba için herhangi bir şart aranmaksızın ölüm aylığı olarak intikal ettirilir.",
+      "explanation": "İntikal, 5510 sayılı Kanunun 34 üncü maddesi esas alınarak hak sahiplerine yapılır.",
+      "articleRefs": [
+        "Ek 3"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Ek 3 aylığı alan kişi, aynı yaralanmasına bağlı olarak sonradan malul sayılırsa hangi hüküm uygulanır?",
+      "back": "Karar tarihini takip eden aybaşından itibaren ilgisine göre Terörle Mücadele Kanununun 21 inci maddesinin birinci fıkrası uygulanır.",
+      "explanation": "Ek 3 uyarınca bağlanan aylık, vazife malullüğü aylığının başladığı tarihten itibaren kesilir. Emekli ikramiyesi hesabında daha önce ikramiye ödenen süreler dikkate alınmaz.",
+      "articleRefs": [
+        "Ek 3"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "\"Teslim ol\" emrine itaat edilmemesi hâlinde doğrudan ve duraksamadan hedefe karşı silah kullanma yetkisi hangi operasyonlar için tanınmıştır?",
+      "back": "Terör örgütlerine karşı icra edilen operasyonlar için; yetki kolluk görevlilerine aittir.",
+      "explanation": "Silah, tehlikeyi etkisiz kılabilecek ölçü ve orantıda kullanılır.",
+      "articleRefs": [
+        "Ek 2"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Terörle Mücadele Kanununun 21 inci maddesi kapsamında vazife malullüğü aylığı alan kişinin kontrol muayenesinde maluliyeti sona ererse ne olur?",
+      "back": "Ek 3 kapsamına giriyorsa, vazife malullüğünün kesildiği tarihten itibaren Ek 3 hükümleri uyarınca aylık bağlanır.",
+      "explanation": "Tutar; vazife malullüğü aylığına hak kazanılan tarihteki mevcut hizmet süreleri, unsurlar ve memur aylık katsayısı ile varsa almakta olunan aylıklar esas alınarak hesaplanır, sonra aylık artışlarıyla artırılır.",
+      "articleRefs": [
+        "Ek 3"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Vazife malullüğü kontrol muayenesiyle sona erdiği için Ek 3 uyarınca aylık bağlanan kişiye bu aylık nedeniyle ikramiye ödenir mi?",
+      "back": "Hayır; bu kapsamda aylık bağlanması sebebiyle ikramiye ödenmez.",
+      "explanation": "Bu kişilerin aylığı, vazife malullüğü aylığına hak kazanılan tarihteki unsurlar esas alınarak hesaplanır ve aylık artışlarıyla artırılır.",
+      "articleRefs": [
+        "Ek 3"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Ek 3 uyarınca aylık bağlananlardan 7082 sayılı Kanunun 14 üncü maddesi kapsamında bulunmayanlar hangi haklardan yararlanır?",
+      "back": "1005 sayılı İstiklâl Madalyası Verilmiş Bulunanlara Vatanî Hizmet Tertibinden Şeref Aylığı Bağlanması Hakkında Kanun kapsamındakiler için ilgili mevzuatında sağlanan diğer haklardan; aylık bağlanmasına ilişkin hükümler hariç.",
+      "articleRefs": [
+        "Ek 3"
+      ]
+    }
+  ]
+}

@@ -105,7 +105,8 @@ export const stripAmendmentNotes = (t: string): string =>
 /** Sayı, metinlerden birinde rakam ya da Türkçe sözcük olarak geçiyor mu. */
 export function numberInTexts(n: number, texts: string[]): boolean {
   const joined = binlikAyracSil(texts.map(stripAmendmentNotes).join('\n'));
-  if (new RegExp(`(^|[^\\d])${n}([^\\d]|$)`).test(joined)) return true;
+  // Başta sıfır dolgusu aynı sayıdır: "08.00" saati 8'i, "4,00" ondalığı 0'ı taşır.
+  if (new RegExp(`(^|[^\\d])0*${n}([^\\d]|$)`).test(joined)) return true;
   const w = trNumberPattern(n);
   if (!w) return false;
   // Önünde harf ya da başka bir sayı sözcüğü olmasın ("on beş" içindeki "beş" 5 sayılmaz);

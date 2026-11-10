@@ -1,0 +1,275 @@
+{
+  "deck": {
+    "topicId": "0334bf9e-f6c1-4073-89cf-f82d02b3bfa3",
+    "legislationSlug": "ozel-guvenlik-hizmetlerine-dair-kanunun-uygulanmasina-iliskin-yonetmelik",
+    "sourceLabel": "AI bilgi kartı — Özel Güvenlik Hizmetlerine Dair Kanunun Uygulanmasına İlişkin Yönetmelik md 1–15",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: resmî madde metni + çıkmış sorular)"
+  },
+  "cards": [
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Özel Güvenlik Hizmetlerine Dair Kanunun Uygulanmasına İlişkin Yönetmeliğin amacı nedir?",
+      "back": "Özel Güvenlik Hizmetlerine Dair Kanunun uygulanmasına yönelik usul ve esasları düzenlemek.",
+      "articleRefs": [
+        "1"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Yönetmelik, Özel Güvenlik Hizmetlerine Dair Kanunun hangi maddesine dayanılarak hazırlanmıştır?",
+      "back": "Kanunun 26 ncı maddesine dayanılarak hazırlanmıştır.",
+      "articleRefs": [
+        "3"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Özel güvenlik eğitimi sonundaki yazılı ve uygulamalı sınavları yürüten Merkezi Sınav Komisyonu kaç kişiden oluşur?",
+      "back": "Beş kişiden; komisyonun başkanı Bakanlıkça belirlenecek bir mülki idare amiridir.",
+      "explanation": "Yönetmelikte Bakanlık, İçişleri Bakanlığıdır. İllerde yapılan uygulamalı sınavları ise valinin oluşturduğu Uygulamalı Sınav Komisyonu yürütür.",
+      "articleRefs": [
+        "4"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Özel güvenlik eğitimi sonunda illerde yapılan uygulamalı sınavları yürüten Uygulamalı Sınav Komisyonu en az kaç kişiden oluşur?",
+      "back": "En az 3 kişiden; bu komisyonu ya da komisyonları vali oluşturur.",
+      "articleRefs": [
+        "4"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Bir kurum veya kuruluşun güvenliğini sağlamak üzere kendi bünyesinde kurulan birime ne ad verilir?",
+      "back": "Özel güvenlik birimi.",
+      "explanation": "Türk Ticaret Kanunu'na göre kurulan ve üçüncü kişilere koruma ve güvenlik hizmeti veren şirket ise özel güvenlik şirketidir.",
+      "articleRefs": [
+        "4"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Özel güvenlik komisyonu hangi toplantı yeter sayısıyla toplanır?",
+      "back": "Üye tam sayısının yarısının bir fazlasıyla toplanır; kararlarını oy çokluğuyla alır.",
+      "explanation": "Komisyon gerekli hallerde başkanın çağrısı üzerine toplanır. Kararlar başkan ve üyeler tarafından imzalanır ve muhafaza edilir.",
+      "articleRefs": [
+        "5"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Sanayi odası bulunmayan illerde özel güvenlik komisyonuna hangi temsilci katılır?",
+      "back": "Ticaret ve sanayi odası başkanlığının temsilcisi.",
+      "explanation": "Özel güvenlik izni verilmesi ya da bu uygulamanın kaldırılması için başvuran kişi ya da kuruluşun temsilcisi de komisyonun ilgili toplantısına üye olarak katılır.",
+      "articleRefs": [
+        "5"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Özel güvenlik komisyonu, özel güvenlik faaliyetleriyle ilgili denetim sonucunda alınacak tedbirleri kimin talebi üzerine kararlaştırır?",
+      "back": "Valinin talebi üzerine.",
+      "explanation": "Komisyon ayrıca Kanun ve Yönetmelikte belirtilen diğer hususlar ile vali tarafından görüşülmesi istenen konuları da görüşüp karara bağlar.",
+      "articleRefs": [
+        "6"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Özel güvenlik komisyonu, para ve değerli eşya nakli ya da cenaze töreni gibi kamuya açık yerlerde sağlanan hizmetlerde hangi amaçla sınırlandırıcı karar alabilir?",
+      "back": "Kamu hürriyetlerinin korunması amacıyla, gerektiğinde sınırlandırıcı kararlar alır.",
+      "articleRefs": [
+        "6"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Kanun kapsamında özel güvenlik yalnızca özel güvenlik şirketlerinden hizmet satın alınarak mı sağlanabilir?",
+      "back": "Hayır; özel güvenlik görevlisi istihdam edilerek, kurum veya kuruluş bünyesinde özel güvenlik birimi kurularak ya da şirketten hizmet satın alınarak sağlanabilir.",
+      "explanation": "Özel güvenlik hizmetinin ne şekilde sağlanacağını kişi veya kuruluşlar belirler.",
+      "articleRefs": [
+        "7"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Özel güvenlik izni için yapılan müracaatlar en geç kaç iş günü içinde neticelendirilir?",
+      "back": "En geç on iş günü içinde.",
+      "explanation": "Komisyonun özel güvenlik izni verilmesi ya da verilmemesi yönündeki kararları valinin onayına sunulur. İzin verilen kişi ve kuruluşlar için Ek-1'deki Özel Güvenlik İzin Belgesi düzenlenir.",
+      "articleRefs": [
+        "8"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Komisyon, özel güvenlik izni verilen kurum veya kuruluşa geçici görevlendirme amacıyla ek personel istihdam izni verirken hangi sınırı aşamaz?",
+      "back": "%10; Komisyonca il genelinde verilen özel güvenlik görevlisi kadrosunun %10'unu aşamaz.",
+      "explanation": "Bu izin kurum veya kuruluşun talebi olması halinde verilebilir. Personel; izin veya istirahat gibi durumlarda yerine geçici görevlendirme ve geçici özel güvenlik hizmetleri dahil ihtiyaç duyulan yerlerde görevlendirme için istihdam edilir.",
+      "articleRefs": [
+        "8"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Hangi hallerde özel güvenlik izni verilmemesine karar verilir?",
+      "back": "Genel güvenlik kapsamında korunmanın mümkün olduğu ya da özel koruma ve güvenlik uygulamasının kamu hürriyetlerinin korunması açısından sakıncalı görüldüğü hallerde; kararın gerekçesi de belirtilir.",
+      "articleRefs": [
+        "8"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Geçici özel güvenlik izni için valiliğe, etkinliğin başlamasından en az kaç saat önce müracaat edilir?",
+      "back": "En az 48 saat önce.",
+      "explanation": "Valilik müracaatı faaliyetin başlamasından en geç 24 saat öncesinde neticelendirir. Acil hallerde, valinin takdiriyle bu süreler uygulanmaz.",
+      "articleRefs": [
+        "9"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Geçici ve acil hallerde özel güvenlik iznini kim alır?",
+      "back": "Hizmeti yerine getirecek güvenlik şirketi alır; izni vali verir.",
+      "explanation": "Başvuruda koruma ve güvenlik hizmeti verilecek alan, istihdam edilecek özel güvenlik görevlileri ve kullanılacak teçhizat belirtilir. Şirketin öngördüğü tedbirler yetersiz görülürse valilik ilave tedbir ya da güvenlik planının değiştirilmesini isteyebilir.",
+      "articleRefs": [
+        "9"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Bankaların özel güvenlik birimlerince gerçekleştirilecek para nakli için özel güvenlik izni alınması gerekir mi?",
+      "back": "Hayır; bankaların özel güvenlik birimlerince yapılan para nakli için özel güvenlik izni alınmaz.",
+      "explanation": "Para veya değerli eşya naklinde izin konusu nakil ise başvuru dilekçesinde taşınacak silahlar ve kullanılacak araçlar ayrıca belirtilir.",
+      "articleRefs": [
+        "9"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "375 sayılı Kanun Hükmünde Kararnamenin Ek 20 nci maddesi kapsamındaki idare şirketinde, özel güvenlik görevlisi sayısı en çok kaç kişi olursa bölüm yöneticisinde en az lise mezunu olma şartı aranır?",
+      "back": "On kişi; özel güvenlik görevlisi sayısı on kişiyi geçmiyorsa bölüm yöneticisinde en az lise mezunu olma şartı aranır.",
+      "explanation": "Bu şirketlerin faaliyet alanının münhasıran koruma ve güvenlik hizmeti olması zorunluluğu yoktur; özel güvenlik faaliyeti ayrı bir bölüm altında yürütülür. Kanundaki özel güvenlik temel eğitim şartı yalnız bu bölümde görevli yöneticilere uygulanır.",
+      "articleRefs": [
+        "10"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "375 sayılı Kanun Hükmünde Kararnamenin Ek 20 nci maddesi kapsamındaki idarelere ait şirketler, kendi kurumları dışındaki kuruluşlara özel güvenlik hizmeti verebilir mi?",
+      "back": "Hayır; bu şirketler kendi kurumları dışındaki kişi, kurum veya kuruluşa özel güvenlik hizmeti veremez.",
+      "explanation": "Fıkrada belirtilen istisnalar dışında, Kanunun ve Yönetmeliğin tüm hükümleri bu şirketlere de uygulanır.",
+      "articleRefs": [
+        "10"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Özel güvenlik şirketi, kişi veya kuruluşla yaptığı hizmet sözleşmesinin suretini valiliğe ne zamana kadar verir?",
+      "back": "Koruma ve güvenlik hizmetinin başladığı gün mesai saati bitimine kadar.",
+      "explanation": "Bildirim günü tatile rastlarsa takip eden ilk mesai gününün mesai saati bitimine kadar yapılır. Sözleşme yazılıdır; hizmeti alanın adı, adresi, hizmetin kapsamı, personel sayısı ve hizmetin süresi gibi hususları içerir.",
+      "articleRefs": [
+        "10"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Yabancı bir şirketin Türkiye'de özel güvenlik hizmeti vermesinde mütekabiliyetin bulunup bulunmadığı hangi kuruma sorulur?",
+      "back": "Dışişleri Bakanlığına.",
+      "explanation": "Türkiye'de kurulan şirkette yabancı ortak bulunması ve özel güvenlik eğitim kurumunda yabancı uyruklu uzman eğitici istihdamı da mütekabiliyet esaslarına göre Kanundaki şartlara tabidir.",
+      "articleRefs": [
+        "11"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Özel güvenlik birimleri ve şirketleri, koruma ve güvenlik planlarını hizmetin başladığı tarihten itibaren en geç kaç gün içinde hazırlar?",
+      "back": "En geç otuz gün içinde; planın güncel bir örneği valiliğin talebi veya Bakanlık/valilik denetimleri için hazır bulundurulur.",
+      "articleRefs": [
+        "12"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Görev alanında genel güvenliğin ve kamu düzeninin bozulduğu hallerde özel güvenlik görevlileri ve yöneticileri ne yapar?",
+      "back": "Durumu derhal genel kolluğa bildirir.",
+      "articleRefs": [
+        "13"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Özel güvenlikle korunan bir yerde can ve mal güvenliği ciddi şekilde tehlikeye düşerse mülki idare amiri kimi görevlendirir?",
+      "back": "Genel kolluğu görevlendirir; bu durumda özel güvenlik personeli mülki idare amirinin ve genel kolluk amirinin emirlerini yerine getirir.",
+      "explanation": "Mülki idare amirleri ayrıca özel güvenlik görevlilerinin yetkisini aşan uygulamaları kaldırmaya ve tedbirlerin değiştirilmesini ya da ilave tedbir alınmasını istemeye yetkilidir.",
+      "articleRefs": [
+        "13"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Kamuya açık alanlarda özel güvenlik görevlisi üst aramasını genel kolluğun gözetimi olmadan yapabilir mi?",
+      "back": "Hayır; kamuya açık alanlarda özel güvenlik görevlilerince yapılacak üst araması genel kolluğun gözetim ve denetiminde yapılır.",
+      "explanation": "Bu alanlardaki üst araması Adli ve Önleme Aramaları Yönetmeliği hükümlerine göre yapılır.",
+      "articleRefs": [
+        "14"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Özel güvenlik görevlisinin arama sırasında yakaladığı kişiler ve el koyduğu madde ve cisimler genel kolluğa nasıl teslim edilir?",
+      "back": "Yasal işlemi yapılmak üzere bir tutanakla teslim edilir.",
+      "articleRefs": [
+        "14"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Özel güvenlik görevlilerince yapılan aramayı hangi görevli yapar?",
+      "back": "Aranan kişinin aynı cinsiyetindeki görevli.",
+      "explanation": "Görev alanında arama; detektörle, x-ray cihazından geçirerek veya Kanunda belirtilen durumlarda gerektiğinde üst araması yoluyla yapılabilir.",
+      "articleRefs": [
+        "14"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Özel güvenlik görevlileri, görev alanında meydana gelen yangın, deprem ve sel gibi tabii afetlerde neyle yükümlüdür?",
+      "back": "Arama ve kurtarma görevlilerine yardımcı olmakla.",
+      "articleRefs": [
+        "15"
+      ]
+    }
+  ]
+}

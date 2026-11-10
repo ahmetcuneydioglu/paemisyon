@@ -1,0 +1,311 @@
+{
+  "deck": {
+    "topicId": "baaa49b6-e1cc-410a-9391-3ea8c36e2a49",
+    "legislationSlug": "5682-sayili-pasaport-kanunu",
+    "sourceLabel": "AI bilgi kartı — 5682 Sayılı Pasaport Kanunu md 1–15",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: resmî madde metni + çıkmış sorular)"
+  },
+  "cards": [
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Türk vatandaşları ve yabancıların Türkiye'ye girip çıkacağı yolcu giriş-çıkış kapılarını kim tayin eder?",
+      "back": "Cumhurbaşkanı tayin eder.",
+      "explanation": "Türk vatandaşları da yabancılar da Türkiye'ye yalnız Cumhurbaşkanınca tayin olunan yolcu giriş-çıkış kapılarından girip çıkabilir.",
+      "articleRefs": [
+        "1"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Gümrük kapılarının açılışında hangi bakanlığın görüşü alınır?",
+      "back": "İçişleri Bakanlığının görüşü alınır.",
+      "explanation": "Yolcu giriş-çıkış kapılarını Cumhurbaşkanı tayin eder. Gümrük kapılarının açılışında ise İçişleri Bakanlığının görüşü alınır.",
+      "articleRefs": [
+        "1"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Türkiye'ye girişte ve çıkışta pasaport ya da pasaport yerine geçerli vesika kime ibraz edilir?",
+      "back": "Yolcu giriş-çıkış kapılarındaki polis makamlarına ibraz edilir.",
+      "explanation": "Bu mecburiyet hem Türk vatandaşları hem yabancılar içindir. İbraz edilen pasaport ya da vesika usulüne uygun ve muteber olmalıdır.",
+      "articleRefs": [
+        "2"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Yolcu, gümrük işlemlerini polis makamlarınca giriş işlemi bitirilmeden yaptırabilir mi?",
+      "back": "Hayır. Gümrük ve diğer işlemlerin yapılabilmesi için önce polis makamlarınca giriş veya çıkış işlemlerinin bitirilmesi şarttır.",
+      "explanation": "Sıra kanunla belirlenmiştir: önce polis makamlarında giriş veya çıkış işlemi biter, ardından gümrük ve diğer işlemler yapılır.",
+      "articleRefs": [
+        "2"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Kanunlar ve milletlerarası anlaşmalarla tespit edilenler dışında, hangi belgelerin pasaport yerine geçerli sayılacağına kim karar verir?",
+      "back": "İçişleri ve Dışişleri bakanlıkları müştereken karar alır.",
+      "explanation": "Bu yetki hem Türk vatandaşları hem yabancılar için kullanılır. Bakanlıklardan biri tek başına bu kararı alamaz; karar müşterektir.",
+      "articleRefs": [
+        "2"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Nüfus hüviyet varakasından başka vesika ya da delil göstererek Türk vatandaşlığını iddia edenlerin delillerinin kıymetini mahalli mülkiye amiri mi takdir eder?",
+      "back": "Hayır. Vesika veya delillerin kıymetini polis takdir eder. Mahalli mülkiye amiri ise gerekirse bu kişilerin oturtulacağı yeri gösterir.",
+      "explanation": "Polis, Türk vatandaşı olduklarına kanaat getirirse bu kişiler Türkiye'ye kabul olunur. Türk vatandaşlığı sabit olmayanlar geri çevrilir.",
+      "articleRefs": [
+        "3"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Başka vesika ya da delille Türk vatandaşlığını iddia eden kişi, vatandaşlığı sabit oluncaya kadar icabederse nerede oturtulabilir?",
+      "back": "En yakın idare merkezine gönderilerek mahalli mülkiye amirinin göstereceği yerde oturtulabilir.",
+      "explanation": "Bu kişilerin vatandaşlığı en seri vasıta ile usulü veçhile araştırılır. Oturtma zorunlu değildir; icabederse uygulanır.",
+      "articleRefs": [
+        "3"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Pasaportsuz olarak sınıra gelip Türk vatandaşlığını iddia eden kişinin vatandaşlığı sabit olmazsa ne yapılır?",
+      "back": "Geri çevrilir.",
+      "explanation": "Türkiye Cumhuriyeti nüfus hüviyet cüzdanını ya da hüviyet varakasını ibraz eden ve belgenin kendisine ait olduğu tahakkuk eden kişi Türkiye'ye kabul olunur.",
+      "articleRefs": [
+        "3"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Türk vatandaşları Türkiye'ye gelmek için vize almak zorunda mıdır?",
+      "back": "Hayır. Türk vatandaşları Türkiye'ye gelmek için vize almak mecburiyetine tabi değildir.",
+      "articleRefs": [
+        "5"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Türkiye Cumhuriyeti namına verilecek pasaport nevileri hangileridir?",
+      "back": "Diplomatik, hususi damgalı, hizmet damgalı, umuma mahsus ve yabancılara mahsus pasaportlar.",
+      "explanation": "Pasaport yerine geçerli vesikalar ayrı bir bentte düzenlenir. Bunlar pasaport nevi değildir.",
+      "articleRefs": [
+        "12"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Umuma mahsus pasaportlar yalnız münferit olarak mı düzenlenir?",
+      "back": "Hayır. Umuma mahsus pasaportlar münferit veya müşterek olur.",
+      "explanation": "Münferit ya da müşterek olabileceği açıkça belirtilen tek pasaport nevi umuma mahsus pasaporttur.",
+      "articleRefs": [
+        "12"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Pasaport yerine geçerli vesikalar hangileridir?",
+      "back": "Pasavanlar, idari mektuplar ve hudut geçiş belgeleri; gemiadamı cüzdanları, demiryolu ve hava ulaşım araçları memur ve mürettebatına verilen vesikalar; seyahat belgesi ve benzeri belgeler.",
+      "articleRefs": [
+        "12"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Diplomatik pasaportları hangi makamlar verir?",
+      "back": "Dışişleri Bakanlığı verir; yabancı memleketlerde ise Türkiye Cumhuriyeti büyükelçilik ve elçilikleri verir.",
+      "explanation": "Diplomatik pasaportlar hiçbir harç veya resme tabi değildir. Pasaportta sahibinin ve varsa refakat hanesinde kayıtlı bulunanların birer kıta fotoğrafisi bulunmalıdır.",
+      "articleRefs": [
+        "13"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Muvakkat görev veya seyahat için gidenlere verilen diplomatik pasaport, bir seyahate mahsus değilse en çok ne kadar süre için verilir?",
+      "back": "Azami iki sene için verilir. Süre, görevin veya seyahatin mahiyetine göre belirlenir.",
+      "articleRefs": [
+        "13"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Daimi görevle yurt dışına gidenlere verilen diplomatik pasaportun geçerliliği azami iki seneyle sınırlı mıdır?",
+      "back": "Hayır. Daimi görevle gidenlerin diplomatik pasaportu, Dışişleri Bakanlığınca tespit edilecek sürede geçerlidir. Azami iki sene kaydı muvakkat görev veya seyahat için gidenlere uygulanır.",
+      "articleRefs": [
+        "13"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Diplomatik ya da hususi damgalı pasaport hak sahibinin yanında yaşayan, evli ve iş sahibi olmayan, öğrenimi devam eden ergin çocuğuna hangi yaşa kadar aynı nevi pasaport verilir?",
+      "back": "25 yaşının ikmaline kadar verilir.",
+      "explanation": "Ergin olmayan çocuklara da aynı nevi pasaport verilir. Sürekli bakıma muhtaç olduğu resmi sağlık kurumlarının düzenlediği sağlık kurulu raporuyla belgelenen ergin çocuklar da yararlanır. Bunun için çocuğun bedensel, zihinsel veya ruhsal engellerinden en az biri bulunmalı; yanlarında yaşamalı, evli ve iş sahibi olmamalıdır.",
+      "articleRefs": [
+        "13",
+        "14"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Belediye başkanlarından hangilerine diplomatik pasaport verilir?",
+      "back": "Büyükşehir belediye başkanlarına verilir.",
+      "explanation": "Aynı fıkrada diplomatik pasaport verilenler arasında valiler, bakan yardımcıları, Diyanet İşleri Başkanı, Türkiye Büyük Millet Meclisi eski üyeleri ve siyasi kuryeler de sayılır.",
+      "articleRefs": [
+        "13"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Hangi derece kadrolarda bulunan Devlet memurları ve diğer kamu görevlilerine hususi damgalı pasaport verilir?",
+      "back": "Birinci, ikinci ve üçüncü derece kadrolarda bulunanlara verilir. Bu kişiler diplomatik pasaport gerektirmeyen bir resmi vazifeyle ya da kendi hesaplarına yabancı ülkelere gittiklerinde bu pasaportu alır.",
+      "explanation": "Emeklilik veya çekilme sebebiyle vazifesinden ayrılmış olanlara da bu nevi pasaport verilir. Bunlar durumlarını gösteren belgelerle doğrudan İçişleri Bakanlığına müracaat eder.",
+      "articleRefs": [
+        "14"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Baro levhasına yazılı bir avukata hususi damgalı pasaport verilebilmesi için en az ne kadar kıdem aranır?",
+      "back": "En az on beş yıl kıdem aranır. Ayrıca kanunda sayılan suçlardan hakkında soruşturma veya kovuşturma bulunmaması gerekir.",
+      "explanation": "Bu suçlar şunlardır: Türk Ceza Kanununun İkinci Kitap Dördüncü Kısım Dördüncü, Beşinci, Altıncı ve Yedinci Bölümünde tanımlanan suçlar ile Terörle Mücadele Kanunu kapsamına giren suçlar. Usul ve esasları İçişleri Bakanlığı yönetmelikle belirler; yönetmelik için Dışişleri Bakanlığı ile Adalet Bakanlığının olumlu görüşü alınır.",
+      "articleRefs": [
+        "14"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Yıllık ortalama ihracat tutarı Cumhurbaşkanının belirleyeceği değerin üzerinde olan firma yetkililerine hususi damgalı pasaport ne kadar süreyle verilebilir?",
+      "back": "Dört yıl süreyle verilebilir. Esasları Cumhurbaşkanı belirler.",
+      "articleRefs": [
+        "14"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Hususi damgalı pasaportlar ile umuma mahsus münferit pasaportlar en az ne kadar süre geçerli olmak üzere düzenlenir?",
+      "back": "En az altı ay; süreyi İçişleri Bakanlığı belirler. Umuma mahsus münferit pasaportta Kanunda yazılı istisnalar saklıdır.",
+      "explanation": "Hizmet damgalı pasaportlar da altı aydan az olmamak üzere düzenlenir; bunlarda süre, pasaport sahibinin görevinin müddetine göre tespit edilir. Umuma mahsus münferit pasaportlarda Kanunda yazılı istisnalar saklıdır.",
+      "articleRefs": [
+        "14",
+        "15"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "İhracatçı firma yetkilisine hususi damgalı pasaport verilirken yıllık ortalama ihracat tutarı hangi döneme göre değerlendirilir?",
+      "back": "Son üç yıla göre değerlendirilir. Bu dönemdeki yıllık ortalama ihracat tutarı, Cumhurbaşkanının belirleyeceği değerin üzerinde olmalıdır.",
+      "articleRefs": [
+        "14"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "İhracatçı firma yetkilisine hususi damgalı pasaport verilmesine, kasten işlenen bir suçtan alınmış hangi süredeki hapis cezası engel olur?",
+      "back": "Bir yıl veya daha fazla süreyle hapis cezası engel olur. Türk Ceza Kanununun 53 üncü maddesinde belirtilen süreler geçmiş olsa bile engel devam eder.",
+      "explanation": "Maddede sayılan suçlardan mahkûm olmamak da şarttır. Bu suçlar arasında Devletin güvenliğine karşı suçlar, zimmet, rüşvet, hırsızlık, dolandırıcılık, sahtecilik ve kaçakçılık bulunur.",
+      "articleRefs": [
+        "14"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Hususi damgalı pasaport almaya hakkı varken vefat eden kişinin, başkasıyla evlenmiş dul eşine aynı nevi pasaport verilebilir mi?",
+      "back": "Hayır. Dul eşe aynı neviden pasaport, ancak başkası ile evlenmemiş olması kaydıyla verilebilir.",
+      "explanation": "Hak sahibi hayattayken, hususi damgalı pasaport alabilecek durumda bulunanların eşlerine de aynı nevi pasaport verilir.",
+      "articleRefs": [
+        "14"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Yurt içinde hususi damgalı pasaportu ve Türk vatandaşlarının umuma mahsus münferit pasaportunu hangi bakanlık verir?",
+      "back": "İçişleri Bakanlığı verir. Umuma mahsus pasaportları, İçişleri Bakanının vereceği yetkiye göre valilikler de verebilir.",
+      "explanation": "Hususi ve hizmet damgalı pasaportlar, talep edenin mensup bulunduğu makamın yetkili amirinin başvurusu üzerine verilir. Yabancı memleketlerde umuma mahsus pasaportları Türkiye Cumhuriyeti konsoloslukları verir.",
+      "articleRefs": [
+        "14",
+        "15"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Hususi ve hizmet damgalı pasaportları büyükelçilik ve elçilikler yalnız Dışişleri Bakanlığının talimatıyla verebilir mi?",
+      "back": "Hayır. Yetkili amirin başvurusu aynı şekilde aranır; ayrıca İçişleri Bakanlığının muvafakati ve Dışişleri Bakanlığının talimatı birlikte gerekir.",
+      "articleRefs": [
+        "14"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Süresi biten hususi ve hizmet damgalı pasaportlar, büyükelçilik ve elçiliklerce kaç defa uzatılabilir?",
+      "back": "Beşer defa uzatılabilir; her uzatma aynı müddetler için yapılır.",
+      "explanation": "Uzatma için de yetkili amirin başvurusu, İçişleri Bakanlığının muvafakati ve Dışişleri Bakanlığının vereceği talimat gerekir.",
+      "articleRefs": [
+        "14"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Umuma mahsus pasaportun refakat hanesine kimler kaydolunur?",
+      "back": "Pasaport sahibi talep ederse, reşit olmayan kız ve erkek çocukları kaydolunur.",
+      "articleRefs": [
+        "15"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Refakat hanesine yazılı çocuk, pasaport sahibi yanında olmadan o pasaportla seyahat edebilir mi?",
+      "back": "Hayır. Refakat hanesine yazılı olanlar, adına pasaport verilmiş kişi beraberlerinde bulunmadıkça o pasaportla seyahat edemez.",
+      "articleRefs": [
+        "15"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Askerlik hizmetini yapmak üzere memlekete celp edilen Türk vatandaşının pasaportu, Türkiye'ye dönüşü için ne kadar süreyle uzatılır?",
+      "back": "Bir ay süreyle uzatılır.",
+      "explanation": "Yabancı memleketlerde yoksul kaldığı sabit olan Türk vatandaşlarının pasaportu da aynı şekilde uzatılır. Pasaportu olmayanlara bir ay süreli seyahat belgesi verilir.",
+      "articleRefs": [
+        "15"
+      ]
+    }
+  ]
+}

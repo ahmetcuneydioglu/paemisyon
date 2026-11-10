@@ -1,0 +1,272 @@
+{
+  "deck": {
+    "topicId": "0334bf9e-f6c1-4073-89cf-f82d02b3bfa3",
+    "legislationSlug": "ozel-guvenlik-hizmetlerine-dair-kanunun-uygulanmasina-iliskin-yonetmelik",
+    "sourceLabel": "AI bilgi kartı — Özel Güvenlik Hizmetlerine Dair Kanunun Uygulanmasına İlişkin Yönetmelik md 34–47, Ek 1, Ek 2, 48–50",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: resmî madde metni + çıkmış sorular)"
+  },
+  "cards": [
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Özel güvenlik görevlileri ile yöneticiler, kimlik kartlarını yenileyebilmek için ne sıklıkla yenileme eğitimi alır?",
+      "back": "Beş yılda bir. Bu eğitim, kimlik kartının yenilenebilmesi için alınır.",
+      "explanation": "Yenileme eğitimine katılan özel güvenlik görevlileri ile yöneticilerin hizmet ve iş akitleri devam eder. Eğitim süresince özlük haklarından yoksun bırakılamazlar.",
+      "articleRefs": [
+        "34"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Özel güvenlik yenileme eğitiminin kaç ders saati silah bilgisi ve atış dersine ayrılır?",
+      "back": "Sekiz ders saati; yenileme eğitimi en az altmış ders saatinden oluşur.",
+      "explanation": "Ders konuları ve saatleri Ek-13'te gösterilir. Eğitim günlük sekiz saat ve haftada kırksekiz saatten fazla olamaz. Bir ders saati kırk dakikadır ve iki ders arasında en az on dakika ara verilir.",
+      "articleRefs": [
+        "34"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Özel güvenlik şirketinden koruma ve güvenlik hizmeti alan bir yer, yenileme eğitimini kendi yerinde yaptırabilir mi?",
+      "back": "Hayır. Şirketten koruma ve/veya güvenlik hizmeti alanlar yerinde yenileme eğitimi yapamaz. Bu imkân, bünyesinde özel güvenlik birimi bulunan ve en az yirmi görevli istihdam eden yerlere tanınır.",
+      "explanation": "Yerinde eğitim için yeterli araç-gereç ve materyalle sınıf ortamı oluşturulması gerekir. İl valiliğinin yerinde yapacağı incelemede de uygun bulunması şarttır. Eğitim, Ek-13'teki müfredata göre fiilen hizmet verilen yerde yapılır.",
+      "articleRefs": [
+        "34"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Özel eğitim kurumundaki aday, bir dersin ne kadarından fazlasına devam etmezse o dersi tamamlamamış sayılır?",
+      "back": "%25'inden fazlasına devam etmeyen aday, o dersi tamamlamamış sayılır.",
+      "explanation": "Devam durumu, özel eğitim kurumlarınca her dersin sonunda düzenlenen devam çizelgesiyle gösterilir. Temel, yenileme ve alan eğitim programını bir yıl içinde tamamlamayanın kursla ilişiği kesilir.",
+      "articleRefs": [
+        "35"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Özel güvenlik sınavlarında uygulamalı sınav komisyonlarında görevlendirilecek personeli kim belirler?",
+      "back": "Valilik belirler. Bakanlıkça belirlenen sayıdaki yazılı sınav gözlemcilerini de valilik belirler.",
+      "explanation": "Temel ve yenileme eğitimini tamamlayanlar yazılı ve uygulamalı sınava tabi tutulur. Yazılı sınav, merkezi sınav komisyonunca hazırlanan sorularla illerde yapılır.",
+      "articleRefs": [
+        "36"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Özel güvenlik yazılı sınavının yeri, tarihi ve başvuru süresi en az kaç gün önceden ilan edilir?",
+      "back": "En az on beş gün önceden. Bu hususları ildeki özel güvenlik komisyonu (Komisyon) belirler ve ilan eder.",
+      "explanation": "Başvuru sırasında istenecek belgeler ve diğer hususlar da bu süre içinde ilan edilir. Yazılı sınav sorularını da Merkezi Sınav Komisyonu hazırlar.",
+      "articleRefs": [
+        "37"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Temel eğitim yazılı sınavının birinci kısmı kaç sorudan oluşur?",
+      "back": "80 sorudan oluşur. Adayların silah bilgisinin ölçüldüğü ikinci kısım ise 20 sorudur.",
+      "explanation": "Sorular, eğitim modüllerinin ağırlığına göre ve konuların tamamını kapsayacak şekilde hazırlanır. Sorular çoktan seçmelidir.",
+      "articleRefs": [
+        "37"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Yenileme eğitimi yazılı sınavının birinci kısmı da 80 sorudan mı oluşur?",
+      "back": "Hayır. Yenileme eğitimi yazılı sınavının birinci kısmı 40 sorudur. 80 soru, temel eğitim sınavının birinci kısmıdır.",
+      "explanation": "İki sınavda da silah bilgisini ölçen ikinci kısım 20 sorudan oluşur ve sorular çoktan seçmelidir.",
+      "articleRefs": [
+        "37"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Uygulamalı sınavda adayın atış becerisi kaç fişek üzerinden ölçülür?",
+      "back": "5 adet fişek üzerinden ölçülür. Atışın yapılacağı mesafeyi Bakanlık belirler.",
+      "explanation": "Uygulamalı sınav, yazılı sınavdan hemen sonra yapılır. Aday sayısı fazlaysa illerde birden fazla uygulamalı sınav komisyonu oluşturulabilir. Sınav aynı gün bitirilemezse devam eden günlerde tamamlanabilir.",
+      "articleRefs": [
+        "38"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Silahlı görev yapacak özel güvenlik adayı başarılı sayılmak için en az kaç puan almalıdır?",
+      "back": "Yazılı sınavın her iki kısmından ve uygulamalı sınavdan ayrı ayrı en az 60 puan almalıdır.",
+      "explanation": "Yazılı sınavın birinci ve ikinci kısmı ile uygulamalı sınav, ayrı ayrı 100 puan üzerinden değerlendirilir. Silahsız görev yapacak olanlar yalnız yazılı sınavın birinci kısmındaki soruları cevaplar. Bu kısımdan en az altmış puan alırlarsa başarılı sayılırlar.",
+      "articleRefs": [
+        "39"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Özel güvenlik sınav puanı hesaplanırken yazılı sınavın birinci kısım puanının yüzde kaçı alınır?",
+      "back": "%50'si alınır. Buna yazılı sınavın ikinci kısım puanının %25'i ile uygulamalı sınav puanının %25'i eklenir.",
+      "explanation": "Toplamaya giren her puan önce ayrı ayrı 100 puan üzerinden belirlenir.",
+      "articleRefs": [
+        "39"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Sınavda başarısız olan aday, kursa yeniden devam etmeden altı sınava daha girebilir mi?",
+      "back": "Hayır. Kursa yeniden devam etmeden bir yıl içinde birbirini takip eden beş sınava daha girebilir. Toplam altı sınavda da başarısız olursa yeniden kursa devam şartı aranır.",
+      "explanation": "Toplam altı sınav sonunda başarısız sayılan adaylarda da tekrar özel eğitim kursuna devam şartı aranır.",
+      "articleRefs": [
+        "39"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Yenileme eğitimine katılan özel güvenlik görevlisine Özel Güvenlik Eğitim Sertifikası hangi durumda verilir?",
+      "back": "Yazılı ve uygulamalı sınavlarda seviye puanı yeniden belirlendiğinde verilir. Ek-12'deki sertifika valilikçe onaylanır.",
+      "explanation": "Temel eğitimde sertifika, temel eğitim sonrasındaki yazılı ve uygulamalı sınavlar ile alan eğitimi sınavında başarılı olanlara verilir.",
+      "articleRefs": [
+        "41"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Alan eğitimi sertifikası beş yıl süreyle mi geçerlidir?",
+      "back": "Hayır. Alan eğitimi sertifikası süresiz geçerlidir. Beş yıl süreli olanlar, temel eğitim ve yenileme eğitimi sertifikalarıdır.",
+      "articleRefs": [
+        "41"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Özel güvenlik eğitiminde kullanılacak yayınlar hangi şartı taşımalıdır?",
+      "back": "Emniyet Genel Müdürlüğü Yayın Yönetmeliği'ne göre tavsiye edilmiş yayınlardan olmalıdır.",
+      "explanation": "Uygulamalı dersler için ayrıca yeterli ekipman hazır bulundurulur.",
+      "articleRefs": [
+        "42"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Özel güvenlik eğitiminde tavsiye edilmiş yayın şartı hangi materyalde aranmaz?",
+      "back": "Üniversitelerde ders kitabı ve ekipmanı olarak kullanılan materyalde aranmaz.",
+      "articleRefs": [
+        "42"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Bakanlık ve valilikler özel güvenlik şirketlerini ve özel eğitim kurumlarını ne zaman denetleyebilir?",
+      "back": "Her zaman denetleyebilir. Alarm izleme merkezleri ve özel güvenlik birimleri de bu denetime tabidir.",
+      "explanation": "Denetimin amacı üç noktayı tespit etmektir: Kanun ve Yönetmelik hükümlerinin yerine getirilip getirilmediği, yasak uygulama ve davranış bulunup bulunmadığı, amaç dışında faaliyet gösterilip gösterilmediği.",
+      "articleRefs": [
+        "43"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Denetimde özel güvenlik görevlileri için hangi sigortanın yaptırılıp yaptırılmadığı incelenir?",
+      "back": "Mali sorumluluk sigortasının yaptırılıp yaptırılmadığı incelenir.",
+      "explanation": "Denetimde incelenenler arasında şunlar da vardır: faaliyet izni ile personelin çalışma izinlerinin geçerliliği, silah ve teçhizatın ruhsatlı olup olmadığı ve usulüne uygun korunup korunmadığı, kayıt ve defterlerin usulüne uygun tutulup tutulmadığı.",
+      "articleRefs": [
+        "44"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Denetimde tespit edilen eksikliklerin giderilmesi için en az ne kadar süre verilir?",
+      "back": "Asgari yedi gün verilir. Süre eksikliğin niteliğine göre belirlenir ve eksiklikler yazılı olarak bildirilir.",
+      "explanation": "Süre sonunda eksiklikler giderilmezse ya da suç teşkil eden uygulamalar tespit edilirse Kanunun 19 uncu ve 20 nci maddesinde belirtilen cezalar uygulanır. Raporun bir sureti denetlenen birimin dosyasında saklanır, diğer sureti valiliğe, ilgisine göre bir sureti de Bakanlığa sunulur.",
+      "articleRefs": [
+        "45"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Amacı dışında faaliyet gösterdiği tespit edilen alarm izleme merkezinin yeterlilik belgesini Bakanlık mı iptal eder?",
+      "back": "Hayır. Alarm izleme merkezinin yeterlilik belgesini valilik iptal eder. Bakanlık ise şirketlerin ve özel eğitim kurumlarının faaliyet iznini iptal eder.",
+      "explanation": "İptal sebebi, amacı dışında faaliyet gösterildiğinin ya da suç kaynağına dönüşüldüğünün tespit edilmesidir.",
+      "articleRefs": [
+        "45"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Özel güvenlikle ilgili idari para cezası bir ilçede kimin onayıyla verilir?",
+      "back": "Kaymakamın onayıyla verilir. İllerde ise valinin onayıyla verilir.",
+      "explanation": "Kanunun 20 nci maddesindeki hallerde önce suça ilişkin tutanaklar eklenir. İlgili kişi ve kuruluşa en az yedi gün süre verilerek savunması istenir. Ceza, savunması yeterli görülmeyene verilir.",
+      "articleRefs": [
+        "46"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Özel güvenlik eğitim, sınav ve belgelendirme ücretlerini kim belirler?",
+      "back": "Bakanlık belirler.",
+      "explanation": "Bu ücretlerle ilgili iş ve işlemler, ilgisine göre Polis Akademisi Başkanlığı veya Jandarma ve Sahil Güvenlik Akademisi Başkanlığı Döner Sermaye İşletmeleri vasıtasıyla yürütülür.",
+      "articleRefs": [
+        "Ek 1"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Özel güvenlik eğitim kurumlarının ders saati taban ücretlerini kim belirler?",
+      "back": "Komisyon belirler. Belirlemeye özel güvenlik alanındaki sivil toplum kuruluşu ile eğitim kurumu temsilcisi de katılır.",
+      "explanation": "Belirlemede eğitimin maliyeti ile bulunduğu il/ilçenin ekonomik koşulları da dikkate alınır. Uygulamaya ilişkin diğer usul ve esasları Bakanlık belirler.",
+      "articleRefs": [
+        "Ek 2"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Komisyonun belirlediği ders saati taban ücretleri hangi tarihten itibaren uygulanır?",
+      "back": "1 Şubat tarihinden itibaren bir yıl süreyle uygulanır.",
+      "explanation": "Taban ücretler her yıl Ocak ayı içerisinde duyurulur.",
+      "articleRefs": [
+        "Ek 2"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Eğitim kurumu, Komisyonun belirlediği taban ücretin altında bir ücretle eğitim kaydı yapabilir mi?",
+      "back": "Hayır. Eğitim kurumları, Komisyonun belirlediği taban ücretin altında bir ücretle eğitim kaydı yapamaz.",
+      "articleRefs": [
+        "Ek 2"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Özel Güvenlik Hizmetlerine Dair Kanunun Uygulanmasına İlişkin Yönetmelik hükümlerini kim yürütür?",
+      "back": "İçişleri Bakanı yürütür.",
+      "articleRefs": [
+        "50"
+      ]
+    }
+  ]
+}

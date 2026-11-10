@@ -1,0 +1,302 @@
+{
+  "deck": {
+    "topicId": "3f91916c-8d15-40f4-bb20-5bcca9253c34",
+    "legislationSlug": "2918-sayili-karayollari-trafik-kanunu",
+    "sourceLabel": "AI bilgi kartı — 2918 Sayılı Karayolları Trafik Kanunu md 1–3",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: resmî madde metni + çıkmış sorular)"
+  },
+  "cards": [
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "2918 sayılı Karayolları Trafik Kanununun amacı nedir?",
+      "back": "Karayollarında can ve mal güvenliği yönünden trafik düzenini sağlamak ve trafik güvenliğini ilgilendiren tüm konularda alınacak önlemleri belirlemek.",
+      "explanation": "Amaç hem trafik düzenini sağlamayı hem de trafik güvenliğine ilişkin önlemleri belirlemeyi kapsar. Ölçüt, can ve mal güvenliğidir.",
+      "articleRefs": [
+        "1"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Karayolları Trafik Kanunu temel olarak hangi yerlerde uygulanır?",
+      "back": "Karayollarında. Karayolu, trafik için kamunun yararlanmasına açık olan arazi şeridi, köprüler ve alanlardır.",
+      "explanation": "Aksine bir hüküm yoksa Kanun, karayolu dışındaki kamuya açık alanlarda ve maddede sayılan bazı yerlerde de uygulanır.",
+      "articleRefs": [
+        "2",
+        "3"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Aksine hüküm yoksa karayolu dışında kalan hangi yerlerde de Kanun hükümleri uygulanır?",
+      "back": "Karayolu dışındaki alanlardan kamuya açık olanlarda. Ayrıca park, bahçe, park yeri, garaj, yolcu ve eşya terminali, servis ve akaryakıt istasyonlarında karayolu taşıt trafiği için faydalanılan yerlerde.",
+      "explanation": "Bu yerlerde ölçüt, alanın karayolu taşıt trafiği için kullanılmasıdır. Uygulama \"aksine bir hüküm yoksa\" kaydına bağlıdır.",
+      "articleRefs": [
+        "2"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Para ödenerek yararlanılan karayollarının hangi kesimlerinde Kanun hükümleri uygulanır?",
+      "back": "Kamuya açık kesimlerinde; aksine bir hüküm bulunmaması kaydıyla.",
+      "explanation": "Aynı bentte erişme kontrollü karayolu da anılır. Aksine bir hüküm yoksa Kanun hükümleri erişme kontrollü karayolunda da uygulanır.",
+      "articleRefs": [
+        "2"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Bir karayolunun bağlantısını sağlayan deniz, göl ve akarsular üzerinde kamu hizmeti gören araçların hangi kısmında Kanun hükümleri uygulanır?",
+      "back": "Karayolu araçlarına ayrılan kısımlarında; aksine bir hüküm yoksa.",
+      "explanation": "Hüküm, karayolu bağlantısı sağlayan ve kamu hizmeti gören su araçlarının yalnızca karayolu araçlarına ayrılmış bölümlerini Kanunun uygulama alanına katar.",
+      "articleRefs": [
+        "2"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 1,
+      "front": "Taşıt yolunun her iki yöndeki taşıt trafiği için kullanıldığı karayoluna bölünmüş karayolu mu denir?",
+      "back": "Hayır; buna iki yönlü karayolu denir. Bölünmüş karayolu, bir yöndeki trafiğe ait taşıt yolunun bir ayırıcı ile diğer taşıt yolundan ayrılmasıyla oluşur.",
+      "explanation": "Tek yönlü karayolunda taşıt yolu yalnız bir yöndeki taşıt trafiği için kullanılır. Bölünmüş karayolunu belirleyen öğe ise ayırıcıdır.",
+      "articleRefs": [
+        "3"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Yapısı itibarıyla otomobilde sürücü dahil en fazla kaç oturma yeri bulunur?",
+      "back": "Dokuz. Otomobil, insan taşımak için imal edilmiş motorlu taşıttır.",
+      "explanation": "Yolcu taşımacılığında kullanılan ve sürücüsü dahil dokuzdan fazla oturma yeri olan motorlu taşıt otobüs sınıfına girer.",
+      "articleRefs": [
+        "3"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Azami yüklü ağırlığı tam 3.500 kilogram olan, yük taşımak için imal edilmiş motorlu taşıt kamyon mudur?",
+      "back": "Hayır; kamyonettir. Kamyonetin azami yüklü ağırlığı 3.500 kilogramı geçmez; kamyonunki ise 3 500 kg'dan fazladır.",
+      "explanation": "Sürücü bölümü gövde ile birleşik olan kamyonetlere panelvan denir. Panelvanda sürücü ve yanındaki oturma yerleri dışında başka oturma yeri de bulunabilir.",
+      "articleRefs": [
+        "3"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Trafik, Kanunda nasıl tanımlanır?",
+      "back": "Yayaların, hayvanların ve araçların karayolları üzerindeki hal ve hareketleridir.",
+      "explanation": "Kanunun amacı, karayollarında can ve mal güvenliği yönünden bu hal ve hareketlerin düzenini, yani trafik düzenini sağlamaktır.",
+      "articleRefs": [
+        "3",
+        "1"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Hangi otobüslere minibüs denir?",
+      "back": "Sürücüsü dahil oturma yeri on yediyi aşmayan otobüslere minibüs denir.",
+      "explanation": "Otobüs, yolcu taşımacılığında kullanılan ve sürücüsü dahil dokuzdan fazla oturma yeri olan motorlu taşıttır. Troleybüsler de bu sınıfa dahildir.",
+      "articleRefs": [
+        "3"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Bir kamu kurumunun kendi aracıyla kendi personelini taşıması personel servis aracı tanımına girer mi?",
+      "back": "Hayır; bu iş tanımın kapsamına girmez. Personel servis aracı, personeli bir akit karşılığı taşıyan şahıs veya şirketlere ait minibüs ve otobüs türündeki ticari araçtır.",
+      "explanation": "Okul taşıtları ile personel servis araçlarının birlikte değerlendirilmesine umum servis aracı denir.",
+      "articleRefs": [
+        "3"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Hafif römorkun azami yüklü ağırlığı en çok kaç kilogramdır?",
+      "back": "750 kg. Bu sınırı geçmeyen römork veya yarı römork hafif römorktur.",
+      "explanation": "Römork, motorlu araçla çekilen ve insan veya yük taşımak için imal edilmiş motorsuz taşıttır.",
+      "articleRefs": [
+        "3"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Erişme kontrollü karayoluna (otoyol - ekspresyol) kimler giremez?",
+      "back": "Yayalar, hayvanlar ve motorsuz araçlar giremez. Bu yoldan izin verilen motorlu araçlar yararlanır.",
+      "explanation": "Bu yol özellikle transit trafiğe tahsis edilir. Belirli yerler ve şartlar dışında giriş ve çıkış yasaktır, trafik de özel kontrola tabidir. Aksine bir hüküm yoksa Kanun hükümleri erişme kontrollü karayolunda da uygulanır.",
+      "articleRefs": [
+        "3",
+        "2"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "İki veya üç tekerlekli bir motorlu taşıtın motosiklet sayılması için hangi eşiklerin aşılması gerekir?",
+      "back": "Azami tasarım hızının 45 km/saatten ve/veya silindir kapasitesinin 50 santimetreküpten fazla olması gerekir. Taşıt sepetli veya sepetsiz olabilir.",
+      "explanation": "Karoseri yük taşıyabilecek şekilde sandıklı veya özel biçimde yapılmış ve yolcu taşımalarında kullanılmayan üç tekerlekli motosiklete yük motosikleti (triportör) denir.",
+      "articleRefs": [
+        "3"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Yük taşımacılığında kullanılmayan dört tekerlekli bir motorlu taşıt, hangi güç ve ağırlık sınırları içinde kalırsa motosiklet sayılır?",
+      "back": "Net motor gücünün 15 kilovatı, net ağırlığının 400 kilogramı aşmaması gerekir.",
+      "explanation": "Bu sınırlar içindeki dört tekerlekli taşıtlar, iki veya üç tekerlekli motosikletlerle aynı tanımda yer alır.",
+      "articleRefs": [
+        "3"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Yük taşımacılığında kullanılan dört tekerlekli motosikletin net ağırlığı en çok kaç kilogram olabilir?",
+      "back": "550 kilogram. Net motor gücü de 15 kilovatı aşmamalıdır.",
+      "explanation": "Yük taşımacılığında kullanılmayan dört tekerlekli motosikletlerde net ağırlık sınırı 400 kilogramdır.",
+      "articleRefs": [
+        "3"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Karayolu sınır çizgisi dışında olan ve bir geçiş yolu veya servis yolu ile taşıt yoluna bağlanan park yerine ne denir?",
+      "back": "Karayolu dışı park yeri. Taşıt yolundaki veya ona bitişik alanlardaki park yerine ise karayolu üzeri park yeri denir.",
+      "explanation": "Aksine bir hüküm yoksa Kanun hükümleri, park yerlerinde karayolu taşıt trafiği için faydalanılan yerlerde de uygulanır.",
+      "articleRefs": [
+        "3",
+        "2"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Elektrikli bir bisikletin bisiklet sınıfına girmesi için azami sürekli anma gücü en çok ne olmalıdır?",
+      "back": "0,25 KW. Ayrıca hızlandıkça gücü düşmeli; hız en fazla 25 km/saate ulaştıktan sonra veya pedal çevrilmesine ara verilince gücü tamamen kesilmelidir.",
+      "explanation": "Bisiklet, üzerindeki insanın adale gücüyle pedal veya el ile tekerleği döndürülerek hareket eden motorsuz taşıttır.",
+      "articleRefs": [
+        "3"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Elektrik motorlu iki veya üç tekerlekli bir taşıtın motorlu bisiklet (moped) sayılması için azami sürekli nominal güç çıkışı en çok kaç kilovattır?",
+      "back": "4 kilovat. Azami hızı da saatte 45 kilometreyi geçmemelidir.",
+      "explanation": "İçten yanmalı motorlu olanlarda ölçüt silindir hacmidir; bu hacim 50 santimetreküpü geçmemelidir.",
+      "articleRefs": [
+        "3"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Dört tekerlekli bir motorlu taşıtın motorlu bisiklet (moped) sayılması için net ağırlığı en çok kaç kilogram olabilir?",
+      "back": "350 kilogram. Taşıt ayrıca iki veya üç tekerlekli mopedlerle aynı özelliklere sahip olmalıdır.",
+      "explanation": "Elektrikle çalışanların net ağırlığı hesaplanırken batarya ağırlıkları dikkate alınmaz.",
+      "articleRefs": [
+        "3"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Araçların genellikle uzun süre durmaları için kullanılan ve bakım veya servisinin de yapılabileceği yere ne denir?",
+      "back": "Garaj. Garaj kapalı veya açık olabilir.",
+      "explanation": "Aksine bir hüküm yoksa Kanun hükümleri, garajlarda karayolu taşıt trafiği için faydalanılan yerlerde de uygulanır.",
+      "articleRefs": [
+        "3",
+        "2"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Ticari olarak tescil edilmemiş bir otomobili karayolunda süren kişi şoför müdür?",
+      "back": "Hayır; sürücüdür. Şoför, karayolunda ticari olarak tescil edilmiş bir motorlu taşıtı süren kişidir.",
+      "explanation": "Sürücü, karayolunda motorlu veya motorsuz bir aracı veya taşıtı sevk ve idare eden kişidir.",
+      "articleRefs": [
+        "3"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Bir olayın trafik kazası sayılması için olaya karışan araç hangi durumda olmalıdır?",
+      "back": "Karayolu üzerinde hareket halinde olmalıdır. Olay ölüm, yaralanma ve zararla sonuçlanmış olmalıdır.",
+      "explanation": "Kazaya bir veya birden fazla araç karışabilir.",
+      "articleRefs": [
+        "3"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Trafik zorunlulukları nedeniyle aracın durdurulması duraklama mıdır?",
+      "back": "Hayır; bu durmadır. Duraklama, trafik zorunlulukları dışında insan indirmek ve bindirmek, eşya yüklemek, boşaltmak veya beklemek amacıyla aracın kısa bir süre durdurulmasıdır.",
+      "explanation": "Park etme ise aracın durma ve duraklaması gereken haller dışında bırakılmasıdır.",
+      "articleRefs": [
+        "3"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Araçların esas itibarıyla akaryakıt, yağ ve basınçlı hava gibi ihtiyaçlarının sağlandığı yere ne denir?",
+      "back": "Akaryakıt istasyonu.",
+      "explanation": "Aksine bir hüküm yoksa Kanun hükümleri, akaryakıt istasyonlarında karayolu taşıt trafiği için faydalanılan yerlerde de uygulanır. Araçların bakım, onarım ve servislerinin yapıldığı yer ise servis istasyonudur.",
+      "articleRefs": [
+        "3",
+        "2"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Görev sırasında belirli araç sürücülerinin trafik kısıtlama veya yasaklarına bağlı olmamasına geçiş hakkı mı denir?",
+      "back": "Hayır; buna geçiş üstünlüğü denir. Geçiş üstünlüğü, can ve mal güvenliğini tehlikeye sokmamak şartına bağlıdır.",
+      "explanation": "Geçiş hakkı, yayaların ve araç kullananların, diğer yaya ve araç kullananlara göre yolu kullanma sırasındaki öncelik hakkıdır.",
+      "articleRefs": [
+        "3"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Trafikten men nedir?",
+      "back": "Trafik zabıtasınca, Kanunda belirtilen hallerde araçla ilgili belgelerin alınması ve aracın belirli bir yere çekilerek trafikten alıkonulmasıdır.",
+      "explanation": "Tedbiri trafik zabıtası uygular. Tanım, belgelerin alınmasını ve aracın çekilerek alıkonulmasını birlikte içerir.",
+      "articleRefs": [
+        "3"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Elektrikli skuterin (e-skuter) hızı en fazla kaç km/saate ulaşır?",
+      "back": "25 km/saat. E-skuter ayakta kullanılan, tekerlekli bir taşıttır.",
+      "explanation": "Ayak tahtası ve tutamağı olabilir, dikey bir direksiyon mekanizması içerebilir. Bisiklet yolu ve bisiklet şeridi, bisiklet ile elektrikli skuter kullanımına ayrılmıştır.",
+      "articleRefs": [
+        "3"
+      ]
+    }
+  ]
+}

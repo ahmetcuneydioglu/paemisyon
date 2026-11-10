@@ -1,0 +1,232 @@
+{
+  "deck": {
+    "topicId": "f614ccc4-e39b-4715-ba55-f8a621775354",
+    "legislationSlug": "emniyet-performans-degerlendirme-yonetmeligi",
+    "sourceLabel": "AI bilgi kartı — Emniyet Performans Değerlendirme Yönetmeliği md 1–10",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: resmî madde metni + çıkmış sorular)"
+  },
+  "cards": [
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Emniyet Genel Müdürlüğü performans değerlendirme yönetmeliği hangi sistemin uygulanmasına ilişkin usul ve esasları düzenler?",
+      "back": "Emniyet Teşkilatı kadrolarında çalışan personele yönelik kurum içi bireysel performans değerlendirme sisteminin.",
+      "articleRefs": [
+        "1"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Emniyet Teşkilatında görevli akademik kadrolu personel, performans değerlendirme yönetmeliğinin kapsamına girer mi?",
+      "back": "Hayır. Akademik kadrolu personel, sözleşmeli personel ve işçiler kapsam dışında tutulur.",
+      "explanation": "Bu istisnalar dışında Emniyet Teşkilatında görevli tüm hizmet sınıflarındaki personel Yönetmeliğin kapsamındadır.",
+      "articleRefs": [
+        "2"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Performans değerlendirme yönetmeliği, 3201 sayılı Emniyet Teşkilatı Kanununun hangi maddesine dayanılarak hazırlanmıştır?",
+      "back": "85 inci maddesine; dayanak 4/6/1937 tarihli ve 3201 sayılı Emniyet Teşkilatı Kanunudur.",
+      "articleRefs": [
+        "3"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Performans değerlendirme yönetmeliğindeki \"maddi hata\" tanımında hangi hususlar sayılır?",
+      "back": "Hesaplama hataları, değerlendirme amirlerinin yanlış belirlenmesi, yanlış form düzenlenmesi ve PBS üzerinden doldurulmayan formların PBS'ye yanlış kaydedilmesi gibi hususlar.",
+      "explanation": "Hatalar performans değerlendirme sürecinde yapılanlardır ve tanım \"gibi hususları\" ifadesiyle biter. PBS, Personel Bilgi Sistemi olarak adlandırılan bilgisayar programıdır.",
+      "articleRefs": [
+        "4"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Performans değerlendirme yönetmeliğine göre \"birim amiri\" kimleri ifade eder?",
+      "back": "Emniyet Genel Müdürünü, Emniyet Genel Müdür Yardımcılarını ve merkez, taşra ve yurt dışı birimlerinin rütbe bakımından en üst dereceli başkanını/müşavirini/müdürünü/amirini.",
+      "articleRefs": [
+        "4"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Bir performans değerlendirme alanı içindeki ölçütlerin ağırlık katsayısını kim belirler?",
+      "back": "Performans Değerlendirme Kurulu; katsayı Kurulca belirlenir.",
+      "explanation": "Kurul, değerlendirme amirleri cetvelini de belirler; bu cetvelde personelin performansını değerlendirmekle görevli amirler görev unvanı olarak gösterilir.",
+      "articleRefs": [
+        "4"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Performans değerlendirmesinin esas amacı nedir?",
+      "back": "Görevli personelin işindeki başarı düzeyini ölçmek ve mesleki gelişimini sağlayarak kurum hizmetlerinin verimini arttırmak.",
+      "explanation": "Başarı düzeyi, Genel Müdürlükçe üstlenilen görevlerin, belirlenen stratejik plan ve hedeflerin yerine getirilmesindeki başarı üzerinden ölçülür.",
+      "articleRefs": [
+        "5"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Yönetmeliğe göre performans değerlendirmesinde ne esastır?",
+      "back": "Açıklık ve şeffaflık esastır.",
+      "explanation": "Değerlendirme amirleri de personelin performansını adil, tarafsız, önyargısız ve doğru bir şekilde değerlendirmek zorundadır.",
+      "articleRefs": [
+        "5"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Performans Değerlendirme Kurulu kimlerden oluşur?",
+      "back": "Genel Müdür veya görevlendireceği bir Genel Müdür Yardımcısının başkanlığında Teftiş Kurulu Başkanı, Birinci Hukuk Müşaviri, Polis Akademisi Başkanı, Personel Dairesi Başkanı ve Strateji Geliştirme Daire Başkanından.",
+      "explanation": "Kurul Genel Müdürlükte oluşturulur. Kurulun çalışmalarına hazırlık ve raportörlük hizmetlerini Personel Dairesi Başkanlığı yürütür.",
+      "articleRefs": [
+        "6"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Performans Değerlendirme Kurulu başkan hariç salt çoğunlukla mı toplanır?",
+      "back": "Hayır. Kurul başkan dahil salt çoğunlukla toplanır; kararlar oy çokluğu ile alınır.",
+      "explanation": "Oylarda eşitlik halinde başkanın katıldığı tarafın oyu üstün sayılır.",
+      "articleRefs": [
+        "6"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Performans Değerlendirme Kurulu yılda en az kaç kez toplanır?",
+      "back": "En az bir kez; Kurul, Kurul Başkanının çağrısı üzerine toplanır.",
+      "articleRefs": [
+        "6"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Performans Değerlendirme Kurulu her personel için genel olarak kaç değerlendirme amiri belirler?",
+      "back": "İki. Amirler, en alt basamak olarak büro amiri ve dengi amirler esas alınarak görev unvanına ve teşkilat yapısına göre kademe kademe belirlenir.",
+      "explanation": "Görev unvanı ve hiyerarşik bağlılık nedeniyle birden fazla amir belirlenemiyorsa Kurul tek değerlendirme amiri belirler. Görev yapılan yer, personel sayısı, iş yükü gibi ölçütlere göre daha alt ve daha üst kademedeki hiyerarşik amirler de değerlendirme amiri olarak belirlenebilir.",
+      "articleRefs": [
+        "7"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Değerlendirme amiri ile personel arasında ikinci dereceye kadar kan hısımlığı varsa değerlendirmeyi en fazla süreyle çalıştığı birim amiri mi yapar?",
+      "back": "Hayır. O amir atlanarak cetveldeki diğer değerlendirme amiri yapar; birim amiri ancak birinci ve ikinci değerlendirme amiri de aynı durumdaysa değerlendirir.",
+      "explanation": "Aynı kural, sonradan kalksa bile evlilik bağı ve evlat edinme ilişkisi bulunması halinde de uygulanır.",
+      "articleRefs": [
+        "7"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Emniyet Genel Müdürünün birinci ve ikinci değerlendirme amiri sırasıyla kimdir?",
+      "back": "Birinci değerlendirme amiri Bakan Yardımcısı, ikinci değerlendirme amiri Bakandır (İçişleri Bakanı).",
+      "explanation": "Bakan Yardımcısı, görev dağılımında birimin bağlı olduğu Bakan Yardımcısıdır. Emniyet Genel Müdürünün birinci değerlendirme amiri olduğu personelin ikinci değerlendirme amiri de Bakandır; Bakan bu yetkisini ilgili Bakan Yardımcısına devredebilir.",
+      "articleRefs": [
+        "7",
+        "4"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Aday memurlar dışındaki personelin yıllık performans değerlendirmesi her yıl hangi tarihler arasında yapılır?",
+      "back": "1 Ocak-31 Ocak tarihleri arasında, yılda bir kez ve Personel Bilgi Sistemi (PBS) üzerinden yapılır.",
+      "explanation": "Değerlendirilen dönem 1 Ocak-31 Aralık arasıdır. Hukuken kabul edilebilir mazereti olmaksızın süresinde değerlendirme yapmayanlar hakkında 7068 sayılı Kanun hükümleri uygulanır.",
+      "articleRefs": [
+        "8"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Aday memurların performans değerlendirmesi hangi tarihe kadar yapılır?",
+      "back": "Dönem bitiş tarihini takip eden bir sonraki ayın yedinci gününe kadar; değerlendirme Personel Bilgi Sistemi (PBS) üzerinden yapılır.",
+      "explanation": "Aday memurlar, 1 Ocak-31 Aralık tarihleri arasını kapsayan yıllık değerlendirmenin dışında tutulur.",
+      "articleRefs": [
+        "8"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Birime bağlı tüm personelin değerlendirmesinin zamanında yapılmasından kim sorumludur?",
+      "back": "Personel işlerinden sorumlu şube müdürü/büro amiri.",
+      "explanation": "Kendisine bağlı personelin değerlendirmesinin zamanında yapılmasından ikinci değerlendirme amiri, ikinci değerlendirme amiri bulunmayan durumlarda birinci değerlendirme amiri sorumludur.",
+      "articleRefs": [
+        "8"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Personelin performansı değerlendirilirken hangi formlar kullanılır?",
+      "back": "Performans gözlem ve takip formu ile performans değerlendirme formu.",
+      "articleRefs": [
+        "9"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Performans gözlem ve takip formu, performans değerlendirme puanını belirleyen esas form mudur?",
+      "back": "Hayır. Esas form performans değerlendirme formudur; gözlem ve takip formu esas değerlendirmeye hazırlayıcı nitelikte bir formdur.",
+      "explanation": "Gözlem ve takip formunda kayıt giren amir, kanaat ve algısına dayalı mütalaasını belirtir. Bu kayıtlar performans değerlendirme için tutulur ve başka işlemlerde kullanılamaz.",
+      "articleRefs": [
+        "9",
+        "10"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Performans gözlem ve takip formunu kimler görebilir?",
+      "back": "Sadece değerlendirme amirleri; form bilgi edinme hakkı kapsamı dışındadır.",
+      "explanation": "Forma veri girmeye değerlendirme amirleriyle birlikte personelin diğer sıralı amirleri de yetkilidir. Personelin ek görevler sebebiyle birlikte çalıştığı amirler de müşterek yürütülen göreve ilişkin gözlem ve algılarını girebilir.",
+      "articleRefs": [
+        "10"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Değerlendirme amirinin gözlemlediği olay veya davranış, performans gözlem ve takip formuna hangi süre içinde kaydedilir?",
+      "back": "Olay veya davranışın gerçekleşmesinden itibaren bir ay içinde; aralık ayındaki gözlemler 31 Aralık tarihine kadar Personel Bilgi Sistemine (PBS) kaydedilir.",
+      "explanation": "Bir değerlendirme döneminde forma kaydedilen veriler sonraki değerlendirme dönemlerine aktarılamaz ve kullanılamaz. PBS bulunmaz ya da sisteme teknik olarak ulaşılamazsa form matbu olarak düzenlenir.",
+      "articleRefs": [
+        "10"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Birim amirinin personeli \"Gözlenen performans ortalamanın çok altında\" ölçeğiyle değerlendirebilmesi için gözlem ve takip formunda olumsuz kayıt bulunması şart mıdır?",
+      "back": "Hayır. Birim amirleri ve Emniyet Teşkilatı dışından olan değerlendirme amirleri için olumsuz kayıt girme zorunluluğu yoktur.",
+      "explanation": "Diğer değerlendirme amirleri bu ölçeği ya da \"Gözlenen performans ortalamanın altında, geliştirilmeye ihtiyacı var\" ölçeğini seçebilmek için, ilgili performans alanlarının her birinde ölçütlerden en az biri için en az bir olumsuz kayıt bulundurmak zorundadır. Bu kayıt, iş performansını etkileyecek nitelikte olumsuz davranış içermelidir.",
+      "articleRefs": [
+        "10"
+      ],
+      "counterNumbers": []
+    }
+  ]
+}

@@ -1,0 +1,274 @@
+{
+  "deck": {
+    "topicId": "c030675a-0fc7-434a-9d39-980eb0456196",
+    "legislationSlug": "6136-sayili-atesli-silahlar-ve-bicaklar-hakkinda-kanun",
+    "sourceLabel": "AI bilgi kartı — 6136 Sayılı Ateşli Silahlar ve Bıçaklar Hakkında Kanun md 11–13, 13/A, 14–18",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: resmî madde metni + çıkmış sorular)"
+  },
+  "cards": [
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Görevi nedeniyle Devletçe verilen kılıç ya da meç, görev bittikten sonra meskende kalırsa veya kanuni yakınlara intikal ederse izin belgesi aranır mı?",
+      "back": "Hayır. Görevleri nedeniyle Devletçe verilen veya bu amaçla kendilerince temin edilen kılıç, meç ve benzeri aletler için izin belgesi aranmaz.",
+      "explanation": "Hatıra teşkil eden veya antika olan ateşli silahlarla bıçakların bulundurulmasına izin verilmesi zorunludur. Kılıç, meç ve benzeri aletler bu kuralın 'Ancak' ile başlayan istisnasıdır.",
+      "articleRefs": [
+        "11"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Antika bir ateşli silah için verilen izin, silahın üstte taşınmasına da cevaz verir mi?",
+      "back": "Hayır. Bu izin yalnız silahın sahibine bırakılmasına veya nakline müsaadeyi kapsar; üstte taşımaya cevaz vermez.",
+      "explanation": "Antika ateşli silahlarla bıçakların izin vesikalarıyla birlikte satışı ise serbesttir.",
+      "articleRefs": [
+        "11"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Kanunun uygulanmasında antika silah deyimi hangi silah ve bıçakları ifade eder?",
+      "back": "Eskiden kalma, değerli belli bir özelliği olan, benzerlerine az rastlanan ve artık imal edilmeyen ateşli, ateşsiz silah ve bıçakları ifade eder.",
+      "explanation": "Silahın antika olup olmadığı, çıkarılacak yönetmelikte belirlenecek usul ve esaslara göre tespit olunur.",
+      "articleRefs": [
+        "11"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Ateşli silah veya mermiyi ülkeye sokan ya da 5201 sayılı Kanun hükümleri dışında ülkede yapan kişiye hangi ceza verilir?",
+      "back": "Beş yıldan oniki yıla kadar hapis ve beşyüz günden beşbin güne kadar adlî para cezası.",
+      "explanation": "Aynı ceza; ülkeye sokmaya kalkışan, sokulmasına aracılık eden, bunları taşıyan, yollayan, taşımaya bilerek aracılık eden, satan, satmaya aracılık eden veya bu amaçla bulunduran için de öngörülür.",
+      "articleRefs": [
+        "12"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Ateşli silahları ülkeye sokma ya da satma suçunu örgüt faaliyeti dışında iki veya daha çok kişi birlikte işlerse failler hangi cezayı alır?",
+      "back": "Sekiz yıldan onbeş yıla kadar hapis ve bin günden onbin güne kadar adlî para cezası.",
+      "explanation": "Bu ağırlaştırılmış hâl, fiillerin suç işlemek amacıyla kurulmuş bir örgütün faaliyeti çerçevesinde işlendiği üçüncü fıkradaki hal dışında uygulanır.",
+      "articleRefs": [
+        "12"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Ateşli silahları ülkeye sokma, yapma veya satma fiilleri suç işlemek amacıyla kurulmuş bir örgütün faaliyeti çerçevesinde işlenirse cezaya ne olur?",
+      "back": "Verilecek cezalar bir kat artırılır.",
+      "explanation": "Örgüt hâli ayrı bir ağırlatıcı sebeptir; iki veya daha çok kişinin birlikte işlemesine ilişkin ikinci fıkradaki ceza bu hal dışında uygulanır.",
+      "articleRefs": [
+        "12"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Ateşli silahları ülkeye sokma, yapma ve satma suçlarında hangi silah türleri cezanın yarı oranında artırılmasına yol açar?",
+      "back": "Tüfek; seri ateşli, kısa sürede çok sayıda ve etkili biçimde mermi atabilen tam otomatik, dürbünlü, susturuculu veya hedef noktalayıcı aparat takılı tabanca ve bunların benzerleri.",
+      "explanation": "Bu niteliği taşımayan ateşli silahların, mermilerin veya ana ya da balistik önemi haiz parçaların miktar bakımından vahim olması da cezaların yarı oranında artırılmasına yol açar.",
+      "articleRefs": [
+        "12"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Ülkeye sokulan tam otomatik tabancaların miktar bakımından vahim olması halinde ceza yarı oranında mı artırılır?",
+      "back": "Hayır. Bu halde birinci, ikinci ve üçüncü fıkralardaki cezalar bir kat artırılır. Yarı oranında artırım dördüncü fıkradaki hallere aittir: silahın nitelikli olması ya da nitelikli olmayan silah, mermi veya parçaların miktar bakımından vahim olması.",
+      "explanation": "Silahın tüfek ya da tam otomatik, dürbünlü, susturuculu veya hedef noktalayıcı aparat takılı tabanca olması tek başına cezayı yarı oranında artırır; bu silahlar miktar bakımından da vahimse artırım bir kat olur.",
+      "articleRefs": [
+        "12"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Kurusıkı silahı teknik özelliklerinde değişiklik yaparak bu Kanuna tabi silah hâline dönüştürmek hangi eylem sayılır?",
+      "back": "5201 sayılı Kanun hükümleri dışında yapılmış üretim sayılır ve 12 nci madde hükümlerine göre cezalandırılır.",
+      "explanation": "Dönüştürülen silahın sayı ve nitelik bakımından vahim olmaması halinde verilecek ceza üçte birinden yarısına kadar indirilir.",
+      "articleRefs": [
+        "12"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Bu Kanuna aykırı olarak ateşli silah satın alan, taşıyan veya bulunduran kişiye temel olarak hangi ceza verilir?",
+      "back": "İki yıldan dört yıla kadar hapis ve yüz günden beşyüz güne kadar adlî para cezası.",
+      "explanation": "Aynı ceza; mermiler, ana veya balistik önemi haiz parçalar ve ses veya gaz fişeği atabilen silah iken bu Kanun hükümlerine tabi silah vasfına dönüştürülen silahlar için de öngörülür.",
+      "articleRefs": [
+        "13"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Bu Kanuna aykırı olarak pek az sayıda mermi taşınması mahkemece vahim olarak takdir edilmezse hangi ceza verilir?",
+      "back": "Altı aya kadar hapis ve otuz günden beşyüz güne kadar adlî para cezası.",
+      "explanation": "Aynı ceza, ana veya balistik önemi haiz parçaların pek az sayıda bulundurulması ya da taşınması için de uygulanır; vahim olup olmadığını mahkeme takdir eder.",
+      "articleRefs": [
+        "13"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Bu Kanuna aykırı olarak taşınan ateşli silah tam otomatik ya da susturuculu bir tabanca ise hangi ceza verilir?",
+      "back": "Beş yıldan sekiz yıla kadar hapis ve beşyüz günden beşbin güne kadar adlî para cezası.",
+      "explanation": "Bu silahlar 12 nci maddenin dördüncü fıkrasında sayılanlardır. Aynı ceza; silahın, mermilerin veya ana ya da balistik önemi haiz parçaların sayı veya nitelik bakımından vahim olması halinde de verilir.",
+      "articleRefs": [
+        "13",
+        "12"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Nitelikli olmayan tek bir ateşli silah ve mutat sayıdaki mermileri bu Kanuna aykırı olarak ev veya işyerinde bulundurulursa hangi ceza verilir?",
+      "back": "Bir yıldan üç yıla kadar hapis ve yüz günden beşyüz güne kadar adlî para cezası.",
+      "explanation": "İndirimli ceza için silahın 12 nci maddenin dördüncü fıkrasında sayılanlar dışında olması, bir adet olması ve mutat sayıdaki mermileriyle ev veya işyerinde bulundurulması gerekir.",
+      "articleRefs": [
+        "13",
+        "12"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Nitelikli olmayan tek bir ateşli silah ve mutat sayıdaki mermileri bu Kanuna aykırı olarak taşınırsa bir yıldan üç yıla kadar hapis cezası uygulanır mı?",
+      "back": "Hayır. Bu indirimli ceza yalnız ev veya işyerinde bulundurma halinde uygulanır; taşımada iki yıldan dört yıla kadar hapis ve yüz günden beşyüz güne kadar adlî para cezası verilir.",
+      "explanation": "Taşıma fiili ev veya işyerinde bulundurma kaydının dışında kalır ve birinci fıkradaki cezaya tabidir.",
+      "articleRefs": [
+        "13",
+        "12"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Vefat, mahkûmiyet ya da devir nedeniyle yapılan ruhsatlandırma işlemlerinde Kanundaki yükümlülüklere aykırı davranılarak silah bulundurulursa hangi yaptırım uygulanır?",
+      "back": "İdari para cezası: onbin Türk Lirasından yirmibeşbin Türk Lirasına kadar.",
+      "explanation": "Hüküm; vefat, sağlık durumu, mahkûmiyet, müsadere, satın alma veya devir nedeniyle yapılan ruhsatlandırma ya da ruhsat yenileme işlemlerinde bu Kanundaki yükümlülüklere aykırı bulundurma ve taşımayı kapsar.",
+      "articleRefs": [
+        "13"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Bulundurma izni verilen silahını mesken veya işyeri değişikliği nedeniyle nakleden kişinin hangi belgeyi alması gerekir?",
+      "back": "Nakil izin belgesi. Bu belgeyi almadan nakledene onbin Türk Lirasından yirmibeşbin Türk Lirasına kadar idari para cezası verilir.",
+      "articleRefs": [
+        "13"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Ateşli silahların bulundurulması ve nakline ilişkin aykırılıklarda idari para cezası vermeye kim yetkilidir?",
+      "back": "Mülki idare amiri.",
+      "explanation": "Bu yetki, ruhsatlandırma ve ruhsat yenileme işlemlerindeki yükümlülük aykırılıkları ile nakil izin belgesi almadan yapılan nakil için verilen idari para cezalarını kapsar.",
+      "articleRefs": [
+        "13"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Ateşli silahın çocuk tarafından ele geçirilmesine neden olan kişi hangi davranışı nedeniyle cezalandırılır?",
+      "back": "Silahı dikkat ve özen yükümlülüğüne aykırı şekilde muhafaza etmesi nedeniyle.",
+      "articleRefs": [
+        "13/A"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Ateşli silahı dikkat ve özen yükümlülüğüne aykırı şekilde muhafaza ederek çocuk tarafından ele geçirilmesine neden olan kişiye hangi ceza öngörülür?",
+      "back": "Bir yıldan üç yıla kadar hapis cezası.",
+      "articleRefs": [
+        "13/A"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Silahın çocuk tarafından ele geçirilmesi daha ağır cezayı gerektiren başka bir suç oluşturuyorsa kişi 13/A uyarınca bir yıldan üç yıla kadar hapisle cezalandırılır mı?",
+      "back": "Hayır. Bu hüküm, fiil daha ağır cezayı gerektiren başka bir suç oluşturmadığı takdirde uygulanır.",
+      "articleRefs": [
+        "13/A"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "4 üncü maddede yazılı bıçakları bu Kanuna aykırı olarak ülkeye sokan kişiye hangi ceza verilir?",
+      "back": "İki yıldan beş yıla kadar hapis ve ikiyüz günden az olmamak üzere adlî para cezası.",
+      "explanation": "Ülkeye sokmaya kalkışma, sokulmasına aracılık, ülkede yapma, taşıma, yollama ve taşımaya aracılık da aynı cezaya tabidir. Suç konusu bıçak ve aletlerin niteliği veya sayı olarak azlığı halinde ceza yarısına kadar indirilir.",
+      "articleRefs": [
+        "14"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Bıçakları ülkeye sokmak amacıyla teşekkül kuranlar, yönetenler ya da teşekküle mensup olanlar bu suçu işlerse hangi ceza verilir?",
+      "back": "Beş yıldan on yıla kadar hapis ve bin günden onbin güne kadar adlî para cezası.",
+      "articleRefs": [
+        "14"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Bıçakları ülkeye sokma suçunu teşekkül dışında iki kişi birlikte işlerse ceza yarı oranında mı artırılır?",
+      "back": "Hayır. Birinci fıkraya göre verilecek cezalar bir kat artırılır; yarı oranında artırım bıçakların miktar bakımından vahim olması haline aittir.",
+      "explanation": "Miktar bakımından vahim olma halindeki yarı oranında artırım, önceki fıkralara göre hükmolunacak cezalara uygulanır.",
+      "articleRefs": [
+        "14"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "4 üncü maddede yazılı bıçakları bu Kanuna aykırı olarak taşıyan veya bulunduran kişiye hangi ceza verilir?",
+      "back": "Altı aydan bir yıla kadar hapis ve yirmibeş günden az olmamak üzere adlî para cezası.",
+      "explanation": "Aynı ceza satanlar, satmaya aracılık edenler ve satın alanlar için de öngörülür. 4 üncü maddeye göre yapımına izin verilen bıçakları kullanma amacı dışında satan, satın alan, taşıyan veya bulunduranlara da bu ceza uygulanır.",
+      "articleRefs": [
+        "15"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Bu Kanuna aykırı olarak satılan ya da bulundurulan bıçakların sayı veya nitelik bakımından vahim olması halinde ceza nasıl değişir?",
+      "back": "Yarıdan bir katına kadar artırılır.",
+      "explanation": "Yapımına izin verilen bıçakların kullanma amacı dışında satılması veya bulundurulmasında da bıçakların sayı ve nitelik bakımından vahim olması halinde bu artırılmış ceza uygulanır.",
+      "articleRefs": [
+        "15"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "4 üncü maddenin üçüncü fıkrasındaki bıçağı hal ve şartlara göre sırf saldırıda kullanmak amacıyla taşıyana hapis ve adlî para cezası birlikte mi verilir?",
+      "back": "Hayır. Ceza üç aya kadar hapis veya adlî para cezasıdır; hapisle adlî para cezası birlikte öngörülmez.",
+      "explanation": "Bu hüküm aynı fıkradaki yivli ve yivsiz silahları da kapsar; hal ve şartlara göre sırf saldırıda kullanma amacının bulunması aranır.",
+      "articleRefs": [
+        "15"
+      ],
+      "counterNumbers": []
+    }
+  ]
+}

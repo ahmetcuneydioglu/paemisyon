@@ -1,0 +1,186 @@
+{
+  "deck": {
+    "topicId": "48443974-0207-4ac2-b51a-34ba2a7b8070",
+    "legislationSlug": "5395-sayili-cocuk-koruma-kanunu",
+    "sourceLabel": "AI bilgi kartı — 5395 Sayılı Çocuk Koruma Kanunu md 41/G, 41/H, 41/İ, 42–50, Ek 1, Geçici 1, Geçici 2",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: resmî madde metni + çıkmış sorular)"
+  },
+  "cards": [
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Çocuk teslimi işlemlerinde görevlendirilen uzman ve öğretmene, her teslim işlemi için yapılan ödeme hangi gösterge rakamıyla hesaplanır?",
+      "back": "(500) gösterge rakamıyla hesaplanır. Bu rakam memur aylıklarına uygulanan katsayıyla çarpılır ve fiilen görev yapılan her teslim işlemi için ödenir.",
+      "explanation": "Görevlendirilen diğer kişilere aynı tutar her teslim işlemi için değil, görev yaptıkları her gün için ödenir. Ödemeden kadrolu ya da sözleşmeli olup olmadığına bakılmaksızın görevlendirilen tüm personel yararlanır.",
+      "articleRefs": [
+        "41/H"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Çocuk teslimi ve kişisel ilişki işlemlerinde uzman ve öğretmene bir ayda yapılabilecek ödemenin üst sınırı hangi gösterge rakamına bağlıdır?",
+      "back": "(10000) gösterge rakamına bağlıdır. Bu rakam memur aylık katsayısıyla çarpılır. Görevlendirilen diğer kişiler için aylık üst sınır (5000) gösterge rakamıdır.",
+      "explanation": "Bu ödemeden damga vergisi hariç hiçbir vergi ve kesinti yapılmaz. Uygulamaya ilişkin usul ve esasları Adalet Bakanlığı belirler.",
+      "articleRefs": [
+        "41/H"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Çocuk teslimi ilamlarının yerine getirilmesinde avukatlık ücreti de Adalet Bakanlığı bütçesinden karşılanır mı?",
+      "back": "Hayır. Bu iş ve işlemlerin tüm masrafları Adalet Bakanlığı bütçesinden karşılanır, ancak avukatlık ücreti hariçtir.",
+      "explanation": "Çocuk teslimi ve çocukla kişisel ilişki kurulmasına dair ilam veya tedbir kararlarının yerine getirilmesine ilişkin işlemler, 492 sayılı Harçlar Kanunu ile diğer kanunlar uyarınca alınması gereken tüm harçlardan istisnadır.",
+      "articleRefs": [
+        "41/H"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Çocuk teslimi ve çocukla kişisel ilişki kurulmasına ilişkin hükümleri içeren Kısmın uygulama usul ve esasları hangi bakanlığın çıkaracağı yönetmelikle belirlenir?",
+      "back": "Adalet Bakanlığının. Kısmın uygulanmasına ilişkin usul ve esaslar bu Bakanlığın çıkaracağı yönetmelikle belirlenir.",
+      "articleRefs": [
+        "41/İ"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Çocuk Koruma Kanununda denetim konusunda hüküm bulunmayan hâllerde hangi kanunun hükümleri uygulanır?",
+      "back": "Denetimli Serbestlik ve Yardım Merkezleri ile Koruma Kurulları Kanununun hükümleri uygulanır.",
+      "articleRefs": [
+        "42"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Çocuk hakkında verilen koruyucu ve destekleyici tedbir kararlarının giderlerini kim öder?",
+      "back": "Devlet öder. Bu tedbir kararlarının giderleri Devletçe ödenir.",
+      "articleRefs": [
+        "43"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Koruyucu ve destekleyici tedbirler için Devletçe ödenecek miktar nasıl tespit edilir?",
+      "back": "Mahkemece verilecek bir kararla tespit edilir.",
+      "articleRefs": [
+        "43"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Devletçe ödenen tedbir giderleri için çocuğa bakmakla yükümlü kimseye her durumda rücu edilir mi?",
+      "back": "Hayır. Rücu için, Türk Medenî Kanunu hükümlerine göre çocuğa bakmakla yükümlü olan kimsenin malî durumunun müsait olması gerekir.",
+      "explanation": "Giderler önce Devletçe ödenir. Yükümlünün malî durumu müsaitse, ödenen meblağın tahsili için ilgililere rücu edilir.",
+      "articleRefs": [
+        "43"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Çocuk Koruma Kanunu kapsamına giren görevlerle bağlantılı olarak kamu görevlileri hakkında 4483 sayılı Memurlar ve Diğer Kamu Görevlilerinin Yargılanması Hakkında Kanun uygulanır mı?",
+      "back": "Hayır. Bu Kanun kapsamına giren görevlerle bağlantılı olarak kamu görevlileri hakkında 4483 sayılı Kanunun hükümleri uygulanmaz.",
+      "articleRefs": [
+        "44"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Koruyucu ve destekleyici tedbirlerin yerine getirilmesinde il ve ilçelerde kurumların koordinasyonu ile takibini kim sağlar?",
+      "back": "Vali ve kaymakam sağlar. Merkezde kurumların koordinasyonunu ise Aile ve Sosyal Hizmetler Bakanlığı sağlar.",
+      "explanation": "İl ve ilçelerdeki sekretarya hizmetlerini aile ve sosyal hizmetler il müdürlükleri yürütür.",
+      "articleRefs": [
+        "45"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Koruyucu ve destekleyici tedbiri yerine getiren kurum, gerekmesi hâlinde kimden yardım isteyebilir?",
+      "back": "Kolluktan. Tedbirin ilgili kurum veya kuruluş tarafından yerine getirilmesi sırasında gerekirse kolluktan yardım istenebilir.",
+      "explanation": "Hâkim veya mahkemenin verdiği koruyucu ve destekleyici tedbir kararları, yerine getirilmek üzere ilgili kurum veya kuruluşa gönderilir.",
+      "articleRefs": [
+        "45"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Koruyucu ve destekleyici tedbir kararının gereklerine aykırı hareket eden ana, baba, vasi veya bakım ve gözetiminden sorumlu kimse hangi süre aralığında tazyik hapsiyle cezalandırılır?",
+      "back": "Üç günden on güne kadar. Kararı çocuk hâkimi verir ve fiil suç teşkil etse dahi bu yaptırım uygulanır.",
+      "explanation": "Süre, ihlal edilen tedbirin niteliğine ve aykırılığın ağırlığına göre belirlenir. Bu kararlara karşı 14 üncü madde uyarınca itiraz yoluna gidilebilir. Kesinleşen kararı Cumhuriyet başsavcılığı yerine getirir; çocuk hâkimi de kararı ilgili kuruma bildirir.",
+      "articleRefs": [
+        "45"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Çocuk Koruma Kanunu gereğince kurulacak mahkemelerin kuruluş ve çalışmaları için kadro konusunda ne öngörülür?",
+      "back": "Gerekli sınıflardan yeteri kadar kadro temin edilmesi öngörülür.",
+      "articleRefs": [
+        "46"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Çocuk Koruma Kanunuyla hangi kanun yürürlükten kaldırılmıştır?",
+      "back": "2253 sayılı Çocuk Mahkemelerinin Kuruluşu, Görev ve Yargılama Usulleri Hakkında Kanun yürürlükten kaldırılmıştır.",
+      "articleRefs": [
+        "48"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Mevzuatta yürürlükten kaldırılan 2253 sayılı Kanuna yapılmış yollamalar nasıl anlaşılır?",
+      "back": "Çocuk Koruma Kanununun ilgili hükümlerine yapılmış sayılır.",
+      "articleRefs": [
+        "48"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Hangi suçlardan kesinleşmiş mahkûmiyeti bulunanlar, çocukların yoğun olarak bulunduğu iş yerlerini işletemez ve bu iş yerlerinde çalıştırılamaz?",
+      "back": "Cinsel saldırı, çocukların cinsel istismarı, reşit olmayanla cinsel ilişki, uyuşturucu veya uyarıcı madde imal ve ticareti, uyuşturucu veya uyarıcı madde kullanılmasını kolaylaştırma, müstehcenlik, fuhuş, insan ticareti ve kasten öldürme.",
+      "explanation": "Yasak, adli sicil ve arşiv kayıtlarında kesinleşmiş mahkûmiyet kararı bulunanlara uygulanır. Bu kişiler okul, okul servisi, yurt, kreş, internet kafeleri ve salonları, e-oyun yerleri gibi iş yerlerini şahsen işletemez, buralarda çalıştırılamaz ve herhangi bir sıfatla fiilen görev alamaz. Bu iş yerleri için kendilerine izin ve ruhsat da verilmez.",
+      "articleRefs": [
+        "Ek 1"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Çalıştırma yasağı kapsamındaki iş yerlerinde çalışanlar, orada çalışabileceklerini gösteren resmî belgeyi işverene hangi sıklıkla ibraz eder?",
+      "back": "Altı ayda bir. Belge, adli sicil ve arşiv bilgilerine dayanılarak oluşturulur.",
+      "explanation": "Kapsamdaki bir iş yerinin yasaklı kişilerce işletildiği tespit edilirse, bu kişilere iş yerini devretmeleri için altı ay süre verilir. Bu sürede kişi iş yerini fiilen işletemez. Süre içinde devir yapılmazsa izin ve ruhsatlar, bunları veren kamu kurum ve kuruluşlarınca derhâl iptal edilir.",
+      "articleRefs": [
+        "Ek 1"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Çalıştırma yasağına aykırı işçi çalıştıran kişiye ilk aşamada her işçi başına brüt asgari ücretin yedi katı idari para cezası mı verilir?",
+      "back": "Hayır. İlk aşamada mahallîn mülki idare amiri, aykırı çalıştırılan her bir kişi başına brüt asgari ücretin üç katı ceza verir. Yedi katı ceza, aykırılık ilk cezanın tebliğinden itibaren bir ay içinde giderilmezse verilir.",
+      "explanation": "Yedi katlık cezanın tebliğinden itibaren bir ay içinde aykırılık hâlâ giderilmemişse, ilgili kamu kurum ve kuruluşlarının verdiği izin ve ruhsatlar derhâl iptal edilir.",
+      "articleRefs": [
+        "Ek 1"
+      ],
+      "counterNumbers": []
+    }
+  ]
+}
