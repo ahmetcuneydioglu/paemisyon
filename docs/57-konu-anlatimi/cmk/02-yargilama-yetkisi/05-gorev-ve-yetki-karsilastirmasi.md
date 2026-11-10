@@ -73,7 +73,7 @@ Geri kalan türler daha az sorulur; ama karşılaştırmayı tamamlamak için ay
 | Neye bakar | Sanığın sıfatına ve suçun görevle bağına | İşin ceza yargılamasına, hangi evreye ve hangi daireye ait olduğuna |
 | Kaynağı | Anayasa ve özel kanunlar | Mahkemelerin kuruluşuna ilişkin kanunlar ve iş bölümü kararları |
 | Esas alınan an | Kural olarak yargılama sırasındaki sıfat | — |
-| Uyuşmazlığı kim çözer | Niteliğine göre ağır ceza mahkemesi ya da Yargıtay'ın ilgili ceza dairesi | Yargı kolları arasındaysa Uyuşmazlık Mahkemesi; diğerlerinde niteliğine göre Yargıtay'ın kurulları |
+| Uyuşmazlığı kim çözer | Ortak yüksek görevli mahkeme: bölge adliye mahkemesi ya da Yargıtay'ın ilgili ceza dairesi | Yargı kolları arasındaysa Uyuşmazlık Mahkemesi; diğerlerinde niteliğine göre Yargıtay'ın kurulları |
 | Özelliği | Yüce Divan ile başka mahkeme arasında uyuşmazlık doğmaz | İstisnası naipliktir |
 
 :::tanim İş bölümü bakımından yetki
