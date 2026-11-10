@@ -456,8 +456,11 @@ kart, hepsi GEÇTİ ve `in_review`: anayasa-ek (Başlangıç, md 43–44, 49, 63
 cmk-ek-1..2 (92 madde), aih-ek (AİHS md 3, 5/1 a–f yakalama hâlleri, 5/2–5, 9, 10, 12, 17, 18, 33, 38), der-ek
 (5253 md 19/2 denetimde kolluk yasağı dahil). Kusur sınıfı neredeyse yalnız mevcut destelerle K6.
 
-**Mevzuat kaydı kusurları (yayından bağımsız, düzeltilmeli):** Terör Zararları Yön. md 22 metni md 21 içine kaymış
-("22" kaydı 22/A'yı taşıyor); AİHS P16-1, 2, 3, 8, 10 madde başları kesik (ilgili kartlar çıkarıldı).
+**Mevzuat kaydı kusurları — 10 Kas 2026'da onarıldı:** Terör Zararları Yön. platformda 31 maddenin 15'iyle duruyordu
+(md 22 metni md 21 içinde, "22" kaydı 22/A'yı taşıyordu); resmî metinden 15 madde tazelendi, 17 madde eklendi (32 madde).
+Deste baştan üretildi: `tzy` 20 kart (eski 14 kart yumuşak silindi). AİHS P16 madde başları başlık alanına düşmüştü; 12 madde
+(P16-1…11, P7-1/P7-4 başlığı) resmî PDF'le düzeltildi, `aih-p16` 9 kart eklendi. Yönetmelik md 8/1'deki "veya mirasçılarının"
+ibaresi AYM'nin 5233 md 6/1 iptali (10/7/2025, E.2024/116 K.2025/151) karşısında uygulanamaz.
 
 **İnsan notları:** 657 md 4/B MEB sözleşmeli öğretmen (7528 sonrası teyit); 3628 md 20 "müebbeten yasaklanma"
 (TCK 53 düzeni); 2575 md 76–79 eski CMUK terimleri metne sadık; AİHS P4 ve P12'yi Türkiye onaylamadı (kartlar
