@@ -3,7 +3,7 @@ import { Prisma } from '@prisma/client';
 import { PrismaService } from '../../infra/prisma/prisma.service';
 import { computeStreakUpdate, liveStreak, weeklyFreezeAllowance } from './streak.logic';
 import { GUN_KAYMASI_MS, gunAnahtari, gunBaslangici, haftaBaslangici } from '../../common/gun';
-import { computeRank, rankScore, ACTIVE_DAY_POINTS } from '../coach/rank.logic';
+import { computeRank, rankScore, ACTIVE_DAY_POINTS, RANKS } from '../coach/rank.logic';
 import { tallyByUnit, type UnitTally } from '../summaries/unite-eslesme';
 import {
   teaserLine,
@@ -454,7 +454,11 @@ export class ProgressService {
       me = { ...row, rank: 0, pointsToNext: null, nextName: null };
     }
 
-    return { period, stats, top, me };
+    // Rütbe kataloğu (Doc 24 §5): "Rütbe sistemi" bilgi sayfası ve "bir üst rütbeye kaç XP"
+    // hesabı için — katalog SUNUCUDA yaşar, istemci kopya tutmaz (5 Kas 2026).
+    const ranks = RANKS.map((r) => ({ level: r.level, name: r.name, minScore: r.minScore }));
+
+    return { period, stats, top, me, ranks, activeDayPoints: ACTIVE_DAY_POINTS };
   }
 
   /**

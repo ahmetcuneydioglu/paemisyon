@@ -34,5 +34,6 @@ export * from "./upsell-strip";
 export * from "./answer-review";
 export * from "./leaderboard-teaser";
 export * from "./flashcards";
+export * from "./leaderboard";
 export * from "./review-prompt-sheet";
 export * from "./review-prompt-host";
