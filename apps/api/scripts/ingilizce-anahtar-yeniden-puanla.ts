@@ -1,9 +1,10 @@
 /**
- * 16 Nisan 2023 EGM Misyon Koruma Sınavı — İngilizce anahtar kayması sonrası yeniden puanlama.
+ * Çıkmış sınav anahtar düzeltmesi sonrası yeniden puanlama (genel).
  *
- * Bağlam (10 Kas 2026): içe aktarım 91–100. soruların cevap anahtarını İngilizce yerine Almanca
- * sütunundan okumuştu; 20 sorunun doğru şıkkı resmî anahtarla düzeltildi. Bu betik o sorulara
- * daha önce verilmiş cevapları ve onlardan türeyen özetleri yeni anahtara göre düzeltir:
+ * Bağlam (10 Kas 2026): Misyon Koruma içe aktarımları 91–100. soruların anahtarını İngilizce yerine
+ * Almanca sütunundan okumuştu (16 Nisan 2023 EGM ve 30 Eylül 2023 JGK). Şıklar resmî anahtarla
+ * düzeltildikten sonra bu betik o sorulara daha önce verilmiş cevapları ve onlardan türeyen özetleri
+ * GÜNCEL anahtara göre düzeltir:
  *   1. quiz_answers.is_correct — seçilen şıkkın GÜNCEL doğruluğu
  *   2. quiz_sessions.correct_count / wrong_count / score — yalnız bitmiş (completed/abandoned),
  *      deneme olmayan oturumlar; score = correct/total*100 (quiz.service ile aynı formül)
@@ -11,18 +12,24 @@
  *   4. user_topic_progress — konu correct_count farkı, mastery = correct/solved
  *   5. wrong_answers — yanlışa dönen: sayaç +1 ve açılır; doğruya dönen: sayaç −1, sıfırsa satır silinir
  * Devam eden (in_progress) oturumlarda yalnız 1. adım uygulanır; özetleri tur bitince servis yazar.
+ * Kapsam: source_label = --label (zorunlu), isteğe bağlı --topic (konu adı). Betik idempotenttir:
+ * uygulandıktan sonra kuru çalıştırma 0 değişen göstermelidir.
  *
  * Kullanım (apps/api içinden, connection_limit=1 ile):
- *   npx tsx scripts/ingilizce-anahtar-yeniden-puanla.ts            # kuru çalıştırma, yalnız rapor
- *   npx tsx scripts/ingilizce-anahtar-yeniden-puanla.ts --apply    # uygular; önce yedek JSON yazar
- * Yedek: scripts/out/ingilizce-yeniden-puanla-<zaman>.json (etkilenen satırların eski hâli).
+ *   npx tsx scripts/ingilizce-anahtar-yeniden-puanla.ts --label "<etiket>" [--topic "İngilizce"]           # kuru
+ *   npx tsx scripts/ingilizce-anahtar-yeniden-puanla.ts --label "<etiket>" [--topic "İngilizce"] --apply   # uygular
+ * Yedek: scripts/out/yeniden-puanla-<zaman>.json (etkilenen satırların eski hâli).
  */
 import { mkdirSync, writeFileSync } from 'node:fs';
 import { join } from 'node:path';
 import { PrismaClient } from '@prisma/client';
 
-const SOURCE_LABEL = '16 NİSAN 2023 EGM MİSYON KORUMA SINAVI';
-const TOPIC_NAME = 'İngilizce';
+function arg(name: string): string | null {
+  const i = process.argv.indexOf(name);
+  return i >= 0 && process.argv[i + 1] && !process.argv[i + 1].startsWith('--') ? process.argv[i + 1] : null;
+}
+const SOURCE_LABEL = arg('--label');
+const TOPIC_NAME = arg('--topic'); // null = sınavın bütün konuları
 const apply = process.argv.includes('--apply');
 const prisma = new PrismaClient();
 
@@ -41,6 +48,8 @@ type Affected = {
 };
 
 async function main() {
+  if (!SOURCE_LABEL) throw new Error('--label "<source_label>" zorunlu');
+  console.log(`Kapsam: ${SOURCE_LABEL}${TOPIC_NAME ? ` / ${TOPIC_NAME}` : ' / bütün konular'}`);
   const rows = await prisma.$queryRaw<Affected[]>`
     SELECT a.id AS answer_id, a.session_id, s.user_id, a.question_id, q.topic_id,
            s.status::text AS status, (s.exam_id IS NOT NULL) AS is_exam, s.total_questions,
@@ -52,7 +61,7 @@ async function main() {
     JOIN question_versions qv ON qv.id = q.current_version_id
     JOIN topics t ON t.id = q.topic_id
     LEFT JOIN question_options o ON o.id = a.selected_option_id
-    WHERE qv.source_label = ${SOURCE_LABEL} AND t.name = ${TOPIC_NAME}
+    WHERE qv.source_label = ${SOURCE_LABEL} AND (${TOPIC_NAME}::text IS NULL OR t.name = ${TOPIC_NAME})
     ORDER BY a.answered_at`;
 
   const changed = rows.filter((r) => r.selected && (r.old_ok ?? false) !== r.new_ok);
@@ -92,6 +101,8 @@ async function main() {
   const userIds = [...byUser.keys()];
   const backup = {
     at: new Date().toISOString(),
+    label: SOURCE_LABEL,
+    topic: TOPIC_NAME,
     answers: changed,
     sessions: await prisma.quizSession.findMany({
       where: { id: { in: sessionIds } },
@@ -107,7 +118,7 @@ async function main() {
   };
   const outDir = join(__dirname, 'out');
   mkdirSync(outDir, { recursive: true });
-  const outPath = join(outDir, `ingilizce-yeniden-puanla-${backup.at.replace(/[:.]/g, '-')}.json`);
+  const outPath = join(outDir, `yeniden-puanla-${backup.at.replace(/[:.]/g, '-')}.json`);
   writeFileSync(outPath, JSON.stringify(backup, (_k, v) => (typeof v === 'bigint' ? Number(v) : v), 2));
   console.log(`Yedek yazıldı: ${outPath}`);
 
