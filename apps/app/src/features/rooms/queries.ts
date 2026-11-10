@@ -29,12 +29,28 @@ export interface RoomTopic {
   favoriteCount: number;
   /** Yayındaki ünite özetleri; tek ünite varsa `firstSlug` doğrudan açılır. */
   units: { count: number; read: number; firstSlug: string | null };
+  /** Yayındaki konu anlatımı dersleri (Doc 57); üniteden bağımsız. Eski sunucuda alan yok. */
+  lessons?: { count: number; read: number };
   /** Bilgi kartları (Doc 56); eski sunucuda alan yok. */
   flashcards?: FlashcardRoomCounts | null;
   /** "24 soru · 4 ünite özeti · 6 yanlış" — sunucu kurar. */
   note: string;
   children: Omit<RoomTopic, "children">[];
 }
+
+/**
+ * Konunun okunacak içeriği: ünite özeti YA DA konu anlatımı dersi. İkisi ayrı yayınlanır; yalnız
+ * üniteye bakmak, özeti henüz yayınlanmamış derste dersleri erişilmez bırakıyordu (Ceza Muhakemesi).
+ */
+type OkunurKonu = Pick<RoomTopic, "units" | "lessons">;
+export const topicLessonCount = (t: OkunurKonu) => t.lessons?.count ?? 0;
+export const topicHasReading = (t: OkunurKonu) => t.units.count > 0 || topicLessonCount(t) > 0;
+/** "6 ders · 4 ünite · 3 okundu" — yalnız var olanlar yazılır. */
+export const topicReadingNote = (t: OkunurKonu) => {
+  const ders = topicLessonCount(t);
+  const okundu = t.units.read + (t.lessons?.read ?? 0);
+  return [ders > 0 ? `${ders} ders` : null, t.units.count > 0 ? `${t.units.count} ünite` : null, okundu > 0 ? `${okundu} okundu` : null].filter(Boolean).join(" · ");
+};
 
 export interface CourseRoom {
   course: { id: string; name: string; icon: string | null };
@@ -52,6 +68,8 @@ export interface CourseRoom {
     wrongCount: number;
     favoriteCount: number;
     summaryUnitCount: number;
+    /** Yayındaki konu anlatımı dersi sayısı (Doc 57); eski sunucuda alan yok. */
+    lessonCount?: number;
     /** Bilgi kartları (Doc 56); eski sunucuda alan yok. */
     flashcards?: FlashcardRoomCounts | null;
     /** Ders testleri (Doc 49/18): seçim sayfasının alt yazısı. */

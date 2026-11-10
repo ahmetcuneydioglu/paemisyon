@@ -1,0 +1,19 @@
+{
+  "slug": "temel-haklar-kategoriler",
+  "title": "Temel Haklar II: Kategoriler ve Ayrımlar",
+  "subtitle": "Kişinin hakları, sosyal ve ekonomik haklar, siyasi haklar; rejim farkları ve sınav kalıpları",
+  "courseName": "Anayasa Hukuku",
+  "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+  "sortOrder": 12,
+  "isPremium": true,
+  "aiDraft": true,
+  "book": { "label": "THEMIS Anayasa Hukuku, 24. baskı, 2020", "page": "s.75–104" },
+  "lessons": [
+    { "file": "01-kisi-dokunulmazligi-ve-kisi-hurriyeti.md", "slug": "kisi-dokunulmazligi-zorla-calistirma-ve-kisi-hurriyeti", "page": "s.77–79" },
+    { "file": "02-ozel-hayat-konut-haberlesme-seyahat.md", "slug": "ozel-hayat-konut-haberlesme-yerlesme-ve-seyahat", "page": "s.79–83" },
+    { "file": "03-dusunce-basin-toplanma-mulkiyet.md", "slug": "dusunce-ifade-basin-toplanma-ve-mulkiyet", "page": "s.84–88" },
+    { "file": "04-sosyal-ve-ekonomik-haklar.md", "slug": "sosyal-ve-ekonomik-haklarin-ayrimlari", "page": "s.90–96" },
+    { "file": "05-siyasi-haklar-ve-odevler.md", "slug": "siyasi-haklar-ve-odevlerin-ayrimlari", "page": "s.96–104" },
+    { "file": "06-sinav-kaliplari-ve-karisikliklar.md", "slug": "temel-haklarda-sinav-kaliplari-ve-karisikliklar", "page": "s.75–104" }
+  ]
+}

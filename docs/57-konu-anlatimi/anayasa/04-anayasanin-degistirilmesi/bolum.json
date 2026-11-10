@@ -1,0 +1,17 @@
+{
+  "slug": "anayasanin-degistirilmesi",
+  "title": "Anayasanın Değiştirilmesi",
+  "subtitle": "Değiştirme usulü, halkoylaması ve demokrasi türleri",
+  "courseName": "Anayasa Hukuku",
+  "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+  "sortOrder": 4,
+  "isPremium": true,
+  "aiDraft": true,
+  "book": { "label": "THEMIS Anayasa Hukuku, 24. baskı, 2020", "page": "s.233–239" },
+  "lessons": [
+    { "file": "01-degistirme-usulu.md", "slug": "anayasa-degisikligi-usulu", "page": "s.233–235" },
+    { "file": "02-geri-gonderme-ve-halkoylamasi.md", "slug": "geri-gonderme-ve-halkoylamasi", "page": "s.234–236" },
+    { "file": "03-anayasa-degisikligi-ile-kanun.md", "slug": "anayasa-degisikligi-ile-kanunun-karsilastirilmasi", "page": "s.237" },
+    { "file": "04-demokrasi-turleri.md", "slug": "demokrasi-turleri", "page": "s.238–239" }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "slug": "yurutme",
+  "title": "Yürütme: Cumhurbaşkanı ve Düzenleyici İşlemler",
+  "subtitle": "Cumhurbaşkanının seçimi, statüsü, yetkileri; kararname, olağanüstü hâl ve yönetmelik",
+  "courseName": "Anayasa Hukuku",
+  "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+  "sortOrder": 8,
+  "isPremium": true,
+  "aiDraft": true,
+  "book": { "label": "THEMIS Anayasa Hukuku, 24. baskı, 2020", "page": "s.169–188" },
+  "lessons": [
+    { "file": "01-yurutme-fonksiyonu-ve-organlari.md", "slug": "yurutme-fonksiyonu-ve-yurutme-organlari", "page": "s.169–170, 175, 184" },
+    { "file": "02-cumhurbaskaninin-secimi.md", "slug": "cumhurbaskaninin-secimi", "page": "s.176–178" },
+    { "file": "03-cumhurbaskaninin-statusu.md", "slug": "cumhurbaskaninin-statusu-ve-sorumlulugu", "page": "s.178–180, 183–184" },
+    { "file": "04-cumhurbaskaninin-gorev-ve-yetkileri.md", "slug": "cumhurbaskaninin-gorev-ve-yetkileri", "page": "s.180–183" },
+    { "file": "05-cumhurbaskanligi-kararnamesi.md", "slug": "cumhurbaskanligi-kararnamesi", "page": "s.170–173, 185–186" },
+    { "file": "06-olaganustu-hal-yonetimi.md", "slug": "olaganustu-hal-yonetimi", "page": "s.173–175, 186–188" },
+    { "file": "07-yonetmelik-baskomutanlik-mgk.md", "slug": "yonetmelik-baskomutanlik-ve-milli-guvenlik-kurulu", "page": "s.170, 175, 185–186, 188" }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "slug": "cmk-ispat-ve-kanit-turleri",
+  "title": "İspat ve Kanıt Türleri",
+  "subtitle": "Delil serbestliği, sanık ve tanık beyanı, belge, belirti ve bilirkişi, delil toplama işlemleri",
+  "courseName": "Ceza Muhakemesi Hukuku",
+  "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+  "sortOrder": 6,
+  "isPremium": true,
+  "aiDraft": true,
+  "book": { "label": "THEMIS Ceza Muhakemesi Hukuku, 23. baskı, 2025", "page": "s.83–98, 100–103" },
+  "lessons": [
+    { "file": "01-ispat-kavrami-ve-delil-turleri.md", "slug": "cmk-ispat-kavrami-ve-delil-turleri", "page": "s.83–84, 92" },
+    { "file": "02-supheli-ve-sanik-beyani.md", "slug": "cmk-supheli-ve-sanik-beyani", "page": "s.83–85, 92" },
+    { "file": "03-tanik-beyani-yukumluluk-ve-cekinme.md", "slug": "cmk-tanik-beyani-yukumluluk-ve-cekinme", "page": "s.85–90" },
+    { "file": "04-tanik-beyani-yemin-ve-dinleme.md", "slug": "cmk-tanik-beyani-yemin-ve-dinleme", "page": "s.87–88, 90–91" },
+    { "file": "05-belge-belirti-ve-bilirkisi.md", "slug": "cmk-belge-belirti-ve-bilirkisi", "page": "s.91–92, 100–103" },
+    { "file": "06-delil-toplama-islemleri.md", "slug": "cmk-delil-toplama-islemleri", "page": "s.92–98" }
+  ]
+}

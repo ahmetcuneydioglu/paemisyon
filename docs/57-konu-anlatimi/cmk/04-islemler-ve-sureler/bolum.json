@@ -1,0 +1,18 @@
+{
+  "slug": "cmk-islemler-ve-sureler",
+  "title": "Muhakeme İşlemleri ve Süreler",
+  "subtitle": "İşlem ve karar türleri, işlemlerde hukuka aykırılık, süreler, eski hâle getirme, adli tatil ve tebligat",
+  "courseName": "Ceza Muhakemesi Hukuku",
+  "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+  "sortOrder": 4,
+  "isPremium": true,
+  "aiDraft": true,
+  "book": { "label": "THEMIS Ceza Muhakemesi Hukuku, 23. baskı, 2025", "page": "s.47–52" },
+  "lessons": [
+    { "file": "01-muhakeme-islemi-ve-karar-turleri.md", "slug": "cmk-muhakeme-islemi-ve-karar-turleri", "page": "s.47–48" },
+    { "file": "02-islemlerde-hukuka-aykirilik.md", "slug": "cmk-islemlerde-hukuka-aykirilik", "page": "s.48–50" },
+    { "file": "03-sureler-turleri-ve-hesaplanmasi.md", "slug": "cmk-sureler-turleri-ve-hesaplanmasi", "page": "s.48, 50–51" },
+    { "file": "04-eski-hale-getirme.md", "slug": "cmk-eski-hale-getirme", "page": "s.49, 51" },
+    { "file": "05-adli-tatil-ve-tebligat.md", "slug": "cmk-adli-tatil-ve-tebligat", "page": "s.51–52" }
+  ]
+}

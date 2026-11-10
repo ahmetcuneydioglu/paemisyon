@@ -1,0 +1,17 @@
+{
+  "slug": "cmk-kanitlarin-degerlendirilmesi-ve-kanit-yasaklari",
+  "title": "Kanıtların Değerlendirilmesi ve Kanıt Yasakları",
+  "subtitle": "Delillerin ortaya konulması ve tartışılması, vicdani kanaat, delil yasakları, uzak etki ve tartışmalı alanlar",
+  "courseName": "Ceza Muhakemesi Hukuku",
+  "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+  "sortOrder": 7,
+  "isPremium": true,
+  "aiDraft": true,
+  "book": { "label": "THEMIS Ceza Muhakemesi Hukuku, 23. baskı, 2025", "page": "s.98–100, 103–107" },
+  "lessons": [
+    { "file": "01-kanitlarin-ortaya-konulmasi-ve-tartisilmasi.md", "slug": "cmk-kanitlarin-ortaya-konulmasi-ve-tartisilmasi", "page": "s.98–99" },
+    { "file": "02-kanitlarin-degerlendirilmesi.md", "slug": "cmk-kanitlarin-degerlendirilmesi-vicdani-kanaat", "page": "s.99–100" },
+    { "file": "03-kanit-yasaklari.md", "slug": "cmk-kanit-yasaklari-elde-etme-ve-degerlendirme", "page": "s.103–106" },
+    { "file": "04-uzak-etki-ve-tartismali-alanlar.md", "slug": "cmk-uzak-etki-ve-tartismali-alanlar", "page": "s.106–107" }
+  ]
+}

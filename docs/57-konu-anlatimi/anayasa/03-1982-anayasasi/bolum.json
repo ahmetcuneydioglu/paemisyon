@@ -1,0 +1,21 @@
+{
+  "slug": "1982-anayasasi",
+  "title": "1982 Anayasası",
+  "subtitle": "Hazırlanışı, genel özellikleri ve temel ilkeleri",
+  "courseName": "Anayasa Hukuku",
+  "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+  "sortOrder": 3,
+  "isPremium": true,
+  "aiDraft": true,
+  "book": { "label": "THEMIS Anayasa Hukuku, 24. baskı, 2020", "page": "s.43–69" },
+  "lessons": [
+    { "file": "01-1982-anayasasinin-hazirlanisi.md", "slug": "1982-anayasasinin-hazirlanisi", "page": "s.43–44, 46–47" },
+    { "file": "02-1982-anayasasinin-genel-ozellikleri.md", "slug": "1982-anayasasinin-genel-ozellikleri", "page": "s.44–46" },
+    { "file": "03-uc-anayasa-yan-yana.md", "slug": "1924-1961-1982-anayasalari-karsilastirmasi", "page": "s.47–56" },
+    { "file": "04-degistirilemez-hukumler-ve-cumhuriyet.md", "slug": "degistirilemez-hukumler-ve-cumhuriyet", "page": "s.57–59" },
+    { "file": "05-demokratik-devlet-ve-secim-ilkeleri.md", "slug": "demokratik-devlet-ve-secim-ilkeleri", "page": "s.59–64" },
+    { "file": "06-laiklik.md", "slug": "laiklik-ilkesi", "page": "s.64–65" },
+    { "file": "07-hukuk-devleti.md", "slug": "hukuk-devleti-ilkesi", "page": "s.65–67" },
+    { "file": "08-sosyal-devlet-ve-esitlik.md", "slug": "sosyal-devlet-ve-esitlik", "page": "s.67–69" }
+  ]
+}

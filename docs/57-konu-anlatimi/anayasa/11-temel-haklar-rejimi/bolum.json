@@ -1,0 +1,19 @@
+{
+  "slug": "temel-haklar-rejimi",
+  "title": "Temel Haklar I: Rejim",
+  "subtitle": "Yaklaşım, sınıflandırma, sınırlama, kötüye kullanma, durdurma ve korunma yolları",
+  "courseName": "Anayasa Hukuku",
+  "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+  "sortOrder": 11,
+  "isPremium": true,
+  "aiDraft": true,
+  "book": { "label": "THEMIS Anayasa Hukuku, 24. baskı, 2020", "page": "s.69–76, 88–89, 103–104" },
+  "lessons": [
+    { "file": "01-temel-haklara-yaklasim.md", "slug": "1982-anayasasinin-temel-haklara-yaklasimi", "page": "s.69–70" },
+    { "file": "02-temel-haklarin-siniflandirilmasi.md", "slug": "temel-haklarin-siniflandirilmasi", "page": "s.70–71, 75–76" },
+    { "file": "03-temel-haklarin-sinirlanmasi.md", "slug": "temel-haklarin-sinirlanmasi", "page": "s.71–73" },
+    { "file": "04-kotuye-kullanma-yasagi-ve-oze-dokunma.md", "slug": "kotuye-kullanma-yasagi-ve-sinirlamanin-siniri", "page": "s.71–73" },
+    { "file": "05-durdurma-rejimi-ve-yabancilar.md", "slug": "durdurma-rejimi-ve-yabancilarin-durumu", "page": "s.73–75" },
+    { "file": "06-temel-haklarin-korunmasi.md", "slug": "temel-haklarin-korunmasi-ve-basvuru-yollari", "page": "s.70, 88–89, 103–104" }
+  ]
+}

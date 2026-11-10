@@ -1,0 +1,19 @@
+{
+  "slug": "cmk-muhakeme-kosullari",
+  "title": "Ceza Muhakemesi Koşulları",
+  "subtitle": "Dava ve yargılama koşulları, izin ve şikâyet, sanığın yokluğu, koşul eksikliğinde verilecek kararlar",
+  "courseName": "Ceza Muhakemesi Hukuku",
+  "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+  "sortOrder": 3,
+  "isPremium": true,
+  "aiDraft": true,
+  "book": { "label": "THEMIS Ceza Muhakemesi Hukuku, 23. baskı, 2025", "page": "s.31–45" },
+  "lessons": [
+    { "file": "01-muhakeme-kosulu-kavrami.md", "slug": "cmk-muhakeme-kosulu-kavrami", "page": "s.31, 39, 44" },
+    { "file": "02-izin-istem-mutalaa-basvuru.md", "slug": "cmk-izin-istem-mutalaa-basvuru", "page": "s.31–33, 44" },
+    { "file": "03-sikayet.md", "slug": "cmk-sikayet", "page": "s.34–39" },
+    { "file": "04-yargilama-kosullari.md", "slug": "cmk-yargilama-kosullari", "page": "s.39–43" },
+    { "file": "05-secim-dokunulmazligi-ve-diger-dava-kosullari.md", "slug": "cmk-secim-dokunulmazligi-ve-diger-dava-kosullari", "page": "s.33, 39" },
+    { "file": "06-kosullarin-sonuclari.md", "slug": "cmk-muhakeme-kosullarinin-sonuclari", "page": "s.44–45" }
+  ]
+}

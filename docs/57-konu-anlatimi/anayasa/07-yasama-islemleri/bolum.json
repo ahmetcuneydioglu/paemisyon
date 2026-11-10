@@ -1,0 +1,19 @@
+{
+  "slug": "yasama-islemleri",
+  "title": "Yasama II: İşlemler ve Denetim",
+  "subtitle": "Yasama yetkisi, kanun yapımı, Meclisin yetkileri ve denetim yolları",
+  "courseName": "Anayasa Hukuku",
+  "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+  "sortOrder": 7,
+  "isPremium": true,
+  "aiDraft": true,
+  "book": { "label": "THEMIS Anayasa Hukuku, 24. baskı, 2020", "page": "s.106–119, 161–168" },
+  "lessons": [
+    { "file": "01-yasama-yetkisi-ve-yasama-alani.md", "slug": "yasama-yetkisi-ve-yasama-alani", "page": "s.106–109" },
+    { "file": "02-yasama-islemleri.md", "slug": "kanun-parlamento-karari-ve-ictuzuk", "page": "s.106–107, 116–119" },
+    { "file": "03-kanun-yapim-sureci.md", "slug": "kanun-yapim-sureci", "page": "s.110–116" },
+    { "file": "04-tbmmnin-gorev-ve-yetkileri.md", "slug": "tbmmnin-gorev-ve-yetkileri", "page": "s.161–164" },
+    { "file": "05-bilgi-edinme-ve-denetim-yollari.md", "slug": "bilgi-edinme-ve-denetim-yollari", "page": "s.164–168" },
+    { "file": "06-cumhurbaskanligi-kararnamesi-ve-kanun.md", "slug": "cumhurbaskanligi-kararnamesi-ve-kanun", "page": "s.107–109" }
+  ]
+}

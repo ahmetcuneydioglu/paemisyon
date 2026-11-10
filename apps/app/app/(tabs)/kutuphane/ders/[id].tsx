@@ -58,7 +58,8 @@ export default function DersOdasiScreen() {
       ? `Premium · ${kart.locked} kart`
       : [`${kart.count} kart`, kart.due > 0 ? `${kart.due} tekrar bekliyor` : kart.learned > 0 ? `${kart.learned} öğrenildi` : null].filter(Boolean).join(" · ")
     : "";
-  const okunacak = d ? d.tools.summaryUnitCount > 0 || d.tools.legislation.length > 0 : false;
+  const dersSayisi = d?.tools.lessonCount ?? 0;
+  const okunacak = d ? d.tools.summaryUnitCount > 0 || dersSayisi > 0 || d.tools.legislation.length > 0 : false;
 
   return (
     <View style={{ flex: 1, backgroundColor: colors.bg }}>
@@ -102,7 +103,7 @@ export default function DersOdasiScreen() {
                 <ActionTile
                   icon={BookOpen}
                   title="Konu oku"
-                  subtitle={[d.tools.summaryUnitCount > 0 ? `${d.tools.summaryUnitCount} ünite özeti` : null, d.tools.legislation.length > 0 ? "madde metni" : null].filter(Boolean).join(" · ") || "Henüz okunacak metin yok"}
+                  subtitle={[dersSayisi > 0 ? `${dersSayisi} ders` : null, d.tools.summaryUnitCount > 0 ? `${d.tools.summaryUnitCount} ünite özeti` : null, d.tools.legislation.length > 0 ? "madde metni" : null].filter(Boolean).join(" · ") || "Henüz okunacak metin yok"}
                   disabled={!okunacak}
                   onPress={okumaSecimi}
                 />

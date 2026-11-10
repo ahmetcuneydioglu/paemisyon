@@ -1,0 +1,18 @@
+{
+  "slug": "cmk-giris-ve-temel-ilkeler",
+  "title": "Ceza Muhakemesine Giriş ve Temel İlkeler",
+  "subtitle": "Tanım ve kaynaklar, uygulama alanı, temel ilkeler, ceza davası ve bağlantılı uyuşmazlıklar",
+  "courseName": "Ceza Muhakemesi Hukuku",
+  "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+  "sortOrder": 1,
+  "isPremium": true,
+  "aiDraft": true,
+  "book": { "label": "THEMIS Ceza Muhakemesi Hukuku, 23. baskı, 2025", "page": "s.1–8, 25–30" },
+  "lessons": [
+    { "file": "01-tanim-nitelik-ve-kaynaklar.md", "slug": "cmk-tanim-nitelik-ve-kaynaklar", "page": "s.1" },
+    { "file": "02-uygulama-alani.md", "slug": "cmk-uygulama-alani-zaman-yer-kisi", "page": "s.2–3" },
+    { "file": "03-temel-ilkeler-dava-ve-gercek.md", "slug": "cmk-temel-ilkeler-dava-ve-maddi-gercek", "page": "s.3–5, 7" },
+    { "file": "04-temel-ilkeler-ispat-ve-durusma.md", "slug": "cmk-temel-ilkeler-ispat-ve-durusma", "page": "s.5–7" },
+    { "file": "05-muhakemenin-konusu-ve-baglanti.md", "slug": "cmk-muhakemenin-konusu-ve-baglanti", "page": "s.25–30" }
+  ]
+}

@@ -114,8 +114,14 @@ Bu kurallar her UI kodu yazımında geçerlidir; "sonradan düzeltiriz" yaklaş�
   alır (panelde görünür, kullanıcıya çıkmaz). Gövde altı blok türüyle sınırlıdır
   (karar 7 Kas 2026): metin, karşılaştırma tablosu, tanım, uyarı (tek ton),
   örnek, madde bağı, "sınavda çıktı" sorusu — soru BANKADAKİ gerçek kaynaklı
-  sorudur, derste yeni soru yazılmaz. Hedef uzunluk 400–700 kelime/ders,
-  4–8 ders/bölüm. Yapı: bölüm →
+  sorudur, derste yeni soru yazılmaz. Hedef uzunluk 600–1000 kelime/ders (kullanıcı kararı 10 Kas 2026: daha dolu
+  ders; ilk üç bölümdeki 400–700 alt sınır kaldı), 4–10 ders/bölüm. Sayılar:
+  madde bağı olan derste gövdedeki rakamlar madde metninde geçmeli (betik);
+  TÜRETİLMİŞ sayı yalnız açık formülle ve yazıyla ("üye tam sayısı altı yüz
+  olduğundan üçte biri iki yüz", dayanak md 75 bağı; karar 10 Kas 2026);
+  tarihsel/karşılaştırma sayıları (eski seçilme yaşı, eski seçim dönemi) kaynaklı
+  ve notlanmış olmak şartıyla yazıyla yazılabilir; kanun/İçtüzük düzeyindeki
+  sayılar gövdeye girmez. Yapı: bölüm →
   ders → sürüm (`lesson_sections` / `lessons` / `lesson_versions`); yayın kapısı
   derstedir, en son sürüm `ders-dogrulayici.ts`'yi geçmeli ve `reviewNote`
   zorunludur; yayın kararı insanındır (yalnız admin, `/lessons`). Kaynak kitap

@@ -2,7 +2,7 @@ import { Stack, useLocalSearchParams, useRouter } from "expo-router";
 import { BookOpen, Scale } from "lucide-react-native";
 import { View } from "react-native";
 import { AppText, Button, Card, ListRow, Notice, Screen, Skeleton } from "@/components/ui";
-import { useCourseRoom } from "@/features/rooms/queries";
+import { topicHasReading, topicReadingNote, useCourseRoom } from "@/features/rooms/queries";
 import { useTheme } from "@/theme/ThemeProvider";
 
 /**
@@ -16,7 +16,7 @@ export default function KonuOkuSecimScreen() {
   const p = useLocalSearchParams<{ courseId: string; name?: string }>();
   const q = useCourseRoom(p.courseId ?? null);
   const d = q.data;
-  const konular = (d?.topics ?? []).flatMap((t) => [t, ...t.children]).filter((t) => t.units.count > 0);
+  const konular = (d?.topics ?? []).flatMap((t) => [t, ...t.children]).filter(topicHasReading);
   const mevzuat = d?.tools.legislation ?? [];
   const bos = !q.isPending && !q.isError && konular.length === 0 && mevzuat.length === 0;
 
@@ -44,7 +44,7 @@ export default function KonuOkuSecimScreen() {
                   <Card key={t.id} style={{ paddingVertical: 0 }}>
                     <ListRow
                       title={t.name}
-                      subtitle={`Konu anlatımı ve hızlı tekrar · ${t.units.count} ünite${t.units.read > 0 ? ` · ${t.units.read} okundu` : ""}`}
+                      subtitle={`${t.units.count > 0 ? "Konu anlatımı ve hızlı tekrar" : "Konu anlatımı"} · ${topicReadingNote(t)}`}
                       leading={<BookOpen color={colors.ink} size={20} strokeWidth={1.75} />}
                       trailing={t.locked ? <AppText variant="label">Premium</AppText> : undefined}
                       divider={false}

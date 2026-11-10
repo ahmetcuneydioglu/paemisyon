@@ -1,0 +1,18 @@
+{
+  "slug": "cmk-yargilama-yetkisi",
+  "title": "Ceza Mahkemelerinin Yargılama Yetkisi",
+  "subtitle": "Görev, yer bakımından yetki, uyuşmazlık ve nakil, kişi bakımından yetki ve hepsinin karşılaştırması",
+  "courseName": "Ceza Muhakemesi Hukuku",
+  "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+  "sortOrder": 2,
+  "isPremium": true,
+  "aiDraft": true,
+  "book": { "label": "THEMIS Ceza Muhakemesi Hukuku, 23. baskı, 2025", "page": "s.9–24" },
+  "lessons": [
+    { "file": "01-madde-bakimindan-yetki-gorev.md", "slug": "cmk-madde-bakimindan-yetki-gorev", "page": "s.9–14" },
+    { "file": "02-yer-bakimindan-yetki.md", "slug": "cmk-yer-bakimindan-yetki", "page": "s.14–18" },
+    { "file": "03-yetki-uyusmazligi-nakil-ve-baglanti.md", "slug": "cmk-yetki-uyusmazligi-nakil-ve-baglanti", "page": "s.14, 18–20" },
+    { "file": "04-kisi-bakimindan-yetki.md", "slug": "cmk-kisi-bakimindan-yetki", "page": "s.20–23" },
+    { "file": "05-gorev-ve-yetki-karsilastirmasi.md", "slug": "cmk-gorev-ve-yetki-karsilastirmasi", "page": "s.9–24" }
+  ]
+}
