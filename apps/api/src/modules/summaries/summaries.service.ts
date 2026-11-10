@@ -210,7 +210,12 @@ export class SummariesService {
       mastery: user
         ? this.masteryOut(hakimiyet?.solvedCount ?? 0, hakimiyet?.correctCount ?? 0)
         : null,
-      quickReview: locked ? null : quickReview(unit.slug, visible.map((b) => this.toPublicBlock(b, unit.topicId))),
+      quickReview: locked
+        ? null
+        : quickReview(
+            unit.slug,
+            visible.map((b) => this.toPublicBlock(b, unit.topicId)),
+          ),
       blocks: visible.map((b) => this.toPublicBlock(b, unit.topicId)),
     };
   }

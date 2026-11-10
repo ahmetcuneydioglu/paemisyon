@@ -1,6 +1,7 @@
 import { Pressable, View } from "react-native";
 import { AppText } from "@/components/ui";
 import { useTheme } from "@/theme/ThemeProvider";
+import { useLargeText } from "@/theme/text-scale";
 
 export interface ForYouRow {
   key: string;
@@ -12,9 +13,12 @@ export interface ForYouRow {
 /**
  * Senin için (Bugün v3, Figma 68:474): en çok 3 satır, 56 pt, 1 px çizgi; sağda altın kenarlı
  * hap (koyuda altın metin, açıkta kahve). Satırın tamamı dokunulur; hap yalnız etikettir.
+ * Büyük yazıda (`useLargeText`) etiket satır sınırı olmadan kırılır; "Cmt 20:00" gibi bilgi
+ * üç noktayla kaybolmaz.
  */
 export function ForYouList({ rows }: { rows: ForYouRow[] }) {
   const { colors, radius, space } = useTheme();
+  const large = useLargeText();
   if (rows.length === 0) return null;
   return (
     <View style={{ gap: space.s2 }}>
@@ -30,6 +34,7 @@ export function ForYouList({ rows }: { rows: ForYouRow[] }) {
             onPress={r.onPress}
             style={({ pressed }) => ({
               minHeight: 56,
+              paddingVertical: large ? space.s2 : 0,
               flexDirection: "row",
               alignItems: "center",
               gap: space.s3,
@@ -38,7 +43,7 @@ export function ForYouList({ rows }: { rows: ForYouRow[] }) {
               opacity: pressed ? 0.7 : 1,
             })}
           >
-            <AppText variant="bodySm" style={{ flex: 1, fontSize: 15, lineHeight: 20 }} numberOfLines={2}>
+            <AppText variant="bodySm" style={{ flex: 1, fontSize: 15, lineHeight: 20 }} numberOfLines={large ? undefined : 2}>
               {r.label}
             </AppText>
             <View style={{ borderWidth: 1, borderColor: colors.accent, borderRadius: radius.pill, paddingHorizontal: 12, minHeight: 32, justifyContent: "center" }}>

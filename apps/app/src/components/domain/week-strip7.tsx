@@ -3,6 +3,7 @@ import { View } from "react-native";
 import { AppText } from "@/components/ui";
 import type { WeekDayState } from "@/features/home/queries";
 import { useTheme } from "@/theme/ThemeProvider";
+import { COMPACT_TEXT_SCALE } from "@/theme/text-scale";
 
 const GUNLER = ["Pzt", "Sal", "Çar", "Per", "Cum", "Cmt", "Paz"] as const;
 
@@ -10,6 +11,8 @@ const GUNLER = ["Pzt", "Sal", "Çar", "Per", "Cum", "Cmt", "Paz"] as const;
  * 7 günlük nöbet çizelgesi (Doc 49/13 §2): Pzt→Paz tek satır. Aktif gün ✓ (surfaceAlt),
  * bugün altın kutu (nokta; görev bitince ✓), kaçan ve gelecek günler boş kutu.
  * Durumlar sunucudan (`gamification.weekly.days`); istemci hesap yapmaz.
+ * Gün kısaltmaları sıkışık sütundadır: büyük yazıda `COMPACT_TEXT_SCALE` tavanı + tek satır,
+ * gerekirse küçülür — "Cum"/"Cmt" iki satıra kırılıp kutuları kaydırmaz.
  */
 export function WeekStrip7({ days }: { days: WeekDayState[] }) {
   const { colors, radius, space } = useTheme();
@@ -22,7 +25,7 @@ export function WeekStrip7({ days }: { days: WeekDayState[] }) {
         const isDone = d === "done";
         return (
           <View key={ad} style={{ flex: 1, alignItems: "center", gap: 6 }}>
-            <AppText variant="label" tone={today ? "accentInk" : "subtle"} style={{ textTransform: "none", letterSpacing: 0 }}>
+            <AppText variant="label" tone={today ? "accentInk" : "subtle"} numberOfLines={1} adjustsFontSizeToFit minimumFontScale={0.8} maxFontSizeMultiplier={COMPACT_TEXT_SCALE} style={{ textTransform: "none", letterSpacing: 0 }}>
               {ad}
             </AppText>
             <View
