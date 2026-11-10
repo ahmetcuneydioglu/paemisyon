@@ -56,7 +56,7 @@ Sistemin iki yüzü vardır ve sınavda ayrı adlarla sorulur. Delil serbestliğ
 İlk iki çerçeve değerlendirilecek delilin kümesini daraltır: dosyada bulunan her şey değil, yalnız iki süzgeçten geçmiş olan tartıya girer. Üçüncü çerçeve tartının kendisine ilişkindir ve öğretide ve uygulamada kabul edilen bir ölçüdür. Dördüncü çerçeve ise ilk üçünün denetlenebilmesini sağlar.
 
 :::uyari
-Vicdani kanaat, hâkimin dosya dışından edindiği kişisel bilgiyi hükme taşımasına izin vermez. Hâkim olayı kendi gözüyle görmüş olsa bile, bu bilgi duruşmada ortaya konulup tartışılmış bir delil değildir; böyle bir hâkim o davada tanık olabilir, hâkim olamaz.
+Vicdani kanaat, hâkimin dosya dışından edindiği kişisel bilgiyi hükme taşımasına izin vermez. Hâkim olayı kendi gözüyle görmüş olsa bile, bu bilgi duruşmada ortaya konulup tartışılmış bir delil değildir. Bu bilgi davaya ancak tanıklıkla girebilir; aynı davada tanık olarak dinlenen hâkim ise o davada artık hâkimlik yapamaz.
 :::
 
 ## Bilirkişi raporu hâkimi bağlar mı
@@ -132,4 +132,5 @@ Sorular duruşmanın usulüne uygunluğunun neyle ispatlanacağını, tutanağa 
 - Gömülü sorular: bankadaki yayınlı gerçek sorular (63555358… duruşmanın usule uygunluğunun ispatı; c1d69706… duruşma tutanağı, doğru şık imzalar; bc9ab4f7… bilirkişi raporuyla çelişen karar ve hukuka kesin aykırılık). Hepsi beş şıklı. Soru üretilmedi.
 - Eşlenmeyen adaylar: f3a481d7… ("serbest delil ilkesi" tanımı), 62c37def… (delillerin tasnifi), 1f04059f… (delillerin ortak özellikleri) ve 240bbfeb… (falcının beyanı) bu derse de uyar; ispat kavramı ve delil türleri "İspat ve Kanıt Türleri" bölümünün ilk dersinin konusu olduğu için o bölüme bırakıldı. Orada kullanılmazsa f3a481d7… bu derse eklenebilir.
 - Ana oturum gözden geçirmesi: 63555358… (duruşmanın usulüne uygunluğunun tutanakla ispatı) "İspat ve Kanıt Türleri" bölümünün birinci dersinde de eşlenmişti; aynı soru iki derste olmasın diye buradan çıkarıldı. Bu derste iki gömülü soru kaldı (hedef 3–4'ün altında). Yukarıdaki notlarda bu soruya yapılan göndermeler artık gövdede karşılık bulmaz.
+- DENETİM DÜZELTMESİ (ana oturum, CMK md 22/1-h): olayı gözüyle gören hâkimin "o davada hâkim olamaz" sonucu kanunda yoktur; yasaklılık yalnız aynı davada tanık ya da bilirkişi olarak dinlenmeye bağlanmıştır. Cümle buna göre yeniden yazıldı.
 - AI taslak; insan düzenleme ve yayın onayı bekliyor.

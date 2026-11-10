@@ -80,7 +80,7 @@ Kanun, beyanın kimin önünde ve hangi koşulda verildiğine göre bir basamakl
 
 | Beyan nerede verildi | Değeri |
 |---|---|
-| Hâkim ya da mahkeme önünde | Hükme esas alınabilir |
+| Hâkim ya da mahkeme önünde | Hükme esas alınabilir; tutanağı duruşmada okunabilir |
 | Cumhuriyet savcısı önünde | Duruşmadaki açıklamayla çelişirse tutanağı okunabilir |
 | Kollukta, müdafi hazırken | Duruşmadaki açıklamayla çelişirse tutanağı okunabilir |
 | Kollukta, müdafi yokken | Hâkim ya da mahkeme önünde doğrulanmadıkça hükme esas alınamaz |
@@ -124,4 +124,5 @@ Sorular yasak usullerin sayımını, rızanın sonucu değiştirmediğini ve yen
 - Gömülü sorular: bankadaki yayınlı gerçek sorular (61d8a0cc… 2024 hukuk mesleklerine giriş, açıkça sayılmayan yöntem; f80575a0… 2021 avukatlar için adli hâkimlik, yeniden ifade alma yetkisi; 49833ff5… rıza ile ilaç verilmesi; 41dae5c2… kanundaki indirim sebeplerini söyleme). Hepsi beş şıklı. Soru üretilmedi.
 - Eşlenmeyen adaylar (uygun, yer kalmadı): 7edceb94… (yasak yöntemle alınan beyan rıza ile geçerli olmaz; 49833ff5… ile aynı kural), 61e088bc… (ifade ve sorguda uyulacak hususlar; "mutlaka teknik imkân"). "ikrar", "müdafi hazır bulunmaksızın", "kollukça alınan ifade" aramaları bu derse uyan ayrı bir soru vermedi.
 - Ana oturum gözden geçirmesi: basamak tablosunda savcı önündeki ve müdafili kolluk ifadesi için "tutanağı duruşmada okunabilir" hücreleri md 213'ün koşuluyla ("aralarında çelişki bulunması halinde") daraltıldı.
+- DENETİM DÜZELTMESİ (ana oturum, CMK md 213/1): hâkim ya da mahkeme önündeki açıklamanın tutanağı da duruşmada okunabilecek tutanaklardandır; tablo hücresine eklendi.
 - AI taslak; insan düzenleme ve yayın onayı bekliyor.

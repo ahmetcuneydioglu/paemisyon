@@ -47,9 +47,9 @@ Yargılamaya katılamayacak hâkim.
 | Kaynağı | Hâkimin suçla ya da ilgililerle kişisel bağı, yahut aynı davada başka bir sıfat taşımış olması | Hâkimin aynı işte daha önce hâkim olarak görev yapmış olması |
 | Örnek | Suçtan kendisi zarar gören hâkim | Hükme katılmış hâkimin, o hükmü denetleyecek üst mahkemede yer alması |
 
-Birinci maddedeki nedenler iki öbekte düşünülebilir. Bir kısmı kişisel bağdır: hâkimin suçtan zarar görmesi, şüpheli, sanık ya da mağdurla evlilik, vesayet, kayyımlık, evlat edinme ya da hısımlık ilişkisi. Hısımlıkta sınır kan hısımlığında üçüncü derece, kayın hısımlığında ikinci derecedir ve ikisinde de sınır derecesi yasağa dahildir. Öbür kısmı sıfat çatışmasıdır: hâkim aynı davada savcılık, adli kolluk görevi, müdafilik ya da mağdur vekilliği yapmış yahut tanık ya da bilirkişi olarak dinlenmiştir.
+Birinci maddedeki nedenler iki öbekte düşünülebilir. Bir kısmı kişisel bağdır: hâkimin suçtan zarar görmesi, şüpheli, sanık ya da mağdurla evlilik, vesayet, kayyımlık, evlat edinme ya da hısımlık ilişkisi. Üstsoy ve altsoyda (kan ya da kayın) derece sınırı yoktur; yan hısımlıkta sınır kan hısımlığında üçüncü derece, kayın hısımlığında ikinci derecedir ve ikisinde de sınır derecesi yasağa dahildir. Öbür kısmı sıfat çatışmasıdır: hâkim aynı davada savcılık, adli kolluk görevi, müdafilik ya da mağdur vekilliği yapmış yahut tanık ya da bilirkişi olarak dinlenmiştir.
 
-Sınavın sevdiği ayrıntı "sonradan kalksa bile" kaydıdır. Evlilik, vesayet ve kayyımlık ilişkisi sona ermiş olsa da yasak sürer; boşanmış eşin davasına bakılamaz. Kayın hısımlığında da evliliğin bitmesi yasağı kaldırmaz. Buna karşılık sayılan derecelerin dışında kalan hısımlık, nişanlılık ya da eski bir iş ortaklığı yasaklılık nedeni değildir; bunlar ancak, somut olayda tarafsızlığı şüpheye düşürüyorsa, ret nedeni olabilir.
+Sınavın sevdiği ayrıntı "sonradan kalksa bile" kaydıdır. Evlilik, vesayet ve kayyımlık ilişkisi sona ermiş olsa da yasak sürer; boşanmış eşin davasına bakılamaz. Kayın hısımlığında da evliliğin bitmesi yasağı kaldırmaz. Buna karşılık yan hısımlıkta sayılan derecelerin dışında kalan hısımlık, nişanlılık ya da eski bir iş ortaklığı yasaklılık nedeni değildir; bunlar ancak, somut olayda tarafsızlığı şüpheye düşürüyorsa, ret nedeni olabilir.
 
 :::ornek
 Hâkim, aynı dosyada daha önce Cumhuriyet savcısı olarak görev yapmıştır: davaya bakamaz. Sıra tersine çevrildiğinde sonuç değişir; bir davada hâkimlik yapmış olan kişinin sonradan aynı işte savcı olarak görev yapmasını yasaklayan bir hüküm yoktur, çünkü Kanun yasaklılık ve reddi savcılar için öngörmemiştir.
@@ -93,7 +93,7 @@ Ret isteminin geri çevrilmesi.
 
 | | Olağan inceleme | Geri çevirme |
 |---|---|---|
-| Ne zaman | İstem usulüne uygun yapılmışsa | İstem süresinde değilse, neden ve delil gösterilmemişse ya da duruşmayı uzatma amacı açıkça anlaşılıyorsa |
+| Ne zaman | İstem usulüne uygun yapılmışsa | Kovuşturmada ileri sürülen istem süresinde değilse, neden ve delil gösterilmemişse ya da duruşmayı uzatma amacı açıkça anlaşılıyorsa |
 | Reddi istenen hâkim | Müzakereye katılamaz | Müzakereye katılır; tek hâkimli mahkemede kararı kendisi verir |
 | Karara karşı yol | Kabul kararı kesindir; istemin kabul edilmemesine karşı itiraz edilebilir | İtiraz edilebilir |
 
@@ -158,4 +158,5 @@ Sorular yasaklılık nedeni sayılmayan hâli, sonradan öğrenilen nedende sür
 - Madde bağları: CMK md 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32; Anayasa md 138.
 - Gömülü sorular: bankadaki yayınlı gerçek sorular (5b29e13e… yasaklılık hâli olmayan durum; 3b29f1df… 2026 PAEM 10. dönem, sonradan öğrenilen nedende süre; 2365d520… 2021 adli hâkimlik, geri çevirme; 95ac1678… 2024 PAEM 8. dönem, asliye ceza hâkiminin reddinde merci). Hepsi beş şıklı. Soru üretilmedi.
 - Eşlenmeyen adaylar (uygun, yer kalmadı ya da yineleme): bd5a63b8… (yasaklı olunan kişiler), a81fa5ba… (ret hakkında doğru ifade), fa17fd4f… (ret isteyebilecekler), 358a56b4… (2022 avukatlar için adli hâkimlik; 95ac1678… ile aynı kural), 2137be5a…, 7a61a784… ve 9f69eb0b… (yedi günlük süre; 3b29f1df… ile aynı kural).
+- DENETİM DÜZELTMESİ (ana oturum, CMK md 22 ve 31 bankadaki metinle): (a) hısımlıkta derece sınırı yalnız yan hısımlıkta geçerlidir; üstsoy ve altsoyda (kan ya da kayın, md 22/1-c) derece sınırı yoktur. Taslak sınırı bütün hısımlığa genelliyordu; cümle ve "sayılan derecelerin dışında" cümlesi yan hısımlıkla sınırlandı. (b) Geri çevirme yalnız kovuşturma evresinde ileri sürülen ret istemi için öngörülür (md 31/1); tablo hücresine eklendi. Not: hâkimin soruşturma işlemini bizzat yapması yasağının sınırlanması 5320 sayılı Kanun md 11'e dayanır (resmî metin okundu).
 - AI taslak; insan düzenleme ve yayın onayı bekliyor.

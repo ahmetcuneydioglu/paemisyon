@@ -47,7 +47,7 @@ Delil ve olayın geç bildirilmesi.
 :::
 
 :::uyari
-"Geç bildirme" ile "davayı uzatma amacı" aynı şey değildir. Geç bildirilen delil, gerçeğin araştırılmasına yarıyorsa kabul edilir; ret için istemin yalnız uzatma amacı taşıdığının anlaşılması gerekir. Zamanlama tek başına bu amacı göstermez.
+"Geç bildirme" ile "davayı uzatma amacı" aynı şey değildir. Geç bildirilmiş olmak tek başına ret nedeni değildir; geç bildirilen delil de ancak kanunun saydığı ret hâllerinden biri, örneğin istemin yalnız davayı uzatma amacı taşıması, varsa reddedilir. Zamanlama tek başına bu amacı göstermez.
 :::
 
 Delilin ortaya konulmasından vazgeçmek de mümkündür, ama bu tek tarafın elinde değildir: Cumhuriyet savcısı ile sanık ya da müdafii birlikte rıza gösterirse tanığın dinlenmesinden ya da başka bir delilin ortaya konulmasından vazgeçilebilir. "Birlikte rıza gösterseler bile vazgeçilemez" cümlesi sınavın sevdiği yanlış önermedir.
@@ -72,11 +72,11 @@ Duruşmada okunmasıyla yetinilebilecek belgeler.
 |---|---|---|
 | Olayın delili bir tanığın açıklamalarından ibaretse | Tanık duruşmada mutlaka dinlenir; tutanak okunması dinleme yerine geçmez | Hükmün dayanacağı beyanı hâkim kendisi duymalıdır |
 | Tanıklıktan çekinebilecek kişi duruşmada çekinirse | Önceki ifade tutanağı okunamaz | Çekinme hakkı, eski beyan okunarak dolanılamaz |
-| Tanık ya da suç ortağı ölmüş, akıl hastalığına tutulmuş, bulunamıyor ya da gelmesi olanaksızsa | Önceki tutanak okunabilir | Dinleme imkânı kalmamıştır |
+| Tanık ya da suç ortağı ölmüş, akıl hastalığına tutulmuş, bulunamıyor ya da hastalık, malullük gibi giderilemeyen bir nedenle belirsiz bir süre gelemiyorsa | Önceki tutanak okunabilir | Dinleme imkânı kalmamıştır |
 | Tanığın ifadesi, önemi bakımından duruşmada bulunmasını gerektirmiyorsa | Önceki tutanak okunabilir | Dinlemenin sağlayacağı ek yarar yoktur |
 | Bu hâller dışında kalan tutanaklar | Savcı, katılan ya da vekili, sanık ya da müdafii birlikte rıza gösterirse okunabilir | Tarafların ortak iradesi dinlemenin yerini tutar |
 
-İkinci satır öteki satırlardan nitelikçe farklıdır. Ölen ya da bulunamayan tanıkta engel fiilîdir ve tutanak okunur; çekinen tanıkta engel bir haktır ve tutanak okunmaz. Okunabilecek belgeler sorulduğunda doğru yanıt çoğu kez bu satırdır.
+İkinci satır öteki satırlardan nitelikçe farklıdır. Ölen ya da bulunamayan tanıkta engel fiilîdir ve tutanak okunur; çekinen tanıkta engel bir haktır ve tutanak okunmaz. "Hangisi duruşmada okunabilecek belgeler arasında yer almaz" sorusunun doğru yanıtı çoğu kez bu satırdır.
 
 Tutanağın okunduğu iki hâl daha vardır ve bunlar dinlemenin yerine geçmek için değil, dinlemeye yardım etmek içindir: tanık bir hususu hatırlayamadığında önceki ifadesinin ilgili kısmı okunur; duruşmadaki ifadesi önceki ifadesiyle çeliştiğinde önceki ifade okunarak çelişki giderilmeye çalışılır. Sanığın beyanları arasındaki çelişkide okunabilecek tutanaklar ise sınırlıdır.
 
@@ -144,4 +144,5 @@ Sorular sorgu ve delil sırasının istisnasını, vazgeçmenin koşulunu, tart�
 - Madde bağları: CMK md 206, 207, 209, 210, 211, 212, 213, 215, 216, 217.
 - Gömülü sorular: bankadaki yayınlı gerçek sorular (430fdfc0… sorgu ve delil sırasının istisnası; adbf1db7… 2023 mezunlar için adli hâkimlik, birlikte rıza ile vazgeçme; 42d3a624… tartışmada ilk söz; 8218e4c0… çekinen tanığın tutanağı). Hepsi beş şıklı. Soru üretilmedi.
 - Eşlenmeyen adaylar: c8a42d24… (üç öncüllü; adbf1db7… ile aynı bilgileri yoklar, yineleme olmasın diye eşlenmedi). 986543f3… (duruşma tutanağının içeriği, 2026 PAEM) bu bölümün konusu değil.
+- DENETİM DÜZELTMESİ (ana oturum, CMK md 206/2, 207, 211/1): (a) "geç bildirilen delil yalnız uzatma amacıyla reddedilir" genellemesi md 206/2'nin öteki iki ret hâlini dışarıda bırakıyordu; geç bildirmenin tek başına ret nedeni olmadığı, ret için kanunun saydığı hâllerden birinin gerektiği yazıldı. (b) Okuma tablosundaki "gelmesi olanaksızsa" hücresi md 211/1-b'nin söyleyişine (hastalık, malullük ya da giderilemeyen neden, belirsiz süre) yaklaştırıldı. (c) "Okunabilecek belgeler sorulduğunda doğru yanıt bu satırdır" cümlesi ters okunuyordu; soru kalıbı "hangisi okunabilecekler arasında yer almaz" olarak açık yazıldı (gömülü b1ee6cb2… sorusuyla uyumlu).
 - AI taslak; insan düzenleme ve yayın onayı bekliyor.

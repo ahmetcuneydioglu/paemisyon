@@ -65,7 +65,7 @@ Sulh ceza hâkimliği.
 | Nasıl oluşur | Tek hâkimden |
 | Hâkimi başka işte görevlendirilebilir mi | Yalnız bu hâkimlikte görevlendirilen hâkim, adalet komisyonunca başka mahkemede ya da işte görevlendirilemez |
 
-Soruşturmada kişi özgürlüğüne dokunan tedbirlerin çoğu bu hâkimliğin kararına bağlıdır; savcının kovuşturmaya yer olmadığına dair kararına karşı itirazı da o inceler. Bir yerde birden fazla hâkimlik varsa, birinin kararına karşı itirazı kural olarak numara bakımından onu izleyen hâkimlik inceler. Bu kuralın önemli bir ayrığı vardır: 2021 yılında yapılan değişiklikle, tutuklama ve adli kontrole ilişkin kararlara karşı itirazı inceleme işi hâkimliğin yargı çevresinde bulunduğu asliye ceza mahkemesi hâkimine verilmiştir. Böylece kişi özgürlüğünü en ağır biçimde etkileyen kararlar, aynı türden bir başka hâkimlikte değil, bir mahkeme hâkiminin önünde denetlenir.
+Soruşturmada kişi özgürlüğüne dokunan tedbirlerin çoğu bu hâkimliğin kararına bağlıdır; savcının kovuşturmaya yer olmadığına dair kararına karşı itirazı da o inceler. Bir yerde birden fazla hâkimlik varsa, birinin kararına karşı itirazı kural olarak numara bakımından onu izleyen hâkimlik inceler. Bu kuralın önemli bir ayrığı vardır: 2021 yılında yapılan değişiklikle, tutuklama ve adli kontrole ilişkin kararlara karşı itirazı inceleme işi hâkimliğin yargı çevresinde bulunduğu asliye ceza mahkemesi hâkimine verilmiştir; sulh ceza hâkimliği işlerine asliye ceza hâkiminin baktığı yerlerde bu itirazı ağır ceza mahkemesi başkanı inceler. Böylece kişi özgürlüğünü en ağır biçimde etkileyen kararlar, aynı türden bir başka hâkimlikte değil, bir mahkeme hâkiminin önünde denetlenir.
 
 :::madde 5271-sayili-ceza-muhakemesi-kanunu-cmk:268
 İtiraz usulü ve inceleme mercileri; sulh ceza hâkimliği kararlarına itiraz üçüncü fıkranın ilk iki bendindedir.
@@ -159,4 +159,5 @@ Sorular kolluğun iki işlevinin adını, mahkemelerin oluşumunu ve sulh ceza h
 - Madde bağları: 5235 md 8, 9, 10, 12; CMK md 161, 163, 164, 165, 166, 268; Anayasa md 148.
 - GÖREV TANIMIYLA FARK: görev tanımındaki madde listesi (md 164, 165, 166) dışında CMK md 161, 163 ve 268 ile 5235 md 8, 9, 10, 12 ve Anayasa md 148 bağlandı.
 - Gömülü sorular: bankadaki yayınlı gerçek sorular (0884e2c2… önleyici ve bastırıcı kolluk; f2ae2e2b… mahkemelerin oluşumu; 3a630c31… sulh ceza hâkimliğinin tutuklama ve adli kontrol kararlarına itirazda merci). Hepsi beş şıklı, etiketsiz. Soru üretilmedi. "adlî kolluk", "değerlendirme rapor", "çocuk mahkeme", "tek hâkim", "Yüce Divan" aramalarından bu derse uyan başka soru çıkmadı.
+- DENETİM DÜZELTMESİ (ana oturum, CMK md 268/3-b bankadaki metinle): tutuklama ve adli kontrol kararlarına itirazda, sulh ceza hâkimliği işlerine asliye ceza hâkiminin baktığı yerlerde inceleme ağır ceza mahkemesi başkanınındır; maddenin son cümlesindeki bu ayrık eklendi.
 - AI taslak; insan düzenleme ve yayın onayı bekliyor.

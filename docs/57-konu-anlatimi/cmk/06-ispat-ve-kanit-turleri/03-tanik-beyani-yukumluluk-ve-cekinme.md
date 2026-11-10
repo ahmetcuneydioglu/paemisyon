@@ -21,7 +21,7 @@ Kural olarak herkes tanık olabilir; çocuklar, akıl hastaları ve sanığın y
 | Müdafi | Olabilir; ama tanıklık ettiği sırada müdafi sıfatı taşımaz ve meslek sırrı için çekinme hakkı vardır |
 | Katılan | Öğretide tartışmalıdır |
 
-Tanık ancak tanık dinlemeye yetkili makam önünde tanıktır. Bu makamlar soruşturmada Cumhuriyet savcısı, kovuşturmada mahkeme, naip hâkim ya da istinabe olunan mahkemedir. Kolluğun olay hakkında bilgisine başvurduğu kişi "ifade sahibi"dir; tanıklığa ilişkin çağrı, yemin ve yaptırım hükümleri ona uygulanmaz. Bu ayrımın en görünür sonucu yemindedir: kolluk yeminle tanık dinleyemez.
+Tanık ancak tanık dinlemeye yetkili makam önünde tanıktır. Bu makamlar soruşturmada Cumhuriyet savcısı ve sulh ceza hâkimi, kovuşturmada mahkeme, naip hâkim ya da istinabe olunan mahkemedir. Kolluğun olay hakkında bilgisine başvurduğu kişi "ifade sahibi"dir; tanıklığa ilişkin çağrı, yemin ve yaptırım hükümleri ona uygulanmaz. Bu ayrımın en görünür sonucu yemindedir: kolluk yeminle tanık dinleyemez.
 
 ## Çağrıya uyma ödevi
 
@@ -129,4 +129,5 @@ Sorular yakınlık listesini, avukatın rızaya rağmen çekinebilmesini, telefo
 - Madde bağları: CMK md 43, 44, 45, 46, 47, 48.
 - Gömülü sorular: bankadaki yayınlı gerçek sorular (e9b653a0… 2024 PAEM 8. dönem, çekinebilecekler arasında sayılmayan; f29d7b96… rıza olsa da çekinebilen meslek; 0dbe8031… 2021 avukatlar için adli hâkimlik, telefonla çağrının sonuçları; ca3c5540… Devlet sırrında suç eşiği). Hepsi beş şıklı. Soru üretilmedi.
 - Eşlenmeyen adaylar (uygun, yer kalmadı): dbabc7d3… (meslek nedeniyle çekinebilecekler arasında olmayan), 140ae4d0… (tanıklıktan çekinemeyen), cebbf1ff… (Devlet sırrı; zabıt kâtibi).
+- DENETİM DÜZELTMESİ (ana oturum, CMK md 43/5 ve 60/2): soruşturmada tanık dinlemeye yetkili makamlar arasında sulh ceza hâkimi de vardır; liste tamamlandı.
 - AI taslak; insan düzenleme ve yayın onayı bekliyor.

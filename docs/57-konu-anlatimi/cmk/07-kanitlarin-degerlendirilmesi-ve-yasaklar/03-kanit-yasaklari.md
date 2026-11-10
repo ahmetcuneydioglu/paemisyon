@@ -49,7 +49,7 @@ Elde etme yasağı delilin toplanma biçimine ilişkindir. Öğretide dört öbe
 | Tür | Yasak olan | Örnek |
 |---|---|---|
 | İspat konusu yasağı | Belirli bir bilginin delil yapılması | Uzlaştırma görüşmelerinde yapılan açıklamalar hiçbir soruşturma, kovuşturma ya da davada delil olarak kullanılamaz |
-| İspat aracı yasağı | Belirli bir aracın delil yapılması | Şüpheli ya da sanık ile tanıklıktan çekinebilecek yakınları arasındaki mektup ve belgelere, bu kişilerin elindeyken elkonulamaz |
+| İspat aracı yasağı | Belirli bir aracın delil yapılması | Şüpheli ya da sanık ile tanıklıktan çekinebilecek kişiler (yakınlar ve meslek sırrı sahipleri) arasındaki mektup ve belgelere, bu kişilerin elindeyken elkonulamaz |
 | İspat yöntemi yasağı | Delile belirli bir yöntemle ulaşılması | İfade alma ve sorguda yasak usuller |
 | Nispi ispat yasağı | İşlemin yetkili olmayan kişi ya da makamca yapılması | Şüphelinin aynı olayla ilgili ifadesinin yeniden alınması gerektiğinde bu işlemi kolluğun yapması |
 
@@ -141,4 +141,5 @@ Sorular hukuka aykırı delilin ret nedeni olduğunu ve çekinme hakkını duru�
 - Gömülü sorular: bankadaki yayınlı gerçek sorular (ab321657… hangi hâlde delil istemi reddedilmez; işkenceyle ve kararsız aramayla elde edilen delil ret nedeni, geç bildirme değil; b1ee6cb2… çekinme hakkını ilk kez kovuşturmada kullanan tanığın önceki beyanı okunamaz). İkisi de beş şıklı. Soru üretilmedi. Hedef 3–4'ün altında: "delil yasa", "yasak delil", "kanıt yasa", "hukuka aykırı kanıt", "değerlendirme yasa", "kullanılamaz", "işkence" aramaları bu derse uyan başka soru vermedi.
 - Eşlenmeyen adaylar: 61d8a0cc… (yasak sorgu yöntemleri, 2024 hukuk mesleklerine giriş) ile susma hakkının bildirilmesine ilişkin b1800ad2… ve d6f3c201… bu derse de uyar; ifade ve sorgu soruları "İspat ve Kanıt Türleri" ile "Ceza Muhakemesinin Özneleri" bölümlerinin alanı olduğu için bırakıldı.
 - Ana oturum gözden geçirmesi: (1) çekinme hakkı bildirilmeden alınan beyana ilişkin cümleye "öğretide" kaydı ve md 45'in yaptırım yazmadığı eklendi; (2) hukuka aykırılığın şüpheli kalması cümlesi kesin hüküm olmaktan çıkarılıp "öğretide savunulur" biçimine getirildi (kitaptaki cümlenin sonu OCR'de kesik, görüntüyle doğrulanmadı).
+- DENETİM DÜZELTMESİ (ana oturum, CMK md 126/1): elkoyma yasağı yalnız yakınlar arasındaki değil, md 45 ve 46'ya göre tanıklıktan çekinebilecek bütün kişiler (meslek sırrı sahipleri dahil) arasındaki mektup ve belgeleri kapsar; tablo hücresi tamamlandı.
 - AI taslak; insan düzenleme ve yayın onayı bekliyor.

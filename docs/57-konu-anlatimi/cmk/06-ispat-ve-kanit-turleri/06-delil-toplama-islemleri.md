@@ -70,7 +70,7 @@ Hâkimin kararı ve inceleme yapılması.
 Genetik inceleme sonuçlarının gizliliği, saklanması ve yok edilmesi.
 :::
 
-Sonuçlar kişisel veridir ve başka amaçla kullanılamaz. Yürürlükteki düzenlemede sonuçlar kimlik bilgilerinden arındırılarak bu işe özgü bir sisteme kaydedilir. Kovuşturmaya yer olmadığına dair kararın kesinleşmesi, beraat ya da ceza verilmesine yer olmadığı kararının kesinleşmesi hâllerinde derhâl, öteki hâllerde mahkeme kararının kesinleşmesinden itibaren yirmi yıl geçince yok edilir.
+Sonuçlar kişisel veridir ve başka amaçla kullanılamaz; 2026'da eklenen hükümle, sisteme kaydedilen bilgiler yürütülen bir soruşturma ya da kovuşturmada maddi gerçeğin ortaya çıkarılması için mahkeme, hâkim ya da Cumhuriyet savcısı kararıyla kullanılabilir. Yürürlükteki düzenlemede sonuçlar kimlik bilgilerinden arındırılarak bu işe özgü bir sisteme kaydedilir. Kovuşturmaya yer olmadığına dair kararın kesinleşmesi, beraat ya da ceza verilmesine yer olmadığı kararının kesinleşmesi hâllerinde derhâl, öteki hâllerde mahkeme kararının kesinleşmesinden itibaren yirmi yıl geçince yok edilir.
 
 :::madde 5271-sayili-ceza-muhakemesi-kanunu-cmk:81
 Fizik kimliğin tespiti.
@@ -98,7 +98,7 @@ Yer gösterme.
 
 Keşif, hâkimin olayla ilgili şeyleri kendi duyularıyla incelemesidir; doğrudanlık ilkesinin en saf hâlidir. Bu yüzden asıl yetkili hâkimdir, savcı ancak gecikmesinde sakınca varsa keşif yapabilir, kolluk ise hiçbir durumda yapamaz.
 
-Yer gösterme susma hakkıyla doğrudan bağlantılıdır: susan şüpheliye yer gösterme yaptırılamaz, çünkü kanun bu işlemi kendisine yüklenen suç hakkında açıklamada bulunmuş şüpheli için öngörmüştür. Madde metni belirli suçlarda adli kolluk amirine de bu yetkiyi tanır; öğretide, gönderme yapılan hükmün içeriği değiştiği için bu yetkinin uygulama alanının kalmadığı belirtilir. Teşhis ise kolluk mevzuatında düzenlenmiştir ve polis tarafından savcının talimatıyla yaptırılır.
+Yer gösterme susma hakkıyla doğrudan bağlantılıdır: susan şüpheliye yer gösterme yaptırılamaz, çünkü kanun bu işlemi kendisine yüklenen suç hakkında açıklamada bulunmuş şüpheli için öngörmüştür. Madde metni, 250. maddenin birinci fıkrasındaki suçlarda adli kolluk amirine de bu yetkiyi tanır. Gönderilen fıkra 2012'de kaldırılmış, 2019'da seri muhakeme usulüne giren suçları sayan yeni bir metinle yeniden düzenlenmiştir. Teşhis ise kolluk mevzuatında düzenlenmiştir ve polis tarafından savcının talimatıyla yaptırılır.
 
 :::madde 5271-sayili-ceza-muhakemesi-kanunu-cmk:87
 Otopsi.
@@ -141,4 +141,5 @@ Sorular iç beden muayenesinde karar ve itirazı, keşfi kimin yapabildiğini, y
 - Madde bağları: CMK md 74, 75, 76, 78, 79, 80, 81, 83, 85, 87.
 - Gömülü sorular: bankadaki yayınlı gerçek sorular (def472e0… 2022 adli hâkimlik, iç beden muayenesi kararına itiraz; dedaed14… 2020 adli hâkimlik, keşif; a5b0dfb4… 2021 adli hâkimlik, yer gösterme; e515112b… gözlem altına almada itirazın etkisi). Hepsi beş şıklı. Soru üretilmedi.
 - Eşlenmeyen adaylar: 3f8bf772… ("dış beden muayenesi için … savcının kararı gerekir" şıkkı md 75'in düzenlemediği bir konuya dayanıyor; kökü ve şıkları tartışmaya açık, panelde incelenmeli). Uygun olup yer kalmayanlar: 12662a31… (onay süreleri), c3e246d7… (yirmi yıl; 2026 değişikliğini soruyor), 7c90265d… (moleküler genetik incelemenin koşulu), 18d1799c… (keşif yetkisi olmayan), 4b45bbaf… (yer gösterme), 0328c1e9… ve 1fd3b936… (otopsi), fc8a6457… (ölünün kimliği ve adli muayene), 7429bb7d…, 977f6c24… ve 8dd0daa2… (gözlem altına alma).
+- DENETİM DÜZELTMESİ (ana oturum, bankadaki CMK md 80, 85 ve 250 ile): (a) KİTAP ESKİ: md 85/1'in gönderdiği md 250/1 2012'de kaldırılmış, ama 17/10/2019 tarihli 7188 sayılı Kanunla seri muhakeme usulü başlığıyla yeniden düzenlenmiştir; "öğretide bu yetkinin uygulama alanı kalmadı" cümlesi çıkarıldı, yerine kanunun bugünkü durumu yazıldı. Gönderme hükmünün yorumu (kolluk amiri yetkisinin seri muhakeme suçlarında işleyip işlemediği) insan incelemesinde bakılmalı. (b) 16/7/2026 tarihli 7589 sayılı Kanunla md 80'e eklenen üçüncü fıkra: sisteme kaydedilen bilgiler yürüyen başka bir soruşturma ya da kovuşturmada mahkeme, hâkim ya da savcı kararıyla kullanılabilir; "başka amaçla kullanılamaz" cümlesi bu ayrıkla tamamlandı.
 - AI taslak; insan düzenleme ve yayın onayı bekliyor.

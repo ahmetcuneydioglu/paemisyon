@@ -14,7 +14,7 @@ Suçtan etkilenen kişi muhakemede üç ayrı adla karşımıza çıkar ve her a
 | Şikâyetçi | Suçtan zarar gördüğü için yetkili makamdan soruşturma ve kovuşturma yapılmasını isteyen kişi | Bu isteği açıklamasıyla |
 | Katılan | Kamu davasına katılma istemi mahkemece kabul edilen kişi | Mahkemenin kararıyla |
 
-Mağdur ile şikâyetçi çoğu olayda aynı kişidir, ama her zaman değil. Suçtan doğrudan etkilenmeyen, yine de zarar gören biri şikâyetçi olabilir; mağdur ise hiçbir istekte bulunmadan da mağdurdur. Kanun bu iki sıfatı aynı hükümlerde birlikte anar ve ikisine aynı hakları tanır.
+Mağdur ile şikâyetçi çoğu olayda aynı kişidir, ama her zaman değil. Suçtan doğrudan etkilenmeyen, yine de zarar gören biri şikâyetçi olabilir; mağdur ise hiçbir istekte bulunmadan da mağdurdur. Kanun bu iki sıfatı çoğu hükümde birlikte anar ve ikisine büyük ölçüde aynı hakları tanır; istem aranmadan vekil görevlendirilmesi ise yalnız mağdura özgüdür.
 
 Katılan ise ayrı bir basamaktır. Mağdur ve şikâyetçi muhakemenin öznesidir ama tarafı değildir; iddia makamının yanında yer alabilmeleri için davaya katılmaları gerekir. Bu ayrım dersin en önemli sonucunu doğurur: bazı haklar yalnız katılmış olana aittir.
 
@@ -91,7 +91,7 @@ Dinlemenin kendisi ikinci kez örselenmeye yol açabilir. Kanun bu riske karşı
 | Mağdur çocuklar ve psikolojisi bozulmuş diğer mağdurlar | Dinleme sırasında psikoloji, psikiyatri, tıp ya da eğitim alanında uzman bir kişi bulundurulur |
 | Özel ortamda dinlenmesi gerektiği ya da şüpheli veya sanıkla yüz yüze gelmesinde sakınca bulunduğu değerlendirilenler | Beyan özel ortamda, uzmanlar aracılığıyla alınır |
 | Kanunun andığı ağır cinsel suçların mağduru çocuklar | Soruşturmadaki beyan, bu amaçla hizmet veren merkezde, savcının nezaretinde uzmanlar aracılığıyla alınır ve kayda geçirilir |
-| Aynı türden suçun yetişkin mağdurları | Aynı usul uygulanır; kayıt için mağdurun rızası aranır |
+| Nitelikli cinsel saldırının yetişkin mağdurları | Soruşturmadaki beyan aynı usulle merkezde alınır; kayıt için mağdurun rızası aranır |
 
 Son iki satır arasındaki fark sorulur: çocukta kayıt usulün parçasıdır, yetişkinde rızaya bağlıdır. Bu merkezlerde alınan kayıtlar dava dosyasında saklanır, kimseye verilmez; yazılı tutanağa dönüştürülür ve tutanak isteyen ilgiliye verilir.
 
@@ -131,4 +131,5 @@ Sorular hakların evresini, kovuşturmada örnek alma hakkındaki "vekil" kaydı
 - Gömülü sorular: bankadaki yayınlı gerçek sorular (5d2453a0… 2024 PAEM 8. dönem, soruşturma evresindeki hak; 866fcabd… kovuşturmadaki haklar ve "yalnızca vekili aracılığıyla" kaydı; 64a8db85… istem aranmaksızın vekil; 6722eb0f… haklar arasında yer almayan). Hepsi beş şıklı. Soru üretilmedi.
 - Eşlenmeyen adaylar, panelde incelenmeli: 1af8e1e4… ve 0820b062… — ikisinde de "mağdur çocukların tanıklıkları sırasındaki görüntü veya seslerin kayda alınması zorunludur" ifadesi DOĞRU sayılıyor. Bu, md 236'nın üçüncü fıkrasının 2019'da yürürlükten kaldırılan cümlesine dayanır; yürürlükteki metinde kayıt zorunluluğu yalnız beşinci fıkradaki suçlar ve merkezde alınan beyan içindir. Anahtarlar eskimiş olabilir; eşlenmedi. 1cf52298… (katılma) bu bölümün ikinci dersinin alanıdır, dokunulmadı.
 - Ana oturum gözden geçirmesi: hakların bildirilmesi paragrafındaki "sınavda … biçiminde sorulabilir" tahmini çıkarıldı (bankada böyle bir soru görülmedi); yerine md 234'ün son fıkrasındaki iki parçalı yükümlülüğü söyleyen cümle kondu.
+- DENETİM DÜZELTMESİ (ana oturum, CMK md 234 ve 236 bankadaki metinle): (a) "kanun iki sıfata aynı hakları tanır" genellemesi md 234/2 ile çelişiyordu: istem aranmadan vekil görevlendirilmesi yalnız mağdur içindir; cümle "büyük ölçüde" kaydıyla ve bu ayrıkla düzeltildi. (b) md 236/6 TCK md 102/2 (nitelikli cinsel saldırı) mağdurlarını kapsar; tablo satırı "aynı türden suçun yetişkin mağdurları" yerine bu suçla adlandırıldı ve yalnız soruşturmadaki beyana uygulandığı yazıldı.
 - AI taslak; insan düzenleme ve yayın onayı bekliyor.
