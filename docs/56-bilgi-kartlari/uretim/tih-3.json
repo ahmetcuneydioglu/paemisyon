@@ -1,0 +1,259 @@
+{
+  "deck": {
+    "topicId": "a0798f24-de4a-42a3-95aa-ef133be3d387",
+    "legislationSlug": "6701-sayili-turkiye-insan-haklari-ve-esitlik-kurumu-kanunu",
+    "sourceLabel": "AI bilgi kartı — 6701 Sayılı Türkiye İnsan Hakları ve Eşitlik Kurumu Kanunu md 16–30",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: resmî madde metni + çıkmış sorular)"
+  },
+  "cards": [
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Türkiye İnsan Hakları ve Eşitlik Kurumunda hangi uzman kadroları istihdam edilebilir?",
+      "back": "İnsan Hakları ve Eşitlik Uzmanı ile İnsan Hakları ve Eşitlik Uzman Yardımcısı.",
+      "articleRefs": [
+        "16"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Türkiye İnsan Hakları ve Eşitlik Kurumuna başvurmadan önce aykırı bulunan uygulamanın düzeltilmesi ilgili taraftan istenir. Bu talep kaç gün içinde cevaplanmazsa Kuruma başvurulabilir?",
+      "back": "Otuz gün. Talep reddedilirse ya da otuz gün içinde cevap verilmezse Kuruma başvuru yapılabilir.",
+      "explanation": "Telafisi güç veya imkânsız zararların doğması ihtimali bulunan hâllerde Kurum bu ön talep şartını aramadan başvuruyu kabul edebilir. Dava açma süresi içinde Kuruma yapılan başvuru, işlemeye başlamış olan dava açma süresini durdurur.",
+      "articleRefs": [
+        "17"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Hangi işlemler Türkiye İnsan Hakları ve Eşitlik Kurumuna yapılacak başvurunun konusu olamaz?",
+      "back": "Yasama ve yargı yetkilerinin kullanılmasına ilişkin işlemler, Hâkimler ve Savcılar Kurulu (metinde: Hâkimler ve Savcılar Yüksek Kurulu) kararları ve Anayasanın yargı denetimi dışında bıraktığı işlemler.",
+      "explanation": "Başvurulardan herhangi bir ücret alınmaz. Başvuru illerde valilikler, ilçelerde kaymakamlıklar aracılığıyla da yapılabilir ve başvuru hakkının etkin kullanılmasına hiçbir surette engel olunamaz.",
+      "articleRefs": [
+        "17"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Resen yapılan bir incelemede çocuğun yüksek yararı gerektiriyorsa kanuni temsilcinin rızası aranır mı?",
+      "back": "Hayır; çocuğun yüksek yararının gerektirdiği hâllerde kanuni temsilcinin rızası aranmaz. Bunun dışında mağdur şahsen belirlenebiliyorsa kendisinin veya kanuni temsilcisinin açık rızası şarttır.",
+      "explanation": "Bu kural, insan hakları ve ayrımcılık yasağı ihlallerine ilişkin resen incelemeler içindir. Başvurularda çocukların, vesayet ya da koruma altında olanların ve talep eden mağdurların kimlik bilgileri gizli tutulur.",
+      "articleRefs": [
+        "17"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Türkiye İnsan Hakları ve Eşitlik Kurumu başvuruları ve resen yaptığı incelemeleri en geç ne kadar sürede sonuçlandırır?",
+      "back": "Üç ay içinde; süre başvuru ve resen inceleme kararı tarihinden başlar. Başkan bu süreyi bir defaya mahsus en fazla üç ay uzatabilir.",
+      "explanation": "Uzatma yetkisi Başkana aittir.",
+      "articleRefs": [
+        "18"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "İhlal iddiasına muhatap olan taraf, yazılı görüşünü istemin tebliğinden itibaren kaç gün içinde Kuruma ulaştırmalıdır?",
+      "back": "On beş gün içinde. Talep hâlinde Başkan bu süreyi bir defaya mahsus on beş gün uzatabilir.",
+      "explanation": "Yazılı görüş başvurana tebliğ edilir; başvuran da kendi görüşünü tebliğden itibaren en geç on beş gün içinde sunar. Taraflara talepleri hâlinde Kurul önünde ayrı ayrı sözlü açıklama yapma hakkı tanınabilir.",
+      "articleRefs": [
+        "18"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Uzlaşma müzakereleri sırasında alınan beyanlar sonradan açılan bir davada delil olarak kullanılabilir mi?",
+      "back": "Hayır; uzlaşma müzakereleri sırasında yapılan tespitler, alınan beyanlar ve açıklamalar hiçbir soruşturma, kovuşturma ya da davada delil olarak kullanılamaz.",
+      "explanation": "Başkan, görüşler alındıktan sonra resen veya talep üzerine tarafları uzlaşmaya davet edebilir; uzlaşma en geç bir ay içinde sonuçlandırılır. Sonuç alınamazsa rapora ilişkin müzekkere yirmi gün içinde Kurula sunulur ve Kurul ihlal yapılıp yapılmadığına karar verir.",
+      "articleRefs": [
+        "18"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Kuruma verilen inceleme, araştırma, ziyaret ve rapor hazırlama görevlerini kimler yerine getirir?",
+      "back": "İnsan hakları ve eşitlik uzmanları, insan hakları ve eşitlik uzman yardımcıları ve Başkan tarafından görevlendirilen diğer Kurum personeli.",
+      "articleRefs": [
+        "19"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Başkanın yetkilendirdiği Kurum personeli hangi kişilerin bulundukları yerleri ziyaret edip inceleme yapabilir?",
+      "back": "Özgürlüğünden mahrum bırakılan ya da koruma altına alınan kişilerin bulundukları yerleri.",
+      "explanation": "Bu personel buralarda gerekli tutanakları düzenleyebilir ve kötü muameleye maruz kaldığı iddia edilen kişilerle görüşebilir. Kamu kurum ve kuruluşları ile diğer gerçek ve tüzel kişiler, ziyaretleri kolaylaştırmak ve talepleri gecikmeksizin yerine getirmek zorundadır.",
+      "articleRefs": [
+        "19"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Türkiye İnsan Hakları ve Eşitlik Kurumunun gerekçesini belirterek istediği bilgi ve belgeler, talebin tebliğinden itibaren kaç gün içinde verilmelidir?",
+      "back": "Otuz gün içinde; bu sürede verilmesi zorunludur.",
+      "explanation": "Yerinde inceleme için Başkanın belirleyeceği Kurum personelinin başkanlığında heyet oluşturulabilir. Heyetin giderleri Kurum bütçesinden karşılanır, sonuçları Kurum tarafından rapor hâline getirilir.",
+      "articleRefs": [
+        "19"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Türkiye İnsan Hakları ve Eşitlik Kurumunda ileri derecede teknik ve mali uzmanlık bilgisi gerektiren konularda bilirkişiyi kim görevlendirebilir?",
+      "back": "Başkan ya da Kurul; bilirkişinin ücreti Kurum bütçesinden ödenir.",
+      "explanation": "Gerek görülürse Kurul ve inceleme ve araştırma yapmaya yetkili Kurum personeli tanık veya ilgili kişileri de dinleyebilir. Bilirkişilerin nitelikleri ve çalışma esasları yönetmelikle düzenlenir.",
+      "articleRefs": [
+        "20"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Münhasıran ayrımcılık yasağının ihlali iddiasıyla yapılan başvuruda, başvuran gerekli olguları ortaya koyarsa karşı taraf neyi ispat etmelidir?",
+      "back": "Ayrımcılık yasağını ve eşit muamele ilkesini ihlal etmediğini.",
+      "articleRefs": [
+        "21"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Başvuranın yalnız kuvvetli emareleri ortaya koyması, ispat yükünü karşı tarafa geçirmeye yeter mi?",
+      "back": "Hayır; kuvvetli emarelerle birlikte karine oluşturan olguların varlığını da ortaya koyması gerekir.",
+      "explanation": "Bu ispat kuralı, münhasıran ayrımcılık yasağının ihlali iddiasıyla Kuruma yapılan başvurularda uygulanır.",
+      "articleRefs": [
+        "21"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Ayrımcılık yasağıyla ilgili sorunları ve çözüm önerilerini tartışmak amacıyla hangi yapı oluşturulur?",
+      "back": "İstişare komisyonu.",
+      "explanation": "Komisyona katılanlar arasında kamu kurum ve kuruluşları, sivil toplum kuruluşları, sendikalar, yükseköğretim kurumları, basın ve yayın kuruluşları ve araştırmacılar bulunur.",
+      "articleRefs": [
+        "22"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Kurum, insan hakları konularındaki istişare toplantılarını yalnız merkezde mi gerçekleştirir?",
+      "back": "Hayır; istişare toplantıları merkezde ve illerde gerçekleştirilir.",
+      "explanation": "Bu toplantılar insan hakları sorunlarını tartışmak ve bilgi ve görüş alışverişinde bulunmak amacıyla yapılır; uygulamaya ilişkin usul ve esaslar yönetmelikle belirlenir.",
+      "articleRefs": [
+        "22"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Türkiye İnsan Hakları ve Eşitlik Kurumunun gelirleri nelerdir?",
+      "back": "Genel bütçeden yapılacak hazine yardımları, Kuruma ait taşınır ve taşınmazlardan elde edilen gelirler, gelirlerinin değerlendirilmesinden elde edilen gelirler ve diğer gelirler.",
+      "articleRefs": [
+        "23"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Ayrımcılıkla mücadele için hangi alanlarda resmî nitelikte istatistik toplanacağına kim karar verir?",
+      "back": "Kurul; Türkiye İstatistik Kurumu ve diğer ilgili kurum ve kuruluşlarla birlikte karar verir.",
+      "articleRefs": [
+        "24"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Ayrımcılık belirtilerine ilişkin istatistiksel bilgilerin toplanmasından Kurul mu sorumludur?",
+      "back": "Hayır; bu bilgilerin toplanmasından Resmî İstatistik Programı kapsamında Türkiye İstatistik Kurumu sorumludur.",
+      "explanation": "Bilgiler, verilere sürekli ve eksiksiz şekilde erişilmesini sağlayacak bir sistem içinde toplanır.",
+      "articleRefs": [
+        "24"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Ayrımcılık yasağını ihlal edenler hakkında uygulanacak idari para cezasının sınırları nedir?",
+      "back": "Bin Türk lirasından on beş bin Türk lirasına kadar idari para cezası.",
+      "explanation": "Ceza belirlenirken ihlalin etki ve sonuçlarının ağırlığı, failin ekonomik durumu ve çoklu ayrımcılığın ağırlaştırıcı etkisi dikkate alınır. Cezalar tebliğinden itibaren bir ay içinde ödenir.",
+      "articleRefs": [
+        "25"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Kurumun inceleme yetkisine ilişkin yükümlülüklere uyarıya rağmen haklı bir neden olmaksızın belirtilen sürede uymayana hangi tutarda idari para cezası uygulanır?",
+      "back": "Beş yüz Türk lirasından iki bin Türk lirasına kadar idari para cezası.",
+      "explanation": "Bu yükümlülükler arasında istenen bilgi ve belgeleri tebliğden itibaren otuz gün içinde vermek ve Kurumun ziyaretlerini kolaylaştırmak vardır. Kamu kurum ve kuruluşlarına verilen cezada ödenen tutar, kusuruyla sebebiyet veren memurlara ve diğer kamu görevlilerine rücu edilir.",
+      "articleRefs": [
+        "25",
+        "19"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Hakkında uyarı cezası verilen kişi veya kurumun ayrımcı fiili tekrarlanırsa alacağı ceza hangi oranda artırılır?",
+      "back": "Yüzde elli oranında; bu artış ceza üst sınırını aşamaz.",
+      "explanation": "Kurul, verdiği idari para cezasını bir defaya mahsus olmak üzere uyarı cezasına dönüştürebilir. Kanunda hüküm bulunmayan hâllerde idari yaptırımlara Kabahatler Kanunu hükümleri uygulanır.",
+      "articleRefs": [
+        "25"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "İnsan hakları ve ayrımcılıkla mücadele eğitimini kimler verir?",
+      "back": "Kurum personeli veya insan hakları ve ayrımcılıkla mücadele eğiticileri.",
+      "explanation": "Eğiticilerin nitelikleri, çalışma usul ve esasları ile eğiticilere verilecek ücret yönetmelikle düzenlenir.",
+      "articleRefs": [
+        "26"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "6701 sayılı Kanunun uygulanmasına ilişkin yönetmelikleri kim yürürlüğe koyar?",
+      "back": "Türkiye İnsan Hakları ve Eşitlik Kurumu.",
+      "articleRefs": [
+        "27"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Diğer mevzuatta mülga Türkiye İnsan Hakları Kurumuna yapılmış atıflar hangi kuruma yapılmış sayılır?",
+      "back": "Türkiye İnsan Hakları ve Eşitlik Kurumuna.",
+      "explanation": "6332 sayılı Türkiye İnsan Hakları Kurumu Kanunu yürürlükten kaldırılmıştır.",
+      "articleRefs": [
+        "28"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "6701 sayılı Türkiye İnsan Hakları ve Eşitlik Kurumu Kanunu ne zaman yürürlüğe girer?",
+      "back": "Yayımı tarihinde.",
+      "articleRefs": [
+        "29"
+      ]
+    }
+  ]
+}

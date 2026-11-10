@@ -1,0 +1,283 @@
+{
+  "deck": {
+    "topicId": "b451923e-eac4-44f2-9d0b-49d741cb0cfc",
+    "legislationSlug": "5188-sayili-ozel-guvenlik-hizmetlerine-dair-kanun",
+    "sourceLabel": "AI bilgi kartı — 5188 Sayılı Özel Güvenlik Hizmetlerine Dair Kanun md 12–29",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: resmî madde metni + çıkmış sorular)"
+  },
+  "cards": [
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Özel güvenlik görevlilerine kimlik kartını kim verir?",
+      "back": "Valilik verir. Kimlik kartında görevlinin adı ve soyadı ile silahlı ya da silahsız olduğu belirtilir.",
+      "articleRefs": [
+        "12"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Üzerinde kimlik kartı olmayan özel güvenlik görevlisi, Kanunun 7 nci maddesinde sayılan yetkileri kullanabilir mi?",
+      "back": "Hayır. Üzerinde kimlik kartı olmayan özel güvenlik görevlileri md 7'de sayılan yetkileri kullanamaz.",
+      "explanation": "Kimlik kartı, görev alanı ve süresi içinde herkesin görebileceği şekilde yakaya takılır.",
+      "articleRefs": [
+        "12"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Herhangi bir sebeple görevinden ayrılan özel güvenlik görevlisi, işveren tarafından kaç gün içinde valiliğe bildirilir?",
+      "back": "15 gün içinde. Bildirimi işveren yapar.",
+      "articleRefs": [
+        "12"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Özel güvenlik görevlileri görev alanı içinde ve görev süresince ne giyer?",
+      "back": "Üniforma giyerler.",
+      "articleRefs": [
+        "13"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Görevin ve işyerinin özelliği nedeniyle gerekli görülen hallerde, özel güvenlik görevlisinin sivil kıyafetle görev yapmasına kim izin verebilir?",
+      "back": "Komisyon izin verebilir.",
+      "articleRefs": [
+        "13"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Özel güvenlik temel eğitimi en az kaç ders saati olarak düzenlenir?",
+      "back": "120 ders saatinden az olamaz. Temel eğitim teorik ve pratik eğitim ile silah eğitiminden oluşur.",
+      "articleRefs": [
+        "14"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Özel güvenlik yenileme eğitimi en az 120 ders saati olarak mı düzenlenir?",
+      "back": "Hayır. Yenileme eğitimi 60 ders saatinden az olmamak üzere düzenlenir; 120 ders saati temel eğitimin alt sınırıdır.",
+      "explanation": "Yeterli bina, araç, gereç ve personel bulunursa yenileme eğitimi valiliğin izniyle güvenlik hizmetinin sağlandığı yerde de verilebilir.",
+      "articleRefs": [
+        "14"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Genel kolluk kuvvetlerinden kendi isteğiyle ayrılan birinden özel güvenlik temel eğitimi şartının aranmaması için bu görevde en az kaç yıl çalışmış olması gerekir?",
+      "back": "En az 5 yıl. Bu durumda temel eğitim şartı ve md 10'un birinci fıkrasının (b) bendindeki eğitim şartı aranmaz.",
+      "explanation": "Aynı muafiyet Milli İstihbarat Teşkilatından bu şekilde ayrılanlara da uygulanır. Genel kolluk kuvvetlerinden ve Milli İstihbarat Teşkilatından emekli olanlar da bu muafiyetten yararlanır.",
+      "articleRefs": [
+        "14"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Bu Kanundaki görevlerini yerine getirirken yaralanan özel güvenlik görevlisine tazminat, genel kural olarak hangi esaslara göre ödenir?",
+      "back": "İş sözleşmesinde veya toplu iş sözleşmesinde belirlenen miktar ve esaslar çerçevesinde ödenir.",
+      "explanation": "Aynı kural, engelli hâle gelen görevliye ve ölen görevlinin kanunî mirasçılarına da uygulanır. Bu tazminat, 4857 sayılı İş Kanunu kapsamında ödenmesi gereken diğer tazminatlarla ilişkilendirilmez.",
+      "articleRefs": [
+        "15"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Mahkeme genel hükümlere göre daha yüksek bir tazminata hükmederse, iş sözleşmesine dayanılarak önceden ödenen tutar ne olur?",
+      "back": "Mahsup edilir. İş sözleşmesine veya toplu iş sözleşmesine dayanılarak ödenen tutar, hükmedilen tazminattan düşülür.",
+      "articleRefs": [
+        "15"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Kamu kurum ve kuruluşlarında görev yaparken ölen özel güvenlik görevlisinin kanunî mirasçılarına hangi tazminat miktarı ödenir?",
+      "back": "İş sözleşmesi, toplu iş sözleşmesi veya 2330 sayılı Nakdi Tazminat ve Aylık Bağlanması Hakkında Kanunda belirtilen miktarlardan hangisi yüksekse o ödenir.",
+      "articleRefs": [
+        "15"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Özel güvenlik görevlisini koruma ve güvenlik hizmetleri dışında başka bir işte çalıştıran kişiye ne kadar idari para cezası verilir?",
+      "back": "Her tespit için 3000 Türk Lirası idari para cezası verilir.",
+      "explanation": "Özel güvenlik personeli, Kanunda belirtilen koruma ve güvenlik hizmetleri dışında başka bir işte çalıştırılamaz. Aynı ceza, görevliye üniforma giydirmeyen ya da izin verilen dışında teçhizat giydirerek çalıştıran kişi, kurum ve kuruluşlara da verilir.",
+      "articleRefs": [
+        "16",
+        "20"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Özel güvenlik personeli greve katılabilir mi?",
+      "back": "Hayır. Özel güvenlik personeli greve katılamaz.",
+      "articleRefs": [
+        "17"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Grev yasağına uymayan özel güvenlik görevlisi ne kadar süre özel güvenlik alanında görev alamaz?",
+      "back": "6 ay süreyle özel güvenlik alanında görev alamaz.",
+      "explanation": "Bu yaptırımı mahalli mülki amir verir.",
+      "articleRefs": [
+        "17",
+        "20"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Özel güvenlik görevlileri lokavt dolayısıyla işten uzaklaştırılabilir mi?",
+      "back": "Hayır. Özel güvenlik görevlileri lokavt dolayısıyla işten uzaklaştırılamaz.",
+      "articleRefs": [
+        "18"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Özel güvenlik iznini almadan özel güvenlik görevlisi istihdam eden kişiye hangi ceza öngörülür?",
+      "back": "3 aydan 1 yıla kadar hapis veya adlî para cezası.",
+      "articleRefs": [
+        "19"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Çalışma izni verilmeyen kişiyi silâhlı özel güvenlik görevlisi olarak çalıştıran yetkilinin cezası, 3 aydan 1 yıla kadar hapisle mi sınırlıdır?",
+      "back": "Hayır. Temel ceza 3 aydan 1 yıla kadar hapistir; kişi silâhlı çalıştırılmışsa ceza bir kat artırılır.",
+      "explanation": "Suç bir tüzel kişinin faaliyeti çerçevesinde işlenirse, ayrıca tüzel kişilere özgü güvenlik tedbirlerine hükmolunur.",
+      "articleRefs": [
+        "19"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Özel güvenlik malî sorumluluk sigortasını yaptırmadan özel güvenlik görevlisi istihdam eden yöneticiye hangi ceza verilir?",
+      "back": "İstihdam ettiği her kişi için 150 gün adlî para cezası verilir.",
+      "explanation": "Ceza, istihdam edilen her kişi için ayrı ayrı uygulanır.",
+      "articleRefs": [
+        "19"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Özel güvenlik kimlik kartını başkasına kullandıran görevli, idari para cezası verildikten sonra yeniden özel güvenlik alanında çalışabilir mi?",
+      "back": "Hayır. 3000 Türk Lirası idari para cezası verilir, kimlik kartı valilikçe iptal edilir ve bir daha özel güvenlik alanında çalışamaz.",
+      "explanation": "Aynı yaptırım, kimlik kartını başkasına kullandıran özel güvenlik yöneticisine de uygulanır. Bu maddedeki cezaları mahalli mülki amir verir.",
+      "articleRefs": [
+        "20"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Birlikte görev yaptığı yetkili genel kolluk amirinin emrini yerine getirmeyen özel güvenlik görevlisi ne kadar süre özel güvenlik alanında görev alamaz?",
+      "back": "1 yıl süreyle özel güvenlik alanında görev alamaz.",
+      "explanation": "Aynı yaptırım şu kişilere de uygulanır: göreviyle bağlantılı olarak öğrendiği suçu yetkili genel kolluğa bildirmeyen yönetici ve görevliler, emrin yerine getirilmemesine sebep olan kişi, kurum, kuruluş veya şirket yetkilileri.",
+      "articleRefs": [
+        "20"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Geçerli mazereti olmadan denetim esnasında güvenlik sorumlusunu bulundurmayan şirkete ne kadar idari para cezası verilir?",
+      "back": "5000 Türk lirası idari para cezası verilir.",
+      "explanation": "Aynı ceza, denetim kapsamındaki bilgi, belge ve kayıtları vermeyenlere de verilir. Denetimlerde tespit edilip giderilmesi istenen eksiklikleri gidermeyen yöneticilere ise 6000 Türk Lirası idari para cezası verilir.",
+      "articleRefs": [
+        "20"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Özel güvenlik malî sorumluluk sigortasını yaptırmak kimin yükümlülüğüdür?",
+      "back": "Özel hukuk tüzel kişileri ile özel güvenlik şirketlerinin. Sigorta, istihdam ettikleri görevlilerin üçüncü kişilere verecekleri zararların tazmini için yaptırılır.",
+      "articleRefs": [
+        "21"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Türkiye'de ilgili branşta çalışmaya yetkili bir sigorta şirketi, özel güvenlik malî sorumluluk sigortası yapmayı reddedebilir mi?",
+      "back": "Hayır. Bu sigorta şirketleri özel güvenlik malî sorumluluk sigortasını yapmakla yükümlüdür.",
+      "articleRefs": [
+        "21"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Özel güvenlik şirketlerini denetlemeye kimler yetkilidir?",
+      "back": "İçişleri Bakanlığı ve valilikler yetkilidir. Özel güvenlik birimlerini ve özel güvenlik eğitimi veren kurumları da onlar denetler.",
+      "explanation": "Denetimin mahiyeti, kapsamı, usul ve esasları yönetmelikle belirlenir.",
+      "articleRefs": [
+        "22"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Denetim sonucu tespit edilen eksiklikler ne zaman giderilmelidir?",
+      "back": "Verilen süre içinde. Eksikliklerin ilgili kişi, kurum, kuruluş ve şirketlerce bu süre içinde giderilmesi zorunludur.",
+      "articleRefs": [
+        "22"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Amacı dışında faaliyet gösterdiği tespit edildiği için faaliyet izni iptal edilen özel güvenlik şirketinin kurucuları için hangi sonuç doğar?",
+      "back": "Kurucu, temsilci ve yöneticileri özel güvenlik alanında faaliyette bulunamaz.",
+      "explanation": "Faaliyet izni, şirketin suç kaynağına dönüştüğü ya da terör örgütlerine aidiyeti, irtibatı veya iltisakı bulunduğu tespit edildiğinde de iptal edilir.",
+      "articleRefs": [
+        "22"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Özel güvenlik görevlisi, göreviyle bağlantılı olarak işlediği suçtan nasıl cezalandırılır?",
+      "back": "Kamu görevlisi gibi cezalandırılır.",
+      "articleRefs": [
+        "23"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Özel güvenlik görevlisine görevi dolayısıyla suç işleyen kişi nasıl cezalandırılır?",
+      "back": "Kamu görevlisine karşı suç işlemiş gibi cezalandırılır.",
+      "articleRefs": [
+        "23"
+      ]
+    }
+  ]
+}

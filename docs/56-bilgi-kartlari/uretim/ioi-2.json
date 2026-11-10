@@ -1,0 +1,292 @@
+{
+  "deck": {
+    "topicId": "cc810ce5-feac-47bd-b4f9-9a9edf7c4672",
+    "legislationSlug": "5302-il-ozel-idaresi-kanunu",
+    "sourceLabel": "AI bilgi kartı — 5302 İl Özel İdaresi Kanunu md 13–30",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: resmî madde metni + çıkmış sorular)"
+  },
+  "cards": [
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "İl genel meclisinin gündemi üyelere en az kaç gün önceden bildirilir?",
+      "back": "En az üç gün önceden bildirilir; gündemi meclis başkanı belirler.",
+      "explanation": "Valinin önerdiği hususlar meclisin ilk toplantısında gündeme alınır. Gündem çeşitli yollarla halka da duyurulur.",
+      "articleRefs": [
+        "13"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "İl genel meclisi üyesinin bir konunun gündeme alınması önerisi hangi çoğunlukla kabul edilirse gündeme girer?",
+      "back": "Toplantıya katılanların salt çoğunluğuyla kabul edilirse gündeme alınır.",
+      "explanation": "Üyeler yalnız il özel idaresine ait işlerle ilgili konuların gündeme alınmasını önerebilir.",
+      "articleRefs": [
+        "13"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "İl genel meclisinde gizli oy kullanmaya fizikî bakımdan engelli üye oyunu nasıl kullanır?",
+      "back": "Tayin edeceği kişi eliyle oy kullanabilir; diğer üyeler oylarını bizzat kullanır.",
+      "explanation": "Oylama gizli, işaretle veya ad okunarak yapılır. Oy verme kabul, ret veya çekimser şeklinde olur.",
+      "articleRefs": [
+        "14"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "İl genel meclisinde işaretle yapılan oylamada eşitlik çıkarsa oylama tekrarlanır mı?",
+      "back": "Hayır; meclis başkanının bulunduğu taraf çoğunluk sayılır. Oylamanın tekrarlanması yalnız gizli oylamadaki eşitlik için öngörülmüştür.",
+      "explanation": "Gizli oylamada eşitlik tekrarlanan oylamada da bozulmazsa meclis başkanı kur'a çeker. Meclis üye tam sayısının salt çoğunluğuyla toplanır, katılanların salt çoğunluğuyla karar verir; karar yeter sayısı üye tam sayısının dörtte birinden az olamaz.",
+      "articleRefs": [
+        "14"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "İl genel meclisi kararlarının tam metni valiye en geç kaç gün içinde gönderilir?",
+      "back": "En geç beş gün içinde gönderilir; valiye gönderilmeyen meclis kararları yürürlüğe girmez.",
+      "articleRefs": [
+        "15"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Vali, hukuka aykırı gördüğü il genel meclisi kararını kaç gün içinde iade edebilir?",
+      "back": "Yedi gün içinde; gerekçesini de belirterek yeniden görüşülmek üzere il genel meclisine iade edebilir.",
+      "explanation": "İade yetkisi, valinin hukuka aykırı gördüğü kararlar içindir.",
+      "articleRefs": [
+        "15"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "İl genel meclisinde kurulması zorunlu ihtisas komisyonları hangileridir?",
+      "back": "Eğitim, kültür ve sosyal hizmetler; imar ve bayındırlık; çevre ve sağlık; plân ve bütçe komisyonları.",
+      "explanation": "İhtisas komisyonları, her siyasî parti grubunun ve bağımsız üyelerin meclisteki üye sayısının meclis üye tam sayısına oranlanmasıyla oluşturulur.",
+      "articleRefs": [
+        "16"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "İl genel meclisinin ihtisas komisyonları kaç üyeden oluşur?",
+      "back": "En az üç, en fazla beş üyeden; Plân ve Bütçe ile İmar ve Bayındırlık komisyonları en çok yedi kişiden oluşur.",
+      "explanation": "Komisyonlar bir yıl görev yapmak üzere meclis üyeleri arasından kurulur.",
+      "articleRefs": [
+        "16"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Meclis toplantısını müteakip imar ve bayındırlık komisyonu da beş iş günü toplanarak mı kendisine havale edilen işleri sonuçlandırır?",
+      "back": "Hayır; imar ve bayındırlık komisyonu en fazla on iş günü toplanır. Beş iş günü diğer komisyonlar içindir.",
+      "explanation": "Rapor bu sürenin sonunda meclise sunulmazsa konu meclis başkanınca doğrudan gündeme alınır. İmar ve bayındırlık dışındaki komisyonların çalışma süreleri meclisin toplantı süresiyle sınırlıdır.",
+      "articleRefs": [
+        "16"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "İl genel meclisi denetim komisyonunu hangi ayın toplantısında oluşturur?",
+      "back": "Her yılın ocak ayı toplantısında; kendi üyeleri arasından gizli oyla, üye sayısı üçten az beşten çok olmamak üzere.",
+      "explanation": "Komisyon, il özel idaresinin bir önceki yıl gelir ve giderleri ile hesap ve işlemlerini denetler.",
+      "articleRefs": [
+        "17"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Denetim komisyonu raporunu en geç ne zamana kadar meclis başkanlığına sunar?",
+      "back": "Çalışmasını şubat ayı sonuna kadar tamamlar, raporunu izleyen ayın onbeşine kadar meclis başkanlığına sunar.",
+      "explanation": "Konusu suç teşkil eden hususlar için meclis başkanlığı yetkili mercilere suç duyurusunda bulunur.",
+      "articleRefs": [
+        "17"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "İl genel meclisi bilgi edinme ve denetim yetkisini hangi yollarla kullanır?",
+      "back": "Soru, genel görüşme ve faaliyet raporunu değerlendirme yollarıyla kullanır.",
+      "explanation": "Üyeler meclis başkanlığına önerge vererek sözlü veya yazılı soru sorabilir; soruyu vali veya görevlendireceği kişi sözlü veya yazılı cevaplandırır.",
+      "articleRefs": [
+        "18"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "İl genel meclisinde genel görüşme açılmasını en az kaç üye isteyebilir?",
+      "back": "Üyelerin en az üçte biri; istek meclis tarafından kabul edilirse gündeme alınır.",
+      "explanation": "İstek meclis başkanlığına yapılır ve il özel idaresinin işleriyle ilgili bir konuda olmalıdır.",
+      "articleRefs": [
+        "18"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Valinin faaliyet raporundaki açıklamalar hangi çoğunlukla yeterli görülmezse tutanak İçişleri Bakanlığına gönderilir?",
+      "back": "Meclis üye tam sayısının dörtte üç çoğunluğuyla yeterli görülmezse; meclis başkanı yetersizlik kararını ve tutanağı gönderir.",
+      "explanation": "Vali bir önceki yıla ait faaliyet raporunu mart ayı toplantısında meclise sunar.",
+      "articleRefs": [
+        "18"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "İl genel meclisi başkanı ve üyeleri hangi işlerin görüşüldüğü meclis toplantılarına katılamaz?",
+      "back": "Münhasıran kendileriyle veya ikinci derece dahil kan, kayın hısımları ve evlatlıklarıyla ilgili işlerin görüşüldüğü toplantılara.",
+      "articleRefs": [
+        "19"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "İl genel meclisi üyeleri görevleri sona erdikten sonra kaç yıl il özel idaresine karşı taahhüde giremez?",
+      "back": "İki yıl; bu sürede il özel idaresi ve bağlı kuruluşlarına karşı doğrudan ya da dolaylı taahhüde giremez, komisyonculuk ve temsilcilik yapamaz.",
+      "explanation": "Yasak, görev süresi boyunca da geçerlidir.",
+      "articleRefs": [
+        "20"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Özürsüz veya izinsiz devamsızlık yüzünden il genel meclisi üyeliğinin düşmesi için eşik nedir?",
+      "back": "Arka arkaya üç birleşim günü ya da bir yıl içinde yapılan toplantıların yarısına katılmamak.",
+      "explanation": "Üyeliğin düşmesine, savunma alındıktan sonra üye tam sayısının salt çoğunluğuyla karar verilir. Ölüm ve istifada üyelik kendiliğinden sona erer.",
+      "articleRefs": [
+        "21"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Seçilme yeterliliğini kaybeden üyenin üyeliğinin düşmesine il genel meclisi mi karar verir?",
+      "back": "Hayır; valinin bildirmesi üzerine Danıştay karar verir. Meclisin üye tam sayısının salt çoğunluğuyla karar verdiği hâl özürsüz veya izinsiz devamsızlıktır.",
+      "articleRefs": [
+        "21"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "İl genel meclisi hangi merciin kararıyla feshedilir?",
+      "back": "Danıştayın kararıyla; İçişleri Bakanlığının bildirisi üzerine.",
+      "explanation": "Fesih sebepleri: kanunla verilen görevleri süresinde yapmayı ihmal edip il özel idaresinin işlerini aksatmak ya da il özel idaresine verilen görevlerle ilgisi olmayan siyasî konularda karar almak. Feshedilen meclisin yerine seçilen meclis kalan süreyi tamamlar.",
+      "articleRefs": [
+        "22"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Fesih kararı verilinceye kadar il genel meclisi toplantılarının ertelenmesini kim ister?",
+      "back": "İçişleri Bakanlığı; gerekli görürse fesih bildirisiyle birlikte ister.",
+      "explanation": "Danıştay, toplantıların ertelenmesi hususunu en geç bir ay içinde karara bağlar.",
+      "articleRefs": [
+        "22"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Danıştay il genel meclisini feshettiğinde meclisin görevini kim yürütür?",
+      "back": "Encümenin memur üyeleri; meclis çalışabilir duruma gelinceye veya yeni meclis seçimi yapılıncaya kadar.",
+      "explanation": "Aynı kural meclis toplantılarının ertelenmesi, yedek üyeler getirildikten sonra da üye tam sayısının yarısından aşağı düşülmesi, meclisin geçici olarak görevden uzaklaştırılması ve üye tamsayısının yarıdan fazlasının tutuklanması hâllerinde de uygulanır.",
+      "articleRefs": [
+        "23"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "İl genel meclisi başkanının ve diğer üyelerin huzur hakkı hangi gösterge rakamlarıyla hesaplanır?",
+      "back": "Başkana 6000, diğer üyelere 2200 gösterge rakamının memur aylıklarına uygulanan katsayıyla çarpımı kadar; toplantıya katıldıkları her gün için.",
+      "explanation": "Huzur hakkı meclis ve komisyon toplantılarına katılınan her gün için ödenir. Üyeler hastalıkları süresince izinli sayılır.",
+      "articleRefs": [
+        "24"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "İl encümeni kimlerden oluşur?",
+      "back": "Valinin başkanlığında genel sekreter, il genel meclisinin her yıl kendi üyeleri arasından seçtiği üç üye ve valinin her yıl birim amirleri arasından seçtiği iki üyeden.",
+      "explanation": "Valinin katılamadığı encümen toplantısına genel sekreter başkanlık eder. İlgili birim amirleri, oy hakkı olmaksızın görüşleri alınmak üzere vali tarafından çağrılabilir.",
+      "articleRefs": [
+        "25"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "İl özel idaresinde kanunlarda öngörülen cezaları vermek hangi organın görevidir?",
+      "back": "İl encümeninin görevidir.",
+      "explanation": "Encümenin görevleri arasında belediye sınırları dışındaki umuma açık yerlerin açılış ve kapanış saatlerini belirlemek ile yıllık çalışma programına alınan işlerle ilgili kamulaştırma kararlarını almak ve uygulamak da vardır.",
+      "articleRefs": [
+        "26"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "İl encümeni taşınmaz mal satımına karar verir mi?",
+      "back": "Hayır; encümen taşınmaz mal satımına, trampasına ve tahsisine ilişkin kararları uygular. Karar verdiği iş, süresi üç yılı geçmeyen kiralamadır.",
+      "explanation": "Encümen ayrıca stratejik plân ve yıllık çalışma programı ile bütçe ve kesin hesabı inceleyip il genel meclisine görüş bildirir.",
+      "articleRefs": [
+        "26"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "İl encümeni kural olarak ayda en az bir defa mı toplanır?",
+      "back": "Hayır; haftada en az bir defa, önceden belirlenen gün ve saatte toplanır. Başkan acil durumlarda encümeni ayrıca toplantıya çağırabilir.",
+      "explanation": "Encümen üye tam sayısının salt çoğunluğuyla toplanır, katılanların salt çoğunluğuyla karar verir ve gündemindeki konuları en geç bir hafta içinde karara bağlar. Çekimser oy kullanılamaz.",
+      "articleRefs": [
+        "27"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Encümen, valinin tekrar görüşülmesini istediği kararında ısrar ederse vali idari yargıya kaç gün içinde başvurur?",
+      "back": "On gün içinde; kesinleşen kararın uygulanmasını durdurup yürütmeyi durdurma talebiyle birlikte başvurur.",
+      "explanation": "Encümen ısrar edince karar kesinleşir. İtiraz Danıştayca en geç altmış gün içinde karara bağlanır.",
+      "articleRefs": [
+        "27"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "İl özel idaresi personelini atama yetkisi kimdedir?",
+      "back": "Valide; vali il özel idaresi teşkilâtının en üst amiridir.",
+      "explanation": "Valinin görevleri arasında şartsız bağışları kabul etmek, il özel idaresinin gelir ve alacaklarını takip ve tahsil etmek ve il encümenine başkanlık etmek de vardır.",
+      "articleRefs": [
+        "30"
+      ]
+    }
+  ]
+}

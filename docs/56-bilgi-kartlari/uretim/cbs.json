@@ -1,0 +1,239 @@
+{
+  "deck": {
+    "topicId": "80c2d965-7e69-4c77-b67f-3a00043867e4",
+    "legislationSlug": "6271-cumhurbaskani-secimi-kanunu",
+    "sourceLabel": "AI bilgi kartı — 6271 Cumhurbaşkanı Seçimi Kanunu md 1–8, 8/A, 9–24",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: resmî madde metni + çıkmış sorular)"
+  },
+  "cards": [
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Seçimlerin yenilenmesine karar verilmesi hâlinde bu karar kaç saat içinde Resmî Gazete’de yayımlanarak ilân olunur?",
+      "back": "Kırksekiz saat içinde. Seçim, kararın verildiği günden sonra gelen altmışıncı günü takip eden ilk Pazar günü yapılır.",
+      "articleRefs": [
+        "3"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Cumhurbaşkanlığı makamı boşalır ve TBMM genel seçimine bir yıldan fazla süre varsa, Cumhurbaşkanı seçimi hangi gün yapılır?",
+      "back": "Makamın boşaldığı günden sonra gelen kırkbeş gün içindeki son Pazar günü.",
+      "articleRefs": [
+        "3"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Cumhurbaşkanı seçiminin ilk oylamasında seçilmek için hangi çoğunluk gerekir?",
+      "back": "Geçerli oyların salt çoğunluğu gerekir.",
+      "explanation": "Bu çoğunluk sağlanamazsa, ilk oylamayı izleyen ikinci Pazar günü ikinci oylama yapılır. Bu oylamaya ilk oylamada en çok oy alan iki aday katılır ve geçerli oyların çoğunluğunu alan aday seçilir.",
+      "articleRefs": [
+        "4"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "İkinci oylamaya katılmaya hak kazanan adaylardan biri seçime katılmazsa ikinci oylama kalan tek adayla mı yapılır?",
+      "back": "Hayır. Boşalan adaylık birinci oylamadaki sıraya göre ikame edilir. İkame, geçici sonuçların ilânını takip eden gün saat 17.00'ye kadar yapılabilir.",
+      "explanation": "Ayrı bir durum olarak, oylamalara tek adayla gidilirse oylama referandum şeklinde yapılır.",
+      "articleRefs": [
+        "4"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Tek adayla referandum şeklinde yapılan oylamada aday geçerli oyların salt çoğunluğunu alamazsa yenilenen seçim ne zaman yapılır?",
+      "back": "Kesin sonuçların ilânından sonra gelen kırkbeşinci günü takip eden ilk Pazar günü yapılır. Bu seçimde sadece Cumhurbaşkanı seçimi yapılır.",
+      "explanation": "Seçimler tamamlanamazsa, yenisi göreve başlayıncaya kadar mevcut Cumhurbaşkanının görevi devam eder.",
+      "articleRefs": [
+        "4"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Cumhurbaşkanlığına aday gösterme süresi sona erdikten sonra yeni aday gösterilebilir mi?",
+      "back": "Hayır. Aday gösterme süresinin sona erdiği tarihten itibaren hiçbir şekilde yeni aday gösterilemez; aday gösterilmek kişinin yazılı muvafakatine de bağlıdır.",
+      "articleRefs": [
+        "7"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Türkiye Büyük Millet Meclisinde grubu bulunan siyasi partiler Cumhurbaşkanı adayını hangi kararla gösterir?",
+      "back": "Grup kararıyla gösterir. Diğer siyasi partiler ise tüzüklerinde gösterilen yetkili organlarının kararıyla aday gösterir.",
+      "explanation": "Adayların isimleri, muvafakat belgeleri ve gerekli diğer belgelerle Yüksek Seçim Kuruluna başvurulunca aday gösterilmiş olunur. Belgelerde eksiklik varsa Kurul beş günlük süre verir. Eksikliği süresinde gidermeyen parti aday göstermekten vazgeçmiş sayılır.",
+      "articleRefs": [
+        "8"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Aynı kişiyi birden fazla siyasi parti Cumhurbaşkanlığına aday gösterebilir mi?",
+      "back": "Evet. Bir kişiyi birden fazla siyasi parti grubu veya siyasi parti aday gösterebilir. Ancak her siyasi parti veya parti grubu yalnız bir aday için başvurabilir.",
+      "explanation": "Başvuru, Yüksek Seçim Kurulu tarafından ilân edilen süre içinde yapılır.",
+      "articleRefs": [
+        "8"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Seçmenlerce aday gösterilmek isteyen kişi maliye veznesine emaneten ne kadar para yatırır?",
+      "back": "En yüksek derecedeki Devlet memuruna mâli haklar kapsamında yapılan her türlü ödemelerin bir aylık brüt tutarının on katını yatırır.",
+      "explanation": "Kişi, makbuzu başvuru dilekçesi ve seçilme yeterliğine ilişkin belgelerle birlikte Yüksek Seçim Kuruluna bizzat sunar. Yüzbin seçmen aday teklifinde bulunursa ya da ölüm hâlinde tutar, seçimden sonra talep üzerine iade edilir. Diğer hâllerde Hazineye gelir kaydedilir.",
+      "articleRefs": [
+        "8/A"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Bir seçmen, Yüksek Seçim Kurulunun ilân ettiği birden fazla kişi için adaylık teklifinde bulunabilir mi?",
+      "back": "Hayır. Seçmen, ilânda belirtilen kişilerden sadece biri için bir kez teklifte bulunabilir.",
+      "explanation": "Seçmen, kayıtlı olduğu ilçe seçim kuruluna bizzat başvurur. Seçmen niteliği ve daha önce teklifte bulunmadığı tespit edilince tercih yaptırılır ve form imzalatılır. Form elektronik ortamda da kaydedilir ve seçmene teklifte bulunduğuna dair belge verilir.",
+      "articleRefs": [
+        "8/A"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Geçici aday listesine karşı Yüksek Seçim Kuruluna itiraz süresi ne kadardır?",
+      "back": "Resmî Gazetede yapılan ilândan itibaren iki gündür. Kurul itirazları üç gün içinde kesin karara bağlar.",
+      "explanation": "İtiraz, geçici aday listesine ya da bu listeye alınmamaya ilişkin karara karşı yapılabilir. Kurul, kesin aday listesini Resmî Gazetede yayımlar.",
+      "articleRefs": [
+        "10"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Cumhurbaşkanı adayı gösterilen memur statüsündeki bir kamu görevlisi görevinden hangi tarih itibarıyla ayrılmış sayılır?",
+      "back": "Aday listesinin kesinleştiği tarih itibarıyla ayrılmış sayılır. Bu durum Yüksek Seçim Kurulunca bağlı bulunduğu bakanlığa veya kuruma derhal bildirilir.",
+      "explanation": "Aynı sonuca bağlı olanlar arasında şunlar da bulunur: hâkimler ve savcılar, belediye başkanları, subaylar ile astsubaylar, siyasi partilerin il ve ilçe yönetim kurulu başkan ve üyeleri ile belediye meclisi üyeleri.",
+      "articleRefs": [
+        "11"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Cumhurbaşkanı adayı gösterilip seçimi kaybeden bir Devlet memuru, eski görevine dönmek için hangi süre içinde müracaat etmelidir?",
+      "back": "Yüksek Seçim Kurulunca Cumhurbaşkanının seçildiğinin ilân edilmesini takip eden bir ay içinde müracaat etmelidir.",
+      "explanation": "Süresinde başvuran memur, eski görevine veya kazanılmış hak aylık derecesindeki başka bir göreve dönebilir. Yüksek mahkeme üyeleri, hâkimler, savcılar ve bu meslekten sayılanlar ile subay ve astsubaylar bu dönüş imkânının dışında tutulmuştur.",
+      "articleRefs": [
+        "11"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Birinci oylamada, kesin aday listesi yayımlandıktan sonra listede meydana gelen eksilme listede değişiklik gerektirir mi?",
+      "back": "Hayır. Kesin aday listesinin Resmî Gazetede yayımından itibaren oy verme günü saat 17.00'ye kadar meydana gelen eksilmeler değişikliği gerektirmez.",
+      "articleRefs": [
+        "12"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Cumhurbaşkanı seçiminde propaganda dönemi ne zaman sona erer?",
+      "back": "Oylamaların yapılacağı günden önceki gün saat 18.00'de sona erer. Dönem, aday listesinin kesinleştiği gün başlar.",
+      "articleRefs": [
+        "13"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Propaganda döneminde Türkiye Radyo ve Televizyonlarındaki propaganda yayınlarının tarafsızlık ve eşitlik içinde yapılmasını kim sağlar?",
+      "back": "Yüksek Seçim Kurulu ile Türkiye Radyo ve Televizyon Kurumu birlikte sağlar.",
+      "explanation": "Özel radyo ve televizyonlardaki propaganda konuşmalarında, süre ile ilgili sınırlamalar dışında, 298 sayılı Kanunun ilgili hükümleri uygulanır.",
+      "articleRefs": [
+        "13"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Cumhurbaşkanı adayları kimlerden bağış ve yardım alamaz?",
+      "back": "Yabancı devletlerden, uluslararası kuruluşlardan, tüzel kişilerden ve Türk uyrukluğunda olmayan gerçek kişilerden alamaz.",
+      "explanation": "Adaylar ödünç niteliğinde para da kabul edemez. Alınan bağış ve yardımlar sadece seçim harcamalarında kullanılır ve veraset ve intikal vergisinden müstesnadır.",
+      "articleRefs": [
+        "14"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Bir kişinin bir Cumhurbaşkanı adayına her tur için yapabileceği nakdî yardımın üst sınırı nedir?",
+      "back": "En yüksek Devlet memuruna mali haklar kapsamında fiilen yapılan her türlü ödemelerin bir aylık brüt tutarıdır; yardım bunu geçemez.",
+      "explanation": "Seçim hesaplarına ilişkin bilgi ve belgeler, seçim sonuçlarının kesinleşmesini izleyen on gün içinde Yüksek Seçim Kuruluna sunulur. Kurul hesapları bir ay içinde inceler. Limiti aşan miktar ile harcanmayan kısım Hazineye intikal ettirilir.",
+      "articleRefs": [
+        "14"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Cumhurbaşkanı seçimindeki birleşik oy pusulasında adayların sırası nasıl belirlenir?",
+      "back": "Yüksek Seçim Kurulu tarafından çekilen kuraya göre belirlenir.",
+      "explanation": "Filigranlı birleşik oy pusulasında “Cumhurbaşkanı Adayları” ibaresi ile adayların adı ve soyadı yer alır. Referandum şeklindeki oylamada beyaz üzerine “Evet”, kahverengi üzerine “Hayır” yazılı birleşik oy pusulası kullanılır.",
+      "articleRefs": [
+        "15"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Bir seçim çevresinde seçim, seçim işlemleri sebebiyle iptal edilirse o çevrede seçimlerin yenilenip yenilenmeyeceğine neye bakılarak karar verilir?",
+      "back": "İptal edilen kısmın ülke genelindeki seçim sonuçlarına etkisi olup olmadığına bakılarak karar verilir. Kararı Yüksek Seçim Kurulu verir.",
+      "explanation": "Aynı kural, düzenlenen birleştirme tutanağının iptali hâlinde de uygulanır.",
+      "articleRefs": [
+        "19"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Cumhurbaşkanı seçiminin kesin sonuçları Yüksek Seçim Kurulunca hangi makamlara bildirilir?",
+      "back": "Türkiye Büyük Millet Meclisi Başkanlığı ile Cumhurbaşkanlığı Makamına bildirilir.",
+      "explanation": "Sonuçlar ayrıca kamuoyuna ilân edilir ve Resmî Gazetede yayımlanır. Seçilen adına düzenlenen tutanak, Cumhurbaşkanına verilmek üzere Türkiye Büyük Millet Meclisi Başkanlığına sunulur.",
+      "articleRefs": [
+        "20"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Cumhurbaşkanı ikinci oylamada seçilirse andiçme töreni ne zaman yapılır?",
+      "back": "Seçim sonucunun kesinleşmesini takip eden üç gün içinde yapılır. Türkiye Büyük Millet Meclisi toplantı hâlinde değilse derhal toplantıya çağrılır.",
+      "explanation": "Birlikte yapılan seçimde tutanak, Genel Kurulda Meclis Başkanı veya Geçici Başkan tarafından verilir ve tören aynı birleşimde yapılır. Bu birleşim, Meclisin toplandığı ilk günü takip eden üç gün içinde gerçekleştirilir.",
+      "articleRefs": [
+        "21"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Cumhurbaşkanınca atanan Cumhurbaşkanı yardımcıları ve bakanlar ne zaman andiçer?",
+      "back": "Atanmalarını takip eden gün andiçerler.",
+      "articleRefs": [
+        "21"
+      ]
+    }
+  ]
+}

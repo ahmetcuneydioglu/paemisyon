@@ -1,0 +1,309 @@
+{
+  "deck": {
+    "topicId": "a0798f24-de4a-42a3-95aa-ef133be3d387",
+    "legislationSlug": "6701-sayili-turkiye-insan-haklari-ve-esitlik-kurumu-kanunu",
+    "sourceLabel": "AI bilgi kartı — 6701 Sayılı Türkiye İnsan Hakları ve Eşitlik Kurumu Kanunu md 1–10",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: resmî madde metni + çıkmış sorular)"
+  },
+  "cards": [
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Türkiye İnsan Hakları ve Eşitlik Kurumu, işkence ve kötü muameleyle mücadele alanında hangi görevi yerine getirmek üzere kurulmuştur?",
+      "back": "Ulusal önleme mekanizması görevini yerine getirmek üzere kurulmuştur.",
+      "explanation": "Kurum işkence ve kötü muameleyle etkin mücadele eder. Kurumun teşkilat, görev ve yetkilerine ilişkin esaslar da bu Kanunla düzenlenir.",
+      "articleRefs": [
+        "1"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Türkiye İnsan Hakları ve Eşitlik Kurumu Kanununun amacına göre insan haklarının korunması ve geliştirilmesi neyi temel alır?",
+      "back": "İnsan onurunu temel alır.",
+      "explanation": "Amaç hükmü bunun yanında iki hedef daha sayar: kişilerin eşit muamele görme hakkının güvence altına alınması ve hukuken tanınmış hak ve hürriyetlerden yararlanmada ayrımcılığın önlenmesi.",
+      "articleRefs": [
+        "1"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Görünüşte ayrımcı olmayan bir uygulama, ayrımcılık temelleriyle bağlantılı olarak kişiyi nesnel olarak haklılaştırılamayan dezavantajlı bir konuma sokuyorsa buna ne ad verilir?",
+      "back": "Dolaylı ayrımcılık.",
+      "explanation": "Doğrudan ayrımcılıkta ise farklı muamele açıkça ayrımcılık temellerine dayanır. Bu muamele, kişinin hak ve hürriyetlerden karşılaştırılabilir durumdakilere kıyasla eşit şekilde yararlanmasını engeller ya da zorlaştırır.",
+      "articleRefs": [
+        "2"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Bir kişi, ayrımcılık temellerinden biriyle gerçekte ilgisi olmadığı hâlde o temeli taşıdığı sanılarak ayrımcı muameleye maruz kalıyorsa buna ne denir?",
+      "back": "Varsayılan temele dayalı ayrımcılık.",
+      "explanation": "Burada kişinin o temelle gerçek bir ilgisi yoktur. Yalnızca o temeli taşıdığı sanıldığı için hukuken tanınmış hak ve hürriyetlerden yararlanmada ayrımcı muamele görür.",
+      "articleRefs": [
+        "2"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Makul düzenleme, mali imkânlardan bağımsız olarak her türlü değişikliği yapmak anlamına mı gelir?",
+      "back": "Hayır. Makul düzenleme, belirli bir durumda ihtiyaç duyulan değişiklik ve tedbirleri kapsar. Bunlar mali imkânlar nispetinde, ölçülü, gerekli ve uygun olmalıdır.",
+      "explanation": "Bu değişiklik ve tedbirlerin amacı, engellilerin hak ve özgürlüklerini tam olarak ve diğer bireylerle eşit şekilde kullanmasını ya da bunlardan yararlanmasını sağlamaktır.",
+      "articleRefs": [
+        "2"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Türkiye İnsan Hakları ve Eşitlik Kurumu Kanununa göre hangi temellere dayalı ayrımcılık yasaktır?",
+      "back": "Cinsiyet, ırk, renk, dil, din, inanç, mezhep, felsefi ve siyasi görüş, etnik köken, servet, doğum, medeni hâl, sağlık durumu, engellilik ve yaş.",
+      "explanation": "Maddenin ilk fıkrası temel ilkeyi koyar: herkes, hukuken tanınmış hak ve hürriyetlerden yararlanmada eşittir.",
+      "articleRefs": [
+        "3"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Ayrımcılık yasağı ihlal edildiğinde, konuya ilişkin görev ve yetkisi bulunan kamu kurum ve kuruluşları hangi amaçlarla tedbir almakla yükümlüdür?",
+      "back": "İhlalin sona erdirilmesi, sonuçlarının giderilmesi, tekrarlanmasının önlenmesi ve adli ve idari yoldan takibinin sağlanması amacıyla.",
+      "explanation": "Aynı yükümlülük, kamu kurumu niteliğindeki meslek kuruluşları için de geçerlidir.",
+      "articleRefs": [
+        "3"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Ayrımcılıkla ilgili tedbir alma yükümlülüğü yalnız kamu kurum ve kuruluşlarına mı aittir?",
+      "back": "Hayır. Sorumluluk altındaki gerçek ve özel hukuk tüzel kişileri de yükümlüdür. Yetki alanlarındaki konularda ayrımcılığın tespiti, ortadan kaldırılması ve eşitliğin sağlanması için tedbir almak zorundadırlar.",
+      "explanation": "İhlal hâlinde, konuya ilişkin görev ve yetkisi bulunan kamu kurum ve kuruluşları ile kamu kurumu niteliğindeki meslek kuruluşları da gerekli tedbirleri almakla yükümlüdür.",
+      "articleRefs": [
+        "3"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Türkiye İnsan Hakları ve Eşitlik Kurumu Kanunu kapsamına giren ayrımcılık türleri nelerdir?",
+      "back": "Ayrı tutma; ayrımcılık talimatı verme ve uygulama; çoklu, doğrudan ve dolaylı ayrımcılık; işyerinde yıldırma; makul düzenleme yapmama; taciz; varsayılan temele dayalı ayrımcılık.",
+      "explanation": "Bunlara ek olarak, eşit muamele ilkesi için süreç başlatan ya da bu sürece katılan kişilerin bu nedenle gördüğü olumsuz muamele de ayrımcılık teşkil eder.",
+      "articleRefs": [
+        "4"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Ayrımcılık talimatı vermenin yanında, verilen talimatı uygulamak da ayrımcılık türü sayılır mı?",
+      "back": "Evet. Kanun, \"ayrımcılık talimatı verme ve bu talimatları uygulama\"yı birlikte ayrımcılık türü olarak sayar.",
+      "explanation": "Ayrımcılık talimatı iki şekilde verilebilir. Birincisi, bir kişinin kendi nam veya hesabına eylem ve işlemlerde bulunmaya yetkili kıldığı kişilere verdiği talimattır. İkincisi, bir kamu görevlisinin diğer kişilere verdiği ayrımcılık yapılmasına yönelik talimattır.",
+      "articleRefs": [
+        "4",
+        "2"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Ayrımcılığın önlenmesi için adli süreç başlatan kişinin bu nedenle gördüğü olumsuz muamele ayrımcılık sayılır mı?",
+      "back": "Evet. İdari ya da adli süreci başlatan ya da bu sürece katılan kişilerin ve temsilcilerinin bu nedenle gördüğü olumsuz muamele de ayrımcılık teşkil eder.",
+      "explanation": "Hüküm, eşit muamele ilkesine uyulması veya ayrımcılığın önlenmesi amacıyla başlatılan süreçleri kapsar.",
+      "articleRefs": [
+        "4"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Eğitim, yargı, kolluk ve sağlık gibi hizmetleri sunanlar, hangi kişiler aleyhine ayrımcılık yapamaz?",
+      "back": "Hizmetten yararlanmakta olan, yararlanmak üzere başvurmuş olan ya da hizmet hakkında bilgi almak isteyen kişi aleyhine.",
+      "explanation": "Yasak; kamu kurum ve kuruluşlarını, kamu kurumu niteliğindeki meslek kuruluşlarını, gerçek kişileri ve özel hukuk tüzel kişilerini bağlar. Kamuya açık hizmetlerin sunulduğu alanlar ve binalara erişim de bu hükmün kapsamındadır.",
+      "articleRefs": [
+        "5"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Kamuya açık hizmetlerin planlanması, sunulması ve denetlenmesinden sorumlu kişi ve kurumların engellilere ilişkin yükümlülüğü nedir?",
+      "back": "Farklı engelli grupların ihtiyaçlarını dikkate almak ve makul düzenlemelerin yapılmasını sağlamak.",
+      "explanation": "Bu yükümlülük; eğitim ve öğretim, yargı, kolluk, sağlık, ulaşım gibi hizmetleri planlayan, sunan ve denetleyenler için geçerlidir.",
+      "articleRefs": [
+        "5"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Taşınmazını kamuya açık şekilde kiraya veren kişi, ayrımcılık yasağına yalnız kiralama aşamasında mı tabidir?",
+      "back": "Hayır. Kiralama, kira akdinin şartlarının belirlenmesi, yenilenmesi veya sona erdirilmesi, satış ve devir süreçlerinin hiçbirinde ayrımcılık yapılamaz.",
+      "explanation": "Yasak, bu malları edinmek veya kiralamak isteyenler ile bunlar hakkında bilgi almak isteyenler aleyhine yapılan ayrımcılığı kapsar. Malı sunanlar tarafından yetkilendirilenler de bu yasakla bağlıdır.",
+      "articleRefs": [
+        "5"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "İşveren, istihdam başvurusunu hangi gerekçelerle reddedemez?",
+      "back": "Gebelik, annelik ve çocuk bakımı gerekçeleriyle reddedemez.",
+      "explanation": "İşveren veya işveren tarafından yetkilendirilmiş kişi, işle ilgili süreçlerin hiçbirinde ayrımcılık yapamaz. Bu süreçler bilgilenme, başvuru, seçim kriterleri ve işe alım şartlarından çalışmaya ve çalışmanın sona ermesine kadar uzanır.",
+      "articleRefs": [
+        "6"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "İstihdamda ayrımcılık yasağı yalnız 4857 sayılı İş Kanunu kapsamındaki sözleşmelere mi uygulanır?",
+      "back": "Hayır. 4857 sayılı İş Kanunu kapsamına girmeyen her türlü iş ve iş görme sözleşmeleri de bu kapsamdadır.",
+      "explanation": "Kamu kurum ve kuruluşlarında istihdam da aynı hükümlere tabidir.",
+      "articleRefs": [
+        "6"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Serbest meslek bakımından hangi hususlarda ayrımcılık yapılamaz?",
+      "back": "Serbest mesleğe kabul, ruhsat, kayıt, disiplin ve benzeri hususlarda ayrımcılık yapılamaz.",
+      "explanation": "İstihdama ilişkin yasak da geniştir. İş ilanı, mesleki eğitim, meslekte yükselme, hizmet içi eğitim ve sosyal menfaatler gibi hususları da kapsar.",
+      "articleRefs": [
+        "6"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Bir dine ait kurumda, yalnız o dine mensup kişilerin istihdamı hangi işler için ayrımcılık iddiasına konu olamaz?",
+      "back": "Din hizmeti veya o dine ilişkin eğitim ve öğretim vermek üzere yapılan istihdam için.",
+      "explanation": "Aynı maddede bir istisna daha vardır. Dernek, vakıf, sendika, siyasi parti ve meslek örgütleri, amaç, ilke ve değerleri temelinde üyelerinde belli şart ve nitelik arayabilir.",
+      "articleRefs": [
+        "7"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "İşe kabulde yaşa dayalı farklı muamele her durumda ayrımcılık iddiasının dışında mı kalır?",
+      "back": "Hayır. Yaş sınırının hizmetin zorunlulukları nedeniyle belirlenmesi gerekir. Farklı muamele de gereklilik ve amaçla orantılı olmalıdır.",
+      "explanation": "Zorunlu mesleki gereklilik hâlinde de benzer bir ölçü aranır: istihdam ve serbest meslekteki farklı muamele amaca uygun ve orantılı olmalıdır.",
+      "articleRefs": [
+        "7"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Vatandaş olmayanlara yönelik hangi farklı muamele ayrımcılık iddiasına konu olamaz?",
+      "back": "Ülkeye giriş ve ikametlerine ilişkin şartlardan ve hukuki statülerinden kaynaklanan farklı muamele.",
+      "explanation": "Ayrımcılık iddiasının ileri sürülemeyeceği hâller arasında, çocuk veya özel bir yerde tutulması gereken kişilere yönelik özel tedbirler ve koruma önlemleri de vardır.",
+      "articleRefs": [
+        "7"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Türkiye İnsan Hakları ve Eşitlik Kurumu hangi birimlerden oluşur?",
+      "back": "Kurul ve Başkanlıktan oluşur.",
+      "explanation": "Kurum idari ve mali özerkliğe sahiptir, özel bütçelidir ve kamu tüzel kişiliğini haizdir.",
+      "articleRefs": [
+        "8"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Türkiye İnsan Hakları ve Eşitlik Kurumu hangi makamla ilişkilidir?",
+      "back": "Cumhurbaşkanının görevlendireceği bakan ile ilişkilidir.",
+      "explanation": "Cumhurbaşkanı, bu teşkilatın yönetimiyle ilgili yetkilerini gerekli gördüğü hâllerde bakan vasıtasıyla kullanabilir.",
+      "articleRefs": [
+        "8"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Türkiye İnsan Hakları ve Eşitlik Kurulu kaç üyeden oluşur?",
+      "back": "On bir üyeden oluşur. Biri Başkan, biri İkinci Başkan olmak üzere üyelerin tamamını Cumhurbaşkanı seçer.",
+      "explanation": "Kurul, Kurumun karar organıdır. Kurum ise Kurul ve Başkanlıktan oluşur.",
+      "articleRefs": [
+        "8",
+        "10"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Türkiye İnsan Hakları ve Eşitlik Kurumu, ayrımcılık yasağı ihlallerini hangi yollarla incelemeye alır?",
+      "back": "Resen veya başvuru üzerine incelemeye alır.",
+      "explanation": "Kurum bu ihlalleri inceler, araştırır, karara bağlar ve sonuçlarını takip eder. İnsan hakları ihlallerini ise resen inceler. Ayrıca mağdur olduğunu ileri süren başvuranlara idari ve hukuki süreçler konusunda yol gösterir.",
+      "articleRefs": [
+        "9"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Kurumun, özgürlüğünden mahrum bırakılan kişilerin bulunduğu yerlere yaptığı ziyaretlerin önceden haber verilmesi şart mıdır?",
+      "back": "Hayır. Ziyaretler haberli veya habersiz, düzenli olarak yapılabilir. Kamu kurum ve kuruluşları ile görevliler, bu ziyaretlerde gerekli yardım ve kolaylığı göstermek zorundadır.",
+      "explanation": "Ziyaret raporları ilgili kurum ve kuruluşlara iletilir. Kurulca gerekli görülürse kamuoyuna da açıklanır.",
+      "articleRefs": [
+        "9"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Kurum, Türkiye Büyük Millet Meclisi İnsan Haklarını İnceleme Komisyonunu ve Kadın Erkek Fırsat Eşitliği Komisyonunu en az hangi sıklıkla bilgilendirir?",
+      "back": "Yılda en az bir defa. Bilgilendirme, Kurumun görev ve yetkilerine ilişkindir.",
+      "explanation": "Kurum ayrıca Cumhurbaşkanlığına ve Türkiye Büyük Millet Meclisi Başkanlığına sunulmak üzere yıllık raporlar hazırlar. Gerek gördüğünde görev alanına ilişkin özel raporlar da yayımlar.",
+      "articleRefs": [
+        "9"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Kurul üyesinin üyeliğine son verilmesi için, Kurulca kabul edilebilir mazereti olmaksızın bir takvim yılı içinde toplam kaç Kurul toplantısına katılmamış olması gerekir?",
+      "back": "Toplam beş Kurul toplantısına katılmamış olması gerekir; mazeretin Kurul tarafından kabul edilebilir olmaması aranır.",
+      "explanation": "Bu hâli Kurul tespit eder. Üyelik, Cumhurbaşkanı veya görevlendireceği bakanın onayıyla sona erer. Geçici iş göremezlik hâlinin üç aydan fazla sürmesi de son verme hâlleri arasındadır.",
+      "articleRefs": [
+        "10"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Kamu görevlisi iken Türkiye İnsan Hakları ve Eşitlik Kurulu üyeliğine seçilen kişi, görev süresi sona erdiğinde önceki kurumuna kaç gün içinde başvurmalıdır?",
+      "back": "Otuz gün içinde başvurmalıdır. Memuriyete giriş şartlarını kaybetmemişse, atamaya yetkili makam onu bir ay içinde mükteseplerine uygun bir kadroya atar.",
+      "explanation": "Aynı hüküm, görevden ayrılma isteğinde bulunan üye için de geçerlidir. Atama gerçekleşinceye kadar her türlü ödeme Kurum tarafından yapılmaya devam eder. Kurumda geçen süreler, özlük ve diğer haklar açısından önceki kurumda geçmiş sayılır.",
+      "articleRefs": [
+        "10"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Kurul Başkanı ve üyeleri hakkında soruşturma izni verilmesine ya da verilmemesine ilişkin kararlara karşı yapılan itirazları kim karara bağlar?",
+      "back": "Danıştay karara bağlar. Soruşturma izni ise Cumhurbaşkanı veya görevlendireceği bakan tarafından verilir.",
+      "explanation": "Başkan ve üyeler ayrıca Mal Bildiriminde Bulunulması, Rüşvet ve Yolsuzluklarla Mücadele Kanununa tabidir.",
+      "articleRefs": [
+        "10"
+      ]
+    }
+  ]
+}

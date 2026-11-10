@@ -1,0 +1,293 @@
+{
+  "deck": {
+    "topicId": "efcd80f1-04c1-42b1-90bc-2d6f22df40c2",
+    "legislationSlug": "6698-sayili-kisisel-verilerin-korunmasi-kanunu",
+    "sourceLabel": "AI bilgi kartı — 6698 Sayılı Kişisel Verilerin Korunması Kanunu md 13–22",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: resmî madde metni + çıkmış sorular)"
+  },
+  "cards": [
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "İlgili kişi, Kişisel Verilerin Korunması Kanununun uygulanmasıyla ilgili taleplerini veri sorumlusuna hangi yolla iletir?",
+      "back": "Yazılı olarak veya Kişisel Verileri Koruma Kurulunun belirleyeceği diğer yöntemlerle.",
+      "explanation": "Başvuru veri sorumlusuna yapılır. Veri sorumlusu talebi kabul eder ya da gerekçesini açıklayarak reddeder. Cevabını ilgili kişiye yazılı olarak veya elektronik ortamda bildirir.",
+      "articleRefs": [
+        "13"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Veri sorumlusu, ilgili kişinin başvurusundaki talepleri en geç ne kadar sürede sonuçlandırır?",
+      "back": "En geç otuz gün içinde; talebin niteliğine göre en kısa sürede.",
+      "explanation": "Talep kabul edilirse gereği veri sorumlusunca yerine getirilir. Ret hâlinde gerekçe açıklanır.",
+      "articleRefs": [
+        "13"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Veri sorumlusu, başvurudaki talebi sonuçlandırmak için ilgili kişiden her durumda ücret alabilir mi?",
+      "back": "Hayır. Kural ücretsizliktir. İşlem ayrıca bir maliyet gerektirirse Kişisel Verileri Koruma Kurulunca belirlenen tarifedeki ücret alınabilir.",
+      "explanation": "Başvuru veri sorumlusunun hatasından kaynaklanmışsa, alınan ücret ilgiliye iade edilir.",
+      "articleRefs": [
+        "13"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "İlgili kişi, veri sorumlusuna yaptığı başvurudan sonra hangi hâllerde Kişisel Verileri Koruma Kuruluna şikâyette bulunabilir?",
+      "back": "Başvurunun reddedilmesi, verilen cevabın yetersiz bulunması veya süresinde başvuruya cevap verilmemesi hâllerinde.",
+      "explanation": "Kişilik hakları ihlal edilenlerin genel hükümlere göre tazminat hakkı ayrıca saklıdır.",
+      "articleRefs": [
+        "14"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "İlgili kişi, Kişisel Verileri Koruma Kuruluna şikâyeti hangi süre içinde yapmalıdır?",
+      "back": "Veri sorumlusunun cevabını öğrendiği tarihten itibaren otuz gün ve her hâlde başvuru tarihinden itibaren altmış gün içinde.",
+      "explanation": "Cevabın öğrenilmesine bağlı otuz günlük süre, başvuru tarihinden itibaren altmış günü aşamaz. Cevap hiç verilmediğinde de bu üst sınır geçerlidir.",
+      "articleRefs": [
+        "14"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "İlgili kişi, veri sorumlusuna başvurmadan doğrudan Kişisel Verileri Koruma Kuruluna şikâyette bulunabilir mi?",
+      "back": "Hayır. 13 üncü madde uyarınca veri sorumlusuna başvuru yolu tüketilmeden şikâyet yoluna başvurulamaz.",
+      "explanation": "Önce veri sorumlusuna başvurulur. Şikâyet yolu ancak bu başvuruya verilen cevap ya da cevapsızlık üzerine açılır.",
+      "articleRefs": [
+        "14"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Veri sorumlusu, Kişisel Verileri Koruma Kurulunun inceleme konusuyla ilgili istediği bilgi ve belgeleri kaç gün içinde göndermek zorundadır?",
+      "back": "On beş gün içinde. Gerektiğinde yerinde inceleme yapılmasına da imkân sağlamak zorundadır.",
+      "explanation": "Devlet sırrı niteliğindeki bilgi ve belgeler bu yükümlülüğün dışındadır. Kurul incelemeyi şikâyet üzerine ya da ihlal iddiasını öğrenince resen yapar.",
+      "articleRefs": [
+        "15"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Kişisel Verileri Koruma Kurulu bir şikâyete, şikâyet tarihinden itibaren kaç gün içinde cevap vermezse talep reddedilmiş sayılır?",
+      "back": "Altmış gün. Bu süre içinde cevap verilmezse talep reddedilmiş sayılır.",
+      "explanation": "Kurul şikâyet üzerine talebi inceleyerek ilgililere bir cevap verir. Süresinde cevap vermemesi ret anlamına gelir.",
+      "articleRefs": [
+        "15"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Kişisel Verileri Koruma Kurulunun hukuka aykırılıkların giderilmesine ilişkin kararı, tebliğden itibaren en geç kaç gün içinde yerine getirilir?",
+      "back": "Gecikmeksizin ve en geç otuz gün içinde; kararı veri sorumlusu yerine getirir.",
+      "explanation": "İhlal yaygınsa Kurul ilke kararı alır ve yayımlar. Telafisi güç veya imkânsız zararların doğması ve açıkça hukuka aykırılık olması hâlinde Kurul, veri işlenmesinin ya da verinin yurt dışına aktarılmasının durdurulmasına karar verebilir.",
+      "articleRefs": [
+        "15"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Veri Sorumluları Sicilini kim tutar?",
+      "back": "Başkanlık; Kişisel Verileri Koruma Kurulunun gözetiminde ve kamuya açık olarak tutar.",
+      "explanation": "Sicile ilişkin diğer usul ve esaslar yönetmelikle düzenlenir.",
+      "articleRefs": [
+        "16"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Kişisel verileri işleyen gerçek ve tüzel kişiler, Veri Sorumluları Siciline veri işlemeye başladıktan sonra kaydolabilir mi?",
+      "back": "Hayır. Veri işlemeye başlamadan önce kaydolmak zorundadırlar. Kişisel Verileri Koruma Kurulu, objektif kriterlere göre kayıt zorunluluğuna istisna getirebilir.",
+      "explanation": "İstisna için Kurulca belirlenecek kriterler arasında şunlar sayılır: işlenen kişisel verinin niteliği, sayısı, veri işlemenin kanundan kaynaklanması ve üçüncü kişilere aktarılma durumu.",
+      "articleRefs": [
+        "16"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Veri Sorumluları Siciline kayıt başvurusundaki bildirimde hangi hususlar yer alır?",
+      "back": "Veri sorumlusu ve varsa temsilcisinin kimlik ve adres bilgileri, işleme amacı, veri konusu kişi grupları ile veri kategorileri, alıcı grupları, yabancı ülkelere aktarımı öngörülen veriler, güvenlik tedbirleri ve amaç için gerekli azami süre.",
+      "explanation": "Bu bilgilerde meydana gelen değişiklikler derhâl Başkanlığa bildirilir.",
+      "articleRefs": [
+        "16"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Kişisel verilere ilişkin suçlar bakımından hangi kanun hükümleri uygulanır?",
+      "back": "5237 sayılı Türk Ceza Kanununun 135 ila 140 ıncı madde hükümleri.",
+      "articleRefs": [
+        "17"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Kişisel verileri Kanunun 7 nci maddesine aykırı olarak silmeyen veya anonim hâle getirmeyenler hangi hükme göre cezalandırılır?",
+      "back": "5237 sayılı Türk Ceza Kanununun 138 inci maddesine göre.",
+      "articleRefs": [
+        "17"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Kişisel Verileri Koruma Kurulunun 15 inci madde uyarınca verdiği kararları yerine getirmeyenler hakkında hangi aralıkta idari para cezası verilir?",
+      "back": "25.000 Türk lirasından 1.000.000 Türk lirasına kadar. Bu ceza veri sorumlusu hakkında uygulanır.",
+      "explanation": "Kurulca verilen idari para cezalarına karşı idare mahkemelerinde dava açılabilir.",
+      "articleRefs": [
+        "18"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Kabahat oluşturan eylemler kamu kurum ve kuruluşları bünyesinde işlenirse, orada görev yapanlar hakkında nasıl işlem yapılır?",
+      "back": "Kişisel Verileri Koruma Kurulunun bildirimi üzerine memurlar ve diğer kamu görevlileri hakkında disiplin hükümlerine göre işlem yapılır. Sonuç Kurula bildirilir.",
+      "explanation": "Aynı kural, kamu kurumu niteliğindeki meslek kuruluşlarında görev yapanlar için de geçerlidir.",
+      "articleRefs": [
+        "18"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Veri güvenliğine ilişkin yükümlülükleri yerine getirmeme hâlindeki idari para cezası veri işleyen gerçek kişilere de uygulanır mı?",
+      "back": "Hayır. Birinci fıkranın (b) bendindeki bu ceza veri sorumlusu hakkında uygulanır. Veri işleyenlere de uygulanabilen ceza, 9 uncu maddenin beşinci fıkrasındaki bildirim yükümlülüğüne ilişkin (d) bendindeki cezadır.",
+      "explanation": "(a), (b), (c) ve (ç) bentlerindeki cezalar veri sorumlusuna uygulanır. (d) bendindeki ceza ise veri sorumlusu veya veri işleyen gerçek kişiler ile özel hukuk tüzel kişilerine uygulanır.",
+      "articleRefs": [
+        "18"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Kişisel Verileri Koruma Kurumu kiminle ilişkilidir?",
+      "back": "Cumhurbaşkanının görevlendireceği bakan ile.",
+      "explanation": "Kurumun merkezi Ankara'dadır.",
+      "articleRefs": [
+        "19"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Kişisel Verileri Koruma Kurumunun hukuki statüsü nedir?",
+      "back": "İdari ve mali özerkliğe sahip, kamu tüzel kişiliğini haiz kurumdur.",
+      "explanation": "Kurum, Kişisel Verilerin Korunması Kanunuyla verilen görevleri yerine getirmek üzere kurulmuştur.",
+      "articleRefs": [
+        "19"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Kişisel Verileri Koruma Kurumunun karar organı Başkanlık mıdır?",
+      "back": "Hayır. Kurum, Kurul ve Başkanlıktan oluşur; karar organı Kuruldur.",
+      "explanation": "Kurul ile Başkanlık birlikte Kurumu oluşturur; kararları Kurul alır.",
+      "articleRefs": [
+        "19"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Kişisel Verileri Koruma Kurumu yıllık faaliyet raporunu nereye sunar?",
+      "back": "Cumhurbaşkanlığına ve Türkiye Büyük Millet Meclisi İnsan Haklarını İnceleme Komisyonuna.",
+      "articleRefs": [
+        "20"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Kişisel Verileri Koruma Kurumu, ihtiyaç duyulduğunda görev alanına giren konularda hangi kuruluşlarla iş birliği yapar?",
+      "back": "Kamu kurum ve kuruluşları, sivil toplum kuruluşları, meslek örgütleri veya üniversitelerle.",
+      "explanation": "Kurum ayrıca kişisel verilerle ilgili uluslararası gelişmeleri izler. Görev alanına giren konularda uluslararası kuruluşlarla iş birliği yapar ve toplantılara katılır.",
+      "articleRefs": [
+        "20"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Kişisel Verileri Koruma Kurulu kaç üyeden oluşur?",
+      "back": "Dokuz üyeden; beşini Türkiye Büyük Millet Meclisi, dördünü Cumhurbaşkanı seçer.",
+      "explanation": "Kurul, üyeleri arasından Başkan ve İkinci Başkanı seçer. Kurulun Başkanı, Kurumun da başkanıdır.",
+      "articleRefs": [
+        "21"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Kişisel Verileri Koruma Kurulu üyelerinin görev süresi ne kadardır?",
+      "back": "Dört yıl. Süresi biten üye yeniden seçilebilir.",
+      "explanation": "Görev süresi dolmadan herhangi bir sebeple görevi sona eren üyenin yerine seçilen kişi, yerine seçildiği üyenin kalan süresini tamamlar.",
+      "articleRefs": [
+        "21"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Kişisel Verileri Koruma Kurulu toplantılarına izinsiz ve mazeretsiz katılmayan üyenin üyeliği hangi eşikte sona erer?",
+      "back": "Bir ay içinde toplam üç ya da bir yıl içinde toplam on Kurul toplantısına katılmadığı tespit edilince; üyelik Kurul kararıyla sona erer.",
+      "explanation": "Görevlere izinsiz, mazeretsiz ve kesintisiz on beş gün ya da bir yılda toplam otuz gün devam etmemek de ayrı bir sona erme hâlidir. Kurul üyelerinin süreleri dolmadan herhangi bir nedenle görevlerine son verilemez; üyelik ancak sayılan hâllerde Kurul kararıyla sona erer.",
+      "articleRefs": [
+        "21"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Kişisel Verilerin Korunması Kanununda öngörülen idari yaptırımlara kim karar verir?",
+      "back": "Kişisel Verileri Koruma Kurulu.",
+      "explanation": "Kurul, kişisel verilerle ilgili haklarının ihlal edildiğini ileri sürenlerin şikâyetlerini de karara bağlar.",
+      "articleRefs": [
+        "22"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Kişisel Verileri Koruma Kurulu, diğer kurum ve kuruluşlarca hazırlanan ve kişisel verilere ilişkin hüküm içeren mevzuat taslakları hakkında ne yapar?",
+      "back": "Görüş bildirir.",
+      "explanation": "Kurul, başka yetkilerinin yanında, veri güvenliğine ilişkin yükümlülükleri ve veri sorumlusu ile temsilcisinin görev, yetki ve sorumluluklarını belirlemek amacıyla da düzenleyici işlem yapar.",
+      "articleRefs": [
+        "22"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Kişisel Verileri Koruma Kurulu, verilerin kanunlara uygun işlenip işlenmediğini incelerken geçici önlem alabilir mi?",
+      "back": "Evet. Şikâyet üzerine ya da ihlal iddiasını öğrenince resen yaptığı incelemede, gerektiğinde geçici önlemler alabilir.",
+      "explanation": "Bu inceleme, Kurulun görev alanına giren konularla sınırlıdır.",
+      "articleRefs": [
+        "22"
+      ],
+      "counterNumbers": []
+    }
+  ]
+}

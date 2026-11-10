@@ -1,0 +1,214 @@
+{
+  "deck": {
+    "topicId": "28eaa9b8-d646-4d32-af33-618d8e1c7ea7",
+    "legislationSlug": "5393-belediye-kanunu",
+    "sourceLabel": "AI bilgi kartı — 5393 Belediye Kanunu md 63–71, 73",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: resmî madde metni + çıkmış sorular)"
+  },
+  "cards": [
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Belediyede harcama yetkilisi kimdir?",
+      "back": "Belediye bütçesiyle ödenek tahsis edilen her bir harcama biriminin en üst yöneticisi.",
+      "explanation": "Harcama yetkisi harcama birimine bağlıdır. Bütçeden ödenek tahsis edilen her birimde o birimin en üst yöneticisi harcama yetkilisidir.",
+      "articleRefs": [
+        "63"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Belediye bütçesinin kesinhesabını encümene kim sunar?",
+      "back": "Belediye başkanı. Kesinhesabı hesap döneminin bitiminden sonra nisan ayı içinde encümene sunar.",
+      "explanation": "Kesinhesap her yıl hazırlanır. Encümene sunulduktan sonra belediye meclisinin mayıs ayı toplantısında görüşülerek karara bağlanır.",
+      "articleRefs": [
+        "64"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Kesinhesap belediye meclisinin nisan ayı toplantısında karara bağlanır mı?",
+      "back": "Hayır. Nisan, başkanın kesinhesabı encümene sunduğu aydır. Meclis kesinhesabı mayıs ayı toplantısında görüşüp karara bağlar.",
+      "explanation": "Sıra şöyledir: hesap dönemi biter, belediye başkanı kesinhesabı nisan ayı içinde encümene sunar, belediye meclisi de mayıs ayı toplantısında karara bağlar.",
+      "articleRefs": [
+        "64"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Belediye kesinhesabının görüşülmesi ve kesinleşmesinde hangi hükümler uygulanır?",
+      "back": "Bütçeye ilişkin hükümler uygulanır.",
+      "explanation": "Kesinhesap belediye meclisinde görüşülüp karara bağlanırken bütçenin görüşülmesi ve kesinleşmesine ilişkin kurallar esas alınır.",
+      "articleRefs": [
+        "64"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Yeni yıl bütçesi herhangi bir nedenle kesinleşmemişse belediye hangi bütçeyi uygular?",
+      "back": "Geçen yıl bütçesini uygular. Bu durum yeni bütçe kesinleşinceye kadar sürer.",
+      "explanation": "Bütçesiz dönem doğmaması için geçen yıl bütçesi yeni bütçe kesinleşene kadar uygulanmaya devam eder.",
+      "articleRefs": [
+        "66"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Yeni bütçenin kabulüne kadar yapılan işlemler geçen yıl bütçesine göre yapılmış sayılır mı?",
+      "back": "Hayır. O dönemde geçen yıl bütçesi uygulanır, ancak kabule kadar yapılan işlemler yeni yıl bütçesine göre yapılmış sayılır.",
+      "explanation": "Madde iki ayrı kural koyar. Uygulamada geçen yıl bütçesi kullanılır. Bütçe kabul edilince o güne kadarki işlemler yeni yıl bütçesine göre yapılmış kabul edilir.",
+      "articleRefs": [
+        "66"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Belediyede gelecek yıllara yaygın hizmet yüklenmelerinin süresi en çok ne kadar olabilir?",
+      "back": "İlk mahallî idareler genel seçimlerini izleyen altıncı ayın sonunu geçemez.",
+      "explanation": "Bu hizmetler ihale yoluyla üçüncü şahıslara gördürülür. Süre sınırı, yüklenmenin ilk mahallî idareler genel seçimlerinden sonraki altıncı ayın sonunda bitmesini sağlar.",
+      "articleRefs": [
+        "67"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Belediyede gelecek yıllara yaygın hizmet yüklenmesine hangi organın kararıyla gidilir?",
+      "back": "Belediye meclisinin kararıyla. Belediyeye bağlı kuruluşlarda ise yetkili organın kararı gerekir.",
+      "explanation": "Karar alındıktan sonra park ve bahçe bakımı, temizlik, güvenlik, yemek, toplu ulaşım gibi sayılan hizmetler ihale yoluyla üçüncü şahıslara gördürülebilir.",
+      "articleRefs": [
+        "67"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Toplu ulaşım ve taşıma hizmetleri gelecek yıllara yaygın olarak ihale yoluyla üçüncü şahıslara gördürülebilir mi?",
+      "back": "Evet, bu hizmetler maddede sayılır. Belediyede meclis kararı gerekir ve süre ilk mahallî idareler genel seçimlerini izleyen altıncı ayın sonunu geçemez.",
+      "explanation": "Sayılan işler arasında araç kiralama, kontrollük, temizlik, güvenlik ve yemek hizmetleri vardır. Sağlıkla ilgili destek hizmetleri, sayaç okuma ve sayaç sökme-takma işleri ile sosyal tesislerin işletilmesi de bunlar arasındadır.",
+      "articleRefs": [
+        "67"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Büyükşehir belediyelerinde faiz dâhil iç ve dış borç stoku sınırı kaç kat olarak uygulanır?",
+      "back": "Bir buçuk kat. Sınır, en son kesinleşmiş bütçe gelirleri toplamının yeniden değerleme oranıyla artırılan miktarının bir buçuk katıdır.",
+      "explanation": "Sınıra belediyenin, bağlı kuruluşlarının ve bunların sermayesinin yüzde ellisinden fazlasına sahip oldukları şirketlerin borç stoku birlikte girer. Cumhurbaşkanınca kabul edilen ileri teknoloji ve büyük tutarda maddî kaynak gerektiren alt yapı projeleri için yapılan borçlanmalar bu hesapta dikkate alınmaz.",
+      "articleRefs": [
+        "68"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Belediye, en son kesinleşmiş bütçe gelirlerinin yüzde onunu geçen iç borçlanmayı yalnız meclis üye tam sayısının salt çoğunluğunun kararıyla yapabilir mi?",
+      "back": "Hayır. Salt çoğunluk kararına ek olarak Çevre, Şehircilik ve İklim Değişikliği Bakanlığının onayı gerekir.",
+      "explanation": "Yılı içinde toplam yüzde onu geçmeyen iç borçlanma için belediye meclisinin kararı yeterlidir. Oran, en son kesinleşmiş bütçe gelirlerinin 213 sayılı Vergi Usul Kanununa göre belirlenecek yeniden değerleme oranıyla artırılan miktarı üzerinden hesaplanır. Usule aykırı borçlanan yetkililere, fiil daha ağır bir cezayı gerektirmiyorsa 5237 sayılı Türk Ceza Kanununun görevi kötüye kullanma hükümleri uygulanır.",
+      "articleRefs": [
+        "68"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Belediye varlık ve yükümlülüklerini gösteren malî tablolarını hangi dönemlerle gönderir?",
+      "back": "Üçer aylık dönemler hâlinde gönderir. Tablolar Çevre, Şehircilik ve İklim Değişikliği Bakanlığı, Hazine ve Maliye Bakanlığı ile Strateji ve Bütçe Başkanlığına gider.",
+      "explanation": "Malî tablolarda belediyenin varlık ve yükümlülükleri ayrıntılı bir şekilde yer alır.",
+      "articleRefs": [
+        "68"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Belediye, belediye ve mücavir alan sınırları içinde imarlı ve alt yapılı arsa üretirken hangi yerleri hariç tutar?",
+      "back": "Özel kanunlarına göre korunması gerekli yerleri ve tarım arazilerini hariç tutar.",
+      "explanation": "Amaç düzenli kentleşmeyi sağlamak ve beldenin konut, sanayi ve ticaret alanı ihtiyacını karşılamaktır. Belediye bunun için arazi satın alabilir, kamulaştırma yapabilir, arsaları trampa edebilir ve bütçesinden para ayırarak işletme tesis edebilir.",
+      "articleRefs": [
+        "69"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Belediyenin ürettiği arsaların satışı, konut ve işyerleri gibi 2886 sayılı Devlet İhale Kanunu dışında yapılabilir mi?",
+      "back": "Hayır. 2886 sayılı Kanuna tâbi olmayan yalnız üretilen konut ve işyerlerinin satışıdır. Arsalar bu kuralın dışında bırakılmıştır.",
+      "explanation": "Madde \"Arsalar hariç\" diyerek konut ve işyeri satışını Devlet İhale Kanunu dışında tutar. Arsalar ise sayılan hak sahiplerine, takdir komisyonunun belirleyeceği tutardan aşağı olmamak üzere tahsis edilebilir.",
+      "articleRefs": [
+        "69"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Belediyenin dar gelirlilere arsa tahsisinde aranan konutu olmama şartı, hangi yaştan küçük çocuklara ait konutları da kapsar?",
+      "back": "Onsekiz yaşından küçük çocukları kapsar. Kişinin kendisine, eşine veya onsekiz yaşından küçük çocuklarına ait konutu olmamalıdır.",
+      "explanation": "Şart o belediye ve mücavir alan sınırları içinde aranır. Tahsis bedeli, 2942 sayılı Kamulaştırma Kanununa göre oluşturulan takdir komisyonunun belirleyeceği tutardan aşağı olamaz. Afete maruz kalanlara, sanayi bölgelerinden nakledileceklere ve üyelerinin tamamı bu durumda olan kooperatiflere de tahsis yapılabilir.",
+      "articleRefs": [
+        "69"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Belediye hangi alanlarda şirket kurabilir?",
+      "back": "Kendisine verilen görev ve hizmet alanlarında kurabilir. Kuruluş ilgili mevzuatta belirtilen usullere göre yapılır.",
+      "articleRefs": [
+        "70"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Belediye, özel gelir ve gideri bulunan hizmetleri için bütçe içinde işletmeyi kimin izniyle kurar?",
+      "back": "Çevre, Şehircilik ve İklim Değişikliği Bakanlığının (metinde: Çevre ve Şehircilik Bakanlığı) izniyle kurar.",
+      "explanation": "Belediye, özel gelir ve gideri bulunan hizmetlerini bütçe içinde işletme kurarak yürütebilir.",
+      "articleRefs": [
+        "71"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Kamunun mülkiyetinde veya kullanımında olan yerlerde kentsel dönüşüm ve gelişim proje alanı ilanı, belediyenin talebi üzerine kimin kararına bağlıdır?",
+      "back": "Cumhurbaşkanının kararına bağlıdır. İlgili belediyenin talebi ve Cumhurbaşkanınca bu yönde karar alınması şarttır.",
+      "explanation": "Diğer alanlarda ilan için iki şart aranır: maddede sayılan amaçlardan birinin veya birkaçının gerçekleşmesi ve alanın belediye veya mücavir alan sınırları içinde bulunması. Belediye kentsel dönüşüm ve gelişim projelerini belediye meclisi kararıyla uygular.",
+      "articleRefs": [
+        "73"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Kentsel dönüşüm ve gelişim proje alanının büyüklüğü hangi aralıkta olmalıdır?",
+      "back": "En az 5, en çok 500 hektar olmalıdır. Bunun takdiri münhasıran belediye meclisinin yetkisindedir.",
+      "explanation": "Proje alanıyla ilişkili birden fazla yer, toplamı 5 hektardan az olmamak kaydıyla tek bir dönüşüm alanı olarak belirlenebilir. Yapı yükseklik ve yoğunluğunun belirlenmesi ve projenin etaplar halinde yapılması da belediye meclisinin takdirindedir.",
+      "articleRefs": [
+        "73"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Kentsel dönüşüm ve gelişim proje alanında yıkılarak yeniden yapılacak münferit yapılarda vergi, resim ve harçların ne kadarı alınır?",
+      "back": "Dörtte biri alınır.",
+      "explanation": "İndirim, proje alanında yıkılarak yeniden yapılacak münferit yapılardaki ilgili vergi, resim ve harçlar için geçerlidir.",
+      "articleRefs": [
+        "73"
+      ]
+    }
+  ]
+}

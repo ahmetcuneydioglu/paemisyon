@@ -1,0 +1,210 @@
+{
+  "deck": {
+    "topicId": "7b47e1cc-1573-4cfc-99fa-6c82b73b88ec",
+    "legislationSlug": "cocuk-koruma-kanunu-uygulama-yonetmeligi",
+    "sourceLabel": "AI bilgi kartı — Çocuk Koruma Kanunu Uygulama Yönetmeliği md 17–24",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: resmî madde metni + çıkmış sorular)"
+  },
+  "cards": [
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Sosyal inceleme raporlarını öncelikle kim düzenler?",
+      "back": "Mahkemelerde görevlendirilen sosyal çalışma görevlileri düzenler; bu görevliler Adalet Bakanlığınca atanır.",
+      "explanation": "Atamada çocuk ve aile sorunları, çocuk hukuku ve çocuk suçluluğunun önlenmesi alanlarında lisansüstü eğitim yapmış olanlar tercih edilir.",
+      "articleRefs": [
+        "17"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Mahkemenin sosyal çalışma görevlisi yoksa sosyal inceleme önce denetimli serbestlik görevlisi olarak istihdam edilen sosyal çalışma görevlisine mi yaptırılır?",
+      "back": "Hayır. Önce aynı nitelikleri taşıyan diğer kamu kurum ve kuruluşlarında çalışan veya serbest meslek icra eden sosyal çalışma görevlileri görevlendirilebilir. Denetimli serbestlik görevlisinden ancak bunlar arasından temin edilemezse yararlanılır.",
+      "explanation": "Bu sıralama iki durumda işler: mahkemenin kendi sosyal çalışma görevlisinin bulunmaması ya da görevin onlarca yapılmasında fiilî veya hukukî bir engel bulunması. Başka bir uzmanlık dalına ihtiyaç duyulduğunda da mahkeme, aynı niteliklere sahip kamu çalışanları ve serbest meslek mensupları arasından görevlendirme yapabilir.",
+      "articleRefs": [
+        "17"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Sosyal çalışma görevlisi görüşmeye başlamadan önce çocuğu hangi konularda bilgilendirir?",
+      "back": "Görüşmenin amacı, çocuğun hakları ve yükümlülükleri, görüşmenin sonuçları ve sosyal çalışma görevlisinin yasal yükümlülükleri hakkında bilgilendirir.",
+      "explanation": "Sosyal çalışma görevlisi görevini Kanunda belirlenen temel ilkeler ve meslek etiği kuralları uyarınca yapar.",
+      "articleRefs": [
+        "18"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Sosyal çalışma görevlisi, kollukta ve adliyede çocukla görüşmeyi nasıl bir mekânda yapar?",
+      "back": "Görüşmenin amaç ve niteliğine, çocukların özellik ve gereksinimlerine uygun olarak düzenlenmiş mekânda ve biçimde yapar.",
+      "explanation": "Görevli, çocukla gereksinimi doğrultusunda yeterli süre ve sayıda görüşür. Çocuğa psiko-sosyal destek için gerekli rehberliği yapar ve çocuğun örselenmemesi için gerekli önlemleri alır.",
+      "articleRefs": [
+        "18"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Sosyal çalışma görevlisi, kendisiyle ilgili kararlara katılımı istisnasız her çocuk için sağlamakla yükümlü müdür?",
+      "back": "Hayır. Görevli her çocuğun katılım hakkına saygı gösterir. Kararlara katılımı ise kendi görüşlerini serbestçe oluşturma yeteneğine veya yeterli idrak gücüne sahip olan çocuk için sağlar.",
+      "explanation": "Görevli, çocuğa ilişkin bilgi, belge ve sosyal verileri gizlilik ilkesine uyarak, sosyal sırların korunması esasına göre işler. Bu verileri yalnız yetkililere veya yetkilendirilen yerlere bildirir.",
+      "articleRefs": [
+        "18"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Suça sürüklenen çocuğun ifadesi alınırken ya da sorgusu yapılırken sosyal çalışma görevlisinin görevi nedir?",
+      "back": "Çocuğun adalet mekanizmasının işleyişinden olumsuz etkilenmesini önlemek için yanında bulunur. Çocuğun hakları ve kendisine yöneltilen suçlama dahil yargılama süreci hakkında anlayabileceği bir dilde bilgilendirilmesini sağlar.",
+      "explanation": "Korunma ihtiyacı olan çocuklar hakkında da benzeri işlemleri yapar.",
+      "articleRefs": [
+        "19"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Sosyal çalışma görevlisi, sosyal inceleme, gözetim ve denetim yapmasını engelleyen bir durumla karşılaşırsa ne yapar?",
+      "back": "Durumu derhal görevlendirildiği mercie bildirir ve gerekli önlemlerin alınmasını ister.",
+      "explanation": "Görevli ayrıca kararların amaca ulaşması için, adlî mercilerce tayin edilen uzmanlar dahil ilgili kurum ve kuruluş yetkilileriyle işbirliği yapar.",
+      "articleRefs": [
+        "19"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Mahkeme veya çocuk hâkimi sosyal çalışma görevlisine tedbir kararının uygulanması, takibi ve denetimine ilişkin inceleme görevi verirse, görevlinin denetim görevlisi olarak sahip olduğu görev ve yetkiler ortadan kalkar mı?",
+      "back": "Hayır. Bu görev, sosyal çalışma görevlisinin denetim görevlisi olarak sahip olduğu görev ve yetkileri ortadan kaldırmaz.",
+      "explanation": "Mahkeme ve hâkimler ile çocuk bürosunda görevli Cumhuriyet savcıları, sosyal çalışma görevlilerinden işbirliği yapılabilecek toplumsal kaynakları ve işbirliği olanaklarını araştırıp geliştirmelerini de isteyebilir.",
+      "articleRefs": [
+        "19"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Kusur yeteneğinin takdiri için sosyal inceleme yaptırılması, fiili işlediği sırada hangi yaştaki çocuklar için zorunludur?",
+      "back": "Fiili işlediği sırada oniki yaşını bitirmiş, onbeş yaşını doldurmamış çocuklar için zorunludur.",
+      "explanation": "İncelemenin amacı, çocuğun işlediği fiilin hukukî anlam ve sonuçlarını algılama ve bu fiille ilgili davranışlarını yönlendirme yeteneğinin olup olmadığını takdir etmektir. Kanunun güncel metnine göre onbeş yaşını doldurmamış her çocuk hakkında sosyal inceleme zorunludur.",
+      "articleRefs": [
+        "20"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Kusur yeteneğinin belirlenmesi için hâkim, sosyal inceleme raporunun yanında kimlerden görüş alır?",
+      "back": "Adlî tıp uzmanından, psikiyatristten ya da zorunluluk hâlinde uzman hekimden görüş alır.",
+      "explanation": "Sosyal incelemeyi yapan bilirkişinin raporu çocuğun içinde bulunduğu aile ortamını, sosyal çevre koşullarını, gördüğü eğitimi, fiziksel ve ruhsal gelişimini kapsar.",
+      "articleRefs": [
+        "20"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Sosyal inceleme raporunda, çocuğun işlediği fiilin hukukî anlam ve sonuçlarını kavrayabilme ve davranışlarını yönlendirme yeteneği hakkında sonuç değerlendirmesi yapılabilir mi?",
+      "back": "Hayır. Raporda bu konuda sonuç değerlendirmesinde bulunulmaz. Takdir yetkisi münhasıran mahkemeye aittir; rapor bu takdirde göz önünde bulundurulur.",
+      "explanation": "Hâkim kusur yeteneğini takdir ederken, görevlendirdiği bilirkişinin raporunda yer verilen gözlem, tespit ve değerlendirmeleri gözönünde bulundurur.",
+      "articleRefs": [
+        "21",
+        "20"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Sosyal inceleme raporunda maddede sayılan hususların tamamına yer verilmesi zorunlu mudur?",
+      "back": "Hayır. İncelemenin özelliğine ve verilen görevin niteliğine göre bu hususların tamamına veya bir kısmına yer verilir.",
+      "explanation": "Çocuğa ilişkin bilgiler arasında şunlar bulunur: doğumundan başlayarak geçirdiği gelişim aşamaları, ailesinin toplumsal, ekonomik ve kültürel durumu, aile bireyleri arasındaki ilişki ve okul ve iş ortamı ile boş zamanlarını değerlendirdiği çevre.",
+      "articleRefs": [
+        "21"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Sosyal inceleme raporunda çocuk hakkındaki tedbir ve denetime ilişkin hangi öneriler yer alabilir?",
+      "back": "Kanunun 5 inci maddesindeki tedbirlerden hangisinin yararlı olacağı, tedbirin yanında denetime gerek olup olmadığı ve tedbir ya da denetimin ne kadar süre uygulanacağı.",
+      "explanation": "Çocuklar ve ailelerine uygulanabilecek özel tretman veya psikiyatrik tedavi hususundaki öneriler de rapora girebilir.",
+      "articleRefs": [
+        "21"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Sosyal inceleme raporundaki bilgiler çocuğun psiko-sosyal gelişimini olumsuz etkileyecekse çocuk bakımından ne yapılabilir?",
+      "back": "Çocuğun yarar ve esenliğinin gözetilmesi temel ilkesi nazara alınarak, gelişimini olumsuz etkileyebilecek bilgi ve belgeler çocuğa verilmeyebilir.",
+      "explanation": "Tedbir kararlarını yerine getiren kişi, kurum veya kuruluşlar da rapordan yararlanabilir. Bunu uygulama plânı, denetim plânı, denetim raporu ve değerlendirme raporlarına esas olmak üzere ve gizlilik ilkelerine uymak şartıyla yaparlar.",
+      "articleRefs": [
+        "22"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Koruyucu ve destekleyici tedbir kararı verilen çocuk bakımından denetim altına alma kararı neyi ifade eder?",
+      "back": "Kararların yerine getirilmesinin izlenmesi ve denetlenmesini ifade eder. Amaç, kararın amacına ulaşması ve çocuğa etkili bir koruma ve gözetim hizmeti sunulmasıdır.",
+      "articleRefs": [
+        "23"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Kamu davasının açılmasının ertelenmesi veya hükmün açıklanmasının geri bırakılması kararı verilen çocuk bakımından denetim altına alma kararı neyi ifade eder?",
+      "back": "Toplum temelli bir uygulamayı ifade eder. Mahkemenin belirttiği koşullar ve süre içinde, denetim plânı doğrultusunda çocuğun toplumla bütünleşmesi için gereken her türlü hizmet, program ve kaynak sağlanır.",
+      "articleRefs": [
+        "23"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Mahkeme veya çocuk hâkiminin denetim altına alma kararı verebileceği hâllerde çocuğun hangi yönleri araştırılır?",
+      "back": "Çocuğun yetiştirilme şekli, kişisel özellikleri, yaşadığı çevre, bulunduğu ortam ve onun suça yönelmesine etkin davranışlar araştırılır.",
+      "articleRefs": [
+        "23"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Denetim altına alınan çocuk hakkında koruyucu ve destekleyici tedbir kararı da verilmişse, denetim görevi yapılırken kimlerle işbirliği yapılır?",
+      "back": "Tedbir kararını ya da kararlarını yerine getirecek kurum veya kuruluşlarla işbirliği yapılır.",
+      "articleRefs": [
+        "24"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Hem denetim hem koruyucu ve destekleyici tedbir kararı verilen çocuk için denetim plânı ve denetim raporları hazırlanırken gerektiğinde kimlerden yararlanılır?",
+      "back": "Tedbiri yerine getirmekle görevli kurumda bulunan uzmanlardan yararlanılır.",
+      "articleRefs": [
+        "24"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Çocuk için denetim görevlisi görevlendirilirken neye dikkat edilir?",
+      "back": "Çocuğun kişisel özellik ve ihtiyaçları dikkate alınır; çocukla iyi iletişim kurabilecek olanlar tercih edilir.",
+      "articleRefs": [
+        "24"
+      ]
+    }
+  ]
+}

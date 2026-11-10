@@ -1,0 +1,101 @@
+{
+  "deck": {
+    "topicId": "8b991a24-eecf-48c9-a068-0aecfc65cfd1",
+    "legislationSlug": "aihs",
+    "sourceLabel": "AI bilgi kartı — Avrupa İnsan Hakları Sözleşmesi md P16-1, P16-2, P16-3, P16-4, P16-5, P16-6, P16-7, P16-8, P16-9, P16-10, P16-11",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: resmî madde metni + çıkmış sorular)"
+  },
+  "cards": [
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Danışma görüşü talebinin kabulüne Büyük Daire bünyesinde kaç yargıçtan oluşan kurul karar verir?",
+      "back": "Beş yargıçtan oluşan kurul karar verir.",
+      "explanation": "Kurul, talebin reddine karar verirse kararını gerekçelendirir.",
+      "articleRefs": [
+        "P16-2"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Danışma görüşü sürecinde, talepte bulunan mahkemenin bağlı olduğu Taraf adına seçilmiş yargıç yoksa ya da görev alamıyorsa yargıç sıfatıyla kim görev alır?",
+      "back": "Mahkeme Başkanının, ilgili Sözleşmeci Tarafın önceden sunduğu listeden seçtiği kişi.",
+      "explanation": "Taraf adına seçilmiş yargıç bulunduğunda kurula ve Büyük Daireye kendiliğinden resen dahildir.",
+      "articleRefs": [
+        "P16-2"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Danışma görüşü sürecinde yazılı görüş sunma ve duruşmalara katılma hakkı kimlere tanınmıştır?",
+      "back": "Avrupa Konseyi İnsan Hakları Komiseri'ne ve talepte bulunan mahkemenin bağlı olduğu Yüksek Sözleşmeci Taraf'a tanınmıştır.",
+      "explanation": "Mahkeme Başkanı, yargı yönetiminin yararına olan durumlarda başka katılımcıları da davet edebilir: herhangi bir Yüksek Sözleşmeci Taraf'ı veya kişiyi yazılı görüş sunmaya ya da duruşmalara katılmaya çağırabilir.",
+      "articleRefs": [
+        "P16-3"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Danışma görüşü tüm yargıçların kanaatini oybirliğiyle yansıtmıyorsa yargıçlar hangi hakka sahiptir?",
+      "back": "Her yargıç kendi ayrık görüşünü belirtme hakkına sahiptir. Bu hak, görüş tamamen ya da kısmen oybirliğini yansıtmadığında doğar.",
+      "explanation": "Danışma görüşleri gerekçelidir. Talepte bulunan mahkemeye ve onun bağlı olduğu Yüksek Sözleşmeci Taraf'a tebliğ edilir, ayrıca yayınlanır.",
+      "articleRefs": [
+        "P16-4"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "16 No.lu Protokolün yürürlüğe girmesi için Sözleşme'yi onaylamış kaç Yüksek Sözleşmeci Taraf'ın bağlanma rızasını beyan etmesi gerekir?",
+      "back": "On Yüksek Sözleşmeci Taraf'ın rıza beyan etmesi gerekir. Rıza 7. madde hükümleri uyarınca beyan edilir.",
+      "explanation": "Rıza iki yolla ifade edilir: onaylama, kabul veya uygun bulmaya dair çekince koymaksızın imzalamak ya da bu şartla imzalayıp sonradan onaylamak, kabul etmek veya uygun bulmak.",
+      "articleRefs": [
+        "P16-8",
+        "P16-7"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Protokolle bağlanma rızasını sonradan beyan eden Taraf için Protokol ne zaman yürürlüğe girer?",
+      "back": "Rızanın beyan edildiği tarihten itibaren üç aylık sürenin ardından gelen ayın birinci günü yürürlüğe girer.",
+      "explanation": "İlk yürürlükte de aynı hesap uygulanır: on Yüksek Sözleşmeci Taraf'ın rıza beyan ettiği tarihten itibaren üç aylık sürenin ardından gelen ayın birinci günü.",
+      "articleRefs": [
+        "P16-8"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Bir Taraf, Sözleşme'nin 57. maddesine dayanarak 16 No.lu Protokol hükümlerine çekince koyabilir mi?",
+      "back": "Hayır. Sözleşme'nin 57. maddesine dayanılarak bu Protokolün hükümleriyle ilgili hiçbir çekince konulamaz.",
+      "articleRefs": [
+        "P16-9"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Taraflar, danışma görüşü isteyebilecek mahkemelerini hangi makama bildirir?",
+      "back": "Avrupa Konseyi Genel Sekreteri'ne bildirir. Bildirim, imza sırasında ya da onaylama, kabul veya uygun bulma belgesinin teslimi esnasında yapılır.",
+      "explanation": "Bu bildirim, aynı şekle tabi olarak her zaman değiştirilebilir.",
+      "articleRefs": [
+        "P16-10"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "16 No.lu Protokol hangi tarihte düzenlenmiştir?",
+      "back": "2 Ekim 2013'te Strazburg'da, Fransızca ve İngilizce tek nüsha hâlinde düzenlenmiştir.",
+      "explanation": "Her iki metin de aynı derecede geçerlidir ve nüsha Avrupa Konseyi arşivlerinde saklanır. Genel Sekreter tasdikli örneği bütün Avrupa Konseyi üyesi devletlere ve diğer Yüksek Sözleşmeci Taraflara gönderir.",
+      "articleRefs": [
+        "P16-11"
+      ]
+    }
+  ]
+}

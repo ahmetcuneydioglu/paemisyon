@@ -1,0 +1,163 @@
+{
+  "deck": {
+    "topicId": "4d185b8e-a24f-4f0e-8c29-d17e03eeec11",
+    "legislationSlug": "5442-il-idaresi-kanunu",
+    "sourceLabel": "AI bilgi kartı — 5442 İl İdaresi Kanunu md 12, 13, 15–18, 20, 21",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: resmî madde metni + çıkmış sorular)"
+  },
+  "cards": [
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Yabancıların hukuki durumlarını ilgilendiren işlerde vali kimlerin müracaat ve ziyaretlerini kabul eder?",
+      "back": "Konsoloslukların. Vali bu işlerde konsolosluklarla muhabere de eder.",
+      "articleRefs": [
+        "12"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Yabancıların hukuki durumları dışında vali konsolosluklarla hangi işlerde muhabere eder?",
+      "back": "Deniz, kara ve hava ticaretlerini ilgilendiren işlerde.",
+      "explanation": "Vali bu işlerde konsoloslukların müracaat ve ziyaretlerini de kabul eder.",
+      "articleRefs": [
+        "12"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Valinin konsolosluklarla muhaberesi hangi hükümlere göre yürür?",
+      "back": "Devlet genel ve özel hukuku hükümlerine göre yürür. İkamet, seyahat, konsolosluk, ticaret ve seyrisefain mukaveleleri de esas alınır.",
+      "articleRefs": [
+        "12"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Vali, il teşkilatındaki adli ve askeri dairelerin memurlarının da en büyük amiri midir?",
+      "back": "Hayır. Vali, Bakanlıklar ve tüzelkişiliği haiz genel müdürlüklerin il teşkilatında çalışan bütün memur ve müstahdemlerinin en büyük amiridir; adli ve askeri daireler bunun dışında kalır.",
+      "explanation": "Bu sıfatla vali memur ve müstahdemlerin çalışmalarına nezaret eder ve teşkilatın işlemesini denetler. Emir ve denetimi altındaki teşkilatın muamelelerinden şikayet edenlerin müracaatlarını da inceler. Memurun haksız veya kanunsuz muamelesini görürse hakkında kanuni muameleye başvurur. Vardığı kararı derhal tatbik ettirir ve ilgiliye bildirir.",
+      "articleRefs": [
+        "13"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Acele hallerde vali, tayini merkeze ait bir il memuruna kaç güne kadar mezuniyet verebilir?",
+      "back": "15 güne kadar. Vali verdiği mezuniyeti ilgili makamlara bildirir.",
+      "explanation": "Bu memurların yıllık mezuniyetlerini ise mensup oldukları Bakanlık veya tüzelkişiliği haiz genel müdürlük verir. Bu da valiliğin iş'arı üzerine olur.",
+      "articleRefs": [
+        "13"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Birkaç ile şamil memuriyetlerde valinin gözetim ve denetim yetkisi hangi işleri kapsar?",
+      "back": "O memuriyetlerin valinin kendi ilindeki işlerini kapsar.",
+      "articleRefs": [
+        "15"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Vali, bir memura hangi durumda işten el çektirebilir?",
+      "back": "Denetlemeleri sırasında memurun iş başında kalmasında mahzur görürse. El çektirme valinin sorumluluğu altındadır.",
+      "explanation": "Vali bu durumda hizmetin aksamaması için gereken tedbirleri de aldırır.",
+      "articleRefs": [
+        "16"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Vali, işten el çektirme işini ait olduğu makama nasıl bildirir?",
+      "back": "Gerekçesiyle ve derhal bildirir.",
+      "articleRefs": [
+        "16"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Vali, işten el çektirme yetkisini yalnız memurlar için mi kullanabilir?",
+      "back": "Hayır. Vali, denetlemeleri sırasında iş başında kalmalarında mahzur gördüğü bütün memur ve müstahdemlere işten el çektirebilir.",
+      "explanation": "El çektirme valinin sorumluluğu altındadır. Vali ayrıca hizmetin aksamaması için gereken tedbirleri aldırır.",
+      "articleRefs": [
+        "16"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Vali, kendi teftiş yetkisi dışında kalan hangi yerlerde öğrendiği yolsuzlukları ilgili makamlara bildirir?",
+      "back": "İl içinde, denetim ve teftişi altında bulunmayan bütün daire ve müesseselerde öğrendiği yolsuzlukları bildirir.",
+      "articleRefs": [
+        "17"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Vali, denetim ve teftişi altında bulunmayan bir dairedeki yolsuzluğu kendisi inceler mi?",
+      "back": "Hayır. Vali yolsuzluğu ilgili makamlara bildirir; lazımgelen incelemeyi ilgili makamlar yapar.",
+      "articleRefs": [
+        "17"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Valinin bildirdiği yolsuzlukta ilgili makamlar inceleme sonucunu kime bildirir?",
+      "back": "Valiye bilgi verirler. Bundan önce incelemeyi yapıp kanuni gereğini ifa ederler.",
+      "articleRefs": [
+        "17"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Vali, gereken hallerde il mensuplarına ne verir?",
+      "back": "Takdirname verir.",
+      "articleRefs": [
+        "20"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Vali, tayini merkeze ait olanlar hakkındaki takdir ve tecziye muamelelerini ne yapar?",
+      "back": "İlgili makamlara bildirir.",
+      "articleRefs": [
+        "20"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "İl idare şube başkanları, şubelerine taallük eden işlerin yürütülmesinden kime karşı sorumludur?",
+      "back": "Valiye karşı sorumludurlar.",
+      "articleRefs": [
+        "21"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "İl idare şube başkanları, şube memur ve müstahdemlerinin ödev ve görevlerinin nasıl yapılmasından valiye karşı sorumludur?",
+      "back": "Sürat ve intizamla yapılmasından sorumludurlar.",
+      "explanation": "Bu ödev ve görevler kanun, Cumhurbaşkanlığı kararnamesi ve diğer mevzuatta belirtilenlerdir.",
+      "articleRefs": [
+        "21"
+      ]
+    }
+  ]
+}

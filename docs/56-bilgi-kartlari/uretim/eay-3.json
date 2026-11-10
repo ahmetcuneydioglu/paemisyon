@@ -1,0 +1,289 @@
+{
+  "deck": {
+    "topicId": "ca720f44-72d7-4159-9c40-806f47ef136f",
+    "legislationSlug": "emniyet-atama-ve-yer-degistirme-yonetmeligi",
+    "sourceLabel": "AI bilgi kartı — Emniyet Atama ve Yer Değiştirme Yönetmeliği md 25–42",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: resmî madde metni + çıkmış sorular; 1 açıklama düşürüldü)"
+  },
+  "cards": [
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Emniyet hizmetleri sınıfındaki bayan personelden ikinci bölgede zorunlu hizmete tabi olacakların sayısı neye göre tespit edilir?",
+      "back": "O bölgede bayan personel çalıştırılması gereken birimlerin ihtiyaçları gözönüne alınarak tespit edilir.",
+      "explanation": "Sayı tespit edildikten sonra bu personelin atamaları Yönetmelikte belirtilen esas ve usullere göre yapılır.",
+      "articleRefs": [
+        "25"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "İkinci bölge hizmet süresini tamamlamadan diğer bölgeye atanan personele ne olur?",
+      "back": "Sebebin ortadan kalkmasını müteakip, eksik kalan süresini tamamlamak üzere ikinci bölgeye tekrar atanır.",
+      "articleRefs": [
+        "26"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "İkinci bölgeye atanan personel geçerli bir özrü olmadan hangi tarihten sonra göreve başlarsa hizmet süresi göreve başlama tarihinden itibaren işler?",
+      "back": "15 Ekim'den sonra başlarsa; ikinci bölgedeki hizmet süresi göreve başladığı tarihten itibaren, o bölgenin zorunlu süresi tamamlanıncaya kadar devam eder.",
+      "explanation": "Kural, personelden kaynaklanmayan ve idarece kabul edilebilir bir özrü olmaksızın geç başlayanlar için uygulanır.",
+      "articleRefs": [
+        "27"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "İkinci bölgeye ataması geç yapıldığı için 15 Ekim'den sonra göreve başlayanın hizmet süresi göreve başlama tarihinden itibaren mi işler?",
+      "back": "Hayır; atamaların geç yapılma sebebi bu kuralın dışında tutulur. Kural, idarece kabul edilebilir bir özrü olmaksızın 15 Ekim'den sonra başlayanlar içindir.",
+      "explanation": "Göreve geç başlamanın personelden kaynaklanmayan ve idarece kabul edilebilir bir özre dayanması da kuralın uygulanmasını engeller.",
+      "articleRefs": [
+        "27"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "İkinci bölge hizmetini hangi tarihte ya da sonrasında tamamlayarak dönüşü hak edenlerin ataması içinde bulunulan yılın genel atama döneminde yapılır?",
+      "back": "1 Ocak ve sonraki bir tarihte tamamlayanların; atamaları içinde bulunulan yılın genel atama döneminde yapılır.",
+      "articleRefs": [
+        "27"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Aynı bölge veya il içinde yer değiştirdiği için hizmet süresi farklı birimlerde geçen personelin süresi nasıl hesaplanır?",
+      "back": "Fiilen çalışılan her yerdeki süre o yerin zorunlu hizmet süresine yüzdelik olarak oranlanır; oranların toplamı %100'e ulaşınca hizmet süresi bitmiş sayılır.",
+      "explanation": "Bu hesaplamalarda eski görev yerinden ilişik kesme tarihi esas alınır ve mehil müddeti yeni atanılan yerin hizmet süresine dâhil edilir.",
+      "articleRefs": [
+        "28"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Cetvelde hizmet süresi beş yıl olan ikinci bölge biriminde süresini tamamlayıp aynı birimde kesintisiz devam eden personel toplam kaç yılda ikinci görevini tamamlamış sayılır?",
+      "back": "Toplamda sekiz yıl kesintisiz görev yaptığında ikinci bölgede ikinci görevini tamamlamış sayılır.",
+      "explanation": "Emniyet amiri ve emniyet müdürü rütbesindeki personel ile özel harekat branşlı personel bu kuralın dışındadır. Kural, cetveldeki süre tamamlandıktan sonra aynı birimde kesintisiz devam edilmesi hâlinde uygulanır.",
+      "articleRefs": [
+        "28"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Cetvelde hizmet süresi yedi yıl olan ikinci bölge biriminde kesintisiz kalan personel toplam on yılda ikinci görevini tamamlamış sayılır mı?",
+      "back": "Hayır; yedi yıllık birimlerde toplam on iki yıl gerekir. Toplam on yıl, altı yıl olarak belirtilen birimler içindir.",
+      "explanation": "Diğer toplamlar: dört yıllık birimlerde altı yıl, üç yıllık birimlerde dört yıl, iki yıllık birimlerde üç yıl kesintisiz görev.",
+      "articleRefs": [
+        "28"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "İllerde, ikinci bölgeye atama sırası gelen personelin hizmet ihtiyacı sebebiyle yerinde kalmasını kim talep eder?",
+      "back": "Valiler; gerekçeli olarak Şubat ayı sonuna kadar talep eder, durumu Genel Müdürlük değerlendirip karara bağlar.",
+      "explanation": "Merkez teşkilatında başkanlar ve daire başkanları, doğrudan merkeze bağlı taşra teşkilatında birim amirleri talepte bulunur. Genel Müdürlük gerekirse erteleme istenebilecek azami personel sayısını birimler ve rütbeler için ayrı ayrı tespit edebilir.",
+      "articleRefs": [
+        "29"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Hizmet ihtiyacıyla ertelenen personel için uzmanlık gerektiren birimlerin talebiyle en fazla kaç defa daha erteleme istenebilir?",
+      "back": "En fazla iki defa daha; personelin teknik, bilgi, beceri ve tecrübesinden yararlanmak amacıyla istenebilir.",
+      "explanation": "Kural olarak, ertesi yıl zaruri bir gerekçeye dayanan yeni talep yoksa personel yükümlü olduğu bölgeye atanır; Yönetmelikteki mazeretlere sahip olsa dahi üçüncü defa erteleme teklifinde bulunulamaz.",
+      "articleRefs": [
+        "29"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Sağlık sebebiyle erteleme talebinde başka sağlık kurumlarından alınan rapor geçerli midir ve raporları kim inceler?",
+      "back": "Geçerli sayılmaz; rapor tam teşekküllü Devlet, Devlet eğitim ve araştırma ya da üniversite hastanesinden alınmalıdır. Raporları Genel Müdürlük Sosyal Hizmetler ve Sağlık Daire Başkanlığı inceler.",
+      "explanation": "Özel hastaneler ile özel veya vakıf üniversitelerine bağlı hastanelerin raporları kabul edilmez.",
+      "articleRefs": [
+        "30"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Sağlık sebebiyle ertelemeye dayanak sağlık kurulu raporu en çok kaç yıl geçerlidir?",
+      "back": "En çok 2 yıl; süresi dolan personel, sağlık özrü devam ediyorsa güncel raporunu Genel Müdürlüğe sunmak zorundadır.",
+      "articleRefs": [
+        "30"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Sağlık sebebiyle erteleme isteyen personelin hastalığı atanacağı bölgedeki sağlık kurumlarında tedavi edilebiliyorsa atama nasıl yapılır?",
+      "back": "Sosyal Hizmetler ve Sağlık Daire Başkanlığı tedavi kurumlarının bulunduğu illeri belirterek görev yapabileceği yerleri tespit eder; atama buna göre yapılır.",
+      "explanation": "Tedavisi mümkün olacak yer bulunmayan personelin ataması bir sonraki genel atama dönemine kadar ertelenir. Çocuğu sağlık özrü nedeniyle özel eğitim veren okula devam etmek zorunda olan personelin, atanacağı bölgede aynı tip okul yoksa bulunduğu yerdeki görev süresi de bir sonraki genel atama dönemine kadar ertelenir.",
+      "articleRefs": [
+        "30"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Farklı bir ildeki birime atanan personel hakkında, bu atamayı takip eden ne kadar süre yeni atama işlemi tesis edilmez?",
+      "back": "Bir yıl süreyle yeni atama işlemi tesis edilmez; 19 uncu madde hükümleri saklıdır.",
+      "articleRefs": [
+        "31"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Çocuklarının üniversite öğrenimi nedeniyle erteleme isteyen personelin en az kaç çocuğu üniversite öğrenimi görüyor olmalıdır?",
+      "back": "En az iki çocuğu; ayrıca çocuğun aktif öğrencilik kaydı bulunmalıdır.",
+      "explanation": "Talep, ikinci bölgeye atama sırası gelen ya da ikinci bölgedeki süresini doldurup birinci bölgeye dönecek personel için Şubat ayı sonuna kadar yapılır.",
+      "articleRefs": [
+        "32"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Çocuğu ortaöğretimde bir üst sınıfa geçecek her personel öğrenim sebebiyle erteleme isteyebilir mi?",
+      "back": "Hayır; erteleme, çocukları ilköğretim, ortaöğretim ve üniversite son sınıfa geçecek olan personel için öngörülür. Çocuğun aktif öğrencilik kaydı da bulunmalıdır.",
+      "explanation": "Aynı maddede personel, eşinin 38 inci maddede belirtilen şartları taşıdığını belgeleyerek de Şubat ayı sonuna kadar erteleme talebinde bulunabilir.",
+      "articleRefs": [
+        "32"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Atama ve yer değiştirme işlemi onaylanıp kesinleştikten sonra yapılan erteleme teklifleri ne olur?",
+      "back": "İşleme konulmaz; personelin bu yoldaki başvuruları da işleme konulmaz.",
+      "articleRefs": [
+        "33",
+        "29"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Kendisinin ya da aile fertlerinin tutum ve davranışları nedeniyle bulunduğu yerde görev yapma niteliğini kaybettiği değerlendirilen personelin yer değişikliğini illerde kim teklif eder?",
+      "back": "Vali; il emniyet müdürünün önerisi üzerine gerekçeleriyle birlikte Bakanlığa teklif eder.",
+      "articleRefs": [
+        "34"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Yetkili amirin teklifiyle yer değişikliği uygun görülen personel başka bölgeye atanabilir mi?",
+      "back": "Hayır; yeri hizmet sürelerine ve yer değiştirme zamanına bakılmaksızın aynı bölge içinde değiştirilir.",
+      "articleRefs": [
+        "34"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Tutuklanıp serbest bırakılan personel yeniden göreve alındığında, illerde aynı kadroda çalışması kimin teklifiyle sakıncalı görülürse başka bir ile atanır?",
+      "back": "Valinin teklifiyle; merkez ve merkeze doğrudan bağlı birimlerde bizzat birim amirlerinin teklifiyle.",
+      "explanation": "Kural, görevden uzaklaştırılanlar ile göz altına alınan, tutuklanan veya mahkum edilip serbest bırakılanlar için geçerlidir. Atamaya yetkili makam, gerekli görürse teklife bağlı kalmaksızın görev yerini re'sen değiştirebilir.",
+      "articleRefs": [
+        "35"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Bir yıllık performans değerlendirme puanı yetersiz bulunan personel, sonraki bir yıllık değerlendirmede de yetersiz bulunursa hangi işleme tabi tutulur?",
+      "back": "Hizmet içi eğitime tabi tutulur.",
+      "explanation": "İlk yetersiz değerlendirmede görev yeri birim içerisinde değiştirilir. Eğitim sonu sınavda başarısız olanlar ile eğitimde başarılı olup eğitimi takip eden ilk değerlendirmede yine yetersiz bulunanlar başka bir birime atanır.",
+      "articleRefs": [
+        "36"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Sağlık sebebiyle yer değiştirme talebinde raporunda “acil” kaydı olmayan personelin yer değişikliği ne zaman yapılır?",
+      "back": "Yönetmelikte belirtilen atama dönemlerinde; “acil” kaydı olanlarınki ise en kısa sürede yapılır.",
+      "explanation": "Rapor, bulunduğu yerde tedavinin yapılamayacağını belgelemeli ve Genel Müdürlük Sosyal Hizmetler ve Sağlık Daire Başkanlığının uygun görüşü alınmalıdır.",
+      "articleRefs": [
+        "37"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Sağlık sebebiyle yer değiştiren personel, kendi bölgesinde rapora uygun il varken diğer bölgedeki bir ile atanabilir mi?",
+      "back": "Hayır; öncelikle aynı bölgede rapora uygun bir il seçilir. Bölgede uygun il yoksa tedavisi bulunan diğer bölgedeki bir ile atanır.",
+      "explanation": "Bu atama, personelin 23 üncü maddede belirtilen ikinci bölgedeki hizmet yükümlülüğünü ortadan kaldırmaz.",
+      "articleRefs": [
+        "37"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Eşinin bulunduğu yere atanmak isteyen personel, eşinin aynı il sınırlarında son üç yıl içinde kaç gün sosyal güvenlik primi ödeyerek halen çalıştığını belgelemelidir?",
+      "back": "720 gün; eşin başvuru tarihi itibarıyla kendi adına veya işverene bağlı olarak halen çalışıyor olması da gerekir.",
+      "explanation": "Atama, hizmet gerekleri bakımından uygun görülmesi hâlinde istek üzerine yapılır. Emniyet Teşkilatında çalışan eşlerden biri de diğerinin bulunduğu yere atanabilir; eşi emniyet mensubu olmayanlar kurumlar arası koordinasyonla eşinin görevli olduğu yere atanabilir.",
+      "articleRefs": [
+        "38"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Eş görevi sebebiyle yer değiştiren personelin ikinci bölgedeki hizmet yükümlülüğü sona erer mi?",
+      "back": "Hayır; bu kapsamdaki yer değiştirmeler 23 üncü maddede belirlenen ikinci bölgedeki hizmet yükümlülüğünü ortadan kaldırmaz.",
+      "articleRefs": [
+        "38"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Çocuğunun ortaöğretime geçiş sınavı sonucuna göre görev ilinde yerleşebileceği okul yoksa, yer değişikliği isteyen personel tercihte hangi sırayı izlemek zorundadır?",
+      "back": "Önce görev yaptığı ilden tercih yapar; o ilde uygun okul yoksa görev yaptığı bölgedeki diğer illeri tercih etmek zorundadır.",
+      "explanation": "Uygun okul, çocuğun aldığı puan, yüzdelik dilimi ve okul türüne göre belirlenir. Bu yer değişikliği ikinci bölgedeki hizmet yükümlülüklerini ortadan kaldırmaz.",
+      "articleRefs": [
+        "40"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Yılda toplamı en çok kaç günü geçmeyen sağlık izinleri bölgedeki hizmet süresinden sayılır?",
+      "back": "30 gün; yıllık izinler, mazeret izinleri ve görev nedeniyle yaralanmada tedavi ve istirahat süreleri de o bölgedeki hizmet süresinden sayılır.",
+      "articleRefs": [
+        "42"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Birinci bölgedeyken ikinci bölgede geçici görevle çalışan personelin bu süresinin ikinci bölge hizmetinden sayılması için kesintisiz en az ne kadar fiilen çalışması gerekir?",
+      "back": "En az üç ay; bu süreler 28 inci maddedeki usule göre ikinci bölgedeki hizmet süresinden sayılır.",
+      "explanation": "O usulde fiilen çalışılan süre, o yer için belirlenen zorunlu hizmet süresine yüzdelik olarak oranlanır.",
+      "articleRefs": [
+        "42",
+        "28"
+      ]
+    }
+  ]
+}

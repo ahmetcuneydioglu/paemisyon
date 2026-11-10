@@ -1,0 +1,268 @@
+{
+  "deck": {
+    "topicId": "3f91916c-8d15-40f4-bb20-5bcca9253c34",
+    "legislationSlug": "2918-sayili-karayollari-trafik-kanunu",
+    "sourceLabel": "AI bilgi kartı — 2918 Sayılı Karayolları Trafik Kanunu md Ek 3, Ek 4, Ek 5, Ek 6, Ek 7, Ek 8, Ek 9, Ek 10, Ek 11, Ek 12, Ek 13, Ek 14, Ek 15, Ek 16, Ek 17, Ek 18, Ek 19, Ek 20",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: resmî madde metni + çıkmış sorular)"
+  },
+  "cards": [
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Karayolları Trafik Kanunundaki fiiller için önceki yıl uygulanan mutlak ceza tutarları her takvim yılı başında hangi oranda artırılır?",
+      "back": "Vergi Usul Kanunu hükümleri uyarınca o yıl için tespit ve ilan olunan yeniden değerleme oranında artırılır.",
+      "explanation": "Artış her takvim yılı başından geçerli olur. Hesaba önceki yılda uygulanan mutlak ceza tutarları esas alınır.",
+      "articleRefs": [
+        "Ek 3"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Tek bir fiil Karayolları Trafik Kanununun idari para cezası gerektiren muhtelif yasaklarını birlikte ihlal ederse her yasak için ayrı ceza verilir mi?",
+      "back": "Hayır. Faile en ağır idari para cezası uygulanır; cezalar toplanmaz.",
+      "explanation": "Kural, fiilin kanunun idari para cezasını gerektiren muhtelif yasaklarını ihlal eder nitelikte olduğu hâli düzenler. Böyle bir durumda faile yalnız en ağır idari para cezası uygulanır.",
+      "articleRefs": [
+        "Ek 3"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Otobüs işleticisi teşebbüsün unvanı, karıştığı ölümlü kazanın sonuçlarıyla birlikte basında ilan edilirse bu ilan ticari itibarın ihlali sayılır mı?",
+      "back": "Hayır. Bu ilan sırrın ifşaı ve ticari itibarın ihlali sayılmaz. Bunun için ilanda kusur oranlarından söz edilmemesi gerekir.",
+      "explanation": "Kural, karayollarında yolcu taşımacılığı yapan otobüs ve benzeri taşıtların karıştığı ölümlü trafik kazaları için konmuştur.",
+      "articleRefs": [
+        "Ek 4"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Aracını ticari amaçla kullanmak üzere tescil ettirmek istiyorsan neye uymak zorundasın?",
+      "back": "Yönetmelikte belirtilen şartlara uymak ve istenen bilgi ve belgeleri sağlamak zorundasın.",
+      "articleRefs": [
+        "Ek 5"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Fahri trafik müfettişliği görevini kim verir?",
+      "back": "Valiler verir.",
+      "explanation": "Bu görev, sürücülerin trafik kurallarına uyup uymadığını denetlemekle sorumlu yetkililere yardımcı olmak üzere verilir. Fahri trafik müfettişleri, İçişleri Bakanlığının belirleyeceği esas ve usullere göre eğitime tabi tutulabilir.",
+      "articleRefs": [
+        "Ek 6"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Fahri trafik müfettişi düzenlediği tutanağı en geç ne kadar sürede bir trafik kuruluşuna teslim etmek zorundadır?",
+      "back": "En geç bir hafta içinde. Tutanağı herhangi bir trafik kuruluşuna teslim eder; tutanak oradan aracın tescilli olduğu trafik kuruluşuna gönderilir.",
+      "explanation": "Müfettiş, Emniyet Genel Müdürlüğünce kendisine verilen tutanağı düzenler. Tutanak, kanunun suç saydığı fiilleri işleyenler hakkında işlem yapılması amacıyla tutulur.",
+      "articleRefs": [
+        "Ek 6"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Görevini kötüye kullandığı tespit edilen fahri trafik müfettişinin belgesi iptal edilir mi?",
+      "back": "Evet. Müfettiş cezalandırılır ve belgesi ayrıca iptal edilir. Yargılaması tabi olduğu esaslara göre yapılır.",
+      "explanation": "Fahri trafik müfettişliği hizmeti fahri ve ücretsizdir. Müfettişlerin yetki ve sorumlulukları, İçişleri Bakanlığınca çıkarılacak yönetmelikte belirlenir.",
+      "articleRefs": [
+        "Ek 6"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Türkiye Sigorta ve Reasürans Şirketleri Birliği elde ettiği bilgileri, trafikten men edilecek araçların tespitinde kullanılmak üzere kimin emrine hazır tutar?",
+      "back": "İçişleri Bakanlığının emrine hazır tutar ya da bilgileri Bakanlığın gerekli gördüğü birimlerine iletir.",
+      "explanation": "Sigorta şirketleri de sigortasını yaptırmamış işletenlerin tespiti için zorunlu mali sorumluluk sigortası poliçeleriyle ilgili olarak İçişleri Bakanlığınca istenilecek bilgileri vermek zorundadır.",
+      "articleRefs": [
+        "Ek 8"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Trafik tutanaklarının tutulmasında uyulacak esas ve usulleri düzenleyen yönetmelik hangi ilkeyi esas alır?",
+      "back": "Tarafların haklarının eşitlik ilkesine uygun şekilde korunmasını esas alır. Yönetmeliği İçişleri Bakanlığı çıkarır.",
+      "articleRefs": [
+        "Ek 9"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Otoyollarda ve Devlet karayollarında yapılacak ve açılacak yapı ve tesislerdeki alkollü içki satışı yasağının istisnaları nelerdir?",
+      "back": "Konaklama yerleri ve belediye mücavir alanları. Bunlar dışındaki yapı ve tesislerde alkollü içki satılmasına izin verilmez.",
+      "articleRefs": [
+        "Ek 12"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Buluntu olduğu için ya da trafikten men edilerek alıkonulan araç, sahibi tarafından ne kadar süre içinde teslim alınmazsa Hazinece satılır?",
+      "back": "Altı ay. Bu süre içinde teslim alınmayan veya aranmayan araçlar Hazinece satılır, bedelleri emanet hesabına alınır.",
+      "explanation": "Satıştan önce, adresi bilinen maliklere tebligat yapılır.",
+      "articleRefs": [
+        "Ek 14"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Hazinece satılan alıkonulmuş aracın satıştan önceki vergi, ceza ve prim borçları kime aittir?",
+      "back": "Satıştan önceki sahibine aittir. Mülkiyet, ilgiliye tüm borç ve yüklerden ari olarak geçer.",
+      "explanation": "Aracın tescil kaydındaki haciz, ihtiyati haciz, rehin gibi şerhler satış sonrasında satış bedeli üzerinde devam eder. Şasi ve motor seri numaralarındaki eksiklikleri, satış işlemini gerçekleştirecek kurum tamamlar.",
+      "articleRefs": [
+        "Ek 14"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Alıkonulan aracın satış bedelinden alacaklar ödendikten sonra kalan bakiye, hak sahiplerince ne kadar süre içinde istenebilir?",
+      "back": "Satış tarihinden itibaren beş yıl içinde. Müracaat hâlinde bakiye nemalarıyla birlikte ödenir; müracaat olmazsa Hazineye irat kaydedilir.",
+      "explanation": "Satış bedelinden sırasıyla şunlar ödenir: muhafaza ve satış giderleri, aracın tanıtımına yarayan numaralara dair giderler ve vergi, resim, harç gibi malın aynından kaynaklanan alacaklar. Kalan tutar alacaklıları karşılarsa dağıtılır. Bakiye muhafaza edilir ve kamu bankalarında nemalandırılır. Kalan tutar alacakları karşılamazsa sıra cetveli yapılmak üzere ilgili kuruma gönderilir.",
+      "articleRefs": [
+        "Ek 14"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Trafik idari para cezası karar tutanaklarının tebliği için Emniyet Genel Müdürlüğü bütçesindeki ödenek yetmezse Hazine ve Maliye Bakanı (Kanun metninde: Maliye Bakanı) en çok ne kadar ödenek ekleyebilir?",
+      "back": "Bir önceki yıl trafik idari para cezaları gelir gerçekleşmesinin yüzde 10'una kadar ödenek ekleyebilir.",
+      "explanation": "Eklenen ödenek münhasıran tebliğ gideri için kullanılır.",
+      "articleRefs": [
+        "Ek 15"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Emniyet Genel Müdürlüğünün trafik ihlali tespitinde kullandığı hangi elektronik sistemler için belediyelere hizmet bedeli ödenir?",
+      "back": "Belediyelerce veya sermayesinin tamamı belediyelere ait şirketlerce kendi bütçe kaynaklarıyla kurulmuş ya da kurulacak sistemler için ödenir.",
+      "explanation": "Bu sistemler, karayollarında can ve mal güvenliğini sağlamak ve düzenli, güvenli trafik akışını temin etmek amacıyla kurulur.",
+      "articleRefs": [
+        "Ek 16"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Belediyenin kendi bütçesiyle kurduğu elektronik sistemlerle tespit edilen ihlallerde, tutanaktaki trafik idari para cezasının yüzde kaçı belediyeye ödenir?",
+      "back": "Yüzde 30. Tutar, izleyen ayın sonuna kadar Emniyet Genel Müdürlüğü bütçesinden ilgili belediyeye sistem kullanımı hizmet bedeli olarak ödenir.",
+      "explanation": "Hesap, aylık dönemler hâlinde yapılan tespitlere dayanılarak düzenlenen trafik idari yaptırım karar tutanakları üzerinden yapılır.",
+      "articleRefs": [
+        "Ek 16"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Hasılat paylaşımı yoluyla kurdurulan elektronik sistemlerde belediyeye ödenen %30 oranı her zaman uygulanır mı?",
+      "back": "Hayır. %30 oranı elektronik sistemlerin yatırım maliyetine ulaşıncaya kadar uygulanır; sonrasında oran %15 olur.",
+      "articleRefs": [
+        "Ek 16"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "İlk defa sürücü belgesi alan kişi ne kadar süre aday sürücü sayılır?",
+      "back": "İki yıl. Süre, belgenin alındığı tarihten itibaren işler.",
+      "explanation": "Belgesi herhangi bir nedenle iptal edilip yeniden sürücü belgesi almaya hak kazananlar da aday sürücü sayılır. Aday sürücü belgesi iptal işlemlerini bu Kanunun 6 ncı maddesinde sayılan görevliler yapar.",
+      "articleRefs": [
+        "Ek 17"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Aday sürücülük süresinde kaç ceza puanının aşılması aday sürücü belgesinin iptalini gerektirir?",
+      "back": "75 ceza puanının aşılması.",
+      "explanation": "Belgesi iptal edilen kişi, yeniden belge alabilmek için sürücü kurslarına devam edip sınavlarda başarılı olarak motorlu taşıt sürücüsü sertifikası almalıdır. Kursta eğitime başlayabilmek için şunlar gerekir: psiko-teknik değerlendirme ve psikiyatri uzmanı muayenesi sonucunda sürücülüğe engel hâl bulunmadığını gösteren belge, bu Kanun kapsamındaki idari para cezalarının tamamının tahsil edilmiş olması ve varsa bekleme ya da geri alma süresinin geçmiş olması.",
+      "articleRefs": [
+        "Ek 17"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Aday sürücülük süresinde hangi promil değerinin üzerinde alkollü araç kullandığı tespit edilen kişinin aday sürücü belgesi iptal edilir?",
+      "back": "0.20 promilin üzerinde. Araç cinsine bakılmaksızın bu tespit belgenin iptal sebebidir.",
+      "explanation": "Bu süre içinde sürücü belgesinin geçici olarak geri alınmasını gerektiren bir ihlal de belgenin iptalini gerektirir. Aynı şekilde 53 üncü maddenin ikinci fıkrası, 74 üncü veya 78 inci maddelerden herhangi birinin üç kez ihlali de iptal sebebidir.",
+      "articleRefs": [
+        "Ek 17"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Emniyet Genel Müdürlüğünce yürütülen araç tescil hizmetlerine ilişkin iş ve işlemler kime devredilebilir?",
+      "back": "Türkiye Noterler Birliği koordinesinde noterliklere devredilebilir; 131 inci madde hükümleri saklıdır.",
+      "explanation": "Devir hâlinde mevzuatta Emniyet birimlerine yapılmış atıflar noterliklere yapılmış sayılır. Araç sicil ve tescil sistemi veri tabanını Türkiye Noterler Birliği tutar. Devir tamamlanıncaya kadar işler, daha önce bu hizmeti yürüten birimlerce sürdürülür.",
+      "articleRefs": [
+        "Ek 18"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Araç sicilleri gizli olduğuna göre mahkemeler bu sicilleri görüp inceleyebilir mi?",
+      "back": "Evet. Mahkemeler gizlilik hükmünün dışındadır. Bunun dışında yalnız yetkili ve sorumlular ile teftiş ve denetim yetkisi olanlar sicilleri inceleyebilir.",
+      "explanation": "Gizlilik, araç sicilleri ile bu sicillerin tutulmasına dayanak olan belgeleri kapsar. Bu bilgileri işleyen görevliler ve araç kayıtlarından faydalanan diğer görevliler de gizliliğe uymak zorundadır.",
+      "articleRefs": [
+        "Ek 18"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Araç tescil işlerinin noterliklere devrine ilişkin hükümler hangi araçlar için uygulanmaz?",
+      "back": "İstihbarat, gizlilik veya güvenlik gerektiren hizmetlerde kullanılan araçlar için uygulanmaz. Bu araçların her türlü tescil işlemi, belge ve plaka verme ile sivil plaka işlemleri devir dışındadır.",
+      "articleRefs": [
+        "Ek 18"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Mevzuatta Karayolu Trafik Güvenliği Kuruluna yapılmış atıflar kime yapılmış sayılır?",
+      "back": "Cumhurbaşkanınca belirlenen kurul veya mercie yapılmış sayılır. Aynı kural Karayolu Güvenliği Yüksek Kuruluna yapılan atıflar için de geçerlidir.",
+      "articleRefs": [
+        "Ek 19"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Karayolları Trafik Kanununun idari yaptırıma bağladığı eylemlerle ilgili hangi paylaşım yasaktır?",
+      "back": "Trafik kural ihlali yapmaya özendiren görüntüleri alenen yaymak ve övmek yasaktır. Yasak; basın, yayın, internet, sosyal ve dijital medya veya diğer elektronik cihazlar yoluyla yapılan paylaşımları kapsar.",
+      "articleRefs": [
+        "Ek 20"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Trafik kural ihlali yapmaya özendiren görüntüleri alenen yayan ve öven kişiye ne kadar idari para cezası verilir?",
+      "back": "25.000 Türk lirası idari para cezası verilir.",
+      "explanation": "Ceza, kanunun idari yaptırıma bağlayarak yasakladığı bir eylemi basın, yayın, internet, sosyal ve dijital medya veya diğer elektronik cihazlar yoluyla paylaşarak özendirenlere uygulanır.",
+      "articleRefs": [
+        "Ek 20"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,290 @@
+{
+  "deck": {
+    "topicId": "c030675a-0fc7-434a-9d39-980eb0456196",
+    "legislationSlug": "6136-sayili-atesli-silahlar-ve-bicaklar-hakkinda-kanun",
+    "sourceLabel": "AI bilgi kartı — 6136 Sayılı Ateşli Silahlar ve Bıçaklar Hakkında Kanun md Ek 1, Ek 2, Ek 3, Ek 4, Ek 5, Ek 6, Ek 7, Ek 8, Ek 9, Ek 10, Ek 11, Ek 12",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: resmî madde metni + çıkmış sorular)"
+  },
+  "cards": [
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Ateşli silah taşınması yasak yerlere silahla giren kişiye, fiili daha ağır cezayı gerektiren başka bir suç oluşturmuyorsa en az ne kadar adlî para cezası verilir?",
+      "back": "En az elli gün adlî para cezası verilir. Ayrıca bu kişinin silah ruhsatı bulundurmaya çevrilir.",
+      "explanation": "Yasak yerlerin başlıcaları şunlardır: duruşmalar, mahkeme salonları, hastanelerin psikiyatri bölümleri, akıl hastaneleri, ceza ve tutukevleri, eğitim ve öğretim kurumları, öğrenci yurtları, spor karşılaşmalarının yapıldığı yerler ve Türkiye Büyük Millet Meclisi ana binaları.",
+      "articleRefs": [
+        "Ek 1"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Yasak yere silahla giren kişiye, adlî para cezasının infaz edildiği ya da düştüğü tarihten itibaren hangi süre geçmeden taşıma ruhsatı verilmez?",
+      "back": "Beş yıl. Bu süre geçmedikçe kişiye taşıma ruhsatı verilmez.",
+      "explanation": "Süre, önödeme ya da mahkûmiyet kararındaki adlî para cezasının infaz edildiği veya düştüğü tarihten başlar. Bu kişinin silah ruhsatı ayrıca bulundurmaya çevrilir.",
+      "articleRefs": [
+        "Ek 1"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Ateşli silah taşınması yasak yerlerde bu Kanuna aykırı olarak silah ya da mermi taşıyan veya bulunduranlar için ilgili kanunlardaki cezalar hangi ölçüde hükmolunur?",
+      "back": "İki katı hükmolunur.",
+      "explanation": "Yasak yerler geniş tutulmuştur. İzinli veya izinsiz yapılan toplantı ve gösteri yürüyüşleri ile kanuna uygun veya kanuna aykırı olarak grev ve lokavt yapılmakta olan iş yerleri de bu yerlere dahildir.",
+      "articleRefs": [
+        "Ek 1"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Turist olarak avcılık yapmak üzere izin alıp gelen yabancı, tüfeğini geçici olarak yurda sokmak için hangi şartları yerine getirir?",
+      "back": "Silahı ve mermilerini gümrük makamlarına beyan eder ve giriş kapısı emniyet makamlarından izin alır.",
+      "explanation": "Aynı kural, Gençlik ve Spor Bakanlığınca tertip olunacak atıcılık yarışmalarına katılmak üzere gelen yabancılar için de geçerlidir. Getirilebilecek miktar yönetmelikte belirtilir.",
+      "articleRefs": [
+        "Ek 4"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Bilimsel araştırma yapmak amacıyla yurda gelen kişi, tüfeğini yurda sokmak için hangi makamdan izin alır?",
+      "back": "İçişleri Bakanlığı Emniyet Genel Müdürlüğünden izin alır. Ayrıca gümrük makamlarına beyan şarttır.",
+      "explanation": "Antlaşmalarla yurda görevli olarak gelen yabancılar da aynı şartlarla yivli veya yivsiz tüfek, aksamı ve mermilerini yurda sokabilir.",
+      "articleRefs": [
+        "Ek 4"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Yurda geçici olarak sokulan silahı pasaportuna kaydedilen yabancının ayrıca taşıma izin vesikası alması gerekir mi?",
+      "back": "Hayır. Pasaporta yapılan kayıt; silah, aksamı ve mermileri için taşıma izin vesikası yerine geçer.",
+      "explanation": "Ülke terk edilirken bu silahlar, aksamı ve sarf edilmeyen mermiler yolcunun beraberinde yurt dışına çıkarılmak zorundadır.",
+      "articleRefs": [
+        "Ek 4"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "6136 sayılı Kanunun md 12 ve 13'üne aykırı eylem askerî amaçlı bir savaş silahına ya da mermisine ilişkinse ceza ne kadar artırılır?",
+      "back": "Bir kat artırılır.",
+      "explanation": "Artırım, md 12 ve 13'e göre hükmedilecek cezalara uygulanır. Savaş silahlarının mermilerine ilişkin eylemler de kapsamdadır.",
+      "articleRefs": [
+        "Ek 5"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Cezası artırılan askerî amaçlı savaş silahlarına hangi örnekler sayılır?",
+      "back": "Top, havan, roketatar, uçaksavar, tanksavar, ağır ve hafif makinalı tüfekler ve benzeri askerî amaçlı savaş silahları.",
+      "articleRefs": [
+        "Ek 5"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Milli İstihbarat Teşkilatının silah ve mermilerinin yurda sokulmasına dair usul ve esasları belirleyen yönetmeliği kim onaylar?",
+      "back": "Cumhurbaşkanı onaylar.",
+      "explanation": "Bu yönetmelik, Teşkilatın demirbaş silahlarını, yedek parça ve mermilerini, ayrıca Teşkilat mensuplarının zati silah ve mermilerini kapsar.",
+      "articleRefs": [
+        "Ek 6"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Milli İstihbarat Teşkilatının silah ve mermilerine ilişkin yönetmelik Resmî Gazete'de yayımlanır mı?",
+      "back": "Hayır. Kanun bu yönetmeliğin Resmî Gazete'de yayımlanmayacağını açıkça hükme bağlar.",
+      "articleRefs": [
+        "Ek 6"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Milli İstihbarat Teşkilatı mensupları yurt dışına gittiklerinde zati silah ve mermilerini kaç defa getirebilir?",
+      "back": "Bir defaya mahsus olmak üzere getirebilir. Bunun için gümrük vergi, resim ve harçlarını ödemeleri gerekir.",
+      "explanation": "Mensuplar zati silahlarını yurt içinden de temin edebilir. Yurda sokma usul ve esasları Cumhurbaşkanınca onaylanan yönetmelikte belirtilir.",
+      "articleRefs": [
+        "Ek 6"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Bulundurma ruhsatlı bir silahın bir yerden başka bir yere nakli için gereken nakil belgesini kim verir?",
+      "back": "Mahallin en büyük mülki amiri verir.",
+      "explanation": "Silahın nakledileceği gün ve güzergâh nakil belgesinde belirtilir.",
+      "articleRefs": [
+        "Ek 7"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Bulundurma ruhsatı hangi yerlerde bulundurmak üzere verilir?",
+      "back": "Mesken ya da iş yerinde bulundurmak üzere verilir; ruhsat bu iki şekilde düzenlenir.",
+      "explanation": "Silah ruhsatı almasında mani hali bulunmayan her Türk vatandaşı, bulundurmak maksadıyla silah satın alabilir.",
+      "articleRefs": [
+        "Ek 7"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Nakil belgesi, bulundurma ruhsatlı silahla atış poligonuna gidip dönmek için de geçerli midir?",
+      "back": "Evet, belge atış poligonlarına gidiş ve dönüş için de geçerlidir. Ancak belgede belirtilen gün ve güzergâh dışında silah mesken veya iş yeri dışına çıkarılamaz.",
+      "articleRefs": [
+        "Ek 7"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Emniyet Genel Müdürlüğünce temin edilen tabanca ve mermiler kime satılır?",
+      "back": "Emniyet hizmetleri sınıfı personeline satılır; görevlerinde kullanmak üzere, bedeli mukabili zati demirbaş silah olarak.",
+      "explanation": "Satılan silahların ayrılma, ihraç ve benzeri sebeplerle geri alınma usul ve esasları ile satış şekil ve şartları yönetmeliklerle belirlenir.",
+      "articleRefs": [
+        "Ek 8"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Ek 8 uyarınca yapılan zati demirbaş silah satışlarından elde edilen tutarlar ne yapılır?",
+      "back": "Bütçeye gelir kaydedilir. Bu kural Türk Lirası ve döviz karşılığı tutarların ikisi için de geçerlidir.",
+      "articleRefs": [
+        "Ek 8"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Zati demirbaş olarak satılan tabancalarla ilgili muameleler harca tabi midir?",
+      "back": "Hayır. Bu silahlarla ilgili muameleler her türlü vergi, resim, harç ve resmî kuruluşlara ait ardiye ücretinden muaftır.",
+      "explanation": "Bu silah ve mermilerin satın alınması için gelecek yıllara sari taahhütlere girişmeye Emniyet Genel Müdürlüğü de yetkilidir.",
+      "articleRefs": [
+        "Ek 8"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Emniyet Genel Müdürlüğünde hangi görevlerden ayrılanlar, Ek 8'deki zati demirbaş silah satışı hükümlerinden yararlanır?",
+      "back": "Emniyet Genel Müdürü, il emniyet müdürü, daire başkanı, genel müdür yardımcısı ve teftiş kurulu başkanı olarak görev yapmış olanlar; istifa, kurumlararası nakil veya emeklilikle ayrılmışlarsa yararlanır.",
+      "explanation": "Bu kişiler Ek 8'deki satış hükümlerinden aynen istifade eder.",
+      "articleRefs": [
+        "Ek 9",
+        "Ek 8"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Ek 9'da sayılan Emniyet Genel Müdürlüğü yöneticileri hangi ayrılış sebepleriyle satış hükümlerinden yararlanır?",
+      "back": "İstifa, kurumlararası nakil veya emeklilik sebebiyle ayrılanlar yararlanır.",
+      "articleRefs": [
+        "Ek 9"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Memuriyetten ihraç edilerek ayrılan bir il emniyet müdürü, Ek 8'deki satış hükümlerinden yararlanabilir mi?",
+      "back": "Hayır. Meslekten çıkarma veya memuriyetten ihraç sebebiyle ayrılanlar bu imkânın dışında tutulmuştur.",
+      "explanation": "Yararlanma yalnız istifa, kurumlararası nakil veya emeklilik sebebiyle ayrılanlara tanınır.",
+      "articleRefs": [
+        "Ek 9"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Demirbaşa kayıtlı ve hâlen personele zimmetli tabancalar kime satılır?",
+      "back": "Zimmetli oldukları personele satılır. Standart dışı olanlar bu satışın dışındadır.",
+      "articleRefs": [
+        "Ek 10"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "6136 Ek 10'a göre personele zimmetli tabancalar dışında kalan standart dışı silahlar kim tarafından ve nerede satılır?",
+      "back": "Emniyet Genel Müdürlüğü satar. Satış, İçişleri Bakanlığınca tespit edilecek esaslar çerçevesinde yurt içinde veya yurt dışında serbest piyasada yapılır.",
+      "articleRefs": [
+        "Ek 10"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Standart dışı silahların satış işlemleri 2886 sayılı Devlet İhale Kanunu hükümlerine tabi midir?",
+      "back": "Hayır. Bu satışlara ait işlemler 2886 sayılı Devlet İhale Kanunu hükümlerine tabi değildir.",
+      "explanation": "Zimmetli tabancaların ve standart dışı silahların satışından elde edilen gelirler bütçeye gelir kaydedilir.",
+      "articleRefs": [
+        "Ek 10"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Özel şahısların tabanca ve tüfek atış poligonu açması kimin iznine tabidir?",
+      "back": "İçişleri Bakanlığının iznine tabidir. Trap-skeet ve atış alanı açmak için de aynı izin aranır.",
+      "explanation": "Bu yerlerde kullanılacak silah ve fişeklere ait hususlar yönetmelikle belirlenir.",
+      "articleRefs": [
+        "Ek 11"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Türkiye Atıcılık ve Avcılık Federasyonuna ait atış poligonları da İçişleri Bakanlığı izni kapsamında mıdır?",
+      "back": "Hayır. İzin şartı özel şahısların açtığı trap-skeet, atış alanı ve poligonlar içindir. Federasyon ile diğer kamu kuruluşlarının poligonları bunun dışında tutulur.",
+      "articleRefs": [
+        "Ek 11"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Terör, kaçakçılık gibi suçlar sebebiyle elkonulan silahların güvenlik birimlerine tahsisini kim talep edebilir?",
+      "back": "Mahallin en büyük mülki amiri talep edebilir. Talebi soruşturma evresinde hâkimden, kovuşturma evresinde mahkemeden yapar.",
+      "explanation": "Eşyanın milli savunma veya iç güvenlik hizmetleriyle doğrudan ilgili olması ve delil olarak saklanmasına gerek bulunmaması gerekir. Kapsam şu suçlardır: terör veya örgüt faaliyeti çerçevesinde işlenen suçlar, 5607 sayılı Kaçakçılıkla Mücadele Kanunu kapsamındaki suçlar, göçmen kaçakçılığı ve uyuşturucu veya uyarıcı madde imal ve ticareti suçları.",
+      "articleRefs": [
+        "Ek 12"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Elkonulan silahın tahsisi için yapılan talep üzerine verilen karar kesin midir?",
+      "back": "Hayır. Talep üzerine verilen kararlara karşı itiraz edilebilir.",
+      "explanation": "Tahsis, Emniyet Genel Müdürlüğü ve Türk Silahlı Kuvvetleri gibi kurumlara yapılabilir.",
+      "articleRefs": [
+        "Ek 12"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Tahsis edilen elkonulmuş eşyanın soruşturma veya kovuşturma sonunda iadesine karar verilirse iadenin konusunu ne oluşturur?",
+      "back": "Eşyanın rayiç değeri oluşturur.",
+      "articleRefs": [
+        "Ek 12"
+      ]
+    }
+  ]
+}

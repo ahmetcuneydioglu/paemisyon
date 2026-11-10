@@ -1,0 +1,284 @@
+{
+  "deck": {
+    "topicId": "c8f4a045-6e4c-4fa6-b3a6-557cd0032d20",
+    "legislationSlug": "6085-sayistay-kanunu",
+    "sourceLabel": "AI bilgi kartı — 6085 Sayıştay Kanunu md 19–37",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: resmî madde metni + çıkmış sorular)"
+  },
+  "cards": [
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Sayıştayın yönetim işlerini yürüten birimler nasıl kurulur?",
+      "back": "Sayıştay Başkanının teklifi ve Sayıştay Genel Kurulunun kararıyla kurulur.",
+      "explanation": "Bu birimlerde 657 sayılı Kanuna tabi yönetim mensupları çalışır. Bunlar o Kanunda yazılı nitelikleri taşımalıdır ve Sayıştay Başkanının onayıyla atanır. Birimlerin görevleri ve ilgililerin sorumlulukları yönetmelikle düzenlenir.",
+      "articleRefs": [
+        "19"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Sayıştayda Başkanlık kimlerden oluşur?",
+      "back": "Sayıştay Başkanı, başkan yardımcıları ve bölüm başkanlarından oluşur.",
+      "explanation": "Denetim ve denetim destek grup başkanlıkları ile yönetim birimleri doğrudan Başkanlığa bağlı olarak görev yapar.",
+      "articleRefs": [
+        "20"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Sayıştay Başkanı, Türkiye Büyük Millet Meclisi Plan ve Bütçe Komisyonunu yılda en az kaç defa bilgilendirir?",
+      "back": "Yılda en az iki defa bilgilendirir. Gerektiğinde diğer ilgili komisyonları da bilgilendirir.",
+      "explanation": "Sayıştay raporları Mecliste görüşülürken Sayıştay Başkanı ya da görevlendireceği başkan yardımcısı hazır bulunur.",
+      "articleRefs": [
+        "21"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Sayıştay Başkanı en çok kaç denetçiyi Başkanlık danışmanı olarak görevlendirebilir?",
+      "back": "En çok beş denetçiyi görevlendirebilir; bunu gerekli gördüğü durumlarda ve ilgililerin muvafakatıyla yapar.",
+      "articleRefs": [
+        "21"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Sayıştay Başkanlığı açık bulunduğunda Başkanlığa kim vekalet eder?",
+      "back": "En kıdemli daire başkanı vekalet eder.",
+      "explanation": "Başkan görevinde bulunamayacağı zaman başkan yardımcılarından birine vekalet verir. Vekil tayin etmemişse ya da vekil görevinde bulunamıyorsa başkan yardımcılarından kıdemli olanı vekalet eder. Kıdemde esas, üyeliğe veya daire başkanlığına seçilmedir.",
+      "articleRefs": [
+        "21"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Sayıştay Başkanı kaç başkan yardımcısı görevlendirir?",
+      "back": "İki başkan yardımcısı görevlendirir: biri denetim, diğeri yönetimle ilgili işler içindir. İkisi de üyeler arasından seçilir.",
+      "explanation": "Başkan yardımcıları daire başkanı statüsündedir.",
+      "articleRefs": [
+        "22"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Denetimle ilgili başkan yardımcısına yardımcı olmak üzere en çok üç bölüm başkanı mı görevlendirilir?",
+      "back": "Hayır; en çok beş bölüm başkanı görevlendirilir. En çok üç sınırı, yönetimle ilgili başkan yardımcısının bölüm başkanları için geçerlidir.",
+      "explanation": "Denetim tarafındaki bölüm başkanları, birinci sınıfa ayrıldıktan sonra en az üç yıl çalışmış meslek mensupları arasından seçilir. Yönetim tarafındakiler ise bir ila dördüncü derecelerdeki meslek mensuplarından seçilir. İki görevlendirme de Sayıştay Başkanının onayıyla yapılır.",
+      "articleRefs": [
+        "22"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Sayıştay daireleri kaç kişiyle toplanır?",
+      "back": "Bir başkan ve dört üyeyle toplanır. Hüküm ve kararlar oy çokluğuyla verilir.",
+      "explanation": "Daireler bir başkan ile altı üyeden kurulur ve her biri birer hesap mahkemesidir.",
+      "articleRefs": [
+        "23"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Yargılamaya esas raporlar dairede görüşülürken sorumlular açıklama yapmak üzere çağrılabilir mi?",
+      "back": "Evet. İlgili grup başkanı, raporu düzenleyen denetçi, sorumlular ve ahizler çağrılabilir.",
+      "explanation": "Denetim raporlarının görüşülmesinde ise ilgili grup başkanı veya raporu düzenleyen denetçi katılarak görüşünü açıklar. İlgili kamu idaresinin üst yöneticisi veya görevlendireceği yardımcısı da açıklama için çağrılabilir.",
+      "articleRefs": [
+        "23"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Daire başkanı izinli ya da özürlü olduğunda daire başkanlığına kim vekalet eder?",
+      "back": "Dairenin en kıdemli üyesi vekalet eder. Kıdemde esas, üyeliğe seçilmedir.",
+      "explanation": "Aynı kural, daire başkanlığının boşalması hâlinde de uygulanır.",
+      "articleRefs": [
+        "23"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Daire başkanları, dairelerine havale edilen yargılamaya esas raporların karara bağlanmasını en geç ne kadar sürede sağlamakla görevlidir?",
+      "back": "En geç altı ay içinde sağlamakla görevlidir. Çalışmaya ara verilme süresi bu süreye dahil değildir.",
+      "explanation": "Daire başkanları bu süre içinde raporlara ilişkin tutanak ve ilamların düzenlenmesini de sağlamakla görevlidir.",
+      "articleRefs": [
+        "24"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Sayıştay Genel Kurulu hangi toplantı yeter sayısıyla toplanır?",
+      "back": "Mevcut üye sayısının en az üçte ikisiyle toplanır ve mevcudun salt çoğunluğuyla karar verir.",
+      "explanation": "Oyların eşitliği hâlinde Sayıştay Başkanının bulunduğu taraf çoğunluğu sağlamış sayılır. Başkan katılamazsa Kurula katılan başkan yardımcılarından kıdemli olanı başkanlık eder.",
+      "articleRefs": [
+        "25"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Başsavcı, Sayıştay Genel Kurulu toplantılarında oy kullanabilir mi?",
+      "back": "Hayır. Başsavcı, oy hakkı olmamak üzere Genel Kurul toplantılarına katılır ve görüşünü açıklar.",
+      "explanation": "Genel Kurul, Sayıştay Başkanının başkanlığında başkan yardımcıları, daire başkanları ve üyelerden oluşur.",
+      "articleRefs": [
+        "25"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Sayıştayda içtihadın birleştirilmesi kararını hangi kurul alır?",
+      "back": "Genel Kurul alır.",
+      "explanation": "Genel Kurul ayrıca genel uygunluk bildirimlerini görüşür. Bu Kanun gereğince hazırlanacak yönetmelikler ve Sayıştaya ilişkin kanun teklifleri hakkında da görüş bildirir.",
+      "articleRefs": [
+        "25"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Temyiz Kurulu üyeleri kaç yıl için seçilir?",
+      "back": "Dört yıl için seçilir. Genel Kurul dört daire başkanı ve her daireden ikişer üye seçer.",
+      "explanation": "Seçim, Rapor Değerlendirme Kuruluna seçilenler dışında kalan daire başkanları ve üyeler arasından yapılır. Her yıl Kurul üyelerinin dörtte biri yenilenir. Kurula en kıdemli daire başkanı başkanlık eder.",
+      "articleRefs": [
+        "26"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Temyiz Kurulu üyeliği sona eren biri, aradan bir yıl geçince yeniden seçilebilir mi?",
+      "back": "Hayır. Üyeliği sona erenler dört yıl geçmeden tekrar seçilemez.",
+      "explanation": "Seçimi Sayıştay Genel Kurulu yapar. Her yıl Kurul üyelerinin dörtte biri yenilenir.",
+      "articleRefs": [
+        "26"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Sayıştay dairelerince verilen ilamların son hüküm mercii neresidir?",
+      "back": "Temyiz Kurulu.",
+      "explanation": "Temyiz Kurulu, üye tamsayısının en az üçte ikisiyle toplanır ve mevcudun salt çoğunluğuyla karar verir. Kararı temyiz edilen daire başkan ve üyelerinin oy hakkı yoktur.",
+      "articleRefs": [
+        "26"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Genel yönetim kapsamındaki kamu idarelerinin mali konulardaki yönetmelikleri için Sayıştay görüşünü en geç kaç günde bildirir?",
+      "back": "İstem tarihinden itibaren en geç otuz gün içinde bildirir. Çalışmaya ara verilme süresi bu süreye dahil değildir.",
+      "explanation": "Bu yönetmelikler ve yönetmelik niteliğindeki düzenleyici işlemler, Sayıştayın istişari görüşü alınarak yürürlüğe konulur; görüşü Daireler Kurulu bildirir. Süre aşılırsa bu durum Sayıştay faaliyet raporunda gerekçeli olarak yer alır.",
+      "articleRefs": [
+        "27"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Sayıştay Başkanı katılamadığında Rapor Değerlendirme Kuruluna kim başkanlık eder?",
+      "back": "Denetimden sorumlu başkan yardımcısı başkanlık eder. Kurulun asıl başkanı Sayıştay Başkanıdır.",
+      "explanation": "Kurul; Genel Kurulca iki yıl için seçilen iki daire başkanı, her daireden birer üye ve denetimden sorumlu başkan yardımcısından oluşur. Sayıştay raporları ile Sayıştay Başkanının incelenmesini istediği konular hakkında görüş bildirir.",
+      "articleRefs": [
+        "28"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Yüksek Disiplin Kurulu, disiplin cezası verilmesine ilişkin kararları hangi çoğunlukla verir?",
+      "back": "Üçte iki çoğunlukla verir. Kurul üye tamsayısıyla toplanır.",
+      "explanation": "Kurul, her takvim yılı için Genel Kurulca seçilen beş daire başkanı ve her daireden birer üyeyle kurulur. Disiplin soruşturması yapılmasına ilişkin kararlar da üçte iki çoğunlukla verilir. Hakkında isnatta bulunulan Kurul üyeleri Kurula katılamaz.",
+      "articleRefs": [
+        "29"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Sayıştay Başkanı, daire başkanı ve üyeler dışındaki meslek mensuplarının yükseltme işlerini hangi kurul yürütür?",
+      "back": "Meslek Mensupları Yükseltme ve Disiplin Kurulu yürütür.",
+      "explanation": "Bu Kurul, aynı meslek mensuplarının disiplin soruşturmalarını ve ceza kovuşturmalarını da yürütür. Üye tamsayısıyla toplanır, oy çokluğuyla karar verir ve Kurula daire başkanı başkanlık eder. Kurul üyeleri, şahıslarını ilgilendiren konuların görüşüldüğü toplantılara katılamaz.",
+      "articleRefs": [
+        "30"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Sayıştayda Kurum stratejik planını ve yıllık performans programını hangi kurul hazırlar?",
+      "back": "Denetim, Planlama ve Koordinasyon Kurulu hazırlar.",
+      "explanation": "Kurul; Sayıştay Başkanı, başkan yardımcıları ve bölüm başkanlarından oluşur. Denetim stratejik planlarını ve yıllık denetim programlarını risk analizleri doğrultusunda hazırlar. Sayıştay faaliyet raporunu da hazırlar ve mesleki etik kurallarını belirler.",
+      "articleRefs": [
+        "31"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Sayıştayda denetim grup başkanlıkları kimin onayıyla kurulur?",
+      "back": "Sayıştay Başkanının onayıyla kurulur. Kuruluş, denetim alanındaki bütün kamu idarelerinin sektör ve faaliyet bütünlüğünü kapsayacak şekilde yapılır.",
+      "explanation": "Kuruluş ayrıca kalkınma planlarını, yıllık programları ve stratejik planları izlemeye imkân vermelidir. Gerek görülen illerde ise denetim grup başkanlıkları, Sayıştay Başkanının teklifi ve Sayıştay Genel Kurulunun kararıyla kurulabilir.",
+      "articleRefs": [
+        "32"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Sayıştayca belirtilen süreler içinde verilmeyen hesapları kim takip eder?",
+      "back": "Başsavcı takip eder. Hesabı ve istenen bilgi ve belgeleri vermeyen sorumlular hakkında bu Kanunda belirtilen işlemleri de yapar.",
+      "explanation": "Başsavcı ayrıca ilamların infazını ve hakkında suç duyurusunda bulunulan sorumluların durumlarını izler. Savcı ise oy hakkı bulunmamak üzere hesap yargılamasına katılır ve görüşünü açıklar.",
+      "articleRefs": [
+        "33"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 1,
+      "front": "Sayıştay yerindelik denetimi yapabilir mi?",
+      "back": "Hayır. Sayıştay tarafından yerindelik denetimi yapılamaz; idarenin takdir yetkisini sınırlayacak ya da ortadan kaldıracak karar da alınamaz.",
+      "explanation": "Denetim; kamu idarelerinin hesap, mali işlem ve faaliyetleri ile iç kontrol sistemlerinin incelenmesidir. Kaynakların etkili, ekonomik, verimli ve hukuka uygun kullanılıp kullanılmadığı da değerlendirilir.",
+      "articleRefs": [
+        "35"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Taslak denetim raporlarını Başkanlığa sunulmadan önce değerlendiren rapor değerlendirme komisyonları kaç uzman denetçiden oluşur?",
+      "back": "Üç uzman denetçiden oluşur.",
+      "explanation": "Düzenlilik ve performans denetimleri sonucunda düzenlenen taslak raporlar, denetim grup başkanlıklarınca Başkanlığa sunulmadan önce bu komisyonlara gider. Komisyonlar raporları ilgili mevzuata ve yetkilendirilmiş kamu idarelerinin düzenleme ve görüşlerine uygunluk yönünden değerlendirir. Komisyonların teşekkülü ve çalışma usulleri yönetmelikle düzenlenir.",
+      "articleRefs": [
+        "35"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Sayıştay denetim süreci hangi aşamayla tamamlanır?",
+      "back": "Raporların izlenmesi aşamasıyla tamamlanır.",
+      "explanation": "Süreç şu aşamalardan oluşur: denetimin planlanması; denetim programının hazırlanması ve uygulanması; sonuçların ve tavsiyelerin raporlanması; raporların Türkiye Büyük Millet Meclisine sunulması ve ilgili kamu idaresine gönderilmesi; raporların izlenmesi.",
+      "articleRefs": [
+        "37"
+      ]
+    }
+  ]
+}

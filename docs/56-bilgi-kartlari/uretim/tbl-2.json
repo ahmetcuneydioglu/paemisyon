@@ -1,0 +1,272 @@
+{
+  "deck": {
+    "topicId": "fc664c8f-e47b-4601-a661-9b6c5bd06e97",
+    "legislationSlug": "7201-sayili-tebligat-kanunu",
+    "sourceLabel": "AI bilgi kartı — 7201 Sayılı Tebligat Kanunu md 26, 26/A, 27–41, 43, 45, 47–56, 58–64, Ek 1, Ek 2",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: resmî madde metni + çıkmış sorular)"
+  },
+  "cards": [
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Yabancı bir devletin elçiliğinden Dışişleri Bakanlığına tevdi edilen tebliğ evrakı, tebliğ muamelesi yapıldıktan sonra nasıl iade edilir?",
+      "back": "Tasdikli olarak ve geldiği yollardan iade edilir.",
+      "explanation": "Evrak, ilgili vekalet kanalıyla salahiyetli mercie gönderilir. Tebliğ muamelesi yapıldıktan sonra tasdikli olarak aynı yollardan geri döner. Anlaşmalar hükümleri ve mütekabiliyet esasları saklıdır.",
+      "articleRefs": [
+        "26"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Kuzey Kıbrıs Türk Cumhuriyeti'nde konuşlu askerî birlik, karargâh ve kurumlardan Türkiye'deki kişi veya kurumlara yapılacak tebligat kim vasıtasıyla yapılır?",
+      "back": "Posta ve Telgraf Teşkilatı Anonim Şirketinin istihdam ettiği ya da hizmet alımı suretiyle çalıştırdığı personel veya memur vasıtasıyla yapılır.",
+      "explanation": "Bu tebligatlar Tebligat Kanunu hükümlerine göre yapılır.",
+      "articleRefs": [
+        "26/A"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Yabancı bir memlekette resmî bir vazifeyle bulunan Türk memuruna tebligat hangi bakanlık vasıtasıyla yapılır?",
+      "back": "Dışişleri Bakanlığı vasıtasıyla yapılır.",
+      "articleRefs": [
+        "27"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Adresi meçhul görünen muhatabın adresini tebliği çıkaran merci kime tahkik ve tespit ettirir?",
+      "back": "Zabıtaya tahkik ve tespit ettirir. Merci ayrıca gerekli gördüğü resmî veya hususi müessese ve dairelere de sorar.",
+      "articleRefs": [
+        "28"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Muhatabın adresinin meçhul olduğu, tebliğ memuru tarafından nasıl tespit edilir?",
+      "back": "Durum, mahalle veya köy muhtarına şerh verdirilmek suretiyle tespit edilir.",
+      "explanation": "Kanundaki usullerle tebligat yapılamayan ve ikametgâhı, meskeni veya iş yeri de bulunamayan kimsenin adresi meçhul sayılır. Adresi meçhul olana tebligat ilanen yapılır.",
+      "articleRefs": [
+        "28"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "İlanen tebliğde, tebliğ olunacak evrak ve ilan sureti ayrıca nereye asılır?",
+      "back": "Tebliği çıkaran merciin, herkesin kolayca görebileceği bir yerine asılır.",
+      "explanation": "İlan suretiyle tebliğ, tebliği çıkartacak merciin mucip sebep beyanıyla vereceği karar üzerine yapılır.",
+      "articleRefs": [
+        "29"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "İlanen tebliğde ikinci ilana karar verilirse, iki ilan arasındaki süre en az ne kadar olmalıdır?",
+      "back": "En az bir hafta olmalıdır. İki ilan arasındaki müddet bir haftadan aşağı olamaz.",
+      "explanation": "İkinci ilana merci, icabına göre karar verir. Gerekiyorsa ikinci ilan yabancı memleket gazeteleriyle de yaptırılabilir.",
+      "articleRefs": [
+        "29"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "İlan bir davet içeriyorsa, ilanda ayrıca neler yazılmalıdır?",
+      "back": "Nerede ve ne için, hangi gün ve saatte hazır bulunulacağı yazılmalıdır.",
+      "explanation": "İlanda yazılması gerekenlerin bazıları şunlardır: alakalıların ad ve soyadları, işleri, ikametgâh, mesken ya da iş yerleri, evrak muhteviyatının hulasası, tebliğin mevzuu ve sebebi, ilanın hangi merciden verildiği.",
+      "articleRefs": [
+        "30"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "İlanen tebliğ, son ilan tarihinden itibaren kaç gün sonra yapılmış sayılır?",
+      "back": "Yedi gün sonra yapılmış sayılır.",
+      "explanation": "İlanen tebliğe karar veren merci, icabına göre daha uzun bir müddet tayin edebilir. Ancak bu süre 15 günü geçemez.",
+      "articleRefs": [
+        "31"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "İlanen tebliğe karar veren merci, tebliğin yapılmış sayılacağı süreyi 15 günden uzun belirleyebilir mi?",
+      "back": "Hayır. Merci icabına göre yedi günden daha uzun bir süre tayin edebilir, ancak bu süre 15 günü geçemez.",
+      "explanation": "Süre son ilan tarihinden itibaren işler. Kural olarak ilanen tebliğ yedi gün sonra yapılmış sayılır.",
+      "articleRefs": [
+        "31"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Usulüne aykırı yapılan bir tebliğe muhatap muttali olmuşsa, tebliğ tarihi hangi tarih sayılır?",
+      "back": "Muhatabın beyan ettiği tarih, tebliğ tarihi sayılır.",
+      "explanation": "Tebliğ usulüne aykırı yapılmış olsa bile, muhatap tebliğe muttali olmuşsa muteber sayılır.",
+      "articleRefs": [
+        "32"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 1,
+      "front": "Adli tatil günlerinde tebligat yapılabilir mi?",
+      "back": "Evet. Resmî ve adli tatil günlerinde de tebligat caizdir.",
+      "articleRefs": [
+        "33"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Adresini değiştirip yenisini bildirmeyen ve adres kayıt sisteminde yerleşim yeri adresi de tespit edilemeyen kişiye tebliğ nasıl yapılır?",
+      "back": "Tebliğ evrakının bir nüshası eski adrese ait binanın kapısına asılır. Asılma tarihi tebliğ tarihi sayılır.",
+      "explanation": "Kendisine kanuni usulle tebliğ yapılmış kişi, adresini değiştirirse yenisini hemen tebliği yaptırmış olan kaza merciine bildirmeye mecburdur. Bildirmezse bundan sonra eski adrese çıkarılan tebliğler muhataba yapılmış sayılır.",
+      "articleRefs": [
+        "35"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Daha önce tebligat yapılmamış olsa bile, tüzel kişiler için adres değişikliği hükümleri hangi adres esas alınarak uygulanır?",
+      "back": "Tüzel kişilerin resmî kayıtlardaki adresleri esas alınır.",
+      "articleRefs": [
+        "35"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Yurt dışı adresini değiştirip bildirmeyen Türk vatandaşının eski adresine Büyükelçilik veya Konsolosluk bildirim gönderir. Bu durumda tebligat ne zaman yapılmış sayılır?",
+      "back": "Bildirimin adrese ulaştığının belgelendiği tarihten itibaren otuz gün sonra yapılmış sayılır.",
+      "explanation": "Bunun için üç şart birlikte aranır: kişiye daha önce yurt dışındaki adresine tebligat yapılmış olmalı, kişi yeni adresini tebliğ çıkaran mercie bildirmemiş olmalı ve adres kayıt sisteminden yerleşim yeri adresi tespit edilememiş olmalıdır.",
+      "articleRefs": [
+        "35"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Kalemde imza karşılığında ve tebliğ konusu belirtilerek tevdi edilen evrak için ayrıca tebliğ mazbatası düzenlenir mi?",
+      "back": "Hayır. Bu tevdi tebliğ hükmündedir. Ayrıca tebliğ mazbatası gerekmez ve masraf da alınmaz.",
+      "explanation": "Celse esnasında veya kalemde evrakın taraflara, ilgili üçüncü kişilere, katılana veya vekillerine tutanağa geçirilerek ya da imza karşılığında tevdii aynı sonucu doğurur.",
+      "articleRefs": [
+        "36"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Celse esnasında kazai merci tarafından sıfatları tespit edilen avukat kâtiplerine sonraki celse gün ve saatinin bildirilmesi hangi sonucu doğurur?",
+      "back": "Bu bildirim avukata tebliğ hükmündedir.",
+      "explanation": "Aynı kural, sıfatları celse esnasında tespit edilen stajyerler için de geçerlidir.",
+      "articleRefs": [
+        "37"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Davada hasım olarak alakası bulunan bir kişiye muhatap namına tebliğ yapılabilir mi?",
+      "back": "Hayır. Normalde kendisine tebliğ yapılması caiz olan kimse, o davada hasım olarak alakalıysa ona muhatap namına tebliğ yapılamaz.",
+      "articleRefs": [
+        "39"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Cumhuriyet Başsavcılığına yapılan tebliğ bir mehile başlangıç olacaksa, Cumhuriyet Müddeiumumisi ne yapar?",
+      "back": "Varakanın kendisine gösterildiği günü, varakanın aslına işaret eder ve imzalar.",
+      "explanation": "Cumhuriyet Başsavcılığına tebligat, tebliğ olunacak varaka aslının kendisine gösterilmesiyle olur.",
+      "articleRefs": [
+        "43"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Yalnız evrakı tebellüğ için birden ziyade şahıs tarafından tevkil olunan kimseye tebliğ evrakının bir nüshası mı verilir?",
+      "back": "Hayır. Ona temsil ettiği şahısların adedi kadar nüsha verilir. Tek nüsha kuralı, birden ziyade şahsı temsil eden diğer kimseler için geçerlidir.",
+      "articleRefs": [
+        "47"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Tebligat yapılması gereken hâllerde kendisine veya başkasına ait isim ya da adresi yanlış bildiren kişiye hangi ceza verilir?",
+      "back": "Altı aydan iki yıla kadar hapis cezası verilir.",
+      "articleRefs": [
+        "53"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Muhatap namına tebligat yapılan kişi evrakı muhataba en kısa zamanda vermezse ve bundan gecikme ya da zarar doğarsa hangi ceza verilir?",
+      "back": "Bir yıla kadar hapis cezası verilir.",
+      "explanation": "Aynı ceza iki kişiye daha uygulanır: kendisine yapılması gereken tebligatı almayan muhatap ve muhatap adına tebligatı kabule mecbur olup da kabul etmeyen kişi.",
+      "articleRefs": [
+        "54"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Muhatap olmadığı hâlde hüviyet ve sıfatı hakkında yalan beyanda bulunarak tebliğ evrakını alan kişinin fiili gecikme veya zarar doğurursa, ayrıca hangi ceza verilir?",
+      "back": "Ayrıca bir yıldan beş yıla kadar hapis cezası verilir.",
+      "explanation": "Daha ağır bir cezayı gerektirmediği takdirde fiilin kendisi bir yıla kadar hapisle cezalandırılır. Tebliğ memuruna kendisi ya da muhatap hakkında yalan beyanda bulunma hâllerinde gecikme veya zarar doğarsa, ayrıca üç aydan bir yıla kadar hapis cezası verilir.",
+      "articleRefs": [
+        "55"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Tebliğ evrakının talikine karşı koyan ya da talik edilen evrakı bulunduğu yerden koparan kişiye hangi adli para cezası verilir?",
+      "back": "Yirmibeş günden yüzelli güne kadar adlî para cezası verilir. Buna ek olarak üç aydan bir yıla kadar hapis cezası da verilir.",
+      "explanation": "Aynı cezalar, ihbarnamenin talikine karşı koyanlara ve talik edilen evrakı imha eden veya okunamaz hâle getirenlere de uygulanır.",
+      "articleRefs": [
+        "56"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 1,
+      "front": "Tebligat Kanununun uygulanmasına ilişkin usul ve esasları belirleyen yönetmeliği İçişleri Bakanlığı mı çıkarır?",
+      "back": "Hayır. Yönetmeliği Adalet Bakanlığı çıkarır. İçişleri Bakanlığının yalnızca görüşü alınır.",
+      "articleRefs": [
+        "60"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Kat Mülkiyeti Kanununun uygulandığı hâllerde, ortak taşınmazda oturmayan bağımsız bölüm sahibi Türkiye'deki bir adresini kime bildirmek zorundadır?",
+      "back": "Yöneticiye, yazılı olarak bildirmek zorundadır.",
+      "explanation": "Bu adres, apartman yönetimi ve ortak giderlerle ilgili tebligat için geçerlidir. Adres bildirilmez ya da bildirilen adrese tebligat yapılamazsa, sonraki bütün tebligatlar bağımsız bölümde fiilen oturana yapılır. Tebligatın bir örneği de apartman girişindeki ilan tahtasına asılır.",
+      "articleRefs": [
+        "Ek 1"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Bir kişi için elektronik tebligat zorunluluğu doğduğunda ya da kalktığında, ilgili kurum, kuruluş veya birlik gerekli bildirimi hangi süre içinde yapar?",
+      "back": "Bir ay içinde yapar. Posta ve Telgraf Teşkilatı Anonim Şirketi de bildirimi takip eden bir ay içinde gerekli işlemi yapar.",
+      "explanation": "Elektronik tebligat adresini Posta ve Telgraf Teşkilatı Anonim Şirketi oluşturur. Gerçek kişi için kimlik numarası, tüzel kişi için tabi olduğu sistem numarası esas alınır ve her biri için sadece bir tane adres oluşturulur.",
+      "articleRefs": [
+        "Ek 2"
+      ]
+    }
+  ]
+}

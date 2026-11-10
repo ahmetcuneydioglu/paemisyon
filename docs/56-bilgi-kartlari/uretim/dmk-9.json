@@ -1,0 +1,272 @@
+{
+  "deck": {
+    "topicId": "8b68257c-bd1e-4a44-bb49-830ee4d8e4c9",
+    "legislationSlug": "657-sayili-devlet-memurlari-kanunu",
+    "sourceLabel": "AI bilgi kartı — 657 Sayılı Devlet Memurları Kanunu md 177–189, 191–193, 199–206, 208, 210–212, 214–225",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: resmî madde metni + çıkmış sorular)"
+  },
+  "cards": [
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Sözleşmeli olarak çalıştırılanların yol masrafları ve gündelikleri neye göre ödenir?",
+      "back": "Sözleşmelerindeki şartlara göre ödenir.",
+      "explanation": "Bir görevin ifası için sürekli ya da geçici olarak görev yerinden ayrılan Devlet memurlarının yol giderleri ve gündelikleri ise yolluklar hakkındaki özel kanun hükümlerine göre ödenir.",
+      "articleRefs": [
+        "177"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Günlük çalışma saatleri dışında yapılan fazla çalışma hangi hallerde ücretle karşılanır?",
+      "back": "Salgın hastalık ve tabii afetler gibi olağanüstü hallerde (bu haller sürdükçe) ve İş Kanununa tabi işçi çalıştıran kurumlarda, hizmetin gereği olarak işçiyle birlikte çalışma saatleri ve günü dışında çalışmak zorunlu olduğunda.",
+      "explanation": "Ücretli fazla çalışma bu hallere münhasırdır. Bu hallerde yaptırılacak fazla çalışmanın süresi ve saat başına ödenecek ücret Cumhurbaşkanı kararı ile belirlenir.",
+      "articleRefs": [
+        "178"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Millî İstihbarat Teşkilatı mensuplarına ödenecek fazla çalışma ücretleri nasıl tespit edilir?",
+      "back": "Cumhurbaşkanı tarafından onaylanacak bir talimatla tespit edilir.",
+      "explanation": "Fazla çalışma ücretleriyle birlikte bu personele ilişkin diğer hususlar da aynı talimatla belirlenir.",
+      "articleRefs": [
+        "178"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Ücret verilmeden yaptırılan fazla çalışma karşılığındaki iznin tamamı yıllık izinle birleştirilebilir mi?",
+      "back": "Hayır. Bu iznin en çok on günlük kısmı yıllık izinle birleştirilip yılı içinde kullandırılabilir.",
+      "explanation": "Kurumlar gerektiğinde personelini günlük çalışma saatleri dışında fazla çalışma ücreti vermeksizin çalıştırabilir; bu durumda fazla çalışmanın her sekiz saati için bir gün hesabıyla izin verilir.",
+      "articleRefs": [
+        "178"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Sürekli görevle yurt dışında görev yapan memur, göreve başladıktan sonra başka bir göreve atanırsa aylığı ne zamana kadar 156 ncı maddedeki esaslara göre ödenir?",
+      "back": "Atanma emrinin tebliği tarihini izleyen onbeşinci gün sonuna kadar.",
+      "explanation": "Sürekli görevle yurt dışına atanan memurların aylıkları ise görevlerine başladıkları tarihten itibaren bu esaslara göre ödenir.",
+      "articleRefs": [
+        "180"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Sürekli görevle yurt dışına atanan memur yurt içinde yataklı tedavi kurumunda yatarak tedavi görürse yurt dışı aylığı hangi sınırla ödenir?",
+      "back": "Yurt dışı görev süresince toplam dört ayı geçmemek üzere, emsal katsayının 1/3'ü esas alınarak ödenir.",
+      "explanation": "Kural olarak yıllık izin ile 181 inci maddede belirtilen hal dışında yurt içinde geçirilen süreler için yurt dışı aylığı ödenmez; yatarak görülen tedavi süresi bunun istisnasıdır.",
+      "articleRefs": [
+        "180"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Sürekli görevle yurt dışına gönderilen memur geçici görevle merkeze en çok ne kadar süre çağrılabilir?",
+      "back": "En çok bir ay; bu süre içinde aylığı katsayılı ödenir.",
+      "articleRefs": [
+        "181"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Devlet memurunun ölümü halinde dul ve yetimlerinin sahip olduğu haklar hangi kanunlarla düzenlenir?",
+      "back": "Emeklilik kanunlarıyla düzenlenir.",
+      "explanation": "Memurun emeklilik ve malûllük hallerinde kendisinin sahip olduğu haklar da emeklilik kanunlarıyla düzenlenir.",
+      "articleRefs": [
+        "187"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Mahrumiyet yerinde çalışan memurun yatılı okulda okuttuğu çocuğu için pansiyon ücret indirimi ne orandadır?",
+      "back": "Her yıl bütçe kanunuyla tespit olunan pansiyon ücretlerinden en azının, çocukların her biri için % 50'si oranında.",
+      "explanation": "İndirim, görev yerinde çocuğun girmesi gereken orta dereceli okul bulunmadığında uygulanır; fark Devlet bütçesinden ödenir. Daha yüksek ücretli okul pansiyonu ya da Milli Eğitim Bakanlığının denetimindeki özel pansiyon seçilirse aradaki ücret farkını memur öder.",
+      "articleRefs": [
+        "199"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Pansiyon ücret indiriminden yararlanan memurun çocuğu sınıfta kalırsa ne olur?",
+      "back": "Aynı sınıf için ikinci sene bu indirimden faydalanamaz.",
+      "articleRefs": [
+        "200"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Memurun menfaat karşılığı çalışmayan veya herhangi bir sosyal güvenlik kuruluşundan aylık almayan eşi için aile yardımı ödeneği hangi gösterge rakamı üzerinden hesaplanır?",
+      "back": "1500 gösterge rakamının aylık katsayısı ile çarpılmasıyla bulunan miktar üzerinden.",
+      "explanation": "Çocukların her biri için esas alınan gösterge rakamı ise 250'dir.",
+      "articleRefs": [
+        "202"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Karı ve kocanın ikisi de memursa aile yardımı ödeneği her ikisine de verilir mi?",
+      "back": "Hayır. Bu durumda ödenek yalnız kocaya verilir.",
+      "explanation": "Aile yardımı ödeneği her ay aylıkla birlikte ödenir; hiçbir vergi ve kesintiye tabi tutulmaz ve borç için haczedilemez.",
+      "articleRefs": [
+        "203"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Memur, çocuğu için ödenen aile yardımı ödeneğine ne zamandan itibaren hak kazanır?",
+      "back": "Çocuğun doğduğu tarihi takip eden ay başından itibaren.",
+      "explanation": "Eş için ödenen aile yardımı ödeneğine de evlendiği tarihi takip eden ay başından itibaren hak kazanılır.",
+      "articleRefs": [
+        "204"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Hangi hallerde çocuk için aile yardımı ödeneği verilmez?",
+      "back": "Çocuk evlenirse, 25 yaşını doldurursa (evlenmemiş kız çocukları ile çalışamayacak derecede malul olanlar hariç), kendi hesabına ticaret yapar ya da menfaat karşılığı çalışırsa, burs alırsa veya Devletçe okutulursa.",
+      "explanation": "Öğrenim yapmakta iken tatil devresinde çalışan çocuklar, çalışma sebebiyle ödenekten yoksun kalmaz.",
+      "articleRefs": [
+        "206"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "25 yaşını bitirmiş, evlenmemiş kız çocuğu için aile yardımı ödeneği verilmeye devam eder mi?",
+      "back": "Evet; süresiz olarak verilmeye devam olunur. Çocuk evlenirse ödenek verilmez.",
+      "explanation": "25 yaşını dolduran çocuklar için kural olarak ödenek verilmez; evlenmemiş kız çocukları ile çalışamayacak derecede malûllüğü resmi sağlık kurulu raporuyla tespit edilenler bu kuralın istisnasıdır.",
+      "articleRefs": [
+        "206"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Memur olmayan eşi ölen Devlet memuruna ne tutarda ölüm yardımı ödeneği verilir?",
+      "back": "En yüksek Devlet memuru aylığı (ek gösterge dahil) tutarında.",
+      "explanation": "Aile yardımı ödeneğine müstehak çocuğu ölen memura da aynı tutar ödenir. Ödenek hiçbir vergi ve kesintiye tabi tutulmaksızın, ödeme emri aranmaksızın saymanlarca derhal ödenir ve borç için haczedilemez.",
+      "articleRefs": [
+        "208"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Memurun kendi ölümünde ödenen ölüm yardımı en yüksek Devlet memuru aylığı tutarında mıdır?",
+      "back": "Hayır. Memurun ölümünde en yüksek Devlet memuru aylığının (ek gösterge dahil) iki katı ödenir; aylık tutarı, memur olmayan eşin ya da ödeneğe müstehak çocuğun ölümü içindir.",
+      "explanation": "Yurt dışında sürekli görevde bulunan memurlara verilecek ölüm yardımı ödeneğinde 156 ncı maddede yazılı katsayı uygulanmaz.",
+      "articleRefs": [
+        "208"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Ölen memur sağlığında bildiri vermemişse ölüm yardımı ödeneği kime verilir?",
+      "back": "Eşine ve çocuklarına; bunlar yoksa ana ve babasına, bunlar da yoksa kardeşlerine.",
+      "explanation": "Memur sağlığında bildiri vermişse ödenek, bildiri ile gösterdiği kimseye verilir.",
+      "articleRefs": [
+        "208"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Bir kurumda birden çok eğitim birimi kurulursa bunlardan biri hangi adı alır?",
+      "back": "\"Merkez Eğitim Birimi\" adını alır.",
+      "explanation": "Her kurumda yetiştirme faaliyetlerini düzenlemek, yürütmek ve değerlendirmekle görevli bir eğitim birimi kurulur.",
+      "articleRefs": [
+        "215"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Kurumlar belirli sınıflardaki memurluklara eleman yetiştirmek için hangi yollara başvurabilir?",
+      "back": "Kendi bünyelerinde mesleki öğretim ve eğitim yapabilir; yurt içindeki öğrenim kurumlarında ve dış memleketlerde öğrenci okutup ihtisas yaptırabilirler.",
+      "articleRefs": [
+        "221"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Kurumlarca yurt içinde veya yurt dışında okutulacak öğrenciler nasıl seçilir?",
+      "back": "Yarışma sınavı ile seçilirler.",
+      "articleRefs": [
+        "222"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Yurt dışındaki öğretim kurumlarında Devlet hesabına öğrenimini bitiren öğrencinin mecburi hizmeti öğrenim süresi kadar mıdır?",
+      "back": "Hayır. Yurt dışında Devlet hesabına öğrenimini bitiren öğrencinin yükümlülüğü öğrenim süresinin (tatiller dahil) iki katıdır.",
+      "explanation": "Bu yükümlülük, Cumhurbaşkanınca belirtilen öğretim kurumları ve dalları dışında kalan kurum ve dallarda Devlet tarafından okutulanlar için geçerlidir.",
+      "articleRefs": [
+        "224"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Yetiştirilmek, eğitilmek ya da staj yapmak üzere dış memlekete gönderilen memura mecburi hizmet yüklenmesi için en az ne kadar süre gönderilmiş olması gerekir?",
+      "back": "3 ay; bu süre ve daha fazlası için gönderilenlere, gönderilme şekline bakılmaksızın yurt dışında kaldıkları sürenin iki katı kadar mecburi hizmet yüklenir.",
+      "explanation": "Mecburi hizmetle yükümlü bulunanlar yarışma sınavına tabi tutulmaksızın atanırlar.",
+      "articleRefs": [
+        "224"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Mecburi hizmetle yükümlü olan kişi yetiştirme, eğitim veya staj süresi bittikten sonra en çok ne kadar süre içinde kurumuna başvurmalıdır?",
+      "back": "En çok iki ay içinde.",
+      "explanation": "Başvurmayanlar veya atanma için gerekli belgelerini tamamlamayanlar, yol giderleri de dahil kendilerine kurumlarınca yapılmış bütün giderleri yüzde elli fazlasıyla ödemek zorundadır.",
+      "articleRefs": [
+        "225"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Kurumuna başvuran mecburi hizmet yükümlüsü, başvuru tarihinden itibaren en geç ne kadar süre içinde bir göreve atanmazsa yükümlülüğü kalkar?",
+      "back": "3 ay; bu süre içinde bir göreve atanmayanın mecburi hizmet yükümlülüğü kalkar.",
+      "explanation": "Mecburi hizmetin krediye dönüştürülmesi istenmişse süre, istemin karara bağlandığı tarihten başlar. Bu duruma kendi kusuruyla sebep olan memur doğan zararı tazminle yükümlüdür.",
+      "articleRefs": [
+        "225"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Askerlikte geçen süre mecburi hizmetten sayılır mı?",
+      "back": "Hayır; askerlikte geçen süre mecburi hizmetten sayılmaz.",
+      "explanation": "Mecburi hizmetini yapmakta iken yasama organına seçilenlerin yükümlülükleri ise seçildikleri sürece ertelenir.",
+      "articleRefs": [
+        "225"
+      ],
+      "counterNumbers": []
+    }
+  ]
+}

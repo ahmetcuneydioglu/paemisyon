@@ -1,0 +1,299 @@
+{
+  "deck": {
+    "topicId": "14c06c01-9386-40c3-b566-766f8f344bfc",
+    "legislationSlug": "1774-sayili-kimlik-bildirme-kanunu",
+    "sourceLabel": "AI bilgi kartı — 1774 Sayılı Kimlik Bildirme Kanunu md 1–21, Ek 1, Ek 2, Ek 3, Geçici 1, Geçici 2, Geçici 3, Geçici 4",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: resmî madde metni + çıkmış sorular; 1 açıklama düşürüldü)"
+  },
+  "cards": [
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Kimlik Bildirme Kanunu'nun kapsamı dışında kalan tesisler hangileridir?",
+      "back": "Askeri konaklama, dinlenme ve kamp tesisleri ile ordu evleri kanunun kapsamı dışındadır.",
+      "explanation": "Kanun; özel veya resmi her türlü konaklama, dinlenme, bakım ve tedavi tesisi, marina, liman ve kıyı tesisi, işyeri ve konutta geçici veya sürekli kalan, oturan, çalışan ve ayrılanları kapsar. Araç, gemi/deniz turizmi aracı kiralayan gerçek ve tüzel kişilerin kimlik tespiti ve bildirimi de bu kanuna göre yapılır.",
+      "articleRefs": [
+        "1"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Bir otelde ücretsiz kalan konuğun kimlik ve geliş-ayrılış kaydının tutulması gerekir mi?",
+      "back": "Evet. Sorumlu işletici; ücretli veya ücretsiz, gündüz veya gece kalan yerli veya yabancı herkesin kaydını günü gününe tutar.",
+      "explanation": "Kayıtlar örneğine ve usulüne uygun şekilde tutulur ve genel kolluk örgütlerinin her an incelemesine hazır bulundurulur. Yükümlülük, yatacak yer gösterilen gemi/deniz turizmi araçlarında kalanları da kapsar.",
+      "articleRefs": [
+        "2"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Konaklama tesisinin sorumlu işleticisi değişirse bu durum kolluğa ne kadar sürede bildirilir?",
+      "back": "24 saat içinde bildirilir. Bildirim, ilk bildirimdeki şekle uygun olarak en yakın kolluk örgütüne yapılır.",
+      "explanation": "İşleticinin kimliği ilk olarak tesis açılmadan evvel bildirilir. İşletici değiştiğinde aynı şekil, 24 saatlik süreyle tekrarlanır.",
+      "articleRefs": [
+        "3"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Konaklama tesisinin sorumlu işleticisinin kimliğini kolluğa kim bildirir?",
+      "back": "Müessesenin sahibi veya kanuni temsilcisi bildirir. Bildirim tesis açılmadan evvel, örneğine uygun şekilde en yakın kolluk örgütüne yapılır.",
+      "explanation": "Kamu kuruluşlarına ait tesislerde amir ve müdürler işletici gibi sorumludur.",
+      "articleRefs": [
+        "3"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Sorumlu işletici, kimlik bildirme görevini yöneticisine devrederse sorumluluktan kurtulur mu?",
+      "back": "Hayır. Devir işleticinin kendi sorumluluğu altında yapılır; işletici ile yönetici müştereken sorumlu olur.",
+      "explanation": "Kanun, işleticinin bu konudaki görev ve yükümlülüklerini yöneticilerine devretmesine izin verir. Devir hâlinde ise ikisi birlikte sorumludur.",
+      "articleRefs": [
+        "3"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Tesiste çalıştırılan ve kolluğa bildirilen kişiye verilen kimlik kartını kim doldurup onaylar?",
+      "back": "Sorumlu işletici doldurup onaylar. Kart örneğine uygun olur ve kolluk görevlileri her istediğinde gösterilmesi zorunludur.",
+      "explanation": "İşletici, sürekli veya geçici olarak çalıştırdığı kişileri ve bunların ayrılışlarını bildirir. Bunun için kimlik bildirme belgesi doldurur ve 24 saat içinde bağlı olduğu en yakın kolluk örgütüne verir.",
+      "articleRefs": [
+        "4"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Öğrenci yurdunda kalan öğrencilerin kimlik belgesini kim doldurup genel kolluk örgütüne verir?",
+      "back": "O yerin sorumlu işleticisi verir. Örneğine uygun belgeyi üç gün içinde genel kolluk örgütüne ulaştırır.",
+      "explanation": "Aynı yükümlülük yurtlarda çalışanlar için de geçerlidir. Öğrencilerin veya çalışanların ayrılması hâlinde de aynı şekil ve süre içinde bildirim belgesi gerekir.",
+      "articleRefs": [
+        "6"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "İş yerinde çalışanların kimlik bildirimi elektronik ortamda yapılırsa muhtar onayı aranır mı?",
+      "back": "Hayır. Elektronik ortamdaki bildirimde muhtara onaylatma hükmü uygulanmaz; bildirimler genel kolluk tarafından köy ve mahalle muhtarlarıyla paylaşılır.",
+      "explanation": "Elektronik ortam dışındaki kimlik bildirimleri, mahalli kolluk örgütüne verilmeden evvel mahalle veya köy muhtarına onaylatılır. Sorumlu işleticiler bildirimi aynı süre içinde genel kolluk kuvvetlerine elektronik ortamda da yapabilir.",
+      "articleRefs": [
+        "6"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Yaylak ve kışlak gibi yerlere mevsimlik olarak göçenler için kimlik bildirimi kaç gün içinde kolluğa verilir?",
+      "back": "Üç gün içinde verilir. Bildirimi aile reisi, örneğine uygun şekilde kolluk örgütüne yapar.",
+      "explanation": "Konutlarda 30 günden fazla kalacak misafir için de bildirimi aile reisi aynı üç günlük süre içinde verir.",
+      "articleRefs": [
+        "7"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Konutta tam 30 gün kalacak misafir için aile reisinin kimlik bildirimi yapması gerekir mi?",
+      "back": "Hayır. Yükümlülük konutta 30 günden fazla kalacak misafir içindir; o hâlde aile reisi bildirimi üç gün içinde kolluk örgütüne verir.",
+      "articleRefs": [
+        "7"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Başka ilde çalışmak için geçici olarak yer değiştiren mevsimlik tarım işçilerinin kimlik bildirimini kim alır?",
+      "back": "Kolluk kuvvetleri alır. Bildirimler, bu kişilerin yaşadığı geçici yerleşim alanlarında doğrudan alınır.",
+      "explanation": "Alınan bildirimler Çalışma ve Sosyal Güvenlik Bakanlığı ile elektronik ortamda paylaşılır.",
+      "articleRefs": [
+        "7"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Kimliğini nüfus hüviyet cüzdanı ve diğer resmi geçerli belgelerle ispat edemeyen kişiye, bildirim yükümlüsü ne yapamaz?",
+      "back": "Onu tesisinde barındıramaz; konut ve işyerinde de çalıştıramaz.",
+      "explanation": "Yasak, kimlik bildirme belgesini yetkili idareye vermekle yükümlü tutulan herkes için geçerlidir.",
+      "articleRefs": [
+        "9"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Garaj, istasyon gibi ulaşım merkezlerinde sabahçı kahvesi işletilmesine kim izin verir?",
+      "back": "Belediye veya il özel idaresi izin verir. İzin, bağlı olunan kolluk kuvvetinin görüşü alınmak şartıyla geçici veya sürekli olarak verilebilir.",
+      "explanation": "İzin şu yerlerde verilebilir: iskele, istasyon, hava meydanı terminali, garaj, benzin istasyonu gibi kara, deniz ve hava ulaşım merkezleri. Fuar, panayır, sergi ve pazar kurulması gibi zorunluluk olan zaman ve yerler de bunlara dahildir.",
+      "articleRefs": [
+        "10"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "İzinli sabahçı kahvesinde geceyi geçirenler için kimlik bildirimi yapılır mı?",
+      "back": "Hayır. Belediye veya il özel idaresinin izin verdiği bu tesislerde kalanlar için bildirim yapılmaz.",
+      "explanation": "Kahvehane, oyun salonu, kulüp, lokal gibi yatısız iş yerlerinde durum farklıdır. Özel kanunları müsaade ederse ancak sahipleri ve çalıştırdıkları kimseler yatabilir; başkaları kalamaz.",
+      "articleRefs": [
+        "10"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Kat mülkiyetine tabi binada bildirim dışı kimselerin oturup oturmadığını kontrol etmekle kim yükümlüdür?",
+      "back": "Kat mülkiyetine tabi taşınmaz mal yöneticileri ve kapıcılar yükümlüdür. Garaj, kömürlük, boş daire gibi bölümlerde saklanma, sığınma ve eşya gizleme olup olmadığını da kontrol ederler.",
+      "explanation": "Bütün kat sahipleri, kiracılar ve binada çalışanlar bu konularda yöneticiye yardımcı olmak ve gereken bilgileri vermek zorundadır.",
+      "articleRefs": [
+        "11"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Apartman yöneticisi ve kapıcı, şüpheli gördükleri hususları nereye bildirir?",
+      "back": "Bağlı oldukları genel kolluk örgütüne bildirirler. Kanuna aykırılıkları da aynı yere iletirler.",
+      "articleRefs": [
+        "11"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Kimlik bildirme belgelerinden ve bildirimlerden kimler yararlanabilir?",
+      "back": "Yalnız yetkili resmi örgütler yararlanabilir. Mahkeme kararı olmadıkça başka hiç kimsenin yararlanmasına müsaade edilemez.",
+      "explanation": "Bu kanuna göre verilen belgeler ve yapılan her türlü bildirim; her çeşit vergi, resim ve harçtan muaftır.",
+      "articleRefs": [
+        "14"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Sorumlu işleticinin kimliğinin bildirilmesine ilişkin yükümlülüğe aykırılıkta ne kadar idari para cezası verilir?",
+      "back": "İkiyüzelli Türk Lirası idari para cezası verilir. Bu ceza, 3 ve 4 üncü maddelerdeki yükümlülüklerden her birine aykırılıkta uygulanır.",
+      "explanation": "Örneğin sorumlu işletici değişikliğinin 24 saat içinde en yakın kolluk örgütüne bildirilmemesi bu cezayı gerektirir. Cezayı mahallî mülkî amir verir.",
+      "articleRefs": [
+        "15",
+        "3",
+        "18"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Konutta misafir bildirimi ya da kimliğini ispat edemeyeni çalıştırma yasağı gibi yükümlülüklere aykırılıkta ne kadar idari para cezası verilir?",
+      "back": "Yirmi Türk Lirası verilir. Ceza 6, 7, 9, 10 ve 11 inci maddelerdeki hükümlere aykırılıkta uygulanır.",
+      "explanation": "Örneğin konutta 30 günden fazla kalacak misafiri üç gün içinde bildirmeyen aile reisine bu ceza verilir. Kimliğini resmi belgeyle ispat edemeyen kişiyi işyerinde çalıştırana da aynı ceza uygulanır.",
+      "articleRefs": [
+        "17",
+        "7",
+        "9"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Kimlik bildirme belgesinde gerçeğe uymayan bilgi verene ne kadar idari para cezası verilir?",
+      "back": "Yüz Türk Lirası idari para cezası verilir.",
+      "explanation": "Aynı maddeye göre 6, 7, 9, 10 ve 11 inci maddelerdeki hükümlere aykırılığın cezası yirmi Türk Lirasıdır.",
+      "articleRefs": [
+        "17"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Kimlik Bildirme Kanunu'nda belirtilen idari para cezalarını kim verir?",
+      "back": "Mahallî mülkî amir verir.",
+      "explanation": "Kanunda belirtilen idari para cezalarının tamamı için karar yetkisi bu makamdadır.",
+      "articleRefs": [
+        "18"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Karakollara konulan, il merkezlerinden de sorgulanabilen bilgisayar terminallerinin giderleri hangi bütçeden karşılanır?",
+      "back": "Giderler İçişleri Bakanlığı bütçesine konulacak ödenekten karşılanır.",
+      "explanation": "Terminaller, kanunun uygulanması sırasında genel kolluk kuvvetlerine ait karakollara konulur.",
+      "articleRefs": [
+        "Ek 1"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Konaklama tesisi, genel kolluk kuvvetlerinin bilgisayar terminallerine bağlanmazsa ne kadar idari para cezası verilir?",
+      "back": "Onbin Türk Lirası verilir. Anlık veri göndermeyen veya gerçeğe aykırı kayıt tutan tesise ise beşbin Türk Lirası verilir.",
+      "explanation": "Cezaları mülki idare amirleri verir ve cezalar tebliğinden itibaren bir ay içinde ödenir. Konaklama tesisleri tüm kayıtlarını bilgisayarda günü gününe tutmak ve bilgileri genel kolluğa anlık bildirmek zorundadır.",
+      "articleRefs": [
+        "Ek 1"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Terminale bağlanmama fiilini aynı takvim yılında ikinci kez işleyen otelin ruhsatı iptal edilir mi?",
+      "back": "Hayır. Tekrarda en son kesilen para cezasının iki katı uygulanır; ruhsat iptali, fiil aynı takvim yılında dördüncü defa işlendiğinde gündeme gelir.",
+      "explanation": "Tekrar ve ruhsat iptali kuralı yalnız terminale bağlanmamayı kapsamaz. Anlık veri göndermeme ve gerçeğe aykırı kayıt tutma için de aynı kural uygulanır.",
+      "articleRefs": [
+        "Ek 1"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "İşyerlerinde çalışanlara ait kimlik bilgilerini genel kolluk kuvvetleri hangi kuruma bildirir?",
+      "back": "Sosyal Güvenlik Kurumu Başkanlığı il müdürlükleri veya merkez müdürlüklerine bildirir.",
+      "explanation": "Bildirim, 4 üncü ve 6 ncı maddeler gereğince verilen kimlik bilgilerini kapsar. Bunlar sürekli veya geçici olarak çalışanlara ait bilgilerdir.",
+      "articleRefs": [
+        "Ek 2"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Araç kiralama işletmesi, kiralanan araçlara ait konum bilgisi kayıtlarını ne kadar süre saklar?",
+      "back": "Üç yıl saklar. Kiralanan araçlarda GPS cihazı (küresel uydu navigasyon sistemi) bulundurmak da zorunludur.",
+      "explanation": "Kiralayan şahıs ile kiralanan araç bilgileri, araç teslimi esnasında genel kolluk kuvvetlerine sistem üzerinden anlık bildirilir. Kiralayan kamu kurum veya kuruluşuysa yalnız kurumla yapılan sözleşme ile araç bilgileri sisteme kaydedilir.",
+      "articleRefs": [
+        "Ek 3"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Kiralayan şahıs ile araç bilgilerini, araç teslim edilmeden genel kolluğa anlık bildirmeyen kiralama işletmesine ne kadar idari para cezası verilir?",
+      "back": "Kırk dokuz bin dokuz yüz otuz sekiz Türk Lirası verilir. Kayıtları genel kolluğun incelemesine hazır bulundurmayana da aynı ceza uygulanır.",
+      "explanation": "Şu hâllerde ceza doksan dokuz bin sekiz yüz doksan altı Türk Lirasıdır: kayıtları bilgisayarda tutmamak, terminali bağlamamak, gerçeğe aykırı kayıt tutmak, GPS cihazı bulundurmamak veya konum kayıtlarını saklamamak. Cezaları mülki idare amirleri verir.",
+      "articleRefs": [
+        "Ek 3"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Araç kiralama işletmesine idari para cezası verilmesi, aynı fiil için ceza soruşturması yapılmasına engel olur mu?",
+      "back": "Hayır. Bu yükümlülüklere ilişkin idari yaptırımların uygulanması, ceza soruşturması ve kovuşturması yapılmasına engel değildir.",
+      "explanation": "İşlenen bir suçun gizlenmesi amacıyla bilgilerin yok edilmesi hâlinde işletme ruhsatı iptal edilir. Kiralamada gerçeğe aykırı kimlik kullananlar 5237 sayılı Türk Ceza Kanunu hükümlerine göre cezalandırılır; kayıtları hukuka aykırı kullanan, başkasına veren, yayan veya ele geçirenler de öyle.",
+      "articleRefs": [
+        "Ek 3"
+      ],
+      "counterNumbers": []
+    }
+  ]
+}

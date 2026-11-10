@@ -1,0 +1,265 @@
+{
+  "deck": {
+    "topicId": "0334bf9e-f6c1-4073-89cf-f82d02b3bfa3",
+    "legislationSlug": "ozel-guvenlik-hizmetlerine-dair-kanunun-uygulanmasina-iliskin-yonetmelik",
+    "sourceLabel": "AI bilgi kartı — Özel Güvenlik Hizmetlerine Dair Kanunun Uygulanmasına İlişkin Yönetmelik md 16, 17, 19, 18, 20–33",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: resmî madde metni + çıkmış sorular)"
+  },
+  "cards": [
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Genel kolluk olaya el koyduktan sonra özel güvenlik görevlisi araştırma ve delil toplama faaliyetine hangi durumda yardımcı olur?",
+      "back": "Genel kolluğun talebi hâlinde yardımcı olur.",
+      "explanation": "Görev alanında bir suçla karşılaşan özel güvenlik birimleri ve görevlileri şunlarla görevli ve yetkilidir: suça el koymak, suçun devamını önlemek, sanığı tespit edip yakalamak, olay yerini ve suç delillerini muhafaza etmek ve yetkili genel kolluğa teslim etmek.",
+      "articleRefs": [
+        "16"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Güvenlikle ilgili bir fakülte ya da meslek yüksekokulu mezunu, özel güvenlik temel eğitiminin hangi kısmını yine de almak zorundadır?",
+      "back": "Silah eğitimini. Bu mezunlarda silah eğitimi dışında özel güvenlik temel eğitimi şartı aranmaz.",
+      "explanation": "Fakülte veya meslek yüksekokullarının güvenlikle ilgili bölümlerinden mezun olanlar da aynı kapsamdadır.",
+      "articleRefs": [
+        "17"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Özel güvenlik görevlisi hakkındaki güvenlik soruşturması ve arşiv araştırması kaç yılda bir yenilenir?",
+      "back": "Her beş yılda bir. Süre, temel eğitim sertifikasının düzenlendiği tarihten itibaren işler.",
+      "explanation": "Temel eğitimden muaf tutulan emekli kolluk ve Milli İstihbarat Teşkilatı mensupları ile güvenlikle ilgili okul mezunları için süre başvuru tarihinden başlar. Aranan şartlardan biri kaybedilirse kimlik kartı ve çalışma izni Bakanlıkça/valiliklerce iptal edilir.",
+      "articleRefs": [
+        "17"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Özel güvenlik görevlisi adaylarında aranacak sağlık şartları hangi yönetmelik doğrultusunda yerine getirilir?",
+      "back": "Özel Güvenlik Görevlileri Sağlık Şartları Yönetmeliği doğrultusunda yerine getirilir.",
+      "explanation": "Aday sağlık raporu ile durum bildirir sağlık kurulu raporunun alınması ve bu raporlara göre yapılacak iş ve işlemler de bu yönetmeliğe göre yürütülür.",
+      "articleRefs": [
+        "18"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Özel güvenlik hizmetini şirkete gördüren kuruluş, görevlileri ayrıca valiliğe bildirmek zorunda mıdır?",
+      "back": "Hayır. Hizmet şirkete gördürülüyorsa kişi ve kuruluşların ayrıca bildirim yükümlülüğü yoktur.",
+      "explanation": "Bildirim, görevlinin istihdam edilmesi ya da herhangi bir sebeple görevden ayrılması hâlinde valiliğe yapılır.",
+      "articleRefs": [
+        "20"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Özel güvenlik görevlisi kimlik kartını görev sırasında nasıl taşır?",
+      "back": "Yakasında taşır; görev alanı ve süresi içinde herkesin görebileceği şekilde.",
+      "explanation": "Kartta görevlinin adı ve soyadı yazar. Ayrıca yönetici mi, silahlı mı, silahsız mı olduğu belirtilir. Kart kaybolursa işveren durumu derhal Bakanlığa/valiliklere bildirir.",
+      "articleRefs": [
+        "21"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Özel güvenlik kimlik kartı beş yılda bir yeniden düzenlenirken ruhsat harcı alınır mı?",
+      "back": "Hayır. Kart her beş yılda bir ruhsat harcı alınmaksızın yeniden düzenlenir.",
+      "explanation": "Yeniden düzenleme için iki şart aranır: güvenlik soruşturması ve arşiv araştırması sonucunun olumlu olması, özel güvenlik yenileme eğitim sertifikasının ibraz edilmesi. Kartlar posta aracılığıyla gönderilir; kişinin kendisine, belirlediği bir kişiye veya kanuni vekiline teslim edilir.",
+      "articleRefs": [
+        "21"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Özel güvenlik üniforması hangi kuvvetlerde kullanılan renk, biçim ve motifte olamaz?",
+      "back": "Türk Silahlı Kuvvetleri, genel kolluk kuvvetleri ve kanunlarla kurulan özel kolluk kuvvetlerinde kullanılan renk, biçim ve motifte olamaz.",
+      "explanation": "Üniformada şirketi tanıtıcı isim, işaret veya logo bulunur. Gece görevinde, spor müsabakalarında, konser ve sahne gösterilerinde üniformanın üzerine giyilen yeleğin arkasında ışığı yansıtan \"ÖZEL GÜVENLİK\" ibaresi yazılıdır.",
+      "articleRefs": [
+        "22"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Özel güvenlik şirketlerinin kullanacağı üniforma ve teçhizatı Komisyon mu onaylar?",
+      "back": "Hayır. Şirketlerin üniforma ve teçhizatını Bakanlık onaylar. Komisyonun onayına sunulan, özel güvenlik birimlerince belirlenen üniforma ve teçhizattır.",
+      "articleRefs": [
+        "22"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Alarm izleme merkezi kurma ve işletme yeterlilik belgesini kim verir?",
+      "back": "Valilikler verir.",
+      "explanation": "Bilgi ve belgeler incelenir, ardından merkezin kurucu ve yöneticileri hakkında güvenlik soruşturması yaptırılır. Sonuç olumluysa Alarm İzleme Merkezi Kurma ve İşletme Yeterlilik Belgesi düzenlenir.",
+      "articleRefs": [
+        "23"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Alarm izleme merkezi, izleme sırasında gelen hangi ihbarları genel kolluğa bildirir?",
+      "back": "Teknik bakımdan doğrulanan ihbarları; sorumluluk bölgesindeki genel kolluğa en kısa zamanda bildirir.",
+      "explanation": "İzleme, alarm sistemleri aracılığıyla sürekli olarak yapılır; gelen ihbarlar merkezde değerlendirilir.",
+      "articleRefs": [
+        "23"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Komisyon, canlılar üzerinde hangi nitelikteki kimyasalların kullanılmasına izin verebilir?",
+      "back": "Kalıcı etkisi olmayan kimyasalların; orantılılık ilkesine uygun olarak izin verebilir.",
+      "explanation": "Koruma ve güvenlikte fiziki önlemlere ve güvenlik cihazlarına öncelik verilir. Görevin niteliği gereği bu tedbirler yeterli değilse yarı otomatik tabancaların ve av silahlarının bulundurulup taşınmasına Komisyon karar verir. Silahların sayısı ve niteliği Komisyon kararında belirtilir.",
+      "articleRefs": [
+        "24"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Genel kolluktan emekli özel güvenlik görevlisi, kendi adına taşıma ruhsatlı silahını özel güvenlik hizmetinde kullanırken Özel Güvenlik Silah Taşıma/Bulundurma Belgesi kuralına tabi midir?",
+      "back": "Hayır. Silah aynı zamanda görevlinin zati silahı olduğundan görev alanı kıstası ve 28 inci madde hükümleri uygulanmaz.",
+      "explanation": "Bu kullanım için korunacak kişi, kurum veya kuruluş Komisyona başvurup izin alır. İzin, Komisyonca verilen personel ve silah kadrosu içinde değerlendirilir. Silahların kaydına ilişkin 27 nci madde hükümleri bu silahlara da uygulanır.",
+      "articleRefs": [
+        "25",
+        "28"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Görev uzun namlulu silah gerektiriyorsa silahın niteliği ve sayısı nasıl tayin edilir?",
+      "back": "Komisyonun kararı ve valinin onayı ile tayin edilir.",
+      "articleRefs": [
+        "26"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "İzin verilen ateşli silahları \"Silah Bulundurma Kayıt Defteri\"ne kim işler?",
+      "back": "Komisyon işler. Özel güvenlik izni verilen kişi veya kuruluş ise silahları ayrıca \"Silah Demirbaş Defteri\"ne kaydeder.",
+      "explanation": "Görev alanında muhafaza edilen silahlar, her sayfası yöneticilerce onaylı \"Devir Teslim ve Rapor Defteri\"ne imza karşılığı devir teslim edilir. Görevliler silahları Kanunda belirtilen istisnalar dışında görev alanı dışına çıkaramaz.",
+      "articleRefs": [
+        "27"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Kişi koruma ya da para ve değerli eşya nakli yapan silahlı özel güvenlik görevlisi, kimlik kartı ve silah belgesine ek olarak neyi yanında bulundurur?",
+      "back": "Görev belgesini bulundurur.",
+      "explanation": "Her ateşli silah için Özel Güvenlik Silah Taşıma/Bulundurma Belgesi düzenlenir. Belgenin rengi, şekli, muhtevası, basımı, dağıtımı ve hizmet bedeli Bakanlıkça belirlenir.",
+      "articleRefs": [
+        "28"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Bulundurulmasına ve taşınmasına izin verilen her silah için kaç fişek alınmasına izin verilir?",
+      "back": "Yirmi beş adet fişek alınmasına izin verilir.",
+      "explanation": "Bu miktar, Komisyonun kararı ve valinin onayı ile görev yeri ve niteliğine göre artırılabilir. Görev nedeniyle sarf edilen ve tutanakla tespit edilen eksik fişeklerin tamamlanmasına da izin verilir.",
+      "articleRefs": [
+        "29"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Ateşli silah eğitiminde kullanılacak fişekler, silah başına alınabilecek fişek sınırına tabi midir?",
+      "back": "Hayır. Ateşli silah eğitiminde kullanılacak fişekler bu sınırlamaya tabi değildir.",
+      "explanation": "Programlı eğitimleri dışında personeline atış eğitimi yaptıracak kişi ve kuruluşlar fişek talep edebilir; bu talep üzerine fişek almalarına genel kollukça izin verilir.",
+      "articleRefs": [
+        "29"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "İzni iptal edilen kuruluşun silahları altı ay içinde devredilmezse, takip eden kaç ay içinde ruhsat başvurusu yapılmalıdır?",
+      "back": "İki ay içinde, 6136 sayılı Kanuna göre ruhsat başvurusu yapılmalıdır. Süresinde ruhsatlandırılmayan silahlar müsadere edilmek üzere adli makamlara intikal ettirilir.",
+      "explanation": "Bu süreler, özel güvenlik izni veya silah bulundurma ve taşıma izni iptal edilen ya da ihtiyaç fazlası bildiren kişi ve kuruluşların silah ve fişekleri için işler. Devir genel hükümlere göre yapılır.",
+      "articleRefs": [
+        "30"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Devredilecek, hibe ya da imha edilecek veya satılacak silahlar için ekspertiz raporu nereden aldırılır?",
+      "back": "Bölge Kriminal Polis Laboratuvarlarından aldırılır.",
+      "explanation": "Tüfekler ve tam otomatik tabancalar devredilebilir ya da genel kolluk kuruluşlarına bağışlanabilir.",
+      "articleRefs": [
+        "30"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Özel güvenlik temel eğitimi ve yenileme eğitimi nerede yapılır?",
+      "back": "Bakanlıktan faaliyet izni alan özel eğitim kurumlarında yapılır. Eğitim Bakanlıkça da verilebilir; yenileme eğitimi valiliğin izniyle güvenlik hizmetinin sağlandığı yerde de yapılabilir.",
+      "explanation": "Eğitim yapılacak tesisin zorunlu deprem sigortası ve tapusunun bulunması gerekir. Eğitim izni başvurusu Bakanlığa yapılır; başvuruya tesisin yangın sigortası poliçesinin bir sureti de eklenir.",
+      "articleRefs": [
+        "31"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Eğitim kurumu başvurusunda tesisi incelemek üzere görevlendirilen inceleme komisyonu kaç kişiden oluşur?",
+      "back": "Üç kişiden oluşur. Üyeler, eğitim merkezinin bulunduğu ilde, sorumluluk bölgesi esasına göre özel güvenlikle ilgili birimde çalışanlardan görevlendirilir.",
+      "explanation": "Komisyon şunları araştırır: tesisin eğitime uygunluğu, araç, gereç ve teçhizatın yeterliliği, yangına karşı önlemler ve belgelerin gerçeği yansıtıp yansıtmadığı. Ardından eğitim merkezi açılıp açılamayacağına ilişkin rapor düzenler.",
+      "articleRefs": [
+        "32"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Eğitim kurumunun kurucuları ve yöneticisi hakkındaki güvenlik soruşturması, inceleme komisyonunun raporundan sonra mı başlatılır?",
+      "back": "Hayır. Güvenlik soruşturması başvurunun alınmasıyla birlikte başlatılır.",
+      "explanation": "İnceleme ve soruşturma sonucu olumluysa, ruhsat harcı yatırıldıktan sonra Özel Güvenlik Eğitim Kurumu Faaliyet İzin Belgesi düzenlenir. Belge kurucuya, yöneticiye, kanuni vekile ya da eğitim kurumunca yetkilendirilen kişiye elden teslim edilir.",
+      "articleRefs": [
+        "32"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Özel güvenlik temel eğitiminin kaç saati silah ve atış eğitimine ayrılır?",
+      "back": "Yirmi saat; adaylar asgari yüz yirmi saatlik eğitime tabi tutulur.",
+      "explanation": "Bir ders saati kırk dakikadır ve iki ders arasında en az on dakika ara verilir.",
+      "articleRefs": [
+        "33"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Temel ve yenileme eğitimindeki atışta başarılı sayılmak için 25 fişeğin en az kaçı hedefe isabet etmelidir?",
+      "back": "En az 15 fişek isabet etmelidir. Başaramayan kursiyere ek fişek istihkakı alınarak başarılı oluncaya kadar atış yaptırılır.",
+      "explanation": "Atış, Bakanlıkça belirlenen mesafeden ve 25 fişek üzerinden yaptırılır. Fişeklerin sarf edildiğine dair tutanağı atış yerinin sorumlusu ile eğitim kurumu yöneticisi imzalar.",
+      "articleRefs": [
+        "33"
+      ]
+    }
+  ]
+}

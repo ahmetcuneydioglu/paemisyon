@@ -1,0 +1,302 @@
+{
+  "deck": {
+    "topicId": "9d7f38f7-d135-4c23-aca4-1f4fd1e474f9",
+    "legislationSlug": "5726-sayili-tanik-koruma-kanunu",
+    "sourceLabel": "AI bilgi kartı — 5726 Sayılı Tanık Koruma Kanunu md 1–27, Geçici 1",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: resmî madde metni + çıkmış sorular)"
+  },
+  "cards": [
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Tanık koruma tedbirlerini uygulayan koruma biriminin idarî yapısını ve çalışma esaslarını kim belirler?",
+      "back": "İlgili kolluk teşkilâtının bağlı olduğu bakanlık belirler.",
+      "explanation": "Koruma birimi, haklarında koruma tedbiri uygulanmasına karar verilecek kişiler için gerekli koruma tedbirlerini uygulayan kolluk birimidir.",
+      "articleRefs": [
+        "2"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Türk Ceza Kanunu ve ceza hükmü içeren özel kanunlardaki suçlarda Tanık Koruma Kanunu, hapis cezasının alt sınırı en az ne olan suçlara uygulanabilir?",
+      "back": "On yıl; alt sınırı on yıl veya daha fazla hapis cezasını gerektiren suçlar kapsama girer.",
+      "explanation": "Aynı bentte ağırlaştırılmış müebbet hapis ve müebbet hapis cezasını gerektiren suçlar da sayılır.",
+      "articleRefs": [
+        "3"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Kanunun suç saydığı fiilleri işlemek amacıyla kurulan örgütün faaliyeti çerçevesinde işlenen suçlarda Tanık Koruma Kanununun uygulanması için hapis cezasının alt sınırı en az ne olmalıdır?",
+      "back": "İki yıl; alt sınırı iki yıl veya daha fazla hapis cezasını gerektiren suçlar kapsama girer.",
+      "explanation": "Aynı bentte terör örgütünün faaliyeti çerçevesinde işlenen suçlar da sayılır.",
+      "articleRefs": [
+        "3"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Terör örgütünün faaliyeti çerçevesinde işlenen suçta Tanık Koruma Kanununun uygulanması için cezanın alt sınırının iki yıl olması gerekir mi?",
+      "back": "Hayır. Terör örgütünün faaliyeti çerçevesinde işlenen suçlar alt sınır şartı olmaksızın kapsamdadır; iki yıl eşiği suç işlemek amacıyla kurulan örgütün faaliyeti çerçevesindeki suçlar için aranır.",
+      "explanation": "Bent, örgüt faaliyeti çerçevesinde işlenen alt sınırı iki yıl veya daha fazla hapis cezasını gerektiren suçlar ile terör örgütünün faaliyeti çerçevesinde işlenen suçları ayrı ayrı sayar.",
+      "articleRefs": [
+        "3"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Tanık olarak dinlenen kişinin kan ve kayın hısımları hangi dereceye kadar tanık koruma tedbiri kapsamına alınabilir?",
+      "back": "İkinci derece dahil kan veya kayın hısımlarına kadar; üstsoy ve altsoy ise derece sınırı olmadan kapsamdadır.",
+      "explanation": "Tedbir, kişinin kendisinin veya yakınlarının hayatı, beden bütünlüğü veya mal varlığı ağır ve ciddi bir tehlike içinde bulunduğunda ve korunması zorunlu olduğunda uygulanabilir.",
+      "articleRefs": [
+        "4"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Evlilik bağı sona ermiş eski eş, tanık koruma tedbiri kapsamına alınabilir mi?",
+      "back": "Evet; tanığın evlilik bağı kalmasa bile eşi kapsamdadır. Tedbir için ağır ve ciddi bir tehlikenin bulunması ve korunmanın zorunlu olması da gerekir.",
+      "explanation": "Nişanlı, evlatlık bağı bulunanlar ve tanıkla yakın ilişki içerisinde olan kişiler de korunabilecek yakınlar arasındadır.",
+      "articleRefs": [
+        "4"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Fizyolojik görünümün değiştirilmesi tedbiri yalnız estetik cerrahi yoluyla mı uygulanır?",
+      "back": "Hayır. Görünüm estetik cerrahi yoluyla ya da estetik cerrahi gerektirmeksizin değiştirilebilir; buna uygun kimlik bilgileri de yeniden düzenlenir.",
+      "explanation": "Bu tedbir, kimlik ve belgelerin değiştirilmesi, yurt içinde başka bir yerleşim biriminde yaşatma gibi tedbirlerle birlikte sayılır.",
+      "articleRefs": [
+        "5"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Aynı sonuca daha hafif bir tanık koruma tedbiriyle ulaşılabiliyorsa bu durum tedbir seçiminde nasıl değerlendirilir?",
+      "back": "Göz önünde tutulur. Tedbirlerden biri veya birkaçı aynı anda uygulanabilir; ancak daha hafif tedbirle aynı sonucun elde edilebilmesi dikkate alınır.",
+      "explanation": "Koruma tedbirlerinin esas ve usulleri yönetmelikte gösterilir.",
+      "articleRefs": [
+        "5"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Kimlik gizliliği, özel ortamda dinlenme, uygun ceza infaz kurumuna yerleştirme ve fizikî koruma tedbirlerine soruşturma evresinde kim karar verir?",
+      "back": "Cumhuriyet savcısı karar verir.",
+      "explanation": "Kovuşturma evresinde bu kararları Cumhuriyet savcısının veya tanığın istemi üzerine ya da re’sen mahkeme verir. Karar öncesinde kolluk makamları ile diğer birimlerin hazırlayacağı değerlendirme raporları göz önünde tutulur.",
+      "articleRefs": [
+        "6",
+        "5"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Gecikmesinde sakınca bulunan hâlde kolluk amiri, tanığın istemi olmadan fizikî koruma tedbiri alabilir mi?",
+      "back": "Hayır. Tanığın istemi şarttır; kolluk amiri yazılı emriyle, Cumhuriyet savcısından karar alınıncaya kadar geçici olarak fizikî koruma alabilir.",
+      "explanation": "Kolluk amirinin bu yoldan alabileceği tedbir yalnız fizikî korumadır ve tedbir geciktirilmeksizin Cumhuriyet savcısının bilgisine sunulur.",
+      "articleRefs": [
+        "6",
+        "5"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Kimlik ve belgelerin değiştirilmesi, yer değiştirme ve görünüm değiştirme gibi tedbirlere Tanık Koruma Kurulu hangi aşamada karar verebilir?",
+      "back": "Kovuşturma evresinde tanıklık görevinin yapılmasından sonra, tanığın istemi üzerine karar verebilir.",
+      "explanation": "Kurul, kovuşturma evresinin sona ermesinden sonra fizikî koruma tedbirine de karar verebilir. Kararda tehlikenin ağırlığı ve ciddiliği, suçun önemi, tedbirin yaklaşık maliyeti ve tanığın psikolojik durumu gibi özellikler göz önünde bulundurulur.",
+      "articleRefs": [
+        "6",
+        "5"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Tanık koruma tedbirlerinin süresi, değiştirilmesi, kaldırılması veya aynen devamı hakkında en geç hangi aralıklarla karar verilir?",
+      "back": "En geç birer yıl aralıklarla; süre kararın uygulandığı tarihten başlar.",
+      "explanation": "Karar, tedbir kararını veren makam ve mercilerce re’sen veya hakkında tedbir uygulanan kişinin istemi üzerine verilir. Kararı uygulayan koruma birimi de her yıl veya gerektiğinde beklemeden uygulama ve takip raporu düzenler.",
+      "articleRefs": [
+        "8"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Tanık koruma tedbiri hangi hâllerde kaldırılabilir?",
+      "back": "Kaldırma sebepleri arasında tanığın olay hakkında yanlış bilgi vermesi, yalan tanıklık veya iftiradan mahkûm olması ve koruma sebeplerinin ortadan kalkması vardır.",
+      "explanation": "Önceki kimlik bilgileriyle ilgili yanlış beyanda bulunma ve koruma kararında belirtilen tedbirlere aykırı davranış da kaldırma sebebidir. Bu konuda alınan kararlar tanığa gecikmeksizin bildirilir.",
+      "articleRefs": [
+        "8"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Kimlik bilgileri gizli tutulan ya da özel ortamda dinlenen tanığın beyanı tek başına hükme esas alınabilir mi?",
+      "back": "Hayır. Kimlik gizliliği veya hazır bulunma hakkına sahip olanlar olmadan ya da ses ve görüntüsü değiştirilerek dinlenme tedbiri uygulanan tanığın beyanı tek başına hükme esas teşkil etmez.",
+      "explanation": "Bu tanıkların dinlenmesine ilişkin hükümler savunma hakkını kısıtlayacak şekilde uygulanamaz.",
+      "articleRefs": [
+        "9",
+        "5"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Tanık, duruşma salonunda fiziksel görünümü engellenerek dinlenirken hâkim hangi soruların sorulmasına izin vermez?",
+      "back": "Dolaylı dahi olsa tanığın kimliğini ortaya çıkaracak soruların sorulmasına izin vermez.",
+      "explanation": "Sorular, tanık hakkında uygulanan tedbirlerle orantılı ve amaca uygun olmalıdır; hâkim sorulan soruların tanığa sorulmamasına da karar verebilir. Bu hükümler tanığın keşifte dinlenmesinde de uygulanır.",
+      "articleRefs": [
+        "9"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Fizikî koruma tedbirine ilişkin kararlar, yerine getirilmesi için kolluk makamlarına hangi yoldan gönderilir?",
+      "back": "Cumhuriyet başsavcılığı aracılığıyla yargı çevresi içerisindeki kolluk makamlarına gönderilir ve gecikmeksizin yerine getirilir.",
+      "explanation": "Tanığın beyanı tedbirin kapsamına göre farklı bir isim altında tutanağa kaydedilir; gerçek kimlik ve adres bilgileri ile koruma kararı ayrı bir kartonda muhafaza edilir.",
+      "articleRefs": [
+        "10"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Emniyet Genel Müdürlüğünce kurulan tanık koruma birimlerinde hangi personel bulundurulur?",
+      "back": "Yeteri kadar hukukçu, idarî ve teknik uzman personel bulundurulur.",
+      "explanation": "Birim personeline, tanık koruma biriminin verdiği bilgilere göre geçici kimlik düzenlenebilir; bu belgeler soruşturma konusuyla orantılı ve amaca uygun olarak kullanılabilir.",
+      "articleRefs": [
+        "11"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Tanık Koruma Kurulu en az hangi sıklıkla toplanır?",
+      "back": "En az ayda bir defa; ihtiyaç duyulduğunda her zaman Başkanın çağrısı üzerine de toplanır.",
+      "explanation": "Kurul, Kanunda belirtilen görevleri yapmak üzere İçişleri Bakanlığında kurulur.",
+      "articleRefs": [
+        "13"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Tanık Koruma Kurulunun Başkanı İçişleri Bakanlığınca mı belirlenir?",
+      "back": "Hayır. Kurul Başkanı, Kurul üyelerince kendi aralarından oyçokluğuyla seçilir; İçişleri Bakanlığı Kurulun sekretarya hizmetlerini yürütür.",
+      "explanation": "Kurul kararlarını da oy çokluğuyla alır. Kurulun çalışma esas ve usulleri yönetmelikte düzenlenir.",
+      "articleRefs": [
+        "13"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Tanık Koruma Kurulu üyelerinin görev süresi ne kadardır?",
+      "back": "Dört yıl; görev süresi sona erenler yeniden seçilebilir.",
+      "explanation": "Üyelere fiilen görev yaptıkları her gün için huzur hakkı ödenir; bir ayda fiilen görev yapılan gün sayısı dördü aşarsa aşan günler için huzur hakkı ödenmez.",
+      "articleRefs": [
+        "13"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Tanık Koruma Kurulunun verdiği koruma kararları ne zaman uygulanır?",
+      "back": "Mutabakat metninin imzalanmasından sonra uygulanır.",
+      "explanation": "Mutabakat metni; tedbirin şekli, süresi ve tarafların yükümlülükleri konusunda bilgilendirilmiş tanığın rızası alındıktan sonra Kurul ile hakkında koruma kararı verilen kişi arasında hazırlanır.",
+      "articleRefs": [
+        "15"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Tanık Koruma Kurulu yıllık faaliyet raporunu hangi ayın sonuna kadar sunar?",
+      "back": "Ocak ayı sonuna kadar; raporu İçişleri ve Adalet bakanlıklarına sunar.",
+      "explanation": "Rapor, koruma kararı verilen kişiler ile uygulanan tedbirleri kapsar; gerektiğinde ilgili bakanlıklar ile diğer kamu kurum ve kuruluşlarına da gönderilebilir.",
+      "articleRefs": [
+        "16"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Yabancı bir tanığın Türkiye'de korunmasına kim karar verir?",
+      "back": "İçişleri Bakanı, Dışişleri Bakanlığının görüşünü alarak karar verir.",
+      "explanation": "Karar, Türkiye’nin taraf olduğu ikili veya çok taraflı uluslararası anlaşmalar uyarınca, anlaşma yoksa karşılıklılık esasına göre verilir. Giderleri talep eden ülke makamları karşılar; uluslararası anlaşma hükümleri saklıdır.",
+      "articleRefs": [
+        "17"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Tanık koruma kapsamında alınan kararların gizliliği tedbir sona erdikten sonra da sürer mi?",
+      "back": "Evet. Gizlilik tedbir sona erdikten sonra da devam eder; işlemlerde görev alanlar öğrendikleri bilgileri görev sona erdikten sonra da açıklayamaz.",
+      "explanation": "Gizlilik kuralı hakkında tedbir uygulananlar için de geçerlidir. Kamu kurum ve kuruluşları kendi teşkilât veya birimlerinde gerekli tedbirleri alır.",
+      "articleRefs": [
+        "18"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Koruma birimlerinde fiilen görev yapanlara ödenecek tazminatın üst sınırı nedir?",
+      "back": "En yüksek Devlet memuru aylığının ek gösterge dahil yüzde otuzbeşi.",
+      "explanation": "Bu tazminat damga vergisi hariç herhangi bir vergiye tâbi tutulmaz ve kısmi statüde görev yapanlara ödenmez. Koruma tedbirlerinin giderleri İçişleri Bakanlığı bütçesine konulacak ödenekten karşılanır.",
+      "articleRefs": [
+        "19"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Tanık koruma uygulaması nedeniyle öğrendiği bilgi ve belgeleri açıklayan kişi hangi hükme göre cezalandırılır?",
+      "back": "Türk Ceza Kanununun 258 inci maddesine göre; fiil başka bir suç oluştursa bile ayrıca cezalandırılır.",
+      "explanation": "Bu bilgi ve belgeleri yayınlayan ya da başkalarının edinmesini veya erişimini kolaylaştıran da aynı hükme göre cezalandırılır. Görevlerinin gereklerine aykırı davranan kamu görevlilerine tabi oldukları mevzuattaki disiplin cezaları uygulanır.",
+      "articleRefs": [
+        "20"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Tanık koruma tedbiri hangi sebeplerle kaldırılırsa yapılan giderler tanıktan tahsil edilir?",
+      "back": "Tanığın olay hakkında yalan tanıklık veya iftiradan mahkûm olması ya da koruma kararındaki tedbirlere aykırı davranması sebebiyle kaldırılırsa.",
+      "explanation": "Karar tarihinden kaldırıldığı tarihe kadar kararı uygulayan makamlarca yapılan giderler kanuni faizleriyle tahsil edilir; ödenmezse Amme Alacaklarının Tahsil Usulü Hakkında Kanun hükümleri uygulanır.",
+      "articleRefs": [
+        "21",
+        "8"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Tanık Koruma Kanunu hükümleri tanıklar dışında kimlere de uygulanır?",
+      "back": "Uygulananlar arasında tanık koruma biriminde görev yapan personel, bu suçlarda görev alan kolluk amir ve memurları, gizli soruşturmacı ve suçların ortaya çıkarılmasına yardımcı olan muhbirler vardır.",
+      "explanation": "Bu kişilerin yakınlarına da Kanun hükümleri uygulanır. Kolluk amir ve memurları ile diğer kamu görevlilerinin, Kanun kapsamındaki suçlara ait istihbaratta, soruşturmada veya kovuşturmada görev almış olması gerekir.",
+      "articleRefs": [
+        "22"
+      ]
+    }
+  ]
+}

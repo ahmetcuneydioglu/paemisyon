@@ -1,0 +1,110 @@
+{
+  "deck": {
+    "topicId": "fc4fcb4f-3d76-41b9-9597-556534fb098a",
+    "legislationSlug": "1481-sayili-asayise-muessir-bazi-fiillerin-onlenmesi-hakkinda-kanun",
+    "sourceLabel": "AI bilgi kartı — 1481 Sayılı Asayişe Müessir Bazı Fiillerin Önlenmesi Hakkında Kanun md 1–7, Ek 1",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: resmî madde metni + çıkmış sorular)"
+  },
+  "cards": [
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "1481 sayılı Asayişe Müessir Bazı Fiillerin Önlenmesi Hakkında Kanun'a göre, haklarında tevkif veya yakalama müzekkeresi çıkarılıp silahlı dolaşan sanık veya hükümlülere teslim olmaları için ne kadar mühlet verilir?",
+      "back": "En az 10, en çok 30 gün. Mühlet sonuna kadar teslim olmayanlara karşı polis silah kullanmaya yetkilidir.",
+      "explanation": "Mühlet, sanık veya hükümlünün ad, san ve eylemleri belirtilerek dolaştığı bölgelerde mutat vasıtalarla ve uygun görülen yayın organlarıyla, radyo ve televizyonla da ilan edilir.",
+      "articleRefs": [
+        "1"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "1481 sayılı Kanun'a göre silahlı dolaşan sanık veya hükümlüye verilen teslim olma mühleti, ilanın yapıldığı tarihte mi başlar?",
+      "back": "Hayır. Mühlet, İçişleri Bakanlığınca tespit edilen tarihte başlar.",
+      "explanation": "İlan, sanık veya hükümlünün dolaştığı bölgelerde mutat vasıtalarla ve uygun görülen yayın organlarıyla, radyo ve televizyonla da yapılır.",
+      "articleRefs": [
+        "1"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "1481 sayılı Kanun'a göre mühleti ilan edilen sanık veya hükümlü, silah kullanılmasını önlemek için süre sonuna kadar nereye teslim olabilir?",
+      "back": "Adli makamlara, zabıtaya veya herhangi bir resmi mercie.",
+      "explanation": "Belirtilen süre sonuna kadar bu makamlardan birine teslim olmayanlara karşı polis silah kullanmaya yetkili hâle gelir. Bu yetki, diğer kanunlarda yazılı yetkiler saklı kalmak üzere tanınır.",
+      "articleRefs": [
+        "1"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "1481 sayılı Kanun'a göre mühlet sonunda teslim olmayan sanık veya hükümlüye karşı polis, \"Teslim ol\" ihtarı yapmadan hangi durumda silah kullanır?",
+      "back": "Sanık veya hükümlü polise karşı silah kullanmaya filhal teşebbüs ederse; bu durumda ihtara lüzum yoktur.",
+      "explanation": "Diğer durumlarda silah, \"Teslim ol\" ihtarından sonra kullanılır. Müsademe sırasında sanık veya hükümlüye müsademede ya da kaçmada yardımcı olanlar hakkında da aynı hüküm uygulanır.",
+      "articleRefs": [
+        "2"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "1481 sayılı Kanun hükümleri dairesinde silah kullanan polis hakkında soruşturmayı kim yapar?",
+      "back": "Cumhuriyet savcıları; soruşturmayı bizzat yaparlar.",
+      "articleRefs": [
+        "3"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "1481 sayılı Kanun hükümleri dairesinde silah kullanan ve hakkında dava açılan polise işten el çektirme uygulanabilir mi?",
+      "back": "Hayır. Açığa alma ve işten el çektirme işlemi uygulanmaz; sanık polis duruşmadan vareste de tutulabilir.",
+      "articleRefs": [
+        "3"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "1481 sayılı Kanun’a göre silahlı dolaşan sanık veya hükümlüyü yakını olmayan (usul, füru, eş ve kardeş dışındaki) bir kişi saklarsa, cezası asıl cürüm için kanunda tayin edilen cezanın en çok ne kadarı olabilir?",
+      "back": "Yarısı; ceza müddeti asıl cürüm için kanunda tayin edilen cezanın yarısını geçemez.",
+      "explanation": "Silah, cephane temin eden ya da bunların sağlanmasında yardımcı olan kişi de aynı hükme tabidir. Eylem daha ağır bir cezayı gerektiriyorsa o ceza uygulanır.",
+      "articleRefs": [
+        "4"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "1481 sayılı Kanun'a göre silahlı dolaşan sanığa kardeşi lehine silah veya cephane temin eden kişinin cezası en çok ne kadar olabilir?",
+      "back": "Asıl cürüm için kanunda tayin edilen cezanın dörtte biri.",
+      "explanation": "Bu sınır, fiili usul ve füruunun, karı veya kocasının ya da kardeşinin lehine işleyen kişi için geçerlidir. Fiilin icrasında faillerle evvelce ittifak etmemiş ve cürümün neticelenmesine yardımı dokunmamış olarak bu yakınlarını saklayan kişiye ise ceza verilmez.",
+      "articleRefs": [
+        "4"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "1481 sayılı Kanun'a göre Devletin bölünmez bütünlüğüne ve Anayasa düzenine aykırı suçların faillerinin yakalanmasına yardımcı olanlara verilecek ödülün miktarı neyle belirlenir?",
+      "back": "İçişleri Bakanlığınca çıkarılacak yönetmelikle; ödülün şekil ve ilan esasları da bu yönetmelikte gösterilir.",
+      "explanation": "Para ödülü, İçişleri Bakanlığınca belirlenecek kişilerin veya bu suçlardan sayılan olayların faillerinin yakalanabilmesine yardımcı olanlara ya da onların yerlerini yahut kimliklerini bildirenlere verilebilir.",
+      "articleRefs": [
+        "Ek 1"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "1481 sayılı Kanun'a göre faillerin yerini bildirdiği için İçişleri Bakanlığınca ödül verilen kişinin kimliği açıklanabilir mi?",
+      "back": "Hayır. Bu kişilerin kimlikleri açıklanamaz; haklarında koruyucu tedbir de alınır.",
+      "articleRefs": [
+        "Ek 1"
+      ],
+      "counterNumbers": []
+    }
+  ]
+}

@@ -1,0 +1,293 @@
+{
+  "deck": {
+    "topicId": "569628d2-5e1c-4788-ad66-1ef20d9374f6",
+    "legislationSlug": "5326-sayili-kabahatler-kanunu",
+    "sourceLabel": "AI bilgi kartı — 5326 Sayılı Kabahatler Kanunu md 32–42, 42/A, 43, 43/A, 43/B, 43/C, 44, 45, Ek 1",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: resmî madde metni + çıkmış sorular)"
+  },
+  "cards": [
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Yetkili makamın hukuka uygun olarak verdiği emre aykırı hareket eden kişiye verilecek idarî para cezasına kim karar verir?",
+      "back": "Emri veren makam karar verir. Ceza yüz Türk Lirası idarî para cezasıdır.",
+      "explanation": "Emir iki durumda verilmiş olabilir: adlî işlemler nedeniyle ya da kamu güvenliği, kamu düzeni veya genel sağlığın korunması amacıyla. Her iki durumda da emrin hukuka uygun olması gerekir.",
+      "articleRefs": [
+        "32"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Emre aykırı davranış maddesi, ilgili kanunda hüküm bulunmasa da her emre aykırılıkta uygulanabilir mi?",
+      "back": "Hayır. Madde ancak ilgili kanunda açıkça hüküm bulunan hallerde uygulanabilir.",
+      "explanation": "Böyle bir hüküm varsa idarî para cezasına emri veren makam karar verir.",
+      "articleRefs": [
+        "32"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Dilencilikten elde edilen gelirin mülkiyetinin kamuya geçirilmesine kim karar verir?",
+      "back": "Mülkî amir veya belediye encümeni karar verir.",
+      "explanation": "İdarî para cezasına ve gelire elkoymaya kolluk veya belediye zabıta görevlileri karar verir. Dilencilik yapan kişiye elli Türk Lirası idarî para cezası verilir.",
+      "articleRefs": [
+        "33"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Kumar oynayan kişiye ne kadar idarî para cezası verilir?",
+      "back": "Bin Türk Lirası. Ayrıca kumardan elde edilen gelire elkonulur ve mülkiyetin kamuya geçirilmesine karar verilir.",
+      "articleRefs": [
+        "34"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Kumardan elde edilen gelirin mülkiyetinin kamuya geçirilmesine kolluk görevlileri karar verebilir mi?",
+      "back": "Hayır. Kolluk görevlileri idarî para cezasına ve elkoymaya karar verir. Mülkiyetin kamuya geçirilmesine mülkî amir karar verir.",
+      "explanation": "Kumarda iş bölümü şöyledir: ceza ve elkoyma kolluğa, mülkiyetin kamuya geçirilmesi mülkî amire aittir.",
+      "articleRefs": [
+        "34"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Sarhoş olmak tek başına sarhoşluk kabahatini oluşturur mu?",
+      "back": "Hayır. Kişinin sarhoş olarak başkalarının huzur ve sükununu bozacak şekilde davranışlarda bulunması gerekir.",
+      "explanation": "Bu şart gerçekleşirse kolluk görevlileri elli Türk Lirası idarî para cezası verir.",
+      "articleRefs": [
+        "35"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Sarhoşluk kabahatinde idarî para cezasının yanında kişi hakkında ne yapılır?",
+      "back": "Kişi, sarhoşluğun etkisi geçinceye kadar kontrol altında tutulur.",
+      "explanation": "İdarî para cezasını kolluk görevlileri verir.",
+      "articleRefs": [
+        "35"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Gürültü kabahati bir ticarî işletmenin faaliyeti çerçevesinde işlenirse kime, hangi aralıkta idarî para cezası verilir?",
+      "back": "İşletme sahibi gerçek veya tüzel kişiye bin Türk Lirasından beşbin Türk Lirasına kadar idarî para cezası verilir.",
+      "explanation": "Gürültüye neden olan kişiye verilen ceza ise elli Türk Lirasıdır. Her iki durumda cezaya kolluk veya belediye zabıta görevlileri karar verir.",
+      "articleRefs": [
+        "36"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Mal veya hizmet satmak için başkalarını rahatsız eden kişiye idarî para cezası vermeye kim yetkilidir?",
+      "back": "Kolluk veya belediye zabıta görevlileri yetkilidir. Ceza elli Türk Lirasıdır.",
+      "articleRefs": [
+        "37"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Yetkili makamların açık ve yazılı izni olmadan kaldırıma inşaat malzemesi yığan kişiye hangi aralıkta idarî para cezası verilir?",
+      "back": "Yüz Türk Lirasından beşyüz Türk Lirasına kadar. Cezayı belediye zabıta görevlileri verir.",
+      "explanation": "Meydan, cadde, sokak veya kaldırımı izinsiz işgal eden ya da buralarda mal satışa arz eden kişiye de belediye zabıta görevlileri ceza verir; bu ceza elli Türk Lirasıdır. Özel kanunlardaki hükümler saklıdır.",
+      "articleRefs": [
+        "38"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Özel hukuk kişilerince işletilen bir toplu taşıma aracında tütün mamulü tüketen kişiye idarî para cezasını kim verir?",
+      "back": "İlk başvurulan kolluk birim yetkilileri verir. Ceza elli Türk Lirasıdır.",
+      "explanation": "Kamuya ait toplu taşıma araçlarında yetki bakımından birinci fıkra uygulanır. Bu durumda cezayı ilgili idarî birim amirinin yetkili kıldığı kamu görevlileri verir.",
+      "articleRefs": [
+        "39"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Kamu hizmet binasında tütün mamulü tüketilmesine tahsis edilen alanda tütün mamulü tüketen kişiye idarî para cezası verilir mi?",
+      "back": "Hayır. Kapalı alan yasağına ilişkin hüküm, tütün mamulü tüketilmesine tahsis edilen alanlarda uygulanmaz.",
+      "explanation": "Tahsisli alan dışındaki kapalı alanlarda tüketen kişiye ceza verilir. Cezayı ilgili idarî birim amirinin yetkili kıldığı kamu görevlileri verir; miktarı elli Türk Lirasıdır.",
+      "articleRefs": [
+        "39"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Kamu görevlisine açıklama yapmaktan kaçındığı için kimliği belirlenemeyen kişi hakkında ne yapılır?",
+      "back": "Kişi tutulur ve durumdan derhal Cumhuriyet savcısı haberdar edilir. Kimliği açıkça anlaşılıncaya kadar gözaltına alınır, gerekirse tutuklanır.",
+      "explanation": "Gözaltı ve tutuklamada karar verme yetkisi ve usulü bakımından Ceza Muhakemesi Kanunu hükümleri uygulanır. Kimlik bilgisi vermekten kaçınan ya da gerçeğe aykırı beyanda bulunan kişiye, soran görevli elli Türk Lirası idarî para cezası verir.",
+      "articleRefs": [
+        "40"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Kimliği belirlenen kişinin, bu nedenle başlayan gözaltı hali kimlik tespitinden sonra da sürdürülebilir mi?",
+      "back": "Hayır. Kimlik belirlenince, bu nedenle gözaltına alınma veya tutuklanma haline derhal son verilir.",
+      "explanation": "Gözaltı ve gerekirse tutuklama, kimlik açık bir şekilde anlaşılıncaya kadar sürer.",
+      "articleRefs": [
+        "40"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Çevreyi kirletme kabahatlerinde idarî para cezasına kim karar verir?",
+      "back": "Belediye sınırları içinde belediye zabıta görevlileri, belediye sınırları dışında kolluk görevlileri karar verir.",
+      "explanation": "Özel kanunlardaki hükümler saklıdır.",
+      "articleRefs": [
+        "41"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Kullanılamaz ev eşyasını toplama günü dışında sokağa bırakan kişi eşyayı derhal kaldırırsa, ona idarî para cezası verilmesi zorunlu mudur?",
+      "back": "Hayır. Kirlilik kişi tarafından derhal giderilirse idarî para cezasına karar verilmeyebilir.",
+      "explanation": "Ev eşyasını belirlenen gün dışında sokağa veya kamuya ait sair bir yere bırakmanın cezası elli Türk Lirasıdır.",
+      "articleRefs": [
+        "41"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Belediye, kullanılamaz hale gelen veya ihtiyaç fazlası ev eşyasının toplanması için yılda en az kaç gün belirler?",
+      "back": "Yılda üç günden az olmamak üzere, belirli aralıklarla gün belirler. Bu günler önceden uygun araçlarla ilân olunur.",
+      "explanation": "Eşyayı bu günlerin dışında sokağa veya kamuya ait sair bir yere bırakan kişiye elli Türk Lirası idarî para cezası verilir.",
+      "articleRefs": [
+        "41"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Aynı içerikteki birden çok afişi asan kişi, her afiş için ayrı fiil işlemiş sayılır mı?",
+      "back": "Hayır. Aynı içerikteki afiş ve ilânlar tek fiil sayılır.",
+      "explanation": "Afiş asma cezası yüz Türk Lirasından üçbin Türk Lirasına kadardır. Afişlerin kaldırılma masrafları da ilgili kişilerden ayrıca tahsil edilir.",
+      "articleRefs": [
+        "42"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "112 Acil Çağrı Merkezine yapılan ihbarın asılsız olduğu tespit edilirse idari para cezasını kim verir?",
+      "back": "İl valileri verir. Ceza onbeşbin Türk Lirasıdır.",
+      "explanation": "İhbarın asılsız olduğu, olay yerine giden ekiplerce tutanakla tespit edilmelidir.",
+      "articleRefs": [
+        "42/A"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "112 Acil Çağrı Merkezini meşgul etmek amacıyla arayıp görevlilerle konuşan kişiye ne kadar idari para cezası verilir?",
+      "back": "Binbeşyüz Türk Lirası. Cezayı il valileri verir.",
+      "explanation": "Aynı amaçla ısrarla çağrı bırakan kişiye de bu ceza verilir.",
+      "articleRefs": [
+        "42/A"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "112 Acil Çağrı Merkezini meşgul etmek amacıyla arama ya da asılsız ihbar fiili ne kadar süre içinde tekrarlanırsa ceza artar?",
+      "back": "Bir yıl içinde tekrarlanırsa idari para cezası iki katı olarak uygulanır.",
+      "explanation": "Artırma, maddede yazılı fiillerin bir yıl içinde tekrarına bağlanmıştır.",
+      "articleRefs": [
+        "42/A"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Silah taşıma kabahati hangi davranışla oluşur?",
+      "back": "Ruhsat almadan, kanuna göre yasak olmayan silahları park, meydan, cadde veya sokaklarda görünür bir şekilde taşımakla oluşur. Kolluk elli Türk Lirası idarî para cezası verir.",
+      "articleRefs": [
+        "43"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Tüzel kişinin yararına işlenen rüşvet suçu nedeniyle tüzel kişiye verilecek idarî para cezasına kim karar verir?",
+      "back": "Rüşvet suçundan dolayı yargılama yapmakla görevli mahkeme karar verir.",
+      "explanation": "Ceza için suçun tüzel kişinin yararına işlenmesi gerekir. Suçu işleyen; tüzel kişinin organı, temsilcisi ya da tüzel kişinin faaliyeti çerçevesinde görev üstlenen bir kişi olmalıdır. Ayrıca fiil, daha ağır idarî para cezasını gerektiren bir kabahat oluşturmamalıdır.",
+      "articleRefs": [
+        "43/A"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Dolandırıcılık, rüşvet ya da aklama gibi md 43/A'da sayılan suçlar tüzel kişinin yararına işlenirse tüzel kişiye verilecek idarî para cezasının sınırları nedir?",
+      "back": "Onbin Türk Lirasından elli milyon Türk Lirasına kadardır. Ancak ceza, işleme veya eyleme konu menfaatin iki katından az olamaz.",
+      "articleRefs": [
+        "43/A"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "İbraz edilen paranın sahte olduğunu anlayıp bildirim yükümlülüğünü yerine getirmeyen bankaya idarî para cezasını kim verir?",
+      "back": "Cumhuriyet savcısı verir. Ceza bin Türk Lirasından beşbin Türk Lirasına kadardır.",
+      "explanation": "Hüküm şu kuruluşları kapsar: bankalar, finansal kuruluşlar, paranın sayım ve incelemesini yaparak bankalara destek hizmeti veren kuruluşlar ve dövize ilişkin işlem yapmasına izin verilen şirketler. Bildirim yükümlülüğü 5237 sayılı Kanunun 278 inci maddesinde düzenlenir.",
+      "articleRefs": [
+        "43/B"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "6136 sayılı Kanun kapsamı dışındaki bıçak ve kesici aletlerin hangi yaştan küçük çocuklara satılması yasaktır?",
+      "back": "Onsekiz yaşından küçük çocuklara. Çocukların bunları satın alması veya taşıması da yasaktır.",
+      "explanation": "Yasağa uymayan kişiye beşbin Türk Lirası idarî para cezası verilir. Cezaya ve elkoymaya kolluk görevlileri, mülkiyetin kamuya geçirilmesine mülkî amir karar verir.",
+      "articleRefs": [
+        "43/C"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Bıçak satış ve taşıma yasağına uyulmadığında, bıçak veya aletler sayı ya da nitelik bakımından vahimse ne kadar ceza verilir?",
+      "back": "Onbin Türk Lirası idarî para cezası verilir.",
+      "explanation": "Vahim olmayan halde ceza beşbin Türk Lirasıdır. Kabahatin işlendiğini öğrenip yetkili makamlara bildirmeyen işletici veya sorumluya da beşbin Türk Lirası idarî para cezası verilir.",
+      "articleRefs": [
+        "43/C"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Bıçak satın alma ya da taşıma yasağını ihlal eden, onbeş yaşını doldurmamış çocuk için tedbir talebinde kim bulunur?",
+      "back": "Mülkî amir. Çocuk Koruma Kanunu uyarınca koruyucu, destekleyici ve yönlendirme tedbirlerine karar verilmesi için çocuk hâkiminden talepte bulunur.",
+      "explanation": "Talepte çocuğun üstün yararı gözetilir.",
+      "articleRefs": [
+        "43/C"
+      ]
+    }
+  ]
+}

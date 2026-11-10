@@ -1,0 +1,286 @@
+{
+  "deck": {
+    "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+    "legislationSlug": "turk-ceza-kanunu",
+    "sourceLabel": "AI bilgi kartı — Türk Ceza Kanunu md 224–227, 229, 231–233, 253, 261, 262, 264, 268, 277, 284, 286, 289–291, 294, 295, 298, 304, 307",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: resmî madde metni + çıkmış sorular)"
+  },
+  "cards": [
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Kıt'a sahanlığında kurulmuş sabit bir platformu cebir veya tehdit kullanarak ele geçiren kişiye hangi ceza verilir?",
+      "back": "Beş yıldan onbeş yıla kadar hapis cezası.",
+      "explanation": "Münhasır ekonomik bölgedeki sabit platformu zapteden ya da hukuka aykırı başka bir davranışla kontrolü altına alan kişiye de aynı ceza verilir. Suç sırasında kişilerin hürriyeti tahdit edilirse bundan dolayı ayrıca cezaya hükmolunur.",
+      "articleRefs": [
+        "224"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Alenen cinsel ilişkide bulunan kişiye hangi ceza verilir?",
+      "back": "Altı aydan bir yıla kadar hapis cezası.",
+      "explanation": "Teşhircilik yapan kişi de hayasızca hareketler suçundan aynı cezayla cezalandırılır.",
+      "articleRefs": [
+        "225"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Müstehcen ürünlerin üretiminde çocukları kullanan kişiye hangi ceza verilir?",
+      "back": "Beş yıldan on yıla kadar hapis ve beşbin güne kadar adlî para cezası.",
+      "explanation": "Temsili çocuk görüntülerini veya çocuk gibi görünen kişileri kullanan da aynı cezayı alır. Bu ürünleri ülkeye sokan, çoğaltan, satan, nakleden, depolayan ya da bulunduran kişiye iki yıldan beş yıla kadar hapis ve beşbin güne kadar adlî para cezası verilir.",
+      "articleRefs": [
+        "226"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Sanatsal ve edebi değeri olan eserlere tanınan muafiyet, üretiminde çocuk kullanılan müstehcen ürünleri de kapsar mı?",
+      "back": "Hayır. Muafiyet üçüncü fıkra hariç tutularak tanınır; üretiminde çocuk kullanılan ürünlerde müstehcenlik hükümleri uygulanır.",
+      "explanation": "Sanatsal ve edebi eserlerin muafiyeti ayrıca eserin çocuklara ulaşmasının engellenmesi koşuluna bağlıdır. Bilimsel eserler ise madde hükümlerinin dışında tutulur.",
+      "articleRefs": [
+        "226"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Çocuğu fuhşa teşvik eden kişiye hangi ceza verilir?",
+      "back": "Dört yıldan on yıla kadar hapis ve beşbin güne kadar adlî para cezası.",
+      "explanation": "Aynı ceza çocuğun fuhşuna aracılık eden, bu maksatla tedarik eden veya barındıran kişiye de verilir. Bu suçun işlenişine yönelik hazırlık hareketleri de tamamlanmış suç gibi cezalandırılır.",
+      "articleRefs": [
+        "227"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Cebir veya tehdit kullanarak bir kimseyi fuhşa sevk eden kişiye verilecek ceza yarı oranında mı artırılır?",
+      "back": "Hayır. Cebir, tehdit, hile ya da çaresizlikten yararlanma halinde ceza yarısından iki katına kadar artırılır.",
+      "explanation": "Yarı oranında artırım; suçun eş, üstsoy, kardeş, vasi gibi kişiler ya da koruma ve gözetim yükümlülüğü bulunanlar tarafından, kamu görevinin sağladığı nüfuz kötüye kullanılarak veya örgüt faaliyeti çerçevesinde işlenmesi halinde uygulanır.",
+      "articleRefs": [
+        "227"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Çocukları dilencilikte araç olarak kullanma suçu örgüt faaliyeti çerçevesinde işlenirse ceza yarı oranında mı artırılır?",
+      "back": "Hayır. Örgüt faaliyeti çerçevesinde işlenirse ceza bir kat artırılır.",
+      "explanation": "Yarı oranında artırım, suçun üçüncü derece dahil kan veya kayın hısımları ya da eş tarafından işlenmesi halidir. Temel ceza bir yıldan üç yıla kadar hapistir; beden veya ruh bakımından kendini idare edemeyecek durumda bulunan kimseleri araç olarak kullanmak da aynı suçu oluşturur.",
+      "articleRefs": [
+        "229"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Özen yükümlülüğüne aykırı davranarak sağlık kurumundaki bir çocuğun başka bir çocukla karışmasına neden olan kişi hangi suç kapsamında cezalandırılır?",
+      "back": "Çocuğun soybağını değiştirme suçu kapsamında; bir yıla kadar hapis cezası verilir.",
+      "explanation": "Bir çocuğun soybağını değiştiren veya gizleyen kişi ise bir yıldan üç yıla kadar hapis cezası ile cezalandırılır.",
+      "articleRefs": [
+        "231"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Büyütmek veya okutmakla yükümlü olduğu kişi üzerinde terbiye hakkından doğan disiplin yetkisini kötüye kullanmak hangi suçu oluşturur?",
+      "back": "Kötü muamele suçunu; faile bir yıla kadar hapis cezası verilir.",
+      "explanation": "Aynı konutta birlikte yaşadığı kişilerden birine karşı kötü muamelede bulunan kimse ise iki aydan bir yıla kadar hapis cezası ile cezalandırılır.",
+      "articleRefs": [
+        "232"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Aile hukukundan doğan bakım, eğitim veya destek olma yükümlülüğünü yerine getirmeyen kişi hangi şartla cezalandırılır?",
+      "back": "Şikayet üzerine; üç aydan iki yıla kadar hapis cezası verilir.",
+      "explanation": "Hamile olduğunu bildiği eşini çaresiz durumda terk eden kimseye ise altı aydan iki yıla kadar hapis cezası verilir. Bu ihmal nedeniyle çocuk kasten öldürme ya da neticesi sebebiyle ağırlaşmış yaralama suçunu işlerse şikâyet aranmaz ve ceza yarısından iki katına kadar artırılır.",
+      "articleRefs": [
+        "233"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Kamu görevlisi karşılığını ödeyerek kişilerin malı üzerinde zorla tasarrufta bulunursa usulsüz tasarruf suçu oluşur mu?",
+      "back": "Evet. İlgili kanunlardaki koşullara aykırı olduğunu bilerek yapılan zorla tasarruf, karşılık ödenmek suretiyle de olsa suç oluşturur.",
+      "explanation": "Suç taşınır ve taşınmaz mallar üzerinde işlenebilir. Fiil daha ağır cezayı gerektiren bir suç oluşturmadığı takdirde altı aydan iki yıla kadar hapis cezası verilir.",
+      "articleRefs": [
+        "261"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Terk emri kendisine bildirildiği halde kamu görevini sürdüren kimse hangi suçu işler?",
+      "back": "Kamu görevinin usulsüz olarak üstlenilmesi suçunu; üç aydan iki yıla kadar hapis cezası verilir.",
+      "explanation": "Bir kamu görevini kanun ve nizamlara aykırı olarak yerine getirmeye teşebbüs eden kimse de aynı cezayla cezalandırılır.",
+      "articleRefs": [
+        "262"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Resmi elbisenin sağladığı kolaylıktan yararlanarak suç işlenirse usulsüz kıyafet kullanma fiilinin cezası hangi oranda artırılır?",
+      "back": "Üçte biri oranında artırılarak hükmolunur; artırım yalnız elbiseyi usulsüz giyme fiilinden ötürü verilecek cezaya uygulanır.",
+      "explanation": "Bir rütbe, kamu görevi veya mesleğin resmi elbisesini yetkisi olmaksızın alenen ve başkalarını yanıltacak şekilde giyen ya da hakkı olmayan nişan veya madalyaları takan kimseye üç aydan bir yıla kadar hapis cezası verilir.",
+      "articleRefs": [
+        "264"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "İşlediği suç nedeniyle hakkında soruşturma yapılmasını engellemek için başkasının kimlik bilgilerini kullanan kişi hangi suçun hükümlerine göre cezalandırılır?",
+      "back": "İftira suçuna ilişkin hükümlere göre.",
+      "explanation": "Kovuşturma yapılmasını engellemek amacıyla başkasına ait kimliği kullanmak da aynı sonuca bağlanır.",
+      "articleRefs": [
+        "268"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Tanığı hukuka aykırı olarak etkilemeye yönelik teşebbüs iltimas derecesini geçmezse hangi ceza verilir?",
+      "back": "Altı aydan iki yıla kadar hapis cezası; iltimas derecesini aşan teşebbüste ceza iki yıldan dört yıla kadardır.",
+      "explanation": "Suç, görülmekte olan bir davada gerçeğin ortaya çıkmasını engellemek veya bir haksızlık oluşturmak amacıyla yargı görevi yapanı, bilirkişiyi veya tanığı etkilemeye teşebbüsle işlenir. Fiil başka bir suçu da oluşturursa fikri içtima hükümlerine göre verilecek ceza yarısına kadar artırılır.",
+      "articleRefs": [
+        "277"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Hakkında tutuklama kararı verilmiş kardeşinin bulunduğu yeri yetkili makamlara bildirmeyen kişiye ceza verilir mi?",
+      "back": "Hayır. Bu suç üstsoy, altsoy, eş veya kardeş tarafından işlenirse cezaya hükmolunmaz.",
+      "explanation": "Diğer kişiler için ceza bir yıla kadar hapistir. Suçun kamu görevlisi tarafından göreviyle bağlantılı olarak işlenmesi halinde ceza yarı oranında artırılır.",
+      "articleRefs": [
+        "284"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Soruşturma işlemleri sırasındaki ses veya görüntüleri yetkisiz olarak kayda alan kişiye hangi ceza verilir?",
+      "back": "Altı aya kadar hapis cezası.",
+      "explanation": "Bu ses veya görüntüleri yetkisiz olarak nakleden kişi ve kovuşturma işlemleri sırasında aynı fiili işleyen kişi de aynı cezayla cezalandırılır.",
+      "articleRefs": [
+        "286"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Muhafazasına resmen teslim edilen hacizli mal üzerinde teslim amacı dışında tasarrufta bulunan kişi, eşyayı kovuşturma başlamadan önce geri verirse cezası ne kadar indirilir?",
+      "back": "Beşte dördü indirilir; geri vermek mümkün değilse bedelini ödeyen kişi de bu indirimden yararlanır.",
+      "explanation": "Temel ceza üç aydan iki yıla kadar hapis ve üç bin güne kadar adlî para cezasıdır. Kişi malın sahibiyse verilecek ceza yarı oranında indirilir.",
+      "articleRefs": [
+        "289"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Muhafaza edilmek üzere başkasına resmen teslim olunan hacizli taşınır mal hileyle alınırsa hangi suça ilişkin hükümler uygulanır?",
+      "back": "Dolandırıcılık suçuna ilişkin hükümler.",
+      "explanation": "Mal rızası dışında alınırsa hırsızlık, cebren alınırsa yağma, tahrip edilirse mala zarar verme suçuna ilişkin hükümler uygulanır. Fail malın sahibiyse verilecek cezanın yarısından dörtte üçüne kadarı indirilir.",
+      "articleRefs": [
+        "290"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Kendisini bir hükümlünün yerine koyarak ceza infaz kurumuna giren kimse hangi suçu işler?",
+      "back": "Başkası yerine ceza infaz kurumuna veya tutukevine girme suçunu; altı aydan iki yıla kadar hapis cezası verilir.",
+      "explanation": "Kendisini bir tutuklunun yerine koyarak tutukevine giren kimse de aynı suçu işler.",
+      "articleRefs": [
+        "291"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Ağırlaştırılmış müebbet hapis cezasına mahkûm bir hükümlünün kaçmasını sağlayan kişiye hangi ceza verilir?",
+      "back": "Sekiz yıldan oniki yıla kadar hapis cezası.",
+      "explanation": "Hükümlünün cezası müebbet hapisse kaçmasını sağlayana beş yıldan sekiz yıla, diğer hallerde çekilecek cezanın süresine göre iki yıldan beş yıla kadar hapis verilir. Gözaltına alınanın veya tutuklunun kaçmasını sağlayana ise bir yıldan üç yıla kadar hapis cezası verilir.",
+      "articleRefs": [
+        "294"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Birden fazla tutuklunun kaçması sağlanırsa ceza yalnız üçte biri oranında mı artırılır?",
+      "back": "Hayır. Kaçması sağlanan kişi sayısı birden fazlaysa, bu sayı göz önünde bulundurularak ceza üçte birden bir katına kadar artırılır.",
+      "explanation": "Sabit üçte bir artırım, suçun cebir veya tehdit kullanılarak ya da muhafaza veya nakille görevli kişiler tarafından işlenmesi halleri içindir. Suç üstsoy, altsoy, eş veya kardeş tarafından işlenirse ceza üçte biri oranında indirilir.",
+      "articleRefs": [
+        "294"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Muhafız, tutuklunun bulunduğu yerden geçici bir süreyle uzaklaşmasına görevine aykırı olarak izin verir ve tutuklu bu fırsattan yararlanıp kaçarsa hangi suça ilişkin hükümler uygulanır?",
+      "back": "Kaçmaya kasten imkan sağlama suçuna ilişkin hükümler.",
+      "explanation": "Görevinin gereklerine aykırı olarak geçici uzaklaşma izni veren muhafaza veya nakil görevlisi, bu fiil için altı aydan iki yıla kadar hapis cezası ile cezalandırılır. Bu görevlilerin görevlerinin gereklerine aykırı diğer hareketlerinde görevi kötüye kullanma suçuna ilişkin hükümler uygulanır.",
+      "articleRefs": [
+        "295"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Hükümlü ve tutukluların açlık grevine teşvik edilmesi hangi fiil sayılır?",
+      "back": "Beslenmenin engellenmesi sayılır; iki yıldan dört yıla kadar hapis cezası verilir.",
+      "explanation": "Ölüm orucuna teşvik veya ikna edilmeleri ya da bu yolda kendilerine talimat verilmesi de beslenmenin engellenmesidir. Bu nedenle kasten yaralamanın neticesi sebebiyle ağırlaşmış hallerinden biri veya ölüm meydana gelirse ayrıca kasten yaralama veya kasten öldürme hükümlerine göre cezaya hükmolunur.",
+      "articleRefs": [
+        "298"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Devlete karşı savaşa tahrik suçunda, Türkiye Cumhuriyeti Devletinin güvenliğine karşı suç işlemek üzere oluşturulmuş örgütlerin desteklenmesi nasıl kabul edilir?",
+      "back": "Hasmane hareket olarak kabul edilir; destek doğrudan veya dolaylı olabilir.",
+      "explanation": "Türkiye Cumhuriyeti Devletine karşı savaş açması veya hasmane hareketlerde bulunması için yabancı devlet yetkililerini tahrik eden ya da bu amaçla onlarla işbirliği yapan kişiye on yıldan yirmi yıla kadar hapis cezası verilir.",
+      "articleRefs": [
+        "304"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Devletin silahlı kuvvetlerine ait askerî tesisleri tahrip eden kişiye, ağırlaştırıcı hal yoksa hangi ceza verilir?",
+      "back": "Altı yıldan oniki yıla kadar hapis cezası.",
+      "explanation": "Tesisler henüz tamamlanmamış olsa bile suç oluşur; tahribin kısmen yapılması ya da tesisin geçici bir süre için kullanılmayacak hale getirilmesi de yeterlidir.",
+      "articleRefs": [
+        "307"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Askerî tesisleri tahrip suçu Türkiye ile savaş halinde bulunan bir devletin çıkarı için işlenirse hangi ceza verilir?",
+      "back": "Ağırlaştırılmış müebbet hapis cezası.",
+      "explanation": "Suçun Devletin savaş hazırlıklarını, savaş kudret ve yeteneğini veya askerî hareketlerini tehlikeye koymuş olması halinde de aynı cezaya hükmolunur.",
+      "articleRefs": [
+        "307"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,238 @@
+{
+  "deck": {
+    "topicId": "92736577-adb7-4e81-8935-9eb3391f748e",
+    "legislationSlug": "5253-sayili-dernekler-kanunu",
+    "sourceLabel": "AI bilgi kartı — 5253 Sayılı Dernekler Kanunu md 1, 4, 6, 7, 12, 16, 19, 21, 22, 25, 37, 38",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: resmî madde metni + çıkmış sorular)"
+  },
+  "cards": [
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Dernekler Kanunu derneklerin hangi faaliyetlerini düzenlemeyi amaçlar?",
+      "back": "Yasak ve izne tâbi faaliyetlerini düzenler. Bunların yanında yükümlülükleri, denetimleri ve uygulanacak cezalar da düzenlenir.",
+      "explanation": "Kanunun kapsamında dernekler, dernek şube veya temsilcilikleri, federasyonlar ve konfederasyonlar yer alır.",
+      "articleRefs": [
+        "1"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Dernek tüzüğünde şubelere ilişkin hangi hususların belirtilmesi zorunludur?",
+      "back": "Önce derneğin şubesinin bulunup bulunmayacağı yazılır. Şube bulunacaksa şubelerin nasıl kurulacağı, görev ve yetkileri ve dernek genel kurulunda nasıl temsil edileceği de belirtilir.",
+      "explanation": "Her derneğin bir tüzüğü bulunur. Şubelere ilişkin bu hususlar, tüzükte belirtilmesi zorunlu hususlar arasındadır.",
+      "articleRefs": [
+        "4"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Dernek tüzüğünde yönetim ve denetim kurullarının yalnız asıl üye sayısını göstermek yeterli midir?",
+      "back": "Hayır. Tüzükte asıl ve yedek üye sayısı birlikte yazılır. Kurulların görev ve yetkileri ile ne suretle seçileceği de belirtilir.",
+      "explanation": "Tüzükte belirtilmesi zorunlu hususların bazıları şunlardır: genel kurulun toplanma şekli ve zamanı, derneğin iç denetim şekilleri, tüzüğün ne şekilde değiştirileceği.",
+      "articleRefs": [
+        "4"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Dernek tüzüğüne üyelerin ödeyeceği yıllık aidatın tutarını yazmak zorunlu mudur?",
+      "back": "Hayır. Tüzükte zorunlu olan, üyelerin ödeyecekleri giriş ve yıllık aidat miktarının belirlenme şeklidir.",
+      "explanation": "Tüzükte malî konularda belirtilmesi zorunlu hususlar arasında derneğin borçlanma usulleri de bulunur. Derneğin feshi hâlinde mal varlığının tasfiye şekli de bu hususlardandır.",
+      "articleRefs": [
+        "4"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Bir tüzel kişi derneğe üye olduğunda dernekte oyu kim kullanır?",
+      "back": "Oyu tüzel kişinin yönetim kurulu başkanı kullanır. Başkan yerine tüzel kişinin temsille görevlendireceği kişi de oy kullanabilir.",
+      "articleRefs": [
+        "6"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Tüzel kişi adına oy kullanan kişinin başkanlık ya da temsil görevi sona ererse ne olur?",
+      "back": "Tüzel kişi adına oy kullanacak kimse yeniden belirlenir.",
+      "articleRefs": [
+        "6"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Şube genel kurulları olağan toplantılarını merkez genel kurulu toplantısından en az ne kadar önce bitirmek zorundadır?",
+      "back": "En az iki ay önce bitirmek zorundadır.",
+      "explanation": "Kural olağan toplantılar için konmuştur. Ölçü, şube toplantılarının merkez genel kurulu toplantısından önce bitmiş olmasıdır.",
+      "articleRefs": [
+        "7"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Dernekler üyelerinin hangi ihtiyaçlarını karşılamak amacıyla sandık kurabilir?",
+      "back": "Sandık, üyelerin yiyecek, giyecek gibi zarurî ihtiyaç maddelerini karşılamak için kurulabilir. Diğer mal ve hizmetlerle kısa vadeli kredi ihtiyaçları için de kurulabilir.",
+      "explanation": "Sandık kurulabilmesi için bunun tüzükte yazılı olması gerekir.",
+      "articleRefs": [
+        "12"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Dernek sandığının sağladığı kâr, faiz adıyla üyelere aktarılabilir mi?",
+      "back": "Hayır. Sandık, kârı üyelere paylaştırmamak şartıyla kurulabilir. Kâr gelir, faiz veya başka adlarla da üyelere aktarılamaz; sandığın tüzükte yazılı olması da şarttır.",
+      "articleRefs": [
+        "12"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Dernek sandıklarının kuruluş ve çalışma esasları nerede düzenlenir?",
+      "back": "Yönetmelikte düzenlenir.",
+      "explanation": "Sandığın kurulabilmesi için tüzükte yazılı olması gerekir. Sağlanan kâr üyelere paylaştırılamaz; gelir, faiz veya başka adlarla da üyelere aktarılamaz.",
+      "articleRefs": [
+        "12"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Basımevleri, dernek alındı belgelerini bastıktan sonra seri ve sıra numaralarını kaç gün içinde bildirmek zorundadır?",
+      "back": "Onbeş gün içinde bildirmek zorundadır. Süre belgeler basıldıktan sonra işlemeye başlar.",
+      "explanation": "Bu belgeler dernek gelirlerinin toplanmasında kullanılacak alındı belgeleridir.",
+      "articleRefs": [
+        "16"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Basımevleri dernek alındı belgelerine ilişkin bildirimi hangi makama yapar?",
+      "back": "Mülkî idare amirliğine yapar.",
+      "articleRefs": [
+        "16"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "İçişleri Bakanlığı ve mülkî idare amirlerinin yapacağı dernek denetimleri derneklere en az ne kadar önce bildirilir?",
+      "back": "En az yirmidört saat önce bildirilir.",
+      "explanation": "Bu denetimler mesai saatleri içerisinde yapılır. Denetimlerin, risk değerlendirmelerine göre üç yılı geçmeyecek şekilde her yıl yapılması esastır.",
+      "articleRefs": [
+        "19"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Dernek denetiminde İçişleri Bakanı kolluk kuvveti mensuplarını görevlendirebilir mi?",
+      "back": "Hayır. Denetim kamu görevlilerine yaptırılabilir; ancak bu denetimlerde kolluk kuvveti mensupları görevlendirilemez.",
+      "explanation": "Gerekli görülen hallerde denetimi İçişleri Bakanı veya mülkî idare amiri kamu görevlilerine yaptırabilir. Uzmanlık veya teknik bilgi gerektiren durumlarda İçişleri Bakanlığı, valilikler ve kaymakamlıklar bilirkişi görevlendirebilir. Denetimde suç teşkil eden fiil tespit edilirse mülkî idare amiri durumu derhal Cumhuriyet savcılığına ve derneğe bildirir.",
+      "articleRefs": [
+        "19"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Dernekler yurt dışındaki kişi, kurum ve kuruluşlardan yardım almak için hangi şartı yerine getirmelidir?",
+      "back": "Mülkî idare amirliğine önceden bildirimde bulunmalıdır. Bu şartla aynî ve nakdî yardım alabilirler.",
+      "explanation": "Bildirimin şekli ve içeriği yönetmelikte düzenlenir.",
+      "articleRefs": [
+        "21"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Yurt dışından alınan aynî yardımların bankalar aracılığıyla alınması zorunlu mudur?",
+      "back": "Hayır. Bankalar aracılığıyla alınma zorunluluğu nakdî yardımlar içindir. Aynî yardımda da mülkî idare amirliğine önceden bildirim şartı aranır.",
+      "articleRefs": [
+        "21"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Bir dernek yurt dışına yardım yapacaksa bildirimini ne zaman yapar?",
+      "back": "Yardım yapılmadan önce yapar. Bildirim mülkî idare amirliğine yapılır.",
+      "explanation": "Bildirimin şekli ve içeriği yönetmelikte düzenlenir. Yurt dışına yapılacak yardımlara ilişkin usul ve esaslar da yönetmelikte düzenlenir.",
+      "articleRefs": [
+        "21"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Derneğin taşınmaz mal satın alma kararını hangi organ alır?",
+      "back": "Kararı yönetim kurulu alır. Bunun için genel kurulun yetki vermesi gerekir.",
+      "articleRefs": [
+        "22"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Dernek edindiği taşınmazı mülkî idare amirliğine hangi süre içinde bildirmekle yükümlüdür?",
+      "back": "Tapuya tescilinden itibaren bir ay içinde bildirmekle yükümlüdür.",
+      "articleRefs": [
+        "22"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Dernek kendi taşınmaz malını satarken de genel kurulun yetki vermesi aranır mı?",
+      "back": "Evet. Dernekler taşınmaz satın almayı da, taşınmaz mallarını satmayı da aynı usulle yapar: genel kurulun yetki vermesi üzerine yönetim kurulu kararıyla.",
+      "explanation": "Edinilen taşınmazlar için ayrıca bildirim yükümlülüğü vardır. Taşınmaz, tapuya tescilinden itibaren bir ay içinde mülkî idare amirliğine bildirilir.",
+      "articleRefs": [
+        "22"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Dernekler plâtform oluşturma kararını hangi organlarıyla alır?",
+      "back": "Yetkili organlarının kararıyla.",
+      "explanation": "Plâtform ortak bir amacı gerçekleştirmek üzere kurulur. Kuruluş kararı derneğin yetkili organlarınca alınır.",
+      "articleRefs": [
+        "25"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Dernekler hangi alanlarda plâtform oluşturabilir?",
+      "back": "Amaçları ile ilgisi bulunan ve kanunlarla yasaklanmayan alanlarda plâtform oluşturabilirler.",
+      "explanation": "Plâtformlar, kanunların dernekler için yasakladığı amaç ve faaliyet konuları doğrultusunda kurulamaz ve faaliyet gösteremez.",
+      "articleRefs": [
+        "25"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Kanunların dernekler için yasakladığı amaç doğrultusunda plâtform kurup faaliyet gösterenler hakkında hangi hükümler uygulanır?",
+      "back": "Bu Kanun ve ilgili kanunların cezaî hükümleri uygulanır.",
+      "articleRefs": [
+        "25"
+      ]
+    }
+  ]
+}

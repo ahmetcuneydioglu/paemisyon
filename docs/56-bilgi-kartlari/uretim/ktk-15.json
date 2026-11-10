@@ -1,0 +1,267 @@
+{
+  "deck": {
+    "topicId": "3f91916c-8d15-40f4-bb20-5bcca9253c34",
+    "legislationSlug": "2918-sayili-karayollari-trafik-kanunu",
+    "sourceLabel": "AI bilgi kartı — 2918 Sayılı Karayolları Trafik Kanunu md 119–138, Ek 1, Ek 2",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: resmî madde metni + çıkmış sorular)"
+  },
+  "cards": [
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Mahkemenin verdiği geçici geri alma kararı, hürriyeti bağlayıcı cezanın infazıyla aynı anda mı yerine getirilir?",
+      "back": "Hayır. Sürücü belgesinin geçici geri alınması, hürriyeti bağlayıcı ceza hükümlerinin infazından sonra yerine getirilir.",
+      "explanation": "Geri almaya mahkeme karar verir. Süresi ceza süresini geçemez; uygulaması da cezanın infazı bittikten sonra başlar.",
+      "articleRefs": [
+        "119"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Trafikte kullanılan suç ve ceza tutanakları elektronik ortamda üretilip düzenlenebilir mi?",
+      "back": "Evet; söz konusu tutanaklar elektronik ortamda da üretilebilir ve düzenlenebilir.",
+      "articleRefs": [
+        "121"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Öğrenim kurumları dışındaki gerçek ve tüzelkişilerin karayolunu kullananlara yönelik eğitim çalışmalarını tespit ve denetlemeye kimler yetkilidir?",
+      "back": "Emniyet Genel Müdürlüğünün koordinatörlüğünde Emniyet ve Karayolları Genel Müdürlükleri yetkilidir.",
+      "explanation": "Yetkinin iki yönü vardır: çalışmaların konu ve kapsamını tespit etmek ve uygulamayı denetlemek. Konu, kapsam, uygulama esasları ve denetleme usulleri yönetmelikte gösterilir.",
+      "articleRefs": [
+        "122"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Gerçek ve tüzel kişilerin sürücü kursu açmadığı il ve ilçelerde bu kursları kim açabilir?",
+      "back": "Devlet açabilir.",
+      "explanation": "Kural, sürücü kurslarının kamu kurumları ile hakiki ve hükmi şahıslarca açılmasıdır. Gerçek ve tüzel kişilerin kurs açmadığı il ve ilçelerde ise kursları devlet açabilir.",
+      "articleRefs": [
+        "123"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Aykırılığı tespit edilen ve kendisine verilen sürede şartları yerine getirmeyen sürücü kursu, mülki amirlerce en az ne kadar süreyle geçici olarak kapatılır?",
+      "back": "Onbeş günden az olmamak üzere geçici olarak kapatılır.",
+      "explanation": "Aykırılığı mülki idare amirlerince görevlendirilen yetkililer ya da Milli Eğitim Bakanlığı yetkilileri tespit eder. Kurs sahibine, olayın özelliğine göre belirlenen süre içinde şartlara uyması yazılı olarak bildirilir. Kapatma, bu süre içinde şartlar yerine getirilmezse uygulanır.",
+      "articleRefs": [
+        "123"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Belge alınmadan açılan sürücü kursunu kim kapatır?",
+      "back": "Zabıta kapatır; belge alınmadan açılan kurslar zabıtaca kapatılır.",
+      "explanation": "Kapatmanın yanında kurs sahipleri ayrıca cezalandırılır. Belgeli bir kurs şartlara uymazsa geçici kapatma kararını mülki amirler verir.",
+      "articleRefs": [
+        "123"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Okul öncesi çocuklar ve ilköğretim öğrencileri için ücretsiz çocuk trafik eğitim parkını kimler yapar?",
+      "back": "İl özel idareleri ve belediyeler yapar; parklar yeteri sayıda ve ücretsiz olarak yapılır.",
+      "explanation": "Parkların amacı metinde yazılıdır: çocuklara trafik bilgisi vermek ve kurallara uyma alışkanlığı kazandırmak.",
+      "articleRefs": [
+        "124"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Gerçek veya tüzelkişilere çocuk trafik eğitim parkı yapma izni hangi idarece verilebilir?",
+      "back": "Belediyelerce verilebilir. Belediyeler parkları kendileri yapmanın yanında gerçek veya tüzelkişilere de yapma izni verebilir.",
+      "articleRefs": [
+        "124"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "İlköğretim ve ortaöğretim okullarındaki zorunlu uygulamalı trafik ve ilk yardım derslerine valilik ve kaymakamlıkça kimler görevlendirilebilir?",
+      "back": "Yükseköğrenim görmüş emniyet görevlileri görevlendirilebilir.",
+      "explanation": "Bu dersleri ders programlarına Milli Eğitim Bakanlığı koyar. Dersler eğitim amacıyla zorunlu ve uygulamalıdır.",
+      "articleRefs": [
+        "125"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Lise ve dengi okulda zorunlu trafik dersinden başarılı olan kişi, sürücü kursunda bu dersten sınava girmeden muaf tutulabilir mi?",
+      "back": "Hayır. Muafiyet, Milli Eğitim Bakanlığı yönetmeliğindeki esaslara göre sınava girmek kaydıyla tanınabilir.",
+      "explanation": "Kural, üniversite ve yüksekokullar ile lise ve dengi okullarda zorunlu trafik, ilk yardım ve motor derslerinden başarılı olanlar için geçerlidir. \"Muaf tutulabilirler\" ifadesi kesin bir hak değil, bir imkân tanır.",
+      "articleRefs": [
+        "125"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Olağanüstü hallerde ve savaşta karayolunun kullanılması ile trafiğin düzenlenmesi ve yönetimi esasları kimin görüşü alınarak yönetmelikte belirtilir?",
+      "back": "Genelkurmay Başkanlığının görüşü alınarak belirtilir.",
+      "articleRefs": [
+        "126"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Barış zamanında da karayolu trafiğinde özel uygulamalar yapılabilir mi?",
+      "back": "Evet; ancak olağanüstü hal ve savaş düzenlemesini denemek için yapılan manevra ve tatbikatlarda, Genelkurmay Başkanlığının istemi üzerine yapılabilir.",
+      "explanation": "Özel uygulama barışta kendiliğinden yapılmaz. Hem amaç (düzenleme ve yönetimi denemek) hem de Genelkurmay Başkanlığının istemi gerekir.",
+      "articleRefs": [
+        "126"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Yolu kullananları uzun süre etkileyecek şekilde park edilmiş, terk edilmiş veya hasara uğramış araçları kaldırıp götürmeye kim yetkilidir?",
+      "back": "Trafik zabıtası yetkilidir.",
+      "articleRefs": [
+        "128"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Terk edilmiş bir aracın trafik zabıtasınca kaldırılıp götürülebilmesi için hangi şart aranır?",
+      "back": "Aracın yolu kullananları uzun süre etkileyecek durumda olması aranır. Aynı şart park edilmiş ve hasara uğramış araçlar için de geçerlidir.",
+      "articleRefs": [
+        "128"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Basılı kağıt ve plaka satışından Türkiye Şoförler ve Otomobilciler Federasyonunun elde ettiği net gelirin yüzde kaçı İçişleri Bakanlığı Merkez Saymanlığı hesabına yatırılır?",
+      "back": "%60'ı yatırılır; her yıl Şubat ayı sonuna kadar yatırılır ve Emniyet Genel Müdürlüğü hizmetlerinde kullanılır.",
+      "explanation": "Gelirin kalanı Federasyona aittir. Ad ve/veya soyad ya da tescil edilmiş ticari unvan içeren plakaların satış gelirleri hakkında da aynı hüküm uygulanır.",
+      "articleRefs": [
+        "131"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Sürücü belgelerinin verilmesi ve yenilenmesi hizmetlerinden elde edilen gelirin bir kısmı Türkiye Şoförler ve Otomobilciler Federasyonuna kalır mı?",
+      "back": "Hayır. Bu gelirin tamamı Türk Polis Teşkilatı Güçlendirme Vakfına aittir. Federasyona kalan pay, basılı kağıt ve plaka net gelirinin kalanıdır.",
+      "explanation": "Sürücü belgesi gelirine dair usul ve esaslar ile diğer hususlar İçişleri Bakanlığınca belirlenir.",
+      "articleRefs": [
+        "131"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Basılı kâğıtları ve tescil plakalarını yetkilendirilenler dışında basan veya dağıtanlara ne kadar idari para cezası verilir?",
+      "back": "10.000 Türk lirası idari para cezası verilir; bu kişiler ayrıca Türk Ceza Kanununun 204 üncü maddesine göre cezalandırılır.",
+      "articleRefs": [
+        "131"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Araçların, sürücülerin ve trafik suçu işleyenlerin sicil kayıtları hangi birimce tutulur?",
+      "back": "Emniyet Genel Müdürlüğü bünyesindeki Bilgi İşlem Merkezi tarafından tutulur.",
+      "explanation": "Merkez, sicillerin yanında bunlara ait hukuki ve teknik değişiklikler ile diğer gerekli ve istatistiki bilgilere ait kayıt ve hizmetleri de yürütür.",
+      "articleRefs": [
+        "132"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Trafiğin ve karayolu yapısının büyük ölçüde etkilendiği karayollarında taşımalara getirilen gün ve saat kısıtlamaları kimce tespit ve ilan edildikten sonra uygulanır?",
+      "back": "İçişleri Bakanlığınca tespit ve ilan edildikten sonra uygulanır.",
+      "explanation": "Kısıtlama ya da yasaklama uluslararası transit taşımaları ve yurt içi taşımaları kapsar; belirli gün ve saatler için konur.",
+      "articleRefs": [
+        "133"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Uluslararası transit taşımalara getirilen gün ve saat kısıtlaması, ikili ve çok taraflı anlaşma hükümlerinin önüne geçer mi?",
+      "back": "Hayır. Kısıtlama ve yasaklamalar, ikili ve çok taraflı anlaşma hükümleri saklı kalmak üzere uygulanır.",
+      "explanation": "Kısıtlama yalnız trafiğin ve karayolu yapısının büyük ölçüde etkilendiği karayollarında, belirli gün ve saatlerde yapılabilir. Uygulanmadan önce İçişleri Bakanlığınca tespit ve ilan edilir.",
+      "articleRefs": [
+        "133"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Okul geçidinde görev yapan kişinin görevli kişilerin yetkilerine sahip olabilmesi için neye sahip olması gerekir?",
+      "back": "Trafik zabıtasınca verilmiş bir belgeye ve özel kıyafet veya işarete sahip olması gerekir.",
+      "articleRefs": [
+        "134"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Okul geçidi görevlisi görev sırasında hangi yetkilere sahiptir?",
+      "back": "Trafik yönetimi açısından görevli kişilerin yetkilerine sahiptir; bu yetki görev sırasıyla sınırlıdır.",
+      "explanation": "Görevlilerde aranacak nitelikler, görev şartları, zaman ve süreleri ile kıyafet veya işaretleri yönetmelikte belirtilir.",
+      "articleRefs": [
+        "134"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Okul geçidi görevlisi, talimatına uymayan sürücü hakkında kendisi işlem yapabilir mi?",
+      "back": "Hayır. Görevlinin duyurusu üzerine trafik zabıtası, eyleme uyan madde hükmüne göre işlem yapar.",
+      "articleRefs": [
+        "134"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Belediyeden çalışma izni/ruhsatı almadan belediye sınırları içinde yolcu taşıyan araç kaç gün trafikten menedilir?",
+      "back": "Altmış gün trafikten menedilir; ayrıca 100.000 Türk lirası idari para cezası verilir.",
+      "explanation": "Men süresi ihlal edilen bende göre değişir: izin/ruhsattaki faaliyet konusu dışında taşımada otuz gün, çalışma bölgesi/güzergâh dışında taşımada on beş gün. İşleten veya sahibi, sürücü kendisi olmasa da aracın bu şekilde kullanılmaması için tedbir almak ve denetim yapmakla yükümlüdür.",
+      "articleRefs": [
+        "Ek 2"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "İzin/ruhsat almadan belediye sınırları içinde yolcu taşıyan sürücünün sürücü belgesi ne kadar süreyle geri alınır?",
+      "back": "Otuz gün süreyle geri alınır. Geri alma işlemini bu Kanunun 6 ncı maddesinde sayılan görevliler yapar.",
+      "explanation": "Sürücü belgesinin geri alınması, fıkranın (a) bendi kapsamında, yani izin/ruhsat almadan taşıma nedeniyle işlem yapılan sürücüler için öngörülür. Son ihlalden geriye doğru bir yıl içinde fıkra tekrar ihlal edilirse idari para cezaları iki kat olarak uygulanır.",
+      "articleRefs": [
+        "Ek 2"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "İzin/ruhsat almadan yolcu taşıdığı için sürücü belgesi geri alınan kişiye belgesinin iade edilebilmesi için hangi şart aranır?",
+      "back": "Bu Kanun kapsamında verilen idari para cezalarının tamamının tahsil edilmiş olması aranır.",
+      "articleRefs": [
+        "Ek 2"
+      ]
+    }
+  ]
+}

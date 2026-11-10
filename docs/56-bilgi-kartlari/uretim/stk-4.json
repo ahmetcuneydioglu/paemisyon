@@ -1,0 +1,292 @@
+{
+  "deck": {
+    "topicId": "fc5b7d84-ad74-446c-9ac6-3d4172a04ccf",
+    "legislationSlug": "298-sayili-secimlerin-temel-hukumleri-kanunu",
+    "sourceLabel": "AI bilgi kartı — 298 Sayılı Seçimlerin Temel Hükümleri Kanunu md 85, 85/A, 86–94, 94/A, 94/B, 94/C, 94/D, 94/E, 95, 96",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: resmî madde metni + çıkmış sorular)"
+  },
+  "cards": [
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Sandık çevresi dışında zabıta amir ve memurlarının alacağı tedbirler hangi nitelikte olamaz?",
+      "back": "Seçmenin sandığın konulduğu bina, yapı ve bunların müştemilatına serbestçe girmesini engelleyici veya güçleştirici nitelikte olamaz.",
+      "explanation": "Bu sınır, zabıtaya emir verme yetkisine sahip makamların ve zabıta amir ve memurlarının sandık çevresi dışında aldığı tedbirlerin hepsi için geçerlidir.",
+      "articleRefs": [
+        "85"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Ceza infaz kurumları ve tutukevlerinde kurulan sandıklarda uygulanacak esasları kim belirler?",
+      "back": "Yüksek Seçim Kurulu belirler. Bu sandıklarda sandık çevresi düzenine ilişkin 81, 82 ve 85 inci maddelerle bağlı kalınmaz (metinde anılan 83 ve 84 üncü maddeler mülgadır).",
+      "articleRefs": [
+        "85/A"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Askı listesinde adı yazılı olduğu hâlde sandık kuruluna verilen sandık seçmen listesinde ismi bulunmayan seçmenin listeye eklenmesine kim karar verir?",
+      "back": "İlçe seçim kurulu başkanı karar verir. Seçmene bu yolda bir yazı verilir.",
+      "explanation": "Karar, muhtarlık bölgesi askı listelerinin kesinleşmesine bakılmaksızın ilçe seçim kurulundaki listeye göre verilir. Seçmen kendisine verilen yazıyla sandık kuruluna başvurur, listeye dâhil edilir ve oyunu kullanır.",
+      "articleRefs": [
+        "86"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Tutuklu sandık seçmen listesine kaydedilmiş seçmen hakkında oy verme gününden önce tahliye edildiğine dair resmî belge geldiyse, bu seçmen oy kullanabilir mi?",
+      "back": "Hayır. Listede kayıtlı olsa bile ona oy kullandırılmaz. Bu durum sandık kurulunca tutanağa geçirilir.",
+      "explanation": "Aynı kural iki grup için de uygulanır: seçme yeterliğini kaybettiğine dair yetkili mercilerden resmî belge gelen seçmenler ve taksirli suçlar dışında bir suçtan hüküm giyip cezası kesinleşenler.",
+      "articleRefs": [
+        "86"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Köy ya da mahalle muhtarlığınca tanzim ve tasdik edilen kimlik belgesiyle seçmenin kimliği belirlenebilir mi?",
+      "back": "Hayır. Belediyeler ile köy ve mahalle muhtarlıklarınca tanzim ve tasdik edilen kimlik belgeleri bu amaçla geçerli değildir.",
+      "explanation": "Kimlik, nüfus hüviyet cüzdanıyla ya da kimlik tespiti amacıyla düzenlenmiş ve Türkiye Cumhuriyeti kimlik numarasını taşıyan resmî belgelerle belirlenir. Hangi belgelerin kabul edileceğini Yüksek Seçim Kurulu seçimlerin başlangıcında tespit ve ilan eder.",
+      "articleRefs": [
+        "87"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Üzerinde Türkiye Cumhuriyeti kimlik numarası olmayan bir kimlik belgesi ibraz eden seçmen, oy kullanabilmek için ayrıca ne ibraz etmelidir?",
+      "back": "Seçmen bilgi kâğıdını ya da Türkiye Cumhuriyeti kimliğini ispata elverişli olup Yüksek Seçim Kurulunun ilan ettiği bir belgeyi.",
+      "articleRefs": [
+        "87"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Ceza infaz kurumunda tutuklu bulunan ve kimlik belgesi olmayan seçmen için kimlik belgesi yerine ne geçer?",
+      "back": "Cezaevi idaresince verilmiş belge kimlik belgesi yerine geçer.",
+      "explanation": "Aynı imkân, ceza infaz kurumları ve tutukevlerinde taksirli suçlardan hükümlü bulunan seçmenlere de tanınır.",
+      "articleRefs": [
+        "87"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Oyunu kullanan seçmen sandık başında kalabilir mi?",
+      "back": "Hayır. Hiçbir seçmen oyunu kullandıktan sonra sandık başında kalamaz.",
+      "explanation": "Ayrıca hiçbir seçmene sandık başında müdahale, telkin veya tavsiyede bulunulamaz.",
+      "articleRefs": [
+        "88"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Oy verme günü oy verme süresi saat kaçtan kaça kadardır?",
+      "back": "Saat sekizden on yediye kadar geçen zaman oy verme süresidir.",
+      "explanation": "Yüksek Seçim Kurulu, sürenin korunması kaydıyla başlayış ve bitiş saatlerini değiştirebilir.",
+      "articleRefs": [
+        "89"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Saat on yediye gelindiğinde sandık başında oy vermek için bekleyen seçmenler oy kullanabilir mi?",
+      "back": "Evet. Bekleyen seçmenler önce başkan tarafından sayılır, ardından sıra ile oylarını kullanırlar.",
+      "articleRefs": [
+        "89"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Yüksek Seçim Kurulu oy verme süresinin başlayış ve bitiş saatlerini değiştirirse, bunu seçim gününden en az ne kadar önce ilan etmelidir?",
+      "back": "En az bir hafta önce ilan etmelidir. Değişiklik ancak sürenin korunması kaydıyla yapılabilir.",
+      "explanation": "Değişiklik mevsim ve bölge özelliklerine ve ulaşım durumlarına göre yapılır. Bütün yurtta ya da yalnız gerekli görülen seçim çevrelerinde uygulanabilir.",
+      "articleRefs": [
+        "89"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Sandık başına gelen yaşlıların sandık kurulu önüne önce alınması zorunlu mudur?",
+      "back": "Hayır. Kanun yaşlıların önce alınabileceğini söyler. Bekletilmeme kuralı gebeler, hastalar ve engelliler içindir.",
+      "explanation": "Seçmenler sandık kurulu önüne başkan tarafından sıra ile birer birer alınır.",
+      "articleRefs": [
+        "90"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Birleşik oy pusulasını alıp oy vermeyen seçmene ne yapılır?",
+      "back": "Birleşik oy pusulası ondan geri alınır. Kapalı oy verme yerine girmeyen seçmen için de aynısı uygulanır.",
+      "explanation": "Pusulayı ya da zarfı alan seçmen doğruca kapalı oy verme yerine gider ve oyunu kullanmadan başka yere gidemez.",
+      "articleRefs": [
+        "91"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Kapalı oy verme yerinde normal süreden fazla kalan seçmene ne yapılır?",
+      "back": "Kurul başkanı ona makul bir süre vererek uyarır. Uyarıya rağmen çıkmazsa seçmen oradan çıkarılır.",
+      "explanation": "Seçmen kapalı oy verme yerinden dışarı çıkmadıkça hiç kimse oraya giremez.",
+      "articleRefs": [
+        "92"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Cep telefonuyla gelen seçmen, kapalı oy verme yerine girmeden önce telefonunu ne yapar?",
+      "back": "Telefonu kapatıp sandık kurulu başkanına teslim eder. Oy kullanma işlemi bitince telefon kendisine iade edilir.",
+      "explanation": "Fotoğraf veya film makinesi gibi görüntü kaydedici ya da haberleşme sağlayıcı cihazlarla kapalı oy verme yerine girmek yasaktır.",
+      "articleRefs": [
+        "92"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Bir seçmen oy kullanılırken en çok kaç malule refakat edebilir?",
+      "back": "Bir malule. Bir seçmen birden fazla malule refakat edemez.",
+      "explanation": "Körler, felçliler veya bu gibi bedeni engellilikleri açıkça belli olanlar, bu seçim çevresi seçmeni olan akrabalarından birinin yardımıyla oy kullanabilir. Akrabası yoksa diğer herhangi bir seçmenin yardımı alınır.",
+      "articleRefs": [
+        "93"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Seçimin güvenliğini sağlamakla görevli kolluk görevlisi, görev yaptığı sandığın listesinde kayıtlı değilse o sandık bölgesinde oy kullanabilir mi?",
+      "back": "Evet, seçimin yapıldığı çevrede oy verme hakkı varsa kullanabilir. İlçe seçim kurulu başkanının verdiği belgeyle görevli olduğu sandık bölgesinde oy verir.",
+      "explanation": "Sandık kurulu bu belgeyi oy verme işleminden önce alır ve diğer seçim evrakıyla birlikte ilçe seçim kuruluna teslim eder. Görevlinin ad, soyad ve kimlik bilgileri sandık seçmen listesinin sonuna yazılır ve karşısına imzası alınır. Esas kayıtlı olduğu sandık kurulu başkanlığına da durum yazıyla bildirilir.",
+      "articleRefs": [
+        "94"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Yurt dışı seçmenlerin oy kullanmasında hangi yöntemler uygulanabilir?",
+      "back": "Sandık, gümrük kapılarında oy kullanma ve elektronik oylama. Bu yöntemler birlikte ya da ayrı ayrı uygulanabilir.",
+      "explanation": "Bu iş ve işlemlerde Dışişleri Bakanlığının bilişim altyapısından faydalanılabilir. Bakanlık, Yüksek Seçim Kurulunun belirlediği usul ve esaslar doğrultusunda altyapının oluşturulması ve güvenliği için gerekli tedbirleri alır.",
+      "articleRefs": [
+        "94/A"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Yurt dışı seçmenlerin hangi yöntemle oy kullanacağına Dışişleri Bakanlığı mı karar verir?",
+      "back": "Hayır. Kararı Yüksek Seçim Kurulu verir; Dışişleri Bakanlığının yalnızca görüşü alınır.",
+      "explanation": "Karar, seçim türüne ve yabancı ülkenin durumuna göre verilir.",
+      "articleRefs": [
+        "94/A"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Yurt dışı seçmenler hangi seçimlerde oy verebilir?",
+      "back": "Milletvekili genel seçiminde, Cumhurbaşkanı seçiminde ve halkoylamasında oy verebilirler.",
+      "explanation": "Yurt dışı seçmenler yalnız seçime katılan siyasi partilere oy verebilir. Yurt dışında ve yurt dışı temsilciliklerde seçim propagandası yapılamaz.",
+      "articleRefs": [
+        "94/A"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Yurt dışı temsilciliklerde kurulan sandıklarda oy kullanma hangi zaman aralığında yapılır?",
+      "back": "Seçim gününün kırkbeş (45) gün öncesinden başlar, seçim gününden önceki üçüncü gün saat 17.00'ye kadar sürer.",
+      "explanation": "Oy kullanma saatleri mahalli saatle 08.00-17.00 arasıdır. Yabancı ülkedeki seçmen sayısı gözetilerek oy kullanma gün süresi, Dışişleri Bakanlığının görüşü alınarak Yüksek Seçim Kurulunca kısaltılabilir.",
+      "articleRefs": [
+        "94/C"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Yurt dışı temsilcilikte oy verme için kurulan sandık kurulunda kaç siyasi partinin bildirdiği üye bulunur?",
+      "back": "Üç. Son milletvekili genel seçiminde Türkiye genelinde en çok oy alan üç siyasi parti birer isim bildirir. Kurulda ayrıca bir başkan ve bir kamu görevlisi üye bulunur.",
+      "explanation": "Başkan ve üyeleri Yurt Dışı İlçe Seçim Kurulu seçer; yedek üyeler de aynı usulle seçilir. Partiler üye bildirmezse eksiklik kamu görevlileri veya seçmenler arasından seçilecek üyeyle doldurulur. Siyasi partiler her oy verme günü için ayrı sandık kurulu üyesi bildirebilir.",
+      "articleRefs": [
+        "94/C"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Yurt dışı seçmenler elektronik ortamda oy kullanmaya seçimden kaç gün önce başlayabilir?",
+      "back": "Otuz gün önce başlayabilir. Belirlenen süre içinde seçim günü Türkiye saatiyle 17:00'a kadar oy kullanılabilir.",
+      "explanation": "Yüksek Seçim Kurulu, Türkiye Cumhuriyeti kimlik numarası aracılığıyla oy kullanılması için gerekli teknik altyapıyı kurmaya yetkilidir. Şifre veya benzeri güvenlik tedbirlerini ve mükerrer oy kullanılmasını engelleyecek önlemleri de o alır.",
+      "articleRefs": [
+        "94/D"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Yurt dışı seçmen kütüğüne kayıtlı seçmenler, gümrük kapılarında seçim gününden kaç gün öncesinden oy kullanmaya başlayabilir?",
+      "back": "Kırkbeş (45) gün öncesinden başlayabilirler. Oy kullanma seçim günü saat 17:00'a kadar sürer.",
+      "explanation": "Yüksek Seçim Kurulunca tespit edilen gümrük kapılarında, oy verme gününden önceki kırkbeşinci gün saat 08:00'dan oy verme günü saat 17:00'a kadar oy kullanılabilir.",
+      "articleRefs": [
+        "94/E"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Hangi gümrük kapılarında tatil günleri dâhil 24 saat oy kullanılacağını kim tespit eder?",
+      "back": "Yüksek Seçim Kurulu tespit eder. Hangi kapılarda daha az süreyle oy kullanılacağına da o karar verir.",
+      "explanation": "Geçici gümrük kapısı seçim kurulu ile sandık kurullarının adedini, üye ve yedeklerinin sayısını ve hangi görevlilerden oluşacağını da Yüksek Seçim Kurulu önceden belirler.",
+      "articleRefs": [
+        "94/E"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Yüksek Seçim Kurulu, gümrük kapılarında kullanılacak oy pusulası ve zarfları oy verme gününden en geç kaç gün önce ilgili ilçe seçim kurullarına ulaştırmalıdır?",
+      "back": "En geç üç gün önce. Özel olarak imal ettirilen oy pusulası ve özel renkte bastırılmış oy zarfları bu tarihte ilgili ilçe seçim kurullarında bulunmalıdır.",
+      "articleRefs": [
+        "94/E"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Sayım ve döküm masası etrafında boş kalması gereken kısmı kim belirler?",
+      "back": "Sayımı yapan kurul, bir kararla belirler. Bu kısmın etrafında ip germek gibi tedbirler alabilir.",
+      "explanation": "Sayım ve döküm açık yapılır. Oy verme yerinde hazır bulunanlar işlemleri takip eder ve alınan tedbirler onların takibine engel olamaz.",
+      "articleRefs": [
+        "95"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Yüksek Seçim Kurulu başka bir süre koymamışsa sandık en erken saat kaçta açılabilir?",
+      "back": "Saat 17.00'de. Sandık bu saatten önce açılamaz.",
+      "explanation": "Oy verme işi bitince kurul başkanı bunu yüksek sesle ilan eder ve masa üzerinde sandıktan başka ne varsa kaldırılır. Oy vermenin bittiği saat tutanak defterine geçirilir.",
+      "articleRefs": [
+        "96"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,292 @@
+{
+  "deck": {
+    "topicId": "5f4ee087-a19b-4e99-84e6-aadc837acc77",
+    "legislationSlug": "5901-sayili-turk-vatandasligi-kanunu",
+    "sourceLabel": "AI bilgi kartı — 5901 Sayılı Türk Vatandaşlığı Kanunu md 1–28",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: resmî madde metni + çıkmış sorular; 1 açıklama düşürüldü)"
+  },
+  "cards": [
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Türk Vatandaşlığı Kanununda geçen \"Genel Müdürlük\" ibaresi hangi kurumu ifade eder?",
+      "back": "Nüfus ve Vatandaşlık İşleri Genel Müdürlüğünü ifade eder.",
+      "explanation": "Aynı tanımlar maddesinde \"Bakanlık\" İçişleri Bakanlığını, \"yabancı\" ise Türkiye Cumhuriyeti Devleti ile vatandaşlık bağı bulunmayan kişiyi ifade eder.",
+      "articleRefs": [
+        "3"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Türk vatandaşlığının kazanılmasına ve kaybına ilişkin hizmetleri yurt dışında kim yürütür?",
+      "back": "Dış temsilcilikler yürütür. Yurt içinde bu hizmetleri Bakanlık (İçişleri Bakanlığı) yürütür.",
+      "articleRefs": [
+        "4",
+        "3"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Doğumla kazanılan Türk vatandaşlığı ne zamandan itibaren hüküm ifade eder?",
+      "back": "Doğum anından itibaren hüküm ifade eder.",
+      "explanation": "Doğumla kazanılan vatandaşlık, soy bağı veya doğum yeri esasına göre kendiliğinden kazanılır.",
+      "articleRefs": [
+        "6"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Türk vatandaşı baba ve yabancı anadan evlilik birliği dışında doğan çocuk, başka bir işlem gerekmeden Türk vatandaşı olur mu?",
+      "back": "Hayır. Bu çocuk, soy bağı kurulmasını sağlayan usul ve esaslar yerine getirilirse Türk vatandaşlığını kazanır.",
+      "explanation": "Türk vatandaşı ana ve yabancı babadan evlilik birliği dışında doğan çocuk ise Türk vatandaşıdır. Türk vatandaşı ana veya babadan evlilik birliği içinde doğan çocuk da Türkiye içinde ya da dışında doğmuş olsun Türk vatandaşıdır.",
+      "articleRefs": [
+        "7"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Türkiye'de bulunmuş bir çocuk hakkında doğum yeri bakımından hangi karine geçerlidir?",
+      "back": "Çocuk, aksi sabit olmadıkça Türkiye'de doğmuş sayılır.",
+      "explanation": "Aynı maddeye göre Türkiye'de doğan ve yabancı ana ve babasından dolayı doğumla herhangi bir ülkenin vatandaşlığını kazanamayan çocuk, doğumdan itibaren Türk vatandaşıdır.",
+      "articleRefs": [
+        "8"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Kanunda aranan şartları taşıyan bir yabancı, Türk vatandaşlığını kazanmayı mutlak bir hak olarak elde eder mi?",
+      "back": "Hayır. Aranan şartları taşımak kişiye mutlak bir hak sağlamaz; yabancı, yetkili makam kararı ile Türk vatandaşlığını kazanabilir.",
+      "explanation": "Sonradan Türk vatandaşlığının kazanılmasında uygulanacak temel ilke ve esaslar, ilgili kamu kurum ve kuruluşlarının görüşleri alınarak Bakanlıkça belirlenir.",
+      "articleRefs": [
+        "10"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Genel yoldan (md 11) Türk vatandaşlığını kazanmak isteyen bir yabancının başvuru için Türkiye’de ne kadar ikamet etmiş olması gerekir?",
+      "back": "Başvuru tarihinden geriye doğru Türkiye'de kesintisiz beş yıl ikamet etmiş olması gerekir.",
+      "explanation": "Aynı maddede sayılan başvuru şartları arasında Türkiye'de yerleşmeye karar verdiğini davranışları ile teyit etmek, yeteri kadar Türkçe konuşabilmek ve kendisinin ve bakmakla yükümlü olduğu kimselerin geçimini sağlayacak gelire veya mesleğe sahip olmak da bulunur.",
+      "articleRefs": [
+        "11"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Türk vatandaşlığını kazanmak isteyen yabancının ergin ve ayırt etme gücüne sahip olup olmadığı hangi hukuka göre belirlenir?",
+      "back": "Kendi millî kanununa göre belirlenir; kişi vatansız ise Türk kanunlarına göre belirlenir.",
+      "articleRefs": [
+        "11"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "İstisnai hâllerde yabancıların Türk vatandaşlığını kazanmasına hangi makam karar verir?",
+      "back": "Cumhurbaşkanı karar verir. Millî güvenlik ve kamu düzeni bakımından engel teşkil edecek bir hâlin bulunmaması şarttır.",
+      "explanation": "Bu yoldan kazanabilecekler arasında Türkiye'ye sanayi tesisleri getirenler, Turkuaz Kart sahibi yabancılar, vatandaşlığa alınması zaruri görülen kişiler ve göçmen olarak kabul edilen kişiler bulunur. Millî güvenlik ve kamu düzeni bakımından engel teşkil edecek hâli bulunanların talepleri Bakanlıkça reddedilir.",
+      "articleRefs": [
+        "12"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Türkiye'ye sanayi tesisleri getiren ya da bilimsel, kültürel, sanatsal gibi alanlarda olağanüstü hizmeti geçen kişinin istisnai yoldan vatandaşlık kazanabilmesi için hakkında ne yapılmış olmalıdır?",
+      "back": "İlgili bakanlıklarca hakkında gerekçeli teklifte bulunulmuş olmalıdır.",
+      "articleRefs": [
+        "12"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Çıkma izni alarak Türk vatandaşlığını kaybeden kişi, vatandaşlığı hangi makamın kararıyla yeniden kazanabilir?",
+      "back": "Bakanlık kararıyla yeniden kazanabilir. Türkiye'de ikamet etme süresine bakılmaz; millî güvenlik bakımından engel hâlinin bulunmaması şarttır.",
+      "explanation": "Ana veya babalarına bağlı olarak Türk vatandaşlığını kaybedip 21 inci maddede öngörülen süre içinde seçme hakkını kullanmayanlar da aynı yoldan yeniden kazanabilir.",
+      "articleRefs": [
+        "13"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "29 uncu madde uyarınca vatandaşlığı kaybettirilenler ile 34 üncü madde uyarınca kaybedenler, vatandaşlığı yeniden kazanmak için Türkiye'de ne kadar ikamet etmelidir?",
+      "back": "Üç yıl ikamet etmelidir. Ayrıca millî güvenlik bakımından engel teşkil edecek bir hâlin bulunmaması gerekir.",
+      "articleRefs": [
+        "14"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "29 uncu madde uyarınca Türk vatandaşlığı kaybettirilen kişi, vatandaşlığı Bakanlık kararıyla yeniden kazanabilir mi?",
+      "back": "Hayır. Kaybettirilenler Cumhurbaşkanı kararıyla yeniden kazanır; Bakanlık kararı 34 üncü madde uyarınca kaybedenler içindir.",
+      "explanation": "Her iki grup için de Türkiye'de üç yıl ikamet etmek ve millî güvenlik bakımından engel teşkil edecek bir hâlin bulunmaması şartı aranır.",
+      "articleRefs": [
+        "14"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Vatandaşlık başvurusu için aranan ikamet süresi içinde yabancı en çok ne kadar süre Türkiye dışında bulunabilir?",
+      "back": "Toplam oniki ayı geçmemek üzere bulunabilir. Bu süreler Kanunda öngörülen ikamet süreleri içinde değerlendirilir.",
+      "explanation": "Bir yabancı için ikamet, Türk kanunlarına uygun olarak Türkiye'de oturmaktır.",
+      "articleRefs": [
+        "15"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Bir yabancının evlilik yoluyla Türk vatandaşlığına başvurabilmesi için Türk vatandaşı eşiyle en az ne kadar süredir evli olması gerekir?",
+      "back": "En az üç yıldır evli olmalı ve evliliği devam etmelidir. Türk vatandaşıyla evlenme tek başına doğrudan vatandaşlık kazandırmaz.",
+      "explanation": "Başvuru sahibinde aile birliği içinde yaşama, evlilik birliği ile bağdaşmayacak bir faaliyette bulunmama ve millî güvenlik ve kamu düzeni bakımından engel teşkil edecek bir hâli bulunmama şartları aranır.",
+      "articleRefs": [
+        "16"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Evlenme yoluyla vatandaşlık başvurusundan sonra Türk vatandaşı eşin ölümüyle evlilik sona ererse hangi şart aranmaz?",
+      "back": "Aile birliği içinde yaşama şartı aranmaz.",
+      "explanation": "Evlenme ile Türk vatandaşlığını kazanan yabancılar, evlenmenin butlanına karar verilse de evlenmede iyiniyetli iseler Türk vatandaşlığını muhafaza ederler.",
+      "articleRefs": [
+        "16"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Bir Türk vatandaşı tarafından evlat edinilen ergin olmayan kişi, Türk vatandaşlığını ne zamandan itibaren kazanabilir?",
+      "back": "Karar tarihinden itibaren kazanabilir. Millî güvenlik ve kamu düzeni bakımından engel teşkil edecek bir hâlinin bulunmaması şarttır.",
+      "articleRefs": [
+        "17"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Vatandaşlık başvuru inceleme komisyonunun oluşumu ve çalışma esasları hangi düzenlemeyle belirlenir?",
+      "back": "Yönetmelikle belirlenir.",
+      "explanation": "Komisyon illerde oluşturulur. 11 inci ve 16 ncı maddeler uyarınca vatandaşlık kazanmak isteyen yabancıların başvuru için gerekli şartları taşıyıp taşımadığını tespit eder.",
+      "articleRefs": [
+        "18"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Bir yabancının yetkili makam kararıyla Türk vatandaşlığını kazanması, yabancı eşine de Türk vatandaşlığı kazandırır mı?",
+      "back": "Hayır. Yetkili makam kararı ile Türk vatandaşlığının kazanılması eşin vatandaşlığına tesir etmez.",
+      "explanation": "Velayeti kendisinde bulunan çocuklar, diğer eşin muvafakat etmesi hâlinde Türk vatandaşlığını kazanır. Türk vatandaşlığını birlikte kazanan ana ve babanın çocukları da kazanır. Kazanma kararları karar tarihinden itibaren hüküm ifade eder.",
+      "articleRefs": [
+        "20"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Yetkili makam kararıyla vatandaşlık kazanan ana veya babanın velayetindeki çocuk için diğer eş muvafakat vermezse nasıl işlem yapılır?",
+      "back": "Ana veya babanın mutad meskeninin bulunduğu ülkedeki hâkim kararına göre işlem yapılır.",
+      "explanation": "Ana veya babanın vatandaşlığı kazandığı tarihte onlarla birlikte işlem görmeyen çocuklar, ergin olduktan sonra başvururlarsa haklarında 11 inci madde hükümleri uygulanır.",
+      "articleRefs": [
+        "20"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Ana veya babasına bağlı olarak Türk vatandaşlığını kaybeden çocuk, seçme hakkını hangi süre içinde kullanabilir?",
+      "back": "Ergin olmasından itibaren üç yıl içinde kullanabilir.",
+      "explanation": "Söz konusu kayıp, 27 nci madde uyarınca ana veya babaya bağlı olarak gerçekleşen kayıptır.",
+      "articleRefs": [
+        "21"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Seçme hakkı ile Türk vatandaşlığının kazanılması ne zamandan itibaren hüküm ifade eder?",
+      "back": "Bu hakkın kullanılmasına dair şartların tespitine ilişkin karar tarihinden itibaren hüküm ifade eder.",
+      "explanation": "Seçme hakkını kullanarak Türk vatandaşlığını kazanan kişilerin eşleri ve çocukları hakkında 20 nci madde hükümleri uygulanır.",
+      "articleRefs": [
+        "22"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Yabancı bir devlet vatandaşlığını kazanmış, ancak bir suç nedeniyle aranan Türk vatandaşına Bakanlık çıkma izni verebilir mi?",
+      "back": "Hayır. Herhangi bir suç veya askerlik hizmeti nedeniyle aranan kişilerden olmamak, çıkma izni için aranan şartlardandır.",
+      "explanation": "Çıkma izni veya çıkma belgesi için ayrıca ergin ve ayırt etme gücüne sahip olmak, yabancı bir devlet vatandaşlığını kazanmış olmak ya da kazanacağına ilişkin inandırıcı belirtiler bulunmak ve hakkında herhangi bir mali ve cezai tahdit bulunmamak şartları aranır.",
+      "articleRefs": [
+        "25"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Türk vatandaşlığından çıkma izin belgesi ne kadar süre geçerlidir?",
+      "back": "Karar tarihinden itibaren iki yıl geçerlidir. Bu süre içinde yabancı devlet vatandaşlığı kazanılamazsa belge geçersiz hâle gelir.",
+      "explanation": "İzin belgesini alan kişi, bu süre içinde yurt içinde ikamet ettiği yer valiliğine, yurt dışında ise dış temsilciliklere yabancı devlet vatandaşlığını kazandığına dair bilgi ve belgeleri vermek zorundadır.",
+      "articleRefs": [
+        "26"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Türk vatandaşlığından çıkmada vatandaşlık hangi anda kaybedilir?",
+      "back": "Çıkma belgesinin ilgiliye imza karşılığı teslimi ile kaybedilir.",
+      "explanation": "Vatandaşlığı kaybeden kişinin nüfus aile kütüğündeki kaydı kapatılır ve kişi kayıp tarihinden itibaren yabancı muamelesine tabi tutulur. Eşlerden birinin çıkma izni alarak vatandaşlığı kaybetmesi diğer eşin vatandaşlığına tesir etmez.",
+      "articleRefs": [
+        "27"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Doğumla Türk vatandaşı olup çıkma izni alarak vatandaşlığı kaybedenlere tanınan haklar, altsoylarından kaçıncı dereceye kadar olanlara da tanınır?",
+      "back": "Üçüncü dereceye kadar olan altsoya tanınır. Cumhurbaşkanı gerekli görürse üçüncü dereceden itibaren hangi dereceye kadar olan altsoyun yararlanacağını belirleyebilir.",
+      "explanation": "Bu haklardan yararlanacak altsoyun, üstsoyu ile soy bağını belgelendirmesi şarttır.",
+      "articleRefs": [
+        "28"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Doğumla Türk vatandaşı olup çıkma izni alarak vatandaşlığı kaybeden kişi, kamu kurum ve kuruluşlarında sözleşmeli personel olarak çalıştırılabilir mi?",
+      "back": "Evet; işçi, geçici veya sözleşmeli personel olarak çalıştırılabilir. Ancak bir kadroya dayalı ve kamu hukuku rejimine tabi asli ve sürekli kamu hizmeti görevlerinde bulunamaz.",
+      "explanation": "Bu kişilerin seçme ve seçilme hakları ile muafen araç veya ev eşyası ithal etme hakları yoktur; askerlik hizmetini yapma yükümlülükleri de yoktur. Sosyal güvenliğe ilişkin kazanılmış hakları ise saklıdır ve bu hakların kullanımında ilgili kanunlardaki hükümlere tabidirler.",
+      "articleRefs": [
+        "28"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Doğumla Türk vatandaşı olup çıkma izni alarak vatandaşlığı kaybedenlere düzenlenen Mavi Kart hangi kanun kapsamındadır?",
+      "back": "210 sayılı Değerli Kağıtlar Kanunu kapsamındadır.",
+      "explanation": "Mavi Kart, kişilere talepleri hâlinde düzenlenir. Kart ibraz edilemezse Kimlik Paylaşımı Sistemi aracılığıyla Mavi Kartlılar Kütüğünden alınacak kayıt örneği ile uyruğunda bulunulan devlet makamlarınca verilmiş kimlik bilgilerini gösteren belge birlikte kullanılarak işlem yapılır.",
+      "articleRefs": [
+        "28"
+      ]
+    }
+  ]
+}

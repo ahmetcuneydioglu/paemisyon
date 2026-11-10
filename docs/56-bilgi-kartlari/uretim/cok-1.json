@@ -1,0 +1,286 @@
+{
+  "deck": {
+    "topicId": "48443974-0207-4ac2-b51a-34ba2a7b8070",
+    "legislationSlug": "5395-sayili-cocuk-koruma-kanunu",
+    "sourceLabel": "AI bilgi kartı — 5395 Sayılı Çocuk Koruma Kanunu md 1–5, 5/A, 6–16",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: resmî madde metni + çıkmış sorular)"
+  },
+  "cards": [
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Onsekiz yaşını doldurmadan ergin olan kişi, Çocuk Koruma Kanununa göre çocuk sayılır mı?",
+      "back": "Evet. Kanun, daha erken yaşta ergin olsa bile onsekiz yaşını doldurmamış kişiyi çocuk sayar.",
+      "explanation": "Çocuk tanımının içinde iki ayrı grup tanımlanır: korunma ihtiyacı olan çocuk ve adli süreçteki çocuk. İhmal veya istismar edilen ya da suç mağduru olan çocuk, korunma ihtiyacı olan çocuktur.",
+      "articleRefs": [
+        "3"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Çocuk hâkimi tanımında hangi çocuklar hakkındaki tedbir kararları kapsam dışında bırakılır?",
+      "back": "Hakkında kovuşturma başlatılmış olanlar. Çocuk hâkimi, bunlar dışındaki adli süreçteki çocuklar ile korunma ihtiyacı olan çocuklar hakkında tedbir kararı veren çocuk mahkemesi hâkimidir.",
+      "explanation": "Aynı maddede mahkeme ayrıca tanımlanır: çocuk mahkemeleri ile çocuk ağır ceza mahkemeleri.",
+      "articleRefs": [
+        "3"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Sosyal çalışma görevlisi tanımında hangi alanlarda eğitim veren kurumların mezunları sayılır?",
+      "back": "Psikolojik danışmanlık ve rehberlik, psikoloji, sosyoloji, çocuk gelişimi, öğretmenlik, aile ve tüketici bilimleri ve sosyal hizmet alanlarında eğitim veren kurumlardan mezun meslek mensupları.",
+      "articleRefs": [
+        "3"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Temel ilkelere göre çocuklar hakkında özgürlüğü kısıtlayıcı tedbirlere ve hapis cezasına ne zaman başvurulur?",
+      "back": "En son çare olarak.",
+      "explanation": "Tedbir kararı verilirken kurumda bakım ve kurumda tutma da son çare olarak görülür. Kararların verilmesinde ve uygulanmasında toplumsal sorumluluğun paylaşılması sağlanır.",
+      "articleRefs": [
+        "4"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Çocuklar hakkındaki işlemlerde, yargılamada ve kararların yerine getirilmesinde çocuğun kimliği için hangi önlem alınır?",
+      "back": "Kimliğinin başkaları tarafından belirlenememesine yönelik önlemler alınır.",
+      "explanation": "Temel ilkeler arasında ayrıca çocukların bakılıp gözetildiği ve tedbir kararlarının uygulandığı kurumlarda yetişkinlerden ayrı tutulmaları da sayılır.",
+      "articleRefs": [
+        "4"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Koruyucu ve destekleyici tedbirler hangileridir?",
+      "back": "Danışmanlık, eğitim, bakım, sağlık ve barınma tedbirleri.",
+      "explanation": "Bu tedbirler, çocuğun öncelikle kendi aile ortamında korunmasını sağlamaya yöneliktir.",
+      "articleRefs": [
+        "5"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Çocuğun meslek sahibi bir ustanın yanına yerleştirilmesi hangi koruyucu ve destekleyici tedbirdir?",
+      "back": "Eğitim tedbiri.",
+      "explanation": "Eğitim tedbiri; çocuğun bir eğitim kurumuna gündüzlü veya yatılı olarak devamını, bir meslek veya sanat edinme kursuna gitmesini ve kamuya ya da özel sektöre ait işyerlerine yerleştirilmesini de kapsar.",
+      "articleRefs": [
+        "5"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Barınma tedbiri uygulanan kimselerin kimlikleri ve adresleri hangi durumda gizli tutulur?",
+      "back": "Talepleri hâlinde gizli tutulur.",
+      "explanation": "Barınma tedbiri, barınma yeri olmayan çocuklu kimselere veya hayatı tehlikede olan hamile kadınlara uygun barınma yeri sağlamaya yöneliktir.",
+      "articleRefs": [
+        "5"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Dijital risklerden korunma tedbirinde çocuğun cihazının hareketleri hangi süre için denetime açılır?",
+      "back": "3 aydan az, 2 yıldan fazla olmamak üzere. Takibi Bilgi Teknolojileri ve İletişim Kurumu ile Siber Güvenlik Başkanlığı yapar.",
+      "explanation": "Tedbir, riskli olarak tanımlı bazı dijital mecralara, uygulamalara ve dijital platformlara erişimin engellenmesini de kapsar.",
+      "articleRefs": [
+        "5/A"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Tütün, nikotin, alkol, kumar, uyuşturucu ve uyarıcı madde ile davranışsal bağımlılık tedbirini hangi kurumlar yerine getirir?",
+      "back": "Sağlık Bakanlığı, Aile ve Sosyal Hizmetler Bakanlığı ve Yeşilay.",
+      "explanation": "Bu tedbirde çocuk, sağlığı için tehlike oluşturan bağımlılıklarının tedavi ve rehabilitasyonu için belirlenecek programları tamamlar.",
+      "articleRefs": [
+        "5/A"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Bağımlılık tedbirinde çocuk, belirlenecek programlara 20 saatten 300 saate kadar katılmakla mı yükümlüdür?",
+      "back": "Hayır. Bu tedbirde tedavi ve rehabilitasyon programlarının tamamlanması aranır; 20 saatten 300 saate kadar aralığı sosyal ve toplumsal hizmetler, kitap ve kütüphane ile çevreye saygı ve çevre temizliği tedbirleri içindir.",
+      "explanation": "Yönlendirme tedbirleri, ceza sorumluluğu olmayan adli süreçteki çocuklar bakımından çocuklara özgü güvenlik tedbiri olarak anlaşılır.",
+      "articleRefs": [
+        "5/A"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "md 7’ye göre koruyucu ve destekleyici tedbir kararını istem üzerine veya re’sen kim alabilir?",
+      "back": "Çocuk hâkimi; istem üzerine ya da re'sen alabilir.",
+      "explanation": "İstemde bulunabilecekler arasında çocuğun anası, babası, vasisi, bakım ve gözetiminden sorumlu kimse ve Cumhuriyet savcısı vardır. Karardan önce sosyal inceleme yaptırılabilir; bir veya birden fazla tedbire karar verilebilir ve tedbirin türü kararda gösterilir.",
+      "articleRefs": [
+        "7"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Koruyucu ve destekleyici tedbirin uygulanması kaç yaşın doldurulmasıyla kendiliğinden sona erer?",
+      "back": "Onsekiz yaşın doldurulmasıyla. Hâkim, eğitim ve öğrenimine devam edebilmesi için ve rızası alınarak tedbirin belli bir süre daha devamına karar verebilir.",
+      "articleRefs": [
+        "7"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Mahkeme, korunma ihtiyacı olan çocuk hakkında koruyucu ve destekleyici tedbirin yanında hangi konularda da karar verebilir?",
+      "back": "Türk Medenî Kanunu hükümlerine göre velayet, vesayet, kayyım, nafaka ve kişisel ilişki kurulması hususlarında.",
+      "articleRefs": [
+        "7"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Tedbir kararlarının uygulanması, kararı veren hâkim veya mahkemece en geç hangi aralıklarla incelettirilir?",
+      "back": "En geç üçer aylık sürelerle.",
+      "explanation": "Hâkim veya mahkeme, ilgililerin talebi üzerine ya da re'sen tedbirin sonuçlarını inceleyerek tedbiri kaldırabilir, süresini uzatabilir veya değiştirebilir.",
+      "articleRefs": [
+        "8"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Korunma ihtiyacı olan çocuk hakkında koruyucu ve destekleyici tedbirler hangi yerdeki çocuk hâkimince alınır?",
+      "back": "Çocuğun menfaatleri bakımından kendisinin, ana, baba, vasisi veya birlikte yaşadığı kimselerin bulunduğu yerdeki çocuk hâkimince.",
+      "articleRefs": [
+        "8"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Acil korunma kararı en fazla kaç günlük süreyle verilebilir?",
+      "back": "En fazla otuz günlük süreyle.",
+      "explanation": "Bu süre içinde çocuk hakkında sosyal inceleme yapılır. Çocuğun ailesine teslim edilip edilmeyeceğine veya uygun görülen başkaca bir tedbire hâkim karar verir.",
+      "articleRefs": [
+        "9"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Yataklı sağlık kurumuna gelen çocuk için uzman hekim raporu düzenlendikten sonra sağlık kurumu çocuk hâkimine en geç ne zaman başvurur?",
+      "back": "Raporun düzenlendiği tarihten itibaren en geç yirmi dört saat içinde.",
+      "explanation": "Uzman hekim, tedaviye ihtiyaç bulunduğunu tespit ederse acil korunma kararı alınması amacıyla raporu yirmi dört saat içinde düzenler. Süreç; akıl hastalığı, akıl zayıflığı, bağımlılık ya da ağır tehlike arz eden bulaşıcı hastalık nedeniyle kendisi veya başkaları açısından ciddi tehlike oluşturduğu değerlendirilen çocuk için işler.",
+      "articleRefs": [
+        "9"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Sağlık kurumunun başvurusundan itibaren resmî sağlık kurulu raporu mahkemeye en geç ne zaman sunulur?",
+      "back": "En geç kırk sekiz saat içinde. Rapor, ilgili dal uzman hekiminin yer aldığı üç uzman hekimden oluşan resmî sağlık kurulunca düzenlenir.",
+      "explanation": "Hâkim, başvuruyu ve kurul raporunu değerlendirerek en geç kırk sekiz saat içinde karar verir. Hâkim kararı sağlık kuruluşuna tebliğ edilinceye kadar çocuğa gerekli görülen tıbbî müdahale ve tedavi uygulanır; gerekirse kolluktan yardım istenebilir ve kolluk bu talebi kanunla tanınan yetkileri çerçevesinde yerine getirir.",
+      "articleRefs": [
+        "9"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Koruyucu ve destekleyici tedbirler, hakkında adli süreç yürütülen ve ceza sorumluluğu olmayan çocuklar bakımından ne olarak anlaşılır?",
+      "back": "Çocuklara özgü güvenlik tedbiri olarak.",
+      "articleRefs": [
+        "11"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Akıl hastası olan adli süreçteki çocuğa çocuklara özgü güvenlik tedbirlerinin uygulanması için çocuk hangi hükmün kapsamına girmelidir?",
+      "back": "5237 sayılı Türk Ceza Kanununun 31 inci maddesinin birinci ve ikinci fıkralarının kapsamına.",
+      "articleRefs": [
+        "12"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Korunma ihtiyacı olan çocuk hakkında tedbir kararı verilmesi için duruşma yapılması zorunlu mu?",
+      "back": "Hayır. Tedbir kararı duruşma yapılmaksızın verilir; hâkim zaruret gördüğü hâllerde duruşma yapabilir.",
+      "explanation": "Aynı usul, hakkında adli süreç yürütülen ve ceza sorumluluğu olmayan çocuklar için de uygulanır. Bu Kanunun 7 nci maddesinin yedinci fıkrasında öngörülen durumlar bu kuralın dışındadır.",
+      "articleRefs": [
+        "13"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Tedbir kararı verilmeden önce hangi çocuğun görüşü alınır?",
+      "back": "Yeterli idrak gücüne sahip olan çocuğun görüşü alınır.",
+      "explanation": "Ayrıca ilgililer dinlenebilir ve çocuk hakkında sosyal inceleme raporu düzenlenmesi istenebilir.",
+      "articleRefs": [
+        "13"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Çocuk hâkiminin aldığı tedbir kararına itiraz, kararı veren çocuk hâkimine mi yapılır?",
+      "back": "Hayır. İtiraz, Ceza Muhakemesi Kanununun itiraza ilişkin hükümlerine göre en yakın çocuk mahkemesine yapılır.",
+      "articleRefs": [
+        "14"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Adli süreçteki çocuk hakkındaki soruşturmayı kim yapar?",
+      "back": "Çocuk bürosunda görevli Cumhuriyet savcısı, bizzat.",
+      "explanation": "Cumhuriyet savcısı, soruşturma sırasında gerekli görürse çocuk hakkında koruyucu ve destekleyici tedbirlerin uygulanmasını çocuk hâkiminden isteyebilir.",
+      "articleRefs": [
+        "15"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Çocuğun ifadesi alınırken yanında sosyal çalışma görevlisi bulundurulması zorunlu mu?",
+      "back": "Hayır. İfade alınırken ve çocuk hakkındaki diğer işlemler sırasında yanında sosyal çalışma görevlisi bulundurulabilir; zorunluluk yok.",
+      "articleRefs": [
+        "15"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Çocuk hakkında kamu davası açıldığında durum, gerekli idari tedbirlerin alınması için hangi birimlere bildirilir?",
+      "back": "Aile ve Sosyal Hizmetler Bakanlığı ile Milli Eğitim Bakanlığı il veya ilçe müdürlüklerine.",
+      "articleRefs": [
+        "15"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Kolluğun çocuk birimi bulunmayan bir yerde gözaltına alınan çocuk, gözaltındaki yetişkinlerle aynı yerde tutulabilir mi?",
+      "back": "Hayır. Gözaltına alınan çocuklar kolluğun çocuk biriminde tutulur; çocuk birimi bulunmayan yerlerde ise gözaltına alınan yetişkinlerden ayrı bir yerde tutulur.",
+      "articleRefs": [
+        "16"
+      ],
+      "counterNumbers": []
+    }
+  ]
+}

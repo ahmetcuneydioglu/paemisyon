@@ -1,0 +1,223 @@
+{
+  "deck": {
+    "topicId": "fd517cd6-8889-4a46-b644-e6b156a5a9f3",
+    "legislationSlug": "2839-milletvekili-secimi-kanunu",
+    "sourceLabel": "AI bilgi kartı — 2839 Milletvekili Seçimi Kanunu md 1–12, 12/A, 13–26",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: resmî madde metni + çıkmış sorular)"
+  },
+  "cards": [
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Milletvekili seçimi hangi sisteme göre yapılır?",
+      "back": "Nispi temsil sistemine göre. Seçim tek derecelidir; genel, eşit ve gizli oyla yapılır.",
+      "explanation": "Seçim bütün yurtta aynı günde, yargı yönetim ve denetimi altında yapılır. Seçmen oyunu tam bir serbestlikle kendisi kullanır.",
+      "articleRefs": [
+        "2"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "İllerin çıkaracağı milletvekili sayısı hesaplanırken ilk adımda her ile kaç milletvekili verilir?",
+      "back": "Bir milletvekili. Kalan milletvekilleri nüfusa göre dağıtılır.",
+      "explanation": "Son genel nüfus sayımıyla belli olan Türkiye nüfusu, illere önce verilen milletvekilleri çıkarıldıktan sonra kalan milletvekili sayısına bölünür. İl nüfusu bu sayıya bölünerek her ilin ayrıca çıkaracağı milletvekili sayısı bulunur. Bölüştürülmemiş milletvekillikleri artık nüfus sırasına göre dağıtılır.",
+      "articleRefs": [
+        "4"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "19 milletvekili çıkaracak bir il tek seçim çevresi sayılır mı?",
+      "back": "Hayır. 18'e kadar milletvekili çıkaran iller bir seçim çevresi sayılır. 19'dan 35'e kadar olanlar iki, 36 ve daha fazla olanlar üç seçim çevresine bölünür.",
+      "explanation": "Bölünen illerde seçim çevreleri numara sırasına göre adlandırılır. Çevreler, mümkün olduğu ölçüde eşit veya birbirine yakın sayıda milletvekili çıkaracak şekilde oluşturulur ve ilçelerin mülki bütünlüğü dikkate alınır.",
+      "articleRefs": [
+        "4"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Son kalan milletvekilliği dağıtılırken birden fazla il eşit nüfus artığı gösterirse milletvekilliği nasıl verilir?",
+      "back": "Bu iller arasında ad çekilir.",
+      "explanation": "Nüfusu milletvekili çıkarmaya yetmeyen illerin nüfusları ile artık nüfuslar büyüklüklerine göre sıraya konur. İlk hesapta bölüştürülmemiş milletvekillikleri bu sıraya göre dağıtılır.",
+      "articleRefs": [
+        "4"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Seçim çevreleri ve çıkaracakları milletvekili sayısı, genel nüfus sayımı sonuçlarının açıklanmasından itibaren en geç ne kadar sürede tespit edilip ilan edilir?",
+      "back": "En geç altı ay içinde. Tespiti Yüksek Seçim Kurulu yapar.",
+      "explanation": "Sonuç Resmi Gazete, radyo ve televizyonla ilan edilir.",
+      "articleRefs": [
+        "5"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Milletvekili genel seçiminde seçimin başlangıç tarihi nasıl belirlenir?",
+      "back": "Oy verme gününden geriye doğru altmış günlük süre hesaplanır; bu sürenin ilk günü seçimin başlangıç tarihidir.",
+      "explanation": "Türkiye Büyük Millet Meclisinin seçimleri beş yılda bir, Cumhurbaşkanı seçimiyle birlikte aynı gün yapılır. Oy, bir önceki seçimden itibaren beş yılın dolmasından önceki son Pazar günü verilir.",
+      "articleRefs": [
+        "6"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Savaş sebebiyle geri bırakılan milletvekili seçiminde geri bırakma sebebi ortadan kalkmamışsa ne olur?",
+      "back": "Erteleme kararındaki usule göre geri bırakma işlemi tekrarlanabilir.",
+      "articleRefs": [
+        "6"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Seçimlerin yenilenmesine ya da ara seçimi yapılmasına karar verilen hâllerde seçim sürelerini kısaltarak uygulama yetkisi kimdedir?",
+      "back": "Yüksek Seçim Kurulunda.",
+      "explanation": "Kurul; bu Kanunun, 298 sayılı Seçimlerin Temel Hükümleri ve Seçmen Kütükleri Hakkında Kanunun ve 2820 sayılı Siyasi Partiler Kanununun seçimlere ilişkin olarak tespit ettiği süreleri kısaltarak uygulayabilir.",
+      "articleRefs": [
+        "9"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Öğrenim, kısıtlılık, askerlik ve kamu hizmeti bakımından kimler milletvekili seçilemez?",
+      "back": "İlkokul mezunu olmayanlar, kısıtlılar, askerlikle ilişiği olanlar ve kamu hizmetinden yasaklılar.",
+      "explanation": "Seçilemeyenler arasında ayrıca taksirli suçlar hariç toplam bir yıl veya daha fazla hapis cezasına hüküm giymiş olanlar ile maddede sayılan suçlardan mahkûm olanlar da vardır.",
+      "articleRefs": [
+        "11"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "İttifak yaparak seçime katılma kararı alan siyasi partiler ittifak protokolünü Yüksek Seçim Kuruluna en geç ne zamana kadar teslim eder?",
+      "back": "Seçimin başlangıç tarihinden itibaren en geç yedi gün içinde. Protokol, genel başkanların imzalarını taşır.",
+      "explanation": "Protokolde, partilerce belirlenmişse ittifak unvanı ve kanunlara aykırı olmayan diğer hususlar yer alır.",
+      "articleRefs": [
+        "12/A"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Bir siyasi parti, aday listelerinin teslimi için belirlenen tarihten iki gün öncesine kadar ittifaktan vazgeçebilir mi?",
+      "back": "Hayır. Vazgeçme bildirimi, aday listelerinin teslim tarihinden üç gün öncesine kadar yapılabilir. İki gün öncesine kadar yapılabilen işlem, ittifak protokolünde değişikliktir.",
+      "explanation": "Vazgeçme, Yüksek Seçim Kuruluna bildirimde bulunarak olur. Kurul durumu aynı ittifaktaki diğer siyasi partilere derhal bildirir.",
+      "articleRefs": [
+        "12/A"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "İttifaktaki bir siyasi parti ittifaktan vazgeçerse ittifakın durumu ne olur?",
+      "back": "İttifak diğer partiler arasında devam eder.",
+      "explanation": "Diğer siyasi partiler, vazgeçmenin bildirilmesini takip eden gün saat 17.00'ye kadar ittifak protokolünü değiştirebilir veya ittifaktan vazgeçebilir.",
+      "articleRefs": [
+        "12/A"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Siyasi partiler anlaşarak müşterek liste hâlinde aday gösterebilir mi?",
+      "back": "Hayır. Siyasi partiler anlaşarak müşterek liste hâlinde aday gösteremez.",
+      "explanation": "İttifak yapan siyasi partiler de kendi aday listelerini verir.",
+      "articleRefs": [
+        "16",
+        "12/A"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Bir kimse Cumhurbaşkanlığına ve milletvekilliğine aynı anda aday olabilir mi?",
+      "back": "Hayır. Cumhurbaşkanlığına ve milletvekilliğine aynı anda aday olunamaz ve aday gösterilemez.",
+      "explanation": "Bir kimse aynı seçim için birden fazla seçim çevresinden de aday olamaz. Bu yasak bağımsız adaylar için de geçerlidir.",
+      "articleRefs": [
+        "16"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Yüksek Seçim Kurulu ve il seçim kurulu başkan ve üyeleri ile ilçe seçim kurulu başkanları bu görevlerinden hangi hâlde çekilebilir?",
+      "back": "Ancak adaylıklarını koymaları hâlinde çekilebilirler.",
+      "explanation": "Adaylığı tercih edenler, memurlar hakkında konulan ayrılma kayıtlarına tabidir. Yüksek Seçim Kurulu Başkanı ve üyeleri; eşleri ve ikinci dereceye kadar (bu derece dahil) kan ve sıhri hısımları hakkındaki işlemlerde kurul toplantılarına katılamaz.",
+      "articleRefs": [
+        "17"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Memur statüsündeki bir kamu görevlisi genel seçimde aday olabilmek için en geç ne zaman görevinden ayrılma isteğinde bulunmalıdır?",
+      "back": "Seçimin başlangıcından bir ay önce. Seçimin yenilenmesine karar verilmişse, yenileme kararının ilanından başlayarak yedi gün içinde.",
+      "explanation": "Bu kayıt maddede sayılan başka görevliler için de geçerlidir. Bunlar arasında hâkimler ve savcılar, öğretim elemanları, aday olmak isteyen belediye başkanları, subaylar ile astsubaylar ve siyasi partilerin il ve ilçe yönetim kurulu başkan ve üyeleri vardır. Ayrılma isteğinde bulunmayan kişi aday olamaz ve aday gösterilemez.",
+      "articleRefs": [
+        "18"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Ayrılma isteği kabul edilen bir subay milletvekili seçilemezse silahlı kuvvetlere dönebilir mi?",
+      "back": "Hayır. Milletvekili seçilmeyen subay ve astsubaylar sonradan ayrılma isteklerinden vazgeçemez ve silahlı kuvvetlere dönemez.",
+      "explanation": "Ayrılma hakkını kazanmış olanların istekleri reddedilemez; bunun istisnası, subay ve astsubayların savaş ve seferberlik hâllerindeki istekleridir. İstekleri kabul edilenler, görev başında bulundukları sürece propaganda mahiyetinde hiçbir harekette bulunamaz.",
+      "articleRefs": [
+        "19"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Bağımsız milletvekili adayı olmak isteyen kişi mal sandığına emaneten ne yatırır?",
+      "back": "En yüksek derecedeki Devlet memuruna mali haklar kapsamında yapılan her türlü ödemenin bir aylık brüt tutarını yatırır. Makbuzu başvurma belgelerine ekler.",
+      "explanation": "Başvuru, adayın seçilmek istediği çevrenin il seçim kurulu başkanlığına yapılır. Kurul başkanlığı başvurunun alındığına ilişkin belge verir ve başvuruyu derhal Yüksek Seçim Kuruluna duyurur.",
+      "articleRefs": [
+        "21"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Kesinleşen adaylar Yüksek Seçim Kurulunca oy verme gününden önceki kaçıncı gün ilan edilir?",
+      "back": "Ellibeşinci gün. İlan, seçim çevreleri itibarıyla Resmi Gazete ve radyo ile yapılır.",
+      "explanation": "İl seçim kurulları da kendi seçim çevrelerindeki adayları, Yüksek Seçim Kurulunun belirttiği tarihte alışılmış araçlarla ilan eder.",
+      "articleRefs": [
+        "24"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Birleşik oy pusulasında siyasi partiler ve bağımsız adaylar için basılan boş dairenin çapı kaç santimetredir?",
+      "back": "İki santimetre.",
+      "explanation": "Siyasi parti sütunları arasında (0,75) santimetre ve iki çizgi ile belirlenmiş bir aralık bırakılır.",
+      "articleRefs": [
+        "26"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Birleşik oy pusulasında bağımsız adaylar nereye yerleştirilir?",
+      "back": "En sağdaki siyasi parti sütunundan sonra ve aynı hizada yerleştirilir. Araya (0,75) santimetre aralık bırakılır ve dikey, kalın bir çizgi çizilir.",
+      "explanation": "Birden fazla bağımsız aday varsa sıra kurayla belirlenir. Bağımsız adaylar için herhangi bir özel işaret veya ibare kullanılamaz. Siyasi parti sütunlarının altında bağımsız adaylara yer verilmez. Bağımsız adayları yerleştirmek mümkün olmazsa, parti adaylarından sonra kalın bir çizgi çizilir ve beş santimetre boşluk bırakılır; tekrar bir çizgi çizilerek kalan adaylar yerleştirilir.",
+      "articleRefs": [
+        "26"
+      ]
+    }
+  ]
+}

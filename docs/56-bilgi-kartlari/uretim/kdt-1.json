@@ -1,0 +1,207 @@
+{
+  "deck": {
+    "topicId": "3e609f93-00e7-42de-9c16-59d4d43d6a89",
+    "legislationSlug": "koruyucu-ve-destekleyici-tedbir-kararlarinin-uygulanmasi-hakkinda-yonetmelik",
+    "sourceLabel": "AI bilgi kartı — Koruyucu ve Destekleyici Tedbir Kararlarının Uygulanması Hakkında Yönetmelik md 1–12",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: resmî madde metni + çıkmış sorular)"
+  },
+  "cards": [
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Koruyucu ve Destekleyici Tedbir Kararlarının Uygulanması Hakkında Yönetmelik, hangi çocukların korunmasına ilişkin usûl ve esasları düzenler?",
+      "back": "Korunma ihtiyacı olan veya suça sürüklenen çocukların (Kanunun güncel metninde: adli süreçteki çocuk) korunmasına, haklarının ve esenliklerinin güvence altına alınmasına ilişkin usûl ve esasları düzenler.",
+      "articleRefs": [
+        "1"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Yönetmelik, suça sürüklenen çocuklar (Kanunun güncel metninde: adli süreçteki çocuk) hakkında hangi tedbirlerin usûl ve esaslarını kapsar?",
+      "back": "Suça sürüklenen çocuklar hakkında uygulanacak güvenlik tedbirlerinin usûl ve esaslarını kapsar.",
+      "explanation": "Kapsamda korunma ihtiyacı olan çocuklar hakkında alınacak tedbirler de vardır. Suça sürüklenen çocuklar için ise güvenlik tedbirleri söz konusudur.",
+      "articleRefs": [
+        "2"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Yönetmelik, tedbir kararlarının yerine getirilmesiyle ilgili olarak hangi hükümleri de kapsar?",
+      "back": "Bu kararların yerine getirilmesinde kurumların görev ve sorumluluklarına ilişkin hükümleri kapsar.",
+      "articleRefs": [
+        "2"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Koruyucu ve destekleyici tedbirlerde, çocuğun yararı gözetilerek öncelik neye verilir?",
+      "back": "Çocuğun öncelikle kendi aile ortamında korunmasının sağlanmasına verilir.",
+      "explanation": "Tedbirler ayrıca çocuğun yaşına ve gelişimine uygun eğitim ve öğreniminin desteklenmesine, kişiliğinin ve toplumsal sorumluluğunun geliştirilmesine yöneliktir.",
+      "articleRefs": [
+        "5"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Bir çocuğun korunma ihtiyacı olduğunu bildirmekle yükümlü olanlar arasında hangi yerel görevliler açıkça sayılır?",
+      "back": "Köy ve mahalle muhtarları ile belediye zabıta memurları.",
+      "explanation": "Bildirim yükümlüleri arasında adlî ve idarî merciler, kolluk görevlileri, sağlık ve eğitim kuruluşları, diğer kamu kurum ve kuruluşlarının görevlileri ve sivil toplum kuruluşları da vardır. Ayrıca bir çocuğun korunma ihtiyacı olduğundan haberdar olan herkes bu yükümlülük altındadır.",
+      "articleRefs": [
+        "6"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Bildirim üzerine yapılan incelemenin sonucunda müracaatçı için hangi yollara başvurulabilir?",
+      "back": "Müracaatçının gereksinim ve aciliyet durumu gözetilerek Kurumun hizmet modellerinden yararlandırılabilir ya da ilgili kurumlara yönlendirilebilir.",
+      "articleRefs": [
+        "6"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Acil korunma kararı için Kurum, çocuğun Kuruma geldiği tarihten itibaren en geç kaç gün içinde çocuk hâkimine müracaat eder?",
+      "back": "En geç 5 gün içinde. Süre, çocuğun Kuruma geldiği tarihten başlar.",
+      "explanation": "Hâkim, çocuğun bulunduğu yerin gizli tutulmasına ve gerektiğinde kişisel ilişkinin tesisine de karar verebilir.",
+      "articleRefs": [
+        "7"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Acil korunma talebinde hâkimin karar verme süresi 5 gün müdür?",
+      "back": "Hayır. Hâkim talep hakkında 3 gün içinde karar verir; 5 gün, Kurumun çocuk hâkimine müracaat süresidir.",
+      "explanation": "Sıra şöyledir: Kurum en geç 5 gün içinde müracaat eder, hâkim 3 gün içinde karar verir, acil korunma kararı da en fazla 30 günlük süreyle sınırlı olarak verilebilir.",
+      "articleRefs": [
+        "7"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Ceza sorumluluğu hiç olmadığı için TCK md 31/1 uyarınca çocuklara özgü güvenlik tedbiri uygulanabilecek çocuklar, fiili işledikleri sırada hangi yaşın altındadır?",
+      "back": "12 yaşından küçük çocuklar hakkında uygulanabilir. Sağır ve dilsizlerde bu sınır 15 yaşını doldurmamış olmaktır.",
+      "explanation": "Dayanak, 5237 sayılı Türk Ceza Kanununun 31 inci maddesinin birinci fıkrası ile 33 üncü maddesidir.",
+      "articleRefs": [
+        "8"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Tedbir kararında esas, çocuğu aile içinde destekleyen tedbirlerdir. Hangi durumda kurumda bakım veya barınma tedbiri öncelikle değerlendirilir?",
+      "back": "Teslim edilecek kişilerin sosyal, ekonomik ve kültürel durumu ile yörenin örf ve âdetleri dikkate alınarak, çocuğun yaşama, gelişme, korunma ve katılım hakları ile yarar ve esenliğinin tehlikeye düşebileceği tespit edilirse.",
+      "explanation": "Temel ilke, kurumda bakım ve kurumda tutmanın son çare olarak görülmesidir. Bu nedenle öncelik, çocuğu aile içinde destekleyen danışmanlık, eğitim ve sağlık tedbirlerindedir. Tehlike tespit edilirse, kurumda bakım veya barınma diğer tedbirlerin yanında öncelikle değerlendirilir.",
+      "articleRefs": [
+        "8"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Mahkeme veya çocuk hâkimince verilen sağlık tedbiri kararı nereye gönderilir?",
+      "back": "İl sağlık müdürlüklerine gönderilir.",
+      "articleRefs": [
+        "9"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 1,
+      "front": "Koruyucu ve destekleyici tedbir kararının uygulanması için kararın kesinleşmesi beklenir mi?",
+      "back": "Hayır. Tedbir kararı, kesinleştirilmesi beklenmeksizin derhâl uygulanır.",
+      "articleRefs": [
+        "9"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Tedbir kararı, gönderildiği ildeki kurum veya kuruluşlarca yerine getirilemiyorsa tedbirin nerede uygulanacağına kararı veren mahkeme mi karar verir?",
+      "back": "Hayır. Tedbirin nerede yerine getirileceğine, çocuğun yararı gözetilerek tedbir kararını yerine getirmekle sorumlu kurum karar verir.",
+      "explanation": "Esas, tedbirin kararı veren mahkemenin veya çocuk hâkimliğinin bulunduğu yerde uygulanmasıdır. Sorumlu kurumun yer belirlemesi, karar o ilde yerine getirilemediğinde devreye giren istisnadır.",
+      "articleRefs": [
+        "9"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Tedbirin süresinin uzatılmasını veya değiştirilmesini kimler talep edebilir?",
+      "back": "Denetim görevlileri; çocuğun velisi, vasisi, bakım ve gözetimini üstlenen kimseler; tedbir kararını yerine getiren kişi ve kuruluşun temsilcisi ile Cumhuriyet savcısı.",
+      "articleRefs": [
+        "10"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Hâkim, herhangi bir talep olmadan tedbirin süresini uzatabilir mi?",
+      "back": "Evet. Hâkim veya mahkeme, çocuğa uygulanan tedbirin sonuçlarını inceleyerek re'sen de süreyi uzatabilir ya da tedbiri değiştirebilir.",
+      "articleRefs": [
+        "10"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Hâkim, tedbiri değiştirmeden veya süresini uzatmadan önce tedbiri uygulayandan ne isteyebilir?",
+      "back": "Tedbiri uygulayan kişi, kurum veya kuruluştan, tedbirin uygulanması hakkında gerekçeli bir rapor isteyebilir.",
+      "articleRefs": [
+        "10"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Acele hâllerde koruyucu ve destekleyici tedbirin kaldırılmasına, önceki kararı veren hâkim dışında kim karar verebilir?",
+      "back": "Çocuğun bulunduğu yer hâkimi karar verebilir. Bu durumda karar, önceki kararı alan hâkim veya mahkemeye bildirilir.",
+      "explanation": "Hâkim, tedbirin kaldırılmasına çocuğun gelişimini göz önünde bulundurarak karar verir.",
+      "articleRefs": [
+        "11"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Danışmanlık tedbiri, çocuğun bakımından sorumlu olan kimselere hangi konuda yol gösterir?",
+      "back": "Çocuk yetiştirme konusunda yol gösterir.",
+      "explanation": "Danışmanlık tedbiri çocuklara da eğitim ve gelişimleriyle ilgili sorunlarının çözümünde yol gösteren bir rehberlik tedbiridir. Bakımdan sorumlu kimselere anne baba eğitimi, aile danışmanlığı, aile tedavisi gibi konularda hizmet sunulur.",
+      "articleRefs": [
+        "12"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Danışmanlık hizmetini kimler yürütür?",
+      "back": "Kurumlarda görevli sosyal çalışma görevlileri ile alanında meslekî eğitim almış görevliler yürütür.",
+      "explanation": "Meslekî eğitimin yanında yeterliliğini sertifikasıyla belirten ve alanında çalıştığını hizmet belgesiyle ispat edenler öncelikli olarak tercih edilir. Uygulanacak çalışmaların standartları, uygulama esasları ve değerlendirme ölçütleri, tedbiri yerine getirecek kurumlarca belirlenir.",
+      "articleRefs": [
+        "12"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Hakkında danışmanlık tedbirine karar verilen çocuk için birden fazla danışman görevlendirilebilir mi?",
+      "back": "Evet. Çocuğun, ailesinin ve bakımını üstlenen kişilerin ihtiyaçlarına uygun konularda uzmanlaşmış bir veya birden fazla kişi danışman olarak görevlendirilebilir.",
+      "explanation": "Uzmanlık konuları arasında okul başarısını arttırma, madde kullanımı, davranış bozukluğu, ergenlik sorunları ve aile içi iletişim gibi konular vardır.",
+      "articleRefs": [
+        "12"
+      ],
+      "counterNumbers": []
+    }
+  ]
+}

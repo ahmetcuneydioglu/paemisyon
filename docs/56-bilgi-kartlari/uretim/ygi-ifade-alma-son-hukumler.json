@@ -1,0 +1,173 @@
+{
+  "deck": {
+    "topicId": "f50bc484-d0b4-490d-a104-ab1fc2166120",
+    "legislationSlug": "yakalama-gozaltina-alma-ve-ifade-alma-yonetmeligi",
+    "sourceLabel": "AI bilgi kartı — Yakalama, Gözaltına Alma ve İfade Alma Yönetmeliği md 19–34",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: resmî madde metni + çıkmış sorular; 1 açıklama düşürüldü)"
+  },
+  "cards": [
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Fiili işlediği zaman kaç yaşını doldurmamış olan çocuk suç nedeniyle yakalanamaz?",
+      "back": "Oniki yaşını doldurmamış olan çocuk suç nedeniyle yakalanamaz. Sağır ve dilsizlerde bu sınır onbeş yaşını doldurmamış olmaktır.",
+      "explanation": "Bu gruptakiler hiçbir suretle suç tespitinde kullanılamaz. Oniki yaşını doldurmuş ancak onsekiz yaşını doldurmamış olanlar ise suç sebebiyle yakalanabilir.",
+      "articleRefs": [
+        "19"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Suç nedeniyle yakalanamayacak yaştaki bir çocuk kimlik ve suç tespiti amacıyla yakalanırsa ne yapılır?",
+      "back": "Kimlik tespitinden hemen sonra serbest bırakılır. Tespit edilen kimlik ve suç derhâl Cumhuriyet başsavcılığına bildirilir.",
+      "explanation": "Bildirim, mahkeme başkanı veya hâkimi tarafından tedbir kararı alınmasına esas olmak üzere yapılır.",
+      "articleRefs": [
+        "19"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Suç sebebiyle yakalanan, oniki yaşını doldurmuş ancak onsekiz yaşını doldurmamış şüpheli çocuğun ifadesi hangi şartla alınır?",
+      "back": "Müdafi hazır bulundurulmak şartıyla alınır. Çocuk kendi talebi olmasa bile müdafiden yararlandırılır.",
+      "explanation": "Ana-babası veya vasisi çocuğa müdafi seçebilir. Çocuğun yararına aykırı olduğu saptanmadığı veya kanunî bir engel bulunmadığı durumlarda ana-babası veya vasisi ifade alınırken hazır bulunabilir. Soruşturmayı Cumhuriyet başsavcısı veya görevlendireceği Cumhuriyet savcısı bizzat yapar.",
+      "articleRefs": [
+        "19"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Şüpheli veya sanığın müdafiiyle yazışmaları denetlenebilir mi?",
+      "back": "Hayır. Şüpheli veya sanığın müdafiiyle yazışmaları denetime tâbi tutulamaz.",
+      "explanation": "Yakalanan kişiye talebi hâlinde, müdafiiyle görüşmesinden önce ve görüşmesi sırasında kalem ve kâğıt da verilir.",
+      "articleRefs": [
+        "21"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Müdafiin kollukta bulunan soruşturma dosyasını incelemesi için ne gerekir?",
+      "back": "Yetkili Cumhuriyet savcısının yazılı emri gerekir.",
+      "explanation": "Müdafi, soruşturma evresinde dosya içeriğini inceleyebilir. İstediği belgelerin bir örneğini de harçsız olarak alabilir.",
+      "articleRefs": [
+        "22"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Müdafi, ifade alınırken şüpheliye sorulan soruya doğrudan cevap verebilir mi?",
+      "back": "Hayır. Müdafi sadece hukukî yardımda bulunabilir, şüphelinin yerini aldığı izlenimi veren bir müdahalede bulunamaz. Şüpheliye bütün kanunî haklarını ise hatırlatabilir.",
+      "explanation": "Hukukî yardım, maddî olayı karartabilecek müdahalelerin yapılması anlamına gelmez. Müdafiin beyanı ve her türlü müdahalesi tutanağa geçirilir.",
+      "articleRefs": [
+        "23"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Nezarethane en az kaç metrekare genişliğinde düzenlenir?",
+      "back": "En az 7 metrekare genişliğinde düzenlenir.",
+      "explanation": "Nezarethane ayrıca 2,5 metre yüksekliğinde ve duvarlar arasında en az 2 metre mesafe olacak şekilde düzenlenir. Yeterli doğal ışıklandırma ve havalandırma imkânları sağlanır.",
+      "articleRefs": [
+        "25"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Nezarethane kaç metre yüksekliğinde düzenlenir?",
+      "back": "2,5 metre yüksekliğinde düzenlenir.",
+      "explanation": "2 metre, duvarlar arasında bulunması gereken en az mesafedir. Genişlik ise en az 7 metrekaredir.",
+      "articleRefs": [
+        "25"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Şüpheli sayısının çokluğu sebebiyle nezarethane imkânları yetersiz kalırsa başka yerler hangi şartla kullanılabilir?",
+      "back": "Başka yerler, nezarethaneler için öngörülen fizikî şartlara sahip olmaları şartıyla kullanılabilir.",
+      "explanation": "Nezarethanelerde yatma ve oturma için yeteri kadar sabit ve dayanıklı oturma yeri bulundurulur. Geceyi gözaltında geçirecek kişiler için yeterli miktarda battaniye ve yatak temin edilir.",
+      "articleRefs": [
+        "25"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Soruşturma evresinde gözaltındaki bir kişi bakımından hangi durumlara sebebiyet verilmez?",
+      "back": "Kişinin suçlu olarak kamuoyuna duyurulmasına, basın önüne çıkartılmasına, basınla sorulu cevaplı görüştürülmesine, görüntülerinin alınmasına ve teşhir edilmesine sebebiyet verilmez.",
+      "explanation": "Bu yasakların gerekçesi şudur: suçluluğu bir yargı hükmüne bağlanana kadar kişinin masumiyeti esastır ve soruşturma evresi gizlidir. Soruşturma evrakı da hiçbir şekilde yayımlanamaz.",
+      "articleRefs": [
+        "27"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Yer gösterme işlemi sırasında müdafi hazır bulunabilir mi?",
+      "back": "Evet. Soruşturmayı geciktirmemek kaydıyla müdafi de yer gösterme işlemi sırasında hazır bulunabilir.",
+      "explanation": "Müdafi veya vekil sıfatıyla hazır bulunulan işlemlerde, tutanakta avukatın isim ve imzasına da yer verilir.",
+      "articleRefs": [
+        "28"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Yer gösterme tutanağını ilgililerden biri imzalamaktan kaçınırsa ne yapılır?",
+      "back": "İmzadan kaçınmanın nedenleri tutanağa geçirilir.",
+      "explanation": "Tutanak; işlemin yapıldığı yeri, zamanı ve işleme katılan veya ilgisi bulunan kimselerin isimlerini içerir. Tutanağın ilgilileri ilgilendiren kısımları onlara okunur veya okumaları için verilir. Bu husus tutanağa yazılarak ilgililere imza ettirilir.",
+      "articleRefs": [
+        "28"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Yönetmelikle kolluk kuvvetine verilen görevleri yerine getiren personelde hangi şart aranır?",
+      "back": "Personelin eğitim görmüş olması gerekir.",
+      "articleRefs": [
+        "30"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Eğitime katılacak personelin psiko-teknik testten geçirilmiş olması şart mıdır?",
+      "back": "Hayır. Psiko-teknik testten geçirilmiş olma yalnız tercihan aranır. Eğitime tecrübeli, suçluluk psikolojisinden anlayan, sabırlı, soğukkanlı ve kavrama kabiliyeti yüksek personel katılabilir.",
+      "explanation": "Adalet Bakanlığı temsilcileri de ilgili personelin eğitimine katılabilir.",
+      "articleRefs": [
+        "31"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Tekerrür ve tazeleme gibi özel eğitimlere katılan personele ayrıca sertifika verilir mi?",
+      "back": "Hayır. Tekerrür ve tazeleme gibi özel eğitimlere iştirak ettirilen personele ayrıca sertifika verilmez.",
+      "explanation": "Eğitimde başarı gösteremeyen personel hakkında Hizmet İçi Eğitim Yönergelerinin ilgili hükümleri uygulanır.",
+      "articleRefs": [
+        "31"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Yakalama, Gözaltına Alma ve İfade Alma Yönetmeliği hükümlerini kim yürütür?",
+      "back": "Adalet Bakanı yürütür.",
+      "explanation": "Yönetmelik yayımı tarihinde yürürlüğe girer.",
+      "articleRefs": [
+        "34",
+        "33"
+      ]
+    }
+  ]
+}

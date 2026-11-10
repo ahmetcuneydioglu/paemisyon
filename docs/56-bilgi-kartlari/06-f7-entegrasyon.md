@@ -316,11 +316,161 @@ yayınlanmış ünitede `--replace`'in aksine çoğaltmaz (kuru çalıştırma v
 yazıldı) ve md 28 İcra Vekilleri Heyeti — bu hükümlerden kart yok ama üniteler panelde okunurken bilinmeli;
 PVSK zor-silah #24'teki 1481 sayılı Kanunun yürürlüğü teyit edilmeli; md 6 idari para cezası tutarları nominal.
 
+## 3m. Ek polis mevzuatı: 2911, 5326, 6136 + iki yönetmelik (10 Kas 2026)
+
+Kullanıcı kararı (10 Kas 2026): sıradaki tur "polis ek mevzuatı"; üretim modeli `claude-opus-5-5` kalır. Bu tur
+üretim ve denetim tek oturumda yapıldı. Kartları `kart-uret.ts` (API) yazar; denetim, desteyi görmemiş iki bağımsız
+denetçi alt ajanla yürür; hakem kararını oturum verir.
+
+Ünite özeti olmadığı için ünitesiz kip kullanıldı (`--slug/--baslik`). Girdiler `girdi/<slug>.json` dosyalarında
+(`ozet-girdi.ts --articles`). 16 deste üretildi, toplam **389 kart**. Raporlar `denetim/<slug>.md` dosyalarında;
+hepsi GEÇTİ.
+
+| Mevzuat | Deste | Kart |
+|---|---|---|
+| 2911 Toplantı ve Gösteri Yürüyüşleri | tgy-toplanti-hakki-bildirim, tgy-yasak-erteleme-dagitma, tgy-cezalar-son-hukumler | 79 |
+| 5326 Kabahatler | kab-genel-hukumler-yaptirimlar, kab-karar-yetki-basvuru-zamanasimi, kab-kabahatler-ozel-hukumler | 84 |
+| 6136 Ateşli Silahlar ve Bıçaklar | ats-tanimlar-ruhsat, ats-ruhsat-istisnalar-yasak-bicak, ats-cezalar, ats-ek-maddeler | 101 |
+| Yakalama, Gözaltına Alma ve İfade Alma Yön. | ygi-genel-yakalama, ygi-gozalti, ygi-ifade-alma-son-hukumler | 50 |
+| Adli ve Önleme Aramaları Yön. | aoa-genel-onleme-aramasi, aoa-adli-arama, aoa-elkoyma-tutanak | 75 |
+
+**Bulunan örüntüler:**
+- (a) **Yönetmelik ↔ CMK çifti:** iki yönetmeliğin büyük kısmı CMK'yı kelimesi kelimesine tekrarlıyor. CMK
+  destelerindeki kartla aynı cevaba giden 30'dan fazla kart çıkarıldı; yalnız yönetmeliğe özgü ayrıntı kaldı.
+- (b) **Yönetmelik kanunun gerisinde:** yönetmeliğin CMK'nın sonraki değişikliklerine uyarlanmamış hükümleri
+  kanunla çelişen bir kuralı öğretiyordu. Bu kartlar çıkarıldı:
+  - YGİA md 16: en yakın sulh ceza hâkimi ve ara tutuklama; CMK md 94 (6526) ile kalktı.
+  - YGİA md 20: zorunlu müdafide "üst sınırı beş yıl"; CMK md 150/3 "alt sınırı beş yıldan fazla" diyor.
+  - YGİA md 22: dosya incelemesi "iddianamenin verilmesi"; CMK md 153/4 "kabulü" diyor.
+  - AOA md 14: askerî mahalde aramayı askerî makamlar yapar; CMK md 119/5 (7145) ile adli kolluk yapıyor.
+  - AOA md 17: veri kopyası için yalnız tutanak; CMK md 134/5 kâğıda yazdırmayı öngörüyor.
+- (c) **2911'de bölge valiliği:** Geçici 2'ye göre bölge valilikleri kuruluncaya kadar yetkiyi İçişleri Bakanlığı
+  kullanır; bölge valilikleri kurulmadı. Bu yetkiye dayanan 4 kart çıkarıldı.
+- (d) **6136 md 7:** ateşli silahla işlenen suçlarda "bir yıldan fazla" şartı aranmaz; kapsam ayrımı düzeltildi.
+- (e) Anayasa md 122 (sıkıyönetim) 2017'de mülga oldu; açıklamadan çıkarıldı.
+
+**İstem kuralı adayı:** yönetmelik destelerinde aynı konunun kanun destesindeki kartını tekrar eden kart yazılmasın;
+yönetmelik hükmü kanunun güncel metniyle çelişiyorsa kart yazılmasın. `kart-uret.ts` istemine işlenmedi; bir sonraki
+yönetmelik turundan önce işlenmeli.
+
+**Yayın öncesi insan notları:**
+- 5326 md 27–29 resmî metinde (mevzuat.gov.tr'de teyit edildi) "sulh ceza mahkemesi" diyor. 6545 (2014) ile merci
+  sulh ceza hâkimliği oldu; kartlar metni izliyor.
+- Bölge valiliklerinin kurulmadığı teyit edilmeli.
+- 2911 md 34/A'nın 3713 md 2/2 atfı teyit edilmeli.
+- **Veri:** platformdaki madde metinlerinde bazı maddeler cümle ortasında kesik: 6136 md 1, md 8, Ek 12, Geçici 9;
+  2911 md 12; 5326 Geçici 1. Kartlar kesik kısma dayanmıyor, ama okuyucudaki mevzuat metni eksik; legislation
+  verisi tazelenmeli.
+
+**Prod:** 16 deste 10 Kas 2026'da kullanıcı onayıyla `kart-yukle.ts` ile `in_review` olarak yüklendi (389 kart, beş
+konu). Yayın kararı panelde, insanda.
+
+## 3n. Polis mevzuatının geri kalanı — gece turu (10–11 Kas 2026)
+
+Kullanıcı görevi: "polis mevzuatı ile ilgili tüm bilgi kartlarını adım adım bitir, onay isteme". Aynı hat
+(`kart-uret.ts` ünitesiz kip, claude-opus-5-5 → mekanik kapı → Denetçi A + Denetçi B → hakem → `--onar` + kapı →
+`kart-yukle.ts`), 2–5 destelik partiler hâlinde. **65 deste, 1636 kart, hepsi GEÇTİ ve prod'da `in_review`.**
+Raporlar `denetim/<slug>.md`.
+
+| Mevzuat | Deste | Kart |
+|---|---|---|
+| 5901 Türk Vatandaşlığı Kanunu (`vat-*`) | 2 | 57 |
+| 5682 Pasaport Kanunu (`pas-*`) | 2 | 56 |
+| 5395 Çocuk Koruma Kanunu (`cok-*`) | 4 | 101 |
+| EGM Performans Değerlendirme Yönetmeliği (`epd-*`) | 3 | 70 |
+| 4483 Memurların Yargılanması Hakkında Kanun (`mya`) | 1 | 28 |
+| 6284 Ailenin Korunması Kanunu (`aile-*`) | 2 | 55 |
+| 1774 Kimlik Bildirme Kanunu (`kim`) | 1 | 28 |
+| 2918 Karayolları Trafik Kanunu (`ktk-*`, geçici maddeler hariç) | 16 | 415 |
+| 3713 Terörle Mücadele Kanunu (`tem-*`) | 3 | 75 |
+| 5607 Kaçakçılıkla Mücadele Kanunu (`kac-*`) | 3 | 68 |
+| 6222 Sporda Şiddet Kanunu (`sps-*`) | 3 | 84 |
+| 5188 Özel Güvenlik Hizmetleri Kanunu (`ogk-*`) | 2 | 55 |
+| Özel Güvenlik Uygulama Yönetmeliği (`ogy-*`) | 3 | 78 |
+| Adli Kolluk Yönetmeliği (`akl`) | 1 | 23 |
+| Teknik Yöntemlerle Takip Sistemleri Yönetmeliği (`tts-*`) | 2 | 48 |
+| 6284 Uygulama Yönetmeliği (`aiy-*`) | 3 | 67 |
+| Çocuk Koruma Kanunu Uygulama Yönetmeliği (`cky-*`) | 3 | 64 |
+| Koruyucu ve Destekleyici Tedbir Kararları Yönetmeliği (`kdt-*`) | 3 | 62 |
+| Emniyet Atama ve Yer Değiştirme Yönetmeliği (`eay-*`) | 4 | 107 |
+| 5726 Tanık Koruma Kanunu (`tkk`) | 1 | 28 |
+| 2860 Yardım Toplama Kanunu (`ytk`) | 1 | 29 |
+| 5233 Terör Zararlarının Karşılanması Kanunu (`tzk`) | 1 | 28 |
+| 1481 Asayişe Müessir Bazı Fiillerin Önlenmesi Kanunu (`aif`) | 1 | 10 |
+
+**Kapsam dışı kalanlar:** 7245, 6458 ve Polis Merkezi Amirliği Yönetmeliği platformda (legislation API) yok; metin
+gelirse aynı hatla kartlanır. 2918 ve 3713'ün geçici maddeleri bilinçli olarak dışarıda.
+
+**Bulgular (denetçi + hakem):**
+- **Kanun desteleri temiz:** kusurlar hafif, deste başına 0–3. Örüntü: metindeki eski kurum adının güncel gibi verilmesi
+  (Ulaştırma/Denizcilik/Haberleşme, Maliye Bakanı, HSYK); bunlar güncel adla düzeltildi, metindeki ad parantezde.
+- **Yönetmelik desteleri ağır K6:** yönetmelikler kanunu kelimesi kelimesine tekrarlıyor. aiy-3'ten 9, kdt-1'den 8,
+  kdt-3'ten 6, akl'den 4 kart üst kanun destesiyle aynı cevaba gittiği için çıkarıldı. Kanun kartı tutuldu.
+- **Yönetmeliğin kanundan geri kalması (K4):** sicil → performans (akl), silahsız görevli 100 saat < 5188'in 120 saat
+  tabanı (ogy-2), 5395'in 7593 (8 Ağu 2026) değişiklikleri (zorunlu sosyal inceleme, sosyal çalışma görevlisinin
+  alanları), kalkmış Aile ve Sosyal Politikalar Bakanlığı (kdt-2, güncel adla düzeltildi).
+- **Terim:** 7593 "suça sürüklenen çocuk" yerine "adli süreçteki çocuk" dedi; cky/kdt kartlarında ilk geçişe
+  "(Kanunun güncel metninde: adli süreçteki çocuk)" eklendi.
+- **Çapraz çift:** "beş yıl içinde ikinci defa geri alınırsa iptal" kalıbı 2918'de beş maddede tekrarlanıyor; yalnız
+  ktk-7 #27'de (md 46) bırakıldı.
+- **Mekanik kapı düzeltmesi:** `ozet-dogrulayici.ts` `numberInTexts` sıfır dolgulu sayıyı tanımıyordu ("08.00" saati,
+  "4,00" ondalığı yanlış alarm veriyordu). Artık `0*n` eşleşiyor; summaries + flashcards testleri 114/114.
+
+**İnsan notları (yayından önce bakılmalı):**
+- ktk-2 #1–2: Karayolu Trafik Güvenliği Kurulunun bileşim paragrafları KHK-703 ile kalkmış; Kurul fiilen sürüyor mu?
+- aif (1481): Kanun 765 TCK ceza türlerini (ağır hapis, cürüm) kullanıyor. Kartlar bunları güncel gibi sunmuyor, ama
+  sınav değeri düşük; yayın kararında dikkate alınabilir.
+- tem-3: Ek 3 gösterge tablosuna dört ezber kartı ayrılmış; polis adayı için değeri düşük.
+- ogy-2 #4: "her beş yılda bir" kimlik yenileme kuralı, 5188 md 11'in güncel metniyle birebir değil.
+- tzk: AYM'nin md 6/1'deki "veya mirasçılarının" iptali 10/9/2026'da yürürlüğe girdi; buna dayanan kart yok.
+
+**Prod:** 65 deste 10–11 Kas 2026 gecesi `in_review` olarak yüklendi (kullanıcının "onay isteme" talimatıyla). Yayın
+kararı panelde, insanda. Bu turla birlikte polis mevzuatı toplam 16 (7 Kas) + 16 (§3m) + 65 = 97 deste.
+
+## 3o. Polis dışı mevzuat turu (11 Kas 2026)
+
+Kullanıcı görevi: kaçan terör zararları yönetmeliği, ardından 5275/657/5442, idare ve seçim mevzuatı, ceza-yargı ve
+insan hakları mevzuatı, en sonda Anayasa/TCK/CMK boşluk maddeleri — "sırayla git". Aynı hat (§3n). **107 deste,
+2808 kart, hepsi GEÇTİ ve prod'da `in_review`** (raporlar `denetim/<deste>.md`).
+
+| Grup | Mevzuat (deste) | Kart |
+|---|---|---|
+| 1 | Terör Zararları Yön. (tzy 1), 5275 İnfaz (inf 11), 657 DMK (dmk 11), 5442 İl İdaresi (iik 4) | 698 |
+| 2 | 5302 (ioi 4), 5393 (bel 7), 5018 (kmy 4), 2577 İYUK (iyu 5), 2575 Danıştay (dan 3), 2576 (bim 1), 6085 Sayıştay (say 4), 3628 (mbk 1), 4982 (bed 1), 3071 (dlk 1), 7201 Tebligat (tbl 2), 6216 AYM (aym 5), 2820 SPK (spk 6), 298 (stk 7), 2839 (mvs 2), 6271 (cbs 1), 7062 YSK (ysk 1), 3376 (hok 1), TBMM İçtüzüğü (tic 4) | 1581 |
+| 3 | 5352 Adli Sicil (ads 1), 5235 (ayk 2), 6706 (uai 2), AİHS (aih 4), 6698 KVKK (kvk 3), 6328 KDK (kdk 2), 6701 TİHEK (tih 3), 3686 (ihk 1), 5253 Dernekler (der 2) | 529 |
+
+**Bulgular (deste başına çoğunlukla 0–3 hukuki kusur; asıl iş çift kart):**
+- **Anayasa ile çift kart** en büyük kusur sınıfıydı: 6216, 6271, 2839, 7062, 2820, İçtüzük, Sayıştay, Danıştay
+  Anayasa maddelerini tekrarlar; aynı cevaba giden kart çıkarıldı ya da kanuna özgü ayrıntıya (oylama usulü,
+  süre, merci) çevrildi. Kardeş kanunlar (5302↔5393, 6328↔6701, 657↔7068, 4982↔3071) için ön yüze kanun/kurum adı.
+- **Eski merci/ad:** Çevre ve Şehircilik → Çevre, Şehircilik ve İklim Değişikliği; HSYK → HSK; Maliye → Hazine ve
+  Maliye; PTT Genel Müdürlüğü → PTT A.Ş.; sicil amirliği, müşterek kararname, ilk kademe belediyesi kalktı.
+  Biçim "güncel ad (metinde: eski ad)"; üretici ters biçime yatkın, `scratchpad/ekmev/ad.py` ile toplu düzeltildi.
+- **Eski kanun hükmünün Anayasa/yeni kanun karşısında düşmesi:** 2820 md 98 beşte üç (Anayasa md 149: üçte iki),
+  2839 md 8 seçim tarihi (6271 md 3/4), 3628 md 16/20 çevirme-erteleme yasağı (TCK md 5) — kart çıkarıldı.
+- **Parasal sınırlar** (2577, 2576, KVKK) metindeki nominal tutar; yeniden değerleme notu eklendi.
+- TBMM İçtüzüğü metni 1200 sayılı Kararla (2018) uyarlanmış; md 24 son fıkra, 112/2, 77/3 eski düzen, kart yok.
+
+**Boşluk desteleri (aynı gün):** mevcut destelerde karta girmemiş, mülga olmayan maddeler için 8 ek deste, 211
+kart, hepsi GEÇTİ ve `in_review`: anayasa-ek (Başlangıç, md 43–44, 49, 63–64, 136, 171–173), tck-ek-1..3 (93 madde),
+cmk-ek-1..2 (92 madde), aih-ek (AİHS md 3, 5/1 a–f yakalama hâlleri, 5/2–5, 9, 10, 12, 17, 18, 33, 38), der-ek
+(5253 md 19/2 denetimde kolluk yasağı dahil). Kusur sınıfı neredeyse yalnız mevcut destelerle K6.
+
+**Mevzuat kaydı kusurları — 10 Kas 2026'da onarıldı:** Terör Zararları Yön. platformda 31 maddenin 15'iyle duruyordu
+(md 22 metni md 21 içinde, "22" kaydı 22/A'yı taşıyordu); resmî metinden 15 madde tazelendi, 17 madde eklendi (32 madde).
+Deste baştan üretildi: `tzy` 20 kart (eski 14 kart yumuşak silindi). AİHS P16 madde başları başlık alanına düşmüştü; 12 madde
+(P16-1…11, P7-1/P7-4 başlığı) resmî PDF'le düzeltildi, `aih-p16` 9 kart eklendi. Yönetmelik md 8/1'deki "veya mirasçılarının"
+ibaresi AYM'nin 5233 md 6/1 iptali (10/7/2025, E.2024/116 K.2025/151) karşısında uygulanamaz.
+
+**İnsan notları:** 657 md 4/B MEB sözleşmeli öğretmen (7528 sonrası teyit); 3628 md 20 "müebbeten yasaklanma"
+(TCK 53 düzeni); 2575 md 76–79 eski CMUK terimleri metne sadık; AİHS P4 ve P12'yi Türkiye onaylamadı (kartlar
+Türk hukuku gibi sunmuyor).
+
 ## 4. Yapılmayan / sıradaki
 
 - **Cihaz testi (Expo):** simülatörde temel akış doğrulandı; gerçek cihazda jest hissi, SE boyutu ve uçak
   modu kuyruğu kullanıcı göz testine kaldı.
-- **Üretim hattı:** Anayasa 12 + TCK 17 + CMK 15 + polis mevzuatı 16 = 60 deste bitti (§3i–§3l); Doc 53'teki bütün üniteler kartlandı.
+- **Üretim hattı:** Anayasa 12 + TCK 17 + CMK 15 + polis mevzuatı 97 (§3i–§3n) + polis dışı mevzuat 107 + boşluk 8 (§3o) deste bitti; Doc 53 üniteleri ve platformdaki bütün polis mevzuatı kartlandı (7245, 6458, Polis Merkezi Amirliği Yön. platformda yok).
 - **İki cihaz arası ilerleme, yayından kaldırılan kartın kuyruktan düşmesi:** API spec'te var, canlı denenmedi.
 - **Bayrak açma sırası:** prod'da pilot kartlar panelden (tek tek ya da toplu) yayınlanır → `beta` rolüyle canlı göz testi →
   `flashcards_enabled` panelden açılır. Bildirim preset'i `flashcards_due` `paused` doğar, panelden açılır.

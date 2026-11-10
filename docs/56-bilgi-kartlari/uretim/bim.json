@@ -1,0 +1,281 @@
+{
+  "deck": {
+    "topicId": "b7a655d1-8b82-416d-bbdf-33d4d5679545",
+    "legislationSlug": "2576-bolge-idare-mahkemeleri-kanunu",
+    "sourceLabel": "AI bilgi kartı — 2576 Bölge İdare Mahkemeleri Kanunu md 1–3, 3/A, 3/B, 3/C, 3/D, 3/E, 3/F, 3/G, 3/H, 3/I, 4–7, 10–17, Ek 1",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: resmî madde metni + çıkmış sorular)"
+  },
+  "cards": [
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Bölge idare mahkemeleri, idare mahkemeleri ve vergi mahkemeleri nasıl nitelendirilir?",
+      "back": "Genel görevli bağımsız mahkemeler olarak nitelendirilir. Bu Kanunla verilen görevleri yerine getirmek üzere kurulmuşlardır.",
+      "articleRefs": [
+        "1"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Bölge idare, idare ve vergi mahkemeleri hangi makamca kurulur?",
+      "back": "Adalet Bakanlığınca kurulur. Bakanlık, bölgelerin coğrafi durumlarını ve iş hacmini göz önünde tutar; yargı çevrelerini de tespit eder.",
+      "explanation": "Bu mahkemelerin kurulmaları, kaldırılmaları ve yargı çevrelerinin değiştirilmeleri hakkındaki kararlar Resmî Gazete'de yayımlanır.",
+      "articleRefs": [
+        "2"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Bölge idare mahkemesi, yargı çevresindeki idare ve vergi mahkemeleri arasında çıkan görev ve yetki uyuşmazlıklarını nasıl karara bağlar?",
+      "back": "Kesin olarak karara bağlar.",
+      "explanation": "Bölge idare mahkemesinin görevleri şunlardır: istinaf başvurularını inceleyip karara bağlamak, yargı çevresindeki idare ve vergi mahkemeleri arasındaki görev ve yetki uyuşmazlıklarını kesin karara bağlamak ve diğer kanunlarla verilen görevleri yapmak.",
+      "articleRefs": [
+        "3/A"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Bölge idare mahkemesinde dosyayı inceleyecek üyeye kim havale eder?",
+      "back": "Daire başkanı havale eder. Kararların zamanında yazılmasını da daire başkanı sağlar.",
+      "explanation": "Üyeler, daire başkanının verdiği dosyaları inceleyip heyete sunar, düşüncelerini bildirir ve kararları yazar. Dairelerindeki duruşma ve müzakerelere katılmak da üyelerin görevidir.",
+      "articleRefs": [
+        "3/B"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Personelin izin isteklerini düşünceleriyle birlikte adalet komisyonuna aktarmak bölge idare mahkemesi başkanının görevi midir?",
+      "back": "Hayır; bu, daire başkanının görevidir. Personelin özlük işlemlerinin yürütülmesini de daire başkanı sağlar.",
+      "explanation": "Bölge idare mahkemesi başkanı ise mahkemeyi temsil eder, başkanlar kuruluna ve adalet komisyonuna başkanlık eder, genel yönetim işlerini yürütür. Bölge idare mahkemesi memurlarını da denetler veya denetletir.",
+      "articleRefs": [
+        "3/B"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Bölge idare mahkemesi başkanının yokluğunda en kıdemli daire başkanı, başkanın adalet komisyonundaki görevine de vekâlet eder mi?",
+      "back": "Hayır. En kıdemli daire başkanı başkana vekâlet eder, ancak adalet komisyonu ve dairedeki görevler bu vekâletin dışında kalır.",
+      "articleRefs": [
+        "3/B"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Bölge idare mahkemesi başkanlar kurulu kimlerden oluşur?",
+      "back": "Bölge idare mahkemesi başkanı ile daire başkanlarından oluşur.",
+      "explanation": "Bölge idare mahkemesi başkanı bulunmadığında kurula daire başkanlarından en kıdemli olan başkanlık eder. Daire başkanının mazereti hâlinde o dairenin en kıdemli üyesi kurula katılır.",
+      "articleRefs": [
+        "3/C"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Bölge idare mahkemesi başkanlar kurulunda oylar eşit çıkarsa hangi taraf çoğunluğu sağlamış sayılır?",
+      "back": "Başkanın bulunduğu taraf çoğunluğu sağlamış sayılır. Kurul eksiksiz toplanır ve çoğunlukla karar verir.",
+      "articleRefs": [
+        "3/C"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Başkanlar kurulunun, kesin kararlar arasındaki aykırılığın giderilmesine ilişkin istemi üzerine ilgili dava daireleri kurulu ne kadar sürede karar verir?",
+      "back": "Üç ay içinde karar verir. İstem, konusuna göre İdari veya Vergi Dava Daireleri Kuruluna iletilir.",
+      "explanation": "Başkanlar kurulu bu istemi resen ya da dairelerin veya istinaf yoluna başvurma hakkı bulunanların gerekçeli istemi üzerine yapar ve kendi görüşlerini de ekleyerek Danıştaydan karar verilmesini ister. Aykırılığın giderilmesine ilişkin karar kesindir.",
+      "articleRefs": [
+        "3/C"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "İlk derece mahkemelerinin yürütmenin durdurulması istemleri hakkındaki kararlarına karşı bölge idare mahkemesi dairesine istinaf başvurusu mu yapılır?",
+      "back": "Hayır; bu kararlara karşı itiraz yapılır ve itirazı daire karara bağlar. İstinaf başvurusu ise istinaf yolu açık olan nihai kararlara karşı yapılır.",
+      "articleRefs": [
+        "3/D"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "İki dairenin görevine ilişkin davalar için yapılan ortak toplantıda toplanma ve görüşme yeter sayısı kaçtır?",
+      "back": "Beştir. Kararlar oy çokluğuyla verilir.",
+      "explanation": "Toplantı, ilgili dairenin isteği üzerine yapılır. Daire başkanlarından kıdemli olan toplantıya katılır ve başkanlık eder. Dava, istemde bulunan dairenin esas ve karar numaralarını alır.",
+      "articleRefs": [
+        "3/D"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Bölge idare mahkemesi daireleri arasındaki iş bölümünü kim belirler?",
+      "back": "Hâkimler ve Savcılar Kurulu belirler. Bunu yaparken gelen işlerin yoğunluğunu ve niteliğini dikkate alır.",
+      "explanation": "Daireler arasında çıkan iş bölümü uyuşmazlıklarını ise bölge idare mahkemesi başkanlar kurulu karara bağlar.",
+      "articleRefs": [
+        "3/D",
+        "3/C"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Bölge idare mahkemesi daire üyeleri en az hangi sınıfa ayrılmış idari yargı hâkim ve savcıları arasından atanır?",
+      "back": "En az birinci sınıfa ayrılmış ve bu sınıfa ayrılmayı gerektiren nitelikleri yitirmemiş olanlar arasından atanır. Atamayı Hâkimler ve Savcılar Kurulu (metinde: Hâkimler ve Savcılar Yüksek Kurulu) yapar.",
+      "explanation": "Bölge idare mahkemesi başkanı ile daire başkanlarında da birinci sınıf olmak ve birinci sınıfa ayrılmayı gerektiren nitelikleri yitirmemiş olmak aranır.",
+      "articleRefs": [
+        "3/E"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Danıştay daire başkanı ve üyeleri, istekleri üzerine bölge idare mahkemesi başkanlığına veya daire başkanlıklarına kaç yıllığına atanabilir?",
+      "back": "Dört yıllığına atanabilir. Atamayı Hâkimler ve Savcılar Kurulu (metinde: Hâkimler ve Savcılar Yüksek Kurulu) yapar.",
+      "explanation": "Bu şekilde atananların Danıştay üyeliği sıfatı, kadrosu, aylık ve ödeneği ile her türlü özlük hakları korunur. Bu görevde geçirdikleri süre Danıştay üyeliğinde geçmiş sayılır. İstekleri üzerine Danıştaydaki görevlerine geri dönerler.",
+      "articleRefs": [
+        "3/E"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Bölge idare mahkemesinin her dairesi kaç kişinin katılımıyla toplanır?",
+      "back": "Bir başkan ve iki üyenin katılımıyla toplanır. Görüşmeler gizli yapılır, kararlar çoğunlukla verilir.",
+      "explanation": "Daire toplanamazsa eksiklik önce bölge idare mahkemesi başkanının kararıyla diğer dairelerden tamamlanır. Bu da mümkün olmazsa Hâkimler ve Savcılar Kurulunca (metinde: Hâkimler ve Savcılar Yüksek Kurulu) diğer bölge idare mahkemelerinden görevlendirilen üyelerle tamamlanır. Daire başkanı bulunamazsa dairenin en kıdemli üyesi başkanlık yapar.",
+      "articleRefs": [
+        "3/F"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Bölge idare mahkemesi adalet komisyonunda, bölge idare mahkemesi başkanının yanında kaç asıl üye bulunur?",
+      "back": "İki asıl üye bulunur. Hâkimler ve Savcılar Kurulu (metinde: Hâkimler ve Savcılar Yüksek Kurulu) bu üyeleri daire başkanları arasından belirler.",
+      "explanation": "Kurul ayrıca daire başkan veya üyeleri arasından iki yedek üye belirler. Komisyon eksiksiz toplanır ve çoğunlukla karar verir. Başkanın yokluğunda asıl üye olan kıdemli daire başkanı komisyona katılır.",
+      "articleRefs": [
+        "3/G"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Bölge idare mahkemesi üyeleri hakkındaki soruşturmalarda, 5235 sayılı Kanunun 47 nci maddesindeki “en yakın bölge adliye mahkemesi” ibaresinden ne anlaşılır?",
+      "back": "Görev yapılan bölge idare mahkemesinin bulunduğu ilin bağlı olduğu bölge adliye mahkemesi anlaşılır.",
+      "explanation": "Bu hüküm başkan, daire başkanı ve üyelerin görevden doğan veya görev sırasında işlenen suçları ile şahsi suçlarına ilişkin soruşturma ve kovuşturmalarda uygulanır.",
+      "articleRefs": [
+        "3/I"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "İdare mahkemeleri hangi davalar dışında kalan iptal ve tam yargı davalarını çözümler?",
+      "back": "Vergi mahkemelerinin görevine giren davalar ile ilk derecede Danıştayda çözümlenecek davalar dışında kalanları çözümler.",
+      "explanation": "İdare mahkemeleri ayrıca kamu hizmetlerinden birinin yürütülmesi için yapılan idari sözleşmelerden doğan uyuşmazlıklara ilişkin davaları ve diğer kanunlarla verilen işleri çözümler.",
+      "articleRefs": [
+        "5"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Tahkim yolu öngörülen imtiyaz şartlaşma ve sözleşmelerinden doğan uyuşmazlıklar idare mahkemesinde çözümlenir mi?",
+      "back": "Hayır. Bu uyuşmazlıklar, idare mahkemesinin baktığı idari sözleşme davalarının dışında bırakılmıştır.",
+      "explanation": "İdare mahkemesi, kamu hizmetlerinden birinin yürütülmesi için yapılan idari sözleşmelerden dolayı taraflar arasında çıkan uyuşmazlıklara ilişkin davaları çözümler.",
+      "articleRefs": [
+        "5"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "6183 sayılı Amme Alacaklarının Tahsil Usulü Hakkında Kanunun uygulanmasına ilişkin her dava vergi mahkemesinin görevine girer mi?",
+      "back": "Hayır. Bu Kanunun uygulanmasına ilişkin davalar, yalnız vergi, resim ve harçlar, benzeri mali yükümler, bunların zam ve cezaları ile tarifeler konusunda vergi mahkemesine aittir.",
+      "explanation": "Bu konular genel bütçeye, il özel idarelerine, belediyelere ve köylere ait olanları kapsar. Vergi mahkemeleri bunlara ilişkin davaları ve diğer kanunlarla verilen işleri çözümler.",
+      "articleRefs": [
+        "6"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "İdari işlemlere karşı açılan iptal ve tam yargı davalarında, konusu hangi tutarı aşmayan davalar idare mahkemesi hâkimlerinden biri tarafından çözümlenir?",
+      "back": "Konusu dört yüz seksen altı bin Türk Lirasını aşmayan davalar. Düzenleyici işlemlere karşı açılan davalar bunun dışındadır.",
+      "explanation": "Vergi mahkemesinde de 6 ncı maddenin (a) ve (b) bentlerindeki uyuşmazlıklardan kaynaklanan ve toplam değeri aynı tutarı aşmayan davaları hâkimlerden biri çözümler. Bu davaların hâkimler arasında dağılımına ilişkin esasları mahkeme başkanı önceden tespit eder.",
+      "articleRefs": [
+        "7"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Kamu görevlilerine verilen hangi disiplin cezasına karşı açılan davalar idare mahkemesinde tek hâkimle çözümlenir?",
+      "back": "Uyarma cezasına karşı açılan davalar tek hâkimle çözümlenir.",
+      "explanation": "Kamu görevlileri hakkında tesis edilen geçici görevlendirme, yolluk, lojman ve izin işlemlerine karşı açılan davalar da tek hâkimle çözümlenir.",
+      "articleRefs": [
+        "7"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Ortaöğretim öğrencisine verilen ve uzaklaştırma sonucunu doğuran disiplin cezasına karşı açılan dava tek hâkimle çözümlenir mi?",
+      "back": "Hayır. Uzaklaştırma ve ilişik kesme sonucunu doğuran disiplin cezaları tek hâkim kapsamının dışında tutulmuştur.",
+      "explanation": "Öğrencilere verilen diğer disiplin cezalarına karşı açılan davalar tek hâkimle çözümlenir. Sınıf geçme, not tespiti, yurt, kredi ve burs işlemlerine karşı açılan davalar da böyledir.",
+      "articleRefs": [
+        "7"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Mahkeme başkanları, mahkemelerindeki işlerin durumu hakkındaki raporu ne zaman verir?",
+      "back": "Her takvim yılı sonunda verir. Raporu bölge idare mahkemesi başkanlığına sunarlar.",
+      "explanation": "Raporda işlerin yürütülmesindeki aksaklıkların sebepleri yer alır; başkanlar alınmasını lüzumlu gördükleri tedbirleri de bildirir. Mahkeme başkanları ayrıca görüşme ve duruşmaları yönetir, düşünce ve görüşlerini bildirir ve oylarını verir.",
+      "articleRefs": [
+        "10"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Bölge idare, idare ve vergi mahkemelerinin idari işleri ile kalem hizmetlerinin yürütülmesi usul ve esasları hangi düzenlemede gösterilir?",
+      "back": "Adalet Bakanlığınca çıkarılacak bir yönetmelikte gösterilir.",
+      "articleRefs": [
+        "14"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Tek hâkimle çözümlenecek davalara ilişkin parasal sınırlar her yıl hangi oranda artırılır?",
+      "back": "213 sayılı Vergi Usul Kanununun mükerrer 298 inci maddesine göre önceki yıl için ilan edilen yeniden değerleme oranında artırılır. Artış takvim yılı başından geçerlidir.",
+      "articleRefs": [
+        "Ek 1"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Bir davanın tek hâkimle çözümlenip çözümlenmeyeceği belirlenirken, miktar artırımı yapılmışsa hangi tarihteki parasal sınır esas alınır?",
+      "back": "Artırımın yapıldığı tarihteki parasal sınır esas alınır.",
+      "explanation": "Miktar artırımı yapılmamışsa dava tarihindeki parasal sınır esas alınır.",
+      "articleRefs": [
+        "Ek 1"
+      ]
+    }
+  ]
+}

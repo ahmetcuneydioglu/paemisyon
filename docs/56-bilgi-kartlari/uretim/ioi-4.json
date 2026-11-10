@@ -1,0 +1,286 @@
+{
+  "deck": {
+    "topicId": "cc810ce5-feac-47bd-b4f9-9a9edf7c4672",
+    "legislationSlug": "5302-il-ozel-idaresi-kanunu",
+    "sourceLabel": "AI bilgi kartı — 5302 İl Özel İdaresi Kanunu md 46–58, 60–73",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: resmî madde metni + çıkmış sorular)"
+  },
+  "cards": [
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "İlçelerde il özel idaresi bütçesinden harcama yetkisini kim kullanır?",
+      "back": "Kaymakam. İl özel idaresinde ödenek tahsis edilen her harcama biriminin en üst yöneticisi harcama yetkilisidir; ilçelerde bu yetkiyi kaymakam kullanır.",
+      "articleRefs": [
+        "46"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "İlçelere gönderilen il özel idaresi ödenekleri harcanırken ayrıca harcama öncesi kontrol yapılır mı?",
+      "back": "Hayır. Bu ödeneklerin il özel idaresi malî kontrol yetkilisince vize edilmesi yeterlidir; harcama sırasında ayrıca harcama öncesi kontrol yapılmaz.",
+      "explanation": "Vize, ödenek ilçeye gönderilirken yapılır. İlçede bu ödeneklerin harcama yetkisini kaymakam kullanır.",
+      "articleRefs": [
+        "46"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Vali, il özel idaresi bütçesinin kesin hesabını hesap döneminin bitiminden sonra hangi ay içinde encümene sunar?",
+      "back": "Mart ayı içinde. Kesin hesap daha sonra il genel meclisinin mayıs ayı toplantısında görüşülerek karara bağlanır.",
+      "explanation": "Kesin hesabın görüşülmesi ve kesinleşmesinde bütçeye ilişkin hükümler uygulanır.",
+      "articleRefs": [
+        "47"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Yeni yıl bütçesi herhangi bir nedenle kesinleşmemişse il özel idaresi hangi bütçeyi uygular?",
+      "back": "Geçen yıl bütçesini; yeni bütçe kesinleşinceye kadar bu bütçe uygulanır.",
+      "explanation": "Bütçenin kabulüne kadar yapılan işlemler yeni yıl bütçesine göre yapılmış sayılır.",
+      "articleRefs": [
+        "49"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "İl özel idaresinde park ve bahçe bakımı ya da araç kiralama gibi hizmetler, gelecek yıllara yaygın olarak üçüncü şahıslara en uzun hangi süreyle gördürülebilir?",
+      "back": "İlk mahallî idareler genel seçimlerini izleyen üçüncü ayın sonunu geçmemek üzere; ihale yoluyla gördürülür.",
+      "explanation": "İl özel idarelerinde il genel meclisinin, bağlı kuruluşlarda yetkili organın kararı gerekir. Maddede sayılan işler arasında havuz bakımı, kontrollük, temizlik ve yemek hizmetleri ile araç, bilgisayar, faks, fotokopi ve diğer teknolojik ürünlerin bakım ve onarımı da vardır.",
+      "articleRefs": [
+        "50"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Büyükşehir belediyesi bulunan illerde il özel idaresinin faiz dahil iç ve dış borç stok sınırı nasıl uygulanır?",
+      "back": "Bir buçuk kat olarak. Esas sınır, en son kesinleşmiş bütçe gelirleri toplamının yeniden değerleme oranıyla artırılan miktarıdır.",
+      "explanation": "Sınır; il özel idaresi, bağlı kuruluşları ve sermayesinin %50'sinden fazlasına sahip oldukları şirketlerin borç stokunu kapsar. Cumhurbaşkanınca kabul edilen, ileri teknoloji ve büyük tutarda maddi kaynak gerektiren alt yapı projeleri için yapılan borçlanmalar bu miktarın hesabında dikkate alınmaz.",
+      "articleRefs": [
+        "51"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Yılı içindeki iç borçlanma, artırılmış bütçe gelirlerinin %10'unu geçiyorsa il genel meclisinin kararı yeterli midir?",
+      "back": "Hayır. %10'u geçen miktarlar için meclis üye tam sayısının salt çoğunluğunun kararı ve İçişleri Bakanlığının onayı gerekir; %10'a kadar il genel meclisi kararı yeter.",
+      "explanation": "Oran, en son kesinleşen bütçe gelirlerinin yeniden değerleme oranıyla artırılan miktarı üzerinden hesaplanır. Usul ve esaslara aykırı borçlanan sorumlular hakkında, fiil daha ağır bir cezayı gerektiren suç oluşturmuyorsa Türk Ceza Kanununun 257 nci maddesi uygulanır.",
+      "articleRefs": [
+        "51"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "İl özel idaresi görev ve hizmet alanlarında hangi tür şirket kurabilir?",
+      "back": "Sermaye şirketleri; ilgili mevzuatta belirtilen usullere göre kurabilir.",
+      "articleRefs": [
+        "52"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "İl özel idaresinin kamu kurumlarıyla olan alacak ve borçlarının takas ve mahsubunda hangi alacaklar kapsam dışıdır?",
+      "back": "4749 sayılı Kanun kapsamındaki Hazine alacakları. Bunlar dışındaki özel hukuk ve kamu hukukuna tâbi alacak ve borçlar takas ve mahsup edilir.",
+      "explanation": "Takas ve mahsup; genel bütçeli kuruluşlar, sosyal güvenlik kuruluşları, mahalli idareler ve diğer kamu kurum ve kuruluşlarıyla olan alacak ve borçlar için yapılır. Bu kurum ve kuruluşların bütçelerine yeterli ve gerekli ödenek konulur.",
+      "articleRefs": [
+        "54"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "İl genel meclisinin usulüne uygun ilân edilen kararına aykırı davranana, fiil suç oluşturmuyorsa ne kadar idarî para cezası verilir?",
+      "back": "Üçyüz Türk Lirası. Fiil bir tüzel kişinin faaliyeti çerçevesinde işlenirse tüzel kişiye verilecek ceza bir kat artırılır.",
+      "explanation": "Kanundaki parasal miktarlar, ücret, huzur hakkı ve ikramiye ödemeleri hariç, her yıl yeniden değerleme oranına göre artırılır; bu ceza tutarı da bu artışa tâbidir.",
+      "articleRefs": [
+        "55",
+        "68"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "İl özel idaresinin tesislerine zarar veren kişiden, eski duruma getirme masrafı nasıl tahsil edilir?",
+      "back": "%30 fazlasıyla. Tesisi il özel idaresi eski duruma getirir ve yaptığı masrafı %30 fazlasıyla zarar verenden tahsil eder.",
+      "articleRefs": [
+        "55"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Meclis kararına aykırı fiil, yeme ve içme gibi ihtiyaçlarla ilgili ticaret, sanat ya da meslek yapanlarca işlenirse işyeri ne kadar süre kapatılır?",
+      "back": "Üç günden yedi güne kadar; bu kapatma para cezasına ek olarak verilir.",
+      "explanation": "Maddede sayılan ihtiyaçlar arasında eğlenme, dinlenme, yatma, bakım ve temizlenme de vardır.",
+      "articleRefs": [
+        "55"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "İl Özel İdaresi Kanununda öngörülen idarî yaptırımlara kural olarak hangi organ karar verir?",
+      "back": "İl encümeni.",
+      "explanation": "Ancak vali veya kaymakam da, fiilin işlendiğini tespit ettirdiğinde, sınırlı bir para cezası ve kısa süreli işyeri kapatma kararı verebilir.",
+      "articleRefs": [
+        "56"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Vali ya da kaymakam, fiilin işlendiğini tespit ettirdiğinde hangi tutarda idarî para cezasına karar verebilir?",
+      "back": "Yüz Türk Lirası; ayrıca üç güne kadar işyerinin kapatılmasına da karar verebilir.",
+      "articleRefs": [
+        "56"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Vali ya da kaymakam, fiilin işlendiğini tespit ettirmeden idarî yaptırım kararı verebilir mi?",
+      "back": "Hayır. Vali ya da kaymakam ancak fiilin işlendiğini tespit ettirdiğinde yüz Türk Lirası idarî para cezasına ve üç güne kadar işyerinin kapatılmasına karar verebilir.",
+      "explanation": "Yaptırım kararı verme yetkisi kural olarak il encümenindedir; vali ve kaymakamın yetkisi bu tespit şartına bağlı bir istisnadır.",
+      "articleRefs": [
+        "56"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Tespit tutanağının ilgiliye verilmeyen diğer örneği kaç gün içinde il özel idaresine verilir?",
+      "back": "On gün içinde. Tutanak işlem ve eylemin yapıldığı yerde düzenlenir, taraflarca imzalanır ve bir örneği ilgiliye verilir.",
+      "articleRefs": [
+        "57"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "İlgili, tespit tutanağını imzalamaktan ya da almaktan kaçınırsa tebliğ nasıl sağlanır?",
+      "back": "Durum tutanağa yazılır; tutanak ilgili muhtarlığa verilerek kendisine tebliğ edilmiş sayılır.",
+      "explanation": "Tutanağı il özel idaresinin yetkili personeli düzenler. Tutanakta yasağa aykırı işlem ve eylemin yeri, zamanı, niteliği ve aykırı olduğu mevzuat hükmü gösterilir.",
+      "articleRefs": [
+        "57"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Hakkında tespit tutanağı düzenlenen kişi, tebliğ tarihinden itibaren kaç gün içinde itiraz edebilir?",
+      "back": "Onbeş gün içinde, il özel idaresine itiraz edebilir; ilçelerde itiraz kaymakamlıklar kanalıyla da yapılabilir.",
+      "articleRefs": [
+        "58"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Kaymakamlığa yapılan itiraz, il özel idaresine onbeş gün içinde gönderilir mi?",
+      "back": "Hayır. Kaymakamlıklara yapılan itirazlar yedi gün içinde il özel idaresine gönderilir; onbeş gün, itiraz süresi ile il encümeninin karar süresidir.",
+      "explanation": "İtiraz edilsin ya da edilmesin, tespit tutanakları onbeş gün içinde il encümeni tarafından karara bağlanır.",
+      "articleRefs": [
+        "58"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "İl özel idaresinin verdiği işyeri kapatma yaptırımı nasıl uygulanır?",
+      "back": "Yaptırım süresince işyerinin mühürlenmesi suretiyle uygulanır.",
+      "articleRefs": [
+        "60"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "İl özel idaresinin toplattığı ve sağlığa zararlı bulunmayan mallar, sahiplerince kaç gün içinde teslim alınmazsa idarece değerlendirilir?",
+      "back": "Otuz gün. Bu süre içinde teslim alınmayan malları il özel idaresi uygun biçimde değerlendirir.",
+      "explanation": "Satışı ve kullanılması yasaklanmış maddeler toplattırılır; inceleme ve tahlil sonucunda sağlığa zararlı olanlar imha edilir, diğerleri sahibine teslim edilir. 1593 sayılı Umumi Hıfzıssıhha Kanunu hükümleri saklıdır.",
+      "articleRefs": [
+        "61"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "İl özel idaresinin uluslararası teşekkül ve organizasyonlara üye olabilmesi için önceden hangi bakanlığın izni zorunludur?",
+      "back": "İçişleri Bakanlığının. Üyelik il genel meclisinin kararına bağlıdır; faaliyetler dış politikaya ve uluslararası anlaşmalara uygun yürütülür.",
+      "explanation": "İl özel idaresi bu teşekküllere kurucu üye ya da üye olabilir ve onlarla ortak faaliyet ve hizmet projeleri gerçekleştirebilir.",
+      "articleRefs": [
+        "62"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Vali yardımcıları ve kaymakamlar, valinin verdiği il özel idaresi görevlerinden kime karşı sorumludur?",
+      "back": "Valiye. Bu görevleri yapmakla yükümlüdürler ve görevlerin yapılmasından valiye karşı sorumludurlar.",
+      "articleRefs": [
+        "63"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "İl özel idaresi kendisine ait taşınmazı diğer kamu kurum ve kuruluşlarına en çok kaç yıl için tahsis edebilir?",
+      "back": "Yirmibeş yılı geçmemek üzere; taşınmaz o kuruluşun asli görev ve hizmetlerinde kullanılmak üzere tahsis edilir.",
+      "explanation": "Taşınmaz tahsis amacı dışında kullanılırsa tahsis iptal edilir. Süre sonunda aynı esaslara göre yeniden tahsis mümkündür; bu taşınmazlar aynı kuruluşlara kiraya da verilebilir.",
+      "articleRefs": [
+        "64"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "İl özel idaresinin diğer bir kamu kurumuna tahsis ettiği taşınmaz, kamu konutu olarak kullanılabilir mi?",
+      "back": "Hayır. (b) ve (d) bentlerine göre karşılanan ya da tahsis edilen taşınmazlar kamu konutu ve sosyal tesis olarak kullanılamaz.",
+      "explanation": "(b) bendi, merkezî idarenin asli görev ve hizmetleri için bina, tesis, arsa ve aynî ihtiyaçların karşılanmasını; (d) bendi, taşınmazların kamu kurum ve kuruluşlarına tahsisini düzenler.",
+      "articleRefs": [
+        "64"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "İl özel idaresi kamu kurum ve kuruluşlarıyla nasıl yazışır?",
+      "back": "Doğrudan yazışabilir.",
+      "articleRefs": [
+        "66"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "İl Özel İdaresi Kanunundaki parasal miktarlardan hangileri her yıl yeniden değerleme oranına göre artırılmaz?",
+      "back": "Ücret, huzur hakkı ve ikramiye ödemeleri. Diğer parasal miktarlar her yıl 213 sayılı Vergi Usul Kanununa göre belirlenen yeniden değerleme oranıyla artırılır.",
+      "articleRefs": [
+        "68"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "İl özel idaresinin görev ve hizmetleriyle ilgili olarak Polis Vazife ve Selâhiyet Kanununda İl Özel İdaresi Kanununa aykırı bir hüküm varsa hangisi uygulanır?",
+      "back": "İl Özel İdaresi Kanunu hükümleri uygulanır.",
+      "explanation": "Aynı kural, aykırılık bulunması hâlinde maddede sayılan Umumî Hıfzıssıhha Kanunu, İl İdaresi Kanunu, Devlet Memurları Kanunu, İmar Kanunu ve Karayolu Taşıma Kanunu gibi kanunlar için de geçerlidir.",
+      "articleRefs": [
+        "70"
+      ]
+    }
+  ]
+}

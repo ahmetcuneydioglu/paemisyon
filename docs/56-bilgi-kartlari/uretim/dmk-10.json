@@ -1,0 +1,215 @@
+{
+  "deck": {
+    "topicId": "8b68257c-bd1e-4a44-bb49-830ee4d8e4c9",
+    "legislationSlug": "657-sayili-devlet-memurlari-kanunu",
+    "sourceLabel": "AI bilgi kartı — 657 Sayılı Devlet Memurları Kanunu md 231–233, 236, 237, Ek 1, Ek 2, Ek 3, Ek 4, Ek 5, Ek 6, Ek 7, Ek 8, Ek 9, Ek 10, Ek 11, Ek 12, Ek 13, Ek 14, Ek 15, Ek 16, Ek 17, Ek 18, Ek 19, Ek 20, Ek 21, Ek 22, Ek 23, Ek 24, Ek 25, Ek 26, Ek 27, Ek 29, Ek 30, Ek 31, Ek 32, Ek 33, Ek 34",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: resmî madde metni + çıkmış sorular)"
+  },
+  "cards": [
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Bir memurun başka bir kamu kurumunda geçici süreli görevlendirilmesi bir yıl içinde en fazla ne kadar sürebilir?",
+      "back": "Altı ay. Geçici süreli görevlendirme süresi bir yılda altı ayı geçemez; yurtdışında görevlendirilen güvenlik görevlileri için ayrı süre vardır.",
+      "explanation": "Görevlendirme, görevlendirme yapmak isteyen kurumun talebi ve memurun çalıştığı kurumun izniyle yapılır. Memurun kadrosuyla ilişkisi ve kendi sınıf ve derecesindeki terfi ve emeklilik hakları sürer.",
+      "articleRefs": [
+        "Ek 8"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Talep eden kurumun isteği ve memurun kurumunun izniyle yapılan geçici süreli görevlendirme, memurun muvafakati alınmadan yapılabilir mi?",
+      "back": "Hayır. Geçici süreli görevlendirmede memurun muvafakati aranır. Görevlendirmenin memurun göreviyle ilgili olması da şarttır.",
+      "explanation": "Bu usulde görevlendirilecek kurumda göreve ilişkin 4 üncü ve daha yukarı bir dereceden boş kadro bulunmalıdır; yurtdışında görevlendirilen güvenlik görevlileri bu şarttan hariçtir. Memur, görevlendirildiği kurumun mevzuatına uymakla yükümlüdür.",
+      "articleRefs": [
+        "Ek 8"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Yurtdışında görevlendirilen güvenlik görevlileri için geçici görevlendirme süresi en çok ne kadardır?",
+      "back": "En çok iki yıl. Gerekli görülmesi hâlinde bu süre bir katına kadar uzatılabilir.",
+      "explanation": "Bu görevliler için görevlendirilecek kurumda 4 üncü ve daha yukarı dereceden boş kadro bulunması şartı aranmaz. Aylık ile diğer malî ve sosyal hakların kendi kurumlarından alınması kuralı da bu görevliler için hariç tutulmuştur.",
+      "articleRefs": [
+        "Ek 8"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "657 sayılı Devlet Memurları Kanununun konusuyla ilgili hükümler nerede yer alır?",
+      "back": "Bu Kanuna ek olarak yapılacak kanunlarda yer alır.",
+      "articleRefs": [
+        "Ek 10"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Devlet Memurları Kanununda geçen \"Devlet memuru\" deyimi, merkezî idare dışında hangi idarelerin memurlarını da kapsar?",
+      "back": "Belediyeler ve il özel idareleri ile bunların kurdukları birliklerin memurlarını da kapsar.",
+      "articleRefs": [
+        "Ek 15"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Devlet memurları hangi düzenlemelerin öngördüğü kılık ve kıyafet kurallarına uymak zorundadır?",
+      "back": "Kanun, Cumhurbaşkanlığı kararnamesi ve yönetmeliklerin öngördüğü kılık ve kıyafet kurallarına uymak mecburiyetindedir.",
+      "articleRefs": [
+        "Ek 19"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Aylığını personel kanunlarına göre alanlara ödenebilecek avans hangi aylığa mahsup edilir?",
+      "back": "Müteakip (izleyen) ayın aylığına mahsuben ödenir. Esasları Hazine ve Maliye Bakanlığınca (metinde: Maliye ve Hazine Bakanlığı) belirlenir.",
+      "explanation": "Bu şekilde yapılan avans ödemeleri, ait olduğu aylıkla birlikte kanuni kesintilere tabi tutulur.",
+      "articleRefs": [
+        "Ek 24"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Kanuna ekli IV sayılı cetvelde unvanı yazılı görevde bulunanlara ödenen makam tazminatı nasıl hesaplanır?",
+      "back": "Cetvelde unvanın hizasında gösterilen gösterge rakamı, memur aylıklarına uygulanan katsayı ile çarpılır.",
+      "articleRefs": [
+        "Ek 26"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Makam tazminatı hangi vergiye tabi tutulur?",
+      "back": "Yalnız damga vergisine. Makam tazminatı damga vergisi hariç herhangi bir vergiye tabi tutulmaz.",
+      "explanation": "Makam tazminatının ödenmesinde aylıklara ilişkin hükümler uygulanır.",
+      "articleRefs": [
+        "Ek 26"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Makam tazminatından yararlanan bir kişiye ayrıca yüksek hakimlik tazminatı da ödenir mi?",
+      "back": "Hayır. Makam tazminatından yararlananlara ayrıca yüksek hakimlik tazminatı ödenmez.",
+      "articleRefs": [
+        "Ek 26"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Millî İstihbarat Teşkilatında uzmanlık gerektiren alanlarda sözleşmeli personel hangi şartlarla çalıştırılabilir?",
+      "back": "Cumhurbaşkanınca belirlenecek uzmanlık alanlarında, Cumhurbaşkanı onayıyla ve kadro karşılık gösterilmek kaydıyla çalıştırılabilir.",
+      "explanation": "Bu çalıştırma, 657 sayılı Devlet Memurları Kanunu ile diğer kanunların sözleşmeli personel çalıştırılmasına dair hükümlerine bağlı olmaksızın yapılır.",
+      "articleRefs": [
+        "Ek 29"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Millî İstihbarat Teşkilatında uzmanlık alanlarında çalıştırılan sözleşmeli personelin ücret miktarını kim tespit eder?",
+      "back": "Cumhurbaşkanı. Sözleşme usul ve esaslarını, her çeşit ödemeleri ve diğer hakları da Cumhurbaşkanı tespit eder.",
+      "articleRefs": [
+        "Ek 29"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Görevi sebebiyle hakkında kamu davası açılıp beraat eden memurun avukatına ödediği ücret hangi ölçüye göre karşılanır?",
+      "back": "Avukatlık Asgari Ücret Tarifesine göre ödediği ücret karşılanır. Ödeme, kurumların bütçesine konulacak ödenekten yapılır.",
+      "articleRefs": [
+        "Ek 31"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Görevi sebebiyle yargılanıp beraat eden memurun dava için yaptığı masraflar belgelendirilmeden de karşılanır mı?",
+      "back": "Hayır. Dava ile ilgili masraflar ancak belgelendirilmiş olmak kaydıyla, kurumların bütçesine konulacak ödenekten karşılanır.",
+      "articleRefs": [
+        "Ek 31"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Görevi dışındaki bir sebeple hakkında kamu davası açılıp beraat eden memurun avukatlık ücreti kurum bütçesinden karşılanır mı?",
+      "back": "Hayır. Bu hak, görevleri sebebiyle haklarında kamu davası açılmış olup beraat edenlere tanınmıştır.",
+      "explanation": "Şartları sağlayan memurun, Avukatlık Asgari Ücret Tarifesine göre avukatına ödediği ücret ile belgelendirilmiş dava masrafları kurumların bütçesine konulacak ödenekten karşılanır.",
+      "articleRefs": [
+        "Ek 31"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Öğretim yılına hazırlık ödeneği ne zaman ödenir?",
+      "back": "Her öğretim yılında bir defaya mahsus olmak üzere, öğretim yılının başladığı ay içinde, Millî Eğitim Bakanı tarafından belirlenecek tarihte ödenir.",
+      "explanation": "Ödenek, Eğitim ve Öğretim Hizmetleri Sınıfına dahil öğretmen unvanlı kadrolarda görevli olup fiilen öğretmenlik yapanlara ödenir. Damga vergisi hariç diğer vergi ve kesintilere tabi tutulmaz.",
+      "articleRefs": [
+        "Ek 32"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Öğretim yılına hazırlık ödeneğinin miktarını Millî Eğitim Bakanı belirler mi?",
+      "back": "Hayır. Millî Eğitim Bakanı ödeme tarihini belirler; miktar Cumhurbaşkanınca belirlenir. Ödenek her öğretim yılında bir defaya mahsus ödenir.",
+      "articleRefs": [
+        "Ek 32"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Sağlık kurumlarında tutulan nöbet için ücret ödenebilmesi için nöbet süresi kesintisiz en az kaç saat olmalıdır?",
+      "back": "6 saat. Nöbet ücreti, izin suretiyle karşılanamayan her nöbet saati için ödenir; nöbet süresi kesintisiz 6 saatten az olamaz.",
+      "explanation": "Ücret, haftalık çalışma süresi dışında nöbet tutan ve bu nöbet karşılığında kurumunca izin kullanmasına müsaade edilmeyen memurlar ile sözleşmeli personele ödenir. Damga vergisi hariç herhangi bir vergi ve kesintiye tabi tutulmaz.",
+      "articleRefs": [
+        "Ek 33"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Ek 34’e göre üç ay veya daha fazla süreyle yurt dışına gönderilecek kamu personelinden hangi senet alınır?",
+      "back": "Yüklenme Senedi ile Muteber İmzalı Müteselsil Kefalet Senedi.",
+      "explanation": "Bu personel yurt dışında bulunduğu sürenin iki katı kadar mecburi hizmetle yükümlüdür; kendi imkânlarıyla yurt dışında öğrenim görenler bu hükmün dışındadır.",
+      "articleRefs": [
+        "Ek 34"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Mecburi hizmetini tamamlamadan görevinden ayrılan personelin yurtdışı masraflarından doğan borcu en fazla ne kadar süreye taksitlendirilebilir?",
+      "back": "Azami beş yıla kadar. Taksitlendirmede ilgilinin durumu ve ödettirilecek meblağ dikkate alınır.",
+      "articleRefs": [
+        "Ek 34"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Mecburi hizmetini tamamlamadan görevinden ayrılan personel, kurumunca döviz olarak yapılan masraflar için nasıl borçlandırılır?",
+      "back": "Aynı döviz cins ve miktarı üzerinden borçlandırılır; mecburi hizmetin tamamlanan kısmı için hesaplanan miktar bu borçtan indirilir.",
+      "explanation": "Borç Türk Lirası ile ödenir. Ödenen tutar, tahsil tarihinde T.C. Merkez Bankasınca tespit ve ilan edilen efektif satış kuru üzerinden dövize çevrilerek döviz borcundan mahsup edilir. Aynı kural, müstafi sayılma ya da bir ceza ile görevine son verilme hâlinde de uygulanır.",
+      "articleRefs": [
+        "Ek 34"
+      ]
+    }
+  ]
+}

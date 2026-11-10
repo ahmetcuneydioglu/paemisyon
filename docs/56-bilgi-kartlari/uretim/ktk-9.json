@@ -1,0 +1,280 @@
+{
+  "deck": {
+    "topicId": "3f91916c-8d15-40f4-bb20-5bcca9253c34",
+    "legislationSlug": "2918-sayili-karayollari-trafik-kanunu",
+    "sourceLabel": "AI bilgi kartı — 2918 Sayılı Karayolları Trafik Kanunu md 54–61",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: resmî madde metni + çıkmış sorular)"
+  },
+  "cards": [
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Öndeki bir aracı geçerken geçiş, geçilecek aracın hangi tarafındaki şeritten yapılır?",
+      "back": "Solundaki şeritten. Geçilecek aracın sürücüsünü önce ses ve ışık cihazlarıyla uyarırsın.",
+      "explanation": "Geçme, geçerken kullanılan şeritte güvenli mesafe gidildikten sonra işaret verilip izlenecek şeride girmekle tamamlanır. Araçların sağından ya da banketlerden yararlanarak geçmek yasaktır.",
+      "articleRefs": [
+        "54"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Önündeki aracı geçmek isteyen sürücü, kendi arkasındaki sürücüler açısından hangi şartı gözetmek zorundadır?",
+      "back": "Kendisini takip eden sürücülerin kendisini geçmeye başlamamış olması gerekir.",
+      "explanation": "Ayrıca önündeki sürücü başka bir aracı geçme niyetini belirten uyarma işaretini vermemiş olmalıdır. Geçme için kullanılacak şeridin de yeteri kadar ilerisi boş olmalıdır. Bu boşluk, karşıdan gelen trafik dahil karayolunu kullananların tümü için tehlike veya engel olmayacak ölçüde aranır. Değerlendirmede geçilecek aracın hızı ile kendi hızın birlikte göz önüne alınır.",
+      "articleRefs": [
+        "54"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Sola yanaşıp durma niyetini sola dönüş işaretiyle belirten öndeki araç, sağındaki şeritten geçilebilir mi?",
+      "back": "Evet. Başka bir yola, karayoluna bitişik bir mülke girmek ya da sola yanaşıp durmak için sola dönüş işareti veren aracın sağındaki şeritten geçilebilir.",
+      "explanation": "Genel kurala göre geçme, geçilecek aracın solundaki şeritten yapılır; araçların sağından ya da banketlerden yararlanarak geçmek yasaktır. Bu istisna yalnız niyetini sola dönüş işaretiyle belirtmiş araç için işler.",
+      "articleRefs": [
+        "54"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Geçiş işareti alan sürücü, trafiğin iki yönlü kullanıldığı karayolunda nasıl gitmek zorundadır?",
+      "back": "Taşıt yolunun sağ kenarından gitmek ve hızını artırmamak zorundadır.",
+      "explanation": "Dörtten fazla şeritli ya da bölünmüş karayollarında ise sürücü bulunduğu şeridi izler ve yine hızını artırmaz.",
+      "articleRefs": [
+        "55"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Hangi geçitlerde ya da bunların yaklaşımında önündeki aracı geçmek yasaktır?",
+      "back": "Yaya ve okul geçitleri yaklaşımında; ayrıca demiryolu geçitlerinde ve bunların yaklaşımında.",
+      "explanation": "Geçmenin yasak olduğu yerler arasında kavşaklar, trafik işaretiyle yasaklanan yerler ve görüş yetersizliği olan tepeler ile dönemeçler de bulunur.",
+      "articleRefs": [
+        "54"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "71 inci maddenin birinci fıkrasının (c), (d), (e), (f) ve (g) bentlerinde belirtilen araçlara geçiş hakkı vermeyen sürücüye ne kadar idari para cezası verilir?",
+      "back": "15.000 Türk lirası idari para cezası.",
+      "explanation": "Geçilmek istenen aracın sürücüsü belirli yükümlülüklere uymazsa 1.000 Türk lirası idari para cezası alır. Bu yükümlülükler: sağ kenardan gitmek, hızını artırmamak, yavaş giden aracını elverdiği oranda sağa almak, yavaşlamak ya da durmak ve geçiş yapmak isteyenlere yol vermek.",
+      "articleRefs": [
+        "55"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Gidişe ayrılmış yol bölümlerinde, bir şeritteki taşıtların diğer şeritteki taşıtlardan hızlı gitmesi hangi şartla geçme sayılmaz?",
+      "back": "Şerit değiştirmemek şartıyla; bu durumda hızlı gitmek geçme sayılmaz.",
+      "articleRefs": [
+        "54"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Bölünmüş bir karayolunun tünelinde öndeki aracı geçmek mümkün müdür?",
+      "back": "Evet. Tünelde geçme yasağı, gidiş ve geliş için birer şeridi bulunan iki yönlü trafiğin kullanıldığı köprü ve tünellere özgüdür. Geçme şartları ve trafik işaretiyle konmuş yasaklar yine aranır.",
+      "explanation": "Geçmenin yasak olduğu yerler arasında kavşaklar, demiryolu geçitleri, yaya ve okul geçitleri yaklaşımı ile görüş yetersizliği olan tepeler ve dönemeçler de vardır.",
+      "articleRefs": [
+        "54"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "71 inci maddenin birinci fıkrasının (a) ve (b) bentlerinde belirtilen araçlara geçiş hakkı vermeyen sürücünün sürücü belgesi ne kadar süreyle geri alınır?",
+      "back": "Otuz gün. Sürücüye ayrıca 46.000 Türk lirası idari para cezası verilir; araç da otuz gün süreyle trafikten menedilir.",
+      "explanation": "Yükümlülük şudur: geçiş üstünlüğü bulunan aracın duyulur veya görülür işaretini alınca taşıt yolu üzerinde yer açmak, gerekiyorsa durmak.",
+      "articleRefs": [
+        "55"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Geçiş üstünlüğü olan araca geçiş hakkı vermediği için geri alınan sürücü belgesinin iadesi hangi şarta bağlıdır?",
+      "back": "Kanun kapsamında verilen idari para cezalarının tamamının tahsil edilmiş olmasına.",
+      "explanation": "Sürücü belgesi geri alma ve iptal işlemlerini Kanunun 6 ncı maddesinde sayılan görevliler yapar.",
+      "articleRefs": [
+        "55"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Kavşaklara yaklaşırken şerit değiştirme yasağı, yerleşim yerlerinde de yüzelli metre mesafe için mi geçerlidir?",
+      "back": "Hayır. Yerleşim yerlerinde otuz metre, yerleşim yerleri dışında yüzelli metre mesafe içinde şerit değiştirmek yasaktır; kavşakların içinde de şerit değiştirilemez.",
+      "explanation": "Şerit izleme kurallarına göre işaret vermeden şerit değiştirmek de yasaktır. Aracın cinsine ve hızına uygun olmayan şeritten gitmek de yasaklar arasındadır.",
+      "articleRefs": [
+        "56"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Dağlık ve dik yokuşlu karayolunda karşılaşma olduğunda, çıkan araç için geçiş güçse inen araç ne yapmak zorundadır?",
+      "back": "Varsa önceden sığınma cebine girer; sığınma cebi yoksa sağ kenara yanaşıp durur, gerektiğinde geri gider.",
+      "articleRefs": [
+        "56"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Taşıt yolunun dar olduğu ve aksini gösteren işaretin bulunmadığı yerde, otomobil sürücüsü minibüse geçiş kolaylığı sağlamak zorunda mıdır?",
+      "back": "Hayır, sıra tersinedir: minibüs, listede kendisinden önce gelen otomobile geçiş kolaylığı sağlar.",
+      "explanation": "Sıra metindeki hâliyle şöyledir: otomobil, minibüs, kamyonet, otobüs, kamyon arazi taşıtı, lastik tekerlekli traktör, iş makineleri. Her sürücü, yazılış sırasına göre kendisinden öncekilere geçiş kolaylığı sağlar. Motorsuz araçları kullananlar da motorlu araçlara geçiş kolaylığı sağlar.",
+      "articleRefs": [
+        "56"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Trafik zabıtası, işaret levhası ya da ışıklı işaret cihazı bulunmayan kavşakta, anayoldan gelen sürücü tali yoldan çıkan araca geçiş hakkı vermek zorunda mıdır?",
+      "back": "Hayır. Tali yoldan anayola çıkan sürücü, anayoldan gelen araçlara geçiş hakkı verir.",
+      "explanation": "Böyle kavşaklarda geçiş hakkı vermek zorunda olanlar arasında şunlar da vardır: bölünmüş yola çıkan sürücüler bu yoldan geçen araçlara, dönel kavşağa gelen sürücüler kavşak içindeki araçlara, bir iz veya mülkten çıkan sürücüler karayolundan gelen araçlara geçiş hakkı verir. Bütün sürücüler de geçiş üstünlüğüne sahip araçlara ve doğru geçmekte olan tramvaylara geçiş hakkı verir.",
+      "articleRefs": [
+        "57"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Önündeki aracı yönetmelikte belirtilen güvenli ve yeterli mesafeden izlemeyen sürücüye ne kadar idari para cezası verilir?",
+      "back": "5.000 Türk lirası idari para cezası.",
+      "explanation": "Şerit izleme, gelen trafikle karşılaşma, yavaş sürme ve yavaşlama ile geçiş kolaylığı sağlama hükümlerine uymayan sürücülere 1.000 Türk lirası idari para cezası verilir.",
+      "articleRefs": [
+        "56"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Kavşak kollarının trafik yoğunluğu bakımından farklı oldukları işaretlerle belirlenmemişse, karşılaşan iki motorlu araçtan hangisi geçiş hakkı vermek zorundadır?",
+      "back": "Soldaki araç; sağdan gelen araca geçiş hakkı verir.",
+      "explanation": "Aynı durumda motorsuz araç sürücüleri de motorlu araçlara geçiş hakkı verir.",
+      "articleRefs": [
+        "57"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Işıklı trafik işareti izin veriyorsa, trafik akımı yüzünden kavşak içinde durmak zorunda kalacak sürücü kavşağa girebilir mi?",
+      "back": "Hayır. Işık izin verse bile trafik akımı seni kavşak içinde durmaya zorlayacak ya da diğer doğrultudaki trafiğin geçişine engel olacaksa kavşağa girmen yasaktır.",
+      "articleRefs": [
+        "57"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Aksine bir işaret yoksa, bütün kavşaklarda ilk geçiş hakkı hangi taşıtlara aittir?",
+      "back": "Ray üzerinde hareket eden taşıtlara.",
+      "articleRefs": [
+        "57"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Aksine bir işaret yoksa sürücü, aracını gidiş yönüne göre yolun neresinde durdurmak zorundadır?",
+      "back": "Yolun en sağ kenarında; yolcularının iniş ve binişlerini de sağ taraftan yaptırır.",
+      "explanation": "Yolcular da iniş ve binişlerini sağ taraftan yapmak zorundadır.",
+      "articleRefs": [
+        "58"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Trafik zabıtası, yetkili kişi ya da trafik ışıklı işaretiyle yönetilen kavşakta gereksiz yere duran sürücüye ne kadar idari para cezası verilir?",
+      "back": "1.000 Türk lirası idari para cezası.",
+      "explanation": "Bu kavşaklarda sürücü, kavşağı en kısa zamanda geçmek zorundadır. Gereksiz yavaşlamak, durmak, taşıttan inmek ya da motoru durdurmak yasaktır. Kavşak içinde durmaya zorlayacak akımda kavşağa girenlere de aynı ceza verilir. Maddedeki diğer hükümlere uymayanlara 5.000 Türk lirası idari para cezası verilir.",
+      "articleRefs": [
+        "57"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Yerleşim birimleri dışındaki karayolunda taşıt yolu üzerinde duraklamak ya da park etmek hangi durumda mümkündür?",
+      "back": "Yalnız zorunlu hallerde; o zaman da gerekli önlemler alınmalıdır.",
+      "explanation": "Zorunlu hal dışında duraklayan ya da park eden sürücü cezalandırılır. Zorunlu halde gerekli önlemleri almadan duraklayan ya da park eden sürücü de cezalandırılır.",
+      "articleRefs": [
+        "59"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Taşıt yolu üzerinde sol şeritte duraklama yasağı hangi yollarda uygulanmaz?",
+      "back": "Raylı sistemin bulunduğu yollarda; bu yollar sol şeritte duraklama yasağının dışında tutulmuştur.",
+      "articleRefs": [
+        "60"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Kavşaklar, tüneller, rampalar, köprüler ve bağlantı yollarına yerleşim birimleri içinde ne kadar mesafede duraklamak yasaktır?",
+      "back": "Beş metre; yerleşim birimleri dışında bu mesafe yüz metredir.",
+      "explanation": "Bu yerlerin kendisinde de duraklamak yasaktır.",
+      "articleRefs": [
+        "60"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Park izni verilen yerler dışında, işaret levhalarına yaklaşım yönünde yerleşim birimi içinde ne kadar mesafede duraklamak yasaktır?",
+      "back": "Onbeş metre; yerleşim birimi dışında bu mesafe yüz metredir.",
+      "articleRefs": [
+        "60"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Belirlenmiş yangın musluklarına ne kadar mesafe içinde park etmek yasaktır?",
+      "back": "Her iki yönden beş metrelik mesafe içinde.",
+      "explanation": "Kamunun faydalandığı ve yönetmelikte belirtilen yerlerin giriş ve çıkış kapılarında da her iki yönde beş metrelik mesafe içinde park etmek yasaktır.",
+      "articleRefs": [
+        "61"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Kamu hizmeti yapan yolcu taşıtlarının duraklarını belirten levhalara ne kadar mesafe içinde park etmek yasaktır?",
+      "back": "İki yönden onbeş metrelik mesafe içinde.",
+      "explanation": "Geçiş üstünlüğü olan araçların giriş ve çıkışının yapıldığını belirten işaret levhasından onbeş metre mesafe içinde de park etmek yasaktır.",
+      "articleRefs": [
+        "61"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Trafik zabıtasınca kaldırılıp götürülen araç, sahibine ne zaman teslim edilir?",
+      "back": "Giderler ile verilen ceza sürücüsü ya da sahibince ödendikten sonra; ödenmeden araç teslim edilmez.",
+      "explanation": "Yasaklara aykırı park edilmiş araçları trafik zabıtası kaldırabilir. Hangi araçların hangi şartlarda kaldırılacağı yönetmelikte gösterilir. Götürülürken zarar görmemeleri için alınacak önlemler ile giderlerin tahsil usul ve esasları da yönetmelikte yer alır.",
+      "articleRefs": [
+        "61"
+      ]
+    }
+  ]
+}

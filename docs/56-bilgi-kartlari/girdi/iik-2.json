@@ -1,0 +1,129 @@
+{
+ "legislation": {
+  "slug": "5442-il-idaresi-kanunu",
+  "name": "5442 İl İdaresi Kanunu",
+  "topicId": "4d185b8e-a24f-4f0e-8c29-d17e03eeec11"
+ },
+ "range": {
+  "from": "12",
+  "to": "21"
+ },
+ "articleNos": [
+  "12",
+  "13",
+  "15",
+  "16",
+  "17",
+  "18",
+  "20",
+  "21"
+ ],
+ "articles": [
+  {
+   "no": "12",
+   "title": null,
+   "text": "Valiler, Devlet genel ve özel hukuku hükümlerine ve ikamet, seyahat,\nkonsolosluk, ticaret ve seyrisefain mukavelelerine göre yabancıların hukuki durumlarını ve\ndeniz, kara ve hava ticaretlerini ilgilendiren işlerde konsolosluklarla muhabere ve bunların\nmüracaat ve ziyaretlerini kabul ederler.",
+   "questionCount": 0
+  },
+  {
+   "no": "13",
+   "title": "III - Valilerin teftiş ve denetleme yetkileri",
+   "text": "Vali, (Dördüncü maddenin son fıkrasında belirtilen adli ve askeri daireler hariç) Bakanlıklar ve tüzelkişiliği haiz genel müdürlüklerin il teşkilatında çalışan bütün memur ve müstahdemlerinin en büyük amiridir.\nBu sıfatla:\nA) Memur ve müstahdemlerin çalışmalarına nezaret eder.\nB) Teşkilatın işlemesini denetler.\nC) (Değişik: 12/5/1964-469/1 md.) Memurin Kanunundaki usulüne göre savunmasını aldıktan sonra uyarma, kınama ve beş günlüğe kadar aylıktan kesme cezaları vererek uygular. Daha ağır disiplin cezaları verilmesi için özel kanunu hükümlerine göre teklif ve taleplerde bulunabilir.\nYetkili disiplin mercileri valinin teklif ve talebini inceleyerek bir karara bağlamaya mecburdur.\nValilerce re'sen verilen cezalar, kesindir. Bu cezalar tebliğ tarihinden itibaren sicile geçer.\nÇ) Tayinleri merkeze ait il memurlarının yıllık mezuniyetleri valiliğin iş'arı üzerine mensup oldukları Bakanlık veya tüzelkişiliği haiz genel müdürlükçe verilir. Bu memurlara acele hallerde valilerce 15 güne kadar mezuniyet verilir ve ilgili makamlara bildirilir.\nD) Valiler, emir ve denetimi altında bulunan teşkilatın aldığı kararla yaptığı muamelelerden şikayet edenlerin müracaatlarını tetkik eder; memurun haksız veya kanunsuz muamelelerini görürse hakkında kanuni muameleye başvurur.\nİnceleme neticesinde vardığı sonuca göre alacağı kararı derhal tatbik ettirir ve ilgiliye bildirir.",
+   "questionCount": 1
+  },
+  {
+   "no": "15",
+   "title": null,
+   "text": "Valiler, birkaç il'e şamil memuriyetlerin kendi illerindeki işlerini de\ngözetim ve denetimine yetkilidirler.",
+   "questionCount": 0
+  },
+  {
+   "no": "16",
+   "title": null,
+   "text": "Valiler, denetlemeleri sırasında iş başında kalmalarında mahzur\ngördükleri bütün memur ve müstahdemlere sorumluluğu altında işten elçektirilebilirler ve\nhizmetin aksamaması için gereken tedbirleri aldırırlar. Bu takdirde işi gerekçesiyle ait olduğu\nmakama derhal bildirirler.",
+   "questionCount": 0
+  },
+  {
+   "no": "17",
+   "title": null,
+   "text": "Valiler, il içinde, denetim ve teftişleri altında bulunmıyan bütün daire ve\nmüesseselerde vukubulduğunu öğrendikleri yolsuzlukları ilgili makamlara bildirirler. İlgili\nmakamlar lazımgelen incelemeyi yaparak kanuni gereğini ifa eder ve sonucundan valiye bilgi\nverirler.",
+   "questionCount": 0
+  },
+  {
+   "no": "18",
+   "title": null,
+   "text": "Valiler, vali muavini ile kaymakamların, il idare şube başkanlarının ve il\nve bölge muhakemat müdürlerinin, genel ve özel kolluk amirlerinin birinci derecede, diğer\nmemurların ikinci derecede sicil amiridirler.",
+   "questionCount": 1
+  },
+  {
+   "no": "20",
+   "title": "md.)",
+   "text": "Valiler, gereken hallerde il mensuplarına takdirname verirler. Tayinleri\nmerkeze ait olanlar hakkındaki takdir ve tecziye muamelelerini ilgili makamlara bildirirler.",
+   "questionCount": 0
+  },
+  {
+   "no": "21",
+   "title": "IV - Vali ile il idare şube başkanlarının münasebetleri",
+   "text": "İl idare şube başkanları kendi şubelerine taallük eden işlerin\nyürütülmesinden ve şubeleri memur ve müstahdemlerinin kanun, Cumhurbaşkanlığı\nkararnamesi ve diğer mevzuatta belirtilen ödev ve görevlerinin sürat ve intizamla\nyapılmasından valiye karşı sorumludurlar.16\nİl idare şube başkanlarının her biri kanun, Cumhurbaşkanlığı kararnamesi ve diğer\nmevzuatın verdiği ödev ve görevleri ve valinin emirlerini yürüterek aldıkları işler üzerinde\ngereken incelemeleri yaparak bilgi ve düşüncelerini zamanında bildirmek ve valinin istediği",
+   "questionCount": 0
+  }
+ ],
+ "questions": [
+  {
+   "articleNos": [
+    "18"
+   ],
+   "stem": "5442 sayılı İl İdaresi Kanunu’na göre, valiler aşağıdaki memurlardan hangisinin birinci dereceden sicil amiri değildir?",
+   "options": [
+    {
+     "text": "Kaymakam",
+     "isCorrect": false
+    },
+    {
+     "text": "İl idare şube başkanı",
+     "isCorrect": false
+    },
+    {
+     "text": "İl ve bölge muhakemat müdürü",
+     "isCorrect": false
+    },
+    {
+     "text": "İl millî eğitim şube müdürü",
+     "isCorrect": true
+    },
+    {
+     "text": "Genel ve özel kolluk amiri",
+     "isCorrect": false
+    }
+   ]
+  },
+  {
+   "articleNos": [
+    "13"
+   ],
+   "stem": "5442 sayılı İl İdaresi Kanunu’na göre, vali ilgili mevzuat usulüne uygun olarak memurun savunmasını aldıktan sonra en çok kaç günlüğe kadar aylıktan kesme cezası uygulayabilir?",
+   "options": [
+    {
+     "text": "İki",
+     "isCorrect": false
+    },
+    {
+     "text": "Üç",
+     "isCorrect": false
+    },
+    {
+     "text": "Beş",
+     "isCorrect": true
+    },
+    {
+     "text": "Yedi",
+     "isCorrect": false
+    },
+    {
+     "text": "On",
+     "isCorrect": false
+    }
+   ]
+  }
+ ]
+}

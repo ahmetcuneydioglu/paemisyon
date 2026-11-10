@@ -1,0 +1,289 @@
+{
+  "deck": {
+    "topicId": "f614ccc4-e39b-4715-ba55-f8a621775354",
+    "legislationSlug": "emniyet-performans-degerlendirme-yonetmeligi",
+    "sourceLabel": "AI bilgi kartı — Emniyet Performans Değerlendirme Yönetmeliği md 18–32, Geçici 1, Geçici 2, Geçici 3",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: resmî madde metni + çıkmış sorular)"
+  },
+  "cards": [
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Bir performans alanının puanı, o alandaki ölçüt puanlarının aritmetik ortalaması mıdır?",
+      "back": "Hayır. Alan puanı, alandaki ölçüt puanlarının toplamıdır. Aritmetik ortalama, alan puanlarından personelin performans değerlendirme puanı hesaplanırken alınır.",
+      "explanation": "Ölçütün amir tarafından belirlenen puanı, seçilen değerlendirme ölçeği ile ölçütün ağırlık katsayısının çarpımıdır. Değerlendirme yapan amirlerin bu puanlarının aritmetik ortalaması ölçüt puanını verir. Ağırlık katsayıları her performans alanında toplam 1 olacak şekilde dağıtılır. Hesaplama PBS üzerinden yapılır.",
+      "articleRefs": [
+        "18"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Hesaplanan performans değerlendirme puanı 3,991 çıkarsa puan nasıl yazılır?",
+      "back": "4,00 olarak yazılır ve çok iyi derecesine girer. Virgülden sonra 2 basamak kullanılır; üçüncü basamak, ikinci basamak bir değer artırılarak yukarı yuvarlanır.",
+      "explanation": "Performans değerlendirme puanı 1,00 ila 5,00 (bu puanlar dahil) arasındadır.",
+      "articleRefs": [
+        "18"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "İyi performans değerlendirme puanı hangi aralıktadır?",
+      "back": "3,00 ila 3,99 arasıdır (bu puanlar dahil).",
+      "explanation": "Dereceler şöyledir: yetersiz 1,00–1,99; yeterli ama kendisini geliştirmesi gerekir 2,00–2,99; iyi 3,00–3,99; çok iyi 4,00–5,00.",
+      "articleRefs": [
+        "18"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Değerlendirme işlemi tamamlanınca performans değerlendirme puanı personele nasıl bildirilir?",
+      "back": "Elektronik ortamda, ilgili personelin bilgisine sunulur.",
+      "explanation": "Buna ilişkin uygulamayı Personel Dairesi Başkanlığı belirler ve personele duyurur.",
+      "articleRefs": [
+        "19"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "İlçe emniyet müdürlüğünde çalışan personelin itirazında ilk incelemede maddi hata bulunamazsa itirazı kim değerlendirir?",
+      "back": "Personelin hâlen çalıştığı İl Emniyet Müdürü değerlendirir.",
+      "explanation": "İtiraz önce maddi hata yönünden incelenir; maddi hata tespit edilirse düzeltmeyi Personel Dairesi Başkanlığı yürütür. Maddi hata yoksa itirazı kural olarak personelin hâlen çalıştığı birim amiri değerlendirir. İlçe emniyet müdürlüğü/amirliği personelinde bu yetki İl Emniyet Müdürünündür. İtirazı değerlendirecek merci Genel Müdürden üst bir merci ise kararı Genel Müdür verir.",
+      "articleRefs": [
+        "20"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "İtiraz üzerine verilen yeni performans değerlendirme puanı, itiraz edilen puandan düşük olabilir mi?",
+      "back": "Hayır. Yeni puan, itiraz edilen puandan düşük olmaz. Verilen yeni puan itiraz edilen puanın yerine geçer ve kesindir.",
+      "explanation": "İtiraz edilmeyen puan kesindir. İtiraz reddedilirse mevcut puan kesinleşir.",
+      "articleRefs": [
+        "20"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Personel, performans değerlendirme puanına 1 Mart tarihine kadar itiraz edebilir mi?",
+      "back": "Hayır. İtiraz 20 Şubat tarihine kadar yapılır. 1 Mart, itiraz üzerine yapılan tüm işlemlerin sonuçlandırılıp personele bildirileceği tarihtir.",
+      "explanation": "İtiraz, personelin çalıştığı birimin personel işlerinden sorumlu şube müdürlüğüne/büro amirliğine yapılır. Süresi içinde hakkında değerlendirme yapılamayan personel, kendisine bildirim yapıldığı tarihten itibaren yedi gün içinde itiraz edebilir.",
+      "articleRefs": [
+        "20"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Performans değerlendirme puanı yetersiz olan personel nasıl uyarılır?",
+      "back": "Yazılı olarak uyarılır.",
+      "explanation": "Bu uyarıya ilişkin uygulamayı Personel Dairesi Başkanlığı belirler.",
+      "articleRefs": [
+        "21"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Bir yıllık performansı yetersiz olarak değerlendirilen personel başka bir birime atanır mı?",
+      "back": "Hayır. Görev yeri, birimi içerisinde birinci değerlendirme amiri değişecek şekilde değiştirilir. Başka birime atama daha sonraki bir aşamadır.",
+      "explanation": "Sonraki bir yıllık performansı da yetersiz olanlar hizmet içi eğitime tabi tutulur. Eğitim sonundaki sınavda başarısız olanlar başka bir birime atanır. Eğitimde başarılı olup ilk bir yıllık değerlendirmede yine yetersiz bulunanlar da başka bir birime atanır.",
+      "articleRefs": [
+        "21"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Kaç yıl üst üste performansı yetersiz değerlendirilen personel Rehberlik ve Psikolojik Danışma Büro Amirliğine sevk edilir?",
+      "back": "Üç yıl üst üste yetersiz değerlendirilen personel sevk edilir.",
+      "explanation": "İlgili uzmanların değerlendirmesine göre personel danışma sürecine alınabilir. Gerekli görülürse sağlık kuruluşlarına sevki önerilebilir.",
+      "articleRefs": [
+        "21"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Bir ölçütte olumsuz değerlendirmeler toplam değerlendirme sayısının ne kadarını geçerse o ölçüt eğitim ihtiyacı olarak bildirilir?",
+      "back": "% 3'ünü geçerse bildirilir. Sayılan değerlendirmeler “gözlenen performans ortalamanın çok altında” ve “gözlenen performans ortalamanın altında, geliştirilmeye ihtiyacı var” şeklindekilerdir.",
+      "explanation": "Bu ölçütlerin listesi her değerlendirme dönemi sonunda ilgili Daire Başkanlıklarına ve/veya Polis Akademisi Başkanlığına bildirilir. Liste, hizmet içi eğitim planları ya da müfredatın hazırlanmasında değerlendirilir.",
+      "articleRefs": [
+        "22"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Yetersiz performansın iyileştirilmesine yönelik eğitimleri ve eğitim sonucu yapılacak sınavları hangi birim yürütür?",
+      "back": "Polis Akademisi Başkanlığı yürütür.",
+      "articleRefs": [
+        "22"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Üstün Performans Belgesi için kaç yıl üst üste çok iyi performans değerlendirme puanı gerekir?",
+      "back": "On yıl üst üste çok iyi puan gerekir. Ayrıca personelin, en son çok iyi puanı aldığı dönemde fiilen çalıştığı birimin amirince teklif edilmesi gerekir.",
+      "articleRefs": [
+        "23"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Üstün Performans Belgesini personelin fiilen çalıştığı birimin amiri mi verir?",
+      "back": "Hayır. Belgeyi Genel Müdürlük verir. Birim amiri, en son çok iyi puanın alındığı dönemde personeli belge için teklif eder.",
+      "explanation": "Teklif, on yıl üst üste çok iyi performans değerlendirme puanı şartına ek olarak aranır.",
+      "articleRefs": [
+        "23"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Aday memurların performans değerlendirmesi kaç aylık dönemler hâlinde yapılır?",
+      "back": "Altı aylık dönemler hâlinde yapılır; dönemler göreve başlamayı müteakip başlar.",
+      "explanation": "Aday memur hakkında düzenlenen iki performans değerlendirme puanının aritmetik ortalaması, performans değerlendirme puanını oluşturur.",
+      "articleRefs": [
+        "24"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Yetersiz performans değerlendirme puanı alan aday memurun adaylığı ne kadar uzatılabilir?",
+      "back": "Bir yıl uzatılabilir.",
+      "explanation": "Adaylık süresi uzatılan personelin görev yeri, birimi içerisinde birinci değerlendirme amiri değişecek şekilde değiştirilir ve personel eğitime tabi tutulur. Aday memurluğun ikinci yılında da yetersiz puan alanlar asli memurluğa atanmaz. Bu personel hakkında 657 sayılı Devlet Memurları Kanununun 56 ncı maddesi uygulanır.",
+      "articleRefs": [
+        "24"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Adaylığı uzatılan memur hakkında ikinci değerlendirme ne zaman yapılır?",
+      "back": "Beş ay bitiminde yapılır. İlk değerlendirme ise ilk altı ay için yapılır.",
+      "explanation": "Yılsonu performans değerlendirme puanı, aday memurluğun ikinci yılı bitimine bir ay kala belirlenir. Bu puan, düzenlenen iki performans değerlendirme puanının aritmetik ortalamasıdır.",
+      "articleRefs": [
+        "24"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Görevden uzaklaştırılma nedeniyle bir dönem boyunca hiçbir değerlendirme amiri yanında fiilen çalışmayan personelin puanı, son üç puanının ortalamasıyla mı belirlenir?",
+      "back": "Hayır. Çalışmadığı yıl için performans değerlendirme formu doldurulmaz; son üç puanın ortalaması, puanı geçersiz sayılan personel için uygulanır. Kanunla lehte düzenlemesi olanlar için ise md 26 uygulanır.",
+      "explanation": "Aynı kural ücretsiz izin, tutukluluk, hükümlülük ve benzeri durumlar nedeniyle hiçbir değerlendirme amiri yanında fiilen çalışmamış personel için de geçerlidir.",
+      "articleRefs": [
+        "25"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Performans değerlendirme puanı geçersiz sayılan personelin puanı, geçmiş dönemlere ait kaç puanın ortalamasıyla belirlenir?",
+      "back": "Var ise geçmiş dönemlere ait doldurulan son üç puanın ortalamasıyla belirlenir.",
+      "explanation": "Geçmiş döneme ait üç puanı bulunmayan personelde var olan puan/puanların ortalaması esas alınır.",
+      "articleRefs": [
+        "25"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Puanı geçersiz sayılan ve hiçbir performans değerlendirme puanı belirlenmemiş personel için yeni formu kim doldurur?",
+      "back": "Personelin hâlen çalıştığı birim amiri doldurur.",
+      "explanation": "Geçersiz sayılan puanı birim amiri vermişse yeni formu birim amirinin birinci değerlendirme amiri doldurur.",
+      "articleRefs": [
+        "25"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Kurum dışı geçici görevlendirmede, yurtdışı görevde ya da raporlu bulunan personel hakkında form düzenlenmesine ilişkin hususlar nasıl belirlenir?",
+      "back": "Kurul tarafından alınacak ilke kararları ile belirlenir.",
+      "explanation": "Aynı hüküm benzeri görevlerde bulunan ve hastalık izninde olan personeli de kapsar.",
+      "articleRefs": [
+        "26"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Performans sonuçlarının kullanılabileceği alanlarda performans alanı puanları tek başına kullanılabilir mi?",
+      "back": "Evet. Performans değerlendirme puanları ile performans alanı/alanları puanları birlikte veya ayrı ayrı kullanılabilir.",
+      "articleRefs": [
+        "27"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Emniyet Teşkilatında yeni kurulan veya değiştirilen birimlerden hangilerinin birim tanımına ekleneceğine kim karar verir?",
+      "back": "Kurul karar verir.",
+      "explanation": "Hüküm merkez, taşra ve yurt dışı teşkilatındaki birimleri kapsar.",
+      "articleRefs": [
+        "28"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Performans değerlendirmesinde kullanılan formlar nerede kayıt altına alınır?",
+      "back": "PBS üzerinde kayıt altına alınır.",
+      "articleRefs": [
+        "29"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Değerlendirme amirlerinin PBS dışında doldurduğu formları PBS'ye kim kaydeder?",
+      "back": "Değerlendirilen personelin çalıştığı personel işlerinden sorumlu şube müdürlüğü/büro amirliği kaydeder.",
+      "articleRefs": [
+        "29"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Kurulun performansın iyileştirilmesi ve geliştirilmesine ilişkin görüş ve önerileri nasıl yürürlüğe girer?",
+      "back": "Bakan onayı ile yürürlüğe girer.",
+      "explanation": "Kurul, sonradan ortaya çıkabilecek ihtilaflı hususlarda alınması gereken tedbirlerle ilgili de görüş ve öneride bulunabilir.",
+      "articleRefs": [
+        "30"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Emniyet Genel Müdürlüğü performans değerlendirmesini düzenleyen yönetmeliğin hükümlerini kim yürütür?",
+      "back": "İçişleri Bakanı yürütür.",
+      "articleRefs": [
+        "32"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Diğer mevzuat performans puanını başka ölçütlerle birlikte kullanıyorsa, puanı tespit edilemeyen personel hakkında işlem neye göre yapılır?",
+      "back": "Performans değerlendirme puanı dışındaki diğer ölçütler kullanılır.",
+      "articleRefs": [
+        "Geçici 2"
+      ]
+    }
+  ]
+}

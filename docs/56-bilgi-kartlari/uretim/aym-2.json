@@ -1,0 +1,282 @@
+{
+  "deck": {
+    "topicId": "746633d6-5e90-404b-b0ea-ebcd670b4dc8",
+    "legislationSlug": "6216-anayasa-mahkemesinin-kurulusu-ve-yargilama-usulleri-hakkinda-kanun",
+    "sourceLabel": "AI bilgi kartı — 6216 Anayasa Mahkemesinin Kuruluşu ve Yargılama Usulleri Hakkında Kanun md 17–27",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: resmî madde metni + çıkmış sorular)"
+  },
+  "cards": [
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Anayasa Mahkemesi Başkanı ya da bir üyesi, ağır ceza mahkemesinin görevine giren kişisel bir suçta suçüstü hâlinde yakalanırsa soruşturma hangi hükümlere göre yürütülür?",
+      "back": "Genel hükümlere göre yürütülür. İddianame hazırlanırsa kovuşturmayı Yargıtay ilgili ceza dairesi yapar.",
+      "explanation": "Bu suçüstü hâli, Başkan ve üyeler hakkında koruma tedbirlerine ancak bu maddedeki usule göre karar verilebileceği kuralının istisnasıdır.",
+      "articleRefs": [
+        "17"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Suçüstü hâli dışındaki bir soruşturmada Soruşturma Kurulu, Başkan ya da bir üye hakkında koruma tedbiri alınmasını talep ederse bu konuda kim karar verir?",
+      "back": "Genel Kurul karar verir.",
+      "explanation": "Talep, 5271 sayılı Kanunda ve diğer kanunlarda yer alan koruma tedbirlerine ilişkindir. Usul, görevden doğan veya görev sırasında işlendiği iddia edilen suçlarla kişisel suçları kapsar; ağır ceza mahkemesinin görevine giren kişisel suçlarla ilgili suçüstü hâli bunun dışındadır.",
+      "articleRefs": [
+        "17"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Soruşturma Kurulu, bir üyenin kişisel suçu için kamu davası açılmasını gerekli görürse yargılamayı Yüce Divan sıfatıyla Anayasa Mahkemesi mi yapar?",
+      "back": "Hayır. Kişisel suçlarda iddianame ve dosya, Yargıtay ilgili ceza dairesine tevdi olunmak üzere Başkanlığa gönderilir; Yüce Divan yargılaması görevleriyle ilgili suçlar içindir.",
+      "explanation": "Kamu davasına gerek görülmezse Soruşturma Kurulu kovuşturma yapılmasına yer olmadığına karar verir. Kurulun kararları şüpheliye ve varsa şikâyetçiye tebliğ olunur.",
+      "articleRefs": [
+        "17"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Başkan ya da üyeler hakkında disiplin soruşturmasını gerektiren eylemin öğrenilmesinden itibaren ne kadar süre geçerse disiplin soruşturması açılamaz?",
+      "back": "1 yıl geçmişse disiplin soruşturması açılamaz.",
+      "explanation": "Ceza soruşturma ve kovuşturmaları, disiplin işlemlerinin ayrıca yapılmasına ve uygulanmasına engel olmaz. Eylem aynı zamanda kanunda daha uzun zamanaşımı öngörülen bir suçsa ve ceza soruşturması ya da kovuşturması açılmışsa, bu süre yerine zamanaşımı süreleri uygulanır.",
+      "articleRefs": [
+        "18"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Başkan ya da üyeler hakkında disiplin cezasını gerektiren eylemin işlendiği tarihten itibaren kaç yıl geçerse disiplin cezası verilemez?",
+      "back": "5 yıl; bu süre geçmişse disiplin cezası verilemez.",
+      "explanation": "Genel Kurul kovuşturma sonucunun beklenmesine karar vermişse, ceza verme yetkisi kovuşturmayı yürüten mahkeme kararının kesinleşmesinden itibaren bir yıl geçmekle zamanaşımına uğrar.",
+      "articleRefs": [
+        "18"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Disiplin soruşturmasının sonucu bildirilen üyeye, Genel Kurul huzurunda savunma için tanınacak süre en az 15 gün müdür?",
+      "back": "Hayır. Başkan, Genel Kurul huzurunda sözlü ya da yazılı savunma için en az 5 gün süre tayin eder; en az 15 gün, Soruşturma Kurulunun savunmaya davetindeki süredir.",
+      "explanation": "İlgili, savunmasının istendiği andan itibaren soruşturma evrakını incelemeye yetkilidir. Genel Kurul, soruşturma sonucuna göre gerekirse soruşturmanın genişletilmesine, isnadı sabit görmezse dosyanın işlemden kaldırılmasına, sabit görürse eyleme uyan disiplin cezasına karar verir.",
+      "articleRefs": [
+        "18"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Anayasa Mahkemesi Başkanı ve üyeleri hakkında verilebilecek disiplin cezaları hangileridir?",
+      "back": "Uyarma, kınama ve üyelikten çekilmeye davet edilme; eylemin niteliğine göre bunlardan birine karar verilir.",
+      "explanation": "Ceza; asli görevler dışında resmî ya da özel bir görev alma ya da yapılan yeminle veya üyeliğin vakar ve şerefiyle bağdaşmayan, hizmetin aksamasına yol açan hâl ve hareketlerin sabit görülmesi hâlinde verilir.",
+      "articleRefs": [
+        "19"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Disiplin cezasına ilişkin Genel Kurul kararına karşı ilgili, yeniden inceleme başvurusunu hangi süre içinde yapabilir?",
+      "back": "Kararın kendisine tebliğ tarihinden itibaren 10 gün içinde, Genel Kurula başvurabilir.",
+      "explanation": "Genel Kurulca yapılan yeniden inceleme sonucunda verilen karar kesindir; karar Başkan tarafından ilgiliye tebliğ edilir ve yerine getirilir.",
+      "articleRefs": [
+        "19"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Bir üyeye uyarma cezası verilebilmesi için de Genel Kurulun üçte iki oy çokluğu aranır mı?",
+      "back": "Hayır. Genel Kurulun üçte iki oy çokluğu yalnız üyelikten çekilmeye davet edilme cezası için aranır.",
+      "explanation": "Üyelikten çekilmeye davet cezası verilen üye, tebliğ tarihinden itibaren bir ay içinde buna uymazsa istifa etmiş sayılır ve bu süre içinde izinli kabul edilir.",
+      "articleRefs": [
+        "19"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Anayasa Mahkemesi teşkilatı hangi birimlerden oluşur?",
+      "back": "Başkanlık, Genel Kurul, bölümler, komisyonlar, Genel Sekreterlik ve idari birimlerden oluşur.",
+      "articleRefs": [
+        "20"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Anayasa Mahkemesi Genel Kurulu en az kaç üyeyle toplanır?",
+      "back": "En az 10 üyeyle; Başkanın ya da onun belirleyeceği başkanvekilinin başkanlığında toplanır.",
+      "explanation": "Genel Kurul, Mahkemenin 15 üyesinden oluşur.",
+      "articleRefs": [
+        "21"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Bölümlerden birinin yıl içinde gelen işleri normal çalışmayla karşılanamayacak ölçüde artar ve iş dengesizliği doğarsa, Genel Kurul ne zaman toplanarak işlerin bir kısmını diğer bölüme verir?",
+      "back": "Takvim yılı başında toplanır ve bir kısım işleri diğer bölüme verir.",
+      "explanation": "Genel Kurul ayrıca bölümler arasındaki iş bölümü uyuşmazlıklarını kesin karara bağlar; fiilî veya hukuki imkânsızlık nedeniyle bir bölüm görevine giren işe bakamazsa diğer bölümü görevlendirir.",
+      "articleRefs": [
+        "21"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Anayasa Mahkemesi Genel Kurulu hangi başkanlık makamları için seçim yapar?",
+      "back": "Başkan ve başkanvekillerini, ayrıca Uyuşmazlık Mahkemesi Başkanı ve Başkanvekilini seçer.",
+      "explanation": "Genel Kurulun diğer görevleri arasında iptal ve itiraz davaları ile Yüce Divan sıfatıyla yürütülecek yargılamalara bakmak, siyasi partilere ilişkin mali denetim yapmak ve İçtüzüğü kabul etmek ya da değiştirmek de vardır.",
+      "articleRefs": [
+        "21"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Anayasa Mahkemesinde bireysel başvuruları karara bağlayan bölümlerin her birinde kaç üye bulunur?",
+      "back": "Altışar üye; Mahkemede bir başkanvekili başkanlığında altışar üyesi olan iki bölüm vardır.",
+      "articleRefs": [
+        "22"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Anayasa Mahkemesinde bölüm ve komisyonların oluşumu ve iş bölümü hangi düzenlemeyle belirlenir?",
+      "back": "İçtüzükle düzenlenir.",
+      "articleRefs": [
+        "22"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Anayasa Mahkemesi Genel Sekreteri kimler arasından görevlendirilir?",
+      "back": "Raportörler arasından; görevlendirmeyi Başkan yapar.",
+      "explanation": "Genel Sekreterlik, Başkanlığa bağlı olarak kurulur; Genel Sekreter görevlerini Başkanın gözetim ve denetimi altında yürütür.",
+      "articleRefs": [
+        "23"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Genel Sekreter görevde olmadığında ona vekâlet edecek Genel Sekreter yardımcısını Başkan mı belirler?",
+      "back": "Hayır. Vekâlet edecek Genel Sekreter yardımcısını Genel Sekreter belirler.",
+      "explanation": "Genel Sekreterin görevleri arasında başvuruların kayıt ve sevk edilmesi, Mahkeme kararlarının uygulanmasının takip edilmesi ve bu konuda Genel Kurula bilgi verilmesi, bütçenin harcanması ve bu konuda Başkana bilgi verilmesi de vardır.",
+      "articleRefs": [
+        "23"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Anayasa Mahkemesinde kaç Genel Sekreter yardımcısı görevlendirilir?",
+      "back": "3 Genel Sekreter yardımcısı; Başkan tarafından raportörler arasından görevlendirilir.",
+      "explanation": "Genel Sekreter yardımcılarının görevleri ve aralarındaki iş bölümü yönetmelikle düzenlenir.",
+      "articleRefs": [
+        "23"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Adli ya da idari hâkim veya savcının Anayasa Mahkemesinde raportör olabilmesi için mesleğinde en az kaç yıl başarıyla çalışmış olması gerekir?",
+      "back": "En az 5 yıl başarıyla çalışmış olması gerekir.",
+      "explanation": "Aynı süre Sayıştay denetçisi, başdenetçisi ya da uzman denetçisi için de aranır. Raportör yardımcıları ise adaylık süresi hariç en az beş yıl başarıyla çalışmışsa raportör olabilir.",
+      "articleRefs": [
+        "24"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Anayasa Mahkemesi raportörleri idari yönden kime bağlıdır?",
+      "back": "Başkana bağlıdır; görevlerini hâkimlik teminatına uygun olarak yerine getirirler.",
+      "explanation": "Raportörler, Mahkemede yargısal ve idari çalışmalara yardımcı olmak üzere görevlendirilir ya da atanır.",
+      "articleRefs": [
+        "24"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Anayasa Mahkemesinin kadrolarına atanan raportörlerin yükselme süresi ne kadardır?",
+      "back": "2 yıldır.",
+      "explanation": "Görevlendirilen raportörlerde ise Mahkemede geçen süreler mesleklerinde geçmiş sayılır; yükselme ve kademe ilerlemelerinde Başkan tarafından verilecek yazılı bilgi esas alınır.",
+      "articleRefs": [
+        "25"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Anayasa Mahkemesinde raportör olarak çalışmak isteyen kişi isteğini hangi makama iletir?",
+      "back": "Başkanlığa, yazılı olarak iletir.",
+      "explanation": "Raportörler, Başkanın uygun görmesi üzerine bağlı oldukları kurum tarafından görevlendirilir; görevlendirilenler de dâhil raportörlerin aylıkları ve diğer mali hakları Mahkeme bütçesinden ödenir.",
+      "articleRefs": [
+        "25"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Başka bir kurumdan Anayasa Mahkemesine görevlendirilen raportörün disiplin eylemleri yüzünden işlemi kim yapar?",
+      "back": "Başkanın bildirmesi üzerine, raportörün bağlı bulunduğu kurum kendi mevzuatına göre işlem yapar.",
+      "explanation": "Aynı usul, görevden doğan veya görev sırasında işlenen suçlar ile kişisel suçlar için de uygulanır. Görevlendirilen raportörün kanuni izin haklarına ve sağlık işlerine ilişkin işlemler ise Başkanlıkça yürütülür ve kurumuna bildirilir.",
+      "articleRefs": [
+        "25"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Anayasa Mahkemesi raportörlerinin üniversitelerde ders, kurs ve konferans verebilmesi hangi koşula bağlıdır?",
+      "back": "Başkanın izin vermesine bağlıdır.",
+      "explanation": "Raportörler, Başkanın kendilerine verdiği dosyaların ilk ve esas inceleme raporlarını hazırlar ve toplantılara katılır; Başkan gerektiğinde onlara tanık veya uzman dinleme gibi görevler verebilir ve onları komisyonlarda görevlendirebilir.",
+      "articleRefs": [
+        "26"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Doktora öğrenimini tamamlamış bir aday, raportör yardımcılığı giriş sınavına girebilmek için hangi yaşı bitirmemiş olmalıdır?",
+      "back": "35 yaşını; sınavın yapıldığı yılın ocak ayının son günü itibarıyla. Lisans ve lisansüstü öğrenim yapmışlarda sınır 30 yaştır.",
+      "explanation": "Askerlik hizmetini tamamlamış, erteletmiş ya da askerlikten muaf olmak ve 657 sayılı Devlet Memurları Kanununun 48 inci maddesinde belirtilen genel nitelikleri taşımak da şarttır.",
+      "articleRefs": [
+        "27"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Raportör yardımcılığı giriş sınavının mülakatında adaylar her bir özellik için kaç puan üzerinden değerlendirilir?",
+      "back": "Yirmişer puan üzerinden; verilen puanlar ayrı ayrı tutanağa geçirilir.",
+      "explanation": "Değerlendirilen yönler arasında bir konuyu kavrayıp özetleme, ifade yeteneği ve muhakeme gücü ile genel yetenek ve genel kültür vardır. Tutanak dışında mülakatla ilgili herhangi bir kayıt sistemi kullanılmaz.",
+      "articleRefs": [
+        "27"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Raportör yardımcısının raportörlüğe atanması için aranan beş yıllık çalışmaya adaylık süresi de sayılır mı?",
+      "back": "Hayır. Adaylık süresi hariç, bu görevde fiilen en az 5 yıl çalışmış olmak gerekir; hazırlanan meslekî nitelikteki tezin kabul edilmesi de şarttır.",
+      "explanation": "Bu koşulları taşıyanlar, kadro durumu da gözetilerek Genel Sekreterin teklifi ve Başkanın onayı ile raportörlüğe atanabilir.",
+      "articleRefs": [
+        "27"
+      ],
+      "counterNumbers": []
+    }
+  ]
+}

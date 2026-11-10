@@ -1,0 +1,267 @@
+{
+  "deck": {
+    "topicId": "c245c059-861e-4c26-995a-f0518502cce8",
+    "legislationSlug": "teknik-yontemlerle-takip-sistemlerinin-kullanilmasina-dair-yonetmelik",
+    "sourceLabel": "AI bilgi kartı — Teknik Yöntemlerle Takip Sistemlerinin Kullanılmasına Dair Yönetmelik md 9–22",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: resmî madde metni + çıkmış sorular)"
+  },
+  "cards": [
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "İlgili kolluk biriminin hazırladığı asgari mesafe raporunda hangi kriterler göz önünde bulundurulur?",
+      "back": "Tarafların ev, iş, okul gibi adreslerinin yakınlığı, gündelik güzergâhları arasındaki mesafe, şehrin yüzölçümü, nüfus yoğunluğu ve trafik durumu, kolluğun etkin müdahale süresi gibi kriterler.",
+      "explanation": "Rapor, vakaya acil durumda etkin ve hızlı müdahalenin sağlanması amacıyla polis irtibat görevlisinin koordinesinde gecikmeksizin hazırlanır. Komisyonun nihai değerlendirme raporuna eklenmek üzere Şiddet Önleme ve İzleme Merkezine (ŞÖNİM) gecikmeksizin gönderilir.",
+      "articleRefs": [
+        "9"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Komisyon değerlendirmesinden geçmeden aile mahkemesine ulaşan bir vakada Komisyonun değerlendirme yapması hâkimin talebine bağlı mıdır?",
+      "back": "Evet; Komisyon, hâkim talep ederse değerlendirme yapar. Şiddet Önleme ve İzleme Merkezinin (ŞÖNİM) nihai değerlendirme raporu, bilgi ve belgelerle ivedilikle aile mahkemesine sunulur.",
+      "explanation": "Komisyondan geçen vakada süreç farklı işler. Vaka elverişli bulunursa nihai rapora asgari mesafe önerisi ve diğer belgeler eklenir. Karar talebi ŞÖNİM tarafından aile mahkemesine ivedilikle sunulur.",
+      "articleRefs": [
+        "9"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Teknik yöntemlerle takip kararını kimler talep edebilir?",
+      "back": "Şiddet Önleme ve İzleme Merkezi (ŞÖNİM), kolluk, şiddet mağduru ya da Cumhuriyet savcısı.",
+      "articleRefs": [
+        "10"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Teknik yöntemlerle takip kararı Cumhuriyet savcısından talep edilir mi?",
+      "back": "Hayır. Cumhuriyet savcısı Kararı talep edebilenlerden biridir. Karar, en çabuk ve en kolay ulaşılabilecek yer aile mahkemesi hâkiminden talep edilir.",
+      "articleRefs": [
+        "10"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Takip kararının tebliğinde yükümlüye, tedbir kararlarının hangi esasa göre elektronik olarak takip edileceği ihtar edilir?",
+      "back": "Yedi gün yirmi dört saat esasına göre. Karara aykırılık halinde zorlama hapsi uygulanacağı da ihtar edilir.",
+      "articleRefs": [
+        "11"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Yükümlünün izleme ünitelerinin kurulumunu kabul etmemesi Kararın uygulanmasını durdurur mu?",
+      "back": "Hayır. Bu durumda 14 üncü maddedeki itiraz prosedürü uygulanır; ancak itiraz Kararın uygulanmasını durdurmaz.",
+      "explanation": "Karara karşı, tefhim veya tebliğ tarihinden itibaren iki hafta içinde ilgililer tarafından aile mahkemesine itiraz edilebilir.",
+      "articleRefs": [
+        "11",
+        "14"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Yükümlüye ulaşılamadığı için Kararın uygulanması mümkün olmazsa uygulama ekibi ne yapar?",
+      "back": "Durumu tutanak altına alır. Mahkemeye sunulmak üzere ilgili kolluk birimine, bilgi için de Şiddet Önleme ve İzleme Merkezine (ŞÖNİM) ve izleme merkezine bildirir.",
+      "explanation": "Davet çağrılarına cevap verilmemesi, yükümlüye ya da şiddet mağduruna ulaşılamaması ve yükümlünün ceza infaz kurumunda bulunması bu haller arasındadır. Uygulama ekibi, Kararın uygulanma süresi boyunca araştırmaya devam eder. Yükümlüye ulaşılınca ŞÖNİM ve izleme merkeziyle koordine sağlanarak Karar uygulanır.",
+      "articleRefs": [
+        "11"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Teknik yöntemlerle takip kararı tek başına uygulanabilir mi?",
+      "back": "Hayır; Karar, ilgili tedbir kararları olmaksızın tek başına uygulanamaz.",
+      "articleRefs": [
+        "12"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Kararın uygulanmasına ilişkin izleme süreci ne zaman başlar?",
+      "back": "Taraflara izleme ünitelerinin teslimiyle başlar; ünitelerin geri alınmasıyla sona erer.",
+      "articleRefs": [
+        "12"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Yükümlünün girmemesi gereken alanlar izleme merkezinde nasıl belirlenir?",
+      "back": "Tampon bölge ve yasak bölge harita üzerinden işaretlenir. Yükümlünün şiddet mağduruna yaklaşmaması gereken asgari mesafe bilgisi de sisteme kaydedilir.",
+      "explanation": "Şiddet mağduru ve yükümlü, Kararda belirtilen hususlar doğrultusunda izleme merkezinde sistem üzerinden izlenir.",
+      "articleRefs": [
+        "12"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "İzleme personelinin yükümlüyle iletişime geçerek uyarı prosedürü uyguladığı durumlar nelerdir?",
+      "back": "Yükümlünün tampon bölgeye girmesi, alıcı cihazı yanında taşımaması veya şarj etmemesi ve elektronik kelepçeye ve alıcı cihaza zarar verecek biçimde müdahalede bulunması.",
+      "explanation": "Uyarıya rağmen Karar ihlal edilirse ihlal prosedürü uygulanır. Bu hallerde izleme personeli eş zamanlı olarak şiddet mağdurunu arar. Mağduru olası şiddet tehlikesi hakkında bilgilendirir ve güvenli bölgeye geçmesini ister.",
+      "articleRefs": [
+        "13"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Yükümlünün tampon bölgeye girmesi ihlal prosedürünü başlatır mı?",
+      "back": "Hayır; tampon bölgeye girmek uyarı prosedürünü gerektirir. İhlal prosedürü, yükümlü tampon bölgeye girdikten sonra uyarıya rağmen yasak bölgeye girmeye devam ederse izlenir.",
+      "explanation": "İhlal durumunda izleme personeli ihlal tespit tutanağı düzenler. Tutanak, Cumhuriyet Başsavcılığına gönderilmek üzere ilgili kolluk birimine, bilgi için de Şiddet Önleme ve İzleme Merkezine (ŞÖNİM) ivedilikle ulaştırılır.",
+      "articleRefs": [
+        "13"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "İhlal devam ederse ya da elektronik kelepçe yükümlünün vücudundan çıkarılırsa izleme personeli hangi acil çağrı hatlarıyla irtibata geçer?",
+      "back": "112, 155 ve 156 Acil Çağrı Hatları ile ilgili kolluk birimleriyle irtibata geçer. Yükümlünün ve şiddet mağdurunun bulunduğu bölgenin koordinat bilgisini paylaşır.",
+      "explanation": "İhbarı alan kolluk birimi yükümlüye gerekli müdahaleyi sağlar ve ilgili Cumhuriyet Savcısını ivedilikle bilgilendirir. Duruma ilişkin tutanağı da düzenleyerek Cumhuriyet Başsavcılığına ivedilikle gönderir.",
+      "articleRefs": [
+        "13"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Komisyon, Kararın uzatılması ya da kaldırılmasına ilişkin değerlendirmeyi ne zaman yapar?",
+      "back": "Karar süresinin sona ermesinden en az on beş gün önce.",
+      "explanation": "Değerlendirmede yükümlünün izleme sürecindeki ihlal bilgileri de göz önünde bulundurulur.",
+      "articleRefs": [
+        "15",
+        "9"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Komisyon Kararın devamı kanaatine varırsa, Şiddet Önleme ve İzleme Merkezi (ŞÖNİM) talebi aile mahkemesine ne zaman sunar?",
+      "back": "Uygulama süresi sona ermeden on gün önce; izlemenin kesintiye uğramaması için.",
+      "articleRefs": [
+        "15"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Karar süresinin uzatılmasına ilişkin değerlendirme, kolluğun ilgili Büro Amirliğine ve izleme merkezine on gün önce mi bildirilir?",
+      "back": "Hayır. Şiddet Önleme ve İzleme Merkezi (ŞÖNİM) bu bildirimi sürenin sona ermesinden en az yedi gün önce yapar. On gün önce yapılan, devam talebinin aile mahkemesine sunulmasıdır.",
+      "articleRefs": [
+        "15"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Taraflar izleme ünitelerinin teslimi için kolluk birimine nasıl davet edilir?",
+      "back": "Uygulama ekibince, farklı zamanlarda davet edilir.",
+      "explanation": "Karar da taraflara uygulama ekibi tarafından ilgili kolluk biriminde farklı zamanlarda ve ivedilikle tebliğ edilir.",
+      "articleRefs": [
+        "16",
+        "11"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "İzleme üniteleri takılmadan önce uygulama ekibi hangi işlemi yapar?",
+      "back": "Gerekli hijyen ve temizlik işlemlerini yapar; ardından üniteler takılır ve teslim edilir.",
+      "explanation": "Taraflara takip sürecinde uyulması gereken kurallar ve cihaz kullanım prosedürleri anlatılır. Bunlara ilişkin uygulama kılavuzu da teslim edilir.",
+      "articleRefs": [
+        "16"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Sistemin aktivasyonundan önce taraflara hangi tutanak imzalatılır?",
+      "back": "İzleme ünitelerinin teslimini ve takip sürecindeki kural ve prosedürlere uyulacağı taahhüdünü içeren tutanak. Aktivasyon izleme merkeziyle koordineli biçimde sağlanır.",
+      "articleRefs": [
+        "16"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Teknik yöntemlerle takip kararı sona erdiğinde izleme merkezi tarafları nereye yönlendirir?",
+      "back": "Kolluğun ilgili Büro Amirliğine yönlendirir; eş zamanlı olarak uygulama ekibi de bilgilendirilir.",
+      "articleRefs": [
+        "17"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Cihazların çıkarılması ve geri alınmasına ilişkin taraflara imzalatılan tutanakları kim dosyalar?",
+      "back": "Uygulama ekibi dosyalar.",
+      "articleRefs": [
+        "17"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Yükümlü izleme ünitelerine zarar verirse hangi adli işlem yapılır?",
+      "back": "Durum tutanak altına alınır ve Cumhuriyet Başsavcılığına ivedilikle suç duyurusunda bulunulur.",
+      "explanation": "Ünitelerin kullanımı hukuka aykırı olarak engellenirse de aynı işlem yapılır.",
+      "articleRefs": [
+        "18"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Yükümlünün izleme ünitelerine zarar vermesi Yönetmelik kapsamında nasıl değerlendirilir?",
+      "back": "Karar ihlali olarak değerlendirilir; 13 üncü maddedeki ihlal prosedürü işletilir.",
+      "explanation": "Bu değerlendirme suç duyurusuna ek olarak yapılır. Ünitelerin kullanımının hukuka aykırı olarak engellenmesi de aynı sonucu doğurur.",
+      "articleRefs": [
+        "18",
+        "13"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Elektronik izleme merkezinde takibi yapılan kişilere ait veriler ne kadar süre saklanır?",
+      "back": "5 yıl. Verilerin kaydı, işlenmesi ve paylaşımı 6698 sayılı Kişisel Verilerin Korunması Kanununa uygun yapılır.",
+      "articleRefs": [
+        "20"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "İzleme merkezinin yükümlü ve şiddet mağduruyla yaptığı görüşmelerin kayda alınacağı kişilere ne zaman bildirilir?",
+      "back": "Sistemin aktivasyonu esnasında bildirilir.",
+      "explanation": "Kayda alınan görüşmeler, izleme süresince ihlal durumunda veya uyarı niteliğinde izleme merkezince yapılan görüşmelerdir.",
+      "articleRefs": [
+        "20"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Teknik Yöntemlerle Takip Sistemlerinin Kullanılmasına Dair Yönetmelik hükümlerini kim yürütür?",
+      "back": "Aile ve Sosyal Hizmetler Bakanı ve İçişleri Bakanı birlikte yürütür.",
+      "articleRefs": [
+        "22"
+      ]
+    }
+  ]
+}

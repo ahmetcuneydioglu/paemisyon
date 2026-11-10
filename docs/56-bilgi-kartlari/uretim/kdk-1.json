@@ -1,0 +1,294 @@
+{
+  "deck": {
+    "topicId": "387f7067-fbf4-4f00-876c-e9cdc903039a",
+    "legislationSlug": "6328-sayili-kamu-denetciligi-kurumu-kanunu",
+    "sourceLabel": "AI bilgi kartı — 6328 Sayılı Kamu Denetçiliği Kurumu Kanunu md 1–17",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: resmî madde metni + çıkmış sorular; stil kapısı 1 açıklama yeniden yazıldı)"
+  },
+  "cards": [
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Kamu Denetçiliği Kurumu Kanununda geçen “Komisyon” hangi komisyonların üyelerinden oluşur?",
+      "back": "Türkiye Büyük Millet Meclisi Dilekçe Komisyonu ile İnsan Haklarını İnceleme Komisyonu üyelerinden oluşan Karma Komisyondur.",
+      "explanation": "Karma Komisyonun Başkanı, Başkanvekili, Sözcüsü ve Kâtibi; Dilekçe Komisyonunun Başkanı, Başkanvekili, Sözcüsü ve Kâtibidir.",
+      "articleRefs": [
+        "3"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Sermayesinin ne kadarı kamuya ait olan kuruluşlar Kanundaki “idare” tanımına girer?",
+      "back": "Sermayesinin yüzde ellisinden fazlası kamuya ait kuruluşlar; bunlara bağlı ortaklıklar ve müesseseler de idare sayılır.",
+      "explanation": "İdare tanımı geniştir. Merkezî yönetim kapsamındaki kamu idareleri, sosyal güvenlik kurumları, mahallî idareler, kamu iktisadi teşebbüsleri, kamu kurumu niteliğindeki meslek kuruluşları ve kamu hizmeti yürüten özel hukuk tüzel kişileri de bu tanımın içindedir.",
+      "articleRefs": [
+        "3"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Kamu Denetçiliği Kurumu hangi makama bağlıdır?",
+      "back": "Türkiye Büyük Millet Meclisi Başkanlığına bağlıdır.",
+      "explanation": "Kurum kamu tüzel kişiliğini haizdir, özel bütçelidir ve merkezi Ankara'dadır. Gerekli gördüğü yerlerde büro açabilir. Başdenetçilik ve Genel Sekreterlikten oluşur.",
+      "articleRefs": [
+        "4"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Kamu Denetçiliği Kurumunda Başdenetçinin yanında kaç denetçi görev yapar?",
+      "back": "Beş denetçi. Kurumda bir Başdenetçi ve beş denetçi ile Genel Sekreter ve diğer personel görev yapar.",
+      "articleRefs": [
+        "4"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Kamu Denetçiliği Kurumu idarenin eylem ve işlemlerini hangi yönlerden inceler?",
+      "back": "Hukuka ve hakkaniyete uygunluk yönlerinden inceler. Bunu insan haklarına dayalı adalet anlayışı içinde yapar, araştırır ve idareye önerilerde bulunur.",
+      "explanation": "Kurum bu görevi idarenin işleyişiyle ilgili şikâyet üzerine yapar. İdarenin her türlü eylem ve işlemleri ile tutum ve davranışları incelemeye konu olabilir.",
+      "articleRefs": [
+        "5"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Yasama ve yargı alanında hangi işlemler Kamu Denetçiliği Kurumunun görev alanı dışındadır?",
+      "back": "Yasama yetkisinin kullanılmasına ilişkin işlemler ile yargı yetkisinin kullanılmasına ilişkin kararlar görev alanı dışındadır.",
+      "explanation": "Türk Silahlı Kuvvetlerinin sırf askerî nitelikteki faaliyetleri de Kurumun görev alanı dışında kalır.",
+      "articleRefs": [
+        "5"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Türk Silahlı Kuvvetlerinin hangi faaliyetleri Kamu Denetçiliği Kurumunun görev alanı dışındadır?",
+      "back": "Sırf askerî nitelikteki faaliyetleri; bunlar Kurumun görev alanı dışında kalır.",
+      "explanation": "Kurum, idarenin işleyişiyle ilgili şikâyet üzerine idarenin her türlü eylem ve işlemleri ile tutum ve davranışlarını hukuka ve hakkaniyete uygunluk yönlerinden inceler, araştırır ve idareye önerilerde bulunur. Bu genel görevin dışında tutulanlar maddede ayrıca sayılır: Türk Silahlı Kuvvetlerinin sırf askerî nitelikteki faaliyetlerinin yanında yasama yetkisinin kullanılmasına ilişkin işlemler ile yargı yetkisinin kullanılmasına ilişkin kararlar da Kurumun görev alanı dışındadır.",
+      "articleRefs": [
+        "5"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Kamu Denetçiliği Kurumunu kim yönetir ve temsil eder?",
+      "back": "Başdenetçi.",
+      "explanation": "Başdenetçilik, Başdenetçi ve denetçilerden oluşur.",
+      "articleRefs": [
+        "6"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Başdenetçi yokluğunda kendisine kim vekâlet eder?",
+      "back": "Başdenetçinin belirlediği denetçi vekâlet eder. Vekâlet edecek denetçiyi belirlemek Başdenetçinin görevidir.",
+      "explanation": "Başdenetçinin diğer görevlerinden bazıları şunlardır: yıllık raporu hazırlamak, gerek gördüğü konularda yıllık raporu beklemeksizin özel rapor hazırlamak, raporları kamuoyuna duyurmak, Genel Sekreteri ve diğer personeli atamak.",
+      "articleRefs": [
+        "7"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Başdenetçi, denetçiler arasındaki iş bölümünü düzenlerken denetçilerden birini hangi alanda görevlendirir?",
+      "back": "Kadın ve çocuk hakları alanında görevlendirir.",
+      "explanation": "Denetçiler, bu Kanundaki görevlerin yapılmasında Başdenetçiye yardımcı olur ve Başdenetçinin verdiği görevleri yapar.",
+      "articleRefs": [
+        "7"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Denetçiler, Başdenetçinin görevlendirdiği konu veya alanlarda hazırladıkları önerileri kime sunar?",
+      "back": "Başdenetçiye sunar. Denetçiler bu konu veya alanlarda tek başlarına çalışır.",
+      "explanation": "Başdenetçi, denetçiler arasında iş birliğini sağlar ve uyumlu çalışmalarını gözetir. Görevlendirme konularına, alanlarına ve iş bölümüne ilişkin ilkeler yönetmelikle belirlenir.",
+      "articleRefs": [
+        "8"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Kamu Denetçiliği Kurumunun idari ve mali işleri ile sekretarya hizmetlerini hangi birim yerine getirir?",
+      "back": "Genel Sekreterlik. Burada Genel Sekreter ve diğer idari personel görev yapar.",
+      "explanation": "Genel Sekreterliğin görevlerinden bazıları şunlardır: Kurumun büro işlemini yürütmek, personelin şahsi dosyalarını tutmak, arşiv hizmetlerini yürütmek, personelin izin ve emeklilik işlemlerini yürütmek ve bilişim sisteminin kullanılmasını sağlamak.",
+      "articleRefs": [
+        "9"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Başdenetçi seçilebilmek için seçimin yapıldığı tarihte hangi yaşı doldurmuş olmak gerekir?",
+      "back": "Elli yaşını doldurmuş olmak gerekir. Denetçi için bu yaş kırktır.",
+      "explanation": "Yaş şartı, seçimin yapıldığı tarihte aranır.",
+      "articleRefs": [
+        "10"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Başdenetçi veya denetçi seçilebilmek için toplamda en az kaç yıl çalışmış olmak gerekir?",
+      "back": "En az on yıl. Kamu kurum ve kuruluşları, uluslararası kuruluşlar, sivil toplum kuruluşları, kamu kurumu niteliğindeki meslek kuruluşları ya da özel sektördeki çalışma toplamda sayılır.",
+      "explanation": "Ayrıca dört yıllık eğitim veren fakültelerden ya da bunlara denkliği kabul edilmiş yükseköğretim kurumlarından mezun olmak aranır. Hukuk, siyasal bilgiler, iktisadi ve idarî bilimler, iktisat ve işletme fakülteleri tercihen aranır.",
+      "articleRefs": [
+        "10"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Başdenetçi adayında siyasi partiye üye olmama şartı seçimin yapıldığı tarihe göre mi aranır?",
+      "back": "Hayır. Siyasi partiye üye olmama şartı başvuru sırasında aranır. Seçimin yapıldığı tarih yaş şartı için esas alınır.",
+      "explanation": "Türk vatandaşı olmak ve kamu haklarından yasaklı olmamak da seçilme şartları arasındadır.",
+      "articleRefs": [
+        "10"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "TBMM Genel Kurulu, Karma Komisyonun aday bildiriminden itibaren kaç gün içinde Kamu Başdenetçisi seçimine başlar?",
+      "back": "On beş gün içinde.",
+      "articleRefs": [
+        "11"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Başdenetçi seçiminin dördüncü oylamasına bütün adaylar katılabilir mi?",
+      "back": "Hayır. Dördüncü oylama, üçüncü oylamada en çok oy alan iki aday için yapılır. Karar yeter sayısı olmak şartıyla en fazla oy alan aday seçilir.",
+      "explanation": "Komisyon, Başdenetçi seçimi için aday adayları arasından üç adayı belirler. Bunu başvuru süresinin bittiği tarihten itibaren onbeş gün içinde yapar ve adayları Genel Kurula sunulmak üzere Başkanlığa bildirir.",
+      "articleRefs": [
+        "11"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Denetçi seçiminde alt komisyon, seçilecek denetçi sayısına göre kaç aday belirler?",
+      "back": "Seçilecek denetçi sayısının üç katı kadar aday belirler. Bunları başvuru süresinin bitiminden itibaren onbeş gün içinde Komisyona sunar.",
+      "explanation": "Komisyon sonraki onbeş gün içinde denetçi seçimlerini yapar. Seçimler, Kurumun Başkanlığa başvurduğu tarihten itibaren en geç doksan gün içinde sonuçlandırılır. Bu süreler Türkiye Büyük Millet Meclisinin tatilde olması veya araverme sırasında işlemez.",
+      "articleRefs": [
+        "11"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Bir makam, Başdenetçiye görevleriyle ilgili tavsiyede bulunabilir mi?",
+      "back": "Hayır. Hiçbir organ, makam, merci veya kişi Başdenetçiye ve denetçilere görevleriyle ilgili emir ve talimat veremez, genelge gönderemez, tavsiye ve telkinde bulunamaz.",
+      "explanation": "Başdenetçi ve denetçiler de görevlerini yerine getirirken tarafsızlık ilkesine uygun davranmak zorundadır.",
+      "articleRefs": [
+        "12"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Denetçiler görevlerine başlarken nerede andiçer?",
+      "back": "Komisyonda andiçerler. Başdenetçi ise Genel Kurulda andiçer.",
+      "explanation": "Ant metninde görevin tam bir tarafsızlık, dürüstlük, hakkaniyet ve adalet anlayışı içinde yerine getirileceği taahhüt edilir.",
+      "articleRefs": [
+        "13"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Süresi bitmeden ayrılan bir denetçinin yerine seçilen kişi, selefinin kalan süresini mi tamamlar?",
+      "back": "Hayır. Yerine yeni seçilen Başdenetçi veya denetçinin görev süresi de dört yıldır.",
+      "explanation": "Başdenetçi ve denetçilerin görev süreleri dört yıldır. İstifa, ölüm veya görevden alınma gibi herhangi bir nedenle boşalma olsa da yeni seçilen kişi dört yıl görev yapar.",
+      "articleRefs": [
+        "14"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Bir dönem Başdenetçi veya denetçi olarak görev yapan kişi en fazla kaç dönem daha seçilebilir?",
+      "back": "Sadece bir dönem daha seçilebilir.",
+      "explanation": "Başdenetçi veya denetçiliğe seçilenlerin, görev yaptıkları sürede eski görevleriyle ilişikleri kesilir.",
+      "articleRefs": [
+        "14"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Kamu görevlisiyken denetçiliğe seçilen biri, görev süresi dolduğunda eski kurumuna kaç gün içinde başvurmalıdır?",
+      "back": "Otuz gün içinde başvurmalıdır. Başvurursa atamaya yetkili makamlar onu otuz gün içinde mükteseplerine uygun bir kadroya atar.",
+      "explanation": "Bu hak, memuriyete giriş şartlarını kaybetme dışındaki nedenlerle görevi sona erenlere tanınır. Yüksek mahkeme üyeliğinden seçilenler, herhangi bir işleme gerek olmaksızın ve boş kadro şartı aranmaksızın eski görevine döner. Atama gerçekleşinceye kadar, süresi dolan Başdenetçi ve denetçilere aylık ücret ile sosyal hak ve yardımlar Kurum tarafından ödenmeye devam eder.",
+      "articleRefs": [
+        "14"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Seçildikten sonra seçilme niteliklerini kaybeden bir denetçinin görevinin sona ermesine kim karar verir?",
+      "back": "Komisyon karar verir. Önce durum Komisyon tarafından tespit edilir.",
+      "explanation": "Başdenetçide de tespiti Komisyon yapar; görevin sona ermesine ise Genel Kurul görüşmesiz olarak karar verir. Seçilmeye engel bir suçtan kesin hüküm giyen ya da kısıtlanan denetçinin sıfatı, kesinleşmiş mahkeme kararının Komisyonun bilgisine sunulmasıyla sona erer.",
+      "articleRefs": [
+        "15"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Başdenetçiye hangi tutarda aylık ücret ödenir?",
+      "back": "En yüksek Devlet memuru için belirlenen, her türlü ödemeler dâhil mali haklar tutarında aylık ücret ödenir.",
+      "explanation": "Denetçilere bakanlık genel müdürleri için belirlenen mali haklar tutarında aylık ücret ödenir. Sosyal hak ve yardımlarda da aynı esas ve usuller geçerlidir: Başdenetçi en yüksek Devlet memurunun, denetçiler bakanlık genel müdürlerinin yararlandığı haklardan yararlanır.",
+      "articleRefs": [
+        "16"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Kamu Denetçiliği Kurumuna kimler başvurabilir?",
+      "back": "Gerçek ve tüzel kişiler başvurabilir. Başvuru sahibi talep ederse başvuru gizli tutulur.",
+      "explanation": "Başvuru Türkçe dilekçeyle yapılır. İllerde valilikler, ilçelerde kaymakamlıklar aracılığıyla da başvurulabilir. Başvurulardan herhangi bir ücret alınmaz.",
+      "articleRefs": [
+        "17"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "İdare başvuruya cevap vermezse Kuruma hangi süre içinde başvurulabilir?",
+      "back": "İdare altmış gün içinde cevap vermezse, bu sürenin bitmesinden itibaren altı ay içinde başvurulabilir.",
+      "explanation": "İdare cevap verirse altı aylık süre cevabın tebliği tarihinden başlar. Başvuru tarihi, dilekçenin Kuruma, valilik veya kaymakamlıklara verildiği tarihtir; diğer hâllerde başvurunun Kuruma ulaştığı tarihtir. Dava açma süresi içinde yapılan başvuru, işlemeye başlamış olan dava açma süresini durdurur.",
+      "articleRefs": [
+        "17"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "İdari başvuru yolları tüketilmeden yapılan bir başvuruyu Kurum kabul edebilir mi?",
+      "back": "Evet. Telafisi güç veya imkânsız zararların doğması ihtimali bulunan hâllerde kabul edebilir. Diğer hâllerde başvuru ilgili kuruma gönderilir.",
+      "explanation": "Kural olarak İdari Yargılama Usulü Kanununda öngörülen idari başvuru yolları ile özel kanunlardaki zorunlu idari başvuru yollarının tüketilmesi gerekir.",
+      "articleRefs": [
+        "17"
+      ],
+      "counterNumbers": []
+    }
+  ]
+}

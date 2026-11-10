@@ -1,0 +1,287 @@
+{
+  "deck": {
+    "topicId": "270990de-e156-4db0-b5fb-eb469562dd8a",
+    "legislationSlug": "5018-sayili-kamu-mali-yonetimi-ve-kontrol-kanunu",
+    "sourceLabel": "AI bilgi kartı — 5018 Sayılı Kamu Malî Yönetimi ve Kontrol Kanunu md 41–58, 60, 61",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: resmî madde metni + çıkmış sorular)"
+  },
+  "cards": [
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Bir kamu idaresinin idare faaliyet raporunu kim düzenler ve kamuoyuna açıklar?",
+      "back": "Üst yönetici; harcama yetkililerinin hazırladığı birim faaliyet raporlarını esas alarak düzenler ve kamuoyuna açıklar.",
+      "explanation": "Faaliyet raporu her yıl, hesap verme sorumluluğu çerçevesinde hazırlanır. Merkezî yönetim kapsamındaki kamu idareleri ve sosyal güvenlik kurumları, idare faaliyet raporlarının birer örneğini Sayıştaya ve Cumhurbaşkanlığına gönderir.",
+      "articleRefs": [
+        "41"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Sayıştay, mahallî idarelerin idare faaliyet raporlarını doğrudan Türkiye Büyük Millet Meclisine sunar mı?",
+      "back": "Hayır. Sayıştay, mahallî idarelerin raporları hariç idare faaliyet raporlarını sunar. Mahallî idareler için Meclise giden, Çevre, Şehircilik ve İklim Değişikliği Bakanlığının (metinde: Çevre ve Şehircilik Bakanlığı) hazırladığı mahallî idareler genel faaliyet raporudur.",
+      "explanation": "Mahallî idarelerin idare faaliyet raporlarının birer örneği Sayıştay ve Çevre, Şehircilik ve İklim Değişikliği Bakanlığına (metinde: Çevre ve Şehircilik Bakanlığı) gönderilir. Bakanlık bu raporları esas alır, kendi değerlendirmelerini de ekleyerek genel raporu hazırlar ve kamuoyuna açıklar. Sayıştay bu raporu, dış denetim sonuçlarını dikkate alarak ve görüşlerini de belirterek Meclise sunar.",
+      "articleRefs": [
+        "41"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Türkiye Büyük Millet Meclisi, merkezî yönetim bütçe kanununun uygulama sonuçlarını onama yetkisini hangi kanunla kullanır?",
+      "back": "Kesin hesap kanunuyla.",
+      "explanation": "Kesin hesap kanunu teklifini Hazine ve Maliye Bakanlığı hazırlar. Teklif, muhasebe kayıtları dikkate alınarak merkezî yönetim bütçe kanununun şekline uygun olarak düzenlenir.",
+      "articleRefs": [
+        "42"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Kesin hesap kanunu teklifi en geç ne zamana kadar Türkiye Büyük Millet Meclisine sunulur?",
+      "back": "İzleyen malî yılın Haziran ayı sonuna kadar. Teklifi Cumhurbaşkanı sunar, bir örneği de Sayıştaya gönderilir.",
+      "explanation": "Teklif, bir yıllık uygulama sonuçlarını karşılaştırmalı olarak gösteren değerlendirmeleri içeren gerekçesiyle birlikte sunulur.",
+      "articleRefs": [
+        "42"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Sayıştay, genel uygunluk bildirimini kesin hesap kanun teklifinin verilmesinden başlayarak en geç kaç gün içinde Meclise sunar?",
+      "back": "En geç yetmiş beş gün içinde.",
+      "explanation": "Genel uygunluk bildirimi, merkezî yönetim kapsamındaki kamu idareleri için düzenlenir. Hazırlanırken dış denetim raporları, idare faaliyet raporları ve genel faaliyet raporu dikkate alınır.",
+      "articleRefs": [
+        "43"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Kesin hesap kanunu teklifi ile genel uygunluk bildiriminin Meclise verilmesi, o yılın hesaplarının kesin hükme bağlandığı anlamına gelir mi?",
+      "back": "Hayır. Bu, hesapların kesin hükme bağlandığı anlamına gelmez. İlgili yıla ait Sayıştayca sonuçlandırılmamış denetimleri de önlemez.",
+      "explanation": "Genel uygunluk bildirimi, teklifin verilmesinden başlayarak en geç yetmiş beş gün içinde Meclise sunulur. Bu sunuş, o yılın denetimlerini sona erdirmez.",
+      "articleRefs": [
+        "43"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Emniyet Genel Müdürlüğünün taşınırlarının kayda alınması ile yönetim ve iç denetimine ilişkin usul ve esaslar nasıl belirlenir?",
+      "back": "Cumhurbaşkanı tarafından çıkarılan yönetmelikle.",
+      "explanation": "Genel yönetim kapsamındaki kamu idarelerinde de malların kaydı, taşınırların muhafazası, kullanımı ve mal yönetim hesabının verilmesine ilişkin usul ve esaslar Cumhurbaşkanı tarafından çıkarılan yönetmeliklerle belirlenir. Taşınır ve taşınmaz edinme, trampa ve elden çıkarma gibi hususlar ise ilgili kanunlarında düzenlenir.",
+      "articleRefs": [
+        "44"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Genel bütçe kapsamındaki bir kamu idaresinin edindiği taşınmaz, o idarenin tüzel kişiliği adına tapuya tescil edilir mi?",
+      "back": "Hayır. Genel bütçe kapsamındaki idarelerin edindiği taşınmazlar Hazine adına tescil olunur. Tüzel kişilik adına tescil, diğer kamu idarelerinin taşınmazları içindir.",
+      "explanation": "Hazine adına tescil edilen taşınmazları Çevre, Şehircilik ve İklim Değişikliği Bakanlığı (metinde: Çevre ve Şehircilik Bakanlığı) yönetir. Tescil işlemi, adına tescil yapılan idarenin taşınmazın bulunduğu yerdeki ilgili birimine bildirilir.",
+      "articleRefs": [
+        "45"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Bir kamu idaresi taşınmazını başka bir kamu idaresine bedelsiz devrederken tapu kütüğüne hangi şerh konulur?",
+      "back": "Taşınmazın görmekle yükümlü olunan kamu hizmetlerinde kullanılacağına ve amacına uygun kullanılmazsa geri alınacağına dair şerh.",
+      "explanation": "İhtiyaç fazlası taşınırlar da diğer kamu idarelerine bedelsiz devredilebilir. Devredilmeyecek taşınır ve taşınmazları ve devir ile kayıt işlemlerinin usul ve esaslarını Çevre, Şehircilik ve İklim Değişikliği Bakanlığı (metinde: Çevre ve Şehircilik Bakanlığı) belirler.",
+      "articleRefs": [
+        "45"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Merkezî yönetim kapsamındaki bir kamu idaresinin, değeri merkezî yönetim bütçe kanununda belirtilen sınırın üzerindeki taşınmazı kimin kararıyla satılır?",
+      "back": "Cumhurbaşkanı kararıyla.",
+      "explanation": "Genel bütçe kapsamındaki idarelerin her türlü taşınır ve taşınmazının satışına Çevre, Şehircilik ve İklim Değişikliği Bakanlığı (metinde: Çevre ve Şehircilik Bakanlığı) yetkilidir ve satış bedelleri genel bütçeye gelir kaydedilir. Diğer kamu idarelerinde elden çıkarma, kanunlarında ve Cumhurbaşkanlığı kararnamelerinde belirtilen yetkili organların kararıyla yapılır.",
+      "articleRefs": [
+        "46"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Kamu idareleri, mülkiyetlerindeki taşınmazları kimlere bedelsiz tahsis edebilir?",
+      "back": "Birbirlerine ve köy tüzel kişiliklerine. Tahsis edilen taşınmaz amaç dışı kullanılamaz.",
+      "explanation": "Tahsis, kanunlarda veya Cumhurbaşkanlığı kararnamelerinde belirtilen kamu hizmetlerini yerine getirmek için yapılır. Hazinenin özel mülkiyetindeki taşınmazlarla Devletin hüküm ve tasarrufu altındaki yerleri tahsis etmeye ve gereksiz olanların tahsisini kaldırmaya Çevre, Şehircilik ve İklim Değişikliği Bakanlığı (metinde: Çevre ve Şehircilik Bakanlığı) yetkilidir. Diğer taşınmazlarda bu yetki maliki kamu idaresindedir.",
+      "articleRefs": [
+        "47"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Genel yönetim kapsamındaki kamu idarelerinde uygulanacak muhasebe ve raporlama standartlarını kim belirler?",
+      "back": "Devlet Muhasebesi Standartları Kurulu belirler. Standartlar uluslararası standartlara uygun olarak belirlenir ve Resmî Gazetede yayımlanır.",
+      "explanation": "Kurul, Hazine ve Maliye Bakanlığı bünyesinde oluşturulur. Kurula Sayıştay Başkanlığı, Hazine ve Maliye Bakanlığı ve diğer ilgili kuruluşların temsilcileri katılır. Kurulda görevlendirilenlerin aslî görevleri devam eder.",
+      "articleRefs": [
+        "49"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Bir ekonomik değer hangi durumlarda muhasebeleştirilir?",
+      "back": "Yaratıldığında, başka bir şekle dönüştürüldüğünde, mübadeleye konu edildiğinde, el değiştirdiğinde veya yok olduğunda.",
+      "explanation": "Bütün malî işlemlerin muhasebeleştirilmesi ve her muhasebe kaydının belgeye dayanması şarttır.",
+      "articleRefs": [
+        "50"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Malî yılın bitimine kadar fiilen yapılmış ama mahsup edilememiş ödemelerin mahsup işlemleri, malî yılın bitimini izleyen ne kadar süre içinde yapılabilir?",
+      "back": "Bir ay içinde; ödenekler saklı tutularak yapılır.",
+      "explanation": "Kamu hesapları malî yıl esasına göre tutulur. Bütçe gelirleri tahsil edildiği, bütçe giderleri ise ödendiği yılda muhasebeleştirilir.",
+      "articleRefs": [
+        "51"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Zorunlu hallerde Hazine ve Maliye Bakanlığı, malî yıl sonundaki bir aylık mahsup süresini bütçe giderleri için en çok ne kadar uzatabilir?",
+      "back": "Bir ay; diğer işlemlerde uzatma iki ayı geçemez.",
+      "explanation": "Uzatma, malî yılın bitimini izleyen bir aylık mahsup süresi için yalnız zorunlu hallerde ve Hazine ve Maliye Bakanlığınca yapılır.",
+      "articleRefs": [
+        "51"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Genel yönetim kapsamındaki kamu idarelerine ait malî istatistikler hangi dönemler itibarıyla yayımlanır?",
+      "back": "Üçer aylık dönemler itibarıyla; yayımlayan Hazine ve Maliye Bakanlığıdır.",
+      "explanation": "Merkezî yönetim kapsamındaki idarelerin malî istatistikleri aylık olarak yayımlanır. Sosyal güvenlik kurumları ve mahallî idarelerin istatistikleri, merkezî yönetiminkilerle birleştirilerek genel yönetim istatistikleri elde edilir.",
+      "articleRefs": [
+        "53"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Genel yönetim sektörü kapsamındaki bir kamu idaresi malî istatistik verilerini süresinde göndermezse Hazine ve Maliye Bakanlığınca ne kadar ek süre verilir?",
+      "back": "Bir ay ek süre verilir.",
+      "explanation": "Genel yönetim sektörü kapsamını, Türkiye Cumhuriyet Merkez Bankası ve Türkiye İstatistik Kurumunun görüşünü alarak Hazine ve Maliye Bakanlığı belirler. Bakanlık, bu kapsamdaki kamu idarelerinin malî verilerini almaya da yetkilidir.",
+      "articleRefs": [
+        "53",
+        "52"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Malî istatistik verilerini ek süre sonunda da göndermeyen kamu idaresinde idari para cezası kimlere verilir?",
+      "back": "Malî hizmetler birimi yöneticisi ile muhasebe yetkilisine. Cezayı, Hazine ve Maliye Bakanlığının talebi üzerine idarenin üst yöneticileri verir.",
+      "explanation": "Ceza tutarı, her türlü aylık, ödenek, zam ve tazminat dâhil yapılan bir aylık net ödemeler toplamıdır. Ceza uygulanması bilgi verme yükümlülüğünü ortadan kaldırmaz. Tahsil, md 73 hükümlerine göre yapılır.",
+      "articleRefs": [
+        "53"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Bir yıla ait malî istatistikler Sayıştay tarafından ne zaman değerlendirilir?",
+      "back": "İzleyen yılın Mart ayı içinde. Değerlendirme raporu Türkiye Büyük Millet Meclisine ve Hazine ve Maliye Bakanlığına gönderilir.",
+      "explanation": "Değerlendirme; hazırlanma, yayımlanma, doğruluk, güvenilirlik ve önceden belirlenmiş standartlara uygunluk bakımından yapılır. Rapordaki değerlendirmeler için gerekli önlemleri Hazine ve Maliye Bakanı alır.",
+      "articleRefs": [
+        "54"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Kamu idarelerinde iç denetime ilişkin standart ve yöntemleri kim belirler?",
+      "back": "İç Denetim Koordinasyon Kurulu.",
+      "explanation": "Malî yönetim ve kontrol süreçlerine ilişkin standart ve yöntemleri ise Hazine ve Maliye Bakanlığı belirler. Her ikisi de standartları geliştirir ve uyumlaştırır, sistemlerin koordinasyonunu sağlar ve kamu idarelerine rehberlik hizmeti verir.",
+      "articleRefs": [
+        "55"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Kamu idarelerinin malî yönetim ve kontrol sistemleri nelerden oluşur?",
+      "back": "Harcama birimleri, muhasebe ve malî hizmetler ile ön malî kontrol ve iç denetimden.",
+      "explanation": "Yeterli ve etkili bir kontrol sistemi için gerekli önlemleri ilgili idarelerin üst yöneticileri ile diğer yöneticileri alır. Bunu yaparken görev, yetki ve sorumluluklarını göz önünde bulundururlar.",
+      "articleRefs": [
+        "57"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Malî hizmetler uzman yardımcılığına atanabilmek için sınavın yapıldığı yılın başı itibarıyla hangi yaş doldurulmamış olmalıdır?",
+      "back": "30 yaş; sınavın yapıldığı yılın başı itibarıyla doldurulmamış olmalıdır.",
+      "explanation": "657 sayılı Devlet Memurları Kanununun 48 inci maddesindeki genel şartlar da aranır. Bunlara ek olarak en az dört yıllık lisans eğitimi veren hukuk, siyasal bilgiler, iktisat, işletme, iktisadi ve idari bilimler fakültelerinden ya da denklerinden mezun olmak ve özel yarışma sınavında başarılı olmak gerekir.",
+      "articleRefs": [
+        "60"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Malî hizmetler uzman yardımcısı, yeterlik sınavına girme hakkını kazanmak için en az kaç yıl çalışmalıdır?",
+      "back": "En az üç yıl; ayrıca başarılı olmak şartı aranır.",
+      "explanation": "Hazine ve Maliye Bakanlığınca yapılan yeterlik sınavını kazananlar malî hizmetler uzmanı kadro veya pozisyonlarına atanır. Başaramayanlar, istihdam şekline göre bulundukları kamu idarelerinde durumlarına uygun kadro veya pozisyonlara atanır.",
+      "articleRefs": [
+        "60"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 1,
+      "front": "Bir kamu idaresinde harcama yetkilisi, aynı zamanda muhasebe yetkilisi görevini üstlenebilir mi?",
+      "back": "Hayır. Harcama yetkilisi ile muhasebe yetkilisi görevi aynı kişide birleşemez.",
+      "explanation": "Aynı fıkraya göre, malî hizmetler biriminde ön malî kontrol görevini yürütenler de malî işlem sürecinde görev alamaz.",
+      "articleRefs": [
+        "60"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Muhasebe yetkilisi mutemedi kime karşı sorumludur?",
+      "back": "Doğrudan muhasebe yetkilisine karşı.",
+      "explanation": "Muhasebe yetkilisi mutemedi, muhasebe yetkilisi adına ve hesabına para ve parayla ifade edilebilen değerleri geçici olarak almaya, vermeye ve göndermeye yetkili kişidir. Görevlendirilmesi, yetkileri ve denetimi Hazine ve Maliye Bakanlığınca çıkarılacak yönetmelikle düzenlenir.",
+      "articleRefs": [
+        "61"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Muhasebe yetkilisi, ödeme emri belgesi için ilgili mevzuatta düzenlenmiş belgeler dışında ek belge isteyebilir mi?",
+      "back": "Hayır. Muhasebe yetkilisi, ilgili mevzuatında düzenlenmiş belgeler dışında belge arayamaz.",
+      "explanation": "Ödeme aşamasında muhasebe yetkilisi şunları kontrol eder: yetkililerin imzası, mevzuatta sayılan belgelerin tamam olması, maddi hata bulunup bulunmadığı ve hak sahibinin kimliğine ilişkin bilgiler. Bu konularda hata veya eksiklik varsa ödeme yapamaz.",
+      "articleRefs": [
+        "61"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Belgesi eksik veya hatalı olan ödeme emri belgesi, muhasebe yetkilisince en geç ne kadar sürede harcama yetkilisine gönderilir?",
+      "back": "En geç bir iş günü içinde; gerekçeleriyle birlikte ve yazılı olarak gönderilir.",
+      "explanation": "Belge, düzeltilmek veya tamamlanmak üzere geri gönderilir. Hatalar düzeltilir ya da eksiklikler giderilirse ödeme işlemi gerçekleştirilir.",
+      "articleRefs": [
+        "61"
+      ]
+    }
+  ]
+}

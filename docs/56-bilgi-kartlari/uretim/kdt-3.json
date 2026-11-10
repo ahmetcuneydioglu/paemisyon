@@ -1,0 +1,183 @@
+{
+  "deck": {
+    "topicId": "3e609f93-00e7-42de-9c16-59d4d43d6a89",
+    "legislationSlug": "koruyucu-ve-destekleyici-tedbir-kararlarinin-uygulanmasi-hakkinda-yonetmelik",
+    "sourceLabel": "AI bilgi kartı — Koruyucu ve Destekleyici Tedbir Kararlarının Uygulanması Hakkında Yönetmelik md 19–31",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: resmî madde metni + çıkmış sorular)"
+  },
+  "cards": [
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "İllerde koruyucu ve destekleyici tedbirlerin yerine getirilmesinde kurumlar arasındaki bağlantı, uyum, düzen ve eşgüdüm kimin başkanlığında sağlanır?",
+      "back": "Vali veya vali yardımcısının başkanlığında sağlanır.",
+      "explanation": "İl düzeyindeki bu eşgüdüme katılanlar arasında Cumhuriyet başsavcısı, il emniyet müdürü, il millî eğitim müdürü, il sağlık müdürü ve baro temsilcisi vardır. Valinin ya da görevlendireceği vali yardımcısının koordinasyona ilişkin emir ve talepleri ile toplantıda alınan kararlar ilgili kişi, kurum ve kuruluşlarca uygulanır.",
+      "articleRefs": [
+        "20"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "İl düzeyindeki koordinasyon toplantısının gündemi ve günü katılacak kişilere kaç gün önceden bildirilir?",
+      "back": "On beş gün önceden; bildirimi sekretarya görevini yürüten koordinatör birim yapar.",
+      "explanation": "Toplantı gerek görülen hâllerde düzenlenir. Gündem, valinin görüş ve direktifleri ile diğer kurum ve kuruluşların görüşleri alınarak hazırlanır.",
+      "articleRefs": [
+        "20"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Kanunda yazılı tedbir kararlarını almaya yetkili mahkeme hâkimleri, il koordinasyon toplantısına ancak davet edilirlerse mi katılabilir?",
+      "back": "Hayır. Mahkeme hâkimleri istekleri hâlinde katılabilir. Davet kaydı sivil toplum kuruluşlarının temsilcileri için aranır.",
+      "explanation": "Toplantıya istekleri hâlinde katılabilenler üniversiteler, tedbir kararı almaya yetkili mahkeme hâkimleri ve davet edilen sivil toplum kuruluşlarının temsilcileridir.",
+      "articleRefs": [
+        "20"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Tedbir kararını yerine getirmekle görevli kurum, kararın kendisine bildirilmesinden sonra çocuğu teslim alıp gerekli işlemleri ne zaman başlatır?",
+      "back": "Derhâl; karar kendisine bildirildiği veya tebliğ edildiği tarihten itibaren çocuğu teslim alarak işlemleri başlatır.",
+      "explanation": "Bu yükümlülük, kararı yerine getirmekle görevli kişi, kurum veya kuruluşların hepsi için geçerlidir. Koruyucu ve destekleyici tedbir kararları ayrıca hâkim veya mahkemelerce tutulan koruyucu ve destekleyici tedbir kararları defterine kaydedilir.",
+      "articleRefs": [
+        "22"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Tedbir kararı verilen çocuk bulunamazsa, mahkeme veya çocuk hâkimi çocuğun bulunması ve ilgili kuruma teslimini kimin sağlamasına karar verebilir?",
+      "back": "Kolluğun çocuk birimi; çocuğun bulunamadığı ilgili kolluk birimlerine bildirilir.",
+      "explanation": "Yakalanan çocuklar ilgili kurumlara teslim edilir. Tedbir kararını uygulayacak kurumlar, çocuğu teslim almak için kolluk birimleriyle işbirliği ve koordinasyon içinde hareket eder ve gerekli önlemleri alır.",
+      "articleRefs": [
+        "22"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Bakım veya barınma tedbiriyle kuruma teslim edilen çocuk izinsiz ayrılırsa, durum kolluk birimine yalnız yazılı olarak mı bildirilir?",
+      "back": "Hayır. Durum en seri iletişim araçlarıyla kolluk birimine bildirilir. Bildirim ardından en kısa sürede yazılı hâle getirilir.",
+      "explanation": "İzinsiz ayrılma için tutanak tutulur ve mahkeme veya çocuk hâkimine de bilgi verilir. Sonrasında çocuğun bulunamaması hâlindeki usul işletilir: mahkeme ya da çocuk hâkimi, çocuğun bulunup kuruma teslim edilmesinin kolluğun çocuk birimince sağlanmasına karar verebilir.",
+      "articleRefs": [
+        "22"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Koruyucu ve destekleyici tedbir kararları defterini kim tutar?",
+      "back": "Tedbir kararını veren mahkeme veya çocuk hâkimi tutar.",
+      "explanation": "Defter, koruyucu ve destekleyici tedbir kararlarının aksamayacak şekilde yerine getirilmesini sağlamak amacıyla tutulur.",
+      "articleRefs": [
+        "23"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Koruyucu ve destekleyici tedbir kararları defteri hangi sütunları içerir?",
+      "back": "Sıra numarası, çocuğun Türkiye Cumhuriyeti kimlik numarası, kimliği, kararın tarih ve numarası, tedbirin türü, süresi, kararın gönderildiği tarih, kararı uygulayacak kurum, uygulamaya başlanıldığı ve bitirildiği tarih, yapılan işlem ile düşünceler.",
+      "explanation": "Bu sütunlar sayesinde kararın gönderilişinden uygulamanın bitişine kadar her aşama defterden izlenebilir.",
+      "articleRefs": [
+        "23"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Bir hükümle aynı çocuk hakkında birden fazla koruyucu ve destekleyici tedbir kararı verilirse, bu kararlar defterde aynı numaraya mı kaydedilir?",
+      "back": "Hayır. Her tedbire ait karar deftere ayrı ayrı numaralara kaydedilir.",
+      "explanation": "Defteri tedbir kararını veren mahkeme veya çocuk hâkimi tutar. Her kayıtta tedbirin türü, süresi ve kararı uygulayacak kurum gibi sütunlar ayrıca doldurulur.",
+      "articleRefs": [
+        "23"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Koruyucu ve destekleyici tedbir kararları kartonuna kararlar hangi sırayla konulur?",
+      "back": "Tarih ve karar sırasıyla, düzenli şekilde konulur.",
+      "explanation": "Bu karton, çocuk hâkimi veya mahkemelerce verilen koruyucu ve destekleyici tedbir kararlarının konulduğu kartondur.",
+      "articleRefs": [
+        "24"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Korunma ihtiyacı olan veya suça sürüklenen çocuklar (Kanunun güncel metninde: adli süreçteki çocuk) hakkındaki tedbir kararlarının uygulanmasında hizmet içi eğitim programları hangi amaçla düzenlenir?",
+      "back": "Olumlu sonuçların alınması ve çalışanların kapasitelerinin geliştirilmesi amacıyla düzenlenir.",
+      "explanation": "Bu programlar gerektiğinde tedbir kararlarını yerine getirmekle görevli kurumlarla işbirliği hâlinde yapılır.",
+      "articleRefs": [
+        "25"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Çocuk birimlerinde görevli kolluk personeline verilen eğitimin konuları arasında neler vardır?",
+      "back": "Çocuk hukuku, çocuk suçluluğunun önlenmesi, çocuk gelişimi ve psikolojisi, sosyal hizmet gibi konular.",
+      "explanation": "Eğitimlerde ihtiyaç duyulan başka konulara da yer verilir: mevzuat hükümleri, kurumlar arası işbirliği, meslekî uygulamalar, çocuğun psiko-sosyal durumu ve gelişimi, mülakat teknikleri, çocuğun ihmal ve istismarı.",
+      "articleRefs": [
+        "25"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Koruyucu ve destekleyici tedbir süreçlerinde çocuğa ait bilgilerin gizliliği kuralı kim için uygulanmaz?",
+      "back": "Çocuğun avukatı için; gizlilik çocuğun avukatı hariç olmak üzere uygulanır.",
+      "explanation": "Çocuğun kimliği, adresi, fotoğrafları, yaşadığı travmalar gibi bilgiler ve bu bilgilerin yer aldığı rapor, belge ve kayıtlar gizli tutulur.",
+      "articleRefs": [
+        "26"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Koruyucu ve destekleyici tedbir süreçlerindeki gizlilik yalnız çocuğun kendisine ait bilgileri mi kapsar?",
+      "back": "Hayır. Çocuğa ve yakınlarına ait her türlü bilgi ile bu bilgilerin yer aldığı rapor, belge ve kayıtlar gizli tutulur. Gizlilik çocuğun avukatına karşı uygulanmaz.",
+      "explanation": "Gizli tutulan bilgiler arasında çocuğun kimliği, adresi, fotoğrafları ve yaşadığı travmalar vardır.",
+      "articleRefs": [
+        "26"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Çocuğa ilişkin bilgilerin gizliliği, koruyucu ve destekleyici tedbirlerin hangi aşamalarında uygulanır?",
+      "back": "Tedbir kararlarının alınması ile uygulanmasına ilişkin tüm süreçlerde uygulanır.",
+      "explanation": "Bu süreçlerdeki yazışmalar da gizlilik ilkesine uygun şekilde yürütülür.",
+      "articleRefs": [
+        "26"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Koruyucu ve destekleyici tedbirlerin uygulanmasından doğan giderleri kural olarak kim karşılar?",
+      "back": "Tedbiri yerine getirmekle yükümlü kurumlar karşılar.",
+      "explanation": "Bu kural, Kanunun 45 inci maddesinin ikinci fıkrasındaki hâller saklı kalmak kaydıyla uygulanır.",
+      "articleRefs": [
+        "27"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Koruyucu ve Destekleyici Tedbir Kararlarının Uygulanması Hakkında Yönetmelik ne zaman yürürlüğe girer?",
+      "back": "Yayımı tarihinde yürürlüğe girer.",
+      "articleRefs": [
+        "30"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,295 @@
+{
+  "deck": {
+    "topicId": "f8aedb6a-9fd5-436b-a51f-3a6f23805ee2",
+    "legislationSlug": "6222-sayili-sporda-siddetin-onlenmesine-dair-kanun",
+    "sourceLabel": "AI bilgi kartı — 6222 Sayılı Sporda Şiddetin Önlenmesine Dair Kanun md 7–14",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: resmî madde metni + çıkmış sorular)"
+  },
+  "cards": [
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Spor müsabakalarında güvenlik önlemlerinin yürütülmesi ve denetlenmesi için müsabakanın güvenliğiyle ilgili tüm kişi ve kuruluşlarla koordinasyonu sağlamakla kim yetkili ve görevlidir?",
+      "back": "Müsabaka güvenlik amiri veya yardımcısı.",
+      "explanation": "Müsabaka ve seyir alanlarında genel kolluk görevlileri ile özel güvenlik görevlileri, müsabaka güvenlik amiri ve yardımcısının emir ve denetiminde birlikte görev yapar. Spor müsabakalarından önce yapılan eş güdüm toplantısı da müsabaka güvenlik amirinin başkanlığında yapılır.",
+      "articleRefs": [
+        "7"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Futbolda en üst lig ve bir altındaki lig için her kulüple ilgili bir kolluk görevlisini gözlemci olarak görevlendirmekle kim yükümlüdür?",
+      "back": "Her spor güvenlik birimi amiri.",
+      "explanation": "Belirlenen kolluk görevlisi, deplasman maçları dahil ilgili kulübün bütün maçlarında görevlendirilir.",
+      "articleRefs": [
+        "7"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Tribünlerdeki genel kolluk görevlilerinin sayısının artırılmasına il veya ilçe spor güvenlik kurulu mu karar verir?",
+      "back": "Hayır. Bu artırıma müsabaka güvenlik amiri her zaman karar verebilir.",
+      "explanation": "İl veya ilçe spor güvenlik kurullarının bu maddedeki yetkisi başkadır. Bu kurullar, spor kulüplerinin müsabaka ve seyir alanında bulundurmakla yükümlü olduğu özel güvenlik görevlilerinin sayısını ve görev alacakları yerleri belirler.",
+      "articleRefs": [
+        "7"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Taraftar dernekleri, taraftarların sportif faaliyetleri spor ahlâkı ve ilkelerine uygun biçimde izlemelerini sağlamak için ne düzenler?",
+      "back": "Eğitici faaliyetler.",
+      "explanation": "Taraftar dernekleri ayrıca bu Kanunun amacına aykırı faaliyette bulunamaz.",
+      "articleRefs": [
+        "8"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Spor kulübü taraftardan sorumlu kulüp temsilcisini kimler arasından belirler?",
+      "back": "Yönetim kurulu üyeleri arasından; bir veya birkaç kişi belirlenebilir.",
+      "explanation": "Kulüp, bu kişilerin kimlik ve adres bilgilerini spor kulübünün bulunduğu yerdeki genel kolluk birimine bildirmekle yükümlüdür.",
+      "articleRefs": [
+        "9"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Spor kulübü taraftardan sorumlu kulüp temsilcisini belirleyip bildirmezse bu temsilcinin yükümlülüklerini kim yerine getirir?",
+      "back": "Kulüp başkan ve yönetim kurulu üyelerinin tamamı.",
+      "explanation": "Taraftardan sorumlu kulüp temsilcileri, müsabaka güvenliğinin sağlanması konusunda genel kolluk görevlileri ile özel güvenlik görevlilerine yardımcı olmakla yükümlüdür.",
+      "articleRefs": [
+        "9"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Müsabaka alanının çevresinde insan hayatı açısından tehlike oluşturabilecek yerlerden müsabakaların seyredilmemesi için gerekli önlemlerin alınmasını kim sağlar?",
+      "back": "İl veya ilçe spor güvenlik kurulları.",
+      "articleRefs": [
+        "10"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Belirli bir spor müsabakasının sonucunu etkilemek amacıyla başkasına kazanç veya sair menfaat temin eden kişiye hangi ceza verilir?",
+      "back": "Bir yıldan üç yıla kadar hapis ve yirmibin güne kadar adli para cezası.",
+      "explanation": "Kendisine menfaat temin edilen kişi de müşterek fail olarak cezalandırılır. Şike anlaşmasının varlığını bilerek müsabakanın anlaşma doğrultusunda sonuçlanmasına katkıda bulunan kişiler de aynı hükme göre cezalandırılır.",
+      "articleRefs": [
+        "11"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Şikede kazanç veya menfaat vaadi yapılıp anlaşmaya varılamazsa suç tamamlanmış gibi cezaya hükmolunur mu?",
+      "back": "Hayır. Anlaşmaya varılamadığında suç teşebbüs aşamasında kalmış olur ve buna göre cezaya hükmolunur.",
+      "explanation": "Kazanç veya sair menfaat temini hususunda anlaşmaya varılmış olması hâlinde dahi suç tamamlanmış gibi cezaya hükmolunur. Teşebbüs hâli, vaat veya teklifin anlaşmayla sonuçlanmadığı durumdur.",
+      "articleRefs": [
+        "11"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Ateşli silahların, kesici aletlerin ve uyuşturucu maddelerin sokulması yasak olan yerler hangileridir?",
+      "back": "Müsabaka, seyir, özel seyir ve antrenman alanları ile takım veya taraftarların toplu olarak seyahat ettikleri araçlar.",
+      "explanation": "Yasak; ateşli silahları ve esasen bulundurulması yasak olan diğer silahları, kesici, ezici, bereleyici veya delici aletler ile patlayıcı, parlayıcı, yanıcı veya yakıcı maddeleri ve uyuşturucu veya uyarıcı maddeleri kapsar.",
+      "articleRefs": [
+        "12"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 1,
+      "front": "Ruhsatlı ateşli silah antrenman alanına sokulabilir mi?",
+      "back": "Hayır. Ateşli silahların müsabaka, seyir, özel seyir ve antrenman alanlarına sokulması ruhsatlı dahi olsa yasaktır.",
+      "explanation": "Aynı yasak, takım veya taraftarların toplu olarak seyahat ettikleri araçlar için de geçerlidir.",
+      "articleRefs": [
+        "12"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Spor alanına girişte izleyicilerin üstünü ve eşyasını kontrol edip aramak için kimin yazılı emri gerekir?",
+      "back": "Mülki amirin yazılı emri. Aramayı genel kolluk görevlileri ve onların gözetiminde özel güvenlik görevlileri yapar.",
+      "explanation": "Kontrol teknik cihazlarla, gerektiğinde el ile yapılır. Müsabaka öncesinde, esnasında ve sonrasında taraftarların üzeri ve eşyası Polis Vazife ve Salahiyet Kanununun önleme aramasına ilişkin hükümlerine göre de aranabilir. Ceza Muhakemesi Kanununun adli aramaya ilişkin hükümleri saklıdır.",
+      "articleRefs": [
+        "12"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Şike suçu bahis oyunlarının sonuçlarını etkilemek amacıyla işlenirse ceza ne oranda değişir?",
+      "back": "Yarı oranında artırılır; bahis sonuçlarını etkileme amacı cezayı ağırlaştıran bir hâldir.",
+      "explanation": "Aynı artış başka hâllerde de uygulanır: suçun kamu görevinin sağladığı güven veya nüfuzun kötüye kullanılması suretiyle işlenmesi, suç işlemek amacıyla kurulmuş bir örgütün faaliyeti çerçevesinde işlenmesi ve suçun belirli kişilerce işlenmesi. Bu kişiler federasyon, spor kulübü veya spor alanında faaliyet gösteren tüzel kişilerin genel kurul ve yönetim kurulu başkan veya üyeleri, teknik veya idari yöneticiler ile kulüplerin ve sporcuların menajerleri veya temsilciliğini yapan kişilerdir.",
+      "articleRefs": [
+        "11"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Şike suçu bir takımın başarılı olması için teşvik primi verilmesi suretiyle işlenirse ceza yarı oranında artırılır mı?",
+      "back": "Hayır. Teşvik primi verilmesi veya vaat edilmesi hâlinde ceza yarı oranında indirilir.",
+      "explanation": "Yarı oranında artırım ise kamu görevinin sağladığı güven veya nüfuzun kötüye kullanılması, örgüt faaliyeti ve bahis sonuçlarını etkileme amacı gibi ağırlaştırıcı hâllere bağlıdır.",
+      "articleRefs": [
+        "11"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Başarı için prim verilmesi veya vaadi hangi hâllerde şike ve teşvik primi hükümlerine girmez?",
+      "back": "İki hâlde girmez: milli takımlara veya milli sporculara başarılı olmaları için verilen primde ve spor kulüplerinin kendi takım oyuncularına veya teknik heyetine müsabakada başarılı olabilmeleri için verdiği primde.",
+      "explanation": "Bu iki hâlde, prim verilmesi de prim vaadinde bulunulması da maddenin hükümleri dışında kalır.",
+      "articleRefs": [
+        "11"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Şike suçu bir spor kulübünün yararına işlenirse kulübe verilecek idari para cezası en az ne kadardır?",
+      "back": "Yüzbin Türk Lirası. Ceza, şike veya teşvik primi miktarı kadar verilir ama bu tutardan az olamaz.",
+      "explanation": "İdari para cezası, suç spor kulüplerinin veya sair bir tüzel kişinin yararına işlendiğinde bu kişilere ayrıca verilir.",
+      "articleRefs": [
+        "11"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Bulundurulması esasen suç oluşturan bir silahı müsabaka alanına sokan kişiye hangi hükümlere göre ceza verilir?",
+      "back": "6136 sayılı Ateşli Silahlar ve Bıçaklar ile Diğer Aletler Hakkında Kanunun ek 1 inci maddesi hükümlerine göre.",
+      "explanation": "Aynı kural, bu silahların seyir, özel seyir ve antrenman alanları ile takım veya taraftarların toplu olarak seyahat ettikleri araçlara sokulması hâlinde de uygulanır.",
+      "articleRefs": [
+        "13"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Bulundurulması suç olmayan kesici veya delici bir aleti müsabaka alanına sokan kişiye hangi ceza verilir?",
+      "back": "Altı aydan iki yıla kadar hapis cezası.",
+      "explanation": "Bu ceza, md 12'nin birinci fıkrasının (b) bendindeki alet ve maddeleri kapsar: kesici, ezici, bereleyici veya delici aletler ile patlayıcı, parlayıcı, yanıcı veya yakıcı maddeler.",
+      "articleRefs": [
+        "13",
+        "12"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Kesici aletleri seyircilere temin etmek amacıyla müsabaka alanına sokan kişiye altı aydan iki yıla kadar hapis cezası mı verilir?",
+      "back": "Hayır. Seyircilere temin amacıyla sokan ya da bu yerlerde seyircilere temin eden kişi iki yıldan beş yıla kadar hapisle cezalandırılır.",
+      "explanation": "Altı aydan iki yıla kadar hapis, bu alet veya maddelerin seyircilere temin amacı olmadan sokulmasının cezasıdır.",
+      "articleRefs": [
+        "13",
+        "12"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Şike suçunun ortaya çıkmasını müsabaka yapılmadan önce sağlayan kişiye ne olur?",
+      "back": "Ceza verilmez.",
+      "articleRefs": [
+        "11"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Şike ve teşvik primi suçlarında mahkeme hangi kararları veremez?",
+      "back": "Hükmün açıklanmasının geri bırakılması kararı veremez. Hapis cezasını seçenek yaptırımlara çeviremez ve erteleyemez.",
+      "explanation": "Mahkûmiyet hâlinde kişi hakkında ayrıca bir yasak kararı verilir. Türk Ceza Kanununun 53 üncü maddesi hükümlerine göre kişi; spor kulüplerinin, federasyonların ve bünyesinde sportif faaliyetler icra edilen tüzel kişilerin yönetim ve denetim organlarında görev yapmaktan yasaklanır.",
+      "articleRefs": [
+        "11"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Şike suçu bir suç işleme kararının icrası kapsamında değişik zamanlarda birden fazla işlenirse ceza nasıl belirlenir?",
+      "back": "En ağır cezayı gerektiren fiilden dolayı verilecek ceza dörtte birinden dörtte üçüne kadar artırılır ve tek cezaya hükmolunur.",
+      "articleRefs": [
+        "11"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Kesici veya delici bir aleti ya da yanıcı bir maddeyi müsabaka alanında kullanarak müsabaka düzeninin bozulmasına sebep olan kişiye hangi ceza verilir?",
+      "back": "Bir yıldan beş yıla kadar hapis cezası. Bu ceza, fiil daha ağır cezayı gerektiren başka bir suç oluşturmuyorsa uygulanır.",
+      "explanation": "Aynı ceza, bu alet veya maddelerin seyir ya da antrenman alanlarında kullanılarak antrenman düzeninin bozulmasına sebebiyet verilmesi hâlinde de uygulanır.",
+      "articleRefs": [
+        "13",
+        "12"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Müsabaka alanına sokulması yasak olmayan bir maddeyi kullanarak müsabaka düzeninin bozulmasına sebep olan kişiye hangi ceza verilir?",
+      "back": "Yüz gün adli para cezası. Bu ceza, fiil daha ağır bir cezayı gerektiren başka bir suç oluşturmuyorsa uygulanır.",
+      "articleRefs": [
+        "13"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Müsabaka öncesinde müsabaka alanına uyuşturucu madde sokan kişiye, fiil daha ağır bir suç oluşturmuyorsa hangi ceza verilir?",
+      "back": "Otuz gün adli para cezası.",
+      "explanation": "Aynı ceza, md 12'nin birinci fıkrasının ikinci cümlesine aykırı olarak müsabaka, seyir ve antrenman alanlarına alkollü içecek sokan kişiye de verilir. Alkollü içecek sokulması, kullanılması ve satılmasına ilişkin usul ve esasları ilgili federasyonlar belirler.",
+      "articleRefs": [
+        "13",
+        "12"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 1,
+      "front": "Spor alanında tehdit veya hakaret içeren tezahürat suçunda failin cezalandırılması şikâyete bağlı mıdır?",
+      "back": "Hayır, şikâyet şartı aranmaz. Fiil daha ağır bir suç oluşturmuyorsa failler hakkında elli günden az olmamak üzere adli para cezasına hükmolunur.",
+      "explanation": "Taraftarların grup hâlinde veya münferiden belirli bir kişiyi hedef ya da muhatap alıp almadığına bakılmaz. Söz ve davranışların aleni olması ve duyan ya da gören kişilerce tehdit veya hakaret olarak algılanacak tarzda olması aranır.",
+      "articleRefs": [
+        "14"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Spor alanında toplum kesimlerine din, dil, ırk, etnik köken, cinsiyet veya mezhep farkı gözeterek hakaret oluşturan söz ve davranışlarda bulunan kişiye hangi ceza verilir?",
+      "back": "Bir yıldan üç yıla hapis cezası. Bu ceza, fiil daha ağır cezayı gerektiren başka bir suç oluşturmuyorsa uygulanır.",
+      "articleRefs": [
+        "14"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Spor alanında tehdit veya hakaret içeren tezahürat ya da toplum kesimlerine hakaret suçu yazılı pankartla veya duvara yazı yazılarak işlenirse ceza ne oranda değişir?",
+      "back": "Yarı oranında artırılır. Pankart taşınması veya asılması ya da duvarlara yazı yazılması cezayı ağırlaştırır.",
+      "explanation": "Bu fiillerin her türlü yazılı, görsel, işitsel veya elektronik kitle iletişim aracıyla işlenmesi hâlinde de maddenin hükümleri uygulanır.",
+      "articleRefs": [
+        "14"
+      ]
+    }
+  ]
+}

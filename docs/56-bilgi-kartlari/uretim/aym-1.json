@@ -1,0 +1,232 @@
+{
+  "deck": {
+    "topicId": "746633d6-5e90-404b-b0ea-ebcd670b4dc8",
+    "legislationSlug": "6216-anayasa-mahkemesinin-kurulusu-ve-yargilama-usulleri-hakkinda-kanun",
+    "sourceLabel": "AI bilgi kartı — 6216 Anayasa Mahkemesinin Kuruluşu ve Yargılama Usulleri Hakkında Kanun md 1–16",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: resmî madde metni + çıkmış sorular)"
+  },
+  "cards": [
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Anayasa Mahkemesinde bireysel başvuruların kabul edilebilirlik incelemesini yapmak üzere oluşturulan kurullara ne ad verilir?",
+      "back": "Komisyon. Bireysel başvuruların kabul edilebilirlik incelemesi komisyonlarda yapılır.",
+      "explanation": "Bireysel başvurular hakkında karar verme yetkisi bölümlerdedir. Bölüm, bir başkanvekilinin başkanlığında 6 üyeden oluşur ve ilgili başkanvekili başkanlığında 4 üyenin katılımıyla toplanır.",
+      "articleRefs": [
+        "2"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Anayasa Mahkemesine aynı tarihte seçilen iki üyeden hangisi kıdemli sayılır?",
+      "back": "Yaşça büyük olan. Kıdem, üyeliğe seçilme tarihinden itibaren geçen süredir; aynı tarihte seçilenlerde yaşça büyük olmak esas alınır.",
+      "articleRefs": [
+        "2"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 1,
+      "front": "Anayasa Mahkemesi Kanununda geçen “üye” kavramı Anayasa Mahkemesi Başkanını da kapsar mı?",
+      "back": "Evet. “Üye”, Başkan ve başkanvekilleri de dâhil tüm üyeleri ifade eder.",
+      "articleRefs": [
+        "2"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Türkiye Büyük Millet Meclisindeki bütçe görüşmelerinde Anayasa Mahkemesi adına kim hazır bulunur?",
+      "back": "Mahkeme Genel Sekreteri.",
+      "explanation": "Anayasa Mahkemesi, merkezi yönetim bütçesi içinde kendi bütçesi ile yönetilir.",
+      "articleRefs": [
+        "4"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Anayasa Mahkemesi İçtüzüğünü hangi kurul kabul eder?",
+      "back": "Genel Kurul. İçtüzük Resmî Gazetede yayımlanır.",
+      "explanation": "Mahkemenin iç düzeni, çalışma ve yargılama usul ve esasları ile üyelerin giyecekleri kisvelerin şekli gibi konular İçtüzükle düzenlenir.",
+      "articleRefs": [
+        "5"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Anayasa Mahkemesi raportörü, üyeliğe seçilebilmek için Mahkemede en az kaç yıldır raportör olarak görev yapıyor olmalıdır?",
+      "back": "Asgarî 5 yıldır.",
+      "explanation": "Bu nitelik, Yargıtay, Danıştay veya Sayıştayda başkan ya da üye olmak gibi üyeliğe seçilmeyi tek başına sağlayan niteliklerdendir.",
+      "articleRefs": [
+        "6"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "TBMM’nin Anayasa Mahkemesi üyesi seçiminde ikinci ve üçüncü tur oylamalarda adayların oyları eşit çıkarsa ne yapılır?",
+      "back": "Eşitlik bozulana kadar oylama tekrarlanır.",
+      "articleRefs": [
+        "7"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Yükseköğretim Kurulu, Anayasa Mahkemesi üyeliğine kendi üyeleri arasından aday gösterebilir mi?",
+      "back": "Hayır. Yükseköğretim Kurulu, hukuk, iktisat ve siyasal bilimler dallarında görev yapan ve kendi üyesi olmayan öğretim üyeleri arasından aday gösterir.",
+      "explanation": "Cumhurbaşkanı bu kaynaktan, en az ikisi hukuk bilim dallarından olmak üzere üç üye seçer; her boş yer için üçer aday gösterilir.",
+      "articleRefs": [
+        "7"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Anayasa Mahkemesi üyeliğine seçilen kişi görevi kabul etmezse, yeni üye bildirimden itibaren hangi süre içinde seçilir?",
+      "back": "Bir ay içinde, 7 nci maddedeki usule göre. Aday gösterecek kurullar tatildeyse süre tatilin bitiminden itibaren başlar.",
+      "explanation": "Görevi kabul etmeme durumunu Başkan yazıyla bildirir: Türkiye Büyük Millet Meclisince seçilmişse Türkiye Büyük Millet Meclisi Başkanlığına, Cumhurbaşkanınca seçilmişse Cumhurbaşkanlığına, aday gösterilmesi söz konusuysa ilgili kurum ya da kurula.",
+      "articleRefs": [
+        "8"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Anayasa Mahkemesi Başkan ve üyeleri, kendileri istemedikçe hangi yaştan önce emekliye sevk edilemez?",
+      "back": "65 yaşından önce; görev süreleri dolmadan da emekliye sevk edilemezler.",
+      "articleRefs": [
+        "10"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Bir üyenin görev süresi dolacaksa, Başkan bunu seçmeye ve aday göstermeye yetkili olanlara ne zaman bildirir?",
+      "back": "Görev süresinin dolacağı tarihten 2 ay önce; bu tarihten itibaren 2 ay içinde boşalan üyelik kaynağından seçim yapılır.",
+      "explanation": "Süre dolması dışındaki boşalmalarda bildirim derhâl yapılır; seçim 7 nci maddedeki usule göre yapılır.",
+      "articleRefs": [
+        "11"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Yargıtay üyeleri arasından seçilen ve zorunlu emeklilik yaşından önce görev süresi dolan Anayasa Mahkemesi üyesi nereye döner?",
+      "back": "Geldiği üyelik görevine; kalan görev süresini tamamlamak üzere, herhangi bir işleme gerek olmaksızın ve boş kadro şartı aranmaksızın döner.",
+      "explanation": "Boşalan ilk üye kadrosu kendisine tahsis olunur. Yeni görevine atanıncaya kadar özlük hakları Mahkeme tarafından karşılanır; Mahkemede geçirdiği süre yeni görevindeki kanun hükümlerine göre hizmetinde değerlendirilir.",
+      "articleRefs": [
+        "11"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Anayasa Mahkemesi Başkanı kaç yıl için seçilir?",
+      "back": "4 yıl için; üyeler arasından gizli oyla seçilir.",
+      "explanation": "Başkanvekilleri ile Uyuşmazlık Mahkemesi Başkan ve Başkanvekili de bu süre için seçilir. Süresi bitenler yeniden seçilebilir; seçimler bu görevlerin sona ereceği tarihten önceki 2 ay içinde sonuçlandırılır.",
+      "articleRefs": [
+        "12"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "15 üyeli Anayasa Mahkemesinde Başkanın seçilmesi için en az kaç üyenin oyu gerekir?",
+      "back": "8 üyenin oyu; Başkan üye tam sayısının salt çoğunluğuyla seçilir.",
+      "explanation": "Oylama gizlidir. Aynı çoğunluk başkanvekilleri ile Uyuşmazlık Mahkemesi Başkan ve Başkanvekili seçiminde de aranır.",
+      "articleRefs": [
+        "12",
+        "6"
+      ],
+      "derivedNumbers": [
+        {
+          "value": 8,
+          "expr": "floor(15 / 2) + 1",
+          "refs": [
+            "6",
+            "12"
+          ],
+          "note": "üye tam sayısının salt çoğunluğu"
+        }
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Anayasa Mahkemesinde bölümlerden biri fiilî ya da hukuki imkânsızlık nedeniyle toplanamazsa ne yapılır?",
+      "back": "Başkan, diğer bölümden üye görevlendirir.",
+      "explanation": "Başkanın görevleri arasında Genel Kurulun ve gerektiğinde bölümlerin gündemini belirlemek, Mahkeme personelinin atamasını yapmak ve Mahkemeyi temsil etmek de bulunur.",
+      "articleRefs": [
+        "13"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Anayasa Mahkemesi Başkanlığı boşaldığında Başkanın görev ve yetkilerini kim yerine getirir?",
+      "back": "Kıdemli başkanvekili. Başkan mazeretli veya izinliyse görevleri Başkanın belirlediği başkanvekili yerine getirir.",
+      "explanation": "Başkanvekilleri de bulunmazsa Mahkemeye en kıdemli üye başkanlık eder.",
+      "articleRefs": [
+        "14"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Anayasa Mahkemesi üyesi oylamada çekimser oy kullanabilir mi?",
+      "back": "Hayır. Üyeler oylamalarda çekimser oy kullanamaz.",
+      "explanation": "Üyeler ayrıca oturumun ve oylamanın gizliliğini muhafaza eder; Mahkemede görüşülmekte olan konularda görüş ve düşüncelerini açıklayamaz.",
+      "articleRefs": [
+        "15"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Anayasa Mahkemesi üyesi davet edildiği uluslararası bir bilimsel konferansa kimin izniyle katılabilir?",
+      "back": "Başkanın izniyle.",
+      "explanation": "Üyeler görevleri dışında resmî veya özel hiçbir görev alamaz. Sportif, sosyal ve kültürel amaçlı derneklerde yönetim ve denetim kurullarında görev almamak koşuluyla üyelik hâli görev olarak nitelendirilemez.",
+      "articleRefs": [
+        "15"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Anayasa Mahkemesi Başkan ve üyeleri hakkında soruşturma açılması kimin kararına bağlıdır?",
+      "back": "Genel Kurulun kararına. Ancak ağır ceza mahkemesinin görevine giren suçüstü hâllerinde soruşturma genel hükümlere göre yürütülür.",
+      "explanation": "Bu kural görevden doğan veya görev sırasında işlendiği iddia edilen suçlar, kişisel suçlar ve disiplin eylemleri için uygulanır. Başkan, işi Genel Kurula götürmeden önce üyelerden birine ön inceleme yaptırabilir.",
+      "articleRefs": [
+        "16"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Genel Kurul bir üye hakkında soruşturma açılmasına karar verirse Soruşturma Kurulu kaç kişiden oluşur?",
+      "back": "3 kişiden; Genel Kurul bunları üyeler arasından seçer ve kıdemli üye kurula başkanlık eder.",
+      "explanation": "Soruşturma Kurulu, Ceza Muhakemesi Kanununun Cumhuriyet savcısına tanıdığı bütün yetkilere sahiptir; kurulun istediği işlemler mahallinde yetkili adli makamlarca derhâl yerine getirilir.",
+      "articleRefs": [
+        "16"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Hakkında işlem yapılan Anayasa Mahkemesi üyesi, konunun Genel Kuruldaki görüşmesine katılabilir mi?",
+      "back": "Hayır. Hakkında işlem yapılan üye görüşmeye katılamaz.",
+      "explanation": "Genel Kurul soruşturma açılmasına yer olmadığına karar verirse karar, ilgili üye ile ihbar ve şikâyette bulunanlara tebliğ edilir.",
+      "articleRefs": [
+        "16"
+      ],
+      "counterNumbers": []
+    }
+  ]
+}

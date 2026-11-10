@@ -1,0 +1,296 @@
+{
+  "deck": {
+    "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+    "legislationSlug": "turk-ceza-kanunu",
+    "sourceLabel": "AI bilgi kartı — Türk Ceza Kanunu md 308, 312, 315, 317, 319–340, 342, 344",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: resmî madde metni + çıkmış sorular)"
+  },
+  "cards": [
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Türkiye'nin savaş halinde olduğu devlete, savaşta Türkiye aleyhine kullanılabilecek eşyayı veren vatandaşa hangi ceza verilir?",
+      "back": "Beş yıldan onbeş yıla kadar hapis cezası. Eşyanın karşılıklı ya da karşılıksız, doğrudan ya da dolaylı verilmesi sonucu değiştirmez.",
+      "explanation": "Aynı hüküm Türkiye'de oturan yabancıya da uygulanır. Savaş zamanında düşman devlet yararına borçlanmalara ya da ödemelere katılan veya bunlara ilişkin işlemleri kolaylaştıran kişiye de aynı ceza verilir.",
+      "articleRefs": [
+        "308"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Düşman devlete maddi ve mali yardım hükümleri, düşmanla savaş için ittifak hâlindeki bir devlet yararına işlenen fiillere de uygulanır mı?",
+      "back": "Evet. Fiiller, düşman devletle aralarında savaş için ittifak veya iştirak olan devlet yararına işlenirse de madde hükümleri uygulanır.",
+      "explanation": "Bu genişletme maddedeki fiillerin hepsini kapsar: eşya vermek, borçlanma ve ödemelere katılmak, düşman devlet vatandaşıyla ticaret yapmak.",
+      "articleRefs": [
+        "308"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Cebir ve şiddet kullanarak Türkiye Cumhuriyeti Hükûmetini ortadan kaldırmaya teşebbüs eden kişiye hangi ceza verilir?",
+      "back": "Ağırlaştırılmış müebbet hapis cezası.",
+      "explanation": "Hükûmetin görevlerini yapmasını kısmen veya tamamen engellemeye teşebbüs etmek de aynı cezayı gerektirir.",
+      "articleRefs": [
+        "312"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Hükûmete karşı suçun tamamlanması için Hükûmetin fiilen ortadan kaldırılması gerekir mi?",
+      "back": "Hayır. Cebir ve şiddetle Hükûmeti ortadan kaldırmaya ya da görevlerini engellemeye teşebbüs etmek yeterlidir. Ceza ağırlaştırılmış müebbet hapistir.",
+      "explanation": "Madde suçu \"teşebbüs eden kimse\" üzerinden tanımlar. Ceza da teşebbüs eden kişiye verilir.",
+      "articleRefs": [
+        "312"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Hükûmete karşı suç işlenirken başka suçlar da işlenirse fail hangi cezaları alır?",
+      "back": "Hükûmete karşı suçun cezasını alır. Ayrıca işlenen diğer suçlardan dolayı da ilgili hükümlere göre ceza verilir.",
+      "explanation": "Cebir ve şiddet sırasında başka suçlar oluşursa her biri kendi hükmüne göre cezalandırılır.",
+      "articleRefs": [
+        "312"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Örgütlerin amaçlarını bilerek, faaliyetlerinde kullanılmak üzere bu örgütlere silah temin eden, nakleden veya depolayan kişiye hangi ceza verilir?",
+      "back": "On yıldan onbeş yıla kadar hapis cezası.",
+      "explanation": "Silah temini üretmek, satın almak veya ülkeye sokmak yoluyla olabilir. Failde iki şey aranır: örgütlerin amaçlarını bilmek ve silahın örgüt faaliyetlerinde kullanılması maksadı.",
+      "articleRefs": [
+        "315"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Kanunen yetkili bir komutan, yetkili makamların komutanlığı terk etmesi için verdiği emre uymazsa hangi ceza verilir?",
+      "back": "Müebbet hapis cezası. Bu, komutayı yetkisiz olarak alanlara verilen cezanın aynısıdır.",
+      "explanation": "Askerî komutanlıkların gasbı şu yerlerin komutasını kapsar: asker kıtası, donanma, savaş gemisi, savaş hava filosu, kale, müstahkem mevki, askerî üs veya tesis, liman ya da şehir. Suç, bu komutayı kanunen yetkili olmadan veya Devlet tarafından memur edilmeden almakla oluşur.",
+      "articleRefs": [
+        "317"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Askerleri itaatsizliğe teşvik suçu aleni olarak işlenirse ceza nedir?",
+      "back": "İki yıldan beş yıla kadar hapis cezası. Aleni olmayan temel hâlde ceza bir yıldan üç yıla kadardır.",
+      "explanation": "Fiil savaş zamanında işlenirse ceza bir katı oranında artırılır. Kanunlara, yeminlere veya disipline aykırı hareketleri askerler önünde övmek ya da iyi gördüğünü söylemek de bu suçu oluşturur.",
+      "articleRefs": [
+        "319"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Yabancı devlet hizmetine asker yazma suçunda, yazılanlar arasında asker veya askerlik çağında olan varsa ceza ne oranda artırılır?",
+      "back": "Üçte biri oranında artırılır. Temel ceza üç yıldan altı yıla kadar hapistir.",
+      "explanation": "Suç, Hükûmetin izni olmaksızın Ülke içinde vatandaşlardan asker yazmak veya vatandaşları silahlandırmakla işlenir. Bu hizmeti kabul eden kişiye de bir yıldan üç yıla kadar hapis cezası verilir.",
+      "articleRefs": [
+        "320"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Savaş zamanında Devletin yetkili makam ve mercilerinin emir veya kararlarına bilerek aykırı davranan kişiye hangi ceza verilir?",
+      "back": "Bir yıldan altı yıla kadar hapis cezası.",
+      "explanation": "Suç savaş zamanına özgüdür. Emir veya karara bilerek aykırı hareket etmek gerekir.",
+      "articleRefs": [
+        "321"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Savaş zamanında sözleşme yükümlülüğünün yerine getirilmemesi taksirden ileri gelmişse ceza indirimi zorunlu mudur?",
+      "back": "Hayır. Taksir hâlinde cezanın dörtte üçüne kadarı indirilebilir; madde indirimi zorunlu kılmaz.",
+      "explanation": "Kasten yerine getirmemenin cezası üç yıldan on yıla kadar hapis ve onbin güne kadar adlî para cezasıdır. Yükümlülüğün yerine getirilmemesine aracılar veya temsilcileri neden olmuşsa onlara da aynı cezalar uygulanır.",
+      "articleRefs": [
+        "322"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Savaş zamanında sözleşme yükümlülüklerinin yerine getirilmesinde hile yapan kişiye hangi ceza verilir?",
+      "back": "On yıldan onbeş yıla kadar hapis ve onbin güne kadar adlî para cezası.",
+      "explanation": "Hile hükmü yalnız asıl yükümlüleri kapsamaz. Asıl yükümlülerle aralarında sözleşme bulunan aracılar ve bunların temsilcileri de aynı hükme tabidir.",
+      "articleRefs": [
+        "322"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Savaşta yalan haber yayma fiili düşmanla anlaşma neticesi işlenirse hangi ceza verilir?",
+      "back": "Müebbet hapis cezası.",
+      "explanation": "Temel hâlde ceza beş yıldan on yıla kadar hapistir. Asılsız, abartılmış veya özel maksada dayalı haber yaymak ya da nakletmek suçu oluşturur.",
+      "articleRefs": [
+        "323"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Savaşta yalan haber yayma fiili propagandayla veya askerlere yönelik olarak işlenirse ceza nedir?",
+      "back": "On yıldan yirmi yıla kadar hapis cezası.",
+      "explanation": "Fiil bir yabancı ile anlaşma neticesi işlendiğinde de aynı ceza uygulanır.",
+      "articleRefs": [
+        "323"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Seferberlikle ilgili görevin ihmali suçu hangi dönemde işlenen ihmal için öngörülmüştür?",
+      "back": "Sulh zamanında. Görevini ihmal eden veya geciktiren kamu görevlisine altı aydan üç yıla kadar hapis cezası verilir.",
+      "explanation": "Suçun faili kamu görevlisidir. Görevi geciktirmek de ihmal gibi cezalandırılır.",
+      "articleRefs": [
+        "324"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Türkiye ile savaş halindeki bir devletten nişan veya fahri rütbe kabul etme suçunun faili kimdir?",
+      "back": "Vatandaş. Ceza bir yıldan üç yıla kadar hapistir.",
+      "explanation": "Suçu oluşturan kabuller arasında akademik derece, şeref, unvan, nişan ve diğer fahri rütbeler vardır. Bunlara ait maaş veya başka yararları kabul etmek de suçtur.",
+      "articleRefs": [
+        "325"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Devletin güvenliğine ilişkin bir belgeyi geçici olarak tahsis edildiği yer dışında kullanmak suç oluşturur mu?",
+      "back": "Evet. Geçici de olsa tahsis olunduğu yerden başka yerde kullanmak suçtur ve sekiz yıldan oniki yıla kadar hapis gerektirir.",
+      "explanation": "Yok etmek, tahrip etmek, sahtecilik yapmak, hileyle almak ve çalmak da aynı suçu oluşturur. Fiil savaş sırasında işlenmişse ya da Devletin savaş hazırlıklarını, savaş etkinliğini veya askerî hareketlerini tehlikeye koymuşsa müebbet hapis verilir.",
+      "articleRefs": [
+        "326"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Devletin güvenliği veya iç ya da dış siyasal yararları bakımından gizli kalması gereken bilgileri, casusluk maksadı aranmaksızın temin eden kişiye hangi ceza verilir?",
+      "back": "Üç yıldan sekiz yıla kadar hapis cezası.",
+      "explanation": "Fiil savaş sırasında işlenmişse ya da Devletin savaş hazırlıklarını, savaş etkinliğini veya askerî hareketlerini tehlikeye koymuşsa müebbet hapis cezası verilir.",
+      "articleRefs": [
+        "327"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Siyasal veya askerî casusluk, Türkiye ile savaş halindeki bir devletin yararına işlenirse faile hangi ceza verilir?",
+      "back": "Ağırlaştırılmış müebbet hapis cezası; casusluk savaş halindeki bir devletin yararına işlenmiştir.",
+      "explanation": "Temel hâlde, gizli bilgiyi casusluk maksadıyla temin edene onbeş yıldan yirmi yıla kadar hapis verilir. Fiil savaş sırasında işlenmişse ya da savaş hazırlıklarını, savaş etkinliğini veya askerî hareketleri tehlikeye sokmuşsa da ağırlaştırılmış müebbet hapis uygulanır.",
+      "articleRefs": [
+        "328"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Devletin güvenliğine ilişkin gizli bilgilerin taksirle açıklanmasında ceza her durumda altı aydan iki yıla kadar hapis midir?",
+      "back": "Hayır. Bu ceza yalnız temel hâl içindir. Fiil savaş zamanında işlenmişse ya da savaş hazırlıklarını, etkinliğini veya askerî hareketleri tehlikeye koymuşsa üç yıldan sekiz yıla kadar hapis verilir.",
+      "explanation": "Kasten açıklamanın cezası beş yıldan on yıla kadar hapistir. Savaş hâlleri varsa ceza on yıldan onbeş yıla kadar hapse çıkar.",
+      "articleRefs": [
+        "329"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Devletin güvenliği bakımından gizli kalması gereken bilgileri siyasal veya askerî casusluk maksadıyla açıklayan kişiye hangi ceza verilir?",
+      "back": "Müebbet hapis cezası; fiil savaş zamanında işlenmiş ya da Devletin savaş hazırlıklarını, savaş etkinliğini veya askerî hareketlerini tehlikeyle karşı karşıya bırakmışsa ağırlaştırılmış müebbet hapis cezası.",
+      "explanation": "Suç, gizli kalması gereken bilgilerin siyasal veya askerî casusluk maksadıyla açıklanmasıyla oluşur.",
+      "articleRefs": [
+        "330"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Uluslararası casusluk suçunu bir yabancı hangi durumda işlemiş olur?",
+      "back": "Bilgiyi Türkiye'de temin etmişse. Ceza bir yıldan dört yıla kadar hapistir.",
+      "explanation": "Suç, yabancı bir devletin gizli kalması gereken bilgilerini diğer bir yabancı devlet lehine siyasal veya askerî casusluk maksadıyla temin etmekle oluşur. Faili vatandaş ya da bu bilgiyi Türkiye'de temin etmiş yabancıdır.",
+      "articleRefs": [
+        "331"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Devletin askerî yararı gereği girilmesi yasaklanmış yerlere gizlice veya hile ile girene hangi ceza verilir?",
+      "back": "İki yıldan beş yıla kadar hapis cezası. Fiil savaş zamanında işlenirse ceza üç yıldan sekiz yıla kadar hapistir.",
+      "explanation": "Suç, girişin gizlice ya da hile ile yapılmasıyla oluşur.",
+      "articleRefs": [
+        "332"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Devlet sırlarından yararlanma suçunun işleneceğini haber alıp ihbar etmeyenin cezalandırılması için o suçun tamamlanması gerekir mi?",
+      "back": "Hayır. Suç teşebbüs derecesinde kalmış olsa bile, zamanında ihbar etmeyene altı aydan iki yıla kadar hapis verilir.",
+      "explanation": "İhbar yükümlülüğü maddede tanımlanan suçların tümü için geçerlidir. Bunlardan biri, görevi dolayısıyla öğrenilen gizli fenni keşif, yeni buluş veya sınai yenilikleri kullanmaktır. Diğeri, yabancı memlekette Devlete ait işi sadakatle yerine getirmemektir.",
+      "articleRefs": [
+        "333"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Devlet güvenliğine ilişkin gizli bilgileri elde etmeye yarayan belgelerle yakalanan kişi hangi durumda cezalandırılır?",
+      "back": "Belgeleri elde bulundurmak için kabul edilebilir bir neden gösteremezse. Ceza bir yıldan beş yıla kadar hapistir.",
+      "explanation": "Yetkili makamların açıklanmasını yasakladığı hususları elde etmeye yarayan belgeler de bu kapsamdadır. Fiil savaş zamanında işlenirse ceza üç yıldan sekiz yıla kadar hapis olur.",
+      "articleRefs": [
+        "339"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Yabancı bir devletin başkanına karşı suç işleyen kişiye verilecek ceza ne oranda artırılır?",
+      "back": "Sekizde biri oranında artırılır. Suç müebbet hapis gerektiriyorsa ağırlaştırılmış müebbet hapse hükmolunur.",
+      "explanation": "Artırım, işlenen suçun kendi hükmündeki cezaya uygulanır.",
+      "articleRefs": [
+        "340"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Yabancı devlet başkanına karşı işlenen şikâyete bağlı bir suçta soruşturma, başkanın kişisel şikâyetine mi bağlıdır?",
+      "back": "Hayır. Soruşturma ve kovuşturma yabancı devletin şikâyetine bağlıdır.",
+      "explanation": "Bu kural yalnız soruşturulması ve kovuşturulması şikâyete bağlı suçlarda uygulanır.",
+      "articleRefs": [
+        "340"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Türkiye'de görevli yabancı devlet temsilcisine görevinden dolayı işlenen her suçta soruşturma şikâyete bağlı mıdır?",
+      "back": "Hayır. Madde, soruşturma ve kovuşturmayı yalnız hakaret suçu için mağdurun şikâyetine bağlar; diğer suçlar Kanunun ilgili hükümlerine tabidir.",
+      "explanation": "Bu kişiler, görevlerinden dolayı kendilerine karşı işlenen suçlar bakımından kamu görevlisi kabul edilir ve fail Kanunun ilgili hükümlerine göre cezalandırılır. Kapsama diplomasi memurları, uluslararası kuruluşların temsilcileri ve diplomatik ayrıcalık ve bağışıklık tanınan memurları da girer.",
+      "articleRefs": [
+        "342"
+      ],
+      "counterNumbers": []
+    }
+  ]
+}

@@ -1,0 +1,295 @@
+{
+  "deck": {
+    "topicId": "92736577-adb7-4e81-8935-9eb3391f748e",
+    "legislationSlug": "5253-sayili-dernekler-kanunu",
+    "sourceLabel": "AI bilgi kartı — 5253 Sayılı Dernekler Kanunu md 1–13, 15–26, 26/A",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: resmî madde metni + çıkmış sorular)"
+  },
+  "cards": [
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Dernek kurmak için en az kaç kişinin bir araya gelmesi gerekir?",
+      "back": "En az yedi gerçek veya tüzel kişi gerekir. Bu kişiler bilgi ve çalışmalarını sürekli olarak birleştirir.",
+      "explanation": "Dernek, kazanç paylaşma dışında, kanunlarla yasaklanmamış belirli ve ortak bir amacı gerçekleştirmek için kurulan, tüzel kişiliğe sahip kişi topluluğudur.",
+      "articleRefs": [
+        "2"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Derneklerin kendi aralarında ya da vakıf, sendika gibi sivil toplum kuruluşlarıyla ortak bir amaç için oluşturduğu, tüzel kişiliği bulunmayan geçici birlikteliğe ne denir?",
+      "back": "Plâtform denir. Girişim, hareket ve benzeri adlarla oluşturulabilir.",
+      "explanation": "Derneklerin oluşturduğu federasyonlar ile federasyonların oluşturduğu konfederasyonlar ise tüzel kişiliği bulunan üst kuruluşlardır.",
+      "articleRefs": [
+        "2"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Bir küçük, çocuk derneği kurabilmek için en az kaç yaşını bitirmiş olmalıdır?",
+      "back": "Onbeş yaşını bitirmiş ve ayırt etme gücüne sahip olmalıdır. Ayrıca yasal temsilcisinin yazılı izni gerekir.",
+      "explanation": "Onbeş yaşını bitiren küçük, aynı izinle kurulmuş çocuk derneklerine üye de olabilir. Çocuk derneklerine onsekiz yaşından büyükler kurucu veya üye olamaz.",
+      "articleRefs": [
+        "3"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Oniki yaşını bitiren bir küçük, çocuk derneğinin yönetim kurulunda görev alabilir mi?",
+      "back": "Hayır. Yasal temsilcisinin izniyle çocuk derneğine üye olabilir, ancak yönetim ve denetim kurullarında görev alamaz.",
+      "explanation": "Çocuk derneği kurabilmek için onbeş yaşını bitirmiş ve ayırt etme gücüne sahip olmak gerekir. Bunun için yasal temsilcinin yazılı izni de aranır.",
+      "articleRefs": [
+        "3"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Terörizmin Finansmanının Önlenmesi Hakkında Kanun kapsamındaki bir suçtan mahkûm olan kişi, Türk Ceza Kanununun 53 üncü maddesindeki süreler geçmiş olsa bile derneğin hangi organlarında görev alamaz?",
+      "back": "Genel kurul dışındaki organlarda görev alamaz. Organa seçildikten sonra mahkûm olursa görevi sona erer.",
+      "explanation": "Aynı yasak uyuşturucu veya uyarıcı madde imal ve ticareti ile suçtan kaynaklanan malvarlığı değerlerini aklama suçlarından mahkûm olanlar için de geçerlidir. Süreler geçmiş ya da af çıkmış olsa bile uygulanır. Yasaklanmış hakların geri verilmesi kararı verilirse bu hüküm uygulanmaz.",
+      "articleRefs": [
+        "3"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Yabancı bir dernek Türkiye'de şube açmak için kimin iznini almalıdır?",
+      "back": "İçişleri Bakanlığının iznini almalıdır. Bu izin, Dışişleri Bakanlığının görüşü alınarak verilir.",
+      "explanation": "Aynı usul şu işlemler için de geçerlidir: Türkiye'de faaliyette veya işbirliğinde bulunma, temsilcilik açma, dernek veya üst kuruluş kurma ve kurulmuş dernek veya üst kuruluşlara katılma.",
+      "articleRefs": [
+        "5"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Bir federasyonun üye sayısı hangi sayının altına düşerse kendiliğinden sona erme hükümleri gündeme gelir?",
+      "back": "Üye sayısı beşten aşağı düşerse gündeme gelir. Durum üç ay içinde giderilmezse kendiliğinden sona erme hükümleri uygulanır.",
+      "explanation": "Konfederasyonlarda eşik üçtür: üye sayısı üçten aşağı düşer ve üç ay içinde giderilmezse aynı sonuç doğar. Federasyon ve konfederasyonlar temsilcilik dışında başka bir örgüt kuramaz.",
+      "articleRefs": [
+        "8"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Derneğe bağımsız denetim kuruluşunca denetim yaptırılması, denetim kurulunun denetim yükümlülüğünü ortadan kaldırır mı?",
+      "back": "Hayır. Genel kurul, yönetim kurulu ya da bağımsız denetim kuruluşunca denetim yapılmış olması denetim kurulunun yükümlülüğünü kaldırmaz.",
+      "explanation": "Denetim kurulu, tüzükteki esas ve usullere göre ve bir yılı geçmeyen aralıklarla denetim yapar. Sonuç raporunu yönetim kuruluna, toplandığında da genel kurula sunar.",
+      "articleRefs": [
+        "9"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Bir dernekle ortak proje yürüten kamu kurum ve kuruluşu, proje maliyetinin en fazla ne kadarına katkı sağlayabilir?",
+      "back": "En fazla yüzde ellisi oranında katkı sağlayabilir; katkı aynî veya nakdî olabilir. Engellilerin ve eski hükümlülerin mesleki eğitim ve mesleki rehabilitasyonu gibi projelerde bu oran aranmaz.",
+      "explanation": "Ortak projeler, kamu kurum ve kuruluşlarının görev alanlarına giren konularda yürütülür.",
+      "articleRefs": [
+        "10"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Dernek alındı belgeleri ve harcama belgeleri ne kadar süre saklanır?",
+      "back": "Beş yıl saklanır.",
+      "explanation": "Dernek gelirleri alındı belgesiyle toplanır, giderler harcama belgesiyle yapılır. Gelir bankalar aracılığıyla toplanırsa, bankanın düzenlediği dekont veya hesap özeti gibi belgeler alındı belgesi yerine geçer.",
+      "articleRefs": [
+        "11"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Derneklerin tutacağı defterlerin kimden onaylı olması zorunludur?",
+      "back": "Dernekler biriminden ya da noterden onaylı olması zorunludur.",
+      "explanation": "Defter ve kayıtlara ilişkin usul ve esaslar yönetmelikte düzenlenir. Alındı belgeleri yönetim kurulu kararıyla bastırılır. Gelirleri toplayacak kişiler de yönetim kurulu kararıyla belirlenir ve adlarına yetki belgesi düzenlenir.",
+      "articleRefs": [
+        "11"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Kamu görevlisi olmayan dernek yönetim kurulu üyelerine verilecek ücreti kim tespit eder?",
+      "back": "Genel kurul tespit eder. Her türlü ödenek, yolluk ve tazminatı da genel kurul belirler.",
+      "explanation": "Yönetim ve denetim kurulu üyeleri dışındaki üyelere ücret, huzur hakkı veya başka bir ad altında herhangi bir karşılık ödenemez. Dernek hizmetleri için görevlendirilen üyelerin gündelik ve yolluk miktarlarını da genel kurul tespit eder.",
+      "articleRefs": [
+        "13"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Mahkeme kararıyla feshedilen derneğin para, mal ve hakları kime devredilir?",
+      "back": "Mahkeme kararıyla, derneğin amacına en yakın ve kapatıldığı tarihte en fazla üyeye sahip derneğe devredilir.",
+      "explanation": "Aynı devir şu hâlde de yapılır: tüzük tasfiyeyi genel kurul kararına bırakmışsa ve genel kurul karar almamış ya da toplanamamışsa. Diğer hâllerde tasfiye tüzükte gösterilen esaslara göre yapılır. Tasfiye ve devir bitince dernekler kütüğündeki kayıtlar silinir.",
+      "articleRefs": [
+        "15"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Fesih davası açılmış bir dernek kendi fesih ve mal devri kararını alırsa, devir hemen yapılabilir mi?",
+      "back": "Hayır. Soruşturma ve dava sonuçlanıncaya kadar devir işlemi yapılmaz.",
+      "explanation": "Bu kural, feshedilmesi için hakkında soruşturma veya dava açılmış bir derneğin fesih ve mal devri kararı aldığı hâlde uygulanır.",
+      "articleRefs": [
+        "15"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Mülki idare amirinin yazılı istemi üzerine dernek, suç teşkil etmeyen hata ve noksanlıkları kaç gün içinde gidermek zorundadır?",
+      "back": "Otuz gün içinde gidermek zorundadır.",
+      "explanation": "Aykırılık; bu Kanun, 4721 sayılı Türk Medenî Kanunu ya da bunlara dayanılarak çıkarılan yönetmeliklerin hükümlerine göre tespit edilir.",
+      "articleRefs": [
+        "17"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Dernekler Kanunuyla ilgili olarak hukuk mahkemelerinde görülen davalarda hangi yargılama usulü uygulanır?",
+      "back": "Basit yargılama usulü uygulanır.",
+      "articleRefs": [
+        "18"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Dernekler, yıl sonu itibarıyla düzenledikleri beyannameyi mülki idare amirliğine her yıl en geç ne zamana kadar verir?",
+      "back": "Nisan ayı sonuna kadar verir.",
+      "explanation": "Beyannamede derneğin faaliyetleri ile gelir ve gider işlemlerinin sonuçları yer alır. Beyannamenin düzenlenmesine ilişkin esas ve usuller yönetmelikte belirlenir.",
+      "articleRefs": [
+        "19"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Dernek denetimi sırasında suç teşkil eden bir fiil tespit edilirse mülki idare amiri durumu kime bildirir?",
+      "back": "Derhal Cumhuriyet savcılığına ve derneğe bildirir.",
+      "explanation": "Denetim sırasında görevli memurların istediği her türlü bilgi, belge ve kaydın dernek yetkililerince gösterilmesi ya da verilmesi zorunludur. Yönetim yerleri, müesseseler ve eklentilere girme isteğinin yerine getirilmesi de zorunludur.",
+      "articleRefs": [
+        "19"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Hâkim kararı yokken kolluk, dernek ve eklentilerine hangi hâlde girip arama yapabilir?",
+      "back": "Kamu düzeninin korunması veya suç işlenmesinin önlenmesi nedenlerine bağlı olarak, gecikmesinde sakınca bulunan durumlarda mülki idare amirinin yazılı emriyle girip arama yapabilir.",
+      "explanation": "Hâkim kararı ya da bu yazılı emir yoksa kolluk kuvvetleri dernek ve eklentilerine giremez, arama yapamaz ve buradaki eşyaya el koyamaz. Hâkim kararı da aynı nedenlerden birine bağlı olarak usulüne göre verilmiş olmalıdır.",
+      "articleRefs": [
+        "20"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Mülki idare amirinin yazılı emriyle dernekte eşyaya el konulduğunda hâkim kararını en geç ne zaman açıklamalıdır?",
+      "back": "El koymadan itibaren kırksekiz saat içinde açıklamalıdır. Açıklamazsa el koyma kendiliğinden kalkar.",
+      "explanation": "Hâkim kararı, mülki idare amiri tarafından dernek yöneticilerine yazıyla duyurulur.",
+      "articleRefs": [
+        "20"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Mülki idare amirinin dernekte arama ve el koyma için verdiği karar, kırksekiz saat içinde hâkim onayına sunulur mu?",
+      "back": "Hayır. Karar yirmidört saat içinde görevli hâkimin onayına sunulur. Kırksekiz saat, hâkimin el koymadan itibaren kararını açıklama süresidir.",
+      "explanation": "Hâkim kararını süresi içinde açıklamazsa el koyma kendiliğinden kalkar.",
+      "articleRefs": [
+        "20"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Dernek, genel kurulda yönetim ve denetim kuruluna seçilen asıl ve yedek üyeleri kaç gün içinde bildirir?",
+      "back": "Genel kurulu izleyen otuz gün içinde bildirir. Bildirim, merkezinin bulunduğu dernekler birimine yapılır.",
+      "explanation": "Dernek organlarında ve yerleşim yerinde meydana gelen değişiklikler de aynı usule tâbidir.",
+      "articleRefs": [
+        "23"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Üyeliği sona eren kişiler, genel kurulu izleyen otuz gün içinde mi dernekler birimine bildirilir?",
+      "back": "Hayır. Üyeliğe kabul edilenler ve üyeliği sona erenler, kabul edilme ve sona erme tarihinden itibaren kırk beş gün içinde bildirilir.",
+      "explanation": "Bildirimde kişinin adı, soyadı, doğum tarihi ve kimlik numarası yer alır. Bildirim, merkezinin bulunduğu dernekler birimine yapılır.",
+      "articleRefs": [
+        "23"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Bir derneğin şubesi temsilcilik açabilir mi?",
+      "back": "Hayır. Şubeler temsilcilik açamaz; temsilciliği dernekler, gerekli gördükleri yerlerde açar.",
+      "explanation": "Temsilcilikler şube veya dernek genel kurullarında temsil edilmez. Temsilciliğin adresi, yönetim kurulu kararıyla temsilci olarak görevlendirilen kişi veya kişilerce o yerin mülki idare amirliğine yazılı olarak bildirilir.",
+      "articleRefs": [
+        "24"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Bir derneğin eğitim ve öğretim faaliyetleri için yurt veya pansiyon açması kimin iznine bağlıdır?",
+      "back": "Mülki idare amirinin iznine bağlıdır. Bu tesislerin işletilmesi de aynı izne tâbidir.",
+      "explanation": "Üyeler için lokal açılması ve lokalde alkollü içki kullanılması da mülki idare amirinden izin alınmasına bağlıdır.",
+      "articleRefs": [
+        "26"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Bir dernek lokal açabilmek için en az ne kadar süredir faaliyette olmalıdır?",
+      "back": "En az bir yıldan beri faaliyette bulunmalıdır.",
+      "explanation": "Federasyon ve konfederasyonlarda bu şart aranmaz. Çocuk dernekleri ise lokal açamaz.",
+      "articleRefs": [
+        "26/A"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Öğretim kurumlarına ve ibadethanelere hangi mesafeden yakın yerde dernek lokali açılamaz?",
+      "back": "Yüz metreden yakın mesafe içinde lokal açılamaz.",
+      "explanation": "Lokal açılamayan yerler arasında şunlar da vardır: öğretim kurumları ve ibadethanelerin kendisi, öğrenci yurtlarının bulunduğu binalar, tehlikeli maddelerin üretildiği, satıldığı, kullanıldığı ve depolandığı yerler, binaların ortak kullanılan bağımsız bölümleri ve her çeşit taşıma aracı.",
+      "articleRefs": [
+        "26/A"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Mülki idare amirinin bir dernek lokaline alkollü içki izni verebilmesi için hangi şart zorunludur?",
+      "back": "Lokalin içkili yer bölgesi içinde bulunması zorunludur.",
+      "explanation": "Lokalde canlı müzik izni de mülki idare amirinin kararıyla verilebilir. Lokalde bir sorumlu müdür bulunur. Lokalin hangi derneğe ait olduğunu belirten tabela, dışarıdan ilk bakışta görülebilecek bir yere asılır.",
+      "articleRefs": [
+        "26/A"
+      ]
+    }
+  ]
+}

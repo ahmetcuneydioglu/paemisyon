@@ -1,0 +1,297 @@
+{
+  "deck": {
+    "topicId": "52223b97-98b3-408b-93f4-3e3a03bf509b",
+    "legislationSlug": "2820-siyasi-partiler-kanunu",
+    "sourceLabel": "AI bilgi kartı — 2820 Siyasi Partiler Kanunu md 61–76",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: resmî madde metni + çıkmış sorular)"
+  },
+  "cards": [
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Siyasi partilerin gelirleri için kanunun koyduğu genel sınır nedir?",
+      "back": "Siyasi partilerin gelirleri amaçlarına aykırı olamaz.",
+      "explanation": "Bu sınır içinde partiler; giriş ve üyelik aidatı, milletvekilliği aidatı, parti yayınlarının satış bedelleri, balo, eğlence ve konser gelirleri, bağışlar ve Devletçe yapılan yardımlar gibi kaynaklardan gelir elde edebilir.",
+      "articleRefs": [
+        "61"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Milletvekili, belediye başkanlığı, belediye meclis üyeliği ve il genel meclis üyeliği aday adaylarından alınacak özel aidatı kim tespit ve tahsil eder?",
+      "back": "Siyasi partilerin yetkili merkez karar organları; md 64'teki esaslar dahilinde.",
+      "explanation": "Milletvekili aday adayları için md 64, özel aidatın parti içyönetmeliklerinde gösterileceğini ve üst sınırını belirler.",
+      "articleRefs": [
+        "61",
+        "64"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Siyasi partinin mal varlığından elde ettiği gelirler vergi, resim ve harçtan muaf mıdır?",
+      "back": "Hayır. Muafiyet, (h) bendindeki parti mal varlığından elde edilen gelirler hariç tutularak diğer bentlerdeki gelirler için tanınır.",
+      "explanation": "Aidatlar, satış gelirleri, bağışlar ve Devletçe yapılan yardımlar gibi diğer bentlerde yazılı kaynaklardan elde edilen gelirlerden hiçbir surette vergi, resim ve harç alınmaz.",
+      "articleRefs": [
+        "61"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Giriş aidatının miktarı ile üyelik aidatının alt ve üst sınırları nerede gösterilir?",
+      "back": "Parti tüzüğünde.",
+      "explanation": "Her üye, partiye girişinde aylık veya yıllık olarak üyelik aidatı ödemeyi kabul etmek zorundadır. Üye, tüzüğe uygun olmak şartıyla aidatını kayıtlı bulunduğu teşkilat kademesi başkanlığına yazıyla bildirerek artırabilir.",
+      "articleRefs": [
+        "62"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Aidatını ödemeyen parti üyesi partiden kesin olarak çıkarılabilir mi?",
+      "back": "Hayır. Borçlu olduğu yıla ait aidatı ödemeyen üyeye geçici veya kesin çıkarmaya dair disiplin cezaları uygulanmaz.",
+      "explanation": "Yazılı tebligata rağmen belirtilen süre içinde ödeme yapmayan üye hakkında yapılacak işlem ve uygulanacak yasaklamalar parti tüzüğünde gösterilir.",
+      "articleRefs": [
+        "62"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Partili milletvekillerinin ödeyeceği aidatın miktarını kim belirler?",
+      "back": "Türkiye Büyük Millet Meclisi parti grubu kararıyla belli edilir.",
+      "explanation": "Toplanan paraların grup faaliyetlerine ve parti merkezine hangi miktarlarda ayrılacağı da aynı grup kararıyla belirlenir.",
+      "articleRefs": [
+        "63"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Milletvekilliği aidatının yıllık tutarı en fazla ne kadar olabilir?",
+      "back": "Milletvekili ödeneğinin net bir aylık tutarı kadar; yıllık tutar bunu geçemez.",
+      "explanation": "Miktar, Türkiye Büyük Millet Meclisi parti grubu kararıyla belli edilir; üst sınır bu kararı bağlar.",
+      "articleRefs": [
+        "63"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Grubu olmayan milletvekillerinin ödeyeceği aidatın üst sınırı nedir?",
+      "back": "Parti grubu kararıyla belirlenen milletvekili aidatı miktarının yarısı; aidatı merkez karar ve yönetim kurulu tespit eder.",
+      "explanation": "Grubu olan milletvekillerinin aidatı parti grubu kararıyla belirlenir ve yıllık tutarı milletvekili ödeneğinin net bir aylık tutarını geçemez.",
+      "articleRefs": [
+        "63"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Milletvekili aday adaylarından alınacak özel aidat nerede gösterilir?",
+      "back": "Parti içyönetmeliklerinde; milletvekili ödeneğinin net bir aylık tutarını aşmamak kaydıyla.",
+      "articleRefs": [
+        "64"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Parti bayrağı, rozeti, parti yayınları ve üye kimlik kartları gibi kalemlerin satış bedellerini kim tespit eder?",
+      "back": "Merkez karar ve yönetim kurulu; kararıyla tespit eder.",
+      "explanation": "Bunlar, 61 inci maddenin (d), (e) ve (f) bentlerinde gösterilen gelir kaynaklarıdır: rumuzların satışı, parti yayınları, üye kimlik kartları ile parti defter, makbuz ve kağıtları.",
+      "articleRefs": [
+        "65",
+        "61"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Dernekler, vakıflar ve kooperatifler siyasi partilere bağışta bulunabilir mi?",
+      "back": "Evet; özel kanunlarında yer alan hükümlere uymak koşuluyla maddi yardım ve bağışta bulunabilirler.",
+      "explanation": "Aynı koşul kamu kurumu niteliğindeki meslek kuruluşları, işçi ve işveren sendikaları ile üst kuruluşları için de geçerlidir. Genel ve katma bütçeli daireler, mahalli idareler, muhtarlıklar ve kamu iktisadi teşebbüsleri ise siyasi partilere hiçbir suretle bağış yapamaz.",
+      "articleRefs": [
+        "66"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Siyasi parti bağışı hangi belgeye dayanarak kabul edebilir?",
+      "back": "Bağışın bağışta bulunana ya da yetkili temsilcisine veya vekiline ait olduğunu açıkça belirten, partice verilen makbuza.",
+      "explanation": "Böyle bir belgeye dayanılmaksızın bağış kabul edilemez. Siyasi partilerin adına açılmış banka hesaplarına yapılan bağışlar için ayrıca gelir makbuzu düzenlenmez.",
+      "articleRefs": [
+        "66"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Siyasi partiler yabancılık bakımından kimlerden hiçbir suretle yardım ve bağış alamaz?",
+      "back": "Yabancı devletlerden, uluslararası kuruluşlardan ve Türk uyrukluğunda olmayan gerçek ve tüzel kişilerden.",
+      "explanation": "Yasak hem ayni hem nakdi yardım ve bağışı kapsar.",
+      "articleRefs": [
+        "66"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Siyasi partiler ihtiyaçlarını karşılamak için kredili mal satın alabilir mi?",
+      "back": "Evet; md 66'nın 1 ve 3 üncü fıkralarında gösterilenler dışındaki gerçek ve tüzelkişilerden kredili veya ipotek karşılığı mal satın alabilirler.",
+      "explanation": "Kural olarak siyasi partiler ticari faaliyette bulunamaz, kredi veya borç alamaz; ihtiyaç amaçlı bu satın alma o yasağın istisnasıdır.",
+      "articleRefs": [
+        "67",
+        "66"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Siyasi partiler hangi taşınmaz malları edinebilir?",
+      "back": "Yalnız ikametleri ile amaç ve faaliyetleri için gerekli olan taşınmazları.",
+      "explanation": "Partiler, amaçları içinde olmak şartıyla sahip oldukları taşınmaz mallardan gelir sağlayabilir.",
+      "articleRefs": [
+        "68"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Parti gelir makbuzlarının dip koçanları ne kadar süre saklanır?",
+      "back": "Beş yıl; Anayasa Mahkemesinin ilk inceleme kararının ilgili partiye bildirilme tarihinden itibaren.",
+      "explanation": "Makbuzların asıl kısımlarıyla dip koçanlarında aynı sıra numarası bulunur. Gelirin türü ve miktarı, gelirin sağlandığı kişinin adı, soyadı ve adresi ile makbuzu düzenleyenin sıfatı, adı, soyadı ve imzası hem makbuzda hem dip koçanında yer alır.",
+      "articleRefs": [
+        "69"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "GSM operatörleri aracılığıyla yapılan mobil tahsilat için ayrıca gelir makbuzu düzenlenir mi?",
+      "back": "Hayır. Ödeme hizmeti sağlayıcılar aracılığıyla yapılan tahsilatlar için de ayrıca gelir makbuzu düzenlenmez.",
+      "explanation": "Bu kolaylık, 61 inci maddede sayılan gelirlerin sağlanmasında uygulanır. Kural olarak gelirler, parti merkez karar ve yönetim kurulunca bastırılan makbuzlar karşılığında alınır.",
+      "articleRefs": [
+        "69"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Siyasi partilerin giderlerine ait belgeleri saklama süresi ne kadardır?",
+      "back": "Beş yıl; kesinhesabın Anayasa Mahkemesi ilk inceleme kararının ilgili partiye bildirilme tarihinden itibaren.",
+      "explanation": "Özel kanunlarda gösterilen daha uzun süreye ilişkin hükümler saklıdır.",
+      "articleRefs": [
+        "70"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Parti teşkilatının bağlı olduğu üst kademeye gelir ve giderleri hakkında hesap verme süresi en fazla ne kadar olabilir?",
+      "back": "Altı ay; süre parti tüzüğünde gösterilir ve bunu aşamaz.",
+      "articleRefs": [
+        "70"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Merkez karar ve yönetim kurulunun önceden yazılı yetki vermediği ve sonradan onaylamadığı il teşkilatı sözleşmesinden parti tüzelkişiliği sorumlu tutulabilir mi?",
+      "back": "Hayır; sorumluluk sözleşmeyi yapan veya yükümlülük altına giren kişi veya kişilere aittir.",
+      "explanation": "Hizmet sözleşmeleri de dahil her türlü sözleşme için geçerlidir. Bu durumda merkez karar ve yönetim kurulu, genel başkan veya parti tüzelkişiliği aleyhine takipte bulunulamaz.",
+      "articleRefs": [
+        "71"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Siyasi partilerin il teşkilatları yıllık bütçelerini en geç ne zamana kadar genel merkeze gönderir?",
+      "back": "İlgili takvim yılından önceki Ekim ayı sonuna kadar; bütçeler bağlı ilçeleri de kapsar.",
+      "explanation": "Bu bütçeler ile genel merkez bütçesi, en geç ilgili takvim yılından önceki Aralık ayı sonuna kadar parti merkez karar ve yönetim kurulunca incelenip karara bağlanır.",
+      "articleRefs": [
+        "73"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Siyasi partilerin hesapları hangi esasa göre düzenlenir?",
+      "back": "Bilanço esasına göre.",
+      "explanation": "Bütçe, bilanço, gelir ve gider cetvelleri ile kesinhesapların nasıl düzenleneceği partilerin içyönetmeliklerinde gösterilir.",
+      "articleRefs": [
+        "73"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Anayasa Mahkemesinin siyasi partiler üzerindeki mali denetimi parti harcamalarının yerindeliğini kapsar mı?",
+      "back": "Hayır. Denetim kanuna uygunlukla sınırlıdır; partilerin faydalı gördüğü faaliyetleri daraltacak ya da bu faaliyetlerin yerindeliğini içerecek şekilde yapılamaz.",
+      "articleRefs": [
+        "74"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Genel başkan, kesinhesapların onaylı örneklerini en geç ne zamana kadar Anayasa Mahkemesine vermek zorundadır?",
+      "back": "Haziran ayı sonuna kadar; örnekler bilgi için Yargıtay Cumhuriyet Başsavcılığına da verilir.",
+      "explanation": "Belgelere, aynı hesap döneminde edinilen taşınmazların, belirli değeri aşan taşınırların, menkul kıymetlerin ve her türlü hakların değerleri ile edinim tarihlerini ve şekillerini gösteren listeler eklenir.",
+      "articleRefs": [
+        "74"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Şekle ve usule ilişkin eksiklik, parti harcamasının kabul edilmemesini gerektirir mi?",
+      "back": "Hayır. Denetimde harcamaların gerçek mahiyeti esas alınır.",
+      "explanation": "Harcamalar fatura veya fatura yerine geçen belgelerle, bunlar temin edilemiyorsa harcamanın doğruluğunu gösteren diğer belgelerle tevsik edilir. Kaybolma, yırtılma ve yanma gibi mücbir sebeplerde düzenleyenlerden alınacak tasdikli örnekler kullanılabilir.",
+      "articleRefs": [
+        "74"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Anayasa Mahkemesi siyasi partilerin mali denetimini nasıl yapar?",
+      "back": "Evrak üzerinde yapar.",
+      "explanation": "Sayıştaydan yardım sağlanarak hazırlatılan raporlardan yararlanabilir. Kendi üyeleri arasından görevlendireceği naip üye veya mahallin en kıdemli adli veya idari yargı hakimi niyabetinde inceleme yaptırabilir; yeminli bilirkişi görevlendirebilir. Büyük kongrenin kesinhesap kararları denetimi etkilemez ve denetim sonucu verilen kararlar kesindir.",
+      "articleRefs": [
+        "75"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "67 nci maddeye aykırı olarak siyasi partiye sağlanan kredi veya borçlara ne olur?",
+      "back": "Anayasa Mahkemesi kararıyla Hazinece el konulur; Hazine, kredi veya borcu verene karşı hiçbir yükümlülük altına girmez.",
+      "articleRefs": [
+        "76"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Belgelendirilmesi gerektiği hâlde belgelendirilmeyen parti giderleri için hangi yaptırım uygulanır?",
+      "back": "Bu giderler miktarınca parti malvarlığı, Anayasa Mahkemesi kararıyla Hazineye irat kaydedilir.",
+      "explanation": "Kanuna aykırı edinilen taşınmazlar ise Hazine adına tapuya tescil edilir; 69 uncu maddeye aykırı olarak tevsik edilmeyen kaynaklardan sağlanan gelir de Hazineye irat kaydedilir.",
+      "articleRefs": [
+        "76"
+      ]
+    }
+  ]
+}

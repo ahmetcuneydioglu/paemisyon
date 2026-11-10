@@ -1,0 +1,294 @@
+{
+  "deck": {
+    "topicId": "8b991a24-eecf-48c9-a068-0aecfc65cfd1",
+    "legislationSlug": "aihs",
+    "sourceLabel": "AI bilgi kartı — Avrupa İnsan Hakları Sözleşmesi md 27–58",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: resmî madde metni + çıkmış sorular)"
+  },
+  "cards": [
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Tek yargıç, bir bireysel başvuru hakkında hangi kararları verebilir?",
+      "back": "Başvurunun kabul edilemez olduğuna ya da işlemden kaldırılmasına karar verebilir. Bunun için kararın ek inceleme gerekmeksizin alınabilmesi gerekir.",
+      "explanation": "Tek yargıç bu kararlardan birini vermezse başvuruyu ek inceleme için bir komiteye ya da Daire'ye gönderir.",
+      "articleRefs": [
+        "27"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Tek yargıcın verdiği kabul edilemezlik kararı başka bir merci önüne taşınabilir mi?",
+      "back": "Hayır; tek yargıcın verdiği karar kesindir.",
+      "explanation": "Kesinlik, tek yargıcın verdiği kabul edilemezlik ve işlemden kaldırma kararları içindir. Ek inceleme gerekiyorsa tek yargıç karar vermez; başvuruyu komiteye ya da Daire'ye gönderir.",
+      "articleRefs": [
+        "27"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Komite, bir bireysel başvurunun kabul edilemez olduğuna hangi çoğunlukla karar verir?",
+      "back": "Oybirliğiyle karar verir. Böyle bir kararın ek inceleme gerekmeksizin alınabilmesi gerekir.",
+      "explanation": "Komite aynı oybirliği şartıyla başvurunun işlemden kaldırılmasına da karar verebilir.",
+      "articleRefs": [
+        "28"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Komite, bir davayı kabul edilebilir bulup aynı zamanda esasına hangi durumda karar verebilir?",
+      "back": "Davadaki temel sorun Sözleşme ve Protokollerinin uygulanması ya da yorumlanmasıyla ilgiliyse ve zaten Mahkeme'nin yerleşik içtihadının konusuysa.",
+      "explanation": "Bu yolda da komite oybirliğiyle karar verir; verdiği kabul edilebilirlik kararı ile esasa ilişkin karar kesindir. Uyuşmazlığın tarafı olan Devlet adına seçilmiş yargıç komitede değilse, komite onu bir üyesinin yerine geçmek üzere davet edebilir. Bu davette Taraf'ın bu usule itiraz edip etmediği de dikkate alınır.",
+      "articleRefs": [
+        "28"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Daire, devletlerarası başvurularda kabul edilebilirlik kararını kural olarak nasıl verir?",
+      "back": "Ayrı olarak verir. Mahkeme istisnai durumlarda aksine karar vermedikçe kabul edilebilirlik kararı ayrı alınır.",
+      "explanation": "Bireysel başvurularda tek yargıç ya da komite karar vermemişse kabul edilebilirlik ve esas hakkında Daire karar verir. Bu başvurularda kabul edilebilirlik kararı ayrı olarak da alınabilir.",
+      "articleRefs": [
+        "29"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Daire, önündeki davadan hangi durumlarda elçekerek dosyayı Büyük Daire'ye gönderebilir?",
+      "back": "Dava Sözleşme ve Protokollerinin yorumu konusunda ciddi bir sorun doğuruyorsa ya da çözüm Mahkeme'nin önceki bir kararıyla çelişme yaratabilecekse. Daire henüz karar vermemiş olmalıdır.",
+      "articleRefs": [
+        "30"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "47. madde uyarınca gelen görüş bildirme taleplerini Mahkeme'nin hangi oluşumu inceler?",
+      "back": "Büyük Daire inceler.",
+      "explanation": "Büyük Daire şu konularda da karar verir: devletlerarası başvurular, Daire'nin elçekerek gönderdiği ya da 43. madde gereği önüne gelen bireysel başvurular ve Bakanlar Komitesi'nin 46. madde çerçevesinde sunduğu sorunlar.",
+      "articleRefs": [
+        "31"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Mahkeme'nin yetkili olup olmadığı konusunda ihtilaf çıkarsa kararı kim verir?",
+      "back": "Kararı Mahkeme verir.",
+      "explanation": "Mahkeme'nin yargı yetkisi, Sözleşme ve Protokollerinin yorumu ve uygulanmasına ilişkin tüm sorunları kapsar. Bu sorunlar 33, 34, 46 ve 47. maddelerde belirlenen koşullarla Mahkeme'ye sunulur.",
+      "articleRefs": [
+        "32"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Mahkeme'ye bireysel başvuruyu kimler yapabilir?",
+      "back": "Sözleşme ya da protokollerde tanınan haklarının bir Yüksek Sözleşmeci Taraf'ça ihlal edilmesinden mağdur olduğunu öne süren her gerçek kişi, hükümet dışı kuruluş ya da kişi grupları.",
+      "explanation": "Yüksek Sözleşmeci Taraflar, bu hakkın etkin biçimde kullanılmasını hiçbir surette engellememeyi taahhüt eder.",
+      "articleRefs": [
+        "34"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "İç hukuktaki kesin karar tarihinden itibaren Mahkeme'ye hangi süre içinde başvurulabilir?",
+      "back": "Dört ay içinde başvurulabilir; iç hukuk yollarının tüketilmesinden sonra.",
+      "explanation": "İç hukuk yollarının tüketilmesi, uluslararası hukukun genel olarak kabul edilen ilkelerine göre aranır.",
+      "articleRefs": [
+        "35"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Mahkeme, bireysel başvuruyu hangi hâllerde ele almaz?",
+      "back": "Başvuru isimsizse ele almaz. Mahkemece daha önce incelenmiş ya da başka bir uluslararası soruşturma veya çözüm merciine sunulmuş bir başvuruyla esasen aynıysa ve yeni olgular içermiyorsa da ele almaz.",
+      "explanation": "Kabul edilemezlik sebepleri ayrıca sayılır: konu bakımından Sözleşme ya da Protokollerle bağdaşmama, dayanaktan açıkça yoksun olma, bireysel başvuru hakkının kötüye kullanılması ve önemli bir zarar görülmemiş olması. Mahkeme bu yönde yargılamanın her aşamasında karar verebilir.",
+      "articleRefs": [
+        "35"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Önemli bir zarar görmemiş başvurucunun başvurusu, insan haklarına saygı ilkesi esastan incelemeyi gerektirse de kabul edilemez bulunur mu?",
+      "back": "Hayır. Önemli zarar görmemiş olmak kabul edilemezlik sebebidir; ama insan haklarına saygı ilkesi esastan incelemeyi gerektiriyorsa başvuru bu sebeple kabul edilemez bulunmaz.",
+      "explanation": "Ölçü, Sözleşme ve Protokolleri ile güvence altına alınan insan haklarına saygı ilkesidir. Mahkeme kabul edilemez bulduğu başvuruları reddeder.",
+      "articleRefs": [
+        "35"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Avrupa Konseyi İnsan Hakları Komiseri'nin Daire önündeki bir davada yazılı görüş sunması Mahkeme başkanının davetine bağlı mıdır?",
+      "back": "Hayır. Komiser, Daire ya da Büyük Daire önündeki her davada yazılı görüş sunabilir ve duruşmalara katılabilir. Mahkeme başkanının daveti, davaya taraf olmayan Taraflar ile başvurucu dışındaki ilgililer içindir.",
+      "explanation": "Vatandaşı başvurucu olan Yüksek Sözleşmeci Taraf da Daire ve Büyük Daire önünde yazılı görüş sunma ve duruşmalara katılma hakkına sahiptir. Başkan daveti, adaletin gereği gibi yerine getirilmesi amacıyla yapar.",
+      "articleRefs": [
+        "36"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "İhtilaf çözümlenmişse Mahkeme başvuruyu her durumda kayıttan düşürmek zorunda mıdır?",
+      "back": "Hayır; kayıttan düşürebilir. Ama Sözleşme ve protokolleriyle güvence altına alınan insan haklarına saygının gerekli kıldığı hallerde incelemeye devam eder.",
+      "explanation": "Kayıttan düşürme yargılamanın her aşamasında mümkündür. Hâlleri şunlardır: başvuru sahibi davasını takip etme niyetinde değilse, ihtilaf çözümlenmişse ya da Mahkeme'nin saptadığı başka bir gerekçeyle incelemeyi sürdürmeyi haklı kılan bir neden görülmezse. Koşullar haklı kılarsa Mahkeme başvurunun yeniden kayda alınmasını kararlaştırabilir.",
+      "articleRefs": [
+        "37"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Mahkeme'nin dostane çözüm için taraflara yardımcı olduğu işlemler gizli midir?",
+      "back": "Evet; dostane çözüm işlemleri gizlidir.",
+      "explanation": "Dostane çözüm hâlinde Mahkeme başvuruyu sınırlı bir kararla kayıttan düşürür. Bu karar, içindeki esasların icrasını denetleyecek olan Bakanlar Komitesi'ne iletilir.",
+      "articleRefs": [
+        "39"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Mahkeme'de duruşmalar kural olarak kamuya açık mıdır?",
+      "back": "Evet; Mahkeme istisnai durumlarda aksini kararlaştırmadıkça duruşmalar kamuya açıktır.",
+      "explanation": "Yazı İşleri Müdürlüğü'ne sunulan belgeler de Mahkeme Başkanı aksine karar vermedikçe kamu erişimine açıktır.",
+      "articleRefs": [
+        "40"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Mahkeme, ihlal kararı verdiğinde hangi koşulda adil tazmine hükmeder?",
+      "back": "İlgili Taraf'ın iç hukuku ihlalin sonuçlarını ancak kısmen ortadan kaldırabiliyorsa hükmeder. Tazmin, gerektiği takdirde zarar gören taraf lehine verilir.",
+      "articleRefs": [
+        "41"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Daire kararının verildiği tarihten itibaren taraflar hangi süre içinde davanın Büyük Daire'ye gönderilmesini isteyebilir?",
+      "back": "Üç ay içinde isteyebilir; bu istem istisnai durumlarda yapılır.",
+      "explanation": "Gönderme istemini dava taraflarından her biri yapabilir.",
+      "articleRefs": [
+        "43"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Büyük Daire'ye gönderme istemini inceleyen kurul kaç yargıçtan oluşur?",
+      "back": "Beş yargıçtan oluşur; kurul Büyük Daire bünyesinde kurulur.",
+      "explanation": "Kurul, davada Sözleşme ve Protokollerinin yorumuna ya da uygulanmasına ilişkin ya da genel nitelikte ciddi bir sorun varsa istemi kabul eder. Kurul istemi kabul ederse Büyük Daire davayı karara bağlar.",
+      "articleRefs": [
+        "43"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Bir Daire kararı hangi durumlarda kesinleşir?",
+      "back": "Taraflar Büyük Daire'ye gönderme istemediklerini beyan ederse, karardan itibaren üç ay içinde gönderme istenmezse ya da Büyük Daire bünyesindeki kurul istemi reddederse kesinleşir.",
+      "explanation": "Büyük Daire'nin kararı kesindir. Kesin karar yayınlanır.",
+      "articleRefs": [
+        "44"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Esasa ilişkin karar tüm yargıçların kanaatini oybirliğiyle yansıtmıyorsa her yargıcın hangi hakkı vardır?",
+      "back": "Her yargıç kendi ayrık görüşünü belirtme hakkına sahiptir.",
+      "explanation": "Esasa ilişkin kararlar ile başvuruların kabul edilebilirliğine ya da kabul edilemezliğine ilişkin kararlar gerekçelidir.",
+      "articleRefs": [
+        "45"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Bakanlar Komitesi, kesinleşen bir kararın yorumu için Mahkeme'ye başvurma kararını hangi çoğunlukla alır?",
+      "back": "Komite toplantılarına katılma hakkına sahip temsilcilerin üçte iki oy çokluğuyla alır.",
+      "explanation": "Bu başvuru, kesinleşen kararın infazının denetlenmesi kararın yorumundan kaynaklanan bir zorluk nedeniyle engelleniyorsa yapılır.",
+      "articleRefs": [
+        "46"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Bakanlar Komitesi, kesin karara uymayı reddeden Taraf'ın durumunu ihtarda bulunmadan Mahkeme'ye intikal ettirebilir mi?",
+      "back": "Hayır. Önce ilgili Taraf'a ihtarda bulunur; sonra temsilcilerin üçte iki oy çokluğuyla alınacak kararla meseleyi Mahkeme'ye intikal ettirebilir.",
+      "explanation": "Mahkeme yükümlülüğün ihlal edildiğini tespit ederse, alınacak önlemleri değerlendirmesi için davayı Bakanlar Komitesi'ne gönderir. İhlal saptamazsa davayı, incelemesine son verecek kararı alması için Komite'ye iletir.",
+      "articleRefs": [
+        "46"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Danışma görüşü, Sözleşme'nin 1. bölümünde belirlenen hak ve özgürlüklerin kapsamıyla ilgili bir soruna ilişkin olabilir mi?",
+      "back": "Hayır; danışma görüşü bu hak ve özgürlüklerin içeriği ya da kapsamıyla ilgili sorunlara ilişkin olamaz.",
+      "explanation": "Mahkeme, Bakanlar Komitesi'nin istemi üzerine Sözleşme ve protokollerin yorumlanmasıyla ilgili hukuki meseleler konusunda görüş verebilir. Mahkeme ya da Bakanlar Komitesi'nin bir başvuru sonucunda karara bağlamak durumunda kalabileceği sorunlar da görüş konusu olamaz. Görüş isteme kararı, Komite'ye katılma hakkına sahip temsilcilerin oy çoğunluğuyla alınır.",
+      "articleRefs": [
+        "47"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Sözleşme'nin bildirimle belirtilen bir ülke toprağında uygulanması, Genel Sekreter bildirimi aldıktan ne kadar sonra başlar?",
+      "back": "Otuz gün sonra başlar; süre Avrupa Konseyi Genel Sekreteri'nin bildirimi aldığı tarihten itibaren işler.",
+      "explanation": "Sözleşme bu ülkelerde yerel gereklilikler dikkate alınarak uygulanır. Bildirimde bulunan devlet, o topraklar için bireysel başvurularda Mahkeme'nin yetkisini kabul ettiğini ayrıca beyan edebilir.",
+      "articleRefs": [
+        "56"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Bir devlet, imza ve onaylama sırasında Sözleşme hakkında hangi tür çekince koyabilir?",
+      "back": "Sözleşme'nin belirli bir hükmü hakkında, ülkesinde yürürlükte olan bir yasanın o hükümle bağdaşmazlığına dayanan çekince koyabilir. Genel nitelikte çekinceye izin verilmez.",
+      "explanation": "Her çekince, sözü edilen yasayla ilgili kısa bir açıklama içerir.",
+      "articleRefs": [
+        "57"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Bir Yüksek Sözleşmeci Taraf, Sözleşme'yi taraf olduğu tarihten itibaren ne kadar süre geçtikten sonra feshedebilir?",
+      "back": "Beş yıllık sürenin geçmesinden sonra feshedebilir.",
+      "explanation": "Fesih, Avrupa Konseyi Genel Sekreteri'ne sunulan ihbarla yapılır. Genel Sekreter bunu diğer Yüksek Sözleşmeci Taraflar'a bildirir.",
+      "articleRefs": [
+        "58"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Sözleşme'nin feshi için ihbar, Avrupa Konseyi Genel Sekreteri'ne ne kadar önceden sunulur?",
+      "back": "Altı ay önceden sunulur.",
+      "explanation": "Fesih, etki doğurduğu tarihten önce gerçekleşmiş ve yükümlülük ihlali sayılabilecek bir olaydan doğan yükümlülüklerden kurtarmaz. Avrupa Konseyi üyeliği sona eren Taraf'ın Sözleşme'ye taraf sıfatı da aynı koşullarla sona erer.",
+      "articleRefs": [
+        "58"
+      ]
+    }
+  ]
+}

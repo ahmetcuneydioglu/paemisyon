@@ -1,0 +1,291 @@
+{
+  "deck": {
+    "topicId": "fc5b7d84-ad74-446c-9ac6-3d4172a04ccf",
+    "legislationSlug": "298-sayili-secimlerin-temel-hukumleri-kanunu",
+    "sourceLabel": "AI bilgi kartı — 298 Sayılı Seçimlerin Temel Hükümleri Kanunu md 149–177, 179–189, Ek 1, Ek 2, Ek 3, Ek 4, Ek 5, Ek 6, Ek 7, Ek 8, Ek 9",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: resmî madde metni + çıkmış sorular)"
+  },
+  "cards": [
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Seçim propagandası toplantısına engel olan kişiye hangi ceza verilir?",
+      "back": "Altı aydan bir yıla kadar hapis cezası.",
+      "explanation": "Toplantının devamına imkân vermeyecek hareket ve tertiplerle onu ihlal etmek de aynı cezayı gerektirir. Fiil ikiden fazla kişi tarafından birlikte ve cebir, şiddet ya da tehditle işlenirse ceza iki yıldan beş yıla kadar hapistir.",
+      "articleRefs": [
+        "149"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Seçim propagandası toplantısına engel olma fiilini, aralarından biri silahlı en az üç kişi birlikte işlerse ceza iki yıldan beş yıla kadar hapis midir?",
+      "back": "Hayır. Bu hâlde failler beş yıldan sekiz yıla kadar hapis alır. İki yıldan beş yıla kadar hapis, ikiden fazla kişinin cebir, şiddet ya da tehditle birlikte işlediği hâlin cezasıdır.",
+      "explanation": "Silahlı birlikte işleme hâli, toplantıya engel olma suçunun en ağır cezalı biçimidir.",
+      "articleRefs": [
+        "149"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Oy verme gününden önceki gün saat kaçtan sonra umumi ya da umuma açık yerlerde seçim propagandası yapmak suçtur?",
+      "back": "Saat 18.00'den sonra. Yasak oy verme gününde de sürer; cezası üç aydan bir yıla kadar hapistir.",
+      "explanation": "Seçimin düzenini bozabilecek ya da oy vermenin tam bir serbestlikle yapılmasına tesir edebilecek propaganda yapmak ve asılsız şayia çıkarmak da aynı cezaya bağlıdır.",
+      "articleRefs": [
+        "151"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Oy karşılığı teklif edilen menfaati kabul eden seçmen de cezalandırılır mı?",
+      "back": "Evet. Menfaati kabul eden seçmen de teklif eden ya da veren kişiyle aynı cezayla, yani bir yıldan üç yıla kadar hapisle cezalandırılır.",
+      "explanation": "Menfaat seçmenin seyahat, yemek, içki ve nakil masraflarının karşılığı olarak gösterilse de hüküm aynıdır. Fiiller tehdit, cebir ya da şiddet kullanılarak işlenirse ceza bir misli artırılarak hükmedilir.",
+      "articleRefs": [
+        "152"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Seçmenin oy kullanmaya gitmesini tehdit, cebir ya da şiddet kullanarak engelleyen kişiye hangi ceza verilir?",
+      "back": "Üç yıldan beş yıla kadar hapis cezası.",
+      "explanation": "Fiil birden fazla seçmene karşı işlenirse ceza üçte birden yarısına kadar artırılır. Sandık seçmen listesinde kayıtlı seçmenin sandık binasına girmesine ya da oy kullanmasına kanuna aykırı biçimde engel olmanın cezası ise bir yıldan üç yıla kadar hapistir.",
+      "articleRefs": [
+        "153"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "298 sayılı Kanunda ayrıca ceza hükmüne bağlanmamış, kanuna aykırı propagandaların faillerine hangi hüküm uygulanır?",
+      "back": "Kabahatler Kanununun 32 nci maddesinin birinci fıkrası uygulanır.",
+      "articleRefs": [
+        "156"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Sandık başında oy verme ödevlerini ihtara rağmen yapmayan seçmene hangi ceza verilir?",
+      "back": "İkiyüzelli Türk Lirası idarî para cezası.",
+      "explanation": "Ceza, seçmen kendisine yüklenen ödevleri ihtara rağmen yapmadığında verilir.",
+      "articleRefs": [
+        "158"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Başkasının adını taşıyarak oy veren kişi, seçme yeterliği olmadığını bilerek oy veren kişiyle aynı cezayı mı alır?",
+      "back": "Hayır. Başkasının adıyla oy verene üç yıldan beş yıla kadar hapis verilir. Seçme yeterliği olmadığını bilerek oy verenin cezası iki yıldan beş yıla kadar hapistir.",
+      "explanation": "Mükerrer oy vermeye teşebbüs eden ya da oy veren kişiye de başkasının adıyla oy verme hükmü uygulanır. Bu suçlarda teşebbüs ile oy vermenin kendisi aynı cezaya bağlanmıştır.",
+      "articleRefs": [
+        "160"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Siyasi partilerin oy pusulalarını imha etme fiili hangi yerlere girilerek işlenirse ceza bir misli eklenerek verilir?",
+      "back": "Meskene ya da siyasi parti binalarına, her ne suretle olursa olsun girilerek işlenirse ceza bir misli eklenir.",
+      "explanation": "Temel ceza bir yıldan üç yıla kadar hapistir. Fiilin cebir, şiddet, tehdit ya da hileyle işlenmesi veya içlerinden biri silahlı birden fazla kişi tarafından işlenmesi de cezanın bir misli eklenmesini gerektirir.",
+      "articleRefs": [
+        "162"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Seçim tutanaklarını sahte olarak düzenleyen kişi kurul başkanı, kurul üyesi ya da resmi memursa hangi ceza verilir?",
+      "back": "Beş yıldan on yıla kadar hapis cezası.",
+      "explanation": "Aynı fiili herhangi bir kişi işlerse ceza beş yıldan sekiz yıla kadar hapistir. Seçimin neticesini herhangi bir şekilde tağyir etmek de bu kapsamdadır.",
+      "articleRefs": [
+        "164"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Sandık seçmen listesine gelmeyenler adına sahte imzayla oy atma fiili sandık başkanınca işlenirse ceza üçte birden yarıya kadar mı artırılır?",
+      "back": "Hayır. Fiili sandık başkan ve üyeleri ile resmi memurlar işlerse cezaya yarısı eklenir. Üçte birden yarıya artırım, kurulları tutanak sahteciliği gibi fiillere icbar etme hâline aittir.",
+      "explanation": "Temel ceza üç yıldan beş yıla kadar hapis ve bin günden beşbin güne kadar adlî para cezasıdır.",
+      "articleRefs": [
+        "164"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Seçilenlerin yeterliğine makbul bir sebep olmaksızın ve kötü niyetle itiraz eden kişiye hangi yaptırım uygulanır?",
+      "back": "Bin Türk Lirasından beşbin Türk Lirasına kadar idarî para cezası verilir. Ceza, itirazı reddeden merciin ihbarı üzerine uygulanır.",
+      "explanation": "Seçim sonunda seçilenlere verilen tutanaklara kötü niyetle yapılan itiraz da aynı yaptırıma bağlıdır.",
+      "articleRefs": [
+        "166"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Oy verme günü umuma açık yerlerdeki ispirtolu içki yasağı hangi zaman dilimi için geçerlidir?",
+      "back": "Oy verme müddetince geçerlidir. Bu sürede umuma açık yerlerde ispirtolu içki veren, satan ya da içen kişi cezalandırılır.",
+      "explanation": "Ceza üç aydan altı aya kadar hapistir. Herhangi bir suretle açık veya kapalı şişelerde ispirtolu içki satan ya da alan kişi de aynı cezayı alır.",
+      "articleRefs": [
+        "170"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Oy verme günü ile ondan önceki kaç gün içinde seçmenin hürriyetini ve oy verme imkânını kısıtlayacak idarî ve malî tedbir alınamaz?",
+      "back": "Üç gün. Oy verme günü ile ondan önceki üç gün içinde bu nitelikte hiçbir idarî ve malî tedbir alınamaz.",
+      "explanation": "Yasak, seçmenin hürriyetini ve oy verme imkânını kaldıracak ya da tahdit edecek tedbirlerin tümünü kapsar.",
+      "articleRefs": [
+        "173"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Seçim görevlilerinin oy verme günü ve ondan önceki yirmi dört saat içinde işlediği seçim suçlarında soruşturma ne zaman başlatılır?",
+      "back": "Bağlı oldukları kurullarca düzenlenmesi gereken seçim tutanaklarının tanzim edildiği günün ertesi günü başlatılır.",
+      "articleRefs": [
+        "173"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Valiler hakkında seçim suçundan soruşturmayı kim yapar?",
+      "back": "Yargıtay Cumhuriyet Başsavcısı veya Cumhuriyet Başsavcıvekili yapar. Kovuşturma ise Yargıtayın ilgili ceza dairesince yapılır.",
+      "explanation": "Soruşturma sırasında Başsavcının istediği yakalama emri, tutuklama, tahliye, elkoyma ve arama kararlarını Yargıtay ilgili ceza dairesi başkanı verir. Bu kararlara yapılan itirazı, numara itibarıyla izleyen ceza dairesi inceler.",
+      "articleRefs": [
+        "174"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Yargıtay Cumhuriyet Başsavcısının soruşturmayı yaptırdığı Yargıtay Cumhuriyet savcısı, valiler hakkında kamu davasını açabilir mi?",
+      "back": "Hayır. Başsavcı soruşturmayı Yargıtay Cumhuriyet savcılarına yaptırabilir. Ancak kamu davasını açma ya da kovuşturmaya yer olmadığına karar verme yetkisi Cumhuriyet Başsavcısına aittir.",
+      "explanation": "Başsavcının kovuşturmaya yer olmadığına dair kararına yapılan itirazı, soruşturma konusu suçun en ağırına bakmakla görevli ceza dairesini numara itibarıyla izleyen ceza dairesinin başkanı inceler.",
+      "articleRefs": [
+        "174"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Kaymakamlar hakkında seçim suçundan kovuşturma yapmaya hangi mahkeme yetkilidir?",
+      "back": "İl ağır ceza mahkemesi yetkilidir. Soruşturma yapma ve kamu davası açma yetkisi ise il Cumhuriyet başsavcısı veya başsavcıvekilindedir.",
+      "articleRefs": [
+        "174"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "298 sayılı Kanun hükümlerine göre idarî para cezasına karar vermeye kim yetkilidir?",
+      "back": "Cumhuriyet savcısı.",
+      "articleRefs": [
+        "175"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Seçim süresinde bir mevkutedeki yayına karşı cevap ve düzeltme hakkında, oy verme gününden önceki kaçıncı günden sonra sulh yargıcının kararıyla yetinilir?",
+      "back": "Oy verme gününden önceki 7 nci günden sonra sulh yargıcının kararıyla yetinilir.",
+      "explanation": "Özel ve tüzel kişiler cevap ve düzeltme hakkını 5187 sayılı Basın Kanununun 14 üncü maddesine göre kullanır. Metni bulundukları yerin sulh yargıcına da verebilirler; ücretini öderlerse metin telgrafla da bildirilir.",
+      "articleRefs": [
+        "176"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "İlçe seçim kurulu başkanlığı yapan yargıç, kendi çevresinde işlenen seçim suçlarına ilişkin davaya bakabilir mi?",
+      "back": "Hayır. İl ve ilçe seçim kurulu başkan ve üyeliğini yapan yargıçlar, kendi çevrelerinde işlenen seçim suçlarına ilişkin davalara bakamaz.",
+      "explanation": "Aynı yerde bu davaları görecek başka yargıç yoksa ya da mahkeme kurulamıyorsa davaya o yere en yakın yargı çevresindeki aynı derecedeki mahkeme veya vazifeli yargıç bakar.",
+      "articleRefs": [
+        "177"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Seçim suçlarından doğan kamu davası hangi süre içinde açılmalıdır?",
+      "back": "Seçimin bittiği tarihten itibaren altı ay içinde açılmalıdır. Bu süre içinde açılmazsa kovuşturma yapılamaz.",
+      "explanation": "Kamu davasının açılması izin veya karara bağlı olan suçlarda, başvuru tarihi ile izin ya da kararın verildiği tarih arasında geçen süre dava süresine katılmaz. Ancak bu süre üç ayı geçemez.",
+      "articleRefs": [
+        "180"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Oy sandıkları ile kapalı oy verme yerlerinin eşya ve malzemesi köylerde kim tarafından muhafaza edilir?",
+      "back": "Köylerde muhtarlıklarca, kasaba ve şehirlerde ise belediyelerce muhafaza edilir.",
+      "explanation": "İl, ilçe ve sandık kurullarına ait mühürler, seçim işlemlerine ilişkin tutanaklar, matbu defterler ve diğer evrak il ve ilçe adalet daireleri emanet memurluklarında saklanır.",
+      "articleRefs": [
+        "184"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Yüksek Seçim Kurulu, siyasi partilerce gösterilecek adaylar için adaylık tarih ve sürelerini değiştirebilir mi?",
+      "back": "Hayır. Kurul, zorunlu gördüğünde adaylık işlemlerine ilişkin tarih ve süreleri değiştirebilir; ancak bu yetki siyasi partilerce gösterilecek adaylar hakkında kullanılamaz.",
+      "explanation": "Değiştirilebilecek işlemler arasında adaylığa müracaat tarihi, müracaatların incelenmesi, adaylığa itiraz, itirazların karara bağlanması ve adayların geçici ve kesin ilanı bulunur. Kurul bu kararını gerekçesiyle birlikte derhal ilan eder.",
+      "articleRefs": [
+        "Ek 4"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Seçim propagandasının başlangıcından oy verme gününü takip eden güne kadar, 62 nci maddede sayılan kuruluşların mutad ticari faaliyetlerine 63 ve 64 üncü maddelerdeki yasaklar uygulanır mı?",
+      "back": "Hayır, uygulanmaz. Bu istisna, faaliyet vatandaşın oyuna tesir etmek maksadına yönelik olmadıkça geçerlidir.",
+      "explanation": "Bankalar Kanununa tabi teşekküllerin kanun veya bir idari tasarruf gereği yapacakları mutad ticari, iktisadi ve pazarlama faaliyetleri de aynı istisnadan yararlanır.",
+      "articleRefs": [
+        "Ek 6"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Adaylığı ya da seçimi kaybeden Devlet memuru, eski görevine dönmek için hangi süre içinde başvurmalıdır?",
+      "back": "Yüksek Seçim Kurulunca seçim sonuçlarının ilanını takip eden bir ay içinde başvurmalıdır.",
+      "explanation": "Memur, eski görevine ya da kazanılmış hak aylık derecesindeki başka bir göreve dönebilir. Hüküm, milletvekili ve mahalli idareler genel ve ara seçimlerinde aday ve aday adayı olanları kapsar.",
+      "articleRefs": [
+        "Ek 7"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Seçimi kaybedince eski görevine dönme hakkı hangi kamu görevlilerine tanınmaz?",
+      "back": "Yüksek mahkeme üyeleri, hâkimler, savcılar ve bu meslekten sayılanlar ile subay ve astsubaylara tanınmaz.",
+      "articleRefs": [
+        "Ek 7"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Siyasi parti genel merkezleri, elektronik ortamda izledikleri sandık ölçekli seçim sonuçlarını ne zamana kadar kamuoyuna açıklayamaz?",
+      "back": "Yüksek Seçim Kurulunca belirlenen süre bitimine kadar açıklayamaz. Bu süre içinde sonuçları kendi teşkilatlarına ya da üçüncü şahıslara da gönderemezler.",
+      "explanation": "Sonuçların genel merkezlerce eş zamanlı izlenmesi ve aynı formatta saklanması için gerekli tedbirleri ve veri tabanlarının güvenlik tedbirlerini Yüksek Seçim Kurulu alır.",
+      "articleRefs": [
+        "Ek 9"
+      ]
+    }
+  ]
+}

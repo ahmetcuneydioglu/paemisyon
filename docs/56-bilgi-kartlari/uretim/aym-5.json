@@ -1,0 +1,261 @@
+{
+  "deck": {
+    "topicId": "746633d6-5e90-404b-b0ea-ebcd670b4dc8",
+    "legislationSlug": "6216-anayasa-mahkemesinin-kurulusu-ve-yargilama-usulleri-hakkinda-kanun",
+    "sourceLabel": "AI bilgi kartı — 6216 Anayasa Mahkemesinin Kuruluşu ve Yargılama Usulleri Hakkında Kanun md 60–73, 73/A, 74–77, Ek 1",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: resmî madde metni + çıkmış sorular)"
+  },
+  "cards": [
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Anayasa Mahkemesi Başkanı veya bir üyesi hakkındaki ret talebine kim karar verir?",
+      "back": "Genel Kurul ya da bölümler, ilgili üye katılmaksızın karar verir; bu karar kesindir.",
+      "explanation": "Ret, Başkan ve üyelerin tarafsız hareket edemeyecekleri kanısını haklı kılan hâllerin bulunduğu iddiasına dayanır. Ret şahsidir. Genel Kurul ya da bölümlerin toplanmasına mani olacak sayıda üyenin reddine ilişkin talepler dinlenmez.",
+      "articleRefs": [
+        "60"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Kötü niyetle yapılan ret talebinde talepte bulunanların her birine hangi aralıkta disiplin para cezası verilir?",
+      "back": "Beşyüz Türk Lirasından beşbin Türk Lirasına kadar. Bunun için talebin kötü niyetle yapıldığı anlaşılmalı ve talep esas yönünden kabul edilmemiş olmalıdır.",
+      "explanation": "Ret dilekçesinde ret sebepleri açıkça gösterilmeli ve deliller birlikte bildirilmelidir; bu şartları taşımayan dilekçeler reddolunur. Yemin delil teşkil etmez.",
+      "articleRefs": [
+        "60"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Anayasa Mahkemesinin verdiği disiplin para cezası seçenek yaptırımlara çevrilebilir mi?",
+      "back": "Hayır. Seçenek yaptırımlara çevrilemez ve adli sicil kayıtlarında yer almaz. Ceza verildiği anda kesindir ve derhâl infaz edilir.",
+      "explanation": "Disiplin para cezası, bireysel başvuru hakkını veya ret talebini açıkça kötüye kullandığı tespit edilen başvurucular aleyhine verilir. Ceza, 6183 sayılı Amme Alacaklarının Tahsil Usulü Hakkında Kanun hükümlerine göre tahsil edilir.",
+      "articleRefs": [
+        "60"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Çekinme talebinde bulunan üye, bu talep hakkındaki oylamaya katılabilir mi?",
+      "back": "Hayır. Genel Kurul, çekinme talebinde bulunan Başkan veya üyenin de iştirakiyle kesin kararını verir; ancak çekinme talebinde bulunan üye oylamaya katılamaz.",
+      "explanation": "Çekinme, Başkan ve üyelerin 59 ve 60. maddelerde yazılı sebeplere dayanarak davaya veya işe bakmaktan kaçınmalarıdır. Çekinen üye toplantıda bulunur, fakat oy kullanmaz.",
+      "articleRefs": [
+        "61"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Mahkemenin bakmakla görevli olduğu bir davayla ilgili bilgi, Devlet sırrı gerekçesiyle Mahkemeye karşı gizli tutulabilir mi?",
+      "back": "Hayır. Mahkemenin bakmakla görevli olduğu dava ve işlerle ilgili bilgiler, Devlet sırrı olduğu gerekçesiyle Mahkemeye karşı gizli tutulamaz.",
+      "explanation": "Açıklanması Devletin dış ilişkilerine, millî savunmasına ve millî güvenliğine zarar verebilecek, anayasal düzen ve dış ilişkilerde tehlike yaratabilecek nitelikteki bilgiler Devlet sırrı sayılır.",
+      "articleRefs": [
+        "62"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Tanıklık konusu bilgiler Devlet sırrı niteliğindeyse tanık Mahkemece nasıl dinlenir?",
+      "back": "Stenograf ve zabıt kâtibi dahi olmaksızın dinlenir. Başkan daha sonra yalnızca davanın esasına etkili olan hususları tutanağa geçirir.",
+      "explanation": "Bu hükümler, sözlü açıklamasına başvurulanlar ile bilirkişilere de uygulanır.",
+      "articleRefs": [
+        "62"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Mahkemenin bilgi ve belge taleplerini belirtilen süre içinde yerine getirmeyenler hakkında ne yapılır?",
+      "back": "Bu kişiler hakkında genel hükümlere göre doğrudan soruşturma yapılır.",
+      "explanation": "Mahkeme; yasama, yürütme ve yargı organları, kamu idareleri, kamu görevlileri, bankalar ile diğer gerçek ve tüzel kişilerle doğrudan yazışabilir ve bilgi ve belge isteyebilir. Ayrıca her derece ve sınıftan kamu görevlilerini ve ilgilileri bilgi almak üzere çağırabilir.",
+      "articleRefs": [
+        "62"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Yüce Divan duruşmalarında Devlet kurumlarının araç, gereç, stenograf ve teknik personelinden yararlanmak için kim istemde bulunur?",
+      "back": "Başkan istemde bulunur. Bu istemler ilgili makamlarca derhâl yerine getirilir.",
+      "explanation": "Başkan bu istemde siyasi parti kapatma davalarında ve sözlü açıklamalarda da duruşmanın gerekli kıldığı durumlarda bulunabilir.",
+      "articleRefs": [
+        "63"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Anayasa Mahkemesine yapılan bireysel başvurular harç istisnasından yararlanır mı?",
+      "back": "Hayır. Harç istisnası, bireysel başvurular dışındaki başvuruları, alınacak kararları ve bunlarla ilgili yapılacak işlemleri kapsar.",
+      "articleRefs": [
+        "64"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Genel Kurulda ve bölümlerde oylar eşit çıkarsa karar nasıl belirlenir?",
+      "back": "Başkanın bulunduğu tarafın görüşü doğrultusunda karar verilmiş olur.",
+      "explanation": "Genel Kurul ve bölümler kararlarını katılanların salt çoğunluğuyla alır. Eşitlik hâlinde başkanın oyu belirleyicidir.",
+      "articleRefs": [
+        "65"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Anayasa Mahkemesinde oylamaya hangi üyeden başlanır?",
+      "back": "Oylamaya en kıdemsiz üyeden başlanır.",
+      "articleRefs": [
+        "65"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Anayasa Mahkemesinin iptal kararları geriye yürür mü?",
+      "back": "Hayır. İptal kararları geriye yürümez.",
+      "explanation": "Mahkeme kararları kesindir. Bu kararlar Devletin yasama, yürütme ve yargı organlarını, idare makamlarını, gerçek ve tüzel kişileri bağlar.",
+      "articleRefs": [
+        "66"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Mahkeme bir kanun hükmünü iptal ederken hangi biçimde hüküm tesis edemez?",
+      "back": "Kanun koyucu gibi hareket ederek yeni bir uygulamaya yol açacak biçimde hüküm tesis edemez.",
+      "explanation": "Mahkeme kararları gerekçeli olarak yazılır ve iptal kararları gerekçesi yazılmadan açıklanamaz. İptal ve itiraz başvuruları sonucu verilen gerekçeli kararlar Resmî Gazetede hemen yayımlanır.",
+      "articleRefs": [
+        "66"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Avrupa İnsan Hakları Mahkemesi, Anayasa Mahkemesinin Yüce Divan sıfatıyla verdiği bir kararın Sözleşmeyi ihlal ettiğine hükmederse yargılamanın yenilenmesi hangi süre içinde istenebilir?",
+      "back": "Avrupa İnsan Hakları Mahkemesi kararının kesinleştiği tarihten itibaren bir yıl içinde istenebilir. Siyasi parti kapatma kararlarında da süre aynıdır.",
+      "explanation": "Yenileme talebi Anayasa Mahkemesine yapılır. Dayanak, Avrupa İnsan Hakları Sözleşmesi ve eki protokollerin ihlal edildiğine dair kararın kesinleşmesidir.",
+      "articleRefs": [
+        "67"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Mahkemenin siyasi parti kapatma davasında verdiği karara karşı yargılamanın yenilenmesi hangi kanun hükümlerine göre istenebilir?",
+      "back": "5271 sayılı Kanun hükümlerine göre istenebilir. Yüce Divan sıfatıyla verilen kararlar için de aynı kural uygulanır.",
+      "explanation": "Mahkeme, istemi esaslı ve kabule değer bulursa yargılamanın yenilenmesine karar verir. İstem genel hükümlere göre sonuçlandırılır.",
+      "articleRefs": [
+        "67"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Anayasa Mahkemesi üyelerine, kıstas aylığı oluşturan her bir ödeme unsurunun yüzde kaçı oranında aylık ödenir?",
+      "back": "% 86'sı oranında ödenir. Başkana % 100'ü, başkanvekillerine % 90'ı ödenir.",
+      "articleRefs": [
+        "69"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Anayasa Mahkemesi Başkanı, başkanvekilleri, üyeleri ve raportörlerine brüt aylıklarının yüzde kaçı oranında yargı ödeneği verilir?",
+      "back": "% 10'u oranında verilir.",
+      "explanation": "Yargı ödeneği, aynı maddeye göre ödenmekte olan brüt aylık üzerinden hesaplanır.",
+      "articleRefs": [
+        "69"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Anayasa Mahkemesi Başkan ve üyelerinin yıllık izin hakkı kaç gündür?",
+      "back": "Kırk gündür. Bunun için Yüce Divan sıfatıyla bakılan veya Anayasaya göre süreye tabi olan işlerin engellenmemesi gerekir.",
+      "articleRefs": [
+        "70"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Anayasa Mahkemesi Başkan ve üyelerinin yıllık ve mazeret izinlerini kim verir?",
+      "back": "Başkan verir.",
+      "explanation": "Hastalık ve mazeret izinleri genel hükümlere tabidir.",
+      "articleRefs": [
+        "70"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Anayasa Mahkemesi Başkan ve üyelerinin sağlık giderleri hangi hükümler çerçevesinde ödenir?",
+      "back": "Türkiye Büyük Millet Meclisi üyelerinin tabi olduğu hükümler ve esaslar çerçevesinde ödenir; ödeme Mahkeme bütçesinden yapılır.",
+      "explanation": "Bu kural emekli Başkan ve üyeleri ile bakmakla yükümlü oldukları aile fertlerini de kapsar.",
+      "articleRefs": [
+        "71"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Anayasa Mahkemesinin kuruluş günü hangi tarihtir?",
+      "back": "Her yılın nisan ayının 25'inci günüdür ve törenlerle kutlanır.",
+      "explanation": "Kuruluş gününde seminer, konferans ve benzeri etkinlikler düzenlenebilir.",
+      "articleRefs": [
+        "72"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Kuruluş günü törenleri ve emekli üyelere verilen armağanlar için yapılan harcamalar Kamu İhale Kanununa tabi midir?",
+      "back": "Hayır. Bu amaçla yapılacak harcamalar 4734 sayılı Kamu İhale Kanununa tabi değildir.",
+      "explanation": "Emekliye ayrılmış başkanlar, başkanvekilleri ve üyelere onur belgesi ve geçmiş hizmetlerini simgeleyen birer armağan verilir. Bu giderleri karşılamak için her yıl Mahkeme bütçesine yeterli ödenek konulur.",
+      "articleRefs": [
+        "72"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Raportörler ve raportör yardımcıları Başkanlıkça ilk aşamada en fazla ne kadar süreyle yurt dışında görevlendirilebilir?",
+      "back": "İki yıla kadar görevlendirilebilir. Başkanlık gerekli görürse bu süre bir katına kadar uzatılabilir.",
+      "explanation": "Görevlendirme; bilgi ve görgü artırma, lisansüstü eğitim, bilimsel araştırma ya da karşılıklı iş birliği çerçevesinde yapılır. Bu süre boyunca derece yükselmeleri, kademe ilerlemeleri ve diğer bütün özlük hakları devam eder.",
+      "articleRefs": [
+        "73"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Anayasa Mahkemesinde kimler staj yapabilir?",
+      "back": "Hâkim ve savcı yardımcıları ile avukat stajyerleri staj yapabilir.",
+      "explanation": "Stajın usul ve esasları yönetmelikle düzenlenir.",
+      "articleRefs": [
+        "73/A"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Anayasa Mahkemesinin üye, raportör ve iç denetçi kadroları nerede düzenlenmiştir?",
+      "back": "Kanuna ekli (I) sayılı Kadro Cetvelinde düzenlenmiştir.",
+      "articleRefs": [
+        "Ek 1"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,196 @@
+{
+  "deck": {
+    "topicId": "02899557-fb4b-4fa6-8fc7-6cbea966d191",
+    "legislationSlug": "3071-sayili-dilekce-kanunu",
+    "sourceLabel": "AI bilgi kartı — 3071 Sayılı Dilekçe Kanunu md 1–11",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: resmî madde metni + çıkmış sorular)"
+  },
+  "cards": [
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Dilekçe Kanununun amacı hangi hakkın kullanılma biçimini düzenlemektir?",
+      "back": "Dilek ve şikâyetler hakkında Türkiye Büyük Millet Meclisine ve yetkili makamlara yazı ile başvurma hakkının kullanılma biçimini.",
+      "explanation": "Bu hak Türk vatandaşlarına ve Türkiye'de ikamet eden yabancılara tanınır. Dilek ve şikâyetler kişinin kendisiyle ya da kamu ile ilgili olabilir.",
+      "articleRefs": [
+        "1"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Dilekçe Kanunu hangi makamlara yapılan dilek ve şikâyet başvurularını kapsar?",
+      "back": "Türkiye Büyük Millet Meclisi ile idarî makamlara yapılan başvuruları.",
+      "explanation": "Kapsam, Türk vatandaşları ve Türkiye'de ikamet eden yabancılar tarafından bu makamlara yapılan dilek ve şikâyet başvurularıdır.",
+      "articleRefs": [
+        "2"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Türk vatandaşları hangi konulardaki dilek ve şikâyetleri için dilekçe hakkını kullanabilir?",
+      "back": "Kendileriyle veya kamu ile ilgili dilek ve şikâyetleri için.",
+      "explanation": "Başvuru Türkiye Büyük Millet Meclisine ve yetkili makamlara yazı ile yapılır.",
+      "articleRefs": [
+        "3"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Türkiye'de ikamet eden bir yabancının dilekçesi hangi dilde yazılmalıdır?",
+      "back": "Türkçe yazılmalıdır.",
+      "explanation": "Yabancılar dilekçe hakkından iki kayıtla yararlanır: karşılıklılık esası gözetilir ve dilekçe Türkçe yazılır.",
+      "articleRefs": [
+        "3"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Türkiye Büyük Millet Meclisine ya da yetkili makamlara verilen dilekçede hangi bilgilerin bulunması zorunludur?",
+      "back": "Dilekçe sahibinin adı-soyadı ve imzası ile iş veya ikametgâh adresi.",
+      "explanation": "Bu şartlar hem verilen hem de gönderilen dilekçeler için aranır.",
+      "articleRefs": [
+        "4"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Dilekçede hem iş adresinin hem de ikametgâh adresinin yazılması gerekir mi?",
+      "back": "Hayır; iş veya ikametgâh adresinden biri yeter. Adı-soyadı ve imza ise ayrıca bulunmalıdır.",
+      "explanation": "Hüküm adres için seçimlik bir kayıt koyar: iş veya ikametgâh adresi. Adı-soyadı ve imza bu seçimliliğin dışındadır, ikisi de aranır.",
+      "articleRefs": [
+        "4"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "İmzalı ama adres içermeyen bir dilekçe incelenir mi?",
+      "back": "Hayır. Adres zorunlu şartlardandır; md 4'teki şartlardan herhangi birini taşımayan dilekçe incelenemez.",
+      "explanation": "Zorunlu şartlar adı-soyadı, imza ile iş veya ikametgâh adresidir. Bunlardan biri eksikse dilekçe incelenemeyecek dilekçeler arasına girer.",
+      "articleRefs": [
+        "4",
+        "6"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Konusuyla ilgili olmayan bir idari makama verilen dilekçeyi yetkili idari makama kim gönderir?",
+      "back": "Dilekçenin verildiği o makam; dilekçeyi yetkili idari makama kendisi gönderir.",
+      "explanation": "Dilekçe sahibinin yeniden başvurması gerekmez. Dilekçenin verildiği makam yetkili idari makama gönderir ve dilekçe sahibine de bilgi verir.",
+      "articleRefs": [
+        "5"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Dilekçe konusuyla ilgili olmayan bir idari makama verildiğinde, dilekçe sahibine yönelik ne yapılır?",
+      "back": "Dilekçe sahibine ayrıca bilgi verilir.",
+      "explanation": "Dilekçenin verildiği makam dilekçeyi yetkili idari makama gönderir. Bunun yanında dilekçe sahibini de bilgilendirir.",
+      "articleRefs": [
+        "5"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Türkiye Büyük Millet Meclisine veya yetkili makamlara verilen dilekçelerden hangileri incelenemez?",
+      "back": "Belli bir konuyu ihtiva etmeyenler, yargı mercilerinin görevine giren konularla ilgili olanlar ve md 4'teki şartlardan herhangi birini taşımayanlar.",
+      "explanation": "Hüküm hem verilen hem de gönderilen dilekçelere uygulanır. Md 4'teki şartlar adı-soyadı, imza ile iş veya ikametgâh adresidir.",
+      "articleRefs": [
+        "6",
+        "4"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Adı-soyadı, imza ve adres bilgilerini taşıyan ama belli bir konuyu ihtiva etmeyen dilekçe incelenir mi?",
+      "back": "Hayır; belli bir konuyu ihtiva etmeyen dilekçe incelenemez.",
+      "explanation": "İncelenemezlik sebepleri ayrı ayrı işler. Biçim şartlarının tamam olması, konusu belirsiz bir dilekçeyi incelenebilir kılmaz.",
+      "articleRefs": [
+        "6"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Dilekçe Kanununa göre yetkili makama yapılan dilek veya şikâyet başvurusuna en geç kaç gün içinde cevap verilir?",
+      "back": "En geç otuz gün içinde, gerekçeli olarak.",
+      "explanation": "Cevap, başvurunun sonucu ya da yapılmakta olan işlemin safahatı hakkında verilir.",
+      "articleRefs": [
+        "7"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Dilekçe sahibine yapılmakta olan işlemin safahatı duyurulmuşsa, idare sonradan ne yapar?",
+      "back": "Alınan sonucu dilekçe sahibine ayrıca bildirir.",
+      "explanation": "Süre içinde verilen cevap sonucu ya da işlemin safahatını bildirebilir. Safahat duyurulmuşsa iş bitmez; sonuç da ayrıca bildirilir.",
+      "articleRefs": [
+        "7"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Otuz günlük gerekçeli cevap süresi yalnız Türk vatandaşlarının başvuruları için mi geçerlidir?",
+      "back": "Hayır; Türkiye'de ikamet eden yabancıların yetkili makamlara yaptığı başvurulara da en geç otuz gün içinde gerekçeli cevap verilir.",
+      "explanation": "Hüküm, Türk vatandaşlarının ve Türkiye'de ikamet eden yabancıların kendileri ve kamu ile ilgili dilek ve şikâyetlerini birlikte sayar.",
+      "articleRefs": [
+        "7"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Türkiye Büyük Millet Meclisine gönderilen dilekçenin Dilekçe Komisyonunda incelenmesi ve karara bağlanması kaç gün içinde sonuçlandırılır?",
+      "back": "Altmış gün içinde sonuçlandırılır.",
+      "explanation": "İnceleme ve karara bağlamanın esas ve usulleri Türkiye Büyük Millet Meclisi İçtüzüğünde gösterilir.",
+      "articleRefs": [
+        "8"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "İlgili kamu kurumu, Dilekçe Komisyonunca gönderilen dilekçeyi altmış gün içinde cevaplandırabilir mi?",
+      "back": "Hayır; kurum bu dilekçeyi otuz gün içinde cevaplandırır. Altmış gün, Dilekçe Komisyonundaki inceleme ve karara bağlamanın süresidir.",
+      "explanation": "Aynı fıkrada iki ayrı süre vardır: Dilekçe Komisyonunun işi bitirme süresi altmış gün, ilgili kamu kurum veya kuruluşlarının cevap süresi otuz gündür.",
+      "articleRefs": [
+        "8"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Türkiye Büyük Millet Meclisi Dilekçe Komisyonunun görevleriyle ilgili yetkileri nelerdir?",
+      "back": "Her türlü bilgi ve belgeyi almak, ilgilileri çağırıp bilgi almak, idari denetimin yapılmasını istemek, bilirkişi görevlendirmek ve yerinde inceleme yapmak.",
+      "explanation": "Bilgi ve belge; kamu kurum ve kuruluşları, kamu kurumu niteliğindeki meslek kuruluşları ile özel kuruluşlardan alınabilir. Yetki kullanıldığında kamu kurum ve kuruluşları ile kamu personeli, talep edilen bilgi ve belgeyi vermekle, idari denetimi yapmakla ve yerinde inceleme için gerekli tedbirleri almakla yükümlüdür.",
+      "articleRefs": [
+        "8"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Dilekçe Kanunu ne zaman yürürlüğe girer?",
+      "back": "Yayımı tarihinde yürürlüğe girer.",
+      "articleRefs": [
+        "10"
+      ]
+    }
+  ]
+}

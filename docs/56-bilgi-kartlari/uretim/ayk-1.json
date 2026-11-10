@@ -1,0 +1,293 @@
+{
+  "deck": {
+    "topicId": "5e2abdb1-eeb5-4fc0-8cb3-57b4aa6e07b2",
+    "legislationSlug": "5235-sayili-adli-yargi-ilk-derece-mahkemeleri-kurulus-gorev-ve-yetkileri-hakkinda-kanun",
+    "sourceLabel": "AI bilgi kartı — 5235 Sayılı Adlî Yargı İlk Derece Mahkemeleri Kuruluş, Görev ve Yetkileri Hakkında Kanun md 1–31",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: resmî madde metni + çıkmış sorular)"
+  },
+  "cards": [
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Adlî yargıda ikinci derece mahkemeleri hangileridir?",
+      "back": "Bölge adliye mahkemeleri.",
+      "explanation": "Adlî yargının ilk derece mahkemeleri ise hukuk ve ceza mahkemeleridir.",
+      "articleRefs": [
+        "3",
+        "2"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Hukuk mahkemeleri hangileridir?",
+      "back": "Sulh hukuk ve asliye hukuk mahkemeleri ile özel kanunlarla kurulan diğer hukuk mahkemeleri.",
+      "articleRefs": [
+        "4"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Asliye hukuk mahkemesi heyet hâlinde toplanır mı?",
+      "back": "Hayır. Sulh hukuk ve asliye hukuk mahkemeleri tek hâkimlidir.",
+      "explanation": "Bu maddede heyetle çalışma asliye ticaret mahkemesi için düzenlenir: sayılan dava ve işler bir başkan ve iki üyeden oluşan heyetçe yürütülür ve sonuçlandırılır.",
+      "articleRefs": [
+        "5"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Asliye ticaret mahkemesinde heyetçe görülen iş ve davalarda, belirli tahkikat işlemleri için naip hâkimi kim görevlendirebilir?",
+      "back": "Mahkeme başkanı; üyelerden birini naip hâkim olarak görevlendirebilir.",
+      "explanation": "Başkan ve üye hâkimler arasındaki dağılıma ilişkin esasları da işlerde denge sağlanacak biçimde mahkeme başkanı önceden tespit eder.",
+      "articleRefs": [
+        "5"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Asliye ticaret mahkemesinde heyetçe bakılacak bir davayla ilgili ihtiyati tedbir talebini kim karara bağlar?",
+      "back": "Heyet. Talep dava açılmadan önce de yapılsa, açıldıktan sonra da yapılsa heyet inceler ve karara bağlar.",
+      "explanation": "Aynı kural ihtiyati haciz talepleri için de geçerlidir. Heyetin görev alanı dışında kalan uyuşmazlıklar ise mahkeme hâkimlerinden biri tarafından görülür ve karara bağlanır.",
+      "articleRefs": [
+        "5"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Asliye hukuk mahkemeleri hangi dava ve işlere bakar?",
+      "back": "Sulh hukuk mahkemelerinin görevleri dışında kalan, özel hukuk ilişkilerinden doğan her türlü dava ve işlere bakar. Kanunların verdiği diğer dava ve işler de bunlara dahildir.",
+      "explanation": "Özel kanunlarla kurulan hukuk mahkemelerinin görevleri saklıdır.",
+      "articleRefs": [
+        "6"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Hukuk mahkemelerinin yargı çevresi il ve ilçe sınırlarına bakılmaksızın belirlenebilir mi?",
+      "back": "Evet. Adalet Bakanlığının önerisi üzerine Hâkimler ve Savcılar Kurulu bunu yapabilir; özel kanunlarla kurulanlar da buna dahildir.",
+      "explanation": "Kural olarak yargı çevresi, mahkemenin bulunduğu il merkezi ve ilçeler ile bunlara adlî yönden bağlanan ilçelerin idarî sınırlarıdır. Sınırlardan bağımsız belirleme, \"Ancak\" ile başlayan cümledeki istisnadır ve Bakanlık önerisine bağlıdır.",
+      "articleRefs": [
+        "7"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Bir hukuk mahkemesinin kaldırılmasına kim karar verir?",
+      "back": "Hâkimler ve Savcılar Kurulu (metinde: Hâkimler ve Savcılar Yüksek Kurulu) karar verir. Bunu Adalet Bakanlığının önerisi üzerine, coğrafî durum ve iş yoğunluğunu gözeterek yapar.",
+      "explanation": "Yargı çevresinin değiştirilmesine de aynı usulle karar verilir. Özel kanunlarında yargı çevresi belirtilmemiş hukuk mahkemelerinin yargı çevresinin belirlenmesi de bu usule tabidir.",
+      "articleRefs": [
+        "7"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Ceza mahkemeleri hangileridir?",
+      "back": "Asliye ceza ve ağır ceza mahkemeleri ile özel kanunlarla kurulan diğer ceza mahkemeleri.",
+      "articleRefs": [
+        "8"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Ağır ceza mahkemesi kaç hâkimle toplanır?",
+      "back": "Bir başkan ve iki üye ile toplanır.",
+      "explanation": "Ağır ceza mahkemesinde bir başkan ile yeteri kadar üye bulunur. Asliye ceza mahkemeleri ise tek hâkimlidir.",
+      "articleRefs": [
+        "9"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Hâkimler ve Savcılar Kurulu bir ceza mahkemesinin daireleri arasında iş dağılımı yaptığında, o tarihte görülmekte olan bir dava iş bölümü gerekçesiyle başka daireye gönderilebilir mi?",
+      "back": "Hayır. İş dağılımının yapıldığı tarih itibarıyla görülmekte olan davalarda daireler, dosyaları iş bölümü gerekçesiyle diğer bir daireye gönderemez.",
+      "explanation": "Özel kanunlarda başkaca hüküm yoksa iş dağılımını Hâkimler ve Savcılar Kurulu (metinde: Hâkimler ve Savcılar Yüksek Kurulu) belirleyebilir; bunu ihtisaslaşmanın sağlanması amacıyla yapar. Bu kararlar Resmî Gazete'de yayımlanır. Daireler tevzi edilen davalara bakmakla yükümlüdür.",
+      "articleRefs": [
+        "9"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Sulh ceza hâkimliği hangi işler için kurulmuştur?",
+      "back": "Soruşturmalarda hâkim tarafından verilmesi gereken kararları almak ve işleri yapmak için kurulmuştur. Bunlara karşı yapılan itirazları incelemek de görevidir.",
+      "explanation": "Kanunların ayrıca görevli kıldığı hâller saklıdır. Sulh ceza hâkimliğinde bir yazı işleri müdürü ile yeteri kadar personel bulunur.",
+      "articleRefs": [
+        "10"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Müstakilen sulh ceza hâkimliğinde görevlendirilen bir hâkim, adli yargı adalet komisyonunca başka mahkemede görevlendirilebilir mi?",
+      "back": "Hayır. Bu hâkimler adli yargı adalet komisyonlarınca başka mahkemelerde veya işlerde görevlendirilemez.",
+      "explanation": "İş durumunun gerekli kıldığı yerlerde birden fazla sulh ceza hâkimliği kurulabilir; bu durumda hâkimlikler numaralandırılır.",
+      "articleRefs": [
+        "10"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Asliye ceza mahkemeleri hangi dava ve işlere bakar?",
+      "back": "Sulh ceza hâkimliği ve ağır ceza mahkemelerinin görevleri dışında kalan dava ve işlere bakar.",
+      "explanation": "Kanunların ayrıca görevli kıldığı hâller saklıdır.",
+      "articleRefs": [
+        "11"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Ağır ceza mahkemesi, kaç yıldan fazla hapis cezası gerektiren suçlarla ilgili dava ve işlere bakar?",
+      "back": "On yıldan fazla hapis cezası gerektiren suçlara bakar. Ağırlaştırılmış müebbet ve müebbet hapis gerektiren suçlar da ağır ceza mahkemesinin görevindedir.",
+      "explanation": "Kanunların ayrıca görevli kıldığı hâller saklıdır. Şu hükümler de saklıdır: Anayasa Mahkemesi ve Yargıtayın yargılayacağı kişilere ilişkin hükümler, askerî mahkemelerin görevlerine ilişkin hükümler ve çocuklara özgü kovuşturma hükümleri.",
+      "articleRefs": [
+        "12"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Türk Ceza Kanununda adı ve maddesi anılarak ağır ceza mahkemesinin görevine verilen suçlar arasında hangileri vardır?",
+      "back": "Yağma (m. 148), irtikâp (m. 250/1 ve 2), resmî belgede sahtecilik (m. 204/2) ve hileli iflâs (m. 161).",
+      "explanation": "Ağır ceza mahkemesinde ayrıca şu suçlar da görülür: İkinci Kitap Dördüncü Kısmının Dört, Beş, Altı ve Yedinci Bölümünde tanımlanan suçlar (318, 319, 324, 325 ve 332 nci maddeler hariç) ve 3713 sayılı Terörle Mücadele Kanununun kapsamına giren suçlar.",
+      "articleRefs": [
+        "12"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Mahkemenin görevi belirlenirken suçun ağırlaştırıcı nedenleri gözetilir mi?",
+      "back": "Hayır. Ağırlaştırıcı veya hafifletici nedenler gözetilmeksizin, kanunda yer alan suçun cezasının üst sınırı esas alınır.",
+      "articleRefs": [
+        "14"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Türk Ceza Kanunu İkinci Kitap Dördüncü Kısmının Dördüncü–Yedinci Bölümlerindeki suçlar ile 3713 sayılı Kanun kapsamındaki suçlar sebebiyle açılan davalar hangi mahkemede görülür?",
+      "back": "Suçun işlendiği yerin bağlı olduğu ilin adıyla anılan ağır ceza mahkemesinde görülür.",
+      "explanation": "Türk Ceza Kanununun 318 inci, 319 uncu, 324 üncü, 325 inci ve 332 nci maddelerinde tanımlanan suçlar bu kuralın dışındadır.",
+      "articleRefs": [
+        "15"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "İlk derece Cumhuriyet başsavcılığına kaç Cumhuriyet başsavcıvekili atanabilir?",
+      "back": "Bir veya birden fazla. Gerekli görülen yerlerde, Adalet Bakanlığının önerisi üzerine Hâkimler ve Savcılar Kurulunun (metinde: Hâkimler ve Savcılar Yüksek Kurulu) kararıyla atanır.",
+      "explanation": "Cumhuriyet başsavcılığında bir Cumhuriyet başsavcısı ve yeteri kadar Cumhuriyet savcısı bulunur.",
+      "articleRefs": [
+        "16"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "İlk derece Cumhuriyet başsavcılığında, Cumhuriyet savcılarının soruşturmayı sonlandıran kararları arasındaki farklılıkları gidermekle kim görevli ve yetkilidir?",
+      "back": "Cumhuriyet başsavcısı. Bu kararların kanuna uygunluğunu denetlemekle de görevli ve yetkilidir.",
+      "explanation": "Ağır ceza mahkemesi Cumhuriyet başsavcısının gözetim ve denetim yetkisi, yargı çevresindeki Cumhuriyet başsavcıları, başsavcıvekilleri, savcıları ve bağlı birimler üzerindedir. Asliye ceza mahkemesi Cumhuriyet başsavcısının yetkisi ise o yer yargı çevresinde görevli Cumhuriyet savcıları ve bağlı birimler üzerindedir.",
+      "articleRefs": [
+        "18"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Ağır ceza mahkemesinin yargı çevresindeki bir Cumhuriyet başsavcılığı, bu mahkemenin görevine giren bir suçun soruşturmasında ivedi ve zorunlu işleri tamamlayınca ne yapar?",
+      "back": "Düşünce yazısına soruşturma evrakını ekler ve ağır ceza mahkemesinin Cumhuriyet başsavcılığına gönderir.",
+      "explanation": "Aynı kural, özel kanunlarla kurulan diğer ceza mahkemelerinin görevine giren suçlarda da uygulanır. Büyükşehir belediye sınırları içindeki Cumhuriyet başsavcıları, bu yer ceza mahkemelerinin yargı çevresinde yetkilidir. Ancak ağır ceza ve özel kanunlarla kurulan ceza mahkemelerinin görevine giren işlerde bu gönderme kuralı uygulanır.",
+      "articleRefs": [
+        "21"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Bölge adliye mahkemelerini kim kurar?",
+      "back": "Adalet Bakanlığı kurar; Hâkimler ve Savcılar Kurulunun (metinde: Hâkimler ve Savcılar Yüksek Kurulu) olumlu görüşünü alır. Yerler, coğrafi durum ve iş yoğunluğu göz önünde tutularak belirlenir.",
+      "explanation": "Yargı çevrelerinin belirlenmesine, değiştirilmesine veya bu mahkemelerin kaldırılmasına ise Adalet Bakanlığının önerisi üzerine Hâkimler ve Savcılar Kurulu (metinde: Hâkimler ve Savcılar Yüksek Kurulu) karar verir. Bu kararlar Resmî Gazetede yayımlanır.",
+      "articleRefs": [
+        "25"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Her bölge adliye mahkemesinde kaç başkan bulunur?",
+      "back": "Bir başkan bulunur. Başkanlık, başkan ile yazı işleri müdürlüğünden oluşur.",
+      "articleRefs": [
+        "27"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Bölge adliye mahkemesi ceza veya hukuk daireleri başkanlar kuruluna, daire başkanının mazereti hâlinde başka bir dairenin başkanı katılır mı?",
+      "back": "Hayır. Daire başkanının mazereti hâlinde kurula o dairenin kıdemli üyesi katılır.",
+      "explanation": "Kurullar, bölge adliye mahkemesi başkanı ve ilgili dairelerin başkanlarından oluşur. Bölge adliye mahkemesi başkanı bulunmadığında kurulun başkanlığını ilgili daire başkanlarından kıdemli olanı yerine getirir.",
+      "articleRefs": [
+        "28"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Her bölge adliye mahkemesinde en az kaç hukuk dairesi bulunur?",
+      "back": "En az üç hukuk dairesi bulunur.",
+      "explanation": "Gerekli hâllerde daire sayısı artırılıp azaltılabilir. Bunu Adalet Bakanlığının önerisi üzerine Hâkimler ve Savcılar Kurulu (metinde: Hâkimler ve Savcılar Yüksek Kurulu) yapar.",
+      "articleRefs": [
+        "29"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Her bölge adliye mahkemesinde en az kaç ceza dairesi bulunur?",
+      "back": "En az iki ceza dairesi bulunur.",
+      "explanation": "Dairelerde bir başkan ile yeteri kadar üye bulunur.",
+      "articleRefs": [
+        "29"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Bölge adliye mahkemesi adalet komisyonunda daire başkanları arasından kaç asıl üye belirlenir?",
+      "back": "Bir asıl üye belirlenir. Bu üyeyi Hâkimler ve Savcılar Kurulu (metinde: Hâkimler ve Savcılar Yüksek Kurulu) belirler.",
+      "explanation": "Komisyon, bölge adliye mahkemesi başkanının başkanlığında toplanır; bu asıl üye ile bölge adliye mahkemesi Cumhuriyet başsavcısından oluşur. Kurul ayrıca daire başkan veya üyeleri arasından bir yedek üye belirler. Komisyon eksiksiz toplanır ve çoğunlukla karar verir.",
+      "articleRefs": [
+        "31"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Bölge adliye mahkemesi adalet komisyonunda Cumhuriyet başsavcısının yokluğunda komisyona kim katılır?",
+      "back": "Cumhuriyet başsavcıvekili katılır.",
+      "explanation": "Başkanın yokluğunda en kıdemli daire başkanı, asıl üyenin yokluğunda ise yedek üye komisyona katılır.",
+      "articleRefs": [
+        "31"
+      ]
+    }
+  ]
+}

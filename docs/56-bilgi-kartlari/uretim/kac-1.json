@@ -1,0 +1,285 @@
+{
+  "deck": {
+    "topicId": "1589379f-ddfe-4ce9-b572-543838b93032",
+    "legislationSlug": "5607-sayili-kacakcilikla-mucadele-kanunu",
+    "sourceLabel": "AI bilgi kartı — 5607 Sayılı Kaçakçılıkla Mücadele Kanunu md 1–6",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: resmî madde metni + çıkmış sorular)"
+  },
+  "cards": [
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Kaçakçılıkla Mücadele Kanununun amacı nedir?",
+      "back": "Kaçakçılık fiillerini ve yaptırımlarını, kaçakçılığı önleme, izleme ve araştırma usûl ve esaslarını belirlemektir.",
+      "articleRefs": [
+        "1"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Kaçakçılıkla Mücadele Kanununda \"gümrük vergileri\" neyi ifade eder?",
+      "back": "Gümrük idaresinin veya başka idarelerin, eşyanın ithali veya ihracına bağlı olarak uyguladığı vergileri ve diğer malî yükümlülükleri ifade eder.",
+      "articleRefs": [
+        "2"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Kaçakçılıkla Mücadele Kanununa göre ithal eşyasının gümrüklenmiş değeri nasıl bulunur?",
+      "back": "Eşyanın CIF kıymetine gümrük vergileri eklenir; gümrüklenmiş değer bu toplamdır.",
+      "explanation": "Gümrüklenmiş değer uluslararası kıymet sözleşmesine göre belirlenir. İhraç eşyasında FOB kıymeti ile gümrük vergileri toplanır.",
+      "articleRefs": [
+        "2"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Kaçakçılıkla Mücadele Kanununa göre akaryakıt tanımına hangi ürünler girer?",
+      "back": "Benzin, gaz yağı, jet yakıtı, motorin, fuel-oil, sıvılaştırılmış petrol gazları, doğal gaz gibi ürünler girer. Akaryakıt yerine kullanılan petrol türevleri, bunların karışımları ve diğer ürünler de tanımın içindedir.",
+      "articleRefs": [
+        "2"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Eşyayı gümrük işlemlerine tabi tutmadan ülkeye sokan kişiye hangi ceza verilir?",
+      "back": "Bir yıldan beş yıla kadar hapis ve on bin güne kadar adlî para cezası verilir.",
+      "explanation": "Eşya gümrük kapıları dışından ülkeye sokulmuşsa bu ceza üçte birinden yarısına kadar artırılır.",
+      "articleRefs": [
+        "3"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Aldatıcı işlem ve davranışlarla gümrük vergilerini ödemeden eşyayı ülkeye sokan kişiye bir yıldan beş yıla kadar hapis cezası mı verilir?",
+      "back": "Hayır. Bu kişiye iki yıldan beş yıla kadar hapis ve on bin güne kadar adlî para cezası verilir.",
+      "explanation": "Bir yıldan beş yıla kadar hapis, eşyayı gümrük işlemlerine hiç tabi tutmadan ülkeye sokan kişinin cezasıdır. Vergiler aldatıcı işlemle kısmen veya tamamen ödenmemişse cezanın alt sınırı iki yıldır.",
+      "articleRefs": [
+        "3"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Özel kanunlarla gümrük vergilerinden muaf olarak ithal edilen eşyayı ithal amacı dışında satan kişiye hangi ceza verilir?",
+      "back": "Altı aydan iki yıla kadar hapis ve beş bin güne kadar adlî para cezası verilir.",
+      "explanation": "Aynı ceza şu kişilere de verilir: eşyayı ithal amacı dışında başka bir kullanıma tahsis eden veya devreden ve bu özelliğini bilerek satın alan ya da kabul eden.",
+      "articleRefs": [
+        "3"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "İthali kanun gereği yasak olan eşyayı ülkeye sokan kişiye hangi ceza verilir?",
+      "back": "İki yıldan altı yıla kadar hapis ve yirmi bin güne kadar adlî para cezası verilir.",
+      "explanation": "Bu ceza, fiil daha ağır cezayı gerektiren bir suç oluşturmuyorsa uygulanır.",
+      "articleRefs": [
+        "3"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "İthali yasak eşyayı bu özelliğini bilerek satın alan kişi, eşyayı ülkeye sokandan daha hafif bir cezayla mı cezalandırılır?",
+      "back": "Hayır. Bu özelliği bilerek satın alan, satışa arz eden, satan, taşıyan veya saklayan kişi, eşyayı ülkeye sokanla aynı cezayı alır.",
+      "explanation": "İthali yasak olmayan kaçak eşyada durum farklıdır. Fiile iştirak etmeden, bilerek ve ticarî amaçla satın alan kişiye bir yıldan üç yıla kadar hapis ve beş bin güne kadar adlî para cezası verilir.",
+      "articleRefs": [
+        "3"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "İhracat beyannamesinde gösterilen eşya ile gerçekte ihraç edilen eşya arasında yüzde onu aşmayan bir fark varsa hangi hükümlere göre işlem yapılır?",
+      "back": "Yalnız 4458 sayılı Gümrük Kanunu hükümlerine göre işlem yapılır.",
+      "explanation": "Fıkranın asıl kuralı şudur: Teşvik, sübvansiyon veya parasal iadeden yararlanmak için ihracatı gerçekleşmiş gibi gösteren ya da ihraç malının cins, miktar, evsaf veya fiyatını değişik gösteren kişiye bir yıldan beş yıla kadar hapis ve on bin güne kadar adlî para cezası verilir.",
+      "articleRefs": [
+        "3"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Kaçakçılık suçunun konusu akaryakıt, tütün mamulleri veya alkollü içkiyse cezaya ne olur?",
+      "back": "Ceza yarısından iki katına kadar artırılır. Bu artırımla verilecek ceza üç yıldan az olamaz.",
+      "explanation": "Aynı artırım makaron, yaprak sigara kâğıdı, etil alkol ve metanol için de uygulanır. Akaryakıt kavramına akaryakıt yerine kullanılan petrol türevleri ve diğer ürünler de girer.",
+      "articleRefs": [
+        "3",
+        "2"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Ulusal marker içermeyen akaryakıtın kaçak olarak yurda sokulduğu anlaşılırsa, ulusal marker hükmündeki iki yıldan beş yıla kadar hapis cezası mı uygulanır?",
+      "back": "Hayır. Bu hâlde ceza, kaçakçılık konusu eşya akaryakıt olduğunda cezaları yarısından iki katına kadar artıran fıkraya göre verilir.",
+      "explanation": "Ulusal marker hükmüne göre, ulusal marker uygulamasına tabi olup da marker seviyesi Enerji Piyasası Düzenleme Kurumunun belirlediği seviyenin altında olan veya hiç marker içermeyen akaryakıtı ticari amaçla üreten, bulunduran veya nakleden; satışa arz eden veya satan; bu özelliğini bilerek ve ticari amaçla satın alan kişiye iki yıldan beş yıla kadar hapis ve yirmi bin güne kadar adli para cezası verilir.",
+      "articleRefs": [
+        "3"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "İçine kıyılmış tütün doldurulmuş makaronu ticari amaçla satan kişiye hangi ceza verilir?",
+      "back": "Üç yıldan altı yıla kadar hapis cezası verilir.",
+      "explanation": "Aynı ceza, makaron veya yaprak sigara kâğıdını parçalanmış tütün ya da tütün dışında herhangi bir madde doldurulmuş olarak ticari amaçla satışa arz eden, bulunduran ve nakleden kişilere de verilir.",
+      "articleRefs": [
+        "3"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Kaçakçılıkla Mücadele Kanununun 3 üncü maddesindeki fiiller teşebbüs aşamasında kalırsa nasıl cezalandırılır?",
+      "back": "Tamamlanmış gibi cezalandırılır.",
+      "articleRefs": [
+        "3"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Kaçakçılık suçunun konusu olan eşyanın değeri fahişse ceza ne oranda artırılır?",
+      "back": "Ceza yarısından bir katına kadar artırılır.",
+      "explanation": "Eşyanın değeri hafifse cezalar yarısına kadar, pek hafifse üçte birine kadar indirilir.",
+      "articleRefs": [
+        "3"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Kaçakçılıkla Mücadele Kanunundaki bir suç bir örgütün faaliyeti çerçevesinde işlenirse ceza ne kadar artırılır?",
+      "back": "Ceza iki kat artırılır.",
+      "articleRefs": [
+        "4"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Kaçakçılıkla Mücadele Kanunundaki bir suç üç veya daha fazla kişi tarafından birlikte işlenirse ceza iki kat mı artırılır?",
+      "back": "Hayır. Bu hâlde ceza yarı oranında artırılır. İki kat artırım, suçun bir örgütün faaliyeti çerçevesinde işlenmesi hâline özgüdür.",
+      "explanation": "Artırım, suçun üç veya daha fazla kişi tarafından birlikte işlenmesine bağlanmıştır.",
+      "articleRefs": [
+        "4"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Kaçakçılık suçunun hangi görevdeki kişilerce işlenmesi cezayı yarı oranında artırır?",
+      "back": "Kaçakçılık fiillerini önlemek, izlemek, araştırmak ve soruşturmakla görevli kişilerce işlenmesi cezayı artırır. Meslek ve sanatın sağladığı kolaylıklardan yararlanılması da aynı artırımı doğurur.",
+      "articleRefs": [
+        "4"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Kaçakçılık suçu belgede sahtecilik yapılarak işlenirse kaçakçılık cezası yarı oranında artırılır mı?",
+      "back": "Hayır. Kaçakçılık cezası artırılmaz; bunun yerine belgede sahtecilik suçundan da ayrıca cezaya hükmolunur.",
+      "articleRefs": [
+        "4"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Kaçakçılık fiillerini önlemek, izlemek ve araştırmakla görevli olup suçun işlenmesine kasten göz yuman kişi nasıl sorumlu tutulur?",
+      "back": "İşlenen suçun müşterek faili olarak sorumlu tutulur.",
+      "articleRefs": [
+        "4"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Kaçak eşya Devletin siyasî, iktisadî veya askerî güvenliğini bozacak nitelikteyse hapis cezası en az ne olur?",
+      "back": "Hapis cezası on yıldan az olamaz. Bu kural, fiil daha ağır cezayı gerektiren bir suç oluşturmuyorsa uygulanır.",
+      "explanation": "Eşyanın çevre veya toplum sağlığını tehdit edecek nitelikte olması da aynı sonucu doğurur.",
+      "articleRefs": [
+        "4"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Kaçakçılık suçu bir tüzel kişinin faaliyeti çerçevesinde veya yararına işlenirse ne olur?",
+      "back": "Tüzel kişilere özgü güvenlik tedbirlerine ayrıca hükmolunur.",
+      "articleRefs": [
+        "4"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Kaçakçılık suçuna iştirak eden kişi, resmî makamlar haber almadan önce fiili, diğer failleri ve kaçak eşyanın saklandığı yerleri merciine bildirirse hangi şartla cezalandırılmaz?",
+      "back": "Verdiği bilgi faillerin yakalanmasını veya kaçak eşyanın ele geçirilmesini sağlarsa cezalandırılmaz.",
+      "explanation": "Bu imkân, 3 üncü maddede tanımlanan suçlardan birine iştirak etmiş kişiye tanınır.",
+      "articleRefs": [
+        "5"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Resmî makamlar haber aldıktan sonra fiilin bütünüyle ortaya çıkmasına hizmet ve yardım eden kişinin cezası ne oranda indirilir?",
+      "back": "Ceza üçte iki oranında indirilir.",
+      "articleRefs": [
+        "5"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Ödeme yoluyla etkin pişmanlıkta fail, ceza indiriminden yararlanmak için Devlet Hazinesine ne kadar para öder?",
+      "back": "Suç konusu eşyanın gümrüklenmiş değerinin iki katı kadar para ödemesi gerekir.",
+      "explanation": "Ödeme soruşturma evresi sona erinceye kadar yapılırsa ceza yarı oranında indirilir. Kovuşturma evresinde hüküm verilinceye kadar yapılırsa indirim üçte bir oranındadır. İthali yasak eşya suçunda (md 3/7) bu indirim uygulanmaz. Gümrüklenmiş değer, ithal eşyasında CIF kıymeti ile gümrük vergilerinin toplamıdır.",
+      "articleRefs": [
+        "5",
+        "2"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Bir örgütün faaliyeti çerçevesinde kaçakçılık suçu işleyen fail, gümrüklenmiş değerin iki katını ödeyerek ceza indiriminden yararlanabilir mi?",
+      "back": "Hayır. Ödeme yoluyla etkin pişmanlık indirimi, suç bir örgütün faaliyeti çerçevesinde işlenmişse uygulanmaz. Mükerrirlere de uygulanmaz.",
+      "articleRefs": [
+        "5"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Ödeme yoluyla etkin pişmanlık indirimi imkânı soruşturma evresinde şüpheliye kim tarafından ihtar edilir?",
+      "back": "Cumhuriyet savcısı ihtar eder. Soruşturma evresinde ihtar yapılmamışsa kovuşturma evresinde hâkim sanığa ihtar eder.",
+      "articleRefs": [
+        "5"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Yolcunun beyanına aykırı olarak üzerinde, eşyası arasında veya taşıma aracında çıkan eşyaya hangi hâllerde 3 üncü madde hükümleri uygulanır?",
+      "back": "Eşya ticarî mahiyetteyse ya da ithali veya ihracı yasaksa uygulanır.",
+      "articleRefs": [
+        "6"
+      ]
+    }
+  ]
+}

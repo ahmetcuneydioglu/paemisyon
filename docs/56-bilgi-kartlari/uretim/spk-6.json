@@ -1,0 +1,279 @@
+{
+  "deck": {
+    "topicId": "52223b97-98b3-408b-93f4-3e3a03bf509b",
+    "legislationSlug": "2820-siyasi-partiler-kanunu",
+    "sourceLabel": "AI bilgi kartı — 2820 Siyasi Partiler Kanunu md 103–118, 120–124, Ek 1, Ek 2, Ek 3, Ek 5, Ek 6, Ek 7",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: resmî madde metni + çıkmış sorular)"
+  },
+  "cards": [
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Fiiller parti üyelerince yoğun biçimde işleniyorsa, partinin odak sayılması için bu durumu hangi organların benimsemesi gerekir?",
+      "back": "Büyük kongre, genel başkan ya da merkez karar veya yönetim organları. Türkiye Büyük Millet Meclisindeki grup genel kurulu ya da grup yönetim kurulunun benimsemesi de yeterlidir.",
+      "explanation": "Fiiller doğrudan bu parti organlarınca kararlılık içinde işlenirse parti yine odak sayılır.",
+      "articleRefs": [
+        "103"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Partinin odak sayılması için, üyelerce yoğun biçimde işlenen fiillerin yetkili parti organlarınca açıkça benimsenmesi şart mıdır?",
+      "back": "Hayır. Bu organların fiilleri zımnen ya da açıkça benimsemesi yeterlidir.",
+      "explanation": "Fiiller doğrudan büyük kongre, genel başkan, merkez karar veya yönetim organları ya da meclis grup organlarınca kararlılık içinde işlenmişse de parti odak sayılır.",
+      "articleRefs": [
+        "103"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Bir parti, 101 inci madde dışındaki emredici hükümlere aykırılık hâlindeyse, o parti aleyhine Anayasa Mahkemesine kim başvurur?",
+      "back": "Cumhuriyet Başsavcılığı başvurur; başvuruyu re'sen ve yazı ile yapar.",
+      "explanation": "Diğer kanunların siyasi partilerle ilgili emredici hükümlerine aykırılık da bu kapsamdadır. Anayasa Mahkemesi aykırılık görürse, aykırılığın giderilmesi için parti hakkında ihtar kararı verir.",
+      "articleRefs": [
+        "104"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Siciline kayıtlı başka bir partinin ismini iltibasa yol açacak biçimde kullanan parti aleyhine Anayasa Mahkemesine kimler başvurabilir?",
+      "back": "Cumhuriyet Başsavcılığı re'sen başvurabilir. İlgili siyasi parti de doğrudan yazı ile başvurabilir.",
+      "explanation": "Aynı yol amblem ve rumuzlar için de geçerlidir. Anayasa Mahkemesince temelli kapatılan partilerin isim, amblem ve rumuzlarını tüzüğünde aynen ya da iltibasa mahal verecek şekilde kabul eden veya kullanan parti için de bu yol açıktır.",
+      "articleRefs": [
+        "104"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "İsim, amblem ve rumuz başvurusunda Anayasa Mahkemesi incelemesini en geç ne kadar sürede yapar?",
+      "back": "Başvuru tarihinden itibaren en geç otuz gün içinde yapar. Aykırılık görürse isim, amblem ve rumuzların hükümsüzlüğüne ve sicilden terkinine karar verir.",
+      "explanation": "İnceleme, siyasi parti siciline kayıt önceliğine göre yapılır. Ölçüt, 96 ncı maddenin birinci fıkrasına aykırılıktır.",
+      "articleRefs": [
+        "104"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "101, 103 ve 104 üncü maddelerdeki fiil ve haller hakkında bilgi edinen idari merciler ne yapar?",
+      "back": "Bu bilgileri mahalli Cumhuriyet savcılığına derhal ve yazılı olarak intikal ettirirler.",
+      "explanation": "Mahkemeler de bu fiil ve halleri öğrendiklerinde durumu derhal mahalli Cumhuriyet savcılığına yazıyla duyururlar.",
+      "articleRefs": [
+        "106"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Mahalli Cumhuriyet savcılıkları, 101, 103 ve 104 üncü maddelerdeki fiil ve hallere ilişkin bilgileri kimlere bildirir?",
+      "back": "Hemen Adalet Bakanlığına bildirir; bilgileri belgeleriyle birlikte Cumhuriyet Başsavcılığına da yazıyla iletir.",
+      "articleRefs": [
+        "106"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Bir siyasi partinin kendi kapanmasına hangi organ karar verebilir?",
+      "back": "Yalnız büyük kongre karar verebilir; bu karar gizli oyla alınır.",
+      "explanation": "Kapanma kararını, kapanan partinin genel başkanlığı derhal şu makamlara bildirir: Türkiye Büyük Millet Meclisi Başkanlığı, Anayasa Mahkemesi Başkanlığı, Cumhuriyet Başsavcılığı ve İçişleri Bakanlığı.",
+      "articleRefs": [
+        "109"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Büyük kongrede partinin kapanması kararı için karar yeter sayısı nedir?",
+      "back": "Parti tüzüğünde belirtilen toplanma yeter sayısının salt çoğunluğudur.",
+      "articleRefs": [
+        "109"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Kapanan partinin tüzelkişiliği, kapanma kararının İçişleri Bakanlığına bildirildiği tarihte mi sona erer?",
+      "back": "Hayır. Tüzelkişilik, büyük kongrenin kapanma kararını aldığı tarihte sona erer.",
+      "explanation": "Bildirimi kapanan partinin genel başkanlığı derhal yapar. Tüzelkişiliğin sona erdiği an ise kararın alındığı tarihtir.",
+      "articleRefs": [
+        "109"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Kendi kararıyla kapanan bir partinin malları başka bir siyasi partiye hangi şartla devredilebilir?",
+      "back": "Büyük kongre, toplanma yeter sayısının salt çoğunluğunun oyuyla karar verir ve devralacak parti bunu kabul eder. Aksi hâlde mallar Hazineye geçer.",
+      "explanation": "Kapanma kararı başka bir partiyle birleşmek için alınmışsa mallar birleşilecek partiye devredilebilir. Bunun için o partinin de kabul etmesi şarttır.",
+      "articleRefs": [
+        "110"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Bir siyasi partinin kapanma kararını hangi kurul uygular?",
+      "back": "Büyük kongrenin görevlendireceği tasfiye kurulu uygular (metinde: Hükümetin devamlı gözetim ve denetimi altında).",
+      "articleRefs": [
+        "110"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Hakkında kapatma davası açılmış bir parti kapanma ve mal devri kararı alırsa, devir hemen yapılabilir mi?",
+      "back": "Hayır. Soruşturma veya dava sonuçlanıncaya kadar devir işlemi yapılmaz.",
+      "explanation": "Kural, kapatılması için hakkında soruşturma açılmış partiler için de geçerlidir.",
+      "articleRefs": [
+        "110"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Parti kongresi oylamalarının sayım ve dökümüne hile karıştıran kişiye hangi ceza verilir?",
+      "back": "Bir yıldan üç yıla kadar hapis cezası verilir.",
+      "explanation": "Önseçimler de kapsamdadır. Her kademedeki her çeşit parti görevlisi ile yedeklerinin seçimi için yapılan oylamalar da aynı hükme tabidir.",
+      "articleRefs": [
+        "112"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "60 ıncı maddede yazılı parti defter ve kayıtlarını hiç tutmayan kişiye hangi ceza verilir?",
+      "back": "Altı aydan bir yıla kadar hapis cezası verilir.",
+      "articleRefs": [
+        "113"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "60 ıncı maddedeki defterleri gizleyen kişi, defterleri hiç tutmayanla aynı cezayı mı alır?",
+      "back": "Hayır. Defter ve kayıtları tahrif eden, yok eden ya da gizleyen kişi bir yıldan üç yıla kadar hapis cezası alır.",
+      "explanation": "Defter ve kayıtları tutmamanın cezası altı aydan bir yıla kadar hapistir.",
+      "articleRefs": [
+        "113"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Yazılı üyelik başvurusu olmayan bir kişiyi gerçeğe aykırı olarak partiye üye kaydedene hangi ceza verilir?",
+      "back": "Bir aydan üç aya kadar hapis ile elli günden iki yüz güne kadar adli para cezası verilir.",
+      "explanation": "Mevcut olmayan kişileri gerçeğe aykırı olarak üye kaydetmek de aynı cezayı gerektirir.",
+      "articleRefs": [
+        "114"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Kanuna aykırı olarak bir partiye bağışta bulunan kişiye hangi ceza verilir?",
+      "back": "Altı aydan bir yıla kadar hapis cezası verilir. Bağışı kabul eden parti sorumlusu da aynı cezayı alır.",
+      "explanation": "Aynı hüküm, kanuna aykırı kredi veya borç veren ya da alan kişilere uygulanır. Bu krediyi veya borcu alan ya da veren parti sorumlusu da aynı cezayı alır.",
+      "articleRefs": [
+        "116"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Yabancı bir devletten bağış kabul eden aday adayına hangi ceza verilir?",
+      "back": "Bir yıldan üç yıla kadar hapis cezası verilir; bağışı kabul eden parti sorumlusu ve aday da aynı cezayla cezalandırılır.",
+      "explanation": "Uluslararası kuruluşlardan ve Türk uyrukluğunda olmayan gerçek ve tüzel kişilerden yardım veya bağış kabul etmek de kapsamdadır. Parti sorumlusu ve aday da aynı cezayla cezalandırılır.",
+      "articleRefs": [
+        "116"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Genel barajı aşan partilere Devlet yardımı için her yıl bütçeye hangi oranda ödenek konur?",
+      "back": "O yılki genel bütçe gelirleri (B) Cetveli toplamının beşbinde ikisi oranında ödenek konur.",
+      "explanation": "Ödenek, yardım alacak partiler arasında paylaştırılır. Paylaştırma, genel seçim sonrasında Yüksek Seçim Kurulunca ilan edilen toplam geçerli oy sayılarıyla orantılıdır. Ödemeler, genel bütçe kanununun yürürlüğe girmesini takiben on gün içinde tamamlanır.",
+      "articleRefs": [
+        "Ek 1"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Genel barajı aşamayan bir parti, milletvekili genel seçimlerinde toplam geçerli oyların tam %3'ünü aldıysa Devlet yardımı alabilir mi?",
+      "back": "Hayır. Toplam geçerli oyların %3'ünden fazlasını alması gerekir. Bu yardım bir milyon Türk Lirasından az olamaz.",
+      "explanation": "Yardımın hesabında iki ölçü esas alınır: en az Devlet yardımı alan partinin aldığı yardım ve genel seçimlerdeki toplam geçerli oy. Yardım, partinin kazandığı oyla orantılı olarak yapılır.",
+      "articleRefs": [
+        "Ek 1"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Milletvekili genel seçiminin yapılacağı yıl, partilere Devlet yardımı kaç katı ödenir?",
+      "back": "Üç katı ödenir. Mahalli idareler genel seçim yılında iki katı ödenir; iki seçim aynı yıl yapılırsa ödeme üç katı geçemez.",
+      "explanation": "Katlı ödemeler, Yüksek Seçim Kurulunun seçim takvimine dair kararının ilanını izleyen 10 gün içinde yapılır.",
+      "articleRefs": [
+        "Ek 1"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Büyükşehir belediye başkanı, üyesi olduğu partinin hangi kongresinin tabii üyesidir?",
+      "back": "İl kongresinin tabii üyesidir.",
+      "explanation": "İlçe belediye başkanı ile ilçeye bağlı diğer belediyelerin başkanları ise ilçe kongresinin tabii üyesidir.",
+      "articleRefs": [
+        "Ek 2"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Büyükşehir belediye başkanı olmayan bir il belediye başkanı, partisinin il kongresinin tabii üyesi midir?",
+      "back": "Hayır. Merkez ilçe kongresinin tabii üyesidir; merkez ilçe çevresindeki diğer belediyelerin başkanları da öyle.",
+      "articleRefs": [
+        "Ek 2"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Siyasi Partiler Kanununda geçen \"merkez karar ve yönetim kurulu\" deyiminden ne anlaşılır?",
+      "back": "13 üncü maddedeki merkez karar, yönetim ve icra organları anlaşılır.",
+      "articleRefs": [
+        "Ek 3"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "66, 70 ve 74 üncü maddelerdeki parasal değerler her yıl hangi oranda artırılır?",
+      "back": "213 sayılı Vergi Usul Kanunu uyarınca o yıl için tespit ve ilan olunan yeniden değerleme oranında artırılır. Artış her takvim yılı başından geçerlidir.",
+      "articleRefs": [
+        "Ek 6"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Form veya sürekli form şeklinde tutulacak parti defterleri kullanılmaya başlanmadan önce ne yapılmalıdır?",
+      "back": "Her bir sayfasına numara verilip sayfalar onaylatılmalıdır. Onaylı sayfalar kullanıldıktan sonra defter hâline getirilerek muhafaza edilir.",
+      "explanation": "Kanuna göre tutulacak sicil, dosya, defter ve kayıtlar elektronik ortamda da tutulabilir. Yargıtay Cumhuriyet Başsavcılığına sicil için elektronik veri aktarımını ancak siyasi parti genel merkezleri ve bu işle görevlendirilen kişiler yapar.",
+      "articleRefs": [
+        "Ek 7"
+      ]
+    }
+  ]
+}

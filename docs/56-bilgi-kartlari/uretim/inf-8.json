@@ -1,0 +1,297 @@
+{
+  "deck": {
+    "topicId": "3a7fb703-175b-4a01-a217-a00766c51d07",
+    "legislationSlug": "5275-ceza-ve-guvenlik-tedbirlerinin-infazi-hakkinda-kanun",
+    "sourceLabel": "AI bilgi kartı — 5275 Ceza ve Güvenlik Tedbirlerinin İnfazı Hakkında Kanun md 86–99",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: resmî madde metni + çıkmış sorular)"
+  },
+  "cards": [
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Kurum görevlileri ve dış güvenlik görevlileri ceza infaz kurumuna girerken duyarlı kapıdan geçmekten muaf mıdır?",
+      "back": "Hayır. Sıfat ve görevi ne olursa olsun, kuruma giren herkes duyarlı kapıdan geçmek zorundadır. Kurum görevlileri ve dış güvenlik görevlileri de buna dahildir.",
+      "explanation": "Elle aramaya ilişkin ayrık bir durum vardır. Milletvekilleri, mülkî amirler, hâkim, Cumhuriyet savcıları, avukatlar ve kurum müdürü gibi kişilerin üstleri, ağır cezayı gerektiren suçüstü hâlleri dışında elle aranamaz. Duyarlı kapı cihazının ikazı sürerse bu kişiler ancak elle aramayı kabul ederlerse kuruma girebilir.",
+      "articleRefs": [
+        "86"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Avukatın ceza infaz kurumuna getirdiği hangi belge ve dosyalar incelemeye tâbi tutulmaz?",
+      "back": "Avukatın savunmaya ilişkin olduğunu yazılı olarak beyan ettiği belge ve dosyalar incelenmez.",
+      "explanation": "Koruma, avukatın yazılı beyanına bağlıdır. Avukatların üstü ağır cezayı gerektiren suçüstü hâlleri dışında elle aranamaz. Duyarlı kapıdan geçme zorunluluğu ise onlar için de geçerlidir.",
+      "articleRefs": [
+        "86"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Kurum güvenliği için alınan tedbirlere aykırı davranan özel kişinin görüşme hakkı ne kadar süreyle kısıtlanabilir?",
+      "back": "Bir aydan bir yıla kadar kısıtlanabilir. Kararı kurumun en üst amiri verir.",
+      "explanation": "Kurallara uymayan heyet ve kişilerin ziyaret ve görüşmelerine derhâl son verilir. Suç oluşturan davranışlar ilgili idarî ve adlî makamlara bildirilir. Mevzuatın avukatlar bakımından getirdiği hükümler saklıdır.",
+      "articleRefs": [
+        "86"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Kapalı ceza infaz kurumundaki hükümlüye günde en az ne kadar açık havada gezinme olanağı verilir?",
+      "back": "En az bir saat; hava koşulları elverdiği ölçüde.",
+      "explanation": "Bu süre içinde bireysel spor da yapılabilir. Aynı olanak açık havada çalışmayan hükümlüye de tanınır.",
+      "articleRefs": [
+        "87"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Kurum dışındaki etkinliklere hangi hükümlüler katılabilir?",
+      "back": "Açık ceza infaz kurumları ile çocuk eğitimevlerinde bulunan hükümlüler katılabilir.",
+      "explanation": "Spor, beden eğitimi ve eğlendirici etkinliklere katılım, hükümlünün fizik ve ruhsal sağlık durumunun elverdiği ölçüde mümkündür. Yer ve araç olanaklar ölçüsünde sağlanır.",
+      "articleRefs": [
+        "87"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Hükümlü idarenin düzenlediği kurslara ve kütüphaneye hangi zaman diliminde katılabilir?",
+      "back": "Çalışma saatleri dışında, belirlenecek düzene göre katılabilir.",
+      "explanation": "Programları kurum yönetimi belirler. Bunu yaparken uzmanların önerilerini ve hükümlünün isteklerini dikkate alır.",
+      "articleRefs": [
+        "88"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "İyi hâlin belirlenmesi için hükümlüler idare ve gözlem kurulunca en geç hangi aralıklarla değerlendirilir?",
+      "back": "En geç altı ayda bir değerlendirilir.",
+      "explanation": "Değerlendirmede şunlar gözetilir: kurallara uyum, hakların iyi niyetle kullanılması, yükümlülüklerin eksiksiz yerine getirilmesi, toplumla bütünleşmeye hazır olma, tekrar suç işleme ve zarar verme riskinin düşüklüğü. Katılınan programlar, alınan sertifikalar, kitap okuma alışkanlığı, duyulan pişmanlık ve alınan disiplin cezaları da dikkate alınır.",
+      "articleRefs": [
+        "89"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Toplam on yıl ve daha fazla hapis cezasına mahkûm hükümlünün koşullu salıverilme değerlendirmesinde idare ve gözlem kuruluna kim başkanlık eder?",
+      "back": "Cumhuriyet başsavcısı ya da onun belirleyeceği bir Cumhuriyet savcısı başkanlık eder.",
+      "explanation": "Aynı kural şu suçlardan mahkûm olanlar için de geçerlidir: terör suçları, örgüt suçları, örgüt faaliyeti kapsamında işlenen suçlar, kasten öldürme, cinsel dokunulmazlığa karşı suçlar ile uyuşturucu veya uyarıcı madde imal ve ticareti. Kural açık kuruma ayırma ve denetimli serbestlik değerlendirmelerini de kapsar. Kurula ayrıca başsavcının belirlediği bir izleme kurulu üyesi katılır. İlgili bakanlık (metinde: Aile, Çalışma ve Sosyal Hizmetler Bakanlığı) ile Sağlık Bakanlığı il veya ilçe müdürlüklerinin belirlediği birer uzman da kurulda yer alır.",
+      "articleRefs": [
+        "89"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Koşullu salıverilme bakımından tutum ve davranışı olumsuz değerlendirilen hükümlünün yeniden değerlendirilme süresi en fazla ne kadar olabilir?",
+      "back": "Bir yıl; yeniden değerlendirilme süresi bir yılı geçemez.",
+      "explanation": "Bu üst sınır, açık ceza infaz kurumuna ayırma ve denetimli serbestlik tedbiriyle infaz değerlendirmeleri için de geçerlidir. Yeniden değerlendirme süreleri ve kurulun çalışma usul ve esasları yönetmelikle düzenlenir.",
+      "articleRefs": [
+        "89"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Hükümlü salıverildiğinde hangi yönde özendirilir?",
+      "back": "İş bulması ya da kendi işini kurması yönünde özendirilir.",
+      "explanation": "Bu konuda gönüllü kişi ve kuruluşlarla ve resmî kurumlarla işbirliği yapılır. Ayrıntılar Cumhurbaşkanınca çıkarılan yönetmelikte gösterilir.",
+      "articleRefs": [
+        "91"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Terör ve örgüt faaliyeti çerçevesinde işlenen suçlara ilişkin bilgilerin doğruluğunu araştırmak için hükümlü kurumdan hangi kararla geçici olarak alınabilir?",
+      "back": "Sulh ceza hâkimi kararıyla alınabilir. Hükümlünün rızası alınmalı; talep ilgili makamdan ve Cumhuriyet Başsavcılığından gelmelidir.",
+      "explanation": "Aynı usul tutuklular için de uygulanır. Ayrılış ve dönüşte sağlık durumu doktor raporuyla tespit edilir. Yer göstermeye ilişkin belgelerin bir örneği, ilgilinin dosyasında saklanmak üzere Cumhuriyet Başsavcılığına gönderilir.",
+      "articleRefs": [
+        "92"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Yer gösterme amacıyla kurumdan alınan hükümlü için hâkim tek seferde onbeş gün süre tayin edebilir mi?",
+      "back": "Hayır. Süre her defasında dört günü geçemez; toplamda da hiçbir surette onbeş günü geçemez.",
+      "explanation": "Süreyi sulh ceza hâkimi, hükümlü veya tutuklu dinlendikten sonra işin niteliğine göre tayin eder. Bu süreler hükümlülük ve tutuklulukta geçmiş sayılır.",
+      "articleRefs": [
+        "92"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Mazeret izni, özel izin ve iş arama izni hangi kurumda bulunanlar dışındaki hükümlülere verilebilir?",
+      "back": "Yüksek güvenlikli ceza infaz kurumlarında bulunanlar dışındaki hükümlülere verilebilir.",
+      "explanation": "Refakatli cenaze ve hasta ziyareti izni bunun dışındadır. Bu izin, Kanunun 25 inci maddesi kapsamına girenler hariç, yüksek güvenlikli kurumdaki tehlikeli olmayan hükümlüye de güvenlik bakımından sakınca yoksa verilebilir. İzinde geçen süreler hükümlülükte geçmiş sayılır.",
+      "articleRefs": [
+        "93",
+        "94"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Mazeret izni için hükümlülük süresinin ne kadarını iyi hâlle geçirmiş olmak gerekir?",
+      "back": "Onda birini. Bu hükümlülere istekleri üzerine yol dışında on güne kadar mazeret izni verilebilir.",
+      "explanation": "İzin şu hâllerde verilir: ana, baba, eş, kardeş veya çocuğun ölümü; bu yakınların yaşamsal tehlike oluşturan ağır hastalığı; deprem, su baskını, yangın gibi felâketlerden zarar görmeleri. Hastalık ve felâket hâlinin belgelendirilmesi gerekir.",
+      "articleRefs": [
+        "94"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Ana, baba, eş, kardeş veya çocuğun ölümü nedeniyle verilen mazeret izni Adalet Bakanlığının onayına bağlı mıdır?",
+      "back": "Hayır. Ölüm hâlinde izin, kurum en üst amirinin önerisi ve Cumhuriyet Başsavcılığının onayıyla verilir. Adalet Bakanlığı onayı ağır hastalık ve felâket hâllerinde aranır.",
+      "explanation": "Ağır hastalık ve felâket hâlinde sıra şöyledir: kurum en üst amirinin görüşü, Cumhuriyet Başsavcılığının önerisi, Adalet Bakanlığının onayı. Her iki hâlde de hükümlünün isteği ve hükümlülük süresinin onda birini iyi hâlle geçirmiş olması aranır.",
+      "articleRefs": [
+        "94"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Hükümlüye eşinin cenazesine katılması için yol süresi dışında ne kadar izin verilebilir?",
+      "back": "İki güne kadar. İzin dış güvenlik görevlisinin refakatinde, hükümlünün talebi ve Cumhuriyet Başsavcısının onayıyla verilir.",
+      "explanation": "Bu izin, ikinci derece dahil kan veya kayın hısımlarından birinin ölümünde de verilir. Yakının yaşamsal tehlike oluşturan ağır hastalığında ise hasta ziyareti izni verilebilir. Bu izin Sağlık Kurulu raporu şartına bağlıdır; her biri için toplam iki defaya mahsus ve yol süresi dışında bir güne kadardır. Yurt dışına çıkmayı gerektiren hâlde bu izin verilemez.",
+      "articleRefs": [
+        "94"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Açık ceza infaz kurumundaki hükümlüye özel izin hangi sıklıkla verilebilir?",
+      "back": "Üç ayda bir, yol hariç yedi güne kadar verilebilir.",
+      "explanation": "İzin, hükümlünün aileleriyle bağlarını sürdürmesi veya güçlendirmesi ve dış dünyaya uyumunun sağlanması amacıyla verilir.",
+      "articleRefs": [
+        "95"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Kapalı ceza infaz kurumunda bulunan her hükümlüye özel izin verilebilir mi?",
+      "back": "Hayır. Kapalı kurumdakilerden yalnız açık ceza infaz kurumlarına ayrılmaya hak kazananlara verilebilir. Açık kurumda bulunanlar da bu izinden yararlanır.",
+      "explanation": "İzin, kurum en üst amirinin önerisi ve Cumhuriyet Başsavcılığının onayıyla verilir.",
+      "articleRefs": [
+        "95"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Özel izinler hangi hâllerde birleştirilerek kullandırılabilir?",
+      "back": "Hastalık veya doğal afet gibi zorunlu hâllerde birleştirilerek kullandırılabilir.",
+      "explanation": "Olağan düzende özel izin üç ayda bir, yol hariç yedi güne kadar verilir.",
+      "articleRefs": [
+        "95"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "İş arama izni için hükümlünün koşullu salıverilmesine ne kadar süre kalmış olmalıdır?",
+      "back": "Bir ay. Hükümlü ayrıca hükümlülük süresinin en az altı ayını kurumda kesintisiz geçirmiş olmalıdır.",
+      "explanation": "İzin, hükümlünün olağan yaşantısına döndüğünde uyum sorunu yaşamaması ve iş bulma olanağı sağlanması için verilir.",
+      "articleRefs": [
+        "96"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "İş arama izni çalışma günleri içinde en fazla ne kadar süreyle verilebilir?",
+      "back": "Sekiz saate kadar verilebilir.",
+      "explanation": "İzin, kurum en üst amirinin önerisi ve Cumhuriyet Başsavcılığının onayıyla verilir.",
+      "articleRefs": [
+        "96"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "İzin süresini iki gün aşarak dönen hükümlü hakkında Türk Ceza Kanununun 292 nci maddesi uygulanır mı?",
+      "back": "Hayır. İzni iki gün veya daha az aşan hükümlü hakkında disiplin işlemi yapılır. Türk Ceza Kanununun 292 nci ve izleyen maddeleri, iki günden fazla gecikmede ya da hiç dönmemede uygulanır.",
+      "explanation": "Sınır iki gündür: iki gün dahil gecikme disiplin işlemine, iki günü aşan gecikme ise ceza hükümlerine bağlanır.",
+      "articleRefs": [
+        "97"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Hangi durumlarda izinden dönemeyen veya geç dönen hükümlüye ceza verilmez?",
+      "back": "Salgın hastalık, doğal afet, savaş veya seferberlik durumunda, bu sebeplerden dolayı dönemeyen ya da geç dönen hükümlüye ceza verilmez.",
+      "explanation": "Ceza verilmemesi için gecikmenin bu sebeplerden kaynaklanmış olması gerekir.",
+      "articleRefs": [
+        "97"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "İzinden dönmeyen ya da iki günden fazla geç dönen hükümlüye bir daha hangi izin verilmez?",
+      "back": "Özel izin. Firar eden hükümlüye de bir daha özel izin verilmez.",
+      "explanation": "Aynı hükümlüler hakkında Türk Ceza Kanununun 292 nci ve izleyen maddelerindeki hükümler de uygulanır.",
+      "articleRefs": [
+        "97"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Çektirilecek cezanın hesabında duraksama olursa hükmü veren mahkemeden karar istenir mi?",
+      "back": "Hayır. Bu durumda infaz hâkimliğinden karar istenir. Cezanın kısmen ya da tamamen yerine getirilip getirilemeyeceği ileri sürüldüğünde de infaz hâkimliğine başvurulur.",
+      "explanation": "Hükmü veren mahkemeye iki durumda başvurulur: mahkûmiyet hükmünün yorumunda duraksama olduğunda ya da sonradan yürürlüğe giren kanun hükmünün Türk Ceza Kanununun 7 nci maddesi kapsamında değerlendirilmesi gerektiğinde.",
+      "articleRefs": [
+        "98"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Duraksama başvurusu üzerine infazın ertelenmesine veya durdurulmasına kim karar verebilir?",
+      "back": "Mahkeme veya infaz hâkimliği, olayın özelliğine göre karar verebilir. Başvurunun kendisi cezanın infazını ertelemez.",
+      "explanation": "Hüküm yorumundaki duraksamada hükmü veren mahkemeye, ceza hesabındaki duraksamada infaz hâkimliğine başvurulur. Erteleme ya da durdurma kararını başvurulan merci verir.",
+      "articleRefs": [
+        "98"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Bir kişi hakkında başka başka kesinleşmiş hükümler varsa toplama kararı nereden istenir?",
+      "back": "İnfaz hâkimliğinden istenir; amaç 107 nci maddenin uygulanabilmesidir.",
+      "explanation": "Kural olarak hükmolunan her ceza diğerinden bağımsızdır ve varlığını ayrı ayrı korur. Toplama kararı bu kurala getirilen ayrık durumdur.",
+      "articleRefs": [
+        "99"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Adli para cezasından çevrilen hapis cezası hangi aşamaya geldiğinde toplama kararına dahil edilir?",
+      "back": "Ceza infaz kurumunda infaz edilme aşamasına geldiğinde dahil edilir.",
+      "explanation": "Toplama kararı, hakkında başka başka kesinleşmiş hükümler bulunan kişi için 107 nci maddenin uygulanabilmesi yönünden infaz hâkimliğinden istenir.",
+      "articleRefs": [
+        "99"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,254 @@
+{
+  "deck": {
+    "topicId": "fc5b7d84-ad74-446c-9ac6-3d4172a04ccf",
+    "legislationSlug": "298-sayili-secimlerin-temel-hukumleri-kanunu",
+    "sourceLabel": "AI bilgi kartı — 298 Sayılı Seçimlerin Temel Hükümleri Kanunu md 97, 98, 100–102, 105, 107, 108",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: resmî madde metni + çıkmış sorular)"
+  },
+  "cards": [
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Sandık açılmadan önce kullanılmayan oy zarfları, kurula teslim edilen zarf toplamıyla doğrudan mı karşılaştırılır?",
+      "back": "Hayır. Kullanılmayan zarflar ya da birleşik oy pusulaları önce sayılır ve oylarını veren seçmen sayısına eklenir. Teslim edilen toplama uygunluk bu toplam üzerinden tespit edilir.",
+      "explanation": "Karşılaştırmanın amacı, kurula teslim edilen zarf ya da birleşik oy pusulası toplamıyla uyumun tespit edilmesidir. Bütün bu işlemler tutanağa geçirilir.",
+      "articleRefs": [
+        "97"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Sayılan kullanılmayan zarflar ya da birleşik oy pusulaları nasıl saklanır?",
+      "back": "Bir paket hâlinde mühürlenir ve paketin üzerine sayısı yazılır.",
+      "explanation": "Paketlemeden önce kullanılmayanların sayısı, oylarını veren seçmen sayısına eklenerek teslim edilen toplamla karşılaştırılır.",
+      "articleRefs": [
+        "97"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Kullanılmayan zarflar paketlendikten sonra, sandıktan çıkacak oy pusulalarının konacağı torba için ne tespit edilir?",
+      "back": "Torbanın boş olduğu tespit edilir; bütün bu işlemler tutanağa geçirilir.",
+      "articleRefs": [
+        "97"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Sandıktan çıkan zarfları sandık kurulu başkanı kaç defa sayar?",
+      "back": "İki defa, yüksek sesle. İki sayım arasında fark olursa üçüncü sayım yapılır ve sonucuna göre işlem yapılır.",
+      "explanation": "Sandık, oy verme yerinde hazır bulunanların gözü önünde sandık kurulu başkanınca açılır. Tespit edilen toplam zarf sayısı, o seçim türüne ait özel tutanağın ilgili yerine işlenir.",
+      "articleRefs": [
+        "98"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Sandıktan çıkan zarf sayısı, oy kullanan seçmen sayısından fazlaysa eşitlik nasıl sağlanır?",
+      "back": "Önce geçersiz zarf sayısı düşülür. Bu da yetmezse başkan, geçerli zarflar arasından eşitliği sağlayacak sayıda zarfı gelişigüzel çeker; bu zarflar açılmadan derhal yakılarak imha edilir.",
+      "explanation": "İmha edilen zarf sayısı tutanağa yazılır. Zarf sayısı oy kullanan seçmen sayısına eşit ya da ondan eksikse başkaca bir işlem yapılmaz.",
+      "articleRefs": [
+        "98"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Üzerinde sandık kurulu mührü bulunmayan oy zarfı geçersiz sayılır mı?",
+      "back": "Hayır, her durumda değil. Türkiye Cumhuriyeti Yüksek Seçim Kurulu filigranı, amblemi ve ilçe seçim kurulu mührü bulunan zarf, sandık kurulu mührü olmasa da geçerli sayılır.",
+      "explanation": "Kural olarak ilçe seçim kurulu ve sandık kurulu mührü bulunmayan zarf geçersizdir; filigran, amblem ve ilçe seçim kurulu mührü taşıyan zarf bu kuralın istisnasıdır. Üzerinde leke ya da çizik bulunan zarf da, bunun özel işaret koymak amacıyla yapıldığı kesin olarak anlaşılamıyorsa geçerli sayılır.",
+      "articleRefs": [
+        "98"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Birlikte yapılan Cumhurbaşkanı ve milletvekili seçimlerinde hangi seçimin oy pusulaları önce sayılır?",
+      "back": "Cumhurbaşkanı seçiminin. Bu seçime ait oy pusulalarının sayım ve dökümü önce yapılır.",
+      "explanation": "Aynı zarf içinde birden fazla oy kullanılan seçimlerde, zarftan çıkan pusulalar okunmadan önce seçim türüne göre ters çevrilerek tasnif edilir ve masanın üzerine konulur.",
+      "articleRefs": [
+        "100"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Oyların sayımı sırasında sandık başında en çok kaç parti müşahidi kalabilir?",
+      "back": "Beş. Müşahit sayısı beşten fazlaysa başkan, kurul önünde ad çekerek her biri ayrı partiden olmak üzere beş parti müşahidini belirler.",
+      "explanation": "Sandık başındaki müşahitler oy pusulalarını görebilir. Diğer müşahitlerle bağımsız aday müşahitleri için sayım işlemini yakından takip edebilecekleri bir yer ayrılır.",
+      "articleRefs": [
+        "100"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "İttifak alanında “EVET” mührü hem bir siyasi partinin alanına hem de ittifak unvanı bölümüne basılırsa oy, ittifakın ortak oyları sütununa mı işlenir?",
+      "back": "Hayır. Oy geçerli kabul edilir ve sayım döküm cetvelinde o siyasi partinin sütununa işaretlenir.",
+      "explanation": "Mühür yalnız partinin alanına basılırsa ya da ittifak unvanı bölümüne taşacak şekilde partinin alanına basılırsa da oy partiye yazılır. Bu hâller dışında, yalnız ittifak alanı içine basılan “EVET” mührü oyu ittifakın ortak oyları sütununa yazdırır.",
+      "articleRefs": [
+        "100"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Birleşik oy pusulası zarf açılırken yırtılırsa geçersiz sayılır mı?",
+      "back": "Hayır. Zarfların açılması ya da oyların okunması sırasında yırtılma pusulayı geçersiz kılmaz. Bütünlüğü bozulacak şekilde yırtılmış ya da koparılmış pusula ise geçersizdir.",
+      "explanation": "Bütünlüğü bozulmaksızın bir kısmının kazaen yırtılması da pusulayı geçersiz kılmaz.",
+      "articleRefs": [
+        "101"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Bir siyasi partinin alanına birden çok “EVET” mührü basılmış birleşik oy pusulası geçerli midir?",
+      "back": "Evet. Başka bir siyasi partinin ya da bağımsız adayın alanına taşmamak kaydıyla geçerlidir.",
+      "explanation": "Siyasi partilere ya da bağımsız adaylara ayrılan alanlardan birden fazlasına mühür basılmışsa ya da mühür birden fazla alana taşmışsa pusula geçerli değildir. Mührün yalnız iki parti alanını ayıran çift çizgili bölgeye taşması ise pusulayı geçersiz kılmaz.",
+      "articleRefs": [
+        "101"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Muhtarlık seçimlerinde, maddede sayılanlar dışında oy pusulalarının hangi sebeplerle geçersiz sayılacağını kim belirler?",
+      "back": "Yüksek Seçim Kurulu belirler.",
+      "explanation": "Bir zarfta birden fazla oy pusulası kullanılan seçimlerde, bir seçim türüne ait pusulanın geçersiz olması diğerlerinin geçersiz sayılmasını gerektirmez.",
+      "articleRefs": [
+        "101"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Zarfın içinden el ilanı ya da broşür çıkarsa o zarftaki oy pusulalarına ne olur?",
+      "back": "Hiçbiri hesaba katılmaz.",
+      "explanation": "Zarftan özel bir işaret, yazı ya da şekil taşıyan kâğıt ya da işaret amacı taşıyan herhangi bir madde çıkması da aynı sonucu doğurur.",
+      "articleRefs": [
+        "102"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Baskıda silinme ya da yanlışlık bulunan birleşik oy pusulası hangi şartla hesaba katılır?",
+      "back": "Hangi siyasi parti ya da bağımsız aday lehine kullanıldığı, “EVET” mührünün vurulduğu yerden kesin olarak anlaşılıyorsa hesaba katılır.",
+      "articleRefs": [
+        "102"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Bir zarfta birden fazla oy pusulası kullanılan seçimde, zarftan aynı seçim türüne ait birden fazla pusula çıkarsa diğer seçim türlerinin pusulaları hesaba katılır mı?",
+      "back": "Evet. Yalnız birden fazla çıkan seçim türüne ait pusulalar hesaba katılmaz; diğerleri hesaba katılır.",
+      "explanation": "Zarftan, o zarfta kullanılması gerekenler dışında başka bir seçim türüne ait pusula çıkarsa sonuç farklıdır: zarftaki pusulaların hiçbiri hesaba katılmaz. Kullanılması gereken pusulalardan biri ya da birkaçı eksik çıkarsa diğerleri hesaba katılır.",
+      "articleRefs": [
+        "102"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Sandık sonuç tutanağının onaylı sureti ne kadar süre asılı kalır?",
+      "back": "Bir hafta. Süre oy verme gününden itibaren işler; suret sandığın konulduğu bina ya da yapıda herkesin görebileceği bir yere asılır.",
+      "explanation": "Sureti sandık kurulu asar.",
+      "articleRefs": [
+        "105"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Sandık kuruluna her seçim türü için kaç sandık sonuç tutanağı verilir?",
+      "back": "Oy pusulasındaki siyasi parti ve bağımsız aday sayısından beş fazla sayıda tutanak verilir.",
+      "explanation": "Sandık kurulu her seçim türü için ayrı hazırlanmış tutanağı iki nüsha olarak düzenler. Tutanakların düzenlenmesine ilişkin usul ve esasları Yüksek Seçim Kurulu belirler.",
+      "articleRefs": [
+        "105"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Sandık sonuç tutanağı sandık kurulunun siyasi partili üyesine verildiyse, aynı partinin müşahidine de ayrıca verilir mi?",
+      "back": "Hayır. Tutanak talep hâlinde öncelikle sandık kurulunun siyasi partili üyelerine imza karşılığı verilir; bu hâlde o partinin müşahidine ayrıca tutanak verilmez.",
+      "explanation": "Müşahitlere verilecek tutanaklar çok yapraklı kopyalı suret biçiminde hazırlanır. Teslim alanların ad ve soyadları ile temsil ettikleri parti ya da bağımsız aday tutanak defterine yazılır, ardından imzaları alınır.",
+      "articleRefs": [
+        "105"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Oy torbasını ilçe seçim kuruluna sandık kurulu başkanıyla birlikte kaç üye götürür?",
+      "back": "En az iki üye. Bu üyeler ad çekmeyle seçilir.",
+      "explanation": "Torba, kurulun mührüyle mühürlenir ve başkan ile üyelerce imzalanır. İçinde ayrı paketler hâlinde bulunanlar arasında oy pusulaları, tutanaklar, sayım cetvelleri ve tutanak defteri vardır.",
+      "articleRefs": [
+        "107"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "İlçe seçim kurulu oy torbasını açınca, içindekiler hakkında kaç nüsha müfredatlı tutanak düzenler?",
+      "back": "Üç nüsha. Torba, onu getiren üyelerin önünde açılır.",
+      "explanation": "Tutanağı torbayı teslim edenler ile ilçe seçim kurulu başkanı ve üyelerden biri imzalar. Bir nüshası il seçim kuruluna gönderilecek evraka bağlanır, bir nüshası da sandık kurulu başkanına verilir.",
+      "articleRefs": [
+        "107"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Müşahitler oy torbasını ilçe seçim kuruluna götürenlere hangi şartla katılabilir?",
+      "back": "İsterlerse ve taşıtta yer varsa ya da taşıtı kendileri sağlarlarsa katılabilirler.",
+      "explanation": "Aynı imkân sandık kurulunun diğer üyeleri için de geçerlidir.",
+      "articleRefs": [
+        "107"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "İlçe seçim kurulunun sayım ve birleştirme işlemlerinde hazır bulunan bağımsız aday ve müşahitlerinden en çok kaçı kalabilir?",
+      "back": "Üç. Üçten fazla olurlarsa ad çekilir ve adı ilk çıkan üçü işlemleri takip etmek üzere kalabilir.",
+      "explanation": "Siyasi parti aday ve müşahitleri için ad çekme yapılmaz. Hazır bulunanlara birleştirme iş ve işlemlerini yakından takip edebilecekleri bir yer ayrılır.",
+      "articleRefs": [
+        "108"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Birleşik oy pusulası kullanılan seçimlerde ilçe birleştirme tutanağı denetlenirken sandık sonuç tutanaklarındaki oy sayılarını kim yüksek sesle okur?",
+      "back": "Başkanın görevlendireceği memur üyelerden biri okur. Hataları denetim tutanağına kurulun diğer memur üyesi geçirir.",
+      "explanation": "Denetim, birleştirme tutanağı imzalanmadan önce yapılır. Döküm cetveli ilçe seçim kurulunun siyasi partili üyelerine de birer nüsha verilir. Hatalı işlenmiş sandık sonuç tutanakları bir kenara ayrılır ve düzeltilmiş birleştirme tutanağı imzalanır.",
+      "articleRefs": [
+        "108"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Birden çok ilçe seçim kurulu bulunan ilçelerde ilçe sonuçlarını hangi kurul birleştirir?",
+      "back": "Bir numaralı ilçe seçim kurulu. Diğer kurullar, denetim ve birleştirme tutanak özetinin onaylı birer suretini ona teslim eder.",
+      "explanation": "Birinci ilçe seçim kurulu, aldığı tutanaklardaki sonuçları kendi özel tutanağına sütun başlıkları altına toplam sayıları yazarak ya da ayrı bir tutanak düzenleyerek birleştirir.",
+      "articleRefs": [
+        "108"
+      ]
+    }
+  ]
+}

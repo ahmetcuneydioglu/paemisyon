@@ -1,0 +1,285 @@
+{
+  "deck": {
+    "topicId": "52223b97-98b3-408b-93f4-3e3a03bf509b",
+    "legislationSlug": "2820-siyasi-partiler-kanunu",
+    "sourceLabel": "AI bilgi kartı — 2820 Siyasi Partiler Kanunu md 39–60",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: resmî madde metni + çıkmış sorular)"
+  },
+  "cards": [
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Siyasi partilerin genel başkanlığı, aday adayları listelerini ve seçim çevrelerini önseçimden en az ne kadar önce bildirir?",
+      "back": "En az yirmi gün önce, saat onyediye kadar. Bildirim Yüksek Seçim Kuruluna ve ilgili il ve ilçe seçim kurullarına yapılır.",
+      "explanation": "Bildirimi partinin genel başkanlığı yapar. Kurullar ilgiliye alındı belgesi verir.",
+      "articleRefs": [
+        "40"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Bir partiden önseçime katılmış kişi hangi şartla bağımsız aday olabilir?",
+      "back": "Partisinden istifa ederse bağımsız aday olabilir. Başka bir partiden ise merkez adayı gösterilemez.",
+      "explanation": "Aynı kural, bir partiden merkez adaylığı yoklamasına katılan kişi için de geçerlidir. Bu hükümlere aykırı hareket edenlerin adaylığını Yüksek Seçim Kurulu iptal eder.",
+      "articleRefs": [
+        "40"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Aday adayları listesi bildirildikten sonra adaylıktan çekilme, önseçime kadar dikkate alınır mı?",
+      "back": "Hayır; önseçime kadar dikkate alınmaz. Kişi aday seçilmişse çekilmesi hüküm ifade eder; ölüm halinde de aynı hüküm uygulanır.",
+      "explanation": "Kural, genel başkanlığın aday adayları listelerini Yüksek Seçim Kuruluna ve seçim kurullarına bildirmesinden sonraki çekilmeler içindir.",
+      "articleRefs": [
+        "40"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Önseçimde ilçe seçim kurulunda başkan dışında kaç üye bulunur?",
+      "back": "Dört üye bulunur. İkisi o ilçede görev yapan Devlet memurları arasından seçilir, ikisi aday adayı olmayan parti üyeleri arasından belirlenir.",
+      "explanation": "Devlet memuru üyeler kurulun devamlı üyesidir. Parti üyeleri ise yalnız kendi partilerinin adayları için yapılan önseçim işlemlerinde kurula katılır. Aynı usulle ikişer yedek üye de seçilir.",
+      "articleRefs": [
+        "41"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Parti üyeleri parti seçmen listesine hangi süre içinde itiraz edebilir?",
+      "back": "Listenin asıldığı tarihten itibaren onbeş gün içinde, yazıyla itiraz edebilirler.",
+      "explanation": "İtirazı ilçe seçim kurulu inceler ve en geç iki gün içinde kesin olarak karara bağlar. İtiraz yerinde görülürse liste düzeltilir. Parti seçmen kartları, kesinleşen listelere göre ilçe seçim kurulu başkanlığınca her üyeye dağıtılır.",
+      "articleRefs": [
+        "42"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Önseçimin yapılacağı yıl içinde Cumhuriyet Başsavcılığına bildirilen üye önseçimde oy kullanabilir mi?",
+      "back": "Hayır. Önseçim tarihi itibarıyla bir önceki yılın son gününe kadar Cumhuriyet Başsavcılığına bildirilmiş olmak gerekir.",
+      "explanation": "Oy kullanabilmek için üye kayıt defterinde kayıtlı olmak da gerekir. Ayrıca Cumhuriyet Başsavcılığınca seçim kurullarına gönderilen listelerde yer almak aranır. İlçe seçim kurulları bu listeleri, önseçimden en az otuz gün önce ellerinde olacak şekilde temin eder.",
+      "articleRefs": [
+        "42"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Önseçimde aday adayı için propaganda amacıyla kapalı salon toplantısı tertiplenebilir mi?",
+      "back": "Hayır. Bu yasağın dışında kalan tek toplantı türü, örf ve adete göre sohbet toplantısı sayılanlardır.",
+      "explanation": "Açık hava toplantısı da tertiplenemez. Duvar ilanı, el ilanı, her nevi matbua, ses ve görüntü bantlarıyla propaganda yapılamaz. Bu tür toplantılarda başka aday adaylarına karşı kötüleyici beyanda bulunmak yasaktır.",
+      "articleRefs": [
+        "43"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Aday adaylarının, önseçimde oy kullanacak partili üyelere yönelik hangi amacı gütmeleri yasaktır?",
+      "back": "Oy kullanacak partili üyelere ya da yakınlarına maddi çıkar sağlama amacı gütmeleri yasaktır.",
+      "explanation": "Aday adayları, oy kullanacakları etkilemek maksadıyla meşru ve hukuka uygun olmayan davranışlarda da bulunamaz. Partiler ise tüzüklerinde gösterilmek kaydıyla şu matbuaları bastırıp dağıtabilir: aday adaylarının meslek veya sanat hayatlarındaki derece, başarı ve eserlerini ve memlekete yaptığı hizmetleri gösteren, vesikalık fotoğraflı matbualar.",
+      "articleRefs": [
+        "43"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Önseçim günü ilçe seçim kuruluna dahil siyasi parti üyesi görevini yapmazsa yerine kim getirilir?",
+      "back": "Partinin sıradaki yedek üyesi getirilir. O da mümkün olmazsa durum tutanağa geçirilir. Eksik, ilçe seçim kurulu başkanının sandık alanı çevresinden seçeceği, parti üyesi olabilme yeterliğine sahip okur-yazar bir kimseyle tamamlanır.",
+      "explanation": "Bu tamamlama usulü, görevini yapmayan üye hakkındaki ceza hükümlerini ortadan kaldırmaz; ceza hükümleri saklıdır.",
+      "articleRefs": [
+        "44"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Önseçimde aday olan kişi, partisinin müşahidi olarak sandık başında bulunabilir mi?",
+      "back": "Hayır; önseçimde aday olanlar müşahit sıfatıyla sandık başında bulunamaz.",
+      "explanation": "Önseçim sırasında her siyasi parti, kendi partisine ait sandık başı işlemlerini takip etmek üzere birer müşahit bulundurabilir.",
+      "articleRefs": [
+        "45"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Önseçimde oy pusulasını sandık başına gelen partili seçmene kim verir?",
+      "back": "Sandık kurulu başkanı ya da onun görevlendireceği kurul üyesi verir. Pusula, sandık kurulu başkanlığının mührüyle mühürlendikten sonra verilir.",
+      "explanation": "Oy pusulalarını, 40 ıncı maddeye göre bildirilen aday adayları listelerini içerecek şekilde siyasi partiler çoğaltır. Partiler pusulaları zarflarla birlikte il ve ilçe seçim kurulu başkanlıklarına verir. İlçe seçim kurulu başkanlıkları pusula ve zarfları mühürleyip seçim günü sandık başkanlıklarında hazır bulundurur.",
+      "articleRefs": [
+        "46"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Önseçimde oy vermek için hangi belgenin gösterilmesi şarttır?",
+      "back": "Parti seçmen kartının gösterilmesi şarttır.",
+      "explanation": "Kartı göstermeyenlerden ya da kartın sahibi olduğunda tereddüt edilenlerden parti hüviyet cüzdanı istenir. O da yoksa nüfus hüviyet cüzdanı istenir.",
+      "articleRefs": [
+        "47"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Önseçime ait oy pusulaları, cetveller ve tutanaklar hangi süreyle saklanır?",
+      "back": "Milletvekili seçimlerinin kesin sonuçlarının ilanı tarihinden itibaren üç ay saklanır.",
+      "explanation": "İlçelerde ilçe seçim kurulu başkanı, illerde il seçim kurulu başkanı saklar. Bu evrak Yüksek Seçim Kurulunun istemi olmaksızın hiçbir yere gönderilmez.",
+      "articleRefs": [
+        "49"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Önseçimde seçim ve sandık kurullarının kesin olmayan kararlarına kimler itiraz edebilir?",
+      "back": "İlgili siyasi parti ve o partiden önseçimde aday adayı olanlar itiraz edebilir. Partinin teşkilat kademelerinin başkanları ya da vekilleri ile parti müşahitleri de itiraz edebilir.",
+      "explanation": "İtiraz, seçim ve sandık kurullarının ya da kurul başkanlarının kesin olmayan kararlarına karşı yapılır.",
+      "articleRefs": [
+        "50"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Önseçimde aynı miktarda oy alanlar arasındaki sırayı kim tespit eder?",
+      "back": "İlgili siyasi partinin merkez karar ve yönetim kurulu tespit eder.",
+      "explanation": "Adayların aldıkları oyların toplamı, her parti için ayrı düzenlenen basılı tutanakta rakam ve yazı ile belirtilir. Tutanağı ilçe seçim kurulu başkanı ve üyeleri imzalar.",
+      "articleRefs": [
+        "51"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Siyasi partilerin disiplin kurullarınca verilebilecek cezalar nelerdir?",
+      "back": "Uyarma, kınama ve partiden ya da gruptan geçici veya kesin olarak çıkarma cezalarıdır.",
+      "explanation": "Disiplin kurullarının vermeye yetkili olduğu cezalar parti tüzüğünde belli edilmek zorundadır. Hangi halde hangi cezanın verileceği de tüzükte gösterilir.",
+      "articleRefs": [
+        "53"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Disiplin kurullarınca parti üyeleri hakkında verilen kararlar en geç hangi süre içinde tebliğ edilir?",
+      "back": "En geç otuz gün içinde, gerekçeleriyle birlikte ilgiliye tebliğ olunur.",
+      "explanation": "Hangi organın kimler hakkında ceza isteminde bulunabileceğini tüzük düzenler. Kanunda belirtilmeyen hallerde itirazları inceleyecek üst disiplin kurullarını ve itirazın usulünü de tüzük düzenler.",
+      "articleRefs": [
+        "53"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Bir milletvekilinin, partisinin Türkiye Büyük Millet Meclisi grubu üyeliğinden kesin olarak çıkarılması hangi sonucu doğurur?",
+      "back": "Partiden çıkarılmayı gerektirir. Partiden kesin olarak çıkarılması da grup üyeliğinden çıkarılmayı gerektirir.",
+      "explanation": "Gruptan geçici olarak çıkarılan üye, ceza süresince gruptaki çalışmalara katılamaz. Geçici çıkarma cezası verilen parti üyesine parti içinde hiçbir görev verilemez.",
+      "articleRefs": [
+        "53"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Türkiye Büyük Millet Meclisi grubu disiplin kurulu üyeleri en az ne kadar süre için seçilir?",
+      "back": "En az iki yıl için seçilir. Seçim, parti tüzüğünde gösterildiği şekilde yapılır.",
+      "explanation": "Siyasi partilerin disiplin kurullarının üyeleri ise kongrelerce gizli oyla seçilir.",
+      "articleRefs": [
+        "54"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Siyasi partilerin disiplin kurulları hangi yeter sayıyla toplanır?",
+      "back": "Üye tamsayısının en az üçte iki çoğunluğuyla toplanır. Kararlar hazır bulunanların çoğunluğuyla alınır.",
+      "explanation": "Partiden kesin çıkarma cezasında ayrı bir karar yeter sayısı aranır: üye tamsayısının çoğunluğunun kararı gerekir.",
+      "articleRefs": [
+        "55"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Yayın yoluyla işlenen bir disiplin suçunda partilinin savunma süresi kaç gündür?",
+      "back": "Yedi gündür. Süre, savunmaya çağrı belgesinin ilgiliye tebliği tarihinden başlar.",
+      "explanation": "Seçimlerde ya da herkesin gözü önünde açıkça işlenen disiplin suçlarında da süre yedi gündür; diğer hallerde onbeş gündür. Süreyi geçiren, savunma hakkından vazgeçmiş sayılır. Çağrıyı disiplin kurulu başkanlığı yazıyla yapar; yazıda istenen ceza ve sebep olan fiiller açıkça gösterilir.",
+      "articleRefs": [
+        "55"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Partiden kesin çıkarma cezası, disiplin kurulunda hazır bulunanların çoğunluğuyla verilebilir mi?",
+      "back": "Hayır; partiden kesin çıkarma cezası için üye tamsayısının çoğunluğunun kararı gerekir.",
+      "explanation": "Disiplin kurulları üye tamsayısının en az üçte iki çoğunluğuyla toplanır. Diğer kararlar hazır bulunanların çoğunluğuyla alınır. Sevk edilen partili yazılı ya da sözlü savunma hakkına sahiptir.",
+      "articleRefs": [
+        "55"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Partiden ya da gruptan geçici veya kesin çıkarma cezasına karşı parti içi itiraz yolları tükenince hangi mahkemeye başvurulur?",
+      "back": "Nihai kararı veren merciin bulunduğu yer asliye hukuk mahkemesine başvurulur. Başvuru, son karara karşı otuz gün içinde yapılır.",
+      "explanation": "İtiraz şu iddialarla yapılır: sevk eden organın ya da disiplin kurulunun görev ve yetkisizliği veya kararların kanuna, parti tüzüğüne ve içyönetmeliğe şekil ve usul bakımından aykırılığı. Mahkeme itirazı diğer işlerden önce, en geç otuz gün içinde basit muhakeme usulüyle karara bağlar; karar kesindir.",
+      "articleRefs": [
+        "57"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Disiplin kurullarınca verilen cezaların hangi organca ve nasıl affedileceği nerede gösterilir?",
+      "back": "Siyasi partilerin tüzüklerinde gösterilir.",
+      "explanation": "Af yetkisi, tüzükte belirlenen parti organınındır; affın şekli de tüzükte düzenlenir.",
+      "articleRefs": [
+        "58"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Görevden uzaklaştırma tedbirinin kaldırılması istendiğinde disiplin kurulu kaç gün içinde karar verir?",
+      "back": "Yedi gün içinde karar verir. İstem, üyenin sevk edildiği disiplin kuruluna yapılır.",
+      "explanation": "Tedbir, partiden geçici ya da kesin çıkarmayı gerektiren hallerde alınır. Sevk kararı almaya yetkili parti organları, disiplin kuruluna sevk edilen üyeyi parti içindeki görevlerinden derhal uzaklaştırabilir.",
+      "articleRefs": [
+        "59"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Her kademedeki parti organları hangi defterleri tutmak zorundadır?",
+      "back": "Üye kayıt defteri, karar defteri, gelen ve giden evrak kayıt defteri, gelir ve gider defteri ile demirbaş eşya defteri.",
+      "explanation": "Tutulmasında fayda görülen diğer defterler parti tüzük ve içyönetmeliklerinde gösterilir. Karar defterindeki kararları oylamaya katılanlar imzalar.",
+      "articleRefs": [
+        "60"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Parti defterlerinin sayfalarını kim mühürleyip tasdik eder?",
+      "back": "Teşkilatın bulunduğu yerdeki ilgili seçim kurulu başkanı mühürler ve tasdik eder.",
+      "explanation": "Mühür ve tasdik, defterlerin sayfalarını ve kaç sayfadan ibaret olduklarını kapsar. Üye kayıt defteri mahalle ve köy esasına göre tutulur.",
+      "articleRefs": [
+        "60"
+      ]
+    }
+  ]
+}

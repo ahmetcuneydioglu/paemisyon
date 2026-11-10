@@ -1,0 +1,287 @@
+{
+  "deck": {
+    "topicId": "52223b97-98b3-408b-93f4-3e3a03bf509b",
+    "legislationSlug": "2820-siyasi-partiler-kanunu",
+    "sourceLabel": "AI bilgi kartı — 2820 Siyasi Partiler Kanunu md 1–8, 10–17, 19",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: resmî madde metni + çıkmış sorular)"
+  },
+  "cards": [
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "2820 sayılı Siyasi Partiler Kanunu hangi konulardaki hükümleri kapsar?",
+      "back": "Siyasi partilerin kurulmaları, teşkilatlanmaları, faaliyetleri, görev, yetki ve sorumlulukları, mal edinimleri, gelir ve giderleri, denetlenmeleri, kapanma ve kapatılmaları.",
+      "explanation": "Kanunun amacı, siyasi partilerle ilgili esasları düzenlemektir.",
+      "articleRefs": [
+        "1",
+        "2"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Siyasi partiler hangi seçimler yoluyla milli iradenin oluşmasını sağlar?",
+      "back": "Cumhurbaşkanı, milletvekili ve mahalli idareler seçimleri yoluyla.",
+      "explanation": "Kanun siyasi partileri, ülke çapında faaliyet göstermek üzere teşkilatlanan, tüzel kişiliğe sahip kuruluşlar olarak tanımlar. Amaçları, demokratik bir Devlet ve toplum düzeni içinde ülkenin çağdaş medeniyet seviyesine ulaşmasıdır.",
+      "articleRefs": [
+        "3"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Kanuna göre siyasi partiler hangi ilkelere bağlı olarak çalışır?",
+      "back": "Atatürk ilke ve inkılaplarına bağlı olarak çalışırlar.",
+      "explanation": "Aynı madde siyasi partileri demokratik siyasi hayatın vazgeçilmez unsurları sayar. Partilerin kuruluşu, organlarının seçimi, işleyişi, faaliyetleri ve kararları, Anayasada nitelikleri belirtilen demokrasi esaslarına aykırı olamaz.",
+      "articleRefs": [
+        "4"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Siyasi parti, İçişleri Bakanlığından izin alınarak mı kurulur?",
+      "back": "Hayır. Siyasi partiler önceden izin almaksızın serbestçe kurulur; bildiri ve belgelerin İçişleri Bakanlığına verilmesiyle tüzelkişilik kazanır.",
+      "explanation": "Bakanlık, bilgi ve belgeleri aldığı anda bir alındı belgesi verir. Kuruluş bildirisi ve ekleri Cumhuriyet Başsavcılığı ile Anayasa Mahkemesine gönderilir.",
+      "articleRefs": [
+        "5",
+        "8"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Aynı anda birden fazla siyasi partiye üye olan kişinin üyelik durumu ne olur?",
+      "back": "Üyelik sıfatı bu partilerin hepsinde birden sona ermiş sayılır.",
+      "explanation": "Bir kişi aynı partinin birden fazla teşkilat birimine kaydolursa, son kayıt tarihinden önce yapılmış üyelik kayıtları geçersizdir. Her Türk vatandaşı dilediği anda üyelikten çekilebilir.",
+      "articleRefs": [
+        "6"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Siyasi partilerin belde teşkilatı nerede kurulur?",
+      "back": "İl ve ilçe merkezleri dışında, belediye teşkilatı olan yerlerde kurulur.",
+      "explanation": "Belde teşkilatları ilçe başkanlığına bağlıdır. Seçim tarzları, kuruluş ve faaliyet şekil ve şartları, üye sayıları ve il ve ilçe teşkilatlarıyla münasebetleri parti tüzüğünde gösterilir.",
+      "articleRefs": [
+        "7"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Siyasi parti belde teşkilatının üye sayısı en az kaç olmalıdır?",
+      "back": "En az 3. Belde teşkilatının üye sayısı üçten az olamaz.",
+      "explanation": "Üye sayısını parti tüzüğü belirler, ancak tüzük bu alt sınırın altına inemez.",
+      "articleRefs": [
+        "7"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Siyasi parti tüzüğünde yabancı ülkelerde hangi birimin kurulması öngörülebilir?",
+      "back": "Yurtdışı temsilciliği.",
+      "explanation": "Tüzükte ayrıca kadın kolu, gençlik kolu ve benzeri yan kuruluşlar öngörülebilir. Partinin teşkilatı; merkez organları, il, ilçe ve belde teşkilatları, Türkiye Büyük Millet Meclisi Grubu ile il genel meclisi ve belediye meclisi gruplarından ibarettir.",
+      "articleRefs": [
+        "7"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Bir siyasi parti en az kaç kişi tarafından kurulur?",
+      "back": "En az 30 Türk vatandaşı tarafından kurulur. Kurucuların partiye üye olma yeterliğine sahip olması gerekir.",
+      "explanation": "Kuruluş bildirisini bütün kurucular imzalar. Bildiriye kurucuların nüfus kayıt örnekleri, adli sicil belgeleri ve kuruculuk şartlarını taşıdıklarını belirten imzalı beyannameler eklenir.",
+      "articleRefs": [
+        "8"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Siyasi partilerin genel merkezi nerede bulunur?",
+      "back": "Ankara'da.",
+      "explanation": "Genel merkez adresi, kuruluş bildirisinde belirtilmesi gereken bilgiler arasındadır.",
+      "articleRefs": [
+        "8"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Siyasi parti, tüzük ve programında yaptığı değişikliği Cumhuriyet Başsavcılığına kaç gün içinde gönderir?",
+      "back": "15 gün içinde. Süre, değişiklik tarihinden itibaren işler.",
+      "explanation": "Aynı süre, organlarda görev alanların listeleri ile partinin yönetmelik ve yayınları için de geçerlidir. Partiye kayıtlı üyelerin ilçelere göre listeleri ise altı ayda bir gönderilir.",
+      "articleRefs": [
+        "10"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Cumhuriyet Başsavcılığının her siyasi parti için tuttuğu sicil kime açıktır?",
+      "back": "Herkese açıktır. Soruşturma ile ilgili bilgilerin gizliliğine ilişkin hükümler saklıdır.",
+      "explanation": "Sicil dosyasında şunlar bulunur: kuruluş bildirisi ve ekleri, organlarda görev alanların listeleri, partinin yönetmelik ve yayınları ile üye listeleri. Partinin kapatılması veya kapanması da sicile işlenir.",
+      "articleRefs": [
+        "10"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Yükseköğretim elemanları siyasi partilere üye olabilir mi?",
+      "back": "Evet. Üyelik yasağının dışındadırlar ve haklarında Yükseköğretim Kanunu uygulanır. Yükseköğretim öncesi öğrencileri ise üye olamaz.",
+      "explanation": "Yasak kapsamındakiler arasında hakimler ve savcılar, Sayıştay dahil yüksek yargı organları mensupları, kamu kurum ve kuruluşlarının memur statüsündeki görevlileri ve Silahlı Kuvvetler mensupları vardır.",
+      "articleRefs": [
+        "11"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Siyasi parti, üyelik istemini reddederken sebep göstermek zorunda mıdır?",
+      "back": "Hayır. Parti istemi sebep göstermeksizin de reddedebilir. İsteyen kişi, reddeden teşkilatın bir üst kademesine itiraz edebilir; itiraz üzerine verilen karar kesindir.",
+      "explanation": "İtiraz, parti tüzüğünde gösterilen şekilde yapılır.",
+      "articleRefs": [
+        "12"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Parti tüzüğünde, üyelik için başvuranlar arasında hangi farkları gözeten hükümler bulunamaz?",
+      "back": "Dil, ırk, cinsiyet, din, mezhep, aile, zümre, sınıf ve meslek farkı gözeten hükümler.",
+      "explanation": "Kanuna göre üye olmaya engel hali bulunmayanların üyeliğe kabul şartları parti tüzüklerinde gösterilir.",
+      "articleRefs": [
+        "12"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Parti tüzüğünde danışma ve araştırma amacıyla kurulabilen kurullara ne ad verilir?",
+      "back": "İhtiyari kurullar. Partinin gayesine uygun olarak tüzükte teşkil olunabilirler.",
+      "explanation": "İhtiyari kurulların görev ve yetkileri, üye sayısı ve seçilme usulleri tüzükte gösterilir. Merkez organları ise büyük kongre, genel başkan ile diğer karar, yönetim, icra ve disiplin organlarından ibarettir.",
+      "articleRefs": [
+        "13"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Büyük kongre ilk çağrıda toplanamazsa, ikinci çağrı üzerine yapılan toplantıda toplantı yeter sayısı aranır mı?",
+      "back": "Hayır, aranmaz. İlk çağrıda toplantı yeter sayısı, büyük kongre üye tamsayısının salt çoğunluğudur.",
+      "explanation": "Kanunda veya tüzükte daha büyük bir sayı gösterilmedikçe karar yeter sayısı, hazır bulunan üyelerin salt çoğunluğudur. Büyük kongre partinin en yüksek organıdır.",
+      "articleRefs": [
+        "14"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Parti tüzüğü, büyük kongrenin toplanma süresini en az ve en çok ne kadar belirleyebilir?",
+      "back": "En az 2, en çok 3 yıl. Bu süre iki yıldan az, üç yıldan fazla olamaz.",
+      "explanation": "Olağanüstü toplantı üç yolla yapılır: genel başkanın lüzum göstermesi, merkez karar ve yönetim kurulunun lüzum göstermesi ya da büyük kongre üyelerinin en az beşte birinin yazılı istemi.",
+      "articleRefs": [
+        "14"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Tüzük değişikliği teklifinin büyük kongrede karara bağlanması için teklifin büyük kongre üyelerinin beşte biri tarafından ileri sürülmesi mi gerekir?",
+      "back": "Hayır. Teklifi genel başkan, merkez karar ve yönetim kurulu ya da büyük kongre üyelerinin en az yirmide biri ileri sürmelidir. Beşte bir, olağanüstü toplantı istemi içindir.",
+      "explanation": "Toplumu ve Devleti ilgilendiren konularla kamu faaliyetlerine ilişkin teklifleri ise büyük kongrede hazır bulunan üyelerin üçte biri yapmalıdır. Bu teklifler, büyük kongrece seçilecek bir komisyonda görüşüldükten sonra karara bağlanır.",
+      "articleRefs": [
+        "14"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Genel başkan seçiminde ilk oylamada en çok oyu alan aday seçilmiş sayılır mı?",
+      "back": "Hayır. İlk iki oylamada üye tamsayısının salt çoğunluğu aranır. Sonuç alınamazsa üçüncü oylamada en çok oy alan seçilmiş sayılır.",
+      "explanation": "Genel başkan büyük kongrece gizli oyla ve en çok üç yıl için seçilir.",
+      "articleRefs": [
+        "15"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Genel başkanlık boşalırsa, merkez karar ve yönetim kurulu büyük kongreyi en geç kaç gün içinde toplantıya çağırır?",
+      "back": "En geç 45 gün içinde. Bu arada partiyi temsil yetkisini kendi içinden seçeceği bir üyeye tevdi eder.",
+      "explanation": "Partiyi temsil yetkisi genel başkana aittir. Tüzükte yer almak ve iki kişiden fazla olmamak kaydıyla eş genel başkanlık sistemi de uygulanabilir.",
+      "articleRefs": [
+        "15"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Büyük kongrece seçilen merkez organlarının her birinin üye sayısı en az kaç olmalıdır?",
+      "back": "En az 15. Tüzük bundan az üye öngöremez.",
+      "explanation": "Merkez karar ve yönetim organlarının üyelerini büyük kongre seçer. Genel başkan, merkez karar, yönetim ve icra organlarının her birinin başkanlığını yapar. Büyük kongrece seçilen merkez organlarının üyeleri, büyük kongrenin tabii üyeleridir.",
+      "articleRefs": [
+        "16"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Zorunlu sebeplerle büyük kongre toplanamadığında merkez karar organı hangi kararları alamaz?",
+      "back": "Partinin hukuki varlığına son verilmesi ile tüzük ve programının değiştirilmesi kararlarını alamaz; bunlar dışındaki bütün kararları alabilir.",
+      "explanation": "Merkez organlar iki büyük kongre arasında, tüzük, program ve büyük kongre kararlarına uymak şartıyla partiyi ilgilendiren hususlarda karar alır ve bu kararları uygular.",
+      "articleRefs": [
+        "16"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Parti işlerini düzenleyen parti iç yönetmeliklerini hangi organ yapar?",
+      "back": "Merkez karar organı.",
+      "explanation": "Organların toplanma ve çalışma usulleri, görev ve yetkileri ve birbirleriyle münasebetleri parti tüzüğünde gösterilir.",
+      "articleRefs": [
+        "16"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Siyasi partinin merkez disiplin kurulunun üye sayısı en az kaç olmalıdır?",
+      "back": "En az 7. Kurul, bu Kanunda ve parti tüzüğünde gösterilen şekilde kurulur.",
+      "articleRefs": [
+        "17"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "İl kongresinde, ilçe kongrelerince seçilen delegelerin sayısı en çok kaç olabilir?",
+      "back": "En çok 600. Delegeler, parti tüzüğüne göre ilçe kongrelerince seçilir.",
+      "explanation": "O ilin partili milletvekilleri ile yönetim ve disiplin kurullarının başkan ve üyeleri, il kongresinin tabii üyeleridir.",
+      "articleRefs": [
+        "19"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Geçici il yönetim kurulu başkanı ve üyeleri il kongresinde oy kullanabilir mi?",
+      "back": "Hayır, delege sıfatları yoksa kullanamazlar. Kongreye katılma hakları vardır, ancak delege sıfatı olmayanların oy kullanma hakkı yoktur.",
+      "explanation": "İl başkanı ile il yönetim kurulunu il kongresi seçer. İl yönetim kurulu, tüzüğün göstereceği sayıda üyeden oluşur; bu sayı 7'den az olamaz.",
+      "articleRefs": [
+        "19"
+      ],
+      "counterNumbers": []
+    }
+  ]
+}

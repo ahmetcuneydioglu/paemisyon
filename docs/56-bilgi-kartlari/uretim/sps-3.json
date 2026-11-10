@@ -1,0 +1,285 @@
+{
+  "deck": {
+    "topicId": "f8aedb6a-9fd5-436b-a51f-3a6f23805ee2",
+    "legislationSlug": "6222-sayili-sporda-siddetin-onlenmesine-dair-kanun",
+    "sourceLabel": "AI bilgi kartı — 6222 Sayılı Sporda Şiddetin Önlenmesine Dair Kanun md 15–17, 17/A, 18–27",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: resmî madde metni + çıkmış sorular)"
+  },
+  "cards": [
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "6222 sayılı Kanuna göre temin edilmiş bileti olmadan, müsabakayı izlemek amacıyla müsabaka ve seyir alanlarına giren kişiye verilecek adli para cezasının alt sınırı nedir?",
+      "back": "En az elli gün adli para cezası. Fail spor müsabakalarına seyirci olarak katılmaktan yasaklanmış biriyse ceza iki yüz günden az olamaz.",
+      "explanation": "Kendi elektronik kartını, başkasının seyirci olarak girmesi için kullandıran kişi de bu hükme göre cezalandırılır. Gençlik ve Spor Bakanlığının tasarrufundaki seyirci yerlerine giriş ve çıkış düzenlemeleri çerçevesinde girenlere bu hüküm uygulanmaz. Seyirden yasaklanmış kişiler bu istisnadan yararlanamaz.",
+      "articleRefs": [
+        "15"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Spor müsabakası biletini değerinin üstünde satan kişiye hangi ceza verilir?",
+      "back": "Bir yıldan üç yıla kadar hapis ve iki yüz elli günden beş bin güne kadar adli para cezası.",
+      "explanation": "Biletin satış yerini ve görevlilerini ilgili federasyon, spor kulüpleri ve yetkili diğer kişiler uygun görür. Bu yerler ve görevliler dışında bilet satan kişi altı aydan bir yıla kadar hapis ve yüz günden iki bin güne kadar adli para cezası alır.",
+      "articleRefs": [
+        "15"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Seyirci girişi için yetkisiz üretilmiş elektronik kartı kendi kullanımı için kabul eden kişiye iki yıldan beş yıla kadar hapis verilir mi?",
+      "back": "Hayır. Kendi kullanımı için kabul eden ve bulunduran kişi iki yıla kadar hapisle cezalandırılır. İki yıldan beş yıla kadar hapis; kartı yetkisiz üretme, satma, satışa arz etme ve devretme gibi fiiller içindir.",
+      "explanation": "Kartı yetkisiz olarak üreten, satan, satışa arz eden, devreden, satın alan, kabul eden veya bulunduran kişiye hapisle birlikte beş yüz günden onbin güne kadar adli para cezası da verilir.",
+      "articleRefs": [
+        "15"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Yasak alanlara yetkisiz girme suçu hangi zaman aralığındaki girişler için söz konusudur?",
+      "back": "Seyircilerin kabulüne başlanmasından müsabaka sonrasında alanın tamamen tahliyesine kadar geçen süre içindeki girişler için.",
+      "articleRefs": [
+        "16"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Müsabaka sırasında hangi yerlere yetkisiz girmek yasak alanlara girme suçunu oluşturur?",
+      "back": "Müsabaka alanı, soyunma odaları, odaların koridorları ve sporcu çıkış tünelleri.",
+      "explanation": "Suçun oluşması için girişin yetkisiz olması gerekir.",
+      "articleRefs": [
+        "16"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Soyunma odasına yetkisiz girilmesi müsabakanın seyrini veya güvenliğini bozarsa faile hangi ceza verilir?",
+      "back": "Bir yıldan üç yıla kadar hapis cezası.",
+      "explanation": "Fiil müsabakanın seyrini veya güvenliğini bozmamışsa ceza üç aydan bir yıla kadar hapis veya adli para cezasıdır.",
+      "articleRefs": [
+        "16"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Spor alanlarında işlenen kasten yaralama suçunun soruşturulması şikâyete bağlı mıdır?",
+      "back": "Hayır; şikâyet şartı aranmaz. Türk Ceza Kanununun ilgili maddelerine göre verilecek ceza yarı oranında artırılır.",
+      "explanation": "Aynı kural spor alanlarında işlenen mala zarar verme suçu için de uygulanır.",
+      "articleRefs": [
+        "17"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Spor alanları ve bu alanlardaki eşya, mala zarar verme suçu bakımından hangi hükümdedir?",
+      "back": "Kamu malı hükmündedir.",
+      "explanation": "Spor alanlarında işlenen mala zarar verme suçunda şikâyet şartı aranmaz ve verilecek ceza yarı oranında artırılır.",
+      "articleRefs": [
+        "17"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Spor alanında taşkınlık sırasında seyir alanındaki eşyaya zarar verilirse zararın tazmininden kim sorumludur?",
+      "back": "Zarar veren kişiler ile onların taraftarı olduğu spor kulübü, zarardan müteselsilen sorumludur.",
+      "explanation": "Zararı gideren spor kulübünün, sorumlu taraftarlarına rücu hakkı saklıdır. Kural müsabaka, antrenman ve seyir alanlarına ve bu alanlardaki eşyaya verilen zararları kapsar.",
+      "articleRefs": [
+        "17"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Kimliğini gizlemek amacıyla yüzünü bez veya sair unsurlarla kapatarak 6222 sayılı Kanundaki bir suçu işleyen kişinin cezası ne oranda artırılır?",
+      "back": "Yarı oranında artırılır; yüzün tamamen ya da kısmen kapatılması yeterlidir.",
+      "articleRefs": [
+        "17/A"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "md 17/A’ya göre 6222 sayılı Kanundaki suçlardan hangi mahkûmiyet hâlinde kişi spor kulüplerinin yönetim ve denetim organlarında görev yapmaktan yasaklanır?",
+      "back": "Bir yıl veya daha fazla hapis cezasına mahkûmiyet hâlinde.",
+      "explanation": "Yasak, Türk Ceza Kanununun 53 üncü maddesi hükümlerine göre verilir. Spor kulüplerinin, federasyonların ve bünyesinde sportif faaliyetler icra edilen tüzel kişilerin yönetim ve denetim organlarını kapsar. Şike ve teşvik primi suçlarında (md 11) ise süre şartı aranmaz; her mahkûmiyette ayrıca görev yasağına hükmolunur.",
+      "articleRefs": [
+        "17/A"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Sporda şiddet suçundan mahkûmiyet nedeniyle verilen yönetim ve denetim organlarında görev yapma yasağında, toplam hak yoksunluğu beş yılı aşabilir mi?",
+      "back": "Hayır; toplam hak yoksunluğu beş yıldan fazla olamaz. Yasak, cezanın tümüyle infazından itibaren mahkûm olunan hapis cezası kadar süre geçince sona erer.",
+      "explanation": "Yasaklama kararı hükmün kesinleşmesiyle yürürlüğe girer. Beş yıllık üst sınır, mahkûm olunan hapis cezası kadar süre kuralına getirilmiş istisnadır.",
+      "articleRefs": [
+        "17/A"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Mahkemenin güvenlik tedbiri olarak verdiği seyirden yasaklanma, cezanın infazı tamamlandıktan sonra ne kadar sürede sona erer?",
+      "back": "Bir yıl geçmesiyle sona erer. Kişi ikinci kez yasaklanmışsa süre üç yıl, üçüncü kez yasaklanmışsa beş yıldır.",
+      "explanation": "Yasak, hükmün kesinleşmesiyle infaza başlar. Ceza verilmesine yer olmadığı kararıyla birlikte hükmedilmişse süre, hükmün kesinleştiği tarihten itibaren işler. Karar Adli Sicil Kanunu hükümlerine göre kaydedilir. Bilgiler ayrıca Emniyet Genel Müdürlüğü bünyesindeki elektronik bilgi bankasına derhal işlenir.",
+      "articleRefs": [
+        "18"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Alkol ya da uyuşturucu veya uyarıcı madde etkisinde olduğu açıkça anlaşılan, seyir alanına girip dışarı çıkmamakta ısrar eden kişiye ne uygulanır?",
+      "back": "Zor kullanılarak dışarı çıkarılır ve bir yıl süreyle spor müsabakalarını seyirden yasaklanır.",
+      "explanation": "Böyle bir kişi müsabaka, antrenman ve seyir alanlarına hiç alınmaz.",
+      "articleRefs": [
+        "18"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Seyirden yasaklanan kişi, taraftarı olduğu takımın müsabaka gününde en yakın genel kolluk birimine ne zaman başvurmalıdır?",
+      "back": "Müsabakanın başlangıç saatinde ve bundan bir saat sonra, bulunduğu yere en yakın genel kolluk birimine.",
+      "explanation": "Yükümlülük, kişi yurt içindeyse ve yasağın sebebi olan fiilin işlendiği müsabakanın tarafı olan takımın maç günlerinde doğar. Takip için kolluk biyometrik yöntemler de kullanabilir. Yükümlülüğe aykırı hareket eden kişiye her bir müsabaka için yirmibeş günden az olmamak üzere adli para cezası verilir.",
+      "articleRefs": [
+        "18"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Bir spor kulübüne 6222 sayılı Kanuna göre ceza verilmesi, kulübün bağlı olduğu federasyonun yaptırım uygulama yetkisini ortadan kaldırır mı?",
+      "back": "Hayır. Kulübe ya da kulüp mensubuna bu Kanuna göre ceza verilmesi, federasyonun yaptırım uygulama yetkisini ortadan kaldırmaz.",
+      "articleRefs": [
+        "19"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Gençlik ve Spor Bakanlığının sporda şiddet suçlarıyla ilgili idari inceleme ya da soruşturmasında federasyon ve kulüplerin denetim elemanlarına karşı yükümlülüğü nedir?",
+      "back": "Kanuni engel bulunmadıkça ilgili bilgi ve belgeleri ibraz etmek ve bunların incelenmesine yardımcı olmak.",
+      "explanation": "Yükümlülük federasyon ve kulüplerle birlikte ilgili diğer kurum ve kuruluşları da kapsar. İnceleme ya da soruşturmanın gerekleriyle sınırlıdır.",
+      "articleRefs": [
+        "19"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Spor müsabakalarında görev yapan hakem, gözlemci, saha komiseri ve temsilciler hangi suçlar bakımından kamu görevlisi sayılır?",
+      "back": "Görevleriyle bağlantılı olarak kendilerine karşı işlenen suçlar bakımından.",
+      "articleRefs": [
+        "20"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Müsabakada özel güvenlik görevlisi bulundurma yükümlülüğüne aykırı davranan spor kulübüne ne kadar idari para cezası verilir?",
+      "back": "Eksik olan her bir özel güvenlik görevlisi için üç yüz Türk Lirası idari para cezası.",
+      "articleRefs": [
+        "21"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Elektronik bilet uygulamasına geçilmemiş seyir alanına biletsiz ya da kapasiteden fazla seyirci alınırsa ilgili spor kulübüne hangi ceza verilir?",
+      "back": "Beşbin Türk Lirasından ellibin Türk Lirasına kadar idari para cezası. Bu hüküm yalnız profesyonel futbol kulüplerinin müsabakalarında uygulanır.",
+      "articleRefs": [
+        "21"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Seyir alanında kendisine tahsis edilenden başka bir yere oturmakta ısrar eden seyirciye ne yapılır?",
+      "back": "Zor kullanılarak dışarı çıkarılır.",
+      "articleRefs": [
+        "21"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Sporda şiddeti teşvik eden açıklamayı bir spor kulübü ya da federasyon yöneticisi yaparsa idari para cezası ne kadar artırılabilir?",
+      "back": "Beş katına kadar artırılır. Temel ceza beşbin Türk Lirasından ellibin Türk Lirasına kadar idari para cezasıdır.",
+      "explanation": "İdari para cezası, açıklama basın ve yayın yoluyla yapılmışsa ve fiil suç oluşturmuyorsa uygulanır.",
+      "articleRefs": [
+        "22"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Sporda şiddeti teşvik eden açıklama yapan kişiye seyirden yasaklama hangi nitelikte ve ne süreyle uygulanır?",
+      "back": "İdari tedbir olarak; kararın verildiği tarihten itibaren bir yıl süreyle.",
+      "explanation": "Koruma tedbiri olarak verilen yasak kararının uygulanmasına ilişkin esas ve usuller bu tedbir için de uygulanır.",
+      "articleRefs": [
+        "22"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Sporda şiddeti teşvik eden açıklamanın tekrar tekrar yayımlanması hâlinde hangi hakkın sınırlarının aşıldığı kabul edilir?",
+      "back": "Haber verme hakkının sınırlarının aşıldığı kabul edilir.",
+      "explanation": "Haber verme ve eleştiri hakkının sınırları aşılarak yayım yapılırsa, basın ve yayın organının işleticisi olan gerçek veya tüzel kişiye yüzbin Türk Lirasından beşyüzbin Türk Lirasına kadar idari para cezası verilir.",
+      "articleRefs": [
+        "22"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "6222 sayılı Kanun kapsamındaki suçlarda yargılama yapmaya hangi mahkemeler yetkilidir?",
+      "back": "Hakimler ve Savcılar Kurulunun ihtisas mahkemesi olarak görevlendireceği asliye ceza mahkemeleri.",
+      "articleRefs": [
+        "23"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "6222 sayılı Kanundaki idari para cezalarına asliye ceza mahkemesi mi karar verir?",
+      "back": "Hayır. İdari para cezasına ve diğer idari yaptırımlara Cumhuriyet savcısı karar verir. Asliye ceza mahkemeleri bu Kanun kapsamındaki suçların yargılamasına yetkilidir.",
+      "articleRefs": [
+        "23"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "6222 sayılı Kanunun uygulanmasına ilişkin usul ve esaslar hangi düzenleyici işlemle belirlenir?",
+      "back": "Yönetmelikle. Yönetmelik, ilgili bakanlıkların görüşü alınarak Bakanlıkça çıkarılır.",
+      "explanation": "Yönetmelik ayrıca Kanunun kapsamına giren konuları ve kurum ve kuruluşların görev ve yetkilerini de düzenler.",
+      "articleRefs": [
+        "24"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "6222 sayılı Sporda Şiddet ve Düzensizliğin Önlenmesine Dair Kanun ne zaman yürürlüğe girmiştir?",
+      "back": "Yayımı tarihinde yürürlüğe girmiştir.",
+      "articleRefs": [
+        "26"
+      ]
+    }
+  ]
+}

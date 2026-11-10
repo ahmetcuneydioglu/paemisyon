@@ -1,0 +1,218 @@
+{
+  "deck": {
+    "topicId": "3f91916c-8d15-40f4-bb20-5bcca9253c34",
+    "legislationSlug": "2918-sayili-karayollari-trafik-kanunu",
+    "sourceLabel": "AI bilgi kartı — 2918 Sayılı Karayolları Trafik Kanunu md 25–32",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: resmî madde metni + çıkmış sorular)"
+  },
+  "cards": [
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Tescilsiz bir aracı karayolunda geçici olarak kullanabilmek için hangi sigortanın yaptırılmış olması gerekir?",
+      "back": "Mali mesuliyet sigortası. Bu şartla, ilgili tescil bürosundan geçici trafik belgesi ile geçici tescil plakası alınması zorunludur.",
+      "explanation": "Geçici trafik belgelerinin ve geçici tescil plakalarının çeşitleri, verilme şartları ve geçerlilik süreleri yönetmelikte belirtilir. Yurt dışından getirilecek ya da yurt dışına götürülecek araçlara geçici tescil plakası verilmesinin şartları da yönetmelikte yer alır.",
+      "articleRefs": [
+        "25"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Geçici trafik belgesi ve geçici tescil plakası almadan tescilsiz aracı karayolunda kullanan sürücüye ne kadar idari para cezası uygulanır?",
+      "back": "46.000 Türk lirası. Ayrıca araç otuz gün süreyle trafikten menedilir.",
+      "explanation": "Trafik zabıtası ayrıca geçici belge ve plakaları iptal eder.",
+      "articleRefs": [
+        "25"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Geçici tescil plakası kuralını ilk kez ihlal eden sürücünün aracı altmış gün süreyle trafikten menedilir mi?",
+      "back": "Hayır. İlk ihlalde araç otuz gün trafikten menedilir. Altmış gün, son ihlalden geriye doğru bir yıl içinde iki veya daha fazla ihlal varsa uygulanır.",
+      "explanation": "Tekrarlanan ihlalde para cezası da her seferinde 140.000 Türk lirasına çıkar.",
+      "articleRefs": [
+        "25"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Belirli araçlarda bulundurulması zorunlu olan ayırım işaretleri nelerdir?",
+      "back": "Plaka, ışık, renk, şekil, sembol ve yazı gibi işaretler. Bunlar aracın çalışma yerini ve şeklini, kapasitesini ve diğer niteliklerini belirler.",
+      "explanation": "Ayırım işaretleri bulunmayan araçlar trafik zabıtasınca trafikten men edilir.",
+      "articleRefs": [
+        "26"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Işıklı ve sesli uyarı işaretlerini, yönetmelikte belirtilen araçta takılacağı yerlerin dışında bulunduran sürücüye ne kadar idari para cezası uygulanır?",
+      "back": "96.000 Türk lirası trafik idari para cezası.",
+      "explanation": "Son ihlalden geriye doğru bir yıl içinde iki veya daha fazla ihlalde ceza her seferinde 192.000 Türk lirasıdır. Bu durumda ayrıca sürücü belgesi otuz gün süreyle geri alınır ve araç otuz gün süreyle trafikten menedilir.",
+      "articleRefs": [
+        "26"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Mevzuatta izin verilmeyen bir araca takılmış ışıklı uyarı cihazı için yalnızca söktürme işlemi mi yapılır?",
+      "back": "Hayır. Cihaz, bütün giderler ve sorumluluk işletene ait olmak üzere söktürülür; mülki amir cihaza el koyar ve mülkiyetinin kamuya geçirilmesine karar verir. Sürücüye ayrıca 96.000 Türk lirası trafik idari para cezası uygulanır, sürücü belgesi otuz gün geri alınır ve araç otuz gün trafikten menedilir.",
+      "explanation": "Işıklı ve/veya sesli uyarı işareti veren cihazların mevzuatta izin verilmeyen araçlara takılması ve kullanılması yasaktır. Bu cihazlara el koyma ve mülkiyetin kamuya geçirilmesine karar verme yetkisi mülki amirindir.",
+      "articleRefs": [
+        "26"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Tanınmasına yarayan işaretleri bulunmayan bir araca hangi belge verilmez?",
+      "back": "Tescil belgesi.",
+      "articleRefs": [
+        "27"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Araçların tanınmasına yarayan işaretler arasında neler sayılır?",
+      "back": "Motor-şasi ve seri numaraları ile gerektiğinde yüklü ve yüksüz ağırlıklar gibi işaretler. Bunların esasları yönetmelikte açıklanır.",
+      "articleRefs": [
+        "27"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Tanınma işareti bulunmayan veya bilinmeyen bir aracın işaretlerini kim belirler?",
+      "back": "Tescil büroları. Belirlenen işaretler aracın belgelerine işlenir.",
+      "articleRefs": [
+        "27"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Devlet malı araçların tescil plakaları hangi bakımdan farklıdır?",
+      "back": "Rengi bakımından; Devlet malı araçların tescil plakalarının rengi ayrı olur.",
+      "articleRefs": [
+        "28"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Emniyet araçlarının renklerine göre belirlenen boyama şekli, başka bir resmî kuruluşun aracında kullanılabilir mi?",
+      "back": "Hayır. Bu boyama şekli ve ayırım işaretleri; diğer resmî ve özel kuruluşlara, gerçek ve tüzelkişilere ait araçlarda kullanılamaz.",
+      "explanation": "Yasak hem boyama şeklini hem de ayırım işaretlerini kapsar. Aracın resmî ya da özel bir kuruluşa veya gerçek ya da tüzelkişiye ait olması sonucu değiştirmez.",
+      "articleRefs": [
+        "28"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Emniyet araçlarına özgü boyama şekliyle boyanmış özel bir araç ne zamana kadar trafikten men edilir?",
+      "back": "Aykırılık giderilinceye kadar.",
+      "explanation": "Aynı sonuç, bu araçlara özgü ayırım işaretini kullanan araçlar için de uygulanır.",
+      "articleRefs": [
+        "28"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Araçların yapım ve kullanma bakımından neye uyması zorunludur?",
+      "back": "Karayolu yapısına ve trafik güvenliğine.",
+      "articleRefs": [
+        "29"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Servis freni ya da lastikleri bozuk bir aracı trafik zabıtası ne zamana kadar trafikten men edebilir?",
+      "back": "Teknik şartlara uygun duruma getirilinceye kadar.",
+      "explanation": "Bu yetki, şu donanımları noksan, bozuk veya teknik şartlara aykırı olan araçlar için öngörülmüştür: servis freni, lastikler, dış ışık donanımından yakını ve uzağı gösteren ışıklar ile park, fren ve dönüş ışıkları. Metin \"men edilebilir\" ifadesini kullanır.",
+      "articleRefs": [
+        "30"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "(b) bendine uymayan ve uyumsuzluğu trafik emniyetini tehlikeye düşürmeyecek nitelikte olan araç doğrudan trafikten men edilir mi?",
+      "back": "Hayır. Önce aracın şartlara uygun duruma getirilmesi ihtar olunur. İhtarda verilen sürede uygun duruma getirilmediği tespit edilirse araç trafik zabıtasınca men edilir.",
+      "explanation": "(b) bendi şunları kapsar: diğer eksiklik ve bozukluklar; görüşü engelleyecek ya da kaza halinde içindekiler için tehlikeli olabilecek süs aksesuar eşya ve çıkıntıları; tehlike yaratacak ya da çevredekileri rahatsız edecek derecede duman veya gürültü çıkaran araçlar.",
+      "articleRefs": [
+        "30"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Azami yüklü ağırlığı tam 3.500 kilogram olan bir yük taşıtında takograf bulundurmak zorunlu mudur?",
+      "back": "Hayır. Zorunluluk, yük taşımada kullanılan ve azami yüklü ağırlığı 3.500 kilogramdan fazla olan motorlu taşıtlar içindir.",
+      "explanation": "Kanunda sayılan yolcu taşımacılığı faaliyetlerinde ise takograf, sürücüsü dahil oturma yeri on yediden fazla olan motorlu taşıtlarda zorunludur. Şu taşıtlarda takograf zorunluluğu aranmaz: 2918 sayılı Kanunun yürürlüğe girdiği tarihten önceki yıllarda üretilenler ve gördükleri hizmet bakımından yönetmelikle muafiyet tanınanlar.",
+      "articleRefs": [
+        "31"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Takograf, taksimetre ya da hız sınırlayıcıya müdahale ederek cihazı yanlış veri üretecek duruma getirene ne kadar idari para cezası uygulanır?",
+      "back": "185.000 Türk lirası. Ayrıca sürücünün sürücü belgesi otuz gün süreyle geri alınır.",
+      "explanation": "Son ihlalden geriye doğru bir yıl içinde iki veya daha fazla ihlalde ceza her seferinde 370.000 Türk lirasıdır ve sürücü belgesi her seferinde doksan gün süreyle geri alınır. Bu durumdaki bir cihazı kullanmak da aynı yasağın kapsamındadır.",
+      "articleRefs": [
+        "31"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Takograf, taksimetre veya hız sınırlayıcı kuralları nedeniyle işlem yapılan sürücü araç işleteni değilse, yükümlülüğünü yerine getirmeyen işletene ne kadar idari para cezası uygulanır?",
+      "back": "Tescil plakasına göre sürücü için belirlenen miktarın iki katı tutarında idari para cezası.",
+      "explanation": "İşleten, sürücünün kendisi olup olmadığına bakmaksızın şu konularda tedbir almak ve denetim yapmakla yükümlüdür: gereçler ile takograf, taksimetre ve hız sınırlayıcının bulundurulması, bunların kullanılır durumda olması ve sürücünün kurallara uyması.",
+      "articleRefs": [
+        "31"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Araç üzerinde mevzuata uygun yapılan bir değişiklik, işleten tarafından kaç gün içinde araç tescil belgesine işletilmelidir?",
+      "back": "Otuz gün içinde. Bu kurala uymayan işletene 1.000 Türk lirası idari para cezası uygulanır.",
+      "articleRefs": [
+        "32"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Üzerinde mevzuata uygun teknik değişiklik yapılan araç ne zamana kadar trafikten menedilir?",
+      "back": "İki şart gerçekleşinceye kadar: değişikliğin mevzuata uygun yapıldığı belgelenmeli ve bu durum ilgili tescil kuruluşunda araç tescil belgesine/kayıtlarına işletilmelidir.",
+      "articleRefs": [
+        "32"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Mevzuata aykırı yapılan değişiklik çevredekileri rahatsız edecek derecede gürültü çıkarıyorsa, aracı kullanan sürücüye ne kadar idari para cezası uygulanır?",
+      "back": "16.000 Türk lirası. Bu ceza, aykırı değişiklik nedeniyle işletene uygulanan 5.000 Türk lirasına ek olarak verilir.",
+      "explanation": "Bu durumda araç otuz gün süreyle trafikten menedilir. Men süresi sonunda araç, mevzuata uygun duruma getirilmeden teslim edilmez.",
+      "articleRefs": [
+        "32"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,296 @@
+{
+  "deck": {
+    "topicId": "3a7fb703-175b-4a01-a217-a00766c51d07",
+    "legislationSlug": "5275-ceza-ve-guvenlik-tedbirlerinin-infazi-hakkinda-kanun",
+    "sourceLabel": "AI bilgi kartı — 5275 Ceza ve Güvenlik Tedbirlerinin İnfazı Hakkında Kanun md 69–85",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: resmî madde metni + çıkmış sorular)"
+  },
+  "cards": [
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Kapalı ceza infaz kurumundaki hükümlü, özel günler dışında dışarıdan gönderilen bir hediyeyi ne sıklıkla kabul edebilir?",
+      "back": "İki ayda bir kez. Ayrıca dinî bayram, yılbaşı ve kendi doğum gününde de hediye kabul edebilir.",
+      "explanation": "Hediyenin kurum güvenliği için tehlikeli olmaması gerekir. Bu hakkın esas ve usulleri yönetmelikle belirlenir.",
+      "articleRefs": [
+        "69"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Yaşlı hükümlülerin, belirlenen zaman dilimleri dışında da hediye kabul edebilmesi için hangi yaşı tamamlamış olması gerekir?",
+      "back": "Altmış beş yaşını. Bu hükümlüler, idare ve gözlem kurulunun kararı doğrultusunda hediye kabul edebilir.",
+      "explanation": "Aynı imkân çocuk hükümlülere ve beraberinde çocuğu bulunan kadın hükümlülere de tanınmıştır. Bu durumda da karar idare ve gözlem kuruluna aittir.",
+      "articleRefs": [
+        "69"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Hükümlü, ceza infaz kurumunda dininin ibadetlerini hangi sınırlar içinde serbestçe yerine getirebilir?",
+      "back": "Düzeni bozmayacak ve çalışmayı engellemeyecek biçimde.",
+      "explanation": "Hükümlü, ibadette kullanılan eşyayı ve dinî yaşamı bakımından zorunlu olan kitap ve eserleri temin edebilir, bulunduğu yerde muhafaza edebilir. Dininin görevlilerince ziyaret edilmesine ise kurum güvenliğini tehlikeye düşürmemek koşuluyla izin verilir.",
+      "articleRefs": [
+        "70"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Hasta hükümlü öncelikle Devlet veya üniversite hastanesinde mi tedavi ettirilir?",
+      "back": "Hayır. Öncelik kurum revirindedir. Bu mümkün olmazsa Devlet veya üniversite hastanelerinin mahkûm koğuşlarında tedavi ettirilir.",
+      "explanation": "Hükümlü; beden ve ruh sağlığının korunması ve hastalıklarının tanısı için muayene ve tedavi olanaklarından, tıbbî araçlardan yararlanma hakkına sahiptir.",
+      "articleRefs": [
+        "71"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Kullanmak için uyuşturucu veya uyarıcı madde bulundurma ya da kullanma suçundan hükümlü olan kişi hangi programlara katılmak zorundadır?",
+      "back": "Tedavi ve rehabilitasyon programlarına.",
+      "explanation": "Başka bir suçtan hükümlü olup uyuşturucu veya uyarıcı madde bağımlısı olduğu tespit edilenlere de aynı hüküm uygulanır. Bu programlar için müstakil ceza infaz kurumları açılabilir ya da mevcut kurumların bir bölümü bu amaçla düzenlenebilir.",
+      "articleRefs": [
+        "71"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Tedavi ve rehabilitasyon programının başarılı olması amacıyla hükümlünün hangi hakları kısıtlanabilir?",
+      "back": "İzin, ziyaret ve görüşme hakları. Kısıtlama uzman görüşü doğrultusunda ve geçici olarak yapılır.",
+      "explanation": "Tedavi ve rehabilitasyon birimleri ile programlarının asgari standartlarını Adalet Bakanlığı belirler. Bunun için Sağlık Bakanlığının uygun görüşü alınır.",
+      "articleRefs": [
+        "71"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Hükümlüye verilecek besinin kalori esasını kim belirler?",
+      "back": "Adalet ve Sağlık bakanlıkları birlikte belirler.",
+      "explanation": "Besin; yaş, sağlık, çalışılan işin özelliği ile dinî ve kültürel gerekler göz önünde tutularak verilir, içme suyu da sağlanır. Günlük besin dışındaki ihtiyaçlar kurum kantininden karşılanabilir. Kantin yoksa bu ihtiyaçlar idarenin izin ve kontrolü altında dışarıdan sağlanabilir.",
+      "articleRefs": [
+        "72"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Hasta hükümlüye verilecek besinleri kim belirler?",
+      "back": "Kurum hekimi.",
+      "explanation": "Kurumda annesiyle birlikte kalan çocuklara ve süt emziren annelere de durumlarına uygun gıda verilir.",
+      "articleRefs": [
+        "72"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "İyileştirme programlarının hazırlanması ve uygulanması için ceza infaz kurumlarında hangi servisler oluşturulur?",
+      "back": "Eğitim ve psiko-sosyal hizmet servisleri.",
+      "explanation": "Programlar, hükümlünün bireysel ihtiyaçlarına uygun biçimde uygulanır. Bunun için geçmişi, suçluluk nedenleri, suç sicili, ruhsal yapısı, arz edebileceği tehlike hâlleri, hapis cezasının süresi ve salıverildikten sonraki beklentisi gibi ölçütler dikkate alınır.",
+      "articleRefs": [
+        "73"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Tehlikeli hâlde olduğu saptanan hükümlüler, bireyselleştirme çalışmalarında en fazla kaç kişilik gruplar hâlinde toplanabilir?",
+      "back": "On kişi. Bu hükümlüler on kişiyi aşacak biçimde gruplandırılamaz.",
+      "explanation": "Hükümlülerin, kurum veya bölümlerde bireyselleştirmeyi mümkün kılacak sayıda bulundurulmasına özen gösterilir. İyileştirme programı uygulanan grupların özelliklerine göre değişik güvenlik tedbirleri uygulanır.",
+      "articleRefs": [
+        "74"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Açık ceza infaz kurumundaki hükümlüler hangi öğretim türlerinden yararlanabilir?",
+      "back": "Tüm öğretim türlerinden. Çocuk eğitimevlerindeki hükümlüler de aynı haktan yararlanır.",
+      "explanation": "Diğer ceza infaz kurumlarındaki hükümlüler, kurum içinde verilebilen yaygın, dışarıdan ve açık öğretim programlarından yararlanır. Kapalı kurumdaki hükümlüler, kurum içinde açılan örgün öğretim programlarına da devam edebilir. Bu, kurumsal kapasite ve imkânların uygunluğu ölçüsünde mümkündür.",
+      "articleRefs": [
+        "76"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Kapalı ceza infaz kurumundaki hükümlünün kayıtlı olduğu lisans programının sınavı, ilk olarak eğitim kurumu görevlisinin gözetiminde yüz yüze mi yapılır?",
+      "back": "Hayır. Sınav, ilgili kurumla koordinasyon sağlanarak öncelikle çevrim içi yapılır. Bu mümkün olmazsa eğitim kurumu görevlisinin gözetiminde yüz yüze yapılır.",
+      "explanation": "Sınavlar ceza infaz kurumu içinde yapılır. Bu sırada kişi ve kurum güvenliği ile kurum disiplin ve düzeninin bozulmasını önleyici tedbirler alınır.",
+      "articleRefs": [
+        "76"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Kapalı ceza infaz kurumundaki hükümlü merkezî sınavlara nerede katılır?",
+      "back": "Sınav merkezi olarak belirlenen ceza infaz kurumlarında. Açık öğretim kurumlarının sınavlarına da aynı biçimde katılır.",
+      "explanation": "Kurum ve kuruluşlar ile üniversiteler, sınavlara ilişkin gerekli düzenlemeleri yapmak ve tedbirleri almakla yükümlüdür. Usul ve esaslar, Adalet Bakanlığınca çıkarılan yönetmelikle belirlenir. Bu yönetmelik için Milli Eğitim Bakanlığı ve Yükseköğretim Kurulunun görüşü alınır.",
+      "articleRefs": [
+        "76"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Hükümlünün acil veya olağan muayene ve tedavisini kim yapar?",
+      "back": "Kurumun hekimi.",
+      "explanation": "Tüm muayene ve tedavi sonuçları sağlık izleme kartına işlenir ve hükümlünün dosyasında saklanır. Sağlık Bakanlığı, Çalışma ve Sosyal Güvenlik Bakanlığı ile üniversitelerin sağlık kuruluşları, tedavi için gerekli yardımları yapmakla görevlidir.",
+      "articleRefs": [
+        "78"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 1,
+      "front": "Hükümlü rıza gösterirse üzerinde tıbbî deney yapılabilir mi?",
+      "back": "Hayır. Rızası olsa bile hiçbir hükümlü üzerinde tıbbî deney yapılamaz.",
+      "explanation": "Yasak mutlaktır; hükümlünün rızası sonucu değiştirmez.",
+      "articleRefs": [
+        "78"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Kurum hekimi ceza infaz kurumunu ne sıklıkla denetler?",
+      "back": "Ayda en az bir kez. Denetim sonunda düzenlediği raporu kurum yönetimine verir.",
+      "explanation": "Rapor, genel ve özel önlem alınması gereken hastalıkları ve sağlık koşulları yönünden alınması gereken önerileri içerir.",
+      "articleRefs": [
+        "79"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Hükümlünün sağlık nedeniyle hastaneye sevki gerektiğinde kurum hekimi ne yapar?",
+      "back": "Durumu derhâl bir raporla ceza infaz kurumu yönetimine bildirir.",
+      "articleRefs": [
+        "80"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Kendisine verilen yiyecek ve içecekleri sürekli reddeden hükümlüyü, bunun bedensel ve ruhsal zararları konusunda kim bilgilendirir?",
+      "back": "Ceza infaz kurumu hekimi.",
+      "explanation": "Psiko-sosyal hizmet birimi, hükümlünün bu hareketten vazgeçmesi için çalışır. Sonuç alınamazsa beslenmeye, kurum hekiminin belirlediği rejime göre uygun ortamda başlanır.",
+      "articleRefs": [
+        "82"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Açlık grevinde bilincinin bozulduğu hekimce belirlenen hükümlüye tedavi ve beslenme uygulanması için hükümlünün isteği aranır mı?",
+      "back": "Hayır. Tedbirler isteğine bakılmaksızın kurumda, olanak yoksa derhâl hastaneye kaldırılarak uygulanır. Tek şart, tedbirlerin sağlığı ve hayatı için tehlike oluşturmamasıdır.",
+      "explanation": "Aynı hüküm, hayatî tehlikeye girdiği hekimce belirlenen hükümlüye de uygulanır. Muayene ve tedaviyi reddeden ve sağlığı veya hayatı ciddî tehlikede olan hükümlü için de geçerlidir.",
+      "articleRefs": [
+        "82"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Hükümlünün sağlığını korumaya ve tedavisine yönelik zorlayıcı tedbirler hangi şartla uygulanır?",
+      "back": "Onur kırıcı nitelikte olmamak şartıyla.",
+      "explanation": "Tedbirler kurum hekiminin tavsiye ve yönetimi altında uygulanır. Kurum hekiminin zamanında müdahale edememesi veya gecikmesi hayatî tehlike doğurabilecekse, tedbirlere ikinci fıkradaki şartlar aranmaksızın başvurulur.",
+      "articleRefs": [
+        "82"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Hükümlünün eşi ve üçüncü dereceye kadar kan ve kayın hısımları onu ne sıklıkla ziyaret edebilir?",
+      "back": "Haftada bir kez; yakınlığın belgelendirilmesi koşuluyla.",
+      "explanation": "Vasisi veya kayyımı da aynı hakka sahiptir. Ziyaretler çalışma saatleri içinde yapılır.",
+      "articleRefs": [
+        "83"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Çocuk hükümlüler dışındaki hükümlülerin ziyaret süresi hangi sınırlar içindedir?",
+      "back": "Yarım saatten az ve bir buçuk saatten fazla olmamak üzere. Ziyaret çalışma saatleri içinde yapılır.",
+      "explanation": "Görüşler, koşul ve süreleri Adalet Bakanlığınca hazırlanan yönetmelikle belirlenir. Kapalı ve açık olmak üzere iki biçimde yaptırılır.",
+      "articleRefs": [
+        "83"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Çocuk hükümlünün ziyaret süresi de en fazla bir buçuk saat midir?",
+      "back": "Hayır. Çocuk hükümlüler için ziyaret süresi bir saatten az, üç saatten fazla olmamak üzere belirlenir.",
+      "explanation": "Bir buçuk saatlik üst sınır diğer hükümlüler içindir; onlarda alt sınır yarım saattir.",
+      "articleRefs": [
+        "83"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Hükümlüyü, kuruma kabulünde ad ve adresini bildirdiği en fazla kaç kişi ziyaret edebilir?",
+      "back": "En fazla üç kişi.",
+      "explanation": "Bu kişiler zorunlu hâller dışında bir daha değiştirilmez; kural yabancı hükümlüler için de saklıdır (md 84/3).",
+      "articleRefs": [
+        "83",
+        "84"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Diplomatik temsilciliği veya konsolosluğu bulunmayan bir devletin vatandaşı olan hükümlü kimlerle görüştürülür?",
+      "back": "Yararlarını koruyan devletin diplomatik temsilciliğiyle ya da bu gibi kimseleri koruma görevini üstlenmiş ulusal veya uluslararası kuruluşlarla.",
+      "explanation": "Mülteci veya vatansız hükümlüler için de aynı kural geçerlidir. Ziyaret istemleri, mevzuattaki esas ve usullere uygun olarak geciktirilmeden yerine getirilir.",
+      "articleRefs": [
+        "84"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Kurum, kurul ve kuruluşlar ceza infaz kurumunu ziyaret edip hükümlülerle görüşmek için kimden izin almak zorundadır?",
+      "back": "Adalet Bakanlığından.",
+      "explanation": "Aynı hüküm, bilimsel araştırma yapanlar ile görsel ve yazılı basın mensupları için de uygulanır. Adalet Bakanlığı, talepte bulunan kişilerin hükümlüleri ziyaret etmesine de izin verebilir.",
+      "articleRefs": [
+        "85"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Önceden izin verilmiş bir ziyaret, yangın veya ayaklanma sırasında da mutlaka yapılır mı?",
+      "back": "Hayır. Önceden izin verilmiş olsa bile doğal afet, yangın ve ayaklanma gibi olağanüstü durumlarda ziyaret ve görüşmeler ertelenebilir.",
+      "explanation": "Güvenliği tehlikeye düşürmeyecek tedbirleri kurum yönetimi alır.",
+      "articleRefs": [
+        "85"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Adalet Bakanlığı izniyle yapılan heyet ya da denetim kuruluşu ziyaretlerinde hükümlüyle görüşme kimin gözetiminde yapılır?",
+      "back": "Yasal zorunluluk olmadıkça kurum görevlilerinin gözetiminde.",
+      "explanation": "Güvenliği tehlikeye düşürmeyecek tedbirleri kurum yönetimi alır. Güvenlik bakımından bir araya getirilemeyecek hükümlülerle toplu görüşme yapılamaz.",
+      "articleRefs": [
+        "85"
+      ]
+    }
+  ]
+}

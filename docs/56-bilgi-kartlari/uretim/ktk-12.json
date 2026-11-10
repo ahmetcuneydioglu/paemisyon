@@ -1,0 +1,293 @@
+{
+  "deck": {
+    "topicId": "3f91916c-8d15-40f4-bb20-5bcca9253c34",
+    "legislationSlug": "2918-sayili-karayollari-trafik-kanunu",
+    "sourceLabel": "AI bilgi kartı — 2918 Sayılı Karayolları Trafik Kanunu md 75–86",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: resmî madde metni + çıkmış sorular)"
+  },
+  "cards": [
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Okul taşıtı “DUR” işaretini yaktığında hangi araçların durması zorunludur?",
+      "back": "Bütün araçların. Okul taşıtının “DUR” işareti yanarken her araç durmak zorundadır.",
+      "explanation": "Okul taşıtlarının çalıştırılma şartları, zamanları ve nitelikleri yönetmelikte belirtilir.",
+      "articleRefs": [
+        "75"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Okul taşıtı “DUR” işaretini hangi hallerde yakmak zorundadır?",
+      "back": "Yalnız öğrencilerin binmeleri veya inmeleri sırasında ve yönetmelikte belirtilen hallerde.",
+      "explanation": "Madde bu hükmü “sadece” kaydıyla kurar: öğrencilerin binip inmesi ve yönetmelikte belirtilen haller.",
+      "articleRefs": [
+        "75"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Işıklı işaret ve bariyerle donatılmamış bir demiryolu geçidini, geçidin durumuna uygun hızla yavaşlayarak geçmek yeterli midir?",
+      "back": "Hayır. Geçmeden önce durmak ve hiçbir demiryolu aracının yaklaşmadığına emin olduktan sonra geçmek zorundasın.",
+      "explanation": "Geçidin durumuna uygun hızla geçme kuralı bütün demiryolu geçitleri için geçerlidir. Işıklı işaret ve bariyer bulunmayan geçitte buna ek olarak durma yükümlülüğü vardır.",
+      "articleRefs": [
+        "76"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Bariyerli bir demiryolu geçidine girmek hangi durumda yasaktır?",
+      "back": "Taşıt yolu üzerine indirilmiş veya indirilmekte olan tam ya da yarım bariyerler varken.",
+      "explanation": "Demiryolu geçitlerinde ışıklı veya sesli işaretin vereceği “DUR” talimatına uymamak da yasaktır.",
+      "articleRefs": [
+        "76"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Çocuk, hasta ve engellilere ait motorsuz taşıtların sürücülerine trafikte hangi hükümler uygulanır?",
+      "back": "Yayalarla ilgili hükümler uygulanır.",
+      "articleRefs": [
+        "77"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Yönetmelikte gösterilen özel işareti taşıyan, gözleri görmeyen bir kişi taşıt yolundaysa sürücü olarak ne yapmak zorundasın?",
+      "back": "Yavaşlamak, gerekiyorsa durmak ve ona yardımcı olmak zorundasın. Bu yükümlülük bütün sürücüler içindir.",
+      "explanation": "Aynı maddeye göre bir yetkili veya görevli yönetimindeki yürüyüş kolları arasından geçmek de yasaktır.",
+      "articleRefs": [
+        "77"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Son ihlalden geriye doğru bir yıl içinde emniyet kemeri kuralını dört veya daha fazla kez ihlal eden sürücünün belgesi ne kadar süreyle geri alınır?",
+      "back": "Her seferinde otuz gün süreyle geri alınır.",
+      "explanation": "Her ihlalde ayrıca 2.500 Türk lirası idari para cezası uygulanır. Geri alma işlemini 6 ncı maddede sayılan görevliler yapar. Belgenin iadesi için bu Kanun kapsamında verilen idari para cezalarının tamamının tahsil edilmiş olması şarttır.",
+      "articleRefs": [
+        "78"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Son ihlalden geriye doğru bir yıl içinde koruma başlığı ve koruma gözlüğü kuralını üçüncü kez ihlal edene ne kadar idari para cezası uygulanır?",
+      "back": "10.000 Türk lirası. Üçüncü ve daha sonraki her ihlalde aynı tutar uygulanır.",
+      "explanation": "Ceza kademelidir: ilk ihlalde 2.500, bir yıl içinde ikinci ihlalde 5.000, üçüncü ve daha fazlasında her seferinde 10.000 Türk lirası.",
+      "articleRefs": [
+        "78"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Sürücü, kaç yaşını doldurmamış çocukların koruyucu sistemleri kullanmasını sağlamak zorundadır?",
+      "back": "15 yaşını doldurmamış çocukların. Bunu sağlamadan seyahatlerine izin veren sürücüye 5.000 Türk lirası idari para cezası uygulanır.",
+      "explanation": "Koruyucu sistemi usulüne uygun kullanmayan da kullanmamış sayılır. İşlem yapılan araçta sürücü ve yolcular gerekli koruyucu sistemleri takmadan aracın karayolunda seyrine izin verilmez.",
+      "articleRefs": [
+        "78"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Karayolu üzeri park yerinde yetkisi olmadan park ücreti alan ya da almaya teşebbüs eden kişiye hangi ceza verilir?",
+      "back": "Altı aydan iki yıla kadar hapis ve beş bin güne kadar adli para cezası verilir. Bu ceza, fiil daha ağır cezalı bir suç oluşturmuyorsa uygulanır.",
+      "explanation": "Teşebbüs de aynı cezayla karşılanır; ücreti fiilen almış olmak gerekmez.",
+      "articleRefs": [
+        "79"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Karayolu üzeri park yerindeki araçlar için park ücretini kimler alabilir?",
+      "back": "Park yerini yetki ve sorumluluk alanına göre tespite yetkili idare ile bu idarenin işletme izni verdiği gerçek veya tüzel kişiler.",
+      "explanation": "Bunlar dışında hiçbir gerçek veya tüzel kişi herhangi bir şekilde park ücreti alamaz.",
+      "articleRefs": [
+        "79"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Büyükşehirlerde otoyol ve ekspresyol üzerindeki park yerleri için de yetkili idare büyükşehir belediyesi midir?",
+      "back": "Hayır. Erişme kontrollü karayolları (otoyol-ekspresyol) hariç tutulur. Büyükşehirlerde bunların dışındaki park yerleri için yetkili idare büyükşehir belediyesidir.",
+      "articleRefs": [
+        "79"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Yalnız maddi hasarlı bir kazada taraflar yetkili ve görevli kişiyi beklemek istemiyorsa kaza yerinden hangi şartla ayrılabilir?",
+      "back": "Kazaya dahil kişilerin tümü buna lüzum görürse ve durumu aralarında yazılı olarak saptarlarsa ayrılabilirler.",
+      "explanation": "Bu imkân yalnız maddi hasarlı kazalarda ve kişilerin tümünün aynı görüşte olması halinde vardır. Diğer hallerde kaza yetkili ve görevli memurlara bildirilir. Bu memurlar gelinceye kadar ya da izinleri alınmadan kaza yerinden ayrılınmaz.",
+      "articleRefs": [
+        "81"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Anlaşma hali dışındaki maddi hasarlı bir kazada, zaruret yokken zabıtanın iznini almadan olay yerinden ayrılan sürücüye hangi idari para cezası verilir?",
+      "back": "46.000 Türk lirası idari para cezası verilir.",
+      "explanation": "Aynı ceza, birinci fıkranın (b) bendine uymayan sürücüye de uygulanır. Bu bende göre kaza trafiği, can ve mal güvenliğini etkilemiyorsa kanıt ve izler dahil kaza yerindeki durum değiştirilmez.",
+      "articleRefs": [
+        "81"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Ölümlü veya yaralanmalı bir trafik kazasında, zaruret dışında zabıtanın iznini almadan olay yerinden ayrılan sürücüye hangi hapis cezası verilir?",
+      "back": "Bir yıldan üç yıla kadar hapis cezası verilir.",
+      "explanation": "Bu sürücünün belgesi 6 ncı maddede sayılan görevlilerce iki yıl süreyle geri alınır. Belgenin iadesi için bu Kanun kapsamında verilen idari para cezalarının tamamının tahsil edilmiş olması şarttır.",
+      "articleRefs": [
+        "81"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Bir garaja üzerinde suç belirtisi bulunan bir araç gelirse garajın sahip ve sorumluları ne yapmak zorundadır?",
+      "back": "Gecikmeksizin zabıtaya haber vermek ve aracı bir deftere işlemek zorundadır.",
+      "explanation": "Aynı yükümlülük tamirhane ve servis istasyonu sahip ve sorumluları için de geçerlidir. Ölüm veya yaralanmayla sonuçlanan bir kaza geçirdiği belli olan araçlar da bu kapsamdadır.",
+      "articleRefs": [
+        "82"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Bir trafik kazasının yanından geçen aracın sürücüsü olarak hangi yükümlülüklerin vardır?",
+      "back": "İlk yardım önlemlerini almak, en yakın zabıtaya veya sağlık kuruluşuna haber vermek ve yetkililerin talebi üzerine yaralıları en yakın sağlık kuruluşuna götürmek.",
+      "explanation": "Kazaya karışmış araçların sürücüleri de aynı yükümlülük altındadır. Şehirlerarası akaryakıt istasyonlarının sahipleri veya işletenleri ise belirlenen standartlara uygun ilk yardım malzemesini her an kullanılabilir durumda bulundurmak zorundadır.",
+      "articleRefs": [
+        "82"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Trafik kazasına adli yönden gereği yapılmak üzere trafik zabıtası mı el koyar?",
+      "back": "Hayır. Adli yönden mahalli genel zabıta el koyar. Trafik zabıtası ise kazanın oluş nedenlerini, iz ve delillerini belirleyip trafik kaza tespit tutanağı düzenlemek üzere el koyar.",
+      "explanation": "Trafik zabıtası, usul kanunlarına göre görevlendirilirse trafik kazalarında bilirkişilik de yapar.",
+      "articleRefs": [
+        "83"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Trafik zabıtasının görevli olmadığı bir karayolunda meydana gelen kazada trafik kaza tespit tutanağını kim düzenler?",
+      "back": "Mahalli genel zabıta düzenler ve tutanağın bir örneğini o yerin trafik zabıtasına gönderir.",
+      "explanation": "Aynı usul, trafik zabıtasının o karayolunda bulunmadığı hallerde de uygulanır.",
+      "articleRefs": [
+        "83"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Ölümlü bir kaza yolu kapatmış; kaza can, mal ve trafik güvenliğini etkiliyor, başka yoldan geçiş verilemiyor ve Cumhuriyet savcısının gecikeceği anlaşılıyor. Yol hangi işlemlerden sonra trafiğe açılır?",
+      "back": "Gerekli işaretlemeler yapılır, araç ve ölüler kenara alınır ve durum bir tutanakla tespit edilir. Bu işlemlerden sonra yol trafiğe açılır.",
+      "explanation": "Bu kural ölümlü ve hayati tehlike yaratan yaralanmalı kazalar içindir. Yolun kapandığı diğer kazalarda trafik zabıtası veya genel zabıta, iz ve delilleri kaybolmayacak şekilde işaretleyip gerekli işlemleri yaptıktan sonra yolu açmaya yetkilidir.",
+      "articleRefs": [
+        "83"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Trafik kazasında arkadan çarpan sürücü nasıl kusurlu sayılır?",
+      "back": "Asli kusurlu sayılır.",
+      "explanation": "Asli kusur halleri arasında şunlar da bulunur: kırmızı ışıklı trafik işaretinde veya yetkili memurun dur işaretinde geçme, geçme yasağı olan yerlerde geçme, şeride tecavüz etme ve kavşaklarda geçiş önceliğine uymama.",
+      "articleRefs": [
+        "84"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Karşı yönden gelen trafiğin kullandığı şeride girmek, kaç şeritten fazla olan taşıt yollarında asli kusur sayılır?",
+      "back": "İkiden fazla şeritli taşıt yollarında. Karşı yön trafiğinin kullandığı şeride veya yol bölümüne giren sürücü asli kusurlu sayılır.",
+      "explanation": "Bölünmüş karayolunda karşı yönden gelen trafiğin kullandığı şerit, rampa ve bağlantı yollarına girmek de aynı maddenin ayrı bir bendinde asli kusur hali olarak sayılır.",
+      "articleRefs": [
+        "84"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Asli kusur sayılan bir hareketi kazaya karışan sürücülerden birden fazlası yapmışsa, her biri doğrudan asli kusurlu mu sayılır?",
+      "back": "Hayır. Bu durumda kusur oranı yönetmelikte belirtilen esaslara göre tespit edilir.",
+      "explanation": "Kaza, sayılan hareketler dışındaki kurallara, yasaklamalara, kısıtlamalara ve talimatlara uyulmamasından doğmuşsa da kusur oranı yönetmelikteki esaslara göre belirlenir.",
+      "articleRefs": [
+        "84"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Bir teşebbüsün kestiği biletle işletilen motorlu araç bir kişinin yaralanmasına sebep olursa zarardan kimler sorumlu olur?",
+      "back": "Motorlu aracın işleteni ve bağlı olduğu teşebbüsün sahibi. İkisi zarardan müştereken ve müteselsilen sorumludur.",
+      "explanation": "İşleten ve araç işleticisi teşebbüsün sahibi, aracın sürücüsünün veya aracın kullanılmasına katılan yardımcı kişilerin kusurundan kendi kusuru gibi sorumludur.",
+      "articleRefs": [
+        "85"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Cumhuriyet savcılığının talimatıyla aracın trafik kaydına konulan şerh, mahkeme kararı ibraz edilmezse ne kadar süre sonra hükümsüz sayılır?",
+      "back": "Bir ay. Şerhin konulduğu tarihten itibaren bir ay içinde şerhin kaldırıldığına veya devamına ilişkin mahkeme kararı ibraz edilmezse şerh hükümsüz sayılır.",
+      "explanation": "Şerh, ölüme veya yaralanmaya sebebiyet veren aracın devir ve temlikini ya da üzerinde hak tesisini önlemek için konur. Kaza anı ile şerh arasındaki sürede kötü niyetle yapılan araç tescilleri hükümsüz sayılır.",
+      "articleRefs": [
+        "85"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "İşletilme halinde olmayan bir motorlu aracın sebep olduğu kazada işleten, zarar gören hiçbir şey ispat etmeden sorumlu tutulabilir mi?",
+      "back": "Hayır. Zarar gören, işletenin veya eylemlerinden sorumlu tutulduğu kişilerin kusurunu ya da araçtaki bozukluğun kazaya sebep olduğunu ispat etmelidir.",
+      "articleRefs": [
+        "85"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "İşleten, sorumluluktan kurtulmak için kazanın hangi sebeplerden ileri geldiğini ispat etmelidir?",
+      "back": "Kazanın bir mücbir sebepten ya da zarar görenin veya bir üçüncü kişinin ağır kusurundan ileri geldiğini.",
+      "explanation": "Bu ispat yeterli değildir. Ayrıca işletenin veya eylemlerinden sorumlu tutulduğu kişilerin kusurunun bulunmaması ve araçtaki bir bozukluğun kazayı etkilememiş olması gerekir.",
+      "articleRefs": [
+        "86"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Kazanın oluşunda zarar görenin kusurunun bulunduğunu ispat eden işleten, sorumluluktan kurtulur mu?",
+      "back": "Hayır. Bu ispat tek başına kurtarmaz; hâkim, durum ve şartlara göre tazminat miktarını indirebilir. Kurtuluş için ağır kusurun ve diğer şartların ispatı gerekir.",
+      "explanation": "Tazminatın indirilmesi hâkimin takdirindedir. Bu hüküm, sorumluluktan kurtulamayan işleten ile araç işleticisinin bağlı olduğu teşebbüs sahibi için öngörülür.",
+      "articleRefs": [
+        "86"
+      ],
+      "counterNumbers": []
+    }
+  ]
+}
