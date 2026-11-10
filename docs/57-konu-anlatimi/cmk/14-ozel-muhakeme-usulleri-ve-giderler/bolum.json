@@ -1,0 +1,19 @@
+{
+  "slug": "cmk-ozel-muhakeme-usulleri-ve-giderler",
+  "title": "Özel Muhakeme Usulleri ve Giderler",
+  "subtitle": "Seri muhakeme, basit yargılama, uzlaştırma, kamu görevlileri ve çocuklar hakkında muhakeme, müsadere muhakemesi ve muhakeme giderleri",
+  "courseName": "Ceza Muhakemesi Hukuku",
+  "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+  "sortOrder": 14,
+  "isPremium": true,
+  "aiDraft": true,
+  "book": { "label": "THEMIS Ceza Muhakemesi Hukuku, 23. baskı, 2025", "page": "s.233–254" },
+  "lessons": [
+    { "file": "01-seri-muhakeme-usulu.md", "slug": "cmk-seri-muhakeme-usulu", "page": "s.235–237" },
+    { "file": "02-basit-yargilama-usulu.md", "slug": "cmk-basit-yargilama-usulu", "page": "s.237–239" },
+    { "file": "03-uzlastirma.md", "slug": "cmk-uzlastirma", "page": "s.247–251" },
+    { "file": "04-kamu-gorevlileri-hakkinda-muhakeme.md", "slug": "cmk-kamu-gorevlileri-hakkinda-muhakeme", "page": "s.239–246" },
+    { "file": "05-cocuklar-hakkinda-muhakeme.md", "slug": "cmk-cocuklar-hakkinda-muhakeme", "page": "s.246–247" },
+    { "file": "06-musadere-muhakemesi-ve-giderler.md", "slug": "cmk-musadere-muhakemesi-ve-giderler", "page": "s.233–234, 251–254" }
+  ]
+}
