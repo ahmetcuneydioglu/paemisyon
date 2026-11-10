@@ -1,0 +1,19 @@
+{
+  "slug": "cmk-koruma-tedbirleri-kisi-ozgurlugu",
+  "title": "Koruma Tedbirleri I: Kişi Özgürlüğü",
+  "subtitle": "Ortak koşullar, yakalama, gözaltı ve durdurma, tutuklama, adli kontrol",
+  "courseName": "Ceza Muhakemesi Hukuku",
+  "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+  "sortOrder": 8,
+  "isPremium": true,
+  "aiDraft": true,
+  "book": { "label": "THEMIS Ceza Muhakemesi Hukuku, 23. baskı, 2025", "page": "s.109–131" },
+  "lessons": [
+    { "file": "01-koruma-tedbiri-kavrami-ve-ortak-kosullar.md", "slug": "cmk-koruma-tedbiri-kavrami-ve-ortak-kosullar", "page": "s.109–110" },
+    { "file": "02-yakalama.md", "slug": "cmk-yakalama", "page": "s.111–114" },
+    { "file": "03-gozalti-durdurma-ve-kimlik-sorma.md", "slug": "cmk-gozalti-durdurma-ve-kimlik-sorma", "page": "s.115–118" },
+    { "file": "04-tutuklamanin-kosullari.md", "slug": "cmk-tutuklamanin-kosullari", "page": "s.119–125" },
+    { "file": "05-tutuklama-karari-sureler-ve-inceleme.md", "slug": "cmk-tutuklama-karari-sureler-ve-inceleme", "page": "s.125–128" },
+    { "file": "06-adli-kontrol.md", "slug": "cmk-adli-kontrol", "page": "s.128–131" }
+  ]
+}

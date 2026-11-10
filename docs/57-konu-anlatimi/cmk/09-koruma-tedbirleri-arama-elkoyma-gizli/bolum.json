@@ -1,0 +1,20 @@
+{
+  "slug": "cmk-koruma-tedbirleri-arama-elkoyma-gizli",
+  "title": "Koruma Tedbirleri II: Arama, Elkoyma ve Gizli Tedbirler",
+  "subtitle": "Arama, elkoyma ve özel elkoyma hâlleri, iletişimin denetlenmesi, gizli soruşturmacı ve teknik izleme, tanık koruma ve erişim engelleme, tazminat",
+  "courseName": "Ceza Muhakemesi Hukuku",
+  "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+  "sortOrder": 9,
+  "isPremium": true,
+  "aiDraft": true,
+  "book": { "label": "THEMIS Ceza Muhakemesi Hukuku, 23. baskı, 2025", "page": "s.131–162" },
+  "lessons": [
+    { "file": "01-arama.md", "slug": "cmk-arama", "page": "s.131–138" },
+    { "file": "02-elkoyma-ve-alikoyma.md", "slug": "cmk-elkoyma-ve-alikoyma", "page": "s.138–141, 146" },
+    { "file": "03-ozel-elkoyma-halleri.md", "slug": "cmk-ozel-elkoyma-halleri", "page": "s.134–135, 141–146" },
+    { "file": "04-iletisimin-denetlenmesi.md", "slug": "cmk-iletisimin-denetlenmesi", "page": "s.147–150" },
+    { "file": "05-gizli-sorusturmaci-ve-teknik-izleme.md", "slug": "cmk-gizli-sorusturmaci-ve-teknik-izleme", "page": "s.150–153" },
+    { "file": "06-tanik-koruma-ve-erisim-engelleme.md", "slug": "cmk-tanik-koruma-ve-erisim-engelleme", "page": "s.153–158" },
+    { "file": "07-koruma-tedbirleri-nedeniyle-tazminat.md", "slug": "cmk-koruma-tedbirleri-nedeniyle-tazminat", "page": "s.159–162" }
+  ]
+}
