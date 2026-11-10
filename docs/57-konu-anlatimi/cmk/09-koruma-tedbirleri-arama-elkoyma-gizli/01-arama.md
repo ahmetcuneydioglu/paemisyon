@@ -90,6 +90,10 @@ Cumhuriyet savcısı bulunmadan konutta, işyerinde ya da diğer kapalı yerlerd
 "Bilgisayarlarda, bilgisayar programlarında ve kütüklerinde arama, kopyalama ve elkoyma" (madde başlığı).
 :::
 
+:::uyari
+Anayasa Mahkemesi Şubat 2026'da verdiği kararla bu maddeyi iptal etmiştir. İptal, kararın yayımından dokuz ay sonra, Şubat 2027'nin sonunda yürürlüğe girer; o tarihe kadar madde yürürlüktedir ve burada anlatılan kurallar uygulanır.
+:::
+
 Şüphelinin kullandığı bilgisayarda arama genel arama kurallarından ayrılır. Eşik makul şüphe değil, somut delillere dayanan kuvvetli şüphedir ve başka yoldan delil elde etme imkânının bulunmaması gerekir. Kararı hâkim, acele hâlde savcı verir; savcının kararı yirmi dört saat içinde hâkimin onayına sunulur, hâkim de en geç yirmi dört saat içinde karar verir. Süre geçerse ya da hâkim aksine karar verirse çıkarılan kopyalar ve çözülen metinler derhâl imha edilir. Kolluk amirinin bu tedbirde hiçbir basamağı yoktur. Cihaza elkoyma ve yedekleme kuralları üçüncü derstedir.
 
 ## Arama bitince
@@ -134,4 +138,5 @@ Sorular aranan şüphenin derecesini, kolluk amirinin emir veremeyeceği yerleri
 - Gömülü sorular: bankadaki yayınlı gerçek sorular (a6791c05… aranan şüphe: makul şüphe, D; a76d4bb6… kolluk amirinin emir veremeyeceği yerler: işyeri ve kamuya açık olmayan kapalı alan, E; 639a1f8d… gece araması ve askerî mahal: yalnız II doğru, A — III 2018 değişikliğinden sonra adli kolluk yapar dediği için yanlıştır, ders md 119/5'i anmıyor, soru yalnız gece yasağı bakımından derse oturur; d2da3865… ihtiyar heyeti ya da komşulardan iki kişi, B; 768a097a… belge inceleme yetkisi kolluğa ait değildir, C). Hepsi beş şıklı, share 200. Soru üretilmedi.
 - Eşlenmeyen adaylar (soru-adaylari.md yedekleri): 793311f5… (gece yasağının ayrığı olmayan: ağır cezalık suç), 96f46835…, 8c55f8ea…, 3c875cc2…, 1b2a6c75… (karar merdiveni); 4c2990d4… (yönetmelik sıralaması, anahtar kanundan çıkarılamadı).
 - DENETİM DÜZELTMESİ (V2/K): md 134 madde bağının açıklama satırı kanunun madde başlığını birebir izlediği için tırnağa alındı ("madde başlığı" kaydıyla).
+- DENETİM DÜZELTMESİ (ana oturum, 11 Kas 2026, resmî CMK metninin dipnotu ile): KİTAP VE BANKA ESKİ — Anayasa Mahkemesinin 12/2/2026 tarihli ve E: 2023/128, K: 2026/36 sayılı Kararı ile md 134 iptal edilmiştir; iptal dokuz ay sonra (25/2/2027) yürürlüğe girer. Yerel/prod bankadaki md 134 metni bu notu taşımıyor (dipnot). Gövdeye uyarı eklendi. 25/2/2027'den önce yeni düzenleme yapılırsa ya da iptal yürürlüğe girince ders yeniden yazılmalı.
 - AI taslak; insan düzenleme ve yayın onayı bekliyor.

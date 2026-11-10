@@ -96,6 +96,10 @@ Kayyımın işlemleri yüzünden açılacak tazminat davaları kayyıma değil D
 Bilgisayarlarda arama, kopyalama ve elkoyma.
 :::
 
+:::uyari
+Anayasa Mahkemesi Şubat 2026'da verdiği kararla bu maddeyi iptal etmiştir. İptal, kararın yayımından dokuz ay sonra, Şubat 2027'nin sonunda yürürlüğe girer; o tarihe kadar madde yürürlüktedir ve burada anlatılan kurallar uygulanır.
+:::
+
 Şifre çözülemiyorsa, gizlenmiş bilgilere ulaşılamıyorsa ya da işlem uzun sürecekse cihaza elkonulabilir; çözüm yapılıp kopyalar alınınca cihaz gecikmeden iade edilir. Elkoyma sırasında sistemdeki bütün verilerin yedeği alınır ve bu yedekten bir kopya, ayrıca istem aranmaksızın, şüpheliye ya da vekiline verilir. Cihaza elkonulmadan da verilerin kopyası alınabilir.
 
 ## Basılmış eser ve kaçağın malları
@@ -146,4 +150,5 @@ Sorular taşınmazlara elkoymada kimin karar verdiğini, postada elkoymanın ko�
 - Gömülü sorular: bankadaki yayınlı gerçek sorular (e1628d71… taşınmazlara elkoymada "ağır ceza mahkemesi oybirliğiyle" yanlış, A; 442c6539… postada elkoymanın koşulu olmayan: katalog suç, C; 5952842b… avukat bürosunda aramanın koşulu olmayanlar: I ve II, C — III baro başkanı ya da temsilcisi koşuldur; ba509e12… kayyım "soruşturma evresi henüz sona ermemiş olmalıdır" yanlış, E, kayyım kovuşturmada da atanabilir; 82178f10… yedekten kopya için istem aranmaz, D yanlış). Hepsi beş şıklı, share 200. md 128/A için bankada soru yok. Soru üretilmedi.
 - Eşlenmeyen adaylar: 3ff83dc8… (md 134/1, savcı kararı ve onay), fc43d719… (md 128, başkasının zilyetliği), 68ddb545… ve f5ffeea5… (yönetmelik md 13 = CMK 130), c83fbfdf… (kayyıma rücu süresi: bir yıl), 5f45f12a… (md 128/1 sayılmayan; anahtar tartışmalı, kullanılmamalı).
 - DENETİM DÜZELTMESİ (V2/K): (a) md 128/A/4 "Cumhuriyet savcısının yazılı emri üzerine askıya alınan hesap" der: askıya almayı mali kurumun yanında savcının yazılı emri de başlatabilir; giriş tablosu ve askı tablosu buna göre düzeltildi. (b) Uyarı kutusundaki meta ek ("eski kaynaklarda bu kalıba rastlanır") silindi. (c) Yapı: giriş sekiz tür sayarken tablo beş tür gösteriyordu; avukat bürosu, bilgisayar ve basılmış eser satırları eklendi; :::tanim (özel elkoyma) ve md 128/A askısı üzerine :::ornek eklendi (kırk sekiz saat → md 128/A-1, yirmi dört saat onay ve kırk sekiz saat karar → md 128/A-4, iade → md 128/A-5); kaçağın malları, basılmış eser, kayyım ücreti ve md 128 değer listesi kısaltıldı (düz metin 895 kelime). md 128/A'nın amacına ilişkin yorum cümlesi ("paranın dakikalar içinde aktarılması") çıkarıldı. (d) Posta ayrığı: bankadaki not "(Ek:20/11/2017-KHK-696/94 md.; Aynen kabul: 1/2/2018-7079/89 md.)"; gövde "2017'de kanun hükmünde kararnameyle getirilen, 2018'de kanunla kabul edilen" olarak düzeltildi. (e) Basın Kanunu md 25/1'i birebir izleyen ibare tırnağa alındı.
+- DENETİM DÜZELTMESİ (ana oturum, 11 Kas 2026, resmî CMK metninin dipnotu ile): KİTAP VE BANKA ESKİ — Anayasa Mahkemesinin 12/2/2026 tarihli ve E: 2023/128, K: 2026/36 sayılı Kararı ile md 134 iptal edilmiştir; iptal dokuz ay sonra (25/2/2027) yürürlüğe girer. Yerel/prod bankadaki md 134 metni bu notu taşımıyor (dipnot). Gövdeye uyarı eklendi. 25/2/2027'den önce yeni düzenleme yapılırsa ya da iptal yürürlüğe girince ders yeniden yazılmalı.
 - AI taslak; insan düzenleme ve yayın onayı bekliyor.
