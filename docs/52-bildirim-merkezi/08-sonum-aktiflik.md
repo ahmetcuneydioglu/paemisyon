@@ -57,9 +57,20 @@ Girişsiz açılışta middleware `next=<yol>?nid=…` ile yönlendirir, nid kor
 - Docker (`paem-pg-doc52`/`paemisyon`, migration'lar güncellendi), `scripts/notifications/sonum-fikstur.ts`:
   62 kullanıcı; sonuç eski→yeni: aktif-web 6 kişi 2→0, aktif-ios 7 kişi 2→0, az-ama-dün 1 kişi 2→0, eski-cevap
   2→2, sönmüş 46 kişi 2→2, tier1 1→1. 13 aktif aday düştü, 46 sönmüş kullanıcı yerinde kaldı.
-- Prod etki sayımı: `scripts/notifications/sonum-etki-say.ts` (salt okunur, `connection_limit=1`) tier başına
-  "aktif → 0'a inecek" sayısını ve açma olaylarının kaynak/platform dağılımını basar. **Bu oturumda prod okuma
-  izni verilmedi; kullanıcı çalıştırır.** Kaynak oturum sayımı: 13 (59 tier-2 içinden).
+- Prod etki sayımı (`scripts/notifications/sonum-etki-say.ts`, salt okunur, `connection_limit=1`, 10 Kas 2026
+  23:05 TR):
+
+  | tier | toplam | aktif → 0 | aktif + push | aktif yalnız web | ≥20/7g | son 3 gün |
+  |---|---|---|---|---|---|---|
+  | 0 | 1264 | 224 | 6 | 2 | 147 | 174 |
+  | 1 | 1 | 1 | 1 | 1 | 0 | 1 |
+  | 2 | 59 | 15 | 15 | 3 | 13 | 12 |
+
+  Deploy ile tier 1/2'den 0'a inecek kullanıcı: **16** (15'i tier 2; hepsi push'lu, 4'ü yalnız web push). Tier 0'daki
+  224 aktif kullanıcı zaten 0'dır, değişmez. Açma/tıklama olaylarının tamamı: `clicked/inbox/ios` 12,
+  `clicked/web` 14 (kutu satırı tıklaması), `opened/push/ios` 2, `opened/web` 4 — toplam 32. Web push açılışı
+  (`opened/web`) tüm zamanlarda 4: Bulgu 2'yi prod verisi de doğrular, `/seans` ve `/kartlar` hedefli açılışlar
+  sayılmıyordu.
 
 ## Dosyalar
 `audience.service.ts` (CASE + `a7.last_at`), `decision.logic.ts` (`engagementTierFor`, sabitler, kural 10a),
