@@ -1,0 +1,20 @@
+{
+  "slug": "cmk-muhakemenin-ozneleri",
+  "title": "Ceza Muhakemesinin Özneleri",
+  "subtitle": "Savcı, katılan, şüpheli ve sanık, müdafi, hâkim, mahkemeler ve kolluk, mağdur ve şikâyetçi",
+  "courseName": "Ceza Muhakemesi Hukuku",
+  "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+  "sortOrder": 5,
+  "isPremium": true,
+  "aiDraft": true,
+  "book": { "label": "THEMIS Ceza Muhakemesi Hukuku, 23. baskı, 2025", "page": "s.53–81" },
+  "lessons": [
+    { "file": "01-muhakeme-makamlari-ve-savci.md", "slug": "cmk-muhakeme-makamlari-ve-savci", "page": "s.53–58" },
+    { "file": "02-katilan.md", "slug": "cmk-katilan", "page": "s.59–61" },
+    { "file": "03-supheli-ve-sanik.md", "slug": "cmk-supheli-ve-sanik", "page": "s.61–65" },
+    { "file": "04-mudafi.md", "slug": "cmk-mudafi", "page": "s.65–71" },
+    { "file": "05-hakim-yasaklilik-ve-ret.md", "slug": "cmk-hakimin-davaya-bakamamasi-ve-reddi", "page": "s.72–76" },
+    { "file": "06-mahkemeler-ve-kolluk.md", "slug": "cmk-mahkemeler-ve-kolluk", "page": "s.72, 76–79" },
+    { "file": "07-magdur-ve-sikayetci.md", "slug": "cmk-magdur-ve-sikayetci", "page": "s.79–81" }
+  ]
+}
