@@ -1,7 +1,7 @@
 import { BookOpen, ChevronRight, LayoutGrid, RotateCcw, Scale, Sparkles, Star, type LucideIcon } from "lucide-react-native";
 import { Pressable, View } from "react-native";
 import { AppText, Button, ListRow, Sheet } from "@/components/ui";
-import type { FlashcardRoomCounts, RoomTopic } from "@/features/rooms/queries";
+import { topicHasReading, topicReadingNote, type FlashcardRoomCounts, type RoomTopic } from "@/features/rooms/queries";
 import { useTheme } from "@/theme/ThemeProvider";
 import { FlashcardEntry } from "./flashcards";
 
@@ -60,7 +60,7 @@ export function TopicActionSheet({
           </AppText>
           <Button title="Soru çöz · bu konudan 10 soru" onPress={onStart} />
           <View>
-            <EylemSatiri icon={BookOpen} title="Özeti oku" subtitle={t.units.count > 0 ? `${t.units.count} ünite · ${t.units.read} okundu` : "Bu konuda henüz özet yok"} onPress={t.units.count > 0 ? onRead : undefined} />
+            <EylemSatiri icon={BookOpen} title="Konu oku" subtitle={topicHasReading(t) ? topicReadingNote(t) : "Bu konuda henüz okunacak içerik yok"} onPress={topicHasReading(t) ? onRead : undefined} />
             <EylemSatiri icon={RotateCcw} title="Yanlışlarım" subtitle={t.wrongCount > 0 ? `${t.wrongCount} soru` : "Bu konuda açık yanlış yok"} onPress={t.wrongCount > 0 ? onWrongs : undefined} />
             <EylemSatiri icon={Star} title="Favorilerim" subtitle={t.favoriteCount > 0 ? `${t.favoriteCount} soru` : "Bu konuda favori yok"} onPress={t.favoriteCount > 0 ? onFavorites : undefined} divider={Boolean(t.flashcards)} />
             {t.flashcards ? <FlashcardEntry counts={roomCountsToModeCounts(t.flashcards)} locked={t.flashcards.count === 0 && t.flashcards.locked > 0} onPress={onFlashcards} /> : null}
@@ -94,7 +94,7 @@ export function ReadingSheet({
   onFlashcards?: () => void;
 }) {
   const { space } = useTheme();
-  const ozetli = topics.filter((t) => t.units.count > 0);
+  const ozetli = topics.filter(topicHasReading);
   const kartlar = flashcards && (flashcards.count > 0 || flashcards.locked > 0) ? flashcards : null;
   return (
     <Sheet visible={sheet.visible} onClose={sheet.onClose} onDismissed={sheet.onDismissed} title="Konu oku">
@@ -104,7 +104,7 @@ export function ReadingSheet({
             Ünite içerikleri
           </AppText>
           {ozetli.map((t, i) => (
-            <EylemSatiri key={t.id} icon={BookOpen} title={t.name} subtitle={`${t.units.count} ünite · ${t.units.read} okundu`} onPress={() => onTopic(t)} divider={i < ozetli.length - 1} />
+            <EylemSatiri key={t.id} icon={BookOpen} title={t.name} subtitle={topicReadingNote(t)} onPress={() => onTopic(t)} divider={i < ozetli.length - 1} />
           ))}
         </View>
       ) : null}

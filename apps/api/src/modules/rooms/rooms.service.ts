@@ -38,6 +38,11 @@ type Satir = {
   favoriteCount: number;
   /** Yayındaki ünite özetleri; tek ünite varsa istemci doğrudan açar. */
   units: { count: number; read: number; firstSlug: string | null };
+  /**
+   * Yayındaki konu anlatımı dersleri (Doc 57). Ünite özetinden bağımsızdır: istemci konuyu
+   * "ünite YA DA ders varsa" okunabilir sayar (özeti yayınlanmamış derste dersler kaybolmasın).
+   */
+  lessons: { count: number; read: number };
   /** Bilgi kartları (Doc 56): bayrak kapalıyken ya da kart yoksa null (istemci satır çizmez). */
   flashcards: FlashcardRoomCounts | null;
   note: string;
@@ -63,6 +68,7 @@ const kamu = (r: Satir) => ({
   wrongCount: r.wrongCount,
   favoriteCount: r.favoriteCount,
   units: r.units,
+  lessons: r.lessons,
   flashcards: r.flashcards,
   note: r.note,
 });
@@ -114,6 +120,7 @@ export class RoomsService {
       testler,
       units,
       kartlar,
+      dersler,
     ] = await Promise.all([
       this.prisma.topic.findMany({
         where: { courseId, deletedAt: null, parentId: null },
@@ -167,6 +174,20 @@ export class RoomsService {
         },
       }),
       this.kartlar(userId, isPremiumUser, roles, { courseId }),
+      // Konu anlatımı (Doc 57): yayındaki bölümlerin yayındaki dersleri; konu, bölümün konusu ya da
+      // dersin konu bağıdır (LessonsService.sectionsFor ile aynı eşleme).
+      this.prisma.lesson.findMany({
+        where: {
+          status: 'published',
+          deletedAt: null,
+          section: { status: 'published', deletedAt: null, courseId },
+        },
+        select: {
+          section: { select: { topicId: true } },
+          links: { where: { kind: 'topic' }, select: { targetId: true } },
+          progress: { where: { userId, readAt: { not: null } }, select: { lessonId: true } },
+        },
+      }),
     ]);
     const examWeight = profile?.preferredModuleId
       ? await this.prisma.examSection.findFirst({
@@ -188,6 +209,17 @@ export class RoomsService {
       k.count += 1;
       if (u.progress.length) k.read += 1;
       uniteler.set(u.topicId, k);
+    }
+    const dersSayim = new Map<string, Satir['lessons']>();
+    for (const l of dersler) {
+      const konular = new Set(l.links.map((k) => k.targetId));
+      if (l.section.topicId) konular.add(l.section.topicId);
+      for (const id of konular) {
+        const k = dersSayim.get(id) ?? { count: 0, read: 0 };
+        k.count += 1;
+        if (l.progress.length) k.read += 1;
+        dersSayim.set(id, k);
+      }
     }
     const satir = (t: { id: string; name: string; isPremium: boolean }): Satir => {
       const p = prog.get(t.id);
@@ -213,6 +245,7 @@ export class RoomsService {
         wrongCount: yanlis,
         favoriteCount: sayimlar.favori.get(t.id) ?? 0,
         units: u,
+        lessons: dersSayim.get(t.id) ?? { count: 0, read: 0 },
         flashcards: kartlar ? kartSayimi(kartlar.byTopic.get(t.id)) : null,
         note: konuKunyesi({ solved, unitCount: u.count, wrongCount: yanlis }),
       };
@@ -253,6 +286,8 @@ export class RoomsService {
         wrongCount,
         favoriteCount: favCount,
         summaryUnitCount: units.length,
+        /** Yayındaki konu anlatımı dersi sayısı (Doc 57); "Konu oku" kutusu üniteden bağımsız sayar. */
+        lessonCount: dersler.length,
         /** Bilgi kartları (Doc 56): bayrak kapalı ya da kart yoksa null. */
         flashcards: kartlar ? kartSayimi(kartlar.total) : null,
         /** Ders testleri (Doc 49/18): seçim sayfasının alt yazısı. */
