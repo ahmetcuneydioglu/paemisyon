@@ -411,3 +411,31 @@ konsolide metinden yeniden alındı (`mevzuat-madde-tazele.ts --yaz`, yedek
 docs/32-yayin-denetimi/tazeleme-yedek-2026-11-11.json). Hukuki değişiklik değil,
 içe aktarım onarımı: LawArticleVersion açılmadı, bağlı özet/kartlar eskitilmedi
 (PVSK md 12 madde özeti yayında, 6136'da 7 kart in_review — içerikleri tam metinle tutarlı).
+
+## 4483 + 6284 Kanunu + 6284 Uygulama Yönetmeliği (11 Kas 2026)
+
+Kullanıcı talebi: sorular yapay zekâ ürünü olduğu anlaşılmayacak kadar doğal,
+gerçek çıkmış sorulara benzer, kökler net. Ölçüt `stil-cikmis.txt` (bankadaki
+201 resmî sınav sorusundan — PAEM 8/9/10, EGM Misyon Koruma, İçişleri GYS,
+Kaymakamlık — konu dengeli 80 soru); tur eki `07-ek-4483-6284.md` (kalite
+gözcüsü `sinavDegeri` + `dogallik` puanı, ikisinden biri <3 RED).
+
+| Parti | Aday | KABUL | RED |
+|---|---:|---:|---:|
+| 4483-p1 (md 1–20, Ek 1) | 12 | 11 | 1 |
+| 6284-p1 (Kanun md 1–25) | 14 | 14 | 0 |
+| 6284y-p1 (Yönetmelik md 1–24) | 9 | 9 | 0 |
+| 6284y-p2 (Yönetmelik md 25–48) | 10 | 8 | 2 |
+| **Toplam** | **45** | **42** | **3** |
+
+42 soru `in_review`. RED'ler yalnız sınav değeri düşük usul ayrıntısı (4483 md 5/3
+takdir cümlesi; Yönetmelik MERNİS şerhi 15. gün, tatil süre hesabı). Doğallık
+puanları çoğunlukla 4–5. Kanun ↔ Yönetmelik soruları arasında karşılıklı sızıntı
+çıktı (aynı hüküm iki metinde) — üç partinin revizyonu tek üreticide yapıldı,
+sızıntıya yol açan dört KABUL sorusunun şık/açıklaması da ikinci tura alındı.
+
+Tuzak: 6284 Uygulama Yönetmeliği kanunla aynı numarayı taşıdığı için
+`mevzuat-madde-tazele` / `degisiklik-tara` KANUNU çekiyor (kaynak 26 madde) —
+yönetmelikte --yaz çalıştırılmadı. "Kesik" görünen yönetmelik maddeleri, sonuna
+bir sonraki madde başlığı yapışmış tam metin. 4483'teki 7547 "eski" uyarısı
+yanlış alarm ("Genel Sekreteri" bankada var).

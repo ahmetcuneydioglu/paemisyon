@@ -1,0 +1,155 @@
+[
+  {
+    "id": "6284y-p1-01",
+    "articleNo": "3",
+    "kok": "6284 sayılı Kanun'a İlişkin Uygulama Yönetmeliği'ne göre, aşağıdakilerden hangisi şikâyet mercileri arasında sayılmıştır?",
+    "siklar": {
+      "A": "Kamu kurumu niteliğindeki meslek kuruluşları",
+      "B": "Kamu sağlık kuruluşları",
+      "C": "Bakanlığın ilgili birimleri",
+      "D": "Okul idareleri",
+      "E": "Mahalle muhtarlıkları"
+    },
+    "dogru": "C",
+    "aciklama": "Yönetmeliğin tanımlar maddesi şikâyet mercilerini tek tek sayar: KOLLUK, MÜLKİ AMİR, CUMHURİYET BAŞSAVCILIĞI, HÂKİM ve BAKANLIĞIN İLGİLİ BİRİMLERİ. Bu tanım Kanun'da yoktur; Kanun yalnız herkesin resmî makam veya mercilere ihbarda bulunabileceğini söyler. Seçeneklerdeki tuzak, şiddetten haberdar olunca harekete geçmesi gereken kurumlarla şikâyeti kabul eden mercilerin aynı şey sanılmasıdır. Yönetmeliğin ihbar maddesine göre kamu kurum ve kuruluşları ile kamu kurumu niteliğindeki meslek kuruluşları şiddeti veya şiddet tehlikesini öğrendiklerinde durumu DERHAL şikâyet mercilerine BİLDİRMEK ZORUNDADIR; yani bunlar merci değil, merciye bildirimde bulunan taraftır. Kamuya ait bir hastane ya da okul idaresi de bu kapsamda bildirim yükümlüsüdür, şikâyeti kendisi karara bağlamaz. Mahalle muhtarlıkları ise sayımda hiç yer almaz.",
+    "dayanak": "6284 sayılı Kanun'a İlişkin Uygulama Yönetmeliği md 3/1-r",
+    "zorluk": "easy",
+    "tur": "dogrudan"
+  },
+  {
+    "id": "6284y-p1-02",
+    "articleNo": "3",
+    "kok": "6284 sayılı Kanun'a İlişkin Uygulama Yönetmeliği'ne göre, gecikmesinde sakınca bulunan hâlin varlığı aşağıdakilerden hangisi sonucunda belirlenir?",
+    "siklar": {
+      "A": "Kolluğun yaptığı tahkikat ve risk değerlendirmesi",
+      "B": "ŞÖNİM'in düzenlediği sosyal araştırma raporu",
+      "C": "Cumhuriyet savcısının talimatıyla yapılan ön inceleme",
+      "D": "Mülki amirin yaptığı ön inceleme",
+      "E": "Bakanlık il müdürlüğünün yaptığı ihbar incelemesi"
+    },
+    "dogru": "A",
+    "aciklama": "Yönetmelik, gecikmesinde sakınca bulunan hâli KOLLUĞUN yapacağı TAHKİKAT ve RİSK DEĞERLENDİRMESİ sonucuna bağlar: derhal işlem yapılmadığı takdirde şiddet eyleminin önlenememesi, kişinin can güvenliğinin tehlikeye girmesi, delillerin kaybolması, şiddet uygulayanın kaçması veya kimliğinin tespit edilememesi gibi ihtimallerin ortaya çıkması ve mülki amirden ya da hâkimden karar almak için yeterince vakit bulunamaması hâli. Kanun bu kavramı kullanır ama tanımlamaz; tanım Yönetmeliğe özgüdür. Tanımın mantığı, kolluk amirinin bazı tedbirleri kendisinin alabildiği dar alanı açmaktır. Bu yüzden mülki amirin ön incelemesi doğru cevap olamaz: kavramın özü, tam da mülki amirden ya da hâkimden karar almaya vakit bulunamamasıdır. Değerlendirmeyi yapan kolluğun KENDİSİDİR, bir savcı talimatına ya da başka bir kurumun incelemesine bağlı değildir. Cumhuriyet savcısının talimatı ceza muhakemesindeki işleyişi çağrıştırır ama tanımda yer almaz. ŞÖNİM'in sosyal araştırma raporu ise Kanun'un 15 inci maddesinde hâkimin isteği üzerine hazırlanan bir destek hizmetidir; gecikmesinde sakınca bulunan hâlin belirlenmesiyle ilgisi yoktur.",
+    "dayanak": "6284 sayılı Kanun'a İlişkin Uygulama Yönetmeliği md 3/1-c",
+    "zorluk": "easy",
+    "tur": "kavram"
+  },
+  {
+    "id": "6284y-p1-03",
+    "articleNo": "5",
+    "kok": "6284 sayılı Kanun'a İlişkin Uygulama Yönetmeliği'ne göre, ihbar ve şikâyet üzerine yapılacak işlemlerle ilgili aşağıdakilerden hangisi doğrudur?",
+    "siklar": {
+      "A": "Sözlü yapılan şikâyetler, yazılı dilekçeyle teyit edildikten sonra tutanağa geçirilir.",
+      "B": "Kolluk, kendisine intikal eden olaylar hakkında aylık olarak ŞÖNİM'e bilgi verir.",
+      "C": "Mülki amir, kendisine yapılan şikâyeti olayın niteliğine göre aile mahkemesine gönderir.",
+      "D": "Cumhuriyet başsavcılığı, şikâyet üzerine evrakın bir örneğini hâkime veya mülki amire gönderir.",
+      "E": "Kolluk, gecikmesinde sakınca bulunan hâllerde aldığı tedbirleri Cumhuriyet başsavcılığının onayına sunar."
+    },
+    "dogru": "D",
+    "aciklama": "Yönetmeliğe göre Cumhuriyet başsavcılığı, yapılan ihbar ve şikâyet üzerine evrakın bir örneğini İVEDİLİKLE, olayın niteliğine göre uygulanabilecek koruyucu veya önleyici tedbir hakkında karar verilmek üzere HÂKİME veya MÜLKİ AMİRE gönderir. Mantık şudur: tedbire karar verme yetkisi savcıda değil, hâkimde ve mülki amirdedir; savcılık dosyayı yetkili merciye taşır. Diğer seçenekler aynı maddelerin gerçek kurallarının bozulmuş hâlidir. Sözlü şikâyet ve ihbarlar herhangi bir teyit beklenmeden DERHAL tutanağa geçirilir. Kolluk, kendisine intikal eden HER OLAY hakkında GECİKMEKSİZİN ve en seri vasıtalarla ŞÖNİM'e bilgi verir; periyodik bir bildirim söz konusu değildir. Mülki amir, şikâyeti olayın niteliğine göre aile mahkemesine değil, KOLLUĞA veya CUMHURİYET BAŞSAVCILIĞINA bildirir. Kolluğun gecikmesinde sakınca bulunan hâllerde aldığı tedbirler de tedbirin niteliğine göre MÜLKİ AMİRİN veya HÂKİMİN onayına sunulur; savcılık bu onay zincirinde yer almaz.",
+    "dayanak": "6284 sayılı Kanun'a İlişkin Uygulama Yönetmeliği md 4/5, 5/1, 5/2, 5/3",
+    "zorluk": "medium",
+    "tur": "ayrinti"
+  },
+  {
+    "id": "6284y-p1-04",
+    "articleNo": "7",
+    "kok": "Hakkında resen barınma yeri sağlanması tedbirine karar verilen bir kadın, yerleştirildiği barınma yerinde kalmak istemediğini bildirmiştir. 6284 sayılı Kanun'a İlişkin Uygulama Yönetmeliği'ne göre bu durumda yapılacak işlem aşağıdakilerden hangisidir?",
+    "siklar": {
+      "A": "Aydınlatılmış rızası alınarak kalmak istediği yere ŞÖNİM tarafından ulaştırılır.",
+      "B": "Tedbir kararının süresi doluncaya kadar barınma yerinde kalması sağlanır.",
+      "C": "Tedbirin kaldırılması için dosya ivedilikle aile mahkemesine gönderilir.",
+      "D": "Mülki amirin yazılı onayı alınarak barınma yerinden ayrılmasına izin verilir.",
+      "E": "Kolluk refakatinde, tedbiri veren mercinin belirleyeceği başka bir yere götürülür."
+    },
+    "dogru": "A",
+    "aciklama": "Yönetmeliğin barınma yerine ilişkin maddesi, RESEN hakkında barınma yeri sağlanması tedbirine karar verilen kişinin barınma yerinde kalmak istememesi hâlini ayrıca düzenler: kişinin AYDINLATILMIŞ RIZASI alınarak kalmak istediği yere ŞÖNİM tarafından ulaştırılır. Aydınlatılmış rıza, tanımlar maddesine göre kişinin tedbirin sebepleri, aşamaları ve sonuçları hakkında anlayabileceği biçimde bilgilendirilmesi ve bunları anlayıp kabul ettiğine dair YAZILI beyanıdır. Yani kişi barınma yerinde zorla tutulmaz, ama ayrılışı da kayıt altına alınmadan gerçekleşmez. Tuzak E seçeneğindedir: kolluk refakati bu hükümde yalnız kişinin HAYATİ TEHLİKESİNİN bulunması hâlinde TALEP EDİLİR ve gidilecek yeri tedbiri veren merci değil, kişinin kendisi seçer. Kişinin ayrılmak istemesi tedbirin kaldırılması için aile mahkemesine dosya gönderilmesini gerektirmez; mülki amirin ayrıca onay vermesi de öngörülmemiştir.",
+    "dayanak": "6284 sayılı Kanun'a İlişkin Uygulama Yönetmeliği md 7/6",
+    "zorluk": "medium",
+    "tur": "vaka"
+  },
+  {
+    "id": "6284y-p1-05",
+    "articleNo": "7",
+    "kok": "6284 sayılı Kanun'a İlişkin Uygulama Yönetmeliği'ne göre, barınma yeri sağlanması tedbirinin uygulanmasıyla ilgili aşağıdakilerden hangisi yanlıştır?",
+    "siklar": {
+      "A": "Sosyal tesis veya yurtta geçici olarak barındırılan korunan kişinin barınma ve iaşe giderleri ŞÖNİM tarafından ödenir.",
+      "B": "Hayati tehlikesi bulunan korunan kişinin konukevine yerleştirilmesine kolluk refakat eder.",
+      "C": "Geçici barınmanın sağlandığı yurtta kişinin güvenliği o yerin kolluğu tarafından sağlanır.",
+      "D": "Kolluk amirinin kararıyla kamuya ait barınma yerine getirilen şiddet mağduru, mülki amirin onayıyla kabul edilir.",
+      "E": "Korunan kişinin geçici olarak yerleştirildiği yere ilişkin bilgi ŞÖNİM'e bildirilir."
+    },
+    "dogru": "D",
+    "aciklama": "Yönetmeliğe göre MÜLKİ AMİRİN veya KOLLUK AMİRİNİN kararı ile kamu kurum ve kuruluşlarına ait barınma yerlerine getirilen şiddet mağduru, BAŞKA HERHANGİ BİR KARAR VEYA ONAY ARANMAKSIZIN barınma yerine DERHAL kabul edilir. Hükmün amacı, sahada kolluğun getirdiği kadının kapıda bürokratik bir onay beklemesini önlemektir. Tuzak, kolluk amirinin gecikmesinde sakınca bulunan hâlde aldığı barınma tedbirinin sonradan mülki amirin onayına sunulmasıdır; o onay tedbirin AYAKTA KALIP KALMAYACAĞINI belirler, mağdurun barınma yerine kabulünü ertelemez. Diğer ifadeler aynı maddede yer alır: korunan kişi güvenli nakli sağlanıncaya kadar sosyal tesis, yurt ve benzeri yerlerde bedeli ödenerek geçici olarak barındırılır, kişinin güvenliğini geçici barınmanın sağlandığı yerin kolluğu sağlar, barınma ve iaşe giderleri ŞÖNİM tarafından ödenir ve yerleştirildiği yere ilişkin bilgi ŞÖNİM'e bildirilir. Hayati tehlike bulunması hâlinde konukevi, ilk kabul birimi veya diğer tesislere güvenli yerleştirmeye kolluk refakat eder.",
+    "dayanak": "6284 sayılı Kanun'a İlişkin Uygulama Yönetmeliği md 7/2, 7/3, 7/5",
+    "zorluk": "medium",
+    "tur": "ayrinti"
+  },
+  {
+    "id": "6284y-p1-06",
+    "articleNo": "10",
+    "kok": "Hakkında geçici koruma kararı bulunan bir kadın, acil bir durum olmaksızın başka bir ildeki ailesinin yanına gidecektir. 6284 sayılı Kanun'a İlişkin Uygulama Yönetmeliği'ne göre bu kişi, gideceği yer hakkında görevli ve yetkili kolluğa en geç ne zaman bilgi vermelidir?",
+    "siklar": {
+      "A": "Yirmi dört saat öncesinden",
+      "B": "Kırk sekiz saat öncesinden",
+      "C": "Yetmiş iki saat öncesinden",
+      "D": "Bir hafta öncesinden",
+      "E": "İki hafta öncesinden"
+    },
+    "dogru": "A",
+    "aciklama": "Geçici koruma altındaki kişinin yer değiştirmesi Yönetmelikte iki ayrı rejime bağlanmıştır: korunan kişi ACİL DURUMLARDA HEMEN, DİĞER HÂLLERDE ise YİRMİ DÖRT SAAT ÖNCESİNDEN gideceği yere ilişkin olarak görevli ve yetkili kolluğa bilgi verir. Soruda acil durum bulunmadığı açıkça belirtildiği için uygulanacak süre yirmi dört saattir. Bu süre Kanun'da yer almaz, Yönetmeliğe özgü bir usul kuralıdır. Çeldiricilerin çoğu aynı Yönetmeliğin başka hükümlerindeki gerçek sürelerdir ve bu yüzden karıştırılır. Bu süreler korunan kişinin bildirim yükümlülüğüyle ilgili değildir.",
+    "dayanak": "6284 sayılı Kanun'a İlişkin Uygulama Yönetmeliği md 10/2",
+    "zorluk": "medium",
+    "tur": "vaka"
+  },
+  {
+    "id": "6284y-p1-07",
+    "articleNo": "10",
+    "kok": "I. Korunan kişinin gideceği yerdeki kolluk gecikmeksizin haberdar edilir ve tedbir uygulanmaya devam olunur.\nII. Fiziki koruma tedbirleri, gecikmesinde sakınca bulunan hâllerde kolluk tarafından belirlenir.\nIII. Geçici koruma kararının kapsam ve içeriği korunan kişiye ŞÖNİM tarafından açıklanarak tutanağa geçirilir.\n6284 sayılı Kanun'a İlişkin Uygulama Yönetmeliği'ne göre, geçici koruma ile ilgili verilenlerden hangileri doğrudur?",
+    "siklar": {
+      "A": "Yalnız I",
+      "B": "Yalnız III",
+      "C": "I ve II",
+      "D": "II ve III",
+      "E": "I, II ve III"
+    },
+    "dogru": "C",
+    "aciklama": "I doğrudur: korunan kişi gideceği yer hakkında kolluğa bilgi verdiğinde kolluk, kişinin gideceği yerdeki kolluğu gecikmeksizin haberdar eder ve tedbir kararı orada da uygulanmaya devam olunur; koruma kişinin yer değiştirmesiyle kesilmez. II doğrudur: korunan kişinin ne şekilde koruma altına alınacağı, muhtemel tehdit ve risk göz önüne alınarak Tanık Koruma Tedbirlerine İlişkin Esas ve Usuller Hakkında Yönetmelikteki FİZİKİ KORUMA TEDBİRLERİNDEN belirlenir; bunu kural olarak HÂKİM veya MÜLKİ AMİR, gecikmesinde sakınca bulunan hâllerde ise KOLLUK yapar. III yanlıştır: geçici koruma kararının kapsam ve içeriği, şiddet tehlikesi hâlinde arayabileceği telefon numaraları, kolluğun sorumlulukları, hangi durumlarda kolluğa bilgi vermesi gerektiği ve hangi kolluk biriminin sorumlu olduğu gibi hususlar korunan kişiye ŞÖNİM tarafından değil, KOLLUK tarafından açıklanır, tutanağa geçirilir ve tebliğ edilir. ŞÖNİM'in Yönetmelikteki ağırlıklı rolü koordinasyon ve izlemedir; geçici korumayı fiilen yürüten ve kişiyi bilgilendiren birim kolluktur.",
+    "dayanak": "6284 sayılı Kanun'a İlişkin Uygulama Yönetmeliği md 10/2, 10/3, 10/4",
+    "zorluk": "medium",
+    "tur": "onerme"
+  },
+  {
+    "id": "6284y-p1-08",
+    "articleNo": "16",
+    "kok": "6284 sayılı Kanun'a İlişkin Uygulama Yönetmeliği'ne göre, hâkim tarafından verilen tedbir kararı ile kararın gönderildiği veya bildirildiği yer eşleştirmelerinden hangisi yanlıştır?",
+    "siklar": {
+      "A": "İş yerinin değiştirilmesi – Korunan kişinin iş yeri",
+      "B": "Kimlik bilgilerinin değiştirilmesi – Nüfus müdürlüğü",
+      "C": "Aile konutu şerhi konulması – Tapu sicil müdürlüğü",
+      "D": "Kira sözleşmesinin feshedilmemesi – Kiralayan",
+      "E": "Kamu konutu tahsisinin kaldırılmaması – İlgili kamu kurumu"
+    },
+    "dogru": "B",
+    "aciklama": "Kimlik ve diğer bilgi ve belgelerin değiştirilmesi kararı, İÇİŞLERİ BAKANLIĞINCA gereği yerine getirilmek üzere hâkim tarafından CUMHURİYET BAŞSAVCILIĞINA gönderilir; Cumhuriyet başsavcılığı kararı ivedilikle İçişleri Bakanlığına iletir ve yapılan işlemin sonucu İçişleri Bakanlığınca Cumhuriyet başsavcılığına bildirilir. Bu tedbir Tanık Koruma Kanunu hükümlerine göre ve hayati tehlike ile diğer tedbirlerin yetersizliği şartıyla verildiği için yerel bir nüfus işlemi gibi yürümez. Nüfus müdürlüğü çeldiricisi bilinçli bir karışıklığa dayanır: Yönetmelikte nüfus müdürlüğü, AYRI YERLEŞİM YERİ belirlenmesi tedbirinde, kişinin müracaatı üzerine ADRESLE ilgili işlemleri yapan birimdir. Diğer eşleştirmeler doğrudur: iş yerinin değiştirilmesi kararı yerine getirilmek üzere korunan kişinin İŞ YERİNE tebliğ edilir, aile konutu şerhi kararı ivedilikle TAPU SİCİL MÜDÜRLÜĞÜNE gönderilir, kira sözleşmesine ilişkin tedbir KİRALAYANA, kamu konutu tahsisinin kaldırılmamasına yönelik tedbir ise İLGİLİ KAMU KURUMUNA bildirilir.",
+    "dayanak": "6284 sayılı Kanun'a İlişkin Uygulama Yönetmeliği md 13/2, 15/2, 16/2, 19/4",
+    "zorluk": "hard",
+    "tur": "kavram"
+  },
+  {
+    "id": "6284y-p1-09",
+    "articleNo": "19",
+    "kok": "6284 sayılı Kanun'a İlişkin Uygulama Yönetmeliği'ne göre, şiddet uygulayanın müşterek konuttan uzaklaştırılması tedbiri ile ilgili aşağıdakilerden hangisi doğrudur?",
+    "siklar": {
+      "A": "Teslim edilecek kişisel eşya ve belgeler, teslim sırasında belirlenir.",
+      "B": "Kişisel eşya ve belgelerin teslimine Cumhuriyet savcısı karar verir.",
+      "C": "Konutun korunan kişiye tahsisi, korunan kişinin konutta mülkiyet hakkı bulunmasına bağlıdır.",
+      "D": "Gecikmesinde sakınca bulunan hâllerde bu tedbire mülki amir tarafından karar verilir.",
+      "E": "Tedbir, şiddet uygulayanın konutun kira ve su giderlerini karşılamasına engel değildir."
+    },
+    "dogru": "E",
+    "aciklama": "Yönetmeliğe göre müşterek konuttan uzaklaştırma tedbirinin uygulanması, şiddet uygulayanın uzaklaştırıldığı konutun KİRA, ELEKTRİK, SU, TELEFON, DOĞALGAZ ve benzeri giderlerini KARŞILAMAYA DEVAM ETMESİNE ENGEL TEŞKİL ETMEZ. Kural, uzaklaştırılan kişinin konuttan çıkarılmasıyla geride kalan korunan kişinin ekonomik olarak yalnız bırakılmasını önler. Kişisel eşya ve belgeler konusunda yetki Cumhuriyet savcısında değil, MÜLKİ AMİR ya da HÂKİMDEDİR; bu merciler talep edilmesi hâlinde korunan kişiye, şiddet uygulayana ya da bunların yakınlarına ait eşya ve belgelerin teslimine karar verir ve teslim edilecek eşya ve belgeler, teslim anında değil, TEDBİR KARARINDA gösterilir. Konutun korunan kişiye tahsisi için mülkiyet şartı aranmaz.",
+    "dayanak": "6284 sayılı Kanun'a İlişkin Uygulama Yönetmeliği md 19/2, 19/3",
+    "zorluk": "hard",
+    "tur": "ayrinti"
+  }
+]

@@ -1,0 +1,206 @@
+[
+  {
+    "id": "4483-p1-01",
+    "articleNo": "3",
+    "kok": "4483 sayılı Kanun'a göre, ilçelerdeki belde belediye başkanları hakkında soruşturma izni vermeye yetkili merci aşağıdakilerden hangisidir?",
+    "siklar": {
+      "A": "Vali",
+      "B": "İçişleri Bakanı",
+      "C": "Kaymakam",
+      "D": "Vali yardımcısı",
+      "E": "Belediye meclisi"
+    },
+    "dogru": "C",
+    "aciklama": "4483 sayılı Kanun'un 3 üncü maddesi belediye başkanlarını belediyenin türüne göre farklı mercilere bağlar. (h) bendine göre büyükşehir, il ve ilçe belediye başkanları, bu belediyelerin meclis üyeleri ve il genel meclisi üyeleri hakkında soruşturma izni İÇİŞLERİ BAKANINA aittir. Belde belediyeleri ise ayrı bir bentte, (i) bendinde düzenlenmiştir: İLÇELERDEKİ belde belediye başkanları ve belde belediye meclisi üyeleri hakkında KAYMAKAM, MERKEZ İLÇELERDEKİ belde belediye başkanları ve meclis üyeleri hakkında ise bulundukları ilin VALİSİ yetkilidir. Tuzak, 'belediye başkanı' ifadesini görünce (h) bendindeki İçişleri Bakanını işaretlemektir; oysa (h) bendi belde belediyelerini saymaz. Vali cevabı ise yalnız merkez ilçelerdeki beldeler için doğrudur; kanun ilçedeki ve merkez ilçedeki beldeyi aynı bentte ama ayrı mercilere bağlayarak sayar. Vali yardımcısı maddede izin merci olarak geçmez; belediye meclisi de soruşturma izni veren bir merci değildir, aksine meclis üyeleri de aynı bentte izne tabi tutulanlar arasındadır.",
+    "dayanak": "4483 sayılı Kanun md 3-(i)",
+    "zorluk": "easy",
+    "tur": "kavram"
+  },
+  {
+    "id": "4483-p1-02",
+    "articleNo": "14",
+    "kok": "Kaymakamın yıllık izinde bulunduğu sırada kaymakama vekâlet eden ilçe müdürü hakkında, vekâlet görevi sebebiyle işlediği ileri sürülen bir suç nedeniyle soruşturma izni istenmiştir. 4483 sayılı Kanun'a göre bu kişi hakkında soruşturma izni vermeye yetkili merci aşağıdakilerden hangisidir?",
+    "siklar": {
+      "A": "Vali",
+      "B": "Kaymakam",
+      "C": "Bağlı olduğu il müdürü",
+      "D": "Bağlı olduğu bakanlığın en üst idari amiri",
+      "E": "İlgili bakan"
+    },
+    "dogru": "A",
+    "aciklama": "Kanun'un 14 üncü maddesine göre bu Kanunun uygulanmasında VEKİLLER, ASİLLERİN TABİ OLDUĞU USULE tabidir. 3 üncü madde de yetkili merciin saptanmasında memur veya kamu görevlisinin SUÇ TARİHİNDEKİ GÖREVİNİN esas alınacağını söyler. Olayda suç vekâlet görevi sebebiyle işlenmiştir; bu nedenle kendi kadrosuna göre değil, vekâlet ettiği kaymakamlık makamına göre işlem yapılır. 3 üncü maddenin (b) bendi uyarınca kaymakamlar hakkında soruşturma izni vermeye yetkili merci VALİDİR; vekil de aynı usule tabi olduğundan izin valiye aittir. Tuzak, kişinin asıl kadrosuna bakıp onu 'ilçede görevli memur' sayarak (a) bendindeki kaymakamı işaretlemektir; fiil ilçe müdürlüğü görevinden değil, vekâlet edilen kaymakamlık görevinden doğmuştur. Bakanlığın en üst idari amiri (d) bendinde bakanlıkların merkez ve bağlı kuruluşlarında görev yapanlar için öngörülmüştür; bağlı olunan il müdürü ise maddede izin merci olarak hiç geçmez. İlgili bakan (e) bendinde sayılır, fakat bu bent (b) ve (c) bentlerindeki hükümleri saklı tutar.",
+    "dayanak": "4483 sayılı Kanun md 14; md 3-(b) ve md 3 (suç tarihindeki görev)",
+    "zorluk": "hard",
+    "tur": "vaka"
+  },
+  {
+    "id": "4483-p1-03",
+    "articleNo": "4",
+    "kok": "4483 sayılı Kanun'a göre, Cumhuriyet başsavcısı bir memurun bu Kanun kapsamına giren suçuna ilişkin ihbar aldığında, soruşturma izni istemeden önce aşağıdakilerden hangisini yapabilir?",
+    "siklar": {
+      "A": "Hakkında ihbarda bulunulan memurun ifadesini almak",
+      "B": "Ön inceleme için denetim elemanı görevlendirmek",
+      "C": "Memurun görevden uzaklaştırılmasına karar vermek",
+      "D": "Kaybolma ihtimali bulunan delilleri tespit etmek",
+      "E": "Memur hakkında iddianame düzenlemek"
+    },
+    "dogru": "D",
+    "aciklama": "4483 sayılı Kanun'un 4 üncü maddesinin birinci fıkrası Cumhuriyet başsavcısının bu aşamadaki yetkisini bilinçli olarak daraltır. Başsavcı, memurlar ve diğer kamu görevlilerinin bu Kanun kapsamına giren suçlarına ilişkin ihbar veya şikâyet aldığında ya da böyle bir durumu öğrendiğinde İVEDİLİKLE TOPLANMASI GEREKLİ VE KAYBOLMA İHTİMALİ BULUNAN DELİLLERİ TESPİTTEN BAŞKA HİÇBİR İŞLEM YAPMAZ; hakkında ihbarda bulunulan memurun İFADESİNE DE BAŞVURMAZ ve evrakın bir örneğini ilgili makama göndererek soruşturma izni ister. Soruşturma izni, görev sebebiyle işlenen suçta soruşturmanın ön şartıdır; izin alınmadan memuru ifadeye çağırmak bu güvenceyi boşa çıkarır. Bu yüzden ifade alma şıkkı en sık işaretlenen yanlıştır. Ön inceleme için denetim elemanı görevlendirmek başsavcının değil, İZİN VERMEYE YETKİLİ MERCİİN işidir (md 5). İddianame ise ancak izin kesinleşip soruşturma tamamlandıktan sonra gündeme gelir; görevden uzaklaştırma da bu Kanunda başsavcıya tanınmış bir yetki değildir.",
+    "dayanak": "4483 sayılı Kanun md 4/1",
+    "zorluk": "medium",
+    "tur": "dogrudan"
+  },
+  {
+    "id": "4483-p1-04",
+    "articleNo": "4",
+    "kok": "4483 sayılı Kanun'a göre, memurlar ve diğer kamu görevlileri hakkındaki ihbar ve şikâyetler ile ilgili aşağıdakilerden hangisi yanlıştır?",
+    "siklar": {
+      "A": "Kanunda aranan şartları taşımayan ihbar ve şikâyetler, izin vermeye yetkili merciler tarafından işleme konulmaz.",
+      "B": "İhbarcının kimlik bilgileri, savunması alınmak üzere hakkında ihbarda bulunulan memura bildirilir.",
+      "C": "İşleme konulmayan ihbar veya şikâyetin durumu, ihbar veya şikâyette bulunana bildirilir.",
+      "D": "İddialar sıhhati şüpheye mahal vermeyecek belgelerle ortaya konulmuşsa ad, soyad, imza ve adresin doğruluğu şartı aranmaz.",
+      "E": "Bu Kanun kapsamına giren bir suçu öğrenen diğer makam ve memurlar, durumu izin vermeye yetkili mercie iletir."
+    },
+    "dogru": "B",
+    "aciklama": "Kanun'un 4 üncü maddesinin dördüncü fıkrasının son cümlesi açıktır: başsavcılar ve yetkili merciler İHBARCI VEYA ŞİKÂYETÇİNİN KİMLİK BİLGİLERİNİ GİZLİ TUTMAK ZORUNDADIR. Kimliğin hakkında ihbarda bulunulan memura bildirilmesi bu güvenceyi ortadan kaldırır. Diğer şıklar maddeye uygundur. Üçüncü fıkradaki şartları, yani soyut ve genel nitelikte olmama, kişi veya olay belirtilmesi, ciddi bulgu ve belgeye dayanma ile dilekçede doğru ad, soyad, imza ve iş ya da ikametgâh adresinin bulunması şartlarını taşımayan ihbar ve şikâyetler Cumhuriyet başsavcıları ve izin vermeye yetkili merciler tarafından İŞLEME KONULMAZ ve durum ihbarda bulunana BİLDİRİLİR. Aynı fıkra bir de istisna koyar: iddialar SIHHATİ ŞÜPHEYE MAHAL VERMEYECEK BELGELERLE ortaya konulmuşsa ad, soyad ve imza ile adresin DOĞRULUĞU şartı aranmaz; böylece belgeyle desteklenen bir ihbar, kimlik bilgisindeki kusur yüzünden düşmez. E şıkkı ise maddenin ikinci fıkrasıdır: başsavcılık dışındaki makam ve memurlar, kapsama giren bir suçu ihbar, şikâyet, bilgi, belge veya bulgulara dayanarak öğrendiklerinde durumu izin vermeye yetkili mercie iletir.",
+    "dayanak": "4483 sayılı Kanun md 4/4 (ayrıca md 4/2)",
+    "zorluk": "medium",
+    "tur": "ayrinti"
+  },
+  {
+    "id": "4483-p1-05",
+    "articleNo": "5",
+    "kok": "İzin vermeye yetkili merci, işin özelliğini dikkate alarak ön incelemenin başka bir kamu kurumunun elemanlarıyla yaptırılmasını o kurumdan istemiştir. 4483 sayılı Kanun'a göre bu isteğin yerine getirilmesi aşağıdakilerden hangisine bağlıdır?",
+    "siklar": {
+      "A": "İçişleri Bakanının onayına",
+      "B": "Cumhuriyet başsavcılığının uygun görüşüne",
+      "C": "Hakkında inceleme yapılan memurun muvafakatine",
+      "D": "İzin vermeye yetkili merciin üst makamının onayına",
+      "E": "İlgili kuruluşun takdirine"
+    },
+    "dogru": "E",
+    "aciklama": "Kanun'un 5 inci maddesi ön incelemeyi kimin yapacağını düzenler: izin vermeye yetkili merci incelemeyi BİZZAT yapabilir, görevlendireceği bir veya birkaç DENETİM ELEMANINA ya da hakkında inceleme yapılanın ÜSTÜ KONUMUNDAKİ memur ve kamu görevlilerinden biri veya birkaçına yaptırabilir. İnceleme yapacakların, merciin bulunduğu kurum veya kuruluşun İÇİNDEN belirlenmesi esastır. İşin özelliğine göre merci, incelemenin başka bir kamu kurum veya kuruluşunun elemanlarıyla yaptırılmasını ilgili kuruluştan isteyebilir; ancak madde bu isteği bağlayıcı kılmaz ve yerine getirilmesini İLGİLİ KURULUŞUN TAKDİRİNE bırakır. Karşı kurum eleman vermek zorunda değildir; karar bir bakanın, başsavcılığın ya da memurun onayına da bağlanmamıştır. Tuzak, kurumlar arası her görevlendirmenin üst bir makamın onayıyla yürüdüğünü varsaymaktır. Aynı maddenin bir sınırı da hatırlanmalıdır: yargı mensupları ile yargı kuruluşlarında çalışanlar ve askerler başka mercilerin ön incelemelerinde görevlendirilemez.",
+    "dayanak": "4483 sayılı Kanun md 5/3",
+    "zorluk": "medium",
+    "tur": "ayrinti"
+  },
+  {
+    "id": "4483-p1-06",
+    "articleNo": "6",
+    "kok": "I. Ön inceleme yapanlar, hakkında inceleme yapılan memurun ifadesini alamaz.\nII. Ön inceleme birden çok kişi tarafından yapılmışsa farklı görüşler raporda gerekçeleriyle ayrı ayrı belirtilir.\nIII. Yetkili merci, soruşturma izni verilmemesine ilişkin kararında gerekçe göstermek zorunda değildir.\n4483 sayılı Kanun'a göre, ön inceleme raporu ve yetkili merciin kararı ile ilgili verilenlerden hangileri doğrudur?",
+    "siklar": {
+      "A": "Yalnız I",
+      "B": "Yalnız II",
+      "C": "I ve II",
+      "D": "II ve III",
+      "E": "I, II ve III"
+    },
+    "dogru": "B",
+    "aciklama": "Dayanak 4483 sayılı Kanun'un 6 ncı maddesidir. Ön inceleme ile görevlendirilenler bakanlık müfettişleri ile kendilerini görevlendiren merciin bütün yetkilerine sahiptir; hakkında inceleme yapılan memurun İFADESİNİ DE ALARAK gerekli bilgi ve belgeleri toplar, görüşlerini içeren bir rapor düzenleyip yetkili mercie sunar. Bu nedenle I yanlıştır; ifade, ön incelemenin parçasıdır. II maddenin birinci fıkrasının son cümlesidir: inceleme birden çok kişi tarafından yapılmışsa FARKLI GÖRÜŞLER raporda GEREKÇELERİYLE AYRI AYRI belirtilir, çoğunluk görüşü azınlıkta kalanı rapordan silmez. III ise ikinci fıkraya aykırıdır: yetkili merci rapor üzerine soruşturma izni verilmesine VEYA VERİLMEMESİNE karar verir ve BU KARARLARDA GEREKÇE GÖSTERİLMESİ ZORUNLUDUR. Tuzak, gerekçe zorunluluğunu yalnız memurun aleyhine olan izin kararına özgü sanmaktır; kural iki karar türü için de geçerlidir.",
+    "dayanak": "4483 sayılı Kanun md 6/1 ve 6/2",
+    "zorluk": "medium",
+    "tur": "onerme"
+  },
+  {
+    "id": "4483-p1-07",
+    "articleNo": "9",
+    "kok": "4483 sayılı Kanun'a göre, izin vermeye yetkili merciin verdiği işleme koymama kararına karşı aşağıdakilerden hangisi itiraz yoluna gidebilir?",
+    "siklar": {
+      "A": "Şikâyetçi",
+      "B": "Cumhuriyet başsavcılığı",
+      "C": "Hakkında ihbarda bulunulan memur",
+      "D": "Ön incelemeyi yapan denetim elemanı",
+      "E": "İzin vermeye yetkili merciin bir üst makamı"
+    },
+    "dogru": "A",
+    "aciklama": "Kanun'un 9 uncu maddesinin ikinci fıkrası itiraz hakkını kararın türüne göre farklı kişilere tanır. Soruşturma izni VERİLMESİNE ilişkin karara karşı hakkında inceleme yapılan memur veya diğer kamu görevlisi; soruşturma izni VERİLMEMESİNE ilişkin karara karşı Cumhuriyet başsavcılığı veya şikâyetçi itiraz edebilir. İzin vermeye yetkili merciler tarafından verilen İŞLEME KOYMAMA kararına karşı ise itiraz yolu yalnız ŞİKÂYETÇİYE açılmıştır. Cumhuriyet başsavcılığı şıkkı, izin verilmemesi kararına ait itiraz hakkını işleme koymama kararına taşıyan klasik karıştırmadır; fıkra bu karar için başsavcılığı saymaz. Ön incelemeyi yapan denetim elemanı ile merciin üst makamı ise itiraz hakkı tanınanlar arasında yer almaz. Memurun itiraz hakkı ise aleyhine verilen izin kararıyla sınırlıdır; işleme koymama kararı zaten onun lehinedir.",
+    "dayanak": "4483 sayılı Kanun md 9/2",
+    "zorluk": "medium",
+    "tur": "kavram"
+  },
+  {
+    "id": "4483-p1-08",
+    "articleNo": "9",
+    "kok": "Bir il belediye başkanı hakkında, görevi sebebiyle işlediği ileri sürülen suç nedeniyle soruşturma izni verilmiş; belediye başkanı bu karara süresi içinde itiraz etmiştir. 4483 sayılı Kanun'a göre itirazı inceleyecek merci aşağıdakilerden hangisidir?",
+    "siklar": {
+      "A": "Belediyenin bulunduğu yerdeki idare mahkemesi",
+      "B": "Yargıtayın ilgili ceza dairesi",
+      "C": "Danıştay İdari Dava Daireleri Kurulu",
+      "D": "Danıştay İkinci Dairesi",
+      "E": "Yetkili merciin yargı çevresinde bulunduğu bölge idare mahkemesi"
+    },
+    "dogru": "D",
+    "aciklama": "Kanun'un 9 uncu maddesinin üçüncü fıkrası itiraz merciini, izni veren merciin hangi bentte sayıldığına göre ikiye ayırır: 3 üncü maddenin (e), (f), (g) (Cumhurbaşkanınca verilen izin hariç) ve (h) bentlerinde sayılanlar için itiraza DANIŞTAY İKİNCİ DAİRESİ, diğerleri için yetkili merciin yargı çevresinde bulunduğu BÖLGE İDARE MAHKEMESİ bakar. İl belediye başkanları (h) bendinde sayıldığından itirazı Danıştay İkinci Dairesi inceler. Tuzak, belediye başkanı il düzeyinde görev yaptığı için bölge idare mahkemesini işaretlemektir; belirleyici olan görevlinin bulunduğu il değil, 3 üncü maddedeki bentlerden hangisine girdiğidir. 'Danıştay' bilgisini hatırlayıp daireyi karıştıranlar için İdari Dava Daireleri Kurulu şıkkı konulmuştur; madde açıkça İkinci Daireyi gösterir. Yargıtayın ilgili ceza dairesi itiraz merci değildir; idare mahkemesi de bu maddede yer almaz. İtirazlar öncelikle incelenir, en geç üç ay içinde karara bağlanır ve verilen kararlar KESİNDİR.",
+    "dayanak": "4483 sayılı Kanun md 9/3 (md 3/1-(h) ile birlikte)",
+    "zorluk": "hard",
+    "tur": "vaka"
+  },
+  {
+    "id": "4483-p1-09",
+    "articleNo": "10",
+    "kok": "Bir kaymakam ile emrindeki ilçe nüfus müdürü, görevleri sebebiyle bir suçu birlikte işlemiş ve her ikisi hakkında kamu davası açılmıştır. 4483 sayılı Kanun'a göre ilçe nüfus müdürü hakkındaki davaya bakmaya yetkili ve görevli mahkeme aşağıdakilerden hangisidir?",
+    "siklar": {
+      "A": "Bölge adliye mahkemesi ceza dairesi",
+      "B": "İl ağır ceza mahkemesi",
+      "C": "Yargıtayın ilgili ceza dairesi",
+      "D": "İl asliye ceza mahkemesi",
+      "E": "Genel hükümlere göre yetkili ve görevli mahkeme"
+    },
+    "dogru": "B",
+    "aciklama": "İki hükmün birlikte uygulanması gerekir. Kanun'un 13 üncü maddesine göre davaya bakmaya yetkili ve görevli mahkeme kural olarak GENEL HÜKÜMLERE göre belirlenir; ancak KAYMAKAMLAR için yetkili ve görevli mahkeme İL AĞIR CEZA MAHKEMESİDİR. 10 uncu madde ise iştirak hâlini düzenler: Kanun kapsamındaki suçların iştirak hâlinde işlenmesi durumunda memur olmayan memur olanla, AST MEMUR ÜST MEMURLA AYNI MAHKEMEDE yargılanır. Vakada ilçe nüfus müdürü kaymakamın emrindedir, yani onun astıdır; tek başına işlediği bir suçta genel hükümlere göre yetkili mahkemede yargılanacak olsa da kaymakamla birlikte işlediği suçta kaymakamın mahkemesine, yani il ağır ceza mahkemesine bağlanır. En sık yapılan hata, hazırlık soruşturması sırasında kaymakamlar için hâkim kararı gerektiren hususlarda başvurulan İL ASLİYE CEZA MAHKEMESİNİ davaya bakacak mahkemeyle karıştırmaktır; biri soruşturma işlemleri, öteki yargılamanın kendisi içindir. Yargıtayın ilgili ceza dairesi 13 üncü maddede başka üst düzey görevliler için öngörülmüştür. Aynı mantık izin aşamasında da vardır: ast ile üst memurun aynı fiile iştirakinde izin, üst memurun bağlı olduğu merciden istenir.",
+    "dayanak": "4483 sayılı Kanun md 10 ve md 13",
+    "zorluk": "hard",
+    "tur": "vaka"
+  },
+  {
+    "id": "4483-p1-10",
+    "articleNo": "12",
+    "kok": "4483 sayılı Kanun'a göre, valiler hakkında yapılacak hazırlık soruşturması aşağıdakilerden hangisi tarafından yapılır?",
+    "siklar": {
+      "A": "İl Cumhuriyet başsavcısı veya başsavcıvekili",
+      "B": "Genel hükümlere göre yetkili Cumhuriyet başsavcılığı",
+      "C": "İçişleri Bakanlığı müfettişleri",
+      "D": "Danıştay Başsavcısı",
+      "E": "Yargıtay Cumhuriyet Başsavcısı veya Başsavcıvekili"
+    },
+    "dogru": "E",
+    "aciklama": "Kanun'un 12 nci maddesine göre hazırlık soruşturması kural olarak genel hükümlere göre yetkili ve görevli Cumhuriyet Başsavcılığı tarafından yapılır. Madde bu kurala makama bağlı iki istisna getirir: Cumhurbaşkanlığı Genel Sekreteri, Türkiye Büyük Millet Meclisi Genel Sekreteri, Bakan yardımcıları ve VALİLER hakkında hazırlık soruşturmasını YARGITAY CUMHURİYET BAŞSAVCISI VEYA BAŞSAVCIVEKİLİ; KAYMAKAMLAR hakkında ise İL CUMHURİYET BAŞSAVCISI VEYA BAŞSAVCIVEKİLİ yapar. Sınavda bu iki düzey birbirine karıştırılır: il Cumhuriyet başsavcısı kaymakamın, Yargıtay Cumhuriyet Başsavcısı valinin soruşturma makamıdır. Maddenin ikinci fıkrası hâkim kararı gerektiren hususlarda da aynı kademelenmeyi izler; valiler için Yargıtayın ilgili ceza dairesine başvurulur. Bakanlık müfettişleri ön incelemede denetim elemanı olarak görevlendirilebilir, ancak izin kesinleştikten sonraki hazırlık soruşturması savcılık makamının işidir. Danıştay Başsavcısı ise bu Kanunda soruşturma makamı olarak geçmez.",
+    "dayanak": "4483 sayılı Kanun md 12/1",
+    "zorluk": "medium",
+    "tur": "dogrudan"
+  },
+  {
+    "id": "4483-p1-11",
+    "articleNo": "15",
+    "kok": "Bir memur hakkındaki şikâyetin, memuru mağdur etmek amacıyla asılsız bir suç isnadıyla yapıldığı hazırlık soruşturması sonucunda anlaşılmıştır. 4483 sayılı Kanun'a göre şikâyette bulunan kişi hakkında nasıl işlem yapılır?",
+    "siklar": {
+      "A": "Soruşturma ancak memurun şikâyeti üzerine başlatılabilir.",
+      "B": "Soruşturma için izin vermeye yetkili merciin izni aranır.",
+      "C": "Cumhuriyet başsavcılığınca re'sen soruşturmaya geçilir.",
+      "D": "Durum, idari para cezası verilmek üzere mülki amire bildirilir.",
+      "E": "Memurun açacağı tazminat davası sonuçlanmadan soruşturma yapılamaz."
+    },
+    "dogru": "C",
+    "aciklama": "Kanun'un 15 inci maddesi memuru asılsız isnada karşı korur. Memurlar ve diğer kamu görevlileri hakkındaki ihbar ve şikâyetin, ihbar veya şikâyet edileni MAĞDUR ETMEK AMACIYLA ve UYDURMA BİR SUÇ İSNADI suretiyle yapıldığı hazırlık soruşturması sonucunda anlaşılır ya da yargılama sonucunda sabit olursa, haksız isnatta bulunanlar hakkında yetkili ve görevli Cumhuriyet başsavcılığınca RE'SEN soruşturmaya geçilir. Soruşturma memurun şikâyetine bağlı değildir; A şıkkını yanlış yapan da bu bağlılık kaydıdır. İzin usulü ise yalnız memurların görevleri sebebiyle işledikleri suçlar içindir, haksız isnat bu kapsama girmez. Maddenin ikinci fıkrası memurun haklarını ayrıca saklı tutar: memur, kamu davası açılması için Cumhuriyet başsavcılığına başvurabilir ve haksız isnatta bulunanlar hakkında genel hükümlere göre TAZMİNAT DAVASI açabilir. Bu dava re'sen soruşturmanın ön şartı değildir.",
+    "dayanak": "4483 sayılı Kanun md 15",
+    "zorluk": "easy",
+    "tur": "vaka"
+  },
+  {
+    "id": "4483-p1-12",
+    "articleNo": "Ek 1",
+    "kok": "4483 sayılı Kanun'a göre, ön inceleme ve denetim görevlilerinin işlemleri ve raporları nedeniyle açılacak tazminat davaları ile ilgili aşağıdakilerden hangisi yanlıştır?",
+    "siklar": {
+      "A": "Rücu hakkı, kin veya garezle kanaat oluşturulduğunun ön inceleme raporuyla tespiti hâlinde doğar.",
+      "B": "Bu davalar ancak idare aleyhine açılabilir.",
+      "C": "İdare aleyhine dava açılması kuralı, kişisel kusur ve haksız fiil hâllerini de kapsar.",
+      "D": "Kanunla verilen yetkilere dayanılarak alınan tedbirler nedeniyle de ancak idare aleyhine dava açılabilir.",
+      "E": "Raporlara dayanarak karar veren veya işlem tesis edenler hakkında da aynı kural uygulanır."
+    },
+    "dogru": "A",
+    "aciklama": "Kanun'a 2016'da 6745 sayılı Kanunla eklenen Ek 1 inci madde, inceleme görevlilerini kişisel tazminat davalarına karşı korur. Birinci fıkraya göre bu Kanuna veya başka kanunlara göre ön inceleme, disiplin soruşturması ya da diğer idari soruşturmaları yapanlar ile teftiş veya denetim elemanlarının işlemleri, faaliyetleri, raporları, görüş yazılarındaki kanaatleri ve KANUNLA VERİLEN YETKİLERE DAYANARAK ALDIKLARI TEDBİRLER nedeniyle, KİŞİSEL KUSUR, HAKSIZ FİİL VEYA DİĞER SORUMLULUK HÂLLERİ DE DÂHİL olmak üzere ANCAK İDARE ALEYHİNE tazminat davası açılabilir. Aynı fıkranın ikinci cümlesi rücu hakkını düzenler: görevlinin suç sayılan eylemleri ile kin, garez ve hatıra dayalı olarak ya da baskı veya telkinle kanaat oluşturduğu veya değiştirdiği KESİNLEŞMİŞ YARGI YA DA DİSİPLİN KURULU KARARIYLA tespit edilirse idarenin görevliye rücu hakkı saklıdır. A şıkkı bu tespiti bir ön inceleme raporuna bağladığı için yanlıştır; ön inceleme raporu kesinleşmiş bir yargı ya da disiplin kurulu kararı değildir. Tuzak, rücunun da aynı soruşturma araçlarıyla işletilebileceğini varsaymaktır. İkinci fıkra korumayı sonraki halkalara da uzatır: raporlara dayanarak karar veren veya işlem tesis edenler ile bu kararları hazırlayan, inha veya teklif edenler hakkında da birinci fıkra uygulanır.",
+    "dayanak": "4483 sayılı Kanun Ek md 1",
+    "zorluk": "hard",
+    "tur": "kavram"
+  }
+]
