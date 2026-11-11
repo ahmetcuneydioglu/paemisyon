@@ -1,0 +1,18 @@
+{
+  "slug": "tck-suc-tipi-maddi-unsurlar",
+  "title": "Suç Tipi: Maddi Unsurlar",
+  "subtitle": "Suçun kavramı ve unsurları, fail, mağdur ve konu, hareket ve sonuç, nedensellik bağı, nitelikli hâller",
+  "courseName": "Ceza Hukuku",
+  "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+  "sortOrder": 2,
+  "isPremium": true,
+  "aiDraft": true,
+  "book": { "label": "THEMIS Ceza Hukuku Genel Hükümler, 21. baskı, 2025", "page": "s.45–62" },
+  "lessons": [
+    { "file": "01-suc-kavrami-ve-unsurlar.md", "slug": "tck-suc-kavrami-ve-unsurlar", "page": "s.45–48" },
+    { "file": "02-fail-magdur-ve-konu.md", "slug": "tck-fail-magdur-ve-konu", "page": "s.48–50" },
+    { "file": "03-hareket-ve-sonuc.md", "slug": "tck-hareket-ve-sonuc", "page": "s.50–58" },
+    { "file": "04-nedensellik-bagi.md", "slug": "tck-nedensellik-bagi", "page": "s.58–61" },
+    { "file": "05-suclarin-nitelikli-halleri.md", "slug": "tck-suclarin-nitelikli-halleri", "page": "s.61–62" }
+  ]
+}

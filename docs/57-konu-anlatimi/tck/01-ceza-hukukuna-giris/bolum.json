@@ -1,0 +1,20 @@
+{
+  "slug": "tck-ceza-hukukuna-giris",
+  "title": "Ceza Hukukuna Giriş",
+  "subtitle": "Ceza hukukunun işlevi ve kaynakları, temel ilkeler, ceza normu ve yorum, kanunun zaman, yer ve kişi bakımından uygulanması, geri verme",
+  "courseName": "Ceza Hukuku",
+  "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+  "sortOrder": 1,
+  "isPremium": false,
+  "aiDraft": true,
+  "book": { "label": "THEMIS Ceza Hukuku Genel Hükümler, 21. baskı, 2025", "page": "s.1–42" },
+  "lessons": [
+    { "file": "01-ceza-hukuku-ve-ozellikleri.md", "slug": "tck-ceza-hukuku-ve-ozellikleri", "page": "s.1–2" },
+    { "file": "02-temel-ilkeler.md", "slug": "tck-temel-ilkeler", "page": "s.2–5" },
+    { "file": "03-ceza-normu-ve-yorum.md", "slug": "tck-ceza-normu-ve-yorum", "page": "s.5–7" },
+    { "file": "04-zaman-bakimindan-uygulama.md", "slug": "tck-zaman-bakimindan-uygulama", "page": "s.7–11" },
+    { "file": "05-yer-bakimindan-uygulama.md", "slug": "tck-yer-bakimindan-uygulama", "page": "s.21–29" },
+    { "file": "06-kisi-bakimindan-uygulama.md", "slug": "tck-kisi-bakimindan-uygulama", "page": "s.11–20" },
+    { "file": "07-geri-verme.md", "slug": "tck-geri-verme", "page": "s.31–42" }
+  ]
+}
