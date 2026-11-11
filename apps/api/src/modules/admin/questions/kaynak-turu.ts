@@ -68,10 +68,16 @@ export function topluOnayEngeli(v: {
   if (v.dogruSayisi !== 1) return { sentetik: false, neden: 'Tam bir doğru şık işaretli değil.' };
   if (tur === 'turetim') {
     if (v.sikSayisi !== SIK_SAYISI) {
-      return { sentetik: true, neden: `Mevzuat türetimi tam ${SIK_SAYISI} şık içermeli; tek tek incele.` };
+      return {
+        sentetik: true,
+        neden: `Mevzuat türetimi tam ${SIK_SAYISI} şık içermeli; tek tek incele.`,
+      };
     }
     if (v.kunyeSayisi === 0) {
-      return { sentetik: true, neden: 'Mevzuat türetiminin madde künyesi yok (Doc 39 hattından geçmemiş); tek tek incele.' };
+      return {
+        sentetik: true,
+        neden: 'Mevzuat türetiminin madde künyesi yok (Doc 39 hattından geçmemiş); tek tek incele.',
+      };
     }
   }
   return null;

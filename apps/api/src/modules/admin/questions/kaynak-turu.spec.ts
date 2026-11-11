@@ -45,19 +45,39 @@ describe('topluOnayEngeli (kullanıcı kararı 11 Kas 2026)', () => {
   });
 
   it('künyesi olmayan türetim hattan geçmemiştir → atlanır', () => {
-    const e = topluOnayEngeli({ ...tam, kunyeSayisi: 0, sourceLabel: 'Mevzuat türetimi — 6136 md 7' });
+    const e = topluOnayEngeli({
+      ...tam,
+      kunyeSayisi: 0,
+      sourceLabel: 'Mevzuat türetimi — 6136 md 7',
+    });
     expect(e?.sentetik).toBe(true);
     expect(e?.neden).toContain('künye');
   });
 
   it('dört şıklı türetim atlanır', () => {
-    const e = topluOnayEngeli({ ...tam, sikSayisi: 4, sourceLabel: 'Mevzuat türetimi — 657 md 104' });
+    const e = topluOnayEngeli({
+      ...tam,
+      sikSayisi: 4,
+      sourceLabel: 'Mevzuat türetimi — 657 md 104',
+    });
     expect(e?.neden).toContain('5 şık');
   });
 
   it('tek doğru şık kapısı her türde geçerli; gerçek soru künye istemez', () => {
-    expect(topluOnayEngeli({ ...tam, dogruSayisi: 2, sourceLabel: 'Mevzuat türetimi — PVSK md 9' })?.sentetik).toBe(false);
-    expect(topluOnayEngeli({ ...tam, dogruSayisi: 0, sourceLabel: 'PAEM 9 — 2025' })?.neden).toContain('doğru şık');
-    expect(topluOnayEngeli({ sikSayisi: 4, dogruSayisi: 1, kunyeSayisi: 0, sourceLabel: 'PAEM 9 — 2025' })).toBeNull();
+    expect(
+      topluOnayEngeli({ ...tam, dogruSayisi: 2, sourceLabel: 'Mevzuat türetimi — PVSK md 9' })
+        ?.sentetik,
+    ).toBe(false);
+    expect(
+      topluOnayEngeli({ ...tam, dogruSayisi: 0, sourceLabel: 'PAEM 9 — 2025' })?.neden,
+    ).toContain('doğru şık');
+    expect(
+      topluOnayEngeli({
+        sikSayisi: 4,
+        dogruSayisi: 1,
+        kunyeSayisi: 0,
+        sourceLabel: 'PAEM 9 — 2025',
+      }),
+    ).toBeNull();
   });
 });

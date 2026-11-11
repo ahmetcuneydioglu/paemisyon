@@ -522,7 +522,10 @@ export class AdminQuestionsService {
         // Merkez sorusu kuyrukta olmaz; olsa da panel onaylamaz (Doc 55 §5).
         question: { deletedAt: null, hubQuestionId: null, ...(topicId ? { topicId } : {}) },
       },
-      include: { options: { select: { isCorrect: true } }, _count: { select: { legalReferences: true } } },
+      include: {
+        options: { select: { isCorrect: true } },
+        _count: { select: { legalReferences: true } },
+      },
       orderBy: { createdAt: 'asc' },
     });
 
