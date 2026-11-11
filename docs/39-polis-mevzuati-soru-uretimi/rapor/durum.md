@@ -347,3 +347,67 @@ yerine komşu sorunun şıklarını yeniden yazmıştı.
 - `doc39-yayindaki-soruyu-duzelt.ts` — yayındaki sürümü yerinde düzeltir,
   contentHash'i yeniler, yayın bağını korur
 - `doc39-sayim.ts` — kanun ve duruma göre sayım
+
+## 3. dalga — 6136 + PVSK (11 Kas 2026)
+
+İstisna 11 Kas 2026'da Polis Mevzuatı dersinin tamamına genişletildi (CLAUDE.md).
+İlk boşluk partisi: 6136 (41 madde / 8 soru) ve PVSK (42 madde / 96 gerçek soru).
+Kullanıcı talebi bağlayıcı brif olarak yazıldı: `03-kalite-onceligi.md` (sınav
+değeri testi, `sinavDegeri` 1–5, 3 altı RED); gözcü eki `04-gozcu-ek-6136-pvsk.md`;
+ikinci tur kuralı `05-ikinci-tur.md`.
+
+| Parti | Aday | KABUL | RED |
+|---|---:|---:|---:|
+| 6136-p1 (md 2–7) | 16 | 11 | 5 |
+| 6136-p2 (md 8–16, 13/A) | 14 | 9 | 5 |
+| 6136-p3 (Ek 1, 4–12) | 13 | 9 | 4 |
+| 2559-p1 (md 1–9) | 10 | 8 | 2 |
+| 2559-p2 (md 10–25) | 6 | 6 | 0 |
+| 2559-p3 (Ek 1–10) | 12 | 10 | 2 |
+| **Toplam** | **71** | **53** | **18** |
+
+53 soru `in_review` yazıldı (6136: 29, PVSK: 24). RED'lerin çoğu kalite kapısından:
+saf ceza/oran ezberi, sahada karşılığı olmayan kurumsal ayrıntı, tarihî atıf ve
+bankanın zaten ölçtüğü bilgiyi yeniden ölçen sorular. PVSK üreticileri tavanın
+(14) altında kaldı (6, 10, 12) — bankanın ölçmediği sınav değerli yön tükendi.
+
+**Dersler:**
+- Aynı kanunun partileri arasında AYNA ÇİFT çıktı (6136-p1 ↔ p3: Ek 1, Ek 4, vali).
+  Parti kontrol betiği yönü yanlış gösterdi; asıl tespiti gözcüler yaptı. Çözüm:
+  iki partinin revizyonu TEK üreticide, iki dosya yan yana.
+- Gözcülerin ONAY satırlarına düştüğü küçük açıklama notları yazmadan önce
+  orkestratör tarafından uygulandı (yedekler scratchpad'de).
+
+**Bankada bulunan metin kusurları (düzeltme bekliyor):** 6136 md 1, md 8, Ek 12,
+Geçici 9 sonda kesik; PVSK md 12 sonunda dipnot artığı ("işlem yapılır.10");
+PVSK Ek 7/10'da 7590 değişiklik şerhi eksik (içerik güncel).
+
+**Biçim düzeltmesi (11 Kas 2026, kullanıcı):** kökler kısa adla — 6136'da 29 kök
+"6136 sayılı Kanun", PVSK'da 21 kök "2559 sayılı PVSK" (yayındaki 4 soru yerinde,
+`doc39-kok-kanun-adi-kisalt.ts`, eşlemeler `esleme/`). Uzun öncüllü (kök >550
+krkt) 5 soru kuyruktan çekildi: 6136-p2-09, 6136-p3-05, 2559-p1-03, 2559-p2-02,
+2559-p2-04. Aynı ölçüte giren 6136-p2-04 yayındaydı; kullanıcı onayıyla yayından çekildi (YAYINDAN=1).
+Kalan: 6136 24 kuyrukta + 3 yayında, PVSK 21 kuyrukta.
+
+## 657 — Soru Merkezi'nden alınan GYS soruları (11 Kas 2026)
+
+Soru Merkezi (yalnız yerel Docker; barındırılan merkez yok) GYS için 657'den 77
+soru üretmişti (73 AI, 4 insan), PAEMİSYON'da yoktu. Aynı hat (3 gözcü, oy
+birliği, 2 tur) PAEM profiliyle işletildi; gözcü eki `06-gozcu-ek-657-merkez.md`.
+Sonuç: 77 → **48 KABUL** (`in_review`), 29 RED. RED'ler: bankayla mükerrer/banka
+kökünden sızıntı, PAEM'de sorulmayan özlük-mali ayrıntı (aile yardımı, cenaze
+gideri, nakilde aylık, döviz borçlandırması…), yoruma bağlı iki cevap. 9 soru
+revize edildi (GYS vakası → emniyet; h3-06 EGM binde yirmi). Kökler "657 sayılı
+Kanun". Merkez kimliği ↔ PAEMİSYON eşlemesi `rapor/hub-esleme-657.json` —
+merkez senkronu canlıya alınınca bu sorular ikinci kez alınmamalı.
+
+657 md 76 "eski" uyarısı YANLIŞ ALARM çıktı (tazeleme kuru çalışmasında görüldü):
+7537 dipnotu md 77'nin başlığına bağlı; tarayıcı onu md 76'ya yazmış. md 76 ve md 77
+bankada güncel; `mevzuat/657-guncel-ek.txt` bankadakiyle aynı metin.
+
+**Metin tazelemesi (11 Kas 2026, kullanıcı onayıyla):** 6136 md 1, md 8, Ek 12,
+Geçici 9 (içe aktarımda sonda kesik) ve PVSK md 12 (dipnot artığı "10") resmî
+konsolide metinden yeniden alındı (`mevzuat-madde-tazele.ts --yaz`, yedek
+docs/32-yayin-denetimi/tazeleme-yedek-2026-11-11.json). Hukuki değişiklik değil,
+içe aktarım onarımı: LawArticleVersion açılmadı, bağlı özet/kartlar eskitilmedi
+(PVSK md 12 madde özeti yayında, 6136'da 7 kart in_review — içerikleri tam metinle tutarlı).

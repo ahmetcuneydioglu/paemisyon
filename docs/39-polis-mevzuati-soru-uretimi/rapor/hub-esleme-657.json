@@ -1,0 +1,390 @@
+{
+  "not": "Soru Merkezi (GYS) kimliği ↔ PAEMİSYON sorusu. Merkez senkronu canlıya alınınca bu sorular ikinci kez alınmamalı; adaptör bu eşlemeyle question_origins/hub bağını kurmalı. Kök kısa ada çevrildi, 9 soru PAEM için revize edildi (içerik merkezdeki sürümden farklı).",
+  "tarih": "2026-11-11",
+  "sorular": [
+    {
+      "adayId": "657-h1-01",
+      "hubCode": "SM-014873",
+      "paemisyonQuestionId": "2fcbfddf-8b5f-491f-9b81-781fedcb87d9",
+      "versionId": "f4668558-5d94-43f4-afdf-af60534bb11d",
+      "durum": "in_review",
+      "revize": true
+    },
+    {
+      "adayId": "657-h1-05",
+      "hubCode": "SM-014874",
+      "paemisyonQuestionId": "6ae89917-2a8d-4807-a907-2d37d01960d0",
+      "versionId": "d665255f-a275-448d-b22a-7ee8099cb76b",
+      "durum": "in_review",
+      "revize": true
+    },
+    {
+      "adayId": "657-h1-06",
+      "hubCode": "SM-014852",
+      "paemisyonQuestionId": "87d7fe02-bba4-4225-8512-c9e28924a96a",
+      "versionId": "31073551-1a90-4c4c-a6fb-9453e74f63b4",
+      "durum": "in_review",
+      "revize": true
+    },
+    {
+      "adayId": "657-h1-07",
+      "hubCode": "SM-014875",
+      "paemisyonQuestionId": "a3c83278-9daf-4c0b-a3c5-72669acd180c",
+      "versionId": "28c22f1a-d31b-4d0d-9a1a-a1a2c496b83f",
+      "durum": "in_review",
+      "revize": false
+    },
+    {
+      "adayId": "657-h1-08",
+      "hubCode": "SM-014895",
+      "paemisyonQuestionId": "b734a464-e882-4565-af6c-92acd9559cdb",
+      "versionId": "4d008fab-e0ee-4f3b-9e8c-7ead4a3c66c7",
+      "durum": "in_review",
+      "revize": false
+    },
+    {
+      "adayId": "657-h1-09",
+      "hubCode": "SM-014853",
+      "paemisyonQuestionId": "7f4a5ab5-279c-476e-bf89-2b5149ec0ce7",
+      "versionId": "2e16e059-28e6-44f1-a0a4-e1bd622c4b37",
+      "durum": "in_review",
+      "revize": false
+    },
+    {
+      "adayId": "657-h1-10",
+      "hubCode": "SM-014876",
+      "paemisyonQuestionId": "123be4a4-d6d7-4a05-bda0-dff4f88a6336",
+      "versionId": "5ce9b17f-1656-4f98-a587-0d332eaa7a49",
+      "durum": "in_review",
+      "revize": false
+    },
+    {
+      "adayId": "657-h1-11",
+      "hubCode": "SM-014854",
+      "paemisyonQuestionId": "2326d069-d87f-41e2-ae7e-f608977bcb9b",
+      "versionId": "5702477e-4d70-4bcd-a267-919fd38d23fa",
+      "durum": "in_review",
+      "revize": false
+    },
+    {
+      "adayId": "657-h1-12",
+      "hubCode": "SM-014896",
+      "paemisyonQuestionId": "0c7a8067-6f31-473b-bb22-9c8efaf3c93d",
+      "versionId": "decc1990-1889-46b5-8626-66ca17d61202",
+      "durum": "in_review",
+      "revize": false
+    },
+    {
+      "adayId": "657-h1-16",
+      "hubCode": "SM-014879",
+      "paemisyonQuestionId": "ebeb9565-0843-4e39-91c5-cd9984a7dcf2",
+      "versionId": "56232bd5-7528-41b7-be40-444950b54235",
+      "durum": "in_review",
+      "revize": false
+    },
+    {
+      "adayId": "657-h1-17",
+      "hubCode": "SM-014880",
+      "paemisyonQuestionId": "186d90ef-002d-4202-8e60-cf067efbfb72",
+      "versionId": "a4506507-077f-468d-9455-b49f9ebef982",
+      "durum": "in_review",
+      "revize": false
+    },
+    {
+      "adayId": "657-h1-21",
+      "hubCode": "SM-014856",
+      "paemisyonQuestionId": "0b86dbb5-b36e-4522-82ec-cbf32390ec7f",
+      "versionId": "0e20c290-45a5-4bbb-a4a9-32934cb026fc",
+      "durum": "in_review",
+      "revize": false
+    },
+    {
+      "adayId": "657-h1-22",
+      "hubCode": "SM-014881",
+      "paemisyonQuestionId": "57b21fcc-20c0-4a15-a8b3-5addc654e99e",
+      "versionId": "bd29bb20-330f-4a24-af4a-ef1cb920935f",
+      "durum": "in_review",
+      "revize": false
+    },
+    {
+      "adayId": "657-h1-23",
+      "hubCode": "SM-014916",
+      "paemisyonQuestionId": "c8304a5d-cd8a-48ac-bfd6-3462e8feadf4",
+      "versionId": "a249f1c7-8242-41d7-8680-aa633d0bd4b7",
+      "durum": "in_review",
+      "revize": false
+    },
+    {
+      "adayId": "657-h1-25",
+      "hubCode": "SM-014882",
+      "paemisyonQuestionId": "bab3cdd4-01fb-489e-b53d-fd38604bbb3f",
+      "versionId": "d169e361-e7af-4c98-9853-305504706e43",
+      "durum": "in_review",
+      "revize": false
+    },
+    {
+      "adayId": "657-h2-01",
+      "hubCode": "SM-014899",
+      "paemisyonQuestionId": "ff40b780-f4df-4747-859f-aace548d6921",
+      "versionId": "0a352958-fee8-44e4-976c-44e9ea840952",
+      "durum": "in_review",
+      "revize": false
+    },
+    {
+      "adayId": "657-h2-02",
+      "hubCode": "SM-014858",
+      "paemisyonQuestionId": "11649cdd-f34f-48df-bdba-1bc307dafa09",
+      "versionId": "cacd02d4-7f6d-4fbe-9d8e-f963b1778502",
+      "durum": "in_review",
+      "revize": false
+    },
+    {
+      "adayId": "657-h2-03",
+      "hubCode": "SM-014900",
+      "paemisyonQuestionId": "dd3c7de8-27a4-4c6d-bb76-edd793443135",
+      "versionId": "eadde624-92ad-4cc0-9d28-542b6c99cc7d",
+      "durum": "in_review",
+      "revize": false
+    },
+    {
+      "adayId": "657-h2-05",
+      "hubCode": "SM-014859",
+      "paemisyonQuestionId": "2b56d074-feeb-44f7-b664-1f3929b6d177",
+      "versionId": "3fabe241-f71d-4c94-8d94-ba896a04578d",
+      "durum": "in_review",
+      "revize": false
+    },
+    {
+      "adayId": "657-h2-07",
+      "hubCode": "SM-014902",
+      "paemisyonQuestionId": "a0f083f4-bea3-44c0-b06a-6bd951dcbab1",
+      "versionId": "af449f36-1c4f-41f1-95fc-b8d2a23bb990",
+      "durum": "in_review",
+      "revize": false
+    },
+    {
+      "adayId": "657-h2-08",
+      "hubCode": "SM-014860",
+      "paemisyonQuestionId": "e76dd497-a9e5-4a31-bb09-7fb67bef7eef",
+      "versionId": "53ad1e7c-22e5-4315-a923-210c7fe17c94",
+      "durum": "in_review",
+      "revize": false
+    },
+    {
+      "adayId": "657-h2-10",
+      "hubCode": "SM-014883",
+      "paemisyonQuestionId": "86af7461-4f84-4478-bb45-eedbc95f652a",
+      "versionId": "6e58bdfc-7ce7-4fa1-b6ea-d0f9eb6d91d6",
+      "durum": "in_review",
+      "revize": false
+    },
+    {
+      "adayId": "657-h2-11",
+      "hubCode": "SM-014903",
+      "paemisyonQuestionId": "61a1b5fe-cf65-4f19-9108-847ba8f6be1f",
+      "versionId": "a1290fae-234f-4426-9566-dde0415aa564",
+      "durum": "in_review",
+      "revize": false
+    },
+    {
+      "adayId": "657-h2-12",
+      "hubCode": "SM-014862",
+      "paemisyonQuestionId": "90258f09-29cb-4e2c-a00e-60392be65bb6",
+      "versionId": "653c33c2-599c-4acb-a8a7-5a4a7f81c14b",
+      "durum": "in_review",
+      "revize": false
+    },
+    {
+      "adayId": "657-h2-13",
+      "hubCode": "SM-014884",
+      "paemisyonQuestionId": "83842d2a-a51e-4424-8d9c-14664e494e36",
+      "versionId": "885e5f6b-2bbd-403b-a390-b02c24d5cb82",
+      "durum": "in_review",
+      "revize": false
+    },
+    {
+      "adayId": "657-h2-14",
+      "hubCode": "SM-014885",
+      "paemisyonQuestionId": "d8519d32-e30e-45cf-a4d0-0305a62093e0",
+      "versionId": "f8ff1237-cd11-4275-971b-a71da4a805dd",
+      "durum": "in_review",
+      "revize": false
+    },
+    {
+      "adayId": "657-h2-15",
+      "hubCode": "SM-014872",
+      "paemisyonQuestionId": "ddb00419-fe26-4b0c-a27f-b3893b604d9e",
+      "versionId": "62fc12a8-1cdf-4a0c-a129-8e224d90036b",
+      "durum": "in_review",
+      "revize": true
+    },
+    {
+      "adayId": "657-h2-16",
+      "hubCode": "SM-014891",
+      "paemisyonQuestionId": "f56b65be-f3ed-4c70-95e0-49100de5059b",
+      "versionId": "80ddd9ef-04c3-4c47-b272-7189b21f732e",
+      "durum": "in_review",
+      "revize": false
+    },
+    {
+      "adayId": "657-h2-18",
+      "hubCode": "SM-014909",
+      "paemisyonQuestionId": "4f713e38-c8cc-4ff5-9e48-dc4f6e539319",
+      "versionId": "549326c2-aa03-42c4-b00c-b903bddc3375",
+      "durum": "in_review",
+      "revize": true
+    },
+    {
+      "adayId": "657-h2-20",
+      "hubCode": "SM-014924",
+      "paemisyonQuestionId": "58f1b7ce-4d74-45f4-a097-56cd2a0218b5",
+      "versionId": "9dafe0a6-2382-4114-8fb9-486d2294b9bd",
+      "durum": "in_review",
+      "revize": false
+    },
+    {
+      "adayId": "657-h2-22",
+      "hubCode": "SM-014893",
+      "paemisyonQuestionId": "ec231212-0dd5-472a-8db6-09cab1f9b408",
+      "versionId": "ad9f7dd0-bc82-4745-9c6e-577b94ed907b",
+      "durum": "in_review",
+      "revize": false
+    },
+    {
+      "adayId": "657-h2-24",
+      "hubCode": "SM-014918",
+      "paemisyonQuestionId": "4002f601-fdea-4809-888c-8eace3b2d6ff",
+      "versionId": "f8bda372-b0db-428e-8e84-21862df23ca4",
+      "durum": "in_review",
+      "revize": false
+    },
+    {
+      "adayId": "657-h2-26",
+      "hubCode": "SM-014886",
+      "paemisyonQuestionId": "3a5e07e8-7955-4a78-9144-b2b496f8ffec",
+      "versionId": "af14480a-f5e7-4bb5-8ec7-0072bc33d34d",
+      "durum": "in_review",
+      "revize": false
+    },
+    {
+      "adayId": "657-h3-01",
+      "hubCode": "SM-014894",
+      "paemisyonQuestionId": "439981b2-30f4-45cb-9cd3-176f64ad3bda",
+      "versionId": "0dc2ebf5-7be0-48d0-9948-e8bbfe5ed90b",
+      "durum": "in_review",
+      "revize": false
+    },
+    {
+      "adayId": "657-h3-02",
+      "hubCode": "SM-014911",
+      "paemisyonQuestionId": "02332149-afe5-4481-ac3f-46de30cdc91e",
+      "versionId": "61e342d0-29d1-4a9c-a8f0-62a10645f81f",
+      "durum": "in_review",
+      "revize": false
+    },
+    {
+      "adayId": "657-h3-05",
+      "hubCode": "SM-014864",
+      "paemisyonQuestionId": "d3c05892-3339-4837-8f01-59226c09d157",
+      "versionId": "04e084ee-91a0-472e-9b8b-5351b9346701",
+      "durum": "in_review",
+      "revize": false
+    },
+    {
+      "adayId": "657-h3-06",
+      "hubCode": "SM-014920",
+      "paemisyonQuestionId": "997867c6-5740-4ab4-9cb9-bb12c9601345",
+      "versionId": "910f64d6-f2a6-4d52-8d60-b3fb81c92e09",
+      "durum": "in_review",
+      "revize": true
+    },
+    {
+      "adayId": "657-h3-07",
+      "hubCode": "SM-014904",
+      "paemisyonQuestionId": "a8f8fe09-f51a-430f-8e5b-3f17409485fd",
+      "versionId": "be741f85-865a-48e0-b3c4-b5f591444c6a",
+      "durum": "in_review",
+      "revize": true
+    },
+    {
+      "adayId": "657-h3-08",
+      "hubCode": "SM-014865",
+      "paemisyonQuestionId": "0ecb0830-e0bd-4f75-a8b3-a74d585671d5",
+      "versionId": "f95ded33-25a9-46a0-aca4-32a31b1ed914",
+      "durum": "in_review",
+      "revize": false
+    },
+    {
+      "adayId": "657-h3-13",
+      "hubCode": "SM-014867",
+      "paemisyonQuestionId": "fb91ede2-c6a3-4e12-a79a-95783020123d",
+      "versionId": "d486ae3b-8f41-437c-b3bc-b9660c95f8a1",
+      "durum": "in_review",
+      "revize": false
+    },
+    {
+      "adayId": "657-h3-14",
+      "hubCode": "SM-014888",
+      "paemisyonQuestionId": "42bfa01d-2577-45e6-9bb2-cf421b290f15",
+      "versionId": "7f80e70e-d289-4cf8-be9a-8eb18381455a",
+      "durum": "in_review",
+      "revize": false
+    },
+    {
+      "adayId": "657-h3-18",
+      "hubCode": "SM-014869",
+      "paemisyonQuestionId": "e1a8cc52-c165-4250-923d-e50971df611b",
+      "versionId": "c10a03a3-89f3-49be-bde5-c06ed66f8adf",
+      "durum": "in_review",
+      "revize": false
+    },
+    {
+      "adayId": "657-h3-19",
+      "hubCode": "SM-014907",
+      "paemisyonQuestionId": "5ecf3be1-b88b-47c2-8cdf-5035d73b7944",
+      "versionId": "8874d444-69e7-40c2-9d92-b4ef12d09349",
+      "durum": "in_review",
+      "revize": false
+    },
+    {
+      "adayId": "657-h3-20",
+      "hubCode": "SM-014908",
+      "paemisyonQuestionId": "66ec536e-3460-4643-8694-fb92db94bdde",
+      "versionId": "b8fd8508-5e13-455f-b9fa-6e8f84143af2",
+      "durum": "in_review",
+      "revize": false
+    },
+    {
+      "adayId": "657-h3-21",
+      "hubCode": "SM-014922",
+      "paemisyonQuestionId": "09b702f4-1cb1-47bd-836b-f7a1c44e771c",
+      "versionId": "71c27640-5efd-4da6-9843-28d00acde290",
+      "durum": "in_review",
+      "revize": true
+    },
+    {
+      "adayId": "657-h3-23",
+      "hubCode": "SM-014870",
+      "paemisyonQuestionId": "cd3d589b-d0c5-42f8-b19c-a64d69c78ae9",
+      "versionId": "323ec24e-2453-48a8-b174-b33f63826d50",
+      "durum": "in_review",
+      "revize": true
+    },
+    {
+      "adayId": "657-h3-24",
+      "hubCode": "SM-014871",
+      "paemisyonQuestionId": "fba1ec71-9ebd-4139-b78c-b73dbb089766",
+      "versionId": "e2be37dc-1ff8-475e-81cc-55fd40fd52e6",
+      "durum": "in_review",
+      "revize": false
+    },
+    {
+      "adayId": "657-h3-25",
+      "hubCode": "SM-014890",
+      "paemisyonQuestionId": "6d856777-3c95-4c7a-a45e-02ae1c3bd4c4",
+      "versionId": "2e6ba41b-6ea1-4c37-92cd-2e3a0ca01ec3",
+      "durum": "in_review",
+      "revize": false
+    }
+  ]
+}

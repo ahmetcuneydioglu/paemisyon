@@ -53,7 +53,15 @@ Bu kurallar her UI kodu yazımında geçerlidir; "sonradan düzeltiriz" yaklaş�
   Yakalama, Gözaltına Alma ve İfade Alma Yönetmeliği; Adli ve Önleme Aramaları
   Yönetmeliği. (2918, 5395 ve son iki yönetmelik 11 Eyl 2026'da fiilen
   eklendi, 23 Eyl 2026'da kullanıcı onayıyla metne işlendi; 6136 ve 5326
-  24 Eyl 2026'da kullanıcı onayıyla eklendi.) Şartı:
+  24 Eyl 2026'da kullanıcı onayıyla eklendi.) **11 Kas 2026'da kullanıcı
+  onayıyla genişletildi:** 2559 (PVSK), 657, 4483, 6284, 3713, 6222, 4982,
+  3071, 7201, 1774, 3628, 5607, 5726, 5253, 6698, 1481, 2860, 5188, 5233, 298,
+  6458 ve 7245 sayılı kanunlar; Adli Kolluk Yönetmeliği; Çocuk Koruma Kanunu
+  Uygulama Yönetmeliği; 6284 Sayılı Kanuna İlişkin Uygulama Yönetmeliği;
+  Koruyucu ve Destekleyici Tedbir Kararlarının Uygulanması Hakkında
+  Yönetmelik; Teknik Yöntemlerle Takip Sistemlerinin Kullanılmasına Dair
+  Yönetmelik; Emniyet Atama ve Yer Değiştirme Yönetmeliği. (6458 ve 7245'te
+  türetim, resmî metin bankaya aktarıldıktan sonra yapılır.) Şartı:
   soru ayırt edici bir `sourceLabel` taşır ("Mevzuat türetimi — <kanun> md <no>")
   ve doğrudan yayına ÇIKMAZ, `in_review`'a düşer; yayın kararı insanındır.
   Bu istisna yalnız yukarıda sayılan mevzuatla sınırlıdır.

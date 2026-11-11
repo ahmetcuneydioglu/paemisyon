@@ -20,8 +20,10 @@ verilen madde aralığından **gerçek sınav kalitesinde** çoktan seçmeli sor
 ## Soru kuralları
 
 - **5 şık** (A–E), tek ve tartışmasız doğru cevap.
-- Kök kanunu adıyla anar: "2911 sayılı Toplantı ve Gösteri Yürüyüşleri
-  Kanunu'na göre …". Kök açık, gereksiz bilgi içermez.
+- Kök kanunu KISA biçimde anar: "2911 sayılı Kanun'a göre …"; kısaltması yerleşik
+  kanunda kısaltma: "2559 sayılı PVSK'ya göre" (kullanıcı kararı 11 Kas 2026 — uzun ad kökü gereksiz uzatıyor). Yönetmeliklerde kısa
+  ad: "Yakalama, Gözaltına Alma ve İfade Alma Yönetmeliği'ne göre …".
+  Kök açık, gereksiz bilgi içermez.
 - **Çeldiriciler makul hata üzerine kurulur:** yakın süre/sayı, aynı kanunun
   başka maddesindeki hüküm, farklı makam, kapsamı biraz genişletilmiş/
   daraltılmış hâl, istisnanın genel kural gibi sunulması, mülga eski metin.
@@ -70,7 +72,9 @@ verilen madde aralığından **gerçek sınav kalitesinde** çoktan seçmeli sor
   görev sırasında olması, muhatabın kim olduğu) senaryoda AÇIKÇA verilmelidir;
   verilmezse soru komşu bende de girer ve iki cevaplı olur.
 - Soru türlerini karıştır: doğrudan bilgi · kavram ayırt etme · olay/vaka ·
-  I-II-III önerme · ince ayrıntı. **Olumsuz kök ("hangisi yanlıştır") toplamın
+  I-II-III önerme · ince ayrıntı. **Öncüllü (I-II-III) soru KISA olmalı ve az olmalı:**
+  kök önermeler dahil en fazla ~500 karakter, partinin en fazla 1/5'i
+  (kullanıcı kararı 11 Kas 2026 — uzun öncüllü sorular silindi). **Olumsuz kök ("hangisi yanlıştır") toplamın
   1/4'ünü geçmesin.** Sadece sayı/süre ezberine indirgeme.
 - Zorluk kolay/orta/zor arasında dengeli dağılsın.
 - Açıklama bankadaki biçimi izler: dayanağı söyler, **tuzağı adlandırır** ve
