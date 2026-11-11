@@ -34,7 +34,8 @@ const KIND_BADGE: Record<SourceKind, string> = {
 
 function bulkNotice(baslik: string, r: BulkApproveResult): string {
   const parcalar = [`${r.approved} soru yayınlandı`];
-  if (r.syntheticSkipped > 0) parcalar.push(`${r.syntheticSkipped} sentetik soru atlandı (tek tek incele)`);
+  if (r.syntheticSkipped > 0)
+    parcalar.push(`${r.syntheticSkipped} AI üretimi / kapıdan geçmeyen türetim sorusu atlandı (tek tek incele)`);
   const digerAtlanan = r.skipped.length - r.syntheticSkipped;
   if (digerAtlanan > 0) parcalar.push(`${digerAtlanan} soru atlandı (doğru şık eksik)`);
   return `✅ ${baslik}: ${parcalar.join(', ')}.`;
@@ -129,13 +130,14 @@ export default function ReviewQueuePage() {
 
   const sentetik = (t: { byKind: Record<SourceKind, number> }) => t.byKind.ai + t.byKind.turetim;
 
+  // Toplu onay (11 Kas 2026 kararı): AI üretimi atlanır; mevzuat türetimi sunucudaki
+  // kapıdan (beş şık, tek doğru, künye) tek tek geçerek yayınlanır.
   function confirmBulk(t: ReviewTopicSummary) {
-    const gercek = t.count - sentetik(t);
     const ok = window.confirm(
-      `"${t.courseName} / ${t.topicName}": ${gercek} gerçek kaynaklı soru yayına alınacak.\n\n` +
-        (sentetik(t) > 0
-          ? `${sentetik(t)} sentetik soru (AI üretimi / mevzuat türetimi) ATLANIR; onlar tek tek incelenir.\n\n`
-          : '') +
+      `"${t.courseName} / ${t.topicName}": ${t.count - t.byKind.ai} soru yayına alınacak` +
+        (t.byKind.turetim > 0 ? ` (${t.byKind.turetim} mevzuat türetimi dahil; her biri kapıdan geçer)` : '') +
+        '.\n\n' +
+        (t.byKind.ai > 0 ? `${t.byKind.ai} AI üretimi soru ATLANIR; onlar tek tek incelenir.\n\n` : '') +
         'Örneklem kontrolü yaptıysan devam et. Bu işlem soruları uygulamada anında görünür yapar.',
     );
     if (ok) bulk.mutate(t.topicId);
@@ -149,13 +151,14 @@ export default function ReviewQueuePage() {
     },
     { gercek: 0, turetim: 0, ai: 0, yok: 0 },
   );
-  const totalSentetik = totalByKind.ai + totalByKind.turetim;
   function confirmBulkAll() {
     const ok = window.confirm(
-      `Onay kuyruğundaki ${totalCount - totalSentetik} gerçek kaynaklı soru (tüm konular) yayına alınacak.\n\n` +
-        (totalSentetik > 0
-          ? `${totalSentetik} sentetik soru ATLANIR; onlar tek tek incelenir.\n\n`
+      `Onay kuyruğundaki ${totalCount - totalByKind.ai} soru (tüm konular) yayına alınacak` +
+        (totalByKind.turetim > 0
+          ? ` (${totalByKind.turetim} mevzuat türetimi dahil; her biri kapıdan geçer)`
           : '') +
+        '.\n\n' +
+        (totalByKind.ai > 0 ? `${totalByKind.ai} AI üretimi soru ATLANIR; onlar tek tek incelenir.\n\n` : '') +
         'Bu işlem soruları uygulamada anında görünür yapar. Devam edilsin mi?',
     );
     if (ok) bulkAll.mutate();

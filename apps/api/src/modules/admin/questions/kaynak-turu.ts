@@ -3,7 +3,8 @@
  * (Doc 49 A0, 16 Eki 2026). Soru bankasının varlık nedeni "gerçek, kaynaklı
  * çıkmış soru" güvenidir; sentetik sorular (AI üretimi, mevzuat türetimi)
  * CLAUDE.md istisnalarıyla üretilir ve YAYIN KARARI İNSANINDIR. Onay kuyruğu
- * bu türleri birbirinden ayırt edebilmeli; toplu onay sentetik soruya kapalıdır.
+ * bu türleri birbirinden ayırt edebilmeli. Toplu onay AI üretimine kapalıdır;
+ * mevzuat türetimine kapılı olarak açıktır (11 Kas 2026, `topluOnayEngeli`).
  *
  * Etiket biçimleri kaynak hat betiklerinden gelir:
  *   - "AI üretimi — …"            (Doc 43 AAY, Doc 35 güncel, matematik)
@@ -11,6 +12,7 @@
  *   - "Mevzuat türetimi — <kanun> md <no>"  (Doc 39)
  * Tek karar noktası burasıdır; istemciler bu sınıfı sunucudan alır.
  */
+import { SIK_SAYISI } from './sik-kurali';
 export type KaynakTuru = 'gercek' | 'turetim' | 'ai' | 'yok';
 
 export const KAYNAK_TURLERI: readonly KaynakTuru[] = ['gercek', 'turetim', 'ai', 'yok'];
@@ -37,10 +39,42 @@ export function kaynakTuru(sourceLabel: string | null | undefined): KaynakTuru {
   return 'gercek';
 }
 
-/** Sentetik (insan incelemesi zorunlu, toplu onay yasak) mı? */
+/** Sentetik (AI üretimi ya da mevzuat türetimi) mi? */
 export function sentetikMi(sourceLabel: string | null | undefined): boolean {
   const t = kaynakTuru(sourceLabel);
   return t === 'ai' || t === 'turetim';
+}
+
+/**
+ * Toplu onayın bir sürümü neden ATLADIĞI; geçiyorsa null.
+ *
+ * Kullanıcı kararı (11 Kas 2026): Doc 39 hattından (üç gözcü, oy birliği) geçmiş
+ * MEVZUAT TÜRETİMİ soruları toplu yayınlanabilir; toplu yayın her soruyu kendi
+ * kapısından tek tek geçirir: beş şık, tek doğru şık, hattın yazdığı künye
+ * (`LegalReference`). Künyesi olmayan türetim sorusu hattan geçmemiştir — atlanır.
+ * "AI üretimi" (AAY, matematik, güncel) toplu onaya KAPALI kalır: onların kanıtı
+ * çözücü/betiktir, kuyrukta tek tek incelenir.
+ */
+export function topluOnayEngeli(v: {
+  sourceLabel: string | null | undefined;
+  sikSayisi: number;
+  dogruSayisi: number;
+  kunyeSayisi: number;
+}): { sentetik: boolean; neden: string } | null {
+  const tur = kaynakTuru(v.sourceLabel);
+  if (tur === 'ai') {
+    return { sentetik: true, neden: 'AI üretimi soru toplu onaylanmaz; tek tek incele.' };
+  }
+  if (v.dogruSayisi !== 1) return { sentetik: false, neden: 'Tam bir doğru şık işaretli değil.' };
+  if (tur === 'turetim') {
+    if (v.sikSayisi !== SIK_SAYISI) {
+      return { sentetik: true, neden: `Mevzuat türetimi tam ${SIK_SAYISI} şık içermeli; tek tek incele.` };
+    }
+    if (v.kunyeSayisi === 0) {
+      return { sentetik: true, neden: 'Mevzuat türetiminin madde künyesi yok (Doc 39 hattından geçmemiş); tek tek incele.' };
+    }
+  }
+  return null;
 }
 
 export function kaynakTuruMu(v: unknown): v is KaynakTuru {

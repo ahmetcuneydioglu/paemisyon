@@ -64,7 +64,11 @@ Bu kurallar her UI kodu yazımında geçerlidir; "sonradan düzeltiriz" yaklaş�
   türetim, resmî metin bankaya aktarıldıktan sonra yapılır.) Şartı:
   soru ayırt edici bir `sourceLabel` taşır ("Mevzuat türetimi — <kanun> md <no>")
   ve doğrudan yayına ÇIKMAZ, `in_review`'a düşer; yayın kararı insanındır.
-  Bu istisna yalnız yukarıda sayılan mevzuatla sınırlıdır.
+  Doc 39 hattından geçmiş türetim soruları panelde toplu yayınlanabilir
+  (kullanıcı kararı 11 Kas 2026): toplu yayın her soruyu kendi kapısından tek
+  tek geçirir (beş şık, tek doğru şık, madde künyesi — `topluOnayEngeli`),
+  geçemeyeni gerekçesiyle atlar. "AI üretimi" etiketli sorular toplu yayına
+  kapalı kalır. Bu istisna yalnız yukarıda sayılan mevzuatla sınırlıdır.
   **İSTİSNA (11 Eyl 2026, Doc 43):** "Analitik Akıl Yürütme" konusunda
   sentetik kurgulu soru üretilebilir. Bu istisnanın gerekçesi ötekinden
   FARKLIDIR: burada türetilecek bir kaynak metin yoktur, güven kaynağa değil

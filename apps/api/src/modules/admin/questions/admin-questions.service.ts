@@ -18,7 +18,7 @@ import {
   suggestTopicForRow,
   type RowError,
 } from './import-parser';
-import { kaynakTuru, sentetikMi, type KaynakTuru } from './kaynak-turu';
+import { kaynakTuru, topluOnayEngeli, type KaynakTuru } from './kaynak-turu';
 import { SIK_SAYISI, sikKuraliHatasi } from './sik-kurali';
 
 // Tek dosyada üst sınır. Yazma yolu satır sayısından bağımsız 3 toplu INSERT
@@ -522,7 +522,7 @@ export class AdminQuestionsService {
         // Merkez sorusu kuyrukta olmaz; olsa da panel onaylamaz (Doc 55 §5).
         question: { deletedAt: null, hubQuestionId: null, ...(topicId ? { topicId } : {}) },
       },
-      include: { options: { select: { isCorrect: true } } },
+      include: { options: { select: { isCorrect: true } }, _count: { select: { legalReferences: true } } },
       orderBy: { createdAt: 'asc' },
     });
 
@@ -535,22 +535,18 @@ export class AdminQuestionsService {
       await this.prisma.$transaction(
         async (tx) => {
           for (const v of chunk) {
-            // Sentetik soru (AI üretimi / mevzuat türetimi) toplu onaylanmaz:
-            // CLAUDE.md istisnaları "yayın kararı insanındır" der — tek tek incelenir.
-            if (sentetikMi(v.sourceLabel)) {
-              syntheticSkipped++;
-              skipped.push({
-                questionId: v.questionId,
-                reason:
-                  'Sentetik soru (AI üretimi / mevzuat türetimi) toplu onaylanmaz; tek tek incele.',
-              });
-              continue;
-            }
-            if (v.options.filter((o) => o.isCorrect).length !== 1) {
-              skipped.push({
-                questionId: v.questionId,
-                reason: 'Tam bir doğru şık işaretli değil.',
-              });
+            // Her sürüm kendi kapısından geçer (kaynak-turu.ts `topluOnayEngeli`):
+            // AI üretimi atlanır; mevzuat türetimi beş şık + tek doğru + künyeyle geçer
+            // (kullanıcı kararı 11 Kas 2026); geçemeyen gerekçesiyle raporlanır.
+            const engel = topluOnayEngeli({
+              sourceLabel: v.sourceLabel,
+              sikSayisi: v.options.length,
+              dogruSayisi: v.options.filter((o) => o.isCorrect).length,
+              kunyeSayisi: v._count.legalReferences,
+            });
+            if (engel) {
+              if (engel.sentetik) syntheticSkipped++;
+              skipped.push({ questionId: v.questionId, reason: engel.neden });
               continue;
             }
             await tx.questionVersion.updateMany({
