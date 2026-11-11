@@ -77,10 +77,7 @@ Soru "yürürlükteki Anayasa'ya göre Meclis, hükümeti hangi yolla düşüreb
 
 ## Sınavda çıktı
 
-Sorular dönemlerin sistemini ve yürürlükteki düzenin kurallarını yoklar.
-
-:::soru 664e06f0-5f86-46a0-8c97-c02f08812a28
-:::
+Sorular yürürlükteki düzenin kurallarını yoklar.
 
 :::soru c44fdb0c-f55c-45c2-927c-8edaf97a9bfb
 :::
@@ -106,4 +103,5 @@ Sorular dönemlerin sistemini ve yürürlükteki düzenin kurallarını yoklar.
 - Cumhurbaşkanının cezai sorumluluğu (md 105) ve olağanüstü hâl derse alınmadı: çok sayıda oran ve süre içeriyor, ayrı ders konusu.
 - Gömülü sorular: bankadaki yayınlı gerçek sorular (664e06f0… 1924 döneminin sistemi; c44fdb0c… yürütme yetkisi; f298895e… seçimlerin yenilenmesi, 2024 hâkimlik sınavı; 0b322cb1… bakanlar). Soru üretilmedi.
 - Eşlenmeyen aday: 93e2b1b6… (md 116, beşte üç). Kaynak etiketi "Özgün soru" olduğu için "gerçek kaynaklı soru" ölçütünü karşılayıp karşılamadığından emin olunamadı; aynı konu f298895e… ile karşılandı.
+- DÜZELTME (11 Kas 2026, ana oturum): 664e06f0… (1924 döneminin hükümet sistemi) "Türk anayasa tarihi" bölümünün 1924 dersinde de gömülüydü; aynı soru iki derste olmasın diye bu dersten çıkarıldı, 1924 dersinde kaldı.
 - AI taslak; insan düzenleme ve yayın onayı bekliyor.
