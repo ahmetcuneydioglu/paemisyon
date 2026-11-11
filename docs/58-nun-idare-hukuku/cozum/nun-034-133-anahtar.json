@@ -1,0 +1,1668 @@
+[
+  {
+    "no": 34,
+    "cevap": "A",
+    "durum": "kesin",
+    "cevaplar": [
+      "A",
+      "A",
+      "A"
+    ],
+    "guven": [
+      "yuksek",
+      "yuksek",
+      "yuksek"
+    ],
+    "kusur": []
+  },
+  {
+    "no": 35,
+    "cevap": "C",
+    "durum": "kesin",
+    "cevaplar": [
+      "C",
+      "C",
+      "C"
+    ],
+    "guven": [
+      "yuksek",
+      "yuksek",
+      "yuksek"
+    ],
+    "kusur": []
+  },
+  {
+    "no": 36,
+    "cevap": "D",
+    "durum": "belirsiz",
+    "cevaplar": [
+      "D",
+      "D",
+      "D"
+    ],
+    "guven": [
+      "dusuk",
+      "orta",
+      "orta"
+    ],
+    "kusur": [
+      "A da yanlış savunulabilir: vesayet kanunda öngörülürse yerindelik denetimini de kapsayabilir (iki yanlış şık riski).",
+      "A şıkkı ('yalnızca hukukilik denetimi') de tartışmalı: doktrinde kanun öngörürse yerindelik denetimi de olabilir; ikinci yanlış şık sayılabilir.",
+      "A şıkkı da tartışmalı: vesayet kanunla öngörülmüşse istisnaen yerindelik denetimini de kapsayabilir; 'yalnızca' ifadesi doktrinde yanlış sayılabilir."
+    ]
+  },
+  {
+    "no": 37,
+    "cevap": "C",
+    "durum": "kesin",
+    "cevaplar": [
+      "C",
+      "C",
+      "C"
+    ],
+    "guven": [
+      "yuksek",
+      "yuksek",
+      "yuksek"
+    ],
+    "kusur": []
+  },
+  {
+    "no": 38,
+    "cevap": "E",
+    "durum": "kesin",
+    "cevaplar": [
+      "E",
+      "E",
+      "E"
+    ],
+    "guven": [
+      "yuksek",
+      "yuksek",
+      "yuksek"
+    ],
+    "kusur": []
+  },
+  {
+    "no": 39,
+    "cevap": "A",
+    "durum": "kesin",
+    "cevaplar": [
+      "A",
+      "A",
+      "A"
+    ],
+    "guven": [
+      "yuksek",
+      "yuksek",
+      "yuksek"
+    ],
+    "kusur": []
+  },
+  {
+    "no": 40,
+    "cevap": "E",
+    "durum": "kesin",
+    "cevaplar": [
+      "E",
+      "E",
+      "E"
+    ],
+    "guven": [
+      "yuksek",
+      "yuksek",
+      "yuksek"
+    ],
+    "kusur": []
+  },
+  {
+    "no": 41,
+    "cevap": "A",
+    "durum": "kesin",
+    "cevaplar": [
+      "A",
+      "A",
+      "A"
+    ],
+    "guven": [
+      "yuksek",
+      "yuksek",
+      "yuksek"
+    ],
+    "kusur": []
+  },
+  {
+    "no": 42,
+    "cevap": "C",
+    "durum": "kesin",
+    "cevaplar": [
+      "C",
+      "C",
+      "C"
+    ],
+    "guven": [
+      "yuksek",
+      "yuksek",
+      "yuksek"
+    ],
+    "kusur": []
+  },
+  {
+    "no": 43,
+    "cevap": "D",
+    "durum": "kesin",
+    "cevaplar": [
+      "D",
+      "D",
+      "D"
+    ],
+    "guven": [
+      "yuksek",
+      "orta",
+      "yuksek"
+    ],
+    "kusur": [
+      "TKGM özel bütçeli idaredir; teşkilat kanununda tüzel kişilik tanınıp tanınmadığı teyit edilmeli (tanınıyorsa iki doğru şık)."
+    ]
+  },
+  {
+    "no": 44,
+    "cevap": "B",
+    "durum": "kesin",
+    "cevaplar": [
+      "B",
+      "B",
+      "B"
+    ],
+    "guven": [
+      "yuksek",
+      "orta",
+      "orta"
+    ],
+    "kusur": [
+      "YİKOB'un güncel statüsü ve kurumların tüzel kişilik durumları değişken; güncellik teyidi önerilir."
+    ]
+  },
+  {
+    "no": 45,
+    "cevap": "D",
+    "durum": "kesin",
+    "cevaplar": [
+      "D",
+      "D",
+      "D"
+    ],
+    "guven": [
+      "yuksek",
+      "yuksek",
+      "yuksek"
+    ],
+    "kusur": []
+  },
+  {
+    "no": 46,
+    "cevap": "B",
+    "durum": "kesin",
+    "cevaplar": [
+      "B",
+      "B",
+      "B"
+    ],
+    "guven": [
+      "yuksek",
+      "yuksek",
+      "yuksek"
+    ],
+    "kusur": []
+  },
+  {
+    "no": 47,
+    "cevap": "D",
+    "durum": "kesin",
+    "cevaplar": [
+      "D",
+      "D",
+      "D"
+    ],
+    "guven": [
+      "yuksek",
+      "yuksek",
+      "yuksek"
+    ],
+    "kusur": []
+  },
+  {
+    "no": 48,
+    "cevap": "E",
+    "durum": "kesin",
+    "cevaplar": [
+      "E",
+      "E",
+      "E"
+    ],
+    "guven": [
+      "yuksek",
+      "yuksek",
+      "yuksek"
+    ],
+    "kusur": []
+  },
+  {
+    "no": 49,
+    "cevap": "B",
+    "durum": "kesin",
+    "cevaplar": [
+      "B",
+      "B",
+      "B"
+    ],
+    "guven": [
+      "yuksek",
+      "yuksek",
+      "yuksek"
+    ],
+    "kusur": []
+  },
+  {
+    "no": 50,
+    "cevap": "C",
+    "durum": "kesin",
+    "cevaplar": [
+      "C",
+      "C",
+      "C"
+    ],
+    "guven": [
+      "yuksek",
+      "yuksek",
+      "yuksek"
+    ],
+    "kusur": [
+      "II (inkılap kanunları) 'yargı yolu' değil Anayasa yargısı denetimi dışında kalma; sınav kalıbında kapalı sayılır."
+    ]
+  },
+  {
+    "no": 51,
+    "cevap": "B",
+    "durum": "kesin",
+    "cevaplar": [
+      "B",
+      "B",
+      "B"
+    ],
+    "guven": [
+      "yuksek",
+      "yuksek",
+      "yuksek"
+    ],
+    "kusur": []
+  },
+  {
+    "no": 52,
+    "cevap": "A",
+    "durum": "kesin",
+    "cevaplar": [
+      "A",
+      "A",
+      "A"
+    ],
+    "guven": [
+      "yuksek",
+      "yuksek",
+      "yuksek"
+    ],
+    "kusur": []
+  },
+  {
+    "no": 53,
+    "cevap": "E",
+    "durum": "kesin",
+    "cevaplar": [
+      "E",
+      "E",
+      "E"
+    ],
+    "guven": [
+      "yuksek",
+      "orta",
+      "yuksek"
+    ],
+    "kusur": []
+  },
+  {
+    "no": 54,
+    "cevap": "D",
+    "durum": "belirsiz",
+    "cevaplar": [
+      "D",
+      "D",
+      "D"
+    ],
+    "guven": [
+      "yuksek",
+      "dusuk",
+      "dusuk"
+    ],
+    "kusur": [
+      "E şıkkı da yanlış: RTÜK Anayasa'ya 2011'de (6214 sayılı Kanun) eklendi, 2005'te değil; iki yanlış şık.",
+      "İki yanlış şık: RTÜK AY 133'e 2011'de (6214 sayılı Kanun) eklendi, E şıkkındaki '2005' de yanlış."
+    ]
+  },
+  {
+    "no": 55,
+    "cevap": "B",
+    "durum": "kesin",
+    "cevaplar": [
+      "B",
+      "B",
+      "B"
+    ],
+    "guven": [
+      "yuksek",
+      "yuksek",
+      "yuksek"
+    ],
+    "kusur": []
+  },
+  {
+    "no": 56,
+    "cevap": "C",
+    "durum": "kesin",
+    "cevaplar": [
+      "C",
+      "C",
+      "C"
+    ],
+    "guven": [
+      "yuksek",
+      "yuksek",
+      "yuksek"
+    ],
+    "kusur": []
+  },
+  {
+    "no": 57,
+    "cevap": "E",
+    "durum": "kesin",
+    "cevaplar": [
+      "E",
+      "E",
+      "E"
+    ],
+    "guven": [
+      "yuksek",
+      "yuksek",
+      "yuksek"
+    ],
+    "kusur": []
+  },
+  {
+    "no": 58,
+    "cevap": "A",
+    "durum": "kesin",
+    "cevaplar": [
+      "A",
+      "A",
+      "A"
+    ],
+    "guven": [
+      "yuksek",
+      "yuksek",
+      "yuksek"
+    ],
+    "kusur": []
+  },
+  {
+    "no": 59,
+    "cevap": "A",
+    "durum": "kesin",
+    "cevaplar": [
+      "A",
+      "A",
+      "A"
+    ],
+    "guven": [
+      "yuksek",
+      "yuksek",
+      "yuksek"
+    ],
+    "kusur": []
+  },
+  {
+    "no": 60,
+    "cevap": "E",
+    "durum": "kesin",
+    "cevaplar": [
+      "E",
+      "E",
+      "E"
+    ],
+    "guven": [
+      "yuksek",
+      "yuksek",
+      "yuksek"
+    ],
+    "kusur": []
+  },
+  {
+    "no": 61,
+    "cevap": "B",
+    "durum": "kesin",
+    "cevaplar": [
+      "B",
+      "B",
+      "B"
+    ],
+    "guven": [
+      "yuksek",
+      "yuksek",
+      "yuksek"
+    ],
+    "kusur": []
+  },
+  {
+    "no": 62,
+    "cevap": "C",
+    "durum": "kesin",
+    "cevaplar": [
+      "C",
+      "C",
+      "C"
+    ],
+    "guven": [
+      "yuksek",
+      "yuksek",
+      "yuksek"
+    ],
+    "kusur": []
+  },
+  {
+    "no": 63,
+    "cevap": "E",
+    "durum": "kesin",
+    "cevaplar": [
+      "E",
+      "E",
+      "E"
+    ],
+    "guven": [
+      "yuksek",
+      "yuksek",
+      "yuksek"
+    ],
+    "kusur": []
+  },
+  {
+    "no": 64,
+    "cevap": "A",
+    "durum": "kesin",
+    "cevaplar": [
+      "A",
+      "A",
+      "A"
+    ],
+    "guven": [
+      "yuksek",
+      "yuksek",
+      "yuksek"
+    ],
+    "kusur": []
+  },
+  {
+    "no": 65,
+    "cevap": null,
+    "durum": "belirsiz",
+    "cevaplar": [
+      "C",
+      "A",
+      "A"
+    ],
+    "guven": [
+      "dusuk",
+      "dusuk",
+      "dusuk"
+    ],
+    "kusur": [
+      "A da yanlış: 2017 değişikliğiyle AY 148'deki OHAL kararnamelerine dava açılamaz istisnası kaldırıldı, OHAL CBK AYM denetimine tabidir (iki yanlış şık / eskimiş bilgi).",
+      "C şıkkı da yanlış: Anayasa 119'a göre OHAL CBK'sı yayımlandığı gün TBMM onayına sunulur, 'bir ay içinde' değil; iki yanlış şık.",
+      "İki yanlış şık: AY 119/6'ya göre OHAL CBK 'aynı gün' Meclis onayına sunulur; C şıkkındaki 'bir ay içinde' de yanlış."
+    ]
+  },
+  {
+    "no": 66,
+    "cevap": "D",
+    "durum": "kesin",
+    "cevaplar": [
+      "D",
+      "D",
+      "D"
+    ],
+    "guven": [
+      "orta",
+      "yuksek",
+      "yuksek"
+    ],
+    "kusur": [
+      "Yürürlük anı ifadesi ('yayımlandığı anda') kararnamede ileri tarih öngörülebileceği için mutlak değil."
+    ]
+  },
+  {
+    "no": 67,
+    "cevap": "B",
+    "durum": "kesin",
+    "cevaplar": [
+      "B",
+      "B",
+      "B"
+    ],
+    "guven": [
+      "yuksek",
+      "yuksek",
+      "yuksek"
+    ],
+    "kusur": []
+  },
+  {
+    "no": 68,
+    "cevap": "C",
+    "durum": "kesin",
+    "cevaplar": [
+      "C",
+      "C",
+      "C"
+    ],
+    "guven": [
+      "yuksek",
+      "yuksek",
+      "yuksek"
+    ],
+    "kusur": []
+  },
+  {
+    "no": 69,
+    "cevap": "D",
+    "durum": "kesin",
+    "cevaplar": [
+      "D",
+      "D",
+      "D"
+    ],
+    "guven": [
+      "yuksek",
+      "yuksek",
+      "yuksek"
+    ],
+    "kusur": []
+  },
+  {
+    "no": 70,
+    "cevap": "A",
+    "durum": "kesin",
+    "cevaplar": [
+      "A",
+      "A",
+      "A"
+    ],
+    "guven": [
+      "yuksek",
+      "yuksek",
+      "yuksek"
+    ],
+    "kusur": []
+  },
+  {
+    "no": 71,
+    "cevap": "E",
+    "durum": "kesin",
+    "cevaplar": [
+      "E",
+      "E",
+      "E"
+    ],
+    "guven": [
+      "yuksek",
+      "yuksek",
+      "yuksek"
+    ],
+    "kusur": []
+  },
+  {
+    "no": 72,
+    "cevap": "B",
+    "durum": "kesin",
+    "cevaplar": [
+      "B",
+      "B",
+      "B"
+    ],
+    "guven": [
+      "yuksek",
+      "yuksek",
+      "yuksek"
+    ],
+    "kusur": []
+  },
+  {
+    "no": 73,
+    "cevap": "A",
+    "durum": "kesin",
+    "cevaplar": [
+      "A",
+      "A",
+      "A"
+    ],
+    "guven": [
+      "orta",
+      "yuksek",
+      "orta"
+    ],
+    "kusur": [
+      "Vergi tarhını şart işlem sayan eski görüş D'yi savunulabilir kılabilir.",
+      "Duguit tasnifinde vergilendirme gibi işlemlerin yeri yazarlara göre değişebilir."
+    ]
+  },
+  {
+    "no": 74,
+    "cevap": "E",
+    "durum": "kesin",
+    "cevaplar": [
+      "E",
+      "E",
+      "E"
+    ],
+    "guven": [
+      "yuksek",
+      "yuksek",
+      "yuksek"
+    ],
+    "kusur": []
+  },
+  {
+    "no": 75,
+    "cevap": "C",
+    "durum": "kesin",
+    "cevaplar": [
+      "C",
+      "C",
+      "C"
+    ],
+    "guven": [
+      "orta",
+      "orta",
+      "orta"
+    ],
+    "kusur": [
+      "Kurul kararını ayrı sınıflayan görüş A'yı savunulabilir kılabilir.",
+      "Kurul kararlarını kolektif işlem sayan görüşe göre cevap A olur.",
+      "Kurul kararlarını kolektif işlem sayan görüşe göre cevap A olur; doktrin bölünmüş."
+    ]
+  },
+  {
+    "no": 76,
+    "cevap": "D",
+    "durum": "kesin",
+    "cevaplar": [
+      "D",
+      "D",
+      "D"
+    ],
+    "guven": [
+      "yuksek",
+      "yuksek",
+      "yuksek"
+    ],
+    "kusur": []
+  },
+  {
+    "no": 77,
+    "cevap": "B",
+    "durum": "kesin",
+    "cevaplar": [
+      "B",
+      "B",
+      "B"
+    ],
+    "guven": [
+      "yuksek",
+      "yuksek",
+      "yuksek"
+    ],
+    "kusur": []
+  },
+  {
+    "no": 78,
+    "cevap": "C",
+    "durum": "kesin",
+    "cevaplar": [
+      "C",
+      "C",
+      "C"
+    ],
+    "guven": [
+      "yuksek",
+      "yuksek",
+      "yuksek"
+    ],
+    "kusur": []
+  },
+  {
+    "no": 79,
+    "cevap": "D",
+    "durum": "belirsiz",
+    "cevaplar": [
+      "D",
+      "D",
+      "D"
+    ],
+    "guven": [
+      "dusuk",
+      "dusuk",
+      "orta"
+    ],
+    "kusur": [
+      "Güncel 3194 md 30'da zımni kabul hükmünün bulunduğu teyit edilemedi; genel kural İYUK md 10 zımni ret (B). Bilgi güncelliği şüpheli.",
+      "Genel kural İYUK md 10 zımni rettir (B); 3194 md 30'da süre geçince iznin verilmiş sayılacağına dair hüküm teyit edilemedi.",
+      "İmar Kanunu md 30'un güncel metni teyit edilmeli (süre/sonuç değişmiş olabilir)."
+    ]
+  },
+  {
+    "no": 80,
+    "cevap": "B",
+    "durum": "kesin",
+    "cevaplar": [
+      "B",
+      "B",
+      "B"
+    ],
+    "guven": [
+      "yuksek",
+      "yuksek",
+      "yuksek"
+    ],
+    "kusur": []
+  },
+  {
+    "no": 81,
+    "cevap": "D",
+    "durum": "kesin",
+    "cevaplar": [
+      "D",
+      "D",
+      "D"
+    ],
+    "guven": [
+      "yuksek",
+      "yuksek",
+      "yuksek"
+    ],
+    "kusur": []
+  },
+  {
+    "no": 82,
+    "cevap": "E",
+    "durum": "kesin",
+    "cevaplar": [
+      "E",
+      "E",
+      "E"
+    ],
+    "guven": [
+      "yuksek",
+      "yuksek",
+      "yuksek"
+    ],
+    "kusur": []
+  },
+  {
+    "no": 83,
+    "cevap": "C",
+    "durum": "kesin",
+    "cevaplar": [
+      "C",
+      "C",
+      "C"
+    ],
+    "guven": [
+      "yuksek",
+      "yuksek",
+      "yuksek"
+    ],
+    "kusur": []
+  },
+  {
+    "no": 84,
+    "cevap": "C",
+    "durum": "kesin",
+    "cevaplar": [
+      "C",
+      "C",
+      "C"
+    ],
+    "guven": [
+      "yuksek",
+      "yuksek",
+      "yuksek"
+    ],
+    "kusur": []
+  },
+  {
+    "no": 85,
+    "cevap": "B",
+    "durum": "kesin",
+    "cevaplar": [
+      "B",
+      "B",
+      "B"
+    ],
+    "guven": [
+      "yuksek",
+      "yuksek",
+      "yuksek"
+    ],
+    "kusur": []
+  },
+  {
+    "no": 86,
+    "cevap": "E",
+    "durum": "kesin",
+    "cevaplar": [
+      "E",
+      "E",
+      "E"
+    ],
+    "guven": [
+      "orta",
+      "orta",
+      "orta"
+    ],
+    "kusur": [
+      "C şekil paralelliğinin tanımıdır.",
+      "Şık ifadesi kaynağın çizgisine dayanır; bazı kanunlarda yetki paralelliğini somutlaştıran hükümler bulunabilir."
+    ]
+  },
+  {
+    "no": 87,
+    "cevap": "D",
+    "durum": "kesin",
+    "cevaplar": [
+      "D",
+      "D",
+      "D"
+    ],
+    "guven": [
+      "yuksek",
+      "yuksek",
+      "yuksek"
+    ],
+    "kusur": []
+  },
+  {
+    "no": 88,
+    "cevap": "E",
+    "durum": "kesin",
+    "cevaplar": [
+      "E",
+      "E",
+      "E"
+    ],
+    "guven": [
+      "yuksek",
+      "yuksek",
+      "yuksek"
+    ],
+    "kusur": []
+  },
+  {
+    "no": 89,
+    "cevap": "A",
+    "durum": "kesin",
+    "cevaplar": [
+      "A",
+      "A",
+      "A"
+    ],
+    "guven": [
+      "yuksek",
+      "yuksek",
+      "yuksek"
+    ],
+    "kusur": []
+  },
+  {
+    "no": 90,
+    "cevap": "E",
+    "durum": "kesin",
+    "cevaplar": [
+      "E",
+      "E",
+      "E"
+    ],
+    "guven": [
+      "yuksek",
+      "yuksek",
+      "yuksek"
+    ],
+    "kusur": []
+  },
+  {
+    "no": 91,
+    "cevap": "C",
+    "durum": "kesin",
+    "cevaplar": [
+      "C",
+      "C",
+      "C"
+    ],
+    "guven": [
+      "yuksek",
+      "yuksek",
+      "yuksek"
+    ],
+    "kusur": []
+  },
+  {
+    "no": 92,
+    "cevap": "C",
+    "durum": "kesin",
+    "cevaplar": [
+      "C",
+      "C",
+      "C"
+    ],
+    "guven": [
+      "orta",
+      "yuksek",
+      "orta"
+    ],
+    "kusur": [
+      "'Hiçbir durumda' mutlak ifadesi yayıncının kaynağına dayanıyor.",
+      "'Hiçbir durumda' mutlak ifade; doktrin genel kabulü budur ama kesinlik tartışılabilir."
+    ]
+  },
+  {
+    "no": 93,
+    "cevap": "D",
+    "durum": "kesin",
+    "cevaplar": [
+      "D",
+      "D",
+      "D"
+    ],
+    "guven": [
+      "yuksek",
+      "yuksek",
+      "yuksek"
+    ],
+    "kusur": []
+  },
+  {
+    "no": 94,
+    "cevap": "A",
+    "durum": "kesin",
+    "cevaplar": [
+      "A",
+      "A",
+      "A"
+    ],
+    "guven": [
+      "yuksek",
+      "yuksek",
+      "yuksek"
+    ],
+    "kusur": []
+  },
+  {
+    "no": 95,
+    "cevap": "E",
+    "durum": "kesin",
+    "cevaplar": [
+      "E",
+      "E",
+      "E"
+    ],
+    "guven": [
+      "yuksek",
+      "orta",
+      "yuksek"
+    ],
+    "kusur": []
+  },
+  {
+    "no": 96,
+    "cevap": "D",
+    "durum": "kesin",
+    "cevaplar": [
+      "D",
+      "D",
+      "D"
+    ],
+    "guven": [
+      "yuksek",
+      "yuksek",
+      "yuksek"
+    ],
+    "kusur": []
+  },
+  {
+    "no": 97,
+    "cevap": "B",
+    "durum": "kesin",
+    "cevaplar": [
+      "B",
+      "B",
+      "B"
+    ],
+    "guven": [
+      "yuksek",
+      "yuksek",
+      "yuksek"
+    ],
+    "kusur": []
+  },
+  {
+    "no": 98,
+    "cevap": "E",
+    "durum": "kesin",
+    "cevaplar": [
+      "E",
+      "E",
+      "E"
+    ],
+    "guven": [
+      "yuksek",
+      "yuksek",
+      "yuksek"
+    ],
+    "kusur": []
+  },
+  {
+    "no": 99,
+    "cevap": "A",
+    "durum": "kesin",
+    "cevaplar": [
+      "A",
+      "A",
+      "A"
+    ],
+    "guven": [
+      "yuksek",
+      "yuksek",
+      "yuksek"
+    ],
+    "kusur": []
+  },
+  {
+    "no": 100,
+    "cevap": "B",
+    "durum": "kesin",
+    "cevaplar": [
+      "B",
+      "B",
+      "B"
+    ],
+    "guven": [
+      "yuksek",
+      "yuksek",
+      "yuksek"
+    ],
+    "kusur": []
+  },
+  {
+    "no": 101,
+    "cevap": "A",
+    "durum": "kesin",
+    "cevaplar": [
+      "A",
+      "A",
+      "A"
+    ],
+    "guven": [
+      "yuksek",
+      "yuksek",
+      "yuksek"
+    ],
+    "kusur": []
+  },
+  {
+    "no": 102,
+    "cevap": "D",
+    "durum": "kesin",
+    "cevaplar": [
+      "D",
+      "D",
+      "D"
+    ],
+    "guven": [
+      "yuksek",
+      "yuksek",
+      "yuksek"
+    ],
+    "kusur": []
+  },
+  {
+    "no": 103,
+    "cevap": "A",
+    "durum": "kesin",
+    "cevaplar": [
+      "A",
+      "A",
+      "A"
+    ],
+    "guven": [
+      "yuksek",
+      "yuksek",
+      "yuksek"
+    ],
+    "kusur": []
+  },
+  {
+    "no": 104,
+    "cevap": "C",
+    "durum": "kesin",
+    "cevaplar": [
+      "C",
+      "C",
+      "C"
+    ],
+    "guven": [
+      "yuksek",
+      "yuksek",
+      "yuksek"
+    ],
+    "kusur": []
+  },
+  {
+    "no": 105,
+    "cevap": "D",
+    "durum": "kesin",
+    "cevaplar": [
+      "D",
+      "D",
+      "D"
+    ],
+    "guven": [
+      "yuksek",
+      "yuksek",
+      "yuksek"
+    ],
+    "kusur": []
+  },
+  {
+    "no": 106,
+    "cevap": null,
+    "durum": "belirsiz",
+    "cevaplar": [
+      "E",
+      "C",
+      "E"
+    ],
+    "guven": [
+      "yuksek",
+      "dusuk",
+      "yuksek"
+    ],
+    "kusur": [
+      "İdari yargıda hâkim iptal sebeplerini de re'sen inceler (dilekçe sebepleriyle bağlı değildir); E ('kendiliğinden geçerli hâle dönüşür') de yanlış sayılabilir; iki şık tartışmalı."
+    ]
+  },
+  {
+    "no": 107,
+    "cevap": "B",
+    "durum": "kesin",
+    "cevaplar": [
+      "B",
+      "B",
+      "B"
+    ],
+    "guven": [
+      "yuksek",
+      "yuksek",
+      "yuksek"
+    ],
+    "kusur": []
+  },
+  {
+    "no": 108,
+    "cevap": "C",
+    "durum": "kesin",
+    "cevaplar": [
+      "C",
+      "C",
+      "C"
+    ],
+    "guven": [
+      "yuksek",
+      "yuksek",
+      "yuksek"
+    ],
+    "kusur": []
+  },
+  {
+    "no": 109,
+    "cevap": "A",
+    "durum": "kesin",
+    "cevaplar": [
+      "A",
+      "A",
+      "A"
+    ],
+    "guven": [
+      "yuksek",
+      "yuksek",
+      "yuksek"
+    ],
+    "kusur": []
+  },
+  {
+    "no": 110,
+    "cevap": "D",
+    "durum": "kesin",
+    "cevaplar": [
+      "D",
+      "D",
+      "D"
+    ],
+    "guven": [
+      "orta",
+      "orta",
+      "orta"
+    ],
+    "kusur": [
+      "Terim kaynaklar arasında 'iltizam/mültezimlik' olarak değişebilir.",
+      "Tanım ders kitaplarında farklı adlarla geçebilir (kamu hizmeti iltizamı)."
+    ]
+  },
+  {
+    "no": 111,
+    "cevap": "E",
+    "durum": "kesin",
+    "cevaplar": [
+      "E",
+      "E",
+      "E"
+    ],
+    "guven": [
+      "yuksek",
+      "yuksek",
+      "orta"
+    ],
+    "kusur": []
+  },
+  {
+    "no": 112,
+    "cevap": "C",
+    "durum": "kesin",
+    "cevaplar": [
+      "C",
+      "C",
+      "C"
+    ],
+    "guven": [
+      "yuksek",
+      "yuksek",
+      "yuksek"
+    ],
+    "kusur": []
+  },
+  {
+    "no": 113,
+    "cevap": "E",
+    "durum": "belirsiz",
+    "cevaplar": [
+      "E",
+      "E",
+      "E"
+    ],
+    "guven": [
+      "dusuk",
+      "dusuk",
+      "orta"
+    ],
+    "kusur": [
+      "Bilinen metinde karar mercii İçişleri Bakanlığıdır; şıktaki Çevre, Şehircilik ve İklim Değişikliği Bakanlığı teyit edilemedi.",
+      "5393 md 15'te karar mercii 'İçişleri Bakanlığı' olarak hatırlanıyor; şıktaki Çevre, Şehircilik ve İklim Değişikliği Bakanlığı teyit edilmeli (yanlışsa doğru şık yok).",
+      "Kararı veren bakanlığın adı (İçişleri / Çevre, Şehircilik ve İklim Değişikliği) güncel metinle teyit edilmeli."
+    ]
+  },
+  {
+    "no": 114,
+    "cevap": "A",
+    "durum": "kesin",
+    "cevaplar": [
+      "A",
+      "A",
+      "A"
+    ],
+    "guven": [
+      "yuksek",
+      "yuksek",
+      "yuksek"
+    ],
+    "kusur": []
+  },
+  {
+    "no": 115,
+    "cevap": null,
+    "durum": "belirsiz",
+    "cevaplar": [
+      "D",
+      "E",
+      "D"
+    ],
+    "guven": [
+      "dusuk",
+      "dusuk",
+      "dusuk"
+    ],
+    "kusur": [
+      "Doğru şık yok: imtiyaz sözleşmesi idari sözleşmedir, tahkim yoksa uyuşmazlık İYUK md 2/1-c gereği idari yargıda çözülür; A, B, C, E de yanlış.",
+      "D yanlış (tahkim yoksa idari yargı); E'nin pozitif hukuktaki dayanağı teyit edilemedi; doğru şık belirsiz.",
+      "Doktrinde imtiyaz sözleşmeleri idari sözleşmedir ve tahkim yoksa uyuşmazlık İYUK md 2 uyarınca idari yargıda çözülür; D de yanlış olabilir, soru cevapsız sayılabilir."
+    ]
+  },
+  {
+    "no": 116,
+    "cevap": "B",
+    "durum": "kesin",
+    "cevaplar": [
+      "B",
+      "B",
+      "B"
+    ],
+    "guven": [
+      "yuksek",
+      "yuksek",
+      "yuksek"
+    ],
+    "kusur": []
+  },
+  {
+    "no": 117,
+    "cevap": "D",
+    "durum": "kesin",
+    "cevaplar": [
+      "D",
+      "D",
+      "D"
+    ],
+    "guven": [
+      "yuksek",
+      "yuksek",
+      "yuksek"
+    ],
+    "kusur": []
+  },
+  {
+    "no": 118,
+    "cevap": "A",
+    "durum": "kesin",
+    "cevaplar": [
+      "A",
+      "A",
+      "A"
+    ],
+    "guven": [
+      "yuksek",
+      "yuksek",
+      "yuksek"
+    ],
+    "kusur": [
+      "C şıkkında mücbir sebep ile emprevizyon karıştırılmış; kaynak çizgisinde doğru sayılıyor."
+    ]
+  },
+  {
+    "no": 119,
+    "cevap": "E",
+    "durum": "kesin",
+    "cevaplar": [
+      "E",
+      "E",
+      "E"
+    ],
+    "guven": [
+      "orta",
+      "orta",
+      "orta"
+    ],
+    "kusur": [
+      "Deprem mücbir sebep; emprevizyonla birlikte anılması ve tam tazmin ifadesi gevşek.",
+      "Emprevizyonda zararın tamamı değil bir kısmı karşılanır; deprem mücbir sebep olarak da nitelenebilir.",
+      "Doktrinde deprem daha çok mücbir sebep; emprevizyonda idare zararın tamamını değil bir kısmını üstlenir."
+    ]
+  },
+  {
+    "no": 120,
+    "cevap": "C",
+    "durum": "kesin",
+    "cevaplar": [
+      "C",
+      "C",
+      "C"
+    ],
+    "guven": [
+      "yuksek",
+      "yuksek",
+      "yuksek"
+    ],
+    "kusur": []
+  },
+  {
+    "no": 121,
+    "cevap": "B",
+    "durum": "kesin",
+    "cevaplar": [
+      "B",
+      "B",
+      "B"
+    ],
+    "guven": [
+      "yuksek",
+      "yuksek",
+      "yuksek"
+    ],
+    "kusur": []
+  },
+  {
+    "no": 122,
+    "cevap": "C",
+    "durum": "kesin",
+    "cevaplar": [
+      "C",
+      "C",
+      "C"
+    ],
+    "guven": [
+      "yuksek",
+      "yuksek",
+      "yuksek"
+    ],
+    "kusur": []
+  },
+  {
+    "no": 123,
+    "cevap": "D",
+    "durum": "kesin",
+    "cevaplar": [
+      "D",
+      "D",
+      "D"
+    ],
+    "guven": [
+      "yuksek",
+      "yuksek",
+      "yuksek"
+    ],
+    "kusur": []
+  },
+  {
+    "no": 124,
+    "cevap": "B",
+    "durum": "kesin",
+    "cevaplar": [
+      "B",
+      "B",
+      "B"
+    ],
+    "guven": [
+      "orta",
+      "yuksek",
+      "yuksek"
+    ],
+    "kusur": []
+  },
+  {
+    "no": 125,
+    "cevap": "C",
+    "durum": "kesin",
+    "cevaplar": [
+      "C",
+      "C",
+      "C"
+    ],
+    "guven": [
+      "yuksek",
+      "yuksek",
+      "orta"
+    ],
+    "kusur": [
+      "A şıkkı da kuşkulu: orman işletme sözleşmesi imkânının 1961 Anayasası ile kalktığı ileri sürülebilir."
+    ]
+  },
+  {
+    "no": 126,
+    "cevap": "B",
+    "durum": "kesin",
+    "cevaplar": [
+      "B",
+      "B",
+      "B"
+    ],
+    "guven": [
+      "yuksek",
+      "yuksek",
+      "yuksek"
+    ],
+    "kusur": []
+  },
+  {
+    "no": 127,
+    "cevap": "E",
+    "durum": "kesin",
+    "cevaplar": [
+      "E",
+      "E",
+      "E"
+    ],
+    "guven": [
+      "orta",
+      "orta",
+      "orta"
+    ],
+    "kusur": []
+  },
+  {
+    "no": 128,
+    "cevap": "C",
+    "durum": "kesin",
+    "cevaplar": [
+      "C",
+      "C",
+      "C"
+    ],
+    "guven": [
+      "yuksek",
+      "yuksek",
+      "orta"
+    ],
+    "kusur": [
+      "D'deki azami süre 4283'te farklı düzenlenmiş olabilir; güncel metin teyit edilmeli."
+    ]
+  },
+  {
+    "no": 129,
+    "cevap": "A",
+    "durum": "kesin",
+    "cevaplar": [
+      "A",
+      "A",
+      "A"
+    ],
+    "guven": [
+      "yuksek",
+      "yuksek",
+      "yuksek"
+    ],
+    "kusur": []
+  },
+  {
+    "no": 130,
+    "cevap": "C",
+    "durum": "belirsiz",
+    "cevaplar": [
+      "C",
+      "C",
+      "C"
+    ],
+    "guven": [
+      "dusuk",
+      "dusuk",
+      "orta"
+    ],
+    "kusur": [
+      "Asgari sayı (üç/beş) teyit edilemedi; ayrıca belediyenin yapım işi 2886 değil 4734 kapsamındadır (kurgu sorunlu).",
+      "Sayı (üç/beş) teyit edilemedi.",
+      "Sayı ezbere dayalı; madde metniyle teyit edilmeli."
+    ]
+  },
+  {
+    "no": 131,
+    "cevap": "B",
+    "durum": "kesin",
+    "cevaplar": [
+      "B",
+      "B",
+      "B"
+    ],
+    "guven": [
+      "yuksek",
+      "orta",
+      "yuksek"
+    ],
+    "kusur": []
+  },
+  {
+    "no": 132,
+    "cevap": "D",
+    "durum": "kesin",
+    "cevaplar": [
+      "D",
+      "D",
+      "D"
+    ],
+    "guven": [
+      "yuksek",
+      "yuksek",
+      "yuksek"
+    ],
+    "kusur": []
+  },
+  {
+    "no": 133,
+    "cevap": "A",
+    "durum": "kesin",
+    "cevaplar": [
+      "A",
+      "A",
+      "A"
+    ],
+    "guven": [
+      "orta",
+      "orta",
+      "orta"
+    ],
+    "kusur": [
+      "ÇED ve ödenek kurallarının madde yerleri hafızadan; md 5 metniyle teyit edilmeli.",
+      "ÇED hükmünün yeri madde metniyle teyit edilmeli."
+    ]
+  }
+]

@@ -1,0 +1,702 @@
+[
+ {
+  "no": 234,
+  "cevap": "B",
+  "guven": "yuksek",
+  "gerekce": "3628 md 6: mal bildirimi sonu (0) ve (5) ile biten yıllarda (şubat sonuna kadar) yenilenir.",
+  "kusur": ""
+ },
+ {
+  "no": 235,
+  "cevap": "A",
+  "guven": "yuksek",
+  "gerekce": "657 md 15: illerde bilgi valiler veya yetkili kılacakları görevlice verilir; diğer şıklar madde metnine aykırı.",
+  "kusur": ""
+ },
+ {
+  "no": 236,
+  "cevap": "E",
+  "guven": "yuksek",
+  "gerekce": "Grev yasağı kamu hizmetinin süreklilik (kesintisizlik) ilkesinin sonucudur.",
+  "kusur": ""
+ },
+ {
+  "no": 237,
+  "cevap": "A",
+  "guven": "yuksek",
+  "gerekce": "657 md 28 komandite ortaklığı yasaklar; md 125/D-h ticaret ve yasak kazanç faaliyeti kademe ilerlemesinin durdurulmasını gerektirir.",
+  "kusur": ""
+ },
+ {
+  "no": 238,
+  "cevap": "B",
+  "guven": "yuksek",
+  "gerekce": "657 md 28/2: üyesi olunan yapı kooperatiflerinin yönetim kurulu üyeliği yasak dışındadır; büro açmak, vakıf üniversitesinde çalışmak, kollektif ortaklık ve ticari mümessillik yasak.",
+  "kusur": ""
+ },
+ {
+  "no": 239,
+  "cevap": "D",
+  "guven": "yuksek",
+  "gerekce": "657 md 29/2: hediye alma yasağının kapsamını Kamu Görevlileri Etik Kurulu belirler; aracı eliyle istem ve borç para alma da yasaktır.",
+  "kusur": ""
+ },
+ {
+  "no": 240,
+  "cevap": "A",
+  "guven": "yuksek",
+  "gerekce": "657 md 31: gizli bilgiler yetkili bakanın yazılı izni olmadıkça açıklanamaz; yasak görevden ayrılınca da sürer.",
+  "kusur": ""
+ },
+ {
+  "no": 241,
+  "cevap": "B",
+  "guven": "yuksek",
+  "gerekce": "657 md 102: on yıldan fazla hizmeti olanın yıllık izni 30 gündür, 20 gün değil.",
+  "kusur": ""
+ },
+ {
+  "no": 242,
+  "cevap": "A",
+  "guven": "yuksek",
+  "gerekce": "657 md 104/A: doğum öncesi 8 haftalık izne çoğul gebelikte 2 hafta eklenir, 10 hafta (sağlık durumu çalışmaya uygun olmadığından erteleme yok).",
+  "kusur": ""
+ },
+ {
+  "no": 243,
+  "cevap": "E",
+  "guven": "yuksek",
+  "gerekce": "657 md 104/B: eşi doğum yapan memura isteği üzerine on gün babalık izni verilir; süt izni ilk altı ay 3 saat, saat tercihi kadın memurun, ölüm izni yedi gün.",
+  "kusur": ""
+ },
+ {
+  "no": 244,
+  "cevap": "C",
+  "guven": "yuksek",
+  "gerekce": "657 md 105: kanser, verem, akıl hastalığı gibi uzun tedavi gerektiren hâllerde 18 aya kadar hastalık izni.",
+  "kusur": ""
+ },
+ {
+  "no": 245,
+  "cevap": "E",
+  "guven": "yuksek",
+  "gerekce": "657 md 125/B: kınama, kusurlu olduğunun yazı ile bildirilmesidir (uyarma daha dikkatli davranması gerektiğinin bildirilmesi).",
+  "kusur": ""
+ },
+ {
+  "no": 246,
+  "cevap": "C",
+  "guven": "yuksek",
+  "gerekce": "657 md 125/C: aylıktan kesme brüt aylığın 1/30'u ile 1/8'i arasında kesintidir.",
+  "kusur": ""
+ },
+ {
+  "no": 247,
+  "cevap": "D",
+  "guven": "yuksek",
+  "gerekce": "657 md 125/D-b: özürsüz ve kesintisiz 3-9 gün göreve gelmemek kademe ilerlemesinin durdurulmasını gerektirir.",
+  "kusur": ""
+ },
+ {
+  "no": 248,
+  "cevap": "B",
+  "guven": "yuksek",
+  "gerekce": "657 md 125/E-c, d, h: siyasi partiye girmek, yılda toplam 20 gün devamsızlık, yetkisiz gizli bilgi açıklamak çıkarma; göreve sarhoş gelmek 125/D-a (kademe).",
+  "kusur": ""
+ },
+ {
+  "no": 249,
+  "cevap": "C",
+  "guven": "yuksek",
+  "gerekce": "657 md 125: aynı derece cezayı gerektiren ayrı fiillerden dolayı verilen cezaların üçüncüsünde bir derece ağır ceza uygulanır; tekerrürde bir derece ağır, benzer eylemlere de ceza verilir, ödülde bir derece hafif.",
+  "kusur": ""
+ },
+ {
+  "no": 250,
+  "cevap": "D",
+  "guven": "yuksek",
+  "gerekce": "657 md 125 son fıkra: son kademedeki memura kademe durdurma hâllerinde brüt aylığın 1/4-1/2'si kesilir.",
+  "kusur": ""
+ },
+ {
+  "no": 251,
+  "cevap": "C",
+  "guven": "yuksek",
+  "gerekce": "657 md 126/3: disiplin kurulunun ayrı ceza tayini yetkisi yoktur, cezayı kabul veya reddeder; ret hâlinde amir 15 gün içinde başka ceza verebilir.",
+  "kusur": ""
+ },
+ {
+  "no": 252,
+  "cevap": "A",
+  "guven": "yuksek",
+  "gerekce": "657 md 127: kademe durdurmaya kadar olan cezalarda öğrenmeden itibaren bir ay içinde soruşturmaya başlanmazsa ceza verme yetkisi zamanaşımına uğrar.",
+  "kusur": ""
+ },
+ {
+  "no": 253,
+  "cevap": "B",
+  "guven": "yuksek",
+  "gerekce": "657 md 130: savunma için verilen süre 7 günden az olamaz; itiraz süresi 7 gün, merci kararı 30 gün, KİD'e itiraz yüksek disiplin kuruluna.",
+  "kusur": ""
+ },
+ {
+  "no": 254,
+  "cevap": "E",
+  "guven": "yuksek",
+  "gerekce": "657 md 133: uyarma ve kınama 5 yıl, diğerleri (çıkarma hariç) 10 yıl sonra atamaya yetkili amire başvurarak silinebilir.",
+  "kusur": ""
+ },
+ {
+  "no": 255,
+  "cevap": "D",
+  "guven": "yuksek",
+  "gerekce": "657 md 132/4: aylıktan kesme alanlar 5 yıl, kademe durdurma alanlar 10 yıl vali, büyükelçi, daire başkanı vb. kadrolara atanamaz.",
+  "kusur": ""
+ },
+ {
+  "no": 256,
+  "cevap": "C",
+  "guven": "yuksek",
+  "gerekce": "Görevden uzaklaştırma disiplin cezası değil ihtiyati tedbirdir (657 md 137 vd.).",
+  "kusur": ""
+ },
+ {
+  "no": 257,
+  "cevap": "E",
+  "guven": "yuksek",
+  "gerekce": "657 md 138/ç: kaymakamlar ilçe idare şube başkanlarını görevden uzaklaştırabilir ancak valinin muvafakati şarttır.",
+  "kusur": ""
+ },
+ {
+  "no": 258,
+  "cevap": "D",
+  "guven": "yuksek",
+  "gerekce": "657 md 94: izinsiz ve mazeretsiz kesintisiz 10 gün görevi terk çekilme isteğinde bulunulmuş sayılır; çekilme yazılı, bir ay kaydı, olağanüstü mazerette bir ay kaydı yok.",
+  "kusur": ""
+ },
+ {
+  "no": 259,
+  "cevap": "A",
+  "guven": "orta",
+  "gerekce": "657 md 63: belge ile ispatlı zorlayıcı sebeple göreve başlamama iki ayı aşarsa atama yetkili makamca iptal edilir; 10 günlük ek süre aylıksızdır, çekilmiş sayılma zorlayıcı sebep yokken.",
+  "kusur": "md 63'te iki ay kuralı lafzen 'ilk defa veya yeniden atananlar' fıkrasında; başka ile atanan memura uygulanması yoruma dayanır."
+ },
+ {
+  "no": 260,
+  "cevap": "E",
+  "guven": "yuksek",
+  "gerekce": "Görevden uzaklaştırma geçici ihtiyati tedbirdir, memurluğu sona erdirmez.",
+  "kusur": ""
+ },
+ {
+  "no": 261,
+  "cevap": "D",
+  "guven": "yuksek",
+  "gerekce": "4483 md 3/b: ilde ve merkez ilçede görevli memurlar hakkında soruşturma izni valiye aittir.",
+  "kusur": ""
+ },
+ {
+  "no": 262,
+  "cevap": "A",
+  "guven": "yuksek",
+  "gerekce": "4483 md 3/h: büyükşehir belediye başkanları ve il genel meclisi üyeleri hakkında İçişleri Bakanı.",
+  "kusur": ""
+ },
+ {
+  "no": 263,
+  "cevap": "C",
+  "guven": "yuksek",
+  "gerekce": "4483 md 3/a, f, g doğru; il belediye meclisi üyeleri hakkında yetkili İçişleri Bakanıdır (md 3/h), vali değil.",
+  "kusur": ""
+ },
+ {
+  "no": 264,
+  "cevap": "E",
+  "guven": "yuksek",
+  "gerekce": "4483: suçun hukuki niteliğinin değişmesi yeniden izin gerektirmez; karar süresi 30 gün, bir kez 15 gün uzatma, karar savcılık, memur ve şikâyetçiye bildirilir.",
+  "kusur": ""
+ },
+ {
+  "no": 265,
+  "cevap": "B",
+  "guven": "yuksek",
+  "gerekce": "4483 md 9: izin verilmemesine karşı şikâyetçi tebliğden itibaren on gün içinde itiraz edebilir; itiraz en geç üç ayda karara bağlanır ve kesindir.",
+  "kusur": ""
+ },
+ {
+  "no": 266,
+  "cevap": "D",
+  "guven": "yuksek",
+  "gerekce": "4483 md 12: kaymakamlar hakkında hazırlık soruşturması il Cumhuriyet başsavcısı veya başsavcıvekilince bizzat yapılır.",
+  "kusur": ""
+ },
+ {
+  "no": 267,
+  "cevap": "E",
+  "guven": "orta",
+  "gerekce": "Cumhurbaşkanlığı mevzuatında Cumhurbaşkanının devrettiği yetkiyi gerektiğinde bizzat kullanabileceği öngörülür; TBMM onayı, sözlü/tamamen devir ve yalnız yardımcılara devir yanlış.",
+  "kusur": "Genel yetki devri doktrininde devreden makam devrettiği yetkiyi kullanamaz (B); Cumhurbaşkanına özgü istisnanın dayanağını kesin hatırlayamadım."
+ },
+ {
+  "no": 268,
+  "cevap": "C",
+  "guven": "dusuk",
+  "gerekce": "1 sayılı CBK Cumhurbaşkanlığı Makamı birimleri; elemeyle C (çalışma büroları Genel Sekreterin sorumluluğunda), büyükelçi unvanı yalnız görev süresince özel temsilcilere verilir.",
+  "kusur": "A ve E şıklarının yanlışlığını CBK metniyle doğrulayamadım."
+ },
+ {
+  "no": 269,
+  "cevap": "D",
+  "guven": "orta",
+  "gerekce": "Strateji ve Bütçe Başkanlığı Cumhurbaşkanlığına bağlı ayrı başkanlıktır, Genel Sekreterlik birimi değildir.",
+  "kusur": ""
+ },
+ {
+  "no": 270,
+  "cevap": "A",
+  "guven": "dusuk",
+  "gerekce": "Anayasa 106: boşalmada yenisi seçilinceye kadar Cumhurbaşkanı yardımcısı vekâlet eder; birden çok yardımcı varsa hangisinin vekâlet edeceğini Anayasa düzenlemez.",
+  "kusur": "Birden fazla yardımcı hâlinde vekâlet sırası Anayasa'da yok; yaş ölçütü de öngörülmemiş — soru tartışmalı."
+ },
+ {
+  "no": 271,
+  "cevap": "B",
+  "guven": "dusuk",
+  "gerekce": "1 sayılı CBK: Politika Kurullarının başkanı Cumhurbaşkanıdır, yardımcısı değil; üyeler Cumhurbaşkanınca atanır, en az üç üye, başkanvekili.",
+  "kusur": "A şıkkı da şüpheli: kurul sayısı ilk düzenlemede dokuzdu; güncel sayı on değilse iki yanlış şık olur."
+ },
+ {
+  "no": 272,
+  "cevap": "C",
+  "guven": "yuksek",
+  "gerekce": "Gelir İdaresi Başkanlığı Hazine ve Maliye Bakanlığına bağlıdır; diğerleri Cumhurbaşkanlığına bağlı kuruluşlardır.",
+  "kusur": ""
+ },
+ {
+  "no": 273,
+  "cevap": "A",
+  "guven": "yuksek",
+  "gerekce": "Anayasa 108: yargı organları Devlet Denetleme Kurulunun görev alanı dışındadır.",
+  "kusur": ""
+ },
+ {
+  "no": 274,
+  "cevap": "C",
+  "guven": "yuksek",
+  "gerekce": "1 sayılı CBK md 506: bakanlıklarda bakan müşavirlerinin sayısı on beşi geçemez; bakan yardımcıları Cumhurbaşkanı kararıyla atanır, müşavirlik kazanılmış hak doğurmaz.",
+  "kusur": ""
+ },
+ {
+  "no": 275,
+  "cevap": "B",
+  "guven": "dusuk",
+  "gerekce": "Anayasa 117: Genelkurmay Başkanı görevlerinden dolayı Cumhurbaşkanına karşı sorumludur; MSB'ye bağlı ve sorumlu ifadesi yanlış.",
+  "kusur": "Görev süresi (E: 2 yıl) ve 30 Ağustos esası (C) güncel 926 sayılı Kanun metniyle doğrulanamadı; birden çok yanlış şık ihtimali."
+ },
+ {
+  "no": 276,
+  "cevap": "B",
+  "guven": "dusuk",
+  "gerekce": "Şûra kararlarının MSB onayıyla tekemmülü 2018 sonrası düzende yanlış görünüyor (Cumhurbaşkanı onayı).",
+  "kusur": "A şıkkı ('yalnızca barış zamanında') da yanlış olabilir; 1612 sayılı Kanun güncel metni doğrulanamadı, iki şık savunulabilir."
+ },
+ {
+  "no": 277,
+  "cevap": "A",
+  "guven": "yuksek",
+  "gerekce": "Anayasa 155: Danıştay üyelerinin dörtte üçü HSK, dörtte biri Cumhurbaşkanınca seçilir.",
+  "kusur": ""
+ },
+ {
+  "no": 278,
+  "cevap": "B",
+  "guven": "yuksek",
+  "gerekce": "Köy idareleri 5018 anlamında mahallî idare (il özel idaresi, belediye, birlik) kapsamında değildir; Sayıştay denetimine tabi değildir.",
+  "kusur": ""
+ },
+ {
+  "no": 279,
+  "cevap": "D",
+  "guven": "yuksek",
+  "gerekce": "MGK Genel Sekreteri Kurulun üyesi değildir, oy kullanmaz; Kurul iki ayda bir toplanır, gündemi Cumhurbaşkanınca düzenlenir.",
+  "kusur": ""
+ },
+ {
+  "no": 280,
+  "cevap": "C",
+  "guven": "yuksek",
+  "gerekce": "5442 md 2/B: köyün başka ilçeye bağlanması Cumhurbaşkanı onayıyla; md 2/Ç: köy adlarının değiştirilmesi İçişleri Bakanlığının tasvibiyle.",
+  "kusur": ""
+ },
+ {
+  "no": 281,
+  "cevap": "C",
+  "guven": "orta",
+  "gerekce": "5442 md 32/Ç kaymakama düzen sağlamak için karar/tedbir (genel emir) yetkisi, md 31/I uyarma ve kınama cezası verme yetkisi tanır.",
+  "kusur": ""
+ },
+ {
+  "no": 282,
+  "cevap": "D",
+  "guven": "yuksek",
+  "gerekce": "İl idare kurulu vali başkanlığında hukuk işleri müdürü, defterdar, millî eğitim, sağlık, tarım vb. müdürlerden oluşur; emniyet müdürü üye değildir.",
+  "kusur": ""
+ },
+ {
+  "no": 283,
+  "cevap": "B",
+  "guven": "yuksek",
+  "gerekce": "5442 md 11/C: vali on beş günü geçmemek üzere belirli yerlere giriş-çıkışı sınırlayabilir; vali en fazla beş günlüğe kadar aylıktan kesme verebilir (md 13/C).",
+  "kusur": ""
+ },
+ {
+  "no": 284,
+  "cevap": "D",
+  "guven": "yuksek",
+  "gerekce": "5302: il özel idaresinin organları il genel meclisi, il encümeni ve validir; büyükşehirlerde kaldırıldığından sayı 81 değildir.",
+  "kusur": ""
+ },
+ {
+  "no": 285,
+  "cevap": "B",
+  "guven": "yuksek",
+  "gerekce": "5302 md 10/f: taşınmazların üç yıldan fazla kiralanmasına il genel meclisi karar verir.",
+  "kusur": ""
+ },
+ {
+  "no": 286,
+  "cevap": "C",
+  "guven": "yuksek",
+  "gerekce": "5302 md 12: bütçe görüşmesine rastlayan toplantı süresi en çok yirmi gündür, otuz değil.",
+  "kusur": ""
+ },
+ {
+  "no": 287,
+  "cevap": "E",
+  "guven": "yuksek",
+  "gerekce": "5302 md 14: meclis salt çoğunlukla toplanır, katılanların salt çoğunluğuyla karar verir; karar yeter sayısı üye tam sayısının dörtte birinden az olamaz.",
+  "kusur": ""
+ },
+ {
+  "no": 288,
+  "cevap": "B",
+  "guven": "yuksek",
+  "gerekce": "5302 md 15: vali hukuka aykırı gördüğü kararı yedi gün içinde gerekçesiyle meclise iade edebilir.",
+  "kusur": ""
+ },
+ {
+  "no": 289,
+  "cevap": "E",
+  "guven": "yuksek",
+  "gerekce": "5302 md 16: plan ve bütçe, imar ve bayındırlık, eğitim-kültür-sosyal hizmetler, çevre ve sağlık, tarım komisyonları zorunludur; hukuk ve tarife değil.",
+  "kusur": ""
+ },
+ {
+  "no": 290,
+  "cevap": "D",
+  "guven": "yuksek",
+  "gerekce": "5302 md 18: il genel meclisi soru (sözlü/yazılı), genel görüşme ve faaliyet raporu yoluyla denetler; gensoru yoktur.",
+  "kusur": ""
+ },
+ {
+  "no": 291,
+  "cevap": "C",
+  "guven": "yuksek",
+  "gerekce": "5302 md 19: görevini ihmal eden meclis İçişleri Bakanlığının bildirimi üzerine Danıştay kararıyla feshedilir; yeni meclis kalan süreyi tamamlar.",
+  "kusur": ""
+ },
+ {
+  "no": 292,
+  "cevap": "D",
+  "guven": "yuksek",
+  "gerekce": "5302 md 25 (6360 değ.): encümen vali başkanlığında genel sekreter, meclisin seçtiği 3 üye ve valinin seçtiği 2 birim amirinden oluşur; vali katılamazsa genel sekreter başkanlık eder.",
+  "kusur": ""
+ },
+ {
+  "no": 293,
+  "cevap": "A",
+  "guven": "yuksek",
+  "gerekce": "5302 md 27: ısrarla kesinleşen encümen kararını vali durdurur ve on gün içinde yürütmeyi durdurma talepli idari yargıya başvurur.",
+  "kusur": ""
+ },
+ {
+  "no": 294,
+  "cevap": "D",
+  "guven": "yuksek",
+  "gerekce": "5302 md 30/l: şartsız bağışları kabul etmek valinin görevidir; kamulaştırma ve umuma açık yer saatleri encümen, kiralama ve bütçe meclis.",
+  "kusur": ""
+ },
+ {
+  "no": 295,
+  "cevap": "B",
+  "guven": "yuksek",
+  "gerekce": "5302 md 44: vali eylül başında tasarıyı encümene sunar, encümen görüşüyle kasım başından önce meclise sunar, meclis yılbaşından önce aynen veya değiştirerek kabul eder.",
+  "kusur": ""
+ },
+ {
+  "no": 296,
+  "cevap": "A",
+  "guven": "yuksek",
+  "gerekce": "5393 md 4: kurulu belediyenin meskûn sahasına 5.000 metreden yakın yerlerde belediye kurulamaz.",
+  "kusur": ""
+ },
+ {
+  "no": 297,
+  "cevap": "D",
+  "guven": "yuksek",
+  "gerekce": "5393 md 12: aynı il içindeki belediyelerin sınır uyuşmazlıkları belediye meclisleri ve kaymakam görüşü alınarak valinin kararıyla çözülür.",
+  "kusur": ""
+ },
+ {
+  "no": 298,
+  "cevap": "A",
+  "guven": "yuksek",
+  "gerekce": "5393 md 14/a (6360 değ.): büyükşehir belediyeleri ile nüfusu 100.000'in üzerindeki belediyeler konukevi açmak zorundadır.",
+  "kusur": ""
+ },
+ {
+  "no": 299,
+  "cevap": "C",
+  "guven": "yuksek",
+  "gerekce": "5393 md 18: şartlı bağış, imtiyaz, meydan/cadde/sokak adı meclisin; personel atamak başkanın görevi (md 38/j).",
+  "kusur": ""
+ },
+ {
+  "no": 300,
+  "cevap": "E",
+  "guven": "yuksek",
+  "gerekce": "5393 md 23: belediye başkanı hukuka aykırı gördüğü kararı beş gün içinde iade eder; salt çoğunlukla ısrar edilen karar kesinleşir.",
+  "kusur": ""
+ },
+ {
+  "no": 301,
+  "cevap": "A",
+  "guven": "yuksek",
+  "gerekce": "5393 md 25: faaliyet raporu üye tam sayısının dörtte üçüyle yetersiz bulunursa Danıştay uygun görürse başkan başkanlık sıfatını kaybeder; gensoru yoktur.",
+  "kusur": ""
+ },
+ {
+  "no": 302,
+  "cevap": "B",
+  "guven": "yuksek",
+  "gerekce": "5393 md 33: il belediyelerinde ve nüfusu 100.000'i aşanlarda encümen başkan dahil yedi kişidir; seçimli üyeler gizli oyla bir yıl için, çağrılan birim amirleri oy kullanamaz.",
+  "kusur": ""
+ },
+ {
+  "no": 303,
+  "cevap": "A",
+  "guven": "yuksek",
+  "gerekce": "5393 md 44/a: mazeretsiz ve kesintisiz yirmi günden fazla görev terkinde İçişleri Bakanlığının başvurusuyla Danıştay kararıyla başkanlık sona erer.",
+  "kusur": ""
+ },
+ {
+  "no": 304,
+  "cevap": "E",
+  "guven": "yuksek",
+  "gerekce": "5393 md 57: ciddi aksama İçişleri Bakanlığının talebiyle sulh hukuk hâkimince belirlenir; itiraz asliye hukuk mahkemesine.",
+  "kusur": ""
+ },
+ {
+  "no": 305,
+  "cevap": "C",
+  "guven": "yuksek",
+  "gerekce": "5216: büyükşehir genel sekreteri büyükşehir belediye başkanınca atanır, meclisçe seçilmez.",
+  "kusur": ""
+ },
+ {
+  "no": 306,
+  "cevap": "E",
+  "guven": "yuksek",
+  "gerekce": "Muhtar seçimleri partisizdir; muhtar adayları siyasi partilerce gösterilmez.",
+  "kusur": ""
+ },
+ {
+  "no": 307,
+  "cevap": "B",
+  "guven": "orta",
+  "gerekce": "Vesayet denetiminde denetim makamı kararı bozabilir ama yerine kendiliğinden karar alamaz (ikame yasağı).",
+  "kusur": ""
+ },
+ {
+  "no": 308,
+  "cevap": "C",
+  "guven": "yuksek",
+  "gerekce": "5393 md 9 (6360 ek cümle): belediye sınırları içinde nüfusu 500'ün altında mahalle kurulamaz; muhtar 5 yıl, kuruluş vali onayıyla, mahallenin tüzel kişiliği yok.",
+  "kusur": ""
+ },
+ {
+  "no": 309,
+  "cevap": "D",
+  "guven": "orta",
+  "gerekce": "Anayasa 123: kamu tüzel kişiliği kanunla veya Cumhurbaşkanlığı kararnamesiyle kurulur; 'yalnızca kanunla' yanlış.",
+  "kusur": "E de (meslek kuruluşlarının organları seçimle gelir) tartışılabilir; doktrinde 'kural olarak atama' diye öğretilir."
+ },
+ {
+  "no": 310,
+  "cevap": "E",
+  "guven": "dusuk",
+  "gerekce": "DSİ Genel Müdürlüğü tüzel kişiliği olan özel bütçeli idari kamu kurumudur; DHMİ KİT, ticaret borsası meslek kuruluşu.",
+  "kusur": "TÜBİTAK (bilimsel kamu kurumu) ve İŞKUR da bazı kitaplarda idari kamu kurumu sayılır; birden çok şık savunulabilir."
+ },
+ {
+  "no": 311,
+  "cevap": "B",
+  "guven": "yuksek",
+  "gerekce": "KİT'ler 2886 sayılı Devlet İhale Kanunu kapsamında değildir.",
+  "kusur": ""
+ },
+ {
+  "no": 312,
+  "cevap": "D",
+  "guven": "yuksek",
+  "gerekce": "Anayasa 165: KİT'lerin TBMM tarafından denetlenmesi esasları kanunla düzenlenir; mali denetim 6085 ile Sayıştay'dadır.",
+  "kusur": ""
+ },
+ {
+  "no": 313,
+  "cevap": "A",
+  "guven": "yuksek",
+  "gerekce": "233 KHK md 2: sermayesi tamamen Devlete ait, tekel niteliğindeki mal ve hizmetleri kamu yararını gözeterek üreten teşebbüs kamu iktisadi kuruluşudur.",
+  "kusur": ""
+ },
+ {
+  "no": 314,
+  "cevap": "C",
+  "guven": "orta",
+  "gerekce": "233 KHK: İDT'ler ticari esas ve kârlılık, KİK'ler kamu yararı ve verimlilik esasına göre çalışır; İDT sermayesi tamamen Devletin, kuruluş Cumhurbaşkanı kararıyla.",
+  "kusur": ""
+ },
+ {
+  "no": 315,
+  "cevap": "A",
+  "guven": "yuksek",
+  "gerekce": "233 KHK md 2: müessese, genel müdürün önerisi üzerine yönetim kurulu kararıyla kurulan tüzel kişilikli işletmedir.",
+  "kusur": ""
+ },
+ {
+  "no": 316,
+  "cevap": "E",
+  "guven": "yuksek",
+  "gerekce": "233 KHK: sermayenin %15-%50'sine sahip olunan şirket iştiraktir.",
+  "kusur": ""
+ },
+ {
+  "no": 317,
+  "cevap": "B",
+  "guven": "yuksek",
+  "gerekce": "233 KHK: bağlı ortaklık %50'den fazla, iştirak %15-%50, müessese yönetim kurulu kararıyla; İDT'ler Cumhurbaşkanı kararıyla kurulur (IV yanlış).",
+  "kusur": ""
+ },
+ {
+  "no": 318,
+  "cevap": "A",
+  "guven": "yuksek",
+  "gerekce": "Sosyal kamu kurumlarında (SGK, OYAK) üyelik zorunludur, gönüllü değildir.",
+  "kusur": ""
+ },
+ {
+  "no": 319,
+  "cevap": "B",
+  "guven": "yuksek",
+  "gerekce": "Kamu kurumu niteliğindeki meslek kuruluşları 5018 anlamında özel bütçeli değildir, kendi gelirleriyle özerk bütçelidir.",
+  "kusur": ""
+ },
+ {
+  "no": 320,
+  "cevap": "E",
+  "guven": "yuksek",
+  "gerekce": "5809 md 6: BTK Kurulu biri başkan yedi üyeden oluşur; Kurum tüzel kişiliğe sahip, bağımsız, ilişkili bakanlık Ulaştırma ve Altyapı.",
+  "kusur": ""
+ },
+ {
+  "no": 321,
+  "cevap": "B",
+  "guven": "yuksek",
+  "gerekce": "Rekabet Kurumu Ticaret Bakanlığı ile ilişkilidir.",
+  "kusur": ""
+ },
+ {
+  "no": 322,
+  "cevap": "C",
+  "guven": "yuksek",
+  "gerekce": "6698 md 21/11: Kurul üyeleri hakkında soruşturma izni Cumhurbaşkanınca verilir.",
+  "kusur": ""
+ },
+ {
+  "no": 323,
+  "cevap": "D",
+  "guven": "orta",
+  "gerekce": "Sigortacılık ve Özel Emeklilik Düzenleme ve Denetleme Kurumunun merkezi İstanbul'dur; KİK, EPDK, KVKK, Adalet Akademisi Ankara.",
+  "kusur": ""
+ },
+ {
+  "no": 324,
+  "cevap": "C",
+  "guven": "dusuk",
+  "gerekce": "Türkiye Adalet Akademisi Adalet Bakanlığının ilişkili kuruluşudur, ilgili değil.",
+  "kusur": "Organlar (B) ve denetim (E) hükümleri güncel CBK metniyle doğrulanamadı."
+ },
+ {
+  "no": 325,
+  "cevap": "D",
+  "guven": "orta",
+  "gerekce": "Türkiye Adalet Akademisi talep eden avukatlara da eğitim programı düzenler; atama-disiplin HSK, ruhsat ve iş yükü denetimi Akademinin görevi değil.",
+  "kusur": ""
+ },
+ {
+  "no": 326,
+  "cevap": "B",
+  "guven": "yuksek",
+  "gerekce": "4982 md 4: yabancılar yalnız kendileriyle veya faaliyet alanlarıyla ilgili bilgi isteyebilir; ilgisiz konuda yararlanamaz.",
+  "kusur": ""
+ },
+ {
+  "no": 327,
+  "cevap": "E",
+  "guven": "dusuk",
+  "gerekce": "Elemeyle E; ancak 4982 md 21 kamu yararı hâlinde açıklamayı ilgilinin yazılı rızasına bağlar.",
+  "kusur": "Beş şıkkın hiçbiri lafzen doğru değil: ticari sır kapsam dışı (md 23), karara esas uzman görüşü kapsamda, yargı denetimi dışı işlemler yalnız sınırlı olarak açık, bilgi notları kapsam dışı, kişisel bilgide rıza şart — doğru şık yok."
+ },
+ {
+  "no": 328,
+  "cevap": "C",
+  "guven": "yuksek",
+  "gerekce": "4982: görev alanı dışındaki başvuru ilgili kuruma gönderilir ve başvurana bildirilir; bilgi tanımlanmalı, ücret alınabilir ve ödenmezse geri çekilmiş sayılır, elektronik başvuru da var.",
+  "kusur": ""
+ },
+ {
+  "no": 329,
+  "cevap": "A",
+  "guven": "yuksek",
+  "gerekce": "4982 md 11: başka kurumun görüşü gerekirse süre otuz iş gününe uzatılır ve başvurana bildirilir.",
+  "kusur": ""
+ },
+ {
+  "no": 330,
+  "cevap": "C",
+  "guven": "yuksek",
+  "gerekce": "4982 md 13: Kurula itiraz idari yargıya başvurma süresini durdurur.",
+  "kusur": ""
+ },
+ {
+  "no": 331,
+  "cevap": "E",
+  "guven": "yuksek",
+  "gerekce": "Anayasa 74 ve 6328: Kamu Denetçiliği Kurumu TBMM Başkanlığına bağlıdır.",
+  "kusur": ""
+ },
+ {
+  "no": 332,
+  "cevap": "A",
+  "guven": "orta",
+  "gerekce": "6328 md 5: yalnız TSK'nın salt askerî nitelikteki faaliyetleri görev dışıdır; lojman tahsisi idari işlemdir; idari başvuru yolları tüketilmelidir, harç yok, tavsiye kararı verir.",
+  "kusur": ""
+ },
+ {
+  "no": 333,
+  "cevap": "B",
+  "guven": "dusuk",
+  "gerekce": "Denetçilerin seçim usulü (Karma Komisyon/Genel Kurul) şıkta yanlış verilmiş olabilir; C, D, E 6328 ile uyumlu.",
+  "kusur": "A (yabancılarda karşılıklılık şartı) ile B arasında hangisinin yanlış olduğunu 6328 metni olmadan kesinleştiremedim; iki şık savunulabilir."
+ }
+]

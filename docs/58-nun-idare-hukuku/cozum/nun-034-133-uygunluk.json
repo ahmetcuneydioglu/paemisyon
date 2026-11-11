@@ -1,0 +1,830 @@
+[
+  {
+    "no": 34,
+    "karar": "KABUL",
+    "sinavDegeri": 4,
+    "konu": "İdare Hukuku",
+    "gerekce": "657 md 11 kanunsuz emir — suç teşkil etmeyen emrin yazılı yenilenmesi; senaryo biçimi, bankada (A723) yalnız genel ifade sorusu var, aynı açı yok.",
+    "bankaMukerreri": "",
+    "duzeltme": ""
+  },
+  {
+    "no": 35,
+    "karar": "KABUL",
+    "sinavDegeri": 4,
+    "konu": "İdare Hukuku",
+    "gerekce": "Konusu suç teşkil eden emrin yerine getirilmesi hâlinde sorumluluk; 34'ten farklı bilgi (suç olan emir), senaryo biçimi.",
+    "bankaMukerreri": "",
+    "duzeltme": ""
+  },
+  {
+    "no": 37,
+    "karar": "KABUL",
+    "sinavDegeri": 4,
+    "konu": "İdare Hukuku",
+    "gerekce": "Vesayet makamının işlemi değiştirememesi temel ayrım; bankadaki vesayet soruları (I241/I273/I275) başka açıdan.",
+    "bankaMukerreri": "",
+    "duzeltme": ""
+  },
+  {
+    "no": 38,
+    "karar": "RED",
+    "sinavDegeri": 3,
+    "konu": "İdare Hukuku",
+    "gerekce": "CBK ile kanun çatışmasında kanun uygulanır bilgisi Anayasa bankasında aynı açıdan anahtar (A222 D), ayrıca A105/A679/A682.",
+    "bankaMukerreri": "A222",
+    "duzeltme": ""
+  },
+  {
+    "no": 39,
+    "karar": "RED",
+    "sinavDegeri": 3,
+    "konu": "İdare Hukuku",
+    "gerekce": "TBMM aynı konuda kanun çıkarınca CBK hükümsüz — A679 E'de aynen ölçülüyor; CBK soruları Anayasa bankasında yoğun.",
+    "bankaMukerreri": "A679",
+    "duzeltme": ""
+  },
+  {
+    "no": 40,
+    "karar": "RED",
+    "sinavDegeri": 3,
+    "konu": "İdare Hukuku",
+    "gerekce": "Kamu tüzel kişiliğinin kanun veya CBK ile kurulması bankada aynı açıdan var.",
+    "bankaMukerreri": "I133",
+    "duzeltme": ""
+  },
+  {
+    "no": 41,
+    "karar": "RED",
+    "sinavDegeri": 3,
+    "konu": "5442 İl İdaresi Kanunu",
+    "gerekce": "İlçe adının kanunla değiştirilmesi bankada birebir var (konu 5442).",
+    "bankaMukerreri": "I373",
+    "duzeltme": ""
+  },
+  {
+    "no": 42,
+    "karar": "KABUL",
+    "sinavDegeri": 3,
+    "konu": "İdare Hukuku",
+    "gerekce": "Kamu tüzel kişilerinin özel mal edinebilmesi; I242 farklı özelliği (serbest iradeyle sona erme) ölçüyor.",
+    "bankaMukerreri": "",
+    "duzeltme": ""
+  },
+  {
+    "no": 43,
+    "karar": "RED",
+    "sinavDegeri": 2,
+    "konu": "İdare Hukuku",
+    "gerekce": "İki doğru şık şüphesi: TKGM'nin tüzel kişiliği teyitsiz (çözücü kusur notu); kurum statüleri değişken, güncellik riski.",
+    "bankaMukerreri": "",
+    "duzeltme": ""
+  },
+  {
+    "no": 44,
+    "karar": "RED",
+    "sinavDegeri": 2,
+    "konu": "İdare Hukuku",
+    "gerekce": "İki doğru şık: YİKOB valiliğe bağlı, ayrı tüzel kişiliği yok — o da devlet tüzel kişiliği içinde; kurum statüsü değişken.",
+    "bankaMukerreri": "",
+    "duzeltme": ""
+  },
+  {
+    "no": 45,
+    "karar": "RED",
+    "sinavDegeri": 3,
+    "konu": "İdare Hukuku",
+    "gerekce": "Anayasa'da kamu tüzel kişiliği sayılmayan kurum sorusu bankada aynı açıdan var (I124; A858).",
+    "bankaMukerreri": "I124",
+    "duzeltme": ""
+  },
+  {
+    "no": 46,
+    "karar": "RED",
+    "sinavDegeri": 3,
+    "konu": "İdare Hukuku",
+    "gerekce": "İmtiyaz sözleşmelerinde milletlerarası tahkimin yabancılık unsuruna bağlılığı bankada var.",
+    "bankaMukerreri": "I161",
+    "duzeltme": ""
+  },
+  {
+    "no": 47,
+    "karar": "RED",
+    "sinavDegeri": 3,
+    "konu": "İdare Hukuku",
+    "gerekce": "Takdir yetkisinin yargı denetimi/yerindelik bankada aynı açıdan (I4; I424).",
+    "bankaMukerreri": "I4",
+    "duzeltme": ""
+  },
+  {
+    "no": 48,
+    "karar": "RED",
+    "sinavDegeri": 3,
+    "konu": "İdare Hukuku",
+    "gerekce": "YD şartlarının birlikte aranması bankada var (I428, I484).",
+    "bankaMukerreri": "I484",
+    "duzeltme": ""
+  },
+  {
+    "no": 49,
+    "karar": "RED",
+    "sinavDegeri": 3,
+    "konu": "İdare Hukuku",
+    "gerekce": "YD'nin kanunla sınırlanabileceği nedenler bankada var (I125 E; A879).",
+    "bankaMukerreri": "I125",
+    "duzeltme": ""
+  },
+  {
+    "no": 50,
+    "karar": "RED",
+    "sinavDegeri": 3,
+    "konu": "İdare Hukuku",
+    "gerekce": "Yargı yoluna kapalı işlemler A109'da aynı kalemlerle (YSK, HSK meslekten çıkarma) ölçülüyor; ayrıca inkılap kanunlarını 'yargı yolu kapalı' sayması tartışmalı (kusur notu).",
+    "bankaMukerreri": "A109",
+    "duzeltme": ""
+  },
+  {
+    "no": 51,
+    "karar": "RED",
+    "sinavDegeri": 3,
+    "konu": "İdare Hukuku",
+    "gerekce": "Rektör/dekan seçim ve ataması A89 E'de aynı açıdan.",
+    "bankaMukerreri": "A89",
+    "duzeltme": ""
+  },
+  {
+    "no": 52,
+    "karar": "RED",
+    "sinavDegeri": 3,
+    "konu": "İdare Hukuku",
+    "gerekce": "Vakıf yükseköğretim kurumu (kazanç amacı gütmeme) A89 C'de aynen.",
+    "bankaMukerreri": "A89",
+    "duzeltme": ""
+  },
+  {
+    "no": 53,
+    "karar": "RED",
+    "sinavDegeri": 3,
+    "konu": "İdare Hukuku",
+    "gerekce": "Üniversite bütçesinin YÖK onayı, güvenlik, öğretim elemanı güvencesi A89'da aynen.",
+    "bankaMukerreri": "A89",
+    "duzeltme": ""
+  },
+  {
+    "no": 55,
+    "karar": "KABUL",
+    "sinavDegeri": 3,
+    "konu": "İdare Hukuku",
+    "gerekce": "AKDTYK'yı oluşturan kuruluşlar (AY md 134); bankada aynı açı yok (I210/A858 farklı).",
+    "bankaMukerreri": "",
+    "duzeltme": ""
+  },
+  {
+    "no": 56,
+    "karar": "RED",
+    "sinavDegeri": 3,
+    "konu": "İdare Hukuku",
+    "gerekce": "KİT'te asli ve sürekli görevlide meslek kuruluşuna girme mecburiyetinin aranmaması A69 C'de aynen.",
+    "bankaMukerreri": "A69",
+    "duzeltme": ""
+  },
+  {
+    "no": 57,
+    "karar": "RED",
+    "sinavDegeri": 3,
+    "konu": "İdare Hukuku",
+    "gerekce": "Meslek kuruluşunu faaliyetten men — 24 saat hâkim onayı A870'te aynen.",
+    "bankaMukerreri": "A870",
+    "duzeltme": ""
+  },
+  {
+    "no": 58,
+    "karar": "RED",
+    "sinavDegeri": 3,
+    "konu": "İdare Hukuku",
+    "gerekce": "Kamu görevlisi kusurundan doğan tazminat davasının idareye karşı açılıp rücu edilmesi bankada anahtar (I49 B, I108).",
+    "bankaMukerreri": "I49",
+    "duzeltme": ""
+  },
+  {
+    "no": 59,
+    "karar": "RED",
+    "sinavDegeri": 3,
+    "konu": "İdare Hukuku",
+    "gerekce": "Ceza kovuşturmasının idari merci iznine bağlılığı bankada var (I49 C; A871 C).",
+    "bankaMukerreri": "I49",
+    "duzeltme": ""
+  },
+  {
+    "no": 60,
+    "karar": "RED",
+    "sinavDegeri": 3,
+    "konu": "İdare Hukuku",
+    "gerekce": "Yönetmeliklerin hangilerinin RG'de yayımlanacağının kanunda belirtilmesi A561'de aynen.",
+    "bankaMukerreri": "A561",
+    "duzeltme": ""
+  },
+  {
+    "no": 61,
+    "karar": "RED",
+    "sinavDegeri": 3,
+    "konu": "2575 Danıştay Kanunu",
+    "gerekce": "Ülke çapında uygulanacak düzenleyici işleme karşı Danıştay ilk derece görevi bankada aynen (konu 2575).",
+    "bankaMukerreri": "I36",
+    "duzeltme": ""
+  },
+  {
+    "no": 62,
+    "karar": "RED",
+    "sinavDegeri": 2,
+    "konu": "İdare Hukuku",
+    "gerekce": "Düzenleyici işlem olarak CBK+yönetmelik — ayırt ediciliği çok düşük.",
+    "bankaMukerreri": "",
+    "duzeltme": ""
+  },
+  {
+    "no": 63,
+    "karar": "RED",
+    "sinavDegeri": 3,
+    "konu": "İdare Hukuku",
+    "gerekce": "Olağan CBK ile düzenlenebilecek haklar (sosyal-ekonomik) Anayasa bankasında aynı açıdan (A564 D, A105 A, A222).",
+    "bankaMukerreri": "A564",
+    "duzeltme": ""
+  },
+  {
+    "no": 64,
+    "karar": "RED",
+    "sinavDegeri": 3,
+    "konu": "İdare Hukuku",
+    "gerekce": "OHAL CBK'nın üç ayda görüşülmezse yürürlükten kalkması Anayasa bankasında (A570).",
+    "bankaMukerreri": "A570",
+    "duzeltme": ""
+  },
+  {
+    "no": 66,
+    "karar": "RED",
+    "sinavDegeri": 2,
+    "konu": "İdare Hukuku",
+    "gerekce": "Aday içi tekrar (38/63 ile CBK haklar ve yargı denetimi) ve 'yayımlandığı anda' ifadesi kusurlu; yürürlük kuralı A682 E'de var.",
+    "bankaMukerreri": "A682",
+    "duzeltme": ""
+  },
+  {
+    "no": 67,
+    "karar": "RED",
+    "sinavDegeri": 3,
+    "konu": "İdare Hukuku",
+    "gerekce": "Rıza aranmaksızın hukuki sonuç doğurma = tek yanlılık bankada birebir.",
+    "bankaMukerreri": "I172",
+    "duzeltme": ""
+  },
+  {
+    "no": 68,
+    "karar": "KABUL",
+    "sinavDegeri": 3,
+    "konu": "İdare Hukuku",
+    "gerekce": "MGK kararlarının icrai olmaması; bankada icrailik bu örnekle ölçülmüyor.",
+    "bankaMukerreri": "",
+    "duzeltme": ""
+  },
+  {
+    "no": 69,
+    "karar": "KABUL",
+    "sinavDegeri": 3,
+    "konu": "İdare Hukuku",
+    "gerekce": "Re'sen icra tanımı; I172 tek yanlılığı ölçüyor, re'sen icra yalnız çeldirici.",
+    "bankaMukerreri": "",
+    "duzeltme": ""
+  },
+  {
+    "no": 70,
+    "karar": "KABUL",
+    "sinavDegeri": 3,
+    "konu": "İdare Hukuku",
+    "gerekce": "Hukuka uygunluk karinesi tanımı; bankada anahtar olarak yok.",
+    "bankaMukerreri": "",
+    "duzeltme": ""
+  },
+  {
+    "no": 71,
+    "karar": "KABUL",
+    "sinavDegeri": 3,
+    "konu": "İdare Hukuku",
+    "gerekce": "Düzenleyici işlemin özellikleri (tebliğ değil ilan); bankada aynı açı yok.",
+    "bankaMukerreri": "",
+    "duzeltme": ""
+  },
+  {
+    "no": 72,
+    "karar": "KABUL",
+    "sinavDegeri": 3,
+    "konu": "İdare Hukuku",
+    "gerekce": "Birel işlem örneği; bankada yok.",
+    "bankaMukerreri": "",
+    "duzeltme": ""
+  },
+  {
+    "no": 73,
+    "karar": "RED",
+    "sinavDegeri": 3,
+    "konu": "İdare Hukuku",
+    "gerekce": "İki doğru şık şüphesi: vergilendirmenin şart işlem sayıldığı görüş (iki çözücünün kusur notu); şart işlem tanımı ayrıca I173'te.",
+    "bankaMukerreri": "I173",
+    "duzeltme": ""
+  },
+  {
+    "no": 74,
+    "karar": "KABUL",
+    "sinavDegeri": 3,
+    "konu": "İdare Hukuku",
+    "gerekce": "Öznel (sübjektif) işlem tanımı; bankada anahtar olarak yok.",
+    "bankaMukerreri": "",
+    "duzeltme": ""
+  },
+  {
+    "no": 75,
+    "karar": "RED",
+    "sinavDegeri": 2,
+    "konu": "İdare Hukuku",
+    "gerekce": "Doktrin bölünmüş: kurul kararını kolektif sayan görüşle cevap A da olur (üç çözücünün kusur notu).",
+    "bankaMukerreri": "",
+    "duzeltme": ""
+  },
+  {
+    "no": 76,
+    "karar": "KABUL",
+    "sinavDegeri": 3,
+    "konu": "İdare Hukuku",
+    "gerekce": "Kolektif işlem tanımı; I179/I181 örnek üzerinden soruyor, tanım açısı farklı.",
+    "bankaMukerreri": "",
+    "duzeltme": ""
+  },
+  {
+    "no": 77,
+    "karar": "KABUL",
+    "sinavDegeri": 3,
+    "konu": "İdare Hukuku",
+    "gerekce": "Yararlandırıcı işlem; bankada yok.",
+    "bankaMukerreri": "",
+    "duzeltme": ""
+  },
+  {
+    "no": 78,
+    "karar": "KABUL",
+    "sinavDegeri": 3,
+    "konu": "İdare Hukuku",
+    "gerekce": "Belirleyici işlem (diploma); bankada yok.",
+    "bankaMukerreri": "",
+    "duzeltme": ""
+  },
+  {
+    "no": 80,
+    "karar": "KABUL",
+    "sinavDegeri": 3,
+    "konu": "İdare Hukuku",
+    "gerekce": "İdari işlemin unsurları; bankada doğrudan yok.",
+    "bankaMukerreri": "",
+    "duzeltme": ""
+  },
+  {
+    "no": 81,
+    "karar": "KABUL",
+    "sinavDegeri": 4,
+    "konu": "İdare Hukuku",
+    "gerekce": "İdareyle bağı olmayan kişinin işlemi — yetki gaspı/yokluk; I168 farklı senaryo (görevi sona eren memur).",
+    "bankaMukerreri": "",
+    "duzeltme": ""
+  },
+  {
+    "no": 82,
+    "karar": "RED",
+    "sinavDegeri": 3,
+    "konu": "İdare Hukuku",
+    "gerekce": "Belediye meclisinin encümen yetkisini kullanması — yetki tecavüzü bankada birebir.",
+    "bankaMukerreri": "I176",
+    "duzeltme": ""
+  },
+  {
+    "no": 83,
+    "karar": "RED",
+    "sinavDegeri": 3,
+    "konu": "İdare Hukuku",
+    "gerekce": "Fonksiyon (görev) gaspı örneği bankada aynı açıdan (I236, I180, I32).",
+    "bankaMukerreri": "I236",
+    "duzeltme": ""
+  },
+  {
+    "no": 84,
+    "karar": "KABUL",
+    "sinavDegeri": 4,
+    "konu": "İdare Hukuku",
+    "gerekce": "Yer yönünden yetkisizlik — iptal; bankada yok.",
+    "bankaMukerreri": "",
+    "duzeltme": ""
+  },
+  {
+    "no": 85,
+    "karar": "KABUL",
+    "sinavDegeri": 4,
+    "konu": "İdare Hukuku",
+    "gerekce": "Zaman yönünden yetkisizlik (göreve başlamadan imza) — iptal; bankada yok.",
+    "bankaMukerreri": "",
+    "duzeltme": ""
+  },
+  {
+    "no": 86,
+    "karar": "KABUL",
+    "sinavDegeri": 3,
+    "konu": "İdare Hukuku",
+    "gerekce": "Yetki paralelliğinin yazılı olmayan ilke olması; bankada yok.",
+    "bankaMukerreri": "",
+    "duzeltme": ""
+  },
+  {
+    "no": 87,
+    "karar": "KABUL",
+    "sinavDegeri": 4,
+    "konu": "İdare Hukuku",
+    "gerekce": "Yetki/imza devrinin ortak özellikleri (tamamı devredilemez); bankada yok.",
+    "bankaMukerreri": "",
+    "duzeltme": ""
+  },
+  {
+    "no": 88,
+    "karar": "KABUL",
+    "sinavDegeri": 4,
+    "konu": "İdare Hukuku",
+    "gerekce": "Yetki devri–imza devri farkları (makam/kişi); bankada yok. 89 bununla tekrar, bu kalıyor.",
+    "bankaMukerreri": "",
+    "duzeltme": ""
+  },
+  {
+    "no": 89,
+    "karar": "RED",
+    "sinavDegeri": 3,
+    "konu": "İdare Hukuku",
+    "gerekce": "Aday içi tekrar: yetki devrinin makama yapılması 88 E'de ölçülüyor; 88 daha kapsamlı.",
+    "bankaMukerreri": "",
+    "duzeltme": ""
+  },
+  {
+    "no": 90,
+    "karar": "KABUL",
+    "sinavDegeri": 4,
+    "konu": "İdare Hukuku",
+    "gerekce": "İmza devrinde devredenin yetkiyi kullanabilmesi; senaryo, bankada yok.",
+    "bankaMukerreri": "",
+    "duzeltme": ""
+  },
+  {
+    "no": 91,
+    "karar": "KABUL",
+    "sinavDegeri": 3,
+    "konu": "İdare Hukuku",
+    "gerekce": "Yetki devrinin devreden amirin sorumluluğunu kaldırmaması; bankada yok. Not: eski dayanak 3046 md 38 (mülga); ilke doktrinde geçerli, açıklamada güncel dayanak teyit edilmeli.",
+    "bankaMukerreri": "",
+    "duzeltme": ""
+  },
+  {
+    "no": 92,
+    "karar": "KABUL",
+    "sinavDegeri": 3,
+    "konu": "İdare Hukuku",
+    "gerekce": "İmzanın yeniden devredilemezliği; bankada yok.",
+    "bankaMukerreri": "",
+    "duzeltme": ""
+  },
+  {
+    "no": 93,
+    "karar": "KABUL",
+    "sinavDegeri": 3,
+    "konu": "İdare Hukuku",
+    "gerekce": "Yetki devrinde işlemin hiyerarşik gücü; bankada yok.",
+    "bankaMukerreri": "",
+    "duzeltme": ""
+  },
+  {
+    "no": 94,
+    "karar": "KABUL",
+    "sinavDegeri": 4,
+    "konu": "İdare Hukuku",
+    "gerekce": "Fiili memur (olağanüstü dönem, gönüllü müdahale); bankada yok.",
+    "bankaMukerreri": "",
+    "duzeltme": ""
+  },
+  {
+    "no": 95,
+    "karar": "KABUL",
+    "sinavDegeri": 3,
+    "konu": "İdare Hukuku",
+    "gerekce": "Tedviren görevlendirme tanımı; bankada yok.",
+    "bankaMukerreri": "",
+    "duzeltme": ""
+  },
+  {
+    "no": 96,
+    "karar": "KABUL",
+    "sinavDegeri": 4,
+    "konu": "İdare Hukuku",
+    "gerekce": "Şekil unsuru — gerekçe yükümlülüğünün genel olmaması; bankada yok.",
+    "bankaMukerreri": "",
+    "duzeltme": ""
+  },
+  {
+    "no": 97,
+    "karar": "KABUL",
+    "sinavDegeri": 4,
+    "konu": "İdare Hukuku",
+    "gerekce": "Savunma alınmadan disiplin cezası — şekil unsuru; I49 Anayasa güvencesini soruyor, unsur açısı farklı.",
+    "bankaMukerreri": "",
+    "duzeltme": ""
+  },
+  {
+    "no": 98,
+    "karar": "KABUL",
+    "sinavDegeri": 3,
+    "konu": "İdare Hukuku",
+    "gerekce": "Hazırlık işlemleri şekil unsuru içinde; I102 icrailik açısından, farklı.",
+    "bankaMukerreri": "",
+    "duzeltme": ""
+  },
+  {
+    "no": 99,
+    "karar": "KABUL",
+    "sinavDegeri": 3,
+    "konu": "İdare Hukuku",
+    "gerekce": "Şekilde paralellik tanımı; bankada yok.",
+    "bankaMukerreri": "",
+    "duzeltme": ""
+  },
+  {
+    "no": 100,
+    "karar": "KABUL",
+    "sinavDegeri": 4,
+    "konu": "İdare Hukuku",
+    "gerekce": "Sebep ikamesi tanımı; bankada yok.",
+    "bankaMukerreri": "",
+    "duzeltme": ""
+  },
+  {
+    "no": 101,
+    "karar": "KABUL",
+    "sinavDegeri": 4,
+    "konu": "İdare Hukuku",
+    "gerekce": "Konu unsuru sakatlığı (öngörülenden ağır ceza); senaryo, bankada yok.",
+    "bankaMukerreri": "",
+    "duzeltme": ""
+  },
+  {
+    "no": 102,
+    "karar": "KABUL",
+    "sinavDegeri": 4,
+    "konu": "İdare Hukuku",
+    "gerekce": "Takdir yetkisinin bulunduğu unsurlar (sebep, konu); bankada yok.",
+    "bankaMukerreri": "",
+    "duzeltme": ""
+  },
+  {
+    "no": 103,
+    "karar": "KABUL",
+    "sinavDegeri": 3,
+    "konu": "İdare Hukuku",
+    "gerekce": "Maksat unsuru sakatlığı; I166 yetki saptırması adını soruyor, açı farklı.",
+    "bankaMukerreri": "",
+    "duzeltme": ""
+  },
+  {
+    "no": 104,
+    "karar": "KABUL",
+    "sinavDegeri": 4,
+    "konu": "İdare Hukuku",
+    "gerekce": "Yokluk yaptırımının özellikleri; bankada yok (I28 E yalnız genel ifade).",
+    "bankaMukerreri": "",
+    "duzeltme": ""
+  },
+  {
+    "no": 105,
+    "karar": "KABUL",
+    "sinavDegeri": 4,
+    "konu": "İdare Hukuku",
+    "gerekce": "Yokluk örnekleri — izinli memurun imzası iptal sebebi; bankada yok.",
+    "bankaMukerreri": "",
+    "duzeltme": ""
+  },
+  {
+    "no": 107,
+    "karar": "KABUL",
+    "sinavDegeri": 3,
+    "konu": "İdare Hukuku",
+    "gerekce": "Hile ile tesis edilen işlemin her zaman geri alınması; I129 farklı anahtar (hukuka uygun işlem geri alınamaz).",
+    "bankaMukerreri": "",
+    "duzeltme": ""
+  },
+  {
+    "no": 108,
+    "karar": "KABUL",
+    "sinavDegeri": 3,
+    "konu": "İdare Hukuku",
+    "gerekce": "Kaldırma tanımı; bankada yok.",
+    "bankaMukerreri": "",
+    "duzeltme": ""
+  },
+  {
+    "no": 109,
+    "karar": "RED",
+    "sinavDegeri": 3,
+    "konu": "İdare Hukuku",
+    "gerekce": "İdari sözleşmenin organik şartı (bir tarafın idare olması) bankada aynen.",
+    "bankaMukerreri": "I162",
+    "duzeltme": ""
+  },
+  {
+    "no": 110,
+    "karar": "KABUL",
+    "sinavDegeri": 3,
+    "konu": "İdare Hukuku",
+    "gerekce": "Mali iltizam sözleşmesi tanımı; I169 yalnız sözleşme türünü sayıyor.",
+    "bankaMukerreri": "",
+    "duzeltme": ""
+  },
+  {
+    "no": 111,
+    "karar": "KABUL",
+    "sinavDegeri": 3,
+    "konu": "İdare Hukuku",
+    "gerekce": "Kamu istikrazı — borçlanma yetkisinin Hazine ve Maliye Bakanlığında olması; bankada yok.",
+    "bankaMukerreri": "",
+    "duzeltme": ""
+  },
+  {
+    "no": 112,
+    "karar": "KABUL",
+    "sinavDegeri": 3,
+    "konu": "İdare Hukuku",
+    "gerekce": "İmtiyaz verme yetkisine sahip idareler; bankada yok.",
+    "bankaMukerreri": "",
+    "duzeltme": ""
+  },
+  {
+    "no": 114,
+    "karar": "RED",
+    "sinavDegeri": 3,
+    "konu": "2575 Danıştay Kanunu",
+    "gerekce": "Danıştayın imtiyaz sözleşmelerinde iki ayda düşünce bildirmesi bankada aynen (konu 2575).",
+    "bankaMukerreri": "I495",
+    "duzeltme": ""
+  },
+  {
+    "no": 116,
+    "karar": "KABUL",
+    "sinavDegeri": 4,
+    "konu": "İdare Hukuku",
+    "gerekce": "İmtiyazda idarenin yetkileri — tarife idarece belirlenir; bankada yok.",
+    "bankaMukerreri": "",
+    "duzeltme": ""
+  },
+  {
+    "no": 117,
+    "karar": "KABUL",
+    "sinavDegeri": 4,
+    "konu": "İdare Hukuku",
+    "gerekce": "İmtiyaza geçici el koyma; senaryo, bankada yok.",
+    "bankaMukerreri": "",
+    "duzeltme": ""
+  },
+  {
+    "no": 118,
+    "karar": "RED",
+    "sinavDegeri": 2,
+    "konu": "İdare Hukuku",
+    "gerekce": "İki yanlış şık şüphesi: C 'mücbir sebepten dolayı emprevizyon' kavramları karıştırıyor, o da yanlış sayılabilir (kusur notu).",
+    "bankaMukerreri": "",
+    "duzeltme": ""
+  },
+  {
+    "no": 119,
+    "karar": "RED",
+    "sinavDegeri": 2,
+    "konu": "İdare Hukuku",
+    "gerekce": "Doktrine aykırı anahtar: deprem mücbir sebep; emprevizyonda zararın tamamı değil bir kısmı karşılanır (üç çözücünün kusur notu); emprevizyon ayrıca I240'ta.",
+    "bankaMukerreri": "I240",
+    "duzeltme": ""
+  },
+  {
+    "no": 120,
+    "karar": "KABUL",
+    "sinavDegeri": 4,
+    "konu": "İdare Hukuku",
+    "gerekce": "Rachat (satın alma yoluyla fesih); senaryo, bankada yok.",
+    "bankaMukerreri": "",
+    "duzeltme": ""
+  },
+  {
+    "no": 121,
+    "karar": "KABUL",
+    "sinavDegeri": 3,
+    "konu": "İdare Hukuku",
+    "gerekce": "İmtiyaz sözleşmesinin sona erme hâlleri; bankada yok.",
+    "bankaMukerreri": "",
+    "duzeltme": ""
+  },
+  {
+    "no": 122,
+    "karar": "RED",
+    "sinavDegeri": 2,
+    "konu": "İdare Hukuku",
+    "gerekce": "Tahkim anlaşmasının bağımsızlığı (MTK/HMK) usul ayrıntısı; PAEM değeri düşük.",
+    "bankaMukerreri": "",
+    "duzeltme": ""
+  },
+  {
+    "no": 123,
+    "karar": "KABUL",
+    "sinavDegeri": 3,
+    "konu": "İdare Hukuku",
+    "gerekce": "657 4/B sözleşmeli personel işçi değildir; güncel (CB esas ve usulleri), bankada yok.",
+    "bankaMukerreri": "",
+    "duzeltme": ""
+  },
+  {
+    "no": 124,
+    "karar": "KABUL",
+    "sinavDegeri": 3,
+    "konu": "İdare Hukuku",
+    "gerekce": "Madenlerin ruhsatla işletilmesi; A351 devir şartlarını soruyor, anahtar farklı.",
+    "bankaMukerreri": "",
+    "duzeltme": ""
+  },
+  {
+    "no": 125,
+    "karar": "RED",
+    "sinavDegeri": 2,
+    "konu": "İdare Hukuku",
+    "gerekce": "İki yanlış şık şüphesi: A (1982 ile orman işletme sözleşmesinin kalkması) tartışmalı; bankada (I169) orman işletme sözleşmesi idari sözleşme sayılıyor.",
+    "bankaMukerreri": "",
+    "duzeltme": ""
+  },
+  {
+    "no": 126,
+    "karar": "RED",
+    "sinavDegeri": 2,
+    "konu": "İdare Hukuku",
+    "gerekce": "YİD bütçe sınırı oranları ağır ayrıntı, sayılar teyitsiz; PAEM değeri düşük.",
+    "bankaMukerreri": "",
+    "duzeltme": ""
+  },
+  {
+    "no": 127,
+    "karar": "KABUL",
+    "sinavDegeri": 3,
+    "konu": "İdare Hukuku",
+    "gerekce": "YİD'de yabancı şirketin doğrudan taraf olması, Danıştay görüşü gerekmemesi (1999 sonrası); bankada yok.",
+    "bankaMukerreri": "",
+    "duzeltme": ""
+  },
+  {
+    "no": 128,
+    "karar": "RED",
+    "sinavDegeri": 2,
+    "konu": "İdare Hukuku",
+    "gerekce": "İki doğru şık şüphesi: 4283'te süre 49 yıl ise D de doğru (kusur notu); ayrıntı.",
+    "bankaMukerreri": "",
+    "duzeltme": ""
+  },
+  {
+    "no": 129,
+    "karar": "KABUL",
+    "sinavDegeri": 3,
+    "konu": "İdare Hukuku",
+    "gerekce": "2886 DİK ihale usulleri — açık ihale KİK'e ait; I94/I283 farklı açı.",
+    "bankaMukerreri": "",
+    "duzeltme": ""
+  },
+  {
+    "no": 131,
+    "karar": "RED",
+    "sinavDegeri": 2,
+    "konu": "İdare Hukuku",
+    "gerekce": "Belli istekliler usulünde beşten az yeterli aday → iptal bilgisi bankada birebir.",
+    "bankaMukerreri": "I203",
+    "duzeltme": ""
+  },
+  {
+    "no": 132,
+    "karar": "RED",
+    "sinavDegeri": 2,
+    "konu": "İdare Hukuku",
+    "gerekce": "KİK tasarım yarışması usul ayrıntısı; PAEM değeri düşük.",
+    "bankaMukerreri": "",
+    "duzeltme": ""
+  },
+  {
+    "no": 133,
+    "karar": "RED",
+    "sinavDegeri": 2,
+    "konu": "İdare Hukuku",
+    "gerekce": "KİK md 5 temel ilkeler bankada (I47); ÇED/ödenek hükümlerinin madde yeri teyitsiz (kusur notu).",
+    "bankaMukerreri": "I47",
+    "duzeltme": ""
+  }
+]

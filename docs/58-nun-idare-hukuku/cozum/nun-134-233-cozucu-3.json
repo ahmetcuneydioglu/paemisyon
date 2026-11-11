@@ -1,0 +1,702 @@
+[
+ {
+  "no": 134,
+  "cevap": "D",
+  "guven": "orta",
+  "gerekce": "4734 md 3: tanık koruma alımları ve BOTAŞ'ın ithalat yoluyla doğal gaz alımları istisna; TCDD ihaleleri kapsam içinde.",
+  "kusur": ""
+ },
+ {
+  "no": 135,
+  "cevap": "C",
+  "guven": "yuksek",
+  "gerekce": "Kesin teminat sözleşme aşamasında alınır; diğerleri hazırlık aşaması işlemleri.",
+  "kusur": ""
+ },
+ {
+  "no": 136,
+  "cevap": "D",
+  "guven": "yuksek",
+  "gerekce": "4734 md 13: eşik değer üstü yapım işinde ilan ihale tarihinden en az 40 gün önce.",
+  "kusur": ""
+ },
+ {
+  "no": 137,
+  "cevap": "B",
+  "guven": "yuksek",
+  "gerekce": "2886 md 25: geçici teminat tahmin edilen bedelin %3'ü; KİK'te teklif bedelinin %3'ünden az olamaz.",
+  "kusur": ""
+ },
+ {
+  "no": 138,
+  "cevap": "C",
+  "guven": "yuksek",
+  "gerekce": "4734 md 40: ekonomik açıdan en avantajlı teklif.",
+  "kusur": ""
+ },
+ {
+  "no": 139,
+  "cevap": "A",
+  "guven": "yuksek",
+  "gerekce": "4734 md 40: ihale yetkilisi karar tarihini izleyen en geç 5 iş günü içinde onaylar veya iptal eder.",
+  "kusur": ""
+ },
+ {
+  "no": 140,
+  "cevap": "C",
+  "guven": "yuksek",
+  "gerekce": "4734 md 41: bildirim gerekçeli yapılır, onayı izleyen en geç 3 gün içinde, bütün isteklilere.",
+  "kusur": ""
+ },
+ {
+  "no": 141,
+  "cevap": "A",
+  "guven": "yuksek",
+  "gerekce": "4734 md 43: kesin teminat ihale bedelinin %6'sı.",
+  "kusur": ""
+ },
+ {
+  "no": 142,
+  "cevap": "D",
+  "guven": "yuksek",
+  "gerekce": "4734 md 42/47: ihale sonuçları en geç 15 gün içinde Kuruma bildirilir.",
+  "kusur": ""
+ },
+ {
+  "no": 143,
+  "cevap": "E",
+  "guven": "dusuk",
+  "gerekce": "Kurul Cumhurbaşkanınca atanan 10 üyeden oluşur; E yanlış ama A (dokuz üye) da yanlış görünüyor.",
+  "kusur": "İki yanlış şık: Kurul başkan dahil on üyedir (A de yanlış), üyeler TBMM'ce seçilmez (E)."
+ },
+ {
+  "no": 144,
+  "cevap": "B",
+  "guven": "yuksek",
+  "gerekce": "Sözleşme sonrası uyuşmazlıklar Kurumun değil adli yargının görevidir.",
+  "kusur": ""
+ },
+ {
+  "no": 145,
+  "cevap": "E",
+  "guven": "yuksek",
+  "gerekce": "KİK'e göre imzalanan sözleşme özel hukuk sözleşmesidir; uygulama uyuşmazlıkları adli yargıda.",
+  "kusur": ""
+ },
+ {
+  "no": 146,
+  "cevap": "C",
+  "guven": "yuksek",
+  "gerekce": "4734 md 55: şikâyet 10 gün içinde ihaleyi yapan idareye; idare 10 gün içinde gerekçeli karar alır.",
+  "kusur": ""
+ },
+ {
+  "no": 147,
+  "cevap": "E",
+  "guven": "yuksek",
+  "gerekce": "4734 md 56: Kurum itirazen şikâyeti 20 gün içinde nihai karara bağlar.",
+  "kusur": ""
+ },
+ {
+  "no": 148,
+  "cevap": "B",
+  "guven": "yuksek",
+  "gerekce": "4734 md 57: Kurul kararlarına karşı Ankara İdare Mahkemesi.",
+  "kusur": ""
+ },
+ {
+  "no": 149,
+  "cevap": "E",
+  "guven": "yuksek",
+  "gerekce": "Kamu hizmetini kurma/kaldırmada asli yetkili yasama organıdır (kanun).",
+  "kusur": ""
+ },
+ {
+  "no": 150,
+  "cevap": "C",
+  "guven": "yuksek",
+  "gerekce": "Kârlılık kamu hizmeti ilkesi değildir.",
+  "kusur": ""
+ },
+ {
+  "no": 151,
+  "cevap": "B",
+  "guven": "yuksek",
+  "gerekce": "İzinle tekel niteliğinde olmayan hizmetin özel kişice görülmesi ruhsat usulüdür.",
+  "kusur": ""
+ },
+ {
+  "no": 152,
+  "cevap": "A",
+  "guven": "yuksek",
+  "gerekce": "Müşterek emanet: risk idarede, özel kişiye gelirden pay verilir; iltizamda risk mültezimdedir.",
+  "kusur": ""
+ },
+ {
+  "no": 153,
+  "cevap": "D",
+  "guven": "yuksek",
+  "gerekce": "Emanet usulü: idare kendi örgütüyle doğrudan görür; adalet hizmeti örnektir.",
+  "kusur": ""
+ },
+ {
+  "no": 154,
+  "cevap": "B",
+  "guven": "yuksek",
+  "gerekce": "SGK ve İŞKUR sosyal kamu hizmeti örneğidir.",
+  "kusur": ""
+ },
+ {
+  "no": 155,
+  "cevap": "A",
+  "guven": "yuksek",
+  "gerekce": "Kamu mallarının tapuya tescili zorunlu değildir.",
+  "kusur": ""
+ },
+ {
+  "no": 156,
+  "cevap": "D",
+  "guven": "yuksek",
+  "gerekce": "Mera, kamunun ortak yararlanmasına ayrılmış orta malıdır.",
+  "kusur": ""
+ },
+ {
+  "no": 157,
+  "cevap": "E",
+  "guven": "yuksek",
+  "gerekce": "Belediyenin kamu hizmetine tahsisli olmayan özel malları haczedilebilir (5393 md 15); Devlet malları haczedilemez.",
+  "kusur": ""
+ },
+ {
+  "no": 158,
+  "cevap": "D",
+  "guven": "yuksek",
+  "gerekce": "AY 46 ve 2942: kamulaştırma yalnız özel mülkiyetteki taşınmazlarda yapılır; taşınırda yapılamaz.",
+  "kusur": ""
+ },
+ {
+  "no": 159,
+  "cevap": "B",
+  "guven": "yuksek",
+  "gerekce": "AY 46: taksit süresi beş yılı aşamaz, on yıl değil.",
+  "kusur": ""
+ },
+ {
+  "no": 160,
+  "cevap": "D",
+  "guven": "dusuk",
+  "gerekce": "Kaynağın çizgisi TOBB dışındaki meslek kuruluşlarına kamulaştırma yetkisi tanınmadığı yönünde görünüyor; doktrinde kesinlik yok.",
+  "kusur": "Bilgi tartışmalı; doktrinde net yerleşik görüş belirsiz."
+ },
+ {
+  "no": 161,
+  "cevap": "A",
+  "guven": "yuksek",
+  "gerekce": "2942 md 3/2: özel kişi lehine kamulaştırmayı idare yapar, bedeli lehine kamulaştırma yapılan kişi öder.",
+  "kusur": ""
+ },
+ {
+  "no": 162,
+  "cevap": "C",
+  "guven": "yuksek",
+  "gerekce": "2942 md 12: artan kısım elverişsizse malikin 30 gün içindeki yazılı istemiyle tamamı kamulaştırılır.",
+  "kusur": ""
+ },
+ {
+  "no": 163,
+  "cevap": "D",
+  "guven": "orta",
+  "gerekce": "2942 md 5: birden çok il sınırındaki Devlet yararına kamulaştırmada karar merkezî (Cumhurbaşkanı) düzeydedir.",
+  "kusur": "Metin değişikliklerine bağlı; bakanlık yetkisi de söz konusu olabilir."
+ },
+ {
+  "no": 164,
+  "cevap": "A",
+  "guven": "yuksek",
+  "gerekce": "2942 md 6: köy ihtiyar kurulu kararı ilçede kaymakamın, il merkezinde valinin onayıyla tamamlanır.",
+  "kusur": ""
+ },
+ {
+  "no": 165,
+  "cevap": "C",
+  "guven": "orta",
+  "gerekce": "2942 md 6: Cumhurbaşkanı veya bakanlıklarca verilen kamu yararı kararları onaya tabi değildir.",
+  "kusur": "A ve B şıkları md 6 sayımına göre kontrol edilmeli."
+ },
+ {
+  "no": 166,
+  "cevap": "E",
+  "guven": "yuksek",
+  "gerekce": "2942 md 11: gelecekteki değer artışları bedele dahil edilmez.",
+  "kusur": ""
+ },
+ {
+  "no": 167,
+  "cevap": "C",
+  "guven": "yuksek",
+  "gerekce": "2942 md 8: malik tebliğden itibaren 15 gün içinde başvurursa pazarlık yapılır.",
+  "kusur": ""
+ },
+ {
+  "no": 168,
+  "cevap": "E",
+  "guven": "orta",
+  "gerekce": "2942 md 8: anlaşma tutanağı ferağ beyanı ve tescilin hukuki sebebi sayılır; komisyon en az 3 kişi, bedel tahmini değeri aşamaz.",
+  "kusur": ""
+ },
+ {
+  "no": 169,
+  "cevap": "A",
+  "guven": "yuksek",
+  "gerekce": "2942 md 10: anlaşma sağlanamazsa idare taşınmazın bulunduğu yer asliye hukuk mahkemesine başvurur.",
+  "kusur": ""
+ },
+ {
+  "no": 170,
+  "cevap": "D",
+  "guven": "yuksek",
+  "gerekce": "Paydaşlardan her biri kamulaştırmaya karşı tek başına dava açabilir; süre 30 gündür.",
+  "kusur": ""
+ },
+ {
+  "no": 171,
+  "cevap": "B",
+  "guven": "orta",
+  "gerekce": "2942 md 23: beş yıl, kanuni faiz, bir yıllık hak düşürücü süre; taksitli kamulaştırmada geri alma hakkı yoktur.",
+  "kusur": ""
+ },
+ {
+  "no": 172,
+  "cevap": "E",
+  "guven": "dusuk",
+  "gerekce": "Diğer şıklar açıkça yanlış; %120 sınırını mevzuat metninden kesin doğrulayamadım.",
+  "kusur": ""
+ },
+ {
+  "no": 173,
+  "cevap": "A",
+  "guven": "yuksek",
+  "gerekce": "2942 md 30: idareler arası devirde anlaşmazlık Danıştayca 2 ay içinde kesin olarak çözülür.",
+  "kusur": ""
+ },
+ {
+  "no": 174,
+  "cevap": "C",
+  "guven": "yuksek",
+  "gerekce": "3194 md 18: düzenleme ortaklık payı %45'i aşamaz.",
+  "kusur": ""
+ },
+ {
+  "no": 175,
+  "cevap": "B",
+  "guven": "yuksek",
+  "gerekce": "Hukuki dayanağı olmayan fiili el atmada adli yargıda el atmanın önlenmesi (meni müdahale) davası.",
+  "kusur": ""
+ },
+ {
+  "no": 176,
+  "cevap": "C",
+  "guven": "yuksek",
+  "gerekce": "Geçici nitelikte, işgal içermeyen zararlı eylemde idari yargıda tam yargı davası.",
+  "kusur": ""
+ },
+ {
+  "no": 177,
+  "cevap": "D",
+  "guven": "yuksek",
+  "gerekce": "2942 md 27: kıymet takdiri dışındaki işlemler sonradan yapılır, mahkeme 7 günde kıymet takdir eder.",
+  "kusur": ""
+ },
+ {
+  "no": 178,
+  "cevap": "B",
+  "guven": "yuksek",
+  "gerekce": "İstimval: olağanüstü durumlarda taşınırların mülkiyet/kullanımının bedel karşılığı devlete geçmesi.",
+  "kusur": ""
+ },
+ {
+  "no": 179,
+  "cevap": "E",
+  "guven": "yuksek",
+  "gerekce": "Devletleştirme idari işlemle değil kanunla yapılır.",
+  "kusur": ""
+ },
+ {
+  "no": 180,
+  "cevap": "B",
+  "guven": "yuksek",
+  "gerekce": "2942 md 29: konutlar ve eklentisi avlu/bahçeler geçici işgal edilemez.",
+  "kusur": ""
+ },
+ {
+  "no": 181,
+  "cevap": "D",
+  "guven": "yuksek",
+  "gerekce": "Özelleştirme mal edinme değil elden çıkarma yöntemidir.",
+  "kusur": ""
+ },
+ {
+  "no": 182,
+  "cevap": "A",
+  "guven": "yuksek",
+  "gerekce": "Mücavir alan dışındaki planlar valilik/il genel meclisi yetkisindedir; itiraz belediye meclisine yapılmaz.",
+  "kusur": ""
+ },
+ {
+  "no": 183,
+  "cevap": "E",
+  "guven": "yuksek",
+  "gerekce": "3194 md 11: yapıya başlama süresi ruhsattan itibaren 2 yıl, bitirme 5 yıl.",
+  "kusur": ""
+ },
+ {
+  "no": 184,
+  "cevap": "E",
+  "guven": "dusuk",
+  "gerekce": "Kent estetiği sonradan eklenen unsurdur; ancak genel ahlak da doktrinde sonradan eklenen unsur sayılır.",
+  "kusur": "İki savunulabilir şık: genel ahlak (B) da klasik üçlüye (güvenlik, dirlik-esenlik, sağlık) sonradan eklenmiştir."
+ },
+ {
+  "no": 185,
+  "cevap": "A",
+  "guven": "yuksek",
+  "gerekce": "Gürültü önleme dirlik ve esenliğe yöneliktir.",
+  "kusur": ""
+ },
+ {
+  "no": 186,
+  "cevap": "C",
+  "guven": "yuksek",
+  "gerekce": "Salgın hastalıklar ve gıda güvenliği genel sağlık unsurudur.",
+  "kusur": ""
+ },
+ {
+  "no": 187,
+  "cevap": "D",
+  "guven": "yuksek",
+  "gerekce": "Dışa yansımayan ahlaki tercihlere idare müdahale edemez.",
+  "kusur": ""
+ },
+ {
+  "no": 188,
+  "cevap": "B",
+  "guven": "yuksek",
+  "gerekce": "Belediye başkanı mahallî idare kolluk makamıdır, genel idari kolluk makamı değildir.",
+  "kusur": ""
+ },
+ {
+  "no": 189,
+  "cevap": "E",
+  "guven": "yuksek",
+  "gerekce": "Zabıta mahallî idare (belediye) kolluk personelidir.",
+  "kusur": ""
+ },
+ {
+  "no": 190,
+  "cevap": "C",
+  "guven": "yuksek",
+  "gerekce": "5442 md 11/D: valiler zorunlu hâllerde silahlı kuvvetlerden yararlanabilir.",
+  "kusur": ""
+ },
+ {
+  "no": 191,
+  "cevap": "D",
+  "guven": "yuksek",
+  "gerekce": "Köyün kolluk personeli zabıta değil köy korucusudur.",
+  "kusur": ""
+ },
+ {
+  "no": 192,
+  "cevap": "D",
+  "guven": "orta",
+  "gerekce": "442 s. Köy Kanunu ek md: güvenlik korucuları valinin teklifi ve İçişleri Bakanlığının onayıyla görevlendirilir.",
+  "kusur": ""
+ },
+ {
+  "no": 193,
+  "cevap": "B",
+  "guven": "yuksek",
+  "gerekce": "Gümrük kolluğu belirli bir hizmet alanına özgü hizmet kolluğudur.",
+  "kusur": ""
+ },
+ {
+  "no": 194,
+  "cevap": "E",
+  "guven": "yuksek",
+  "gerekce": "İdari kolluk faaliyetlerinden doğan uyuşmazlıklar idari yargıda çözülür.",
+  "kusur": "B şıkkı metni bozuk (\"bu tür suçları\" öncülsüz)."
+ },
+ {
+  "no": 195,
+  "cevap": "A",
+  "guven": "yuksek",
+  "gerekce": "Suç işlendikten sonra savcı talimatıyla yürütülen faaliyet adli kolluktur.",
+  "kusur": ""
+ },
+ {
+  "no": 196,
+  "cevap": "C",
+  "guven": "yuksek",
+  "gerekce": "Önceden haber verme yükümlülüğü bildirim usulüdür.",
+  "kusur": ""
+ },
+ {
+  "no": 197,
+  "cevap": "A",
+  "guven": "yuksek",
+  "gerekce": "MİT siyasi kolluk olarak anılır.",
+  "kusur": ""
+ },
+ {
+  "no": 198,
+  "cevap": "D",
+  "guven": "yuksek",
+  "gerekce": "Hizmet kusuru anonimdir; kusuru işleyen görevlinin bulunması şart değildir.",
+  "kusur": ""
+ },
+ {
+  "no": 199,
+  "cevap": "D",
+  "guven": "orta",
+  "gerekce": "Uyarı işaretsiz yol çalışması doktrinde hizmetin kötü işlemesi örneğidir.",
+  "kusur": "Hiç işlememe olarak da yorumlanabilir."
+ },
+ {
+  "no": 200,
+  "cevap": "D",
+  "guven": "orta",
+  "gerekce": "İşkence, yargı kararına uymama ve açık yasa hükmünün yanlış uygulanması kişisel kusur; nüfus kaydının tutulmaması hizmet kusuru.",
+  "kusur": ""
+ },
+ {
+  "no": 201,
+  "cevap": "B",
+  "guven": "yuksek",
+  "gerekce": "Kişisel kin/siyasi saikle yapılan davranış görevden ayrılabilir kişisel kusurdur.",
+  "kusur": ""
+ },
+ {
+  "no": 202,
+  "cevap": "A",
+  "guven": "orta",
+  "gerekce": "Yargı kararına kasten uymama kişisel kusur sayılır; idare ödediği tazminatı görevliye rücu eder.",
+  "kusur": ""
+ },
+ {
+  "no": 203,
+  "cevap": "C",
+  "guven": "orta",
+  "gerekce": "Kusursuz sorumlulukta idare kusursuzluğunu kanıtlayarak kurtulamaz; diğer şıklar açıkça yanlış.",
+  "kusur": ""
+ },
+ {
+  "no": 204,
+  "cevap": "E",
+  "guven": "yuksek",
+  "gerekce": "Görevin doğasından kaynaklanan kusursuz zarar mesleki risk ilkesine dayanır.",
+  "kusur": ""
+ },
+ {
+  "no": 205,
+  "cevap": "B",
+  "guven": "yuksek",
+  "gerekce": "Sosyal risk nedensellik bağının aranmadığı tek kusursuz sorumluluk hâlidir.",
+  "kusur": ""
+ },
+ {
+  "no": 206,
+  "cevap": "C",
+  "guven": "yuksek",
+  "gerekce": "Kamu yararına faaliyet nedeniyle olağandışı özel zarar fedakârlığın denkleştirilmesidir.",
+  "kusur": ""
+ },
+ {
+  "no": 207,
+  "cevap": "B",
+  "guven": "yuksek",
+  "gerekce": "Beklenmeyen hâl kusurlu sorumluluğu kaldırır, kusursuz sorumluluk devam eder.",
+  "kusur": ""
+ },
+ {
+  "no": 208,
+  "cevap": "D",
+  "guven": "yuksek",
+  "gerekce": "Manevi zarar da tazmin edilir.",
+  "kusur": ""
+ },
+ {
+  "no": 209,
+  "cevap": "E",
+  "guven": "yuksek",
+  "gerekce": "657 md 3: kariyer ilkesi.",
+  "kusur": ""
+ },
+ {
+  "no": 210,
+  "cevap": "B",
+  "guven": "yuksek",
+  "gerekce": "657 md 36'da hâkimlik ve savcılık sınıfı yoktur.",
+  "kusur": ""
+ },
+ {
+  "no": 211,
+  "cevap": "A",
+  "guven": "yuksek",
+  "gerekce": "657 md 4/A: planlama, denetim gibi asli ve sürekli görevleri yürütenler memurdur.",
+  "kusur": ""
+ },
+ {
+  "no": 212,
+  "cevap": "D",
+  "guven": "yuksek",
+  "gerekce": "657 md 4/B: sözleşmesini tek taraflı fesheden bir yıl geçmedikçe sözleşmeli istihdam edilemez.",
+  "kusur": ""
+ },
+ {
+  "no": 213,
+  "cevap": "C",
+  "guven": "yuksek",
+  "gerekce": "657 md 4/C-D: geçici işçiler altı aydan az süreyle çalıştırılır.",
+  "kusur": ""
+ },
+ {
+  "no": 214,
+  "cevap": "A",
+  "guven": "yuksek",
+  "gerekce": "657 md 59: istisnai memurluklara sınav hükümlerine bağlı olmaksızın atama yapılabilir.",
+  "kusur": ""
+ },
+ {
+  "no": 215,
+  "cevap": "D",
+  "guven": "orta",
+  "gerekce": "657 md 48/A-3: meslek okulu bitirip kazai rüşt kararı alanlarda 18 yaş şartı aranmaz.",
+  "kusur": ""
+ },
+ {
+  "no": 216,
+  "cevap": "C",
+  "guven": "yuksek",
+  "gerekce": "657 md 48/A-5: kasten bir yıl ve üzeri ile affa uğrasa da zimmet, hırsızlık; taksirli suç engel değil.",
+  "kusur": ""
+ },
+ {
+  "no": 217,
+  "cevap": "B",
+  "guven": "yuksek",
+  "gerekce": "Ön lisans mezuniyeti genel şart değildir.",
+  "kusur": ""
+ },
+ {
+  "no": 218,
+  "cevap": "C",
+  "guven": "yuksek",
+  "gerekce": "Sınıfı için belirtilen okuldan diploma özel şarttır.",
+  "kusur": ""
+ },
+ {
+  "no": 219,
+  "cevap": "D",
+  "guven": "orta",
+  "gerekce": "657 md 55: adaylık süresi içinde başka kurumlara nakil yapılamaz.",
+  "kusur": ""
+ },
+ {
+  "no": 220,
+  "cevap": "C",
+  "guven": "orta",
+  "gerekce": "657 md 56: adaylık süresinde iki uyarma (veya kınama ve üstü) alan adayın ilişiği kesilir.",
+  "kusur": ""
+ },
+ {
+  "no": 221,
+  "cevap": "A",
+  "guven": "dusuk",
+  "gerekce": "Sağlık dışı nedenle ilişiği kesilen aday için bekleme süresi; süreyi metinden kesin doğrulayamadım.",
+  "kusur": ""
+ },
+ {
+  "no": 222,
+  "cevap": "B",
+  "guven": "orta",
+  "gerekce": "657 md 58: asli memurluğa geçiş tarihi adaylık süresinin sonunu geçemez; diğer şıklar yanlış.",
+  "kusur": ""
+ },
+ {
+  "no": 223,
+  "cevap": "E",
+  "guven": "orta",
+  "gerekce": "Başka yere atanan memur tebliğden itibaren 15 gün içinde yola çıkmak zorundadır.",
+  "kusur": ""
+ },
+ {
+  "no": 224,
+  "cevap": "D",
+  "guven": "yuksek",
+  "gerekce": "Görevin önemi/sorumluluğu artınca yapılan ilerleme derece yükselmesidir; kademe aynı derece içinde ilerlemedir.",
+  "kusur": ""
+ },
+ {
+  "no": 225,
+  "cevap": "A",
+  "guven": "dusuk",
+  "gerekce": "657 md 36/A-8: doktora yapanlara bir derece yükselmesi; iki kademe görüşünden ayırt edemedim.",
+  "kusur": "Mevzuat ayrıntısı; kesin hatırlanamadı."
+ },
+ {
+  "no": 226,
+  "cevap": "E",
+  "guven": "yuksek",
+  "gerekce": "657 md 68: derecesinde en az 3 yıl, üst derecede boş kadro ve görev niteliği şart.",
+  "kusur": ""
+ },
+ {
+  "no": 227,
+  "cevap": "B",
+  "guven": "yuksek",
+  "gerekce": "657 md 6: yemin asli memurluğa atandıktan sonra bir ay içinde yapılır.",
+  "kusur": ""
+ },
+ {
+  "no": 228,
+  "cevap": "C",
+  "guven": "yuksek",
+  "gerekce": "657 md 7: memurlar siyasi partilere üye olamaz.",
+  "kusur": ""
+ },
+ {
+  "no": 229,
+  "cevap": "A",
+  "guven": "yuksek",
+  "gerekce": "657 md 10: amir maiyetinden borç para isteyemez ve hediye kabul edemez.",
+  "kusur": ""
+ },
+ {
+  "no": 230,
+  "cevap": "E",
+  "guven": "yuksek",
+  "gerekce": "657 md 12: zarar rayiç bedel üzerinden ödettirilir.",
+  "kusur": ""
+ },
+ {
+  "no": 231,
+  "cevap": "D",
+  "guven": "dusuk",
+  "gerekce": "3628 md 2 sayımında köy muhtarlarının yer almadığını düşünüyorum; yeminli mali müşavir de belirsiz.",
+  "kusur": "Mevzuat ayrıntısı; iki şık savunulabilir."
+ },
+ {
+  "no": 232,
+  "cevap": "B",
+  "guven": "yuksek",
+  "gerekce": "3628: eş ve velayet altındaki çocuklara ait mallar bildirime dahildir.",
+  "kusur": ""
+ },
+ {
+  "no": 233,
+  "cevap": "E",
+  "guven": "yuksek",
+  "gerekce": "657 md 8: davranış ve işbirliği ödevi.",
+  "kusur": ""
+ }
+]

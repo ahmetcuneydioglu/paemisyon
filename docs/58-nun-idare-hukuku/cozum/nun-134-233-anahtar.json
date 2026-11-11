@@ -1,0 +1,1652 @@
+[
+  {
+    "no": 134,
+    "cevap": "D",
+    "durum": "kesin",
+    "cevaplar": [
+      "D",
+      "D",
+      "D"
+    ],
+    "guven": [
+      "orta",
+      "orta",
+      "orta"
+    ],
+    "kusur": []
+  },
+  {
+    "no": 135,
+    "cevap": "C",
+    "durum": "kesin",
+    "cevaplar": [
+      "C",
+      "C",
+      "C"
+    ],
+    "guven": [
+      "yuksek",
+      "yuksek",
+      "yuksek"
+    ],
+    "kusur": []
+  },
+  {
+    "no": 136,
+    "cevap": "D",
+    "durum": "kesin",
+    "cevaplar": [
+      "D",
+      "D",
+      "D"
+    ],
+    "guven": [
+      "yuksek",
+      "yuksek",
+      "yuksek"
+    ],
+    "kusur": []
+  },
+  {
+    "no": 137,
+    "cevap": "B",
+    "durum": "kesin",
+    "cevaplar": [
+      "B",
+      "B",
+      "B"
+    ],
+    "guven": [
+      "yuksek",
+      "yuksek",
+      "yuksek"
+    ],
+    "kusur": []
+  },
+  {
+    "no": 138,
+    "cevap": "C",
+    "durum": "kesin",
+    "cevaplar": [
+      "C",
+      "C",
+      "C"
+    ],
+    "guven": [
+      "yuksek",
+      "yuksek",
+      "yuksek"
+    ],
+    "kusur": []
+  },
+  {
+    "no": 139,
+    "cevap": "A",
+    "durum": "kesin",
+    "cevaplar": [
+      "A",
+      "A",
+      "A"
+    ],
+    "guven": [
+      "yuksek",
+      "yuksek",
+      "yuksek"
+    ],
+    "kusur": []
+  },
+  {
+    "no": 140,
+    "cevap": "C",
+    "durum": "kesin",
+    "cevaplar": [
+      "C",
+      "C",
+      "C"
+    ],
+    "guven": [
+      "yuksek",
+      "yuksek",
+      "yuksek"
+    ],
+    "kusur": []
+  },
+  {
+    "no": 141,
+    "cevap": "A",
+    "durum": "kesin",
+    "cevaplar": [
+      "A",
+      "A",
+      "A"
+    ],
+    "guven": [
+      "yuksek",
+      "yuksek",
+      "yuksek"
+    ],
+    "kusur": []
+  },
+  {
+    "no": 142,
+    "cevap": "D",
+    "durum": "kesin",
+    "cevaplar": [
+      "D",
+      "D",
+      "D"
+    ],
+    "guven": [
+      "yuksek",
+      "yuksek",
+      "yuksek"
+    ],
+    "kusur": []
+  },
+  {
+    "no": 143,
+    "cevap": "E",
+    "durum": "belirsiz",
+    "cevaplar": [
+      "E",
+      "E",
+      "E"
+    ],
+    "guven": [
+      "dusuk",
+      "dusuk",
+      "dusuk"
+    ],
+    "kusur": [
+      "İki yanlış şık: A (Kurul 10 üyeli) ve E (üyeleri Cumhurbaşkanı atar).",
+      "İki yanlış şık: Kamu İhale Kurulu on üyeden oluşur (A 'dokuz' da yanlış).",
+      "İki yanlış şık: Kurul başkan dahil on üyedir (A de yanlış), üyeler TBMM'ce seçilmez (E)."
+    ]
+  },
+  {
+    "no": 144,
+    "cevap": "B",
+    "durum": "kesin",
+    "cevaplar": [
+      "B",
+      "B",
+      "B"
+    ],
+    "guven": [
+      "yuksek",
+      "yuksek",
+      "yuksek"
+    ],
+    "kusur": []
+  },
+  {
+    "no": 145,
+    "cevap": "E",
+    "durum": "kesin",
+    "cevaplar": [
+      "E",
+      "E",
+      "E"
+    ],
+    "guven": [
+      "yuksek",
+      "yuksek",
+      "yuksek"
+    ],
+    "kusur": []
+  },
+  {
+    "no": 146,
+    "cevap": "C",
+    "durum": "kesin",
+    "cevaplar": [
+      "C",
+      "C",
+      "C"
+    ],
+    "guven": [
+      "yuksek",
+      "yuksek",
+      "yuksek"
+    ],
+    "kusur": []
+  },
+  {
+    "no": 147,
+    "cevap": "E",
+    "durum": "kesin",
+    "cevaplar": [
+      "E",
+      "E",
+      "E"
+    ],
+    "guven": [
+      "yuksek",
+      "yuksek",
+      "yuksek"
+    ],
+    "kusur": []
+  },
+  {
+    "no": 148,
+    "cevap": "B",
+    "durum": "kesin",
+    "cevaplar": [
+      "B",
+      "B",
+      "B"
+    ],
+    "guven": [
+      "yuksek",
+      "yuksek",
+      "yuksek"
+    ],
+    "kusur": []
+  },
+  {
+    "no": 149,
+    "cevap": "E",
+    "durum": "kesin",
+    "cevaplar": [
+      "E",
+      "E",
+      "E"
+    ],
+    "guven": [
+      "yuksek",
+      "orta",
+      "yuksek"
+    ],
+    "kusur": [
+      "Bazı yazarlar yürütmenin de kurabileceğini kabul eder."
+    ]
+  },
+  {
+    "no": 150,
+    "cevap": "C",
+    "durum": "kesin",
+    "cevaplar": [
+      "C",
+      "C",
+      "C"
+    ],
+    "guven": [
+      "yuksek",
+      "yuksek",
+      "yuksek"
+    ],
+    "kusur": []
+  },
+  {
+    "no": 151,
+    "cevap": "B",
+    "durum": "kesin",
+    "cevaplar": [
+      "B",
+      "B",
+      "B"
+    ],
+    "guven": [
+      "yuksek",
+      "yuksek",
+      "yuksek"
+    ],
+    "kusur": []
+  },
+  {
+    "no": 152,
+    "cevap": "A",
+    "durum": "kesin",
+    "cevaplar": [
+      "A",
+      "A",
+      "A"
+    ],
+    "guven": [
+      "yuksek",
+      "yuksek",
+      "yuksek"
+    ],
+    "kusur": []
+  },
+  {
+    "no": 153,
+    "cevap": "D",
+    "durum": "kesin",
+    "cevaplar": [
+      "D",
+      "D",
+      "D"
+    ],
+    "guven": [
+      "yuksek",
+      "yuksek",
+      "yuksek"
+    ],
+    "kusur": []
+  },
+  {
+    "no": 154,
+    "cevap": "B",
+    "durum": "kesin",
+    "cevaplar": [
+      "B",
+      "B",
+      "B"
+    ],
+    "guven": [
+      "yuksek",
+      "yuksek",
+      "yuksek"
+    ],
+    "kusur": []
+  },
+  {
+    "no": 155,
+    "cevap": "A",
+    "durum": "kesin",
+    "cevaplar": [
+      "A",
+      "A",
+      "A"
+    ],
+    "guven": [
+      "yuksek",
+      "yuksek",
+      "yuksek"
+    ],
+    "kusur": []
+  },
+  {
+    "no": 156,
+    "cevap": "D",
+    "durum": "kesin",
+    "cevaplar": [
+      "D",
+      "D",
+      "D"
+    ],
+    "guven": [
+      "yuksek",
+      "yuksek",
+      "yuksek"
+    ],
+    "kusur": []
+  },
+  {
+    "no": 157,
+    "cevap": "E",
+    "durum": "kesin",
+    "cevaplar": [
+      "E",
+      "E",
+      "E"
+    ],
+    "guven": [
+      "yuksek",
+      "orta",
+      "yuksek"
+    ],
+    "kusur": []
+  },
+  {
+    "no": 158,
+    "cevap": "D",
+    "durum": "kesin",
+    "cevaplar": [
+      "D",
+      "D",
+      "D"
+    ],
+    "guven": [
+      "yuksek",
+      "yuksek",
+      "yuksek"
+    ],
+    "kusur": []
+  },
+  {
+    "no": 159,
+    "cevap": "B",
+    "durum": "kesin",
+    "cevaplar": [
+      "B",
+      "B",
+      "B"
+    ],
+    "guven": [
+      "yuksek",
+      "yuksek",
+      "yuksek"
+    ],
+    "kusur": []
+  },
+  {
+    "no": 160,
+    "cevap": "D",
+    "durum": "belirsiz",
+    "cevaplar": [
+      "D",
+      "D",
+      "D"
+    ],
+    "guven": [
+      "dusuk",
+      "orta",
+      "dusuk"
+    ],
+    "kusur": [
+      "A ile D arasında doktrin/mevzuat teyidi gerekli.",
+      "Kaynağa bağlı görüş; doktrinde ayrıntı az işlenir.",
+      "Bilgi tartışmalı; doktrinde net yerleşik görüş belirsiz."
+    ]
+  },
+  {
+    "no": 161,
+    "cevap": "A",
+    "durum": "kesin",
+    "cevaplar": [
+      "A",
+      "A",
+      "A"
+    ],
+    "guven": [
+      "yuksek",
+      "yuksek",
+      "yuksek"
+    ],
+    "kusur": []
+  },
+  {
+    "no": 162,
+    "cevap": "C",
+    "durum": "kesin",
+    "cevaplar": [
+      "C",
+      "C",
+      "C"
+    ],
+    "guven": [
+      "yuksek",
+      "yuksek",
+      "yuksek"
+    ],
+    "kusur": []
+  },
+  {
+    "no": 163,
+    "cevap": "D",
+    "durum": "kesin",
+    "cevaplar": [
+      "D",
+      "D",
+      "D"
+    ],
+    "guven": [
+      "orta",
+      "orta",
+      "orta"
+    ],
+    "kusur": [
+      "Kanun metninde 'ilgili bakanlık' ifadesi olabilir; metin güncelliği kontrol edilmeli.",
+      "Metin değişikliklerine bağlı; bakanlık yetkisi de söz konusu olabilir."
+    ]
+  },
+  {
+    "no": 164,
+    "cevap": "A",
+    "durum": "kesin",
+    "cevaplar": [
+      "A",
+      "A",
+      "A"
+    ],
+    "guven": [
+      "yuksek",
+      "yuksek",
+      "yuksek"
+    ],
+    "kusur": []
+  },
+  {
+    "no": 165,
+    "cevap": "C",
+    "durum": "belirsiz",
+    "cevaplar": [
+      "C",
+      "C",
+      "C"
+    ],
+    "guven": [
+      "dusuk",
+      "dusuk",
+      "orta"
+    ],
+    "kusur": [
+      "B (üniversite yönetim kurulu kararlarının YÖK Başkanı onayı) de md 6 metnine göre doğru olabilir; iki doğru şık şüphesi.",
+      "B (üniversite yönetim kurulu kararlarının YÖK Başkanı onayı) kanun metnine göre doğru olabilir; iki doğru şık şüphesi.",
+      "A ve B şıkları md 6 sayımına göre kontrol edilmeli."
+    ]
+  },
+  {
+    "no": 166,
+    "cevap": "E",
+    "durum": "kesin",
+    "cevaplar": [
+      "E",
+      "E",
+      "E"
+    ],
+    "guven": [
+      "yuksek",
+      "yuksek",
+      "yuksek"
+    ],
+    "kusur": []
+  },
+  {
+    "no": 167,
+    "cevap": "C",
+    "durum": "kesin",
+    "cevaplar": [
+      "C",
+      "C",
+      "C"
+    ],
+    "guven": [
+      "yuksek",
+      "yuksek",
+      "yuksek"
+    ],
+    "kusur": []
+  },
+  {
+    "no": 168,
+    "cevap": "E",
+    "durum": "kesin",
+    "cevaplar": [
+      "E",
+      "E",
+      "E"
+    ],
+    "guven": [
+      "yuksek",
+      "yuksek",
+      "orta"
+    ],
+    "kusur": []
+  },
+  {
+    "no": 169,
+    "cevap": "A",
+    "durum": "kesin",
+    "cevaplar": [
+      "A",
+      "A",
+      "A"
+    ],
+    "guven": [
+      "yuksek",
+      "yuksek",
+      "yuksek"
+    ],
+    "kusur": []
+  },
+  {
+    "no": 170,
+    "cevap": "D",
+    "durum": "kesin",
+    "cevaplar": [
+      "D",
+      "D",
+      "D"
+    ],
+    "guven": [
+      "yuksek",
+      "yuksek",
+      "yuksek"
+    ],
+    "kusur": []
+  },
+  {
+    "no": 171,
+    "cevap": "B",
+    "durum": "kesin",
+    "cevaplar": [
+      "B",
+      "B",
+      "B"
+    ],
+    "guven": [
+      "yuksek",
+      "orta",
+      "orta"
+    ],
+    "kusur": [
+      "IV'ün yanlışlığı kanunun son fıkrasına dayanır; teyit edilmeli."
+    ]
+  },
+  {
+    "no": 172,
+    "cevap": null,
+    "durum": "belirsiz",
+    "cevaplar": [
+      "E",
+      "A",
+      "E"
+    ],
+    "guven": [
+      "orta",
+      "dusuk",
+      "dusuk"
+    ],
+    "kusur": [
+      "E'deki %120 sınırı tanınmıyor; doğru şıktan emin değilim."
+    ]
+  },
+  {
+    "no": 173,
+    "cevap": "A",
+    "durum": "kesin",
+    "cevaplar": [
+      "A",
+      "A",
+      "A"
+    ],
+    "guven": [
+      "yuksek",
+      "orta",
+      "yuksek"
+    ],
+    "kusur": [
+      "'Birinci Daire' ayrıntısı kaynağa göre değişebilir."
+    ]
+  },
+  {
+    "no": 174,
+    "cevap": "C",
+    "durum": "kesin",
+    "cevaplar": [
+      "C",
+      "C",
+      "C"
+    ],
+    "guven": [
+      "yuksek",
+      "yuksek",
+      "yuksek"
+    ],
+    "kusur": []
+  },
+  {
+    "no": 175,
+    "cevap": "B",
+    "durum": "kesin",
+    "cevaplar": [
+      "B",
+      "B",
+      "B"
+    ],
+    "guven": [
+      "yuksek",
+      "yuksek",
+      "yuksek"
+    ],
+    "kusur": []
+  },
+  {
+    "no": 176,
+    "cevap": "C",
+    "durum": "kesin",
+    "cevaplar": [
+      "C",
+      "C",
+      "C"
+    ],
+    "guven": [
+      "yuksek",
+      "yuksek",
+      "yuksek"
+    ],
+    "kusur": []
+  },
+  {
+    "no": 177,
+    "cevap": "D",
+    "durum": "kesin",
+    "cevaplar": [
+      "D",
+      "D",
+      "D"
+    ],
+    "guven": [
+      "yuksek",
+      "yuksek",
+      "yuksek"
+    ],
+    "kusur": []
+  },
+  {
+    "no": 178,
+    "cevap": "B",
+    "durum": "kesin",
+    "cevaplar": [
+      "B",
+      "B",
+      "B"
+    ],
+    "guven": [
+      "yuksek",
+      "yuksek",
+      "yuksek"
+    ],
+    "kusur": []
+  },
+  {
+    "no": 179,
+    "cevap": "E",
+    "durum": "kesin",
+    "cevaplar": [
+      "E",
+      "E",
+      "E"
+    ],
+    "guven": [
+      "yuksek",
+      "orta",
+      "yuksek"
+    ],
+    "kusur": []
+  },
+  {
+    "no": 180,
+    "cevap": "B",
+    "durum": "kesin",
+    "cevaplar": [
+      "B",
+      "B",
+      "B"
+    ],
+    "guven": [
+      "yuksek",
+      "yuksek",
+      "yuksek"
+    ],
+    "kusur": []
+  },
+  {
+    "no": 181,
+    "cevap": "D",
+    "durum": "kesin",
+    "cevaplar": [
+      "D",
+      "D",
+      "D"
+    ],
+    "guven": [
+      "yuksek",
+      "yuksek",
+      "yuksek"
+    ],
+    "kusur": []
+  },
+  {
+    "no": 182,
+    "cevap": "A",
+    "durum": "kesin",
+    "cevaplar": [
+      "A",
+      "A",
+      "A"
+    ],
+    "guven": [
+      "yuksek",
+      "yuksek",
+      "yuksek"
+    ],
+    "kusur": []
+  },
+  {
+    "no": 183,
+    "cevap": "E",
+    "durum": "kesin",
+    "cevaplar": [
+      "E",
+      "E",
+      "E"
+    ],
+    "guven": [
+      "yuksek",
+      "yuksek",
+      "yuksek"
+    ],
+    "kusur": []
+  },
+  {
+    "no": 184,
+    "cevap": null,
+    "durum": "belirsiz",
+    "cevaplar": [
+      "B",
+      "E",
+      "E"
+    ],
+    "guven": [
+      "dusuk",
+      "dusuk",
+      "dusuk"
+    ],
+    "kusur": [
+      "İki doğru şık: kent estetiği (E) de doktrinde sonradan eklenen yeni unsurlar arasında sayılır.",
+      "Genel ahlak da çoğu kaynakta sonradan eklenen unsur sayılır; iki doğru şık şüphesi.",
+      "İki savunulabilir şık: genel ahlak (B) da klasik üçlüye (güvenlik, dirlik-esenlik, sağlık) sonradan eklenmiştir."
+    ]
+  },
+  {
+    "no": 185,
+    "cevap": "A",
+    "durum": "kesin",
+    "cevaplar": [
+      "A",
+      "A",
+      "A"
+    ],
+    "guven": [
+      "yuksek",
+      "yuksek",
+      "yuksek"
+    ],
+    "kusur": []
+  },
+  {
+    "no": 186,
+    "cevap": "C",
+    "durum": "kesin",
+    "cevaplar": [
+      "C",
+      "C",
+      "C"
+    ],
+    "guven": [
+      "yuksek",
+      "yuksek",
+      "yuksek"
+    ],
+    "kusur": []
+  },
+  {
+    "no": 187,
+    "cevap": "D",
+    "durum": "kesin",
+    "cevaplar": [
+      "D",
+      "D",
+      "D"
+    ],
+    "guven": [
+      "yuksek",
+      "yuksek",
+      "yuksek"
+    ],
+    "kusur": []
+  },
+  {
+    "no": 188,
+    "cevap": "B",
+    "durum": "kesin",
+    "cevaplar": [
+      "B",
+      "B",
+      "B"
+    ],
+    "guven": [
+      "yuksek",
+      "yuksek",
+      "yuksek"
+    ],
+    "kusur": []
+  },
+  {
+    "no": 189,
+    "cevap": "E",
+    "durum": "kesin",
+    "cevaplar": [
+      "E",
+      "E",
+      "E"
+    ],
+    "guven": [
+      "yuksek",
+      "yuksek",
+      "yuksek"
+    ],
+    "kusur": []
+  },
+  {
+    "no": 190,
+    "cevap": "C",
+    "durum": "kesin",
+    "cevaplar": [
+      "C",
+      "C",
+      "C"
+    ],
+    "guven": [
+      "yuksek",
+      "yuksek",
+      "yuksek"
+    ],
+    "kusur": []
+  },
+  {
+    "no": 191,
+    "cevap": "D",
+    "durum": "kesin",
+    "cevaplar": [
+      "D",
+      "D",
+      "D"
+    ],
+    "guven": [
+      "yuksek",
+      "yuksek",
+      "yuksek"
+    ],
+    "kusur": []
+  },
+  {
+    "no": 192,
+    "cevap": "D",
+    "durum": "belirsiz",
+    "cevaplar": [
+      "D",
+      "D",
+      "D"
+    ],
+    "guven": [
+      "orta",
+      "dusuk",
+      "orta"
+    ],
+    "kusur": [
+      "Gönüllü güvenlik korucusunda yetkili merci (vali/kaymakam) güncel metne göre farklı olabilir."
+    ]
+  },
+  {
+    "no": 193,
+    "cevap": "B",
+    "durum": "kesin",
+    "cevaplar": [
+      "B",
+      "B",
+      "B"
+    ],
+    "guven": [
+      "yuksek",
+      "yuksek",
+      "yuksek"
+    ],
+    "kusur": []
+  },
+  {
+    "no": 194,
+    "cevap": "E",
+    "durum": "kesin",
+    "cevaplar": [
+      "E",
+      "E",
+      "E"
+    ],
+    "guven": [
+      "yuksek",
+      "yuksek",
+      "yuksek"
+    ],
+    "kusur": [
+      "B şıkkı metni bozuk ('bu tür suçları' öncülsüz).",
+      "B şıkkının metni bozuk görünüyor.",
+      "B şıkkı metni bozuk (\"bu tür suçları\" öncülsüz)."
+    ]
+  },
+  {
+    "no": 195,
+    "cevap": "A",
+    "durum": "kesin",
+    "cevaplar": [
+      "A",
+      "A",
+      "A"
+    ],
+    "guven": [
+      "yuksek",
+      "yuksek",
+      "yuksek"
+    ],
+    "kusur": []
+  },
+  {
+    "no": 196,
+    "cevap": "C",
+    "durum": "kesin",
+    "cevaplar": [
+      "C",
+      "C",
+      "C"
+    ],
+    "guven": [
+      "yuksek",
+      "yuksek",
+      "yuksek"
+    ],
+    "kusur": []
+  },
+  {
+    "no": 197,
+    "cevap": "A",
+    "durum": "kesin",
+    "cevaplar": [
+      "A",
+      "A",
+      "A"
+    ],
+    "guven": [
+      "orta",
+      "yuksek",
+      "yuksek"
+    ],
+    "kusur": []
+  },
+  {
+    "no": 198,
+    "cevap": "D",
+    "durum": "kesin",
+    "cevaplar": [
+      "D",
+      "D",
+      "D"
+    ],
+    "guven": [
+      "yuksek",
+      "yuksek",
+      "yuksek"
+    ],
+    "kusur": []
+  },
+  {
+    "no": 199,
+    "cevap": "D",
+    "durum": "kesin",
+    "cevaplar": [
+      "D",
+      "D",
+      "D"
+    ],
+    "guven": [
+      "orta",
+      "orta",
+      "orta"
+    ],
+    "kusur": [
+      "Bazı kaynaklar önlem alınmamasını 'hiç işlememe' olarak da örnekler.",
+      "Bazı kaynaklar işaret konmamasını 'hiç işlememe' sayar.",
+      "Hiç işlememe olarak da yorumlanabilir."
+    ]
+  },
+  {
+    "no": 200,
+    "cevap": "D",
+    "durum": "kesin",
+    "cevaplar": [
+      "D",
+      "D",
+      "D"
+    ],
+    "guven": [
+      "orta",
+      "orta",
+      "orta"
+    ],
+    "kusur": []
+  },
+  {
+    "no": 201,
+    "cevap": "B",
+    "durum": "kesin",
+    "cevaplar": [
+      "B",
+      "B",
+      "B"
+    ],
+    "guven": [
+      "yuksek",
+      "yuksek",
+      "yuksek"
+    ],
+    "kusur": []
+  },
+  {
+    "no": 202,
+    "cevap": "A",
+    "durum": "kesin",
+    "cevaplar": [
+      "A",
+      "A",
+      "A"
+    ],
+    "guven": [
+      "orta",
+      "orta",
+      "orta"
+    ],
+    "kusur": []
+  },
+  {
+    "no": 203,
+    "cevap": "C",
+    "durum": "kesin",
+    "cevaplar": [
+      "C",
+      "C",
+      "C"
+    ],
+    "guven": [
+      "yuksek",
+      "orta",
+      "orta"
+    ],
+    "kusur": []
+  },
+  {
+    "no": 204,
+    "cevap": "E",
+    "durum": "kesin",
+    "cevaplar": [
+      "E",
+      "E",
+      "E"
+    ],
+    "guven": [
+      "yuksek",
+      "yuksek",
+      "yuksek"
+    ],
+    "kusur": []
+  },
+  {
+    "no": 205,
+    "cevap": "B",
+    "durum": "kesin",
+    "cevaplar": [
+      "B",
+      "B",
+      "B"
+    ],
+    "guven": [
+      "yuksek",
+      "yuksek",
+      "yuksek"
+    ],
+    "kusur": []
+  },
+  {
+    "no": 206,
+    "cevap": "C",
+    "durum": "kesin",
+    "cevaplar": [
+      "C",
+      "C",
+      "C"
+    ],
+    "guven": [
+      "yuksek",
+      "yuksek",
+      "yuksek"
+    ],
+    "kusur": []
+  },
+  {
+    "no": 207,
+    "cevap": "B",
+    "durum": "kesin",
+    "cevaplar": [
+      "B",
+      "B",
+      "B"
+    ],
+    "guven": [
+      "yuksek",
+      "yuksek",
+      "yuksek"
+    ],
+    "kusur": []
+  },
+  {
+    "no": 208,
+    "cevap": "D",
+    "durum": "kesin",
+    "cevaplar": [
+      "D",
+      "D",
+      "D"
+    ],
+    "guven": [
+      "yuksek",
+      "yuksek",
+      "yuksek"
+    ],
+    "kusur": []
+  },
+  {
+    "no": 209,
+    "cevap": "E",
+    "durum": "kesin",
+    "cevaplar": [
+      "E",
+      "E",
+      "E"
+    ],
+    "guven": [
+      "yuksek",
+      "yuksek",
+      "yuksek"
+    ],
+    "kusur": []
+  },
+  {
+    "no": 210,
+    "cevap": "B",
+    "durum": "kesin",
+    "cevaplar": [
+      "B",
+      "B",
+      "B"
+    ],
+    "guven": [
+      "yuksek",
+      "yuksek",
+      "yuksek"
+    ],
+    "kusur": []
+  },
+  {
+    "no": 211,
+    "cevap": "A",
+    "durum": "kesin",
+    "cevaplar": [
+      "A",
+      "A",
+      "A"
+    ],
+    "guven": [
+      "yuksek",
+      "orta",
+      "yuksek"
+    ],
+    "kusur": []
+  },
+  {
+    "no": 212,
+    "cevap": "D",
+    "durum": "kesin",
+    "cevaplar": [
+      "D",
+      "D",
+      "D"
+    ],
+    "guven": [
+      "yuksek",
+      "yuksek",
+      "yuksek"
+    ],
+    "kusur": []
+  },
+  {
+    "no": 213,
+    "cevap": "C",
+    "durum": "kesin",
+    "cevaplar": [
+      "C",
+      "C",
+      "C"
+    ],
+    "guven": [
+      "yuksek",
+      "yuksek",
+      "yuksek"
+    ],
+    "kusur": []
+  },
+  {
+    "no": 214,
+    "cevap": "A",
+    "durum": "kesin",
+    "cevaplar": [
+      "A",
+      "A",
+      "A"
+    ],
+    "guven": [
+      "yuksek",
+      "yuksek",
+      "yuksek"
+    ],
+    "kusur": []
+  },
+  {
+    "no": 215,
+    "cevap": "D",
+    "durum": "kesin",
+    "cevaplar": [
+      "D",
+      "D",
+      "D"
+    ],
+    "guven": [
+      "orta",
+      "orta",
+      "orta"
+    ],
+    "kusur": []
+  },
+  {
+    "no": 216,
+    "cevap": "C",
+    "durum": "kesin",
+    "cevaplar": [
+      "C",
+      "C",
+      "C"
+    ],
+    "guven": [
+      "yuksek",
+      "yuksek",
+      "yuksek"
+    ],
+    "kusur": []
+  },
+  {
+    "no": 217,
+    "cevap": "B",
+    "durum": "kesin",
+    "cevaplar": [
+      "B",
+      "B",
+      "B"
+    ],
+    "guven": [
+      "yuksek",
+      "yuksek",
+      "yuksek"
+    ],
+    "kusur": []
+  },
+  {
+    "no": 218,
+    "cevap": "C",
+    "durum": "kesin",
+    "cevaplar": [
+      "C",
+      "C",
+      "C"
+    ],
+    "guven": [
+      "yuksek",
+      "yuksek",
+      "yuksek"
+    ],
+    "kusur": []
+  },
+  {
+    "no": 219,
+    "cevap": "D",
+    "durum": "kesin",
+    "cevaplar": [
+      "D",
+      "D",
+      "D"
+    ],
+    "guven": [
+      "orta",
+      "orta",
+      "orta"
+    ],
+    "kusur": []
+  },
+  {
+    "no": 220,
+    "cevap": "C",
+    "durum": "belirsiz",
+    "cevaplar": [
+      "C",
+      "C",
+      "C"
+    ],
+    "guven": [
+      "dusuk",
+      "orta",
+      "orta"
+    ],
+    "kusur": [
+      "657 md 56 metnine göre teyit gerekli (uyarma/kınama dışı ceza şartı olabilir).",
+      "Ceza türü/sayısı ölçütü kanun metniyle teyit edilmeli."
+    ]
+  },
+  {
+    "no": 221,
+    "cevap": "A",
+    "durum": "belirsiz",
+    "cevaplar": [
+      "A",
+      "A",
+      "A"
+    ],
+    "guven": [
+      "dusuk",
+      "dusuk",
+      "dusuk"
+    ],
+    "kusur": [
+      "Bekleme süresi (1 yıl / 3 yıl) teyit gerekli.",
+      "Bekleme süresinden emin değilim."
+    ]
+  },
+  {
+    "no": 222,
+    "cevap": "B",
+    "durum": "belirsiz",
+    "cevaplar": [
+      "B",
+      "B",
+      "B"
+    ],
+    "guven": [
+      "dusuk",
+      "orta",
+      "orta"
+    ],
+    "kusur": []
+  },
+  {
+    "no": 223,
+    "cevap": "E",
+    "durum": "kesin",
+    "cevaplar": [
+      "E",
+      "E",
+      "E"
+    ],
+    "guven": [
+      "orta",
+      "orta",
+      "orta"
+    ],
+    "kusur": [
+      "'Yola çıkma' ifadesi kanun metniyle teyit edilmeli."
+    ]
+  },
+  {
+    "no": 224,
+    "cevap": "D",
+    "durum": "kesin",
+    "cevaplar": [
+      "D",
+      "D",
+      "D"
+    ],
+    "guven": [
+      "yuksek",
+      "yuksek",
+      "yuksek"
+    ],
+    "kusur": []
+  },
+  {
+    "no": 225,
+    "cevap": null,
+    "durum": "belirsiz",
+    "cevaplar": [
+      "D",
+      "D",
+      "A"
+    ],
+    "guven": [
+      "orta",
+      "orta",
+      "dusuk"
+    ],
+    "kusur": [
+      "Mevzuat ayrıntısı; kesin hatırlanamadı."
+    ]
+  },
+  {
+    "no": 226,
+    "cevap": "E",
+    "durum": "kesin",
+    "cevaplar": [
+      "E",
+      "E",
+      "E"
+    ],
+    "guven": [
+      "yuksek",
+      "yuksek",
+      "yuksek"
+    ],
+    "kusur": []
+  },
+  {
+    "no": 227,
+    "cevap": "B",
+    "durum": "kesin",
+    "cevaplar": [
+      "B",
+      "B",
+      "B"
+    ],
+    "guven": [
+      "orta",
+      "yuksek",
+      "yuksek"
+    ],
+    "kusur": []
+  },
+  {
+    "no": 228,
+    "cevap": "C",
+    "durum": "kesin",
+    "cevaplar": [
+      "C",
+      "C",
+      "C"
+    ],
+    "guven": [
+      "yuksek",
+      "yuksek",
+      "yuksek"
+    ],
+    "kusur": []
+  },
+  {
+    "no": 229,
+    "cevap": "A",
+    "durum": "kesin",
+    "cevaplar": [
+      "A",
+      "A",
+      "A"
+    ],
+    "guven": [
+      "yuksek",
+      "yuksek",
+      "yuksek"
+    ],
+    "kusur": []
+  },
+  {
+    "no": 230,
+    "cevap": "E",
+    "durum": "kesin",
+    "cevaplar": [
+      "E",
+      "E",
+      "E"
+    ],
+    "guven": [
+      "yuksek",
+      "yuksek",
+      "yuksek"
+    ],
+    "kusur": []
+  },
+  {
+    "no": 231,
+    "cevap": "D",
+    "durum": "belirsiz",
+    "cevaplar": [
+      "D",
+      "D",
+      "D"
+    ],
+    "guven": [
+      "dusuk",
+      "orta",
+      "dusuk"
+    ],
+    "kusur": [
+      "Yeminli mali müşavirlerin de listede olmaması ihtimali: iki doğru şık şüphesi.",
+      "Mevzuat ayrıntısı; iki şık savunulabilir."
+    ]
+  },
+  {
+    "no": 232,
+    "cevap": "B",
+    "durum": "kesin",
+    "cevaplar": [
+      "B",
+      "B",
+      "B"
+    ],
+    "guven": [
+      "yuksek",
+      "yuksek",
+      "yuksek"
+    ],
+    "kusur": []
+  },
+  {
+    "no": 233,
+    "cevap": "E",
+    "durum": "kesin",
+    "cevaplar": [
+      "E",
+      "E",
+      "E"
+    ],
+    "guven": [
+      "yuksek",
+      "yuksek",
+      "yuksek"
+    ],
+    "kusur": []
+  }
+]
