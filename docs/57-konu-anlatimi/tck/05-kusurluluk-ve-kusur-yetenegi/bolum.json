@@ -1,0 +1,17 @@
+{
+  "slug": "tck-kusurluluk-ve-kusur-yetenegi",
+  "title": "Kusurluluk ve Kusur Yeteneği",
+  "subtitle": "Kusurluluk kavramı, kusur yeteneği; yaş küçüklüğü, sağır ve dilsizlik, akıl hastalığı, geçici nedenler, alkol ve uyuşturucu madde",
+  "courseName": "Ceza Hukuku",
+  "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+  "sortOrder": 5,
+  "isPremium": true,
+  "aiDraft": true,
+  "book": { "label": "THEMIS Ceza Hukuku Genel Hükümler, 21. baskı, 2025", "page": "s.99–104" },
+  "lessons": [
+    { "file": "01-kusurluluk-kavrami-ve-kusur-yetenegi.md", "slug": "tck-kusurluluk-kavrami-ve-kusur-yetenegi", "page": "s.99–100" },
+    { "file": "02-yas-kucuklugu.md", "slug": "tck-yas-kucuklugu", "page": "s.100–101" },
+    { "file": "03-sagir-ve-dilsizlik-ile-akil-hastaligi.md", "slug": "tck-sagir-ve-dilsizlik-ile-akil-hastaligi", "page": "s.101–103" },
+    { "file": "04-gecici-nedenler-alkol-ve-uyusturucu-madde.md", "slug": "tck-gecici-nedenler-alkol-ve-uyusturucu-madde", "page": "s.100, s.103–104" }
+  ]
+}
