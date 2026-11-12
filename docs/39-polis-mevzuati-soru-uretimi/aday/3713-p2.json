@@ -1,0 +1,138 @@
+[
+  {
+    "id": "3713-p2-01",
+    "articleNo": "14",
+    "kok": "3713 sayılı Kanun'a göre, bu Kanun kapsamına giren suçları ve suçluları ihbar eden kişinin hüviyeti, rızası olmasa bile aşağıdaki hâllerin hangisinde açıklanabilir?",
+    "siklar": {
+      "A": "Cumhuriyet savcısının yazılı emir vermesi",
+      "B": "İhbar edilen suç nedeniyle kamu davası açılması",
+      "C": "Mahkemenin, sanığın savunma hakkı bakımından zorunlu görmesi",
+      "D": "İhbarın mahiyetinin kendisi hakkında suç teşkil etmesi",
+      "E": "Kendisinin tanık olarak dinlenmesinin zorunlu olması"
+    },
+    "dogru": "D",
+    "aciklama": "3713 sayılı Kanun'un 14 üncü maddesine göre bu Kanun kapsamına giren suçları ve suçluları ihbar edenlerin hüviyeti, RIZALARI OLMADIKÇA VEYA İHBARIN MAHİYETİ HAKLARINDA SUÇ TEŞKİL ETMEDİKÇE açıklanamaz. Kök rızayı dışarıda bıraktığı için geriye kalan tek hâl ikincisidir. Örneğin kişi bilerek gerçeğe aykırı bir ihbarla başkasını suçlamışsa ortada korunacak bir muhbir değil, ihbarı nedeniyle hakkında işlem yapılacak bir kişi vardır ve kimliğini gizleme güvencesi işlemez. Savcının yazılı emri, kamu davasının açılması, sanığın savunma hakkı ya da muhbirin tanık olarak dinlenmesi maddede istisna olarak sayılmamıştır; yargılamanın hangi evreye geldiği de korumayı kaldırmaz. Benzer bir güvence 2559 sayılı PVSK'nın Ek 9 uncu maddesinde de vardır: orada para ödülü verilen kişilerin kimlikleri rızaları olmadıkça hiçbir şekilde açıklanamaz ve ikinci bir istisna öngörülmemiştir. Maddenin yaptırımı aynı Kanunun 6 ncı maddesindedir; 14 üncü maddeye aykırı olarak muhbirlerin hüviyetini açıklamak veya yayınlamak ayrı bir suçtur.",
+    "dayanak": "3713 sayılı Kanun md 14",
+    "zorluk": "medium",
+    "tur": "dogrudan"
+  },
+  {
+    "id": "3713-p2-02",
+    "articleNo": "15",
+    "kok": "Terörle mücadele görevi sırasında silahlı saldırıya uğrayan bir polis memuru, failler hakkında açılan kamu davasında katılan sıfatını almıştır. 3713 sayılı Kanun'a göre bu davada polis memurunun avukatlık ücretiyle ilgili aşağıdakilerden hangisi doğrudur?",
+    "siklar": {
+      "A": "Belirleyeceği en fazla üç avukatın ücreti ödenir.",
+      "B": "Seçeceği bir avukatın ücreti, ilgili Bakanın onayıyla ödenir.",
+      "C": "Seçeceği bir avukatın ücreti, Adalet Bakanlığı bütçesinden ödenir.",
+      "D": "Seçeceği bir avukatın ücreti, avukatlık ücret tarifesine göre ödenir.",
+      "E": "Seçeceği bir avukatın ücreti, ilgili kuruluşun bütçesinden ödenir."
+    },
+    "dogru": "E",
+    "aciklama": "3713 sayılı Kanun'un 15 inci maddesi; terörle mücadelede görev alan Türk Silahlı Kuvvetleri personeli, mülki idare amirleri, istihbarat ve kolluk görevlileri ile bu amaçla görevlendirilmiş diğer personelin avukatlık ücretini personelin davadaki KONUMUNA göre düzenler. Görevin ifasından doğduğu iddia edilen suçlar nedeniyle personel hakkında soruşturma ve kovuşturma yapılıyorsa belirleyeceği EN FAZLA ÜÇ avukatın ücreti ödenir. Personel bu görevlerin ifasından dolayı MAĞDUR, ŞİKÂYETÇİ, KATILAN, DAVALI ya da DAVACI konumundaysa seçeceği BİR avukatın ücreti ödenir. Olaydaki polis memuru kendisine saldıranlar hakkındaki davada katılandır; üç avukat kuralı personelin şüpheli veya sanık olduğu hâl içindir. Ödeme avukatlık ücret tarifesine BAĞLI OLMAKSIZIN yapılır ve ilgili kuruluşların bütçelerine konulacak ödenekten karşılanır; Kanun ödemeyi Adalet Bakanlığına değil, personelin bağlı olduğu kuruluşa bırakmıştır. 2016'da eklenen cümleyle İLGİLİ BAKANIN ONAYI yalnız DAVACI konumundaki personelin seçeceği avukata ücret ödenmesi için aranır; katılan, mağdur veya şikâyetçi personel için böyle bir şart yoktur. Bu şartı bütün 'bir avukat' hâllerine yaymak sorunun kurduğu asıl tuzaktır. Polis için 2559 sayılı PVSK'nın Ek 9 uncu maddesinde de bir avukat ücreti hükmü vardır; ancak o hüküm silah kullanması nedeniyle hakkında dava açılan, yani sanık konumundaki polisle ilgilidir.",
+    "dayanak": "3713 sayılı Kanun md 15/1",
+    "zorluk": "hard",
+    "tur": "vaka"
+  },
+  {
+    "id": "3713-p2-03",
+    "articleNo": "20",
+    "kok": "3713 sayılı Kanun'un 20 nci maddesinde sayılan kamu görevlileri, görevlerinden - - - - terör suçluları tarafından kendilerine veya - - - - canına vuku bulan bir taarruzu savmak için silah kullanmaya yetkilidirler. Bu hükümde boş bırakılan yerlere sırasıyla aşağıdakilerden hangisi getirilmelidir?",
+    "siklar": {
+      "A": "ayrılmış olsalar dahi - birinci derece kan hısımlarının",
+      "B": "ayrılmış olsalar dahi - eş ve çocuklarının",
+      "C": "ayrıldıktan sonra beş yıl süreyle - eş ve çocuklarının",
+      "D": "ayrıldıktan sonra beş yıl süreyle - birinci derece kan hısımlarının",
+      "E": "ayrıldıktan sonra on yıl süreyle - bakmakla yükümlü oldukları kişilerin"
+    },
+    "dogru": "B",
+    "aciklama": "Hüküm 3713 sayılı Kanun'un 20 nci maddesinin son fıkrasıdır: maddede sayılanlardan kamu görevlileri, GÖREVLERİNDEN AYRILMIŞ OLSALAR DAHİ terör suçluları tarafından kendilerine veya EŞ VE ÇOCUKLARININ canına vuku bulan bir taarruzu savmak için silah kullanmaya yetkilidir. Maddenin birinci fıkrası da 'bu görevlerinden ayrılmış olanları' koruma tedbiri alınacaklar arasında sayar; son fıkra görevden ayrılmış kamu görevlilerine ayrıca silah kullanma yetkisi tanır. Fıkra bu yetkiyi görevden ayrılıştan sonraki belirli bir süreye bağlamamıştır; 'beş yıl' ya da 'on yıl' gibi bir sınır metinde yoktur ve süre öngören seçenekler, yetkiyi sınırlı sanan adayı yakalar. Korunan yakınlar da sınırlı olarak sayılmıştır: eş ve çocuklar. 'Birinci derece kan hısımları' ya da 'bakmakla yükümlü oldukları kişiler' gibi farklı çevreler fıkrada yer almaz. Fıkranın sınırları da gözden kaçmamalıdır: taarruz TERÖR SUÇLULARI tarafından yapılmalıdır. Metin, görevlinin kendisi için 'kendilerine … vuku bulan' taarruzdan, eş ve çocuklar için ise 'CANINA vuku bulan' taarruzdan söz eder.",
+    "dayanak": "3713 sayılı Kanun md 20 (son fıkra)",
+    "zorluk": "medium",
+    "tur": "ayrinti"
+  },
+  {
+    "id": "3713-p2-04",
+    "articleNo": "20/A",
+    "kok": "3713 sayılı Kanun'a göre, zararların tazmini amacıyla şüpheliye ait taşınmaza konulan şerhin kendiliğinden terkin edilmemesi için şerhin konulduğu tarihten itibaren kaç yıl içinde hangi mercice verilmiş ihtiyati haciz veya ihtiyati tedbir kararı ibraz edilmelidir?",
+    "siklar": {
+      "A": "bir - sulh ceza hâkimi",
+      "B": "bir - hukuk mahkemesi",
+      "C": "iki - sulh ceza hâkimi",
+      "D": "iki - hukuk mahkemesi",
+      "E": "üç - ağır ceza mahkemesi"
+    },
+    "dogru": "D",
+    "aciklama": "3713 sayılı Kanun'un 20/A maddesi, bu Kanun kapsamına giren suçlar ile TCK'nın İkinci Kitap Dördüncü Kısım Dördüncü, Beşinci, Altıncı ve Yedinci Bölümündeki suçlar nedeniyle gerçek veya tüzel kişiler ile kamu kurum ve kuruluşlarının uğradığı zararların tazmini amacıyla, şüpheli veya sanıklara ait taşınmazlar ile kara, deniz ya da hava ulaşım araçlarına şerh düşülmesini öngörür. Şerhe soruşturma aşamasında Cumhuriyet savcısının talebi üzerine SULH CEZA HÂKİMİ, kovuşturma aşamasında MAHKEME karar verir. Ancak şerh süresiz değildir; madde şöyle der: 'Kovuşturmaya yer olmadığına dair kararın kesinleşmesi halinde veya şerhin konulduğu tarihten itibaren iki yıl içinde, şerhin devamı yönünde hukuk mahkemesinden verilmiş ihtiyati haciz veya ihtiyati tedbir kararı ibraz edilmediği takdirde şerh kendiliğinden terkin edilir.' Yani ceza soruşturması içinde konulan şerh, ancak İKİ YIL içinde HUKUK MAHKEMESİNDEN alınacak bir ihtiyati haciz veya ihtiyati tedbir kararıyla sürdürülebilir. Sorunun tuzağı iki merciyi karıştırmaktır: sulh ceza hâkimi şerhi soruşturma aşamasında KOYAN mercidir, şerhin DEVAMINI sağlayacak karar ise hukuk mahkemesinden alınır. Ağır ceza mahkemesi seçeneği, kovuşturma aşamasında şerh kararını mahkemenin vermesinden yola çıkıp devam kararını da ceza mahkemesine bağlayan adayı yakalar.",
+    "dayanak": "3713 sayılı Kanun md 20/A",
+    "zorluk": "medium",
+    "tur": "ayrinti"
+  },
+  {
+    "id": "3713-p2-05",
+    "articleNo": "21",
+    "kok": "I. Yurt dışındaki görevi sırasında terör eylemine muhatap olarak yaralanan kamu görevlisi\nII. Terör örgütüne yönelik operasyona giderken trafik kazasında hayatını kaybeden polis memuru\nIII. Emekli olduktan sonra, terörle mücadele görevini yapmış olması nedeniyle terör örgütü mensuplarınca yaralanan eski polis memuru\n3713 sayılı Kanun'a göre, verilenlerden hangileri “yardım” başlıklı 21 inci maddedeki haklardan yararlandırılır?",
+    "siklar": {
+      "A": "Yalnız I",
+      "B": "I ve II",
+      "C": "I ve III",
+      "D": "II ve III",
+      "E": "I, II ve III"
+    },
+    "dogru": "E",
+    "aciklama": "3713 sayılı Kanun'un 21 inci maddesinin birinci fıkrasına göre kamu görevlilerinden YURT İÇİNDE VE YURT DIŞINDA görevlerini ifa ederlerken VEYA SIFATLARI KALKMIŞ OLSA BİLE bu görevlerini yapmalarından dolayı terör eylemlerine muhatap olarak yaralanan, engelli hâle gelen, ölen veya öldürülenler hakkında 2330 sayılı Nakdi Tazminat ve Aylık Bağlanması Hakkında Kanun hükümleri uygulanır. Görevin yurt dışında yapılması kapsamı daraltmaz (I). Emekli olduktan sonra eski görevi nedeniyle terör örgütü mensuplarınca yaralanan polis memuru da 'sıfatları kalkmış olsa bile bu görevlerini yapmalarından dolayı' ibaresiyle kapsamdadır (III). 2012'de eklenen ikinci fıkra ise kapsamı eyleme doğrudan muhatap olmanın ötesine taşır: kamu görevlileri ile (h) ve (j) bentleri kapsamındakilerden, her ne şekilde olursa olsun terör olaylarının ÖNLENMESİ, TAKİBİ VEYA ETKİSİZ HÂLE GETİRİLMESİ amacıyla ifa edilen görevler sırasında veya BU GÖREVLERE GİDİŞ DÖNÜŞLER esnasında meydana gelen KAZALAR sonucunda yaralanan, engelli hâle gelen, hastalanan veya hayatını kaybedenler de birinci fıkranın durumlarına uygun hükümlerinden yararlandırılır (II). 'I ve III' kaza fıkrasını bilmeyen, 'I ve II' görev sıfatı sona erince korumanın da bittiğini sanan, 'II ve III' yurt dışındaki görevi kapsam dışı sayan, 'Yalnız I' ise maddeyi görev sırasında terör eylemine muhatap olmakla sınırlayan adayın cevabıdır.",
+    "dayanak": "3713 sayılı Kanun md 21/1 ve md 21/2",
+    "zorluk": "hard",
+    "tur": "onerme"
+  },
+  {
+    "id": "3713-p2-06",
+    "articleNo": "22",
+    "kok": "3713 sayılı Kanun'a göre, terör eylemlerinden zarar görenlere yapılacak yardımlarla ilgili aşağıdakilerden hangisi YANLIŞTIR?",
+    "siklar": {
+      "A": "Zarar gören, can ve mal kaybına uğrayan vatandaşlara Sosyal Yardımlaşma ve Dayanışmayı Teşvik Fonundan öncelikle yardım yapılır.",
+      "B": "Sosyal Yardımlaşma ve Dayanışmayı Teşvik Fonundan yükseköğrenim çağındaki şehit çocuklarının öğrenim masrafları karşılanır.",
+      "C": "Terör eylemlerinden dolayı yaralananların tedavileri Devlet tarafından yapılır.",
+      "D": "Terör eylemi nedeniyle malul olan kamu görevlilerinin eksilen vücut organları sunileriyle tamamlatılır.",
+      "E": "Malul kamu görevlileri ile ölenlerin dul ve yetimleri, tanıtım kartlarıyla kamuya ait bütün hastanelerde muayene ve tedavi edilir."
+    },
+    "dogru": "B",
+    "aciklama": "Şıklar Kanun'daki iki yardım hükmünden alınmıştır: A, B ve C 'Terörden zarar gören diğer kişilere yardım' başlıklı 22 nci maddeden, D ve E ise kamu görevlilerine ilişkin 21 inci maddenin (e) bendinden. 22 nci maddeye göre terör eylemlerinden dolayı yaralananların tedavileri Devlet tarafından yapılır; zarar gören, can ve mal kaybına uğrayan vatandaşlara Sosyal Yardımlaşma ve Dayanışmayı Teşvik Fonundan ÖNCELİKLE yardım yapılır ve bu Fondan İLK VE ORTA ÖĞRENİM çağındaki şehit çocuklarının öğrenim masrafları karşılanır. Kanun yükseköğrenimi saymaz; B'deki yanlış, öğrenim kademesinin genişletilmesidir. Yardımın kapsam ve ölçüsü de Fonun mahalli yetkililerince belirlenecek miktarı aşmamak kaydıyla Fon Kurulunca tespit edilir. 21 inci maddenin (e) bendine göre malul olanlar ile ölenlerin dul ve yetimleri, kendilerine verilen tanıtım kartlarını ibraz ederek kamu kurum ve kuruluşlarına ait bütün hastanelerde muayene ve tedavi edilir; malullerin eksilen vücut organları yurt içi veya yurt dışında en son teknik usullere göre yapılması mümkün sunileriyle tamamlatılır, gerekirse tamir ettirilir veya yenisi yaptırılır. Aynı maddenin son fıkrası bu haklara bir sınır da koyar: kendilerine aylık bağlanan dul ve yetimlerin aylıkları sosyal güvenlik mevzuatı gereği kesilirse bunlar maddeyle verilen diğer haklardan da yararlanamaz.",
+    "dayanak": "3713 sayılı Kanun md 22; md 21/1-(e)",
+    "zorluk": "medium",
+    "tur": "dogrudan"
+  },
+  {
+    "id": "3713-p2-07",
+    "articleNo": "Ek 1",
+    "kok": "Terörle mücadele görevi sırasında bir polis memuru hayatını kaybetmiş, aynı olayda yaralanan başka bir polis memuru ise vazife malulü sayılmıştır. 3713 sayılı Kanun'a göre, hayatını kaybeden polis memurunun yakınlarından ve malul polis memuru ile yakınlarından sırasıyla en fazla kaç kişi kamu kurumlarında istihdam hakkından yararlanabilir?",
+    "siklar": {
+      "A": "bir - bir",
+      "B": "bir - iki",
+      "C": "iki - bir",
+      "D": "iki - iki",
+      "E": "üç - iki"
+    },
+    "dogru": "C",
+    "aciklama": "3713 sayılı Kanun'un Ek 1 inci maddesine göre 2330 sayılı Kanun hükümleri uygulanarak harp veya vazife malulü sayılanlar ile Emniyet Hizmetleri Sınıfı personeli dâhil vazife malulü sayılan güvenlik personeli istihdam hakkı doğuran durumlar arasındadır; hak sahibi sayısı ise ÖLÜM ile MALULLÜK ayrılarak belirlenir. HAYATINI KAYBEDENLERİN eş veya çocuklarından birisi ile ana, baba veya kardeşlerinden birisi olmak üzere TOPLAM İKİ kişi yararlanır; ana, baba ve kardeş yoksa ya da bu hakkı kullanmazlarsa eş veya çocuklardan, eş veya çocuk yoksa ana veya baba ile kardeşlerden olmak üzere yine toplam iki kişi yararlanır. MALULLERDE ise malulün kendisi veya eş veya çocuklarından birisi, eşi veya çocuğu yoksa kendisi veya kardeşlerinden birisi olmak üzere TOPLAM BİR kişi yararlanır. Malule kendisiyle birlikte bir yakını için de hak tanındığını düşünmek (iki - iki) ya da sayıların yerini değiştirmek (bir - iki) bu hükümdeki tipik hatalardır. Bir başkasının bakımına muhtaç olacak derecede engelli olanlar ile maddede sayılan kamu kurumlarında zaten görev yapanlar istihdam hakkından yararlanamaz.",
+    "dayanak": "3713 sayılı Kanun Ek md 1/2-(a),(b); Ek md 1/3-(a),(b)",
+    "zorluk": "hard",
+    "tur": "ayrinti"
+  },
+  {
+    "id": "3713-p2-08",
+    "articleNo": "Ek 2",
+    "kok": "Terör örgütü mensuplarının saklandığı bir eve düzenlenen operasyonda, örgüt mensuplarından biri kolluk görevlilerinin “teslim ol” emrine itaat etmemiştir. 3713 sayılı Kanun'a göre kolluk görevlilerinin silah kullanma yetkisiyle ilgili aşağıdakilerden hangisi doğrudur?",
+    "siklar": {
+      "A": "Tehlikeyi etkisiz kılabilecek ölçü ve orantıda, doğrudan ve duraksamadan hedefe karşı silah kullanabilirler.",
+      "B": "Örgüt mensubu silah kullanmaya teşebbüs etmedikçe hedefe karşı silah kullanamazlar.",
+      "C": "Önce uyarı ateşi açmak şartıyla hedefe karşı silah kullanabilirler.",
+      "D": "Bedenî kuvvet ve maddî güç sonuç vermedikçe hedefe karşı silah kullanamazlar.",
+      "E": "Zor kullanılacağını ayrıca ihtar etmek şartıyla hedefe karşı silah kullanabilirler."
+    },
+    "dogru": "A",
+    "aciklama": "Dayanak 3713 sayılı Kanun'un Ek 2 nci maddesidir: terör örgütlerine karşı icra edilecek operasyonlarda “teslim ol” emrine İTAAT EDİLMEMESİ VEYA SİLAH KULLANMAYA TEŞEBBÜS EDİLMESİ hâlinde kolluk görevlileri, tehlikeyi etkisiz kılabilecek ÖLÇÜ VE ORANTIDA, DOĞRUDAN VE DURAKSAMADAN hedefe karşı silah kullanmaya yetkilidir. İki şart seçimliktir; olaydaki gibi teslim ol emrine uyulmaması tek başına yeterlidir, örgüt mensubunun ayrıca silah kullanmaya teşebbüs etmesi beklenmez. B, seçimlik şartları birleştiren adayın şıkkıdır. Maddenin özü, bu operasyonlarda “teslim ol” emrine itaat edilmemesi veya silah kullanmaya teşebbüs edilmesi hâlinde genel zor kullanma düzenindeki kademeliliğin aranmamasıdır. 2559 sayılı PVSK'nın 16 ncı maddesinde zor kullanma yetkisi kapsamında, direnmenin mahiyetine ve derecesine göre kademeli olarak artan nispette bedenî kuvvet, maddî güç ve kanunî şartları gerçekleştiğinde silah kullanılabilir; zor kullanmadan önce kural olarak ihtar yapılır, yakalama amacıyla silah kullanmadan önce de kişiye “dur” çağrısında bulunulur ve önce uyarı amacıyla ateş edilebilir. C, D ve E bu genel düzeni terör operasyonuna taşır. Ek 2 ise ne uyarı ateşini ne ayrıca bir ihtarı ne de bedenî kuvvet ve maddî gücün önce denenmesini arar; yetkinin sınırı ölçü ve orantıdır.",
+    "dayanak": "3713 sayılı Kanun Ek md 2",
+    "zorluk": "medium",
+    "tur": "vaka"
+  }
+]
