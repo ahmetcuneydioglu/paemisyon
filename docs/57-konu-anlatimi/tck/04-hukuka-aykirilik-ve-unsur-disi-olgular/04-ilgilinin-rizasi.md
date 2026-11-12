@@ -28,7 +28,7 @@ Bunlara öğretinin eklediği iki koşul daha vardır: rızayı veren buna yetki
 
 ## Kim rıza gösterebilir
 
-Rızayı, fiil suç olsaydı onun mağduru olacak kişi verir. Birden fazla hak sahibi varsa hepsinin rızası aranır. Rıza veren kişinin, vazgeçtiği değerin kendisi için ne anlama geldiğini kavrayabilecek durumda olması gerekir; akıl hastalığı ya da yaş küçüklüğü yüzünden bu kavrayıştan yoksun kişinin rızası geçersizdir. Küçüklerde yaş ilerledikçe ehliyetin somut olaya göre değerlendirildiği öğretide kabul edilir.
+Rızayı, fiil suç olsaydı onun mağduru olacak kişi verir. Öğretide, birden fazla hak sahibi varsa kural olarak hepsinin rızasının arandığı kabul edilir. Rıza veren kişinin, vazgeçtiği değerin kendisi için ne anlama geldiğini kavrayabilecek durumda olması gerekir; akıl hastalığı ya da yaş küçüklüğü yüzünden bu kavrayıştan yoksun kişinin rızası geçersizdir. Küçüklerde yaş ilerledikçe ehliyetin somut olaya göre değerlendirildiği öğretide kabul edilir.
 
 Temsilcinin verdiği rıza hakkın türüne göre değişir. Mal varlığına ilişkin haklarda temsilcinin rızası geçerlidir. Onur gibi kişiye sıkı sıkıya bağlı haklarda rızayı yalnız hak sahibi verebilir.
 
@@ -118,4 +118,5 @@ Soru rızanın hukuka uygunluk nedenleri arasındaki yerini yoklar.
 - OCR: s-052 sonu ve s-053 başında rıza koşullarının maddeleri arasında iki satır kesik ("genel ahlaka karşı", "verdiği"); anlam açık. Görüntüye bakılmadı.
 - Madde bağı: TCK md 26.
 - Gömülü sorular: bankadaki yayınlı gerçek sorular, hepsi beş şıklı, share 200 (00f91ce8… hangileri hukuka uygunluk nedenidir (beklenen: yalnız ilgilinin rızası). Rızanın koşullarını doğrudan yoklayan aday public uçtan çıkmadı; kullanıcı `ders-soru-ara.ts "Ceza Hukuku" "ilgilinin rızası" "rıza" "mefruz"` çalıştırırsa eklenebilir). Doğru şık public uçtan görülemez; "beklenen" yanıt dersin içeriğiyle uyumlu olandır, panelde anahtarla karşılaştırılmalı. Soru üretilmedi.
+- DENETİM DÜZELTMESİ (bağımsız denetim, Opus oturumu, 13 Kas 2026): "birden fazla hak sahibinde hepsinin rızası" kuralı md 26/2'de yok; öğreti kaydına alındı.
 - AI taslak; insan düzenleme ve yayın onayı bekliyor.

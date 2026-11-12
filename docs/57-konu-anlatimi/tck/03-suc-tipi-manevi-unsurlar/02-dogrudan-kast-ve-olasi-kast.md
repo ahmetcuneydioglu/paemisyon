@@ -53,10 +53,10 @@ Kanunun tanımı yalnız "öngörme"den söz eder; kabullenme ögesini anmaz. Ö
 
 Kaçınılmazlık ile ihtimal arasındaki fark, iki kast türünü ayıran sorudur.
 
-| Soru | Yanıt "evet" ise |
-|---|---|
-| Asıl hedef bu sonuç gerçekleşmeden doğabilir miydi | Doğabilirdi: sonuç bir ihtimaldir, olası kast düşünülür |
-| Asıl hedef ancak bu sonuçla birlikte mi doğabilirdi | Evet: sonuç zorunludur, doğrudan kast vardır |
+| Soru | Yanıt | Kast türü |
+|---|---|---|
+| Asıl hedef, yan sonuç gerçekleşmeden de elde edilebilir miydi? | Evet; yan sonuç yalnız bir ihtimaldir | Yan sonuç bakımından olası kast |
+| Asıl hedef, yan sonuç gerçekleşmeden de elde edilebilir miydi? | Hayır; yan sonuç hedefle birlikte zorunlu olarak doğar | Yan sonuç bakımından doğrudan kast |
 
 Kalabalık bir geçide, belirli bir kişiyi öldürmek için patlayıcı yerleştiren fail, oradan geçecek öteki kişilerin de ölebileceğini ya da yaralanabileceğini görmektedir. Uçak olayından farkı şudur: geçitte o anda başka birinin bulunması kesin değil, muhtemeldir. Bu yüzden öteki kişiler bakımından olası kasttan söz edilir.
 
@@ -131,4 +131,5 @@ Sorular zorunlu yan sonucu, hedefin yanındaki kişiye isabeti ve olası kastın
 - OCR: s-040 sonunda genel kast–özel kast paragrafının son cümlesi kesik; s-041'de olası kast örneğinde satır bozuk ("tra al, st eten te"). Anlam açık, görüntüye bakılmadı.
 - Madde bağları: TCK md 21, 35, 61, 267.
 - Gömülü sorular: bankadaki yayınlı gerçek sorular, hepsi beş şıklı, share 200 (0b753e5c… cam ve hasım (beklenen: ikisi de doğrudan kast); c77c4a3a… uçağa bomba (beklenen: doğrudan kast); 33cdc805… hedefin yanındaki kişinin ölmesi (beklenen: iki ayrı kasten öldürme); 9b0d0ffd… olası kastın cezaya etkisi (beklenen: üçte birden yarısına kadar indirim, md 21/2)). Doğru şık public uçtan görülemez; "beklenen" yanıt dersin içeriğiyle uyumlu olandır, panelde anahtarla karşılaştırılmalı. Soru üretilmedi.
+- DENETİM DÜZELTMESİ (bağımsız denetim, Opus oturumu, 13 Kas 2026): Kaçınılmazlık tablosu "Soru | Yanıt | Kast türü" sütunlarıyla yeniden kuruldu (önceki başlık ile hücreler uyuşmuyordu).
 - AI taslak; insan düzenleme ve yayın onayı bekliyor.

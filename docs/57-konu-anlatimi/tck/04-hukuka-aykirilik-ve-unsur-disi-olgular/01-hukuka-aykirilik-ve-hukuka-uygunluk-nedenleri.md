@@ -34,7 +34,7 @@ Hukuk düzeni bir bütündür. Bir fiil hukukun bir dalında hukuka uygun, başk
 Tipe uyan bir fiilin işlenmesine izin veren ya da onu emreden ve böylece fiilin hukuka aykırı olmasını önleyen neden.
 :::
 
-Kanunda dört hukuka uygunluk nedeni düzenlenmiştir.
+Ceza kanununda dört hukuka uygunluk nedeni düzenlenmiştir.
 
 | Neden | Özü |
 |---|---|
@@ -82,7 +82,7 @@ Hukuka uygunluk nedenlerinin hepsinde geçerli olan kurallar şunlardır.
 Nesnel nitelik. Ağır basan görüşe göre nedenin olayda var olması yeter; failin onu bilmesi ya da o amaçla hareket etmesi aranmaz.
 
 :::ornek
-Hırsızlık için bir eve giren kişi, içeride ev sahibinin bir başkasını öldürmek üzere olduğunu görür ve saldırganı yaralayarak durdurur. Kişinin eve giriş amacı suçtur; ama saldırganı yaralaması, başkası yararına meşru savunmanın koşullarını taşımaktadır. Yaralama bakımından fiili hukuka uygundur. Konuta girişi ise bu nedenden yararlanmaz; hukuka uygunluk yalnız savunma fiilini kapsar.
+Bir kişi, uzun süredir husumet beslediği hasmını sokakta görür ve onu yaralamak için ateş eder. Sonradan anlaşılır ki hasmı tam o anda bıçağını çekmiş, yanındaki bir başkasını öldürmek üzereydi; ateş eden kişi bunu görmemiş, bilmemektedir. Nesnel görüşe göre olayda başkası yararına meşru savunmanın koşulları vardır ve fiil hukuka uygundur. Failin bu durumu bilmesini arayan görüşe göre ise hukuka uygunluk nedeninden yararlanamaz. Bu örnek, iki görüşün sonuçta ayrıldığı tipik durumdur; tartışma öğretidedir.
 :::
 
 Zincir kurmaz. Hukuka uygun bir fiile karşı hukuka uygunluk nedenine dayanılamaz. Usulüne uygun bir kararı yerine getiren görevliye direnen kişi, meşru savunma yaptığını ileri süremez; çünkü görevlinin fiili haksız değildir.
@@ -112,9 +112,6 @@ Sorular hangi nedenin hukuka uygunluk nedeni olduğunu, hukuka uygunluk nedenini
 :::soru 1b9c6d7f-e8a1-4aee-869f-a47f77e491b8
 :::
 
-:::soru 55051b58-461a-4230-9385-7b8c9053a243
-:::
-
 :::soru 5dc2fc28-3b14-4ff4-b8e1-833268dfd062
 :::
 
@@ -131,4 +128,6 @@ Sorular hangi nedenin hukuka uygunluk nedeni olduğunu, hukuka uygunluk nedenini
 - OCR: s-049 sonundaki üç sütunlu kutu ve s-050'deki türler şeması sütunları karışık okunuyor ("Hakkın kullanılması İlgilinin rızası"); içerik bağlamdan ve madde metinlerinden kuruldu. Görüntüye bakılmadı.
 - Madde bağları: TCK md 24, 26, 40; CMK md 223.
 - Gömülü sorular: bankadaki yayınlı gerçek sorular, hepsi beş şıklı, share 200 (1b9c6d7f… yanlış ifade (beklenen: "ceza verilmez; ancak güvenlik tedbiri uygulanır"); 55051b58… hangisi hukuka uygunluk nedeni (beklenen: yalnız ilgilinin rızası; anahtar zorunluluk hâlini de sayıyorsa dersin sistematiğiyle ayrışır, panelde bakılmalı); 5dc2fc28… hırsızlık için girdiği evde saldırganı durduran kişi (beklenen: üçüncü kişi lehine meşru savunma)). Doğru şık public uçtan görülemez; "beklenen" yanıt dersin içeriğiyle uyumlu olandır, panelde anahtarla karşılaştırılmalı. Soru üretilmedi.
+- DENETİM DÜZELTMESİ (bağımsız denetim, Opus oturumu, 13 Kas 2026): 55051b58… çıkarıldı: şıklarda hem "Yalnız I" hem "I ve IV" var; anahtar public uçta görünmüyor ve eski (765) sistematiğe göre zorunluluk hâlini hukuka uygunluk sayıyorsa ders (CMK md 223/3-b ile kusurluluk) ile çelişir — panelde anahtar doğrulanmalı.
+- DENETİM DÜZELTMESİ (bağımsız denetim, Opus oturumu, 13 Kas 2026): "Nesnel nitelik" örneği değiştirildi: önceki örnekte fail saldırıyı görüp bilerek müdahale ettiği için ilkeyi göstermiyordu; yeni örnekte fail hukuka uygunluk durumunu bilmiyor, iki görüşün sonucu öğreti kaydıyla verildi.
 - AI taslak; insan düzenleme ve yayın onayı bekliyor.

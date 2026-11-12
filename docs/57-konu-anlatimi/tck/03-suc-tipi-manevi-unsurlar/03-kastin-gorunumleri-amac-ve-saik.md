@@ -60,7 +60,7 @@ Eklenen kast üç biçimde karşımıza çıkar.
 | Taksirli bir hareketle | Sonuca yönelik kast | Dikkatsizlikle yayaya çarpan sürücünün, yaralıyı ölüme terk edip uzaklaşması |
 | Daha hafif bir kastla | Daha ağır bir kast | Yaralamak için dövmeye başlayan failin, hareketini öldürme iradesiyle sürdürmesi |
 
-Üçünde de fail, sonradan doğan kastının karşılığı olan suçtan sorumlu olur. İkinci satırdaki sürücü, baştaki taksirli çarpmayla sınırlı kalmaz; yaralının öleceğini görüp onu bırakmasıyla ölüm sonucu bakımından kastı eklenmiştir.
+Üçünde de fail, sonradan doğan kastının karşılığı olan suçtan sorumlu olur. İkinci satırdaki sürücü, baştaki taksirli çarpmayla sınırlı kalmaz; yaralının öleceğini görüp onu bırakmasıyla ölüm sonucu bakımından kastı eklenmiştir. Ancak bu sonuç, kasten öldürmenin ihmali davranışla işlenmesine ilişkin koşulların, burada failin önceki tehlikeli davranışının, gerçekleşmiş olmasına bağlıdır; bu koşullar nedensellik bağı dersinde anlatıldı.
 
 :::ornek
 Fail tartıştığı kişiyi yaralamak isteyerek yumruklamaya başlar. Mağdurun bir sözü üzerine öfkesi artar ve bu kez onu öldürmek isteyerek boğazını sıkar; mağdur ölür. Fail yola yaralama kastıyla çıkmış, öldürme kastı hareket sürerken eklenmiştir. Sorumluluğu kasten öldürmedendir. Bu olay, kastedilenden daha ağır bir sonucun istenmeden doğduğu olaylardan ayrılır; orada ağır sonuç istenmemiştir, burada istenmiştir.
@@ -125,4 +125,6 @@ Sorular sonradan doğan kastın adını olay üzerinden yoklar.
 - OCR: s-041 sonu ile s-042 başı arasında tasarlama paragrafı bölünmüş ve bir cümle kesik ("…tasarlama lle haksız tahrik bir arada"); s-042'de eklenen kast tanımında harf bozulmaları. Görüntüye bakılmadı.
 - Madde bağları: TCK md 61, 82, 123.
 - Gömülü sorular: bankadaki yayınlı gerçek sorular, hepsi beş şıklı, share 200 (2332db13… yaralama kastıyla başlayıp öldürme iradesiyle süren hareket (beklenen: eklenen kast); f6e8dcb6… taksirle çarpıp yaralıyı terk eden sürücü (beklenen: eklenen kast)). Doğru şık public uçtan görülemez; "beklenen" yanıt dersin içeriğiyle uyumlu olandır, panelde anahtarla karşılaştırılmalı. Soru üretilmedi.
+- DENETİM DÜZELTMESİ (bağımsız denetim, Opus oturumu, 13 Kas 2026): Eklenen kastın tanımı ("hareket başladıktan sonra") kitabın "hareketin tamamlanmasından sonra" tanımından geniş; hareket sürerken doğan ağır kast öğretide de eklenen kast olarak anılır ve bankadaki 2332db13 bu kurguyu eklenen kast sayar — insan incelemesinde bakılmalı. Tasarlama–haksız tahrik sütunu PDF görüntüsüyle (s-042) teyit edildi: kitap "soğukkanlılık görüşü kabul edilirse … bir arada bulunmaz" der.
+- DENETİM DÜZELTMESİ (bağımsız denetim, Opus oturumu, 13 Kas 2026): Terk örneğine md 83'ün koşul kaydı (önceki tehlikeli davranış) ve nedensellik dersine (tck/02/04) gönderme eklendi; "genel ihmal kuralı yoktur" çizgisiyle hizalandı.
 - AI taslak; insan düzenleme ve yayın onayı bekliyor.

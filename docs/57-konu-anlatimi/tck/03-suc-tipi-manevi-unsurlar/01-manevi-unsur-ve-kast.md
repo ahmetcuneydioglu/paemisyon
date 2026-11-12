@@ -59,11 +59,11 @@ Bilme ögesinin kapsamı, kanuni tanımdaki maddi unsurlarla çizilir. Bu çerç
 | Bilinmesi gerekenler | Bilinmesi gerekmeyenler |
 |---|---|
 | Hareket ve sonuç: ateş edilen varlığın insan olduğu ve ölebileceği | Nedensellik akışının ayrıntısı: sonucun tam olarak hangi hareketten doğduğu |
-| Suçun konusu ve mağdurun tanımda aranan niteliği | Cezayı azaltan nitelikli hâl: olayda varsa fail bilmese de ondan yararlanır |
+| Suçun konusu ve mağdurun tanımda aranan niteliği | Cezayı azaltan nitelikli hâl: öğretide, olayda varsa fail bilmese de ondan yararlandığı kabul edilir |
 | Cezayı ağırlaştıran nitelikli hâli oluşturan olgu | Soruşturma ve kovuşturma koşulları: suçun şikâyete bağlı olup olmadığı |
 | | Cezalandırılabilme koşulu ve kişisel cezasızlık nedeni |
 
-Sol sütunun son satırı sınavın en sevdiği örneği verir. Karşısındakinin kamu görevlisi olduğunu bilmeden ona hakaret eden kişi, hakaretin temel şeklinden sorumlu olur; kamu görevlisine karşı görevinden dolayı işlenen nitelikli hâl ona yüklenemez. Fail o olguyu bilmediği için kastı o olguya uzanmamıştır.
+Sol sütunun son satırı sınavın en sevdiği örneği verir. Karşısındakinin kamu görevlisi olduğunu bilmeden ona hakaret eden kişi, hakaretin temel şeklinden sorumlu olur; kamu görevlisine karşı görevinden dolayı işlenen nitelikli hâl ona yüklenemez. Fail o olguyu bilmediği için kastı o olguya uzanmamıştır. Bu sonuç kanunda hata hükmüne bağlanmıştır; hata kusurluluk bölümünde ayrıca anlatılır.
 
 Sağ sütunun ilk satırı ise şu olayla açıklanır.
 
@@ -91,9 +91,6 @@ Kast failin iç dünyasına aittir ve doğrudan gözlenemez. Maddi ceza hukuku k
 
 Sorular kastın tanımını, kural ve istisna ilişkisini ve hangi suçun taksirle işlenemeyeceğini yoklar.
 
-:::soru 9dbaaec7-005f-4f0d-8158-97b1e0e3af69
-:::
-
 :::soru 7fd6288a-d639-47a8-b6f2-edee0bf5aeee
 :::
 
@@ -110,4 +107,6 @@ Sorular kastın tanımını, kural ve istisna ilişkisini ve hangi suçun taksir
 - OCR: s-039 başında manevi unsur tanımının iki satırı yer değiştirmiş; s-040'ta "bilerek" sözünün geçtiği paragraf okunaklı. Görüntüye bakılmadı.
 - Madde bağları: TCK md 21, 22, 109.
 - Gömülü sorular: bankadaki yayınlı gerçek sorular, hepsi beş şıklı, share 200 (9dbaaec7… kasta dayanan sorumluluk için yanlış ifade (beklenen: "kasta dayalı sorumluluk istisnaidir"; öteki şıklar sırf hareket suçu, zorunlu sonuç ve olası kast indirimi dersle uyumlu); 7fd6288a… taksirle işlenemeyen suç (beklenen: hırsızlık)). Doğru şık public uçtan görülemez; "beklenen" yanıt dersin içeriğiyle uyumlu olandır, panelde anahtarla karşılaştırılmalı. Soru üretilmedi.
+- DENETİM DÜZELTMESİ (bağımsız denetim, Opus oturumu, 13 Kas 2026): 9dbaaec7… çıkarıldı: beklenen anahtar A yanında C ("sonucun istenmediği durumda kasttan söz edilemez") da md 21/2 olası kast karşısında yanlış ifade; iki cevaplı — panelde bakılmalı.
+- DENETİM DÜZELTMESİ (bağımsız denetim, Opus oturumu, 13 Kas 2026): Azaltıcı nitelikli hâlden yararlanma öğreti kaydına alındı; kamu görevlisine hakaret örneğine hata hükmüne (md 30) ve kusurluluk bölümüne gönderme eklendi. Kapsam notu: kitabın manevi unsur bölümündeki "basın suçlarında cezai sorumluluk" alt başlığı (III/E) bu turda yazılmadı; 5187 sayılı Basın Kanunu yerel bankada yok, ayrı bir karar konusu.
 - AI taslak; insan düzenleme ve yayın onayı bekliyor.

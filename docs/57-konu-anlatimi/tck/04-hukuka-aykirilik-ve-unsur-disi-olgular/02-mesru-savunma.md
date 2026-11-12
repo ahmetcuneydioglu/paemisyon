@@ -85,7 +85,7 @@ Savunma yalnız saldırgana karşı yapılabilir. Saldırıyla ilgisi olmayan ü
 
 ## Savunmanın sonucu
 
-Koşulları taşıyan savunma fiili hukuka uygundur; ortada bir suç yoktur. Mahkeme sanığın fiili işlediğini saptar, ama olayda bir hukuka uygunluk nedeni bulunduğu için beraat kararı verir. Savunma yapan kişiden, saldırganın uğradığı zarar için tazminat da istenemez. Bu sonuç, savunmanın saldırıdan doğan her şeyi kapsadığı anlamına gelmez: savunma sırasında saldırıyla ilgisi olmayan bir kişiye ya da onun malına zarar verilmişse, o zarar bakımından meşru savunmaya değil, koşulları varsa zorunluluk hâline bakılır.
+Koşulları taşıyan savunma fiili hukuka uygundur; ortada bir suç yoktur. Mahkeme sanığın fiili işlediğini saptar, ama olayda bir hukuka uygunluk nedeni bulunduğu için beraat kararı verir. Savunma yapan kişiden, saldırganın uğradığı zarar için tazminat da istenemez. Bu sonuç, savunmanın saldırıdan doğan her şeyi kapsadığı anlamına gelmez: savunma sırasında saldırıyla ilgisi olmayan bir kişiye ya da onun malına zarar verilmişse, o zarar bakımından meşru savunmaya değil, koşulları varsa zorunluluk hâline bakılır; zorunluluk hâli kusurluluk bölümünde anlatılır.
 
 ## Başkası yararına savunma
 
@@ -137,4 +137,5 @@ Sorular saldırıya ve savunmaya ilişkin koşulları ve sona ermiş saldırıya
 - OCR: s-051 başındaki koşullar kutusu ve s-051 sonundaki "kendi kusurlu hareketiyle saldırıya neden olan" kutusunda satırlar yer değiştirmiş; anlam bağlamdan açık. Görüntüye bakılmadı.
 - Madde bağları: TCK md 25; PVSK md 16.
 - Gömülü sorular: bankadaki yayınlı gerçek sorular, hepsi beş şıklı, share 200 (11bbea1c… yanlış ifade (beklenen: "yalnız yaşam ve cinsel dokunulmazlığa yönelik saldırılarda uygulanır"); 4dc60b50… saldırıya ilişkin şartlardan olmayan (beklenen: yalnız II, icrai hareket şart değildir); 648387e6… öncüllü (beklenen: yalnız II); dadeb275… etkisiz hâle gelen saldırganı öldürme (beklenen: kasten öldürme)). Doğru şık public uçtan görülemez; "beklenen" yanıt dersin içeriğiyle uyumlu olandır, panelde anahtarla karşılaştırılmalı. Soru üretilmedi.
+- DENETİM DÜZELTMESİ (bağımsız denetim, Opus oturumu, 13 Kas 2026): Üçüncü kişiye verilen zarar cümlesine kusurluluk bölümüne gönderme eklendi.
 - AI taslak; insan düzenleme ve yayın onayı bekliyor.

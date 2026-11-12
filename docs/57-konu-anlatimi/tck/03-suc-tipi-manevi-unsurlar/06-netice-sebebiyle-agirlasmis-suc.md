@@ -49,7 +49,7 @@ Fail tartıştığı kişinin göğsüne sert bir yumruk vurur; mağdur yere dü
 | Ayrı bir suç olarak tanımlanmamıştır | Yine netice sebebiyle ağırlaşmış suç hükmü uygulanır; kast ya da taksir cezanın belirlenmesinde gözetilir | Hürriyetten yoksun kılmanın mağdurun önemli bir ekonomik kaybına yol açması |
 
 :::uyari
-Ölümle sonuçlanan yaralama ile olası kastla öldürme arasındaki çizgi, failin ölüm karşısındaki tutumudur. Ölümü öngörmemiş ya da öngörüp gerçekleşmeyeceğine güvenmişse netice sebebiyle ağırlaşmış yaralama; öngörüp "olursa olsun" demişse kasten öldürme vardır. Sınav olayda vurulan bölgeyi, kullanılan aracı ve darbenin şiddetini bu ayrım için verir.
+Ölümle sonuçlanan yaralama ile olası kastla öldürme arasındaki çizgi, failin ölüm karşısındaki tutumudur. Ölümü öngörmemiş ya da öngörüp gerçekleşmeyeceğine güvenmişse netice sebebiyle ağırlaşmış yaralama; öngörüp "olursa olsun" demişse kasten öldürme vardır. Uygulamada bu ayrım için vurulan bölgeye, kullanılan araca ve darbenin şiddetine bakılır; sınav olayda bunları bu yüzden verir.
 :::
 
 ## Benzer kurumlardan ayırma
@@ -86,7 +86,7 @@ Neticesi sebebiyle ağırlaşmış yaralama.
 | İki sonuç arasındaki ilişki | Aynı değerin daha ağır ihlali: derece farkı | Ayrı değerlerin ihlali: nitelik farkı |
 | Örnek | Yaralamanın ölümle sonuçlanması | Terk edilen kişinin ölmesi, cinsel saldırı sonucunda mağdurun ölmesi |
 
-İkinci türün bir özelliği vardır: temel fiil tamamlanmamış olsa bile ağır sonuç doğmuşsa fail ondan sorumlu tutulabilir. Çocuk düşürtme girişimi sonuç vermeden kadın ölmüşse, fail ölümden sorumludur.
+İkinci türün bir özelliği vardır: temel fiil tamamlanmamış olsa bile ağır sonuç doğmuşsa fail ondan sorumlu tutulabilir. Öğretide verilen örneğe göre çocuk düşürtme girişimi sonuç vermeden kadın ölmüşse, fail ölümden sorumludur.
 
 ## Cezalandırılabilme koşulundan farkı
 
@@ -110,9 +110,6 @@ Sorular kurumun koşullarını ve nitelikli hâlden farkını yoklar.
 :::soru 2689e9cc-ebe2-4db7-8d63-a28faaec004f
 :::
 
-:::soru 3e3727ff-003f-49aa-9343-b75621cd338e
-:::
-
 :::soru 983512e8-762f-43c2-b03a-47f930f1249e
 :::
 
@@ -129,4 +126,6 @@ Sorular kurumun koşullarını ve nitelikli hâlden farkını yoklar.
 - OCR: s-047 sonu ile s-048 başında koşulların sayıldığı paragrafta satırlar karışmış ("rekir:274 … DESES"); dört koşul madde metni ve bağlamdan yeniden kuruldu. Görüntüye bakılmadı.
 - Madde bağları: TCK md 23, 87.
 - Gömülü sorular: bankadaki yayınlı gerçek sorular, hepsi beş şıklı, share 200 (2689e9cc… öncüllü (beklenen: yalnız I yanlış; üstsoya karşı yaralama nitelikli hâldir); 3e3727ff… öncüllü (beklenen: I ve III yanlış; ilk hareket kasten olmalı, ağır sonucun istenmesi aranmaz); 983512e8… yaralama kastıyla ölüm (beklenen: neticesi sebebiyle ağırlaşmış kasten yaralama)). Doğru şık public uçtan görülemez; "beklenen" yanıt dersin içeriğiyle uyumlu olandır, panelde anahtarla karşılaştırılmalı. Soru üretilmedi.
+- DENETİM DÜZELTMESİ (bağımsız denetim, Opus oturumu, 13 Kas 2026): 3e3727ff… çıkarıldı: II ("daha ağır olmalıdır") md 23/1 "daha ağır veya başka bir netice" karşısında eksik; ders "ya da başka" öğrettiği için öğrenci II'yi yanlış sayıp E'yi seçer — iki cevap riski, panelde bakılmalı.
+- DENETİM DÜZELTMESİ (bağımsız denetim, Opus oturumu, 13 Kas 2026): Çocuk düşürtme cümlesine ve öngörülebilirlik/olası kast ayrımındaki ölçütlere öğreti/uygulama kaydı eklendi.
 - AI taslak; insan düzenleme ve yayın onayı bekliyor.

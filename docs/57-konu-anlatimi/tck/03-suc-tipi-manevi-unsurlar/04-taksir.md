@@ -28,7 +28,7 @@ Bir sonuçtan taksirle sorumlu tutulabilmek için dört şey birlikte aranır.
 |---|---|---|
 | Kanunda taksirli biçimin öngörülmüş olması | Suç tanımı taksirle işlenmeyi açıkça cezalandırmalıdır | Fiil suç değildir |
 | Hareketin iradi olması | Fail hareketi bilerek ve isteyerek yapmalıdır; istemediği sonuçtur, hareket değil | Taksir de yoktur |
-| Sonucun öngörülebilir olması ve istenmemesi | Aynı konumdaki özenli bir kişi sonucu öngörebilmelidir | Beklenmeyen hâl vardır |
+| Sonucun öngörülebilir olması ve istenmemesi | Aynı konumdaki özenli bir kişi sonucu öngörebilmelidir | Öngörülemezse beklenmeyen hâl; istenmişse kast |
 | Dikkat ve özen yükümlülüğüne aykırılık | Fail, o işin gerektirdiği özeni göstermemiş olmalıdır | Taksir yoktur |
 
 ### Kanunda açıkça gösterilme
@@ -77,22 +77,13 @@ Kusurun ne olduğuna hâkim karar verir. Teknik konularda bilirkişiye başvurul
 
 ## Taksirin iki türü
 
-Taksir, sonucun fail tarafından öngörülüp öngörülmediğine göre ikiye ayrılır.
-
-| | Bilinçsiz taksir | Bilinçli taksir |
-|---|---|---|
-| Fail sonucu öngördü mü | Hayır; öngörebilirdi | Evet |
-| Sonucu istedi mi | Hayır | Hayır |
-| Öteki adları | Basit taksir, adi taksir | Öngörülü taksir |
+Taksir, sonucun fail tarafından öngörülüp öngörülmediğine göre ikiye ayrılır: bilinçsiz (basit) taksirde fail sonucu öngörmemiş ama öngörebilecek durumdadır; bilinçli (öngörülü) taksirde öngörmüş, ama istememiştir. İki türün ayrıntılı karşılaştırması ve cezaya etkisi sonraki derstedir.
 
 Çalıların kıpırdadığını görüp av hayvanı sanarak ateş eden ve orada bekleyen bir başka avcıyı yaralayan kişi, bilinçsiz taksirle hareket etmiştir: çalının arkasında bir insan bulunabileceğini düşünmemiştir, ama özenli bir avcı bunu düşünürdü. Bilinçli taksir ve onu olası kasttan ayıran çizgi bir sonraki dersin konusudur.
 
 ## Sınavda çıktı
 
 Sorular taksirin istisna oluşunu, cezanın kusura göre belirlenmesini, hangi suçun taksirle işlenebildiğini ve bilinçsiz taksiri yoklar.
-
-:::soru 1b655d1a-b84f-44b1-8dc5-59ff310cc149
-:::
 
 :::soru 1dd3e965-73f1-4580-b50f-0f1a56919562
 :::
@@ -117,4 +108,6 @@ Sorular taksirin istisna oluşunu, cezanın kusura göre belirlenmesini, hangi s
 - OCR: s-043 sonunda taksir tanımını izleyen iki cümlenin satırları karışmış; "hareketin iradi olması" paragrafında satır sırası bozuk. Anlam açık, görüntüye bakılmadı.
 - Madde bağı: TCK md 22.
 - Gömülü sorular: bankadaki yayınlı gerçek sorular, hepsi beş şıklı, share 200 (1b655d1a… taksir için yanlış ifade (beklenen: "ceza zararın ağırlığına göre belirlenir"); 1dd3e965… öncüllü (beklenen: II ve III; I yanlış, taksir kanunda açıkça gösterilmelidir); 698e486e… öncüllü (beklenen: II ve IV; md 329'un üçüncü fıkrası taksirli işlenişi cezalandırır); e4fd1261… avcı olayı (beklenen: bilinçsiz taksirle yaralama)). Doğru şık public uçtan görülemez; "beklenen" yanıt dersin içeriğiyle uyumlu olandır, panelde anahtarla karşılaştırılmalı. Soru üretilmedi.
+- DENETİM DÜZELTMESİ (bağımsız denetim, Opus oturumu, 13 Kas 2026): 1b655d1a… çıkarıldı: B ("öngörülemeyerek") kanunun "öngörülmeyerek" söyleyişine ve dersteki beklenmeyen hâl ayrımına göre yanlış, E de yanlış; iki cevaplı — panelde bakılmalı.
+- DENETİM DÜZELTMESİ (bağımsız denetim, Opus oturumu, 13 Kas 2026): Dört unsur tablosunda "Yoksa" hücresi tamamlandı (öngörülemezse beklenmeyen hâl; istenmişse kast); iki taksir türü tablosu bir sonraki derstekiyle tekrar ettiği için tek paragrafa indirildi.
 - AI taslak; insan düzenleme ve yayın onayı bekliyor.

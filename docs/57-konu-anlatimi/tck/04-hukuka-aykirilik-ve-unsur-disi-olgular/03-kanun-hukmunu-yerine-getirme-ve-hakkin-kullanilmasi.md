@@ -43,14 +43,10 @@ Bir noktanın altı çizilmelidir: fiili hukuka uygun kılan, yetkinin kanunda y
 | Fiil hükmün çizdiği biçime uygun yapılmalıdır | Yetki, kanunun aradığı karar, emir ya da usulle birlikte kullanılmalıdır |
 | Sınır aşılmamalıdır | Görevin gerektirdiği ölçünün ötesine geçen kısım hukuka uygun değildir |
 
-Üçüncü koşul kolluk için ayrıca düzenlenmiştir. Polis direnişi kırmak amacıyla ve kıracak ölçüde zor kullanabilir. Görevin gerektirdiği ölçünün dışında kuvvet kullanan görevli hakkında kanun, kasten yaralama hükümlerinin uygulanacağını söyler.
+Üçüncü koşul kolluk için ayrıca düzenlenmiştir: polis direnişi kırmak amacıyla ve kıracak ölçüde zor kullanabilir; ölçünün dışındaki kuvvetin sonucu bu bölümün beşinci dersinde (sınırın aşılması), polisin meşru savunması ikinci derste anlatılır.
 
 :::madde 2559-sayili-polis-vazife-ve-salahiyet-kanunu-pvsk:16
 Zor ve silah kullanma.
-:::
-
-:::madde turk-ceza-kanunu:256
-Zor kullanma yetkisine ilişkin sınırın aşılması.
 :::
 
 :::ornek
@@ -66,7 +62,7 @@ Aynı maddenin öteki fıkraları amirin emrini düzenler. İki kurum yan yana d
 | Aşama | Tek: kişi yetkisini doğrudan kanundan alır | İki: kanuna dayanan bir yetki ve ayrıca somut bir emir |
 | Hiyerarşi | Aranmaz | Emri verenle yerine getiren arasında kamu hukukundan doğan bir bağ aranır |
 | Kim yararlanır | Kanunun yetki verdiği herkes; kamu görevlisi olmayanlar da | Emri yerine getirmekle yükümlü görevli |
-| Niteliği | Hukuka uygunluk nedeni | Öğretide ağır basan görüşe göre kusurluluğu kaldıran neden |
+| Niteliği | Hukuka uygunluk nedeni | Muhakeme kanunu bağlayıcı emri kusurun bulunmaması hâlleri arasında sayar (bölümün ilk dersi) |
 
 Amirin emri kusurluluk anlatılırken ayrıca işlenecektir. Burada akılda tutulacak olan, sınavın bu iki kurumun niteliklerini yer değiştirerek sorduğudur.
 
@@ -102,7 +98,7 @@ Hakkın kullanılması ve ilgilinin rızası; hakkın kullanılması ilk fıkrad
 İddia ve savunma dokunulmazlığı.
 :::
 
-İlk satır meşru savunmayla karıştırılır. Elindeki mala yönelen saldırıyı uzaklaştıran kişi çoğu kez iki nedenden de yararlanabilecek durumdadır. Fark, saldırı bittikten sonra ortaya çıkar: meşru savunma sona ermiş bir saldırıya karşı işletilemez, oysa zilyetliğin korunması hakkı, malı alıp kaçmakta olan kişinin elinden onu geri almaya da izin verir. Zaman uzadıkça bu hak da sona erer ve kişinin başvuracağı yol artık mahkemedir.
+İlk satır meşru savunmayla karıştırılır. Elindeki mala yönelen saldırıyı uzaklaştıran kişi çoğu kez iki nedenden de yararlanabilecek durumdadır. Fark, saldırı bittikten sonra ortaya çıkar: meşru savunma sona ermiş bir saldırıya karşı işletilemez. Malı alıp kaçan kişinin saldırısının sürüp sürmediği tartışmalıdır; öğretide, böyle bir durumda zilyetliğin korunması hakkının malı geri almaya imkân verdiği kabul edilir. Zaman uzadıkça bu hak da sona erer ve kişinin başvuracağı yol artık mahkemedir.
 
 Tıbbi müdahalede hukuka uygunluğu sağlayan tek bir öge değil, iki ögenin birleşmesidir: hekimin mesleğini yerine getirme yetkisi ve hastanın aydınlatılmış rızası. Yetkisiz bir kişinin, hastanın rızasıyla da olsa yaptığı ameliyat bu nedenden yararlanmaz.
 
@@ -134,6 +130,7 @@ Sorular kanunun hükmünü yerine getirme ile amirin emrinin farkını ve madde 
 - Kaynakta olmayıp eklenenler ya da yorumlar, insan incelemesinde teyit edilmeli: (1) giriş paragrafı; (2) işlem–tip tablosu kitabın örneklerinden kuruldu; "zor kullanma → yaralama tipi" satırı PVSK md 16 ve TCK md 256'dan eklendi; (3) "kanun sözü geniş anlaşılır" kitabın "kararname ve yönetmelik gibi düzenleyici işlemler de kapsamdadır" tespitinden, öğreti atfıyla; (4) koşullar tablosunun ikinci satırı kitabın "eylemin yasa hükmüne uygun yapılması" koşulunun açılımı; kitabın "yabancı kanunun uygulanması" notu alınmadı; (5) kelepçe örneği bu ders için kuruldu; kitabın "ayağından vurulabilecekken öldürme" örneği silah kullanma koşullarına girdiği için kullanılmadı; (6) amirin emri karşılaştırması kitabın kutusundan; "öğretide ağır basan görüşe göre kusurluluğu kaldıran neden" kaydı eklendi, kitap bunu kayıtsız söyler; yayınlı bir soru aynı karşılaştırmayı yoklar; (7) kiracı örneği kitabın kesik cümlesinden ("tahliye kararı almadan kiracıyı…") tamamlandı; (8) görünümler tablosu kitaptan; öğretmenin terbiye hakkına ilişkin Yargıtay özeti ve "tek ayak üzerinde durdurma" örneği alınmadı, tabloya yalnız ana baba yazıldı; (9) haber verme hakkındaki "sonradan yanlış çıkan haber" ve "kamu yararı ile merak" açıklamaları kitabın paragrafından; (10) "yetkinin kanunda yazılı olması değil, koşullarının gerçekleşmiş olması" paragrafı kitabın ikinci koşulunun kolluk bakımından açılımıdır, kitapta bu biçimde yok; (11) zilyetliğin korunması ile meşru savunmanın farkına ilişkin paragraf kitabın Medeni Kanun özetindeki "eylem sırasında veya kaçarken yakalananın elinden alarak" sözünden çıkarımdır; (12) tıbbi müdahalede iki ögenin birleşmesi kitabın cümlesinden; "yetkisiz kişinin ameliyatı" örneği eklendi; (13) uyarının son cümlesi kitabın "iddia ve savunma dokunulmazlığı yalnızca hakaret suçunda hukuka aykırılığı önler" tespitinden; gövdede "hakaret benzeri suçlarda" denildi.
 - Yazıyla sayı kontrolü: gövdede süre, oran ya da eşik yok. "iki neden", "dört ölçüt" sayımdır. Rakam: yalnız ders numarası.
 - OCR: s-052 sonundaki görevin ifası–amirin emri kutusu ve s-053 sonundaki haber verme hakkı paragrafında satırlar birbirine girmiş; dört ölçüt bağlamdan seçildi. s-053'te "tahliye kararı almadan kiracıyı" cümlesi yarım. Görüntüye bakılmadı.
-- Madde bağları: TCK md 24, 26, 128, 256; CMK md 90; PVSK md 16.
+- Madde bağları: TCK md 24, 26, 128; CMK md 90; PVSK md 16 (md 256 bağı denetimde beşinci derse bırakıldı).
 - Gömülü sorular: bankadaki yayınlı gerçek sorular, hepsi beş şıklı, share 200 (dfc35d20… öncüllü (beklenen: II ve III yanlış; nitelikler yer değiştirilmiş ve hiyerarşi yalnız emirde aranır); 6ef4c581… hangi cümle hakkın kullanılması ve ilgilinin rızası maddesindedir (beklenen: "Hakkını kullanan kimseye ceza verilmez")). Doğru şık public uçtan görülemez; "beklenen" yanıt dersin içeriğiyle uyumlu olandır, panelde anahtarla karşılaştırılmalı. Soru üretilmedi.
+- DENETİM DÜZELTMESİ (bağımsız denetim, Opus oturumu, 13 Kas 2026): Amirin emrinin niteliği 04/01 ile hizalandı (CMK md 223/3-b, bağlayıcı emir kusurun bulunmaması hâli); zilyetlik–meşru savunma cümlesi öğreti kaydıyla yumuşatıldı; md 256 anlatımı ve bağı beşinci derse bırakıldı (tek cümle + gönderme), PVSK md 16 bağı kaldı.
 - AI taslak; insan düzenleme ve yayın onayı bekliyor.

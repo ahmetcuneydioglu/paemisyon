@@ -75,14 +75,16 @@ Hüküm; meşru savunmada sınırın heyecan, korku ve telaş nedeniyle aşılma
 Çeldiriciler iki fıkranın sonuçlarını yer değiştirir. "Heyecan, korku ya da telaşla aşmada ceza indirilir" yanlıştır; ceza verilmez. "Kast olmaksızın aşmada indirim hâkimin takdirindedir" yanlıştır; indirim zorunludur. "Heyecan, korku ya da telaşla aşmada taksirli sorumluluk doğar" da yanlıştır; taksirli sorumluluk ilk fıkranın sonucudur.
 :::
 
-## Üç karar, yan yana
+## Dört durum, yan yana
 
 | Durum | Fiil | Karar |
 |---|---|---|
-| Savunma sınırları içinde kalmıştır | Hukuka uygun | Beraat |
-| Sınır kast olmaksızın aşılmıştır | Hukuka aykırı; taksirli suç | İndirilmiş cezayla mahkûmiyet; taksirli biçim yoksa ceza verilmez |
-| Sınır mazur görülebilecek heyecan, korku ya da telaşla aşılmıştır | Hukuka aykırı; kusur yok | Ceza verilmesine yer olmadığı |
+| Savunma sınırları içinde kalmıştır | Hukuka uygun | Beraat (hukuka uygunluk nedeni) |
+| Sınır kast olmaksızın aşılmıştır | Hukuka aykırı; taksirli suç | Mahkûmiyet; taksirli suçun cezası altıda birden üçte bire kadar indirilir. Fiilin taksirli biçimi kanunda cezalandırılmıyorsa fail cezalandırılmaz; fiilin bu hâli suç olarak tanımlanmadığından beraat |
+| Sınır mazur görülebilecek heyecan, korku ya da telaşla aşılmıştır | Hukuka aykırı; kusur yok | Ceza verilmesine yer olmadığı (kusurun bulunmaması) |
 | Sınır kasten aşılmıştır | Hukuka aykırı; kasıtlı suç | Mahkûmiyet; koşulları varsa haksız tahrik indirimi |
+
+Karar türleri muhakeme kanununun hüküm maddesindeki ayrımı izler: hukuka uygunluk nedeni ve fiilin kanunda suç olarak tanımlanmamış olması beraate, kusurun bulunmaması ceza verilmesine yer olmadığı kararına götürür.
 
 ## Zor kullanma yetkisinde sınır
 
@@ -93,6 +95,8 @@ Zor kullanma yetkisine ilişkin sınırın aşılması.
 :::
 
 İki noktaya dikkat edilmelidir. Birincisi, heyecan, korku ya da telaşa ilişkin fıkra yalnız meşru savunma içindir; görevli, salt görevini yerine getirirken ölçüyü kaçırdığını söyleyerek o fıkraya dayanamaz. İkincisi, görevli gerçekten bir saldırıyla karşılaşmışsa durumu zor kullanma kurallarına göre değil, meşru savunma hükümlerine göre değerlendirilir ve o zaman bu fıkradan yararlanması mümkündür. Olayın hangi dayanakla değerlendirileceğini belirleyen, karşıdaki davranışın bir direniş mi yoksa bir saldırı mı olduğudur; tutanağın bu ayrımı açık biçimde göstermesi gerekir.
+
+Kolluk maddesi yalnız kasten yaralama hükümlerine gönderir. Görevli ölçüyü kasten değil, dikkatsizlikle aşmışsa, örneğin kelepçeyi gereğinden sıkı takıp kişiyi yaralamışsa, öğretide fiilin taksirle yaralama hükümlerine göre değerlendirileceği kabul edilir; kast olmaksızın sınırın aşılmasına ilişkin indirim hükmünün de bu durumda uygulanabileceği tartışmalıdır.
 
 ## Zorunluluk hâli bakımından
 
@@ -128,4 +132,5 @@ Sorular iki fıkranın sonuçlarını ve indirimin zorunlu oluşunu yoklar.
 - OCR: s-054 sonu ile sonraki sayfa başı arasında heyecan, korku, telaş koşullarının üçüncüsü yarım ("…savunma lehine ihlal edilmesi suretiyle") ve son koşulun sonu kesik ("haksız tahrik söz konusu"). Anlam açık, görüntüye bakılmadı.
 - Madde bağları: TCK md 27, 256; CMK md 223.
 - Gömülü sorular: bankadaki yayınlı gerçek sorular, hepsi beş şıklı, share 200 (79ab9dc9… heyecan, korku, telaşla aşmanın sonucu (beklenen: faile ceza verilmez); cf0daf1d… öncüllü (beklenen: I ve II yanlış); 208f2e8e… öncüllü (beklenen: yalnız IV doğru); df00187a… yanlış ifade (beklenen: "telaş, korku ve heyecanla aşmada taksirli sorumluluk söz konusu olur"; B şıkkı zorunluluk hâlini kusurluluk nedeni sayar, dersin sistematiğiyle uyumlu)). Doğru şık public uçtan görülemez; "beklenen" yanıt dersin içeriğiyle uyumlu olandır, panelde anahtarla karşılaştırılmalı. Soru üretilmedi.
+- DENETİM DÜZELTMESİ (bağımsız denetim, Opus oturumu, 13 Kas 2026): Tablo başlığı "Dört durum" oldu; her satıra CMK md 223'teki karar türü yazıldı (223/2-d beraat — hukuka uygunluk; md 27/1 indirimiyle mahkûmiyet, taksirli biçimi cezalandırılmayan fiilde 223/2-a beraat; 223/3-c ceza verilmesine yer olmadığı). Zor kullanmanın kastsız aşılması (md 256 yalnız kasten yaralamaya gönderir) için öğreti kaydıyla kısa açıklama eklendi; insan incelemesinde bakılmalı.
 - AI taslak; insan düzenleme ve yayın onayı bekliyor.

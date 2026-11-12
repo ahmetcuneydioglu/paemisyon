@@ -46,7 +46,7 @@ Bir başka örnek yabancı devletlerle ilişkilere karşı suçlardadır: o böl
 Karşılıklılık koşulu.
 :::
 
-Bu koşulların ortak niteliği nesnel olmalarıdır ve bundan dört sonuç çıkar.
+Öğretide bu koşulların nesnel olduğu kabul edilir ve bundan dört sonuç çıkarılır.
 
 | Sonuç | Açıklama |
 |---|---|
@@ -65,7 +65,7 @@ Cezalandırılabilme koşulu ile netice sebebiyle ağırlaşmış suç birbirine
 Suç oluştuğu hâlde, failin fiil sırasındaki sıfatı ya da durumu yüzünden kanunun ona ceza verilmesini istemediği hâl.
 :::
 
-İki örnek sınavda yinelenir. Birincisi mal varlığına karşı suçlardadır: yağma dışındaki bu suçlar haklarında ayrılık kararı verilmemiş eşlerden birinin, üstsoy ya da altsoyun ya da aynı konutta birlikte yaşayan kardeşlerden birinin zararına işlenmişse, ilgili akraba hakkında cezaya hükmolunmaz.
+İki örnek sınavda yinelenir. Birincisi mal varlığına karşı suçlardadır: yağma ve nitelikli yağma dışındaki bu suçlar; ayrılık kararı verilmemiş eşlerden birinin, üstsoy ya da altsoyun ya da bu derecedeki kayın hısımlarının, evlat edinen ya da evlatlığın veya aynı konutta birlikte yaşayan kardeşlerden birinin zararına işlenmişse, ilgili akraba hakkında cezaya hükmolunmaz.
 
 :::madde turk-ceza-kanunu:167
 Şahsi cezasızlık sebebi veya cezada indirim yapılmasını gerektiren şahsi sebep.
@@ -94,11 +94,11 @@ Bu nedenler suç tamamlandıktan sonra, failin kendi davranışıyla doğar. En 
 Etkin pişmanlık.
 :::
 
-Mal varlığına karşı sayılan suçlarda fail, azmettiren ya da yardım eden, mağdurun zararını aynen geri verme ya da tazmin yoluyla tamamen giderirse cezası indirilir. İndirimin oranı pişmanlığın zamanına bağlıdır: kovuşturma başlamadan önce gösterilen pişmanlıkta ceza üçte ikisine kadar, kovuşturma başladıktan sonra ve hüküm verilmeden önce gösterilende yarısına kadar indirilir.
+Mal varlığına karşı sayılan suçlarda fail, azmettiren ya da yardım eden, mağdurun zararını aynen geri verme ya da tazmin yoluyla tamamen giderirse cezası indirilir. İndirimin oranı pişmanlığın zamanına bağlıdır: kovuşturma başlamadan önce gösterilen pişmanlıkta ceza üçte ikisine kadar, kovuşturma başladıktan sonra ve hüküm verilmeden önce gösterilende yarısına kadar indirilir. Yağmada oranlar daha düşüktür: aynı iki zamanda ceza yarısına ve üçte birine kadar indirilir.
 
 Kişisel cezasızlık nedeninden ayrıldığı nokta zamandır: cezasızlık nedeni fiil işlenirken vardır, etkin pişmanlık sonradan doğar. Ortak yanları, ikisinin de yalnız kendisinde gerçekleşen kişiye yaramasıdır.
 
-Muhakeme kanunu bu iki kurumu aynı sonuca bağlar: fiil suç olma özelliğini sürdürdüğü hâlde, etkin pişmanlık ya da şahsi cezasızlık sebebi yüzünden faile ceza verilmemesi gereken hâllerde ceza verilmesine yer olmadığı kararı verilir.
+Muhakeme kanunu bu iki kurumu ceza hiç verilmeyecekse aynı sonuca bağlar: fiil suç olma özelliğini sürdürdüğü hâlde, etkin pişmanlık ya da şahsi cezasızlık sebebi yüzünden faile ceza verilmemesi gereken hâllerde ceza verilmesine yer olmadığı kararı verilir. Bu karar yalnız cezayı tümüyle kaldıran etkin pişmanlık içindir. Yukarıdaki oranlarda olduğu gibi etkin pişmanlık yalnız indirim sağlıyorsa fail mahkûm edilir ve indirim hükümde uygulanır.
 
 :::madde 5271-sayili-ceza-muhakemesi-kanunu-cmk:223
 Hüküm; etkin pişmanlık ve şahsi cezasızlık sebebi dördüncü fıkradadır.
@@ -118,6 +118,25 @@ Hüküm; etkin pişmanlık ve şahsi cezasızlık sebebi dördüncü fıkradadı
 Hileli tasarruflarda bulunan tacir hakkında henüz iflas kararı verilmemiştir: cezalandırılabilme koşulu gerçekleşmemiştir. Şikâyete bağlı bir suçta mağdur şikâyetçi olmamıştır: muhakeme koşulu gerçekleşmemiştir. Babasının cüzdanından para alan çocuk hakkında şikâyet de vardır, delil de: suç oluşmuştur, ama kişisel cezasızlık nedeni yüzünden ceza verilmez. Üç olayda da sonuç "ceza yok" gibi görünür; nedenleri ve verilecek kararlar ise birbirinden farklıdır.
 :::
 
+## Sınavda çıktı
+
+Sorular kişisel cezasızlık nedeninin kimleri kapsadığını, ne zaman var olması gerektiğini ve etkin pişmanlığın oranlarını yoklar.
+
+:::soru 52ec5d68-5cd9-4836-b6bf-d2b5d2dece18
+:::
+
+:::soru ea988b7e-2207-4c42-9a72-a8af4f4e7308
+:::
+
+:::soru 765163d7-b92c-4797-93e3-af84c9b1e30d
+:::
+
+:::soru 2a6df1f9-bda7-405b-b7da-3432660650df
+:::
+
+:::soru d005a12e-e469-4cd2-a396-520c84b46ab4
+:::
+
 ---
 
 ## Kaynak ve inceleme notları — kullanıcı metnine dahil değil
@@ -127,8 +146,10 @@ Hileli tasarruflarda bulunan tacir hakkında henüz iflas kararı verilmemiştir
 - İŞ BÖLÜMÜ: muhakeme koşulları Ceza Muhakemesi derslerinde ("Ceza Muhakemesi Koşulları" bölümü); netice sebebiyle ağırlaşmış suç "Suç Tipi: Manevi Unsurlar" bölümünün altıncı dersinde; hata kusurluluk turunda; etkin pişmanlığın öteki türleri ve gönüllü vazgeçme özel görünüş biçimleri turunda.
 - Kitap/güncel metin: md 161 ("iflasa karar verilmiş olması halinde"), md 167/1 (yağma ve nitelikli yağma hariç; ayrılık kararı verilmemiş eş, üstsoy, altsoy, bu derecede kayın hısımları, evlat edinen ve evlatlık, aynı konutta beraber yaşayan kardeş), md 168/1–2 ("üçte ikisine kadarı", "yarısına kadarı"), md 281/1 son cümle ve md 343 yerel bankadan okundu; UYUMLU. md 167/1'in listesi gövdede kısaltıldı (kayın hısımları, evlat edinen ve evlatlık anılmadı); kısaltma yanıltıcı bulunursa tamamlanmalı. md 168/1'de sayılan suçlar gövdede "mal varlığına karşı sayılan suçlar" diye anıldı; bankadaki metinde bir suç adı çıkarılmış ("(…)"), liste yazılmadı. CMK md 223/4-a ve b bankadan.
 - Kaynakta olmayıp eklenenler ya da yorumlar, insan incelemesinde teyit edilmeli: (1) giriş paragrafı ve beş olgu tablosu bu ders için kuruldu; "kime bağlı" sütunu yorumdur; (2) ön koşulda iki görüş kitaptan ("genel kabul gören görüş"); (3) cezalandırılabilme koşulu tanım bloğu kitabın tanımının yeniden yazımı; kitabın "mal veya hizmet satımından kaçınma" örneği alınmadı; (4) dört sonuç tablosu kitabın listesinden; "koşul gerçekleşmişse suç zaten tamamdır" açıklaması eklendi; zamanaşımının başlangıcına ilişkin tartışma alınmadı; (5) uyarı kitabın karşılaştırmasından; (6) kişisel cezasızlık özellikleri tablosu kitabın listesinden; "tazminat istenebilir" bu bölümün ilk dersindeki tabloyla tutarlılık için eklendi; (7) etkin pişmanlık paragrafındaki oran ve zaman ayrımı md 168/1–2'den; kitap yalnız ilk fıkrayı verir; (8) "kişisel cezasızlık fiil sırasında, etkin pişmanlık sonradan" karşılaştırması kitabın iki tanımından çıkarım; (9) muhakeme koşulu tablosunun üçüncü satırı Ceza Muhakemesi derslerindeki anlatımdan; (10) üç olaylı örnek bu ders için kuruldu.
-- Yazıyla sayı kontrolü (yerel banka): "üçte ikisine kadar" → md 168/1 BULUNDU; "yarısına kadar" → md 168/2 BULUNDU. "beş olgu", "üç basamak", "dört sonuç", "iki örnek", "üç olay" sayımdır. Rakam: yalnız ders numarası.
-- Gömülü soru yok: bu dersin kavramları (ön koşul, cezalandırılabilme koşulu, kişisel cezasızlık) maddeye bağlı olmadığı için public uçtan aday çıkmadı. Kullanıcı `ders-soru-ara.ts "Ceza Hukuku" "cezalandırılabilme" "şahsi cezasızlık" "kişisel cezasızlık" "ön şart" "objektif cezalandır"` çalıştırırsa çıkan yayınlı sorular eklenebilir.
+- Yazıyla sayı kontrolü (yerel banka): "üçte ikisine kadar" → md 168/1 BULUNDU; "yarısına kadar" → md 168/2 BULUNDU; yağmada "yarısına" ve "üçte birine kadarı" → md 168/3 BULUNDU. "beş olgu", "üç basamak", "dört sonuç", "iki örnek", "üç olay" sayımdır. Rakam: yalnız ders numarası.
+- Gömülü sorular (bağımsız denetimde eklendi; md 167, 168 ve 281'e bağlı yayınlı sorular public uçtan bulundu, önceki not "aday çıkmadı" diyordu): 52ec5d68… (aynı konutta yaşayan kardeşin aracına zarar — md 167/1-c, beklenen C "cezaya hükmolunmaz"); ea988b7e… (cezasızlık nedeni olmayan — ayrılık kararı verilmiş eş md 167/2 indirim, beklenen E); 765163d7… (suçtan sonra evlenme — nedenin fiil sırasında aranması, öğreti; beklenen C "hırsızlıktan cezalandırılır"); 2a6df1f9… (md 281/1 son cümle — kişisel cezasızlık sebebi, beklenen B); d005a12e… (yağmada kovuşturmadan önce etkin pişmanlık — md 168/3 "birinci fıkraya giren hallerde yarısına", beklenen C). Hepsi share 200 ve beş şıklı. Anahtarlar public uçta yok; madde metninden hesaplandı. 9175b3b1… (karşılıksız yararlanmada kamu davası açılmaz — md 168/5) yedek.
 - OCR: s-055'te cezalandırılabilme koşulları kutusunda harf bozulmaları; s-056 başında kişisel cezasızlık paragrafının son cümlesi kesik ("Zira eylemin işlendiği sıra-"). Anlam açık, görüntüye bakılmadı.
 - Madde bağları: TCK md 161, 167, 168, 281, 343; CMK md 223.
+- DENETİM DÜZELTMESİ (bağımsız denetim, Opus oturumu, 13 Kas 2026): md 167/1 listesi kanunun söyleyişiyle tamamlandı (nitelikli yağma, kayın hısımları, evlat edinen/evlatlık); cezalandırılabilme koşulunun dört sonucu öğreti kaydına alındı.
+- DENETİM DÜZELTMESİ (bağımsız denetim, Opus oturumu, 13 Kas 2026): (a) beş yayınlı soru gömüldü ve "Sınavda çıktı" bölümü eklendi; (b) CMK md 223/4 paragrafı md 168 indirimiyle ayrıldı: ceza verilmesine yer olmadığı kararı yalnız cezayı tümüyle kaldıran etkin pişmanlıkta, indirimde karar mahkûmiyettir; (c) md 168/3 yağma oranları eklendi.
 - AI taslak; insan düzenleme ve yayın onayı bekliyor.

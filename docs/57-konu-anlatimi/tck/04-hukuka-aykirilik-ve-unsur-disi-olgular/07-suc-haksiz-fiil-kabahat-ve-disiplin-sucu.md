@@ -125,6 +125,19 @@ Disiplin suçu, bir kuruma özel bir bağla bağlı olan kişinin, o bağdan do�
 
 Aynı fiil hem suç hem disiplin suçu oluşturduğunda iki soruşturma birbirinden bağımsız yürür: görevi başında rüşvet alan görevli hakkında hem ceza soruşturması hem disiplin soruşturması yapılır. Birinin sonucu ötekini kendiliğinden belirlemez; ceza mahkemesinden beraat eden görevliye, aynı fiil disiplin kurallarını çiğniyorsa disiplin cezası verilebilir.
 
+## Sınavda çıktı
+
+Sorular kabahatin manevi unsurunu, idari para cezasının yaş sınırını ve teşebbüsü yoklar; üçü de suçla karşılaştırma tablosunun satırlarıdır.
+
+:::soru 723c056b-d4c5-4861-9f01-d0c04173450c
+:::
+
+:::soru 2a5597ba-a539-481d-ab8c-26ed49b9459d
+:::
+
+:::soru f5200fa8-6a78-4d40-98be-98345713b8c5
+:::
+
 ---
 
 ## Kaynak ve inceleme notları — kullanıcı metnine dahil değil
@@ -135,7 +148,9 @@ Aynı fiil hem suç hem disiplin suçu oluşturduğunda iki soruşturma birbirin
 - 5326 SAYILI KANUN yerel bankaya bu tur için yüklendi (prod okuma ucundan, 53 madde). md 2, 4, 5, 7, 8, 9, 11, 12, 13, 14, 16, 22, 23 ve 24 bankadan okundu. Kitap/güncel metin ayrışması: (1) kitap "yalnızca ülke sınırları içinde işlenen kabahatler cezalandırılır" der; md 6 ceza kanununun ülkesellik maddesine gönderir ve "kanunlarda aksine hüküm bulunan haller saklıdır" der; gövdeye bu satır alınmadı; (2) kitap başvuru yolunu "itiraz kanun yolu" diye anar; bankadaki md 27 metni başvurunun yapılacağı mercii eski adıyla ("sulh ceza mahkemesi") taşır, güncel merci sulh ceza hâkimliğidir; süre ve merci gövdeye alınmadı, başvuru yolu satırı tabloya konmadı. İnsan incelemesinde md 27'nin bankadaki metninin tazelenmesi gerekip gerekmediğine bakılmalı.
 - Kaynakta olmayıp eklenenler ya da yorumlar, insan incelemesinde teyit edilmeli: (1) giriş paragrafı ve dört kategorili yaptırım tablosu bu ders için; (2) suç–haksız fiil tablolarının ilki kitabın paragrafından, ikincisi kitabın kutusundan; "yaptırımın amacı" satırı eklendi; (3) kabahatte iştirak satırı md 14'ten, kitapta yok; (4) "karar veren" satırı md 22, 23, 24'ten; (5) kolluk paragrafındaki örnekler Kabahatler Kanunu'ndan ve yerel bankadaki metinle doğrulandı: kimliği bildirmeme (md 40: cezayı soran görevli verir), gürültü (md 36: kolluk veya belediye zabıta görevlileri karar verir), emre aykırı davranış (md 32: emri veren makam karar verir); madde numarası ve tutar gövdeye yazılmadı; (6) gürültü örneği bu ders için kuruldu; (7) disiplin tablosu kitabın kutusundan; kitap "yasallık ilkesi geçerli olmayıp kıyas mümkündür" der, gövdede "öğretide, kanuniliğin daha esnek uygulandığı kabul edilir" diye yumuşatıldı; kitabın askerlik mevzuatındaki oda hapsi ayrığı alınmadı, "kural olarak" kaydı kondu; "denetimi" satırı kitabın idari başvuru tespitinden genişletildi; (8) "yaptırıma bakmak güvenilir bir yöntemdir" paragrafı ve kabahatin "ceza mahkemesinin önüne götürmeyi gerekli görmediği haksızlık" olarak anlatılması, suçun kabahate çevrilebilmesi ve "adli sicile işlenmez" tespiti kitapta yok; öğretideki genel anlatımdır, adli sicil cümlesi Adli Sicil Kanunu'nun yalnız mahkûmiyetleri kaydetmesine dayanır (madde okunmadı, teyit edilmeli); (9) son paragraftaki "beraat eden görevliye disiplin cezası verilebilir" cümlesi kitabın "ceza ve disiplin soruşturması ayrı ayrı yürütülür" tespitinin sonucudur, kitapta bu açıklıkta yok.
 - Yazıyla sayı kontrolü (yerel banka): "on iki yaşını doldurmamış" → TCK md 31/1 ("oniki yaşını doldurmamış") BULUNDU; "on beş yaşını doldurmamış" → Kabahatler Kanunu md 11/1 ("onbeş yaşını doldurmamış") BULUNDU. "dört kategori", "iki biçim", "üç" sayımdır. Rakam: yalnız ders numarası.
-- Gömülü soru yok: public uçtan madde bağıyla aday aranmadı (Kabahatler Kanunu soruları Polis Mevzuatı dersindedir ve başka ders kapsamındadır). Kullanıcı `ders-soru-ara.ts "Ceza Hukuku" "kabahat" "haksız fiil" "disiplin suçu" "idari yaptırım"` çalıştırırsa çıkan yayınlı sorular eklenebilir.
+- Gömülü sorular (bağımsız denetimde eklendi; Kabahatler Kanunu'na bağlı yayınlı sorular, Polis Mevzuatı dersinde de görünür — Doc 57'de başka derste kullanılmadı): 723c056b… (md 9 — beklenen C "kanunda hüküm yoksa hem kasten hem taksirle"); 2a5597ba… (md 11/1 — beklenen B "on beş yaş"); f5200fa8… (md 13 — beklenen B "teşebbüs cezalandırılmaz; kanunda hüküm varsa saklı"). Hepsi share 200, beş şıklı, tek cevaplı; anahtarlar madde metninden. c7259425… (md 2 kabahat tanımı) yedek.
 - OCR: s-056 sonu ve s-057'deki üç karşılaştırma kutusu iki sütun hâlinde ve satırları iç içe okunuyor; satırlar madde metinleriyle eşlenerek ayrıştırıldı. Görüntüye bakılmadı.
 - Madde bağları: TCK md 20, 31, 45; Kabahatler Kanunu md 2, 4, 9, 11, 12, 13.
+- DENETİM DÜZELTMESİ (bağımsız denetim, Opus oturumu, 13 Kas 2026): "adli sicile işlenmez" sonucunun dayanağı 5352 md 4/1: adli sicile kesinleşmiş ceza mahkûmiyetleri kaydedilir; idari yaptırım kararı bu kapsamda değildir.
+- DENETİM DÜZELTMESİ (bağımsız denetim, Opus oturumu, 13 Kas 2026): "Sınavda çıktı" bölümü eklendi; karşılaştırma tablosunun manevi unsur, yaş ve teşebbüs satırlarını yoklayan üç yayınlı Kabahatler Kanunu sorusu gömüldü.
 - AI taslak; insan düzenleme ve yayın onayı bekliyor.

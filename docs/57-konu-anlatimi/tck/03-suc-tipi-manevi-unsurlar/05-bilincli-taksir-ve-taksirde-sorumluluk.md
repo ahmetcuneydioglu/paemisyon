@@ -81,7 +81,7 @@ Son satır dikkat ister. Taksirle yaralamanın soruşturulması kural olarak şi
 
 Aynı sonuca birden fazla kişinin taksiri yol açmış olabilir: narkozu hazırlayan hemşire ile dozu denetlemeden uygulayan hekim, çukuru kapatmayan işçi ile onu fark etmeyen alkollü sürücü. Kanunun kuralı şudur: herkes kendi kusurundan dolayı sorumlu olur ve her failin cezası kusuruna göre ayrı ayrı belirlenir.
 
-Bu kuralın iki sonucu vardır. Birincisi, taksirli suçlarda iştirak hükümleri uygulanmaz. İştirak, birlikte suç işleme kararını, yani kastı gerektirir; taksirle hareket edenler ortak bir karara varmış değildir, her biri kendi özensizliğiyle sonuca katkıda bulunmuştur. İkincisi, faillere ortak ve tek bir ceza verilmez; biri bilinçli, öteki bilinçsiz taksirle hareket etmiş olabilir ve cezaları buna göre ayrışır.
+Bu kuralın iki sonucu vardır. Birincisi, öğretide ve uygulamada taksirli suçlarda iştirak hükümlerinin uygulanmadığı kabul edilir; iştirak, suçun özel görünüş biçimleri bölümünde anlatılacaktır. İştirak, birlikte suç işleme kararını, yani kastı gerektirir; taksirle hareket edenler ortak bir karara varmış değildir, her biri kendi özensizliğiyle sonuca katkıda bulunmuştur. İkincisi, faillere ortak ve tek bir ceza verilmez; biri bilinçli, öteki bilinçsiz taksirle hareket etmiş olabilir ve cezaları buna göre ayrışır.
 
 ## Failin kendi taksirinden mağdur olması
 
@@ -128,4 +128,5 @@ Sorular bilinçli taksiri olay içinde tanımayı, cezaya etkilerini ve birden f
 - OCR: s-045 başında olası kast–bilinçli taksir karşılaştırma kutusu ve s-046'daki dört satırlık tablo sütunları karışık okunuyor; içerik madde metni ve bağlamdan kuruldu. Görüntüye bakılmadı.
 - Madde bağları: TCK md 22, 50, 89.
 - Gömülü sorular: bankadaki yayınlı gerçek sorular, hepsi beş şıklı, share 200 (45c7dab6… yarışan iki sürücü (beklenen: her biri kendi kusuru oranında bilinçli taksir); b9e9487b… sollama (beklenen: bilinçli taksir); e2453f81… bilinçli taksir için doğru olmayan (beklenen: "dörtte bire kadar indirilebilir"; md 22/6 yarıdan altıda bire der); 6594ee87… öncüllü (beklenen: yalnız II, taksirde iştirak yok); 27098bab… yanlış ifade (beklenen: "ortak ve tek bir ceza")). Doğru şık public uçtan görülemez; "beklenen" yanıt dersin içeriğiyle uyumlu olandır, panelde anahtarla karşılaştırılmalı. Soru üretilmedi.
+- DENETİM DÜZELTMESİ (bağımsız denetim, Opus oturumu, 13 Kas 2026): "Taksirli suçlarda iştirak hükümleri uygulanmaz" kanunda açık değil; öğreti ve uygulama kaydı ve iştirak bölümüne gönderme eklendi.
 - AI taslak; insan düzenleme ve yayın onayı bekliyor.
