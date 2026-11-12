@@ -1,7 +1,8 @@
 import { useQueryClient } from "@tanstack/react-query";
 import * as Haptics from "expo-haptics";
-import { useState, type ReactNode } from "react";
+import { createContext, useContext, useState, type ComponentRef, type ReactNode, type Ref } from "react";
 import { ActivityIndicator, Pressable, ScrollView, StyleSheet, Text, TextInput, View, type PressableProps, type StyleProp, type TextInputProps, type TextStyle, type ViewStyle, RefreshControl } from "react-native";
+import { Eye as EyeIcon, EyeOff } from "lucide-react-native";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { useTheme } from "@/theme/ThemeProvider";
 import { size, type TypeRole } from "@/theme/tokens";
@@ -18,6 +19,16 @@ import { size, type TypeRole } from "@/theme/tokens";
  *  `gold`: ham altın — yalnız koyu panel üstünde (geri sayım rakamı). */
 export type Tone = "ink" | "soft" | "subtle" | "accent" | "accentInk" | "gold" | "success" | "danger" | "onAccent" | "panelInk" | "panelSoft";
 
+/**
+ * Alt ağaçtaki her `AppText` için dinamik yazı tavanı. YALNIZ süs/önizleme alanları içindir
+ * (tanıtım kahramanı): orada metin okunmak için değil ürünü göstermek için durur ve ekran
+ * okuyucudan gizlidir; okunacak metin bu sarmalın dışında kalır ve tam büyür.
+ */
+const TextScaleCapContext = createContext<number | null>(null);
+export function TextScaleCap({ max, children }: { max: number; children: ReactNode }) {
+  return <TextScaleCapContext.Provider value={max}>{children}</TextScaleCapContext.Provider>;
+}
+
 /** `variant` tipografi rolüdür; RN `Text`in kendi `role` (erişilebilirlik) prop'u ayrı kalır. */
 export function AppText({
   variant = "body",
@@ -28,6 +39,7 @@ export function AppText({
   ...props
 }: { variant?: TypeRole; tone?: Tone; style?: StyleProp<TextStyle>; children: ReactNode } & Omit<React.ComponentProps<typeof Text>, "style" | "children">) {
   const { colors, type } = useTheme();
+  const cap = useContext(TextScaleCapContext);
   const role = variant;
   const color =
     tone === "soft" ? colors.inkSoft
@@ -44,10 +56,14 @@ export function AppText({
   // Dinamik yazı tavanı: bileşen kendi tavanını verebilir (BigNumber 1,2×, liderlik satırları 1,3×);
   // verilmezse büyük boylar 1,35×, metin boyları 2× (5 Kas 2026'ya kadar dıştan verilen değer eziliyordu).
   return (
-    <Text {...props} maxFontSizeMultiplier={maxFontSizeMultiplier ?? (type[role].fontSize > 17 ? 1.35 : 2)} style={[type[role], { color }, style]}>
+    <Text {...props} maxFontSizeMultiplier={capped(maxFontSizeMultiplier ?? (type[role].fontSize > 17 ? 1.35 : 2), cap)} style={[type[role], { color }, style]}>
       {children}
     </Text>
   );
+}
+
+function capped(own: number, cap: number | null): number {
+  return cap == null ? own : Math.min(own, cap);
 }
 
 /* ---------------------------------------------------------------- Ekran */
@@ -134,9 +150,11 @@ export function Button({
   disabled,
   onPress,
   style,
+  icon,
   ...props
-}: { title: string; variant?: ButtonVariant; loading?: boolean; /** `sm`: satır içi ikincil eylem (44 pt), birincil eylemde kullanılmaz. */ size?: "md" | "sm"; style?: StyleProp<ViewStyle> } & Omit<PressableProps, "style" | "children">) {
+}: { title: string; variant?: ButtonVariant; loading?: boolean; /** `sm`: satır içi ikincil eylem (44 pt), birincil eylemde kullanılmaz. */ size?: "md" | "sm"; style?: StyleProp<ViewStyle>; /** Etiketin solunda (sağlayıcı logosu, ikon); 20 pt önerilir. */ icon?: ReactNode } & Omit<PressableProps, "style" | "children">) {
   const { colors, radius, type } = useTheme();
+  const cap = useContext(TextScaleCapContext);
   const bg = variant === "primary" ? colors.accent : variant === "secondary" ? colors.surface : variant === "destructive" ? colors.danger : "transparent";
   const fg = variant === "primary" ? colors.onAccent : variant === "destructive" ? colors.onAccent : variant === "ghost" ? colors.accentInk : colors.ink;
   const isDisabled = Boolean(disabled) || loading;
@@ -165,30 +183,83 @@ export function Button({
       ]}
       {...props}
     >
-      {loading ? <ActivityIndicator color={fg} /> : <Text style={[type.subhead, size === "sm" ? { color: fg } : { fontSize: 17, lineHeight: 22, color: fg }]}>{title}</Text>}
+      {loading ? (
+        <ActivityIndicator color={fg} />
+      ) : (
+        <View style={{ flexDirection: "row", alignItems: "center", gap: 10 }}>
+          {icon}
+          <Text maxFontSizeMultiplier={cap ?? undefined} style={[type.subhead, size === "sm" ? { color: fg } : { fontSize: 17, lineHeight: 22, color: fg }]}>
+            {title}
+          </Text>
+        </View>
+      )}
     </Pressable>
   );
 }
 
 /* ---------------------------------------------------------------- Metin alanı */
 
-export function TextField({ label, error, style, ...props }: { label: string; error?: string | null } & TextInputProps) {
+export function TextField({
+  label,
+  error,
+  hint,
+  revealable = false,
+  style,
+  secureTextEntry,
+  ref,
+  ...props
+}: {
+  label: string;
+  /** Klavyede "sonraki" ile alana geçiş için (React 19: ref düz prop). */
+  ref?: Ref<ComponentRef<typeof TextInput>>;
+  error?: string | null;
+  /** Hata değil, yönlendirme (yazım önerisi gibi); alanın altında, vurgu renginde. */
+  hint?: ReactNode;
+  /** Şifre alanı: sağda göster/gizle düğmesi (44 pt). `secureTextEntry` ile birlikte kullanılır. */
+  revealable?: boolean;
+} & TextInputProps) {
   const { colors, radius, type, space } = useTheme();
+  const [revealed, setRevealed] = useState(false);
+  const [focused, setFocused] = useState(false);
+  const Eye = revealed ? EyeOff : EyeIcon;
   return (
     <View style={{ gap: space.s2 }}>
       <AppText variant="subhead">{label}</AppText>
+      <View style={{ justifyContent: "center" }}>
       <TextInput
+        ref={ref}
         accessibilityLabel={label}
         placeholderTextColor={colors.inkSubtle}
         style={[
           type.body,
           // lineHeight paragraf stili iOS'ta odak dışındaki tek satırlı alanı sardırıp
           // kutunun dışına taşırıyordu (SE 375 pt, 18 Eki 2026) — alanlarda kullanılmaz.
-          { lineHeight: undefined, minHeight: 52, borderRadius: radius.control, borderWidth: 1, borderColor: error ? colors.danger : colors.line, backgroundColor: colors.surface, color: colors.ink, paddingHorizontal: space.s4 },
+          { lineHeight: undefined, minHeight: 52, borderRadius: radius.control, borderWidth: focused && !error ? 2 : 1, borderColor: error ? colors.danger : focused ? colors.accent : colors.line, backgroundColor: colors.surface, color: colors.ink, paddingHorizontal: focused && !error ? space.s4 - 1 : space.s4, paddingRight: revealable ? 52 : undefined },
           style,
         ]}
+        secureTextEntry={secureTextEntry && !revealed}
         {...props}
+        onFocus={(e) => {
+          setFocused(true);
+          props.onFocus?.(e);
+        }}
+        onBlur={(e) => {
+          setFocused(false);
+          props.onBlur?.(e);
+        }}
       />
+      {revealable ? (
+        <Pressable
+          accessibilityRole="button"
+          accessibilityLabel={revealed ? "Şifreyi gizle" : "Şifreyi göster"}
+          onPress={() => setRevealed((v) => !v)}
+          style={{ position: "absolute", right: 4, width: size.touchTarget, height: size.touchTarget, alignItems: "center", justifyContent: "center" }}
+        >
+          <Eye size={20} color={colors.inkSoft} strokeWidth={1.75} />
+        </Pressable>
+      ) : null}
+      </View>
+      {hint && !error ? (typeof hint === "string" ? <AppText variant="bodySm" tone="accentInk">{hint}</AppText> : hint) : null}
       {error ? (
         <AppText variant="bodySm" tone="danger">
           {error}

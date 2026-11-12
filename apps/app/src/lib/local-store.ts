@@ -1,8 +1,10 @@
 import * as SecureStore from "expo-secure-store";
+import { installReady } from "./install-guard";
 
 /** Küçük, cihaza özel tercihler (tema, görülen tanıtım). Gizli değil; <2 KB. */
 export async function readLocal<T>(key: string, fallback: T): Promise<T> {
   try {
+    await installReady;
     const raw = await SecureStore.getItemAsync(`local.${key}`);
     return raw ? (JSON.parse(raw) as T) : fallback;
   } catch {

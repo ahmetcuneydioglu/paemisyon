@@ -26,6 +26,20 @@ import { isConfigured } from "@/lib/supabase";
 import { ThemeProvider, useTheme } from "@/theme/ThemeProvider";
 
 SplashScreen.preventAutoHideAsync().catch(() => {});
+// Splash'ten uygulamaya sert kesme yerine kısa solma (zemin rengi aynı olduğu için yalnız glif kaybolur).
+SplashScreen.setOptions({ fade: true, duration: 250 });
+
+/**
+ * Splash, yönlendirme kapısı hedef ekrana varınca kalkar (aksi halde "/" = Bugün bir an
+ * çizilip tanıtıma/girişe sıçrar). Ağ takılırsa kullanıcı splash'te kalmasın diye tavan var.
+ */
+let splashHidden = false;
+function hideSplash() {
+  if (splashHidden) return;
+  splashHidden = true;
+  SplashScreen.hideAsync().catch(() => {});
+}
+const SPLASH_MAX_MS = 6000;
 initSentry();
 
 function RootLayout() {
@@ -41,8 +55,11 @@ function RootLayout() {
   const ready = fontsLoaded || Boolean(fontError);
 
   useEffect(() => {
-    if (ready) SplashScreen.hideAsync().catch(() => {});
-  }, [ready]);
+    // Font hatasında ya da yapılandırma eksikse kapı hiç karar vermez; splash'i burada kaldır.
+    if (fontError || (ready && !isConfigured)) hideSplash();
+    const t = setTimeout(hideSplash, SPLASH_MAX_MS);
+    return () => clearTimeout(t);
+  }, [ready, fontError]);
 
   if (!ready) return null;
 
@@ -101,6 +118,19 @@ function RootNavigator() {
     }
     if (group === "(auth)" || group === "tanitim" || group === "onboarding" || group === undefined) router.replace("/(tabs)");
   }, [auth.status, group, router, introSeen, me.data]);
+
+  // Splash yalnız kapının hedefi ekrandayken kalkar; /me hatasında (çevrimdışı) beklemez.
+  useEffect(() => {
+    if (auth.status === "loading" || introSeen === null) return;
+    if (auth.status === "signedOut") {
+      if (group === (introSeen ? "(auth)" : "tanitim")) hideSplash();
+      return;
+    }
+    if (me.isError) return hideSplash();
+    if (!me.data) return;
+    const gate = group === "(auth)" || group === "tanitim" || group === "onboarding" || group === undefined;
+    if (me.data.onboardingCompleted ? !gate : group === "onboarding") hideSplash();
+  }, [auth.status, group, introSeen, me.data, me.isError]);
 
   const ready = auth.status === "signedIn" && Boolean(me.data?.onboardingCompleted) && group !== "(auth)" && group !== "tanitim" && group !== "onboarding";
   return (

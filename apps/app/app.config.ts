@@ -89,10 +89,13 @@ const config: ExpoConfig = {
     [
       "expo-splash-screen",
       {
-        image: "./assets/splash-icon.png",
-        imageWidth: 200,
-        backgroundColor: "#17161A",
-        dark: { backgroundColor: "#17161A" },
+        // Nişangâh P glifi (brand/splash-glyph-*.svg; Figma "Yayın Öncesi — Açılış", 139:7).
+        // Zemin = color/bg: uygulamanın ilk karesiyle aynı, geçişte renk atlaması olmaz.
+        // 1024'lük tuvalde glif ~518 px → imageWidth 220 ile glif ≈ 112 pt.
+        image: "./assets/splash-glyph-light.png",
+        imageWidth: 220,
+        backgroundColor: "#FFFCF6",
+        dark: { image: "./assets/splash-glyph-dark.png", backgroundColor: "#121A26" },
       },
     ],
     [

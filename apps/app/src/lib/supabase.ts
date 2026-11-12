@@ -3,6 +3,7 @@ import { createClient, type SupportedStorage } from "@supabase/supabase-js";
 import * as SecureStore from "expo-secure-store";
 import { AppState } from "react-native";
 import { env } from "./env";
+import { installReady } from "./install-guard";
 
 /**
  * Supabase YALNIZ kimlik için (Doc 8, Doc 49 §2.2): oturum, Apple/Google, e-posta. Veri NestJS
@@ -11,6 +12,8 @@ import { env } from "./env";
 const CHUNK_SIZE = 1800;
 
 async function readChunked(key: string): Promise<string | null> {
+  // Yeniden kurulumda eski oturum önce silinir (install-guard); okuma onu bekler.
+  await installReady;
   const countRaw = await SecureStore.getItemAsync(`${key}.n`);
   if (!countRaw) return null;
   const count = Number(countRaw);

@@ -1,24 +1,31 @@
 import { useRouter } from "expo-router";
-import { Check, ClipboardList, Flame, Map as MapIcon, Target } from "lucide-react-native";
-import { useRef, useState, type ComponentRef } from "react";
+import { CheckCircle2 } from "lucide-react-native";
+import { useRef, useState, type ComponentRef, type ReactNode } from "react";
 import { Pressable, ScrollView, View, useWindowDimensions, type NativeScrollEvent, type NativeSyntheticEvent } from "react-native";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
-import { AppText, Badge, Button, Card, ProgressBar } from "@/components/ui";
+import { ContinueCard, ExamCard, FlashCard, FlashcardStateBar, LawCard, RankRow, RouteList, SummaryUnitRow, TestCard, WeekStrip7 } from "@/components/domain";
+import { AppText, Badge, BrandMark, Button, Card, ScaleToFit, TextScaleCap } from "@/components/ui";
+import { ornekDeneme, ornekDeste, ornekDevam, ornekHafta, ornekKanunlar, ornekKart, ornekOzet, ornekRota, ornekSiralama, ornekTestler } from "@/features/intro/ornekler";
 import { markIntroSeen } from "@/lib/intro-seen";
 import { useTheme } from "@/theme/ThemeProvider";
 
 /**
- * Tanıtım (Doc 25 Bölge 0; Flutter tanıtımıyla aynı beş mesaj, Nöbet diliyle). Kahramanlar
- * görsel değil, kit bileşenleriyle çizilir; böylece tema ve Dynamic Type'a uyar. Son slayt
- * kayda, "Zaten hesabım var" girişe gider; ikisi de bayrağı yazar.
+ * Tanıtım (Doc 25 Bölge 0; Figma "Tanıtım v2", 147:401 — kullanıcı kararı 11 Kas 2026): beş
+ * slayt uygulamanın beş temel yüzeyini GERÇEK alan bileşenleriyle gösterir — Bugün rotası,
+ * bilgi kartı + konu özeti, testler, denemeler, güncel mevzuat. Örnek veri
+ * `features/intro/ornekler.ts`'te (bankadan gerçek içerik). Kahramanlar süstür: ekran okuyucudan
+ * gizlenir (slayt başlık + gövdeyle okunur), dokunuşa kapalıdır; bilgi kartı istisna — çevrilebilir.
+ * Kahraman kalan yüksekliğe `ScaleToFit` ile sığar (SE → Pro Max). Son slayt ve "Atla" girişe
+ * gider; ikisi de tanıtım bayrağını yazar.
  */
 const SLIDES = [
-  { key: "hedef", title: "Hedefin belli.\nArtık yolun da.", body: "Paemisyon, Komiser Yardımcılığı yolculuğunu tek merkezden yöneten kişisel hazırlık koçun." },
-  { key: "soru", title: "Gerçek sınav soruları, kaynağıyla", body: "Yapay zekâ üretimi soru yok. Her soru gerçek sınavlardan; kaynağı bankada kayıtlı, editör denetiminden geçmiş." },
-  { key: "koc", title: "Bugün ne çalışacağını koçun söyler", body: "Zayıf konuların, tekrarı gelen yanlışların ve günün hedefi her sabah tek kartta hazır. Yanlışların unutulmaz." },
-  { key: "harita", title: "Nerede eksiksin, harita gösterir", body: "Kanun kanun, konu konu ısı haritası. Madde Atlası'nda hangi maddeyi fethettiğini görürsün." },
-  { key: "deneme", title: "Canlı denemede yerini gör", body: "Herkes aynı anda yarışır; netin ve Türkiye sıralaman anında ekranda." },
+  { key: "bugun", title: "Her gün rotan hazır", body: "Koçun zayıf konularına ve sınav takvimine bakar; bugün ne çalışacağını sıralı adımlarla önüne koyar." },
+  { key: "kart", title: "Konuyu kartla ve özetle sindir", body: "Her konuda madde dayanaklı bilgi kartları ve kısa konu özetleri: önce özeti oku, sonra kartlarla tekrar et." },
+  { key: "test", title: "Konu konu testlerle pekiştir", body: "Her ders için sıralı testler. İlerlemen kayıtlı; yarım kalan testi kaldığın yerden sürdürürsün." },
+  { key: "deneme", title: "Gerçek sınav düzeninde dene", body: "100 soruluk haftalık denemeler ve çıkmış PAEM sınavları. Netini, ders kırılımını ve Türkiye sıralamanı hemen gör." },
+  { key: "mevzuat", title: "Güncel mevzuat, madde madde", body: "Kanun ve yönetmelikler resmî kaynakla düzenli karşılaştırılır. Metin değişince güncellenir; ilgili kart ve özetler yeniden incelenir." },
 ] as const;
+type SlideKey = (typeof SLIDES)[number]["key"];
 
 export default function TanitimScreen() {
   const router = useRouter();
@@ -29,29 +36,44 @@ export default function TanitimScreen() {
   const scroller = useRef<ComponentRef<typeof ScrollView>>(null);
   const last = index === SLIDES.length - 1;
 
-  const onScroll = (e: NativeSyntheticEvent<NativeScrollEvent>) => setIndex(Math.round(e.nativeEvent.contentOffset.x / width));
-  const go = (i: number) => scroller.current?.scrollTo({ x: i * width, animated: true });
-  const finish = (target: "/(auth)/login") => {
+  const onScrollEnd = (e: NativeSyntheticEvent<NativeScrollEvent>) => setIndex(Math.round(e.nativeEvent.contentOffset.x / width));
+  // Programla kaydırmada iOS onMomentumScrollEnd çağırmaz; sayfa burada da güncellenir
+  // (yoksa art arda "Devam et" aynı slayta gider — göz testi 11 Kas 2026).
+  const go = (i: number) => {
+    setIndex(i);
+    scroller.current?.scrollTo({ x: i * width, animated: true });
+  };
+  const finish = () => {
     markIntroSeen();
-    router.replace(target);
+    router.replace("/(auth)/login");
   };
 
   return (
     <View style={{ flex: 1, backgroundColor: colors.bg, paddingTop: insets.top, paddingBottom: insets.bottom + space.s4 }}>
-      <View style={{ flexDirection: "row", justifyContent: "flex-end", paddingHorizontal: space.screenGutter, minHeight: 44, alignItems: "center" }}>
-        <Pressable accessibilityRole="button" onPress={() => finish("/(auth)/login")} hitSlop={8}>
+      <View style={{ flexDirection: "row", alignItems: "center", gap: space.s2, paddingHorizontal: space.screenGutter, minHeight: 44 }}>
+        <BrandMark size={24} />
+        <AppText variant="brand" style={{ flex: 1 }} accessibilityRole="header">
+          Paemisyon
+        </AppText>
+        <Pressable accessibilityRole="button" onPress={finish} hitSlop={12} style={{ minHeight: 44, justifyContent: "center" }}>
           <AppText variant="subhead" tone="accentInk">
             {last ? "Zaten hesabım var" : "Atla"}
           </AppText>
         </Pressable>
       </View>
-      <ScrollView ref={scroller} horizontal pagingEnabled showsHorizontalScrollIndicator={false} onMomentumScrollEnd={onScroll} style={{ flex: 1 }}>
+
+      <ScrollView ref={scroller} horizontal pagingEnabled showsHorizontalScrollIndicator={false} onMomentumScrollEnd={onScrollEnd} style={{ flex: 1 }}>
         {SLIDES.map((s, i) => (
-          <View key={s.key} style={{ width, paddingHorizontal: space.screenGutter, gap: space.s5 }} accessibilityLabel={`Tanıtım, ${SLIDES.length} ekrandan ${i + 1}.si`}>
-            <View style={{ flex: 1, justifyContent: "center" }}>
-              <Hero kind={s.key} />
-            </View>
-            <View style={{ gap: space.s2, paddingBottom: space.s2 }}>
+          <View key={s.key} style={{ width, paddingHorizontal: space.screenGutter }}>
+            <ScaleToFit style={{ paddingVertical: space.s3 }}>
+              <View accessibilityElementsHidden importantForAccessibility="no-hide-descendants">
+                {/* Önizleme yazısı en fazla 1,2× büyür; başlık ve gövde (aşağıda) tam büyür. */}
+                <TextScaleCap max={1.2}>
+                  <Hero kind={s.key} />
+                </TextScaleCap>
+              </View>
+            </ScaleToFit>
+            <View accessible accessibilityLabel={`${i + 1}/${SLIDES.length}. ${s.title}. ${s.body}`} style={{ gap: space.s2, paddingTop: space.s4, paddingBottom: space.s5 }}>
               <AppText variant="title">{s.title}</AppText>
               <AppText variant="body" tone="soft">
                 {s.body}
@@ -60,131 +82,105 @@ export default function TanitimScreen() {
           </View>
         ))}
       </ScrollView>
+
       <View style={{ paddingHorizontal: space.screenGutter, gap: space.s4 }}>
-        <View style={{ flexDirection: "row", gap: 6, justifyContent: "center" }} accessibilityElementsHidden>
+        <View style={{ flexDirection: "row", gap: 6, justifyContent: "center" }} accessibilityElementsHidden importantForAccessibility="no-hide-descendants">
           {SLIDES.map((s, i) => (
             <View key={s.key} style={{ width: i === index ? 18 : 6, height: 6, borderRadius: 3, backgroundColor: i === index ? colors.accent : colors.surfaceAlt }} />
           ))}
         </View>
-        <Button title={last ? "İlk devriyene çık" : "Devam et"} onPress={() => (last ? finish("/(auth)/login") : go(index + 1))} />
+        <Button title={last ? "Başlayalım" : "Devam et"} onPress={() => (last ? finish() : go(index + 1))} />
       </View>
     </View>
   );
 }
 
-/** Slayt kahramanları: kit bileşenleriyle kurulmuş küçük sahneler (görsel yok). */
-function Hero({ kind }: { kind: (typeof SLIDES)[number]["key"] }) {
-  const { colors, space, radius } = useTheme();
-  if (kind === "hedef")
+/** Dokunuşa kapalı önizleme sarmalı (bileşenlerin kendi basılı durumu ve gezinmesi devre dışı). */
+function Static({ children, gap }: { children: ReactNode; gap?: number }) {
+  return (
+    <View pointerEvents="none" style={{ gap }}>
+      {children}
+    </View>
+  );
+}
+
+const noop = () => {};
+
+function Hero({ kind }: { kind: SlideKey }) {
+  const { colors, space } = useTheme();
+  const [flipped, setFlipped] = useState(false);
+
+  if (kind === "bugun")
     return (
-      <Card style={{ gap: space.s3 }}>
-        <AppText variant="label" tone="accentInk">
-          PAEM 2027’ye
-        </AppText>
-        <View style={{ flexDirection: "row", alignItems: "baseline", gap: 8 }}>
-          <AppText variant="display" tone="accent">
-            184
-          </AppText>
-          <AppText variant="heading">gün</AppText>
-        </View>
-        <View style={{ flexDirection: "row", gap: 6 }}>
-          {[1, 1, 1, 0, 0, 0, 0].map((d, i) => (
-            <View key={i} style={{ width: 10, height: 10, borderRadius: 5, backgroundColor: d ? colors.success : colors.surfaceAlt, borderWidth: i === 3 ? 1.5 : 0, borderColor: colors.accent }} />
-          ))}
-        </View>
-        <View style={{ flexDirection: "row", alignItems: "center", gap: 8 }}>
-          <Target color={colors.accent} size={18} strokeWidth={1.75} />
-          <AppText variant="bodySm" tone="soft">
-            Bu hafta 3/5 gün · tek hedef, tek plan
-          </AppText>
-        </View>
-      </Card>
+      <Static gap={space.s4}>
+        <WeekStrip7 days={ornekHafta} />
+        <RouteList rows={ornekRota} footer={null} />
+      </Static>
     );
-  if (kind === "soru")
+
+  if (kind === "kart")
     return (
-      <Card style={{ gap: space.s3 }}>
-        <Badge tone="success">PAEM 10 · 2026 · çıkmış soru</Badge>
-        <AppText variant="body">PVSK’ya göre polis, durdurduğu kişiye durdurma sebebini bildirir ve…</AppText>
-        {["Kimliğini isteyebilir", "Üstünü dilediği gibi arayabilir"].map((t, i) => (
-          <View key={t} style={{ flexDirection: "row", alignItems: "center", gap: 10, padding: 12, borderRadius: radius.card, backgroundColor: i === 0 ? colors.successSoft : colors.surface, borderWidth: 1, borderColor: i === 0 ? colors.success : colors.line }}>
-            <View style={{ width: 26, height: 26, borderRadius: 13, backgroundColor: i === 0 ? colors.success : colors.surfaceAlt, alignItems: "center", justifyContent: "center" }}>{i === 0 ? <Check color={colors.onAccent} size={14} strokeWidth={2.5} /> : <AppText variant="subhead">B</AppText>}</View>
-            <AppText variant="bodySm" style={{ flex: 1 }}>
-              {t}
+      <View style={{ gap: space.s3 }}>
+        <FlashCard card={ornekKart} flipped={flipped} onFlip={() => setFlipped((v) => !v)} height={236} />
+        <View pointerEvents="none" style={{ gap: space.s2 }}>
+          <View style={{ flexDirection: "row", alignItems: "baseline", gap: space.s2 }}>
+            <AppText variant="subhead">{ornekDeste.total} kart</AppText>
+            <AppText variant="bodySm" tone="soft">
+              {ornekDeste.learned} öğrenildi · {ornekDeste.learning} tekrarda
             </AppText>
           </View>
-        ))}
-      </Card>
-    );
-  if (kind === "koc")
-    return (
-      <Card style={{ gap: space.s3 }}>
-        <View style={{ flexDirection: "row", justifyContent: "space-between" }}>
-          <AppText variant="label" tone="accentInk">
-            Bugünün görevi
-          </AppText>
-          <Badge tone="neutral">10 soru</Badge>
-        </View>
-        <AppText variant="title">Anayasa ile 10 soru</AppText>
-        <AppText variant="bodySm" tone="soft">
-          Zayıf konun Yürütme; koç yeni soruyla çözülmemiş yanlışı dengeler.
-        </AppText>
-        <View style={{ flexDirection: "row", gap: 4 }}>
-          {Array.from({ length: 10 }, (_, i) => (
-            <View key={i} style={{ flex: 1, height: 4, borderRadius: 2, backgroundColor: i < 6 ? colors.accent : colors.surfaceAlt }} />
-          ))}
-        </View>
-      </Card>
-    );
-  if (kind === "harita")
-    return (
-      <Card style={{ gap: space.s3 }}>
-        <View style={{ flexDirection: "row", alignItems: "center", gap: 8 }}>
-          <MapIcon color={colors.accent} size={18} strokeWidth={1.75} />
-          <AppText variant="subhead">Madde Atlası · TCK</AppText>
-        </View>
-        <View style={{ flexDirection: "row", flexWrap: "wrap", gap: 6 }}>
-          {[3, 0, 1, 3, 0, 0, 1, 3, 0, 2, 0, 0, 1, 0, 3, 0].map((v, i) => (
-            <View key={i} style={{ width: 44, height: 32, borderRadius: radius.control, backgroundColor: v === 0 ? colors.surface : v === 1 ? colors.accentSoft : v === 2 ? colors.warningSoft : colors.successSoft, borderWidth: 1, borderColor: v === 0 ? colors.line : "transparent", alignItems: "center", justifyContent: "center" }}>
-              <AppText variant="bodySm" style={{ fontSize: 11, lineHeight: 14, color: v === 3 ? colors.successInk : colors.inkSoft }}>
-                m.{i + 2}
-              </AppText>
-            </View>
-          ))}
-        </View>
-        <ProgressBar value={0.45} tone="success" height={5} />
-        <View style={{ flexDirection: "row", alignItems: "center", gap: 6 }}>
-          <Flame color={colors.success} size={14} strokeWidth={1.75} />
-          <AppText variant="bodySm" tone="soft">
-            7/16 madde temiz · zayıf konu kırmızıda
-          </AppText>
-        </View>
-      </Card>
-    );
-  return (
-    <Card style={{ gap: space.s3 }}>
-      <View style={{ flexDirection: "row", justifyContent: "space-between", alignItems: "center" }}>
-        <Badge tone="accent">Canlı</Badge>
-        <View style={{ flexDirection: "row", alignItems: "center", gap: 6 }}>
-          <ClipboardList color={colors.inkSoft} size={16} strokeWidth={1.75} />
-          <AppText variant="bodySm" tone="soft">
-            312 katılımcı
-          </AppText>
+          <FlashcardStateBar counts={ornekDeste} />
+          <Card style={{ paddingVertical: 0, marginTop: space.s2 }}>
+            <SummaryUnitRow unit={ornekOzet} onPress={noop} />
+          </Card>
         </View>
       </View>
-      <AppText variant="heading">PAEM 10 Deneme-4</AppText>
-      {[
-        ["🥇", "Mert K.", "71.25"],
-        ["🥈", "Sen", "68.50"],
-        ["🥉", "Ayşe D.", "66.00"],
-      ].map(([m, n, s]) => (
-        <View key={n} style={{ flexDirection: "row", alignItems: "center", gap: 10, paddingVertical: 6, backgroundColor: n === "Sen" ? colors.accentSoft : "transparent", borderRadius: radius.control, paddingHorizontal: 8 }}>
-          <AppText variant="subhead">{m}</AppText>
-          <AppText variant="subhead" style={{ flex: 1 }} tone={n === "Sen" ? "accentInk" : "ink"}>
-            {n}
-          </AppText>
-          <AppText variant="stat">{s}</AppText>
+    );
+
+  if (kind === "test")
+    return (
+      <Static gap={space.s3}>
+        <View style={{ flexDirection: "row", alignItems: "center", justifyContent: "space-between" }}>
+          <AppText variant="heading">Polis Mevzuatı</AppText>
+          <Badge>75 test</Badge>
         </View>
+        {[0, 2].map((start) => (
+          <View key={start} style={{ flexDirection: "row", gap: space.s3 }}>
+            {ornekTestler.slice(start, start + 2).map((t) => (
+              <TestCard key={t.number} {...t} onPress={noop} />
+            ))}
+          </View>
+        ))}
+        <View style={{ flexDirection: "row", alignItems: "center", gap: space.s2 }}>
+          <CheckCircle2 size={16} color={colors.success} strokeWidth={1.75} />
+          <AppText variant="bodySm" tone="soft">
+            Test 1’deki yanlışların Tekrar’a düştü
+          </AppText>
+        </View>
+      </Static>
+    );
+
+  if (kind === "deneme")
+    return (
+      <Static gap={space.s3}>
+        <ExamCard exam={ornekDeneme} onAction={noop} />
+        <Card style={{ paddingHorizontal: 0, paddingVertical: space.s2, gap: 0 }}>
+          <AppText variant="label" tone="subtle" style={{ paddingHorizontal: space.s4, paddingVertical: space.s2 }}>
+            SIRALAMA · PAEM11 DENEME-1
+          </AppText>
+          {ornekSiralama.map((r) => (
+            <RankRow key={r.rank} {...r} />
+          ))}
+        </Card>
+      </Static>
+    );
+
+  return (
+    <Static gap={space.s3}>
+      <ContinueCard resume={ornekDevam} first={null} onOpen={noop} />
+      {ornekKanunlar.map((l) => (
+        <LawCard key={l.slug} law={l} onPress={noop} verified />
       ))}
-    </Card>
+    </Static>
   );
 }

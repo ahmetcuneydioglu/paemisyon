@@ -19,12 +19,23 @@ export class SocialSignInCancelled extends Error {
   }
 }
 
+/**
+ * Google girişi bu derlemede kullanılabilir mi? iOS'ta iOS istemci kimliği yeter (kimlik belirtecinin
+ * alıcısı odur; Supabase Client IDs listesinde kayıtlı). Android'de web istemci kimliği şart.
+ * Not (11 Kas 2026): EAS production ortamında web kimliği YOK; önceki kural düğmeyi iOS'ta da
+ * gizliyordu.
+ */
+export function googleAvailable(): boolean {
+  if (!env) return false;
+  return Platform.OS === "ios" ? Boolean(env.googleIosClientId || env.googleWebClientId) : Boolean(env.googleWebClientId);
+}
+
 let googleConfigured = false;
 function configureGoogle() {
   if (googleConfigured) return;
-  if (!env?.googleWebClientId) throw new Error("Google ile giriş bu derlemede yapılandırılmadı.");
+  if (!env || !googleAvailable()) throw new Error("Google ile giriş bu derlemede yapılandırılmadı.");
   GoogleSignin.configure({
-    webClientId: env.googleWebClientId,
+    webClientId: env.googleWebClientId || undefined,
     iosClientId: Platform.OS === "ios" ? env.googleIosClientId || undefined : undefined,
     scopes: ["email", "profile"],
   });

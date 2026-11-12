@@ -1,4 +1,4 @@
-import { ChevronRight, Clock } from "lucide-react-native";
+import { CheckCircle2, ChevronRight, Clock } from "lucide-react-native";
 import { Pressable, View } from "react-native";
 import { AppText, Badge, Card, ProgressBar } from "@/components/ui";
 import { TYPE_LABEL, type MerkezLaw } from "@/features/mevzuat/queries";
@@ -34,8 +34,9 @@ export function progressLabel(law: Pick<MerkezLaw, "percent" | "lastRead">): str
 /* ---------------------------------------------------------------- Kanun kartı */
 
 /** Mevzuat sekmesi kanun kartı: rozet + ad, madde/soru sayıları, ilerleme çubuğu. Dokunma hedefi tüm kart. */
-export function LawCard({ law, onPress }: { law: MerkezLaw; onPress: () => void }) {
+export function LawCard({ law, onPress, verified = false }: { law: MerkezLaw; onPress: () => void; /** Son resmî kaynak karşılaştırması ("Güncel · 11 Kas 2026"). */ verified?: boolean }) {
   const { colors, space, radius } = useTheme();
+  const verifiedLabel = verified && law.lastVerifiedAt ? `Güncel · ${new Date(law.lastVerifiedAt).toLocaleDateString("tr-TR", { day: "numeric", month: "short", year: "numeric" })}` : null;
   const meta = [`${law.articleCount} madde`, law.questionCount > 0 ? `${law.questionCount} soru çıkmış` : null].filter(Boolean).join(" · ");
   return (
     <Pressable
@@ -58,9 +59,19 @@ export function LawCard({ law, onPress }: { law: MerkezLaw; onPress: () => void 
         </AppText>
         <ChevronRight size={18} color={colors.inkSubtle} />
       </View>
-      <AppText variant="bodySm" tone="soft">
-        {meta}
-      </AppText>
+      <View style={{ flexDirection: "row", alignItems: "center", gap: space.s2 }}>
+        <AppText variant="bodySm" tone="soft" style={{ flex: 1 }}>
+          {meta}
+        </AppText>
+        {verifiedLabel ? (
+          <View style={{ flexDirection: "row", alignItems: "center", gap: 4 }}>
+            <CheckCircle2 size={14} color={colors.success} strokeWidth={1.75} />
+            <AppText variant="bodySm" style={{ color: colors.successInk }}>
+              {verifiedLabel}
+            </AppText>
+          </View>
+        ) : null}
+      </View>
       <View style={{ flexDirection: "row", alignItems: "center", gap: space.s3 }}>
         <ProgressBar value={law.percent / 100} height={4} style={{ flex: 1 }} label={`${lawShort(law)} okuma ilerlemesi`} tone={law.percent >= 100 ? "success" : "accent"} />
         <AppText variant="label" tone={law.lastRead ? "accentInk" : "subtle"}>

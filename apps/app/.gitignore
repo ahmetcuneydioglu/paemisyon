@@ -1,7 +1,9 @@
 # Learn more https://docs.github.com/en/get-started/getting-started-with-git/ignoring-files
 
 # dependencies
-node_modules/
+# Sondaki / OLMADAN: worktree'lerde node_modules bir kısayol (symlink) olur ve `node_modules/`
+# onu yakalamaz; 11b7c3ef böyle bir kısayolu depoya soktu, ana ağaçta kendini gösterip Metro'yu düşürdü.
+node_modules
 
 # Expo
 .expo/

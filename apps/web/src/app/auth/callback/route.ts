@@ -1,4 +1,4 @@
-import type { EmailOtpType } from "@supabase/supabase-js";
+import { isAuthPKCECodeVerifierMissingError, type EmailOtpType } from "@supabase/supabase-js";
 import { NextRequest, NextResponse } from "next/server";
 import { safeNext } from "@/lib/auth";
 import { supabaseServer } from "@/lib/supabase/server";
@@ -37,6 +37,18 @@ export async function GET(request: NextRequest) {
     }));
   } else {
     error = new Error("Doğrulama kodu yok.");
+  }
+
+  // PKCE kodu BAŞKA bir istemcide (mobil uygulama) üretildiyse eşleşen verifier bu
+  // tarayıcıda yoktur ve oturum buraya taşınamaz (11 Kas 2026, mobil kayıt E2E).
+  // Doğrulama e-postasında hesap Supabase /verify adımında ZATEN doğrulanmıştır;
+  // kullanıcıya genel hata yerine durumunu söyleyen sayfa gösterilir. Kalıcı çözüm
+  // e-posta şablonlarının token_hash bağlantısına geçmesidir (yukarıdaki dal).
+  if (code && isAuthPKCECodeVerifierMissingError(error)) {
+    const url = new URL("/auth-hatasi", request.url);
+    url.searchParams.set("neden", "baska-cihaz");
+    url.searchParams.set("next", next);
+    return NextResponse.redirect(url);
   }
 
   const destination = new URL(error ? "/auth-hatasi" : next, request.url);

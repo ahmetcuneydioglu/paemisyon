@@ -17,3 +17,6 @@ export * from "./action-tile";
 export * from "./big-number";
 
 export * from "./choice-tabs";
+export * from "./brand-mark";
+export * from "./scale-to-fit";
+export * from "./provider-marks";

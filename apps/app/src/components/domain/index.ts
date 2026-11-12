@@ -37,3 +37,4 @@ export * from "./flashcards";
 export * from "./leaderboard";
 export * from "./review-prompt-sheet";
 export * from "./review-prompt-host";
+export * from "./auth-scaffold";
