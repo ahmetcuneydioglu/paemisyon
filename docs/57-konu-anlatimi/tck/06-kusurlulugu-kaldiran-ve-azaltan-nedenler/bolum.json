@@ -1,0 +1,20 @@
+{
+  "slug": "tck-kusurlulugu-kaldiran-ve-azaltan-nedenler",
+  "title": "Kusurluluğu Kaldıran ve Azaltan Nedenler",
+  "subtitle": "Zorunluluk hâli, amirin emri, cebir ve tehdit, beklenmeyen durum ve zorlayıcı neden, hata, haksız tahrik",
+  "courseName": "Ceza Hukuku",
+  "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+  "sortOrder": 6,
+  "isPremium": true,
+  "aiDraft": true,
+  "book": { "label": "THEMIS Ceza Hukuku Genel Hükümler, 21. baskı, 2025", "page": "s.104–118" },
+  "lessons": [
+    { "file": "01-zorunluluk-hali.md", "slug": "tck-zorunluluk-hali", "page": "s.104–106" },
+    { "file": "02-amirin-emri.md", "slug": "tck-amirin-emrini-yerine-getirme", "page": "s.107–108" },
+    { "file": "03-cebir-tehdit-beklenmeyen-durum-ve-zorlayici-neden.md", "slug": "tck-cebir-tehdit-beklenmeyen-durum-ve-zorlayici-neden", "page": "s.108–109" },
+    { "file": "04-hata-ve-maddi-unsurlarda-hata.md", "slug": "tck-hata-ve-maddi-unsurlarda-hata", "page": "s.109–112" },
+    { "file": "05-nitelikli-hallerde-hata-ve-kacinilmaz-hata.md", "slug": "tck-nitelikli-hallerde-hata-ve-kacinilmaz-hata", "page": "s.111–115" },
+    { "file": "06-haksiz-tahrikin-kosullari.md", "slug": "tck-haksiz-tahrikin-kosullari", "page": "s.115–117" },
+    { "file": "07-haksiz-tahrikin-sonuclari-ve-diger-kurumlarla-iliskisi.md", "slug": "tck-haksiz-tahrikin-sonuclari-ve-diger-kurumlarla-iliskisi", "page": "s.115–118" }
+  ]
+}
