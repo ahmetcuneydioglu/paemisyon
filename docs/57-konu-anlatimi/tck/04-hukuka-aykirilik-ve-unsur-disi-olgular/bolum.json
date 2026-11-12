@@ -1,0 +1,20 @@
+{
+  "slug": "tck-hukuka-aykirilik-ve-unsur-disi-olgular",
+  "title": "Hukuka Aykırılık ve Suçun Unsuru Sayılmayan Olgular",
+  "subtitle": "Hukuka uygunluk nedenleri, meşru savunma, görevin yerine getirilmesi, rıza, sınırın aşılması; cezalandırılabilme koşulu, kişisel cezasızlık; suç, kabahat ve disiplin suçu ayrımı",
+  "courseName": "Ceza Hukuku",
+  "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+  "sortOrder": 4,
+  "isPremium": true,
+  "aiDraft": true,
+  "book": { "label": "THEMIS Ceza Hukuku Genel Hükümler, 21. baskı, 2025", "page": "s.81–98" },
+  "lessons": [
+    { "file": "01-hukuka-aykirilik-ve-hukuka-uygunluk-nedenleri.md", "slug": "tck-hukuka-aykirilik-ve-hukuka-uygunluk-nedenleri", "page": "s.81–84" },
+    { "file": "02-mesru-savunma.md", "slug": "tck-mesru-savunma", "page": "s.84–87" },
+    { "file": "03-kanun-hukmunu-yerine-getirme-ve-hakkin-kullanilmasi.md", "slug": "tck-kanun-hukmu-ve-hakkin-kullanilmasi", "page": "s.87–91" },
+    { "file": "04-ilgilinin-rizasi.md", "slug": "tck-ilgilinin-rizasi", "page": "s.88–89" },
+    { "file": "05-sinirin-asilmasi.md", "slug": "tck-sinirin-asilmasi", "page": "s.91–92" },
+    { "file": "06-sucun-unsuru-sayilmayan-olgular.md", "slug": "tck-sucun-unsuru-sayilmayan-olgular", "page": "s.93–95" },
+    { "file": "07-suc-haksiz-fiil-kabahat-ve-disiplin-sucu.md", "slug": "tck-suc-haksiz-fiil-kabahat-ve-disiplin-sucu", "page": "s.95–98" }
+  ]
+}
