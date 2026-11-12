@@ -281,16 +281,70 @@ function sıradaki(input: BugunV3Input): NextStep {
       action: { ...t.action, source: 'home_next' },
     };
   }
-  // 5) Genel: Doc 48 kartının önerisi (zayıf konu / koç turu).
+  // 5) Genel: Doc 48 kartının önerisi (plan konusu / odak / yanlışlar / koç turu). Üst satır ve
+  // rozet Başla'nın GERÇEKTEN başlattığı odaktan gelir (13 Kas 2026: üst satır en zayıf konuyu,
+  // düğme planın Genel Kültür odağını gösteriyordu).
+  const etiket = odakEtiketi(input, t.action.focus);
   return {
     kind: 'questions',
-    eyebrow: zayif ? `SIRADAKİ · ${zayif.courseName} · ${zayif.name}` : 'SIRADAKİ · KOÇ TURU',
+    eyebrow: etiket.eyebrow,
     title: t.title,
     reason: t.reason,
-    badge: zayif ? `%${Math.round(zayif.accuracy * 100)} · en zayıf` : null,
+    badge: etiket.badge,
     estimateMin: t.action.count ? dk(t.action.count) : null,
     action: { ...t.action, source: 'home_next' },
   };
+}
+
+/** Bir turun odağı plan kalemi mi (bitmemiş konu kalemi)? */
+function planKonusuMu(input: BugunV3Input, topicId: string | null | undefined): boolean {
+  if (!topicId) return false;
+  return (input.plan?.items ?? []).some(
+    (k) => k.kind === 'topic' && k.topicId === topicId && k.status !== 'done',
+  );
+}
+
+/**
+ * Sıradaki adımın üst satırı ve rozeti, eylemin odağına göre: plan konusu → "PLAN · <konu>",
+ * konu/ders → "<ad>", yanlışlar → "YANLIŞLAR", koç karışımı → ağırlık verdiği en zayıf konu.
+ * "en zayıf" rozeti yalnız başlatılan konu gerçekten en zayıf konuysa (ya da koç onu ağırlıklıyorsa).
+ */
+export function odakEtiketi(
+  input: BugunV3Input,
+  focus: DailyFocusView | undefined,
+): { eyebrow: string; badge: string | null; detail: string | null } {
+  const zayif = input.readiness.weakest[0] ?? null;
+  const zayifRozet = zayif ? `%${Math.round(zayif.accuracy * 100)} · en zayıf` : null;
+  if (!focus || focus.kind === 'coach') {
+    return zayif
+      ? {
+          eyebrow: `SIRADAKİ · ${zayif.courseName} · ${zayif.name}`,
+          badge: zayifRozet,
+          detail: zayif.courseName,
+        }
+      : { eyebrow: 'SIRADAKİ · KOÇ TURU', badge: null, detail: 'Koç karışımı' };
+  }
+  if (focus.kind === 'wrongs') {
+    return { eyebrow: 'SIRADAKİ · YANLIŞLAR', badge: null, detail: 'Yanlışlar' };
+  }
+  const ad = focus.label ?? 'Odak';
+  const plan = focus.kind === 'topic' && planKonusuMu(input, focus.topicId);
+  return {
+    eyebrow: `SIRADAKİ · ${plan ? 'PLAN · ' : ''}${ad}`,
+    badge: zayif && focus.topicId && zayif.topicId === focus.topicId ? zayifRozet : null,
+    detail: plan ? `Plan · ${ad}` : ad,
+  };
+}
+
+/**
+ * Haftalık plan kaleminin bugünkü payı (dk): kalan süre ÷ haftanın kalan günü (bugün dahil, TR
+ * Pazartesi başı), en az 10 dk, kalan süreyi aşmaz. 13 Kas 2026: rota 90 dk'yı tek güne yazıyordu.
+ */
+export function gunlukPay(kalanDk: number, now: Date): number {
+  if (kalanDk <= 0) return 0;
+  const gun = new Date(now.getTime() + 3 * 3600 * 1000).getUTCDay(); // 0 = Pazar
+  const kalanGun = gun === 0 ? 1 : 8 - gun;
+  return Math.min(kalanDk, Math.max(10, Math.round(kalanDk / kalanGun)));
 }
 
 /** Günlük yanlış porsiyonu: kuyruk ve bugün çözülenin büyüğü, en çok 20. */
@@ -367,7 +421,8 @@ function rota(input: BugunV3Input, next: NextStep): RouteItem[] {
       key: 'questions:next',
       kind: 'questions',
       label: next.action.count ? `${next.action.count} soru` : 'Soru turu',
-      detail: zayif?.courseName ?? null,
+      // Alt satır adımın başlattığı odak (ana kartla aynı kaynak; 13 Kas 2026).
+      detail: odakEtiketi(input, next.action.focus).detail,
       estimateMin: next.action.count ? dk(next.action.count) : null,
       done: input.answeredToday >= input.goal,
       action: { ...next.action, source: 'home_route' },
@@ -461,14 +516,20 @@ function rota(input: BugunV3Input, next: NextStep): RouteItem[] {
     if (items.length >= ROTA_EN_COK) break;
     if (k.status === 'done') continue;
     if (k.kind === 'topic' && k.topicId && k.topicId === u?.session.topicId) continue;
+    // Sıradaki adım zaten bu plan konusunu başlatıyorsa rotada ikinci kez yazılmaz (13 Kas 2026).
+    if (k.kind === 'topic' && k.topicId && k.topicId === next.action.focus?.topicId) continue;
     if (k.kind === 'topic' && k.topicId) {
       const cevaplanan = input.todayTopicAnswered[k.topicId] ?? 0;
       items.push({
         key: `plan:${k.id}`,
         kind: 'plan_topic',
         label: k.topicName ?? 'Plan konusu',
-        detail: cevaplanan > 0 ? `${cevaplanan} soru çözüldü` : null,
-        estimateMin: k.remainingMinutes,
+        detail:
+          cevaplanan > 0
+            ? `${cevaplanan} soru çözüldü`
+            : `Plan · bu hafta ${k.remainingMinutes} dk kaldı`,
+        // Bugünün payı: haftanın kalanı ÷ kalan gün (90 dk'lık haftalık kalan tek güne yazılmaz).
+        estimateMin: gunlukPay(k.remainingMinutes, input.now),
         done: cevaplanan >= 10,
         action: soruBaslat(10, topicFocus(k.topicId, k.topicName ?? ''), 'home_route'),
       });
@@ -503,10 +564,12 @@ function rota(input: BugunV3Input, next: NextStep): RouteItem[] {
   return items.slice(0, Math.max(ROTA_EN_AZ, Math.min(ROTA_EN_COK, items.length)));
 }
 
-function seninIcin(input: BugunV3Input, next: NextStep): ForYouItem[] {
+function seninIcin(input: BugunV3Input, next: NextStep, route: RouteItem[]): ForYouItem[] {
   const out: ForYouItem[] = [];
+  // Rotada ya da ana kartta olan şey burada tekrar edilmez (13 Kas 2026).
+  const rotada = new Set(route.map((r) => r.kind));
   const n = input.readiness.unresolvedWrongCount;
-  if (n > 0 && next.kind !== 'review') {
+  if (n > 0 && next.kind !== 'review' && !rotada.has('review')) {
     const count = Math.min(n, 20);
     out.push({
       kind: 'wrongs',
@@ -536,8 +599,10 @@ function seninIcin(input: BugunV3Input, next: NextStep): ForYouItem[] {
       },
     });
   }
-  const nextTopicId = input.weakestUnit?.session.topicId ?? null;
-  const ikinci = input.readiness.weakest.find((w) => w.topicId !== nextTopicId) ?? null;
+  const kullanilan = new Set(
+    [input.weakestUnit?.session.topicId, next.action.focus?.topicId].filter(Boolean) as string[],
+  );
+  const ikinci = input.readiness.weakest.find((w) => !kullanilan.has(w.topicId)) ?? null;
   if (ikinci) {
     out.push({
       kind: 'weak_topic',
@@ -562,7 +627,7 @@ function seninIcin(input: BugunV3Input, next: NextStep): ForYouItem[] {
   }
   // Vadesi gelen kartlar (Doc 56): sıradaki adım kart tekrarı değilse tek dokunuşla tekrar.
   const kart = input.flashcards;
-  if (kart && kart.due > 0 && next.kind !== 'flashcards') {
+  if (kart && kart.due > 0 && next.kind !== 'flashcards' && !rotada.has('flashcards')) {
     out.push({
       kind: 'flashcards_due',
       label: `Kart tekrarı · ${kart.due} kart`,
@@ -590,5 +655,6 @@ function seninIcin(input: BugunV3Input, next: NextStep): ForYouItem[] {
 /** `week` servis katmanında eklenir (hacim/rütbe bağlamı burada yok). */
 export function computeHomeV3(input: BugunV3Input): Omit<HomeV3, 'week' | 'today'> {
   const nextStep = sıradaki(input);
-  return { nextStep, route: rota(input, nextStep), forYou: seninIcin(input, nextStep) };
+  const route = rota(input, nextStep);
+  return { nextStep, route, forYou: seninIcin(input, nextStep, route) };
 }

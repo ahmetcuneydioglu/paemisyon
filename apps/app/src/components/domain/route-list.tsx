@@ -112,7 +112,7 @@ export function RouteList({
       {footer || onPlan ? (
         <View style={large ? { alignItems: "flex-start", gap: space.s1 } : { flexDirection: "row", justifyContent: "space-between", alignItems: "center", gap: space.s2 }}>
           <Pressable accessibilityRole={onFooter ? "button" : undefined} disabled={!onFooter} onPress={onFooter} hitSlop={8} style={{ flex: large ? undefined : 1, minHeight: 32, justifyContent: "center" }}>
-            <AppText variant="bodySm" tone="soft" style={{ fontVariant: ["tabular-nums"] }} numberOfLines={large ? undefined : 1}>
+            <AppText variant="bodySm" tone="soft" style={{ fontVariant: ["tabular-nums"] }} numberOfLines={large ? undefined : 2}>
               {footer ?? ""}
             </AppText>
           </Pressable>

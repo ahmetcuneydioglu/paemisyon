@@ -387,12 +387,15 @@ export function haftaOzeti(items: readonly KalemDurumu[]) {
     }),
     { targetMinutes: 0, doneMinutes: 0, targetQuestions: 0, doneQuestions: 0 },
   );
-  const pct =
-    t.targetMinutes > 0
-      ? Math.min(
-          100,
-          Math.round((Math.min(t.doneMinutes, t.targetMinutes) / t.targetMinutes) * 100),
-        )
-      : 0;
+  // Yüzde dakika ve soru oranının BÜYÜĞÜ (13 Kas 2026): kalem "tamam"ı zaten ikisinden birine
+  // bakıyor; yalnız dakika sayılınca hızlı/kısa çalışan "12 / 300 soru" ile %0 görüyordu.
+  const oran = (done: number, target: number) => (target > 0 ? Math.min(done, target) / target : 0);
+  const pct = Math.min(
+    100,
+    Math.round(
+      Math.max(oran(t.doneMinutes, t.targetMinutes), oran(t.doneQuestions, t.targetQuestions)) *
+        100,
+    ),
+  );
   return { ...t, pct };
 }

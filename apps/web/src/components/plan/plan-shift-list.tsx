@@ -65,10 +65,15 @@ export function PlanShiftList({
           {items.map((it, idx) => {
             const done = it.status === "done";
             const active = !done && it.status !== "skipped";
-            const pct =
+            // Dakika ve soru oranının büyüğü (API haftaOzeti ile aynı kural).
+            const pct = Math.max(
               it.targetMinutes > 0
                 ? Math.min(1, it.doneMinutes / it.targetMinutes)
-                : 0;
+                : 0,
+              it.targetQuestions > 0
+                ? Math.min(1, it.doneQuestions / it.targetQuestions)
+                : 0,
+            );
             const body = (
               <>
                 <span className="flex items-start gap-3">

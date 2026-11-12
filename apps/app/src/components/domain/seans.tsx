@@ -40,14 +40,17 @@ export function SessionTopRow({
   center?: ReactNode;
 }) {
   const { space } = useTheme();
-  const collapse = scrollY && collapsedLabel ? scrollY.interpolate({ inputRange: [48, 112], outputRange: [0, 1], extrapolate: "clamp" }) : null;
+  // Etiket ile ince başlık ARDIŞIK geçer, hiçbir konumda üst üste binmez (13 Kas 2026: kaydırma
+  // 48–112 arasında durunca "Alıştırma" ile "2 / 10 · Genel Kültür" yarı saydam üst üste kalıyordu).
+  const collapse = scrollY && collapsedLabel ? scrollY.interpolate({ inputRange: [80, 112], outputRange: [0, 1], extrapolate: "clamp" }) : null;
+  const labelOpacity = scrollY && collapsedLabel ? scrollY.interpolate({ inputRange: [48, 80], outputRange: [1, 0], extrapolate: "clamp" }) : 1;
   return (
     <View style={{ height: 44, flexDirection: "row", alignItems: "center", paddingHorizontal: space.s3 }}>
       <IconButton icon={X} label={closeLabel} variant="ghost" onPress={onClose} />
       <View style={{ flex: 1, alignItems: "center", justifyContent: "center", minHeight: 44 }}>
         {center ?? (
           <>
-            <Animated.View style={{ position: "absolute", opacity: collapse ? Animated.subtract(1, collapse) : 1 }}>
+            <Animated.View style={{ position: "absolute", opacity: labelOpacity }}>
               <AppText variant="bodySm" tone="soft" numberOfLines={1}>
                 {label}
               </AppText>
@@ -418,8 +421,9 @@ export function ResultPanel({ correct, total, pct, durationLabel, label = "Tur t
   const { colors, radius, space, type } = useTheme();
   const { width } = useWindowDimensions();
   const heroSize = width < COMPACT_WIDTH ? 80 : 96;
-  // Lora'nın eğik çizgisi alt satıra taşmasın: satır 1,04 × boy (CountdownHero kuralı; Figma kusuru 3).
-  const heroLine = Math.round(heroSize * 1.04);
+  // Lora'nın eğik çizgisi alt satıra taşmasın: satır kutusu 1,22 × boy (13 Kas 2026 simülatörde
+  // ölçüldü: 1,04'te "/" "Doğruluk" satırına giriyor, rakamlar üstteki etikete yapışıyordu).
+  const heroLine = Math.round(heroSize * 1.22);
   const sub = subOverride ?? [pct == null ? null : `Doğruluk %${pct}`, durationLabel].filter(Boolean).join(" · ");
   return (
     <View accessible accessibilityLabel={`${label}: ${hero ?? `${total} soruda ${correct} doğru`}${sub ? `, ${sub}` : ""}`} style={{ backgroundColor: colors.panel, borderRadius: radius.panel, paddingHorizontal: space.s4, paddingTop: space.s3, paddingBottom: space.s4, gap: space.s1 }}>
@@ -430,7 +434,7 @@ export function ResultPanel({ correct, total, pct, durationLabel, label = "Tur t
         {hero ?? `${correct}/${total}`}
       </AppText>
       {sub ? (
-        <AppText variant="subhead" tone="panelSoft" style={[type.subhead, { fontSize: 15 }]}>
+        <AppText variant="subhead" tone="panelSoft" style={[type.subhead, { fontSize: 15, paddingTop: space.s2 }]}>
           {sub}
         </AppText>
       ) : null}

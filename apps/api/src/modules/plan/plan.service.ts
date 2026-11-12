@@ -94,6 +94,8 @@ export interface PlanBrief {
     courseName: string | null;
     targetMinutes: number;
     doneMinutes: number;
+    targetQuestions: number;
+    doneQuestions: number;
     remainingMinutes: number;
     status: PlanItemView['status'];
   }[];
@@ -266,6 +268,8 @@ export class PlanService {
         courseName: i.courseName,
         targetMinutes: i.targetMinutes,
         doneMinutes: i.doneMinutes,
+        targetQuestions: i.targetQuestions,
+        doneQuestions: i.doneQuestions,
         remainingMinutes: i.remainingMinutes,
         status: i.status,
       })),

@@ -40,7 +40,14 @@ export function WeekStrip7({ days }: { days: WeekDayState[] }) {
                 borderColor: colors.line,
               }}
             >
-              {isDone ? <Check color={colors.ink} size={18} strokeWidth={2.25} /> : today ? <View style={{ width: 8, height: 8, borderRadius: 4, backgroundColor: colors.onAccent }} /> : null}
+              {isDone ? (
+                <Check color={colors.ink} size={18} strokeWidth={2.25} />
+              ) : today ? (
+                <View style={{ width: 8, height: 8, borderRadius: 4, backgroundColor: colors.onAccent }} />
+              ) : d === "missed" ? (
+                // Kaçan gün gelecek günden ayrılsın (13 Kas 2026): kısa soluk çizgi; kırmızı/ceza dili yok.
+                <View style={{ width: 12, height: 2, borderRadius: 1, backgroundColor: colors.inkSubtle }} />
+              ) : null}
             </View>
           </View>
         );

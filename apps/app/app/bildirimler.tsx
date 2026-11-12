@@ -70,7 +70,7 @@ export default function BildirimlerScreen() {
               <Chip label="Tümü" selected={!unreadOnly} onPress={() => setUnreadOnly(false)} />
               <Chip label={unread ? `Okunmamış · ${unread}` : "Okunmamış"} selected={unreadOnly} onPress={() => setUnreadOnly(true)} />
               <View style={{ flex: 1 }} />
-              {unread > 0 ? <Button title="Tümünü okundu say" variant="ghost" size="sm" loading={readAll.isPending} onPress={() => readAll.mutate()} /> : null}
+              {unread > 0 ? <Button title="Tümünü okundu say" variant="ghost" size="sm" loading={readAll.isPending} onPress={() => readAll.mutate()} style={{ marginHorizontal: -14 }} /> : null}
             </View>
             {inbox.isError ? (
               <Notice tone="error" title="Bildirimler alınamadı">

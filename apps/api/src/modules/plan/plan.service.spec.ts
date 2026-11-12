@@ -66,7 +66,8 @@ describe('PlanService (Doc 49/12 F8-A)', () => {
     expect(r.plan!.thisWeek.summary).toMatchObject({
       targetMinutes: 120,
       doneMinutes: 30,
-      pct: 25,
+      // Dakika %25, soru oranı %75 → yüzde ikisinin büyüğü (13 Kas 2026 kuralı).
+      pct: 75,
       offPlanQuestions: 5,
     });
     // Başlanmış ama bitmemiş kalem (CMK 30/60) önce gelir; TCK 0/60 geride kalsa da.

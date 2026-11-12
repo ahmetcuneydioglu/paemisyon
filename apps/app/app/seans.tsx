@@ -1,7 +1,7 @@
 import { useQueryClient } from "@tanstack/react-query";
 import { useLocalSearchParams, useRouter } from "expo-router";
 import { ALargeSmall, Ellipsis, ExternalLink, Flag, Share2 } from "lucide-react-native";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState, type ComponentRef } from "react";
 import { Alert, Animated, Linking, Platform, Pressable, View } from "react-native";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { ExamActionBar, ExamFeedbackBox, ExamMapSheet, ExamSubmitSheet, ExamTopBar, FeedbackPanel, ReportSheet, QuestionMedia, QuestionMetaRow, QuestionOption, QuestionStem, SessionBar, SessionTitleBlock, SessionTopRow, ShareQuestionSheet, type CoachState, type ExamMapCell, type OptionState, type SliceState, type ToolAction } from "@/components/domain";
@@ -75,6 +75,12 @@ export default function SeansScreen() {
   const shownAt = useRef(0);
   const finishing = useRef(false);
   const [scrollY] = useState(() => new Animated.Value(0));
+  // Soru değişince kaydırma EN ÜSTE döner (13 Kas 2026: önceki soruda aşağı inilmişse yeni soru
+  // kaydırılmış açılıyor, başlık ve "Soru N / 10" görünmüyordu). scrollY tek başına yetmez.
+  const scroller = useRef<ComponentRef<typeof Animated.ScrollView>>(null);
+  useEffect(() => {
+    scroller.current?.scrollTo({ y: 0, animated: false });
+  }, [index]);
 
   const isExam = session?.mode === "exam" || session?.mode === "deneme";
   const now = useNow(1000, Boolean(deadline) && phase === "playing");
@@ -555,7 +561,7 @@ export default function SeansScreen() {
         </View>
       ) : question ? (
         <>
-          <Animated.ScrollView onScroll={Animated.event([{ nativeEvent: { contentOffset: { y: scrollY } } }], { useNativeDriver: true })} scrollEventThrottle={16} contentContainerStyle={{ paddingHorizontal: space.screenGutter, paddingBottom: 140, gap: space.s4 }} contentInsetAdjustmentBehavior="never">
+          <Animated.ScrollView ref={scroller} onScroll={Animated.event([{ nativeEvent: { contentOffset: { y: scrollY } } }], { useNativeDriver: true })} scrollEventThrottle={16} contentContainerStyle={{ paddingHorizontal: space.screenGutter, paddingBottom: 140, gap: space.s4 }} contentInsetAdjustmentBehavior="never">
             {isExam ? (
               <>
                 {lastFive ? <Notice tone="warning">Son 5 dakika. Süre dolunca cevapların otomatik teslim edilir.</Notice> : null}

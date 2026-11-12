@@ -1,4 +1,10 @@
-import { computeHomeV3, ROTA_EN_AZ, ROTA_EN_COK, type BugunV3Input } from './bugun-v3.logic';
+import {
+  computeHomeV3,
+  gunlukPay,
+  ROTA_EN_AZ,
+  ROTA_EN_COK,
+  type BugunV3Input,
+} from './bugun-v3.logic';
 import type { TodayTask } from './home-v2.types';
 
 /**
@@ -216,16 +222,18 @@ describe('computeHomeV3', () => {
     expect(r.nextStep.kind).toBe('questions');
   });
 
-  it('senin için: yanlış kuyruğu, favoriler, ikinci zayıf konu, yaklaşan deneme — en çok 4', () => {
+  it('senin için: rotada olan yanlış tekrarı tekrar edilmez; favoriler, ikinci zayıf konu, yaklaşan deneme', () => {
     const r = computeHomeV3(girdi({ bookmarkCount: 12 }));
-    expect(r.forYou.map((f) => f.kind)).toEqual(['wrongs', 'favorites', 'weak_topic', 'exam']);
-    expect(r.forYou[1]).toMatchObject({
+    // Rotada "Yanlış tekrarı" adımı var → "Yanlış kuyruğu" satırı yok (13 Kas 2026 kararı).
+    expect(r.route.some((i) => i.kind === 'review')).toBe(true);
+    expect(r.forYou.map((f) => f.kind)).toEqual(['favorites', 'weak_topic', 'exam']);
+    expect(r.forYou[0]).toMatchObject({
       label: 'Favorilerim · 12 soru',
       action: { fromBookmarks: true, count: 12 },
     });
-    expect(r.forYou[2]!.label).toBe('İdari Yargı · %48');
-    expect(r.forYou[3]!.label).toMatch(/^Deneme 4 · Cmt \d\d:\d\d · 100 soru$/);
-    expect(r.forYou[3]!.action).toMatchObject({ type: 'open_exams', route: '/denemeler/e4' });
+    expect(r.forYou[1]!.label).toBe('İdari Yargı · %48');
+    expect(r.forYou[2]!.label).toMatch(/^Deneme 4 · Cmt \d\d:\d\d · 100 soru$/);
+    expect(r.forYou[2]!.action).toMatchObject({ type: 'open_exams', route: '/denemeler/e4' });
   });
 
   it('reçete özet vermese de okunmamış ünite varsa rotada özet adımı olur', () => {
@@ -376,7 +384,7 @@ describe('Bugün v3 — bilgi kartları (Doc 56 aşama 5)', () => {
     expect(r.forYou.some((i) => i.kind === 'flashcards_due')).toBe(false);
   });
 
-  it('vadesi gelen kart: rota kalemi "Kart tekrarı · 12 kart" ~2 dk open_flashcards; senin için satırı', () => {
+  it('vadesi gelen kart: rota kalemi "Kart tekrarı · 12 kart" ~2 dk open_flashcards; senin için tekrar etmez', () => {
     const r = computeHomeV3(girdi({ flashcards: kart }));
     const item = r.route.find((i) => i.kind === 'flashcards');
     expect(item).toMatchObject({
@@ -391,9 +399,8 @@ describe('Bugün v3 — bilgi kartları (Doc 56 aşama 5)', () => {
       count: 12,
       source: 'home_route',
     });
-    const fy = r.forYou.find((i) => i.kind === 'flashcards_due');
-    expect(fy).toMatchObject({ label: 'Kart tekrarı · 12 kart', ctaLabel: 'Çalış' });
-    expect(fy?.action).toMatchObject({ type: 'open_flashcards', source: 'home_for_you' });
+    // Rotada kart tekrarı olduğu için "Senin için"de ikinci kez yazılmaz (13 Kas 2026).
+    expect(r.forYou.find((i) => i.kind === 'flashcards_due')).toBeUndefined();
   });
 
   it('porsiyon günlük hedefle sınırlı; yarı yolda "5/20 · 40 bekliyor"; hedef dolunca ya da kuyruk boşalınca tamam', () => {
@@ -433,5 +440,81 @@ describe('Bugün v3 — bilgi kartları (Doc 56 aşama 5)', () => {
     expect(r.nextStep.title).toBe('12 kart tekrar bekliyor');
     expect(r.nextStep.action).toMatchObject({ type: 'open_flashcards', source: 'home_next' });
     expect(r.forYou.some((i) => i.kind === 'flashcards_due')).toBe(false);
+  });
+});
+
+describe('Bugün v3 — ana kart ve rota tutarlılığı (13 Kas 2026)', () => {
+  const planGorev = gorev({
+    title: 'Bugünün turu',
+    reason: 'Planında bu hafta: Genel Kültür. 90 dk kaldı.',
+    action: {
+      type: 'start_session',
+      label: 'Başla · 10 soru · Genel Kültür',
+      count: 10,
+      recipe: 'coach',
+      focus: { kind: 'topic', courseId: null, topicId: 'gk', label: 'Genel Kültür' },
+      source: 'home_task',
+    },
+  });
+  const plan = {
+    items: [
+      {
+        id: 'p1',
+        kind: 'topic' as const,
+        topicId: 'gk',
+        topicName: 'Genel Kültür',
+        remainingMinutes: 90,
+        status: 'active',
+      },
+      {
+        id: 'p2',
+        kind: 'topic' as const,
+        topicId: 'idare',
+        topicName: 'İdare Hukuku',
+        remainingMinutes: 60,
+        status: 'pending',
+      },
+    ],
+  };
+
+  it('plan odağında üst satır "PLAN · <konu>", en zayıf rozeti yok; rotanın 1. adımı da aynı odağı yazar', () => {
+    const r = computeHomeV3(girdi({ weakestUnit: null, todayTask: planGorev, plan }));
+    expect(r.nextStep.eyebrow).toBe('SIRADAKİ · PLAN · Genel Kültür');
+    expect(r.nextStep.badge).toBeNull();
+    expect(r.route[0]).toMatchObject({ kind: 'questions', detail: 'Plan · Genel Kültür' });
+  });
+
+  it('ana kart plan konusunu başlatıyorsa rotada aynı plan kalemi tekrar etmez; diğer kalem günlük payla yazılır', () => {
+    const r = computeHomeV3(girdi({ weakestUnit: null, todayTask: planGorev, plan }));
+    const planlar = r.route.filter((i) => i.kind === 'plan_topic');
+    expect(planlar.map((i) => i.label)).toEqual(['İdare Hukuku']);
+    // NOW = Cuma (TR) → haftanın kalan günü 3 (Cum, Cmt, Paz): 60 / 3 = 20 dk.
+    expect(planlar[0]).toMatchObject({ estimateMin: 20, detail: 'Plan · bu hafta 60 dk kaldı' });
+  });
+
+  it('en zayıf konu başlatılıyorsa rozet kalır', () => {
+    const odakli = gorev({
+      action: {
+        type: 'start_session',
+        label: 'Başla · 10 soru · Yürütme',
+        count: 10,
+        recipe: 'coach',
+        focus: { kind: 'topic', courseId: null, topicId: 't1', label: 'Yürütme' },
+        source: 'home_task',
+      },
+    });
+    const r = computeHomeV3(girdi({ weakestUnit: null, todayTask: odakli }));
+    expect(r.nextStep.eyebrow).toBe('SIRADAKİ · Yürütme');
+    expect(r.nextStep.badge).toBe('%42 · en zayıf');
+  });
+
+  it('gunlukPay: kalan ÷ haftanın kalan günü, en az 10, kalanı aşmaz', () => {
+    const pzt = new Date('2026-11-09T09:00:00Z');
+    const paz = new Date('2026-11-15T09:00:00Z');
+    expect(gunlukPay(90, pzt)).toBe(13); // 90 / 7
+    expect(gunlukPay(90, paz)).toBe(90); // son gün: kalanın tamamı
+    expect(gunlukPay(20, pzt)).toBe(10); // en az 10
+    expect(gunlukPay(5, pzt)).toBe(5); // kalanı aşmaz
+    expect(gunlukPay(0, pzt)).toBe(0);
   });
 });

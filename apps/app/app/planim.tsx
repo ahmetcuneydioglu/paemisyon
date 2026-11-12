@@ -138,8 +138,10 @@ function PlanHeader({ plan, onRevise }: { plan: Plan; onRevise: () => void }) {
   return (
     <View style={{ gap: space.s3 }}>
       <View style={{ flexDirection: "row", alignItems: "center", gap: space.s2 }}>
-        <AppText variant="title" style={{ flex: 1 }}>
-          Planım
+        {/* Ekran başlığı gezinme çubuğunda ("Planım"); burada ikinci kez yazılmaz (13 Kas 2026).
+            Satır, planın evresini adıyla söyler: rozet tek başına ne olduğu anlaşılmıyordu. */}
+        <AppText variant="subhead" tone="soft" style={{ flex: 1 }}>
+          {plan.weeks.length} haftalık plan · şu an
         </AppText>
         <Badge tone={plan.phase === "build" ? "neutral" : "warning"}>{phaseLabel(plan.phase)}</Badge>
       </View>
@@ -195,7 +197,9 @@ function WeekStrip({ weeks, selected, onSelect }: { weeks: PlanWeek[]; selected:
 function PlanItemRow({ item, current, divider, onStart }: { item: PlanItem; current: boolean; divider: boolean; onStart: () => void }) {
   const { space } = useTheme();
   const done = item.status === "done";
-  const pct = item.targetMinutes > 0 ? Math.min(1, item.doneMinutes / item.targetMinutes) : 0;
+  // Dakika ve soru oranının büyüğü (sunucudaki haftaOzeti ile aynı kural, 13 Kas 2026).
+  const oran = (done: number, target: number) => (target > 0 ? Math.min(1, done / target) : 0);
+  const pct = Math.max(oran(item.doneMinutes, item.targetMinutes), oran(item.doneQuestions, item.targetQuestions));
   return (
     <ListRow
       title={itemTitle(item)}

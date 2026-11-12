@@ -69,7 +69,7 @@ export interface PlanBrief {
   summary: PlanSummary;
   nextItem: { id: string; kind: PlanItemKind; topicId: string | null; topicName: string | null; remainingMinutes: number } | null;
   /** Bu haftanın kalemleri (vardiya listesi — Doc 49/13); eski sunucuda alan yok. */
-  items?: Pick<PlanItem, "id" | "kind" | "topicId" | "topicName" | "courseName" | "targetMinutes" | "doneMinutes" | "remainingMinutes" | "status">[];
+  items?: Pick<PlanItem, "id" | "kind" | "topicId" | "topicName" | "courseName" | "targetMinutes" | "doneMinutes" | "targetQuestions" | "doneQuestions" | "remainingMinutes" | "status">[];
   ended: boolean;
 }
 

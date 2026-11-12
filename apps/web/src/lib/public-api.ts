@@ -702,6 +702,8 @@ export interface PlanBrief {
     | "courseName"
     | "targetMinutes"
     | "doneMinutes"
+    | "targetQuestions"
+    | "doneQuestions"
     | "remainingMinutes"
     | "status"
   >[];

@@ -231,6 +231,6 @@ function sureMetni(saniye: number): string {
 function kocCumlesi(r: SessionResult): string {
   if (r.totalQuestions === 0) return "Bu turda çözülecek soru yoktu.";
   if (r.wrongCount === 0 && r.blankCount === 0) return "Hepsi doğru; koç bir sonraki turda zorluğu artırır.";
-  if (r.wrongCount > 0) return `${r.wrongCount} yanlışını tekrar ederek bilgini pekiştir. Yanlışlar Kütüphane › Yanlışlarım'da.`;
+  if (r.wrongCount > 0) return `${r.wrongCount} yanlışını tekrar ederek bilgini pekiştir. Yanlışların Çalış › Yanlışlar'da seni bekler.`;
   return `${r.blankCount} soruyu boş bıraktın; bir sonraki turda önce onlar gelir.`;
 }

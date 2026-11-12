@@ -3,7 +3,14 @@ import Link from "next/link";
 import { ArrowRight, CalendarDays, Lock } from "lucide-react";
 import { api } from "@/lib/api";
 import type { Plan, PlanDefaults, PlanItem, PlanWeek } from "@/lib/public-api";
-import { formatMinutes, itemTitle, longDate, phaseLabel, planItemHref, shortDate } from "@/lib/plan";
+import {
+  formatMinutes,
+  itemTitle,
+  longDate,
+  phaseLabel,
+  planItemHref,
+  shortDate,
+} from "@/lib/plan";
 import { cn } from "@/lib/cn";
 import { Badge } from "@/components/ui/badge";
 import { ButtonLink } from "@/components/ui/button";
@@ -14,7 +21,10 @@ import { ProgressBar } from "@/components/ui/progress";
 import { SectionHeader } from "@/components/ui/section-header";
 import { StatTile } from "@/components/ui/stat-tile";
 import { ListRow } from "@/components/ui/list-row";
-import { PlanArchiveButton, PlanDialogButton } from "@/components/plan/plan-dialog";
+import {
+  PlanArchiveButton,
+  PlanDialogButton,
+} from "@/components/plan/plan-dialog";
 
 export const metadata: Metadata = { title: "Planım", robots: { index: false } };
 export const dynamic = "force-dynamic";
@@ -31,7 +41,8 @@ export default async function PlanimPage({
   searchParams: Promise<Record<string, string | string[] | undefined>>;
 }) {
   const p = await searchParams;
-  const one = (v: string | string[] | undefined) => (Array.isArray(v) ? v[0] : v);
+  const one = (v: string | string[] | undefined) =>
+    Array.isArray(v) ? v[0] : v;
   const [res, defaults] = await Promise.all([
     api<{ plan: Plan | null }>("/me/plan"),
     api<PlanDefaults>("/me/plan/defaults"),
@@ -48,7 +59,16 @@ export default async function PlanimPage({
             icon={CalendarDays}
             title="Henüz planın yok"
             body="Haftada ayırabildiğin süreyi söyle; konuları sınav ağırlığına ve zayıf noktalarına göre haftalara dağıtayım. Her Pazartesi plan taze verilerle yenilenir."
-            action={<PlanDialogButton mode="create" current={null} defaults={defaults} label="Planı kur" variant="primary" autoOpen={autoOpen} />}
+            action={
+              <PlanDialogButton
+                mode="create"
+                current={null}
+                defaults={defaults}
+                label="Planı kur"
+                variant="primary"
+                autoOpen={autoOpen}
+              />
+            }
           />
         </Card>
       </div>
@@ -56,31 +76,43 @@ export default async function PlanimPage({
   }
 
   const secili = one(p.hafta);
-  const week: PlanWeek = plan.weeks.find((w) => w.weekStart === secili) ?? plan.thisWeek;
+  const week: PlanWeek =
+    plan.weeks.find((w) => w.weekStart === secili) ?? plan.thisWeek;
   const s = plan.thisWeek.summary;
-  const haftaNo = plan.weeks.findIndex((w) => w.weekStart === plan.currentWeekStart) + 1;
+  const haftaNo =
+    plan.weeks.findIndex((w) => w.weekStart === plan.currentWeekStart) + 1;
 
   return (
     <div className="mx-auto max-w-6xl px-4 py-6 md:px-6">
       <div className="mb-6 flex flex-wrap items-center justify-between gap-3">
         <div className="flex items-center gap-3">
           <h1 className="type-title text-ink">Planım</h1>
-          <Badge tone={plan.phase === "build" ? "neutral" : "warning"}>{phaseLabel(plan.phase)}</Badge>
+          <Badge tone={plan.phase === "build" ? "neutral" : "warning"}>
+            {phaseLabel(plan.phase)}
+          </Badge>
         </div>
         <div className="flex flex-wrap items-center gap-2">
-          <PlanDialogButton mode="revise" current={plan} defaults={defaults} label="Planı yenile" autoOpen={autoOpen} />
+          <PlanDialogButton
+            mode="revise"
+            current={plan}
+            defaults={defaults}
+            label="Planı yenile"
+            autoOpen={autoOpen}
+          />
           <PlanArchiveButton />
         </div>
       </div>
 
       {plan.ended ? (
         <Notice tone="info" title="Plan tamamlandı" className="mb-4">
-          Sınav tarihi geçti ya da ufuk doldu. Yeni dönem için planı yeniden kurabilirsin.
+          Sınav tarihi geçti ya da ufuk doldu. Yeni dönem için planı yeniden
+          kurabilirsin.
         </Notice>
       ) : null}
       {plan.suggestions.includes("exam_date") ? (
         <Notice tone="warning" title="Sınav tarihi yok" className="mb-4">
-          Plan 12 haftalık kuruldu. Tarihi girersen sınava kalan haftaya göre yeniden dağıtırım.
+          Plan 12 haftalık kuruldu. Tarihi girersen sınava kalan haftaya göre
+          yeniden dağıtırım.
         </Notice>
       ) : null}
 
@@ -91,15 +123,25 @@ export default async function PlanimPage({
               <span className="type-subhead text-ink">Bu hafta</span>
               <span className="type-stat text-ink">%{s.pct}</span>
             </div>
-            <ProgressBar value={s.pct / 100} tone={s.pct >= 100 ? "success" : "accent"} label="Bu haftanın ilerlemesi" />
+            <ProgressBar
+              value={s.pct / 100}
+              tone={s.pct >= 100 ? "success" : "accent"}
+              label="Bu haftanın ilerlemesi"
+            />
             <p className="type-body-sm tabular text-ink-soft">
-              {formatMinutes(s.doneMinutes)} / {formatMinutes(s.targetMinutes)} · {s.doneQuestions} / {s.targetQuestions} soru
-              {s.offPlanQuestions > 0 ? ` · plan dışı ${s.offPlanQuestions} soru` : ""}
+              {formatMinutes(s.doneMinutes)} / {formatMinutes(s.targetMinutes)}{" "}
+              · {s.doneQuestions} / {s.targetQuestions} soru
+              {s.offPlanQuestions > 0
+                ? ` · plan dışı ${s.offPlanQuestions} soru`
+                : ""}
             </p>
           </Card>
 
           {/* Hafta şeridi */}
-          <nav aria-label="Haftalar" className="-mx-1 w-full min-w-0 overflow-x-auto px-1">
+          <nav
+            aria-label="Haftalar"
+            className="-mx-1 w-full min-w-0 overflow-x-auto px-1"
+          >
             <ol className="flex gap-2">
               {plan.weeks.map((w, i) => {
                 const sel = w.weekStart === week.weekStart;
@@ -110,16 +152,47 @@ export default async function PlanimPage({
                       aria-current={sel ? "true" : undefined}
                       className={cn(
                         "tk-interactive flex min-h-16 min-w-20 flex-col items-center justify-center gap-0.5 rounded-card border px-3 py-2",
-                        sel ? "border-accent bg-accent-soft" : w.state === "past" ? "border-line bg-surface-alt opacity-70" : "border-line bg-surface hover:border-ink-soft",
+                        sel
+                          ? "border-accent bg-accent-soft"
+                          : w.state === "past"
+                            ? "border-line bg-surface-alt opacity-70"
+                            : "border-line bg-surface hover:border-ink-soft",
                       )}
                     >
-                      <span className={cn("type-label", sel ? "text-accent-ink" : "text-ink-subtle")}>Hf {i + 1}</span>
-                      <span className={cn("type-body-sm", sel ? "text-accent-ink" : "text-ink-soft")}>{shortDate(w.weekStart)}</span>
+                      <span
+                        className={cn(
+                          "type-label",
+                          sel ? "text-accent-ink" : "text-ink-subtle",
+                        )}
+                      >
+                        Hf {i + 1}
+                      </span>
+                      <span
+                        className={cn(
+                          "type-body-sm",
+                          sel ? "text-accent-ink" : "text-ink-soft",
+                        )}
+                      >
+                        {shortDate(w.weekStart)}
+                      </span>
                       {w.locked ? (
-                        <Lock size={12} className="text-ink-subtle" aria-label="kilitli" />
+                        <Lock
+                          size={12}
+                          className="text-ink-subtle"
+                          aria-label="kilitli"
+                        />
                       ) : (
-                        <span className={cn("type-label", w.summary.pct >= 100 ? "text-success-ink" : "text-ink-subtle")}>
-                          {w.state === "future" ? phaseLabel(w.phase).slice(0, 4) : `%${w.summary.pct}`}
+                        <span
+                          className={cn(
+                            "type-label",
+                            w.summary.pct >= 100
+                              ? "text-success-ink"
+                              : "text-ink-subtle",
+                          )}
+                        >
+                          {w.state === "future"
+                            ? phaseLabel(w.phase).slice(0, 4)
+                            : `%${w.summary.pct}`}
                         </span>
                       )}
                     </Link>
@@ -130,15 +203,23 @@ export default async function PlanimPage({
           </nav>
 
           <section className="flex flex-col gap-3">
-            <SectionHeader title={week.state === "current" ? "Bu hafta" : `${shortDate(week.weekStart)} haftası`} />
+            <SectionHeader
+              title={
+                week.state === "current"
+                  ? "Bu hafta"
+                  : `${shortDate(week.weekStart)} haftası`
+              }
+            />
             {week.locked ? (
               <Card tone="alt" className="flex flex-col gap-2">
                 <span className="type-subhead inline-flex items-center gap-2 text-ink">
-                  <Lock size={18} className="text-ink-soft" aria-hidden /> Gelecek haftalar Premium&apos;da
+                  <Lock size={18} className="text-ink-soft" aria-hidden />{" "}
+                  Gelecek haftalar Premium&apos;da
                 </span>
                 <p className="type-body-sm text-ink-soft">
-                  Bu haftanın planı herkese açık. Sonraki haftalar, her Pazartesi otomatik yenileme ve sınav modundaki
-                  tekrar/deneme kalemleri Premium&apos;la açılır.
+                  Bu haftanın planı herkese açık. Sonraki haftalar, her
+                  Pazartesi otomatik yenileme ve sınav modundaki tekrar/deneme
+                  kalemleri Premium&apos;la açılır.
                 </p>
                 <div>
                   <ButtonLink href="/premium" variant="secondary">
@@ -148,12 +229,19 @@ export default async function PlanimPage({
               </Card>
             ) : week.items.length === 0 ? (
               <Card>
-                <p className="type-body-sm text-ink-soft">Bu haftaya kalem düşmedi.</p>
+                <p className="type-body-sm text-ink-soft">
+                  Bu haftaya kalem düşmedi.
+                </p>
               </Card>
             ) : (
               <Card className="p-0">
                 {week.items.map((i, idx) => (
-                  <PlanItemRow key={i.id} item={i} current={week.state === "current"} divider={idx < week.items.length - 1} />
+                  <PlanItemRow
+                    key={i.id}
+                    item={i}
+                    current={week.state === "current"}
+                    divider={idx < week.items.length - 1}
+                  />
                 ))}
               </Card>
             )}
@@ -162,21 +250,45 @@ export default async function PlanimPage({
 
         <div className="flex min-w-0 flex-col gap-3">
           <div className="grid grid-cols-2 gap-3">
-            <StatTile label="Hafta" value={`${haftaNo} / ${plan.weeks.length}`} />
-            <StatTile label="Kapsam" value={plan.coverage.pctOfSyllabus} unit="%" hint="müfredat" />
+            <StatTile
+              label="Hafta"
+              value={`${haftaNo} / ${plan.weeks.length}`}
+            />
+            <StatTile
+              label="Kapsam"
+              value={plan.coverage.pctOfSyllabus}
+              unit="%"
+              hint="müfredat"
+            />
           </div>
           <Card className="p-0">
-            <ListRow title="Haftalık süre" subtitle={formatMinutes(plan.weeklyMinutes)} />
-            <ListRow title="Sınav tarihi" subtitle={plan.examDate ? longDate(plan.examDate) : "Belli değil"} />
-            <ListRow title="Kapsam" subtitle={`${plan.coverage.topics} / ${plan.coverage.syllabusTopics} konu`} />
+            <ListRow
+              title="Haftalık süre"
+              subtitle={formatMinutes(plan.weeklyMinutes)}
+            />
+            <ListRow
+              title="Sınav tarihi"
+              subtitle={plan.examDate ? longDate(plan.examDate) : "Belli değil"}
+            />
+            <ListRow
+              title="Kapsam"
+              subtitle={`${plan.coverage.topics} / ${plan.coverage.syllabusTopics} konu`}
+            />
             <ListRow
               title={plan.revisedAt ? "Son yenileme" : "Kuruluş"}
-              subtitle={new Date(plan.revisedAt ?? plan.createdAt).toLocaleDateString("tr-TR", { day: "numeric", month: "long", timeZone: "Europe/Istanbul" })}
+              subtitle={new Date(
+                plan.revisedAt ?? plan.createdAt,
+              ).toLocaleDateString("tr-TR", {
+                day: "numeric",
+                month: "long",
+                timeZone: "Europe/Istanbul",
+              })}
               divider={false}
             />
           </Card>
           <p className="type-body-sm text-ink-subtle">
-            Her Pazartesi geçen hafta kapanır; eksik kalan dakikanın yarısı sonraki haftaya taşınır (Premium).
+            Her Pazartesi geçen hafta kapanır; eksik kalan dakikanın yarısı
+            sonraki haftaya taşınır (Premium).
           </p>
         </div>
       </div>
@@ -184,14 +296,37 @@ export default async function PlanimPage({
   );
 }
 
-function PlanItemRow({ item, current, divider }: { item: PlanItem; current: boolean; divider: boolean }) {
+function PlanItemRow({
+  item,
+  current,
+  divider,
+}: {
+  item: PlanItem;
+  current: boolean;
+  divider: boolean;
+}) {
   const done = item.status === "done";
-  const pct = item.targetMinutes > 0 ? Math.min(1, item.doneMinutes / item.targetMinutes) : 0;
+  // Dakika ve soru oranının büyüğü (API haftaOzeti ile aynı kural).
+  const pct = Math.max(
+    item.targetMinutes > 0
+      ? Math.min(1, item.doneMinutes / item.targetMinutes)
+      : 0,
+    item.targetQuestions > 0
+      ? Math.min(1, item.doneQuestions / item.targetQuestions)
+      : 0,
+  );
   const href = current && !done ? planItemHref(item) : undefined;
   return (
     <ListRow
       title={itemTitle(item)}
-      subtitle={item.courseName ?? (item.kind === "review" ? "SRS ve yanlış turu" : item.kind === "mock" ? "Kişisel ya da canlı deneme" : null)}
+      subtitle={
+        item.courseName ??
+        (item.kind === "review"
+          ? "SRS ve yanlış turu"
+          : item.kind === "mock"
+            ? "Kişisel ya da canlı deneme"
+            : null)
+      }
       divider={divider}
       href={href}
       chevron={false}
@@ -202,12 +337,24 @@ function PlanItemRow({ item, current, divider }: { item: PlanItem; current: bool
           ) : item.status === "skipped" ? (
             <Badge>Geçti</Badge>
           ) : (
-            <span className={cn("type-subhead inline-flex items-center gap-1", current ? "text-accent-ink" : "text-ink-soft")}>
-              {current ? `${formatMinutes(item.remainingMinutes)} kaldı` : formatMinutes(item.targetMinutes)}
+            <span
+              className={cn(
+                "type-subhead inline-flex items-center gap-1",
+                current ? "text-accent-ink" : "text-ink-soft",
+              )}
+            >
+              {current
+                ? `${formatMinutes(item.remainingMinutes)} kaldı`
+                : formatMinutes(item.targetMinutes)}
               {href ? <ArrowRight size={14} aria-hidden /> : null}
             </span>
           )}
-          <ProgressBar value={done ? 1 : pct} tone={done ? "success" : "accent"} height={4} className="w-28" />
+          <ProgressBar
+            value={done ? 1 : pct}
+            tone={done ? "success" : "accent"}
+            height={4}
+            className="w-28"
+          />
         </span>
       }
     />

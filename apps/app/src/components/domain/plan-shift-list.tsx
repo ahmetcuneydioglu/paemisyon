@@ -62,7 +62,8 @@ export function PlanShiftList({
         <View style={{ borderLeftWidth: 2, borderLeftColor: colors.accent, paddingLeft: space.s3, gap: 0 }}>
           {items.map((it, idx) => {
             const done = it.status === "done";
-            const pct = it.targetMinutes > 0 ? Math.min(1, it.doneMinutes / it.targetMinutes) : 0;
+            // Dakika ve soru oranının büyüğü (API haftaOzeti ile aynı kural).
+            const pct = Math.max(it.targetMinutes > 0 ? Math.min(1, it.doneMinutes / it.targetMinutes) : 0, it.targetQuestions > 0 ? Math.min(1, it.doneQuestions / it.targetQuestions) : 0);
             const active = !done && it.status !== "skipped";
             return (
               <Pressable

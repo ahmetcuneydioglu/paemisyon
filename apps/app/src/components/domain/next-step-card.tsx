@@ -39,7 +39,7 @@ export function NextStepCard({
       style={{ backgroundColor: colors.panel, borderRadius: radius.panel, padding: space.s5, gap: space.s4 }}
     >
       <View style={large ? { alignItems: "flex-start", gap: space.s2 } : { flexDirection: "row", alignItems: "center", justifyContent: "space-between", gap: space.s2 }}>
-        <AppText variant="label" tone="panelSoft" numberOfLines={large ? undefined : 1} style={large ? undefined : { flex: 1 }}>
+        <AppText variant="label" tone="panelSoft" numberOfLines={large ? undefined : 2} style={large ? undefined : { flex: 1 }}>
           {eyebrow}
         </AppText>
         {badge ? (
