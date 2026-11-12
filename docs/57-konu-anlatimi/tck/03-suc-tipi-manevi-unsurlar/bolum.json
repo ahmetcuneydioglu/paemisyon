@@ -1,0 +1,19 @@
+{
+  "slug": "tck-suc-tipi-manevi-unsurlar",
+  "title": "Suç Tipi: Manevi Unsurlar",
+  "subtitle": "Kast ve türleri, amaç ve saik, taksir, bilinçli taksir ile olası kast ayrımı, netice sebebiyle ağırlaşmış suç",
+  "courseName": "Ceza Hukuku",
+  "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+  "sortOrder": 3,
+  "isPremium": true,
+  "aiDraft": true,
+  "book": { "label": "THEMIS Ceza Hukuku Genel Hükümler, 21. baskı, 2025", "page": "s.62–80" },
+  "lessons": [
+    { "file": "01-manevi-unsur-ve-kast.md", "slug": "tck-manevi-unsur-ve-kast", "page": "s.62–64" },
+    { "file": "02-dogrudan-kast-ve-olasi-kast.md", "slug": "tck-dogrudan-kast-ve-olasi-kast", "page": "s.64–66" },
+    { "file": "03-kastin-gorunumleri-amac-ve-saik.md", "slug": "tck-kastin-gorunumleri-amac-ve-saik", "page": "s.64, 66–69" },
+    { "file": "04-taksir.md", "slug": "tck-taksir-kavram-ve-unsurlar", "page": "s.69–71, 75–77" },
+    { "file": "05-bilincli-taksir-ve-taksirde-sorumluluk.md", "slug": "tck-bilincli-taksir-ve-taksirde-sorumluluk", "page": "s.72–77" },
+    { "file": "06-netice-sebebiyle-agirlasmis-suc.md", "slug": "tck-netice-sebebiyle-agirlasmis-suc", "page": "s.77–80" }
+  ]
+}
