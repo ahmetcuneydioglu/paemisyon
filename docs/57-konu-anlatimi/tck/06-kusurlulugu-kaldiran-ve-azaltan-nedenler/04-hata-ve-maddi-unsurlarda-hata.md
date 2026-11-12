@@ -74,7 +74,7 @@ Fail bir unsurda yanılmış, fakat yanılmadığı kısım kendi başına başk
 | Olay | Failin bilmediği | Sorumlu olduğu |
 |---|---|---|
 | Fail, hakaret ettiği kişinin Cumhurbaşkanı olduğunu bilmemektedir | Mağdurun sıfatı | Hakaret |
-| Fail, ev sahibinin rızası bulunduğunu sanarak kapalı konutun kilidini kırıp içeri girer | Rızanın yokluğu | Kilide verdiği zarar; konuta girme bakımından kastı yoktur |
+| Fail, içeri girmesine izin verildiğini sanarak, kilidi kırmasına izin olmadığını bildiği hâlde kapalı konutun kilidini kırıp içeri girer | Rızanın yokluğu | Kilide verdiği zarar; konuta girme bakımından kastı yoktur |
 
 ## Kişide hata
 
@@ -122,4 +122,5 @@ Sorular kastı kaldıran hatayı, taksirli sorumluluğun saklı kalmasını ve s
 - OCR: s-063 sonu ve s-064'te çok sayıda satır yer değiştirmiş (dipnot numaraları metne karışmış, "383", "384" gibi); "F. Yanılma (Hata)" başlığı düşmüş. Anlam bağlamdan açık. Görüntüye bakılmadı.
 - Madde bağları: TCK md 30.
 - Gömülü sorular: bankadaki yayınlı gerçek sorular, hepsi beş şıklı, share 200 (b875ed7b… valiz (beklenen: maddi unsurda hata, kasıtlı hareket etmiş olmaz, fiil suç oluşturmaz); 3b9e17b9… avcılar (beklenen: taksirle yaralama); cb318ad5… rızaya dayalı ilişkiyi suç sanan kişi (beklenen: hukuki yanılmaya dayanan sözde suç); 59eee2a1… çoban (beklenen: malın başkasına ait olduğu konusunda yanıldığı için kastı kaldıran hata)). Doğru şık public uçtan görülemez; panelde anahtarla karşılaştırılmalı. Eş kurgulu 19ad6fad, 744c92eb, cdd645b2 alınmadı. Soru üretilmedi.
+- DENETİM DÜZELTMESİ (bağımsız denetim, Opus oturumu, 13 Kas 2026): Kilit örneği belirsizdi (girmeye rıza sanan kişi kilidin kırılmasına da rıza sanıyor olabilir, mala zarar verme kastı tartışmalı olurdu); olay, failin kilidi kırmaya izin olmadığını bildiği biçimde yeniden kuruldu.
 - AI taslak; insan düzenleme ve yayın onayı bekliyor.

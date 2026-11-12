@@ -86,7 +86,7 @@ Akıl hastalarına özgü güvenlik tedbiri koruma ve tedavi amaçlıdır. Hakk�
 Akıl hastalarına özgü güvenlik tedbirleri: koruma ve tedavi, serbest bırakma, tıbbi kontrol ve takip.
 :::
 
-Tedbirin bir süresi yoktur; ölçü tehlikeliliktir. Kişi, kurumun sağlık kurulu raporunda toplum açısından tehlikeliliğinin ortadan kalktığı ya da önemli ölçüde azaldığı belirtilirse infaz hâkimi kararıyla serbest bırakılabilir. Aynı değişiklik, birinci fıkra uyarınca tedbir uygulananlar için kurumda geçirilecek en az süreleri de getirdi: ağırlaştırılmış müebbet ve müebbet hapis cezasını gerektiren suçlarda bir yıl, üst sınırı on yıldan fazla hapis cezasını gerektiren suçlarda altı ay.
+Tedbirin önceden belirlenmiş bir üst süresi yoktur; ölçü tehlikeliliktir. Kişi, kurumun sağlık kurulu raporunda toplum açısından tehlikeliliğinin ortadan kalktığı ya da önemli ölçüde azaldığı belirtilirse infaz hâkimi kararıyla serbest bırakılabilir. Aynı değişiklik, birinci fıkra uyarınca tedbir uygulananlar için kurumda geçirilecek en az süreleri de getirdi: ağırlaştırılmış müebbet ve müebbet hapis cezasını gerektiren suçlarda bir yıl, üst sınırı on yıldan fazla hapis cezasını gerektiren suçlarda altı ay.
 
 ### Gözlem altına alma
 
@@ -96,16 +96,7 @@ Kişinin akıl hastası olup olmadığının saptanması için bir sağlık kuru
 Gözlem altına alma: koşulları, karar mercii ve süreleri.
 :::
 
-| | Kural |
-|---|---|
-| Ön koşul | Fiili işlediği yolunda kuvvetli şüphe |
-| Öneri | Uzman hekim |
-| Dinlenecekler | Cumhuriyet savcısı ve müdafi; müdafi yoksa baro tarafından görevlendirilir |
-| Karar | Soruşturmada sulh ceza hâkimi, kovuşturmada mahkeme |
-| Süre | Üç haftayı geçemez; her seferinde üç haftayı geçmeyen ek süreler verilebilir, toplam üç ayı geçemez |
-| Kanun yolu | İtiraz; itiraz kararın yerine getirilmesini durdurur |
-
-Kolluk bu kararı kendiliğinden alamaz ve savcı da veremez; gözlem bir hâkim kararıdır.
+Gözlem, fiili işlediği yolunda kuvvetli şüphe bulunan kişi hakkında, uzman hekimin önerisiyle ve yalnız hâkim ya da mahkeme kararıyla mümkündür; kolluk ve savcı bu kararı veremez. Koşulları, süresi ve kanun yolu Ceza Muhakemesi dersinin ispat bölümündeki delil toplama işlemleri dersinde anlatıldı.
 
 ## Sınavda çıktı
 
@@ -137,4 +128,5 @@ Sorular sağır ve dilsizlikte yaş dönemlerini ve akıl hastalığında azalm�
 - OCR: s-059 sonundaki 365 numaralı dipnot ve s-060 başında "kusuru ortadan kaldırması" çevresindeki satırlar bozuk; anlam bağlamdan açık. Görüntüye bakılmadı.
 - Madde bağları: TCK md 33, md 32, md 57; CMK md 74.
 - Gömülü sorular: bankadaki yayınlı gerçek sorular, hepsi beş şıklı, share 200 (d3b5ee59… on dört yaşındaki sağır ve dilsiz (beklenen: sorumluluğu yoktur, çocuklara özgü tedbirlere başvurulabilir; (C) şıkkındaki "ceza soruşturması yapılamaz" sözü md 31/1'deki "kovuşturma" karşısında yanlıştır); c4077c30… yanlış ifade (beklenen: altmış beş yaş); 7988cf4f… yanlış ifade (beklenen: on beş yaşını doldurmamışlara ikinci dönem hükümleri uygulanır); a7414781… azalmış yetenekte ağırlaştırılmış müebbet (beklenen: yirmi beş yıl)). Doğru şık public uçtan görülemez; panelde anahtarla karşılaştırılmalı. 279b65b2 (c4077c30'un eş kurgusu) alınmadı. Soru üretilmedi.
+- DENETİM DÜZELTMESİ (bağımsız denetim, Opus oturumu, 13 Kas 2026): (1) "Tedbirin bir süresi yoktur" cümlesi iki cümle sonra anlatılan 7571 (2025) en az süreleriyle çelişiyordu; "önceden belirlenmiş bir üst süresi yoktur" yapıldı. (2) Gözlem altına alma tablosu (CMK md 74) cmk/06-ispat-ve-kanit-turleri/06-delil-toplama-islemleri.md ile tekrar ediyordu; iki cümleye indirildi, o derse gönderildi.
 - AI taslak; insan düzenleme ve yayın onayı bekliyor.

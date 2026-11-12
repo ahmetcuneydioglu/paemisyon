@@ -56,7 +56,7 @@ Madde alkol ve uyuşturucu maddeyi alınış biçimine göre ikiye ayırır. Ayr
 
 ## Kendini bilerek yeteneksiz bırakma
 
-Kusur yeteneği fiilin işlendiği anda aranır. Bu kural tek başına bırakılsaydı, suç işlemeden önce kendini sarhoş eden herkes cezadan kurtulurdu. Öğreti bu sonucu, nedeninde serbest hareket düşüncesiyle önler: kişi, yeteneğini yitirdiği anda özgür değildir, ama o duruma girerken özgürdür; sorumluluk bu ilk ana bağlanır. İradi sarhoşluğa ilişkin ikinci fıkra ile geçici nedende aranan "kusursuzluk" koşulu bu düşüncenin kanundaki karşılığıdır.
+Kusur yeteneği fiilin işlendiği anda aranır. Bu kural tek başına bırakılsaydı, suç işlemeden önce kendini sarhoş eden herkes cezadan kurtulurdu. Öğreti bu sonucu, nedeninde serbest hareket düşüncesiyle önler: kişi, yeteneğini yitirdiği anda özgür değildir, ama o duruma girerken özgürdür; sorumluluk bu ilk ana bağlanır. İradi sarhoşluğa ilişkin ikinci fıkra bu düşüncenin kanundaki karşılığıdır; geçici nedende aranan "kusursuzluk" koşulu ise öğretinin aynı düşünceden çıkardığı sonuçtur.
 
 Düşüncenin iki görünümü vardır.
 
@@ -64,7 +64,7 @@ Düşüncenin iki görünümü vardır.
 |---|---|---|
 | Kişi ne yapar | Suçu işlemek ya da kendine bir özür hazırlamak için yeteneğini bilerek ortadan kaldırır | Yeteneğini yitireceğini ve bu hâlde bir zarara yol açabileceğini öngörebilecek durumdadır, yine de önlem almaz |
 | Örnek | Cesaret bulmak için içip hasmına saldıran kişi | Uykusuz olduğunu bildiği hâlde yola çıkan sürücü |
-| Sorumluluk | Kasten işlenen suçtan | Taksirle işlenen suçtan |
+| Sorumluluk | Kural olarak hedeflenen suçtan; gerçekleşen fiildeki kast ya da taksire göre | Taksirle işlenen suçtan |
 
 Sorumluluğun türünü, yeteneğin nasıl yitirildiği değil, işlenen fiildeki kast ya da taksir belirler. Bu ayrım şu olayda görülür.
 
@@ -112,4 +112,5 @@ Sorular iradi alınan alkolün sonucunu ve geçici nedenin ölçüsünü yoklar.
 - OCR: s-058'de nedeninde serbest hareketler başlığında üç satır sonu düşmüş; s-060'ta "geçici (arızi) nedenler" başlığının kendisi ve iki satır sonu eksik. Anlam bağlamdan açık. Görüntüye bakılmadı.
 - Madde bağları: TCK md 34.
 - Gömülü sorular: bankadaki yayınlı gerçek sorular, ikisi de beş şıklı, share 200 (0c43daad… yanlış ifade (beklenen: "iradi alınan alkolün etkisinde suç işleyenin cezası bu nedenle indirilir"); 8ad88191… doğru ifade (beklenen: geçici nedenle yönlendirme yeteneği önemli derecede azalmış olana ceza verilmez; öteki şıklar gözlem zorunluluğu, yirmi bir yaş, iradi alkol)). Doğru şık public uçtan görülemez; panelde anahtarla karşılaştırılmalı. 7b126286 dört şıklı olduğu için alınmadı. Soru üretilmedi.
+- DENETİM DÜZELTMESİ (bağımsız denetim, Opus oturumu, 13 Kas 2026): (1) "kusursuzluk koşulu kanundaki karşılığıdır" cümlesi dersin kendi tablosundaki öğreti kaydıyla çelişiyordu (md 34/1'de böyle bir koşul yok); kanuni karşılığın yalnız md 34/2 olduğu, kusursuzluğun öğretinin sonucu olduğu yazıldı. (2) Nedeninde serbest hareket tablosunda kasıtlı sütun "Kasten işlenen suçtan" diyordu, oysa hemen sonraki cümle ve örnek sorumluluğu gerçekleşen fiildeki kast ya da taksire bağlıyor; hücre hizalandı.
 - AI taslak; insan düzenleme ve yayın onayı bekliyor.

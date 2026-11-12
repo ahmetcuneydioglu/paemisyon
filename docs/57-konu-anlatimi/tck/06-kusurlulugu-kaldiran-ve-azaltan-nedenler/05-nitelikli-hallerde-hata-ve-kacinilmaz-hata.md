@@ -21,7 +21,7 @@ Fıkranın sözü şudur: "Bir suçun daha ağır veya daha az cezayı gerektire
 | Azaltan | Var | Yok sanıyor | Azaltan hâl uygulanır |
 | Azaltan | Yok | Var sanıyor | Azaltan hâl uygulanır |
 
-İlk satırın gerekçesi kasttır: fail ağırlaştıran olguyu bilmediği için kastı o olguyu kapsamaz. İkinci satırın gerekçesi gerçekliktir: olgu gerçekte yoktur ve kişi yalnız zihnindeki niyet yüzünden daha ağır cezalandırılamaz. Son iki satır fıkranın "yararlanır" sözünün sonucudur.
+İlk satırın gerekçesi kasttır: fail ağırlaştıran olguyu bilmediği için kastı o olguyu kapsamaz. İkinci satırın gerekçesi gerçekliktir: olgu gerçekte yoktur ve kişi yalnız zihnindeki niyet yüzünden daha ağır cezalandırılamaz. Dördüncü satır fıkranın "yararlanır" sözünün sonucudur; üçüncü satırda ise azaltan hâl gerçekte bulunduğu için uygulanır (öğretide kabul edilen çözüm).
 
 :::ornek
 Fail, aralarında husumet bulunan kardeşini öldürmek için gece pusuya yatar; karanlıkta kardeşi sandığı bir yabancıyı öldürür. Kardeşe karşı öldürme, suçun ağırlaştırılmış hâlidir. Fail bu hâlin gerçekleştiğini sanmış, ama gerçekleşmemiştir. Kişideki yanılma kastı kaldırmaz; tek bir kasten öldürme vardır. Hatasından yararlanır ve, başka bir ağırlaştırıcı neden yoksa, suçun temel şeklinden sorumlu olur.
@@ -37,11 +37,11 @@ Bu olaylarda iki yanlış çözüm şık yapılır. Birincisi faili iki suçtan 
 
 Üçüncü fıkra bir başka yanılmayı düzenler. Fail tipik fiili bilerek işler; ama olayda kendisini haklı ya da mazur kılan bir nedenin koşullarının bulunduğunu sanmaktadır. Fıkra şöyledir: "Ceza sorumluluğunu kaldıran veya azaltan nedenlere ait koşulların gerçekleştiği hususunda kaçınılmaz bir hataya düşen kişi, bu hatasından yararlanır."
 
-Kanunun "ceza sorumluluğunu kaldıran veya azaltan nedenler" sözü geniştir; hukuka uygunluk nedenlerini de, kusurluluğu kaldıran ya da azaltan nedenleri de kapsar.
+Öğretide ve uygulamada kanunun "ceza sorumluluğunu kaldıran veya azaltan nedenler" sözünün geniş anlaşıldığı, kusurluluğu kaldıran ya da azaltan nedenlerin yanında hukuka uygunluk nedenlerinin koşullarındaki yanılmayı da kapsadığı kabul edilir; bu yanılmanın kastı mı kusuru mu etkilediği ayrıca tartışmalıdır.
 
 | Fail neyin koşullarının bulunduğunu sanıyor | Örnek | Hata kaçınılmazsa |
 |---|---|---|
-| Hukuka uygunluk nedeni: meşru savunma | Gece, kendisini öldürmekle tehdit eden hasmı sandığı kişinin üzerine doğrulttuğu oyuncak silahı gerçek sanarak ateş eden kişi | Meşru savunmadan yararlanır gibi sonuç doğar; ceza verilmez |
+| Hukuka uygunluk nedeni: meşru savunma | Gece, kendisini öldürmekle tehdit eden hasmı sandığı kişinin üzerine doğrulttuğu oyuncak silahı gerçek sanarak ateş eden kişi | Ceza verilmez; uygulamada kusurun bulunmaması dolayısıyla ceza verilmesine yer olmadığı kararı verilir (öğretide kastı kaldırdığı görüşü de vardır) |
 | Hukuka uygunluk nedeni: görevin yerine getirilmesi | Arama kararındaki konut yerine, aynı binada yanlış kattaki konutu arayan görevli | Ceza sorumluluğu doğmaz |
 | Kusurluluğu kaldıran neden: zorunluluk hâli, tehdit, bağlayıcı emir | Gerçekte bulunmayan bir tehlikeden kaçtığını sanarak başkasının malına zarar veren kişi | Ceza verilmez |
 | Kusurluluğu azaltan neden: haksız tahrik | Başkasına atılan taşın kendisine atıldığını sanarak öfkeyle karşılık veren kişi | Haksız tahrik indirimi uygulanır |
@@ -84,10 +84,11 @@ Dört fıkrayı ayıran asıl soru, hatanın suçun hangi basamağını etkiledi
 |---|---|---|
 | Maddi unsurlarda hata | Kast | Beraat; taksirli hâl varsa ve fail özensizse taksirli suçtan mahkûmiyet |
 | Ağırlaştıran nitelikli hâlde hata | Nitelikli hâle ilişkin kast | Temel şekilden mahkûmiyet |
+| Hukuka uygunluk nedeninin koşullarında kaçınılmaz hata | Kusurluluk (öğretide kastı kaldırdığı görüşü de vardır) | Ceza verilmesine yer olmadığı |
 | Kusurluluğu kaldıran nedenin koşullarında kaçınılmaz hata | Kusurluluk | Ceza verilmesine yer olmadığı |
 | Kaçınılmaz haksızlık hatası | Kusurluluk | Ceza verilmesine yer olmadığı |
 
-Ceza Muhakemesi Kanunu son iki satırı tek sözle karşılar: "kusurluluğu ortadan kaldıran hataya düşülmesi" hâlinde, kusurun bulunmaması dolayısıyla ceza verilmesine yer olmadığına karar verilir.
+Ceza Muhakemesi Kanunu son üç satırı tek sözle karşılar: "kusurluluğu ortadan kaldıran hataya düşülmesi" hâlinde, kusurun bulunmaması dolayısıyla ceza verilmesine yer olmadığına karar verilir.
 
 ## Sınavda çıktı
 
@@ -117,4 +118,5 @@ Sorular nitelikli hâllerdeki hatada tek suç ve temel şekil çözümünü ve h
 - OCR: s-065'in tamamında satırlar ikişer ikişer yer değiştirmiş; cümleler bağlamdan yeniden kuruldu, hiçbir cümle aynen alınmadı. Görüntüye bakılmadı.
 - Madde bağları: TCK md 30.
 - Gömülü sorular: bankadaki yayınlı gerçek sorular, hepsi beş şıklı, share 200 (c7b5981e… kardeşi sanarak başkasını öldürme (beklenen: hatasından yararlanır, başkaca ağırlaştırıcı sebep yoksa temel şekilden sorumludur); d67db48c… savcı sanarak kâtibi öldürme (beklenen: kasten öldürme); 806b68ef… yanlış ifade (beklenen: cezayı artıran nitelikli hâlin varlığını sanan kişinin cezası artırılır); c7c43765… yanlış ifade (beklenen: fiili yanılmada taksirden sorumluluk söz konusu olamaz)). Doğru şık public uçtan görülemez; panelde anahtarla karşılaştırılmalı. Eş kurgulu b345971a ve b63b025f alınmadı. Soru üretilmedi.
+- DENETİM DÜZELTMESİ (bağımsız denetim, Opus oturumu, 13 Kas 2026): (1) md 30/3'ün hukuka uygunluk nedenlerinin koşullarındaki yanılmayı da kapsadığı yorumu kesin dille sunulmuştu; kitap (s-065, "Hukuka Uygunluk Nedenlerinde Yanılma") aynı sonuca varır ama md 30/3'ü anmaz — öğreti ve uygulama kaydına alındı, kast/kusur tartışması belirtildi. (2) md 30/2 tablosunun üçüncü satırı (azaltan hâl var, fail yok sanıyor) fıkranın "yararlanır" sözünden değil, hâlin nesnel varlığından gelir; açıklama düzeltildi (Tur 2'de 03/01'deki aynı iddia öğreti kaydına alınmıştı). (3) "Meşru savunmadan yararlanır gibi sonuç doğar" belirsizdi; karar türü yazıldı. (4) "Kast mı, kusur mu" tablosuna hukuka uygunluk nedeninin koşullarında kaçınılmaz hata satırı eklendi (CMK md 223/3-d "kusurluluğu ortadan kaldıran hataya düşülmesi"; öğretide kastı kaldırdığı görüşü de var).
 - AI taslak; insan düzenleme ve yayın onayı bekliyor.

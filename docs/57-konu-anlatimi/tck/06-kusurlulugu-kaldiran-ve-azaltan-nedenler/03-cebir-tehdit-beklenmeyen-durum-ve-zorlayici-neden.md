@@ -64,7 +64,7 @@ Olay sorularında dört şık birlikte gelir: meşru savunma, zorunluluk hâli, 
 | | Cebir ve tehdit | Zorunluluk hâli |
 |---|---|---|
 | Kişiyi suça iten | Bir başkasının, o suçu işletmeye yönelen zorlaması | Bir tehlike; kaynağı insan, hayvan ya da doğa olabilir |
-| İşlenen suç | Zorlayanın istediği suçtur | Tehlikeden kurtulmak için kişinin kendisinin seçtiği fiildir |
+| İşlenen suç | Zorlayanın istediği suç (öğretideki ayrım) | Tehlikeden kurtulmak için kişinin kendisinin seçtiği fiildir |
 | Arkadaki kişi | Vardır ve fail sayılır | Bulunması gerekmez |
 | Orantı | Kanun ayrıca aramaz; ölçü zorlamanın ağırlığıdır | Kanun açıkça arar |
 
@@ -89,7 +89,6 @@ Mücbir sebep de denir. Faile yabancı olan, karşı konulamayan ve onu belirli 
 | | Beklenmeyen durum | Zorlayıcı neden |
 |---|---|---|
 | Belirleyici özellik | Öngörülemezlik | Karşı konulamazlık |
-| Fail olanın farkında mı | Hayır; olağan biçimde davrandığını düşünür | Evet; iradesi dışında sürüklendiğini bilir |
 | Örnek | Kurallara uygun seyreden sürücünün önüne, görülmesi olanaksız bir noktadan birinin aniden çıkması | Bakımı eksiksiz yapılmış aracın freninin yokuşta ansızın boşalması ve aracın bir yapıya çarpması |
 
 Kanunda ayrı bir hüküm bulunmadığı için sonuca manevi unsur üzerinden ulaşılır. Beklenmeyen durumu taksirden ayıran, öngörülebilirliktir.
@@ -111,9 +110,6 @@ Sorular tehdit altında işlenen suçta doğru nitelemeyi ve kusurluluğu kaldı
 :::soru a4ca6ee1-71b6-4284-b253-74084fcc0a58
 :::
 
-:::soru 9c95271b-fcec-4c45-a37b-370c45023876
-:::
-
 ---
 
 ## Kaynak ve inceleme notları — kullanıcı metnine dahil değil
@@ -127,4 +123,6 @@ Sorular tehdit altında işlenen suçta doğru nitelemeyi ve kusurluluğu kaldı
 - OCR: s-063 başında zorlayıcı neden–beklenmeyen durum kutusunun satırları yer değiştirmiş; md 28 başlığındaki üç satır sonu birleşmiş; "F. Yanılma" başlığı düşmüş. Anlam bağlamdan açık. Görüntüye bakılmadı.
 - Madde bağları: TCK md 28, md 37.
 - Gömülü sorular: bankadaki yayınlı gerçek sorular, hepsi beş şıklı, share 200 (f9b723e5… ölüm tehdidi altında anahtarı teslim eden görevli (beklenen: kusurluluğu kaldıran cebir veya tehdit nedeniyle cezalandırılmaz); a4ca6ee1… tehdit altında mücevher çalan kapıcı (beklenen: kusurlu olmadığından cezalandırılmaz); 9c95271b… kusurluluğu kaldıran nedenlerden olmayan (beklenen: haksız tahrik; şıklarda zorlayıcı neden ve beklenmeyen durum kusurluluğu kaldıran neden olarak yer alır)). Doğru şık public uçtan görülemez; panelde anahtarla karşılaştırılmalı. Soru üretilmedi.
+- DENETİM DÜZELTMESİ (bağımsız denetim, Opus oturumu, 13 Kas 2026): (1) md 28'in kapsamını "zorlayanın istediği suç" ile sınırlamak öğretinin sonucudur; tablo hücresine kayıt eklendi (06/01 uyarısıyla hizalı). (2) Beklenmeyen durum–zorlayıcı neden tablosundaki "fail olanın farkında mı" satırı her olaya uymayan bir genelleme olduğu için çıkarıldı (freni boşalan sürücü farkında olabilir de olmayabilir de).
+- DENETİM DÜZELTMESİ (bağımsız denetim, Opus oturumu, 13 Kas 2026): 9c95271b… dersten çıkarıldı (yedekte): 05/01'deki 2112d050 ile aynı noktayı (kusurluluğu azaltan neden: haksız tahrik) aynı cevapla yokluyor; 05/01'de tek soru olduğu için orada kaldı.
 - AI taslak; insan düzenleme ve yayın onayı bekliyor.

@@ -34,7 +34,7 @@ Oranı belirlerken hâkim haksız fiilin ağırlığına ve failde doğurduğu e
 
 ### İndirimin sırası
 
-Bir olayda birden çok artırım ve indirim nedeni bulunabilir. Kanun bunların hangi sırayla uygulanacağını da gösterir: hâkim önce suçun kanundaki alt ve üst sınırı arasında temel cezayı belirler; sonra bu ceza üzerinden sırasıyla teşebbüs, iştirak, zincirleme suç, haksız tahrik, yaş küçüklüğü, akıl hastalığı ve cezada indirim gerektiren kişisel nedenlere ilişkin hükümleri, en sonda da takdiri indirim nedenlerini uygular. Haksız tahrik bu sırada yaş küçüklüğünden ve akıl hastalığından önce gelir. Her indirim, bir önceki işlemden çıkan ceza üzerinden yapılır; sıra değişirse sonuç ceza da değişir.
+Bir olayda birden çok artırım ve indirim nedeni bulunabilir. Kanun bunların hangi sırayla uygulanacağını da gösterir: hâkim önce suçun kanundaki alt ve üst sınırı arasında temel cezayı belirler; sonra bu ceza üzerinden, kanunun söyleyişiyle "sırasıyla teşebbüs, iştirak, zincirleme suç, haksız tahrik, yaş küçüklüğü, akıl hastalığı ve cezada indirim yapılmasını gerektiren şahsi sebeplere ilişkin hükümler ile takdiri indirim nedenleri" uygulanır. Haksız tahrik bu sırada yaş küçüklüğünden ve akıl hastalığından önce gelir. Her indirim, bir önceki işlemden çıkan ceza üzerinden yapılır; sıra değişirse sonuç ceza da değişir.
 
 :::madde turk-ceza-kanunu:61
 Cezanın belirlenmesi; artırım ve indirimlerin uygulanma sırası beşinci fıkradadır.
@@ -50,7 +50,7 @@ Kanunun bölüm başlığı "ceza sorumluluğunu kaldıran veya azaltan nedenler
 
 ## Genel hüküm ve özel hükümler
 
-Haksız tahrik kanunun genel hükümleri arasındadır. Kural olarak suç ve fail ayrımı yapılmaksızın uygulanır; öldürmede de, yaralamada da, mala zarar vermede de gündeme gelebilir. İki sınırı vardır.
+Haksız tahrik kanunun genel hükümleri arasındadır. Kanun ayrım yapmaz; hüküm bütün suçlar ve failler bakımından geçerlidir: öldürmede de, yaralamada da, mala zarar vermede de gündeme gelebilir. Uygulamada ve kanunun özel hükümlerinde iki noktaya dikkat edilir.
 
 Birincisi, uygulamada taksirli suçlarda haksız tahrik kabul edilmemektedir. Kurum, haksızlığa bilerek gösterilen tepkiyi düzenler; dikkatsizlikle bir sonuca yol açan failin durumu buna uymaz.
 
@@ -63,7 +63,7 @@ Birincisi, uygulamada taksirli suçlarda haksız tahrik kabul edilmemektedir. Ku
 | Kasten yaralamaya tepki olarak hakaret | Ayrı bir kural yok | Ceza verilmez |
 | Hâkimin takdiri | İndirim zorunlu, oran takdiri | İndirim de vazgeçme de takdiridir |
 
-Özel hükmün bulunduğu yerde genel hüküm uygulanmaz. Haksız bir fiile tepki olarak hakaret eden kişinin cezası özel hükme göre belirlenir; aynı olgu için ayrıca genel tahrik indirimi yapılmaz.
+Uygulamada, özel hükmün bulunduğu yerde genel hüküm uygulanmaz. Haksız bir fiile tepki olarak hakaret eden kişinin cezası özel hükme göre belirlenir; aynı olgu için ayrıca genel tahrik indirimi yapılmaz.
 
 ## Diğer kurumlarla birlikte uygulanması
 
@@ -84,7 +84,7 @@ Sınavın en sevdiği soru, haksız tahrikin hangi kurumla yan yana gelebileceğ
 
 İştirakte indirim kişiden kişiye geçmez. Haksızlığa uğrayan kişiyle birlikte suça katılan, fakat kendisi o haksızlığın etkisinde olmayan ortak tahrikten yararlanamaz. "Ortaklardan biri tahrik altındaysa hepsinin cezası indirilir" cümlesi yanlıştır.
 
-Tasarlama ile ilişki öğretide tartışmalıdır. Tasarlamayı yalnız önceden plan kurmak olarak gören anlayışa göre ikisi bir arada bulunabilir: kişi uğradığı haksızlığın öfkesiyle bir plan yapmış olabilir. Tasarlama için soğukkanlılık arayan anlayışa göre bulunamaz: öfkenin etkisi altındaki kişi soğukkanlı değildir. Sınavda bu tartışma, önermenin koşullu biçimiyle sorulur.
+Tasarlama ile ilişki öğretide tartışmalıdır; iki görüş ve uygulamanın tutumu manevi unsur bölümündeki kastın görünümleri dersinde anlatıldı.
 
 ### Meşru savunmanın sınırında
 
@@ -102,9 +102,9 @@ Meşru savunmada sınırın heyecan, korku ya da telaşla aşılması ise ayrı 
 | Saldırı sürerken, mazur görülebilecek heyecan, korku ya da telaşla sınırın aşılması | Sınırın aşılması | Ceza verilmesine yer olmadığı |
 | Saldırı sona erdikten sonra öfkeyle karşılık | Haksız tahrik | Mahkûmiyet; ceza indirilir |
 
-## Bölümün özeti
+## Bu bölümün özeti
 
-Kusurluluğu etkileyen nedenler iki bölümde anlatıldı. Sonuçları yan yana şöyledir.
+Bu bölümün nedenleri ve sonuçları yan yana şöyledir; kusur yeteneğini etkileyen nedenler ve sınırın aşılması dahil bütün harita, önceki bölümün ilk dersindedir.
 
 | Neden | Etkisi | Karar |
 |---|---|---|
@@ -145,4 +145,5 @@ Sorular haksız tahrikin niteliğini, birlikte uygulanabildiği kurumları ve so
 - OCR: s-067 sonu ve s-068 başında akıl hastalığı, iştirak ve "sonucu nedeniyle ağırlaşmış suçlar" satırlarının sonları düşmüş ya da birbirine karışmış; okunamayan iki satır derse alınmadı. Görüntüye bakılmadı.
 - Madde bağları: TCK md 29, md 61.
 - Gömülü sorular: bankadaki yayınlı gerçek sorular, hepsi beş şıklı, share 200 (1b6a238b… yanlış ifade (beklenen: iştirakte bütün ortakların cezası indirilir); c50a4a39… birlikte uygulanamayan kurum (beklenen: yalnız IV, hukuka uygunluk nedenleri); 49ccbe46… yanlış ifade (beklenen: isnat yeteneği olmayanların hareketleri tahrik oluşturmaz); a659f3c7… silahsız ve yerdeki saldırganı öldürme (beklenen: kasten öldürmeden sorumludur, koşulları varsa haksız tahrik indirimi uygulanabilir); 0177a6da… cezai sorumluluğu kaldıran nedenlerden olmayan (beklenen: haksız tahrik)). 1b6a238b'nin (A) şıkkı "bütün suçlar ve failler bakımından geçerlidir" ifadesini doğru sayar; gövdede "kural olarak" kaydıyla ve taksirli suçlar sınırıyla verildi, çelişki yok. Doğru şık public uçtan görülemez; panelde anahtarla karşılaştırılmalı. Eş kurgulu 6cccc620, 9fa13b4a (dört şıklı), ec6353c8 (olası kast–ağırlaşmış yaralama ayrımı tartışmalı) alınmadı. Soru üretilmedi.
+- DENETİM DÜZELTMESİ (bağımsız denetim, Opus oturumu, 13 Kas 2026): (1) md 61/5 sıra cümlesi kanunu neredeyse kelimesi kelimesine izliyordu, tırnaksızdı; kanunun söyleyişiyle tırnağa alındı. (2) "Kural olarak suç ve fail ayrımı yapılmaksızın … İki sınırı vardır" kurgusu gömülü 1b6a238b'nin kitapta doğru ifade olan A şıkkını ("ayrım yapılmaksızın bütün suçlar ve failler bakımından geçerlidir") yanlış saydırabilirdi; "kanun ayrım yapmaz" söyleyişine çevrildi. (3) Tasarlama paragrafı 03/03 tablosuyla tekrar ediyordu; tek cümle ve gönderme. (4) "Özel hükmün bulunduğu yerde genel hüküm uygulanmaz" uygulamaya dayanır; kayıt kondu. (5) "Bölümün özeti" başlığı yalnız bu bölümün nedenlerini gösteriyordu; "Bu bölümün özeti" yapıldı, tam harita için 05/01'e gönderildi.
 - AI taslak; insan düzenleme ve yayın onayı bekliyor.

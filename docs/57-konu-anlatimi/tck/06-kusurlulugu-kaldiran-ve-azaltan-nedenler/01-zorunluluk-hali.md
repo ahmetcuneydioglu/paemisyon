@@ -44,7 +44,7 @@ Kolluk görevlisi, itfaiyeci ve benzeri meslek mensupları, mesleklerinin olağa
 
 İlk koşul meşru savunmadaki zorunluluktan daha sıkıdır. Saldırıya uğrayan kişiden kaçması beklenmez; tehlikeyle karşılaşan kişiden ise, kaçarak kurtulabiliyorsa, kaçması beklenir. Köpekten kurtulmak için boş bir barınağa sığınabilecekken komşusunun arabasının camını kıran kişi bu koşulu karşılamaz.
 
-Orantıda korunan hak ile zarar verilen hak karşılaştırılır. Korunan hak zarar verilen hakla aynı değerde ya da ondan üstünse orantı vardır; tam bir eşitlik aranmaz. Zarar verilen hak korunandan açıkça üstünse zorunluluk hâli yoktur: malını kurtarmak için bir insanın yaşamını tehlikeye atan kişi bu hükümden yararlanamaz.
+Kanun yalnız "orantı" der; ölçüsünü öğreti kurar. Öğretide orantıda korunan hak ile zarar verilen hak karşılaştırılır: korunan hak zarar verilen hakla aynı değerde ya da ondan üstünse orantı vardır; tam bir eşitlik aranmaz. Zarar verilen hak korunandan açıkça üstünse zorunluluk hâli yoktur: malını kurtarmak için bir insanın yaşamını tehlikeye atan kişi bu hükümden yararlanamaz.
 
 ## Başkasını kurtarmak
 
@@ -60,13 +60,13 @@ Trafik kazasında ağır yaralanan birini aracına alan sürücü, hastaneye yet
 |---|---|---|
 | Karşılaşılan | İnsandan gelen haksız bir saldırı | Haklı ya da haksız diye nitelenemeyen bir tehlike |
 | Zarar gören | Saldırgan | Olayla ilgisi olmayan üçüncü kişi |
-| Kişinin kendi kusuru | Saldırıya kusuruyla yol açan da savunma yapabilir | Tehlikeye bilerek neden olan yararlanamaz |
+| Kişinin kendi kusuru | Öğretide ve uygulamada, sınırlı biçimde, saldırıya kusuruyla yol açanın da savunma yapabileceği kabul edilir | Tehlikeye bilerek neden olan yararlanamaz |
 | Kaçma olanağı | Kaçma yükümlülüğü yoktur | Başka yol varsa o yol seçilmelidir |
 | Karar | Beraat | Ceza verilmesine yer olmadığı |
 | Tazminat | İstenemez | Hâkim hakkaniyete göre belirler |
 
 :::uyari
-Silahla ölümle tehdit edilen kişi kaçabilmek için bir başkasının arabasını alırsa, hangi neden uygulanır? Meşru savunma değil: zarar gören araç sahibi saldırgan değildir. Cebir ya da tehdit hükmü de değil: o hüküm, tehdit edenin istediği suçu işleyen kişiyi korur; burada tehdit eden araba çalınmasını istememiştir. Doğru yanıt zorunluluk hâlidir. Tehlikenin bir insandan gelmesi zorunluluk hâlini dışlamaz.
+Silahla ölümle tehdit edilen kişi kaçabilmek için bir başkasının arabasını alırsa, hangi neden uygulanır? Meşru savunma değil: zarar gören araç sahibi saldırgan değildir. Cebir ya da tehdit hükmü de değil: öğretide o hüküm, tehdit edenin istediği suçu işleyen kişiyi korur diye anlaşılır; burada tehdit eden araba çalınmasını istememiştir. Doğru yanıt zorunluluk hâlidir. Tehlikenin bir insandan gelmesi zorunluluk hâlini dışlamaz.
 :::
 
 ## Hukuki niteliği ve karar
@@ -121,4 +121,5 @@ Sorular koşulları, tehlikeye bilerek neden olmayı ve meşru savunmayla ayrım
 - OCR: s-060 sonundaki kutuda (CMK ile hukuka uygunluk nedeni olmaktan çıkarılma) iki satır düşmüş; s-061 sonundaki karşılaştırma tablosunun sütunları iç içe geçmiş. Anlam bağlamdan açık. Görüntüye bakılmadı.
 - Madde bağları: TCK md 25; CMK md 223.
 - Gömülü sorular: bankadaki yayınlı gerçek sorular, hepsi beş şıklı, share 200 (c2eebaa5… köpek saldırısı ve kulübe (beklenen: zorunluluk hâli); 8a8f8177… yanlış ifade (beklenen: mal varlığı hakkına yönelmişse uygulanamaz); 44c5ee6a… öncüllü, tehlike koşulları bakımından yanlış olanlar (beklenen: I, II ve IV); 4863340b… tehdit edilen kişinin otomobili alması (beklenen: zorunluluk hâli nedeniyle ceza verilmez); 651dec2c… evi ateşe veren kişi (beklenen: Cem'e karşı fiilde zorunluluk hâlinden yararlanamaz)). Doğru şık public uçtan görülemez; panelde anahtarla karşılaştırılmalı. Eş kurgulu f136c97d, c37285a2 ve 308039c0 alınmadı. Soru üretilmedi.
+- DENETİM DÜZELTMESİ (bağımsız denetim, Opus oturumu, 13 Kas 2026): (1) md 28'in yalnız tehdit edenin istediği suçu kapsadığı öğretinin sonucudur (kanun yalnız "tehdit sonucu suç işleyen" der); uyarıya öğreti kaydı eklendi. (2) Orantının ölçüsü (hakların karşılaştırılması) md 25/2'de yok; öğreti kaydı. (3) "Saldırıya kusuruyla yol açan da savunma yapabilir" kesin kural gibi duruyordu; öğreti ve uygulama kaydı, "sınırlı biçimde". (4) Tablodaki tazminat hücresinin dayanağı Türk Borçlar Kanunu'ndaki zarar veya tehlikeden korunmak için başkasının malına zarar verme hâlinde hakkaniyet tazminatı hükmüdür; bankada yok, resmî metinden teyit edilmeli.
 - AI taslak; insan düzenleme ve yayın onayı bekliyor.

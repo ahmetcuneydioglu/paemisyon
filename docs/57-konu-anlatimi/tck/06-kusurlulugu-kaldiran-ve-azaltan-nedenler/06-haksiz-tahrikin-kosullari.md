@@ -23,7 +23,7 @@ Kanunun tanımı tek cümledir ve koşulların tamamını içerir: "Haksız bir 
 
 ## Tahriki oluşturan fiil
 
-Fiil bir insan davranışıdır; söz, yazı, hareket ya da bir ihmal olabilir. Kişiye yönelmiş olması gerekmez; mal varlığına yönelen bir haksızlık da tahrik oluşturabilir. Üç ayrıntı sınavda ayrı ayrı sorulur.
+Fiil bir insan davranışıdır; söz, yazı, hareket ya da bir ihmal olabilir. Kişiye yönelmiş olması gerekmez; mal varlığına yönelen bir haksızlık da tahrik oluşturabilir. Üç ayrıntı sınavda ayrı ayrı sorulur; kanun bunları düzenlemez, öğretide ve uygulamada kabul edilen çözümler şöyledir:
 
 | Soru | Yanıt |
 |---|---|
@@ -32,7 +32,7 @@ Fiil bir insan davranışıdır; söz, yazı, hareket ya da bir ihmal olabilir. 
 | Tahrik edenin kusur yeteneği bulunmalı mı | Hayır. Çocuğun ya da akıl hastasının haksız davranışı da tahrik oluşturur |
 
 :::ornek
-Yeni aldığı arabasını bir akıl hastasının çizdiğini gören kişi öfkeyle onu döver. Çizen kişinin kusur yeteneği yoktur ve cezalandırılamaz; ama yaptığı fiil haksızdır. Araba sahibi kasten yaralamadan sorumludur ve haksız tahrik hükmünden yararlanabilir. Annesine taş atan on yaşındaki çocuğa hakaret eden kişi için de çözüm aynıdır: fiil hem bir başkasına yönelmiştir hem de sorumluluğu olmayan birinden gelmiştir; ikisi de tahrike engel değildir.
+Yeni aldığı arabasını bir akıl hastasının çizdiğini gören kişi öfkeyle onu döver. Çizen kişinin kusur yeteneği yoktur ve cezalandırılamaz; ama yaptığı fiil haksızdır. Araba sahibi kasten yaralamadan sorumludur ve haksız tahrik hükmünden yararlanabilir. Annesine taş atan on yaşındaki çocuğa hakaret eden kişi için de çözüm aynıdır: fiil hem bir başkasına yönelmiştir hem de sorumluluğu olmayan birinden gelmiştir; ikisi de tahrike engel değildir; hakarette tahrikin sonucu ise kanunun özel hükmüne göre belirlenir (sonraki ders).
 :::
 
 ## Fiilin haksızlığı
@@ -62,7 +62,7 @@ Bu kuralın uygulamada kabul edilen iki esnetmesi vardır. Birincisi: failin ilk
 
 Haksız fiil failde bir ruhsal etki doğurmuş olmalıdır. Kanun iki duyguyu sayar ve aralarına "veya" koyar: hiddet, yani öfke; şiddetli elem, yani derin üzüntü. İkisinden biri yeterlidir. Elem için kanun "şiddetli" sıfatını kullanır; sıradan bir kırgınlık bu koşulu karşılamaz.
 
-Suç bu etki sürerken işlenmiş olmalıdır. Zaman bakımından iki nokta birlikte geçerlidir.
+Suç bu etki sürerken işlenmiş olmalıdır. Zaman bakımından öğretide ve uygulamada kabul edilen iki çözüm birlikte geçerlidir.
 
 | | Kural |
 |---|---|
@@ -89,16 +89,7 @@ Son satır, töre ya da namus gerekçesiyle işlenen öldürmelerde tahrik indir
 
 ## Orantı aranmaz
 
-Meşru savunmada savunma saldırıyla orantılı olmalıdır. Haksız tahrikte böyle bir koşul yoktur. Kurumun amacı iki davranış arasında denge kurmak değil, öfkesine yenilen failin azalan kusurunu cezaya yansıtmaktır. Malına verilen küçük bir zarara ağır bir suçla karşılık veren kişi de bu hükümden yararlanabilir; tepkinin ağırlığı indirimin uygulanmasına engel olmaz, yalnız oranın belirlenmesinde gözetilir.
-
-| | Meşru savunma | Haksız tahrik |
-|---|---|---|
-| Karşı tarafın davranışı | Süren ya da gerçekleşmesi muhakkak olan haksız saldırı | Haksız bir fiil; sona ermiş olabilir |
-| Failin amacı | Saldırıyı uzaklaştırmak | Tepki göstermek |
-| Orantı | Aranır | Aranmaz |
-| Sonuç | Fiil hukuka uygundur; beraat | Fiil suçtur; ceza indirilir |
-
-Bu tablo iki kurumun sınırını da çizer. Saldırı sürerken yapılan orantılı savunma meşru savunmadır. Saldırı sona erdikten sonra, saldırganın etkisiz kaldığı bir anda ona yönelen fiil artık savunma değildir; koşulları varsa haksız tahrikle hafifleyen bir suçtur.
+Meşru savunmada savunma saldırıyla orantılı olmalıdır. Haksız tahrikte böyle bir koşul yoktur. Kurumun amacı iki davranış arasında denge kurmak değil, öfkesine yenilen failin azalan kusurunu cezaya yansıtmaktır. Malına verilen küçük bir zarara ağır bir suçla karşılık veren kişi de bu hükümden yararlanabilir; tepkinin ağırlığı indirimin uygulanmasına engel olmaz, yalnız oranın belirlenmesinde gözetilir. İki kurumun sınırı, yani saldırı sona erdikten sonra yöneltilen fiilin durumu, sonraki derste anlatılır.
 
 ## Sınavda çıktı
 
@@ -132,4 +123,5 @@ Sorular haksız fiilin niteliğini, tahrik edenin kusur yeteneğini, orantıyı 
 - OCR: s-066 ve s-067'de dipnot işaretleri metne karışmış; s-067 başında bir satır düşmüş. Anlam bağlamdan açık. Görüntüye bakılmadı.
 - Madde bağları: TCK md 29.
 - Gömülü sorular: bankadaki yayınlı gerçek sorular, hepsi beş şıklı, share 200 (ae4d27b0… yanlış ifade (beklenen: fiilin suç niteliği taşıması zorunludur); 058999a7… koşullardan olmayan (beklenen: matematiksel orantı); 4ef62560… arabasını çizen akıl hastasını darp eden kişi (beklenen: haksız tahrikten yararlanabilir); 3e4f8034… öncüllü (beklenen: yalnız III); cea15761… öncüllü (beklenen: III ve IV)). Doğru şık public uçtan görülemez; panelde anahtarla karşılaştırılmalı. Eş kurgulu 96eeabda alınmadı. Soru üretilmedi.
+- DENETİM DÜZELTMESİ (bağımsız denetim, Opus oturumu, 13 Kas 2026): (1) Tahriki oluşturan fiile ilişkin üç ayrıntı tablosu ile zaman tablosu md 29'da yazılı olmayan öğreti ve Yargıtay çözümleridir; iki tablonun önüne öğreti/uygulama kaydı kondu. (2) Hakaret örneğinin sonuna md 129'daki özel tahrik hükmüne gönderme eklendi (md 29 indirimi değil, md 129/1: üçte birine kadar indirim ya da ceza vermekten vazgeçme). (3) Meşru savunma–haksız tahrik karşılaştırma tablosu ve sınır paragrafı 06/07'deki "meşru savunmanın sınırında" bölümüyle tekrar ediyordu; burada yalnız "orantı aranmaz" kaldı, sınır 06/07'ye bırakıldı.
 - AI taslak; insan düzenleme ve yayın onayı bekliyor.

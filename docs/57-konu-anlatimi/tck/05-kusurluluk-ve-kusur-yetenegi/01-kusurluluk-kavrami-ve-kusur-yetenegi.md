@@ -11,7 +11,7 @@ Durum: İnceleme sürümü. Hedef: Kusurluluğu manevi unsurdan ayırmak; kusur 
 Kusurluluk bu sorunun adıdır. Hukuka uygun davranma olanağı varken haksızlığı seçen kişi kınanır ve cezalandırılır. Bu olanağa hiç sahip olmayan ya da olanağı elinden alınmış kişi kınanamaz. Kınanamayan kişiye ceza verilmez; fakat işlediği fiil haksızlık olmaktan çıkmaz.
 
 :::tanim Kusurluluk
-İşlediği haksızlık nedeniyle failin kişisel olarak kınanabilmesidir. Suçun bir unsuru değildir; faile ceza verilebilmesinin koşuludur.
+İşlediği haksızlık nedeniyle failin kişisel olarak kınanabilmesidir. Bu derste benimsenen haksızlık–kusur ayrımına göre suçun bir unsuru değil, faile ceza verilebilmesinin koşuludur; öğretide kusurluluğu suçun unsuru sayan görüş de vardır (suç kavramı dersi).
 :::
 
 ## Manevi unsurla karıştırmamak
@@ -21,15 +21,15 @@ Kast ve taksir ile kusurluluk günlük dilde aynı sözcükle, "kusur" diye anı
 | | Manevi unsur (kast, taksir) | Kusurluluk |
 |---|---|---|
 | Neyi inceler | Fiilin nasıl işlendiğini: bilerek ve isteyerek mi, özensizlikle mi | Failin bu fiil yüzünden kınanıp kınanamayacağını |
-| Suçla ilişkisi | Suçun unsurudur | Suçun unsuru değildir |
+| Suçla ilişkisi | Suçun unsurudur | Bu derste benimsenen ayrıma göre unsur değil, cezalandırmanın koşuludur |
 | Yoksa ne olur | Suç oluşmaz | Suç oluşur, faile ceza verilmez |
 | Mahkemenin kararı | Beraat | Ceza verilmesine yer olmadığı |
-| Güvenlik tedbiri | Uygulanamaz | Uygulanabilir |
+| Güvenlik tedbiri | Kural olarak uygulanamaz (eşya müsaderesi saklı) | Uygulanabilir |
 
 İnceleme sırası da buradan çıkar: önce kast ya da taksir saptanır, kusurluluk ondan sonra değerlendirilir. Kasten ya da taksirle işlenmiş bir fiil yoksa kusurluluğu tartışmaya gerek kalmaz.
 
 :::ornek
-Ağır bir akıl hastalığı nedeniyle ne yaptığını kavrayamayan kişi, yoldan geçen birini bıçaklayarak öldürür. Fiil kasten öldürme tanımına uyar, bilerek ve isteyerek işlenmiştir, hukuka aykırıdır: suç oluşmuştur. Fakat fail kınanamaz. Mahkeme ceza vermez; koruma ve tedavi amacıyla güvenlik tedbirine hükmeder.
+Ağır bir akıl hastalığı nedeniyle ne yaptığını kavrayamayan kişi, yoldan geçen birini bıçaklayarak öldürür. Fiil kasten öldürme tanımına uyar, bilerek ve isteyerek işlenmiştir, hukuka aykırıdır: haksızlık tamamdır ve benimsenen ayrıma göre suç oluşmuştur. Fakat fail kınanamaz. Mahkeme ceza vermez; koruma ve tedavi amacıyla güvenlik tedbirine hükmeder.
 :::
 
 Ayrımın uygulamadaki üç sonucu vardır. İlki karar türüdür ve tabloda gösterildi. İkincisi güvenlik tedbiridir: tedbir kusura değil, failin tehlikeliliğine dayanır; bu yüzden kusuru olmayana da uygulanabilir. Üçüncüsü iştiraktir. Kanuna göre suça iştirak için "kasten ve hukuka aykırı işlenmiş bir fiilin varlığı yeterlidir" ve herkes "kendi kusurlu fiiline göre" cezalandırılır. Kusuru bulunmayan bir kişinin işlediği fiile katılan öteki kişiler, onun cezalandırılamamasından yararlanamaz.
@@ -60,7 +60,7 @@ Kusur yeteneği fiilin işlendiği anda aranır. Kanunun yaşa ilişkin hüküml
 | Durum | Sonuç |
 |---|---|
 | Fiil sırasında kusur yeteneği yok | Ceza verilmez |
-| Fiil sırasında var, sonradan yitirildi | Ceza sorumluluğu etkilenmez; yargılamanın yürütülmesi ve cezanın infazı etkilenir |
+| Fiil sırasında var, sonradan yitirildi | Ceza sorumluluğu etkilenmez; hükümlü akıl hastalığına tutulursa cezanın infazı geri bırakılır |
 | Fiil sırasında yok, sonradan kazanıldı | Ceza verilmez; sonradan iyileşme ya da büyüme geriye dönük sorumluluk doğurmaz |
 
 On dört yaşında işlenen bir fiil on altı yaşında ortaya çıkarsa, on dört yaşa ilişkin kurallar uygulanır. Hareket ile netice arasına zaman giren suçlarda da ölçü hareketin yapıldığı andır: bombayı yerleştirdiği sırada kusur yeteneği bulunan kişi, patlama anında bilincini yitirmiş olsa bile sorumludur.
@@ -92,7 +92,7 @@ Haksız tahrik kusurluluğu kaldırmaz, yalnız azaltır; sonuç ceza indirimidi
 
 ## Karar türü
 
-Ceza Muhakemesi Kanunu bu haritayı karar türüne çevirir. Kusurluluğu kaldıran nedenlerin tamamında mahkeme, "kusurunun bulunmaması dolayısıyla" ceza verilmesine yer olmadığına karar verir.
+Ceza Muhakemesi Kanunu bu haritayı karar türüne çevirir. Kusurluluğu kaldıran nedenlerin tamamında mahkeme, "kusurunun bulunmaması dolayısıyla" ceza verilmesine yer olmadığına karar verir (on iki yaşını doldurmamış çocukta ise kovuşturma hiç yapılamaz).
 
 :::madde 5271-sayili-ceza-muhakemesi-kanunu-cmk:223
 Hüküm türleri; kusurun bulunmaması nedeniyle ceza verilmesine yer olmadığı kararı üçüncü fıkradadır.
@@ -127,4 +127,5 @@ Soru, kusurluluğu kaldıran nedenler ile azaltan nedeni ayırmayı yoklar.
 - OCR: s-058'de "B. Kusur Yeteneğinin Aranacağı Zaman" başlığındaki iki paragrafın son satırları düşmüş; anlam bağlamdan açık. Görüntüye bakılmadı.
 - Madde bağları: TCK md 40; CMK md 223.
 - Gömülü soru: bankadaki yayınlı gerçek soru, beş şıklı, share 200 (2112d050… kusurluluğu kaldıran nedenlerden olmayan; beklenen: haksız tahrik). Doğru şık public uçtan görülemez; "beklenen" yanıt dersin içeriğiyle uyumlu olandır, panelde anahtarla karşılaştırılmalı. Soru üretilmedi.
+- DENETİM DÜZELTMESİ (bağımsız denetim, Opus oturumu, 13 Kas 2026): (1) kusurluluğun suçun unsuru olup olmadığı kesin dille yazılmıştı, 02/01 ise öğretide tartışmalı diye anlatıyordu; tanım, tablo satırı ve örnek "bu derste benimsenen haksızlık–kusur ayrımına göre" kaydına alındı, 02/01'e gönderildi. (2) Güvenlik tedbiri hücresi: beraatte de TCK md 54/4 eşya müsaderesi saklı. (3) "Sonradan yitirildi" satırındaki dayanaksız "yargılamanın yürütülmesi etkilenir" kısmı çıkarıldı; infaz kısmının dayanağı 5275 md 16/1 ("Akıl hastalığına tutulan hükümlünün cezasının infazı geriye bırakılır"). (4) Karar türü genellemesine md 31/1 kaydı (on iki yaş altında kovuşturma yapılamaz).
 - AI taslak; insan düzenleme ve yayın onayı bekliyor.

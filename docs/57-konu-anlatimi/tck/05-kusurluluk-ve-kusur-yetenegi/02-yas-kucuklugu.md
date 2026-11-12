@@ -18,7 +18,7 @@ Yaş küçüklüğü: üç yaş dönemi, cezadaki indirim ve tavanlar, ağır su
 | Ceza sorumluluğu | Yoktur | Yeteneğin varlığına bağlıdır; araştırılır | Vardır; ayrıca araştırılmaz |
 | Kovuşturma | Yapılamaz | Yapılır | Yapılır |
 | Ceza | Verilmez | Yetenek yoksa verilmez, varsa indirilerek verilir | İndirilerek verilir |
-| Güvenlik tedbiri | Uygulanabilir | Yetenek yoksa hükmolunur | Ceza verilir |
+| Güvenlik tedbiri | Uygulanabilir | Yetenek yoksa hükmolunur | Ceza verilir; koruyucu ve destekleyici tedbir ayrıca uygulanabilir |
 
 Ölçü her dönemde fiilin işlendiği sıradaki yaştır. Fiilin öğrenildiği, çocuğun yakalandığı ya da hükmün verildiği tarihteki yaş dönemi değiştirmez. Sınır "doldurmak" sözüyle çizilir: on ikinci doğum gününe kadar çocuk birinci dönemdedir.
 
@@ -65,7 +65,7 @@ Sorumluluğu bulunan çocuğa verilecek ceza, döneme göre şöyle belirlenir.
 Tavan "her fiil için" konulmuştur; birden çok suç işleyen çocuğun toplam cezası tavanı aşabilir. İndirim oranları tersine ezberlenir: küçük olanın indirimi büyüktür, yarısı; büyük olanın indirimi küçüktür, üçte biri.
 
 :::uyari
-Bu tablodaki süreler ve tavanlar 2026'da yapılan değişiklikle yükseltildi. Önceki metinde ikinci dönemin tavanı yedi, üçüncü dönemin tavanı on iki yıldı; müebbet ve ağırlaştırılmış müebbet yerine verilecek süreler de daha kısaydı. Elinizdeki eski notlarda bu rakamları görürseniz geçerli olan yukarıdaki tablodur. Dönem sınırları ve indirim oranları değişmedi.
+Bu tablodaki süreler ve tavanlar 2026'da yapılan değişiklikle yükseltildi. Önceki metinde ikinci dönemin tavanı yedi, üçüncü dönemin tavanı on iki yıldı; müebbet ve ağırlaştırılmış müebbet yerine verilecek süreler de daha kısaydı. Eski metne göre hazırlanmış sorularda bu rakamlar görülebilir; geçerli olan yukarıdaki tablodur. Dönem sınırları ve indirim oranları değişmedi.
 :::
 
 ## Ağır suçlarda yeni hüküm
@@ -77,7 +77,7 @@ Aynı değişiklik maddeye bir dördüncü fıkra ekledi. Fıkra iki suçla sın
 | Üçüncü dönem | Üçüncü fıkra hükümlerini uygulamayabilir; yaş nedeniyle indirim yapılmaz |
 | İkinci dönem, ceza sorumluluğu bulunan | İkinci fıkra yerine üçüncü fıkra hükümlerini uygulayabilir; çocuk bir üst dönemin kurallarıyla cezalandırılır |
 
-Mahkeme bu yetkiyi kullanırken kanunda sayılan dört ölçüden birini ya da birkaçını gözetir: kasta dayalı kusurun ağırlığı, güdülen amaç ve saik, suçun işleniş şekli ve çocuğun daha önce kasıtlı bir suçtan hapis cezasına mahkûm edilmiş olması. Fıkra bir zorunluluk getirmez; "uygulanmayabilir" ve "uygulanabilir" sözleriyle takdir yetkisi tanır. Birinci dönem bu fıkranın dışındadır: on iki yaşını doldurmamış çocuğun sorumsuzluğu hiçbir suçta kalkmaz.
+Fıkranın ikinci cümlesi suçları ve ölçütleri ayrıca saymaz; "ise" bağlacıyla birinci cümleye bağlandığı için aynı suçlar ve ölçütlerle sınırlı okunur. Mahkeme bu yetkiyi kullanırken kanunda sayılan dört ölçüden birini ya da birkaçını gözetir: kasta dayalı kusurun ağırlığı, güdülen amaç ve saik, suçun işleniş şekli ve çocuğun daha önce kasıtlı bir suçtan hapis cezasına mahkûm edilmiş olması. Fıkra bir zorunluluk getirmez; "uygulanmayabilir" ve "uygulanabilir" sözleriyle takdir yetkisi tanır. Birinci dönem bu fıkranın dışındadır: on iki yaşını doldurmamış çocuğun sorumsuzluğu hiçbir suçta kalkmaz.
 
 ## Çocuklara özgü güvenlik tedbirleri
 
@@ -89,12 +89,14 @@ Koruyucu ve destekleyici tedbirler, ceza sorumluluğu olmayan çocuk bakımında
 
 ## Kolluk bakımından
 
-Yaş dönemleri kolluğun yetkilerini de belirler. Yakalama ve ifade almaya ilişkin yönetmelik çocukları aynı sınırla ikiye ayırır.
+Yaş dönemleri kolluğun yetkilerini de belirler: yakalama ve ifade almaya ilişkin yönetmelik çocukları aynı on iki yaş sınırıyla ikiye ayırır.
 
 | Çocuğun durumu | Kolluk ne yapar |
 |---|---|
-| Fiili işlediği zaman on iki yaşını doldurmamış | Suç nedeniyle yakalayamaz. Yalnız kimlik ve suç tespiti amacıyla yakalama yapabilir; kimlik saptanınca çocuğu hemen serbest bırakır ve durumu Cumhuriyet başsavcılığına bildirir |
-| On iki yaşını doldurmuş, on sekiz yaşını doldurmamış | Suç nedeniyle yakalayabilir; çocuğu yakınlarına ve müdafiye haber vererek derhâl Cumhuriyet başsavcılığına sevk eder. Soruşturmayı Cumhuriyet savcısı bizzat yapar |
+| Fiili işlediği zaman on iki yaşını doldurmamış | Suç nedeniyle yakalayamaz; yalnız kimlik ve suç tespiti için yakalar, sonra serbest bırakıp başsavcılığa bildirir |
+| On iki yaşını doldurmuş, on sekiz yaşını doldurmamış | Suç nedeniyle yakalayabilir ve derhâl başsavcılığa sevk eder |
+
+Çocuğun yakalanması, gözaltı ve soruşturmanın usulü Ceza Muhakemesi derslerinde (koruma tedbirleri bölümünün yakalama dersi ve özel muhakeme usulleri bölümünün çocuklar dersi) anlatıldı.
 
 :::madde yakalama-gozaltina-alma-ve-ifade-alma-yonetmeligi:19
 Çocuklar bakımından yakalama ve ifade alma yetkilerinin sınırları.
@@ -128,4 +130,5 @@ Sorular birinci dönemi ve bu dönemi ikinci dönemden ayıran noktaları yoklar
 - OCR: s-059'daki 361 ve 362 numaralı dipnotlar (müebbet karşılıkları) bozuk; sayılar zaten güncel metinden alındı. Görüntüye bakılmadı.
 - Madde bağları: TCK md 31; 5395 md 11 ve md 35; Yakalama Yönetmeliği md 19.
 - Gömülü sorular: bankadaki yayınlı gerçek sorular, hepsi beş şıklı, share 200 (314dea38… sorumluluğun hiç bulunmadığı yaş (beklenen: on iki); a36ba559… öncüllü, birinci dönem (beklenen: I ve II); 6061798d… on bir yaşındaki çocuk, yanlış ifade (beklenen: "azaltılmış kusur yeteneği vardır")). Doğru şık public uçtan görülemez; panelde anahtarla karşılaştırılmalı. Soru üretilmedi. ALINMAYANLAR: 7fb3b567 ve d71629ef (tedbirin on sekiz yaşta "kendiliğinden" sona ermesi şıkkı 5395 md 7/6'nın istisnası nedeniyle tartışmaya açık; d71629ef'te "yakalanamazlar" şıkkı Yönetmelik md 19/a-2 karşısında tartışmalı) — panel listesine.
+- DENETİM DÜZELTMESİ (bağımsız denetim, Opus oturumu, 13 Kas 2026): (1) "Güvenlik tedbiri" satırının üçüncü dönem hücresi tedbir sorusunu karşılamıyordu; 5395 md 5'teki koruyucu ve destekleyici tedbirlerin adli süreçteki her çocuğa uygulanabildiği eklendi. (2) Meta söz ("elinizdeki eski notlarda") kaldırıldı. (3) md 31/4 ikinci cümlesinin suç ve ölçüt bakımından birinci cümleyle sınırlı okunması yorumdur; gövdeye bu kayıt eklendi (metin kelime kelime okundu: ikinci cümle suçları ve ölçütleri yinelemez). (4) Kolluk tablosu kısaltıldı; usul ayrıntısı cmk/08-koruma-tedbirleri-kisi-ozgurlugu/02 ve cmk/14-ozel-muhakeme-usulleri-ve-giderler/05'e gönderildi.
 - AI taslak; insan düzenleme ve yayın onayı bekliyor.
