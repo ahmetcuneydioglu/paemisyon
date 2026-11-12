@@ -197,8 +197,8 @@ export default async function BugunPage() {
           </div>
         </div>
         <h1 className="type-body-sm text-ink-soft">
-          {greeting.displayName
-            ? `${selam()}, ${greeting.displayName}`
+          {ilkAd(greeting.displayName)
+            ? `${selam()}, ${ilkAd(greeting.displayName)}`
             : selam()}
         </h1>
       </div>
@@ -377,4 +377,10 @@ export default async function BugunPage() {
       </div>
     </div>
   );
+}
+
+/** Selamda yalnız ilk ad ("Ahmet Yılmaz" → "Ahmet"); ad yoksa ya da anonimse ("Aday") selam yalın kalır. */
+function ilkAd(displayName: string | null | undefined): string | null {
+  const ad = (displayName ?? "").trim().split(/\s+/)[0] ?? "";
+  return ad && ad !== "Aday" ? ad : null;
 }

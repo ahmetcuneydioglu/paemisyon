@@ -116,6 +116,39 @@ describe('UserSyncService.ensureUser', () => {
     );
   });
 
+  it("e-postadan türemiş adı token'daki gerçek adla düzeltir, kullanıcının verdiği ada dokunmaz", async () => {
+    const make = (displayName: string) => ({
+      id: 'user-1',
+      email: 'canahmettt@gmail.com',
+      displayName,
+      emailVerifiedAt: new Date(),
+      status: 'active',
+      roles: [{ role: { key: 'user' } }],
+      entitlement: { isPremium: false, validUntil: null },
+    });
+    const claims = {
+      sub: 'user-1',
+      email: 'canahmettt@gmail.com',
+      email_verified: true,
+      user_metadata: { full_name: 'Ahmet Yılmaz' },
+    } as JWTPayload;
+
+    const healPrisma = {
+      user: { findUnique: jest.fn().mockResolvedValue(make('canahmettt')), update: jest.fn() },
+    };
+    await new UserSyncService(healPrisma as never).ensureUser(claims);
+    expect(healPrisma.user.update).toHaveBeenCalledWith({
+      where: { id: 'user-1' },
+      data: { displayName: 'Ahmet Yılmaz' },
+    });
+
+    const keepPrisma = {
+      user: { findUnique: jest.fn().mockResolvedValue(make('Ahmet')), update: jest.fn() },
+    };
+    await new UserSyncService(keepPrisma as never).ensureUser(claims);
+    expect(keepPrisma.user.update).not.toHaveBeenCalled();
+  });
+
   it('aynı kullanıcı için eşzamanlı istekleri tek veritabanı okumasında birleştirir', async () => {
     const existing = {
       id: 'user-1',

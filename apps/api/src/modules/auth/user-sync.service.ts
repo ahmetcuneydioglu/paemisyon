@@ -3,16 +3,11 @@ import type { JWTPayload } from 'jose';
 import { PrismaService } from '../../infra/prisma/prisma.service';
 import { isEntitlementActive } from '../billing/entitlement.util';
 import type { AuthenticatedUser } from './auth.types';
+import { initialDisplayName, isPlaceholderName, nameFromMetadata } from '../../common/kisi-adi';
 
-/** Supabase metadata adını güvenli biçimde al; yoksa e-posta yerel kısmına düş. */
+/** İlk kayıt adı (kurallar `common/kisi-adi.ts`): display_name → full_name → name; yoksa Apple gizli adresinde "Aday", diğerlerinde e-posta öneki. */
 export function displayNameFromClaims(claims: JWTPayload, email: string): string {
-  const metadata = claims.user_metadata;
-  const raw =
-    metadata && typeof metadata === 'object' && 'display_name' in metadata
-      ? (metadata as { display_name?: unknown }).display_name
-      : null;
-  if (typeof raw === 'string' && raw.trim().length >= 2) return raw.trim().slice(0, 128);
-  return email.includes('@') ? email.split('@')[0].slice(0, 128) : 'Kullanıcı';
+  return initialDisplayName(claims.user_metadata, email);
 }
 
 /**
@@ -99,7 +94,18 @@ export class UserSyncService {
     if (existing && existing.roles.length > 0 && existing.entitlement) {
       const claimEmail = (claims.email as string | undefined) ?? existing.email;
       const verifiedNow = emailVerifiedFromClaims(claims);
-      if ((verifiedNow && existing.emailVerifiedAt == null) || claimEmail !== existing.email) {
+      // Ad hâlâ e-postadan türemişse (Apple adı girişten SONRA metadata'ya yazar; eski
+      // kayıtlar yalnız display_name okuyordu) ve token gerçek ad taşıyorsa kendiliğinden düzelt.
+      // Kullanıcının Ayarlar'dan verdiği ada asla dokunulmaz (e-posta önekine eşit değildir).
+      const healedName = isPlaceholderName(existing.displayName, existing.email)
+        ? nameFromMetadata(claims.user_metadata)
+        : null;
+      const nameChanged = healedName != null && healedName !== existing.displayName;
+      if (
+        (verifiedNow && existing.emailVerifiedAt == null) ||
+        claimEmail !== existing.email ||
+        nameChanged
+      ) {
         await this.prisma.user.update({
           where: { id },
           data: {
@@ -107,6 +113,7 @@ export class UserSyncService {
               ? { emailVerifiedAt: new Date() }
               : {}),
             ...(claimEmail !== existing.email ? { email: claimEmail } : {}),
+            ...(nameChanged ? { displayName: healedName } : {}),
           },
         });
       }

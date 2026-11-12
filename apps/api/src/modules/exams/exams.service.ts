@@ -1,3 +1,4 @@
+import { nameFor } from '../../common/kisi-adi';
 import {
   ConflictException,
   ForbiddenException,
@@ -1145,7 +1146,8 @@ export class ExamsService {
     const rows = ranked.rows.map((r) => ({
       rank: r.rank,
       name: rankingName(r.row.displayName),
-      displayName: r.row.displayName,
+      // Ham ad yalnız kişinin kendi satırında (13 Kas 2026; herkese açık /siralama sayfası da bunu okur).
+      displayName: nameFor(r.row.displayName, user ? r.row.key === user.id : false),
       score: r.row.score,
       wrongCount: r.row.wrongCount,
       correctCount: r.row.correctCount,
@@ -1562,7 +1564,7 @@ export class ExamsService {
       ORDER BY avg_score DESC, attempts DESC`;
     const ranked = rows.map((r, i) => ({
       rank: i + 1,
-      displayName: r.display_name,
+      displayName: nameFor(r.display_name, user ? r.user_id === user.id : false),
       name: rankingName(r.display_name),
       avatarUrl: r.avatar_url,
       avgScore: Math.round(r.avg_score * 100) / 100,

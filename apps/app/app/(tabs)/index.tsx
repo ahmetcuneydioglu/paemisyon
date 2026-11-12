@@ -21,6 +21,12 @@ function yedekGunler(activeDays: number, todayIndex: number): WeekDayState[] {
   return Array.from({ length: 7 }, (_, i) => (i === todayIndex ? "today" : i < todayIndex ? (i < activeDays ? "done" : "missed") : "future"));
 }
 
+/** Selamda yalnız ilk ad ("Ahmet Yılmaz" → "Ahmet"); ad yoksa ya da anonimse ("Aday") selam yalın kalır. */
+function ilkAd(displayName: string | null | undefined): string | null {
+  const ad = (displayName ?? "").trim().split(/\s+/)[0] ?? "";
+  return ad && ad !== "Aday" ? ad : null;
+}
+
 function selam(hour: number): string {
   if (hour < 6) return "İyi geceler";
   if (hour < 12) return "Günaydın";
@@ -136,7 +142,7 @@ export default function BugunScreen() {
       {/* Üst satır: selam + zil (Doc 52 §9; rozet okunmamış sayısı). */}
       <View style={{ flexDirection: "row", alignItems: "center", justifyContent: "space-between", gap: space.s3, minHeight: 44 }}>
         <AppText variant="bodySm" tone="soft" accessibilityRole="header" style={{ flex: 1 }} numberOfLines={1}>
-          {me.data?.displayName ? `${selam(trHour)}, ${me.data.displayName}` : selam(trHour)}
+          {ilkAd(me.data?.displayName) ? `${selam(trHour)}, ${ilkAd(me.data?.displayName)}` : selam(trHour)}
         </AppText>
         <IconBadgeButton icon={Bell} label="Bildirimler" count={unread.data ?? 0} onPress={() => router.push("/bildirimler")} style={{ marginRight: -10 }} />
       </View>

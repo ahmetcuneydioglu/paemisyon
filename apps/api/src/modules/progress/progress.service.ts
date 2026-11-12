@@ -1,4 +1,5 @@
 import { Injectable } from '@nestjs/common';
+import { nameFor, publicName } from '../../common/kisi-adi';
 import { Prisma } from '@prisma/client';
 import { PrismaService } from '../../infra/prisma/prisma.service';
 import { computeStreakUpdate, liveStreak, weeklyFreezeAllowance } from './streak.logic';
@@ -340,7 +341,8 @@ export class ProgressService {
     return {
       rank,
       isMe: userId === meId,
-      displayName: e?.displayName ?? 'Aday',
+      // Başkasının adı "Ad S." (13 Kas 2026 kararı); kişinin kendi satırı tam adıyla.
+      displayName: nameFor(e?.displayName, userId === meId),
       avatarUrl: e?.avatarUrl ?? null,
       points,
       xp,
@@ -438,7 +440,7 @@ export class ProgressService {
       me = {
         ...myTopRow,
         pointsToNext: above ? Math.max(0, above.points - myTopRow.points) : null,
-        nextName: above ? above.displayName : null,
+        nextName: above ? publicName(above.displayName) : null,
       };
     } else if (myPoints > 0 && myRank != null) {
       const row = this.buildRow(userId, userId, myRank, myPoints, enriched);
@@ -446,7 +448,7 @@ export class ProgressService {
       me = {
         ...row,
         pointsToNext: above ? Math.max(0, above.points - myPoints) : null,
-        nextName: above ? above.displayName : null,
+        nextName: above ? publicName(above.displayName) : null,
       };
     } else {
       // Bu dönemde hiç puanı yok — yine de kimliğini göster (motivasyon için).
@@ -508,10 +510,11 @@ export class ProgressService {
         })
       : [];
     const adi = new Map(users.map((u) => [u.id, u.displayName || 'Aday']));
+    const ad = (id: string) => nameFor(adi.get(id), id === userId);
 
     const top: TeaserRow[] = topRows.map((r, i) => ({
       rank: i + 1,
-      displayName: adi.get(r.user_id) ?? 'Aday',
+      displayName: ad(r.user_id),
       points: r.points,
       isMe: r.user_id === userId,
     }));
@@ -521,7 +524,7 @@ export class ProgressService {
           points: meRow.points,
           pointsToNext:
             meRow.ust_points != null ? Math.max(0, meRow.ust_points - meRow.points) : null,
-          nextName: meRow.ust_id ? (adi.get(meRow.ust_id) ?? 'Aday') : null,
+          nextName: meRow.ust_id ? publicName(adi.get(meRow.ust_id)) : null,
         }
       : null;
     const scorers = topRows[0]?.toplam ?? 0;
@@ -553,7 +556,7 @@ export class ProgressService {
       totalUsers,
       todayQuizCount,
       totalXp,
-      todaysLeader: todayLeader[0]?.display_name ?? null,
+      todaysLeader: todayLeader[0] ? publicName(todayLeader[0].display_name) : null,
     };
   }
 

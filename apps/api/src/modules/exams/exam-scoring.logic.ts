@@ -1,3 +1,4 @@
+import { publicName } from '../../common/kisi-adi';
 /**
  * Deneme puanlama ve sıralama — SAF mantık (Doc 50 §2.3–2.4).
  *
@@ -150,11 +151,7 @@ export function mean(values: number[]): number | null {
   return Math.round((values.reduce((a, b) => a + b, 0) / values.length) * 100) / 100;
 }
 
-/** Sıralamada görünen ad: "Ahmet Can Demir" → "Ahmet C." (24 Eki kararı: isimli, kısaltılmış). */
+/** Sıralamada görünen ad: "Ahmet Can Demir" → "Ahmet D." (24 Eki kararı; kural `common/kisi-adi.ts`). */
 export function rankingName(displayName: string): string {
-  const parts = displayName.trim().split(/\s+/).filter(Boolean);
-  if (parts.length === 0) return 'Aday';
-  if (parts.length === 1) return parts[0];
-  const last = parts[parts.length - 1];
-  return `${parts[0]} ${last[0].toLocaleUpperCase('tr-TR')}.`;
+  return publicName(displayName);
 }
