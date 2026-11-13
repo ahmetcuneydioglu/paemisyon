@@ -38,7 +38,7 @@ Mahkeme bir suç için yüz gün adli para cezası belirler. Geliri düşük bir
 :::
 
 :::uyari
-Bir gün karşılığının sınırları 2024'te yükseltildi. Önceki metinde alt sınır yirmi, üst sınır yüz liraydı; güncel sınırlar yüz ve beş yüz liradır. Gün sayısının sınırları, beş ve yedi yüz otuz, değişmedi. Önceki tutarlarla çözülmüş hesap soruları bu yüzden güncel sonucu vermez.
+Bir gün karşılığının sınırları 2024'te yükseltildi. Önceki metinde alt sınır yirmi, üst sınır yüz liraydı; güncel sınırlar yüz ve beş yüz liradır. Gün sayısının sınırları, beş ve yedi yüz otuz, değişmedi. Eski tutarlarla kurulmuş sorularda sonuç bu yüzden farklı çıkar.
 :::
 
 Gün sayısının üst sınırı için kanun "aksine hüküm bulunmayan hallerde" der. Bazı suç tanımları daha yüksek gün sayıları öngörür; o durumda suç tanımındaki sınır uygulanır.
@@ -74,6 +74,8 @@ Bu işlem için yeni bir mahkeme kararı gerekmez; çevirmeyi Cumhuriyet savcıs
 
 İki sınır vardır. Adli para cezası yerine çektirilen hapis süresi üç yılı, birden çok hükümle verilen adli para cezalarında beş yılı geçemez. Ve çocuklar hakkında hükmedilen adli para cezası ödenmediğinde hapse çevrilemez.
 
+Ödeme emrinin tebliği bu yüzden hükümlü için bir fırsattır: emirde gösterilen süre içinde ödeme yapılırsa çevirme kararı verilmez; ne hapis ne kamuya yararlı işte çalıştırma gündeme gelir.
+
 ## Adli para cezası ve idari para cezası
 
 İkisi de Hazineye ödenen birer para yaptırımıdır; adları benzer, hukuki nitelikleri ayrıdır.
@@ -91,7 +93,7 @@ Kolluk görevlisinin yolda kestiği trafik cezası ya da kimlik bildirmeyen kiş
 
 ## Mahsup ve adli para cezası
 
-Hüküm kesinleşmeden önce gözaltında ya da tutuklulukta geçen süreler hapis cezasından düşülür. Sonuçta adli para cezasına hükmedilmişse de bu süreler boşa gitmez: kanun, özgürlüğü kısıtlanarak geçirilen her günü belirli bir tutar sayarak adli para cezasından indirir. Bu tutar da aynı değişiklikle yükseltilmiştir ve bölümün son dersinde anlatılır.
+Gözaltında ya da tutuklulukta geçen süreler, sonuçta adli para cezasına hükmedilmişse de her gün belirli bir tutar sayılarak cezadan indirilir; bu mahsup ve güncel tutarı bölümün son dersinde anlatılır.
 
 ## Sınavda çıktı
 
@@ -100,7 +102,7 @@ Sorular gün sayısının ve bir gün karşılığının sınırlarını, mehil 
 :::soru d2133e16-6086-498e-baaa-cf07549f1405
 :::
 
-:::soru 6d45903f-3447-4210-b9b7-aefad9c74fd5
+:::soru 7818936f-c2b4-41f8-87a5-5184c4ca300a
 :::
 
 :::soru 505c070c-3048-4406-8b46-721dff04ab6a
@@ -126,4 +128,5 @@ Sorular gün sayısının ve bir gün karşılığının sınırlarını, mehil 
 - Madde bağları: TCK md 52.
 - Gömülü sorular: bankadaki yayınlı gerçek sorular, hepsi beş şıklı (d2133e16… gün sayısının sınırları (beklenen: 5 – 730); 6d45903f… bir gün karşılığının sınırları (beklenen: 100 – 500); 505c070c… en az taksit sayısı (beklenen: dört); 072eacac… taksit süresi (beklenen: iki yıl); 58680946… mehil (beklenen: bir yıl)). Doğru şık public uçtan görülemez; panelde anahtarla karşılaştırılmalı. ALINMAYAN: 7818936f (şıklar kesik; eski tutarları içeriyor olabilir — panelde bakılmalı). Eş kurgulu 95eb57cc, defe1799, 675e2c2e alınmadı. Soru üretilmedi.
 - SONRADAN EKLENEN PARAGRAF, teyit edilmeli: gün üzerinden artırım–indirim md 61/8'den; "bakmakla yükümlü olunan kişiler, borçlar" örnekleri ve kolluğun sosyal–ekonomik durum araştırması yazımdır (uygulamadaki genel usul).
+- DENETİM DÜZELTMESİ (bağımsız denetim, Opus oturumu, 14 Kas 2026): 6d45903f… çıkarıldı: şıklarında hem güncel (C, yüz–beş yüz) hem 2024 öncesi (B, yirmi–yüz) bir gün karşılığı var, anahtar public uçta görünmüyor; eski anahtarla kurulmuşsa dersi okuyan öğrenci yanlış sayılır — panelde anahtar doğrulanmalı. Yerine 7818936f… eklendi: md 52/3 gereği gün sayısı ile bir gün karşılığı ayrı gösterilir, "sonuç miktarının gösterilmesi yeterlidir" (D) yanlış; öteki dört şık güncel metne göre doğru (C güncel tutar), tek cevaplı. Meta-yakın uyarı cümlesi ve mahsup paragrafı kısaltıldı (10/05'e gönderme).
 - AI taslak; insan düzenleme ve yayın onayı bekliyor.

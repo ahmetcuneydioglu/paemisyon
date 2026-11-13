@@ -67,7 +67,7 @@ Kanun genel bir alt ve üst sınır koyar: süreli hapis cezası "kanunda aksi b
 Süreli hapis cezası ve kısa süreli hapis.
 :::
 
-"Kanunda aksi belirtilmeyen" kaydı önemlidir. Suç tanımı daha yüksek bir üst sınır öngörmüşse o uygulanır; ağırlaştırıcı nedenler ve içtima kuralları da cezayı bu sınırın üzerine çıkarabilir. Bunun da bir tavanı vardır: süreli hapis gerektiren bir suçta artırımlar sonunda belirlenen sonuç ceza otuz yılı geçemez.
+"Kanunda aksi belirtilmeyen" kaydı önemlidir. Suç tanımı daha yüksek bir üst sınır öngörmüşse o uygulanır; ağırlaştırıcı nedenler de cezayı bu sınırın üzerine çıkarabilir. Bunun da bir tavanı vardır: süreli hapis gerektiren bir suçtan dolayı artırımlar sonunda belirlenen sonuç ceza otuz yılı geçemez. Tavan her bir suçun cezası için ayrı ayrı geçerlidir; birden çok suç işlenmişse cezalar ayrı ayrı belirlenir.
 
 | Sınır | Süre |
 |---|---|
@@ -86,7 +86,7 @@ Ayrımın önemi, kısa süreli hapsin cezaevinde çektirilmesinin çoğu kez ya
 | Kavram | Ölçü | Sonucu |
 |---|---|---|
 | Kısa süreli hapis | Hükmedilen ceza bir yıl ya da daha az | Seçenek yaptırımlara çevrilebilir |
-| Ertelenebilir hapis | Hükmedilen ceza kural olarak iki yıl ya da daha az | İnfaz kurumunda çektirilmeyebilir |
+| Ertelenebilir hapis | Hükmedilen ceza kural olarak iki yıl ya da daha az | Ertelenebilir (bölümün dördüncü dersi) |
 | Uzun süreli hapis | Bir yıldan fazla | Kural olarak çevrilemez |
 
 ## Cezanın kişiselliği
@@ -128,4 +128,5 @@ Sorular kanundaki ceza türlerini, müsaderenin niteliğini ve süreli hapsin s�
 - Madde bağları: TCK md 45, md 46, md 49.
 - Gömülü sorular: bankadaki yayınlı gerçek sorular, hepsi beş şıklı (f99da47a… kanundaki cezalardan olmayanlar (beklenen: II ve IV); 3e4b8644… yanlış ifade (beklenen: müsadere bir ceza türüdür); ef29501d… kanunda öngörülmeyen yaptırım (beklenen: hafif hapis cezası); 3d4469bf… süreli hapsin üst sınırı (beklenen: yirmi yıl); c05bb972… kısa süreli hapis (beklenen: bir yıl)). Doğru şık public uçtan görülemez; panelde anahtarla karşılaştırılmalı. Eş kurgulu 0ac4d483, e0edb8a5, 32fb881b, c7661489, 8b0592e4 alınmadı. Soru üretilmedi.
 - SONRADAN EKLENEN BAŞLIK (anayasal çerçeve): Anayasa md 38 ("Ceza sorumluluğu şahsidir", "Ölüm cezası ve genel müsadere cezası verilemez", "İdare, kişi hürriyetinin kısıtlanması sonucunu doğuran bir müeyyide uygulayamaz") ve TCK md 3/1 yerel bankadan okundu; son cümle yorumdur.
+- DENETİM DÜZELTMESİ (bağımsız denetim, Opus oturumu, 14 Kas 2026): md 61/7 tavanı "bir suçtan dolayı" belirlenen sonuç ceza içindir; "içtima kuralları da cezayı bu sınırın üzerine çıkarabilir" ifadesi birden çok suçun toplamını da otuz yılla sınırlı gösteriyordu, cümle her suçun cezası için kuruldu. Ertelenebilir hapis satırı erteleme dersine gönderildi.
 - AI taslak; insan düzenleme ve yayın onayı bekliyor.

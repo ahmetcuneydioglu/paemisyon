@@ -59,7 +59,7 @@ Arşiv kaydı sıradan işlemlerde karşıya çıkmaz; fakat kamu görevine giri
 
 Kanun iki koruma getirir. On sekiz yaşından küçüklerle ilgili adli sicil ve arşiv kayıtları ancak soruşturma ve kovuşturma kapsamında değerlendirilmek üzere savcılık, hâkim ya da mahkeme tarafından istenebilir. Ve kanunda açıkça belirtilmedikçe, bir kişi hakkındaki işlemde yakınının kayıtları istenemez; bu bilgiler kişiyi bir haktan yoksun bırakmak için dayanak yapılamaz.
 
-Adli sicil bilgileri gizlidir. Kayıtlar kanunda gösterilen kişi ve kurumlar dışında kimseye verilemez ve veriliş amacı dışında kullanılamaz. Kolluk görevlisi de bu kayıtlara ancak görevinin gerektirdiği ölçüde ve yürüttüğü işlemle bağlantılı olarak bakabilir; merak ya da kişisel amaçla yapılan sorgulama hem disiplin hem ceza sorumluluğu doğurur. Durdurulan bir kişinin sabıkasının bulunması da tek başına yakalama ya da arama nedeni değildir; her işlem kendi kanuni koşuluna bağlıdır.
+Adli sicil bilgileri gizlidir. Kayıtlar kanunda gösterilen kişi ve kurumlar dışında kimseye verilemez ve veriliş amacı dışında kullanılamaz. Kolluk bu kayıtlarda, bir suça ilişkin soruşturma ve kovuşturma kapsamında ve kanunun öngördüğü onayla sorgulama yapabilir; merak ya da kişisel amaçla yapılan sorgulama hem disiplin hem ceza sorumluluğu doğurur. Durdurulan bir kişinin sabıkasının bulunması da tek başına yakalama ya da arama nedeni değildir; her işlem kendi kanuni koşuluna bağlıdır.
 
 ## Arşiv kaydının silinmesi
 
@@ -84,7 +84,7 @@ Akıl hastalığı nedeniyle hükmedilen güvenlik tedbirlerine ilişkin kayıtl
 
 ## Yasaklanmış hakların geri verilmesi
 
-Güvenlik tedbirleri bölümünde görüldüğü gibi Ceza Kanunundaki hak yoksunlukları cezanın infazıyla kendiliğinden sona erer. Fakat mahkûmiyete hak yoksunluğu bağlayan tek kanun Ceza Kanunu değildir. Memurluk, avukatlık, milletvekilliği gibi konuları düzenleyen kanunlar, belirli suçlardan ya da belirli bir cezadan mahkûm olanları süresiz olarak dışarıda tutar. Ceza çekilmiş olsa da bu yoksunluklar sürer.
+Güvenlik tedbirleri bölümünde görüldüğü gibi Ceza Kanunundaki hak yoksunlukları kural olarak cezanın infazıyla kendiliğinden sona erer; yalnız kötüye kullanılan hakkın ve mesleğin yasaklanması ile sürücü belgesinin geri alınması infazdan sonra ayrıca işler. Fakat mahkûmiyete hak yoksunluğu bağlayan tek kanun Ceza Kanunu değildir. Memurluk, avukatlık, milletvekilliği gibi konuları düzenleyen kanunlar, belirli suçlardan ya da belirli bir cezadan mahkûm olanları süresiz olarak dışarıda tutar. Ceza çekilmiş olsa da bu yoksunluklar sürer.
 
 Yasaklanmış hakların geri verilmesi, bu süresiz yoksunlukları kaldırmak için öngörülmüş yoldur.
 
@@ -102,7 +102,7 @@ Yasaklanmış hakların geri verilmesi.
 Cezanın infazına genel af ya da etkin pişmanlık dışında başka bir hukuki nedenle son verilmişse süre farklı hesaplanır: hükmün kesinleştiği tarihten itibaren beş yıl geçmesi gerekir ve bu süre, kişinin mahkûm olduğu hapis cezasına üç yıl eklenerek bulunacak süreden az olamaz.
 
 :::uyari
-Bu kurum Ceza Kanunundaki hak yoksunluklarını değil, öteki kanunlardaki yoksunlukları ilgilendirir. Ceza Kanunundaki yoksunluklar infazla zaten sona erer; onlar için ayrı bir karara gerek yoktur. Kurumun kendisi de Ceza Kanununda düzenlenmemiştir: "yasaklanmış hakların geri verilmesi Türk Ceza Kanununda açıkça düzenlenmiştir" ifadesi yanlıştır. Kanundaki yer Adli Sicil Kanunudur.
+Bu kurum Ceza Kanunundaki hak yoksunluklarını değil, öteki kanunlardaki yoksunlukları ilgilendirir. Ceza Kanunundaki yoksunluklar infazla ya da kendi sürelerinin dolmasıyla zaten sona erer; onlar için ayrı bir karara gerek yoktur. Kurumun kendisi de Ceza Kanununda düzenlenmemiştir: "yasaklanmış hakların geri verilmesi Türk Ceza Kanununda açıkça düzenlenmiştir" ifadesi yanlıştır. Kanundaki yer Adli Sicil Kanunudur.
 :::
 
 Karar hakların geleceğe dönük olarak kullanılmasını sağlar; mahkûmiyeti ortadan kaldırmaz. Kişi yeniden aday olabilir ya da mesleğe başvurabilir; fakat geçmişte yitirdiği görev kendiliğinden geri gelmez. Karar ayrıca arşiv kaydının silinme süresini kısaltır: otuz yıl yerine on beş yıl.
@@ -111,10 +111,12 @@ Karar hakların geleceğe dönük olarak kullanılmasını sağlar; mahkûmiyeti
 
 | | Ne zaman | Kim yapar | Sonucu |
 |---|---|---|---|
-| Sicil kaydının silinip arşive alınması | İnfazın tamamlanması, ceza zamanaşımı, genel af | Kendiliğinden | Kayıt sicilde görünmez, arşivde kalır |
+| Sicil kaydının silinip arşive alınması | İnfazın tamamlanması, şikâyetten vazgeçme ya da etkin pişmanlık, ceza zamanaşımı, genel af | Kendiliğinden | Kayıt sicilde görünmez, arşivde kalır |
 | Arşiv kaydının silinmesi | Kanundaki sürelerin dolması | Kendiliğinden | Kayıt tamamen yok olur |
 | Ceza Kanunundaki hak yoksunluklarının sona ermesi | İnfazın tamamlanması | Kendiliğinden | Haklar yeniden kullanılır |
 | Yasaklanmış hakların geri verilmesi | İnfazdan üç yıl sonra | Mahkeme, talep üzerine | Öteki kanunlardaki yoksunluklar kalkar |
+
+Bu dersle dersin başında çizilen haritanın son ayağı, yaptırım hukuku, tamamlanır: suçun nasıl kurulduğu ve hangi yaptırımın uygulandığı görüldükten sonra, cezalandırma yetkisinin nasıl sona erdiği ve geride hangi izi bıraktığı da görülmüş olur. Kolluk görevlisi bu izle sicil sorgusunda ve göreve giriş koşullarında yeniden karşılaşır.
 
 ---
 
@@ -130,4 +132,5 @@ Karar hakların geleceğe dönük olarak kullanılmasını sağlar; mahkûmiyeti
 - Madde bağları: 5352 md 4, md 9, md 12, md 13/A.
 - Gömülü soru yok: 5352 sayılı Kanuna bağlı yayınlı soru public uçtan aranmadı. Kullanıcı `ders-soru-ara.ts "Ceza Hukuku" "adli sicil" "arşiv kaydı" "yasaklanmış hakların geri verilmesi"` ile arayabilir. Soru üretilmedi.
 - SONRADAN EKLENEN PARAGRAF, teyit edilmeli: adli sicil bilgilerinin gizliliği 5352 md 11'e dayanır (madde bu turda okunmadı); kolluk görevlisinin amaç dışı sorgulamasının sonuçları ve "sabıka tek başına yakalama nedeni değildir" cümlesi yazımdır (TCK md 135–136 ve PVSK'nın genel koşulları).
+- DENETİM DÜZELTMESİ (bağımsız denetim, Opus oturumu, 14 Kas 2026): Kolluğun sorgulama yetkisi 5352 md 13/1-b'ye çekildi (bir suça ilişkin soruşturma ve kovuşturma kapsamında, Adalet Bakanının onayıyla); "görevinin gerektirdiği ölçüde" genellemesi metinde yok. "Ceza Kanunundaki yoksunluklar infazla kendiliğinden sona erer" cümlesine TCK md 53/5–6 istisnası eklendi (kötüye kullanılan hak ve meslek yasağı, sürücü belgesi geri alma infazdan sonra işler). Dört kavram tablosunun ilk satırı üst tabloyla (md 9/1) hizalandı. Kapanış iki cümlesi tck/01/01 harita tablosuna bağlandı. İNSAN İNCELEMESİ: 5352 md 9/3 ikinci cümlesi "Adlî para cezasına mahkûmiyet hükümleri ile cezanın ertelenmesine ilişkin hükümler, adlî sicil kaydına alınmadan doğrudan arşive kaydedilir" der; "Kaydedilir" sütunundaki adli para cezası ve erteleme satırları md 4'ün sayımına göre duruyor, bu iki kararın sicilde değil doğrudan arşivde görüneceği gövdede söylenmedi — okuma teyit edilip gerekirse gövdeye eklenmeli.
 - AI taslak; insan düzenleme ve yayın onayı bekliyor.

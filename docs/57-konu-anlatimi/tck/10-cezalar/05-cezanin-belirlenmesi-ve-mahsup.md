@@ -30,7 +30,7 @@ Bu ölçülerden biri zaten suçun unsuruysa temel ceza belirlenirken ayrıca he
 Sınav temel cezanın ölçülerini takdiri indirim nedenleriyle karıştırır. "Failin geçmişi", "sosyal ilişkileri" ve "cezanın failin geleceği üzerindeki olası etkileri" temel cezanın ölçüleri değildir; bunlar takdiri indirimde gözetilir. "Failin güttüğü amaç ve saik" ile "kusurunun ağırlığı" ise temel cezanın ölçüleridir. Kısaca: temel ceza fiile ve o fiildeki kusura bakar; takdiri indirim failin kişiliğine ve sonrasına.
 :::
 
-Temel cezanın alt sınırdan mı, üst sınıra yakın mı belirleneceği hâkimin takdirindedir; fakat bu takdir denetlenebilir olmalıdır. Hâkim alt sınırdan uzaklaşıyorsa hangi ölçüye dayandığını kararında göstermek zorundadır. Aynı suçtan yargılanan iki sanığa farklı temel ceza verilmesi de mümkündür: biri olayı planlamış ve ötekileri yönlendirmiş, öteki son anda katılmışsa kusurlarının ağırlığı aynı değildir.
+Temel cezanın alt sınırdan mı, üst sınıra yakın mı belirleneceği hâkimin takdirindedir; fakat bu takdir denetlenebilir olmalıdır. Uygulamada hâkimin alt sınırdan uzaklaşırken hangi ölçüye dayandığını kararında göstermesi aranır; bu, kararların gerekçeli olması ilkesinin sonucudur. Aynı suçtan yargılanan iki sanığa farklı temel ceza verilmesi de mümkündür: biri olayı planlamış ve ötekileri yönlendirmiş, öteki son anda katılmışsa kusurlarının ağırlığı aynı değildir.
 
 ## Sonuç cezaya giden sıra
 
@@ -39,16 +39,11 @@ Temel ceza bir başlangıçtır. Üzerine artırımlar ve indirimler belirli bir
 | Sıra | İşlem |
 |---|---|
 | Bir | Temel cezanın belirlenmesi |
-| İki | Olası kast ya da bilinçli taksir nedeniyle indirim ya da artırım |
-| Üç | Suçun nitelikli hâlleri: önce artırma, sonra indirme |
-| Dört | Teşebbüs |
-| Beş | İştirak |
-| Altı | Zincirleme suç |
-| Yedi | Haksız tahrik |
-| Sekiz | Yaş küçüklüğü |
-| Dokuz | Akıl hastalığı |
-| On | Cezada indirim yapılmasını gerektiren şahsi sebepler |
-| On bir | Takdiri indirim nedenleri |
+| İki | Temel ceza üzerinden: olası kast ya da bilinçli taksir indirimi ve suçun nitelikli hâlleri (nitelikli hâllerde önce artırma, sonra indirme; kanun bu ikisi arasındaki sırayı ayrıca göstermez) |
+| Üç | Kanunun saydığı sırayla: önce teşebbüs, iştirak ve zincirleme suç; ardından haksız tahrik, yaş küçüklüğü ve akıl hastalığı; en son cezada indirim gerektiren şahsi sebepler |
+| Dört | Takdiri indirim nedenleri |
+
+Sıranın ayrıntısı ve örneği suç tipi bölümünün nitelikli hâller dersinde verildi; burada önemli olan, takdiri indirimin en sonda yapılmasıdır.
 
 Her işlem bir öncekinden çıkan ceza üzerinden yapılır. Takdiri indirim en sondadır.
 
@@ -110,7 +105,7 @@ Kural şudur: "Hüküm kesinleşmeden önce gerçekleşen ve şahsi hürriyeti s
 | Hapis cezası | Özgürlüğü kısıtlanarak geçirilen süre gün gün düşülür |
 | Adli para cezası | Bir gün beş yüz Türk lirası sayılarak cezadan indirilir |
 
-"Bütün haller" sözü geniştir: gözaltı, tutukluluk, gözlem altında geçen süre, zorla getirme kapsama girer. Mahsup hâkimin takdirine bağlı değildir; zorunludur.
+"Bütün haller" sözü geniştir; gözaltı ve tutukluluğun yanında uygulamada gözlem altında geçen süre ve zorla getirme de kapsama alınır. Mahsup hâkimin takdirine bağlı değildir; zorunludur.
 
 :::uyari
 Adli para cezasından mahsupta bir günün karşılığı 2024'te yükseltildi; güncel tutar beş yüz liradır. Önceki tutarla hazırlanmış hesap soruları bugün başka sonuç verir. Otuz gün tutuklu kalan ve sonunda adli para cezasına mahkûm edilen kişinin cezasından, güncel kurala göre otuz günün karşılığı olan tutar düşülür.
@@ -152,4 +147,5 @@ Sorular temel cezanın ölçülerini, takdiri indirimin oranını ve nedenlerini
 - Madde bağları: TCK md 61, md 62, md 63.
 - Gömülü sorular: bankadaki yayınlı gerçek sorular, hepsi beş şıklı (757c421e… temel cezanın ölçülerinden olmayanlar (beklenen: I ve IV); 01e2b3c4… takdiri indirim oranı (beklenen: altıda bir); 551344ab… takdiri indirim nedeni sayılmayanlar (beklenen: I ve III); 797f1228… yanlış ifade (beklenen: bir ay yirmi sekiz gündür); b43a0380… kanunda açık düzenlemesi olan (beklenen: mahsup)). Doğru şık public uçtan görülemez; panelde anahtarla karşılaştırılmalı. Eş kurgulu 40ebbdd7, df292dc0, f053c566 alınmadı. Soru üretilmedi.
 - SONRADAN EKLENEN PARAGRAF, teyit edilmeli: gerekçe zorunluluğu Anayasa md 141 ve CMK md 230'un genel kuralıdır (maddeler bu turda okunmadı); iki sanık örneği yazımdır.
+- DENETİM DÜZELTMESİ (bağımsız denetim, Opus oturumu, 14 Kas 2026): Sıra tablosu nitelikli hâller dersiyle (tck/02/05) hizalandı: olası kast/bilinçli taksir ile nitelikli hâller tek basamakta (md 61/2 ve 61/4 ikisini de temel ceza üzerinden yaptırır, aralarındaki sıra kanunda açık değil); tablo kısaltılıp 02/05'e gönderildi. Temel cezada gerekçe ve mahsupta gözlem/zorla getirme uygulama kaydıyla.
 - AI taslak; insan düzenleme ve yayın onayı bekliyor.

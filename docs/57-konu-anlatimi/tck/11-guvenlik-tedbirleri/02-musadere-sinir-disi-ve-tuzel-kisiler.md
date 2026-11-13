@@ -6,7 +6,7 @@ Durum: İnceleme sürümü. Hedef: Eşya müsaderesi ile kazanç müsaderesini a
 
 ## Müsadere nedir
 
-Müsadere, bir eşyanın ya da ekonomik değerin mülkiyetinin devlete geçirilmesidir. Amacı iki yönlüdür: suçta kullanılan ya da kendisi tehlikeli olan eşyayı dolaşımdan çıkarmak ve suçun kazanç getirmesini önlemek. Bir ceza değil, güvenlik tedbiridir. Bu nitelemenin sonuçları vardır: müsadere için failin cezalandırılmış olması gerekmez; sanık ölse, kusur yeteneği bulunmasa ya da hakkında ceza verilmesine yer olmadığına karar verilse de müsadereye hükmedilebilir.
+Müsadere, bir eşyanın ya da ekonomik değerin mülkiyetinin devlete geçirilmesidir. Amacı iki yönlüdür: suçta kullanılan ya da kendisi tehlikeli olan eşyayı dolaşımdan çıkarmak ve suçun kazanç getirmesini önlemek. Bir ceza değil, güvenlik tedbiridir. Bu nitelemenin sonuçları vardır: kural olarak müsadere için failin cezalandırılmış olması gerekmez; sanık ölse, kusur yeteneği bulunmasa ya da hakkında ceza verilmesine yer olmadığına karar verilse de müsadereye hükmedilebilir. Ancak suçta kullanılan, suça tahsis edilen ya da suçtan meydana gelen eşyada kasten işlenmiş bir suçun varlığı aranır; fiil suç oluşturmadığı ya da hukuka uygun bulunduğu için beraat verilirse yalnız bulundurulması suç olan eşya müsadere edilir. Kabahatler Kanunundaki "mülkiyetin kamuya geçirilmesi" ise bir idari yaptırımdır; Ceza Kanunundaki güvenlik tedbirinin adı müsaderedir.
 
 Anayasa genel müsadereyi, yani kişinin bütün mal varlığına el konulmasını yasaklar. Ceza Kanunundaki müsadere her zaman suçla bağlantılı belirli bir şeye yönelir. Kanun iki türünü düzenler.
 
@@ -72,19 +72,11 @@ Kazanç müsaderesinin kendine özgü koşulu şudur: maddi menfaatin suçun ma�
 
 Kazanç ele geçirilemiyorsa bunun karşılığını oluşturan değerlerin müsaderesine hükmedilir. Kazancı sonradan edinen üçüncü kişi, Medeni Kanunun iyiniyetin korunmasına ilişkin hükümlerinden yararlanabiliyorsa ondan müsadere edilemez.
 
-## Müsaderede zamanaşımı
+## Müsaderede zamanaşımı ve elkoymadan farkı
 
-Müsadereye ilişkin hüküm, kesinleşmeden itibaren yirmi yıl geçtikten sonra infaz edilmez. Genel af, özel af ve şikâyetten vazgeçme, müsadere olunan şeylerin geri alınmasını gerektirmez. Sanığın ölümü hâlinde dava düşer, fakat müsadereye tabi eşya ve kazançlar bakımından davaya devam edilerek müsadereye hükmolunabilir.
+Müsadereye ilişkin hükmün infazında zamanaşımı ve af ile şikâyetten vazgeçmenin müsadereye etkisi infaz ve düşme nedenleri bölümünün zamanaşımı dersinde anlatılır.
 
-## Müsadere ve elkoyma
-
-| | Elkoyma | Müsadere |
-|---|---|---|
-| Niteliği | Koruma tedbiri | Güvenlik tedbiri |
-| Düzenlendiği yer | Ceza Muhakemesi Kanunu | Ceza Kanunu |
-| Etkisi | Eşya üzerindeki tasarruf yetkisi geçici olarak kaldırılır; mülkiyet sahibinde kalır | Mülkiyet devlete geçer |
-| Kim karar verir | Kural olarak hâkim; gecikmesinde sakınca bulunan hâllerde savcı ya da kolluk amirinin yazılı emri | Yalnız mahkeme, hükümle |
-| Zamanı | Soruşturma ve kovuşturma sırasında | Yargılamanın sonunda |
+Müsadere elkoymayla karıştırılmamalıdır: elkoyma soruşturma ve kovuşturma sırasında uygulanan bir koruma tedbiridir ve mülkiyeti değiştirmez; müsadere ise mülkiyeti devlete geçiren güvenlik tedbiridir. Müsaderenin kararını kural olarak hükümle mahkeme verir; ayrıca muhakeme kanunundaki müsadere usulünde, suç konusu olmayıp yalnız müsadereye tabi eşya için sulh ceza hâkimi duruşma yapmadan karar verebilir. İki kurumun ayrıntılı karşılaştırması Ceza Muhakemesi dersinde, özel muhakeme usulleri bölümünün müsadere dersinde verildi.
 
 Kolluk müsadere etmez, elkoyar. Elkonulan eşyanın sonunda müsadere edilebilmesi, elkoyma işleminin usulüne uygun yapılmasına ve eşyanın suçla bağlantısının tutanakta açıkça gösterilmesine bağlıdır.
 
@@ -131,4 +123,5 @@ Sorular müsaderenin niteliğini, kazanç müsaderesini, zamanaşımını ve yab
 - OCR: s-096'da müsadere türleri ile örnekler iç içe; s-097 başında bir paragraf yarım. Görüntüye bakılmadı.
 - Madde bağları: TCK md 54, md 55.
 - Gömülü sorular: bankadaki yayınlı gerçek sorular, hepsi beş şıklı (392d8ba2… müsaderenin niteliği (beklenen: güvenlik tedbiri); 5a4e4b2d… kazanç müsaderesinin tanımı (beklenen: suçun işlenmesiyle elde edilen, suçun konusunu oluşturan… maddi menfaatlerin müsaderesi); f0d08bee… müsadere hükmünün zamanaşımı (beklenen: 20); 6b272627… yabancının bildirileceği makam (beklenen: İçişleri Bakanlığı)). Doğru şık public uçtan görülemez; panelde anahtarla karşılaştırılmalı. Şıkları kesik göründüğü için alınmayanlar: 019a0893, 1034017d, 491f38bf, 287d1c38, 4e57967e, 4fc13b0a, 4c5e2c99, 64a7593d, a9aa78f9. Soru üretilmedi.
+- DENETİM DÜZELTMESİ (bağımsız denetim, Opus oturumu, 14 Kas 2026): "failin cezalandırılması gerekmez" genellemesi md 54/1'in kasıtlı suç koşuluyla sınırlandı (beraatte yalnız 54/4 eşyası). 1ad8b28d'nin B şıkkı ("mülkiyetin kamuya geçirilmesi") ile karışmasın diye 5326 md 18 ayrımı eklendi. Müsadere–elkoyma tablosu ("yalnız mahkeme, hükümle" CMK md 259 karşısında fazla kesindi) kısa paragrafa indirildi ve cmk/14-ozel-muhakeme-usulleri-ve-giderler/06'ya gönderildi; müsaderede zamanaşımı ve sanığın ölümü 12/02–12/03'e gönderildi (orada md 64/1–2 ve md 70 doğru anlatılıyor).
 - AI taslak; insan düzenleme ve yayın onayı bekliyor.

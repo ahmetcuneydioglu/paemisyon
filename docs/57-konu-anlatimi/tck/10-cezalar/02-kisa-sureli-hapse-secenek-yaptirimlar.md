@@ -25,7 +25,7 @@ Kısa süreli hapis cezasına seçenek yaptırımlar.
 
 Üç bentteki süre ölçüsü aynıdır: cezanın yarısından bir katına kadar. Altı ay hapis cezası bu seçeneklerden birine çevrilirse tedbirin süresi üç ay ile bir yıl arasında belirlenir.
 
-Seçenekler birbirinin eşdeğeri değildir; her biri başka bir fail tipine uyar. Zararın giderilmesi, mağdurun kaybının geri alınabildiği mal varlığı suçlarında anlam taşır. Eğitim kurumuna devam, mesleği olmayan genç failler için düşünülmüştür ve süresi cezaya değil amaca bağlanmıştır: en az iki yıl. Ehliyetin geri alınması ve meslek yasağı ancak suç o yetkinin kötüye kullanılmasıyla ya da gerektirdiği özene aykırı davranılarak işlenmişse seçilebilir; trafik kazasına neden olan sürücü ya da mesleğinin kurallarına uymayan usta bunun örneğidir. Mahkeme, kanundaki ölçülere göre bunlardan birini seçer; aynı ceza için birden çok seçeneğe birlikte hükmedemez.
+Seçenekler birbirinin eşdeğeri değildir; her biri başka bir fail tipine uyar. Zararın giderilmesi, mağdurun kaybının geri alınabildiği mal varlığı suçlarında anlam taşır. Eğitim kurumuna devam, mesleği olmayan genç failler için düşünülmüştür ve süresi cezaya değil amaca bağlanmıştır: en az iki yıl. Ehliyetin geri alınması ve meslek yasağı ancak suç o yetkinin kötüye kullanılmasıyla ya da gerektirdiği özene aykırı davranılarak işlenmişse seçilebilir; trafik kazasına neden olan sürücü ya da mesleğinin kurallarına uymayan usta bunun örneğidir. Mahkeme, kanundaki ölçülere göre bunlardan birini seçer; uygulamada aynı ceza için birden çok seçeneğe birlikte hükmedilemeyeceği kabul edilir (zorunlu çevirmede kanun da "birine" der).
 
 Kamuya yararlı işte çalıştırma için kanun ayrıca gönüllülük arar. Kişi zorla çalıştırılamaz; razı olmazsa bu seçenek uygulanmaz.
 
@@ -55,7 +55,7 @@ Yaş için ölçü fiilin işlendiği tarihtir; yaşlılar için kanun "bitirmi�
 
 Bazı suç tanımları hapis ya da adli para cezasını seçenek olarak öngörür. Mahkeme bu ikisinden hapsi seçmişse bilinçli bir tercih yapmıştır. Kanun bu tercihin dolaylı yoldan boşa çıkarılmasını engeller: suç tanımında iki ceza seçenek olarak öngörülmüş ve hapse hükmedilmişse, "bu ceza artık adlî para cezasına çevrilmez."
 
-Yasak yalnız adli para cezasına çevirmeyi kapsar. Koşulları varsa hapis cezası öteki beş seçenekten birine çevrilebilir.
+Yasak yalnız adli para cezasına çevirmeyi kapsar. Kanunun bu söyleyişinden çıkan sonuç şudur: koşulları varsa hapis cezası öteki beş seçenekten birine çevrilebilir.
 
 ### Taksirli suçlarda uzun süreli hapis
 
@@ -70,7 +70,7 @@ Seçenek yaptırımlar kural olarak yalnız kısa süreli hapiste uygulanır. Ka
 
 ## Asıl mahkûmiyet hangisi
 
-Çevirme yapıldığında hapis cezası geride kalır. Kanunun sözüyle: "Uygulamada asıl mahkûmiyet, bu madde hükümlerine göre çevrilen adlî para cezası veya tedbirdir." Kişi artık hapis cezasına değil, adli para cezasına ya da ilgili tedbire mahkûm olmuş sayılır. Bunun sonuçları vardır: hapis cezasına bağlanan hak yoksunlukları doğmaz; tekerrür ve erteleme gibi kurumlarda çevrilen yaptırım esas alınır.
+Çevirme yapıldığında hapis cezası geride kalır. Kanunun sözüyle: "Uygulamada asıl mahkûmiyet, bu madde hükümlerine göre çevrilen adlî para cezası veya tedbirdir." Kişi artık hapis cezasına değil, adli para cezasına ya da ilgili tedbire mahkûm olmuş sayılır. Bunun sonuçları vardır: hapis cezasına bağlanan hak yoksunlukları doğmaz; uygulamada tekerrür ve erteleme gibi kurumlarda da çevrilen yaptırım esas alınır.
 
 ## Uyulmazsa
 
@@ -128,4 +128,5 @@ Sorular seçenekleri, süre ölçüsünü, zorunlu çevirmeyi ve taksirli suçla
 - Madde bağları: TCK md 50.
 - Gömülü sorular: bankadaki yayınlı gerçek sorular, hepsi beş şıklı (6f7b08f9… seçenek yaptırım olan (beklenen: cezanın yarısından bir katına kadar süreyle… yasaklanma/çalıştırılma); 312a1216… kamuya yararlı işte çalıştırma süresi (beklenen: yarısından bir katına kadar); 77e954b6… zorunlu çevirme (beklenen: I ve III); 47b70046… bilinçsiz taksir, üç yıl (beklenen: adli para cezasına çevrilebilir, hâkimin takdirinde); aedfec9d… seçimlik cezada hapis seçilmesi (beklenen: adli para cezasına çevrilemez, koşulları varsa öteki seçeneklere çevrilebilir)). Doğru şık public uçtan görülemez; panelde anahtarla karşılaştırılmalı. ALINMAYAN: cab3344f ve d9618711 (bilinçli taksir, uzun süreli hapis — şıklar public uçta kesik, doğru şık görülemedi). Eş kurgulular alınmadı. Soru üretilmedi.
 - SONRADAN EKLENEN PARAGRAF, teyit edilmeli: seçeneklerin fail tipine göre açıklaması yazımdır; "aynı ceza için birden çok seçeneğe birlikte hükmedilemez" md 50/1'deki "çevrilebilir" yapısından çıkarılan yorumdur ve öğretide tartışmaya açıktır.
+- DENETİM DÜZELTMESİ (bağımsız denetim, Opus oturumu, 14 Kas 2026): "birden çok seçeneğe birlikte hükmedemez" md 50/1'de yazılı değil; uygulama kaydına alındı (md 50/3 "birine"). Seçimlik cezada öteki beş seçeneğe çevirme md 50/2'nin karşıt anlamından çıkarım olarak işaretlendi. Tekerrür ve ertelemede çevrilen yaptırımın esas alınması uygulama kaydıyla.
 - AI taslak; insan düzenleme ve yayın onayı bekliyor.

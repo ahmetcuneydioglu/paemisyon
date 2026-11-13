@@ -25,7 +25,7 @@ Nedenler etkiledikleri aşamaya göre ikiye ayrılır.
 "Hangisi kamu davasını düşüren nedenlerden değildir" sorusunda aranan şık çoğu kez hükümlünün ölümü ya da özel aftır. Hükümlü varsa dava bitmiş, hüküm kesinleşmiştir; düşecek bir dava kalmamıştır, ölüm cezayı ortadan kaldırır. Özel af da davaya değil cezaya etki eder. Sanığın akıl hastası olması ya da yurt dışına kaçması ise davayı hiç düşürmez.
 :::
 
-Bu nedenlerin ortak özelliği kişisel olmalarıdır; kural olarak yalnız ilgili kişi bakımından sonuç doğururlar. Ölen sanığın suç ortağı yargılanmaya devam eder; yaşı nedeniyle zamanaşımı süresi kısalan çocuk failin yanındaki yetişkin için süre kısalmaz. Bunun ayrığı şikâyetten vazgeçmedir: suç ortaklarından biri hakkındaki vazgeçme ötekileri de kapsar.
+Bu nedenlerin bir kısmı kişiseldir ve yalnız ilgili kişi bakımından sonuç doğurur. Ölüm ve özel af böyledir: ölen sanığın suç ortağı yargılanmaya devam eder. Yaş nedeniyle kısalan zamanaşımı süresi de yalnız çocuk faile uygulanır; yanındaki yetişkin için süre kısalmaz. Genel af ise kişiye değil suça yönelir ve kapsamındaki herkesi etkiler; şikâyetten vazgeçme de suç ortaklarından biri için yapılınca ötekileri kapsar.
 
 Mahkemenin vereceği karar da ortaktır. Düşme nedeni kovuşturma evresinde ortaya çıkmışsa davanın düşmesine karar verilir; bu bir hükümdür. Yalnız bir sınır vardır: derhâl beraat kararı verilebilecek hâllerde düşme kararı verilemez. Suçsuzluğu dosyadan anlaşılan sanık, zamanaşımı ya da af yüzünden aklanma olanağından yoksun bırakılmaz.
 
@@ -44,7 +44,7 @@ Sanığın veya hükümlünün ölümü.
 | Müsadere | Müsadereye tabi eşya ve maddi menfaatler bakımından davaya devam edilerek müsadereye hükmolunabilir | Ölümden önce kesinleşmiş müsadere hükmü infaz olunur |
 | Yargılama giderleri | | Ölümden önce kesinleşmiş hüküm infaz olunur |
 
-Adli para cezasında bir ayrıntı vardır: ölüm, "henüz infaz edilmemiş" adli para cezasını ortadan kaldırır. Ödenmiş olan kısım geri verilmez; ödenmemiş kısım mirasçılardan istenemez. Müsadere ise bir güvenlik tedbiri olduğu ve eşyaya yöneldiği için ölümden etkilenmez.
+Adli para cezasında bir ayrıntı vardır: ölüm, "henüz infaz edilmemiş" adli para cezasını ortadan kaldırır. Ödenmiş olan kısım geri verilmez; ödenmemiş kısım mirasçılardan istenemez. Müsadere ise ölümle tümüyle düşmez: sanık ölmüşse niteliği itibarıyla müsadereye tabi eşya ve maddi menfaatler bakımından davaya devam edilebilir; hükümlü ölmüşse ölümden önce kesinleşmiş müsadere hükmü infaz edilir.
 
 Ölüm yalnız ölen kişi bakımından sonuç doğurur. Suç ortakları hakkındaki dava ve cezalar sürer. Mağdurun tazminat hakkı da ortadan kalkmaz; zarar ölenin mirasçılarından hukuk mahkemesinde istenebilir.
 
@@ -67,7 +67,7 @@ Af.
 | Hak yoksunlukları | Ortadan kalkar | Özel affa rağmen etkisini sürdürür |
 | Mahkûmiyet | Yok hükmündedir; tekerrüre esas olmaz | Mahkûmiyet durur; tekerrüre esas olur |
 | Dava sürerken çıkarsa | Dava düşer | Davaya etkisi yoktur; ancak kesinleşmiş cezaya uygulanır |
-| Adli sicil | Kayıt silinir | Kayıt kalır |
+| Adli sicil | Kayıt sicilden silinip arşive alınır | Kayıt kalır |
 
 Kısaca: genel af suçu bütün sonuçlarıyla unutturur, özel af yalnız cezayı hafifletir ya da kaldırır. Bir işlemin genel af mı özel af mı olduğunu adı değil, sonucu belirler. Bir fiilin kanunla suç olmaktan çıkarılması da sonuçları bakımından genel affa benzer: dava düşer, verilmiş ceza bütün sonuçlarıyla ortadan kalkar.
 
@@ -101,11 +101,11 @@ Af ile cezasından kurtulan fail, mağdura karşı tazminat borcundan kurtulmuş
 
 ### Af ve içtima kurumları
 
-Genel af, kapsamına giren suçu hukuken yok sayar; bu yüzden o suç başka kurumların hesabına da girmez. Zincirleme suçu oluşturan fiillerden biri affa uğramışsa o fiil zincirden çıkar. Bileşik suçta ise kural terstir: bileşik suç bölünemez; parça suçlardan birinin affa uğraması bileşik suçu affa uğratmaz.
+Genel af, kapsamına giren suçu hukuken yok sayar; bu yüzden o suç başka kurumların hesabına da girmez. Öğretide kabul edildiği üzere zincirleme suçu oluşturan fiillerden biri affa uğramışsa o fiil zincirden çıkar. Bileşik suçta ise kural terstir: bileşik suç bölünemez; parça suçlardan birinin affa uğraması bileşik suçu affa uğratmaz. İki kurumun kendisi içtima bölümünün bileşik suç ve zincirleme suç derslerinde anlatıldı.
 
 ## Kolluk bakımından
 
-Düşme nedenlerinin varlığı soruşturmanın daha başında değerlendirilir. Şüphelinin öldüğü anlaşılmışsa nüfus kaydı dosyaya konur; fakat suçta kullanılan ya da suçtan elde edilen eşyaya ilişkin işlemler sürer, çünkü müsadere ölümle düşmez. Af kanunları yürürlüğe girdiğinde kapsamdaki yakalama kararlarının infazı durur; hangi dosyanın kapsamda olduğuna kolluk değil adli makam karar verir.
+Düşme nedenlerinin varlığı soruşturmanın daha başında değerlendirilir. Şüphelinin öldüğü anlaşılmışsa nüfus kaydı dosyaya konur; fakat suçta kullanılan ya da suçtan elde edilen eşyaya ilişkin işlemler sürer, çünkü niteliği itibarıyla müsadereye tabi eşya bakımından müsadere ölümle düşmez. Af kanunları yürürlüğe girdiğinde kapsamdaki yakalama kararlarının infazı durur; hangi dosyanın kapsamda olduğuna kolluk değil adli makam karar verir.
 
 ## Sınavda çıktı
 
@@ -138,4 +138,5 @@ Sorular davayı düşüren nedenleri, özel affın sonuçlarını ve genel af ni
 - Madde bağları: TCK md 64, md 65, md 74.
 - Gömülü sorular: bankadaki yayınlı gerçek sorular, hepsi beş şıklı (281c8504… davayı düşüren nedenlerden olmayan (beklenen: hükümlünün ölümü); 214e76c1… özel af, doğru ifade (beklenen: cezaya bağlı olan ya da hükümde belirtilen hak yoksunlukları özel affa rağmen etkisini sürdürür); 974f629b… genel af niteliğindeki işlem (beklenen: zinanın suç olmaktan çıkarılması); 64aa7e5c… doğru ifade (beklenen: özel af ile hapis cezası adli para cezasına çevrilebilir)). Doğru şık public uçtan görülemez; panelde anahtarla karşılaştırılmalı. Şıkları kesik göründüğü için alınmayanlar: b844dacc, 38595338, 1d562c66, 959eb084, 9b76e161; c473f63c (iki yanıt riski: şüphelinin ölümü ve uzlaşma birlikte şıklarda). Soru üretilmedi.
 - SONRADAN EKLENEN PARAGRAFLAR, teyit edilmeli: düşme nedenlerinin kişiselliği öğretidendir; "derhâl beraat verilebilecek hâllerde düşme kararı verilemez" CMK md 223/9'dan (kusurluluk bölümünde okundu); genel–özel af ayrımının "kaç kişiyi ilgilendirdiğine değil mahkûmiyete etkisine" bağlı olduğu öğretidendir.
+- DENETİM DÜZELTMESİ (bağımsız denetim, Opus oturumu, 14 Kas 2026): "Müsadere ölümden etkilenmez" TCK md 64/1–2 karşısında fazla genişti (sanıkta niteliği itibarıyla müsadereye tabi eşya ve maddi menfaatler için davaya devam; hükümlüde yalnız ölümden önce kesinleşmiş müsadere infaz) → gövde ve kolluk paragrafı düzeltildi. "Nedenlerin ortak özelliği kişisel olmalarıdır" genellemesi genel af karşısında fazla genişti → kişisel olanlar (ölüm, özel af, yaşa bağlı kısalma) ile suça yönelen genel af ayrıldı. Genel afta adli sicil 5352 md 9/1-d ile "silinip arşive alınır". Af–içtima sonuçları öğreti kaydıyla, tck/09 bileşik suç ve zincirleme suç derslerine göndermeyle. Uzlaşma satırı eklenmedi (CMK derslerinin konusu).
 - AI taslak; insan düzenleme ve yayın onayı bekliyor.

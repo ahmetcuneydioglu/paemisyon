@@ -21,7 +21,7 @@ Koşullu salıverilme.
 | İyi hâl | Hükümlü kurumdaki infaz süresini iyi hâlli olarak geçirmiş olmalıdır |
 | Süre | Cezasının kanunda gösterilen bölümünü infaz kurumunda çekmiş olmalıdır |
 
-Ertelemeden farklı olarak burada sabıka ya da suçun türü bakımından genel bir engel yoktur; ölçü, hükümlünün kurumdaki davranışı ve geçirdiği süredir. Suçun türü yalnız aranacak sürenin oranını değiştirir.
+Ertelemeden farklı olarak burada sabıka genel bir engel değildir; ölçü kural olarak hükümlünün kurumdaki davranışı ve geçirdiği süredir, suçun türü çoğunlukla yalnız aranacak sürenin oranını değiştirir. Kanun yine de bazı hâllerde koşullu salıverilmeyi tümüyle kapatır: devletin güvenliğine, anayasal düzene ve millî savunmaya karşı suçların bir örgütün faaliyeti çerçevesinde işlenmesinden verilen ağırlaştırılmış müebbet hapiste ve geri alınmış bir koşullu salıverilmeden sonra aynı hükmün infazında koşullu salıverilme kararı verilmez.
 
 ### Süreler
 
@@ -31,10 +31,17 @@ Ertelemeden farklı olarak burada sabıka ya da suçun türü bakımından genel
 | Müebbet hapis | Yirmi dört yıl |
 | Süreli hapis | Kural olarak cezanın yarısı |
 
-Süreli hapisteki oran 2020'de üçte ikiden yarıya indirildi. Bu genel kuralın ayrıkları vardır: kanun bazı suçlar için üçte iki, bazıları için dörtte üç oranını arar. Kasten öldürme, neticesi sebebiyle ağırlaşmış yaralama, işkence ve eziyet, cinsel dokunulmazlığa karşı suçlar, özel hayata karşı suçlar ile devlet sırlarına karşı suçlar ve casusluk, üçte iki oranının arandığı başlıca suçlardır. Tekerrür hâlinde süreler daha da uzar; mükerrir için ağırlaştırılmış müebbette otuz dokuz, müebbette otuz üç yıl ve süreli hapiste üçte iki oranı aranır.
+Süreli hapisteki oran 2020'de üçte ikiden yarıya indirildi. Bu genel kuralın ayrıkları vardır: kanun bazı suçlar için üçte iki, bazıları için dörtte üç oranını arar.
+
+| Oran | Başlıca suçlar (süreli hapiste) |
+|---|---|
+| Üçte iki | Kasten öldürme; neticesi sebebiyle ağırlaşmış yaralamanın kanunda gösterilen hâli; işkence ve eziyet; cinsel saldırının ve reşit olmayanla cinsel ilişkinin temel şekilleri ile cinsel taciz; özel hayata ve hayatın gizli alanına karşı suçlar; devlet sırlarına karşı suçlar ve casusluk; örgüt suçları |
+| Dörtte üç | Nitelikli cinsel saldırı; çocukların cinsel istismarı; reşit olmayanla cinsel ilişkinin nitelikli hâlleri; uyuşturucu ya da uyarıcı madde imal ve ticareti; Terörle Mücadele Kanunu kapsamındaki suçlar |
+
+Tekerrür hâlinde süreler daha da uzar. Mükerrir için ağırlaştırılmış müebbette otuz dokuz, müebbette otuz üç yıl, süreli hapiste üçte iki oranı aranır; örgüt faaliyeti çerçevesinde işlenen suçlarda ise ağırlaştırılmış müebbette otuz altı, müebbette otuz yıl. İkinci kez tekerrür hükümleri uygulanan hükümlü, 2025 değişikliğiyle süreli hapis cezasının dörtte üçünü kurumda geçirmedikçe koşullu salıverilemez. Mükerrirler için asıl yer bu derstir; tekerrür dersi buraya gönderir.
 
 :::uyari
-Oranlar ve ayrık suç listeleri infaz hukukunun en sık değiştirilen kurallarıdır; son yıllarda birden çok kez değiştirilmiştir. Sınavda güvenle sorulan çekirdek şudur: ağırlaştırılmış müebbette otuz, müebbette yirmi dört yıl; süreli hapiste kural yarı. Ayrıntılı listeleri ezberlemek yerine güncel kanun metnine bakmak gerekir.
+Oranlar ve ayrık suç listeleri infaz hukukunun en sık değiştirilen kurallarıdır; son yıllarda birden çok kez değiştirilmiştir. Sınavda güvenle sorulan çekirdek şudur: ağırlaştırılmış müebbette otuz, müebbette yirmi dört yıl; süreli hapiste kural yarı, sayılan suçlarda üçte iki ya da dörtte üç.
 :::
 
 ## Kim karar verir
@@ -71,9 +78,9 @@ Bu sürede hükümlü hakkında bazı önlemler alınabilir.
 | Hapis cezasını gerektiren kasıtlı bir suç işler | Koşullu salıverilme kararı geri alınır |
 | Yükümlülüklere, infaz hâkiminin uyarısına karşın, uymamakta ısrar eder | Koşullu salıverilme kararı geri alınır |
 
-Ertelemedeki yapının aynısıdır: kasıtlı suç ya da uyarıya karşın süren aykırılık. Geri alma hâlinde hükümlü kuruma döner; kurumda çektirilecek süre, sonraki suçun cezasına ya da ihlalin niteliğine göre belirlenir.
+Ertelemedeki yapının aynısıdır: kasıtlı suç ya da uyarıya karşın süren aykırılık. Geri alma hâlinde hükümlü kuruma döner. Yeni suçta, o suç için verilen hapis cezasının iki katı kadar süre kurumda çektirilir; bu süre hak ederek tahliye tarihini geçemez. Yükümlülük ihlalinde çektirilecek süreyi infaz hâkimi ihlalin niteliğine göre belirler.
 
-Denetim süresi iyi hâlli geçirilirse ceza infaz edilmiş sayılır.
+Denetim süresi yükümlülüklere uygun ve iyi hâlli geçirilirse ceza infaz edilmiş sayılır.
 
 ## Denetimli serbestlik tedbiri uygulanarak infaz
 
@@ -85,7 +92,7 @@ Denetimli serbestlik tedbiri uygulanarak cezanın infazı.
 
 | Koşul | Kural |
 |---|---|
-| Bulunduğu kurum | Açık ceza infaz kurumu ya da çocuk eğitimevi |
+| Bulunduğu kurum | Açık ceza infaz kurumu ya da çocuk eğitimevi; iradesi dışındaki bir nedenle açık kuruma ayrılamayan iyi hâlli hükümlüler de yararlanabilir |
 | Kalan süre | Koşullu salıverilmesine bir yıl ya da daha az kalmış olmalıdır |
 | İyi hâl | Aranır |
 | Talep | Hükümlünün talebi gerekir |
@@ -97,7 +104,7 @@ Son koşul 2025'te eklendi; hükümlünün kuruma hiç girmeden ya da birkaç g�
 Hükümlü bu sürede dört yükümlülükten bir ya da birkaçına tabi tutulur: kamuya yararlı bir işte ücretsiz çalışma, bir konutta ya da bölgede denetim ve gözetim altında bulunma, belirlenen yer ya da bölgelere gitmeme, belirlenen programlara katılma. Yükümlülükleri denetimli serbestlik müdürlüğü belirler.
 
 :::uyari
-Kuruma dönmeyen hükümlü firar etmiş sayılır. Kurumdan ayrıldıktan sonra denetimli serbestlik müdürlüğüne başvurması gereken sürenin bitiminden itibaren iki gün geçmesine karşın başvurmayan ya da iade kararına karşın iki gün içinde teslim olmayan hükümlü hakkında, hükümlü ya da tutuklunun kaçması suçuna ilişkin hükümler uygulanır.
+Kurumdan ayrıldıktan sonra denetimli serbestlik müdürlüğüne başvurması gereken sürenin bitiminden itibaren iki gün geçmesine karşın başvurmayan ya da iade kararına karşın iki gün içinde teslim olmayan hükümlü hakkında, hükümlü ya da tutuklunun kaçması suçuna ilişkin hükümler uygulanır.
 :::
 
 ## Üç kurum yan yana
@@ -125,4 +132,5 @@ Denetim altındaki hükümlü kolluğun günlük işinin parçasıdır. Hakkınd
 - OCR: s-102'de süreler tablosu eski oranlarla; dipnotlar iç içe. Görüntüye bakılmadı.
 - Madde bağları: 5275 md 107, md 105/A.
 - Gömülü soru yok: bu maddelere bağlı yayınlı soru public uçtan aranmadı (5275 sayılı Kanun hedef listesinde değildi). Kullanıcı `ders-soru-ara.ts "Ceza Hukuku" "koşullu salıverilme" "denetimli serbestlik"` ile arayabilir. Soru üretilmedi.
+- DENETİM DÜZELTMESİ (bağımsız denetim, Opus oturumu, 14 Kas 2026): "Sabıka ya da suç türü bakımından genel engel yoktur" 5275 md 107/16 (örgüt faaliyeti çerçevesinde devletin güvenliği, anayasal düzen, millî savunma suçlarından ağırlaştırılmış müebbette koşullu salıverilme yok) ve md 107/13 son cümlesi (geri almadan sonra aynı hükümde yeniden koşullu salıverilme yok) karşısında yanlıştı → düzeltildi. Üçte iki listesi md 107/2 (a)–(h) ve 107/4 ile; dörtte üç grubu md 108/9 (TCK 102/2, 103, 104/2–3, 188) ve 3713 md 17 ile yazıldı (çocuklara ilişkin (e), (g) bentleri ve TMK kapsamındaki çocuklar sayılmadı). Mükerrir süreleri (md 108/1), örgüt suçlarında otuz altı/otuz yıl (md 107/4) ve ikinci tekerrürde dörtte üç (md 108/3, 7550/2025) burada ana yer; tck/11/03 buraya gönderir. "İnfaz edilmiş sayılır" md 107/14'ün iki koşuluyla; geri almada çektirilecek süre md 107/13-a/b ile; md 105/A/2 kurum koşulu tabloya eklendi. "Firar etmiş sayılır" md 105/A/8'de geçmiyor, cümle çıkarıldı (kanun kaçma suçu hükümlerine gönderir). "Ezberlemek yerine güncel kanun metnine bakmak gerekir" kaldırıldı. Önceki notlardaki "dörtte üç bankadan kısmen okundu" kaydı bu düzeltmeyle kapandı. Gömülü soru hâlâ yok.
 - AI taslak; insan düzenleme ve yayın onayı bekliyor.

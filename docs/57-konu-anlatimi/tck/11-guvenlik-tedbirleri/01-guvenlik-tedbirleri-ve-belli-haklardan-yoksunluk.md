@@ -40,7 +40,7 @@ Tedbirin koşulu iki sözcükle belirlenir: suç "kasten" işlenmiş ve "hapis" 
 | Bent | Kişinin yoksun bırakıldığı |
 |---|---|
 | (a) | Sürekli, süreli ya da geçici bir kamu görevini üstlenmek; milletvekilliği ile atamaya ya da seçime bağlı bütün memuriyet ve hizmetler buna dâhildir |
-| (b) | Seçme ve seçilme ehliyeti |
+| (b) | Seçme ve seçilme ehliyeti: Anayasa Mahkemesi 2015'te bu bent bakımından kanuni sonuç ve süre kuralını iptal etti. Oy kullanma yasağı Anayasa'dan gelir: taksirli suçlardan hüküm giyenler dışında ceza infaz kurumunda bulunan hükümlüler oy kullanamaz. Seçilme yasakları Anayasa'da ve seçim kanunlarında düzenlenir |
 | (c) | Velayet hakkı; vesayet ya da kayyımlık hizmeti |
 | (d) | Vakıf, dernek, sendika, şirket, kooperatif ya da siyasi partide yönetici ya da denetçi olmak |
 | (e) | Bir kamu kurumunun ya da kamu kurumu niteliğindeki meslek kuruluşunun iznine bağlı bir mesleği ya da sanatı kendi adına, serbest meslek erbabı ya da tacir olarak yapmak |
@@ -49,7 +49,7 @@ Liste sınırlıdır. Sözleşme yapmak, bir işte ücretle çalışmak, mal edi
 
 Bentlerin ortak noktası, her birinin başkaları üzerinde bir yetki ya da toplumun güvenine dayanan bir konum içermesidir: kamu gücünü kullanmak, başkası adına karar vermek, bir topluluğu yönetmek, izne bağlı bir mesleği kendi adına yürütmek. Kanun, kasten suç işleyen kişinin bu konumlarda bulunmasını, cezası sürdüğü sürece sakıncalı görür. Yoksunluk mahkûmiyetin kanuni sonucu olduğu için hükümde ayrıca yazılmamış olması onu ortadan kaldırmaz; uygulamada yine de hükümde gösterilir.
 
-Kolluk mesleği bakımından ilk bendin anlamı açıktır: kasten işlediği suçtan hapis cezasına mahkûm olan kişi kamu görevini üstlenemez. Bu, Ceza Kanunundaki genel kuraldır; memuriyete ve polisliğe girişteki koşullar ile mahkûmiyetin memuriyete etkisi ayrıca kendi kanunlarında düzenlenmiştir ve oradaki sınırlar çoğu kez daha geniştir.
+Kolluk mesleği bakımından ilk bendin anlamı açıktır: kasten işlediği suçtan hapis cezasına mahkûm olan kişi kamu görevini, cezasının infazı tamamlanıncaya kadar üstlenemez. Memuriyete giriş koşulları ise daha geniştir: kasten işlenen bir suçtan bir yıl ya da daha fazla hapis cezası ya da zimmet, rüşvet, hırsızlık, dolandırıcılık gibi kanunda sayılan suçlardan mahkûmiyet, Ceza Kanunundaki süreler geçmiş ya da af çıkmış olsa bile memurluğa engeldir; memurken bu koşulu yitiren kişinin memurluğu sona erer.
 
 ### Süre
 
@@ -66,7 +66,7 @@ Ceza infaz edilemezse, örneğin hükümlü yakalanamazsa, yoksunluk süresiz s�
 | Cezası ertelenen, cezası denetimli serbestlikle infaz edilen ya da koşullu salıverilen hükümlü | Kendi altsoyuna ilişkin velayet, vesayet ve kayyımlık yetkilerinde yoksunluk uygulanmaz |
 | Aynı hükümlüler | İzne tabi meslek ya da sanatı icra etme yasağının uygulanmamasına karar verilebilir |
 
-İlk iki satırda yoksunluk hiç doğmaz. Son iki satırda yalnız belirli haklar yoksunluğun dışına çıkar; kamu görevi üstlenme ya da seçilme yasağı sürer.
+İlk iki satırda yoksunluk hiç doğmaz. Son iki satırda yalnız belirli haklar yoksunluğun dışına çıkar; kamu görevi üstlenme yasağı sürer.
 
 :::uyari
 "Hangileri hakkında belli hakları kullanmaktan yoksun bırakılma uygulanmaz" sorusunun yanıtı ilk iki satırdır: kısa süreli hapis cezası ertelenenler ve çocuklar. Koşullu salıverilenler ile denetimli serbestlikten yararlananlar bu yanıtın içinde değildir; onlar için yalnız altsoya ilişkin yetkilerde ve, mahkeme karar verirse, meslek yasağında bir yumuşama vardır.
@@ -138,4 +138,5 @@ Sorular tedbirlerin listesini, yoksunluğun uygulanmadığı kişileri, sürüc�
 - Madde bağları: TCK md 53.
 - Gömülü sorular: bankadaki yayınlı gerçek sorular, hepsi beş şıklı (1ad8b28d… kanundaki güvenlik tedbiri (beklenen: özel hukuk tüzel kişisinin faaliyet izninin iptali); 0532ce98… yoksunluğun uygulanmadığı kişiler (beklenen: I ve IV); 2591a1ce… sürücü belgesinin geri alınma süresi (beklenen: üç aydan üç yıla kadar); 093eb188… infaz edilemeyen cezada yoksunluk (beklenen: ceza zamanaşımı süresi doluncaya kadar)). Doğru şık public uçtan görülemez; panelde anahtarla karşılaştırılmalı. Eş kurgulu 2eaa917c, 20e77cdb, 79eb87b7 alınmadı; 4fa6e1f2, 1cecf6bc, 5465a1a4 (şıklar/öncüller kesik) alınmadı. Soru üretilmedi.
 - SONRADAN EKLENEN PARAGRAFLAR VE TABLO, teyit edilmeli: bentlerin ortak noktası ve ayrıkların gerekçesi yazımdır; "uygulamada hükümde gösterilir" genel uygulamadır; kolluk paragrafındaki "kendi kanunlarındaki sınırlar çoğu kez daha geniştir" 657 sayılı Kanun md 48 ve md 98'e dayanır (maddeler bu turda okunmadı); üçlü karşılaştırma tablosu md 53/1–2, 53/5 ve 53/6'dan.
+- DENETİM DÜZELTMESİ (bağımsız denetim, Opus oturumu, 14 Kas 2026): md 53/1-b: AYM 8/10/2015, E.2014/140 K.2015/85 — resmî metin dipnotları: (i) birinci fıkranın giriş cümlesi (b) bendindeki "seçilme ehliyeti" yönünden ve "hapis cezasına" ibaresi "Seçme" yönünden, (ii) ikinci fıkra (b) bendindeki "Seçme ve seçilme ehliyetinden" yönünden iptal; ayrıca 53/4 aynı yönden iptal. Sonuç: seçme ve seçilme ehliyetinden yoksunluk bugün md 53'ün kanuni sonucu olarak işlemiyor; tablo hücresi buna göre yazıldı ve ayrıklar paragrafındaki "seçilme yasağı sürer" çıkarıldı. Açık sorunun yanıtı: Anayasa md 67 "taksirli suçlardan hüküm giyenler hariç ceza infaz kurumlarında bulunan hükümlüler oy kullanamazlar"; milletvekili seçilme yasakları Anayasa md 76/2. Kolluk paragrafı md 53/2 (infaz tamamlanıncaya kadar) ve 657 md 48/A-5 ("53 üncü maddesinde belirtilen süreler geçmiş olsa bile… affa uğramış olsa bile") ile md 98/b'ye göre yazıldı.
 - AI taslak; insan düzenleme ve yayın onayı bekliyor.

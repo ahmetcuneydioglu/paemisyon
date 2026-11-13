@@ -39,7 +39,7 @@ Mahkûmiyet kişiyi ömür boyu mükerrir adayı yapmaz. Cezanın infazından so
 | Beş yıldan fazla hapis | Beş yıl | Cezanın infaz edildiği tarih |
 | Beş yıl ya da daha az hapis; adli para cezası | Üç yıl | Cezanın infaz edildiği tarih |
 
-Süre hükmün verildiği ya da kesinleştiği tarihten değil, cezanın infaz edildiği tarihten işler. Buradan şu çıkar: hüküm kesinleştikten sonra infaz tamamlanıncaya kadar işlenen her suç, süre sınırı aranmaksızın tekerrüre girer; süre sınırı ancak infazdan sonrası için söz konusudur.
+Süre hükmün verildiği ya da kesinleştiği tarihten değil, cezanın infaz edildiği tarihten işler. Kanunun bu söyleyişinden şu sonuç çıkar: hüküm kesinleştikten sonra infaz tamamlanıncaya kadar işlenen suçlar, maddedeki öteki ayrıklar saklı kalmak koşuluyla, süre sınırı aranmaksızın tekerrüre girer; süre sınırı ancak infazdan sonrası için söz konusudur.
 
 :::ornek
 Kişi hırsızlıktan iki yıl hapis cezası almış ve cezasının infazı tamamlanmıştır. İnfazın bittiği tarihten iki yıl sonra yeni bir hırsızlık işlerse üç yıllık süre dolmamıştır; tekerrür hükümleri uygulanır. Aynı suçu dört yıl sonra işlemiş olsaydı süre dolmuş olacağından mükerrir sayılmazdı. Önceki cezası yedi yıl olsaydı süre beş yıl olur ve dördüncü yılda işlenen suç yine tekerrüre girerdi.
@@ -54,18 +54,15 @@ Kişi hırsızlıktan iki yıl hapis cezası almış ve cezasının infazı tama
 | Fiili işlediği sırada on sekiz yaşını doldurmamış olanların suçları | Tekerrür hükümleri uygulanmaz |
 | Yabancı ülke mahkemelerinin hükümleri | Kural olarak tekerrüre esas olmaz |
 
-İlk satır iki yönde işler: önceki suç kasıtlı, sonraki taksirliyse de, önceki taksirli, sonraki kasıtlıysa da tekerrür yoktur. İki taksirli suç arasında ise tekerrür uygulanabilir.
+İlk satır iki yönde işler: önceki suç kasıtlı, sonraki taksirliyse de, önceki taksirli, sonraki kasıtlıysa da tekerrür yoktur. Kanun iki taksirli suç arasında tekerrürü dışlamadığı için, bu sonuç kanunun söyleyişinden çıkar: iki taksirli suç arasında tekerrür uygulanabilir.
 
 Yabancı mahkeme hükümlerine ilişkin kuralın ayrığı altı suçtur. Bu suçlardan dolayı yabancı ülke mahkemesinin verdiği hüküm tekerrüre esas olur.
 
-| Suç | Korunan değer |
+| Suç grubu | Suçlar |
 |---|---|
-| Kasten öldürme | Yaşam |
-| Kasten yaralama | Vücut bütünlüğü |
-| Yağma | Mal varlığı ve özgürlük |
-| Dolandırıcılık | Mal varlığı |
-| Uyuşturucu ya da uyarıcı madde imal ve ticareti | Kamu sağlığı |
-| Parada ya da kıymetli damgada sahtecilik | Kamu güveni |
+| Kişilere karşı | Kasten öldürme; kasten yaralama |
+| Malvarlığına karşı | Yağma; dolandırıcılık |
+| Topluma karşı | Uyuşturucu ya da uyarıcı madde imal ve ticareti; parada ya da kıymetli damgada sahtecilik |
 
 Hırsızlık ve resmî belgede sahtecilik bu listede yoktur; sınav onları çeldirici olarak kullanır.
 
@@ -78,15 +75,7 @@ Hırsızlık ve resmî belgede sahtecilik bu listede yoktur; sınav onları çel
 | Denetimli serbestlik | Cezanın infazından sonra mükerrir hakkında denetimli serbestlik tedbiri uygulanır |
 | Hükümde gösterilme | Mahkûmiyet kararında bu ikisinin uygulanacağı belirtilir |
 
-Cezanın miktarı artmaz. Mükerrirlere özgü infaz rejiminin en önemli yanı koşullu salıverilme süresidir; mükerrir, cezasının daha büyük bir bölümünü infaz kurumunda geçirir.
-
-| | Olağan hükümlü | Mükerrir |
-|---|---|---|
-| Ağırlaştırılmış müebbet hapis | Otuz yıl | Otuz dokuz yıl |
-| Müebbet hapis | Yirmi dört yıl | Otuz üç yıl |
-| Süreli hapis | Kural olarak cezanın yarısı | Cezanın üçte ikisi |
-
-İkinci kez tekerrür hükümleri uygulanan kişi için kural daha da ağırlaşır: 2025'te yapılan değişiklikle bu kişiler süreli hapis cezalarının dörtte üçünü infaz kurumunda geçirmedikçe koşullu salıverilemez. İnfaz hâkimi ayrıca mükerrir hakkında, cezanın infazı tamamlandıktan sonra başlamak üzere, bir yıldan az olmayan bir denetim süresi belirler.
+Cezanın miktarı artmaz. Mükerrirlere özgü infaz rejiminin en önemli yanı koşullu salıverilme süresidir: mükerrir, cezasının daha büyük bir bölümünü infaz kurumunda geçirir ve salıverildikten sonra da bir süre denetlenir. Sürelerin ayrıntısı infaz ve düşme nedenleri bölümünün koşullu salıverilme dersinde verilir.
 
 :::uyari
 Tekerrür temel cezayı artıran bir neden değildir. "Tekerrür hâlinde ceza altıda birden üçte bire kadar artırılır" türünden ifadeler önceki kanuna aittir. Bugün tekerrürün cezaya tek doğrudan etkisi, seçimlik cezalarda hapsin seçilmesidir; ötesi infaz hukukuna ilişkindir.
@@ -102,9 +91,9 @@ Kanun, mükerrir olmasalar bile üç kişi kümesi hakkında aynı rejimin uygul
 | Suçu meslek edinen kişi | "Kısmen de olsa geçimini suçtan elde ettiği kazançla sağlamaya alışmış kişi" |
 | Örgüt mensubu suçlu | "Bir suç örgütünü kuran, yöneten, örgüte katılan veya örgüt adına diğerleriyle birlikte veya tek başına suç işleyen kişi" |
 
-İtiyadi suçluda sayı sıkça sorulur: "ikiden fazla", yani en az üç kez. Süre bir yıldır ve suçlar farklı zamanlarda işlenmiş olmalıdır. Bu kişiler için önceden kesinleşmiş bir mahkûmiyet aranmaz; onları mükerrirden ayıran budur.
+İtiyadi suçluda sayı sıkça sorulur: "ikiden fazla", yani en az üç kez. Süre bir yıldır ve suçlar farklı zamanlarda işlenmiş olmalıdır. Tanımlarda önceden kesinleşmiş bir mahkûmiyet aranmaz; onları mükerrirden ayıran budur.
 
-Üç kavramın ortak özelliği, tek bir suçtan değil bir yaşam biçiminden söz etmeleridir. Mükerrirde tehlikeliliği önceki mahkûmiyet gösterir; itiyadi suçluda kısa sürede yinelenen suçlar, suçu meslek edinende geçim kaynağı, örgüt mensubunda ise içinde yer aldığı yapı. Mahkeme bu nitelikleri kararında somut olgulara dayandırmak zorundadır; kişinin yalnız birden çok suçtan yargılanıyor olması onu itiyadi suçlu yapmaz.
+Üç kavramın ortak özelliği, tek bir suçtan değil bir yaşam biçiminden söz etmeleridir. Mükerrirde tehlikeliliği önceki mahkûmiyet gösterir; itiyadi suçluda kısa sürede yinelenen suçlar, suçu meslek edinende geçim kaynağı, örgüt mensubunda ise içinde yer aldığı yapı. Uygulamada mahkemenin bu nitelikleri somut olgulara dayandırması beklenir; kişinin yalnız birden çok suçtan yargılanıyor olması onu itiyadi suçlu yapmaz.
 
 ## Tekerrür ve içtima
 
@@ -140,4 +129,5 @@ Sorular tekerrür süresinin başlangıcını ve infaz koşulunu yoklar.
 - Madde bağları: TCK md 58.
 - Gömülü sorular: bankadaki yayınlı gerçek sorular, hepsi beş şıklı (4e05f69e… tekerrür süresinin başlangıcı (beklenen: ilk suça ilişkin cezanın infaz edildiği tarihten); 601f7964… yanlış ifade (beklenen: önceki cezanın infaz edilmiş olması gerekir);). Doğru şık public uçtan görülemez; panelde anahtarla karşılaştırılmalı. 7ecbc27a (bağımlılara özgü tedbir, md 57/7) konusu bu derste işlenmediği için alınmadı. Şıkları ya da öncülleri kesik göründüğü için alınmayanlar: 008be4f4, 02ac335e, 24adc02b, 3705657b, 6f5ced52, 2214d39e, 7c8f2cff. Soru üretilmedi.
 - SONRADAN EKLENEN PARAGRAFLAR VE ÖRNEK, teyit edilmeli: tekerrürün güvenlik tedbiri olarak düzenlenmesinin gerekçesi öğretidendir; örnekteki hesap md 58/2'nin uygulamasıdır; "korunan değer" sütunu yazımdır (öğretideki genel sınıflandırma); özel tehlikeli suçlularda "somut olgulara dayandırma" uygulamadaki genel yaklaşımdır. Üç tanım tırnak içinde md 6/1 (h), (i), (j)'den.
+- DENETİM DÜZELTMESİ (bağımsız denetim, Opus oturumu, 14 Kas 2026): "İki taksirli suç arasında tekerrür" ve "infaz tamamlanıncaya kadar işlenen her suç" md 58/2 ve 58/4'ün karşıt anlamından çıkarım olarak işaretlendi, "öteki ayrıklar saklı" kaydı eklendi. Özel tehlikeli suçlularda iki cümle tanımdan çıkarım ve uygulama kaydıyla. Yabancı hükümler tablosundaki dolgu "korunan değer" sütunu çıkarıldı. Koşullu salıverilme süreleri tablosu ve ikinci tekerrür kuralı 12/01'e (ana yer) gönderildi.
 - AI taslak; insan düzenleme ve yayın onayı bekliyor.

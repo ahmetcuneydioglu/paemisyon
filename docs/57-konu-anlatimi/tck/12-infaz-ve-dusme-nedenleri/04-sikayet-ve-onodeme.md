@@ -8,7 +8,7 @@ Durum: İnceleme sürümü. Hedef: Şikâyet süresini ve başlangıcını söyl
 
 Suçların çoğu resen soruşturulur: kolluk ve savcı, mağdur istese de istemese de harekete geçer. Bazı suçlarda ise kanun takibi mağdurun isteğine bırakmıştır. Hakaret, basit yaralama, konut dokunulmazlığını ihlal gibi suçlarda mağdur şikâyetçi olmazsa soruşturma yapılamaz. Şikâyet bu suçlarda bir muhakeme koşuludur ve yokluğu ya da sonradan geri alınması davayı düşürür.
 
-Bir suçun şikâyete bağlı olduğu kanunda açıkça belirtilir. Belirtilmemişse suç resen takip edilir.
+Bir suçun şikâyete bağlı olduğu kanunda açıkça belirtilir. Belirtilmemişse suç resen takip edilir. Şikâyetin muhakeme koşulu olarak yapısı, kime ve nasıl yapılacağı Ceza Muhakemesi Koşulları bölümünün şikâyet dersinde anlatıldı; bu ders, şikâyetin davayı ve cezayı düşüren yönüne odaklanır.
 
 :::madde turk-ceza-kanunu:73
 Soruşturulması ve kovuşturulması şikâyete bağlı suçlar.
@@ -31,7 +31,7 @@ Bu kuralın bir sakıncası vardır: fail yıllarca öğrenilmezse süre hiç ba
 Altı ay "suçun işlendiği tarihten" değil, "fiilin ve failin öğrenildiği günden" başlar. Şıklarda sıkça görülen "suçun işlenmesiyle başlayan altı aylık süre" ifadesi yanlıştır. Şikâyette failin adının bildirilmesi de zorunlu değildir; mağdur faili bilmeden de şikâyetçi olabilir, süre onun aleyhine işlemeye başlamamıştır.
 :::
 
-Şikâyet hakkı suçtan zarar gören kişiye aittir. Küçükler ve kısıtlılar adına bu hakkı yasal temsilcileri kullanır. Şikâyet, Cumhuriyet savcılığına ya da kolluğa yazılı ya da tutanağa geçirilmek üzere sözlü olarak yapılır; kolluğa yapılan şikâyet gecikmeksizin savcılığa iletilir. Süre hak düşürücüdür: altı ay geçtikten sonra yapılan şikâyet üzerine soruşturma yapılamaz ve mağdurun süreyi neden kaçırdığı kural olarak araştırılmaz.
+Şikâyet hakkı suçtan zarar gören kişiye aittir; öğretide kabul edildiği üzere küçükler ve kısıtlılar adına bu hakkı yasal temsilcileri de kullanabilir. Öğretide bu süre hak düşürücü sayılır: altı ay geçtikten sonra yapılan şikâyet üzerine soruşturma yapılamaz, yapılmışsa dava düşer.
 
 ## Şikâyetten vazgeçme
 
@@ -53,7 +53,7 @@ Vazgeçme iki tarafı da ilgilendirdiği için kanun iki kural daha koyar.
 
 Vazgeçmenin tazminata etkisi ayrıdır. Dava şikâyetten vazgeçme nedeniyle düşmüşse ve mağdur vazgeçerken şahsi haklarından da vazgeçtiğini ayrıca açıklamışsa artık hukuk mahkemesinde de dava açamaz. Açıklamamışsa tazminat hakkı saklıdır.
 
-Kolluk için şikâyete bağlı suçlarda ilk iş mağdura şikâyetçi olup olmadığını sormak ve yanıtı tutanağa geçirmektir. Şikâyet yoksa soruşturma yürütülemez. Bunun ayrığı muhakeme kanunundadır: çocuklara ya da hastalığı, engeli ya da güçsüzlüğü nedeniyle kendini idare edemeyecek durumda olanlara karşı işlenen suçüstü hâllerinde kişinin yakalanması şikâyete bağlı değildir. Vazgeçme beyanı da açık ve koşulsuz olmalı, tutanakta mağdurun imzasıyla yer almalıdır.
+Kolluk için şikâyete bağlı suçlarda ilk iş mağdura şikâyetçi olup olmadığını sormak ve yanıtı tutanağa geçirmektir; vazgeçme beyanı da açık ve koşulsuz olmalı, tutanakta mağdurun imzasıyla yer almalıdır. Şikâyet yokken yakalama yapılıp yapılamayacağı muhakeme hukukunun konusudur.
 
 ## Önödeme
 
@@ -71,7 +71,7 @@ Hafif suçlarda kanun faile bir çıkış yolu tanır: belirli bir parayı öder
 | Kanundaki hapis cezasının yukarı sınırı altı ayı aşmayan suçlar | |
 | Kanunda ayrıca sayılan suçlar | |
 
-Kanun, yukarı sınırı altı ayı aşmasına karşın bazı suçları da kapsama almıştır: yardım veya bildirim yükümlülüğünün yerine getirilmemesi, genel güvenliğin taksirle tehlikeye sokulması, çevrenin taksirle kirletilmesi, özel işaret ve kıyafetleri usulsüz kullanma, suçu bildirmeme ve hakaret bunların başlıcalarıdır. Hakaret listeye sonradan eklenmiştir ve kamu görevlisine görevinden dolayı hakaret kapsam dışında tutulmuştur.
+Kanun, yukarı sınırı altı ayı aşmasına karşın bazı suçları da kapsama almıştır: yardım veya bildirim yükümlülüğünün yerine getirilmemesi, genel güvenliğin taksirle tehlikeye sokulması, çevrenin taksirle kirletilmesi, özel işaret ve kıyafetleri usulsüz kullanma, suçu bildirmeme ve hakaret (kamu görevlisine görevinden dolayı işlenen hâli hariç) bunların başlıcalarıdır. Hakaret listeye sonradan eklenmiştir; görevinden dolayı kamu görevlisine karşı işlenen hakaret önödemeye girmez.
 
 ### Miktar
 
@@ -103,15 +103,7 @@ Buna soruşturma giderleri eklenir.
 
 ## Önödeme ve uzlaştırma
 
-| | Önödeme | Uzlaştırma |
-|---|---|---|
-| Düzenlendiği yer | Ceza Kanunu | Ceza Muhakemesi Kanunu |
-| Taraflar | Fail ile devlet | Fail ile mağdur |
-| Mağdurun iradesi | Aranmaz | Belirleyicidir |
-| Ödeme kime yapılır | Devlet Hazinesine | Edim mağdura yönelir |
-| İlişkisi | Uzlaştırma kapsamındaki suçlarda uygulanmaz | Önce uzlaştırma denenir |
-
-Uzlaştırma Ceza Muhakemesi derslerinde anlatıldı. Burada akılda tutulacak olan, ikisinin aynı suçta birleşmediğidir: suç uzlaştırma kapsamındaysa önödeme yoluna gidilmez.
+Önödemede fail devlete bir para öder ve mağdurun iradesi aranmaz; uzlaştırmada ise fail ile mağdur anlaşır ve mağdurun iradesi belirleyicidir. Uzlaştırma, Özel Muhakeme Usulleri ve Giderler bölümünün uzlaştırma dersinde anlatıldı. Burada akılda tutulacak olan, ikisinin aynı suçta birleşmediğidir: suç uzlaştırma kapsamındaysa önödeme yoluna gidilmez.
 
 ## Sınavda çıktı
 
@@ -136,4 +128,5 @@ Sorular önödemenin kapsamını ve hapis cezasında bir gün karşılığını 
 - Madde bağları: TCK md 73, md 75.
 - Gömülü sorular: bankadaki yayınlı gerçek sorular, ikisi de beş şıklı (4b27d24c… önödemede hapis cezasının üst sınırı (beklenen: altı ay); 376b2e96… hapis cezasında bir gün karşılığı (beklenen: 100 TL)). Doğru şık public uçtan görülemez; panelde anahtarla karşılaştırılmalı. Şıkları ya da öncülleri kesik göründüğü için alınmayanlar: 512899b7, 24bdcf1d, 025c44cf, 20558183, 3173ad35, 44ce712a, 4f13cfac. Soru üretilmedi.
 - SONRADAN EKLENEN PARAGRAFLAR, teyit edilmeli: şikâyetin kime ve nasıl yapılacağı CMK md 158'in genel kuralından (madde bu turda okunmadı); "süre hak düşürücüdür" öğretidendir; önödemenin niteliği (suçun kabulü sayılmaz, zorunlu değildir) öğretidendir.
+- DENETİM DÜZELTMESİ (bağımsız denetim, Opus oturumu, 14 Kas 2026): "Küçükler ve kısıtlılar adına yasal temsilcileri kullanır" ve "süre hak düşürücüdür" TCK md 73'te yazılı değil → öğreti kaydıyla; "neden kaçırdığı araştırılmaz" çıkarıldı. Şikâyetin kime/nasıl yapılacağı (CMK md 158) ve şikâyete bağlı suçta suçüstü yakalama ayrığı (CMK md 90/3) bu derste doğrulanmadan duruyordu ve cmk/03-muhakeme-kosullari/03-sikayet dersinin konusudur → çıkarıldı, göndermeyle; ders düşme yönüne ve 2024 hakaret sınırına (md 73/2) odaklandı. Hakaret önödeme kapsamı md 75/6-a-2 (7571/2025) söyleyişine çekildi: "üçüncü fıkranın (a) bendi hariç" = kamu görevlisine görevinden dolayı. Önödeme–uzlaştırma tablosu tek paragrafa indirildi, cmk/14-ozel-muhakeme-usulleri-ve-giderler/03-uzlastirma dersine göndermeyle (tablodaki "edim mağdura yönelir" ve "önce uzlaştırma denenir" o dersin konusu).
 - AI taslak; insan düzenleme ve yayın onayı bekliyor.

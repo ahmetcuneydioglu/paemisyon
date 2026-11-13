@@ -17,7 +17,7 @@ Suçun üzerinden uzun yıllar geçtiğinde deliller kaybolur, tanıklar unutur,
 | Sonuç | Dava düşer; ortada bir mahkûmiyet yoktur | Mahkûmiyet durur; yalnız ceza infaz edilmez |
 | Süresi neye göre belirlenir | Suçun kanundaki cezasının üst sınırı | Hükmedilen ceza |
 
-Her ikisi de kendiliğinden gözetilir: mahkeme zamanaşımını talep olmasa da uygular ve şüpheli, sanık ya da hükümlü bundan vazgeçemez. "Zamanaşımına uğramış olsa da yargılanmak ve aklanmak istiyorum" diyen sanığın isteği sonucu değiştirmez.
+Her ikisi de kendiliğinden gözetilir: mahkeme zamanaşımını talep olmasa da uygular ve şüpheli, sanık ya da hükümlü bundan vazgeçemez. "Zamanaşımına uğramış olsa da yargılanmak ve aklanmak istiyorum" diyen sanığın isteği sonucu değiştirmez; ancak dosyadan derhâl beraat kararı verilebileceği anlaşılıyorsa düşme değil beraat kararı verilir (önceki ders).
 
 ## Dava zamanaşımı
 
@@ -84,7 +84,7 @@ Kesilmenin bir sınırı vardır; yoksa her yeni işlemle süre sonsuza uzardı.
 
 Aynı fiilden dolayı yeniden yargılamayı gerektiren hâllerde süre, mahkemenin bu yöndeki talebi kabul ettiği tarihten itibaren yeni baştan işlemeye başlar.
 
-Durma ile kesilme arasındaki fark bir örnekle görülür. Milletvekili hakkında dokunulmazlığı nedeniyle izin beklenirken geçen süre zamanaşımına sayılmaz; izin verilince süre kaldığı yerden yürür. Buna karşılık şüphelinin savcı tarafından ifadesi alındığında o güne kadar işlemiş olan süre silinir ve süre baştan başlar. İlki zamanı dondurur, ikincisi sıfırlar. Kesme nedenleri bir kişi bakımından gerçekleşse de suçun bütün ortakları için sonuç doğurur; kanun "şüpheli veya sanıklardan birinin" der.
+Durma ile kesilme arasındaki fark bir örnekle görülür. Milletvekili hakkında dokunulmazlığı nedeniyle izin beklenirken geçen süre zamanaşımına sayılmaz; izin verilince süre kaldığı yerden yürür. Buna karşılık şüphelinin savcı tarafından ifadesi alındığında o güne kadar işlemiş olan süre silinir ve süre baştan başlar. İlki zamanı dondurur, ikincisi sıfırlar. Kanun "şüpheli veya sanıklardan birinin" dediği için bu söyleyişten, kesme nedeninin bir kişi bakımından gerçekleşse de suçun bütün ortakları için sonuç doğurduğu sonucu çıkarılır.
 
 ## Ceza zamanaşımı
 
@@ -114,7 +114,7 @@ Ceza zamanaşımına bağlı iki kural daha vardır. Cezaya bağlı olan ya da h
 
 ## Zamanaşımının uygulanmadığı suçlar
 
-Devletin güvenliğine, anayasal düzene ve millî savunmaya karşı suçların düzenlendiği kısımda yer alan ve ağırlaştırılmış müebbet, müebbet ya da on yıldan fazla hapis cezasını gerektiren suçlar yurt dışında işlenmişse dava zamanaşımı uygulanmaz. Bu suçlardan verilen aynı ağırlıktaki cezalarda ceza zamanaşımı da uygulanmaz. İki koşul birlikte aranır: suç o kısımda yer almalı ve yurt dışında işlenmiş olmalıdır.
+Ceza Kanununun "Millete ve Devlete Karşı Suçlar" başlıklı kısmında yer alan ve ağırlaştırılmış müebbet, müebbet ya da on yıldan fazla hapis cezasını gerektiren suçlar yurt dışında işlenmişse dava zamanaşımı uygulanmaz. Aynı kısımda yer alan ve yurt dışında işlenen suçlardan verilen aynı ağırlıktaki cezalarda ceza zamanaşımı da uygulanmaz. İki koşul birlikte aranır: suç o kısımda yer almalı ve yurt dışında işlenmiş olmalıdır.
 
 ## Sürelerin hesabı
 
@@ -154,4 +154,5 @@ Sorular süreleri, durduran ve kesen nedenleri yoklar.
 - Madde bağları: TCK md 66, md 67, md 68.
 - Gömülü sorular: bankadaki yayınlı gerçek sorular, hepsi beş şıklı (1374a095… ağırlaştırılmış müebbette dava zamanaşımı (beklenen: otuz); be7fd4a3… ceza zamanaşımının alt ve üst sınırı (beklenen: on yıl – kırk yıl); 5d07ffa4… durduran neden (beklenen: soruşturma ya da kovuşturmanın izin alınmasına bağlı olması); 63df828f… kesen neden (beklenen: iddianame düzenlenmesi); 04ad3473… kesen işlem (beklenen: hâkim huzurunda sorguya çekilme)). Doğru şık public uçtan görülemez; panelde anahtarla karşılaştırılmalı. Eş kurgulu 09d196bd, 74ae0c15, 5eda1d85 alınmadı; şıkları kesik göründüğü için 0df1d6a5, b5c9b001, 1dae9c8a, 47490909, 6f948ac3, 5a9b4638 alınmadı. Soru üretilmedi.
 - SONRADAN EKLENEN PARAGRAF, teyit edilmeli: milletvekili örneği md 67/1'deki "izin" hâlinin bilinen örneğidir; "kesme nedenleri bütün ortaklar için sonuç doğurur" md 67/2'deki "birinin" sözünden ve öğretiden.
+- DENETİM DÜZELTMESİ (bağımsız denetim, Opus oturumu, 14 Kas 2026): md 66/7 ve 68/3'teki "İkinci Kitabın Dördüncü Kısmı" artık kısmın adıyla anıldı; resmî başlık "Millete ve Devlete Karşı Suçlar ve Son Hükümler"dir, gövdede ilk bölümü yazıldı; eski "devletin güvenliği, anayasal düzen, millî savunma" özetlemesi kısmı daraltıyordu (kısım, örneğin Devletin Egemenlik Alametlerine ve Organlarının Saygınlığına Karşı Suçları da kapsar). md 72/2 cümlesine CMK md 223/9 sınırı (derhâl beraat) önceki derse göndermeyle eklendi. Kesme nedenlerinin ortaklara etkisi kanunun "birinin" söyleyişinden çıkan sonuç olarak kayıtlandı.
 - AI taslak; insan düzenleme ve yayın onayı bekliyor.

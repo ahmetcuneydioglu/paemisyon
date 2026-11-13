@@ -12,7 +12,7 @@ Mahkeme sanığı mahkûm etmiş ve hapis cezası vermiştir; fakat sanığın b
 Hapis cezasının ertelenmesi.
 :::
 
-Erteleme bir cezasızlık değildir. Mahkûmiyet hükmü vardır ve kesinleşmiştir; ertelenen, cezanın kurumda infazıdır. Kanunun deyişiyle bu, cezanın infaz biçimidir.
+Erteleme bir cezasızlık değildir. Mahkûmiyet hükmü vardır ve kesinleşmiştir; ertelenen, cezanın kurumda infazıdır. Öğretide erteleme, cezanın bir infaz biçimi olarak nitelendirilir.
 
 ## Koşullar
 
@@ -37,7 +37,7 @@ Sabıka koşulundaki üç sözcük sınavda tek tek yoklanır.
 Erteleme sınırı iki yıldır; üç yıl yalnız çocuklar ve altmış beş yaşını bitirmiş olanlar için geçerlidir. "İşlediği suçtan dolayı üç yıl ya da daha az süreyle hapis cezasına mahkûm edilen kişinin cezası ertelenebilir" cümlesi, yaş kaydı olmadan söylendiğinde yanlıştır. Ölçü, seçenek yaptırımlarda olduğu gibi, hükmedilen sonuç cezadır.
 :::
 
-Kanaat koşulu ertelemenin özüdür. Mahkeme sanığın geçmişine değil, suçtan sonraki tutumuna bakar: suçu kabullenip kabullenmediği, zararı gidermeye çalışıp çalışmadığı, yargılama boyunca nasıl davrandığı. Bu değerlendirme gerekçede gösterilmek zorundadır; "sanığın yeniden suç işlemeyeceği kanaatine varılamamıştır" biçimindeki kalıp bir cümle yeterli sayılmaz. Öte yandan sanığın suçlamayı kabul etmemesi tek başına ertelemeye engel değildir; susmak ve savunma yapmak bir haktır.
+Kanaat koşulu ertelemenin özüdür. Mahkeme sanığın geçmişine değil, suçtan sonraki tutumuna bakar: suçu kabullenip kabullenmediği, zararı gidermeye çalışıp çalışmadığı, yargılama boyunca nasıl davrandığı. Uygulamada bu değerlendirmenin gerekçede gösterilmesi aranır; "sanığın yeniden suç işlemeyeceği kanaatine varılamamıştır" biçimindeki kalıp bir cümle yeterli sayılmaz. Uygulamada sanığın suçlamayı kabul etmemesinin tek başına ertelemeye engel olmadığı da kabul edilir; susmak ve savunma yapmak bir haktır.
 
 Erteleme her suç için ayrı değerlendirilir. Sanık aynı davada iki ayrı suçtan ceza almışsa, cezaların toplamına değil her birine bakılır; her biri sınırın altındaysa her biri için ayrı ayrı erteleme kararı verilebilir.
 
@@ -95,9 +95,9 @@ Bu ayrımın gerekçesi, ertelemenin dayandığı kanaattedir. Mahkeme sanığı
 
 Kanunun cümlesi şudur: "Denetim süresi yükümlülüklere uygun veya iyi halli olarak geçirildiği takdirde, ceza infaz edilmiş sayılır."
 
-Sonuç, cezanın çekilmiş sayılmasıdır; mahkûmiyetin ortadan kalkması değil. Hüküm adli sicilde kalır, tekerrüre esas olur ve mahkûmiyete bağlı sonuçlar kanundaki kurallara göre doğar. Önceki ceza kanunundaki "mahkûmiyet esasen vaki olmamış sayılır" kuralı bugünkü kanunda yoktur.
+Sonuç, cezanın çekilmiş sayılmasıdır; mahkûmiyetin ortadan kalkması değil. Hüküm adli sicilde kalır, uygulamada tekerrüre esas olur ve mahkûmiyete bağlı sonuçlar kanundaki kurallara göre doğar. Önceki ceza kanunundaki "mahkûmiyet esasen vaki olmamış sayılır" kuralı bugünkü kanunda yoktur.
 
-Hak yoksunlukları bakımından bir ayrım yapılır. Kasten işlenen suçtan hapis cezasına mahkûmiyetin kanuni sonucu olan hak yoksunlukları, kısa süreli hapis cezası ertelenmiş kişiler hakkında uygulanmaz. Ertelenen ceza bir yıldan fazlaysa yoksunluklar doğar; kanun yalnız hükümlünün kendi altsoyu üzerindeki velayet, vesayet ve kayyımlık yetkilerini bunun dışında tutar.
+Hak yoksunlukları bakımından bir ayrım yapılır. Kasten işlenen suçtan hapis cezasına mahkûmiyetin kanuni sonucu olan hak yoksunlukları, kısa süreli hapis cezası ertelenmiş kişiler hakkında uygulanmaz. Ertelenen ceza bir yıldan fazlaysa yoksunluklar doğar. Kanun hükümlünün kendi altsoyu üzerindeki velayet, vesayet ve kayyımlık yetkilerini bunun dışında tutar; izne tabi bir meslek ya da sanatı serbestçe icra etme yoksunluğunun uygulanmamasına da mahkeme karar verebilir.
 
 ## Benzer kurumlardan ayırmak
 
@@ -105,11 +105,11 @@ Hak yoksunlukları bakımından bir ayrım yapılır. Kasten işlenen suçtan ha
 |---|---|---|---|
 | Düzenlendiği yer | Ceza Kanunu | Ceza Kanunu | Ceza Muhakemesi Kanunu |
 | Hüküm | Mahkûmiyet hükmü kurulur ve kesinleşir | Mahkûmiyet hükmü kurulur; asıl mahkûmiyet çevrilen yaptırımdır | Hüküm kurulur ama açıklanmaz; hukuki sonuç doğurmaz |
-| Sınır | İki yıl; çocuk ve yaşlıda üç yıl | Bir yıl | Muhakeme kanunundaki sınır |
+| Sınır | İki yıl; çocuk ve yaşlıda üç yıl | Bir yıl | İki yıl ya da daha az hapis veya adli para cezası |
 | Süre sorunsuz geçerse | Ceza infaz edilmiş sayılır | | Dava düşer |
 | Adli sicil | Kaydedilir | Kaydedilir | Ayrı bir sisteme kaydedilir |
 
-Üçüncü sütun Ceza Muhakemesi derslerinde anlatıldı. Sınavda karıştırılan nokta sonuçtur: erteleme bir mahkûmiyettir, geri bırakma değildir.
+Üçüncü sütunun ayrıntısı Ceza Muhakemesi dersinde, soruşturma evresi bölümünün üç kurum tablosunda ve kovuşturma evresi bölümünün hükmün açıklanmasının geri bırakılması dersinde anlatıldı. Sınavda karıştırılan nokta sonuçtur: erteleme bir mahkûmiyettir, geri bırakma değildir.
 
 ## Sınavda çıktı
 
@@ -141,4 +141,5 @@ Sorular erteleme sınırını, yaşa göre ayrığı ve denetim süresini yoklar
 - Madde bağları: TCK md 51.
 - Gömülü sorular: bankadaki yayınlı gerçek sorular, hepsi beş şıklı (338c929b… erteleme sınırı (beklenen: iki yıl); 7671033b… çocuk ve yaşlıda sınır (beklenen: üç yıl); be8bd8e6… denetim süresi (beklenen: bir yıl ile üç yıl); 3acbac3b… denetim süresi hakkında yanlış ifade (beklenen: hükmün verildiği tarihte işlemeye başlar)). Doğru şık public uçtan görülemez; panelde anahtarla karşılaştırılmalı. Eş kurgulu 403b777e, 9417304a, 124b582d, cc0d7012, 100b02ec, 417f0a9e alınmadı. Soru üretilmedi.
 - SONRADAN EKLENEN PARAGRAFLAR, teyit edilmeli: kanaat koşulunun değerlendirilmesi ve gerekçe zorunluluğu uygulamadaki yerleşik yaklaşımdır (künye verilmedi); "suçlamayı kabul etmemek tek başına engel değildir" ve "her suç için ayrı değerlendirme" öğretideki ve uygulamadaki genel kabuldür; kasıtlı–taksirli ayrımının gerekçesi yazımdır.
+- DENETİM DÜZELTMESİ (bağımsız denetim, Opus oturumu, 14 Kas 2026): "Kanunun deyişiyle bu, cezanın infaz biçimidir" md 51'de yok → öğreti kaydı. md 53/3 ikinci cümlesi (meslek ve sanat yoksunluğunun uygulanmaması) eklendi; "yalnız" kaldırıldı. Kanaatin gerekçede gösterilmesi, suçlamayı kabul etmemenin engel olmaması ve tekerrüre esas olma uygulama kaydıyla. HAGB sütunundaki belirsiz "muhakeme kanunundaki sınır" CMK 231/5 söyleyişine çekildi ve CMK derslerine gönderildi.
 - AI taslak; insan düzenleme ve yayın onayı bekliyor.
