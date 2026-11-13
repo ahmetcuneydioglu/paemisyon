@@ -84,14 +84,14 @@ Suç birden çok kişiyle işleniyorsa vazgeçme bulaşıcı değildir.
 
 Kural açıktır: "sadece gönüllü vazgeçen suç ortağı, gönüllü vazgeçme hükümlerinden yararlanır." Vazgeçmeyen ortaklar, suç tamamlanmışsa tamamlanmış suçtan, tamamlanmamışsa teşebbüsten sorumlu olmayı sürdürür.
 
-Tek başına hareket eden fail için durmak çoğu kez yeterlidir. Ortaklardan biri için yetmez: o çekilse de ötekiler suçu tamamlayabilir. Bu yüzden vazgeçen ortağın suçun işlenmesini önlemek için çaba göstermesi beklenir. Kanun, çabanın sonucuna ilişkin iki özel durumu da vazgeçen lehine çözer.
+Tek başına hareket eden fail için durmak çoğu kez yeterlidir. Ortaklardan biri için yetmez: o çekilse de ötekiler suçu tamamlayabilir. Öğretide, kanunun ikinci fıkrasındaki "gayret" sözünden hareketle vazgeçen ortağın suçun işlenmesini önlemek için çaba göstermesi gerektiği kabul edilir. Kanun, çabanın sonucuna ilişkin iki özel durumu da vazgeçen lehine çözer.
 
 | Durum | Vazgeçen ortak yararlanır mı |
 |---|---|
 | Suç, vazgeçenin çabası sayesinde işlenmedi | Evet |
 | Suç, vazgeçenin çabası dışında başka bir nedenle işlenmedi | Evet |
 | Suç, vazgeçenin bütün çabasına karşın işlendi | Evet |
-| Vazgeçen hiçbir çaba göstermedi, öteki ortaklar suçu işledi | Hayır |
+| Vazgeçen hiçbir çaba göstermedi, öteki ortaklar suçu işledi | Hayır (öğretideki çözüm) |
 
 Üçüncü satır tek failin durumundan ayrılır. Tek fail sonucu önleyemezse yararlanamaz; ortak ise elinden gelen bütün çabayı göstermişse, suç yine de işlenmiş olsa bile yararlanır. Kanun ortaktan sonucu değil, ciddi bir çabayı ister.
 
@@ -131,4 +131,5 @@ Sorular sonucun önlenmesini, tamam olan kısmı, gönüllülüğü ve vazgeçme
 - Madde bağları: TCK md 36, md 41.
 - Gömülü sorular: bankadaki yayınlı gerçek sorular, hepsi beş şıklı (6c2ac437… yaraladığı kişiyi hastaneye yetiştiren fail (beklenen: kasten yaralama); adb63549… aynı olay, kurum adıyla (beklenen: gönüllü vazgeçme hükümleri uyarınca kasten yaralamadan sorumludur); 7d1d81cb… doğru ifade (beklenen: icra hareketlerini tamamladıktan sonra da neticeyi önleyerek vazgeçebilir); 3f572af0… yoksul ev (beklenen: hırsızlıktan gönüllü vazgeçmiştir, konut dokunulmazlığını ihlalden sorumludur); 807b4aae… daha uygun araç getirmek için ayrılma (beklenen: hırsızlığa teşebbüs)). Doğru şık public uçtan görülemez; panelde anahtarla karşılaştırılmalı. Eş kurgulu b66918db, 70d63e5d, 1b92cc5f, 89698d0a, 2ada0d42 alınmadı. Soru üretilmedi.
 - SONRADAN EKLENEN PARAGRAF, teyit edilmeli: "fail hiçbir şey yapmasa ne olurdu" ölçüsü ve "ambulans çağırmak da kendi çabasıdır" (yayınlı sorular adb63549 ve 1b92cc5f'te beklenen yanıt bu yöndedir); "mağdur failin katkısı olmadan kurtulmuşsa teşebbüs" md 36'nın "kendi çabalarıyla" sözünden.
+- DENETİM DÜZELTMESİ (bağımsız denetim, Opus oturumu, 13 Kas 2026): iştirakte vazgeçende çaba koşulu md 41/1'de açık değil; md 41/2'deki "gösterdiği gayreti" ve "bütün gayretine rağmen" sözlerinden öğretinin çıkardığı sonuç olarak kayda alındı; tablo son satırına "(öğretideki çözüm)". Katkısı yalnız manevi olan ve icradan önce desteğini geri çeken şerikte çabanın içeriği tartışmalı — insan incelemesi.
 - AI taslak; insan düzenleme ve yayın onayı bekliyor.

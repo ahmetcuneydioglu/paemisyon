@@ -64,7 +64,7 @@ Pusuda bekleyene yiyecek götürmek "araç sağlama" değildir; yiyecek suçun i
 
 ### Ortak koşullar
 
-Hangi biçimde olursa olsun yardımın üç ortak koşulu vardır. Yardım eden kasten hareket etmelidir: bir suçun işlenmesine katkıda bulunduğunu bilmeli ve bunu istemelidir. Ne için kullanılacağını bilmeden komşusuna merdivenini ödünç veren kişi hırsızlığa yardım etmiş olmaz. Yardım, işlenen suç bakımından bir katkı sağlamış olmalıdır; failin hiç kullanmadığı, işine yaramayan bir araç vermek katkı değildir. Ve bağlılık kuralı gereği fail suçun icrasına başlamış olmalıdır; fail harekete geçmemişse verilen silah ya da gösterilen yol, yardım edeni iştirakten sorumlu kılmaz.
+Hangi biçimde olursa olsun yardımın üç ortak koşulu vardır. Yardım eden kasten hareket etmelidir: bir suçun işlenmesine katkıda bulunduğunu bilmeli ve bunu istemelidir. Ne için kullanılacağını bilmeden komşusuna merdivenini ödünç veren kişi hırsızlığa yardım etmiş olmaz. Yardım, işlenen suç bakımından bir katkı sağlamış olmalıdır. Öğretide, failin hiç kullanmadığı bir aracın maddi katkı sayılmadığı kabul edilir; ancak aracın verilmesi failin kararını kuvvetlendirmişse manevi yardım söz konusu olabilir. Ve bağlılık kuralı gereği fail suçun icrasına başlamış olmalıdır; fail harekete geçmemişse verilen silah ya da gösterilen yol, yardım edeni iştirakten sorumlu kılmaz.
 
 ## Yardım edenin cezası
 
@@ -83,7 +83,7 @@ Hangi biçimde olursa olsun yardımın üç ortak koşulu vardır. Yardım eden 
 | Azmettiren, artırım hâllerinde | Failden fazla |
 | Yardım eden | Failden az |
 
-Bir kişi aynı suça birden çok biçimde katılmış olabilir: önce azmettirmiş, sonra silah vermiş, üstüne saklayacağına söz vermiştir. Bu durumda tek bir suça katılma vardır ve kişi en ağır cezayı gerektiren statüden, yani azmettirmeden sorumlu olur; öteki katkılar onun içinde erir.
+Bir kişi aynı suça birden çok biçimde katılmış olabilir: önce azmettirmiş, sonra silah vermiş, üstüne saklayacağına söz vermiştir. Öğretide bu durumda tek bir iştirak bulunduğu ve kişinin en ağır cezayı gerektiren statüden, yani azmettirmeden sorumlu olacağı kabul edilir; öteki katkılar onun içinde erir.
 
 ## Yardım eden mi, müşterek fail mi
 
@@ -136,4 +136,5 @@ Sorular yardım edenin cezasını, sonradan yapılan yardımı, teşviki ve fail
 - Madde bağları: TCK md 39.
 - Gömülü sorular: bankadaki yayınlı gerçek sorular, hepsi beş şıklı (cebcfe1e… yardım edenin cezası (beklenen: yarısı indirilir, sekiz yılı geçemez); 701b5777… ağırlaştırılmış müebbette en fazla (beklenen: yirmi); ad780b5a… iştirak türü olmayan (beklenen: suç tamamlandıktan sonra önceden kararlaştırılmaksızın yardım etmek); eaaf3ecc… kararsız kişiyi yöneltme (beklenen: teşvik); 1a29a45f… failden az ceza alanlar (beklenen: I, II ve IV)). Doğru şık public uçtan görülemez; panelde anahtarla karşılaştırılmalı. Eş kurgulu 62a4d2fe, 522e0689, d440ebf2, 6972e843 alınmadı. Soru üretilmedi.
 - SONRADAN EKLENEN BAŞLIK ("ortak koşullar"), teyit edilmeli: kast ve icraya başlama md 39–40'tan; merdiven örneği yazımdır; "failin hiç kullanmadığı araç katkı değildir" kitabın nedensellik ölçüsünün uygulamasıdır ve öğretide tartışmaya açıktır (manevi destek sayılabileceği görüşü vardır).
+- DENETİM DÜZELTMESİ (bağımsız denetim, Opus oturumu, 13 Kas 2026): "kullanılmayan araç katkı değildir" ve "statülerin erimesi" öğreti kaydına alındı; kullanılmayan aracın kararı kuvvetlendirmesi hâlinde manevi yardım ihtimali eklendi.
 - AI taslak; insan düzenleme ve yayın onayı bekliyor.

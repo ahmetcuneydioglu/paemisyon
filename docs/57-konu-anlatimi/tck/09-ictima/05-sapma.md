@@ -41,12 +41,12 @@ Hedeflenen kişi kurtulur, bir başkası zarar görür. Ortada iki suç vardır:
 | Fail, öteki kişinin de vurulabileceğini | Öteki kişiye karşı suç | Uygulanan kural |
 |---|---|---|
 | Öngörmüş ve kabullenmiştir | Olası kastla işlenen suç | Hedefe karşı teşebbüs ve ötekine karşı kasten işlenen suçtan ayrı ayrı ceza |
-| Öngörmemiştir, ama öngörebilirdi | Taksirle işlenen suç | Teşebbüs ile taksirli suç tek fiilden doğan farklı suçlardır; fikri içtima uygulanır ve en ağırından ceza verilir |
+| Öngörmemiştir, ama öngörebilirdi | Taksirle işlenen suç | Dış dünyada tek sonuç doğduğu için teşebbüs ile taksirli suç tek fiilden doğan farklı suçlardır; fikri içtima uygulanır ve en ağırından ceza verilir |
 | Öngöremezdi | Suç yok | Yalnız teşebbüs |
 
-İlk satırın gerekçesi önceki derste verildi: öldürme ve yaralamada tek fiille birden çok kişiye karşı işlenen suçlar birleştirilmez. Kalabalık bir yerde hasmına ateş eden ve arkasındaki kişinin de vurulabileceğini görüp ateşe devam eden fail, hasmına karşı öldürmeye teşebbüsten ve vurulan kişiye karşı kasten öldürmeden sorumludur.
+İlk satırın gerekçesi önceki derste verildi: kasten öldürme ve yaralamada aynı suçun tek fiille birden çok kişiye karşı işlenmesi birleştirilmez; iki kasıtlı suç ayrı ayrı cezalandırılır. Kalabalık bir yerde hasmına ateş eden ve arkasındaki kişinin de vurulabileceğini görüp ateşe devam eden fail, hasmına karşı öldürmeye teşebbüsten ve vurulan kişiye karşı kasten öldürmeden sorumludur.
 
-İkinci satırda fikri içtimanın uygulanacağı, kanunun fikri içtima maddesinin gerekçesinde de belirtilir. Issız bir yerde ateş edilen ve duvardan seken kurşunla beklenmedik biçimde vurulan kişi bunun örneğidir.
+İkinci satırdaki çözüm öğretide de kabul edilir. Issız bir yerde ateş edilen ve duvardan seken kurşunla beklenmedik biçimde vurulan kişi bunun örneğidir.
 
 :::uyari
 Tek sonuçlu sapmada "kişide hata gibi tek kasten öldürme vardır" şıkkı yanlıştır. Hedeflenen kişiye karşı işlenen teşebbüs ortadan kalkmaz. Öte yandan "taksirle öldürme" şıkkı da her olayda doğru değildir: soru, failin öteki kişinin vurulabileceğini öngördüğünü ve buna karşın ateşe devam ettiğini söylüyorsa olası kast vardır ve yanıt "teşebbüs ve kasten öldürme"dir.
@@ -54,7 +54,7 @@ Tek sonuçlu sapmada "kişide hata gibi tek kasten öldürme vardır" şıkkı y
 
 ### İki sonuçlu sapma
 
-Hedeflenen kişi de, bir başkası da zarar görür: kurşun hasmı öldürür ve arkasındaki kişiyi de vurur. Hedeflenen kişi bakımından tamamlanmış bir suç vardır. Öteki kişi bakımından yine failin olası kastına ya da taksirine bakılır; kusuru yoksa sorumluluğu da yoktur. Fail iki suçtan ayrı ayrı cezalandırılır; sonuçlar öldürme ya da yaralama olduğu için birleştirme yapılmaz.
+Hedeflenen kişi de, bir başkası da zarar görür: kurşun hasmı öldürür ve arkasındaki kişiyi de vurur. Hedeflenen kişi bakımından tamamlanmış bir suç vardır. Öteki kişi bakımından yine failin olası kastına ya da taksirine bakılır; kusuru yoksa sorumluluğu da yoktur. Fail iki suçtan ayrı ayrı cezalandırılır: iki ayrı sonuç doğduğu için fikri içtima uygulanmaz, öldürme ve yaralamada aynı neviden birleştirme de yasaktır.
 
 ## Suçta sapma
 
@@ -67,16 +67,16 @@ Burada sapma, failin istediğinden farklı türde bir suçun gerçekleşmesine y
 
 | Biçim | Olay | Sorumluluk |
 |---|---|---|
-| Tek sonuçlu | Taş insana isabet etmez, camı kırar | Yaralamaya teşebbüs ve mala zarar verme; tek fiille farklı suçlar oluştuğu için fikri içtima |
-| İki sonuçlu | Sopa önce insanı yaralar, sonra camı kırar | Yaralama ve mala zarar verme |
+| Tek sonuçlu | Taş insana isabet etmez, camı kırar | Cam bakımından olası kast varsa yaralamaya teşebbüs ve mala zarar verme, tek sonuç olduğu için fikri içtima; yoksa yalnız yaralamaya teşebbüs |
+| İki sonuçlu | Sopa önce insanı yaralar, sonra camı kırar | Yaralama ve mala zarar verme; ayrı ayrı ceza |
 
 İkinci suç bakımından belirleyici olan yine manevi unsurdur ve burada önemli bir sınır vardır. İstenmeyen sonuç ancak taksirle gerçekleşmişse, o fiilin taksirli hâlinin kanunda suç olması gerekir. Mala zarar verme yalnız kasten işlenebilen bir suçtur. Camın kırılabileceğini öngörüp kabullenen fail olası kastla mala zarar vermeden sorumludur; öngörmeyen fail ise cam bakımından hiçbir suçtan sorumlu tutulamaz ve yalnız yaralamaya teşebbüsten cezalandırılır.
 
-İki sonuçlu suçta sapmada hangi kuralın uygulanacağı, önceki derste anlatılan görüş ayrılığına bağlıdır. Harekete ağırlık veren yaklaşıma göre tek hareketle iki farklı suç oluşmuştur ve fikri içtima uygulanır; sonuca ağırlık veren yaklaşıma göre iki ayrı sonuç iki ayrı fiildir ve her suçtan ayrı ceza verilir.
+İki sonuçlu suçta sapmada iki ayrı sonuç, dolayısıyla sonuç ölçüsüne göre iki fiil vardır; fikri içtima uygulanmaz, fail her iki suçtan ayrı ayrı cezalandırılır. Öğretide hareketin tekliğini esas alan farklı görüş de vardır (önceki ders).
 
 ## Nedensellik bağında sapma
 
-Fail istediği sonuca ulaşır, ama düşündüğünden başka bir yoldan. Bilinen olay şudur: fail öldürmek için mağdurun başına vurur, öldüğünü sanır ve cesedi yok etmek için onu köprüden atar; mağdur aslında baygındır ve düşme sonucu ölür.
+Fail istediği sonuca ulaşır, ama düşündüğünden başka bir yoldan. Bilinen olay şudur: fail öldürmek için mağdurun başına vurur, öldüğünü sanır ve cesedi yok etmek için onu köprüden atar; mağdur aslında baygındır ve düşme sonucu ölür. Aynı örnek nedensellik dersinde de verildi.
 
 | Görüş | Çözüm |
 |---|---|
@@ -123,4 +123,5 @@ Sorular olası kastla gerçekleşen sapmayı ve farklı zamanlarda iki kişinin 
 - OCR: s-084 sonu–s-085'te hata–sapma karşılaştırma tablosu ve "siyah takım" örneği iç içe geçmiş; s-086'da iki sonuçlu sapmanın tanım cümlesi eksik. Görüntüye bakılmadı.
 - Madde bağları: yok.
 - Gömülü sorular: bankadaki yayınlı gerçek sorular, ikisi de beş şıklı (6aae8b85… arkadaki kişinin vurulabileceğini öngörüp ateşe devam eden fail (beklenen: hedefe karşı öldürmeye teşebbüs ve vurulan kişiye karşı kasten öldürme); a7f687c5… farklı zamanlarda iki kişiyi öldürme (beklenen: iki ayrı kasten öldürmeden sorumludur; "iki sonuçlu sapma" çeldiricidir)). Doğru şık public uçtan görülemez; panelde anahtarla karşılaştırılmalı. ALINMAYANLAR: 5e02f356 (yanındaki kişiye isabet eden mermi; beklenen yanıt failin manevi unsuruna göre değişir, soru kökü bunu söylemiyor — panel listesine), c5e45152 (şıkları public uçta kesik). Soru üretilmedi.
+- DENETİM DÜZELTMESİ (bağımsız denetim, Opus oturumu, 13 Kas 2026): (1) iki sonuçlu suçta sapma 09/04 ile hizalandı: sonuç ölçüsüne göre ayrı ayrı ceza (kitap s-087 kesin konuşur), farklı görüş kaydıyla; (2) tek sonuçlu tablo hücresi olası kast koşuluna bağlandı (kitap s-086); (3) taksir satırına "tek sonuç doğduğu için" gerekçesi; md 44 gerekçesine dayanan cümle doğrulanamadığı için "öğretide de kabul edilir" oldu; (4) nedensellikte sapma örneğine 02/04 göndermesi.
 - AI taslak; insan düzenleme ve yayın onayı bekliyor.

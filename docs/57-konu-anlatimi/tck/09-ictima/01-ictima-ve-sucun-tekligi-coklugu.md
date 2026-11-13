@@ -8,7 +8,7 @@ Durum: İnceleme sürümü. Hedef: İçtimanın ne olduğunu ve ana kuralını s
 
 Teşebbüs "suç tamamlandı mı", iştirak "suça kimler katıldı" sorusunu yanıtlıyordu. İçtimanın sorusu başkadır: fail kaç suç işlemiştir ve ona kaç ceza verilecektir?
 
-Ana kural basittir ve öğretide gerçek içtima diye anılır: ne kadar fiil varsa o kadar suç, ne kadar suç varsa o kadar ceza vardır. Bir kişiyi dövüp bir başkasının arabasını çalan fail iki ayrı suç işlemiştir; her biri için ayrı ceza belirlenir ve cezalar ayrı ayrı infaz edilir. Ceza Kanununda cezaların toplanmasına ilişkin bir hüküm yoktur; kanundaki bölümün adı "suçların içtimaı"dır.
+Ana kural basittir ve öğretide gerçek içtima diye anılır: ne kadar fiil varsa o kadar suç, ne kadar suç varsa o kadar ceza vardır. Bir kişiyi dövüp bir başkasının arabasını çalan fail iki ayrı suç işlemiştir; her biri için ayrı ceza belirlenir ve cezalar ayrı ayrı infaz edilir. Ceza Kanununda cezaların toplanmasına ilişkin bir hüküm yoktur; kanundaki bölümün adı "suçların içtimaı"dır. Her ceza varlığını ayrı ayrı korur; birden çok kesinleşmiş hüküm bulunduğunda infaz için alınacak toplama kararı infaz kanununda düzenlenir.
 
 Kanun bu ana kuraldan üç yerde ayrılır ve birden çok suç ya da ihlal bulunmasına karşın faile tek ceza verilmesini öngörür.
 
@@ -28,7 +28,7 @@ Bunların hiçbiri varsa ana kurala dönülür. Bu yüzden her olayda ilk iş, o
 | Fail | Tek kişi | Birden çok kişi | Tek kişi |
 | Zaman | Suçlar, aralarına kesin hüküm girmeden işlenmiştir | | Yeni suç, önceki mahkûmiyet kesinleştikten sonra işlenmiştir |
 
-Son satır sınavda olayla sorulur. Hırsızlıktan kesin hükümle mahkûm olan kişi sonradan yeni bir hırsızlık işlerse, iki suç arasında bir içtima ilişkisi kurulmaz; ikinci suç bakımından tekerrür hükümleri uygulanır. Kesin hüküm, öncesi ile sonrasını birbirinden ayırır.
+Son satır sınavda olayla sorulur. Hırsızlıktan kesin hükümle mahkûm olan kişi sonradan yeni bir hırsızlık işlerse, iki suç arasında bir içtima ilişkisi kurulmaz; ikinci suç bakımından, kanunun aradığı süreler içinde işlenmişse tekerrür hükümleri uygulanır. Kesin hüküm, öncesi ile sonrasını birbirinden ayırır.
 
 ## Bir suç mu, birkaç suç mu
 
@@ -50,7 +50,7 @@ Zaman ölçüsü zincirleme suçla sınırı çizer. Aynı gece aynı depodan ar
 
 ## Mağdur ölçüsü ve hırsızlık
 
-Sınav bu ölçüyü neredeyse hep hırsızlık üzerinden sorar ve kilit bilgi şudur: hırsızlıkta korunan değer zilyetliktir. Mağdur, malın maliki olmak zorunda değildir; malı elinde bulunduran, onun üzerinde fiilî hâkimiyeti olan kişidir. Çalınan malların kaç ayrı kişiye ait olduğu değil, kaç ayrı kişinin zilyetliğinden alındığı sayılır.
+Sınav bu ölçüyü neredeyse hep hırsızlık üzerinden sorar ve uygulamada ve öğretide kabul edilen ölçü şudur: hırsızlıkta korunan değer zilyetliktir. Mağdur, malın maliki olmak zorunda değildir; malı elinde bulunduran, onun üzerinde fiilî hâkimiyeti olan kişidir. Çalınan malların kaç ayrı kişiye ait olduğu değil, kaç ayrı kişinin zilyetliğinden alındığı sayılır.
 
 | Olay | Zilyet | Suç sayısı |
 |---|---|---|
@@ -124,4 +124,5 @@ Sorular suç sayısını, hırsızlıkta zilyetliği ve tekerrür ayrımını yo
 - Madde bağları: yok (md 42–44 sonraki derslerde bağlandı).
 - Gömülü sorular: bankadaki yayınlı gerçek sorular, hepsi beş şıklı (86f390ba… otuz koyun (beklenen: bir); 1097d7ac… yedi çuval (beklenen: tek bir hırsızlık suçu); f60ce29a… dört öğretim üyesi (beklenen: dört ayrı hırsızlık suçu); 399dc5e6… istenenden azını alma (beklenen: tek hırsızlık suçu); 751b158e… kesin hükümden sonra yeni suç (beklenen: tekerrür hükümleri uygulanır)). Doğru şık public uçtan görülemez; panelde anahtarla karşılaştırılmalı. Eş kurgulu 0d3edeb1, 9d40a820, d0c6d36c alınmadı. Soru üretilmedi.
 - SONRADAN EKLENEN PARAGRAF (kolluk), yazımdır — teyit edilmeli.
+- DENETİM DÜZELTMESİ (bağımsız denetim, Opus oturumu, 13 Kas 2026): (1) tekerrüre md 58/2 süre koşulu kaydı; (2) cezaların toplanmasının infaz aşamasında 5275 md 99'da düzenlendiği eklendi; (3) zilyetlik ölçüsü ve eşler satırı uygulama/öğreti çözümü olarak kayda alındı; "istenenden azını alma" ana yeri bu ders, 07/02 buraya gönderiyor.
 - AI taslak; insan düzenleme ve yayın onayı bekliyor.

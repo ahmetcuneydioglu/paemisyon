@@ -22,7 +22,7 @@ Kanunda bu adı taşıyan bir madde yoktur; sorun hükümlerin yorumuyla çözü
 
 Öğreti hükümler arasında üç ilişki ayırır.
 
-Üçünün ortak sonucu aynıdır: faile tek bir hükümden ceza verilir ve dışlanan hüküm hiç uygulanmaz. Fikri içtimada mahkeme oluşan suçların hepsini saptar ve aralarından en ağırını seçer; burada ise seçilecek bir şey yoktur, çünkü baştan beri uygulanabilir tek bir hüküm vardır. Bu fark yalnız kuramsal değildir. Fikri içtimada hafif suç, ağır suçtan ceza verilemediği durumlarda yeniden ortaya çıkar; görünüşte içtimada dışlanan hükme ancak öteki hükmün unsurları hiç oluşmamışsa dönülebilir.
+Üçünün ortak sonucu aynıdır: faile tek bir hükümden ceza verilir ve dışlanan hüküm hiç uygulanmaz. Fikri içtimada mahkeme oluşan suçların hepsini saptar ve aralarından en ağırını seçer; burada ise seçilecek bir şey yoktur, çünkü baştan beri uygulanabilir tek bir hüküm vardır. Öğretide bu farkın sonucu şöyle açıklanır: fikri içtimada hafif suç, ağır suçtan ceza verilemediği durumlarda yeniden ortaya çıkar; görünüşte içtimada dışlanan hükme ancak öteki hükmün unsurları hiç oluşmamışsa dönülebilir.
 
 ## Özel hüküm ve genel hüküm
 
@@ -31,10 +31,9 @@ Kanunda bu adı taşıyan bir madde yoktur; sorun hükümlerin yorumuyla çözü
 | Genel hüküm | Özel hüküm | Eklenen unsur |
 |---|---|---|
 | Güveni kötüye kullanma | Zimmet | Failin kamu görevlisi olması ve malın görevi nedeniyle kendisine teslim edilmiş olması |
-| Görevi kötüye kullanma | İrtikâp, rüşvet, zimmet | Görevin kötüye kullanılmasının belirli bir biçimi |
 | Hakaret | Cumhurbaşkanına hakaret | Mağdurun sıfatı |
 
-Bu ilişkinin iki sonucu vardır. Özel hükmün uygulandığı yerde genel hükümden ayrıca ceza verilmez; zimmet işleyen görevli ayrıca görevi kötüye kullanmaktan cezalandırılmaz. Ve özel hüküm herhangi bir nedenle uygulanamaz hâle gelirse, fiil genel hükmün kapsamında kalmaya devam eder.
+Bu ilişkinin iki sonucu vardır. Özel hükmün uygulandığı yerde genel hükümden ayrıca ceza verilmez; zimmet işleyen görevli ayrıca güveni kötüye kullanmaktan cezalandırılmaz. Ve özel hüküm herhangi bir nedenle uygulanamaz hâle gelirse, fiil genel hükmün kapsamında kalmaya devam eder.
 
 ## Asli hüküm ve tali hüküm
 
@@ -42,10 +41,10 @@ Tali ya da yardımcı hüküm, ancak başka bir hüküm uygulanamadığında dev
 
 | Biçim | Örnek |
 |---|---|
-| Açık: hüküm kendi yardımcılığını söyler | "Fiil daha ağır cezayı gerektiren başka bir suç oluşturmadığı takdirde" kaydını taşıyan hükümler |
-| Örtülü: ilişki hükümlerin yapısından çıkar | Tehlike suçu ile zarar suçu; teşebbüs ile tamamlanmış suç |
+| Açık: hüküm kendi yardımcılığını söyler | "Fiil daha ağır cezayı gerektiren başka bir suç oluşturmadığı takdirde" kaydını taşıyan hükümler; görevi kötüye kullanmanın "Kanunda ayrıca suç olarak tanımlanan haller dışında" kaydı (irtikâp, rüşvet, zimmet karşısında) |
+| Örtülü: ilişki hükümlerin yapısından çıkar | Aynı kişinin aynı değerini koruyan tehlike suçu ile zarar suçu; teşebbüs ile tamamlanmış suç |
 
-Örtülü biçimin trafikteki örneği kolluk için önemlidir. Aracını başkalarının yaşamını tehlikeye sokacak biçimde kullanan sürücü, kimse zarar görmemişse trafik güvenliğini tehlikeye sokmaktan sorumludur. Aynı sürüş bir kişinin ölümüne ya da yaralanmasına yol açmışsa, zarar suçu gerçekleşmiştir; öğretide tehlike hükmünün zarar hükmü karşısında yardımcı nitelikte olduğu kabul edilir. Teşebbüs hükmü de aynı yapıdadır: suç tamamlanmışsa fail ayrıca teşebbüsten cezalandırılmaz.
+Örtülü biçimin trafikteki örneği kolluk için önemlidir. Aracını başkalarının yaşamını tehlikeye sokacak biçimde kullanan sürücü, kimse zarar görmemişse trafik güvenliğini tehlikeye sokmaktan sorumludur. Aynı sürüş bir kişinin ölümüne ya da yaralanmasına yol açmışsa, zarar suçu gerçekleşmiştir; öğretide tehlike hükmünün zarar hükmü karşısında yardımcı nitelikte olduğu görüşü savunulur; trafik güvenliğinin topluluğu da koruduğu gerekçesiyle iki hüküm arasında fikri içtima uygulanması gerektiği görüşü de vardır. Tehlikenin açıkça topluluğa yöneldiği hâllerde, örneğin yerleşim yerinde ateş edilip bir kişinin yaralanmasında, iki hüküm farklı değerleri koruduğu için fikri içtima uygulanır (önceki ders). Teşebbüs hükmü de aynı yapıdadır: suç tamamlanmışsa fail ayrıca teşebbüsten cezalandırılmaz.
 
 Özel–genel ilişkisinden farkı şudur: orada iki hüküm unsurları bakımından karşılaştırılır ve biri ötekini içerir; burada hükümler aynı değeri farklı yoğunlukta korur ve biri yalnız ötekinin yokluğunda uygulanır.
 
@@ -57,7 +56,7 @@ Bir hüküm, başka bir hükmün koruduğu değeri ve taşıdığı haksızlığ
 |---|---|---|
 | Tanımı | Bir suçun tanımındaki fiil, zorunlu olarak daha hafif bir suçu içerir | Fail ağır suçu işlemek için, aynı değere yönelen hafif suçtan geçmek zorundadır |
 | Korunan değerler | Farklı | Aynı |
-| Örnek | Cebirle işlenen bir suçun, cebri içermesi | Öldürmenin yaralamadan geçmesi |
+| Örnek | Öğretide örnekleri tartışmalıdır; bileşik suçtan farkı, içerilen suçun kanunda unsur ya da nitelikli hâl olarak yazılmamasıdır | Öldürmenin yaralamadan geçmesi |
 | Sonuç | Yalnız ağır suçtan ceza verilir | Yalnız ağır suçtan ceza verilir; artırım yapılmaz |
 
 Bıçakla öldürülen kişinin vücudunda yaralar oluşmuştur; fail yine de yaralamadan ayrıca cezalandırılmaz. Yaralama, öldürmeye giden yolun zorunlu bir durağıdır ve öldürmenin içinde tükenir.
@@ -115,4 +114,5 @@ Soru içtima türlerine ilişkin genel kuralları yoklar.
 - Madde bağları: yok.
 - Gömülü soru: bankadaki yayınlı gerçek soru, beş şıklı (0facdc63… içtimayla ilgili yanlış ifade (beklenen: taksirli suçlar zincirleme suç olarak işlenebilir)). Doğru şık public uçtan görülemez; panelde anahtarla karşılaştırılmalı. Görünüşte içtimaya bağlı başka yayınlı soru md 42–44 listelerinde bulunamadı; kullanıcı `ders-soru-ara.ts "Ceza Hukuku" "görünüşte içtima" "geçitli suç" "karma suç"` ile arayabilir. Soru üretilmedi.
 - SONRADAN EKLENEN PARAGRAFLAR, teyit edilmeli: "ortak sonuç" paragrafındaki fikri içtima–görünüşte içtima farkı öğretidendir; "uygulamadaki yeri" başlığı yazımdır (çalınan kartla alışveriş örneği: banka veya kredi kartlarının kötüye kullanılması md 245 — madde bu turda okunmadı).
+- DENETİM DÜZELTMESİ (bağımsız denetim, Opus oturumu, 13 Kas 2026): (1) md 257 (görevi kötüye kullanma) özel–genel tablosundan asli–tali tablosuna taşındı; madde açık yardımcılık kaydı taşır ("Kanunda ayrıca suç olarak tanımlanan haller dışında"); zimmet cümlesi güveni kötüye kullanmaya göre düzeltildi; (2) tehlike–zarar ayrımı "aynı kişinin aynı değeri" ile daraltıldı; trafikte (md 179 – taksirle yaralama) iki görüş verildi — İNSAN İNCELEMESİ (görüş d); topluluğa yönelik tehlikede fikri içtima 09/04 ile hizalandı; (3) karma suç örneği bileşik suçla aynı yapıdaydı, çıkarıldı; (4) "Bu fark yalnız kuramsal değildir" öğreti kaydına alındı.
 - AI taslak; insan düzenleme ve yayın onayı bekliyor.

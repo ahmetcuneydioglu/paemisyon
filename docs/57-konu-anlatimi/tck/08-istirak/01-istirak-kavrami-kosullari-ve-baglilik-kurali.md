@@ -39,7 +39,7 @@ Ayrımın ölçüsü, kişinin fiilin işlenişi üzerinde hâkimiyet kurup kurm
 
 ### Birden çok kişi
 
-Kusur yeteneği bulunmayan kişi de suç ortağı sayılır. Kusur yeteneğinin yokluğu o kişiye ceza verilmesini engeller; suçun birden çok kişiyle işlendiği gerçeğini değiştirmez.
+Ortaklardan birinin kusur yeteneğinin bulunmaması iştiraki kendiliğinden ortadan kaldırmaz: kusur yeteneğinin yokluğu o kişiye ceza verilmesini engeller, suçun birden çok kişiyle işlendiği gerçeğini değiştirmez (bağlılık kuralı, aşağıda). Ancak öteki kişi onu bir araç olarak kullanmış, fiil üzerindeki hâkimiyeti kendisi kurmuşsa iştirak değil dolaylı faillik vardır (sonraki ders).
 
 ### İcraya başlanmış bir suç
 
@@ -65,7 +65,7 @@ Katkının nedensel bir değeri olmalıdır. Öğretideki ölçü şudur: bu kat
 
 ### İştirak iradesi
 
-Suç ortakları birbirinin varlığından ve yaptığından haberdar olmalı, birlikte hareket etmeyi istemelidir. İki kişi birbirinden habersiz biçimde aynı kişiye zehir vermişse iştirak yoktur; her biri kendi fiilinden sorumlu olur.
+Müşterek faillikte ortaklar birbirinin varlığından ve yaptığından haberdar olmalı, birlikte hareket etmeyi istemelidir; karşılıklı bir irade aranır. Yardım etmede ise öğretide, failin haberi olmasa da yardım edenin tek taraflı iştirak iradesinin yettiği kabul edilir (bölümün dördüncü dersi). İki kişi birbirinden habersiz biçimde aynı kişiye zehir vermişse iştirak yoktur; her biri kendi fiilinden sorumlu olur.
 
 İrade için önceden yapılmış bir anlaşma şart değildir. Kavgayı görüp o anda araya giren ve mağdurun kollarını tutan kişi, suç sırasında oluşan iradeyle suça katılmıştır.
 
@@ -128,4 +128,5 @@ Sorular iştirakin niteliğini, teşebbüs aşamasındaki suça iştiraki ve icr
 - OCR: s-072'de iştirak şekilleri cümlesinin sonu ve s-073 başında bir Yargıtay özeti iç içe geçmiş; s-074'te bağlılık kuralının ikinci sonucunun ilk satırı düşmüş. Görüntüye bakılmadı.
 - Madde bağları: TCK md 40.
 - Gömülü sorular: bankadaki yayınlı gerçek sorular, hepsi beş şıklı (969ec0a8… doğru ifade (beklenen: iştirak ceza sorumluluğunu genişleten bir kurumdur); f209483b… doğru ifade (beklenen: teşebbüs aşamasında kalmış suçlara iştirak mümkündür); a4317b20… öncüllü, yanlış olanlar (beklenen: II ve IV); a90a5670… icraya başlanmadan yakalanan (beklenen: sorumlulukları yoktur)). Doğru şık public uçtan görülemez; panelde anahtarla karşılaştırılmalı. Eş kurgulu d437b136 alınmadı. Soru üretilmedi.
+- DENETİM DÜZELTMESİ (bağımsız denetim, Opus oturumu, 13 Kas 2026): (1) kusur yeteneği cümlesi dolaylı faillikle köprülendi (08/02 tablosuyla çelişiyordu); (2) iştirak iradesi müşterek faillikte karşılıklı, yardımda tek taraflı (öğreti) diye ayrıldı — 08/02 ve 08/04 ile çelişki giderildi.
 - AI taslak; insan düzenleme ve yayın onayı bekliyor.

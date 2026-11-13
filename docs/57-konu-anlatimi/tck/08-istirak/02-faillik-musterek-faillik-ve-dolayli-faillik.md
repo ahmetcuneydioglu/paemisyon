@@ -41,7 +41,7 @@ Dört kişi bir hasımlarını öldürmek için anlaşır, pusu kurar ve aynı a
 :::
 
 :::uyari
-Bu olayda şıklar hep aynı üç yanlışı sunar: "isabet ettiren öldürmeden, ötekiler teşebbüsten sorumludur", "ötekiler yardım edendir", "kimin öldürdüğü belli olmadığından hepsi teşebbüsten sorumludur". Üçü de yanlıştır. Kararın ve icranın ortak olduğu yerde herkes tamamlanmış suçun müşterek failidir. Suçun nitelikli hâli de, örneğin tasarlama, bunu bilerek katılan bütün ortaklara uygulanır.
+Bu olayda şıklar hep aynı üç yanlışı sunar: "isabet ettiren öldürmeden, ötekiler teşebbüsten sorumludur", "ötekiler yardım edendir", "kimin öldürdüğü belli olmadığından hepsi teşebbüsten sorumludur". Üçü de yanlıştır. Kararın ve icranın ortak olduğu yerde herkes tamamlanmış suçun müşterek failidir. Pusu örneğinde dördü birlikte plan kurduğu için tasarlama hepsine uygulanır; failin iç dünyasına ilişkin bu hâlde öğretide ortağın yalnız bilmesi değil, kendisinin de tasarlamış olması aranır (nitelikli hâllerin geçişi bölümün beşinci dersinde).
 :::
 
 Ortakların kastının türü farklı olabilir; biri doğrudan, öteki olası kastla hareket etmiş olabilir. Bu, müşterek failliği engellemez. Sorumluluğun sınırı ortak karardır: ortaklardan biri kararlaştırılanın dışına çıkıp başka bir suç işlerse, ötekiler ondan sorumlu olmaz. Bu sınır bölümün beşinci dersinde anlatılacaktır.
@@ -59,7 +59,7 @@ Aynı ölçü sürücü, eşyayı taşıyan ya da kapıyı açan kişi için de 
 
 ### Müşterek failliğin sınırları
 
-İki durumda fiili birlikte işleyen kişi müşterek fail olamaz. Taksirli suçlarda iştirak hükümleri uygulanmaz; birlikte suç işleme kararı yoktur. Özgü suçlarda ise yalnız kanunun aradığı sıfatı taşıyan kişi fail olabilir; sıfatı taşımayan kişi fiile ne kadar katkıda bulunursa bulunsun azmettiren ya da yardım eden olarak sorumlu tutulur.
+İki durumda fiili birlikte işleyen kişi müşterek fail olamaz. Öğretide ve uygulamada kabul edildiği üzere taksirli suçlarda iştirak hükümleri uygulanmaz (bölümün beşinci dersi). Özgü suçlarda ise yalnız kanunun aradığı sıfatı taşıyan kişi fail olabilir; sıfatı taşımayan kişi fiile ne kadar katkıda bulunursa bulunsun azmettiren ya da yardım eden olarak sorumlu tutulur.
 
 ## Dolaylı faillik
 
@@ -70,7 +70,6 @@ Dolaylı fail suçu kendi eliyle işlemez; bir başkasına işletir. Fakat o ba�
 | Hataya düşürülmüştür | İyi göremeyen birine, karşıdaki insanı hedef tahtası diye gösterip ateş ettirmek |
 | Zorlanmıştır | Ölüm tehdidiyle bir başkasının malını aldırmak |
 | Kusur yeteneği yoktur | Akıl hastasına ya da küçük bir çocuğa hırsızlık yaptırmak |
-| Suçun aradığı sıfat yalnız ondadır ve kandırılmıştır | Görevliyi yanıltarak sahte içerikli resmî belge düzenletmek |
 
 İlk satırda araç, maddi unsurlarda hataya düşmüştür ve kastı yoktur; cezalandırılmaz, özensizliği varsa taksirden sorumlu olabilir. İkinci satır, kusurluluk bölümünde anlatılan cebir ve tehdit hükmüdür: kanun orada da zorlayanı "suçun faili" sayar. Araç kendi malına zarar verdirilen kişi de olabilir: bir kimseyi, kendi eşyasının başkasına ait olduğuna inandırıp onu tahrip ettiren kişi mala zarar vermenin failidir.
 
@@ -119,4 +118,5 @@ Sorular isabet etmeyen kurşunları, belirlenemeyen faili ve başkasını araç 
 - OCR: s-073'te faillik türleri cümlesi ve ortaklaşa failliğin dördüncü–beşinci koşulları bozuk; s-074'te karşılaştırma tablosunun sütunları iç içe. Görüntüye bakılmadı.
 - Madde bağları: TCK md 37.
 - Gömülü sorular: bankadaki yayınlı gerçek sorular, hepsi beş şıklı (6c965075… dört kişi, bir isabet (beklenen: dördü de müşterek fail); e55d7b19… kurşunun kimden çıktığı belirlenemiyor (beklenen: kasten öldürmeden müşterek fail); 4bae55cf… iyi göremeyen kişiye ateş ettirme (beklenen: dolaylı fail); 5885deca… kendi malını tahrip ettirme (beklenen: fail olarak sorumludur)). Doğru şık public uçtan görülemez; panelde anahtarla karşılaştırılmalı. Eş kurgulu ae051e2e, 9ceef703, c159d8af, be56a986 alınmadı. Soru üretilmedi.
+- DENETİM DÜZELTMESİ (bağımsız denetim, Opus oturumu, 13 Kas 2026): (1) dolaylı faillik tablosundaki "Görevliyi yanıltarak sahte içerikli resmî belge düzenletmek" satırı çıkarıldı: md 40/2'ye göre özgü suçta yalnız sıfatı taşıyan fail olabilir, dolaylı fail de faildir (md 37/2); kanun bu durumu md 206 (resmî belgenin düzenlenmesinde yalan beyan) ile ayrı suç olarak düzenler — 08/05 de buna göre düzeltildi; (2) tasarlamanın ortaklara geçişinde öğreti kaydı (tasarlamış olma aranır); (3) taksirli suçlarda iştirak cümlesi öğreti/uygulama kaydıyla, ayrıntı 08/05'te (Tur 2 03/05 ile hizalı).
 - AI taslak; insan düzenleme ve yayın onayı bekliyor.

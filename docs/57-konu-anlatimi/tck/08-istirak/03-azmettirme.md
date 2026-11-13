@@ -35,7 +35,7 @@ Son koşul bağlılık kuralının sonucudur ve sınavda özellikle sorulur.
 Azmettirilen kişi suçun icrasına başlamaktan vazgeçerse azmettiren cezalandırılmaz. "Azmettirilen vazgeçse bile azmettiren suçun cezasıyla cezalandırılır" cümlesi yanlıştır: işlenen ya da işlenmeye başlanan bir suç yoksa iştirak de yoktur. Azmettirilen icraya başlayıp suçu tamamlayamazsa, azmettiren teşebbüs aşamasında kalan suça azmettirmeden sorumludur.
 :::
 
-Azmettirme zincirleme de olabilir: bir kişi bir başkasını, o da bir üçüncüyü suça yöneltebilir. Suç işlenmişse, kararın doğmasında payı olan herkes azmettiren olarak sorumlu tutulur; azmettirenin faili hiç tanımamış olması sorumluluğu kaldırmaz.
+Azmettirme zincirleme de olabilir: bir kişi bir başkasını, o da bir üçüncüyü suça yöneltebilir. Öğretide kabul edildiği üzere suç işlenmişse, kararın doğmasında payı olan herkes azmettiren olarak sorumlu tutulur; azmettirenin faili hiç tanımamış olması sorumluluğu kaldırmaz.
 
 ## Benzerlerinden ayırmak
 
@@ -57,7 +57,7 @@ Azmettirenin cezası kural olarak failinkiyle aynıdır. Kanun iki hâlde azmett
 | Üstsoy ve altsoy ilişkisinden doğan nüfuzun kullanılması | Azmettiren ile azmettirilen arasında üstsoy–altsoy ilişkisi ve bu ilişkiden doğan nüfuzun kullanılması |
 | Çocukların suça azmettirilmesi | Azmettirilenin çocuk olması; üstsoy–altsoy ilişkisi aranmaz |
 
-Birinci hâl iki yönlüdür: baba oğlunu azmettirdiğinde de, torun dedesini azmettirdiğinde de ilişki üstsoy–altsoy ilişkisidir. Azmettirilenin yaşı önem taşımaz; yirmi beş yaşındaki oğlunu azmettiren baba da bu hükme girer. Dayı, amca, kardeş gibi yakınlar ise üstsoy ya da altsoy değildir; onların azmettirmesi artırım nedeni olmaz, meğerki azmettirilen çocuk olsun.
+Kanun ilişkinin yönünü belirtmez; bu yüzden hükmün torunun dedesini azmettirmesinde de uygulanacağı kabul edilir. Her iki yönde de belirleyici olan, akrabalığın kendisi değil, bu ilişkiden doğan nüfuzun suça yöneltmek için gerçekten kullanılmış olmasıdır. Azmettirilenin yaşı önem taşımaz; yirmi beş yaşındaki oğlunu babalık nüfuzunu kullanarak azmettiren baba da bu hükme girer. Dayı, amca, kardeş gibi yakınlar ise üstsoy ya da altsoy değildir; onların azmettirmesi artırım nedeni olmaz, meğerki azmettirilen çocuk olsun.
 
 :::uyari
 "Hangisi suçun failinden daha fazla ceza alır" sorusunun yanıtı yalnız bu iki hâldir. Azmettirenin kendisi failden fazla değil, fail kadar ceza alır. Yardım edenler, yani teşvik eden, kararı kuvvetlendiren, yol gösteren, araç sağlayan, failden az ceza alır. Kusur yeteneği olmayanı araç olarak kullanan dolaylı failin cezasındaki artırım ise azmettirmeye değil failliğe ilişkindir.
@@ -84,7 +84,7 @@ Azmettiren, kastının kapsadığı suçtan sorumludur. Fail kendisinden istenen
 | Failin yaptığı | Azmettirenin sorumluluğu |
 |---|---|
 | İstenenden azını gerçekleştirdi: suç teşebbüste kaldı ya da daha hafif bir sonuç doğdu | Gerçekleşen kadarından sorumludur |
-| İstenen suçu işlerken onunla bağlantılı, öngörülebilir bir fazlasını da gerçekleştirdi | Koşulları varsa bu fazladan da sorumlu tutulabilir |
+| İstenen suçu işlerken onunla bağlantılı, öngörülebilir bir fazlasını da gerçekleştirdi | Koşulları varsa bu fazladan da sorumlu tutulabilir; ağır sonuç bakımından en az taksir aranır (netice sebebiyle ağırlaşmış suç dersi) |
 | İstenenden bütünüyle başka bir suç işledi | Bu suçtan sorumlu değildir |
 | İstenen suçu işlerken önemsiz bir sapma oldu: kişide yanıldı, başka bir yerde ya da başka bir araçla işledi | Sorumluluğu etkilenmez |
 
@@ -92,7 +92,7 @@ Azmettiren, kastının kapsadığı suçtan sorumludur. Fail kendisinden istenen
 Bir kişi, eski arkadaşını öldürmesi için on altı yaşındaki bir çocukla anlaşır. Çocuk mağdurun evine girer, önce ona cinsel saldırıda bulunur, sonra bıçaklar; mağdur hastanede ölür. Azmettiren, öldürmeden azmettiren olarak sorumludur ve çocuğu azmettirdiği için cezası artırılır. Cinsel saldırı ise istenen suçtan bütünüyle başka bir suçtur; azmettiren ondan sorumlu tutulmaz. Çocuğun yaşı kendi cezasında indirim nedenidir, azmettirenin cezasında değil.
 :::
 
-Kişide hata son satırın en sık sorulan örneğidir. Öldürmesi için tutulan fail, karanlıkta mağdur sandığı bir başkasını öldürürse, fail kasten öldürmeden, azmettiren de bu öldürmeye azmettirmeden sorumludur; korunan değer aynıdır ve failin yanılması azmettireni kurtarmaz.
+Kişide hata son satırın en sık sorulan örneğidir. Öğretide kabul edilen çözüme göre, öldürmesi için tutulan fail karanlıkta mağdur sandığı bir başkasını öldürürse, fail kasten öldürmeden, azmettiren de bu öldürmeye azmettirmeden sorumludur; korunan değer aynıdır ve failin yanılması azmettireni kurtarmaz.
 
 ## Sınavda çıktı
 
@@ -127,4 +127,5 @@ Sorular artırım hâllerini, azmettireni ortaya çıkaran faile indirimi ve fai
 - Madde bağları: TCK md 38.
 - Gömülü sorular: bankadaki yayınlı gerçek sorular, hepsi beş şıklı (6dab1d30… yanlış ifade (beklenen: ortaya çıkmasını sağlayan hakkında cezaya hükmolunmaz); 7bb50609… artırım uygulanmayan hâl (beklenen: dayının yirmi iki yaşındaki yeğenini teşvik etmesi); 4d2be429… failden fazla ceza alanlar (beklenen: I ve IV); 5a1a45ba… öncüllü, yanlış olanlar (beklenen: I ve III); 4b67b980… on altı yaşındaki çocuğu azmettirme (beklenen: II, III ve IV)). Doğru şık public uçtan görülemez; panelde anahtarla karşılaştırılmalı. Dört şıklı 76d49a34 ve eş kurgulu bc22aa16, e4f62bc2, bb9b7416, 42ad04cb, 2b67ae9c alınmadı. Soru üretilmedi.
 - SONRADAN EKLENEN PARAGRAF, teyit edilmeli: zincirleme azmettirme öğretideki genel kabuldür, kitapta yok.
+- DENETİM DÜZELTMESİ (bağımsız denetim, Opus oturumu, 13 Kas 2026): (1) md 38/2 üstsoy–altsoy nüfuzu: yön kanunda yok, iki yönlü okuma "kabul edilir" kaydıyla; nüfuzun gerçekten kullanılması koşulu eklendi; yaşın önemsizliği korundu (7bb50609 anahtarı E ile tutarlı) — insan incelemesi; (2) zincirleme azmettirme ve kişide hatanın azmettirene etkisi öğreti kaydına alındı; (3) "öngörülebilir fazla" satırına md 23 (en az taksir) göndermesi.
 - AI taslak; insan düzenleme ve yayın onayı bekliyor.

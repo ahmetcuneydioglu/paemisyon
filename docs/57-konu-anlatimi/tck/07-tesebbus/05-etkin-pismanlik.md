@@ -63,7 +63,7 @@ Hüküm hırsızlık, mala zarar verme, güveni kötüye kullanma ve dolandırı
 Tablodan üç kural çıkar. Erken dönen daha çok indirim alır. Yağmada indirim her aşamada daha azdır. Hükümden sonra gösterilen pişmanlık bu maddeden yararlanamaz. Zarar tamamen değil kısmen giderilmişse hükmün uygulanması için ayrıca mağdurun rızası aranır. Hükümden yalnız fail değil, pişmanlık gösteren azmettiren ve yardım eden de yararlanır; pişmanlık göstermeyen ortak yararlanamaz.
 
 :::uyari
-Bu hükümde ceza kalkmaz, indirilir. "Çaldığı malı geri veren faile ceza verilmez" ifadesi yanlıştır. Kolluk bakımından sonucu şudur: şüphelinin malı iade etmesi soruşturmayı sona erdirmez; iade tutanağa bağlanır ve cezanın belirlenmesinde gözetilir.
+Bu hükümde kural olarak ceza kalkmaz, indirilir; "Çaldığı malı geri veren faile ceza verilmez" ifadesi yanlıştır. Tek ayrık karşılıksız yararlanmadır: zarar soruşturma tamamlanmadan önce tamamen tazmin edilirse kamu davası açılmaz. Kolluk bakımından sonucu şudur: hırsızlıkta şüphelinin malı iade etmesi soruşturmayı sona erdirmez; iade tutanağa bağlanır ve cezanın belirlenmesinde gözetilir.
 :::
 
 ### Kişiyi hürriyetinden yoksun kılma
@@ -86,11 +86,11 @@ Hükmün mantığı pazarlık durumlarında görülür. Rehin alma olayında fai
 
 ## Pişmanlığın biçimi
 
-"Etkin" sözü kurumun özüdür. Failin üzüldüğünü söylemesi, özür dilemesi ya da suçunu ikrar etmesi tek başına yetmez; kanunun o suç için aradığı somut davranışı yapmış olması gerekir: malı geri vermek, zararı ödemek, mağduru bırakmak, yetkili makama bilgi vermek, gerçeği söylemek. Davranışın zamanı da çoğu kez belirleyicidir. Kanun kimi suçlarda "resmî makamlarca haber alınmadan önce", kimisinde "soruşturma başlamadan önce", kimisinde "kovuşturma başlamadan önce" ya da "hüküm verilmeden önce" gösterilen pişmanlığa değer verir ve genellikle erken döneni daha çok ödüllendirir.
+"Etkin" sözü kurumun özüdür. Failin üzüldüğünü söylemesi, özür dilemesi ya da suçunu ikrar etmesi tek başına yetmez; kanunun o suç için aradığı somut davranışı yapmış olması gerekir: malı geri vermek, zararı ödemek, mağduru bırakmak, yetkili makama bilgi vermek, gerçeği söylemek. Davranışın zamanı da çoğu kez belirleyicidir. Kanun kimi suçlarda "resmi makamlar tarafından haber alınmadan önce", kimisinde "soruşturma başlamadan önce", kimisinde "kovuşturma başlamadan önce" ya da "hüküm verilmeden önce" gösterilen pişmanlığa değer verir ve genellikle erken döneni daha çok ödüllendirir.
 
 ## Öteki ortaklara etkisi
 
-Etkin pişmanlık kişiseldir. Suç birden çok kişiyle işlenmişse yalnız pişmanlık gösteren ortak yararlanır. Mahkemenin vereceği karar suça göre değişir: kanun cezanın tamamen kaldırılmasını öngörmüşse ceza verilmesine yer olmadığına, indirim öngörmüşse indirilmiş cezayla mahkûmiyete karar verilir.
+Etkin pişmanlık kişiseldir: suç birden çok kişiyle işlenmişse yalnız pişmanlık gösteren ortak yararlanır. Verilecek karar türü (cezayı kaldıran pişmanlıkta ceza verilmesine yer olmadığı, indirimde mahkûmiyet) suçun unsuru sayılmayan olgular dersinde anlatıldı.
 
 ## Dört kurum yan yana
 
@@ -127,4 +127,5 @@ Sorular iki kurumu ayıran zamanı ve sonucun önlenememesi hâlini yoklar.
 - Madde bağları: TCK md 168, md 110.
 - Gömülü sorular: bankadaki yayınlı gerçek sorular, ikisi de beş şıklı (4151024a… yanlış ifade (beklenen: icra hareketlerinden sonra suç tamamlanmadan pişman olan fail etkin pişmanlıktan yararlanır); a386e4e4… geri dönüp mağduru ölü bulan fail (beklenen: kasten öldürme suçundan sorumludur)). Doğru şık public uçtan görülemez; panelde anahtarla karşılaştırılmalı. Eş kurgulu b081b03b alınmadı. Soru üretilmedi.
 - SONRADAN EKLENEN PARAGRAFLAR, teyit edilmeli: md 110'un "pazarlık" mantığı ve "mağduru yaraladıktan sonra bırakan yararlanamaz" (maddenin "şahsına zararı dokunmaksızın" sözünden); "pişmanlığın biçimi" başlığındaki zaman ifadeleri md 93, 168, 201, 221, 248, 254, 269, 274'ün sözlerinden derlendi.
+- DENETİM DÜZELTMESİ (bağımsız denetim, Opus oturumu, 13 Kas 2026): (1) md 168 genellemesi md 168/5 karşılıksız yararlanma ayrığıyla düzeltildi ("soruşturma tamamlanmadan önce tamamen tazmin … kamu davası açılmaz"); (2) tırnak içi md 192'nin söyleyişine çekildi; (3) karar türü tekrarı 04/06'ya gönderildi.
 - AI taslak; insan düzenleme ve yayın onayı bekliyor.

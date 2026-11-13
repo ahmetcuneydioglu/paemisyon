@@ -38,7 +38,7 @@ Kişisel cezasızlık nedeni hakkında üç cümle birlikte doğrudur: suçun ol
 
 ### Nitelikli hâller
 
-Cezayı ağırlaştıran bir nitelikli hâlin ortaklara geçişi için kanunda ayrı bir hüküm yoktur; sonuç kast kuralından çıkar. Ağırlaştıran hâl, onu bilerek suça katılan ortağa uygulanır; bilmeyene uygulanmaz. Sevgilisinin kışkırtmasıyla onun babasını öldüren kişinin durumunda, mağdurun üstsoy olduğunu bilen kışkırtan kişi hakkında da ağırlaştıran hâl gündeme gelir. Öğretide bilmenin kesin bilgi olması, ihtimal vermenin yetmemesi gerektiği kabul edilir.
+Cezayı ağırlaştıran bir nitelikli hâlin ortaklara geçişi için kanunda ayrı bir hüküm yoktur; sonuç kast kuralından çıkar. Ağırlaştıran hâl, onu bilerek suça katılan ortağa uygulanır; bilmeyene uygulanmaz. Örneğin yağmaya yardım eden kişi, failin suçu silahla işleyeceğini biliyorsa silahla yağmadan sorumludur; failin silah kullanacağını bilmiyorsa nitelikli hâlden sorumlu değildir. Kişiye ilişkin hâller ise farklıdır: kendi babasının öldürülmesi için başkasını azmettiren kişi bakımından mağdurun üstsoyu olması onun kişisel durumundan doğan bir ağırlaştırıcı nedendir ve yalnız onda bulunur. Öğretide bilmenin kesin bilgi olması, ihtimal vermenin yetmemesi gerektiği kabul edilir.
 
 ## Özgü suçlara iştirak
 
@@ -61,7 +61,11 @@ Sıfatı taşımayan kişi fiile ne kadar ağır bir katkıda bulunursa bulunsun
 Bir kamu görevlisi, görevi nedeniyle kendisine teslim edilen eşyayı zimmetine geçirmek için kamu görevlisi olmayan bir tanıdığıyla anlaşır; tanıdığı, eşyanın nasıl zimmete geçirileceği konusunda yol gösterir. Görevli zimmetin failidir. Tanıdığı sıfatı taşımadığı için müşterek fail olamaz; yol gösterdiği için yardım eden olarak sorumludur. Suç fikri ondan çıkmış olsaydı azmettiren olurdu.
 :::
 
-Sıfatı taşımayan kişi, sıfatı taşıyan birini kandırarak suçu ona işletebilir. Görevliyi yanıltarak gerçeğe aykırı resmî belge düzenleten kişinin durumu ikinci derste dolaylı faillik örneği olarak verildi.
+Sıfatı taşımayan kişi, sıfatı taşıyan birini kandırarak özgü suçu ona işletse de o suçun faili olamaz; öğretide ağır basan görüşe göre özgü suçlarda dolaylı faillik mümkün değildir. Kandırılan görevlinin kastı olmadığı için iştirak de kurulamaz. Kanun bu durumların bir kısmını ayrı suç olarak düzenler: resmî belgeyi düzenlemeye yetkili kamu görevlisine yalan beyanda bulunmak ayrı bir suçtur.
+
+## Kışkırtıcı ajan
+
+Kolluk bakımından ayrıca önem taşıyan bir durum, devletin koruması ya da denetimi altında başkasını suça yönelten kişidir. Kanunda bu kişinin sorumluluğuna ilişkin ayrı bir hüküm yoktur; öğretide çözüm iştirak kurallarıyla kurulur. Yönelttiği kişi hiçbir icra hareketine başlamamışsa ortada iştirak edilecek bir suç yoktur. Suça hiç karar vermemiş birine karar verdirmişse azmettiren, zaten karar vermiş birini harekete geçirmişse teşvik eden olarak değerlendirilir. İcraya başlanmış ama sonuç doğmadan suçu kendisi durdurmuşsa gönüllü vazgeçme hükümlerinden yararlanır. Bu çizgi, gizli soruşturmacının suç işleyemeyeceği kuralıyla birlikte okunmalıdır; o kural koruma tedbirleri bölümündeki gizli soruşturmacı dersinde anlatıldı.
 
 ## Çok failli suçlar
 
@@ -81,7 +85,7 @@ Tanımın gerektirdiği kişilerin dışında kalanlar ise bu suçlara iştirak 
 
 ## Taksirli suçlar
 
-Taksirli suçlarda iştirak hükümleri uygulanmaz. Bağlılık kuralı "kasten" işlenmiş bir fiil arar; taksirde birlikte suç işleme kararı da yoktur. Birden çok kişinin özensizliği aynı sonucu doğurmuşsa kanun ayrı bir kural koyar: herkes kendi kusurundan dolayı sorumlu olur ve her failin cezası kusuruna göre ayrı ayrı belirlenir.
+Öğretide ve uygulamada kabul edildiği üzere taksirli suçlarda iştirak hükümleri uygulanmaz. Bağlılık kuralı "kasten" işlenmiş bir fiil arar; taksirde birlikte suç işleme kararı da yoktur. Birden çok kişinin özensizliği aynı sonucu doğurmuşsa kanun ayrı bir kural koyar: herkes kendi kusurundan dolayı sorumlu olur ve her failin cezası kusuruna göre ayrı ayrı belirlenir.
 
 :::madde turk-ceza-kanunu:22
 Taksir; birden çok kişinin taksirle işlediği suçlarda sorumluluk beşinci fıkradadır.
@@ -130,4 +134,5 @@ Sorular özgü suça iştiraki, plan dışı suçu, kişisel cezasızlık nedeni
 - OCR: s-075 sonu ve s-076 başında nitelikli şekiller listesinin satırları karışmış ("bilmeden (vukuf…)" cümlesi yarım); s-077 başında çok failli suç–iştirak ayrımının ilk satırı düşmüş. Görüntüye bakılmadı.
 - Madde bağları: TCK md 40, md 22.
 - Gömülü sorular: bankadaki yayınlı gerçek sorular, hepsi beş şıklı (444ee03f… zimmet ve yol gösteren (beklenen: görevli fail, öteki yardım eden); 71fba781… plan dışı öldürme, yanlış olan (beklenen: yalnız III); 9f80a949… kişisel cezasızlık nedeni, yanlış ifade (beklenen: fiilin hukuka aykırılığını ortadan kaldırır); 603da3f3… yanlış ifade (beklenen: azmettirilen vazgeçse bile azmettiren tamamlanmış suçun cezasıyla cezalandırılır)). Doğru şık public uçtan görülemez; panelde anahtarla karşılaştırılmalı. Eş kurgulu 68d8be5b, 03694ed6, 6583c979, 0b80b80f, 6b399b78 alınmadı. Soru üretilmedi.
+- DENETİM DÜZELTMESİ (bağımsız denetim, Opus oturumu, 13 Kas 2026): (1) "Sıfatı taşımayan kişi … suçu ona işletebilir … dolaylı faillik örneği" cümlesi md 40/2 ile çelişiyordu; özgü suçta dolaylı failliğin mümkün olmadığı (öğretide ağır basan görüş) ve md 206'nın ayrı suç olarak düzenlemesi yazıldı; (2) nitelikli hâl örneği (sevgilinin babası) kişiye ilişkin hâli karıştırıyordu; fiile ilişkin bir örnek (konuta girerek hırsızlık) ve kişiye ilişkin hâlin yalnız kendisinde bulunduğu açıklaması kondu — kitap örneği muğlak (s-076), insan incelemesi; (3) taksirli iştirak cümlesine öğreti/uygulama kaydı; (4) kışkırtıcı ajan alt başlığı eklendi (kitap s-076, öğreti; CMK md 139/5 gizli soruşturmacı göndermesi).
 - AI taslak; insan düzenleme ve yayın onayı bekliyor.

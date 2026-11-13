@@ -36,7 +36,7 @@ Burada gerçek anlamda bir zincir yoktur: suçlar değişik zamanlarda değil ay
 Tek dilekçeyle birkaç kişiye iftira atmak, tek mektupla birkaç kişiyi tehdit etmek, bir odadaki kişilerin üzerine kapıyı kilitleyerek hepsini birden hürriyetinden yoksun kılmak bu hükmün örnekleridir. Uygulamada, görevini yapan birden çok kolluk görevlisine tek fiille direnilmesi hâlinde de aynı kural uygulanmaktadır: görevli sayısınca suç değil, artırılmış tek ceza.
 
 :::uyari
-Tek fiille birden çok kişinin öldürülmesi ya da yaralanması bu hükmün dışındadır. Bomba patlatarak bir kişiyi öldüren, bir kişiyi yaralayan fail tek ceza almaz; öldürmeden ve yaralamadan ayrı ayrı cezalandırılır. Fiil tek olsa da kanun yaşam ve vücut bütünlüğü söz konusu olduğunda her mağduru ayrı sayar. "Fikri içtima uygulanır, yalnız öldürmeden ceza verilir" şıkkı yanlıştır.
+Aynı suçun tek fiille birden çok kişiye karşı işlenmesini birleştiren bu hüküm kasten öldürme ve kasten yaralamada uygulanmaz: tek atışla iki kişiyi öldüren fail iki ayrı öldürmeden sorumludur. Öldürme ile yaralama gibi farklı sonuçlarda ise iki ayrı sonuç vardır ve aşağıda anlatılan sonuç ölçüsüne göre iki fiil sayılır. Bomba patlatarak bir kişiyi öldüren, bir kişiyi yaralayan fail öldürmeden ve yaralamadan ayrı ayrı cezalandırılır; "fikri içtima uygulanır, yalnız öldürmeden ceza verilir" şıkkı sınavda yanlış sayılır.
 :::
 
 ## Farklı neviden fikri içtima
@@ -47,7 +47,7 @@ Kanunun "fikri içtima" başlığını taşıyan maddesi bu durumu düzenler.
 Fikri içtima.
 :::
 
-Madde tek cümledir: "İşlediği bir fiil ile birden fazla farklı suçun oluşmasına sebebiyet veren kişi, bunlardan en ağır cezayı gerektiren suçtan dolayı cezalandırılır."
+Madde tek cümledir: "İşlediği bir fiil ile birden fazla farklı suçun oluşmasına sebebiyet veren kişi, bunlardan en ağır cezayı gerektiren suçtan dolayı cezalandırılır." Kanunun fikri içtima başlıklı maddesi farklı suçları arar; aynı suçun tek fiille birden çok kişiye işlenmesi, yukarıda görüldüğü gibi ayrı bir fıkrada düzenlenir.
 
 | Koşul | Açıklama |
 |---|---|
@@ -84,9 +84,9 @@ Tek hareket birden çok sonuç doğurduğunda ne olacağı konusunda iki yaklaş
 | Harekete ağırlık veren | Hareket tekse fiil tektir | Fikri içtima uygulanır |
 | Sonuca ağırlık veren | Fiil, hareketi ve sonucu birlikte kapsar; sonuç sayısınca fiil vardır | Her sonuç ayrı fiildir; ayrı ceza verilir |
 
-Uygulamada ağır basan yaklaşım ilkidir: hukuki anlamda tek hareketle birden çok farklı suç oluşmuşsa fikri içtima kabul edilir. Atılan taş arabanın camını kırıp içerideki kişiyi yaralamışsa mala zarar verme ile yaralama arasında bu hüküm uygulanır. Öğretide ikinci yaklaşımı savunanlar ise bunun, tek atışla birden çok zarar veren faili ödüllendirdiğini ileri sürer. Sınavda beklenen, kanunun sözüne ve uygulamaya uygun olan yanıttır: tek fiil ve farklı suçlar varsa en ağırından ceza.
+İki yaklaşımın da dayanağı vardır. Kanunun madde gerekçesindeki örnekler hareketin tekliğini esas alır. Öğretinin önemli bir kısmı ise gerekçenin bağlayıcı olmadığını, neticeli suçlarda fiilin sonuç sayısına göre belirlenmesi gerektiğini savunur; bu görüşü savunanlar ilk yaklaşımın tek hareketle birden çok zarar veren faili ödüllendirdiğini ileri sürer. Sonuç ölçüsüne göre gece yerleşim yerinde ateş edilip tek bir kişinin yaralanmasında sonuç tektir ve yaralama ile genel güvenliği tehlikeye sokma arasında fikri içtima uygulanır. Bir kişiyi yaralamak için atılan sopa onu yaraladıktan sonra vitrini de kırarsa iki sonuç vardır; fail yaralamadan ve mala zarar vermeden ayrı ayrı cezalandırılır. Sırf hareket suçlarında, örneğin tek sözle işlenen hakarette, ölçü hareketin tekliğidir.
 
-Bu tartışmanın dışında kalan kesin bir kural vardır ve yukarıdaki uyarıda verildi: sonuçlar öldürme ya da yaralama ise ve birden çok kişi zarar görmüşse, fiil tek olsa da her mağdur için ayrı ceza verilir.
+Sınav sorularında tek fiilden iki ayrı sonucun doğduğu olaylarda, özellikle sonuçlar öldürme ve yaralama ise, ayrı ayrı ceza çözümü beklenir; tek sonuçla birden çok farklı suçun oluştuğu olaylarda fikri içtima uygulanır.
 
 ## Fikri içtima sayılmayan durumlar
 
@@ -95,7 +95,7 @@ Bu tartışmanın dışında kalan kesin bir kural vardır ve yukarıdaki uyarı
 | İki ayrı hareketle iki ayrı suç: eve girip öldürmek | Fiil tek değildir |
 | Bir hüküm ötekine göre özel hükümdür: Cumhurbaşkanına hakaret ile hakaret | Yalnız özel hüküm uygulanır; ihlal görünüştedir |
 | Kanun ayrıca ceza verilmesini açıkça öngörmüştür: sahte belgenin başka bir suçun işlenmesinde kullanılması | Kanun erimeyi kendisi engellemiştir; iki suçtan da ceza verilir |
-| İhlallerden biri kabahattir | Suç ile kabahat arasında bu hüküm uygulanmaz |
+| İhlallerden biri kabahattir | Kabahatler Kanunu'na göre yalnız suçtan yaptırım uygulanır; kabahat ayrıca cezalandırılmaz |
 
 İkinci satır görünüşte içtimadır ve bölümün son dersinde anlatılır: orada hükümlerden yalnız biri gerçekten ihlal edilmiştir; fikri içtimada ise hepsi ihlal edilmiş, kanun yalnız cezayı tek tutmuştur.
 
@@ -128,4 +128,5 @@ Sorular iki türün tanımını ve tek fiille öldürme ile yaralamanın birlikt
 - OCR: s-082 ve s-083 çok yoğun dipnotlu; metinle dipnot satırları iç içe geçmiş, birçok cümlenin ortası eksik. Bu yüzden kitaptaki uzun örnek listesi (maytap, havalimanı, cezaevi, çatı, sigara) derse alınmadı. Görüntüye bakılmadı.
 - Madde bağları: TCK md 43, md 44.
 - Gömülü sorular: bankadaki yayınlı gerçek sorular, hepsi beş şıklı (7b12f8e6… tek sözle bütün oyunculara hakaret (beklenen: aynı türden fikri içtima); bade2a74… tanım (beklenen: fikri içtima); ee55f689… gece yerleşim yerinde ateş ederek yaralama (beklenen: fikri içtima); 7b0b0fed… bomba, bir ölü bir yaralı (beklenen: kasten öldürme ve kasten yaralamadan ayrı ayrı ceza)). Doğru şık public uçtan görülemez; panelde anahtarla karşılaştırılmalı. Eş kurgulu c9ae7917, 2e3b6714, dd494c22 alınmadı; e4ad79e4 (D ve E şıkları public uçta kesik göründüğü için), 345576a0 ve c2313a49 alınmadı. Soru üretilmedi.
+- DENETİM DÜZELTMESİ (bağımsız denetim, Opus oturumu, 13 Kas 2026): (1) "uygulamada ağır basan yaklaşım hareketin tekliğidir" iddiası dayanaksızdı, çıkarıldı; iki görüş dayanaklarıyla verildi: madde gerekçesi hareketin tekliğini, kaynak kitap ve öğretinin önemli kısmı neticeli suçlarda sonuç sayısını esas alır (OCR s-082, s-086–087). Taş örneği çıkarıldı; tek sonuçlu (ateş, bir yaralı) ve iki sonuçlu (sopa, yaralama + vitrin) örnekler kondu. İNSAN İNCELEMESİ: uygulamanın (Yargıtay) hangi ölçüyü izlediği teyit edilmeli. (2) "Kanun her mağduru ayrı sayar / kesin kural" md 43/3'ün kapsamına indirildi; öldürme–yaralama ayrı cezası sonuç ölçüsüne bağlandı; 7b0b0fed (bomba, anahtar C: ayrı ayrı ceza) bununla tutarlı. (3) 0facdc63 için md 44'ün farklı suçları aradığı cümlesi eklendi (D şıkkı md 44 bakımından doğru okunur). (4) kabahat satırına 5326 md 15/3 dayanağı.
 - AI taslak; insan düzenleme ve yayın onayı bekliyor.

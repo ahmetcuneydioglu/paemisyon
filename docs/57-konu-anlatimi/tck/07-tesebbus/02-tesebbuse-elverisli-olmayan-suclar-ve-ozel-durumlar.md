@@ -17,7 +17,7 @@ Teşebbüs hükmü genel hükümler arasındadır ve kural olarak kasten işlene
 | Tehlike suçları | Yapısı elverdiği ölçüde mümkün | Hareket bölünebiliyorsa ara aşama vardır |
 | Kalkışma suçları | Mümkün değil | Teşebbüsün kendisi tamamlanmış suç olarak tanımlanmıştır |
 
-İki tartışmalı başlık daha vardır. Neticesi sebebiyle ağırlaşmış suçlara teşebbüsün mümkün olup olmadığı öğretide tartışılır. Cezalandırılabilme koşulu içeren suçlarda da görüş birliği yoktur: bir görüşe göre teşebbüs mümkün değildir, öteki görüşe göre mümkündür ama koşul gerçekleşmedikçe ceza verilemez.
+İki tartışmalı başlık daha vardır. Neticesi sebebiyle ağırlaşmış suçlara teşebbüsün mümkün olup olmadığı öğretide tartışılır. Cezalandırılabilme koşulu içeren suçlarda da görüş birliği yoktur: ağır basan görüşe göre (suçun unsuru sayılmayan olgular dersindeki tablo) teşebbüs mümkün değildir; karşı görüşe göre mümkündür ama koşul gerçekleşmedikçe ceza verilemez.
 
 Tablonun ilk satırı en kesin olanıdır. Taksirde fail sonucu istemez; istenmeyen bir sonuca "ulaşmaya çalışmak" düşünülemez. Dikkatsiz sürücü kimseye çarpmadan durabilmişse taksirle yaralamaya teşebbüsten söz edilmez; ortada, varsa, trafik kurallarına aykırılık ya da bir tehlike suçu vardır. İhmali suçlarda ayrım, suçun bir sonuç arayıp aramadığına göre yapılır. Yardım etmeme ya da suçu bildirmeme gibi yalnız ihmalle işlenebilen suçlarda, yükümlülüğün yerine getirilmesi gereken an geçince suç tamamlanmış olur; öncesinde ise cezalandırılabilir bir hareket yoktur. Bebeğini beslemeyerek öldürmek isteyen kişinin durumunda ise sonuç aranır: bebek kurtarılırsa ihmal suretiyle işlenen öldürmeye teşebbüs vardır.
 
@@ -55,11 +55,10 @@ Olay sorularının çoğu bu başlıktan gelir. Fail istediğine tam olarak ula�
 
 | Olay | Niteleme | Neden |
 |---|---|---|
-| Beş telefon çalmak isteyen failin üçünü alıp çıkabilmesi | Tamamlanmış hırsızlık | Aldığı mallar bakımından tanım gerçekleşmiştir; daha fazlasını istemiş olması suçu eksik bırakmaz |
-| Cüzdan ve telefonu vermesi için tehdit ettiği kişiden yalnız cüzdanı alabilen fail | Tamamlanmış suç | Aynı gerekçe |
-| Aynı dükkândan birer hafta arayla çalmayı planlayan failin ilkini başarıp ikincisinde yakalanması | Tamamlanmış suç üzerinden ceza | İlk fiil tamamlanmıştır |
+| Beş telefon çalmak isteyen failin üçünü alıp çıkabilmesi | Tamamlanmış hırsızlık | Aldığı mallar bakımından tanım gerçekleşmiştir; daha fazlasını istemiş olması suçu eksik bırakmaz (ayrıntısı içtima bölümünde) |
+| Aynı dükkândan birer hafta arayla çalmayı planlayan failin ilkini başarıp ikincisinde yakalanması | İki ayrı fiil: ilki tamamlanmış hırsızlık, ikincisi hırsızlığa teşebbüs; zincirleme suç koşulları varsa tek ceza artırılarak verilir | Her giriş ayrı bir fiildir (içtima bölümü) |
 | Mağduru bir yere kapatan failin, mağdur kurtarılmadan yakalanması | Tamamlanmış kişiyi hürriyetinden yoksun kılma | Kesintisiz suç, kapatma anında tamamlanmıştır |
-| Bir kişiyi öldürmek isterken yanılarak bir başkasını öldüren fail | Tamamlanmış kasten öldürme | Kişide hata kastı kaldırmaz; ayrıca teşebbüs yoktur |
+| Öldürmek istediği kişinin kimliğinde yanılarak bir başkasını öldüren fail | Tamamlanmış kasten öldürme | Kişide hata kastı kaldırmaz; ayrıca teşebbüs yoktur (hedefte sapma içtima bölümünde) |
 
 Bu tablonun karşısında gerçek teşebbüs durur. Fark, failin malı kendi hâkimiyetine geçirip geçiremediğindedir.
 
@@ -112,4 +111,5 @@ Sorular hangi olayda teşebbüs hükmünün uygulanacağını ve teşebbüse elv
 - Madde bağları: yok (md 35 bölümün birinci dersinde bağlandı).
 - Gömülü sorular: bankadaki yayınlı gerçek sorular, hepsi beş şıklı (bea53dd6… doğru ifade (beklenen: tehdit suçuna yapısı elverdiği ölçüde teşebbüs mümkündür); 233b7647… öncüllü (beklenen: II, III ve IV); 788fb9af… teşebbüs hükmünün uygulandığı olay (beklenen: on çuval patates); 99b4f3de… aynı soru tipi (beklenen: şeftali kasalarını bırakıp kaçan fail)). Doğru şık public uçtan görülemez; panelde anahtarla karşılaştırılmalı. Eş kurgulu ad52333a alınmadı. Soru üretilmedi.
 - SONRADAN EKLENEN PARAGRAFLAR (uzunluk için), teyit edilmeli: taksir ve ihmali suç açıklaması (dikkatsiz sürücü; yardım etmeme md 98 ve suçu bildirmeme md 278 yalnız ihmalle işlenen suç örnekleri olarak; bebeğini beslemeyen kişi öğretideki yaygın ihmal suretiyle icra örneği) kitapta yok; "olay sorusunda izlenecek yol" paragrafı yazımdır.
+- DENETİM DÜZELTMESİ (bağımsız denetim, Opus oturumu, 13 Kas 2026): (1) cezalandırılabilme koşulunda teşebbüs, 04/06 tablosuyla hizalandı ("ağır basan görüş"); (2) "birer hafta arayla" satırı içtima bölümüyle (09/01, 09/03) hizalandı: iki ayrı fiil, zincirleme koşulları varsa tek ceza; (3) "istenenden azını alma" ayrıntısı 09/01'de, burada cüzdan satırı çıkarıldı ve gönderme kondu; (4) kişide hata satırı hedefte sapmayla karışmasın diye "kimliğinde yanılarak" yazıldı.
 - AI taslak; insan düzenleme ve yayın onayı bekliyor.

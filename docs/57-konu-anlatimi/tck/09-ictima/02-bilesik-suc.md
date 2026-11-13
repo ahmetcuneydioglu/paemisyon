@@ -64,9 +64,11 @@ Fail, hasmını öldürmek için gece evine girer ve onu öldürür. Kasten öld
 
 Aynı ayrım yağmanın kendi içinde de yapılır. Cebir, malı almak ya da alınmasına karşı konulmasını önlemek için kullanılmışsa yağmanın unsurudur ve ayrıca cezalandırılmaz. Fail malı aldıktan ve olay bittikten sonra, bambaşka bir nedenle mağduru yaralarsa bu yeni fiil yağmanın içinde erimez; ayrı bir suçtur.
 
+Netice sebebiyle ağırlaşmış suç da bileşik suçla karıştırılmamalıdır. Öğretide kabul edildiği üzere orada iki suç birleşmez; tek bir kasıtlı fiilden, failin en az taksirle sorumlu olduğu daha ağır ya da başka bir netice doğar. Ayrımı manevi unsur bölümündeki ders anlatır; sınavda bileşik suç örneklerinin arasına çeldirici olarak konulabilir.
+
 ## Bölünmezlik ve sonuçları
 
-Bileşik suç, kendisini oluşturan suçlara bölünemeyen tek bir suçtur. Bütün sonuçlar bu tekliğe bağlanır.
+Bileşik suç, kendisini oluşturan suçlara bölünemeyen tek bir suçtur. Öğretide bu tekliğe bağlanan sonuçlar şunlardır.
 
 | Konu | Kural |
 |---|---|
@@ -121,4 +123,5 @@ Sorular tanımı, bileşik suç sayılmayan olayları ve bölünmezliğin sonuç
 - Madde bağları: TCK md 42.
 - Gömülü sorular: bankadaki yayınlı gerçek sorular, hepsi beş şıklı (a704a00a… tanım (beklenen: bileşik suç); 384010ba… bileşik suç hükümleri uygulanamayan (beklenen: bir suçu gizlemek amacıyla işlenen kasten öldürme); da6576ad… bilişim sistemi ve para (beklenen: bileşik suç vardır); 558a8a30… konutta yağma (beklenen: bileşik suçtur); 63dff052… öldürmek için eve girme (beklenen: II ve III)). Doğru şık public uçtan görülemez; panelde anahtarla karşılaştırılmalı. Eş kurgulu 1b28a612, dc0aeef4, 6592c541, b14bb3e3, be95bee0, dca22f4d, 77ca0218, 65f45185, d5217916, d1ee9c0c alınmadı. Soru üretilmedi.
 - SONRADAN EKLENEN PARAGRAFLAR, teyit edilmeli: birleştirmenin gerekçesi öğretidendir; "yağmadan sonra başka nedenle yaralama ayrı suçtur" genel kuraldır (yağmada cebrin yaralama boyutuna varması hâlindeki özel hükümler md 149'da; gövdede anılmadı).
+- DENETİM DÜZELTMESİ (bağımsız denetim, Opus oturumu, 13 Kas 2026): (1) bölünmezlik tablosu öğreti kaydına alındı (şikâyet, af, parça suçun suç olmaktan çıkarılması, teşebbüs satırları kanunda yazılı değil); (2) netice sebebiyle ağırlaşmış suçun bileşik suç olmadığı öğreti kaydıyla eklendi ve 03/06'ya gönderildi. Kitaptan aktarılan md 142/2-e, 149/1-d, 94/3, 109/2, 116/4, 292/2 bankadan okunup doğrulandı (V3).
 - AI taslak; insan düzenleme ve yayın onayı bekliyor.

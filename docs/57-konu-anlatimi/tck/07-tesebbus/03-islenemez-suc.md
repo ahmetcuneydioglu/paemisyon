@@ -39,7 +39,7 @@ Her başarısız araç işlenemez suç doğurmaz. Öğreti iki durumu ayırır.
 Ölçü soyut bir sorudur: bu araç bu sonucu doğurabilir mi? Yanıt "hiçbir koşulda hayır" ise işlenemez suç vardır. "Evet, ama bu olayda olmadı" ise fail teşebbüsten sorumludur.
 
 :::uyari
-İğnesi kırık olduğu için ateş almayan silahla tetiğe basan fail sınavda sıkça sorulur. Öğretide bu olay mutlak elverişsizlik örneği sayılır: o silah, o hâliyle kimin elinde olursa olsun ateş etmez. Beklenen yanıt işlenemez suçtur. Silah sağlamsa ve fail kullanmayı bilmediği için ateş edemediyse elverişsizlik failden kaynaklanır; teşebbüs vardır.
+İğnesi kırık olduğu için ateş almayan silahla tetiğe basan fail sınavda sıkça sorulur. Öğretide bu olay çoğunlukla mutlak elverişsizlik örneği sayılır: o silah, o hâliyle kimin elinde olursa olsun ateş etmez; beklenen yanıt işlenemez suçtur. Elverişliliğin geçici bir arızaya bağlı kaldığı, silahın başka bir anda ateş alabileceği olaylarda ise teşebbüs görüşü de savunulur. Silah sağlamsa ve fail kullanmayı bilmediği için ateş edemediyse elverişsizlik failden kaynaklanır; teşebbüs vardır.
 :::
 
 Aracın elverişliliği işlenmek istenen suça göre değerlendirilir. Öldürmeye elverişsiz olan araç, başka bir suç için elverişli olabilir ve fail o suçtan sorumlu tutulabilir: oyuncak tabancayla öldüremezsiniz, ama birini tehdit edebilirsiniz.
@@ -54,7 +54,7 @@ Maddi konu, suçun üzerinde gerçekleştiği kişi ya da şeydir: öldürmede y
 | Fail, yıllardır boş duran, içinde hiçbir eşya bulunmayan eve hırsızlık için girer | Hırsızlık bakımından işlenemez suç | Alınabilecek bir mal baştan beri yoktur |
 | Yankesici, otobüste bir yolcunun cebine elini atar; cep o anda boştur | Hırsızlığa teşebbüs | Konunun yokluğu rastlantısaldır; o cepte para bulunması olağan bir olasılıktır |
 
-Üçüncü satır ayrımın özüdür. Öğretide konunun olanaksızlığı, hareketin yapıldığı andaki rastlantıya göre değil, failin suça giriştiği sırada durumun dışarıdan nasıl göründüğüne göre değerlendirilir. Konunun orada bulunması olağan ise ve yalnız o an için eksikse, fail korunan değeri tehlikeye sokmuştur ve teşebbüsten sorumludur. Konunun bulunması baştan olanaksızsa tehlike de yoktur.
+Üçüncü satır ayrımın özüdür. Öğretide konunun bulunup bulunmadığı, hareketin yapıldığı anın tesadüflerine göre değil, fail suça hazırlanırken var olan koşullara göre değerlendirilir. Konunun orada bulunması olağan ise ve yalnız o an için eksikse, fail korunan değeri tehlikeye sokmuştur ve teşebbüsten sorumludur. Konunun bulunması baştan olanaksızsa tehlike de yoktur.
 
 Kişi üzerinde işlenen suçlarda da aynı ayrım yapılır. Hasmının her gece yattığı yatağa, o gece evde olmadığı bir sırada ateş eden failin durumunda konu baştan beri yok değildir; mağdur rastlantı sonucu orada bulunmamaktadır. Öğretide bu tür olaylar işlenemez suç değil, teşebbüs sayılır. Buna karşılık yıllar önce ölmüş bir kişiyi öldürmeye çalışmak, hiçbir koşulda başarılamayacak bir girişimdir.
 
@@ -125,4 +125,5 @@ Sorular konunun yokluğunu, aracın elverişsizliğini ve teşebbüs hükmünün
 - Madde bağları: TCK md 35.
 - Gömülü sorular: bankadaki yayınlı gerçek sorular, hepsi beş şıklı (157e2428… ölmüş kişiye ateş (beklenen: işlenemez suç); 55c156bc… zehir sanılan pudra şekeri (beklenen: aracın elverişsizliği nedeniyle işlenemez suç); 1c68f60b… iğnesi kırık silah (beklenen: işlenemez suç vardır); 5761d0a1… yanlış ifade (beklenen: aracın elverişsiz olması hâllerinde teşebbüs hükümleri uygulanır)). Doğru şık public uçtan görülemez; panelde anahtarla karşılaştırılmalı. Eş kurgulu a6d44689 alınmadı. Soru üretilmedi.
 - SONRADAN EKLENEN PARAGRAFLAR, teyit edilmeli: "boş yatağa ateş" örneği öğretide tartışmalıdır (rastlantısal yokluk → teşebbüs görüşü esas alındı; kitaptaki yankesici ölçüsünün kişi üzerindeki uygulaması); "hatanın tersi" açıklaması öğretideki ters hata düşüncesidir, kitapta bu adla yok.
+- DENETİM DÜZELTMESİ (bağımsız denetim, Opus oturumu, 13 Kas 2026): (1) iğnesi kırık silah: kitapla uyumlu (s-069), kesinlik "çoğunlukla" diye yumuşatıldı, geçici arızada teşebbüs görüşü eklendi — insan incelemesi; (2) konunun yokluğunda ölçüt kitabın söyleyişine hizalandı ("suçu işlemeye hazırlandığı anda ortaya çıkan durum"); "dışarıdan nasıl göründüğü" ayrı bir ölçüttü, çıkarıldı. Boş yatak örneği zaten "öğretide" kayıtlı.
 - AI taslak; insan düzenleme ve yayın onayı bekliyor.

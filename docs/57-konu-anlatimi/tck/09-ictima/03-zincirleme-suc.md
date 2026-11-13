@@ -28,7 +28,7 @@ Birinci fıkranın ilk cümlesi koşulların tamamını taşır: "Bir suç işle
 
 İşlenen suçlar aynı suç tipine girmelidir: hırsızlık ile dolandırıcılık bir zincir oluşturmaz. Kanun burada bir kolaylık tanır: "Bir suçun temel şekli ile daha ağır veya daha az cezayı gerektiren nitelikli şekilleri, aynı suç sayılır." Bir gün gündüz, ertesi gün gece işlenen hırsızlıklar aynı suçtur.
 
-Zincire giren her fiil kendi başına suç oluşturmalı ve cezalandırılabilir olmalıdır. Zamanaşımına ya da affa uğramış, şikâyetten vazgeçilmiş bir suç zincire katılmaz. Buna karşılık suçlardan birinin tamamlanmış, ötekinin teşebbüs aşamasında kalmış olması ya da birinin tek başına, ötekinin bir başkasıyla birlikte işlenmiş olması zinciri bozmaz.
+Zincire giren her fiil kendi başına suç oluşturmalı ve cezalandırılabilir olmalıdır. Öğretide, zamanaşımına ya da affa uğramış, şikâyetten vazgeçilmiş bir suçun zincire katılmadığı kabul edilir. Buna karşılık suçlardan birinin tamamlanmış, ötekinin teşebbüs aşamasında kalmış olması ya da birinin tek başına, ötekinin bir başkasıyla birlikte işlenmiş olması zinciri bozmaz.
 
 ### Değişik zaman
 
@@ -40,7 +40,7 @@ Zincirleme suçu tek suçtan ayıran koşul budur. Aynı olayın içinde art ard
 | Aynı depodan birer hafta arayla beş kez kömür çalınması | Zincirleme hırsızlık |
 | Bir kişiye aynı kavgada beş bıçak darbesi vurulması | Tek yaralama |
 
-Zincir bir yerde kopar. Fail hakkında önceki fiillerinden dolayı dava açılmışsa hukuki kesinti oluşur; bu tarihten sonra işlenen suçlar önceki zincire eklenmez.
+Zincir bir yerde kopar. Uygulamada, fail hakkında önceki fiillerinden dolayı dava açılmışsa hukuki kesinti oluştuğu kabul edilir; bu tarihten sonra işlenen suçlar önceki zincire eklenmez.
 
 ### Aynı kişi
 
@@ -126,4 +126,5 @@ Sorular yasaklı suçları, mağdurun aynı olmasını, taksirli suçları ve za
 - OCR: s-079 ve s-080'de birkaç satır sonu düşmüş; "değişik zamanlarda" koşulunun ilk satırı okunamıyor. Görüntüye bakılmadı.
 - Madde bağları: TCK md 43.
 - Gömülü sorular: bankadaki yayınlı gerçek sorular, hepsi beş şıklı (6ba1f223… zincirleme suçun uygulandığı suç (beklenen: hırsızlık); 07c315cd… öncüllü (beklenen: yalnız II); 37f601ea… öncüllü (beklenen: yalnız II); d2f4cc2c… uygulanabilen suç (beklenen: cinsel saldırı); ed0985f6… yanlış ifade (beklenen: zamanaşımı her suç için ayrı ayrı kendi tarihinden başlar)). Doğru şık public uçtan görülemez; panelde anahtarla karşılaştırılmalı. Eş kurgulu 62778ecf, 359594eb alınmadı. Soru üretilmedi.
+- DENETİM DÜZELTMESİ (bağımsız denetim, Opus oturumu, 13 Kas 2026): zincire katılmayan suçlar öğreti, hukuki kesinti uygulama kaydına alındı (kanunda yok). md 43/3 2005 değişikliği (cinsel saldırı ve çocukların cinsel istismarının listeden çıkması) resmî dipnotla doğrulandı (V3).
 - AI taslak; insan düzenleme ve yayın onayı bekliyor.
