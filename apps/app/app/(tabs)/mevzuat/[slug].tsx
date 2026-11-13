@@ -8,6 +8,7 @@ import { TYPE_LABEL, useArticleAnnotations, useArticleBookmarks, useLawRead, use
 import { useTopicUnits } from "@/features/summaries/queries";
 import { useTheme } from "@/theme/ThemeProvider";
 import { maddeOnizleme } from "@/lib/madde-metni";
+import { useLessonSections } from "@/features/lessons/queries";
 
 type Filter = "all" | "saved" | "noted";
 
@@ -29,6 +30,9 @@ export default function MevzuatKanunScreen() {
   const read = useLawRead(slug);
   // Konu özetleri (Doc 53): kanunun konusuna bağlı yayındaki üniteler; okuyucuya giriş kapısı burada da olsun.
   const units = useTopicUnits(detail.data?.topicId ?? null);
+  // Ders sayısı (Doc 57): "1 ünite" yazıp 74 dersi gizliyordu (CMK, 13 Kas 2026).
+  const lessons = useLessonSections(detail.data?.topicId ?? null);
+  const lessonCount = (lessons.data ?? []).reduce((n, sec) => n + sec.lessons.length, 0);
   const [filter, setFilter] = useState<Filter>("all");
   const [q, setQ] = useState("");
 
@@ -135,9 +139,9 @@ export default function MevzuatKanunScreen() {
                 </View>
               </View>
 
-              {units.data && units.data.length > 0 ? (
+              {(units.data?.length ?? 0) > 0 || lessonCount > 0 ? (
                 <View style={{ gap: space.s2 }}>
-                  <ListRow title="Ünite içerikleri" subtitle={`${units.data.length} ünite · Konu anlatımı ve hızlı tekrar`} onPress={() => router.push({ pathname: "/(tabs)/kutuphane/uniteler/[topicId]", params: { topicId: d.topicId!, name: d.name } })} />
+                  <ListRow title="Konu anlatımı" subtitle={[lessonCount > 0 ? `${lessonCount} ders` : null, (units.data?.length ?? 0) > 0 ? `${units.data!.length} ünite özeti` : null, (units.data?.length ?? 0) > 0 ? "hızlı tekrar" : null].filter(Boolean).join(" · ")} onPress={() => router.push({ pathname: "/(tabs)/mevzuat/uniteler/[topicId]", params: { topicId: d.topicId!, name: d.name } })} />
                 </View>
               ) : null}
 

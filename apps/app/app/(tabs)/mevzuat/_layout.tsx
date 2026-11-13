@@ -9,6 +9,7 @@ export default function MevzuatLayout() {
       <Stack.Screen name="index" options={{ headerShown: false }} />
       <Stack.Screen name="[slug]" options={{ title: "Kanun" }} />
       <Stack.Screen name="ara" options={{ title: "Mevzuatta ara" }} />
+      <Stack.Screen name="uniteler/[topicId]" options={{ title: "Konu oku" }} />
     </Stack>
   );
 }
