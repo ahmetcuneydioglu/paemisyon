@@ -1,3 +1,4 @@
+import type { QuizAnswer, QuizSession } from '@prisma/client';
 import {
   BadRequestException,
   ConflictException,
@@ -1594,22 +1595,35 @@ export class QuizService {
     // saklanan sonuç aynen döner (deneme finalize yarışları için kritik, Doc 18).
     // Kapatılmış (abandoned — tek aktif tur, Doc 48 B-3) tur da yeniden işlenmez:
     // emeği kapanırken zaten yazıldı.
-    if (session.status !== 'in_progress') {
-      return {
-        sessionId,
-        mode: session.mode,
-        totalQuestions: session.totalQuestions,
-        correctCount: session.correctCount,
-        wrongCount: session.wrongCount,
-        blankCount: session.blankCount,
-        score: session.score != null ? Number(session.score) : 0,
-        durationSeconds: session.durationSeconds ?? 0,
-        plannedDurationSeconds: session.plannedDurationSeconds,
-        topicBreakdown: null,
-        earnedBadges: [],
-        reviewPrompt: null,
-      };
-    }
+    if (session.status !== 'in_progress') return this.storedCompletion(session);
+    return this.finishSession(userId, session, reason, opts);
+  }
+
+  /** Bitmiş oturumun saklanan sonucu (idempotent ikinci çağrı ve yarışı kaybeden çağrı). */
+  private storedCompletion(session: QuizSession) {
+    return {
+      sessionId: session.id,
+      mode: session.mode,
+      totalQuestions: session.totalQuestions,
+      correctCount: session.correctCount,
+      wrongCount: session.wrongCount,
+      blankCount: session.blankCount,
+      score: session.score != null ? Number(session.score) : 0,
+      durationSeconds: session.durationSeconds ?? 0,
+      plannedDurationSeconds: session.plannedDurationSeconds,
+      topicBreakdown: null,
+      earnedBadges: [],
+      reviewPrompt: null,
+    };
+  }
+
+  private async finishSession(
+    userId: string,
+    session: QuizSession & { answers: QuizAnswer[] },
+    reason: 'submitted' | 'timeout',
+    opts: { platform?: ReviewPlatform | null },
+  ) {
+    const sessionId = session.id;
 
     // Yalnız oturumun soru setindeki cevaplar sayılır (savunma derinliği —
     // submitAnswer üyelik denetimiyle birlikte skor/XP/liderlik şişirmesini
@@ -1667,8 +1681,12 @@ export class QuizService {
         ? session.deadlineAt
         : new Date();
 
-    await this.prisma.quizSession.update({
-      where: { id: sessionId },
+    // ATOMİK geçiş (13 Kas 2026 provası): durum kontrolü ile yazma arasında ikinci bir teslim
+    // (kullanıcı "Bitir" + süre dolumu cron'u, çift dokunuş, çevrimdışı kuyruk) ikisi de
+    // in_progress görüp olayı/ilerlemeyi İKİ KEZ yazıyordu. Yalnız in_progress → completed
+    // geçişini kazanan çağrı devam eder; kaybeden saklanan sonucu döner.
+    const won = await this.prisma.quizSession.updateMany({
+      where: { id: sessionId, status: 'in_progress' },
       data: {
         status: 'completed',
         completedAt,
@@ -1680,6 +1698,10 @@ export class QuizService {
         ...(session.mode === 'deneme' ? { closedReason: reason } : {}),
       },
     });
+    if (won.count === 0) {
+      const done = await this.prisma.quizSession.findUniqueOrThrow({ where: { id: sessionId } });
+      return this.storedCompletion(done);
+    }
 
     // Olay omurgası (Doc 52 §4.5): üretici motoru tanımaz, yalnız olay yazar.
     // Denemede kişisel rekor (F3 `personal_record`): önceki en iyi net bu teslimden önceki tamamlanmış denemelerden.

@@ -56,6 +56,8 @@ async function main() {
   const { ExamFinalizeJobService } = await import('../src/modules/quiz/exam-finalize-job.service');
   const { UserSyncService } = await import('../src/modules/auth/user-sync.service');
   const { CoachService } = await import('../src/modules/coach/coach.service');
+  const { AdminExamAdjustmentsService } =
+    await import('../src/modules/admin/exams/admin-exam-adjustments.service');
 
   const app = await NestFactory.createApplicationContext(AppModule, { logger: ['error', 'warn'] });
   const prisma = app.get(PrismaService);
@@ -64,8 +66,9 @@ async function main() {
   const finalizer = app.get(ExamFinalizeJobService);
   const sync = app.get(UserSyncService);
   const coach = app.get(CoachService);
+  const ayar = app.get(AdminExamAdjustmentsService);
 
-  const olusan = { examId: '', testExamId: '', userIds: [] as string[] };
+  const olusan = { examId: '', testExamId: '', ekExamIds: [] as string[], userIds: [] as string[] };
   try {
     // ── Kurulum: soru seti ──────────────────────────────────────────────
     // Yalnız tek doğru şıkkı ve en az bir yanlış şıkkı olan yayındaki sorular.
@@ -424,6 +427,223 @@ async function main() {
       `kart ${kart?.rank ?? '—'} · sıralama ${lb.me?.rank ?? '—'}`,
     );
 
+    // ── Soru iptali (herkese doğru): B'nin yanlış yaptığı bir soru ───────
+    const iptalSoru = sb.questions[SORU / 2]; // B bu soruda YANLIŞ
+    const oncekiB = Number((await oturum(sb.sessionId)).score);
+    const admin = { id: A.id, email: '', roles: ['admin'], isPremium: true };
+    await ayar.apply(admin, exam.id, {
+      questionId: iptalSoru.questionId,
+      action: 'credit_all',
+      reason: 'prova: iptal sınaması',
+      notify: false,
+    } as never);
+    const sonrakiB = Number((await oturum(sb.sessionId)).score);
+    kontrol(
+      'İptal (herkese doğru): yanlışı olan adayın neti +1,25',
+      sonrakiB === oncekiB + 1.25,
+      `${oncekiB} → ${sonrakiB}`,
+    );
+    const sA = Number((await oturum(sa.sessionId)).score);
+    kontrol('İptal: tam puanlının neti değişmez (zaten doğru)', sA === SORU, String(sA));
+    const donmusB = await prisma.examRanking.findUniqueOrThrow({
+      where: { examId_userId: { examId: exam.id, userId: B.id } },
+    });
+    kontrol(
+      'İptal: donmuş sıralama tablosu da güncellenir',
+      Number(donmusB.score) === sonrakiB,
+      `tablo ${donmusB.score}`,
+    );
+    const etkin = await prisma.examQuestionAdjustment.findFirstOrThrow({
+      where: { examId: exam.id, revertedAt: null },
+    });
+    await ayar.revert(admin, exam.id, etkin.id);
+    const geriB = Number((await oturum(sb.sessionId)).score);
+    kontrol('İptal geri alınınca net eski hâline döner', geriB === oncekiB, `${geriB}`);
+
+    // ── Pencere kapandıktan sonra pratik çözüm sıralamayı etkilemez ─────
+    const oncekiSira = JSON.stringify(
+      await prisma.examRanking.findMany({
+        where: { examId: exam.id },
+        orderBy: { rank: 'asc' },
+        select: { userId: true, rank: true, score: true },
+      }),
+    );
+    const sp = (await exams.start(B, exam.id, 'practice')) as {
+      sessionId: string;
+      questions: { questionId: string; versionId: string }[];
+    };
+    kontrol('Kapanmış takvimlide pratik çözüm yeni oturum açar', sp.sessionId !== sb.sessionId);
+    for (const q of sp.questions)
+      await cevapla(B, sp.sessionId, q.questionId, q.versionId, dogruSik.get(q.questionId)!.dogru);
+    await quiz.completeSession(B.id, sp.sessionId, 'submitted');
+    const sonrakiSira = JSON.stringify(
+      await prisma.examRanking.findMany({
+        where: { examId: exam.id },
+        orderBy: { rank: 'asc' },
+        select: { userId: true, rank: true, score: true },
+      }),
+    );
+    kontrol('Pratik çözüm donmuş sıralamayı değiştirmez', oncekiSira === sonrakiSira);
+    const lbB = (await exams.leaderboard(exam.id, {
+      id: B.id,
+      email: '',
+      roles: ['user'],
+      isPremium: true,
+    })) as { me: { score: number } | null };
+    kontrol(
+      'Sıralamada B’nin resmî neti görünür (pratiğin 40’ı değil)',
+      Number(lbB.me?.score) === oncekiB,
+      `${lbB.me?.score}`,
+    );
+
+    // ── Teslim sonrası ve set dışı cevap reddi ─────────────────────────
+    kontrol(
+      'Teslim edilmiş oturuma cevap reddedilir',
+      await (async () => {
+        try {
+          await cevapla(
+            A,
+            sa.sessionId,
+            sa.questions[0].questionId,
+            sa.questions[0].versionId,
+            dogruSik.get(sa.questions[0].questionId)!.yanlis,
+          );
+          return false;
+        } catch {
+          return true;
+        }
+      })(),
+    );
+
+    // ── SERBEST deneme: süre KİŞİNİN başlangıcından (28 Eki 2026 hatası) ──
+    const serbest = await prisma.exam.create({
+      data: {
+        title: `${ETIKET} · serbest`,
+        startAt: new Date(Date.now() - 3 * 3600_000), // 3 saat önce yayımlandı
+        durationMinutes: 20,
+        publishMode: 'serbest',
+        status: 'published',
+        remindEnabled: false,
+        questions: {
+          create: sorular
+            .slice(0, 10)
+            .map((q, i) => ({
+              questionId: q.id,
+              questionVersionId: q.currentVersionId!,
+              sortOrder: i + 1,
+            })),
+        },
+      },
+    });
+    olusan.ekExamIds.push(serbest.id);
+    await exams.buildQuestionPack(serbest.id);
+    const H = await aday('h', true);
+    const sh = (await exams.start(H, serbest.id)) as {
+      sessionId: string;
+      questions: { questionId: string; versionId: string }[];
+    };
+    const hOt = await prisma.quizSession.findUniqueOrThrow({
+      where: { id: sh.sessionId },
+      select: { deadlineAt: true, startedAt: true },
+    });
+    const hDk = Math.round((hOt.deadlineAt!.getTime() - hOt.startedAt.getTime()) / 60_000);
+    kontrol(
+      'Serbest: bitiş = kişinin başlangıcı + süre (yayın anı değil)',
+      hDk === 20,
+      `${hDk} dk`,
+    );
+    for (const q of sh.questions.slice(0, 3))
+      await cevapla(H, sh.sessionId, q.questionId, q.versionId, dogruSik.get(q.questionId)!.dogru);
+    await exams.finalizeExpiredAttempts();
+    await exams.closeWindows();
+    await finalizer.drain(100);
+    kontrol(
+      'Serbest: yayın+süre geçmiş olsa da aday oturumu cron’da AÇIK kalır',
+      (await oturum(sh.sessionId)).status === 'in_progress',
+    );
+    // Toplu (çevrimdışı kuyruk) cevap
+    const toplu = await quiz.submitAnswersBatch(
+      H,
+      sh.sessionId,
+      sh.questions
+        .slice(3, 6)
+        .map((q) => ({
+          questionId: q.questionId,
+          questionVersionId: q.versionId,
+          selectedOptionId: dogruSik.get(q.questionId)!.yanlis,
+          timeSpentMs: 15_000,
+        })) as never,
+    );
+    kontrol(
+      'Toplu (çevrimdışı) cevaplar kabul edilir',
+      toplu.accepted === 3,
+      `${toplu.accepted}/3`,
+    );
+    // Aynı anda iki teslim (kullanıcı + cron yarışı)
+    const [t1, t2] = (await Promise.all([
+      quiz.completeSession(H.id, sh.sessionId, 'submitted'),
+      quiz.completeSession(H.id, sh.sessionId, 'timeout'),
+    ])) as { score: number }[];
+    kontrol(
+      'Eşzamanlı iki teslim aynı neti verir',
+      Number(t1.score) === Number(t2.score) && Number(t1.score) === net(3, 3),
+      `${t1.score} · ${t2.score} / beklenen ${net(3, 3)}`,
+    );
+    const isler = await prisma.examFinalizeJob
+      .count({ where: { sessionId: sh.sessionId } })
+      .catch(() => 0);
+    kontrol('Eşzamanlı teslim tek finalize işi üretir', isler <= 1, `${isler} iş`);
+    await new Promise((r) => setTimeout(r, 300)); // olay yazımı void — kısa bekleme
+    const olay = await prisma.appEvent.count({ where: { eventType: 'exam_submitted', entityId: sh.sessionId } });
+    kontrol('Eşzamanlı teslim tek “teslim edildi” olayı yazar (çift bildirim yok)', olay === 1, `${olay} olay`);
+
+    // ── TAKVİMLİ geç katılım: bitiş pencere kapanışını aşmaz ────────────
+    const gec = await prisma.exam.create({
+      data: {
+        title: `${ETIKET} · geç`,
+        startAt: new Date(Date.now() - 95 * 60_000),
+        durationMinutes: 100,
+        publishMode: 'takvimli',
+        endAt: new Date(Date.now() + 5 * 60_000),
+        status: 'published',
+        remindEnabled: false,
+        questions: {
+          create: sorular
+            .slice(0, 10)
+            .map((q, i) => ({
+              questionId: q.id,
+              questionVersionId: q.currentVersionId!,
+              sortOrder: i + 1,
+            })),
+        },
+      },
+    });
+    olusan.ekExamIds.push(gec.id);
+    await exams.buildQuestionPack(gec.id);
+    const L = await aday('l', true);
+    const sl = (await exams.start(L, gec.id)) as { sessionId: string };
+    const lOt = await prisma.quizSession.findUniqueOrThrow({
+      where: { id: sl.sessionId },
+      select: { deadlineAt: true },
+    });
+    kontrol(
+      'Takvimli geç katılım: bitiş pencere kapanışında',
+      Math.abs(lOt.deadlineAt!.getTime() - gec.endAt!.getTime()) < 1000,
+      lOt.deadlineAt!.toISOString().slice(11, 19),
+    );
+    const lListe = (await exams.list(L)) as {
+      id: string;
+      my: { official: { resultLocked: boolean; score: number | null } | null };
+    }[];
+    await quiz.completeSession(L.id, sl.sessionId, 'submitted');
+    const lKart = ((await exams.list(L)) as typeof lListe).find((x) => x.id === gec.id)?.my
+      .official;
+    kontrol(
+      'Takvimli: pencere açıkken sonuç kilitli (net gizli)',
+      lKart?.resultLocked === true && lKart.score == null,
+      `kilitli=${lKart?.resultLocked} net=${lKart?.score}`,
+    );
+
     // ── Prova denemesi (testOnly): yalnız test hesaplarına görünür ──────
     const T = await aday('t', true);
     const betaRol = await prisma.role.findUniqueOrThrow({ where: { key: 'beta' } });
@@ -440,13 +660,11 @@ async function main() {
         testOnly: true,
         remindEnabled: false,
         questions: {
-          create: sorular
-            .slice(0, 10)
-            .map((q, i) => ({
-              questionId: q.id,
-              questionVersionId: q.currentVersionId!,
-              sortOrder: i + 1,
-            })),
+          create: sorular.slice(0, 10).map((q, i) => ({
+            questionId: q.id,
+            questionVersionId: q.currentVersionId!,
+            sortOrder: i + 1,
+          })),
         },
       },
     });
@@ -504,10 +722,14 @@ async function main() {
     const bugun = JSON.stringify(await coach.brief(normal as never));
     kontrol('Gizli deneme normal kullanıcının Bugün ekranında YOK', !bugun.includes(test.id));
   } finally {
-    for (const ex of KEEP ? [] : [olusan.testExamId].filter(Boolean)) {
+    for (const ex of KEEP ? [] : [olusan.testExamId, ...olusan.ekExamIds].filter(Boolean)) {
       const sids = (
         await prisma.quizSession.findMany({ where: { examId: ex }, select: { id: true } })
       ).map((s) => s.id);
+      await prisma.examFinalizeJob
+        .deleteMany({ where: { sessionId: { in: sids } } })
+        .catch(() => {});
+      await prisma.examRanking.deleteMany({ where: { examId: ex } });
       await prisma.quizAnswer.deleteMany({ where: { sessionId: { in: sids } } });
       await prisma.quizSession.deleteMany({ where: { id: { in: sids } } });
       await prisma.exam.delete({ where: { id: ex } });
@@ -525,6 +747,7 @@ async function main() {
         .catch(() => {});
       await prisma.quizAnswer.deleteMany({ where: { sessionId: { in: sids } } });
       await prisma.quizSession.deleteMany({ where: { id: { in: sids } } });
+      await prisma.examQuestionAdjustment.deleteMany({ where: { examId: olusan.examId } });
       await prisma.exam.delete({ where: { id: olusan.examId } });
       await prisma
         .$executeRawUnsafe(`DELETE FROM users WHERE id = ANY($1::uuid[])`, olusan.userIds)
