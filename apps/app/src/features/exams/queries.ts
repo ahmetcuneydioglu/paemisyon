@@ -316,6 +316,15 @@ export function fmtDate(iso: string, opts: Intl.DateTimeFormatOptions = { day: "
 }
 
 /** Net biçimi: 61,75 → "61,75"; 72 → "72"; null → "—". Web `fmtNet` ile aynı. */
+/**
+ * Geçmiş satırının sonucu (13 Kas 2026): kişisel denemede sunucu puanı DOĞRULUK YÜZDESİ olarak tutar
+ * (quiz.service: doğru / soru × 100); "28 net" (25 soruda) yanlıştı. Resmî/haftalık/serbest → net.
+ */
+export function historyScore(it: Pick<ExamHistoryItem, "role" | "score">): string {
+  if (it.score == null) return "—";
+  return it.role === "personal" ? `%${Math.round(it.score)}` : `${fmtNet(it.score)} net`;
+}
+
 export function fmtNet(n: number | null | undefined): string {
   if (n == null || Number.isNaN(n)) return "—";
   return n.toFixed(2).replace(/\.?0+$/, "").replace(".", ",");

@@ -3,7 +3,7 @@ import { Archive, CalendarClock, ClipboardList, Sparkles } from "lucide-react-na
 import { Pressable, View } from "react-native";
 import { WeeklyPanel } from "@/components/domain";
 import { ActionTile, AppText, BigNumber, Button, Card, ListRow, Notice, ProgressBar, Screen, Skeleton } from "@/components/ui";
-import { countdown, fmtDate, fmtNet, heroFor, mmss, pastExamShortName, useDashboard, useExamHistory, useExams, usePastExams, type ExamListItem } from "@/features/exams/queries";
+import { countdown, fmtDate, historyScore, heroFor, mmss, pastExamShortName, useDashboard, useExamHistory, useExams, usePastExams, type ExamListItem } from "@/features/exams/queries";
 import { useNow } from "@/lib/use-now";
 import { useTheme } from "@/theme/ThemeProvider";
 
@@ -84,7 +84,7 @@ export default function DenemelerScreen() {
         ) : last ? (
           <ListRow
             title="Son sonucun"
-            subtitle={`${last.title} · ${last.resultLocked ? "sonuç bekliyor" : `${fmtNet(last.score)} net`}${last.rank != null ? ` · ${last.rank}.` : ""}`}
+            subtitle={`${last.title} · ${last.resultLocked ? "sonuç bekliyor" : historyScore(last)}${last.rank != null ? ` · ${last.rank}.` : ""}`}
             trailing={<Pressable accessibilityRole="button" accessibilityLabel="Deneme geçmişi" onPress={() => router.push("/(tabs)/ben/denemelerim")} hitSlop={8}><AppText variant="subhead" tone="accentInk">Geçmiş</AppText></Pressable>}
             chevron={false}
             divider={false}

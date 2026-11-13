@@ -89,7 +89,7 @@ export default function DenemeSonucScreen() {
           </>
         ) : d ? (
           <>
-            <ResultHero value={d.score == null ? "—" : fmtNet(d.score)} unit={d.isArchive && !practice ? "%" : "net"} sub={sub} subTone={official && rankText ? "ink" : "soft"} />
+            <ResultHero value={d.score == null ? "—" : d.personal ? String(Math.round(d.score)) : fmtNet(d.score)} unit={(d.isArchive && !practice) || d.personal ? "%" : "net"} sub={sub} subTone={official && rankText ? "ink" : "soft"} />
 
             {d.scoreUpdate ? (
               <Notice tone="success" title="Netin güncellendi">

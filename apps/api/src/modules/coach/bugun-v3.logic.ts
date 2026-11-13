@@ -151,6 +151,20 @@ function sıradaki(input: BugunV3Input): NextStep {
       action: { ...t.action, source: 'home_next' },
     };
   }
+  // 2b) Hazırlanmış ama başlanmamış tur (Doc 48 "Turun hazır"): üst satır turun KENDİ kapsamı
+  // (13 Kas 2026: tur T.C. Anayasası iken üst satır en zayıf konuyu ve "%8 · en zayıf" yazıyordu).
+  if (t.kind === 'resume' && tur) {
+    const kalan = Math.max(0, tur.total - tur.answered);
+    return {
+      kind: 'resume',
+      eyebrow: `SIRADAKİ · ${tur.scopeName}`,
+      title: t.title,
+      reason: t.reason,
+      badge: null,
+      estimateMin: kalan > 0 ? dk(kalan) : null,
+      action: { ...t.action, source: 'home_next' },
+    };
+  }
   if (t.kind === 'comeback' || t.kind === 'first') {
     return {
       kind: 'questions',
@@ -420,9 +434,16 @@ function rota(input: BugunV3Input, next: NextStep): RouteItem[] {
     items.push({
       key: 'questions:next',
       kind: 'questions',
-      label: next.action.count ? `${next.action.count} soru` : 'Soru turu',
-      // Alt satır adımın başlattığı odak (ana kartla aynı kaynak; 13 Kas 2026).
-      detail: odakEtiketi(input, next.action.focus).detail,
+      label: next.action.count
+        ? `${next.action.count} soru`
+        : next.kind === 'resume' && input.activeSession
+          ? `${input.activeSession.total} soruluk tur`
+          : 'Soru turu',
+      // Alt satır adımın başlattığı odak (ana kartla aynı kaynak; 13 Kas 2026). Yarım turda turun kapsamı.
+      detail:
+        next.kind === 'resume' && input.activeSession
+          ? input.activeSession.scopeName
+          : odakEtiketi(input, next.action.focus).detail,
       estimateMin: next.action.count ? dk(next.action.count) : null,
       done: input.answeredToday >= input.goal,
       action: { ...next.action, source: 'home_route' },

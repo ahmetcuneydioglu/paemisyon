@@ -54,7 +54,8 @@ export default function HaftalikScreen() {
   return (
     <Screen inset="none">
       <AppText variant="bodySm" tone="soft">
-        Her Pazar 21:00. Herkes aynı anda, bir resmî çözüm; sıralama pencere kapanınca açıklanır.
+        {/* Gün/saat yazılmaz: takvim panelden belirlenir, sabit "Her Pazar 21:00" gerçek takvimle çelişiyordu (13 Kas 2026). */}
+        Herkes aynı pencerede, tek resmî çözüm; sıralama pencere kapanınca açıklanır.
       </AppText>
       {exams.isPending ? (
         <Skeleton height={200} radiusKey="card" />

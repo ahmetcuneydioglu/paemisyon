@@ -92,7 +92,7 @@ export function RuleCard({ icon: Icon, tone = "info", title, body }: { icon: Luc
   );
 }
 
-/** Ders dağılımı (Doc 50 M4): resmî tablo sırası; %60 altı amber + "zayıf" metni. */
+/** Ders dağılımı (Doc 50 M4): resmî tablo sırası; %60 altı mercan + "zayıf", %75 üstü yeşil. */
 export function CourseBreakdown({ rows }: { rows: CourseBreakdownRow[] }) {
   const { space } = useTheme();
   if (rows.length === 0) return null;
@@ -118,7 +118,8 @@ export function CourseBreakdown({ rows }: { rows: CourseBreakdownRow[] }) {
                 {weak ? "  zayıf" : ""}
               </AppText>
             </View>
-            <ProgressBar value={pct} tone={weak ? "warning" : "accent"} height={5} label={r.name} />
+            {/* Çubuk yazıyla aynı ton (13 Kas 2026: "zayıf" kırmızı yazılırken çubuk altın çiziliyordu). */}
+            <ProgressBar value={pct} tone={weak ? "danger" : pct >= 0.75 ? "success" : "accent"} height={5} label={r.name} />
           </View>
         );
       })}

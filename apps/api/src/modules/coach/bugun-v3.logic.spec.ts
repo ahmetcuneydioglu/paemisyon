@@ -518,3 +518,45 @@ describe('Bugün v3 — ana kart ve rota tutarlılığı (13 Kas 2026)', () => {
     expect(gunlukPay(0, pzt)).toBe(0);
   });
 });
+
+describe('Bugün v3 — hazır (başlanmamış) tur', () => {
+  it('üst satır turun kapsamını yazar, en zayıf rozeti yok; rotanın 1. adımı da aynı tur', () => {
+    const now = new Date('2026-11-13T00:10:00Z');
+    const r = computeHomeV3(
+      girdi({
+        now,
+        weakestUnit: null,
+        activeSession: {
+          sessionId: 's1',
+          mode: 'practice',
+          total: 10,
+          answered: 0,
+          startedAt: new Date('2026-11-13T00:07:00Z'),
+          lastActivityAt: new Date('2026-11-13T00:07:00Z'),
+          scopeName: 'T.C. Anayasası',
+        },
+        todayTask: gorev({
+          kind: 'resume',
+          title: 'Turun hazır',
+          reason: 'T.C. Anayasası · hazırlandı 03:07',
+          action: {
+            type: 'resume_session',
+            label: 'Devam et',
+            sessionId: 's1',
+            source: 'home_task',
+          },
+        }),
+      }),
+    );
+    expect(r.nextStep).toMatchObject({
+      kind: 'resume',
+      eyebrow: 'SIRADAKİ · T.C. Anayasası',
+      badge: null,
+    });
+    expect(r.route[0]).toMatchObject({
+      kind: 'questions',
+      label: '10 soruluk tur',
+      detail: 'T.C. Anayasası',
+    });
+  });
+});

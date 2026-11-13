@@ -3,7 +3,7 @@ import { ClipboardList } from "lucide-react-native";
 import { View } from "react-native";
 import { TrendChart } from "@/components/domain";
 import { AppText, Button, Card, EmptyState, ListRow, Notice, Screen, SectionHeader, Skeleton } from "@/components/ui";
-import { fmtDate, fmtNet, useExamHistory, type ExamHistoryItem } from "@/features/exams/queries";
+import { fmtDate, historyScore, useExamHistory, type ExamHistoryItem } from "@/features/exams/queries";
 import { useTheme } from "@/theme/ThemeProvider";
 
 /** Deneme geçmişi (Doc 50 M8): net gelişimi (Premium) + üç grup: Denemeler · Haftalık · Bana özel. */
@@ -56,7 +56,7 @@ function Group({ title, items }: { title: string; items: ExamHistoryItem[] }) {
               trailing={
                 <View style={{ alignItems: "flex-end" }}>
                   <AppText variant="subhead" tone={it.resultLocked ? "subtle" : "ink"} style={{ fontVariant: ["tabular-nums"] }}>
-                    {it.resultLocked ? "—" : fmtNet(it.score)}
+                    {it.resultLocked ? "—" : historyScore(it).replace(" net", "")}
                   </AppText>
                   <AppText variant="bodySm" tone="subtle">
                     {right}

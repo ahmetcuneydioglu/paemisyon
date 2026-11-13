@@ -3,7 +3,7 @@ import { Timer, Trophy } from "lucide-react-native";
 import { View } from "react-native";
 import { RankRow } from "@/components/domain";
 import { AppText, Card, EmptyState, Notice, Screen, Skeleton } from "@/components/ui";
-import { fmtClock, fmtDate, fmtDuration, fmtNet, useExamLeaderboard } from "@/features/exams/queries";
+import { fmtClock, fmtDate, fmtDuration, fmtNet, useExam, useExamLeaderboard } from "@/features/exams/queries";
 import { useTheme } from "@/theme/ThemeProvider";
 
 /**
@@ -15,6 +15,8 @@ export default function SiralamaScreen() {
   const { colors, radius, space } = useTheme();
   const p = useLocalSearchParams<{ examId: string; title?: string }>();
   const q = useExamLeaderboard(p.examId ?? null);
+  // Bildirim/bağlantıyla açılınca başlık parametresi yok; deneme adı sunucudan (yoksa "Deneme" yazıyordu).
+  const exam = useExam(p.title ? null : (p.examId ?? null));
   const d = q.data;
   const meInTop = d?.top.some((r) => r.isMe) ?? false;
   const subtitle = d?.frozenAt ? `${d.participantCount?.toLocaleString("tr-TR")} resmî çözüm · ${fmtDate(d.frozenAt, { day: "numeric", month: "short" })}'de donduruldu` : d?.available ? `${d.participantCount?.toLocaleString("tr-TR")} resmî çözüm · katılımla güncellenir` : d?.reason === "result_pending" ? "Haftalık deneme · sonuçlar pencere kapanınca" : "Serbest deneme · sıralama katılımla güncellenir";
@@ -33,7 +35,7 @@ export default function SiralamaScreen() {
           <>
             <View style={{ gap: 2 }}>
               <AppText variant="title" accessibilityRole="header">
-                {p.title ?? "Deneme"}
+                {p.title ?? exam.data?.title ?? "Deneme"}
               </AppText>
               <AppText variant="bodySm" tone="soft">
                 {subtitle}
