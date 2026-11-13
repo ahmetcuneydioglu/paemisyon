@@ -11,15 +11,15 @@ Kullanıcı kararları (13 Kas 2026):
 - C1 kalıcı kilometre taşları (13 soru) → **yayında kalır**.
 - C2 (IAC 2026, COP31, nüfus özellikleri, elektrikte yenilenebilir payı; 4 soru) → **arşivlendi**.
 
-`soru-arsivle.ts --yaz` ile **119 soru arşivlendi**. Bu klasörde: yedek `arsiv-yedek.json`,
+`soru-arsivle.ts --yaz` ile **119 soru arşivlendi**; ardından kullanıcı kararıyla `acd9fcd4` da eklendi, **toplam 120**. Bu klasörde: yedek `arsiv-yedek.json`,
 defter `ilerleme.jsonl`, liste `arsiv-listesi.json`, sorudan soruya karar `karar.json`.
-Taze dökümle doğrulandı: arşivlenen 119 sorunun hiçbiri yayında değil.
+Taze dökümle doğrulandı: arşivlenen 120 sorunun hiçbiri yayında değil.
 
 | | önce | sonra |
 |---|---|---|
-| Yayındaki toplam soru | 8.083 | 7.964 |
-| Genel Kültür ve Güncel Olaylar dersi | 851 | 732 |
-| — Genel Kültür konusu | 730 | 614 |
+| Yayındaki toplam soru | 8.083 | 7.963 |
+| Genel Kültür ve Güncel Olaylar dersi | 851 | 731 |
+| — Genel Kültür konusu | 730 | 613 |
 | — Güncel ve Kültürel Olaylar konusu | 121 | 118 |
 
 Güncel ve Kültürel Olaylar'da kalan 118 soru: 90'ı 2025–2026 olayı, 10'u resmî PAEM sınavı,
@@ -28,8 +28,9 @@ TUT'lar).
 
 Arşivden sonra yayındaki GK'de kökünde 2010–2024 yılı geçen sorular tek tek okundu. Biri
 dışında hepsi C1/TUT kararıyla kalanlar, kalıcı biyografiler, 2025+ olaylar ya da çıkmış
-PAEM soruları. **Açık kalan tek soru: `acd9fcd4`** (Ara Güler, “17 Ekim 2018'de vefat eden”).
-Arşivlenen `49e2c792`'nin ikizi, ama onaylı listede olmadığı için dokunulmadı.
+PAEM soruları. İstisna `acd9fcd4` (Ara Güler, “17 Ekim 2018'de vefat eden”; arşivlenen
+`49e2c792`'nin ikizi) kullanıcı kararıyla (13 Kas 2026) ayrıca arşivlendi. Yayında 2025 öncesine
+dayanan güncel olay sorusu kalmadı.
 
 Yayında kalan dört şıklı GK soruları (197) `dort-sikli-kalanlar.md` dosyasında; düzeltme ayrı karar.
 

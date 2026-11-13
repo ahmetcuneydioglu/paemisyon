@@ -5069,5 +5069,49 @@
     }
    }
   }
+ },
+ {
+  "sinif": "eskime",
+  "gerekce": "[A] Ekim 2018 vefat haberine dayanan güncel olay sorusu (Ara Güler); arşivlenen 49e2c792 ile ikiz. Kullanıcı kararı 13 Kas 2026.",
+  "arsivlenen": {
+   "id": "955e005a-4771-4f51-9a62-f4c27ecd3bae",
+   "questionId": "acd9fcd4-4094-4d09-8cec-2a22c70ec80c",
+   "stem": "Amerikan Dergi Fotoğrafçıları Derneğine kabul edilen tek Türk fotoğrafçı olma özelliğini de taşıyan ve 17 Ekim 2018’de vefat eden fotoğraf sanatçısı aşağıdakilerden hangisidir?",
+   "explanation": "Ara Güler 16 Ağustos 1928’de dünyaya gelmiştir.\n1953’de Henri Cartier Bresson ile tanışarak Paris Magnum Ajansı’na katıldı ve İngiltere’de yayımlanan “Photography Annual Antalojisi” onu dünyanın en iyi 7 fotoğrafçısından biri olarak tanımladı. Aynı yıl ASMP’ye (Amerikan Dergi Fotoğrafçıları Derneği) tek Türk üye olarak kabul edildi. 1962 dernAlmanya’da çok az fotoğrafçıya verilen “Master of Leica” unvanını kazandı",
+   "sourceLabel": null,
+   "options": [
+    {
+     "label": "A",
+     "text": "Abdullah Altun",
+     "isCorrect": false
+    },
+    {
+     "label": "B",
+     "text": "Ara Güler",
+     "isCorrect": true
+    },
+    {
+     "label": "C",
+     "text": "Mehmet Üstün Ara",
+     "isCorrect": false
+    },
+    {
+     "label": "D",
+     "text": "Faik Galip",
+     "isCorrect": false
+    },
+    {
+     "label": "E",
+     "text": "Sami Güner",
+     "isCorrect": false
+    }
+   ],
+   "question": {
+    "articleNo": null,
+    "topic": {
+     "name": "Genel Kültür"
+    }
+   }
+  }
  }
 ]
