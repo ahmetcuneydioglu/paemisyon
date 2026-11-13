@@ -6,6 +6,7 @@ import { useModules } from "@/features/catalog/queries";
 import { useSetFlashcardDailyGoal } from "@/features/flashcards/queries";
 import { useDeleteMe, useMeFull, useUpdateMe, type MeFull } from "@/features/me/queries";
 import { NotificationPreferences } from "@/features/notifications/preferences";
+import { appVersion } from "@/lib/app-meta";
 import { useAuth } from "@/lib/auth/AuthProvider";
 import { supabase } from "@/lib/supabase";
 import { useTheme, type ThemePreference } from "@/theme/ThemeProvider";
@@ -60,6 +61,12 @@ function AyarlarForm({ d }: { d: MeFull }) {
   const [pwError, setPwError] = useState<string | null>(null);
   const [delOpen, setDelOpen] = useState(false);
   const [delText, setDelText] = useState("");
+
+  // Google/Apple ile açılmış hesapta şifre yoktur; "Şifre değiştir" yalnız e-posta sağlayıcısında
+  // görünür, sosyal hesapta giriş yöntemi yazılır (13 Kas 2026).
+  const saglayicilar: string[] = (auth.session?.user.app_metadata?.providers as string[] | undefined) ?? [auth.session?.user.app_metadata?.provider as string].filter(Boolean);
+  const sifreli = saglayicilar.length === 0 || saglayicilar.includes("email");
+  const sosyal = saglayicilar.filter((p) => p === "google" || p === "apple").map((p) => (p === "google" ? "Google" : "Apple"));
 
   const iso = trToIso(date);
   const dateInvalid = date.trim() !== "" && !iso;
@@ -118,9 +125,7 @@ function AyarlarForm({ d }: { d: MeFull }) {
               <SectionHeader title="Hedef" />
               <Card>
                 <TextField label="Görünen ad" value={name} onChangeText={setName} autoCapitalize="words" error={name.trim().length > 0 && name.trim().length < 2 ? "En az 2 karakter" : null} />
-                <AppText variant="label" tone="subtle">
-                  Hedef sınav
-                </AppText>
+                <AppText variant="subhead">Hedef sınav</AppText>
                 <View style={{ flexDirection: "row", flexWrap: "wrap", gap: space.s2 }}>
                   {(modules.data ?? []).map((m) => (
                     <Chip key={m.id} label={m.name} selected={moduleId === m.id} onPress={() => setModuleId(m.id)} />
@@ -131,9 +136,7 @@ function AyarlarForm({ d }: { d: MeFull }) {
                 <AppText variant="bodySm" tone="subtle">
                   Resmî tarih açıklanınca koç onu kullanır; buradaki kişisel hedefindir.
                 </AppText>
-                <AppText variant="label" tone="subtle">
-                  Günlük hedef · {goal} soru
-                </AppText>
+                <AppText variant="subhead">Günlük hedef · {goal} soru</AppText>
                 <View style={{ flexDirection: "row", flexWrap: "wrap", gap: space.s2 }}>
                   {GOALS.map((g) => (
                     <Chip key={g} label={String(g)} selected={goal === g} onPress={() => setGoal(g)} />
@@ -141,9 +144,7 @@ function AyarlarForm({ d }: { d: MeFull }) {
                 </View>
                 {d.flashcardDailyGoal != null ? (
                   <>
-                    <AppText variant="label" tone="subtle">
-                      Günlük kart hedefi · {kartHedefi} kart
-                    </AppText>
+                    <AppText variant="subhead">Günlük kart hedefi · {kartHedefi} kart</AppText>
                     <View style={{ flexDirection: "row", flexWrap: "wrap", gap: space.s2 }}>
                       {KART_HEDEFLERI.map((g) => (
                         <Chip key={g} label={String(g)} selected={kartHedefi === g} onPress={() => setKartHedefi(g)} />
@@ -172,7 +173,7 @@ function AyarlarForm({ d }: { d: MeFull }) {
                   ))}
                 </View>
                 <AppText variant="bodySm" tone="subtle">
-                  Nöbet koyu temada tasarlandı; açık tema türevidir.
+                  {preference === "system" ? "Telefonunun açık/koyu ayarını izler." : preference === "dark" ? "Gece çalışmasında gözü yormaz; telefon ayarından bağımsız." : "Telefon ayarından bağımsız, hep açık."}
                 </AppText>
               </Card>
             </View>
@@ -182,13 +183,20 @@ function AyarlarForm({ d }: { d: MeFull }) {
             <View style={{ gap: space.s2 }}>
               <SectionHeader title="Hesap" />
               <Card style={{ paddingVertical: 0 }}>
-                <ListRow title="Şifre değiştir" subtitle={d.emailVerified ? "E-posta doğrulandı" : "E-posta doğrulanmadı"} onPress={() => setPwOpen(true)} />
+                {sifreli ? (
+                  <ListRow title="Şifre değiştir" subtitle={d.emailVerified ? "E-posta doğrulandı" : "E-posta doğrulanmadı"} onPress={() => setPwOpen(true)} />
+                ) : (
+                  <ListRow title="Giriş yöntemi" subtitle={`${sosyal.join(" ve ") || "Sosyal hesap"} · ${d.email}`} />
+                )}
                 <ListRow title="Gizlilik" onPress={() => void Linking.openURL("https://www.paemisyon.com/gizlilik")} />
                 <ListRow title="Kullanım koşulları" onPress={() => void Linking.openURL("https://www.paemisyon.com/kosullar")} />
                 <ListRow title="Sık sorulan sorular" divider={false} onPress={() => void Linking.openURL("https://www.paemisyon.com/sss")} />
               </Card>
               <Button title="Çıkış yap" variant="secondary" onPress={() => void auth.signOut()} />
-              <Button title="Hesabımı sil" variant="ghost" onPress={() => setDelOpen(true)} />
+              <Button title="Hesabımı sil" variant="destructiveGhost" onPress={() => setDelOpen(true)} />
+              <AppText variant="bodySm" tone="subtle" style={{ textAlign: "center" }}>
+                {`Paemisyon ${appVersion()}`}
+              </AppText>
             </View>
           </>
         }
@@ -207,7 +215,7 @@ function AyarlarForm({ d }: { d: MeFull }) {
           İlerlemen, yanlışların, notların ve üyelik kaydın anonimleştirilir; giriş bilgilerin silinir. Mağaza aboneliğini ayrıca iptal etmen gerekir.
         </Notice>
         <TextField label="Onaylamak için SİL yaz" value={delText} onChangeText={setDelText} autoCapitalize="characters" />
-        <Button title="Vazgeç" variant="secondary" onPress={() => { setDelOpen(false); router.back(); }} />
+        <Button title="Vazgeç" variant="secondary" onPress={() => { setDelOpen(false); setDelText(""); }} />
       </Sheet>
     </>
   );

@@ -2,7 +2,7 @@ import { Award, Flame, Target, Trophy } from "lucide-react-native";
 import type { ComponentType } from "react";
 import { View } from "react-native";
 import { AppText, Card, Notice, ProgressBar, Screen, Skeleton } from "@/components/ui";
-import { useBadges } from "@/features/me/queries";
+import { badgeRatio, useBadges } from "@/features/me/queries";
 import { useTheme } from "@/theme/ThemeProvider";
 
 type IconProps = { color: string; size?: number; strokeWidth?: number };
@@ -41,7 +41,7 @@ export default function RozetlerScreen() {
             {d.items.map((b) => {
               const Icon = iconFor(b.key);
               return (
-                <Card key={b.key} style={{ width: "47%", flexGrow: 1, opacity: b.earned ? 1 : 0.6, gap: space.s2 }} tone={b.earned ? "surface" : "alt"}>
+                <Card key={b.key} style={{ width: "47%", flexGrow: 1, gap: space.s2 }} tone={b.earned ? "surface" : "alt"}>
                   <View style={{ width: 44, height: 44, borderRadius: radius.control, backgroundColor: b.earned ? colors.successSoft : colors.surface, alignItems: "center", justifyContent: "center" }}>
                     <Icon color={b.earned ? colors.successInk : colors.inkSubtle} size={22} strokeWidth={1.75} />
                   </View>
@@ -49,9 +49,18 @@ export default function RozetlerScreen() {
                   <AppText variant="bodySm" tone="soft">
                     {b.description}
                   </AppText>
-                  <AppText variant="bodySm" tone={b.earned ? "success" : "subtle"}>
-                    {b.earned && b.earnedAt ? new Date(b.earnedAt).toLocaleDateString("tr-TR", { day: "numeric", month: "long", year: "numeric" }) : b.earned ? "Kazanıldı" : "Kilitli"}
-                  </AppText>
+                  {!b.earned && badgeRatio(b) != null && b.threshold ? (
+                    <View style={{ gap: 6 }}>
+                      <ProgressBar value={badgeRatio(b) ?? 0} tone="success" height={4} />
+                      <AppText variant="bodySm" tone="soft" style={{ fontVariant: ["tabular-nums"] }}>
+                        {`${(b.progress ?? 0).toLocaleString("tr-TR")}/${b.threshold.toLocaleString("tr-TR")}`}
+                      </AppText>
+                    </View>
+                  ) : (
+                    <AppText variant="bodySm" tone={b.earned ? "success" : "subtle"}>
+                      {b.earned && b.earnedAt ? new Date(b.earnedAt).toLocaleDateString("tr-TR", { day: "numeric", month: "long", year: "numeric" }) : b.earned ? "Kazanıldı" : "Kilitli"}
+                    </AppText>
+                  )}
                 </Card>
               );
             })}

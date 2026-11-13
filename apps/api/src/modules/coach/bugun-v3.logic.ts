@@ -227,7 +227,7 @@ function sıradaki(input: BugunV3Input): NextStep {
         kind: 'review',
         eyebrow: 'SIRADAKİ · YANLIŞ TEKRARI',
         title: `${kalan} yanlışını temizle`,
-        reason: `Günlük hedefin tamam; kuyrukta ${n} yanlış var, bugünkü porsiyon ${porsiyon}.`,
+        reason: `Günlük hedefin tamam; kuyrukta ${n.toLocaleString('tr-TR')} yanlış var, bugünkü porsiyon ${porsiyon}.`,
         badge: null,
         estimateMin: dk(kalan),
         action: soruBaslat(
@@ -480,8 +480,8 @@ function rota(input: BugunV3Input, next: NextStep): RouteItem[] {
       detail:
         n > 0
           ? cozulen > 0 && cozulen < porsiyon
-            ? `${cozulen}/${porsiyon} · ${n} kuyrukta`
-            : `${n} kuyrukta`
+            ? `${cozulen}/${porsiyon} · ${n.toLocaleString('tr-TR')} kuyrukta`
+            : `${n.toLocaleString('tr-TR')} kuyrukta`
           : 'kuyruk temiz',
       estimateMin: n > 0 && cozulen < porsiyon ? dk(porsiyon - cozulen) : null,
       done: n === 0 || cozulen >= porsiyon,

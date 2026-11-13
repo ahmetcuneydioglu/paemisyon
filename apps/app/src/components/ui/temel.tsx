@@ -152,7 +152,8 @@ export function Card({ children, style, tone = "surface" }: { children: ReactNod
 
 /* ---------------------------------------------------------------- Düğme */
 
-export type ButtonVariant = "primary" | "secondary" | "ghost" | "destructive";
+/** `destructiveGhost`: zemin yok, kırmızı yazı — geri alınamaz ama ikincil eylem (Hesabımı sil). */
+export type ButtonVariant = "primary" | "secondary" | "ghost" | "destructive" | "destructiveGhost";
 
 export function Button({
   title,
@@ -168,7 +169,7 @@ export function Button({
   const { colors, radius, type } = useTheme();
   const cap = useContext(TextScaleCapContext);
   const bg = variant === "primary" ? colors.accent : variant === "secondary" ? colors.surface : variant === "destructive" ? colors.danger : "transparent";
-  const fg = variant === "primary" ? colors.onAccent : variant === "destructive" ? colors.onAccent : variant === "ghost" ? colors.accentInk : colors.ink;
+  const fg = variant === "primary" ? colors.onAccent : variant === "destructive" ? colors.onAccent : variant === "ghost" ? colors.accentInk : variant === "destructiveGhost" ? colors.danger : colors.ink;
   const isDisabled = Boolean(disabled) || loading;
   return (
     <Pressable

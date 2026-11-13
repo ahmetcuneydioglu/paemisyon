@@ -4,6 +4,7 @@ import { View } from "react-native";
 import { AppText, Badge, Card, ListRow, Notice, ProgressBar, Screen, SectionHeader, Skeleton, StatTile } from "@/components/ui";
 import { useMyAttempts } from "@/features/exams/queries";
 import { useFlashcardStats } from "@/features/flashcards/queries";
+import { fmtInt } from "@/features/progress/leaderboard-text";
 import { useActivity, useProgressSummary, useTopicProgress } from "@/features/progress/queries";
 import { useTheme } from "@/theme/ThemeProvider";
 
@@ -44,7 +45,7 @@ export default function PerformansScreen() {
           <View style={{ flexDirection: "row", gap: space.s3 }}>
             <StatTile label="Seri" value={s.currentStreak} unit="gün" hint={s.longestStreak > s.currentStreak ? `En uzun ${s.longestStreak}` : "Rekor seri"} tone="success" emphasis={s.currentStreak > 0} />
             <StatTile label="Doğruluk" value={s.totalSolved < 10 ? null : `%${Math.round(s.accuracy)}`} hint={s.totalSolved < 10 ? "10 sorudan sonra" : undefined} progress={s.totalSolved < 10 ? undefined : s.accuracy / 100} />
-            <StatTile label="Çözülen" value={s.totalSolved} unit="soru" hint={`${s.totalSessions} tur`} />
+            <StatTile label="Çözülen" value={s.totalSolved} unit="soru" hint={`${fmtInt(s.totalSessions)} tur`} />
           </View>
         </>
       ) : null}
@@ -67,9 +68,10 @@ export default function PerformansScreen() {
               {Array.from({ length: Math.ceil(days.length / 7) }, (_, w) => (
                 <View key={w} style={{ flex: 1, gap: 4 }}>
                   {days.slice(w * 7, w * 7 + 7).map((d) => {
-                    const r = d.questionsAnswered / maxDay;
-                    const bg = d.questionsAnswered === 0 ? colors.surfaceAlt : r < 0.34 ? colors.accentSoft : r < 0.67 ? colors.accentInk : colors.accent;
-                    return <View key={d.date} accessibilityLabel={`${d.date}: ${d.questionsAnswered} soru`} style={{ height: 12, borderRadius: 3, backgroundColor: bg }} />;
+                    // Logaritmik yoğunluk, en düşük ton bile boş günden ayrılır: tek bir rekor gün
+                    // (411 soru) doğrusal ölçekte bütün aktif günleri boş günle aynı tona itiyordu.
+                    const r = d.questionsAnswered > 0 ? Math.log1p(d.questionsAnswered) / Math.log1p(maxDay) : 0;
+                    return <View key={d.date} accessibilityLabel={`${d.date}: ${fmtInt(d.questionsAnswered)} soru`} style={{ height: 12, borderRadius: 3, backgroundColor: d.questionsAnswered === 0 ? colors.surfaceAlt : colors.accent, opacity: d.questionsAnswered === 0 ? 1 : 0.35 + 0.65 * r }} />;
                   })}
                 </View>
               ))}
@@ -77,7 +79,7 @@ export default function PerformansScreen() {
             <View style={{ flexDirection: "row", alignItems: "center", gap: 6 }}>
               <Flame color={colors.success} size={14} strokeWidth={1.75} />
               <AppText variant="bodySm" tone="soft">
-                En yoğun gün {maxDay} soru · {activeDays} aktif gün
+                En yoğun gün {fmtInt(maxDay)} soru · {activeDays} aktif gün
               </AppText>
             </View>
           </Card>
@@ -89,7 +91,7 @@ export default function PerformansScreen() {
         <View style={{ gap: space.s2 }}>
           <SectionHeader title="Bilgi kartları" action={kart.counts.due > 0 ? `Tekrar · ${kart.counts.due}` : undefined} onAction={() => router.push({ pathname: "/kartlar", params: { mode: "due", source: "study_hub", title: "Kart tekrarı" } })} />
           <View style={{ flexDirection: "row", gap: space.s3 }}>
-            <StatTile label="Öğrenildi" value={`${kart.counts.learned}/${kart.counts.total}`} progress={kart.counts.total > 0 ? kart.counts.learned / kart.counts.total : undefined} tone="success" />
+            <StatTile label="Öğrenildi" value={`${fmtInt(kart.counts.learned)}/${fmtInt(kart.counts.total)}`} progress={kart.counts.total > 0 ? kart.counts.learned / kart.counts.total : undefined} tone="success" />
             <StatTile label="Tekrar" value={kart.counts.due} unit="kart" hint={kart.counts.due > 0 ? "vadesi geldi" : "kuyruk temiz"} tone={kart.counts.due > 0 ? "warning" : "accent"} />
             <StatTile label="Bugün" value={`${kart.dailyGoal.done}/${kart.dailyGoal.target}`} hint={kart.last30.knownPct != null ? `30 günde %${kart.last30.knownPct}` : "henüz ölçülmedi"} progress={kart.dailyGoal.target > 0 ? Math.min(1, kart.dailyGoal.done / kart.dailyGoal.target) : undefined} />
           </View>
@@ -98,7 +100,7 @@ export default function PerformansScreen() {
               <ListRow
                 key={k.courseId}
                 title={k.courseName}
-                subtitle={k.total > 0 ? `${k.learned}/${k.total} öğrenildi${k.due > 0 ? ` · ${k.due} tekrar` : ""}` : `${k.locked} kart · Premium ile açılır`}
+                subtitle={k.total > 0 ? `${fmtInt(k.learned)}/${fmtInt(k.total)} öğrenildi${k.due > 0 ? ` · ${fmtInt(k.due)} tekrar` : ""}` : `${fmtInt(k.locked)} kart · Premium ile açılır`}
                 divider={i < kart.courses.length - 1}
                 chevron={k.total > 0}
                 onPress={k.total > 0 ? () => router.push({ pathname: "/kartlar", params: { mode: k.due > 0 ? "due" : "all", courseId: k.courseId, source: "study_hub", title: k.courseName } }) : undefined}

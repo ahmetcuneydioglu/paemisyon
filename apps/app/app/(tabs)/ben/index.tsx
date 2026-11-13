@@ -3,7 +3,8 @@ import { Award, ChevronRight, ClipboardList, Map, Settings, TrendingUp, Trophy }
 import { Pressable, View } from "react-native";
 import { AppText, Badge, Button, Card, ListRow, Notice, ProgressBar, Screen, Skeleton, StatTile } from "@/components/ui";
 import { useDashboard } from "@/features/exams/queries";
-import { useBadges, useMeFull } from "@/features/me/queries";
+import { badgeRatio, nextBadgeOf, useBadges, useMeFull } from "@/features/me/queries";
+import { ucretsizPlanOzeti } from "@/features/me/plan-metni";
 import { useAuth } from "@/lib/auth/AuthProvider";
 import { useTheme } from "@/theme/ThemeProvider";
 
@@ -19,7 +20,8 @@ export default function BenScreen() {
   const dash = useDashboard();
   const badges = useBadges();
   const d = me.data;
-  const nextBadge = badges.data?.items.find((b) => !b.earned) ?? null;
+  const nextBadge = badges.data ? nextBadgeOf(badges.data.items) : null;
+  const nextRatio = nextBadge ? badgeRatio(nextBadge) : null;
   const initial = (d?.displayName ?? d?.email ?? "?").trim().slice(0, 1).toLocaleUpperCase("tr");
 
   return (
@@ -72,7 +74,7 @@ export default function BenScreen() {
                 </AppText>
                 <ChevronRight color={colors.inkSubtle} size={18} strokeWidth={1.75} />
               </View>
-              <AppText variant="subhead">{d.isPremium ? (d.validUntil ? `${new Date(d.validUntil).toLocaleDateString("tr-TR", { day: "numeric", month: "long", year: "numeric" })} tarihine kadar` : "Süresiz erişim") : "Günde 30 soru · 1 kişisel deneme · son 7 günün yanlışları"}</AppText>
+              <AppText variant="subhead">{d.isPremium ? (d.validUntil ? `${new Date(d.validUntil).toLocaleDateString("tr-TR", { day: "numeric", month: "long", year: "numeric" })} tarihine kadar` : "Süresiz erişim") : ucretsizPlanOzeti(dash.data)}</AppText>
             </Card>
           </Pressable>
 
@@ -99,7 +101,17 @@ export default function BenScreen() {
                     </AppText>
                   </View>
                 </View>
-                {badges.data ? <ProgressBar value={badges.data.totalCount ? badges.data.earnedCount / badges.data.totalCount : 0} tone="success" height={4} /> : null}
+                {/* Rozetin KENDİ ilerlemesi (19/30 gün); kazanılan rozet oranı Rozetlerim satırında. */}
+                {nextRatio != null && nextBadge?.threshold ? (
+                  <View style={{ flexDirection: "row", alignItems: "center", gap: space.s3 }}>
+                    <View style={{ flex: 1 }}>
+                      <ProgressBar value={nextRatio} tone="success" height={4} />
+                    </View>
+                    <AppText variant="bodySm" tone="soft" style={{ fontVariant: ["tabular-nums"] }}>
+                      {`${(nextBadge.progress ?? 0).toLocaleString("tr-TR")}/${nextBadge.threshold.toLocaleString("tr-TR")}`}
+                    </AppText>
+                  </View>
+                ) : null}
               </Card>
             </Pressable>
           ) : null}
@@ -109,8 +121,8 @@ export default function BenScreen() {
             <ListRow title="Performans" subtitle="Seri, doğruluk, 12 hafta, zayıf konular" leading={<TrendingUp color={colors.accent} size={20} strokeWidth={1.75} />} onPress={() => router.push("/(tabs)/ben/performans")} />
             <ListRow title="Konu haritası" subtitle="Ders filtresi ve yalnız zayıflar" leading={<Map color={colors.accent} size={20} strokeWidth={1.75} />} onPress={() => router.push("/(tabs)/ben/konu-haritasi")} />
             <ListRow title="Denemelerim" subtitle="Geçmiş sonuçlar" leading={<ClipboardList color={colors.accent} size={20} strokeWidth={1.75} />} onPress={() => router.push("/(tabs)/ben/denemelerim")} />
-            <ListRow title="Liderlik" leading={<Trophy color={colors.accent} size={20} strokeWidth={1.75} />} onPress={() => router.push("/(tabs)/ben/liderlik")} />
-            <ListRow title="Ayarlar" subtitle="Ad, hedef sınav, tarih, günlük hedef, görünüm" leading={<Settings color={colors.accent} size={20} strokeWidth={1.75} />} divider={false} onPress={() => router.push("/(tabs)/ben/ayarlar")} />
+            <ListRow title="Liderlik" subtitle="Bugün, bu hafta, bu ay, genel" leading={<Trophy color={colors.accent} size={20} strokeWidth={1.75} />} onPress={() => router.push("/(tabs)/ben/liderlik")} />
+            <ListRow title="Ayarlar" subtitle="Hedef, görünüm, bildirimler, hesap" leading={<Settings color={colors.accent} size={20} strokeWidth={1.75} />} divider={false} onPress={() => router.push("/(tabs)/ben/ayarlar")} />
           </Card>
 
           {__DEV__ ? <Button title="Bileşen galerisi (geliştirici)" variant="secondary" onPress={() => router.push("/galeri")} /> : null}

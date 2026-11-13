@@ -34,9 +34,11 @@ export function StatTile({
       <AppText variant="label" tone="subtle" numberOfLines={1} adjustsFontSizeToFit minimumFontScale={0.85}>
         {label}
       </AppText>
-      <View style={{ flexDirection: "row", alignItems: "baseline", gap: 6 }}>
-        <AppText variant="stat" tone={valueTone}>
-          {value ?? "—"}
+      {/* Sayı Türkçe binlik ayırıcıyla ("2.234"). Sığmazsa önce birim alt satıra iner (rakam boyu
+          yan kutularla aynı kalır); rakam tek başına da sığmıyorsa tek satırda küçülür. */}
+      <View style={{ flexDirection: "row", flexWrap: "wrap", alignItems: "baseline", columnGap: 6 }}>
+        <AppText variant="stat" tone={valueTone} numberOfLines={1} adjustsFontSizeToFit minimumFontScale={0.6} style={{ maxWidth: "100%" }}>
+          {typeof value === "number" ? value.toLocaleString("tr-TR") : (value ?? "—")}
         </AppText>
         {unit ? (
           <AppText variant="bodySm" tone="soft">

@@ -145,7 +145,7 @@ function PreferencesForm({ s }: { s: NotificationSettings }) {
         </AppText>
         <Card>
           <AppText variant="bodySm" tone="soft">
-            Hedef dolmadıysa bu saatte tek bir dürtme; Günün sorusu her zaman sabah 09.00.
+            Hedef dolmadıysa bu saatte tek bir hatırlatma gelir. Günün sorusu her zaman sabah 09.00’da.
           </AppText>
           <View style={{ flexDirection: "row", flexWrap: "wrap", gap: space.s2 }}>
             {REMINDER_PRESETS.map((t) => (

@@ -1,20 +1,23 @@
 import { useRouter } from "expo-router";
 import { Check } from "lucide-react-native";
 import { Linking, Platform, View } from "react-native";
-import { AppText, Badge, Button, Card, Notice, Screen, Skeleton } from "@/components/ui";
+import { AppText, Button, Card, Notice, Screen, Skeleton } from "@/components/ui";
+import { PREMIUM_DEGERLERI } from "@/features/billing/premium-degerleri";
+import { useDashboard } from "@/features/exams/queries";
+import { ucretsizPlanOzeti } from "@/features/me/plan-metni";
 import { useMeFull } from "@/features/me/queries";
 import { useTheme } from "@/theme/ThemeProvider";
 
-const VALUE = ["Sınırsız soru ve tur", "Süresiz tekrar hafızası (ücretsizde son 7 gün)", "Sınırsız AI açıklaması", "Tüm premium konular ve çıkmış sınavlar", "Kişisel denemede 120 soruya kadar"];
-
 /**
- * Üyelik (Doc 25 Bölge 5: Premium). F4'te yalnız durum ve değer anlatımı; satın alma, geri
- * yükleme ve mağaza bağlantısı F5 (expo-iap) ile gelir. Fiyat burada yazılmaz (tek kaynak mağaza).
+ * Üyelik (Doc 25 Bölge 5: Premium): durum, değer anlatımı; satın alma ve geri yükleme paywall'da
+ * (expo-iap), abonelik yönetimi mağazada. Fiyat burada yazılmaz (tek kaynak mağaza); ücretsiz
+ * plan sayıları sunucudan (`ucretsizPlanOzeti`).
  */
 export default function UyelikScreen() {
   const router = useRouter();
   const { colors, space } = useTheme();
   const me = useMeFull();
+  const dash = useDashboard();
   const d = me.data;
 
   return (
@@ -26,17 +29,19 @@ export default function UyelikScreen() {
       ) : d ? (
         <>
           <Card tone={d.isPremium ? "accent" : "surface"}>
-            <Badge tone={d.isPremium ? "accent" : "neutral"}>{d.isPremium ? "Premium" : "Ücretsiz plan"}</Badge>
+            <AppText variant="label" tone={d.isPremium ? "accentInk" : "subtle"}>
+              {d.isPremium ? "Premium" : "Ücretsiz plan"}
+            </AppText>
             <AppText variant="title">{d.isPremium ? "Koçun tam kapasitede" : "Koçun kısıtlı modda"}</AppText>
             <AppText variant="bodySm" tone="soft">
-              {d.isPremium ? (d.validUntil ? `${new Date(d.validUntil).toLocaleDateString("tr-TR", { day: "numeric", month: "long", year: "numeric" })} tarihine kadar` : "Süresiz erişim") : "Günde 30 soru, 1 kişisel deneme, son 7 günün yanlışları."}
+              {d.isPremium ? (d.validUntil ? `${new Date(d.validUntil).toLocaleDateString("tr-TR", { day: "numeric", month: "long", year: "numeric" })} tarihine kadar` : "Süresiz erişim") : `${ucretsizPlanOzeti(dash.data, ", ")}.`}
             </AppText>
           </Card>
           <Card>
             <AppText variant="label" tone="subtle">
               Premium’da neler var
             </AppText>
-            {VALUE.map((v) => (
+            {PREMIUM_DEGERLERI.map(({ baslik: v }) => (
               <View key={v} style={{ flexDirection: "row", alignItems: "flex-start", gap: space.s2 }}>
                 <Check color={colors.success} size={18} strokeWidth={2} />
                 <AppText variant="body" style={{ flex: 1 }}>

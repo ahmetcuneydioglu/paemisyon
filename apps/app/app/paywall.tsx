@@ -6,17 +6,11 @@ import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { AppText, Badge, Button, Card, IconButton, Notice, Screen, Skeleton } from "@/components/ui";
 import { PERIOD_LABEL, usePlans, type BillingPlan } from "@/features/billing/queries";
 import { loadStoreProducts, onStoreEvent, restoreStorePurchases, startPurchase, storeSupported, type StoreProduct } from "@/features/billing/store";
+import { PREMIUM_DEGERLERI } from "@/features/billing/premium-degerleri";
 import { useMeFull } from "@/features/me/queries";
 import { useAuth } from "@/lib/auth/AuthProvider";
 import { useTheme } from "@/theme/ThemeProvider";
 
-const VALUE: [string, string][] = [
-  ["Sınırsız soru", "Koç seni hiçbir gün durdurmaz."],
-  ["Süresiz tekrar hafızası", "Yanlışların asla unutulmaz; tam akıllı tekrar motoru."],
-  ["Sınırsız AI açıklaması", "“Neden bu şık değil?” İstediğin kadar sor."],
-  ["Haftada 3 seri sigortası", "Vardiya dostu: nöbet gecesi serini yakmaz."],
-  ["Tüm premium konular ve çıkmış sınavlar", "Müfredatın tamamı, kilitsiz."],
-];
 
 /**
  * Paywall (Doc 25 Bölge 5: Premium). Fiyat mağazadan; plan ve ürün kimliği sunucudan.
@@ -54,7 +48,7 @@ export default function PaywallScreen() {
       onStoreEvent((e) => {
         setBusy(null);
         if (e.type === "verified" && e.outcome.outcome === "applied") {
-          Alert.alert("Premium etkin 🎉", "Koçun tam kapasitede.", [{ text: "Tamam", onPress: () => router.back() }]);
+          Alert.alert("Premium etkin 🎉", "Koçun tam kapasitede.", [{ text: "Tamam", onPress: kapat }]);
         } else if (e.type === "verified") Alert.alert("Bu hesapta aktif bir premium bulunamadı.");
         else if (e.type === "pending") Alert.alert("Ödemen onay bekliyor", "Tamamlanınca premium kendiliğinden açılır.");
         else if (e.type === "error") Alert.alert("Satın alma tamamlanamadı", e.message);
@@ -77,7 +71,7 @@ export default function PaywallScreen() {
     setBusy("restore");
     try {
       const r = await restoreStorePurchases();
-      if (r.applied) Alert.alert("Premium geri yüklendi 🎉", "", [{ text: "Tamam", onPress: () => router.back() }]);
+      if (r.applied) Alert.alert("Premium geri yüklendi 🎉", "", [{ text: "Tamam", onPress: kapat }]);
       else if (r.error) Alert.alert("Geri yükleme", r.error);
       else Alert.alert(r.count === 0 ? "Bu hesapta geri yüklenecek satın alma bulunamadı." : "Bu hesapta aktif bir premium bulunamadı.");
     } catch (e) {
@@ -95,11 +89,16 @@ export default function PaywallScreen() {
     return (amount / 12).toLocaleString("tr-TR", { style: "currency", currency: prod?.currency ?? p.currency });
   };
   const isPremium = me.data?.isPremium ?? false;
+  // Derin bağlantıyla (bildirim, paylaşılan bağlantı) açılınca geri gidilecek ekran yoktur; kapat
+  // ve satın alma sonrası "Tamam" o hâlde Bugün'e döner (13 Kas 2026: X hiçbir şey yapmıyordu).
+  const kapat = () => (router.canGoBack() ? router.back() : router.replace("/(tabs)"));
 
   return (
     <View style={{ flex: 1, backgroundColor: colors.bg }}>
-      <View style={{ flexDirection: "row", alignItems: "center", justifyContent: "space-between", paddingTop: insets.top + space.s2, paddingHorizontal: space.s3 }}>
-        <IconButton icon={X} label="Kapat" variant="ghost" onPress={() => router.back()} />
+      {/* iOS'ta paywall sayfa (modal) olarak açılır, çentiğin altında başlar: üst güvenli alan payı
+          eklenirse başlıkta ~60 pt boşluk kalıyordu (13 Kas 2026). Android'de modal tam ekrandır. */}
+      <View style={{ flexDirection: "row", alignItems: "center", justifyContent: "space-between", paddingTop: (Platform.OS === "ios" ? 0 : insets.top) + space.s2, paddingHorizontal: space.s3 }}>
+        <IconButton icon={X} label="Kapat" variant="ghost" onPress={kapat} />
         {storePlans.length > 0 ? (
           <Pressable accessibilityRole="button" onPress={() => void restore()} disabled={busy != null} hitSlop={8}>
             <AppText variant="subhead" tone="accentInk">
@@ -118,7 +117,7 @@ export default function PaywallScreen() {
         </View>
 
         <Card style={{ gap: space.s3 }}>
-          {VALUE.map(([t, s]) => (
+          {PREMIUM_DEGERLERI.map(({ baslik: t, aciklama: s }) => (
             <View key={t} style={{ flexDirection: "row", gap: space.s3, alignItems: "flex-start" }}>
               <View style={{ width: 28, height: 28, borderRadius: 14, backgroundColor: colors.successSoft, alignItems: "center", justifyContent: "center" }}>
                 <Check color={colors.successInk} size={16} strokeWidth={2.5} />

@@ -119,26 +119,54 @@ describe('BadgeService.listForUser', () => {
     const prisma = {
       badge: {
         findMany: jest.fn().mockResolvedValue([
-          { key: 'first_session', name: 'İlk Adım', description: 'd' },
-          { key: 'solved_100', name: '100 Soru', description: 'd' },
+          {
+            key: 'first_session',
+            name: 'İlk Adım',
+            description: 'd',
+            kind: 'solved',
+            threshold: 1,
+          },
+          { key: 'solved_100', name: '100 Soru', description: 'd', kind: 'solved', threshold: 100 },
+          {
+            key: 'streak_30',
+            name: '30 Gün Seri',
+            description: 'd',
+            kind: 'streak',
+            threshold: 30,
+          },
         ]),
       },
       userBadge: {
         findMany: jest.fn().mockResolvedValue([{ badgeKey: 'first_session', earnedAt }]),
       },
+      userStats: {
+        findUnique: jest.fn().mockResolvedValue({ totalSolved: 140, totalCorrect: 70 }),
+      },
+      streak: { findUnique: jest.fn().mockResolvedValue({ longestStreak: 19 }) },
+      quizSession: { count: jest.fn().mockResolvedValue(0) },
     };
 
     const result = await new BadgeService(prisma as never).listForUser('u1');
 
     expect(result.earnedCount).toBe(1);
-    expect(result.totalCount).toBe(2);
+    expect(result.totalCount).toBe(3);
     expect(result.items).toEqual([
       expect.objectContaining({
         key: 'first_session',
         earned: true,
         earnedAt: earnedAt.toISOString(),
+        progress: 1,
+        threshold: 1,
       }),
-      expect.objectContaining({ key: 'solved_100', earned: false, earnedAt: null }),
+      // Kilitli rozette ilerleme kuralın kendi ölçüsüdür ve eşikte kesilir.
+      expect.objectContaining({
+        key: 'solved_100',
+        earned: false,
+        earnedAt: null,
+        progress: 100,
+        threshold: 100,
+      }),
+      expect.objectContaining({ key: 'streak_30', earned: false, progress: 19, threshold: 30 }),
     ]);
   });
 });
