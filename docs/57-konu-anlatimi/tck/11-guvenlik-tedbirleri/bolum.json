@@ -1,0 +1,16 @@
+{
+  "slug": "tck-guvenlik-tedbirleri",
+  "title": "Güvenlik Tedbirleri",
+  "subtitle": "Belli hakları kullanmaktan yoksun bırakılma, eşya ve kazanç müsaderesi, sınır dışı edilme, tüzel kişiler, tekerrür ve özel tehlikeli suçlular",
+  "courseName": "Ceza Hukuku",
+  "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+  "sortOrder": 11,
+  "isPremium": true,
+  "aiDraft": true,
+  "book": { "label": "THEMIS Ceza Hukuku Genel Hükümler, 21. baskı, 2025", "page": "s.171–181" },
+  "lessons": [
+    { "file": "01-guvenlik-tedbirleri-ve-belli-haklardan-yoksunluk.md", "slug": "tck-guvenlik-tedbirleri-ve-belli-haklardan-yoksunluk", "page": "s.171–174" },
+    { "file": "02-musadere-sinir-disi-ve-tuzel-kisiler.md", "slug": "tck-musadere-sinir-disi-ve-tuzel-kisiler", "page": "s.174–177, s.181" },
+    { "file": "03-tekerrur-ve-ozel-tehlikeli-suclular.md", "slug": "tck-tekerrur-ve-ozel-tehlikeli-suclular", "page": "s.177–181" }
+  ]
+}
