@@ -7,6 +7,7 @@ import {
   ARTICLE_SUMMARY_PUBLIC_SELECT,
   toPublicArticleSummaryBrief,
 } from '../summaries/madde-ozeti-public';
+import { onekSorgusu } from './mevzuat-arama.logic';
 
 /**
  * Mevzuat Merkezi public uçları (Doc 29 §12). Kanun kimliği artık kalıcı
@@ -443,6 +444,43 @@ export class MevzuatService {
         title: r.title,
         headline: r.headline,
       }));
+    }
+
+    // 3b) Türkçe ek toleransı (13 Kas 2026): birincil arama az sonuç verdiyse kelime gövdeleriyle
+    //     (ts_rank_cd: kelimelerin YAKINLIĞI; ts_rank'te PVSK 4/A 74 sonuç içinde 53. sıradaydı, cd ile 1.)
+    //     önek araması ("kimlik sorma" → PVSK 4/A "kimliğini sorabilir"). Birincil sonuçlar önde kalır.
+    if (!skipFts && ftsArticles.length < 3) {
+      const onek = onekSorgusu(q);
+      if (onek) {
+        const ek = await this.prisma.$queryRaw<
+          {
+            article_no: string;
+            title: string | null;
+            slug: string;
+            short_name: string | null;
+            text: string;
+          }[]
+        >(Prisma.sql`
+          SELECT la.article_no, la.title, l.slug, l.short_name, la.text
+          FROM law_articles la
+          JOIN legislation l ON l.id = la.legislation_id AND l.status = 'published' AND l.deleted_at IS NULL
+          WHERE la.status = 'published' AND la.deleted_at IS NULL
+            AND la.search @@ to_tsquery('simple', ${onek})
+          ORDER BY ts_rank_cd(la.search, to_tsquery('simple', ${onek})) DESC
+          LIMIT 20`);
+        const var_ = new Set(ftsArticles.map((a) => `${a.lawSlug}#${a.no}`));
+        for (const r of ek) {
+          if (var_.has(`${r.slug}#${r.article_no}`) || ftsArticles.length >= 20) continue;
+          ftsArticles.push({
+            lawSlug: r.slug,
+            lawShort: r.short_name,
+            no: r.article_no,
+            slug: articleSlug(r.article_no),
+            title: r.title,
+            headline: r.text.replace(/\s+/g, ' ').slice(0, 180),
+          });
+        }
+      }
     }
 
     // 4) Typo toleransı (Doc 29 P1): hiçbir katman sonuç vermediyse trigram
