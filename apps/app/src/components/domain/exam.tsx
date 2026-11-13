@@ -108,16 +108,19 @@ export function CourseBreakdown({ rows }: { rows: CourseBreakdownRow[] }) {
       </View>
       {rows.map((r) => {
         const pct = r.total > 0 ? r.correct / r.total : 0;
-        const weak = r.total > 0 && pct < 0.6;
+        // Hiç cevaplanmamış ders "zayıf" değil, boştur (13 Kas 2026 provası: 97 boşlu teslimde
+        // bütün dersler mercan "0/10 zayıf" görünüyordu).
+        const empty = r.total > 0 && r.blank >= r.total;
+        const weak = !empty && r.total > 0 && pct < 0.6;
         return (
           <View key={r.sectionId ?? r.name} style={{ gap: 5 }}>
             <View style={{ flexDirection: "row", justifyContent: "space-between", gap: space.s3 }}>
               <AppText variant="bodySm" style={{ flex: 1 }}>
                 {r.name}
               </AppText>
-              <AppText variant="subhead" tone={weak ? "danger" : "ink"} style={{ fontVariant: ["tabular-nums"] }}>
+              <AppText variant="subhead" tone={weak ? "danger" : empty ? "subtle" : "ink"} style={{ fontVariant: ["tabular-nums"] }}>
                 {r.correct}/{r.total}
-                {weak ? "  zayıf" : ""}
+                {weak ? "  zayıf" : empty ? "  boş" : ""}
               </AppText>
             </View>
             {/* Çubuk yazıyla aynı ton (13 Kas 2026: "zayıf" kırmızı yazılırken çubuk altın çiziliyordu). */}
@@ -453,7 +456,7 @@ export function WeakTopicCard({ name, wrong, blank, total, onPress }: { name: st
           {name}
         </AppText>
         <AppText variant="bodySm" tone="soft" style={{ fontVariant: ["tabular-nums"] }}>
-          Y {wrong} · B {blank} · {total} soru
+          {[wrong > 0 ? `${wrong} yanlış` : null, blank > 0 ? `${blank} boş` : null, `${total} soru`].filter(Boolean).join(" · ")}
         </AppText>
       </View>
       <AppText variant="subhead" tone="accentInk">

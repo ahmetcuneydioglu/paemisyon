@@ -134,7 +134,7 @@ export const quizApi = {
   start: (body: StartSessionBody) => api<QuizSession>("/quiz/sessions", { method: "POST", body }),
   resume: (sessionId: string) => api<QuizSession>(`/quiz/sessions/${sessionId}/resume`),
   review: (sessionId: string) => api<SessionReview>(`/quiz/sessions/${sessionId}/review`),
-  answer: (sessionId: string, body: { questionId: string; questionVersionId: string; selectedOptionId?: string; timeSpentMs?: number }) =>
+  answer: (sessionId: string, body: { questionId: string; questionVersionId: string; selectedOptionId?: string; timeSpentMs?: number; /** "Emin değilim" bayrağı; verilmezse sunucudaki değer korunur. */ flagged?: boolean }) =>
     api<AnswerFeedback | { recorded: true }>(`/quiz/sessions/${sessionId}/answers`, { method: "POST", body }),
   complete: (sessionId: string) => api<SessionResult>(`/quiz/sessions/${sessionId}/complete`, { method: "POST" }),
 };

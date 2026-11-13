@@ -1350,10 +1350,21 @@ export class QuizService {
     const denemeReveal =
       session.mode === 'deneme' &&
       (session.exam?.liveAnswerReveal === true || session.attemptRole === 'practice');
-    const givesFeedback = session.mode !== 'exam' && (session.mode !== 'deneme' || denemeReveal);
+    // Denemede BOŞ gönderim (yalnız bayrak) geri bildirim almaz: aksi hâlde cevap vermeden doğru
+    // şık ağ yanıtından okunabilirdi (13 Kas 2026 provası).
+    const givesFeedback =
+      session.mode !== 'exam' &&
+      (session.mode !== 'deneme' || (denemeReveal && dto.selectedOptionId != null));
     // Anlık geri bildirimde İLK CEVAP KİLİTLENİR: aynı soruya ikinci gönderim
     // hata vermez, kayıtlı cevabın geri bildirimi döner (çevrimdışı kuyruk güvenli).
     if (denemeReveal && existing && existing.selectedOptionId != null) {
+      // Cevap kilitli ama "emin değilim" bayrağı değil (13 Kas 2026 provası: anlık geri
+      // bildirimli denemede cevaplanmış soruya bayrak hiç yazılmıyordu).
+      if (dto.flagged != null && dto.flagged !== existing.flagged)
+        await this.prisma.quizAnswer.update({
+          where: { sessionId_questionId: { sessionId, questionId: dto.questionId } },
+          data: { flagged: dto.flagged },
+        });
       const correctLocked = version.options.find((o) => o.isCorrect);
       return {
         accepted: false,

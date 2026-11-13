@@ -443,12 +443,20 @@ export default function SeansScreen() {
 
   function toggleFlag() {
     if (!question) return;
+    const next = !flags.has(question.questionId);
     setFlags((f) => {
       const n = new Set(f);
-      if (n.has(question.questionId)) n.delete(question.questionId);
-      else n.add(question.questionId);
+      if (next) n.add(question.questionId);
+      else n.delete(question.questionId);
       return n;
     });
+    // Bayrak sunucuda kalıcı (Doc 49 S1-C); web oynatıcısı gibi mevcut cevapla birlikte yazılır
+    // (cevapsız gönderim cevabı silerdi). 13 Kas 2026 provası: Expo bayrağı yalnız yerelde
+    // tutuyordu; devam/incelemede "İşaretli 0" görünüyordu. En iyi çaba: yazılamazsa oturum içi durur.
+    if (isExam && session)
+      void quizApi
+        .answer(session.sessionId, { questionId: question.questionId, questionVersionId: question.versionId, selectedOptionId: answers[question.questionId], flagged: next })
+        .catch(() => {});
   }
 
   useEffect(() => {

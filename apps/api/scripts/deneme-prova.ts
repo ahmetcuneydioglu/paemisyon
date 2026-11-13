@@ -525,13 +525,11 @@ async function main() {
         status: 'published',
         remindEnabled: false,
         questions: {
-          create: sorular
-            .slice(0, 10)
-            .map((q, i) => ({
-              questionId: q.id,
-              questionVersionId: q.currentVersionId!,
-              sortOrder: i + 1,
-            })),
+          create: sorular.slice(0, 10).map((q, i) => ({
+            questionId: q.id,
+            questionVersionId: q.currentVersionId!,
+            sortOrder: i + 1,
+          })),
         },
       },
     });
@@ -565,14 +563,12 @@ async function main() {
     const toplu = await quiz.submitAnswersBatch(
       H,
       sh.sessionId,
-      sh.questions
-        .slice(3, 6)
-        .map((q) => ({
-          questionId: q.questionId,
-          questionVersionId: q.versionId,
-          selectedOptionId: dogruSik.get(q.questionId)!.yanlis,
-          timeSpentMs: 15_000,
-        })) as never,
+      sh.questions.slice(3, 6).map((q) => ({
+        questionId: q.questionId,
+        questionVersionId: q.versionId,
+        selectedOptionId: dogruSik.get(q.questionId)!.yanlis,
+        timeSpentMs: 15_000,
+      })) as never,
     );
     kontrol(
       'Toplu (çevrimdışı) cevaplar kabul edilir',
@@ -594,8 +590,54 @@ async function main() {
       .catch(() => 0);
     kontrol('Eşzamanlı teslim tek finalize işi üretir', isler <= 1, `${isler} iş`);
     await new Promise((r) => setTimeout(r, 300)); // olay yazımı void — kısa bekleme
-    const olay = await prisma.appEvent.count({ where: { eventType: 'exam_submitted', entityId: sh.sessionId } });
-    kontrol('Eşzamanlı teslim tek “teslim edildi” olayı yazar (çift bildirim yok)', olay === 1, `${olay} olay`);
+    const olay = await prisma.appEvent.count({
+      where: { eventType: 'exam_submitted', entityId: sh.sessionId },
+    });
+    kontrol(
+      'Eşzamanlı teslim tek “teslim edildi” olayı yazar (çift bildirim yok)',
+      olay === 1,
+      `${olay} olay`,
+    );
+
+    // ── Anlık geri bildirimli deneme: bayrak kalıcı, boş gönderim sızdırmaz ──
+    await prisma.exam.update({ where: { id: serbest.id }, data: { liveAnswerReveal: true } });
+    const M = await aday('m', true);
+    const sm = (await exams.start(M, serbest.id)) as {
+      sessionId: string;
+      questions: { questionId: string; versionId: string }[];
+    };
+    const [q1, q2] = sm.questions;
+    await cevapla(
+      M,
+      sm.sessionId,
+      q1.questionId,
+      q1.versionId,
+      dogruSik.get(q1.questionId)!.yanlis,
+    );
+    await quiz.submitAnswer(M, sm.sessionId, {
+      questionId: q1.questionId,
+      questionVersionId: q1.versionId,
+      selectedOptionId: dogruSik.get(q1.questionId)!.yanlis,
+      flagged: true,
+    } as never);
+    const b1 = await prisma.quizAnswer.findUniqueOrThrow({
+      where: { sessionId_questionId: { sessionId: sm.sessionId, questionId: q1.questionId } },
+    });
+    kontrol(
+      'Anlık geri bildirimde cevaplı soruya bayrak yazılır',
+      b1.flagged === true && b1.selectedOptionId === dogruSik.get(q1.questionId)!.yanlis,
+    );
+    const bos = (await quiz.submitAnswer(M, sm.sessionId, {
+      questionId: q2.questionId,
+      questionVersionId: q2.versionId,
+      flagged: true,
+    } as never)) as { correctOptionId?: string | null };
+    kontrol(
+      'Boş (yalnız bayrak) gönderim doğru şıkkı sızdırmaz',
+      bos.correctOptionId == null,
+      JSON.stringify(Object.keys(bos)),
+    );
+    await quiz.completeSession(M.id, sm.sessionId, 'submitted');
 
     // ── TAKVİMLİ geç katılım: bitiş pencere kapanışını aşmaz ────────────
     const gec = await prisma.exam.create({
@@ -608,13 +650,11 @@ async function main() {
         status: 'published',
         remindEnabled: false,
         questions: {
-          create: sorular
-            .slice(0, 10)
-            .map((q, i) => ({
-              questionId: q.id,
-              questionVersionId: q.currentVersionId!,
-              sortOrder: i + 1,
-            })),
+          create: sorular.slice(0, 10).map((q, i) => ({
+            questionId: q.id,
+            questionVersionId: q.currentVersionId!,
+            sortOrder: i + 1,
+          })),
         },
       },
     });

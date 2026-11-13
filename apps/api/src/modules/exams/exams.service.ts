@@ -824,8 +824,10 @@ export class ExamsService {
       b[statusOf(q.questionId)]++;
       byTopic.set(t.id, b);
     }
+    // Önce yanlış (yanılgı), sonra boş (eksik): 13 Kas 2026 provasında 97 boşlu teslimde
+    // listede yalnız boş konular çıkıyor, yanlış yapılan konular görünmüyordu.
     const topicBreakdown = [...byTopic.values()].sort(
-      (a, b) => b.wrong + b.blank - (a.wrong + a.blank) || b.total - a.total,
+      (a, b) => b.wrong - a.wrong || b.blank - a.blank || b.total - a.total,
     );
     const weakTopics = topicBreakdown.filter((t) => t.wrong + t.blank > 0).slice(0, 5);
 

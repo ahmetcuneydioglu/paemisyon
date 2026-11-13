@@ -65,7 +65,9 @@ async function main() {
         liveAnswerReveal: k.liveAnswerReveal,
         questionsOpenAfterEnd: k.questionsOpenAfterEnd,
         practiceAfterEnd: k.practiceAfterEnd,
-        remindEnabled: false,
+        // Kaynağın ayarı: başlangıç hatırlatması gizli denemede zaten atlanır (sendReminders testOnly
+        // süzgeci); açıkken sonuç bildirimi de test edilir.
+        remindEnabled: k.remindEnabled,
         questionPack: k.questionPack,
         questionPackBuiltAt: new Date(),
         status: 'published',
