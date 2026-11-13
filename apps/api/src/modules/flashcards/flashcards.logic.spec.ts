@@ -112,6 +112,31 @@ describe('buildQueue', () => {
     expect([...a].sort()).toEqual(['c1', 'c2', 'c3', 'c5', 'c6']);
     expect(seededShuffle([1, 2, 3, 4, 5], 'x')).not.toEqual([1, 2, 3, 4, 5]);
   });
+
+  describe('karışık kapsam (ders / tüm kartlar)', () => {
+    const cok = Array.from({ length: 40 }, (_, i) => card(`n${String(i).padStart(2, '0')}`));
+    const sirali = cok.map((k) => k.id);
+    it('new: müfredat sırası bozulur, küme aynı kalır, aynı tohum aynı sırayı verir', () => {
+      const a = buildQueue(cok, 'new', now, 40, 's1', true);
+      expect(a).not.toEqual(sirali);
+      expect([...a].sort()).toEqual(sirali);
+      expect(buildQueue(cok, 'new', now, 40, 's1', true)).toEqual(a);
+      expect(buildQueue(cok, 'new', now, 40, 's2', true)).not.toEqual(a);
+    });
+    it('limit, karıştırılmış sıradan keser: ilk N kart müfredatın ilk N kartı değildir', () => {
+      expect(buildQueue(cok, 'new', now, 10, 's1', true)).not.toEqual(sirali.slice(0, 10));
+    });
+    it('all: grup önceliği korunur (vade → yeni → kalan), kilitli kart girmez', () => {
+      const q = buildQueue(cards, 'all', now, 20, 's1', true);
+      expect([...q.slice(0, 2)].sort()).toEqual(['c2', 'c3']);
+      expect([...q.slice(2, 4)].sort()).toEqual(['c1', 'c6']);
+      expect(q[4]).toBe('c5');
+      expect(q).not.toContain('c4');
+    });
+    it('karisik verilmezse sıra değişmez (konu ve ünite kapsamı)', () => {
+      expect(buildQueue(cok, 'new', now, 40, 's1')).toEqual(sirali);
+    });
+  });
 });
 
 describe('requeueAgain', () => {

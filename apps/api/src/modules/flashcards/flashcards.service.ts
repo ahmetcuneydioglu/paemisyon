@@ -399,7 +399,9 @@ export class FlashcardsService {
       data: { completedAt: now },
     });
     const seed = `${user.id}:${now.getTime()}`;
-    const queue = buildQueue(refs, dto.mode, now, limit, seed);
+    // Geniş kapsam (ders ya da tüm kartlar) karışık gelir; konu ve ünite müfredat sırasıyla (13 Kas 2026).
+    const karisik = !s.topicId && !s.unitId;
+    const queue = buildQueue(refs, dto.mode, now, limit, seed, karisik);
     if (queue.length === 0)
       throw new NotFoundException({
         code: 'NO_CARDS',

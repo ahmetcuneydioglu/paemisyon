@@ -125,6 +125,10 @@ export function seededShuffle<T>(arr: readonly T[], seed: string): T[] {
  *  favorites favoriler, müfredat sırası
  *  all       vade → yeni → kalan (öğreniliyor/öğrenildi), kendi içinde sıralı
  *  mixed     rastgele (tohumlu)
+ *
+ * `karisik` (kullanıcı kararı 13 Kas 2026): geniş kapsamda (ders ya da tüm kartlar) kartlar konu konu,
+ * müfredat sırasıyla gelmesin diye her grup kendi içinde tohumla karıştırılır. Grup önceliği korunur
+ * (`all`: vade → yeni → kalan). Konu ve ünite kapsamı sıralı kalır; orada sıra müfredatın kendisidir.
  */
 export function buildQueue(
   cards: readonly CardRef[],
@@ -132,34 +136,66 @@ export function buildQueue(
   now: Date,
   limit: number,
   seed = '',
+  karisik = false,
 ): string[] {
   const acik = cards.filter((k) => !k.locked);
   const bySort = (a: CardRef, b: CardRef) => a.sortOrder - b.sortOrder;
   const byDue = (a: CardRef, b: CardRef) =>
     (a.review?.dueAt.getTime() ?? 0) - (b.review?.dueAt.getTime() ?? 0) || bySort(a, b);
   const st = (k: CardRef) => cardState(k.review, now);
+  /** Grup sırası: karışık kapsamda tohumlu karıştırma, değilse grubun kendi ölçütü. */
+  const sirala = (grup: CardRef[], olcut: (a: CardRef, b: CardRef) => number, ek: string) =>
+    karisik ? seededShuffle(grup.sort(bySort), `${seed}:${ek}`) : grup.sort(olcut);
   let secim: CardRef[];
   switch (mode) {
     case 'due':
-      secim = acik.filter((k) => st(k).due).sort(byDue);
+      secim = sirala(
+        acik.filter((k) => st(k).due),
+        byDue,
+        'due',
+      );
       break;
     case 'new':
-      secim = acik.filter((k) => !k.review).sort(bySort);
+      secim = sirala(
+        acik.filter((k) => !k.review),
+        bySort,
+        'new',
+      );
       break;
     case 'hard':
-      secim = acik.filter((k) => st(k).hard).sort(byDue);
+      secim = sirala(
+        acik.filter((k) => st(k).hard),
+        byDue,
+        'hard',
+      );
       break;
     case 'favorites':
-      secim = acik.filter((k) => k.bookmarked).sort(bySort);
+      secim = sirala(
+        acik.filter((k) => k.bookmarked),
+        bySort,
+        'fav',
+      );
       break;
     case 'mixed':
       secim = seededShuffle(acik, seed);
       break;
     case 'all':
     default: {
-      const vade = acik.filter((k) => st(k).due).sort(byDue);
-      const yeni = acik.filter((k) => !k.review).sort(bySort);
-      const kalan = acik.filter((k) => k.review && !st(k).due).sort(byDue);
+      const vade = sirala(
+        acik.filter((k) => st(k).due),
+        byDue,
+        'due',
+      );
+      const yeni = sirala(
+        acik.filter((k) => !k.review),
+        bySort,
+        'new',
+      );
+      const kalan = sirala(
+        acik.filter((k) => k.review && !st(k).due),
+        byDue,
+        'rest',
+      );
       secim = [...vade, ...yeni, ...kalan];
     }
   }
