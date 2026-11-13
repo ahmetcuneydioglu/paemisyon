@@ -6,6 +6,7 @@ import { ActionTile, AppText, BigNumber, Button, Card, ListRow, Notice, Progress
 import { countdown, fmtDate, historyScore, heroFor, mmss, pastExamShortName, useDashboard, useExamHistory, useExams, usePastExams, type ExamListItem } from "@/features/exams/queries";
 import { useNow } from "@/lib/use-now";
 import { useTheme } from "@/theme/ThemeProvider";
+import { ekle } from "@/lib/tr-ek";
 
 /**
  * Deneme merkezi — IA "A: ızgaralı hub" (Figma 100:1329, 3 Kas 2026). Adayın tek sorusu
@@ -68,7 +69,7 @@ export default function DenemelerScreen() {
       {/* Dört giriş kutusu (2×2) */}
       <View style={{ gap: space.s2 }}>
         <View style={{ flexDirection: "row", gap: space.s2 }}>
-          <ActionTile icon={CalendarClock} title="Haftalık" subtitle={nextWeekly ? `${fmtDate(nextWeekly.startAt, { weekday: "long", hour: "2-digit", minute: "2-digit" })} · ${countdown(Date.parse(nextWeekly.startAt) - now)}` : haftalik.length ? `${haftalik.length} geçmiş deneme` : "Yakında"} onPress={() => router.push("/(tabs)/denemeler/haftalik")} />
+          <ActionTile icon={CalendarClock} title="Haftalık" subtitle={nextWeekly ? (nextWeekly.availability === "open" ? `Canlı · ${countdown(Date.parse(nextWeekly.endAt) - now)} kaldı` : `${fmtDate(nextWeekly.startAt, { weekday: "long", hour: "2-digit", minute: "2-digit" })} · ${countdown(Date.parse(nextWeekly.startAt) - now)}`) : haftalik.length ? `${haftalik.length} geçmiş deneme` : "Yakında"} onPress={() => router.push("/(tabs)/denemeler/haftalik")} />
           <ActionTile icon={ClipboardList} title="Serbest" subtitle={serbest.length ? `${serbest.length} deneme · ${serbestDone} çözüldü` : "Henüz yok"} onPress={() => router.push("/(tabs)/denemeler/serbest")} />
         </View>
         <View style={{ flexDirection: "row", gap: space.s2 }}>
@@ -146,7 +147,7 @@ function SuggestHero({ exam, weeklyHint, onStart, onPersonal }: { exam: ExamList
       {exam ? <BigNumber value={String(exam.questionCount)} suffix={`soru · ${exam.durationMinutes} dk · ${exam.participantCount.toLocaleString("tr-TR")} kişi çözdü`} /> : null}
       <AppText variant="bodySm" tone="panelSoft">
         {exam
-          ? `${weeklyHint ? `${fmtDate(weeklyHint.startAt, { weekday: "long" })}'a kadar serbest denemeyle ölç.` : "Bu hafta haftalık deneme yok; serbest denemeyle ölç."} İlk çözüm resmîdir ve sıralamaya girer.`
+          ? `${weeklyHint ? `${ekle(fmtDate(weeklyHint.startAt, { weekday: "long" }), "e")} kadar serbest denemeyle ölç.` : "Bu hafta haftalık deneme yok; serbest denemeyle ölç."} İlk çözüm resmîdir ve sıralamaya girer.`
           : "Bu hafta haftalık deneme yok; yanlışlarından ve zayıf konularından kurulan bir deneme çöz."}
       </AppText>
       <Button title={exam ? "Başla" : "Kişisel deneme oluştur"} onPress={exam ? onStart : onPersonal} />

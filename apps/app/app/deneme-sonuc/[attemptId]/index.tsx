@@ -3,11 +3,12 @@ import { ArrowLeft, Lock, Timer } from "lucide-react-native";
 import { View } from "react-native";
 import { CourseBreakdown, ResultHero, WeakTopicCard } from "@/components/domain";
 import { AppText, Badge, Button, Card, IconButton, Notice, Screen, SectionHeader, Skeleton, StatTile } from "@/components/ui";
-import { fmtDate, fmtDuration, fmtNet, rankSentence, useAttempt } from "@/features/exams/queries";
+import { fmtDate, fmtWhen, fmtDuration, fmtNet, rankSentence, useAttempt } from "@/features/exams/queries";
 import { setPendingReviewPrompt } from "@/features/review-prompt/api";
 import { ApiError } from "@/lib/api";
 import { useTheme } from "@/theme/ThemeProvider";
 import { useEffect } from "react";
+import { ekle } from "@/lib/tr-ek";
 
 /**
  * Deneme sonucu (Doc 50 M4, Figma birebir): "DENEME SONUCU" + büyük net + alt satır; D/Y/B;
@@ -77,7 +78,7 @@ export default function DenemeSonucScreen() {
                 Teslim edildi{d.completedAt ? ` · ${fmtDate(d.completedAt, { hour: "2-digit", minute: "2-digit" })}` : ""}
               </AppText>
               <AppText variant="bodySm" tone="soft" style={{ textAlign: "center" }}>
-                Sonuçlar ve sıralama {d.resultAt ? `${fmtDate(d.resultAt, { weekday: "long", hour: "2-digit", minute: "2-digit" })}'da` : "sınav penceresi kapanınca"} açıklanır. Sana bildirim göndereceğiz.
+                Sonuçlar ve sıralama {d.resultAt ? ekle(fmtWhen(d.resultAt), "de") : "sınav penceresi kapanınca"} açıklanır. Sana bildirim göndereceğiz.
               </AppText>
             </Card>
             <View style={{ flexDirection: "row", gap: space.s2 }}>

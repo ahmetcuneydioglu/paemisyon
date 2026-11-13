@@ -384,7 +384,8 @@ function rota(input: BugunV3Input, next: NextStep): RouteItem[] {
       key: `exam:${ex.id}`,
       kind: 'exam',
       label: ex.title,
-      detail: up ? gunSaat(up.startAt, input.now) : 'şimdi',
+      // Teslim edilmişse "şimdi" yanlış çağrı olur (13 Kas 2026 provası).
+      detail: up ? gunSaat(up.startAt, input.now) : input.exams.live?.attempted ? 'teslim edildi' : 'şimdi',
       estimateMin: null,
       done: Boolean(input.exams.live?.attempted),
       action: {

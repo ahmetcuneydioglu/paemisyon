@@ -6,7 +6,7 @@ import { Alert, Animated, Linking, Platform, Pressable, View } from "react-nativ
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { ExamActionBar, ExamFeedbackBox, ExamMapSheet, ExamSubmitSheet, ExamTopBar, FeedbackPanel, ReportSheet, QuestionMedia, QuestionMetaRow, QuestionOption, QuestionStem, SessionBar, SessionTitleBlock, SessionTopRow, ShareQuestionSheet, type CoachState, type ExamMapCell, type OptionState, type SliceState, type ToolAction } from "@/components/domain";
 import { AppText, Badge, Button, IconButton, ListRow, Notice, Sheet, Skeleton } from "@/components/ui";
-import { examApi, examKeys, fmtDuration, mmss } from "@/features/exams/queries";
+import { examApi, examKeys, fmtDuration } from "@/features/exams/queries";
 import { homeKeys } from "@/features/home/queries";
 import { quizApi, sessionToolsApi, type AnswerFeedback, type QuizSession, type StartSessionBody } from "@/features/quiz/api";
 import { buildShareCardData } from "@/features/quiz/share";
@@ -15,7 +15,6 @@ import { roomKeys } from "@/features/rooms/queries";
 import { ApiError, NetworkError } from "@/lib/api";
 import { readLocal, writeLocal } from "@/lib/local-store";
 import { enqueueAnswer, flushQueue } from "@/lib/offline-queue";
-import { useNow } from "@/lib/use-now";
 import { useTheme } from "@/theme/ThemeProvider";
 
 /** Saat erişimi render dışında kalsın (React Compiler kuralı); yalnız olay işleyicileri çağırır. */
@@ -83,8 +82,6 @@ export default function SeansScreen() {
   }, [index]);
 
   const isExam = session?.mode === "exam" || session?.mode === "deneme";
-  const now = useNow(1000, Boolean(deadline) && phase === "playing");
-  const remaining = deadline ? Math.max(0, Math.round((deadline - now) / 1000)) : null;
 
   useEffect(() => {
     let active = true;
@@ -207,12 +204,21 @@ export default function SeansScreen() {
     };
   }, [session, isExam]);
 
-  // Süre doldu → tek seferlik bitirme (sunucu zaten 30 sn sonra cevap kabul etmez).
+  // Süre doldu → tek seferlik bitirme (sunucu zaten 30 sn sonra cevap kabul etmez). Saniyelik
+  // durum yerine tek zamanlayıcı: ekran saatle yeniden çizilmez (sayaç ExamTopBar'da işler).
+  // finishExam her render yenilenir (cevaplar, kayıt durumu); zamanlayıcı en güncelini çağırır.
+  const finishRef = useRef<(auto?: boolean) => Promise<void>>(async () => {});
+  const [lastFive, setLastFive] = useState(false);
   useEffect(() => {
-    if (phase !== "playing" || !isExam || remaining == null || remaining > 0) return;
-    void finishExam(true);
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [remaining, phase, isExam]);
+    if (phase !== "playing" || !isExam || deadline == null) return;
+    const left = deadline - saat.simdi();
+    const bitir = setTimeout(() => void finishRef.current(true), Math.max(0, left));
+    const uyari = setTimeout(() => setLastFive(true), Math.max(0, left - 300_000));
+    return () => {
+      clearTimeout(bitir);
+      clearTimeout(uyari);
+    };
+  }, [deadline, phase, isExam]);
 
   const total = session?.questions.length ?? 0;
   const question = session?.questions[index] ?? null;
@@ -445,6 +451,9 @@ export default function SeansScreen() {
     });
   }
 
+  useEffect(() => {
+    finishRef.current = finishExam;
+  });
   async function finishExam(auto = false) {
     if (!session || finishing.current) return;
     const blank = session.questions.filter((q) => !answers[q.questionId]).length;
@@ -514,7 +523,6 @@ export default function SeansScreen() {
     : [];
 
   const answeredCount = session ? session.questions.filter((q) => answers[q.questionId]).length : 0;
-  const lastFive = remaining != null && remaining <= 300;
   const tools: ToolAction[] = question
     ? [
         { key: "favorite", label: "Favori", active: bookmarks.has(question.questionId), onPress: toggleBookmark },
@@ -527,7 +535,7 @@ export default function SeansScreen() {
   return (
     <View style={{ flex: 1, backgroundColor: colors.bg, paddingTop: insets.top }}>
       {isExam && session && phase === "playing" ? (
-        <ExamTopBar title={scopeTitle} index={Math.min(index + 1, total)} total={total} timeLabel={remaining != null ? mmss(remaining) : "Süresiz"} warning={lastFive} onClose={confirmExit} onPressCenter={() => setGridOpen(true)} />
+        <ExamTopBar title={scopeTitle} index={Math.min(index + 1, total)} total={total} deadline={deadline} onClose={confirmExit} onPressCenter={() => setGridOpen(true)} />
       ) : (
       <SessionTopRow
         onClose={confirmExit}
@@ -679,11 +687,10 @@ export default function SeansScreen() {
 
           {isExam && session ? (
             <>
-              {/* Mevcut soru cevaplıysa da "şu an" halkası önce gelir; bayrak dolu/boş'tan önce. */}
               <ExamMapSheet
                 visible={gridOpen}
                 onClose={() => setGridOpen(false)}
-                cells={session.questions.map<ExamMapCell>((q) => (q.questionId === question?.questionId ? "current" : flags.has(q.questionId) ? "flagged" : answers[q.questionId] ? "answered" : "blank"))}
+                cells={session.questions.map<ExamMapCell>((q) => ({ answered: Boolean(answers[q.questionId]), flagged: flags.has(q.questionId), current: q.questionId === question?.questionId }))}
                 onSelect={go}
                 onSubmit={() => void finishExam()}
               />
@@ -694,7 +701,7 @@ export default function SeansScreen() {
                 answered={answeredCount}
                 blank={total - answeredCount}
                 flagged={flags.size}
-                remainingLabel={remaining != null ? fmtDuration(remaining) : null}
+                remainingLabel={deadline != null && submitOpen ? fmtDuration(Math.max(0, Math.round((deadline - saat.simdi()) / 1000))) : null}
                 busy={finishing.current}
               />
             </>

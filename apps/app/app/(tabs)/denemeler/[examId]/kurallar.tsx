@@ -6,6 +6,7 @@ import { RuleCard } from "@/components/domain";
 import { AppText, Badge, Button, Card, Notice, Screen, Skeleton } from "@/components/ui";
 import { fmtDate, fmtNet, useExam, useReminder, useSetReminder } from "@/features/exams/queries";
 import { useTheme } from "@/theme/ThemeProvider";
+import { ekle } from "@/lib/tr-ek";
 
 const DIFFICULTY = { kolay: "Kolay", orta: "Orta", zor: "Zor" } as const;
 
@@ -64,11 +65,11 @@ export default function KurallarScreen() {
               {practice && official ? (
                 <RuleCard icon={Trophy} tone="warning" title="Bu denemeyi zaten çözdün" body={`Tekrar çözüm sıralamayı etkilemez; resmî sonucun ${official.resultLocked ? "pencere kapanınca açıklanacak" : `${fmtNet(official.score)} net olarak kalır`}.`} />
               ) : (
-                <RuleCard icon={Trophy} tone="warning" title="Sıralamaya yalnız ilk çözümün girer" body={e.publishMode === "takvimli" ? `${fmtDate(e.startAt, { hour: "2-digit", minute: "2-digit" })}'den sınav bitene kadar bir kez girebilirsin. Sonrası pratik sayılır.` : "İkinci kez çözersen pratik sayılır, sıran değişmez. Hazır olduğundan emin ol."} />
+                <RuleCard icon={Trophy} tone="warning" title="Sıralamaya yalnız ilk çözümün girer" body={e.publishMode === "takvimli" ? `${ekle(fmtDate(e.startAt, { hour: "2-digit", minute: "2-digit" }), "den")} sınav bitene kadar bir kez girebilirsin. Sonrası pratik sayılır.` : "İkinci kez çözersen pratik sayılır, sıran değişmez. Hazır olduğundan emin ol."} />
               )}
               <RuleCard icon={Clock} tone="warning" title={`${e.durationMinutes} dakika kesintisiz zaman ayır`} body="Süre başlayınca durmaz; uygulamadan çıksan da işler. Dolunca cevapların otomatik teslim edilir." />
               <RuleCard icon={Minus} tone="info" title="4 yanlış 1 doğruyu götürür" body="Puan net ile hesaplanır: doğru − yanlış/4. Boş sorular neti etkilemez." />
-              {e.publishMode === "takvimli" ? <RuleCard icon={Bell} tone="accent" title="Sonuçlar pencere kapanınca açıklanır" body={`Sıralama ve Türkiye kıyası ${fmtDate(e.endAt)}'de herkese aynı anda açılır; sana bildirim göndeririz.`} /> : null}
+              {e.publishMode === "takvimli" ? <RuleCard icon={Bell} tone="accent" title="Sonuçlar pencere kapanınca açıklanır" body={`Sıralama ve Türkiye kıyası ${ekle(fmtDate(e.endAt), "de")} herkese aynı anda açılır; sana bildirim göndeririz.`} /> : null}
               {e.liveAnswerReveal && !practice ? <Notice tone="info">Bu denemede şıkka basınca doğru/yanlış ve açıklama hemen görünür; cevap değiştirilemez.</Notice> : null}
             </View>
 
@@ -98,7 +99,7 @@ export default function KurallarScreen() {
                 </>
               ) : weeklyWaiting ? (
                 <>
-                  <Button title={`${fmtDate(e.startAt)}'de açılır`} disabled />
+                  <Button title={`${ekle(fmtDate(e.startAt), "de")} açılır`} disabled />
                   <Button title={rem.data?.reminding ? "Hatırlatma açık" : "Hatırlat"} variant="secondary" loading={setRem.isPending} onPress={() => setRem.mutate(!(rem.data?.reminding ?? false))} />
                 </>
               ) : e.myState === "in_progress" ? (

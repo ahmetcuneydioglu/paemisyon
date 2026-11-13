@@ -315,6 +315,20 @@ export function fmtDate(iso: string, opts: Intl.DateTimeFormatOptions = { day: "
   return new Date(iso).toLocaleString("tr-TR", opts);
 }
 
+/**
+ * Yakın an: bugünse "bugün 04:47", yarınsa "yarın 21:00", değilse "Cuma 21:00" (13 Kas 2026: sonuç
+ * ekranı aynı gün için "Cuma 04:47'de" yazıyordu).
+ */
+export function fmtWhen(iso: string, now: Date = new Date()): string {
+  const d = new Date(iso);
+  const saat = d.toLocaleTimeString("tr-TR", { hour: "2-digit", minute: "2-digit" });
+  const gun = (x: Date) => new Date(x.getFullYear(), x.getMonth(), x.getDate()).getTime();
+  const fark = Math.round((gun(d) - gun(now)) / 86_400_000);
+  if (fark === 0) return `bugün ${saat}`;
+  if (fark === 1) return `yarın ${saat}`;
+  return d.toLocaleString("tr-TR", fark > 1 && fark < 7 ? { weekday: "long", hour: "2-digit", minute: "2-digit" } : { day: "numeric", month: "long", hour: "2-digit", minute: "2-digit" });
+}
+
 /** Net biçimi: 61,75 → "61,75"; 72 → "72"; null → "—". Web `fmtNet` ile aynı. */
 /**
  * Geçmiş satırının sonucu (13 Kas 2026): kişisel denemede sunucu puanı DOĞRULUK YÜZDESİ olarak tutar

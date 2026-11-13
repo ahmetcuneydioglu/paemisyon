@@ -4,7 +4,9 @@ import { Pressable, StyleSheet, View, type StyleProp, type ViewStyle } from "rea
 import Svg, { Circle, Line, Polyline } from "react-native-svg";
 import { AppText, Badge, BigNumber, Button, Card, Chip, IconButton, Notice, ProgressBar, Sheet } from "@/components/ui";
 import { countdown, examCardModel, fmtDate, fmtNet, mmss, useReminder, useSetReminder, type CourseBreakdownRow, type ExamCardAction, type ExamHistory, type ExamListItem } from "@/features/exams/queries";
+import { useNow } from "@/lib/use-now";
 import { useTheme } from "@/theme/ThemeProvider";
+import { ekle } from "@/lib/tr-ek";
 
 /**
  * Deneme alanı bileşenleri (Doc 50, Figma "Denemeler V2"): ExamCard (5 durum), RuleCard,
@@ -237,7 +239,28 @@ export function RankRow({ rank, name, score, wrong, duration, me, highlight, onP
  * Deneme üst çubuğu: ✕ · ad + "34 / 100" (dokununca soru haritası) · ⏱ süre; altında 3 pt
  * ilerleme. Son 5 dakikada süre uyarı tonuna döner.
  */
-export function ExamTopBar({ title, index, total, timeLabel, warning, onClose, onPressCenter }: { title: string; index: number; total: number; timeLabel: string; warning?: boolean; onClose: () => void; onPressCenter?: () => void }) {
+/**
+ * Geri sayım kendi bileşeninde yaşar (13 Kas 2026 provası): saniyelik saat oynatıcı ekranının
+ * tamamını (seçenekler, harita, sayfalar) her saniye yeniden çizdiriyordu; dokunuşlar gecikiyordu.
+ * `deadline` verilirse yalnız bu etiket saniyede bir yenilenir; son beş dakika uyarı tonu.
+ */
+function ExamClock({ deadline }: { deadline: number }) {
+  const { colors } = useTheme();
+  const now = useNow(1000);
+  const left = Math.max(0, Math.round((deadline - now) / 1000));
+  const label = mmss(left);
+  const tone = left <= 300 ? colors.warningInk : colors.accentInk;
+  return (
+    <View style={{ minWidth: 92, flexDirection: "row", alignItems: "center", justifyContent: "flex-end", gap: 4 }} accessible accessibilityLabel={`Kalan süre ${label}`}>
+      <Timer color={tone} size={16} strokeWidth={1.75} />
+      <AppText variant="subhead" style={{ color: tone, fontVariant: ["tabular-nums"] }}>
+        {label}
+      </AppText>
+    </View>
+  );
+}
+
+export function ExamTopBar({ title, index, total, deadline, timeLabel = "Süresiz", warning, onClose, onPressCenter }: { title: string; index: number; total: number; /** Verilirse sayaç kendi kendine işler. */ deadline?: number | null; timeLabel?: string; warning?: boolean; onClose: () => void; onPressCenter?: () => void }) {
   const { colors, space } = useTheme();
   const pct = total > 0 ? Math.max(0, Math.min(1, index / total)) : 0;
   return (
@@ -252,12 +275,16 @@ export function ExamTopBar({ title, index, total, timeLabel, warning, onClose, o
             {index} / {total}
           </AppText>
         </Pressable>
-        <View style={{ minWidth: 92, flexDirection: "row", alignItems: "center", justifyContent: "flex-end", gap: 4 }} accessible accessibilityLabel={`Kalan süre ${timeLabel}`}>
-          <Timer color={warning ? colors.warningInk : colors.accentInk} size={16} strokeWidth={1.75} />
-          <AppText variant="subhead" style={{ color: warning ? colors.warningInk : colors.accentInk, fontVariant: ["tabular-nums"] }}>
-            {timeLabel}
-          </AppText>
-        </View>
+        {deadline != null ? (
+          <ExamClock deadline={deadline} />
+        ) : (
+          <View style={{ minWidth: 92, flexDirection: "row", alignItems: "center", justifyContent: "flex-end", gap: 4 }} accessible accessibilityLabel={`Kalan süre ${timeLabel}`}>
+            <Timer color={warning ? colors.warningInk : colors.accentInk} size={16} strokeWidth={1.75} />
+            <AppText variant="subhead" style={{ color: warning ? colors.warningInk : colors.accentInk, fontVariant: ["tabular-nums"] }}>
+              {timeLabel}
+            </AppText>
+          </View>
+        )}
       </View>
       <View style={{ height: 3, backgroundColor: colors.surfaceAlt }}>
         <View style={{ height: 3, width: `${pct * 100}%`, backgroundColor: colors.accent }} />
@@ -316,7 +343,12 @@ export function ExamFeedbackBox({ correctLabel, explanation }: { correctLabel: s
   );
 }
 
-export type ExamMapCell = "current" | "answered" | "flagged" | "blank";
+/**
+ * Harita hücresi OLGU taşır, görünüm değil (13 Kas 2026 provası): eskiden tek durum ("current" |
+ * "flagged" | "answered") vardı; şu anki soru cevaplı olsa da "boş", işaretli+cevaplı soru da
+ * "cevaplandı" dışında sayılıyordu — teslim penceresindeki sayıyla çelişiyordu.
+ */
+export type ExamMapCell = { answered: boolean; flagged: boolean; current: boolean };
 type MapFilter = "answered" | "blank" | "flagged" | null;
 
 /**
@@ -327,12 +359,12 @@ export function ExamMapSheet({ visible, onClose, cells, onSelect, onSubmit }: { 
   const { colors, radius, space } = useTheme();
   const [filter, setFilter] = useState<MapFilter>(null);
   const [width, setWidth] = useState(0);
-  const answered = cells.filter((c) => c === "answered").length;
-  const flagged = cells.filter((c) => c === "flagged").length;
-  const blank = cells.length - answered - flagged;
+  const answered = cells.filter((c) => c.answered).length;
+  const flagged = cells.filter((c) => c.flagged).length;
+  const blank = cells.length - answered;
   const gap = 6;
   const cell = width > 0 ? Math.floor((width - gap * 9) / 10) : 30;
-  const matches = (c: ExamMapCell) => (filter == null ? true : filter === "answered" ? c === "answered" : filter === "flagged" ? c === "flagged" : c === "blank" || c === "current");
+  const matches = (c: ExamMapCell) => (filter == null ? true : filter === "answered" ? c.answered : filter === "flagged" ? c.flagged : !c.answered);
   return (
     <Sheet visible={visible} onClose={onClose} title="Soru haritası" footer={<View style={{ gap: space.s2 }}><Button title="Sınava dön" variant="secondary" onPress={onClose} /><Button title="Teslim et" variant="ghost" onPress={onSubmit} /></View>}>
       <AppText variant="bodySm" tone="soft" style={{ fontVariant: ["tabular-nums"] }}>
@@ -346,17 +378,17 @@ export function ExamMapSheet({ visible, onClose, cells, onSelect, onSubmit }: { 
       <View onLayout={(e) => setWidth(e.nativeEvent.layout.width)} style={{ flexDirection: "row", flexWrap: "wrap", gap }}>
         {cells.map((c, i) => {
           const dim = !matches(c);
-          const bg = c === "answered" ? colors.surfaceAlt : colors.surface;
-          const border = c === "current" || c === "flagged" ? colors.accent : colors.line;
-          const fg = c === "answered" || c === "flagged" || c === "current" ? colors.accentInk : colors.inkSoft;
+          const bg = c.answered ? colors.surfaceAlt : colors.surface;
+          const border = c.current || c.flagged ? colors.accent : colors.line;
+          const fg = c.answered || c.flagged || c.current ? colors.accentInk : colors.inkSoft;
           return (
             <Pressable
               key={i}
               accessibilityRole="button"
-              accessibilityLabel={`Soru ${i + 1}${c === "answered" ? ", cevaplı" : c === "flagged" ? ", işaretli" : ", boş"}${c === "current" ? ", şu an" : ""}`}
+              accessibilityLabel={`Soru ${i + 1}${c.answered ? ", cevaplı" : ", boş"}${c.flagged ? ", işaretli" : ""}${c.current ? ", şu an" : ""}`}
               hitSlop={7}
               onPress={() => onSelect(i)}
-              style={({ pressed }) => ({ width: cell, height: cell, borderRadius: radius.control, backgroundColor: bg, borderWidth: c === "current" ? 2 : 1, borderColor: border, alignItems: "center", justifyContent: "center", opacity: pressed ? 0.6 : dim ? 0.3 : 1 })}
+              style={({ pressed }) => ({ width: cell, height: cell, borderRadius: radius.control, backgroundColor: bg, borderWidth: c.current ? 2 : 1, borderColor: border, alignItems: "center", justifyContent: "center", opacity: pressed ? 0.6 : dim ? 0.3 : 1 })}
             >
               <AppText variant="label" style={{ color: fg, fontVariant: ["tabular-nums"] }}>
                 {i + 1}
@@ -594,14 +626,16 @@ export function LiveExamPanel({ exam, now, paemLine, onJoin, onRules, onResult }
         <AppText variant="label" tone="panelSoft" style={{ letterSpacing: 1.2, flex: 1 }}>
           CANLI · HAFTALIK DENEME
         </AppText>
-        <AppText variant="bodySm" tone="panelSoft">
-          {exam.participantCount.toLocaleString("tr-TR")} kişi içeride
-        </AppText>
+        {exam.participantCount > 0 ? (
+          <AppText variant="bodySm" tone="panelSoft">
+            {exam.participantCount.toLocaleString("tr-TR")} kişi teslim etti
+          </AppText>
+        ) : null}
       </View>
       <AppText variant="title" tone="panelInk" numberOfLines={2}>
         {exam.title}
       </AppText>
-      <BigNumber value={left} size={48} suffix={`kalan süre · ${window}`} />
+      <BigNumber value={left} size={48} suffix={submitted ? `sonuçlara · ${window}` : `kalan süre · ${window}`} />
       <View style={{ flexDirection: "row", gap: space.s2 }}>
         {submitted ? (
           <Button title="Sonucunu gör" variant="secondary" style={{ flex: 1 }} onPress={onResult} />
@@ -615,7 +649,7 @@ export function LiveExamPanel({ exam, now, paemLine, onJoin, onRules, onResult }
         </Pressable>
       </View>
       <AppText variant="bodySm" tone="panelSoft">
-        {submitted ? "Teslim ettin; sonuçlar pencere kapanınca açıklanır." : `${fmtDate(exam.endAt, { hour: "2-digit", minute: "2-digit" })}'a kadar girebilirsin.`}{paemLine ? ` ${paemLine}` : ""}
+        {submitted ? "Teslim ettin; sonuçlar pencere kapanınca açıklanır." : `${ekle(fmtDate(exam.endAt, { hour: "2-digit", minute: "2-digit" }), "e")} kadar girebilirsin.`}{paemLine ? ` ${paemLine}` : ""}
       </AppText>
     </View>
   );
@@ -639,15 +673,21 @@ export function WeeklyPanel({ exam, now, label, onPrimary, onRules }: { exam: Ex
           {open ? `${label} · CANLI` : `${label} · HAFTALIK DENEME`}
         </AppText>
         <AppText variant="bodySm" tone="panelSoft">
-          {open ? `${exam.participantCount.toLocaleString("tr-TR")} kişi içeride` : fmtDate(exam.startAt, { weekday: "long", hour: "2-digit", minute: "2-digit" })}
+          {open ? (exam.participantCount > 0 ? `${exam.participantCount.toLocaleString("tr-TR")} kişi teslim etti` : "") : fmtDate(exam.startAt, { weekday: "long", hour: "2-digit", minute: "2-digit" })}
         </AppText>
       </View>
       <AppText variant="heading" tone="panelInk">
         {exam.title}
       </AppText>
-      {open ? <BigNumber value={mmss(left / 1000)} suffix={`kalan · ${fmtDate(exam.endAt, { hour: "2-digit", minute: "2-digit" })}'a kadar`} /> : <WeeklyCountdown msLeft={left} />}
+      {open ? <BigNumber value={mmss(left / 1000)} suffix={`${exam.myState === "completed" ? "sonuçlara" : "kalan"} · ${ekle(fmtDate(exam.endAt, { hour: "2-digit", minute: "2-digit" }), "e")} kadar`} /> : <WeeklyCountdown msLeft={left} />}
       <AppText variant="bodySm" tone="panelSoft">
-        {open ? "Bir resmî çözüm hakkın var; süre teslimde durmaz." : `${examMeta(exam) ? `${examMeta(exam)} · ` : ""}${exam.participantCount.toLocaleString("tr-TR")} kişi katılacak · bitene kadar giriş açık`}
+        {open
+          ? exam.myState === "completed"
+            ? "Teslim ettin; sonuçlar pencere kapanınca açıklanır."
+            : exam.myState === "in_progress"
+              ? "Süren işliyor; uygulamadan çıksan da durmaz."
+              : "Bir resmî çözüm hakkın var; süre teslimde durmaz."
+          : `${examMeta(exam) ? `${examMeta(exam)} · ` : ""}bitene kadar giriş açık`}
       </AppText>
       <View style={{ flexDirection: "row", gap: space.s2, alignItems: "center" }}>
         {primary ? <Button title={primary} style={{ flex: 1 }} onPress={onPrimary} /> : <RemindButton examId={exam.id} style={{ flex: 1 }} />}

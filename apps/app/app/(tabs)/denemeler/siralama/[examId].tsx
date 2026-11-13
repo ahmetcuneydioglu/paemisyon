@@ -5,6 +5,7 @@ import { RankRow } from "@/components/domain";
 import { AppText, Card, EmptyState, Notice, Screen, Skeleton } from "@/components/ui";
 import { fmtClock, fmtDate, fmtDuration, fmtNet, useExam, useExamLeaderboard } from "@/features/exams/queries";
 import { useTheme } from "@/theme/ThemeProvider";
+import { ekle } from "@/lib/tr-ek";
 
 /**
  * Deneme sıralaması (Doc 50 M6, Figma birebir): deneme adı + "N resmî çözüm · katılımla
@@ -19,7 +20,7 @@ export default function SiralamaScreen() {
   const exam = useExam(p.title ? null : (p.examId ?? null));
   const d = q.data;
   const meInTop = d?.top.some((r) => r.isMe) ?? false;
-  const subtitle = d?.frozenAt ? `${d.participantCount?.toLocaleString("tr-TR")} resmî çözüm · ${fmtDate(d.frozenAt, { day: "numeric", month: "short" })}'de donduruldu` : d?.available ? `${d.participantCount?.toLocaleString("tr-TR")} resmî çözüm · katılımla güncellenir` : d?.reason === "result_pending" ? "Haftalık deneme · sonuçlar pencere kapanınca" : "Serbest deneme · sıralama katılımla güncellenir";
+  const subtitle = d?.frozenAt ? `${d.participantCount?.toLocaleString("tr-TR")} resmî çözüm · ${ekle(fmtDate(d.frozenAt, { day: "numeric", month: "long" }), "de")} donduruldu` : d?.available ? `${d.participantCount?.toLocaleString("tr-TR")} resmî çözüm · katılımla güncellenir` : d?.reason === "result_pending" ? "Haftalık deneme · sonuçlar pencere kapanınca" : "Serbest deneme · sıralama katılımla güncellenir";
 
   return (
     <>
