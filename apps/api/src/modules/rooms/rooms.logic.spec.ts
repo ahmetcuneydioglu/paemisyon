@@ -7,7 +7,7 @@ import {
   konuKocCumlesi,
   konuKunyesi,
   maddeAraligi,
-  yayginAgirlik,
+  agirlikEtiketi,
 } from './rooms.logic';
 
 describe('rooms.logic (Doc 49/14)', () => {
@@ -56,18 +56,19 @@ describe('rooms.logic (Doc 49/14)', () => {
   });
 
   describe('Çalış v2 (Doc 49/17)', () => {
-    it('yaygın ağırlık: en sık değer, eşitlikte büyük', () => {
-      expect(yayginAgirlik([30, 10, 10, 10])).toBe(10);
-      expect(yayginAgirlik([20, 10])).toBe(20);
-      expect(yayginAgirlik([])).toBeNull();
+    it('ders künyesi: her kartta aynı tür — başlanmadı > yanlış > yanlış yok', () => {
+      expect(dersKunyesi({ solved: 0, wrongCount: 0 })).toBe('Henüz başlanmadı');
+      expect(dersKunyesi({ solved: 40, wrongCount: 18 })).toBe('18 yanlış');
+      expect(dersKunyesi({ solved: 40, wrongCount: 0 })).toBe('Yanlış yok');
     });
-    it('ders künyesi: farklı ağırlık > başlanmadı > yanlış > yanlış yok', () => {
-      const k = (w: number, solved: number, wrongCount: number) =>
-        dersKunyesi({ weightPercent: w, yayginAgirlik: 10, solved, wrongCount });
-      expect(k(30, 40, 5)).toBe('Sınav ağırlığı %30');
-      expect(k(10, 0, 0)).toBe('Henüz başlanmadı');
-      expect(k(10, 40, 18)).toBe('18 yanlış');
-      expect(k(10, 40, 0)).toBe('Yanlış yok');
+    it('ağırlık etiketi: bölüm paylaşılıyorsa söyler', () => {
+      expect(agirlikEtiketi(10, [])).toBe('Sınavda %10');
+      expect(agirlikEtiketi(30, ['Analitik Düşünme ve Türkçe'])).toBe(
+        'Sınavda %30 · Analitik Düşünme ve Türkçe ile ortak',
+      );
+      expect(agirlikEtiketi(20, ['Ceza Muhakemesi Hukuku', 'Ceza Hukuku'])).toBe(
+        'Sınavda %20 · 3 dersin ortak bölümü',
+      );
     });
     it('konu künyesi: yalnız dolu parçalar', () => {
       expect(konuKunyesi({ solved: 24, unitCount: 4, wrongCount: 6 })).toBe(

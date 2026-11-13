@@ -49,7 +49,8 @@ export default async function DersOdasiPage({
             <>
               {d.summary.examWeightPercent != null ? (
                 <span className="type-body-sm">
-                  Sınavda %{d.summary.examWeightPercent}
+                  {d.summary.examWeightLabel ??
+                    `Sınavda %${d.summary.examWeightPercent}`}
                 </span>
               ) : null}
               {d.summary.weakest ? (

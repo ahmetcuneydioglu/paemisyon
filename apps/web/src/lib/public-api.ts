@@ -750,6 +750,8 @@ export interface CourseRoom {
     accuracyPct: number | null;
     band: Band;
     examWeightPercent: number | null;
+    /** "Sınavda %30 · … ile ortak" — ağırlık bölümündür; sunucu kurar. */
+    examWeightLabel?: string | null;
     weakest: {
       topicId: string;
       name: string;

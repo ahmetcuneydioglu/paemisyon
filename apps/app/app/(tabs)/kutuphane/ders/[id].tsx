@@ -84,8 +84,8 @@ export default function DersOdasiScreen() {
               right={
                 <>
                   {d.summary.examWeightPercent != null ? (
-                    <AppText variant="bodySm" tone="panelInk">
-                      Sınavda %{d.summary.examWeightPercent}
+                    <AppText variant="bodySm" tone="panelInk" numberOfLines={2} style={{ textAlign: "right" }}>
+                      {d.summary.examWeightLabel ?? `Sınavda %${d.summary.examWeightPercent}`}
                     </AppText>
                   ) : null}
                   {d.summary.weakest ? (

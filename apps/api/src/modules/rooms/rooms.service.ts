@@ -10,13 +10,13 @@ import { enTazeYarimTur, TAZE_TUR_MS, yarimTurSorgusu } from '../coach/today-tas
 import {
   band,
   dersKocCumlesi,
+  agirlikEtiketi,
   dersKunyesi,
   enZayif,
   kaldiginYer,
   konuKocCumlesi,
   konuKunyesi,
   maddeAraligi,
-  yayginAgirlik,
   yuzde,
   type Band,
 } from './rooms.logic';
@@ -198,7 +198,14 @@ export class RoomsService {
             courses: { some: { courseId } },
           },
           orderBy: { weightPercent: 'desc' },
-          select: { weightPercent: true },
+          select: {
+            weightPercent: true,
+            courses: {
+              where: { courseId: { not: courseId }, course: { deletedAt: null } },
+              orderBy: { sortOrder: 'asc' },
+              select: { course: { select: { name: true } } },
+            },
+          },
         })
       : null;
 
@@ -273,6 +280,13 @@ export class RoomsService {
         accuracyPct: yuzde(accuracy),
         band: band(totalSolved, accuracy),
         examWeightPercent: examWeight?.weightPercent ?? null,
+        /** "Sınavda %30 · Analitik Düşünme ve Türkçe ile ortak" — ağırlık bölümündür. */
+        examWeightLabel: examWeight
+          ? agirlikEtiketi(
+              examWeight.weightPercent,
+              examWeight.courses.map((c) => c.course.name),
+            )
+          : null,
         weakest: weakest
           ? { topicId: weakest.topicId, name: weakest.name, accuracyPct: yuzde(weakest.accuracy) }
           : null,
@@ -495,7 +509,6 @@ export class RoomsService {
         dersler.push({ ...sc.course, weightPercent: sec.weightPercent, sira: dersler.length });
       }
     }
-    const yaygin = yayginAgirlik(dersler.map((d) => d.weightPercent));
     const courses = dersler
       .sort((a, b) => b.weightPercent - a.weightPercent || a.sira - b.sira)
       .map((d) => {
@@ -513,12 +526,7 @@ export class RoomsService {
           wrongCount,
           favoriteCount: favoriM.get(d.id) ?? 0,
           summaryUnitCount: uniteM.get(d.id) ?? 0,
-          note: dersKunyesi({
-            weightPercent: d.weightPercent,
-            yayginAgirlik: yaygin,
-            solved: c.solved,
-            wrongCount,
-          }),
+          note: dersKunyesi({ solved: c.solved, wrongCount }),
         };
       });
     const toplam = (m: Map<string, number>) => [...m.values()].reduce((s, n) => s + n, 0);

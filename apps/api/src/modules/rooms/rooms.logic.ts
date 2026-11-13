@@ -102,28 +102,24 @@ export function maddeAraligi(nos: readonly string[]): string | null {
 }
 
 /**
- * Çalış ders kartının tek künyesi (Doc 49/17). Öncelik: diğer derslerden farklı sınav ağırlığı
- * (çoğunluk %10 iken "Sınav ağırlığı %30" bilgi taşır) → başlanmadı → açık yanlış → "Yanlış yok".
+ * Çalış ders kartının tek künyesi (Doc 49/17): her kartta AYNI tür bilgi — başlanmadı → açık yanlış
+ * → "Yanlış yok". Sınav ağırlığı kartta yok (13 Kas 2026): bölüm ağırlığı derse yazılınca ortak
+ * bölümdeki dersler ikişer kez "%30" görünüyordu; ağırlık ders odasında `agirlikEtiketi` ile.
  */
-export function dersKunyesi(input: {
-  weightPercent: number | null;
-  yayginAgirlik: number | null;
-  solved: number;
-  wrongCount: number;
-}): string {
-  const { weightPercent: w, yayginAgirlik: y } = input;
-  if (w != null && y != null && w !== y) return `Sınav ağırlığı %${w}`;
+export function dersKunyesi(input: { solved: number; wrongCount: number }): string {
   if (input.solved === 0) return 'Henüz başlanmadı';
   if (input.wrongCount > 0) return `${input.wrongCount} yanlış`;
   return 'Yanlış yok';
 }
 
-/** En sık görülen ağırlık (eşitlikte büyük olan); liste boşsa null. */
-export function yayginAgirlik(weights: readonly number[]): number | null {
-  if (!weights.length) return null;
-  const say = new Map<number, number>();
-  for (const w of weights) say.set(w, (say.get(w) ?? 0) + 1);
-  return [...say.entries()].sort((a, b) => b[1] - a[1] || b[0] - a[0])[0][0];
+/**
+ * Ders odasının sınav ağırlığı satırı. Ağırlık BÖLÜMÜNDÜR: bölümü başka derslerle paylaşan derste
+ * yüzde derse ait değildir, bunu söyler ("Sınavda %30 · Analitik Düşünme ve Türkçe ile ortak").
+ */
+export function agirlikEtiketi(weightPercent: number, ortaklar: readonly string[]): string {
+  if (ortaklar.length === 0) return `Sınavda %${weightPercent}`;
+  if (ortaklar.length === 1) return `Sınavda %${weightPercent} · ${ortaklar[0]} ile ortak`;
+  return `Sınavda %${weightPercent} · ${ortaklar.length + 1} dersin ortak bölümü`;
 }
 
 /** Ders odasındaki konu satırının künyesi: "24 soru · 4 ünite özeti · 6 yanlış". */
