@@ -3,7 +3,7 @@ import { Timer, Trophy } from "lucide-react-native";
 import { View } from "react-native";
 import { RankRow } from "@/components/domain";
 import { AppText, Card, EmptyState, Notice, Screen, Skeleton } from "@/components/ui";
-import { fmtClock, fmtDate, fmtDuration, fmtNet, useExam, useExamLeaderboard } from "@/features/exams/queries";
+import { fmtClock, fmtDate, fmtWhen, fmtDuration, fmtNet, useExam, useExamLeaderboard } from "@/features/exams/queries";
 import { useTheme } from "@/theme/ThemeProvider";
 import { ekle } from "@/lib/tr-ek";
 
@@ -47,7 +47,7 @@ export default function SiralamaScreen() {
               d?.reason === "min_sample" ? (
                 <EmptyState icon={Trophy} title="Sıralama henüz açılmadı" body={`En az ${d.minSample ?? 10} resmî çözümle açılır; şu an ${d.participantCount ?? 0} çözüm var. Sonucun ve netin sende duruyor.`} />
               ) : (
-                <EmptyState icon={Timer} title="Sonuçlar pencere kapanınca açıklanır" body={`Sıralama ${d ? fmtDate(d.endAt) : ""} herkese aynı anda açılır.`} />
+                <EmptyState icon={Timer} title="Sonuçlar pencere kapanınca açıklanır" body={d ? `Sıralama ${ekle(fmtWhen(d.endAt), "de")} herkese aynı anda açılır.` : "Sıralama pencere kapanınca herkese aynı anda açılır."} />
               )
             ) : d.top.length === 0 ? (
               <EmptyState icon={Trophy} title="Henüz kimse katılmadı" />
