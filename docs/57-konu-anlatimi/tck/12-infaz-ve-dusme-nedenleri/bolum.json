@@ -1,0 +1,41 @@
+{
+  "slug": "tck-infaz-ve-dusme-nedenleri",
+  "title": "İnfaz ve Düşme Nedenleri",
+  "subtitle": "Koşullu salıverilme ve denetimli serbestlik, ölüm ve af, zamanaşımı, şikâyet ve önödeme, adli sicil ve yasaklanmış hakların geri verilmesi",
+  "courseName": "Ceza Hukuku",
+  "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+  "sortOrder": 12,
+  "isPremium": true,
+  "aiDraft": true,
+  "book": {
+    "label": "THEMIS Ceza Hukuku Genel Hükümler, 21. baskı, 2025",
+    "page": "s.184–202"
+  },
+  "lessons": [
+    {
+      "file": "01-kosullu-saliverilme-ve-denetimli-serbestlik.md",
+      "slug": "tck-kosullu-saliverilme-ve-denetimli-serbestlik",
+      "page": "s.184–187"
+    },
+    {
+      "file": "02-olum-ve-af.md",
+      "slug": "tck-olum-ve-af",
+      "page": "s.187–191"
+    },
+    {
+      "file": "03-zamanasimi.md",
+      "slug": "tck-zamanasimi",
+      "page": "s.191–195"
+    },
+    {
+      "file": "04-sikayet-ve-onodeme.md",
+      "slug": "tck-sikayet-ve-onodeme",
+      "page": "s.195–199"
+    },
+    {
+      "file": "05-adli-sicil-ve-yasaklanmis-haklarin-geri-verilmesi.md",
+      "slug": "tck-adli-sicil-ve-yasaklanmis-haklarin-geri-verilmesi",
+      "page": "s.199–202"
+    }
+  ]
+}
