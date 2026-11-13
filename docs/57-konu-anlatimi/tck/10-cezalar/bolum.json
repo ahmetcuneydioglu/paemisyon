@@ -1,0 +1,18 @@
+{
+  "slug": "tck-cezalar",
+  "title": "Cezalar",
+  "subtitle": "Hapis cezaları, kısa süreli hapse seçenek yaptırımlar, adli para cezası, erteleme, cezanın belirlenmesi ve mahsup",
+  "courseName": "Ceza Hukuku",
+  "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+  "sortOrder": 10,
+  "isPremium": true,
+  "aiDraft": true,
+  "book": { "label": "THEMIS Ceza Hukuku Genel Hükümler, 21. baskı, 2025", "page": "s.161–171, s.182–184" },
+  "lessons": [
+    { "file": "01-yaptirimlar-ve-hapis-cezalari.md", "slug": "tck-yaptirimlar-ve-hapis-cezalari", "page": "s.161–163" },
+    { "file": "02-kisa-sureli-hapse-secenek-yaptirimlar.md", "slug": "tck-kisa-sureli-hapse-secenek-yaptirimlar", "page": "s.163–165" },
+    { "file": "03-adli-para-cezasi.md", "slug": "tck-adli-para-cezasi", "page": "s.165–166" },
+    { "file": "04-hapis-cezasinin-ertelenmesi.md", "slug": "tck-hapis-cezasinin-ertelenmesi", "page": "s.182–184" },
+    { "file": "05-cezanin-belirlenmesi-ve-mahsup.md", "slug": "tck-cezanin-belirlenmesi-ve-mahsup", "page": "s.166–171" }
+  ]
+}
