@@ -466,6 +466,61 @@ ibaresi AYM'nin 5233 md 6/1 iptali (10/7/2025, E.2024/116 K.2025/151) karşısı
 (TCK 53 düzeni); 2575 md 76–79 eski CMUK terimleri metne sadık; AİHS P4 ve P12'yi Türkiye onaylamadı (kartlar
 Türk hukuku gibi sunmuyor).
 
+## 3p. Toplu yayın, bayrak, 6458 ve Rütbe Terfileri Yönetmeliği (13 Kas 2026)
+
+**Toplu yayın ve bayrak:** kullanıcı kararıyla incelemedeki 6.328 kartın tamamı `scripts/kart-toplu-yayin.ts` ile
+yayınlandı (kart başına panel kapısı: eskime + mevzuat kontrolü + `validateCard`; atlanan 0). Aynı gün
+`flashcards_enabled` açıldı. Prod: 6.655 yayında, 12 arşiv.
+
+**Kapsam tespiti:** Polis Mevzuatı dersinde 45 konunun 40'ı kartlıydı. Kartsız beş konudan ikisi bu turda yapıldı;
+7245, Polis Merkezi Amirliği Yönetmeliği ve OHAL kullanıcı kararıyla kapsam dışı.
+
+**Mevzuat metni:** 6458 (`mevzuat-import.ts`, 134 madde) ve Emniyet Rütbe Terfileri ve Değerlendirme Kurulları
+Yönetmeliği (`mevzuat-ekle.ts`, 46 madde) resmî PDF'ten bankaya alındı; PDF'i insan indirdi, yazma komutunu kullanıcı
+çalıştırdı. `mevzuat-ekle.ts` üç isteğe bağlı alan kazandı: `konu` (derste duran konuya bağla), `kes` (madde metnine
+yapışan eki kes: md 43'e EK-1 formu yapışıyordu), `kimlikAd`; ayrıca cetvel artığı sahte maddeleri eler.
+
+**Üretim ve denetim:** 10 deste, üretim 257 kart → denetim sonrası **231 kart**, hepsi GEÇTİ, prod'da `in_review`.
+
+| Deste | Kapsam | Üretim | Yüklenen |
+|---|---|---|---|
+| yukk-genel-giris-vize | 6458 md 1–18 | 29 | 29 |
+| yukk-ikamet-1 | md 19–37 | 26 | 26 |
+| yukk-ikamet-2-vatansiz | md 38–51 | 24 | 24 |
+| yukk-sinir-disi-idari-gozetim | md 52–60/A | 28 | 28 |
+| yukk-uluslararasi-koruma-1 | md 61–79 | 28 | 28 |
+| yukk-uluslararasi-koruma-2 | md 80–95 | 24 | 24 |
+| yukk-ortak-hukumler-teskilat | md 96–102, 121/A, 122, Ek 1 | 20 | 14 |
+| rtk-rutbe-bekleme-terfi | Yön. md 1, 2, 4–15 | 28 | 18 |
+| rtk-degerlendirme-kurullari | md 16–22, Ek 1 | 22 | 21 |
+| rtk-sinav-egitim-emeklilik | md 23–40 | 26 | 19 |
+
+Hat: her destede iki bağımsız denetçi (A madde doğruluğu, B kart kalitesi + komşu deste çapraz kontrolü), hakem aynı
+oturum; raporlar `denetim/<slug>.md`. Denetçi talimatı ve yardımcılar scratchpad'de kaldı (`TALIMAT.md`, `fix.py`,
+`ad.py`); kalıcı değerde olan kurallar aşağıda.
+
+**Dersler:**
+- **6458'de asıl kusur takdir kipi:** üretici "verilebilir / uzatılabilir"i "verilir / uzatır" yazıyor (K11); ikinci sıra
+  açıklamalarda kısmi listenin tam gibi sunulması (K7).
+- **Kurum adı:** 6458 metni "Genel Müdürlük" der; kurum 2021'den beri Göç İdaresi Başkanlığı. Kartlarda ilk geçiş "Göç
+  İdaresi Başkanlığı (metinde: Genel Müdürlük)", sonrakiler "Başkanlık" (§3o kalıbı). md 66'daki "Aile, Çalışma ve Sosyal
+  Hizmetler Bakanlığı" da aynı biçimde güncellendi.
+- **Nominal para cezası:** md 102 tutarlarından yazılan üç kart çıkarıldı (yeniden değerleme; §3l kuralı).
+- **Yönetmelik kanunu tekrar eder:** Rütbe Terfileri'nde 28 kartlık ilk destenin 10'u yayındaki 3201 kartlarının aynısıydı.
+  Denetçi B'ye komşu 3201 destelerini vermek ve "çelişiyor mu" diye sordurmak işe yaradı.
+- **Kapalı grup geçici hükmü** (Geçici 1, 6638 öncesi atananlar) ve salt büro tekniği kartlar çıkarıldı.
+- **Yayındaki kartta bulgu:** `etk-rutbeler-teskilat-yapisi` #1 açıklaması ve #2 cevabı 1. meslek derecesini Sınıf Üstü
+  Emniyet Müdürüne bağlıyor; 3201 md 55, yönetmelik md 5/9 ve yayındaki `etk-terfi-atama-cikma` #4 ise Birinci Sınıf
+  Emniyet Müdürüne. md 13 cetveli PDF'ten düzleşmiş çıktığı için satır yanlış okunmuştu. Kullanıcı onayıyla aynı gün
+  `kart-yayindaki-duzelt.ts --kartlar 1,2` ile yerinde düzeltildi (ilerleme korunur). Aynı hata Doc 53 ünite özetinde de vardı (üç kart: rütbe listesi, tuzak
+  kartı, "Rütbe → meslek derecesi" tablosu); yeni `scripts/ozet-yayindaki-duzelt.ts --kartlar 2,3,7 --uygula` ile ünite
+  yayından düşürülmeden yerinde düzeltildi.
+
+**İnsan notları:** Göç İdaresi Başkanlığı ve Aile ve Sosyal Hizmetler Bakanlığı adları metinden doğrulanamaz; md 57/4
+"getirilir" ile md 57/A/1 "getirilebilir" kip farkı kanunun kendisinden; Rütbe Terfileri md 12/2'nin atıf yaptığı 1992
+yönetmeliğinin yürürlüğü, md 5/40 cetvellerindeki eski unvanlar ve md 16–22'deki "Personel Dairesi Başkanlığı",
+"Birinci Hukuk Müşaviri" unvanlarının güncelliği.
+
 ## 4. Yapılmayan / sıradaki
 
 - **Cihaz testi (Expo):** simülatörde temel akış doğrulandı; gerçek cihazda jest hissi, SE boyutu ve uçak

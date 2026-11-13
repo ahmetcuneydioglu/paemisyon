@@ -1,0 +1,268 @@
+{
+  "deck": {
+    "topicId": "18c6184c-6f45-4501-a075-0614a48ab77e",
+    "legislationSlug": "6458-sayili-yabancilar-ve-uluslararasi-koruma-kanunu",
+    "sourceLabel": "AI bilgi kartı — 6458 Sayılı Yabancılar ve Uluslararası Koruma Kanunu md 19–37",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: resmî madde metni + çıkmış sorular)"
+  },
+  "cards": [
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Vizenin veya vize muafiyetinin tanıdığı süreyi aşacak olanların yanında, Türkiye'de kaç günden fazla kalacak yabancının ikamet izni alması zorunludur?",
+      "back": "Doksan günden fazla kalacak yabancının. Vizenin veya vize muafiyetinin tanıdığı süreden fazla kalacakların da ikamet izni alması zorunludur.",
+      "explanation": "Alınan ikamet izni altı ay içinde kullanılmaya başlanmazsa geçerliliğini kaybeder.",
+      "articleRefs": [
+        "19"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Türkiye'de görevli diplomasi ve konsolosluk memurlarının aile fertlerinden hangileri ikamet izninden muaftır?",
+      "back": "Dışişleri Bakanlığınca bildirilenler muaftır.",
+      "explanation": "Bu kişilere de bir belge tanzim edilir. Belgenin şekli ve içeriği Bakanlık ile Dışişleri Bakanlığınca birlikte belirlenir.",
+      "articleRefs": [
+        "20"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Diplomasi veya konsolosluk memuru olduğu için ikamet izninden muaf tutulan yabancı, muafiyeti sona erdikten sonra da Türkiye'de kalacaksa valiliğe en geç ne zamana kadar başvurmalıdır?",
+      "back": "En geç on gün içinde. Bu sürede ikamet izni almak üzere valiliklere başvurmakla yükümlüdür.",
+      "explanation": "Bu yükümlülük şu yabancılar içindir: diplomasi ve konsolosluk memurları, bunların Dışişleri Bakanlığınca bildirilen aileleri, statüsü anlaşmalarla belirlenmiş uluslararası kuruluş temsilciliği çalışanları ve Türkiye Cumhuriyeti'nin taraf olduğu anlaşmalarla ikamet izninden muaf tutulanlar.",
+      "articleRefs": [
+        "20"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "İkamet izni başvurusu kural olarak nereye yapılır?",
+      "back": "Yabancının vatandaşı olduğu veya yasal olarak bulunduğu ülkedeki konsolosluklara yapılır.",
+      "explanation": "Konsolosluk, başvuruyu görüşleriyle birlikte Göç İdaresi Başkanlığına (metinde: Genel Müdürlük) iletir. Başkanlık gerekirse ilgili kurumların görüşünü alarak başvuruyu sonuçlandırır. Ardından iznin düzenlenmesi ya da başvurunun reddi için konsolosluğa bilgi verir. Bilgi ve belgeler eksikse değerlendirme, eksikler tamamlanıncaya kadar ertelenebilir.",
+      "articleRefs": [
+        "21"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "İkamet izni başvurusunda pasaportun geçerlilik süresi, talep edilen izin süresinden ne kadar uzun olmalıdır?",
+      "back": "Altmış gün daha uzun olmalıdır. Bu şart pasaport yerine geçen belge için de aranır.",
+      "articleRefs": [
+        "21"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "İkamet izni başvuruları en geç altmış gün içinde mi sonuçlandırılır?",
+      "back": "Hayır. Başvurular en geç doksan gün içinde sonuçlandırılır. Altmış gün, pasaportun talep edilen izin süresinden daha uzun olması gereken süredir.",
+      "explanation": "Başvurunun reddine ilişkin işlemler ilgiliye tebliğ edilir.",
+      "articleRefs": [
+        "21"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Kural konsolosluk olsa da hangi ikamet izni çeşitlerinde başvuru istisnai olarak valiliklere de yapılabilir?",
+      "back": "Uzun dönem, öğrenci, insani ve insan ticareti mağduru ikamet izinlerinde.",
+      "explanation": "Valiliklere başvurulabilen diğer istisnai hâllerden bazıları şunlardır: adli veya idari makamların kararları ya da talepleri, yabancının Türkiye'den ayrılmasının makul veya mümkün olmadığı durumlar, aile ikamet izninden kısa dönem ikamet iznine geçiş ve Türkiye'de yükseköğrenimini tamamlayanların kısa dönem ikamet iznine geçişi.",
+      "articleRefs": [
+        "22"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "İkamet izni uzatma başvurusu, iznin dolmasına ne kadar kala yapılmaya başlanabilir?",
+      "back": "Süresinin dolmasına altmış gün kala başlanabilir. Başvuru her koşulda süre dolmadan önce valiliklere yapılır.",
+      "explanation": "İkamet izinleri valiliklerce uzatılabilir; uzatma başvurularını da valilikler sonuçlandırır.",
+      "articleRefs": [
+        "24"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "İkamet izni uzatma başvurusu yapan yabancıya ne verilir?",
+      "back": "Harca tabi olmayan bir belge verilir. İzin süresi bitse de hakkında karar verilinceye kadar bu belgeyle Türkiye'de ikamet edebilir.",
+      "articleRefs": [
+        "24"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Uzatılan ikamet izni hangi tarihten itibaren başlatılır?",
+      "back": "Yasal izin süresinin bitim tarihinden itibaren başlatılır.",
+      "articleRefs": [
+        "24"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Türkiye içinden yapılan ikamet izni talebini reddederken valilik hangi hususları göz önünde bulundurur?",
+      "back": "Yabancının Türkiye'deki aile bağlarını, ikamet süresini, menşe ülkedeki durumunu ve çocuğun yüksek yararı gibi hususları gözetir. Bu sırada karar ertelenebilir.",
+      "explanation": "Aynı hususlar iznin uzatılmaması ve iptalinde de gözetilir. Karar yabancıya ya da yasal temsilcisine veya avukatına tebliğ edilir. Tebligatta, karara karşı itiraz haklarının etkin şekilde nasıl kullanılacağı ve bu süreçteki diğer yasal hak ve yükümlülükler de yer alır.",
+      "articleRefs": [
+        "25"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Tutuklu olarak cezaevinde geçirilen süre, yabancının ikamet izni süresinin ihlali sayılır mı?",
+      "back": "Hayır. Tutuklu ya da hükümlü olarak cezaevinde veya idari gözetim altında geri gönderme merkezinde geçen süreler ihlal sayılmaz. Ancak varsa ikamet izni iptal edilebilir.",
+      "explanation": "Bu kişilerden yabancı kimlik numarası bulunmayanlara, ikamet izni şartı aranmadan yabancı kimlik numarası verilebilir.",
+      "articleRefs": [
+        "26"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Konsolosluktan ikamet ve çalışma izni alarak Türkiye'ye gelen yabancı, adres kayıt sistemine en geç ne zamana kadar kaydolmalıdır?",
+      "back": "Giriş tarihinden itibaren en geç yirmi iş günü içinde kaydolmalıdır.",
+      "articleRefs": [
+        "26"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Geçerli çalışma izni ikamet izni sayılır mı?",
+      "back": "Evet. Geçerli çalışma izni ikamet izni sayılır.",
+      "explanation": "Çalışma izni verilebilmesi veya uzatılabilmesi için yabancının 7 nci madde kapsamına girmemesi şartı aranır.",
+      "articleRefs": [
+        "27"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Türkiye dışında kalış, bir yılda toplam ne kadarı geçerse ikamette kesinti sayılır?",
+      "back": "Bir yılda toplam altı ayı geçerse kesinti sayılır. Son beş yıl içinde toplam bir yılı aşan kalışlar da kesintidir.",
+      "explanation": "Zorunlu kamu hizmeti, eğitim ve sağlık nedenleriyle yurt dışında kalışlar hariç tutulur. İkamet süresinde kesintisi olanların ikamet izni başvurularında veya başka bir izne geçişlerinde önceki izin süreleri hesaba katılmaz.",
+      "articleRefs": [
+        "28"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Kesintisiz ikamet süresi hesaplanırken öğrenci ikamet izniyle geçen süre ne kadar sayılır?",
+      "back": "Yarısı sayılır. Diğer ikamet izinlerinin ise tamamı sayılır.",
+      "articleRefs": [
+        "28"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Kanunda sayılan ikamet izni çeşitleri nelerdir?",
+      "back": "Kısa dönem, aile, öğrenci, uzun dönem, insani ve insan ticareti mağduru ikamet izni.",
+      "articleRefs": [
+        "30"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Kısa dönem ikamet izni her defasında genel kural olarak en fazla kaç yıllık sürelerle verilebilir?",
+      "back": "En fazla ikişer yıllık sürelerle verilebilir. Türkiye'de çalışmayan ancak yatırım yapacaklar ile aileleri ve Kuzey Kıbrıs Türk Cumhuriyeti vatandaşları bu kuralın dışındadır.",
+      "explanation": "Cumhurbaşkanınca belirlenecek kapsam ve tutarda yatırım yapacaklara, bunların yabancı eşine ve ergin olmayan veya bağımlı yabancı çocuklarına izin en fazla beşer yıllık sürelerle verilir. Kuzey Kıbrıs Türk Cumhuriyeti vatandaşları için de aynı süre geçerlidir.",
+      "articleRefs": [
+        "31"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Türkçe öğrenme kurslarına katılacak yabancıya bu gerekçeyle kısa dönem ikamet izni bir defaya mahsus mu verilir?",
+      "back": "Hayır. Türkçe öğrenme kursları kapsamında verilen kısa dönem ikamet izni en fazla iki defa verilebilir. Bir defaya mahsus olan, Türkiye'de yükseköğrenimini tamamlayanlara verilen izindir.",
+      "explanation": "Her bir izin, kısa dönem ikamet izninin genel sınırı olan en fazla ikişer yıllık sürelerle verilebilir.",
+      "articleRefs": [
+        "31"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Türkiye'de yükseköğrenimini tamamlayan yabancıya bu gerekçeyle verilen kısa dönem ikamet izni en fazla ne süreyle verilir?",
+      "back": "En fazla bir yıl süreyle verilir; bu izin bir defaya mahsustur.",
+      "explanation": "Bu izin için mezuniyet tarihinden itibaren altı ay içinde müracaat edilmesi gerekir.",
+      "articleRefs": [
+        "31"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Kısa dönem ikamet izni başvurusunda adli sicil kaydını gösteren belge her durumda sunulur mu?",
+      "back": "Hayır. Belge istenilmesi hâlinde sunulur. Belge, yabancının vatandaşı olduğu veya yasal olarak ikamet ettiği ülkenin yetkili makamlarınca düzenlenmiş olmalıdır.",
+      "explanation": "Kısa dönem ikamet izninin diğer şartları şunlardır: 31 inci maddenin birinci fıkrasındaki gerekçelerden biri veya birkaçıyla talepte bulunup bilgi ve belgeleri ibraz etmek, 7 nci madde kapsamına girmemek, genel sağlık ve güvenlik standartlarına uygun barınma şartlarına sahip olmak ve Türkiye'de kalacağı adres bilgilerini vermek.",
+      "articleRefs": [
+        "32"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Aile ikamet izni her defasında en fazla ne kadar süreyle verilebilir?",
+      "back": "Her defasında üç yılı aşmayacak şekilde verilebilir. Ancak süre hiçbir şekilde destekleyicinin ikamet izni süresini aşamaz.",
+      "articleRefs": [
+        "34"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Türk vatandaşından boşanan yabancı eşin aile içi şiddet mağduru olduğu mahkeme kararıyla sabitse, kısa dönem ikamet izninde hangi şart aranmaz?",
+      "back": "En az üç yıl aile ikamet izniyle kalmış olma şartı aranmaz.",
+      "explanation": "Türk vatandaşıyla evli yabancının boşanmasında, şiddet mağduriyeti mahkeme kararıyla sabit değilse en az üç yıl aile ikamet izniyle kalmış olma şartı aranır. Destekleyicinin ölümünde, ona bağlı aile ikamet izniyle kalanlara süre şartı aranmadan kısa dönem ikamet izni verilebilir. En az üç yıl aile ikamet izniyle kalıp on sekiz yaşını tamamlayanlar da talep ederse izinlerini kısa dönem ikamet iznine dönüştürebilir.",
+      "articleRefs": [
+        "34"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Aile ikamet izninde destekleyicinin aylık geliri, ailedeki fert başına en az ne kadar olmalıdır?",
+      "back": "Fert başına asgari ücretin üçte birinden az olmamalıdır. Toplam gelir de asgari ücretten az olamaz.",
+      "explanation": "Destekleyicide aranan diğer şartlar şunlardır: aile nüfusuna göre genel sağlık ve güvenlik standartlarına uygun barınma, tüm aile fertlerini kapsayan sağlık sigortası, başvuru tarihi itibarıyla beş yıl içinde aile düzenine karşı suçlardan hüküm giymemiş olmak, Türkiye'de en az bir yıldır ikamet izniyle kalıyor olmak ve adres kayıt sisteminde kaydı bulunmak. Türkiye'de bulunan mülteciler ve ikincil koruma statüsü sahiplerinde bu şartlar aranmayabilir.",
+      "articleRefs": [
+        "35"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Çalışma izni bulunan destekleyicide, Türkiye'de en az bir yıldır ikamet izniyle kalıyor olma şartı aranır mı?",
+      "back": "Hayır. Bu şart; bilimsel araştırma amaçlı ikamet izni ya da çalışma izni bulunanlara, 5901 sayılı Kanunun 28 inci maddesi kapsamındakilere ve Türk vatandaşlarıyla evli yabancılara uygulanmaz.",
+      "explanation": "Diğer destekleyicilerde Türkiye'de en az bir yıldır ikamet izniyle kalıyor olma şartı aranır. Türkiye'de bulunan mülteciler ve ikincil koruma statüsü sahiplerinde ise birinci fıkradaki şartlar aranmayabilir.",
+      "articleRefs": [
+        "35"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Aile ikamet izni verilmeden önce, evliliğin sırf ikamet izni için yapılıp yapılmadığını kim araştırır?",
+      "back": "Valilikler araştırır; bunun için makul şüphe gerekir. Evliliğin bu amaçla yapıldığı tespit edilirse izin verilmez, verilmişse iptal edilir.",
+      "explanation": "Araştırma, izin uzatılmadan önce de yapılır. İzin verildikten sonra da valiliklerce denetim yapılabilir. Anlaşmalı evlilik yoluyla alınıp sonradan iptal edilen izinler, Kanunda öngörülen ikamet izin sürelerinin toplanmasında hesaba katılmaz.",
+      "articleRefs": [
+        "37"
+      ]
+    }
+  ]
+}

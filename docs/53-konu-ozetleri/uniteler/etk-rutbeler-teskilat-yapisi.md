@@ -15,9 +15,8 @@ Kanundaki cetvel, emniyet hizmetleri sınıfı mensubunu üç bilgiyle tanımlar
 <sub>md 13</sub>
 
 **Emniyet müdürü rütbeleri (md 13):**
-- **Sınıf Üstü Emniyet Müdürü**
-  - **Derece Üstü:** Emniyet Genel Müdürü
-  - **1:** Genel Müdür Yardımcısı, Teftiş Kurulu Başkanı, Polis Akademisi Başkanı, Başkan, Merkez Emniyet Müdürü, Emniyet Müşaviri
+- **Sınıf Üstü Emniyet Müdürü – Derece Üstü:** Emniyet Genel Müdürü
+- **Birinci Sınıf Emniyet Müdürü – 1:** Genel Müdür Yardımcısı, Teftiş Kurulu Başkanı, Polis Akademisi Başkanı, Başkan, Merkez Emniyet Müdürü, Emniyet Müşaviri
 - **Birinci Sınıf Emniyet Müdürü – 2:** Daire Başkanı, Birinci Hukuk Müşaviri, İl Emniyet Müdürü, Polis Başmüfettişi, Polis Akademisi Başkan Yardımcısı, Teftiş Kurulu Başkan Yardımcısı, Teftiş Kurulu Grup Amiri, Polis Moral Eğitim Merkezi Müdürü ve diğerleri
 - **İkinci Sınıf Emniyet Müdürü – 3:** Kriminal Polis Laboratuvarı Müdürü, Daire Başkan Yardımcısı, İl Emniyet Müdür Yardımcısı, Polis Müfettişi, Hukuk Müşaviri, İlçe Emniyet Müdürü, Havacılık Müdürü, Özel Harekat Müdürü, Başkanlıklarda Şube Müdürü ve diğerleri
 - **Üçüncü Sınıf Emniyet Müdürü – 4:** Moral Eğitim Merkezi Müdür Yardımcısı, Hukuk Müşaviri, Şube Müdürü, İlçe Emniyet Müdürü, İlçe Emniyet Müdür Yardımcısı, Öğretim Görevlisi, Pilot
@@ -27,7 +26,7 @@ Kanundaki cetvel, emniyet hizmetleri sınıfı mensubunu üç bilgiyle tanımlar
 
 <sub>md 13</sub>
 
-Emniyet Genel Müdürü **Sınıf Üstü Emniyet Müdürü – Derece Üstü** satırındadır. Şıklarda «Sınıf Üstü – 1» ya da «Birinci Sınıf – 1» görürsen ele. Genel Müdür Yardımcısı, Teftiş Kurulu Başkanı ve Polis Akademisi Başkanı ise **1. derecededir**. Bunları Derece Üstü'ne ya da 2. dereceye kaydırma. 2. derecede bunların yardımcıları yer alır: Polis Akademisi Başkan Yardımcısı ve Teftiş Kurulu Başkan Yardımcısı. Unvanın sonunda «Yardımcısı» varsa bir alt satıra in.
+Emniyet Genel Müdürü **Sınıf Üstü Emniyet Müdürü – Derece Üstü** satırındadır. Şıklarda «Sınıf Üstü – 1» ya da «Birinci Sınıf – 1» görürsen ele. Genel Müdür Yardımcısı, Teftiş Kurulu Başkanı ve Polis Akademisi Başkanı ise **Birinci Sınıf Emniyet Müdürü rütbesinin 1. derecesindedir**. Bunları Derece Üstü'ne ya da 2. dereceye kaydırma. 2. derecede bunların yardımcıları yer alır: Polis Akademisi Başkan Yardımcısı ve Teftiş Kurulu Başkan Yardımcısı. Unvanın sonunda «Yardımcısı» varsa bir alt satıra in.
 
 ## Kural · Amir ve polis rütbeleri
 
@@ -60,8 +59,8 @@ Komiser **8**, Polis Memuru **12**. Bu ikisi en çok sorulan eşleştirmelerdir.
 
 | Konu | Değer | md |
 |---|---|---|
-| Sınıf Üstü Emniyet Müdürü | Derece Üstü ve 1 | 13 |
-| Birinci Sınıf Emniyet Müdürü | 2 | 13 |
+| Sınıf Üstü Emniyet Müdürü | Derece Üstü | 13 |
+| Birinci Sınıf Emniyet Müdürü | 1 ve 2 | 13 |
 | İkinci Sınıf Emniyet Müdürü | 3 | 13 |
 | Üçüncü Sınıf Emniyet Müdürü | 4 | 13 |
 | Dördüncü Sınıf Emniyet Müdürü | 5 | 13 |

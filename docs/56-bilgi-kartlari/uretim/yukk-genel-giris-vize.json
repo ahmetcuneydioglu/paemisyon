@@ -1,0 +1,302 @@
+{
+  "deck": {
+    "topicId": "18c6184c-6f45-4501-a075-0614a48ab77e",
+    "legislationSlug": "6458-sayili-yabancilar-ve-uluslararasi-koruma-kanunu",
+    "sourceLabel": "AI bilgi kartı — 6458 Sayılı Yabancılar ve Uluslararası Koruma Kanunu md 1–18",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: resmî madde metni + çıkmış sorular)"
+  },
+  "cards": [
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Yabancılar ve Uluslararası Koruma Kanunu'na göre geçici koruma hangi yabancılara sağlanır?",
+      "back": "Ayrılmaya zorlandıkları ülkeye geri dönemeyen ve kitlesel olarak Türkiye'ye gelen yabancılara acil olarak sağlanır.",
+      "explanation": "Kanun ayrıca sınırlarda, sınır kapılarında ya da Türkiye içinde yabancıların münferit koruma talepleri üzerine sağlanacak uluslararası korumayı da kapsar. Türkiye'nin taraf olduğu milletlerarası anlaşmalar ile özel kanunlardaki hükümler saklıdır.",
+      "articleRefs": [
+        "2"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Yabancılar ve Uluslararası Koruma Kanunu'na göre uluslararası koruma hangi statüleri ifade eder?",
+      "back": "Mülteci, şartlı mülteci veya ikincil koruma statüsünü.",
+      "explanation": "Başvuru sahibi, uluslararası koruma talebinde bulunan ve henüz başvurusu hakkında son karar verilmemiş kişidir.",
+      "articleRefs": [
+        "3"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Kanundaki tanıma göre vize, Türkiye'de en fazla kaç güne kadar kalma hakkı tanır?",
+      "back": "Doksan güne kadar. Vize, transit geçişi sağlayan izni de ifade eder.",
+      "explanation": "Vize muafiyeti, vize alma gerekliliğini kaldıran düzenlemedir.",
+      "articleRefs": [
+        "3"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "On sekiz yaşını doldurmamış olmak, Kanundaki çocuk tanımına girmek için yeterli midir?",
+      "back": "Hayır. Çocuk, henüz on sekiz yaşını doldurmamış ve ergin olmamış kişidir; ergin olmama şartı da aranır.",
+      "explanation": "Refakatsiz çocuk, kanunen ya da örf ve adet gereği kendisinden sorumlu bir yetişkinin refakati bulunmaksızın Türkiye'ye gelen veya girişten sonra refakatsiz kalan çocuktur. Sorumlu bir kişinin etkin bakımına alınmadığı sürece bu niteliği taşır.",
+      "articleRefs": [
+        "3"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Geri gönderme yasağına göre Kanun kapsamındaki hiç kimse hangi yere gönderilemez?",
+      "back": "İşkenceye, insanlık dışı ya da onur kırıcı ceza veya muameleye tabi tutulacağı veya ırkı, dini, tabiiyeti, belli bir toplumsal gruba mensubiyeti veya siyasi fikirleri dolayısıyla hayatının veya hürriyetinin tehdit altında bulunacağı yere.",
+      "articleRefs": [
+        "4"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Türkiye'ye giriş ve Türkiye'den çıkış hangi belgelerle yapılır?",
+      "back": "Geçerli pasaport veya pasaport yerine geçen belgelerle. Giriş ve çıkış sınır kapılarından yapılır.",
+      "articleRefs": [
+        "5"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Girişte kapsamlı kontrole tabi tutulması gerekli görülen yabancı en fazla ne kadar bekletilebilir?",
+      "back": "En fazla dört saat.",
+      "explanation": "Türkiye'ye girişlerde yabancının 7 nci madde kapsamında olup olmadığı kontrol edilir. Kapsamlı kontrol işlemlerine dair usul ve esaslar yönetmelikle düzenlenir.",
+      "articleRefs": [
+        "6"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Kapsamlı kontrol için bekletilen yabancı, ülkeye kabul işlemlerinin sonucunu dört saati aşarak bekleyebilir mi?",
+      "back": "Evet. Dört saatlik süreyle sınırlı kalmaksızın kabul işlemlerinin sonuçlanmasını bekleyebilir; bu süre içinde her an ülkesine de dönebilir.",
+      "explanation": "Dört saat, kapsamlı kontrol için bekletilebilecek en uzun süredir. Sonucu bu süreyi aşarak beklemek, yabancının seçebileceği bir imkândır.",
+      "articleRefs": [
+        "6"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Türkiye'ye girişte pasaportun, vize, vize muafiyeti veya ikamet izin süresinin bitiminden itibaren en az ne kadar süreli olması gerekir?",
+      "back": "En az altmış gün. Bu süreli pasaportu veya pasaport yerine geçen belgesi olmayan yabancı, kabul edilemeyen yolcu sayılıp geri çevrilir.",
+      "articleRefs": [
+        "7"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Kabul edilemeyen yolcu kapsamına alınan yabancılar, işlemleri sonuçlanıncaya kadar nerede bekletilir?",
+      "back": "Sınır kapılarında kendileri için belirlenen alanlarda.",
+      "explanation": "Yapılan işlemler geri çevrilen yabancılara tebliğ edilir. Tebligatta, karara karşı itiraz haklarını etkin şekilde nasıl kullanabilecekleri ve bu süreçteki diğer yasal hak ve yükümlülükleri de yer alır.",
+      "articleRefs": [
+        "7"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Geçerli pasaportu olmadan sınır kapısına gelen yabancının uluslararası koruma başvurusu, pasaport şartı gerekçesiyle engellenebilir mi?",
+      "back": "Hayır. Giriş ve çıkışa, belge kontrolüne ve girişe izin verilmemesine ilişkin şartlar, uluslararası koruma başvurusu yapmayı engelleyici şekilde yorumlanamaz ve uygulanamaz.",
+      "articleRefs": [
+        "8",
+        "5",
+        "6",
+        "7"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Türkiye'ye giriş yasağının süresi en fazla ne kadardır?",
+      "back": "En fazla beş yıl. Kamu düzeni veya kamu güvenliği açısından ciddi tehdit varsa bu süre Göç İdaresi Başkanlığınca (metinde: Genel Müdürlük) en fazla on yıl daha artırılabilir.",
+      "articleRefs": [
+        "9"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Türkiye'den sınır dışı edilen yabancının ülkeye girişini yalnız Göç İdaresi Başkanlığı (metinde: Genel Müdürlük) mü yasaklar?",
+      "back": "Hayır. Sınır dışı edilen yabancıların girişi Başkanlık veya valilikler tarafından yasaklanır.",
+      "explanation": "Kamu düzeni, kamu güvenliği veya kamu sağlığı açısından girmesinde sakınca görülen yabancıların girişini ise Başkanlık, gerektiğinde ilgili kamu kurum ve kuruluşlarının görüşlerini alarak yasaklayabilir.",
+      "articleRefs": [
+        "9"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "İdari para cezaları ve kamu alacakları sebebiyle yabancıların ülkeye kabulünü ön izin şartına hangi makam bağlayabilir?",
+      "back": "Valilikler. Kamu düzeni, kamu güvenliği veya kamu sağlığı sebebiyle ön izin şartına bağlama yetkisi ise Göç İdaresi Başkanlığınındır (metinde: Genel Müdürlük).",
+      "articleRefs": [
+        "9"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Sınır dışı edildiği için Türkiye'ye girişi yasaklanan yabancıya giriş yasağının tebligatını kim yapar?",
+      "back": "Valilikler.",
+      "explanation": "Kamu düzeni, kamu güvenliği veya kamu sağlığı gerekçesiyle girişi yasaklananlara tebligat, Türkiye'ye giriş yapmak üzere geldiklerinde sınır kapılarındaki yetkili makamca yapılır. Tebligatta itiraz haklarının etkin şekilde nasıl kullanılacağı da yer alır.",
+      "articleRefs": [
+        "10",
+        "9"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Vizenin veya vize muafiyetinin Türkiye'de sağladığı kalış süresi, her kaç günlük dönemde doksan günü geçemez?",
+      "back": "Her yüz seksen günde doksan günü geçemez.",
+      "explanation": "Türkiye'de doksan güne kadar kalacak yabancılar, vatandaşı oldukları veya yasal olarak bulundukları ülkedeki konsolosluklardan geliş amaçlarını da belirten vize alarak gelir.",
+      "articleRefs": [
+        "11"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 1,
+      "front": "Vize, sahibine Türkiye'ye giriş için mutlak hak sağlar mı?",
+      "back": "Hayır. Vizeler Türkiye'ye giriş için mutlak hak sağlamaz.",
+      "explanation": "Vize başvurularının değerlendirmeye alınabilmesi için başvuruların usulüne uygun olarak yapılması gerekir.",
+      "articleRefs": [
+        "11"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Konsolosluklara yapılan vize başvuruları ne kadar sürede sonuçlandırılır?",
+      "back": "Doksan gün içinde.",
+      "explanation": "Vizeler konsolosluklarca, istisnai durumlarda ise sınır kapılarının bağlı olduğu valiliklerce verilir.",
+      "articleRefs": [
+        "11"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Türkiye'ye giriş yapacağı tarih itibarıyla hangi izinlerden birine sahip olan yabancıdan vize şartı aranmaz?",
+      "back": "Geçerli ikamet veya çalışma izni bulunan yabancıdan.",
+      "explanation": "Vize şartı aranmayanlar arasında Türkiye Cumhuriyeti'nin taraf olduğu anlaşmalarla ya da Cumhurbaşkanı kararıyla vizeden muaf tutulan ülkelerin vatandaşları da vardır.",
+      "articleRefs": [
+        "12"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Deniz limanına gelip liman şehrini veya civar illeri turizm amaçlı gezecek yabancıdan vize şartı aranmayabilmesi için gezi en fazla ne kadar sürebilir?",
+      "back": "Yetmiş iki saati geçmemelidir. Bu hâlde vize şartı aranmayabilir; aranmaması zorunlu değildir.",
+      "articleRefs": [
+        "12"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Sınır kapılarında verilen vizeyi hangi makam verir?",
+      "back": "Sınır kapılarının bağlı olduğu valilikler; valilik bu yetkisini sınırda görevli kolluk birimine devredebilir.",
+      "articleRefs": [
+        "13"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Cumhurbaşkanınca farklı bir süre belirlenmediyse sınır vizesi Türkiye'de en fazla ne kadar kalma hakkı sağlar?",
+      "back": "En fazla on beş gün.",
+      "explanation": "Sınır vizesi, vize almadan gelen ve süresi içinde Türkiye'den ayrılacağını belgeleyen yabancıya istisnai olarak verilebilir. İnsani nedenlere bağlı olarak sağlık sigortası şartı aranmayabilir.",
+      "articleRefs": [
+        "13"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Havalimanı transit vizesi en fazla ne kadar süre içinde kullanılmak üzere verilir?",
+      "back": "En fazla altı ay içinde kullanılmak üzere; konsolosluklar tarafından verilir.",
+      "articleRefs": [
+        "14"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Havalimanı transit vizesi istenecek yabancıları kim belirler?",
+      "back": "İçişleri Bakanlığı ve Dışişleri Bakanlığı müştereken belirler.",
+      "explanation": "Türkiye'den transit geçecek yabancılara havalimanı transit vizesi şartı getirilebilir. Kanunda Bakanlık, İçişleri Bakanlığını ifade eder.",
+      "articleRefs": [
+        "14",
+        "3"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Vize verilebilmesi için pasaportun, talep edilen vize süresi kadar geçerli olması yeterli midir?",
+      "back": "Hayır. Talep edilen vize süresinden en az altmış gün daha uzun süreli pasaport ya da pasaport yerine geçen belge gerekir; yoksa vize verilmez.",
+      "explanation": "Vize verilmeyecekler arasında Türkiye'ye girişleri yasaklı olanlar ve kalacağı süreyi kapsayan geçerli sağlık sigortası bulunmayanlar da vardır.",
+      "articleRefs": [
+        "15"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Vize verilmeyecek yabancılar arasında olmasına rağmen vize verilmesinde yarar görülen kişiye kimin onayıyla vize verilebilir?",
+      "back": "İçişleri Bakanının onayıyla.",
+      "explanation": "Vize verilmeyecekler arasında kamu sağlığına tehdit olarak nitelendirilen hastalıklardan birini taşıyanlar ve kalacağı sürede yeterli ve düzenli maddi imkâna sahip olmayanlar da vardır. Kanunda Bakan, İçişleri Bakanını ifade eder.",
+      "articleRefs": [
+        "15",
+        "3"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Sahteciliğe konu olduğu tespit edilen vize hangi makamlarca iptal edilir?",
+      "back": "Vizeyi veren makamlar veya valiliklerce.",
+      "explanation": "İptal hâlleri arasında yabancının suç işleyebileceği yönünde kuvvetli şüphe bulunması ve vizenin amacı dışında kullanılması da vardır. Vizenin geçerlilik süresi içinde yabancı hakkında sınır dışı etme kararı alınırsa vize iptal edilir.",
+      "articleRefs": [
+        "16"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Vize işlemlerinden hangileri ilgiliye tebliğ edilir?",
+      "back": "Vize talebinin reddi ya da vizenin iptaline ilişkin işlemler.",
+      "articleRefs": [
+        "17"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Cumhurbaşkanı, savaş hâlinde veya diğer olağanüstü hâllerde yabancılar için hangi düzenlemeyi yapmaya yetkilidir?",
+      "back": "Ülkenin bir bölgesini veya tamamını kapsamak üzere yabancılar için pasaporta dair kayıt ve şartlar koymaya.",
+      "explanation": "Cumhurbaşkanı, gerek gördüğü hâllerde bazı devletlerin vatandaşları için vize zorunluluğunu tek taraflı olarak kaldırmaya ve vize sürelerini belirlemeye de yetkilidir.",
+      "articleRefs": [
+        "18"
+      ]
+    }
+  ]
+}

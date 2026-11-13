@@ -1,0 +1,201 @@
+{
+  "deck": {
+    "topicId": "4cb2184e-8718-4be0-b4db-453c8cf715f0",
+    "legislationSlug": "emniyet-rutbe-terfileri-ve-degerlendirme-kurullari-yonetmeligi",
+    "sourceLabel": "AI bilgi kartı — Emniyet Rütbe Terfileri ve Değerlendirme Kurulları Yönetmeliği md 23–40, Geçici 1",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: resmî madde metni + çıkmış sorular)"
+  },
+  "cards": [
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Dördüncü Sınıf Emniyet Müdürü rütbesine terfi için bir personel sınavlara en fazla kaç defa katılabilir?",
+      "back": "En fazla beş defa.",
+      "explanation": "Bu sınır, Dördüncü Sınıf Emniyet Müdürü rütbesine terfi sınavları için konmuştur. Katılacakların isim listeleri her yıl Personel Dairesi Başkanlığınca hazırlanır.",
+      "articleRefs": [
+        "23"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Rütbe terfi için yazılı ve sözlü sınav komisyonları kimin onayıyla belirlenir?",
+      "back": "Genel Müdürün onayıyla.",
+      "explanation": "İhtiyaca göre birden fazla komisyon oluşturulabilir; birden fazla rütbe için de tek bir komisyon görevlendirilebilir. Yazılı sınavlarda merkez ve taşra teşkilatından yeterli sayıda gözetmen görevlendirilir. Sınavların yürütülmesine yardımcı olacak personel de görevlendirilir.",
+      "articleRefs": [
+        "26"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Rütbe terfi sınav komisyonunda başkanın yanında kaç üye bulunur?",
+      "back": "Dört üye bulunur. Başkan emniyet müdürü rütbesini haiz olur; yeteri kadar yedek üye de belirlenir.",
+      "explanation": "Gerekli görülen hallerde Polis Akademisi Başkanlığında görevli kadrolu öğretim üyeleri de komisyon üyesi olarak görevlendirilebilir.",
+      "articleRefs": [
+        "26"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Üst rütbeye terfi edecek personelin yazılı sınavı neyi ölçmek için yapılır?",
+      "back": "Mesleki bilgi ve genel kültür düzeyini ölçmek için.",
+      "explanation": "Sınav, Polis Akademisi Başkanlığınca belirlenen usul ve esaslar çerçevesinde sınav komisyonlarınca yapılır. Yüz tam puan üzerinden değerlendirilir ve sonuçlar adaylara duyurulur.",
+      "articleRefs": [
+        "27"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Rütbe terfi yazılı sınavında polis meslek mevzuatı sorularının oranı nedir?",
+      "back": "%40; konular arasında en büyük pay budur.",
+      "explanation": "Diğer konuların her biri %10'dur. Bunlar ceza muhakemesi ve ceza hukuku, anayasa hukuku, idare hukuku ve idari yargı, Atatürk ilkeleri ve inkılap tarihi, insan hakları ve genel kültürdür.",
+      "articleRefs": [
+        "27"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Rütbe terfi yazılı sınavından sonra sözlü sınava alınmak için en az kaç puan gerekir?",
+      "back": "Yüz üzerinden en az elli puan.",
+      "explanation": "Sözlü sınav da yüz tam puan üzerinden değerlendirilir. Sözlüde yüz üzerinden elli ve üzeri puan alanlar başarılı sayılır.",
+      "articleRefs": [
+        "28"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Sözlü sınav komisyonu üyeleri, sınava girecek personele göre hangi rütbede olmalıdır?",
+      "back": "Sınava girecek personelden en az bir üst rütbede olmak zorundadır.",
+      "articleRefs": [
+        "28"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Sözlü sınavda yazılı sınav konularına ilişkin bilgi düzeyi 15 puan üzerinden mi değerlendirilir?",
+      "back": "Hayır. Bu konuya 25 puan verilir; 15 puan, diğer değerlendirme konularının her birinin payıdır.",
+      "explanation": "15 puanlık konular şunlardır: bir konuyu kavrama ve ifade edebilme yeteneği; temsil ve maiyetindeki personelini sevk ve idare kabiliyeti; özgüveni, ikna kabiliyeti ve inandırıcılığı; analitik düşünme, problem çözme ve doğru karar verebilme yeteneği; planlama, eşgüdüm ve denetim becerileri. Sözlü sınav puanı, her üyenin verdiği puanların aritmetik ortalamasıyla tespit edilir.",
+      "articleRefs": [
+        "28"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Rütbe terfi sınavında kopya çeken personelin sınavı ne olur?",
+      "back": "Sınavı geçersiz sayılır ve hakkında disiplin işlemi uygulanır.",
+      "explanation": "Aynı sonuç, kopya girişiminde bulunanlar için de uygulanır. Yerine bir başka kişinin sınava girdiği tespit edilenler için de durum aynıdır.",
+      "articleRefs": [
+        "30"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Yazılı sınav sonuçlarına maddi hata iddiasıyla en geç ne kadar sürede itiraz edilebilir?",
+      "back": "Neticelerin ilanından itibaren en geç yirmidört saat içinde; itiraz yazılı yapılır.",
+      "explanation": "İtiraz, Polis Akademisi Başkanlığında oluşturulan sınav komisyonlarına doğrudan yapılabilir. Komisyona gönderilmek üzere kadrosundaki birime de verilebilir. Komisyon maddi hata olup olmadığını inceler ve sonucunu bir gün içinde duyurur.",
+      "articleRefs": [
+        "31"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Hangi mazeretlerle sınava giremeyenler, mazeretin bitimini müteakip açılacak ilk yazılı ve sözlü sınava iştirak ettirilir?",
+      "back": "Yurtdışı misyon koruma, yurtdışı eğitim, yurtdışı kurs ve diğer yurtdışı görevler ile sağlık mazeretleri.",
+      "explanation": "Bu mazeretler dışında sınava katılmayanlar herhangi bir hak iddiasında bulunamaz.",
+      "articleRefs": [
+        "33"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Mazereti nedeniyle sonraki sınavda başarılı olup terfi eden personele geriye yönelik mali hak doğar mı?",
+      "back": "Hayır. Rütbe terfi tarihi emsalleri gibi değerlendirilir, ancak bu durum geriye yönelik herhangi bir mali hak doğurmaz.",
+      "explanation": "Bu kural, yurtdışı görevler ya da sağlık mazeretiyle sınava giremeyenler içindir. Bunlar mazeretin bitimini müteakip açılan ilk yazılı ve sözlü sınavda başarılı olup üst rütbeye terfiine karar verilen personeldir.",
+      "articleRefs": [
+        "33"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Yöneticilikle ilgili hizmetiçi eğitime kimler alınır?",
+      "back": "Yapılan yazılı ve sözlü sınavlar sonucunda başarılı olan rütbeli personel.",
+      "articleRefs": [
+        "34"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Yöneticilikle ilgili hizmetiçi eğitim her yıl hangi tarihe kadar tamamlanır?",
+      "back": "Nisan ayı sonuna kadar.",
+      "explanation": "Eğitimi Polis Akademisi Başkanlığı düzenler; sınıf ortamında, Ankara'da veya uzaktan eğitim yoluyla yapılabilir. Eğitimin süresini, yerini ve zamanını da Polis Akademisi Başkanlığı belirler.",
+      "articleRefs": [
+        "35"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Yöneticilikle ilgili hizmetiçi eğitim sonundaki yazılı sınavda başarılı sayılmak için kaç puan gerekir?",
+      "back": "Elli ve üzerinde puan.",
+      "explanation": "Başarılı olanların listesi Polis Akademisi Başkanlığınca Personel Dairesi Başkanlığına gönderilir.",
+      "articleRefs": [
+        "37"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Yazılı, sözlü ve hizmetiçi eğitim sınav sonuçları hangi terfi değerlendirmesi için geçerlidir?",
+      "back": "Sınava girilen yıla ilişkin terfi değerlendirmesi için.",
+      "articleRefs": [
+        "38"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Beş yıl içinde terfi edemeyen bir Emniyet Amirinin kadrosuzluktan emekliye sevki için Yüksek Değerlendirme Kurulunun teklifi yeterli midir?",
+      "back": "Hayır. Teklifle birlikte Bakan onayı da gerekir. Ayrıca emeklilik veya yaşlılık aylığı bağlanabilmesi şartlarını haiz olmalıdır.",
+      "explanation": "Sevk, hizmet ihtiyacı sebebiyle yapılır. Fiili hizmet süresinin uzatılması da aynı usulle yapılır: Yüksek Değerlendirme Kurulunun teklifi ve Bakan onayı.",
+      "articleRefs": [
+        "39"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Birinci Sınıf Emniyet Müdürlerinin bulundukları rütbedeki en fazla bekleme süresi nedir?",
+      "back": "Altı yıl. Bu süre sonunda bir üst rütbeye veya meslek derecesindeki göreve atanamayanlar, emeklilik veya yaşlılık aylığı şartlarını taşıyorsa kadrosuzluk nedeniyle emekliye sevk edilir.",
+      "explanation": "Sevk, Yüksek Değerlendirme Kurulunun teklifi ve Bakan onayıyla yapılır. Maddede sayılan görevlerde (örneğin İl Emniyet Müdürü, Daire Başkanı, Polis Başmüfettişi) fiilen görev yapanlardan, hizmet ihtiyacı nedeniyle sevki uygun görülmeyenler hizmete devam ettirilir.",
+      "articleRefs": [
+        "40"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Hizmete devam ettirilen Birinci Sınıf Emniyet Müdürlerinin durumu altı yılda bir mi karara bağlanır?",
+      "back": "Hayır. Durumları iki yılda bir Yüksek Değerlendirme Kurulu tarafından ayrıca karara bağlanır; altı yıl, rütbedeki en fazla bekleme süresidir.",
+      "explanation": "Hizmete devam, maddede sayılan görevlerde fiilen bulunanlar için söz konusudur. Bu kişilerin hizmet ihtiyacı nedeniyle kadrosuzluktan emekliye sevki uygun görülmemiş olmalıdır.",
+      "articleRefs": [
+        "40"
+      ],
+      "counterNumbers": []
+    }
+  ]
+}

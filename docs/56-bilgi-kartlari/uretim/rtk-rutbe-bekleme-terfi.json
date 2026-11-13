@@ -1,0 +1,193 @@
+{
+  "deck": {
+    "topicId": "4cb2184e-8718-4be0-b4db-453c8cf715f0",
+    "legislationSlug": "emniyet-rutbe-terfileri-ve-degerlendirme-kurullari-yonetmeligi",
+    "sourceLabel": "AI bilgi kartı — Emniyet Rütbe Terfileri ve Değerlendirme Kurulları Yönetmeliği md 1, 2, 4–15",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: resmî madde metni + çıkmış sorular)"
+  },
+  "cards": [
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Emniyet rütbe terfileri ve değerlendirme kurulları yönetmeliği, rütbe terfi işlemleri dışında hangi emekliliğe sevk işlemlerini kapsar?",
+      "back": "Değerlendirme kurulu kararına istinaden yapılan emekliliğe sevk işlemlerini kapsar.",
+      "explanation": "Yönetmelik ayrıca Emniyet Hizmetleri Sınıfı personelinin rütbe terfi işlemlerini ve değerlendirme kurullarının çalışma usul ve esaslarını kapsar.",
+      "articleRefs": [
+        "2"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Performans değerlendirme puanı hangi aralıkta 'iyi' sayılır?",
+      "back": "3,00 ila 3,99 (bu puanlar dahil). 4,00 ila 5,00 arası ise çok iyi performans değerlendirme puanıdır.",
+      "explanation": "Performans değerlendirme puanı, yetkili amirlerce düzenlenen performans değerlendirme raporlarında verilen puan ortalamasıdır.",
+      "articleRefs": [
+        "4"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Üstün Başarı Belgesi kaç defa başarı belgesi alan personele verilir?",
+      "back": "Üç defa başarı belgesi alanlara verilir.",
+      "explanation": "Başarı belgesi, görevlerinde olağanüstü gayret ve çalışmaları sonucu emsallerine göre başarılı görev yapan personele verilen belgedir.",
+      "articleRefs": [
+        "4"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Kıdemli Başpolis Memuru rütbesindeki personel polis amiri sayılır mı?",
+      "back": "Hayır. Polis amiri, Komiser Yardımcısından Sınıf Üstü Emniyet Müdürüne kadar sayılan rütbelerdeki personeldir; Kıdemli Başpolis Memuru 10. meslek derecesindedir.",
+      "explanation": "Tanımda sayılan rütbeler: Komiser Yardımcısı, Komiser, Başkomiser, Emniyet Amiri, Dördüncü, Üçüncü, İkinci ve Birinci Sınıf Emniyet Müdürü ile Sınıf Üstü Emniyet Müdürü.",
+      "articleRefs": [
+        "4",
+        "5"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Emniyet personelinde ast üst ilişkileri ile yetki, görev ve sorumlulukların belirlenmesinde ne esas alınır?",
+      "back": "Rütbe ve meslek dereceleri esas alınır; bunlar md 5'teki cetvelde gösterilenlerdir.",
+      "articleRefs": [
+        "6"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "İlk derece amirlik eğitimini bitirenlerin komiser yardımcısı rütbesine atanması için hangi kurumun yapacağı sınavda başarılı olmaları gerekir?",
+      "back": "Polis Akademisi Başkanlığınca yapılacak sınavda.",
+      "explanation": "Bu kural, Polis Akademisine bağlı Polis Amirleri Eğitimi Merkezinde ilk derece amirlik eğitimini bitirenler ile Emniyet Genel Müdürlüğü adına diğer yükseköğretim kurumlarında öğrenim süresini başarıyla tamamlayanlar için geçerlidir.",
+      "articleRefs": [
+        "7"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Komiser yardımcısı rütbesinde zorunlu en az bekleme süresi kaç yıldır?",
+      "back": "4 yıl (9. meslek derecesi).",
+      "explanation": "Bekleme süresi, polis amirinin bulunduğu rütbe ve meslek derecesinde fiilen beklemesi gereken zorunlu en az süredir.",
+      "articleRefs": [
+        "9",
+        "4"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Yurtdışı görev, eğitim ve kurs süreleri ile tedavi ve istirahat sürelerinin tamamı rütbe terfiinde fiili çalışma süresinden sayılır mı?",
+      "back": "Hayır. Bu süreler geçirildikleri rütbedeki fiili çalışma süresine sayılır; ancak toplamda üç yılı aşan kısmı rütbe terfiinde değerlendirilmez.",
+      "explanation": "Sayılan süreler arasında yurtdışı misyon koruma görevi, yurtdışı eğitim, yurtdışı kurs ve diğer görevler sebebiyle geçirilen süreler ile tedavi ve istirahat süreleri vardır.",
+      "articleRefs": [
+        "10"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "İlk derece amirlik eğitimi sınavına başvuracak polis memurunun kaç yıl iyi veya çok iyi performans puanı almış olması şarttır?",
+      "back": "İki yıl; ayrıca polis memuru rütbesinde fiilen en az iki yıl çalışmış olmak gerekir.",
+      "articleRefs": [
+        "10"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Kasten işlenen bir suçtan alınan ve ertelenen hapis cezasının süresi polis amirinin rütbe terfiinde değerlendirilir mi?",
+      "back": "Hayır. Hapis cezası paraya çevrilse veya ertelense dahi süresi rütbe terfiinde değerlendirilmez; yalnız taksirli suçlar bunun dışındadır.",
+      "explanation": "Değerlendirilmeyen süreler arasında aylıksız izinde geçen süreler, uzun ve kısa süreli durdurma cezalarının süresi ile meslekten veya memuriyetten men cezalarının süresi de vardır.",
+      "articleRefs": [
+        "11"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "İyi veya çok iyi dışında alınan her performans değerlendirme puanı için rütbe terfiinde ne kadarlık süre değerlendirilmez?",
+      "back": "Bir yıllık süre; iyi veya çok iyi dışındaki her puan için bu süre değerlendirilmez.",
+      "explanation": "İyi puan 3,00 ila 3,99, çok iyi puan 4,00 ila 5,00 aralığıdır (bu puanlar dahil). Bu aralıklar dışındaki her puan için bir yıllık süre terfide hesaba katılmaz.",
+      "articleRefs": [
+        "11",
+        "4"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Halen ikinci bölge hizmetini yapan Üçüncü Sınıf Emniyet Müdürünün birinci bölgede geçirdiği hangi süre rütbe terfiinde değerlendirilmez?",
+      "back": "Birinci bölgede geçirdiği dört aydan fazla süreler; geçici görevle ya da başka bir şekilde görevlendirilmiş olması fark etmez.",
+      "explanation": "Bu kayıt, bir üst rütbeye terfi için zorunlu ikinci bölge hizmetini en az bir kez yapmış veya halen bu hizmeti ifa ediyor olma şartı aranan Üçüncü Sınıf Emniyet Müdürleri içindir.",
+      "articleRefs": [
+        "11"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Polis amirinin üst rütbeye terfiinin kurulda görüşülebilmesi için performans puanı yönünden hangi şart aranır?",
+      "back": "Bulunulan rütbede, kurul gündemine alındığı tarih itibarıyla son puan dahil, zorunlu en az bekleme süresi kadar iyi veya çok iyi performans puanı almış olmak.",
+      "explanation": "Görüşme Merkez veya Yüksek Değerlendirme Kurulunda yapılır; bulunulan rütbe için öngörülen bekleme süresinin tamamlanmış olması da şarttır.",
+      "articleRefs": [
+        "12"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Dördüncü Sınıf Emniyet Müdürü rütbesine terfi için yazılı sınavda başarılı olmak yeterli midir?",
+      "back": "Hayır. Yazılı ve sözlü sınavda başarı ile Polis Akademisi Başkanlığınca düzenlenecek yöneticilik eğitiminde başarı birlikte aranır.",
+      "explanation": "Bekleme süresinin tamamlanmış olması ve bekleme süresi kadar iyi veya çok iyi performans puanı alınmış olması şartları da ayrıca aranır.",
+      "articleRefs": [
+        "12"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Zorunlu ikinci bölge hizmeti şartı hangi rütbe terfileri için aranır?",
+      "back": "Dördüncü Sınıf'tan Üçüncü Sınıf Emniyet Müdürlüğüne ve Üçüncü Sınıf'tan İkinci Sınıf Emniyet Müdürlüğüne terfide.",
+      "explanation": "Hizmetin en az bir kez yapılmış olması ya da birinci bölgede geçici görevli olmamak kaydıyla halen ifa ediliyor olması gerekir. Atama ve yer değiştirme mevzuatında belirlenen istisna kapsamına girenler için bu şart aranmaz.",
+      "articleRefs": [
+        "12"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Polis amirlerinin kıdem sırasının tespitinde ilk bakılan ölçüt performans puanı ortalaması mıdır?",
+      "back": "Hayır. İlk ölçüt bulunulan rütbeye terfi tarihidir; tarihi önce olan kıdemlidir. Performans puanı ortalamasına aynı tarihte terfi edenler arasında bakılır.",
+      "articleRefs": [
+        "13"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Polis amirlerinin bulundukları rütbedeki kıdem sırası hangi ayda duyurulur?",
+      "back": "Mart ayında; Emniyet Genel Müdürlüğünce her yıl için bir defaya mahsus olmak üzere belirlenir.",
+      "articleRefs": [
+        "14"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "En az bekleme süresini tamamlayan İkinci Sınıf Emniyet Müdürü hangi görev unvanlarına atanabilir?",
+      "back": "Terfien Birinci Sınıf Emniyet Müdürü rütbesinde ikinci meslek derecesi karşılığı görev unvanlarına atanabilir.",
+      "articleRefs": [
+        "15"
+      ]
+    }
+  ]
+}

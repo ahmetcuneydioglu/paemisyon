@@ -1,0 +1,221 @@
+{
+  "deck": {
+    "topicId": "4cb2184e-8718-4be0-b4db-453c8cf715f0",
+    "legislationSlug": "emniyet-rutbe-terfileri-ve-degerlendirme-kurullari-yonetmeligi",
+    "sourceLabel": "AI bilgi kartı — Emniyet Rütbe Terfileri ve Değerlendirme Kurulları Yönetmeliği md 16–22, Ek 1",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: resmî madde metni + çıkmış sorular)"
+  },
+  "cards": [
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Merkez Değerlendirme Kuruluna kim başkanlık eder?",
+      "back": "Emniyet Genel Müdürlüğü personel işlerinden sorumlu Genel Müdür Yardımcısı başkanlık eder.",
+      "explanation": "Kurulun diğer üyeleri şunlardır: Personel Dairesi Başkanı, Birinci Hukuk Müşaviri, Genel Müdürün uygun göreceği iki Daire Başkanı ve Teftiş Kurulu Başkan Yardımcılarının birinden oluşan üye.",
+      "articleRefs": [
+        "16"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Merkez Değerlendirme Kuruluna katılacak iki Daire Başkanını Personel Dairesi Başkanı mı belirler?",
+      "back": "Hayır. Kurula Genel Müdürün uygun göreceği iki Daire Başkanı katılır. Personel Dairesi Başkanı ise Kurulun doğrudan üyesidir.",
+      "articleRefs": [
+        "16"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Genel Müdür Yardımcıları dışında, hem Merkez hem Yüksek Değerlendirme Kurulunda üye olan makamlar hangileridir?",
+      "back": "Personel Dairesi Başkanı ile Birinci Hukuk Müşaviri.",
+      "explanation": "Personel işlerinden sorumlu Genel Müdür Yardımcısı Merkez Değerlendirme Kuruluna başkanlık eder. Yüksek Değerlendirme Kurulunda ise Genel Müdür Yardımcıları üye olarak yer alır. Yüksek Değerlendirme Kuruluna Genel Müdür başkanlık eder.",
+      "articleRefs": [
+        "16",
+        "18"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Merkez Değerlendirme Kurulu hangi rütbelerdeki personelin terfilerini önerir?",
+      "back": "Kurul gündemine alınan Komiser Yardımcısı, Komiser ve Başkomiserlerin terfilerini önerir.",
+      "explanation": "Kurul bu personelin liyakat koşullarını da belirler.",
+      "articleRefs": [
+        "17"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Yüksek Değerlendirme Kurulu üye seçiminde oyları tasnif edip tutanağa bağlayan komisyon en az kaç kişiden oluşur?",
+      "back": "En az üç kişiden oluşur. Komisyon Personel Dairesi Başkanlığında kurulur.",
+      "explanation": "Seçim duyurusunu Personel Dairesi Başkanlığı yapar. Seçimin genel yönetim ve denetiminden personel işlerinden sorumlu Genel Müdür Yardımcısı sorumludur.",
+      "articleRefs": [
+        "18"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Yüksek Değerlendirme Kurulu için Polis Başmüfettişleri arasında yapılan seçimde kaç üye belirlenir?",
+      "back": "Bir asıl, bir yedek üye belirlenir. Belirlemeye en çok oyu alandan başlanır.",
+      "explanation": "Oylar eşit çıkarsa sicil numarası küçük olan seçilmiş sayılır. Asıl üye herhangi bir sebeple ayrılır ya da Kurula katılamazsa, en yüksek oy alandan başlayarak yedek üye Kurula katılır.",
+      "articleRefs": [
+        "18"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Yüksek Değerlendirme Kuruluna üye seçiminde İl Emniyet Müdürleri en fazla kaç oy kullanabilir?",
+      "back": "En fazla iki oy kullanabilir. Bu oylarla Kurulda görev yapacak iki İl Emniyet Müdürü belirlenir.",
+      "explanation": "Polis Başmüfettişleri en fazla bir oy kullanır. Seçim eşit, gizli ve genel oy esasına göre, Kurul toplanmadan önce yapılır; oylama elektronik ortamda da yapılabilir. İl Emniyet Müdürleri arasından iki asıl, iki yedek üye belirlenir.",
+      "articleRefs": [
+        "18"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Rütbesindeki azami görev süresini dolduran ve kadrosuzluktan emekliye sevki uygun görülmeyen Emniyet Amiri ve üstü personelin ne kadar süreyle göreve devam etmesini Yüksek Değerlendirme Kurulu teklif eder?",
+      "back": "İki yıl süreyle göreve devamını teklif eder. Bu teklifin dayanağı hizmet ihtiyacıdır.",
+      "explanation": "Aynı durumdaki personelden kadrosuzluktan emekliye sevki uygun görülenleri de Kurul teklif eder.",
+      "articleRefs": [
+        "19"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Yüksek Değerlendirme Kurulu hangi rütbelerdeki personelin terfilerini önerir?",
+      "back": "Kurul gündemine alınan Emniyet Amirleri ile Dördüncü ve Üçüncü Sınıf Emniyet Müdürlerinin terfilerini önerir.",
+      "explanation": "Kurul bu personelin liyakat koşullarını belirler. Terfileri, her amir rütbesi için tespit ettiği toplam personel sayısına uygun olarak önerir.",
+      "articleRefs": [
+        "19"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Bulunduğu rütbede aldığı disiplin cezası affa uğrayan personelin bu cezası terfi değerlendirmesinde dikkate alınır mı?",
+      "back": "Evet. Bulunduğu rütbede verilen disiplin cezaları, affa uğramış olsa bile dikkate alınır.",
+      "explanation": "Bulunduğu rütbede adli mercilerce verilen cezalar da değerlendirilir. Bu cezalar affa uğramış ya da ertelemeye dair hüküm verilmiş olsa bile dikkate alınır.",
+      "articleRefs": [
+        "20"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Değerlendirme kurulları liyakat değerlendirmesi sonucunda hangi kararları verebilir?",
+      "back": "“Terfi Eder.”, “Soruşturma Sonucuna Göre Terfi Eder.”, “Performans Puanına Göre Terfi Eder.”, “Terfi Etmez.” veya “Kadrosuzluktan Terfi Etmez.”",
+      "explanation": "“Performans Puanına Göre Terfi Eder.” kararı belirli bir personel için verilir: son performans puanı kurul tarihi itibarıyla doldurulmamış, ama liyakatli olduğu değerlendirilen personel. Kurullar oy çokluğu ile karar verir.",
+      "articleRefs": [
+        "20"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Kurul üyeleri, soruşturmaya yol açan ihbar veya şikâyetin personeli mağdur etmek amacıyla yapıldığı kanaatine varırsa o soruşturmayı nasıl değerlendirir?",
+      "back": "Dikkate almaz. Yapılan soruşturma ve kovuşturmalar değerlendirmede hesaba katılmaz.",
+      "explanation": "Liyakatli bulunduğu hâlde soruşturma ve kovuşturma sonucunun beklenmesi uygun görülen personel için ayrı bir karar verilebilir: “Soruşturma Sonucuna Göre Terfi Eder.”",
+      "articleRefs": [
+        "20"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Yüksek Değerlendirme Kurulu ile Merkez Değerlendirme Kurulu olağan toplantılarını kimin onayı ile yapar?",
+      "back": "Yüksek Değerlendirme Kurulu Bakan onayı, Merkez Değerlendirme Kurulu Genel Müdür onayı ile toplanır.",
+      "explanation": "Her iki kurul her yıl Mayıs ayında toplanır. Kurulların raportörlük hizmetlerini Personel Dairesi Başkanlığı yürütür.",
+      "articleRefs": [
+        "21"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Değerlendirme kurullarında oylar eşit çıkarsa karar nasıl belirlenir?",
+      "back": "Kurul başkanının kullandığı oy yönünde karar alınmış sayılır.",
+      "explanation": "Her iki kurul salt çoğunluk ile toplanır ve oy çokluğu ile karar alır.",
+      "articleRefs": [
+        "21"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Merkez Değerlendirme Kurulunun kararları Bakan onayı ile mi yürürlüğe girer?",
+      "back": "Hayır. Merkez Değerlendirme Kurulunun kararları Genel Müdür onayı ile yürürlüğe girer. Bakan onayı Yüksek Değerlendirme Kurulunun kararları için aranır.",
+      "articleRefs": [
+        "21"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Hangi suçlardan soruşturma açılan personelin rütbe terfi işlemleri durdurulabilir?",
+      "back": "Devlet memurluğunu sona erdirecek veya meslekten çıkarmayı gerektirecek suçlar. Bu suçlardan adli veya idari soruşturma açılanların terfi işlemleri durdurulabilir.",
+      "articleRefs": [
+        "22"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Kurullarca terfisine karar verilmiş olan personelin rütbe terfi işlemi kimin onayı ile durdurulabilir?",
+      "back": "Bakan onayı ile durdurulabilir.",
+      "articleRefs": [
+        "22"
+      ],
+      "explanation": "Durdurma, Devlet memurluğunu sona erdirecek veya meslekten çıkarmayı gerektirecek suçlardan adli veya idari soruşturma açılmış olmasına bağlıdır."
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Terfi işlemi durdurulan personel, soruşturma sonunda rütbe kıdemine etki edecek bir ceza almazsa hangi tarih itibarıyla terfi eder?",
+      "back": "Emsallerinin rütbe terfi tarihi itibarıyla terfi eder.",
+      "articleRefs": [
+        "22"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Birim Değerlendirme Komisyonu kaç üyeden oluşur?",
+      "back": "Beş üyeden oluşur. Komisyona birim amiri başkanlık eder.",
+      "explanation": "Üyeler şunlardır: personel işlerinden sorumlu birim amir yardımcısı ve şube müdürü, ayrıca birim amirinin uygun göreceği birer birim amir yardımcısı ve şube müdürü. Merkeze doğrudan bağlı taşra teşkilatlarının komisyonuna merkez birimin birim amiri başkanlık eder; bu komisyon da beş üyelidir.",
+      "articleRefs": [
+        "Ek 1"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Kurullar, personelin mesleki bilgi, beceri ve davranışlarını değerlendirirken hangi belgeyi dikkate alır?",
+      "back": "Birim Değerlendirme Komisyonu Görüş Formunu dikkate alır. Bu form, Ek-1'deki forma uygun olarak düzenlenir.",
+      "explanation": "Komisyonlar bu formu, ilgili kurullarca terfi değerlendirmesi yapılacak personel hakkında düzenler. Bölge hizmeti vermek üzere kurulan müdürlüklerdeki personeli, bu müdürlüklerin bağlı bulunduğu merkez birime ait komisyon değerlendirir.",
+      "articleRefs": [
+        "Ek 1",
+        "20"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Birim Değerlendirme Komisyonu üyesi, kendisiyle aynı rütbedeki personel hakkında görüş bildirebilir mi?",
+      "back": "Hayır. Komisyon üyeleri, kendileriyle aynı veya üst rütbedeki personel hakkında görüş bildiremez. Bu personelin değerlendirme formlarına da imza atamaz.",
+      "explanation": "Hakkında form doldurulacak üye, görüşme süresince toplantıya katılamaz ve kendi formunu imzalayamaz. Üyenin ayrılması, toplantının devamına ve karar alınmasına engel değildir.",
+      "articleRefs": [
+        "Ek 1"
+      ],
+      "counterNumbers": []
+    }
+  ]
+}

@@ -12,7 +12,7 @@
       "difficulty": 1,
       "front": "Emniyet Genel Müdürü görev unvanı cetvelde hangi rütbe ve meslek derecesi karşısında gösterilir?",
       "back": "Sınıf Üstü Emniyet Müdürü rütbesinin Derece Üstü meslek derecesi karşısında.",
-      "explanation": "Sınıf Üstü Emniyet Müdürü rütbesinin altında iki satır vardır: Derece Üstü ve 1 numaralı meslek derecesi. Derece Üstü satırında yalnız Emniyet Genel Müdürü bulunur.",
+      "explanation": "Derece Üstü satırında yalnız Emniyet Genel Müdürü bulunur. 1 ve 2 numaralı meslek dereceleri ise Birinci Sınıf Emniyet Müdürü rütbesinin karşısındadır.",
       "articleRefs": [
         "13"
       ]
@@ -21,8 +21,8 @@
       "kind": "numeric",
       "difficulty": 2,
       "front": "Genel Müdür Yardımcısı, Teftiş Kurulu Başkanı ve Polis Akademisi Başkanı görev unvanları hangi meslek derecesi karşısında gösterilir?",
-      "back": "1. meslek derecesi; bu satırın rütbesi Sınıf Üstü Emniyet Müdürüdür.",
-      "explanation": "Aynı satırda Başkan, Merkez Emniyet Müdürü ve Emniyet Müşaviri unvanları da yer alır. Polis Akademisi Başkan Yardımcısı ile Teftiş Kurulu Başkan Yardımcısı ise 2. meslek derecesinde, Birinci Sınıf Emniyet Müdürü karşısındadır.",
+      "back": "1. meslek derecesi; bu satırın rütbesi Birinci Sınıf Emniyet Müdürüdür.",
+      "explanation": "Aynı satırda Başkan, Merkez Emniyet Müdürü ve Emniyet Müşaviri unvanları da yer alır. Polis Akademisi Başkan Yardımcısı ile Teftiş Kurulu Başkan Yardımcısı ise 2. meslek derecesindedir; o satırın rütbesi de Birinci Sınıf Emniyet Müdürüdür.",
       "articleRefs": [
         "13"
       ]

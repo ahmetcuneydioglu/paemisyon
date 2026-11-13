@@ -40,7 +40,7 @@
     {
       "type": "rule",
       "title": "Emniyet müdürü rütbeleri ve dereceleri",
-      "body": "**Emniyet müdürü rütbeleri (md 13):**\n- **Sınıf Üstü Emniyet Müdürü**\n  - **Derece Üstü:** Emniyet Genel Müdürü\n  - **1:** Genel Müdür Yardımcısı, Teftiş Kurulu Başkanı, Polis Akademisi Başkanı, Başkan, Merkez Emniyet Müdürü, Emniyet Müşaviri\n- **Birinci Sınıf Emniyet Müdürü – 2:** Daire Başkanı, Birinci Hukuk Müşaviri, İl Emniyet Müdürü, Polis Başmüfettişi, Polis Akademisi Başkan Yardımcısı, Teftiş Kurulu Başkan Yardımcısı, Teftiş Kurulu Grup Amiri, Polis Moral Eğitim Merkezi Müdürü ve diğerleri\n- **İkinci Sınıf Emniyet Müdürü – 3:** Kriminal Polis Laboratuvarı Müdürü, Daire Başkan Yardımcısı, İl Emniyet Müdür Yardımcısı, Polis Müfettişi, Hukuk Müşaviri, İlçe Emniyet Müdürü, Havacılık Müdürü, Özel Harekat Müdürü, Başkanlıklarda Şube Müdürü ve diğerleri\n- **Üçüncü Sınıf Emniyet Müdürü – 4:** Moral Eğitim Merkezi Müdür Yardımcısı, Hukuk Müşaviri, Şube Müdürü, İlçe Emniyet Müdürü, İlçe Emniyet Müdür Yardımcısı, Öğretim Görevlisi, Pilot\n- **Dördüncü Sınıf Emniyet Müdürü – 5:** Şube Müdürü, İlçe Emniyet Müdür Yardımcısı, Hukuk Müşaviri, Şube Müdür Yardımcısı, Öğretim Görevlisi, Pilot, İlçe Emniyet Müdürü",
+      "body": "**Emniyet müdürü rütbeleri (md 13):**\n- **Sınıf Üstü Emniyet Müdürü – Derece Üstü:** Emniyet Genel Müdürü\n- **Birinci Sınıf Emniyet Müdürü – 1:** Genel Müdür Yardımcısı, Teftiş Kurulu Başkanı, Polis Akademisi Başkanı, Başkan, Merkez Emniyet Müdürü, Emniyet Müşaviri\n- **Birinci Sınıf Emniyet Müdürü – 2:** Daire Başkanı, Birinci Hukuk Müşaviri, İl Emniyet Müdürü, Polis Başmüfettişi, Polis Akademisi Başkan Yardımcısı, Teftiş Kurulu Başkan Yardımcısı, Teftiş Kurulu Grup Amiri, Polis Moral Eğitim Merkezi Müdürü ve diğerleri\n- **İkinci Sınıf Emniyet Müdürü – 3:** Kriminal Polis Laboratuvarı Müdürü, Daire Başkan Yardımcısı, İl Emniyet Müdür Yardımcısı, Polis Müfettişi, Hukuk Müşaviri, İlçe Emniyet Müdürü, Havacılık Müdürü, Özel Harekat Müdürü, Başkanlıklarda Şube Müdürü ve diğerleri\n- **Üçüncü Sınıf Emniyet Müdürü – 4:** Moral Eğitim Merkezi Müdür Yardımcısı, Hukuk Müşaviri, Şube Müdürü, İlçe Emniyet Müdürü, İlçe Emniyet Müdür Yardımcısı, Öğretim Görevlisi, Pilot\n- **Dördüncü Sınıf Emniyet Müdürü – 5:** Şube Müdürü, İlçe Emniyet Müdür Yardımcısı, Hukuk Müşaviri, Şube Müdür Yardımcısı, Öğretim Görevlisi, Pilot, İlçe Emniyet Müdürü",
       "articleRefs": [
         "13"
       ]
@@ -48,7 +48,7 @@
     {
       "type": "trap",
       "title": "Tepedeki iki satırı karıştırma",
-      "body": "Emniyet Genel Müdürü **Sınıf Üstü Emniyet Müdürü – Derece Üstü** satırındadır. Şıklarda «Sınıf Üstü – 1» ya da «Birinci Sınıf – 1» görürsen ele. Genel Müdür Yardımcısı, Teftiş Kurulu Başkanı ve Polis Akademisi Başkanı ise **1. derecededir**. Bunları Derece Üstü'ne ya da 2. dereceye kaydırma. 2. derecede bunların yardımcıları yer alır: Polis Akademisi Başkan Yardımcısı ve Teftiş Kurulu Başkan Yardımcısı. Unvanın sonunda «Yardımcısı» varsa bir alt satıra in.",
+      "body": "Emniyet Genel Müdürü **Sınıf Üstü Emniyet Müdürü – Derece Üstü** satırındadır. Şıklarda «Sınıf Üstü – 1» ya da «Birinci Sınıf – 1» görürsen ele. Genel Müdür Yardımcısı, Teftiş Kurulu Başkanı ve Polis Akademisi Başkanı ise **Birinci Sınıf Emniyet Müdürü rütbesinin 1. derecesindedir**. Bunları Derece Üstü'ne ya da 2. dereceye kaydırma. 2. derecede bunların yardımcıları yer alır: Polis Akademisi Başkan Yardımcısı ve Teftiş Kurulu Başkan Yardımcısı. Unvanın sonunda «Yardımcısı» varsa bir alt satıra in.",
       "articleRefs": [
         "13"
       ],
@@ -86,14 +86,14 @@
       "rows": [
         {
           "label": "Sınıf Üstü Emniyet Müdürü",
-          "value": "Derece Üstü ve 1",
+          "value": "Derece Üstü",
           "refs": [
             "13"
           ]
         },
         {
           "label": "Birinci Sınıf Emniyet Müdürü",
-          "value": "2",
+          "value": "1 ve 2",
           "refs": [
             "13"
           ]

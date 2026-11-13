@@ -1,0 +1,298 @@
+{
+  "deck": {
+    "topicId": "18c6184c-6f45-4501-a075-0614a48ab77e",
+    "legislationSlug": "6458-sayili-yabancilar-ve-uluslararasi-koruma-kanunu",
+    "sourceLabel": "AI bilgi kartı — 6458 Sayılı Yabancılar ve Uluslararası Koruma Kanunu md 61–79",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: resmî madde metni + çıkmış sorular)"
+  },
+  "cards": [
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Zulüm korkusu taşıyan yabancıya mülteci statüsü mü yoksa şartlı mülteci statüsü mü verileceğini hangi ölçüt belirler?",
+      "back": "Olayların meydana geldiği yer belirler. Avrupa ülkelerinde meydana gelen olaylar mülteci statüsüne, Avrupa ülkeleri dışında meydana gelen olaylar şartlı mülteci statüsüne götürür.",
+      "explanation": "Zulüm sebepleri mülteci ve şartlı mülteci statülerinde aynıdır: ırkı, dini, tabiiyeti, belli bir toplumsal gruba mensubiyeti veya siyasi düşünceleri. Haklı sebeplerle korku şartı da bu iki statüde ortaktır. Statü, statü belirleme işlemleri sonrasında verilir.",
+      "articleRefs": [
+        "61",
+        "62"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Şartlı mültecinin Türkiye'de kalmasına ne zamana kadar izin verilir?",
+      "back": "Üçüncü ülkeye yerleştirilinceye kadar.",
+      "explanation": "Şartlı mülteci statüsü, Avrupa ülkeleri dışında meydana gelen olaylar nedeniyle zulüm korkusu taşıyan yabancıya ya da vatansız kişiye verilir. Statü, statü belirleme işlemleri sonrasında verilir.",
+      "articleRefs": [
+        "62"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Mülteci veya şartlı mülteci olarak nitelendirilemeyen bir yabancı, ülkesine geri gönderilirse ölüm cezasına mahkûm olacaksa ona hangi statü verilir?",
+      "back": "İkincil koruma statüsü verilir; statü belirleme işlemleri sonrasında.",
+      "explanation": "İkincil koruma hâlleri şunlardır: ölüm cezasına mahkûm olma ya da ölüm cezasının infaz edilmesi; işkenceye, insanlık dışı ya da onur kırıcı ceza veya muameleye maruz kalma; uluslararası veya ülke genelindeki silahlı çatışma durumlarında ayrım gözetmeyen şiddet hareketleri nedeniyle şahsına yönelik ciddi tehdit.",
+      "articleRefs": [
+        "63"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Başvuru sahibinin bir Birleşmiş Milletler organı veya örgütünden hâlen koruma ya da yardım görmesi hariçte tutma nedenidir; bu kuralın dışında bırakılan kuruluş hangisidir?",
+      "back": "Birleşmiş Milletler Mülteciler Yüksek Komiserliği. Bunun dışındaki bir Birleşmiş Milletler organı veya örgütünden hâlen koruma ya da yardım gören başvuru sahibi uluslararası korumadan hariçte tutulur.",
+      "explanation": "Bu koruma veya yardım herhangi bir nedenle sona erebilir. O hâlde kişilerin konumu Birleşmiş Milletler Genel Kurulunda alınan kararlara göre kesin bir çözüme kavuşturulmamışsa, bu kişiler Kanunun sağladığı korumadan yararlanabilir.",
+      "articleRefs": [
+        "64"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Kamu düzeni veya kamu güvenliği açısından tehlike oluşturduğuna dair ciddi emareler bulunan yabancı hangi korumadan hariçte tutulur?",
+      "back": "İkincil korumadan hariçte tutulur.",
+      "explanation": "Aynı sonuç başka bir kişi için de geçerlidir: Türkiye'de işlenmesi hâlinde hapis cezası gerektiren suçu daha önce işleyen ve sadece bu suçun cezasını çekmemek için menşe veya ikamet ülkesini terk eden yabancı veya vatansız kişi de ikincil korumadan hariçte tutulur.",
+      "articleRefs": [
+        "64"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Hariçte tutma nedenlerinden hiçbiri aile üyeleri için oluşmamışsa, başvuru sahibinin uluslararası korumadan hariçte tutulması aile üyelerinin de hariçte tutulmasını gerektirir mi?",
+      "back": "Hayır, gerektirmez.",
+      "explanation": "Aile adına yapılan başvuru kural olarak bütün olarak değerlendirilir ve verilen karar tüm aile üyelerini kapsar. Bu kural, hariçte tutmaya ilişkin hüküm saklı kalmak kaydıyla uygulanır.",
+      "articleRefs": [
+        "64",
+        "78"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Uluslararası koruma başvurusu sınır kapısında kolluk birimine yapılırsa başvuruyla ilgili işlemleri kim yürütür?",
+      "back": "Valilik yürütür. Kolluk birimi başvuruyu derhâl valiliğe bildirir.",
+      "explanation": "Başvurular kural olarak valiliklere bizzat yapılır. Hürriyeti kısıtlanan kişilerin başvuruları da valiliğe derhâl bildirilir. Başvurunun alınması ve değerlendirilmesi, diğer adli ve idari işlemlerin ya da tedbir ve yaptırımların uygulanmasını engellemez.",
+      "articleRefs": [
+        "65"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Makul süre içinde valiliğe kendiliğinden başvuran kişi hakkında yasa dışı giriş nedeniyle cezai işlem yapılmaması hangi kayda bağlıdır?",
+      "back": "Kişinin yasa dışı girişinin veya kalışının geçerli nedenlerini açıklaması kaydına bağlıdır.",
+      "explanation": "Bu kayıt yerine getirilirse, Türkiye'ye yasal giriş şartlarını ihlal etmekten veya Türkiye'de yasal şekilde bulunmamaktan dolayı cezai işlem yapılmaz.",
+      "articleRefs": [
+        "65"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Fiziki görünümü beyan ettiği yaşla uyumlu görülmeyen yabancı için yaptırılan yaş tespitinde hangi yaş sınırı esas alınır?",
+      "back": "On sekiz yaş. Yaş tespiti sağlık kuruluşlarında yaptırılır; on sekiz yaşından küçük olduğu tespit edilenler Aile ve Sosyal Hizmetler Bakanlığı (metinde: Aile, Çalışma ve Sosyal Hizmetler Bakanlığı) il müdürlüklerine teslim edilir.",
+      "explanation": "Refakatsiz çocuklarla ilgili tüm işlemlerde çocuğun yüksek yararı esastır. Başvuru alındığı andan itibaren 5395 sayılı Çocuk Koruma Kanunu hükümleri uygulanır. Çocuk, görüşü dikkate alınarak uygun konaklama yerlerine, yetişkin akrabalarının veya koruyucu bir ailenin yanına yerleştirilir.",
+      "articleRefs": [
+        "66"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "İşkence ya da cinsel saldırıya maruz kalmış kişilere ne sağlanır?",
+      "back": "Bu fiillerin neden olduğu hasarlarını giderecek yeterli tedavi imkânı sağlanır.",
+      "explanation": "Kural, diğer ciddi psikolojik, bedensel ya da cinsel şiddete maruz kalan kişileri de kapsar. Özel ihtiyaç sahiplerine bu Kısımda yazılı hak ve işlemlerde öncelik tanınır.",
+      "articleRefs": [
+        "67"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Uluslararası koruma başvuru sahibinin idari gözetim süresi en fazla ne kadardır?",
+      "back": "Otuz gün. İşlemler en kısa sürede tamamlanır; şartları ortadan kalkarsa idari gözetim derhâl sonlandırılır.",
+      "explanation": "İdari gözetim istisnai bir işlemdir; başvuru sahibi sadece başvuruda bulunduğu için gözetim altına alınamaz. Sayılan hâller şunlardır: kimlik veya vatandaşlık bilgilerinin doğruluğuyla ilgili ciddi şüphe, sınır kapılarında usulüne aykırı surette ülkeye girmekten alıkoyma, başvuruya temel oluşturan unsurların belirlenemeyecek olması, kamu düzeni veya kamu güvenliği açısından ciddi tehlike.",
+      "articleRefs": [
+        "68"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "İdari gözetime karşı yapılan başvuruyu sulh ceza hâkimi kaç gün içinde sonuçlandırır?",
+      "back": "Beş gün içinde sonuçlandırır. Sulh ceza hâkiminin kararı kesindir.",
+      "explanation": "Başvuruyu idari gözetim altına alınan kişi, yasal temsilcisi ya da avukatı yapabilir. Dilekçe idareye verilirse yetkili sulh ceza hâkimine derhâl ulaştırılır. İdari gözetim şartlarının ortadan kalktığı veya değiştiği iddiasıyla yeniden başvurulabilir.",
+      "articleRefs": [
+        "68"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "İdari gözetime karşı sulh ceza hâkimine başvurmak idari gözetimi durdurur mu?",
+      "back": "Hayır. Başvuru idari gözetimi durdurmaz.",
+      "explanation": "Kararı alan makam, idari gözetimin her aşamasında gözetimi sonlandırabilir. Bunun yerine 71 inci maddede belirtilen yükümlülüklerin veya başka tedbirlerin yerine getirilmesini isteyebilir.",
+      "articleRefs": [
+        "68"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Kayıtta kimlik belgesi olmayan başvuru sahibi hakkında araştırmalardan da kimlik bilgisi elde edilemezse ne esas alınır?",
+      "back": "Başvuranın beyanı esas alınır.",
+      "explanation": "Belge yoksa önce kişisel verilerin karşılaştırılmasından ve yapılan araştırmalardan elde edilen bilgiler kullanılır. Başvuru sahibi kimlik bilgilerini doğru bildirmek ve varsa kimlik belgelerini ve seyahat dokümanlarını teslim etmekle yükümlüdür. Bu yükümlülük için üzerinde ve eşyalarında kontrol yapılabilir.",
+      "articleRefs": [
+        "69"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Uluslararası koruma başvuru sahibine hangi idari yükümlülükler getirilebilir?",
+      "back": "Gösterilen kabul ve barınma merkezinde, belirli bir yerde veya ilde ikamet etme zorunluluğu getirilebilir. İstenilen şekil ve sürelerde bildirimde bulunma gibi yükümlülükler de getirilebilir.",
+      "explanation": "İdari gözetim altına almadan önce, ikamet zorunluluğu ve bildirim yükümlülüğünün yeterli olup olmayacağı öncelikle değerlendirilir. Bu tedbirler yeterli olmazsa idari gözetim uygulanır. Başvuru sahibi ayrıca adres kayıt sistemine kayıt yaptırmak ve ikamet adresini valiliğe bildirmekle yükümlüdür.",
+      "articleRefs": [
+        "71",
+        "68"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Başvuru sahibi farklı bir gerekçe öne sürmeksizin aynı başvuruyu yenilerse hakkında hangi karar verilir?",
+      "back": "Başvurusunun kabul edilemez olduğuna ilişkin karar verilir.",
+      "explanation": "Bu durum değerlendirmenin herhangi bir aşamasında ortaya çıkarsa değerlendirme durdurulur. Karar ilgiliye, yasal temsilcisine ya da avukatına tebliğ edilir. Kişi avukatla temsil edilmiyorsa kararın sonucu, itiraz usulleri ve süreleri hakkında bilgilendirilir.",
+      "articleRefs": [
+        "72"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "İlk iltica ülkesine gönderilmesi için işlem başlatılan başvuru sahibinin, gönderilinceye kadar Türkiye'de kalmasına izin verilir mi?",
+      "back": "Evet. Geri gönderme işlemi gerçekleşinceye kadar kalışına izin verilir ve durum ilgiliye tebliğ edilir. O ülke ilgiliyi kabul etmezse başvuruya ilişkin işlemler devam ettirilir.",
+      "explanation": "İlk iltica ülkesi, başvuru sahibinin daha önce mülteci olarak tanındığı ve hâlen bu korumadan yararlanabildiği ülkedir. Geri göndermeme ilkesini de içeren yeterli ve etkili korumadan hâlen faydalanabileceği ülke de bu kapsamdadır. Bu ülkeden geldiği anlaşılan kişinin başvurusu kabul edilemez olarak değerlendirilir.",
+      "articleRefs": [
+        "73"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Bir ülkenin başvuru sahibi için güvenli üçüncü ülke olup olmadığı nasıl değerlendirilir?",
+      "back": "Her başvuru sahibi için ayrı olarak değerlendirilir. Kişiyi o ülkeye göndermeyi makul kılacak, kişi ile ülke arasındaki bağlantılar da dâhil edilir.",
+      "explanation": "Güvenli üçüncü ülke sayılma şartları şunlardır: kişilerin hayatının veya hürriyetinin ırkı, dini, tabiiyeti, belli bir toplumsal gruba mensubiyeti veya siyasi düşünceleri nedeniyle tehdit altında olmaması; işkenceye, insanlık dışı ya da onur kırıcı ceza veya muameleye tabi tutulacağı ülkelere geri gönderilmeme ilkesinin uygulanması; mülteci statüsü talep etme ve Sözleşmeye uygun koruma elde etme imkânının bulunması; ciddi zarar görme riskinin olmaması.",
+      "articleRefs": [
+        "74"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Uluslararası koruma başvuru sahibiyle bireysel mülakat kayıt tarihinden itibaren kaç gün içinde yapılır?",
+      "back": "Otuz gün içinde yapılır. Mülakatın mahremiyeti gözetilir ve kişiye kendini en iyi şekilde ifade etme imkânı tanınır.",
+      "explanation": "Aile üyelerinin bulunması gerekli görülürse, kişinin muvafakati alınarak mülakat aile üyeleriyle birlikte yapılabilir. Gerekli görüldüğünde ek mülakatlar yapılabilir. Her mülakatın sonunda tutanak düzenlenir ve bir örneği mülakat yapılan kişiye verilir.",
+      "articleRefs": [
+        "75"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Gerçekleştirilemeyen mülakat için yeni tarih belirlenirken mülakat tarihleri arasında en az kaç gün bulunmalıdır?",
+      "back": "En az on gün bulunmalıdır. Yeni mülakat tarihi ilgili kişiye tebliğ edilir.",
+      "articleRefs": [
+        "75"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Başvuru sahibinin avukatı mülakata neye bağlı olarak ve hangi sıfatla katılabilir?",
+      "back": "Başvuru sahibinin talebi üzerine, gözlemci olarak katılabilir.",
+      "explanation": "Çocuğun mülakatında psikolog, çocuk gelişimci veya sosyal çalışmacı ya da ebeveyni veya yasal temsilcisi hazır bulunabilir. Mülakatlar sesli veya görsel olarak kayıt altına alınabilir; bu durumda mülakat yapılan kişi bilgilendirilir.",
+      "articleRefs": [
+        "75"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Uluslararası Koruma Başvuru Sahibi Kimlik Belgesi neyin yerine geçer?",
+      "back": "İkamet izni yerine geçer. Belge hiçbir harca tabi değildir.",
+      "explanation": "Belge, kayıt işlemleri tamamlanan başvuru sahibine ve varsa birlikte geldiği aile üyelerine düzenlenir. Uluslararası koruma talebinde bulunulduğunu belirtir ve yabancı kimlik numarasını içerir. Şekli ve içeriğini Göç İdaresi Başkanlığı (metinde: Genel Müdürlük) belirler. Geçerlilik süresi ile uzatılmasına ilişkin usul ve esasları Bakanlık düzenler.",
+      "articleRefs": [
+        "76"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Başvuru sahibi mazeretsiz olarak mülakata üst üste kaç defa gelmezse başvurusu geri çekilmiş kabul edilir?",
+      "back": "Üç defa üst üste gelmezse başvurusu geri çekilmiş kabul edilir ve değerlendirme durdurulur.",
+      "explanation": "Bildirim yükümlülüğünü mazeretsiz olarak üç defa üst üste yerine getirmemek de aynı sonucu doğurur. Geri çekilmiş sayılma hâlleri arasında başvurunun yazılı olarak geri çekilmesi, idari gözetim altında bulunulan yerden kaçma ve kişisel verilerin alınmasına karşı çıkma da bulunur.",
+      "articleRefs": [
+        "77"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Uluslararası koruma başvuruları kayıt tarihinden itibaren en geç ne kadar sürede sonuçlandırılır?",
+      "back": "En geç altı ay içinde Göç İdaresi Başkanlığınca (metinde: Genel Müdürlük) sonuçlandırılır. Karar bu sürede verilemezse başvuru sahibi bilgilendirilir.",
+      "explanation": "Başkanlık bu yetkilerini valiliklere devredebilir. Karar ilgiliye, yasal temsilcisine ya da avukatına tebliğ edilir. Olumsuz kararın tebliğinde kararın maddi gerekçeleri ve hukuki dayanakları da belirtilir.",
+      "articleRefs": [
+        "78"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Başvuru sahibine ülkesinin belirli bir bölgesinde koruma sağlanabilmesi, başvurunun tam incelemeye tabi tutulmasını engeller mi?",
+      "back": "Hayır, tam incelemeyi engellemez. Kişi o bölgeye güvenli şekilde seyahat edip yerleşebilecek durumdaysa uluslararası korumaya muhtaç olmadığına karar verilebilir.",
+      "explanation": "Karar verilirken menşe veya önceki ikamet ülkesinin mevcut genel şartları ile başvuru sahibinin kişisel şartları göz önünde bulundurulur. Kararlar bireysel olarak verilir.",
+      "articleRefs": [
+        "78"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Hızlandırılmış değerlendirmede başvuru sahibiyle mülakat, başvuru tarihinden itibaren en geç kaç gün içinde yapılır?",
+      "back": "En geç üç gün içinde yapılır.",
+      "explanation": "Hızlandırılmış değerlendirme hâlleri arasında şunlar bulunur: sahte belge ya da yanıltıcı bilgi ve belge kullanarak yetkilileri yanlış yönlendirme, sınır dışı edilmek üzere idari gözetim altında olma ve başvurunun geri çekilmiş sayılmasından sonra yeniden başvuruda bulunma.",
+      "articleRefs": [
+        "79"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Hızlandırılmış değerlendirmede başvuru mülakattan sonra en geç kaç gün içinde sonuçlandırılır?",
+      "back": "En geç beş gün içinde sonuçlandırılır. Bu süre başvuru tarihinden değil, mülakattan itibaren işler.",
+      "explanation": "Hızlandırılmış değerlendirilen başvurulardan incelenmesinin uzun süreceği anlaşılanlar, hızlandırılmış değerlendirmeden çıkarılabilir.",
+      "articleRefs": [
+        "79"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Refakatsiz çocuğun uluslararası koruma başvurusu hızlandırılmış olarak değerlendirilebilir mi?",
+      "back": "Hayır. Refakatsiz çocukların başvuruları hızlandırılmış olarak değerlendirilemez.",
+      "explanation": "Hızlandırılmış değerlendirme hâlleri arasında şunlar bulunur: sadece Türkiye'den gönderilmeye yol açacak bir kararın uygulanmasını erteletmek ya da engellemek amacıyla başvurma ve kamu düzeni veya kamu güvenliği açısından tehlike oluşturma.",
+      "articleRefs": [
+        "79"
+      ],
+      "counterNumbers": []
+    }
+  ]
+}

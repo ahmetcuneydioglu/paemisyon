@@ -16,6 +16,11 @@
  *            "ad":"5188 Sayılı Özel Güvenlik Hizmetlerine Dair Kanun",
  *            "kisa":"ÖGH", "ders":"Polis Mevzuatı",
  *            "aliases":["5188","ozel guvenlik"], "keywords":["5188 sayılı"] }]
+ *
+ * İsteğe bağlı (13 Kas 2026): "konu":"<derste zaten duran, mevzuatı OLMAYAN konunun adı>" → yeni konu açmaz,
+ * mevzuatı o konuya bağlar; "kes":{"43":"EK-1"} → o maddenin metnini verilen ifadenin başladığı yerde keser
+ * (PDF'te son maddeye yapışan ek/form için); "kimlikAd":"<PDF başlığındaki ad>" → kimlik bu adla doğrulanır
+ * (platform adı resmî başlıktan kısaysa).
  */
 import { readFileSync } from 'node:fs';
 import { PrismaClient, LegislationType } from '@prisma/client';
@@ -38,7 +43,7 @@ async function main() {
   for (const h of hedefler) {
     const ham = await extractPdfLawText(readFileSync(`${process.env.HOME}/Downloads/${h.dosya}`));
     // Yönetmelikte "Kanun Numarası" satırı yoktur; kimlik ADLA doğrulanır.
-    const kimlik = verifyLawIdentity(ham, { number: h.tur === 'kanun' ? h.no : null, name: h.ad });
+    const kimlik = verifyLawIdentity(ham, { number: h.tur === 'kanun' ? h.no : null, name: h.kimlikAd ?? h.ad });
     if (!kimlik.ok) { console.log(`✗ ${h.no}: KİMLİK DOĞRULANAMADI — ${kimlik.reason}; ATLANDI`); continue; }
     const belge = parseDocument(ham);
 
@@ -58,7 +63,16 @@ async function main() {
     };
     const gorulen = new Set<string>();
     const elenen: string[] = [];
+    for (const a of belge.articles) {
+      const kes = h.kes?.[a.articleNo];
+      if (kes && !gorulen.has(`kes:${a.articleNo}`)) {
+        const i = a.text.indexOf(kes);
+        if (i > 0) { a.text = a.text.slice(0, i).trimEnd(); elenen.push(`${a.articleNo} ("${kes}" sonrası kesildi)`); }
+        gorulen.add(`kes:${a.articleNo}`);
+      }
+    }
     const maddeler = belge.articles.filter((a) => {
+      if (a.text.trim().length < 20 && /^[,\s]/.test(a.text)) { elenen.push(`${a.articleNo} (cetvel artığı)`); return false; }
       if (cetvelMi(a.text)) { elenen.push(`${a.articleNo} (değişiklik cetveli)`); return false; }
       if (gorulen.has(a.articleNo)) { elenen.push(`${a.articleNo} (tekrar)`); return false; }
       gorulen.add(a.articleNo);
@@ -81,10 +95,21 @@ async function main() {
     const durum = PUBLISH ? 'published' : 'draft';
     const sira = Math.max(0, ...ders.topics.map((t) => t.sortOrder)) + 1;
     await prisma.$transaction(async (tx) => {
-    const konu = await tx.topic.create({
-      data: { courseId: ders.id, name: h.ad, sortOrder: sira, matchKeywords: h.keywords ?? [] },
-      select: { id: true },
-    });
+    let konu: { id: string };
+    if (h.konu) {
+      const mevcutKonu = await tx.topic.findFirst({
+        where: { courseId: ders.id, name: h.konu, deletedAt: null },
+        select: { id: true, legislation: { select: { id: true } } },
+      });
+      if (!mevcutKonu) throw new Error(`"${h.konu}" konusu derste bulunamadı`);
+      if (mevcutKonu.legislation) throw new Error(`"${h.konu}" konusuna zaten mevzuat bağlı`);
+      konu = { id: mevcutKonu.id };
+    } else {
+      konu = await tx.topic.create({
+        data: { courseId: ders.id, name: h.ad, sortOrder: sira, matchKeywords: h.keywords ?? [] },
+        select: { id: true },
+      });
+    }
     const kaynakUrl = h.tur === 'kanun'
       ? `https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=${h.no}&MevzuatTur=1&MevzuatTertip=5`
       : `https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=${h.no}&MevzuatTur=7&MevzuatTertip=5`;

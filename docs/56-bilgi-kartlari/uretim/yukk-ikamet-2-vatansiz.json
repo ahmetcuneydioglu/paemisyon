@@ -1,0 +1,246 @@
+{
+  "deck": {
+    "topicId": "18c6184c-6f45-4501-a075-0614a48ab77e",
+    "legislationSlug": "6458-sayili-yabancilar-ve-uluslararasi-koruma-kanunu",
+    "sourceLabel": "AI bilgi kartı — 6458 Sayılı Yabancılar ve Uluslararası Koruma Kanunu md 38–51",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: resmî madde metni + çıkmış sorular)"
+  },
+  "cards": [
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Türkiye'de bir yükseköğretim kurumunda hangi düzeylerde öğrenim görecek yabancılara öğrenci ikamet izni verilir?",
+      "back": "Ön lisans, lisans, yüksek lisans ya da doktora öğrenimi görecek yabancılara verilir.",
+      "explanation": "Kamu kurum ve kuruluşları aracılığıyla gelerek Türkiye'de öğrenim görecek yabancılara da öğrenim süresince ikamet izni verilebilir.",
+      "articleRefs": [
+        "38"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "İlk ve orta derecede öğrenim görecek yabancıya öğrenci ikamet izni hangi sürelerle verilebilir?",
+      "back": "Öğrenimleri süresince birer yıllık sürelerle verilebilir ve uzatılabilir.",
+      "explanation": "Bu izin için iki koşul vardır: bakım ve masrafları gerçek veya tüzel kişi üstlenmiş olmalı, velinin veya yasal temsilcinin muvafakati de alınmalıdır. Öğrenim süresi bir yıldan kısaysa öğrenci ikamet izninin süresi öğrenim süresini aşamaz.",
+      "articleRefs": [
+        "38"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Öğrenci ikamet izninin veriliş amacı dışında kullanıldığı belirlenirse ne olur?",
+      "back": "İzin verilmez; verilmişse iptal edilir, süresi de uzatılmaz.",
+      "explanation": "Aynı sonucu doğuran öteki hâller şunlardır: md 39'da aranan şartların karşılanmaması veya ortadan kalkması, öğrenimin sürdürülemeyeceği konusunda kanıtların ortaya çıkması, hakkında geçerli sınır dışı etme kararı veya Türkiye'ye giriş yasağı bulunması.",
+      "articleRefs": [
+        "40"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Lisans öğrencisinin çalışma hakkı öğrenimin ilk yılında başlar mı?",
+      "back": "Hayır. Ön lisans ve lisans öğrencileri için çalışma hakkı ilk yıldan sonra başlar; çalışma izni almak kaydı da aranır.",
+      "explanation": "Örgün öğrenim gören ön lisans, lisans, yüksek lisans ve doktora öğrencileri çalışma izni almak kaydıyla çalışabilir. İlk yıldan sonra başlama kaydı ön lisans ve lisans öğrencileri içindir. Bu öğrencilerin çalışma hakkı ilgili kanunlar ve Cumhurbaşkanlığı kararnameleriyle düzenlenir.",
+      "articleRefs": [
+        "41"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Ön lisans ve lisans öğrencilerinin çalışma hakkına ilişkin usul ve esasları kim düzenler?",
+      "back": "Bakanlık ile Çalışma ve Sosyal Güvenlik Bakanlığı bu usul ve esasları müştereken düzenler.",
+      "articleRefs": [
+        "41"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Süresiz ikamet izni için yabancının Türkiye'de kesintisiz en az kaç yıl ikamet izniyle kalmış olması gerekir?",
+      "back": "Kesintisiz en az sekiz yıl. Bakanlığın belirlediği şartlara uyan yabancılar da bu izni alabilir; izni Bakanlığın onayıyla valilikler verir.",
+      "articleRefs": [
+        "42"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "İnsani ikamet izni sahibi, uzun dönem ikamet iznine geçiş hakkına sahip midir?",
+      "back": "Hayır. İnsani ikamet izni sahiplerine uzun dönem ikamet iznine geçiş hakkı tanınmaz.",
+      "explanation": "Geçiş hakkı tanınmayanlar şunlardır: mülteci, şartlı mülteci ve ikincil koruma statüsü sahipleri, insani ikamet izni sahipleri ve geçici koruma sağlananlar.",
+      "articleRefs": [
+        "42"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Uzun dönem ikamet iznine geçmek isteyen yabancı son kaç yıl içinde sosyal yardım almamış olmalıdır?",
+      "back": "Son üç yıl içinde sosyal yardım almamış olmalıdır.",
+      "articleRefs": [
+        "43"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Bakanlığın belirlediği şartlara sahip olduğu için uzun dönem ikamet izni uygun görülen yabancıda hangi şart yine de aranır?",
+      "back": "Yalnız kamu düzeni veya kamu güvenliği açısından tehdit oluşturmama şartı aranır; öteki şartlar aranmaz.",
+      "explanation": "Bu yabancılarda aranmayan şartlar şunlardır: kesintisiz en az sekiz yıl ikamet izniyle kalmış olmak, son üç yıl içinde sosyal yardım almamış olmak, kendisi veya varsa ailesinin geçimini sağlayacak yeterli ve düzenli gelir kaynağına sahip olmak, geçerli sağlık sigortasına sahip olmak.",
+      "articleRefs": [
+        "43"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Uzun dönem ikamet izni bulunan yabancı, Türk vatandaşlarına tanınan hangi haklardan yararlanamaz?",
+      "back": "Askerlik yapma yükümlülüğü, seçme ve seçilme, kamu görevlerine girme ve muaf olarak araç ithal etme bu hakların dışındadır.",
+      "explanation": "Özel kanunlardaki düzenlemeler de bu hakların dışındadır. Sosyal güvenliğe ilişkin kazanılmış haklar saklı kalır; bu hakların kullanımında ilgili mevzuat hükümlerine tabi olunur.",
+      "articleRefs": [
+        "44"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Uzun dönem ikamet izninin sağladığı haklara kısıtlama getirmeye kim yetkilidir?",
+      "back": "Cumhurbaşkanı; bu haklara kısmen veya tamamen kısıtlama getirebilir.",
+      "articleRefs": [
+        "44"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Uzun dönem ikamet izninin iptali için yabancının kamu düzeni veya kamu güvenliği açısından ciddi olmayan bir tehdit oluşturması yeterli midir?",
+      "back": "Hayır. İptal için tehdidin ciddi olması gerekir; izin, yabancının kamu düzeni veya kamu güvenliği açısından ciddi tehdit oluşturması hâlinde iptal edilir.",
+      "explanation": "Diğer iptal hâli şudur: yabancının sağlık, eğitim ve ülkesindeki zorunlu kamu hizmeti dışında bir nedenle kesintisiz bir yıldan fazla Türkiye dışında bulunması. Bu sebeple izni iptal edilenlerin yeniden başvuru usulü yönetmelikle belirlenir.",
+      "articleRefs": [
+        "45"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Valilikler insani ikamet iznini hangi makamın onayını alarak verebilir?",
+      "back": "Göç İdaresi Başkanlığının (metinde: Genel Müdürlük) onayı alınarak verebilir.",
+      "explanation": "İnsani ikamet izni diğer ikamet izinlerinin verilmesindeki şartlar aranmadan verilebilir ve uzatılabilir. İzin Bakanlıkça belirlenen sürelerle sınırlıdır.",
+      "articleRefs": [
+        "46"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "İnsani ikamet izni alan yabancı adres kayıt sistemine en geç ne zamana kadar kayıt yaptırmalıdır?",
+      "back": "İznin veriliş tarihinden itibaren en geç yirmi iş günü içinde kayıt yaptırmak zorundadır.",
+      "articleRefs": [
+        "46"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "İnsani ikamet izninin verilmesini zorunlu kılan şartlar ortadan kalkınca ne yapılır?",
+      "back": "İzin, Bakanlığın onayı alınarak valiliklerce iptal edilir ve uzatılmaz.",
+      "articleRefs": [
+        "47"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "İnsan ticareti mağduru olduğu yönünde kuvvetli şüphe duyulan yabancıya valiliklerce kaç gün süreli ikamet izni verilir?",
+      "back": "Otuz gün süreli ikamet izni verilir; diğer ikamet izinlerinin şartları aranmaz.",
+      "explanation": "İzin, kişinin yaşadıklarının etkisinden kurtulabilmesi ve yetkililerle iş birliği yapıp yapmayacağına karar verebilmesi amacıyla verilir. Mağdur olabileceği yönünde kuvvetli şüphe duyulanlar da bu kapsamdadır.",
+      "articleRefs": [
+        "48"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "İnsan ticareti mağduru ikamet izni her seferinde en fazla ne kadar süreyle uzatılabilir?",
+      "back": "En fazla altışar aylık sürelerle uzatılabilir.",
+      "explanation": "Uzatma sebebi mağdurun güvenliği, sağlığı veya özel durumudur.",
+      "articleRefs": [
+        "49"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "İnsan ticareti mağduru ikamet izninin altışar aylık uzatmalarında süreler toplamda en fazla ne kadar olabilir?",
+      "back": "Toplam üç yıl; bu süreler hiçbir şekilde üç yılı geçemez.",
+      "articleRefs": [
+        "49"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "İnsan ticareti mağduru ikamet izni hangi durumda iptal edilir?",
+      "back": "Yabancının kendi girişimleriyle suçun failleriyle yeniden bağ kurduğu belirlendiğinde iptal edilir.",
+      "articleRefs": [
+        "49"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Vatansızlığın tespitini kim yapar?",
+      "back": "Göç İdaresi Başkanlığı (metinde: Genel Müdürlük) yapar.",
+      "explanation": "Vatansız Kişi Kimlik Belgesi, Başkanlığın uygun görüşü alınarak valiliklerce düzenlenir. Kişi herhangi bir ülkenin vatandaşlığını kazanınca belge geçerliliğini kaybeder.",
+      "articleRefs": [
+        "50"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Vatansız Kişi Kimlik Belgesi kaç yılda bir yenilenir?",
+      "back": "İki yılda bir valiliklerce yenilenir. Belge hiçbir harca tabi değildir ve ikamet izni yerine geçer.",
+      "explanation": "Belgede yabancı kimlik numarası da yer alır. Bu belgeyle Türkiye'de geçirilen süreler, ikamet sürelerinin toplanmasında hesaba katılır.",
+      "articleRefs": [
+        "50"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Başka ülkeler tarafından vatansız kişi işlemi gören kişi, Vatansız Kişi Kimlik Belgesinin sağladığı yasal ikamet hakkından yararlanabilir mi?",
+      "back": "Hayır. Başka ülkeler tarafından vatansız kişi işlemi görenler bu haktan yararlandırılmaz.",
+      "explanation": "Vatansız Kişi Kimlik Belgesi, sahibine Türkiye'de yasal olarak ikamet edebilme hakkı sağlar. Vatansız kişiler bu belgeyi almakla yükümlüdür.",
+      "articleRefs": [
+        "50"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Vatansız Kişi Kimlik Belgesi sahibi sınır dışı edilebilir mi?",
+      "back": "Evet, ama yalnız kamu düzeni veya kamu güvenliği açısından ciddi tehdit oluşturuyorsa; bu durum yoksa sınır dışı edilmez.",
+      "articleRefs": [
+        "51"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Vatansız Kişi Kimlik Belgesi sahibi, yabancılarla ilgili işlemlerde aranan hangi şarttan muaf tutulur?",
+      "back": "Karşılıklılık şartından muaf tutulur.",
+      "explanation": "Bu kişiler Kanundaki ikamet izinlerinden birini almak üzere talepte de bulunabilir.",
+      "articleRefs": [
+        "51"
+      ]
+    }
+  ]
+}

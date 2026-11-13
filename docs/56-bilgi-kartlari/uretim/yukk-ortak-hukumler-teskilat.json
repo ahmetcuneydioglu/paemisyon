@@ -1,0 +1,150 @@
+{
+  "deck": {
+    "topicId": "18c6184c-6f45-4501-a075-0614a48ab77e",
+    "legislationSlug": "6458-sayili-yabancilar-ve-uluslararasi-koruma-kanunu",
+    "sourceLabel": "AI bilgi kartı — 6458 Sayılı Yabancılar ve Uluslararası Koruma Kanunu md 96–102, 111, 121, 121/A, 122, 124, Ek 1, Ek 2",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: resmî madde metni + çıkmış sorular)"
+  },
+  "cards": [
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Yabancıların toplumla karşılıklı uyumunu kolaylaştırmak için uyum faaliyetlerini kim planlayabilir?",
+      "back": "Göç İdaresi Başkanlığı (metinde: Genel Müdürlük); ülkenin ekonomik ve mali imkânları ölçüsünde planlayabilir.",
+      "explanation": "Planlamada kamu kurum ve kuruluşları, yerel yönetimler, sivil toplum kuruluşları, üniversiteler ile uluslararası kuruluşların öneri ve katkılarından da faydalanılır. Hedef, kişilere sosyal hayatın tüm alanlarında üçüncü kişilerin aracılığı olmadan bağımsız hareket edebilmelerini kolaylaştıracak bilgi ve beceriler kazandırmaktır.",
+      "articleRefs": [
+        "96"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Yabancıların katılabileceği temel kurslarda neler anlatılır?",
+      "back": "Ülkenin siyasi yapısı, dili, hukuki sistemi, kültürü ve tarihi ile hak ve yükümlülükler temel düzeyde anlatılır.",
+      "explanation": "Göç İdaresi Başkanlığı (metinde: Genel Müdürlük); kamusal ve özel mal ve hizmetlerden yararlanma, eğitime ve ekonomik faaliyetlere erişim ve temel sağlık hizmeti alma gibi konulardaki tanıtım ve bilgilendirme etkinliklerini kamu kurum ve kuruluşları ile sivil toplum kuruluşlarıyla iş birliği yaparak yaygınlaştırır.",
+      "articleRefs": [
+        "96"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Yabancı hangi nedenlerle ilgili valiliğe ya da Göç İdaresi Başkanlığına (metinde: Genel Müdürlük) davet edilebilir?",
+      "back": "Türkiye’ye girişi ya da kalışı hakkında inceleme ihtiyacı doğarsa, hakkında sınır dışı etme kararı alınma ihtimali varsa ya da Kanunun uygulanmasıyla ilgili bir işlem bildirilecekse davet edilebilir.",
+      "explanation": "Davet edilebilecek kişiler yabancılar, başvuru sahipleri ve uluslararası koruma statüsü sahibi kişilerdir.",
+      "articleRefs": [
+        "97"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Davete uymayan yabancı kolluk tarafından getirildiğinde bilgi alma süresi en çok ne kadardır?",
+      "back": "Dört saat; bilgi alma süresi dört saati geçemez.",
+      "explanation": "Davete uyulmadığında ya da uyulmayacağına ilişkin ciddi şüphe olduğunda yabancı, davet edilmeksizin kolluk tarafından getirilebilir.",
+      "articleRefs": [
+        "97"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Davete uymadığı için kolluk tarafından getirilen yabancıya bu işlem idari gözetim olarak uygulanabilir mi?",
+      "back": "Hayır; bu işlem idari gözetim olarak uygulanamaz.",
+      "explanation": "Yabancı yalnızca bilgi alınmak üzere getirilir.",
+      "articleRefs": [
+        "97"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Türkiye’ye girişi reddedilen yabancıyı taşıyıcı yalnızca geldiği ülkeye mi geri götürür?",
+      "back": "Hayır; taşıyıcı, yabancıyı geldiği ülkeye ya da kesin olarak kabul edileceği bir ülkeye geri götürmekle yükümlüdür.",
+      "explanation": "Bu yükümlülük, ülkeye giriş yapmak ya da transit geçmek üzere sınır kapısına getirilen ve girişi ya da transit geçişi herhangi bir nedenle reddedilen yabancılar için geçerlidir. Refakat gerekli görülürse refakatçilerin gidiş ve dönüşünü sağlamak da taşıyıcının yükümlülüğüdür.",
+      "articleRefs": [
+        "98"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Göç İdaresi Başkanlığı (metinde: Genel Müdürlük) taşıyıcılardan yolcu ve mürettebat bilgilerini hangi zamanlarda isteyebilir?",
+      "back": "Hareketleri öncesinde, hareketleri anında ve hareketleri sonrasında tüm yolcu ve mürettebat bilgilerini isteyebilir.",
+      "explanation": "Bu yetki; sınır kapılarına yolcu getiren, sınır kapılarından yolcu götüren ve Türkiye içinde yolcu taşıyan taşıyıcıları kapsar.",
+      "articleRefs": [
+        "98"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Yabancılara ait kişisel verileri kim alır, korur, saklar ve kullanır?",
+      "back": "Göç İdaresi Başkanlığı (metinde: Genel Müdürlük) ya da valilikler; ilgili mevzuata ve taraf olunan uluslararası anlaşmalara uygun olarak.",
+      "explanation": "Hüküm; yabancıların, başvuru sahiplerinin ve uluslararası koruma statüsü sahiplerinin kişisel verilerini kapsar.",
+      "articleRefs": [
+        "99"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "6458 sayılı Kanuna ilişkin tebligat işlemleri hangi kanuna göre yapılır?",
+      "back": "7201 sayılı Tebligat Kanunu hükümlerine göre yapılır.",
+      "explanation": "Uygulamaya ilişkin usul ve esaslar, ilgilinin yabancı olduğu ve varsa özel durumları da dikkate alınarak yönetmelikle düzenlenir.",
+      "articleRefs": [
+        "100"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Bir yerde birden fazla idare mahkemesi varsa, 6458 sayılı Kanunun uygulanmasına ilişkin davaların hangisinde görüleceğini kim belirler?",
+      "back": "Hâkimler ve Savcılar Kurulu belirler.",
+      "articleRefs": [
+        "101"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "6458 sayılı Kanuna göre verilen idari para cezası, tebliğ tarihinden itibaren kaç gün içinde ödenir?",
+      "back": "Otuz gün içinde ödenir.",
+      "explanation": "Bu cezaları valilik, Göç İdaresi Başkanlığı (metinde: Genel Müdürlük) ya da kolluk birimleri uygular. Cezaların uygulanması, Kanunda öngörülen diğer idari tedbirlerin uygulanmasına engel teşkil etmez.",
+      "articleRefs": [
+        "102"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Diğer mevzuatta yabancılara mahsus olarak geçen “ikamet tezkeresi” ibaresinden ne anlaşılır?",
+      "back": "Bu Kanundaki “ikamet izni” anlaşılır.",
+      "explanation": "Diğer mevzuatta 5683 sayılı Yabancıların Türkiye’de İkamet ve Seyahatleri Hakkında Kanuna yapılmış atıflar da bu Kanuna yapılmış sayılır.",
+      "articleRefs": [
+        "122"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Göçmen kaçakçılığı suçunun işlenmesinde kullanılan araca hangi hükme göre elkonulur?",
+      "back": "5271 sayılı Ceza Muhakemesi Kanununun 128 inci maddesinin dördüncü fıkrası hükmüne göre elkonulur.",
+      "articleRefs": [
+        "Ek 1"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Göçmen kaçakçılığında elkonulan araç hangi hallerde sahibine iade edilmez?",
+      "back": "Araç soruşturma ve kovuşturma sürerken aynı suçta tekrar kullanılırsa, Türkiye’de sicile kayıtlı değilse, toplam yolcu sayısına göre önemli sayıda göçmen taşırken ele geçirilirse ya da suçu kolaylaştıracak özel tertibatı varsa iade edilmez.",
+      "explanation": "Bu hallerden birinin bulunması yeterlidir. Ancak sahibi, aracın değeri kadar teminatı elkoyma tarihinden itibaren otuz gün içinde teslim ederse araç iade edilir.",
+      "articleRefs": [
+        "Ek 1"
+      ]
+    }
+  ]
+}

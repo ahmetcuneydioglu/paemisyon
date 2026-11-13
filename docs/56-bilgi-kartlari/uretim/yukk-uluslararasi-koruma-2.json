@@ -1,0 +1,254 @@
+{
+  "deck": {
+    "topicId": "18c6184c-6f45-4501-a075-0614a48ab77e",
+    "legislationSlug": "6458-sayili-yabancilar-ve-uluslararasi-koruma-kanunu",
+    "sourceLabel": "AI bilgi kartı — 6458 Sayılı Yabancılar ve Uluslararası Koruma Kanunu md 80–95",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: resmî madde metni + çıkmış sorular)"
+  },
+  "cards": [
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Uluslararası koruma kapsamında verilen kararlara karşı, genel kural olarak Uluslararası Koruma Değerlendirme Komisyonuna kaç gün içinde itiraz edilebilir?",
+      "back": "Kararın tebliğinden itibaren on gün içinde; itirazı ilgili kişi, yasal temsilcisi ya da avukatı yapabilir.",
+      "explanation": "İdari itiraz sonucu alınan karar ilgiliye, yasal temsilcisine ya da avukatına tebliğ edilir. Karar olumsuzsa ve kişi avukatla temsil edilmiyorsa, kendisi ya da yasal temsilcisi kararın sonucu, itiraz usulleri ve süreleri hakkında bilgilendirilir. İtiraz ya da yargılama süreci sonuçlanıncaya kadar kişinin ülkede kalışına izin verilir.",
+      "articleRefs": [
+        "80"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "72. maddeye göre verilen bir karara karşı Uluslararası Koruma Değerlendirme Komisyonuna itiraz edilebilir mi?",
+      "back": "Hayır. 68, 72 ve 79. maddelere göre verilen kararlara karşı sadece yargı yoluna başvurulabilir.",
+      "explanation": "72 ve 79. maddeler çerçevesindeki kararlarda idare mahkemesine başvuru süresi tebliğden itibaren 15 gündür. Mahkeme bu başvuruyu 15 gün içinde sonuçlandırır ve verdiği karar kesindir.",
+      "articleRefs": [
+        "80"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "68, 72 ve 79. maddeler dışında kalan idari karar ve işlemlere karşı yetkili idare mahkemesine kaç gün içinde başvurulabilir?",
+      "back": "Kararın tebliğinden itibaren 30 gün içinde; başvuruyu ilgili kişi, yasal temsilcisi ya da avukatı yapabilir.",
+      "explanation": "72 ve 79. maddeler çerçevesinde alınan kararlarda bu süre tebliğden itibaren 15 gündür. 68. maddede düzenlenen yargı yolu bu sürelerin dışında tutulmuştur.",
+      "articleRefs": [
+        "80"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Avukatlık ücretini karşılayamayan başvuru sahibine, yargı önündeki başvurularında avukatlık hizmeti hangi hükümlere göre sağlanır?",
+      "back": "1136 sayılı Kanunun adli yardım hükümlerine göre sağlanır.",
+      "explanation": "Ücretini kendisi karşılayan başvuru sahibi ve uluslararası koruma statüsü sahibi, bu Kısımdaki iş ve işlemlerde avukatla temsil edilebilir. Bu kişiler sivil toplum kuruluşlarının sağladığı danışmanlık hizmetlerinden de faydalanabilir.",
+      "articleRefs": [
+        "81"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Göç İdaresi Başkanlığı (metinde: Genel Müdürlük), şartlı mülteciye belirli bir ilde ikamet etme yükümlülüğünü hangi nedenle getirebilir?",
+      "back": "Kamu düzeni veya kamu güvenliği nedeniyle; belirlenen süre ve usullerle bildirimde bulunma yükümlülüğü de getirilebilir.",
+      "explanation": "Aynı yetki ikincil koruma statüsü sahibi için de geçerlidir. Bu kişiler ayrıca adres kayıt sistemine kayıt yaptırmak ve ikamet adreslerini valiliğe bildirmekle yükümlüdür.",
+      "articleRefs": [
+        "82"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Mülteci, şartlı mülteci ve ikincil koruma statüsü verilenlere düzenlenen kimlik belgesi, üç statü için de ortak olarak hangi iznin yerine geçer?",
+      "back": "İkamet izni yerine geçer; belge hiçbir harca tabi değildir.",
+      "explanation": "Belge, yabancı kimlik numarasını içerir. Şekli, içeriği, geçerlilik süresi ve uzatılmasına ilişkin usul ve esasları Bakanlık düzenler.",
+      "articleRefs": [
+        "83"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Mültecilere Sözleşmede belirtilen seyahat belgesini kim düzenler?",
+      "back": "Valilikler düzenler.",
+      "explanation": "Şartlı mülteci ve ikincil koruma statüsü sahiplerinin seyahat belgesi talepleri ise 5682 sayılı Kanunun 18. maddesi çerçevesinde değerlendirilir.",
+      "articleRefs": [
+        "84"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Kişinin kendi isteğiyle yaptığı hangi davranışlar uluslararası koruma statüsünü sona erdirir?",
+      "back": "Vatandaşı olduğu ülkenin korumasından tekrar yararlanmak, kaybettiği vatandaşlığı tekrar kazanmak, terk ettiği ülkeye tekrar dönmek ve Türkiye'den ayrılmak bunlar arasındadır.",
+      "explanation": "Üçüncü bir ülkenin korumasından faydalanmak, üçüncü bir ülkeye insani nedenler veya yeniden yerleştirme kapsamında kabul edilmek, üçüncü bir ülkeye çıkış yapmak ve ölüm de statüyü sona erdirir. Bu hâllerde 84. maddedeki hükümler saklıdır.",
+      "articleRefs": [
+        "85"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Statü verilmesini sağlayan koşulların ortadan kalktığı gerekçesiyle sona erme incelenirken neye bakılır?",
+      "back": "Şartların ortadan kalkıp kalkmadığına ya da önemli ve kalıcı bir şekilde değişip değişmediğine bakılır.",
+      "explanation": "İkincil koruma statüsü, verilmesine neden olan şartlar ortadan kalktığında veya korumaya gerek bırakmayacak derecede değiştiğinde de sona erer. Burada da değişikliğin önemli ve kalıcı olup olmadığı göz önünde bulundurulur.",
+      "articleRefs": [
+        "85"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Statüsü yeniden değerlendirilen kişiye, değerlendirme ve nedenleri yazılı olarak bildirildikten sonra hangi fırsat verilir?",
+      "back": "Statüsünün devam etmesi gerektiğine ilişkin nedenlerini sözlü veya yazılı şekilde sunma fırsatı verilir.",
+      "explanation": "Sona erme kararı maddi gerekçelerini ve hukuki dayanaklarını içerir; ilgiliye, yasal temsilcisine ya da avukatına tebliğ edilir. Kişi avukatla temsil edilmiyorsa, kendisi ya da yasal temsilcisi kararın sonucu, itiraz usulleri ve süreleri hakkında bilgilendirilir.",
+      "articleRefs": [
+        "85"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Uluslararası koruma statüsü hangi hâllerde iptal edilir?",
+      "back": "İki hâlde: kişi sahte belge kullanma, hile, aldatma yoluyla ya da beyan etmediği gerçeklerle statü verilmesine neden olmuşsa; ya da statü verildikten sonra 64. madde çerçevesinde hariçte tutulması gerektiği anlaşılmışsa.",
+      "explanation": "İptal kararı maddi gerekçelerini ve hukuki dayanaklarını içerir; ilgiliye, yasal temsilcisine ya da avukatına tebliğ edilir. Kişi avukatla temsil edilmiyorsa, kendisi ya da yasal temsilcisi kararın sonucu, itiraz usulleri ve süreleri hakkında bilgilendirilir.",
+      "articleRefs": [
+        "86"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Gönüllü olarak geri dönmek isteyen başvuru sahibine ne tür destek sağlanabilir?",
+      "back": "Ayni ve nakdi destek sağlanabilir.",
+      "explanation": "Göç İdaresi Başkanlığı (metinde: Genel Müdürlük), gönüllü geri dönüş çalışmalarını uluslararası kuruluşlar, kamu kurum ve kuruluşları ve sivil toplum kuruluşlarıyla iş birliği içinde yapabilir.",
+      "articleRefs": [
+        "87"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Uluslararası koruma statüsü sahibi kişiler hangi şarttan muaftır?",
+      "back": "Karşılıklılık şartından muaftır.",
+      "explanation": "Başvuru sahibine, başvurusu reddedilenlere ve uluslararası koruma statüsü sahiplerine sağlanan hak ve imkânlar, Türk vatandaşlarına sağlanan hak ve imkânlardan fazla olacak şekilde yorumlanamaz.",
+      "articleRefs": [
+        "88"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Sağlık güvencesi ve ödeme gücü olmayan başvuru sahibi, başvuru kaydından itibaren ne kadar süre genel sağlık sigortası hükümlerine tabi olur?",
+      "back": "1 yıl; bu sürede 5510 sayılı Sosyal Sigortalar ve Genel Sağlık Sigortası Kanunu hükümlerine tabi olur.",
+      "explanation": "Özel ihtiyaç sahipleri ve Bakanlıkça sigorta kaydının devamı uygun görülenler için bir yıl sınırı aranmaz. Primleri Göç İdaresi Başkanlığı (metinde: Genel Müdürlük) tarafından ödenenlerden, ödeme güçlerine göre primin tamamı veya belli bir oranı talep edilir. Başvurusu hakkında idarece olumsuz karar verilen yabancılar kapsamdan çıkarılır.",
+      "articleRefs": [
+        "89"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Başvuru sahibi, uluslararası koruma başvurusu tarihinden ne kadar süre sonra çalışma izni almak için başvurabilir?",
+      "back": "6 ay sonra; aynı kural şartlı mülteci için de geçerlidir.",
+      "explanation": "Mülteci ve ikincil koruma statüsü sahibi ise statü almasından itibaren bağımlı veya bağımsız olarak çalışabilir. Bu kişilere verilen kimlik belgesi çalışma izni yerine de geçer ve bu durum kimlik belgesine yazılır.",
+      "articleRefs": [
+        "89"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Mültecinin iş piyasasına erişimine getirilebilecek sektörel ya da coğrafi sınırlamalar, Türkiye'de kaç yıl ikamet ettikten sonra uygulanmaz?",
+      "back": "3 yıl; Türk vatandaşıyla evli olan ya da Türk vatandaşı çocuğu olan mülteci ve ikincil koruma statüsü sahibine de bu sınırlamalar uygulanmaz.",
+      "explanation": "Sınırlama; iş piyasasındaki durum, çalışma hayatındaki gelişmeler ve istihdama ilişkin sektörel ve ekonomik şartların gerekli kıldığı hâllerde, belirli bir süre için tarım, sanayi veya hizmet sektörleri, belirli bir meslek, iş kolu veya mülki ve coğrafi alan itibarıyla getirilebilir.",
+      "articleRefs": [
+        "89"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Başvuru sahibi, gelirlerini ve taşınır ile taşınmazlarını kaç gün içinde bildirmekle yükümlüdür?",
+      "back": "30 gün içinde; çalışma durumuna ait güncel bilgiler de aynı sürede bildirilir.",
+      "explanation": "Bu yükümlülük uluslararası koruma statüsü sahibi için de geçerlidir ve bu Kısımda yazılı diğer yükümlülüklere eklenir.",
+      "articleRefs": [
+        "90"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Uluslararası koruma statüsü sahibi, adres, kimlik ve medeni hâl değişikliklerini hangi süre içinde bildirir?",
+      "back": "20 iş günü içinde bildirir.",
+      "explanation": "Kişi ayrıca haksız olarak yararlandığı tespit edilen hizmet, yardım ve diğer imkânların bedellerini tamamen veya kısmen geri ödemek ve Göç İdaresi Başkanlığınca (metinde: Genel Müdürlük) bu Kısım çerçevesinde istenilenleri yerine getirmekle yükümlüdür.",
+      "articleRefs": [
+        "90"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Yükümlülüklerine uymayan başvuru sahibinin eğitim hakkı sınırlandırılabilir mi?",
+      "back": "Hayır. Eğitim ve temel sağlık hakları hariç, diğer haklardan faydalanmasına sınırlama getirilebilir.",
+      "explanation": "Sınırlamaya ilişkin değerlendirme bireysel yapılır; karar ilgiliye, yasal temsilcisine ya da avukatına yazılı olarak tebliğ edilir. Aynı sınırlama, başvuruları ve statüleriyle ilgili olumsuz karar verilenlere de getirilebilir.",
+      "articleRefs": [
+        "90"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Geçici koruma hangi yabancılara sağlanabilir?",
+      "back": "Ülkesinden ayrılmaya zorlanmış, ayrıldığı ülkeye geri dönemeyen, acil ve geçici koruma bulmak amacıyla kitlesel olarak sınırlarımıza gelen veya sınırlarımızı geçen yabancılara.",
+      "articleRefs": [
+        "91"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Geçici koruma sağlanan kişilerin Türkiye'ye kabulü, kalışı, hak ve yükümlülükleri hangi düzenlemeyle belirlenir?",
+      "back": "Cumhurbaşkanı tarafından çıkarılacak yönetmelikle belirlenir.",
+      "explanation": "Aynı yönetmelik; Türkiye'den çıkışta yapılacak işlemleri, kitlesel hareketlere karşı alınacak tedbirleri, ulusal ve uluslararası kurum ve kuruluşlar arasındaki iş birliği ve koordinasyonu, merkez ve taşrada görev alacak kurum ve kuruluşların görev ve yetkilerini de düzenler.",
+      "articleRefs": [
+        "91"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Birleşmiş Milletler Mülteciler Yüksek Komiserliği, başvuru sahibinin onayı aranmadan başvurusuyla ilgili bilgilere erişebilir mi?",
+      "back": "Hayır. Başvuruyla ilgili bilgilere erişim, başvuru sahibinin de kabul etmesi şartıyla sağlanır; başvuru sahiplerine erişimi ise sınır kapıları dâhil sağlanır.",
+      "explanation": "Birleşmiş Milletler Mülteciler Yüksek Komiserliği başvurunun her aşamasında görüşlerini yetkililere iletebilir. Bakanlık, Dışişleri Bakanlığının uygun görüşünü alarak Komiserlikle uluslararası anlaşma niteliği taşımayan protokoller yapmaya yetkilidir.",
+      "articleRefs": [
+        "92"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Başvuru sahibinin avukatı, kişisel dosyadaki millî güvenliğin korunmasına ilişkin belgeleri inceleyebilir mi?",
+      "back": "Hayır. Millî güvenlik ve kamu düzeninin korunması ile suç işlenmesinin önlenmesine ilişkin belgeler incelenemez ve verilemez.",
+      "explanation": "Başvuru sahibinin ve statü sahibinin tüm bilgi ve belgelerinde gizlilik esastır. Bununla birlikte kişinin kendisi, yasal temsilcisi veya avukatı kişisel dosyadaki diğer belgeleri inceleyebilir ve birer örneğini alabilir.",
+      "articleRefs": [
+        "94"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Kabul ve barınma merkezlerini kural olarak Göç İdaresi Başkanlığı (metinde: Genel Müdürlük) mü işletir?",
+      "back": "Hayır. Merkezler valilikler tarafından işletilir; Başkanlık ise protokol yaparak merkezleri işlettirebilir.",
+      "explanation": "Protokol; kamu kurum ve kuruluşları, Türkiye Kızılay Derneği ve göç alanında uzmanlığı bulunan kamu yararına çalışan derneklerle yapılabilir. Merkezleri kurma yetkisi Başkanlıktadır ve merkezlerde özel ihtiyaç sahiplerinin barındırılmasına öncelik verilir.",
+      "articleRefs": [
+        "95"
+      ],
+      "counterNumbers": []
+    }
+  ]
+}

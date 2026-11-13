@@ -1,0 +1,305 @@
+{
+  "deck": {
+    "topicId": "18c6184c-6f45-4501-a075-0614a48ab77e",
+    "legislationSlug": "6458-sayili-yabancilar-ve-uluslararasi-koruma-kanunu",
+    "sourceLabel": "AI bilgi kartı — 6458 Sayılı Yabancılar ve Uluslararası Koruma Kanunu md 52–57, 57/A, 58–60, 60/A",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: resmî madde metni + çıkmış sorular)"
+  },
+  "cards": [
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Sınır dışı edilen bir yabancı hangi ülkelere gönderilebilir?",
+      "back": "Menşe ülkesine, transit gideceği ülkeye ya da üçüncü bir ülkeye.",
+      "explanation": "Gönderme, sınır dışı etme kararına dayanır.",
+      "articleRefs": [
+        "52"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Sınır dışı etme kararını hangi makam alır?",
+      "back": "Valilikler; Göç İdaresi Başkanlığının (metinde: Genel Müdürlük) talimatı üzerine ya da resen.",
+      "explanation": "Karar, gerekçeleriyle birlikte yabancıya, yasal temsilcisine ya da avukatına tebliğ edilir. Avukatla temsil edilmeyen yabancı ya da yasal temsilcisi, kararın sonucu, itiraz usulleri ve süreleri hakkında bilgilendirilir.",
+      "articleRefs": [
+        "53"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Sınır dışı etme kararına karşı idare mahkemesine başvuru süresi ne kadardır?",
+      "back": "Yedi gün; kararın tebliğinden itibaren. Yabancı, yasal temsilcisi ya da avukatı başvurabilir.",
+      "explanation": "Mahkemeye başvuran kişi, başvurusunu kararı veren makama da bildirir. Yabancının rızası saklı kalmak kaydıyla dava açma süresi içinde ve yargı yoluna başvurulmuşsa yargılama sonuçlanıncaya kadar yabancı sınır dışı edilmez.",
+      "articleRefs": [
+        "53"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "İdare mahkemesi, sınır dışı etme kararına karşı yapılan başvuruyu ne kadar sürede sonuçlandırır?",
+      "back": "On beş gün içinde; dosyanın tekemmülünden ya da ara karar veya duruşma gereken hâllerde bunların tamamlanmasından itibaren.",
+      "explanation": "Savunmanın verilmesi ya da savunma verme süresinin geçmesiyle dosya tekemmül etmiş sayılır. Duruşma yapılması mahkemenin takdirine bağlıdır. Mahkemenin başvuru üzerine verdiği karar kesindir.",
+      "articleRefs": [
+        "53"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Vize ya da vize muafiyeti süresini ne kadardan fazla aşan yabancı hakkında sınır dışı etme kararı alınır?",
+      "back": "On günden fazla aşan yabancı hakkında. Vizesi iptal edilen yabancı hakkında da karar alınır.",
+      "explanation": "İkamet izni bulunan yabancı için de benzer bir eşik vardır: süresinin sona ermesinden itibaren kabul edilebilir gerekçesi olmadan ikamet izni süresini on günden fazla ihlal eden yabancı hakkında da sınır dışı etme kararı alınır.",
+      "articleRefs": [
+        "54"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "İkamet izni uzatma başvurusu reddedilen yabancı, hangi süre içinde çıkış yapmazsa hakkında sınır dışı etme kararı alınır?",
+      "back": "On gün içinde Türkiye'den çıkış yapmazsa.",
+      "articleRefs": [
+        "54"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Uluslararası koruma başvuru sahibi ya da statü sahibi hakkında, koruma işlemlerinin her aşamasında hangi durumlarda sınır dışı etme kararı alınabilir?",
+      "back": "Terör örgütü ya da çıkar amaçlı suç örgütü yöneticisi, üyesi veya destekleyicisi olduğu; kamu düzeni, kamu güvenliği ya da kamu sağlığı açısından tehdit oluşturduğu veya uluslararası kuruluşlarca tanımlanan terör örgütleriyle ilişkili olduğu değerlendirilirse.",
+      "explanation": "Bunlar birinci fıkranın (b), (d) ve (k) bentleridir. Son bentteki terör örgütleri, uluslararası kurum ve kuruluşlar tarafından tanımlanan örgütlerdir.",
+      "articleRefs": [
+        "54"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "İnsan ticareti mağduru bir yabancı hakkında hangi durumda sınır dışı etme kararı alınmaz?",
+      "back": "Mağdur destek sürecinden yararlanmakta olduğu sürece; md 54 kapsamında olsa dahi karar alınmaz.",
+      "explanation": "Sınır dışı etme kararı alınmayacaklar arasında, sınır dışı edileceği ülkede ölüm cezasına, işkenceye, insanlık dışı ya da onur kırıcı ceza veya muameleye maruz kalacağı konusunda ciddi emare bulunanlar ile ciddi sağlık sorunları, yaş ve hamilelik durumu nedeniyle seyahat etmesi riskli görülenler de vardır.",
+      "articleRefs": [
+        "55"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Psikolojik, fiziksel ya da cinsel şiddet mağduru yabancıya tanınan sınır dışı edilmeme koruması süresiz midir?",
+      "back": "Hayır. Bu mağdurlar hakkında tedavileri tamamlanıncaya kadar sınır dışı etme kararı alınmaz.",
+      "explanation": "Değerlendirme herkes için ayrı yapılır. Hayati tehlike arz eden hastalığı için tedavisi devam eden yabancıda ise ölçüt, sınır dışı edileceği ülkede tedavi imkânının bulunmamasıdır.",
+      "articleRefs": [
+        "55"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Md 55 gereği hakkında sınır dışı etme kararı alınmayan yabancılardan ne istenebilir?",
+      "back": "Belli bir adreste ikamet etmeleri ve istenilen şekil ve sürelerde bildirimde bulunmaları istenebilir.",
+      "explanation": "Bu kişilere ilişkin değerlendirmeler herkes için ayrı yapılır.",
+      "articleRefs": [
+        "55"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Sınır dışı etme kararı alınan yabancıya Türkiye'yi terk etmesi için ne kadar süre tanınır?",
+      "back": "On beş günden az olmamak üzere otuz güne kadar; süre sınır dışı etme kararında belirtilir.",
+      "explanation": "Kaçma ve kaybolma riski bulunanlara, yasal giriş ya da çıkış kurallarını ihlal edenlere, sahte belge kullananlara, asılsız belgelerle ikamet izni almaya çalışan ya da aldığı tespit edilenlere ve kamu düzeni, kamu güvenliği ya da kamu sağlığı açısından tehdit oluşturanlara bu süre tanınmaz.",
+      "articleRefs": [
+        "56"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Kamu sağlığı açısından tehdit oluşturan yabancıya Türkiye'yi terk etmesi için süre tanınır mı?",
+      "back": "Hayır. Kamu düzeni, kamu güvenliği ya da kamu sağlığı açısından tehdit oluşturanlara terk süresi tanınmaz.",
+      "explanation": "Terk süresi kural olarak sınır dışı etme kararı alınan herkese tanınır; tehdit oluşturanlar ise maddedeki istisnalar arasındadır.",
+      "articleRefs": [
+        "56"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Türkiye'den çıkış için süre tanınan yabancıya hangi belge verilir?",
+      "back": "Çıkış İzin Belgesi; bu belge hiçbir harca tabi değildir.",
+      "explanation": "Belgenin harçsız olması, vize ve ikamet harçları ile bunların cezalarına ilişkin yükümlülükleri ortadan kaldırmaz; bu yükümlülükler saklıdır.",
+      "articleRefs": [
+        "56"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Kolluğun yakalayıp valiliğe bildirdiği yabancı hakkında valiliğin değerlendirme ve karar süresi en fazla ne kadardır?",
+      "back": "Kırk sekiz saat; yakalanan yabancı derhâl valiliğe bildirilir.",
+      "explanation": "İdari gözetim kararı alınan yabancı da yakalamayı yapan kolluk birimince geri gönderme merkezine kırk sekiz saat içinde götürülür.",
+      "articleRefs": [
+        "57"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Geri gönderme merkezlerinde idari gözetim süresi en fazla ne kadar olabilir?",
+      "back": "Altı ay. Yabancının iş birliği yapmaması ya da ülkesiyle ilgili doğru bilgi veya belge vermemesi yüzünden işlemler tamamlanamazsa en fazla altı ay daha uzatılabilir (toplam on iki ay).",
+      "explanation": "Valilik, idari gözetimin devamında zaruret olup olmadığını her ay düzenli olarak değerlendirir; gerek görülürse otuz günlük süre beklenmez. Zaruret görülmezse gözetim derhâl sonlandırılır ve yabancıya alternatif yükümlülükler getirilir.",
+      "articleRefs": [
+        "57"
+      ],
+      "derivedNumbers": [
+        {
+          "value": 12,
+          "expr": "6 + 6",
+          "refs": [
+            "57"
+          ],
+          "note": "altı aylık idari gözetim süresi ile en fazla altı aylık uzatmanın toplamı"
+        }
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "İdari gözetim kararına karşı yapılan başvuruyu sulh ceza hâkimi ne kadar sürede sonuçlandırır?",
+      "back": "Beş gün içinde; sulh ceza hâkiminin kararı kesindir.",
+      "explanation": "Başvuru idari gözetimi durdurmaz. Dilekçe idareye verilirse yetkili sulh ceza hâkimine derhâl ulaştırılır. Gözetim şartlarının ortadan kalktığı ya da değiştiği iddiasıyla yeniden başvurulabilir.",
+      "articleRefs": [
+        "57"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "İdari gözetime alternatif olarak hangi yükümlülükler getirilebilir?",
+      "back": "Belirli adreste ikamet etme, bildirimde bulunma, aile temelli geri dönüş, geri dönüş danışmanlığı, kamu yararına hizmetlerde gönüllülük esasıyla görev alma, teminat ve elektronik izleme.",
+      "explanation": "Bu yükümlülüklere uymayan yabancı idari gözetim altına alınabilir. Elektronik izleme kararına karşı sulh ceza hâkimine başvurulabilir; başvuru yükümlülüğü durdurmaz ve hâkim incelemeyi beş gün içinde sonuçlandırır.",
+      "articleRefs": [
+        "57/A"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Yabancıya getirilen idari gözetime alternatif yükümlülüklerin süresi en fazla ne kadardır?",
+      "back": "Yirmi dört ay; yükümlülüklerden bir ya da birkaçı getirilse de bu süre aşılamaz.",
+      "explanation": "Teminat yükümlülüğü getirilen yabancı, mücbir sebepler ve mahkeme sürecinin sona ermemesi hâlleri saklı kalmak kaydıyla teminat süresi içinde Türkiye'den çıkmazsa teminat Hazineye irat kaydedilir.",
+      "articleRefs": [
+        "57/A"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Md 57'nin ikinci fıkrası kapsamında olup idari gözetim altına alınmayan yabancıya alternatif yükümlülük getirilmesi takdire mi bağlıdır?",
+      "back": "Hayır. Bu yabancılara alternatif yükümlülüklerden birinin ya da birkaçının getirilmesi zorunludur.",
+      "explanation": "Yükümlülüğe tabi tutulduğu, gerekçeleriyle birlikte yabancıya, yasal temsilcisine ya da avukatına tebliğ edilir.",
+      "articleRefs": [
+        "57/A"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "İdari gözetime alınan yabancılar nerede tutulur?",
+      "back": "Geri gönderme merkezlerinde.",
+      "explanation": "Merkezlerin kurulması, yönetimi, işletilmesi, devri, denetimi ve idari gözetimdeki yabancıların merkezlere nakline ilişkin usul ve esaslar yönetmelikle düzenlenir.",
+      "articleRefs": [
+        "58"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Bakanlık, geri gönderme merkezlerini kimlerle protokol yaparak işlettirebilir?",
+      "back": "Kamu kurum ve kuruluşları, Türkiye Kızılay Derneği ya da göç alanında uzmanlığı bulunan kamu yararına çalışan derneklerle.",
+      "explanation": "Geri gönderme merkezleri Bakanlık tarafından işletilir.",
+      "articleRefs": [
+        "58"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Geri gönderme merkezinde yabancıya kimlerle görüşebilme imkânı sağlanır?",
+      "back": "Yakınları, noter, yasal temsilci ve avukatla; ayrıca ziyaretçileri, vatandaşı olduğu ülkenin konsolosluk yetkilisi ve Birleşmiş Milletler Mülteciler Yüksek Komiserliği görevlisiyle.",
+      "explanation": "Yabancıya telefon hizmetlerine erişme imkânı da sağlanır. Bedelini karşılayamadığı acil ve temel sağlık hizmetleri ona ücretsiz verilir.",
+      "articleRefs": [
+        "59"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Geri gönderme merkezindeki çocukların eğitim ve öğretimden yararlandırılması için gerekli tedbirleri Göç İdaresi Başkanlığı (metinde: Genel Müdürlük) mü alır?",
+      "back": "Hayır. Bu tedbirler Millî Eğitim Bakanlığınca alınır.",
+      "explanation": "Merkezlerde çocukların yüksek yararları gözetilir ve aileler ayrı yerlerde barındırılır.",
+      "articleRefs": [
+        "59"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Göç alanında uzmanlığı bulunan sivil toplum kuruluşu temsilcileri geri gönderme merkezlerini kimin izniyle ziyaret edebilir?",
+      "back": "Göç İdaresi Başkanlığının (metinde: Genel Müdürlük) izniyle.",
+      "explanation": "Ziyaret hakkı, göç alanında uzmanlığı bulunan ilgili sivil toplum kuruluşu temsilcilerine tanınmıştır.",
+      "articleRefs": [
+        "59"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Geri gönderme merkezlerindeki yabancıları sınır kapılarına kim götürür?",
+      "back": "Kolluk birimi.",
+      "explanation": "Geri gönderme merkezine sevk edilmeden sınır dışı edilecek yabancılar ise Göç İdaresi Başkanlığı (metinde: Genel Müdürlük) taşra teşkilatının koordinesinde kolluk birimlerince sınır kapılarına götürülür.",
+      "articleRefs": [
+        "60"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Hiç parası olmayan yabancının sınır dışı seyahat masraflarını kim karşılar?",
+      "back": "Göç İdaresi Başkanlığı (metinde: Genel Müdürlük); masrafların tamamını karşılar.",
+      "explanation": "Kural olarak seyahat masrafları yabancının kendisince karşılanır; parası yetiyorsa masraflar mevcut parasından karşılanır ve artan tutar kendisine bırakılır. Masraflar geri ödenmediği sürece yabancının Türkiye'ye girişine izin verilmeyebilir.",
+      "articleRefs": [
+        "60"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Parası seyahat masraflarının tamamına yetmeyen yabancının mevcut parasının tamamı Hazineye gelir kaydedilir mi?",
+      "back": "Hayır. Masrafları Göç İdaresi Başkanlığı (metinde: Genel Müdürlük) karşılar; temel gereksinimlere yetecek tutar yabancıya bırakılır, yalnız artan kısım Hazineye gelir kaydedilir.",
+      "explanation": "Temel gereksinim tutarını Başkanlık her mali yıl başında belirler. Yabancının parası bu tutarın altındaysa masrafın tamamı Başkanlıkça karşılanır ve parası kendisine bırakılır.",
+      "articleRefs": [
+        "60"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Gönüllü geri dönüşte düzensiz göçmene hangi tür destek sağlanabilir?",
+      "back": "Ayni ya da nakdi destek; hakkında sınır dışı etme kararı alınmış, menşe ülkesine gönüllü dönmek isteyen ve Göç İdaresi Başkanlığının (metinde: Genel Müdürlük) uygun gördüğü kişilere.",
+      "explanation": "Gönüllü geri dönüş çalışmaları uluslararası kuruluşlar, kamu kurum ve kuruluşları ve sivil toplum kuruluşlarıyla iş birliği hâlinde yürütülebilir.",
+      "articleRefs": [
+        "60/A"
+      ]
+    }
+  ]
+}
