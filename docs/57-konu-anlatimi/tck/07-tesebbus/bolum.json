@@ -1,0 +1,18 @@
+{
+  "slug": "tck-tesebbus",
+  "title": "Teşebbüs",
+  "subtitle": "Suç yolu, teşebbüsün koşulları ve cezası, teşebbüse elverişli olmayan suçlar, işlenemez suç, gönüllü vazgeçme, etkin pişmanlık",
+  "courseName": "Ceza Hukuku",
+  "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+  "sortOrder": 7,
+  "isPremium": true,
+  "aiDraft": true,
+  "book": { "label": "THEMIS Ceza Hukuku Genel Hükümler, 21. baskı, 2025", "page": "s.119–126" },
+  "lessons": [
+    { "file": "01-suc-yolu-ve-tesebbusun-kosullari.md", "slug": "tck-suc-yolu-ve-tesebbusun-kosullari", "page": "s.119–121" },
+    { "file": "02-tesebbuse-elverisli-olmayan-suclar-ve-ozel-durumlar.md", "slug": "tck-tesebbuse-elverisli-olmayan-suclar-ve-ozel-durumlar", "page": "s.121–126" },
+    { "file": "03-islenemez-suc.md", "slug": "tck-islenemez-suc", "page": "s.121–123" },
+    { "file": "04-gonullu-vazgecme.md", "slug": "tck-gonullu-vazgecme", "page": "s.123–125" },
+    { "file": "05-etkin-pismanlik.md", "slug": "tck-etkin-pismanlik", "page": "s.124–126" }
+  ]
+}
