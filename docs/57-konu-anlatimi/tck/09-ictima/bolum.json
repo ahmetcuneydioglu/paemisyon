@@ -1,0 +1,19 @@
+{
+  "slug": "tck-ictima",
+  "title": "İçtima",
+  "subtitle": "Suçun tekliği ve çokluğu, bileşik suç, zincirleme suç, fikri içtima, sapma, görünüşte içtima",
+  "courseName": "Ceza Hukuku",
+  "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+  "sortOrder": 9,
+  "isPremium": true,
+  "aiDraft": true,
+  "book": { "label": "THEMIS Ceza Hukuku Genel Hükümler, 21. baskı, 2025", "page": "s.137–160" },
+  "lessons": [
+    { "file": "01-ictima-ve-sucun-tekligi-coklugu.md", "slug": "tck-ictima-ve-sucun-tekligi-coklugu", "page": "s.137–139" },
+    { "file": "02-bilesik-suc.md", "slug": "tck-bilesik-suc", "page": "s.139–141" },
+    { "file": "03-zincirleme-suc.md", "slug": "tck-zincirleme-suc", "page": "s.141–145" },
+    { "file": "04-fikri-ictima.md", "slug": "tck-fikri-ictima", "page": "s.145–150" },
+    { "file": "05-sapma.md", "slug": "tck-sapma", "page": "s.115, s.150–157" },
+    { "file": "06-gorunuste-ictima-ve-diger-turler.md", "slug": "tck-gorunuste-ictima-ve-diger-turler", "page": "s.157–160" }
+  ]
+}
