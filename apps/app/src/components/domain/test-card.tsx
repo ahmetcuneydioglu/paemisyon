@@ -35,6 +35,9 @@ export function TestCard({
   const Ikon = state === "done" ? CheckCircle2 : state === "progress" ? Play : state === "locked" ? Lock : null;
   const ikonRengi = state === "done" ? colors.success : state === "progress" ? colors.accentInk : colors.inkSubtle;
   const doluluk = state === "done" ? 1 : state === "progress" ? (answered ?? 0) / Math.max(1, questionCount) : 0;
+  // Biten testte yüzde ve çubuk BAŞARIYA göre renklenir (13 Kas 2026: %25 yeşil çiziliyordu,
+  // "tamamlandı" ile "iyi" karışıyordu). Tamamlandı bilgisini tik taşır.
+  const skorTon = pct == null ? "success" : pct >= 75 ? "success" : pct >= 50 ? "accent" : "danger";
   return (
     <Pressable
       accessibilityRole="button"
@@ -62,7 +65,7 @@ export function TestCard({
         </AppText>
         <View style={{ flexDirection: "row", alignItems: "center", gap: 6 }}>
           {state === "done" ? (
-            <AppText variant="subhead" tone="success" style={{ fontVariant: ["tabular-nums"] }}>
+            <AppText variant="subhead" tone={skorTon === "accent" ? "accentInk" : skorTon} style={{ fontVariant: ["tabular-nums"] }}>
               %{pct}
             </AppText>
           ) : null}
@@ -72,7 +75,7 @@ export function TestCard({
       <AppText variant="bodySm" tone={kilitli ? "subtle" : "soft"} numberOfLines={1} style={{ fontVariant: ["tabular-nums"] }}>
         {durum}
       </AppText>
-      <ProgressBar value={doluluk} tone={state === "done" ? "success" : "accent"} height={4} />
+      <ProgressBar value={doluluk} tone={state === "done" ? skorTon : "accent"} height={4} />
     </Pressable>
   );
 }

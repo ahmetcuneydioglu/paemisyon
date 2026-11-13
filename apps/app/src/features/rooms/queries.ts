@@ -190,11 +190,16 @@ export function useTopicRoom(topicId: string | null) {
 }
 
 /** Yüzde metni tonu — band sunucudan; istemci eşik bilmez. */
-export function bandTone(b: Band): "accentInk" | "success" | "ink" | "subtle" {
-  return b === "weak" ? "accentInk" : b === "strong" ? "success" : b === "new" || b === "sparse" ? "subtle" : "ink";
+/**
+ * Hâkimiyet renk kuralı — metin ve çubuk AYNI tonda (13 Kas 2026: konu satırında yüzde altın,
+ * çubuk mercan çiziliyordu; ders kartı ise yüzdeyi mercan yazıyordu). Band sunucudan:
+ * zayıf mercan, güçlü yeşil, orta altın; yeni/az veri sönük (tek soruda "%100" vurgulanmaz).
+ */
+export function bandTone(b: Band): "danger" | "success" | "accentInk" | "subtle" {
+  return b === "weak" ? "danger" : b === "strong" ? "success" : b === "new" || b === "sparse" ? "subtle" : "accentInk";
 }
 
-/** Çubuk tonu — band sunucudan: zayıf mercan, güçlü yeşil, diğerleri altın. */
-export function bandBarTone(b: Band): "danger" | "success" | "accent" {
-  return b === "weak" ? "danger" : b === "strong" ? "success" : "accent";
+/** Çubuk tonu — `bandTone` ile aynı aile; az veri/yeni için `null` (çubuk sönük çizilir). */
+export function bandBarTone(b: Band): "danger" | "success" | "accent" | null {
+  return b === "weak" ? "danger" : b === "strong" ? "success" : b === "new" || b === "sparse" ? null : "accent";
 }

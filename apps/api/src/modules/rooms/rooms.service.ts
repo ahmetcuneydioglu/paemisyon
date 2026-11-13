@@ -4,6 +4,7 @@ import { CourseTestsService } from '../course-tests/course-tests.service';
 import { FlashcardsService } from '../flashcards/flashcards.service';
 import type { ModeCounts } from '../flashcards/flashcards.logic';
 import { haftaBasi } from '../../common/gun';
+import { yanlisKaydiFiltresi, yanlisTuruSoruFiltresi } from '../quiz/yanlis-havuzu';
 import { LAW_NAME_RE, slugify } from '../public/public.service';
 import { enTazeYarimTur, TAZE_TUR_MS, yarimTurSorgusu } from '../coach/today-task.logic';
 import {
@@ -140,7 +141,7 @@ export class RoomsService {
         where: { userId, topic: { courseId, deletedAt: null } },
         select: { topicId: true, solvedCount: true, correctCount: true },
       }),
-      this.yanlisSayisi(userId, { courseId }),
+      this.acikYanlislar(userId, isPremiumUser, { courseId }).then((y) => y.length),
       this.favoriSayisi(userId, { courseId }),
       this.prisma.legislation.findMany({
         where: { topic: { courseId, deletedAt: null }, status: 'published' },
@@ -162,7 +163,7 @@ export class RoomsService {
         },
         select: { topicId: true },
       }),
-      this.konuSayimlari(userId, courseId),
+      this.konuSayimlari(userId, courseId, isPremiumUser),
       this.courseTests.roomSummary(userId, courseId, isPremiumUser),
       this.prisma.summaryUnit.findMany({
         where: { status: 'published', deletedAt: null, topic: { courseId, deletedAt: null } },
@@ -328,7 +329,7 @@ export class RoomsService {
         where: { userId_topicId: { userId, topicId } },
         select: { solvedCount: true, correctCount: true },
       }),
-      this.yanlisSayisi(userId, { topicId }),
+      this.acikYanlislar(userId, isPremiumUser, { topicId }).then((y) => y.length),
       this.favoriSayisi(userId, { topicId }),
       // QuizAnswer'da question ilişkisi yok — son 5 cevap raw join ile.
       this.prisma.$queryRaw<{ is_correct: boolean }[]>`
@@ -445,12 +446,13 @@ export class RoomsService {
         where: { userId, topic: { deletedAt: null } },
         select: { solvedCount: true, correctCount: true, topic: { select: { courseId: true } } },
       }),
-      this.prisma.$queryRaw<{ course_id: string; cnt: number }[]>`
-        SELECT t.course_id, COUNT(*)::int AS cnt FROM wrong_answers wa
-        JOIN questions q ON q.id = wa.question_id AND q.deleted_at IS NULL
-        JOIN topics t ON t.id = q.topic_id AND t.deleted_at IS NULL
-        WHERE wa.user_id = ${userId}::uuid AND wa.resolved_at IS NULL
-        GROUP BY t.course_id`,
+      // Yanlış sayısı yanlış turunun havuzuyla AYNI süzgeçten (yanlis-havuzu.ts; 13 Kas 2026: Çalış
+      // 1079, Tekrar 1058, Bugün 1057 diyordu — iptal/yayından kalkmış soru, ücretsizde 7 gün).
+      this.acikYanlislar(userId, ctx.isPremium, { moduleId }).then((ys) => {
+        const m = new Map<string, number>();
+        for (const y of ys) m.set(y.courseId, (m.get(y.courseId) ?? 0) + 1);
+        return [...m].map(([course_id, cnt]) => ({ course_id, cnt }));
+      }),
       this.prisma.$queryRaw<{ course_id: string; cnt: number }[]>`
         SELECT t.course_id, COUNT(*)::int AS cnt FROM bookmarks b
         JOIN questions q ON q.id = b.question_id AND q.deleted_at IS NULL
@@ -534,14 +536,13 @@ export class RoomsService {
   }
 
   /** Dersin konu başına açık yanlış ve favori sayıları (konu eylem sayfası, Doc 49/17). */
-  private async konuSayimlari(userId: string, courseId: string) {
+  private async konuSayimlari(userId: string, courseId: string, isPremium: boolean) {
     const [y, f] = await Promise.all([
-      this.prisma.$queryRaw<{ topic_id: string; cnt: number }[]>`
-        SELECT q.topic_id, COUNT(*)::int AS cnt FROM wrong_answers wa
-        JOIN questions q ON q.id = wa.question_id AND q.deleted_at IS NULL
-        JOIN topics t ON t.id = q.topic_id AND t.deleted_at IS NULL
-        WHERE wa.user_id = ${userId}::uuid AND wa.resolved_at IS NULL AND t.course_id = ${courseId}::uuid
-        GROUP BY q.topic_id`,
+      this.acikYanlislar(userId, isPremium, { courseId }).then((ys) => {
+        const m = new Map<string, number>();
+        for (const x of ys) m.set(x.topicId, (m.get(x.topicId) ?? 0) + 1);
+        return [...m].map(([topic_id, cnt]) => ({ topic_id, cnt }));
+      }),
       this.prisma.$queryRaw<{ topic_id: string; cnt: number }[]>`
         SELECT q.topic_id, COUNT(*)::int AS cnt FROM bookmarks b
         JOIN questions q ON q.id = b.question_id AND q.deleted_at IS NULL
@@ -555,19 +556,39 @@ export class RoomsService {
     };
   }
 
-  /** Çözülmemiş yanlış sayısı — WrongAnswer'da question ilişkisi yok (composite id), raw join. */
-  private async yanlisSayisi(userId: string, by: { courseId?: string; topicId?: string }) {
-    const rows = by.topicId
-      ? await this.prisma.$queryRaw<{ cnt: number }[]>`
-          SELECT COUNT(*)::int AS cnt FROM wrong_answers wa
-          JOIN questions q ON q.id = wa.question_id AND q.deleted_at IS NULL
-          WHERE wa.user_id = ${userId}::uuid AND wa.resolved_at IS NULL AND q.topic_id = ${by.topicId}::uuid`
-      : await this.prisma.$queryRaw<{ cnt: number }[]>`
-          SELECT COUNT(*)::int AS cnt FROM wrong_answers wa
-          JOIN questions q ON q.id = wa.question_id AND q.deleted_at IS NULL
-          JOIN topics t ON t.id = q.topic_id AND t.deleted_at IS NULL
-          WHERE wa.user_id = ${userId}::uuid AND wa.resolved_at IS NULL AND t.course_id = ${by.courseId}::uuid`;
-    return rows[0]?.cnt ?? 0;
+  /**
+   * Açık yanlışlar — yanlış turunun havuzuyla aynı süzgeç (`yanlisKaydiFiltresi` + `yanlisTuruSoruFiltresi`):
+   * çözülmemiş, iptal değil, yayında; ücretsizde son 7 gün ve premium konu hariç. Sayaçlar bundan.
+   */
+  private async acikYanlislar(
+    userId: string,
+    isPremium: boolean,
+    by: { courseId?: string; topicId?: string; moduleId?: string | null },
+  ): Promise<{ questionId: string; topicId: string; courseId: string }[]> {
+    const kayitlar = await this.prisma.wrongAnswer.findMany({
+      where: yanlisKaydiFiltresi(userId, isPremium),
+      select: { questionId: true },
+    });
+    if (kayitlar.length === 0) return [];
+    const taban = yanlisTuruSoruFiltresi({ isPremium, preferredModuleId: by.moduleId ?? null });
+    const sorular = await this.prisma.question.findMany({
+      where: {
+        ...taban,
+        id: { in: kayitlar.map((k) => k.questionId) },
+        ...(by.topicId ? { topicId: by.topicId } : {}),
+        topic: {
+          ...(taban.topic as object),
+          deletedAt: null,
+          ...(by.courseId ? { courseId: by.courseId } : {}),
+        },
+      },
+      select: { id: true, topicId: true, topic: { select: { courseId: true } } },
+    });
+    return sorular.map((q) => ({
+      questionId: q.id,
+      topicId: q.topicId,
+      courseId: q.topic.courseId,
+    }));
   }
 
   /** Favoriler = yer imleri (Bookmark; question ilişkisi yok → raw join), silinmiş soru hariç. */

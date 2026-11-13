@@ -1,4 +1,5 @@
 import { useRouter } from "expo-router";
+import { useState } from "react";
 import { Layers, RotateCcw, Shuffle } from "lucide-react-native";
 import { useWindowDimensions, View } from "react-native";
 import { CourseCard, ResumeStrip } from "@/components/domain";
@@ -25,6 +26,8 @@ export default function CalisScreen() {
   const d = q.data;
 
   const openCourse = (c: StudyCourse) => router.push({ pathname: "/(tabs)/kutuphane/ders/[id]", params: { id: c.id, name: c.name, icon: c.icon ?? "" } });
+  const [gridWidth, setGridWidth] = useState(0);
+  const cellWidth = gridWidth > 0 ? (gridWidth - space.s3 * (cols - 1)) / cols : 0;
   const satirlar = d ? Array.from({ length: Math.ceil(d.courses.length / cols) }, (_, r) => d.courses.slice(r * cols, r * cols + cols)) : [];
 
   return (
@@ -79,14 +82,13 @@ export default function CalisScreen() {
                   hâkimiyet · ağırlığa göre
                 </AppText>
               </View>
-              <View style={{ flex: 1, gap: space.s3 }}>
+              {/* Hücre genişliği ölçülen satırdan: tek kalan kart yarım genişlikte kalır (13 Kas 2026: esnek
+                  hücrede son satırdaki tek kart diğerlerinden geniş çiziliyordu). */}
+              <View style={{ flex: 1, gap: space.s3 }} onLayout={(e) => setGridWidth(e.nativeEvent.layout.width)}>
                 {satirlar.map((row, i) => (
                   <View key={i} style={{ flex: 1, flexDirection: "row", gap: space.s3 }}>
                     {row.map((c) => (
-                      <CourseCard key={c.id} name={c.name} accuracyPct={c.accuracyPct} band={c.band} note={c.note} onPress={() => openCourse(c)} />
-                    ))}
-                    {Array.from({ length: cols - row.length }, (_, k) => (
-                      <View key={`bos-${k}`} style={{ flex: 1 }} />
+                      <CourseCard key={c.id} name={c.name} accuracyPct={c.accuracyPct} band={c.band} note={c.note} onPress={() => openCourse(c)} style={cellWidth ? { flex: 0, width: cellWidth } : undefined} />
                     ))}
                   </View>
                 ))}

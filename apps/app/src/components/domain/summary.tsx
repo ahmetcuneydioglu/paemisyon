@@ -4,7 +4,7 @@ import { Pressable, ScrollView, View } from "react-native";
 import { AppText, Badge, Button, Card, ListRow, ProgressBar, Sheet, Skeleton, type BadgeTone } from "@/components/ui";
 import { useLawRead } from "@/features/mevzuat/queries";
 import { ArticleSummaryDisclosure } from "./article-summary";
-import { masteryLabel, parseBody, SUMMARY_BLOCK_LABEL, shortTitle, unitProgressPct, type InlineRun, type SummaryBlock, type SummaryUnitListItem } from "@/features/summaries/queries";
+import { masteryLabel, parseBody, SUMMARY_BLOCK_LABEL, shortTitle, unitProgressPct, type InlineRun, type SummaryBlock, type SummaryRow, type SummaryUnitListItem } from "@/features/summaries/queries";
 import { useTheme } from "@/theme/ThemeProvider";
 
 /* ---------------------------------------------------------------- Ünite satırı */
@@ -161,9 +161,22 @@ const META: Record<SummaryBlock["type"], { tone: BadgeTone; icon: React.Componen
   bridge: { tone: "accent", icon: null, card: "accent" },
 };
 
-function compareHeads(title: string | null): [string, string] {
-  const parts = (title ?? "").split(/\s+(?:ve|ile|vs\.?|–|-)\s+/i);
-  return parts.length >= 2 ? [parts[0]!.trim(), parts.slice(1).join(" ").trim()] : ["Birincisi", "İkincisi"];
+/** Sütun adları: "Başlık" satırı varsa ondan ("Egemenlik (md 6)" → "Egemenlik"), yoksa kart başlığından
+ *  ("X ve Y", "X mi, Y mi?"), o da yoksa "Birincisi / İkincisi" (13 Kas 2026). */
+function compareHeads(title: string | null, rows: SummaryRow[]): { heads: [string, string]; skipFirst: boolean } {
+  const ilk = rows[0];
+  if (ilk && /^ba[şs]l[ıi]k$/i.test(String(ilk.aspect ?? "").trim())) {
+    const temiz = (v: unknown) => String(v ?? "").replace(/\s*\(md[^)]*\)\s*$/i, "").trim();
+    return { heads: [temiz(ilk.left) || "Birincisi", temiz(ilk.right) || "İkincisi"], skipFirst: true };
+  }
+  const t = (title ?? "").replace(/\?$/, "");
+  const parts = t.split(/\s+mi,\s+|\s+(?:ve|ile|vs\.?|–|-)\s+/i);
+  if (parts.length >= 2) {
+    const ad = (x: string) => x.replace(/\s+mi$/i, "").trim();
+    const a = ad(parts[0]!);
+    return { heads: [a.charAt(0).toLocaleUpperCase("tr-TR") + a.slice(1), ad(parts.slice(1).join(" "))], skipFirst: false };
+  }
+  return { heads: ["Birincisi", "İkincisi"], skipFirst: false };
 }
 
 function Refs({ refs, lawSlug, onOpen }: { refs: string[] | undefined; lawSlug: string; onOpen: (no: string, title: string | null) => void }) {
@@ -205,12 +218,14 @@ function NumbersRows({ rows, lawSlug, onOpen }: { rows: SummaryBlock["rows"]; la
 }
 
 /** Karşılaştırma: her yön bir blok; sol/sağ başlıklar kart başlığından ("X ve Y"). */
-function CompareRows({ rows, title, lawSlug, onOpen }: { rows: SummaryBlock["rows"]; title: string | null; lawSlug: string; onOpen: (no: string, title: string | null) => void }) {
+function CompareRows({ rows, title, lawSlug, onOpen, blockRefs }: { rows: SummaryBlock["rows"]; title: string | null; lawSlug: string; onOpen: (no: string, title: string | null) => void; /** Kart başlığındaki maddeler; satırda aynısı tekrar edilmez. */ blockRefs?: string[] }) {
   const { colors, space } = useTheme();
-  const [sol, sag] = compareHeads(title);
+  const { heads, skipFirst } = compareHeads(title, rows ?? []);
+  const [sol, sag] = heads;
+  const satirlar = (rows ?? []).slice(skipFirst ? 1 : 0);
   return (
     <View>
-      {(rows ?? []).map((r, i) => (
+      {satirlar.map((r, i) => (
         <View key={i} style={{ paddingVertical: space.s2, borderTopWidth: i === 0 ? 0 : 1, borderTopColor: colors.line, gap: space.s1 }}>
           <AppText variant="label" tone="subtle">
             {String(r.aspect ?? "")}
@@ -233,7 +248,8 @@ function CompareRows({ rows, title, lawSlug, onOpen }: { rows: SummaryBlock["row
               </AppText>
             </View>
           </View>
-          <Refs refs={r.refs} lawSlug={lawSlug} onOpen={onOpen} />
+          {/* Satır maddeleri kart başlığındakiyle aynıysa yazılmaz (her satırda "MD 6 · MD 10" gürültüsü). */}
+          {r.refs && !(blockRefs && r.refs.length === blockRefs.length && r.refs.every((x) => blockRefs.includes(x))) ? <Refs refs={r.refs} lawSlug={lawSlug} onOpen={onOpen} /> : null}
         </View>
       ))}
     </View>
@@ -285,7 +301,7 @@ export function SummaryBlockCard({ block, lawSlug, onOpenArticle, children }: { 
           block.type === "exam_stats" ? (
             <StatRows rows={block.rows} />
           ) : block.type === "compare" ? (
-            <CompareRows rows={block.rows} title={block.title} lawSlug={lawSlug} onOpen={onOpenArticle} />
+            <CompareRows rows={block.rows} title={block.title} lawSlug={lawSlug} onOpen={onOpenArticle} blockRefs={block.articles.map((a) => a.no)} />
           ) : (
             <NumbersRows rows={block.rows} lawSlug={lawSlug} onOpen={onOpenArticle} />
           )

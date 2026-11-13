@@ -54,13 +54,19 @@ export function FlashcardStateBar({ counts, height = 4, style }: { counts: Pick<
  * Kart yoksa çağıran satırı hiç çizmez; kilitliyse rozet "Premium" ve dokunuş paywall'a gider.
  */
 export function FlashcardEntry({ counts, locked = false, onPress, divider = false, title = "Bilgi kartları" }: { counts: ModeCounts; locked?: boolean; onPress?: () => void; divider?: boolean; title?: string }) {
-  const { colors, space } = useTheme();
+  const { colors, radius, space } = useTheme();
   const rozet = locked ? <Badge tone="warning">Premium</Badge> : counts.due > 0 ? <Badge tone="warning">{`${counts.due} tekrar`}</Badge> : counts.total > 0 && counts.new === counts.total ? <Badge tone="accent">Yeni</Badge> : null;
   return (
     <ListRow
       title={title}
-      leading={<Layers color={locked ? colors.inkSubtle : colors.ink} size={22} strokeWidth={1.75} />}
-      subtitle={locked ? `${counts.locked} kart · Premium ile açılır` : countsNote(counts)}
+      // Kutulu ikon: konu sayfasındaki komşu satırlarla (Yanlışların, Favorilerin) aynı hiza (13 Kas 2026).
+      leading={
+        <View style={{ width: 36, height: 36, borderRadius: radius.control, backgroundColor: colors.surfaceAlt, alignItems: "center", justifyContent: "center" }}>
+          <Layers color={locked ? colors.inkSubtle : colors.inkSoft} size={18} strokeWidth={1.75} />
+        </View>
+      }
+      // Tekrar sayısı sağdaki rozette; alt satırda ikinci kez yazılmaz (kesilip "· 20" kalıyordu).
+      subtitle={locked ? `${counts.locked} kart · Premium ile açılır` : countsNote(counts.due > 0 ? { ...counts, due: 0, new: 0 } : counts)}
       trailing={rozet}
       onPress={onPress}
       divider={divider}

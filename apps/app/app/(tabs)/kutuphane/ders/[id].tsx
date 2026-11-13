@@ -79,6 +79,7 @@ export default function DersOdasiScreen() {
           <>
             <RoomStatPanel
               pct={d.summary.accuracyPct}
+              band={d.summary.band}
               sub={d.summary.solved > 0 ? `doğruluk · ${d.summary.solved} soru` : "İlk tur seni bekliyor"}
               right={
                 <>
@@ -207,7 +208,7 @@ function KonuSatiri({ topic, divider, onPress }: { topic: Konu; divider: boolean
         ) : null}
         <ChevronRight color={colors.inkSubtle} size={18} strokeWidth={1.75} />
       </View>
-      {!yeni ? <ProgressBar value={(topic.accuracyPct ?? 0) / 100} tone={bandBarTone(topic.band)} height={2} label={`${topic.name} doğruluk`} /> : null}
+      {!yeni ? <ProgressBar value={(topic.accuracyPct ?? 0) / 100} tone={bandBarTone(topic.band) ?? undefined} color={bandBarTone(topic.band) ? undefined : colors.inkSubtle} height={2} label={`${topic.name} doğruluk`} /> : null}
     </Pressable>
   );
 }

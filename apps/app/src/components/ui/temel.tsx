@@ -41,6 +41,10 @@ export function AppText({
   const { colors, type } = useTheme();
   const cap = useContext(TextScaleCapContext);
   const role = variant;
+  // iOS `textTransform: "uppercase"` Türkçe bilmez ("Birincisi" → "BIRINCISI"); büyük harf rolü
+  // metni tr-TR ile kendimiz çeviririz (13 Kas 2026). Stil açıkça "none" verirse dokunulmaz.
+  const flat = StyleSheet.flatten(style) as TextStyle | undefined;
+  const upper = type[role].textTransform === "uppercase" && flat?.textTransform !== "none";
   const color =
     tone === "soft" ? colors.inkSoft
     : tone === "subtle" ? colors.inkSubtle
@@ -56,10 +60,17 @@ export function AppText({
   // Dinamik yazı tavanı: bileşen kendi tavanını verebilir (BigNumber 1,2×, liderlik satırları 1,3×);
   // verilmezse büyük boylar 1,35×, metin boyları 2× (5 Kas 2026'ya kadar dıştan verilen değer eziliyordu).
   return (
-    <Text {...props} maxFontSizeMultiplier={capped(maxFontSizeMultiplier ?? (type[role].fontSize > 17 ? 1.35 : 2), cap)} style={[type[role], { color }, style]}>
-      {children}
+    <Text {...props} maxFontSizeMultiplier={capped(maxFontSizeMultiplier ?? (type[role].fontSize > 17 ? 1.35 : 2), cap)} style={[type[role], { color }, style, upper ? { textTransform: "none" } : null]}>
+      {upper ? trUpper(children) : children}
     </Text>
   );
+}
+
+/** Çocuklardaki düz metni tr-TR büyük harfe çevirir; iç içe öğeler olduğu gibi kalır. */
+function trUpper(node: ReactNode): ReactNode {
+  if (typeof node === "string") return node.toLocaleUpperCase("tr-TR");
+  if (Array.isArray(node)) return node.map((n) => (typeof n === "string" ? n.toLocaleUpperCase("tr-TR") : n));
+  return node;
 }
 
 function capped(own: number, cap: number | null): number {
@@ -188,7 +199,7 @@ export function Button({
       ) : (
         <View style={{ flexDirection: "row", alignItems: "center", gap: 10 }}>
           {icon}
-          <Text maxFontSizeMultiplier={cap ?? undefined} style={[type.subhead, size === "sm" ? { color: fg } : { fontSize: 17, lineHeight: 22, color: fg }]}>
+          <Text maxFontSizeMultiplier={cap ?? undefined} style={[type.subhead, { textAlign: "center", flexShrink: 1 }, size === "sm" ? { color: fg } : { fontSize: 17, lineHeight: 22, color: fg }]}>
             {title}
           </Text>
         </View>

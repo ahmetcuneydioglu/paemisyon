@@ -47,6 +47,7 @@ export default function KonuOdasiScreen() {
             <RoomStatPanel
               label={d.topic.courseName}
               pct={d.summary.accuracyPct}
+              band={d.summary.band}
               sub={d.summary.solved > 0 ? `${d.summary.solved} soru · ${d.summary.correct} doğru` : "10 soruyla başla"}
               right={d.summary.inPlanThisWeek ? <Badge tone="accent">Planında bu hafta</Badge> : null}
             />

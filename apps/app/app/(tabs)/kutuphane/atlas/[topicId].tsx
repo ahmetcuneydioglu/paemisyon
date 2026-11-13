@@ -1,4 +1,5 @@
 import { Stack, useLocalSearchParams, useRouter } from "expo-router";
+import { useState } from "react";
 import { Pressable, View } from "react-native";
 import { AppText, Button, Card, Notice, ProgressBar, Screen, SectionHeader, Skeleton } from "@/components/ui";
 import { useTopicAtlas } from "@/features/catalog/queries";
@@ -12,6 +13,10 @@ import { useTheme } from "@/theme/ThemeProvider";
 export default function AtlasScreen() {
   const router = useRouter();
   const { colors, space, radius } = useTheme();
+  const [gridW, setGridW] = useState(0);
+  // En az 64 pt hücre; sütun sayısı sığan en çok hücre, genişlik kalan alana eşit bölünür.
+  const sutun = gridW > 0 ? Math.max(1, Math.floor((gridW + space.s2) / (64 + space.s2))) : 0;
+  const cellW = sutun ? (gridW - space.s2 * (sutun - 1)) / sutun : 0;
   const p = useLocalSearchParams<{ topicId: string; name?: string; lawSlug?: string }>();
   const q = useTopicAtlas(p.topicId ?? null);
 
@@ -53,7 +58,9 @@ export default function AtlasScreen() {
               </AppText>
             </View>
 
-            <View style={{ flexDirection: "row", flexWrap: "wrap", gap: space.s2 }}>
+            {/* Hücreler satırı TAM doldurur: sütun sayısı ölçülen genişlikten, hücre eşit (13 Kas 2026:
+                sabit min genişlikle sağda boşluk kalıyordu; "m.150/A" gibi uzun numara yine sığar). */}
+            <View onLayout={(e) => setGridW(e.nativeEvent.layout.width)} style={{ flexDirection: "row", flexWrap: "wrap", gap: space.s2 }}>
               {q.data.articles.map((a) => {
                 const state = a.conquered ? "done" : a.clearedCount > 0 ? "partial" : "empty";
                 const bg = state === "done" ? colors.successSoft : state === "partial" ? colors.accentSoft : colors.surface;
@@ -64,7 +71,7 @@ export default function AtlasScreen() {
                     accessibilityRole="button"
                     accessibilityLabel={`Madde ${a.no}, ${a.clearedCount} / ${a.questionCount} temiz`}
                     onPress={() => startArticle(a.no, a.questionCount)}
-                    style={({ pressed }) => ({ minWidth: 64, minHeight: 44, paddingHorizontal: 10, paddingVertical: 6, borderRadius: radius.control, backgroundColor: bg, borderWidth: 1, borderColor: state === "empty" ? colors.line : "transparent", alignItems: "center", justifyContent: "center", opacity: pressed ? 0.8 : 1 })}
+                    style={({ pressed }) => ({ width: cellW || undefined, minWidth: cellW ? undefined : 64, minHeight: 44, paddingHorizontal: 10, paddingVertical: 6, borderRadius: radius.control, backgroundColor: bg, borderWidth: 1, borderColor: state === "empty" ? colors.line : "transparent", alignItems: "center", justifyContent: "center", opacity: pressed ? 0.8 : 1 })}
                   >
                     <AppText variant="subhead" style={{ color: fg }}>
                       m.{a.no}

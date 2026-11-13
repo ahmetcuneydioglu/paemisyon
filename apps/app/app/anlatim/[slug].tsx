@@ -1,7 +1,7 @@
 import { Stack, useLocalSearchParams, useRouter } from "expo-router";
 import { useEffect, useRef, useState, type ComponentRef } from "react";
 import { CheckCircle2 } from "lucide-react-native";
-import { Linking, ScrollView, View } from "react-native";
+import { Linking, ScrollView, StyleSheet, View } from "react-native";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { AppText, Button, Card, ListRow, Notice, Sheet, Skeleton } from "@/components/ui";
 import { LessonContent } from "@/components/domain/lesson-content";
@@ -85,7 +85,8 @@ function Reader({ lesson }: { lesson: LessonDetail & { body: NonNullable<LessonD
 
   return (
     <View style={{ flex: 1, backgroundColor: colors.bg }}>
-      <View style={{ paddingHorizontal: space.screenGutter, paddingVertical: space.s2, flexDirection: "row", alignItems: "center", justifyContent: "space-between" }}>
+      {/* Üst şerit içerikten çizgiyle ayrılır: kaydırılan metin altında yarım satır görünmesin (13 Kas 2026). */}
+      <View style={{ paddingHorizontal: space.screenGutter, paddingVertical: space.s2, flexDirection: "row", alignItems: "center", justifyContent: "space-between", borderBottomWidth: StyleSheet.hairlineWidth, borderBottomColor: colors.line }}>
         <AppText variant="label" tone="accentInk">{`Ders ${lesson.order} / ${lesson.section.lessonCount} · ${lesson.readingMinutes} dk`}</AppText>
         <Button size="sm" title="İçindekiler" variant="secondary" onPress={() => setToc(true)} />
       </View>
@@ -129,8 +130,12 @@ function Reader({ lesson }: { lesson: LessonDetail & { body: NonNullable<LessonD
         </Card>
       </ScrollView>
       {lesson.next ? (
-        <View style={{ paddingHorizontal: space.screenGutter, paddingTop: space.s3, paddingBottom: Math.max(insets.bottom, space.s3), backgroundColor: colors.bg }}>
-          <Button title={`Sonraki ders · ${lesson.next.title}`} onPress={() => { savePosition(); router.replace({ pathname: "/anlatim/[slug]", params: { slug: lesson.next!.slug } }); }} />
+        <View style={{ paddingHorizontal: space.screenGutter, paddingTop: space.s3, paddingBottom: Math.max(insets.bottom, space.s3), backgroundColor: colors.bg, borderTopWidth: StyleSheet.hairlineWidth, borderTopColor: colors.line }}>
+          {/* Uzun ders adı düğmede iki satıra kırılıp sola yaslanıyordu; ad üstte, düğme kısa (13 Kas 2026). */}
+          <AppText variant="bodySm" tone="soft" numberOfLines={1} style={{ marginBottom: space.s2 }}>
+            Sıradaki: {lesson.next.title}
+          </AppText>
+          <Button title="Sonraki ders" onPress={() => { savePosition(); router.replace({ pathname: "/anlatim/[slug]", params: { slug: lesson.next!.slug } }); }} />
         </View>
       ) : (
         <View style={{ paddingHorizontal: space.screenGutter, paddingBottom: Math.max(insets.bottom, space.s3) }}>

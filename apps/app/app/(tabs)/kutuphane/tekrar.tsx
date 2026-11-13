@@ -50,6 +50,12 @@ export default function TekrarScreen() {
           ) : (
             <Button title={`Favorilerden tur · ${Math.min(bookmarks.data!.length, 20)} soru`} onPress={() => router.push({ pathname: "/seans", params: { mode: "practice", fromBookmarks: "1", count: String(Math.min(bookmarks.data!.length, 20)), focusKind: "coach", courseId: "", topicId: "", recipe: "" } })} />
           )}
+          {/* Liste sunucuda 50 ile sınırlı; başlık toplamı söylerken listenin eksik görünmesi açıklanır (13 Kas 2026). */}
+          {tab === "yanlislar" && toplam && toplam.wrongCount > wrongs.data!.length ? (
+            <AppText variant="bodySm" tone="subtle">
+              En son {wrongs.data!.length} yanlışın listeleniyor; tur, {toplam.wrongCount} yanlışın tamamından en eskisi önce seçer.
+            </AppText>
+          ) : null}
           <Card style={{ paddingVertical: 0 }}>
             {tab === "yanlislar"
               ? wrongs.data!.map((w, i) => <ListRow key={w.questionId} title={w.stem ?? "Soru"} subtitle={`${w.topicName ?? "Konu"} · ${w.wrongCount}× yanlış`} chevron={false} divider={i < wrongs.data!.length - 1} />)

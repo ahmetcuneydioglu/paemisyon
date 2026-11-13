@@ -1,4 +1,5 @@
 import type { ReactNode } from "react";
+import { bandTone, type Band } from "@/features/rooms/queries";
 import { View } from "react-native";
 import { AppText } from "@/components/ui";
 import { useTheme } from "@/theme/ThemeProvider";
@@ -7,7 +8,7 @@ import { useTheme } from "@/theme/ThemeProvider";
  * Oda durum paneli (Doc 49/14): lacivert panel (iki temada da koyu), solda büyük serif yüzde
  * ve alt satır, sağda iki küçük satır ya da rozet. Yüzde yoksa "—" değil, "Henüz çözülmedi".
  */
-export function RoomStatPanel({ pct, sub, right, label }: { pct: number | null; sub: string; right?: ReactNode; label?: string | null }) {
+export function RoomStatPanel({ pct, sub, right, label, band }: { pct: number | null; sub: string; right?: ReactNode; label?: string | null; /** Verilirse yüzde hâkimiyet renginde (Çalış kartıyla aynı kural, `bandTone`). */ band?: Band }) {
   const { colors, radius, space, type } = useTheme();
   return (
     <View style={{ backgroundColor: colors.panel, borderRadius: radius.panel, padding: space.s4, gap: space.s1 }}>
@@ -24,7 +25,7 @@ export function RoomStatPanel({ pct, sub, right, label }: { pct: number | null; 
               Henüz çözülmedi
             </AppText>
           ) : (
-            <AppText variant="display" tone="gold" style={{ fontSize: 44, lineHeight: 51 }}>
+            <AppText variant="display" tone={band ? bandTone(band) : "gold"} style={{ fontSize: 44, lineHeight: 51 }}>
               %{pct}
             </AppText>
           )}
