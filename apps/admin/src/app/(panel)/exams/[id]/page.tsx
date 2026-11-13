@@ -344,6 +344,7 @@ function ExamWizard() {
                     ['Anlık geri bildirim', exam.liveAnswerReveal ? 'Açık (resmî çözüm)' : 'Kapalı (resmî çözüm) · tekrar çözümde açık'],
                     ['Bitince pratik', exam.practiceAfterEnd ? 'Açık' : 'Kapalı'],
                     ['Bildirim', exam.remindEnabled ? 'Hatırlatma ve sonuç bildirimi açık' : 'Kapalı'],
+                    ['Görünürlük', exam.testOnly ? 'Prova — yalnız test hesapları (admin, beta)' : 'Herkese açık'],
                   ] as [string, string][]
                 ).map(([k, v]) => (
                   <div key={k} className="grid grid-cols-[11rem_1fr] gap-3 py-2">

@@ -123,6 +123,9 @@ export default function ExamsPage() {
                         <Link href={`/exams/${e.id}`} className="font-medium text-indigo-700 hover:underline">
                           {e.title}
                         </Link>
+                        {e.testOnly ? (
+                          <span className="ml-2 inline-block rounded-full bg-amber-100 px-2 py-0.5 text-xs font-medium text-amber-800">Prova · yalnız test</span>
+                        ) : null}
                         <div className="text-xs text-slate-400">
                           {e.questionCount} soru · {e.durationMinutes} dk
                           {e.difficulty ? ` · ${e.difficulty}` : ''}

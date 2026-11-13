@@ -19,6 +19,8 @@ export interface ExamFormValue {
   examTypeId: string | null;
   isPremium: boolean;
   liveAnswerReveal: boolean;
+  /** Prova denemesi: yalnız test hesaplarına (admin, beta) görünür, duyurulmaz. */
+  testOnly: boolean;
   questionsOpenAfterEnd: boolean;
   practiceAfterEnd: boolean;
   remindEnabled: boolean;
@@ -47,6 +49,7 @@ export function emptyExam(): ExamFormValue {
     examTypeId: null,
     isPremium: false,
     liveAnswerReveal: false,
+    testOnly: false,
     questionsOpenAfterEnd: true,
     practiceAfterEnd: true,
     remindEnabled: true,
@@ -65,6 +68,7 @@ export function toFormValue(e: AdminExamDetail): ExamFormValue {
     examTypeId: e.examTypeId,
     isPremium: e.isPremium,
     liveAnswerReveal: e.liveAnswerReveal,
+    testOnly: e.testOnly ?? false,
     questionsOpenAfterEnd: e.questionsOpenAfterEnd,
     practiceAfterEnd: e.practiceAfterEnd,
     remindEnabled: e.remindEnabled,
@@ -401,6 +405,17 @@ export function ExamSettingsForm({
           onChange={(b) => set({ isPremium: b })}
         />
       </section>
+      <section className="space-y-2">
+        <h3 className="text-sm font-semibold text-slate-700">Görünürlük</h3>
+        <Toggle
+          label="Prova denemesi — yalnız test hesapları"
+          help="Açıkken deneme yalnız admin ve beta rolündeki hesaplara görünür: listede, Bugün'de, sıralamada. Duyuru ve hatırlatma gitmez, genel liderliğe girmez. Canlıdan önce gerçek cihazla prova için."
+          checked={v.testOnly}
+          disabled={disabled}
+          onChange={(b) => set({ testOnly: b })}
+        />
+      </section>
+
       <section className="space-y-2">
         <h3 className="text-sm font-semibold text-slate-700">Çözüm deneyimi</h3>
         <Toggle

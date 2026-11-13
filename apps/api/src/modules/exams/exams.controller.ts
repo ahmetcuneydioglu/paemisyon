@@ -101,8 +101,8 @@ export class ExamsController {
 
   @Get(':id/questions')
   @UseGuards(OptionalJwtGuard)
-  questions(@Param('id', ParseUUIDPipe) id: string) {
-    return this.exams.browseQuestions(id);
+  questions(@Param('id', ParseUUIDPipe) id: string, @CurrentUser() user?: AuthenticatedUser) {
+    return this.exams.browseQuestions(id, user);
   }
 
   @Get(':id/remind')

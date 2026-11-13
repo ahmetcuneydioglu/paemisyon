@@ -55,6 +55,7 @@ export class AdminExamsService {
       isPremium: e.isPremium,
       liveAnswerReveal: e.liveAnswerReveal,
       practiceAfterEnd: e.practiceAfterEnd,
+      testOnly: e.testOnly,
       status: e.status,
       questionCount: e._count.questions,
       /** Eski alan: toplam oturum (resmî + tekrar). */
@@ -102,6 +103,7 @@ export class AdminExamsService {
       examTypeId: exam.examTypeId,
       isPremium: exam.isPremium,
       liveAnswerReveal: exam.liveAnswerReveal,
+      testOnly: exam.testOnly,
       questionsOpenAfterEnd: exam.questionsOpenAfterEnd,
       practiceAfterEnd: exam.practiceAfterEnd,
       /** Eski alan adı (panelin eski sürümü). */
@@ -742,19 +744,22 @@ export class AdminExamsService {
       questionCount: rows.length,
       warnings: check.warnings,
     });
+    // Prova denemesi (testOnly) hiç duyurulmaz: ne otomasyon olayı ne kampanya (13 Kas 2026).
+    if (exam.testOnly) announce = false;
     // Olay omurgası: `exam_published` otomasyonu (kapalı doğar) açıksa kitleye duyurur.
-    void this.events.emit('exam_published', actor.id, {
-      entityType: 'exam',
-      entityId: id,
-      payload: {
-        examId: id,
-        title: exam.title,
-        publishMode: exam.publishMode,
-        startAt: exam.startAt.toISOString(),
-        questionCount: rows.length,
-        durationMinutes: exam.durationMinutes,
-      },
-    });
+    if (!exam.testOnly)
+      void this.events.emit('exam_published', actor.id, {
+        entityType: 'exam',
+        entityId: id,
+        payload: {
+          examId: id,
+          title: exam.title,
+          publishMode: exam.publishMode,
+          startAt: exam.startAt.toISOString(),
+          questionCount: rows.length,
+          durationMinutes: exam.durationMinutes,
+        },
+      });
 
     // Duyuru (opsiyonel): kayıtlı tüm cihazlara push — dokunan Denemeler
     // sekmesine iner. Push yapılandırılmamışsa sessizce atlanır.
@@ -882,6 +887,7 @@ export class AdminExamsService {
       questionsOpenAfterEnd: dto.questionsOpenAfterEnd ?? true,
       practiceAfterEnd: dto.practiceAfterEnd ?? dto.archiveOpenAfterEnd ?? true,
       remindEnabled: dto.remindEnabled ?? true,
+      testOnly: dto.testOnly ?? false,
     };
   }
 

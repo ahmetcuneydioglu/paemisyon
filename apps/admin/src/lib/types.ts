@@ -250,6 +250,8 @@ export interface AdminExamListItem {
   isPremium: boolean;
   liveAnswerReveal: boolean;
   practiceAfterEnd: boolean;
+  /** Prova denemesi (yalnız test hesapları). Eski API'de yok. */
+  testOnly?: boolean;
   status: ContentStatus;
   questionCount: number;
   /** Toplam oturum (resmî + tekrar). */
@@ -282,6 +284,7 @@ export interface AdminExamDetail {
   examTypeId: string | null;
   isPremium: boolean;
   liveAnswerReveal: boolean;
+  testOnly?: boolean;
   questionsOpenAfterEnd: boolean;
   practiceAfterEnd: boolean;
   /** Eski alan adı — practiceAfterEnd ile aynı. */

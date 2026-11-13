@@ -62,6 +62,11 @@ export class UpsertExamDto {
   @IsBoolean()
   liveAnswerReveal?: boolean;
 
+  /** Prova denemesi: yalnız test hesaplarına (admin, beta) görünür, duyurulmaz. */
+  @IsOptional()
+  @IsBoolean()
+  testOnly?: boolean;
+
   @IsOptional()
   @IsBoolean()
   questionsOpenAfterEnd?: boolean;

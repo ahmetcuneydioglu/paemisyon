@@ -1176,6 +1176,9 @@ model Exam {
   /// Takvimli sıralama donma anı (exam_rankings yazıldı).
   rankingsComputedAt    DateTime?       @map("rankings_computed_at")
   status                ContentStatus   @default(draft)
+  /// Yalnız test hesaplarına (admin, beta) görünür prova denemesi (13 Kas 2026). Listede, Bugün'de,
+  /// sıralamada, bildirimlerde ve genel liderlikte gerçek kullanıcılara GÖRÜNMEZ.
+  testOnly              Boolean         @default(false) @map("test_only")
   sortOrder             Int             @default(0) @map("sort_order")
   createdBy             String?         @map("created_by") @db.Uuid
   createdAt             DateTime        @default(now()) @map("created_at")

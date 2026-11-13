@@ -1,3 +1,4 @@
+import { denemeGorunurluk } from '../../common/test-denemesi';
 import { nameFor } from '../../common/kisi-adi';
 import {
   ConflictException,
@@ -121,6 +122,7 @@ export class ExamsService {
         status: 'published',
         deletedAt: null,
         ...(cikmisSinavlarDahil ? {} : { pastExam: null }),
+        ...denemeGorunurluk(user),
       },
       orderBy: [{ startAt: 'desc' }],
       take: 60,
@@ -176,9 +178,31 @@ export class ExamsService {
         })
       : [];
     const rankOf = new Map(rankRows.map((r) => [r.examId, r.rank]));
+    // Sıra donmuş tablodan geliyorsa "N kişide" de AYNI tablodan (13 Kas 2026: liste canlı sayımla
+    // "15 kişide 4." derken sonuç ekranı donmuş tabloyla "14 kişide 4." diyordu).
+    const donmusToplam = rankRows.length
+      ? new Map(
+          (
+            await this.prisma.examRanking.groupBy({
+              by: ['examId'],
+              where: { examId: { in: rankRows.map((r) => r.examId) } },
+              _count: { _all: true },
+            })
+          ).map((g) => [g.examId, g._count._all]),
+        )
+      : new Map<string, number>();
 
     const items = exams
-      .map((e) => this.listItem(e, now, mineOf.get(e.id) ?? [], statOf.get(e.id), rankOf.get(e.id)))
+      .map((e) =>
+        this.listItem(
+          e,
+          now,
+          mineOf.get(e.id) ?? [],
+          statOf.get(e.id),
+          rankOf.get(e.id),
+          donmusToplam.get(e.id),
+        ),
+      )
       .filter((it) => {
         // Serbest: yayın anından önce görünmez; arşiv tarihi geçtiyse yalnız çözümü olana.
         if (it.publishMode === 'serbest') {
@@ -212,6 +236,7 @@ export class ExamsService {
     }[],
     stat?: { _count: { _all: number }; _avg: { score: Prisma.Decimal | null } },
     rank?: number,
+    rankTotal?: number,
   ) {
     const w = this.window(e);
     const official = mine.find((m) => m.attemptRole === 'official') ?? null;
@@ -284,8 +309,13 @@ export class ExamsService {
               correct: lockedResult ? null : official.correctCount,
               wrong: lockedResult ? null : official.wrongCount,
               blank: lockedResult ? null : official.blankCount,
-              rank: lockedResult ? null : (rank ?? null),
-              total: participantCount,
+              // Sıra, sıralama ekranı ve sonuç ekranıyla aynı kuralla: en az RANKING_MIN_SAMPLE resmî
+              // çözüm yoksa sıra yazılmaz (prova 13 Kas 2026: kart "5 kişide 3." derken sıralama kapalıydı).
+              rank:
+                lockedResult || (rankTotal ?? participantCount) < RANKING_MIN_SAMPLE
+                  ? null
+                  : (rank ?? null),
+              total: rank != null && rankTotal != null ? rankTotal : participantCount,
               completedAt: official.completedAt,
             }
           : null,
@@ -370,7 +400,7 @@ export class ExamsService {
    */
   async start(user: AuthenticatedUser, examId: string, requestedRole?: AttemptRole) {
     const exam = await this.prisma.exam.findFirst({
-      where: { id: examId, status: 'published', deletedAt: null },
+      where: { id: examId, status: 'published', deletedAt: null, ...denemeGorunurluk(user) },
       include: { pastExam: { select: { isPremium: true } } },
     });
     if (!exam) throw new NotFoundException('Deneme bulunamadı.');
@@ -1113,7 +1143,7 @@ export class ExamsService {
 
   async leaderboard(examId: string, user?: AuthenticatedUser) {
     const exam = await this.prisma.exam.findFirst({
-      where: { id: examId, status: 'published', deletedAt: null },
+      where: { id: examId, status: 'published', deletedAt: null, ...denemeGorunurluk(user) },
     });
     if (!exam) throw new NotFoundException('Deneme bulunamadı.');
     const w = this.window(exam);
@@ -1336,7 +1366,7 @@ export class ExamsService {
   // ── Hatırlatma (Doc 50 §2.3) ──
   async setReminder(user: AuthenticatedUser, examId: string, on: boolean) {
     const exam = await this.prisma.exam.findFirst({
-      where: { id: examId, status: 'published', deletedAt: null },
+      where: { id: examId, status: 'published', deletedAt: null, ...denemeGorunurluk(user) },
     });
     if (!exam) throw new NotFoundException('Deneme bulunamadı.');
     if (!on) {
@@ -1486,6 +1516,7 @@ export class ExamsService {
           exam: {
             status: 'published',
             deletedAt: null,
+            testOnly: false,
             remindEnabled: true,
             publishMode: 'takvimli',
             startAt: { gt: new Date(now), lte: new Date(now + wnd.maxMs) },
@@ -1521,9 +1552,9 @@ export class ExamsService {
   }
 
   // ── Sınav sonrası serbest soru görüntüleme (cevapsız) ──
-  async browseQuestions(examId: string) {
+  async browseQuestions(examId: string, user?: AuthenticatedUser) {
     const exam = await this.prisma.exam.findFirst({
-      where: { id: examId, status: 'published', deletedAt: null },
+      where: { id: examId, status: 'published', deletedAt: null, ...denemeGorunurluk(user) },
     });
     if (!exam) throw new NotFoundException('Deneme bulunamadı.');
     if (!exam.questionsOpenAfterEnd || availabilityOf(this.window(exam)) !== 'closed') {
@@ -1557,7 +1588,7 @@ export class ExamsService {
              SUM(qs.correct_count)::int AS total_correct
       FROM quiz_sessions qs
       JOIN users u ON u.id = qs.user_id AND u.deleted_at IS NULL
-      JOIN exams e ON e.id = qs.exam_id AND e.deleted_at IS NULL
+      JOIN exams e ON e.id = qs.exam_id AND e.deleted_at IS NULL AND e.test_only = false
       WHERE qs.mode = 'deneme' AND qs.status = 'completed' AND qs.attempt_role = 'official'
         AND (qs.correct_count > 0 OR qs.wrong_count > 0)
       GROUP BY qs.user_id, u.display_name, u.avatar_url

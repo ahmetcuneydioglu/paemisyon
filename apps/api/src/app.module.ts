@@ -5,6 +5,7 @@ import { ThrottlerGuard, ThrottlerModule } from '@nestjs/throttler';
 import { SentryModule } from '@sentry/nestjs/setup';
 import { istekKimligi } from './common/istek-kimligi';
 import { ScheduleModule } from '@nestjs/schedule';
+import { zamanlanmisGorevlerAcik } from './common/zamanlayici';
 import { validateEnv } from './config/env.validation';
 import { TraceIdMiddleware } from './common/middleware/trace-id.middleware';
 import { PrismaModule } from './infra/prisma/prisma.module';
@@ -70,7 +71,9 @@ import { FlashcardsModule } from './modules/flashcards/flashcards.module';
         },
       ],
     }),
-    ScheduleModule.forRoot(), // haftalık mastery fotoğrafı (Doc 19)
+    // Cron'lar yalnız canlı sunucuda (common/zamanlayici.ts): yerelde açık kalan API canlı veriye
+    // dokunan eski görevleri çalıştırmasın (28 Eki 2026 Paem11 olayı).
+    ...(zamanlanmisGorevlerAcik() ? [ScheduleModule.forRoot()] : []),
     PrismaModule,
     SettingsModule,
     AuthModule,

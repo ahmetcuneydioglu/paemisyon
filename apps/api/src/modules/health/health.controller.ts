@@ -1,6 +1,7 @@
 import { Controller, Get, Req } from '@nestjs/common';
 import type { Request } from 'express';
 import { PrismaService } from '../../infra/prisma/prisma.service';
+import { zamanlanmisGorevlerAcik } from '../../common/zamanlayici';
 
 @Controller('health')
 export class HealthController {
@@ -25,6 +26,9 @@ export class HealthController {
       service: 'paemisyon-api',
       version: '0.0.1',
       database,
+      // Zamanlanmış görevler bu süreçte çalışıyor mu (canlıda true, yerelde false beklenir).
+      crons: zamanlanmisGorevlerAcik(),
+      commit: process.env.RAILWAY_GIT_COMMIT_SHA?.slice(0, 8) ?? null,
       // Vekil zinciri teşhisi: hız sınırının GERÇEK istemciyi sayıp saymadığı
       // ancak buradan görülür (Railway edge'i X-Forwarded-For'a kendi iç
       // adresini de ekliyor mu?). Yalnız isteği yapanın kendi bilgisi döner.

@@ -1,3 +1,4 @@
+import { denemeGorunurluk } from '../../common/test-denemesi';
 import {
   BadRequestException,
   ForbiddenException,
@@ -454,7 +455,7 @@ export class CoachService {
         // Çıkmış sınavın motor kaydı (Doc 36) randevulu deneme değildir: deneme
         // listesiyle aynı süzgeç (exams.service), yoksa yeni bağlanan bir dönem
         // 48 saat boyunca "Yeni deneme yayınlandı" kartı olarak görünürdü.
-        where: { status: 'published', deletedAt: null, pastExam: null },
+        where: { status: 'published', deletedAt: null, pastExam: null, ...denemeGorunurluk(user) },
         orderBy: { startAt: 'desc' },
         take: 20,
         include: { _count: { select: { questions: true } } },
