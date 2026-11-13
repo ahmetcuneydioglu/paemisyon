@@ -117,14 +117,14 @@ export default function MevzuatKanunScreen() {
                 </View>
                 <ProgressBar value={(law?.percent ?? 0) / 100} height={5} label="Okuma ilerlemesi" tone={(law?.percent ?? 0) >= 100 ? "success" : "accent"} />
                 <AppText variant="bodySm" tone="subtle">
-                  {d.lastVerifiedAt ? `Resmî kaynaktan ${new Date(d.lastVerifiedAt).toLocaleDateString("tr-TR")} itibarıyla doğrulandı.` : "Doğrulama tarihi kayıtlı değil."}
+                  {d.lastVerifiedAt ? `Resmî kaynaktan ${new Date(d.lastVerifiedAt).toLocaleDateString("tr-TR", { day: "numeric", month: "long", year: "numeric" })} itibarıyla doğrulandı.` : "Doğrulama tarihi kayıtlı değil."}
                   {d.effectiveInfo ? ` ${d.effectiveInfo}` : ""}
                 </AppText>
                 <Button title={resumeNo ? `Buradan devam: md ${resumeNo}` : "Okumaya başla"} onPress={() => openReader(resumeNo)} />
                 <View style={{ flexDirection: "row", gap: space.s2 }}>
                   {d.questionCount > 0 && d.topicId ? (
                     <View style={{ flex: 1 }}>
-                      <Button title="Bu kanundan 10 soru" variant="secondary" size="sm" onPress={() => router.push({ pathname: "/seans", params: { mode: "practice", count: "10", focusKind: "topic", topicId: d.topicId!, courseId: "", recipe: "" } })} />
+                      <Button title="10 soru çöz" variant="secondary" size="sm" onPress={() => router.push({ pathname: "/seans", params: { mode: "practice", count: "10", focusKind: "topic", topicId: d.topicId!, courseId: "", recipe: "" } })} />
                     </View>
                   ) : null}
                   {d.officialSourceUrl ? (

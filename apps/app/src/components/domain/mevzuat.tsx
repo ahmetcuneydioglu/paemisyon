@@ -14,10 +14,15 @@ export function lawBadge(law: Pick<MerkezLaw, "number" | "type">): string {
   return TYPE_LABEL[law.type].slice(0, 4) + (TYPE_LABEL[law.type].length > 4 ? "." : "");
 }
 
-/** Kart başlığı: numara rozette durduğu için baştaki "2559 sayılı " atılır. */
+/**
+ * Kart başlığı: numara rozette durduğu için baştaki "2559 sayılı " ya da yalın "2575 " atılır
+ * (13 Kas 2026: "2575 Danıştay Kanunu" rozetle birlikte numarayı iki kez gösteriyordu).
+ */
 export function lawDisplayName(law: Pick<MerkezLaw, "number" | "name">): string {
-  const prefix = law.number ? `${law.number} sayılı ` : null;
-  return prefix && law.name.toLocaleLowerCase("tr-TR").startsWith(prefix.toLocaleLowerCase("tr-TR")) ? law.name.slice(prefix.length) : law.name;
+  if (!law.number) return law.name;
+  const kalip = new RegExp(`^${law.number.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}\\s+(?:sayılı\\s+)?`, "iu");
+  const kirpik = law.name.replace(kalip, "");
+  return kirpik.length > 0 && kirpik !== law.name ? kirpik : law.name;
 }
 
 /** Kısa ad: "PVSK", yoksa numara, o da yoksa ad. */
@@ -40,7 +45,8 @@ export function progressLabel(law: Pick<MerkezLaw, "percent" | "lastRead">): str
 export function LawCard({ law, onPress, verified = false }: { law: MerkezLaw; onPress: () => void; /** Son resmî kaynak karşılaştırması ("Güncel · 11 Kas 2026"). */ verified?: boolean }) {
   const { colors, space, radius } = useTheme();
   const verifiedLabel = verified && law.lastVerifiedAt ? `Güncel · ${new Date(law.lastVerifiedAt).toLocaleDateString("tr-TR", { day: "numeric", month: "short", year: "numeric" })}` : null;
-  const meta = [`${law.articleCount} madde`, law.questionCount > 0 ? `${law.questionCount} soru çıkmış` : null].filter(Boolean).join(" · ");
+  // "çıkmış" denmez: sayı madde metninden türetilmiş soruları da kapsar (13 Kas 2026).
+  const meta = [`${law.articleCount} madde`, law.questionCount > 0 ? `${law.questionCount} soru` : null].filter(Boolean).join(" · ");
   return (
     <Pressable
       accessibilityRole="button"

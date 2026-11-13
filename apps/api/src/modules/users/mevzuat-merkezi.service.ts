@@ -128,7 +128,12 @@ export class MevzuatMerkeziService {
     const cont = latest?.lastRead
       ? {
           slug: latest.slug,
-          lawShort: latest.shortName ?? latest.name,
+          // Kısa ad yoksa "1481 sayılı Kanun": uzun ad devam kartında "· Madde 5"i kesip atıyordu (13 Kas 2026).
+          lawShort:
+            latest.shortName ??
+            (latest.number && latest.type === 'kanun'
+              ? `${latest.number} sayılı Kanun`
+              : latest.name),
           lawName: latest.name,
           no: latest.lastRead.no,
           title: latest.lastRead.title,

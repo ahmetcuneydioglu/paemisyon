@@ -112,7 +112,11 @@ export class MevzuatService {
     if (topicIds.length === 0) return new Map();
     const rows = await this.prisma.question.groupBy({
       by: ['topicId'],
-      where: { topicId: { in: topicIds }, deletedAt: null },
+      where: {
+        topicId: { in: topicIds },
+        deletedAt: null,
+        currentVersion: { status: 'published' },
+      },
       _count: { _all: true },
     });
     return new Map(rows.map((r) => [r.topicId, r._count._all]));
@@ -165,12 +169,20 @@ export class MevzuatService {
       leg.topicId
         ? this.prisma.question.groupBy({
             by: ['articleNo'],
-            where: { topicId: leg.topicId, deletedAt: null, articleNo: { not: null } },
+            // articleNo null da gruplanır: kanun toplamı maddesiz soruları kapsar, satır sayısı kapsamaz.
+            where: {
+              topicId: leg.topicId,
+              deletedAt: null,
+              currentVersion: { status: 'published' },
+            },
             _count: { _all: true },
           })
         : Promise.resolve([] as { articleNo: string | null; _count: { _all: number } }[]),
     ]);
-    const qMap = new Map(qByArticle.map((r) => [r.articleNo, r._count._all]));
+    const qMap = new Map(
+      qByArticle.filter((r) => r.articleNo != null).map((r) => [r.articleNo, r._count._all]),
+    );
+    const total = qByArticle.reduce((a, r) => a + r._count._all, 0);
     return {
       slug: leg.slug,
       type: leg.type,
@@ -182,7 +194,8 @@ export class MevzuatService {
       effectiveInfo: leg.effectiveInfo,
       lastVerifiedAt: leg.lastVerifiedAt?.toISOString() ?? null,
       articleCount: articles.length,
-      questionCount: [...qMap.values()].reduce((a, b) => a + b, 0),
+      // Maddesiz sorular da sayılır; merkez kartıyla aynı sayı (13 Kas 2026: 117 / 110 çelişkisi).
+      questionCount: total,
       sections,
       toc: articles.map((a) => ({
         no: a.articleNo,
@@ -310,7 +323,12 @@ export class MevzuatService {
       leg.topicId
         ? this.prisma.question.groupBy({
             by: ['articleNo'],
-            where: { topicId: leg.topicId, deletedAt: null, articleNo: { not: null } },
+            where: {
+              topicId: leg.topicId,
+              deletedAt: null,
+              articleNo: { not: null },
+              currentVersion: { status: 'published' },
+            },
             _count: { _all: true },
           })
         : Promise.resolve([] as { articleNo: string | null; _count: { _all: number } }[]),
