@@ -103,7 +103,7 @@ export function maddeAraligi(nos: readonly string[]): string | null {
 
 /**
  * Çalış ders kartının tek künyesi (Doc 49/17). Öncelik: diğer derslerden farklı sınav ağırlığı
- * (çoğunluk %10 iken "Sınavda %30" bilgi taşır) → başlanmadı → açık yanlış → "Yanlış yok".
+ * (çoğunluk %10 iken "Sınav ağırlığı %30" bilgi taşır) → başlanmadı → açık yanlış → "Yanlış yok".
  */
 export function dersKunyesi(input: {
   weightPercent: number | null;
@@ -112,7 +112,7 @@ export function dersKunyesi(input: {
   wrongCount: number;
 }): string {
   const { weightPercent: w, yayginAgirlik: y } = input;
-  if (w != null && y != null && w !== y) return `Sınavda %${w}`;
+  if (w != null && y != null && w !== y) return `Sınav ağırlığı %${w}`;
   if (input.solved === 0) return 'Henüz başlanmadı';
   if (input.wrongCount > 0) return `${input.wrongCount} yanlış`;
   return 'Yanlış yok';

@@ -1,10 +1,11 @@
 import { View, type StyleProp, type ViewStyle } from "react-native";
 import { useTheme } from "@/theme/ThemeProvider";
 
-export type ProgressTone = "accent" | "success" | "warning" | "danger";
+/** `info`: ölçüm durumu (hâkimiyet) — başarı/hata değeri taşımaz. */
+export type ProgressTone = "accent" | "success" | "warning" | "danger" | "info";
 
 function toneColor(colors: ReturnType<typeof useTheme>["colors"], tone: ProgressTone) {
-  return tone === "success" ? colors.success : tone === "warning" ? colors.warning : tone === "danger" ? colors.danger : colors.accent;
+  return tone === "success" ? colors.success : tone === "warning" ? colors.warning : tone === "danger" ? colors.danger : tone === "info" ? colors.info : colors.accent;
 }
 
 /**

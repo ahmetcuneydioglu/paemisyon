@@ -33,6 +33,7 @@ class NobetDark {
   static const Color danger = Color(0xFFE07A6B);
   static const Color dangerSoft = Color(0xFF3F2630);
   static const Color dangerInk = Color(0xFFF3A396);
+  static const Color info = Color(0xFF8CB3D9);
   static const Color focusRing = Color(0xFFE8B46C);
 }
 
@@ -64,6 +65,7 @@ class NobetLight {
   static const Color danger = Color(0xFFB8453A);
   static const Color dangerSoft = Color(0xFFF8DDD9);
   static const Color dangerInk = Color(0xFF8E2E25);
+  static const Color info = Color(0xFF35699B);
   static const Color focusRing = Color(0xFF8B5E23);
 }
 

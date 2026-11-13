@@ -100,7 +100,7 @@ export interface StudyCourse {
   wrongCount: number;
   favoriteCount: number;
   summaryUnitCount: number;
-  /** Kartın tek künyesi ("18 yanlış", "Sınavda %30"…) — sunucu seçer. */
+  /** Kartın tek künyesi ("18 yanlış", "Sınav ağırlığı %30"…) — sunucu seçer. */
   note: string;
 }
 

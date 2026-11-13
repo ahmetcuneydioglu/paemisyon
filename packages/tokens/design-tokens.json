@@ -145,6 +145,11 @@
       "light": "#8E2E25",
       "$role": "Hata zemini üstünde metin"
     },
+    "info": {
+      "dark": "#8CB3D9",
+      "light": "#35699B",
+      "$role": "Hâkimiyet (ölçüm durumu) — yüzde ve çubuk; başarı/hata değeri taşımaz (Çalış, Figma 240:1072)"
+    },
     "focusRing": {
       "dark": "#E8B46C",
       "light": "#8B5E23",
@@ -287,6 +292,16 @@
       {
         "fg": "inkSoft",
         "bg": "liveSoft",
+        "size": "text"
+      },
+      {
+        "fg": "info",
+        "bg": "surface",
+        "size": "text"
+      },
+      {
+        "fg": "info",
+        "bg": "bg",
         "size": "text"
       }
     ]

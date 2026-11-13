@@ -20,3 +20,4 @@ export * from "./choice-tabs";
 export * from "./brand-mark";
 export * from "./scale-to-fit";
 export * from "./provider-marks";
+export * from "./shortcut-button";

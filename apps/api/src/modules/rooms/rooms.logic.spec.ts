@@ -64,7 +64,7 @@ describe('rooms.logic (Doc 49/14)', () => {
     it('ders künyesi: farklı ağırlık > başlanmadı > yanlış > yanlış yok', () => {
       const k = (w: number, solved: number, wrongCount: number) =>
         dersKunyesi({ weightPercent: w, yayginAgirlik: 10, solved, wrongCount });
-      expect(k(30, 40, 5)).toBe('Sınavda %30');
+      expect(k(30, 40, 5)).toBe('Sınav ağırlığı %30');
       expect(k(10, 0, 0)).toBe('Henüz başlanmadı');
       expect(k(10, 40, 18)).toBe('18 yanlış');
       expect(k(10, 40, 0)).toBe('Yanlış yok');

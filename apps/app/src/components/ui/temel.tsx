@@ -17,7 +17,7 @@ import { size, type TypeRole } from "@/theme/tokens";
 
 /** `accent`: vurgu METNİ — koyuda altın, açıkta kahve (token accentInk; altın açıkta okunmaz, Doc 49/13 §4).
  *  `gold`: ham altın — yalnız koyu panel üstünde (geri sayım rakamı). */
-export type Tone = "ink" | "soft" | "subtle" | "accent" | "accentInk" | "gold" | "success" | "danger" | "onAccent" | "panelInk" | "panelSoft";
+export type Tone = "ink" | "soft" | "subtle" | "accent" | "accentInk" | "gold" | "success" | "danger" | "info" | "onAccent" | "panelInk" | "panelSoft";
 
 /**
  * Alt ağaçtaki her `AppText` için dinamik yazı tavanı. YALNIZ süs/önizleme alanları içindir
@@ -53,6 +53,7 @@ export function AppText({
     : tone === "gold" ? colors.accent
     : tone === "success" ? colors.success
     : tone === "danger" ? colors.danger
+    : tone === "info" ? colors.info
     : tone === "onAccent" ? colors.onAccent
     : tone === "panelInk" ? colors.panelInk
     : tone === "panelSoft" ? colors.panelSoft

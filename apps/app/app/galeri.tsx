@@ -1,5 +1,5 @@
 import { useRouter } from "expo-router";
-import { ArrowLeft, Bell, Inbox, Play, Search, Star } from "lucide-react-native";
+import { ArrowLeft, Bell, BookOpen, Inbox, Play, RotateCcw, Search, Shuffle, Star } from "lucide-react-native";
 import { useState } from "react";
 import { View } from "react-native";
 import { CountdownHeader, CourseTile, FeedbackPanel, FlashCard, FlashcardEntry, FlashcardKindBadge, FlashcardResultPanel, FlashcardStateBar, LegislationRow, NotificationRow, QuestionMedia, QuestionMetaRow, QuestionOption, QuestionStem, RatingBar, ResultPanel, SessionProgress, SessionTitleBlock, TaskHero, ToolRow, UndoStrip, type OptionState, ShareQuestionCard, CourseCard, ResumeStrip, TestCard, CoveragePanel, UpsellStrip, ExamContextLine, ForYouList, LeaderboardTeaser, NextStepCard, ReviewPromptSheet, RouteList, WeekSummaryLine, LeaderboardList, LeaderboardMyRank, LeaderboardPodium, RankAvatar, RankLabel, RankSystemSheet } from "@/components/domain";
@@ -9,6 +9,7 @@ import type { InboxItem } from "@/features/notifications/queries";
 import type { ShareCardData } from "@/features/quiz/share";
 import {
   ActionTile,
+  ShortcutButton,
   ActionBar,
   AppText,
   Badge,
@@ -334,8 +335,13 @@ export default function GaleriScreen() {
             onDismiss={() => setReviewSheet(null)}
           />
           <View style={{ flexDirection: "row", gap: 12 }}>
-            <CourseCard name="Genel Kültür ve Analitik Düşünme" accuracyPct={31} band="weak" note="Sınavda %30" onPress={() => {}} />
-            <CourseCard name="Polis Mevzuatı" accuracyPct={null} band="new" note="Henüz başlanmadı" onPress={() => {}} />
+            <CourseCard name="Genel Kültür ve Güncel Olaylar" accuracyPct={28} note="Sınav ağırlığı %30" onPress={() => {}} />
+            <CourseCard name="Polis Mevzuatı" accuracyPct={null} note="Henüz başlanmadı" onPress={() => {}} />
+          </View>
+          <ShortcutButton variant="primary" icon={BookOpen} label="Kart tekrarı · 22" onPress={() => {}} />
+          <View style={{ flexDirection: "row", gap: 12 }}>
+            <ShortcutButton icon={Shuffle} label="Karışık 10 soru" onPress={() => {}} style={{ flex: 1 }} />
+            <ShortcutButton icon={RotateCcw} label="Yanlışlar · 1058" onPress={() => {}} style={{ flex: 1 }} />
           </View>
           <ResumeStrip scopeName="Temel Haklar ve Ödevler" detail="6/10 · 4 soru kaldı" onPress={() => {}} />
           <View style={{ flexDirection: "row", gap: 12 }}>

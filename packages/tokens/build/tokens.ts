@@ -33,6 +33,7 @@ export const palette = {
     danger: '#E07A6B',
     dangerSoft: '#3F2630',
     dangerInk: '#F3A396',
+    info: '#8CB3D9',
     focusRing: '#E8B46C',
   },
   light: {
@@ -62,6 +63,7 @@ export const palette = {
     danger: '#B8453A',
     dangerSoft: '#F8DDD9',
     dangerInk: '#8E2E25',
+    info: '#35699B',
     focusRing: '#8B5E23',
   },
 } as const;
