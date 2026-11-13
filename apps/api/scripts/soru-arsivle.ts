@@ -17,11 +17,15 @@
  *
  *   npx tsx scripts/soru-arsivle.ts            (kuru calisma)
  *   npx tsx scripts/soru-arsivle.ts --yaz
+ *   DOC_DIR=35-guncel-kultur/eskime-taramasi ARSIV_LISTE=<liste.json> npx tsx scripts/soru-arsivle.ts [--yaz]
  */
 import { PrismaClient } from '@prisma/client';
-import { writeFileSync, appendFileSync } from 'fs';
+import { writeFileSync, appendFileSync, readFileSync } from 'fs';
 
-const p = new PrismaClient();
+// CLAUDE.md: scriptler tek baglantiyla (Supabase pooler 15 slotu prod ile ortak).
+const base = process.env.DATABASE_URL!;
+const url = base.includes('connection_limit') ? base.replace(/connection_limit=\d+/, 'connection_limit=1') : `${base}${base.includes('?') ? '&' : '?'}connection_limit=1`;
+const p = new PrismaClient({ datasources: { db: { url } } });
 // Hangi doc'un defterine yazilacagi kosuya gore degisir (Doc 32, Doc 41 ...).
 const DOC_DIR = process.env.DOC_DIR ?? '32-yayin-denetimi';
 const YEDEK = `${__dirname}/../../../docs/${DOC_DIR}/arsiv-yedek.json`;
@@ -54,6 +58,10 @@ const A: Array<[string, 'eskime' | 'kaynaksiz' | 'bozuk' | 'yigilma', string]> =
   // alındı (commit 0f6e2d9). Listede kalırsa bir sonraki --yaz onu yeniden arşivler — koşusu biten kaydı silin.
 ];
 
+// ARSIV_LISTE=<json> verilirse liste bu dosyadan okunur ([[surum-id-oneki, sinif, gerekce], ...]);
+// buyuk turlar (orn. 13 Kas 2026 eskimis guncel olay taramasi, 116 soru) kaynak koda gomulmez.
+const LISTE: typeof A = process.env.ARSIV_LISTE ? JSON.parse(readFileSync(process.env.ARSIV_LISTE, 'utf8')) : A;
+
 (async () => {
   const YAZ = process.argv.includes('--yaz');
 
@@ -66,7 +74,7 @@ const A: Array<[string, 'eskime' | 'kaynaksiz' | 'bozuk' | 'yigilma', string]> =
   });
 
   const plan = [];
-  for (const [onek, sinif, gerekce] of A) {
+  for (const [onek, sinif, gerekce] of LISTE) {
     const r = rows.find((x) => x.id.startsWith(onek));
     if (!r) { console.log(`!! ${onek} yayinda bulunamadi — atlandi`); continue; }
     plan.push({ r, sinif, gerekce });
@@ -79,7 +87,7 @@ const A: Array<[string, 'eskime' | 'kaynaksiz' | 'bozuk' | 'yigilma', string]> =
   }
 
   const sayim = plan.reduce((a: Record<string, number>, x) => ({ ...a, [x.sinif]: (a[x.sinif] ?? 0) + 1 }), {});
-  console.log(`\narsivlenecek: ${plan.length} / ${A.length}  ${JSON.stringify(sayim)}`);
+  console.log(`\narsivlenecek: ${plan.length} / ${LISTE.length}  ${JSON.stringify(sayim)}`);
   if (!YAZ) { console.log('(KURU CALISMA — --yaz ile uygulanir)'); return; }
 
   writeFileSync(YEDEK, JSON.stringify(plan.map((x) => ({
