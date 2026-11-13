@@ -1,0 +1,18 @@
+{
+  "slug": "tck-istirak",
+  "title": "İştirak",
+  "subtitle": "İştirakin koşulları ve bağlılık kuralı, müşterek faillik ve dolaylı faillik, azmettirme, yardım etme, özgü ve çok failli suçlara iştirak",
+  "courseName": "Ceza Hukuku",
+  "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+  "sortOrder": 8,
+  "isPremium": true,
+  "aiDraft": true,
+  "book": { "label": "THEMIS Ceza Hukuku Genel Hükümler, 21. baskı, 2025", "page": "s.126–137" },
+  "lessons": [
+    { "file": "01-istirak-kavrami-kosullari-ve-baglilik-kurali.md", "slug": "tck-istirak-kavrami-kosullari-ve-baglilik-kurali", "page": "s.126–131" },
+    { "file": "02-faillik-musterek-faillik-ve-dolayli-faillik.md", "slug": "tck-musterek-faillik-ve-dolayli-faillik", "page": "s.129–132" },
+    { "file": "03-azmettirme.md", "slug": "tck-azmettirme", "page": "s.131–133" },
+    { "file": "04-yardim-etme.md", "slug": "tck-yardim-etme", "page": "s.133–134" },
+    { "file": "05-istirakte-ozel-durumlar.md", "slug": "tck-istirakte-ozel-durumlar", "page": "s.134–137" }
+  ]
+}
