@@ -10,6 +10,7 @@ import { ArticleSummaryDisclosure } from "./article-summary";
 import { articleSlug } from "@/lib/public-api";
 import { Dialog } from "@/components/ui/dialog";
 import { cn } from "@/lib/cn";
+import { akiciMaddeMetni } from "@/lib/madde-metni";
 
 const ONIZLEME_KARAKTER = 1400;
 
@@ -78,7 +79,8 @@ export function ArticlePeek({
     };
   }, [open, data, lawSlug, no]);
 
-  const body = data?.body ?? "";
+  // Satır sonları akıtılır (PDF kırılmaları); önizleme kesimi bu metin üzerinden.
+  const body = akiciMaddeMetni(data?.body ?? "");
   const kisaltildi = body.length > ONIZLEME_KARAKTER;
   const href = `/kanun/${lawSlug}/madde/${articleSlug(no)}`;
   const baslik = title?.replace(/^\d+\.\s*|^[A-Z]\.\s*/, "") ?? null;

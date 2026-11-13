@@ -16,6 +16,7 @@ import { ApiError, NetworkError } from "@/lib/api";
 import { readLocal, writeLocal } from "@/lib/local-store";
 import { enqueueAnswer, flushQueue } from "@/lib/offline-queue";
 import { useTheme } from "@/theme/ThemeProvider";
+import { akiciMaddeMetni } from "@/lib/madde-metni";
 
 /** Saat erişimi render dışında kalsın (React Compiler kuralı); yalnız olay işleyicileri çağırır. */
 const saat = { simdi: () => Date.now() };
@@ -667,7 +668,7 @@ export default function SeansScreen() {
                 İlgili bölüm
               </AppText>
               <AppText variant="body" style={{ fontSize: Math.round(16 * scale), lineHeight: Math.round(26 * scale) }}>
-                {feedback.relatedArticle.text.body}
+                {akiciMaddeMetni(feedback.relatedArticle.text.body)}
               </AppText>
               <View style={{ borderTopWidth: 1, borderTopColor: colors.line, paddingTop: space.s3, gap: space.s2 }}>
                 <AppText variant="label" tone="subtle">

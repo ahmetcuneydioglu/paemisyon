@@ -17,6 +17,7 @@ import { cn } from "@/lib/cn";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { ArticleSummaryDisclosure } from "@/components/ozet/article-summary";
+import { akiciMaddeMetni } from "@/lib/madde-metni";
 
 /**
  * Girişli okuyucu (Doc 29 §33): AĞAÇ (içindekiler) | MADDELER | INSPECTOR
@@ -191,11 +192,13 @@ export function LawReader({ law }: { law: MevzuatReading }) {
       ranges.push([s0, e0, h.id]);
     }
     ranges.sort((x, y) => x[0] - y[0]);
+    // Gösterim akıtılmış metinden; uzunluk aynı olduğu için işaret konumları geçerli kalır.
+    const shown = akiciMaddeMetni(a.text);
     const parts: React.ReactNode[] = [];
     let cursor = 0;
     for (const [s0, e0, id] of ranges) {
       if (s0 < cursor) continue; // çakışan — ilki kazanır
-      if (s0 > cursor) parts.push(a.text.slice(cursor, s0));
+      if (s0 > cursor) parts.push(shown.slice(cursor, s0));
       parts.push(
         <mark
           key={id}
@@ -203,12 +206,12 @@ export function LawReader({ law }: { law: MevzuatReading }) {
           onClick={() => removeHighlight(a.no, id)}
           className="cursor-pointer rounded-[4px] bg-warning-soft px-0.5 text-warning-ink"
         >
-          {a.text.slice(s0, e0)}
+          {shown.slice(s0, e0)}
         </mark>,
       );
       cursor = e0;
     }
-    if (cursor < a.text.length) parts.push(a.text.slice(cursor));
+    if (cursor < shown.length) parts.push(shown.slice(cursor));
     return parts;
   };
 

@@ -2,6 +2,7 @@ import { CheckCircle2, ChevronRight, Clock } from "lucide-react-native";
 import { Pressable, View } from "react-native";
 import { AppText, Badge, Card, ProgressBar } from "@/components/ui";
 import { TYPE_LABEL, type MerkezLaw } from "@/features/mevzuat/queries";
+import { halEki } from "@/lib/tr-ek";
 import { useTheme } from "@/theme/ThemeProvider";
 
 /* ---------------------------------------------------------------- Adlandırma (saf) */
@@ -24,11 +25,13 @@ export function lawShort(law: Pick<MerkezLaw, "number" | "name" | "shortName">):
   return law.shortName?.trim() || law.number || law.name;
 }
 
-/** İlerleme satırı: "%12 · md 16'dasın", "Başlanmadı", "Tamamlandı". */
+/** İlerleme satırı: "%12 · md 16'dasın", "%63 · md 5'tesin", "Başlanmadı", "Tamamlandı". */
 export function progressLabel(law: Pick<MerkezLaw, "percent" | "lastRead">): string {
   if (!law.lastRead) return "Başlanmadı";
   if (law.percent >= 100) return "Sonuna geldin";
-  return `%${law.percent} · md ${law.lastRead.no}'dasın`;
+  // Ek okunuşa göre (13 Kas 2026 Faz 4: "md 5'dasın" yazıyordu; doğrusu "md 5'tesin").
+  const ek = halEki(law.lastRead.no, "de");
+  return `%${law.percent} · md ${law.lastRead.no}'${ek}${ek.endsWith("e") ? "sin" : "sın"}`;
 }
 
 /* ---------------------------------------------------------------- Kanun kartı */

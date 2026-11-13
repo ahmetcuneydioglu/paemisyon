@@ -5,9 +5,10 @@ import { FlatList, Pressable, Share, TextInput, View } from "react-native";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { AppText, Button, IconButton, ListRow, Notice, Sheet, Skeleton } from "@/components/ui";
 import { ArticleSummaryDisclosure } from "@/components/domain/article-summary";
-import { useArticleAnnotations, useArticleBookmarks, useLawRead, useSaveArticleNote, useSaveReadingProgress, useToggleArticleBookmark, type LawRead } from "@/features/mevzuat/queries";
+import { TYPE_LABEL, useArticleAnnotations, useArticleBookmarks, useLawRead, useSaveArticleNote, useSaveReadingProgress, useToggleArticleBookmark, type LawRead } from "@/features/mevzuat/queries";
 import { readLocal, writeLocal } from "@/lib/local-store";
 import { useTheme } from "@/theme/ThemeProvider";
+import { akiciMaddeMetni, maddeOnizleme } from "@/lib/madde-metni";
 
 type Article = LawRead["articles"][number];
 const SCALES = [0.9, 1, 1.15] as const;
@@ -100,12 +101,14 @@ export default function OkuScreen() {
         <IconButton icon={X} label="Okuyucuyu kapat" variant="ghost" onPress={() => router.back()} />
         <View style={{ flex: 1 }}>
           <AppText variant="subhead" numberOfLines={1}>
-            {d?.shortName ?? d?.name ?? "Mevzuat"}
+            {/* Kısa ad yoksa "1481 sayılı Kanun": uzun ad tek satırda kesiliyordu. */}
+            {d ? (d.shortName?.trim() || (d.number && d.type !== "yonetmelik" ? `${d.number} sayılı ${TYPE_LABEL[d.type]}` : d.name)) : "Mevzuat"}
           </AppText>
           {d ? (
             <AppText variant="bodySm" tone="subtle" numberOfLines={1}>
               {d.source}
-              {d.verifiedAt ? ` · Doğrulandı ${new Date(d.verifiedAt).toLocaleDateString("tr-TR")}` : ""}
+              {/* Kısa tarih: "24.09.2026" dar başlıkta "Doğrulandı 24.…" diye kesiliyordu (13 Kas 2026). */}
+              {d.verifiedAt ? ` · ${new Date(d.verifiedAt).toLocaleDateString("tr-TR", { day: "numeric", month: "short", year: "numeric" })}` : ""}
             </AppText>
           ) : null}
         </View>
@@ -168,7 +171,7 @@ export default function OkuScreen() {
                 </AppText>
                 {a.title ? <AppText variant="subhead">{a.title}</AppText> : null}
                 <AppText variant="body" selectable style={bodyStyle}>
-                  {a.text}
+                  {akiciMaddeMetni(a.text)}
                 </AppText>
                 {a.summary ? <ArticleSummaryDisclosure summary={a.summary} /> : null}
                 {note ? (
@@ -205,7 +208,8 @@ export default function OkuScreen() {
           <ListRow
             key={a.slug}
             title={`Madde ${a.no}${a.title ? ` · ${a.title}` : ""}`}
-            subtitle={a.questionCount > 0 ? `${a.questionCount} soru` : null}
+            // Başlıksız maddede ilk cümle: liste yalnız "Madde 1, Madde 2…" diye okunuyordu (13 Kas 2026).
+            subtitle={[a.title ? null : maddeOnizleme(a.text, 70), a.questionCount > 0 ? `${a.questionCount} soru` : null].filter(Boolean).join(" · ") || null}
             divider={i < (d?.articles.length ?? 0) - 1}
             onPress={() => {
               setTocOpen(false);

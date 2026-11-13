@@ -7,6 +7,7 @@ import { ListRow, AppText, Badge, Button, Chip, Notice, ProgressBar, Skeleton , 
 import { TYPE_LABEL, useArticleAnnotations, useArticleBookmarks, useLawRead, useLegislation, useMevzuatMerkezi } from "@/features/mevzuat/queries";
 import { useTopicUnits } from "@/features/summaries/queries";
 import { useTheme } from "@/theme/ThemeProvider";
+import { maddeOnizleme } from "@/lib/madde-metni";
 
 type Filter = "all" | "saved" | "noted";
 
@@ -37,7 +38,7 @@ export default function MevzuatKanunScreen() {
   const noted = useMemo(() => new Set((annotations.data?.notes ?? []).map((n) => n.no)), [annotations.data]);
   const sections = useMemo(() => new Map((d?.sections ?? []).map((s) => [s.id, s.heading])), [d]);
   const fallbackTitles = useMemo(
-    () => new Map((read.data?.articles ?? []).map((a) => [a.no, a.title ?? a.summary?.title ?? firstSentence(a.text)])),
+    () => new Map((read.data?.articles ?? []).map((a) => [a.no, a.title ?? a.summary?.title ?? maddeOnizleme(a.text)])),
     [read.data],
   );
   const titleOf = (a: { no: string; title: string | null }) => a.title ?? fallbackTitles.get(a.no) ?? null;
@@ -219,10 +220,3 @@ export default function MevzuatKanunScreen() {
   );
 }
 
-/** Başlıksız madde için metnin ilk cümlesi (değişiklik şerhi atlanır), en çok 90 karakter. */
-function firstSentence(text: string): string | null {
-  const body = text.replace(/^\s*\((?:[^()]*)\)\s*/g, "").trim();
-  if (!body) return null;
-  const sentence = body.split(/(?<=[.;:])\s+|\n/)[0] ?? body;
-  return sentence.length > 90 ? `${sentence.slice(0, 88).replace(/\s+\S*$/, "")}…` : sentence;
-}

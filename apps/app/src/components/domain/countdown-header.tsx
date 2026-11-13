@@ -2,6 +2,7 @@ import { View } from "react-native";
 import { AppText, WeekDots, type DayState } from "@/components/ui";
 import { useTheme } from "@/theme/ThemeProvider";
 import { useLargeText } from "@/theme/text-scale";
+import { ekle } from "@/lib/tr-ek";
 
 /**
  * Durum satırı (Yerleşim B üstü): sınava kalan gün büyük rakam (display), haftalık aktif
@@ -29,7 +30,7 @@ export function CountdownHeader({
     <View style={large ? { gap: space.s3 } : { flexDirection: "row", alignItems: "flex-end", justifyContent: "space-between", gap: space.s4 }}>
       <View style={{ gap: 2, flexShrink: 1 }}>
         <AppText variant="label" tone="subtle">
-          {examName ? `${examName}'e` : "Hedef sınava"}
+          {examName ? ekle(examName, "e") : "Hedef sınava"}
         </AppText>
         {daysLeft == null ? (
           // Tarih yoksa büyük rakamın yerine sakin bir cümle; dev bir "—" çizgisi değil.

@@ -6,6 +6,7 @@ import { useLawRead } from "@/features/mevzuat/queries";
 import { ArticleSummaryDisclosure } from "./article-summary";
 import { masteryLabel, parseBody, SUMMARY_BLOCK_LABEL, shortTitle, unitProgressPct, type InlineRun, type SummaryBlock, type SummaryRow, type SummaryUnitListItem } from "@/features/summaries/queries";
 import { useTheme } from "@/theme/ThemeProvider";
+import { akiciMaddeMetni } from "@/lib/madde-metni";
 
 /* ---------------------------------------------------------------- Ünite satırı */
 
@@ -134,7 +135,7 @@ export function ArticlePeekSheet({ lawSlug, no, title, onClose, onReadFull }: { 
       ) : (
         <ScrollView style={{ maxHeight: 420 }} contentContainerStyle={{ gap: space.s3 }}>
           <AppText variant="body" tone="ink">
-            {a.text}
+            {akiciMaddeMetni(a.text)}
           </AppText>
           <AppText variant="label" tone="subtle">
             {q.data!.source}

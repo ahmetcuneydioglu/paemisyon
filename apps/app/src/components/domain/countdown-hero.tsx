@@ -2,6 +2,7 @@ import { Pressable, View, useWindowDimensions } from "react-native";
 import { AppText } from "@/components/ui";
 import { COMPACT_WIDTH, fontFamily } from "@/theme/tokens";
 import { useTheme } from "@/theme/ThemeProvider";
+import { ekle } from "@/lib/tr-ek";
 
 /**
  * Geri sayım afişi (Doc 49/13 §2 — "Büyük sayı"): lacivert panel, dev Lora rakam, altında
@@ -60,7 +61,7 @@ export function CountdownHero({
           </AppText>
           <View style={{ flexDirection: "row", alignItems: "baseline", justifyContent: "space-between", gap: space.s3 }}>
             <AppText variant="subhead" tone="panelInk" style={{ flex: 1 }} numberOfLines={1}>
-              {examName ? `${examName}'ye` : "Hedef sınava"}
+              {examName ? ekle(examName, "e") : "Hedef sınava"}
               {examDateLabel ? ` · ${examDateLabel}` : ""}
             </AppText>
             <AppText variant="bodySm" tone="panelSoft">
