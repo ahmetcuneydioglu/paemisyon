@@ -54,6 +54,13 @@ const A: Array<[string, 'eskime' | 'kaynaksiz' | 'bozuk' | 'yigilma', string]> =
   ['1d44ce9f', 'bozuk', "TCK 104 (soru dc9863af): kokte yas FAILE verilmis ('On yedi yasindaki Ahmet, ... kuzeni Burak ile'), dogru cevabi belirleyen MAGDURUN yasi yok. 104/1 magdurun 15-17 yasinda olmasina bagli; 15 alti TCK 103, 18+ suc yok. Aciklama kokte olmayan 'on bes yasini tamamlamis cocukla' varsayimina dayaniyor. Iki bagimsiz curutucu ONAY. 7593 kaynakli degil."],
   // --- Telegram'da kullanıcı itirazı (6 Eki 2026) ---
   ['45f932e9', 'bozuk', "Anayasa degisikligi gorusmesi (soru fa64bb54, 'hangisi yanlistir'): isaretli B ('ilk turda gerekli oyu alamayan madde reddedilmis sayilir') Ictuzuk md 94'e gore yanlis; ancak C ('teklifin ivedilikle gorusulmesi zorunludur') da yanlis — Anayasa md 148/2 anayasa degisikliklerinin 'ivedilikle gorusulemeyecegi' sartini sekil denetimine baglar. Cift cevap. Telegram anketinde katilimcilarin %65'i C'yi isaretledi ve itiraz etti."],
+  // --- Kapanmış kurum: Devlet Personel Başkanlığı (13 Kas 2026, kullanıcı kararı: eskimiş soru kalmasın) ---
+  // DPB 703 sayılı KHK (2/7/2018) ile kaldırıldı, görevleri Cumhurbaşkanlığına (İnsan Kaynakları Ofisi)
+  // devredildi. Konsolide kanun metinleri ibareyi hâlâ taşıyor; ama bu bir GÖREV DEVRİ, ad değişikliği
+  // değil (BTK → Siber Güvenlik emsali), şık düzeltilemez.
+  ['fb6a3322', 'eskime', "657 md 53: kök engelli talebinin 'Devlet Personel Başkanlığına' bildirileceğini öğretiyor; kurum 703 s. KHK ile kapandı. Dört şıklı (beş şık kuralı). Haftalık Deneme-1'de kullanıldı — sürüm satırı korunur, geçmiş sonuç bozulmaz. Kullanıcı isteği."],
+  ['f870fba2', 'eskime', "657 md 105 son fıkra: doğru cevap 'Devlet Personel Başkanlığı' — kapanmış kurumu yönetmeliği hazırlayan makam olarak öğretiyor. Dört şıklı. Hiçbir denemede kullanılmamış."],
+  ['b287622c', 'eskime', "7068 md 33/3 (Mevzuat türetimi): doğru şık meslekten çıkarma ve memurluktan çıkarmanın 'ayrıca Devlet Personel Başkanlığına' bildirildiğini öğretiyor; kurum kapandı. Md 33'ün diğer iki fıkrası bankada ayrı sorularla ölçülüyor. Hiçbir denemede kullanılmamış."],
   // b0ec805b (seri muhakeme) BURADAN ÇIKARILDI: 12 Eyl 2026'da düzeltilip kullanıcı kararıyla yayına geri
   // alındı (commit 0f6e2d9). Listede kalırsa bir sonraki --yaz onu yeniden arşivler — koşusu biten kaydı silin.
 ];

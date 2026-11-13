@@ -1,0 +1,53 @@
+[
+ {
+  "id": "657-dpb1-01",
+  "articleNo": "53",
+  "tur": "",
+  "kok": "657 sayılı Kanun'a göre kurum ve kuruluşların engelli çalıştırma yükümlülüğüne ilişkin aşağıdakilerden hangisi doğrudur?",
+  "siklar": {
+   "A": "Engelli çalıştırma oranı, kurumun toplam kadro sayısının yüzde beşidir.",
+   "B": "Oranın hesabında kurumun yurt dışı teşkilatındaki kadrolar da dikkate alınır.",
+   "C": "Oranın hesabında kurumun toplam dolu kadro sayısı esas alınır.",
+   "D": "Yükümlülük yalnızca kurumun merkez teşkilatındaki kadrolar için geçerlidir.",
+   "E": "Oranın hesabında kurumun boş kadroları da dolu kadrolarla birlikte sayılır."
+  },
+  "dogru": "C",
+  "aciklama": "657 sayılı Kanun'un 53 üncü maddesine göre kurum ve kuruluşlar, bu Kanuna göre çalıştırdıkları personele ait kadrolarda yüzde üç oranında engelli çalıştırmak zorundadır. Yüzde üçün hesaplanmasında ilgili kurum veya kuruluşun yurt dışı teşkilatı HARİÇ TOPLAM DOLU KADRO sayısı dikkate alınır. Bu yüzden oran yüzde beş değil yüzde üçtür (A), yurt dışı teşkilatı hesaba girmez (B), boş kadrolar sayılmaz (E). Madde yükümlülüğü merkez teşkilatıyla sınırlamaz; yurt dışı dışındaki bütün dolu kadrolar hesaba girer (D). Ezberlenecek iki unsur: oran yüzde üç, taban 'dolu kadro'.",
+  "dayanak": "657 sayılı Kanun md 53",
+  "zorluk": "medium"
+ },
+ {
+  "id": "657-dpb1-02",
+  "articleNo": "53",
+  "tur": "",
+  "kok": "657 sayılı Kanun'a göre engelliler için yapılan memurluk sınavlarına ilişkin aşağıdakilerden hangisi doğrudur?",
+  "siklar": {
+   "A": "İlk defa Devlet memuru olarak atanacaklar için açılan sınavlarla aynı oturumda yapılır.",
+   "B": "Her kurum tarafından kendi bünyesinde ayrı ayrı yapılır.",
+   "C": "Engel grupları ve eğitim durumları itibarıyla sınav sorusu hazırlanarak merkezi olarak yapılır veya yaptırılır.",
+   "D": "Kurumların engelli kontenjanı açığı bulunup bulunmadığına bakılmaksızın her yıl yapılır.",
+   "E": "Yalnızca ortaöğretim mezunu engelliler için düzenlenir."
+  },
+  "dogru": "C",
+  "aciklama": "657 sayılı Kanun'un 53 üncü maddesinin ikinci fıkrasına göre engelliler için sınavlar, ilk defa Devlet memuru olarak atanacaklar için açılan sınavlardan AYRI ZAMANLI olarak (A yanlış), engelli kontenjanı AÇIĞI BULUNDUĞU SÜRECE (D yanlış), ENGEL GRUPLARI VE EĞİTİM DURUMLARI itibarıyla, sınav sorusu hazırlanmak ve ulaşılabilirliklerini sağlamak suretiyle MERKEZİ olarak yapılır veya yaptırılır. Merkezi yapı, sınavın her kurumca ayrı ayrı yapılmasını dışlar (B yanlış); eğitim durumlarına göre ayrım yapılması da sınavın tek bir öğrenim düzeyine özgü olmadığını gösterir (E yanlış).",
+  "dayanak": "657 sayılı Kanun md 53",
+  "zorluk": "medium"
+ },
+ {
+  "id": "657-dpb1-03",
+  "articleNo": "105",
+  "tur": "",
+  "kok": "657 sayılı Kanun'a göre memurun yataklı tedavi kurumunda yatarak gördüğü tedavi süreleri için aşağıdakilerden hangisi doğrudur?",
+  "siklar": {
+   "A": "Hastalık izni süresine eklenmez; iznin sonuna ayrıca ilave edilir.",
+   "B": "Hastalık izni süresinin hesabında dikkate alınır.",
+   "C": "Memurun yıllık izin süresinden düşülür.",
+   "D": "Bu sürelerde memur, aylık ve özlük hakları korunmaksızın izinli sayılır.",
+   "E": "Hastalık izni süresine sayılmaz; memur bu süre boyunca görevine devam etmiş sayılır."
+  },
+  "dogru": "B",
+  "aciklama": "657 sayılı Kanun'un 105 inci maddesinin ikinci fıkrasına göre memurun hastalığı sebebiyle yataklı tedavi kurumunda yatarak gördüğü tedavi süreleri, HASTALIK İZNİNE AİT SÜRENİN HESABINDA DİKKATE ALINIR. Yani yatarak tedavi ayrı bir izin türü değildir ve hastalık izninin sonuna eklenmez (A); yıllık izinle ilgisi yoktur (C). Hastalık izni maddenin birinci fıkrasına göre aylık ve özlük hakları korunarak verilir (D). Yatarak tedavi süresi hastalık iznine sayıldığından memur bu sürede görevine devam etmiş sayılmaz (E). Hüküm hastalık türüne göre de ayrım yapmaz: kanser, verem, akıl hastalığı gibi uzun süreli tedavi gerektiren hâller için on sekiz aya, diğer hastalık hâlleri için on iki aya kadar verilen izinlerin ikisinde de yatarak tedavi süreleri hesaba katılır.",
+  "dayanak": "657 sayılı Kanun md 105",
+  "zorluk": "easy"
+ }
+]
