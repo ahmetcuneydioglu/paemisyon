@@ -11,6 +11,7 @@ import {
   band,
   dersKocCumlesi,
   agirlikEtiketi,
+  oneCikanDers,
   dersKunyesi,
   enZayif,
   kaldiginYer,
@@ -509,8 +510,12 @@ export class RoomsService {
         dersler.push({ ...sc.course, weightPercent: sec.weightPercent, sira: dersler.length });
       }
     }
+    // Öne çıkan ders en üstte (oneCikanDers), kalanlar bölüm ağırlığına ve müfredat sırasına göre.
+    const one = (n: string) => (oneCikanDers(n) ? 0 : 1);
     const courses = dersler
-      .sort((a, b) => b.weightPercent - a.weightPercent || a.sira - b.sira)
+      .sort(
+        (a, b) => one(a.name) - one(b.name) || b.weightPercent - a.weightPercent || a.sira - b.sira,
+      )
       .map((d) => {
         const c = cozum.get(d.id) ?? { solved: 0, correct: 0 };
         const accuracy = c.solved > 0 ? c.correct / c.solved : null;
@@ -527,6 +532,8 @@ export class RoomsService {
           favoriteCount: favoriM.get(d.id) ?? 0,
           summaryUnitCount: uniteM.get(d.id) ?? 0,
           note: dersKunyesi({ solved: c.solved, wrongCount }),
+          /** Öne çıkan dersin ön etiketi ("Meslek dersi"); diğerlerinde null. */
+          featuredLabel: oneCikanDers(d.name),
         };
       });
     const toplam = (m: Map<string, number>) => [...m.values()].reduce((s, n) => s + n, 0);

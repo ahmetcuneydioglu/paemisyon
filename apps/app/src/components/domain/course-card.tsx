@@ -7,11 +7,16 @@ import { useTheme } from "@/theme/ThemeProvider";
  * yüzde, 4 pt çubuk, tek künye (sunucu seçer: "238 yanlış", "Sınav ağırlığı %30"…). Hâkimiyet
  * ölçüm durumudur, başarı/hata rengi taşımaz (`info`). Ölçüm yoksa "Henüz ölçülmedi", yüzde yok.
  * Satırdaki kartlar eşit boy; içerik kırpılmaz, ad sarar.
+ *
+ * Öne çıkan varyant (`eyebrow` verilince; Çalış'ta en üstte tam genişlik): üstte altın ön etiket,
+ * 3 pt sol altın çizgi ve belirgin altın kenar ("Kaldığın yer" şeridinin dili). Zemin boyanmaz:
+ * koyu temada amber karışımı çamurlu kalıyor, fark çizgi + etiketle (renge bağlı olmayan ipucu).
  */
 export function CourseCard({
   name,
   accuracyPct,
   note,
+  eyebrow,
   onPress,
   style,
 }: {
@@ -19,15 +24,18 @@ export function CourseCard({
   /** 0..100; ölçülmemişse null. */
   accuracyPct: number | null;
   note: string;
+  /** Öne çıkan ders ön etiketi; verilirse kart öne çıkan varyantta çizilir. */
+  eyebrow?: string | null;
   onPress: () => void;
   style?: StyleProp<ViewStyle>;
 }) {
   const { colors, radius, space } = useTheme();
   const olculdu = accuracyPct != null;
+  const oneCikan = Boolean(eyebrow);
   return (
     <Pressable
       accessibilityRole="button"
-      accessibilityLabel={`${name}, ${olculdu ? `hâkimiyet yüzde ${accuracyPct}` : "henüz ölçülmedi"}, ${note}`}
+      accessibilityLabel={`${oneCikan ? `${eyebrow}: ` : ""}${name}, ${olculdu ? `hâkimiyet yüzde ${accuracyPct}` : "henüz ölçülmedi"}, ${note}`}
       onPress={onPress}
       style={({ pressed }) => [
         {
@@ -38,15 +46,25 @@ export function CourseCard({
           padding: 14,
           borderRadius: radius.card,
           borderWidth: 1,
-          borderColor: colors.line,
+          // Öne çıkan: kenar altının %60'ı (koyu zeminde ~4:1), sol çizgi tam altın.
+          borderColor: oneCikan ? `${colors.accent}99` : colors.line,
+          borderLeftWidth: oneCikan ? 3 : 1,
+          borderLeftColor: oneCikan ? colors.accent : colors.line,
           backgroundColor: pressed ? colors.surfaceAlt : colors.surface,
         },
         style,
       ]}
     >
-      <AppText variant="subhead" style={{ fontSize: 16, lineHeight: 22 }}>
-        {name}
-      </AppText>
+      <View style={{ gap: 2 }}>
+        {oneCikan ? (
+          <AppText variant="label" tone="accentInk">
+            {eyebrow}
+          </AppText>
+        ) : null}
+        <AppText variant="subhead" style={{ fontSize: 16, lineHeight: 22 }}>
+          {name}
+        </AppText>
+      </View>
       <View style={{ paddingTop: space.s2, gap: space.s2 }}>
         <View style={{ gap: space.s2 }}>
           <View style={{ flexDirection: "row", alignItems: "center", justifyContent: "space-between", gap: space.s2, minHeight: 22 }}>

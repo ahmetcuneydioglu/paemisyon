@@ -8,6 +8,7 @@ import {
   konuKunyesi,
   maddeAraligi,
   agirlikEtiketi,
+  oneCikanDers,
 } from './rooms.logic';
 
 describe('rooms.logic (Doc 49/14)', () => {
@@ -60,6 +61,12 @@ describe('rooms.logic (Doc 49/14)', () => {
       expect(dersKunyesi({ solved: 0, wrongCount: 0 })).toBe('Henüz başlanmadı');
       expect(dersKunyesi({ solved: 40, wrongCount: 18 })).toBe('18 yanlış');
       expect(dersKunyesi({ solved: 40, wrongCount: 0 })).toBe('Yanlış yok');
+    });
+    it('öne çıkan ders: yalnız Polis Mevzuatı', () => {
+      expect(oneCikanDers('Polis Mevzuatı')).toBe('Meslek dersi');
+      expect(oneCikanDers('  polis mevzuatı ')).toBe('Meslek dersi');
+      expect(oneCikanDers('Anayasa Hukuku')).toBeNull();
+      expect(oneCikanDers('Polisi İlgilendiren Mevzuat')).toBeNull();
     });
     it('ağırlık etiketi: bölüm paylaşılıyorsa söyler', () => {
       expect(agirlikEtiketi(10, [])).toBe('Sınavda %10');

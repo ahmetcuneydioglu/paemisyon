@@ -104,6 +104,8 @@ export interface StudyCourse {
   summaryUnitCount: number;
   /** Kartın tek künyesi ("18 yanlış", "Sınav ağırlığı %30"…) — sunucu seçer. */
   note: string;
+  /** Öne çıkan dersin ön etiketi ("Meslek dersi"); sunucu seçer, diğerlerinde null (eski sunucuda yok). */
+  featuredLabel?: string | null;
 }
 
 export interface StudyHub {

@@ -122,6 +122,14 @@ export function agirlikEtiketi(weightPercent: number, ortaklar: readonly string[
   return `Sınavda %${weightPercent} · ${ortaklar.length + 1} dersin ortak bölümü`;
 }
 
+/**
+ * Çalış'ta en üstte tam genişlikte öne çıkan ders ve ön etiketi (kullanıcı kararı 13 Kas 2026:
+ * Polis Mevzuatı — polis sınavlarının meslek dersi). Kural sunucuda; istemci yalnız çizer.
+ */
+export function oneCikanDers(name: string): string | null {
+  return /^polis\s+mevzuat/i.test(name.trim()) ? 'Meslek dersi' : null;
+}
+
 /** Ders odasındaki konu satırının künyesi: "24 soru · 4 ünite özeti · 6 yanlış". */
 export function konuKunyesi(input: {
   solved: number;

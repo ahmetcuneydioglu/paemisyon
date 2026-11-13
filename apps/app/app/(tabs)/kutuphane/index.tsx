@@ -15,6 +15,7 @@ const ICERIK_EN = 600;
  * "ders seç → ne yapacağını seç". Üstte çalışma kısayolları: Kart tekrarı (birincil, yalnız
  * tekrar varsa), Karışık 10 soru ve Yanlışlar; altında ağırlığa göre ders kartları. İki sütun;
  * dar ekranda ya da büyük metinde tek sütun ve alt alta kısayollar; tablette içerik 600 pt.
+ * Öne çıkan ders (Polis Mevzuatı, "Meslek dersi") ızgaranın üstünde tam genişlikte.
  * Kaldığın yer şeridi yalnız taze yarım turda. Bütün sayı ve cümleler `/me/study`'den.
  */
 export default function CalisScreen() {
@@ -31,7 +32,10 @@ export default function CalisScreen() {
   const [gridWidth, setGridWidth] = useState(0);
   // Hücre genişliği ölçülen satırdan: son satırdaki tek kart yarım genişlikte kalır.
   const cellWidth = gridWidth > 0 ? (gridWidth - space.s3 * (cols - 1)) / cols : 0;
-  const satirlar = d ? Array.from({ length: Math.ceil(d.courses.length / cols) }, (_, r) => d.courses.slice(r * cols, r * cols + cols)) : [];
+  // Öne çıkan ders(ler) ızgaranın üstünde tam genişlikte; sıra ve etiket sunucudan.
+  const oneCikan = d ? d.courses.filter((c) => c.featuredLabel) : [];
+  const izgara = d ? d.courses.filter((c) => !c.featuredLabel) : [];
+  const satirlar = Array.from({ length: Math.ceil(izgara.length / cols) }, (_, r) => izgara.slice(r * cols, r * cols + cols));
   const openCourse = (c: StudyCourse) => router.push({ pathname: "/(tabs)/kutuphane/ders/[id]", params: { id: c.id, name: c.name, icon: c.icon ?? "" } });
 
   return (
@@ -109,6 +113,9 @@ export default function CalisScreen() {
                 <AppText variant="heading" accessibilityRole="header">
                   Dersler
                 </AppText>
+                {oneCikan.map((c) => (
+                  <CourseCard key={c.id} name={c.name} accuracyPct={c.accuracyPct} note={c.note} eyebrow={c.featuredLabel} onPress={() => openCourse(c)} />
+                ))}
                 <View style={{ gap: space.s3 }} onLayout={(e) => setGridWidth(e.nativeEvent.layout.width)}>
                   {satirlar.map((row, i) => (
                     <View key={i} style={{ flexDirection: "row", gap: space.s3 }}>
