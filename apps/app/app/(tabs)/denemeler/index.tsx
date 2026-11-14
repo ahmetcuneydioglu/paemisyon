@@ -2,7 +2,7 @@ import { useRouter } from "expo-router";
 import { Archive, CalendarClock, ClipboardList, Sparkles } from "lucide-react-native";
 import { Pressable, View } from "react-native";
 import { WeeklyPanel } from "@/components/domain";
-import { ActionTile, AppText, BigNumber, Button, Card, ListRow, Notice, ProgressBar, Screen, Skeleton } from "@/components/ui";
+import { ActionTile, ActionTileRow, AppText, BigNumber, Button, Card, ListRow, Notice, ProgressBar, Screen, Skeleton } from "@/components/ui";
 import { countdown, fmtDate, historyScore, heroFor, mmss, pastExamShortName, useDashboard, useExamHistory, useExams, usePastExams, type ExamListItem } from "@/features/exams/queries";
 import { useNow } from "@/lib/use-now";
 import { useTheme } from "@/theme/ThemeProvider";
@@ -68,14 +68,14 @@ export default function DenemelerScreen() {
 
       {/* Dört giriş kutusu (2×2) */}
       <View style={{ gap: space.s2 }}>
-        <View style={{ flexDirection: "row", gap: space.s2 }}>
+        <ActionTileRow>
           <ActionTile icon={CalendarClock} title="Haftalık" subtitle={nextWeekly ? (nextWeekly.availability === "open" ? `Canlı · ${countdown(Date.parse(nextWeekly.endAt) - now)} kaldı` : `${fmtDate(nextWeekly.startAt, { weekday: "long", hour: "2-digit", minute: "2-digit" })} · ${countdown(Date.parse(nextWeekly.startAt) - now)}`) : haftalik.length ? `${haftalik.length} geçmiş deneme` : "Yakında"} onPress={() => router.push("/(tabs)/denemeler/haftalik")} />
           <ActionTile icon={ClipboardList} title="Serbest" subtitle={serbest.length ? `${serbest.length} deneme · ${serbestDone} çözüldü` : "Henüz yok"} onPress={() => router.push("/(tabs)/denemeler/serbest")} />
-        </View>
-        <View style={{ flexDirection: "row", gap: space.s2 }}>
+        </ActionTileRow>
+        <ActionTileRow>
           <ActionTile icon={Sparkles} title="Kişisel" subtitle={peLeft == null ? "Sana özel · sınırsız" : peLeft === 0 ? "Bugünkü hak doldu" : `Bugün ${peLeft} hak`} onPress={() => router.push("/(tabs)/denemeler/kisisel")} />
           <ActionTile icon={Archive} title="Çıkmış sınavlar" subtitle={solvablePast.length ? solvablePast.slice(0, 3).map(pastExamShortName).map((n) => n.replace(/ · \d{4}$/, "")).join(" · ") : "Resmî sınavlar"} onPress={() => router.push("/(tabs)/denemeler/cikmis")} />
-        </View>
+        </ActionTileRow>
       </View>
 
       {/* Son sonuç */}

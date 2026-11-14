@@ -2,7 +2,7 @@ import { Check } from "lucide-react-native";
 import { Pressable, View } from "react-native";
 import { AppText } from "@/components/ui";
 import { useTheme } from "@/theme/ThemeProvider";
-import { useLargeText } from "@/theme/text-scale";
+import { COMPACT_TEXT_SCALE, useLargeText } from "@/theme/text-scale";
 
 export interface RouteRow {
   key: string;
@@ -42,8 +42,9 @@ export function RouteList({
   const R = 28; // daire çapı
   return (
     <View style={{ backgroundColor: colors.surface, borderRadius: radius.card, borderWidth: 1, borderColor: colors.line, padding: space.s4, gap: space.s3 }}>
-      <View style={{ flexDirection: "row", justifyContent: "space-between", alignItems: "baseline" }}>
-        <AppText variant="label" tone="subtle" accessibilityRole="header">
+      {/* Büyük yazıda (AX3) başlık ve sayaç yan yana sığmıyor, yapışıp kartı taşıyordu: alt alta. */}
+      <View style={large ? { gap: space.s1 } : { flexDirection: "row", justifyContent: "space-between", alignItems: "baseline", gap: space.s2 }}>
+        <AppText variant="label" tone="subtle" accessibilityRole="header" style={{ flexShrink: 1 }}>
           BUGÜNÜN ROTASI
         </AppText>
         <AppText variant="bodySm" tone="soft" style={{ fontVariant: ["tabular-nums"] }}>
@@ -81,7 +82,7 @@ export function RouteList({
                   {r.done ? (
                     <Check color={colors.onAccent} size={16} strokeWidth={3} />
                   ) : (
-                    <AppText variant="subhead" tone="soft" style={{ fontSize: 13, lineHeight: 16, fontVariant: ["tabular-nums"] }}>
+                    <AppText variant="subhead" tone="soft" maxFontSizeMultiplier={COMPACT_TEXT_SCALE} style={{ fontSize: 13, lineHeight: 16, fontVariant: ["tabular-nums"] }}>
                       {i + 1}
                     </AppText>
                   )}
@@ -98,8 +99,14 @@ export function RouteList({
                       {r.detail}
                     </AppText>
                   ) : null}
+                  {/* Büyük yazıda süre alt satırda: sağda dururken etiketi dar bir sütuna sıkıştırıyordu. */}
+                  {large && r.estimateMin != null && !r.done ? (
+                    <AppText variant="bodySm" tone="soft" style={{ fontVariant: ["tabular-nums"] }}>
+                      ~{r.estimateMin} dk
+                    </AppText>
+                  ) : null}
                 </View>
-                {r.estimateMin != null && !r.done ? (
+                {!large && r.estimateMin != null && !r.done ? (
                   <AppText variant="bodySm" tone="soft" style={{ fontVariant: ["tabular-nums"], paddingTop: 2 }}>
                     ~{r.estimateMin} dk
                   </AppText>

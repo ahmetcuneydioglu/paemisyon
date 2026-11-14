@@ -28,7 +28,10 @@ export default function BildirimlerScreen() {
 
   const items = useMemo(() => inbox.data?.pages.flatMap((p) => p.items) ?? [], [inbox.data]);
   const unread = items.filter((i) => !i.readAt).length;
-  const sections = useMemo(() => groupInbox(items).map((g) => ({ title: g.label, data: g.items })), [items]);
+  // Gün anahtarı bağımlılıkta: gece yarısını geçen açık ekranda satır "Dün" derken grup "Bugün"
+  // kalıyordu (gruplar yalnız liste değişince yeniden kuruluyordu; 14 Kas 2026).
+  const gun = new Date().toDateString();
+  const sections = useMemo(() => groupInbox(items).map((g) => ({ title: g.label, data: g.items })), [items, gun]); // eslint-disable-line react-hooks/exhaustive-deps
 
   const open = useCallback(
     (item: InboxItem) => {

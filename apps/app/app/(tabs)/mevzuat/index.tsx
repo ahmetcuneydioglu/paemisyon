@@ -5,6 +5,7 @@ import { Pressable, ScrollView, View } from "react-native";
 import { ContinueCard, LawCard, RecentReads, lawShort } from "@/components/domain";
 import { AppText, Chip, EmptyState, Notice, Screen, SectionHeader, Skeleton } from "@/components/ui";
 import { TYPE_LABEL, useArticleBookmarks, useMevzuatMerkezi, type LegislationType, type MerkezLaw } from "@/features/mevzuat/queries";
+import { useLargeText } from "@/theme/text-scale";
 import { useTheme } from "@/theme/ThemeProvider";
 
 type Pool = "exam" | "all";
@@ -19,6 +20,7 @@ const GROUP_PREVIEW = 5;
 export default function MevzuatHome() {
   const router = useRouter();
   const { colors, space, radius } = useTheme();
+  const large = useLargeText();
   const merkez = useMevzuatMerkezi();
   const bookmarks = useArticleBookmarks();
   const [pool, setPool] = useState<Pool>("exam");
@@ -48,9 +50,12 @@ export default function MevzuatHome() {
         <AppText variant="body" tone="subtle" style={{ flex: 1 }} numberOfLines={1}>
           Kanun, madde ya da kelime ara
         </AppText>
-        <AppText variant="label" tone="subtle">
-          PVSK 16
-        </AppText>
+        {/* Örnek sorgu yalnız normal yazıda: büyük yazıda yer tutucuyu "Kanun, ma…" diye eziyordu. */}
+        {large ? null : (
+          <AppText variant="label" tone="subtle">
+            PVSK 16
+          </AppText>
+        )}
       </Pressable>
 
       {merkez.isPending ? (
@@ -68,7 +73,7 @@ export default function MevzuatHome() {
           <ContinueCard resume={d.continue} first={d.groups[0]?.laws[0] ?? d.all[0] ?? null} onOpen={openReader} />
 
           {examLawCount > 0 ? (
-            <View style={{ flexDirection: "row", gap: space.s2 }}>
+            <View style={{ flexDirection: "row", flexWrap: "wrap", gap: space.s2 }}>
               <Chip label="Sınavım" selected={effectivePool === "exam"} onPress={() => setPool("exam")} />
               <Chip label={`Tüm mevzuat · ${d.all.length}`} selected={effectivePool === "all"} onPress={() => setPool("all")} />
             </View>

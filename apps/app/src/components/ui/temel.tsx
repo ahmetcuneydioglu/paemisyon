@@ -153,6 +153,10 @@ export function Card({ children, style, tone = "surface" }: { children: ReactNod
 /* ---------------------------------------------------------------- Düğme */
 
 /** `destructiveGhost`: zemin yok, kırmızı yazı — geri alınamaz ama ikincil eylem (Hesabımı sil). */
+/** Düğme etiketinin büyük yazı tavanı: AX3'te "Kişisel deneme oluştur" üç satırlık dev bir
+ *  bloğa dönüşüyordu; 1,6× hâlâ belirgin büyür ama düğme tek bakışta okunur kalır (Faz 6). */
+const BUTTON_TEXT_SCALE = 1.6;
+
 export type ButtonVariant = "primary" | "secondary" | "ghost" | "destructive" | "destructiveGhost";
 
 export function Button({
@@ -191,6 +195,8 @@ export function Button({
           justifyContent: "center",
           paddingHorizontal: size === "sm" ? 14 : 20,
           opacity: isDisabled ? 0.5 : pressed ? 0.85 : 1,
+          // Büyük yazıda iki satıra inen etiket kenara yapışmasın; tek satırda minHeight zaten büyük.
+          paddingVertical: size === "sm" ? 6 : 10,
         },
         style,
       ]}
@@ -201,7 +207,7 @@ export function Button({
       ) : (
         <View style={{ flexDirection: "row", alignItems: "center", gap: 10 }}>
           {icon}
-          <Text maxFontSizeMultiplier={cap ?? undefined} style={[type.subhead, { textAlign: "center", flexShrink: 1 }, size === "sm" ? { color: fg } : { fontSize: 17, lineHeight: 22, color: fg }]}>
+          <Text maxFontSizeMultiplier={cap ?? BUTTON_TEXT_SCALE} style={[type.subhead, { textAlign: "center", flexShrink: 1 }, size === "sm" ? { color: fg } : { fontSize: 17, lineHeight: 22, color: fg }]}>
             {title}
           </Text>
         </View>

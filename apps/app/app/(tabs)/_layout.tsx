@@ -23,7 +23,7 @@ export default function TabsLayout() {
         screenOptions={{
           headerShown: false,
           sceneStyle: { backgroundColor: colors.bg },
-          tabBarActiveTintColor: colors.accent,
+          tabBarActiveTintColor: colors.accentInk, // açıkta kahve: altın krem zeminde okunmuyordu (Faz 6)
           tabBarInactiveTintColor: colors.inkSubtle,
           tabBarLabelPosition: "below-icon",
           tabBarStyle: {

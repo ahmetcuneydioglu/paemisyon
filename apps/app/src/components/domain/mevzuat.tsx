@@ -3,6 +3,7 @@ import { Pressable, View } from "react-native";
 import { AppText, Badge, Card, ProgressBar } from "@/components/ui";
 import { TYPE_LABEL, type MerkezLaw } from "@/features/mevzuat/queries";
 import { halEki } from "@/lib/tr-ek";
+import { useLargeText } from "@/theme/text-scale";
 import { useTheme } from "@/theme/ThemeProvider";
 
 /* ---------------------------------------------------------------- Adlandırma (saf) */
@@ -44,6 +45,7 @@ export function progressLabel(law: Pick<MerkezLaw, "percent" | "lastRead">): str
 /** Mevzuat sekmesi kanun kartı: rozet + ad, madde/soru sayıları, ilerleme çubuğu. Dokunma hedefi tüm kart. */
 export function LawCard({ law, onPress, verified = false }: { law: MerkezLaw; onPress: () => void; /** Son resmî kaynak karşılaştırması ("Güncel · 11 Kas 2026"). */ verified?: boolean }) {
   const { colors, space, radius } = useTheme();
+  const large = useLargeText();
   const verifiedLabel = verified && law.lastVerifiedAt ? `Güncel · ${new Date(law.lastVerifiedAt).toLocaleDateString("tr-TR", { day: "numeric", month: "short", year: "numeric" })}` : null;
   // "çıkmış" denmez: sayı madde metninden türetilmiş soruları da kapsar (13 Kas 2026).
   const meta = [`${law.articleCount} madde`, law.questionCount > 0 ? `${law.questionCount} soru` : null].filter(Boolean).join(" · ");
@@ -63,7 +65,7 @@ export function LawCard({ law, onPress, verified = false }: { law: MerkezLaw; on
     >
       <View style={{ flexDirection: "row", alignItems: "center", gap: space.s2 }}>
         <Badge tone="accent">{lawBadge(law)}</Badge>
-        <AppText variant="subhead" tone="ink" numberOfLines={2} style={{ flex: 1 }}>
+        <AppText variant="subhead" tone="ink" numberOfLines={large ? 4 : 2} style={{ flex: 1 }}>
           {lawDisplayName(law)}
         </AppText>
         <ChevronRight size={18} color={colors.inkSubtle} />
@@ -104,6 +106,8 @@ export function ContinueCard({
   onOpen: (slug: string, no: string | null) => void;
 }) {
   const { colors, space, radius } = useTheme();
+  // Büyük yazıda (AX) yüzde sağ kenardan taşıyor, başlık "Mad…" diye kesiliyordu (Faz 6).
+  const large = useLargeText();
   if (!resume && !first) return null;
   const eyebrow = resume ? "KALDIĞIN YERDEN DEVAM ET" : "OKUMAYA BAŞLA";
   const heading = resume ? `${resume.lawShort} · Madde ${resume.no}` : `${lawShort(first!)} · Madde 1`;
@@ -123,8 +127,8 @@ export function ContinueCard({
         gap: space.s1,
       })}
     >
-      <View style={{ flexDirection: "row", justifyContent: "space-between" }}>
-        <AppText variant="label" tone="accentInk">
+      <View style={{ flexDirection: "row", justifyContent: "space-between", gap: space.s2 }}>
+        <AppText variant="label" tone="accentInk" style={{ flexShrink: 1 }}>
           {eyebrow}
         </AppText>
         {resume ? (
@@ -133,16 +137,16 @@ export function ContinueCard({
           </AppText>
         ) : null}
       </View>
-      <AppText variant="heading" tone="ink" numberOfLines={1}>
+      <AppText variant="heading" tone="ink" numberOfLines={large ? 3 : 1}>
         {heading}
       </AppText>
       {sub ? (
-        <AppText variant="bodySm" tone="soft" numberOfLines={1}>
+        <AppText variant="bodySm" tone="soft" numberOfLines={large ? 3 : 1}>
           {sub}
         </AppText>
       ) : null}
       {resume ? <ProgressBar value={resume.percent / 100} height={4} style={{ marginTop: space.s1 }} label="Okuma ilerlemesi" /> : null}
-      <View style={{ flexDirection: "row", justifyContent: "space-between", alignItems: "center", marginTop: space.s1 }}>
+      <View style={large ? { gap: space.s1, marginTop: space.s1 } : { flexDirection: "row", justifyContent: "space-between", alignItems: "center", marginTop: space.s1 }}>
         <AppText variant="label" tone="subtle">
           {resume ? `${resume.index + 1} / ${resume.articleCount} madde` : "Kaldığın yer burada görünür"}
         </AppText>

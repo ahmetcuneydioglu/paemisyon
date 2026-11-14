@@ -1,6 +1,7 @@
 import { ChevronRight } from "lucide-react-native";
 import type { ReactNode } from "react";
 import { Pressable, StyleSheet, View, type StyleProp, type ViewStyle } from "react-native";
+import { useLargeText } from "@/theme/text-scale";
 import { useTheme } from "@/theme/ThemeProvider";
 import { AppText } from "./temel";
 
@@ -41,6 +42,9 @@ export function ListRow({
   children?: ReactNode;
 }) {
   const { colors, space } = useTheme();
+  // Büyük yazıda sağdaki öğe (ör. "Geçmiş") metnin altına iner: yanda dururken alt başlığı
+  // "Haftalık Den…" diye kesiyordu (Faz 6).
+  const large = useLargeText();
   const leadingBg = leadingTone === "success" ? colors.successSoft : leadingTone === "accent" ? colors.accentSoft : colors.surfaceAlt;
   const content = (
     <>
@@ -50,13 +54,14 @@ export function ListRow({
           {title}
         </AppText>
         {subtitle ? (
-          <AppText variant="bodySm" tone="soft" numberOfLines={2}>
+          <AppText variant="bodySm" tone="soft" numberOfLines={large ? 4 : 2}>
             {subtitle}
           </AppText>
         ) : null}
         {children}
+        {large && trailing ? <View style={{ alignSelf: "flex-start", paddingTop: 2 }}>{trailing}</View> : null}
       </View>
-      {trailing}
+      {large ? null : trailing}
       {chevron ? <ChevronRight color={colors.inkSubtle} size={20} strokeWidth={1.75} /> : null}
     </>
   );
