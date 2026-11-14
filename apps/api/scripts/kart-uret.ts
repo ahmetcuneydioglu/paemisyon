@@ -11,6 +11,10 @@
  * `uniteler/<slug>.json` (ünite özeti: rule / numbers / trap / compare blokları kart hammaddesidir).
  * Deste başlığı (topicId, legislationSlug, unitSlug, sourceLabel) betikçe doldurulur; model yalnız kartları yazar.
  *
+ * KAYNAK KİPİ (Doc 56 §12): girdi `kaynak-girdi.ts`'ten geliyorsa (`source` alanı) dayanak madde değil kaynak
+ * pasajıdır; ünitesiz kip (`-`, --slug, --baslik) kullanılır, istem `KAYNAK_EKI` ile genişler, deste
+ * `sourceSlug` taşır ve `kart-dogrula.ts` (veritabanındaki pasajlar) ile doğrulanır.
+ *
  * İstem kuralları (CLAUDE.md Doc 56 istisnası): her kart ≥1 gerçek madde referansı; cevap/açıklamadaki
  * her sayı madde metninde geçer ya da derivedNumbers formülüyle türetilir; yanlış şık sayıları
  * counterNumbers'a; aynı cevaba giden ikinci kart yok; kanunda olmayan yetki/süre/şart yok. Kaynak etiketi
@@ -26,6 +30,9 @@ import { articleLabel } from '../src/modules/summaries/unite-eslesme';
 import type { OzetGirdi } from './ozet-girdi';
 
 const MODEL = 'claude-opus-5-5';
+
+/** Kaynak metin girdisi (`kaynak-girdi.ts`): `source` varsa `articles` madde değil pasajdır (Doc 56 §12). */
+type KartGirdi = OzetGirdi & { source?: { slug: string; title: string } };
 
 const args = process.argv.slice(2);
 const hedefIdx = args.indexOf('--hedef');
@@ -147,12 +154,49 @@ KESİN KURALLAR
 
 ÇIKTI: Tek bir JSON nesnesi: {"cards":[...]}. Kod bloğu, açıklama, ön söz yok.`;
 
-function etiket(g: OzetGirdi): string {
+/**
+ * Kaynak metin kipi (Doc 56 §12, kullanıcı kararı 14 Kas 2026): mevzuatı olmayan derslerde (İnkılap Tarihi,
+ * Silah Bilgisi…) dayanak resmî madde değil, panele yüklenmiş KAYNAK PASAJIDIR. Yukarıdaki kuralların hepsi
+ * geçerlidir; "madde" yerine "pasaj" okunur. Bu ek, tarih/anlatı metnine özgü riskleri kapatır.
+ */
+const KAYNAK_EKI = `
+
+KAYNAK METİN KİPİ (bu destede geçerli; yukarıdaki kurallarla çelişirse BU bölüm uygulanır)
+A. Dayanak resmî madde metni değil, aşağıda verilen KAYNAK PASAJLARIDIR. "articleRefs" pasaj numarası taşır
+   (aynen verildiği biçimde, ör. "2.3-01"). Yukarıda "madde" denen her yerde "pasaj" oku. Kart metninde pasaj
+   numarası, sayfa, "kaynakta", "kitapta", "metinde", "pasajda" gibi sözler GEÇMEZ; kart kendi başına bir bilgi
+   sorusudur.
+B. Yalnız pasajda AÇIKÇA yazan olguyu sor: tarih, yer, kişi, kurum, karar, antlaşma hükmü, sıra, sonuç. Pasajda
+   yazmayan hiçbir tarih, isim, sayı, neden ya da sonuç ekleme; genel kültürden tamamlama. Bir olgunun pasajda
+   yazıp yazmadığından emin değilsen o kartı yazma.
+C. Her tarih ve sayı (gün, ay adıyla birlikte gün sayısı, yıl, madde sayısı, kişi sayısı) pasaj metninde AYNEN
+   geçmelidir; betik bunu denetler. Yılı pasajda yazmayan bir olaya yıl yazma. Yüzyıl, süre farkı ("üç yıl sonra")
+   gibi hesapla bulunan değerleri yazma.
+D. Değerlendirme ve üstünlük cümleleri ("ilk", "tek", "en önemli", "dönüm noktası", "millî egemenlik ilk kez")
+   yalnız pasaj aynı nitelemeyi açıkça yapıyorsa ve aynı kapsamla kullanılır; pasaj "ilk kez" demiyorsa sen de
+   deme. Nedensellik ("…bu yüzden", "…sonucunda") yalnız pasaj kuruyorsa kurulur.
+E. Kaynak cümlelerini KOPYALAMA: bilgiyi kendi kısa cümlenle yaz (özel adlar, tarihler ve resmî belge adları
+   hariç). Arka yüzde pasajdan art arda sekiz kelimeden uzun alıntı olmaz.
+F. Tuzak kartı, AYNI DESTENİN pasajlarında geçen iki olgunun (iki kongre, iki antlaşma, iki cemiyet, iki tarih)
+   karıştırılması üzerine kurulur; yanlış öğe mutlaka verilen pasajlardan birinde geçer ve o pasaj da
+   "articleRefs"e eklenir. Hiçbir pasajda geçmeyen bir öğeyi anıp çürütme.
+G. 1. kuraldaki mevzuata özgü yasaklar (mülga hüküm, AYM iptali, kalkmış kurum…) bu kipte aranmaz: tarih
+   metninde kalkmış kurumlar (Meclis-i Mebusan, Heyet-i Temsiliye, İtilaf Devletleri) konunun kendisidir ve
+   döneminin adıyla yazılır. Osmanlıca adın yanına pasajda verilmeyen günümüz karşılığı ekleme.
+H. Ders kitabının öğretim öğelerinden (etkinlik, "tartışınız", görsel altı yazısı, ölçme sorusu, kazanım
+   cümlesi) kart yazma; yalnız anlatı metnindeki olgudan yaz.`;
+
+function etiket(g: KartGirdi): string {
   return articleLabel({
     articleFrom: g.range.from,
     articleTo: g.range.to,
     articleNos: g.articleNos ?? [],
   });
+}
+
+/** Kaynak kipinde pasaj aralığı (madde etiketi sayısal sıralama varsayar; pasaj numarası sayı değildir). */
+function etiketPasaj(g: KartGirdi): string {
+  return g.range.from === g.range.to ? g.range.from : `${g.range.from}…${g.range.to}`;
 }
 
 /** Ünite özetinin kart hammaddesi olan blokları (exam_stats/bridge betik üretir, modele girmez). */
@@ -179,17 +223,18 @@ function ozetBloklari(u: SummaryUnitJson): string {
     .join('\n\n');
 }
 
-function userMessage(g: OzetGirdi, u: SummaryUnitJson): string {
+function userMessage(g: KartGirdi, u: SummaryUnitJson): string {
   const maddeler = g.articles
-    .map(
-      (a) =>
-        `### MADDE ${a.no}${a.title ? ' — ' + a.title : ''} (çıkmış soru: ${a.questionCount})\n${a.text}`,
+    .map((a) =>
+      g.source
+        ? `### PASAJ ${a.no}${a.title ? ' — ' + a.title : ''}\n${a.text}`
+        : `### MADDE ${a.no}${a.title ? ' — ' + a.title : ''} (çıkmış soru: ${a.questionCount})\n${a.text}`,
     )
     .join('\n\n');
   const sorular = g.questions
     .map(
       (q, i) =>
-        `${i + 1}. [md ${q.articleNos.join(', ')}] ${q.stem.replace(/\s+/g, ' ')}\n   ` +
+        `${i + 1}. ${q.articleNos.length ? `[md ${q.articleNos.join(', ')}] ` : ''}${q.stem.replace(/\s+/g, ' ')}\n   ` +
         q.options
           .map((o) => `${o.isCorrect ? '✓' : '✗'} ${o.text.replace(/\s+/g, ' ')}`)
           .join(' | '),
@@ -197,15 +242,22 @@ function userMessage(g: OzetGirdi, u: SummaryUnitJson): string {
     .join('\n');
   return [
     `ÜNİTE: ${u.unit.title}${u.unit.subtitle ? ' — ' + u.unit.subtitle : ''}`,
-    `legislationSlug: ${g.legislation.slug} · maddeler: ${etiket(g)} · HEDEF: ${hedef} kart`,
-    ...(g.articleNos?.length
+    g.source
+      ? `DERS: ${g.legislation.name} · pasaj sayısı: ${g.articles.length} · HEDEF: ${hedef} kart`
+      : `legislationSlug: ${g.legislation.slug} · maddeler: ${etiket(g)} · HEDEF: ${hedef} kart`,
+    ...(g.source
       ? [
-          `Madde numaralarını AYNEN bu biçimde kullan ("articleRefs" ve atıflarda): ${g.articleNos.map((n) => `"${n}"`).join(', ')}. ` +
-            '"Ek 6", "Geçici 2", "4/A" birer madde numarasıdır; "Ek 6" kart metninde "Ek 6" diye yazılır, 6 sayı sayılmaz.',
+          `Pasaj numaralarını "articleRefs" içinde AYNEN bu biçimde kullan: ${g.articleNos.map((n) => `"${n}"`).join(', ')}. ` +
+            'Pasaj numarası kart metnine yazılmaz.',
         ]
-      : []),
+      : g.articleNos?.length
+        ? [
+            `Madde numaralarını AYNEN bu biçimde kullan ("articleRefs" ve atıflarda): ${g.articleNos.map((n) => `"${n}"`).join(', ')}. ` +
+              '"Ek 6", "Geçici 2", "4/A" birer madde numarasıdır; "Ek 6" kart metninde "Ek 6" diye yazılır, 6 sayı sayılmaz.',
+          ]
+        : []),
     '',
-    '## RESMÎ MADDE METİNLERİ',
+    g.source ? '## KAYNAK PASAJLARI (tek doğruluk dayanağı)' : '## RESMÎ MADDE METİNLERİ',
     maddeler,
     '',
     ...(u.blocks?.length
@@ -215,7 +267,10 @@ function userMessage(g: OzetGirdi, u: SummaryUnitJson): string {
           '',
         ]
       : []),
-    '## BU MADDELERDEN ÇIKMIŞ SORULAR (✓ doğru, ✗ yanlış şık — tuzak kartları buradan)',
+    g.source
+      ? '## BU KONUDAN BANKADAKİ SORULAR (✓ doğru, ✗ yanlış şık). Yalnız "ne soruluyor" ve "neyle karıştırılıyor" bilgisidir; ' +
+        'DAYANAK DEĞİLDİR: sorudaki bir bilgi pasajlarda yoksa ondan kart yazma.'
+      : '## BU MADDELERDEN ÇIKMIŞ SORULAR (✓ doğru, ✗ yanlış şık — tuzak kartları buradan)',
     sorular || '(soru yok)',
   ].join('\n');
 }
@@ -243,7 +298,7 @@ export function stilKusuru(c: FlashcardJson): string | null {
 /** Yasak kalıplı açıklamaları modele TEK TUR yeniden yazdırır; hâlâ kusurluysa açıklamayı düşürür. */
 async function stilKapisi(
   client: Anthropic,
-  g: OzetGirdi,
+  g: KartGirdi,
   cards: FlashcardJson[],
 ): Promise<{ onarilan: number; dusurulen: number }> {
   const kusurlu = cards.map((c, i) => ({ i, k: stilKusuru(c) })).filter((x) => x.k);
@@ -266,7 +321,13 @@ async function stilKapisi(
     max_tokens: 16000,
     betas: ['server-side-fallback-2026-07-01'],
     fallbacks: 'default' as unknown as Anthropic.Beta.BetaFallbackParam[],
-    system: [{ type: 'text', text: SYSTEM, cache_control: { type: 'ephemeral' } }],
+    system: [
+      {
+        type: 'text',
+        text: g.source ? SYSTEM + KAYNAK_EKI : SYSTEM,
+        cache_control: { type: 'ephemeral' },
+      },
+    ],
     messages: [
       {
         role: 'user',
@@ -350,7 +411,7 @@ async function stilKapisi(
 }
 
 (async () => {
-  const girdi = JSON.parse(readFileSync(girdiPath, 'utf8')) as OzetGirdi;
+  const girdi = JSON.parse(readFileSync(girdiPath, 'utf8')) as KartGirdi;
   if (onarKipi) {
     // Kapısız üretilmiş desteyi (unitePath = deste.json) stil kapısından geçir, yerinde yaz.
     const deste = JSON.parse(readFileSync(unitePath, 'utf8')) as FlashcardDeckJson;
@@ -372,7 +433,7 @@ async function stilKapisi(
             slug: partiSlug,
             legislationSlug: girdi.legislation.slug,
             topicId: girdi.legislation.topicId,
-            title: baslik || etiket(girdi),
+            title: baslik || (girdi.source ? girdi.source.title : etiket(girdi)),
           },
           blocks: [],
         } as unknown as SummaryUnitJson)
@@ -400,7 +461,13 @@ async function stilKapisi(
     // API 'default' zincirini kabul eder (ozet-uret.ts ile aynı); SDK tipi yalnız açık listeyi tanır.
     fallbacks: 'default' as unknown as Anthropic.Beta.BetaFallbackParam[],
     output_config: { effort: 'high' },
-    system: [{ type: 'text', text: SYSTEM, cache_control: { type: 'ephemeral' } }],
+    system: [
+      {
+        type: 'text',
+        text: girdi.source ? SYSTEM + KAYNAK_EKI : SYSTEM,
+        cache_control: { type: 'ephemeral' },
+      },
+    ],
     messages: [{ role: 'user', content: userMessage(girdi, unite) }],
   });
   const res = await stream.finalMessage();
@@ -435,11 +502,16 @@ async function stilKapisi(
   const data: FlashcardDeckJson = {
     deck: {
       topicId,
-      legislationSlug: girdi.legislation.slug,
+      ...(girdi.source
+        ? { sourceSlug: girdi.source.slug }
+        : { legislationSlug: girdi.legislation.slug }),
       ...(unitePath === '-' ? {} : { unitSlug: unite.unit.slug }),
-      sourceLabel: `AI bilgi kartı — ${girdi.legislation.name} md ${etiket(girdi)}`,
+      // Kaynak kipinde etiket kitabın adını TAŞIMAZ (künye `source_documents.label`'da, panelde kalır).
+      sourceLabel: girdi.source
+        ? `AI bilgi kartı — ${girdi.legislation.name}: ${baslik} (kaynak pasajı ${etiketPasaj(girdi)})`
+        : `AI bilgi kartı — ${girdi.legislation.name} md ${etiket(girdi)}`,
       generatedBy:
-        `${res.model} (kart-uret.ts; kaynak: ${unitePath === '-' ? 'resmî madde metni + çıkmış sorular' : unite.unit.slug + ' özeti + resmî madde metni'}` +
+        `${res.model} (kart-uret.ts; kaynak: ${girdi.source ? 'kaynak pasajı + bankadaki sorular' : unitePath === '-' ? 'resmî madde metni + çıkmış sorular' : unite.unit.slug + ' özeti + resmî madde metni'}` +
         (onarim.onarilan ? `; stil kapısı ${onarim.onarilan} açıklama yeniden yazıldı` : '') +
         (onarim.dusurulen ? `; ${onarim.dusurulen} açıklama düşürüldü` : '') +
         ')',
@@ -458,5 +530,9 @@ async function stilKapisi(
         ', ',
       )}) → ${out} · model ${res.model} · giriş ${res.usage.input_tokens} / çıkış ${res.usage.output_tokens} token`,
   );
-  console.log(`Sıradaki: npx tsx scripts/kart-dogrula-uzak.ts ${out} --md`);
+  console.log(
+    girdi.source
+      ? `Sıradaki: npx tsx scripts/kart-dogrula.ts ${out} --md   (pasajlar veritabanından)`
+      : `Sıradaki: npx tsx scripts/kart-dogrula-uzak.ts ${out} --md`,
+  );
 })();

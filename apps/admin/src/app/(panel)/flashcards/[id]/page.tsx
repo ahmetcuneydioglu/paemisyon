@@ -180,7 +180,11 @@ export default function FlashcardDetailPage() {
       </div>
       <PageHeader
         title={d.front}
-        subtitle={`v${d.version} · ${d.legislation?.shortName ?? d.legislation?.name ?? "mevzuat yok"} md ${d.articles.map((a) => a.no).join(", ")} · güncellendi ${fmt(d.updatedAt)}`}
+        subtitle={
+          d.source
+            ? `v${d.version} · ${d.source.title} · pasaj ${d.passages.map((p) => p.no).join(", ")} · güncellendi ${fmt(d.updatedAt)}`
+            : `v${d.version} · ${d.legislation?.shortName ?? d.legislation?.name ?? "mevzuat yok"} md ${d.articles.map((a) => a.no).join(", ")} · güncellendi ${fmt(d.updatedAt)}`
+        }
         action={
           <div className="flex flex-wrap items-center gap-2">
             <StatusBadge status={d.status} />
@@ -394,12 +398,19 @@ export default function FlashcardDetailPage() {
                   <span>Zorluk {d.difficulty}</span>
                   <span>
                     Referanslar:{" "}
-                    {d.articles
-                      .map(
-                        (a) =>
-                          `md ${a.no}${a.relation === "primary" ? " (birincil)" : ""}`,
-                      )
-                      .join(", ")}
+                    {d.source
+                      ? d.passages
+                          .map(
+                            (p) =>
+                              `pasaj ${p.no}${p.relation === "primary" ? " (birincil)" : ""}`,
+                          )
+                          .join(", ")
+                      : d.articles
+                          .map(
+                            (a) =>
+                              `md ${a.no}${a.relation === "primary" ? " (birincil)" : ""}`,
+                          )
+                          .join(", ")}
                   </span>
                   {d.counterNumbers.length > 0 && (
                     <span>Karşı örnek: {d.counterNumbers.join(", ")}</span>
@@ -474,47 +485,90 @@ export default function FlashcardDetailPage() {
         </div>
 
         <div className="lg:sticky lg:top-4 lg:max-h-[calc(100vh-2rem)] lg:overflow-y-auto">
-          <Card>
-            <h2 className="text-sm font-semibold">Referans maddeler</h2>
-            <p className="mt-0.5 text-xs text-slate-500">
-              {d.legislation?.name ?? "Mevzuat"}. Cevap ve açıklamadaki her sayı
-              ve iddiayı bu metinle karşılaştır; betik yalnız sayıları görür.
-            </p>
-            <div className="mt-3 space-y-4">
-              {d.articles.map((a) => (
-                <div key={a.no}>
-                  <div className="flex flex-wrap items-center gap-2 text-xs font-semibold text-slate-700">
-                    Madde {a.no}
-                    {a.title
-                      ? ` — ${a.title.replace(/^\d+\.\s*|^[A-Z]\.\s*/, "")}`
-                      : ""}
-                    {a.relation === "primary" && (
-                      <span className="rounded bg-slate-100 px-1.5 py-0.5 font-normal text-slate-600">
-                        birincil
-                      </span>
-                    )}
-                    {a.currentVersionNo != null &&
-                      a.versionNo != null &&
-                      a.currentVersionNo !== a.versionNo && (
-                        <span className="rounded bg-red-100 px-1.5 py-0.5 font-normal text-red-700">
-                          metin güncellendi (v{a.versionNo} → v
-                          {a.currentVersionNo})
+          {d.source && (
+            <Card>
+              <h2 className="text-sm font-semibold">Kaynak pasajları</h2>
+              <p className="mt-0.5 text-xs text-slate-500">
+                {d.source.title} ({d.source.label}). Bu derste madde yok; kartın
+                dayanağı kaynak metindir. Cevap ve açıklamadaki her tarih, sayı
+                ve iddiayı bu pasajla karşılaştır; betik yalnız sayıları görür.
+                Kaynak yalnız panelde görünür, kullanıcıya gösterilmez.
+              </p>
+              <div className="mt-3 space-y-4">
+                {d.passages.map((p) => (
+                  <div key={p.no}>
+                    <div className="flex flex-wrap items-center gap-2 text-xs font-semibold text-slate-700">
+                      Pasaj {p.no}
+                      {p.heading ? ` — ${p.heading}` : ""}
+                      {p.page && (
+                        <span className="rounded bg-slate-100 px-1.5 py-0.5 font-normal text-slate-600">
+                          s. {p.page}
                         </span>
                       )}
+                      {p.relation === "primary" && (
+                        <span className="rounded bg-slate-100 px-1.5 py-0.5 font-normal text-slate-600">
+                          birincil
+                        </span>
+                      )}
+                    </div>
+                    {p.text ? (
+                      <p className="mt-1 whitespace-pre-line text-xs leading-relaxed text-slate-600">
+                        {p.text}
+                      </p>
+                    ) : (
+                      <p className="mt-1 text-xs text-red-700">
+                        Pasaj metni bulunamadı.
+                      </p>
+                    )}
                   </div>
-                  {a.text ? (
-                    <p className="mt-1 whitespace-pre-line text-xs leading-relaxed text-slate-600">
-                      {a.text}
-                    </p>
-                  ) : (
-                    <p className="mt-1 text-xs text-red-700">
-                      Madde metni bulunamadı.
-                    </p>
-                  )}
-                </div>
-              ))}
-            </div>
-          </Card>
+                ))}
+              </div>
+            </Card>
+          )}
+          {!d.source && (
+            <Card>
+              <h2 className="text-sm font-semibold">Referans maddeler</h2>
+              <p className="mt-0.5 text-xs text-slate-500">
+                {d.legislation?.name ?? "Mevzuat"}. Cevap ve açıklamadaki her
+                sayı ve iddiayı bu metinle karşılaştır; betik yalnız sayıları
+                görür.
+              </p>
+              <div className="mt-3 space-y-4">
+                {d.articles.map((a) => (
+                  <div key={a.no}>
+                    <div className="flex flex-wrap items-center gap-2 text-xs font-semibold text-slate-700">
+                      Madde {a.no}
+                      {a.title
+                        ? ` — ${a.title.replace(/^\d+\.\s*|^[A-Z]\.\s*/, "")}`
+                        : ""}
+                      {a.relation === "primary" && (
+                        <span className="rounded bg-slate-100 px-1.5 py-0.5 font-normal text-slate-600">
+                          birincil
+                        </span>
+                      )}
+                      {a.currentVersionNo != null &&
+                        a.versionNo != null &&
+                        a.currentVersionNo !== a.versionNo && (
+                          <span className="rounded bg-red-100 px-1.5 py-0.5 font-normal text-red-700">
+                            metin güncellendi (v{a.versionNo} → v
+                            {a.currentVersionNo})
+                          </span>
+                        )}
+                    </div>
+                    {a.text ? (
+                      <p className="mt-1 whitespace-pre-line text-xs leading-relaxed text-slate-600">
+                        {a.text}
+                      </p>
+                    ) : (
+                      <p className="mt-1 text-xs text-red-700">
+                        Madde metni bulunamadı.
+                      </p>
+                    )}
+                  </div>
+                ))}
+              </div>
+            </Card>
+          )}
         </div>
       </div>
     </div>

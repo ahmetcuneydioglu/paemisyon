@@ -1,5 +1,6 @@
 /**
- * Doc 56 — Bilgi kartı destesini canlı madde metinlerine karşı doğrula (yazmaz).
+ * Doc 56 — Bilgi kartı destesini canlı madde metinlerine (kaynak metin destesinde pasajlara) karşı
+ * doğrula (yazmaz).
  *
  *   cd apps/api && npx tsx scripts/kart-dogrula.ts <deste.json> [--md]
  *
@@ -8,7 +9,7 @@
  */
 import { PrismaClient } from '@prisma/client';
 import { readFileSync } from 'fs';
-import { loadArticleMap } from '../src/modules/summaries/ozet-ice-aktar';
+import { resolveDeckBasis } from '../src/modules/flashcards/kart-ice-aktar';
 import { validateDeck, type FlashcardDeckJson } from '../src/modules/flashcards/kart-dogrulayici';
 
 const file = process.argv[2];
@@ -23,12 +24,9 @@ const prisma = new PrismaClient({ datasources: { db: { url } } });
 (async () => {
   const data = JSON.parse(readFileSync(file, 'utf8')) as FlashcardDeckJson;
   try {
-    const leg = await prisma.legislation.findFirst({
-      where: { slug: data.deck.legislationSlug, deletedAt: null },
-      select: { id: true, name: true },
-    });
-    if (!leg) throw new Error(`Mevzuat bulunamadı: ${data.deck.legislationSlug}`);
-    const byNo = await loadArticleMap(prisma, leg.id);
+    // Dayanak mevzuat ya da kaynak metin (Doc 56 §12); içe aktarmayla aynı çözümleme.
+    const leg = await resolveDeckBasis(prisma, data.deck);
+    const byNo = leg.byNo;
     const r = validateDeck(data, byNo);
     if (md) {
       console.log(

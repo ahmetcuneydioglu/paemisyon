@@ -36,6 +36,12 @@ interface Okuma {
   let okuma: Okuma;
   if (metinDosyasi) okuma = JSON.parse(readFileSync(metinDosyasi, 'utf8')) as Okuma;
   else {
+    // Kaynak metin (Doc 56 §12) hiçbir public uçtan okunmaz: pasajlar ya --metin dosyasından ya da
+    // veritabanından (kart-dogrula.ts) doğrulanır.
+    if (!data.deck.legislationSlug)
+      throw new Error(
+        'Kaynak metin destesi: --metin <pasajlar.json> ver ya da kart-dogrula.ts kullan.',
+      );
     const res = await fetch(`${api}/public/mevzuat/${data.deck.legislationSlug}/oku`);
     if (!res.ok) throw new Error(`Mevzuat okunamadı: ${data.deck.legislationSlug} (${res.status})`);
     okuma = ((await res.json()) as { data: Okuma }).data;

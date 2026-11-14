@@ -120,6 +120,18 @@ Bu kurallar her UI kodu yazımında geçerlidir; "sonradan düzeltiriz" yaklaş�
   kaynaklı kartlar da toplu yayınlanabilir (kullanıcı kararı 6 Kas 2026): toplu
   yayın her kartı kendi kapısından (betik doğrulaması + mevzuat kontrolü +
   eskime) tek tek geçirir, geçemeyeni gerekçesiyle atlar.
+  **İSTİSNA (14 Kas 2026, Doc 56 §12):** MEVZUATI OLMAYAN derslerde (Atatürk İlkeleri ve İnkılap Tarihi; kaynağı
+  sağlandığında Silah Bilgisi) BİLGİ KARTI, resmî madde yerine KAYNAK PASAJINA dayanarak üretilebilir (kullanıcı
+  kararı 14 Kas 2026). Gerekçe: bu derslerde türetilecek madde metni yoktur; güven, panele yüklenmiş ve denetçinin
+  geri dönebildiği yazılı kaynağa dayanır. Şartı: kaynağı İNSAN sağlar (PDF'i kullanıcı indirir; kazıma yok) ve
+  `source_documents` / `source_passages` olarak kaydedilir (`kaynak-ekle.ts`); her kart en az bir pasaja referans
+  verir (`FlashcardPassage`); cevap ve açıklamadaki her tarih ve sayı referans pasajın metninde geçtiği betikle
+  gösterilir (aynı `kart-dogrulayici.ts`); pasajda açıkça yazmayan olgu, tarih, neden-sonuç ya da "ilk/tek/en"
+  nitelemesi yazılmaz; kaynak cümleleri kopyalanmaz (özgün kısa ifade); bankadaki sorular yalnız "ne soruluyor"
+  bilgisidir, dayanak değildir; kayıt "AI bilgi kartı" ön ekli `sourceLabel` taşır (etikette kitap adı geçmez),
+  `in_review`'a düşer, iki bağımsız denetçiden geçer. Yayın kararı insanındır. Kaynak metin ve künyesi yalnız
+  panelde görünür: hiçbir kullanıcı ucu `source_*` tablolarını okumaz, kartta madde bağı satırı çıkmaz. Pasaj metni
+  değişirse bağlı kart eskir. Bu istisna soru üretimini KAPSAMAZ; yalnız bilgi kartı içindir.
 - **DERS (konu anlatımı) içerik türü (7 Kas 2026, Doc 57) — istisna DEĞİL, tanım:**
   ders, kaynak kitaptan ÖZGÜN anlatımdır; kitabın cümleleri kopyalanmaz. Üretim
   hattı (kullanıcı kararı 7 Kas 2026): kapsam dosyası → MODEL TASLAĞI → insan

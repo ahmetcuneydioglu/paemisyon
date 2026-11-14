@@ -1,7 +1,8 @@
 /**
  * Doc 56 — Bilgi kartı doğrulayıcısı (SAF: veritabanı yok, yalnız metin).
  *
- * Güven ilkesi Doc 53'le aynıdır: her kart en az bir resmî maddeye referans verir; cevap ve
+ * Güven ilkesi Doc 53'le aynıdır: her kart en az bir resmî maddeye (mevzuatı olmayan derslerde bir
+ * kaynak pasajına, Doc 56 §12) referans verir; cevap ve
  * açıklamadaki her sayı ya referans maddenin metninde geçer, ya açık formülle türetilir, ya da
  * "yanlış şık" (counterNumbers) olarak işaretlenir. Anlam doğruluğu (tuzak kartlarındaki olumsuz
  * iddialar) betikle yakalanamaz; insan incelemesi kaldırılamaz.
@@ -26,7 +27,10 @@ export interface FlashcardJson {
   back: string;
   explanation?: string;
   difficulty?: number;
-  /** Madde numaraları (kanonik: "13", "4/A", "Ek 6"). İlk eleman birincil referans. */
+  /**
+   * Referans numaraları; ilk eleman birincil referans. Mevzuat destesinde madde numarası (kanonik:
+   * "13", "4/A", "Ek 6"), kaynak metin destesinde (Doc 56 §12) pasaj numarası ("3.2-04").
+   */
   articleRefs: string[];
   derivedNumbers?: DerivedNumber[];
   counterNumbers?: number[];
@@ -36,7 +40,10 @@ export interface FlashcardDeckJson {
   deck: {
     /** Kartların konusu (zorunlu; deste tablo değil, kapsam etiketidir). */
     topicId: string;
-    legislationSlug: string;
+    /** Dayanak mevzuat. `sourceSlug` ile birlikte verilmez; ikisinden biri zorunlu. */
+    legislationSlug?: string;
+    /** Dayanak kaynak metin (mevzuatı olmayan dersler, Doc 56 §12): `source_documents.slug`. */
+    sourceSlug?: string;
     /** Ünite etiketi (isteğe bağlı): kartlar bu ünitenin alt konu filtresine düşer. */
     unitSlug?: string;
     sourceLabel: string;

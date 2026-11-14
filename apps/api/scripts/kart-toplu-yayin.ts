@@ -12,7 +12,7 @@
  */
 import { PrismaClient } from '@prisma/client';
 import { validateCard, type FlashcardJson } from '../src/modules/flashcards/kart-dogrulayici';
-import { loadArticleMap } from '../src/modules/summaries/ozet-ice-aktar';
+import { loadRefMap, type RefMap } from '../src/modules/flashcards/kart-kaynak';
 
 const args = process.argv.slice(2);
 const uygula = args.includes('--uygula');
@@ -47,6 +47,7 @@ const prisma = new PrismaClient({ datasources: { db: { url } } });
         derivedNumbers: true,
         counterNumbers: true,
         legislationId: true,
+        sourceDocumentId: true,
         staleSince: true,
         verificationStatus: true,
         topic: { select: { name: true } },
@@ -56,30 +57,47 @@ const prisma = new PrismaClient({ datasources: { db: { url } } });
             lawArticle: { select: { articleNo: true, sortKey: true, legislationId: true } },
           },
         },
+        passages: {
+          select: { relation: true, passage: { select: { passageNo: true, sortKey: true } } },
+        },
       },
     });
     console.log(`İncelemede ${cards.length} kart.`);
 
-    const haritalar = new Map<string, Awaited<ReturnType<typeof loadArticleMap>>>();
+    // Dayanak başına (mevzuat ya da kaynak metin, Doc 56 §12) referans haritası bir kez yüklenir.
+    const haritalar = new Map<string, RefMap>();
     const gecen: string[] = [];
     const atlanan: { id: string; konu: string; front: string; reason: string }[] = [];
     const konuSayim = new Map<string, { gecen: number; atlanan: number }>();
+    const birincilOnce = (r: { relation: string }) => (r.relation === 'primary' ? -1 : 0);
     for (const c of cards) {
       const refs = [...c.articles].sort(
-        (a, b) =>
-          (a.relation === 'primary' ? -1 : 0) - (b.relation === 'primary' ? -1 : 0) ||
-          a.lawArticle.sortKey - b.lawArticle.sortKey,
+        (a, b) => birincilOnce(a) - birincilOnce(b) || a.lawArticle.sortKey - b.lawArticle.sortKey,
+      );
+      const pasajlar = [...c.passages].sort(
+        (a, b) => birincilOnce(a) - birincilOnce(b) || a.passage.sortKey - b.passage.sortKey,
       );
       const legId = c.legislationId ?? refs[0]?.lawArticle.legislationId ?? null;
-      if (legId && !haritalar.has(legId)) haritalar.set(legId, await loadArticleMap(prisma, legId));
-      const byNo = legId ? haritalar.get(legId)! : new Map();
+      const anahtar = c.sourceDocumentId
+        ? `kaynak:${c.sourceDocumentId}`
+        : legId
+          ? `mevzuat:${legId}`
+          : '';
+      if (anahtar && !haritalar.has(anahtar))
+        haritalar.set(
+          anahtar,
+          await loadRefMap(prisma, { sourceDocumentId: c.sourceDocumentId, legislationId: legId }),
+        );
+      const byNo: RefMap = anahtar ? haritalar.get(anahtar)! : new Map();
       const json: FlashcardJson = {
         kind: c.kind,
         front: c.front,
         back: c.back,
         explanation: c.explanation ?? undefined,
         difficulty: c.difficulty,
-        articleRefs: refs.map((r) => r.lawArticle.articleNo),
+        articleRefs: refs.length
+          ? refs.map((r) => r.lawArticle.articleNo)
+          : pasajlar.map((r) => r.passage.passageNo),
         derivedNumbers: (c.derivedNumbers as FlashcardJson['derivedNumbers']) ?? undefined,
         counterNumbers: c.counterNumbers,
       };

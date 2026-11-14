@@ -746,6 +746,16 @@ export interface FlashcardListItem {
   courseName: string;
   unit: { id: string; slug: string; title: string; isPremium: boolean } | null;
   articles: FlashcardArticleRef[];
+  /** Kaynak metne dayanan kartta (Doc 56 §12) madde yerine pasaj referansı; mevzuat kartında boş. */
+  passages: FlashcardPassageRef[];
+}
+
+/** Kaynak pasajı referansı: pasaj numarası, başlık ve kaynaktaki sayfa. */
+export interface FlashcardPassageRef {
+  no: string;
+  heading: string | null;
+  page: string | null;
+  relation: string;
 }
 
 export interface FlashcardStats {
@@ -775,6 +785,9 @@ export interface FlashcardDetail extends FlashcardListItem {
   verifiedAt: string | null;
   legislation: { id: string; slug: string; name: string; shortName: string | null } | null;
   articles: (FlashcardArticleRef & { text: string | null; currentVersionNo: number | null })[];
+  /** Kartın dayandığı kaynak metin (yalnız panelde görünür; kullanıcıya gösterilmez). */
+  source: { id: string; slug: string; title: string; label: string } | null;
+  passages: (FlashcardPassageRef & { text: string | null })[];
   validation: { ok: boolean; issues: string[]; lines: string[] };
   gate: { canPublish: boolean; reasons: string[] };
   /** Bu karta açık kullanıcı bildirimi sayısı (Doc 56 §3f). */

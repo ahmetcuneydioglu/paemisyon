@@ -432,6 +432,7 @@ model Topic {
   courseTests      CourseTest[]
   hubTopicMaps     HubTopicMap[]
   flashcards       Flashcard[]
+  sourceDocuments  SourceDocument[]
 
   dailyFocuses DailyFocus[]
 
@@ -807,6 +808,8 @@ model Flashcard {
   /// Ünite etiketi (alt konu filtresi); ünite silinirse kart konuda kalır.
   summaryUnitId      String?            @map("summary_unit_id") @db.Uuid
   legislationId      String?            @map("legislation_id") @db.Uuid
+  /// Mevzuatı olmayan derslerde kartın dayandığı kaynak metin (Doc 56 §12); legislationId ile birlikte dolmaz.
+  sourceDocumentId   String?            @map("source_document_id") @db.Uuid
   kind               FlashcardKind      @default(qa)
   /// Ön yüz: soru ya da boşluklu cümle.
   front              String
@@ -835,19 +838,85 @@ model Flashcard {
   updatedAt          DateTime           @updatedAt @map("updated_at")
   deletedAt          DateTime?          @map("deleted_at")
 
-  topic       Topic                  @relation(fields: [topicId], references: [id], onDelete: Restrict)
-  summaryUnit SummaryUnit?           @relation(fields: [summaryUnitId], references: [id], onDelete: SetNull)
-  legislation Legislation?           @relation(fields: [legislationId], references: [id], onDelete: SetNull)
-  articles    FlashcardArticle[]
-  reviews     FlashcardReview[]
-  events      FlashcardReviewEvent[]
-  bookmarks   FlashcardBookmark[]
-  reports     FlashcardReport[]
+  topic          Topic                  @relation(fields: [topicId], references: [id], onDelete: Restrict)
+  summaryUnit    SummaryUnit?           @relation(fields: [summaryUnitId], references: [id], onDelete: SetNull)
+  legislation    Legislation?           @relation(fields: [legislationId], references: [id], onDelete: SetNull)
+  sourceDocument SourceDocument?        @relation(fields: [sourceDocumentId], references: [id], onDelete: Restrict)
+  articles       FlashcardArticle[]
+  passages       FlashcardPassage[]
+  reviews        FlashcardReview[]
+  events         FlashcardReviewEvent[]
+  bookmarks      FlashcardBookmark[]
+  reports        FlashcardReport[]
 
   @@index([topicId, status, sortOrder])
   @@index([summaryUnitId])
   @@index([staleSince])
+  @@index([sourceDocumentId])
   @@map("flashcards")
+}
+
+/// Doc 56 §12 — Kaynak metin: mevzuatı olmayan derslerde (İnkılap Tarihi, Silah Bilgisi…) kartın güven
+/// dayanağı. Ders kitabı ya da resmî yayın pasajlara bölünür; kart madde yerine pasaja referans verir ve
+/// sayılar pasaj metninde betikle doğrulanır. YALNIZ panel ve doğrulayıcı okur: hiçbir kullanıcı ucu bu
+/// tabloları seçmez (CLAUDE.md: kaynak etiketi/künyesi son kullanıcıya gösterilmez; kitap metni dağıtılmaz).
+model SourceDocument {
+  id        String    @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  slug      String    @unique
+  topicId   String    @map("topic_id") @db.Uuid
+  /// Panelde görünen ad ("İnkılap Tarihi — MEB ders kitabı").
+  title     String
+  /// Künye (yayıncı, baskı, yıl); panelde kalır.
+  label     String
+  /// book | url
+  kind      String    @default("book")
+  url       String?
+  createdAt DateTime  @default(now()) @map("created_at")
+  updatedAt DateTime  @updatedAt @map("updated_at")
+  deletedAt DateTime? @map("deleted_at")
+
+  topic      Topic           @relation(fields: [topicId], references: [id], onDelete: Restrict)
+  passages   SourcePassage[]
+  flashcards Flashcard[]
+
+  @@index([topicId])
+  @@map("source_documents")
+}
+
+/// Kaynak pasajı — LawArticle'ın kaynak metindeki eşi. passageNo kanonik ve kaynak içinde tekildir
+/// ("3.2-04": ünite.konu-sıra); kart JSON'undaki referans budur.
+model SourcePassage {
+  id         String   @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  documentId String   @map("document_id") @db.Uuid
+  passageNo  String   @map("passage_no")
+  heading    String?
+  /// Kaynaktaki sayfa (ya da aralık); denetçi geri dönebilsin.
+  page       String?
+  text       String
+  sortKey    Int      @default(0) @map("sort_key")
+  createdAt  DateTime @default(now()) @map("created_at")
+  updatedAt  DateTime @updatedAt @map("updated_at")
+
+  document   SourceDocument     @relation(fields: [documentId], references: [id], onDelete: Cascade)
+  flashcards FlashcardPassage[]
+
+  @@unique([documentId, passageNo])
+  @@index([documentId, sortKey])
+  @@map("source_passages")
+}
+
+/// Kart → kaynak pasajı referansı (FlashcardArticle'ın eşi). relation: primary | related.
+model FlashcardPassage {
+  flashcardId String @map("flashcard_id") @db.Uuid
+  passageId   String @map("passage_id") @db.Uuid
+  relation    String @default("primary")
+
+  flashcard Flashcard     @relation(fields: [flashcardId], references: [id], onDelete: Cascade)
+  passage   SourcePassage @relation(fields: [passageId], references: [id], onDelete: Restrict)
+
+  @@id([flashcardId, passageId])
+  @@index([passageId])
+  @@map("flashcard_passages")
 }
 
 /// Kart → madde referansı (SummaryBlockArticle kalıbı). articleVersionNo: kartın yazıldığı anda

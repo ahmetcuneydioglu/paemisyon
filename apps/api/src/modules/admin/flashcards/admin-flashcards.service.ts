@@ -11,6 +11,7 @@ import { AuditService } from '../audit.service';
 import { AppEventsService } from '../../notifications/app-events.service';
 import { sentetikMi } from '../questions/kaynak-turu';
 import { loadArticleMap } from '../../summaries/ozet-ice-aktar';
+import { loadRefMap } from '../../flashcards/kart-kaynak';
 import { normalizeCounterNumbers } from '../../summaries/ozet-dogrulayici';
 import {
   validateCard,
@@ -23,6 +24,7 @@ import {
   FlashcardImportError,
   importDeck,
   KART_KAYNAK_ONEKLERI,
+  resolveDeckBasis,
   latestVersionNos,
 } from '../../flashcards/kart-ice-aktar';
 import type {
@@ -57,6 +59,15 @@ const LIST_SELECT = {
       lawArticle: { select: { id: true, articleNo: true, title: true, sortKey: true } },
     },
   },
+  /// Kaynak metne dayanan kartta (Doc 56 §12) madde yerine pasaj referansı; metin yalnız ayrıntıda okunur.
+  passages: {
+    select: {
+      relation: true,
+      passage: {
+        select: { id: true, passageNo: true, heading: true, page: true, sortKey: true },
+      },
+    },
+  },
 } satisfies Prisma.FlashcardSelect;
 
 type ListRow = Prisma.FlashcardGetPayload<{ select: typeof LIST_SELECT }>;
@@ -67,6 +78,8 @@ const DETAIL_SELECT = {
   derivedNumbers: true,
   counterNumbers: true,
   legislationId: true,
+  sourceDocumentId: true,
+  sourceDocument: { select: { id: true, slug: true, title: true, label: true } },
   verifiedAt: true,
   publishedBy: true,
   createdBy: true,
@@ -88,6 +101,24 @@ function sortedRefs<T extends { relation: string; lawArticle: { sortKey: number 
   );
 }
 
+/** Pasaj referansları: birincil önce, sonra kaynak sırası. */
+function sortedPassages<T extends { relation: string; passage: { sortKey: number } }>(
+  refs: T[],
+): T[] {
+  return [...refs].sort(
+    (a, b) =>
+      (a.relation === 'primary' ? -1 : 0) - (b.relation === 'primary' ? -1 : 0) ||
+      a.passage.sortKey - b.passage.sortKey,
+  );
+}
+
+/** Kartın referans numaraları: mevzuat kartında madde, kaynak metin kartında pasaj numarası. */
+function refNos(card: Pick<ListRow, 'articles' | 'passages'>): string[] {
+  return card.articles.length
+    ? sortedRefs(card.articles).map((r) => r.lawArticle.articleNo)
+    : sortedPassages(card.passages).map((r) => r.passage.passageNo);
+}
+
 function toJson(card: DetailRow): FlashcardJson {
   return {
     kind: card.kind,
@@ -95,7 +126,7 @@ function toJson(card: DetailRow): FlashcardJson {
     back: card.back,
     explanation: card.explanation ?? undefined,
     difficulty: card.difficulty,
-    articleRefs: sortedRefs(card.articles).map((r) => r.lawArticle.articleNo),
+    articleRefs: refNos(card),
     derivedNumbers: (card.derivedNumbers as FlashcardJson['derivedNumbers']) ?? undefined,
     counterNumbers: card.counterNumbers,
   };
@@ -128,6 +159,12 @@ function toListItem(c: ListRow) {
       no: r.lawArticle.articleNo,
       title: r.lawArticle.title,
       versionNo: r.articleVersionNo,
+      relation: r.relation,
+    })),
+    passages: sortedPassages(c.passages).map((r) => ({
+      no: r.passage.passageNo,
+      heading: r.passage.heading,
+      page: r.passage.page,
       relation: r.relation,
     })),
   };
@@ -264,6 +301,7 @@ export class AdminFlashcardsService {
       counterNumbers: card.counterNumbers,
       verifiedAt: card.verifiedAt,
       legislation: card.legislation,
+      source: card.sourceDocument,
       openReportCount: card._count.reports,
       articles: sortedRefs(card.articles).map((r) => {
         const a = byNo.get(r.lawArticle.articleNo);
@@ -276,6 +314,13 @@ export class AdminFlashcardsService {
           relation: r.relation,
         };
       }),
+      passages: sortedPassages(card.passages).map((r) => ({
+        no: r.passage.passageNo,
+        heading: r.passage.heading,
+        page: r.passage.page,
+        text: byNo.get(r.passage.passageNo)?.text ?? null,
+        relation: r.relation,
+      })),
       validation,
       gate: this.publishGate(card, validation),
       history,
@@ -296,13 +341,16 @@ export class AdminFlashcardsService {
     return { canPublish: reasons.length === 0, reasons };
   }
 
-  /** Kartın bağlı olduğu mevzuatın madde haritası + canlı doğrulama. */
+  /** Kartın dayanağının (mevzuat ya da kaynak metin) referans haritası + canlı doğrulama. */
   private async validateRow(card: DetailRow) {
-    const legislationId = card.legislationId ?? (await this.legislationOfRefs(card));
-    const byNo = legislationId
-      ? await loadArticleMap(this.prisma, legislationId)
-      : new Map<string, { articleNo: string; text: string; id: string; title: string | null }>();
+    const byNo = await loadRefMap(this.prisma, await this.basisOf(card));
     return { byNo, validation: validateCard(toJson(card), 0, byNo) };
+  }
+
+  /** Dayanak: kaynak metin (Doc 56 §12) ya da mevzuat (eski kartta ilk referansın mevzuatı). */
+  private async basisOf(card: DetailRow) {
+    if (card.sourceDocumentId) return { sourceDocumentId: card.sourceDocumentId };
+    return { legislationId: card.legislationId ?? (await this.legislationOfRefs(card)) };
   }
 
   private async legislationOfRefs(card: DetailRow): Promise<string | null> {
@@ -395,8 +443,10 @@ export class AdminFlashcardsService {
       select: DETAIL_SELECT,
     });
     if (!card) throw new NotFoundException('Kart bulunamadı.');
-    const legislationId = card.legislationId ?? (await this.legislationOfRefs(card));
-    if (!legislationId) throw new BadRequestException('Kartın mevzuatı belirlenemedi.');
+    const dayanak = await this.basisOf(card);
+    const pasajli = 'sourceDocumentId' in dayanak;
+    if (!pasajli && !dayanak.legislationId)
+      throw new BadRequestException('Kartın mevzuatı belirlenemedi.');
     const onceki = toJson(card);
     const json: FlashcardJson = {
       kind: dto.kind ?? onceki.kind,
@@ -412,7 +462,7 @@ export class AdminFlashcardsService {
           : (dto.derivedNumbers ?? undefined),
       counterNumbers: dto.counterNumbers ?? onceki.counterNumbers,
     };
-    const byNo = await loadArticleMap(this.prisma, legislationId);
+    const byNo = await loadRefMap(this.prisma, dayanak);
     const v = validateCard(json, 0, byNo);
     if (!v.ok) throw new BadRequestException(['Kart doğrulamayı geçmedi.', ...v.issues].join('\n'));
     const unitId =
@@ -420,7 +470,9 @@ export class AdminFlashcardsService {
         ? (card.summaryUnit?.id ?? null)
         : await this.resolveUnit(dto.unitSlug, card.topic.id);
     const refIds = json.articleRefs.map((n) => byNo.get(n)!.id);
-    const versions = await latestVersionNos(this.prisma, refIds);
+    const versions = pasajli
+      ? new Map<string, number>()
+      : await latestVersionNos(this.prisma, refIds);
     const icerikDegisti =
       json.front !== onceki.front ||
       json.back !== onceki.back ||
@@ -428,6 +480,7 @@ export class AdminFlashcardsService {
       json.articleRefs.join('|') !== onceki.articleRefs.join('|');
     await this.prisma.$transaction(async (tx) => {
       await tx.flashcardArticle.deleteMany({ where: { flashcardId: id } });
+      await tx.flashcardPassage.deleteMany({ where: { flashcardId: id } });
       await tx.flashcard.update({
         where: { id },
         data: {
@@ -449,13 +502,24 @@ export class AdminFlashcardsService {
               ? 'pending_review'
               : card.verificationStatus,
           version: icerikDegisti ? card.version + 1 : card.version,
-          articles: {
-            create: refIds.map((aid, j) => ({
-              lawArticleId: aid,
-              articleVersionNo: versions.get(aid) ?? null,
-              relation: j === 0 ? 'primary' : 'related',
-            })),
-          },
+          ...(pasajli
+            ? {
+                passages: {
+                  create: refIds.map((pid, j) => ({
+                    passageId: pid,
+                    relation: j === 0 ? 'primary' : 'related',
+                  })),
+                },
+              }
+            : {
+                articles: {
+                  create: refIds.map((aid, j) => ({
+                    lawArticleId: aid,
+                    articleVersionNo: versions.get(aid) ?? null,
+                    relation: j === 0 ? 'primary' : 'related',
+                  })),
+                },
+              }),
         },
       });
     });
@@ -676,18 +740,19 @@ export class AdminFlashcardsService {
   ) {
     if (opts.dryRun) {
       const d = data?.deck;
-      if (!d?.legislationSlug || !Array.isArray(data.cards))
+      if (!d || (!d.legislationSlug && !d.sourceSlug) || !Array.isArray(data.cards))
         throw new BadRequestException('Gövde { deck, cards } biçiminde deste JSON olmalı.');
-      const leg = await this.prisma.legislation.findFirst({
-        where: { slug: d.legislationSlug, deletedAt: null },
-        select: { id: true, name: true },
-      });
-      if (!leg) throw new BadRequestException(`Mevzuat bulunamadı: ${d.legislationSlug}`);
-      const byNo = await loadArticleMap(this.prisma, leg.id);
-      const r = validateDeck(data, byNo);
+      let dayanak: Awaited<ReturnType<typeof resolveDeckBasis>>;
+      try {
+        dayanak = await resolveDeckBasis(this.prisma, d);
+      } catch (e) {
+        if (e instanceof FlashcardImportError) throw new BadRequestException(e.message);
+        throw e;
+      }
+      const r = validateDeck(data, dayanak.byNo);
       return {
         dryRun: true as const,
-        legislationName: leg.name,
+        legislationName: dayanak.name,
         count: data.cards.length,
         ok: r.ok,
         fails: r.fails,

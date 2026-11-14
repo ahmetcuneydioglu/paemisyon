@@ -7,6 +7,7 @@
  */
 import type { Prisma, PrismaClient } from '@prisma/client';
 import { loadArticleMap } from '../summaries/ozet-ice-aktar';
+import { loadPassageMap, type RefMap } from './kart-kaynak';
 import { normalizeCounterNumbers } from '../summaries/ozet-dogrulayici';
 import { validateDeck, type DeckValidation, type FlashcardDeckJson } from './kart-dogrulayici';
 
@@ -17,6 +18,8 @@ type Db = Pick<
   | 'lawArticleVersion'
   | 'questionArticle'
   | 'summaryUnit'
+  | 'sourceDocument'
+  | 'sourcePassage'
   | 'topic'
   | 'flashcard'
   | '$transaction'
@@ -56,14 +59,54 @@ export async function latestVersionNos(
   return new Map(g.map((r) => [r.lawArticleId, r._max.versionNo ?? 0]));
 }
 
+export type DeckBasis =
+  | { kind: 'legislation'; id: string; name: string; byNo: RefMap }
+  | { kind: 'source'; id: string; name: string; topicId: string; byNo: RefMap };
+
+/** Destenin dayanağı: mevzuat (madde haritası) ya da kaynak metin (pasaj haritası). */
+export async function resolveDeckBasis(
+  db: Db,
+  d: Pick<FlashcardDeckJson['deck'], 'legislationSlug' | 'sourceSlug'>,
+): Promise<DeckBasis> {
+  if (d.sourceSlug) {
+    const doc = await db.sourceDocument.findFirst({
+      where: { slug: d.sourceSlug, deletedAt: null },
+      select: { id: true, title: true, topicId: true },
+    });
+    if (!doc) throw new FlashcardImportError(`Kaynak metin bulunamadı: ${d.sourceSlug}`);
+    return {
+      kind: 'source',
+      id: doc.id,
+      name: doc.title,
+      topicId: doc.topicId,
+      byNo: await loadPassageMap(db, doc.id),
+    };
+  }
+  const leg = await db.legislation.findFirst({
+    where: { slug: d.legislationSlug, deletedAt: null },
+    select: { id: true, name: true },
+  });
+  if (!leg) throw new FlashcardImportError(`Mevzuat bulunamadı: ${d.legislationSlug}`);
+  return {
+    kind: 'legislation',
+    id: leg.id,
+    name: leg.name,
+    byNo: await loadArticleMap(db, leg.id),
+  };
+}
+
 export async function importDeck(
   db: Db,
   data: FlashcardDeckJson,
   opts: { createdBy?: string | null; replaceExisting?: boolean } = {},
 ): Promise<DeckImportResult> {
   const d = data.deck;
-  if (!d?.topicId || !d.legislationSlug || !d.sourceLabel)
-    throw new FlashcardImportError('deck.topicId, legislationSlug ve sourceLabel zorunlu.');
+  if (!d?.topicId || !d.sourceLabel)
+    throw new FlashcardImportError('deck.topicId ve sourceLabel zorunlu.');
+  if (Boolean(d.legislationSlug) === Boolean(d.sourceSlug))
+    throw new FlashcardImportError(
+      'deck.legislationSlug (mevzuat) ya da deck.sourceSlug (kaynak metin) verilmeli; ikisi birlikte olmaz.',
+    );
   if (!KART_KAYNAK_ONEKLERI.some((p) => d.sourceLabel.startsWith(p)))
     throw new FlashcardImportError(
       `sourceLabel "${KART_KAYNAK_ONEKLERI.join('" ya da "')}" ön ekiyle başlamalı (Doc 56 §8.3).`,
@@ -71,11 +114,7 @@ export async function importDeck(
   if (!Array.isArray(data.cards) || data.cards.length === 0)
     throw new FlashcardImportError('En az bir kart gerekli.');
 
-  const leg = await db.legislation.findFirst({
-    where: { slug: d.legislationSlug, deletedAt: null },
-    select: { id: true },
-  });
-  if (!leg) throw new FlashcardImportError(`Mevzuat bulunamadı: ${d.legislationSlug}`);
+  const dayanak = await resolveDeckBasis(db, d);
   const topic = await db.topic.findFirst({
     where: { id: d.topicId, deletedAt: null },
     select: { id: true },
@@ -93,7 +132,9 @@ export async function importDeck(
     unitId = unit.id;
   }
 
-  const byNo = await loadArticleMap(db, leg.id);
+  if (dayanak.kind === 'source' && dayanak.topicId !== topic.id)
+    throw new FlashcardImportError(`Kaynak metin ${d.sourceSlug} bu konuya ait değil.`);
+  const byNo = dayanak.byNo;
   const validation = validateDeck(data, byNo);
   if (!validation.ok)
     throw new FlashcardImportError(
@@ -104,12 +145,17 @@ export async function importDeck(
   const allRefIds = [...new Set(data.cards.flatMap((c) => c.articleRefs))]
     .map((n) => byNo.get(n)?.id)
     .filter((x): x is string => Boolean(x));
-  const versions = await latestVersionNos(db, allRefIds);
+  // Madde sürümü yalnız mevzuatta vardır; pasaj sürümlenmez (metni değişirse `kaynak-ekle` kartı eskitir).
+  const versions =
+    dayanak.kind === 'legislation'
+      ? await latestVersionNos(db, allRefIds)
+      : new Map<string, number>();
 
   const rows = data.cards.map((c, i) => ({
     topicId: topic.id,
     summaryUnitId: unitId,
-    legislationId: leg.id,
+    legislationId: dayanak.kind === 'legislation' ? dayanak.id : null,
+    sourceDocumentId: dayanak.kind === 'source' ? dayanak.id : null,
     kind: c.kind,
     front: c.front.trim(),
     back: c.back.trim(),
@@ -122,16 +168,27 @@ export async function importDeck(
     sourceLabel: d.sourceLabel,
     generatedBy: d.generatedBy ?? null,
     createdBy: opts.createdBy ?? null,
-    articles: {
-      create: c.articleRefs.map((n, j) => {
-        const id = byNo.get(n)!.id;
-        return {
-          lawArticleId: id,
-          articleVersionNo: versions.get(id) ?? null,
-          relation: j === 0 ? 'primary' : 'related',
-        };
-      }),
-    },
+    ...(dayanak.kind === 'legislation'
+      ? {
+          articles: {
+            create: c.articleRefs.map((n, j) => {
+              const id = byNo.get(n)!.id;
+              return {
+                lawArticleId: id,
+                articleVersionNo: versions.get(id) ?? null,
+                relation: j === 0 ? 'primary' : 'related',
+              };
+            }),
+          },
+        }
+      : {
+          passages: {
+            create: c.articleRefs.map((n, j) => ({
+              passageId: byNo.get(n)!.id,
+              relation: j === 0 ? 'primary' : 'related',
+            })),
+          },
+        }),
   }));
 
   return db.$transaction(

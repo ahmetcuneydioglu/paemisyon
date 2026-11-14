@@ -562,6 +562,15 @@ export default function FlashcardsPage() {
                             md {a.no}
                           </span>
                         ))}
+                        {r.passages.map((p) => (
+                          <span
+                            key={p.no}
+                            className="rounded bg-amber-50 px-1.5 py-0.5 text-xs text-amber-800"
+                            title={p.heading ?? ""}
+                          >
+                            pasaj {p.no}
+                          </span>
+                        ))}
                       </div>
                     </td>
                     <td className="min-w-[14rem] max-w-[18rem] py-2 pr-3 text-xs text-slate-600">

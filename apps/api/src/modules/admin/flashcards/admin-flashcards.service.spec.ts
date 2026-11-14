@@ -20,6 +20,47 @@ const ARTICLES = [
   { id: 'a77', articleNo: '77', title: null, text: 'Seçimler beş yılda bir aynı günde yapılır.' },
 ];
 
+/** Kaynak metin pasajları (Doc 56 §12): mevzuatı olmayan derste kartın dayanağı. */
+const PASSAGES = [
+  {
+    id: 'p1',
+    passageNo: '2.3-01',
+    heading: 'Sivas Kongresi',
+    text: 'Sivas Kongresi 4 Eylül 1919 tarihinde toplandı ve 11 Eylül 1919 tarihine kadar sürdü.',
+  },
+];
+
+/** Kaynak metne dayanan kart: madde yok, pasaj referansı var. */
+const PASAJ_KARTI = (over: Record<string, unknown> = {}) =>
+  CARD({
+    front: 'Sivas Kongresi hangi tarihte toplandı?',
+    back: '4 Eylül 1919.',
+    legislationId: null,
+    legislation: null,
+    sourceDocumentId: 'doc1',
+    sourceDocument: {
+      id: 'doc1',
+      slug: 'inkilap-meb',
+      title: 'İnkılap Tarihi — ders kitabı',
+      label: 'MEB',
+    },
+    sourceLabel: 'AI bilgi kartı — İnkılap Tarihi, kaynak pasajı',
+    articles: [],
+    passages: [
+      {
+        relation: 'primary',
+        passage: {
+          id: 'p1',
+          passageNo: '2.3-01',
+          heading: 'Sivas Kongresi',
+          page: '58',
+          sortKey: 1,
+        },
+      },
+    ],
+    ...over,
+  });
+
 const CARD = (over: Record<string, unknown> = {}) => ({
   id: 'k1',
   kind: 'numeric',
@@ -40,6 +81,8 @@ const CARD = (over: Record<string, unknown> = {}) => ({
   derivedNumbers: null,
   counterNumbers: [],
   legislationId: 'leg1',
+  sourceDocumentId: null,
+  sourceDocument: null,
   verifiedAt: null,
   publishedBy: null,
   createdBy: null,
@@ -54,6 +97,7 @@ const CARD = (over: Record<string, unknown> = {}) => ({
       lawArticle: { id: 'a75', articleNo: '75', title: null, sortKey: 75 },
     },
   ],
+  passages: [] as unknown[],
   ...over,
 });
 
@@ -70,6 +114,13 @@ function setup(card: ReturnType<typeof CARD> | null = CARD()) {
       aggregate: jest.fn().mockResolvedValue({ _max: { sortOrder: 3 } }),
     },
     flashcardArticle: { deleteMany: jest.fn() },
+    flashcardPassage: { deleteMany: jest.fn() },
+    sourcePassage: { findMany: jest.fn().mockResolvedValue(PASSAGES) },
+    sourceDocument: {
+      findFirst: jest
+        .fn()
+        .mockResolvedValue({ id: 'doc1', title: 'İnkılap Tarihi — ders kitabı', topicId: 't1' }),
+    },
     lawArticle: {
       findMany: jest.fn().mockResolvedValue(ARTICLES),
       findUnique: jest.fn().mockResolvedValue({ legislationId: 'leg1' }),
@@ -287,5 +338,77 @@ describe('AdminFlashcardsService — düzenleme ve içe aktarma', () => {
         payload: expect.objectContaining({ outcome: 'resolved', flashcardId: 'k1' }),
       }),
     );
+  });
+});
+
+describe('AdminFlashcardsService — kaynak pasajına dayanan kart (Doc 56 §12)', () => {
+  it('ayrıntı: pasaj metni panelde görünür, doğrulama pasaja karşı yapılır, madde listesi boş', async () => {
+    const { svc, prisma } = setup(PASAJ_KARTI());
+    const d = await svc.detail('k1');
+    expect(d.validation.ok).toBe(true);
+    expect(d.articles).toEqual([]);
+    expect(d.passages).toEqual([
+      expect.objectContaining({ no: '2.3-01', page: '58', text: PASSAGES[0]!.text }),
+    ]);
+    expect(d.source).toMatchObject({ slug: 'inkilap-meb' });
+    expect(prisma.sourcePassage.findMany).toHaveBeenCalledWith(
+      expect.objectContaining({ where: { documentId: 'doc1' } }),
+    );
+    expect(prisma.lawArticle.findMany).not.toHaveBeenCalled();
+  });
+
+  it('pasajda geçmeyen tarih yayın kapısını kapatır', async () => {
+    const { svc } = setup(PASAJ_KARTI({ back: '23 Temmuz 1919.' }));
+    const d = await svc.detail('k1');
+    expect(d.validation.ok).toBe(false);
+    expect(d.gate.canPublish).toBe(false);
+    await expect(svc.publish(admin, 'k1')).rejects.toBeInstanceOf(BadRequestException);
+  });
+
+  it('düzenleme: referans pasaj olarak yeniden yazılır, madde referansı açılmaz', async () => {
+    const { svc, prisma } = setup(PASAJ_KARTI());
+    await svc.update(editor, 'k1', { back: '4 Eylül 1919 tarihinde.' });
+    expect(prisma.flashcardPassage.deleteMany).toHaveBeenCalledWith({
+      where: { flashcardId: 'k1' },
+    });
+    const data = prisma.flashcard.update.mock.calls[0][0].data;
+    expect(data.passages).toEqual({ create: [{ passageId: 'p1', relation: 'primary' }] });
+    expect(data.articles).toBeUndefined();
+    expect(prisma.lawArticleVersion.groupBy).not.toHaveBeenCalled();
+  });
+
+  it('içe aktarma ön izlemesi: sourceSlug destesi pasajlara karşı doğrulanır', async () => {
+    const { svc } = setup();
+    const r = await svc.import(
+      admin,
+      {
+        deck: {
+          topicId: 't1',
+          sourceSlug: 'inkilap-meb',
+          sourceLabel: 'AI bilgi kartı — İnkılap Tarihi',
+        },
+        cards: [
+          {
+            kind: 'numeric',
+            front: 'Sivas Kongresi ne zaman toplandı?',
+            back: '4 Eylül 1919.',
+            articleRefs: ['2.3-01'],
+          },
+          {
+            kind: 'numeric',
+            front: 'Sivas Kongresi ne zaman bitti?',
+            back: '12 Eylül 1919.',
+            articleRefs: ['2.3-01'],
+          },
+        ],
+      },
+      { replace: false, dryRun: true },
+    );
+    expect(r).toMatchObject({
+      dryRun: true,
+      legislationName: 'İnkılap Tarihi — ders kitabı',
+      ok: false,
+      fails: 1,
+    });
   });
 });

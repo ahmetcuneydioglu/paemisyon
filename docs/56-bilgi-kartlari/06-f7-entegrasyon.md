@@ -523,6 +523,9 @@ yönetmeliğinin yürürlüğü, md 5/40 cetvellerindeki eski unvanlar ve md 16�
 
 ## 4. Yapılmayan / sıradaki
 
+- **Mevzuatı olmayan dersler (14 Kas 2026):** kaynak pasajına dayanan kart altyapısı yazıldı, bkz.
+  `07-kaynak-pasaji.md`. Sırada İnkılap Tarihi kaynağının yüklenmesi ve pilot deste; Silah Bilgisi kaynak bekliyor.
+
 - **Cihaz testi (Expo):** simülatörde temel akış doğrulandı; gerçek cihazda jest hissi, SE boyutu ve uçak
   modu kuyruğu kullanıcı göz testine kaldı.
 - **Üretim hattı:** Anayasa 12 + TCK 17 + CMK 15 + polis mevzuatı 97 (§3i–§3n) + polis dışı mevzuat 107 + boşluk 8 (§3o) deste bitti; Doc 53 üniteleri ve platformdaki bütün polis mevzuatı kartlandı (7245, 6458, Polis Merkezi Amirliği Yön. platformda yok).
