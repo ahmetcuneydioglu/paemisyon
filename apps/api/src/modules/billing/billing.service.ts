@@ -9,6 +9,9 @@ import { UserSyncService } from '../auth/user-sync.service';
  * SUNUCU doğrular, plana eşler, Subscription + Entitlement'ı günceller. Premium kararı
  * hep buradan türer (istemci "premium'um" diyemez).
  */
+/** Doğrulamanın kaynağı (istemci); yalnız "auto" hesaplar arası taşımayı engeller. */
+export type VerifySource = 'purchase' | 'restore' | 'auto';
+
 @Injectable()
 export class BillingService {
   private readonly logger = new Logger(BillingService.name);
@@ -39,9 +42,9 @@ export class BillingService {
   }
 
   /** Apple StoreKit 2 imzalı işlemini doğrula ve premium'u ver. */
-  async verifyApple(userId: string, transactionJws: string) {
+  async verifyApple(userId: string, transactionJws: string, source?: VerifySource) {
     const tx = await this.apple.verify(transactionJws);
-    return this.grant(userId, {
+    return this.grant(userId, source, {
       provider: 'apple',
       productId: tx.productId,
       transactionId: tx.originalTransactionId,
@@ -57,7 +60,12 @@ export class BillingService {
    * Abonelik mi tek seferlik ürün mü olduğunu PLAN belirler (istemci değil):
    * `period` lifetime ise products, değilse subscriptionsv2 uçları sorulur.
    */
-  async verifyGoogle(userId: string, purchaseToken: string, productId?: string) {
+  async verifyGoogle(
+    userId: string,
+    purchaseToken: string,
+    productId?: string,
+    source?: VerifySource,
+  ) {
     if (!productId) {
       throw new BadRequestException('Google doğrulaması için productId gerekli.');
     }
@@ -67,7 +75,7 @@ export class BillingService {
         ? await this.google.verifyProduct(productId, purchaseToken)
         : await this.google.verifySubscription(purchaseToken);
 
-    return this.grant(userId, {
+    return this.grant(userId, source, {
       provider: 'google',
       // Abonelikte ürün kimliği lineItems'tan gelir; boşsa istemcininkine düş.
       productId: purchase.productId || productId,
@@ -101,6 +109,7 @@ export class BillingService {
    */
   private async grant(
     userId: string,
+    source: VerifySource | undefined,
     tx: {
       provider: 'apple' | 'google';
       productId: string;
@@ -124,6 +133,21 @@ export class BillingService {
     // hesaba TAŞINIR; eski hesabın hakkı aşağıda kalan kaynaklarından yeniden
     // hesaplanır. Aksi halde 1 ödeme = N hesap premium açığı doğardı.
     const previousOwner = existing && existing.userId !== userId ? existing.userId : null;
+
+    // Otomatik eşitleme başka hesabın aboneliğini devralmaz (bulgu 9): kullanıcı açıkça
+    // "Geri yükle"ye basmadıkça ya da satın almadıkça sahiplik değişmez.
+    if (previousOwner && source === 'auto') {
+      this.logger.log(
+        `Otomatik eşitleme başka hesaba bağlı işlemi taşımadı (tx=${tx.transactionId.slice(0, 12)}…).`,
+      );
+      return {
+        isPremium: false,
+        validUntil: tx.expiresDate,
+        plan: plan.key,
+        environment: tx.environment,
+        ownedByAnotherAccount: true,
+      };
+    }
 
     if (existing) {
       await this.prisma.subscription.update({

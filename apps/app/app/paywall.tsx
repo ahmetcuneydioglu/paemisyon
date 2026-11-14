@@ -56,7 +56,7 @@ export default function PaywallScreen() {
           Alert.alert("Premium etkin 🎉", "Koçun tam kapasitede.", [{ text: "Tamam", onPress: kapat }]);
         } else if (e.type === "verified") Alert.alert("Bu hesapta aktif bir premium bulunamadı.");
         else if (e.type === "pending") Alert.alert("Ödemen onay bekliyor", "Tamamlanınca premium kendiliğinden açılır.");
-        else if (e.type === "error") Alert.alert("Satın alma tamamlanamadı", e.message);
+        else if (e.type === "error") Alert.alert(e.retrying ? "Doğrulama sürüyor" : "Satın alma tamamlanamadı", e.message);
       }),
     [kapat],
   );

@@ -42,6 +42,9 @@ const config: ExpoConfig = {
       CFBundleDevelopmentRegion: "tr",
       CFBundleLocalizations: ["tr"],
       CFBundleAllowMixedLocalizations: true,
+      // Paylaşım sayfasındaki "Görseli Kaydet" Fotoğraflar'a yazar; metin yoksa iOS uygulamayı
+      // sonlandırır (Fable denetimi, 15 Kas 2026). Yalnız ekleme izni; arşiv okunmaz.
+      NSPhotoLibraryAddUsageDescription: "Paylaşım kartını Fotoğraflar'a kaydedebilmen için.",
     },
   },
   android: {

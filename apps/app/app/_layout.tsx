@@ -105,6 +105,12 @@ function RootNavigator() {
     if (auth.status === "loading" || introSeen === null) return;
     // Bileşen galerisi yalnız geliştirme derlemesinde ve oturumsuz da açılır (göz testi).
     if (__DEV__ && group === "galeri") return;
+    // Yayın derlemesinde galeri yoktur: derin bağlantıyla (paemisyon://galeri) gelinirse
+    // sahte verili ekranlar görünmesin (Fable denetimi, 15 Kas 2026).
+    if (!__DEV__ && group === "galeri") {
+      router.replace(auth.status === "signedIn" ? "/(tabs)" : "/(auth)/login");
+      return;
+    }
     if (auth.status === "signedOut") {
       if (!introSeen && group !== "tanitim") router.replace("/tanitim");
       else if (introSeen && group !== "(auth)") router.replace("/(auth)/login");

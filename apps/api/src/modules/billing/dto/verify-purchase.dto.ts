@@ -21,4 +21,14 @@ export class VerifyPurchaseDto {
   @IsOptional()
   @IsString()
   productId?: string;
+
+  /**
+   * Doğrulamanın kaynağı (2.0 istemcisi gönderir). "auto" = açılışta/arka planda eşitleme:
+   * işlem başka hesaba bağlıysa abonelik TAŞINMAZ (aynı Apple kimlikli cihazda başka hesapla
+   * girmek aboneliği sessizce devralıyordu; Fable denetimi bulgu 9). Taşıma yalnız "purchase"
+   * ve "restore"da. Alan yoksa (1.x ve eski 2.0 sürümleri) eski davranış: taşınır.
+   */
+  @IsOptional()
+  @IsIn(['purchase', 'restore', 'auto'])
+  source?: 'purchase' | 'restore' | 'auto';
 }

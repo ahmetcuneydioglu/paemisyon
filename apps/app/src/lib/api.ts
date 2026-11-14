@@ -1,11 +1,12 @@
+import { isAuthRetryableFetchError } from "@supabase/supabase-js";
 import { env } from "./env";
 import { Platform } from "react-native";
 import { supabase } from "./supabase";
 
 /**
  * NestJS API istemcisi (Doc 7 zarfı: {data} / {error:{code,message,details,trace_id}}).
- * Flutter'daki davranış korunur (Doc 49 denetimi §10): Bearer token eklenir; 401 gelirse oturum
- * bir kez tazelenip istek yinelenir, yine 401 ise oturum kapatılır.
+ * Bearer token eklenir; 401 gelirse oturum bir kez tazelenip istek yinelenir. Oturum yalnız taze
+ * token da reddedilirse ya da yenileme jetonu geçersizse kapanır; ağ yüzünden tazelenemezse korunur.
  */
 export class ApiError extends Error {
   constructor(
@@ -31,6 +32,16 @@ export class NetworkError extends Error {
 type Envelope<T> = { data?: T; error?: { code?: string; message?: string; details?: unknown; trace_id?: string | null } };
 
 export type ApiInit = Omit<RequestInit, "body"> & { body?: unknown; auth?: boolean };
+
+/** Ağ/zaman aşımı kaynaklı tazeleme hatası mı (oturum hâlâ geçerli olabilir)? */
+function isRetryableAuthError(error: unknown): boolean {
+  return isAuthRetryableFetchError(error) || (error instanceof Error && /network|fetch|timeout/i.test(error.message));
+}
+
+/** Sunucu oturumu reddetti: yerel oturum kapanır (yönlendirme kapısı girişe götürür). */
+async function signOutLocally(): Promise<void> {
+  await supabase.auth.signOut({ scope: "local" }).catch(() => {});
+}
 
 async function accessToken(): Promise<string | null> {
   const { data } = await supabase.auth.getSession();
@@ -71,10 +82,15 @@ export async function api<T>(path: string, init: ApiInit = {}): Promise<T> {
     if (!error && data.session) {
       token = data.session.access_token;
       res = await send(path, init, token);
+      // Taze token da reddedildi: sunucu yalnız token'ın KENDİSİ geçersizse 401 döner
+      // (altyapı arızası 503, 15 Kas 2026) → oturum gerçekten bitmiş.
+      if (res.status === 401) await signOutLocally();
+    } else if (error && !isRetryableAuthError(error)) {
+      // Yenileme jetonu iptal edilmiş/süresi dolmuş: oturum bitti.
+      await signOutLocally();
     }
-    if (res.status === 401) {
-      await supabase.auth.signOut();
-    }
+    // Tazeleme ağ yüzünden olmadıysa (çevrimdışı, Supabase'e erişilemedi) oturum KORUNUR:
+    // eskiden ilk 401 + başarısız tazeleme kullanıcıyı çıkarıyordu (Fable denetimi bulgu 2).
   }
 
   const json = (await res.json().catch(() => null)) as Envelope<T> | null;

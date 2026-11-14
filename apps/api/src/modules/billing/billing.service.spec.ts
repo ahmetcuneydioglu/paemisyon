@@ -209,6 +209,84 @@ describe('BillingService.verifyApple — taşıma ve manuel hak', () => {
   });
 });
 
+describe('BillingService.verifyApple — otomatik eşitleme taşımaz (bulgu 9)', () => {
+  const tx = {
+    productId: 'p',
+    originalTransactionId: 'tx1',
+    expiresDate: days(10),
+    revocationDate: null,
+    environment: 'Sandbox',
+  };
+
+  it('source=auto ve işlem başka hesaba bağlı → abonelik ve haklar değişmez', async () => {
+    const { svc, db, apple } = setup({
+      ent: { userId: 'A', isPremium: true, validUntil: days(10), sourceSubscriptionId: 's1' },
+      subs: [
+        {
+          id: 's1',
+          userId: 'A',
+          status: 'active',
+          currentPeriodEnd: days(10),
+          originalTransactionId: 'tx1',
+        },
+      ],
+    });
+    apple.verify.mockResolvedValue(tx);
+    const r = await svc.verifyApple('B', 'jws', 'auto');
+    expect(r).toMatchObject({ isPremium: false, ownedByAnotherAccount: true });
+    expect(db.subs[0].userId).toBe('A');
+    expect(db.entOf('A')).toMatchObject({ isPremium: true, sourceSubscriptionId: 's1' });
+    expect(db.entOf('B')).toBeNull();
+  });
+
+  it('source=restore → taşınır; source yok (1.x) → taşınır', async () => {
+    for (const source of ['restore', undefined] as const) {
+      const { svc, db, apple } = setup({
+        subs: [
+          {
+            id: 's1',
+            userId: 'A',
+            status: 'active',
+            currentPeriodEnd: days(10),
+            originalTransactionId: 'tx1',
+          },
+        ],
+      });
+      apple.verify.mockResolvedValue(tx);
+      jest.useFakeTimers().setSystemTime(NOW);
+      try {
+        await svc.verifyApple('B', 'jws', source);
+      } finally {
+        jest.useRealTimers();
+      }
+      expect(db.subs[0].userId).toBe('B');
+    }
+  });
+
+  it('source=auto ve işlem zaten bu hesabın → normal yenilenir', async () => {
+    const { svc, db, apple } = setup({
+      subs: [
+        {
+          id: 's1',
+          userId: 'B',
+          status: 'expired',
+          currentPeriodEnd: days(-1),
+          originalTransactionId: 'tx1',
+        },
+      ],
+    });
+    apple.verify.mockResolvedValue(tx);
+    jest.useFakeTimers().setSystemTime(NOW);
+    try {
+      const r = await svc.verifyApple('B', 'jws', 'auto');
+      expect(r.isPremium).toBe(true);
+    } finally {
+      jest.useRealTimers();
+    }
+    expect(db.subs[0].status).toBe('active');
+  });
+});
+
 describe('BillingService.handleGoogleNotification — bekleyen ödeme', () => {
   it('Play beklemede (409) → 200 döner, abonelik değişmez', async () => {
     const { svc, db, google } = setup({

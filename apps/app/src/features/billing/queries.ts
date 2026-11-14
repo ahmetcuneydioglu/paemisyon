@@ -4,7 +4,8 @@ import { api } from "@/lib/api";
 /**
  * Billing (billing.controller). Planlar ve mağaza ürün kimlikleri SUNUCUDAN (sabit kodlanmaz);
  * doğrulama `POST /billing/verify` — Apple için StoreKit 2 imzalı işlem (JWS). Yalnız 400/422
- * kalıcı hata; ağ/401/403/5xx geçici (işlem açık bırakılır, senkron yeniden dener).
+ * kalıcı hata; 409 ödeme beklemede; ağ/5xx geçici (işlem açık bırakılır, senkron yeniden dener).
+ * `source`: "auto" doğrulama aboneliği başka hesaba taşımaz (yalnız satın alma ve geri yükleme).
  */
 export interface BillingPlan {
   key: string;
@@ -31,7 +32,7 @@ export function usePlans() {
 }
 
 export const billingApi = {
-  verify: (body: { platform: "apple" | "google"; transactionJws: string; productId?: string }) => api<VerifyResult>("/billing/verify", { method: "POST", body }),
+  verify: (body: { platform: "apple" | "google"; transactionJws: string; productId?: string; source?: "purchase" | "restore" | "auto" }) => api<VerifyResult>("/billing/verify", { method: "POST", body }),
 };
 
 export const PERIOD_LABEL: Record<BillingPlan["period"], string> = { none: "", monthly: "/ ay", quarterly: "/ 3 ay", yearly: "/ yıl", lifetime: "tek ödeme" };

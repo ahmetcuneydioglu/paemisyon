@@ -19,7 +19,7 @@ export class BillingController {
   @Post('verify')
   verify(@CurrentUser() user: AuthenticatedUser, @Body() dto: VerifyPurchaseDto) {
     return dto.platform === 'apple'
-      ? this.billing.verifyApple(user.id, dto.transactionJws)
-      : this.billing.verifyGoogle(user.id, dto.transactionJws, dto.productId);
+      ? this.billing.verifyApple(user.id, dto.transactionJws, dto.source)
+      : this.billing.verifyGoogle(user.id, dto.transactionJws, dto.productId, dto.source);
   }
 }
