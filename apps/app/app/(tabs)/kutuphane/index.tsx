@@ -80,7 +80,7 @@ export default function CalisScreen() {
                 <ShortcutButton
                   variant="primary"
                   icon={BookOpen}
-                  label={`Kart tekrarı · ${d.totals.flashcardsDue}`}
+                  label={`Kart tekrarı · ${d.totals.flashcardsDue.toLocaleString("tr-TR")}`}
                   onPress={() => router.push({ pathname: "/kartlar", params: { mode: "due", source: "study_hub", resume: "", title: "Kart tekrarı" } })}
                 />
               ) : null}
@@ -93,7 +93,7 @@ export default function CalisScreen() {
                 />
                 <ShortcutButton
                   icon={RotateCcw}
-                  label={d.totals.wrongCount > 0 ? `Yanlışlar · ${d.totals.wrongCount}` : d.totals.favoriteCount > 0 ? `Favoriler · ${d.totals.favoriteCount}` : "Yanlışlarım"}
+                  label={d.totals.wrongCount > 0 ? `Yanlışlar · ${d.totals.wrongCount.toLocaleString("tr-TR")}` : d.totals.favoriteCount > 0 ? `Favoriler · ${d.totals.favoriteCount.toLocaleString("tr-TR")}` : "Yanlışlarım"}
                   onPress={() => router.push({ pathname: "/(tabs)/kutuphane/tekrar", params: { sekme: d.totals.wrongCount > 0 || d.totals.favoriteCount === 0 ? "yanlislar" : "favoriler" } })}
                   style={tekSutun ? undefined : { flex: 1 }}
                 />
