@@ -1,0 +1,633 @@
+{
+  "unit": {
+    "slug": "tck-cezanin-belirlenmesi-ve-dusme-nedenleri",
+    "legislationSlug": "turk-ceza-kanunu",
+    "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+    "title": "Cezanın belirlenmesi, dava ve cezanın düşmesi",
+    "subtitle": "Temel ceza, takdiri indirim, mahsup, ölüm ve af, zamanaşımı, şikâyet ve önödeme",
+    "articleFrom": "61",
+    "articleTo": "75",
+    "readingMinutes": 14,
+    "sourceLabel": "AI özeti — Türk Ceza Kanunu, md 61–75",
+    "articleNos": [
+      "61",
+      "62",
+      "63",
+      "64",
+      "65",
+      "66",
+      "67",
+      "68",
+      "69",
+      "70",
+      "71",
+      "72",
+      "73",
+      "74",
+      "75"
+    ],
+    "generatedBy": "claude-opus-5-5 (ozet-uret.ts)"
+  },
+  "blocks": [
+    {
+      "type": "concept",
+      "title": "Önce temel ceza, sonra sonuç ceza",
+      "articleRefs": [
+        "61"
+      ],
+      "body": "Hâkim cezayı adım adım kurar. Önce suçun kanuni tanımındaki cezanın alt ve üst sınırı arasında temel cezayı belirler. Sonra bu ceza üzerinden artırma ve indirmeleri belli bir sırayla uygular ve sonuç cezaya ulaşır. Sınavın en sevdiği soru tam bu ayrımda saklı: hangi ölçüt temel cezada kullanılır, hangisi sonradan devreye girer? Bu ayrımı oturtursan ünitenin ilk yarısı kendiliğinden çözülür."
+    },
+    {
+      "type": "rule",
+      "title": "Temel cezanın ölçütleri",
+      "articleRefs": [
+        "61"
+      ],
+      "body": "Hâkim somut olayda şunları göz önünde bulundurur ve temel cezayı **alt ve üst sınır arasında** belirler (md 61):\n- Suçun işleniş biçimi\n- Suçun işlenmesinde kullanılan araçlar\n- Suçun işlendiği zaman ve yer\n- Suçun konusunun önem ve değeri\n- Meydana gelen zarar veya tehlikenin ağırlığı\n- Failin kast veya taksire dayalı kusurunun ağırlığı\n- Failin güttüğü amaç ve saik\n\n**İstisna:** Bu hususlar suçun unsurunu oluşturuyorsa temel cezanın belirlenmesinde ayrıca göz önünde bulundurulmaz.\n\n**Olası kast ve bilinçli taksir:** Bunlar nedeniyle yapılacak indirim veya artırım, bu şekilde belirlenen ceza üzerinden yapılır."
+    },
+    {
+      "type": "rule",
+      "title": "Sonuç cezaya giden sıra",
+      "articleRefs": [
+        "61"
+      ],
+      "body": "**Nitelikli haller:** Suçun temel şekline göre daha ağır veya daha az cezayı gerektiren birden fazla nitelikli hal gerçekleşmişse temel cezada **önce artırma, sonra indirme** yapılır.\n\nBelirlenen ceza üzerinden **sırasıyla** şu hükümler uygulanır:\n1. Teşebbüs\n2. İştirak\n3. Zincirleme suç\n4. Haksız tahrik\n5. Yaş küçüklüğü\n6. Akıl hastalığı\n7. Cezada indirim yapılmasını gerektiren şahsi sebepler\n8. Takdiri indirim nedenleri\n\nSıranın başında **teşebbüs**, sonunda **takdiri indirim** vardır. Sonuç ceza böyle belirlenir."
+    },
+    {
+      "type": "rule",
+      "title": "Hesap kuralları",
+      "articleRefs": [
+        "61"
+      ],
+      "body": "- Hapis cezasının süresi **gün, ay ve yıl** hesabıyla belirlenir: gün 24 saat, ay 30 gündür; yıl resmi takvime göre hesap edilir.\n- Hapis cezasında günün, adlî para cezasında Türk Lirasının **artakalanı** hesaba katılmaz ve infaz edilmez.\n- Süreli hapis cezasını gerektiren suçta sonuç ceza **30 yıldan fazla olamaz**.\n- Adlî para cezasında artırma ve indirimler **gün üzerinden** yapılır; ceza, sonuç gün ile kişinin bir gün karşılığı ödeyebileceği miktarın çarpılmasıyla bulunur.\n- Adlî para cezası seçimlik öngörülmüşse gün biriminin alt sınırı o suçtaki hapis cezasının alt sınırından az, üst sınırı hapis cezasının üst sınırından fazla olamaz.\n- **Kanunilik:** Kanunda açıkça yazılmış olmadıkça cezalar ne artırılabilir, ne eksiltilebilir, ne de değiştirilebilir."
+    },
+    {
+      "type": "trap",
+      "title": "Sayılarda tuzak: 28 gün, 730 gün, 36 yıl",
+      "articleRefs": [
+        "61"
+      ],
+      "counterNumbers": [
+        28,
+        730,
+        36
+      ],
+      "body": "Şıklarda ay bazen 28 gün diye geçer. Kanunda **ay 30 gündür**. Seçimlik adlî para cezası için '730 günü geçemez' gibi sabit bir sınır da yok: gün birimi, o suçtaki **hapis cezasının alt ve üst sınırına** bağlanır. Süreli hapiste sonuç ceza için 36 yıl gibi bir tavan görürsen ele, çünkü tavan **30 yıl**. Artakalan kuralına da dikkat et: hapiste **günün**, adlî para cezasında **Türk Lirasının** artakalanı infaz edilmez."
+    },
+    {
+      "type": "rule",
+      "title": "Takdiri indirim",
+      "articleRefs": [
+        "62"
+      ],
+      "body": "Fail yararına cezayı hafifletecek takdiri nedenler varsa:\n- Ağırlaştırılmış müebbet hapis yerine **müebbet hapis**,\n- Müebbet hapis yerine **25 yıl hapis**,\n- Diğer cezalarda **altıda birine kadar** indirim.\n\n**Göz önünde bulundurulabilecekler:** failin geçmişi, sosyal ilişkileri, fiilden sonraki ve yargılama sürecindeki pişmanlığını gösteren davranışları, cezanın failin geleceği üzerindeki olası etkileri.\n\n**Dikkate alınmaz:** failin duruşmadaki mahkemeyi etkilemeye yönelik şeklî tutum ve davranışları.\n\nTakdiri indirim nedenleri kararda **gerekçeleriyle** gösterilir."
+    },
+    {
+      "type": "trap",
+      "title": "Temel ceza ölçütü mü, takdiri indirim mi?",
+      "articleRefs": [
+        "61",
+        "62"
+      ],
+      "body": "En çok düşülen çukur bu. **Failin geçmişi, sosyal ilişkileri, pişmanlığı ve cezanın geleceğine etkisi** takdiri indirimin malzemesidir. Bunlar temel cezanın ölçütleri arasında yok. Tersine **amaç ve saik, işleniş biçimi, kusurun ağırlığı** temel cezaya aittir ve takdiri indirim sayımında geçmez. Haksız tahrik ise bunların dışında kalır: temel ceza belirlendikten sonra sonuç cezaya giderken uygulanan indirimler arasındadır. Pişmanlıkta da ince ayrım var. Kanun fiilden sonraki ve yargılama sürecindeki **pişmanlığını gösteren davranışları** sayar; duruşmada mahkemeyi etkilemeye yönelik şeklî tavırlar sayılmaz."
+    },
+    {
+      "type": "rule",
+      "title": "Mahsup",
+      "articleRefs": [
+        "63"
+      ],
+      "body": "**Kural:** Hüküm kesinleşmeden önce gerçekleşen ve şahsi hürriyeti sınırlama sonucunu doğuran bütün haller nedeniyle geçirilmiş süreler, hükmolunan hapis cezasından indirilir.\n\n**Adlî para cezasında:** Her gün **500 Türk Lirası** sayılarak cezadan indirim yapılır.\n\n**Örnek hesap:** Hürriyeti sınırlanan her gün 500 Türk Lirası sayılır; bu tutar hükmolunan adlî para cezasından indirilir."
+    },
+    {
+      "type": "numbers",
+      "title": "Ceza hesabının sayıları",
+      "articleRefs": [
+        "61",
+        "62",
+        "63"
+      ],
+      "rows": [
+        {
+          "label": "Gün",
+          "value": "24 saat",
+          "refs": [
+            "61"
+          ]
+        },
+        {
+          "label": "Ay",
+          "value": "30 gün",
+          "refs": [
+            "61"
+          ]
+        },
+        {
+          "label": "Yıl",
+          "value": "Resmi takvime göre",
+          "refs": [
+            "61"
+          ]
+        },
+        {
+          "label": "Süreli hapiste sonuç cezanın üst sınırı",
+          "value": "30 yıl",
+          "refs": [
+            "61"
+          ]
+        },
+        {
+          "label": "Takdiri indirim: ağırlaştırılmış müebbet yerine",
+          "value": "Müebbet hapis",
+          "refs": [
+            "62"
+          ]
+        },
+        {
+          "label": "Takdiri indirim: müebbet yerine",
+          "value": "25 yıl hapis",
+          "refs": [
+            "62"
+          ]
+        },
+        {
+          "label": "Takdiri indirim: diğer cezalar",
+          "value": "Altıda birine kadar",
+          "refs": [
+            "62"
+          ]
+        },
+        {
+          "label": "Mahsup: adlî para cezasında gün karşılığı",
+          "value": "500 TL",
+          "refs": [
+            "63"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "concept",
+      "title": "Davanın düşmesi ile cezanın düşmesi ayrı şeyler",
+      "articleRefs": [
+        "64",
+        "65",
+        "66",
+        "73",
+        "75"
+      ],
+      "body": "Kanun bazı olaylarda kamu davasını, bazılarında hükmolunan cezayı ortadan kaldırır. Sanığın ölümü, genel af, dava zamanaşımı ve şikâyetten vazgeçme kamu davasını düşürür. Önödeme ise davanın hiç açılmamasını sağlar ya da açılmış davayı düşürür. Hükümlünün ölümü artık davayla değil cezayla ilgilidir. Özel af da hükmolunan hapis cezasının infazına dokunur. Soruda 'sanık' mı 'hükümlü' mü yazıyor, önce ona bak: bu kelime çoğu şıkkı eler."
+    },
+    {
+      "type": "rule",
+      "title": "Ölüm ve af",
+      "articleRefs": [
+        "64",
+        "65"
+      ],
+      "body": "**Sanığın ölümü:** Kamu davasının düşürülmesine karar verilir. Ancak niteliği itibarıyla müsadereye tabi eşya ve maddi menfaatler hakkında davaya devam edilerek müsadereye hükmolunabilir.\n\n**Hükümlünün ölümü:** Hapis ve henüz infaz edilmemiş adlî para cezalarını ortadan kaldırır. Müsadereye ve yargılama giderlerine ilişkin olup ölümden önce kesinleşmiş hüküm infaz olunur.\n\n**Genel af:** Kamu davası düşer. Hükmolunan cezalar **bütün neticeleriyle** ortadan kalkar.\n\n**Özel af:** Hapis cezasının infaz kurumunda çektirilmesine son verilebilir, çektirilecek süresi kısaltılabilir ya da ceza adlî para cezasına çevrilebilir. Cezaya bağlı olan veya hükümde belirtilen **hak yoksunlukları özel affa rağmen etkisini devam ettirir**."
+    },
+    {
+      "type": "trap",
+      "title": "Af şıklarında klasik hatalar",
+      "articleRefs": [
+        "65",
+        "74"
+      ],
+      "body": "**'Genel af hâlinde yargılama giderleri iade edilir'** yanlış. Kanun genel afta yargılama giderlerinin **istenemeyeceğini** söyler, iadeden söz etmez. Genel af, özel af ve şikâyetten vazgeçme; müsadere olunan şeylerin ya da **ödenen adlî para cezasının geri alınmasını gerektirmez**.\n\n**'Özel af hak yoksunluklarını kaldırır'** yanlış. Yoksunluklar özel affa rağmen etkisini sürdürür.\n\n**'Genel af yalnızca kamu davasını düşürür'** eksik. Hükmolunan cezalar da bütün neticeleriyle ortadan kalkar.\n\nSon olarak düşmenin sınırına bak. Kamu davasının düşmesi, malların geri alınması ve zararın tazmini için açılan şahsi hak davasını etkilemez. Cezanın düşmesi de şahsi haklar, tazminat ve yargılama giderlerine ilişkin hükümlere dokunmaz."
+    },
+    {
+      "type": "rule",
+      "title": "Dava zamanaşımı",
+      "articleRefs": [
+        "66"
+      ],
+      "body": "Kanunda başka türlü yazılmış haller dışında kamu davası, suçun cezasına göre belirlenen sürenin geçmesiyle düşer. Süreler tablodadır.\n\n- **Yaş:** Fiil sırasında 12 yaşını doldurmuş, 15 yaşını doldurmamış olanlarda sürelerin **yarısı** geçince dava düşer. 15 yaşını doldurmuş, 18 yaşını doldurmamış olanlarda **üçte ikisi** geçince dava düşer.\n- **Hangi ceza esas?** Suçun kanundaki cezasının **yukarı sınırı** esas alınır. Seçimlik cezalarda **hapis cezası** esas alınır. Dosyadaki delillere göre suçun daha ağır cezayı gerektiren **nitelikli halleri** de göz önünde bulundurulur.\n- **Tekrar yargılama:** Süre, talebin mahkemece kabul edildiği tarihten itibaren yeni baştan işler.\n- **Başlangıç:** Tamamlanmış suçta suçun işlendiği gündür. Teşebbüste son hareketin yapıldığı gündür. Kesintisiz suçta kesintinin gerçekleştiği gündür. Zincirleme suçta son suçun işlendiği gündür. Çocuklara karşı üstsoy veya üzerlerinde hüküm ve nüfuzu olanlarca işlenen suçta çocuğun 18 yaşını bitirdiği gündür.\n- **Yurt dışı:** İkinci Kitabın Dördüncü Kısmındaki ağırlaştırılmış müebbet, müebbet veya on yıldan fazla hapis gerektiren suçlar yurt dışında işlenirse dava zamanaşımı uygulanmaz."
+    },
+    {
+      "type": "trap",
+      "title": "Zamanaşımı hangi gün başlar?",
+      "articleRefs": [
+        "66"
+      ],
+      "body": "Soru kökünde 'kesintisiz' varsa cevap **kesintinin gerçekleştiği gün**dür. 'Zincirleme' gördüysen cevap **son suçun işlendiği gün**dür; zincirdeki herhangi suçun bitimi değildir. Teşebbüste **son hareketin yapıldığı gün** esas alınır. Çocuğa karşı üstsoyun ya da üzerinde hüküm ve nüfuzu olanın işlediği suçta ne suç günü ne de çocuğun öğrendiği gün geçerlidir: süre **çocuğun 18 yaşını bitirdiği gün** başlar. 'Her durumda temel şekil esas alınır' cümlesine de kanma. Delillere göre daha ağır cezayı gerektiren nitelikli haller de göz önünde bulundurulur. Yurt dışı istisnası için suçun hem Dördüncü Kısımda yer alması hem de ağırlaştırılmış müebbet, müebbet ya da on yıldan fazla hapis gerektirmesi gerekir."
+    },
+    {
+      "type": "rule",
+      "title": "Dava zamanaşımının durması ve kesilmesi",
+      "articleRefs": [
+        "67"
+      ],
+      "body": "**Dava zamanaşımı durur:**\n- Soruşturma ve kovuşturma izin veya karar alınmasına bağlıysa,\n- Diğer bir mercide çözülmesi gereken meselenin sonucuna bağlıysa,\n- Fail hakkında kanun gereğince kaçak olduğuna karar verilmişse; bu durumda karar kaldırılıncaya kadar durur.\n\n**Dava zamanaşımı kesilir:**\n- Şüpheli veya sanıklardan birinin **savcı huzurunda ifadesinin alınması veya sorguya çekilmesi**,\n- Şüpheli veya sanıklardan biri hakkında **tutuklama kararı** verilmesi,\n- Suçla ilgili **iddianame** düzenlenmesi,\n- Sanıklardan bir kısmı hakkında da olsa **mahkûmiyet kararı** verilmesi.\n\n**Kesilmenin sonucu:** Süre yeniden işlemeye başlar. Birden fazla kesme nedeni varsa süre **son** kesme nedeninin gerçekleştiği tarihten itibaren işler. Kesilme halinde süre, Kanunda belirlenen sürenin **en fazla yarısına kadar** uzar."
+    },
+    {
+      "type": "trap",
+      "title": "Durduran mı, kesen mi?",
+      "articleRefs": [
+        "67",
+        "71"
+      ],
+      "body": "İzin veya karar beklemek zamanaşımını **durdurur**, kesmez. Şıkta 'izin alınması' kesme nedeni gibi sunulursa ele. Dava zamanaşımını kesen işlemler şunlardır: savcı huzurunda ifade alınması, sorguya çekilme, tutuklama kararı, iddianame ve mahkûmiyet kararı. Listede olmayan işlemleri buraya ekleme. Bir başka tuzak daha var. **Hükümlüye infaz için yapılan tebligat, hükümlünün yakalanması** ve mahkûmun üst sınırı iki yıldan fazla hapis gerektiren kasıtlı suç işlemesi **ceza zamanaşımını** keser, dava zamanaşımını değil. Kesme nedeni birden fazlaysa süre **son** nedenden itibaren yeniden işler."
+    },
+    {
+      "type": "rule",
+      "title": "Ceza zamanaşımı ve bağlı kurallar",
+      "articleRefs": [
+        "68",
+        "69",
+        "70",
+        "71",
+        "72"
+      ],
+      "body": "Kesinleşmiş ceza, kanundaki sürelerin geçmesiyle **infaz edilmez**. Süreler tablodadır.\n- **Yaş:** Fiil sırasında 12 yaşını doldurmuş, 15 yaşını doldurmamış olanlarda sürelerin yarısı uygulanır. 15 yaşını doldurmuş, 18 yaşını doldurmamış olanlarda üçte ikisi uygulanır.\n- **Yurt dışı:** İkinci Kitabın Dördüncü Kısmındaki suçlar yurt dışında işlenmişse, bunlar için verilen ağırlaştırılmış müebbet, müebbet veya on yıldan fazla hapis cezalarında zamanaşımı uygulanmaz.\n- **Farklı türde cezalar** içeren hüküm, en ağır ceza için konulan sürenin geçmesiyle infaz edilmez.\n- **Başlangıç:** Süre, hükmün kesinleştiği ya da infazın herhangi bir suretle kesintiye uğradığı gün başlar. Süre **kalan ceza** miktarı üzerinden hesaplanır.\n- **Hak yoksunlukları:** Ceza zamanaşımı doluncaya kadar devam eder.\n- **Müsadere hükmü:** Kesinleşmeden itibaren 20 yıl geçtikten sonra infaz edilmez.\n- **Kesilme:** İnfaz için yetkili mercinin hükümlüye kanuna göre yaptığı tebligat veya bu maksatla yakalanma ceza zamanaşımını keser. Mahkûmun üst sınırı iki yıldan fazla hapis gerektiren kasıtlı suç işlemesi de keser.\n- **Uygulama:** Dava ve ceza zamanaşımı re'sen uygulanır. Şüpheli, sanık ve hükümlü bundan vazgeçemez."
+    },
+    {
+      "type": "rule",
+      "title": "Şikâyet",
+      "articleRefs": [
+        "73"
+      ],
+      "body": "- Şikâyete bağlı suçta yetkili kimse **6 ay** içinde şikâyette bulunmazsa soruşturma ve kovuşturma yapılamaz.\n- Süre, şikâyet hakkı olanın **fiili ve failin kim olduğunu** bildiği veya öğrendiği günden başlar ve zamanaşımı süresini geçemez.\n- Şikâyete bağlı **hakaret** suçunda şikâyet süresi, her ne suretle olursa olsun fiilin gerçekleştiği tarihten itibaren **2 yılı** geçemez.\n- Şikâyet hakkı olan birkaç kişiden biri süreyi geçirirse diğerlerinin hakları düşmez.\n- Kanunda aksi yazılı değilse suçtan zarar görenin **vazgeçmesi davayı düşürür**. Hükmün kesinleşmesinden sonraki vazgeçme ise cezanın infazına engel olmaz.\n- İştirak halindeki sanıklardan biri hakkındaki vazgeçme **diğerlerini de kapsar**.\n- Kanunda aksi yazılı değilse vazgeçme, onu **kabul etmeyen sanığı** etkilemez.\n- Vazgeçerken şahsi haklarından da vazgeçtiğini ayrıca açıklayan kişi, artık hukuk mahkemesinde de dava açamaz."
+    },
+    {
+      "type": "trap",
+      "title": "Şikâyette sık yanılgılar",
+      "articleRefs": [
+        "73"
+      ],
+      "body": "Şikâyet süresi suçun işlendiği günden değil, hak sahibinin **fiili ve failin kim olduğunu öğrendiği** günden başlar. Failin kimliği sonradan ortaya çıkıyorsa altı aylık süre o günden hesaplanır. İştirakte seçici vazgeçme olmaz: sanıklardan biri hakkındaki vazgeçme **diğerlerini de kapsar**. Vazgeçme davayı düşürür. Ama hükmün kesinleşmesinden sonra yapılırsa cezanın infazına engel olmaz. Hakaret için ayrıca şunu unutma: şikâyet süresi, fiilin gerçekleştiği tarihten itibaren her ne suretle olursa olsun iki yılı geçemez."
+    },
+    {
+      "type": "rule",
+      "title": "Önödeme",
+      "articleRefs": [
+        "75"
+      ],
+      "body": "**Kapsam:** Uzlaşma kapsamındaki suçlar hariç tutulur. Önödeme; yalnız adlî para cezasını gerektiren ya da kanun maddesindeki hapis cezasının **yukarı sınırı 6 ayı aşmayan** suçlarda uygulanır.\n\n**Ödenecek miktar** (soruşturma giderleriyle birlikte):\n- Adlî para cezası maktu ise bu miktar, değilse aşağı sınırı,\n- Hapis cezasının aşağı sınırının her günü için **100 TL**,\n- Hapis ile birlikte adlî para cezası da öngörülmüşse hapis için hesaplanan miktar ile adlî para cezasının aşağı sınırı,\n- Hapis veya adlî para cezasından yalnız birinin uygulanabileceği hallerde miktar **adlî para cezası** esas alınarak belirlenir.\n\n**Süre ve sonuç:** Cumhuriyet savcılığının tebliği üzerine **10 gün** içinde ödenirse kamu davası açılmaz. Fail 10 gün içinde talep ederse Cumhuriyet savcısı, birer ay arayla **3 eşit taksit** kararı verir. Taksitler süresinde ödenmezse önödeme hükümsüz kalır ve soruşturma devam eder.\n\n**Dava aşamasında:** İş özel kanunla doğrudan mahkemeye geldiyse fail, hâkimin bildirimi üzerine miktarı yargılama giderleriyle öder ve kamu davası düşer. Bu kural, savcılık önödeme işlemi yapmadan dava açtığında ya da fiilin niteliği değişip madde kapsamına giren suça dönüştüğünde de uygulanır.\n\n**Tekrar:** Taksirli suçlar hariç, önödemeye bağlı karardan itibaren **5 yıl** içinde önödemeye tabi suç işleyene teklif edilecek miktar **yarı oranında** artırılır."
+    },
+    {
+      "type": "trap",
+      "title": "Önödemede yanlış şıklar",
+      "articleRefs": [
+        "75"
+      ],
+      "body": "Önödemenin sonucu **erteleme değildir**. Süresinde ödenirse kamu davası **açılmaz**, açılmışsa **düşer**. 'Miktar parça parça ödenemez' şıkkı da yanlış: fail on gün içinde isterse birer ay arayla üç eşit taksit mümkündür. Kamu davasının açılmaması ya da ortadan kaldırılması; **kişisel hakkın istenmesine, malın geri alınmasına ve müsadereye** ilişkin hükümleri etkilemez. Madde, genel koşula ek olarak bazı suçları adıyla sayar ve önödemeyi onlara da uygular. Bu Kanundan sayılanlar: yardım veya bildirim yükümlülüğünün yerine getirilmemesi (birinci fıkra), hakaret (üçüncü fıkranın (a) bendi hariç), genel güvenliğin taksirle tehlikeye sokulması, çevrenin taksirle kirletilmesi (birinci fıkra), özel işaret ve kıyafetleri usulsüz kullanma (birinci fıkra) ve suçu bildirmeme (birinci ve ikinci fıkra). Ayrıca Orman Kanunu, Kültür ve Tabiat Varlıklarını Koruma Kanunu ve Dernekler Kanunundaki birer suç da kapsamdadır. Bu suçlar beş yıl içinde tekrar işlenirse aynı suçtan önödeme uygulanmaz."
+    },
+    {
+      "type": "numbers",
+      "title": "Zamanaşımı ve süreler tablosu",
+      "articleRefs": [
+        "66",
+        "67",
+        "68",
+        "70",
+        "71",
+        "73",
+        "75"
+      ],
+      "derivedNumbers": [
+        {
+          "value": 12,
+          "expr": "8 + 8 / 2",
+          "refs": [
+            "66",
+            "67"
+          ]
+        }
+      ],
+      "rows": [
+        {
+          "label": "Dava zamanaşımı: ağırlaştırılmış müebbet",
+          "value": "30 yıl",
+          "refs": [
+            "66"
+          ]
+        },
+        {
+          "label": "Dava zamanaşımı: müebbet",
+          "value": "25 yıl",
+          "refs": [
+            "66"
+          ]
+        },
+        {
+          "label": "Dava zamanaşımı: 20 yıldan aşağı olmamak üzere hapis",
+          "value": "20 yıl",
+          "refs": [
+            "66"
+          ]
+        },
+        {
+          "label": "Dava zamanaşımı: 5 yıldan fazla, 20 yıldan az hapis",
+          "value": "15 yıl",
+          "refs": [
+            "66"
+          ]
+        },
+        {
+          "label": "Dava zamanaşımı: 5 yıldan fazla olmamak üzere hapis veya adlî para",
+          "value": "8 yıl",
+          "refs": [
+            "66"
+          ]
+        },
+        {
+          "label": "Kesilmede uzama sınırı",
+          "value": "Kanundaki sürenin en fazla yarısı",
+          "refs": [
+            "67"
+          ]
+        },
+        {
+          "label": "Örnek: 8 yıllık süre kesilirse en çok",
+          "value": "12 yıl",
+          "refs": [
+            "66",
+            "67"
+          ]
+        },
+        {
+          "label": "Ceza zamanaşımı: ağırlaştırılmış müebbet",
+          "value": "40 yıl",
+          "refs": [
+            "68"
+          ]
+        },
+        {
+          "label": "Ceza zamanaşımı: müebbet",
+          "value": "30 yıl",
+          "refs": [
+            "68"
+          ]
+        },
+        {
+          "label": "Ceza zamanaşımı: 20 yıl ve daha fazla hapis",
+          "value": "24 yıl",
+          "refs": [
+            "68"
+          ]
+        },
+        {
+          "label": "Ceza zamanaşımı: 5 yıldan fazla hapis",
+          "value": "20 yıl",
+          "refs": [
+            "68"
+          ]
+        },
+        {
+          "label": "Ceza zamanaşımı: 5 yıla kadar hapis ve adlî para",
+          "value": "10 yıl",
+          "refs": [
+            "68"
+          ]
+        },
+        {
+          "label": "Yaş: 12 yaşını doldurmuş, 15 yaşını doldurmamış",
+          "value": "Sürelerin yarısı",
+          "refs": [
+            "66",
+            "68"
+          ]
+        },
+        {
+          "label": "Yaş: 15 yaşını doldurmuş, 18 yaşını doldurmamış",
+          "value": "Sürelerin üçte ikisi",
+          "refs": [
+            "66",
+            "68"
+          ]
+        },
+        {
+          "label": "Müsadere hükmünün infaz edilmemesi",
+          "value": "Kesinleşmeden itibaren 20 yıl",
+          "refs": [
+            "70"
+          ]
+        },
+        {
+          "label": "Ceza zamanaşımını kesen yeni suç",
+          "value": "Üst sınırı 2 yıldan fazla hapis, kasıtlı",
+          "refs": [
+            "71"
+          ]
+        },
+        {
+          "label": "Şikâyet süresi",
+          "value": "6 ay",
+          "refs": [
+            "73"
+          ]
+        },
+        {
+          "label": "Hakarette şikâyet süresinin tavanı",
+          "value": "Fiilden itibaren 2 yıl",
+          "refs": [
+            "73"
+          ]
+        },
+        {
+          "label": "Önödeme: hapis cezasının yukarı sınırı",
+          "value": "6 ay",
+          "refs": [
+            "75"
+          ]
+        },
+        {
+          "label": "Önödeme: hapiste gün karşılığı",
+          "value": "100 TL",
+          "refs": [
+            "75"
+          ]
+        },
+        {
+          "label": "Önödeme: ödeme ve taksit talebi süresi",
+          "value": "10 gün",
+          "refs": [
+            "75"
+          ]
+        },
+        {
+          "label": "Önödeme: taksit",
+          "value": "Birer ay arayla 3 eşit taksit",
+          "refs": [
+            "75"
+          ]
+        },
+        {
+          "label": "Önödeme: miktarın yarı oranında artırıldığı tekrar süresi",
+          "value": "5 yıl",
+          "refs": [
+            "75"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "exam_stats",
+      "title": "Sınav der ki",
+      "rows": [
+        {
+          "label": "Bu ünitenin maddelerinden yayındaki soru",
+          "value": "91",
+          "refs": [
+            "61",
+            "62",
+            "63",
+            "64",
+            "65",
+            "66",
+            "67",
+            "68",
+            "69",
+            "70",
+            "71",
+            "72",
+            "73",
+            "74",
+            "75"
+          ]
+        },
+        {
+          "label": "md 61 — Cezanın belirlenmesi",
+          "value": "16 soru",
+          "refs": [
+            "61"
+          ]
+        },
+        {
+          "label": "md 75",
+          "value": "14 soru",
+          "refs": [
+            "75"
+          ]
+        },
+        {
+          "label": "md 65 — Af",
+          "value": "13 soru",
+          "refs": [
+            "65"
+          ]
+        },
+        {
+          "label": "md 66",
+          "value": "11 soru",
+          "refs": [
+            "66"
+          ]
+        },
+        {
+          "label": "md 62 — Takdiri indirim nedenleri",
+          "value": "9 soru",
+          "refs": [
+            "62"
+          ]
+        },
+        {
+          "label": "Resmî sınavlarda",
+          "value": "2024 PAEM 8. Dönem İlk Derece Amirlik Eğitimi Yazılı Sınavı (2)",
+          "refs": [
+            "61",
+            "62",
+            "63",
+            "64",
+            "65",
+            "66",
+            "67",
+            "68",
+            "69",
+            "70",
+            "71",
+            "72",
+            "73",
+            "74",
+            "75"
+          ]
+        },
+        {
+          "label": "Hiç soru çıkmamış",
+          "value": "md 71, md 72",
+          "refs": [
+            "61",
+            "62",
+            "63",
+            "64",
+            "65",
+            "66",
+            "67",
+            "68",
+            "69",
+            "70",
+            "71",
+            "72",
+            "73",
+            "74",
+            "75"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "61",
+        "62",
+        "63",
+        "64",
+        "65",
+        "66",
+        "67",
+        "68",
+        "69",
+        "70",
+        "71",
+        "72",
+        "73",
+        "74",
+        "75"
+      ],
+      "generated": true
+    },
+    {
+      "type": "bridge",
+      "title": "Bu üniteden soru çöz",
+      "articleRefs": [
+        "61",
+        "62",
+        "63",
+        "64",
+        "65",
+        "66",
+        "67",
+        "68",
+        "69",
+        "70",
+        "71",
+        "72",
+        "73",
+        "74",
+        "75"
+      ],
+      "generated": true,
+      "rows": [
+        {
+          "label": "Madde kapsamlı seans",
+          "value": "md 61–75, 10 soru",
+          "refs": [
+            "61",
+            "62",
+            "63",
+            "64",
+            "65",
+            "66",
+            "67",
+            "68",
+            "69",
+            "70",
+            "71",
+            "72",
+            "73",
+            "74",
+            "75"
+          ]
+        }
+      ]
+    }
+  ]
+}

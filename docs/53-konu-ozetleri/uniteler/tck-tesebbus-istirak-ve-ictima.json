@@ -1,0 +1,515 @@
+{
+  "unit": {
+    "slug": "tck-tesebbus-istirak-ve-ictima",
+    "legislationSlug": "turk-ceza-kanunu",
+    "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+    "title": "Teşebbüs, iştirak ve içtima",
+    "subtitle": "Suç yarıda kalınca, birden fazla kişi katılınca, birden fazla suç birleşince",
+    "articleFrom": "35",
+    "articleTo": "44",
+    "readingMinutes": 12,
+    "sourceLabel": "AI özeti — Türk Ceza Kanunu, md 35–44",
+    "articleNos": [
+      "35",
+      "36",
+      "37",
+      "38",
+      "39",
+      "40",
+      "41",
+      "42",
+      "43",
+      "44"
+    ],
+    "generatedBy": "claude-opus-5-5 (ozet-uret.ts)"
+  },
+  "blocks": [
+    {
+      "type": "concept",
+      "title": "Suç yarıda kalırsa: teşebbüs",
+      "body": "Bir suçu işlemeyi kastettin. Elverişli hareketlerle doğrudan doğruya icraya başladın. Ama elinde olmayan nedenlerle suç tamamlanmadı. İşte teşebbüs budur. Kanun seni yine sorumlu tutar, yalnız cezan tamamlanmış suça göre daha hafif belirlenir. Aklında şu kelimeler kalsın: kast, elverişli hareket, icraya başlama, elde olmayan neden. Bunlardan eksik olan varsa teşebbüs yoktur.",
+      "articleRefs": [
+        "35"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Teşebbüsün şartları ve cezası",
+      "body": "**Şartlar (md 35)**\n- Kişi suçu **işlemeyi kastetmiş** olmalı.\n- **Elverişli hareketlerle** **doğrudan doğruya icraya** başlamış olmalı.\n- Suçu **elinde olmayan nedenlerle** tamamlayamamış olmalı.\n\n**Ceza**, meydana gelen zarar veya tehlikenin ağırlığına göre belirlenir:\n- Ağırlaştırılmış müebbet hapis yerine **ondört yıldan yirmibir yıla** kadar hapis verilir.\n- Müebbet hapis yerine **on yıldan onsekiz yıla** kadar hapis verilir.\n- Diğer hallerde cezanın **dörtte birinden dörtte üçüne** kadarı indirilir.",
+      "articleRefs": [
+        "35"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Teşebbüs sorularında düştüğün yerler",
+      "body": "- **Elverişsiz araç:** Sorular, zehir sanıp şeker içirmeyi ya da ateş almayan silahla tetiğe basmayı teşebbüs saymaz; dayanak md 35'in aradığı 'elverişli hareketler'dir. Bu durumda 'kasten öldürmeye teşebbüs' şıkkı tuzaktır.\n- **Kast şart:** Madde 'işlemeyi kastettiği' suçtan söz eder. 'Taksirli suçlara teşebbüs mümkündür' diyen şık yanlıştır.\n- **İcrayı bitirmek gerekmez:** Teşebbüs için icraya başlamak yeter. 'Bütün icra hareketleri tamamlanmalı' diyen şık yanlıştır.\n- **Engel dışarıdan gelmeli:** Bekçi geldiği için yükü bırakıp kaçan kişi teşebbüsten sorumludur. Aleti kırıldığı için 'sonra gelirim' diyerek ayrılan kişi de öyledir. İkisinde de suçu tamamlayamamanın nedeni failin elinde değildir.\n- **Hiçbir mermi isabet etmediyse** ve öldürme kastı varsa, sonuç kasten öldürmeye teşebbüstür. Yaralamaya teşebbüs değildir.\n- **Ölüm başka bir nedenden geldiyse:** Yaralanan kişi, failin hareketinden bağımsız başka bir nedenle ölebilir; hatalı ilaç bunun örneğidir. Bu durumda sorular kasten öldürmeye teşebbüs cevabını bekler.",
+      "articleRefs": [
+        "35"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Gönüllü vazgeçme",
+      "body": "**Kural (md 36):** Fail aşağıdakilerden birini yaparsa teşebbüsten dolayı **cezalandırılmaz**:\n- suçun icra hareketlerinden **gönüllü vazgeçerse**,\n- ya da **kendi çabalarıyla** suçun tamamlanmasını veya neticenin gerçekleşmesini **önlerse**.\n\n**Ama:** Tamam olan kısım esasen bir suç oluşturuyorsa, fail **sadece o suça ait ceza** ile cezalandırılır.\n\n**İştirak hâlinde (md 41):**\n- Gönüllü vazgeçme hükümlerinden **sadece gönüllü vazgeçen suç ortağı** yararlanır.\n- Suç, vazgeçenin gayreti dışında başka bir sebeple işlenmemiş olabilir. Bu durumda da gönüllü vazgeçme hükümleri uygulanır.\n- Suç, vazgeçenin bütün gayretine rağmen işlenmiş olabilir. Bu durumda da gönüllü vazgeçme hükümleri uygulanır.",
+      "articleRefs": [
+        "36",
+        "41"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Pişman oldu, hastaneye yetiştirdi: hangi suç?",
+      "body": "Öldürmek için ateş eden fail, mağdur yaralanınca pişman olabilir ve onu kendi çabasıyla hastaneye yetiştirebilir. Bu durumda ölüm neticesini önlemiş olur. Öldürmeye teşebbüsten ceza almaz, tamam olan kısımdan, yani **kasten yaralamadan** sorumlu olur.\n\nŞıklardaki tuzaklar:\n- 'Kasten öldürmeye teşebbüs': Gönüllü vazgeçme bu sorumluluğu kaldırır.\n- 'Hiç ceza yok': Tamam olan kısım suçsa ceza vardır.\n- 'Etkin pişmanlık': Doğru kurum md 36'daki gönüllü vazgeçmedir.\n- 'Taksirle yaralama': Yaralama kasten yapılmıştır.\n\nAynı mantık hırsızlıkta da geçerli. Hırsızlık için eve girip kendi isteğiyle hiçbir şey almadan çıkan kişi hırsızlıktan gönüllü vazgeçmiştir; tamamlanmış konut dokunulmazlığını ihlalden sorumlu olur. Yakalanacağını anlayıp çıkan kişi ise gönüllü vazgeçmiş olmaz.\n\n**Dikkat:** Fail pişman olup döndüğünde mağdur ölmüşse netice önlenmemiştir. Bu durumda gönüllü vazgeçme uygulanmaz.",
+      "articleRefs": [
+        "36"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Faillik",
+      "body": "**Birlikte gerçekleştirme (md 37):** Suçun kanuni tanımında yer alan fiili birlikte gerçekleştiren kişilerden **her biri fail** olarak sorumlu olur.\n\n**Başkasını araç olarak kullanma:** Suçun işlenmesinde bir başkasını araç olarak kullanan kişi de **fail** olarak sorumlu tutulur.\n- Araç olarak kullanılan kişi **kusur yeteneği olmayan** biri olabilir. Bu durumda kullananın cezası **üçte birden yarısına** kadar artırılır.",
+      "articleRefs": [
+        "37"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Sadece onun kurşunu isabet etti: diğerleri ne olur?",
+      "body": "Anlaşıp aynı anda ateş eden kişilerden yalnızca birinin kurşunu isabet etmiş olabilir. Kimin kurşunu olduğu hiç bilinemeyebilir de. Sonuç değişmez: hepsi fiili birlikte gerçekleştirmiştir ve her biri **tamamlanmış kasten öldürmeden fail** olarak sorumludur. Sorular buna 'müşterek' ya da 'ortaklaşa' fail der.\n\nŞu şıklara kanma: 'diğerleri teşebbüsten sorumlu', 'diğerleri yardım eden', 'diğerlerinin sorumluluğu yok'.\n\nBirini kandırıp onu araç gibi kullanan kişi azmettiren değil, **fail**dir. Örnek: Gözü iyi görmeyen birine, insanı direk diye göstererek nişan aldırmak. Sorular bunu 'dolaylı fail' diye sorar.",
+      "articleRefs": [
+        "37"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Azmettirme",
+      "body": "**Kural (md 38):** Başkasını suç işlemeye azmettiren kişi, **işlenen suçun cezası** ile cezalandırılır.\n\n**Artırım:** Azmettirme üstsoy ve altsoy ilişkisinden doğan nüfuz kullanılarak yapılmışsa, azmettirenin cezası **üçte birden yarısına** kadar artırılır. **Çocuklar** azmettirilmişse bu artırım için üstsoy–altsoy ilişkisi aranmaz.\n\n**Azmettiren belli değilse:** Kim olduğunun ortaya çıkmasını sağlayan fail veya diğer suç ortağı hakkında şu cezalara hükmolunabilir:\n- ağırlaştırılmış müebbet hapis yerine **yirmi yıldan yirmibeş yıla** kadar hapis,\n- müebbet hapis yerine **onbeş yıldan yirmi yıla** kadar hapis,\n- diğer hallerde **üçte bir** oranında indirim yapılabilir.",
+      "articleRefs": [
+        "38"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Failden fazla, eşit, az: kim ne alır?",
+      "body": "Bu soru tipi çok sık gelir: Kimin cezası failinkinden fazladır?\n- **Fazla:** Üstsoy–altsoy nüfuzunu kullanarak azmettiren. Çocuğu suça azmettiren (md 38).\n- **Eşit:** Sıradan azmettiren. İşlenen suçun cezasını alır.\n- **Az:** Teşvik eden, kararı kuvvetlendiren, yol gösteren, araç sağlayan, icrayı kolaylaştıran. Bunların hepsi md 39'daki yardım edenlerdir ve cezaları indirilir.\n\nDiğer tuzaklar:\n- Azmettireni ortaya çıkaran faile indirim **yapılabilir**. 'Ceza hükmolunmaz' şıkkı yanlıştır.\n- Azmettirilen kişi icraya hiç başlamadan vazgeçerse, azmettiren de cezalandırılmaz. Çünkü suçun en azından teşebbüs aşamasına varması gerekir (md 40).",
+      "articleRefs": [
+        "38",
+        "39",
+        "40"
+      ]
+    },
+    {
+      "type": "numbers",
+      "title": "Sayılar: teşebbüs, faillik, azmettirme",
+      "rows": [
+        {
+          "label": "Teşebbüs — ağırlaştırılmış müebbet yerine",
+          "value": "14–21 yıl hapis",
+          "refs": [
+            "35"
+          ]
+        },
+        {
+          "label": "Teşebbüs — müebbet yerine",
+          "value": "10–18 yıl hapis",
+          "refs": [
+            "35"
+          ]
+        },
+        {
+          "label": "Teşebbüs — diğer hallerde indirim",
+          "value": "dörtte birinden dörtte üçüne kadar",
+          "refs": [
+            "35"
+          ]
+        },
+        {
+          "label": "Kusur yeteneği olmayanı araç olarak kullanma — artırım",
+          "value": "üçte birden yarısına kadar",
+          "refs": [
+            "37"
+          ]
+        },
+        {
+          "label": "Üstsoy–altsoy nüfuzuyla ya da çocuğu azmettirme — artırım",
+          "value": "üçte birden yarısına kadar",
+          "refs": [
+            "38"
+          ]
+        },
+        {
+          "label": "Azmettireni ortaya çıkaran — ağırlaştırılmış müebbet yerine",
+          "value": "20–25 yıl hapis (hükmolunabilir)",
+          "refs": [
+            "38"
+          ]
+        },
+        {
+          "label": "Azmettireni ortaya çıkaran — müebbet yerine",
+          "value": "15–20 yıl hapis (hükmolunabilir)",
+          "refs": [
+            "38"
+          ]
+        },
+        {
+          "label": "Azmettireni ortaya çıkaran — diğer hallerde",
+          "value": "üçte bir indirim yapılabilir",
+          "refs": [
+            "38"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "35",
+        "37",
+        "38"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Yardım etme",
+      "body": "**Ceza (md 39):** Yardım edene verilecek ceza, işlenen suça göre belirlenir:\n- Suç ağırlaştırılmış müebbet hapis gerektiriyorsa **onbeş yıldan yirmi yıla** kadar hapis verilir.\n- Suç müebbet hapis gerektiriyorsa **on yıldan onbeş yıla** kadar hapis verilir.\n- Diğer hallerde cezanın **yarısı indirilir**. Ancak verilecek ceza **sekiz yılı geçemez**.\n\n**Yardım eden sayılan hâller:**\n- a) Suç işlemeye **teşvik** etmek, suç işleme **kararını kuvvetlendirmek** ya da fiilin işlenmesinden **sonra yardımda bulunacağını vaat** etmek.\n- b) Suçun nasıl işleneceği hususunda **yol göstermek** ya da fiilin işlenmesinde kullanılan **araçları sağlamak**.\n- c) Suçun işlenmesinden **önce veya işlenmesi sırasında** yardımda bulunarak icrasını **kolaylaştırmak**.",
+      "articleRefs": [
+        "39"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Sonradan yardım iştirak sayılır mı?",
+      "body": "- Madde, fiilden sonra yardımda bulunacağını **vaat etmeyi** sayar. Vaat olmadan, suç işlendikten sonra yapılan yardım md 39'daki hâller arasında yer almaz. 'Hangisi iştirak türü değildir' sorularında beklenen cevap budur.\n- Pusuda bekleyen suç ortağına yiyecek götürmek icrayı kolaylaştırmaktır, yani **yardım etme**dir. 'Araç sağlama' şıkkı çeldiricidir.\n- Sorular şöyle ayırır: karşındakinde suç işleme kararı **hiç yoksa** ve kararı ona sen aldırıyorsan **azmettiren** (md 38) olursun. Var olan kararı kuvvetlendiriyorsan **yardım eden** (md 39) olursun.\n- Ağırlaştırılmış müebbet gerektiren suçta yardım edene **en fazla yirmi yıl** verilir. Yirmi beşi, azmettireni ortaya çıkaran failin aralığıyla (md 38) karıştırma.\n- Diğer hallerde yarı indirim **ve** sekiz yıl üst sınırı vardır. İkisini birlikte hatırla.",
+      "articleRefs": [
+        "38",
+        "39"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Bağlılık kuralı",
+      "body": "**Yeterli olan (md 40):** Suça iştirak için **kasten ve hukuka aykırı** işlenmiş bir fiilin varlığı yeterlidir.\n\n**Herkes kendi kusuruyla:** Suçun işlenişine iştirak eden her kişi, **kendi kusurlu fiiline** göre cezalandırılır. Diğerinin cezalandırılmasını önleyen **kişisel nedenler** göz önünde bulundurulmaz.\n\n**Özgü suçlar:** Ancak **özel faillik niteliğini** taşıyan kişi fail olabilir. İştirak eden diğer kişiler **azmettiren veya yardım eden** olarak sorumlu tutulur.\n\n**Alt sınır:** İştirakten sorumlu tutulmak için ilgili suçun **en azından teşebbüs aşamasına** varmış olması gerekir.",
+      "articleRefs": [
+        "40"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "İştirak sorularının klasik çeldiricileri",
+      "body": "- **İcraya başlanmadıysa o suçtan iştirak sorumluluğu doğmaz.** Suç icraya başlamadan pusudaki kişi başka bir sebeple yakalanmış olabilir. Bu durumda ne silahı veren ne de pusuda bekleyen kasten yaralamadan sorumlu olur.\n- **Teşebbüse iştirak olur.** 'Teşebbüs aşamasında kalan suça iştirak mümkündür' doğru şıktır. 'İcra tamamlanmalı' diyen şık yanlıştır.\n- **Kast şart.** Madde 'kasten' işlenmiş fiil arar. 'Taksirli suçlarda iştirak hükümleri uygulanır' diyen şık yanlıştır.\n- **Özgü suç örneği:** Kamu görevlisi zimmet suçunun faili olur. Ona nasıl yapılacağını gösteren ve kamu görevlisi olmayan kişi **yardım eden**dir, müşterek fail değildir.\n- **Kişisel nedenler** yalnız sahibine yarar. Sorularda bunlara 'şahsi cezasızlık sebebi' denir. Diğer ortaklar bundan yararlanamaz.\n- **Plan dışı suç:** Herkes kendi kusurlu fiilinden sorumludur. Hırsızlık için girilen evde ortaklardan biri öldürme işlerse, diğerleri bu öldürmeden sorumlu tutulmaz.",
+      "articleRefs": [
+        "40"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Bileşik suç",
+      "body": "**Tanım (md 42):** Biri diğerinin **unsurunu** veya **ağırlaştırıcı nedenini** oluşturması dolayısıyla **tek fiil** sayılan suça bileşik suç denir.\n\n**Sonuç:** Bu tür suçlarda **içtima hükümleri uygulanmaz**.",
+      "articleRefs": [
+        "42"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Bileşik mi değil mi: 'kullanarak' ile 'amacıyla' farkı",
+      "body": "Şıklar neredeyse hep aynı kalıpta gelir. Sorularda suçlardan biri diğerinin içinde 'tehdit kullanarak', 'cebir kullanarak' diye geçiyorsa, o suç diğerinin unsurunu veya ağırlaştırıcı nedenini oluşturur ve **bileşik suç** cevabı beklenir.\n\nSuç yalnız **amaç** olarak geçiyorsa sorular bileşik suç kabul etmez. Örnek kalıplar: 'suçu gizlemek amacıyla öldürme', 'tehdit amacıyla yaralama', 'tehdit amacıyla mala zarar verme'.\n\nSorularda bileşik suç örneği olarak gelenler:\n- konutta yağma,\n- banka hesabına bilişim sistemi yoluyla girip parayı aktarma ve çekme,\n- cinsel yönden taciz şeklinde işkence.\n\nTuzaklar:\n- 'Bileşik suçta cezaların içtimaı uygulanır' yanlıştır. Madde açıkça 'uygulanmaz' der.\n- Gece hasmının evine girip onu öldürmek bileşik suç değildir. Sorular burada konut dokunulmazlığının ihlali ve öldürme için ayrı ayrı ceza cevabını bekler.",
+      "articleRefs": [
+        "42"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Zincirleme suç",
+      "body": "**Şartlar (md 43):**\n- **Bir suç işleme kararının** icrası kapsamında,\n- **değişik zamanlarda**,\n- **bir kişiye karşı**,\n- **aynı suçun birden fazla** işlenmesi.\n\n**Sonuç:** Bir cezaya hükmedilir. Ancak bu ceza **dörtte birinden dörtte üçüne** kadar artırılır.\n\n**Genişletmeler:**\n- Suçun temel şekli ile daha ağır veya daha az cezayı gerektiren nitelikli şekilleri **aynı suç** sayılır.\n- Hüküm, **mağduru belli bir kişi olmayan** suçlarda da uygulanır.\n- Aynı suç **birden fazla kişiye karşı tek bir fiille** işlenmişse de uygulanır.\n\n**Uygulanmayan suçlar:** **kasten öldürme, kasten yaralama, işkence ve yağma**.",
+      "articleRefs": [
+        "43"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Kaç suç var?",
+      "body": "Sayma soruları en çok burada gelir. Kendine sırayla şunları sor:\n- **Değişik zamanlar var mı?** Aynı kişiye ait birden fazla eşyayı aynı seferde almak tek hırsızlıktır. Ambardan çuvalları peş peşe taşımak ya da marketten birkaç ürün almak buna örnektir. Bu durum ne zincirleme suçtur ne de ayrı suçlar doğurur. Son parçayı alırken yakalanmak ayrıca teşebbüs doğurmaz.\n- **Mağdur aynı kişi mi?** Farklı kişilere ait dolaplardan ya da otomobillerden ayrı hareketlerle çalmak, kişi sayısı kadar hırsızlıktır. Çünkü madde 'bir kişiye karşı' ister.\n- **Aynı kişiye karşı, birer gün arayla mı?** Bu klasik zincirleme suçtur: tek ceza verilir ve artırılır.\n- **Suç listede mi?** Kasten öldürme, kasten yaralama, işkence ve yağmada zincirleme yoktur. Birer gün ya da birer saat arayla öldürülen her kişi ayrı suçtur. Hırsızlık ve cinsel saldırı listede olmadığından, koşulları varsa zincirleme olabilir.\n- **Taksir mi?** Madde 'suç işleme kararı' arar. Taksirli suçların zincirleme işlenebileceğini söyleyen şık yanlıştır.\n- **Tek sözle birden fazla kişiye hakaret mi?** Bu, maddedeki 'tek bir fiille birden fazla kişiye karşı' hâlidir. Sorularda kimi zaman 'zincirleme suç', kimi zaman 'aynı nev'iden fikri içtima' adıyla gelir. Farklı suçlar oluşuyorsa md 44'e bak.",
+      "articleRefs": [
+        "43",
+        "44"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Fikri içtima",
+      "body": "**Kural (md 44):** İşlediği **bir fiil** ile **birden fazla farklı suçun** oluşmasına sebebiyet veren kişi, bunlardan **en ağır cezayı gerektiren** suçtan dolayı cezalandırılır.\n- Ortada **bir fiil** bulunmalıdır.\n- Oluşan suçlar **farklı** olmalıdır.\n- Sonuçta yalnız en ağır cezayı gerektiren suçun cezası verilir. Madde ayrıca artırım öngörmez.",
+      "articleRefs": [
+        "44"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Fikri içtimada artırım yok",
+      "body": "- **Tipik örnek:** Gece yerleşim yerinde ateş edip birini yaralamak. Tek fiille hem yaralama hem de genel güvenliği kasten tehlikeye sokma oluşur. Bu **fikri içtima**dır.\n- **En sık çeldirici:** 'En ağır cezayı gerektiren suçtan cezalandırılır **ancak dörtte birden dörtte üçüne kadar artırılır**.' Bu artırım zincirleme suça (md 43) aittir. Fikri içtimada yalnız en ağır suçun cezası verilir.\n- 'En hafif suçtan ceza' ve 'ayrı ayrı ceza' şıkları da yanlıştır.\n- **Fiil birden fazlaysa fikri içtima yoktur.** Örnek: Fail önce yanlışlıkla eşini vurur, sonra tekrar ateş ederek hedefini öldürür. Burada fiiller ayrıdır. 'Tek hedefi vardı' gerekçesi fikri içtimayı getirmez.",
+      "articleRefs": [
+        "43",
+        "44"
+      ]
+    },
+    {
+      "type": "numbers",
+      "title": "Sayılar: yardım etme ve içtima",
+      "rows": [
+        {
+          "label": "Yardım — ağırlaştırılmış müebbet gerektiren suç",
+          "value": "15–20 yıl hapis",
+          "refs": [
+            "39"
+          ]
+        },
+        {
+          "label": "Yardım — müebbet gerektiren suç",
+          "value": "10–15 yıl hapis",
+          "refs": [
+            "39"
+          ]
+        },
+        {
+          "label": "Yardım — diğer hallerde",
+          "value": "cezanın yarısı indirilir; en fazla 8 yıl",
+          "refs": [
+            "39"
+          ]
+        },
+        {
+          "label": "Zincirleme suç — artırım",
+          "value": "dörtte birinden dörtte üçüne kadar",
+          "refs": [
+            "43"
+          ]
+        },
+        {
+          "label": "Zincirleme suç — uygulanmayan suçlar",
+          "value": "kasten öldürme, kasten yaralama, işkence, yağma",
+          "refs": [
+            "43"
+          ]
+        },
+        {
+          "label": "Fikri içtima — ceza",
+          "value": "en ağır cezayı gerektiren suçun cezası",
+          "refs": [
+            "44"
+          ]
+        },
+        {
+          "label": "Bileşik suç — içtima",
+          "value": "içtima hükümleri uygulanmaz",
+          "refs": [
+            "42"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "39",
+        "42",
+        "43",
+        "44"
+      ]
+    },
+    {
+      "type": "compare",
+      "title": "Zincirleme suç ve fikri içtima",
+      "rows": [
+        {
+          "aspect": "Kurum",
+          "left": "Zincirleme suç (md 43)",
+          "right": "Fikri içtima (md 44)",
+          "refs": [
+            "43",
+            "44"
+          ]
+        },
+        {
+          "aspect": "Fiil",
+          "left": "Değişik zamanlarda birden fazla fiil; ya da birden fazla kişiye karşı tek bir fiil",
+          "right": "Bir fiil",
+          "refs": [
+            "43",
+            "44"
+          ]
+        },
+        {
+          "aspect": "Suçlar",
+          "left": "Aynı suç; temel şekli ile nitelikli şekilleri aynı suç sayılır",
+          "right": "Birden fazla farklı suç",
+          "refs": [
+            "43",
+            "44"
+          ]
+        },
+        {
+          "aspect": "Karar ve mağdur",
+          "left": "Bir suç işleme kararı; bir kişiye karşı; mağduru belli bir kişi olmayan suçlarda da uygulanır",
+          "right": "Maddede ayrıca şart olarak yer almaz",
+          "refs": [
+            "43",
+            "44"
+          ]
+        },
+        {
+          "aspect": "Ceza",
+          "left": "Bir ceza; dörtte birinden dörtte üçüne kadar artırılır",
+          "right": "En ağır cezayı gerektiren suçtan ceza; artırım öngörülmez",
+          "refs": [
+            "43",
+            "44"
+          ]
+        },
+        {
+          "aspect": "Kapsam dışı",
+          "left": "Kasten öldürme, kasten yaralama, işkence, yağma",
+          "right": "Maddede istisna sayılmaz",
+          "refs": [
+            "43",
+            "44"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "43",
+        "44"
+      ]
+    },
+    {
+      "type": "exam_stats",
+      "title": "Sınav der ki",
+      "rows": [
+        {
+          "label": "Bu ünitenin maddelerinden yayındaki soru",
+          "value": "166",
+          "refs": [
+            "35",
+            "36",
+            "37",
+            "38",
+            "39",
+            "40",
+            "41",
+            "42",
+            "43",
+            "44"
+          ]
+        },
+        {
+          "label": "md 43 — Zincirleme suç",
+          "value": "46 soru",
+          "refs": [
+            "43"
+          ]
+        },
+        {
+          "label": "md 35 — Suça teşebbüs",
+          "value": "29 soru",
+          "refs": [
+            "35"
+          ]
+        },
+        {
+          "label": "md 38 — Azmettirme",
+          "value": "18 soru",
+          "refs": [
+            "38"
+          ]
+        },
+        {
+          "label": "md 42 — Bileşik suç",
+          "value": "17 soru",
+          "refs": [
+            "42"
+          ]
+        },
+        {
+          "label": "md 36 — Gönüllü vazgeçme",
+          "value": "14 soru",
+          "refs": [
+            "36"
+          ]
+        },
+        {
+          "label": "Resmî sınavlarda",
+          "value": "2024 PAEM 8. Dönem İlk Derece Amirlik Eğitimi Yazılı Sınavı (2)",
+          "refs": [
+            "35",
+            "36",
+            "37",
+            "38",
+            "39",
+            "40",
+            "41",
+            "42",
+            "43",
+            "44"
+          ]
+        },
+        {
+          "label": "Hiç soru çıkmamış",
+          "value": "md 41",
+          "refs": [
+            "35",
+            "36",
+            "37",
+            "38",
+            "39",
+            "40",
+            "41",
+            "42",
+            "43",
+            "44"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "35",
+        "36",
+        "37",
+        "38",
+        "39",
+        "40",
+        "41",
+        "42",
+        "43",
+        "44"
+      ],
+      "generated": true
+    },
+    {
+      "type": "bridge",
+      "title": "Bu üniteden soru çöz",
+      "articleRefs": [
+        "35",
+        "36",
+        "37",
+        "38",
+        "39",
+        "40",
+        "41",
+        "42",
+        "43",
+        "44"
+      ],
+      "generated": true,
+      "rows": [
+        {
+          "label": "Madde kapsamlı seans",
+          "value": "md 35–44, 10 soru",
+          "refs": [
+            "35",
+            "36",
+            "37",
+            "38",
+            "39",
+            "40",
+            "41",
+            "42",
+            "43",
+            "44"
+          ]
+        }
+      ]
+    }
+  ]
+}

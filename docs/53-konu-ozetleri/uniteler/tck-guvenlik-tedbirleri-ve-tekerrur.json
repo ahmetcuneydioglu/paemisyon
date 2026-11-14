@@ -1,0 +1,542 @@
+{
+  "unit": {
+    "slug": "tck-guvenlik-tedbirleri-ve-tekerrur",
+    "legislationSlug": "turk-ceza-kanunu",
+    "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+    "title": "Güvenlik tedbirleri ve tekerrür",
+    "subtitle": "Hak yoksunluğu, eşya ve kazanç müsaderesi, akıl hastaları, tekerrür, sınır dışı edilme, tüzel kişiler",
+    "articleFrom": "53",
+    "articleTo": "60",
+    "readingMinutes": 12,
+    "sourceLabel": "AI özeti — Türk Ceza Kanunu, md 53–60",
+    "articleNos": [
+      "53",
+      "54",
+      "55",
+      "56",
+      "57",
+      "58",
+      "59",
+      "60"
+    ],
+    "generatedBy": "claude-opus-5-5 (ozet-uret.ts)"
+  },
+  "blocks": [
+    {
+      "type": "concept",
+      "title": "Mahkûmiyet yalnızca ceza demek değil",
+      "body": "Hapis cezası verildiğinde iş orada bitmez. Kanun, mahkûmiyetin yanında ya da ardından işleyen tedbirleri sıralar: belli hakları kullanmaktan yoksun bırakılma, eşya müsaderesi, kazanç müsaderesi, çocuklara ve akıl hastalarına özgü güvenlik tedbirleri, suçta tekerrür ve özel tehlikeli suçlular, sınır dışı edilme ve tüzel kişiler hakkında güvenlik tedbirleri. Her birinin kendi şartı var; bazılarında süre ve istisna da düzenlenmiş. Şimdi madde sırasıyla gidiyoruz.",
+      "articleRefs": [
+        "53",
+        "54",
+        "55",
+        "56",
+        "57",
+        "58",
+        "59",
+        "60"
+      ],
+      "derivedNumbers": [],
+      "counterNumbers": []
+    },
+    {
+      "type": "rule",
+      "title": "Hak yoksunluğu: mahkûmiyetin kanuni sonucu",
+      "body": "**Şart:** Kişi **kasten** işlediği suçtan dolayı **hapis cezasına** mahkûm olmalı. Yoksunluk, bu mahkûmiyetin **kanuni sonucu**dur.\n\nKişi şunlardan yoksun bırakılır:\n- **a)** Sürekli, süreli veya geçici bir **kamu görevinin** üstlenilmesi (Türkiye Büyük Millet Meclisi üyeliği; Devlet, il, belediye, köy veya bunların denetim ve gözetimi altındaki kurum ve kuruluşlarca verilen, atamaya veya seçime tabi bütün memuriyet ve hizmetler)\n- **b)** **Seçme ve seçilme** ehliyeti. Dikkat: bent metinde durur, ama Anayasa Mahkemesi bu bent bakımından kanuni sonuç kuralını iptal etmiştir; seçme ve seçilme ehliyetinden yoksunluk bugün bu maddenin kendiliğinden sonucu olarak işlemez. Sorular bendi listede sayar\n- **c)** **Velayet** hakkı; vesayet veya kayyımlığa ait bir hizmette bulunma\n- **d)** Vakıf, dernek, sendika, şirket, kooperatif ve siyasi parti tüzel kişiliklerinin **yöneticisi veya denetçisi** olma\n- **e)** Bir kamu kurumunun veya kamu kurumu niteliğindeki meslek kuruluşunun **iznine tabi** bir meslek veya sanatı, kendi sorumluluğu altında serbest meslek erbabı veya tacir olarak icra etme",
+      "articleRefs": [
+        "53"
+      ],
+      "derivedNumbers": [],
+      "counterNumbers": []
+    },
+    {
+      "type": "trap",
+      "title": "Üyelik ve ortaklık listede yok",
+      "body": "Şıklarda 'şirket ortağı olmaktan', 'dernek veya sendika üyesi olmaktan', 'vakıf üyesi olmaktan' ya da 'eser, vekâlet veya hizmet sözleşmesiyle bir edimi üstlenmekten' yoksunluk görürsen dur. Kanun tüzel kişilikler için yalnızca **yöneticisi veya denetçisi olmayı** sayar. Üyelik ve ortaklık bu listede yok.\n\nŞartı da unutma: **kasten** işlenen suç ve **hapis** cezası. Taksirli suçtan hapis alan kişi bu yoksunluğa girmez. Örneğin velayet hakkını bu maddeden dolayı kaybetmez.",
+      "articleRefs": [
+        "53"
+      ],
+      "derivedNumbers": [],
+      "counterNumbers": []
+    },
+    {
+      "type": "rule",
+      "title": "Ne kadar sürer, kime uygulanmaz?",
+      "body": "**Süre:** Kişi bu hakları, mahkûm olduğu hapis cezasının **infazı tamamlanıncaya kadar** kullanamaz.\n\n**Altsoy istisnası:** Bazı hükümlüler için yoksunluk, **kendi altsoyu** üzerindeki velayet, vesayet ve kayyımlık yetkileri bakımından uygulanmaz. Bu hükümlüler şunlardır:\n- hapis cezası **ertelenen**,\n- **denetimli serbestlik tedbiri uygulanarak** cezası infaz edilen,\n- **koşullu salıverilen** hükümlü.\n\nBu kişiler hakkında (e) bendindeki meslek ve sanat yoksunluğunun uygulanmamasına da **karar verilebilir**.\n\n**Birinci fıkra hiç uygulanmaz:**\n- **Kısa süreli hapis cezası ertelenmiş** kişiler\n- Fiili işlediği sırada **on sekiz yaşını doldurmamış** kişiler",
+      "articleRefs": [
+        "53"
+      ],
+      "derivedNumbers": [],
+      "counterNumbers": []
+    },
+    {
+      "type": "trap",
+      "title": "Tam muafiyet mi, yalnız altsoy mu?",
+      "body": "En çok karıştırılan nokta şu. Hak yoksunluğundan **tamamen** kurtulan yalnızca iki grup var:\n- **kısa süreli hapis cezası ertelenen** kişi,\n- fiili **on sekiz yaşını doldurmadan** işleyen kişi.\n\nHapis cezası ertelenen, denetimli serbestlikle cezası infaz edilen ya da koşullu salıverilen hükümlü ise yalnızca **kendi altsoyu** üzerinde velayet, vesayet ve kayyımlık yetkilerini kullanabilir. Bu kişiler için kamu görevi ve vakıf veya dernek yöneticiliği gibi öteki yoksunluklar sürer. Meslek ve sanat yoksunluğunda ise yalnızca 'uygulanmamasına karar verilebilir'. Yani muafiyet kendiliğinden doğmaz.\n\nDenetimli serbestliği ve koşullu salıverilmeyi tam muafiyet listesine koyan şık yanlıştır.",
+      "articleRefs": [
+        "53"
+      ],
+      "derivedNumbers": [],
+      "counterNumbers": []
+    },
+    {
+      "type": "rule",
+      "title": "Hakkı kötüye kullanma ve taksirli meslek/trafik suçu",
+      "body": "**Birinci fıkradaki bir hak veya yetki kötüye kullanılarak suç işlenirse** yasak **verilir**:\n- **Hapis cezasında:** Cezanın infazından sonra işlemek üzere, hükmolunan cezanın **yarısından bir katına kadar** o hak veya yetkinin kullanılması yasaklanır.\n- **Sadece adlî para cezasında:** Hükümde belirtilen **gün sayısının yarısından bir katına kadar** yasak verilir. Yasak hükmün kesinleşmesiyle icraya konur. Süresi, adlî para cezasının tamamen infazından itibaren işler.\n\n**Meslek, sanat ya da trafik düzeninin gerektirdiği dikkat ve özen yükümlülüğüne aykırılıkla işlenen taksirli suçta** yasak **verilebilir**:\n- **Üç aydan az ve üç yıldan fazla olmamak üzere** meslek veya sanatın icrası yasaklanabilir ya da sürücü belgesi geri alınabilir.\n- Yasak, hükmün kesinleşmesiyle yürürlüğe girer. Süre, cezanın **tümüyle infazından** itibaren işler.",
+      "articleRefs": [
+        "53"
+      ],
+      "derivedNumbers": [],
+      "counterNumbers": []
+    },
+    {
+      "type": "trap",
+      "title": "Trafik kazası: belge mi gider, araç mı, oy mu?",
+      "body": "Trafikte dikkat ve özen yükümlülüğüne aykırı davranıp taksirli suçtan hapis alan bir sürücü düşün.\n- **Sürücü belgesi:** Üç ay ile üç yıl arasında geri alınabilir. Şıklarda 'iki yıl', 'altı ay' ya da 'beş yıl' sınırı görürsen yanlıştır.\n- **Araç:** Eşya müsaderesi **kasıtlı** suçta kullanılan eşya için öngörülür. Bu yüzden araç müsadere edilmez.\n- **Oy hakkı:** Hak yoksunluğu yalnızca **kasten** işlenen suçtan hapis mahkûmiyetinin sonucudur. Bu sürücü seçme hakkını kaybetmez.",
+      "articleRefs": [
+        "53",
+        "54"
+      ],
+      "derivedNumbers": [],
+      "counterNumbers": [
+        2,
+        6,
+        5
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Eşya müsaderesi",
+      "body": "**Kural:** Şu eşyanın müsaderesine hükmolunur:\n- **kasıtlı** bir suçun işlenmesinde **kullanılan**,\n- suçun işlenmesine **tahsis edilen**,\n- suçtan **meydana gelen** eşya.\n\nŞart: Eşya **iyiniyetli üçüncü kişilere ait olmamalı**.\n\n**Özel durumlar:**\n- **Hazırlanan eşya:** Suçun işlenmesinde kullanılmak üzere hazırlanan eşya, ancak **kamu güvenliği, kamu sağlığı veya genel ahlak** açısından tehlikeliyse müsadere edilir.\n- **Sınırlı ayni hak:** Eşya üzerinde iyiniyetli üçüncü kişiler lehine sınırlı ayni hak varsa, müsadere kararı **bu hak saklı kalmak şartıyla** verilir.\n- **Değer müsaderesi:** Eşya ortadan kaldırılmış, elden çıkarılmış, tüketilmiş ya da müsaderesi başka bir surette imkânsız kılınmışsa, **değeri kadar para tutarı** müsadere edilir.\n- **Hakkaniyet:** Müsadere işlenen suça nazaran daha ağır sonuç doğuracak ve hakkaniyete aykırı olacaksa, suçta kullanılan eşyanın müsaderesine **hükmedilmeyebilir**.\n- **Bulundurulması suç olan eşya:** Üretimi, bulundurulması, kullanılması, taşınması, alım ve satımı suç oluşturan eşya **müsadere edilir**.\n- **Kısım:** Tümüne zarar vermeden ayrılabiliyorsa, yalnızca müsaderesi gereken kısım müsadere edilir.\n- **Pay:** Birden fazla kişinin paydaş olduğu eşyada yalnızca **suça iştirak eden** kişinin payı müsadere edilir.",
+      "articleRefs": [
+        "54"
+      ],
+      "derivedNumbers": [],
+      "counterNumbers": []
+    },
+    {
+      "type": "trap",
+      "title": "Müsadere şıklarındaki klasik yanlışlar",
+      "body": "Şu ifadeleri görürsen işaretle, hepsi yanlıştır:\n- 'Hazırlanan eşya **her durumda** ya da **niteliğine bakılmaksızın** müsadere edilir.' Tehlikelilik şartı var.\n- 'Üretimi, bulundurulması… suç oluşturan eşya **tehlikeliyse** müsadere edilir.' Tehlikelilik şartı hazırlanan eşya içindir. Bu eşya doğrudan müsadere edilir.\n- 'İyiniyetli üçüncü kişinin sınırlı ayni hakkı müsadereyle **sona erer**.' Bu hak saklı kalır.\n- 'Paylı eşyanın **tamamı** müsadere edilir.' Yalnızca suça iştirak edenin payı müsadere edilir.\n- 'Eşya elden çıkarıldıysa müsadere kararı **verilemez**.' Bu durumda değeri kadar para tutarı müsadere edilir.\n- 'Kısım ayrılamasa bile yalnızca o kısım müsadere edilir.' Bu, ancak tümüne zarar vermeden ayırmak mümkünse olur.\n- 'İyiniyetli üçüncü kişiye ait olsa bile müsadere edilir.' Yanlış.\n\nTaksirli suçta kullanılan eşya için de dikkat et: Maddenin ilk fıkrası **kasıtlı** suç arar. Bu yüzden taksirli suçta kullanılan eşya o fıkraya dayanılarak müsadere edilemez.",
+      "articleRefs": [
+        "54"
+      ],
+      "derivedNumbers": [],
+      "counterNumbers": []
+    },
+    {
+      "type": "numbers",
+      "title": "Hak yoksunluğu: süreler ve sınırlar",
+      "rows": [
+        {
+          "label": "Hak yoksunluğunun süresi",
+          "value": "Hapis cezasının infazı tamamlanıncaya kadar",
+          "refs": [
+            "53"
+          ]
+        },
+        {
+          "label": "Birinci fıkranın uygulanmadığı yaş",
+          "value": "Fiil sırasında on sekiz yaşını doldurmamış olma",
+          "refs": [
+            "53"
+          ]
+        },
+        {
+          "label": "Hak kötüye kullanılarak işlenen suç – hapis cezası",
+          "value": "Hükmolunan cezanın yarısından bir katına kadar yasak (infazdan sonra işler)",
+          "refs": [
+            "53"
+          ]
+        },
+        {
+          "label": "Hak kötüye kullanılarak işlenen suç – yalnız adlî para cezası",
+          "value": "Gün sayısının yarısından bir katına kadar yasak",
+          "refs": [
+            "53"
+          ]
+        },
+        {
+          "label": "Taksirli meslek/trafik suçu – meslek yasağı veya sürücü belgesinin geri alınması",
+          "value": "En az üç ay, en çok üç yıl",
+          "refs": [
+            "53"
+          ]
+        },
+        {
+          "label": "Taksirli meslek/trafik yasağında sürenin başlangıcı",
+          "value": "Cezanın tümüyle infazı",
+          "refs": [
+            "53"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "53"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Kazanç müsaderesi",
+      "body": "**Ne müsadere edilir:**\n- Suçun işlenmesiyle **elde edilen**, suçun **konusunu oluşturan** ya da suçun işlenmesi için **sağlanan** maddi menfaatler,\n- bunların değerlendirilmesi veya dönüştürülmesi sonucu ortaya çıkan **ekonomik kazançlar**.\n\n**Şart:** Maddi menfaat suçun **mağduruna iade edilememiş** olmalı.\n\n**Karşılık değer:** Eşyaya veya maddi menfaate elkonulamadığı ya da bunlar merciine teslim edilmediği hallerde, **karşılığını oluşturan değerler** müsadere edilir.\n\n**Sonradan edinen kişi:** Eşyanın müsadere edilebilmesi için, eşyayı sonradan iktisap eden kişi Türk Medenî Kanununun iyiniyetin korunmasına ilişkin hükümlerinden **yararlanamıyor** olmalı.\n\nŞıkta 'failin bütün malvarlığı', 'vergi borcu' ya da 'yalnızca suç için harcanan para' görürsen yanlıştır. Bunlar kazanç müsaderesinin tanımında yok.",
+      "articleRefs": [
+        "55"
+      ],
+      "derivedNumbers": [],
+      "counterNumbers": []
+    },
+    {
+      "type": "rule",
+      "title": "Çocuklar, akıl hastaları ve bağımlılar",
+      "body": "**Çocuklar:** Hangi güvenlik tedbirlerinin uygulanacağı ve bunların nasıl uygulanacağı **ilgili kanunda** gösterilir.\n\n**Akıl hastası:** Fiili işlediği sırada akıl hastası olan kişi hakkında **koruma ve tedavi amaçlı** güvenlik tedbirine hükmedilir. Kişi **yüksek güvenlikli sağlık kurumunda** koruma ve tedavi altına alınır.\n- **Serbest bırakma:** Kurumun **sağlık kurulu** raporunda toplum açısından tehlikeliliğin ortadan kalktığı veya önemli ölçüde azaldığı belirtilirse, **infaz hâkimi** kararıyla serbest bırakılabilir.\n- **Kurumda en az kalma süresi:** Bu süre, 32. maddenin birinci fıkrası uyarınca tedbire hükmedilenler için geçerlidir. Ağırlaştırılmış müebbet ve müebbet hapis gerektiren suçlarda **bir yıldan**, üst sınırı **on yıldan** fazla hapis gerektiren suçlarda **altı aydan** az olamaz.\n- **Tıbbi kontrol ve takip:** Raporda gösterilen süre ve aralıklarla, kişinin **Cumhuriyet savcılığınca** yetkili sağlık kuruluşuna gönderilmesiyle sağlanır.\n- **Tehlikelilik artarsa:** **İnfaz hâkimliğince** yeniden güvenlik tedbirine hükmedilir.\n\n**Suç işleyen alkol, uyuşturucu veya uyarıcı madde bağımlısı:**\n- Güvenlik tedbiri olarak bağımlılara özgü sağlık kuruluşunda tedavi altına alınmasına karar verilir.\n- Tedavi **bağımlılıktan kurtulana kadar** sürer.\n- Kurumun sağlık kurulu raporu üzerine **infaz hâkimi** kararıyla serbest bırakılabilir.\n\nŞıkta 'hükmü veren mahkeme' görürsen yanlıştır.",
+      "articleRefs": [
+        "56",
+        "57"
+      ],
+      "derivedNumbers": [],
+      "counterNumbers": []
+    },
+    {
+      "type": "rule",
+      "title": "Tekerrür: ne zaman doğar, ne kadar sürer?",
+      "body": "**Doğuş:** Önceki suçtan verilen hüküm **kesinleştikten sonra** yeni bir suç işlenirse tekerrür hükümleri uygulanır. Bunun için cezanın **infaz edilmiş olması gerekmez**.\n\n**Süre:** Önceki cezanın **infaz edildiği tarihten** itibaren hesaplanır.\n- **Beş yıldan fazla** hapis cezası: **beş yıl** geçtikten sonra işlenen suçlarda tekerrür uygulanmaz.\n- **Beş yıl veya daha az** hapis ya da **adlî para cezası**: **üç yıl** geçtikten sonra işlenen suçlarda tekerrür uygulanmaz.\n\n**Seçimlik ceza:** Sonraki suçun maddesinde hapis cezası ile adlî para cezası seçimlik öngörülmüşse, tekerrür halinde **hapis cezasına** hükmolunur.",
+      "articleRefs": [
+        "58"
+      ],
+      "derivedNumbers": [],
+      "counterNumbers": []
+    },
+    {
+      "type": "rule",
+      "title": "Tekerrürün uygulanmadığı haller",
+      "body": "Şu durumlarda tekerrür hükümleri uygulanmaz:\n- **Kasıtlı suçlar ile taksirli suçlar** arasında.\n- **Sırf askerî suçlar ile diğer suçlar** arasında.\n- **Yabancı ülke mahkemelerinden verilen hükümler** bakımından. **İstisna:** Şu suçlarda yabancı hüküm tekerrüre esas olur:\n  - kasten öldürme,\n  - kasten yaralama,\n  - yağma,\n  - dolandırıcılık,\n  - uyuşturucu veya uyarıcı madde imal ve ticareti,\n  - parada veya kıymetli damgada sahtecilik.\n- Fiili işlediği sırada **on sekiz yaşını doldurmamış** kişinin işlediği suçlar bakımından.",
+      "articleRefs": [
+        "58"
+      ],
+      "derivedNumbers": [],
+      "counterNumbers": []
+    },
+    {
+      "type": "trap",
+      "title": "Tekerrür sorularının sevdiği tuzaklar",
+      "body": "- **Süre ne zaman başlar?** Önceki cezanın **infaz edildiği tarihten**. Hükmün verildiği tarih, kesinleştiği tarih, soruşturmanın başlaması ya da iddianamenin düzenlenmesi değil.\n- **İnfaz şart mı?** Hayır. Kesinleşmiş hükümden sonra işlenen yeni suç yeterlidir. 'Önceki ceza infaz edilmediği için tekerrür uygulanmaz' şıkkı yanlıştır.\n- **Süre hesabı:** Önceki ceza beş yıl veya daha az hapis ya da adlî para ise süre **üç yıl**dır. Beş yıldan fazla hapis ise süre **beş yıl**dır. 'On yıl', 'on beş yıl', 'yirmi yıl' şıkları kanunda yok.\n- **Ceza türü:** Kanun, sonraki suçun da hapis gerektirmesini şart koşmaz. 'Yeni suç da mutlaka hapis gerektirmeli' şıkkı yanlıştır.\n- **Yaş:** Sınır **on sekiz**. 'On beş yaş' ya da 'altmış beş yaşını doldurmuş' gibi bir sınır yoktur.\n- **Kasıt ve taksir:** Önceki suç taksirli, sonraki kasıtlı ise tekerrür uygulanmaz. Tersi için de aynısı geçerlidir.",
+      "articleRefs": [
+        "58"
+      ],
+      "derivedNumbers": [],
+      "counterNumbers": [
+        10,
+        15,
+        20,
+        65
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Yabancı mahkeme hükmü: listeyi ezberle",
+      "body": "Yabancı ülke mahkemesinin hükmü **kural olarak** tekerrüre esas olmaz. Ama 'hiçbir durumda esas olmaz' şıkkı yanlıştır. Kanunda sayılan suçlarda esas olur: kasten öldürme, kasten yaralama, yağma, dolandırıcılık, uyuşturucu veya uyarıcı madde imal ve ticareti, parada veya kıymetli damgada sahtecilik.\n\nŞıklarda sık çıkan ama listede **olmayan** suçlar şunlardır: **hırsızlık, resmî belgede sahtecilik, işkence, rüşvet**. Bunlarda yabancı hüküm tekerrüre esas olmaz. Parada sahtecilik listede, resmî belgede sahtecilik değil. Bu ikisini karıştırma.\n\nOlay sorularında kurgu genelde şöyledir: Kişi yurt dışında listedeki bir suçtan mahkûm olur, cezanın infazına hiç başlanmaz, yıllar sonra Türkiye'de yeni bir suç işler. Cevap: **tekerrür uygulanır.** Gerekçeleri:\n- Suç listede.\n- İnfaz şart değil.\n- Süre önceki cezanın infaz edildiği tarihten hesaplanır; ceza infaz edilmemişse süre dolmuş sayılamaz.\n- Kanun iki suçun aynı türden olmasını şart koşmaz.",
+      "articleRefs": [
+        "58"
+      ],
+      "derivedNumbers": [],
+      "counterNumbers": []
+    },
+    {
+      "type": "rule",
+      "title": "Mükerrir ve özel tehlikeli suçlular",
+      "body": "- Tekerrür halinde hükmolunan ceza **mükerrirlere özgü infaz rejimine** göre çektirilir.\n- Mükerrir hakkında cezanın infazından sonra **denetimli serbestlik tedbiri uygulanır**. Bu hüküm takdire bağlı değildir. 'Hâkim uygun görürse uygulamayabilir' ya da 'yarar görürse uygulayabilir' şıkları yanlıştır.\n- Bu infaz rejiminin ve denetimli serbestlik tedbirinin uygulanacağı **mahkûmiyet kararında belirtilir**.\n- Cezanın infazı ve denetimli serbestlik, **kanunda gösterilen şekilde** yapılır.\n- Aynı infaz rejiminin ve infaz sonrası denetimli serbestliğin **itiyadi suçlu, suçu meslek edinen kişi ve örgüt mensubu suçlu** hakkında da uygulanmasına **hükmedilir**.",
+      "articleRefs": [
+        "58"
+      ],
+      "derivedNumbers": [],
+      "counterNumbers": []
+    },
+    {
+      "type": "rule",
+      "title": "Sınır dışı edilme",
+      "body": "**Kim:** İşlediği suç nedeniyle **hapis cezasına** mahkûm edilen **yabancı**.\n\n**Ne zaman:** Şu kararlardan sonra ve her halde cezasının infazı tamamlandıktan sonra:\n- denetimli serbestlik tedbiri uygulanarak cezasının infazına karar verildikten,\n- ya da koşullu salıverilmesine karar verildikten sonra.\n\n**Kime bildirilir:** Durumu, sınır dışı işlemleriyle ilgili olarak değerlendirilmek üzere **derhal İçişleri Bakanlığına** bildirilir.\n\nAdalet Bakanlığı, Dışişleri Bakanlığı, Millî Savunma Bakanlığı ya da Cumhurbaşkanlığı şıkları yanlıştır.",
+      "articleRefs": [
+        "59"
+      ],
+      "derivedNumbers": [],
+      "counterNumbers": []
+    },
+    {
+      "type": "rule",
+      "title": "Tüzel kişiler hakkında güvenlik tedbirleri",
+      "body": "**İznin iptali** için şu şartların hepsi birlikte aranır:\n- Bir kamu kurumunun verdiği **izne dayalı** faaliyette bulunan **özel hukuk** tüzel kişisi olmalı,\n- suç tüzel kişinin **organ veya temsilcilerinin iştirakiyle** işlenmeli,\n- iznin verdiği yetki **kötüye kullanılmalı**,\n- suç **tüzel kişi yararına** işlenmeli,\n- **kasıtlı** suçtan mahkûmiyet olmalı.\n\n**Müsadere:** Müsadere hükümleri, yararına işlenen suçlarda özel hukuk tüzel kişileri hakkında da uygulanır.\n\n**Ölçülülük:** Bu tedbirler işlenen fiile nazaran daha ağır sonuç doğurabilecekse, hâkim bunlara **hükmetmeyebilir**.\n\n**Kapsam:** Madde hükümleri, kanunun **ayrıca belirttiği hallerde** uygulanır.",
+      "articleRefs": [
+        "60"
+      ],
+      "derivedNumbers": [],
+      "counterNumbers": []
+    },
+    {
+      "type": "trap",
+      "title": "Hangisi bu maddelerde düzenlenmiş?",
+      "body": "Bu maddelerde düzenlenen tedbirler şunlardır:\n- belli hakları kullanmaktan yoksun bırakılma,\n- eşya ve kazanç müsaderesi,\n- çocuklara ve akıl hastalarına özgü güvenlik tedbirleri,\n- suçta tekerrür,\n- sınır dışı edilme,\n- özel hukuk tüzel kişisinin **faaliyet izninin iptali**.\n\nŞıklarda şunları görürsen dikkat et; bunlar bu maddelerde tedbir olarak yer almaz: 'taşınmaz, hak ve alacaklara elkoyma', 'yurt dışına çıkış yasağı', 'gözlem altına alma', 'her türlü taşıtı kullanamama ve sürücü belgesini teslim etme', 'idari tedbir', 'mülkiyetin kamuya geçirilmesi'. Dikkat: 53. maddedeki 'sürücü belgesinin geri alınması' ayrı bir hükümdür ve taksirli suçta verilebilir; şıktaki 'her türlü taşıtı kullanamama ve belgeyi teslim etme' ifadesi bu maddelerde geçmez.\n\n**Tüzel kişiler:**\n- **Taksirli** suçta izin iptal edilmez; kural kasıtlı suç arar.\n- 60. madde tüzel kişiler için **güvenlik tedbirlerini** düzenler. 'Tüzel kişiye ne ceza ne tedbir uygulanır' şıkkı da yanlıştır.\n\n**Müsaderenin niteliği:** 60. madde 'güvenlik tedbirleri' başlığı altında müsadere hükümlerini tüzel kişilere uygular. Niteliği sorulursa cevap **güvenlik tedbiri**dir.",
+      "articleRefs": [
+        "53",
+        "54",
+        "55",
+        "56",
+        "57",
+        "58",
+        "59",
+        "60"
+      ],
+      "derivedNumbers": [],
+      "counterNumbers": []
+    },
+    {
+      "type": "numbers",
+      "title": "Tekerrür ve akıl hastaları: sayılar",
+      "rows": [
+        {
+          "label": "Önceki ceza beş yıldan fazla hapis – tekerrür süresi",
+          "value": "İnfaz tarihinden itibaren beş yıl",
+          "refs": [
+            "58"
+          ]
+        },
+        {
+          "label": "Önceki ceza beş yıl veya daha az hapis ya da adlî para – tekerrür süresi",
+          "value": "İnfaz tarihinden itibaren üç yıl",
+          "refs": [
+            "58"
+          ]
+        },
+        {
+          "label": "Tekerrür süresinin başlangıcı",
+          "value": "Önceki cezanın infaz edildiği tarih",
+          "refs": [
+            "58"
+          ]
+        },
+        {
+          "label": "Tekerrürün uygulanmadığı yaş",
+          "value": "Fiil sırasında on sekiz yaşını doldurmamış olma",
+          "refs": [
+            "58"
+          ]
+        },
+        {
+          "label": "Akıl hastası – ağırlaştırılmış müebbet veya müebbet hapis gerektiren suç – kurumda en az",
+          "value": "Bir yıl",
+          "refs": [
+            "57"
+          ]
+        },
+        {
+          "label": "Akıl hastası – üst sınırı on yıldan fazla hapis gerektiren suç – kurumda en az",
+          "value": "Altı ay",
+          "refs": [
+            "57"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "57",
+        "58"
+      ]
+    },
+    {
+      "type": "compare",
+      "title": "Eşya müsaderesi mi, kazanç müsaderesi mi?",
+      "rows": [
+        {
+          "aspect": "Kurum",
+          "left": "Eşya müsaderesi (md 54)",
+          "right": "Kazanç müsaderesi (md 55)",
+          "refs": [
+            "54",
+            "55"
+          ]
+        },
+        {
+          "aspect": "Konusu",
+          "left": "Kasıtlı suçta kullanılan, suça tahsis edilen ya da suçtan meydana gelen eşya",
+          "right": "Suçla elde edilen, suçun konusunu oluşturan ya da suç için sağlanan maddi menfaatler ve bunlardan doğan ekonomik kazançlar",
+          "refs": [
+            "54",
+            "55"
+          ]
+        },
+        {
+          "aspect": "Ek şart",
+          "left": "Eşya iyiniyetli üçüncü kişilere ait olmamalı",
+          "right": "Maddi menfaat mağdura iade edilememiş olmalı",
+          "refs": [
+            "54",
+            "55"
+          ]
+        },
+        {
+          "aspect": "Ele geçirilemezse",
+          "left": "Eşyanın değeri kadar para tutarı",
+          "right": "Karşılığını oluşturan değerler",
+          "refs": [
+            "54",
+            "55"
+          ]
+        },
+        {
+          "aspect": "İyiniyetli kişinin korunması",
+          "left": "Üçüncü kişinin sınırlı ayni hakkı saklı kalır",
+          "right": "Sonradan iktisap eden kişi Türk Medenî Kanununun iyiniyet hükümlerinden yararlanamıyor olmalı",
+          "refs": [
+            "54",
+            "55"
+          ]
+        },
+        {
+          "aspect": "Hâkimin hükmetmeyebilmesi",
+          "left": "Yalnız suçta kullanılan eşya için: müsadere suça nazaran daha ağır sonuç doğuracak ve hakkaniyete aykırı olacaksa",
+          "right": "55. maddede böyle bir hüküm yok; tüzel kişiler için 60. maddedeki kural ayrıdır",
+          "refs": [
+            "54",
+            "55"
+          ]
+        },
+        {
+          "aspect": "Özel hukuk tüzel kişisi",
+          "left": "Yararına işlenen suçlarda uygulanır",
+          "right": "Yararına işlenen suçlarda uygulanır",
+          "refs": [
+            "60"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "54",
+        "55",
+        "60"
+      ]
+    },
+    {
+      "type": "exam_stats",
+      "title": "Sınav der ki",
+      "rows": [
+        {
+          "label": "Bu ünitenin maddelerinden yayındaki soru",
+          "value": "70",
+          "refs": [
+            "53",
+            "54",
+            "55",
+            "56",
+            "57",
+            "58",
+            "59",
+            "60"
+          ]
+        },
+        {
+          "label": "md 58 — Suçta tekerrür ve özel tehlikeli suçlular",
+          "value": "29 soru",
+          "refs": [
+            "58"
+          ]
+        },
+        {
+          "label": "md 54 — Eşya müsaderesi",
+          "value": "15 soru",
+          "refs": [
+            "54"
+          ]
+        },
+        {
+          "label": "md 53 — Belli hakları kullanmaktan yoksun bırakılma",
+          "value": "13 soru",
+          "refs": [
+            "53"
+          ]
+        },
+        {
+          "label": "md 55 — Kazanç müsaderesi",
+          "value": "4 soru",
+          "refs": [
+            "55"
+          ]
+        },
+        {
+          "label": "md 60 — Tüzel kişiler hakkında güvenlik tedbirleri",
+          "value": "4 soru",
+          "refs": [
+            "60"
+          ]
+        },
+        {
+          "label": "Resmî sınavlarda",
+          "value": "2024 PAEM 8. Dönem İlk Derece Amirlik Eğitimi Yazılı Sınavı (1)",
+          "refs": [
+            "53",
+            "54",
+            "55",
+            "56",
+            "57",
+            "58",
+            "59",
+            "60"
+          ]
+        },
+        {
+          "label": "Hiç soru çıkmamış",
+          "value": "md 56",
+          "refs": [
+            "53",
+            "54",
+            "55",
+            "56",
+            "57",
+            "58",
+            "59",
+            "60"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "53",
+        "54",
+        "55",
+        "56",
+        "57",
+        "58",
+        "59",
+        "60"
+      ],
+      "generated": true
+    },
+    {
+      "type": "bridge",
+      "title": "Bu üniteden soru çöz",
+      "articleRefs": [
+        "53",
+        "54",
+        "55",
+        "56",
+        "57",
+        "58",
+        "59",
+        "60"
+      ],
+      "generated": true,
+      "rows": [
+        {
+          "label": "Madde kapsamlı seans",
+          "value": "md 53–60, 10 soru",
+          "refs": [
+            "53",
+            "54",
+            "55",
+            "56",
+            "57",
+            "58",
+            "59",
+            "60"
+          ]
+        }
+      ]
+    }
+  ]
+}

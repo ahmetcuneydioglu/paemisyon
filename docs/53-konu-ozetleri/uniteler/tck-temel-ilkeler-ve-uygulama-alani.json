@@ -1,0 +1,565 @@
+{
+  "unit": {
+    "slug": "tck-temel-ilkeler-ve-uygulama-alani",
+    "legislationSlug": "turk-ceza-kanunu",
+    "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+    "title": "Temel ilkeler ve kanunun uygulama alanı",
+    "subtitle": "Kanunilik, tanımlar, zaman ve yer bakımından uygulama, yabancı ülkede işlenen suçlar",
+    "articleFrom": "1",
+    "articleTo": "19",
+    "readingMinutes": 13,
+    "sourceLabel": "AI özeti — Türk Ceza Kanunu, md 1–17, 19",
+    "articleNos": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+      "15",
+      "16",
+      "17",
+      "19"
+    ],
+    "generatedBy": "claude-opus-5-5 (ozet-uret.ts)"
+  },
+  "blocks": [
+    {
+      "type": "concept",
+      "title": "Ceza Kanunu neyi korur?",
+      "body": "Ceza Kanunu'nun işi korumak ve önlemektir. Korunanlar şunlardır: kişi hak ve özgürlükleri, kamu düzen ve güvenliği, hukuk devleti, kamu sağlığı ve çevre, toplum barışı. Önlenmek istenen ise suç işlenmesidir. Bu amaç için kanunda ceza sorumluluğunun temel esasları düzenlenmiştir. Suçlar ile ceza ve güvenlik tedbirlerinin türleri de kanunda yer alır.",
+      "articleRefs": [
+        "1"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Suçta ve cezada kanunîlik ilkesi",
+      "body": "**Kanunsuz suç olmaz:** Kanunun **açıkça** suç saymadığı bir fiil için kimseye ceza verilemez. Böyle bir fiil için **güvenlik tedbiri de** uygulanamaz.\n\n**Kanunsuz ceza olmaz:** Kanunda yazılı cezalar ve güvenlik tedbirleri dışında başka bir ceza veya güvenlik tedbirine hükmolunamaz.\n\n**İdare suç koyamaz:** İdarenin düzenleyici işlemleriyle suç ve ceza konulamaz.\n\n**Kıyas yasağı:** Suç ve ceza içeren hükümlerin uygulanmasında **kıyas yapılamaz**. Bu hükümler kıyasa yol açacak biçimde **geniş yorumlanamaz**.",
+      "articleRefs": [
+        "2"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Kanunilikte sık karıştırılanlar",
+      "body": "Kanunilik sorularında aynı tuzaklar dönüp duruyor.\n\n**Güvenlik tedbiri:** 'Ceza verilemez ama güvenlik tedbiri uygulanabilir' gibi bir şık gördüğünde dur. Kural ikisini birlikte yasaklar.\n\n**Yönetmelik senaryoları:** Bir bakanlık yönetmelikle suç ve ceza koyuyorsa bu, idarenin düzenleyici işlemleriyle suç ve ceza konulamayacağı kuralına aykırıdır.\n\n**Benzerlik:** Kanunun suç saydığı fiile 'çok benziyor' diye başka bir fiili cezalandırmak kıyastır ve yasaktır. Kanun bir fiili suç sayıp ona benzeyen başka bir fiili açıkça suç saymamışsa, ikinci fiili birincinin hükmüyle cezalandırmak da kıyastır.\n\n**Yorum:** Metin yorumu yasaklamaz. Yasakladığı şey kıyas ve kıyasa yol açacak biçimde geniş yorumdur. 'Suç ve ceza içeren hükümlerde yorum yapılamaz' diyen şık yanlıştır.",
+      "articleRefs": [
+        "2"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Adalet, eşitlik, bağlayıcılık ve özel kanunlar",
+      "body": "**Adalet (md 3):** Suç işleyen kişiye, işlenen fiilin ağırlığıyla **orantılı** ceza ve güvenlik tedbirine hükmolunur.\n\n**Kanun önünde eşitlik (md 3):** Kişiler arasında şu yönlerden ayrım yapılamaz: ırk, dil, din, mezhep, milliyet, renk, cinsiyet, siyasal veya diğer fikir yahut düşünceler, felsefi inanç, milli veya sosyal köken, doğum, ekonomik ve diğer toplumsal konumlar. Hiçbir kimseye ayrıcalık tanınamaz.\n\n**Bağlayıcılık (md 4):** Ceza kanunlarını bilmemek **mazeret sayılmaz**.\n\n**Özel kanunlarla ilişki (md 5):** Bu Kanunun **genel hükümleri** iki tür kanundaki suçlar hakkında da uygulanır:\n- özel ceza kanunları,\n- ceza içeren kanunlar.",
+      "articleRefs": [
+        "3",
+        "4",
+        "5"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Tanımlar: kişiler",
+      "body": "**Vatandaş:** Fiili işlediği **sırada** Türk vatandaşı olan kişi.\n\n**Çocuk:** Henüz onsekiz yaşını doldurmamış kişi.\n\n**Kamu görevlisi:** Kamusal faaliyetin yürütülmesine atama veya seçilme yoluyla ya da herhangi bir surette katılan kişi. Katılım **sürekli, süreli veya geçici** olabilir.\n\n**Yargı görevi yapan:** Yüksek mahkemeler, adlî ve idarî mahkemeler üye ve hakimleri ile Cumhuriyet savcısı ve **avukatlar**.\n\n**İtiyadi suçlu:** Kasıtlı bir suçun temel şeklini ya da daha ağır veya daha az cezayı gerektiren nitelikli şekillerini bir yıl içinde ve farklı zamanlarda ikiden fazla işleyen kişi.\n\n**Suçu meslek edinen kişi:** Kısmen de olsa geçimini suçtan elde ettiği kazançla sağlamaya alışmış kişi.\n\n**Örgüt mensubu suçlu:** Şu kişilerden biri:\n- suç örgütünü kuran, yöneten veya örgüte katılan,\n- örgüt adına diğerleriyle birlikte veya tek başına suç işleyen.",
+      "articleRefs": [
+        "6"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Tanımlar: gece vakti, silah, basın ve yayın yolu",
+      "body": "**Gece vakti:** Güneşin batmasından bir saat sonra başlar. Doğmasından bir saat evvele kadar devam eder.\n\n**Silah:**\n1. Ateşli silahlar\n2. Patlayıcı maddeler\n3. Saldırı ve savunmada kullanılmak üzere yapılmış her türlü kesici, delici veya bereleyici alet\n4. Saldırı ve savunma amacıyla yapılmamış olsa bile **fiilen** saldırı ve savunmada kullanılmaya elverişli diğer şeyler\n5. Yakıcı, aşındırıcı, yaralayıcı, boğucu, zehirleyici, sürekli hastalığa yol açıcı nükleer, radyoaktif, kimyasal, biyolojik maddeler\n\n**Basın ve yayın yolu ile:** Her türlü yazılı, görsel, işitsel ve elektronik **kitle iletişim** aracıyla yapılan yayınlar.",
+      "articleRefs": [
+        "6"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Tanımlarda sık karıştırılanlar",
+      "body": "Tanımlarda sınav ince ayrıntıyı yakalar.\n\n**Vatandaşlık:** Fiilin işlendiği ana bakılır. 'Soruşturmanın ya da kovuşturmanın başladığı an' diyen şık yanlıştır.\n\n**Kamu görevlisi:** Tanımda 'asli ve sürekli' diye bir daraltma yoktur. Sürekli, süreli veya geçici katılım yeter.\n\n**Basın ve yayın yolu:** Tanım kitle iletişim aracıyla yapılan yayınları kapsar. 'Bireysel iletişim' bu tanımda geçmez.\n\n**Yargı görevi yapan:** Avukat ve Cumhuriyet savcısı bu tanıma girer. Adlî kolluk amiri girmez.\n\n**Silah:** Tanım geniştir. Fiilen saldırı ve savunmada kullanılmaya elverişli şeyler de girer. Yakıcı, aşındırıcı, yaralayıcı, boğucu maddeler de girer.\n\n**Tanımlı kavramlar:** 'Hangisi tanımlanmıştır' sorusunda gece vakti, çocuk, silah, itiyadi suçlu bu maddededir. Kovuşturma, suçüstü, müdafi gibi terimler burada yoktur.\n\n**Benzer kavramlar:** İtiyadi suçlu ile suçu meslek edinen kişiyi karıştırma.",
+      "articleRefs": [
+        "6"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Zaman bakımından uygulama",
+      "body": "**Geçmişe yürümezlik:** İşlendiği zaman yürürlükteki kanuna göre suç sayılmayan fiil için kimseye ceza verilemez. Güvenlik tedbiri de uygulanamaz.\n\n**Suç olmaktan çıkarma:** İşlendikten sonra yürürlüğe giren kanuna göre suç sayılmayan fiil için de kimse cezalandırılamaz. Hakkında güvenlik tedbiri de uygulanamaz. Böyle bir ceza veya tedbir hükmolunmuşsa infazı ve kanuni neticeleri **kendiliğinden** kalkar.\n\n**Lehe kanun:** Suç tarihindeki kanun ile sonraki kanunların hükümleri farklı olabilir. Bu durumda **failin lehine olan kanun** uygulanır ve infaz olunur.\n\n**İnfaz rejimi:** İnfaz rejimine ilişkin hükümler **derhal** uygulanır. Şu hükümler bunun dışındadır:\n- hapis cezasının ertelenmesi,\n- koşullu salıverilme,\n- tekerrür.\n\n**Geçici ve süreli kanunlar:** Yürürlükte bulundukları süre içinde işlenmiş suçlar hakkında uygulanmaya devam edilir.",
+      "articleRefs": [
+        "7"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Zaman kuralında sık karıştırılanlar",
+      "body": "Zaman sorularının yıldızı infaz rejimi kuralıdır. İnfaz rejimi hükümleri kural olarak derhal uygulanır. Ertelenme, koşullu salıverilme ve tekerrür bu kuralın dışındadır. Bu yüzden iki tür şık yanlıştır:\n- 'Tekerrürle ilgili hükümler her durumda derhal uygulanır.'\n- 'İnfaz rejiminin tüm kurallarında lehe kanun geçmişe uygulanır.'\n\n**Geçici ve süreli kanun:** Kanun yürürlükten kalktı diye, yürürlükteyken işlenmiş suçlara uygulanması bitmez.\n\n**Kendiliğinden kalkma:** Suç olmaktan çıkan fiilde infazın durması failin talebine bağlı değildir. İnfaz kendiliğinden kalkar.\n\n**Lehe kanun:** Metin lehe olan **kanunun** uygulanacağını söyler. Karşılaştırma kanunlar arasında yapılır.\n\n**Güvenlik tedbirleri:** Kanunilik ve geçmişe yürümezlik cezalar kadar güvenlik tedbirleri için de geçerlidir.",
+      "articleRefs": [
+        "7",
+        "2"
+      ]
+    },
+    {
+      "type": "numbers",
+      "title": "Sayılar: tanımlar",
+      "rows": [
+        {
+          "label": "Çocuk",
+          "value": "18 yaşını doldurmamış kişi",
+          "refs": [
+            "6"
+          ]
+        },
+        {
+          "label": "Gece vakti başlangıcı",
+          "value": "Güneş battıktan 1 saat sonra",
+          "refs": [
+            "6"
+          ]
+        },
+        {
+          "label": "Gece vakti bitişi",
+          "value": "Güneş doğmadan 1 saat önce",
+          "refs": [
+            "6"
+          ]
+        },
+        {
+          "label": "İtiyadi suçlu: zaman aralığı",
+          "value": "1 yıl içinde, farklı zamanlarda",
+          "refs": [
+            "6"
+          ]
+        },
+        {
+          "label": "İtiyadi suçlu: işleme sayısı",
+          "value": "İkiden fazla, yani en az 3 kez",
+          "refs": [
+            "6"
+          ]
+        }
+      ],
+      "derivedNumbers": [
+        {
+          "value": 3,
+          "expr": "2 + 1",
+          "refs": [
+            "6"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "6"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Yer bakımından uygulama",
+      "body": "**Kural:** Türkiye'de işlenen suçlar hakkında Türk kanunları uygulanır.\n\n**Türkiye'de işlenmiş sayılma:** Suç şu hâllerde Türkiye'de işlenmiş sayılır:\n- fiil **kısmen veya tamamen** Türkiye'de işlenmişse,\n- ya da **netice** Türkiye'de gerçekleşmişse.\n\n**Türkiye'de işlenmiş sayılan yerler:**\n- Türk kara ve hava sahaları ile Türk karasuları,\n- açık deniz ve üzerindeki hava sahasında Türk deniz ve hava araçlarında veya bu araçlarla,\n- Türk deniz ve hava **savaş** araçlarında veya bu araçlarla,\n- Türkiye'nin kıt'a sahanlığında veya münhasır ekonomik bölgesinde tesis edilmiş **sabit platformlarda** veya bunlara karşı.",
+      "articleRefs": [
+        "8"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Yer kuralında sık karıştırılanlar",
+      "body": "Yer sorularında listeyi kelimesi kelimesine bil.\n\n**Konsolosluk:** Türkiye Cumhuriyeti'nin yabancı ülkedeki konsolosluk temsilcilikleri listede yoktur. 'Türkiye Cumhuriyeti konsolosluk temsilciliklerinde işlenen suç Türkiye'de işlenmiş sayılır' diyen şık yanlıştır.\n\n**Münhasır ekonomik bölge ve kıt'a sahanlığı:** İlgili bent bu bölgelerde tesis edilmiş sabit platformları sayar. Bölgeden geçen yabancı bayraklı gemi bu bende girmez.\n\n**Savaş aracı olmayan Türk araçları:** Bunlar açık deniz ve üzerindeki hava sahası için anılır.\n\n**Savaş araçları:** Yer kaydı yoktur. Yabancı bir ülkenin karasularında ya da hava sahasında olsalar da suç Türkiye'de işlenmiş sayılır.\n\n**Netice:** Hareket Türkiye'de yapılıp netice yurt dışında gerçekleşebilir. Fiil Türkiye'de işlendiği için suç yine Türkiye'de işlenmiş sayılır. 'Netice yabancı ülkede gerçekleşti, Türk kanunu uygulanamaz' şıkkı yanlıştır.\n\n**Yabancı fail:** Türkiye'de suç işleyen yabancı da Türk kanunlarına göre cezalandırılır. Kendi ülke kanunu ya da lehe olan yabancı kanun uygulanmaz.",
+      "articleRefs": [
+        "8"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Yabancı ülkede hüküm ve görev suçları",
+      "body": "**Türkiye'de işlenen suç (md 9):** Bir kimse Türkiye'de suç işlemiş olabilir. Bu suçtan yabancı ülkede hakkında hüküm verilmiş olsa bile Türkiye'de **yeniden yargılanır**. Metin beraat ile mahkûmiyet arasında ayrım yapmaz. Adalet Bakanının istemi gibi bir koşul da koymaz.\n\n**Görev suçları (md 10):** Bir kimse yabancı ülkede Türkiye namına memuriyet veya görev üstlenmiş olabilir. Bu görevden dolayı suç işlerse Türkiye'de **yeniden yargılanır**. Yabancı ülkede hakkında mahkûmiyet hükmü verilmiş olması bunu değiştirmez.",
+      "articleRefs": [
+        "9",
+        "10"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Vatandaşın yabancı ülkede işlediği suç",
+      "body": "**Kural:** Türk vatandaşı yabancı ülkede bir suç işlemiş olabilir. Suç, Türk kanunlarına göre **aşağı sınırı bir yıldan az olmayan** hapis cezasını gerektiriyorsa vatandaş Türk kanunlarına göre cezalandırılır. 13 üncü maddedeki suçlar bu kuralın dışındadır.\n\n**Şartlar:**\n- kendisi Türkiye'de bulunmalı,\n- bu suçtan yabancı ülkede **hüküm verilmemiş** olmalı,\n- Türkiye'de kovuşturulabilirlik bulunmalı.\n\n**Eşiğin altı:** Suç aşağı sınırı bir yıldan az hapis cezası gerektirebilir. Bu durumda yargılama, zarar görenin veya yabancı hükûmetin **şikayetine** bağlıdır. Şikayet, vatandaşın Türkiye'ye girdiği tarihten itibaren **altı ay** içinde yapılmalıdır.",
+      "articleRefs": [
+        "11"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Yabancının yabancı ülkede işlediği suç",
+      "body": "**Türkiye'nin zararına (f. 1):** Yabancı, yabancı ülkede Türkiye'nin zararına bir suç işlemiş ve Türkiye'de bulunuyor olabilir. Suç Türk kanunlarına göre aşağı sınırı **en az bir yıl** hapis gerektiriyorsa Türk kanunlarına göre cezalandırılır. 13 üncü maddedeki suçlar bunun dışındadır. Yargılama **Adalet Bakanının istemine** bağlıdır.\n\n**Türk vatandaşı veya Türk kanunlarına göre kurulmuş özel hukuk tüzel kişisi zararına (f. 2):** Suç yine birinci fıkrada belirtilen suç olmalıdır: aşağı sınırı en az bir yıl hapis gerektirir ve 13 üncü madde dışında kalır. Fail Türkiye'de bulunmalıdır. Yabancı ülkede hüküm verilmemiş olmalıdır. Bu koşullarda fail **zarar görenin şikayeti** üzerine cezalandırılır.\n\n**Mağdur yabancıysa (f. 3):** Fail Adalet Bakanının istemiyle yargılanır. Koşullar şunlardır:\n- suçun aşağı sınırı **üç yıldan az olmayan** hapis gerektirmesi,\n- suçluların geri verilmesi anlaşmasının bulunmaması veya geri verilme isteminin suçun işlendiği ülkenin ya da failin uyruğunda bulunduğu devletin hükûmetince kabul edilmemiş olması.\n\n**Yeniden yargılama (f. 4):** Birinci fıkradaki suçtan yabancı mahkemede şu sonuçlardan biri doğmuş olabilir:\n- mahkûmiyet,\n- davanın veya cezanın düşmesi,\n- beraat,\n- suçun kovuşturulabilir olmaktan çıkması.\nBu hâllerde yabancı, Adalet Bakanının istemi üzerine Türkiye'de yeniden yargılanır.\n\n**İstisna (f. 5):** Birinci fıkra kapsamındaki hâllerde **rüşvet ve nüfuz ticareti** suçlarından yargılama Adalet Bakanının istemine bağlı değildir.",
+      "articleRefs": [
+        "12"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Md 9, 11 ve 12'yi karıştırma",
+      "body": "**Md 9 ile md 11 farkı:** Türkiye'de işlenen suçta yabancı ülkedeki hüküm engel değildir; fail yeniden yargılanır. Türk vatandaşı ise suçu yabancı ülkede işlemiş ve orada hakkında hüküm verilmiş olabilir. Bu durumda md 11'in koşulu karşılanmaz ve vatandaş md 11 uyarınca Türkiye'de yargılanmaz. Görev suçları (md 10) ve md 13'teki suçlar ayrı kurala bağlıdır.\n\n**Md 11'de istem ve şikayet:** Md 11'de Adalet Bakanının istemi yoktur. Şikayet de yalnız aşağı sınırı bir yıldan az hapis gerektiren suçlarda aranır.\n\n**Md 12'de eşik:** Türkiye'nin zararına suçta aşağı sınır en az bir yıldır. Mağdur yabancıysa üç yıldan az olmayan hapis gerekir.\n\n**Kimin istemi?** 'Yargılama kimin istemine bağlıdır' diye sorulursa cevap Adalet Bakanıdır. Yargıtay ya da başsavcılık değildir.\n\n**Rüşvet ve nüfuz ticareti:** Birinci fıkra kapsamındaki hâllerde bu suçlarda istem aranmaz.",
+      "articleRefs": [
+        "9",
+        "11",
+        "12"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Yabancı ülkede işlense de Türk kanunu uygulanan suçlar",
+      "body": "**Kural:** Aşağıdaki suçlar yabancı ülkede vatandaş **veya yabancı** tarafından işlense de Türk kanunları uygulanır:\n- İkinci Kitap, Birinci Kısım altındaki suçlar\n- İkinci Kitap, Dördüncü Kısım altındaki Üçüncü, Dördüncü, Beşinci, Altıncı, Yedinci ve Sekizinci Bölümlerdeki suçlar\n- İşkence (madde 94, 95)\n- Çevrenin kasten kirletilmesi (madde 181)\n- Uyuşturucu veya uyarıcı madde imal ve ticareti (madde 188), uyuşturucu veya uyarıcı madde kullanılmasını kolaylaştırma (madde 190)\n- Parada sahtecilik (madde 197), para ve kıymetli damgaları imale yarayan araçların üretimi ve ticareti (madde 200), mühürde sahtecilik (madde 202)\n- Fuhuş (madde 227)\n- Deniz, demiryolu veya havayolu ulaşım araçlarının kaçırılması veya alıkonulması (madde 223, fıkra 2 ve 3) ya da bu araçlara karşı zarar verme (madde 152)\n\n**Adalet Bakanının talebi:** Bu suçlarda Türkiye'de yargılama Adalet Bakanının talebine bağlıdır. Dördüncü Kısım'ın Üçüncü ile Yedinci arasındaki Bölümlerinde yer alan suçlar bunun dışındadır.\n\n**Yeniden yargılama:** (a) ve (b) bentlerindeki suçlarda yabancı ülkede mahkûmiyet veya beraat kararı verilmiş olabilir. Buna rağmen Adalet Bakanının talebi üzerine Türkiye'de yargılama yapılır.",
+      "articleRefs": [
+        "13"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Listede olmayanı bul",
+      "body": "'Hangisi sayılmamıştır' soruları çok sık geliyor.\n\n**Listede olmayanlar:** Kasten öldürme, rüşvet, cinsel saldırı ve dolandırıcılık bu maddede adıyla sayılmaz; sorular bunları listede olmayan suç olarak kabul eder.\n\n**Listede olanlar:** İşkence, çevrenin kasten kirletilmesi, uyuşturucu veya uyarıcı madde imal ve ticareti, parada ve mühürde sahtecilik, fuhuş ve ulaşım araçlarının kaçırılması.\n\n**Rüşvet tuzağı:** Rüşvet 13 üncü maddede yoktur. Rüşvetle ilgili kural md 12'nin son fıkrasındadır: birinci fıkra kapsamındaki hâllerde rüşvet ve nüfuz ticaretinde Adalet Bakanının istemi aranmaz.\n\n**Yeniden yargılama:** Yabancı ülkedeki mahkûmiyet veya beraate rağmen Türkiye'de yargılamayı md 13 yalnız (a) ve (b) bentleri için açıkça düzenler.",
+      "articleRefs": [
+        "13",
+        "12"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Soruşturma koşulları, mahsup ve hak yoksunlukları",
+      "body": "**Seçimlik cezalar (md 14):** Bu kural 11 ve 12 nci maddelerdeki hâller için geçerlidir. Suçun yer aldığı kanun maddesi hapis ile adli para cezasından birini **seçimlik** saymış olabilir. Bu durumda soruşturma veya kovuşturma açılmaz.\n\n**Cezanın hesaplanması (md 15):** Bazı hâllerde cezanın miktarı soruşturma koşuludur. Bu hâllerde ceza şunlar göz önünde tutularak hesaplanır:\n- soruşturma evresinde ileri sürülen kanuni ağırlaştırıcı nedenlerin **aşağı sınırı**,\n- kanuni hafifletici nedenlerin **yukarı sınırı**.\n\n**Mahsup (md 16):** Suç nerede işlenmiş olursa olsun mahsup yapılır. Yabancı ülkede şu durumlarda geçen süre, aynı suçtan Türkiye'de verilecek cezadan mahsup edilir:\n- gözaltı,\n- gözlem altında bulunma,\n- tutukluluk,\n- hükümlülük.\nAdli kontrol ya da ertelemede geçen deneme süresi bu sayımda yer almaz.\n\n**Hak yoksunlukları (md 17):** Yabancı mahkeme hükmü Türk hukuk düzenine aykırı olmamalıdır. Hüküm Türk kanunlarına göre bir haktan yoksunluğu da gerektirmelidir. Bu durumda mahkeme, **Cumhuriyet savcısının istemi** üzerine hükmün Türk kanunlarındaki sonuçlarının geçerli olmasına karar verir.",
+      "articleRefs": [
+        "14",
+        "15",
+        "16",
+        "17"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Yabancı kanunun göz önünde bulundurulması",
+      "body": "**Kural:** Türkiye'nin egemenlik alanı dışında işlenen bir suç için Türkiye'de yargılama yapılabilir. Bu durumda verilecek ceza, suçun işlendiği ülke kanunundaki cezanın **üst sınırından fazla olamaz**.\n\n**İstisna:** Suç şu biçimlerde işlenmişse bu sınır uygulanmaz:\n- Türkiye'nin güvenliğine karşı veya zararına,\n- Türk vatandaşına karşı ya da Türk kanunlarına göre kurulmuş özel hukuk tüzel kişisi zararına.\n\n**Dikkat:** Hareketi Türkiye'de yapılıp neticesi yurt dışında gerçekleşen suç Türkiye'de işlenmiş sayılır (md 8); bu sınır o suçta uygulanmaz.",
+      "articleRefs": [
+        "19",
+        "8"
+      ]
+    },
+    {
+      "type": "numbers",
+      "title": "Sayılar: yabancı ülkede işlenen suçlar",
+      "rows": [
+        {
+          "label": "Vatandaş: şikayet aranmayan eşik",
+          "value": "Aşağı sınırı 1 yıldan az olmayan hapis",
+          "refs": [
+            "11"
+          ]
+        },
+        {
+          "label": "Vatandaş: şikayete bağlı hâl",
+          "value": "Aşağı sınırı 1 yıldan az hapis",
+          "refs": [
+            "11"
+          ]
+        },
+        {
+          "label": "Vatandaş: şikayet süresi",
+          "value": "Türkiye'ye girişten itibaren 6 ay",
+          "refs": [
+            "11"
+          ]
+        },
+        {
+          "label": "Yabancı: Türkiye'nin zararına",
+          "value": "Aşağı sınırı en az 1 yıl hapis",
+          "refs": [
+            "12"
+          ]
+        },
+        {
+          "label": "Yabancı: mağdur yabancı",
+          "value": "Aşağı sınırı 3 yıldan az olmayan hapis",
+          "refs": [
+            "12"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "11",
+        "12"
+      ]
+    },
+    {
+      "type": "compare",
+      "title": "Vatandaş (md 11) ile yabancı (md 12)",
+      "rows": [
+        {
+          "aspect": "Fail",
+          "left": "Türk vatandaşı",
+          "right": "Yabancı",
+          "refs": [
+            "11",
+            "12"
+          ]
+        },
+        {
+          "aspect": "Suçun yeri",
+          "left": "Yabancı ülke",
+          "right": "Yabancı ülke",
+          "refs": [
+            "11",
+            "12"
+          ]
+        },
+        {
+          "aspect": "Kapsam dışı",
+          "left": "13 üncü maddedeki suçlar",
+          "right": "13 üncü maddedeki suçlar",
+          "refs": [
+            "11",
+            "12",
+            "13"
+          ]
+        },
+        {
+          "aspect": "Ceza eşiği",
+          "left": "Aşağı sınırı bir yıldan az olmayan hapis",
+          "right": "Türkiye'nin ya da Türk vatandaşının veya Türk kanunlarına göre kurulmuş özel hukuk tüzel kişisinin zararına: aşağı sınırı en az bir yıl; mağdur yabancıysa üç yıldan az olmayan hapis",
+          "refs": [
+            "11",
+            "12"
+          ]
+        },
+        {
+          "aspect": "Failin Türkiye'de bulunması",
+          "left": "Aranır",
+          "right": "Birinci ve ikinci fıkrada aranır",
+          "refs": [
+            "11",
+            "12"
+          ]
+        },
+        {
+          "aspect": "Yabancı ülkede hüküm verilmemiş olması",
+          "left": "Aranır",
+          "right": "Türk vatandaşı veya Türk kanunlarına göre kurulmuş özel hukuk tüzel kişisi zararına işlenen suçta aranır",
+          "refs": [
+            "11",
+            "12"
+          ]
+        },
+        {
+          "aspect": "Yargılamanın bağlı olduğu irade",
+          "left": "Eşik altında: zarar görenin veya yabancı hükûmetin şikayeti",
+          "right": "Türkiye'nin zararına ve mağdur yabancıysa: Adalet Bakanının istemi; Türk vatandaşı zararına: zarar görenin şikayeti",
+          "refs": [
+            "11",
+            "12"
+          ]
+        },
+        {
+          "aspect": "Rüşvet ve nüfuz ticareti",
+          "left": "Ayrı hüküm yok",
+          "right": "Birinci fıkra hâllerinde Adalet Bakanının istemi aranmaz",
+          "refs": [
+            "12"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "11",
+        "12",
+        "13"
+      ]
+    },
+    {
+      "type": "exam_stats",
+      "title": "Sınav der ki",
+      "rows": [
+        {
+          "label": "Bu ünitenin maddelerinden yayındaki soru",
+          "value": "83",
+          "refs": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "19"
+          ]
+        },
+        {
+          "label": "md 8 — Yer bakımından uygulama",
+          "value": "15 soru",
+          "refs": [
+            "8"
+          ]
+        },
+        {
+          "label": "md 6 — Tanımlar",
+          "value": "14 soru",
+          "refs": [
+            "6"
+          ]
+        },
+        {
+          "label": "md 7 — Zaman bakımından uygulama",
+          "value": "14 soru",
+          "refs": [
+            "7"
+          ]
+        },
+        {
+          "label": "md 2 — Suçta ve cezada kanunîlik ilkesi",
+          "value": "11 soru",
+          "refs": [
+            "2"
+          ]
+        },
+        {
+          "label": "md 13 — Diğer suçlar",
+          "value": "7 soru",
+          "refs": [
+            "13"
+          ]
+        },
+        {
+          "label": "Resmî sınavlarda",
+          "value": "2024 PAEM 8. Dönem İlk Derece Amirlik Eğitimi Yazılı Sınavı (2), 2025 PAEM 9. Dönem İlk Derece Amirlik Eğitimi Yazılı Sınavı (1)",
+          "refs": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "19"
+          ]
+        },
+        {
+          "label": "Hiç soru çıkmamış",
+          "value": "md 1, md 3, md 4, md 10, md 14, md 15, md 17",
+          "refs": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "19"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17",
+        "19"
+      ],
+      "generated": true
+    },
+    {
+      "type": "bridge",
+      "title": "Bu üniteden soru çöz",
+      "articleRefs": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17",
+        "19"
+      ],
+      "generated": true,
+      "rows": [
+        {
+          "label": "Madde kapsamlı seans",
+          "value": "md 1–17, 19, 10 soru",
+          "refs": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "19"
+          ]
+        }
+      ]
+    }
+  ]
+}
