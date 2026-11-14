@@ -1,4 +1,10 @@
-import { BadRequestException, Injectable, Logger, UnauthorizedException } from '@nestjs/common';
+import {
+  BadRequestException,
+  ConflictException,
+  Injectable,
+  Logger,
+  ServiceUnavailableException,
+} from '@nestjs/common';
 import { SignJWT, importPKCS8 } from 'jose';
 
 /** Play satın almasından çıkarılan normalize alanlar (Apple ile aynı sözleşme). */
@@ -59,7 +65,8 @@ export class GooglePlayVerifier {
   /** Servis hesabı JWT'siyle erişim jetonu al; süresi dolana dek önbellekte tut. */
   private async accessToken(): Promise<string> {
     if (!this.account) {
-      throw new UnauthorizedException('Play doğrulaması yapılandırılmadı.');
+      // 401 DEĞİL: istemci 401'i oturum hatası sayıp kullanıcıyı çıkarır (15 Kas 2026 denetimi).
+      throw new ServiceUnavailableException('Play doğrulaması yapılandırılmadı.');
     }
     // 60 sn emniyet payı: sınırda kalan jetonla istek atıp 401 yeme.
     if (this.token && this.token.expiresAt - 60_000 > Date.now()) {
@@ -87,9 +94,8 @@ export class GooglePlayVerifier {
       }),
     });
     if (!res.ok) {
-      throw new UnauthorizedException(
-        `Play erişim jetonu alınamadı (${res.status}): ${await res.text()}`,
-      );
+      this.logger.error(`Play erişim jetonu alınamadı (${res.status}): ${await res.text()}`);
+      throw new ServiceUnavailableException('Google Play doğrulaması geçici olarak yapılamıyor.');
     }
     const body = (await res.json()) as { access_token: string; expires_in: number };
     this.token = {
@@ -109,7 +115,10 @@ export class GooglePlayVerifier {
       throw new BadRequestException('Satın alma Google Play tarafında bulunamadı.');
     }
     if (!res.ok) {
-      throw new UnauthorizedException(`Play doğrulaması başarısız (${res.status}).`);
+      // 401/403/429/5xx: bizim kimliğimiz ya da Google tarafı — satın alma geçersiz değil.
+      // 503: istemci işlemi açık tutar ve yeniden dener (401 kullanıcıyı çıkarırdı).
+      this.logger.error(`Play doğrulaması başarısız (${res.status}).`);
+      throw new ServiceUnavailableException('Google Play doğrulaması geçici olarak yapılamıyor.');
     }
     return (await res.json()) as Record<string, unknown>;
   }
@@ -127,33 +136,53 @@ export class GooglePlayVerifier {
       }))
       .sort((a, b) => (b.exp?.getTime() ?? 0) - (a.exp?.getTime() ?? 0))[0];
 
-    // İptal edilmiş abonelik dönem sonuna kadar GEÇERLİDİR: erişim süre
-    // dolunca kapanır ve bunu zaten expiresDate taşır. İADE ise ayrı bir
-    // olaydır — RTDN'den SUBSCRIPTION_REVOKED ile gelir, burada üretilmez.
-    // (state yalnız günlüğe yazılır; karar tarihe dayanır.)
+    // Ödemesi henüz onaylanmamış abonelik premium AÇMAZ (15 Kas 2026 denetimi bulgu 4:
+    // yalnız günlüğe yazılıyordu, bitiş yoksa "süresiz aktif" sayılıyordu). 409: istemci işlemi
+    // kapatmaz; ödeme onaylanınca mağaza işlemi yeniden yollar.
     if (state === 'SUBSCRIPTION_STATE_PENDING') {
-      this.logger.warn(`Abonelik beklemede (ödeme onaylanmadı): ${purchaseToken.slice(0, 12)}…`);
+      throw new ConflictException(
+        'Ödemen henüz onaylanmadı; onaylanınca premium kendiliğinden açılır.',
+      );
+    }
+
+    // İptal edilmiş abonelik dönem sonuna kadar GEÇERLİDİR: erişim süre dolunca kapanır ve
+    // bunu expiresDate taşır. İADE ayrı bir olaydır — RTDN'den voidedPurchase ile gelir.
+    // Abonelikte bitiş tarihi YOKSA erişim yoktur: null, grant()'ta "süresiz" (ömürlük)
+    // anlamına geldiği için burada "şimdi bitti"ye çevrilir.
+    let expiresDate = latest?.exp ?? null;
+    if (!expiresDate) {
+      this.logger.warn(
+        `Abonelikte bitiş tarihi yok (durum ${state}): ${purchaseToken.slice(0, 12)}…`,
+      );
+      expiresDate = new Date();
     }
 
     return {
       productId: latest?.productId ?? '',
       purchaseToken,
-      expiresDate: latest?.exp ?? null,
+      expiresDate,
       revocationDate: null,
       environment: d.testPurchase != null ? 'Test' : 'Production',
       kind: 'subscription',
     };
   }
 
-  /** Tek seferlik ürün (ömürlük): purchaseState 0=satın alındı, 1=iptal/iade. */
+  /** Tek seferlik ürün (ömürlük): purchaseState 0=satın alındı, 1=iptal/iade, 2=beklemede. */
   async verifyProduct(productId: string, purchaseToken: string): Promise<VerifiedPlayPurchase> {
     const d = await this.call(`purchases/products/${productId}/tokens/${purchaseToken}`);
     const state = Number(d.purchaseState ?? 1);
+    // Beklemedeki (ödenmemiş) ürün eskiden aktif ömürlük sayılıyordu (bulgu 4).
+    if (state === 2) {
+      throw new ConflictException(
+        'Ödemen henüz onaylanmadı; onaylanınca premium kendiliğinden açılır.',
+      );
+    }
     return {
       productId,
       purchaseToken,
       expiresDate: null, // ömürlük: süresi yok
-      revocationDate: state === 1 ? new Date() : null,
+      // Yalnız 0 satın alınmıştır; 1 ve bilinmeyen değerler erişim vermez.
+      revocationDate: state === 0 ? null : new Date(),
       environment: d.purchaseType === 0 ? 'Test' : 'Production',
       kind: 'product',
     };

@@ -64,7 +64,8 @@ export class UserSyncService {
   async ensureUser(claims: JWTPayload): Promise<AuthenticatedUser> {
     const id = claims.sub;
     if (!id) {
-      throw new Error('Token "sub" (kullanıcı id) içermiyor.');
+      // Oturum hatası (401): JwtAuthGuard HTTP dışı hataları geçici arıza (503) sayar.
+      throw new UnauthorizedException('Token "sub" (kullanıcı id) içermiyor.');
     }
 
     const cached = this.cache.get(id);

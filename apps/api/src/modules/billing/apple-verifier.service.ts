@@ -1,6 +1,17 @@
 import { X509Certificate } from 'node:crypto';
-import { BadRequestException, Injectable, UnauthorizedException } from '@nestjs/common';
-import { compactVerify, importX509 } from 'jose';
+import {
+  BadRequestException,
+  Injectable,
+  Logger,
+  ServiceUnavailableException,
+  UnprocessableEntityException,
+} from '@nestjs/common';
+import {
+  Environment,
+  SignedDataVerifier,
+  VerificationException,
+  VerificationStatus,
+} from '@apple/app-store-server-library';
 import { APPLE_ROOT_CA_G3_PEM } from './apple-root-ca-g3';
 
 /** StoreKit 2 imzalı işleminden çıkarılan normalize alanlar (Doc 15). */
@@ -14,6 +25,8 @@ export interface VerifiedTransaction {
   environment: string; // Production | Sandbox | Xcode | LocalTesting
   bundleId: string | null;
   type: string | null;
+  /** Satın almada istemcinin verdiği hesap kimliği (uygulama kullanıcı id'si); 1.x işlemlerinde yok. */
+  appAccountToken: string | null;
 }
 
 /** App Store Server Notification v2 gövdesi (imza doğrulandıktan sonra). */
@@ -24,17 +37,66 @@ export interface VerifiedNotification {
   signedTransactionInfo: string | null;
 }
 
+/** Mağaza kaydı: com.paemisyon.paemisyon, App Store Connect uygulama kimliği 6802087692. */
+const DEFAULT_BUNDLE_ID = 'com.paemisyon.paemisyon';
+const DEFAULT_APP_APPLE_ID = 6802087692;
+
 /**
  * Apple StoreKit 2 imzalı işlemini (JWS) doğrular — GÜVEN SUNUCUDA (Doc 8/15).
- * İstemciye asla güvenilmez: imza Apple'ın sertifika zincirine (Apple Root CA G3'e
- * pinlenmiş) karşı doğrulanır. Yerel Xcode StoreKit testi kök'e zincirlenemez;
- * yalnızca BILLING_TRUST_LOCAL_STOREKIT açıkken (dev) kabul edilir.
+ *
+ * Doğrulama Apple'ın resmî `@apple/app-store-server-library` SignedDataVerifier'ı ile yapılır
+ * (15 Kas 2026, Fable denetimi bulgu 1): önceki elle yazılmış zincir denetimi yalnız
+ * `X509Certificate.checkIssued` kullanıyordu; bu ad karşılaştırır, İMZA doğrulamaz. Sahte
+ * anahtarla üretilmiş, issuer adı Apple ara sertifikasınınkiyle aynı bir leaf zinciri geçiyor
+ * ve kalıcı premium açılabiliyordu. Kütüphane her halkanın imzasını doğrular, Apple OID'lerini
+ * (leaf 1.2.840.113635.100.6.11.1, ara 1.2.840.113635.100.6.2.1) arar, kökü Apple Root CA
+ * G3'e pinler, tarihleri işlemin imza anına göre denetler, bundleId ve ortamı eşleştirir.
+ *
+ * Sandbox (TestFlight / App Review) işlemleri BİLEREK kabul edilir; ortam başına ayrı
+ * doğrulayıcı vardır ve imza her ikisinde de aynı sıkılıkta doğrulanır.
+ *
+ * Yerel Xcode StoreKit testi Apple köküne zincirlenemez; yalnız BILLING_TRUST_LOCAL_STOREKIT
+ * açıkken ve production DIŞINDA kabul edilir.
  */
 @Injectable()
 export class AppleVerifier {
-  private readonly rootCert = new X509Certificate(APPLE_ROOT_CA_G3_PEM);
-  private readonly bundleId = process.env.BILLING_BUNDLE_ID || null;
-  private readonly trustLocal = process.env.BILLING_TRUST_LOCAL_STOREKIT === 'true';
+  private readonly logger = new Logger(AppleVerifier.name);
+  private readonly bundleId: string;
+  private readonly trustLocal: boolean;
+  private readonly verifiers: Record<'Production' | 'Sandbox', SignedDataVerifier>;
+
+  constructor() {
+    // Bundle denetimi eskiden env boşsa sessizce kapanıyordu (bulgu 5); artık varsayılan
+    // mağaza kaydıdır, env yalnız farklı bir kayıt için ezer.
+    this.bundleId = process.env.BILLING_BUNDLE_ID || DEFAULT_BUNDLE_ID;
+    const appAppleId = Number(process.env.BILLING_APP_APPLE_ID || DEFAULT_APP_APPLE_ID);
+
+    const wantsLocal = process.env.BILLING_TRUST_LOCAL_STOREKIT === 'true';
+    const isProd = process.env.NODE_ENV === 'production';
+    if (wantsLocal && isProd) {
+      this.logger.error(
+        'BILLING_TRUST_LOCAL_STOREKIT production’da yok sayılıyor (imzasız işlem kabul edilmez).',
+      );
+    }
+    this.trustLocal = wantsLocal && !isProd;
+
+    const roots = AppleVerifier.rootCertificates();
+    this.verifiers = {
+      Production: new SignedDataVerifier(
+        roots,
+        false,
+        Environment.PRODUCTION,
+        this.bundleId,
+        appAppleId,
+      ),
+      Sandbox: new SignedDataVerifier(roots, false, Environment.SANDBOX, this.bundleId, appAppleId),
+    };
+  }
+
+  /** Güvenilen kökler (DER). Testler sahte kök vermek için bu statik yöntemi ezer. */
+  static rootCertificates(): Buffer[] {
+    return [new X509Certificate(APPLE_ROOT_CA_G3_PEM).raw];
+  }
 
   decode(jws: string): { header: Record<string, unknown>; payload: Record<string, unknown> } {
     const parts = jws.split('.');
@@ -49,62 +111,86 @@ export class AppleVerifier {
   }
 
   async verify(jws: string): Promise<VerifiedTransaction> {
-    const { header, payload } = this.decode(jws);
+    // İmzasız okunan ortam yalnız HANGİ doğrulayıcının çalışacağını seçer; karar imzadan çıkar.
+    const { payload } = this.decode(jws);
     const env = String(payload.environment ?? '');
-    const isLocal = env === 'Xcode' || env === 'LocalTesting';
 
-    if (isLocal) {
-      // Yerel test sertifikası Apple köküne zincirlenemez → imza doğrulanamaz.
-      if (!this.trustLocal) {
-        throw new UnauthorizedException(
-          'Yerel StoreKit işlemi kabul edilmiyor (BILLING_TRUST_LOCAL_STOREKIT kapalı).',
-        );
-      }
-    } else {
-      await this.verifySignatureAndChain(jws, header);
-      const txBundle = payload.bundleId ? String(payload.bundleId) : null;
-      if (this.bundleId && txBundle && txBundle !== this.bundleId) {
-        throw new UnauthorizedException('İşlem başka bir uygulamaya ait (bundleId uyuşmuyor).');
-      }
+    if (env === Environment.XCODE || env === Environment.LOCAL_TESTING) {
+      this.assertLocalAllowed();
+      return this.normalize(payload, env);
     }
 
-    return this.normalize(payload, env);
+    const decoded = await this.run(() => this.verifierFor(env).verifyAndDecodeTransaction(jws));
+    return this.normalize(
+      decoded as unknown as Record<string, unknown>,
+      String(decoded.environment ?? env),
+    );
   }
 
-  /** İmza + sertifika zinciri (Apple Root CA G3'e pinlenmiş) doğrulaması. */
-  private async verifySignatureAndChain(jws: string, header: Record<string, unknown>) {
-    const x5c = header.x5c;
-    if (!Array.isArray(x5c) || x5c.length < 2) {
-      throw new UnauthorizedException('İmza sertifika zinciri eksik.');
-    }
-    const chain = x5c.map((b64) => new X509Certificate(Buffer.from(String(b64), 'base64')));
+  /**
+   * App Store Server Notification v2 zarfını (signedPayload JWS) doğrular.
+   * Zarf da işlemlerle aynı Apple zincirine imzalıdır; içindeki
+   * signedTransactionInfo AYRICA verify() ile doğrulanmalıdır.
+   */
+  async verifyNotification(signedPayload: string): Promise<VerifiedNotification> {
+    const { payload } = this.decode(signedPayload);
+    const data = (payload.data ?? payload.summary ?? {}) as Record<string, unknown>;
+    const env = String(data.environment ?? '');
 
-    // Zincir içi bağlar: her sertifika bir üstü tarafından imzalanmış olmalı.
-    for (let i = 0; i < chain.length - 1; i++) {
-      if (!chain[i].checkIssued(chain[i + 1])) {
-        throw new UnauthorizedException('Sertifika zinciri geçersiz.');
+    let decoded: Record<string, unknown>;
+    if (env === Environment.XCODE || env === Environment.LOCAL_TESTING) {
+      this.assertLocalAllowed();
+      decoded = payload;
+    } else {
+      decoded = (await this.run(() =>
+        this.verifierFor(env).verifyAndDecodeNotification(signedPayload),
+      )) as unknown as Record<string, unknown>;
+    }
+    const d = (decoded.data ?? {}) as Record<string, unknown>;
+    return {
+      notificationType: String(decoded.notificationType ?? ''),
+      subtype: decoded.subtype ? String(decoded.subtype) : null,
+      signedTransactionInfo: d.signedTransactionInfo ? String(d.signedTransactionInfo) : null,
+    };
+  }
+
+  private verifierFor(env: string): SignedDataVerifier {
+    // Bilinmeyen değer Production doğrulayıcısına düşer; orada ortam eşleşmesi reddeder.
+    return env === Environment.SANDBOX ? this.verifiers.Sandbox : this.verifiers.Production;
+  }
+
+  private assertLocalAllowed() {
+    if (!this.trustLocal) {
+      throw new UnprocessableEntityException(
+        'Yerel StoreKit işlemi kabul edilmiyor (BILLING_TRUST_LOCAL_STOREKIT kapalı).',
+      );
+    }
+  }
+
+  /**
+   * Kütüphane hatalarını HTTP'ye eşler. 401 ASLA dönülmez: istemci 401'i oturum hatası sayıp
+   * kullanıcıyı çıkarır (bulgu 3). Kalıcı ret 422 (istemci işlemi kapatır, Apple bildirimi
+   * yeniden denemez); geçici arıza 503 (istemci işlemi açık tutar, Apple yeniden dener).
+   */
+  private async run<T>(fn: () => Promise<T>): Promise<T> {
+    try {
+      return await fn();
+    } catch (e) {
+      if (e instanceof VerificationException) {
+        if (e.status === VerificationStatus.RETRYABLE_VERIFICATION_FAILURE) {
+          throw new ServiceUnavailableException('Apple doğrulaması geçici olarak yapılamadı.');
+        }
+        this.logger.warn(`Apple imzası reddedildi: ${VerificationStatus[e.status]}`);
+        const message =
+          e.status === VerificationStatus.INVALID_APP_IDENTIFIER
+            ? 'İşlem başka bir uygulamaya ait.'
+            : e.status === VerificationStatus.INVALID_ENVIRONMENT
+              ? 'İşlemin ortamı uyuşmuyor.'
+              : 'İşlem imzası doğrulanamadı.';
+        throw new UnprocessableEntityException(message);
       }
+      throw e;
     }
-
-    // Zincirin tepesi PINLENMİŞ Apple Root CA G3 olmalı (ya kendisi ya onun imzaladığı).
-    const top = chain[chain.length - 1];
-    const topIsRoot = top.raw.equals(this.rootCert.raw);
-    if (!topIsRoot && !top.checkIssued(this.rootCert)) {
-      throw new UnauthorizedException("Zincir Apple Root CA G3'e ulaşmıyor.");
-    }
-
-    // Geçerlilik tarihleri.
-    const now = Date.now();
-    for (const c of chain) {
-      if (now < Date.parse(c.validFrom) || now > Date.parse(c.validTo)) {
-        throw new UnauthorizedException('Sertifika süresi geçersiz.');
-      }
-    }
-
-    // JWS imzası leaf sertifikanın açık anahtarıyla doğrulanmalı (atarsa geçersiz).
-    const alg = typeof header.alg === 'string' ? header.alg : 'ES256';
-    const key = await importX509(chain[0].toString(), alg);
-    await compactVerify(jws, key);
   }
 
   private normalize(p: Record<string, unknown>, env: string): VerifiedTransaction {
@@ -120,34 +206,7 @@ export class AppleVerifier {
       environment: env,
       bundleId: p.bundleId ? String(p.bundleId) : null,
       type: p.type ? String(p.type) : null,
-    };
-  }
-
-  /**
-   * App Store Server Notification v2 zarfını (signedPayload JWS) doğrular.
-   * Zarf da işlemlerle aynı Apple zincirine imzalıdır; içindeki
-   * signedTransactionInfo AYRICA verify() ile doğrulanmalıdır.
-   */
-  async verifyNotification(signedPayload: string): Promise<VerifiedNotification> {
-    const { header, payload } = this.decode(signedPayload);
-    const data = (payload.data ?? {}) as Record<string, unknown>;
-    const env = String(data.environment ?? payload.environment ?? '');
-    const isLocal = env === 'Xcode' || env === 'LocalTesting';
-    if (isLocal) {
-      if (!this.trustLocal) {
-        throw new UnauthorizedException('Yerel bildirim kabul edilmiyor.');
-      }
-    } else {
-      await this.verifySignatureAndChain(signedPayload, header);
-    }
-    const bundle = data.bundleId ? String(data.bundleId) : null;
-    if (this.bundleId && bundle && bundle !== this.bundleId) {
-      throw new UnauthorizedException('Bildirim başka bir uygulamaya ait.');
-    }
-    return {
-      notificationType: String(payload.notificationType ?? ''),
-      subtype: payload.subtype ? String(payload.subtype) : null,
-      signedTransactionInfo: data.signedTransactionInfo ? String(data.signedTransactionInfo) : null,
+      appAccountToken: p.appAccountToken ? String(p.appAccountToken) : null,
     };
   }
 }

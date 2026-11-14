@@ -4,9 +4,11 @@ import {
   HttpException,
   Injectable,
   Logger,
+  ServiceUnavailableException,
   UnauthorizedException,
 } from '@nestjs/common';
 import type { Request } from 'express';
+import { isInvalidTokenError } from '../auth-error';
 import { SupabaseTokenService } from '../supabase-token.service';
 import { UserSyncService } from '../user-sync.service';
 import type { AuthenticatedUser } from '../auth.types';
@@ -31,19 +33,40 @@ export class JwtAuthGuard implements CanActivate {
     }
 
     const token = header.slice('Bearer '.length);
+    let claims: Awaited<ReturnType<SupabaseTokenService['verify']>>;
     try {
-      const claims = await this.tokens.verify(token);
+      claims = await this.tokens.verify(token);
+    } catch (err) {
+      // Bilinçli fırlatılan HTTP hataları (yapılandırma yok 401) aynen geçer.
+      if (err instanceof HttpException) throw err;
+      // Neden günlüğe düşer (token düşmez): geçersiz token ile JWKS arızası ayırt edilsin.
+      const reason = err instanceof Error ? `${err.name}: ${err.message}` : String(err);
+      if (isInvalidTokenError(err)) {
+        this.logger.warn(`Token doğrulanamadı: ${reason}`);
+        throw new UnauthorizedException('Oturum geçersiz veya süresi dolmuş.');
+      }
+      // JWKS'e erişilemedi / zaman aşımı: oturum sağlam, sunucu geçici olarak doğrulayamıyor.
+      // 401 dönersek istemci kullanıcıyı çıkarır (15 Kas 2026 denetimi) → 503.
+      this.logger.error(`Token doğrulaması geçici olarak yapılamadı: ${reason}`);
+      throw new ServiceUnavailableException(
+        'Kimlik doğrulaması geçici olarak yapılamıyor; biraz sonra yeniden dene.',
+      );
+    }
+
+    try {
       request.user = await this.userSync.ensureUser(claims);
       return true;
     } catch (err) {
-      // Bilinçli fırlatılan HTTP hataları (ör. ACCOUNT_SUSPENDED 403) aynen geçer;
-      // yalnızca beklenmeyen doğrulama hataları genel 401'e sarılır.
+      // Bilinçli HTTP hataları (ACCOUNT_SUSPENDED 403, ACCOUNT_DELETED 401) aynen geçer.
       if (err instanceof HttpException) throw err;
-      // Neden günlüğe düşer (token düşmez): JWKS erişimi, issuer/audience, kullanıcı yükleme hatası ayırt edilsin.
-      this.logger.warn(
-        `Token doğrulanamadı: ${err instanceof Error ? `${err.name}: ${err.message}` : String(err)}`,
+      // Token geçerli; kullanıcı yüklenemedi = veritabanı/bağlantı havuzu arızası. Bu bir
+      // oturum hatası DEĞİL: 401 dönmek havuz dolduğunda herkesi çıkış yaptırıyordu.
+      this.logger.error(
+        `Kullanıcı yüklenemedi: ${err instanceof Error ? `${err.name}: ${err.message}` : String(err)}`,
       );
-      throw new UnauthorizedException('Oturum geçersiz veya süresi dolmuş.');
+      throw new ServiceUnavailableException(
+        'Sunucu geçici olarak yanıt veremiyor; biraz sonra yeniden dene.',
+      );
     }
   }
 }

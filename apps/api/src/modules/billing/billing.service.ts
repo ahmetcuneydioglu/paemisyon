@@ -1,4 +1,4 @@
-import { BadRequestException, Injectable, Logger } from '@nestjs/common';
+import { BadRequestException, ConflictException, Injectable, Logger } from '@nestjs/common';
 import { PrismaService } from '../../infra/prisma/prisma.service';
 import { AppleVerifier } from './apple-verifier.service';
 import { GooglePlayVerifier } from './google-play-verifier.service';
@@ -121,54 +121,37 @@ export class BillingService {
 
     // GÜVENLİK: bir ödeme yalnız TEK hesaba premium verir. Aynı işlem başka
     // hesapla doğrulanırsa (aile paylaşımı/hesap değişimi) abonelik yeni
-    // hesaba TAŞINIR — ama eski hesabın bu abonelikten gelen entitlement'ı
-    // İPTAL edilir. Aksi halde 1 ödeme = N hesap premium açığı doğardı.
-    if (existing && existing.userId !== userId) {
-      await this.prisma.entitlement.updateMany({
-        where: { userId: existing.userId, sourceSubscriptionId: existing.id },
-        data: { isPremium: false, sourceSubscriptionId: null },
+    // hesaba TAŞINIR; eski hesabın hakkı aşağıda kalan kaynaklarından yeniden
+    // hesaplanır. Aksi halde 1 ödeme = N hesap premium açığı doğardı.
+    const previousOwner = existing && existing.userId !== userId ? existing.userId : null;
+
+    if (existing) {
+      await this.prisma.subscription.update({
+        where: { id: existing.id },
+        data: {
+          userId,
+          planId: plan.id,
+          provider: tx.provider,
+          status,
+          currentPeriodEnd: tx.expiresDate,
+        },
       });
-      this.userSync.invalidate(existing.userId);
+    } else {
+      await this.prisma.subscription.create({
+        data: {
+          userId,
+          planId: plan.id,
+          provider: tx.provider,
+          status,
+          originalTransactionId: tx.transactionId,
+          currentPeriodEnd: tx.expiresDate,
+        },
+      });
     }
 
-    const sub = existing
-      ? await this.prisma.subscription.update({
-          where: { id: existing.id },
-          data: {
-            userId,
-            planId: plan.id,
-            provider: tx.provider,
-            status,
-            currentPeriodEnd: tx.expiresDate,
-          },
-        })
-      : await this.prisma.subscription.create({
-          data: {
-            userId,
-            planId: plan.id,
-            provider: tx.provider,
-            status,
-            originalTransactionId: tx.transactionId,
-            currentPeriodEnd: tx.expiresDate,
-          },
-        });
+    if (previousOwner) await this.recomputeEntitlement(previousOwner);
+    await this.recomputeEntitlement(userId);
 
-    await this.prisma.entitlement.upsert({
-      where: { userId },
-      update: {
-        isPremium: active,
-        validUntil: tx.expiresDate,
-        sourceSubscriptionId: sub.id,
-      },
-      create: {
-        userId,
-        isPremium: active,
-        validUntil: tx.expiresDate,
-        sourceSubscriptionId: sub.id,
-      },
-    });
-
-    this.userSync.invalidate(userId); // guard cache — premium anında yansısın
     return {
       isPremium: active,
       validUntil: tx.expiresDate,
@@ -217,11 +200,7 @@ export class BillingService {
           where: { id: sub.id },
           data: { status: 'cancelled' },
         });
-        await this.prisma.entitlement.updateMany({
-          where: { userId: sub.userId, sourceSubscriptionId: sub.id },
-          data: { isPremium: false },
-        });
-        this.userSync.invalidate(sub.userId);
+        await this.recomputeEntitlement(sub.userId);
         this.logger.log(`Play iadesi işlendi (user=${sub.userId}).`);
       }
       return { ok: true };
@@ -246,9 +225,16 @@ export class BillingService {
     }
 
     const isLifetime = payload.oneTimeProductNotification != null;
-    const purchase = isLifetime
-      ? await this.google.verifyProduct(productId ?? '', token)
-      : await this.google.verifySubscription(token);
+    let purchase: Awaited<ReturnType<GooglePlayVerifier['verifySubscription']>>;
+    try {
+      purchase = isLifetime
+        ? await this.google.verifyProduct(productId ?? '', token)
+        : await this.google.verifySubscription(token);
+    } catch (e) {
+      // Ödemesi beklemede: değişecek bir şey yok; 200 dön ki Pub/Sub yeniden yollamasın.
+      if (e instanceof ConflictException) return { ok: true };
+      throw e;
+    }
 
     const active = this.isActive(purchase);
     await this.prisma.subscription.update({
@@ -258,17 +244,62 @@ export class BillingService {
         currentPeriodEnd: purchase.expiresDate,
       },
     });
-    // Entitlement yalnız bu abonelikten besleniyorsa güncellenir (manuel
-    // premium başka kaynaktan verilmişse ona dokunma).
-    await this.prisma.entitlement.updateMany({
-      where: { userId: sub.userId, sourceSubscriptionId: sub.id },
-      data: { isPremium: active, validUntil: purchase.expiresDate },
-    });
-    this.userSync.invalidate(sub.userId);
+    await this.recomputeEntitlement(sub.userId);
     this.logger.log(
       `Play bildirimi işlendi → ${active ? 'premium' : 'düştü'} (user=${sub.userId}).`,
     );
     return { ok: true };
+  }
+
+  /**
+   * Premium hakkını kullanıcının BÜTÜN geçerli kaynaklarından yeniden hesaplar (15 Kas 2026
+   * denetimi bulgu 6). Eskiden hak tek yuvalıydı ve son yazan kazanıyordu: cihazdaki aylık
+   * aboneliğin eşitlenmesi panelden verilmiş süresiz premium'u abonelik bitişine kısaltıyor,
+   * ömürlük + abonelik sahibinde abonelik bitişi premium'u kapatıyordu.
+   *
+   * Kaynaklar: (a) elle verilmiş hak (entitlement satırı, sourceSubscriptionId boş ve hâlâ
+   * geçerli), (b) durumu active olan ve süresi dolmamış abonelikler. En geç biten kazanır,
+   * süresiz (ömürlük ya da süresiz manuel) her şeyi yener. Abonelik kazanırsa satır ona bağlanır.
+   * Bilinen sınır: elle verilmiş hak daha geç biten bir abonelik tarafından ezilir; o abonelik
+   * sonradan iade edilirse elle verilen kalan süre geri gelmez (ayrı kolon gerektirir).
+   */
+  async recomputeEntitlement(userId: string, now: Date = new Date()) {
+    const current = await this.prisma.entitlement.findUnique({ where: { userId } });
+    const subs = await this.prisma.subscription.findMany({
+      where: { userId, status: 'active' },
+      select: { id: true, currentPeriodEnd: true },
+    });
+
+    type Candidate = { until: Date | null; sourceSubscriptionId: string | null };
+    const candidates: Candidate[] = [];
+    const live = (until: Date | null) => until == null || until.getTime() > now.getTime();
+
+    if (
+      current &&
+      current.isPremium &&
+      current.sourceSubscriptionId == null &&
+      live(current.validUntil)
+    ) {
+      candidates.push({ until: current.validUntil, sourceSubscriptionId: null });
+    }
+    for (const s of subs) {
+      if (live(s.currentPeriodEnd))
+        candidates.push({ until: s.currentPeriodEnd, sourceSubscriptionId: s.id });
+    }
+
+    const rank = (c: Candidate) => (c.until == null ? Number.POSITIVE_INFINITY : c.until.getTime());
+    const best = candidates.sort((a, b) => rank(b) - rank(a))[0] ?? null;
+
+    const data = best
+      ? { isPremium: true, validUntil: best.until, sourceSubscriptionId: best.sourceSubscriptionId }
+      : { isPremium: false, validUntil: current?.validUntil ?? null, sourceSubscriptionId: null };
+    await this.prisma.entitlement.upsert({
+      where: { userId },
+      update: data,
+      create: { userId, ...data },
+    });
+    this.userSync.invalidate(userId); // guard cache — premium anında yansısın
+    return data;
   }
 
   /** Süresiz ürün (ömürlük) hep aktif; iade/geri alma (revocation) her tipte düşürür. */
@@ -314,13 +345,7 @@ export class BillingService {
         currentPeriodEnd: tx.expiresDate,
       },
     });
-    // Entitlement yalnız bu abonelikten besleniyorsa güncellenir (manuel/premium
-    // başka kaynaktan verilmişse ona dokunma).
-    await this.prisma.entitlement.updateMany({
-      where: { userId: sub.userId, sourceSubscriptionId: sub.id },
-      data: { isPremium: active, validUntil: tx.expiresDate },
-    });
-    this.userSync.invalidate(sub.userId);
+    await this.recomputeEntitlement(sub.userId);
     this.logger.log(
       `Apple bildirimi işlendi: ${note.notificationType}/${note.subtype ?? '-'} → ${active ? 'premium' : 'düştü'} (user=${sub.userId})`,
     );
