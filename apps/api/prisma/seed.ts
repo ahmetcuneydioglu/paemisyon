@@ -111,10 +111,10 @@ async function main() {
   // Rozet kataloğu (Doc 19 §3.2) — kazanım kuralı kind+threshold ile deterministik.
   // Metinler yetişkin ve profesyonel (Duolingo kalitesi, çocukça değil).
   const badges = [
-    { key: 'first_session', name: 'İlk Adım', description: 'İlk quiz oturumunu tamamla', kind: BadgeKind.solved, threshold: 1, sortOrder: 1 },
+    { key: 'first_session', name: 'İlk Adım', description: 'İlk sorunu çöz', kind: BadgeKind.solved, threshold: 1, sortOrder: 1 },
     { key: 'solved_100', name: '100 Soru', description: '100 soru çöz', kind: BadgeKind.solved, threshold: 100, sortOrder: 2 },
     { key: 'solved_500', name: '500 Soru', description: '500 soru çöz', kind: BadgeKind.solved, threshold: 500, sortOrder: 3 },
-    { key: 'solved_1000', name: '1000 Soru', description: '1000 soru çöz', kind: BadgeKind.solved, threshold: 1000, sortOrder: 4 },
+    { key: 'solved_1000', name: '1.000 Soru', description: '1.000 soru çöz', kind: BadgeKind.solved, threshold: 1000, sortOrder: 4 },
     { key: 'streak_3', name: '3 Gün Seri', description: '3 gün üst üste çalış', kind: BadgeKind.streak, threshold: 3, sortOrder: 5 },
     { key: 'streak_7', name: '7 Gün Seri', description: '7 gün üst üste çalış', kind: BadgeKind.streak, threshold: 7, sortOrder: 6 },
     { key: 'streak_30', name: '30 Gün Seri', description: '30 gün üst üste çalış', kind: BadgeKind.streak, threshold: 30, sortOrder: 7 },
