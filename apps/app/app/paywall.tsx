@@ -1,6 +1,6 @@
 import { useRouter } from "expo-router";
 import { Check, X } from "lucide-react-native";
-import { useEffect, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import { Alert, Linking, Platform, Pressable, View } from "react-native";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { AppText, Badge, Button, Card, IconButton, Notice, Screen, Skeleton } from "@/components/ui";
@@ -33,6 +33,11 @@ export default function PaywallScreen() {
   const storePlans = (plans.data ?? []).filter((p) => skuOf(p));
   const picked = storePlans.find((p) => p.key === selected) ?? storePlans.find((p) => p.period === "yearly") ?? storePlans[0] ?? null;
 
+  // Derin bağlantıyla (bildirim, paylaşılan bağlantı) açılınca geri gidilecek ekran yoktur; kapat
+  // ve satın alma sonrası "Tamam" o hâlde Bugün'e döner (13 Kas 2026: X hiçbir şey yapmıyordu).
+  // Mağaza olayı aboneliğinden önce tanımlı: abonelik onu kullanır.
+  const kapat = useCallback(() => (router.canGoBack() ? router.back() : router.replace("/(tabs)")), [router]);
+
   useEffect(() => {
     if (!plans.data || !storeSupported) return;
     loadStoreProducts(plans.data)
@@ -53,7 +58,7 @@ export default function PaywallScreen() {
         else if (e.type === "pending") Alert.alert("Ödemen onay bekliyor", "Tamamlanınca premium kendiliğinden açılır.");
         else if (e.type === "error") Alert.alert("Satın alma tamamlanamadı", e.message);
       }),
-    [router],
+    [kapat],
   );
 
   const buy = async () => {
@@ -89,9 +94,6 @@ export default function PaywallScreen() {
     return (amount / 12).toLocaleString("tr-TR", { style: "currency", currency: prod?.currency ?? p.currency });
   };
   const isPremium = me.data?.isPremium ?? false;
-  // Derin bağlantıyla (bildirim, paylaşılan bağlantı) açılınca geri gidilecek ekran yoktur; kapat
-  // ve satın alma sonrası "Tamam" o hâlde Bugün'e döner (13 Kas 2026: X hiçbir şey yapmıyordu).
-  const kapat = () => (router.canGoBack() ? router.back() : router.replace("/(tabs)"));
 
   return (
     <View style={{ flex: 1, backgroundColor: colors.bg }}>
