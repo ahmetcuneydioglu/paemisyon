@@ -1,0 +1,703 @@
+{
+  "unit": {
+    "slug": "tck-vucut-dokunulmazligi-iskence-ve-koruma-yukumlulukleri",
+    "legislationSlug": "turk-ceza-kanunu",
+    "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+    "title": "Vücut dokunulmazlığı, işkence ve koruma yükümlülükleri",
+    "subtitle": "Kasten ve taksirle yaralama, insan üzerinde deney, işkence, eziyet, terk, yardım yükümlülüğü, çocuk düşürtme ve kısırlaştırma",
+    "articleFrom": "86",
+    "articleTo": "101",
+    "readingMinutes": 13,
+    "sourceLabel": "AI özeti — Türk Ceza Kanunu, md 86, 87, 89, 90, 92, 94–101",
+    "articleNos": [
+      "86",
+      "87",
+      "89",
+      "90",
+      "92",
+      "94",
+      "95",
+      "96",
+      "97",
+      "98",
+      "99",
+      "100",
+      "101"
+    ],
+    "generatedBy": "claude-opus-5-5 (ozet-uret.ts)",
+    "sortOrder": 8
+  },
+  "blocks": [
+    {
+      "type": "concept",
+      "title": "Hedef: insan bedeni",
+      "body": "Bu ünitedeki suçların ortak noktası insan bedenidir. Kasten yaralamada fail, başkasının vücuduna bilerek acı verir ya da sağlığını veya algılama yeteneğini bozar. Taksirle yaralamada aynı sonuç dikkatsizlikten doğar. İşkencede fail kamu görevlisidir. Eziyette ise herhangi bir kişi fail olabilir. Terk ile yardım veya bildirim yükümlülüğünün yerine getirilmemesi, kendini idare edemeyen kişiyi korumasız bırakan suçlardır. İlkinde korunması gereken birini kendi haline bırakırsın. İkincisinde kendini idare edemeyen birine yardım etmez ya da durumu bildirmezsin.",
+      "articleRefs": [
+        "86",
+        "89",
+        "94",
+        "96",
+        "97",
+        "98"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Kasten yaralama",
+      "body": "**Temel hâl:** Kasten başkasının vücuduna acı veren veya sağlığının ya da algılama yeteneğinin bozulmasına neden olan kişiye bir yıl altı aydan üç yıla kadar hapis cezası verilir.\n\n**Basit tıbbî müdahaleyle giderilebilecek hafif yaralama:** Mağdurun şikâyeti üzerine altı aydan bir yıl altı aya kadar hapis veya adlî para cezası verilir. Suç kadına karşı işlenmişse cezanın alt sınırı dokuz aydan az olamaz.\n\n**Nitelikli hâller:** Bu hâllerde şikâyet aranmaz ve ceza yarı oranında artırılır.\n- Üstsoya, altsoya, eşe, boşandığı eşe veya kardeşe karşı\n- Beden veya ruh bakımından kendisini savunamayacak durumdaki kişiye karşı\n- Kişinin yerine getirdiği kamu görevi nedeniyle\n- Kamu görevlisinin sahip bulunduğu nüfuz kötüye kullanılarak\n- Silahla\n- Canavarca hisle (bu bentte artırım **bir kat**)",
+      "articleRefs": [
+        "86"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Hafif yaralama: şikâyet mi, resen mi?",
+      "body": "Raporda yaralamanın basit bir tıbbî müdahaleyle giderilebilecek ölçüde hafif olduğu yazıyorsa iki sonuç çıkar. Soruşturma mağdurun şikâyetine bağlıdır ve ceza temel hâlden düşüktür. Bu kurguda \"soruşturma ve kovuşturma resen yapılır\" şıkkı yanlıştır.\n\nAma dikkat: Fiil nitelikli hâllerden birine giriyorsa madde açıkça \"şikâyet aranmaksızın\" der. Boşandığı eşe karşı ya da silahla işlenen yaralama bu hâllere örnektir. Boşandığı eşe yönelik yaralama temel şekil değil, nitelikli şekildir.",
+      "articleRefs": [
+        "86"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Neticesi sebebiyle ağırlaşmış yaralama",
+      "body": "Kasten yaralama aşağıdaki sonuçlara **neden olmuşsa**, md 86'ya göre belirlenen ceza artırılır.\n\n**Bir kat artırım:**\n- Duyu veya organ işlevinin sürekli zayıflaması\n- Konuşmada sürekli zorluk\n- Yüzde sabit iz\n- Yaşamı tehlikeye sokan durum\n- Gebe kadının çocuğunun vaktinden önce doğması\n\nAlt sınır: md 86'nın birinci fıkrasına giren hâllerde dört yıl, üçüncü fıkrasına giren hâllerde altı yıldır.\n\n**İki kat artırım:**\n- İyileşmesi olanağı bulunmayan hastalık veya bitkisel hayat\n- Duyu veya organ işlevinin yitirilmesi\n- Konuşma ya da çocuk yapma yeteneğinin kaybı\n- Yüzün sürekli değişikliği\n- Gebe kadının çocuğunun düşmesi\n\nAlt sınır: birinci fıkra hâllerinde altı yıl, üçüncü fıkra hâllerinde dokuz yıldır.\n\n**Kemik kırığı veya çıkığı:** Ceza, kırık veya çıkığın hayat fonksiyonlarındaki etkisine göre yarısına kadar artırılır.\n\n**Ölüm:** Birinci fıkra hâllerinde on yıldan ondört yıla, üçüncü fıkra hâllerinde ondört yıldan onsekiz yıla kadar hapis cezası verilir.",
+      "articleRefs": [
+        "87",
+        "86"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Yaralamak istedi, mağdur öldü",
+      "body": "Soru kökü genelde aynı kurgudadır. Fail \"canı yansın diye\" yumruk atar, \"yaralamak kastıyla\" sopayla vurur ya da yine \"yaralamak kastıyla\" hayati bölgelere ateş eder; mağdur ölür. Kast yaralamaya yöneliktir, netice ise ölümdür. Doğru cevap **neticesi sebebiyle ağırlaşmış kasten yaralama**dır. Kasten öldürme, taksirle öldürme ve \"kastı aşan adam öldürme\" şıkları çeldiricidir.\n\nFail acı çektirmek için ateş eder ve mermi mağdurun yüzünde sabit ize neden olursa da cevap md 87'dir.\n\nİki ince ayrım daha:\n- Md 87 \"neden olmuşsa\" der. Mermi isabet etmez ve hiçbir netice doğmazsa bu madde uygulanmaz.\n- \"Mağdurun kendisini savunamayacak durumda olması\" bir **netice** değildir. Mağdura bağlı bir **nitelikli hâl**dir (md 86) ve md 87'nin listesinde yer almaz.",
+      "articleRefs": [
+        "87",
+        "86"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Taksirle yaralama",
+      "body": "**Temel hâl:** Taksirle başkasının vücuduna acı veren veya sağlığının ya da algılama yeteneğinin bozulmasına neden olan kişiye dört aydan iki yıla kadar hapis veya adlî para cezası verilir.\n\n**Yarısı oranında artırım:**\n- Duyu veya organ işlevinin sürekli zayıflaması\n- Vücutta kemik kırılması\n- Konuşmada sürekli zorluk\n- Yüzde sabit iz\n- Yaşamı tehlikeye sokan durum\n- Gebe kadının çocuğunun vaktinden önce doğması\n\n**Bir kat artırım:**\n- İyileşmesi olanağı bulunmayan hastalık veya bitkisel hayat\n- Duyu veya organ işlevinin yitirilmesi\n- Konuşma ya da çocuk yapma yeteneğinin kaybı\n- Yüzün sürekli değişikliği\n- Gebe kadının çocuğunun düşmesi\n\n**Birden fazla kişi yaralanırsa:** Dokuz aydan beş yıla kadar hapis cezası verilir.\n\n**Şikâyet:** Soruşturma ve kovuşturma şikâyete bağlıdır. Suç bilinçli taksirle işlenmişse şikâyet aranmaz. Ancak birinci fıkra kapsamındaki yaralamada bu istisna da işlemez; şikâyet yine gerekir.",
+      "articleRefs": [
+        "89"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Taksirde mağdura bakılmaz, sonuca bakılır",
+      "body": "Taksirle yaralamada cezayı artıran şey mağdurun kim olduğu değil, ortaya çıkan sonuçtur. \"Alt soy veya üst soya karşı\" ya da \"çocuğa karşı\" gibi mağdura bağlı artırım sebepleri taksirle yaralama maddesinde yoktur. Bu yüzden bu tür şıklar \"hangisi artırım sebebi değildir\" sorusunun doğru cevabıdır. Buna karşılık birden fazla kişinin yaralanması, maddede ayrı ve daha ağır bir cezaya bağlanmıştır.\n\nKemik kırığında da fark var:\n- Kasten yaralamada kemik kırığı ayrı bir fıkrada düzenlenir ve ceza \"yarısına kadar\" artırılır.\n- Taksirle yaralamada kemik kırılması doğrudan yarısı oranında artırım listesindedir.\n\nAvcının çalılıktaki kıpırtıya ateş edip birini yaraladığı kurguda çeldiriciler \"olası kast\" ve \"kaza ve tesadüf\"tür. Beklenen cevap taksirle yaralamadır.",
+      "articleRefs": [
+        "89",
+        "87",
+        "86"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "İnsan üzerinde deney",
+      "body": "**Suç:** İnsan üzerinde bilimsel deney yapan kişiye bir yıldan üç yıla kadar hapis cezası verilir.\n\n**Rızaya dayalı deney, şu koşulların hepsi varsa ceza gerektirmez:**\n- Yetkili kurul veya makamlardan gerekli izin alınmış olmalı.\n- Deney önce insan dışı ortamda veya yeterli sayıda hayvan üzerinde yapılmış olmalı.\n- Bu deneylerden elde edilen veriler, deneyin insan üzerinde de yapılmasını gerekli kılmalı.\n- Deney, insan sağlığı üzerinde öngörülebilir zararlı ve kalıcı bir etki bırakmamalı.\n- İnsan onuruyla bağdaşmayacak ölçüde acı verici yöntemler uygulanmamalı.\n- Amaç, kişiye yüklenen külfetten ve sağlığına yönelik tehlikeden ağır basmalı.\n- Rıza yeterli bilgilendirmeye dayalı ve **yazılı** olmalı, herhangi bir menfaat teminine bağlı olmamalı.\n\n**Çocuklarda bunlara ek olarak:**\n- Veriler, deneyin çocuklar üzerinde de yapılmasını gerekli kılmalı.\n- Rıza açıklama yeteneğine sahip çocuğun kendi rızası **ve** ana ve babasının veya vasisinin yazılı muvafakati alınmalı.\n- İzin veren yetkili kurulda çocuk sağlığı ve hastalıkları uzmanı bulunmalı.\n\n**Tedavi amaçlı deneme:** Hasta üzerinde rıza olmadan yapılırsa bir yıla kadar hapis cezası verilir. Bilinen yöntemlerin sonuç vermeyeceği anlaşılmışsa, rızaya dayalı ve bilimsel yöntemlere uygun deneme ceza gerektirmez. Bunun için rıza yazılı olmalı ve tedaviyi uzman hekim hastane ortamında yapmalıdır.\n\n**Tüzel kişi:** Suç bir tüzel kişinin faaliyeti çerçevesinde işlenirse tüzel kişi hakkında güvenlik tedbirine hükmolunur.",
+      "articleRefs": [
+        "90"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Deney yaraladıysa adres değişir",
+      "body": "Kurgu şöyledir: Doktorlar hastanın rızasını almadan bilimsel deney yapar ve hastanın gözündeki görme yeteneği ciddi biçimde azalır. Doğru cevap \"insan üzerinde deney\" değildir. Madde açıktır: Deney suçu sonucunda mağdur yaralanır veya ölürse **kasten yaralama veya kasten öldürme** hükümleri uygulanır. Görme yeteneğinin azalması, duyu işlevinin sürekli zayıflamasıdır. Dolayısıyla cevap neticesi sebebiyle ağırlaşmış yaralamadır.\n\n**Zorunluluk hâli** ise yalnızca organ veya dokusunu **satan** kişi için öngörülmüştür. Bu kişinin sosyal ve ekonomik koşulları göz önünde bulundurularak cezasında indirim yapılabilir, hatta ceza vermekten vazgeçilebilir. Kasten yaralama ya da insan üzerinde deney için böyle bir hüküm yoktur.",
+      "articleRefs": [
+        "90",
+        "87",
+        "92"
+      ]
+    },
+    {
+      "type": "numbers",
+      "title": "Yaralama ve deney: sayılar",
+      "rows": [
+        {
+          "label": "Kasten yaralama, temel hâl",
+          "value": "1 yıl 6 ay – 3 yıl hapis",
+          "refs": [
+            "86"
+          ]
+        },
+        {
+          "label": "Basit tıbbî müdahaleyle giderilebilen hafif yaralama",
+          "value": "6 ay – 1 yıl 6 ay hapis veya adlî para (şikâyete bağlı)",
+          "refs": [
+            "86"
+          ]
+        },
+        {
+          "label": "Hafif yaralama, kadına karşı",
+          "value": "Alt sınır 9 ay",
+          "refs": [
+            "86"
+          ]
+        },
+        {
+          "label": "Kasten yaralama, nitelikli hâller",
+          "value": "Yarı oranında artırım; canavarca histe bir kat artırım",
+          "refs": [
+            "86"
+          ]
+        },
+        {
+          "label": "Netice, birinci liste",
+          "value": "Bir kat artırım; alt sınır 4 yıl (temel) / 6 yıl (nitelikli)",
+          "refs": [
+            "87"
+          ]
+        },
+        {
+          "label": "Netice, ikinci liste",
+          "value": "İki kat artırım; alt sınır 6 yıl (temel) / 9 yıl (nitelikli)",
+          "refs": [
+            "87"
+          ]
+        },
+        {
+          "label": "Kemik kırığı veya çıkığı",
+          "value": "Yarısına kadar artırım",
+          "refs": [
+            "87"
+          ]
+        },
+        {
+          "label": "Kasten yaralama sonucu ölüm",
+          "value": "10 – 14 yıl (temel) / 14 – 18 yıl (nitelikli) hapis",
+          "refs": [
+            "87"
+          ]
+        },
+        {
+          "label": "Taksirle yaralama, temel hâl",
+          "value": "4 ay – 2 yıl hapis veya adlî para",
+          "refs": [
+            "89"
+          ]
+        },
+        {
+          "label": "Taksirle yaralama, birinci sonuç listesi",
+          "value": "Yarısı oranında artırım",
+          "refs": [
+            "89"
+          ]
+        },
+        {
+          "label": "Taksirle yaralama, ikinci sonuç listesi",
+          "value": "Bir kat artırım",
+          "refs": [
+            "89"
+          ]
+        },
+        {
+          "label": "Taksirle yaralama, birden fazla kişi",
+          "value": "9 ay – 5 yıl hapis",
+          "refs": [
+            "89"
+          ]
+        },
+        {
+          "label": "İnsan üzerinde deney",
+          "value": "1 – 3 yıl hapis",
+          "refs": [
+            "90"
+          ]
+        },
+        {
+          "label": "Rızasız tedavi amaçlı deneme",
+          "value": "1 yıla kadar hapis",
+          "refs": [
+            "90"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "86",
+        "87",
+        "89",
+        "90"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "İşkence",
+      "body": "**Fail:** Kamu görevlisi.\n\n**Fiil:** Bir kişiye karşı insan onuruyla bağdaşmayan davranışlar. Bu davranışlar bedensel veya ruhsal yönden acı çekmeye, algılama veya irade yeteneğinin etkilenmesine ya da aşağılanmaya yol açacak nitelikte olmalıdır.\n\n**Ceza:** Üç yıldan oniki yıla kadar hapis. Kadına karşı işlenirse alt sınır beş yıldan az olamaz.\n\n**Sekiz yıldan onbeş yıla kadar hapis:**\n- Çocuğa, beden veya ruh bakımından kendisini savunamayacak kişiye ya da gebe kadına karşı\n- Avukata veya diğer kamu görevlisine görevi dolayısıyla\n\n**Cinsel yönden taciz şeklinde:** On yıldan onbeş yıla kadar hapis.\n\n**Ayrıca:**\n- Suçun işlenişine iştirak eden diğer kişiler de kamu görevlisi gibi cezalandırılır.\n- Suç ihmali davranışla işlenirse bu nedenle cezada indirim yapılmaz.\n- Bu suçtan dolayı zamanaşımı işlemez.",
+      "articleRefs": [
+        "94"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "İşkencede beş klasik çeldirici",
+      "body": "- **Sorgu yetkisi şartı yok.** Madde yalnızca \"kamu görevlisi\" der. \"Failin sorgulamaya veya ifade almaya yetkili memur olması gerekir\" şıkkı yanlıştır. Tutukevindeki gardiyanın gözetimindeki kişiye kötü davrandığı kurguda da cevap işkencedir.\n- **Mağdur \"bir kişi\"dir.** Suç şüphesi altında bulunması gerekmez.\n- **İhmal mümkündür.** Madde ihmali davranışla işlenmeyi açıkça anar. \"İhmali hareketle işlenemez\" ifadesi yanlıştır.\n- **Zamanaşımı hiç işlemez.** \"Dava zamanaşımı işlemez, ceza zamanaşımı işler\" gibi bölmeler çeldiricidir. Madde şikâyet şartı da öngörmez.\n- **Nitelikli hâl mi, netice mi?** Avukata görevi dolayısıyla işlemek nitelikli hâldir (md 94). Konuşmada sürekli zorluk, yüzde sabit iz ve yaşamı tehlikeye sokan durum ise neticelerdir (md 95). Cinsel yönden taciz bir netice değildir; md 94'teki ayrı bir şekildir.",
+      "articleRefs": [
+        "94",
+        "95"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Neticesi sebebiyle ağırlaşmış işkence",
+      "body": "İşkence aşağıdaki sonuçlara neden olmuşsa, md 94'e göre belirlenen ceza artırılır.\n\n**Yarı oranında artırım:**\n- Duyu veya organ işlevinin sürekli zayıflaması\n- Konuşmada sürekli zorluk\n- Yüzde sabit iz\n- Yaşamı tehlikeye sokan durum\n- Gebe kadının çocuğunun vaktinden önce doğması\n\n**Bir kat artırım:**\n- İyileşmesi olanağı bulunmayan hastalık veya bitkisel hayat\n- Duyu veya organ işlevinin yitirilmesi\n- Konuşma ya da çocuk yapma yeteneğinin kaybı\n- Yüzün sürekli değişikliği\n- Gebe kadının çocuğunun düşmesi\n\n**Kemik kırılması:** Kırığın hayat fonksiyonlarındaki etkisine göre sekiz yıldan onbeş yıla kadar hapis.\n\n**Ölüm:** Ağırlaştırılmış müebbet hapis.\n\nNetice listeleri kasten yaralamadakiyle aynıdır, oranlar farklıdır. Yaralamada bir kat ve iki kat, işkencede yarı oranında ve bir kat artırım uygulanır.",
+      "articleRefs": [
+        "95",
+        "87"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Eziyet",
+      "body": "**Fail:** Herhangi bir kişi.\n\n**Fiil:** Bir kimsenin eziyet çekmesine yol açacak davranışlar.\n\n**Ceza:** İki yıldan beş yıla kadar hapis. Kadına karşı işlenirse alt sınır iki yıl altı aydan az olamaz.\n\n**Üç yıldan sekiz yıla kadar hapis:**\n- Çocuğa, beden veya ruh bakımından kendisini savunamayacak kişiye ya da gebe kadına karşı\n- Üstsoy veya altsoya, babalık veya analığa ya da eşe veya **boşandığı eşe** karşı\n\nBoşandığı eşe karşı işlenmesi cezayı artırır. \"Artırmaz\" diyen şık yanlıştır.",
+      "articleRefs": [
+        "96"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Terk",
+      "body": "**Mağdur:** Yaşı veya hastalığı dolayısıyla kendini idare edemeyecek durumda olan **ve** bu nedenle koruma ve gözetim yükümlülüğü altında bulunan kimse.\n\n**Fiil:** Bu kimseyi kendi haline terk etmek.\n\n**Ceza:** Üç aydan iki yıla kadar hapis.\n\n**Netice:** Terk dolayısıyla mağdur bir hastalığa yakalanır, yaralanır veya ölürse neticesi sebebiyle ağırlaşmış suç hükümlerine göre ceza verilir.",
+      "articleRefs": [
+        "97"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Yardım veya bildirim yükümlülüğünün yerine getirilmemesi",
+      "body": "**Mağdur:** Yaşı, hastalığı veya yaralanması dolayısıyla ya da başka herhangi bir nedenle kendini idare edemeyecek durumdaki kimse.\n\n**Fiil:** Hâl ve koşulların elverdiği ölçüde yardım etmemek **ya da** durumu derhâl ilgili makamlara bildirmemek.\n\n**Ceza:** Bir yıla kadar hapis veya adlî para cezası.\n\n**Ölüm:** Yükümlülüğün yerine getirilmemesi dolayısıyla kişi ölürse bir yıldan üç yıla kadar hapis.\n\nTerkten farkı şudur: Burada mağdur ile fail arasında koruma ve gözetim yükümlülüğü aranmaz.",
+      "articleRefs": [
+        "98",
+        "97"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Terk mi, yardım etmemek mi?",
+      "body": "- **Yaralıyı görüp yoluna devam eden sürücü:** \"Başkası yardım eder\" diye uzaklaşır ve mağdur ölür. Cevap kasten öldürme değildir. Doğru cevap **yardım veya bildirim yükümlülüğünün yerine getirilmemesi**dir; ölüm bu suçun ağır hâlini oluşturur. \"Suçu bildirmeme\" ve \"ceza sorumluluğu yok\" şıkları da yanlıştır.\n- **Bebeğini cami avlusuna bırakan anne:** Koruma ve gözetimi altındaki, yaşı dolayısıyla kendini idare edemeyen bebeği kendi haline bırakmıştır. Cevap **terk**tir. Bebeğe bir şey olmaması suçu ortadan kaldırmaz. Hastalık, yaralanma veya ölüm yalnızca cezayı ağırlaştırır.\n- **Hamile eşi terk:** Terk maddesi mağduru, yaşı veya hastalığı dolayısıyla kendini idare edemeyen kişiyle sınırlar. Gebelik bu sayımda yoktur. Bu yüzden \"hamile eşini terk bu suçu oluşturur\" ifadesi yanlıştır.",
+      "articleRefs": [
+        "97",
+        "98"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Çocuk düşürtme ve çocuk düşürme",
+      "body": "**Rıza yoksa:** Kadının çocuğunu düşürten kişiye beş yıldan on yıla kadar hapis verilir.\n- Kadının beden veya ruh sağlığı zarar görürse: altı yıldan oniki yıla kadar hapis\n- Kadın ölürse: onbeş yıldan yirmi yıla kadar hapis\n\n**Rıza var, gebelik on haftadan fazla, tıbbi zorunluluk yok:** Düşürtene iki yıldan dört yıla kadar hapis verilir. Rıza gösteren kadına bir yıla kadar hapis veya adlî para cezası verilir.\n- Kadın zarar görürse: üç yıldan altı yıla kadar hapis\n- Kadın ölürse: dört yıldan sekiz yıla kadar hapis\n\n**Yetkili olmayan kişi:** Gebelik on haftayı doldurmamış ve rıza olsa bile iki yıldan dört yıla kadar hapis verilir. Diğer fıkralardaki fiilleri yetkisiz kişi işlerse ceza yarı oranında artırılır.\n\n**Suç sonucu gebelik:** Kadın mağduru olduğu bir suç sonucu gebe kalmışsa şu koşullarla gebeliği sona erdirene ceza verilmez:\n- Süre yirmi haftadan fazla olmamalı.\n- Kadının rızası bulunmalı.\n- Gebeliği uzman hekimler hastane ortamında sona erdirmeli.\n\n**Çocuk düşürme (md 100):** Gebelik süresi on haftadan fazla olan kadın çocuğunu **kendisi** isteyerek düşürürse bir yıla kadar hapis veya adlî para cezası verilir.",
+      "articleRefs": [
+        "99",
+        "100"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Düşürtme mi, düşürme mi?",
+      "body": "- **Gebe kadın doktorla anlaşıyor:** Gebelik on haftayı aşmış ve tıbbi zorunluluk yoksa **ikisi de** çocuk düşürtme maddesine göre sorumludur. Doktor \"düşürten\", kadın ise \"düşürtülmesine rıza gösteren\" olarak aynı fıkrada cezalandırılır. \"Yalnız doktor sorumludur\" ya da \"kadın çocuk düşürmeden sorumludur\" şıkları yanlıştır.\n- **Çocuk düşürmede fail yalnızca gebe kadındır.** Kadın çocuğunu kendisi isteyerek düşürür. İşin içinde başkası varsa suç düşürtmedir.\n- **On mu, yirmi mi?** On hafta, rızaya dayalı düşürtmenin ve çocuk düşürmenin sınırıdır. Yirmi hafta ise kadının mağduru olduğu bir suç sonucu gebe kalması hâlindeki sınırdır. \"Suç sonucu gebelikte sınır on haftadır\" diyen öncül yanlıştır.\n- **Tıbbi zorunluluk varsa** on haftayı aşan gebeliğin sonlandırılması rızaya dayalı düşürtme fıkrasına girmez.",
+      "articleRefs": [
+        "99",
+        "100"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Kısırlaştırma",
+      "body": "**Rıza yoksa:** Bir erkek veya kadını kısırlaştıran kimseye üç yıldan altı yıla kadar hapis verilir. Fail kısırlaştırma işlemi yapma yetkisi olmayan biriyse ceza üçte bir oranında artırılır.\n\n**Rıza varsa:** Suç yalnızca fiil yetkili olmayan bir kişi tarafından işlenirse oluşur. Ceza bir yıldan üç yıla kadar hapistir.\n\n**Dikkat:**\n- Yetkili kişinin rızaya dayalı kısırlaştırması madde kapsamında cezalandırılmaz. \"Rıza suçun oluşmasını engellemez\" diye genelleme yapma.\n- Madde başkasını kısırlaştırmayı düzenler. Kişinin kendi kendisini kısırlaştırması suç olarak tanımlanmamıştır.\n- Yaralama kastıyla vurulan mağdur çocuk yapma yeteneğini kaybederse suç kısırlaştırma değildir. Bu durumda neticesi sebebiyle ağırlaşmış kasten yaralama söz konusudur.",
+      "articleRefs": [
+        "101",
+        "87"
+      ]
+    },
+    {
+      "type": "numbers",
+      "title": "İşkenceden kısırlaştırmaya: sayılar",
+      "rows": [
+        {
+          "label": "İşkence, temel hâl",
+          "value": "3 – 12 yıl hapis",
+          "refs": [
+            "94"
+          ]
+        },
+        {
+          "label": "İşkence, kadına karşı",
+          "value": "Alt sınır 5 yıl",
+          "refs": [
+            "94"
+          ]
+        },
+        {
+          "label": "İşkence, nitelikli hâller",
+          "value": "8 – 15 yıl hapis",
+          "refs": [
+            "94"
+          ]
+        },
+        {
+          "label": "Cinsel yönden taciz şeklinde işkence",
+          "value": "10 – 15 yıl hapis",
+          "refs": [
+            "94"
+          ]
+        },
+        {
+          "label": "İşkence, birinci netice listesi",
+          "value": "Yarı oranında artırım",
+          "refs": [
+            "95"
+          ]
+        },
+        {
+          "label": "İşkence, ikinci netice listesi",
+          "value": "Bir kat artırım",
+          "refs": [
+            "95"
+          ]
+        },
+        {
+          "label": "İşkence sonucu kemik kırılması",
+          "value": "8 – 15 yıl hapis",
+          "refs": [
+            "95"
+          ]
+        },
+        {
+          "label": "İşkence sonucu ölüm",
+          "value": "Ağırlaştırılmış müebbet hapis",
+          "refs": [
+            "95"
+          ]
+        },
+        {
+          "label": "Eziyet, temel hâl",
+          "value": "2 – 5 yıl hapis",
+          "refs": [
+            "96"
+          ]
+        },
+        {
+          "label": "Eziyet, kadına karşı",
+          "value": "Alt sınır 2 yıl 6 ay",
+          "refs": [
+            "96"
+          ]
+        },
+        {
+          "label": "Eziyet, nitelikli hâller",
+          "value": "3 – 8 yıl hapis",
+          "refs": [
+            "96"
+          ]
+        },
+        {
+          "label": "Terk",
+          "value": "3 ay – 2 yıl hapis",
+          "refs": [
+            "97"
+          ]
+        },
+        {
+          "label": "Yardım veya bildirim yükümlülüğünün yerine getirilmemesi",
+          "value": "1 yıla kadar hapis veya adlî para",
+          "refs": [
+            "98"
+          ]
+        },
+        {
+          "label": "Aynı suçta ölüm",
+          "value": "1 – 3 yıl hapis",
+          "refs": [
+            "98"
+          ]
+        },
+        {
+          "label": "Rızasız çocuk düşürtme",
+          "value": "5 – 10 yıl; zarar hâlinde 6 – 12 yıl; ölüm hâlinde 15 – 20 yıl hapis",
+          "refs": [
+            "99"
+          ]
+        },
+        {
+          "label": "Rızalı düşürtme, gebelik on haftadan fazla",
+          "value": "Düşürtene 2 – 4 yıl; kadına 1 yıla kadar hapis veya adlî para",
+          "refs": [
+            "99"
+          ]
+        },
+        {
+          "label": "Rızalı düşürtmede zarar / ölüm",
+          "value": "3 – 6 yıl / 4 – 8 yıl hapis",
+          "refs": [
+            "99"
+          ]
+        },
+        {
+          "label": "Suç sonucu gebelikte ceza verilmeyen süre",
+          "value": "En fazla 20 hafta",
+          "refs": [
+            "99"
+          ]
+        },
+        {
+          "label": "Çocuk düşürme",
+          "value": "1 yıla kadar hapis veya adlî para",
+          "refs": [
+            "100"
+          ]
+        },
+        {
+          "label": "Rızasız kısırlaştırma",
+          "value": "3 – 6 yıl hapis; yetkisiz failde üçte bir artırım",
+          "refs": [
+            "101"
+          ]
+        },
+        {
+          "label": "Rızalı ama yetkisiz kısırlaştırma",
+          "value": "1 – 3 yıl hapis",
+          "refs": [
+            "101"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "94",
+        "95",
+        "96",
+        "97",
+        "98",
+        "99",
+        "100",
+        "101"
+      ]
+    },
+    {
+      "type": "compare",
+      "title": "Sol: işkence · Sağ: eziyet",
+      "rows": [
+        {
+          "aspect": "Fail",
+          "left": "Kamu görevlisi; iştirak edenler de kamu görevlisi gibi cezalandırılır",
+          "right": "Herhangi bir kişi",
+          "refs": [
+            "94",
+            "96"
+          ]
+        },
+        {
+          "aspect": "Temel ceza",
+          "left": "3 – 12 yıl hapis",
+          "right": "2 – 5 yıl hapis",
+          "refs": [
+            "94",
+            "96"
+          ]
+        },
+        {
+          "aspect": "Kadına karşı alt sınır",
+          "left": "5 yıl",
+          "right": "2 yıl 6 ay",
+          "refs": [
+            "94",
+            "96"
+          ]
+        },
+        {
+          "aspect": "Nitelikli hâl: mağdura bağlı",
+          "left": "Çocuk, kendini savunamayacak kişi, gebe kadın",
+          "right": "Çocuk, kendini savunamayacak kişi, gebe kadın",
+          "refs": [
+            "94",
+            "96"
+          ]
+        },
+        {
+          "aspect": "Nitelikli hâl: diğer",
+          "left": "Avukata veya diğer kamu görevlisine görevi dolayısıyla",
+          "right": "Üstsoy, altsoy, babalık, analık, eş, boşandığı eş",
+          "refs": [
+            "94",
+            "96"
+          ]
+        },
+        {
+          "aspect": "Nitelikli hâl cezası",
+          "left": "8 – 15 yıl hapis",
+          "right": "3 – 8 yıl hapis",
+          "refs": [
+            "94",
+            "96"
+          ]
+        },
+        {
+          "aspect": "İhmali davranış",
+          "left": "Açıkça düzenlenmiş; indirim yapılmaz",
+          "right": "Ayrıca düzenlenmemiş",
+          "refs": [
+            "94",
+            "96"
+          ]
+        },
+        {
+          "aspect": "Zamanaşımı",
+          "left": "İşlemez",
+          "right": "Özel hüküm yok",
+          "refs": [
+            "94",
+            "96"
+          ]
+        },
+        {
+          "aspect": "Netice sebebiyle ağırlaşma",
+          "left": "Ayrı madde; ölümde ağırlaştırılmış müebbet hapis",
+          "right": "Özel hüküm yok",
+          "refs": [
+            "95",
+            "96"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "94",
+        "95",
+        "96"
+      ]
+    },
+    {
+      "type": "exam_stats",
+      "title": "Sınav der ki",
+      "rows": [
+        {
+          "label": "Bu ünitenin maddelerinden yayındaki soru",
+          "value": "57",
+          "refs": [
+            "86",
+            "87",
+            "89",
+            "90",
+            "92",
+            "94",
+            "95",
+            "96",
+            "97",
+            "98",
+            "99",
+            "100",
+            "101"
+          ]
+        },
+        {
+          "label": "md 87 — Neticesi sebebiyle ağırlaşmış yaralama",
+          "value": "13 soru",
+          "refs": [
+            "87"
+          ]
+        },
+        {
+          "label": "md 94 — İşkence",
+          "value": "9 soru",
+          "refs": [
+            "94"
+          ]
+        },
+        {
+          "label": "md 86 — Kasten yaralama",
+          "value": "6 soru",
+          "refs": [
+            "86"
+          ]
+        },
+        {
+          "label": "md 89 — Taksirle yaralama",
+          "value": "5 soru",
+          "refs": [
+            "89"
+          ]
+        },
+        {
+          "label": "md 96 — Eziyet",
+          "value": "5 soru",
+          "refs": [
+            "96"
+          ]
+        },
+        {
+          "label": "Resmî sınavlarda",
+          "value": "2024 PAEM 8. Dönem İlk Derece Amirlik Eğitimi Yazılı Sınavı (1)",
+          "refs": [
+            "86",
+            "87",
+            "89",
+            "90",
+            "92",
+            "94",
+            "95",
+            "96",
+            "97",
+            "98",
+            "99",
+            "100",
+            "101"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "86",
+        "87",
+        "89",
+        "90",
+        "92",
+        "94",
+        "95",
+        "96",
+        "97",
+        "98",
+        "99",
+        "100",
+        "101"
+      ],
+      "generated": true
+    },
+    {
+      "type": "bridge",
+      "title": "Bu üniteden soru çöz",
+      "articleRefs": [
+        "86",
+        "87",
+        "89",
+        "90",
+        "92",
+        "94",
+        "95",
+        "96",
+        "97",
+        "98",
+        "99",
+        "100",
+        "101"
+      ],
+      "generated": true,
+      "rows": [
+        {
+          "label": "Madde kapsamlı seans",
+          "value": "md 86, 87, 89, 90, 92, 94–101, 10 soru",
+          "refs": [
+            "86",
+            "87",
+            "89",
+            "90",
+            "92",
+            "94",
+            "95",
+            "96",
+            "97",
+            "98",
+            "99",
+            "100",
+            "101"
+          ]
+        }
+      ]
+    }
+  ]
+}

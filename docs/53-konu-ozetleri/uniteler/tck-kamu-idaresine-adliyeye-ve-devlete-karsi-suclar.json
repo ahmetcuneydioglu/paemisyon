@@ -1,0 +1,843 @@
+{
+  "unit": {
+    "slug": "tck-kamu-idaresine-adliyeye-ve-devlete-karsi-suclar",
+    "legislationSlug": "turk-ceza-kanunu",
+    "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+    "title": "Kamu idaresine, adliyeye ve devlete karşı suçlar",
+    "subtitle": "Zimmetten silahlı örgüte: kamu görevlisinin suçları, adliyeyi yanıltan fiiller ve anayasal düzene saldırı",
+    "articleFrom": "247",
+    "articleTo": "316",
+    "readingMinutes": 14,
+    "sourceLabel": "AI özeti — Türk Ceza Kanunu, md 247, 248, 250–252, 254, 255, 257, 259, 265, 267, 269–273, 275, 278, 280, 281, 283, 287, 297, 299, 309–314, 316",
+    "articleNos": [
+      "247",
+      "248",
+      "250",
+      "251",
+      "252",
+      "254",
+      "255",
+      "257",
+      "259",
+      "265",
+      "267",
+      "269",
+      "270",
+      "271",
+      "272",
+      "273",
+      "275",
+      "278",
+      "280",
+      "281",
+      "283",
+      "287",
+      "297",
+      "299",
+      "309",
+      "310",
+      "311",
+      "312",
+      "313",
+      "314",
+      "316"
+    ],
+    "generatedBy": "claude-opus-5-5 (ozet-uret.ts)",
+    "sortOrder": 14
+  },
+  "blocks": [
+    {
+      "type": "concept",
+      "title": "Önce faile bak",
+      "body": "Zimmet, irtikap, görevi kötüye kullanma ve kamu görevlisinin ticareti maddelerini okurken ilk işin faile bakmak olsun. Metin bu suçların her birinde faili \"kamu görevlisi\" diye tanımlıyor. Bu yüzden irtikap gibi bir suç, sınavda çoğu zaman \"bunu kim işleyebilir?\" sorusuyla karşına çıkar. Rüşvette tablo farklıdır: Menfaat sağlayan kişi de, kendisine menfaat sağlanan kamu görevlisi de aynı cezayı alır. Ünitenin devamında önce adliyeyi yanıltan fiillere geçeceksin: iftira, suç uydurma ve yalan tanıklık. En sonda da cebir ve şiddetle anayasal düzene yönelen suçlar var.",
+      "articleRefs": [
+        "247",
+        "250",
+        "252",
+        "257",
+        "259",
+        "267",
+        "271",
+        "272",
+        "309"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Zimmet ve zimmette etkin pişmanlık",
+      "body": "**Zimmet (md 247)**\n- **Konu:** Kamu görevlisine **görevi nedeniyle zilyedliği devredilmiş** mal ya da görevlinin **koruma ve gözetimiyle yükümlü** olduğu mal.\n- **Hareket:** Malı **kendisinin veya başkasının** zimmetine geçirmek.\n- **Ceza:** 5–12 yıl hapis.\n- **Ağırlaştırıcı:** Zimmetin açığa çıkmamasını sağlamaya yönelik **hileli davranışlar** varsa ceza yarı oranında artırılır.\n- **Kullanma zimmeti:** Mal geçici bir süre kullanılıp **iade edilmek üzere** alınmışsa ceza yarı oranına kadar indirilebilir.\n\n**Etkin pişmanlık (md 248)**\nŞart: Malın **aynen iade** edilmesi ya da zararın **tamamen tazmin** edilmesi.\n- **Soruşturma başlamadan önce:** Cezanın üçte ikisi indirilir.\n- **Kovuşturma başlamadan önce, gönüllü olarak:** Cezanın yarısı indirilir.\n- **Hükümden önce:** Cezanın üçte biri indirilir.",
+      "articleRefs": [
+        "247",
+        "248"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "İrtikap ve denetim görevinin ihmali",
+      "body": "**İrtikap (md 250)**\n- **İcbar:** Kamu görevlisi, görevinin sağladığı **nüfuzu** kötüye kullanır. Bir kimseyi kendisine veya başkasına yarar sağlamaya ya da bu yolda vaatte bulunmaya **icbar** eder. Ceza: 5–10 yıl hapis.\n- **Kanunun icbar saydığı durum:** Kişi, kamu görevlisinin haksız tutumu karşısında haklı işinin hiç ya da vaktinde görülmeyeceği endişesiyle kendini mecbur hisseder. Bu endişeyle görevliye veya onun yönlendirdiği kişiye menfaat temin ederse icbar var kabul edilir.\n- **İkna:** Kamu görevlisi, görevinin sağladığı **güveni** kötüye kullanır ve **hileli davranışlarla** kişiyi ikna eder. Ceza: 3–5 yıl hapis.\n- **Hatadan yararlanma:** İkna suçu kişinin hatasından yararlanılarak işlenirse ceza 1–3 yıl hapistir.\n- **İndirim:** İrtikap edilen menfaatin değeri ve mağdurun ekonomik durumu göz önünde tutulur. Buna göre ceza yarısına kadar indirilebilir.\n\n**Denetim görevinin ihmali (md 251)**\n- Zimmet veya irtikaba **kasten göz yuman** denetimle yükümlü kamu görevlisi, işlenen suçun **müşterek faili** olur.\n- Denetimi **ihmal ederek** bu suçlara imkân sağlayan kamu görevlisi 3 ay–3 yıl hapis cezası alır.",
+      "articleRefs": [
+        "250",
+        "251"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Rüşvet: temel kural",
+      "body": "**Hareket:** Görevinin ifasıyla ilgili **bir işi yapması veya yapmaması için** menfaat sağlanır. Menfaat doğrudan ya da aracılar vasıtasıyla verilebilir. Kamu görevlisine veya onun göstereceği başka bir kişiye sağlanması fark etmez.\n- **Menfaat sağlayan kişi:** 4–12 yıl hapis.\n- **Menfaat sağlanan kamu görevlisi:** Aynı ceza.\n- **Anlaşma:** Rüşvet konusunda anlaşmaya varılırsa suç **tamamlanmış gibi** cezaya hükmolunur.\n- **Kabul edilmeyen talep veya teklif:** Görevlinin talebi ya da kişinin teklif veya vaadi karşı tarafça kabul edilmezse ceza **yarı oranında indirilir**.\n- **Aracı:** Teklifi veya talebi iletmeye, anlaşmayı sağlamaya ya da rüşvetin teminine aracılık eden kişi **müşterek fail** olur. Kamu görevlisi olup olmadığına bakılmaz.\n- **Üçüncü kişi:** Dolaylı olarak kendisine menfaat sağlanan üçüncü kişi ya da tüzel kişinin menfaati kabul eden yetkilisi de **müşterek fail** olur.\n- **Artırım:** Rüşveti alan, talep eden ya da anlaşan kişi şunlardan biriyse ceza üçte birden yarısına kadar artırılır:\n  - yargı görevi yapan,\n  - hakem,\n  - bilirkişi,\n  - noter,\n  - yeminli mali müşavir.",
+      "articleRefs": [
+        "252"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Rüşvetin kapsamı ve etkin pişmanlık",
+      "body": "**Kamu görevlisi olmayanlar da kapsamda (md 252)**\nAşağıdakiler adına hareket eden kişilere, görevleriyle ilgili iş için menfaat sağlanırsa rüşvet hükümleri uygulanır:\n- a) Kamu kurumu niteliğindeki meslek kuruluşları\n- b) Kamu kurum ve kuruluşlarının ya da bu meslek kuruluşlarının iştirakiyle kurulmuş şirketler\n- c) Bunların bünyesinde faaliyet icra eden vakıflar\n- d) Kamu yararına çalışan dernekler\n- e) Kooperatifler\n- f) Halka açık anonim şirketler\n\n**Yabancı unsur**\n- Madde, yabancı devlet kamu görevlilerine, uluslararası mahkemelerin görevlilerine, hakemlere ve uluslararası örgüt görevlilerine de uygulanır.\n- Suç yurt dışında yabancı tarafından işlenmiş olabilir. Türkiye, bir Türk kamu kurumu, Türk özel hukuk tüzel kişisi ya da Türk vatandaşıyla ilgiliyse ilgililer hakkında Türkiye'de bulundukları takdirde **resen** soruşturma ve kovuşturma yapılır.\n\n**Etkin pişmanlık (md 254)**\nŞart: Durumun **resmî makamlarca öğrenilmeden önce** bildirilmesi.\n- **Rüşvet alan:** Rüşvet konusu şeyi yetkili makamlara **aynen teslim** ederse cezaya hükmolunmaz.\n- **Anlaşan kamu görevlisi:** Durumu haber verirse cezaya hükmolunmaz.\n- **Rüşvet veren ya da anlaşan kişi:** Pişmanlık duyarak haber verirse cezaya hükmolunmaz.\n- **Suça iştirak eden diğer kişiler:** Aynı sonuç uygulanır.\n- **İstisna:** Yabancı kamu görevlilerine rüşvet verenler bu hükümden yararlanamaz.",
+      "articleRefs": [
+        "252",
+        "254"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Zimmet mi, irtikap mı, rüşvet mi?",
+      "body": "Sorular bu üç suçu birbirine karıştırmak üzerine kurulur. Şu ayrımları netleştir:\n\n- **Para vermezsen işini yapmam diyen görevli → icbar yoluyla irtikap.** Acil ameliyat ya da ameliyat sırası gibi haklı bir iş için para istenebilir. Kişi işinin hiç ya da vaktinde görülmeyeceği endişesiyle mecbur kalıp öderse kanun icbarı var sayar. Bu durum rüşvet değildir.\n- **Görevlinin yalan söyleyerek para alması → ikna yoluyla irtikap.** Örneğin zaten ödenmiş ücreti ödenmemiş gibi gösterip para alması, görevin sağladığı güveni kötüye kullanan hileli davranıştır.\n- **İş mevzuata uygun olsa da para almak rüşvettir.** Metin \"bir işi yapması veya yapmaması için\" der; işin haksız olmasını aramaz. Görevi kötüye kullanma ise ancak \"Kanunda ayrıca suç olarak tanımlanan haller dışında\" uygulanır.\n- **Menfaatin değeri ve mağdurun ekonomik durumuna göre indirim yalnız irtikapta vardır.** Rüşvet maddesinde böyle bir indirim yoktur.\n- **Kabul edilmeyen rüşvet talebi veya teklifi** için genel teşebbüs indirimi değil, rüşvet maddesindeki **yarı oranında indirim** uygulanır.\n- **Zimmette etkin pişmanlık (md 248)** malın **aynen iadesini** ya da zararın **tamamen tazminini** ister; kısmen iade yetmez ve sonuç indirimdir. Rüşvette etkin pişmanlık ayrı maddededir (md 254) ve sonucu cezaya hükmolunmamasıdır. İrtikap maddesinde (md 250) etkin pişmanlık hükmü yoktur.\n- **Zimmette \"resmen teslim\" şartı yoktur.** Mal üzerinde görev nedeniyle zilyedlik devri ya da koruma ve gözetim yükümlülüğü yeterlidir.",
+      "articleRefs": [
+        "247",
+        "248",
+        "250",
+        "252",
+        "257"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Nüfuz ticareti",
+      "body": "**Temel hâl (md 255)**\n- Kişi, kamu görevlisi üzerinde **nüfuz sahibi olduğundan bahisle** hareket eder.\n- Amaç, **haksız bir işin** gördürülmesi için girişimde bulunmaktır.\n- Bu amaçla kendisine veya başkasına menfaat temin eder.\n- Ceza: 2–5 yıl hapis ve beşbin güne kadar adli para cezası.\n\n**Diğer kurallar**\n- **Nüfuz satan kamu görevlisiyse:** Hapis cezası yarı oranında artırılır.\n- **İşini gördürmek için menfaat sağlayan kişi:** 1–3 yıl hapis.\n- **Anlaşma:** Anlaşmaya varılması hâlinde dahi suç tamamlanmış gibi cezaya hükmolunur.\n- **Kabul edilmeyen talep, teklif veya vaat:** Ceza yarı oranında indirilir.\n- **Aracı, dolaylı olarak kendisine menfaat sağlanan üçüncü gerçek kişi ve tüzel kişinin menfaati kabul eden yetkilisi:** Müşterek fail olarak cezalandırılır.\n- **Girişim ayrıca suçsa:** Kişi o suçtan da ayrıca cezalandırılır. Örneğin nüfuz vaadiyle para alıp sahte belgeyi de düzenleyen kişi her iki suçtan sorumlu olur.\n- **Uluslararası kapsam:** Madde, rüşvet maddesinin (md 252) dokuzuncu fıkrasında sayılan kişiler üzerinde yapılan nüfuz ticaretine de uygulanır.\n\n**Dikkat:** Metin nüfuzun gerçekten var olmasını aramaz; \"nüfuz sahibi olduğundan bahisle\" hareket etmek yeter.",
+      "articleRefs": [
+        "255"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Görevi kötüye kullanma ve kamu görevlisinin ticareti",
+      "body": "**Görevi kötüye kullanma (md 257)**\nYalnız \"**Kanunda ayrıca suç olarak tanımlanan haller dışında**\" uygulanır.\n- **Görevin gereklerine aykırı hareket:** Kişilerin mağduriyetine, kamunun zararına ya da kişilere haksız menfaat sağlanmasına neden olunursa ceza 6 ay–2 yıl hapistir.\n- **Görevin gereklerini yapmakta ihmal veya gecikme:** Aynı sonuçlar doğarsa ceza 3 ay–1 yıl hapistir.\n- **Örnekler:**\n  - Bildirim görevini kasten yanlış yapıp adayı dava açmak ve masraf yapmak zorunda bırakan memur, kişilerin mağduriyetine neden olur.\n  - Husumet nedeniyle bir işlemi imzalamayıp geciktirerek kişinin mağduriyetine neden olan kamu görevlisi de bu madde kapsamındadır.\n\n**Kamu görevlisinin ticareti (md 259)**\n- Kamu görevlisi, yürüttüğü görevin sağladığı nüfuzdan yararlanarak başkasına **mal veya hizmet satmaya çalışır**.\n- Ceza: 6 aya kadar hapis veya adlî para cezası.\n- Satışın gerçekleşmesi gerekmez; satmaya çalışmak yeter.",
+      "articleRefs": [
+        "257",
+        "259"
+      ]
+    },
+    {
+      "type": "numbers",
+      "title": "Kamu idaresine karşı suçlar: ceza tablosu",
+      "rows": [
+        {
+          "label": "Zimmet",
+          "value": "5–12 yıl hapis",
+          "refs": [
+            "247"
+          ]
+        },
+        {
+          "label": "Zimmet, açığa çıkmasını önleyen hileli davranış",
+          "value": "Yarı oranında artırım",
+          "refs": [
+            "247"
+          ]
+        },
+        {
+          "label": "Kullanma zimmeti (iade etmek üzere)",
+          "value": "Yarı oranına kadar indirim",
+          "refs": [
+            "247"
+          ]
+        },
+        {
+          "label": "Zimmette etkin pişmanlık, soruşturmadan önce",
+          "value": "Üçte ikisi indirilir",
+          "refs": [
+            "248"
+          ]
+        },
+        {
+          "label": "Zimmette etkin pişmanlık, kovuşturmadan önce (gönüllü)",
+          "value": "Yarısı indirilir",
+          "refs": [
+            "248"
+          ]
+        },
+        {
+          "label": "Zimmette etkin pişmanlık, hükümden önce",
+          "value": "Üçte biri indirilir",
+          "refs": [
+            "248"
+          ]
+        },
+        {
+          "label": "İcbar yoluyla irtikap",
+          "value": "5–10 yıl hapis",
+          "refs": [
+            "250"
+          ]
+        },
+        {
+          "label": "İkna yoluyla irtikap",
+          "value": "3–5 yıl hapis",
+          "refs": [
+            "250"
+          ]
+        },
+        {
+          "label": "Hatadan yararlanarak irtikap",
+          "value": "1–3 yıl hapis",
+          "refs": [
+            "250"
+          ]
+        },
+        {
+          "label": "İrtikap, menfaatin değeri ve mağdurun ekonomik durumu",
+          "value": "Yarısına kadar indirim",
+          "refs": [
+            "250"
+          ]
+        },
+        {
+          "label": "Denetim görevinin ihmali",
+          "value": "3 ay–3 yıl hapis",
+          "refs": [
+            "251"
+          ]
+        },
+        {
+          "label": "Rüşvet (veren ve alan)",
+          "value": "4–12 yıl hapis",
+          "refs": [
+            "252"
+          ]
+        },
+        {
+          "label": "Rüşvet, kabul edilmeyen talep veya teklif",
+          "value": "Yarı oranında indirim",
+          "refs": [
+            "252"
+          ]
+        },
+        {
+          "label": "Rüşvet, yargı görevi yapan, hakem, bilirkişi, noter, yeminli mali müşavir",
+          "value": "Üçte birden yarısına kadar artırım",
+          "refs": [
+            "252"
+          ]
+        },
+        {
+          "label": "Nüfuz ticareti (nüfuz satan)",
+          "value": "2–5 yıl hapis ve beşbin güne kadar adli para",
+          "refs": [
+            "255"
+          ]
+        },
+        {
+          "label": "Nüfuz ticareti (menfaat sağlayan)",
+          "value": "1–3 yıl hapis",
+          "refs": [
+            "255"
+          ]
+        },
+        {
+          "label": "Görevi kötüye kullanma (aykırı hareket)",
+          "value": "6 ay–2 yıl hapis",
+          "refs": [
+            "257"
+          ]
+        },
+        {
+          "label": "Görevi kötüye kullanma (ihmal veya gecikme)",
+          "value": "3 ay–1 yıl hapis",
+          "refs": [
+            "257"
+          ]
+        },
+        {
+          "label": "Kamu görevlisinin ticareti",
+          "value": "6 aya kadar hapis veya adlî para",
+          "refs": [
+            "259"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "247",
+        "248",
+        "250",
+        "251",
+        "252",
+        "255",
+        "257",
+        "259"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Görevi yaptırmamak için direnme",
+      "body": "**Temel hâl (md 265)**\n- Kamu görevlisine karşı, görevini yapmasını engellemek amacıyla **cebir veya tehdit** kullanılır.\n- Ceza: 6 ay–3 yıl hapis.\n\n**Ağırlaştırıcı hâller**\n- **Yargı görevi yapan kişilere karşı:** 2–4 yıl hapis.\n- **Fail kendini tanınmayacak hâle koyarsa** ya da suç **birden fazla kişi tarafından birlikte** işlenirse: Ceza üçte biri oranında artırılır.\n- **Silahla** ya da var olan veya var sayılan suç örgütlerinin korkutucu gücünden yararlanılarak işlenirse: Ceza yarı oranında artırılır.\n\n**Yaralama ile birleşme**\nSuç sırasında kasten yaralamanın **neticesi sebebiyle ağırlaşmış** hâli gerçekleşebilir. Örneğin memurun işitme yeteneği sürekli zayıflar. Bu durumda direnmenin yanında **ayrıca** kasten yaralama hükümleri de uygulanır.",
+      "articleRefs": [
+        "265"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "İftira",
+      "body": "**Temel hâl (md 267)**\n- **Yol:** Yetkili makamlara ihbar veya şikâyet ya da basın ve yayın.\n- **Bilgi:** Fail, mağdurun fiili **işlemediğini bildiği hâlde** hareket eder.\n- **Amaç:** Mağdur hakkında soruşturma ve kovuşturma başlatılması ya da **idari bir yaptırım** uygulanması.\n- **Hareket:** Bir kimseye hukuka aykırı bir fiil isnat etmek.\n- Ceza: 1–4 yıl hapis.\n\n**Ağırlaştırıcı hâller**\n- **Maddî eser ve delil uydurarak** iftira: Ceza yarı oranında artırılır.\n- Mağdur hakkında, yüklenen fiili işlemediği için beraat veya kovuşturmaya yer olmadığına dair karar verilmiş olmalıdır. Bu fiil nedeniyle mağdura **gözaltı ve tutuklama dışında** bir koruma tedbiri uygulanmışsa ceza yarı oranında artırılır.\n- Aynı durumda mağdur **gözaltına alınmış veya tutuklanmışsa** iftira eden ayrıca kişiyi hürriyetinden yoksun kılma suçundan **dolaylı fail** olur.\n- Mağdur ağırlaştırılmış müebbet ya da müebbet hapse mahkûm olmuşsa ceza 20–30 yıl hapistir. Cezanın infazına başlanmışsa bu ceza yarısı kadar artırılır.\n\n**Diğer kurallar**\n- **Dava zamanaşımı:** Mağdurun fiili işlemediğinin **sabit olduğu tarihten** başlar.\n- **Basın ve yayın yoluyla iftira:** Mahkûmiyet aynı ya da eşdeğer organda ilan olunur; masraf hükümlüden alınır.\n- **Etkin pişmanlık (md 269):** Her aşamada vardır, infaza başlandıktan sonra bile. Oranlar ünite sonundaki tabloda.",
+      "articleRefs": [
+        "267",
+        "269"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "İftirada sık düşülen tuzaklar",
+      "body": "- **\"İnfaz başladıktan sonra dönen etkin pişmanlıktan yararlanamaz\" yanlıştır.** Hükmolunan cezanın infazına başlanmışsa bile cezanın üçte biri indirilebilir.\n- **Fail, mağdurun fiili işlemediğini bilmelidir.** Metin, failin mağdurun fiili \"işlemediğini bildiği hâlde\" isnatta bulunmasını ister. Mağdurun gerçekten işlediğini sandığı bir suçu bildiren kişi iftira etmiş olmaz.\n- **İdari yaptırım amacı da yeter.** Sadece ceza soruşturması değil, idari yaptırım uygulatmak için yapılan isnat da iftiradır.\n- **Basın yoluyla iftirada dönüş de aynı yolla olmalı.** Etkin pişmanlık için dönüşün aynı yöntemle yayımlanması gerekir.\n- **\"Sandım\" diyen ihbarcı suç uydurmuş olmaz.** Köprüden atılan çöp torbasını insan sanıp polise bildirenler gibi, suçun işlenmediğini bilmeyen kişi suç uydurmadan sorumlu değildir. Suç uydurma, suçun \"işlenmediğini bildiği\" hâlde ihbar edilmesini ister.",
+      "articleRefs": [
+        "267",
+        "269",
+        "271"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Suç üstlenme ve suç uydurma",
+      "body": "**Suç üstlenme (md 270)**\n- Kişi, yetkili makamlara gerçeğe aykırı olarak **suçu kendisinin işlediğini** veya suça katıldığını bildirir.\n- Ceza: 2 yıla kadar hapis.\n- Suç üstsoy, altsoy, eş veya kardeşi cezadan kurtarmak amacıyla işlenmişse ceza dörtte üçü oranında **indirilebilir** ya da **tamamen kaldırılabilir**.\n\n**Suç uydurma (md 271)**\n- Kişi, **işlenmediğini bildiği** bir suçu yetkili makamlara işlenmiş gibi ihbar eder,\n- ya da işlenmeyen bir suçun **delil veya emarelerini** soruşturma yapılmasını sağlayacak biçimde uydurur.\n- Ceza: 3 yıla kadar hapis.\n\n**Üç suçu ayırmak için**\n- **İftira:** Belirli \"bir kimseye\" fiil isnat edilir (md 267).\n- **Suç uydurma:** Kimse gösterilmeden \"bir suç işlendi\" denir.\n- **Suç üstlenme:** Kişi başkasının suçunu kendi üstüne alır.\n- Delil uydurmak yalnız iftiraya özgü değildir; suç uydurma da bu yolla işlenebilir.",
+      "articleRefs": [
+        "267",
+        "270",
+        "271"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Yalan tanıklık ve şahsi cezasızlık",
+      "body": "**Yalan tanıklık (md 272)**\nTemel hâl (ilk madde) ve daha ağır cezalı hâller:\n- **Soruşturmada tanıklık:** Hukuka aykırı bir fiil nedeniyle başlatılan soruşturmada, tanık dinlemeye yetkili kişi veya kurul önünde gerçeğe aykırı tanıklık. Ceza: 4 ay–1 yıl hapis.\n- **Mahkeme huzurunda ya da yeminle:** Mahkeme huzurunda veya yemin ettirerek tanık dinlemeye yetkili kişi ya da kurul önünde. Ceza: 1–3 yıl hapis.\n- **Ağır suçta tanıklık:** Üç yıldan fazla hapis cezasını gerektiren bir suçun soruşturma veya kovuşturmasında. Ceza: 2–4 yıl hapis.\n\nAleyhine tanıklık yapılan kişiye göre ağırlaştırıcı hâller:\n- Kişi hakkında beraat veya kovuşturmaya yer olmadığına dair karar verilmiş olmalıdır. Bu kişiye gözaltı ve tutuklama dışında bir koruma tedbiri uygulanmışsa ceza yarı oranında artırılır.\n- Aynı koşulla kişi gözaltına alınmış veya tutuklanmışsa yalan tanık ayrıca kişiyi hürriyetinden yoksun kılma suçundan **dolaylı fail** olur.\n- Kişi ağırlaştırılmış müebbet ya da müebbet hapse mahkûm olmuşsa ceza 20–30 yıl hapistir. İnfaza başlanmışsa bu ceza yarısı kadar artırılır.\n- Kişiye hapis dışında adlî veya idari bir yaptırım uygulanmışsa ceza 3–7 yıl hapistir.\n\n**Şahsi cezasızlık veya indirim (md 273)**\nŞu durumlarda ceza **indirilebilir** ya da ceza vermekten **vazgeçilebilir**:\n- a) Kişi, kendisinin ya da üstsoy, altsoy, eş veya kardeşinin soruşturma ve kovuşturmaya uğramasına neden olabilecek bir konuda yalan tanıklık yapmışsa,\n- b) Tanıklıktan çekinme hakkı kendisine **hatırlatılmadan** dinlenip gerçeğe aykırı tanıklık yapmışsa.\n\nBu hüküm **özel hukuk uyuşmazlıklarındaki** yalan tanıklığa uygulanmaz.",
+      "articleRefs": [
+        "272",
+        "273"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Yalan tanıklık ve yalan yere yemin karışması",
+      "body": "- **Yemin şart değildir.** Yalan tanıklık maddesinin ilk fıkrası, soruşturmada yetkili kişi veya kurul önünde yapılan tanıklığı yeminsiz de cezalandırır. Mahkeme huzurundaki tanıklık ise daha ağır cezalı ikinci fıkradadır.\n- **İdari yaptırım suçu ortadan kaldırmaz.** Aleyhine tanıklık yapılan kişiye hapis dışında adlî veya idari bir yaptırım uygulanmışsa ceza 3–7 yıla çıkar.\n- **Çekinme hakkı hatırlatılmayan tanıkta indirim zorunlu değildir.** Hakim ya cezayı indirebilir ya da ceza vermekten vazgeçebilir; her ikisi de mümkündür.\n- **Yalan yere yemin (md 275) yalnız hukuk davalarında** ve yalnız **davacı veya davalı** için söz konusudur. Ceza davasında edilen yemin bu madde kapsamında değildir. Ceza: 1–5 yıl hapis.\n- **Yeminde dönüş:**\n  - Dava hakkında **hüküm verilmeden önce** gerçeği söyleyene ceza verilmez.\n  - Hükmün **icraya konulmasından veya kesinleşmesinden önce** gerçeği söyleyenin cezasının yarısı indirilir.",
+      "articleRefs": [
+        "272",
+        "273",
+        "275"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Suçu bildirmeme, delilleri karartma, suçluyu kayırma",
+      "body": "**Suçu bildirmeme (md 278)**\n- **İşlenmekte olan** bir suçu yetkili makamlara bildirmeyen kişi 1 yıla kadar hapis alır.\n- Suç işlenmiş olabilir; neticeleri hâlâ sınırlandırılabiliyorsa bildirmemek yine aynı cezayı gerektirir.\n- Mağdur şunlardan biriyse ceza yarı oranında artırılır:\n  - onbeş yaşını bitirmemiş çocuk,\n  - bedensel veya ruhsal bakımdan engelli,\n  - hamileliği nedeniyle kendini savunamayacak durumda olan kişi.\n- **Tanıklıktan çekinebilecek kişilere** ceza verilmez. Ancak suçu önleme yükümlülüğünden doğan sorumluluk saklıdır.\n\n**Sağlık mesleği mensubu (md 280)**\n- Görevi sırasında bir suç belirtisiyle karşılaşıp durumu bildirmeyen ya da bildirmekte gecikme gösteren sağlık mesleği mensubu 1 yıla kadar hapis alır.\n- Kapsam: tabip, diş tabibi, eczacı, ebe, hemşire ve sağlık hizmeti veren diğer kişiler.\n\n**Delilleri yok etme, gizleme, değiştirme (md 281)**\n- Amaç: gerçeğin meydana çıkmasını engellemek.\n- Ceza: 6 ay–5 yıl hapis.\n- Kişinin **kendi işlediği veya iştirak ettiği** suçun delilleri için ceza verilmez.\n- Kamu görevlisi göreviyle bağlantılı işlerse ceza yarı oranında artırılır.\n- Hükümden önce gizlenen delilleri mahkemeye teslim edenin cezasının beşte dördü indirilir.\n\n**Suçluyu kayırma (md 283)**\n- Suç işleyen kişiye araştırma, yakalanma, tutuklanma veya hükmün infazından kurtulma imkânı sağlayan kişi 6 ay–5 yıl hapis alır.\n- Kamu görevlisi göreviyle bağlantılı işlerse ceza yarı oranında artırılır.",
+      "articleRefs": [
+        "278",
+        "280",
+        "281",
+        "283"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Yakın akraba: hangi maddede hangi sonuç?",
+      "body": "Şıklar genellikle akraba istisnalarının sonuçlarını birbirine karıştırır. Sonuçları madde madde ayır:\n\n- **Suçluyu kayırma (md 283):** Üstsoy, altsoy, eş, kardeş **veya diğer suç ortağı** işlerse **cezaya hükmolunmaz**. Bu kesin bir sonuçtur.\n- **Suç üstlenme (md 270):** Aynı yakınları kurtarmak için işlenirse cezanın dörtte üçü **indirilebilir** ya da ceza **tamamen kaldırılabilir**. Karar takdire bağlıdır.\n- **Yalan tanıklık (md 273):** Kendisi veya yakınlarıyla ilgili konuda ceza **indirilebilir** ya da ceza vermekten **vazgeçilebilir**. Özel hukuk uyuşmazlığında bu imkân yoktur.\n- **Suçu bildirmeme (md 278):** **Tanıklıktan çekinebilecek** kişilere ceza verilmez.\n- **Delil karartma (md 281):** Akraba istisnası yoktur. Ceza verilmemesi yalnız kişinin **kendi işlediği veya iştirak ettiği** suç için geçerlidir.\n\nOlay sorularında hangi maddenin uygulanacağına da dikkat et:\n- Katili yurt dışına kaçırmak → suçluyu kayırma.\n- Kaçırılıp evde saklanan kişiyi bildirmemek → işlenmekte olan suçu bildirmeme.\n- Nöbette kurşunlama vakasını bildirmeyen doktor → genel suçu bildirmeme değil, sağlık mesleği mensubuna özgü madde (md 280).",
+      "articleRefs": [
+        "270",
+        "273",
+        "278",
+        "280",
+        "281",
+        "283"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Genital muayene ve infaz kurumuna yasak eşya",
+      "body": "**Genital muayene (md 287)**\n- Yetkili hakim ve savcı kararı olmaksızın kişiyi genital muayeneye **gönderen** de, muayeneyi **yapan** da fail olur.\n- Ceza: 3 ay–1 yıl hapis.\n- Yani muayeneyi yapan doktor da sorumludur; raporu savcılığa bildirmesi bu sonucu değiştirmez.\n- **İstisna:** Bulaşıcı hastalıklar nedeniyle kamu sağlığını korumak için kanun ve yönetmeliğe uygun yapılan muayeneler bu kapsamda değildir.\n\n**İnfaz kurumuna veya tutukevine yasak eşya (md 297)**\n- **Silah, uyuşturucu veya uyarıcı madde, elektronik haberleşme aracı** sokan veya bulunduran kişi 2–5 yıl hapis alır.\n- Eşyanın temini veya bulundurulması ayrıca suçsa ceza **fikri içtima** hükümlerine göre belirlenir ve yarı oranında artırılır. Örnek: ayakkabı topuğunda esrar sokmaya çalışan ziyaretçi.\n- **Diğer yasak eşya** sokan, bulunduran veya kullanan kişi 1–3 yıl hapis alır. Bu eşyalar:\n  - firarı kolaylaştırıcı aletler,\n  - saldırı ve savunma araçları ile yangın malzemesi,\n  - alkollü içki,\n  - kumar eşyası,\n  - yeşil reçeteli ilaçlar,\n  - yasaklı veya örgütsel yayınlar,\n  - izinsiz ses ve görüntü alma araçları.\n- Suçu hükümlü veya tutukluların muhafazasıyla görevli kişiler işlerse ceza **bir kat** artırılır.\n- Eşyayı bulunduran hükümlü veya tutuklu, eşyayı kimden ve nasıl elde ettiğini söylerse ceza yarı oranında indirilir.",
+      "articleRefs": [
+        "287",
+        "297"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Cumhurbaşkanı ve anayasal düzene karşı suçlar",
+      "body": "**Cumhurbaşkanına hakaret (md 299)**\n- Ceza: 1–4 yıl hapis.\n- Suç alenen işlenirse ceza altıda biri oranında artırılır.\n- Kovuşturma yapılması **Adalet Bakanının iznine** bağlıdır.\n\n**Anayasayı ihlal (md 309)**\n- Hareket: **Cebir ve şiddet** kullanarak Anayasa düzenine yönelik **teşebbüs**. Teşebbüs şu amaçlardan birine yönelebilir:\n  - düzeni ortadan kaldırmak,\n  - yerine başka bir düzen getirmek,\n  - düzenin fiilen uygulanmasını önlemek.\n- Ceza: ağırlaştırılmış müebbet hapis.\n- Bu suçlar nedeniyle tüzel kişiler hakkında onlara özgü güvenlik tedbirleri uygulanır.\n\n**Cumhurbaşkanına suikast ve fiilî saldırı (md 310)**\n- Suikast: ağırlaştırılmış müebbet hapis. **Teşebbüs hâlinde de** suç tamamlanmış gibi ceza verilir.\n- Diğer fiilî saldırılar: İlgili suçun cezası yarı oranında artırılır. Ancak verilecek ceza beş yıldan az olamaz.\n\n**Yasama organına ve Hükûmete karşı suç (md 311, 312)**\n- Cebir ve şiddet kullanarak Türkiye Büyük Millet Meclisini ya da Türkiye Cumhuriyeti Hükûmetini **ortadan kaldırmaya** veya görevlerini **kısmen ya da tamamen engellemeye** teşebbüs: ağırlaştırılmış müebbet hapis.\n\n**Ortak kural:** md 309, 311 ve 312'deki suçlar işlenirken başka suçlar da işlenirse bunlar için **ayrıca** ceza verilir.",
+      "articleRefs": [
+        "299",
+        "309",
+        "310",
+        "311",
+        "312"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Anayasal düzen suçlarında yanlış şıklar",
+      "body": "- **Sonuç beklenmez.** Metinler \"teşebbüs edenler\" der; düzenin gerçekten değişmesi, Meclisin ya da Hükûmetin fiilen devrilmesi aranmaz.\n- **Cebir ve şiddet şarttır.** Türkiye Büyük Millet Meclisine yönelen her saldırı md 311'i oluşturmaz. Metin, cebir ve şiddetle Meclisi ortadan kaldırmaya ya da görevlerini engellemeye teşebbüsü arar.\n- **Fail herkes olabilir.** Metin \"teşebbüs edenler\" ve \"kimse\" der; failin devletin silahlı gücünü elinde tutan biri olması aranmaz.\n- **md 312'de korunan Hükûmettir.** Metin \"Türkiye Cumhuriyeti Hükûmeti\" der; Hükûmeti oluşturan siyasal partiler suçun mağduru değildir.\n- **Akrabalık nitelikli hâl değildir.** md 310'da failin Cumhurbaşkanının eşi veya çocuğu olmasına bağlanmış bir sonuç yoktur.\n- **Adalet Bakanı izni bir kovuşturma şartıdır.** md 299'da kovuşturma yapılması Adalet Bakanının iznine bağlanmıştır; bu izin şahsi cezasızlık sebebi değildir.",
+      "articleRefs": [
+        "299",
+        "309",
+        "310",
+        "311",
+        "312"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Silahlı isyan, silahlı örgüt, suç için anlaşma",
+      "body": "**Hükûmete karşı silahlı isyan (md 313)**\n- **Halkı silahlı isyana tahrik eden:** 15–20 yıl hapis. Suç için isyanın fiilen gerçekleşmesi gerekmez.\n- **İsyan gerçekleşirse tahrik eden:** 20–25 yıl hapis.\n- **İsyanı idare eden:** ağırlaştırılmış müebbet hapis.\n- **İsyana katılan diğer kişiler:** 6–10 yıl hapis.\n- **Savaş hâlinin sağladığı kolaylıktan** yararlanılırsa: ağırlaştırılmış müebbet hapis.\n- İşlenirken başka suçlar oluşursa bunlar için **ayrıca** ceza verilir.\n\n**Silahlı örgüt (md 314)**\n- Kanunun bu kısmının dördüncü ve beşinci bölümlerindeki suçları işlemek amacıyla kurulmuş silahlı örgüt söz konusudur.\n- Örgütü **kuran veya yöneten:** 10–15 yıl hapis.\n- Örgüte **üye olan:** 5–10 yıl hapis.\n- Suç işlemek amacıyla örgüt kurma suçuna ilişkin diğer hükümler bu suç için de aynen uygulanır.\n\n**Suç için anlaşma (md 316)**\n- İki veya daha fazla kişi, dördüncü ve beşinci bölümlerdeki suçlardan birini **elverişli vasıtalarla** işlemek üzere, **maddi olgularla belirlenen** bir biçimde anlaşır.\n- Ceza: suçların ağırlık derecesine göre 3–12 yıl hapis.\n- Amaçlanan suç işlenmeden ya da anlaşma nedeniyle soruşturma başlamadan önce ittifaktan çekilene **ceza verilmez**. Bu bir indirim değildir.",
+      "articleRefs": [
+        "313",
+        "314",
+        "316"
+      ]
+    },
+    {
+      "type": "numbers",
+      "title": "Adliye ve devlete karşı suçlar: ceza tablosu",
+      "rows": [
+        {
+          "label": "Görevi yaptırmamak için direnme",
+          "value": "6 ay–3 yıl hapis",
+          "refs": [
+            "265"
+          ]
+        },
+        {
+          "label": "Direnme, yargı görevi yapanlara karşı",
+          "value": "2–4 yıl hapis",
+          "refs": [
+            "265"
+          ]
+        },
+        {
+          "label": "Direnme, tanınmaz hâl veya birden fazla kişi",
+          "value": "Üçte biri oranında artırım",
+          "refs": [
+            "265"
+          ]
+        },
+        {
+          "label": "Direnme, silahla veya örgüt gücüyle",
+          "value": "Yarı oranında artırım",
+          "refs": [
+            "265"
+          ]
+        },
+        {
+          "label": "İftira",
+          "value": "1–4 yıl hapis",
+          "refs": [
+            "267"
+          ]
+        },
+        {
+          "label": "İftira, mağdur müebbet veya ağırlaştırılmış müebbete mahkûm",
+          "value": "20–30 yıl hapis",
+          "refs": [
+            "267"
+          ]
+        },
+        {
+          "label": "İftiradan dönme, soruşturma başlamadan önce",
+          "value": "Beşte dördü indirilir",
+          "refs": [
+            "269"
+          ]
+        },
+        {
+          "label": "İftiradan dönme, kovuşturma başlamadan önce",
+          "value": "Dörtte üçü indirilir",
+          "refs": [
+            "269"
+          ]
+        },
+        {
+          "label": "İftiradan dönme, hükümden önce",
+          "value": "Üçte ikisi indirilebilir",
+          "refs": [
+            "269"
+          ]
+        },
+        {
+          "label": "İftiradan dönme, mahkûmiyetten sonra",
+          "value": "Yarısı indirilebilir",
+          "refs": [
+            "269"
+          ]
+        },
+        {
+          "label": "İftiradan dönme, infaza başlanmışsa",
+          "value": "Üçte biri indirilebilir",
+          "refs": [
+            "269"
+          ]
+        },
+        {
+          "label": "İdari yaptırımlı iftirada dönme, karardan önce ve yaptırım uygulandıktan sonra",
+          "value": "Yarısı ve üçte biri indirilebilir",
+          "refs": [
+            "269"
+          ]
+        },
+        {
+          "label": "Suç üstlenme",
+          "value": "2 yıla kadar hapis",
+          "refs": [
+            "270"
+          ]
+        },
+        {
+          "label": "Suç uydurma",
+          "value": "3 yıla kadar hapis",
+          "refs": [
+            "271"
+          ]
+        },
+        {
+          "label": "Yalan tanıklık, soruşturmada",
+          "value": "4 ay–1 yıl hapis",
+          "refs": [
+            "272"
+          ]
+        },
+        {
+          "label": "Yalan tanıklık, mahkeme huzurunda veya yeminle",
+          "value": "1–3 yıl hapis",
+          "refs": [
+            "272"
+          ]
+        },
+        {
+          "label": "Yalan tanıklık, üç yıldan fazla hapis gerektiren suçta",
+          "value": "2–4 yıl hapis",
+          "refs": [
+            "272"
+          ]
+        },
+        {
+          "label": "Yalan tanıklık, hapis dışı adlî veya idari yaptırım uygulanmışsa",
+          "value": "3–7 yıl hapis",
+          "refs": [
+            "272"
+          ]
+        },
+        {
+          "label": "Yalan yere yemin",
+          "value": "1–5 yıl hapis",
+          "refs": [
+            "275"
+          ]
+        },
+        {
+          "label": "Suçu bildirmeme ve sağlık mesleği mensubunun bildirmemesi",
+          "value": "1 yıla kadar hapis",
+          "refs": [
+            "278",
+            "280"
+          ]
+        },
+        {
+          "label": "Delilleri yok etme ve suçluyu kayırma",
+          "value": "6 ay–5 yıl hapis",
+          "refs": [
+            "281",
+            "283"
+          ]
+        },
+        {
+          "label": "Gizlenen delili hükümden önce teslim",
+          "value": "Beşte dördü indirilir",
+          "refs": [
+            "281"
+          ]
+        },
+        {
+          "label": "Genital muayene",
+          "value": "3 ay–1 yıl hapis",
+          "refs": [
+            "287"
+          ]
+        },
+        {
+          "label": "Yasak eşya (silah, uyuşturucu, haberleşme aracı)",
+          "value": "2–5 yıl hapis",
+          "refs": [
+            "297"
+          ]
+        },
+        {
+          "label": "Diğer yasak eşya",
+          "value": "1–3 yıl hapis",
+          "refs": [
+            "297"
+          ]
+        },
+        {
+          "label": "Cumhurbaşkanına hakaret",
+          "value": "1–4 yıl hapis; alenen ise altıda biri artırım",
+          "refs": [
+            "299"
+          ]
+        },
+        {
+          "label": "Cumhurbaşkanına diğer fiilî saldırı, alt sınır",
+          "value": "5 yıl",
+          "refs": [
+            "310"
+          ]
+        },
+        {
+          "label": "Silahlı isyana tahrik",
+          "value": "15–20 yıl hapis; isyan gerçekleşirse 20–25 yıl",
+          "refs": [
+            "313"
+          ]
+        },
+        {
+          "label": "İsyana katılan",
+          "value": "6–10 yıl hapis",
+          "refs": [
+            "313"
+          ]
+        },
+        {
+          "label": "Silahlı örgüt kuran veya yöneten",
+          "value": "10–15 yıl hapis",
+          "refs": [
+            "314"
+          ]
+        },
+        {
+          "label": "Silahlı örgüt üyesi",
+          "value": "5–10 yıl hapis",
+          "refs": [
+            "314"
+          ]
+        },
+        {
+          "label": "Suç için anlaşma",
+          "value": "3–12 yıl hapis",
+          "refs": [
+            "316"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "265",
+        "267",
+        "269",
+        "270",
+        "271",
+        "272",
+        "275",
+        "278",
+        "280",
+        "281",
+        "283",
+        "287",
+        "297",
+        "299",
+        "310",
+        "313",
+        "314",
+        "316"
+      ]
+    },
+    {
+      "type": "exam_stats",
+      "title": "Sınav der ki",
+      "rows": [
+        {
+          "label": "Bu ünitenin maddelerinden yayındaki soru",
+          "value": "61",
+          "refs": [
+            "247",
+            "248",
+            "250",
+            "251",
+            "252",
+            "254",
+            "255",
+            "257",
+            "259",
+            "265",
+            "267",
+            "269",
+            "270",
+            "271",
+            "272",
+            "273",
+            "275",
+            "278",
+            "280",
+            "281",
+            "283",
+            "287",
+            "297",
+            "299",
+            "309",
+            "310",
+            "311",
+            "312",
+            "313",
+            "314",
+            "316"
+          ]
+        },
+        {
+          "label": "md 252 — Rüşvet",
+          "value": "9 soru",
+          "refs": [
+            "252"
+          ]
+        },
+        {
+          "label": "md 250 — İrtikap",
+          "value": "6 soru",
+          "refs": [
+            "250"
+          ]
+        },
+        {
+          "label": "md 247 — Zimmet",
+          "value": "4 soru",
+          "refs": [
+            "247"
+          ]
+        },
+        {
+          "label": "md 267 — İftira",
+          "value": "4 soru",
+          "refs": [
+            "267"
+          ]
+        },
+        {
+          "label": "md 271 — Suç uydurma",
+          "value": "3 soru",
+          "refs": [
+            "271"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "247",
+        "248",
+        "250",
+        "251",
+        "252",
+        "254",
+        "255",
+        "257",
+        "259",
+        "265",
+        "267",
+        "269",
+        "270",
+        "271",
+        "272",
+        "273",
+        "275",
+        "278",
+        "280",
+        "281",
+        "283",
+        "287",
+        "297",
+        "299",
+        "309",
+        "310",
+        "311",
+        "312",
+        "313",
+        "314",
+        "316"
+      ],
+      "generated": true
+    },
+    {
+      "type": "bridge",
+      "title": "Bu üniteden soru çöz",
+      "articleRefs": [
+        "247",
+        "248",
+        "250",
+        "251",
+        "252",
+        "254",
+        "255",
+        "257",
+        "259",
+        "265",
+        "267",
+        "269",
+        "270",
+        "271",
+        "272",
+        "273",
+        "275",
+        "278",
+        "280",
+        "281",
+        "283",
+        "287",
+        "297",
+        "299",
+        "309",
+        "310",
+        "311",
+        "312",
+        "313",
+        "314",
+        "316"
+      ],
+      "generated": true,
+      "rows": [
+        {
+          "label": "Madde kapsamlı seans",
+          "value": "md 247, 248, 250–252, 254, 255, 257, 259, 265, 267, 269–273, 275, 278, 280, 281, 283, 287, 297, 299, 309–314, 316, 10 soru",
+          "refs": [
+            "247",
+            "248",
+            "250",
+            "251",
+            "252",
+            "254",
+            "255",
+            "257",
+            "259",
+            "265",
+            "267",
+            "269",
+            "270",
+            "271",
+            "272",
+            "273",
+            "275",
+            "278",
+            "280",
+            "281",
+            "283",
+            "287",
+            "297",
+            "299",
+            "309",
+            "310",
+            "311",
+            "312",
+            "313",
+            "314",
+            "316"
+          ]
+        }
+      ]
+    }
+  ]
+}

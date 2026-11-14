@@ -1,0 +1,633 @@
+{
+  "unit": {
+    "slug": "tck-uluslararasi-suclar-ve-hayata-karsi-suclar",
+    "legislationSlug": "turk-ceza-kanunu",
+    "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+    "title": "Uluslararası suçlar ve hayata karşı suçlar",
+    "subtitle": "Soykırımdan taksirle öldürmeye: maksatlar, sayılan fiiller, nitelikli hâller ve cezalar",
+    "articleFrom": "76",
+    "articleTo": "85",
+    "readingMinutes": 14,
+    "sourceLabel": "AI özeti — Türk Ceza Kanunu, md 76–82, 84, 85",
+    "articleNos": [
+      "76",
+      "77",
+      "78",
+      "79",
+      "80",
+      "81",
+      "82",
+      "84",
+      "85"
+    ],
+    "generatedBy": "claude-opus-5-5 (ozet-uret.ts)",
+    "sortOrder": 7
+  },
+  "blocks": [
+    {
+      "type": "concept",
+      "title": "Bu ünitenin haritası",
+      "body": "Önce toplulukları hedef alan ağır fiiller gelir: soykırım (md 76), insanlığa karşı suçlar (md 77) ve bunları işlemek için kurulan örgüt (md 78). Ardından insanı kazanç ya da sömürü konusu yapan göçmen kaçakçılığı (md 79) ve insan ticareti (md 80) gelir. Sonra hayatın kendisini koruyan maddelere geçersin: kasten öldürme (md 81), nitelikli hâlleri (md 82), intihara yönlendirme (md 84) ve taksirle öldürme (md 85). Her maddede kendine şunları sor: Hangi maksat aranıyor? Hangi fiiller sayılmış? Ceza nedir?",
+      "articleRefs": [
+        "76",
+        "77",
+        "78",
+        "79",
+        "80",
+        "81",
+        "82",
+        "84",
+        "85"
+      ]
+    },
+    {
+      "type": "concept",
+      "title": "Soykırımı kuran unsurlar",
+      "body": "Soykırımı sıradan bir öldürmeden ayıran şey, fiilin arka planıdır. Fiil bir planın icrası suretiyle işlenir. Millî, etnik, ırki veya dinî bir grubu tamamen veya kısmen yok etme maksadı taşır. Bu grubun üyelerine karşı yönelir. Plan, grup ve maksat birlikte yoksa md 76'dan söz edemezsin. Maksada özellikle dikkat et: Grubu yok etme maksadı taşımayan bir fiil, ne kadar ağır olursa olsun bu maddeyi oluşturmaz.",
+      "articleRefs": [
+        "76"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Soykırım: fiiller, ceza, zamanaşımı",
+      "body": "**Sayılan fiiller (md 76/1):**\n- a) Kasten öldürme\n- b) Kişilerin bedensel veya ruhsal bütünlüklerine ağır zarar verme\n- c) Grubu, tamamen veya kısmen yok edilmesi sonucunu doğuracak koşullarda yaşamaya zorlama\n- d) Grup içinde doğumlara engel olmaya yönelik tedbirler alma\n- e) Gruba ait çocukları bir başka gruba zorla nakletme\n\n**Ceza:** Ağırlaştırılmış müebbet hapis.\n**Ancak:** Soykırım kapsamında işlenen kasten öldürme ve kasten yaralama suçlarında, belirlenen mağdur sayısınca gerçek içtima hükümleri uygulanır.\n**Tüzel kişi:** Hakkında güvenlik tedbirine hükmolunur.\n**Zamanaşımı:** İşlemez.",
+      "articleRefs": [
+        "76"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Soykırımda sık karıştırılanlar",
+      "body": "- **'Yalnız grup üyelerini öldürerek işlenir'** yanlıştır. Madde ağır bedensel veya ruhsal zarar vermeyi, doğumları engelleyici tedbir almayı ve çocukları başka gruba zorla nakletmeyi de sayar.\n- **'Mağdur sayısı önem taşımaz'** yanlıştır. Kasten öldürme ve kasten yaralamada belirlenen mağdur sayısınca gerçek içtima uygulanır.\n- **'Maksat aranmaz' ya da 'taksirle olur'** diyen şıklarda maksat şartını hatırla. Madde, grubu tamamen veya kısmen yok etme maksadını açıkça arar.\n- **Grup türleri:** Soykırımda grup millî, etnik, ırki veya dinîdir. Siyasal ve felsefi saik soykırımda değil, insanlığa karşı suçlarda geçer.",
+      "articleRefs": [
+        "76",
+        "77"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "İnsanlığa karşı suçlar",
+      "body": "**Unsurlar:** Fiil siyasal, felsefi, ırki veya dinî saiklerle işlenir. Toplumun bir kesimine karşı, bir plan doğrultusunda **sistemli olarak** gerçekleşir.\n\n**Sayılan fiiller:**\n- a) Kasten öldürme\n- b) Kasten yaralama\n- c) İşkence, eziyet veya köleleştirme\n- d) Kişi hürriyetinden yoksun kılma\n- e) Bilimsel deneylere tabi kılma\n- f) Cinsel saldırıda bulunma, çocukların cinsel istismarı\n- g) Zorla hamile bırakma\n- h) Zorla fuhşa sevketme\n\n**Ceza:** (a) bendinde ağırlaştırılmış müebbet hapis verilir. Diğer bentlerde ceza sekiz yıldan az olmamak üzere hapistir.\n**Ancak:** (a) ve (b) bentleri kapsamındaki kasten öldürme ve kasten yaralamada, belirlenen mağdur sayısınca gerçek içtima uygulanır.\n**Tüzel kişi:** Güvenlik tedbiri uygulanır.\n**Zamanaşımı:** İşlemez.",
+      "articleRefs": [
+        "77"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Listede olmayanı yakala",
+      "body": "Soru kökü çoğu zaman 'açıkça sayılmamıştır' der. Listeyi tara: **Tehdit yok, yağma yok.** Buna karşılık köleleştirme, zorla hamile bırakma, bilimsel deneylere tabi kılma ve kişi hürriyetinden yoksun kılma listededir.\n\nİkinci tuzak şudur: Köleleştirme ve zorla hamile bırakma md 77'de ayrı birer suç olarak düzenlenmemiştir. Bunlar, saik, plan ve sistemlilik unsurlarıyla birlikte insanlığa karşı suçu oluşturan fiiller olarak sayılmıştır.",
+      "articleRefs": [
+        "77"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Soykırım ve insanlığa karşı suç için örgüt",
+      "body": "**Kurma veya yönetme:** Soykırım (md 76) ve insanlığa karşı suçları (md 77) işlemek maksadıyla örgüt kuran veya yöneten kişiye on yıldan on beş yıla kadar hapis verilir.\n**Üyelik:** Bu örgütlere üye olana beş yıldan on yıla kadar hapis verilir.\n**Tüzel kişi:** Güvenlik tedbiri uygulanır.\n**Zamanaşımı:** İşlemez.\n\n**Dikkat:** Ceza, örgütü kurma, yönetme ve örgüte üye olma fiiline bağlanmıştır. Maddede, amaçlanan suçun ayrıca işlenmiş olması diye bir şart yoktur.",
+      "articleRefs": [
+        "76",
+        "77",
+        "78"
+      ]
+    },
+    {
+      "type": "numbers",
+      "title": "Sayılar: md 76–80",
+      "rows": [
+        {
+          "label": "Soykırım",
+          "value": "Ağırlaştırılmış müebbet hapis",
+          "refs": [
+            "76"
+          ]
+        },
+        {
+          "label": "İnsanlığa karşı suç: kasten öldürme bendi",
+          "value": "Ağırlaştırılmış müebbet hapis",
+          "refs": [
+            "77"
+          ]
+        },
+        {
+          "label": "İnsanlığa karşı suç: diğer bentler",
+          "value": "8 yıldan az olmamak üzere hapis",
+          "refs": [
+            "77"
+          ]
+        },
+        {
+          "label": "Örgüt kurma veya yönetme",
+          "value": "10–15 yıl hapis",
+          "refs": [
+            "78"
+          ]
+        },
+        {
+          "label": "Örgüte üye olma",
+          "value": "5–10 yıl hapis",
+          "refs": [
+            "78"
+          ]
+        },
+        {
+          "label": "Göçmen kaçakçılığı",
+          "value": "5–8 yıl hapis ve bin–onbin gün adlî para cezası",
+          "refs": [
+            "79"
+          ]
+        },
+        {
+          "label": "Göçmen kaçakçılığı: hayat tehlikesi veya onur kırıcı muamele",
+          "value": "Ceza yarısından üçte ikisine kadar artırılır",
+          "refs": [
+            "79"
+          ]
+        },
+        {
+          "label": "Göçmen kaçakçılığı: birden fazla kişi tarafından birlikte",
+          "value": "Ceza yarısına kadar artırılır",
+          "refs": [
+            "79"
+          ]
+        },
+        {
+          "label": "Göçmen kaçakçılığı: örgüt faaliyeti çerçevesinde",
+          "value": "Ceza yarısından bir katına kadar artırılır",
+          "refs": [
+            "79"
+          ]
+        },
+        {
+          "label": "İnsan ticareti",
+          "value": "8–12 yıl hapis ve onbin güne kadar adlî para cezası",
+          "refs": [
+            "80"
+          ]
+        },
+        {
+          "label": "Zamanaşımı işlemeyenler",
+          "value": "Soykırım, insanlığa karşı suçlar, örgüt",
+          "refs": [
+            "76",
+            "77",
+            "78"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "76",
+        "77",
+        "78",
+        "79",
+        "80"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Göçmen kaçakçılığı",
+      "body": "**Maksat:** Doğrudan doğruya veya dolaylı olarak maddi menfaat elde etmek.\n\n**Hareketler (yasal olmayan yollardan):**\n- a) Bir yabancıyı ülkeye sokmak veya ülkede kalmasına imkân sağlamak\n- b) Türk vatandaşı veya yabancının yurt dışına çıkmasına imkân sağlamak\n\n**Ceza:** Beş yıldan sekiz yıla kadar hapis ve bin günden onbin güne kadar adlî para cezası.\n**Teşebbüs:** Suç teşebbüs aşamasında kalsa dahi tamamlanmış gibi cezaya hükmolunur.\n\n**Artırım:**\n- Mağdurların hayatı bakımından tehlike oluşması veya onur kırıcı muameleye maruz bırakılarak işlenmesi: yarısından üçte ikisine kadar\n- Birden fazla kişi tarafından birlikte işlenmesi: yarısına kadar\n- Bir örgütün faaliyeti çerçevesinde işlenmesi: yarısından bir katına kadar\n\n**Tüzel kişi:** Suç bir tüzel kişinin faaliyeti çerçevesinde işlenirse tüzel kişi hakkında bunlara özgü güvenlik tedbirlerine hükmolunur.",
+      "articleRefs": [
+        "79"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Göçmen kaçakçılığında olmayan artırım",
+      "body": "Maddede artırım sebebi olarak yalnız şunlar vardır: mağdurların hayatı bakımından tehlike, onur kırıcı muamele, birden fazla kişi tarafından birlikte işleme ve örgüt faaliyeti. **'Mağdurun ekonomik gücünün sömürülmesi' bu listede yoktur.**\n\nRıza tuzağı: Md 79'da mağdurun rızasına bağlanmış bir istisna yoktur. Bu yüzden 'rıza fiili hukuka uygun kılar' şıkkının maddede dayanağı bulunmaz.\n\nTeşebbüs tuzağı: Suç teşebbüste kalsa bile tamamlanmış gibi ceza verilir.",
+      "articleRefs": [
+        "79"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "İnsan ticareti",
+      "body": "**Maksat:** Zorla çalıştırmak, hizmet ettirmek, fuhuş yaptırmak, esarete tâbi kılmak ya da vücut organlarının verilmesini sağlamak.\n\n**Araç fiiller (rızayı elde etme yolları):** Tehdit, baskı, cebir veya şiddet uygulamak. Nüfuzu kötüye kullanmak. Kandırmak. Kişiler üzerindeki denetim olanaklarından veya çaresizliklerinden yararlanmak.\n\n**Hareketler:** Ülkeye sokmak, ülke dışına çıkarmak, tedarik etmek, kaçırmak, bir yerden başka bir yere götürmek, sevk etmek, barındırmak.\n\n**Ceza:** Sekiz yıldan oniki yıla kadar hapis ve onbin güne kadar adlî para cezası.\n**Rıza:** Bu amaçlarla girişilen ve suçu oluşturan fiiller varsa mağdurun rızası geçersizdir.\n**Onsekiz yaşını doldurmamış mağdur:** Birinci fıkradaki maksatlarla tedarik edilir, kaçırılır, bir yerden diğer bir yere götürülür, sevk edilir veya barındırılırsa, araç fiillerden hiçbirine başvurulmamış olsa da birinci fıkradaki cezalar verilir.\n**Tüzel kişi:** Güvenlik tedbiri uygulanır.",
+      "articleRefs": [
+        "80"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Araç mı, hareket mi, hangi madde?",
+      "body": "Şıklarda **'nüfuzu kötüye kullanmak'** görürsen dur. Bu, md 80'de rızayı elde etme yollarından biridir, yani **araçtır**. Barındırmak, ülke dışına çıkarmak, bir yerden başka bir yere götürmek ve sevk etmek ise **harekettir**.\n\nTipik olay şudur: Fail, organlarını almak için kişileri kandırarak ülkeye getirir ve barındırır. Kandırma araçtır, ülkeye sokma ve barındırma harekettir, vücut organlarının verilmesi maksattır. Bunlar bir aradaysa suç insan ticaretidir. Md 79'un maksadı ise maddi menfaattir; organ, fuhuş ve zorla çalıştırma gibi maksatlar md 80'de sayılır.\n\nSon tuzak: Md 80'de örgüt faaliyeti için ayrı bir artırım fıkrası yoktur. Örgüt artırımı md 79'dadır.",
+      "articleRefs": [
+        "79",
+        "80"
+      ]
+    },
+    {
+      "type": "concept",
+      "title": "Hayata karşı suçların çekirdeği",
+      "body": "Temel kural kısadır: Bir insanı kasten öldüren kişi müebbet hapis cezası ile cezalandırılır. Md 82'deki hâllerden biri varsa ceza ağırlaştırılmış müebbete çıkar. Ölüme kasten değil taksirle neden olunduysa md 85'e bakarsın. Kişi başkasının yönlendirmesiyle kendi hayatına son verdiyse md 84'e bakarsın.",
+      "articleRefs": [
+        "81",
+        "82",
+        "84",
+        "85"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Kasten öldürmenin nitelikli hâlleri",
+      "body": "Kasten öldürme suçu şu hâllerde işlenirse:\n- a) Tasarlayarak\n- b) Canavarca hisle veya eziyet çektirerek\n- c) Yangın, su baskını, tahrip, batırma veya bombalama ya da nükleer, biyolojik veya kimyasal silah kullanmak suretiyle\n- d) Üstsoy veya altsoydan birine ya da eş, boşandığı eş veya kardeşe karşı\n- e) Çocuğa ya da beden veya ruh bakımından kendisini savunamayacak durumdaki kişiye karşı\n- f) Kadına karşı\n- g) Kişinin yerine getirdiği kamu görevi nedeniyle\n- h) Bir suçu gizlemek, delillerini ortadan kaldırmak, işlenmesini kolaylaştırmak ya da yakalanmamak amacıyla\n- i) Bir suçu işleyememekten dolayı duyduğu infialle\n- j) Kan gütme saikiyle\n- k) Töre saikiyle\n\n**Sonuç:** Ağırlaştırılmış müebbet hapis cezası.",
+      "articleRefs": [
+        "82"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Listede var mı, yok mu?",
+      "body": "**Listede olanlar:** boşandığı eş, kardeş, kadın, çocuk, kimyasal silah, bir suçu işleyememekten duyulan infial, kan gütme saiki, töre saiki, kamu görevi nedeniyle öldürme.\n\n**Listede olmayanlar:** birden fazla kişi tarafından birlikte işleme, birden fazla kişiye karşı işleme, gece vakti, zehirleme, nişanlıya karşı işleme.\n\nZehirleme şıkkı en çok kandıran çeldiricidir. c bendinde yangın, su baskını, tahrip, batırma, bombalama ile nükleer, biyolojik veya kimyasal silah sayılır. Zehirlemek ise sayılmamıştır.",
+      "articleRefs": [
+        "82"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Yakınlık, istek ve görev",
+      "body": "- **Babasını, yalvarması üzerine acılarına son vermek için öldüren evlat:** Mağdur üstsoydur, bu yüzden d bendi uygulanır ve ceza ağırlaştırılmış müebbettir. Md 82'de mağdurun isteğine ya da acımaya bağlı bir indirim yoktur.\n- **Eşini sevgilisiyle birlikte öldüren:** d bendindeki bağ, mağdurun failin eşi olmasına dayanır. 'Birden fazla kişi tarafından birlikte işleme' ise nitelikli hâl olarak sayılmamıştır. Bu yüzden d bendi, mağdurla eş bağı bulunan fail bakımından gündeme gelir. Mağdur kadınsa f bendi ayrıca değerlendirilir.\n- **Kamu görevi (g bendi):** Bent, öldürmenin kişinin yerine getirdiği kamu görevi **nedeniyle** işlenmesini arar. Mağdurun kamu görevlisi olması ya da olayın görev saatinde yaşanması bu bendi kendiliğinden doğurmaz.",
+      "articleRefs": [
+        "82"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "İntihara yönlendirme",
+      "body": "- **Azmettirme, teşvik, intihar kararını kuvvetlendirme, herhangi bir şekilde yardım:** iki yıldan beş yıla kadar hapis.\n- **İntihar gerçekleşirse:** dört yıldan on yıla kadar hapis.\n- **Başkalarını intihara alenen teşvik:** üç yıldan sekiz yıla kadar hapis.\n- **Kasten öldürmeden sorumluluk:** İşlediği fiilin anlam ve sonuçlarını algılama yeteneği gelişmemiş veya ortadan kaldırılmış kişiyi intihara sevk etmek. Cebir veya tehdit kullanarak kişiyi intihara mecbur etmek.\n\nMaddede ceza, başkasını intihara yönlendirene bağlanmıştır. İntihar eden kişi için bir ceza öngörülmemiştir.",
+      "articleRefs": [
+        "84"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Hangisi kasten öldürmeye döner?",
+      "body": "Kasten öldürmeden sorumluluk yalnız md 84'ün son fıkrasındaki hâllerde doğar:\n- cebir veya tehditle intihara mecbur etme,\n- algılama yeteneği gelişmemiş ya da ortadan kaldırılmış kişiyi intihara sevk etme.\n\nAlenen teşvik, azmettirme, kararı kuvvetlendirme ve araç sağlamak dahil her türlü yardım, md 84'ün kendi cezalarıyla kalır. Alenen teşvikin cezasının daha ağır olması onu kasten öldürmeye çevirmez.\n\n**Kadına karşı işlenme:** Md 82'de kasten öldürmenin nitelikli hâlidir. Md 84'te böyle bir hâl yoktur.",
+      "articleRefs": [
+        "82",
+        "84"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Taksirle öldürme",
+      "body": "- **Taksirle bir insanın ölümüne neden olan:** iki yıldan altı yıla kadar hapis.\n- **Fiil birden fazla insanın ölümüne ya da bir veya birden fazla kişinin ölümü ile birlikte bir veya birden fazla kişinin yaralanmasına neden olmuşsa:** iki yıldan onbeş yıla kadar hapis.\n\n**Ayrım:** Ölüm kasten gerçekleştirilmişse md 81 ve 82 uygulanır. Taksirle gerçekleşmişse md 85 uygulanır. Md 85'te alt sınır her iki fıkrada da aynıdır, değişen yalnız üst sınırdır.",
+      "articleRefs": [
+        "81",
+        "82",
+        "85"
+      ]
+    },
+    {
+      "type": "numbers",
+      "title": "Sayılar: md 81–85",
+      "rows": [
+        {
+          "label": "Kasten öldürme (temel)",
+          "value": "Müebbet hapis",
+          "refs": [
+            "81"
+          ]
+        },
+        {
+          "label": "Kasten öldürme, md 82'deki hâllerden biriyle",
+          "value": "Ağırlaştırılmış müebbet hapis",
+          "refs": [
+            "82"
+          ]
+        },
+        {
+          "label": "İntihara azmettirme, teşvik, kararı kuvvetlendirme, yardım",
+          "value": "2–5 yıl hapis",
+          "refs": [
+            "84"
+          ]
+        },
+        {
+          "label": "İntihar gerçekleşirse",
+          "value": "4–10 yıl hapis",
+          "refs": [
+            "84"
+          ]
+        },
+        {
+          "label": "Başkalarını intihara alenen teşvik",
+          "value": "3–8 yıl hapis",
+          "refs": [
+            "84"
+          ]
+        },
+        {
+          "label": "Cebir veya tehditle intihara mecbur etme; algılama yeteneği olmayanı intihara sevk",
+          "value": "Kasten öldürmeden sorumluluk",
+          "refs": [
+            "84"
+          ]
+        },
+        {
+          "label": "Taksirle bir insanın ölümü",
+          "value": "2–6 yıl hapis",
+          "refs": [
+            "85"
+          ]
+        },
+        {
+          "label": "Taksirle birden fazla ölüm ya da ölüm ile birlikte yaralanma",
+          "value": "2–15 yıl hapis",
+          "refs": [
+            "85"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "81",
+        "82",
+        "84",
+        "85"
+      ]
+    },
+    {
+      "type": "compare",
+      "title": "Soykırım ve insanlığa karşı suçlar",
+      "rows": [
+        {
+          "aspect": "Madde",
+          "left": "Soykırım (md 76)",
+          "right": "İnsanlığa karşı suçlar (md 77)",
+          "refs": [
+            "76",
+            "77"
+          ]
+        },
+        {
+          "aspect": "Hedef",
+          "left": "Millî, etnik, ırki veya dinî bir grubun üyeleri",
+          "right": "Toplumun bir kesimi",
+          "refs": [
+            "76",
+            "77"
+          ]
+        },
+        {
+          "aspect": "Zihinsel unsur",
+          "left": "Grubu tamamen veya kısmen yok etme maksadı",
+          "right": "Siyasal, felsefi, ırki veya dinî saik",
+          "refs": [
+            "76",
+            "77"
+          ]
+        },
+        {
+          "aspect": "İşleniş biçimi",
+          "left": "Bir planın icrası suretiyle",
+          "right": "Bir plan doğrultusunda sistemli olarak",
+          "refs": [
+            "76",
+            "77"
+          ]
+        },
+        {
+          "aspect": "Fiiller",
+          "left": "a–e: öldürme, ağır zarar, yok edici yaşam koşulları, doğumları engelleme, çocukları zorla nakil",
+          "right": "a–h: öldürme, yaralama, işkence-eziyet-köleleştirme, hürriyetten yoksun kılma, bilimsel deney, cinsel saldırı ve istismar, zorla hamile bırakma, zorla fuhşa sevk",
+          "refs": [
+            "76",
+            "77"
+          ]
+        },
+        {
+          "aspect": "Ceza",
+          "left": "Ağırlaştırılmış müebbet hapis",
+          "right": "(a) bendinde ağırlaştırılmış müebbet; diğer bentlerde sekiz yıldan az olmamak üzere hapis",
+          "refs": [
+            "76",
+            "77"
+          ]
+        },
+        {
+          "aspect": "Gerçek içtima",
+          "left": "Kasten öldürme ve kasten yaralamada mağdur sayısınca",
+          "right": "(a) ve (b) kapsamındaki kasten öldürme ve kasten yaralamada mağdur sayısınca",
+          "refs": [
+            "76",
+            "77"
+          ]
+        },
+        {
+          "aspect": "Tüzel kişi ve zamanaşımı",
+          "left": "Güvenlik tedbiri; zamanaşımı işlemez",
+          "right": "Güvenlik tedbiri; zamanaşımı işlemez",
+          "refs": [
+            "76",
+            "77"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "76",
+        "77"
+      ]
+    },
+    {
+      "type": "compare",
+      "title": "Göçmen kaçakçılığı ve insan ticareti",
+      "rows": [
+        {
+          "aspect": "Madde",
+          "left": "Göçmen kaçakçılığı (md 79)",
+          "right": "İnsan ticareti (md 80)",
+          "refs": [
+            "79",
+            "80"
+          ]
+        },
+        {
+          "aspect": "Maksat",
+          "left": "Doğrudan veya dolaylı maddi menfaat",
+          "right": "Zorla çalıştırma, hizmet ettirme, fuhuş, esaret, vücut organlarının verilmesi",
+          "refs": [
+            "79",
+            "80"
+          ]
+        },
+        {
+          "aspect": "Hareketler",
+          "left": "Yasal olmayan yollardan yabancıyı ülkeye sokma veya kalmasına imkân; Türk vatandaşı veya yabancının yurt dışına çıkmasına imkân",
+          "right": "Ülkeye sokma, ülke dışına çıkarma, tedarik, kaçırma, götürme, sevk, barındırma",
+          "refs": [
+            "79",
+            "80"
+          ]
+        },
+        {
+          "aspect": "Araç fiil",
+          "left": "Maddede sayılmamış",
+          "right": "Tehdit, baskı, cebir, şiddet, nüfuzu kötüye kullanma, kandırma, denetim olanaklarından veya çaresizlikten yararlanma",
+          "refs": [
+            "79",
+            "80"
+          ]
+        },
+        {
+          "aspect": "Mağdurun rızası",
+          "left": "Maddede düzenlenmemiş",
+          "right": "Suçu oluşturan fiiller varsa geçersiz",
+          "refs": [
+            "79",
+            "80"
+          ]
+        },
+        {
+          "aspect": "Ceza",
+          "left": "5–8 yıl hapis ve bin–onbin gün adlî para cezası",
+          "right": "8–12 yıl hapis ve onbin güne kadar adlî para cezası",
+          "refs": [
+            "79",
+            "80"
+          ]
+        },
+        {
+          "aspect": "Teşebbüs",
+          "left": "Tamamlanmış gibi ceza",
+          "right": "Maddede özel hüküm yok",
+          "refs": [
+            "79",
+            "80"
+          ]
+        },
+        {
+          "aspect": "Artırım sebepleri",
+          "left": "Hayat tehlikesi, onur kırıcı muamele, birlikte işleme, örgüt faaliyeti",
+          "right": "Maddede artırım fıkrası yok",
+          "refs": [
+            "79",
+            "80"
+          ]
+        },
+        {
+          "aspect": "Onsekiz yaşını doldurmamış mağdur",
+          "left": "Maddede özel hüküm yok",
+          "right": "Araç fiil aranmadan aynı ceza",
+          "refs": [
+            "79",
+            "80"
+          ]
+        },
+        {
+          "aspect": "Tüzel kişi",
+          "left": "Bunlara özgü güvenlik tedbirleri",
+          "right": "Güvenlik tedbiri",
+          "refs": [
+            "79",
+            "80"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "79",
+        "80"
+      ]
+    },
+    {
+      "type": "exam_stats",
+      "title": "Sınav der ki",
+      "rows": [
+        {
+          "label": "Bu ünitenin maddelerinden yayındaki soru",
+          "value": "61",
+          "refs": [
+            "76",
+            "77",
+            "78",
+            "79",
+            "80",
+            "81",
+            "82",
+            "84",
+            "85"
+          ]
+        },
+        {
+          "label": "md 82 — Nitelikli haller",
+          "value": "16 soru",
+          "refs": [
+            "82"
+          ]
+        },
+        {
+          "label": "md 84 — İntihara yönlendirme",
+          "value": "10 soru",
+          "refs": [
+            "84"
+          ]
+        },
+        {
+          "label": "md 76 — Soykırım",
+          "value": "7 soru",
+          "refs": [
+            "76"
+          ]
+        },
+        {
+          "label": "md 80 — İnsan ticareti",
+          "value": "7 soru",
+          "refs": [
+            "80"
+          ]
+        },
+        {
+          "label": "md 81",
+          "value": "7 soru",
+          "refs": [
+            "81"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "76",
+        "77",
+        "78",
+        "79",
+        "80",
+        "81",
+        "82",
+        "84",
+        "85"
+      ],
+      "generated": true
+    },
+    {
+      "type": "bridge",
+      "title": "Bu üniteden soru çöz",
+      "articleRefs": [
+        "76",
+        "77",
+        "78",
+        "79",
+        "80",
+        "81",
+        "82",
+        "84",
+        "85"
+      ],
+      "generated": true,
+      "rows": [
+        {
+          "label": "Madde kapsamlı seans",
+          "value": "md 76–82, 84, 85, 10 soru",
+          "refs": [
+            "76",
+            "77",
+            "78",
+            "79",
+            "80",
+            "81",
+            "82",
+            "84",
+            "85"
+          ]
+        }
+      ]
+    }
+  ]
+}

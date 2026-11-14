@@ -1,0 +1,853 @@
+{
+  "unit": {
+    "slug": "tck-topluma-karsi-suclar",
+    "legislationSlug": "turk-ceza-kanunu",
+    "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+    "title": "Topluma karşı suçlar",
+    "subtitle": "Genel tehlike, trafik, imar, uyuşturucu, belgede sahtecilik, kamu barışı, örgüt, ihale ve bilişim suçları",
+    "articleFrom": "170",
+    "articleTo": "245",
+    "readingMinutes": 15,
+    "sourceLabel": "AI özeti — Türk Ceza Kanunu, md 170, 171, 174, 179, 180, 184, 185, 188, 190–192, 204, 206, 207, 209, 210, 212, 214–217, 220, 221, 235, 236, 239, 241, 243–245",
+    "articleNos": [
+      "170",
+      "171",
+      "174",
+      "179",
+      "180",
+      "184",
+      "185",
+      "188",
+      "190",
+      "191",
+      "192",
+      "204",
+      "206",
+      "207",
+      "209",
+      "210",
+      "212",
+      "214",
+      "215",
+      "216",
+      "217",
+      "220",
+      "221",
+      "235",
+      "236",
+      "239",
+      "241",
+      "243",
+      "244",
+      "245"
+    ],
+    "generatedBy": "claude-opus-5-5 (ozet-uret.ts)",
+    "sortOrder": 13
+  },
+  "blocks": [
+    {
+      "type": "concept",
+      "title": "Mağdur toplumun kendisi",
+      "body": "Bu ünitede karşındaki mağdur tek bir kişi değil, toplumun kendisi. Kanun bu yüzden çoğu yerde zararın gerçekleşmesini beklemez, tehlikeyi cezalandırır. Ama aranan tehlike maddeden maddeye değişir. md 170/1, fiilin hayat, sağlık veya malvarlığı bakımından tehlikeli olacak biçimde ya da kişilerde korku, kaygı veya panik yaratabilecek tarzda işlenmesini ister; md 171 ise fiilin başkalarının hayatı, sağlığı veya malvarlığı bakımından tehlikeli olmasını arar. md 216/1, kamu güvenliği açısından açık ve yakın bir tehlikenin ortaya çıkmasını arar. md 217 ise tahrikin kamu barışını bozmaya elverişli olmasını yeterli görür. Okurken her maddede üç şeye bak: hareket listesinde neler var, hangi şart aranıyor, ceza ne kadar. Soru kökleri genellikle bunlardan birini yoklar.",
+      "articleRefs": [
+        "170",
+        "171",
+        "216",
+        "217"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Genel güvenliği tehlikeye sokma ve tehlikeli maddeler",
+      "body": "**Kasten (md 170/1):** Fiil, kişilerin hayatı, sağlığı veya malvarlığı bakımından tehlikeli olacak biçimde ya da kişilerde korku, kaygı veya panik yaratabilecek tarzda işlenmelidir. Hareketler şunlardır:\n- yangın çıkarmak,\n- bina çökmesine, toprak kaymasına, çığ düşmesine, sel veya taşkına neden olmak,\n- silahla ateş etmek veya patlayıcı madde kullanmak.\n\nBu hareketlerin cezası **1–5 yıl** hapistir. Ses ve gaz fişeği atabilen silahla ateş edilmesi hâlinde ceza **6 ay–3 yıl** hapistir.\n\n**Toplu yerde (md 170/2):** Suç kişilerin toplu olarak bulundukları yerlerde işlenirse ceza yarı oranında artırılır.\n\n**Tehlikesine neden olma (md 170/3):** Yangın, bina çökmesi, toprak kayması, çığ düşmesi, sel veya taşkın tehlikesine neden olmanın cezası **3 ay–1 yıl** hapis veya adlî para cezasıdır.\n\n**Taksirle (md 171):** Taksirle yangına ya da bina çökmesine, toprak kaymasına, çığ düşmesine, sel veya taşkına neden olmak suçtur. Fiilin başkalarının hayatı, sağlığı veya malvarlığı bakımından tehlikeli olması gerekir. Cezası **3 ay–1 yıl** hapistir.\n\n**İzinsiz tehlikeli madde (md 174):**\n- Yetkili makam izni olmadan patlayıcı, yakıcı, aşındırıcı, yaralayıcı, boğucu, zehirleyici, nükleer, radyoaktif, kimyasal veya biyolojik maddeyi imal, ithal, ihraç eden, nakleden, muhafaza eden, satan, satın alan ya da işleyen kişi cezalandırılır. Ceza **4–8 yıl** hapis ve **5.000 güne kadar** adlî para cezasıdır.\n- Bu maddeler için gerekli malzeme ve teçhizata ilişkin fiiller de aynı cezayı gerektirir.\n- Fiil örgüt faaliyeti çerçevesinde işlenirse ceza bir kat artırılır.\n- Önemsiz tür ve miktarda patlayıcıyı satın alan, kabul eden veya bulunduran kişiye, kullanılış amacı gözetilerek **1 yıla kadar** hapis verilir.",
+      "articleRefs": [
+        "170",
+        "171",
+        "174"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Trafik güvenliği: kasten ve taksirle",
+      "body": "**md 179/1:** Kara, deniz, hava veya demiryolu ulaşımı için konulmuş işaretlere ya da yollara müdahale etmek bu suçu oluşturur. Hareketler şunlardır:\n- işareti değiştirmek, kullanılamaz hâle getirmek veya yerinden kaldırmak,\n- yanlış işaret vermek,\n- geçiş, varış, kalkış veya iniş yolları üzerine bir şey koymak,\n- teknik işletim sistemine müdahale etmek.\n\nBu hareketlerle başkalarının hayatı, sağlığı veya malvarlığı bakımından tehlikeye neden olunmalıdır. Cezası **1–6 yıl** hapistir.\n\n**md 179/2:** Kara, deniz, hava veya demiryolu ulaşım araçlarını hayat, sağlık veya malvarlığı açısından tehlikeli olabilecek şekilde sevk ve idare etmenin cezası **4 ay–2 yıl** hapistir.\n\n**md 179/3:** Alkol veya uyuşturucu madde etkisiyle ya da başka bir nedenle emniyetli şekilde araç sevk ve idare edemeyecek hâlde araç kullanmanın cezası **6 ay–2 yıl** hapistir.\n\n**md 180:** Deniz, hava veya demiryolu ulaşımında kişilerin hayatı, sağlığı veya malvarlığı bakımından bir tehlikeye taksirle neden olmanın cezası **3 ay–3 yıl** hapistir.",
+      "articleRefs": [
+        "179",
+        "180"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Listede olmayanı listeye sokma",
+      "body": "- md 170'in hareket listesinde **trafik kazası, bulaşıcı hastalık ve radyasyon yok.** Listede yalnız şunlar var: yangın; bina çökmesi, toprak kayması, çığ, sel, taşkın; silahla ateş etme ve patlayıcı madde kullanma.\n- md 171 yalnız iki grubu kapsar: yangına ya da bina çökmesine, toprak kaymasına, çığ düşmesine, sel veya taşkına taksirle neden olmak. Taşınır bir malın zarara uğramasına taksirle neden olmak bu listede yok.\n- md 171 de tehlike ister. Fiil başkalarının hayatı, sağlığı veya malvarlığı bakımından tehlikeli değilse bu suç oluşmaz.\n- İzin almadan patlayıcı **muhafaza etmek** md 170'e değil, md 174'e girer. md 170 patlayıcı madde 'kullanan' kişiyi cezalandırır.\n- Trafik levhasını sökmek md 179/1'deki 'konuldukları yerden kaldırarak' hareketidir. Alkollüyken emniyetli kullanamayacak hâlde araç sürmek ise md 179/3'tür. İki durum da taksir maddesi olan md 180'e gitmez.\n- md 180'de **kara yolu yok.** Bu madde yalnız deniz, hava veya demiryolu ulaşımını kapsar. 'Kara, deniz, hava ve demiryolu' şıkkı md 179'un listesidir.",
+      "articleRefs": [
+        "170",
+        "171",
+        "174",
+        "179",
+        "180"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "İmar kirliliği ve zehirli madde katma",
+      "body": "**İmar kirliliği (md 184):**\n- Yapı ruhsatiyesi almadan veya ruhsata aykırı bina yapan ya da yaptıran kişiye **1–5 yıl** hapis verilir.\n- Ruhsatsız inşaat şantiyesine elektrik, su veya telefon bağlantısı yapılmasına müsaade eden kişiye de aynı ceza verilir.\n- Yapı kullanma izni alınmamış binada sınai faaliyetin icrasına müsaade eden kişinin cezası **2–5 yıl** hapistir.\n- Madde, üçüncü fıkra hariç, yalnız belediye sınırları içinde veya özel imar rejimine tabi yerlerde uygulanır.\n- Kişi binayı imar planına ve ruhsatına uygun hâle getirirse, birinci ve ikinci fıkralar bakımından kamu davası açılmaz. Açılmış dava düşer, ceza bütün sonuçlarıyla ortadan kalkar.\n- İkinci ve üçüncü fıkralar, 12 Ekim 2004 tarihinden önce yapılmış yapılara uygulanmaz.\n\n**Zehirli madde katma (md 185):**\n- İçilecek sulara ya da yenilecek, içilecek, kullanılacak veya tüketilecek her çeşit besin veya şeylere zehir katarak veya başka suretlerle bunları bozarak kişilerin hayatını ve sağlığını tehlikeye düşürmenin cezası **2–15 yıl** hapistir.\n- Aynı fiil dikkat ve özen yükümlülüğüne aykırı olarak işlenirse ceza **3 ay–1 yıl** hapistir.",
+      "articleRefs": [
+        "184",
+        "185"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Uyuşturucu veya uyarıcı madde imal ve ticareti",
+      "body": "**İmal, ithal, ihraç (md 188/1):** Ruhsatsız veya ruhsata aykırı olarak imal, ithal veya ihraç etmenin cezası **20–30 yıl** hapis ve **2.000–20.000 gün** adlî para cezasıdır.\n\n**Mahsup (md 188/2):** İhraç fiili diğer ülkede ithal sayılıp orada yargılama yapılmış olabilir. Bu durumda orada infaz edilen kısım, Türkiye'deki cezadan mahsup edilir.\n\n**Ülke içinde (md 188/3):** Satmak, satışa arz etmek, başkalarına vermek, sevk etmek, nakletmek, depolamak, satın almak, kabul etmek ve bulundurmak bu fıkranın hareketleridir. Cezası **10 yıldan az olmamak** üzere hapis ve **1.000–20.000 gün** adlî para cezasıdır. Madde çocuğa verilir veya satılırsa hapis **15 yıldan** az olamaz.\n\n**İzne veya reçeteye bağlı maddeler (md 188/6):** Üretimi resmi izne veya satışı reçeteye bağlı olup uyuşturucu veya uyarıcı etki doğuran maddeler de kapsamdadır. Bu maddelerde ceza yarısına kadar indirilebilir.\n\n**Üretimde kullanılan madde (md 188/7):** Kendisi etki doğurmasa da uyuşturucu üretiminde kullanılan ve izne bağlı maddeyi ithal, imal, satma, nakil gibi fiiller de suçtur. Cezası **8 yıldan az olmamak** üzere hapis ve **1.000–20.000 gün** adlî para cezasıdır.",
+      "articleRefs": [
+        "188"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Yarı mı, bir kat mı? Hangi fıkra?",
+      "body": "- **Yarı oranında artırım** şu hâllerde uygulanır:\n  - madde eroin, kokain, morfin, bazmorfin, sentetik kannabinoid, sentetik katinon, sentetik opioid veya amfetamin ve türevleriyse,\n  - üçüncü fıkra fiilleri okul, yurt, hastane, kışla, ibadethane gibi yerlere 200 metreden yakın umumi veya umuma açık yerde işlenirse,\n  - suç 3 veya daha fazla kişiyle birlikte işlenirse,\n  - fail tabip, eczacı, hemşire gibi sağlık ya da ecza mesleği mensubuysa.\n- **Bir kat artırım** yalnız suçun suç örgütünün faaliyeti çerçevesinde işlenmesinde uygulanır. Eroin, 200 metre, sağlık çalışanı ve birlikte işleme şıkları bir kat değil, yarı oranında artırımdır.\n- Birlikte işleme artırımı için **en az üç kişi** gerekir. Daha az kişiyle işlenmesi bu artırımı doğurmaz.\n- md 190/1'in hareketleri şunlardır:\n  - özel yer, donanım veya malzeme sağlamak,\n  - kullananların yakalanmalarını zorlaştıracak önlem almak,\n  - kullanma yöntemleri konusunda bilgi vermek.\n\n  Cezası **5–10 yıl** hapis ve **1.000–10.000 gün** adlî para cezasıdır.\n- **Alenen özendirme veya özendirici yayın** bu listede değildir; ayrı fıkrada (md 190/2) düzenlenir ve cezası aynıdır.\n- Sağlık veya ecza mesleği mensubu md 190'daki suçları işlerse ceza yarı oranında artırılır.",
+      "articleRefs": [
+        "188",
+        "190"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Kullanmak için almak, bulundurmak, kullanmak",
+      "body": "**Suç (md 191/1):** Kullanmak için uyuşturucu veya uyarıcı madde satın almak, kabul etmek, bulundurmak ya da kullanmak suçtur. Cezası **2–5 yıl** hapistir. Fiil okul, yurt, hastane, kışla, ibadethane gibi yerlere 200 metreden yakın umumi veya umuma açık yerde işlenirse ceza yarı oranında artırılır (md 191/10).\n\n**Erteleme (md 191/2):** CMK md 171'deki şartlar aranmaz; **5 yıl** süreyle kamu davasının açılmasının ertelenmesine karar verilir. Cumhuriyet savcısı şüpheliyi ihlalin sonuçları konusunda uyarır. Erteleme kararı kolluk birimlerine de bildirilir.\n\n**Denetimli serbestlik (md 191/3):**\n- Erteleme süresince **en az 1 yıl** denetimli serbestlik uygulanır.\n- Bu süre, denetimli serbestlik müdürlüğünün teklifiyle veya resen savcı kararıyla altışar aylık sürelerle **en fazla 2 yıl daha** uzatılabilir.\n- Gerek görülürse kişi tedaviye tabi tutulabilir.\n- Savcı, kullanımı tespit için şüpheliyi yılda **en az 2 defa** ilgili kuruma sevk eder.\n\n**İhlal (md 191/4–5):** Şu hâllerde kamu davası açılır:\n- yükümlülüklere veya tedavinin gereklerine uymamakta ısrar,\n- tekrar kullanmak için satın alma, kabul etme veya bulundurma,\n- yeniden kullanma.\n\nYeniden alma veya kullanma ihlal nedeni sayılır; ayrı soruşturma ve kovuşturma konusu yapılmaz.\n\n**Sonrası (md 191/6–7):** Dava açıldıktan sonra suç tekrar işlenirse yeniden erteleme kararı verilemez. Şüpheli ihlal yapmazsa kovuşturmaya yer olmadığı kararı verilir.\n\n**md 188 veya md 190 kovuşturmasında (md 191/8):** Suçun yalnız md 191 kapsamına girdiği anlaşılırsa hükmün açıklanmasının geri bırakılması kararı verilir.",
+      "articleRefs": [
+        "191"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Uyuşturucuda etkin pişmanlık",
+      "body": "- **İştirakçi (md 192/1):** İmal ve ticaret suçuna iştirak eden kişi, resmi makamlar haber almadan önce suç ortaklarını ve maddenin saklandığı ya da imal edildiği yeri merciine haber verebilir. Bilgi, suç ortaklarının yakalanmasını veya maddenin ele geçirilmesini sağlarsa **cezaya hükmolunmaz.**\n- **Kullanmak için alan (md 192/2):** Kişi, haber alınmadan önce maddeyi kimden, nerede ve ne zaman temin ettiğini bildirebilir. Bu bilgi suçluların yakalanmasını veya maddenin ele geçirilmesini kolaylaştırırsa **cezaya hükmolunmaz.**\n- **Haber alındıktan sonra (md 192/3):** Gönüllü olarak suçun meydana çıkmasına ve faillerin yakalanmasına yardım edene ceza verilir, ancak yardımın niteliğine göre **dörtte birden yarısına kadar** indirilir.\n- **Tedavi başvurusu (md 192/4):** Kullanan kişi, hakkında soruşturma başlatılmadan önce resmi makamlara veya sağlık kuruluşlarına başvurup tedavi isterse **cezaya hükmolunmaz.** Bu durumda kamu görevlileri ve sağlık mesleği mensupları için md 279 ve md 280 uyarınca suçu bildirme yükümlülüğü doğmaz.",
+      "articleRefs": [
+        "192"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Savcının kararı: erteleme",
+      "body": "- Kullanmak için madde aldığı belirlenen şüpheli hakkında savcı kural olarak iddianame düzenlemez. Hükmün açıklanmasının geri bırakılmasına da karar vermez. Verdiği karar şudur: **kamu davasının açılmasının 5 yıl ertelenmesi.** Hükmün açıklanmasının geri bırakılması ise md 188 veya md 190 kovuşturmasında, suçun yalnız md 191 kapsamında kaldığı anlaşılınca gündeme gelir.\n- Denetimli serbestlik **en az 1 yıldır** ve **en fazla 2 yıl daha** uzatılabilir.\n- Tedavi her durumda zorunlu değildir. Metin 'gerek görülmesi hâlinde' der.\n- Erteleme süresinde yeniden satın almak veya kullanmak yeni bir soruşturma açtırmaz. Bu, ertelemenin ihlalidir ve kamu davası açılır.\n- md 192'de 'cezaya hükmolunmaz' sonucu yalnız şu hâllerde doğar: haber alınmadan önce bilgi veren iştirakçi, haber alınmadan önce temin yerini bildiren kullanıcı ve soruşturmadan önce tedavi isteyen kullanıcı. Haber alındıktan sonraki yardımda ise yalnız indirim vardır. Cezaya hükmolunmayan bu üç hâlde 'ceza yarı oranında indirilir' veya 'dava ertelenir' şıkları yanlıştır.",
+      "articleRefs": [
+        "191",
+        "192"
+      ]
+    },
+    {
+      "type": "numbers",
+      "title": "Tehlike ve uyuşturucu suçlarında ceza sınırları",
+      "rows": [
+        {
+          "label": "Genel güvenliği kasten tehlikeye sokma",
+          "value": "1–5 yıl hapis",
+          "refs": [
+            "170"
+          ]
+        },
+        {
+          "label": "Ses ve gaz fişeği atabilen silahla ateş",
+          "value": "6 ay–3 yıl hapis",
+          "refs": [
+            "170"
+          ]
+        },
+        {
+          "label": "Toplu bulunulan yerde işlenmesi",
+          "value": "yarı oranında artırım",
+          "refs": [
+            "170"
+          ]
+        },
+        {
+          "label": "Yangın vb. tehlikesine neden olma",
+          "value": "3 ay–1 yıl hapis veya adlî para",
+          "refs": [
+            "170"
+          ]
+        },
+        {
+          "label": "Genel güvenliği taksirle tehlikeye sokma",
+          "value": "3 ay–1 yıl hapis",
+          "refs": [
+            "171"
+          ]
+        },
+        {
+          "label": "İzinsiz tehlikeli madde",
+          "value": "4–8 yıl hapis + 5.000 güne kadar adlî para",
+          "refs": [
+            "174"
+          ]
+        },
+        {
+          "label": "Önemsiz tür ve miktarda patlayıcı",
+          "value": "1 yıla kadar hapis",
+          "refs": [
+            "174"
+          ]
+        },
+        {
+          "label": "Ulaşım işaretine müdahale ile tehlike",
+          "value": "1–6 yıl hapis",
+          "refs": [
+            "179"
+          ]
+        },
+        {
+          "label": "Aracı tehlikeli şekilde sevk ve idare",
+          "value": "4 ay–2 yıl hapis",
+          "refs": [
+            "179"
+          ]
+        },
+        {
+          "label": "Emniyetli kullanamayacak hâlde araç kullanma",
+          "value": "6 ay–2 yıl hapis",
+          "refs": [
+            "179"
+          ]
+        },
+        {
+          "label": "Trafik güvenliğini taksirle tehlikeye sokma",
+          "value": "3 ay–3 yıl hapis",
+          "refs": [
+            "180"
+          ]
+        },
+        {
+          "label": "Ruhsatsız / ruhsata aykırı bina",
+          "value": "1–5 yıl hapis",
+          "refs": [
+            "184"
+          ]
+        },
+        {
+          "label": "Kullanma izni olmayan binada sınai faaliyet",
+          "value": "2–5 yıl hapis",
+          "refs": [
+            "184"
+          ]
+        },
+        {
+          "label": "Zehirli madde katma",
+          "value": "2–15 yıl hapis; özen yükümlülüğüne aykırılıkla 3 ay–1 yıl",
+          "refs": [
+            "185"
+          ]
+        },
+        {
+          "label": "Uyuşturucu imal, ithal, ihraç",
+          "value": "20–30 yıl hapis + 2.000–20.000 gün",
+          "refs": [
+            "188"
+          ]
+        },
+        {
+          "label": "Ülke içinde satma, bulundurma vb.",
+          "value": "en az 10 yıl hapis (çocuğa: en az 15 yıl) + 1.000–20.000 gün",
+          "refs": [
+            "188"
+          ]
+        },
+        {
+          "label": "Üretimde kullanılan izne bağlı madde",
+          "value": "en az 8 yıl hapis + 1.000–20.000 gün",
+          "refs": [
+            "188"
+          ]
+        },
+        {
+          "label": "Okul, hastane vb. yakınında işlenme",
+          "value": "200 metreden yakın: yarı oranında artırım",
+          "refs": [
+            "188",
+            "191"
+          ]
+        },
+        {
+          "label": "Kullanmayı kolaylaştırma / alenen özendirme",
+          "value": "5–10 yıl hapis + 1.000–10.000 gün",
+          "refs": [
+            "190"
+          ]
+        },
+        {
+          "label": "Kullanmak için alma, bulundurma, kullanma",
+          "value": "2–5 yıl hapis",
+          "refs": [
+            "191"
+          ]
+        },
+        {
+          "label": "Kamu davasının açılmasının ertelenmesi",
+          "value": "5 yıl",
+          "refs": [
+            "191"
+          ]
+        },
+        {
+          "label": "Erteleme süresinde denetimli serbestlik",
+          "value": "en az 1 yıl; en fazla 2 yıl daha uzatma",
+          "refs": [
+            "191"
+          ]
+        },
+        {
+          "label": "Haber alındıktan sonra yardım",
+          "value": "dörtte birden yarısına kadar indirim",
+          "refs": [
+            "192"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "170",
+        "171",
+        "174",
+        "179",
+        "180",
+        "184",
+        "185",
+        "188",
+        "190",
+        "191",
+        "192"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Resmi belgede sahtecilik ve yalan beyan",
+      "body": "**Resmi belgede sahtecilik (md 204):**\n- Resmi belgeyi sahte olarak düzenleyen, gerçek resmi belgeyi başkalarını aldatacak şekilde değiştiren veya sahte resmi belgeyi kullanan kişiye **2–5 yıl** hapis verilir.\n- Görevi gereği düzenlemeye yetkili kamu görevlisinin cezası **3–8 yıl** hapistir. Bu görevli sahte düzenleme, değiştirme, gerçeğe aykırı belge düzenleme veya sahte resmi belgeyi kullanma fiillerinden birini işlemiş olmalıdır.\n- Belge, kanun gereği sahteliği sabit oluncaya kadar geçerli belge niteliğindeyse ceza yarısı oranında artırılır.\n\n**Yalan beyan (md 206):** Resmi belgeyi düzenlemeye yetkili kamu görevlisine yalan beyanda bulunmanın cezası **3 ay–2 yıl** hapis veya adlî para cezasıdır.",
+      "articleRefs": [
+        "204",
+        "206"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Özel belge, açığa imza, resmi belge hükmündeki belgeler, içtima",
+      "body": "**Özel belgede sahtecilik (md 207):** Özel belgeyi sahte olarak düzenleyen veya gerçek özel belgeyi başkalarını aldatacak şekilde değiştiren **ve kullanan** kişiye **1–3 yıl** hapis verilir. Sahte özel belgeyi bu özelliğini bilerek kullanan kişi de aynı cezayı alır.\n\n**Açığa imzanın kötüye kullanılması (md 209):**\n- Belirli bir tarzda doldurulmak üzere teslim edilen imzalı, kısmen veya tamamen boş kâğıdı verilme nedeninden farklı dolduran kişi **şikâyet üzerine** **3 ay–1 yıl** hapisle cezalandırılır.\n- Kâğıt hukuka aykırı olarak ele geçirilmiş veya elde bulundurulmuş ve hukuki sonuç doğuracak şekilde doldurulmuşsa belgede sahtecilik hükümleri uygulanır.\n\n**Resmi belge hükmünde (md 210/1):** Şu özel belgelerde resmi belgede sahtecilik hükümleri uygulanır:\n- emre veya hamile yazılı kambiyo senedi,\n- emtiayı temsil eden belge,\n- hisse senedi,\n- tahvil,\n- vasiyetname.\n\n**Sağlık mesleği mensubu (md 210/2):** Gerçeğe aykırı belge düzenleyen tabip, diş tabibi, eczacı, ebe, hemşire veya diğer sağlık mesleği mensubuna **3 ay–1 yıl** hapis verilir. Belge kişiye haksız menfaat sağlar ya da kamunun veya kişilerin zararına sonuç doğurursa resmi belgede sahtecilik hükümleri uygulanır.\n\n**İçtima (md 212):** Sahte belge başka bir suçun işlenmesi sırasında kullanılırsa hem sahtecilikten hem de ilgili suçtan ayrı ayrı cezaya hükmolunur.",
+      "articleRefs": [
+        "207",
+        "209",
+        "210",
+        "212"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Belgede sahtecilikte sık karışanlar",
+      "body": "- **Şikâyet yalnız md 209/1'de var.** Sahte özel belgeyi bilerek kullanmak (md 207/2) şikâyete bağlı değildir; 'mağdurun şikâyeti üzerine' şıkkı yanlıştır. Açığa imzanın kötüye kullanılmasında ise tersi geçerlidir: 'soruşturma resen yapılır' şıkkı yanlıştır.\n- md 210 listesinde **nama yazılı** kambiyo senedi yok. Yalnız emre veya hamile yazılı olanlar resmi belge hükmündedir.\n- Hisse senedi veya vasiyetname özel belgedir. Yine de üzerinde sahtecilik yapılırsa resmi belgede sahtecilik hükümleri uygulanır.\n- Sahte belgeyle başka bir suç işlenirse md 212 gereği sahtecilik ve ilgili suç **ayrı ayrı** cezalandırılır. Yalnız birini gösteren şıklar yanlıştır.\n- Özel belgede değiştirmek tek başına yetmez; metin 'değiştiren **ve kullanan**' der. Resmi belgede ise sahte düzenleme ve değiştirme, kullanmadan ayrı hareketler olarak sayılmıştır.\n- Belgeyi düzenleyen görevliye yalan söyledin ve belgeyi o düzenledi: md 206. Resmi belgeyi sen sahte olarak düzenleyip teslim ettin: md 204.",
+      "articleRefs": [
+        "204",
+        "206",
+        "207",
+        "209",
+        "210",
+        "212"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Kamu barışına karşı tahrik ve övme",
+      "body": "**Suç işlemeye tahrik (md 214):**\n- Suç işlemek için alenen tahrikte bulunmanın cezası **6 ay–5 yıl** hapistir.\n- Halkın bir kısmını diğerine karşı silahlandırarak birbirini öldürmeye tahrik etmenin cezası **15–24 yıl** hapistir.\n- Tahrik konusu suç işlenirse tahrik eden kişi **azmettiren** sıfatıyla cezalandırılır.\n\n**Suçu ve suçluyu övme (md 215):** İşlenmiş bir suçu ya da işlediği suç nedeniyle bir kişiyi alenen övmek bu suçu oluşturur. Kamu düzeni açısından açık ve yakın tehlike ortaya çıkarsa ceza **2 yıla kadar** hapistir.\n\n**Kin ve düşmanlığa tahrik (md 216/1):** Sosyal sınıf, ırk, din, mezhep veya bölge bakımından farklı bir kesimi diğeri aleyhine alenen tahrik etmek suçtur. Kamu güvenliği açısından açık ve yakın tehlike ortaya çıkarsa ceza **1–3 yıl** hapistir.\n\n**Aşağılama (md 216/2):** Sosyal sınıf, ırk, din, mezhep, cinsiyet veya bölge farklılığına dayanarak halkın bir kesimini alenen aşağılamanın cezası **6 ay–1 yıl** hapistir.\n\n**Dini değerleri aşağılama (md 216/3):** Halkın bir kesiminin benimsediği dini değerleri alenen aşağılamak, fiil kamu barışını bozmaya elverişliyse **6 ay–1 yıl** hapisle cezalandırılır.\n\n**Kanunlara uymamaya tahrik (md 217):** Halkı kanunlara uymamaya alenen tahrik etmek, tahrik kamu barışını bozmaya elverişliyse **6 ay–2 yıl** hapis veya adlî para cezasıyla cezalandırılır.",
+      "articleRefs": [
+        "214",
+        "215",
+        "216",
+        "217"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Hangi tahrikte hangi şart?",
+      "body": "md 214/1, md 215, md 216 ve md 217'de ortak kelime **alenen**. Fark, aranan ek şarttadır:\n- **md 214/1:** Metin alenen tahrikin ötesinde ek bir tehlike şartı aramaz. Halkın tahrike kapılması da şart değildir. Tahrik edilen suç işlenirse tahrik eden o suçun **azmettireni** olur. Bu durumda 'yalnız suç işlemeye tahrik' şıkkı eksik kalır.\n- **md 215:** **Kamu düzeni** açısından açık ve yakın tehlike gerekir; 'tehlike aranmaz' şıkkı yanlıştır. Övülen suç ayrıca **işlenmiş** olmalıdır. Henüz işlenmemiş bir suçu övmek bu suçu oluşturmaz.\n- **md 216/1:** Tahrik tek başına yetmez; **kamu güvenliği** açısından açık ve yakın tehlike ortaya çıkmalıdır. Tahrik, farklı özellikteki bir kesimi diğer kesim **aleyhine** yöneltmelidir.\n- **md 216/2:** **Cinsiyet** yalnız aşağılama fıkrasında sayılır; kin ve düşmanlık fıkrasında yoktur.\n- **md 216/3 ve md 217:** Fiilin **kamu barışını bozmaya elverişli** olması yeterlidir. md 217 için 'bu şart aranmaz' diyen şık yanlıştır.",
+      "articleRefs": [
+        "214",
+        "215",
+        "216",
+        "217"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Suç örgütü ve etkin pişmanlık",
+      "body": "**Örgüt (md 220):**\n- Kanunun suç saydığı fiilleri işlemek amacıyla örgüt kuran veya yöneten kişiye **5–10 yıl** hapis verilir. Bunun için örgüt; yapısı, üye sayısı, araç ve gereci bakımından amaç suçları işlemeye **elverişli** olmalıdır.\n- Örgütün varlığı için **en az 3 üye** gerekir.\n- Örgüt üyesinin cezası **2–5 yıl** hapistir.\n- Örgüt silahlıysa ceza yarısı oranında artırılır.\n- Örgütün faaliyeti çerçevesinde suç işlenirse bu suçlardan da ayrıca ceza verilir.\n- Suçlarda çocuklar araç olarak kullanılırsa yöneticilerin cezası yarısından bir katına kadar artırılır. Yöneticiler örgüt faaliyeti çerçevesindeki bütün suçlardan ayrıca fail olarak cezalandırılır.\n- Hiyerarşik yapıya dahil olmadan örgüte bilerek ve isteyerek yardım eden kişi **örgüt üyesi olarak** cezalandırılır. Ceza, yardımın niteliğine göre üçte birine kadar indirilebilir.\n- Örgütün cebir, şiddet veya tehdit içeren yöntemlerini meşru gösteren, öven veya bunlara başvurmayı teşvik eden propagandanın cezası **1–3 yıl** hapistir. Basın ve yayın yoluyla işlenirse ceza yarı oranında artırılır.\n\n**Etkin pişmanlık (md 221):**\n- Soruşturma başlamadan ve amaç suç işlenmeden önce örgütü dağıtan ya da dağılmasını sağlayan kurucu veya yönetici hakkında cezaya hükmolunmaz.\n- Suça iştirak etmeden gönüllü olarak ayrıldığını bildiren üye hakkında cezaya hükmolunmaz.\n- Suça iştirak etmeden yakalanıp pişmanlıkla elverişli bilgi veren üye hakkında cezaya hükmolunmaz.\n- Gönüllü teslim olup bilgi veren kişiye örgüt kurmak, yönetmek veya üye olmaktan ceza verilmez. Bilgiyi yakalandıktan sonra verirse cezada üçte birden dörtte üçe kadar indirim yapılır.\n- Etkin pişmanlıktan yararlanan kişiye **1 yıl** denetimli serbestlik uygulanır; bu süre **3 yıla kadar** uzatılabilir.\n- Bu madde aynı kişiye birden fazla uygulanmaz.",
+      "articleRefs": [
+        "220",
+        "221"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Örgüt sorularında yanlış şıklar",
+      "body": "- Örgüt için iki şart birlikte aranır: **en az üç kişi** ve amaç suçları işlemeye **elverişlilik**.\n- 'Örgüt faaliyeti kapsamında suç işlenince amaç suçtan ayrıca ceza verilmez' şıkkı yanlıştır. md 220/4 bu suçlardan da ayrıca ceza öngörür.\n- Örgüte yardım eden kişi 'yalnız yardım eden' sıfatıyla değil, **örgüt üyesi olarak** cezalandırılır.\n- Propaganda suçu için örgütün amacını övmek yetmez. Metin, örgütün **cebir, şiddet veya tehdit içeren yöntemlerini** meşru göstermeyi, övmeyi veya bunlara başvurmayı teşviki arar.\n- md 221'de denetimli serbestlik **1 yıldır** ve **3 yıla kadar** uzatılabilir. Daha uzun bir üst sınır yazan şık yanlıştır.\n- Bunu md 191'deki denetimli serbestlikle karıştırma. Orada süre en az 1 yıldır; uzatma en fazla 2 yıl daha yapılabilir.\n- md 221/1'de örgütü dağıtan kurucu veya yöneticinin cezasızlığı için zaman şartı vardır: soruşturma başlamamış ve amaç suç işlenmemiş olmalıdır.",
+      "articleRefs": [
+        "191",
+        "220",
+        "221"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "İhaleye ve edimin ifasına fesat karıştırma",
+      "body": "**İhaleye fesat (md 235):** Kamu kurumu veya kuruluşları adına yapılan mal veya hizmet alım ya da satımlarına, kiralamalara ve yapım ihalelerine fesat karıştırmanın cezası **3–7 yıl** hapistir. Şu hâllerde fesat karıştırılmış sayılır:\n- Hileli davranışlarla:\n  - yeterliğe sahip kişilerin ihaleye veya ihale işlemlerine katılmasını engellemek,\n  - yeterliğe sahip olmayanların katılmasını sağlamak,\n  - şartnameye uygun malı uygun değil diye değerlendirme dışı bırakmak,\n  - uygun olmayan malı uygun diye değerlendirmeye almak.\n- Gizli tutulması gereken teklif bilgilerine başkalarının ulaşmasını sağlamak.\n- Cebir, tehdit veya hukuka aykırı başka davranışla yeterli kişilerin katılımını engellemek.\n- Katılanların ihale şartlarını ve özellikle fiyatı etkilemek için açık veya gizli anlaşması.\n\nCeza sınırları ve kapsam:\n- Cebir veya tehditle işlenirse temel cezanın alt sınırı **5 yıldan** az olamaz.\n- Kurum açısından zarar doğmamışsa ceza **1–3 yıl** hapistir. Cebir veya tehdit hâlleri bunun dışındadır.\n- Menfaat temin eden görevliler ayrıca ilgili suçtan cezalandırılır.\n- Madde; kamu kurumu niteliğindeki meslek kuruluşları, iştirak şirketleri, vakıflar, kamu yararına çalışan dernekler ve kooperatifler adına yapılan alım, satım ve kiralamalara da uygulanır.\n\n**Edimin ifasına fesat (md 236):** Bu kurumlara karşı taahhüt edilen edimin ifasına fesat karıştırmanın cezası **3–7 yıl** hapistir. Şu fiiller hileli olarak yapılırsa suç oluşur:\n- belirtilen maldan başka bir malın teslim veya kabulü,\n- belirtilen miktardan **eksik** malın teslim veya kabulü,\n- süresinde ifa edilmeyen edimin süresinde ifa edilmiş gibi kabulü,\n- yapım ihalelerinde şartlara uymayan eserin veya malzemenin kabulü,\n- verilmeyen veya eksik verilen hizmetin verilmiş gibi kabulü.\n\nMenfaat temin eden görevliler ayrıca cezalandırılır.\n\n**Dikkat:**\n- 'İhalenin belirlenen gün ve saatte yapılmasını engellemek' md 235'in listesinde yok.\n- 'Fazla malın teslimi' md 236'nın listesinde yok.\n- Kamu yararına çalışan dernekler ve kooperatifler md 236'nın kapsamındadır.",
+      "articleRefs": [
+        "235",
+        "236"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Sır açıklama ve tefecilik",
+      "body": "**Ticari, bankacılık veya müşteri sırrı (md 239):**\n- Sıfat, görev, meslek veya sanatı gereği vakıf olduğu ticari sır, bankacılık sırrı veya müşteri sırrı niteliğindeki bilgi ya da belgeleri yetkisiz kişilere veren veya ifşa eden kişi **şikâyet üzerine** cezalandırılır. Ceza **1–3 yıl** hapis ve **5.000 güne kadar** adlî para cezasıdır.\n- Bu bilgileri hukuka aykırı yolla elde edip veren veya ifşa eden kişi de aynı cezayı alır.\n- Fenni keşif ve buluşlar ile sınai uygulamaya ilişkin bilgiler de kapsamdadır.\n- Sır Türkiye'de oturmayan bir yabancıya veya onun memurlarına açıklanırsa ceza üçte biri oranında artırılır ve **şikâyet aranmaz.**\n- Cebir veya tehditle birini bu bilgileri açıklamaya mecbur kılan kişiye **3–7 yıl** hapis verilir.\n\n**Tefecilik (md 241):**\n- Kazanç elde etmek amacıyla başkasına **ödünç para** veren kişiye **2–6 yıl** hapis ve **500–5.000 gün** adlî para cezası verilir.\n- Suç bir örgütün faaliyeti çerçevesinde işlenirse ceza bir kat artırılır.\n- Metin yalnız ödünç para vereni cezalandırır; ödünç alan kişi sayılmamıştır.\n- Suçun konusu paradır. Altın veya başka bir malı ödünç vermek metinde yer almaz.",
+      "articleRefs": [
+        "239",
+        "241"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Bilişim suçları ve kart kötüye kullanımı",
+      "body": "**Sisteme girme (md 243):**\n- Bilişim sisteminin bütününe veya bir kısmına hukuka aykırı olarak giren **veya** orada kalmaya devam eden kişiye **1 yıla kadar** hapis veya adlî para cezası verilir.\n- Bedeli karşılığı yararlanılan sistemlerde ceza yarı oranına kadar indirilir.\n- Fiil nedeniyle veriler yok olur veya değişirse ceza **6 ay–2 yıl** hapistir.\n- Sisteme girmeden veri nakillerini teknik araçla hukuka aykırı olarak izlemenin cezası **1–3 yıl** hapistir.\n\n**Engelleme, bozma, verilere zarar (md 244):**\n- Sistemin işleyişini engellemek veya bozmak: **1–5 yıl** hapis.\n- Verileri bozmak, yok etmek, değiştirmek veya erişilmez kılmak, sisteme veri yerleştirmek, var olan verileri başka bir yere göndermek: **6 ay–3 yıl** hapis.\n- Fiil banka, kredi kurumu veya kamu kurum ya da kuruluşunun sisteminde işlenirse ceza yarı oranında artırılır.\n- Bu fiillerle haksız çıkar sağlanır ve bu başka bir suç oluşturmazsa ceza **2–6 yıl** hapis ve **5.000 güne kadar** adlî para cezasıdır.\n\n**Banka veya kredi kartı (md 245):**\n- Başkasına ait kartı ele geçirip veya elinde bulundurup, rıza olmadan kullanarak ya da kullandırtarak yarar sağlamak: **3–6 yıl** hapis ve **5.000 güne kadar** adlî para.\n- Başkasının hesabıyla ilişkilendirilmiş sahte kartı üretmek, satmak, devretmek, satın almak veya kabul etmek: **3–7 yıl** hapis ve **10.000 güne kadar** adlî para.\n- Sahte kartı kullanarak yarar sağlamak: **4–8 yıl** hapis ve **5.000 güne kadar** adlî para.\n- Birinci fıkra suçu bazı yakınların zararına işlenirse o akraba hakkında cezaya hükmolunmaz. Bu yakınlar şunlardır: ayrılık kararı verilmemiş eş; üstsoy, altsoy veya bu derecede kayın hısmı; evlat edinen veya evlâtlık; aynı konutta yaşayan kardeş.\n- Birinci fıkradaki fiillere malvarlığına karşı suçlardaki etkin pişmanlık hükümleri uygulanır.\n\n**Dikkat:**\n- md 243'te girme ve kalma 'veya' ile bağlanmıştır; ikisinin birlikte gerçekleşmesi gerekmez.\n- Hesap şifresini değiştirip sahibinin erişimini engellemek, md 244/2'deki 'erişilmez kılma' hareketidir.\n- 'Sisteme girme', md 244/2'nin hareket listesinde yoktur.",
+      "articleRefs": [
+        "243",
+        "244",
+        "245"
+      ]
+    },
+    {
+      "type": "numbers",
+      "title": "Sahtecilik, kamu barışı, örgüt, ekonomi ve bilişim: ceza sınırları",
+      "rows": [
+        {
+          "label": "Resmi belgede sahtecilik",
+          "value": "2–5 yıl hapis",
+          "refs": [
+            "204"
+          ]
+        },
+        {
+          "label": "Düzenlemeye yetkili kamu görevlisi",
+          "value": "3–8 yıl hapis",
+          "refs": [
+            "204"
+          ]
+        },
+        {
+          "label": "Sahteliği sabit oluncaya kadar geçerli belge",
+          "value": "yarısı oranında artırım",
+          "refs": [
+            "204"
+          ]
+        },
+        {
+          "label": "Resmi belgenin düzenlenmesinde yalan beyan",
+          "value": "3 ay–2 yıl hapis veya adlî para",
+          "refs": [
+            "206"
+          ]
+        },
+        {
+          "label": "Özel belgede sahtecilik",
+          "value": "1–3 yıl hapis",
+          "refs": [
+            "207"
+          ]
+        },
+        {
+          "label": "Açığa imzanın kötüye kullanılması",
+          "value": "şikâyetle 3 ay–1 yıl hapis",
+          "refs": [
+            "209"
+          ]
+        },
+        {
+          "label": "Sağlık mensubunun gerçeğe aykırı belgesi",
+          "value": "3 ay–1 yıl hapis",
+          "refs": [
+            "210"
+          ]
+        },
+        {
+          "label": "Suç işlemeye alenen tahrik",
+          "value": "6 ay–5 yıl hapis",
+          "refs": [
+            "214"
+          ]
+        },
+        {
+          "label": "Silahlandırarak öldürmeye tahrik",
+          "value": "15–24 yıl hapis",
+          "refs": [
+            "214"
+          ]
+        },
+        {
+          "label": "Suçu ve suçluyu övme",
+          "value": "2 yıla kadar hapis",
+          "refs": [
+            "215"
+          ]
+        },
+        {
+          "label": "Kin ve düşmanlığa tahrik",
+          "value": "1–3 yıl hapis",
+          "refs": [
+            "216"
+          ]
+        },
+        {
+          "label": "Aşağılama / dini değerleri aşağılama",
+          "value": "6 ay–1 yıl hapis",
+          "refs": [
+            "216"
+          ]
+        },
+        {
+          "label": "Kanunlara uymamaya tahrik",
+          "value": "6 ay–2 yıl hapis veya adlî para",
+          "refs": [
+            "217"
+          ]
+        },
+        {
+          "label": "Örgüt kurma veya yönetme",
+          "value": "5–10 yıl hapis",
+          "refs": [
+            "220"
+          ]
+        },
+        {
+          "label": "Örgüt üyeliği",
+          "value": "2–5 yıl hapis",
+          "refs": [
+            "220"
+          ]
+        },
+        {
+          "label": "Örgüt için asgari üye",
+          "value": "3 kişi",
+          "refs": [
+            "220"
+          ]
+        },
+        {
+          "label": "Örgüt propagandası",
+          "value": "1–3 yıl hapis",
+          "refs": [
+            "220"
+          ]
+        },
+        {
+          "label": "Örgütte etkin pişmanlık sonrası denetimli serbestlik",
+          "value": "1 yıl; 3 yıla kadar uzatılabilir",
+          "refs": [
+            "221"
+          ]
+        },
+        {
+          "label": "Yakalandıktan sonra bilgi veren",
+          "value": "üçte birden dörtte üçe kadar indirim",
+          "refs": [
+            "221"
+          ]
+        },
+        {
+          "label": "İhaleye fesat karıştırma",
+          "value": "3–7 yıl hapis; cebir/tehditle alt sınır 5 yıl; zarar yoksa 1–3 yıl",
+          "refs": [
+            "235"
+          ]
+        },
+        {
+          "label": "Edimin ifasına fesat karıştırma",
+          "value": "3–7 yıl hapis",
+          "refs": [
+            "236"
+          ]
+        },
+        {
+          "label": "Ticari, bankacılık, müşteri sırrını açıklama",
+          "value": "şikâyetle 1–3 yıl hapis + 5.000 güne kadar adlî para",
+          "refs": [
+            "239"
+          ]
+        },
+        {
+          "label": "Cebir veya tehditle sır açıklatma",
+          "value": "3–7 yıl hapis",
+          "refs": [
+            "239"
+          ]
+        },
+        {
+          "label": "Tefecilik",
+          "value": "2–6 yıl hapis + 500–5.000 gün adlî para",
+          "refs": [
+            "241"
+          ]
+        },
+        {
+          "label": "Bilişim sistemine girme",
+          "value": "1 yıla kadar hapis veya adlî para",
+          "refs": [
+            "243"
+          ]
+        },
+        {
+          "label": "Veri nakillerini izleme",
+          "value": "1–3 yıl hapis",
+          "refs": [
+            "243"
+          ]
+        },
+        {
+          "label": "Sistemi engelleme veya bozma",
+          "value": "1–5 yıl hapis",
+          "refs": [
+            "244"
+          ]
+        },
+        {
+          "label": "Verileri bozma, yok etme, değiştirme",
+          "value": "6 ay–3 yıl hapis",
+          "refs": [
+            "244"
+          ]
+        },
+        {
+          "label": "Kartı rızasız kullanarak yarar sağlama",
+          "value": "3–6 yıl hapis + 5.000 güne kadar adlî para",
+          "refs": [
+            "245"
+          ]
+        },
+        {
+          "label": "Sahte kart üretme, satma, kabul etme",
+          "value": "3–7 yıl hapis + 10.000 güne kadar adlî para",
+          "refs": [
+            "245"
+          ]
+        },
+        {
+          "label": "Sahte kartla yarar sağlama",
+          "value": "4–8 yıl hapis + 5.000 güne kadar adlî para",
+          "refs": [
+            "245"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "204",
+        "206",
+        "207",
+        "209",
+        "210",
+        "214",
+        "215",
+        "216",
+        "217",
+        "220",
+        "221",
+        "235",
+        "236",
+        "239",
+        "241",
+        "243",
+        "244",
+        "245"
+      ]
+    },
+    {
+      "type": "exam_stats",
+      "title": "Sınav der ki",
+      "rows": [
+        {
+          "label": "Bu ünitenin maddelerinden yayındaki soru",
+          "value": "62",
+          "refs": [
+            "170",
+            "171",
+            "174",
+            "179",
+            "180",
+            "184",
+            "185",
+            "188",
+            "190",
+            "191",
+            "192",
+            "204",
+            "206",
+            "207",
+            "209",
+            "210",
+            "212",
+            "214",
+            "215",
+            "216",
+            "217",
+            "220",
+            "221",
+            "235",
+            "236",
+            "239",
+            "241",
+            "243",
+            "244",
+            "245"
+          ]
+        },
+        {
+          "label": "md 204 — Resmi belgede sahtecilik",
+          "value": "6 soru",
+          "refs": [
+            "204"
+          ]
+        },
+        {
+          "label": "md 170 — Genel güvenliğin kasten tehlikeye sokulması",
+          "value": "4 soru",
+          "refs": [
+            "170"
+          ]
+        },
+        {
+          "label": "md 191 — bulundurmak ya da uyuşturucu veya uyarıcı madde kullanmak",
+          "value": "4 soru",
+          "refs": [
+            "191"
+          ]
+        },
+        {
+          "label": "md 220 — Suç işlemek amacıyla örgüt kurma",
+          "value": "4 soru",
+          "refs": [
+            "220"
+          ]
+        },
+        {
+          "label": "md 244 — Sistemi engelleme, bozma, verileri yok etme veya değiştirme",
+          "value": "4 soru",
+          "refs": [
+            "244"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "170",
+        "171",
+        "174",
+        "179",
+        "180",
+        "184",
+        "185",
+        "188",
+        "190",
+        "191",
+        "192",
+        "204",
+        "206",
+        "207",
+        "209",
+        "210",
+        "212",
+        "214",
+        "215",
+        "216",
+        "217",
+        "220",
+        "221",
+        "235",
+        "236",
+        "239",
+        "241",
+        "243",
+        "244",
+        "245"
+      ],
+      "generated": true
+    },
+    {
+      "type": "bridge",
+      "title": "Bu üniteden soru çöz",
+      "articleRefs": [
+        "170",
+        "171",
+        "174",
+        "179",
+        "180",
+        "184",
+        "185",
+        "188",
+        "190",
+        "191",
+        "192",
+        "204",
+        "206",
+        "207",
+        "209",
+        "210",
+        "212",
+        "214",
+        "215",
+        "216",
+        "217",
+        "220",
+        "221",
+        "235",
+        "236",
+        "239",
+        "241",
+        "243",
+        "244",
+        "245"
+      ],
+      "generated": true,
+      "rows": [
+        {
+          "label": "Madde kapsamlı seans",
+          "value": "md 170, 171, 174, 179, 180, 184, 185, 188, 190–192, 204, 206, 207, 209, 210, 212, 214–217, 220, 221, 235, 236, 239, 241, 243–245, 10 soru",
+          "refs": [
+            "170",
+            "171",
+            "174",
+            "179",
+            "180",
+            "184",
+            "185",
+            "188",
+            "190",
+            "191",
+            "192",
+            "204",
+            "206",
+            "207",
+            "209",
+            "210",
+            "212",
+            "214",
+            "215",
+            "216",
+            "217",
+            "220",
+            "221",
+            "235",
+            "236",
+            "239",
+            "241",
+            "243",
+            "244",
+            "245"
+          ]
+        }
+      ]
+    }
+  ]
+}

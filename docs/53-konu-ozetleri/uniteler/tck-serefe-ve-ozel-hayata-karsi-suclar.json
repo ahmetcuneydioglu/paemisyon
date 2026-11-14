@@ -1,0 +1,537 @@
+{
+  "unit": {
+    "slug": "tck-serefe-ve-ozel-hayata-karsi-suclar",
+    "legislationSlug": "turk-ceza-kanunu",
+    "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+    "title": "Şerefe ve özel hayata karşı suçlar",
+    "subtitle": "Hakaret, hatıraya hakaret ve şikâyet; haberleşme, konuşma, özel hayat ve kişisel veri gizliliği",
+    "articleFrom": "125",
+    "articleTo": "135",
+    "readingMinutes": 13,
+    "sourceLabel": "AI özeti — Türk Ceza Kanunu, md 125, 129–135",
+    "articleNos": [
+      "125",
+      "129",
+      "130",
+      "131",
+      "132",
+      "133",
+      "134",
+      "135"
+    ],
+    "generatedBy": "claude-opus-5-5 (ozet-uret.ts)",
+    "sortOrder": 11
+  },
+  "blocks": [
+    {
+      "type": "concept",
+      "title": "Hakaret: iki yoldan biri yeter",
+      "body": "Hakaretin hedefi kişinin onuru, şerefi ve saygınlığıdır. Madde 125 bu değerlere iki ayrı yoldan saldırıyı sayar. Ya kişiye onurunu, şerefini ve saygınlığını rencide edebilecek nitelikte somut bir fiil veya olgu isnat edersin ya da söversin. İkisinin arasında 'veya' var, yani suç için birini yapmak yeter. Bir soru sana hakaretin hareket yapısını sorarsa bu iki seçeneği hatırla.",
+      "articleRefs": [
+        "125"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Hakaretin temel hâli",
+      "body": "**Ceza:** üç aydan iki yıla kadar hapis **veya** adlî para cezası (md 125/1).\n- **Mağdurun gıyabında:** Cezalandırma için fiilin **en az üç kişiyle ihtilat** ederek işlenmesi gerekir.\n- **İleti yoluyla:** Fiil mağduru muhatap alan sesli, yazılı veya görüntülü bir iletiyle işlenirse aynı cezaya hükmolunur (md 125/2).",
+      "articleRefs": [
+        "125"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Gıyapta hakaret: üç kişi şartı",
+      "body": "Mağdur orada değilse ceza için aranan şart bellidir: Fiil en az üç kişiyle ihtilat ederek işlenmelidir. Sorular bunu çoğu zaman evde iki arkadaşıyla sohbet eden bir failin sözleri üzerinden kurar. Failin konuştuğu kişi sayısı üçe ulaşmıyorsa bu şart gerçekleşmez. Bu durumda 'gıyapta hakaretten sorumludur' diyen şıklar tuzaktır.",
+      "articleRefs": [
+        "125"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Cezayı ağırlaştıran hâller",
+      "body": "Hakaret aşağıdaki hâllerden biriyle işlenirse **cezanın alt sınırı bir yıldan az olamaz** (md 125/3):\n1. Kamu görevlisine karşı **görevinden dolayı**,\n2. Dini, siyasi, sosyal, felsefi inanç, düşünce ve kanaatlerini açıklamasından, değiştirmesinden, yaymaya çalışmasından veya mensup olduğu dinin emir ve yasaklarına uygun davranmasından dolayı,\n3. Kişinin mensup bulunduğu dine göre kutsal sayılan değerlerden bahisle.\n\n**Alenen işlenirse** ceza **altıda biri** oranında artırılır (md 125/4).",
+      "articleRefs": [
+        "125"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Kamu görevlisi: 'görevinden dolayı' şartı",
+      "body": "Mağdurun kamu görevlisi olması tek başına yetmez. İki sonuç da hakaretin görevliye **görevinden dolayı** işlenmesine bağlıdır: alt sınırın bir yıla çıkması (md 125/3) ve şikâyetin aranmaması (md 131/1). 'Kamu görevlisine karşı işlenen her hakaret nitelikli hâldir' diyen bir şık görürsen dur, çünkü bu ifade yanlıştır.",
+      "articleRefs": [
+        "125",
+        "131"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Kurul hâlinde çalışan görevliler: zincirleme suç",
+      "body": "Kurul hâlinde çalışan kamu görevlilerine görevlerinden dolayı hakaret edilirse suç, kurulu oluşturan üyelere karşı işlenmiş sayılır. Ancak kanun bu durumda zincirleme suça ilişkin madde hükümlerinin uygulanacağını söyler. Şıklarda fikri içtima, bileşik suç ya da 'üye sayısınca ayrı hakaret suçu' görürsen bunlar çeldiricidir.",
+      "articleRefs": [
+        "125"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Haksız fiil, kasten yaralama, karşılıklı hakaret",
+      "body": "- **Haksız bir fiile tepki:** Ceza **üçte birine kadar indirilebilir** veya **ceza vermekten vazgeçilebilir** (md 129/1).\n- **Kasten yaralama suçuna tepki:** Kişiye **ceza verilmez** (md 129/2).\n- **Karşılıklı hakaret:** Olayın mahiyetine göre taraflardan **her ikisi veya biri** hakkında ceza **üçte birine kadar indirilebilir** veya **ceza vermekten vazgeçilebilir** (md 129/3).",
+      "articleRefs": [
+        "129"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "'Verilmez' ile 'vazgeçilebilir' farkı",
+      "body": "Madde 129 iki farklı dil kullanır. Haksız fiile tepki ve karşılıklı hakaret hâllerinde hâkim karar verir: Cezayı indirebilir ya da vermekten vazgeçebilir. Kasten yaralamaya tepkide ise seçenek yoktur, **ceza verilmez**. Soruda ağır biçimde yaralanıp yaralayanlara hakaret eden biri anlatılıyorsa cevap 'ceza almaz' olur. 'Ceza alır, indirim uygulanır' diyen şık tuzaktır. Karşılıklı hakarette indirim veya vazgeçme taraflardan her ikisi ya da biri için mümkündür. Bu yüzden ilk hakarete karşılık veren taraf da bu hükümden yararlanabilir.",
+      "articleRefs": [
+        "129"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Kişinin hatırasına hakaret",
+      "body": "- Bir kimsenin öldükten sonra hatırasına **en az üç kişiyle ihtilat** ederek hakaret etmenin cezası **üç aydan iki yıla kadar hapis veya adlî para cezasıdır** (md 130/1).\n- **Alenen** işlenirse ceza **altıda biri** oranında artırılır.\n- Ölünün ceset veya kemiklerini kısmen ya da tamamen **alan** ya da bunlar hakkında **tahkir edici fiillerde** bulunan kişi **üç aydan iki yıla kadar hapis** cezası alır (md 130/2). Bu fıkrada adlî para cezası seçeneği yoktur.",
+      "articleRefs": [
+        "130"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Hatıraya hakarette tek artırım: aleniyet",
+      "body": "Madde 130'da cezayı artıran tek hâl hakaretin alenen işlenmesidir. Sorular buna benzeyen başka durumlar ekler: hakaretin ölenin yakınlarının yanında, cenaze töreninde ya da kamu görevlisine karşı görevinden dolayı işlenmesi gibi. Bunların hiçbiri maddede yer almaz. Doğru olan iki ifade ise değişmez: En az üç kişiyle ihtilat şartı vardır ve şikâyet hakkı ölenin ikinci dereceye kadar üstsoy ve altsoyuna, eşine veya kardeşlerine aittir (md 131/2).",
+      "articleRefs": [
+        "130",
+        "131"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Şikâyet koşulu",
+      "body": "- Hakaret suçunun soruşturulması ve kovuşturulması **mağdurun şikâyetine bağlıdır** (md 131/1).\n- **İstisna:** Kamu görevlisine karşı **görevinden dolayı** işlenen hakarette şikâyet aranmaz.\n- Mağdur şikâyet etmeden önce ölürse **veya** suç ölmüş kişinin hatırasına karşı işlenmişse şu kişiler şikâyette bulunabilir: ölenin **ikinci dereceye kadar üstsoy ve altsoyu, eşi veya kardeşleri** (md 131/2).",
+      "articleRefs": [
+        "131"
+      ]
+    },
+    {
+      "type": "numbers",
+      "title": "Hakaret: sayılar ve süreler",
+      "rows": [
+        {
+          "label": "Hakaret, temel ceza",
+          "value": "3 ay – 2 yıl hapis veya adlî para",
+          "refs": [
+            "125"
+          ]
+        },
+        {
+          "label": "Gıyapta hakaret için ihtilat",
+          "value": "En az 3 kişi",
+          "refs": [
+            "125"
+          ]
+        },
+        {
+          "label": "Nitelikli hâllerde alt sınır",
+          "value": "En az 1 yıl",
+          "refs": [
+            "125"
+          ]
+        },
+        {
+          "label": "Alenen hakaret, artırım",
+          "value": "1/6 oranında",
+          "refs": [
+            "125"
+          ]
+        },
+        {
+          "label": "Haksız fiile tepki",
+          "value": "1/3'üne kadar indirim veya cezadan vazgeçme",
+          "refs": [
+            "129"
+          ]
+        },
+        {
+          "label": "Karşılıklı hakaret",
+          "value": "1/3'üne kadar indirim veya cezadan vazgeçme",
+          "refs": [
+            "129"
+          ]
+        },
+        {
+          "label": "Kasten yaralamaya tepki",
+          "value": "Ceza verilmez",
+          "refs": [
+            "129"
+          ]
+        },
+        {
+          "label": "Hatıraya hakaret",
+          "value": "3 ay – 2 yıl hapis veya adlî para; alenen işlenirse 1/6 artırım",
+          "refs": [
+            "130"
+          ]
+        },
+        {
+          "label": "Ceset veya kemik alma, tahkir",
+          "value": "3 ay – 2 yıl hapis",
+          "refs": [
+            "130"
+          ]
+        },
+        {
+          "label": "Ölüm hâlinde şikâyet hakkı",
+          "value": "2. dereceye kadar üstsoy ve altsoy, eş, kardeş",
+          "refs": [
+            "131"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "125",
+        "129",
+        "130",
+        "131"
+      ]
+    },
+    {
+      "type": "concept",
+      "title": "Özel hayat bloğu neyi koruyor?",
+      "body": "Ünitenin ikinci yarısı gizliliği korur. Madde 132 kişiler arasındaki **haberleşmenin** gizliliğini, madde 133 **aleni olmayan konuşmaları**, madde 134 kişilerin **özel hayatının** gizliliğini, madde 135 de **kişisel verileri** korur. Soruların çoğu bir olay anlatır ve hangi suçun oluştuğunu sorar. Doğru cevabı bulmak için iki şeyi ayır: Korunan şey ne ve fail ne yapmış? Gizliliği mi ihlal etmiş, kayda mı almış, yoksa ifşa mı etmiş?",
+      "articleRefs": [
+        "132",
+        "133",
+        "134",
+        "135"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Haberleşmenin gizliliğini ihlal",
+      "body": "- Kişiler arasındaki haberleşmenin gizliliğini **ihlal** etmenin cezası **bir yıldan üç yıla kadar hapistir** (md 132/1).\n- İhlal haberleşme içeriklerinin **kaydı** suretiyle gerçekleşirse ceza **bir kat artırılır**.\n- Kişiler arasındaki haberleşme içeriklerini hukuka aykırı olarak **ifşa** etmenin cezası **iki yıldan beş yıla kadar hapistir** (md 132/2).\n- **Kendisiyle yapılan** haberleşmenin içeriğini diğer tarafın rızası olmaksızın hukuka aykırı olarak **alenen ifşa** etmenin cezası **bir yıldan üç yıla kadar hapistir** (md 132/3). Bu verilerin basın ve yayın yoluyla yayımlanması hâlinde de **aynı cezaya** hükmolunur.",
+      "articleRefs": [
+        "132"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Konuşmaların dinlenmesi ve kayda alınması",
+      "body": "- Kişiler arasındaki **aleni olmayan** konuşmaları, taraflardan herhangi birinin rızası olmaksızın **bir aletle dinleyen** veya **ses alma cihazı ile kaydeden** kişi **iki yıldan beş yıla kadar hapis** cezası alır (md 133/1).\n- **Katıldığı** aleni olmayan bir söyleşiyi diğer konuşanların rızası olmadan ses alma cihazı ile kaydeden kişi **altı aydan iki yıla kadar hapis veya adlî para cezası** alır (md 133/2).\n- Kişiler arasındaki aleni olmayan konuşmaların kaydedilmesi suretiyle elde edilen verileri hukuka aykırı olarak **ifşa** eden kişi **iki yıldan beş yıla kadar hapis ve dörtbin güne kadar adlî para cezası** alır (md 133/3). Bu verilerin basın ve yayın yoluyla yayımlanması hâlinde de **aynı cezaya** hükmolunur.",
+      "articleRefs": [
+        "133"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Toplantıyı kaydeden katılımcı",
+      "body": "Kendi katıldığın kapalı bir toplantıyı, diğer konuşanların rızası olmadan ses alma cihazına kaydedersen 133/2'deki suç oluşur. Madde konuşmanın konusuna bakmaz. Aranan iki şey vardır: Söyleşi aleni olmamalı ve diğer konuşanların rızası bulunmamalı. Şıklarda özel hayatın gizliliğini ihlal, haberleşmenin gizliliğini ihlal ya da kişisel verilerin kaydedilmesi çıkabilir, ancak doğru cevap kişiler arasındaki konuşmaların dinlenmesi ve kayda alınmasıdır. Bir de şuna dikkat et: 133/1 dinlemenin **bir aletle** yapılmasını arar. 'Çıplak kulakla dinleme her durumda bu suçu oluşturur' diyen şık maddeye uymaz.",
+      "articleRefs": [
+        "133"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Özel hayatın gizliliğini ihlal",
+      "body": "- Kişilerin özel hayatının gizliliğini **ihlal** etmenin cezası **bir yıldan üç yıla kadar hapistir** (md 134/1).\n- Gizlilik **görüntü veya seslerin kayda alınması** suretiyle ihlal edilirse ceza **bir kat artırılır**.\n- Kişilerin özel hayatına ilişkin görüntü veya sesleri hukuka aykırı olarak **ifşa** etmenin cezası **iki yıldan beş yıla kadar hapistir** (md 134/2). Örneğin birinin özel hayatına ait fotoğrafları yayımlamak, görüntülerin ifşasıdır. Bu verilerin basın ve yayın yoluyla yayımlanması hâlinde de **aynı cezaya** hükmolunur.",
+      "articleRefs": [
+        "134"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Basın ve yayın: artırım değil, aynı ceza",
+      "body": "132/3, 133/3 ve 134/2 aynı cümleyle biter: İfşa edilen verilerin basın ve yayın yoluyla yayımlanması hâlinde de **aynı cezaya** hükmolunur. Yani basın yoluyla yayımlama cezayı artırmaz. md 132 ve md 134'ün kendi metninde cezayı artıran hâl **kayıttır**. Haberleşme içeriklerinin kaydı (132/1) ve görüntü ya da seslerin kayda alınması (134/1) cezayı bir kat artırır. Soru 'hangisi cezayı artırmaz' diye soruyorsa basın-yayın şıkkını ara.",
+      "articleRefs": [
+        "132",
+        "133",
+        "134"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Kişisel verilerin kaydedilmesi",
+      "body": "- Kişisel verileri hukuka aykırı olarak **kaydeden** kişiye **bir yıldan üç yıla kadar hapis** cezası verilir (md 135/1).\n- Veri aşağıdakilerden birine ilişkinse ceza **yarı oranında artırılır** (md 135/2):\n  - siyasi, felsefi veya dini görüşler,\n  - ırki köken,\n  - hukuka aykırı olarak ahlaki eğilimler, cinsel yaşam, sağlık durumu veya sendikal bağlantılar.",
+      "articleRefs": [
+        "135"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Kişisel veri: 'hukuka aykırı' şartı ve nitelikli şekil",
+      "body": "Madde 135'in temel unsuru kaydın **hukuka aykırı** olmasıdır. Madde kaydın hangi ortamda yapıldığına dair bir sınır koymaz. Bu yüzden 'yalnız bilgisayar ortamındaki kayıt suçtur' diyen şık doğru değildir. Nitelikli şekle de dikkat et. Soruda kişilerin dini görüşlerine ve ırki kökenine ilişkin bilgilerin bir dosyaya işlendiği anlatılıyorsa cevap düz 'kişisel verilerin kaydedilmesi' değildir. Doğru cevap, cezanın yarı oranında artırıldığı **nitelikli şekildir**.",
+      "articleRefs": [
+        "135"
+      ]
+    },
+    {
+      "type": "numbers",
+      "title": "Gizlilik suçları: cezalar",
+      "rows": [
+        {
+          "label": "Haberleşmenin gizliliğini ihlal",
+          "value": "1–3 yıl hapis",
+          "refs": [
+            "132"
+          ]
+        },
+        {
+          "label": "Haberleşme içeriğinin kaydıyla ihlal",
+          "value": "Bir kat artırım (2–6 yıl)",
+          "refs": [
+            "132"
+          ]
+        },
+        {
+          "label": "Haberleşme içeriğini ifşa",
+          "value": "2–5 yıl hapis",
+          "refs": [
+            "132"
+          ]
+        },
+        {
+          "label": "Kendisiyle yapılan haberleşmeyi alenen ifşa",
+          "value": "1–3 yıl hapis",
+          "refs": [
+            "132"
+          ]
+        },
+        {
+          "label": "Konuşmayı aletle dinleme veya cihazla kayıt",
+          "value": "2–5 yıl hapis",
+          "refs": [
+            "133"
+          ]
+        },
+        {
+          "label": "Katıldığı söyleşiyi kayıt",
+          "value": "6 ay – 2 yıl hapis veya adlî para",
+          "refs": [
+            "133"
+          ]
+        },
+        {
+          "label": "Konuşma kayıtlarını ifşa",
+          "value": "2–5 yıl hapis ve 4000 güne kadar adlî para",
+          "refs": [
+            "133"
+          ]
+        },
+        {
+          "label": "Özel hayatın gizliliğini ihlal",
+          "value": "1–3 yıl hapis",
+          "refs": [
+            "134"
+          ]
+        },
+        {
+          "label": "Görüntü veya ses kaydıyla ihlal",
+          "value": "Bir kat artırım (2–6 yıl)",
+          "refs": [
+            "134"
+          ]
+        },
+        {
+          "label": "Özel hayata ilişkin görüntü veya sesi ifşa",
+          "value": "2–5 yıl hapis",
+          "refs": [
+            "134"
+          ]
+        },
+        {
+          "label": "Kişisel verileri hukuka aykırı kayıt",
+          "value": "1–3 yıl hapis",
+          "refs": [
+            "135"
+          ]
+        },
+        {
+          "label": "Görüş, köken, sağlık vb. verisi",
+          "value": "Yarı oranında artırım",
+          "refs": [
+            "135"
+          ]
+        },
+        {
+          "label": "Basın ve yayın yoluyla yayımlama",
+          "value": "Aynı ceza, artırım yok",
+          "refs": [
+            "132",
+            "133",
+            "134"
+          ]
+        }
+      ],
+      "derivedNumbers": [
+        {
+          "value": 2,
+          "expr": "1 * 2",
+          "refs": [
+            "132",
+            "134"
+          ]
+        },
+        {
+          "value": 6,
+          "expr": "3 * 2",
+          "refs": [
+            "132",
+            "134"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "132",
+        "133",
+        "134",
+        "135"
+      ]
+    },
+    {
+      "type": "compare",
+      "title": "133/1 mi, 133/2 mi?",
+      "rows": [
+        {
+          "aspect": "Konu",
+          "left": "Kişiler arasındaki aleni olmayan konuşmalar",
+          "right": "Failin katıldığı aleni olmayan söyleşi",
+          "refs": [
+            "133"
+          ]
+        },
+        {
+          "aspect": "Failin konumu",
+          "left": "Metin konuşmaya katılmayı aramaz",
+          "right": "Söyleşiye kendisi katılmıştır",
+          "refs": [
+            "133"
+          ]
+        },
+        {
+          "aspect": "Rıza",
+          "left": "Taraflardan herhangi birinin rızası yok",
+          "right": "Diğer konuşanların rızası yok",
+          "refs": [
+            "133"
+          ]
+        },
+        {
+          "aspect": "Hareket",
+          "left": "Bir aletle dinleme veya ses alma cihazı ile kayıt",
+          "right": "Yalnız ses alma cihazı ile kayıt",
+          "refs": [
+            "133"
+          ]
+        },
+        {
+          "aspect": "Ceza",
+          "left": "İki yıldan beş yıla kadar hapis",
+          "right": "Altı aydan iki yıla kadar hapis veya adlî para cezası",
+          "refs": [
+            "133"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "133"
+      ]
+    },
+    {
+      "type": "exam_stats",
+      "title": "Sınav der ki",
+      "rows": [
+        {
+          "label": "Bu ünitenin maddelerinden yayındaki soru",
+          "value": "27",
+          "refs": [
+            "125",
+            "129",
+            "130",
+            "131",
+            "132",
+            "133",
+            "134",
+            "135"
+          ]
+        },
+        {
+          "label": "md 125 — Hakaret",
+          "value": "5 soru",
+          "refs": [
+            "125"
+          ]
+        },
+        {
+          "label": "md 129 — Haksız fiil nedeniyle veya karşılıklı hakaret",
+          "value": "5 soru",
+          "refs": [
+            "129"
+          ]
+        },
+        {
+          "label": "md 133 — Kişiler arasındaki konuşmaların dinlenmesi ve kayda alınması",
+          "value": "4 soru",
+          "refs": [
+            "133"
+          ]
+        },
+        {
+          "label": "md 130 — Kişinin hatırasına hakaret",
+          "value": "3 soru",
+          "refs": [
+            "130"
+          ]
+        },
+        {
+          "label": "md 134 — Özel hayatın gizliliğini ihlal",
+          "value": "3 soru",
+          "refs": [
+            "134"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "125",
+        "129",
+        "130",
+        "131",
+        "132",
+        "133",
+        "134",
+        "135"
+      ],
+      "generated": true
+    },
+    {
+      "type": "bridge",
+      "title": "Bu üniteden soru çöz",
+      "articleRefs": [
+        "125",
+        "129",
+        "130",
+        "131",
+        "132",
+        "133",
+        "134",
+        "135"
+      ],
+      "generated": true,
+      "rows": [
+        {
+          "label": "Madde kapsamlı seans",
+          "value": "md 125, 129–135, 10 soru",
+          "refs": [
+            "125",
+            "129",
+            "130",
+            "131",
+            "132",
+            "133",
+            "134",
+            "135"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,630 @@
+{
+  "unit": {
+    "slug": "tck-malvarligina-karsi-suclar",
+    "legislationSlug": "turk-ceza-kanunu",
+    "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+    "title": "Malvarlığına karşı suçlar",
+    "subtitle": "Hırsızlık, yağma, güveni kötüye kullanma, dolandırıcılık ve etkin pişmanlık",
+    "articleFrom": "141",
+    "articleTo": "168",
+    "readingMinutes": 13,
+    "sourceLabel": "AI özeti — Türk Ceza Kanunu, md 141–143, 147–151, 155, 157–160, 162, 163, 167, 168",
+    "articleNos": [
+      "141",
+      "142",
+      "143",
+      "147",
+      "148",
+      "149",
+      "150",
+      "151",
+      "155",
+      "157",
+      "158",
+      "159",
+      "160",
+      "162",
+      "163",
+      "167",
+      "168"
+    ],
+    "generatedBy": "claude-opus-5-5 (ozet-uret.ts)",
+    "sortOrder": 12
+  },
+  "blocks": [
+    {
+      "type": "concept",
+      "title": "Mal nasıl el değiştirdi?",
+      "body": "Bu ünitede başkasının malına yönelen fiilleri birbirinden ayırmayı öğreniyorsun. Anahtar soru hep aynı: Mal failin eline nasıl geçti? Zilyedinin rızası olmadan bulunduğu yerden alındıysa hırsızlık. Cebir veya tehditle teslime ya da alınmasına karşı koymamaya mecbur kılındıysa yağma. Muhafaza etmek veya belirli bir şekilde kullanmak üzere zilyedliği faile devredilmiş mal üzerinde devir amacı dışında tasarruf edildiyse güveni kötüye kullanma. Hileli davranışlarla aldatılarak yarar sağlandıysa dolandırıcılık. Fiilin yolunu doğru okursan maddeyi de doğru bulursun.",
+      "articleRefs": [
+        "141",
+        "148",
+        "155",
+        "157"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Hırsızlık — temel hâl",
+      "body": "**Md 141 (1):** Zilyedinin **rızası olmadan** başkasına ait **taşınır** bir malı, kendisine veya başkasına bir **yarar sağlamak maksadıyla** bulunduğu yerden **alan** kimseye **bir yıldan üç yıla kadar hapis** cezası verilir.\n\nUnsurlar:\n- Konu: başkasına ait taşınır mal\n- Hareket: malı bulunduğu yerden almak\n- Rıza: zilyedin rızası yok\n- Maksat: kendine veya başkasına yarar sağlamak\n\nYaptırım yalnız hapis cezasıdır; maddede adlî para cezası yoktur.",
+      "articleRefs": [
+        "141"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Hırsızlık mı, güveni kötüye kullanma mı, kaybolmuş eşya mı?",
+      "body": "Soru kökü bir olay anlatır, şıklarda bu üç suç yan yana durur. Ayırt edici olan, malın failin eline nasıl geçtiğidir:\n- Mal **zilyedin rızası olmadan bulunduğu yerden alındıysa** → hırsızlık (md 141).\n- Zilyedliği **muhafaza etmek veya belirli bir şekilde kullanmak üzere faile devredilmiş** mal üzerinde devir amacı dışında tasarruf varsa ya da devir inkâr ediliyorsa → güveni kötüye kullanma (md 155).\n- Eşya **kaybedilmiş olması nedeniyle** malikin zilyedliğinden çıkmış ya da **hata sonucu** ele geçmişse ve fail iade etmeksizin veya yetkili mercileri durumdan haberdar etmeksizin malik gibi tasarruf ediyorsa → md 160.\n\nŞıkları elemeden önce sor: Madde 155'in aradığı devir gerçekten var mı, yoksa mal sadece failin yakınında mıydı?",
+      "articleRefs": [
+        "141",
+        "155",
+        "160"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Nitelikli hırsızlık",
+      "body": "**Md 142 (1) — üç yıldan yedi yıla kadar hapis.** Hırsızlığın konusu:\n- kamu kurum ve kuruluşlarında veya ibadete ayrılmış yerlerde bulunan ya da kamu yararına veya hizmetine tahsis edilen eşya,\n- halkın yararlanmasına sunulmuş ulaşım aracı içinde veya bunların belli varış veya kalkış yerlerinde bulunan eşya,\n- afet veya genel felaketin zararlarını önlemek veya hafifletmek maksadıyla hazırlanan eşya,\n- adet, tahsis veya kullanımı gereği açıkta bırakılmış eşya.\n\n**Md 142 (2) — beş yıldan on yıla kadar hapis.** Suçun işleniş biçimi veya konusu:\n- kişinin malını koruyamayacak durumda olmasından veya ölmesinden yararlanarak,\n- elde veya üstte taşınan eşyayı **çekip almak** suretiyle ya da özel beceriyle,\n- doğal bir afetin veya sosyal olayların meydana getirdiği korku veya kargaşadan yararlanarak,\n- haksız yere elde bulundurulan veya taklit anahtarla ya da diğer bir aletle kilit açarak veya kilitlenmesini engelleyerek,\n- bilişim sistemlerinin kullanılması suretiyle,\n- tanınmamak için tedbir alarak veya yetkisi olmadığı hâlde resmi sıfat takınarak,\n- büyük veya küçük baş hayvan hakkında,\n- herkesin girebileceği yerde kilitlenerek bırakılmış ya da bina veya eklentileri içinde muhafaza altına alınmış eşya hakkında.\n\nSuç (b) bendindeki surette (çekip alma ya da özel beceriyle), beden veya ruh bakımından kendisini savunamayacak kimseye karşı işlenirse ceza **üçte biri oranına kadar** artırılır.\n\n**Md 142 (4):** Hırsızlık amacıyla konut dokunulmazlığının ihlali veya mala zarar verme suçu işlenirse bu suçlar için **şikâyet aranmaz**.",
+      "articleRefs": [
+        "142"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Nitelikli hırsızlıkta sık karıştırılanlar",
+      "body": "- **Hayvan:** Md 142 (2-g) yalnız \"büyük veya küçük baş hayvan hakkında\" der. Hayvanın barınakta, sürüde ya da açıkta bulunması diye ek bir şart yoktur. Yer şartı koyan şık yanlıştır.\n- **Çekip alma:** Elde veya üstte taşınan eşyayı çekip almak md 142'de nitelikli hırsızlık hâlidir. Yağma için md 148 tehdit veya cebir arar; çanta çekme sorusunda yağma şıkkına kapılma.\n- **Ek artırımlar:** Haberleşme, enerji, demiryolu veya havayolu ulaşımında kamu hizmeti geçici de olsa aksarsa md 142 (5) ayrıca artırım öngörür. Gece vakti için md 143'teki artırım hırsızlık suçunun tamamı için yazılmıştır.",
+      "articleRefs": [
+        "142",
+        "143",
+        "148"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Gece vakti ve zorunluluk hâli",
+      "body": "**Md 143:** Hırsızlık suçu **gece vakti** işlenirse verilecek ceza **yarı oranında** artırılır.\n\n**Md 147:** Hırsızlık **ağır ve acil bir ihtiyacı karşılamak** için işlenirse, olayın özelliğine göre:\n- cezada **indirim** yapılabilir,\n- ya da ceza vermekten **vazgeçilebilir**.\n\nİki hüküm de metinde açıkça **hırsızlık suçu** için konmuştur.",
+      "articleRefs": [
+        "143",
+        "147"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Yağma",
+      "body": "**Md 148 (1) — altı yıldan on yıla kadar hapis.** Fail bir başkasını:\n- kendisinin veya yakınının **hayatına, vücut veya cinsel dokunulmazlığına** yönelik bir saldırı gerçekleştireceğinden ya da **malvarlığı itibarıyla büyük bir zarara** uğratacağından bahisle **tehdit ederek** veya\n- **cebir kullanarak**\n\nbir malı **teslime** veya malın **alınmasına karşı koymamaya** mecbur kılar.\n\n**Md 148 (2):** Cebir veya tehditle mağdur; kendisini veya başkasını borç altına sokabilecek bir senedi ya da var olan senedin hükümsüz kaldığını açıklayan vesikayı vermeye, böyle bir senedin alınmasına karşı koymamaya, ileride senet hâline getirilebilecek bir kâğıdı imzalamaya, var olan bir senedi imha etmeye veya imhasına karşı koymamaya mecbur edilirse **aynı ceza** verilir.\n\n**Md 148 (3):** Mağdurun herhangi bir vasıta ile **kendisini bilmeyecek ve savunamayacak hâle getirilmesi** de yağmada cebir sayılır.",
+      "articleRefs": [
+        "148"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Yağmada tehdidin konusu sınırlıdır",
+      "body": "\"Hangisi yanlıştır?\" diye sorulduğunda en sık tuzak, tehdidin konusunu genişletmektir. Md 148 (1) yalnız şunları sayar: hayat, vücut dokunulmazlığı, cinsel dokunulmazlık ve malvarlığı itibarıyla büyük zarar. **Yalnız onur ve şerefe** saldırı tehdidi bu listede yoktur.\n\nİki tuzak daha:\n- Senet imzalatmak, senet aldırmak ya da senedi imha ettirmek de yağmadır (md 148 (2)). \"Yalnız para veya eşya\" diyen şık yanlıştır.\n- Mağduru bilmeyecek ve savunamayacak hâle getirmek cebir **sayılır** (md 148 (3)). \"Sayılmaz\" diyen şık yanlıştır.",
+      "articleRefs": [
+        "148"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Nitelikli yağma ve daha az cezayı gerektiren hâl",
+      "body": "**Md 149 (1) — on yıldan on beş yıla kadar hapis.** Yağmanın:\n- silahla,\n- kişinin kendisini tanınmayacak bir hâle koyması suretiyle,\n- birden fazla kişi tarafından birlikte,\n- yol kesmek suretiyle ya da konutta, işyerinde veya bunların eklentilerinde,\n- beden veya ruh bakımından kendisini savunamayacak durumdaki kişiye karşı,\n- var olan veya var sayılan suç örgütlerinin korkutucu gücünden yararlanılarak,\n- suç örgütüne yarar sağlamak maksadıyla,\n- gece vaktinde\n\nişlenmesi.\n\n**Md 149 (2):** Yağma sırasında kasten yaralamanın **neticesi sebebiyle ağırlaşmış hâlleri** gerçekleşirse **ayrıca** kasten yaralama hükümleri uygulanır.\n\n**Md 150 (1):** Bir hukuki ilişkiye dayanan **alacağı tahsil** amacıyla tehdit veya cebir kullanılırsa **ancak tehdit veya kasten yaralama** hükümleri uygulanır.\n\n**Md 150 (2):** Malın **değerinin azlığı** nedeniyle ceza **üçte birden yarıya kadar** indirilebilir.",
+      "articleRefs": [
+        "149",
+        "150"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Nitelikli yağma listesinde olmayanlar",
+      "body": "Şıklarda nitelikli hırsızlığın hâlleri yağmaya taşınır, dikkat et.\n- **Doğal afetin veya sosyal olayların meydana getirdiği korku veya kargaşadan yararlanma** md 142'de nitelikli **hırsızlık** hâlidir; md 149'da yoktur.\n- Suçun **eşe, üstsoya, altsoya karşı** işlenmesi ya da **aynı işyerinde çalışmanın sağladığı kolaylık** md 149'da sayılmaz. **İşyerinde veya eklentisinde** işlenmesi ise sayılır; konutun eklentisi de öyle.\n- **Gece vakti:** Yağmada nitelikli hâldir (md 149). Hırsızlıkta ise md 143 cezayı **yarı oranında** artırır; altıda bir değil.\n- **Ağır ve acil ihtiyaç:** Md 147'deki indirim veya ceza vermekten vazgeçme hükmünün metni yalnız **hırsızlık** suçunu anar.",
+      "articleRefs": [
+        "142",
+        "143",
+        "147",
+        "149"
+      ],
+      "counterNumbers": [
+        "1/6"
+      ]
+    },
+    {
+      "type": "numbers",
+      "title": "Hırsızlık ve yağma: sayılar",
+      "rows": [
+        {
+          "label": "Hırsızlık (md 141)",
+          "value": "1–3 yıl hapis",
+          "refs": [
+            "141"
+          ]
+        },
+        {
+          "label": "Nitelikli hırsızlık, md 142 (1)",
+          "value": "3–7 yıl hapis",
+          "refs": [
+            "142"
+          ]
+        },
+        {
+          "label": "Nitelikli hırsızlık, md 142 (2)",
+          "value": "5–10 yıl hapis",
+          "refs": [
+            "142"
+          ]
+        },
+        {
+          "label": "Savunamayacak kişiye karşı çekip alma veya özel beceriyle",
+          "value": "üçte birine kadar artırım",
+          "refs": [
+            "142"
+          ]
+        },
+        {
+          "label": "Sıvı veya gaz hâlindeki enerji hakkında, nakil, işleme veya depolama tesislerinde, md 142 (3)",
+          "value": "5–12 yıl hapis",
+          "refs": [
+            "142"
+          ]
+        },
+        {
+          "label": "Enerji hırsızlığı örgüt faaliyeti çerçevesinde",
+          "value": "yarı oranında artırım + 10.000 güne kadar adlî para cezası",
+          "refs": [
+            "142"
+          ]
+        },
+        {
+          "label": "Kamu hizmetinin aksaması, md 142 (5)",
+          "value": "yarısından iki katına kadar artırım",
+          "refs": [
+            "142"
+          ]
+        },
+        {
+          "label": "Gece vakti hırsızlık (md 143)",
+          "value": "yarı oranında artırım",
+          "refs": [
+            "143"
+          ]
+        },
+        {
+          "label": "Yağma (md 148)",
+          "value": "6–10 yıl hapis",
+          "refs": [
+            "148"
+          ]
+        },
+        {
+          "label": "Nitelikli yağma (md 149)",
+          "value": "10–15 yıl hapis",
+          "refs": [
+            "149"
+          ]
+        },
+        {
+          "label": "Yağmada değer azlığı, md 150 (2)",
+          "value": "üçte birden yarıya kadar indirim",
+          "refs": [
+            "150"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "141",
+        "142",
+        "143",
+        "148",
+        "149",
+        "150"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Mala zarar verme",
+      "body": "**Md 151 (1):** Başkasının **taşınır veya taşınmaz** malını kısmen veya tamamen yıkan, tahrip eden, yok eden, bozan, kullanılamaz hâle getiren veya kirleten kişi, **mağdurun şikâyeti üzerine**, **dört aydan üç yıla kadar hapis veya adlî para cezası** ile cezalandırılır.\n\nKarşılaştır:\n- Hırsızlığın konusu yalnız **taşınır** maldır (md 141); mala zarar vermede taşınmaz da konu olur.\n- Hırsızlık amacıyla mala zarar verilirse bu suç için **şikâyet aranmaz** (md 142 (4)).",
+      "articleRefs": [
+        "151",
+        "141",
+        "142"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Güveni kötüye kullanma",
+      "body": "**Md 155 (1):** Başkasına ait olup **muhafaza etmek veya belirli bir şekilde kullanmak üzere zilyedliği kendisine devredilmiş** mal üzerinde, kendisinin veya başkasının yararına:\n- zilyedliğin devri amacı dışında **tasarrufta bulunan** veya\n- bu devir olgusunu **inkâr eden**\n\nkişi, **şikâyet üzerine**, altı aydan iki yıla kadar hapis **ve** adlî para cezası ile cezalandırılır.\n\n**Md 155 (2):** Suç; meslek ve sanat, ticaret veya hizmet ilişkisinin ya da hangi nedenden doğmuş olursa olsun başkasının mallarını idare etmek yetkisinin gereği olarak **tevdi ve teslim edilmiş** eşya hakkında işlenirse bir yıldan yedi yıla kadar hapis ve üç bin güne kadar adlî para cezası.\n\n**Md 155 (3):** Suçun konusu **motorlu kara, deniz veya hava taşıtı** ise ceza **bir kat** artırılır.",
+      "articleRefs": [
+        "155"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Güveni kötüye kullanmada daraltılmış şıklar",
+      "body": "Bu suçta yanlış şıklar genellikle maddenin kelimelerini daraltır.\n- \"Yalnız failin yararına\" ya da \"yalnız başkasının yararına\": yanlış. Metin **kendisinin veya başkasının** yararına der.\n- Hareket tek değildir: devir amacı dışında **tasarruf** de, devir olgusunu **inkâr** de suçu oluşturur.\n- \"Malın kime devredildiği önemli değildir\": yanlış. Madde, zilyedliğin **faile** muhafaza veya belirli kullanım için devredilmesini arar.\n- Basit hâl **şikâyete** bağlıdır; yaptırım hapis **ve** adlî para cezasıdır, \"veya\" değil.",
+      "articleRefs": [
+        "155"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Dolandırıcılık ve nitelikli dolandırıcılık",
+      "body": "**Md 157:** Hileli davranışlarla bir kimseyi **aldatıp**, onun veya başkasının zararına, kendisine veya başkasına **yarar sağlayan** kişiye **bir yıldan beş yıla kadar hapis ve beş bin güne kadar adlî para cezası** verilir.\n\n**Md 158 (1) — üç yıldan on yıla kadar hapis ve beş bin güne kadar adlî para cezası.** Hâller:\n- dinî inanç ve duyguların istismarı,\n- kişinin tehlikeli durum veya zor şartlarından yararlanma,\n- algılama yeteneğinin zayıflığından yararlanma,\n- kamu kurum ve kuruluşları, kamu meslek kuruluşları, siyasi parti, vakıf veya dernek tüzel kişiliklerini araç olarak kullanma,\n- kamu kurum ve kuruluşlarının zararına,\n- bilişim sistemleri, banka veya kredi kurumlarını araç olarak kullanma,\n- basın ve yayın araçlarının sağladığı kolaylıktan yararlanma,\n- tacir veya şirket yöneticisi olan ya da şirket adına hareket eden kişilerin ticari faaliyetleri sırasında; kooperatif yöneticilerinin kooperatifin faaliyeti kapsamında,\n- serbest meslek sahibinin mesleğinden doğan güveni kötüye kullanması,\n- tahsis edilmemesi gereken bir kredinin açılmasını sağlamak maksadıyla,\n- sigorta bedelini almak maksadıyla,\n- kendini kamu görevlisi veya banka, sigorta ya da kredi kurumu çalışanı olarak tanıtma ya da bunlarla ilişkili olduğunu söyleme.\n\n(e), (f), (j), (k) ve (l) bentlerinde hapsin alt sınırı **dört yıldan**, adlî para cezası **menfaatin iki katından** az olamaz.\n\n**Md 158 (2):** Kamu görevlileriyle ilişkisi olduğundan, onlar nezdinde hatırı sayıldığından bahisle ve iş gördürme vaadiyle aldatıp menfaat temin eden de birinci fıkraya göre cezalandırılır.\n\n**Md 158 (3):** Bu madde ve md 157'deki suçlar üç veya daha fazla kişiyle birlikte işlenirse ceza **yarı oranında**, örgüt faaliyeti çerçevesinde işlenirse **bir kat** artırılır.\n\n**Md 158 (4):** İştirak, kendisine veya başkasına haksız bir menfaat sağlamak amacıyla kendisine veya başkasına ait banka veya kredi kartı gibi ödeme araçlarını ya da hesabın kullanılmasını sağlayan zorunlu bilgileri veya araçları başkasına vermekle sınırlıysa ceza **yarı oranında** indirilir.",
+      "articleRefs": [
+        "157",
+        "158"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Alacak tahsili: nitelikli değil, hafifletici",
+      "body": "Bir hukuki ilişkiye dayanan **alacağı tahsil** amacı iki yerde karşına çıkar ve ikisinde de cezayı **hafifletir**:\n- Dolandırıcılıkta md 159: **şikâyet üzerine**, altı aydan bir yıla kadar hapis veya adlî para cezası.\n- Yağmada md 150 (1): yalnız tehdit veya kasten yaralama hükümleri uygulanır.\n\n\"Dolandırıcılığın nitelikli hâllerinden hangisi değildir?\" diye soruluyorsa aranan cevap budur; alacak tahsili md 158'in bentlerinde yer almaz. Zor şartlardan yararlanma, basın ve yayın kolaylığı, sigorta bedeli ve kamu görevlileri nezdinde hatırı sayılma iddiası ise md 158'dedir.",
+      "articleRefs": [
+        "150",
+        "158",
+        "159"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Kaybolmuş eşya ve taksirli iflas",
+      "body": "**Md 160:** Kaybedilmiş olması nedeniyle malikinin zilyedliğinden çıkmış **ya da hata sonucu** ele geçirilen eşya üzerinde; iade etmeksizin veya yetkili mercileri durumdan haberdar etmeksizin **malik gibi tasarrufta** bulunan kişi, **şikâyet üzerine**, **bir yıla kadar hapis veya adlî para cezası** ile cezalandırılır.\n\n**Md 162:** Tacir olmanın gerekli kıldığı **dikkat ve özeni** göstermeyerek iflasa sebebiyet veren kişi, **iflasa karar verilmiş olması hâlinde**, **iki aydan bir yıla kadar hapis** cezası ile cezalandırılır.\n- Cezalandırma için iflas kararı şarttır.\n- Metinde şikâyet şartı yoktur.",
+      "articleRefs": [
+        "160",
+        "162"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Karşılıksız yararlanma",
+      "body": "**Md 163 (1):** Otomatlar aracılığıyla sunulan ve bedeli ödendiği takdirde yararlanılabilen bir hizmetten **ödeme yapmadan** yararlanmak: iki aydan altı aya kadar hapis veya adlî para cezası.\n\n**Md 163 (2):** Telefon hatları ile frekanslarından ya da elektromanyetik dalgalarla yapılan şifreli veya şifresiz yayınlardan sahibinin veya zilyedinin **rızası olmadan** yararlanmak: altı aydan iki yıla kadar hapis veya adlî para cezası.\n\n**Md 163 (3):** Abonelik esasına göre yararlanılabilen **elektrik enerjisinin, suyun veya doğal gazın** sahibinin rızası olmaksızın ve **tüketim miktarının belirlenmesini engelleyecek şekilde** tüketilmesi: bir yıldan üç yıla kadar hapis.\n\nSayaca müdahale ederek tüketimi ölçülemez hâle getirip elektrik kullanmak, üçüncü fıkranın tarif ettiği fiildir.",
+      "articleRefs": [
+        "163"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Akrabalar arasında: cezasızlık ve indirim",
+      "body": "**Md 167 (1):** **Yağma ve nitelikli yağma hariç**, bu bölümdeki suçlar aşağıdakilerin zararına işlenirse ilgili akraba hakkında **cezaya hükmolunmaz**:\n- haklarında **ayrılık kararı verilmemiş** eşlerden biri,\n- üstsoy veya altsoy ya da bu derecede kayın hısımlarından biri, evlat edinen veya evlatlık,\n- **aynı konutta beraber yaşayan** kardeşlerden biri.\n\n**Md 167 (2):** Aşağıdakilerin zararına işlenirse ilgili akraba hakkında **şikâyet üzerine** verilecek ceza **yarısı oranında indirilir**:\n- haklarında **ayrılık kararı verilmiş** eşlerden biri,\n- **aynı konutta beraber yaşamayan** kardeşlerden biri,\n- aynı konutta beraber yaşamakta olan amca, dayı, hala, teyze, yeğen veya ikinci derecede kayın hısımları.",
+      "articleRefs": [
+        "167"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Md 167'de iki ince çizgi",
+      "body": "Bu maddede iki çizgiyi kaçırma:\n- **Ayrılık kararı:** Kararı **verilmemiş** eşin zararına → ceza yok. Kararı **verilmiş** eşin zararına → şikâyet üzerine indirim. \"Ayrılık kararı verilmiş eşin zararına işlenmesi cezasızlık sebebidir\" diyen şık yanlıştır.\n- **Kardeşte konut:** Aynı konutta yaşayan kardeşin zararına → ceza yok. Ayrı konutta yaşayan kardeşin zararına → indirim.\n\nOğul babasının arabasına zarar verirse suç üstsoyun zararına işlenmiştir; mala zarar verme bu bölümdedir. Cevap md 167 (1)'dir: cezaya hükmolunmaz, artırım ya da indirim yoktur. Yağma ise birinci fıkranın açıkça dışında bırakılmıştır.",
+      "articleRefs": [
+        "151",
+        "167"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Etkin pişmanlık",
+      "body": "**Md 168 (1):** Hırsızlık, mala zarar verme, güveni kötüye kullanma, dolandırıcılık, hileli iflas, taksirli iflas suçları tamamlandıktan sonra ve **kovuşturma başlamadan önce**; fail, azmettiren veya yardım eden **bizzat pişmanlık göstererek** zararı aynen geri verme veya tazmin suretiyle **tamamen** giderirse ceza **üçte ikisine kadar** indirilir.\n\n**Md 168 (2):** Kovuşturma başladıktan sonra, **hüküm verilmezden önce** gösterilirse ceza **yarısına kadar** indirilir.\n\n**Md 168 (3):** **Yağmada** birinci fıkraya giren hâllerde **yarısına**, ikinci fıkraya giren hâllerde **üçte birine kadar** indirim yapılır. Yağmada etkin pişmanlık cezayı kaldırmaz, yalnız indirir.\n\n**Md 168 (4):** **Kısmen** geri verme veya tazminde ayrıca **mağdurun rızası** aranır.\n\n**Md 168 (5):** **Karşılıksız yararlanmada** zarar **soruşturma tamamlanmadan önce** tamamen tazmin edilirse **kamu davası açılmaz**. Hüküm verilinceye kadar tamamen tazmin edilirse ceza **üçte birine kadar** indirilir. Kişi bu fıkradan **iki defadan fazla** yararlanamaz.",
+      "articleRefs": [
+        "168"
+      ]
+    },
+    {
+      "type": "numbers",
+      "title": "Diğer suçlar, indirimler ve etkin pişmanlık",
+      "rows": [
+        {
+          "label": "Mala zarar verme (md 151)",
+          "value": "4 ay–3 yıl hapis veya adlî para cezası; şikâyete bağlı",
+          "refs": [
+            "151"
+          ]
+        },
+        {
+          "label": "Güveni kötüye kullanma, md 155 (1)",
+          "value": "6 ay–2 yıl hapis ve adlî para cezası; şikâyete bağlı",
+          "refs": [
+            "155"
+          ]
+        },
+        {
+          "label": "Güveni kötüye kullanma, md 155 (2)",
+          "value": "1–7 yıl hapis ve 3.000 güne kadar adlî para cezası",
+          "refs": [
+            "155"
+          ]
+        },
+        {
+          "label": "Konu motorlu taşıt, md 155 (3)",
+          "value": "bir kat artırım",
+          "refs": [
+            "155"
+          ]
+        },
+        {
+          "label": "Dolandırıcılık (md 157)",
+          "value": "1–5 yıl hapis ve 5.000 güne kadar adlî para cezası",
+          "refs": [
+            "157"
+          ]
+        },
+        {
+          "label": "Nitelikli dolandırıcılık, md 158 (1)",
+          "value": "3–10 yıl hapis ve 5.000 güne kadar adlî para cezası",
+          "refs": [
+            "158"
+          ]
+        },
+        {
+          "label": "(e), (f), (j), (k), (l) bentleri",
+          "value": "hapis alt sınırı 4 yıl; adlî para cezası menfaatin iki katından az olamaz",
+          "refs": [
+            "158"
+          ]
+        },
+        {
+          "label": "Üç veya daha fazla kişiyle birlikte, md 158 (3)",
+          "value": "yarı oranında artırım",
+          "refs": [
+            "158"
+          ]
+        },
+        {
+          "label": "Örgüt faaliyeti çerçevesinde, md 158 (3)",
+          "value": "bir kat artırım",
+          "refs": [
+            "158"
+          ]
+        },
+        {
+          "label": "İştirakin hesap veya ödeme aracı vermekle sınırlı olması, md 158 (4)",
+          "value": "yarı oranında indirim",
+          "refs": [
+            "158"
+          ]
+        },
+        {
+          "label": "Alacak tahsili için dolandırıcılık (md 159)",
+          "value": "6 ay–1 yıl hapis veya adlî para cezası; şikâyete bağlı",
+          "refs": [
+            "159"
+          ]
+        },
+        {
+          "label": "Kaybolmuş veya hata sonucu ele geçmiş eşya (md 160)",
+          "value": "1 yıla kadar hapis veya adlî para cezası; şikâyete bağlı",
+          "refs": [
+            "160"
+          ]
+        },
+        {
+          "label": "Taksirli iflas (md 162)",
+          "value": "2 ay–1 yıl hapis; iflas kararı şart",
+          "refs": [
+            "162"
+          ]
+        },
+        {
+          "label": "Otomattan karşılıksız yararlanma, md 163 (1)",
+          "value": "2–6 ay hapis veya adlî para cezası",
+          "refs": [
+            "163"
+          ]
+        },
+        {
+          "label": "Telefon hattı, frekans, yayın, md 163 (2)",
+          "value": "6 ay–2 yıl hapis veya adlî para cezası",
+          "refs": [
+            "163"
+          ]
+        },
+        {
+          "label": "Elektrik, su, doğal gaz, md 163 (3)",
+          "value": "1–3 yıl hapis",
+          "refs": [
+            "163"
+          ]
+        },
+        {
+          "label": "Akraba indirimi, md 167 (2)",
+          "value": "yarısı oranında indirim; şikâyet üzerine",
+          "refs": [
+            "167"
+          ]
+        },
+        {
+          "label": "Etkin pişmanlık, kovuşturmadan önce, md 168 (1)",
+          "value": "üçte ikisine kadar indirim",
+          "refs": [
+            "168"
+          ]
+        },
+        {
+          "label": "Etkin pişmanlık, kovuşturma başladıktan sonra hükümden önce, md 168 (2)",
+          "value": "yarısına kadar indirim",
+          "refs": [
+            "168"
+          ]
+        },
+        {
+          "label": "Yağmada etkin pişmanlık, md 168 (3)",
+          "value": "kovuşturmadan önce yarısına, sonra üçte birine kadar indirim",
+          "refs": [
+            "168"
+          ]
+        },
+        {
+          "label": "Karşılıksız yararlanmada tazmin, md 168 (5)",
+          "value": "soruşturma tamamlanmadan önce: kamu davası açılmaz; hükme kadar: üçte birine kadar indirim; en fazla iki defa",
+          "refs": [
+            "168"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "151",
+        "155",
+        "157",
+        "158",
+        "159",
+        "160",
+        "162",
+        "163",
+        "167",
+        "168"
+      ]
+    },
+    {
+      "type": "exam_stats",
+      "title": "Sınav der ki",
+      "rows": [
+        {
+          "label": "Bu ünitenin maddelerinden yayındaki soru",
+          "value": "55",
+          "refs": [
+            "141",
+            "142",
+            "143",
+            "147",
+            "148",
+            "149",
+            "150",
+            "151",
+            "155",
+            "157",
+            "158",
+            "159",
+            "160",
+            "162",
+            "163",
+            "167",
+            "168"
+          ]
+        },
+        {
+          "label": "md 141 — Hırsızlık",
+          "value": "12 soru",
+          "refs": [
+            "141"
+          ]
+        },
+        {
+          "label": "md 155 — Güveni kötüye kullanma",
+          "value": "7 soru",
+          "refs": [
+            "155"
+          ]
+        },
+        {
+          "label": "md 149 — Nitelikli yağma",
+          "value": "6 soru",
+          "refs": [
+            "149"
+          ]
+        },
+        {
+          "label": "md 148 — Yağma",
+          "value": "5 soru",
+          "refs": [
+            "148"
+          ]
+        },
+        {
+          "label": "md 163 — Karşılıksız yararlanma",
+          "value": "4 soru",
+          "refs": [
+            "163"
+          ]
+        },
+        {
+          "label": "Resmî sınavlarda",
+          "value": "2024 PAEM 8. Dönem İlk Derece Amirlik Eğitimi Yazılı Sınavı (1)",
+          "refs": [
+            "141",
+            "142",
+            "143",
+            "147",
+            "148",
+            "149",
+            "150",
+            "151",
+            "155",
+            "157",
+            "158",
+            "159",
+            "160",
+            "162",
+            "163",
+            "167",
+            "168"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "141",
+        "142",
+        "143",
+        "147",
+        "148",
+        "149",
+        "150",
+        "151",
+        "155",
+        "157",
+        "158",
+        "159",
+        "160",
+        "162",
+        "163",
+        "167",
+        "168"
+      ],
+      "generated": true
+    },
+    {
+      "type": "bridge",
+      "title": "Bu üniteden soru çöz",
+      "articleRefs": [
+        "141",
+        "142",
+        "143",
+        "147",
+        "148",
+        "149",
+        "150",
+        "151",
+        "155",
+        "157",
+        "158",
+        "159",
+        "160",
+        "162",
+        "163",
+        "167",
+        "168"
+      ],
+      "generated": true,
+      "rows": [
+        {
+          "label": "Madde kapsamlı seans",
+          "value": "md 141–143, 147–151, 155, 157–160, 162, 163, 167, 168, 10 soru",
+          "refs": [
+            "141",
+            "142",
+            "143",
+            "147",
+            "148",
+            "149",
+            "150",
+            "151",
+            "155",
+            "157",
+            "158",
+            "159",
+            "160",
+            "162",
+            "163",
+            "167",
+            "168"
+          ]
+        }
+      ]
+    }
+  ]
+}

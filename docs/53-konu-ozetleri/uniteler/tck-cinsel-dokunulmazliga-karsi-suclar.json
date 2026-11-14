@@ -1,0 +1,588 @@
+{
+  "unit": {
+    "slug": "tck-cinsel-dokunulmazliga-karsi-suclar",
+    "legislationSlug": "turk-ceza-kanunu",
+    "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+    "title": "Cinsel dokunulmazlığa karşı suçlar",
+    "subtitle": "Cinsel saldırı, çocukların cinsel istismarı, reşit olmayanla cinsel ilişki, cinsel taciz",
+    "articleFrom": "102",
+    "articleTo": "105",
+    "readingMinutes": 12,
+    "sourceLabel": "AI özeti — Türk Ceza Kanunu, md 102–105",
+    "articleNos": [
+      "102",
+      "103",
+      "104",
+      "105"
+    ],
+    "generatedBy": "claude-opus-5-5 (ozet-uret.ts)",
+    "sortOrder": 9
+  },
+  "blocks": [
+    {
+      "type": "concept",
+      "title": "Aynı aile, farklı suçlar",
+      "body": "Bu ünitede md 102'den md 105'e kadar uzanan suçlar var ve hepsi aynı soruya dayanır: cinsel bir davranış kime karşı, nasıl yapıldı? Md 102, cinsel davranışlarla “bir kimsenin” vücut dokunulmazlığını ihlâl edeni cezalandırır. Md 103, çocuğu cinsel yönden istismar edeni cezalandırır. Md 104, cebir, tehdit ve hile olmaksızın onbeş yaşını bitirmiş çocukla cinsel ilişkide bulunanı cezalandırır. Md 105 ise bir kimseyi cinsel amaçlı olarak taciz edeni cezalandırır. Her maddede üç şeye bak: temel ceza, şikâyet şartı ve cezayı artıran hâller.",
+      "articleRefs": [
+        "102",
+        "103",
+        "104",
+        "105"
+      ],
+      "derivedNumbers": [],
+      "counterNumbers": []
+    },
+    {
+      "type": "concept",
+      "title": "Olay sorusunda ilk bakış: mağdur",
+      "body": "Olay sorularında önce mağdura bak. Md 102 “bir kimseyi” korur, md 103 ve md 104 ise “çocuğu”. Failin kendisinin çocuk olması suçun adını değiştirmez. Md 102'de fail için yalnızca “kişi” denir. Md 103 de failin değil, mağdurun çocuk olmasını arar. İkinci adımda davranışa bak. Md 102 vücut dokunulmazlığının ihlâlini arar. Md 105'in metninde böyle bir unsur yer almaz; orada “cinsel amaçlı olarak taciz” yeterlidir.",
+      "articleRefs": [
+        "102",
+        "103",
+        "104",
+        "105"
+      ],
+      "derivedNumbers": [],
+      "counterNumbers": []
+    },
+    {
+      "type": "rule",
+      "title": "Cinsel saldırı: temel şekil ve organ sokma",
+      "body": "**Temel şekil (md 102/1):** Cinsel davranışlarla bir kimsenin vücut dokunulmazlığını ihlâl eden kişi, **mağdurun şikâyeti üzerine**, beş yıldan on yıla kadar hapis cezası ile cezalandırılır.\n\n**Sarkıntılık (md 102/1):** Cinsel davranış sarkıntılık düzeyinde kalırsa iki yıldan beş yıla kadar hapis cezası verilir.\n\n**Organ veya cisim sokma (md 102/2):** Fiil vücuda organ veya sair bir cisim sokulması suretiyle gerçekleştirilirse, on iki yıldan az olmamak üzere hapis cezasına hükmolunur.\n\n**Eş istisnası (md 102/2):** Bu fiil eşe karşı işlenirse soruşturma ve kovuşturmanın yapılması mağdurun şikâyetine bağlıdır.",
+      "articleRefs": [
+        "102"
+      ],
+      "derivedNumbers": [],
+      "counterNumbers": []
+    },
+    {
+      "type": "trap",
+      "title": "Sarkıntılık cezayı artırmaz, azaltır",
+      "body": "Sarkıntılık, cezayı artıran bir hâl değildir. Md 102/1'e göre cinsel davranış sarkıntılık düzeyinde kalırsa ceza, beş–on yıl yerine iki–beş yıl hapis olur. “Hangisi cezayı artıran nitelikli hâl değildir?” sorusunda sarkıntılık doğru cevap olabilir. “Cezayı azaltan hâl hangisidir?” sorusunda da aranan yine sarkıntılıktır. Kanunun kelimesi “sarkıntılık”tır; “taciz düzeyinde kalma” diye bir ifade md 102'de geçmez. Taciz, md 105'in suçudur.",
+      "articleRefs": [
+        "102",
+        "105"
+      ],
+      "derivedNumbers": [],
+      "counterNumbers": []
+    },
+    {
+      "type": "trap",
+      "title": "Eşe karşı da işlenir, ama şikâyete bağlıdır",
+      "body": "Eşler arasında da cinsel saldırı suçu oluşur; md 102/2 bunu açıkça “eşe karşı işlenmesi” diye anar. Organ veya cisim sokulması suretiyle eşe karşı işlenen fiil, md 102/2'deki şekildir; md 102/1'deki temel şekil değildir. Md 102/2'de şikâyet şartı yalnızca eşe karşı işlenme hâli için yazılıdır. Bu yüzden böyle bir olayda soruşturma ve kovuşturma mağdurun şikâyetine bağlıdır. Bir de şunu unutma: md 102/2, organın veya cismin nereye sokulduğunu belirtmez; metin yalnızca “vücuda” der.",
+      "articleRefs": [
+        "102"
+      ],
+      "derivedNumbers": [],
+      "counterNumbers": []
+    },
+    {
+      "type": "rule",
+      "title": "Cinsel saldırının nitelikli hâlleri",
+      "body": "**Md 102/3:** Suç aşağıdaki hâllerden biriyle işlenirse, yukarıdaki fıkralara göre verilen cezalar **yarı oranında artırılır**:\n- a) Beden veya ruh bakımından kendisini savunamayacak durumda bulunan kişiye karşı,\n- b) Kamu görevinin, vesayet veya hizmet ilişkisinin sağladığı nüfuz kötüye kullanılmak suretiyle,\n- c) Üçüncü derece dâhil kan veya kayın hısımlığı ilişkisi içinde bulunan bir kişiye karşı ya da üvey baba, üvey ana, üvey kardeş, evlat edinen veya evlatlık tarafından,\n- d) Silahla veya birden fazla kişi tarafından birlikte,\n- e) İnsanların toplu olarak bir arada yaşama zorunluluğunda bulunduğu ortamların sağladığı kolaylıktan faydalanmak suretiyle.",
+      "articleRefs": [
+        "102"
+      ],
+      "derivedNumbers": [],
+      "counterNumbers": []
+    },
+    {
+      "type": "trap",
+      "title": "“Kalabalık” ile “toplu yaşama zorunluluğu” aynı şey değil",
+      "body": "Md 102/3-e “kalabalık” demez. Bentteki ifade, “insanların toplu olarak bir arada yaşama zorunluluğunda bulunduğu ortamlar”dır. Olaydaki yerin bu ifadeye uyup uymadığını kelime kelime tart. Md 102/3-c'deki fail listesini de iyi ezberle: üvey baba, üvey ana, üvey kardeş, evlat edinen ve **evlatlık**. Buna üçüncü derece dâhil kan veya kayın hısımına karşı işleme de eklenir. Silahla işleme ve birden fazla kişinin birlikte işlemesi ise md 102/3-d'de aynı bentte yer alır.",
+      "articleRefs": [
+        "102"
+      ],
+      "derivedNumbers": [],
+      "counterNumbers": []
+    },
+    {
+      "type": "rule",
+      "title": "Cinsel saldırıda ağır sonuçlar",
+      "body": "**Ağır netice (md 102/4):** Cinsel saldırı için başvurulan cebir ve şiddet, kasten yaralama suçunun ağır neticelerine neden olursa **ayrıca** kasten yaralama suçuna ilişkin hükümler uygulanır. Yani fail yalnız yaralamadan değil, cinsel saldırıdan da sorumludur.\n\n**Bitkisel hayat veya ölüm (md 102/5):** Suç sonucu mağdur bitkisel hayata girerse ya da ölürse ağırlaştırılmış müebbet hapis cezasına hükmolunur.",
+      "articleRefs": [
+        "102"
+      ],
+      "derivedNumbers": [],
+      "counterNumbers": []
+    },
+    {
+      "type": "rule",
+      "title": "Çocukların cinsel istismarı: tanım ve ceza",
+      "body": "**Ceza (md 103/1):** Çocuğu cinsel yönden istismar eden kişi, sekiz yıldan on beş yıla kadar hapis cezası ile cezalandırılır. İstismar sarkıntılık düzeyinde kalırsa üç yıldan sekiz yıla kadar hapis cezası verilir.\n\n**On iki yaş alt sınırı:** Mağdur on iki yaşını tamamlamamışsa ceza, istismarda on yıldan, sarkıntılıkta beş yıldan az olamaz.\n\n**Cinsel istismar deyimi:**\n- a) On beş yaşını tamamlamamış ya da tamamlamış olmakla birlikte fiilin hukuki anlam ve sonuçlarını algılama yeteneği gelişmemiş çocuklara karşı **her türlü** cinsel davranış,\n- b) Diğer çocuklara karşı **sadece** cebir, tehdit, hile veya iradeyi etkileyen başka bir nedene dayalı olarak gerçekleştirilen cinsel davranışlar.\n\n**Şikâyet istisnası:** Sarkıntılık düzeyinde kalmış suçun faili çocuksa, soruşturma ve kovuşturma yapılması mağdurun, velisinin veya vasisinin şikâyetine bağlıdır.",
+      "articleRefs": [
+        "103"
+      ],
+      "derivedNumbers": [],
+      "counterNumbers": []
+    },
+    {
+      "type": "trap",
+      "title": "On iki yaş kuralında rakamları karıştırma",
+      "body": "Mağdur on iki yaşını tamamlamamışsa alt sınır istismarda **on yıl**, sarkıntılıkta **beş yıl**dır. Yanlış şıklar genellikle bu alt sınırların yerine temel cezanın üst sınırlarını (on beş ve sekiz yıl) yazar. Organ veya cisim sokma hâlinde ayrı bir alt sınır vardır: on iki yaşını tamamlamamış mağdur için ceza **on sekiz yıl**dan az olamaz (md 103/2).",
+      "articleRefs": [
+        "103"
+      ],
+      "derivedNumbers": [],
+      "counterNumbers": []
+    },
+    {
+      "type": "rule",
+      "title": "Çocuk istismarında ağırlaştırıcı hâller",
+      "body": "**Organ veya cisim sokma (md 103/2):** On altı yıldan aşağı olmamak üzere hapis cezası verilir. Mağdur on iki yaşını tamamlamamışsa ceza on sekiz yıldan az olamaz.\n\n**Nitelikli hâller (md 103/3):** Suç aşağıdaki hâllerden biriyle işlenirse ceza **yarı oranında artırılır**:\n- a) Birden fazla kişi tarafından birlikte,\n- b) İnsanların toplu olarak bir arada yaşama zorunluluğunda bulunduğu ortamların sağladığı kolaylıktan faydalanmak suretiyle,\n- c) Üçüncü derece dâhil kan veya kayın hısımlığı ilişkisi içinde bulunan bir kişiye karşı ya da üvey baba, üvey ana, üvey kardeş veya evlat edinen tarafından,\n- d) Vasi, eğitici, öğretici, bakıcı, koruyucu aile veya sağlık hizmeti veren ya da koruma, bakım veya gözetim yükümlülüğü bulunan kişiler tarafından,\n- e) Kamu görevinin veya hizmet ilişkisinin sağladığı nüfuz kötüye kullanılmak suretiyle.\n\n**Ayrıca artırım (md 103/4):** İstismar, md 103/1-a'daki çocuklara karşı cebir veya tehditle ya da md 103/1-b'deki çocuklara karşı silah kullanılarak gerçekleştirilirse ceza yarı oranında artırılır.",
+      "articleRefs": [
+        "103"
+      ],
+      "derivedNumbers": [],
+      "counterNumbers": []
+    },
+    {
+      "type": "trap",
+      "title": "Tehdit varsa md 104 yoktur",
+      "body": "Diyelim ki fail, bir çocuğu tehditle cinsel ilişkiye razı etti. Bu olay md 104 değildir, çünkü md 104/1 yalnızca “cebir, tehdit ve hile olmaksızın” gerçekleşen ilişkiyi kapsar. Çocuk on beş yaşını tamamlamışsa tehdit md 103/1-b'yi devreye sokar: diğer çocuklara karşı cebir, tehdit, hile veya iradeyi etkileyen başka bir nedene dayalı cinsel davranış, cinsel istismardır. On beş yaşını tamamlamamış çocukta ise her türlü cinsel davranış zaten md 103/1-a'ya göre istismardır; cebir veya tehdit orada md 103/4'e göre cezayı yarı oranında artırır. Tehdit bu tanımın içinde yazılıdır. Fail kamu görevinin veya hizmet ilişkisinin sağladığı nüfuzu kötüye kullandıysa md 103/3-e uygulanır. Çocuk üzerinde koruma, bakım veya gözetim yükümlülüğü varsa md 103/3-d'deki nitelikli hâl gündeme gelir. Şıklardaki iki tuzağa dikkat et: “ve tehdit suçundan” eklemesi ve md 104'e kaçış.",
+      "articleRefs": [
+        "103",
+        "104"
+      ],
+      "derivedNumbers": [],
+      "counterNumbers": []
+    },
+    {
+      "type": "trap",
+      "title": "Md 103'te neler yazılı, neler yazılı değil",
+      "body": "Md 103'te sonucu nedeniyle ağırlaşan hâller iki fıkrada düzenlenir. Birincisi, cebir ve şiddetin kasten yaralama suçunun ağır neticelerine neden olmasıdır; bu durumda ayrıca kasten yaralama hükümleri uygulanır (md 103/5). İkincisi, mağdurun bitkisel hayata girmesi veya ölmesidir; bu durumda ağırlaştırılmış müebbet hapis verilir (md 103/6). “Mağdurun beden veya ruh sağlığının bozulması” ifadesi md 103'te yer almaz; şıkta görürsen yanlış ifade odur. Şikâyet konusunda da metne sadık kal: md 103'te şikâyet şartı yalnızca sarkıntılık düzeyinde kalmış suçun failinin çocuk olması hâli için yazılıdır.",
+      "articleRefs": [
+        "103"
+      ],
+      "derivedNumbers": [],
+      "counterNumbers": []
+    },
+    {
+      "type": "numbers",
+      "title": "Ceza tablosu: md 102–103",
+      "rows": [
+        {
+          "label": "Cinsel saldırı, temel (şikâyet üzerine)",
+          "value": "5–10 yıl hapis",
+          "refs": [
+            "102"
+          ]
+        },
+        {
+          "label": "Cinsel saldırı, sarkıntılık düzeyi",
+          "value": "2–5 yıl hapis",
+          "refs": [
+            "102"
+          ]
+        },
+        {
+          "label": "Cinsel saldırı, organ veya cisim sokma",
+          "value": "en az 12 yıl hapis",
+          "refs": [
+            "102"
+          ]
+        },
+        {
+          "label": "Cinsel saldırı, nitelikli hâller (md 102/3)",
+          "value": "yarı oranında artırım",
+          "refs": [
+            "102"
+          ]
+        },
+        {
+          "label": "Cinsel saldırı, bitkisel hayat veya ölüm",
+          "value": "ağırlaştırılmış müebbet hapis",
+          "refs": [
+            "102"
+          ]
+        },
+        {
+          "label": "Çocukların cinsel istismarı, temel",
+          "value": "8–15 yıl hapis",
+          "refs": [
+            "103"
+          ]
+        },
+        {
+          "label": "Çocukların cinsel istismarı, sarkıntılık düzeyi",
+          "value": "3–8 yıl hapis",
+          "refs": [
+            "103"
+          ]
+        },
+        {
+          "label": "Mağdur 12 yaşını tamamlamamış, istismar",
+          "value": "en az 10 yıl hapis",
+          "refs": [
+            "103"
+          ]
+        },
+        {
+          "label": "Mağdur 12 yaşını tamamlamamış, sarkıntılık",
+          "value": "en az 5 yıl hapis",
+          "refs": [
+            "103"
+          ]
+        },
+        {
+          "label": "İstismar, organ veya cisim sokma",
+          "value": "en az 16 yıl hapis",
+          "refs": [
+            "103"
+          ]
+        },
+        {
+          "label": "Organ veya cisim sokma, mağdur 12 yaşını tamamlamamış",
+          "value": "en az 18 yıl hapis",
+          "refs": [
+            "103"
+          ]
+        },
+        {
+          "label": "Md 103/1-a yaş eşiği",
+          "value": "15 yaşını tamamlamamış çocuk",
+          "refs": [
+            "103"
+          ]
+        },
+        {
+          "label": "İstismar, nitelikli hâller (md 103/3 ve 103/4)",
+          "value": "yarı oranında artırım",
+          "refs": [
+            "103"
+          ]
+        },
+        {
+          "label": "İstismar, bitkisel hayat veya ölüm",
+          "value": "ağırlaştırılmış müebbet hapis",
+          "refs": [
+            "103"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "102",
+        "103"
+      ],
+      "derivedNumbers": [],
+      "counterNumbers": []
+    },
+    {
+      "type": "rule",
+      "title": "Reşit olmayanla cinsel ilişki",
+      "body": "**Temel şekil (md 104/1):** Cebir, tehdit ve hile olmaksızın onbeş yaşını bitirmiş olan çocukla cinsel ilişkide bulunan kişi, **şikâyet üzerine**, iki yıldan beş yıla kadar hapis cezası ile cezalandırılır.\n\n**Evlenme yasağı (md 104/2):** Suç, mağdur ile arasında evlenme yasağı bulunan kişi tarafından işlenirse, **şikâyet aranmaksızın** on yıldan on beş yıla kadar hapis cezası verilir.\n\n**Bakım ve koruyucu aile (md 104/3):** Suçu, evlat edineceği çocuğun evlat edinme öncesi bakımını üstlenen kişi işlerse şikâyet aranmaksızın ikinci fıkraya göre ceza verilir. Koruyucu aile ilişkisi çerçevesinde koruma, bakım ve gözetim yükümlülüğü bulunan kişi için de aynı kural uygulanır.",
+      "articleRefs": [
+        "104"
+      ],
+      "derivedNumbers": [],
+      "counterNumbers": []
+    },
+    {
+      "type": "trap",
+      "title": "Md 104'te öğretmen ve doktor yok",
+      "body": "Md 104'te cezayı ağırlaştıran fail listesi kısadır. Birincisi, mağdur ile arasında evlenme yasağı bulunan kişidir (md 104/2). İkincisi, evlat edinme öncesi bakımı üstlenen ya da koruyucu aile ilişkisiyle koruma, bakım ve gözetim yükümlülüğü bulunan kişidir (md 104/3). Öğretmen, doktor gibi meslek ilişkileri md 104'te sayılmaz. “Eğitici, öğretici, sağlık hizmeti veren” ifadeleri md 103/3-d ve md 105/2-b'de geçer. Soru bir akrabayı sorduğunda ölçüt, md 104/2'deki “evlenme yasağı” kavramıdır. Bu iki ağır hâlde şikâyet aranmaz; temel şekil ise şikâyete bağlıdır.",
+      "articleRefs": [
+        "103",
+        "104",
+        "105"
+      ],
+      "derivedNumbers": [],
+      "counterNumbers": []
+    },
+    {
+      "type": "rule",
+      "title": "Cinsel taciz",
+      "body": "**Temel şekil (md 105/1):** Bir kimseyi cinsel amaçlı olarak taciz eden kişi hakkında, **mağdurun şikâyeti üzerine**, üç aydan iki yıla kadar hapis cezasına veya adlî para cezasına hükmolunur.\n\n**Çocuğa karşı:** Fiil çocuğa karşı işlenirse altı aydan üç yıla kadar hapis cezası verilir. Bu hâlde adlî para cezası seçeneği metinde yer almaz.\n\n**Nitelikli hâller (md 105/2):** Suç aşağıdaki hâllerden biriyle işlenirse ceza **yarı oranında artırılır**:\n- a) Kamu görevinin veya hizmet ilişkisinin ya da aile içi ilişkinin sağladığı kolaylıktan faydalanmak suretiyle,\n- b) Vasi, eğitici, öğretici, bakıcı, koruyucu aile veya sağlık hizmeti veren ya da koruma, bakım veya gözetim yükümlülüğü bulunan kişiler tarafından,\n- c) Aynı işyerinde çalışmanın sağladığı kolaylıktan faydalanmak suretiyle,\n- d) Posta veya elektronik haberleşme araçlarının sağladığı kolaylıktan faydalanmak suretiyle,\n- e) Teşhir suretiyle.\n\n**Alt sınır:** Fiil nedeniyle mağdur işi bırakmak, okuldan veya ailesinden ayrılmak zorunda kalmışsa verilecek ceza bir yıldan az olamaz.",
+      "articleRefs": [
+        "105"
+      ],
+      "derivedNumbers": [],
+      "counterNumbers": []
+    },
+    {
+      "type": "trap",
+      "title": "Teşhir var, hayasızca hareketler yok",
+      "body": "“Hayasızca hareketlerle işlenmesi” md 105/2'nin bentleri arasında yoktur. Listede yer alan hâl, **teşhir suretiyle** işlenmedir; nitelikli hâl sorusunda bu ikisini karıştırma. Fail ve mağdurun cinsiyetine de bak: md 105/1 “bir kimseyi” taciz eden “kişi” der. Metin ne fail ne de mağdur için cinsiyet belirler; “failin erkek olması gerekir” diyen şık metne dayanmaz. Md 102'de de durum aynıdır: orada da “bir kimse” ve “kişi” denir.",
+      "articleRefs": [
+        "102",
+        "105"
+      ],
+      "derivedNumbers": [],
+      "counterNumbers": []
+    },
+    {
+      "type": "numbers",
+      "title": "Ceza tablosu: md 104–105",
+      "rows": [
+        {
+          "label": "Reşit olmayanla cinsel ilişki, mağdur",
+          "value": "15 yaşını bitirmiş çocuk",
+          "refs": [
+            "104"
+          ]
+        },
+        {
+          "label": "Reşit olmayanla cinsel ilişki, temel (şikâyet üzerine)",
+          "value": "2–5 yıl hapis",
+          "refs": [
+            "104"
+          ]
+        },
+        {
+          "label": "Evlenme yasağı bulunan fail (şikâyet aranmaz)",
+          "value": "10–15 yıl hapis",
+          "refs": [
+            "104"
+          ]
+        },
+        {
+          "label": "Evlat edinme öncesi bakım veya koruyucu aile (şikâyet aranmaz)",
+          "value": "md 104/2'deki ceza",
+          "refs": [
+            "104"
+          ]
+        },
+        {
+          "label": "Cinsel taciz, temel (şikâyet üzerine)",
+          "value": "3 ay–2 yıl hapis veya adlî para cezası",
+          "refs": [
+            "105"
+          ]
+        },
+        {
+          "label": "Cinsel taciz, çocuğa karşı",
+          "value": "6 ay–3 yıl hapis",
+          "refs": [
+            "105"
+          ]
+        },
+        {
+          "label": "Cinsel taciz, nitelikli hâller (md 105/2)",
+          "value": "yarı oranında artırım",
+          "refs": [
+            "105"
+          ]
+        },
+        {
+          "label": "Mağdur işi, okulu veya ailesini bırakmak zorunda kaldıysa",
+          "value": "en az 1 yıl",
+          "refs": [
+            "105"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "104",
+        "105"
+      ],
+      "derivedNumbers": [],
+      "counterNumbers": []
+    },
+    {
+      "type": "compare",
+      "title": "Nitelikli hâller: md 102/3 ↔ md 103/3",
+      "rows": [
+        {
+          "aspect": "Akrabalık ve üvey ilişki",
+          "left": "Üçüncü derece dâhil kan veya kayın hısımına karşı; üvey baba, üvey ana, üvey kardeş, evlat edinen veya evlatlık tarafından",
+          "right": "Üçüncü derece dâhil kan veya kayın hısımına karşı; üvey baba, üvey ana, üvey kardeş veya evlat edinen tarafından; evlatlık sayılmaz",
+          "refs": [
+            "102",
+            "103"
+          ]
+        },
+        {
+          "aspect": "Nüfuz",
+          "left": "Kamu görevinin, vesayet veya hizmet ilişkisinin sağladığı nüfuz",
+          "right": "Kamu görevinin veya hizmet ilişkisinin sağladığı nüfuz; vasi md 103/3-d'de",
+          "refs": [
+            "102",
+            "103"
+          ]
+        },
+        {
+          "aspect": "Bakım ve gözetim",
+          "left": "Bentlerde yer almaz",
+          "right": "Vasi, eğitici, öğretici, bakıcı, koruyucu aile, sağlık hizmeti veren, koruma, bakım veya gözetim yükümlüsü",
+          "refs": [
+            "102",
+            "103"
+          ]
+        },
+        {
+          "aspect": "Silah",
+          "left": "Silahla işleme (md 102/3-d)",
+          "right": "Md 103/1-b'deki çocuklara karşı silah kullanma (md 103/4)",
+          "refs": [
+            "102",
+            "103"
+          ]
+        },
+        {
+          "aspect": "Savunamayacak durumdaki kişi",
+          "left": "Md 102/3-a",
+          "right": "Md 103/3'te yer almaz",
+          "refs": [
+            "102",
+            "103"
+          ]
+        },
+        {
+          "aspect": "Birden fazla kişi / toplu yaşama ortamı",
+          "left": "Md 102/3-d ve 102/3-e",
+          "right": "Md 103/3-a ve 103/3-b",
+          "refs": [
+            "102",
+            "103"
+          ]
+        },
+        {
+          "aspect": "Etkisi",
+          "left": "Ceza yarı oranında artırılır",
+          "right": "Ceza yarı oranında artırılır",
+          "refs": [
+            "102",
+            "103"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "102",
+        "103"
+      ],
+      "derivedNumbers": [],
+      "counterNumbers": []
+    },
+    {
+      "type": "compare",
+      "title": "Reşit olmayanla cinsel ilişki ↔ Çocukların cinsel istismarı",
+      "rows": [
+        {
+          "aspect": "Mağdur",
+          "left": "Onbeş yaşını bitirmiş çocuk",
+          "right": "Md 103/1-a: on beş yaşını tamamlamamış ya da algılama yeteneği gelişmemiş çocuk; md 103/1-b: diğer çocuklar",
+          "refs": [
+            "103",
+            "104"
+          ]
+        },
+        {
+          "aspect": "Cebir, tehdit, hile",
+          "left": "Bulunmamalı",
+          "right": "Md 103/1-b'deki çocuklar için suçun unsuru",
+          "refs": [
+            "103",
+            "104"
+          ]
+        },
+        {
+          "aspect": "Temel ceza",
+          "left": "2–5 yıl hapis",
+          "right": "8–15 yıl hapis",
+          "refs": [
+            "103",
+            "104"
+          ]
+        },
+        {
+          "aspect": "Şikâyet",
+          "left": "Temel şekil şikâyete bağlı; md 104/2 ve 104/3'te şikâyet aranmaz",
+          "right": "Yalnız sarkıntılık düzeyinde kalmış suçun faili çocuksa şikâyete bağlı",
+          "refs": [
+            "103",
+            "104"
+          ]
+        },
+        {
+          "aspect": "Aile içi fail",
+          "left": "Evlenme yasağı bulunan kişi: 10–15 yıl hapis",
+          "right": "Md 103/3-c: ceza yarı oranında artırılır",
+          "refs": [
+            "103",
+            "104"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "103",
+        "104"
+      ],
+      "derivedNumbers": [],
+      "counterNumbers": []
+    },
+    {
+      "type": "exam_stats",
+      "title": "Sınav der ki",
+      "rows": [
+        {
+          "label": "Bu ünitenin maddelerinden yayındaki soru",
+          "value": "33",
+          "refs": [
+            "102",
+            "103",
+            "104",
+            "105"
+          ]
+        },
+        {
+          "label": "md 102 — Cinsel saldırı",
+          "value": "16 soru",
+          "refs": [
+            "102"
+          ]
+        },
+        {
+          "label": "md 103 — Çocukların cinsel istismarı",
+          "value": "8 soru",
+          "refs": [
+            "103"
+          ]
+        },
+        {
+          "label": "md 104 — Reşit olmayanla cinsel ilişki",
+          "value": "5 soru",
+          "refs": [
+            "104"
+          ]
+        },
+        {
+          "label": "md 105 — Cinsel taciz",
+          "value": "4 soru",
+          "refs": [
+            "105"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "102",
+        "103",
+        "104",
+        "105"
+      ],
+      "generated": true
+    },
+    {
+      "type": "bridge",
+      "title": "Bu üniteden soru çöz",
+      "articleRefs": [
+        "102",
+        "103",
+        "104",
+        "105"
+      ],
+      "generated": true,
+      "rows": [
+        {
+          "label": "Madde kapsamlı seans",
+          "value": "md 102–105, 10 soru",
+          "refs": [
+            "102",
+            "103",
+            "104",
+            "105"
+          ]
+        }
+      ]
+    }
+  ]
+}
