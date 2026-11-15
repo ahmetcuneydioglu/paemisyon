@@ -86,5 +86,8 @@ export function useUpdateMe() {
 }
 
 export function useDeleteMe() {
-  return useMutation({ mutationFn: () => api<{ deleted: boolean; authDeleted: boolean }>("/me", { method: "DELETE" }) });
+  return useMutation({
+    mutationFn: (appleAuthorizationCode?: string | null) =>
+      api<{ deleted: boolean; authDeleted: boolean }>("/me", { method: "DELETE", body: appleAuthorizationCode ? { appleAuthorizationCode } : undefined }),
+  });
 }

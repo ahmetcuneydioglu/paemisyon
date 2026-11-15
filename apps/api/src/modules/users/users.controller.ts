@@ -17,6 +17,7 @@ import { JwtAuthGuard } from '../auth/guards/jwt-auth.guard';
 import { CurrentUser } from '../auth/decorators/current-user.decorator';
 import type { AuthenticatedUser } from '../auth/auth.types';
 import { UpdateProfileDto } from './dto/update-profile.dto';
+import { DeleteAccountDto } from './dto/delete-account.dto';
 import { CompleteOnboardingDto } from './dto/complete-onboarding.dto';
 import { UsersService } from './users.service';
 import { MevzuatMerkeziService } from './mevzuat-merkezi.service';
@@ -371,8 +372,8 @@ export class UsersController {
 
   /// KVKK hesap silme (App Store zorunluluğu). Geri alınamaz.
   @Delete()
-  deleteAccount(@CurrentUser() user: AuthenticatedUser) {
-    return this.users.deleteAccount(user);
+  deleteAccount(@CurrentUser() user: AuthenticatedUser, @Body() dto: DeleteAccountDto) {
+    return this.users.deleteAccount(user, dto?.appleAuthorizationCode);
   }
 
   /// Home dashboard verisi (Doc 12 §4): tek istekte selam + istatistik + streak +

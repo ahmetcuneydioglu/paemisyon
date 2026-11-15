@@ -106,6 +106,31 @@ export async function signInWithProvider(provider: SocialProvider): Promise<void
   return signInWithApple();
 }
 
+/**
+ * Hesap silmeden önce Apple yetki kodu (App Store Yönergesi 5.1.1(v)): sunucu bu kodla
+ * "Apple ile Giriş" bağlantısını Apple tarafında da iptal eder. Supabase Apple jetonunu
+ * saklamadığı için kod silme anında yeniden istenir (kısa ömürlü, tek kullanımlık).
+ * Hesap Apple ile bağlı değilse ya da iOS dışındaysa null. Kullanıcı vazgeçerse
+ * `SocialSignInCancelled`; başka bir hata silmeyi durdurmaz (null, sunucu iptali atlar).
+ */
+export async function appleAuthorizationForDeletion(user: {
+  app_metadata?: { providers?: unknown };
+  identities?: { provider: string }[] | null;
+} | null): Promise<string | null> {
+  if (Platform.OS !== "ios" || !user) return null;
+  const providers = Array.isArray(user.app_metadata?.providers) ? (user.app_metadata.providers as unknown[]) : [];
+  const linked = providers.includes("apple") || Boolean(user.identities?.some((i) => i.provider === "apple"));
+  if (!linked) return null;
+  try {
+    if (!(await AppleAuthentication.isAvailableAsync())) return null;
+    const credential = await AppleAuthentication.signInAsync({ requestedScopes: [] });
+    return credential.authorizationCode ?? null;
+  } catch (error) {
+    if ((error as { code?: string } | null)?.code === "ERR_REQUEST_CANCELED") throw new SocialSignInCancelled();
+    return null;
+  }
+}
+
 export async function signOutFromProviders() {
   if (!googleConfigured) return;
   await GoogleSignin.signOut().catch(() => {});

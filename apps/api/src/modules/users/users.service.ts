@@ -4,6 +4,7 @@ import { PrismaService } from '../../infra/prisma/prisma.service';
 import type { AuthenticatedUser } from '../auth/auth.types';
 import { UserSyncService } from '../auth/user-sync.service';
 import { UpdateProfileDto } from './dto/update-profile.dto';
+import { AppleRevokeService, type AppleRevokeResult } from './apple-revoke.service';
 
 /**
  * Kullanıcı işlemleri: onboarding tamamlama + KVKK hesap silme (Doc 11, Doc 13 S7).
@@ -14,6 +15,7 @@ export class UsersService {
     private readonly prisma: PrismaService,
     private readonly userSync: UserSyncService,
     private readonly events: AppEventsService,
+    private readonly appleRevoke: AppleRevokeService,
   ) {}
 
   /** Onboarding (Doc 24 Gün 0 — 3 soru): sınav + tarih + günlük hedef; idempotent. */
@@ -102,7 +104,7 @@ export class UsersService {
    * - Supabase Auth kullanıcısı SİLİNİR (service_role varsa) → tekrar giriş imkânsız.
    * - status=deleted → guard bir daha içeri almaz (anahtar yoksa bile güvenli).
    */
-  async deleteAccount(user: AuthenticatedUser) {
+  async deleteAccount(user: AuthenticatedUser, appleAuthorizationCode?: string) {
     await this.prisma.user.update({
       where: { id: user.id },
       data: {
@@ -131,6 +133,16 @@ export class UsersService {
     const supabaseUrl = process.env.SUPABASE_URL;
     const serviceKey = process.env.SUPABASE_SERVICE_ROLE_KEY;
     let authDeleted = false;
+
+    // Apple ile Giriş bağlantısını Apple'da da kes (Yönerge 5.1.1(v)); kimlik silinmeden
+    // önce, çünkü hesabın Apple kimliği (sub) Supabase kaydından okunur.
+    let appleRevoke: AppleRevokeResult | null = null;
+    if (appleAuthorizationCode) {
+      const appleSub =
+        supabaseUrl && serviceKey ? await this.appleSubOf(supabaseUrl, serviceKey, user.id) : null;
+      appleRevoke = await this.appleRevoke.revoke(appleAuthorizationCode, appleSub);
+    }
+
     if (supabaseUrl && serviceKey) {
       try {
         const res = await fetch(`${supabaseUrl}/auth/v1/admin/users/${user.id}`, {
@@ -148,6 +160,23 @@ export class UsersService {
       }
     }
     // authDeleted=false olsa bile status=deleted → guard erişimi keser (aşağıda).
-    return { deleted: true, authDeleted };
+    return { deleted: true, authDeleted, appleRevoke };
+  }
+
+  /** Supabase kaydındaki Apple kimliği (sub); okunamazsa null (eşleşme denetimi atlanır). */
+  private async appleSubOf(supabaseUrl: string, serviceKey: string, userId: string) {
+    try {
+      const res = await fetch(`${supabaseUrl}/auth/v1/admin/users/${userId}`, {
+        headers: { apikey: serviceKey, Authorization: `Bearer ${serviceKey}` },
+      });
+      if (!res.ok) return null;
+      const body = (await res.json()) as {
+        identities?: { provider?: string; id?: string; identity_data?: { sub?: string } }[];
+      };
+      const apple = body.identities?.find((i) => i.provider === 'apple');
+      return apple?.identity_data?.sub ?? apple?.id ?? null;
+    } catch {
+      return null;
+    }
   }
 }

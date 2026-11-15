@@ -6,10 +6,10 @@
  * okunamazsa devreye giren emniyet ağıdır; üç ayrı yerde farklı sayı
  * kalmasın diye tek yerde toplanmıştır (quiz limiti, /me, public fiyat).
  *
- * Limiti değiştirmek için: `npx ts-node scripts/set-free-daily-limit.ts 30`
+ * Limiti değiştirmek için: `npx ts-node scripts/set-free-daily-limit.ts 15`
  * (fallback'i de aynı sayıya çek ki plan satırı kaybolursa davranış sapmasın).
  */
-export const FREE_DAILY_LIMIT_FALLBACK = 30;
+export const FREE_DAILY_LIMIT_FALLBACK = 15;
 
 /** Satılabilir premium planın anahtarı (3 aylık, manuel ödeme). */
 export const PREMIUM_PLAN_KEY = 'quarterly';

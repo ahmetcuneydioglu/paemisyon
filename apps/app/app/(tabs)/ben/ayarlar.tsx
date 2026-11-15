@@ -8,6 +8,7 @@ import { useDeleteMe, useMeFull, useUpdateMe, type MeFull } from "@/features/me/
 import { NotificationPreferences } from "@/features/notifications/preferences";
 import { appVersion } from "@/lib/app-meta";
 import { useAuth } from "@/lib/auth/AuthProvider";
+import { appleAuthorizationForDeletion, SocialSignInCancelled } from "@/lib/auth/social";
 import { supabase } from "@/lib/supabase";
 import { useTheme, type ThemePreference } from "@/theme/ThemeProvider";
 
@@ -47,6 +48,7 @@ function AyarlarForm({ d }: { d: MeFull }) {
   const modules = useModules();
   const update = useUpdateMe();
   const del = useDeleteMe();
+  const [appleBusy, setAppleBusy] = useState(false);
   const kartHedefiKaydet = useSetFlashcardDailyGoal();
 
   const [name, setName] = useState(d.displayName ?? "");
@@ -100,8 +102,21 @@ function AyarlarForm({ d }: { d: MeFull }) {
     Alert.alert("Şifre güncellendi");
   };
 
-  const deleteAccount = () => {
-    del.mutate(undefined, {
+  const deleteAccount = async () => {
+    // Apple ile girişli hesapta önce Apple onayı: sunucu bağlantıyı Apple'da da keser.
+    let appleCode: string | null = null;
+    setAppleBusy(true);
+    try {
+      appleCode = await appleAuthorizationForDeletion(auth.session?.user ?? null);
+    } catch (e) {
+      if (e instanceof SocialSignInCancelled) {
+        Alert.alert("Silme durduruldu", "Hesabın Apple ile bağlı. Silmek için Apple onayını tamamlaman gerekiyor.");
+        return;
+      }
+    } finally {
+      setAppleBusy(false);
+    }
+    del.mutate(appleCode, {
       onSuccess: () => {
         setDelOpen(false);
         void auth.signOut();
@@ -210,7 +225,7 @@ function AyarlarForm({ d }: { d: MeFull }) {
         </AppText>
       </Sheet>
 
-      <Sheet visible={delOpen} onClose={() => setDelOpen(false)} title="Hesabımı sil" footer={<Button title="Hesabı kalıcı olarak sil" variant="destructive" disabled={delText.trim().toLocaleUpperCase("tr") !== "SİL"} loading={del.isPending} onPress={deleteAccount} />}>
+      <Sheet visible={delOpen} onClose={() => setDelOpen(false)} title="Hesabımı sil" footer={<Button title="Hesabı kalıcı olarak sil" variant="destructive" disabled={delText.trim().toLocaleUpperCase("tr") !== "SİL"} loading={del.isPending || appleBusy} onPress={() => void deleteAccount()} />}>
         <Notice tone="warning" title="Geri alınamaz">
           İlerlemen, yanlışların, notların ve üyelik kaydın anonimleştirilir; giriş bilgilerin silinir. Mağaza aboneliğini ayrıca iptal etmen gerekir.
         </Notice>
