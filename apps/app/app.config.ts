@@ -45,6 +45,10 @@ const config: ExpoConfig = {
       // Paylaşım sayfasındaki "Görseli Kaydet" Fotoğraflar'a yazar; metin yoksa iOS uygulamayı
       // sonlandırır (Fable denetimi, 15 Kas 2026). Yalnız ekleme izni; arşiv okunmaz.
       NSPhotoLibraryAddUsageDescription: "Paylaşım kartını Fotoğraflar'a kaydedebilmen için.",
+      // Okuma izni metni: react-native-share'in Instagram paylaşımı kartı Fotoğraflar'a kaydedip
+      // oradan alır; expo-file-system ve Firebase de fotoğraf API'lerine başvurur. Metin yoksa
+      // App Store yüklemeyi reddeder (ITMS-90683, 2.0.0 (6), 15 Kas 2026).
+      NSPhotoLibraryUsageDescription: "Paylaşım kartını Instagram gibi uygulamalara gönderebilmen için Fotoğraflar'a erişim gerekir.",
     },
   },
   android: {
