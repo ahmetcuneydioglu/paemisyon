@@ -53,8 +53,11 @@ const config: ExpoConfig = {
   },
   android: {
     package: "com.paemisyon.paemisyon",
+    googleServicesFile: "./google-services.json",
     playStoreUrl: "https://play.google.com/store/apps/details?id=com.paemisyon.paemisyon",
-    versionCode: 1,
+    // versionCode EAS'ta uzaktan tutulur (appVersionSource: remote); burada yazılmaz. Flutter 1.x
+    // Play'de 1.1.0+3 ile yayında: ilk Android derlemesinden önce uzak sürüm Play'dekinin üstüne
+    // ayarlanır (`eas build:version:set -p android`), yoksa EAS 1'den başlar ve Play reddeder.
     adaptiveIcon: {
       backgroundColor: "#121A26",
       foregroundImage: "./assets/android-icon-foreground.png",
@@ -82,6 +85,7 @@ const config: ExpoConfig = {
     ["@react-native-firebase/app", { ios: { disableSPM: true } }],
     "@react-native-firebase/messaging",
     "./plugins/with-firebase-configure.js",
+    "./plugins/with-fcm-manifest-replace.js",
     ["expo-notifications", { color: "#E3804F", defaultChannel: "default" }],
     "expo-iap",
     ["expo-secure-store", { faceIDPermission: false }],

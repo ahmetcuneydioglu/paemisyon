@@ -16,6 +16,7 @@ import { ApiError, NetworkError } from "@/lib/api";
 import { readLocal, writeLocal } from "@/lib/local-store";
 import { enqueueAnswer, flushQueue } from "@/lib/offline-queue";
 import { useTheme } from "@/theme/ThemeProvider";
+import { useHardwareBack } from "@/lib/use-hardware-back";
 import { akiciMaddeMetni } from "@/lib/madde-metni";
 
 /** Saat erişimi render dışında kalsın (React Compiler kuralı); yalnız olay işleyicileri çağırır. */
@@ -513,6 +514,7 @@ export default function SeansScreen() {
       { text: "Çık", style: "destructive", onPress: leave },
     ]);
   }
+  useHardwareBack(confirmExit);
 
   const optionState = (id: string): OptionState => {
     if (isExam && !(reveal && current)) return answers[question?.questionId ?? ""] === id ? "selected" : "default";

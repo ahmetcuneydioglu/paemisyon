@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "626824764200",
+    "project_id": "paemisyon-29523",
+    "storage_bucket": "paemisyon-29523.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:626824764200:android:1d2c1f7aad6ea6427f8e1d",
+        "android_client_info": {
+          "package_name": "com.paemisyon.paemisyon"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDv7mcB8_c8ThUULtHQxYA6supEAN1_0jg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

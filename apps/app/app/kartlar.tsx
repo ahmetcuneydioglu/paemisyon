@@ -16,6 +16,7 @@ import { roomKeys } from "@/features/rooms/queries";
 import { ApiError, NetworkError } from "@/lib/api";
 import { dropQueuedFlashcardEvent, enqueueFlashcardEvent, flushFlashcardQueue } from "@/lib/offline-flashcards";
 import { useTheme } from "@/theme/ThemeProvider";
+import { useHardwareBack } from "@/lib/use-hardware-back";
 
 /** Saat erişimi render dışında (React Compiler kuralı); yalnız olay işleyicileri çağırır. */
 const saat = { simdi: () => Date.now() };
@@ -246,6 +247,7 @@ export default function KartlarScreen() {
       { text: "Çık", style: "destructive", onPress: leave },
     ]);
   }
+  useHardwareBack(phase === "done" ? leave : confirmExit);
 
   /* ---------------- Araçlar ---------------- */
   function toggleBookmark() {

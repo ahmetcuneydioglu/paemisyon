@@ -1,7 +1,7 @@
 import { useFocusEffect } from "expo-router";
 import { Mail } from "lucide-react-native";
 import { useCallback, useState } from "react";
-import { Alert, Linking, Switch, View } from "react-native";
+import { Alert, Linking, Platform, Switch, View } from "react-native";
 import { AppText, Card, Chip, ListRow, Notice, SectionHeader, Skeleton } from "@/components/ui";
 import { pushPermissionStatus, requestPushPermission } from "@/lib/push";
 import { useTheme } from "@/theme/ThemeProvider";
@@ -246,7 +246,15 @@ function Row({
           {subtitle}
         </AppText>
       </View>
-      <Switch accessibilityLabel={title} value={value} disabled={locked} onValueChange={onChange} trackColor={{ true: colors.accent }} />
+      {/* Android'de top rengi verilmezse Material temasının yeşili gelir (turuncu iz + yeşil top): iOS gibi beyaz top. */}
+      <Switch
+        accessibilityLabel={title}
+        value={value}
+        disabled={locked}
+        onValueChange={onChange}
+        trackColor={{ true: colors.accent, false: Platform.OS === "android" ? colors.line : undefined }}
+        thumbColor={Platform.OS === "android" ? "#FFFFFF" : undefined}
+      />
     </View>
   );
 }

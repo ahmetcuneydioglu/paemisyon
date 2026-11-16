@@ -40,6 +40,8 @@ export default function OkuScreen() {
   const visibleNo = useRef<string | null>(null);
   const savedNo = useRef<string | null>(null);
   const jumped = useRef(false);
+  const jumpTries = useRef(0);
+  const settle = useRef<ReturnType<typeof setTimeout> | null>(null);
 
   useEffect(() => {
     void readLocal<number>("reader.scale", 1).then((v) => setScaleIdx(SCALES.includes(v as (typeof SCALES)[number]) ? SCALES.indexOf(v as (typeof SCALES)[number]) : 1));
@@ -72,9 +74,28 @@ export default function OkuScreen() {
     if (first?.item) visibleNo.current = first.item.no;
   }, []);
 
+  // Hedefe hizalar; üstteki maddeler ilk çizimde gerçek boyuna uzayınca hedef aşağı kayar, bu yüzden
+  // son denemeden kısa süre sonra bir kez daha hizalanır.
+  const align = (index: number) => {
+    listRef.current?.scrollToIndex({ index, animated: false, viewPosition: 0 });
+    if (settle.current) clearTimeout(settle.current);
+    settle.current = setTimeout(() => listRef.current?.scrollToIndex({ index, animated: false, viewPosition: 0 }), 350);
+  };
+
   const scrollTo = (no: string) => {
     const idx = d?.articles.findIndex((a) => a.no === no) ?? -1;
-    if (idx >= 0) listRef.current?.scrollToIndex({ index: idx, animated: false, viewPosition: 0 });
+    if (idx < 0) return;
+    jumpTries.current = 0;
+    align(idx);
+  };
+
+  // Ölçülmemiş uzak maddeye (md 90) scrollToIndex başarısız olur; yalnız yeniden denemek liste o
+  // bölgeyi hiç çizmediği için hep başarısız kalıyor, okuyucu Madde 1'de duruyordu. Ölçülmüş en uzak
+  // maddeye atlanır (liste ilerisini çizer) ve hedef yeniden denenir; madde boyları çok farklı
+  // olduğundan ortalama boyla tahmini konum yetmiyor.
+  const onScrollToIndexFailed = (e: { index: number; highestMeasuredFrameIndex: number }) => {
+    listRef.current?.scrollToIndex({ index: e.highestMeasuredFrameIndex, animated: false, viewPosition: 0 });
+    if (jumpTries.current++ < 30) setTimeout(() => align(e.index), 60);
   };
 
   const cycleScale = () => {
@@ -137,7 +158,7 @@ export default function OkuScreen() {
           viewabilityConfig={{ itemVisiblePercentThreshold: 30 }}
           contentContainerStyle={{ paddingHorizontal: space.screenGutter, paddingBottom: insets.bottom + space.s8 }}
           initialNumToRender={8}
-          onScrollToIndexFailed={(e) => setTimeout(() => listRef.current?.scrollToIndex({ index: e.index, animated: false }), 200)}
+          onScrollToIndexFailed={onScrollToIndexFailed}
           onLayout={() => {
             if (!jumped.current && p.madde) {
               jumped.current = true;

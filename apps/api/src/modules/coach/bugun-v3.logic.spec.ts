@@ -3,6 +3,7 @@ import {
   gunlukPay,
   ROTA_EN_AZ,
   ROTA_EN_COK,
+  turAdi,
   type BugunV3Input,
 } from './bugun-v3.logic';
 import type { TodayTask } from './home-v2.types';
@@ -558,5 +559,15 @@ describe('Bugün v3 — hazır (başlanmamış) tur', () => {
       label: '10 soruluk tur',
       detail: 'T.C. Anayasası',
     });
+  });
+});
+
+describe('turAdi', () => {
+  it('kapsam adına tur ekler', () => {
+    expect(turAdi('Anayasa · Yürütme')).toBe('Anayasa · Yürütme turuna');
+  });
+  it('adı zaten tur olan kapsamda "turu turuna" demez', () => {
+    expect(turAdi('Koç turu')).toBe('Koç turuna');
+    expect(turAdi('Dönüş turu')).toBe('Dönüş turuna');
   });
 });

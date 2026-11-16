@@ -144,7 +144,7 @@ function sıradaki(input: BugunV3Input): NextStep {
     return {
       kind: 'resume',
       eyebrow: `SIRADAKİ · ${tur.scopeName}`,
-      title: `${tur.scopeName} turuna devam et`,
+      title: `${turAdi(tur.scopeName)} devam et`,
       reason: `${tur.answered}/${tur.total} · ${zamanOnce(tur.lastActivityAt, input.now)}`,
       badge: null,
       estimateMin: kalan > 0 ? dk(kalan) : null,
@@ -385,7 +385,11 @@ function rota(input: BugunV3Input, next: NextStep): RouteItem[] {
       kind: 'exam',
       label: ex.title,
       // Teslim edilmişse "şimdi" yanlış çağrı olur (13 Kas 2026 provası).
-      detail: up ? gunSaat(up.startAt, input.now) : input.exams.live?.attempted ? 'teslim edildi' : 'şimdi',
+      detail: up
+        ? gunSaat(up.startAt, input.now)
+        : input.exams.live?.attempted
+          ? 'teslim edildi'
+          : 'şimdi',
       estimateMin: null,
       done: Boolean(input.exams.live?.attempted),
       action: {
@@ -679,4 +683,12 @@ export function computeHomeV3(input: BugunV3Input): Omit<HomeV3, 'week' | 'today
   const nextStep = sıradaki(input);
   const route = rota(input, nextStep);
   return { nextStep, route, forYou: seninIcin(input, nextStep, route) };
+}
+
+/**
+ * "X turuna devam et" başlığı. Kapsam adı zaten tur ise ("Koç turu", "Dönüş turu") ikinci
+ * "turu" eklenmez: "Koç turu turuna" değil "Koç turuna" (Android turu bulgusu, 16 Kas 2026).
+ */
+export function turAdi(scopeName: string): string {
+  return /\bturu$/i.test(scopeName.trim()) ? `${scopeName.trim()}na` : `${scopeName} turuna`;
 }

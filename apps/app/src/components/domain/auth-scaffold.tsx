@@ -1,7 +1,7 @@
 import { useRouter } from "expo-router";
 import { ChevronLeft } from "lucide-react-native";
 import type { ReactNode } from "react";
-import { Linking, Pressable, ScrollView, View } from "react-native";
+import { KeyboardAvoidingView, Linking, Platform, Pressable, ScrollView, View } from "react-native";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { AppText } from "@/components/ui";
 import { LEGAL } from "@/lib/site";
@@ -11,7 +11,9 @@ import { useTheme } from "@/theme/ThemeProvider";
  * Giriş akışının form iskeleti (Figma "Yayın Öncesi — Açılış": E-posta, Kayıt, Şifremi unuttum,
  * Doğrula): üstte "‹ Geri" (44 pt), serif başlık + açıklama, kaydırılabilir gövde (klavye açılınca
  * içerik iOS'ta kendiliğinden yukarı kayar), altta isteğe bağlı sabit alan (yasal not, ikincil
- * bağlantı). Gezinme kök kapıdadır; bu iskelet yalnız geri gider.
+ * bağlantı). Gezinme kök kapıdadır; bu iskelet yalnız geri gider. Android'de pencere klavyeyle
+ * küçülmez (kenardan kenara) ve `automaticallyAdjustKeyboardInsets` yalnız iOS'tadır: gövde
+ * KeyboardAvoidingView ile klavye kadar kısalır, alttaki düğme kaydırılarak erişilir.
  */
 export function AuthScaffold({ title, subtitle, children, footer }: { title: string; subtitle?: string; children: ReactNode; footer?: ReactNode }) {
   const router = useRouter();
@@ -27,26 +29,28 @@ export function AuthScaffold({ title, subtitle, children, footer }: { title: str
           </AppText>
         </Pressable>
       </View>
-      <ScrollView
-        style={{ flex: 1 }}
-        contentContainerStyle={{ flexGrow: 1, paddingHorizontal: space.screenGutter, paddingTop: space.s4, paddingBottom: space.s6, gap: space.s6 }}
-        keyboardShouldPersistTaps="handled"
-        keyboardDismissMode="interactive"
-        automaticallyAdjustKeyboardInsets
-      >
-        <View style={{ gap: space.s2 }}>
-          <AppText variant="title" accessibilityRole="header">
-            {title}
-          </AppText>
-          {subtitle ? (
-            <AppText variant="bodySm" tone="soft">
-              {subtitle}
+      <KeyboardAvoidingView style={{ flex: 1 }} behavior="padding" enabled={Platform.OS === "android"}>
+        <ScrollView
+          style={{ flex: 1 }}
+          contentContainerStyle={{ flexGrow: 1, paddingHorizontal: space.screenGutter, paddingTop: space.s4, paddingBottom: space.s6, gap: space.s6 }}
+          keyboardShouldPersistTaps="handled"
+          keyboardDismissMode="interactive"
+          automaticallyAdjustKeyboardInsets
+        >
+          <View style={{ gap: space.s2 }}>
+            <AppText variant="title" accessibilityRole="header">
+              {title}
             </AppText>
-          ) : null}
-        </View>
-        {children}
-        {footer ? <View style={{ marginTop: "auto", paddingBottom: insets.bottom }}>{footer}</View> : null}
-      </ScrollView>
+            {subtitle ? (
+              <AppText variant="bodySm" tone="soft">
+                {subtitle}
+              </AppText>
+            ) : null}
+          </View>
+          {children}
+          {footer ? <View style={{ marginTop: "auto", paddingBottom: insets.bottom }}>{footer}</View> : null}
+        </ScrollView>
+      </KeyboardAvoidingView>
     </View>
   );
 }
