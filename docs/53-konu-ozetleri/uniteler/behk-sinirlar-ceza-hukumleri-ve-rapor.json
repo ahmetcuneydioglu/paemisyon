@@ -1,0 +1,556 @@
+{
+  "unit": {
+    "slug": "behk-sinirlar-ceza-hukumleri-ve-rapor",
+    "legislationSlug": "4982-sayili-bilgi-edinme-hakki-kanunu",
+    "topicId": "5c959129-bee5-4aca-bb94-c97fbc7eddf9",
+    "title": "Bilgi edinme hakkının sınırları, ceza hükümleri ve rapor",
+    "subtitle": "Kapsam dışı bilgi ve belgeler, ceza hükümleri, yıllık rapor zinciri ve yürütme",
+    "articleFrom": "15",
+    "articleTo": "33",
+    "readingMinutes": 13,
+    "sourceLabel": "AI özeti — 4982 Sayılı Bilgi Edinme Hakkı Kanunu, md 15, 17–23, 25–30, 33",
+    "articleNos": [
+      "15",
+      "17",
+      "18",
+      "19",
+      "20",
+      "21",
+      "22",
+      "23",
+      "25",
+      "26",
+      "27",
+      "28",
+      "29",
+      "30",
+      "33"
+    ],
+    "generatedBy": "claude-opus-5-5 (ozet-uret.ts)",
+    "sortOrder": 2
+  },
+  "blocks": [
+    {
+      "type": "concept",
+      "title": "Hak geniş, ama sınırı da var",
+      "body": "Bilgi edinme hakkı geniştir, ama sınırsız değildir. Kanun bazı bilgi veya belgeleri açıkça “bu Kanun kapsamı dışında” sayar. Ülkenin ekonomik çıkarlarına zarar verecek belgeler ve istihbarat belgeleri bunlara örnektir. Dikkat etmen gereken incelik şu: bazı istisnaların içinde kendi istisnası da vardır. İstihbarat belgeleri kişilerin çalışma hayatını ve meslek onurunu etkiliyorsa yeniden kapsama girer. Kurum içi düzenlemelerde de düzenlemeden etkilenen çalışanların hakkı saklıdır. Gizliliği kaldırılan belge ise ancak başka istisnaya takılmıyorsa başvuruya açılır. Soruları çözerken hep aynı soruyu sor: kural ne, istisnası ne?",
+      "articleRefs": [
+        "17",
+        "18",
+        "25",
+        "28"
+      ],
+      "derivedNumbers": [],
+      "counterNumbers": []
+    },
+    {
+      "type": "rule",
+      "title": "Yargı denetimi dışındaki idarî işlemler",
+      "body": "**Kural:** Yargı denetimi dışında kalan idarî işlemlerden kişinin **çalışma hayatını ve mesleki onurunu** etkileyecek nitelikte olanlar bu Kanun kapsamına dahildir.\n\n**Sınır:** Bu şekilde sağlanan bilgi edinme hakkı, işlemin **yargı denetimine açılması sonucunu doğurmaz**.",
+      "articleRefs": [
+        "15"
+      ],
+      "derivedNumbers": [],
+      "counterNumbers": []
+    },
+    {
+      "type": "rule",
+      "title": "Ülkenin ekonomik çıkarları",
+      "body": "**Kapsam dışıdır:** Açıklanması ya da zamanından önce açıklanması hâlinde aşağıdaki sonuçlardan birine yol açacak bilgi veya belgeler:\n- ülkenin **ekonomik çıkarlarına zarar** verecek,\n- **haksız rekabet ve kazanca** sebep olacak.\n\nZarar yalnız açıklamadan doğmaz. Bilginin **zamanından önce açıklanması** da yeterlidir.",
+      "articleRefs": [
+        "17"
+      ],
+      "derivedNumbers": [],
+      "counterNumbers": []
+    },
+    {
+      "type": "rule",
+      "title": "İstihbarata ilişkin bilgi veya belgeler",
+      "body": "**Kural:** Sivil ve askerî istihbarat birimlerinin görev ve faaliyetlerine ilişkin bilgi veya belgeler bu Kanun kapsamı dışındadır.\n\n**İstisna:** Bu bilgi ve belgeler kişilerin **çalışma hayatını ve meslek onurunu** etkileyecek nitelikteyse bilgi edinme hakkı kapsamı içindedir.",
+      "articleRefs": [
+        "18"
+      ],
+      "derivedNumbers": [],
+      "counterNumbers": []
+    },
+    {
+      "type": "trap",
+      "title": "Çalışma hayatı ve meslek onuru: kapıyı açan anahtar",
+      "body": "Md 15 ve md 18'de aynı ölçüt karşına çıkar: kişinin çalışma hayatını ve meslek onurunu etkilemek. Bu ölçüt varsa hem yargı denetimi dışındaki idarî işlem hem de istihbarat belgesi bilgi edinme hakkının içine girer. Sorular seni şu noktalarda yakalamaya çalışır:\n- “Yargı denetimi dışında olduğu için hiçbir bilgi istenemez” — yanlış.\n- “Bilgi verilince işlem yargı denetimine açılır” — yanlış. Md 15 bunun tersini söyler.\n- “Yalnız mahkeme kararıyla”, “ilgili görevlinin yazılı rızasıyla”, “yalnız Kurul bilgi verir” — metinde böyle bir şart yok.\n- Metin sivil ve askerî istihbaratı ayırmaz. “On yıl geçince kendiliğinden açılır” diye bir kural da yoktur.",
+      "articleRefs": [
+        "15",
+        "18"
+      ],
+      "derivedNumbers": [],
+      "counterNumbers": [
+        10
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "İdarî soruşturmaya ilişkin bilgi veya belgeler",
+      "body": "Kurum ve kuruluşların yetkili birimlerince yürütülen idarî soruşturmalarla ilgili bilgi veya belgeler **kapsam dışıdır**. Şart şudur: açıklanmaları veya zamanından önce açıklanmaları şu sonuçlardan birini doğurmalıdır:\n- a) Kişilerin özel hayatına **açıkça haksız müdahale**,\n- b) Kişilerin veya **soruşturmayı yürüten görevlilerin** hayatını ya da güvenliğini tehlikeye sokma,\n- c) **Soruşturmanın güvenliğini** tehlikeye düşürme,\n- d) Gizli kalması gereken **bilgi kaynağının açığa çıkması**. Soruşturmayla ilgili benzeri bilgi ve bilgi kaynaklarının temin edilmesini güçleştirmek de bu bende girer.",
+      "articleRefs": [
+        "19"
+      ],
+      "derivedNumbers": [],
+      "counterNumbers": []
+    },
+    {
+      "type": "rule",
+      "title": "Adlî soruşturma ve kovuşturmaya ilişkin bilgi veya belgeler",
+      "body": "Açıklanması veya zamanından önce açıklanması hâlinde şu nitelikteki bilgi veya belgeler **kapsam dışıdır**:\n- a) Suç işlenmesine yol açacak,\n- b) Suçların önlenmesi ve soruşturulması ya da suçluların kanunî yollarla yakalanıp kovuşturulmasını tehlikeye düşürecek,\n- c) Yargılama görevinin gereğince yerine getirilmesini engelleyecek,\n- d) Hakkında dava açılmış kişinin adil yargılanma hakkını ihlâl edecek.\n\n**Saklı hükümler:** Şu kanunların ve diğer özel kanunların hükümleri saklıdır:\n- 1412 sayılı Ceza Muhakemeleri Usulü Kanunu,\n- 1086 sayılı Hukuk Usulü Muhakemeleri Kanunu,\n- 2577 sayılı İdari Yargılama Usulü Kanunu.",
+      "articleRefs": [
+        "20"
+      ],
+      "derivedNumbers": [],
+      "counterNumbers": []
+    },
+    {
+      "type": "trap",
+      "title": "Listede olmayan sakıncayı yakala",
+      "body": "Soru “…kapsam dışı kalma nedenleri arasında yer almaz?” diye soruyorsa, Kanunun saydığı sakıncaları iyi bil. Dışarıdan eklenen şık o zaman hemen göze batar:\n- **Md 17:** ekonomik çıkarlara zarar, haksız rekabet ve kazanç. “Kamu kurumunun gelir kaybı” sayılmaz.\n- **Md 19:** özel hayata açıkça haksız müdahale, kişilerin ve görevlilerin güvenliği, soruşturmanın güvenliği, bilgi kaynağı. “Kurumun kamuoyu nezdindeki itibarı” sayılmaz.\n- **Md 20:** suç işlenmesi, suçların önlenmesi ve suçluların yakalanması, yargılama görevi, adil yargılanma. “Soruşturma makamının eleştirilmesi” de “kurumun iş yükü” de sayılmaz.\n\nMd 19'da aranan şey, açıklamanın sayılan sakıncalardan birine yol açmasıdır. Soruşturmanın tamamlanmamış olması ya da belgeye gizlilik derecesi verilmesi gibi şartlar metinde yok. Md 20'de öncüllü soru gelirse öncülleri bentlerle karşılaştır. Hepsi bentlerde geçiyorsa hepsini işaretle.",
+      "articleRefs": [
+        "17",
+        "19",
+        "20"
+      ],
+      "derivedNumbers": [],
+      "counterNumbers": []
+    },
+    {
+      "type": "rule",
+      "title": "Özel hayatın gizliliği",
+      "body": "**Kural:** Kişinin izin verdiği hâller saklıdır. Bunun dışında, özel hayatın gizliliği kapsamında açıklanması hâlinde kişinin şu değerlerine **haksız müdahale** oluşturacak bilgi veya belgeler bilgi edinme hakkı kapsamı dışındadır:\n- sağlık bilgileri ile özel ve aile hayatı,\n- şeref ve haysiyeti,\n- meslekî ve ekonomik değerleri.\n\n**İstisna — kamu yararı:** Kamu yararının gerektirdiği hâllerde kişisel bilgi veya belgeler kurum ve kuruluşlar tarafından açıklanabilir. Bunun için şu koşullar birlikte aranır:\n- ilgili kişiye **en az yedi gün önceden** haber verilmesi,\n- ilgilinin **yazılı rızasının** alınması.",
+      "articleRefs": [
+        "21"
+      ],
+      "derivedNumbers": [],
+      "counterNumbers": []
+    },
+    {
+      "type": "trap",
+      "title": "Kamu yararı rızayı ortadan kaldırmaz",
+      "body": "“Kamu yararı varsa kişisel bilgi her durumda açıklanır” cümlesini görürsen hemen ele. Kamu yararı kapıyı aralar, ama ilgilinin yazılı rızası olmadan açmaz. Sürede ve rızanın biçiminde de oyun yapılır:\n- “Üç gün önceden haber + sözlü rıza” — yanlış.\n- “On beş iş günü önceden haber” — yanlış.\n- “Kurul kararı ve Cumhuriyet savcısının onayı” ya da “mahkeme kararı ve amir emri” — metinde yok.\n\nDoğrusu: **en az yedi gün önceden haber + yazılı rıza**. Korumanın öznesi kişidir. Sağlık bilgileri metinde adıyla sayılır. Kurumun faaliyet raporu ya da teşkilat şeması ise bu başlığa girmez.",
+      "articleRefs": [
+        "21"
+      ],
+      "derivedNumbers": [],
+      "counterNumbers": [
+        3,
+        15
+      ]
+    },
+    {
+      "type": "numbers",
+      "title": "Ara tablo: md 19–21",
+      "rows": [
+        {
+          "label": "Kamu yararı için kişisel bilgide önceden haber süresi",
+          "value": "En az 7 gün",
+          "refs": [
+            "21"
+          ]
+        },
+        {
+          "label": "Kamu yararı açıklamasında rızanın biçimi",
+          "value": "Yazılı",
+          "refs": [
+            "21"
+          ]
+        },
+        {
+          "label": "Saklı tutulan Ceza Muhakemeleri Usulü Kanunu",
+          "value": "1412 sayılı",
+          "refs": [
+            "20"
+          ]
+        },
+        {
+          "label": "Saklı tutulan Hukuk Usulü Muhakemeleri Kanunu",
+          "value": "1086 sayılı",
+          "refs": [
+            "20"
+          ]
+        },
+        {
+          "label": "Saklı tutulan İdari Yargılama Usulü Kanunu",
+          "value": "2577 sayılı",
+          "refs": [
+            "20"
+          ]
+        },
+        {
+          "label": "İdarî soruşturmada sayılan sakıncalar",
+          "value": "a–d bentleri",
+          "refs": [
+            "19"
+          ]
+        },
+        {
+          "label": "Adlî soruşturma ve kovuşturmada sayılan nitelikler",
+          "value": "a–d bentleri",
+          "refs": [
+            "20"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "19",
+        "20",
+        "21"
+      ],
+      "derivedNumbers": [],
+      "counterNumbers": []
+    },
+    {
+      "type": "rule",
+      "title": "Haberleşmenin gizliliği ve ticarî sır",
+      "body": "**Md 22:** Haberleşmenin gizliliği esasını ihlâl edecek bilgi veya belgeler bu Kanun kapsamı dışındadır.\n\n**Md 23 — kapsam dışı olanlar:**\n- Kanunlarda **ticarî sır** olarak nitelenen bilgi veya belgeler,\n- Kurum ve kuruluşların **gerçek veya tüzel kişilerden gizli kalması kaydıyla** sağladığı ticarî ve malî bilgiler.",
+      "articleRefs": [
+        "22",
+        "23"
+      ],
+      "derivedNumbers": [],
+      "counterNumbers": []
+    },
+    {
+      "type": "trap",
+      "title": "Ticarî sır her malî bilgi değildir",
+      "body": "Ticarî sır sorularında kilit ifadeler iki tanedir: **“kanunlarda ticarî sır olarak nitelenen”** ve **“gizli kalması kaydıyla sağlanan”**. Şıklarda şunlar seni yanıltmasın:\n- “Kurumların bütün malî bilgileri ticarî sırdır” ya da “kurum personelinin hazırladığı her malî rapor” — yanlış. Md 23, gerçek veya tüzel kişilerden gizlilik kaydıyla sağlanan bilgiden söz eder.\n- “Yalnız tüzel kişilere ait bilgiler” — yanlış. Metinde gerçek kişiler de var.\n- “İlgiliye haber verildikten yedi gün sonra açıklanır” — bu süre md 21'deki kişisel bilgilere aittir, ticarî sırra değil.\n\nMd 22 de dolambaçsızdır: haberleşmenin gizliliğini ihlâl edecek belge doğrudan kapsam dışıdır. Metin bu belgeler için mahkeme kararı ya da Kurul izniyle açılma yolu öngörmez.",
+      "articleRefs": [
+        "21",
+        "22",
+        "23"
+      ],
+      "derivedNumbers": [],
+      "counterNumbers": []
+    },
+    {
+      "type": "rule",
+      "title": "Kurum içi düzenlemeler",
+      "body": "**Kapsam dışı olması için şu koşullar birlikte aranır:**\n- Düzenleme **kamuoyunu ilgilendirmemeli**,\n- Düzenleme **sadece kendi personeli ile kurum içi uygulamalarına** ilişkin olmalı.\n\n**İstisna:** Söz konusu düzenlemeden **etkilenen kurum çalışanlarının** bilgi edinme hakları saklıdır.",
+      "articleRefs": [
+        "25"
+      ],
+      "derivedNumbers": [],
+      "counterNumbers": []
+    },
+    {
+      "type": "trap",
+      "title": "Kurum içi düzenleme “mutlak gizli” değildir",
+      "body": "Kurum içi düzenlemeler genel kural olarak kapsam dışıdır. Ama düzenlemeden etkilenen çalışan yine de bilgi isteyebilir. “Hiçbir koşulda konu olamaz” şıkkı bu yüzden yanlıştır. Şıklarda uydurma koşullar da karşına çıkar:\n- gizlilik derecesi taşımak ya da yayımlanmamış olmak,\n- Resmî Gazete'de yayımlanmış olmak,\n- disiplin hükmü içermek,\n- Kurulun önceden karar vermesi,\n- “yalnız sendikalar erişir”,\n- “beş yıldan eski olmak”.\n\nBunların hiçbiri md 25'te yok. Aranan yalnız şudur: kamuoyunu ilgilendirmemek ve sadece personel ile kurum içi uygulamalara ilişkin olmak.",
+      "articleRefs": [
+        "25"
+      ],
+      "derivedNumbers": [],
+      "counterNumbers": [
+        5
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Görüş, bilgi notu, tavsiye ve tavsiye talebi",
+      "body": "**Md 26 (kurumun elde ettiği görüşler):** Kurum ve kuruluşların faaliyetlerini yürütmek üzere elde ettikleri görüş, bilgi notu, teklif ve tavsiye niteliğindeki bilgi veya belgeler, kurum ve kuruluş tarafından **aksi kararlaştırılmadıkça** bilgi edinme hakkı **kapsamındadır**.\n\n**Md 26 (uzman görüşleri):** Bazı kişi, birim ya da kurumların bilimsel, kültürel, istatistik, teknik, tıbbî, malî, hukukî ve benzeri uzmanlık alanlarında **yasal olarak görüş verme yükümlülüğü** vardır. Bunların görüşleri, kurum ve kuruluşların alacakları **kararlara esas teşkil etmesi kaydıyla** bilgi edinme istemlerine açıktır.\n\n**Md 27:** Tavsiye ve mütalaa **talepleri** bu Kanun kapsamı dışındadır.",
+      "articleRefs": [
+        "26",
+        "27"
+      ],
+      "derivedNumbers": [],
+      "counterNumbers": []
+    },
+    {
+      "type": "rule",
+      "title": "Gizliliği kaldırılan bilgi veya belgeler",
+      "body": "Gizliliği kaldırılmış bilgi veya belgeler, bu Kanunda belirtilen **diğer istisnalar kapsamına girmiyorsa** bilgi edinme başvurularına açık hâle gelir.\n\n- Gizliliğin kalkması tek başına yetmez. Belge başka istisnaya da takılmamalıdır.\n- Metin “yayımlanır” demez, “başvurulara açık hâle gelir” der.\n- Metinde ilgilinin rızası, Kurul onayı ya da bekleme süresi aranmaz.",
+      "articleRefs": [
+        "28"
+      ],
+      "derivedNumbers": [],
+      "counterNumbers": []
+    },
+    {
+      "type": "rule",
+      "title": "Ceza hükümleri",
+      "body": "**Görevliler için:** Bu Kanunun uygulanmasında **ihmâli, kusuru veya kastı** bulunan memurlara ve diğer kamu görevlilerine **tâbi oldukları mevzuatta yer alan disiplin cezaları** uygulanır.\n\n**Saklı hüküm:** İşledikleri fiiller genel hükümler çerçevesinde **ceza kovuşturması** gerektirebilir. Bu husus saklıdır.\n\n**Erişenler için:** Bu Kanunla erişilen bilgi ve belgeler **ticarî amaçla çoğaltılamaz ve kullanılamaz**.",
+      "articleRefs": [
+        "29"
+      ],
+      "derivedNumbers": [],
+      "counterNumbers": []
+    },
+    {
+      "type": "trap",
+      "title": "Disiplin, kovuşturma ve ticarî kullanım",
+      "body": "Md 29'u şöyle aklında tut: disiplin cezası uygulanır, ceza kovuşturması saklıdır, ticarî kullanım yasaktır. Öncüllü soruda “ticarî amaçla çoğaltılabilir” öncülünü görürsen ele. Geriye kalan disiplin ve kovuşturma öncülleri doğrudur.\n\nYanıltıcı şıklar şunlardır:\n- “yalnız adli para cezası”,\n- “doğrudan memuriyetten çıkarma”,\n- “Kurulun belirleyeceği idari para cezası”,\n- “görevden uzaklaştırma ve tazminat”.\n\nKanun ceza türünü kendisi belirlemez. Görevliyi tâbi olduğu mevzuattaki disiplin cezalarına gönderir. Erişilen bilgiyle ilgili metindeki yasak da yalnız ticarî amaçla çoğaltma ve kullanmadır.",
+      "articleRefs": [
+        "29"
+      ],
+      "derivedNumbers": [],
+      "counterNumbers": []
+    },
+    {
+      "type": "rule",
+      "title": "Yıllık rapor zinciri ve yürütme",
+      "body": "**Raporun içeriği:** Kurum ve kuruluşlar, bir önceki yıla ait olmak üzere şunları gösteren bir rapor hazırlar:\n- a) Kendilerine yapılan bilgi edinme başvurularının sayısı,\n- b) Olumlu cevaplanarak bilgi veya belgelere erişim sağlanan başvuru sayısı,\n- c) Reddedilen başvuru sayısı ve bunların dağılımını gösteren istatistik bilgiler,\n- d) Gizli ya da sır niteliğindeki bilgiler çıkarılarak ya da ayrılarak erişim sağlanan başvuru sayısı,\n- e) Ret üzerine itiraz edilen başvuru sayısı ile bunların sonuçları.\n\n**Zincir:**\n- Kurumlar raporlarını her yıl **Şubat ayının sonuna kadar** Bilgi Edinme Değerlendirme Kuruluna gönderir.\n- Bağlı, ilgili ve ilişkili kurumlar raporlarını **bağlı, ilgili ya da ilişkili oldukları bakanlık vasıtasıyla** iletir.\n- Kurul genel raporunu, kurum raporlarıyla birlikte her yıl **Nisan ayının sonuna kadar** TBMM'ye gönderir.\n- TBMM Başkanlığı raporları **takip eden iki ay içinde** kamuoyuna açıklar.\n\nŞubat'ı Mart'la, iki ayı üç ayla karıştırma.\n\n**Md 33:** Bu Kanun hükümlerini **Cumhurbaşkanı** yürütür.",
+      "articleRefs": [
+        "30",
+        "33"
+      ],
+      "derivedNumbers": [],
+      "counterNumbers": [
+        3
+      ]
+    },
+    {
+      "type": "numbers",
+      "title": "Son tablo: tarihler, süreler ve yetkili",
+      "rows": [
+        {
+          "label": "Raporun kapsadığı dönem",
+          "value": "Bir önceki yıl",
+          "refs": [
+            "30"
+          ]
+        },
+        {
+          "label": "Raporda gösterilen kalemler",
+          "value": "a–e bentleri",
+          "refs": [
+            "30"
+          ]
+        },
+        {
+          "label": "Kurumların raporu Kurula gönderme sınırı",
+          "value": "Her yıl Şubat ayının sonu",
+          "refs": [
+            "30"
+          ]
+        },
+        {
+          "label": "Bağlı, ilgili ve ilişkili kurumların rapor yolu",
+          "value": "Bakanlık vasıtasıyla",
+          "refs": [
+            "30"
+          ]
+        },
+        {
+          "label": "Kurulun genel raporu TBMM'ye gönderme sınırı",
+          "value": "Her yıl Nisan ayının sonu",
+          "refs": [
+            "30"
+          ]
+        },
+        {
+          "label": "TBMM Başkanlığınca kamuoyuna açıklama",
+          "value": "Takip eden 2 ay içinde",
+          "refs": [
+            "30"
+          ]
+        },
+        {
+          "label": "Kamu yararı için kişisel bilgide önceden haber",
+          "value": "En az 7 gün + yazılı rıza",
+          "refs": [
+            "21"
+          ]
+        },
+        {
+          "label": "Kanunu yürüten",
+          "value": "Cumhurbaşkanı",
+          "refs": [
+            "33"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "21",
+        "30",
+        "33"
+      ],
+      "derivedNumbers": [],
+      "counterNumbers": []
+    },
+    {
+      "type": "compare",
+      "title": "Kurumun elde ettiği görüş mü, tavsiye ve mütalaa talebi mi?",
+      "rows": [
+        {
+          "aspect": "Konu",
+          "left": "Kurumun faaliyetlerini yürütmek üzere elde ettiği görüş, bilgi notu, teklif ve tavsiye niteliğindeki bilgi veya belgeler",
+          "right": "Tavsiye ve mütalaa talepleri",
+          "refs": [
+            "26",
+            "27"
+          ]
+        },
+        {
+          "aspect": "Kanun karşısındaki durum",
+          "left": "Bilgi edinme hakkı kapsamında",
+          "right": "Bu Kanun kapsamı dışında",
+          "refs": [
+            "26",
+            "27"
+          ]
+        },
+        {
+          "aspect": "Değişebilir mi?",
+          "left": "Kurum ve kuruluş aksini kararlaştırabilir",
+          "right": "Metinde istisna öngörülmemiş",
+          "refs": [
+            "26",
+            "27"
+          ]
+        },
+        {
+          "aspect": "Uzman görüşleri",
+          "left": "Yasal görüş verme yükümlülüğü bulunanların görüşleri, kurum kararlarına esas teşkil etmesi kaydıyla istemlere açık",
+          "right": "—",
+          "refs": [
+            "26"
+          ]
+        },
+        {
+          "aspect": "Aranmayan koşullar",
+          "left": "Hazırlayanın rızası, nihai karar, süre geçmesi, Kurul yayımı, oy birliği ya da görüş sahibinin kamu görevlisi olması aranmaz",
+          "right": "Görüş ve tavsiyelerle aynı kurala bağlı değildir",
+          "refs": [
+            "26",
+            "27"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "26",
+        "27"
+      ],
+      "derivedNumbers": [],
+      "counterNumbers": []
+    },
+    {
+      "type": "exam_stats",
+      "title": "Sınav der ki",
+      "rows": [
+        {
+          "label": "Bu ünitenin maddelerinden yayındaki soru",
+          "value": "27",
+          "refs": [
+            "15",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22",
+            "23",
+            "25",
+            "26",
+            "27",
+            "28",
+            "29",
+            "30",
+            "33"
+          ]
+        },
+        {
+          "label": "md 20 — Adlî soruşturma ve kovuşturmaya ilişkin bilgi veya belgeler",
+          "value": "3 soru",
+          "refs": [
+            "20"
+          ]
+        },
+        {
+          "label": "md 21 — Özel hayatın gizliliği",
+          "value": "3 soru",
+          "refs": [
+            "21"
+          ]
+        },
+        {
+          "label": "md 26 — Kurum içi görüş, bilgi notu ve tavsiyeler",
+          "value": "3 soru",
+          "refs": [
+            "26"
+          ]
+        },
+        {
+          "label": "md 29 — Ceza hükümleri",
+          "value": "3 soru",
+          "refs": [
+            "29"
+          ]
+        },
+        {
+          "label": "md 19 — İdarî soruşturmaya ilişkin bilgi veya belgeler",
+          "value": "2 soru",
+          "refs": [
+            "19"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "15",
+        "17",
+        "18",
+        "19",
+        "20",
+        "21",
+        "22",
+        "23",
+        "25",
+        "26",
+        "27",
+        "28",
+        "29",
+        "30",
+        "33"
+      ],
+      "generated": true
+    },
+    {
+      "type": "bridge",
+      "title": "Bu üniteden soru çöz",
+      "articleRefs": [
+        "15",
+        "17",
+        "18",
+        "19",
+        "20",
+        "21",
+        "22",
+        "23",
+        "25",
+        "26",
+        "27",
+        "28",
+        "29",
+        "30",
+        "33"
+      ],
+      "generated": true,
+      "rows": [
+        {
+          "label": "Madde kapsamlı seans",
+          "value": "md 15, 17–23, 25–30, 33, 10 soru",
+          "refs": [
+            "15",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22",
+            "23",
+            "25",
+            "26",
+            "27",
+            "28",
+            "29",
+            "30",
+            "33"
+          ]
+        }
+      ]
+    }
+  ]
+}
