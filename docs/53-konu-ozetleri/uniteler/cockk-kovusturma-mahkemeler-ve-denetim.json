@@ -1,0 +1,481 @@
+{
+  "unit": {
+    "slug": "cockk-kovusturma-mahkemeler-ve-denetim",
+    "legislationSlug": "5395-sayili-cocuk-koruma-kanunu",
+    "topicId": "48443974-0207-4ac2-b51a-34ba2a7b8070",
+    "title": "Kovuşturma, mahkemeler ve denetim",
+    "subtitle": "Çocuk mahkemeleri, çocuk bürosu, kolluğun çocuk birimi, sosyal inceleme, denetim ve tedbirleri yerine getiren kurumlar",
+    "articleFrom": "23",
+    "articleTo": "45",
+    "readingMinutes": 12,
+    "sourceLabel": "AI özeti — 5395 Sayılı Çocuk Koruma Kanunu, md 23, 25, 28, 30, 31, 33–35, 39–41, 45",
+    "articleNos": [
+      "23",
+      "25",
+      "28",
+      "30",
+      "31",
+      "33",
+      "34",
+      "35",
+      "39",
+      "40",
+      "41",
+      "45"
+    ],
+    "generatedBy": "claude-opus-5-5 (ozet-uret.ts)",
+    "sortOrder": 2
+  },
+  "blocks": [
+    {
+      "type": "concept",
+      "title": "Çocuğa özel bir adalet zinciri",
+      "body": "Bu ünitede çocuğun yargılandığı ve izlendiği sürecin her halkasını göreceksin. Yargılamayı çocuk mahkemesi ya da çocuk ağır ceza mahkemesi yapar. Soruşturmayı çocuk bürosu yürütür. Sahadaki ilk temas kolluğun çocuk birimindedir. Mahkemenin yanında ise sosyal çalışma görevlisi vardır: sosyal incelemeyi yapar, raporunu sunar. Karardan sonra denetim ve koruyucu-destekleyici tedbirler devreye girer; bunları da belirli kurumlar yerine getirir. Soruların çoğu bu aktörlerin görevlerini birbirine karıştırır. Okurken her bilgiye şu üç soruyu sor: kim yapıyor, ne yapıyor, kime bildiriyor?",
+      "articleRefs": [
+        "25",
+        "30",
+        "31",
+        "33",
+        "35",
+        "39",
+        "45"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Hükmün açıklanmasının geri bırakılması",
+      "body": "**Kural:** Çocuğa yüklenen suçtan yapılan yargılama sonunda Ceza Muhakemesi Kanunundaki koşullar varsa mahkeme, hükmün açıklanmasının geri bırakılmasına karar verebilir.\n\n**Çocuğa özgü denetim süresi:** **üç yıl**.\n\n**Yönlendirme tedbirleri:** Adli süreçteki çocuk hakkında bu karar verilirse, 5/A maddesindeki yönlendirme tedbirlerinden uygun görülen biri veya birkaçı da uygulanır.\n- Bu tedbirler **denetimli serbestlik tedbiri olarak** uygulanır.\n- Yükümlülükleri **5/A maddesinde belirtilen kurumlar** yerine getirir.\n\n**İstisna:** Suç nedeniyle mağdurun veya kamunun uğradığı zarar **az** ise, bu kararın verilebilmesi için zararın giderilmesi şartı aranmayabilir.",
+      "articleRefs": [
+        "23"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Geri bırakma kararında iki kritik eşleşme",
+      "body": "Doğru eşleşme şudur: yönlendirme tedbirleri **denetimli serbestlik tedbiri olarak** uygulanır ve **5/A maddesindeki kurumlarca** yerine getirilir. Bu iki parçadan biri bozulmuşsa şık yanlıştır. “Denetimli serbestlik müdürlüğünce” ifadesi tuzaktır. “Adli kontrol tedbiri” ve “koruyucu ve destekleyici tedbir” ifadeleri de tuzaktır.\n\nZarar az ama henüz giderilmemişse mahkeme yine de geri bırakma kararı verebilir. Bunun için mağdurun rızası aranmaz. Mahkeme bu durumda başka bir kurala, örneğin kamu davasının ertelenmesine de geçmez.",
+      "articleRefs": [
+        "23"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Çocuk mahkemeleri ve çocuk ağır ceza mahkemeleri",
+      "body": "**Çocuk mahkemesi**\n- **Tek hâkimden** oluşur.\n- **Her il merkezinde** kurulur.\n- İlçelerde de kurulabilir. Bunun için bölgenin coğrafi durumu ve iş yoğunluğu gözetilir, Hâkimler ve Savcılar Yüksek Kurulunun olumlu görüşü alınır.\n- İş durumu gerektirirse birden fazla dairesi oluşturulabilir. Daireler numaralandırılır.\n\n**Çocuk ağır ceza mahkemesi**\n- Bir başkan ile yeteri kadar üye bulunur.\n- Mahkeme **bir başkan ve iki üye** ile toplanır.\n- Kuruluş yerleri coğrafi durum ve iş yoğunluğuna göre belirlenir. Hâkimler ve Savcılar Yüksek Kurulunun olumlu görüşü alınarak **kurulur**.\n- Birden fazla dairesi oluşturulabilir. Daireler numaralandırılır.",
+      "articleRefs": [
+        "25"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Duruşmada savcı var mı?",
+      "body": "Bu soru sınavda tekrar tekrar geliyor. Çocuk mahkemelerinde yapılan duruşmalarda Cumhuriyet savcısı **bulunmaz**. “Bulunur” diyen şık, sorunun aradığı yanlış ifadedir.\n\nAma savcı tamamen dışarıda değildir. Mahkemelerin bulunduğu yerlerdeki Cumhuriyet savcıları, çocuk mahkemesi kararlarına karşı **kanun yoluna başvurabilir**.\n\nKuruluş kuralını da karıştırma: il merkezinde kuruluş kesindir. İlçede kuruluş ise Hâkimler ve Savcılar Yüksek Kurulunun olumlu görüşüne bağlı bir “kurulabilir” hâlidir.",
+      "articleRefs": [
+        "25"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Hâkimlerin atanmaları",
+      "body": "**Kim atanır?** Hâkimler ve Cumhuriyet savcıları arasından şu niteliklere bakılarak seçilir:\n- atanacağı bölgeye veya bir alt bölgeye hak kazanmış,\n- adlî yargıda görevli,\n- tercihan çocuk hukuku alanında uzmanlaşmış,\n- çocuk psikolojisi ve sosyal hizmet alanlarında eğitim almış olanlar.\n\n**Kim atar?** Hâkimler ve Savcılar Yüksek Kurulu.\n\n**Öncelik:** İstekli olanlara ve daha önce bu görevlerde bulunmuş olanlara tanınır.\n\n**Hâkim görevine gelemezse:** Yerine o yerdeki hâkimlerden hangisinin bakacağını **adlî yargı adalet komisyonu başkanı** belirler. Bu yetki, hâkim görevine başlayıncaya veya Kurul yetkilendirme yapıncaya kadar sürer. Belirlerken aranan nitelikler de gözetilir.\n\n**Dikkat:** Bu belirlemeyi Cumhuriyet başsavcısı yapmaz.",
+      "articleRefs": [
+        "28"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Çocuk bürosunun görevleri",
+      "body": "Çocuk bürosunun görevleri şunlardır:\n1. Adli süreçteki çocuklar hakkındaki **soruşturma işlemlerini** yürütmek.\n2. Tedbir gereken durumlarda **gecikmeksizin** tedbir alınmasını sağlamak.\n3. Destek hizmetleri için ilgili kamu kurumları ve sivil toplum kuruluşlarıyla işbirliği yapmak. Bu hizmetler; korunma ihtiyacı olan, suç mağduru veya adli süreçteki çocuklardan yardıma, eğitime, işe, barınmaya ihtiyacı olan ya da uyum güçlüğü çekenler içindir. Bu durumları çocukları korumakla görevli kurumlara bildirmek de bu görevin parçasıdır.\n4. Bu Kanun ve diğer kanunlarla verilen görevleri yerine getirmek.\n\n**İstisna:** Gecikmesinde sakınca bulunan hâllerde bu görevleri, çocuk bürosunda görevli **olmayan** Cumhuriyet savcıları da yerine getirebilir. Madde bu hâlde kolluğu ya da hâkimi değil, büroda görevli olmayan Cumhuriyet savcılarını anar.",
+      "articleRefs": [
+        "30"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Kolluğun çocuk birimi",
+      "body": "**Öncelik:** Çocuklarla ilgili kolluk görevi öncelikle kolluğun çocuk birimlerince yerine getirilir.\n\n**Bildirim:** İşleme başlandığında durum şu kişilere ve kurumlara bildirilir:\n- veli, vasi veya çocuğun bakımını üstlenen kimse,\n- baro,\n- Sosyal Hizmetler ve Çocuk Esirgeme Kurumu,\n- çocuk resmî bir kurumda kalıyorsa, ayrıca kurum temsilcisi.\n\n**İstisna:** Çocuğu suça azmettirdiğinden veya istismar ettiğinden şüphelenilen yakınlarına bilgi **verilmez**.\n\n**Yakın:** Çocuk kolluktayken yanında yakınlarından birinin bulunmasına imkân sağlanır.\n\n**Acil durum:** Beklemek çocuğun yararına aykırı olacaksa birim gerekli önlemleri alır ve çocuğun güvenliğini sağlar. Ardından çocuğu mümkün olan en kısa sürede Sosyal Hizmetler ve Çocuk Esirgeme Kurumuna teslim eder.",
+      "articleRefs": [
+        "31"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Kolluk personelinin eğitimini kim verir?",
+      "body": "Cevap: personelin **kendi kurumları**. Eğitim konuları çocuk hukuku, çocuk suçluluğunun önlenmesi, çocuk gelişimi ve psikolojisi ile sosyal hizmettir.\n\nŞıklarda Adalet Bakanlığı, Aile ve Sosyal Hizmetler Bakanlığı veya Hâkimler ve Savcılar Yüksek Kurulu görürsen ele.\n\nBildirim sorusunda da dikkatli ol. Kural, maddede sayılan kişi ve kurumlara haber vermektir. Ama çocuğu suça azmettirdiğinden ya da istismar ettiğinden şüphelenilen yakına bilgi verilmez.",
+      "articleRefs": [
+        "31"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Sosyal çalışma görevlileri",
+      "body": "**Atama:**\n- Adalet Bakanlığı atar.\n- En az lisans öğrenimi görmüş olanlar arasından seçilir.\n- Mahkemelerde görevlendirilmek üzere adli destek ve mağdur hizmetleri müdürlüğüne atanırlar.\n- Çocuk ve aile sorunları, çocuk hukuku ve çocuk suçluluğunun önlenmesi alanlarında lisansüstü eğitim yapmış olanlar tercih edilir.\n\n**Ödeme:** Aylıklarının (ek gösterge dahil) brüt tutarının **yüzde ellisi** oranında ödeme yapılır. Bu ödeme, şartları taşıyan sözleşmeli personele de yapılır. Ödemeyi kadro veya pozisyonun bulunduğu kurum yapar.\n\n**Dışarıdan görevlendirme:** Şu gibi durumlarda, aynı nitelikleri taşıyan diğer kamu çalışanları veya serbest meslek icra edenler de görevlendirilebilir:\n- görevli yoksa,\n- fiilî veya hukukî bir engel varsa,\n- başka bir uzmanlık dalı gerekiyorsa.\n\nBu şekilde görevlendirilenlere ayrıca bu ödeme **yapılmaz**.",
+      "articleRefs": [
+        "33"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Çocuğun çevresi mahkemenin yetki alanı dışındaysa",
+      "body": "Bu durumda inceleme, **davayı gören mahkemenin talimatına bağlı olarak** yapılır ve **çocuğun bulunduğu yerdeki mahkemece** yaptırılır.\n\nBüyükşehir belediye sınırları içindeki yerler için ayrı bir imkân var. Orada incelemeyi, davayı gören mahkemeye bağlı çalışan sosyal çalışma görevlileri de yapabilir.\n\nSoru “büyükşehir sınırı dışında” diyorsa cevap talimat yoludur. Şu şıklar tuzaktır: çocuk bürosuna dosya göndermek, kolluğun çocuk biriminin araştırması, il müdürlüğünce yapılması.",
+      "articleRefs": [
+        "33"
+      ]
+    },
+    {
+      "type": "numbers",
+      "title": "Sayılar: geri bırakma, mahkemeler, ödeme",
+      "rows": [
+        {
+          "label": "Geri bırakma kararında çocuk için denetim süresi",
+          "value": "3 yıl",
+          "refs": [
+            "23"
+          ]
+        },
+        {
+          "label": "Çocuk mahkemesinin yapısı",
+          "value": "Tek hâkim",
+          "refs": [
+            "25"
+          ]
+        },
+        {
+          "label": "Çocuk ağır ceza mahkemesinin toplanma düzeni",
+          "value": "1 başkan + 2 üye",
+          "refs": [
+            "25"
+          ]
+        },
+        {
+          "label": "Çocuk ağır ceza mahkemesinde toplanan heyet",
+          "value": "3 hâkim",
+          "refs": [
+            "25"
+          ]
+        },
+        {
+          "label": "Sosyal çalışma görevlisine yapılan ödeme",
+          "value": "Aylığın (ek gösterge dahil) brüt tutarının %50'si",
+          "refs": [
+            "33"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "23",
+        "25",
+        "33"
+      ],
+      "derivedNumbers": [
+        {
+          "value": 3,
+          "expr": "1 + 2",
+          "refs": [
+            "25"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Sosyal çalışma görevlilerinin görevleri",
+      "body": "Sosyal çalışma görevlisinin görevleri şunlardır:\n1. Görevlendirildiği çocuk hakkında **derhâl** sosyal inceleme yapmak ve raporu kendisini görevlendiren mercie sunmak.\n2. Adli süreçteki çocuğun **ifadesinin alınması veya sorgusu sırasında yanında bulunmak**.\n3. Mahkemeler ve çocuk hâkimlerinin bu Kanun kapsamında verdiği diğer görevleri yapmak.\n\n**İlgililerin yükümlülüğü:** Görevliye yardımcı olmak ve istenen bilgileri vermek zorundadırlar.\n\n**Masraf:** Hâkimin takdir ettiği masraflar Cumhuriyet başsavcılığının **suçüstü ödeneğinden** ödenir.\n\n**Dikkat:** Şu işler bu maddede sosyal çalışma görevlisinin görevi olarak sayılmaz:\n- çocuğa rehberlik etmek,\n- kararın uygulanmasını ve sonuçlarını izlemek.",
+      "articleRefs": [
+        "34"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Sosyal inceleme",
+      "body": "**Kim yaptırır?** Mahkemeler, çocuk hâkimleri veya Cumhuriyet savcıları. Gerektiğinde, çocuğun bireysel özelliklerini ve sosyal çevresini gösteren bir inceleme yaptırırlar.\n\n**Rapor ne işe yarar?** Mahkeme, çocuğun iki yeteneğini takdir ederken raporu göz önünde bulundurur:\n- işlediği fiilin hukukî anlam ve sonuçlarını **algılama** yeteneği,\n- bu fiille ilgili davranışlarını **yönlendirme** yeteneği.\n\n**Zaman:** Derhâl tedbir gereken durumlarda inceleme daha sonra da yaptırılabilir.\n\n**Zorunluluk:**\n- **Onbeş yaşını doldurmamış** çocuk hakkında sosyal inceleme **zorunludur**.\n- Onbeş yaşını doldurmuş çocuk hakkında inceleme yaptırılmazsa, gerekçe iddianamede veya kararda gösterilir.",
+      "articleRefs": [
+        "35"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Algılama mı, değerlendirme mi?",
+      "body": "Boşluk doldurma sorusunda doğru ikili **algılama – yönlendirme**dir. “Değerlendirme”, “gözden geçirme” ve “göz ardı etme” çeldiricidir.\n\nİkinci tuzak yaş sınırında. Çocuk onbeş yaşını doldurmamışsa savcı incelemeyi **yaptırmak zorundadır**. Dosyayı yeterli bulsa da sonuç değişmez. “Yaptırmayabilir, gerekçesini iddianamede gösterir” seçeneği yalnızca onbeş yaşını **doldurmuş** çocuk için geçerlidir.\n\nSoruşturmada inceleme yaptırma yetkisi savcıda da vardır. Bu yetki yalnız çocuk hâkimine ait değildir.",
+      "articleRefs": [
+        "35"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Denetim plânı ve raporu",
+      "body": "**Kim hazırlar?** Denetim görevlisi. Bunu sosyal incelemeyi yapan uzman veya sosyal çalışma görevlisi ile birlikte yapar.\n\n**Ne zaman?** Görevlendirmeyi takip eden **on gün** içinde.\n\n**Plânda neler dikkate alınır?**\n1. Tedbirin amacı, niteliği ve süresi\n2. Çocuğun ihtiyaçları\n3. Çocuğun içinde bulunduğu tehlike hâlinin ciddiyeti\n4. Ana, baba, vasi veya bakım ve gözetimden sorumlu kimsenin çocuğa verdiği desteğin derecesi\n5. Adli süreç nedeniyle tedbir alınmışsa suç teşkil eden fiilin mahiyeti\n6. **Çocuğun görüşü**\n\n**Uygulama:** Plân, mahkeme veya çocuk hâkimi onayladıktan sonra derhâl uygulanır.\n\n**Rapor:** Denetim görevlisi **her ay**, ayrıca talep hâlinde, mahkeme veya çocuk hâkimine rapor verir.",
+      "articleRefs": [
+        "39"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Kimin görüşü? Kaç gün?",
+      "body": "Plânda dikkate alınan görüş **çocuğun görüşüdür**. “Çocuk hâkiminin görüşü” listede yoktur. Hâkim plânı sonradan onaylar.\n\nSüreyi de sağlam bil. Plân görevlendirmeyi takip eden **on gün** içinde hazırlanır. On beş gün ya da otuz gün diyen şıklar yanlıştır.",
+      "articleRefs": [
+        "39"
+      ],
+      "counterNumbers": [
+        15,
+        30
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Denetimin sona ermesi ve raporlara erişim",
+      "body": "**Denetim ne zaman sona erer?**\n- Kararda öngörülen süre dolunca.\n- Tedbirden beklenen yarar elde edilmişse, süre dolmadan da kaldırılabilir.\n- Çocuk başka bir suçtan **tutuklanırsa** veya **cezasının yerine getirilmesine başlanırsa**.\n\nBaşka bir suçtan sadece soruşturma başlatılması denetimi bitirmez. Yükümlülüğe uymamak veya yerleşim yerini değiştirmek de bitirmez.\n\n**Raporlara kim erişir?**\n- Sosyal inceleme raporu ile denetim plânı ve raporunun birer örneğini çocuğun avukatı veya yasal temsilcisi alabilir.\n- Örneği Cumhuriyet savcısından, mahkemeden veya çocuk hâkiminden alır.\n- Çocuğa raporun içeriği hakkında bilgi verilir.\n\n**Sınır:** Bilgi sahibi olmak çocuğun yararına aykırıysa, inceleme kısmen veya tamamen yasaklanabilir. Bu yasak **çocuk ve avukatı hariç** olmak üzere uygulanır.",
+      "articleRefs": [
+        "40",
+        "41"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Tedbirleri yerine getiren kurumlar",
+      "body": "**Hangi tedbiri kim yerine getirir?**\n- **Danışmanlık ve barınma** (a ve e bentleri): Milli Eğitim Bakanlığı, Sosyal Hizmetler ve Çocuk Esirgeme Kurumu ve yerel yönetimler.\n- **Eğitim** (b bendi): Milli Eğitim Bakanlığı ve Çalışma ve Sosyal Güvenlik Bakanlığı.\n- **Bakım** (c bendi): Sosyal Hizmetler ve Çocuk Esirgeme Kurumu.\n- **Sağlık** (d bendi): Sağlık Bakanlığı.\n\n**Destek talepleri:** Sosyal Hizmetler ve Çocuk Esirgeme Kurumunun yardım ve destek taleplerini ilgili bakanlıklar ve kurumlar **geciktirilmeksizin** yerine getirir.\n\n**Kolluk:** Tedbir yerine getirilirken gerekirse kolluktan yardım istenebilir.\n\n**Koordinasyon:**\n- Merkezde: Aile ve Sosyal Hizmetler Bakanlığı.\n- İl ve ilçelerde: **vali ve kaymakam**. Sekretarya hizmetlerini aile ve sosyal hizmetler il müdürlükleri yürütür.\n- Hâkim veya mahkemenin verdiği tedbir kararları, yerine getirilmek üzere ilgili kurum veya kuruluşa gönderilir.\n\n**Tazyik hapsi:** Tedbir kararına aykırı hareket eden ana, baba, vasi veya bakım ve gözetimden sorumlu kişi, **çocuk hâkimi kararıyla** üç günden on güne kadar tazyik hapsi ile cezalandırılır. Fiil suç teşkil etse dahi bu yaptırım uygulanır.\n- Karara karşı 14 üncü madde uyarınca itiraz edilebilir.\n- Karar kesinleşince Cumhuriyet başsavcılığınca yerine getirilir.",
+      "articleRefs": [
+        "45"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Danışmanlık, koordinasyon, tazyik: üç tuzak",
+      "body": "**Danışmanlık tedbiri:** Sorumlu kurumlar arasında Milli Eğitim Bakanlığı vardır. Adalet Bakanlığı ve İçişleri Bakanlığı yoktur.\n\n**Koordinasyon:** Merkezde Adalet Bakanlığı değil, Aile ve Sosyal Hizmetler Bakanlığı yapar. İl ve ilçelerde çocuk hâkimi başkanlığında bir kurul değil, **vali ve kaymakam** yapar. Sekretarya adli destek müdürlüğünde değildir. Kararlar önce başsavcılığa da gitmez, doğrudan ilgili kuruma gönderilir.\n\n**Kolluk desteği:** Baba sağlık tedbirine fiilen engel olursa kurum kolluktan yardım isteyebilir. Bunun için ayrı hâkim kararı ya da savcı emri aranmaz.\n\n**Tazyik hapsi:** Üç günden on güne kadardır ve **çocuk hâkimi** kararıyla verilir. Kolluk amiri bu kararı veremez.",
+      "articleRefs": [
+        "45"
+      ]
+    },
+    {
+      "type": "numbers",
+      "title": "Sayılar: inceleme, denetim, tazyik",
+      "rows": [
+        {
+          "label": "Sosyal incelemenin zorunlu olduğu çocuk",
+          "value": "15 yaşını doldurmamış",
+          "refs": [
+            "35"
+          ]
+        },
+        {
+          "label": "Denetim plânının hazırlanma süresi",
+          "value": "Görevlendirmeyi takip eden 10 gün",
+          "refs": [
+            "39"
+          ]
+        },
+        {
+          "label": "Denetim görevlisinin rapor sıklığı",
+          "value": "Her ay; ayrıca talep hâlinde",
+          "refs": [
+            "39"
+          ]
+        },
+        {
+          "label": "Denetimin süre dolmadan kaldırılması",
+          "value": "Tedbirden beklenen yarar elde edilirse",
+          "refs": [
+            "40"
+          ]
+        },
+        {
+          "label": "Tedbire aykırılıkta tazyik hapsi",
+          "value": "3–10 gün",
+          "refs": [
+            "45"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "35",
+        "39",
+        "40",
+        "45"
+      ]
+    },
+    {
+      "type": "compare",
+      "title": "Sosyal çalışma görevlisi ile denetim görevlisi",
+      "rows": [
+        {
+          "aspect": "Ana iş",
+          "left": "Derhâl sosyal inceleme yapmak, raporu sunmak",
+          "right": "Denetim plânını hazırlamak, uygulamayı raporlamak",
+          "refs": [
+            "34",
+            "39"
+          ]
+        },
+        {
+          "aspect": "Raporun gittiği yer",
+          "left": "Kendisini görevlendiren merci",
+          "right": "Mahkeme veya çocuk hâkimi",
+          "refs": [
+            "34",
+            "39"
+          ]
+        },
+        {
+          "aspect": "Zamanlama",
+          "left": "Görevlendirilince derhâl inceleme",
+          "right": "Plân 10 gün içinde; rapor her ay ve talep hâlinde",
+          "refs": [
+            "34",
+            "39"
+          ]
+        },
+        {
+          "aspect": "İfade ve sorgu",
+          "left": "Adli süreçteki çocuğun yanında bulunur",
+          "right": "Maddede sayılmaz",
+          "refs": [
+            "34",
+            "39"
+          ]
+        },
+        {
+          "aspect": "Plândaki rolü",
+          "left": "Sosyal incelemeyi yapan olarak plâna katılır",
+          "right": "Plânı hazırlayan asıl görevli",
+          "refs": [
+            "39"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "34",
+        "39"
+      ]
+    },
+    {
+      "type": "exam_stats",
+      "title": "Sınav der ki",
+      "rows": [
+        {
+          "label": "Bu ünitenin maddelerinden yayındaki soru",
+          "value": "18",
+          "refs": [
+            "23",
+            "25",
+            "28",
+            "30",
+            "31",
+            "33",
+            "34",
+            "35",
+            "39",
+            "40",
+            "41",
+            "45"
+          ]
+        },
+        {
+          "label": "md 45 — Kurumlar",
+          "value": "3 soru",
+          "refs": [
+            "45"
+          ]
+        },
+        {
+          "label": "md 23 — Hükmün açıklanmasının geri bırakılması",
+          "value": "2 soru",
+          "refs": [
+            "23"
+          ]
+        },
+        {
+          "label": "md 25 — Mahkemelerin kuruluşu",
+          "value": "2 soru",
+          "refs": [
+            "25"
+          ]
+        },
+        {
+          "label": "md 35 — Sosyal inceleme",
+          "value": "2 soru",
+          "refs": [
+            "35"
+          ]
+        },
+        {
+          "label": "md 39 — Denetim plânı ve raporu",
+          "value": "2 soru",
+          "refs": [
+            "39"
+          ]
+        },
+        {
+          "label": "Resmî sınavlarda",
+          "value": "2024 PAEM 8. Dönem İlk Derece Amirlik Eğitimi Yazılı Sınavı (2)",
+          "refs": [
+            "23",
+            "25",
+            "28",
+            "30",
+            "31",
+            "33",
+            "34",
+            "35",
+            "39",
+            "40",
+            "41",
+            "45"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "23",
+        "25",
+        "28",
+        "30",
+        "31",
+        "33",
+        "34",
+        "35",
+        "39",
+        "40",
+        "41",
+        "45"
+      ],
+      "generated": true
+    },
+    {
+      "type": "bridge",
+      "title": "Bu üniteden soru çöz",
+      "articleRefs": [
+        "23",
+        "25",
+        "28",
+        "30",
+        "31",
+        "33",
+        "34",
+        "35",
+        "39",
+        "40",
+        "41",
+        "45"
+      ],
+      "generated": true,
+      "rows": [
+        {
+          "label": "Madde kapsamlı seans",
+          "value": "md 23, 25, 28, 30, 31, 33–35, 39–41, 45, 10 soru",
+          "refs": [
+            "23",
+            "25",
+            "28",
+            "30",
+            "31",
+            "33",
+            "34",
+            "35",
+            "39",
+            "40",
+            "41",
+            "45"
+          ]
+        }
+      ]
+    }
+  ]
+}

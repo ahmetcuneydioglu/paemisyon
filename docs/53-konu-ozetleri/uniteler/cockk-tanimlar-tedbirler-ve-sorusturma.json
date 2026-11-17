@@ -1,0 +1,468 @@
+{
+  "unit": {
+    "slug": "cockk-tanimlar-tedbirler-ve-sorusturma",
+    "legislationSlug": "5395-sayili-cocuk-koruma-kanunu",
+    "topicId": "48443974-0207-4ac2-b51a-34ba2a7b8070",
+    "title": "Tanımlar, koruyucu tedbirler ve soruşturma",
+    "subtitle": "Çocuk kavramı, koruyucu ve destekleyici tedbirler, acil korunma, gözaltı, adlî kontrol ve tutuklama yasağı",
+    "articleFrom": "3",
+    "articleTo": "21",
+    "readingMinutes": 13,
+    "sourceLabel": "AI özeti — 5395 Sayılı Çocuk Koruma Kanunu, md 3–9, 11, 13–21",
+    "articleNos": [
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "11",
+      "13",
+      "14",
+      "15",
+      "16",
+      "17",
+      "18",
+      "19",
+      "20",
+      "21"
+    ],
+    "generatedBy": "claude-opus-5-5 (ozet-uret.ts)",
+    "sortOrder": 1
+  },
+  "blocks": [
+    {
+      "type": "concept",
+      "title": "Kanunun gözünde çocuk",
+      "body": "Bu Kanun için çocuk, daha erken yaşta ergin olsa bile 18 yaşını doldurmamış kişidir. Erken ergin olmak çocukluğu bitirmez. Kanun çocukları kendi içinde ayırır. Gelişimi ile kişisel güvenliği tehlikede olan, ihmal veya istismar edilen ya da suç mağduru olan çocuk **korunma ihtiyacı olan çocuktur**. Suç olarak tanımlanan fiili işlediği iddiasıyla hakkında soruşturma veya kovuşturma yapılan ya da güvenlik tedbirine karar verilen çocuk ise **adli süreçteki çocuktur**. Ünitenin geri kalanında bu çocukların yolunu izleyeceksin.",
+      "articleRefs": [
+        "3"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Tanımlar: mahkeme, çocuk hâkimi, kurum, sosyal çalışma görevlisi",
+      "body": "- **Mahkeme:** çocuk mahkemeleri ile çocuk ağır ceza mahkemeleri.\n- **Çocuk hâkimi:** hakkında kovuşturma başlatılmış olanlar **hariç**, adli süreçteki çocuklarla korunma ihtiyacı olan çocuklar hakkında uygulanacak tedbir kararlarını veren **çocuk mahkemesi hâkimi**.\n- **Kurum:** Kanun kapsamındaki çocuğun bakılıp gözetildiği, hakkında verilen tedbir kararlarının yerine getirildiği resmî veya özel kurumlar.\n- **Sosyal çalışma görevlisi:** psikolojik danışmanlık ve rehberlik, psikoloji, sosyoloji, çocuk gelişimi, öğretmenlik, aile ve tüketici bilimleri ve sosyal hizmet alanlarında eğitim veren kurumlardan mezun meslek mensupları.",
+      "articleRefs": [
+        "3"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Temel ilkeler",
+      "body": "Kanun uygulanırken çocuğun haklarının korunması amacıyla şu ilkeler gözetilir:\n- Yaşama, gelişme, korunma ve katılım haklarının güvence altına alınması\n- Çocuğun **yarar ve esenliğinin** gözetilmesi\n- Çocuk ve ailesinin **ayrımcılığa** tâbi tutulmaması\n- Çocuk ve ailesinin bilgilendirilerek karar sürecine **katılımı**\n- Çocuk, aile, ilgililer, kamu kurumları ve sivil toplum kuruluşlarının **işbirliği**\n- İnsan haklarına dayalı, adil, etkili ve süratli usûl\n- Soruşturma ve kovuşturmada çocuğun durumuna uygun **özel ihtimam**\n- Eğitim, öğrenim, kişilik ve toplumsal sorumluluğun geliştirilmesinin desteklenmesi\n- Özgürlüğü kısıtlayıcı tedbirler ile hapis cezasına **en son çare** olarak başvurulması\n- Kurumda bakım ve kurumda tutmanın **son çare** görülmesi, toplumsal sorumluluğun paylaşılması\n- Kurumlarda çocukların **yetişkinlerden ayrı** tutulması\n- Kimliğinin başkalarınca **belirlenememesine** yönelik önlemler",
+      "articleRefs": [
+        "4"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Sık karıştırılan: çocuk hâkimi, sosyal çalışma görevlisi, ilkeler",
+      "body": "Çocuk hâkimi tanımındaki can alıcı kelime **hariç**: kovuşturma başlatılmış çocuklar onun tedbir alanında değildir. \"Kovuşturma dâhil bütün çocuklar\", \"yalnızca korunma ihtiyacı olan çocuklar\" ya da \"çocuk ağır ceza mahkemesi başkanı\" diyen şıklar yanlıştır. Sosyal çalışma görevlisinin mezun olduğu alanlar arasında **hukuk yoktur**; sosyoloji, çocuk gelişimi, aile ve tüketici bilimleri vardır. Temel ilkeler listesinde tedbir giderlerinin Devletçe ödenmesi sayılmaz; son çare, ayrımcılık yasağı, katılım ve kimliğin belirlenememesi sayılır.",
+      "articleRefs": [
+        "3",
+        "4"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Koruyucu ve destekleyici tedbirler",
+      "body": "Amaç: çocuğun **öncelikle kendi aile ortamında** korunması.\n- **Danışmanlık:** bakımdan sorumlu kimselere çocuk yetiştirme konusunda, çocuğa eğitim ve gelişim sorunlarında yol gösterme.\n- **Eğitim:** eğitim kurumuna gündüzlü veya yatılı devam; meslek veya sanat edinme kursu; meslek sahibi ustanın yanına ya da kamu veya özel sektör işyerlerine yerleştirme.\n- **Bakım:** bakımdan sorumlu kimse görevini yerine getiremezse resmî veya özel bakım yurdu ya da koruyucu aile hizmetleri.\n- **Sağlık:** geçici veya sürekli tıbbî bakım ve rehabilitasyon; bağımlılık yapan maddeleri kullananların tedavisi.\n- **Barınma:** barınma yeri olmayan çocuklu kimselere veya hayatı tehlikede olan hamile kadınlara uygun barınma yeri.\n\nBarınma tedbiri uygulananların **talepleri hâlinde** kimlikleri ve adresleri gizli tutulur.\n\nÇocuk tehlike altında değilse ya da veli, vasi veya bakım ve gözetiminden sorumlu kimse desteklenerek tehlike bertaraf edilebilecekse çocuk bu kişilere **teslim edilir**; bu hâlde de tedbirlerden birisine karar verilebilir.",
+      "articleRefs": [
+        "5"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Kuruma başvuru ve bildirim",
+      "body": "**Bildirmekle yükümlü olanlar** (Sosyal Hizmetler ve Çocuk Esirgeme Kurumuna):\n- adlî ve idarî merciler\n- kolluk görevlileri\n- sağlık ve eğitim kuruluşları\n- sivil toplum kuruluşları\n\n**Başvurabilenler:** çocuk ile çocuğun bakımından sorumlu kimseler, çocuğun korunma altına alınması amacıyla.\n\nKurum, kendisine bildirilen olaylarla ilgili gerekli araştırmayı **derhâl** yapar.",
+      "articleRefs": [
+        "6"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Sık karıştırılan: listede olmayan tedbir, listede olmayan bildirici",
+      "body": "Koruyucu ve destekleyici tedbirler danışmanlık, eğitim, bakım, sağlık ve barınmadır. \"Kontrol tedbiri\" ya da \"denetim tedbiri\" bu listede yok. Denetim, hâkimin koruyucu ve destekleyici tedbire ek olarak verebildiği ayrı karardır (md 7). Bildirim yükümlüleri arasında **sivil toplum kuruluşları** açıkça sayılır; muhtarlar, barolar, yerel yönetimler ya da komşular bu adlarla sayılmaz.",
+      "articleRefs": [
+        "5",
+        "6",
+        "7"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Koruyucu ve destekleyici tedbir kararı",
+      "body": "**Kimin istemiyle:** çocuğun anası, babası, vasisi, bakım ve gözetiminden sorumlu kimse, Sosyal Hizmetler ve Çocuk Esirgeme Kurumu, Cumhuriyet savcısı ya da çocuk hâkimi **re'sen**.\n- Karar öncesi sosyal inceleme **yaptırılabilir**.\n- Tedbirin türü kararda gösterilir; bir veya birden fazla tedbire karar verilebilir.\n- Hâkim çocuğun **denetim altına alınmasına** da karar verebilir.\n- Hâkim, çocuğun gelişimine göre tedbiri kaldırabilir veya değiştirebilir. Acele hâllerde bu kararı çocuğun bulunduğu yer hâkimi de verebilir ve önceki kararı alan hâkim veya mahkemeye bildirir.\n- **Bitiş:** uygulama 18 yaşın doldurulmasıyla **kendiliğinden** sona erer. **İstisna:** eğitim ve öğrenimine devam edebilmesi için, **rızası alınarak**, hâkim kararıyla belli bir süre daha devam edilebilir.\n- Mahkeme, korunma ihtiyacı olan çocuk hakkında Türk Medenî Kanunu hükümlerine göre velayet, vesayet, kayyım, nafaka ve kişisel ilişki konularında da karar verebilir.",
+      "articleRefs": [
+        "7"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Tedbirlerde yetki ve inceleme",
+      "body": "**Yetkili hâkim (korunma ihtiyacı olan çocuklarda):** çocuğun kendisinin, ana, baba, vasisi veya birlikte yaşadığı kimselerin bulunduğu yerdeki çocuk hâkimi.\n\n**İnceleme:** tedbir kararlarının uygulanması, kararı veren hâkim veya mahkemece en geç **üçer aylık** sürelerle incelettirilir.\n\n**Sonuç:** denetim memurları, veli, vasi, bakım ve gözetimi üstlenen kimseler, tedbiri yerine getiren kişi ve kuruluşun temsilcisi ile Cumhuriyet savcısının talebiyle ya da re'sen, tedbir **kaldırılabilir, süresi uzatılabilir veya değiştirilebilir**.",
+      "articleRefs": [
+        "8"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Sık karıştırılan: tedbir ne zaman biter, ne sıklıkla incelenir",
+      "body": "Tedbirin uygulanması **18 yaşın** doldurulmasıyla kendiliğinden sona erer. \"On beş yaşın doldurulmasıyla sona erer\" cümlesi klasik yanlış şıktır. Sosyal incelemenin \"yaptırılabilir\" olduğunu, zorunlu olmadığını unutma. Uygulamanın incelenmesi en geç **üçer ayda** bir yapılır. On beş günlük ya da daha uzun aralıklar çeldiricidir.",
+      "articleRefs": [
+        "7",
+        "8"
+      ],
+      "counterNumbers": [
+        15
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Acil korunma kararı: Kurum yolu",
+      "body": "**Ne zaman:** çocuğun derhâl korunma altına alınmasını gerektiren durum varsa.\n1. Sosyal Hizmetler ve Çocuk Esirgeme Kurumu çocuğu bakım ve gözetim altına alır.\n2. Kurum, çocuğun Kuruma geldiği tarihten itibaren en geç **5 gün** içinde çocuk hâkimine müracaat eder.\n3. Hâkim **3 gün** içinde karar verir. Çocuğun bulunduğu yerin gizli tutulmasına ve gerektiğinde kişisel ilişkinin tesisine karar verebilir.\n\n- Acil korunma kararı en fazla **30 günlük** süreyle sınırlıdır. Bu süre içinde Kurum sosyal inceleme yapar.\n- Kurum tedbir gerekmediği sonucuna varırsa görüşünü ve sağlayacağı hizmetleri hâkime bildirir. Ailesine teslime ya da başka tedbire **hâkim** karar verir.\n- Kurum tedbir gerektiği sonucuna varırsa hâkimden koruyucu ve destekleyici tedbir kararı talep eder.",
+      "articleRefs": [
+        "9"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Acil korunma kararı: sağlık kurumu yolu",
+      "body": "**Kimin için:** akıl hastalığı, akıl zayıflığı, alkol, uyuşturucu veya uyarıcı madde bağımlılığı, davranışsal bağımlılık ya da ağır tehlike arz eden bulaşıcı hastalık nedeniyle kendisi veya başkaları açısından ciddi tehlike oluşturduğu değerlendirilen çocuk için geçerlidir. Çocuğun Sağlık Bakanlığına veya üniversitelere bağlı yataklı sağlık kurumuna gelmiş ya da getirilmiş olması gerekir.\n1. İlgili uzman hekim tedavi ihtiyacını tespit ederse **24 saat** içinde rapor düzenlenir.\n2. Sağlık kurumu, uzman hekim raporunun düzenlendiği tarihten itibaren en geç **24 saat** içinde çocuk hâkimine başvurur.\n3. Başvurudan itibaren en geç **48 saat** içinde, ilgili dal uzman hekiminin yer aldığı **3 uzman hekimden** oluşan resmî sağlık kurulunun raporu mahkemeye sunulur.\n4. Hâkim, başvuruyu ve kurul raporunu değerlendirerek en geç **48 saat** içinde karar verir.\n\n- Çocuğun gelişinden hâkim kararının sağlık kuruluşuna **tebliğine kadar**, gerekli görülen tıbbî müdahale ve tedavi uygulanır. Gerekirse kolluktan yardım istenebilir; kolluk bu talebi kanunla tanınan yetkileri çerçevesinde yerine getirir.\n- Hâkim, çocuğun üstün yararını gözeterek bulunduğu yerin gizli tutulmasına, kişisel ilişkinin kurulmasına veya sınırlandırılmasına karar verebilir.\n- Hâkim, kurul raporunu dikkate alarak acil korunma kararının **kaldırılmasına, devamına** veya başka koruyucu ve destekleyici tedbire karar verir.",
+      "articleRefs": [
+        "9"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Sık karıştırılan: acil korunmada süreler ve yetki",
+      "body": "Kurumun hâkime müracaat süresi **beş gündür**, yedi gün değil. Hâkimin karar süresi **üç gündür**, acil korunmanın üst sınırı **otuz gündür**. Sağlık kurumu yolunda başvuru süresi çocuğun gelişinden ya da sağlık kurulu raporundan değil, **uzman hekim raporunun düzenlendiği tarihten** itibaren işler. Bu süre kırk sekiz saat değil, **yirmi dört saattir**. Kurul, ilgili dal uzman hekiminin yer aldığı **üç uzman hekimden** oluşur. \"Uzman hekim ile sosyal çalışma görevlisi\" kurgusu yanlıştır. Yerin gizli tutulmasına sağlık kurumu değil **hâkim** karar verir. Hâkim kararı kaldırmakla kalmaz; devamına veya başka tedbire de hükmedebilir.",
+      "articleRefs": [
+        "9"
+      ],
+      "counterNumbers": [
+        7
+      ]
+    },
+    {
+      "type": "numbers",
+      "title": "Sayılarla tedbir ve acil korunma",
+      "rows": [
+        {
+          "label": "Tedbirin kendiliğinden sona erdiği yaş",
+          "value": "18",
+          "refs": [
+            "7"
+          ]
+        },
+        {
+          "label": "Tedbir uygulamasının incelenme aralığı (en geç)",
+          "value": "3 ay (üçer aylık)",
+          "refs": [
+            "8"
+          ]
+        },
+        {
+          "label": "Kurumun çocuk hâkimine müracaatı (Kuruma gelişten itibaren, en geç)",
+          "value": "5 gün",
+          "refs": [
+            "9"
+          ]
+        },
+        {
+          "label": "Hâkimin acil korunma talebine karar süresi",
+          "value": "3 gün",
+          "refs": [
+            "9"
+          ]
+        },
+        {
+          "label": "Acil korunma kararının azami süresi",
+          "value": "30 gün",
+          "refs": [
+            "9"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "7",
+        "8",
+        "9"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Güvenlik tedbiri, usûl ve itiraz",
+      "body": "**Çocuklara özgü güvenlik tedbiri:** koruyucu ve destekleyici tedbirler, hakkında adli süreç yürütülen ve **ceza sorumluluğu olmayan** çocuklar bakımından bu adla anlaşılır.\n\n**Usûl:** bu çocuklarla korunma ihtiyacı olan çocuklar hakkında tedbir kararı **duruşma yapılmaksızın** verilir.\n- İstisna: hâkim zaruret gördüğü hâllerde duruşma yapabilir.\n- md 7'nin yedinci fıkrasındaki durumlar (velayet, vesayet, kayyım, nafaka, kişisel ilişki) bu kuralın dışındadır.\n- Karar öncesi yeterli idrak gücüne sahip çocuğun görüşü **alınır**. İlgililer dinlenebilir, sosyal inceleme raporu istenebilir.\n\n**Kanun yolu:** çocuk hâkiminin tedbir kararlarına karşı **itiraz** yolu açıktır. İtiraz, Ceza Muhakemesi Kanununun itiraz hükümlerine göre **en yakın çocuk mahkemesine** yapılır.",
+      "articleRefs": [
+        "11",
+        "13",
+        "14"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Sık karıştırılan: tedbirin adı, duruşma ve itiraz mercii",
+      "body": "Ceza sorumluluğu olmayan, adli süreçteki çocuğa uygulanan tedbirin adı adlî kontrol, denetimli serbestlik ya da acil korunma değildir: **çocuklara özgü güvenlik tedbiridir**. Usûlde kural duruşmasızlıktır; istisna, hâkimin zaruret gördüğü hâllerde duruşma yapmasıdır. Duruşmayı sosyal inceleme raporunun varlığına bağlayan şıklar metinde dayanaksızdır. \"Çocuğun görüşü hiçbir hâlde alınamaz\" diyen şık tam tersidir: yeterli idrak gücü varsa görüşü **alınır**. İtiraz kararı veren hâkime, çocuk ağır ceza mahkemesine ya da aile mahkemesine değil, **en yakın çocuk mahkemesine** yapılır.",
+      "articleRefs": [
+        "11",
+        "13",
+        "14"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Soruşturma ve gözaltı",
+      "body": "**Soruşturma:** adli süreçteki çocuk hakkındaki soruşturmayı **çocuk bürosunda görevli Cumhuriyet savcısı bizzat** yapar.\n- İfade alma ve diğer işlemler sırasında çocuğun yanında sosyal çalışma görevlisi **bulundurulabilir**.\n- Savcı, gerekli görürse koruyucu ve destekleyici tedbirlerin uygulanmasını çocuk hâkiminden isteyebilir.\n- Çocuk hakkında kamu davası açılırsa durum, gerekli idari tedbirler için **Aile ve Sosyal Hizmetler Bakanlığı** ve **Milli Eğitim Bakanlığı** il veya ilçe müdürlüklerine bildirilir.\n\n**Gözaltı:** gözaltına alınan çocuk, kolluğun **çocuk biriminde** tutulur. Çocuk birimi yoksa çocuk, gözaltına alınan **yetişkinlerden ayrı yerde** tutulur.",
+      "articleRefs": [
+        "15",
+        "16"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Sık karıştırılan: kim soruşturur, kime bildirilir, nerede tutulur",
+      "body": "Soruşturmayı Cumhuriyet başsavcısı, çocuk hâkimi ya da kolluğun çocuk birimi amiri yürütmez. Çocuk bürosundaki Cumhuriyet savcısı **bizzat** yürütür. Kamu davası bildiriminin adresi Aile ve Sosyal Hizmetler Bakanlığı **ile** Milli Eğitim Bakanlığı il veya ilçe müdürlükleridir. Sağlık Bakanlığı, baro ya da veli bu listede yok. Çocuk birimi bulunmayan yerde çözüm sevk ya da başsavcılıkta bekletme değildir: çocuk **yetişkinlerden ayrı yerde** tutulur. Sosyal çalışma görevlisi bulundurma şartıyla yetişkinlerle aynı yerde tutma diye istisna yoktur.",
+      "articleRefs": [
+        "15",
+        "16"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "İştirak hâlinde suç ve çocuğun nakli",
+      "body": "**İştirak:** çocuk yetişkinlerle birlikte suç işlerse soruşturma ve kovuşturma **ayrı** yürütülür.\n- Çocuk hakkında gerekli tedbirler uygulanır. Mahkeme lüzum görürse çocuk hakkındaki yargılamayı genel mahkemedeki davanın sonucuna kadar **bekletebilir**.\n- Davaların birlikte yürütülmesi zorunlu görülürse genel mahkemelerde, yargılamanın her aşamasında, **mahkemelerin uygun bulması şartıyla** birleştirme kararı verilebilir. Birleştirilen davalar **genel mahkemelerde** görülür.\n\n**Nakil:** çocuklara zincir, kelepçe ve benzeri aletler **takılamaz**. Ancak zorunlu hâllerde çocuğun kaçmasını ya da kendisinin veya başkalarının hayat veya beden bütünlükleri bakımından doğabilecek tehlikeleri önlemek için **kolluk** gerekli önlemi alabilir.",
+      "articleRefs": [
+        "17",
+        "18"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Erteleme, adlî kontrol ve tutuklama yasağı",
+      "body": "**Kamu davasının açılmasının ertelenmesi:** Ceza Muhakemesi Kanunundaki koşullar varsa verilebilir. Çocuklar için erteleme süresi **3 yıldır**. Ceza Muhakemesi Kanununun ilgili hükmündeki hapis cezası üst sınırı, 15 yaşını doldurmamış çocuklar için **5 yıl** olarak uygulanır.\n\n**Adlî kontrol:** soruşturma veya kovuşturma evresinde, Ceza Muhakemesi Kanununda sayılanlara ek olarak şu tedbirlerden biri ya da birkaçına karar verilebilir:\n- belirlenen çevre sınırları dışına çıkmamak,\n- belirlenen bazı yerlere gidememek veya ancak bazı yerlere gidebilmek,\n- belirlenen kişi ve kuruluşlarla ilişki kurmamak.\n\nBu tedbirlerden sonuç alınamaması, sonuç alınamayacağının anlaşılması veya tedbirlere uyulmaması durumunda **tutuklama** kararı verilebilir. Denetimli serbestlik müdürlüğünce takip edilen çocuğa adli kontrol süresince rehberlik edecek uzman görevlendirilir. Ayrıca ihtiyaç değerlendirmesine göre iyileştirme çalışmaları yürütülür.\n\n**Tutuklama yasağı:** 15 yaşını doldurmamış çocuklar hakkında, üst sınırı **5 yılı** aşmayan hapis cezasını gerektiren fiillerinden dolayı tutuklama kararı **verilemez**.",
+      "articleRefs": [
+        "19",
+        "20",
+        "21"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Sık karıştırılan: birleştirme, kelepçe, adlî kontrol, tutuklama",
+      "body": "Birleştirilen davalar çocuk mahkemesinde değil, **genel mahkemelerde** görülür. Kelepçe yasağı yaşa, hâkim iznine ya da savcı emrine bağlanmamıştır. İstisnası yalnızca zorunlu hâllerde kolluğun aldığı önlemdir. md 20'nin Ceza Muhakemesi Kanununa ek olarak açıkça saydıkları arasında \"yurt dışına çıkamamak\" yoktur. Uyulmayan adlî kontrolün sonucu tedbirin kendiliğinden kalkması ya da acil korunma değildir: **tutuklama kararı verilebilir**. Tutuklama yasağındaki boşlukların cevabı **on beş – beş**tir; on iki ya da yedi içeren şıklar çeldiricidir.",
+      "articleRefs": [
+        "17",
+        "18",
+        "20",
+        "21"
+      ],
+      "counterNumbers": [
+        12,
+        7
+      ]
+    },
+    {
+      "type": "numbers",
+      "title": "Sayılarla sağlık yolu ve soruşturma",
+      "rows": [
+        {
+          "label": "Sağlık yolu: uzman hekim raporunun düzenlenmesi",
+          "value": "24 saat",
+          "refs": [
+            "9"
+          ]
+        },
+        {
+          "label": "Sağlık kurumunun çocuk hâkimine başvurusu (uzman hekim raporundan itibaren, en geç)",
+          "value": "24 saat",
+          "refs": [
+            "9"
+          ]
+        },
+        {
+          "label": "Sağlık kurulu raporunun mahkemeye sunulması (başvurudan itibaren, en geç)",
+          "value": "48 saat",
+          "refs": [
+            "9"
+          ]
+        },
+        {
+          "label": "Resmî sağlık kurulundaki uzman hekim sayısı",
+          "value": "3",
+          "refs": [
+            "9"
+          ]
+        },
+        {
+          "label": "Hâkimin karar süresi (sağlık yolu, en geç)",
+          "value": "48 saat",
+          "refs": [
+            "9"
+          ]
+        },
+        {
+          "label": "Çocuklarda kamu davasının açılmasının ertelenmesi süresi",
+          "value": "3 yıl",
+          "refs": [
+            "19"
+          ]
+        },
+        {
+          "label": "15 yaşını doldurmamışlar için erteleme hükmündeki hapis cezası üst sınırı",
+          "value": "5 yıl",
+          "refs": [
+            "19"
+          ]
+        },
+        {
+          "label": "Tutuklama yasağı: yaş / hapis cezası üst sınırı",
+          "value": "15 yaşını doldurmamış / 5 yılı aşmayan",
+          "refs": [
+            "21"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "9",
+        "19",
+        "21"
+      ]
+    },
+    {
+      "type": "exam_stats",
+      "title": "Sınav der ki",
+      "rows": [
+        {
+          "label": "Bu ünitenin maddelerinden yayındaki soru",
+          "value": "24",
+          "refs": [
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "11",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21"
+          ]
+        },
+        {
+          "label": "md 9 — Acil korunma kararı alınması",
+          "value": "4 soru",
+          "refs": [
+            "9"
+          ]
+        },
+        {
+          "label": "md 3 — Tanımlar",
+          "value": "2 soru",
+          "refs": [
+            "3"
+          ]
+        },
+        {
+          "label": "md 5 — Koruyucu ve destekleyici tedbirler",
+          "value": "2 soru",
+          "refs": [
+            "5"
+          ]
+        },
+        {
+          "label": "md 15 — Soruşturma",
+          "value": "2 soru",
+          "refs": [
+            "15"
+          ]
+        },
+        {
+          "label": "md 20 — Adlî kontrol",
+          "value": "2 soru",
+          "refs": [
+            "20"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "11",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17",
+        "18",
+        "19",
+        "20",
+        "21"
+      ],
+      "generated": true
+    },
+    {
+      "type": "bridge",
+      "title": "Bu üniteden soru çöz",
+      "articleRefs": [
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "11",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17",
+        "18",
+        "19",
+        "20",
+        "21"
+      ],
+      "generated": true,
+      "rows": [
+        {
+          "label": "Madde kapsamlı seans",
+          "value": "md 3–9, 11, 13–21, 10 soru",
+          "refs": [
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "11",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21"
+          ]
+        }
+      ]
+    }
+  ]
+}
