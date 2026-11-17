@@ -1,0 +1,532 @@
+{
+  "unit": {
+    "slug": "tvk-vatandasligin-kaybi-ve-ortak-hukumler",
+    "legislationSlug": "5901-sayili-turk-vatandasligi-kanunu",
+    "topicId": "5f4ee087-a19b-4e99-84e6-aadc837acc77",
+    "title": "Türk vatandaşlığının kaybı ve ortak hükümler",
+    "subtitle": "Çıkma, kaybettirme, iptal, seçme hakkı, Mavi Kart ve ortak hükümler",
+    "articleFrom": "25",
+    "articleTo": "46",
+    "readingMinutes": 12,
+    "sourceLabel": "AI özeti — 5901 Sayılı Türk Vatandaşlığı Kanunu, md 25–31, 33–37, 39, 40, 42–46",
+    "articleNos": [
+      "25",
+      "26",
+      "27",
+      "28",
+      "29",
+      "30",
+      "31",
+      "33",
+      "34",
+      "35",
+      "36",
+      "37",
+      "39",
+      "40",
+      "42",
+      "43",
+      "44",
+      "45",
+      "46"
+    ],
+    "generatedBy": "claude-opus-5-5 (ozet-uret.ts)",
+    "sortOrder": 2
+  },
+  "blocks": [
+    {
+      "type": "concept",
+      "title": "Vatandaşlık hangi yollarla sona erer?",
+      "body": "Bu ünitede Türk vatandaşlığının sona erdiği yolları göreceksin.\n\n- **Çıkma (md 25):** Kişi kendi isteğiyle Bakanlıktan izin alır.\n- **Kaybettirme (md 29):** Devlet, Cumhurbaşkanı kararıyla vatandaşlığı kaybettirebilir.\n- **İptal (md 31):** Kazanma kararı yalan beyan ya da gizleme sonucunda verilmişse iptal edilir.\n- **Seçme hakkı (md 34):** Bazı kişiler ergin olunca seçme hakkıyla ayrılabilir.\n\nHer yol için şu soruları ayrı ayrı sor: Kim karar verir? Kayıp ne zaman hüküm doğurur? Eşe ve çocuklara etkisi nedir?",
+      "articleRefs": [
+        "25",
+        "29",
+        "31",
+        "34"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Çıkma izninin şartları",
+      "body": "Türk vatandaşlığından çıkmak için izin isteyen kişiye **Bakanlıkça** çıkma izni veya çıkma belgesi verilebilir. Aranan şartlar:\n- a) **Ergin** ve **ayırt etme gücüne** sahip olmak.\n- b) Yabancı bir devlet vatandaşlığını kazanmış olmak veya kazanacağına ilişkin **inandırıcı belirtiler** bulunmak.\n- c) Herhangi bir **suç** veya **askerlik hizmeti** nedeniyle aranan kişilerden olmamak.\n- ç) Hakkında herhangi bir **mali ve cezai tahdit** bulunmamak.",
+      "articleRefs": [
+        "25"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Çıkmada ikamet süresi aranmaz",
+      "body": "Soru, md 25'e listede olmayan bir şart ekleyerek seni yakalamaya çalışır. Örneğin “Türkiye dışında en az beş yıl ikamet etmek” şıkkı gelir. Maddede böyle bir süre şartı yok.\n\nŞartlar birlikte aranır. Yabancı vatandaşlığı kazandığını belgelemiş olsan bile suç nedeniyle aranıyorsan, bu şart gerçekleşmedikçe izin verilemez. Mali tahdidin bulunmaması da kendi başına yetmez.",
+      "articleRefs": [
+        "25"
+      ],
+      "counterNumbers": [
+        5
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "İzin belgesi mi, çıkma belgesi mi?",
+      "body": "**Çıkma izin belgesi:** Yabancı bir devlet vatandaşlığını kazanmak üzere çıkmak için izin isteyenlerden talebi uygun görülenlere Bakanlıkça verilir.\n\n**Çıkma belgesi:** Verilen izin sonucunda veya önceden yabancı bir devlet vatandaşlığını kazandığını belgeleyenlere Bakanlıkça verilir.\n\n- İzin belgesi **karar tarihinden itibaren iki yıl** geçerlidir.\n- Bu süre içinde, yabancı vatandaşlığın kazanıldığına dair bilgi ve belgeler yurt içinde ikamet edilen yer **valiliğine**, yurt dışında **dış temsilciliklere** verilir.\n- Süresi içinde yabancı vatandaşlık kazanılamazsa izin belgesi **geçersiz hâle gelir**.",
+      "articleRefs": [
+        "26"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Çıkma ne zaman hüküm doğurur, aileyi nasıl etkiler?",
+      "body": "- Türk vatandaşlığı, **çıkma belgesinin ilgiliye imza karşılığı teslimi** ile kaybedilir.\n- Kişinin nüfus aile kütüklerindeki kayıtları kapatılır. Kişi kayıp tarihinden itibaren **yabancı muamelesine** tabi tutulur.\n- Eşlerden birinin çıkma izni alarak vatandaşlığı kaybetmesi, **diğer eşin vatandaşlığına tesir etmez**.\n- Çocuklar, vatandaşlığı kaybeden ana ya da babanın **talebi** ve diğer ebeveynin **muvafakati** hâlinde onlarla birlikte vatandaşlığı kaybeder.\n- Muvafakat verilmezse **hâkim kararına** göre işlem yapılır.\n- Kayıp çocukları **vatansız** kılacaksa bu hükümler uygulanmaz.",
+      "articleRefs": [
+        "27"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "İzin belgesi vatandaşlığı bitirmez",
+      "body": "Vatandaşlık, izin belgesinin düzenlenmesiyle ya da Bakanlığın karar tarihiyle sona ermez. Kayıp anı **çıkma belgesinin imza karşılığı teslimidir**.\n\n“Resmî Gazetede yayım” şıkkı kaybettirmeye aittir (md 30), çıkmaya değil.\n\nİzin belgesinin iki yıllık süresi içinde yabancı vatandaşlık kazanılamazsa Kanunun bağladığı sonuç yalnızca şudur: **izin belgesi geçersiz hâle gelir**. Bu duruma kaybettirme, kendiliğinden çıkma belgesi düzenlenmesi, kaydın kapatılması ya da yabancı muamelesi bağlanmamıştır.",
+      "articleRefs": [
+        "26",
+        "27",
+        "30"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Mavi Kart: kimler, hangi haklar?",
+      "body": "**Kapsam:** Doğumla Türk vatandaşı olup çıkma izni alarak vatandaşlığı kaybedenler ve **üçüncü dereceye kadar** altsoyları, Türk vatandaşlarına tanınan haklardan aynen yararlanmaya devam eder. Millî güvenliğe ve kamu düzenine ilişkin hükümler saklıdır.\n\n**İstisnalar:**\n- Seçme ve seçilme hakları yoktur.\n- Muafen araç veya ev eşyası ithal etme hakları yoktur.\n- Askerlik hizmetini yapma yükümlülükleri yoktur.\n- Kadroya dayalı ve kamu hukuku rejimine tabi **asli ve sürekli kamu hizmeti** görevlerinde bulunamazlar. Kamu kurum ve kuruluşlarında **işçi, geçici veya sözleşmeli personel** olarak çalıştırılabilirler.\n\n**Saklı haklar:** Sosyal güvenliğe ilişkin kazanılmış hakları saklıdır. Bu hakların kullanımında ilgili kanunlardaki hükümlere tabidirler.\n\n**Altsoy:** Altsoyun üstsoyu ile **soy bağını belgelendirmesi** şarttır. Cumhurbaşkanı gerekli görürse, üçüncü dereceden itibaren hangi dereceye kadar olan altsoyun yararlanacağını belirleyebilir.",
+      "articleRefs": [
+        "28"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Mavi Kartla işlem",
+      "body": "- Mavi Kart, kişinin **talebi hâlinde** düzenlenir.\n- Kart, **210 sayılı Değerli Kağıtlar Kanunu** kapsamındadır.\n- Hakların kullanılmasında Mavi Kartın **ibrazı yeterlidir**.\n- Kart ibraz edilemezse işlem şu belgelerle **birlikte** yapılır:\n  - Kimlik Paylaşımı Sistemi aracılığıyla **Mavi Kartlılar Kütüğünden** alınacak kayıt örneği,\n  - uyruğunda bulunulan devlet makamlarınca verilmiş kimlik bilgilerini gösteren belge.\n- Kimlik bilgileri değişirse, uyruğunda bulunulan devlet makamından alınmış, eski ve yeni kimlik bilgilerini gösteren belgenin usulüne göre tasdik edilmiş Türkçe tercümesi ile birlikte ibrazı zorunludur.\n- Bu kişilere, Bakanlığın tespit edeceği esaslar çerçevesinde **kimlik numarası** verilir. Türkiye Cumhuriyeti kimlik numarası aranan yerlerde bu numara kullanılır.\n- Kartın düzenlenmesi ve dağıtılması ile Kütüğün elektronik ortamda tutulmasına ilişkin usul ve esaslar **Bakanlıkça** belirlenir.\n- Kamu kurum ve kuruluşları, madde hükümlerinin uygulanması için her türlü tedbiri alır ve gerekli düzenlemeleri yapar.",
+      "articleRefs": [
+        "28"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Mavi Kart sorularındaki çeldiriciler",
+      "body": "- **Kapsam:** Madde, **doğumla** Türk vatandaşı olup **çıkma izniyle** vatandaşlığı kaybedenleri sayar. Evlenme yoluyla vatandaşlık kazanıp sonra çıkanlar, vatandaşlığı kaybettirilenler ya da iptal edilenler bu maddede sayılmaz.\n- **Altsoy:** Haklar yalnız kişiye değil, altsoyuna da tanınır.\n- **Sosyal güvenlik:** Bu haklar kayıpla sona ermez, saklıdır. Ayrıca Bakanlık izni de aranmaz.\n- **Kartın düzenlenmesi:** Mavi Kart resen değil, **talep üzerine** düzenlenir.\n- **Kartın niteliği:** Madde kartı pasaport yerine geçen belge saymaz; 210 sayılı Değerli Kağıtlar Kanunu kapsamına koyar.\n- **Kamu görevi:** Kamu görevi sınırlaması Mavi Kart ibrazıyla kalkmaz. Bu sınırlama altsoy için de geçerlidir.\n- **Kimlik numarası:** “Kimlik numarası verilmez” ifadesi yanlıştır; Bakanlığın esaslarına göre kimlik numarası verilir.",
+      "articleRefs": [
+        "28"
+      ]
+    },
+    {
+      "type": "numbers",
+      "title": "Rakamlar: çıkma ve Mavi Kart",
+      "rows": [
+        {
+          "label": "Çıkma izin belgesinin geçerliliği",
+          "value": "Karar tarihinden itibaren iki yıl",
+          "refs": [
+            "26"
+          ]
+        },
+        {
+          "label": "Çıkmada kayıp anı",
+          "value": "Çıkma belgesinin imza karşılığı teslimi",
+          "refs": [
+            "27"
+          ]
+        },
+        {
+          "label": "Haklardan yararlanan altsoy",
+          "value": "Üçüncü dereceye kadar (Cumhurbaşkanı genişletebilir)",
+          "refs": [
+            "28"
+          ]
+        },
+        {
+          "label": "Mavi Kartın tabi olduğu kanun",
+          "value": "210 sayılı Değerli Kağıtlar Kanunu",
+          "refs": [
+            "28"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "26",
+        "27",
+        "28"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Kaybettirme sebepleri",
+      "body": "**Karar:** Aşağıdaki eylemlerde bulundukları resmî makamlarca tespit edilenlerin vatandaşlığı **Cumhurbaşkanı kararı** ile kaybettirilebilir.\n\n- a) Yabancı bir devletin Türkiye'nin menfaatlerine uymayan hizmetinde bulunanlar. Görevi bırakmaları gerektiği yurt dışında **dış temsilcilikler**, yurt içinde **mülki idare amirleri** tarafından bildirilir. Kendilerine **üç aydan az olmamak** üzere uygun bir süre verilir. Bu süre içinde görevi kendi istekleriyle bırakmayanların vatandaşlığı kaybettirilebilir.\n- b) Türkiye ile savaş hâlinde bulunan bir devletin her türlü hizmetinde, **Cumhurbaşkanının izni olmaksızın** kendi istekleriyle çalışmaya devam edenler.\n- c) **İzin almaksızın** yabancı bir devlet hizmetinde gönüllü olarak askerlik yapanlar.\n\n**İkinci fıkra (yurt dışındaki şüpheliler):**\n- Kapsam: Türk Ceza Kanununun 302, 309, 310, 311, 312, 313, 314 ve 315 inci maddelerindeki suçlar nedeniyle hakkında soruşturma veya kovuşturma yürütülen ve yabancı ülkede bulunduğu için kendisine ulaşılamayan vatandaşlar.\n- Bildirim: Durumun soruşturmada Cumhuriyet savcısı, kovuşturmada mahkeme tarafından öğrenilmesinden itibaren **bir ay** içinde Bakanlığa bildirilir.\n- Kaybettirme: Bakanlıkça Resmî Gazetede yapılan **yurda dön ilanına** rağmen **üç ay** içinde dönmeyenlerin vatandaşlığı Cumhurbaşkanı kararıyla kaybettirilebilir.",
+      "articleRefs": [
+        "29"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Kaybettirmede süreleri ve makamları karıştırma",
+      "body": "- **Üç ay** maddede hem görevi bırakmak için verilecek sürenin alt sınırı, hem de yurda dön ilanından sonraki süre olarak geçer.\n- **Bir ay**, savcı ya da mahkemenin Bakanlığa bildirim süresidir.\n- Savaş hâlindeki devletin hizmetinde çalışmak, **Cumhurbaşkanının** izniyle olursa kaybettirme sebebi sayılmaz. Aranan izin İçişleri Bakanlığının izni değildir.\n- Görevi bırakma bildirimini yurt içinde **mülki idare amirleri**, yurt dışında **dış temsilcilikler** yapar.\n- Kaybettirme kararını **Cumhurbaşkanı** verir. Genel Müdürlük, valilik ya da Bakanlık bu kararı vermez.\n- İkinci fıkra için kesinleşmiş mahkûmiyet aranmaz; soruşturma veya kovuşturma yürütülmesi yeterlidir.\n- Vatandaşlık başvurusunda yalan beyan bir kaybettirme sebebi değildir. Bu durum, kazanma kararının **iptali** sebebidir (md 31).",
+      "articleRefs": [
+        "29",
+        "31"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Kaybettirmenin hükmü ve etkisi",
+      "body": "- Kaybettirme, Cumhurbaşkanı kararının **Resmî Gazetede yayımlandığı tarihten** itibaren hüküm ifade eder. Kararın verildiği, kesinleştiği ya da tebliğ edildiği tarih esas alınmaz.\n- Kaybettirme kararları **şahsidir**; ilgilinin eş ve çocuklarına tesir etmez.",
+      "articleRefs": [
+        "30"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "İptal ve malların tasfiyesi",
+      "body": "**İptal (md 31):** Türk vatandaşlığını kazanma kararı, ilgilinin **yalan beyanı** veya kazanmaya esas teşkil eden **önemli hususları gizlemesi** sonucunda verilmişse, **kararı veren makam** tarafından iptal edilir.\n\n**Mallar (md 33):**\n- Vatandaşlığı iptal edilenler hakkında 5683 sayılı Yabancıların Türkiye'de İkamet ve Seyahatleri Hakkında Kanun hükümleri uygulanır.\n- Malların tasfiyesi gerekli görülürse bu husus **iptal kararında** belirtilir.\n- Bu kişiler Türkiye'deki mallarını **en geç bir yıl** içinde tasfiye etmek zorundadır.\n- Süresinde tasfiye etmezlerse mallar **Hazinece satılır**. Bedeller, kişinin **nam ve hesabına**, kamu haznedarlığı sistemine dahil bir kamu bankasına yatırılır. Bedeller Hazineye gelir kaydedilmez.\n- Kişi iptal kararı aleyhine yargı yoluna başvurursa tasfiye **dava sonuna bırakılır**.",
+      "articleRefs": [
+        "31",
+        "33"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Seçme hakkı ile kayıp",
+      "body": "Aşağıdakiler **ergin olmalarından itibaren üç yıl** içinde Türk vatandaşlığından ayrılabilir:\n- a) Ana ya da babadan dolayı soy bağıyla doğumla Türk vatandaşı olup, yabancı ana veya babanın vatandaşlığını doğumla veya sonradan kazananlar.\n- b) Ana ya da babadan dolayı soy bağıyla Türk vatandaşı olup, doğum yeri esasına göre yabancı bir devlet vatandaşlığını kazananlar.\n- c) **Evlat edinilme** yoluyla Türk vatandaşlığını kazananlar.\n- ç) Doğum yeri esasına göre Türk vatandaşı olup, sonradan yabancı ana veya babasının vatandaşlığını kazananlar.\n- d) Herhangi bir şekilde Türk vatandaşlığını kazanmış ana veya babaya **bağlı olarak** vatandaşlık kazananlar.\n\n**Engel:** Kayıp ilgiliyi **vatansız** kılacaksa seçme hakkı kullanılamaz.\n\n**Hüküm anı (md 35):** Kayıp, hakkın kullanılmasına dair şartların varlığının **tespitine ilişkin karar tarihinden** itibaren hüküm ifade eder.\n\n**Eş ve çocuklar:** Haklarında md 27 hükümleri uygulanır.",
+      "articleRefs": [
+        "34",
+        "35"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Seçme hakkında sık düşülen hatalar",
+      "body": "- **Evlenme yoluyla** vatandaşlık kazananlar listede yoktur; **evlat edinilenler** vardır. Bu ikisini karıştırma.\n- **Süre:** Ergin olmalarından itibaren **üç yıl**dır. Beş yıl değildir, süresiz de değildir.\n- **Mutlak engel:** Tek mutlak engel **vatansız kalma**dır. İkamet, evlilik, askerlik çağı ya da mali tahdit seçme hakkının engeli olarak sayılmamıştır. Mali tahdit, çıkma izninin şartıdır (md 25).\n- **Hüküm anı:** Kayıp, beyan ya da erginlik tarihinde değil, şartların tespitine ilişkin **karar tarihinde** hüküm doğurur. Resmî Gazete yayımı kaybettirmeye aittir (md 30).",
+      "articleRefs": [
+        "25",
+        "30",
+        "34",
+        "35"
+      ],
+      "counterNumbers": [
+        5
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Vatandaşlığın ispatı ve başvuru makamı",
+      "body": "**İspat (md 36):** Türk vatandaşlığının ispatı herhangi bir **şekle tabi değildir**. Aşağıdaki kayıt ve belgeler, **aksi sabit oluncaya kadar** kişinin Türk vatandaşı olduğuna **karine** teşkil eder:\n1. Nüfus kayıtları\n2. Nüfus cüzdanları\n3. Pasaport veya pasaport yerine geçen belgeler\n\nBunlar kesin delil değil, karinedir; aksi ispat edilebilir. Kişinin Türk vatandaşı olup olmadığı konusunda tereddüt varsa husus **Bakanlıktan** sorulur.\n\n**Başvuru (md 37):** Vatandaşlığın kazanılması ve kaybına ilişkin başvurular yurt içinde ikamet edilen yer **valiliğine**, yurt dışında **dış temsilciliklere** yapılır. Başvuru **bizzat veya bu hakkın kullanılmasına ilişkin vekâletname** ile yapılır.",
+      "articleRefs": [
+        "36",
+        "37"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "İptal, düzeltme, geri alma: hangisi ne zaman?",
+      "body": "Bu kurumlar sık karıştırılır:\n- **İptal (md 31):** Kazanma kararı yalan beyan veya önemli hususların gizlenmesiyle verilmişse uygulanır. Kararı veren makam iptal eder.\n- **Düzeltme ve tamamlama (md 39):** Kararda maddi bir hata veya eksiklik sonradan anlaşılırsa uygulanır. Kararı **Genel Müdürlük** alır; Bakanlık ya da kararı veren makam almaz.\n- **Geri alma (md 40):** Kazanma veya kayıp kararı hukuki şartlar oluşmadan ya da **mükerrer** olarak verilmişse karar **geri alınır**.\n\nAynı kişi hakkında mükerrer kazanma kararı verildiğini görürsen doğru cevap iptal ya da düzeltme değil, **geri alma**dır.",
+      "articleRefs": [
+        "31",
+        "39",
+        "40"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Özel durumlar ve ortak hükümler",
+      "body": "- **Kuzey Kıbrıs Türk Cumhuriyeti vatandaşları (md 42):** Türk vatandaşlığını kazanmak üzere başvuranlar, Türk vatandaşı olmak istediklerini **yazılı olarak beyan** ederlerse vatandaşlığı kazanır. Kuzey Kıbrıs Türk Cumhuriyeti vatandaşlığını sonradan kazananlar hakkında md 11 hükümleri uygulanır.\n- **Eski kanunlara göre kaybedenler (md 43):**\n  - Kapsam: Mülga 403 sayılı Kanunun 25 inci maddesinin (a), (ç), (d) ve (e) bentleri uyarınca vatandaşlığı kaybedenler ile mülga 1312 sayılı Kanuna göre vatandaşlıktan ıskat edilenler.\n  - Şartlar: Başvurmaları ve millî güvenlik bakımından engel bir hâllerinin bulunmaması gerekir.\n  - Sonuç: **Türkiye'de ikamet şartı aranmaksızın Bakanlık kararıyla** yeniden vatandaşlığa alınabilirler.\n  - Millî güvenlik bakımından engel hâli bulunanların talepleri Bakanlıkça reddedilir.\n- **Çok vatandaşlık (md 44):** Yabancı bir devlet vatandaşlığını kazananlar belgelerini ibraz eder. İnceleme sonucunda kayden aynı kişiler oldukları tespit edilirse, nüfus aile kütüklerine **çok vatandaşlığa sahip olduklarına dair açıklama** yapılır.\n- **Hizmet bedeli (md 45):** Vatandaşlığın sonradan kazanılmasına ilişkin hizmet bedeli **Bakanlık ve Maliye Bakanlığınca birlikte** belirlenir ve bütçeye gelir kaydedilir. 193 sayılı Gelir Vergisi Kanununa göre geliri olmayanlardan ve onlarla birlikte işlem gören ergin olmayan çocuklarından bu bedel alınmaz.\n- **Yönetmelik (md 46):** Kanunun uygulanmasına ilişkin usul ve esaslar **Cumhurbaşkanı** tarafından çıkarılacak yönetmelikle düzenlenir.",
+      "articleRefs": [
+        "42",
+        "43",
+        "44",
+        "45",
+        "46"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Kim karar verir, ne gerekir?",
+      "body": "- **Kuzey Kıbrıs Türk Cumhuriyeti vatandaşı:** Bu vatandaşlığı sonradan kazanmış olanlara md 11 uygulanır. Diğerleri için yazılı beyan yeterlidir. O ülkenin vatandaşlığından çıkma, ikamet süresi, evlilik ya da Cumhurbaşkanı kararı aranmaz.\n- **Iskat edilenler:** Yeniden vatandaşlığa alınmaları **Bakanlık kararıyla** olur; Cumhurbaşkanı kararıyla değil. Türkiye'de ikamet şartı da aranmaz.\n- **Yabancı vatandaşlık kazanan:** Bu kişinin kaydı kapatılmaz, hakkında kaybettirme ya da çıkma belgesi işlemi öngörülmez. Kütüğe çok vatandaşlık açıklaması düşülür.\n- **Hizmet bedeli:** Bakanlık bu bedeli yalnız başına belirlemez; Maliye Bakanlığıyla birlikte belirler.\n- **Yönetmelik:** Yönetmeliği Bakanlık, Genel Müdürlük ya da TBMM değil, **Cumhurbaşkanı** çıkarır.",
+      "articleRefs": [
+        "42",
+        "43",
+        "44",
+        "45",
+        "46"
+      ]
+    },
+    {
+      "type": "numbers",
+      "title": "Ünitenin süreleri ve sayıları",
+      "rows": [
+        {
+          "label": "Çıkma izin belgesinin geçerliliği",
+          "value": "Karar tarihinden itibaren iki yıl",
+          "refs": [
+            "26"
+          ]
+        },
+        {
+          "label": "Görevi bırakma için verilecek süre",
+          "value": "Üç aydan az olmamak üzere",
+          "refs": [
+            "29"
+          ]
+        },
+        {
+          "label": "Savcı/mahkemenin Bakanlığa bildirimi",
+          "value": "Öğrenmeden itibaren bir ay",
+          "refs": [
+            "29"
+          ]
+        },
+        {
+          "label": "Yurda dön ilanından sonra",
+          "value": "Üç ay",
+          "refs": [
+            "29"
+          ]
+        },
+        {
+          "label": "Kaybettirmeye konu TCK maddeleri",
+          "value": "302, 309, 310, 311, 312, 313, 314, 315",
+          "refs": [
+            "29"
+          ]
+        },
+        {
+          "label": "Kaybettirmenin hüküm anı",
+          "value": "Resmî Gazetede yayım tarihi",
+          "refs": [
+            "30"
+          ]
+        },
+        {
+          "label": "İptalde malların tasfiyesi",
+          "value": "En geç bir yıl; dava açılırsa dava sonu",
+          "refs": [
+            "33"
+          ]
+        },
+        {
+          "label": "Seçme hakkının kullanım süresi",
+          "value": "Erginlikten itibaren üç yıl",
+          "refs": [
+            "34"
+          ]
+        },
+        {
+          "label": "Seçme hakkıyla kaybın hüküm anı",
+          "value": "Şartların tespitine ilişkin karar tarihi",
+          "refs": [
+            "35"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "26",
+        "29",
+        "30",
+        "33",
+        "34",
+        "35"
+      ]
+    },
+    {
+      "type": "compare",
+      "title": "Çıkma (sol) ve kaybettirme (sağ)",
+      "rows": [
+        {
+          "aspect": "Kim karar verir",
+          "left": "Kişinin talebi üzerine Bakanlık",
+          "right": "Cumhurbaşkanı",
+          "refs": [
+            "25",
+            "29"
+          ]
+        },
+        {
+          "aspect": "Hüküm anı",
+          "left": "Çıkma belgesinin imza karşılığı teslimi",
+          "right": "Kararın Resmî Gazetede yayımlandığı tarih",
+          "refs": [
+            "27",
+            "30"
+          ]
+        },
+        {
+          "aspect": "Eşe etkisi",
+          "left": "Tesir etmez",
+          "right": "Tesir etmez (karar şahsidir)",
+          "refs": [
+            "27",
+            "30"
+          ]
+        },
+        {
+          "aspect": "Çocuklara etkisi",
+          "left": "Ebeveyn talebi ve diğer ebeveynin muvafakati ile birlikte kaybederler; muvafakat yoksa hâkim kararı; vatansız kılacaksa uygulanmaz",
+          "right": "Tesir etmez",
+          "refs": [
+            "27",
+            "30"
+          ]
+        },
+        {
+          "aspect": "Mavi Kart hakları",
+          "left": "Doğumla Türk vatandaşı olanlar ve üçüncü dereceye kadar altsoyları yararlanır",
+          "right": "Madde kapsamında sayılmamıştır",
+          "refs": [
+            "28"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "25",
+        "27",
+        "28",
+        "29",
+        "30"
+      ]
+    },
+    {
+      "type": "exam_stats",
+      "title": "Sınav der ki",
+      "rows": [
+        {
+          "label": "Bu ünitenin maddelerinden yayındaki soru",
+          "value": "41",
+          "refs": [
+            "25",
+            "26",
+            "27",
+            "28",
+            "29",
+            "30",
+            "31",
+            "33",
+            "34",
+            "35",
+            "36",
+            "37",
+            "39",
+            "40",
+            "42",
+            "43",
+            "44",
+            "45",
+            "46"
+          ]
+        },
+        {
+          "label": "md 28 — Çıkma izni almak suretiyle Türk vatandaşlığını kaybeden kişilere tanınan haklar",
+          "value": "7 soru",
+          "refs": [
+            "28"
+          ]
+        },
+        {
+          "label": "md 29 — Türk vatandaşlığını kaybettirme",
+          "value": "7 soru",
+          "refs": [
+            "29"
+          ]
+        },
+        {
+          "label": "md 26 — Türk vatandaşlığından çıkma belgeleri",
+          "value": "3 soru",
+          "refs": [
+            "26"
+          ]
+        },
+        {
+          "label": "md 27 — Türk vatandaşlığından çıkmanın geçerliliği ve sonuçları",
+          "value": "3 soru",
+          "refs": [
+            "27"
+          ]
+        },
+        {
+          "label": "md 33 — Malların tasfiyesi",
+          "value": "3 soru",
+          "refs": [
+            "33"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "25",
+        "26",
+        "27",
+        "28",
+        "29",
+        "30",
+        "31",
+        "33",
+        "34",
+        "35",
+        "36",
+        "37",
+        "39",
+        "40",
+        "42",
+        "43",
+        "44",
+        "45",
+        "46"
+      ],
+      "generated": true
+    },
+    {
+      "type": "bridge",
+      "title": "Bu üniteden soru çöz",
+      "articleRefs": [
+        "25",
+        "26",
+        "27",
+        "28",
+        "29",
+        "30",
+        "31",
+        "33",
+        "34",
+        "35",
+        "36",
+        "37",
+        "39",
+        "40",
+        "42",
+        "43",
+        "44",
+        "45",
+        "46"
+      ],
+      "generated": true,
+      "rows": [
+        {
+          "label": "Madde kapsamlı seans",
+          "value": "md 25–31, 33–37, 39, 40, 42–46, 10 soru",
+          "refs": [
+            "25",
+            "26",
+            "27",
+            "28",
+            "29",
+            "30",
+            "31",
+            "33",
+            "34",
+            "35",
+            "36",
+            "37",
+            "39",
+            "40",
+            "42",
+            "43",
+            "44",
+            "45",
+            "46"
+          ]
+        }
+      ]
+    }
+  ]
+}
