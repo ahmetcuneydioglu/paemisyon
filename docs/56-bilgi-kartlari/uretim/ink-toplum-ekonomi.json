@@ -1,0 +1,299 @@
+{
+  "deck": {
+    "topicId": "23d22785-351b-4f39-8516-a419e2c254c0",
+    "sourceSlug": "inkilap-tarihi-meb-12",
+    "sourceLabel": "AI bilgi kartı — Atatürk İlkeleri ve İnkılap Tarihi: Toplumsal ve ekonomik alanda inkılaplar (kaynak pasajı 3.6.1-01…3.7.5-01)",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: kaynak pasajı + bankadaki sorular; stil kapısı 5 açıklama yeniden yazıldı)"
+  },
+  "cards": [
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "XIX. yüzyılda Sultan II. Mahmud, ordu ve devlet memurlarına başlık olarak neyi giyme zorunluluğu getirdi?",
+      "back": "Fes; Batı tarzı kıyafetle birlikte zorunlu kılındı. Ancak bu uygulama toplumun geneline yayılamadı.",
+      "explanation": "Osmanlı'nın çok uluslu yapısı yüzünden halkın giyim kuşamı çok çeşitliydi. II. Mahmud'un düzenlemesi yalnız ordu ve memurları kapsıyordu.",
+      "articleRefs": [
+        "3.6.1-01"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Atatürk, başında şapkayla gidip şapka üzerine konuşma yaptığı gezide hangi ili ziyaret etti?",
+      "back": "Kastamonu. Ağustos 1925'teki bu gezide şapka ve kıyafet konusundaki en büyük adım atıldı.",
+      "explanation": "Atatürk ardından İnebolu'da yaptığı konuşmada kenarlıklı başlığın adının şapka olduğunu açıkça söyledi ve yeni dönemin kıyafet anlayışını netleştirdi.",
+      "articleRefs": [
+        "3.6.1-01"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Türkiye Büyük Millet Meclisi şapka giyilmesi hakkındaki kanunu hangi tarihte kabul etti?",
+      "back": "25 Kasım 1925. O tarihten sonra şapka ve kasket çağdaşlığın simgesi olarak kullanılmaya başlandı.",
+      "explanation": "Kanun, Kastamonu ve İnebolu konuşmalarının ardından geldi. Orduda kasket ve kep kullanımı ise 1925 yılından itibaren başlamıştı.",
+      "articleRefs": [
+        "3.6.1-01"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Bazı Kisvelerin Giyilemeyeceğine Dair Kanun 25 Kasım 1925'te mi çıkarıldı?",
+      "back": "Hayır. Bu kanun 3 Aralık 1934'te çıkarıldı. 25 Kasım 1925, şapka giyilmesi hakkındaki kanunun kabul tarihidir.",
+      "explanation": "Kanuna göre din adamları dinî kıyafetlerini yalnızca ibadethanelerde giyebilir. Hükûmet her din ve mezhepten yalnız bir din görevlisine geçici izin verebilir.",
+      "articleRefs": [
+        "3.6.1-02",
+        "3.6.1-01"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Türk inkılabı kadın kıyafetleri konusunda nasıl bir yol izledi?",
+      "back": "Yasal düzenleme getirmedi; kadınların kıyafette çağdaş dünyaya uyumu kendi doğal sürecine bırakıldı.",
+      "explanation": "Laiklik ilkesi çerçevesindeki şapka ve kıyafet düzenlemeleri toplumda laiklik anlayışını güçlendirdi; kıyafette birlik sağlanması da halkçılık ilkesi doğrultusunda sosyal eşitliğe hizmet etti.",
+      "articleRefs": [
+        "3.6.1-02"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Atatürk'e göre en doğru ve gerçek tarikat hangisidir?",
+      "back": "Uygarlık tarikatı. Atatürk bunu Kastamonu gezisinde, Türkiye Cumhuriyeti'nin şeyhler ve dervişler memleketi olamayacağını vurgularken söyledi.",
+      "articleRefs": [
+        "3.6.2-01"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Tarikatlar, tekkeler, zaviyeler ve türbeler hangi tarihte kabul edilen kanunla kapatıldı?",
+      "back": "30 Kasım 1925; kanun Türkiye Büyük Millet Meclisi'nde kabul edildi.",
+      "explanation": "Bu düzenleme sosyal hayatın laikleşmesinde önemli bir adım oldu. Tekke, zaviye ve türbelerin sosyal hayattaki etkisi sona erdi, dinî yaşam bireylerin tercihine bırakıldı.",
+      "articleRefs": [
+        "3.6.2-01"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Şeyhlik, dervişlik ve türbedarlık unvanları, ağa, hacı, paşa gibi unvanların resmî kullanımını yasaklayan kanunla mı kaldırıldı?",
+      "back": "Hayır. Bu unvanlar 30 Kasım 1925'te tekke, zaviye ve türbeleri kapatan kanunla yasaklandı; ağa, paşa gibi unvanların resmî kullanımı ise ayrı bir kanunla yasaklandı.",
+      "explanation": "Tekke kanunuyla yasaklanan unvanlar: şeyhlik, dervişlik, dedelik, seyitlik, babalık, müritlik ve türbedarlık. Ağa, hacı, hafız, hoca, molla, bey, paşa, hazretleri gibi unvanların resmî kullanımı ise Soyadı Kanunu'nun kabul edildiği 1934 yılında çıkarılan bir kanunla yasaklandı.",
+      "articleRefs": [
+        "3.6.2-01",
+        "3.6.4-01"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Miladi takvim hangi tarihten itibaren Türkiye Cumhuriyeti'nin resmî takvimi olarak yürürlüğe girdi?",
+      "back": "1 Ocak 1926'dan itibaren. Miladi takvim 1925'te çıkarılan bir kanunla kabul edilmişti.",
+      "explanation": "Osmanlı'da günlük yaşamda hicri takvim, idari ve mali işlerde Rumi takvim kullanılıyordu. İkisi de bırakılarak evrensel hâle gelen miladi takvime geçildi.",
+      "articleRefs": [
+        "3.6.3-01"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Ezani saat, günü 24 saat dilimine bölen bir sistem miydi?",
+      "back": "Hayır. Ezani saat 12 saat dilimini esas alıyordu; 24 saat dilimine dayanan alafranga saattir ve ezani saatin yerine kabul edildi.",
+      "explanation": "Takvim, saat ve ölçülerdeki farklılık çağdaş dünyayla bütünleşmenin önünde engel görülüyordu; sorun Avrupa'nın kullandığı ölçülerin kabulüyle çözüldü.",
+      "articleRefs": [
+        "3.6.3-01"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Osmanlı'da kullanılan arşın, okka, endaze gibi birimlerin yerine hangi ölçü birimleri kabul edildi?",
+      "back": "Metre ve kilogram gibi dünyada yaygın kabul gören birimler; düzenleme 1931'de yapıldı.",
+      "explanation": "Eski birimler bölgeden bölgeye farklılık gösteriyordu. Yeni birimlerle iç piyasada alışveriş güvenilir hâle geldi, uluslararası ekonomik ilişkilerde de uyum sağlandı. Takvim, saat, rakam ve ölçülerde çağdaş dünyayla uyum, 1935'te hafta tatilinin cumadan pazara alınmasıyla tamamlandı.",
+      "articleRefs": [
+        "3.6.3-01"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Soyadı Kanunu hangi tarihte kabul edildi?",
+      "back": "21 Haziran 1934.",
+      "explanation": "Kanun, soyadı kullanılmamasının resmî işlemlerde yol açtığı karışıklığı giderdi ve halkçılık ilkesi doğrultusunda toplumsal eşitliği sağladı. Gazi Mustafa Kemal Paşa'ya Atatürk soyadını Türkiye Büyük Millet Meclisi 24 Kasım 1934'te verdi.",
+      "articleRefs": [
+        "3.6.4-01"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Soyadı Kanunu'na göre herkes ne kadar süre içinde soyadı almak zorundaydı?",
+      "back": "İki yıl içinde. Alınacak soyadlarının Türkçe olması gerekiyordu.",
+      "explanation": "Soyadları ahlaka aykırı olamazdı ve sosyal eşitsizlik yaratacak vurgular taşıyamazdı.",
+      "articleRefs": [
+        "3.6.4-01"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Karma eğitime hangi öğretim yılından itibaren geçildi?",
+      "back": "1927-1928 öğretim yılından itibaren. Kadınlar erkeklerle aynı şartlarda eğitime ve iş hayatına katılma hakkı kazandı.",
+      "explanation": "Kadın haklarına yasal güvence 1926'da kabul edilen Türk Medeni Kanunu ile geldi; karma eğitim bu eşitliği eğitim alanına taşıdı. Atatürk döneminde ilköğretimde öğrenci sayısı en çok kızlarda arttı (%323). Yükseköğretimde kadın öğretim üyesi sayısı 1938'de 99'a ulaştı.",
+      "articleRefs": [
+        "3.6.5-01"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Türk Medeni Kanunu kadınlara seçme ve seçilme hakkı tanıdı mı?",
+      "back": "Hayır. Medeni Kanun kadınları sosyal hayatta eşit konuma getirdi ama siyasal hak tanımadı; siyasal eşitlikte ilk adım 1930'da belediye seçimleriyle atıldı.",
+      "explanation": "Medeni Kanun 1926'da kabul edildi ve kadın haklarını yasal güvenceye kavuşturdu. Siyasal alanda ise kadınlar 1933'te muhtarlık seçimlerine katılma hakkını elde etti.",
+      "articleRefs": [
+        "3.6.5-01",
+        "3.6.5-02"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Türk kadını genel seçimlerde seçme ve seçilme hakkını hangi tarihte kazandı?",
+      "back": "5 Aralık 1934. Kadınlar genel seçimlerde ilk oyunu 1935'te kullandı ve 18 kadın milletvekili Meclis'e girdi.",
+      "explanation": "Türk kadını bu haklara birçok çağdaş ülkeden önce ulaştı: Fransa'da kadınlar 1944'te, Yunanistan'da 1952'de seçme ve seçilme hakkına kavuştu.",
+      "articleRefs": [
+        "3.6.5-02"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Türkiye İktisat Kongresi hangi tarihte toplandı?",
+      "back": "17 Şubat 1923. Amaç, yeni devletin ekonomi politikasını çizmek ve kalkınmayı sağlamaktı.",
+      "explanation": "Katılımcılar sanayici, tüccar, esnaf ve çiftçi kesimlerinin temsilcileriydi. Atatürk açılışta ekonominin yönünün belirlenmesi gerektiğini vurguladı.",
+      "articleRefs": [
+        "3.7.1-01"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Atatürk, Türkiye İktisat Kongresi'nin açılış konuşmasında yeni Türkiye'nin nasıl bir devlet olacağını söyledi?",
+      "back": "Cihangir bir devlet değil, ekonomik bir devlet olacağını söyledi.",
+      "explanation": "Atatürk'e göre siyasal ve askerî zaferler ekonomik zaferlerle taçlandırılmazsa kalıcı olmaz, kısa sürede söner.",
+      "articleRefs": [
+        "3.7.1-01"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Türkiye İktisat Kongresi'nde benimsenen Misak-ı İktisadi neyi öngörüyordu?",
+      "back": "Ekonomi andı anlamına gelir; Türk milletinin kendi kaynak ve yeterliliklerine dayanarak ulusal ekonomisini kurmasını öngörüyordu.",
+      "explanation": "Böylece savaşla kazanılan siyasal bağımsızlık ekonomik bağımsızlıkla desteklenecek, tam bağımsızlığa ulaşılacaktı. Kongre kararları arasında yerli ham maddeye dayalı sanayi kurulması, özel girişime kredi verecek bir devlet bankası ve yabancı tekellerden kaçınılması vardı.",
+      "articleRefs": [
+        "3.7.1-02"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Türkiye, 1929 Dünya Ekonomik Bunalımı'nın yarattığı darboğazdan kurtulmak için hangi ekonomi anlayışına yöneldi?",
+      "back": "Devletçi ekonomi anlayışına yöneldi; ayrıca planlı ekonomi benimsendi.",
+      "explanation": "Amerika Birleşik Devletleri'nde başlayan bunalımla ham madde ve tarım ürünü fiyatları düştü, dış ticaret daraldı, iflaslar yaşandı ve piyasa mekanizmasının işlemediği görüldü. Özel girişimin gücünün yetmediği sektörler desteklendi ya da devletçe kuruldu.",
+      "articleRefs": [
+        "3.7.1-02"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Birinci Beş Yıllık Sanayi Planı hangi yıl yürürlüğe konuldu?",
+      "back": "1934; kalkınma hamlesi devletin gözetimi ve müdahalesiyle yürütülmeye başlandı.",
+      "explanation": "Bu dönemde yapılan bütün yatırımlar devletçilik ilkesiyle gerçekleştirildi.",
+      "articleRefs": [
+        "3.7.1-03"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Teşvik-i Sanayi Kanunu ile millî sermayeye hangi kolaylıklar sağlanacaktı?",
+      "back": "Ucuz devlet arazisi ve binası tahsisi, taşıma indirimleri ve vergi muafiyeti.",
+      "explanation": "Kanun 1927'de çıkarıldı. Amacı özel girişimi desteklemek, millî sermayeyi güçlendirmek ve yerli sanayiyi kurmaktı. Çimento, şeker ve dokumada üretimi artırdı; ancak 1929 Dünya Ekonomik Bunalımı kanunun tam uygulanmasının önüne geçti.",
+      "articleRefs": [
+        "3.7.2-01"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Türkiye İş Bankası, bakanlar kurulu kararıyla kurulduğu için bir devlet bankası mıydı?",
+      "back": "Hayır. Bakanlar kurulu kararıyla kurulsa da özel bir bankaydı; 26 Ağustos 1924'te kuruldu.",
+      "explanation": "İş Bankası ticaret ve sanayi yatırımlarını destekledi, sonra kurulan bankalara örnek oldu. Sanayi ve Maadin Bankası ise 19 Nisan 1925'te Ticaret Bakanlığı tarafından kuruldu.",
+      "articleRefs": [
+        "3.7.2-01"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Tekstil sektörüne öncülük etmesi amacıyla 1933'te hangi kuruluş kuruldu?",
+      "back": "Sümerbank.",
+      "explanation": "Sanayi ve Maadin Bankası sanayiye yatırım yapmak ve maden imtiyazlarını alıp işletmekle görevlendirildi. Aynı alana mali destek için Etibank, yeraltı kaynaklarını araştırmak için MTA (Maden Tetkik Arama) Enstitüsü kuruldu.",
+      "articleRefs": [
+        "3.7.2-01"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Devletçilik anlayışıyla sanayiyi geliştirmek için kurulan ve işletmesini devletin üstlendiği ekonomi kuruluşlarına ne ad verildi?",
+      "back": "Kamu İktisadi Teşekkülleri (KİT).",
+      "explanation": "KİT'ler devletçilik anlayışının ürünüydü. Sanayileşmeye katkı sunan önemli işletmeler arasında dokuma, cam ve şişe, kâğıt ile demir-çelik vardı.",
+      "articleRefs": [
+        "3.7.2-02"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Aşar vergisinin kaldırılması devletçilik anlayışı doğrultusunda atılmış bir adım mıydı?",
+      "back": "Hayır; halkçılık anlayışı doğrultusunda atıldı. Devletçilik ilkesi ise 1934'te yürürlüğe konulan Birinci Beş Yıllık Sanayi Planı dönemindeki yatırımlara yön verdi.",
+      "explanation": "Tarımda ayrıca Ziraat Bankası çiftçilere kredi veren bir kamu kuruluşuna dönüştürüldü ve 1929'da Zirai Kredi Kooperatifleri Kanunu çıkarıldı.",
+      "articleRefs": [
+        "3.7.3-01",
+        "3.7.1-03"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Kabotaj Kanunu hangi tarihte yürürlüğe girdi?",
+      "back": "1 Temmuz 1926. Türk kara sularında gemi işletme hakkı yalnız Türkiye Cumhuriyeti vatandaşlarına verildi.",
+      "explanation": "Kapitülasyonlar yüzünden Türk gemicileri kendi karasularında adeta gemi işletemez hâle gelmişti. Kanunun güvencesiyle Türk deniz ticaret filosu kurulmaya başlandı; mali destek için Denizbank kuruldu.",
+      "articleRefs": [
+        "3.7.4-01"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Kabotaj Kanunu hangi Atatürk ilkesi doğrultusunda atılmış bir adımdı?",
+      "back": "Milliyetçilik ilkesi doğrultusunda.",
+      "explanation": "Türkiye böylece denizcilikte de, demir yollarındaki gibi, kendi kaynaklarına dayanan bir ülke oldu.",
+      "articleRefs": [
+        "3.7.4-01"
+      ]
+    }
+  ]
+}

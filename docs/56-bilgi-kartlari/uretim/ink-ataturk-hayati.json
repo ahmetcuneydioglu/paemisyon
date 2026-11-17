@@ -1,0 +1,165 @@
+{
+  "deck": {
+    "topicId": "23d22785-351b-4f39-8516-a419e2c254c0",
+    "sourceSlug": "inkilap-tarihi-meb-12",
+    "sourceLabel": "AI bilgi kartı — Atatürk İlkeleri ve İnkılap Tarihi: Mustafa Kemal'in hayatı ve fikir dünyası (kaynak pasajı 1.1.1-01…1.1.3-04)",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: kaynak pasajı + bankadaki sorular; stil kapısı 4 açıklama yeniden yazıldı; 1 açıklama düşürüldü)"
+  },
+  "cards": [
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Mustafa Kemal hangi yıl doğdu?",
+      "back": "1881'de doğdu. Doğum yeri Selanik'teki Ahmet Subaşı Mahallesi'dir.",
+      "explanation": "Zübeyde Hanım ile Ali Rıza Efendi'nin dördüncü çocuğuydu. Ailenin altı çocuğundan Mustafa ve Makbule dışındakiler küçük yaşta öldü.",
+      "articleRefs": [
+        "1.1.1-01"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Babası Ali Rıza Efendi vefat edince Mustafa Kemal ailesiyle birlikte nereye gitti?",
+      "back": "Langaza'daki çiftliğe gitti. Dayısı Hüseyin Ağa orada çalışıyordu.",
+      "explanation": "Bu göçün sebebi, babasının ölümünden sonra ailenin düştüğü maddi sıkıntıydı. Zübeyde Hanım oğlunun çiftlikte çalışmasını değil, okumasını istiyordu. Halası Emine Hanım onu çağırınca Mustafa Kemal Selanik'e döndü ve öğrenimini sürdürdü.",
+      "articleRefs": [
+        "1.1.2-01"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Mustafa Kemal Selanik Mülkiye Rüştiyesini hangi olay üzerine bıraktı?",
+      "back": "Kaymak Hafız lakaplı matematik öğretmeni Hüseyin Efendi kendisine kötü davranınca okulu bıraktı.",
+      "explanation": "Askerliğe ilgi duyan Mustafa Kemal için bu olay hayatında bir dönüm noktası oldu. Bundan sonra annesi hiç istemese de askerî rüştiyede okumayı seçti.",
+      "articleRefs": [
+        "1.1.2-02"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Mustafa Kemal askerî rüştiyeyi Manastır'da mı okudu?",
+      "back": "Hayır. Selanik Askerî Rüştiyesinde okudu; Manastır'a ise askerî idadi için gitti.",
+      "explanation": "Mülkiye Rüştiyesini bırakınca Selanik Askerî Rüştiyesine girdi ve askerî öğrenimi başladı. Rüştiyeyi bitirdikten sonra sınavı kazanıp Manastır Askerî İdadisinde yatılı öğrenci oldu.",
+      "articleRefs": [
+        "1.1.2-02",
+        "1.1.2-03"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Mustafa Kemal Selanik Askerî Rüştiyesini hangi yıl bitirdi?",
+      "back": "1896'da bitirdi. Ardından sınavla Manastır Askerî İdadisine girip yatılı öğrenci oldu.",
+      "explanation": "İdadide Üsküp, Yanya ve Manastır askerî rüştiyelerinden gelen öğrencilerle aynı sınıfta okudu. Böylece farklı yerlerden gelen insanlarla tanıştı.",
+      "articleRefs": [
+        "1.1.2-03"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Manastır Askerî İdadisinde Mustafa Kemal'in edebiyata, özellikle şiire ilgi duymasını kim sağladı?",
+      "back": "Sınıf arkadaşı Ömer Naci sağladı.",
+      "explanation": "Mustafa Kemal Ömer Naci'yle idadide tanıştı ve sınıf arkadaşı oldu. Edebiyat merakı onu Namık Kemal ile Tevfik Fikret'i okumaya götürdü. Bu okumalar da içindeki vatan ve millet sevgisini güçlendirdi.",
+      "articleRefs": [
+        "1.1.2-03"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Mustafa Kemal'in tarih sevgisinde etkisi büyük olan ve yıllar sonra \"bana yeni bir ufuk açtı\" diye andığı idadi hocası kimdir?",
+      "back": "Kolağası Mehmet Tevfik Bey'dir.",
+      "explanation": "Tarih, özellikle Türk tarihi, Mustafa Kemal'in ilgi alanları arasındaydı. Bu hocasına minnet borcu olduğunu söyleyerek ondan saygıyla söz etmiştir.",
+      "articleRefs": [
+        "1.1.2-03"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Mustafa Kemal İstanbul'da harp okuluna hangi tarihte başladı?",
+      "back": "13 Mart 1899'da başladı.",
+      "explanation": "Ali Fuat (Cebesoy), Kazım (Karabekir) ve Refet (Bele) gibi Millî Mücadele subayları da aynı dönemde harp okulundaydı. Bu dönem, onun vatan ve millet fikirlerinin olgunlaştığı ve Batı'ya dönük çağdaşlaşma düşüncesinin geliştiği bir dönem oldu.",
+      "articleRefs": [
+        "1.1.2-04"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Mustafa Kemal Harp Akademisi öğrenimini Selanik'te mi gördü?",
+      "back": "Hayır. Harp Akademisi İstanbul'daydı; harp okulunu bitirdiği yıl teğmen rütbesiyle oraya başladı.",
+      "explanation": "Selanik, onun doğup büyüdüğü şehirdir. Manastır Askerî İdadisinden sonra harp okulu için İstanbul'a gitti. Akademide bir yandan meslek bilgisini geliştirdi, bir yandan da ülke sorunlarını ve dünyadaki gelişmeleri takip etti.",
+      "articleRefs": [
+        "1.1.2-04",
+        "1.1.3-01"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Mustafa Kemal ilk görev yeri olan Şam'daki V. Ordu'ya hangi yıl atandı?",
+      "back": "1905'te atandı.",
+      "explanation": "Şam, Makedonya'ya göre sosyal ve ekonomik yönden geri kalmıştı. V. Ordu'ya bağlı süvari alayları, Arap kabilelerinin ayaklanmalarını bastırmakla görevliydi.",
+      "articleRefs": [
+        "1.1.3-02"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Mustafa Kemal, Şam'da kurduğu Vatan ve Hürriyet Cemiyetinin şubelerini hangi iki şehirde açtı?",
+      "back": "Beyrut ve Selanik'te açtı.",
+      "explanation": "Beyrut şubesini Ali Fuat'ın (Cebesoy) desteğiyle açtı. Suriye'de istediği gibi çalışamayınca gizlice Selanik'e geçti ve oradaki şubeyi kurdu.",
+      "articleRefs": [
+        "1.1.3-02"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Mustafa Kemal Vatan ve Hürriyet Cemiyetini Sofya'da mı kurdu?",
+      "back": "Hayır. Cemiyeti Şam'da kurdu; Sofya'ya Balkan Savaşları'ndan sonra ateşemiliter olarak atandı.",
+      "explanation": "Şam, Mustafa Kemal'in 1905'teki ilk görev yeriydi. Sofya'daki ateşemiliterliği sırasında bir Alman ailenin yanında kaldı; bu da Almancasını ilerletmesini sağladı.",
+      "articleRefs": [
+        "1.1.3-02"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Mustafa Kemal \"Ben inkılap ruhunu ondan aldım.\" sözünü hangi şair için söyledi?",
+      "back": "Tevfik Fikret için söyledi; onun özgürlük ve laiklik anlayışından esinlendi.",
+      "articleRefs": [
+        "1.1.3-03"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Mustafa Kemal'in en sevdiği şairlerden olan ve \"Millî Şair\" diye de tanınan isim Namık Kemal midir?",
+      "back": "Hayır. Bu isim Mehmet Emin Yurdakul'dur; Namık Kemal \"Vatan ve Hürriyet\" şairi olarak bilinir.",
+      "explanation": "Mustafa Kemal, Yurdakul'u milliyetçiliğin önemli temsilcisi sayar ve en sevdiği şairler arasında görürdü. Namık Kemal'in şiirlerini ezbere bilirdi; onu \"Türk ulusunun yüzyıllardan beri beklediği ses\" diye anardı.",
+      "articleRefs": [
+        "1.1.3-03"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Mustafa Kemal'in Nutuk adlı eseri hangi yıllar arasındaki gelişmeleri kapsar?",
+      "back": "1919'dan 1927'ye kadar geçen dönemin gelişmelerini kapsar.",
+      "explanation": "Nutuk, Mustafa Kemal'in kaleme aldığı en önemli eserdir. Askerlik birikimini aktardığı eserler de yazmıştır; \"Takımın Muharebe Talimi\" ve \"Cumalı Ordugâhı\" bunlar arasındadır.",
+      "articleRefs": [
+        "1.1.3-04"
+      ]
+    }
+  ]
+}

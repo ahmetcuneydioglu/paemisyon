@@ -1,0 +1,273 @@
+{
+  "deck": {
+    "topicId": "23d22785-351b-4f39-8516-a419e2c254c0",
+    "sourceSlug": "inkilap-tarihi-meb-12",
+    "sourceLabel": "AI bilgi kartı — Atatürk İlkeleri ve İnkılap Tarihi: Siyasi alanda inkılaplar (kaynak pasajı 3.3.1-01…3.3.5-02)",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: kaynak pasajı + bankadaki sorular; stil kapısı 2 açıklama yeniden yazıldı)"
+  },
+  "cards": [
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Mudanya Ateşkes Anlaşması'nın imzalanmasıyla ülkenin fiilen tek siyasi gücü hangisi oldu?",
+      "back": "TBMM Hükûmeti.",
+      "explanation": "İstanbul ile Ankara arasındaki yönetim ikiliğinin çözümü, Millî Mücadele boyunca nihai zaferin sonrasına bırakılmıştı.",
+      "articleRefs": [
+        "3.3.1-01"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "İtilaf Devletleri Lozan'daki barış konferansına TBMM'nin yanında hangi hükûmeti de davet etti?",
+      "back": "İstanbul Hükûmeti'ni. Bu çağrı, TBMM Hükûmeti'ni ülkedeki siyasi ikiliği çözmek için harekete geçmeye zorladı.",
+      "explanation": "İstanbul Hükûmeti konferansa birlikte katılmayı önerdi. Atatürk buna hemen karşılık verdi: Barışta Türkiye Devleti'ni yalnız TBMM Hükûmeti temsil eder.",
+      "articleRefs": [
+        "3.3.1-01"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "TBMM saltanatın kaldırılmasına ilişkin kanun teklifini hangi tarihte kabul etti?",
+      "back": "1 Kasım 1922'de; saltanat kaldırıldı ve Osmanlı Devleti sona erdi.",
+      "explanation": "Teklif, saltanatla halifeliğin birbirinden ayrılmasını ve saltanat makamının kaldırılmasını içeriyordu. Bazı üyeler teklifi komisyonlara havale ederek zaman kazanmak istedi. Teklif, Atatürk'ün meclisteki konuşmasının ardından kabul edildi.",
+      "articleRefs": [
+        "3.3.1-01"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Saltanatın kaldırılmasıyla egemenlik kimin eline geçti?",
+      "back": "TBMM'nin, yani millî iradenin eline geçti.",
+      "explanation": "Saltanatın kaldırılmasıyla millî egemenlik anlayışı kökleşti ve cumhuriyete giden yol açıldı. TBMM Hükûmeti de Türk Milleti'nin tek temsilcisi olduğunu dünyaya duyurdu.",
+      "articleRefs": [
+        "3.3.1-02"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Millî Mücadele'yi yürüten I. TBMM'nin yaptığı tek inkılap hangisidir?",
+      "back": "Saltanatın kaldırılması; cumhuriyetçilik ilkesi doğrultusunda gerçekleştirildi.",
+      "articleRefs": [
+        "3.3.1-02"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Ankara hangi tarihte çıkarılan kanunla resmen başkent oldu?",
+      "back": "13 Ekim 1923'te; TBMM'de kabul edilen kanunla.",
+      "explanation": "Kanunun ifadesi şöyleydi: \"Türkiye Devleti'nin Makarr-ı İdaresi Ankara Şehridir.\"",
+      "articleRefs": [
+        "3.3.2-01"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Ankara, resmen başkent olmadan önce hangi tarihten beri fiilî başkent konumundaydı?",
+      "back": "23 Nisan 1920'den beri; TBMM'nin açıldığı günden itibaren.",
+      "explanation": "Millî Mücadele yıllarında İstanbul hükûmetlerinin tutumu ve TBMM'nin Ankara'da bulunması, yeni devletin merkezi olarak Ankara'nın seçilme ihtimalini güçlendirdi.",
+      "articleRefs": [
+        "3.3.2-01"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Başkent seçiminde askerî açıdan Ankara neden İstanbul'a tercih edildi?",
+      "back": "İstanbul'u dönemin askerî koşullarında savunmak zordu; Ankara ise daha güvenli bir konumdaydı.",
+      "explanation": "Millî Mücadele'nin merkezi Ankara'nın başkent olması, imparatorluktan millî devlete geçişte yeni bir dönemin sembolü olacaktı.",
+      "articleRefs": [
+        "3.3.2-01"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "TBMM'nin açılışında alınan kararlarda millî egemenliği vurgulayan ilke nedir?",
+      "back": "TBMM'nin üstünde bir güç bulunmadığı ilkesi.",
+      "explanation": "Millî iradeyi esas alan bu ilkeler, adı konmasa da dönemin kamuoyunda cumhuriyet düşüncesine zemin hazırladı.",
+      "articleRefs": [
+        "3.3.3-01"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "\"Milletin varlığını yine milletin azim ve kararı kurtaracaktır\" ifadesi Erzurum Kongresi kararlarında mı yer aldı?",
+      "back": "Hayır; bu ifade Amasya Genelgesi'ndedir. Erzurum Kongresi kararlarında yer alan ilke, millî iradeyi hâkim kılmanın esas olduğudur.",
+      "explanation": "Bu iki metin, Millî Mücadele'nin baştan itibaren millî iradeyi esas aldığını gösterir.",
+      "articleRefs": [
+        "3.3.3-01"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Cumhuriyetin ilanından önce meclis başkanı hükûmetin de başında olduğu için yönetim sistemine ne ad veriliyordu?",
+      "back": "TBMM hükûmeti (meclis hükûmeti sistemi).",
+      "explanation": "Millî egemenliği benimseyen ve devleti ile hükûmeti temsil eden bir meclisin varlığı, fiilen adı konmamış bir cumhuriyet demekti. Dönemin siyasi ve sosyal zorunlulukları yüzünden cumhuriyet adı kullanılmıyordu.",
+      "articleRefs": [
+        "3.3.3-01",
+        "3.3.3-03"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Cumhuriyetin ilanından önce bakanlık seçimleri kilitlenip hükûmet kurulamayınca ortaya çıkan krize ne ad verildi?",
+      "back": "Kabine buhranı. Bu kriz, TBMM Başkanı Atatürk'e sistemi yenileme fırsatı verdi.",
+      "explanation": "Dönemin sisteminde hükûmet üyelerini meclis tek tek seçiyordu. Siyasi gruplar hükûmette yer almaya çalışınca seçimler tıkandı ve meclis çalışmaları aksadı.",
+      "articleRefs": [
+        "3.3.3-02"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Cumhuriyet hangi tarihte ilan edildi?",
+      "back": "29 Ekim 1923'te; Atatürk'ün meclise sunduğu tasarıyı konuşmacılar hararetle destekleyince ilan edildi.",
+      "explanation": "Tasarıya göre devletin şekli cumhuriyet olacak, devleti Büyük Millet Meclisi yönetecekti. İlanın ardından Gazi Mustafa Kemal Paşa ilk Cumhurbaşkanı, İsmet Paşa ilk Başbakan seçildi.",
+      "articleRefs": [
+        "3.3.3-02"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Cumhuriyetin ilanıyla kabine sisteminden meclis hükûmeti sistemine mi geçildi?",
+      "back": "Hayır, tam tersi oldu: Meclis hükûmeti sistemi bırakılıp kabine sistemine geçildi. Böylece hükûmet kurma bunalımı aşıldı.",
+      "explanation": "Bu geçiş hükûmet kurma bunalımını sona erdirdi. Cumhuriyetin ilanının başka sonuçları da oldu: Egemenliğin kayıtsız şartsız millete ait olması fikri resmîleşti. Rejim adını aldı ve sonraki inkılaplara zemin hazırlandı. Cumhuriyetçilik ilkesi de böylece hayata geçti.",
+      "articleRefs": [
+        "3.3.3-03"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Cumhuriyetin ilanıyla hangi Atatürk ilkesi hayata geçirilmiş oldu?",
+      "back": "Cumhuriyetçilik ilkesi.",
+      "explanation": "Yeni devletin yönetim sisteminin resmen cumhuriyet olmasıyla Türk tarihinde yeni bir dönem başladı.",
+      "articleRefs": [
+        "3.3.3-03"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Halifelik hangi yıl Osmanlı hanedanına geçti?",
+      "back": "1517'de; Yavuz Sultan Selim'in Mısır'ı fethetmesiyle.",
+      "explanation": "Dört Halife Dönemi'nde halifeler bir nevi seçimle belirlenmişti. Emeviler ve Abbasiler döneminde ise halifelik saltanata dönüştü.",
+      "articleRefs": [
+        "3.3.4-01"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "1 Kasım 1922'de saltanat kaldırıldığında halifelik makamına ne oldu?",
+      "back": "Makama dokunulmadı. Halifelik, siyasi yetkilerinden soyutlanarak Osmanlı hanedanına bırakıldı.",
+      "explanation": "Bu makam, özellikle cumhuriyetin ilanından sonra yapısı ve hedefleri belirginleşen yeni devletle çelişmeye başladı.",
+      "articleRefs": [
+        "3.3.4-01"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Son Halife Abdülmecid Efendi'nin hangi tutumu millî egemenliğe ters düşüyordu?",
+      "back": "Kendini meclisin üzerinde görmesi ve meclisi denetimi altına almak istemesi.",
+      "explanation": "Abdülmecid Efendi'yi TBMM seçmişti. Yönetimde hem Cumhurbaşkanı hem Halife bulunması da devlet yapısında ikilik yaratıyordu.",
+      "articleRefs": [
+        "3.3.4-01"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Halifelik hangi tarihte kaldırıldı?",
+      "back": "3 Mart 1924'te; Urfa Milletvekili Şeyh Saffet Efendi ve 53 arkadaşının kanun teklifi TBMM'de kabul edildi.",
+      "explanation": "Yeni rejime karşı bazı siyasi isimler İstanbul'da Halife'nin çevresinde toplanıyordu. Bu durum, Cumhuriyet yönetimini harekete geçiren etkenler arasındaydı.",
+      "articleRefs": [
+        "3.3.4-02"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Halifelik kaldırılınca yurt dışına çıkarılan yalnız Halife Abdülmecid Efendi mi oldu?",
+      "back": "Hayır; Halife ile birlikte bütün Osmanlı hanedanı yurt dışına çıkarıldı.",
+      "explanation": "Halifeliğin kaldırılmasıyla devlet sistemindeki ikilik sona erdi ve sonraki inkılapların önü açıldı. Laik yönetime geçişte bir adım daha atılmış oldu.",
+      "articleRefs": [
+        "3.3.4-02"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "TBMM açıldığında yürürlükte olan Osmanlı Kanun-ı Esasi'si 1909'da mı kabul edilmişti?",
+      "back": "Hayır; Kanun-ı Esasi 1876 tarihlidir. 1909'da, II. Meşrutiyet'in ilanından sonra yalnız bazı maddeleri yenilendi.",
+      "explanation": "Kanun-ı Esasi yürürlükteydi ama pratikte uygulanmıyordu. Bu nedenle TBMM, onu kabul ya da reddetmeden millî egemenliğe dayalı kısa bir anayasa hazırlamak zorunda kaldı.",
+      "articleRefs": [
+        "3.3.5-01"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Yeni Türkiye'nin ilk anayasa metni hangi tarihte kabul edildi?",
+      "back": "20 Ocak 1921'de. Osmanlı Kanun-ı Esasi'sinden farklı olduğunu göstermek için metne Teşkilat-ı Esasiye Kanunu adı verildi.",
+      "explanation": "Metin, düşman işgaline karşı mücadele sürerken iki ay süren çalışmalarla hazırlandı ve yeni Türkiye'nin ilk anayasa metni oldu.",
+      "articleRefs": [
+        "3.3.5-01"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "1921 Teşkilat-ı Esasiye Kanunu temel hakları ve devlet teşkilatını neden ayrıntılı biçimde düzenlemedi?",
+      "back": "Savaş şartları ayrıntılı bir metin hazırlamaya imkân vermediği için.",
+      "explanation": "Egemenliğin millette olduğunun açıkça yazılması, Türk tarihinde yeni bir dönemin başlangıcı oldu.",
+      "articleRefs": [
+        "3.3.5-01"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Cumhuriyetin ilanından sonra hazırlanan yeni anayasa TBMM'de hangi tarihte kabul edildi?",
+      "back": "20 Nisan 1924'te. Anayasa komisyonunun hazırladığı metin kabul edilerek yürürlüğe girdi ve 20 Temmuz 1961'e kadar yürürlükte kaldı.",
+      "explanation": "Bu anayasa, egemenliğin kayıtsız şartsız millete ait olduğunu kabul etti. Yasamayı TBMM'ye, yürütmeyi Cumhurbaşkanı ve hükûmete, yargıyı bağımsız mahkemelere bıraktı.",
+      "articleRefs": [
+        "3.3.5-02"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "\"Devletin dini İslam'dır.\" ibaresi 1924 Anayasası'ndan hangi yıl çıkarıldı?",
+      "back": "1928'de.",
+      "explanation": "Anayasa kabul edildiğinde Türkiye Cumhuriyeti'nin dininin İslam olduğu hükmünü taşıyordu. Atatürk ilkeleri ise 1937'de anayasaya girdi.",
+      "articleRefs": [
+        "3.3.5-02"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Kadınlara genel seçimlerde seçme ve seçilme hakkı hangi yıl verildi?",
+      "back": "1934'te. Kadınlar bu hakkı önce 1930'da belediye seçimlerinde, 1933'te muhtarlık seçimlerinde kazanmıştı.",
+      "articleRefs": [
+        "3.3.5-02"
+      ]
+    }
+  ]
+}

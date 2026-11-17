@@ -287,12 +287,43 @@ const YASAK_ARKA =
 /** Ön yüzde olumsuz soru kalıbı ("…edilemez mi?", "…değil midir?"): cevap iki yöne okunur, kart yeniden kurulur. */
 const YASAK_ON = /(maz|mez|mazlar|mezler|değil|yok|yasak)\s*m[ıiuü](dır|dir|dur|dür)?\s*\?\s*$/iu;
 
+/**
+ * Kopya kapısı (kaynak kipi, Doc 56 §12; pilot denetimi 15 Kas 2026): açıklamada kaynak pasajıyla art arda
+ * KOPYA_ESIK kelimelik ortak dizi varsa kitap cümlesi aynen taşınmıştır. Karşılaştırma harf/rakam dışı her şeyi
+ * atar; arka yüz taranmaz (karar maddesi ya da belge adı aynen verilebilir).
+ */
+const KOPYA_ESIK = 9;
+const kelimeler = (t: string): string[] =>
+  t
+    .toLocaleLowerCase('tr-TR')
+    .replace(/[^\p{L}\p{N}]+/gu, ' ')
+    .trim()
+    .split(' ')
+    .filter(Boolean);
+let kaynakPasajlari: Map<string, string> | null = null;
+
+export function kopyaDizisi(metin: string, pasajlar: readonly string[]): string | null {
+  const w = kelimeler(metin);
+  if (w.length < KOPYA_ESIK) return null;
+  const samanlik = pasajlar.map((p) => ` ${kelimeler(p).join(' ')} `);
+  for (let i = 0; i + KOPYA_ESIK <= w.length; i++) {
+    const igne = ` ${w.slice(i, i + KOPYA_ESIK).join(' ')} `;
+    if (samanlik.some((s) => s.includes(igne))) return igne.trim();
+  }
+  return null;
+}
+
 export function stilKusuru(c: FlashcardJson): string | null {
   if (YASAK_ON.test(c.front ?? '')) return 'ön yüzde olumsuz soru kalıbı';
   const a = (c.back ?? '').match(YASAK_ARKA);
   if (a) return `arka yüzde yasak kalıp: "${a[0]}"`;
   const m = (c.explanation ?? '').match(YASAK_ACIKLAMA);
-  return m ? `açıklamada yasak kalıp: "${m[0]}"` : null;
+  if (m) return `açıklamada yasak kalıp: "${m[0]}"`;
+  if (kaynakPasajlari && c.explanation) {
+    const k = kopyaDizisi(c.explanation, [...kaynakPasajlari.values()]);
+    if (k) return `açıklamada kaynak cümlesi aynen: "${k}"`;
+  }
+  return null;
 }
 
 /** Yasak kalıplı açıklamaları modele TEK TUR yeniden yazdırır; hâlâ kusurluysa açıklamayı düşürür. */
@@ -301,6 +332,8 @@ async function stilKapisi(
   g: KartGirdi,
   cards: FlashcardJson[],
 ): Promise<{ onarilan: number; dusurulen: number }> {
+  // Kaynak kipinde kopya kapısı da çalışır: pasaj metinleri karşılaştırma için açılır.
+  kaynakPasajlari = g.source ? new Map(g.articles.map((a) => [a.no, a.text])) : null;
   const kusurlu = cards.map((c, i) => ({ i, k: stilKusuru(c) })).filter((x) => x.k);
   if (!kusurlu.length) return { onarilan: 0, dusurulen: 0 };
   for (const x of kusurlu) console.log(`  stil kapısı [${x.i + 1}] ${x.k}`);
@@ -333,7 +366,8 @@ async function stilKapisi(
         role: 'user',
         content:
           'Aşağıdaki kartlarda REDDEDİLDİ işaretli alan 4. kurala aykırı bulundu (taktik, şık dili, maddede hiç geçmeyen ' +
-          'bir öğeyi anıp çürütme — "7 gün diye bir kayıt yok" — ya da başka maddeyle karşılaştırma). Her kart için YALNIZ ' +
+          'bir öğeyi anıp çürütme — "7 gün diye bir kayıt yok" — başka maddeyle karşılaştırma ya da kaynak metninden dokuz ' +
+          'kelime ve üzeri AYNEN alıntı; alıntıysa aynı bilgiyi kendi kısa cümlenle, farklı sözcük dizimiyle yaz). Her kart için YALNIZ ' +
           'reddedilen alanı yeniden yaz. Arka yüz reddedildiyse kart maddede olmayan bir öğe üzerine kurulmuştur: ' +
           'KARTIN TAMAMINI (front, back, explanation) aynı madde(ler)den, metinde geçen bir öğeyle yeniden kur; tür ' +
           'gerekirse qa olur. Yalnız açıklama reddedildiyse yalnız explanation. İçerik: sadece referans maddenin kendi ' +

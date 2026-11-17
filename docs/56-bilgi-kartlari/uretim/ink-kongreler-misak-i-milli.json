@@ -1,0 +1,299 @@
+{
+  "deck": {
+    "topicId": "23d22785-351b-4f39-8516-a419e2c254c0",
+    "sourceSlug": "inkilap-tarihi-meb-12",
+    "sourceLabel": "AI bilgi kartı — Atatürk İlkeleri ve İnkılap Tarihi: Kongreler ve Misak-ı Millî (kaynak pasajı 2.1.5-01…2.1.12-03)",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: kaynak pasajı + bankadaki sorular)"
+  },
+  "cards": [
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Mustafa Kemal Paşa hangi tarihte Samsun'a çıktı?",
+      "back": "19 Mayıs 1919'da. Bu tarih, Millî Mücadele'nin fiilen başladığı gün kabul edilir.",
+      "explanation": "Kurmay heyetiyle 16 Mayıs 1919'da İstanbul'dan Bandırma Vapuru ile yola çıkmıştı. Nutuk da anlatısına Samsun'a çıkışla başlar.",
+      "articleRefs": [
+        "2.1.5-01"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Mustafa Kemal Paşa Samsun'a hangi görevle gönderildi?",
+      "back": "9. Ordu Müfettişi olarak. Olağanüstü yetkileri vardı ve sivil makamlara da emir verebiliyordu.",
+      "explanation": "Görevleri şunlardı: Samsun ve çevresinde güvenliği sağlamak, Mondros Ateşkes Anlaşması gereği Osmanlı birliklerinin dağıtılmasını hızlandırmak, Türklerin elinde kalan silah ve cephaneyi toplamak. Padişah ve Hükûmet onu güvenilir bir asker olarak tanıyordu. İttihatçıların siyasetine uzak duran bir komutan olarak da biliniyordu.",
+      "articleRefs": [
+        "2.1.5-01"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "28 Mayıs 1919 tarihli Havza Genelgesi'nde sivil ve askerî yöneticilerden neler istendi?",
+      "back": "İşgallere karşı protesto mitingleri yapılması, İtilaf Devletleri temsilciliklerine uyarı telgrafları çekilmesi ve Hristiyan azınlığa saldırıdan kaçınılması.",
+      "explanation": "Genelge, işgallere karşı direniş için millî kuruluşları yaygınlaştırma çalışmalarının parçasıydı. Havza'da Mustafa Kemal Paşa'nın da katıldığı bir miting 30 Mayıs 1919'da yapıldı. Tepkilerden rahatsız olan İngilizler, 8 Haziran 1919'da onun geri çağrılmasını istedi. Mustafa Kemal Paşa, Harbiye Nezaretine oyalayıcı bir cevap verip Amasya'ya geçti.",
+      "articleRefs": [
+        "2.1.6-01"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Mebusan Meclisinin derhâl toplanması isteği Havza Genelgesi'nde yer aldı mı?",
+      "back": "Hayır. Bu karar Erzurum Kongresi'nde alındı. Havza Genelgesi mitingler, uyarı telgrafları ve azınlığa saldırmama isteklerini içerir.",
+      "explanation": "Erzurum Kongresi, hükûmet işlerinin meclisin denetimi altında yürütülmesine çalışılacağını da kararlaştırdı.",
+      "articleRefs": [
+        "2.1.6-01",
+        "2.1.8-02"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Amasya Genelgesi hangi tarihte ilgililere duyuruldu?",
+      "back": "22 Haziran 1919'da. Önce Cemal Paşa ile Kazım Karabekir Paşa'nın telgrafla onayı alındı.",
+      "explanation": "İstanbul'daki bazı önemli kişilere de mektuplar yazıldı. Bu mektuplarda bağımsızlığın ancak milletin bağrından çıkan güçle kazanılacağı bildirildi. İstanbul'un artık Anadolu'ya bağlı olmak zorunda olduğu da vurgulandı.",
+      "articleRefs": [
+        "2.1.7-01"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Amasya Genelgesi hazırlanırken Mustafa Kemal Paşa Amasya'da kimlerle bir araya geldi?",
+      "back": "Ali Fuat (Cebesoy), Refet (Bele) ve Rauf (Orbay) ile.",
+      "explanation": "Görüşmeler, 14 Haziran'da kurulan Müdafaa-i Hukuk Cemiyeti bünyesinde yapıldı. Mustafa Kemal Paşa'nın önceden hazırladığı metin değerlendirildi ve genelge bu metinden son hâlini aldı.",
+      "articleRefs": [
+        "2.1.7-01"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Amasya Genelgesi'ne göre Sivas'taki millî kongreye her sancaktan kaç temsilci gönderilecekti?",
+      "back": "Üç temsilci. Halkın güvenini kazanmış bu kişiler hemen yola çıkarılacaktı.",
+      "explanation": "Kongre, Anadolu'nun en güvenli yeri sayılan Sivas'ta acele toplanacaktı. Temsilcileri Müdafaa-i Hukuk ve Redd-i İlhak Cemiyetleri ile belediyeler seçecekti. Temsilciler, gerekli görülen yerlerde kimliklerini gizleyerek gelecekti.",
+      "articleRefs": [
+        "2.1.7-01",
+        "2.1.7-02"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Millî Mücadele'nin amacını, gerekçesini ve yöntemini açıklayıp milleti mücadeleye çağıran, bu yönüyle ihtilal beyannamesi sayılan belge hangisidir?",
+      "back": "Amasya Genelgesi. Millî egemenliğe dayalı yeni Türk devletine giden yolda atılan ilk adımdır.",
+      "explanation": "Genelgeye göre vatanın bütünlüğü ve milletin bağımsızlığı tehlikedeydi. Milletin bağımsızlığını yine milletin azim ve kararı kurtaracaktı. Askerî ve millî örgütler de hiçbir şekilde lağvedilmeyecekti.",
+      "articleRefs": [
+        "2.1.7-02",
+        "2.1.7-01"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Mustafa Kemal Paşa, Erzurum'dayken hangi gelişme üzerine askerlik mesleğinden ve müfettişlik görevinden istifa etti?",
+      "back": "8 Temmuz 1919'da İstanbul Hükûmeti telgrafla resmî memuriyetine son verdi; Padişah da ayrı bir telgrafla iki ay hava değişimi almasını istedi. Bunun üzerine sine-i millete dönmeye karar verdi.",
+      "explanation": "Bundan sonra mücadeleyi milletin bir ferdi olarak sürdürdü.",
+      "articleRefs": [
+        "2.1.8-01"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Erzurum Kongresi hangi tarihler arasında toplandı?",
+      "back": "23 Temmuz'da başladı, 7 Ağustos 1919'da sona erdi.",
+      "explanation": "Kongre, doğu illerinden gelen temsilcilerle toplandı. Kongre üyeleri Mustafa Kemal'i başkan seçti.",
+      "articleRefs": [
+        "2.1.8-01"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Erzurum Kongresi hangi amaçla toplandı?",
+      "back": "Ermeni Devleti (Doğu Anadolu) ile Pontus Rum Devleti (Doğu Karadeniz) kurma girişimlerine karşı önlem almak ve iş birliği sağlamak için.",
+      "explanation": "Kongre, Doğu Anadolu Müdafaa-i Hukuk Cemiyeti ile Trabzon Muhafaza-i Hukuk Cemiyetinin katkılarıyla toplandı. Mustafa Kemal ile Rauf Bey'in katılabilmesi için Erzurum delegeleri Binbaşı Kazım Bey ve Cevat Bey istifa etti.",
+      "articleRefs": [
+        "2.1.8-01"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Erzurum Kongresi'nde seçilen Temsil Heyeti kaç kişiden oluşuyordu?",
+      "back": "Dokuz kişiden. Başkanlığına Mustafa Kemal getirildi.",
+      "explanation": "İstifasıyla yetkisiz kalan Mustafa Kemal, heyetin başkanı olarak doğu illerinin tümü adına konuşma yetkisi kazandı. Ülkenin kurtuluşu için karar alma imkânı da elde etti. Kongre bölgesel olduğu hâlde bütün ulusu ilgilendiren kararlar alabildi.",
+      "articleRefs": [
+        "2.1.8-02"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Temsil Heyeti ilk kez Sivas Kongresi'nde mi oluşturuldu?",
+      "back": "Hayır. Temsil Heyeti Erzurum Kongresi'nde seçildi. Sivas Kongresi'nde üye sayısı artırılarak bütün ülkeyi temsil eder hâle getirildi.",
+      "articleRefs": [
+        "2.1.8-02",
+        "2.1.9-02"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Manda ve himaye ilk kez Amasya Genelgesi'nde mi reddedildi?",
+      "back": "Hayır. Manda ve himaye ilk kez Erzurum Kongresi'nde reddedildi. Millî sınırlardan ve yeni bir hükûmet kurmaktan da ilk kez bu kongrede söz edildi.",
+      "explanation": "Erzurum Kongresi'ne göre İstanbul Hükûmeti vatanı ve bağımsızlığı korumaya muktedir olmazsa Anadolu'da geçici bir hükûmet kurulacaktı. İşgal emeli taşımayan devletlerin yardımı ise kabul edilecekti.",
+      "articleRefs": [
+        "2.1.8-02",
+        "2.1.7-01",
+        "2.1.7-02"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Sivas Kongresi hangi tarihte toplandı?",
+      "back": "4 Eylül 1919'da Sivas Lisesinde toplandı ve 11 Eylül'de çalışmalarını tamamladı.",
+      "explanation": "Kongrenin toplanması Amasya Genelgesi ile kararlaştırılmıştı. İlk oturumda Mustafa Kemal oy çokluğuyla başkan seçildi. Manda konusunda Rauf Bey'in önerisiyle Amerikan Senatosundan bağlayıcı olmayan bir inceleme heyeti istendi.",
+      "articleRefs": [
+        "2.1.9-01"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Sivas Kongresi'nde ülkedeki bütün millî cemiyetler hangi ad altında birleştirildi?",
+      "back": "Anadolu ve Rumeli Müdafaa-i Hukuk Cemiyeti. Böylece millî teşkilat bütün vatana yayıldı ve tek merkezden yönetilmeye başladı.",
+      "explanation": "Erzurum kararları genişletildi ve bölgesel ifadeleri değiştirilerek bütün memleketi kapsar hâle getirildi. Ulusal direnişin sesini duyurmak için İrade-i Millîye adlı bir gazete çıkarılması da kararlaştırıldı.",
+      "articleRefs": [
+        "2.1.9-01"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Sivas Kongresi'nde Batı Anadolu Kuvay-ı Millîye Birlikleri komutanlığına Refet (Bele) mi atandı?",
+      "back": "Hayır. Bu göreve Ali Fuat Paşa atandı. Amaç, dağınık Kuvay-ı Millîye birliklerini tek merkezden yönetmekti.",
+      "articleRefs": [
+        "2.1.9-01",
+        "2.1.7-01"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Padişahla telgraf görüşmesine izin verilmeyince Temsil Heyeti nasıl bir karar aldı?",
+      "back": "Damat Ferit Paşa Hükûmeti çekilene kadar İstanbul ile her türlü haberleşmeyi kesti. Tüm yazışmaların Sivas'taki Temsil Heyeti ile yapılmasını istedi.",
+      "explanation": "Damat Ferit Paşa, Elazığ Valisi Ali Galip Bey aracılığıyla kongreyi dağıtmayı denemişti. Mustafa Kemal ile arkadaşlarını İttihatçı ve Bolşevik olmakla da suçlamıştı. Ülkeyi yönetemez hâle gelince 30 Eylül 1919'da istifa etti. Bu, Temsil Heyeti'nin İstanbul karşısındaki ilk siyasi başarısıdır.",
+      "articleRefs": [
+        "2.1.9-02"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "İstanbul Hükûmeti, Temsil Heyeti'ni hangi görüşmeler ve protokolle resmen tanımış oldu?",
+      "back": "Amasya Görüşmeleriyle. Görüşmeler, Bahriye Nazırı Salih Paşa ile 20-22 Ekim 1919'da yapıldı.",
+      "explanation": "Salih Paşa'yı Amasya'ya Ali Rıza Paşa Hükûmeti gönderdi. Temsil Heyeti adına Mustafa Kemal, Rauf Orbay ve Bekir Sami Beyler görüştü. Alınan kararlardan biri, Anadolu ve Rumeli Müdafaa-i Hukuk Cemiyeti'nin İstanbul Hükûmeti'nce tanınmasıydı. Hiçbir himaye ve mandanın kabul edilmemesi de kararlar arasındaydı.",
+      "articleRefs": [
+        "2.1.10-01"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Amasya Görüşmelerinde alınan, Mebusan Meclisinin Anadolu'nun güvenli bir yerinde toplanması kararı neden uygulanmadı?",
+      "back": "Kanun-ı Esasi'ye uygun bulunmadığı için kabul edilmedi. Osmanlı yönetimi yalnız Mebusan Meclisinin açılmasını uygulamaya koydu.",
+      "articleRefs": [
+        "2.1.10-01"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Mustafa Kemal ve Temsil Heyeti üyeleri hangi tarihte Ankara'ya geldi?",
+      "back": "27 Aralık 1919'da. Amaç, açılacak Mebusan Meclisinin çalışmalarını daha yakından izlemekti.",
+      "explanation": "Ankara bu gelişle birlikte Millî Mücadele'nin, sonrasında da kurulacak devletin merkezi hâline geldi.",
+      "articleRefs": [
+        "2.1.11-01"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Ankara'nın Millî Mücadele'nin merkezi seçilmesinde hangi etkenler rol oynadı?",
+      "back": "Ankara'nın Anadolu'nun ortasında ve güvenli bir yerde olması, haberleşme olanaklarının iyi olması, demiryolunun Ankara'ya ulaşması ve Batı Cephesi'ne yakınlığı.",
+      "explanation": "Karar, Mustafa Kemal'in Sivas'ta Temsil Heyeti yetkilileri ve komutanlarla yaptığı toplantıda alındı.",
+      "articleRefs": [
+        "2.1.11-01"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Erzurum mebusu seçilen Mustafa Kemal, Son Osmanlı Mebusan Meclisinde neden meclis başkanı olmak istedi?",
+      "back": "Kanun-ı Esasi meclis başkanına bir yetki veriyordu: olumsuz bir durumda meclisi ülkenin güvenli bir yerinde toplanmaya çağırabiliyordu.",
+      "explanation": "Ancak meclis başkanlığına seçilmedi. İstediği Müdafaa-i Hukuk Grubu yerine Felah-ı Vatan Grubu kuruldu. Mustafa Kemal, tutuklanma olasılığına karşı İstanbul'a da gitmedi.",
+      "articleRefs": [
+        "2.1.12-01"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Misak-ı Millî hangi tarihte kabul edildi?",
+      "back": "28 Ocak 1920'de, Son Osmanlı Mebusan Meclisinin gizli bir toplantısında.",
+      "explanation": "Meclis 12 Ocak 1920'de çalışmalarına başlamıştı. Misak-ı Millî'ye göre Mondros Ateşkes Anlaşması'nın imzalandığı 30 Ekim 1918'de düşman işgaline uğramamış yerler bölünmez bir bütündür.",
+      "articleRefs": [
+        "2.1.12-01"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Misak-ı Millî'ye göre halkın oyuyla anavatana katılan hangi sancaklarda gerekirse yine halk oylamasına başvurulabilirdi?",
+      "back": "Kars, Ardahan ve Batum sancaklarında.",
+      "explanation": "Batı Trakya'nın durumunun da halkın serbestçe vereceği oyla belirlenmesi öngörüldü.",
+      "articleRefs": [
+        "2.1.12-02"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Misak-ı Millî kapitülasyonlar hakkında ne öngördü?",
+      "back": "Kaldırılmalarını öngördü. Kapitülasyonlar, millî ve ekonomik gelişmeyi engelleyen siyasi, adli ve mali sınırlamalar olarak tanımlandı.",
+      "explanation": "Misak-ı Millî ile siyasi bağımsızlık kadar ekonomik bağımsızlıktan da ödün verilmeyeceği duyuruldu. İtilaf Devletleri ile yapılacak barışın koşulları da bu belgeyle belirlenmiş oldu.",
+      "articleRefs": [
+        "2.1.12-02"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Misak-ı Millî'de azınlık hakları koşulsuz olarak mı kabul edildi?",
+      "back": "Hayır. Kabul, komşu ülkelerdeki Müslümanlara da aynı hakların tanınması şartına bağlandı.",
+      "articleRefs": [
+        "2.1.12-02"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "İtilaf Devletleri İstanbul'u hangi tarihte resmen işgal etti?",
+      "back": "16 Mart 1920'de. Meclisi bastılar, Millî Mücadele yanlısı milletvekillerini tutuklayıp Malta'ya sürdüler.",
+      "explanation": "İtilaf Devletleri, Misak-ı Millî kararlarının geri alınması için baskı yaptı. Ali Rıza Paşa Hükûmeti bu baskıyı kabul etmeyip istifa etti. Salih Paşa Hükûmeti'nden de sonuç alınamayınca işgal gerçekleşti. Padişah Vahdettin 11 Nisan 1920'de Mebusan Meclisini dağıttı; bu gelişme Ankara'da Büyük Millet Meclisi'nin açılmasına yol açtı.",
+      "articleRefs": [
+        "2.1.12-03",
+        "2.1.12-02"
+      ]
+    }
+  ]
+}

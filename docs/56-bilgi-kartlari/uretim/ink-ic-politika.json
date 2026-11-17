@@ -1,0 +1,218 @@
+{
+  "deck": {
+    "topicId": "23d22785-351b-4f39-8516-a419e2c254c0",
+    "sourceSlug": "inkilap-tarihi-meb-12",
+    "sourceLabel": "AI bilgi kartı — Atatürk İlkeleri ve İnkılap Tarihi: Atatürk dönemi iç politika ve çok partili hayat denemeleri (kaynak pasajı 4.1-01…4.1.2-06)",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: kaynak pasajı + bankadaki sorular; stil kapısı 7 açıklama yeniden yazıldı)"
+  },
+  "cards": [
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Türkiye Büyük Millet Meclisi hangi tarihte kuruldu?",
+      "back": "23 Nisan 1920. Bu Meclis zor şartlarda hem millet egemenliğini sağladı hem de Millî Mücadele'yi yönetti.",
+      "explanation": "Millî Mücadele'nin başında her türlü particilikten uzak durulması kararlaştırılmıştı; gerekçe, particiliğin millî birliği bozacağı kaygısıydı. Ortak amaç düşmanı yurttan atmak ve bağımsızlığı sağlamaktı.",
+      "articleRefs": [
+        "4.1.1-01"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Mecliste gruplaşmalar ortaya çıkınca Mustafa Kemal Paşa'nın kendine yakın milletvekilleriyle kurduğu grubun adı nedir?",
+      "back": "Anadolu ve Rumeli Müdafaa-i Hukuk Grubu. Bu gruba I. Grup denildi.",
+      "explanation": "Bu grubun dışında kalan milletvekillerinin oluşturduğu gruba II. Grup adı verildi. 1923 seçimlerinde II. Grup ciddi bir varlık gösteremedi; çoğunluğu I. Grup kazandı.",
+      "articleRefs": [
+        "4.1.1-01"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "II. Meclis, Lozan Barış Antlaşması'nı toplandığı gün mü onayladı?",
+      "back": "Hayır. II. Meclis 11 Ağustos 1923'te toplandı; Lozan Barış Antlaşması'nı 23 Ağustos 1923'te onayladı.",
+      "explanation": "Antlaşmayı onaylamak, II. Meclis'in ilk faaliyetlerinden biriydi. Bu Meclis, Türkiye Büyük Millet Meclisinin 1 Nisan 1923'te seçimlerin yenilenmesine karar vermesinin ardından yapılan seçimlerle oluştu.",
+      "articleRefs": [
+        "4.1.1-01"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Türkiye Büyük Millet Meclisi seçimlerin yenilenmesine hangi tarihte karar verdi?",
+      "back": "1 Nisan 1923. Seçimler yenilenince Millî Mücadele'yi yürüten Birinci Meclis görevini tamamlamış oldu; yeni meclis İkinci Türkiye Büyük Millet Meclisi olarak anıldı.",
+      "explanation": "Mustafa Kemal'e göre Meclis yıpranmıştı. Yenilenmezse milletin ve memleketin ağır sorumluluk isteyen işleri yürütülemezdi. Anayasa açısından da milletvekili seçimlerinin vakti gelmişti. Meclis'teki görüş ayrılıkları büyük zaferden sonra, özellikle saltanat kaldırılınca belirginleşmişti.",
+      "articleRefs": [
+        "4.1.1-02",
+        "4.1.1-01"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "İkinci Türkiye Büyük Millet Meclisi, yeni kurulan Türkiye Cumhuriyeti'nin hangi yapısını güçlendirecek inkılaplara yasal zemin hazırladı?",
+      "back": "Millî ve laik yapısını.",
+      "explanation": "Birinci Meclis vatanın kurtuluşu için görevini yaparken, İkinci Meclis yeni devletin inkılaplarına hukuki zemin kazandıracak adımları üstlendi.",
+      "articleRefs": [
+        "4.1.1-02"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Halk Fırkası hangi tarihte kuruldu?",
+      "back": "9 Eylül 1923.",
+      "explanation": "Mustafa Kemal, inkılapları uyum içinde birlikte yürütebileceği bir kadro arıyordu. Bu amaçla dokuz temel ilkeden oluşan bir program hazırladı ve yapmayı düşündüğü inkılapları bu programa koydu. Partiyi tek bir toplumsal sınıfın değil, bütün halkın partisi yapmayı hedefledi.",
+      "articleRefs": [
+        "4.1.2-02"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Mustafa Kemal'in 9 Eylül 1923'te kurduğu parti, Cumhuriyet Halk Fırkası adıyla mı kuruldu?",
+      "back": "Hayır. Parti Halk Fırkası adıyla kuruldu; Cumhuriyet'in ilanından sonra 10 Kasım 1924'te adı Cumhuriyet Halk Fırkası oldu.",
+      "explanation": "Partinin ilk adı Halk Fırkasıdır. Cumhuriyet sözcüğü, rejim ilan edildikten sonra yapılan ad değişikliğiyle eklendi.",
+      "articleRefs": [
+        "4.1.2-02"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Cumhuriyet Halk Partisi ülkeyi hangi yıla kadar tek başına yönetti?",
+      "back": "1950'ye kadar; o yıl Demokrat Parti iktidara geldi.",
+      "explanation": "Cumhuriyet Halk Partisi tek başına iktidarda kaldığı bu süreçte inkılap hareketlerinin çoğunu gerçekleştirdi.",
+      "articleRefs": [
+        "4.1.2-02"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Terakkiperver Cumhuriyet Fırkası hangi tarihte kuruldu?",
+      "back": "17 Kasım 1924.",
+      "explanation": "Partinin kurucuları Millî Mücadele'nin lider kadrosundandı. Aralarında Kazım Karabekir, Rauf (Orbay), Refet (Bele), Ali Fuat (Cebesoy) ve Dr. Adnan (Adıvar) vardı. Hepsi Cumhuriyet Halk Fırkasından ayrılmıştı.",
+      "articleRefs": [
+        "4.1.2-03"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Terakkiperver Cumhuriyet Fırkasının tüzüğünde hangi ilkeler benimsendi?",
+      "back": "Cumhuriyet ilkesi, liberalizm ve demokrasi. Tüzükte dinî inançlara saygılı olunacağı da yer aldı.",
+      "explanation": "Kurucular yeniliklerin zamanla, kendi akışı içinde gerçekleşmesinden yanaydı. Fırka kısa sürede Cumhuriyet'in ilanına ve hilafetin kaldırılmasına karşı çıkanları bir araya topladı. Böylece rejime tehdit oluşturan bir merkeze dönüştü.",
+      "articleRefs": [
+        "4.1.2-03"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Terakkiperver Cumhuriyet Fırkası hangi kanuna dayanılarak kapatıldı?",
+      "back": "Takrir-i Sükûn Kanununa dayanılarak kapatıldı; kapatılma tarihi 3 Haziran 1925'tir.",
+      "explanation": "Cumhuriyet'e ve inkılaplara karşı olanların kışkırtmasıyla doğu illerinde karışıklıklar çıktı. Gerekçe, bu karışıklıklarda partinin bölge teşkilatlarından bazı kişilerin bulunmasıydı. Bu kapatmayla çok partili hayat kesintiye uğradı.",
+      "articleRefs": [
+        "4.1.2-03"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Cumhuriyet tarihinin ilk muhalefet partisi Serbest Cumhuriyet Fırkası mıdır?",
+      "back": "Hayır. İlk muhalefet partisi, 17 Kasım 1924'te kurulan Terakkiperver Cumhuriyet Fırkasıdır. Serbest Cumhuriyet Fırkası ikinci muhalefet partisidir.",
+      "explanation": "Terakkiperver Cumhuriyet Fırkası Millî Mücadele'nin lider kadrosundan isimlerce kuruldu ve Takrir-i Sükûn Kanunuyla kapatıldı. Serbest Cumhuriyet Fırkası ise çok partili yaşama geçiş için atılan ikinci adımdır.",
+      "articleRefs": [
+        "4.1.2-03",
+        "4.1.2-05"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Terakkiperver Cumhuriyet Fırkasının kapatılmasından sonra Mustafa Kemal'e suikast yaparak amaçlarına ulaşmak isteyenler kimlerdi?",
+      "back": "Yeniliklere karşı olanlar ve eski İttihatçılar.",
+      "explanation": "Bu kişiler hedeflerine siyaset yoluyla varamamıştı. Yeni rejimin sürmesinin Mustafa Kemal'e dayandığına inanıyorlardı. Onu ortadan kaldırırlarsa yönetimi ele geçirip ülkeyi dilediklerince idare edeceklerini sanıyorlardı.",
+      "articleRefs": [
+        "4.1.2-04"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Mustafa Kemal'e İzmir gezisi sırasında planlanan suikastı kim ihbar etti?",
+      "back": "Motorcu Giritli Şevki. Korkup durumu bildirdi; güvenlik güçleri harekete geçti ve suikastçıları silahlarıyla yakaladı.",
+      "explanation": "Giritli Şevki, suikastçıları Yunan adalarına kaçıracak kişiydi.",
+      "articleRefs": [
+        "4.1.2-04"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Serbest Cumhuriyet Fırkası hangi tarihte kuruldu?",
+      "back": "12 Ağustos 1930; İstanbul'da kuruldu.",
+      "explanation": "Fırkayı, Mustafa Kemal'in ikna ettiği Fethi (Okyar) Bey kurdu. Cumhuriyet kurulduktan sonra çok partili hayata geçiş yolunda atılan ikinci adımdı. Dönemin ikinci muhalefet partisiydi. Fethi (Okyar) partiyi 17 Kasım 1930'da feshetti.",
+      "articleRefs": [
+        "4.1.2-05"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Mustafa Kemal, Serbest Cumhuriyet Fırkası kurulurken yeni partiden hangi iki şarta uymasını bekliyordu?",
+      "back": "Mevcut düzen içinde muhalefet etmesini, iktidara gelirse cumhuriyet rejimini kaldırmaya çalışmamasını bekliyordu.",
+      "explanation": "Tek parti düzeninde siyasi rekabet yoktu ve bu durum Türkiye'nin dışarıdan görünüşünü olumsuz etkiliyordu. Eleştiri ve denetim eksikliği de yönetimi aksatıyordu. Türkiye ayrıca 1929 Dünya Ekonomik Bunalımından etkilenmişti. Mustafa Kemal, Cumhurbaşkanı sıfatıyla tarafsız duracağını açıkladı. Partiye güven vermek için çocukluk arkadaşı milletvekillerinin ve kız kardeşi Makbule Hanım'ın da görev almasını istedi.",
+      "articleRefs": [
+        "4.1.2-05"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Serbest Cumhuriyet Fırkası Kazım Karabekir tarafından mı kuruldu?",
+      "back": "Hayır. Mustafa Kemal, yakın arkadaşı Fethi (Okyar) Bey'i bu partiyi kurmaya ikna etti. Kazım Karabekir, Terakkiperver Cumhuriyet Fırkasının kurucuları arasındadır.",
+      "explanation": "Serbest Cumhuriyet Fırkasının kurucuları Cumhuriyet'e bağlı ve laikliği savunan kişilerdi. Kazım Karabekir ise Rauf (Orbay), Refet (Bele), Ali Fuat (Cebesoy) ve Dr. Adnan (Adıvar) ile birlikte Cumhuriyet Halk Fırkasından ayrıldı. Bu isimler 17 Kasım 1924'te Terakkiperver Cumhuriyet Fırkasını kurdu.",
+      "articleRefs": [
+        "4.1.2-05",
+        "4.1.2-03"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Serbest Cumhuriyet Fırkasının örgütlerine inkılap karşıtlarının girdiğinin açıkça görüldüğü İzmir mitingi hangi tarihte yapıldı?",
+      "back": "7 Eylül 1930. Aynı durum sonraki başka mitinglerde de belirginleşti.",
+      "explanation": "Parti örgütlenmeye başlayınca Cumhuriyet'e, laik düşünceye ve inkılaplara karşı olanlar parti örgütlerinde görev almaya başladı. Bu gelişmelerden ürken Fethi (Okyar) partiyi feshetti.",
+      "articleRefs": [
+        "4.1.2-05"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Serbest Cumhuriyet Fırkası Takrir-i Sükûn Kanununa dayanılarak mı kapatıldı?",
+      "back": "Hayır. Fethi (Okyar) partiyi 17 Kasım 1930'da kendisi feshetti.",
+      "explanation": "Takrir-i Sükûn Kanununa dayanılarak kapatılan parti Terakkiperver Cumhuriyet Fırkasıdır; kapatılma tarihi 3 Haziran 1925'tir. Serbest Cumhuriyet Fırkasında fesih kararını partinin kurucusu verdi.",
+      "articleRefs": [
+        "4.1.2-05",
+        "4.1.2-03"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Atatürk zamanında bir daha çok partili rejim denemesi yapılmamasının nedenleri nelerdir?",
+      "back": "İki neden vardı: çok partili denemelerde karşılaşılan olumsuzluklar ve 1930'larda beliren II. Dünya Savaşı tehlikesi.",
+      "articleRefs": [
+        "4.1.2-06"
+      ]
+    }
+  ]
+}

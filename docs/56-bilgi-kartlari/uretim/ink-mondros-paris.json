@@ -1,0 +1,252 @@
+{
+  "deck": {
+    "topicId": "23d22785-351b-4f39-8516-a419e2c254c0",
+    "sourceSlug": "inkilap-tarihi-meb-12",
+    "sourceLabel": "AI bilgi kartı — Atatürk İlkeleri ve İnkılap Tarihi: Mondros Ateşkesi, Wilson İlkeleri ve Paris Barış Konferansı (kaynak pasajı 1.4.1-01…1.4.4-06)",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: kaynak pasajı + bankadaki sorular; stil kapısı 4 açıklama yeniden yazıldı; 1 açıklama düşürüldü)"
+  },
+  "cards": [
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "I. Dünya Savaşı'nın sonlarında Osmanlı Devleti'nin Almanya ile kara bağlantısını hangi gelişme kesti?",
+      "back": "Bulgaristan'ın savaştan çekilmesi. Bu gelişmeyle Osmanlı ile Almanya arasındaki kara yolu koptu.",
+      "explanation": "Aynı dönemde Osmanlı kuvvetleri Suriye-Filistin ve Irak cephelerinde İngilizleri durduramadı. İngilizler Boğazlar ile İstanbul'a yöneldi. Bunun ardından Sadrazam Talat Paşa istifa etti ve İttihat ve Terakki yönetimden çekildi.",
+      "articleRefs": [
+        "1.4.1-01"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Mondros'a ateşkes görüşmeleri için giden Osmanlı heyetine kim başkanlık etti?",
+      "back": "Bahriye Nazırı Rauf Bey. Heyet, Limni Adası'ndaki Mondros Limanı'na gitti.",
+      "explanation": "Heyeti İstanbul Hükûmeti görevlendirdi. Ahmet İzzet Paşa başkanlığında kurulan bu hükûmet, Wilson İlkeleri doğrultusunda bir ateşkes istiyordu. Görüşmelerde İtilaf Devletleri'ni Amiral Calthorpe (Kalthorp) temsil etti.",
+      "articleRefs": [
+        "1.4.1-01"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Mondros Ateşkes Anlaşması kaç madde hâlinde düzenlendi?",
+      "back": "25 madde. Anlaşma 30 Ekim 1918'de imzalandı.",
+      "explanation": "Görüşmeler 27 Ekim 1918'de İngilizlerin Agamemnon adlı zırhlı savaş gemisinde başlamıştı.",
+      "articleRefs": [
+        "1.4.1-01"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Mondros'un hangi maddesi, güvenliklerini tehdit eden bir durumda İtilaf Devletleri'ne herhangi bir stratejik noktayı işgal hakkı tanıdı?",
+      "back": "7. madde. Güvenlik tehdidi gerekçe gösterilerek her stratejik nokta işgal edilebilir hâle geldi.",
+      "explanation": "Bu madde 24. maddeyle birlikte, İtilaf Devletleri'nin Osmanlı topraklarında diledikleri yeri işgal etmelerinin zeminini hazırladı.",
+      "articleRefs": [
+        "1.4.1-02"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Mondros'un hangi maddesi, Vilayet-i Sitte'de karışıklık çıkması hâlinde İtilaf Devletleri'ne işgal hakkı verdi?",
+      "back": "24. madde. Vilayet-i Sitte; Erzurum, Van, Bitlis, Sivas, Elazığ ve Diyarbakır'dan oluşan altı doğu ilidir.",
+      "explanation": "Ateşkesle İtilaf Devletleri, gizli antlaşmalarla aralarında paylaştıkları Osmanlı topraklarını işgal etmek için hukuki bir dayanak elde etti.",
+      "articleRefs": [
+        "1.4.1-02"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Mondros'un savaş esirlerine ilişkin hükmü taraflara nasıl bir yükümlülük getirdi?",
+      "back": "Tek taraflı. Osmanlı elindeki tüm savaş esirlerini ve tutuklu Ermenileri serbest bırakacak, İtilaf Devletleri'nin elindeki Türk esirleri ise geri verilmeyecekti.",
+      "explanation": "Serbest bırakma yükümlülüğü yalnız Osmanlı Devleti'ne yüklenmişti. Ordunun terhisi ve silah ile cephanesine el konulması da Osmanlı'yı savunmasız bırakan hükümler arasındaydı.",
+      "articleRefs": [
+        "1.4.1-02"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Mondros'tan sonra İngiltere'nin Osmanlı topraklarındaki ilk işgali İskenderun'da mı gerçekleşti?",
+      "back": "Hayır. İlk işgal 3 Kasım 1918'de Musul'a yapıldı. İskenderun'un işgali Musul'dan sonra geldi.",
+      "explanation": "İngiltere, Musul'a ateşkes imzalandıktan hemen sonra ve ateşkese rağmen girdi.",
+      "articleRefs": [
+        "1.4.1-03"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Mondros'un ardından İngiliz işgalleriyle birlikte Fransa hangi bölgeyi işgal etti?",
+      "back": "Adana ve çevresini.",
+      "explanation": "Yunanistan ve İtalya da kendilerine vaat edilen yerleri ele geçirmek için işgal hareketlerine giriştiler.",
+      "articleRefs": [
+        "1.4.1-03"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "İtilaf donanması İstanbul'a hangi tarihte gelip Dolmabahçe Sarayı önlerinde demirledi?",
+      "back": "13 Kasım 1918. Bununla Osmanlı başkenti de fiilen işgal edilmiş oldu.",
+      "articleRefs": [
+        "1.4.1-03"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Mondros sonrasında istifa eden Ahmet İzzet Paşa'nın yerine hükûmeti Damat Ferit Paşa mı kurdu?",
+      "back": "Hayır. Yeni hükûmeti Tevfik Paşa kurdu. İşgalcilerin baskısıyla o da istifa edince İngilizleri destekleyen Damat Ferit Paşa hükûmeti geldi.",
+      "explanation": "Ahmet İzzet Paşa hükûmeti, hükûmetteki iç karışıklıklar yüzünden çekildi. Bu süreçte padişah, anayasanın tanıdığı yetkiye dayanarak Mebusan Meclisini dağıttı.",
+      "articleRefs": [
+        "1.4.2-01"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Mondros Ateşkesi sırasında Yıldırım Orduları Grup Komutanlığı'na Liman von Sanders'in yerine kim tayin edildi?",
+      "back": "Mustafa Kemal.",
+      "explanation": "Mustafa Kemal, ateşkesin çok ağır şartlar taşıdığını ve bağımsızlıkla bağdaşmadığını belirterek İstanbul Hükûmeti'ni uyarmaya çalıştı.",
+      "articleRefs": [
+        "1.4.2-01"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "İngilizler İskenderun'a yönelince İstanbul Hükûmeti, işgale karşı koymaya karar veren Mustafa Kemal'den ne istedi?",
+      "back": "İskenderun'un teslim edilmesini. Hükûmet, ateşkesi bozmamak için direnilmemesini istedi.",
+      "explanation": "Hükûmete göre İngilizler ateşkes şartlarına uygun davranıyordu. İskenderun 9 Kasım 1918'de işgal edildi. Mustafa Kemal tepkisini sadrazama çektiği telgrafla bildirdi.",
+      "articleRefs": [
+        "1.4.2-01"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Mustafa Kemal, İstanbul'a geldiğinde Dolmabahçe önlerinde demirli işgal donanmasını görünce hangi sözle tepki gösterdi?",
+      "back": "“Geldikleri gibi giderler.”",
+      "explanation": "Mustafa Kemal bu sözü, Harbiye Bakanlığı emrine alınıp 13 Kasım 1918'de İstanbul'a vardığında söyledi.",
+      "articleRefs": [
+        "1.4.2-02"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "İşgaller karşısında kendiliğinden örgütlenen halk, işgalcilere karşı silahlı mücadeleye geçerken hangi yapıyı oluşturdu?",
+      "back": "Kuvay-ı Millîye'yi.",
+      "explanation": "İstanbul Hükûmeti işgallere sessiz kalınca halk kendi kendine teşkilatlandı. Önce yaşadığı yöreyi savunmak için direniş cemiyetleri kurdu. Miting ve protesto gösterileriyle işgallerin haksız olduğunu dünyaya anlatmaya çalıştı. Ardından silaha sarılıp topraklarını korumaya girişti.",
+      "articleRefs": [
+        "1.4.2-02"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "ABD Başkanı Woodrow Wilson'un barış ve savaş sonrası dünya düzeni için duyurduğu bildiri kaç maddelikti?",
+      "back": "14 maddelik. ABD, 1917 yılında İtilaf Devletleri'nin yanında savaşa katılmıştı.",
+      "explanation": "Wilson İlkeleri arasında barış antlaşmalarında ve diplomaside açıklık, ekonomik sınırlandırmaların kaldırılması, silahsızlanma güvenceleri ve Cemiyet-i Akvam (Milletler Cemiyeti) kurulması da yer alıyordu.",
+      "articleRefs": [
+        "1.4.3-01"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Osmanlı Devleti'nin Mondros'u imzalarken kurtuluş olarak gördüğü Wilson İlkesi kaçıncı maddeydi?",
+      "back": "12. madde. Türklerin çoğunlukta olduğu bölgelerde Osmanlı egemenliği öngörülüyordu; Boğazlar milletlerarası kontrolle tüm gemilere açılacaktı.",
+      "explanation": "Aynı maddeye göre Türklerin çoğunlukta olmadığı bölgelerde, oradaki milletler kendi kendilerini yönetme hakkına sahip olacaktı.",
+      "articleRefs": [
+        "1.4.3-01"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "İtilaf Devletleri, planlarını Wilson İlkeleri'ne uygun göstermek için savaş tazminatına hangi adı verdi?",
+      "back": "Tamirat ya da onarım bedeli. Sömürgecilik yerine de manda ve himaye gibi kavramları kullandılar.",
+      "explanation": "İngiltere ve Fransa başta olmak üzere İtilaf Devletleri, ABD'nin desteğini almak için ilkeleri kabul etti. Ancak ilkeleri kendi çıkarlarına göre yorumladılar ve barış antlaşmalarını kendi istekleriyle hazırladılar.",
+      "articleRefs": [
+        "1.4.3-01"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Paris Barış Konferansı hangi tarihte toplandı?",
+      "back": "18 Ocak 1919. Konferansın amacı, yenik devletlerle imzalanacak barışın esaslarını belirlemekti.",
+      "explanation": "Toplantıya otuz iki devlet katıldı. Söz sahibi olanlar ABD, İngiltere, Fransa, Japonya ve İtalya idi. ABD Başkanı Wilson'un asıl hedefi Milletler Cemiyeti'ni kurdurmaktı. Bu karar çıkınca Paris'ten ayrıldı; böylece İngiltere ile Fransa ABD baskısından kurtuldu.",
+      "articleRefs": [
+        "1.4.4-01"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Paris Barış Konferansı'nda manda sistemiyle yönetilmesine karar verilen yerler hangileriydi?",
+      "back": "Anadolu'da kurulacak Ermeni devleti, Arap Yarımadası, Filistin, Suriye ve Irak toprakları.",
+      "explanation": "Osmanlı topraklarının paylaşımı, konferansta en çok tartışılan konuların başındaydı. Yunanlara, Ermenilere ve Araplara verilen vaatler, paylaşım planlarının uygulanmasında sorun çıkardı.",
+      "articleRefs": [
+        "1.4.4-01"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "St. Jean De Maurienne Antlaşması İzmir ve çevresini Yunanlara mı bıraktı?",
+      "back": "Hayır, İtalyanlara bıraktı. İzmir'i Yunanlara vaat eden, savaşta Yunanistan'ı İtilaf safına çekmek isteyen İngiltere'ydi.",
+      "explanation": "Konferansta İngiltere, sömürge ticaret yolları üzerinde güçlü İtalya yerine kendisine tehlike oluşturmayacak Yunanistan'ı seçti. Yunanlar sahte belgelerle bölgede Rum çoğunluğu olduğunu kabul ettirdi ve İzmir'in Yunan işgali onaylandı. İzmir meselesi, İtilaf Devletleri arasındaki ilk ayrılıkları da doğurdu.",
+      "articleRefs": [
+        "1.4.4-01"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Paris Barış Konferansı'nda Osmanlı Devleti ile yapılacak barış antlaşması neden sonraya bırakıldı?",
+      "back": "Galip devletler arasındaki çıkar çatışmaları yüzünden.",
+      "explanation": "Osmanlı topraklarının paylaşımı konferansta en fazla tartışılan konuydu. Osmanlı dışındaki İttifak Devletleri ile ise savaşı bitiren antlaşmalar imzalandı. Bu antlaşmalar siyasi, askerî ve ekonomik açıdan ağır şartlar içeriyordu.",
+      "articleRefs": [
+        "1.4.4-02"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "I. Dünya Savaşı'nın ardından Almanya ile imzalanan ve Alman ordusunu 100 bin kişiyle sınırlayan antlaşma hangisidir?",
+      "back": "Versailles (Versay) Antlaşması.",
+      "explanation": "Almanya'nın denizaltı ve savaş uçağı yapması yasaklandı, deniz kuvvetleri sınırlandırıldı. Sömürgeleri İngiltere, Fransa ve Japonya arasında paylaşıldı. Almanya, tamirat borcu adı altında savaş tazminatı ödeyecekti.",
+      "articleRefs": [
+        "1.4.4-02"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Saint Germain (Sen Jermen) Antlaşması, Avusturya'nın Almanya ile birleşmesini hangi kurumun iznine bağladı?",
+      "back": "Milletler Cemiyetinin. Bu izin olmadan Avusturya, Almanya ile birleşemeyecekti.",
+      "explanation": "Antlaşma Avusturya-Macaristan İmparatorluğu'nu dağıttı; Macaristan, Çekoslovakya ve Yugoslavya bağımsızlık kazandı. Avusturya'da zorunlu askerlik sona erdi. Ordusu 30 bin kişiyle sınırlandı ve ülke savaş tazminatı ödemekle yükümlü tutuldu.",
+      "articleRefs": [
+        "1.4.4-02"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "I. Dünya Savaşı'nı bitiren antlaşmaların yenik devletlerde yarattığı hoşnutsuzluk hangi savaşa zemin hazırladı?",
+      "back": "II. Dünya Savaşı'na. Ağır şartlar ekonomik yıkımla birleşince Avrupa'da kalıcı bir barış kurulamadı.",
+      "explanation": "Yenik İttifak Devletleri'ne dayatılan şartlar kamuoylarında derin bir hoşnutsuzluk doğurdu. Ortaya çıkan olumsuz siyasal durum, yirmi yıl sonra başlayacak savaşın zeminini oluşturdu.",
+      "articleRefs": [
+        "1.4.4-03"
+      ]
+    }
+  ]
+}

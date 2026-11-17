@@ -1,0 +1,255 @@
+{
+  "deck": {
+    "topicId": "23d22785-351b-4f39-8516-a419e2c254c0",
+    "sourceSlug": "inkilap-tarihi-meb-12",
+    "sourceLabel": "AI bilgi kartı — Atatürk İlkeleri ve İnkılap Tarihi: II. İnönü'den Büyük Taarruz'a (kaynak pasajı 2.5.3-01…2.5.6-01)",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: kaynak pasajı + bankadaki sorular; stil kapısı 8 açıklama yeniden yazıldı; 1 açıklama düşürüldü)"
+  },
+  "cards": [
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Londra Konferansı'ndaki barış önerileri TBMM Hükûmeti tarafından kabul edilmeyince hangi devlet Yunan ordusundan yeni bir saldırı için hazırlanmasını istedi?",
+      "back": "İngiltere. Yunan ordusu bunun üzerine II. İnönü Muharebesi'yle sonuçlanan saldırıya hazırlandı.",
+      "explanation": "Yunan ordusunun hedefleri İnönü'deki ilk yenilginin izini silmek, Kütahya ile Eskişehir'i alarak demiryolunu denetimine geçirmek, sonra Ankara'ya yürüyüp Meclis'e Sevr Antlaşması'nı kabul ettirmekti. TBMM'nin o sırada Koçgiri Ayaklanması ve Pontus çeteleriyle meşgul olmasını fırsat saydı. Kuzeyde Eskişehir, güneyde Afyon yönünden ilerleyerek İnönü önlerine ulaştı.",
+      "articleRefs": [
+        "2.5.3-01"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "II. İnönü zaferinden sonra hangi İtilaf devleti TBMM ile anlaşma zemini aramaya başladı?",
+      "back": "Fransa. Aynı dönemde İtalyanlar da Anadolu'da işgal ettikleri bazı yerleri boşaltmaya başladı.",
+      "explanation": "Kazanılan zafer büyük sevinç yarattı ve halk Meclis'e daha çok güvenmeye başladı. İtilaf cephesinde Yunanlara olan güven sarsıldı, müttefikler arasındaki anlaşmazlıklar da büyüdü.",
+      "articleRefs": [
+        "2.5.3-01"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Kütahya-Eskişehir Muharebeleri'nde cepheden kötü haberler gelince Karacahisar'daki Batı Cephesi Karargâhı'nda ordu için hangi karar alındı?",
+      "back": "Ordunun Sakarya Irmağı'nın doğusuna çekilmesine karar verildi. Çekilme 25 Temmuz 1921'de tamamlanmıştı.",
+      "explanation": "Bu çekilme sayesinde yeni kurulmuş ordu tamamen yıpranmaktan kurtuldu. Yunan birlikleri ise üslerinden uzaklaşıp Anadolu'nun iç kesimlerine çekilmiş oldu. Türk ordusu da yeni bir savaşa hazırlanmak için kısa da olsa zaman kazandı.",
+      "articleRefs": [
+        "2.5.4-01"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "İtalyanlar Anadolu'da işgal ettikleri yerleri boşaltmaya Kütahya-Eskişehir Muharebeleri'nden sonra mı başladı?",
+      "back": "Hayır; boşaltmaya II. İnönü zaferinden sonra başladılar. Kütahya-Eskişehir yenilgisinden sonra ise asker çekmeyi durdurdular.",
+      "explanation": "Aynı yenilgiden sonra Fransa da TBMM ile yürüttüğü ikili barış görüşmelerine ara verdi. II. İnönü zaferinin ardından ise Fransa anlaşma zemini aramaya, İtalyanlar da bazı yerleri boşaltmaya başlamıştı.",
+      "articleRefs": [
+        "2.5.4-01",
+        "2.5.3-01"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Başkomutanlık Yasası Sakarya Meydan Muharebesi kazanıldıktan sonra mı çıkarıldı?",
+      "back": "Hayır; Kütahya-Eskişehir geri çekilişinin ardından 5 Ağustos 1921'de oy birliğiyle kabul edildi. Sakarya Meydan Muharebesi 23 Ağustos 1921'de başladı.",
+      "explanation": "Geri çekiliş Mecliste Mustafa Kemal'e karşı muhalefeti sertleştirmişti. 4 Ağustos'taki gizli oturumda bir milletvekili onun ordunun başına geçmesini istedi. Yasa, yetki ve sorumluluğu tek elde toplamak amacıyla çıkarıldı.",
+      "articleRefs": [
+        "2.5.4-02",
+        "2.5.5-01"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "5 Ağustos 1921'de kabul edilen Başkomutanlık Yasası, TBMM'nin yetkilerini Mustafa Kemal'e ne kadar süreyle devretti?",
+      "back": "Üç ay süreyle. Başkomutan seçilen Mustafa Kemal, Meclis'in askerî yetkilerini kendi üzerinde topladı.",
+      "explanation": "Bu yetki Mustafa Kemal'e çabuk karar verme ve kararı hızla uygulama imkânı sağladı.",
+      "articleRefs": [
+        "2.5.4-02"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Yunan ordusu Ankara'ya çok yaklaşmışken Ankara'da öğretmenleri bir araya getiren, açılış konuşmasını Mustafa Kemal'in cepheden gelerek yaptığı kongre hangisidir?",
+      "back": "Maarif Kongresi. Mustafa Kemal burada Türkiye'de millî bir eğitim kurulması gerektiğini vurguladı.",
+      "explanation": "Savaş yüzünden kongreden beklenen sonuçlar alınamadı. Yine de bu buhranlı dönemde toplanması iki şeyi gösterir: eğitime verilen önemi ve Millî Mücadele'nin eğitim alanında da sürdürüldüğünü.",
+      "articleRefs": [
+        "2.5.4-03"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Başkomutan Mustafa Kemal Tekâlif-i Millîye Emirleri'ni hangi tarihte yayımladı?",
+      "back": "7-8 Ağustos 1921'de. Amacı ordunun ihtiyaçlarını karşılamaktı.",
+      "explanation": "Emirler, Mustafa Kemal Başkomutanlık görevini üstlendikten sonra çıkarıldı. Halk yoksulluğuna rağmen elindekini ordusuyla paylaşarak büyük bir dayanışma örneği gösterdi.",
+      "articleRefs": [
+        "2.5.4-04"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Tekâlif-i Millîye Emirleri'ne göre her çeşit araba ve hayvanın yüzde kırkı mı alınacaktı?",
+      "back": "Hayır; araba ve hayvanın yüzde yirmisi alınacaktı. Yüzde kırk, halkın ve tüccarın elindeki askere yarar mallara el koyma oranıdır.",
+      "explanation": "Mallara el koyma işini kurulacak komisyonlar yapacak, bedel sonradan ödenecekti. Emirler başka yükümlülükler de getirdi. Taşıt sahipleri ayda bir defa, 100 kilometrelik yola karşılıksız askerî malzeme götürecekti. Halk da silah ve cephanesini üç gün içinde komisyonlara teslim edecekti.",
+      "articleRefs": [
+        "2.5.4-04"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Millî Mücadele'de dünya Müslümanlarının Türkiye'ye yardım girişimleri arasında en büyüğünü kimler yaptı?",
+      "back": "İngiliz sömürüsü altındaki Hint Müslümanları. Toplanan bağışlar Kızılay (Hilal-i Ahmer) aracılığıyla Türkiye'ye ulaştırıldı.",
+      "explanation": "Müslüman dünyada tepki uyandıran iki gelişme vardı: İslam halifeliğinin merkezi İstanbul'un Hristiyan ordularınca işgali ve Yunanların İzmir yöresinde halka yaptığı zulüm.",
+      "articleRefs": [
+        "2.5.4-04"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "\"Hattı müdafaa yoktur, sathı müdafaa vardır\" emri hangi muharebe sırasında verildi?",
+      "back": "Sakarya Meydan Muharebesi'nde verildi. O sırada top sesleri Ankara'dan duyuluyordu, Yunan süvari öncüleri de Polatlı'ya kadar ilerlemişti.",
+      "explanation": "Bu anlayışla Türk mevzileri pek çok yerde yarılsa da hiçbir alandan vazgeçilmedi. Kaybedilen her hattın arkasında yeni bir savunma hattı kuruldu. Düşman önce yavaşladı, sonra durduruldu. Savaş 13 Eylül 1921'de Türk zaferiyle bitti.",
+      "articleRefs": [
+        "2.5.5-01"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Sakarya Meydan Muharebesi kaç gün kaç gece sürdü?",
+      "back": "22 gün ve 22 gece. 23 Ağustos 1921'de Yunan saldırısıyla başladı, 13 Eylül 1921'de Türk zaferiyle sona erdi.",
+      "explanation": "Çarpışmalar 100 kilometrelik bir cephede yaşandı. Kral Konstantin Yunan ordusuna \"Ankara'ya!\" emrini vermişti.",
+      "articleRefs": [
+        "2.5.5-01"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Sakarya Meydan Muharebesi'nde askerlerine cesaret vermek için ön saflarda çarpışan kaç subay şehit düştü?",
+      "back": "350 subay şehit düştü. Bu yüzden savaşa \"Subay Savaşı\" da denir.",
+      "explanation": "Mustafa Kemal Paşa bu savaşı \"Sakarya Melhame-i Kübrası\" olarak nitelendirdi. Zaferde en küçük rütbeden Fevzi Paşa'ya ve Başkomutan Mustafa Kemal'e kadar herkesin büyük payı vardır.",
+      "articleRefs": [
+        "2.5.5-01"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Sakarya Meydan Muharebesi'yle sona eren, Viyana önlerinden başlayan Türk geri çekiliş dönemi hangi yıl başlamıştı?",
+      "back": "1683'te başlamıştı. Sakarya'nın sonunda Yunanlar saldırı güçlerini yitirip savunmaya çekildi.",
+      "articleRefs": [
+        "2.5.5-02"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Sakarya Zaferi'nden sonra TBMM, 19 Eylül 1921'de çıkardığı kanunla Mustafa Kemal'e hangi unvanı verdi?",
+      "back": "Gazi unvanını verdi. Aynı kanunla Mareşal rütbesi de verildi.",
+      "explanation": "Sakarya Zaferi'nin dış politikada da önemli sonuçları oldu: Kafkas Cumhuriyetleriyle Kars Antlaşması, Fransızlarla da Ankara Antlaşması imzalandı.",
+      "articleRefs": [
+        "2.5.5-02"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Büyük Taarruz'un ardından Mareşallik rütbesi Mustafa Kemal'e mi verildi?",
+      "back": "Hayır; Büyük Taarruz'dan sonra Mustafa Kemal'in teklifiyle bu rütbe Fevzi Paşa'ya verildi. Mustafa Kemal Mareşalliği 19 Eylül 1921'de, Sakarya Zaferi'nin ardından almıştı.",
+      "explanation": "Fevzi Paşa'ya rütbe, üstün hizmetleri nedeniyle verildi. Mustafa Kemal'e ise rütbe ve Gazi unvanı TBMM tarafından kanunla verilmişti.",
+      "articleRefs": [
+        "2.5.5-02",
+        "2.5.6-01"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Kars Antlaşması hangi tarihte imzalandı?",
+      "back": "13 Ekim 1921'de imzalandı. Türkiye'nin doğu sınırı bu antlaşmayla kesinleşti.",
+      "explanation": "Konferans Sovyet Rusya öncülüğünde Kars'ta toplandı. Türk heyetinin başında Kazım Karabekir vardı. Antlaşmayla taraflar birbirlerinin varlığını tanıdı.",
+      "articleRefs": [
+        "2.5.5-03"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Kars'taki konferansta TBMM Hükûmeti, Sovyet Rusya'nın öncülüğünde hangi devletlerin temsilcileriyle antlaşma yaptı?",
+      "back": "Azerbaycan, Gürcistan ve Ermenistan'ın temsilcileriyle.",
+      "explanation": "Taraflar antlaşmayla birbirlerinin varlığını tanıdı ve sınırlar konusu son şeklini aldı.",
+      "articleRefs": [
+        "2.5.5-03"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "TBMM'yi tanıyan ilk işgalci devlet hangisidir?",
+      "back": "Fransa. Tanıma, 20 Ekim 1921'de imzalanan Ankara Antlaşması ile gerçekleşti.",
+      "explanation": "Sakarya Zaferi İtilaf Devletleri arasındaki çatlağı büyütünce Fransızlar TBMM Hükûmeti ile temasa geçti. Antlaşmaya göre Suriye'de kalan ve Süleyman Şah Mezarı'nın bulunduğu Caber Kalesi Türk toprağı sayılacaktı.",
+      "articleRefs": [
+        "2.5.5-04"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "1921 Ankara Antlaşması'na göre İskenderun ve Antakya (Hatay) yöresi hangi sınırlar içinde kalacaktı?",
+      "back": "Fransız mandasındaki Suriye'nin sınırları içinde. Bölgede özel bir yönetim kurulacak, resmî dil Türkçe olacaktı.",
+      "articleRefs": [
+        "2.5.5-04"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Sakarya Zaferi'nden sonra arabuluculuğa girişen İtilaf Devletleri'nin İzmir ve Trakya'yı içeren yeni barış projelerini Mustafa Kemal neden reddetti?",
+      "back": "Bu projeler Türk milletinin bağımsızlığına aykırı hükümler taşıyordu.",
+      "explanation": "İtilaf Devletleri, Yunan ordusunun başarısızlığı ve geri çekilişinden sonra Türk ve Yunan kuvvetleri arasında savaşı durduracak bir arabulucu rolüne girmişti.",
+      "articleRefs": [
+        "2.5.5-05"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Büyük Taarruz hangi gün ve saatte başladı?",
+      "back": "26 Ağustos 1922 sabahı saat 05.30'da, Türk topçularının ateşiyle başladı.",
+      "explanation": "Mustafa Kemal savaşı Kocatepe'den yönetti. Ani baskın biçimindeki taarruz karşısında şaşıran Yunanlar geri çekilmeye başladı.",
+      "articleRefs": [
+        "2.5.6-01"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Dumlupınar'da yapılan meydan savaşına neden \"Başkomutanlık Meydan Muharebesi\" adı verildi?",
+      "back": "Çünkü savaşın komutasını Başkomutan Mustafa Kemal bizzat üstlendi ve savaşı kendisi yönetti.",
+      "explanation": "30 Ağustos'ta Yunan ordusu Dumlupınar'da kuşatıldı ve düşmanın büyük bölümü yok edildi. Geriye kalan Yunan birlikleri İzmir yönünde hızla geri çekildi.",
+      "articleRefs": [
+        "2.5.6-01"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Mustafa Kemal \"Ordular! İlk hedefiniz Akdeniz'dir, İleri!\" buyruğunu hangi tarihte verdi?",
+      "back": "1 Eylül'de verdi. Buyruktan önce karargâhını kurduğu Çal köyünde ordu komutanlarıyla durumu değerlendirmişti.",
+      "explanation": "Türk askerleri İzmir'e 9 Eylül 1922 sabahı girdi ve Kadifekale'de Türk bayrağı yeniden dalgalandı. Bursa 11 Eylül'de kurtuldu. 18 Eylül'de Batı Anadolu'da düşman kalmadı.",
+      "articleRefs": [
+        "2.5.6-01"
+      ]
+    }
+  ]
+}

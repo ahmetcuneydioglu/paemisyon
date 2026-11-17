@@ -1,0 +1,227 @@
+{
+  "deck": {
+    "topicId": "23d22785-351b-4f39-8516-a419e2c254c0",
+    "sourceSlug": "inkilap-tarihi-meb-12",
+    "sourceLabel": "AI bilgi kartı — Atatürk İlkeleri ve İnkılap Tarihi: Mudanya Ateşkesi ve Lozan Barış Antlaşması (kaynak pasajı 2.6-01…2.6.1-06)",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: kaynak pasajı + bankadaki sorular; stil kapısı 1 açıklama yeniden yazıldı)"
+  },
+  "cards": [
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Millî Mücadele'nin askerî safhası hangi anlaşmayla tamamlandı?",
+      "back": "Mudanya Ateşkes Anlaşması ile. İstanbul ve Doğu Trakya bu anlaşmayla savaşa girilmeden kurtarıldı.",
+      "explanation": "Türk birlikleri Boğazlara yönelince İtalyanlar ve Fransızlar Çanakkale ve İzmit'teki birliklerini çekti, İngiltere yalnız kaldı. Dominyonlarından da beklediği desteği bulamayan İngiltere, Türklerle masaya oturmak zorunda kaldı.",
+      "articleRefs": [
+        "2.6-01"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Mudanya Ateşkes Anlaşması hangi tarihte imzalandı?",
+      "back": "11 Ekim 1922'de imzalandı. Anlaşma 14 maddeden oluşur.",
+      "explanation": "Görüşmeler sert tartışmalarla geçti. İtilaf Devletleri adına İngiltere'yi General Harrington, Fransa'yı General Charpy, İtalya'yı General Monbelli temsil etti.",
+      "articleRefs": [
+        "2.6-01"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "İtilaf Devletleri, Mudanya Ateşkes Anlaşması ile hangi devletin sona erdiğini kabul etmiş oldu?",
+      "back": "Osmanlı Devleti'nin. Anlaşmayı TBMM Hükûmeti ile imzaladılar ve İstanbul'un bu hükûmete teslim edilmesini kabul ettiler.",
+      "explanation": "Anlaşmanın sonuçları İngiltere'de de görüldü. İngiltere'nin Doğu Akdeniz politikası iflas etti. Yunanları destekleyen Başbakan Lloyd George istifa etmek zorunda kaldı.",
+      "articleRefs": [
+        "2.6-01"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "İsmet Paşa, Mudanya görüşmelerindeki başarısı sebebiyle hangi göreve seçildi?",
+      "back": "Dışişleri Bakanlığına seçildi. Lozan'a gidecek Türk heyetinin başına da o getirildi.",
+      "explanation": "İsmet Paşa o sırada Batı Cephesi Komutanıydı. Barış görüşmelerine yönelik bu hazırlıklar, Mudanya Ateşkesi imzalandıktan sonra yapıldı.",
+      "articleRefs": [
+        "2.6.1-01"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "İtilaf Devletleri'nin Lozan Barış Konferansı'na İstanbul Hükûmeti'ni de davet etmesine TBMM nasıl karşılık verdi?",
+      "back": "Saltanatı kaldırdı. Böylece Osmanlı Devleti'nin siyasal varlığı sona erdi.",
+      "explanation": "Bu karardan sonra barış görüşmelerinde Türk tarafını yalnız TBMM Hükûmeti temsil etti. Mustafa Kemal Paşa görüşmeler için İzmir'i önermişti; bu öneri kabul görmedi ve tarafsız İsviçre'nin Lozan kenti seçildi.",
+      "articleRefs": [
+        "2.6.1-01"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Yunanistan, Mudanya Ateşkes görüşmelerine kendi delegesiyle katıldı mı?",
+      "back": "Hayır. Delegesi General Mazarakis bir gemide bekletildi ve Yunanistan'ı İngiltere temsil etti.",
+      "explanation": "Lozan Barış Konferansı'nda ise Yunanistan delegeleri de bulundu. Bu konferansa TBMM Hükûmeti, İngiltere, Fransa, İtalya, Japonya, Romanya ve Yugoslavya delegeleri de katıldı.",
+      "articleRefs": [
+        "2.6-01",
+        "2.6.1-01"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Lozan'a giden Türk heyetinden hangi konularda kesinlikle taviz vermemesi istendi?",
+      "back": "İki konuda: Anadolu'da Ermenilere toprak verilmemesi ve kapitülasyonların kaldırılması.",
+      "explanation": "Bu istekler, heyete yola çıkmadan önce verilen kısa direktifte yer aldı.",
+      "articleRefs": [
+        "2.6.1-01"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Lozan Barış Konferansı hangi tarihte açıldı?",
+      "back": "20 Kasım 1922'de açıldı. Asıl barış görüşmeleri 21 Kasım'da Ouchy (Uşi) Şatosu Oteli'nin büyük salonunda başladı.",
+      "explanation": "Görüşmeler, tarafsız bir ülke olan İsviçre'nin Lozan kentinde yapıldı.",
+      "articleRefs": [
+        "2.6.1-01"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Lozan Barış Konferansı'na hangi devletlerin delegeleri yalnız Boğazlarla ilgili konular görüşülürken katıldı?",
+      "back": "Sovyetler Birliği ve Bulgaristan.",
+      "explanation": "ABD ise konferansta yalnızca gözlemci olarak yer aldı.",
+      "articleRefs": [
+        "2.6.1-01"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Lozan Barış Konferansı hangi tarihte sonuç alınamadan dağıldı?",
+      "back": "4 Şubat 1923'te dağıldı.",
+      "explanation": "Görüşmeler son derece zorlu geçti, çünkü masada yalnız Türk-Yunan savaşı yoktu. Osmanlı İmparatorluğu'nun tasfiyesiyle ortaya çıkan, köklü ve karmaşık birçok mesele de çözüm bekliyordu. Kesintiden sonra görüşmelerin ikinci etabı 23 Nisan 1923'te başladı.",
+      "articleRefs": [
+        "2.6.1-02"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Lozan görüşmeleri kesildiğinde toplanan Türkiye İktisat Kongresi ekonomide hangi modelin uygulanmasını kararlaştırdı?",
+      "back": "Liberal modelin uygulanmasını kararlaştırdı. Kongre ayrıca ekonomide tam bağımsızlık kararı aldı ve kapitülasyonların kabul edilmeyeceğini yeniden duyurdu.",
+      "explanation": "Kongre 17 Şubat 1923'te toplandı. Liberal sisteme geçme kararı, Batılı devletler üzerinde olumlu bir izlenim bıraktı.",
+      "articleRefs": [
+        "2.6.1-02"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Lozan Barış Antlaşması hangi tarihte imzalandı?",
+      "back": "24 Temmuz 1923'te imzalandı. Antlaşmayı İsmet Paşa imzaladı.",
+      "explanation": "Türkiye 8 Mart'ta verdiği notayla barış projesini açıkladı. Ardından görüşmelerin ikinci etabı 23 Nisan 1923'te başladı. İmza 101 pare top atışıyla duyuruldu ve Mustafa Kemal, İsmet Paşa'ya kutlama telgrafı çekti.",
+      "articleRefs": [
+        "2.6.1-02"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Lozan Barış Antlaşması kaç maddeden oluşur?",
+      "back": "143 maddeden oluşur.",
+      "explanation": "Antlaşmanın önemli hükümleri arasında sınırlar, Boğazlar, kapitülasyonlar, borçlar, azınlıklar, nüfus mübadelesi, Fener Rum Patrikhanesi ve savaş tazminatı bulunur.",
+      "articleRefs": [
+        "2.6.1-03"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Lozan Barış Antlaşması'na göre Türk-Yunan sınırı neresidir?",
+      "back": "Meriç Nehri.",
+      "explanation": "Bozcaada, Gökçeada ve Tavşan Adası Türkiye'ye bırakıldı. Türkiye'nin Ege kıyılarına yakın Yunan adalarının silahlandırılmaması kararlaştırıldı.",
+      "articleRefs": [
+        "2.6.1-03"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Lozan'da Yunanistan, savaş tazminatı karşılığında Türkiye'ye neresini verdi?",
+      "back": "Meriç Nehri'nin ötesindeki Karaağaç kasabasını verdi.",
+      "explanation": "Karaağaç, Yunanistan'ın verdiği zararlara karşılık olarak Türkiye'ye bırakıldı.",
+      "articleRefs": [
+        "2.6.1-03"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Lozan Barış Antlaşması kapitülasyonların genişletilmesini öngörüyor muydu?",
+      "back": "Hayır. Lozan, adli, mali, idari ve ekonomik ayrıcalıklar içeren kapitülasyonları kaldırdı. Genişletilmelerini öngören antlaşma Sevr'di.",
+      "explanation": "Sevr Antlaşması 10 Ağustos 1920'de Osmanlı Devleti'ne imzalatılmıştı. Bu antlaşma Anadolu'da İngiliz, Fransız ve İtalyan nüfuz bölgeleri oluşturuyor, Doğu Anadolu'da bir Ermenistan Devleti kuruyordu.",
+      "articleRefs": [
+        "2.6.1-03",
+        "2.6.1-04"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Lozan'da Suriye sınırı için hangi antlaşmadaki sınır esas alındı?",
+      "back": "Fransa ile 20 Ekim 1921'de imzalanan Ankara Antlaşması'ndaki sınır esas alındı.",
+      "explanation": "Lozan'da Yunanistan sınırı da Meriç Nehri olarak belirlendi.",
+      "articleRefs": [
+        "2.6.1-03"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Lozan'da Irak sınırı için de Ankara Antlaşması'ndaki sınır mı esas alındı?",
+      "back": "Hayır. Ankara Antlaşması'ndaki sınır Suriye sınırı için esas alındı. Irak sınırı Musul sorunu yüzünden Lozan'da belirlenemedi.",
+      "explanation": "Konu, Türkiye ile İngiltere arasında yapılacak ikili görüşmelere bırakıldı.",
+      "articleRefs": [
+        "2.6.1-03"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Lozan Barış Antlaşması'na göre Boğazlar nasıl yönetilecekti?",
+      "back": "Türkiye'nin başkanlığındaki uluslararası bir komisyon tarafından yönetilecekti.",
+      "explanation": "Türkiye, Boğazların iki yakasında da asker bulunduramayacaktı.",
+      "articleRefs": [
+        "2.6.1-03"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Lozan Barış Antlaşması imzalandığı tarihte yürürlüğe girdi mi?",
+      "back": "Hayır. 24 Temmuz 1923'te imzalandı, ancak 6 Ağustos 1924'te yürürlüğe girebildi.",
+      "explanation": "Yürürlük, antlaşmayla ilgili öteki devletlerin onayları geciktiği için ertelendi.",
+      "articleRefs": [
+        "2.6.1-04",
+        "2.6.1-05"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "TBMM, Sevr Antlaşması'nı imzalayanlar hakkında hangi kararı aldı?",
+      "back": "Onları vatan haini saydı ve vatandaşlıktan çıkardı. Antlaşmayı tanımadığını da İtilaf Devletleri'ne bildirdi.",
+      "explanation": "Sevr Antlaşması uygulanamayan bir antlaşma olarak kaldı. Lozan Barış Antlaşması ile Türkiye siyasi, ekonomik ve hukuki bütün sınırlandırmalardan kurtuldu ve tam bağımsız bir devlet olarak tanındı.",
+      "articleRefs": [
+        "2.6.1-05"
+      ]
+    }
+  ]
+}

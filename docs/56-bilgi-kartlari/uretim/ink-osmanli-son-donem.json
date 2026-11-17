@@ -1,0 +1,154 @@
+{
+  "deck": {
+    "topicId": "23d22785-351b-4f39-8516-a419e2c254c0",
+    "sourceSlug": "inkilap-tarihi-meb-12",
+    "sourceLabel": "AI bilgi kartı — Atatürk İlkeleri ve İnkılap Tarihi: XX. yüzyıl başında Osmanlı Devleti (kaynak pasajı 1.2.1-01…1.2.3-01)",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: kaynak pasajı + bankadaki sorular; stil kapısı 2 açıklama yeniden yazıldı)"
+  },
+  "cards": [
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "İttihat ve Terakki Cemiyeti hangi örgütleri örnek alarak kurulmuştur?",
+      "back": "Mason ve İtalyan Carbonari (Karbonari) teşkilatlarını örnek almıştır.",
+      "explanation": "Cemiyet önce Mekteb-i Tıbbiye öğrencileri arasında Yeni Osmanlılar çizgisinde örgütlendi. Ardından Mekteb-i Harbiye öğrencilerine yayıldı. Gizli çalışan üyeler Sultan II. Abdülhamit'e karşıydı.",
+      "articleRefs": [
+        "1.2.1-01"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "II. Meşrutiyet hangi tarihte ilan edildi?",
+      "back": "23 Temmuz 1908'de ilan edildi. Sultan II. Abdülhamit ilan etti ve Kanun-ı Esasi (1876 Anayasası) yeniden yürürlüğe girdi.",
+      "explanation": "İlan, İttihat ve Terakki Cemiyetinin faaliyetleri sonucunda gerçekleşti. İngiltere ile Rusya Reval'de Makedonya ve Boğazlar üzerine görüşmüştü. Bu görüşme cemiyet üyelerini tedirgin etti ve üyeler devleti dağılmaktan kurtarmak için ayaklandı.",
+      "articleRefs": [
+        "1.2.1-01"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "31 Mart Ayaklanması'nı bastıran Hareket Ordusunun kurmay başkanı kimdi?",
+      "back": "Mustafa Kemal'di. Ordunun komutanı ise Mahmut Şevket Paşa'ydı.",
+      "explanation": "Selanik'ten gelen Hareket Ordusu, Meşrutiyet karşıtlarının çıkardığı ayaklanmayı (13 Nisan 1909) bastırdı. Ardından Sultan II. Abdülhamit tahttan indirildi. Yerine Sultan Mehmet Reşat (V. Mehmet) geçirildi.",
+      "articleRefs": [
+        "1.2.1-01"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "31 Mart Ayaklanması'ndan sonra Kanun-ı Esasi'de yapılan değişiklikle hükûmet kime karşı sorumlu hâle geldi?",
+      "back": "Meclise karşı sorumlu hâle geldi.",
+      "explanation": "Aynı değişikliklerle padişahın meclisi feshetmesi zorlaştırıldı ve veto hakkı sınırlandırıldı. Amaç, anayasayı daha demokratik kılmaktı.",
+      "articleRefs": [
+        "1.2.1-02"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Trablusgarp Savaşı'nda Mustafa Kemal hangi yerlerde önemli başarılar kazandı?",
+      "back": "Derne ve Tobruk'ta başarı kazandı. Enver Bey ise Bingazi'de başarılı oldu.",
+      "explanation": "Osmanlı Devleti, kara ve deniz yoluyla bölgeye yeterli destek ulaştıramadı. Fethi Bey'in de aralarında bulunduğu gönüllü subaylar Trablusgarp'ta yerli halkı örgütledi ve İtalyan kuvvetlerine karşı başarıyla savaştı. İtalya bu savaşı 1911'de ilan etmişti.",
+      "articleRefs": [
+        "1.2.1-02"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Ouchy (Uşi) Antlaşması ile On İki Ada kesin olarak İtalya'ya mı bırakıldı?",
+      "back": "Hayır. Uşi ile Trablusgarp İtalya'ya bırakıldı; On İki Ada ise yalnız geçici olarak bırakıldı.",
+      "explanation": "Antlaşma 18 Ekim 1912'de imzalandı. Trablusgarp'ın bırakılmasıyla Osmanlı'nın Kuzey Afrika'daki varlığı bitti. İtalya, Osmanlı'yı zor durumda bırakmak için On İki Ada'yı işgal etmiş ve Çanakkale Boğazı'nı abluka altına almıştı. I. Balkan Savaşı çıkınca Osmanlı barış istemek zorunda kaldı.",
+      "articleRefs": [
+        "1.2.1-02"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "I. Balkan Savaşı'nda Çatalca'ya kadar ilerleyen Yunanlar mıydı?",
+      "back": "Hayır, Bulgarlardı; Kırklareli ile Edirne'yi de onlar işgal etti. Yunanlar Selanik'i ele geçirip Ege Adaları'nı işgal etti.",
+      "explanation": "Aynı savaşta Sırplar Üsküp ve Manastır'ı, Karadağlılar da İşkodra'yı aldı. Savaş Karadağ'ın saldırısıyla başladı. Ardından Sırbistan, Bulgaristan ve Yunanistan da savaşa katıldı.",
+      "articleRefs": [
+        "1.2.1-03"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "I. Balkan Savaşı'ndan sonra imzalanan Londra Antlaşması'nın tarihi nedir?",
+      "back": "30 Mayıs 1913'tür. Bu antlaşmayla Osmanlı Devleti, Midye-Enez hattının batısındaki topraklarını kaybetti.",
+      "explanation": "Antlaşma büyük devletlerin arabuluculuğuyla yapıldı. Savaş sürerken Arnavutluk da bağımsızlığını ilan etmişti.",
+      "articleRefs": [
+        "1.2.1-03"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Osmanlı Devleti II. Balkan Savaşı'ndan sonra Yunanistan ile İstanbul Antlaşması'nı mı imzaladı?",
+      "back": "Hayır. Yunanistan ile Atina Antlaşması imzalandı. İstanbul antlaşmaları ise Bulgaristan ve Sırbistan ile yapıldı.",
+      "explanation": "Balkan devletleri aldıkları yerleri Bükreş Antlaşması (10 Ağustos 1913) ile paylaştı. Osmanlı, Bulgaristan'a karşı kurulan ittifaktan yararlanarak Edirne, Kırklareli ve Dimetoka'yı geri aldı. Yine de Makedonya, Arnavutluk ve Ege Adaları gibi Balkan topraklarının büyük kısmını kaybetti.",
+      "articleRefs": [
+        "1.2.1-03"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Bütün Müslümanları, milletlerine bakmaksızın halifenin çevresinde birleştirmeyi hedefleyen fikir akımı hangisidir?",
+      "back": "İslamcılık.",
+      "explanation": "Araplar gibi Müslüman milletler bağımsız devlet kurmak istedi. Bunun üzerine bu akım önemini kaybetti.",
+      "articleRefs": [
+        "1.2.1-04"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Osmanlıcılık akımı hangi gelişmeyle geçerliliğini yitirdi?",
+      "back": "Balkan milletlerinin isyan ederek Osmanlı Devleti'nden ayrılmasıyla geçerliliğini yitirdi.",
+      "explanation": "Osmanlıcılık; dil, din ve etnik ayrım yapmadan ülkedeki tüm toplulukları bir arada tutmayı hedefliyordu. Böylece bir Osmanlı milleti oluşturmayı amaçlıyordu.",
+      "articleRefs": [
+        "1.2.1-04"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Osmanlıcılık ve İslamcılık devletin dağılmasını önleyemeyince hangi fikir akımı önem kazandı?",
+      "back": "Türkçülük önem kazandı. Bu akım Türkleri millî bir duygu çevresinde birleştirmeyi amaçladı.",
+      "explanation": "Türkçülük, Millî Mücadele'nin başarısındaki en önemli etkenler arasında sayılır. İttihat ve Terakki Cemiyeti de öteki iki akımın sonuçsuz kaldığını gördü. Bu yüzden Türkçülük politikasına ağırlık verdi.",
+      "articleRefs": [
+        "1.2.1-04",
+        "1.2.1-02"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Osmanlı Devleti dış ticaret açığını hangi yıldan sonra Avrupa'dan borç alarak kapatmaya başladı?",
+      "back": "1854'ten sonra Avrupa'dan borç alarak kapatmaya başladı.",
+      "explanation": "Sanayileşemeyen Osmanlı açık pazara dönüştü. Sanayi tüketim malları ithal edip tarım ürünleri ve madensel ham madde ihraç eden bir yapı oluştu. Serbest ticaretle oluşan bağımlılığa ekonomik bağımlılık da eklendi.",
+      "articleRefs": [
+        "1.2.3-01"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Düyûn-ı Umûmiye İdaresini kuran Muharrem Kararnamesi hangi tarihte yayımlandı?",
+      "back": "20 Aralık 1881'de yayımlandı. İdareyi alacaklı devletler kurdu.",
+      "explanation": "Osmanlı, borçlarının faizini bile ödeyemeyince iflasını açıklamıştı. Genel Borçlar İdaresi olarak da anılan bu kurumla Osmanlı maliyesi alacaklı devletlerin denetimine girdi. Devlet böylece ekonomik bağımsızlığını kaybetti.",
+      "articleRefs": [
+        "1.2.3-01"
+      ]
+    }
+  ]
+}

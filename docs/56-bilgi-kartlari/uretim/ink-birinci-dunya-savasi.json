@@ -1,0 +1,213 @@
+{
+  "deck": {
+    "topicId": "23d22785-351b-4f39-8516-a419e2c254c0",
+    "sourceSlug": "inkilap-tarihi-meb-12",
+    "sourceLabel": "AI bilgi kartı — Atatürk İlkeleri ve İnkılap Tarihi: I. Dünya Savaşı: nedenleri, Osmanlı'nın girişi, savaşın sonu (kaynak pasajı 1.3.1-01…1.3.5-02)",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: kaynak pasajı + bankadaki sorular; stil kapısı 6 açıklama yeniden yazıldı)"
+  },
+  "cards": [
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Ulusları millî devlet kurmaya yönelttiği için I. Dünya Savaşı'nın en önemli nedenlerinden biri sayılan olay hangisidir?",
+      "back": "Fransız İhtilali (1789). Yaydığı düşünceden etkilenen uluslar bağımsızlık savaşlarına giriştiler.",
+      "explanation": "Öteki önemli neden sömürgecilik yarışıdır. Sanayi İnkılabı ham madde ve pazar arayışını doğurdu, bu arayış sömürgeci devletleri büyük bir rekabete soktu. Devletler arasındaki mücadele de silahlanma yarışını ve bloklaşmayı getirdi.",
+      "articleRefs": [
+        "1.3.1-01"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Almanya önderliğindeki Üçlü İttifak hangi yıl kuruldu?",
+      "back": "1882. Almanya'nın yanında Avusturya-Macaristan ve İtalya yer aldı.",
+      "explanation": "Karşı blokta İngiltere ve Fransa, İtilaf Devletleri'ni kurdu. Rusya da bu bloka katılınca 1907'de Üçlü İtilaf oluştu.",
+      "articleRefs": [
+        "1.3.1-01"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Avusturya-Macaristan Veliahtı Franz Ferdinand hangi tarihte suikastla öldürüldü?",
+      "back": "28 Haziran 1914. Veliaht, eşiyle birlikte bir Sırp milliyetçisi tarafından öldürüldü ve bu olay iki bloku savaşa sürükledi.",
+      "explanation": "Suikastın ardından Avusturya-Macaristan, 28 Temmuz 1914'te Sırbistan'a savaş açtı. Avusturya-Macaristan'ı Almanya, Sırbistan'ı ise Rusya destekledi. Almanya Fransa ile Belçika'ya saldırınca İngiltere de Almanya'ya karşı savaşa girdi.",
+      "articleRefs": [
+        "1.3.1-01"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Savaş başlayınca Asya'daki yayılmasını hızlandırmak isteyen ve İngiltere'nin safında Almanya'ya savaş ilan eden devlet hangisidir?",
+      "back": "Japonya. Kısa sürede Asya ve Büyük Okyanus'taki sömürgeleri ele geçirdi.",
+      "explanation": "Japonya bu hızlı ilerleyişle savaşa girerken güttüğü amaca ulaştı.",
+      "articleRefs": [
+        "1.3.1-02"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Bulgaristan I. Dünya Savaşı'na İtilaf Devletleri'nin yanında mı katıldı?",
+      "back": "Hayır. Bulgaristan, Çanakkale Muharebeleri'nden sonra İttifak Devletleri'nin safında savaşa girdi. Taraf değiştirip İtilaf'a geçen devlet İtalya'dır.",
+      "explanation": "Bulgaristan'ın hedefi, İkinci Balkan Savaşı'nda Romanya, Sırbistan ve Yunanistan'a kaptırdığı toprakları geri almaktı.",
+      "articleRefs": [
+        "1.3.1-02"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "İtilaf Devletleri, savaş başında Osmanlı Devleti'nin tarafsız kalmasını neden istiyordu?",
+      "back": "İtilaf Devletleri Osmanlı topraklarını kendi aralarında paylaşmayı amaçlıyordu. Osmanlı tarafsız kalırsa İngiltere ve Fransa Boğazlardan serbestçe geçip Rusya'ya yardım edebilecekti.",
+      "explanation": "Osmanlı Devleti İtilaf Devletleri'nin yanında yer almak istemişti ama bu talebi reddedildi.",
+      "articleRefs": [
+        "1.3.2-01"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Osmanlı Devleti, tarafsız kalmasına karşılık İngiltere ve Fransa'dan neler istedi?",
+      "back": "Kapitülasyonların kaldırılması, Ege Adaları'nın kendisine verilmesi ve Mısır meselesinin çözümü bu istekler arasındaydı.",
+      "explanation": "İngiltere ve Fransa bu isteklere olumlu karşılık vermedi.",
+      "articleRefs": [
+        "1.3.2-01"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Almanya, Osmanlı Devleti'ni kendi yanında savaşa sokarak neler kazanmayı umuyordu?",
+      "back": "Almanya yeni cephelerle kendi savaş yükünü hafifletmeyi ve halifeliğin nüfuzundan yararlanmayı umuyordu. İngiltere'nin sömürgeleriyle bağlantısını kesmeyi, Osmanlı'nın ham madde ve insan gücünü kullanmayı da hedefliyordu.",
+      "explanation": "Osmanlı Devleti'nin İtilaf'a yaptığı ittifak önerisi reddedildi, bunun üzerine Osmanlı Almanya'ya yakınlaştı. Almanya ile gizli bir ittifak antlaşması yaparak İttifak Devletleri arasına girdi. İttihat ve Terakki yöneticileri Almanların savaşı kazanacağından emindi.",
+      "articleRefs": [
+        "1.3.2-01"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Osmanlı Devleti, Çanakkale'ye sığınan Alman savaş gemileri Goeben ve Breslau'ya hangi adları verdi?",
+      "back": "Goeben'e Yavuz, Breslau'ya Midilli adı verildi. Osmanlı gemileri satın aldığını açıklayıp üzerlerine Türk bayrağı çekti.",
+      "explanation": "Tarafsız bir devlet olarak Osmanlı'nın bu gemilerin silahlarını sökmesi ve personelini tutuklaması gerekiyordu. Gemilerin Osmanlı limanına sığınması, Osmanlı Devleti'nin savaşa girişini hızlandırdı.",
+      "articleRefs": [
+        "1.3.2-02"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Yavuz ve Midilli gemileri Rusya'nın Karadeniz limanlarını hangi tarihte bombaladı?",
+      "back": "29 Ekim 1914. Sivastopol ve Odesa gibi limanlar top ateşine tutuldu, Osmanlı Devleti de oldubittiyle savaşa girmiş oldu.",
+      "explanation": "Bu planı Almanya uyguladı ve plan İttihat ve Terakki'nin bilgisi dâhilinde gelişti.",
+      "articleRefs": [
+        "1.3.2-02"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Osmanlı Devleti savaşa girince halife sıfatıyla cihat ilan eden padişah kimdir?",
+      "back": "Sultan V. Mehmet Reşad. Müslümanları İngiltere, Fransa ve Rusya'ya karşı savaşa çağırdı, ancak olumlu karşılık alınamadı.",
+      "articleRefs": [
+        "1.3.2-02"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Bolşevik yönetimi, Rusya'yı savaştan çeken Brest Litowsk Antlaşması'nı hangi tarihte imzaladı?",
+      "back": "3 Mart 1918. Antlaşma İttifak Devletleri ile imzalandı.",
+      "explanation": "Bolşevikler 7 Kasım 1917'de hükûmet darbesiyle iktidarı ele geçirdi. Çarlık hükûmetinin gizli antlaşmalarını dünya kamuoyuna açıkladılar. Böylece Osmanlı Devleti'ni paylaşan antlaşmalar da ortaya çıktı.",
+      "articleRefs": [
+        "1.3.4-01"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Avusturya-Macaristan savaştan Rethondes Ateşkes Anlaşması'nı imzalayarak mı çekildi?",
+      "back": "Hayır. Avusturya-Macaristan, Villa Giusti Ateşkesi'ni imzalayıp çekildi (3 Kasım 1918). Rethondes'u (11 Kasım 1918) Almanya imzaladı.",
+      "explanation": "Avusturya-Macaristan'da iç karışıklıklar da artmıştı. Almanya ise İtilaf kuvvetlerinin Batı Cephesi'ndeki ağır taarruzu karşısında ateşkes imzaladı. Almanya'nın çekilmesiyle dört yıl süren savaş sona erdi.",
+      "articleRefs": [
+        "1.3.4-01"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Osmanlı Devleti, Mondros Ateşkes Anlaşması'nı İtilaf Devletleri ile hangi tarihte imzaladı?",
+      "back": "30 Ekim 1918. Bulgaristan çekilince İstanbul ve Boğazlar tehlikeye girdi, Osmanlı da ateşkes istedi.",
+      "explanation": "İngiliz, Fransız ve Sırp kuvvetlerinin ortak taarruzu Bulgaristan'ı yendi. Bulgaristan, Selanik Ateşkes Anlaşması (29 Eylül 1918) ile savaştan çekildi. Ardından İngiltere ve Fransa, İstanbul ve Boğazlar üzerine harekete geçmeye hazırlandı.",
+      "articleRefs": [
+        "1.3.4-01"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "I. Dünya Savaşı'ndan en kârlı çıkan devlet hangisidir?",
+      "back": "İngiltere.",
+      "explanation": "Savaşın sonunda Osmanlı, Rusya, Almanya ve Avusturya-Macaristan İmparatorlukları dağıldı. Bu imparatorlukların topraklarında yeni millî ve bağımsız devletler doğdu; Polonya, Türkiye Cumhuriyeti, Yugoslavya, Çekoslovakya ve Macaristan bunlar arasındadır.",
+      "articleRefs": [
+        "1.3.4-02"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "I. Dünya Savaşı'nda ilk kez kullanılan savaş araçları arasında neler vardır?",
+      "back": "Kimyasal silahlar ve tank bunlar arasındadır.",
+      "explanation": "Savaşta milyonlarca kişi öldü. Dünya barışının korunması amacıyla Milletler Cemiyeti adıyla da bilinen Cemiyet-i Akvam kuruldu.",
+      "articleRefs": [
+        "1.3.4-02"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "I. Dünya Savaşı'ndan sonra sömürgecilik anlayışının yerini hangi anlayış aldı?",
+      "back": "Manda ve himaye anlayışı.",
+      "explanation": "Savaş sonrasında ortaya çıkan yeni siyasi rejimler arasında İtalya'da Faşizm, Almanya'da Nazizm ve Rusya'da Sosyalizm vardır.",
+      "articleRefs": [
+        "1.3.4-02"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Üçlü İtilaf Devletleri'nin İtalya'yı kendi yanlarına çekmek için imzaladığı gizli Londra Antlaşması'nın tarihi nedir?",
+      "back": "26 Nisan 1915. Bu antlaşmaya göre Antalya, Rodos ve 12 Ada İtalya'ya verilecekti.",
+      "explanation": "İtalya'ya toprak bırakan öteki gizli antlaşma, İngiltere, Fransa ve İtalya arasında yapılan St. Jean De Maurienne Antlaşması'dır. Bu antlaşmayla Antalya, Menteşe Sancağı, Konya ilinin bir kısmı ile İzmir ve kuzeyi İtalya'ya bırakılacaktı.",
+      "articleRefs": [
+        "1.3.5-02"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Sykes-Picot Antlaşması'na göre Bağdat ve Basra illerini içeren Güney Irak Fransa'ya mı bırakılacaktı?",
+      "back": "Hayır. Güney Irak İngiltere'ye bırakılacaktı. Fransa'ya düşen yerler arasında Adana ve Beyrut illeri vardı.",
+      "explanation": "Antlaşmada Rusya'ya da toprak ayrıldı: Erzurum ile Van illeri, Bitlis ve Trabzon'un doğu kesimleri, ayrıca Sivas, Harput (Elazığ) ve Diyarbakır'ın bir kısmı.",
+      "articleRefs": [
+        "1.3.5-02"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Boğazları Rusya'ya bırakan İstanbul Antlaşması İngiltere, Fransa ve İtalya arasında mı imzalandı?",
+      "back": "Hayır. İstanbul Antlaşması'nı İngiltere, Fransa ve Rusya imzaladı. İngiltere, Fransa ve İtalya arasında yapılan antlaşma St. Jean De Maurienne'dir.",
+      "explanation": "İstanbul Antlaşması 18 Mart-10 Nisan 1915 tarihlidir. Savaştan sonra Rusya'ya şu yerler verilecekti: Boğazlar, Midye-Enez çizgisine kadar Trakya ve Gelibolu Yarımadası. Kocaeli Yarımadası'nın Sakarya Irmağı'na kadarki kısmı ile İmroz ve Bozcaada da bunlara eklenecekti.",
+      "articleRefs": [
+        "1.3.5-02"
+      ],
+      "counterNumbers": []
+    }
+  ]
+}

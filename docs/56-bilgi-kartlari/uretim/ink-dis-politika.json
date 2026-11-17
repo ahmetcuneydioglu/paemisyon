@@ -1,0 +1,310 @@
+{
+  "deck": {
+    "topicId": "23d22785-351b-4f39-8516-a419e2c254c0",
+    "sourceSlug": "inkilap-tarihi-meb-12",
+    "sourceLabel": "AI bilgi kartı — Atatürk İlkeleri ve İnkılap Tarihi: Atatürk dönemi Türk dış politikası (kaynak pasajı 4.2-01…4.2.10-04)",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: kaynak pasajı + bankadaki sorular; stil kapısı 6 açıklama yeniden yazıldı; 3 açıklama düşürüldü)"
+  },
+  "cards": [
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Atatürk döneminde 1923-1930 yılları arasında Türk dış politikasının önceliği neydi?",
+      "back": "Lozan Barış Konferansı'ndan kalan sorunları çözmek.",
+      "explanation": "Türkiye 'Yurtta sulh, cihanda sulh!' düşüncesini ilke edindi ve komşu, çevre ülkelerle olumlu diplomatik ilişkiler kurmaya özen gösterdi. Toprak bütünlüğüne ya da bağımsızlığına yönelik bir tehditte ise savaştan kaçınmayacağını da gösterdi.",
+      "articleRefs": [
+        "4.2-01"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "1930-1938 yılları arasında Türk dış politikasında hangi konu öncelik kazandı?",
+      "back": "Almanya ve İtalya'nın saldırgan, yayılmacı politikalarıyla yaklaşan II. Dünya Savaşı tehlikesine karşı önlem almak.",
+      "explanation": "Türkiye bu dönemde güvenliğini sağlamak için bölgesel ittifaklar kurdu. 1932 yılında da Milletler Cemiyeti'ne üye oldu.",
+      "articleRefs": [
+        "4.2-01"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Lozan Barış Antlaşması'ndan sonra Türk-Yunan ilişkilerini belirleyen ana sorunlar nelerdi?",
+      "back": "Nüfus mübadelesi ve Patrikhane Meselesi.",
+      "explanation": "Mübadeleden iki grup ayrı tutuldu: Batı Trakya'daki Türkler ve 30 Ekim 1918'den önce İstanbul'a yerleşmiş Rumlar. Yunanistan bu tarihten önce geçici olarak gelen Rumları da yerleşik saymak istedi; Türkiye ise yalnız sürekli oturanları kabul etti.",
+      "articleRefs": [
+        "4.2.1-01"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Türk-Yunan etabli (yerleşik) sorunu hangi tarihli antlaşmayla çözüldü?",
+      "back": "10 Haziran 1930'da Ankara'da imzalanan antlaşmayla. İstanbul Rumlarının ve Batı Trakya Türklerinin tamamı yerleşik kabul edildi.",
+      "explanation": "Sorun önce Milletler Cemiyetine taşınmış ama sonuç alınamamıştı. Antlaşma, Yunanistan'la yeni bir savaşın eşiğine gelinmişken imzalandı. İtalya'da Mussolini liderliğindeki faşist yönetimin saldırgan politikasının yarattığı tehlike de bunda etkili oldu.",
+      "articleRefs": [
+        "4.2.1-01"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Patrikhane meselesinde Türkiye, konunun Uluslararası Lahey Adalet Divanına götürülmesini istedi mi?",
+      "back": "Hayır. Meseleyi Divana götürmeye çalışan Yunanistan'dı. Türkiye Patrikhaneyi bir iç sorun saydı ve iç işlerine müdahaleye izin vermeyeceğini bildirdi.",
+      "explanation": "Sorunun kaynağı, 1924'te patrik olan VI. Konstantinos Arapoğlu'nun mübadeleye tabi olmasıydı. Arapoğlu Bursa'da doğmuş, İstanbul'a 1921'de gelmişti. Türkiye geri adım atmayınca Arapoğlu görevi bıraktı ve patrikliğe mübadele kapsamına girmeyen Vasilios Yeorgiadis getirildi. Bu süreçle Türkiye şu mesajı verdi: Patrikhane Türk kanunlarına tabidir ve ekümenik statüsü tanınmaz.",
+      "articleRefs": [
+        "4.2.1-01"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "1934'te Atatürk'ü Nobel Barış Ödülü'ne aday gösteren devlet adamı kimdir?",
+      "back": "Venizelos.",
+      "articleRefs": [
+        "4.2.1-02"
+      ],
+      "explanation": "Venizelos, 1930'da Yunanistan Başbakanı olarak Türkiye'yi ziyaret etmiş ve 30 Ekim 1930'da Dostluk, Tarafsızlık, Uzlaşma ve Hakem Antlaşması'nı imzalamıştı."
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Türkiye ile Yunanistan arasındaki Dostluk, Tarafsızlık, Uzlaşma ve Hakem Antlaşması hangi tarihte imzalandı?",
+      "back": "30 Ekim 1930'da, Ankara'da.",
+      "explanation": "Antlaşma, Başbakan Venizelos ile Dışişleri Bakanı Mihalokopalos'un Türkiye ziyareti sırasında imzalandı. Heyet 26 Ekim 1930'da İstanbul'a gelmiş, 27 Ekim'de Ankara'da törenle karşılanmıştı.",
+      "articleRefs": [
+        "4.2.1-02",
+        "4.2.1-03"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Lozan Barış Antlaşması'ndan sonra Türk-İngiliz ilişkilerini belirleyen en temel sorun neydi?",
+      "back": "Musul'un durumu.",
+      "explanation": "Kerkük ve Süleymaniye'yi de kapsayan Musul vilayeti, petrolün enerji kaynağı hâline gelmesiyle önem kazanmıştı. İngiltere, Mondros Ateşkes Anlaşması'ndan sonra hükümlere aykırı biçimde Musul'u işgal etti. Türkiye ise Misak-ı Millî sınırları içindeki bu bölgeyi geri almak istiyordu.",
+      "articleRefs": [
+        "4.2.2-01"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Lozan'da Musul Meselesi için Türkiye ile İngiltere'ye ne kadar ikili görüşme süresi tanındı?",
+      "back": "Dokuz ay. Uzlaşma sağlanamazsa sorunu Milletler Cemiyeti çözecekti.",
+      "explanation": "Görüşmeler 19 Mayıs 1924'te İstanbul'da toplanan Haliç Konferansı'yla başladı. İngiltere Musul'u bırakmadı. Hakkari'de Nasturilerin çoğunlukta olduğunu öne sürerek bu ilin de Irak'a katılmasını savundu. İngiltere asıl olarak meseleyi Milletler Cemiyetine taşımayı hedefliyordu. Görüşmelerden sonuç çıkmadı ve sorun Cemiyete götürüldü.",
+      "articleRefs": [
+        "4.2.2-01"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Milletler Cemiyeti, Musul'un Irak'a bırakıldığını hangi tarihte ilan etti?",
+      "back": "16 Aralık 1925'te.",
+      "explanation": "Türkiye'nin bölge halkının oyuna başvurulması (plebisit) önerisi, ülke Cemiyete üye olmadığı için dikkate alınmamıştı. Karar İngiltere ile ilişkileri savaşın eşiğine getirdi. Ancak iç politikadaki olumsuz gelişmeler ve iç güvenlik sorunları yüzünden Türkiye kararı kabul etmek zorunda kaldı; böylece Misak-ı Millî'den taviz verildi.",
+      "articleRefs": [
+        "4.2.2-02",
+        "4.2.2-01"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "5 Haziran 1926 tarihli Ankara Antlaşması'na göre Irak, Musul petrol gelirlerinden Türkiye'ye ne kadar pay verecekti?",
+      "back": "%10'unu, 25 yıl süreyle.",
+      "explanation": "Türkiye 1931'den 1950'ye kadar 20 yıl boyunca bu petrol aidatından payına düşen 3.5 milyon sterlini Irak'tan aldı. Musul konusundaki çözümün ardından Türk-İngiliz ilişkileri gelişmeye başladı.",
+      "articleRefs": [
+        "4.2.2-02"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "5 Haziran 1926 tarihli Ankara Antlaşması ile Hakkari Irak'a mı bırakıldı?",
+      "back": "Hayır. Hakkari Türkiye'de kaldı ve Türkiye-Irak sınırı buna göre çizildi. Irak'a bırakılanlar Musul, Kerkük ve Süleymaniye'ydi.",
+      "explanation": "Hakkari'nin Irak sınırları içine alınmasını isteyen İngiltere'ydi; gerekçesi nüfus çoğunluğunun Nasturi olmasıydı. Antlaşmayla Musul, Kerkük ve Süleymaniye İngiliz mandası altındaki Irak'a geçti.",
+      "articleRefs": [
+        "4.2.2-02",
+        "4.2.2-01"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Tevhid-i Tedrisat Kanunu'nun ardından yabancı okullarda hangi derslerin Türk öğretmenlerce ve Türkçe okutulması istendi?",
+      "back": "Türkçe, tarih ve coğrafya dersleri.",
+      "explanation": "Fransa bu düzenlemeye ısrarla itiraz etti. Türkiye ise konuyu iç meselesi saydı ve uygulamayı hiç ödün vermeden sürdürdü.",
+      "articleRefs": [
+        "4.2.3-01"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Nüfus mübadelesi, Türkiye ile Fransa arasında yaşanan bir sorun muydu?",
+      "back": "Hayır. Nüfus mübadelesi Türk-Yunan ilişkilerinin ana sorunlarındandı. Fransa ile Suriye sınırı, Osmanlı borçları, yabancı okullar ve Adana-Mersin demir yolu gibi konularda sorun yaşandı.",
+      "articleRefs": [
+        "4.2.3-01",
+        "4.2.3-02",
+        "4.2.1-01"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Hatay sorunu hangi gelişmeyle başladı?",
+      "back": "1936'da Fransa'nın Suriye üzerindeki manda yönetimine son verip Suriye'den çekilme kararı almasıyla.",
+      "explanation": "Fransa ile yeni Suriye Hükûmeti arasında yapılan antlaşmayla İskenderun ve Antakya Suriye'ye bırakıldı ve bu durum Hatay Türklerini endişelendirdi. Türkiye, Hatay'ın kaderini Hataylıların belirlemesi için Milletler Cemiyetine başvurdu. Fransa ise Hatay'ı Suriye'nin parçası saydı.",
+      "articleRefs": [
+        "4.2.3-02",
+        "4.2.9-01"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Musul sorunu sırasında Türkiye ile Sovyetler Birliği arasında hangi antlaşma imzalandı?",
+      "back": "Türk-Sovyet Tarafsızlık ve Saldırmazlık Antlaşması; 17 Aralık 1925'te.",
+      "explanation": "İki ülke ilişkilerinin temeli, 16 Mart 1921 tarihli Moskova Antlaşması'ydı. Sovyet Rusya bu antlaşmayla TBMM'yi ve Misak-ı Millî'yi resmen tanımıştı. Lozan sürecinde de özellikle Boğazlar konusunda Türk tezlerini destekledi.",
+      "articleRefs": [
+        "4.2.4-01"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "1930'lardan itibaren Türk-Sovyet ilişkileri neden geriledi?",
+      "back": "Türkiye, Lozan'dan kalan sorunları Batılı devletlerle büyük ölçüde çözüp ilişkilerini normalleştirmişti. 1936'dan itibaren başlayan Türk-İngiliz yakınlaşması da ilişkileri zayıflattı.",
+      "articleRefs": [
+        "4.2.4-01"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Türkiye, Milletler Cemiyeti'nin üyelik davetini hangi tarihte kabul etti?",
+      "back": "18 Temmuz 1932'de.",
+      "explanation": "Türkiye, Cemiyetin işleyişindeki aksaklıkları bilmesine rağmen daveti kabul etti. Bunu, dünya barışının korunmasına yönelik iyi niyetinin göstergesi olarak yaptı. Cemiyet 10 Ocak 1920'de Cenevre'de kurulmuştu.",
+      "articleRefs": [
+        "4.2.5-01"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Türkiye hangi devletlerin önerisiyle Milletler Cemiyeti'ne davet edildi?",
+      "back": "Yunanistan ve İspanya'nın önerisiyle.",
+      "explanation": "Davet, Türkiye 1930'lu yıllarda Lozan'dan kalan sorunları barışçı yollarla büyük ölçüde çözüp komşularıyla iyi ilişkiler kurduktan sonra geldi.",
+      "articleRefs": [
+        "4.2.5-01"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Balkan Antantı hangi tarihte imzalandı?",
+      "back": "9 Şubat 1934'te. Atina'da toplanan Türkiye, Yunanistan, Romanya ve Yugoslavya tarafından imzalandı.",
+      "explanation": "Antant, İtalya ve Almanya'nın Balkanlara yönelik yayılmacı politikaları belirginleşince kuruldu. İmzacı devletlerin sınırları karşılıklı olarak güvence altına alındı.",
+      "articleRefs": [
+        "4.2.6-01"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Balkan devletlerinden hangileri Balkan Antantı'na katılmadı?",
+      "back": "Bulgaristan ve Arnavutluk.",
+      "explanation": "Bulgaristan revizyonist bir politika izliyor ve komşularından toprak istiyordu. Arnavutluk ise İtalya'nın baskısı altındaydı.",
+      "articleRefs": [
+        "4.2.6-01"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Montrö Boğazlar Sözleşmesi hangi tarihte imzalandı?",
+      "back": "20 Temmuz 1936'da.",
+      "explanation": "Atatürk, yeni bir dünya savaşı tehlikesi karşısında Milletler Cemiyetine başvurdu ve Boğazların statüsünün barışçı yolla gözden geçirilmesini istedi. Türkiye'nin çağrısıyla konferans İsviçre'nin Montrö şehrinde toplandı.",
+      "articleRefs": [
+        "4.2.7-01"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Montrö Boğazlar Sözleşmesi, Boğazların yönetimini Türkiye başkanlığındaki uluslararası bir komisyona mı bıraktı?",
+      "back": "Hayır. O düzen Lozan'a aitti. Montrö, Boğazlar Komisyonu'nu kaldırdı ve Boğazların savunmasını Türkiye'ye bıraktı.",
+      "explanation": "Sözleşmeyle yabancı ticaret gemilerinin geçişi serbest bırakıldı, savaş gemilerinin geçişine ise bazı sınırlamalar getirildi. Türkiye'nin Boğazlardaki egemenliğini kısıtlayan hükümler kaldırıldı ve Türkiye'ye tam egemenlik hakkı tanındı.",
+      "articleRefs": [
+        "4.2.7-01",
+        "4.2.7-02"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Montrö Konferansı'nda Boğazlarla ilgili Türk tezlerini hangi devlet destekledi?",
+      "back": "İngiltere.",
+      "explanation": "Sovyetler Birliği kimi noktalarda itiraz etti.",
+      "articleRefs": [
+        "4.2.7-01"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Sadabat Paktı hangi tarihte imzalandı?",
+      "back": "8 Temmuz 1937'de, İran'ın başkenti Tahran'da.",
+      "explanation": "Pakt Türkiye öncülüğünde İran, Irak ve Afganistan ile kuruldu. Üyeler birbirinin iç işlerine karışmamayı ve ortak sınırlara saygı göstermeyi kabul etti. Türkiye batı sınırlarını Balkan Antantı'yla güvenceye almıştı; Sadabat ile de doğu sınırlarının güvenliğini sağladı.",
+      "articleRefs": [
+        "4.2.8-01"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Milletler Cemiyeti'nin Hatay için kurduğu ilk komisyonun raporu hangi sonuca vardı?",
+      "back": "Hatay halkının çoğunluğu Türk'tü ve Hatay Suriye'ye bağlanamazdı. Hatay'da bağımsız bir devlet kurulmalıydı.",
+      "explanation": "Rapor üzerine Cemiyet yeni bir komisyonla bağımsız Hatay Devleti için anayasa hazırlattı (29 Mayıs 1937). Fransa ve Suriye bunu kabul etmeyince Türkiye Hatay sınırına büyük bir askerî yığınak yaptı. 3 Temmuz 1938 tarihli anlaşmanın ardından Türk ordusu Hatay'a girdi.",
+      "articleRefs": [
+        "4.2.9-01"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Hatay Cumhuriyeti 29 Haziran 1939'da mı ilan edildi?",
+      "back": "Hayır. Hatay Cumhuriyeti 2 Eylül 1938'de ilan edildi. 29 Haziran 1939, Hatay Meclisinin Türkiye'ye katılma kararı aldığı tarihtir.",
+      "explanation": "Seçimlerden sonra toplanan Hatay Millet Meclisi cumhuriyeti ilan etti. Silahlanmanın hızlandığı ve dünya savaşının kapıda olduğu bir ortamda aynı meclis Türkiye'ye katılmayı kararlaştırdı.",
+      "articleRefs": [
+        "4.2.9-02"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Atatürk hangi tarihte hayata gözlerini yumdu?",
+      "back": "10 Kasım 1938 Perşembe günü saat 09.05'te, Dolmabahçe Sarayı'nda.",
+      "explanation": "Atatürk 8 Kasım 1938'de komaya girmişti. Naaşı önce Etnoğrafya Müzesinde geçici bir kabre yerleştirildi (21 Kasım 1938). 10 Kasım 1953'te törenle Anıtkabir'e taşındı.",
+      "articleRefs": [
+        "4.2.10-02"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "TBMM, İsmet İnönü'yü hangi tarihte Cumhurbaşkanı seçti?",
+      "back": "11 Kasım 1938'de; İnönü ikinci Cumhurbaşkanı oldu.",
+      "explanation": "İnönü, Atatürk'ün en yakın silah ve fikir arkadaşlarındandı. Cumhurbaşkanlığı görevini 1950'ye kadar sürdürdü.",
+      "articleRefs": [
+        "4.2.10-03"
+      ]
+    }
+  ]
+}

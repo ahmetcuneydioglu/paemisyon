@@ -1,0 +1,161 @@
+{
+  "deck": {
+    "topicId": "23d22785-351b-4f39-8516-a419e2c254c0",
+    "sourceSlug": "inkilap-tarihi-meb-12",
+    "sourceLabel": "AI bilgi kartı — Atatürk İlkeleri ve İnkılap Tarihi: İki savaş arası dönemde dünya (kaynak pasajı 4.3-01…4.3.3-03)",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: kaynak pasajı + bankadaki sorular; stil kapısı 2 açıklama yeniden yazıldı)"
+  },
+  "cards": [
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Milletler Cemiyeti hangi tarihte kuruldu?",
+      "back": "10 Ocak 1920'de kuruldu; merkezi Cenevre'dir.",
+      "explanation": "Uluslararası bir barış teşkilatı kurma fikri ABD Başkanı Wilson'ındı. Paris Barış Konferansı'nda 32 devlet bu kuruluş kararını kabul etti. Asil üyeleri I. Dünya Savaşı'nın galip devletleriydi; savaşta tarafsız kalan devletler de asil üyelere katıldı.",
+      "articleRefs": [
+        "4.3.1-01"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Milletler Cemiyeti hangi gelişmeleri önleyemediği için başarısız sayılır?",
+      "back": "İtalya'nın Habeşistan'ı işgalini, Almanya'nın Avusturya'yı ilhakını ve II. Dünya Savaşı'nın başlamasını önleyemedi.",
+      "articleRefs": [
+        "4.3.1-01"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Milletler Cemiyeti fikrini ortaya atan Wilson'ın ülkesi olduğu hâlde cemiyette yer almayan devlet hangisidir?",
+      "back": "ABD. Uluslararası teşkilat fikri Başkan Wilson'ındı, ama ABD cemiyete katılmadı.",
+      "explanation": "Wilson, savaş sonrası dünya düzeni için kendi adıyla anılan ilkeleri açıklamıştı. Savaşın galipleri İngiltere, Fransa ve İtalya ise bu ilkeleri kendi aralarındaki gizli antlaşmalarla geçersiz kıldı.",
+      "articleRefs": [
+        "4.3.1-01"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Locarno Antlaşması'nı imzalayan devletler sınırlar konusunda neyi kabul etti?",
+      "back": "Birbirlerinin sınırlarını tanıdılar.",
+      "explanation": "Antlaşma adını İsviçre'nin Locarno şehrinden alır; tarihi 1 Aralık 1925'tir. İmzacılar Fransa, Almanya, İngiltere, İtalya, Polonya, Çekoslovakya ve Belçika'ydı. Tamirat borçları yüzünden gerilen Fransız-Alman ilişkileri karşılıklı güvene kavuştu. Almanya uluslararası iş birliğine yeniden katıldı ve 1926'da Milletler Cemiyetine kabul edildi.",
+      "articleRefs": [
+        "4.3.1-02"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Briand-Kellog Paktı ile hangi tür savaş kanun dışı sayıldı?",
+      "back": "Savunmaya dayanmayan savaş kanun dışı sayıldı. İmzacılar anlaşmazlıklarda barışçıl yollara başvurmayı üstlendi.",
+      "explanation": "Görüşmeler Fransa ve ABD dışişleri bakanlarının öncülüğünde başladı. Pakt 27 Ağustos 1928'de imzalandı. Barış ve silahsızlanma çabalarında önemli bir aşamaydı, ancak hayata geçirilemedi.",
+      "articleRefs": [
+        "4.3.1-02"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Türkiye'nin 19 Ocak 1929'da katıldığı uluslararası anlaşma Locarno Antlaşması mıdır?",
+      "back": "Hayır. Türkiye 19 Ocak 1929'da Briand-Kellog Paktı'na katıldı.",
+      "explanation": "Locarno Antlaşması 1 Aralık 1925'te Fransa, Almanya, İngiltere, İtalya, Polonya, Çekoslovakya ve Belçika arasında imzalandı. Briand-Kellog Paktı ise 27 Ağustos 1928'de imzalandı; Türkiye bu pakta sonradan katıldı.",
+      "articleRefs": [
+        "4.3.1-02"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "New York Borsası'nın çöktüğü \"Kara Perşembe\" hangi tarihtir?",
+      "back": "24 Ekim 1929'dur. O gün on iki milyon hisse satışa sunuldu.",
+      "explanation": "Dar anlamıyla 1929 bunalımı bu borsa çöküşüdür. Düşüş, para politikasından sorumlu Amerikalı yetkililerin 1929 yazında kredileri kısıtlama kararıyla başladı. Yabancı yatırımcılar borsa kâğıtlarını elden çıkarınca düşüş hızlandı.",
+      "articleRefs": [
+        "4.3.2-01"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "On yıl süren kargaşanın ardından çıkan II. Dünya Savaşı'nın en büyük sebeplerinden biri sayılan ekonomik gelişme hangisidir?",
+      "back": "1929 Dünya Ekonomik Bunalımı.",
+      "explanation": "Amerika'da başlayan bunalım kısa sürede Avrupa'ya, ardından bütün dünyaya yayıldı. Bankalar battı, şirketler iflas etti, milyonlarca insan işsiz kaldı. Avrupa'da devletler arası ilişkilerdeki sorunlar büyüdü.",
+      "articleRefs": [
+        "4.3.2-02"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Nazi Almanyası'nın dış politika esasları arasındaki \"Hayat Sahası (Lebensraum)\" neyi ifade eder?",
+      "back": "Almanya'nın gerçekleştirmek istediği yayılmacı politikayı ifade eder.",
+      "explanation": "Hitler'in rejimi; Alman ırkının üstünlüğüne, Yahudilerin zenginliğine el koymaya ve devletin kutsallaştırılmasına dayanan totaliter bir rejimdi.",
+      "articleRefs": [
+        "4.3.3-01"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Mussolini İtalya'yı hangi yıllar arasında diktatörlükle yönetti?",
+      "back": "1922'den 1943'e kadar yönetti. Ulusal Faşist Partinin lideri olarak totaliter bir rejim kurdu.",
+      "explanation": "Faşistlerin iktidara gelmesinde savaşın getirdiği ekonomik ve toplumsal sorunlar, savaştan kaçan askerlerin yarattığı asayişsizlik ve savaştan çıkan hayal kırıklığı etkili oldu. Mussolini ünlü Scala nutkunda her şeyin devlet içinde ve devlet için olduğunu savundu.",
+      "articleRefs": [
+        "4.3.3-01"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "I. Dünya Savaşı sonunda İtalya'ya Anadolu'da vaat edilen toprakların bir kısmı hangi devlete bırakıldı?",
+      "back": "Yunanistan'a bırakıldı; İtalya savaştan istediğini elde edemedi.",
+      "explanation": "İtalya savaşa yeni sömürgeler kazanma umuduyla girmişti. Beklentisi karşılanmayınca ülkede derin bir hayal kırıklığı oluştu. Ekonomik ve toplumsal sorunlar büyüdü, savaştan kaçan askerler de ülkenin dört bir yanında asayişi bozdu. Bu ortam, Mussolini'nin önderlik ettiği Ulusal Faşist Partiyi iktidara taşıyan etkenler arasındaydı.",
+      "articleRefs": [
+        "4.3.3-01"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Mussolini Akdeniz'i hangi adla anıyordu?",
+      "back": "\"Mare nostrum\" yani \"bizim deniz\" adıyla anıyordu.",
+      "explanation": "Mussolini, Akdeniz'de eski Roma İmparatorluğu'nu yeniden kurmayı hedefliyordu. 1923'te İtalya Senatosundaki söylevinde yayılmacı politikasını açıkça ortaya koydu. Bu politika bütün Doğu Akdeniz ülkelerinde büyük huzursuzluk yarattı.",
+      "articleRefs": [
+        "4.3.3-02"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Mart 1917'de Çarlık yıkıldıktan sonra kurulan geçici hükûmetin dışında kalan siyasi eğilim hangisiydi?",
+      "back": "Bolşevikler. Rusya'daki diğer bütün siyasi eğilimler geçici hükûmete katıldı.",
+      "explanation": "Geçici hükûmet ekonomik sorunları çözemedi ve Almanya ile savaşı sürdürdü. \"Barış, toprak ve ekmek\" vaat eden Bolşeviklere halkın desteği giderek arttı.",
+      "articleRefs": [
+        "4.3.3-02",
+        "4.3.3-03"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Bolşevikler geçici hükûmeti devirerek iktidarı hangi tarihte ele geçirdi?",
+      "back": "7 Kasım 1917'de ele geçirdi.",
+      "explanation": "Bolşevikler ardından Brest Litowsk Antlaşması ile savaştan çekildi. Topraklar kamulaştırılıp köylülere dağıtıldı ve bankalar devletleştirildi. Kadın-erkek eşitliğini sağlamaya yönelik düzenlemeler de yapıldı.",
+      "articleRefs": [
+        "4.3.3-03"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Lenin'in NEP politikası hangi alanları özel mülkiyete açmadı?",
+      "back": "Büyük sanayi, ulaşım, bankacılık ve doğal kaynakları. Bunların dışındaki işletmelerde özel mülkiyete izin verildi.",
+      "explanation": "NEP (Novaya Ekonomiçeskaya Politika), yeni ekonomi politikası demektir. İtilaf Devletleri'nin desteklediği Beyaz Ordu ile üç yıl süren iç savaş Bolşeviklerin zaferiyle bitti. Ancak on üç milyon insan öldü, sanayi üretimi dibe vurdu ve kitlesel açlık başladı.",
+      "articleRefs": [
+        "4.3.3-03"
+      ]
+    }
+  ]
+}

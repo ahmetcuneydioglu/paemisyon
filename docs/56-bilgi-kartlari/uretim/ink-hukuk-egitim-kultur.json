@@ -1,0 +1,246 @@
+{
+  "deck": {
+    "topicId": "23d22785-351b-4f39-8516-a419e2c254c0",
+    "sourceSlug": "inkilap-tarihi-meb-12",
+    "sourceLabel": "AI bilgi kartı — Atatürk İlkeleri ve İnkılap Tarihi: Hukuk, eğitim ve kültür alanında inkılaplar (kaynak pasajı 3.4.1-01…3.5.6-02)",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: kaynak pasajı + bankadaki sorular; stil kapısı 3 açıklama yeniden yazıldı)"
+  },
+  "cards": [
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Osmanlı Devleti'nde devlet yönetiminde ve sosyal hayatın düzenlenmesinde hangi hukuk kuralları geçerliydi?",
+      "back": "Şer'i (dinî) ve örfi (geleneksel) hukuk kuralları geçerliydi.",
+      "explanation": "1839 Tanzimat Fermanı'yla hukuk alanında bazı yenilikler yapılmak istendi. Ancak bu yenilikler köklü olmadığı için istenen sonuç alınamadı. Cumhuriyet Dönemi'nde ise aklı ve bilimsel düşünceyi temel alan çağdaş ve laik hukuk kurallarının benimsenmesi hedeflendi.",
+      "articleRefs": [
+        "3.4.1-01"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Osmanlı Dönemi'nde ülkedeki hukuk birliğini bozan durum neydi?",
+      "back": "Farklı hukuk sistemleri aynı anda geçerliydi. Müslümanlar İslam hukukuna, gayrimüslimler kendi dinî hukuklarına bağlıydı. Yabancılar ise kapitülasyonlarla ayrıcalıklıydı.",
+      "explanation": "Hukuk birliğinin bozulması siyasi ayrılıklara da yol açıyordu. Türkiye Cumhuriyeti millî ve üniter bir devlet anlayışını benimsediği için hukuk alanında birlik sağlayan adımlar atmayı hedefledi.",
+      "articleRefs": [
+        "3.4.1-01",
+        "3.4.1-02"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Türk Medeni Kanunu hazırlanırken Türk sosyal hayatına en uygun bulunan medeni kanun hangisiydi?",
+      "back": "İsviçre Medeni Kanunu. Pratik, akılcı ve demokratik niteliğiyle incelenen öteki örneklerden ileri görüldü.",
+      "explanation": "Medeni kanun; kişiler arası ilişkileri, aile, eşya, borçlar ve miras hukukunu düzenler. Osmanlı'nın son döneminde bu alanda Mecelle kullanılıyordu. Mecelle'nin yeni Türk toplumunun günlük ihtiyaçlarını karşılayamayacağı anlaşılınca yeni bir kanun hazırlığına girişildi.",
+      "articleRefs": [
+        "3.4.2-01"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Türk Medeni Kanunu 17 Şubat 1926'da mı yürürlüğe girdi?",
+      "back": "Hayır. 17 Şubat 1926, TBMM'nin kanunu kabul ettiği tarihtir. Kanun 4 Ekim 1926'da yürürlüğe girdi.",
+      "explanation": "Kanunla aile yapısı çağdaş toplumlara göre yeniden düzenlendi. Hukuk sisteminin laikleştirilmesinde de önemli bir adım atıldı.",
+      "articleRefs": [
+        "3.4.2-01"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Türk Medeni Kanunu'nun kabulüyle Türk kadını hangi hakları kazandı?",
+      "back": "Toplumsal hayatta her türlü sosyal hakkı, çeşitli mesleklerde çalışma hakkını ve boşanma hakkını kazandı.",
+      "explanation": "Kanunla tek eşlilik kuralı da getirildi. Ayrıca din, dil, ırk ve cinsiyet gözetmeksizin bütün vatandaşlara kanun önünde eşitlik sağlandı.",
+      "articleRefs": [
+        "3.4.2-01"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Cumhuriyetin ilk yıllarında eğitimin en büyük sorunu neydi?",
+      "back": "Öğretim birliğinin olmamasıydı. Medreseler, mektepler, azınlık okulları ve yabancı okullar farklı öğretim programları uyguluyordu.",
+      "explanation": "Tanzimat Dönemi'nde yapılan eğitim düzenlemeleri istenen sonucu vermedi. Eğitim meselesi ancak Cumhuriyet Dönemi'nde inkılapçı bir tutumla kökten ele alınarak çözülebildi.",
+      "articleRefs": [
+        "3.5-01"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Mustafa Kemal Paşa, Ankara Maarif Kongresi'ndeki konuşmasında nasıl bir kültür anlayışı istedi?",
+      "back": "Eski devrin hurafelerinden ve Doğu'dan ya da Batı'dan gelen yabancı etkilerden uzak, millî karakter ve tarihe uygun bir kültür.",
+      "explanation": "Bu konuşmada eski devrin hurafelerinden ve Doğu'dan ya da Batı'dan gelen yabancı etkilerden uzak, millî bir kültür istedi. Gelişigüzel bir yabancı kültürün geçmişteki yıkıcı sonuçları tekrarlatabileceğini de vurguladı.",
+      "articleRefs": [
+        "3.5-01"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Tevhid-i Tedrisat Kanunu TBMM'de hangi tarihte kabul edildi?",
+      "back": "3 Mart 1924'te kabul edildi, yani cumhuriyetin ilanından kısa bir süre sonra.",
+      "explanation": "Bu kanunla eğitim sistemi çağdaş, laik ve millî bireyler yetiştirecek biçimde düzenlendi.",
+      "articleRefs": [
+        "3.5.1-01"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Tevhid-i Tedrisat Kanunu'yla bütün okulların programlarının ve eğitim sisteminin düzenlenmesi hangi kuruma bırakıldı?",
+      "back": "Millî Eğitim Bakanlığına.",
+      "explanation": "Eğitimin planlanması, denetlenmesi ve yürütülmesi de bu bakanlığa verildi. Böylece yurttaşlar arasında eğitim ve öğretimde birlik sağlandı.",
+      "articleRefs": [
+        "3.5.1-01",
+        "3.5.1-02"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Azınlık ve yabancı okullarında Türkçe, tarih ve coğrafya derslerini Türk öğretmenlerin vermesi zorunluluğu 11 Mart 1924 genelgesiyle mi getirildi?",
+      "back": "Hayır. Bu zorunluluk 9 Şubat 1926 tarihli genelgeyle getirildi. 11 Mart 1924'teki genelge medreselerin kapatılmasıyla ilgilidir.",
+      "explanation": "Bu şartları kabul etmeyen okullara Türkiye'de faaliyet izni verilmedi. Azınlık ve yabancı okullarında dinî ve siyasi propagandaya da izin verilmedi; bu okullar Millî Eğitim Bakanlığının denetimine bırakıldı.",
+      "articleRefs": [
+        "3.5.1-01"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Mustafa Kemal harf inkılabını halka nerede duyurdu?",
+      "back": "İstanbul'da Gülhane Parkı'nda, halka hitap ederek duyurdu.",
+      "explanation": "Duyuru, Dil Encümeninin farklı alfabeleri inceleyerek hazırladığı rapor üzerine yapıldı. Yeni harflerle okuma yazma dersleri önce Dolmabahçe Sarayı'nda başladı ve kısa sürede bütün ülkeye yayıldı.",
+      "articleRefs": [
+        "3.5.2-01"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Yeni Türk harflerinin kullanılmasını resmî hâle getiren kanun 1 Kasım 1928'de mi yürürlüğe girdi?",
+      "back": "Hayır. 1 Kasım 1928, yeni harflerin kanunla resmî hâle geldiği tarihtir. Kanun 3 Kasım 1928'de yürürlüğe girdi ve resmî yazışmalarda yeni harfler zorunlu oldu.",
+      "explanation": "Yeni harflerin kullanımı, harf seferberliği halk arasında iyice benimsendikten sonra resmî hâle getirildi.",
+      "articleRefs": [
+        "3.5.2-01"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Millet Mekteplerinin açılmasına hangi tarihte karar verildi?",
+      "back": "24 Kasım 1928'de karar verildi.",
+      "explanation": "Bu okullar, halkın işlerini aksatmadan yurttaşlara yeni alfabeyle okuma yazma öğretmeyi amaçlıyordu.",
+      "articleRefs": [
+        "3.5.2-02"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Millet Mekteplerinin başöğretmenliğini kim üstlendi?",
+      "back": "Gazi Mustafa Kemal. Kendisine teklif edilen başöğretmenliği kabul etti.",
+      "explanation": "Millet Mektepleri halkçılık ilkesi doğrultusunda kuruldu. Bu okulların merkezlerine ulaşamayan yurttaşlar için gezici Millet Mektepleri de oluşturuldu.",
+      "articleRefs": [
+        "3.5.2-02"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Türk Tarih Tezi, tarih yazımında neyi esas aldı?",
+      "back": "Hanedan eksenli tarih yerine millet eksenli tarih yazımını esas aldı.",
+      "explanation": "Türk Tarihi Tetkik Cemiyetinin hedefi, bu tez doğrultusunda iki şeyi bilimsel yöntemlerle kanıtlamaktı: Türk milletinin medeniyetin beşiği Orta Asya'dan çıktığını ve Türklerin pek çok medeniyetin kurulup gelişmesine katkıda bulunduğunu.",
+      "articleRefs": [
+        "3.5.3-01"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Türk Tarihini Tetkik Cemiyeti (Türk Tarih Kurumu) hangi yıl kuruldu?",
+      "back": "1931'de kuruldu.",
+      "explanation": "Kuruluşundan önce Türk Tarih Heyeti \"Türk Tarihinin Ana Hatları\" adlı eseri hazırladı. Kurumun görevi, Türk tarihini bilimsel yöntemle incelemek ve Türk Tarih Tezi'ni millî ve uluslararası kongrelerde açıklamaktır.",
+      "articleRefs": [
+        "3.5.3-01"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "I. Türk Tarih Kongresi hangi tarihte toplandı?",
+      "back": "2 Temmuz 1932'de, Atatürk'ün bizzat katılımıyla toplandı.",
+      "explanation": "Kongre, Türk Tarih Tezi'nin ortaya konmasının ve 1931'de Türk Tarihini Tetkik Cemiyeti'nin kurulmasının ardından yapıldı. Tezle ilgili çalışmaları sürekli kılacak bilim insanlarını yetiştirmek amacıyla Ankara'da açılan Dil ve Tarih, Coğrafya Fakültesi ise 9 Ocak 1936'da kuruldu.",
+      "articleRefs": [
+        "3.5.3-01"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Türk tarihini bilimsel yöntemlerle araştırıp Türk milletinin tarihteki olumlu rolünü ortaya çıkarma çalışmaları hangi Atatürk ilkesi doğrultusundadır?",
+      "back": "Milliyetçilik ilkesi doğrultusundadır.",
+      "articleRefs": [
+        "3.5.3-02"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Osmanlı'nın son döneminde Türkçenin sadeleştirilmesi için çalışma başlatan edebiyatçılar hangi dergi etrafında toplandı?",
+      "back": "Genç Kalemler dergisi. Dergi 1911'de Selanik'te çıkarıldı, ancak sadeleştirme çabası halk arasında yaygınlaşamadı.",
+      "explanation": "Arapça ve Farsçadan alınan kelime ve tamlamalar, aydınların kullandığı Türkçe ile halkın konuştuğu Türkçe arasında kopukluk yaratmıştı.",
+      "articleRefs": [
+        "3.5.4-01"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Türkçeyi yabancı kelimelerden arındırmak ve konuşma diliyle yazı dilini birleştirmek Türk Tarihini Tetkik Cemiyetinin faaliyetleri miydi?",
+      "back": "Hayır. Bunlar Türk Dili Tetkik Cemiyetinin (Türk Dil Kurumu) faaliyetleridir. Türk Tarihini Tetkik Cemiyeti, Türk tarihini bilimsel yöntemle incelemekle görevliydi.",
+      "explanation": "Türk Dil Kurumunun faaliyetleri arasında aydınların diliyle halk dili arasındaki kopukluğu gidermek, halk ağzından derlemeler yapmak ve kitaplardan taramalar yapmak da vardır.",
+      "articleRefs": [
+        "3.5.4-01",
+        "3.5.3-01"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Türk Dili Tetkik Cemiyeti Güneş Dil Teorisi'ni hangi yıl ortaya koydu?",
+      "back": "1936'da ortaya koydu. Teori, Türk dilinin zenginliğini gösterme amacına yönelik somut bir örnekti.",
+      "explanation": "Cemiyet, Türk dilinin zenginliğini millî ve uluslararası kongrelerde ortaya çıkarmayı amaçlıyordu. Türkçeyi zenginleştirme ve yabancı kelimelerden kurtarma çalışmaları milliyetçilik ilkesinin gereğidir.",
+      "articleRefs": [
+        "3.5.4-02"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Darülfünûn'un yeniden düzenlenmesi için inceleme yapıp rapor hazırlayan Cenevre Üniversitesinden gelen uzman kimdir?",
+      "back": "Prof. Dr. Albert Malche. Hazırladığı raporu Millî Eğitim Bakanlığına sundu.",
+      "explanation": "Malche, 16 Ocak 1932'de Türkiye'ye geldi. Darülfünûn'un Türk inkılabını geliştirmede ve yaygınlaştırmada yetkin olmadığı görülünce Atatürk 1931'de düzenleme kararına varmış, bu iş için yabancı bir uzmandan yararlanılması uygun bulunmuştu.",
+      "articleRefs": [
+        "3.5.5-01"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Darülfünûn hangi yıl kapatılarak yerine İstanbul Üniversitesi kuruldu?",
+      "back": "1933'te.",
+      "explanation": "Darülfünûnu kapatan düzenleme, Prof. Dr. Albert Malche'nin raporuna ve Atatürk'ün emrine dayanıyordu. Yeni üniversiteyle Cumhuriyet, 1925'te açılan Ankara Hukuk Mektebinin yanına bilimsel çalışma yürütüp bilim insanı yetiştirecek bir yükseköğretim kurumu daha kazandı.",
+      "articleRefs": [
+        "3.5.5-01"
+      ]
+    }
+  ]
+}

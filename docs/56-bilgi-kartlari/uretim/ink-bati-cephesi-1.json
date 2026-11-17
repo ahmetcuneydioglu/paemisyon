@@ -1,0 +1,244 @@
+{
+  "deck": {
+    "topicId": "23d22785-351b-4f39-8516-a419e2c254c0",
+    "sourceSlug": "inkilap-tarihi-meb-12",
+    "sourceLabel": "AI bilgi kartı — Atatürk İlkeleri ve İnkılap Tarihi: Düzenli ordu, I. İnönü ve 1921'in siyasi gelişmeleri (kaynak pasajı 2.5.1-01…2.5.2-07)",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: kaynak pasajı + bankadaki sorular; stil kapısı 3 açıklama yeniden yazıldı)"
+  },
+  "cards": [
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Mondros Ateşkes Anlaşması'ndan sonra işgallere karşı halkın kendiliğinden kurduğu silahlı direniş birliklerine ne ad verilir?",
+      "back": "Kuvay-ı Millîye (Millî Güçler).",
+      "explanation": "Devlet işgaller karşısında sessiz kalınca halk direnişi kendisi başlattı. Bu birlikler isyanların bastırılmasında ve Ege'de Yunan ilerleyişini yavaşlatmada yararlılık gösterdi. Ancak halktan zorla silah, yiyecek ve para topladılar, keyfî cezalar verdiler. Bu davranışlar halkın bir kısmında olumsuz izlenim yarattı ve İstanbul Hükûmeti'nin propagandasına araç oldu.",
+      "articleRefs": [
+        "2.5.1-01"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Sivas Kongresi'nde kurulan Batı Anadolu Kuvay-ı Millîye Komutanlığı'na kim atandı?",
+      "back": "Ali Fuat Paşa.",
+      "explanation": "Amaç, dağınık halk güçlerini örgütleyip birlikte hareket ettirmekti; bu önlem de istenen sonucu vermedi. Başarısız Gediz saldırısının sorumluluğunu Kuvay-ı Seyyare Komutanı Ethem, Ali Fuat Paşa komutasındaki birliklere yüklemeye çalıştı.",
+      "articleRefs": [
+        "2.5.1-01"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Batı Cephesi hangi tarihte ikiye bölündü?",
+      "back": "9 Kasım 1920; güney bölümü Refet Bey'in, batı bölümü İsmet Bey'in komutasına verildi.",
+      "explanation": "Bölünme, Büyük Millet Meclisi'nde (BMM) yapılan görüşmelerde Kuvay-ı Millîye yerine düzenli ordu kurulması kararının ardından geldi.",
+      "articleRefs": [
+        "2.5.1-01"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Düzenli ordu birliklerine katılmak istemeyip isyan edenler kimlerdi?",
+      "back": "Ethem ve kardeşleri ile Demirci Mehmet Efe; isyanı üzerlerine gönderilen düzenli ordu birlikleri bastırdı.",
+      "explanation": "Mustafa Kemal, kısa sürede düzenli ordu ve büyük süvari gücü kurulması gerektiğini belirtmişti. İsyanın bastırılmasıyla düzenli orduya giden yoldaki en büyük engel kalktı.",
+      "articleRefs": [
+        "2.5.1-02"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "İsyanı bastırılan Demirci Mehmet Efe Yunan ordusuna mı sığındı?",
+      "back": "Hayır; Demirci Mehmet Efe teslim oldu. Yunan ordusuna sığınanlar Ethem ve kardeşleriydi.",
+      "explanation": "Ethem ve kardeşleri, o zamana kadar karşısında savaştıkları orduya geçmiş oldu.",
+      "articleRefs": [
+        "2.5.1-02"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Yunan kuvvetleri I. İnönü Muharebesi'ne yol açan saldırıya hangi tarihte geçti?",
+      "back": "6 Ocak 1921; Bozöyük üzerinden saldırıp İnönü yakınlarına kadar ilerledi.",
+      "explanation": "Saldırı, düzenli orduya katılmayı reddeden Ethem'in ayaklandığı sırada geldi; Yunan ordusu bu karışıklıktan faydalanmak istedi. Hedef, Eskişehir demiryolunu alıp Ankara yönünde ilerlemek ve millî hareketi bitirmekti. Bunun üzerine İsmet Bey, isyana karşı gönderdiği birliklerin çoğunu Yunan cephesine kaydırdı.",
+      "articleRefs": [
+        "2.5.2-01"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Batı Cephesi'nde Büyük Millet Meclisi'nin (BMM) düzenli ordusunun ilk askerî zaferi hangi muharebedir?",
+      "back": "I. İnönü Muharebesi; sayıca üstün Yunan ordusu durdurulup geri çekilmeye zorlandı.",
+      "explanation": "Zaferin ardından halkın Meclis'e ve orduya güveni arttı, İsmet Bey'in rütbesi generalliğe yükseltildi. Hemen sonra Ethem üzerine yürünerek isyancı kuvvetler dağıtıldı.",
+      "articleRefs": [
+        "2.5.2-01"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Teşkilat-ı Esasiye Kanunu'nun kabulü, I. İnönü Zaferi'nin dış politikadaki sonuçlarından mıdır?",
+      "back": "Hayır; iç politikadaki etkisidir, İstiklal Marşı'nın kabulü gibi. Dış politikadaki önemli sonuçları ise Londra Konferansı'nın toplanması, Türk-Afgan Dostluk Antlaşması ve Moskova Antlaşması'dır.",
+      "explanation": "Anayasa, zaferin getirdiği güvenle kabul edildi; Meclis açıldığı günden beri kendine meşruiyet kazandırmaya çalışıyordu.",
+      "articleRefs": [
+        "2.5.2-02",
+        "2.5.2-01"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "1921 Teşkilat-ı Esasiye Kanunu kaç maddeden oluşuyordu?",
+      "back": "23 madde ve bir ek madde.",
+      "explanation": "Anayasa ulusal egemenlik ve yönetim esaslarını düzenledi. Kişi hak ve özgürlüklerinde Osmanlı anayasasının (Kanun-i Esasi) hükümleri geçerli kaldı.",
+      "articleRefs": [
+        "2.5.2-02"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "1921 Teşkilat-ı Esasiye Kanunu'na göre hükûmet hangi adı alıyordu?",
+      "back": "BMM Hükûmeti; Türkiye Devleti'ni Büyük Millet Meclisi yönetir.",
+      "explanation": "Egemenlik kayıtsız şartsız milletindir; yasama ve yürütme yetkisi Meclis'indir. Kanun koymak, barış yapmak, savaş kararı vermek, din buyruklarını yerine getirmek gibi esas haklar da Meclis'e aittir.",
+      "articleRefs": [
+        "2.5.2-02"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "İstiklal Marşı Meclis'te hangi tarihte kabul edildi?",
+      "back": "12 Mart 1921; milletvekilleri marşı ayakta dinledi.",
+      "explanation": "Marş için açılan yarışmaya 724 şiir gönderildi; bunlar istenen duyguyu uyandırmadığı için beğenilmedi.",
+      "articleRefs": [
+        "2.5.2-03"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "İstiklal Marşı'nın bugün kullanılan bestesi kime aittir?",
+      "back": "Osman Zeki Üngör.",
+      "articleRefs": [
+        "2.5.2-03"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Londra Konferansı'nda Büyük Millet Meclisi (BMM) Hükûmeti'ni kim temsil etti?",
+      "back": "Bekir Sami (Kunduh) Bey; İstanbul Hükûmeti'ni ise Tevfik Paşa temsil etti.",
+      "explanation": "Bekir Sami Bey barışın koşullarını anlatıp Misak-ı Millî'yi dünyaya duyurdu. İngiliz, Fransız ve İtalyan temsilcilerle ayrı ayrı imzaladığı ikili antlaşmalar, devletlerin eşitliği ilkesine ve bağımsızlığa aykırı bulunarak Meclis'çe onaylanmadı.",
+      "articleRefs": [
+        "2.5.2-04"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Londra Konferansı'na Büyük Millet Meclisi'nin (BMM) de çağrılmasını hangi devlet istedi?",
+      "back": "İtalya; böylece tek bir ulusu temsilen iki hükûmet konferansa davet edildi.",
+      "explanation": "Konferans, Sevr Antlaşması'nda küçük değişiklikler yapıp onu Türklere kabul ettirmek için Yunanistan'ın da katılımıyla toplandı. İlk çağrı yalnız İstanbul Hükûmeti'ne yapılmış, Meclis itiraz etmişti. İtilaf Devletleri iki hükûmet arasındaki görüş ayrılığından yararlanmayı amaçlıyordu.",
+      "articleRefs": [
+        "2.5.2-04"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Londra Konferansı'nda Türk tarafı adına söz ilk olarak Bekir Sami Bey'e mi verildi?",
+      "back": "Hayır; söz İstanbul Hükûmeti temsilcisi Tevfik Paşa'ya verildi. O, milletin gerçek temsilcilerinin BMM Hükûmeti temsilcileri olduğunu söyleyip sözü Bekir Sami Bey'e bıraktı.",
+      "explanation": "İtilaf Devletleri Misak-ı Millî'yi dikkate almadı ve konferans sonuç alınamadan dağıldı.",
+      "articleRefs": [
+        "2.5.2-04"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Sonuçsuz dağılan Londra Konferansı, Büyük Millet Meclisi'nin (BMM) İtilaf Devletleri karşısındaki konumunu nasıl değiştirdi?",
+      "back": "Varlığını İtilaf Devletleri'ne hukuken ve resmen tanıtmış oldu.",
+      "explanation": "Misak-ı Millî ve Türk milletinin haklı davası da dünya kamuoyuna duyuruldu.",
+      "articleRefs": [
+        "2.5.2-05",
+        "2.5.2-04"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Sevr'i Türklere kabul ettiremeyen İtilaf Devletleri'nin Yunanistan'ı yeniden harekete geçirmesi hangi muharebeye yol açtı?",
+      "back": "II. İnönü Muharebesi'ne.",
+      "articleRefs": [
+        "2.5.2-05"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Türk-Afgan Dostluk Antlaşması hangi tarihte imzalandı?",
+      "back": "1 Mart 1921; taraflar birbirinin bağımsızlığını tanıyacaktı.",
+      "explanation": "Emperyalist bir devlet taraflardan birine saldırırsa birlikte mücadele edilecekti. Türkiye, Afganistan'a kültürel yardımda bulunup öğretmen ve subay gönderecekti.",
+      "articleRefs": [
+        "2.5.2-06"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Türk-Afgan Dostluk Antlaşması Ankara'da mı imzalandı?",
+      "back": "Hayır; Moskova'da imzalandı. Türk heyeti oraya Sovyet Rusya ile ilişkileri geliştirmek için gitmişti, Afgan heyeti de o sırada oradaydı.",
+      "articleRefs": [
+        "2.5.2-06"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Büyük Millet Meclisi'ni (BMM) tanıyan ilk Müslüman devlet hangisidir?",
+      "back": "Afganistan.",
+      "explanation": "1 Mart 1921'de Moskova'da Türk ve Afgan heyetleri bir dostluk antlaşması imzaladı; taraflar birbirinin bağımsızlığını tanıdı. Ardından Afgan yönetimi Ankara'ya bir elçi yollayarak Meclis Hükûmeti'ne desteğini açıkça ortaya koydu.",
+      "articleRefs": [
+        "2.5.2-06"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Sovyet Rusya hangi antlaşmayla Sevr'i reddedip Misak-ı Millî'yi tanıdı?",
+      "back": "Moskova Antlaşması; Sovyet Rusya kapitülasyonlardan da vazgeçti.",
+      "explanation": "İtilaf Devletleri Boğazları ve Anadolu'nun bazı bölgelerini işgal edince Sovyet Rusya kendi güney sınırlarını tehlikede gördü. Bu yüzden Ankara'daki hükûmeti hem siyasi hem ekonomik yönden desteklemeyi seçti. Meclis adına imzayı Ali Fuat Paşa, Dr. Rıza Nur ve Yusuf Kemal Beyler attı.",
+      "articleRefs": [
+        "2.5.2-07"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Moskova Antlaşması'yla Batum Sovyet Rusya'ya mı bırakıldı?",
+      "back": "Hayır; Batum Gürcistan'a bırakıldı ve bu, Misak-ı Millî'den verilen ilk ödün oldu.",
+      "explanation": "Aynı antlaşmayla Osmanlı Devleti ile Çarlık Rusyası arasında yapılmış antlaşmalar geçersiz sayıldı.",
+      "articleRefs": [
+        "2.5.2-07"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Moskova Antlaşması'na göre Boğazların geleceği nasıl belirlenecekti?",
+      "back": "Karadeniz'e kıyısı olan ülkelerin katılacağı bir konferansta karar verilerek.",
+      "explanation": "Taraflar ayrıca, birinin tanımadığı devletler arası bir antlaşmayı diğerinin de tanımamasını kabul etti.",
+      "articleRefs": [
+        "2.5.2-07"
+      ]
+    }
+  ]
+}

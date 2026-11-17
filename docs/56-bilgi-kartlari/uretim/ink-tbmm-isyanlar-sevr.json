@@ -1,0 +1,226 @@
+{
+  "deck": {
+    "topicId": "23d22785-351b-4f39-8516-a419e2c254c0",
+    "sourceSlug": "inkilap-tarihi-meb-12",
+    "sourceLabel": "AI bilgi kartı — Atatürk İlkeleri ve İnkılap Tarihi: Büyük Millet Meclisinin açılması, ayaklanmalar ve Sevr (kaynak pasajı 2.2-01…2.3-02)",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: kaynak pasajı + bankadaki sorular; stil kapısı 2 açıklama yeniden yazıldı)"
+  },
+  "cards": [
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Mustafa Kemal, olağanüstü yetkili meclisin Ankara'da toplanacağını bildirdiği genelgede milletvekili seçimlerinin kaç gün içinde yapılmasını istedi?",
+      "back": "On beş gün içinde. Bu sürede seçimle milletvekilleri belirlenecekti.",
+      "explanation": "Genelge illere ve kolordu komutanlarına gönderildi. İstanbul'dan kaçıp Ankara'ya ulaşabilen Mebusan Meclisi üyeleri de yeni meclisin doğal üyesi sayılacaktı.",
+      "articleRefs": [
+        "2.2-01"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Büyük Millet Meclisinin 23 Nisan 1920'deki ilk toplantısına Mustafa Kemal mi başkanlık etti?",
+      "back": "Hayır. İlk gün en yaşlı üye olarak Sinop Milletvekili Şerif Bey başkanlık etti. Mustafa Kemal 24 Nisan 1920'de meclis başkanı seçildi.",
+      "explanation": "Mustafa Kemal başkan seçildiği gün meclisin yetkileri ve işleyişine dair görüşlerini önerge olarak sundu. Meclis bunları 1 No.lu Kararlar olarak kabul etti.",
+      "articleRefs": [
+        "2.2-01"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "1 No.lu Kararlar'a göre Büyük Millet Meclisi hangi yetkileri kendinde toplamıştır?",
+      "back": "Yasama ve yürütme yetkilerini kendinde toplamıştır.",
+      "explanation": "Birinci meclis, savaş şartlarında kararların hızla alınıp uygulanması için güçler birliği ilkesini benimsedi. Aynı kararlara göre Büyük Millet Meclisinin üstünde bir güç yoktur.",
+      "articleRefs": [
+        "2.2-02"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "1 No.lu Kararlar'a göre hükûmet işlerine bakacak kurulun başkanlığını kim yürütür?",
+      "back": "Meclis başkanı yürütür. Kurulun üyelerini Meclis seçer ve vekil olarak görevlendirir.",
+      "explanation": "Kararlara göre Padişah ve Halife, baskıdan kurtulunca konumunu Meclisin koyacağı yasal ilkelere göre alacaktır.",
+      "articleRefs": [
+        "2.2-02"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Birinci Büyük Millet Meclisi neden kurucu meclis özelliği taşır?",
+      "back": "Hem yeni bir devlet kurduğu hem de yeni bir anayasa kabul ettiği için.",
+      "explanation": "Millî egemenliğe dayanan ve tam bağımsızlığı hedefleyen yeni devlet BMM'nin açılmasıyla kuruldu. Osmanlı Parlamentosunun aksine azınlık temsilcileri bulunmadığından meclis millî bir nitelik taşıyordu.",
+      "articleRefs": [
+        "2.2-02"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Millî Mücadele döneminde ülkedeki isyanlar hangi hükûmetin kurulmasıyla daha da arttı?",
+      "back": "Damat Ferit Paşa Hükûmeti'nin kurulmasıyla arttı.",
+      "explanation": "Damat Ferit Paşa, Anadolu'daki ulusal gücü yok etmek için her yolu denedi. Bu dönemde Millî Mücadele yanlıları görevden alındı. Millî güçleri dağıtmak için de İtilaf Devletleri'nden yardım alınarak askerî birlikler kuruldu.",
+      "articleRefs": [
+        "2.2.1-01"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Şeyhülislam'dan alınan fetvayla Kuvay-ı Millîyeciler nasıl ilan edildi?",
+      "back": "Vatan haini ve din düşmanı ilan edildiler.",
+      "explanation": "Fetva gazetelerle ve düşman uçaklarıyla bütün ülkeye dağıtıldı. Halk, millî güçlerin kanunsuz biçimde para ve asker topladığı propagandasıyla da isyana kışkırtıldı.",
+      "articleRefs": [
+        "2.2.1-01"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Kuvay-ı İnzibatiye, Büyük Millet Meclisinin isyancıların üzerine gönderdiği birlik miydi?",
+      "back": "Hayır. Kuvay-ı İnzibatiye (Halifelik Ordusu) İtilaf yardımıyla kurulup Kuvay-ı Millîyecilere karşı gönderildi. BMM ise isyancıların üzerine Kuvay-ı Millîye birliklerini gönderdi.",
+      "explanation": "Kuvay-ı İnzibatiye, Damat Ferit Paşa döneminde millî güçleri dağıtmak için kuruldu. Kuvay-ı Millîye birliklerinin isyancılar üzerine gönderilmesi ise BMM'nin askerî önlemiydi.",
+      "articleRefs": [
+        "2.2.1-01",
+        "2.2.2-01"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Vatana İhanet Kanunu (Hıyanet-i Vataniye Kanunu), Meclisin açılmasından kaç gün sonra çıkarıldı?",
+      "back": "Altı gün sonra, 29 Nisan 1920'de çıkarıldı.",
+      "explanation": "Kanuna göre Meclisin kararlarına karşı gelenler, düşmana hizmet edenler ve bozgunculuk yapanlar idamla cezalandırılacaktı. Ardından 11 Eylül 1920'de İstiklal Mahkemeleri kuruldu.",
+      "articleRefs": [
+        "2.2.2-01"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Şeyhülislam'ın fetvasına karşı fetvayı hazırlayan din adamlarının lideri kimdi?",
+      "back": "Ankara Müftüsü Rıfat Efendi.",
+      "articleRefs": [
+        "2.2.2-01"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "İstanbul Hükûmeti'nin ve işgalcilerin propagandasına karşı halkı doğru bilgilendirmek için hangi kuruluş kuruldu?",
+      "back": "Anadolu Ajansı kuruldu. Ayrıca Hâkimiyet-i Millîye gazetesi çıkarıldı.",
+      "explanation": "İstanbul'da yayımlanan bazı gazeteler de Millî Mücadele'yi güçlü biçimde destekledi; İkdam ve Vakit bunlar arasındaydı.",
+      "articleRefs": [
+        "2.2.2-01"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "İstiklal Mahkemelerinin üyeleri kaç kişiden oluşuyordu?",
+      "back": "Üç kişiden oluşuyordu. Büyük Millet Meclisi bunları kendi üyeleri arasından seçerdi.",
+      "explanation": "Duruşmalar halkın önünde yapılır, kararlar halka duyurulurdu. Kararlar vicdani kanaate dayanır ve temyiz edilemezdi. Mahkemeler idam kararı da verebilirdi.",
+      "articleRefs": [
+        "2.2.2-02"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "İstiklal Mahkemeleri başlangıçta hangi sorunun çözümüne yönelik çalıştı?",
+      "back": "Asker kaçakları sorununun çözümüne yönelik çalıştı.",
+      "explanation": "Mahkemelerin görev alanı sonradan genişletildi; vatana ihanet ve casusluk gibi suçlar da kapsama girdi. Çalışmaları sayesinde ordudaki kaçak sorunu büyük ölçüde azaldı ve düzenli orduya katılan asker sayısı arttı.",
+      "articleRefs": [
+        "2.2.2-02"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "İstiklal Mahkemeleri, Sovyet İstihbarat ve Güvenlik Teşkilatı (Çeka) örnek alınarak mı kuruldu?",
+      "back": "Hayır. Fransız İhtilali sırasında kurulan İhtilal Mahkemeleri örnek alındı. Çeka ile ise yalnızca benzetme yapıldı.",
+      "explanation": "İdam yetkisi, temyizsiz kararlar ve kararların ivedilikle uygulanması eleştirilere yol açtı. Yine de bu mahkemeler ne ülkede bir terör dönemi yaşattı ne de kapalı ve gizli çalıştı.",
+      "articleRefs": [
+        "2.2.2-02"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "İstiklal Mahkemeleri 1925-1927 yılları arasında hangi düşünceyle yeniden faaliyete geçirildi?",
+      "back": "Cumhuriyet rejiminin ve inkılapların tehlikeye düştüğü düşüncesiyle.",
+      "explanation": "Bu dönemde yasalar mahkemelere olağanüstü yetkiler verdi. Mahkemeler rejim karşıtı hareketlerin önlenmesinde, inkılapların uygulanmasında ve isyanların bastırılmasında etkili oldu.",
+      "articleRefs": [
+        "2.2.2-03"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Cumhuriyet Dönemi'nde hangi İstiklal Mahkemeleri kuruldu?",
+      "back": "İstanbul, Ankara ve Şark İstiklal Mahkemeleri.",
+      "explanation": "Yasaların tanıdığı olağanüstü yetkilerle sınırsız bir güce ulaştılar.",
+      "articleRefs": [
+        "2.2.2-03"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Osmanlı Devleti ile yapılacak barış antlaşmasının şartları Paris Barış Konferansı'nda mı hazırlandı?",
+      "back": "Hayır. Paris'te bu antlaşma ertelenmişti. Şartlarını İtilaf temsilcileri San Remo Konferansı'nda (18-26 Nisan 1920) hazırladı.",
+      "explanation": "San Remo toplantısı, Türk milletinin örgütlenip işgallere karşı direnmeye başladığı bir dönemde yapıldı. Hazırlanan metin Paris'te Osmanlı heyetine verildi.",
+      "articleRefs": [
+        "2.3-01"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Osmanlı heyeti antlaşma metnini reddedince 22 Haziran 1920'de harekete geçen Yunan ordusu hangi yerleri işgal etti?",
+      "back": "Bursa, Balıkesir ve Uşak'ı işgal etti.",
+      "explanation": "Bu gelişmeler karşısında Osmanlı devlet adamları önerilen antlaşmayı kabul etmeye karar verdi.",
+      "articleRefs": [
+        "2.3-01"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Sevr Antlaşması'nı imzalayan Osmanlı heyetinde Topçu Feriki Rıza Paşa da var mıydı?",
+      "back": "Hayır. Heyet Hadi Paşa, Rıza Tevfik ve Reşat Halis'ten oluşuyordu. Rıza Paşa ise 22 Temmuz 1920'de toplanan Saltanat Şûrası'nda imzaya karşı çıkan tek üyeydi.",
+      "explanation": "Anayasaya göre antlaşmanın meclis onayından geçmesi gerekiyordu, ancak Mebusan Meclisi kapalıydı. Bu yüzden eski komutan ve nazırlardan oluşan Saltanat Şûrası toplandı. Heyet daha sonra Paris'e giderek antlaşmayı Sevres (Sevr) kasabasında imzaladı.",
+      "articleRefs": [
+        "2.3-01",
+        "2.3-02"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Sevr Antlaşması kaç maddeden oluşur?",
+      "back": "433 maddeden oluşur.",
+      "explanation": "Antlaşmanın yürürlüğe girmesi için meclis onayı gerekiyordu. Mebusan Meclisi dağıtıldığından bu onay sağlanamadı. Büyük Millet Meclisi antlaşmayı reddetti; imzalayanlar ve onaylayanlar vatan haini ilan edildi.",
+      "articleRefs": [
+        "2.3-02"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Sevr Antlaşması'na göre mecburi askerlik kaldırıldıktan sonra kaç asker bulundurulacaktı?",
+      "back": "Yalnızca 50 bin 700 asker bulundurulacaktı.",
+      "explanation": "Antlaşmaya göre Boğazlar uluslararası bir komisyonca yönetilecek, kapitülasyonlardan tüm İtilaf Devletleri yararlanacaktı. İstanbul başkent olarak kalacaktı, ancak Türkler şartlara uymazsa İstanbul da ellerinden alınacaktı.",
+      "articleRefs": [
+        "2.3-02"
+      ]
+    }
+  ]
+}

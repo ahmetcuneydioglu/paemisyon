@@ -1,0 +1,161 @@
+{
+  "deck": {
+    "topicId": "23d22785-351b-4f39-8516-a419e2c254c0",
+    "sourceSlug": "inkilap-tarihi-meb-12",
+    "sourceLabel": "AI bilgi kartı — Atatürk İlkeleri ve İnkılap Tarihi: Millî Mücadele'de Doğu ve Güney cepheleri (kaynak pasajı 2.4-01…2.4.2-03)",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: kaynak pasajı + bankadaki sorular; stil kapısı 3 açıklama yeniden yazıldı)"
+  },
+  "cards": [
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Millî Mücadele'de Doğu Cephesi'nde Ermenilerle mücadele eden kolordu hangisiydi?",
+      "back": "15. Kolordu; başında Kazım Karabekir Paşa vardı.",
+      "explanation": "Mücadele üç cepheye yayıldı: Doğu, Güney ve Batı. Güneyde Fransızlara ve destekledikleri Ermenilere karşı Kuvay-ı Millîye direndi. Batıda Yunanlara karşı önce Kuvay-ı Millîye, ardından düzenli ordu savaştı.",
+      "articleRefs": [
+        "2.4-01"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Güney Cephesi'nde Fransızlara ve onların desteklediği Ermenilere karşı direnişi kim üstlendi?",
+      "back": "Kuvay-ı Millîye üstlendi.",
+      "explanation": "Doğu Cephesi'nde Ermenilerle 15. Kolordu, Batı Cephesi'nde Yunanlarla önce Kuvay-ı Millîye, daha sonra düzenli ordu mücadele etti.",
+      "articleRefs": [
+        "2.4-01"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Batı Cephesi'nde Yunanlara karşı mücadeleyi en başından itibaren düzenli ordu mu yürüttü?",
+      "back": "Hayır. Yunanlarla önce Kuvay-ı Millîye savaştı, mücadeleyi daha sonra düzenli ordu devraldı.",
+      "explanation": "Cephelerin dağılımı şöyledir: Doğu'da 15. Kolordu Ermenilerle, Güney'de Kuvay-ı Millîye Fransızlar ve Ermenilerle, Batı'da önce Kuvay-ı Millîye, ardından düzenli ordu Yunanlarla savaştı.",
+      "articleRefs": [
+        "2.4-01"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Ermeniler, merkezi Erivan olan Ermenistan Devleti'ni hangi tarihte kurdu?",
+      "back": "28 Mayıs 1918'de, Kafkasya'daki otorite boşluğundan yararlanarak.",
+      "explanation": "Rusya'da Çarlık rejimi yıkılıp Sovyet Rusya kurulmuştu. Yeni rejim Brest Litowsk Antlaşması'nı imzalayıp savaştan çekilince Kafkasya'da otorite boşluğu doğdu.",
+      "articleRefs": [
+        "2.4.1-01"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Brest Litowsk Antlaşması ile Sovyet Rusya'nın Osmanlı Devleti'ne bıraktığı Elviye-i Selase hangi şehirlerdir?",
+      "back": "Kars, Ardahan ve Batum.",
+      "explanation": "Rusya bu şehirleri 93 Harbi'nde ele geçirmişti. Aynı antlaşmayla Anadolu'da işgal ettiği yerleri de boşalttı.",
+      "articleRefs": [
+        "2.4.1-01"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Büyük Millet Meclisinin kararıyla harekete geçen Kazım Karabekir Paşa Ermenilerden hangi yerleri kurtardı?",
+      "back": "Sarıkamış ve Kars'ı. Türk ordusu Gümrü'ye yaklaşınca Ermeniler barış istedi.",
+      "explanation": "İtilaf Devletleri, Sevr Antlaşması'na bir Ermeni devleti kurulmasını öngören hüküm koyunca Ermeniler saldırılarını artırdı. BMM Hükûmeti de 15. Kolordu'yu Doğu Cephesi Komutanlığı hâline getirdi ve komutanlığa Kazım Karabekir'i atadı.",
+      "articleRefs": [
+        "2.4.1-01"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Gümrü Barış Antlaşması hangi tarihte imzalandı?",
+      "back": "2-3 Aralık 1920'de imzalandı.",
+      "explanation": "Antlaşmanın önemli hükümleri arasında şunlar vardı: Ermenistan Büyük Millet Meclisini tanıyacak, isteyen Ermeniler Türkiye'ye göç edebilecekti.",
+      "articleRefs": [
+        "2.4.1-02"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Gümrü Barış Antlaşması ile Büyük Millet Meclisi Hükûmeti'ne bırakılan yerler hangileridir?",
+      "back": "Kars, Sarıkamış, Kağızman, Iğdır ve Oltu.",
+      "articleRefs": [
+        "2.4.1-02"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Büyük Millet Meclisi Hükûmeti'nin uluslararası alanda sağladığı ilk askerî ve siyasi başarı hangi antlaşmadır?",
+      "back": "Gümrü Barış Antlaşması.",
+      "explanation": "Ermeniler Doğu Anadolu üzerindeki bütün isteklerinden vazgeçti. Böylece Sevr Antlaşması'nın onlara tanıdığı haklardan da vazgeçmiş oldular.",
+      "articleRefs": [
+        "2.4.1-02"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Antep'te Fransız işgaline karşı koyan, şehit düşmesiyle bütün şehirde direnişi başlatan Şahin Bey'in asıl adı nedir?",
+      "back": "Teğmen Sait Bey.",
+      "explanation": "Fransızlar Antep'e Ermenilerden oluşan bir askerî birlik yerleştirmişti. Türkleri sindirmek için bölgedeki Ermeni azınlığı da kullanarak saldırıya geçmişlerdi.",
+      "articleRefs": [
+        "2.4.2-01"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Fransızlara karşı savunması nedeniyle Büyük Millet Meclisinin \"Gazi\" unvanını verdiği şehir hangisidir?",
+      "back": "Antep.",
+      "explanation": "Şahin Bey (Teğmen Sait Bey) Fransız işgaline karşı koyarken şehit düştü ve direniş bütün şehre yayıldı. Antep direnişini on ay, dokuz gün sürdürdü.",
+      "articleRefs": [
+        "2.4.2-01"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Maraş'ta Fransızlarla şehir içinde süren kanlı mücadeleler hangi tarihte sona erdi?",
+      "back": "11 Şubat 1920 gecesi sona erdi. Fransızlar bozguna uğrayıp Maraş'tan çekildi.",
+      "explanation": "Sütçü İmam bir düşman askerini vurdu; ardından şehir içinde Fransızlarla kanlı mücadeleler yaşandı. Maraş'ın adı 7 Şubat 1973'te Büyük Millet Meclisi kararıyla Kahramanmaraş olarak değiştirildi.",
+      "articleRefs": [
+        "2.4.2-02"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Urfa, Fransızları şehri boşaltmaya mecbur bırakarak hangi tarihte zafer kazandı?",
+      "back": "11 Nisan 1920'de. Millî kuvvetlerin komutanı Yüzbaşı Ali Saip Bey'di.",
+      "explanation": "Urfa önce İngilizlerce işgal edilmiş, ardından Fransa'ya devredilmişti. Şehir bir devlete tek başına karşı koyup galip geldi. Urfa'nın adı 12 Haziran 1984'te Şanlıurfa olarak değiştirildi.",
+      "articleRefs": [
+        "2.4.2-02"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Millî Mücadele'de Güney Cephesi hangi antlaşmayla kapandı?",
+      "back": "Ankara Antlaşması'yla kapandı. Antlaşma Fransa ile 20 Ekim 1921'de imzalandı.",
+      "explanation": "Antlaşma, Yunan ordusunun Sakarya'da yenilmesi üzerine imzalandı. Hatay dışında bugünkü Türkiye-Suriye sınırı çizildi ve bölgedeki askerî güçler Batı Cephesi'ne gönderildi. Ankara Hükûmeti'ni resmen tanıyan ilk İtilaf Devleti de Fransa oldu.",
+      "articleRefs": [
+        "2.4.2-02"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "İtalyanlar Anadolu'yu II. İnönü Savaşı'ndan sonra tamamen boşalttı mı?",
+      "back": "Hayır. II. İnönü'deki Yunan yenilgisinden sonra çekilmeye başladılar. Anadolu'yu tamamen ancak Sakarya Zaferi'nden sonra boşalttılar.",
+      "explanation": "İtalyanlar Paris Barış Konferansı'nda istediklerini elde edememişti. Çekilmeleri iki aşamada gerçekleşti.",
+      "articleRefs": [
+        "2.4.2-03"
+      ],
+      "counterNumbers": []
+    }
+  ]
+}

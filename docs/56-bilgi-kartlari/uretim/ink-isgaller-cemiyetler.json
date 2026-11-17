@@ -1,0 +1,237 @@
+{
+  "deck": {
+    "topicId": "23d22785-351b-4f39-8516-a419e2c254c0",
+    "sourceSlug": "inkilap-tarihi-meb-12",
+    "sourceLabel": "AI bilgi kartı — Atatürk İlkeleri ve İnkılap Tarihi: İşgaller, Kuvay-ı Millîye ve cemiyetler (kaynak pasajı 2.1.1-01…2.1.4-08)",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: kaynak pasajı + bankadaki sorular; stil kapısı 14 açıklama yeniden yazıldı)"
+  },
+  "cards": [
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "I. Dünya Savaşı'nın yenik devletlerine imzalatılacak barış anlaşmalarını hazırlamak için toplanan hangi konferansta İzmir ve çevresinin Yunanistan'ca işgali kararlaştırıldı?",
+      "back": "Paris Barış Konferansı'nda; karar İngiltere'nin büyük desteğiyle alındı.",
+      "explanation": "İngiltere, Yunanistan'ı Akdeniz'deki ticaret ve sömürge yollarının bekçisi olarak görüyordu. İşgalin dayanağı olarak İstanbul Hükûmeti'ne ateşkesin yedinci maddesi gösterildi.",
+      "articleRefs": [
+        "2.1.1-01",
+        "2.1.2-01"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 1,
+      "front": "İtilaf Devletleri, Mondros'un 7. maddesine dayanan işgallere Paris Barış Konferansı'ndan sonra mı başladı?",
+      "back": "Hayır. İşgaller konferanstan önce, ateşkesin imzalanmasının hemen ardından başladı.",
+      "articleRefs": [
+        "2.1.1-01"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Yunan ordusu İzmir'e hangi tarihte asker çıkardı?",
+      "back": "15 Mayıs 1919 sabahı; çıkarmayı bir İngiliz gemisi destekledi.",
+      "explanation": "Damat Ferit Paşa Hükûmeti, İzmir Valisi İzzet Bey ile Kolordu Komutanı Ali Nadir Paşa'dan işgale karşı konulmamasını istedi; çatışma çıkmasın diye askerler kışlaya toplandı.",
+      "articleRefs": [
+        "2.1.2-01"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "İzmir'in işgali sırasında Yunan bayrağını taşıyan askeri vurarak şehirdeki ilk silahlı direnişi başlatan kimdir?",
+      "back": "Hasan Tahsin; Hukuk-u Beşer gazetesinin yazarıydı ve bu direnişte şehit düştü.",
+      "explanation": "İzmirli Rumlar işgalci Yunan ordusunu ellerinde Yunan bayrakları ve çiçeklerle karşılamıştı.",
+      "articleRefs": [
+        "2.1.2-01"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "İzmir'in işgalini protesto etmek için İstanbul'da yapılan en büyük ve en çok ses getiren mitingler hangileridir?",
+      "back": "Fatih, Kadıköy ve Sultanahmet mitingleri; on binlerce İstanbullu katıldı.",
+      "explanation": "Protestolar İstanbul'la sınırlı kalmadı; yurdun dört bir yanında miting düzenlendi, İtilaf Devletleri temsilciliklerine telgraflar gönderildi. Mitinglerdeki konuşmalar gazeteler aracılığıyla bütün yurda ulaştı.",
+      "articleRefs": [
+        "2.1.2-02"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "İzmir'in işgaline karşı yapılan Kadıköy Mitingi'nde konuşmasıyla halkın millî duygularını coşturan kimdir?",
+      "back": "Münevver Saime Hanım.",
+      "explanation": "Bu konuşma, İstanbul'da on binlerce kişinin katıldığı büyük protesto mitinglerinden birinde yapıldı. Mitinglerdeki konuşmalar gazeteler sayesinde tüm yurda duyuruldu.",
+      "articleRefs": [
+        "2.1.2-02"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Kuvay-ı Millîye kavramı, işgalciyle ve azınlık faaliyetleriyle çarpışan silahlı gruplardan başka kimleri kapsar?",
+      "back": "Bu gruplara maddi, manevi ya da fikrî yardımda bulunan herkesi.",
+      "explanation": "Ortaya çıkan direniş hareketine ve teşkilata Kuvay-ı Millîye (Millî Kuvvetler) adı verildi.",
+      "articleRefs": [
+        "2.1.3-01"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Kuvay-ı Millîye birlikleri hangi esasa göre oluşmuştu?",
+      "back": "Gönüllülük esasına göre; yerel halk kahramanlarının liderliğinde kuruldular.",
+      "explanation": "Birliklerin merkezî bir yönetimi yoktu; ihtiyaçlarını bulundukları yörenin halkından karşılıyorlardı. Ege, Karadeniz ve Güney Cephesi'nde Kara Fatma, Şahin Bey, Yörük Ali Efe, Demirci Mehmet Efe, İpsiz Recep ve Ethem gibi halk kahramanları öne çıktı.",
+      "articleRefs": [
+        "2.1.3-01"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "İşgallere karşı ilk direniş hareketi hangi tarihte başladı?",
+      "back": "19 Aralık 1918'de; Güney Cephesi'nde, Hatay'ın Dörtyol ilçesinde Fransızlara karşı başladı.",
+      "explanation": "Güneyde Urfa, Antep ve Maraş'ta Fransızlarla Ermenilere karşı verilen savaşlar Millî Mücadele'nin destanları arasına girdi.",
+      "articleRefs": [
+        "2.1.3-02"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Ege'de dağınık mücadele eden Kuvay-ı Millîye güçleri Alaşehir Kongresi'nde mi tek komuta altında birleştirildi?",
+      "back": "Hayır. Alaşehir ve Balıkesir kongreleri bu güçleri birleştirmeyi denedi; birleştirme Sivas Kongresi'nde Batı Anadolu Kuvay-ı Millîye Komutanlığı adıyla sağlandı.",
+      "explanation": "İzmir'in işgalinin ardından Ege'de Ayvalık, Nazilli, Salihli ve Ödemiş cepheleri oluşturulmuştu. Birleştirmeyle Batı Cephesi kurulmuş oldu.",
+      "articleRefs": [
+        "2.1.3-02"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Kuvay-ı Millîye birlikleri, hangi yıl alınan düzenli orduya geçiş kararıyla yerini düzenli birliklere bıraktı?",
+      "back": "1920; Büyük Millet Meclisinin açılmasından sonra alınan kararla birliklerin yerini subayların komutasındaki düzenli birlikler aldı.",
+      "explanation": "Kuvay-ı Millîye işgal güçlerinin ilerleyişini yavaşlattı, Türk köylerini Rum ve Ermeni çetelerinin baskınlarından korudu, Millî Mücadele'nin örgütlenmesine zaman kazandırdı ve iç ayaklanmaların bastırılmasında görev aldı.",
+      "articleRefs": [
+        "2.1.3-02"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Wilson Prensipleri Cemiyeti kurtuluşu neye bağlıyordu?",
+      "back": "Amerika mandasına girmeye; kurtuluşun ancak bu yolla mümkün olacağını savunuyordu.",
+      "explanation": "Cemiyetin kurucuları arasında Halide Edip, Ahmet Emin ve Refik Halit gibi aydınlar vardı. Millî varlığa düşman cemiyetler, bağımsızlığın halkın gücüyle kazanılabileceğine inanmadıkları için ya İstanbul Hükûmeti'nin politikalarını destekledi ya da güçlü bir devletin manda ve himayesini istedi.",
+      "articleRefs": [
+        "2.1.4-02"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "İngiliz Muhipleri Cemiyeti'nin ana gayesi neydi?",
+      "back": "Osmanlı ile İngiltere arasındaki dostluğu güçlendirmek ve İngiltere'nin koruyuculuğu altına girmek.",
+      "explanation": "İngilizlerin desteğiyle İstanbul'da kuruldu; Sadrazam Damat Ferit Paşa, Sait Molla ve İngiliz Rahip Frew gibi isimlerce desteklendi. Bu amacı yüzünden üyeleri Anadolu'da başlayan Kurtuluş Mücadelesi'ne karşı çıktı.",
+      "articleRefs": [
+        "2.1.4-02"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Ulemadan bir grubun İstanbul'da kurduğu ve kurtuluşu padişah ile halifenin emirlerine uymakta gören parti Hürriyet ve İtilaf Fırkası mıdır?",
+      "back": "Hayır; bu parti Sulh ve Selamet-i Osmaniye Fırkası'dır. Hürriyet ve İtilaf Fırkası ise 1911'de İttihat ve Terakki karşıtlarınca kurulmuştu.",
+      "explanation": "Hürriyet ve İtilaf, Anadolu'daki kurtuluş hareketini İttihatçıların işi saydığı için ona karşı çıktı. İki parti de millî varlığa düşman cemiyetler arasında yer alır.",
+      "articleRefs": [
+        "2.1.4-03",
+        "2.1.4-02"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Megali İdea doğrultusunda Yunanları Bizans İmparatorluğu dönemindeki sınırlarına yeniden ulaştırmayı hedefleyen cemiyet hangisidir?",
+      "back": "Mavri Mira; İstanbul'da Patrikhaneye bağlı olarak çalışıyordu.",
+      "explanation": "Cemiyetin arkasında Yunan Kızılhaçı, Göçmenler Cemiyeti ve Rum İzcilik Okulu vardı. Bu kuruluşlar göçmenlere yardım ediyor gibi görünse de gizlice çeteleri destekliyordu.",
+      "articleRefs": [
+        "2.1.4-04"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Büyük Millet Meclisi Hükûmeti, Pontus çetelerine karşı etkili mücadeleye girişmesini sağlayan Merkez Ordusu'nu hangi tarihte kurdu?",
+      "back": "9 Aralık 1920'de.",
+      "explanation": "Millî Mücadele'nin ilk döneminde çetelerin üzerine gidecek yeterli güç bulunmuyordu. Pontusçulukla ilgisi olan din adamları ülkeden çıkarıldı, bazıları İstiklal Mahkemelerinde yargılandı. Cumhuriyet Dönemi'ndeki nüfus mübadelesiyle Rumların Anadolu'dan ayrılması cemiyetin varlık nedenini ortadan kaldırdı.",
+      "articleRefs": [
+        "2.1.4-06"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Filistin'de İsrail Devleti kurulmasını amaçlayan cemiyetler Taşnak Sütyun ve Hınçak mıdır?",
+      "back": "Hayır; bu amaç Alyans İsrailit ve Makabi cemiyetlerinindir. Taşnak Sütyun ve Hınçak, Doğu Anadolu'da ve Çukurova'da Ermeni Devleti kurmak istiyordu.",
+      "explanation": "Hınçak Komitesi'ni Ermeni Patriği Zaven Efendi yönetti; komite Mavri Mira Cemiyeti ile de iş birliği yaptı. Alyans İsrailit ve Makabi, Osmanlı Devleti'ndeki Yahudilerin ticari çıkarları için de çalıştı.",
+      "articleRefs": [
+        "2.1.4-06"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Bölgesel amaçla kurulan millî cemiyetler, haklarını savunurken Wilson İlkeleri'nin hangi maddesinden yararlanmak istedi?",
+      "back": "12. madde.",
+      "explanation": "Bu cemiyetler bölgelerinin Türk yurdu olduğunu göstermek için tarihî gerçeklerin yanında nüfus üstünlüğünü öne çıkardı. Halkın birliğini sağlamak üzere kalabalık kongreler topladılar; isteklerini iletmek için Paris Barış Konferansı'na ve İtilaf temsilcilerine heyet yolladılar.",
+      "articleRefs": [
+        "2.1.4-07"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Osmanlı Devleti'ne bağlı kalmak mümkün olmazsa bağımsız bir Trakya Cumhuriyeti kurmayı düşünen cemiyet hangisidir?",
+      "back": "Trakya-Paşaeli Müdafaa-i Hukuk Cemiyeti; merkezi Edirne'deydi.",
+      "explanation": "Cemiyet bölgenin Yunanistan'a bırakılmasına karşı mücadele etti; Lüleburgaz ve Edirne kongrelerini düzenledi.",
+      "articleRefs": [
+        "2.1.4-07"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Erzurum Kongresi'ni düzenleyen cemiyet hangisidir?",
+      "back": "Şark Vilayetleri Müdafaa-i Hukuk Cemiyeti (Doğu Anadolu Müdafaa-i Hukuk Cemiyeti); merkezi İstanbul'daydı.",
+      "explanation": "Cemiyet, doğuda bir Ermeni Devleti kurulmasını engellemeye ve yöre halkının haklarını korumaya çalıştı. Kongrenin toplanmasında Trabzon Muhafaza-i Hukuk-u Millîye Cemiyeti de önemli pay sahibiydi.",
+      "articleRefs": [
+        "2.1.4-07",
+        "2.1.4-08"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "İzmir'in Yunanistan tarafından işgal edileceği öğrenilince kurulan ve bu işgale karşı silahlı mücadeleyi başlatan cemiyet hangisidir?",
+      "back": "İzmir Redd-i İlhak Cemiyeti; başlangıçta Müdafaa-i Hukuk adını taşıyordu.",
+      "explanation": "İzmir'de kurulan İzmir Müdafaa-i Hukuk Cemiyeti'nin hedefi ise Ege'nin Türk yurdu olduğunu dünyaya göstermek ve bölgenin Yunanistan'a bırakılmasını engellemekti.",
+      "articleRefs": [
+        "2.1.4-08"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Pozantı Kongresi'ni Millî Kongre Cemiyeti mi topladı?",
+      "back": "Hayır; Pozantı Kongresi'ni Kilikyalılar Cemiyeti topladı. Millî Kongre Cemiyeti, Türkler aleyhine basın ve yayınla yürütülen olumsuz propagandayı engellemeye çalıştı.",
+      "explanation": "Kilikyalılar Cemiyeti'nin merkezi İstanbul'du. Cemiyet, Adana ve çevresini işgal eden Fransızlara ve Fransız ordusundaki Ermenilerin saldırılarına karşı bölgede silahlı direnişi başlattı. Millî Kongre Cemiyeti ise ülke genelinde partiler üstü bir örgütlenme kurmayı amaçlamasıyla öteki cemiyetlerden ayrılıyordu.",
+      "articleRefs": [
+        "2.1.4-08"
+      ],
+      "counterNumbers": []
+    }
+  ]
+}

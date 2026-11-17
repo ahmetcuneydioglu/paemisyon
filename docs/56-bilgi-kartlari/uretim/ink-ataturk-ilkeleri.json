@@ -1,0 +1,196 @@
+{
+  "deck": {
+    "topicId": "23d22785-351b-4f39-8516-a419e2c254c0",
+    "sourceSlug": "inkilap-tarihi-meb-12",
+    "sourceLabel": "AI bilgi kartı — Atatürk İlkeleri ve İnkılap Tarihi: Türk inkılabı ve Atatürk ilkeleri (kaynak pasajı 3.1-01…3.2.6-02)",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: kaynak pasajı + bankadaki sorular; stil kapısı 11 açıklama yeniden yazıldı)"
+  },
+  "cards": [
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Osmanlı ıslahatlarının başarılı olamamasının başlıca nedeni neydi?",
+      "back": "Eskimiş kurumlarla ıslahata uygun yenilenmiş kurumların yan yana yaşatılmaya çalışılması.",
+      "explanation": "Böylece yüzeyde kalan ıslahatlar istenen sonuçları vermedi.",
+      "articleRefs": [
+        "3.1-01"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Atatürk önderliğinde, Türk milletinin tarihî birikimleri esas alınarak yapılan çağdaşlaşma çabalarının adı nedir?",
+      "back": "Türk inkılabı.",
+      "explanation": "Bu süreçte birçok alanda yeni kurumlar kuruldu, çağa uymayan eski kurumlar yenilendi. Türk inkılabının esasları Atatürkçü düşünce sistemini meydana getirir. Bu sistemin somut biçimi Atatürk ilkeleridir.",
+      "articleRefs": [
+        "3.1-01"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Atatürkçü düşüncede millî egemenliğin uygulaması hangi kuruma aittir?",
+      "back": "Meclise.",
+      "explanation": "Cumhuriyet yönetiminde söz milletindir; buna millî egemenlik denir. Demokrasinin gerçekleşebileceği en ideal sistem cumhuriyet yönetimidir. Cumhuriyetin esası, halkın devlet başkanını, yöneticileri ve temsilcileri anayasada belirlenen sürelerde seçimle işbaşına getirmesidir.",
+      "articleRefs": [
+        "3.2.1-01"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Atatürk cumhuriyet düşüncesini hangi sözüyle dile getirmiştir?",
+      "back": "“Hâkimiyet kayıtsız şartsız milletindir.”",
+      "explanation": "Atatürk cumhuriyeti Türk milletinin yapısına en uygun yönetim biçimi saydı. Bu yüzden onu millete mal etti. Kongrelere ve Türkiye Büyük Millet Meclisine verdiği önem de onun demokrat zihniyetini gösterir.",
+      "articleRefs": [
+        "3.2.1-02"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Atatürkçü düşünce sisteminin dayanağı olan en temel ilke hangisidir?",
+      "back": "Cumhuriyetçilik.",
+      "explanation": "Cumhuriyet, milletin egemenliğini kendi elinde tuttuğu devlet şeklidir. Egemenlik bir kişiye, zümreye ya da sınıfa değil, tüm halka aittir.",
+      "articleRefs": [
+        "3.2.1-01"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Atatürk'e göre millet nasıl tanımlanır?",
+      "back": "Aynı kültüre ve birlikte yaşama arzusuna sahip topluluk.",
+      "explanation": "Bu tanımdan hareketle Türk milletinin varlığı ortak tarih, dil ve kültüre dayanır. Birlikte yaşama isteği ve vatan kavramı da bu temelin parçasıdır. Atatürk milliyetçiliği ırkçılığı kabul etmez.",
+      "articleRefs": [
+        "3.2.2-01"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Atatürk milliyetçiliğinin ırkçılığı kabul etmediğini en güzel biçimde dile getiren özdeyiş hangisidir?",
+      "back": "“Ne Mutlu Türk'üm diyene!”",
+      "explanation": "Üstün millet anlayışını ve ırkçılığı reddeden Atatürk milliyetçiliği çağdaş, ileriye dönük ve akılcıdır. Türk milletinin ve diğer milletlerin kendi topraklarında hür ve eşit yaşamasını amaçlar. Hukuku, özgürlüğü, adaleti ve uluslararası barış ile güvenliğin sürmesini arzular.",
+      "articleRefs": [
+        "3.2.2-01"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Atatürkçü düşüncede halkçılık neyi ifade eder?",
+      "back": "Herkesin kanun önünde eşit olmasını, hiçbir kişi ya da gruba ayrıcalık tanınmamasını.",
+      "explanation": "Halkçılık Türk demokrasisinin temelidir ve siyasi alanda demokrasi düşüncesinin karşılığıdır. Atatürk, yeni Türkiye Devleti'nin halk devleti, halkın devleti olduğunu söylemiştir.",
+      "articleRefs": [
+        "3.2.3-01"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Sosyal adalet, sosyal güvence ve ekonomik yönden güçsüz kesimlerin korunmasını esas alan sosyal devlet anlayışı laiklik ilkesinin gereği midir?",
+      "back": "Hayır; sosyal devlet anlayışı halkçılığın gereğidir. Laiklik ise dinî olanla dünyevi olanın ayrılmasıdır.",
+      "explanation": "Halkçılık, sosyal alanda Türkiye Cumhuriyeti bireylerinin mutlu ve refah içinde olmasını hedefler.",
+      "articleRefs": [
+        "3.2.3-01",
+        "3.2.5-01"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Halkçılık ilkesi sınıf mücadelesi karşısında hangi tutumu alır?",
+      "back": "Reddeder; çünkü toplumdaki sınıf ve gruplara ayrıcalık tanımaz.",
+      "explanation": "Halkçılık sınıflara ayrıcalık tanımaz. Bu tutum, ayrım yapmadan dayanışma bilincini güçlendirir ve ülkenin bütünlüğüne katkı verir. Halkçılık sosyal devlet anlayışını da gerektirir: sosyal adalet, sosyal güvence ve ekonomik yönden güçsüzlerin korunması.",
+      "articleRefs": [
+        "3.2.3-01"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Atatürkçü düşüncede devletçiliğin esası nedir?",
+      "back": "Devletin, başta ekonomi olmak üzere her alanda planlamacı tutum takınması.",
+      "explanation": "Planlamanın ana hedefi milleti refaha kavuşturmak ve ülkenin kalkınmasını sağlamaktır. Devletçilik, Millî Mücadele sonrasında zamanın şartlarına ve dönemin ihtiyaçlarının getirdiği zorunluluğa dayalı olarak ortaya çıkmıştır.",
+      "articleRefs": [
+        "3.2.4-01"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Atatürkçü devletçilik ilkesinde devlet ve birey nasıl ele alınır?",
+      "back": "Birbirini tamamlayıcı kavramlar olarak; zıt kavramlar olarak görülmez.",
+      "explanation": "Devlet planlama yaparken bireysel girişimi ve çalışmayı da tanır. Özel sektörü yok saymadığı için bu ılımlı bir devletçiliktir. İlke zamanla ekonomiyle sınırlı kalmadı. Millî birliği korumada ve toplumu çağdaşlaştırmada da devlete rol verecek biçimde genişledi.",
+      "articleRefs": [
+        "3.2.4-01"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Türkiye Cumhuriyeti'nin kuruluş yıllarında ekonomik alanda sanayileşmeyi ve millî gelirin artmasını sağlayan ilke halkçılık mıdır?",
+      "back": "Hayır; bunları devletçilik ilkesi sağlamıştır. Halkçılık, herkesin kanun önünde eşitliğidir.",
+      "explanation": "Kuruluş yıllarında devlet ekonomiyi yönlendirdi, yatırımı özendirdi, yapılanları denetleyip düzenledi. Kalkınma, sanayileşme, millî gelir artışı bu yolla sağlandı. Halkçılık ise kimseye ayrıcalık tanımamayı ve sınıf mücadelesini reddetmeyi esas alır.",
+      "articleRefs": [
+        "3.2.4-01",
+        "3.2.3-01"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Kavram olarak laiklik nedir?",
+      "back": "Dinî olanla dünyevi olanın birbirinden ayrılmasıdır.",
+      "explanation": "Laiklik yalnız din ve devlet işlerinin ayrılmasıyla sınırlı kalmaz. Laik devlet bireyin tüm inanç ve ibadet hakkını tanır ve vatandaşların inançlarını özgürce yaşaması için gereken tedbirleri alır. Laiklik dinin alternatifi değildir.",
+      "articleRefs": [
+        "3.2.5-01"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Atatürk, laik devletin bireyin inanç ve ibadet hakkını tanıması yaklaşımını hangi sözüyle özetlemiştir?",
+      "back": "“Türk Devleti laiktir. Her ergin dinini seçmekte serbesttir.”",
+      "explanation": "Atatürk inkılaplarıyla siyasal, sosyal, kültürel ve hukuksal alanlarda yapılan düzenlemelerde laiklik esas alınmıştır. Bu alanlar, kişi hak ve hürriyetlerini temel alan anlayışa göre düzenlenmiştir.",
+      "articleRefs": [
+        "3.2.5-01"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Laiklik düşüncesi, inanç özgürlüğü ve demokrasiyle ilgili sorunların nasıl çözülmesini öngörür?",
+      "back": "Bilimin ışığında ve bilimsel yöntemlerle.",
+      "explanation": "Atatürk bu yaklaşımı “Hayatta en hakiki mürşit ilimdir.” sözüyle vurgular. Laiklik dinin alternatifi değildir. Laik devlet bireyin inanç ve ibadet hakkını tanır ve bu hakkın özgürce yaşanması için tedbir alır.",
+      "articleRefs": [
+        "3.2.5-01"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Atatürkçü düşüncede inkılapçılık ilkesi nasıl tanımlanır?",
+      "back": "Türk toplumunu çağın gerisinde bırakan kurumları kaldırmak ya da yeni gelişmelere uygun hâle getirmek.",
+      "explanation": "İnkılap, toplumun düzenini ve yapısını iyileştirmek için yapılan köklü değişimdir. İnkılapçılık çağdaşlaşmayı sağlayan güçtür. Atatürkçü düşünceye dinamik bir nitelik kazandırır ve güncel sorunları çözme yeteneğini öne çıkarır.",
+      "articleRefs": [
+        "3.2.6-01"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Atatürkçü düşüncenin dinamik bir öğreti olmasını sağlayan ilke cumhuriyetçilik midir?",
+      "back": "Hayır; inkılapçılıktır. Bu ilke, Atatürkçü düşüncenin güncel sorunları çözme kabiliyetini öne çıkarır.",
+      "explanation": "Amaç yalnız yapılan inkılapları korumak değil, daima çağdaş medeniyetin getirdiklerinin üstüne çıkmaktır. Bu, sürekli yeni atılımları zorunlu kılar; atılımların kaynağı da inkılapçılık anlayışıdır.",
+      "articleRefs": [
+        "3.2.6-01",
+        "3.2.1-01"
+      ],
+      "counterNumbers": []
+    }
+  ]
+}

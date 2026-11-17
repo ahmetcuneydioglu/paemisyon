@@ -1,0 +1,267 @@
+{
+  "deck": {
+    "topicId": "23d22785-351b-4f39-8516-a419e2c254c0",
+    "sourceSlug": "inkilap-tarihi-meb-12",
+    "sourceLabel": "AI bilgi kartı — Atatürk İlkeleri ve İnkılap Tarihi: I. Dünya Savaşı'nda Osmanlı cepheleri (kaynak pasajı 1.3.3-01…1.3.3-13)",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: kaynak pasajı + bankadaki sorular; stil kapısı 9 açıklama yeniden yazıldı; 2 açıklama düşürüldü)"
+  },
+  "cards": [
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Osmanlı Devleti I. Dünya Savaşı sırasında hangi cephelerde savaştı?",
+      "back": "Kafkas, Kanal, Çanakkale, Irak, Hicaz-Yemen, Suriye-Filistin, Galiçya, Makedonya ve Romanya cephelerinde.",
+      "explanation": "Osmanlı askeri yalnız kendi topraklarındaki cephelerde savaşmadı. Galiçya, Makedonya ve Romanya da savaştığı cepheler arasındadır.",
+      "articleRefs": [
+        "1.3.3-01",
+        "1.3.3-13"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Kafkas Cephesi'nde Almanların en büyük hedefi neydi?",
+      "back": "Bakü petrollerini ele geçirmek.",
+      "explanation": "Sarıkamış Harekâtı'nı başlatan Enver Paşa ise Rusların Doğu Anadolu'daki ilerleyişini durdurmak istiyordu. Ayrıca Turancılık fikriyle Kafkasya üzerinden Orta Asya Türklerine ulaşıp onları Osmanlı'yla birleştirmeyi hedefliyordu.",
+      "articleRefs": [
+        "1.3.3-02"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Enver Paşa Sarıkamış Harekâtı'nı hangi tarihte başlattı?",
+      "back": "22 Aralık 1914'te; Ruslara karşı taarruza geçildi.",
+      "explanation": "Allahuekber Dağları'nı geçmeye çalışan binlerce asker çatışmaya girmeden şehit düştü; sebep ağır kış şartları ve salgınlardı. Bu felaketten sonra Ruslar, Ermenilerden de yardım görüp Trabzon, Erzurum, Bayburt, Erzincan, Van, Muş ve Bitlis'i işgal etti.",
+      "articleRefs": [
+        "1.3.3-02"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Mustafa Kemal, Kafkas Cephesi'nde Ruslara karşı savaşarak Van ve Muş'u mu kurtardı?",
+      "back": "Hayır; Muş ve Bitlis'i kurtardı. Van, Sarıkamış felaketinden sonra Rusların ele geçirdiği yerler arasındaydı.",
+      "explanation": "Mustafa Kemal, Çanakkale zaferinin ardından 1916'da Kafkas Cephesi'ne atandı ve Ruslara karşı başarılı bir mücadele yürüttü.",
+      "articleRefs": [
+        "1.3.3-02"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Osmanlı Dâhiliye Nezareti, Hınçak ve Taşnak komite bürolarını kapatan genelgeyi hangi tarihte yayınladı?",
+      "back": "24 Nisan 1915'te; genelgeyle bu komitelerin üyeleri de tutuklandı.",
+      "explanation": "Ermenilerin her yıl 1915 olaylarının yıl dönümü diye andığı 24 Nisan, bu genelgenin tarihidir. Ermeniler bu genelgeyle yapılan tutuklamaları katliam gibi göstermeye çalışır.",
+      "articleRefs": [
+        "1.3.3-03"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Sevk ve İskân (Tehcir) Kanunu hangi tarihte çıkarıldı?",
+      "back": "27 Mayıs 1915'te.",
+      "explanation": "Ermeni saldırı ve isyanları sürünce hem iç güvenliği sağlamak hem de cephelerdeki Türk askerinin güvenliğini artırmak için çıkarıldı.",
+      "articleRefs": [
+        "1.3.3-04"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Sevk ve İskân Kanunu ile hangi Ermeniler zorunlu göçe tabi tutuldu?",
+      "back": "Ruslarla iş birliği yapanlar, çeteciler ve isyana karışanlar; Osmanlı sınırları içindeki başka bölgelere yerleştirildiler.",
+      "explanation": "Göç ettirilenler taşınabilir mallarını yanlarına alabildi. Taşınmaz malları hükûmetçe açık artırmayla satıldı ve bedeli kendilerine ödendi. Can ve mal güvenliği ile yol boyu ihtiyaçlar için memurlar görevlendirildi, göç işleri için komisyonlar kuruldu.",
+      "articleRefs": [
+        "1.3.3-04"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Osmanlı Devleti Geri Dönüş Kararnamesi'ni hangi tarihte yayınladı?",
+      "back": "31 Aralık 1918'de, I. Dünya Savaşı sona erdikten sonra.",
+      "explanation": "Kararnameyle göçe tabi tutulan Ermenilerden isteyenler geri döndü ve mal mülklerini geri aldı.",
+      "articleRefs": [
+        "1.3.3-05"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Brest-Litovsk Antlaşması ile Osmanlı Devleti'ne geri verilen Elviye-i Selâse hangi yerlerdir?",
+      "back": "Kars, Ardahan ve Batum.",
+      "explanation": "Bolşevik İhtilali'nden sonra kurulan Sovyet Rusya savaşa devam etmedi. 3 Mart 1918'de imzalanan bu antlaşmayla savaştan çekildi ve işgal ettiği topraklardan da çekildi.",
+      "articleRefs": [
+        "1.3.3-05",
+        "1.3.3-02"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "İstanbul Hükûmeti Kafkas İslam Ordusu'nu kimin komutanlığında kurdu?",
+      "back": "Nuri (Killigil) Paşa'nın; Harbiye Nazırı Enver Paşa ona Ferik (Tümgeneral) rütbesi verdi.",
+      "explanation": "Ordu, Azerbaycan Türkleri ile Kuzey Kafkasya Cumhuriyeti vatandaşı Dağıstanlı gönüllülerden oluşuyordu. Ruslar bölgeden çekilince Ermeni ve Gürcü çeteleri katliama başlamış, Azerbaycan Türkleri de bir heyetle Osmanlı'dan yardım istemişti.",
+      "articleRefs": [
+        "1.3.3-06",
+        "1.3.3-05"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Kafkas İslam Ordusu Bakü'ye hangi tarihte girdi?",
+      "back": "15 Eylül 1918'de; şehir düşmandan temizlendi.",
+      "explanation": "Bolşevik, Taşnak ve İngiliz birlikleri Bakü'yü Türklere teslim etmemek için direndi. Kafkas İslam Ordusu bu direnişe rağmen şehre girdi. Azerbaycan uğruna yürütülen bu harekâtta Türk ordusu 1130 şehit verdi.",
+      "articleRefs": [
+        "1.3.3-06"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Almanya ve Osmanlı Devleti Kanal Cephesi'ni hangi amaçla açtı?",
+      "back": "Süveyş Kanalı'nı alıp İngiltere'nin sömürgeleriyle bağını kesmek, böylece onun insan ve ham madde bulmasını engellemek.",
+      "explanation": "Osmanlı Devleti ayrıca Mısır'ı geri almayı hedefliyordu. 1915 ve 1916 taarruzları başarısız oldu; İngiltere 1917'de Sina Yarımadası'nı alıp Suriye'ye kadar ilerledi.",
+      "articleRefs": [
+        "1.3.3-07"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Kanal Cephesi'nde 1915 taarruzunu yapan Osmanlı ordusu Enver Paşa komutasında mıydı?",
+      "back": "Hayır; ordu Bahriye Nazırı Cemal Paşa komutasındaydı. Enver Paşa, Kafkas Cephesi'nde Sarıkamış Harekâtı'nı başlatan komutandır.",
+      "explanation": "Cemal Paşa'nın kuvvetleri Sina Çölü'nü aşıp Süveyş Kanalı'na saldırdı, ancak İngilizler karşısında başarısız olunca geri çekildi.",
+      "articleRefs": [
+        "1.3.3-07",
+        "1.3.3-02"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "İtilaf Devletleri'nin Çanakkale Cephesi'ni açma amaçları arasında neler vardı?",
+      "back": "İstanbul ve Boğazları alıp Osmanlı'yı savaş dışı bırakmak, Rusya'ya askerî ve ekonomik yardım ulaştırmak, Rus buğdayından yararlanmak, tarafsız Balkan devletlerini yanlarına çekmek.",
+      "explanation": "Bu amaçlar yüzünden Çanakkale Muharebeleri, savaşın gidişatı için de Osmanlı Devleti için de büyük önem taşıdı. İtilaf Devletleri burada kazanacakları başarıyla henüz tarafsız kalan Balkan devletlerini kendi saflarına çekmeyi umuyordu.",
+      "articleRefs": [
+        "1.3.3-08"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "İtilaf donanması Çanakkale Boğazı'nı geçmek için hangi tarihte harekete geçti?",
+      "back": "18 Mart 1915'te; ağır kayıplar verip geri çekildi.",
+      "explanation": "Nusret Mayın Gemisi'nin Boğaz'a döşediği mayınlar ve Türk topçusunun başarısı belirleyici oldu. İngiliz ve Fransız filosunun Kumkale ve Seddülbahir tabyalarına bombardımanı 19 Şubat 1915'te başlamış, yaklaşık bir ay sürmüştü.",
+      "articleRefs": [
+        "1.3.3-08"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "İtilaf Devletleri 25 Nisan 1915'te Gelibolu Yarımadası'nda hangi noktalara çıkarma yaptı?",
+      "back": "Seddülbahir, Kumkale ve Arıburnu'na.",
+      "explanation": "Denizden geçemeyeceklerini anlayan İtilaf Devletleri karaya asker çıkardı. Mustafa Kemal ve emrindeki birlikler Anafartalar, Conkbayırı, Arıburnu ve Kireçtepe'de düşmana geçit vermedi.",
+      "articleRefs": [
+        "1.3.3-08"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Kara savaşlarında da başarılı olamayan İtilaf kuvvetleri Gelibolu'yu ne zaman boşalttı?",
+      "back": "Ocak 1916'da; böylece İstanbul kurtarıldı.",
+      "explanation": "Boşaltmayla Çanakkale'nin geçilemeyeceği bütün dünya tarafından görülmüş oldu.",
+      "articleRefs": [
+        "1.3.3-09"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "\"Anafartalar Kahramanı\" olarak tanınan komutan Cevat Çobanlı mıdır?",
+      "back": "Hayır; Anafartalar Kahramanı Mustafa Kemal'dir. Çanakkale Müstahkem Mevki Komutanı Cevat Çobanlı \"18 Mart Kahramanı\" diye anılır.",
+      "explanation": "Mustafa Kemal'in Çanakkale'deki başarısı, Millî Mücadele'nin lideri olmasında etkili oldu. Cevat Çobanlı'nın 18 Mart 1915 deniz zaferinde büyük katkısı vardır.",
+      "articleRefs": [
+        "1.3.3-09",
+        "1.3.3-08"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Cumhuriyet'in ilk yıllarında pek çok alanda yetişmiş eleman sıkıntısı yaşanmasında Çanakkale Muharebeleri'nin hangi sonucu etkili oldu?",
+      "back": "Osmanlı'nın Çanakkale'de yitirdiği insanların büyük kısmının eğitimli, yetişmiş kişiler olması.",
+      "explanation": "Zaferin başka sonuçları da vardı: savaşın süresi uzadı, Bulgaristan İttifak Devletleri yanında savaşa katıldı ve Almanya ile Osmanlı arasında kara bağlantısı kuruldu. Müttefiklerin yardım götüremediği Rusya'da Bolşevik İhtilali çıktı ve Rusya savaştan çekildi.",
+      "articleRefs": [
+        "1.3.3-09"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "İngiltere Mac Mahon Planı ile Mekke Emiri Şerif Hüseyin'e ne vadetmişti?",
+      "back": "Bağımsızlık; İngiliz desteğini alan bazı Arap kabileleri de Osmanlı'ya karşı ayaklandı.",
+      "explanation": "İngiliz casus Thomas Edward Lawrence, Arapları durmadan Türklere karşı kışkırttı. Medine ile Suriye arasındaki demir yolunu da tahrip ettirip kullanılamaz duruma soktu. V. Mehmet Reşad halife sıfatıyla cihat ilan etti, ancak bu çağrı Araplar üzerinde beklenen etkiyi doğurmadı. Bu durum İslamcılık (Ümmetçilik) politikasının gücünü yitirdiğini gösterdi.",
+      "articleRefs": [
+        "1.3.3-10"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Hicaz-Yemen Cephesi'nde Medine'yi savunan ve Mondros Ateşkes Anlaşması imzalandığı hâlde uzun süre teslim olmayan komutan kimdir?",
+      "back": "Fahrettin Paşa.",
+      "explanation": "Medine savunması uzun sürdü. Paşa'nın elinde az asker vardı ve çölde açlık ile hastalıklarla boğuşmak zorunda kaldı. Savaş bitince Osmanlı Devleti bölgeden çekilmek durumunda kaldı.",
+      "articleRefs": [
+        "1.3.3-10"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Kut'ül Amâre'de kuşatılan İngiliz kuvvetleri Türk kuvvetlerine hangi tarihte teslim oldu?",
+      "back": "29 Nisan 1916'da; teslim alan Halil Paşa komutasındaki Türk kuvvetleriydi.",
+      "articleRefs": [
+        "1.3.3-11"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Suriye-Filistin Cephesi'nde İngiliz taarruzu sırasında Mustafa Kemal hangi ordunun komutanıydı?",
+      "back": "Yıldırım Orduları bünyesindeki VII. Ordu'nun.",
+      "explanation": "Gazze Savaşları'ndaki başarılara karşın bölgedeki Osmanlı kuvvetleri artan İngiliz baskısıyla dağıldı. Bunun üzerine Kudüs, Filistin ve ardından Suriye İngilizlerin eline geçti. Mustafa Kemal, İngiliz taarruzu karşısında geri çekildi. Antakya'dan Halep'in kuzeyine kadar bir savunma hattı oluşturdu ve İngiliz ilerleyişini orada durdurdu.",
+      "articleRefs": [
+        "1.3.3-12"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Mustafa Kemal isyancı Arap güçlerine karşı Katma Savaşı'nı hangi tarihte kazandı?",
+      "back": "26 Ekim 1918'de; ardından Halep'in beş kilometre kadar kuzeyindeki bölgeyi Türk sınırı olarak belirledi.",
+      "explanation": "Bu sınır, ileride kurulacak Türk Devleti'nin millî hududunun askerin süngüsüyle fiilen çizildiği yer oldu. Mondros'un imzalanmasının ardından, 31 Ekim'de Mustafa Kemal Yıldırım Orduları Grup Komutanlığı'na getirildi.",
+      "articleRefs": [
+        "1.3.3-12"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Osmanlı Devleti Galiçya, Makedonya ve Romanya cephelerinde hangi amaçla savaştı?",
+      "back": "Müttefikleri Bulgaristan, Almanya ve Avusturya-Macaristan'a yardım etmek için.",
+      "explanation": "Bu üç cephe, Osmanlı Devleti'nin kendi sınırları dışında savaştığı cephelerdir.",
+      "articleRefs": [
+        "1.3.3-13"
+      ]
+    }
+  ]
+}
