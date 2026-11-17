@@ -18,6 +18,7 @@ import {
 import { SORU_OZETI_SELECT } from '../quiz/soru-ozeti';
 import { paylasimWhere } from '../public/soru-paylasim';
 import { revalidateWebPaths, type WebRevalidateResult } from '../summaries/web-revalidate';
+import { canonicalJson } from './canonical-json';
 
 /** İçe aktarma girdisi (betik ya da panel): bir bölüm altına bir ders sürümü. */
 export interface LessonImportInput {
@@ -314,9 +315,18 @@ export class LessonsService {
       select: {
         id: true,
         status: true,
-        versions: { select: { versionNo: true }, orderBy: { versionNo: 'desc' }, take: 1 },
+        version: true,
+        versions: {
+          select: { id: true, versionNo: true, body: true, reviewNote: true },
+          orderBy: { versionNo: 'desc' },
+          take: 1,
+        },
       },
     });
+    // Bölüm topluca yeniden içe aktarılınca metni değişmeyen derse yeni sürüm açılmaz;
+    // yoksa panel yayındaki dersi boş yere "yeni sürüm bekliyor" diye işaretler.
+    const latest = existing?.versions[0];
+    const bodyUnchanged = !!latest && canonicalJson(latest.body) === canonicalJson(input.body);
     const minutes = readingMinutes(input.body);
     const bodyJson = input.body as unknown as Prisma.InputJsonValue;
     const sourceRows = sources.map((s, i) => ({
@@ -332,16 +342,22 @@ export class LessonsService {
 
     const result = await this.prisma.$transaction(async (tx) => {
       if (existing) {
-        const versionNo = (existing.versions[0]?.versionNo ?? 0) + 1;
-        await tx.lessonVersion.create({
-          data: {
-            lessonId: existing.id,
-            versionNo,
-            body: bodyJson,
-            reviewNote: input.reviewNote,
-            createdBy: actorId,
-          },
-        });
+        const versionNo = bodyUnchanged ? latest!.versionNo : (latest?.versionNo ?? 0) + 1;
+        if (!bodyUnchanged)
+          await tx.lessonVersion.create({
+            data: {
+              lessonId: existing.id,
+              versionNo,
+              body: bodyJson,
+              reviewNote: input.reviewNote,
+              createdBy: actorId,
+            },
+          });
+        else if (input.reviewNote && input.reviewNote !== latest!.reviewNote)
+          await tx.lessonVersion.update({
+            where: { id: latest!.id },
+            data: { reviewNote: input.reviewNote },
+          });
         await tx.lesson.update({
           where: { id: existing.id },
           data: {
@@ -366,8 +382,9 @@ export class LessonsService {
         return {
           id: existing.id,
           versionNo,
-          replaced: true,
-          pendingVersion: existing.status === 'published',
+          replaced: !bodyUnchanged,
+          unchanged: bodyUnchanged,
+          pendingVersion: existing.status === 'published' && versionNo > existing.version,
         };
       }
       const lesson = await tx.lesson.create({
@@ -399,7 +416,7 @@ export class LessonsService {
       });
       if (links.length)
         await tx.lessonLink.createMany({ data: links.map((l) => ({ ...l, lessonId: lesson.id })) });
-      return { id: lesson.id, versionNo: 1, replaced: false, pendingVersion: false };
+      return { id: lesson.id, versionNo: 1, replaced: false, unchanged: false, pendingVersion: false };
     });
     return { ...result, slug: input.slug, validation };
   }

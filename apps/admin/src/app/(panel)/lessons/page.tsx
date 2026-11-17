@@ -65,10 +65,10 @@ export default function LessonsPage() {
     onError: err,
   });
   const doImport = useMutation({
-    mutationFn: () => api<{ slug: string; versionNo: number; replaced: boolean; pendingVersion: boolean }>('/admin/lessons/import-markdown', { method: 'POST', body: body() }),
+    mutationFn: () => api<{ slug: string; versionNo: number; replaced: boolean; unchanged: boolean; pendingVersion: boolean }>('/admin/lessons/import-markdown', { method: 'POST', body: body() }),
     onSuccess: (r) => {
       qc.invalidateQueries({ queryKey: ['admin-lessons'] });
-      setNotice({ kind: 'ok', text: `✅ ${r.slug} yazıldı: sürüm ${r.versionNo}${r.replaced ? ' (yeni sürüm)' : ''}${r.pendingVersion ? ' · yayındaki sürüm değişmedi, yayın için ders sayfasından onayla' : ' · durum: incelemede'}.` });
+      setNotice({ kind: 'ok', text: r.unchanged && !r.pendingVersion ? `✅ ${r.slug}: metin son sürümle aynı, yeni sürüm açılmadı (sürüm ${r.versionNo}).` : `✅ ${r.slug} yazıldı: sürüm ${r.versionNo}${r.replaced ? ' (yeni sürüm)' : ''}${r.pendingVersion ? ' · yayındaki sürüm değişmedi, yayın için ders sayfasından onayla' : ' · durum: incelemede'}.` });
       setCheck(null);
       setF((p) => ({ ...p, slug: '', markdown: '', sortOrder: p.sortOrder + 1 }));
     },

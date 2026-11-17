@@ -105,7 +105,7 @@ interface Bolum {
     if (KURU) continue;
     const r = await svc.importLesson(input, null);
     console.log(
-      `  → yazıldı: sürüm ${r.versionNo}${r.replaced ? ' (yeni sürüm)' : ''}${r.pendingVersion ? ' · yayındaki sürüm değişmedi' : ''}`,
+      `  → ${r.unchanged ? 'metin değişmedi, sürüm açılmadı' : 'yazıldı'}: sürüm ${r.versionNo}${r.replaced ? ' (yeni sürüm)' : ''}${r.pendingVersion ? ' · yayındaki sürüm değişmedi' : ''}`,
     );
     yazilan++;
   }
