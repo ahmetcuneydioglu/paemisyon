@@ -1,0 +1,553 @@
+{
+  "unit": {
+    "slug": "epdy-performans-degerlendirme-sistemi",
+    "legislationSlug": "emniyet-performans-degerlendirme-yonetmeligi",
+    "topicId": "f614ccc4-e39b-4715-ba55-f8a621775354",
+    "title": "Performans değerlendirme sistemi",
+    "subtitle": "Kurul, değerlendirme amirleri, ölçek ve puan hesabı, itiraz, yetersiz performans ve aday memurlar",
+    "articleFrom": "2",
+    "articleTo": "25",
+    "readingMinutes": 12,
+    "sourceLabel": "AI özeti — Emniyet Performans Değerlendirme Yönetmeliği, md 2, 4, 6–8, 10, 11, 13, 17, 18, 20, 21, 23–25",
+    "articleNos": [
+      "2",
+      "4",
+      "6",
+      "7",
+      "8",
+      "10",
+      "11",
+      "13",
+      "17",
+      "18",
+      "20",
+      "21",
+      "23",
+      "24",
+      "25"
+    ],
+    "generatedBy": "claude-opus-5-5 (ozet-uret.ts)",
+    "sortOrder": 1
+  },
+  "blocks": [
+    {
+      "type": "concept",
+      "title": "Performans değerlendirmesi ne işe yarar?",
+      "body": "Emniyet Teşkilatında çalışan personelin işteki performansını değerlendirme amiri, performans değerlendirme formuna işler. Sonunda bir performans değerlendirme puanı çıkar. Formu amir doldurur, hesabı PBS (Personel Bilgi Sistemi) yapar. Akılda tutman gereken oyuncular şunlar: puanı veren değerlendirme amiri, amirleri belirleyen Kurul (Performans Değerlendirme Kurulu) ve tüm süreci taşıyan PBS. Puan 1,00 ile 5,00 arasında bir sayıdır. Bu ünitede onun nasıl oluştuğunu, kime itiraz edildiğini ve düşük çıkarsa neler olduğunu göreceksin.",
+      "articleRefs": [
+        "2",
+        "4",
+        "18"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Kapsam dışı kim, maddi hata ne?",
+      "body": "**Kapsam:** Yönetmelik, Emniyet Teşkilatındaki tüm hizmet sınıflarındaki personeli kapsar. Yalnızca **akademik kadrolu personel, sözleşmeli personel ve işçiler** hariçtir. Aday memurlar bu istisna listesinde yok; onları kapsam dışı sayan şık yanlıştır.\n\n**Maddi hata:** Tanımda açıkça sayılanlar şunlardır:\n- hesaplama hataları,\n- **değerlendirme amirlerinin yanlış belirlenmesi**,\n- yanlış form düzenlenmesi,\n- PBS üzerinden doldurulmayan formların PBS'ye yanlış kaydedilmesi.\n\nAmirin önyargısı, görüşmenin geç yapılması ya da puanın geç duyurulması bu tanımda sayılmaz.",
+      "articleRefs": [
+        "2",
+        "4"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Performans Değerlendirme Kurulu",
+      "body": "Kurul Genel Müdürlükte oluşturulur.\n\n**Başkan:** Genel Müdür veya görevlendireceği bir Genel Müdür Yardımcısı.\n\n**Üyeler:**\n- Teftiş Kurulu Başkanı\n- Birinci Hukuk Müşaviri\n- Polis Akademisi Başkanı\n- Personel Dairesi Başkanı\n- Strateji Geliştirme Daire Başkanı\n\n**Hazırlık ve raportörlük:** Personel Dairesi Başkanlığınca yürütülür.\n\n**Toplantı:** Kurul Başkanının çağrısıyla yılda en az bir kez yapılır.\n\n**Yeter sayı:** Kurul başkan dahil salt çoğunlukla toplanır, kararlar oy çokluğuyla alınır. Eşitlikte başkanın katıldığı tarafın oyu üstün sayılır.",
+      "articleRefs": [
+        "6"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Kurulda olmayanlar ve yeter sayı tuzağı",
+      "body": "Soru genellikle 'hangisi Kurulda yer almaz' diye gelir. Özel Güvenlik Denetleme Başkanlığı Yönetmelikte 'birim' sayılır, ama başkanı Kurulun üyesi değildir. Üye listesinde yalnız şunlar var: Teftiş Kurulu Başkanı, Birinci Hukuk Müşaviri, Polis Akademisi Başkanı, Personel Dairesi Başkanı ve Strateji Geliştirme Daire Başkanı.\n\nYeter sayıda da dikkatli ol. 'Üye tam sayısı', 'oy birliği' ya da 'başkan hariç' diyen şıklar yanlış. Doğrusu: **başkan dahil salt çoğunlukla toplanır, oy çokluğuyla karar alır.** Eşitlikte teklif reddedilmiş sayılmaz; başkanın katıldığı taraf üstün sayılır.",
+      "articleRefs": [
+        "4",
+        "6"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Değerlendirme amirleri nasıl belirlenir?",
+      "body": "- Kurul, her personel için **genel olarak iki** değerlendirme amiri belirler.\n- En alt basamak **büro amiri ve dengi amirler**dir. Amirler görev unvanına ve teşkilat yapısına göre kademe kademe belirlenir.\n- Görev yeri, personel sayısı, çalışma şartları, iş yükü, teşkilat yapısı gibi ölçütlere göre daha alt ve daha üst kademelerdeki hiyerarşik amirler de belirlenebilir.\n- Görev unvanı ve hiyerarşik bağlılık nedeniyle birden fazla amir belirlenemiyorsa Kurul **tek** değerlendirme amiri belirler.\n- Amirler **değerlendirme amirleri cetvelinde** gösterilir. Cetvel değerlendirme döneminden önce PBS'de yayınlanır ve **Bakan onayı** ile yürürlüğe girer.\n- Dönem içinde personelle **en fazla süre çalışan amir** değerlendirme amiri olarak belirlenir.\n- **Emniyet Genel Müdürü:** birinci değerlendirme amiri Bakan Yardımcısı, ikinci değerlendirme amiri Bakan.\n- Genel Müdürün birinci değerlendirme amiri olduğu personelin ikinci değerlendirme amiri Bakandır. Bakan bu yetkiyi ilgili Bakan Yardımcısına devredebilir.",
+      "articleRefs": [
+        "7"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Amir değerlendirme yapamazsa ve kıdem kuralları",
+      "body": "**Amir değerlendirme zamanında fiilen ayrıysa** (yurtdışı görev, ücretsiz izin, hastalık izni, tutukluluk, hükümlülük, görevden uzaklaştırılma, emeklilik, kurum dışı geçici görevlendirme vb.) şu sıra izlenir:\n1. Cetveldeki **diğer** değerlendirme amiri tek değerlendirme yapar.\n2. İki amir de yapamıyorsa personelin **en fazla süreyle çalıştığı birim amiri** değerlendirir.\n3. Tek değerlendirme amiri olan personeli en fazla süreyle çalıştığı birim amiri değerlendirir.\n4. O birim amiri de ayrıysa **halen çalıştığı birim amiri** değerlendirir.\n\nMaddi hata nedeniyle değerlendirme yeniden yapılıyorsa ve geçersiz değerlendirmeyi yapan amir fiilen ayrıysa aynı sıra uygulanır.\n\n**Kıdem:**\n- Birinci değerlendirme amiri ikinciden kıdemliyse ikinci amire değerlendirme yaptırılmaz.\n- Amir, değerlendireceği personelden kıdemsizse kıdemli olan sıralı ilk değerlendirme amiri değerlendirir.\n- Birim amiri unvanındaki personel, diğer değerlendirme amirlerinden kıdemsizse değerlendirme yapamaz.\n- 1. Sınıf Emniyet Müdürleri arasında kıdem sıralamasına bakılmaz.",
+      "articleRefs": [
+        "7"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Amir yakın akrabaysa",
+      "body": "Değerlendirme amiriyle personel arasında şu ilişkilerden biri varsa o amir **atlanır**:\n- evlilik bağı (sonradan kalksa bile),\n- ikinci dereceye kadar kan hısımlığı,\n- evlat edinme ilişkisi.\n\nBu durumda değerlendirmeyi cetveldeki **diğer** değerlendirme amiri yapar. Örneğin birinci amir personelin kardeşiyse kardeş amir atlanır, işi cetveldeki diğer amir görür.\n\nŞıklarda 'halen çalıştığı birim amiri' ya da 'en fazla süreyle çalıştığı birim amiri' görürsen dur. Birim amirine yalnızca **birinci ve ikinci amirin ikisi de** bu durumdaysa gidilir; o zaman da en fazla süreyle çalıştığı birim amiri değerlendirir. Personel Dairesi Başkanlığı ya da Kurul bu noktada devreye girmez.",
+      "articleRefs": [
+        "7"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Değerlendirme zamanı",
+      "body": "- **Dönem:** Aday memurlar hariç, 1 Ocak–31 Aralık.\n- **Değerlendirme:** Yılda bir kez, her yıl 1 Ocak–31 Ocak arasında yapılır. Amirler bunu PBS üzerinden yapmak zorundadır.\n- **Aday memurlar:** Değerlendirme, dönem bitiş tarihini takip eden ayın yedinci gününe kadar yapılır.\n- **Zamanında yapılmasından sorumlu olanlar:**\n  - Kendisine bağlı personel için ikinci değerlendirme amiri; o yoksa birinci değerlendirme amiri.\n  - Birimdeki tüm personel için personel işlerinden sorumlu şube müdürü/büro amiri.\n- Bu sürelerde hukuken kabul edilebilir mazereti olmadan değerlendirme yapmayanlara 7068 sayılı Kanun hükümleri uygulanır.",
+      "articleRefs": [
+        "8"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Performans gözlem ve takip formu",
+      "body": "**Niteliği:**\n- Personelin performansını yıl boyu izlemeye yarar.\n- Kayıt giren amirin kanaat ve algısına dayalı mütalaasını içerir.\n- Esas değerlendirmeye **hazırlayıcı** niteliktedir.\n- **Sadece değerlendirme amirleri görür** ve form **bilgi edinme hakkı kapsamı dışındadır.**\n- Kayıtlar başka işlemlerde kullanılamaz.\n\n**Kayıt:** Tarih, konu ve mütalaa PBS'deki forma girilir. Süre, olay veya davranıştan itibaren **bir ay**dır; aralık ayı gözlemleri **31 Aralık**'a kadar girilir.\n\n**Kim girer:** Değerlendirme amirleri ve personelin diğer sıralı amirleri. Ek görevlerde birlikte çalışılan amirler de müşterek göreve ilişkin gözlemlerini girebilir.\n\n**Diğer:**\n- Bir dönemin kayıtları sonraki dönemlere aktarılamaz.\n- PBS yoksa ya da sisteme erişilemiyorsa form matbu olarak düzenlenir.",
+      "articleRefs": [
+        "10"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Düşük ölçek için olumsuz kayıt şart",
+      "body": "Amir 'ortalamanın çok altında' ya da 'ortalamanın altında, geliştirilmeye ihtiyacı var' ölçeğini seçecekse şu şart aranır: gözlem ve takip formunda ilgili performans alanlarının her birinde, en az bir ölçüt için bununla irtibatlı **en az bir olumsuz kayıt** bulunmalı. Kayıt da iş performansını etkileyecek olumsuz davranış içermeli.\n\n**İstisna:** **Birim amirleri ve Emniyet Teşkilatı dışından olan değerlendirme amirleri** için bu zorunluluk yok.\n\nFormun niteliğini de karıştırma. Puanı belirleyen form performans değerlendirme formudur; gözlem formu yalnız hazırlayıcıdır. 'Personele gösterilir', 'tebliğ edilip imzası alınır', 'bilgi edinme başvurusuna konu edilebilir' diyen şıklar yanlış.",
+      "articleRefs": [
+        "4",
+        "10"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Performans görüşmesi",
+      "body": "- Personelin **halen çalıştığı** ve değerlendirme amiri unvanındaki **sıralı ilk amiri** ile personel arasında yapılan bir iletişim sürecidir.\n- **Yılda en az bir kez** yapılır. İlk görüşme beraber çalışılan **ilk üç ay içinde** yapılmalıdır.\n- Engel varsa görüşme, fiili durumun ortadan kalkmasını takip eden **ilk ay içinde** yapılır.\n- Görüşülen konular: personelden ne beklendiği, kendini nasıl geliştireceği, iş performansını etkileyen hususlar, verim ve motivasyon.\n- Amirin rolü **yargılayıcı değil, yol gösterici ve rehberlik edici**dir.\n- Zamanında yapılmasından ikinci değerlendirme amiri (o yoksa birinci) sorumludur. Birimin tamamı için sorumlu, personel işlerinden sorumlu şube müdürü/büro amiridir.\n- Görüşmenin tarihi ve yeri, görüşmeyi yapan amirce PBS'ye kaydedilir.\n- Görüşme yapılmayacak ya da yapılamayacak durumları Kurul ilke kararlarıyla belirler.",
+      "articleRefs": [
+        "11"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Değerlendirme süreci: kim neyi işaretler?",
+      "body": "1. Amir önce genel esaslara uygun değerlendirme yapacağına ilişkin beyanı onaylar, sonra değerlendirmeye geçer.\n2. **Birinci değerlendirme amiri** formdaki ölçütleri uygun ölçeği işaretleyerek değerlendirir ve onaylar.\n3. **İkinci değerlendirme amiri** varsa **sadece birinci amirin değerlendirmesine katılmadığı ölçütleri** değerlendirir. Diğer ölçütler birinci amirinkiyle aynı hesaplanır. Bitince o da onaylar.\n4. **Birim amirleri** değerlendirme zamanı içinde, gerekli görürlerse, değerlendirmek istedikleri ölçütleri işaretler ve onaylar.",
+      "articleRefs": [
+        "17"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Puan nasıl hesaplanır?",
+      "body": "- **Amirin ölçüt puanı** = seçtiği ölçek × ölçütün ağırlık katsayısı.\n- İkinci amirin işaretlemediği ölçütlerde onun puanı birinci amirle aynıdır.\n- Birim amirinin farklı olarak seçtiği ölçütlerde onun puanı da aynı yöntemle bulunur.\n- **Ölçüt puanı** = o ölçüt için değerlendirme yapan amirlerin puanlarının **aritmetik ortalaması**.\n- **Alan puanı** = alandaki ölçüt puanlarının **toplamı**.\n- **Performans değerlendirme puanı** = alan puanlarının **aritmetik ortalaması**. Hesap PBS üzerinden yapılır.\n- Ağırlık katsayıları her alan için toplamda 1 olacak şekilde dağıtılır.\n- Puan 1,00 ile 5,00 arasındadır (bu puanlar dahil). Virgülden sonra 2 basamak kullanılır; varsa üçüncü ve sonraki basamaklar ikinci basamağı bir artırarak **yukarı** yuvarlanır.",
+      "articleRefs": [
+        "18"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Toplam mı ortalama mı, 4 puan hangisi?",
+      "body": "En çok karıştırılan ikili: **alan puanı toplamdır, performans değerlendirme puanı ortalamadır.** Tersini söyleyen şık yanlış. En yüksek ve en düşük puanı atmak ya da katsayıyla yeniden çarpmak gibi bir işlem de yok.\n\nÖlçek sorularında 'çok' kelimesine bak:\n- **4 puan 'ortalamanın üzerinde'**,\n- 5 puan 'ortalamanın çok üzerinde',\n- 3 puan 'ortalama düzeyde'.\n\nDerece sorusunda 3,00–3,99 aralığındaki her puan **İyi**dir; 'Üstün' diye bir derece yoktur.\n\nİkinci amir de formun tamamını yeniden değerlendirmez, puanı topluca onaylayıp reddetmez; sadece katılmadığı ölçütleri işaretler.",
+      "articleRefs": [
+        "13",
+        "17",
+        "18"
+      ]
+    },
+    {
+      "type": "numbers",
+      "title": "Ölçek ve puan dereceleri",
+      "rows": [
+        {
+          "label": "Gözlenen performans ortalamanın çok altında",
+          "value": "1 puan",
+          "refs": [
+            "13"
+          ]
+        },
+        {
+          "label": "Gözlenen performans ortalamanın altında, geliştirilmeye ihtiyacı var",
+          "value": "2 puan",
+          "refs": [
+            "13"
+          ]
+        },
+        {
+          "label": "Gözlenen performans ortalama düzeyde",
+          "value": "3 puan",
+          "refs": [
+            "13"
+          ]
+        },
+        {
+          "label": "Gözlenen performans ortalamanın üzerinde",
+          "value": "4 puan",
+          "refs": [
+            "13"
+          ]
+        },
+        {
+          "label": "Gözlenen performans ortalamanın çok üzerinde",
+          "value": "5 puan",
+          "refs": [
+            "13"
+          ]
+        },
+        {
+          "label": "Yetersiz",
+          "value": "1,00–1,99",
+          "refs": [
+            "18"
+          ]
+        },
+        {
+          "label": "Yeterli ama kendisini geliştirmesi gerekir",
+          "value": "2,00–2,99",
+          "refs": [
+            "18"
+          ]
+        },
+        {
+          "label": "İyi",
+          "value": "3,00–3,99",
+          "refs": [
+            "18"
+          ]
+        },
+        {
+          "label": "Çok iyi",
+          "value": "4,00–5,00",
+          "refs": [
+            "18"
+          ]
+        },
+        {
+          "label": "Bir alandaki ağırlık katsayıları toplamı",
+          "value": "1",
+          "refs": [
+            "18"
+          ]
+        },
+        {
+          "label": "Virgülden sonra kullanılan basamak",
+          "value": "2",
+          "refs": [
+            "18"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "13",
+        "18"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Sonuçlara itiraz",
+      "body": "- **Süre ve yer:** 20 Şubat'a kadar, birimin personel işlerinden sorumlu şube müdürlüğüne/büro amirliğine itiraz edilir.\n- **İlk inceleme maddi hata yönüyle** yapılır. Hata varsa düzeltmeyi Personel Dairesi Başkanlığı yürütür.\n- **Maddi hata yoksa itirazı değerlendiren:**\n  - Kural olarak personelin halen çalıştığı birim amiri.\n  - İlçe emniyet müdürlüğü/amirliği personeli için halen çalıştığı İl Emniyet Müdürü.\n  - Puanı ilçe emniyet müdürü/amiri dışındaki bir birim amiri vermişse personelin halen çalıştığı birim amirinin birinci değerlendirme amiri. Halen çalıştığı birim amiri İlçe Emniyet Müdürü/Amiri ise ikinci değerlendirme amiri.\n  - Merci Genel Müdürden üstse Genel Müdür karar verir.\n- İtiraz mercii yeni puan belirleyebilir. Yeni puan itiraz edilen puanın yerine geçer ve ondan **düşük olamaz**.\n- Şu puanlar **kesindir**: itiraz edilmeyen puan, ret hâlinde mevcut puan, yeni değerlendirmede yeni puan.\n- Tüm işlemler **1 Mart**'a kadar sonuçlandırılıp personele bildirilir.\n- Süresinde değerlendirilemeyen personel, bildirimden itibaren **yedi gün** içinde itiraz edebilir.",
+      "articleRefs": [
+        "20"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "İlçedeki memur kime itiraz eder?",
+      "body": "İlçe emniyet müdürlüğünde çalışan memurun itirazında maddi hata çıkmazsa itirazı **İlçe Emniyet Müdürü değil, halen çalıştığı İl Emniyet Müdürü** değerlendirir. Bu durumda Kurul, Personel Dairesi Başkanı ya da Genel Müdür şık olarak gelirse ele.\n\nTarihleri de birbirine karıştırma:\n- **20 Şubat** itiraz için son gündür.\n- **1 Mart** itirazların sonuçlanıp bildirileceği son gündür.\n- Yedi gün yalnız süresinde değerlendirilemeyen personel içindir.\n\nİtiraz Personel Dairesi Başkanlığına ya da birinci değerlendirme amirine yapılmaz. Doğru yer, birimin personel işlerinden sorumlu şube müdürlüğü/büro amirliğidir.",
+      "articleRefs": [
+        "20"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Performansı yetersiz olanlar",
+      "body": "Yetersiz puan alan personel **yazılı olarak uyarılır**; uygulamayı Personel Dairesi Başkanlığı belirler. Sonrası kademeli ilerler:\n1. **Bir yıl yetersiz:** Görev yeri, birimi içinde birinci değerlendirme amiri değişecek şekilde değiştirilir.\n2. **Sonraki bir yıl da yetersiz:** Hizmet içi eğitime tabi tutulur.\n3. **Başka bir birime atananlar:** eğitim sonu sınavında başarısız olanlar ile eğitimde başarılı olup **ilk bir yıllık değerlendirmede yine yetersiz** kalanlar.\n4. **Üç yıl üst üste yetersiz:** Rehberlik ve Psikolojik Danışma Büro Amirliğine sevk edilir. Uzman değerlendirmesine göre danışma sürecine alınabilir ya da sağlık kuruluşlarına sevki önerilebilir.",
+      "articleRefs": [
+        "21"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Üç yıl başka, on yıl başka",
+      "body": "**Üç yıl üst üste yetersiz** → Rehberlik ve Psikolojik Danışma Büro Amirliğine sevk. Yer değişikliği ilk yetersiz yılın, hizmet içi eğitim ise sonraki yetersiz yılın sonucudur. Bunları üç yılın karşılığı gibi sunan şıklara kanma.\n\n**On yıl üst üste çok iyi** → Üstün Performans Belgesi. Ama yalnız puan yetmez: en son çok iyi puanı aldığı dönemde **fiilen çalıştığı birimin amirince teklif** edilmesi de gerekir. Belgeyi **Genel Müdürlük** verir. 'Beş yıl', 'Kurul teklifi', 'Bakan onayı' ya da 'iyi puan' içeren şıklar yanlış.",
+      "articleRefs": [
+        "21",
+        "23"
+      ],
+      "counterNumbers": [
+        5
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Aday memurların değerlendirilmesi",
+      "body": "- Değerlendirme, göreve başlamayı müteakip **altı aylık dönemler** hâlinde yapılır. **İki** puanın **aritmetik ortalaması** performans değerlendirme puanıdır.\n- Yetersiz puan alan aday memurun adaylığı **bir yıl uzatılabilir**. Adaylığı uzatılanın görev yeri, birimi içinde birinci değerlendirme amiri değişecek şekilde değiştirilir ve eğitime tabi tutulur.\n- Adaylığı uzatılanlar için:\n  - ilk altı ay için bir değerlendirme yapılır,\n  - ikinci değerlendirme **beş ay** bitiminde yapılır,\n  - adaylığın ikinci yılı bitimine **bir ay kala** iki puanın ortalamasıyla yılsonu puanı belirlenir.\n- Hakkında uzatma hükmü (ikinci fıkra) uygulanmayanlar ile ikinci yılda da yetersiz alanlar **asli memurluğa atanmaz**. Bunlara 657 sayılı Devlet Memurları Kanununun 56. maddesi uygulanır.",
+      "articleRefs": [
+        "24"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Form doldurulmayanlar ve geçersiz puan",
+      "body": "**Form doldurulmaz:** Bir değerlendirme döneminde ücretsiz izin, tutukluluk, hükümlülük, görevden uzaklaştırılma ve benzeri nedenlerle **hiçbir değerlendirme amiri yanında fiilen çalışmamış** personel için, çalışmadığı yıl için form doldurulmaz. Bunlardan kanunla lehte düzenleme bulunanlara 26. madde hükümleri uygulanır.\n\n**Puan geçersiz sayılırsa:**\n- Varsa geçmiş dönemlerin **son üç** puanının ortalaması esas alınır.\n- Üç puan yoksa var olan puan/puanların ortalaması esas alınır.\n- Hiç puan yoksa halen çalıştığı birim amiri yeni form doldurur.\n- Birim amirinin verdiği puan geçersizse yeni formu birim amirinin birinci değerlendirme amiri doldurur.\n\n**Dikkat:** Tüm dönem görevden uzaklaştırılan memur için 'son üç puanın ortalaması', 'yetersiz puan' ya da 'ikinci amirin değerlendirmesi' yolu yoktur. Çalışmadığı yıl için form doldurulmaz.",
+      "articleRefs": [
+        "25"
+      ]
+    },
+    {
+      "type": "numbers",
+      "title": "Tarihler, süreler, sayılar",
+      "rows": [
+        {
+          "label": "Kurul toplantısı",
+          "value": "Yılda en az bir kez",
+          "refs": [
+            "6"
+          ]
+        },
+        {
+          "label": "Yıllık değerlendirme dönemi",
+          "value": "1 Ocak–31 Aralık",
+          "refs": [
+            "8"
+          ]
+        },
+        {
+          "label": "Yıllık değerlendirmenin yapılacağı süre",
+          "value": "1 Ocak–31 Ocak",
+          "refs": [
+            "8"
+          ]
+        },
+        {
+          "label": "Aday memur değerlendirmesi",
+          "value": "Dönem bitişini takip eden ayın yedinci gününe kadar",
+          "refs": [
+            "8"
+          ]
+        },
+        {
+          "label": "Gözlem formuna kayıt",
+          "value": "Olaydan itibaren bir ay; aralık gözlemleri 31 Aralık'a kadar",
+          "refs": [
+            "10"
+          ]
+        },
+        {
+          "label": "İlk performans görüşmesi",
+          "value": "Beraber çalışılan ilk üç ay içinde",
+          "refs": [
+            "11"
+          ]
+        },
+        {
+          "label": "Performans görüşmesi sıklığı",
+          "value": "Yılda en az bir kez",
+          "refs": [
+            "11"
+          ]
+        },
+        {
+          "label": "Engel kalkınca görüşme",
+          "value": "Takip eden ilk ay içinde",
+          "refs": [
+            "11"
+          ]
+        },
+        {
+          "label": "İtiraz için son gün",
+          "value": "20 Şubat",
+          "refs": [
+            "20"
+          ]
+        },
+        {
+          "label": "İtirazların sonuçlandırılması",
+          "value": "1 Mart",
+          "refs": [
+            "20"
+          ]
+        },
+        {
+          "label": "Süresinde değerlendirilemeyenin itirazı",
+          "value": "Bildirimden itibaren yedi gün",
+          "refs": [
+            "20"
+          ]
+        },
+        {
+          "label": "Rehberlik ve Psikolojik Danışma sevki",
+          "value": "Üç yıl üst üste yetersiz",
+          "refs": [
+            "21"
+          ]
+        },
+        {
+          "label": "Üstün Performans Belgesi",
+          "value": "On yıl üst üste çok iyi + birim amiri teklifi",
+          "refs": [
+            "23"
+          ]
+        },
+        {
+          "label": "Aday memur değerlendirme dönemi",
+          "value": "Altı aylık dönemler",
+          "refs": [
+            "24"
+          ]
+        },
+        {
+          "label": "Adaylığın uzatılması",
+          "value": "Bir yıl",
+          "refs": [
+            "24"
+          ]
+        },
+        {
+          "label": "Uzatılanların ikinci değerlendirmesi",
+          "value": "Beş ay bitiminde",
+          "refs": [
+            "24"
+          ]
+        },
+        {
+          "label": "Geçersiz puan yerine",
+          "value": "Son üç puanın ortalaması",
+          "refs": [
+            "25"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "6",
+        "8",
+        "10",
+        "11",
+        "20",
+        "21",
+        "23",
+        "24",
+        "25"
+      ]
+    },
+    {
+      "type": "exam_stats",
+      "title": "Sınav der ki",
+      "rows": [
+        {
+          "label": "Bu ünitenin maddelerinden yayındaki soru",
+          "value": "20",
+          "refs": [
+            "2",
+            "4",
+            "6",
+            "7",
+            "8",
+            "10",
+            "11",
+            "13",
+            "17",
+            "18",
+            "20",
+            "21",
+            "23",
+            "24",
+            "25"
+          ]
+        },
+        {
+          "label": "md 7 — Değerlendirme amirleri",
+          "value": "3 soru",
+          "refs": [
+            "7"
+          ]
+        },
+        {
+          "label": "md 6 — Performans Değerlendirme Kurulu",
+          "value": "2 soru",
+          "refs": [
+            "6"
+          ]
+        },
+        {
+          "label": "md 18 — Performans değerlendirme puanı",
+          "value": "2 soru",
+          "refs": [
+            "18"
+          ]
+        },
+        {
+          "label": "md 20 — Sonuçlara itiraz",
+          "value": "2 soru",
+          "refs": [
+            "20"
+          ]
+        },
+        {
+          "label": "md 2 — Kapsam",
+          "value": "1 soru",
+          "refs": [
+            "2"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "2",
+        "4",
+        "6",
+        "7",
+        "8",
+        "10",
+        "11",
+        "13",
+        "17",
+        "18",
+        "20",
+        "21",
+        "23",
+        "24",
+        "25"
+      ],
+      "generated": true
+    },
+    {
+      "type": "bridge",
+      "title": "Bu üniteden soru çöz",
+      "articleRefs": [
+        "2",
+        "4",
+        "6",
+        "7",
+        "8",
+        "10",
+        "11",
+        "13",
+        "17",
+        "18",
+        "20",
+        "21",
+        "23",
+        "24",
+        "25"
+      ],
+      "generated": true,
+      "rows": [
+        {
+          "label": "Madde kapsamlı seans",
+          "value": "md 2, 4, 6–8, 10, 11, 13, 17, 18, 20, 21, 23–25, 10 soru",
+          "refs": [
+            "2",
+            "4",
+            "6",
+            "7",
+            "8",
+            "10",
+            "11",
+            "13",
+            "17",
+            "18",
+            "20",
+            "21",
+            "23",
+            "24",
+            "25"
+          ]
+        }
+      ]
+    }
+  ]
+}

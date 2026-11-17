@@ -1,0 +1,465 @@
+{
+  "unit": {
+    "slug": "mbk-mal-bildirimi-ve-yaptirimlar",
+    "legislationSlug": "3628-sayili-mal-bildiriminde-bulunulmasi-kanunu",
+    "topicId": "726855b4-e896-4e23-b5f0-32975a8f6684",
+    "title": "Mal bildirimi ve yaptırımlar",
+    "subtitle": "Kimler bildirir, ne zaman ve kime verilir; haksız mal edinmenin cezası ve ihbar usulü",
+    "articleFrom": "2",
+    "articleTo": "22",
+    "readingMinutes": 12,
+    "sourceLabel": "AI özeti — 3628 Sayılı Mal Bildiriminde Bulunulması Kanunu, md 2, 4, 6–8, 13, 15, 18, 22",
+    "articleNos": [
+      "2",
+      "4",
+      "6",
+      "7",
+      "8",
+      "13",
+      "15",
+      "18",
+      "22"
+    ],
+    "generatedBy": "claude-opus-5-5 (ozet-uret.ts)",
+    "sortOrder": 1
+  },
+  "blocks": [
+    {
+      "type": "concept",
+      "title": "Mal bildirimi kimin işi?",
+      "body": "Mal bildirimi yalnız memurlara özgü sanma. Seçimle iş başına gelen kamu görevlileri, Cumhurbaşkanı yardımcıları ve bakanlar, noterler ve kamu kurumlarında aylık, ücret ve ödenek alarak kamu hizmeti gören memurlarla işçi niteliği taşımayan diğer kamu görevlileri bu yükümlülüğün içinde. Liste kamunun dışına da uzanır: Türk Hava Kurumunun genel yönetim ve merkez denetleme kurulu üyeleri, Türkiye Kızılay Derneğinin merkez kurullarında görev alanlar, siyasi parti genel başkanları, vakıfların idare organlarında görev alanlar, kooperatiflerin ve birliklerinin başkanları, yeminli mali müşavirler, kamu yararına sayılan dernek yönetici ve deneticileri, gazete sahipleri, başyazarlar ve fıkra yazarları da bildirim verir. Özel kanunlarına göre bildirim vermek zorunda olanlar da bu Kanun hükümlerine tabidir.",
+      "articleRefs": [
+        "2"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Seçimle gelen herkes bildirim vermez",
+      "body": "(a) bendindeki parantezi atlama: muhtarlar ve ihtiyar heyeti üyeleri hariç. Soru \"hangisinin mal bildiriminde bulunması zorunlu değildir?\" diye sorduğunda noter ve gazete sahibi gerçek kişi listede yer alır. Muhtar ise seçimle gelse bile kapsam dışında kalır.",
+      "articleRefs": [
+        "2"
+      ]
+    },
+    {
+      "type": "concept",
+      "title": "Haksız mal edinme ne demek?",
+      "body": "Kanunun gözünde haksız mal edinme şu artışlardır: kanuna veya genel ahlaka uygun olarak sağlandığı ispat edilmeyen mallar ya da ilgilinin sosyal yaşantısı bakımından geliriyle uygun olduğu kabul edilemeyecek harcamalar şeklinde ortaya çıkan artışlar. Kanun yalnız malın kendisine bakmaz. Gelirle uyuşmayan harcama da bu tanıma girer.",
+      "articleRefs": [
+        "4"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Gelire uymayan harcama: hangi başlık?",
+      "body": "\"Sosyal yaşantısı bakımından geliriyle uygun olduğu kabul edilemeyecek harcamalar şeklinde ortaya çıkan artışlar\" ifadesini gördüğünde rüşvet, zimmet, hediye alma ya da yolsuzluk şıklarına kayma. Kanun bu tanımı doğrudan haksız mal edinme olarak koyar.",
+      "articleRefs": [
+        "4"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Bildirimin zamanı",
+      "body": "**Mal bildirimi şu durumlarda verilmek zorundadır:**\n- **Bu Kanun kapsamındaki göreve atanmada:** göreve giriş için gerekli belgelerle.\n- **Cumhurbaşkanı yardımcısı veya bakan olarak atanmada:** atamayı izleyen bir ay içinde.\n- **Seçimle gelinen görevlerde:** seçimin kesinleşmesi tarihini izleyen iki ay içinde.\n- **Mal varlığında önemli değişiklik olduğunda:** bir ay içinde.\n- **Yönetim ve denetim kurulu üyelikleri ile komisyon üyeliklerine seçim ve atamada:** göreve başlama tarihini izleyen bir ay içinde.\n- **Görevin sona ermesinde:** ayrılma tarihini izleyen bir ay içinde.\n- **Gazete sahibi gerçek kişiler ve gazete sahibi şirketlerin yönetim ve denetim kurulu üyeleri:** faaliyete geçme tarihini izleyen bir ay içinde. **Sorumlu müdürler, başyazarlar ve fıkra yazarları:** işe veya görevlerine başlama tarihini izleyen bir ay içinde.\n\n**Şart:** (a) bendinde yazılı bildirim verilmedikçe göreve atama yapılamaz.",
+      "articleRefs": [
+        "6"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "İki ay yalnız seçimde",
+      "body": "Süreleri ezberlemenin kısa yolu şu: bu maddede iki ay yalnız seçimle gelinen görevlerde var ve seçimin kesinleşmesi tarihinden itibaren işler. Bakan ataması, mal varlığında önemli değişiklik, kurul ve komisyon üyeliği, görevden ayrılma ve gazete görevlerinde süre hep bir ay. Şıklarda bakan için iki ay, kurul üyeliği ya da başyazar için 3 ay, görevden ayrılma için 15 gün, mal değişikliği için 40 ya da 45 gün görürsen o şıkkı ele.",
+      "articleRefs": [
+        "6"
+      ],
+      "counterNumbers": [
+        3,
+        15,
+        40,
+        45
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Bildirimin yenilenmesi",
+      "body": "**Kural:** Bu Kanun kapsamındaki görevlere devam edenler, sonu (0) ve (5) ile biten yıllarda bildirimlerini yeniler.\n\n**Süre:** en geç şubat ayı sonuna kadar.\n\n**Sonrası:** Yeni bildirimler yetkili merci tarafından daha önceki bildirimlerle karşılaştırılır.",
+      "articleRefs": [
+        "7"
+      ]
+    },
+    {
+      "type": "numbers",
+      "title": "Bildirim süreleri",
+      "rows": [
+        {
+          "label": "Göreve atanma",
+          "value": "Göreve giriş için gerekli belgelerle",
+          "refs": [
+            "6"
+          ]
+        },
+        {
+          "label": "Cumhurbaşkanı yardımcısı veya bakan ataması",
+          "value": "Atamayı izleyen bir ay içinde",
+          "refs": [
+            "6"
+          ]
+        },
+        {
+          "label": "Seçimle gelinen görev",
+          "value": "Seçimin kesinleşmesi tarihini izleyen iki ay içinde",
+          "refs": [
+            "6"
+          ]
+        },
+        {
+          "label": "Mal varlığında önemli değişiklik",
+          "value": "Bir ay içinde",
+          "refs": [
+            "6"
+          ]
+        },
+        {
+          "label": "Yönetim/denetim kurulu ve komisyon üyeliği",
+          "value": "Göreve başlama tarihini izleyen bir ay içinde",
+          "refs": [
+            "6"
+          ]
+        },
+        {
+          "label": "Görevin sona ermesi",
+          "value": "Ayrılma tarihini izleyen bir ay içinde",
+          "refs": [
+            "6"
+          ]
+        },
+        {
+          "label": "Gazete sahipleri ve gazete görevlileri",
+          "value": "Faaliyete geçme veya göreve başlama tarihini izleyen bir ay içinde",
+          "refs": [
+            "6"
+          ]
+        },
+        {
+          "label": "Yenileme yılları",
+          "value": "Sonu (0) ve (5) ile biten yıllar",
+          "refs": [
+            "7"
+          ]
+        },
+        {
+          "label": "Yenileme son tarihi",
+          "value": "En geç şubat ayı sonu",
+          "refs": [
+            "7"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "6",
+        "7"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Bildirim kime verilir? (kamu görevlileri)",
+      "body": "- **TBMM Üyeleri** → TBMM Başkanlığı\n- **Cumhurbaşkanı yardımcıları ve bakanlar** → Cumhurbaşkanlığı\n- **Kamu kurum ve kuruluşlarında görevli personel** → özlük işleriyle ilgili sicil ve belge raporlarının bulunduğu makam veya merci\n- **Kurum, teşebbüs, teşekkül ve kuruluşların Genel Müdürleri, yönetim ve denetim kurulu** → ilgili Bakanlık\n- **Yüksek mahkemelerin daire başkan ve üyeleri** → mahkemenin başkanı\n- **Noterler** → Adalet Bakanlığı\n- **Diğer kurum ve kuruluşların memur ve hizmetlileri** → atamaya yetkili makam veya merci\n- **Türk Hava Kurumu ile Türkiye Kızılay Derneğinde görev alanlar** → kurum ve dernek genel başkanlığı",
+      "articleRefs": [
+        "8"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Bildirim kime verilir? (diğerleri)",
+      "body": "- **Görevlerinden ayrılanlar** → görevdeyken bildirimlerini vermeleri gereken makam veya merci\n- **Siyasi parti genel başkanları** → Yargıtay Cumhuriyet Başsavcılığı\n- **Kooperatifler ve birliklerin başkanları, yönetim kurulu üyeleri ve genel müdürleri** → denetimlerinin yapıldığı kuruluşlar\n- **Yeminli mali müşavirler** → Maliye ve Gümrük Bakanlığı\n- **Türk Hava Kurumu, Türkiye Kızılay Derneği ve kamu yararına sayılan derneklerin genel yönetim ve merkez denetleme kurulu üyeleri** → İçişleri Bakanlığı; **şube başkanları** → bulundukları İl Valilikleri\n- **İl Genel Meclisi Üyeleri** → Valiler\n- **Belediye Meclis Üyeleri** → Belediye Başkanları\n- **Belediye Başkanları** → İçişleri Bakanlığı\n- **Mal bildirimi verecek son merciler** → kendi kuruluşlarının özlük işleri ile ilgili makam veya merci\n- **Gazete sahipleri, gazete şirketlerinin yönetim ve denetim kurulu üyeleri, sorumlu müdürler, başyazarlar ve fıkra yazarları** → bulundukları yer en büyük mülki amirliği\n- **Vakıfların idare organlarında görev alanlar** → Vakıflar Genel Müdürlüğü\n\n**Birden fazla görev:** Görevleri sebebiyle birden fazla bildirim vermesi gerekenler, asli görevlerinden dolayı bir tek mal bildiriminde bulunur.",
+      "articleRefs": [
+        "8"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Milletvekili ile bakanı karıştırma",
+      "body": "En sık kurulan tuzak, milletvekilinin ve bakanın merciini aynı sanmak. TBMM üyeleri TBMM Başkanlığına, Cumhurbaşkanı yardımcıları ve bakanlar ise Cumhurbaşkanlığına bildirim verir. \"Bakanlar için TBMM Başkanlığı\" ya da \"TBMM üyeleri için Cumhurbaşkanlığı\" diyen şık yanlıştır. Genel müdürler ilgili bakanlığa verir. Memurlar için \"harcama yetkilisi\" diye bir merci yoktur; kamu personeli, sicil ve belge raporlarının bulunduğu makama verir.",
+      "articleRefs": [
+        "8"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Vali mi, bakanlık mı, mahkeme başkanı mı?",
+      "body": "Yerel yönetimde zinciri doğru kur: il genel meclisi üyesi valiye, belediye meclis üyesi belediye başkanına, belediye başkanı İçişleri Bakanlığına verir. İl genel meclisi üyesini İçişleri Bakanlığına, belediye başkanını valiliğe bağlayan şıklar yanlıştır. Noterler Adalet Bakanlığına verir, Hazine ve Maliye Bakanlığına vermez. Yüksek mahkemelerin daire başkan ve üyeleri mahkemenin başkanına verir, Hâkimler ve Savcılar Kuruluna vermez. Gazete sahipleri de bir bakanlığa değil, bulundukları yer en büyük mülki amirliğine verir.",
+      "articleRefs": [
+        "8"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Haksız mal edinmenin cezası",
+      "body": "**Haksız mal edinme:** Kanunun daha ağır bir cezayı gerektirmediği takdirde **üç yıldan beş yıla kadar hapis** ve **beş milyon liradan on milyon liraya kadar ağır para cezası** verilir.\n\n**Haksız edinilen malı kaçırma veya gizleme:** Aynı ceza verilir.",
+      "articleRefs": [
+        "13"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Kamu hizmetlerinden yasaklanma",
+      "body": "**Ceza süresi kadar yasaklanma:** Kanunun 11 ve 12 nci madde hükümleri ile cezalandırılanlara uygulanır.\n\n**Müebbeten yasaklanma:** 13 üncü madde hükmüne göre cezalandırılanlara, yani haksız mal edinenlere ve haksız edinilen malı kaçıran veya gizleyenlere uygulanır.",
+      "articleRefs": [
+        "15",
+        "13"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Kaçırana daha hafif ceza yok",
+      "body": "Haksız edinilen malı kaçıran veya gizleyene, haksız mal edinene verilen ceza aynen verilir: üç yıldan beş yıla kadar hapis. Kaçırana veya gizleyene daha düşük bir hapis aralığı öngören şık yanlıştır. Yasaklamada da dikkatli ol: 11 ve 12. maddelere göre cezalandırılanlar ceza süresi kadar, 13. maddeye göre cezalandırılanlar müebbeten kamu hizmetlerinden yasaklanır.",
+      "articleRefs": [
+        "13",
+        "15"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Suçun ihbarı",
+      "body": "**Nereye?** Kanunun bir önceki maddesinde (17 nci madde) yazılı suçlara ilişkin ihbarlar doğrudan Cumhuriyet Başsavcılıklarına yapılır.\n\n**Tutanak:** İhbar üzerine derhal bir ihbar tutanağı düzenlenir ve bir örneği muhbire verilir. Acele ve gecikmesinde sakınca umulan hallerde tutanağın düzenlenmesi sonraya bırakılabilir.\n\n**Muhbirin kimliği:** Rızası olmadıkça açıklanmaz. İhbar asılsız çıkarsa, aleyhine takibat yapılanın istemi üzerine açıklanır.\n\n**Kurumlara bildirim:** İhbar veya takipsizlik kararı ve iddianame, Cumhuriyet başsavcılığınca ilgili kamu kurum veya kuruluşlarına bildirilir. Bu kurumlar yazılı başvuruda bulunursa başvuru tarihinde müdahil sıfatını kazanır.\n\n**Müfettiş ve muhakkikler:** Delil veya emare elde ederlerse işi yetkili ve görevli Cumhuriyet Başsavcılığına ihbar eder ve evrakı tevdi ederler. Başsavcılık, kendisine tevdi edilmese de gerekçe göstererek evrakı ait olduğu merciden isteyebilir.\n\n**Yayın yasağı:** İhbar konusu müsnet suç hakkında dava açılıncaya kadar bilgi vermek ve yayın yapmak yasaktır.",
+      "articleRefs": [
+        "18"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Muhbirin kimliği ve yayın yasağı",
+      "body": "Bu maddede şıkları bozan noktalar hep aynı. Muhbirin kimliğinde kural gizliliktir; ama ihbar asılsız çıkarsa kimlik, aleyhine takibat yapılanın istemi üzerine açıklanır. \"Asılsız çıksa bile açıklanamaz\" diyen şık yanlıştır. Yayın konusunda da durum net: dava açılıncaya kadar bilgi vermek ve yayın yapmak yasaktır. \"Yasak değildir\" diyen şık kuralı tersine çevirir. Tutanağın sonraya bırakılabilmesi ise yalnız acele ve gecikmesinde sakınca umulan hallerde mümkündür.",
+      "articleRefs": [
+        "18"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Yönetmeliği kim çıkarır?",
+      "body": "**Yönetmelikle düzenlenen konular:** mal bildiriminin şekli, düzenleniş biçimi, sayısı, neleri kapsayacağı, merciine nasıl ulaştırılacağı ve Kanunun uygulanması bakımından gerekli görülecek diğer konular.\n\n**Çıkaran:** Cumhurbaşkanı. İçişleri, Adalet ya da Hazine ve Maliye Bakanlığı değil.\n\n**Yayım:** Resmi Gazete.",
+      "articleRefs": [
+        "22"
+      ]
+    },
+    {
+      "type": "numbers",
+      "title": "Cezalar, yasaklar, süreler",
+      "rows": [
+        {
+          "label": "Haksız mal edinme — hapis",
+          "value": "Üç yıldan beş yıla kadar",
+          "refs": [
+            "13"
+          ]
+        },
+        {
+          "label": "Haksız mal edinme — ağır para cezası",
+          "value": "Beş milyon liradan on milyon liraya kadar",
+          "refs": [
+            "13"
+          ]
+        },
+        {
+          "label": "Malı kaçırma veya gizleme",
+          "value": "Haksız mal edinmeyle aynı ceza",
+          "refs": [
+            "13"
+          ]
+        },
+        {
+          "label": "11 ve 12. madde mahkûmiyeti — yasaklanma",
+          "value": "Ceza süresi kadar",
+          "refs": [
+            "15"
+          ]
+        },
+        {
+          "label": "13. madde mahkûmiyeti — yasaklanma",
+          "value": "Müebbeten",
+          "refs": [
+            "15"
+          ]
+        },
+        {
+          "label": "Bilgi verme ve yayın yasağı",
+          "value": "Dava açılıncaya kadar",
+          "refs": [
+            "18"
+          ]
+        },
+        {
+          "label": "İhbar tutanağı",
+          "value": "Derhal; acele hallerde sonraya bırakılabilir",
+          "refs": [
+            "18"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "13",
+        "15",
+        "18"
+      ]
+    },
+    {
+      "type": "compare",
+      "title": "Seçimle gelen ile bakan olarak atanan",
+      "rows": [
+        {
+          "aspect": "Kapsam",
+          "left": "Her tür seçimle iş başına gelen kamu görevlileri (muhtarlar ve ihtiyar heyeti üyeleri hariç)",
+          "right": "Cumhurbaşkanı yardımcıları ve bakanlar",
+          "refs": [
+            "2"
+          ]
+        },
+        {
+          "aspect": "Bildirim süresi",
+          "left": "Seçimin kesinleşmesi tarihini izleyen iki ay içinde",
+          "right": "Atamayı izleyen bir ay içinde",
+          "refs": [
+            "6"
+          ]
+        },
+        {
+          "aspect": "Merci",
+          "left": "TBMM üyeleri → TBMM Başkanlığı; il genel meclisi üyeleri → valiler; belediye meclis üyeleri → belediye başkanları; belediye başkanları → İçişleri Bakanlığı",
+          "right": "Cumhurbaşkanlığı",
+          "refs": [
+            "8"
+          ]
+        },
+        {
+          "aspect": "Görev sona erince",
+          "left": "Ayrılma tarihini izleyen bir ay içinde, görevdeyken bildirim verilen merciye",
+          "right": "Ayrılma tarihini izleyen bir ay içinde, görevdeyken bildirim verilen merciye",
+          "refs": [
+            "6",
+            "8"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "2",
+        "6",
+        "8"
+      ]
+    },
+    {
+      "type": "exam_stats",
+      "title": "Sınav der ki",
+      "rows": [
+        {
+          "label": "Bu ünitenin maddelerinden yayındaki soru",
+          "value": "20",
+          "refs": [
+            "2",
+            "4",
+            "6",
+            "7",
+            "8",
+            "13",
+            "15",
+            "18",
+            "22"
+          ]
+        },
+        {
+          "label": "md 8 — Bildirimlerin verileceği merciler",
+          "value": "7 soru",
+          "refs": [
+            "8"
+          ]
+        },
+        {
+          "label": "md 6 — Bildirimin zamanı",
+          "value": "4 soru",
+          "refs": [
+            "6"
+          ]
+        },
+        {
+          "label": "md 7 — Bildirimin yenilenmesi",
+          "value": "2 soru",
+          "refs": [
+            "7"
+          ]
+        },
+        {
+          "label": "md 18 — Suçun ihbarı",
+          "value": "2 soru",
+          "refs": [
+            "18"
+          ]
+        },
+        {
+          "label": "md 2 — Mal bildiriminde bulunacaklar",
+          "value": "1 soru",
+          "refs": [
+            "2"
+          ]
+        },
+        {
+          "label": "Resmî sınavlarda",
+          "value": "2024 PAEM 8. Dönem İlk Derece Amirlik Eğitimi Yazılı Sınavı (1)",
+          "refs": [
+            "2",
+            "4",
+            "6",
+            "7",
+            "8",
+            "13",
+            "15",
+            "18",
+            "22"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "2",
+        "4",
+        "6",
+        "7",
+        "8",
+        "13",
+        "15",
+        "18",
+        "22"
+      ],
+      "generated": true
+    },
+    {
+      "type": "bridge",
+      "title": "Bu üniteden soru çöz",
+      "articleRefs": [
+        "2",
+        "4",
+        "6",
+        "7",
+        "8",
+        "13",
+        "15",
+        "18",
+        "22"
+      ],
+      "generated": true,
+      "rows": [
+        {
+          "label": "Madde kapsamlı seans",
+          "value": "md 2, 4, 6–8, 13, 15, 18, 22, 10 soru",
+          "refs": [
+            "2",
+            "4",
+            "6",
+            "7",
+            "8",
+            "13",
+            "15",
+            "18",
+            "22"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,555 @@
+{
+  "unit": {
+    "slug": "dank-danistayin-gorevleri-ve-kurulusu",
+    "legislationSlug": "2575-danistay-kanunu",
+    "topicId": "be738fb3-fc30-4d1e-9306-c1cb2eb7d0c3",
+    "title": "Danıştayın görevleri ve kuruluşu",
+    "subtitle": "Meslek mensupları, seçimler, daireler, kurullar, vekâlet, ilk derece görevi ve çalışmaya ara verme",
+    "articleFrom": "3",
+    "articleTo": "87",
+    "readingMinutes": 12,
+    "sourceLabel": "AI özeti — 2575 Danıştay Kanunu, md 3, 10, 13, 15–18, 21, 22, 24, 40–42, 45, 48, 86, 87",
+    "articleNos": [
+      "3",
+      "10",
+      "13",
+      "15",
+      "16",
+      "17",
+      "18",
+      "21",
+      "22",
+      "24",
+      "40",
+      "41",
+      "42",
+      "45",
+      "48",
+      "86",
+      "87"
+    ],
+    "generatedBy": "claude-opus-5-5 (ozet-uret.ts)",
+    "sortOrder": 1
+  },
+  "blocks": [
+    {
+      "type": "concept",
+      "title": "Danıştay'ın meslek mensupları kimler?",
+      "body": "Danıştay'da \"meslek mensubu\" denince kanun yalnız şu makamları sayar: Danıştay Başkanı, Danıştay Başsavcısı, başkanvekilleri, daire başkanları ve üyeler. Listede tetkik hâkimi yok; bunu aklının bir köşesine yaz, çünkü ilerideki sorularda karşına çıkacak. Bu ünitede bu makamların nasıl seçildiğini, hangi kurulda yer aldığını ve kime vekâlet ettiğini göreceksin.",
+      "articleRefs": [
+        "3"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Başkan, Başsavcı, başkanvekili ve daire başkanı seçimi",
+      "body": "**Kim seçer:** Danıştay Genel Kurulu. Seçim **kendi üyeleri arasından** ve **üye tam sayısının salt çoğunluğu** ile yapılır.\n\n**Seçilebilme şartı (Danıştay üyeliği süresi):**\n- Danıştay Başkanı ve Başsavcı: **altı yıl**\n- Başkanvekili ve daire başkanı: **üç yıl**\n\n**Görev süresi:** hepsi için **dört yıl**. Süresi bitenler yeniden seçilebilir. Yeniden seçilemeyenler, seçime girmeyenler ve süresi dolmadan bu görevden çekilenler Danıştay üyeliğine devam eder.\n\n**Seçim zamanı:** görev süresinin biteceği tarihten **onbeş gün önce** yapılır. Görev başka sebeple boşalmışsa seçim, boşalma tarihinden itibaren **onbeş gün içinde** yapılır. Çalışmaya ara verme süresi bu hesaba katılmaz.\n\n**Aday olma:** seçim gününden önce Danıştay Başkanlığına yazıyla başvurulabilir. Toplantıda oylama başlamadan önce sözlü istekte bulunmak ya da teklif edilmek de mümkündür.\n\n**Oylama:** gizli oyla yapılır.\n- İlk üç oylamada sonuç alınamazsa seçim, üçüncü oylamada en çok oy alan iki aday arasında yapılır.\n- Dördüncü oylamada da bu çoğunluk sağlanamazsa seçim, yeniden aday gösterilerek tekrarlanır.\n- Bundan sonraki üç oylamada da sonuç alınamazsa dördüncü oylamada en çok oy alan seçilmiş sayılır.",
+      "articleRefs": [
+        "10"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Dört yıl görev, altı yıl şart: karıştırma",
+      "body": "Başsavcının **görev süresi dört yıldır**. Altı yıl ise Başsavcı seçilebilmek için gereken Danıştay üyeliği süresidir. Üç yıl da başkanvekili ve daire başkanı için aranan üyelik süresidir. Görev süresi sorulduğunda bu iki sayı şıklarda seni çeker; doğru cevap dört.\n\nBir başka soru kökü de \"Genel Kurul kimi seçmez?\" şeklindedir. Genel Kurul Başkanı, Başsavcıyı, başkanvekillerini ve daire başkanlarını seçer; ama bu seçimi **Danıştay üyeleri arasından** yapar. Danıştay üyelerinin kendisi md 10'daki seçilenler listesinde yer almaz.",
+      "articleRefs": [
+        "10"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Daireler ve heyetler",
+      "body": "**Daire sayısı:** dokuzu dava, biri idari daire olmak üzere toplam **on daire**.\n\n**Her dairede bulunanlar:**\n- bir başkan ve yeteri kadar üye,\n- yeteri kadar tetkik hâkimi,\n- yazı işleri müdürünün yönetiminde, yazı ve tebliğ işlerini yürüten bir kalem.\n\n**Heyet:** bir başkan ve dört üyenin katılmasıyla toplanır ve **salt çoğunlukla** karar verir.\n\n**Birden fazla heyet:** üye sayısı yeterliyse oluşturulabilir. Bu durumda diğer heyetlere, o heyetteki **en kıdemli üye** başkanlık eder.\n\n**Müzakereler:** **gizli** yapılır.",
+      "articleRefs": [
+        "13"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "On daire: dokuz dava, bir idari",
+      "body": "Daire sayısı sorusunda şıklar kalabalıktır. 11, 12 ya da 17 gibi toplamlar, birden çok idari daire veya on dava dairesi seçenek olarak karşına çıkar. Doğru formül tektir: **dokuz dava + bir idari = on**.\n\n\"Müzakereler alenidir\" cümlesi de yanlıştır; dairelerde müzakere **gizli** yapılır. Dairede birden fazla heyet kurulabileceği ise doğrudur; bunun şartı üye sayısının yeterli olmasıdır.",
+      "articleRefs": [
+        "13"
+      ],
+      "counterNumbers": [
+        11,
+        12,
+        17
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Danıştay Genel Kurulu",
+      "body": "**Oluşum:** Danıştay Başkanı, Başsavcı, başkanvekilleri, daire başkanları, üyeler ve **Genel Sekreter**.\n\n**Toplanma ve görüşme yeter sayısı:** Başkan ve üyeler tam sayısının **yarısından fazlası**.\n\n**Karar:** çoğunlukla verilir. Oylarda eşitlik olursa **Başkanın bulunduğu taraf** çoğunluğu sağlamış sayılır.\n\n**Saklı hüküm:** Genel Kurulun toplantı yeter sayısına ilişkin özel hükümler saklıdır.",
+      "articleRefs": [
+        "15"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Tetkik hâkimi iki listede yok",
+      "body": "Tetkik hâkimleri iki önemli listede yer almaz. Birincisi md 3'teki meslek mensupları, ikincisi md 15'teki Genel Kurul oluşumudur.\n\nGenel Kurul sorusunda dikkatli ol: **Genel Sekreter Genel Kurulda vardır**, tetkik hâkimi yoktur. Meslek mensupları sorusunda ise Başkan, Başsavcı, başkanvekilleri ve daire başkanları listededir; tetkik hâkimleri değildir.",
+      "articleRefs": [
+        "3",
+        "15"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "İdari İşler Kurulu",
+      "body": "**Oluşum:**\n- idari daire başkanı,\n- Başkanlık Kurulunca her takvim yılı başında **idari daireden seçilecek iki üye**,\n- **her dava dairesinin** başkan veya üyeleri arasından seçilecek **bir üye**.\n\n**Boşalma:** seçimle belirlenen üyeliklerde boşalma olursa Başkanlık Kurulu **otuz gün** içinde seçim yapar.\n\n**Başkanlık:** Danıştay Başkanı veya başkanvekillerinden biri.\n\n**Toplanma ve görüşme yeter sayısı:** **dokuz**.\n\n**Memurların yargılanması işleri:** incelenen kararı veren daire başkan ve üyeleri toplantıya katılamaz. Bu toplantılarda yeter sayı **yedi**dir.\n\n**Karar:** oyçokluğuyla verilir. Eşitlik hâlinde Başkanın bulunduğu taraf çoğunluğu sağlamış sayılır.\n\n**Yardımcılar:** Kurula yeteri kadar tetkik hâkimi ve memur verilir.\n\n> Tuzak: \"İdari daireden üç üye bulunur\" ifadesi yanlıştır. Metin idari daireden seçilecek **iki üye** der.",
+      "articleRefs": [
+        "16"
+      ],
+      "counterNumbers": [
+        3
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "İdari ve Vergi Dava Daireleri Kurulları",
+      "body": "**İdari Dava Daireleri Kurulu:** idari dava dairelerinin başkanları ile her idari dava dairesinden **iki asıl, iki yedek** üye.\n\n**Vergi Dava Daireleri Kurulu:** vergi dava dairelerinin başkanları ile her vergi dava dairesinden **üç asıl, üç yedek** üye.\n\n**Görevlendirme:** üyeleri **Başkanlık Kurulu**, **iki yıl** için görevlendirir.\n- Süre sonunda üyelerin yarısı iki yıl için yeniden görevlendirilir.\n- Diğer yarısı, daha önce kurullarda görevlendirilmemiş üyeler arasından yenilenir.\n- Asıl üye üst üste **en fazla iki dönem** görevlendirilebilir.\n\n**Yedek üye:** asıl üye görevini geçici olarak yapamazsa toplantıya yedek üye katılır. Yedek üye ilgili daireden, zorunlu hâllerde diğer dairelerden görevlendirilir.\n\n**Boşalma:** Başkanlık Kurulu **yedi gün** içinde, kalan süreyi tamamlamak üzere yeni üye görevlendirir.\n\n**Başkanlık:** Danıştay Başkanı veya vekillerinden biri; bunların yokluğunda daire başkanlarından en kıdemlisi.\n\n**Toplantı ve görüşme yeter sayısı:**\n- İdari Dava Daireleri Kurulu: **on beş**\n- Vergi Dava Daireleri Kurulu: **on bir**\n\n**Çift sayı:** hazır bulunanlar çift sayıda olursa en kıdemsiz üye kurula katılamaz.\n\n**Karar:** oyçokluğuyla verilir.\n\n**Kurulda bulunamayanlar:** dava dairelerinin ilk derece mahkemesi olarak verdiği kararların temyiz veya itiraz yoluyla incelenmesinde, o dairelerde karara katılmış olanlar kurulda bulunamaz. Aynı kural, iki dava dairesinin birlikte yaptığı toplantıda verilen kararların incelenmesinde de geçerlidir.",
+      "articleRefs": [
+        "17"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Başkanlık Kurulu mu, Başkanlar Kurulu mu?",
+      "body": "Bu iki kurulun adları birbirine çok benzer ama görevleri ayrıdır.\n\n**Başkanlık Kurulu:**\n- İdari İşler Kurulunun seçimle gelen üyelerini seçer.\n- İdari ve Vergi Dava Daireleri Kurullarına üyeleri görevlendirir.\n\n**Başkanlar Kurulu:**\n- Çalışmaya ara verme döneminde görev yapacak nöbetçi dairenin başkan ve üyelerini seçer.\n\nSınavda \"Vergi Dava Daireleri Kurulunun daire başkanları dışındaki üyelerini kim seçer?\" diye sorulursa cevap **Başkanlık Kurulu**dur. Genel Kurul da Danıştay Başkanı da bu görevi yapmaz.",
+      "articleRefs": [
+        "16",
+        "17",
+        "86"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "İçtihatları Birleştirme Kurulu",
+      "body": "**Oluşum:** Danıştay Başkanı, Başsavcı, başkanvekilleri ile **dava daireleri** başkanları ve üyeleri. İdari daire bu listede geçmez.\n\n**Toplanma ve görüşme yeter sayısı:** **en az otuzbir**. Hazır bulunanlar çift sayıda olursa en kıdemsiz üye Kurula katılmaz.\n\n**Esasa ilişkin kararlar:**\n- Birinci toplantıda **Kurul üye tamsayısının salt çoğunluğu** ile verilir.\n- Bu çoğunluk sağlanamazsa ikinci toplantıda **mevcudun salt çoğunluğu** ile verilir.\n\n**Diğer kararlar:** oyçokluğuyla verilir.\n\n**Yardımcılar:** Kurula yeteri kadar tetkik hâkimi ve memur verilir.\n\n> Tuzak: on beş, İdari Dava Daireleri Kurulunun yeter sayısıdır. İçtihatları Birleştirme Kurulunda en az otuzbir aranır.",
+      "articleRefs": [
+        "17",
+        "18"
+      ]
+    },
+    {
+      "type": "numbers",
+      "title": "Daireler ve kurullar: sayılar",
+      "rows": [
+        {
+          "label": "Danıştay daire sayısı",
+          "value": "10 (9 dava + 1 idari)",
+          "refs": [
+            "13"
+          ]
+        },
+        {
+          "label": "Daire heyeti",
+          "value": "1 başkan + 4 üye",
+          "refs": [
+            "13"
+          ]
+        },
+        {
+          "label": "İdari İşler Kurulu: idari daireden seçilen üye",
+          "value": "2",
+          "refs": [
+            "16"
+          ]
+        },
+        {
+          "label": "İdari İşler Kurulu: her dava dairesinden seçilen üye",
+          "value": "1",
+          "refs": [
+            "16"
+          ]
+        },
+        {
+          "label": "İdari İşler Kurulu: yeter sayı",
+          "value": "9",
+          "refs": [
+            "16"
+          ]
+        },
+        {
+          "label": "İdari İşler Kurulu: memurların yargılanması işlerinde yeter sayı",
+          "value": "7",
+          "refs": [
+            "16"
+          ]
+        },
+        {
+          "label": "İdari İşler Kurulu: boşalan üyelik için seçim",
+          "value": "30 gün içinde",
+          "refs": [
+            "16"
+          ]
+        },
+        {
+          "label": "İdari Dava Daireleri Kurulu: her daireden",
+          "value": "2 asıl + 2 yedek",
+          "refs": [
+            "17"
+          ]
+        },
+        {
+          "label": "Vergi Dava Daireleri Kurulu: her daireden",
+          "value": "3 asıl + 3 yedek",
+          "refs": [
+            "17"
+          ]
+        },
+        {
+          "label": "Dava daireleri kurulları: görevlendirme süresi",
+          "value": "2 yıl",
+          "refs": [
+            "17"
+          ]
+        },
+        {
+          "label": "Asıl üye: üst üste görevlendirme sınırı",
+          "value": "en fazla 2 dönem",
+          "refs": [
+            "17"
+          ]
+        },
+        {
+          "label": "Kurul üyeliği boşalınca yeni görevlendirme",
+          "value": "7 gün içinde",
+          "refs": [
+            "17"
+          ]
+        },
+        {
+          "label": "İdari Dava Daireleri Kurulu: yeter sayı",
+          "value": "15",
+          "refs": [
+            "17"
+          ]
+        },
+        {
+          "label": "Vergi Dava Daireleri Kurulu: yeter sayı",
+          "value": "11",
+          "refs": [
+            "17"
+          ]
+        },
+        {
+          "label": "İçtihatları Birleştirme Kurulu: yeter sayı",
+          "value": "en az 31",
+          "refs": [
+            "18"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "13",
+        "16",
+        "17",
+        "18"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Disiplin Kurulu",
+      "body": "**Seçen:** Genel Kurul, her takvim yılı başında.\n\n**Asıl üyeler:**\n- bir daire başkanı,\n- bir üye,\n- birinci sınıfa ayrılmış bir tetkik hâkimi,\n- bir Danıştay savcısı.\n\nAynı şekilde birer yedek üye seçilir.\n\n**Tabii üye:** Genel Sekreter.\n\n**Başkan:** Kurula **Daire Başkanı** başkanlık eder.\n\n**Karar:** oyçokluğuyla verilir.\n\n> Tuzak: İdari İşler Kuruluna ve dava daireleri kurullarına Danıştay Başkanı veya vekillerinden biri başkanlık eder. Disiplin Kurulunda ise başkanlık, seçilen daire başkanınındır.",
+      "articleRefs": [
+        "16",
+        "17",
+        "21"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Kim kime vekâlet eder?",
+      "body": "Danıştay Başkanlığı boşalırsa ya da Başkan izinli veya özürlüyse **başkanvekillerinden en kıdemlisi** vekâlet eder.\n\nŞıklarda \"daire başkanlarından en kıdemlisi\" seçeneği çıkar. Bu ifade md 17'den gelir ve başka bir şeyi düzenler: Başkan ve vekillerinin yokluğunda **dava daireleri kurullarına** kimin başkanlık edeceğini. Başkanlığa vekâletle ilgisi yoktur. Genel Sekreter de Başkana vekâlet etmez.\n\n**Diğer vekâletler:**\n- Dairede başkana: dairenin en kıdemli üyesi.\n- Başsavcıya: Danıştay Başkanının seçeceği, Başsavcılığa seçilme niteliğine sahip bir Danıştay üyesi.\n- Çalışmaya ara verme süresinde Danıştay Başkanına: nöbetçi daire başkanı.",
+      "articleRefs": [
+        "17",
+        "22",
+        "86"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "İlk derece mahkemesi olarak Danıştay",
+      "body": "Danıştay, **ilk derece mahkemesi** olarak aşağıdakilere karşı açılan **iptal ve tam yargı** davalarını karara bağlar:\n\na) Cumhurbaşkanı kararları\n\nb) Cumhurbaşkanınca çıkarılan, Cumhurbaşkanlığı kararnameleri **dışındaki** düzenleyici işlemler\n\nc) Bakanlıklar, kamu kuruluşları veya kamu kurumu niteliğindeki meslek kuruluşlarınca çıkarılan ve **ülke çapında uygulanacak** düzenleyici işlemler\n\nd) Danıştay İdari Dairesince veya İdari İşler Kurulunca verilen kararlar üzerine uygulanan eylem ve işlemler\n\ne) **Birden çok** idare veya vergi mahkemesinin yetki alanına giren işler\n\nf) Danıştay Yüksek Disiplin Kurulu kararları ile bu Kurulun görev alanına ilişkin Danıştay Başkanlığı işlemleri\n\n**İmtiyaz davaları:** Danıştay ayrıca, **tahkim yolu öngörülmeyen** kamu hizmetleriyle ilgili imtiyaz şartlaşma ve sözleşmelerinden doğan idari davaları da karara bağlar.\n\n**Organlık sıfatı:** belediyeler ile il özel idarelerinin seçimle gelen organlarının organlık sıfatını kaybetmesine ilişkin istemleri inceler ve karara bağlar.",
+      "articleRefs": [
+        "24"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "İlk derece Danıştay: \"ülke çapında\" şartı",
+      "body": "Cumhurbaşkanından çıkan işlemlerde kapsam geniştir. Cumhurbaşkanı kararları ile Cumhurbaşkanlığı kararnameleri dışındaki düzenleyici işlemler, ilk derecede doğrudan Danıştay'da görülür.\n\nBakanlık düzenlemelerinde ise bir şart aranır: düzenleme **ülke çapında uygulanacak** olmalıdır. Yalnızca belli bir bölgedeki illerde geçerli olan bir bakanlık yönetmeliği bu bende girmez.\n\nSeçenekleri tararken önce \"Kim çıkardı?\", sonra \"Nerede uygulanacak?\" diye sor.",
+      "articleRefs": [
+        "24"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "İçtihatların birleştirilmesi",
+      "body": "**İstemde bulunabilenler:** içtihatların birleştirilmesini veya birleştirilmiş içtihatların değiştirilmesini şunlar isteyebilir:\n- Danıştay Başkanı,\n- konuyla ilgili daireler,\n- idari ve vergi dava daireleri kurulları,\n- Başsavcı.\n\n**İlgili kişiler:** aykırı kararlarla ilgili kişiler, içtihatların birleştirilmesi için Danıştay Başkanlığına başvurabilir.\n\n**Yayım:** Kurulun bu konudaki kararları, gönderildikleri tarihten itibaren **bir ay** içinde Resmî Gazete'de yayımlanır.\n\n**Bağlayıcılık:** Danıştay daire ve kurulları, idari mahkemeler ve idare bu kararlara uymak zorundadır.\n\n> Tuzak: Adalet Bakanı, istemde bulunabilecekler arasında yer almaz.",
+      "articleRefs": [
+        "40"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Birinci Daire, İdari İşler Kurulu ve imtiyaz sözleşmeleri",
+      "body": "**İdari işler:** idari işlere ilişkin idari uyuşmazlıklar ve görevler, **Birinci Daire ve İdari İşler Kurulunda** görülür. İkisi birlikte bu görevi üstlenir.\n\n**Birinci Dairenin görevleri:**\n- Kamu hizmetleriyle ilgili imtiyaz şartlaşma ve sözleşmeleri\n- Kanunlarında Danıştay'dan alınacağı yazılı düşüncelere ilişkin istekler\n- 6830 sayılı İstimlak Kanununun otuzuncu maddesinin uygulanmasından çıkan uyuşmazlıklar\n- İdarei Umumiyei Vilayat Kanunu Muvakkatı gereğince doğrudan veya itiraz yoluyla Danıştay'a verilen işler\n- Belediye Kanunu ile Danıştay'a verilip idari davaya konu olmayan işler\n- Derneklerin kamu yararına çalışan dernek sayılması için yapılacak teklifler\n- Memurlar ve diğer kamu görevlilerinin yargılanmasına ilişkin mevzuat uyarınca görülecek işler\n\nBirinci Daire bu işleri inceler; gereğine göre karara bağlar veya düşüncesini bildirir.\n\n**Süre:** Danıştay, imtiyaz şartlaşma ve sözleşmeleri hakkındaki düşüncesini geliş tarihinden itibaren **iki ay** içinde sonuçlandırmak zorundadır.\n\n> Tuzak: iki ay, imtiyaz düşüncesinin süresidir. İçtihatları birleştirme kararlarının Resmî Gazete'de yayımlanma süresi ise **bir ay**dır.",
+      "articleRefs": [
+        "40",
+        "41",
+        "42",
+        "48"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "İçtüzük ve yönetmelikleri kim kabul eder?",
+      "body": "Bu Kanunda öngörülen içtüzük ve yönetmelikleri **Danıştay Genel Kurulu** kabul eder. Şıklarda Başkanlar Kurulu, Başkanlık Kurulu, Danıştay Başkanlığı ve Danıştay dışındaki kurumlar seçenek olarak dolaşır; hiçbiri doğru değildir.\n\nGenel Kurul ayrıca bu Kanun ve diğer kanunlarla kendisine verilen seçim görevlerini ve diğer görevleri yapar. Başkanı, Başsavcıyı, başkanvekillerini ve daire başkanlarını seçmesi bu seçim görevlerindendir.",
+      "articleRefs": [
+        "10",
+        "45"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Çalışmaya ara verme ve nöbetçi daire",
+      "body": "**Ara verme dönemi:** Danıştay daireleri her yıl **bir eylülde** başlamak üzere, **yirmi temmuzdan otuz bir ağustosa kadar** çalışmaya ara verir.\n\n**Nöbetçi daire:** bir daire başkanı, dört üye ve bir yedek üyeden oluşur. Yedek üye aynı zamanda Genel Sekreterlik görevini yapar.\n\n**Seçen:** **Başkanlar Kurulu**, Danıştay dairelerinin başkan ve üyeleri arasından **karma olarak** seçer. Ayrıca lüzumu kadar savcı ve tetkik hâkimi görevine devam eder.\n\n**Ara verenler:** görevli olarak kalanlar dışında Danıştay Başkanı, Başsavcı, başkanvekilleri, daire başkanları, üyeler, savcılar ve tetkik hâkimleri.\n\n**Vekâlet:** bu süre içinde Danıştay Başkanına nöbetçi daire başkanı vekâlet eder.\n\n**Diğer memurlar:** çalışmaya devam eder. İşin gereğine göre görevde kalması lüzumlu görülmeyen memurlar kanuni izinlerini kullanır.\n\n**İzin hakkı:** ara verme süresinde görevde kalan Danıştay üyeleri, yılın diğer dönemlerinde yol süresi dâhil, ara verme süresi kadar izin kullanabilir.",
+      "articleRefs": [
+        "86"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Nöbetçi daire: yürütmeyi durdurma evet, esas hayır",
+      "body": "Nöbetçi dairenin göreceği işler metinde tek tek sayılmıştır:\n- kanunen belli süre içinde karara bağlanması gereken işler,\n- yürütmenin durdurulmasına veya delillerin tespitine ait işler,\n- tutuklu memurlar hakkında Memurin Muhakematı Hakkında Kanunu Muvakkatı hükümlerine göre Danıştay'a gelen işler.\n\nYürütmenin durdurulması istemine bakmak bu listede vardır. Ancak yürütmenin durdurulması kararı verilmiş bir dosyanın **esası hakkında karar vermek** listede yoktur. Soru tam olarak bu ince ayrımı yoklar.",
+      "articleRefs": [
+        "87"
+      ]
+    },
+    {
+      "type": "numbers",
+      "title": "Süreler ve tarihler",
+      "rows": [
+        {
+          "label": "Başkan, Başsavcı, başkanvekili, daire başkanı görev süresi",
+          "value": "4 yıl",
+          "refs": [
+            "10"
+          ]
+        },
+        {
+          "label": "Başkan ve Başsavcı seçilebilmek için Danıştay üyeliği",
+          "value": "6 yıl",
+          "refs": [
+            "10"
+          ]
+        },
+        {
+          "label": "Başkanvekili ve daire başkanı seçilebilmek için Danıştay üyeliği",
+          "value": "3 yıl",
+          "refs": [
+            "10"
+          ]
+        },
+        {
+          "label": "Seçim zamanı: görev süresi bitiyorsa",
+          "value": "bitişten 15 gün önce",
+          "refs": [
+            "10"
+          ]
+        },
+        {
+          "label": "Seçim zamanı: başka sebeple boşalma",
+          "value": "boşalmadan itibaren 15 gün içinde",
+          "refs": [
+            "10"
+          ]
+        },
+        {
+          "label": "İki aday arasında oylamaya geçiş",
+          "value": "ilk 3 oylamada sonuç alınamazsa",
+          "refs": [
+            "10"
+          ]
+        },
+        {
+          "label": "İçtihatları birleştirme kararlarının Resmî Gazete'de yayımı",
+          "value": "gönderilişten itibaren 1 ay",
+          "refs": [
+            "40"
+          ]
+        },
+        {
+          "label": "İmtiyaz şartlaşma ve sözleşmeleri hakkında düşünce",
+          "value": "gelişten itibaren 2 ay",
+          "refs": [
+            "48"
+          ]
+        },
+        {
+          "label": "Çalışmaya ara verme",
+          "value": "20 Temmuz – 31 Ağustos",
+          "refs": [
+            "86"
+          ]
+        },
+        {
+          "label": "Yeni çalışma döneminin başlangıcı",
+          "value": "1 Eylül",
+          "refs": [
+            "86"
+          ]
+        },
+        {
+          "label": "Nöbetçi daire",
+          "value": "1 daire başkanı + 4 üye + 1 yedek üye",
+          "refs": [
+            "86"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "10",
+        "40",
+        "48",
+        "86"
+      ]
+    },
+    {
+      "type": "exam_stats",
+      "title": "Sınav der ki",
+      "rows": [
+        {
+          "label": "Bu ünitenin maddelerinden yayındaki soru",
+          "value": "21",
+          "refs": [
+            "3",
+            "10",
+            "13",
+            "15",
+            "16",
+            "17",
+            "18",
+            "21",
+            "22",
+            "24",
+            "40",
+            "41",
+            "42",
+            "45",
+            "48",
+            "86",
+            "87"
+          ]
+        },
+        {
+          "label": "md 13 — Daireler",
+          "value": "3 soru",
+          "refs": [
+            "13"
+          ]
+        },
+        {
+          "label": "md 10 — seçimleri ve görev süreleri",
+          "value": "2 soru",
+          "refs": [
+            "10"
+          ]
+        },
+        {
+          "label": "md 40 — İçtihatların birleştirilmesini istemeye yetkili olanlar",
+          "value": "2 soru",
+          "refs": [
+            "40"
+          ]
+        },
+        {
+          "label": "md 3 — Danıştay meslek mensupları",
+          "value": "1 soru",
+          "refs": [
+            "3"
+          ]
+        },
+        {
+          "label": "md 15 — Danıştay genel kurulu",
+          "value": "1 soru",
+          "refs": [
+            "15"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "3",
+        "10",
+        "13",
+        "15",
+        "16",
+        "17",
+        "18",
+        "21",
+        "22",
+        "24",
+        "40",
+        "41",
+        "42",
+        "45",
+        "48",
+        "86",
+        "87"
+      ],
+      "generated": true
+    },
+    {
+      "type": "bridge",
+      "title": "Bu üniteden soru çöz",
+      "articleRefs": [
+        "3",
+        "10",
+        "13",
+        "15",
+        "16",
+        "17",
+        "18",
+        "21",
+        "22",
+        "24",
+        "40",
+        "41",
+        "42",
+        "45",
+        "48",
+        "86",
+        "87"
+      ],
+      "generated": true,
+      "rows": [
+        {
+          "label": "Madde kapsamlı seans",
+          "value": "md 3, 10, 13, 15–18, 21, 22, 24, 40–42, 45, 48, 86, 87, 10 soru",
+          "refs": [
+            "3",
+            "10",
+            "13",
+            "15",
+            "16",
+            "17",
+            "18",
+            "21",
+            "22",
+            "24",
+            "40",
+            "41",
+            "42",
+            "45",
+            "48",
+            "86",
+            "87"
+          ]
+        }
+      ]
+    }
+  ]
+}
