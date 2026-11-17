@@ -1,0 +1,452 @@
+{
+  "unit": {
+    "slug": "kabk-karar-verme-yetkisi-ve-kanun-yollari",
+    "legislationSlug": "5326-sayili-kabahatler-kanunu",
+    "topicId": "569628d2-5e1c-4788-ad66-1ef20d9374f6",
+    "title": "Karar verme yetkisi ve kanun yolları",
+    "subtitle": "Kim karar verir, karar nasıl tebliğ edilir, nereye ve ne kadar sürede başvurulur",
+    "articleFrom": "22",
+    "articleTo": "31",
+    "readingMinutes": 12,
+    "sourceLabel": "AI özeti — 5326 Sayılı Kabahatler Kanunu, md 22, 23, 25–31",
+    "articleNos": [
+      "22",
+      "23",
+      "25",
+      "26",
+      "27",
+      "28",
+      "29",
+      "30",
+      "31"
+    ],
+    "generatedBy": "claude-opus-5-5 (ozet-uret.ts)",
+    "sortOrder": 2
+  },
+  "blocks": [
+    {
+      "type": "concept",
+      "title": "Kabahatte kararı kim verir?",
+      "body": "Bir kabahat işlendiğinde ilk bakacağın yer, o fiili düzenleyen kanundur. Orada açıkça gösterilen idarî kurul, makam veya kamu görevlisi kararı verir. Kanun bu konuda susuyorsa yetki, ilgili kamu kurum ve kuruluşunun en üst amirine geçer. Cumhuriyet savcısı ise iki kapıdan girebilir: kanunda açık hüküm varsa ya da yürüttüğü soruşturmada bir kabahatle karşılaşırsa.",
+      "articleRefs": [
+        "22",
+        "23"
+      ]
+    },
+    {
+      "type": "concept",
+      "title": "Karara karşı yol haritası",
+      "body": "İdarî para cezası ya da mülkiyetin kamuya geçirilmesi kararı sana tebliğ edildi diyelim. Kural olarak gideceğin yer sulh ceza mahkemesidir. Süreç basamak basamak ilerler: önce sulh ceza mahkemesine başvuru, sonra mahkemenin son kararına karşı Ceza Muhakemesi Kanununa göre itiraz. Başvuru süresini kaçırırsan karar kesinleşir; bu yüzden bu ünitede süreler ve merciler her şeydir.",
+      "articleRefs": [
+        "27",
+        "28",
+        "29"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "İdarî yaptırım kararı verme yetkisi",
+      "body": "**Yetkili merci (md 22)**\n- Kanunda **açıkça gösterilen** idarî kurul, makam veya kamu görevlileri karar verir.\n- Kanunda açık hüküm **yoksa**: ilgili kamu kurum ve kuruluşunun **en üst amiri** yetkilidir.\n- **Şart:** Bu yetki, yalnızca ilgili kurum ve kuruluşun **görev alanına giren yerlerde** işlenen kabahatler için kullanılabilir.\n- **Yer bakımından yetki:** 5271 sayılı Ceza Muhakemesi Kanununun yer bakımından yetki kuralları kabahatlerde de geçerlidir.",
+      "articleRefs": [
+        "22"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Kanun susarsa yetki kimde?",
+      "body": "Kanun yetkiliyi göstermemişse soru seni başka makamlara çekmeye çalışır: mahallin en büyük mülkî amiri, Cumhuriyet savcısı, sulh ceza hâkimi, kolluk birim amiri… Hepsi çeldirici. Doğru cevap tek: **ilgili kamu kurum ve kuruluşunun en üst amiri**. Belirli bir fiilde cezayı kolluğun mu yoksa mülkî amirin mi vereceği sorulduğunda da cevabı o fiili düzenleyen kanunda ararsın; madde yetkiyi “kanunda açıkça gösterilen” merciye verir. Unutma: bu yetki kurumun görev alanına giren yerlerle sınırlıdır.",
+      "articleRefs": [
+        "22"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Cumhuriyet savcısının karar verme yetkisi",
+      "body": "**Cumhuriyet savcısı (md 23)**\n- **Kanunda açık hüküm varsa** idarî yaptırım kararı verebilir.\n- Bir **suç** soruşturması sırasında bir kabahatin işlendiğini öğrenirse: durumu ilgili kamu kurum ve kuruluşuna **bildirebilir** ya da kararı **kendisi verebilir**.\n- **Soruşturma konusu fiilin kendisi** kabahat çıkarsa: savcı bu nedenle idarî yaptırım kararı **verir**.\n- **Bu son hâlin şartı:** İlgili kamu kurum ve kuruluşu tarafından idarî yaptırım kararı **verilmemiş** olmalıdır.",
+      "articleRefs": [
+        "23"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Savcının yetkisi: ne sınırsız ne yok",
+      "body": "Savcı her kabahatte kendiliğinden karar veremez; yetkisi ya kanundaki açık hükümden ya da soruşturmayla bağlantıdan doğar. Ters uçtaki çeldiriciye de düşme: “savcı hiçbir hâlde karar veremez, yalnızca bildirir” yanlıştır. Sulh ceza hâkiminin onayı gibi bir şart da yoktur. Soruşturma konusu fiilin kabahat oluşturduğu anlaşıldığında aradığın kayıt şu: ilgili kamu kurum ve kuruluşu idarî yaptırım kararı vermemiş olmalı.",
+      "articleRefs": [
+        "23"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "İdarî yaptırım kararı tutanağı",
+      "body": "**Tutanakta açıkça yazılacaklar (md 25)**\na) Hakkında karar verilen kişinin **kimlik ve adresi**\nb) Kararı gerektiren **kabahat fiili**\nc) Fiilin işlendiğini ispata yarayacak **bütün deliller**\nd) **Karar tarihi** ve kararı veren kamu görevlilerinin **kimliği**\n\nAyrıca kabahati oluşturan fiil, **işlendiği yer ve zaman** gösterilerek açıklanır.",
+      "articleRefs": [
+        "25"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Kararların tebliği",
+      "body": "**Tebliğ (md 26)**\n- Karar, 7201 sayılı Tebligat Kanunu hükümlerine göre ilgili kişiye tebliğ edilir. Tebligat metninde **kanun yolu, mercii ve süresi** açıkça belirtilir.\n- **Gerçek kişinin huzurunda verilen karar:** Bu husus tutanağa yazılır. Kişi kanun yolu, merci ve süre konusunda bilgilendirilir, sonra tutanağı imzalaması istenir. **İmzadan kaçınırsa** bu durum tutanakta açıkça belirtilir. Tutanağın bir örneği kişiye verilir.\n- **Tüzel kişi** hakkındaki kararlar her hâlde ilgili tüzel kişiye tebliğ edilir.\n- **Elektronik tebliğ:** Maliye Bakanlığı, kararı verenlerle yapılan protokoller çerçevesinde, 213 sayılı Kanunun 107/A maddesine göre kurulan teknik altyapıyla elektronik ortamda tebliğ edebilir. Tebligat, muhatabın elektronik adresine ulaştığı tarihi izleyen **beşinci günün sonunda** yapılmış sayılır ve birinci fıkradaki tebliğin yerine geçer.",
+      "articleRefs": [
+        "26"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Tutanak ve tebliğde sık karışanlar",
+      "body": "Tutanak sorusunda listede olmayanı ararlar: kişinin **önceki kabahatlerine ilişkin sicil kaydı** tutanakta yazılması gereken unsurlardan değildir. İmzadan kaçınma sorusunda karar geçersiz olmaz, yeniden tebliğ beklenmez, tanıklı yeni tutanak düzenlenmez ve kişiye ayrıca ceza verilmez: kaçınma tutanağa yazılır, örnek kişiye verilir, o kadar. Elektronik tebligatta da “ulaştığı an” ya da “okunduğu an” değil, ulaştığı tarihi izleyen **beşinci günün sonu** esas alınır.",
+      "articleRefs": [
+        "25",
+        "26"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Başvuru yolu",
+      "body": "**Başvuru (md 27)**\n- **Hangi kararlar:** İdarî para cezası ve mülkiyetin kamuya geçirilmesine ilişkin idarî yaptırım kararları.\n- **Merci:** Sulh ceza mahkemesi.\n- **Süre:** Tebliğ veya tefhim tarihinden itibaren en geç **on beş gün**. Süre içinde başvurulmazsa karar **kesinleşir**.\n- **Mücbir sebep:** Süre mücbir sebeple geçirilmişse, sebebin ortadan kalktığı tarihten itibaren en geç **yedi gün** içinde başvurulabilir. Bu başvuru kesinleşmeyi **engellemez**; ancak mahkeme yerine getirmeyi **durdurabilir**.\n- **Kim ve nasıl:** Bizzat, kanunî temsilci veya avukat tarafından, sulh ceza mahkemesine verilecek dilekçeyle; dilekçe **iki nüsha** verilir.\n- **Dilekçe içeriği:** Karara ilişkin bilgiler ve karara karşı deliller açıkça gösterilir; süreyi engelleyen mücbir sebep de dayanaklarıyla yazılır.",
+      "articleRefs": [
+        "27"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Mücbir sebepte ek süre",
+      "body": "Mücbir sebepte ek süre **yedi gün**dür; olağan başvuru süresi olan **on beş gün** ile karıştırma. Bu süre, sebebin **ortadan kalktığı tarihten** itibaren işler. İkinci incelik: geç yapılan bu başvuru kararın kesinleşmesini engellemez; ama mahkeme yerine getirmeyi durdurabilir. “Süre geçtiyse artık hiçbir şey yapılamaz”, “mücbir sebepte süre zaten işlemez” ve “bu durumda idare mahkemesine gidilir” şıklarının hepsi yanlıştır.",
+      "articleRefs": [
+        "27"
+      ]
+    },
+    {
+      "type": "numbers",
+      "title": "Tebliğ ve başvuru: sayılar",
+      "rows": [
+        {
+          "label": "Elektronik tebligatın yapılmış sayılması",
+          "value": "Elektronik adrese ulaştığı tarihi izleyen beşinci günün sonu",
+          "refs": [
+            "26"
+          ]
+        },
+        {
+          "label": "Sulh ceza mahkemesine başvuru süresi",
+          "value": "Tebliğ veya tefhimden itibaren en geç 15 gün",
+          "refs": [
+            "27"
+          ]
+        },
+        {
+          "label": "Süre içinde başvuru yapılmazsa",
+          "value": "Karar kesinleşir",
+          "refs": [
+            "27"
+          ]
+        },
+        {
+          "label": "Mücbir sebepte başvuru süresi",
+          "value": "Sebebin ortadan kalktığı tarihten itibaren en geç 7 gün",
+          "refs": [
+            "27"
+          ]
+        },
+        {
+          "label": "Başvuru dilekçesi",
+          "value": "2 nüsha",
+          "refs": [
+            "27"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "26",
+        "27"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Özel merci kuralları",
+      "body": "**Sulh ceza dışındaki yollar (md 27)**\n- Kararı **mahkeme** vermişse: buna karşı **ancak itiraz** yoluna gidilebilir.\n- Soruşturma konusu fiil suç değil kabahat sayılıp karar verilmiş ve **kovuşturmaya yer olmadığı kararına itiraz** edilmişse: idarî yaptırım kararına karşı başvuru da **bu itiraz merciinde** incelenir.\n- Kovuşturma konusu fiil kabahat sayılıp karar verilmiş ve suç oluşturmadığı için verilen **beraat kararına** karşı kanun yoluna gidilmişse: idarî yaptırım kararına itiraz da **bu kanun yolu merciinde** incelenir.\n- Aynı işlem kapsamında aynı kişi hakkında **idarî yargının görev alanına giren** kararlar da verilmişse: idarî yaptırım kararına ilişkin hukuka aykırılık iddiaları, bu işlemin **iptali talebiyle birlikte idarî yargı merciinde** görülür.",
+      "articleRefs": [
+        "27"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Merci sorularında senaryo tuzağı",
+      "body": "Merci soruları senaryoyla gelir. Kısa yol şu: karar mahkemeden çıktıysa sulh cezaya başvuru, idare mahkemesi ya da doğrudan istinaf yok; **ancak itiraz** var. Savcının kovuşturmaya yer olmadığı kararına itiraz edildiyse, idarî yaptırıma karşı başvuru “her hâlükârda sulh ceza”da değil, **o itirazı inceleyen mercide** görülür. Para cezası, idarî yargıya giden bir kararla aynı işlemde aynı kişi hakkında verildiyse ikisi ayrı ayrı yürümez; ceza da iptal talebiyle **birlikte idarî yargı merciinde** görülür. Özel bir durum yoksa temel kural değişmez: idarî para cezası ve mülkiyetin kamuya geçirilmesine karşı **sulh ceza**.",
+      "articleRefs": [
+        "27"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Ön inceleme ve kurumun cevabı",
+      "body": "**Ön inceleme (md 28)**\n- Mahkeme **yetkisizse** dosyayı yetkili sulh ceza mahkemesine gönderir.\n- Başvuru **süresinde yapılmamışsa**, karar sulh cezada incelenebilecek kararlardan **değilse** ya da başvuranın **hakkı yoksa** başvurunun **reddine** karar verir.\n- Bu nedenler yoksa başvurunun **usulden kabulüne** karar verir.\n\n**Usulden kabulden sonra**\n- Mahkeme dilekçenin bir örneğini ilgili kamu kurum ve kuruluşuna tebliğ eder.\n- Kurum, tebliğ tarihinden itibaren en geç **on beş gün** içinde cevap verir ve işlem dosyasının tamamının bir örneğini de ekler. Mahkeme dosyanın aslını da isteyebilir.\n- Cevap dilekçesi, başvuran kişi sayısından **bir fazla** nüsha olarak verilir.",
+      "articleRefs": [
+        "28"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Dinleme ve son karar",
+      "body": "**Dinleme (md 28)**\n- Mahkeme cevap dilekçesinin bir örneğini başvuranlara tebliğ eder; **talep üzerine veya re'sen** tarafları belli gün ve saatte dinleyebilir.\n- Dinleme günü ile tebligat günü arasında **en az bir haftalık** zaman bırakılır.\n- Mazeretsiz hazır bulunmama, **yoklukta karar verilmesine engel değildir**; bu husus tebligat yazısında açıkça belirtilir.\n- Ceza Muhakemesi Kanununun tanıklık, bilirkişi incelemesi ve keşif hükümleri uygulanır.\n- Sıra: başvuru sahibi ve avukatı → kurum temsilcisi → varsa tanıklar → bilirkişi raporu → diğer deliller.\n- **Son söz**, aleyhine karar verilen hazır tarafa sorulur; kanunî temsilci veya avukat da kullanabilir. Son karar hazır tarafların huzurunda açıklanır.\n\n**Son karar**\n- Karar hukuka uygunsa: **“başvurunun reddine”**\n- Karar hukuka aykırıysa: **“idarî yaptırım kararının kaldırılmasına”**\n- Alt ve üst sınırı kanunda gösterilen para cezalarında mahkeme **miktarı değiştirerek** de başvurunun kabulüne karar verebilir.\n- **Onbeşbin Türk Lirası dahil** idarî para cezalarına karşı başvuru üzerine verilen kararlar **kesindir**.",
+      "articleRefs": [
+        "28"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Başvurunun incelenmesinde çeldiriciler",
+      "body": "Son karar sorularında ceza yargılamasının kalıplarına kapılma: beraat/mahkûmiyet, onama/bozma, iptal/yürütmenin durdurulması, düşme/durma burada yok. Mahkemenin son kararı **başvurunun reddi** ya da **idarî yaptırım kararının kaldırılması**dır; alt ve üst sınırı kanunda gösterilen para cezalarında mahkeme miktarı değiştirerek de başvurunun kabulüne karar verebilir. Kurumun cevap süresi **on beş gün**dür; “on gün” şıkkı tuzaktır, “iki hafta” ise son karara itiraz süresidir. Taraf mazeretsiz gelmezse dinleme zorunlu olarak ertelenmez; yokluğunda karar verilebilir. **Onbeşbin Türk Lirası dahil** cezalarda karar kesindir: itiraz, istinaf, idare mahkemesi ya da temyiz şıklarına kanma.",
+      "articleRefs": [
+        "28",
+        "29"
+      ],
+      "counterNumbers": [
+        10
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "İtiraz yolu",
+      "body": "**İtiraz (md 29)**\n- Mahkemenin son kararına karşı **Ceza Muhakemesi Kanununa göre itiraz** edilebilir.\n- Süre: kararın tebliği tarihinden itibaren en geç **iki hafta**.\n- İnceleme **dosya üzerinden** yapılır.\n- Her itiraz için karar: **“itirazın kabulüne”** veya **“itirazın reddine”**.\n- Karar taraflara tebliğ edilir; avukatla temsil hâlinde ayrıca taraflara tebligat yapılmaz.\n- İdarî yaptırım kararını **ağır ceza mahkemesi** vermişse buna karşı da Ceza Muhakemesi Kanununa göre itiraz edilebilir.",
+      "articleRefs": [
+        "29"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Vazgeçme, kabul ve masraflar",
+      "body": "**Vazgeçme ve kabul (md 30)**\n- Kanun yoluna başvuran kişi, karar verilinceye kadar başvurusundan **vazgeçebilir**. Vazgeçme hâlinde bir daha **aynı konuda başvuruda bulunulamaz**.\n- İlgili kamu kurum ve kuruluşu da mahkeme karar verinceye kadar başvuruyu **kabul ederek** idarî yaptırım kararını **geri alabilir**.\n\n**Harç ve masraf (md 31)**\n- İdarî yaptırım kararına karşı başvuru yolu **harca tâbi değildir**.\n- Kanun yolu masrafları ve vekâlet ücreti, başvurusu veya savunması **reddedilen tarafça** ödenir.",
+      "articleRefs": [
+        "30",
+        "31"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Geri alma, vazgeçme ve harç",
+      "body": "Kurum, başvuruyu kabul edip kararını geri alabilir; bunun için başvuranın muvafakati, valilik onayı ya da mahkeme kararı gerekmez. Tek sınır zamandır: mahkeme karar verinceye kadar. Vazgeçmede de karşı tarafın muvafakati aranmaz; ama vazgeçen kişi, süresi bitmemiş olsa bile aynı konuda yeniden başvuramaz. Harç sorusunda dikkat: başvuru harca tâbi **değildir**; masraflar ise Devlete ya da her durumda idareye kalmaz, eşit de paylaştırılmaz. Başvurusu veya savunması reddedilen taraf öder.",
+      "articleRefs": [
+        "30",
+        "31"
+      ]
+    },
+    {
+      "type": "numbers",
+      "title": "Kanun yolunda süreler ve sınırlar",
+      "rows": [
+        {
+          "label": "Sulh ceza mahkemesine başvuru",
+          "value": "Tebliğ veya tefhimden itibaren en geç 15 gün",
+          "refs": [
+            "27"
+          ]
+        },
+        {
+          "label": "Mücbir sebepte başvuru",
+          "value": "Sebebin ortadan kalktığı tarihten itibaren en geç 7 gün",
+          "refs": [
+            "27"
+          ]
+        },
+        {
+          "label": "Kurumun cevap süresi",
+          "value": "Dilekçenin tebliğinden itibaren en geç 15 gün",
+          "refs": [
+            "28"
+          ]
+        },
+        {
+          "label": "Cevap dilekçesi nüshası",
+          "value": "Başvuran kişi sayısından 1 fazla",
+          "refs": [
+            "28"
+          ]
+        },
+        {
+          "label": "Dinleme günü ile tebligat günü arası",
+          "value": "En az 1 hafta",
+          "refs": [
+            "28"
+          ]
+        },
+        {
+          "label": "Kesin karar sınırı",
+          "value": "onbeşbin Türk Lirası dahil idarî para cezaları",
+          "refs": [
+            "28"
+          ]
+        },
+        {
+          "label": "Son karara itiraz süresi",
+          "value": "Kararın tebliğinden itibaren en geç 2 hafta",
+          "refs": [
+            "29"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "27",
+        "28",
+        "29"
+      ]
+    },
+    {
+      "type": "compare",
+      "title": "Başvuru ve itiraz",
+      "rows": [
+        {
+          "aspect": "Neye karşı",
+          "left": "İdarî para cezası ve mülkiyetin kamuya geçirilmesi kararına",
+          "right": "Mahkemenin verdiği son karara",
+          "refs": [
+            "27",
+            "29"
+          ]
+        },
+        {
+          "aspect": "Yol",
+          "left": "Sulh ceza mahkemesine başvuru",
+          "right": "Ceza Muhakemesi Kanununa göre itiraz",
+          "refs": [
+            "27",
+            "29"
+          ]
+        },
+        {
+          "aspect": "Süre",
+          "left": "Tebliğ veya tefhimden itibaren en geç 15 gün",
+          "right": "Tebliğden itibaren en geç 2 hafta",
+          "refs": [
+            "27",
+            "29"
+          ]
+        },
+        {
+          "aspect": "İnceleme",
+          "left": "Ön inceleme; gerekirse taraflar dinlenir",
+          "right": "Dosya üzerinden",
+          "refs": [
+            "28",
+            "29"
+          ]
+        },
+        {
+          "aspect": "Karar kalıbı",
+          "left": "Başvurunun reddine / idarî yaptırım kararının kaldırılmasına",
+          "right": "İtirazın kabulüne / itirazın reddine",
+          "refs": [
+            "28",
+            "29"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "27",
+        "28",
+        "29"
+      ]
+    },
+    {
+      "type": "exam_stats",
+      "title": "Sınav der ki",
+      "rows": [
+        {
+          "label": "Bu ünitenin maddelerinden yayındaki soru",
+          "value": "27",
+          "refs": [
+            "22",
+            "23",
+            "25",
+            "26",
+            "27",
+            "28",
+            "29",
+            "30",
+            "31"
+          ]
+        },
+        {
+          "label": "md 22 — İdarî yaptırım kararı verme yetkisi",
+          "value": "9 soru",
+          "refs": [
+            "22"
+          ]
+        },
+        {
+          "label": "md 27 — Başvuru yolu",
+          "value": "6 soru",
+          "refs": [
+            "27"
+          ]
+        },
+        {
+          "label": "md 28 — Başvurunun incelenmesi",
+          "value": "4 soru",
+          "refs": [
+            "28"
+          ]
+        },
+        {
+          "label": "md 26 — Kararların tebliği",
+          "value": "2 soru",
+          "refs": [
+            "26"
+          ]
+        },
+        {
+          "label": "md 30 — Vazgeçme ve kabul",
+          "value": "2 soru",
+          "refs": [
+            "30"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "22",
+        "23",
+        "25",
+        "26",
+        "27",
+        "28",
+        "29",
+        "30",
+        "31"
+      ],
+      "generated": true
+    },
+    {
+      "type": "bridge",
+      "title": "Bu üniteden soru çöz",
+      "articleRefs": [
+        "22",
+        "23",
+        "25",
+        "26",
+        "27",
+        "28",
+        "29",
+        "30",
+        "31"
+      ],
+      "generated": true,
+      "rows": [
+        {
+          "label": "Madde kapsamlı seans",
+          "value": "md 22, 23, 25–31, 10 soru",
+          "refs": [
+            "22",
+            "23",
+            "25",
+            "26",
+            "27",
+            "28",
+            "29",
+            "30",
+            "31"
+          ]
+        }
+      ]
+    }
+  ]
+}

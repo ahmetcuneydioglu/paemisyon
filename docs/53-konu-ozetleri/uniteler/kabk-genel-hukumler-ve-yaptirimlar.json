@@ -1,0 +1,539 @@
+{
+  "unit": {
+    "slug": "kabk-genel-hukumler-ve-yaptirimlar",
+    "legislationSlug": "5326-sayili-kabahatler-kanunu",
+    "topicId": "569628d2-5e1c-4788-ad66-1ef20d9374f6",
+    "title": "Genel hükümler ve idari yaptırımlar",
+    "subtitle": "Kabahatin tanımından zamanaşımına: sorumluluk, içtima, idarî para cezası ve mülkiyetin kamuya geçirilmesi",
+    "articleFrom": "2",
+    "articleTo": "21",
+    "readingMinutes": 12,
+    "sourceLabel": "AI özeti — 5326 Sayılı Kabahatler Kanunu, md 2–5, 8–21",
+    "articleNos": [
+      "2",
+      "3",
+      "4",
+      "5",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+      "15",
+      "16",
+      "17",
+      "18",
+      "19",
+      "20",
+      "21"
+    ],
+    "generatedBy": "claude-opus-5-5 (ozet-uret.ts)",
+    "sortOrder": 1
+  },
+  "blocks": [
+    {
+      "type": "concept",
+      "title": "Kabahat ne demek?",
+      "body": "Kabahat, kanunun karşılığında **idarî yaptırım** uygulanmasını öngördüğü haksızlıktır. Tanımda asıl yük \"idarî\" sözcüğündedir. Şıklarda bunun yerine \"adlî yaptırım\" yazıldığını görürsen hemen ele. Haksızlığı kabahat yapan şey kanunun onu idarî yaptırıma bağlamasıdır; idarenin kendi başına yasakladığı her davranış kabahat sayılmaz.",
+      "articleRefs": [
+        "2"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Genel kanun niteliği",
+      "body": "Bu Kanunun:\n- **Kanun yoluna ilişkin hükümleri** (idarî yaptırım kararlarına karşı): diğer kanunlarda **aksine hüküm bulunmaması hâlinde** uygulanır.\n- **Diğer genel hükümleri**: idarî para cezası veya mülkiyetin kamuya geçirilmesi yaptırımını gerektiren **bütün fiiller** hakkında uygulanır.\n\nYani genel hükümler yalnızca bu Kanunda tanımlanan kabahatlerle sınırlı değildir.",
+      "articleRefs": [
+        "3"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Kanunîlik ilkesi",
+      "body": "**Fiil (hangi fiilin kabahat olduğu):**\n- Kanunda açıkça tanımlanabilir.\n- Ya da kanunun kapsam ve koşullarını belirlediği **çerçeve hükmün içeriği**, idarenin genel ve düzenleyici işlemleriyle doldurulabilir.\n\n**Yaptırım:**\n- Türü, süresi ve miktarı **ancak kanunla** belirlenebilir.",
+      "articleRefs": [
+        "4"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Fiil esnek, yaptırım katı",
+      "body": "Kanunîlik sorularında yanlış şıklar fiil ile yaptırımın kurallarını yer değiştirir. Fiil tarafında idareye kapı aralıktır: çerçeveyi kanun çizer, içini idarenin düzenleyici işlemi doldurabilir. Yaptırım tarafında kapı kapalıdır: türü, süresi, miktarı yalnızca kanunla. \"Kabahat yalnızca kanunla belirlenir, idare hiç karışamaz\" de yanlış, \"yaptırımın miktarını idare belirler\" de yanlış. \"Kabahatlerde kanunîlik geçerli değil\" diyen şık zaten kendini ele verir.",
+      "articleRefs": [
+        "4"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Zaman bakımından uygulama",
+      "body": "- **Kural:** Türk Ceza Kanununun zaman bakımından uygulamaya ilişkin hükümleri kabahatlere de uygulanır.\n- **İstisna:** İdarî yaptırım kararlarının **yerine getirilmesinde** derhal uygulama kuralı geçerlidir.\n- **İşlenme zamanı:** Kabahat, failin **icraî veya ihmali davranışı** gerçekleştirdiği zaman işlenmiş sayılır. Neticenin oluştuğu zaman **dikkate alınmaz**.",
+      "articleRefs": [
+        "5"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Organ, temsilci ve çalışanın davranışından sorumluluk",
+      "body": "- **Tüzel kişi:** Organ, temsilci ya da organ veya temsilci olmasa da tüzel kişinin faaliyeti çerçevesinde görev üstlenen kişi bu görevi kapsamında kabahat işlerse, tüzel kişi hakkında **da** idarî yaptırım uygulanabilir.\n- **Temsil edilen gerçek kişi:** Temsilcinin bu sıfatla bağlantılı işlediği kabahatten temsil edilen hakkında da idarî yaptırım uygulanabilir.\n- **İş sahibi:** Gerçek kişiye ait bir işte çalışanın bu faaliyet çerçevesinde işlediği kabahatten iş sahibi hakkında da idarî yaptırım uygulanabilir.\n- Kanunun organ, temsilci ya da temsil edilende **özel nitelik** aradığı hâllerde de bu hükümler uygulanır.\n- Organlık, temsil ya da hizmet ilişkisinin dayanağı olan işlem **hukuken geçerli olmasa da** tüzel kişi, temsil edilen ve iş sahibine ilişkin hükümler uygulanır.",
+      "articleRefs": [
+        "8"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Kast, taksir ve hata",
+      "body": "- **Kast ve taksir:** Kanunda açıkça hüküm bulunmayan hâllerde kabahat **hem kasten hem taksirle** işlenebilir.\n- **Hata:** Türk Ceza Kanununun hata hâllerine ilişkin hükümleri **ancak kasten işlenen** kabahatlerde uygulanır.",
+      "articleRefs": [
+        "9",
+        "10"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Sorumluluk ve hukuka uygunluk nedenleri",
+      "body": "**İdarî para cezası uygulanamaz:**\n- Fiili işlediği sırada **15 yaşını** doldurmamış çocuk hakkında.\n- Akıl hastalığı nedeniyle fiilin hukukî anlam ve sonuçlarını algılayamayan ya da bu fiille ilgili davranışlarını yönlendirme yeteneği önemli derecede azalmış kişi hakkında.\n\n**Hukuka uygunluk nedenleri ve kusurluluğu ortadan kaldıran nedenler:** Bu Kanunda aksine hüküm yoksa Türk Ceza Kanununun bu nedenlere ilişkin hükümleri kabahatlerde de uygulanır.",
+      "articleRefs": [
+        "11",
+        "12"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "\"Yalnızca\" ve yaş sınırı tuzağı",
+      "body": "Bu maddelerde yanlış şıklar \"yalnızca\" sözcüğüyle oynar. Kanunda açık hüküm yoksa kabahat hem kasten hem taksirle işlenebilir; \"yalnızca kasten\" de \"yalnızca taksirle\" de yanlış. Hata hükümlerinde ise daraltma gerçekten var: ancak kasten işlenen kabahatlerde uygulanır. Yaş sınırında 18 ya da 12 yazan şıkları geç; sınır 15. Akıl hastalığı nedeniyle fiilin hukukî anlam ve sonuçlarını algılayamayan ya da davranışlarını yönlendirme yeteneği önemli derecede azalmış kişi için indirimli ceza diye ara yol yok: idarî para cezası uygulanmaz.",
+      "articleRefs": [
+        "9",
+        "10",
+        "11"
+      ],
+      "counterNumbers": [
+        18,
+        12
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Teşebbüs ve iştirak",
+      "body": "**Teşebbüs:**\n- Kabahate teşebbüs **cezalandırılmaz**.\n- İlgili kanunda teşebbüsün cezalandırılabileceğine dair hüküm varsa o hâller saklıdır; bu durumda Türk Ceza Kanununun suça teşebbüs ve gönüllü vazgeçme hükümleri uygulanır.\n\n**İştirak:**\n- Birden fazla kişi iştirak ederse **her biri hakkında fail olarak** idarî para cezası verilir.\n- Özel faillik niteliği aranan durumlarda bu niteliği taşımayan iştirakçi de fail olarak cezalandırılır.\n- İştirak için **kasten ve hukuka aykırı** işlenmiş fiilin varlığı yeterlidir; diğerlerinin sorumlu olup olmadığına bakılmaz.\n- Özel faile göre suç, diğerlerine göre kabahat olan fiil ortaklaşa işlenirse **suça iştirak** hükümleri uygulanır.",
+      "articleRefs": [
+        "13",
+        "14"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "İçtima",
+      "body": "- **Bir fiille birden fazla kabahat:** Tanımlarda yalnızca idarî para cezası varsa **en ağır** idarî para cezası verilir. İdarî para cezasından başka idarî yaptırımlar da öngörülmüşse bunların **her biri** uygulanır.\n- **Aynı kabahat birden fazla işlenirse:** her biri için **ayrı ayrı** idarî para cezası.\n- **Kesintisiz fiil:** İdarî yaptırım kararı verilinceye kadar fiil **tek** sayılır.\n- **Fiil hem kabahat hem suç:** Yalnızca **suçtan** dolayı yaptırım uygulanabilir. Suçtan yaptırım uygulanamayan hâllerde kabahat dolayısıyla yaptırım uygulanır.",
+      "articleRefs": [
+        "15"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Tek fiil mi, ayrı fiiller mi?",
+      "body": "En sık tuzak: fiil hem suç hem kabahat olarak tanımlanmışsa \"hem suçtan hem kabahatten ayrı ayrı yaptırım\" denmesi. Doğrusu: yalnızca suçtan; kabahat ancak suçtan yaptırım uygulanamıyorsa devreye girer. Öbür karışıklık fiil sayısında. Tek fiille birden fazla kabahat işlediysen ve tanımlarda sadece idarî para cezası öngörülmüşse en ağır idarî para cezası; aynı kabahati ayrı fiillerle tekrar ettiysen her biri için ayrı ceza. Tek fiille işlenen kabahatlerde cezalar toplanmaz, en hafifi esas alınmaz.",
+      "articleRefs": [
+        "15"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Yaptırım türleri ve idarî para cezası",
+      "body": "**Yaptırım türleri:** İdarî para cezası ve idarî tedbirlerden **ibarettir**. Hapis, uyarı, kınama bu listede yoktur.\n- İdarî tedbirler: **mülkiyetin kamuya geçirilmesi** ve ilgili kanunlardaki diğer tedbirler.\n\n**İdarî para cezası:**\n- **Maktu veya nispi** olabilir.\n- Kanunda **alt ve üst sınır** gösterilerek de belirlenebilir; bu durumda miktar belirlenirken haksızlık içeriği, failin kusuru ve ekonomik durumu **birlikte** göz önünde bulundurulur.\n\n**Gelir kaydı:**\n- Cumhuriyet başsavcılıkları ve mahkemeler: **Genel Bütçe**.\n- Sosyal güvenlik kurumları ve mahalli idareler: **kendi bütçeleri**.\n- Diğer kamu kurum ve kuruluşları: ilgili kanunlardaki hükümler saklı, Genel Bütçe.\n- Kamu kurumu niteliğindeki meslek kuruluşları: kendi kanunlarındaki hükümler.",
+      "articleRefs": [
+        "16",
+        "17"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Ödeme, indirim ve taksit",
+      "body": "- Cezayı veren kamu görevlisi, ilgilinin **rızası** varsa tahsilatı derhal kendisi yapar.\n- Kanununda ödeme süresi yoksa: tebliğden itibaren **1 ay** içinde ödenir.\n- Süresinde ödenirse **%25 indirim** yapılır; yani cezanın %75'ini ödersin.\n- Ödeme yapmak, karara karşı **kanun yoluna başvurma hakkını etkilemez**.\n- Ekonomik durum müsait değilse: **ilk taksit peşin** ödenmek koşuluyla, **1 yıl** içinde, **4 eşit taksit** hâlinde ödenmesine karar verilebilir.\n- Taksitler zamanında ve tam ödenmezse kalan kısmın **tamamı** tahsil edilir.\n- Ceza tamamen tahsil edilince en geç **1 ay** içinde ilgili kamu kurum ve kuruluşuna bildirilir.\n- Cezalar her takvim yılı başından geçerli olmak üzere **yeniden değerleme oranında** artırılır; Türk Lirasının küsuru dikkate alınmaz. Bu kural **nispi** cezalarda uygulanmaz.",
+      "articleRefs": [
+        "17"
+      ],
+      "derivedNumbers": [
+        {
+          "value": 75,
+          "expr": "100 - 25",
+          "refs": [
+            "17"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Taksit ve ödeme şıkları",
+      "body": "Taksit şıklarında süre ve koşul değiştirilir: \"iki yıl içinde\", \"koşulsuz\", \"yalnızca mahkeme kararıyla\" ya da \"taksit mümkün değil\". Doğrusu: ilk taksit peşin, 1 yıl, 4 eşit taksit. Ödeme süresinde \"15 gün\" ya da \"%50 indirim\" görürsen geç; doğrusu 1 ay ve %25. \"Ödersen kanun yolu hakkın gider\" de yanlış: ödeme bu hakkı etkilemez. Bütçe sorularında mahalli idareleri Genel Bütçeye yazan şık yanlıştır; onlar da sosyal güvenlik kurumları gibi kendi bütçelerine gelir kaydeder.",
+      "articleRefs": [
+        "17"
+      ],
+      "counterNumbers": [
+        15,
+        50
+      ]
+    },
+    {
+      "type": "numbers",
+      "title": "Sayılar: sorumluluk ve ödeme",
+      "rows": [
+        {
+          "label": "İdarî para cezası uygulanamayan çocuk",
+          "value": "Fiil sırasında 15 yaşını doldurmamış",
+          "refs": [
+            "11"
+          ]
+        },
+        {
+          "label": "Ödeme süresi (kanununda süre yoksa)",
+          "value": "Tebliğden itibaren 1 ay",
+          "refs": [
+            "17"
+          ]
+        },
+        {
+          "label": "Süresinde ödeme indirimi",
+          "value": "%25",
+          "refs": [
+            "17"
+          ]
+        },
+        {
+          "label": "Taksit süresi",
+          "value": "1 yıl içinde",
+          "refs": [
+            "17"
+          ]
+        },
+        {
+          "label": "Taksit sayısı",
+          "value": "4 eşit taksit, ilki peşin",
+          "refs": [
+            "17"
+          ]
+        },
+        {
+          "label": "Tahsilatın kuruma bildirilmesi",
+          "value": "Tamamen tahsilden itibaren en geç 1 ay",
+          "refs": [
+            "17"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "11",
+        "17"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Mülkiyetin kamuya geçirilmesi",
+      "body": "- Kabahatin konusu olan ya da işlenmesiyle elde edilen eşya için **ancak kanunda açık hüküm** varsa karar verilebilir.\n- Karar; eşyanın **kullanılmaz hâle getirilmesi**, **niteliğinin değiştirilmesi** ya da **ancak belli bir surette kullanılması** koşullarından birine bağlanarak belli bir süre **geciktirilebilir**. Koşul süresinde yerine getirilmezse mülkiyetin kamuya geçirilmesine karar verilir.\n- Karar kesinleşinceye kadar eşyaya **elkonulabilir** ya da eşya kişilerin **muhafazasına** bırakılabilir.\n- Mülkiyet: kanunda açık hüküm varsa ilgili kamu kurum ve kuruluşuna, yoksa **Devlete** geçer.\n- Fail hakkında idarî para cezası ya da başka idarî yaptırım kararı verilmiş olması **şart değildir**.\n- **Kaim değerin** mülkiyetinin kamuya geçirilmesine de karar verilebilir.\n- Başka suretle değerlendirilemeyen eşya **imha** edilir.\n- Karar, **kesinleşmesi hâlinde** yerine getirilir.",
+      "articleRefs": [
+        "18"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Ön şart yok, liste kapalı",
+      "body": "Mülkiyetin kamuya geçirilmesinde en çok sorulan yanlış: \"önce faile idarî para cezası verilmiş olmalı\". Böyle bir şart yok. Geciktirme koşulları da başka şeylerle değiştirilir: satış, kiralama, sigorta, yurt dışına çıkarma. Kanundaki koşullar yalnızca şunlar: kullanılmaz hâle getirme, niteliğini değiştirme, ancak belli bir surette kullanma.\n\nSaklı tutulan hükümlerde de liste sorusu gelir. Diğer kanunlarda belirli bir süre için kabahat karşılığında öngörülen şunlar gibi yaptırımlara ilişkin hükümler, o kanunlarda bu Kanuna uygun değişiklik yapılıncaya kadar saklıdır: meslek ve sanatın yerine getirilmemesi, işyerinin kapatılması, ruhsat veya ehliyetin geri alınması, kara, deniz veya hava nakil aracının trafikten veya seyrüseferden alıkonulması. Listede olmayan bir \"gözetim\" türü görürsen o çeldiricidir.",
+      "articleRefs": [
+        "18",
+        "19"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Soruşturma zamanaşımı",
+      "body": "Süre dolarsa kişi hakkında idarî para cezasına **karar verilemez**.\n\n**Süreler:**\n- 100.000 TL veya daha fazla idarî para cezası gerektiren kabahat: **5 yıl**\n- 50.000 TL veya daha fazla: **4 yıl**\n- 50.000 TL'den az: **3 yıl**\n- **Nispi** idarî para cezası gerektiren kabahat: **8 yıl**\n\n**Başlangıç:** Tanımdaki fiilin işlenmesi ya da neticenin gerçekleşmesi.\n**Fiil aynı zamanda suçsa:** Suça ilişkin dava zamanaşımı hükümleri uygulanır.\n**Özel kural:** Maddede sayılan kanunlarda (Karayolları Trafik Kanunu, Milletvekili Seçimi Kanunu, Nüfus Hizmetleri Kanunu, Karayolu Taşıma Kanunu, Askerlik Kanunu (89. maddesi hariç) gibi) belirtilen fiillerde, fiilin işlendiği tarihi takip eden **takvim yılının son günü** bitimine kadar idarî para cezası verilip tebliğ edilmezse idarî yaptırım kararı verilemez; verilmiş olanlar **düşer**.",
+      "articleRefs": [
+        "20"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Yerine getirme zamanaşımı",
+      "body": "Süre dolarsa idarî para cezasına ya da mülkiyetin kamuya geçirilmesine ilişkin karar **artık yerine getirilemez**.\n\n**Süreler (karar verilen ceza miktarına göre):**\n- 50.000 TL veya daha fazla: **7 yıl**\n- 20.000 TL veya daha fazla: **5 yıl**\n- 10.000 TL veya daha fazla: **4 yıl**\n- 10.000 TL'den az: **3 yıl**\n- **Mülkiyetin kamuya geçirilmesi:** **10 yıl**\n\n**Başlangıç:** Kararın kesinleşmesinin rastladığı takvim yılını **takip eden takvim yılı başı**. Karar ya da tebliğ tarihi değil.\n**İşlemezlik:** Kanun hükmü gereği yerine getirmeye başlanamıyor ya da yerine getirilemiyorsa zamanaşımı **işlemez**.",
+      "articleRefs": [
+        "21"
+      ]
+    },
+    {
+      "type": "numbers",
+      "title": "Sayılar: zamanaşımı süreleri",
+      "rows": [
+        {
+          "label": "Soruşturma — 100.000 TL veya daha fazla",
+          "value": "5 yıl",
+          "refs": [
+            "20"
+          ]
+        },
+        {
+          "label": "Soruşturma — 50.000 TL veya daha fazla",
+          "value": "4 yıl",
+          "refs": [
+            "20"
+          ]
+        },
+        {
+          "label": "Soruşturma — 50.000 TL'den az",
+          "value": "3 yıl",
+          "refs": [
+            "20"
+          ]
+        },
+        {
+          "label": "Soruşturma — nispi idarî para cezası",
+          "value": "8 yıl",
+          "refs": [
+            "20"
+          ]
+        },
+        {
+          "label": "Yerine getirme — 50.000 TL veya daha fazla",
+          "value": "7 yıl",
+          "refs": [
+            "21"
+          ]
+        },
+        {
+          "label": "Yerine getirme — 20.000 TL veya daha fazla",
+          "value": "5 yıl",
+          "refs": [
+            "21"
+          ]
+        },
+        {
+          "label": "Yerine getirme — 10.000 TL veya daha fazla",
+          "value": "4 yıl",
+          "refs": [
+            "21"
+          ]
+        },
+        {
+          "label": "Yerine getirme — 10.000 TL'den az",
+          "value": "3 yıl",
+          "refs": [
+            "21"
+          ]
+        },
+        {
+          "label": "Yerine getirme — mülkiyetin kamuya geçirilmesi",
+          "value": "10 yıl",
+          "refs": [
+            "21"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "20",
+        "21"
+      ]
+    },
+    {
+      "type": "compare",
+      "title": "Soruşturma zamanaşımı ve yerine getirme zamanaşımı",
+      "rows": [
+        {
+          "aspect": "Dolmasının sonucu",
+          "left": "İdarî para cezasına karar verilemez",
+          "right": "Karar artık yerine getirilemez",
+          "refs": [
+            "20",
+            "21"
+          ]
+        },
+        {
+          "aspect": "Süreyi belirleyen",
+          "left": "Kabahatin gerektirdiği idarî para cezası",
+          "right": "Karar verilen idarî para cezası",
+          "refs": [
+            "20",
+            "21"
+          ]
+        },
+        {
+          "aspect": "En düşük kademe",
+          "left": "50.000 TL'den az: 3 yıl",
+          "right": "10.000 TL'den az: 3 yıl",
+          "refs": [
+            "20",
+            "21"
+          ]
+        },
+        {
+          "aspect": "Özel süre",
+          "left": "Nispi idarî para cezası: 8 yıl",
+          "right": "Mülkiyetin kamuya geçirilmesi: 10 yıl",
+          "refs": [
+            "20",
+            "21"
+          ]
+        },
+        {
+          "aspect": "Başlangıç",
+          "left": "Fiilin işlenmesi ya da neticenin gerçekleşmesi",
+          "right": "Kesinleşmenin rastladığı takvim yılını takip eden takvim yılı başı",
+          "refs": [
+            "20",
+            "21"
+          ]
+        },
+        {
+          "aspect": "Özel durum",
+          "left": "Fiil aynı zamanda suçsa dava zamanaşımı hükümleri",
+          "right": "Kanun gereği yerine getirilemiyorsa zamanaşımı işlemez",
+          "refs": [
+            "20",
+            "21"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "20",
+        "21"
+      ]
+    },
+    {
+      "type": "exam_stats",
+      "title": "Sınav der ki",
+      "rows": [
+        {
+          "label": "Bu ünitenin maddelerinden yayındaki soru",
+          "value": "27",
+          "refs": [
+            "2",
+            "3",
+            "4",
+            "5",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21"
+          ]
+        },
+        {
+          "label": "md 17 — İdarî para cezası",
+          "value": "5 soru",
+          "refs": [
+            "17"
+          ]
+        },
+        {
+          "label": "md 8 — Organ veya temsilcinin davranışından dolayı sorumluluk",
+          "value": "2 soru",
+          "refs": [
+            "8"
+          ]
+        },
+        {
+          "label": "md 15 — İçtima",
+          "value": "2 soru",
+          "refs": [
+            "15"
+          ]
+        },
+        {
+          "label": "md 18 — Mülkiyetin kamuya geçirilmesi",
+          "value": "2 soru",
+          "refs": [
+            "18"
+          ]
+        },
+        {
+          "label": "md 20 — Soruşturma zamanaşımı",
+          "value": "2 soru",
+          "refs": [
+            "20"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "2",
+        "3",
+        "4",
+        "5",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17",
+        "18",
+        "19",
+        "20",
+        "21"
+      ],
+      "generated": true
+    },
+    {
+      "type": "bridge",
+      "title": "Bu üniteden soru çöz",
+      "articleRefs": [
+        "2",
+        "3",
+        "4",
+        "5",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17",
+        "18",
+        "19",
+        "20",
+        "21"
+      ],
+      "generated": true,
+      "rows": [
+        {
+          "label": "Madde kapsamlı seans",
+          "value": "md 2–5, 8–21, 10 soru",
+          "refs": [
+            "2",
+            "3",
+            "4",
+            "5",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21"
+          ]
+        }
+      ]
+    }
+  ]
+}
