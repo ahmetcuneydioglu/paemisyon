@@ -1,0 +1,514 @@
+{
+  "unit": {
+    "slug": "ktk-hukuki-sorumluluk-ceza-usulu-ve-son-hukumler",
+    "legislationSlug": "2918-sayili-karayollari-trafik-kanunu",
+    "topicId": "3f91916c-8d15-40f4-bb20-5bcca9253c34",
+    "title": "Hukuki sorumluluk, ceza usulü ve son hükümler",
+    "subtitle": "Zamanaşımı, tutanak ve tahsil, ceza puanı, kurumların görevleri",
+    "articleFrom": "109",
+    "articleTo": "134",
+    "readingMinutes": 12,
+    "sourceLabel": "AI özeti — 2918 Sayılı Karayolları Trafik Kanunu, md 109, 114–116, 118, 119, 124, 126, 128, 131–134",
+    "articleNos": [
+      "109",
+      "114",
+      "115",
+      "116",
+      "118",
+      "119",
+      "124",
+      "126",
+      "128",
+      "131",
+      "132",
+      "133",
+      "134"
+    ],
+    "generatedBy": "claude-opus-5-5 (ozet-uret.ts)",
+    "sortOrder": 3
+  },
+  "blocks": [
+    {
+      "type": "concept",
+      "title": "Tazminat için saat iki yerden işler",
+      "body": "Motorlu araç kazasında maddi zarara uğradıysan tazminat isteğin süresiz açık kalmaz. Saat iki yerden işler. Birincisi, zararı ve tazminat yükümlüsünü öğrendiğin tarihten başlayan iki yıllık süredir. İkincisi, her hâlde kaza gününden başlayan on yıllık süredir. Bu sürelerin içinde harekete geçmezsen talebin zamanaşımına uğrar.",
+      "articleRefs": [
+        "109"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Maddi tazminatta zamanaşımı",
+      "body": "- **Öğrenme süresi:** Zarar gören, zararı ve tazminat yükümlüsünü öğrendiği tarihten başlayarak **iki yıl** içinde talepte bulunmalıdır.\n- **Üst sınır:** Her hâlde kaza gününden başlayarak **on yıl** geçerse talep zamanaşımına uğrar.\n- **İstisna:** Dava cezayı gerektiren bir fiilden doğar ve ceza kanunu bu fiil için daha uzun bir zamanaşımı öngörürse, o süre maddi tazminat talepleri için de geçerlidir.\n- **Kesilme:** Tazminat yükümlüsüne karşı kesilen zamanaşımı sigortacıya karşı da kesilir. Sigortacı bakımından kesilen zamanaşımı, tazminat yükümlüsü bakımından da kesilmiş sayılır.\n- **Rücu:** Tazminat yükümlülerinin birbirine karşı rücu hakları **iki yılda** zamanaşımına uğrar. Bu süre, yükümlülüklerini tam olarak yerine getirdikleri ve rücu edilecek kimseyi öğrendikleri günden başlar.\n- Diğer hususlarda genel hükümler uygulanır.",
+      "articleRefs": [
+        "109"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Sıra: önce iki, sonra on",
+      "body": "Boşluk doldurma sorusunda sıra önemlidir: önce **iki**, sonra **on**. «İki – beş» gibi kaza gününden işleyen üst sınırı kısaltan şıklar çeldiricidir. İlk boşluğa ikiden küçük bir süre koyan şıklar da öyledir. Rücu hakkının süresi de iki yıldır; on yıllık üst sınır rücu için yazılmamıştır.",
+      "counterNumbers": [
+        5
+      ],
+      "articleRefs": [
+        "109"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Tutanağı kim düzenler, nasıl düzenler?",
+      "body": "**Tutanak düzenleyenler** (yetki sınırları içinde):\n- Emniyet Genel Müdürlüğü personeli\n- Jandarma Genel Komutanlığı personeli\n- Ulaştırma ve Altyapı Bakanlığının ve Karayolları Genel Müdürlüğünün ilgili birimlerinin **il ve ilçe kuruluşlarında** görevli ve yetkili kılınmış personel\n\n**Kimlik:** İdari para cezası karar tutanaklarına ve diğer tutanaklara, görevlinin açık kimliği yerine **personel tanıtım numarası** yazılır.\n\n**Birden çok suç:** Birkaç trafik suçu bir arada işlenirse her suç için ayrı ceza uygulanır.\n\n**Mahkemeye suret:** Yargı yetkisine giren suçlarla ilgili tutanağın bir sureti ilgili mahkemeye **7 iş günü** içinde gönderilir.\n\n**Kredi kartı:** Trafik para cezaları kredi kartı ile de ödenebilir. Tahsilatın aktarılma süresini ve usulünü Hazine ve Maliye Bakanlığı belirler.",
+      "articleRefs": [
+        "114"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Tutanak yetkisinde araya sızan kurumlar",
+      "body": "Tutanak yetkisi sorularında şu çeldiriciler sık görülür:\n- **Belediye zabıtası:** Maddede tutanak düzenleyenler arasında sayılmaz.\n- **Ulaştırma ve Altyapı Bakanlığının merkez teşkilatı:** Madde, merkez teşkilatını değil il ve ilçe kuruluşlarını söyler.\n- **Ek şartlar:** «Trafik zabıtası onaylarsa hüküm ifade eder» ya da «kolluk ile birlikte düzenler» gibi şartlar maddede yoktur.\n\nTutanağa yazılan şey kurum kodu, seri numarası ya da yetki belgesi numarası değildir; **personel tanıtım numarasıdır**. Mahkemeye suret süresi de hafta ya da ay olarak değil, **7 iş günü** olarak belirlenmiştir.",
+      "articleRefs": [
+        "114"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Para cezasının ödenmesi ve faiz",
+      "body": "- **Süre:** Ödeme derhal yapılmazsa ceza, tutanağın tebliğ tarihinden itibaren **bir ay** içinde ödenir.\n- **Faiz:** Bir ay içinde ödenmeyen cezalara her ay **% 5** faiz uygulanır. Ay kesirleri **tam ay** sayılır.\n- **Tavan:** Bu şekilde bulunan tutar cezanın **iki katını** geçemez.\n- **Takip:** Süresinde ödenmeyen cezalar için 6183 sayılı Amme Alacaklarının Tahsil Usulü Hakkında Kanun uygulanır.\n- **Ödeme yeri:** Maliye Bakanlığına bağlı muhasebe birimleri, vergi daireleri ve Gelir İdaresi Başkanlığınca yetkilendirilen banka ve PTT.\n- **Yasak:** md 114'e göre tutanak düzenlemeye yetkili personel trafik idari para cezası tahsilatı **yapamaz**.",
+      "articleRefs": [
+        "115"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Faiz sorusunda değiştirilen rakamlar",
+      "body": "Para cezası sorularında rakamlar değiştirilerek sorulur. Doğrularını aklında tut:\n- Ödeme süresi **bir aydır**; daha uzun değildir.\n- Faiz her ay **% 5**'tir; % 4 değildir.\n- Ay kesri **tam ay** sayılır; yarım ay sayılmaz.\n- Tutarın tavanı cezanın **iki katıdır**.\n\nTahsil konusunda da dikkatli ol: Tutanağı yazan görevli cezayı hiçbir şekilde tahsil edemez. Sürücü istese de, ödeme kredi kartıyla yapılsa da, araç trafikten men edilse de bu kural değişmez.",
+      "counterNumbers": [
+        4
+      ],
+      "articleRefs": [
+        "115",
+        "114"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Yabancı plaka, yabancı uyruklu",
+      "body": "- **Yabancı plakalı araç:** Sürücünün Türk vatandaşı olup olmadığına bakılmaz. Ceza, **tebligat şartı aranmaksızın** sürücü bilgilendirilerek tahsil edilir. Ceza tahsil edilmeden yabancı plakalı aracın ülkeyi terk etmesine izin verilmez. Uluslararası sözleşme hükümleri saklıdır.\n- **Tebliğ edilememiş plaka cezası:** md 116'ya göre yabancı plakaya uygulanan ama tebliğ edilemeyen ceza ödenirse, **ödeme tarihi** tebliğ tarihi olarak esas alınır.\n- **Yabancı uyruklu kişi:** Ülkeden çıkışına kadar tahsil edilemeyen ceza, kişinin **tekrar yurda girişi sırasında** tahsil edilir. Bu şekilde de tahsil edilemezse yabancının yurda girişine izin verilmez.",
+      "articleRefs": [
+        "115"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Plakaya ceza, tebligat ve kiralık araç",
+      "body": "**Plakaya göre tutanak** düzenlenen araçlar:\n- Trafiği tehlikeye düşürecek veya engel olacak şekilde ya da yasaklanmış yerlerde park etmiş araçlar\n- Trafik kural ve yasaklarına aykırı davranışı belirlenmiş araçlar\n- Ağırlık kontrol mahallinde işaret, ışık, ses veya görevli ikazına rağmen tartıya girmeden seyrine devam eden araçlar\n\nBu araçların **sürücüsü tespit edilemiyorsa** tescil plakasına göre ceza veya suç tutanağı düzenlenir.\n\n**Tebligat:** Trafik kaydında araç sahibi görünen kişiye posta yoluyla yapılır. Bu yolla tebliğ edilemeyen tutanaklar, tahsil dairesinin ilan yerinde liste hâlinde ilan edilir. İlan tarihini takip eden **otuzuncu gün** tebligat yapılmış sayılır. Takip ve tahsil md 114 ve md 115'e göre yürür.\n\n**Kiralık araç:** Aracın ihlal tarihinde kiralandığı, 1774 sayılı Kanunun ek 3 üncü maddesi kapsamındaki verilerden tespit edilebilir. Kiracının tebligata uygun adresi de varsa tutanak **kiracı adına** düzenlenip tebliğ edilir ve ceza kiracıdan tahsil edilir. Bu kiralama, 4925 sayılı Kanun kapsamındaki yetki belgesi sahibi taşımacının sorumluluk ve yükümlülüklerini ortadan kaldırmaz.",
+      "articleRefs": [
+        "116"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Plaka cezasının şartı ve kiracı",
+      "body": "Plakaya ceza yazılmasının şartı, aracı kullanan **sürücünün tespit edilememesidir**. Maddede şu şartların hiçbiri yoktur: aracın daha önce aynı ihlali yapmış olması, ihlalin elektronik sistemle tespit edilmesi, araç sahibinin araçta bulunmaması.\n\nKiralık araç sorusunda şıklar araç sahibini, taşımacıyı ya da müteselsil tahsili öne çıkarır. Şartlar varsa tutanak **kiracı adına** düzenlenir ve ceza **kiracıdan** alınır. Araç sahibinden tahsil edip kiracıya rücu etmek ya da tutanağı askıya almak yoktur.",
+      "articleRefs": [
+        "116"
+      ]
+    },
+    {
+      "type": "numbers",
+      "title": "Süreler ve oranlar: tazminattan tebligata",
+      "rows": [
+        {
+          "label": "Maddi zarar tazmini – öğrenmeden itibaren",
+          "value": "2 yıl",
+          "refs": [
+            "109"
+          ]
+        },
+        {
+          "label": "Maddi zarar tazmini – kaza gününden itibaren (her hâlde)",
+          "value": "10 yıl",
+          "refs": [
+            "109"
+          ]
+        },
+        {
+          "label": "Tazminat yükümlülerinin rücu hakkı",
+          "value": "2 yıl",
+          "refs": [
+            "109"
+          ]
+        },
+        {
+          "label": "Tutanak suretinin mahkemeye gönderilmesi",
+          "value": "7 iş günü",
+          "refs": [
+            "114"
+          ]
+        },
+        {
+          "label": "Para cezasının ödeme süresi (tebliğden)",
+          "value": "1 ay",
+          "refs": [
+            "115"
+          ]
+        },
+        {
+          "label": "Gecikme faizi",
+          "value": "Her ay % 5, ay kesri tam ay",
+          "refs": [
+            "115"
+          ]
+        },
+        {
+          "label": "Faiz hesabıyla bulunan tutarın tavanı",
+          "value": "Cezanın 2 katı",
+          "refs": [
+            "115"
+          ]
+        },
+        {
+          "label": "İlanla tebligatın tamamlanması",
+          "value": "İlan tarihini takip eden 30. gün",
+          "refs": [
+            "116"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "109",
+        "114",
+        "115",
+        "116"
+      ]
+    },
+    {
+      "type": "concept",
+      "title": "Ceza puanı: her ceza iz bırakır",
+      "body": "Kanunun suç saydığı bir fiil için ceza aldığında, sana yönetmelikte esasları belirlenen ceza puanı da verilir. Kritik eşik **100 puandır**. Bu eşiği bir yıl içinde kaç kez doldurduğun, belgenin ne kadar süre elinden alınacağını belirler. Ölümle sonuçlanan kazada asli kusurlu olmak ise ayrı bir geri alma sebebidir.",
+      "articleRefs": [
+        "118"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Ceza puanı ve belge geri alma",
+      "body": "- **İlk dolum:** Suç tarihinden geriye doğru bir yıl içinde toplam 100 puanı dolduranın belgesi **2 ay** geri alınır ve sürücü eğitime tabi tutulur.\n- **Aynı yıl ikinci dolum:** Belge **4 ay** geri alınır. Sürücü psiko-teknik değerlendirmeye ve psikiyatri uzmanının muayenesine tabi tutulur. Sürücülüğüne engel hâli bulunmayanın belgesi süre sonunda iade edilir.\n- **Bir yıl içinde üç defa 100 puan:** Belge **süresiz iptal** edilir.\n- **Ölümle sonuçlanan kazada asli kusur:** Belge **1 yıl** geri alınır.\n- **Geri alma süresinde araç kullanmak:** Sürücü, md 36'nın üçüncü fıkrasına göre cezalandırılır.\n\nPuanların tespit ve uygulama esasları yönetmelikte gösterilir.",
+      "articleRefs": [
+        "118"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Ceza puanında süreler yer değiştirir",
+      "body": "Ceza puanı sorularında süreler birbirinin yerine konur. Sırayı ezberle:\n- İlk dolum: **2 ay**\n- Aynı yıl ikinci dolum: **4 ay**\n- Üçüncü dolum: **süresiz iptal**\n\nÖlümlü kazada asli kusurun karşılığı **1 yıldır**; altı ay yazan şık yanlıştır.\n\nGeri alma süresinde araç kullanan için bu madde belge iptalinden ya da sürenin yeniden başlamasından söz etmez. Bu kişi md 36'nın üçüncü fıkrasına göre cezalandırılır.",
+      "counterNumbers": [
+        6
+      ],
+      "articleRefs": [
+        "118"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Diğer cürümlerde geçici geri alma",
+      "body": "- **Karar:** Diğer cürümlerden mahkûmiyet hâlinde **mahkeme**, sürücü belgesinin geçici olarak geri alınmasına da karar verebilir.\n- **Süre sınırı:** Geri alma, **ceza süresini geçemez**.\n- **Yerine getirme zamanı:** Geçici geri alma, hürriyeti bağlayıcı ceza hükümlerinin **infazından sonra** yerine getirilir.\n\nDikkat: Kararı trafik kuruluşu değil mahkeme verir. Süre ceza süresini aşamaz. Geri alma, infazla birlikte başlamaz.",
+      "articleRefs": [
+        "119"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Eğitim parkı, olağanüstü hâl, araç kaldırma",
+      "body": "**Çocuk trafik eğitim parkı (md 124):**\n- Okul öncesi çocuklar ve ilköğretim öğrencileri için **il özel idareleri ve belediyeler** yeteri sayıda **ücretsiz** park yapar.\n- Belediyeler, gerçek veya tüzelkişilere de park yapma izni verebilir.\n- Esaslar, İçişleri ile Bayındırlık ve İskan Bakanlıklarının görüşleri alınarak **Milli Eğitim Bakanlığınca** çıkarılan yönetmelikle düzenlenir.\n\n**Olağanüstü hâl ve savaş (md 126):**\n- Karayolunun kullanılması ile trafiğin düzenlenmesi ve yönetimi esasları, **Genelkurmay Başkanlığının görüşü** alınarak yönetmelikte belirtilir.\n- Barışta, bu düzenleme ve yönetimi denemek için yapılacak manevra ve tatbikatlarda, Genelkurmay Başkanlığının istemi üzerine özel uygulamalar yapılabilir.\n\n**Araç kaldırma (md 128):**\n- Yolu kullananları uzun süre etkileyecek şekilde park edilmiş, terk edilmiş veya hasara uğramış araçları kaldırıp götürmeye **trafik zabıtası** yetkilidir.",
+      "articleRefs": [
+        "124",
+        "126",
+        "128"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Basılı kâğıt, plaka ve sürücü belgesi geliri",
+      "body": "- **Cins ve nevi:** Trafik şube veya bürolarında ve sürücü kurslarında kullanılan basılı kâğıtların ve plakaların cins ve nevilerini İçişleri Bakanlığı ile Bayındırlık ve İskan Bakanlığı tespit eder.\n- **Basım:** Basılı kâğıtları ve plakaları **Türkiye Şoförler ve Otomobilciler Federasyonu** bastırır.\n- **Gelir payı:** Satıştan federasyona kalan net gelirin **%60'ı**, her yıl **Şubat ayı sonuna kadar** İçişleri Bakanlığı Merkez Saymanlığı hesabına yatırılır ve Emniyet Genel Müdürlüğü hizmetlerinde kullanılır. Kalanı federasyona aittir.\n- **Sürücü belgesi basımı:** 210 sayılı Değerli Kağıtlar Kanunu kapsamındaki sürücü belgelerini, Maliye ve Gümrük Bakanlığının görüşü alınarak **Emniyet Genel Müdürlüğü** bastırır.\n- **Sürücü belgesi geliri:** Belgelerin verilmesi ve yenilenmesi hizmetlerinden elde edilen gelirin **tamamı Türk Polis Teşkilatı Güçlendirme Vakfına** aittir.\n- **Yetkisiz basım veya dağıtım:** **10.000 Türk Lirası** idari para cezası verilir. Ayrıca Türk Ceza Kanununun 204. maddesine göre cezalandırılır.",
+      "articleRefs": [
+        "131"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Sicil kayıtları ve taşıma kısıtlaması",
+      "body": "**Sicil ve kayıtlar (md 132):** Aşağıdaki kayıtlar ve hizmetler **Emniyet Genel Müdürlüğü bünyesindeki Bilgi İşlem Merkezi** tarafından tutulur ve yürütülür:\n- Araçların, sürücülerin ve trafik suçu işleyenlerin sicilleri\n- Bunlara ait hukuki ve teknik değişiklikler\n- Diğer gerekli ve istatistiki bilgiler\n\n**Taşıma kısıtlaması (md 133):**\n- Trafiğin ve karayolu yapısının büyük ölçüde etkilendiği karayollarında uluslararası transit ve yurt içi taşımalar belirli gün ve saatlerde kısıtlanabilir veya yasaklanabilir. İkili ve çok taraflı anlaşma hükümleri saklıdır.\n- Bunun için Bayındırlık, Gümrük ve Tekel ve Ulaştırma bakanlıklarının görüşü alınır.\n- Kısıtlama, **İçişleri Bakanlığınca** tespit ve ilan edildikten sonra uygulanır.",
+      "articleRefs": [
+        "132",
+        "133"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Okul geçidi görevlisi tutanak yazmaz",
+      "body": "Okul geçidi görevlisi, trafik zabıtasınca verilmiş belgesi olan ve özel kıyafet veya işaret taşıyan kişidir. Görev sırasında trafik yönetimi açısından görevli kişilerin yetkilerine sahiptir. Niteliklerini, görev zamanını ve sürelerini yönetmelik belirler.\n\nAma talimatına uymayana tutanağı kendisi yazmaz. Görevli durumu duyurur; işlemi **trafik zabıtası**, eyleme uyan madde hükmüne göre yapar. «Bizzat ceza tutanağı düzenler» diyen şık yanlıştır.",
+      "articleRefs": [
+        "134"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Kim yetkili? Kurumları karıştırma",
+      "body": "Bu maddelerde soru çoğu zaman «hangi kurum?» diye gelir ve şıklarda birbirine yakın kurumlar dizilir. Eşleştirmeyi sabitle:\n- **Olağanüstü hâl ve savaşta trafik esasları:** Genelkurmay Başkanlığının görüşü alınır; İçişleri ya da Ulaştırma ve Altyapı Bakanlığının değil.\n- **Taşıma kısıtlamasının tespiti ve ilanı:** İçişleri Bakanlığı yapar; Ulaştırma ve Altyapı Bakanlığı, Karayolları Genel Müdürlüğü ya da il trafik komisyonu değil.\n- **Sicil kayıtları:** Emniyet Genel Müdürlüğü Bilgi İşlem Merkezi tutar; Jandarma ya da Karayolları birimi değil.\n- **Araç kaldırma:** Trafik zabıtası yetkilidir; belediye zabıtası ya da mülki amir değil.\n- **Çocuk trafik eğitim parkı:** İl özel idareleri ve belediyeler yapar; Milli Eğitim Bakanlığı yalnız yönetmeliği çıkarır.\n- **Sürücü belgesi verme ve yenileme geliri:** Tamamı Türk Polis Teşkilatı Güçlendirme Vakfına aittir; federasyona değil.",
+      "articleRefs": [
+        "124",
+        "126",
+        "128",
+        "131",
+        "132",
+        "133"
+      ]
+    },
+    {
+      "type": "numbers",
+      "title": "Ceza puanı, geri alma ve basılı kâğıt",
+      "rows": [
+        {
+          "label": "Ceza puanı eşiği",
+          "value": "100 puan",
+          "refs": [
+            "118"
+          ]
+        },
+        {
+          "label": "Eşiğin hesaplandığı dönem",
+          "value": "Suç tarihinden geriye 1 yıl",
+          "refs": [
+            "118"
+          ]
+        },
+        {
+          "label": "İlk dolum",
+          "value": "2 ay geri alma + eğitim",
+          "refs": [
+            "118"
+          ]
+        },
+        {
+          "label": "Aynı yıl ikinci dolum",
+          "value": "4 ay geri alma + psiko-teknik değerlendirme ve psikiyatri muayenesi",
+          "refs": [
+            "118"
+          ]
+        },
+        {
+          "label": "1 yıl içinde 3 dolum",
+          "value": "Süresiz iptal",
+          "refs": [
+            "118"
+          ]
+        },
+        {
+          "label": "Ölümlü kazada asli kusur",
+          "value": "1 yıl geri alma",
+          "refs": [
+            "118"
+          ]
+        },
+        {
+          "label": "Diğer cürümlerde geçici geri alma",
+          "value": "Ceza süresini geçmemek üzere, infazdan sonra",
+          "refs": [
+            "119"
+          ]
+        },
+        {
+          "label": "Federasyon net gelirinden yatırılan pay",
+          "value": "%60, Şubat ayı sonuna kadar",
+          "refs": [
+            "131"
+          ]
+        },
+        {
+          "label": "Yetkisiz basım veya dağıtım",
+          "value": "10.000 TL idari para cezası + TCK md 204",
+          "refs": [
+            "131"
+          ]
+        },
+        {
+          "label": "Sürücü belgesi verme ve yenileme geliri",
+          "value": "Tamamı Türk Polis Teşkilatı Güçlendirme Vakfına",
+          "refs": [
+            "131"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "118",
+        "119",
+        "131"
+      ]
+    },
+    {
+      "type": "compare",
+      "title": "Tebligat: araç sahibine (md 116) mi, yabancı plakaya (md 115) mı?",
+      "rows": [
+        {
+          "aspect": "Ceza kime, nasıl bildirilir",
+          "left": "Trafik kaydındaki araç sahibine posta yoluyla tebligat yapılır",
+          "right": "Tebligat şartı aranmaz; sürücü bilgilendirilerek ceza tahsil edilir",
+          "refs": [
+            "116",
+            "115"
+          ]
+        },
+        {
+          "aspect": "Tebliğ edilemezse",
+          "left": "Tahsil dairesinde liste hâlinde ilan edilir; ilanı takip eden otuzuncu gün tebliğ yapılmış sayılır",
+          "right": "Tebliğ edilememiş ceza ödenirse ödeme tarihi tebliğ tarihi sayılır",
+          "refs": [
+            "116",
+            "115"
+          ]
+        },
+        {
+          "aspect": "Özel durum",
+          "left": "Araç kiralıksa ve şartlar varsa tutanak kiracı adına düzenlenir, ceza kiracıdan tahsil edilir",
+          "right": "Yabancı uyruklu kişiye uygulanıp çıkışına kadar alınamayan ceza yeniden girişte tahsil edilir; tahsil edilemezse girişe izin verilmez",
+          "refs": [
+            "116",
+            "115"
+          ]
+        },
+        {
+          "aspect": "Takip",
+          "left": "md 114 ve md 115'te belirtilen şekilde takip ve tahsil edilir",
+          "right": "Ceza tahsil edilmeden yabancı plakalı araç ülkeyi terk edemez",
+          "refs": [
+            "116",
+            "115"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "115",
+        "116"
+      ]
+    },
+    {
+      "type": "exam_stats",
+      "title": "Sınav der ki",
+      "rows": [
+        {
+          "label": "Bu ünitenin maddelerinden yayındaki soru",
+          "value": "20",
+          "refs": [
+            "109",
+            "114",
+            "115",
+            "116",
+            "118",
+            "119",
+            "124",
+            "126",
+            "128",
+            "131",
+            "132",
+            "133",
+            "134"
+          ]
+        },
+        {
+          "label": "md 114",
+          "value": "3 soru",
+          "refs": [
+            "114"
+          ]
+        },
+        {
+          "label": "md 115",
+          "value": "3 soru",
+          "refs": [
+            "115"
+          ]
+        },
+        {
+          "label": "md 118",
+          "value": "3 soru",
+          "refs": [
+            "118"
+          ]
+        },
+        {
+          "label": "md 116",
+          "value": "2 soru",
+          "refs": [
+            "116"
+          ]
+        },
+        {
+          "label": "md 109",
+          "value": "1 soru",
+          "refs": [
+            "109"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "109",
+        "114",
+        "115",
+        "116",
+        "118",
+        "119",
+        "124",
+        "126",
+        "128",
+        "131",
+        "132",
+        "133",
+        "134"
+      ],
+      "generated": true
+    },
+    {
+      "type": "bridge",
+      "title": "Bu üniteden soru çöz",
+      "articleRefs": [
+        "109",
+        "114",
+        "115",
+        "116",
+        "118",
+        "119",
+        "124",
+        "126",
+        "128",
+        "131",
+        "132",
+        "133",
+        "134"
+      ],
+      "generated": true,
+      "rows": [
+        {
+          "label": "Madde kapsamlı seans",
+          "value": "md 109, 114–116, 118, 119, 124, 126, 128, 131–134, 10 soru",
+          "refs": [
+            "109",
+            "114",
+            "115",
+            "116",
+            "118",
+            "119",
+            "124",
+            "126",
+            "128",
+            "131",
+            "132",
+            "133",
+            "134"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,660 @@
+{
+  "unit": {
+    "slug": "ktk-tanimlar-kuruluslar-tescil-ve-surucu-belgeleri",
+    "legislationSlug": "2918-sayili-karayollari-trafik-kanunu",
+    "topicId": "3f91916c-8d15-40f4-bb20-5bcca9253c34",
+    "title": "Tanımlar, görevli kuruluşlar, tescil ve sürücü belgeleri",
+    "subtitle": "Kim neyi yapar, araç nasıl tescil edilir, sürücü belgesi nasıl alınır ve ne zaman geri alınır?",
+    "articleFrom": "3",
+    "articleTo": "45",
+    "readingMinutes": 14,
+    "sourceLabel": "AI özeti — 2918 Sayılı Karayolları Trafik Kanunu, md 3–8, 10, 12, 21, 26, 28, 36, 37, 39, 41–45",
+    "articleNos": [
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "10",
+      "12",
+      "21",
+      "26",
+      "28",
+      "36",
+      "37",
+      "39",
+      "41",
+      "42",
+      "43",
+      "44",
+      "45"
+    ],
+    "generatedBy": "claude-opus-5-5 (ozet-uret.ts)",
+    "sortOrder": 1
+  },
+  "blocks": [
+    {
+      "type": "concept",
+      "title": "Önce sözlük: trafik, araç, sürücü",
+      "articleRefs": [
+        "3"
+      ],
+      "body": "Bu ünitedeki kuralların hepsi birkaç temel kavrama dayanır. O yüzden önce bunları yerine oturt. **Trafik**, yayaların, hayvanların ve araçların karayolları üzerindeki hal ve hareketleridir. **Karayolu**, trafik için kamunun yararlanmasına açık olan arazi şeridi, köprüler ve alanlardır. **Araç** geniş bir çatıdır: motorlu, motorsuz ve özel amaçlı taşıtlar ile iş makineleri ve lastik tekerlekli traktörlerin genel adıdır. **Taşıt** ise karayolunda insan, hayvan ve yük taşımaya yarayan araçtır. Makine gücüyle yürüyene motorlu, insan ve hayvan gücüyle yürüyene motorsuz taşıt denir. **Sürücü**, karayolunda motorlu veya motorsuz bir aracı ya da taşıtı sevk ve idare eden kişidir. **Şoför** ise ticari olarak tescil edilmiş bir motorlu taşıtı süren kişidir. **İşleten** araç sahibidir; mülkiyeti muhafaza kaydıyla satışta sicilde alıcı sıfatıyla kayıtlı görülen kişi, uzun süreli kiralama, ariyet veya rehin gibi hallerde ise kiracı, ariyet veya rehin alan kişidir. Başka bir kişinin aracı kendi hesabına ve tehlikesi kendisine ait olarak işlettiği ve araç üzerinde fiili tasarrufu bulunduğu ispat edilirse o kişi işleten sayılır."
+    },
+    {
+      "type": "trap",
+      "title": "'Her iki yön' gördüysen iki yönlü",
+      "articleRefs": [
+        "3"
+      ],
+      "body": "Soru kökü bir tanımı verir ve karayolunun adını sorar. Şıklar birbirine çok benzer, bu yüzden tanımdaki anahtar ifadeyi yakala:\n- **İki yönlü karayolu**: Taşıt yolu her iki yöndeki taşıt trafiği için kullanılır.\n- **Tek yönlü karayolu**: Taşıt yolu yalnız bir yöndeki taşıt trafiği için kullanılır.\n- **Bölünmüş karayolu**: Bir yöndeki trafiğe ait taşıt yolu, bir **ayırıcı** ile diğer taşıt yolundan ayrılır. Tanımda 'ayırıcı' yoksa bölünmüş deme.\n- **Erişme kontrollü karayolu (otoyol - ekspresyol)**: Özellikle transit trafiğe tahsis edilmiştir. Yaya, hayvan ve motorsuz araç bu yola giremez.\n- **Bağlantı yolu**: Kavşak yakınında taşıt yollarını birbirine bağlar, kavşak alanı dışında kalır ve bir yönlü trafiğe ayrılmıştır.\n\nKökte 'her iki yöndeki taşıt trafiği' ifadesini görüyorsan cevap iki yönlü karayoludur."
+    },
+    {
+      "type": "rule",
+      "title": "Karayolu Trafik Güvenliği Kurulu",
+      "articleRefs": [
+        "4"
+      ],
+      "body": "Karayolu güvenliği konusunda hedefleri tespit etmek, uygulatmak ve koordinasyonu sağlamak amacıyla **Karayolu Trafik Güvenliği Kurulu** oluşturulmuştur.\n\n**Kurulun görev ve yetkileri:**\n1. Trafikle ilgili kuruluşlar arasında koordinasyon sağlanmasına ilişkin **önerilerde bulunmak**\n2. Trafik kazalarının azaltılmasına ilişkin **önerilerde bulunmak**\n3. Uygulamada görülen aksaklıkları **tespit etmek**\n4. Kendi görev alanına giren konularda yasal düzenlemeden kaynaklanan eksiklikleri **belirlemek**\n\nKurulun listesinde tescil, muayene ya da yönetmelik çıkarma gibi uygulama işleri yer almaz.\n\n**Görevlerin yürütülmesi:** Bu Kanunla ve diğer kanunlarla trafik hizmetleri konusunda verilen görevler **İçişleri Bakanlığınca** yürütülür. Kanunla yetkili kılınan diğer bakanlık, kuruluş ve belediyeler ise bu görevleri İçişleri Bakanlığı ile işbirliği içinde yürütür."
+    },
+    {
+      "type": "rule",
+      "title": "İçişleri Bakanlığının görev ve yetkileri",
+      "articleRefs": [
+        "5"
+      ],
+      "body": "İçişleri Bakanlığının görev ve yetkileri şunlardır:\n- Araçları, belge ve gereçleri, sürücüleri ve belgelerini **denetlemek**; kurallara uyulup uyulmadığını, trafik düzenlemelerinin ve tesislerin Kanuna uygunluğunu kontrol etmek\n- **Duran ve akan trafiği** düzenlemek ve yönetmek\n- El koyduğu trafik kazalarında **trafik kaza tespit tutanağı** düzenlemek\n- Trafik suçu işleyenler hakkında tutanak düzenlemek, gerekli işlemleri yapmak ve takip etmek\n- Kazada hastalanan veya yaralananların bakımı için tedbirlerin süratle alınmasına yardımcı olmak ve yakınlarına haber vermek\n- Araçların **tescil** işlemlerini yaparak belge ve plakalarını vermek\n- Sürücülerin belgelerini vermek\n- Ülke çapında taşıtların ve sürücülerin **sicillerini** tutmak ve bunlara ilişkin teknik ve hukuki değişiklikleri işlemek\n- Kazaların oluş nedenlerine ilişkin **istatistik** verilerini toplamak ve değerlendirmek; sonuçlarına göre önlem alınmasını sağlamak ve ilgili kuruluşlara teklifte bulunmak\n- Hasar tazminatı ödemelerini hızlandırmak için sigorta şirketlerince istenecek bilgi ve belgeleri vermek\n\n**Elektronik sicil:** Haciz, rehin, ihtiyati tedbir ve belge iptali gibi kısıtlayıcı şerhler elektronik sicile işlenebilir ve kaldırılabilir. Bu işlemi elektronik sistemle, **şerhe karar veren yargı ve icra birimleri ile kamu kurum veya kuruluşları** yapabilir. Sürücü belgesi ve tescil işlemlerine esas bilgiler de İçişleri Bakanlığınca ilgili kurumlardan elektronik sistemle temin edilebilir."
+    },
+    {
+      "type": "rule",
+      "title": "Trafik zabıtası ve genel zabıta",
+      "articleRefs": [
+        "6"
+      ],
+      "body": "**Trafik zabıtası**\n- Görevi sırasında karşılaştığı **acil ve zorunlu hallerde** genel zabıta görevi yapmakla da yetkilidir.\n- Otoyollardan sorumlu birimlerde görevli trafik zabıtası, **İçişleri Bakanının uygun görmesi** hâlinde genel zabıta olarak da görevlendirilebilir. Bu görevlendirme **sorumluluk sahası ile sınırlıdır**.\n- Mülki idare amirleri, **emniyet ve asayiş bakımından zorunlu görülen haller dışında** trafik zabıtasına genel zabıta görevi veremez. Trafik zabıtasının araç, gereç ve özel teçhizatı da trafik hizmetleri dışında kullanılamaz.\n\n**Genel zabıta**\n- Trafik zabıtasının **bulunmadığı veya yeterli olmadığı** yerlerde görevlidir. Bu yerlerde sorumluluk bölgesine göre ve ilgili mevzuattaki esas ve usullere uygun olarak trafiği düzenlemeye ve trafik suçlarına el koymaya görevli ve yetkilidir."
+    },
+    {
+      "type": "trap",
+      "title": "Zabıta sorularında anahtar kelimeyi yakala",
+      "articleRefs": [
+        "6"
+      ],
+      "body": "Bu madde farklı soru kalıplarıyla gelir. Her kalıbın bir anahtar kelimesi vardır:\n- **Kapkaç örneği:** Kavşakta görevdeki trafik polisi, önünde kapkaç olursa şüpheliye müdahale eder. Dayanağı **acil ve zorunlu hal** kuralıdır. Şu şıklar yanlıştır: 'yazılı görevlendirme gerekir', 'yalnız kendi sorumluluk sahasında yapabilir', 'genel zabıtaya bildirmekle yetinir'.\n- **Otoyol birimleri:** 'Sorumluluk sahası ile sınırlı' kaydı yalnız otoyol birimlerindeki trafik zabıtası içindir. Onay makamı **İçişleri Bakanı**dır; vali, Emniyet Genel Müdürü ya da il trafik komisyonu değildir.\n- **Mülki idare amiri:** Genel zabıta görevini ancak **emniyet ve asayiş bakımından zorunlu** hallerde verebilir. Teçhizat konusunda şu şıklar yanlıştır: 'mülki idare amirinin onayıyla trafik dışında kullanılabilir', 'genel zabıtaya devredilebilir'.\n- **Genel zabıta:** Trafiğe el koyma şartı, trafik zabıtasının **bulunmadığı veya yeterli olmadığı** yerde olmaktır. 'Belediye sınırları dışında olmak', 'kurul kararı' ya da 'yol sahibi kuruluşun talebi' gibi şartlar yoktur."
+    },
+    {
+      "type": "rule",
+      "title": "Karayolları Genel Müdürlüğünün görev ve yetkileri",
+      "articleRefs": [
+        "7"
+      ],
+      "body": "Karayolları Genel Müdürlüğünün başlıca görevleri şunlardır:\n- Yapım ve bakımından sorumlu olduğu karayollarında can ve mal güvenliği için gerekli düzenleme ve işaretlemeleri yapmak\n- **Tüm karayollarındaki** işaretleme standartlarını tespit etmek, yayınlamak ve kontrol etmek\n- Trafik ve araç tekniğine ait görüş bildirmek; karayolu güvenliğini ilgilendiren projeleri incelemek ve onaylamak\n- Sorumlu olduğu karayollarında, yönetmelikteki hız sınırlarının üstünde veya altında hız sınırı belirlemek ve işaretlemek. Bunun için **İçişleri Bakanlığının uygun görüşü** alınır.\n- Kaza oluş nedenlerine göre verileri hazırlamak; önleyici teknik tedbirleri almak veya aldırmak\n- Kavşak, durak yeri, aydınlatma, yol dışı park yerleri gibi tesisleri yapmak; diğer kuruluşların projelerini tetkik ve tasdik etmek\n- Trafik zabıtasının görev ve yetkileri saklı kalmak üzere, Kanunda sayılan bazı maddelere aykırılıklarda suç veya ceza tutanağı düzenlemek\n- **Md 47'nin (b), (c) ve (d) bentlerindeki** ihlallerde ise durumu **bir tutanakla belirlemek ve en yakın trafik kuruluşuna teslim etmek**\n- Karayolları denetim istasyonlarında takoğraf ve çalışma-dinlenme süreleri yönünden denetim yapmak ve trafik idari para cezası karar tutanağı düzenlemek\n- Yaban hayvanları için tesis yapmak: otoyolların habitatları böldüğü yerlerde Doğa Koruma ve Milli Parklar Genel Müdürlüğünün görüşünü alarak menfez ve ekolojik köprü, otoyollarda kafes tel çit, yaşam alanı bölgelerinde uyarıcı levha\n- Çevre ve Şehircilik Bakanlığının görüşünü alarak, trafik güvenliğinin ve teknik koşulların sağlandığı karayollarının kenarına bisiklet yolu ve gürültü bariyeri yapmak; banketleri bisiklet şeridi olarak işaretleyerek bisiklet ve elektrikli skuter kullanımına uygun hale getirmek"
+    },
+    {
+      "type": "rule",
+      "title": "Millî Eğitim, Sağlık ve Ulaştırma bakanlıklarının görevleri",
+      "articleRefs": [
+        "8"
+      ],
+      "body": "**a) Millî Eğitim Bakanlığı**\n- Sürücü kursları açmak, özel sürücü kursu açılmasına izin vermek ve bunları her safhada denetlemek\n- Sürücü adaylarının teorik ve uygulamalı sınavlarını yapmak; başarılı olanlara sertifika verilmesini sağlamak\n- Okul öncesi, okul içi ve okul dışı trafik eğitimini düzenleyen **trafik genel eğitim planı** hazırlamak ve ilgili kuruluşlarla iş birliği yaparak uygulamak\n\n**b) Sağlık Bakanlığı**\n- Trafik kazalarıyla ilgili ilk ve acil yardım hizmetlerini planlamak ve uygulamak\n- Karayolları üzerinde **ilk yardım istasyonları** kurmak; bu istasyonlara personel, araç ve gereç sağlamak. Bunun için İçişleri Bakanlığının uygun görüşü de alınır.\n- Her ilde eğitilmiş sağlık personeli ile yeteri kadar ilk ve acil yardım ambulansı bulundurmak\n- Trafik kazalarında yaralanıp sağlık kuruluşlarına sevk edilenlerden, kazanın sebep ve tesiriyle **otuz gün içinde** ölenlerin kayıtlarını tutmak ve bu kayıtları **takip eden ayın sonuna kadar Emniyet Genel Müdürlüğüne** bildirmek\n\n**c) Ulaştırma, Denizcilik ve Haberleşme Bakanlığı**\n- Tescile bağlı araçların muayenelerini yapmak veya yaptırmak; muayene istasyonlarını denetlemek\n- Araçların ağırlık ve boyut kontrollerini yapmak veya yaptırmak ve denetlemek. Bu görevde trafik zabıtasının görev ve yetkileri saklıdır.\n- Paylaşımlı elektrikli skuter işletmeciliği faaliyetinde bulunanları denetlemek\n- Ağırlık ve boyut kontrolü için yetkilendirilen işletmede giderilebilecek bir eksiklik varsa işletme sahibine azamî **on beş gün** süre verilir. Bu sürede eksiklik giderilmezse izin belgesi iptal edilir."
+    },
+    {
+      "type": "trap",
+      "title": "Hangi kurum? En çok karıştırılan eşleşmeler",
+      "articleRefs": [
+        "5",
+        "7",
+        "8"
+      ],
+      "body": "Kurum sorularında şıklar hep aynı isimlerden oluşur. Görevi doğru kuruma bağla:\n- **Kaza istatistikleri:** İstatistik verilerini toplayıp önlem alınmasını sağlamak ve teklifte bulunmak **İçişleri Bakanlığının** görevidir. Bunu Karayolları Genel Müdürlüğünün 'kaza verisi hazırlayıp teknik tedbir alma' göreviyle karıştırma.\n- **İlk yardım istasyonu:** Karayolları üzerinde ilk yardım istasyonu kurmak **Sağlık Bakanlığının** görevidir. İçişleri Bakanlığı burada yalnızca uygun görüş verir. Bu yüzden 'İçişleri Bakanlığının görevi değildir' sorusunun cevabı budur.\n- **Trafik genel eğitim planı:** **Millî Eğitim Bakanlığının** görevidir; belediye ya da komisyonun değil.\n- **Hız sınırı:** Karayolları Genel Müdürlüğü, yönetmelikteki sınırın üstünde veya altında hız sınırı belirlerken **İçişleri Bakanlığının uygun görüşünü** alır. Vali onayı, komisyon kararı ya da kurul önerisi gerekmez.\n- **Md 47 (b), (c), (d) ihlalleri:** Karayolları Genel Müdürlüğü bu ihlallerde cezayı doğrudan kesmez. Durumu **tutanakla belirler ve en yakın trafik kuruluşuna teslim eder**.\n- **Ölüm kayıtları:** Otuz gün içinde ölenlerin kayıtları **Emniyet Genel Müdürlüğüne**, **takip eden ayın sonuna kadar** bildirilir.\n- **Elektronik şerhler:** Sicile şerhi, **şerhe karar veren yargı ve icra birimleri ile kamu kurum veya kuruluşları** tarafından elektronik sistemle işlenebilir. Soruda aranan cevap noter ya da valilik değil, şerhe karar veren birimdir."
+    },
+    {
+      "type": "rule",
+      "title": "Belediye trafik birimleri",
+      "articleRefs": [
+        "10"
+      ],
+      "body": "Bu Kanunla belediyelere verilen görevler, **il ve ilçe trafik komisyonları ve mahalli trafik birimleri ile işbirliği** yapılarak yürütülür.\n\n**Kuruluş:** Her belediye başkanlığı bünyesinde belediye trafik şube müdürlüğü, şefliği veya memurluğu kurulur. Kuruluşta **hizmet kapasitesi** gözönünde tutulur ve **İçişleri Bakanlığınca** tespit edilecek ölçüler ile genel hükümler esas alınır.\n\n**Görev ve yetkiler:**\n- Yapım ve bakımından sorumlu olduğu yolları trafik düzeni ve güvenliğini sağlayacak durumda bulundurmak\n- Gerekli görülen kavşaklara ve yerlere trafik ışıklı işaretleri ve işaret levhaları koymak, yer işaretlemeleri yapmak\n- Karayolu yapısında ve üzerinde yapılacak çalışmalarda gerekli tedbirleri almak, aldırmak ve denetlemek\n- Trafik için tehlike oluşturan engelleri gece veya gündüze göre kolayca görülebilecek şekilde işaretlemek ya da ortadan kaldırmak\n- Yol yapısı veya işaretleme yetersizliğinden kaza olan yerlerde yetkililerce teklif edilen tedbirleri almak\n- Çocuklar için trafik eğitim tesisleri yapmak veya yapılmasını sağlamak\n\nKuruluş ölçülerini il trafik komisyonu, belediye meclisi ya da başka bir bakanlık değil, İçişleri Bakanlığı tespit eder."
+    },
+    {
+      "type": "rule",
+      "title": "İl ve İlçe Trafik Komisyonları",
+      "articleRefs": [
+        "12"
+      ],
+      "body": "**Kuruluş**\n- **İl Trafik Komisyonu:** Vali veya yardımcısının başkanlığında toplanır. Üyeleri şunlardır: belediye, emniyet, jandarma, milli eğitim, karayolları ve Türkiye Şoförler ve Otomobilciler Federasyonuna bağlı ilgili odanın temsilcileri; ayrıca Valilikçe uygun görülen trafikle ilgili üniversite, oda, vakıf ve kamuya yararlı dernek veya kuruluşların birer temsilcisi.\n- **İlçe Trafik Komisyonu:** Kaymakamın başkanlığında, aynı kuruluşların yöneticileri veya görevlendirecekleri temsilcilerle kurulur. Kuruluşu bulunan yerler hariç, karayolları temsilcisinin katılması zorunlu değildir.\n\n**Çalışma esasları**\n- Üniversite, vakıf ve kamuya yararlı dernek veya kuruluş temsilcilerinin toplam sayısı **3'ü geçemez**.\n- Gündem konularını **vali veya kaymakam** belirler.\n- Diğer kuruluş temsilcileri, görüşleri alınmak üzere **oy hakkı olmaksızın** çağrılabilir.\n- Kararlar **oy çokluğu** ile alınır. Oylar eşitse başkanın bulunduğu taraf çoğunluk sayılır.\n- İl Trafik Komisyonu kararları **valinin onayı** ile yürürlüğe girer.\n- İlçe Trafik Komisyonu kararları önce İl Trafik Komisyonunca incelenir, vali onaylayınca yürürlüğe girer.\n- Kararları bütün resmi ve özel kuruluşlar uygulamakla yükümlüdür.\n\n**Görev ve yetkiler**\n- İl sınırları içinde trafik düzeni ve güvenliği için tedbir almak\n- Alt yapı tedbirlerini almak ve trafik sorunlarını çözümlemek\n- Belediye sınırları içinde ticari yolcu ve yük taşıtları ile motorsuz taşıtların çalışma şekil ve şartlarını, güzergahlarını ve sayılarını belirlemek\n- Otopark olmaya müsait boş alan, arazi ve arsaları **geçici otopark yeri** olarak ilan etmek ve işletilmesi için izin vermek"
+    },
+    {
+      "type": "trap",
+      "title": "Komisyon sorularındaki kelime oyunları",
+      "articleRefs": [
+        "5",
+        "8",
+        "12"
+      ],
+      "body": "Komisyon sorularında yanlış şıklar küçük bir kelimeyi değiştirerek kurulur:\n- Kararlar 'oy birliği' ile değil, **oy çokluğu** ile alınır. Eşitlikte başkanın tarafı çoğunluk sayılır.\n- Gündemi oda temsilcisi değil, **vali veya kaymakam** belirler.\n- Üniversite, vakıf ve kamuya yararlı dernek veya kuruluş temsilcilerinin toplamı en fazla **3**'tür.\n- İl komisyonu kararı **valinin onayıyla** yürürlüğe girer. İlçe kararı ise doğrudan yürürlüğe girmez: önce il komisyonu inceler, sonra vali onaylar.\n- Geçici otopark yeri ilan etmek **komisyonun** görevidir. Şu görevler ise komisyonun listesinde yoktur: trafik suçu tutanağı (İçişleri), uygulamalı sürücü sınavı (Millî Eğitim), muayene istasyonu denetimi (Ulaştırma)."
+    },
+    {
+      "type": "numbers",
+      "title": "Tanımlar ve kurumlar: sayılar",
+      "articleRefs": [
+        "3",
+        "8",
+        "12"
+      ],
+      "rows": [
+        {
+          "label": "Otomobil: sürücüsü dahil oturma yeri",
+          "value": "En fazla 9",
+          "refs": [
+            "3"
+          ]
+        },
+        {
+          "label": "Otobüs: sürücüsü dahil oturma yeri",
+          "value": "9'dan fazla",
+          "refs": [
+            "3"
+          ]
+        },
+        {
+          "label": "Minibüs (otobüs sınıfı): sürücüsü dahil oturma yeri",
+          "value": "17'yi aşmayan",
+          "refs": [
+            "3"
+          ]
+        },
+        {
+          "label": "Kamyonet: azami yüklü ağırlık",
+          "value": "3.500 kg'ı geçmeyen",
+          "refs": [
+            "3"
+          ]
+        },
+        {
+          "label": "Kamyon: izin verilebilen azami yüklü ağırlık",
+          "value": "3.500 kg'dan fazla",
+          "refs": [
+            "3"
+          ]
+        },
+        {
+          "label": "Hafif römork: azami yüklü ağırlık",
+          "value": "750 kg'ı geçmeyen",
+          "refs": [
+            "3"
+          ]
+        },
+        {
+          "label": "Motosiklet (iki veya üç tekerlekli)",
+          "value": "Tasarım hızı 45 km/saatten ve/veya silindir kapasitesi 50 cm³'ten fazla",
+          "refs": [
+            "3"
+          ]
+        },
+        {
+          "label": "Motosiklet (dört tekerlekli)",
+          "value": "Net motor gücü 15 kW'ı, net ağırlığı 400 kg'ı (yük taşımacılığında 550 kg'ı) aşmayan",
+          "refs": [
+            "3"
+          ]
+        },
+        {
+          "label": "Motorlu bisiklet (moped)",
+          "value": "Azami hız 45 km/saat; içten yanmalıda 50 cm³; elektriklide 4 kW; dört tekerlekli olanda net ağırlık 350 kg",
+          "refs": [
+            "3"
+          ]
+        },
+        {
+          "label": "Elektrikli bisiklet",
+          "value": "Sürekli anma gücü en fazla 0,25 kW; güç en geç 25 km/saatte kesilir",
+          "refs": [
+            "3"
+          ]
+        },
+        {
+          "label": "Elektrikli skuter: azami hız",
+          "value": "25 km/saat",
+          "refs": [
+            "3"
+          ]
+        },
+        {
+          "label": "Sağlık Bakanlığının kaydını tuttuğu ölümler",
+          "value": "Kazadan sonraki 30 gün içinde; bildirim takip eden ayın sonuna kadar Emniyet Genel Müdürlüğüne",
+          "refs": [
+            "8"
+          ]
+        },
+        {
+          "label": "Ağırlık-boyut kontrolü yetkili işletmesine eksiklik giderme süresi",
+          "value": "Azamî 15 gün",
+          "refs": [
+            "8"
+          ]
+        },
+        {
+          "label": "Aykırı hareketi tespit edilen yetkili işletme sahibine ceza",
+          "value": "1.700 TL",
+          "refs": [
+            "8"
+          ]
+        },
+        {
+          "label": "Komisyondaki üniversite, vakıf, kamuya yararlı dernek veya kuruluş temsilcileri",
+          "value": "Toplam en fazla 3",
+          "refs": [
+            "12"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Tescil, ayırım işaretleri ve resmî araç rengi",
+      "articleRefs": [
+        "21",
+        "26",
+        "28"
+      ],
+      "body": "**Tescil (md 21)**\n- Tescil edilen araçlar **Tescil Belgesi** ve **Tescil Plakası** alınmadan karayollarına çıkarılamaz.\n- İstisna: İlk tescili yapılan araçlarda, geçici belgelerin geçerlilik süresi içinde tescil belgesi alma zorunluluğu aranmaz.\n- Bu kurala aykırı araç, eksiklikleri giderilinceye kadar trafikten menedilir. Araç trafikten çekilmişse, çekme tarihi itibarıyla trafik tescil kaydı açılır ve ilgili vergi dairesine bildirilir.\n- Tescil belgesi geçersiz duruma gelince **sürekli** olarak geri alınır. Üzerinde eksik veya yanlış bilgi varsa **geçici** olarak geri alınır. Her iki durumda da geri alan trafik zabıtasıdır.\n- **Hurdaya çıkarılmış** araçların karayolunda sürülmesi yasaktır. Sürülürse: sürücüye idari para cezası verilir, araç trafikten menedilir, mülki amir araca el koyar ve aracın mülkiyeti kamuya geçer.\n\n**Ayırım işaretleri (md 26)**\n- Belirli araçlarda, çalışma yerini ve şeklini, kapasite ve diğer niteliklerini belirleyen ayırım işaretleri bulundurmak zorunludur. Bu işaretleri bulunmayan araçlar trafik zabıtasınca trafikten men edilir.\n- Mevzuatta belirtilen ışıklı ve/veya sesli uyarı cihazlarının, mevzuatta izin verilmeyen araçlara takılması ve kullanılması yasaktır. Bu cihazlara mülki amir el koyar ve mülkiyetlerinin kamuya geçirilmesine karar verir.\n- İzinsiz yazılar sildirilir. İzinsiz donanımlar söktürülür; bütün giderler ve sorumluluk işletene aittir.\n\n**Resmî araç rengi (md 28)**\n- Devlet malı araçların tescil plakalarının rengi ayrı olur.\n- Emniyet, Jandarma ve Sahil Güvenlik araçlarının boyama şekli ile ayırım işaretleri; diğer resmi ve özel kuruluşların ve gerçek ve tüzelkişilerin araçlarında kullanılamaz. Aykırı araçlar aykırılık giderilinceye kadar trafikten men edilir."
+    },
+    {
+      "type": "trap",
+      "title": "Hurda araç, uyarı cihazı ve resmî boya",
+      "articleRefs": [
+        "21",
+        "26",
+        "28"
+      ],
+      "body": "Bu üç maddede 'trafikten men', 'el koyma' ve 'kamuya geçme' sıkça karıştırılır:\n- **Hurda araç** karayolunda yakalanırsa üç sonuç birlikte gelir: trafikten men, mülki amirin el koyması ve mülkiyetin kamuya geçmesi. Şu şıklar yanlıştır: araç sahibine iade edilir, yeniden tescil edilir, muayeneye gönderilir.\n- **Tescil kaydının açılması** başka bir duruma aittir: trafikten çekilmiş olduğu hâlde tescil belgesi ve plakası olmadan karayoluna çıkarılan araç. Hurda aracın sonucu ise mülkiyetin kamuya geçmesidir.\n- **Işıklı/sesli uyarı cihazında** tek ölçüt, mevzuatın o araca izin verip vermediğidir. Şu şıklar yanlıştır: il trafik komisyonu izin verebilir, ticari araçlarda serbesttir, tescile işletilir. İzinli araçta bile cihazın takılacağı yerlerin dışında bulundurulması ayrı bir ihlaldir.\n- **Emniyet, Jandarma ve Sahil Güvenlik boyası** başka hiçbir resmî veya özel kuruluşun ya da kişinin aracında kullanılamaz. Vali izni, komisyon kararı ya da kamu hizmeti gören özel kuruluş istisnası yoktur. Yaptırım ihtar değil, aykırılık giderilinceye kadar trafikten mendir."
+    },
+    {
+      "type": "rule",
+      "title": "Belgesiz sürüş, yaş sınırları, sınıf ve süre",
+      "articleRefs": [
+        "36",
+        "37",
+        "39"
+      ],
+      "body": "**Belgesiz sürüş (md 36)**\n- Motorlu araçların sürücü belgesi olmayan kişilerce karayollarında sürülmesi **ve sürülmesine izin verilmesi** yasaktır.\n- Araçları şu kişiler sürebilir: Yönetmelikte sınıfları belirtilen sürücü belgesine sahip olanlar, çok taraflı anlaşmalara göre sürücü belgesi bulunanlar veya geçerli uluslararası sürücü belgesi olanlar.\n- Belgesiz, belgesi geri alınmışken ya da belgesi iptal edilmişken araç kullanan sürücüye idari para cezası verilir. Sürülmesine izin veren **işletene de tescil plakası üzerinden** 40.000 Türk lirası idari para cezası verilir.\n\n**Belge gerekmeyenlerde yaş (md 37)**\nBu kişilerin sürücü belgesi alması zorunlu değildir, ama şu yaşları bitirmiş olmaları gerekir:\n- Bisiklet: **11**\n- Elektrikli bisiklet ve elektrikli skuter: **15**\n- Motorsuz taşıt kullananlar ve hayvan sürücüleri: **13**\n- Hepsinin bedensel ve ruhsal bakımdan sağlıklı olması da zorunludur. Bu şartlara uymayanlara araç kullandıranlar ve hayvan tevdi edenler cezalandırılır.\n\n**Sınıf ve süre (md 39)**\n- Belge sınıfının dışındaki aracı sürmek yasaktır. Sürücüye idari para cezası verilir; ona araç kullandıran araç sahibine de tescil plakası üzerinden aynı miktarda ceza verilir.\n- Sürücü belgeleri **süreli** verilir. Yenilenen belgeden harç alınmaz.\n- Geçerlilik süresi dolmuş belgeyle araç kullanan sürücüye idari para cezası verilir **ve sürücü belgesi geri alınır**.\n- Dış ülke belgesiyle, yönetmelikteki süre ve şartlara aykırı araç kullananlara her seferinde ceza verilir."
+    },
+    {
+      "type": "rule",
+      "title": "Sürücü belgesi alma şartları",
+      "articleRefs": [
+        "41"
+      ],
+      "body": "Sürücü belgesi alacakların aşağıdaki şartları taşıması **zorunludur**:\na) Yönetmelikte belirlenen yaş ve deneyim şartlarını taşımak\nb) Öğrenim durumu itibarıyla **en az ilkokul** düzeyinde eğitim almış olmak\nc) İçişleri ve Sağlık bakanlıklarınca müştereken çıkarılacak yönetmelikteki sağlık şartlarını taşımak\nd) Sürücü kurslarında teorik ve uygulamalı eğitimi tamamlayıp sınavları başararak **motorlu taşıt sürücüsü sertifikası** almış olmak\ne) Adli sicilinde, maddede sayılan belirli suçlardan hüküm giydiğine dair kayıt bulunmamak\nf) Önceden verilmiş **aynı sınıf** başka bir sürücü belgesi bulunmamak\ng) Başka sınıf belge almak için: daha önce geri alınmış belgenin, şartlar yerine getirildiği için sahibine iade edilmiş olması\n\n**Şartsız veya hileli alınmış belge:** Şartlardan biri olmadan ya da şartlar hileli yollarla temin edilerek belge alındığı anlaşılırsa belge, **sürücü belgesi vermeye yetkili kurumca iptal** edilir. Kişi bu maddeye uygun olarak yeniden sürücü sertifikası alırsa kendisine yeniden belge verilir.\n\n**Sonradan gelen mahkûmiyet:** Belge alındıktan sonra (e) bendindeki suçlardan biriyle mahkûmiyet olursa belge, **md 6'da sayılan görevlilerce** geri alınır. Geri alma, (e) bendindeki şartlar sağlanıncaya kadar sürer."
+    },
+    {
+      "type": "rule",
+      "title": "Sınav, sertifika ve askeri sürücü belgesi",
+      "articleRefs": [
+        "42",
+        "43"
+      ],
+      "body": "**Sınav ve sertifika**\n- Teorik sınavı, yazılı ya da elektronik ortamda **Millî Eğitim Bakanlığı** yapar.\n- Uygulamalı eğitimi kurstan alıp teorik sınavı geçen aday, Millî Eğitim Bakanlığının uygulamalı sınavına girer. Bunu da başarana motorlu taşıt sürücüsü sertifikası verilir.\n- Eğitim ve sınav esasları, İçişleri Bakanlığının uygun görüşü alınarak Millî Eğitim Bakanlığının yönetmeliğiyle belirlenir.\n- Sınav ücretini ve görev alanlara ödenecek ücretleri **her yıl Millî Eğitim Bakanlığı** belirler.\n- İş makinesi sürücülerinin eğitimlerini ve belgelerini, Millî Eğitim Bakanlığı veya onun yetkilendirdiği kurumlar verir.\n\n**Emniyet ve Jandarma sertifikası**\n- **Emniyet:** Emniyet Genel Müdürlüğü personeline ve bağlı eğitim-öğretim kurumlarında öğrenim görenlere verilir. Onay makamı illerde **vali**, merkez teşkilatı için **Emniyet Genel Müdürü**dür. Sınavı, Emniyet Genel Müdürlüğünce nitelikleri belirlenen sınav sorumluları yapar.\n- **Jandarma:** Subay, astsubay, uzman jandarma, uzman erbaş ve Jandarma ve Sahil Güvenlik Akademisi öğrencilerine verilir. Onay makamı illerde **vali**, merkez teşkilatı için **Jandarma Genel Komutanı**dır.\n- Bu sertifikalar, sayılanlar dışında kimseye verilmez.\n\n**Belgeye dönüşüm**\n- Sürücü belgelerinin düzenlenmesi, kişiselleştirilmesi, basımı ve teslimi **İçişleri Bakanlığınca** yapılır. Teslim, belirlenen kamu kurumlarına veya özel hukuk tüzel kişilerine de yaptırılabilir.\n- Sertifika, sınıfına uygun sürücü belgesine dönüştürülmedikçe karayolunda araç kullanma yetkisi vermez. Dönüştürmeden araç kullanan sürücüye ve ona araç kullandıran araç sahibine ceza verilir.\n\n**Askeri sürücüler (md 43)**\n- Er ve erbaş sınıfından askeri araç sürücülerinin sınav ve belge usulü, Milli Savunma Bakanlığının yönetmeliğiyle belirlenir.\n- Bu belgeler **sadece askeri araçlar için** ve **askerlik süresince** geçerlidir."
+    },
+    {
+      "type": "trap",
+      "title": "Sürücü belgesinde çeldirici şıklar",
+      "articleRefs": [
+        "36",
+        "39",
+        "41",
+        "42",
+        "43"
+      ],
+      "body": "Sürücü belgesi sorularındaki yanlış şıklar genellikle şu noktalarda kurulur:\n- **Eğitim şartı:** En az **ilkokul**dur. Şıkta 'ortaokul' görüyorsan, zorunlu olmayan şart odur.\n- **Sınav ücreti:** Ücreti **her yıl Millî Eğitim Bakanlığı** belirler. 'Hazine ve Maliye Bakanlığı' şıkkı yanlıştır.\n- **Emniyet sertifikası:** İllerde **valinin** onayıyla verilir. Emniyet Genel Müdürünün onayı yalnız merkez teşkilatı içindir. İl emniyet müdürü ya da il millî eğitim müdürü onay makamı değildir.\n- **Askeri belge:** **Sadece askeri araçlar** için ve **askerlik süresince** geçerlidir. Şu şıklar yanlıştır: 'her cins araç', 'terhisten sonra dönüştürülünceye kadar geçerli', 'süresiz'.\n- **İşleten:** Belgesiz kişiye aracını kullandıran işleten de sorumludur. **İşletene de tescil plakası üzerinden** idari para cezası verilir. 'İşletenin belgesi geri alınır' ve 'işletene yaptırım uygulanmaz' şıkları yanlıştır.\n- **Süresi dolmuş belge:** Sürücüye **para cezası** verilir **ve belge geri alınır**. Araç men, belge iptali ya da ihtar yoktur.\n- **İptal mi, geri alma mı?** Hileli ya da şartsız alınmış belge yetkili kurumca **iptal** edilir. Belgeyi aldıktan sonra gelen mahkûmiyette ise belge, md 6'daki görevlilerce şart sağlanıncaya kadar **geri alınır**."
+    },
+    {
+      "type": "rule",
+      "title": "Belge sahibinin yükümlülükleri ve sağlık değişikliği",
+      "articleRefs": [
+        "44",
+        "45"
+      ],
+      "body": "**Belge sahibinin yükümlülükleri (md 44)**\n- İkamet adresi değişikliğini, belgeyi veren kuruluşa **otuz gün içinde** bildirmek\n- Araç kullanırken sürücü belgesini yanında bulundurmak ve yetkililerin her isteyişinde göstermek\n- Bu hükümlere uymayan sürücüler para cezası ile cezalandırılır.\n\n**Sağlık değişikliği (md 45)**\n- Sürücü belgesi sahibinde, sağlığı bakımından sürücülüğe engel **aşikar bir değişiklik** görülebilir. Bu tespit edilirse trafik görevlileri **sürücü belgesini geri alır** ve kişinin sağlık kuruluşlarında muayenesini ister.\n- Sürücülüğe engel bir hâlin olmadığı ya da bu hâlin sonradan ortadan kalktığı sağlık raporuyla tespit edilirse belge kişiye **iade edilir**.\n- Bu durumda belge kişide bırakılmaz ve yetkili kurumca doğrudan iptal edilmez. Yol, geri alma ve sağlık muayenesidir."
+    },
+    {
+      "type": "numbers",
+      "title": "Tescil ve sürücü belgesi: cezalar, yaşlar, süreler",
+      "articleRefs": [
+        "21",
+        "26",
+        "36",
+        "37",
+        "39",
+        "42",
+        "44"
+      ],
+      "rows": [
+        {
+          "label": "Tescil belgesi ve plakası olmadan karayoluna çıkan sürücü",
+          "value": "46.000 TL; araç eksiklik giderilinceye kadar trafikten men",
+          "refs": [
+            "21"
+          ]
+        },
+        {
+          "label": "Hurdaya çıkarılmış aracı karayolunda süren",
+          "value": "46.000 TL; araç men, mülki amir el koyar, mülkiyet kamuya geçer",
+          "refs": [
+            "21"
+          ]
+        },
+        {
+          "label": "Ayırım işareti yükümlülüğüne veya yönetmeliğe aykırı sürücü",
+          "value": "690 TL",
+          "refs": [
+            "26"
+          ]
+        },
+        {
+          "label": "İzin verilmeyen araçta ışıklı/sesli uyarı cihazı",
+          "value": "96.000 TL; belge 30 gün geri alınır, araç 30 gün men",
+          "refs": [
+            "26"
+          ]
+        },
+        {
+          "label": "Aynı ihlal, son ihlalden geriye bir yıl içinde iki veya daha fazla kez",
+          "value": "Her seferinde 192.000 TL; belge 60 gün geri alınır, araç 60 gün men",
+          "refs": [
+            "26"
+          ]
+        },
+        {
+          "label": "İzinli araçta cihazı takılacağı yerlerin dışında bulundurma",
+          "value": "96.000 TL; son ihlalden geriye bir yıl içinde iki veya daha fazla kez ihlalde her seferinde 192.000 TL, belge 30 gün geri, araç 30 gün men",
+          "refs": [
+            "26"
+          ]
+        },
+        {
+          "label": "60 gün geri alınan belgenin iadesi",
+          "value": "Psiko-teknik değerlendirme ve psikiyatri uzmanı muayenesi; ayrıca bu madde kapsamında geri alınan bütün belgelerde (otuz günlük geri almalar dahil) trafik idari para cezalarının tamamının tahsili",
+          "refs": [
+            "26"
+          ]
+        },
+        {
+          "label": "Sürücü belgesi olmadan motorlu araç kullanma",
+          "value": "40.000 TL",
+          "refs": [
+            "36"
+          ]
+        },
+        {
+          "label": "Belge geçici olarak ya da tedbiren geri alınmışken araç kullanma",
+          "value": "200.000 TL",
+          "refs": [
+            "36"
+          ]
+        },
+        {
+          "label": "Belge iptal edilmişken araç kullanma",
+          "value": "200.000 TL",
+          "refs": [
+            "36"
+          ]
+        },
+        {
+          "label": "Belgesiz sürüşe izin veren işleten",
+          "value": "Tescil plakası üzerinden 40.000 TL",
+          "refs": [
+            "36"
+          ]
+        },
+        {
+          "label": "Bisiklet kullanma yaşı",
+          "value": "11 yaşını bitirmiş",
+          "refs": [
+            "37"
+          ]
+        },
+        {
+          "label": "Elektrikli bisiklet ve elektrikli skuter kullanma yaşı",
+          "value": "15 yaşını bitirmiş",
+          "refs": [
+            "37"
+          ]
+        },
+        {
+          "label": "Motorsuz taşıt kullanma ve hayvan sürme yaşı",
+          "value": "13 yaşını bitirmiş",
+          "refs": [
+            "37"
+          ]
+        },
+        {
+          "label": "Belge sınıfı dışındaki aracı sürme",
+          "value": "700 TL; araç sahibine de tescil plakası üzerinden aynı miktar",
+          "refs": [
+            "39"
+          ]
+        },
+        {
+          "label": "Geçerlilik süresi dolmuş belgeyle araç kullanma",
+          "value": "343 TL; sürücü belgesi geri alınır",
+          "refs": [
+            "39"
+          ]
+        },
+        {
+          "label": "Dış ülke belgesiyle süre ve şartlara aykırı araç kullanma",
+          "value": "Her seferinde 343 TL",
+          "refs": [
+            "39"
+          ]
+        },
+        {
+          "label": "Sertifikayı sürücü belgesine dönüştürmeden araç kullanma",
+          "value": "700 TL; araç sahibine de tescil plakası üzerinden aynı miktar",
+          "refs": [
+            "42"
+          ]
+        },
+        {
+          "label": "İkamet adresi değişikliğini bildirme süresi",
+          "value": "30 gün",
+          "refs": [
+            "44"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "compare",
+      "title": "Geri alma mı, iptal mi?",
+      "articleRefs": [
+        "39",
+        "41",
+        "45"
+      ],
+      "rows": [
+        {
+          "aspect": "Hangi hâlde?",
+          "left": "Geri alma: Süresi dolmuş belgeyle araç kullanma (md 39); belge alındıktan sonra md 41 (e) bendindeki suçlardan mahkûmiyet; sağlıkta sürücülüğe engel aşikar değişiklik (md 45)",
+          "right": "İptal: Md 41'de aranan şartlardan biri olmadan belge alınması ya da şartların hileli yollarla temin edilmesi",
+          "refs": [
+            "39",
+            "41",
+            "45"
+          ]
+        },
+        {
+          "aspect": "Kim yapar?",
+          "left": "Mahkûmiyette md 6'da sayılan görevliler; sağlık değişikliğinde trafik görevlileri",
+          "right": "Sürücü belgesi vermeye yetkili kurum",
+          "refs": [
+            "41",
+            "45"
+          ]
+        },
+        {
+          "aspect": "Belgenin akıbeti",
+          "left": "Mahkûmiyette (e) bendindeki şartlar sağlanıncaya kadar geri alınır; sağlıkta engel olmadığı ya da ortadan kalktığı sağlık raporuyla tespit edilince iade edilir",
+          "right": "Maddeye uygun olarak yeniden sürücü sertifikası alınması hâlinde yeniden sürücü belgesi verilir",
+          "refs": [
+            "41",
+            "45"
+          ]
+        },
+        {
+          "aspect": "Eşlik eden işlem",
+          "left": "Süresi dolan belgede ayrıca idari para cezası; sağlık değişikliğinde sağlık kuruluşlarında muayene istenir",
+          "right": "Yeniden sürücü sertifikası alma şartı",
+          "refs": [
+            "39",
+            "41",
+            "45"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "exam_stats",
+      "title": "Sınav der ki",
+      "rows": [
+        {
+          "label": "Bu ünitenin maddelerinden yayındaki soru",
+          "value": "30",
+          "refs": [
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "10",
+            "12",
+            "21",
+            "26",
+            "28",
+            "36",
+            "37",
+            "39",
+            "41",
+            "42",
+            "43",
+            "44",
+            "45"
+          ]
+        },
+        {
+          "label": "md 6",
+          "value": "4 soru",
+          "refs": [
+            "6"
+          ]
+        },
+        {
+          "label": "md 5",
+          "value": "3 soru",
+          "refs": [
+            "5"
+          ]
+        },
+        {
+          "label": "md 41",
+          "value": "3 soru",
+          "refs": [
+            "41"
+          ]
+        },
+        {
+          "label": "md 7",
+          "value": "2 soru",
+          "refs": [
+            "7"
+          ]
+        },
+        {
+          "label": "md 8",
+          "value": "2 soru",
+          "refs": [
+            "8"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "10",
+        "12",
+        "21",
+        "26",
+        "28",
+        "36",
+        "37",
+        "39",
+        "41",
+        "42",
+        "43",
+        "44",
+        "45"
+      ],
+      "generated": true
+    },
+    {
+      "type": "bridge",
+      "title": "Bu üniteden soru çöz",
+      "articleRefs": [
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "10",
+        "12",
+        "21",
+        "26",
+        "28",
+        "36",
+        "37",
+        "39",
+        "41",
+        "42",
+        "43",
+        "44",
+        "45"
+      ],
+      "generated": true,
+      "rows": [
+        {
+          "label": "Madde kapsamlı seans",
+          "value": "md 3–8, 10, 12, 21, 26, 28, 36, 37, 39, 41–45, 10 soru",
+          "refs": [
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "10",
+            "12",
+            "21",
+            "26",
+            "28",
+            "36",
+            "37",
+            "39",
+            "41",
+            "42",
+            "43",
+            "44",
+            "45"
+          ]
+        }
+      ]
+    }
+  ]
+}

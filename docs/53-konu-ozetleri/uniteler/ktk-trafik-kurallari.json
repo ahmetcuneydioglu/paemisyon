@@ -1,0 +1,720 @@
+{
+  "unit": {
+    "slug": "ktk-trafik-kurallari",
+    "legislationSlug": "2918-sayili-karayollari-trafik-kanunu",
+    "topicId": "3f91916c-8d15-40f4-bb20-5bcca9253c34",
+    "title": "Trafik kuralları",
+    "subtitle": "Şerit, alkol, hız, geçme, kavşak, park, yaya, geçiş üstünlüğü ve kaza kuralları",
+    "articleFrom": "46",
+    "articleTo": "83",
+    "readingMinutes": 14,
+    "sourceLabel": "AI özeti — 2918 Sayılı Karayolları Trafik Kanunu, md 46–48, 51–57, 61, 65, 66, 68, 71, 74, 76, 79, 81–83",
+    "articleNos": [
+      "46",
+      "47",
+      "48",
+      "51",
+      "52",
+      "53",
+      "54",
+      "55",
+      "56",
+      "57",
+      "61",
+      "65",
+      "66",
+      "68",
+      "71",
+      "74",
+      "76",
+      "79",
+      "81",
+      "82",
+      "83"
+    ],
+    "generatedBy": "claude-opus-5-5 (ozet-uret.ts)",
+    "sortOrder": 2
+  },
+  "blocks": [
+    {
+      "type": "concept",
+      "title": "Trafik sağdan akar",
+      "body": "Karayollarında trafik sağdan akar. Bu ünitedeki kuralların hepsi bu cümleye dayanır. Aksine bir işaret yoksa aracını gidiş yönüne göre yolun sağından sürersin. Çok şeritli yolda, yol ve trafik durumuna göre hızının gerektirdiği şeridi seçersin. Şerit değiştirmeden önce gireceğin şeritteki araçların emniyetle geçmesini beklersin. Gidişe ayrılan en soldaki şeridi de sürekli işgal etmezsin. Hayvan sürücüleri bile hayvanlarını gidiş yönünde yolun en sağından ve en az genişlik işgal ederek götürmek zorundadır.",
+      "articleRefs": [
+        "46"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Şerit kuralları ve ters yön",
+      "body": "**Şerit sınırı kimler için?** Motosiklet, otomobil, kamyonet, panelvan, minibüs ve otobüs **dışındaki** araçları kullanan sürücüler, aynı yönde:\n- İki şeridi bulunan yollarda geçme ve dönme dışında **soldaki şeridi** kullanamaz.\n- İkiden fazla şeridi bulunan yollarda geçme dışında **sağdan ikinci şeridi** kullanamaz.\n- İkiden fazla şeridi bulunan yollarda sola dönme dışında **en sağdaki iki şerit** dışındaki şeritleri kullanamaz.\n\n**Diğer zorunluluklar:**\n- Emniyet şeritleri ve banketler kullanılmaz. Şu durumlar istisnadır: trafik kazası, arıza, acil yardım, kurtarma, kar mücadelesi, kaza incelemesi, genel güvenlik ve asayişin sağlanması gibi durumlar.\n- Trafiği aksatacak veya tehlikeye sokacak şekilde ardı ardına birden fazla şerit değiştirilmez.\n- Tekyönlü karayollarında ve bölünmüş karayollarında araç ters istikamette sürülmez.\n- Yaya yollarında araç sürülmez.\n- Bisiklet yolu ve bisiklet şeridinde yalnız bisiklet ve elektrikli skuter sürülür.\n- Konvoy hâlinde veya tek başına, keyfi hareketlerle trafiği engelleyecek şekilde araç karayolunda durdurulmaz.\n- Trafikte saldırı amacıyla başka bir aracı ısrarla takip etmek veya bu amaçla araçtan inmek yasaktır.\n\n**İstisna:** Kanuna uygun düzenlenen toplantı ve gösteri yürüyüşleri sırasında, konvoy hâlinde veya tek başına aracı karayolunda durdurarak trafiği engelleme fiili işlenirse bu bentteki kabahat oluşmaz.",
+      "articleRefs": [
+        "46"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Kime önce uyulur? Kırmızı ışıkta tekrarlar",
+      "body": "**Uyma sırası:**\n1. Trafik zabıtası veya özel kıyafetli ya da işaret taşıyan yetkili kişilerin uyarı ve işaretleri\n2. Trafik ışıkları\n3. Trafik işaret levhaları, cihazları ve yer işaretlemeleri\n4. Yönetmelikteki diğer kural, yasak ve yükümlülükler\n\n**Kırmızı ışık ihlalleri:** Tekrarlar, son ihlalden geriye doğru **bir yıl** içinde sayılır.\n- Üç defa ihlalde sürücü belgesi **otuz gün** geri alınır.\n- Dört defa ihlalde belge **altmış gün** geri alınır.\n- Beş defa ihlalde belge **doksan gün** geri alınır.\n- Altı defa ihlalde belge **iptal** edilir. Yeniden kursa başlamak için şunlar gerekir: iptalden itibaren en az bir yıl geçmesi, cezaların tamamının tahsili, psiko-teknik değerlendirme ve psikiyatri uzmanı muayenesi.\n- Kırmızı ışığı ihlal ederek kazaya sebep olan sürücünün belgesi **altmış gün** geri alınır.\n\n**Dur ikazına uymayıp kaçma:** 200.000 Türk lirası idari para cezası uygulanır. Sürücü belgesi altmış gün geri alınır ve araç altmış gün trafikten menedilir.",
+      "articleRefs": [
+        "47"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Çekici, gösteri ve uyma sırası",
+      "body": "**Sağdan ikinci şerit:** Bu yasak; motosiklet, otomobil, kamyonet, panelvan, minibüs ve otobüs **dışındaki** araçlar için konmuştur. Şıklarda otomobil, minibüs, panelvan veya otobüs görürsen bunlar listede sayılan muaf araçlardır. Doğru cevap, çekici gibi listede olmayan araçtır.\n\n**Gösteri tuzağı:** Kanuna uygun toplantı ve gösteri yürüyüşünde aracı durdurup trafiği engellemek söz konusu olabilir. Bu durumda şu şıklar cazip görünür: 90.000 Türk lirası ceza, iki kat uygulama, altmış gün geri alma, altmış gün men. Hepsi yanlış; bu durumda o bentteki kabahat **oluşmaz**.\n\n**Sıralama tuzağı:** Işık levhadan önce gelir. Ama ikisinden de önce zabıtanın işareti gelir. Doğru sıra: zabıta → ışık → levha.",
+      "articleRefs": [
+        "46",
+        "47"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Alkol ve uyuşturucu: test ve örnek alma",
+      "body": "Uyuşturucu veya uyarıcı madde almış ya da alkollü sürücünün karayolunda araç sürmesi **yasaktır**. Tespit için kolluk teknik cihaz veya test kiti kullanır.\n- **Zorunlu muayene:** Şu kazalara karışan kişi muayeneye tabi tutulur: yaralanmalı, ölümlü veya kollukça müdahil olunan maddi hasarlı kaza.\n- **İtiraz veya ölçüme izin vermeme:** Bu kazalara karışan sürücü şu yerlerden en yakınına götürülür: adli tıp kurumu, adli tabiplik veya Sağlık Bakanlığına bağlı sağlık kuruluşu. Orada kan, tükürük veya idrar gibi örnekler alınır. Bu işlemde 5271 sayılı Ceza Muhakemesi Kanununun 75 inci maddesi, beşinci fıkrası hariç uygulanır.\n- **Ölüm veya üfleyemeyecek kadar yaralanma:** Aynı usulle örnek alınır.\n- **Ölçüm yaptırmayan sürücü:** 150.000 Türk lirası ceza verilir, belge beş yıl geri alınır.\n- **Uyuşturucu veya uyarıcı madde aldığı tespit edilen sürücü:** 150.000 Türk lirası ceza verilir ve belge **iptal** edilir. Yeniden kursa başlamak için iptalden itibaren en az beş yıl geçmesi gerekir.\n- Uyuşturucu şüphesinde 5271 sayılı Kanunun adli kolluğa ilişkin hükümleri uygulanır.",
+      "articleRefs": [
+        "48"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Promil ve tekrar tuzakları",
+      "body": "**İtiraz eden sürücü:** İtiraz ölçümü geçersiz kılmaz, işlem durmaz. Aynı cihazla yirmi dört saat sonra tekrar ölçüm diye bir kural yoktur. Yazılı rıza şartı da yoktur. Sürücü en yakın adli tıp kurumuna veya adli tabipliğe götürülür ve vücudundan örnek alınır.\n\n**0.21 mi, 0.20 mi?** Hususi otomobil dışındaki araçlarda idari yaptırımın promil alt sınırı **0.21**'dir. **0.20** ise farklı bir eşiktir: bu araçların sürücüleri 0.20 promilin üzerinde alkollüyken kazaya sebep olursa Türk Ceza Kanununun ilgili hükümleri uygulanır. Hususi otomobilde iki eşik de 0.50'dir.\n\n**Tekrarlarda hangi yaptırım?**\n- Beş yıl içinde ikinci geri almada: sürücü davranışlarını geliştirme eğitimi.\n- Üç veya daha fazla geri almada: psiko-teknik değerlendirme ve psikiyatri uzmanı muayenesi.\n- Kursa devam ve sertifika şartı: yalnızca iptal hâllerinde.",
+      "articleRefs": [
+        "48"
+      ],
+      "counterNumbers": [
+        24
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Hız sınırı ve hız cihazları",
+      "body": "Aksine bir karar alınıp işaretlenmemişse sürücüler yönetmelikteki hız sınırlarını aşamaz.\n- **İlk ceza basamağı:** Yerleşim yeri içinde 6-10 km/s aşım, yerleşim yeri dışında 11-15 km/s aşım.\n- **En üst basamak:** Yerleşim yeri içinde 66 km/s ve daha fazla, dışında 71 km/s ve daha fazla aşım.\n- **Belge geri alma, yerleşim yeri içinde:** 46-55 km/s aşımda 30 gün, 56-65 km/s aşımda 60 gün, 66 km/s ve fazlasında 90 gün. Süreler her seferinde uygulanır.\n- **Belge geri alma, yerleşim yeri dışında:** 51-60 km/s aşımda 30 gün, 61-70 km/s aşımda 60 gün, 71 km/s ve fazlasında 90 gün.\n- Bir yıl içinde beşinci kez geri alınan belge, psiko-teknik değerlendirme ve psikiyatri uzmanı muayenesinden geçilmeden iade edilmez.\n- Nüfusu 5.000'in altındaki yerleşim yerlerinde denetim yerini **mahalli mülki idare amiri** belirler.\n- **Hız cihazı tespit edici yasağı:** Hız tespit cihazlarının yerini tespit eden veya sürücüyü ikaz eden cihazların imali, ithali ve araçta bulundurulması yasaktır.\n- İmal ve ithal edene 370.000 Türk lirası, araçta bulunduran işletene 185.000 Türk lirası ceza verilir.\n- Bu cihaza **mülki amir** el koyar; mülkiyetin kamuya geçirilmesine de mülki amir karar verir.",
+      "articleRefs": [
+        "51"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Hızını azalt, doğru kavisle dön",
+      "body": "**Hız azaltma yerleri:**\n- Kavşaklara yaklaşırken, dönemeçlere girerken, tepe üstlerine yaklaşırken, dönemeçli yollarda ilerlerken\n- Yaya geçitlerine, hemzemin geçitlere, tünellere, dar köprü ve menfezlere yaklaşırken\n- Yapım ve onarım alanlarına girerken\n\nHız ayrıca aracın yük ve teknik özelliğine, görüş, yol, hava ve trafik durumuna uydurulur. İzlenen araçla güvenli mesafe bırakılır.\n\n**Sağa dönüş:** İşaret ver, sağ şeride gir, yavaşla, **dar kavisle** dön, dönülen yolun en sağ şeridine gir.\n\n**Sola dönüş:**\n- İşaret ver, yolun soluna yaklaş, yavaşla.\n- Sağdan gelenlere ilk geçiş hakkını ver.\n- Karşıdan gelip duramayacak kadar yaklaşmış taşıtı bekle.\n- **Geniş kavisle** dön.\n- Çok şeritli yolda en sağ şerit dışında uygun bir şeride gir, sonra en kısa sürede sağa yaklaş.\n\n**Dönel kavşak:** İşaret ver, yavaşla, **orta adaya yakın şeritten** gir, gereksiz şerit değiştirme, sağa dönüş işaretiyle sağa yaklaşarak çık.\n\n**Dönel kavşakta geriye dönüş:** Sola dönüş kurallarına uyarsın. Ayrıca gireceğin yola yaklaşıncaya kadar **şeridini muhafaza edersin**.\n\nDönüşlerde ilk geçiş hakkı şunlara verilir: kurallara uygun geçen yayalar ile bisiklet yolundaki ve bisiklet şeridindeki bisiklet ve elektrikli skuter kullananlar.",
+      "articleRefs": [
+        "52",
+        "53"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Hız ve dönüşte karıştırılanlar",
+      "body": "**En düşük ceza basamağı:** Yerleşim yeri dışında 11-15 km/s'dir. 6-10 km/s basamağı yalnız yerleşim yeri içi tablosunda bulunur. 16-20, 21-25 ve 26-30 km/s daha üst basamaklardır.\n\n**El koyma kimde?** Hız cihazı tespit edicilerine el koyan da mülkiyetin kamuya geçirilmesine karar veren de **mülki amir**dir. Trafik zabıtası, Cumhuriyet savcısı veya sulh ceza hâkimi değildir.\n\n**Hız azaltma listesi:** Kavşak, tepe üstü, hemzemin geçit, yapım ve onarım alanı listede var. 'Bölünmüş karayoluna girerken' listede **yok**.\n\n**Geriye dönüş:** Şu şıkların hepsi yanlış: orta adaya en uzak şeritten girmek, en dıştaki şeride geçmek, dar kavisle dönmek. Kural, gireceğin yola yaklaşıncaya kadar şeridini korumaktır.",
+      "articleRefs": [
+        "51",
+        "52",
+        "53"
+      ]
+    },
+    {
+      "type": "numbers",
+      "title": "Sayılar: şerit, ışık, alkol, hız",
+      "rows": [
+        {
+          "label": "(g), (j), (n) bentleri ihlali",
+          "value": "90.000 TL; belge altmış gün geri alma, araç altmış gün men",
+          "refs": [
+            "46"
+          ]
+        },
+        {
+          "label": "(n) bendi otoyol, köprü, viyadük veya tünelde",
+          "value": "Ceza ve süreler iki kat",
+          "refs": [
+            "46"
+          ]
+        },
+        {
+          "label": "Saldırı amacıyla ısrarla takip",
+          "value": "180.000 TL; belge altmış gün, araç altmış gün men",
+          "refs": [
+            "46"
+          ]
+        },
+        {
+          "label": "Şerit kuralları: beş yıl içinde ikinci geri alma",
+          "value": "Sürücü belgesi iptal",
+          "refs": [
+            "46"
+          ]
+        },
+        {
+          "label": "Dur ikazına uymayıp kaçma",
+          "value": "200.000 TL; belge altmış gün, araç altmış gün men",
+          "refs": [
+            "47"
+          ]
+        },
+        {
+          "label": "Kırmızı ışık, bir yılda ikinci → altıncı defa",
+          "value": "10.000 TL → 80.000 TL",
+          "refs": [
+            "47"
+          ]
+        },
+        {
+          "label": "Kırmızı ışık, bir yılda üç / dört / beş defa",
+          "value": "Belge otuz / altmış / doksan gün",
+          "refs": [
+            "47"
+          ]
+        },
+        {
+          "label": "Kırmızı ışık, bir yılda altı defa",
+          "value": "İptal; kursa başlamak için en az bir yıl",
+          "refs": [
+            "47"
+          ]
+        },
+        {
+          "label": "Hususi otomobil alkol sınırı",
+          "value": "0.50 promil üzeri",
+          "refs": [
+            "48"
+          ]
+        },
+        {
+          "label": "Diğer araçlarda promil alt sınırı",
+          "value": "0.21",
+          "refs": [
+            "48"
+          ]
+        },
+        {
+          "label": "Ayrıca TCK 179 uncu madde üçüncü fıkra uygulanır",
+          "value": "1.00 promil üzeri",
+          "refs": [
+            "48"
+          ]
+        },
+        {
+          "label": "Kazaya sebebiyette TCK ilgili hükümleri",
+          "value": "Hususi otomobil 0.50, diğer araçlar 0.20 promil üzeri",
+          "refs": [
+            "48"
+          ]
+        },
+        {
+          "label": "Alkollü sürüş, ilk",
+          "value": "25.000 TL; belge altı ay",
+          "refs": [
+            "48"
+          ]
+        },
+        {
+          "label": "Alkollü sürüş, beş yıl içinde ikinci",
+          "value": "50.000 TL; belge iki yıl",
+          "refs": [
+            "48"
+          ]
+        },
+        {
+          "label": "Alkollü sürüş, beş yıl içinde üç ve üstü",
+          "value": "150.000 TL; her seferinde beşer yıl",
+          "refs": [
+            "48"
+          ]
+        },
+        {
+          "label": "Uyuşturucu veya uyarıcı madde",
+          "value": "150.000 TL; iptal; en az beş yıl sonra kurs",
+          "refs": [
+            "48"
+          ]
+        },
+        {
+          "label": "Ölçüm yaptırmama",
+          "value": "150.000 TL; belge beş yıl",
+          "refs": [
+            "48"
+          ]
+        },
+        {
+          "label": "Hız: belge geri alma (yerleşim içi 46-55 / 56-65 / 66+ km/s)",
+          "value": "30 / 60 / 90 gün",
+          "refs": [
+            "51"
+          ]
+        },
+        {
+          "label": "Hız: belge geri alma (yerleşim dışı 51-60 / 61-70 / 71+ km/s)",
+          "value": "30 / 60 / 90 gün",
+          "refs": [
+            "51"
+          ]
+        },
+        {
+          "label": "Hız cihazı tespit edicisi",
+          "value": "İmal ve ithal 370.000 TL; bulunduran işleten 185.000 TL",
+          "refs": [
+            "51"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "46",
+        "47",
+        "48",
+        "51"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Geçme ve geçilme",
+      "body": "**Geçme şartları:**\n- Arkandaki sürücü seni geçmeye başlamamış olacak.\n- Öndeki sürücü başka bir aracı geçme işareti vermemiş olacak.\n- Karşıdan gelen dahil kimseye tehlike yaratmadan, geçme şeridinin yeteri kadar ilerisi boş olacak.\n\n**Nasıl geçilir?**\n- Geçme, geçilecek aracın **solundaki** şeritten yapılır.\n- Geçilecek araç ses ve ışıkla uyarılır. Güvenli mesafe gidildikten sonra işaret verilip izlenecek şeride girilir.\n- Araçların **sağından** veya **banketten** geçmek yasaktır.\n- **İstisna:** Başka yola veya bitişik mülke girmek ya da sola yanaşıp durmak için sola dönüş işareti veren aracın **sağındaki** şeritten geçilebilir.\n- Şerit değiştirmeden bir şeritteki taşıtların diğer şerittekilerden hızlı gitmesi geçme sayılmaz.\n\n**Geçmenin yasak olduğu yerler:**\n- Trafik işaretiyle yasaklanan yerler\n- Görüşü yetersiz tepe ve dönemeçler\n- Yaya ve okul geçitleri yaklaşımı\n- Kavşaklar, demiryolu geçitleri ve bunların yaklaşımı\n- Gidiş ve geliş için **birer şeridi** bulunan iki yönlü köprü ve tüneller\n\n**Geçilen sürücünün yükümlülükleri:**\n- İki yönlü yolda sağ kenardan gider.\n- Dörtten fazla şeritli veya bölünmüş yolda şeridini izler ve **hızını artırmaz**.\n- Geçiş üstünlüğü olan araca yer açar, gerekirse durur.\n- Geçilirken başka bir aracı geçmeye veya sola dönmeye kalkışamaz.\n\n**Yol vermeme cezası:**\n- 71 inci maddenin (a) ve (b) bentlerindeki araçlara (cankurtaran, itfaiye vb.) yol vermeyene: 46.000 TL, belge **otuz gün** geri alma, araç otuz gün men.\n- (c)–(g) bentlerindeki araçlara yol vermeyene: 15.000 TL.",
+      "articleRefs": [
+        "54",
+        "55",
+        "71"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Şerit izleme ve kavşakta geçiş hakkı",
+      "body": "**Şerit izleme yasakları:**\n- Geçme, dönme, duraklama, durma ve park dışında şerit değiştirmek veya iki şeridi birden kullanmak\n- Kavşağa yaklaşırken yerleşim yeri dışında **yüzelli metre**, yerleşim yerinde **otuz metre** içinde ve kavşakta şerit değiştirmek\n- İşaret vermeden şerit değiştirmek\n\n**Dik yokuşta karşılaşma:** Çıkan araç için geçiş güçse **inen araç** yol verir. Varsa sığınma cebine girer, yoksa sağa yanaşıp durur, gerekirse geri gider.\n\n**Dar yolda geçiş kolaylığı sırası:** otomobil, minibüs, kamyonet, otobüs, kamyon arazi taşıtı, lastik tekerlekli traktör, iş makineleri. Her biri **kendisinden öncekilere** kolaylık sağlar. Motorsuz araçlar da motorlulara kolaylık sağlar.\n\n**Zabıtasız, levhasız, ışıksız kavşakta kim kime yol verir?**\n- Herkes, geçiş üstünlüğü olan araca ve doğru geçen tramvaya\n- Bölünmüş yola çıkan, o yoldan geçene\n- **Tali yoldan çıkan, anayoldan gelene**\n- Dönel kavşağa gelen, **kavşağın içindekine**\n- İz veya mülkten çıkan, karayolundan gelene\n\nKavşak kolları işaretle ayrılmamışsa: motorsuz araç motorluya, soldaki araç **sağdan gelene** yol verir.\n\n**Kavşağa girme yasağı:** Işık izin verse bile kavşak içinde durmak zorunda kalacaksan veya diğer yönün geçişini engelleyeceksen kavşağa giremezsin.\n\n**Diğer kavşak kuralları:**\n- Zabıta veya ışıkla yönetilen kavşakta gereksiz yavaşlamak, durmak, taşıttan inmek ve motoru durdurmak yasaktır.\n- Aksine işaret yoksa ray üzerinde hareket eden taşıtlara ilk geçiş hakkı verilir.",
+      "articleRefs": [
+        "56",
+        "57"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Geçişte ters çevrilen önermeler",
+      "body": "**Cankurtarana yol vermeme:** Belge **otuz gün** geri alınır. Bunu altmış veya doksan günle karıştırma.\n\n**Sağdan geçme:** Sola dönüş işareti veren aracı sağdan geçmek kanuna uygundur. Dayanak 'sağındaki şeritten geçilebilir' istisnasıdır. 'Şerit değiştirmeden hızlı gitmek geçme sayılmaz' kuralı ayrı bir konudur.\n\n**Tünel:** Geçme yasağı yalnız birer şeritli, iki yönlü köprü ve tünellerde geçerlidir. Bölünmüş yolun çok şeritli tünelinde bu yasak yoktur.\n\n**Anayol–tali yol:** Yol veren, tali yoldan anayola çıkan sürücüdür. Anayoldan gelen, tali yoldakine yol vermez.\n\n**Geçiş kolaylığı:** Kamyon, listede kendinden önce gelen otobüse kolaylık sağlar. Şunlar yanlıştır: otomobilin minibüse, minibüsün kamyonete, kamyonetin otobüse kolaylık sağlaması. Kolaylık daima listede öndekine sağlanır.\n\n**Yeşil ışıkta tıkanık kavşak:** Işık izin verse de içeride kalacaksan kavşağa girmen yasaktır. Kavşak dışında beklersin.",
+      "articleRefs": [
+        "54",
+        "55",
+        "56",
+        "57"
+      ],
+      "counterNumbers": [
+        60,
+        90
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Park yasakları ve yükleme",
+      "body": "**Park etmenin yasak olduğu yerler:**\n- Duraklamanın yasaklandığı yerler ve geçiş yollarının önü\n- Yangın musluklarına her iki yönden **beş metre** içi\n- Toplu taşıma durak levhalarına iki yönden **onbeş metre** içi\n- Geçiş üstünlüğü olan araçların giriş-çıkış levhasından **onbeş metre** içi\n- Kamunun faydalandığı yerlerin kapılarına her iki yönde **beş metre** içi\n- Park için yer ayrılmamış veya trafik işaretleriyle belirtilmemiş alt geçit, üst geçit ve köprülerin üzeri veya bunlara **on metre** içi\n- Üç veya daha fazla taşıt yolu olan karayolunun ortadaki taşıt yolu\n- Engelliler için ayrılmış park yerleri (ceza **iki kat** artırılır)\n\nKurala aykırı park eden araç trafik zabıtasınca kaldırılabilir. Kaldırma giderleri ve ceza ödenmeden araç teslim edilmez.\n\n**Yasak yüklemeler:** taşıma sınırı üstünde yolcu almak, azami yüklü ağırlığı veya dingil ağırlığını aşmak, gabari dışı yük yüklemek, yük üstüne yolcu bindirmek, yükü uygun bağlamadan yüklemek.\n- Fazla yolcular en yakın yerleşim biriminde indirilir; sorumluluk ve giderler işletene aittir.\n- Azami yüklü ağırlık **%20'den fazla** aşılırsa fazla yük uygun hâle getirilmeden yola devam edilemez.\n- Fazla yükleme cezası %10'a kadar aşımda 10.000 TL'den başlar, %25'in üzerindeki aşımda 60.000 TL'ye çıkar. Ceza işleten ve gönderene ayrı ayrı uygulanır.",
+      "articleRefs": [
+        "61",
+        "65"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Bisiklet, elektrikli skuter, motosiklet",
+      "body": "**Nerede sürülmez?**\n- Bisiklet yolu veya şeridi varsa bisiklet ve elektrikli skuter taşıt yolunda sürülmez.\n- Bunların hiçbiri yayaların kullanmasına ayrılmış yerlerde sürülmez.\n- İkiden fazlası bir şeritte yan yana gidemez.\n\n**Eller:**\n- Bisiklet: en az bir elle\n- Elektrikli skuter ve motorlu bisiklet: manevra işareti dışında iki elle\n- Motosiklet: **devamlı** iki elle\n\n**Yolcu:** Bisiklet, motorlu bisiklet ve sepetsiz motosiklette sürücünün arkasında yeterli oturma yeri yoksa başka kişi bindirilmez.\n\n**Elektrikli skuter:**\n- Sırtta taşınabilen kişisel eşya dışında yük ve yolcu taşınmaz.\n- Otoyolda, şehirler arası karayollarında ve azami hız sınırı **50 km/s** üzerindeki yollarda kullanılamaz.\n\n**Akrobatik sürüş:** Motorlu bisiklet ve motosikleti tek teker üzerinde, seleye yatarak, selede ayağa kalkarak, kendi etrafında döndürerek veya teker kaydırarak sürmek yasaktır; izinli gösteriler hariçtir. Yaptırım: 46.000 TL, belge altmış gün geri alma, araç altmış gün men.\n\n**Paylaşımlı skuter işletmeciliği:** Ulaştırma ve Altyapı Bakanlığından yetki belgesi gerekir. Belgesiz faaliyete 86.900 TL ceza verilir.",
+      "articleRefs": [
+        "66"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Yayaların kuralları",
+      "body": "- Taşıt yolunun yanında yaya yolu, banket veya alan varsa yaya orada yürür.\n- Yetkili yönetimindeki **yaya kafileleri** taşıt yolunda yürüyebilir. Ancak en sağ şeritten fazlasını işgal edemez. Görüşün az olduğu hâllerde imkân oranında **tek sıra** yürür.\n- Yaya yolu yoksa veya kullanılamıyorsa yaya, bisiklet trafiğini engellemeden bisiklet yolunda yürür. Bisiklet yolu da yoksa taşıt yolunun kenarına yakın yürür.\n- Yaya yolu ve banketi olmayan **iki yönlü** yolda, kafile dışındaki yayalar taşıt yolunun **sol kenarını** izler.\n- Karşıya yalnız yaya ve okul geçidinden ya da kavşak giriş ve çıkışlarından geçilir. Geçitte yaya ışığı varsa ona uyulur.\n- **İstisna:** **Yüz metre** kadar mesafede geçit veya kavşak yoksa yaya karşıya geçebilir. Şartlar: trafiğe engel olmamak, güvenliğini sağlamak, en kısa doğrultuda ve en kısa zamanda geçmek.",
+      "articleRefs": [
+        "68"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Geçiş üstünlüğü sırası",
+      "body": "**Öncelik sırası:**\n1. Cankurtaran araçları, yaralı veya acil hasta taşıyan araçlar\n2. İtfaiye araçları, orman yangınlarıyla mücadele eden araçlar\n3. Hükümlü veya sanığı takip eden ya da emniyet ve asayiş için acele olay yerine giden zabıta araçları\n4. Trafik suçu işleyip kaçanı takip eden veya kaza yerine giden görevli araçları\n5. Afet ve acil durum hizmetlerinde görevli araçlar\n6. Yasama, yürütme ve yargının üst makamlarına ait listedeki araçlar\n7. Yönetmelikte belirlenen diğer araçlar\n\n**Kullanım şartları:**\n- Hak yalnız **görev hâlinde** kullanılır.\n- Halkın can ve mal güvenliği tehlikeye sokulmaz.\n- **Duyulur ve görünür** geçiş üstünlüğü işareti verilir.\n\nBu araçlar trafik kısıtlama ve yasaklarına bağlı değildir. Birbirleriyle karşılaştıklarında yukarıdaki sıra uygulanır. Zorunluluk yokken geçiş üstünlüğünü kullanmak yasaktır; cezası 46.000 TL'dir.\n\n**Örnek:** orman yangını aracı → asayiş için giden zabıta → afet aracı.",
+      "articleRefs": [
+        "71"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Yaya geçidi ve demiryolu geçidi",
+      "body": "**Görevli veya ışık olmayan, levhayla belirlenmiş yaya ve okul geçidi:**\n- Sürücü yavaşlar.\n- Geçen veya geçmek üzere olan yayaya **durarak** ilk geçiş hakkını verir. Yavaşlamak tek başına yetmez.\n- Uymayan sürücüye 488 TL ceza verilir.\n\n**Demiryolu geçidinde yasak olanlar:**\n- Geçidin durumuna uygun olmayan hızla geçmek\n- Işıklı veya sesli 'DUR' talimatına uymamak\n- İnmiş veya inmekte olan bariyer varken geçide girmek\n\n**Işık ve bariyer yoksa:** Geçmeden önce **durursun**. Demiryolu aracının yaklaşmadığından emin olduktan sonra geçersin.",
+      "articleRefs": [
+        "74",
+        "76"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Mesafe, yüzde ve sıra tuzakları",
+      "body": "**Park mesafeleri:**\n- Yangın musluğu: beş metre\n- Durak levhası ve geçiş üstünlüğü levhası: onbeş metre\n- Geçitler ve köprüler: on metre\n\n**Fazla yük:** Yola devam yasağı %20'den fazla aşımda başlar. %10, %15 ve %25 ceza basamaklarıdır.\n\n**Elektrikli skuter:** Bisiklet şeridinde sürülebilir. Yasak olan, şerit varken taşıt yolunda sürmektir. 'En az bir el' kuralı bisiklet içindir; skuterde manevra dışında iki el gerekir.\n\n**Yaya kafilesi:** Görüşün az olduğu hâllerde imkân oranında tek sıra yürür; en sağ şeridi aşmaz. Kafile dışındaki yaya sol kenarı izler. Yüz metrelik istisna, geçitsiz yerde karşıya geçmeye izin verir.\n\n**Geçiş üstünlüğü:** Orman yangını aracı (b) zabıtadan (c) önce gelir. Zabıta da afet aracından (e) önce gelir.\n\n**Bariyersiz demiryolu geçidi:** Yavaşlamak yetmez, durmak zorunludur.",
+      "articleRefs": [
+        "61",
+        "65",
+        "66",
+        "68",
+        "71",
+        "76"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Park ücreti ve kaza yükümlülükleri",
+      "body": "**Park ücreti:**\n- Ücreti yalnız park yerini tespite yetkili idare veya onun işletme izni verdiği kişiler alabilir.\n- Büyükşehirlerde yetkili idare büyükşehir belediyesidir; otoyol ve ekspresyol hariçtir.\n- Yetkisiz ücret alan veya almaya teşebbüs edene, fiili daha ağır bir ceza gerektiren bir suç oluşturmadığı takdirde, **altı aydan iki yıla kadar hapis** ve **beş bin güne kadar adli para cezası** verilir.\n\n**Kazaya karışanların yükümlülükleri:**\n- Hemen durur ve gerekli tedbiri alır.\n- Kaza trafiği, can ve mal güvenliğini etkilemiyorsa kaza yerindeki durumu değiştirmez.\n- İstenirse kimlik, adres, belge ve sigorta bilgilerini gösterir.\n- Kazayı bildirir; görevli gelmeden veya izin vermeden ayrılmaz.\n- Sahibi yokken bir araca veya eşyaya zarar verdiyse sahibini arar. Bulamazsa yazılı bilgi bırakır ve zabıtaya bildirir.\n\n**Yalnız maddi hasarlı kaza:** Kazaya dahil herkes görevliye gerek görmezse, durumu **aralarında yazılı olarak saptayıp** ayrılabilir.\n\n**İzinsiz ayrılmanın yaptırımı:**\n- Anlaşma dışında, zabıtanın iznini almadan ve zaruret olmaksızın ayrılan veya kaza yerindeki durumu değiştiren sürücüye 46.000 TL ceza verilir.\n- Ölümlü veya yaralanmalı kazada zabıtanın iznini almadan ve zaruret olmaksızın ayrılana ayrıca **bir yıldan üç yıla kadar hapis** cezası verilir ve belge **iki yıl** geri alınır.\n\n**İlk yardım ve bildirim:**\n- Kaza yerinden geçen veya kazaya karışan sürücü ilk yardım önlemi alır, zabıtaya veya sağlık kuruluşuna haber verir. Yetkililer isterse yaralıyı en yakın sağlık kuruluşuna götürür.\n- Şehirlerarası akaryakıt istasyonları kullanılabilir durumda ilk yardım malzemesi bulundurur.\n- Tamirhane, servis istasyonu ve garajlar, ölüm veya yaralanmalı kaza geçirdiği belli olan ya da suç belirtisi taşıyan aracı **gecikmeksizin zabıtaya bildirir ve deftere işler**.",
+      "articleRefs": [
+        "79",
+        "81",
+        "82"
+      ]
+    },
+    {
+      "type": "numbers",
+      "title": "Sayılar: geçme, park, yük, yaya, kaza",
+      "rows": [
+        {
+          "label": "Geçiş üstünlüğü (a)-(b) araçlarına yol vermeme",
+          "value": "46.000 TL; belge otuz gün, araç otuz gün men",
+          "refs": [
+            "55"
+          ]
+        },
+        {
+          "label": "Diğer geçiş üstünlüğü araçlarına yol vermeme",
+          "value": "15.000 TL",
+          "refs": [
+            "55"
+          ]
+        },
+        {
+          "label": "Kavşak öncesi şerit değiştirme yasağı (yerleşim dışı / içi)",
+          "value": "yüzelli metre / otuz metre",
+          "refs": [
+            "56"
+          ]
+        },
+        {
+          "label": "Yangın musluğu; kamu kapıları",
+          "value": "her iki yönden beş metre",
+          "refs": [
+            "61"
+          ]
+        },
+        {
+          "label": "Durak levhası; geçiş üstünlüğü giriş-çıkış levhası",
+          "value": "onbeş metre",
+          "refs": [
+            "61"
+          ]
+        },
+        {
+          "label": "Alt geçit, üst geçit, köprüler",
+          "value": "on metre",
+          "refs": [
+            "61"
+          ]
+        },
+        {
+          "label": "Engelli park yeri ihlali",
+          "value": "Ceza iki kat",
+          "refs": [
+            "61"
+          ]
+        },
+        {
+          "label": "Fazla yükle yola devam yasağı",
+          "value": "%20'den fazla aşım",
+          "refs": [
+            "65"
+          ]
+        },
+        {
+          "label": "Fazla yükleme cezası (%10'a kadar → %25 üzeri)",
+          "value": "10.000 TL → 60.000 TL; işleten ve gönderene ayrı ayrı",
+          "refs": [
+            "65"
+          ]
+        },
+        {
+          "label": "Ağırlık ve boyut kontrolünden kaçma",
+          "value": "60.000 TL",
+          "refs": [
+            "65"
+          ]
+        },
+        {
+          "label": "Elektrikli skuterin kullanılamadığı yollar",
+          "value": "Azami hız sınırı 50 km/s üzeri",
+          "refs": [
+            "66"
+          ]
+        },
+        {
+          "label": "Akrobatik sürüş",
+          "value": "46.000 TL; belge altmış gün, araç altmış gün men",
+          "refs": [
+            "66"
+          ]
+        },
+        {
+          "label": "Geçitsiz yerde karşıya geçiş istisnası",
+          "value": "Yüz metre kadar mesafede geçit veya kavşak yoksa",
+          "refs": [
+            "68"
+          ]
+        },
+        {
+          "label": "Zorunluluk yokken geçiş üstünlüğü kullanma",
+          "value": "46.000 TL",
+          "refs": [
+            "71"
+          ]
+        },
+        {
+          "label": "Yaya geçidinde yol vermeme",
+          "value": "488 TL",
+          "refs": [
+            "74"
+          ]
+        },
+        {
+          "label": "Yetkisiz park ücreti",
+          "value": "Altı ay–iki yıl hapis; beş bin güne kadar adli para cezası",
+          "refs": [
+            "79"
+          ]
+        },
+        {
+          "label": "Ölümlü veya yaralanmalı kazada izinsiz ayrılma",
+          "value": "Bir–üç yıl hapis; belge iki yıl geri alma",
+          "refs": [
+            "81"
+          ]
+        },
+        {
+          "label": "Kazada izinsiz ayrılma (idari ceza)",
+          "value": "46.000 TL",
+          "refs": [
+            "81"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "55",
+        "56",
+        "61",
+        "65",
+        "66",
+        "68",
+        "71",
+        "74",
+        "79",
+        "81"
+      ]
+    },
+    {
+      "type": "compare",
+      "title": "Kazaya kim el koyar?",
+      "rows": [
+        {
+          "aspect": "Kurum",
+          "left": "Mahalli genel zabıta",
+          "right": "Trafik zabıtası",
+          "refs": [
+            "83"
+          ]
+        },
+        {
+          "aspect": "El koyma amacı",
+          "left": "Adli yönden gereğini yapmak",
+          "right": "Oluş nedenlerini, iz ve delilleri belirleyip trafik kaza tespit tutanağı düzenlemek",
+          "refs": [
+            "83"
+          ]
+        },
+        {
+          "aspect": "Trafik zabıtası görevli değilse veya bulunmuyorsa",
+          "left": "Tutanağı kendisi düzenler, bir örneğini trafik zabıtasına gönderir",
+          "right": "Tutanağın bir örneği kendisine gönderilir",
+          "refs": [
+            "83"
+          ]
+        },
+        {
+          "aspect": "Kapanan yolu açma",
+          "left": "Yetkili; iz ve delilleri işaretleyip gerekli işlemleri yaptıktan sonra",
+          "right": "Yetkili; aynı şartla",
+          "refs": [
+            "83"
+          ]
+        },
+        {
+          "aspect": "Bilirkişilik",
+          "left": "Bu görev maddede trafik zabıtasına verilmiştir",
+          "right": "Usul kanunlarına göre görevlendirilirse bilirkişilik yapar",
+          "refs": [
+            "83"
+          ]
+        },
+        {
+          "aspect": "Ölümlü veya hayati tehlikeli kaza yolu kapattı, başka yoldan geçiş yok, Cumhuriyet savcısı gecikecek",
+          "left": "Gerekli işaretlemeler yapılır, araç ve ölüler kenara alınır, durum tutanakla tespit edilir, ardından yol trafiğe açılır",
+          "right": "Aynı işlem sırası; madde bu adımları kurumlar arasında bölüştürmez",
+          "refs": [
+            "83"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "83"
+      ]
+    },
+    {
+      "type": "exam_stats",
+      "title": "Sınav der ki",
+      "rows": [
+        {
+          "label": "Bu ünitenin maddelerinden yayındaki soru",
+          "value": "28",
+          "refs": [
+            "46",
+            "47",
+            "48",
+            "51",
+            "52",
+            "53",
+            "54",
+            "55",
+            "56",
+            "57",
+            "61",
+            "65",
+            "66",
+            "68",
+            "71",
+            "74",
+            "76",
+            "79",
+            "81",
+            "82",
+            "83"
+          ]
+        },
+        {
+          "label": "md 48",
+          "value": "3 soru",
+          "refs": [
+            "48"
+          ]
+        },
+        {
+          "label": "md 46",
+          "value": "2 soru",
+          "refs": [
+            "46"
+          ]
+        },
+        {
+          "label": "md 51",
+          "value": "2 soru",
+          "refs": [
+            "51"
+          ]
+        },
+        {
+          "label": "md 54",
+          "value": "2 soru",
+          "refs": [
+            "54"
+          ]
+        },
+        {
+          "label": "md 57",
+          "value": "2 soru",
+          "refs": [
+            "57"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "46",
+        "47",
+        "48",
+        "51",
+        "52",
+        "53",
+        "54",
+        "55",
+        "56",
+        "57",
+        "61",
+        "65",
+        "66",
+        "68",
+        "71",
+        "74",
+        "76",
+        "79",
+        "81",
+        "82",
+        "83"
+      ],
+      "generated": true
+    },
+    {
+      "type": "bridge",
+      "title": "Bu üniteden soru çöz",
+      "articleRefs": [
+        "46",
+        "47",
+        "48",
+        "51",
+        "52",
+        "53",
+        "54",
+        "55",
+        "56",
+        "57",
+        "61",
+        "65",
+        "66",
+        "68",
+        "71",
+        "74",
+        "76",
+        "79",
+        "81",
+        "82",
+        "83"
+      ],
+      "generated": true,
+      "rows": [
+        {
+          "label": "Madde kapsamlı seans",
+          "value": "md 46–48, 51–57, 61, 65, 66, 68, 71, 74, 76, 79, 81–83, 10 soru",
+          "refs": [
+            "46",
+            "47",
+            "48",
+            "51",
+            "52",
+            "53",
+            "54",
+            "55",
+            "56",
+            "57",
+            "61",
+            "65",
+            "66",
+            "68",
+            "71",
+            "74",
+            "76",
+            "79",
+            "81",
+            "82",
+            "83"
+          ]
+        }
+      ]
+    }
+  ]
+}
