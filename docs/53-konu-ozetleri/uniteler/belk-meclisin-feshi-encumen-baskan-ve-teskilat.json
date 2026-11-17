@@ -1,0 +1,638 @@
+{
+  "unit": {
+    "slug": "belk-meclisin-feshi-encumen-baskan-ve-teskilat",
+    "legislationSlug": "5393-belediye-kanunu",
+    "topicId": "28eaa9b8-d646-4d32-af33-618d8e1c7ea7",
+    "title": "Meclisin feshi, encümen, başkan, teşkilat ve bütçe",
+    "subtitle": "Üyeliğin ve başkanlığın sona ermesi, fesih, encümen, görevden uzaklaştırma, bütçe, borçlanma ve kentsel dönüşüm",
+    "articleFrom": "28",
+    "articleTo": "74",
+    "readingMinutes": 13,
+    "sourceLabel": "AI özeti — 5393 Belediye Kanunu, md 28–31, 33–35, 38, 41, 44–47, 56, 62, 68, 73, 74",
+    "articleNos": [
+      "28",
+      "29",
+      "30",
+      "31",
+      "33",
+      "34",
+      "35",
+      "38",
+      "41",
+      "44",
+      "45",
+      "46",
+      "47",
+      "56",
+      "62",
+      "68",
+      "73",
+      "74"
+    ],
+    "generatedBy": "claude-opus-5-5 (ozet-uret.ts)",
+    "sortOrder": 2
+  },
+  "blocks": [
+    {
+      "type": "concept",
+      "title": "Belediyede makam boş kalmaz",
+      "body": "Bu ünitenin ana fikri şu: Belediye organlarından biri devre dışı kalınca yerine hep biri geçer. Meclis Danıştay kararıyla feshedilebilir. O sırada meclis görevini belediye encümeninin memur üyeleri yürütür. Başkanlık boşalırsa meclis kendi içinden başkan ya da başkan vekili seçer. Seçim yapılamazsa İçişleri Bakanı ya da vali görevlendirme yapar. Görevle ilgili bir suçtan soruşturma veya kovuşturma açılan başkanı İçişleri Bakanı görevden uzaklaştırabilir. Okurken her kural için üç soruyu sor: Kim bildirir, kim karar verir, hangi süre içinde?",
+      "articleRefs": [
+        "30",
+        "31",
+        "45",
+        "46",
+        "47"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Taahhüt, komisyonculuk ve temsilcilik yasağı",
+      "body": "**Belediye başkanı:** Görevi süresince ve görevinin sona ermesinden itibaren **iki yıl** süreyle.\n**Meclis üyeleri:** Görevleri süresince ve görevlerinin sona ermesinden itibaren **bir yıl** süreyle.\n\nBu sürelerde belediye ve bağlı kuruluşlarına karşı doğrudan doğruya veya dolaylı olarak taahhüde giremezler, komisyonculuk ve temsilcilik yapamazlar.\n\nSıra **iki – bir** şeklindedir. Bu maddede üç yıllık bir süre yoktur.",
+      "articleRefs": [
+        "28"
+      ],
+      "counterNumbers": [
+        3
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Meclis üyeliğinin sona ermesi",
+      "body": "**Kendiliğinden sona erer:** ölüm ve istifa. İstifa dilekçesi belediye başkanlığına verilir. Başkan bunu meclisin bilgisine sunar.\n\n**Devamsızlık:** Özürsüz veya izinsiz olarak\n- arka arkaya **üç birleşim günü** veya\n- **bir yıl** içinde yapılan toplantıların **yarısına**\n\nkatılmayan üyenin üyeliğinin düşmesine, savunması alındıktan sonra **üye tam sayısının salt çoğunluğuyla** karar verilir.\n\n**Seçilme yeterliğinin kaybı:** Valinin bildirmesi üzerine **Danıştay** üyeliğin düşmesine karar verir.",
+      "articleRefs": [
+        "29"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "İstifada oylama yok, devamsızlıkta kendiliğinden düşme yok",
+      "body": "İki ifade sık karıştırılır.\n\n**İstifa:** Üyelik kendiliğinden biter. Meclisin oylama yapması gerekmez. İstifa yalnızca meclisin bilgisine sunulur.\n\n**Devamsızlık:** Üyelik kendiliğinden düşmez. Önce savunma alınır, sonra üye tam sayısının salt çoğunluğuyla karar verilir. Bu kararı vali, İçişleri Bakanı ya da il idare kurulu vermez; karar meclisindir.\n\nDanıştay yalnızca seçilme yeterliği kaybedildiğinde, valinin bildirmesiyle devreye girer.",
+      "articleRefs": [
+        "29"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Meclisin feshi ve boşalan meclisin görevi",
+      "body": "**Fesih nedenleri:**\na) Kanunla verilen görevleri süresi içinde yapmayı ihmal etmek ve bu yüzden belediye işlerini sekteye veya gecikmeye uğratmak.\nb) Belediyeye verilen görevlerle ilgisi olmayan siyasî konularda karar almak.\n\n**Usul:** İçişleri Bakanlığının bildirimi üzerine **Danıştayın kararıyla** feshedilir. Bakanlık gerekli görürse bildirimle birlikte, karar verilinceye kadar meclis toplantılarının ertelenmesini de ister. Danıştay bu konuyu **en geç bir ay** içinde karara bağlar. Yerine seçilen meclis, kalan süreyi tamamlar.\n\n**Meclis görevini encümenin memur üyelerinin yürüttüğü hâller:**\n- Danıştay tarafından fesih veya toplantıların ertelenmesi\n- Üye tam sayısının **yarıdan fazlasının** tutuklanması\n- Yedek üyeler getirildikten sonra da üye tam sayısının **yarısından aşağı** düşülmesi\n- Meclisin geçici olarak görevden uzaklaştırılması\n\nBu durum, meclis çalışabilir duruma gelinceye veya yeni meclis seçimi yapılıncaya kadar sürer.",
+      "articleRefs": [
+        "30",
+        "31"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Fesih formülü tek: Bakanlık bildirir, Danıştay karar verir",
+      "body": "Fesih usulü tektir: **İçişleri Bakanlığının bildirimi + Danıştay kararı.** Şıklarda şu karışık seçenekler çıkar ve hepsi yanlıştır:\n- belediye başkanının bildirimi\n- mülkî idare amirinin bildirimi\n- Cumhurbaşkanı kararı\n- İçişleri Bakanı kararı\n\nMaddede yalnızca iki fesih nedeni sayılır: görevleri ihmal etmek ve görev dışı siyasî konularda karar almak. Toplantı yeri, zamanı, süresi ya da çoğunluk aksaklıkları bu sayımda yoktur.\n\nBoşalan meclisin işini vali, il idare kurulu, birim amirleri ya da başkan vekilleri yürütmez. Bu görev **encümenin memur üyelerine** aittir.",
+      "articleRefs": [
+        "30",
+        "31"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Belediye encümeninin oluşumu",
+      "body": "Encümene belediye başkanı başkanlık eder.\n\n**İl belediyeleri ve nüfusu 100.000'in üzerindeki belediyeler — yedi kişi:**\n- başkan\n- meclisin her yıl kendi üyeleri arasından bir yıl için gizli oyla seçtiği **üç** üye\n- malî hizmetler birim amiri\n- başkanın birim amirleri arasından bir yıl için seçtiği **iki** üye\n\n**Diğer belediyeler — beş kişi:**\n- başkan\n- meclisin seçtiği **iki** üye\n- malî hizmetler birim amiri\n- başkanın birim amirleri arasından seçtiği **bir** üye\n\nBaşkanın katılamadığı toplantılara, başkanın görevlendirdiği başkan yardımcısı veya encümen üyesi başkanlık eder.\n\nGündemdeki konularla ilgili birim amirleri görüşleri alınmak üzere çağrılabilir. Bu kişilerin **oy hakkı yoktur**.",
+      "articleRefs": [
+        "33"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Encümenin görev ve yetkileri",
+      "body": "a) Stratejik plân, yıllık çalışma programı, bütçe ve kesinhesabı inceleyip meclise görüş bildirmek.\nb) Yıllık çalışma programındaki işlerle ilgili kamulaştırma kararlarını almak ve uygulamak.\nc) **Öngörülmeyen giderler ödeneğinin harcama yerlerini belirlemek.**\nd) Bütçede fonksiyonel sınıflandırmanın ikinci düzeyleri arasında aktarma yapmak.\ne) Kanunlarda öngörülen cezaları vermek.\nf) Vergi, resim ve harçlar dışındaki, dava konusu belediye uyuşmazlıklarının anlaşma ile tasfiyesine karar vermek.\ng) Taşınmaz satımı, trampası ve tahsisine ilişkin meclis kararlarını uygulamak; taşınmazın **üç yılı geçmemek üzere** kiralanmasına karar vermek.\nh) **Umuma açık yerlerin açılış ve kapanış saatlerini belirlemek.**\ni) Diğer kanunlarda encümene verilen görevleri yerine getirmek.",
+      "articleRefs": [
+        "34"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Encümen toplantısı",
+      "body": "**Toplanma:** Haftada birden az olmamak üzere, önceden belirlenen gün ve saatte toplanır. Acil durumlarda başkan encümeni toplantıya çağırabilir.\n\n**Nisap:** Üye tam sayısının salt çoğunluğuyla toplanır. Katılanların salt çoğunluğuyla karar verir. Bu kural, encümenin ihale komisyonu olarak yaptığı toplantılarda da geçerlidir.\n\n**Oyların eşitliği:** Başkanın bulunduğu taraf çoğunluk sayılır. **Çekimser oy kullanılamaz.**\n\n**Gündem:** Başkan hazırlar. Üyeler, başkanın uygun görüşüyle gündem maddesi teklif edebilir. Başkanın havale etmediği konu encümende görüşülemez.\n\n**Süre:** Havale edilen konu bir hafta içinde görüşülerek karara bağlanır.\n\n**İmza:** Kararları başkan ve toplantıya katılan üyeler imzalar. Karara muhalif kalanlar gerekçelerini de açıklar.\n\n**Katılma yasağı:** Başkan ve üyeler, münhasıran kendileri, ikinci derece dâhil kan ve kayın hısımları ve evlatlıklarıyla ilgili işlerin görüşüldüğü toplantılara katılamaz.",
+      "articleRefs": [
+        "35"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Encümende üç klasik tuzak",
+      "body": "**Sayı:** İl belediyesinde encümen **7** kişidir ve bu sayıya başkan da dâhildir. **5** kişilik encümen, il belediyesi olmayan ve nüfusu 100.000'i geçmeyen belediyelere aittir.\n\n**Saatler:** Umuma açık yerlerin açılış ve kapanış saatlerini belediye başkanı, meclis, kaymakam ya da ilçe idare kurulu belirlemez. Bu yetki **encümenindir**.\n\n**Oy eşitliği:** Oylar eşit çıkarsa oylama bir sonraki toplantıda tekrarlanmaz. Başkanın bulunduğu taraf çoğunluk sayılır. Üyeler çekimser de kalamaz.",
+      "articleRefs": [
+        "33",
+        "34",
+        "35"
+      ]
+    },
+    {
+      "type": "numbers",
+      "title": "Sayılar: üyelik, fesih, encümen",
+      "rows": [
+        {
+          "label": "Başkanın taahhüt yasağı (görev sona erdikten sonra)",
+          "value": "2 yıl",
+          "refs": [
+            "28"
+          ]
+        },
+        {
+          "label": "Meclis üyesinin taahhüt yasağı (görev sona erdikten sonra)",
+          "value": "1 yıl",
+          "refs": [
+            "28"
+          ]
+        },
+        {
+          "label": "Devamsızlıkla düşme — arka arkaya",
+          "value": "3 birleşim günü",
+          "refs": [
+            "29"
+          ]
+        },
+        {
+          "label": "Devamsızlıkla düşme — 1 yıl içinde",
+          "value": "toplantıların yarısı",
+          "refs": [
+            "29"
+          ]
+        },
+        {
+          "label": "Devamsızlıkla düşme kararı",
+          "value": "üye tam sayısının salt çoğunluğu",
+          "refs": [
+            "29"
+          ]
+        },
+        {
+          "label": "Danıştayın erteleme istemine karar süresi",
+          "value": "en geç 1 ay",
+          "refs": [
+            "30"
+          ]
+        },
+        {
+          "label": "Meclis görevinin encümene geçmesi — tutuklama",
+          "value": "üye tam sayısının yarıdan fazlası",
+          "refs": [
+            "31"
+          ]
+        },
+        {
+          "label": "Encümen — il belediyesi ve nüfusu 100.000'in üzerindeki belediye",
+          "value": "7 kişi (meclisten 3, birim amirlerinden 2)",
+          "refs": [
+            "33"
+          ]
+        },
+        {
+          "label": "Encümen — diğer belediyeler",
+          "value": "5 kişi (meclisten 2, birim amirlerinden 1)",
+          "refs": [
+            "33"
+          ]
+        },
+        {
+          "label": "Encümen üyelerinin seçim süresi",
+          "value": "1 yıl",
+          "refs": [
+            "33"
+          ]
+        },
+        {
+          "label": "Encümenin taşınmaz kiralama kararı",
+          "value": "en çok 3 yıl",
+          "refs": [
+            "34"
+          ]
+        },
+        {
+          "label": "Encümenin toplanma sıklığı",
+          "value": "haftada en az 1",
+          "refs": [
+            "35"
+          ]
+        },
+        {
+          "label": "Havale edilen konunun karara bağlanması",
+          "value": "1 hafta içinde",
+          "refs": [
+            "35"
+          ]
+        },
+        {
+          "label": "Toplantıya katılma yasağı — hısımlık",
+          "value": "ikinci derece dâhil kan ve kayın",
+          "refs": [
+            "35"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "28",
+        "29",
+        "30",
+        "31",
+        "33",
+        "34",
+        "35"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Belediye başkanının görev ve yetkileri",
+      "body": "- Teşkilâtın **en üst amiri** olarak belediyeyi sevk ve idare etmek, hak ve menfaatlerini korumak.\n- Belediyeyi stratejik plâna uygun yönetmek. Bütçeyi ve performans ölçütlerini hazırlamak, uygulamak, izlemek, raporları meclise sunmak.\n- Belediyeyi Devlet dairelerinde, törenlerde ve yargı yerlerinde temsil etmek veya vekil tayin etmek.\n- **Meclise ve encümene başkanlık etmek.**\n- Taşınır ve taşınmaz malları idare etmek.\n- Gelir ve alacakları takip ve tahsil etmek.\n- Yetkili organların kararını almak şartıyla sözleşme yapmak.\n- Meclis ve encümen kararlarını uygulamak.\n- Bütçeyi uygulamak. Bütçede meclis ve encümenin yetkisi dışındaki aktarmalara onay vermek.\n- Belediye personelini atamak.\n- Belediye, bağlı kuruluşlar ve işletmeleri denetlemek.\n- **Şartsız bağışları kabul etmek.**\n- Belde halkının huzur, esenlik, sağlık ve mutluluğu için önlem almak.\n- Yoksul ve muhtaçlar için ayrılan ödeneği kullanmak, engellilere yönelik hizmetleri yürütmek, engelliler merkezini oluşturmak.\n- Temsil ve ağırlama ödeneğini kullanmak.\n- Meclis veya encümen kararı gerektirmeyen görevleri yapmak ve yetkileri kullanmak.",
+      "articleRefs": [
+        "38"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Başkanın mı, encümenin mi?",
+      "body": "Bu soruda tek bir sözcük her şeyi değiştirir.\n\n**Bağış:** Başkan **şartsız** bağışı kabul eder. Şıkta ‘şartlı bağış’ yazıyorsa o görev başkana ait değildir.\n\n**Öngörülmeyen giderler:** Bu ödeneğin harcama yerlerini başkan değil, **encümen** belirler.\n\n**Bütçe:** Bütçeyi hazırlamak ve uygulamak ise başkanın işidir.",
+      "articleRefs": [
+        "34",
+        "38",
+        "62"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Plân, faaliyet raporu ve bütçe takvimi",
+      "body": "**Stratejik plân**\n- Başkan, mahallî idareler genel seçimlerinden itibaren **altı ay** içinde hazırlayıp meclise sunar.\n- Varsa üniversiteler ve meslek odaları ile ilgili sivil toplum örgütlerinin görüşleri alınır.\n- Meclis kabul ettikten sonra yürürlüğe girer.\n- Nüfusu **50.000'in altındaki** belediyelerde stratejik plân yapmak zorunlu değildir.\n\n**Yıllık performans programı**\n- İlgili olduğu yıl başından önce sunulur.\n- Plân ve program bütçenin hazırlanmasına esas olur ve meclisde bütçeden önce görüşülür.\n\n**Faaliyet raporu**\n- Başkan, **nisan** ayı toplantısında meclise sunar.\n- Bir örneği Çevre ve Şehircilik Bakanlığına gönderilir ve kamuoyuna açıklanır.\n\n**Bütçe**\n1. Başkan hazırlar. Tasarı **eylül ayının birinci gününden önce** encümene sunulur ve Çevre ve Şehircilik Bakanlığına gönderilir.\n2. Bakanlık belediye bütçe tahminlerini konsolide eder ve **eylül ayı sonuna kadar** Maliye Bakanlığına bildirir.\n3. Encümen bütçeyi inceler ve görüşüyle birlikte **kasım ayının birinci gününden önce** meclise sunar.\n4. Meclis bütçeyi **yılbaşından önce** aynen veya değiştirerek kabul eder. Ancak bütçe denkliğini bozacak şekilde gider artırıcı ve gelir azaltıcı değişiklik yapamaz.\n5. Bütçe malî yılbaşından itibaren yürürlüğe girer.",
+      "articleRefs": [
+        "41",
+        "56",
+        "62"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Belediye başkanlığının sona ermesi",
+      "body": "**Kendiliğinden sona erer:** ölüm ve istifa.\n\n**İçişleri Bakanlığının başvurusu üzerine Danıştay kararıyla sona erer:**\na) Mazeretsiz ve kesintisiz olarak **yirmi günden fazla** görevi terk etmek ve bu durumun mahallin mülkî idare amirince belirlenmesi\nb) Seçilme yeterliğini kaybetmek\nc) Görevi sürdürmeye engel bir hastalık veya engellilik durumunun yetkili sağlık kuruluşu raporuyla belgelenmesi\nd) Meclisin feshine neden olan eylem ve işlemlere katılmak",
+      "articleRefs": [
+        "44"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Başkanlık boşalınca: seçim ve vekâlet",
+      "body": "**Toplantı:** Vali, belediye meclisinin **on gün** içinde toplanmasını sağlar.\n\n**Toplantıya kim başkanlık eder:** Birinci başkan vekili; o yoksa ikinci başkan vekili; o da yoksa en yaşlı üye.\n\n**Meclis neyi seçer:**\na) Başkanlık boşalmışsa veya seçim dönemini aşan kamu hizmetinden yasaklanma cezası verilmişse → **başkan** seçer.\nb) Başkan görevden uzaklaştırılmış, tutuklanmış veya seçim dönemini aşmayan yasaklama cezası almışsa → **başkan vekili** seçer.\n\n**Oylama:** Meclis üyeleri arasından, gizli oyla yapılır.\n- İlk iki oylamada üye tam sayısının **üçte ikisi** aranır.\n- Üçüncü oylamada üye tam sayısının **salt çoğunluğu** aranır.\n- Dördüncü oylamada en çok oy alan iki aday yarışır; en fazla oyu alan seçilir.\n- Eşitlik olursa **kur'a** çekilir.\n\n**Seçime kadar başkanlığı kim yürütür:** Meclis birinci başkan vekili; o yoksa ikinci başkan vekili; o da yoksa valinin görevlendireceği bir kamu görevlisi.\n\n**Süreler:** Yeni başkanın görev süresi, yerine seçildiği başkanın süresiyle sınırlıdır. Seçim **en geç onbeş gün** içinde tamamlanmazsa meclisin feshine ilişkin hükümler uygulanır.\n\n**Terör istisnası:** Terör veya terör örgütlerine yardım ve yataklık suçları nedeniyle uzaklaştırma, tutuklama, yasaklama ya da sıfatın sona ermesi hâlinde seçim yapılmaz. Görevlendirmeyi md 46'daki makamlar yapar ve görevlendirilen kişinin seçilme yeterliği bulunmalıdır.",
+      "articleRefs": [
+        "45"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Görevlendirme ve görevden uzaklaştırma",
+      "body": "**Görevlendirme (md 46)**\nBaşkanlık boşalmış ve başkan ya da başkan vekili seçilememişse, seçim yapılıncaya kadar görevlendirme yapılır:\n- **büyükşehir ve il belediyelerinde İçişleri Bakanı**\n- **diğer belediyelerde vali**\n\nGörevlendirilen kişinin belediye başkanı seçilme yeterliğine sahip olması şarttır.\n\n**Görevden uzaklaştırma (md 47)**\n- Görevleriyle ilgili bir suç nedeniyle soruşturma veya kovuşturma açılan belediye organları ya da üyeleri, kesin hükme kadar **İçişleri Bakanı** tarafından görevden uzaklaştırılabilir.\n- Karar **iki ayda bir** gözden geçirilir. Devamında kamu yararı yoksa kaldırılır.\n- Şu durumlarda karar kaldırılır: kovuşturma açılmaması, kamu davasının düşmesi, beraat, davanın genel afla ortadan kalkması veya görevden düşürülmeyi gerektirmeyen bir suçtan mahkûmiyet.\n- Uzaklaştırılan başkana, görevden uzak kaldığı sürece aylık ödeneğin **üçte ikisi** ödenir. Diğer sosyal hak ve yardımlardan yararlanmaya devam eder.",
+      "articleRefs": [
+        "46",
+        "47"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Uzaklaştırma, sona erme değildir",
+      "body": "Görevle ilgili bir suçtan kovuşturma başlatılması başkanlık sıfatını sona erdirmez. Bu durum md 47'deki **görevden uzaklaştırmanın** konusudur. Uzaklaştırma kararını Cumhurbaşkanı, Adalet Bakanı ya da Danıştay değil, **İçişleri Bakanı** verir.\n\nUzaklaştırılan başkana ödeneğin **üçte ikisi** ödenir. Yarısı ya da dörtte üçü yanlış şıktır. Karar **iki ayda bir** gözden geçirilir; altı ayda bir değil.\n\nGörevlendirmede de dikkat: Seçim yapılamazsa **il belediyesinde** görevlendirmeyi vali değil İçişleri Bakanı yapar. Vali yalnızca diğer belediyelerde görevlendirir. Başkanlık boşalınca meclisi **on gün** içinde toplatan ise validir.",
+      "articleRefs": [
+        "44",
+        "45",
+        "46",
+        "47"
+      ],
+      "counterNumbers": [
+        0.5,
+        0.75,
+        6
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Hangi bakanlık?",
+      "body": "Bu ünitede bakanlık adları sık karıştırılır.\n\n**Çevre ve Şehircilik Bakanlığı** şu üç konunun muhatabıdır:\n- faaliyet raporunun bir örneğinin gönderilmesi\n- bütçe tasarısının gönderilmesi\n- yurt dışı ilişkileri ve kardeş kent için önceden alınan izin\n\nŞıklardaki İçişleri, Dışişleri, Kültür ve Turizm ya da Hazine ve Maliye Bakanlığı bu konularda yanlıştır.\n\n**İç borçlanmada** yüzde onu geçen iç borçlanma için meclis üye tam sayısının salt çoğunluğu yeterli değildir. Ayrıca **Çevre, Şehircilik ve İklim Değişikliği Bakanlığının** onayı gerekir.",
+      "articleRefs": [
+        "56",
+        "62",
+        "68",
+        "74"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Borçlanma",
+      "body": "**Dış borçlanma:** Yalnızca yatırım programında yer alan projelerin finansmanı için yapılabilir.\n\n**İller Bankası kredisi:** Belediye ödeme plânını bankaya sunmak zorundadır. Banka plânı yeterli görmezse kredi isteğini reddeder.\n\n**Tahvil ihracı:** Yatırım programındaki projelerin finansmanı için yapılır.\n\n**Borç stoku sınırı**\n- Kapsam: belediye, bağlı kuruluşları ve sermayesinin **yüzde ellisinden fazlasına** sahip oldukları şirketler.\n- Faiz dâhil iç ve dış borç stoku, en son kesinleşmiş bütçe gelirlerinin yeniden değerleme oranıyla artırılan miktarını aşamaz.\n- Büyükşehirde bu miktar **bir buçuk kat** olarak uygulanır.\n\n**İç borçlanma onayı**\n- En son kesinleşmiş bütçe gelirlerinin yeniden değerleme oranıyla artırılan miktarının, yılı içinde toplam **yüzde onunu** geçmeyen iç borçlanma → belediye meclisinin kararı.\n- Yüzde onu geçen iç borçlanma → meclis üye tam sayısının salt çoğunluğunun kararı **ve** Çevre, Şehircilik ve İklim Değişikliği Bakanlığının onayı.\n\n**Stok hesabına girmeyen borçlanmalar**\n- Cumhurbaşkanınca kabul edilen ileri teknoloji ve büyük tutarlı altyapı projeleri\n- Avrupa Birliği katılım öncesi malî işbirliği projeleri\n- Çok taraflı yatırım ve kalkınma bankalarından, yabancı devlet kuruluşlarından yapılan borçlanmalar\n- SUKAP kapsamında İller Bankasından yapılan borçlanmalar\n\n**Yaptırım:** Usule aykırı borçlanan yetkililere, fiil daha ağır bir cezayı gerektirmiyorsa Türk Ceza Kanununun görevi kötüye kullanma hükümleri uygulanır.\n\n**Malî tablolar:** **Üçer aylık** dönemler hâlinde ilgili bakanlıklara ve Strateji ve Bütçe Başkanlığına gönderilir.",
+      "articleRefs": [
+        "68"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Kentsel dönüşüm ve yurt dışı ilişkileri",
+      "body": "**Kentsel dönüşüm ve gelişim alanı (md 73)**\n- Belediye meclisi kararıyla uygulanır.\n- Alan, belediye veya mücavir alan sınırları içinde olmalıdır.\n- Kamunun mülkiyetinde veya kullanımındaki yerlerde ilgili belediyenin talebi ve **Cumhurbaşkanının kararı** şarttır.\n- Alan büyüklüğü **en az 5, en çok 500 hektar** olmalıdır. Bunun takdiri münhasıran belediye meclisine aittir.\n- Proje alanıyla ilişkili birden fazla yer, toplamı 5 hektardan az olmamak üzere tek dönüşüm alanı sayılabilir.\n- Büyükşehir ve mücavir alan sınırlarında ilan yetkisi büyükşehir belediyelerine aittir.\n- Yapıların boşaltılması, yıkımı ve kamulaştırılmasında **anlaşma yolu esastır**.\n- Anlaşma sonucu belediye mülkiyetine geçen gayrimenkuller haczedilemez.\n- Yıkılıp yeniden yapılacak münferit yapılarda ilgili vergi, resim ve harçların **dörtte biri** alınır.\n\n**Yurt dışı ilişkileri (md 74)**\n- Belediye, meclis kararıyla görev alanındaki uluslararası teşekkül ve organizasyonlara kurucu üye veya üye olabilir.\n- Yabancı mahallî idarelerle ortak proje yürütebilir veya **kardeş kent** ilişkisi kurabilir.\n- Bu faaliyetler dış politikaya ve uluslararası anlaşmalara uygun olmalıdır.\n- Önceden **Çevre ve Şehircilik Bakanlığının izni** alınması zorunludur.",
+      "articleRefs": [
+        "73",
+        "74"
+      ]
+    },
+    {
+      "type": "numbers",
+      "title": "Sayılar: başkanlık, plân, bütçe, borç",
+      "rows": [
+        {
+          "label": "Stratejik plânın hazırlanması",
+          "value": "seçimlerden itibaren 6 ay içinde",
+          "refs": [
+            "41"
+          ]
+        },
+        {
+          "label": "Stratejik plânın zorunlu olmadığı nüfus",
+          "value": "50.000'in altı",
+          "refs": [
+            "41"
+          ]
+        },
+        {
+          "label": "Başkanlığın sona ermesi — görevi terk",
+          "value": "kesintisiz 20 günden fazla",
+          "refs": [
+            "44"
+          ]
+        },
+        {
+          "label": "Boşalmada meclisin toplanması (valinin sağlaması)",
+          "value": "10 gün içinde",
+          "refs": [
+            "45"
+          ]
+        },
+        {
+          "label": "Başkan/başkan vekili seçimi — ilk 2 oylama",
+          "value": "üye tam sayısının 2/3'ü",
+          "refs": [
+            "45"
+          ]
+        },
+        {
+          "label": "Başkan/başkan vekili seçimi — 3. oylama",
+          "value": "üye tam sayısının salt çoğunluğu",
+          "refs": [
+            "45"
+          ]
+        },
+        {
+          "label": "Başkan/başkan vekili seçimi — dördüncü oylama",
+          "value": "en çok oy alan 2 aday; eşitlikte kur'a",
+          "refs": [
+            "45"
+          ]
+        },
+        {
+          "label": "Seçimin tamamlanma süresi",
+          "value": "en geç 15 gün",
+          "refs": [
+            "45"
+          ]
+        },
+        {
+          "label": "Uzaklaştırma kararının gözden geçirilmesi",
+          "value": "2 ayda bir",
+          "refs": [
+            "47"
+          ]
+        },
+        {
+          "label": "Uzaklaştırılan başkana ödenen",
+          "value": "aylık ödeneğin 2/3'ü",
+          "refs": [
+            "47"
+          ]
+        },
+        {
+          "label": "Faaliyet raporunun meclise sunulması",
+          "value": "nisan ayı toplantısı",
+          "refs": [
+            "56"
+          ]
+        },
+        {
+          "label": "Bütçe tasarısının encümene sunulması",
+          "value": "eylül ayının birinci gününden önce",
+          "refs": [
+            "62"
+          ]
+        },
+        {
+          "label": "Bakanlığın Maliye Bakanlığına bildirimi",
+          "value": "eylül ayı sonuna kadar",
+          "refs": [
+            "62"
+          ]
+        },
+        {
+          "label": "Encümenin bütçeyi meclise sunması",
+          "value": "kasım ayının birinci gününden önce",
+          "refs": [
+            "62"
+          ]
+        },
+        {
+          "label": "Meclisin bütçeyi kabulü",
+          "value": "yılbaşından önce",
+          "refs": [
+            "62"
+          ]
+        },
+        {
+          "label": "Meclis kararıyla yapılabilen iç borçlanma",
+          "value": "yılı içinde toplam %10'a kadar",
+          "refs": [
+            "68"
+          ]
+        },
+        {
+          "label": "Büyükşehirde borç stoku sınırı",
+          "value": "bir buçuk kat",
+          "refs": [
+            "68"
+          ]
+        },
+        {
+          "label": "Sınıra dâhil edilen şirketler",
+          "value": "sermayesinin %50'sinden fazlası belediyeye ait olanlar",
+          "refs": [
+            "68"
+          ]
+        },
+        {
+          "label": "Malî tabloların gönderilmesi",
+          "value": "3 aylık dönemler",
+          "refs": [
+            "68"
+          ]
+        },
+        {
+          "label": "Kentsel dönüşüm alanı büyüklüğü",
+          "value": "5–500 hektar",
+          "refs": [
+            "73"
+          ]
+        },
+        {
+          "label": "Münferit yapılarda alınan vergi, resim ve harç",
+          "value": "dörtte biri",
+          "refs": [
+            "73"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "41",
+        "44",
+        "45",
+        "47",
+        "56",
+        "62",
+        "68",
+        "73"
+      ]
+    },
+    {
+      "type": "exam_stats",
+      "title": "Sınav der ki",
+      "rows": [
+        {
+          "label": "Bu ünitenin maddelerinden yayındaki soru",
+          "value": "22",
+          "refs": [
+            "28",
+            "29",
+            "30",
+            "31",
+            "33",
+            "34",
+            "35",
+            "38",
+            "41",
+            "44",
+            "45",
+            "46",
+            "47",
+            "56",
+            "62",
+            "68",
+            "73",
+            "74"
+          ]
+        },
+        {
+          "label": "md 47 — Görevden uzaklaştırma",
+          "value": "3 soru",
+          "refs": [
+            "47"
+          ]
+        },
+        {
+          "label": "md 29 — Meclis üyeliğinin sona ermesi",
+          "value": "2 soru",
+          "refs": [
+            "29"
+          ]
+        },
+        {
+          "label": "md 30 — Meclisin feshi",
+          "value": "2 soru",
+          "refs": [
+            "30"
+          ]
+        },
+        {
+          "label": "md 28 — Başkan ve meclis üyelerinin yükümlülükleri",
+          "value": "1 soru",
+          "refs": [
+            "28"
+          ]
+        },
+        {
+          "label": "md 31 — Boşalan meclisin görevinin yerine getirilmesi",
+          "value": "1 soru",
+          "refs": [
+            "31"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "28",
+        "29",
+        "30",
+        "31",
+        "33",
+        "34",
+        "35",
+        "38",
+        "41",
+        "44",
+        "45",
+        "46",
+        "47",
+        "56",
+        "62",
+        "68",
+        "73",
+        "74"
+      ],
+      "generated": true
+    },
+    {
+      "type": "bridge",
+      "title": "Bu üniteden soru çöz",
+      "articleRefs": [
+        "28",
+        "29",
+        "30",
+        "31",
+        "33",
+        "34",
+        "35",
+        "38",
+        "41",
+        "44",
+        "45",
+        "46",
+        "47",
+        "56",
+        "62",
+        "68",
+        "73",
+        "74"
+      ],
+      "generated": true,
+      "rows": [
+        {
+          "label": "Madde kapsamlı seans",
+          "value": "md 28–31, 33–35, 38, 41, 44–47, 56, 62, 68, 73, 74, 10 soru",
+          "refs": [
+            "28",
+            "29",
+            "30",
+            "31",
+            "33",
+            "34",
+            "35",
+            "38",
+            "41",
+            "44",
+            "45",
+            "46",
+            "47",
+            "56",
+            "62",
+            "68",
+            "73",
+            "74"
+          ]
+        }
+      ]
+    }
+  ]
+}

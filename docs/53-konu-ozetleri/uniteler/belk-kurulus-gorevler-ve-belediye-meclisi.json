@@ -1,0 +1,598 @@
+{
+  "unit": {
+    "slug": "belk-kurulus-gorevler-ve-belediye-meclisi",
+    "legislationSlug": "5393-belediye-kanunu",
+    "topicId": "28eaa9b8-d646-4d32-af33-618d8e1c7ea7",
+    "title": "Kuruluş, görev ve yetkiler, belediye meclisi",
+    "subtitle": "Belediyenin kuruluşu, sınırlar, mahalle, yetkiler ve imtiyazlar; meclisin toplantı, karar ve denetim kuralları",
+    "articleFrom": "4",
+    "articleTo": "26",
+    "readingMinutes": 13,
+    "sourceLabel": "AI özeti — 5393 Belediye Kanunu, md 4, 6, 7, 9–11, 15, 18, 20, 22–26",
+    "articleNos": [
+      "4",
+      "6",
+      "7",
+      "9",
+      "10",
+      "11",
+      "15",
+      "18",
+      "20",
+      "22",
+      "23",
+      "24",
+      "25",
+      "26"
+    ],
+    "generatedBy": "claude-opus-5-5 (ozet-uret.ts)",
+    "sortOrder": 1
+  },
+  "blocks": [
+    {
+      "type": "concept",
+      "title": "Belediye ne zaman kurulur?",
+      "body": "Belediyenin kuruluşu bir nüfus eşiğine bağlıdır. Nüfusu 5.000 ve üzerinde olan yerleşim birimlerinde belediye kurulabilir. İl ve ilçe merkezlerinde ise seçim hakkı yoktur, belediye kurulması zorunludur. Yeni iskân nedeniyle oluşturulan yerlerde de aynı eşik geçerlidir: nüfus 5.000 ve üzerindeyse belediye kurulabilir. Soruda 'kurulabilir' ile 'zorunludur' ayrımına dikkat et.",
+      "articleRefs": [
+        "4"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Kuruluş: yasak alanlar ve köylerin birleşmesi",
+      "body": "**Belediye kurulamaz:**\n- İçme ve kullanma suyu havzalarında,\n- Sit ve diğer koruma alanlarında,\n- Meskûn sahası kurulu bir belediyenin sınırlarına **5.000 metreden** daha yakın olan yerleşim yerlerinde.\n\n**Köylerin birleşmesi:** Köylerin meskûn sahaları, merkez kabul edilecek yerleşim yerinin meskûn sahasına azami **5.000 metre** mesafede olmalıdır. Nüfusları toplamı da **5.000 ve üzerinde** olmalıdır.\n\n**Usul:**\n- Süreç üç yoldan başlar: köy ihtiyar meclisinin kararı, seçmenlerin en az yarısından bir fazlasının mahallin en büyük mülkî idare amirine yazılı başvurusu ya da valinin kendiliğinden gerek görmesi.\n- Valinin bildirimi üzerine mahallî seçim kurulları **onbeş gün** içinde seçmenlerin oylarını alır ve sonucu tutanakla valiliğe bildirir.\n- İşlem dosyası valinin görüşüyle birlikte **Çevre ve Şehircilik Bakanlığına** gönderilir.",
+      "articleRefs": [
+        "4"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "5.000, 2.000, 50.000: hangisi neyin eşiği?",
+      "body": "Bu ünitedeki nüfus rakamları şıklarda sık sık yer değiştirir.\n\n- **5.000:** Belediye kurulabilmesi için gereken nüfustur. Kurulu belediyenin sınırına yaklaşma yasağında da mesafe 5.000 metredir.\n- **2.000:** Nüfusu bunun altına düşen belediye köye dönüştürülür. Bu rakam bir kuruluş eşiği değildir.\n- **50.000:** Meskûn sahası, nüfusu 50.000 ve üzerinde olan bir belediyenin sınırına 5.000 metreden daha yakın duruma gelen belediye ve köyler, genel imar düzeni veya temel alt yapı hizmetleri gerekli kılarsa o belediyeye katılır.\n\nMesafe sorusunda 7.500, 15.000 ya da 20.000 gibi şıklar çeldiricidir. Doğru cevap 5.000 metredir.",
+      "articleRefs": [
+        "4",
+        "11"
+      ],
+      "counterNumbers": [
+        7500,
+        15000,
+        20000
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Sınırlar: kesinleşme ve uyuşmazlık",
+      "body": "**Kesinleşme (md 6):** Belediye meclisinin kararı ve kaymakamın görüşü üzerine **valinin onayı** ile olur.\n- Kesinleşen sınırlar valilikçe yerinde uygulanarak taraflara gösterilir ve durum tutanakla belirlenir.\n- Karar ve dayanak belgelerin birer örneği şu yerlere gönderilir: belediyesine, mahallî tapu dairesine, il özel idaresine ve o yerin mülkî idare amirine.\n- Kesinleşen sınırlar, zorunlu nedenler olmadıkça **beş yıl** süreyle değiştirilemez.\n\n**Uyuşmazlık (md 7):**\n- Bir il dâhilindeki beldeler veya köyler arasında sınır uyuşmazlığı çıkarsa ilgili belediye meclisi, köy ihtiyar meclisi ve kaymakamın görüşleri **otuz gün** süre verilerek istenir.\n- Bu görüşleri değerlendirip uyuşmazlığı **vali** karara bağlar.\n- Büyükşehir sınırları içindeki ilçe ve ilk kademe belediyelerinin sınır değişikliklerinde büyükşehir belediye meclisinin de görüşü alınır.\n- İl ve ilçe sınırlarının değişmesini gerektiren uyuşmazlıklarda 5442 sayılı İl İdaresi Kanunu uygulanır.",
+      "articleRefs": [
+        "6",
+        "7"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Mahalle ve belde adı",
+      "body": "**Mahalle (md 9):**\n- Mahalle, muhtar ve ihtiyar heyeti tarafından yönetilir.\n- Mahallenin kurulması, kaldırılması, birleştirilmesi, bölünmesi, adının ve sınırlarının tespiti ve değiştirilmesi şu zincirle olur: belediye meclisinin kararı, kaymakamın görüşü ve **valinin onayı**.\n- Belediye sınırları içinde nüfusu **500**'ün altında mahalle kurulamaz.\n- Belediye, mahalle ve muhtarlığın ihtiyaçları için bütçe imkânları ölçüsünde ayni yardım ve destek sağlar.\n\n**Belde adı (md 10):**\n- Ad, belediye meclisi üye tam sayısının en az **dörtte üç** çoğunluğunun kararı ve valinin görüşü üzerine **İçişleri Bakanlığının onayı** ile değiştirilir.\n- Karar Resmî Gazetede yayımlanır.\n- Beldenin adı değişince belediyenin adı da değişmiş sayılır.",
+      "articleRefs": [
+        "9",
+        "10"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Kim karar verir, kim görüş bildirir, kim onaylar?",
+      "body": "Soru kökü genellikle zincirin bir halkasını değiştirir. O yüzden zinciri ezberle.\n\n**Sınırın kesinleşmesi ve mahalle işlemleri:** Zincir ikisinde de aynıdır: meclis kararı, kaymakam görüşü, vali onayı. Bu zincirde İçişleri Bakanı ya da belediye başkanının kararı yoktur.\n\n**Belde adı:** Burada zincir bir kademe yukarı çıkar: dörtte üç çoğunlukla meclis kararı, vali görüşü, İçişleri Bakanlığı onayı. 'Salt çoğunluk' ya da 'kaymakamın görüşü' yazan şık yanlıştır.\n\n**Sınır uyuşmazlığı:** İl içindeki beldeler arasındaki uyuşmazlığı vali karara bağlar. İl idare kurulu, il genel meclisi ya da bakan değil.",
+      "articleRefs": [
+        "6",
+        "7",
+        "9",
+        "10"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Tüzel kişiliğin sona ermesi",
+      "body": "**Katılma:**\n- Meskûn sahası, bağlı olduğu il veya ilçe belediyesinin ya da nüfusu **50.000** ve üzerinde olan bir belediyenin sınırına **5.000 metreden** daha yakın duruma gelen belediye ve köyler bu kapsamdadır.\n- Genel imar düzeni veya temel alt yapı hizmetleri gerekli kılarsa bunların tüzel kişiliği kaldırılır ve o belediyeye katılır.\n- Mahalleleri, katıldıkları belediyenin mahalleleri hâline gelir.\n- Taşınır ve taşınmaz malları, hakları, alacakları ve borçları katıldıkları belediyeye intikal eder.\n\n**Köye dönüşme:**\n- Nüfusu **2.000**'in altına düşen belediyeler köye dönüştürülür.\n- Tasfiyeyi **il özel idaresi** yapar.\n- Mallar, haklar, alacaklar ve borçlar ilgili köy tüzel kişiliğine intikal eder.\n- Karşılanamayan borçları il özel idaresi üstlenir ve vali bunu İller Bankasına bildirir.\n- İller Bankası bu miktarı, takip eden ayın genel bütçe vergi gelirlerinden belediyelere ayrılan kısımdan keser ve il özel idaresi hesabına aktarır.\n\n**Hizmet sürekliliği:** Mahallî hizmetlerin aksamaması için vali veya kaymakamlar ilgili kuruluşlar arasında koordinasyonu sağlar.",
+      "articleRefs": [
+        "11"
+      ]
+    },
+    {
+      "type": "numbers",
+      "title": "Kuruluş, sınır ve mahalle: sayılar",
+      "rows": [
+        {
+          "label": "Belediye kurulabilmesi için nüfus",
+          "value": "5.000 ve üzeri",
+          "refs": [
+            "4"
+          ]
+        },
+        {
+          "label": "Kurulu belediye sınırına yasak yakınlık",
+          "value": "5.000 metreden yakın",
+          "refs": [
+            "4"
+          ]
+        },
+        {
+          "label": "Köylerin birleşmesinde azami mesafe",
+          "value": "5.000 metre",
+          "refs": [
+            "4"
+          ]
+        },
+        {
+          "label": "Seçim kurulunun oyları alma süresi",
+          "value": "onbeş gün",
+          "refs": [
+            "4"
+          ]
+        },
+        {
+          "label": "Kesinleşen sınırın değiştirilemeyeceği süre",
+          "value": "beş yıl",
+          "refs": [
+            "6"
+          ]
+        },
+        {
+          "label": "Sınır uyuşmazlığında görüş süresi",
+          "value": "otuz gün",
+          "refs": [
+            "7"
+          ]
+        },
+        {
+          "label": "Mahalle kurulamayacak nüfus",
+          "value": "500'ün altı",
+          "refs": [
+            "9"
+          ]
+        },
+        {
+          "label": "Belde adı değişikliğinde meclis çoğunluğu",
+          "value": "üye tam sayısının en az dörtte üçü",
+          "refs": [
+            "10"
+          ]
+        },
+        {
+          "label": "Katılmaya yol açan belediye nüfusu",
+          "value": "50.000 ve üzeri",
+          "refs": [
+            "11"
+          ]
+        },
+        {
+          "label": "Köye dönüşme",
+          "value": "nüfusun 2.000'in altına düşmesi",
+          "refs": [
+            "11"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "4",
+        "6",
+        "7",
+        "9",
+        "10",
+        "11"
+      ]
+    },
+    {
+      "type": "concept",
+      "title": "Belediyenin elindeki araçlar",
+      "body": "Belediye, belde sakinlerinin mahallî müşterek nitelikteki ihtiyaçlarını karşılamak için her türlü faaliyet ve girişimde bulunabilir. Bunun için yönetmelik çıkarır, belediye yasakları koyar ve kanunlarda belirtilen cezaları verir. İzin ve ruhsat verir; vergi, resim, harç, katkı ve katılma paylarını tahsil eder. Su, toplu taşıma, katı atık, hâller, terminaller, park yerleri, asansör tescili ve bisiklet yolları gibi hizmetleri kurar, işletir ya da işlettirir. Borç alabilir, bağış kabul edebilir. Mallarını koruyan güçlü bir hüküm de var: belediye mallarına karşı suç işleyenler Devlet malına karşı suç işlemiş sayılır.",
+      "articleRefs": [
+        "15"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "İmtiyaz, alt yapı desteği ve haciz yasağı",
+      "body": "**İmtiyaz:**\n- İmtiyazla devredilebilen hizmetler yalnızca şunlardır: (e) su, atık su ve yağmur suyu; (f) toplu taşıma; (g) katı atık.\n- Devir, **Danıştayın görüşü** ve **Çevre ve Şehircilik Bakanlığının kararıyla** yapılır. Süre **kırkdokuz yılı** geçemez.\n- Toplu taşıma başka yollarla da yürütülebilir: imtiyaz veya tekel oluşturmayacak şekilde ruhsat vererek, hatları kiraya vererek ya da 67 nci maddedeki esaslara göre hizmet satın alarak.\n\n**Alt yapı desteği:**\n- Büyükşehir belediyeleri, il belediyeleri ve nüfusu **10.000**'i geçen belediyeler bu desteği verebilir.\n- Meclis kararıyla turizm, sağlık, sanayi ve ticaret yatırımlarının ve eğitim kurumlarının alt yapısını faiz almaksızın **on yıla** kadar geri ödemeli veya ücretsiz yapabilir.\n\n**Haczedilemez:**\n- Proje karşılığı borçlanmayla elde edilen gelirler,\n- Şartlı bağışlar,\n- Kamu hizmetlerinde fiilen kullanılan mallar,\n- Belediyenin tahsil ettiği vergi, resim ve harç gelirleri.\n\n**Haciz usulü:** Haciz kararından önce belediyeden borca yeter mal göstermesi istenir. **On gün** içinde yeterli mal beyan edilmezse yapılacak haciz, alacak miktarını aşamaz.\n\n**Diğer:**\n- Birinci sınıf gayrisıhhî müesseseleri, büyükşehir ve il merkez belediyeleri dışındaki yerlerde il özel idaresi ruhsatlandırır.\n- Ücreti yatırıldığı hâlde **yirmi gün** içinde verilmeyen yer seçim belgesi verilmiş sayılır.",
+      "articleRefs": [
+        "15"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "İmtiyaz ve haciz şıklarında dikkat",
+      "body": "**İmtiyaz:** İmtiyazla devredilebilenler yalnızca (e), (f) ve (g) bentleridir: su, atık su ve yağmur suyu, toplu taşıma, katı atık. 'Kanunlarda belirtilen izin veya ruhsatı vermek' bu listede yoktur. Şıklarda görürsen cevap odur.\n\n**Haciz:** Kelimeye dikkat et. Haczedilemez olan **şartlı** bağıştır. **Şartsız** bağış haczedilemeyenler arasında sayılmaz. Vergi ve harç gelirleri ile proje karşılığı borçlanma gelirleri ise korunur.",
+      "articleRefs": [
+        "15"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Belediye meclisinin görev ve yetkileri",
+      "body": "**Plan, program ve bütçe:**\n- Stratejik plânı, yatırım ve çalışma programlarını ve performans ölçütlerini görüşüp kabul etmek.\n- Bütçe ve kesinhesabı kabul etmek.\n- Kurumsal kodlama yapılan birimler ile fonksiyonel sınıflandırmanın **birinci düzeyleri** arasında aktarma yapmak.\n- İmar plânlarını görüşüp onaylamak ve imar programlarını kabul etmek.\n\n**Mali kararlar:**\n- **Borçlanmaya** karar vermek ve **şartlı bağışları** kabul etmek.\n- Taşınmaz alımına, satımına, takasına ve tahsisine karar vermek.\n- Taşınmazın **üç yıldan fazla** kiralanmasına ve **otuz yılı** geçmemek üzere sınırlı aynî hak tesisine karar vermek.\n- Vergi, resim ve harçlar dışında kalan ve **beşbin YTL**'den fazla dava konusu olan uyuşmazlıklarda sulh ile tasfiyeye, kabul ve feragate karar vermek.\n- Belediye adına **imtiyaz** verilmesine, yap-işlet ve yap-işlet-devret modeline ve özelleştirmeye karar vermek.\n\n**Seçim, kadro ve yönetmelik:**\n- Meclis başkanlık divanını, encümen üyelerini ve ihtisas komisyonları üyelerini seçmek.\n- Norm kadro çerçevesinde kadroların ihdas, iptal ve değiştirilmesine karar vermek.\n- Belediyenin yönetmeliklerini kabul etmek.\n\n**Ad, mahalle ve ilişkiler:**\n- Meydan, cadde, sokak, park ve tesislere ad vermek.\n- Mahalle kurulmasına ve kaldırılmasına karar vermek; amblem ve flamayı kabul etmek.\n- Yurt dışı belediyelerle iş birliğine, Çevre ve Şehircilik Bakanlığının izniyle karar vermek.\n- Fahrî hemşehrilik payesi ve beratı vermek.\n\n**Diğer:**\n- **Belediye başkanıyla encümen arasındaki anlaşmazlıkları** karara bağlamak.\n- Mücavir alanlara belediye hizmetlerinin götürülmesine karar vermek.",
+      "articleRefs": [
+        "18"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Bu yetki meclisin mi, değil mi?",
+      "body": "Bu konuda soru kökü çoğunlukla 'hangisi meclisin görevi değildir' diye sorar. Şu noktaları bil:\n\n- **Belediye adına imtiyaz verilmesine** meclis karar verir.\n- **Belediye başkanıyla encümen arasındaki anlaşmazlıkları** meclis karara bağlar. Danıştay, mülkî idare amiri ya da bakanlık değil.\n- Taşınmazın **üç yıldan fazla** kiralanması meclisin işidir.\n- Bütçede meclis, fonksiyonel sınıflandırmanın **birinci düzeyleri** arasında aktarma yapar.\n- Bütçedeki ödeneği kullanmak gibi harcama işleri meclisin listesinde yer almaz.",
+      "articleRefs": [
+        "18"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Meclis toplantısı",
+      "body": "**Olağan toplantı:**\n- Meclis, her ayın ilk haftasında, önceden kararlaştırdığı günde toplanır.\n- Resmî tatile rastlayan günlerde çalışmaya ara verebilir. Her yıl **bir ay** tatil kararı alabilir.\n- Bütçe görüşmesine rastlayan toplantı en çok **yirmi gün**, diğer toplantılar en çok **beş gün** sürer.\n- Mutat yer dışında toplanmak zorunluysa yeri, meclis başkanı belediye sınırları içinde belirler. Üyelere önceden bilgi verilir, halka da duyurulur.\n- Toplantılar **açıktır**. Meclis başkanının veya bir üyenin gerekçeli önerisi üzerine, toplantıya katılanların salt çoğunluğuyla kapalı oturum kararı alınabilir.\n- Görüşmeler tutanağa geçirilir; tutanağı başkan ve kâtip üyeler imzalar.\n\n**Olağanüstü toplantı:**\n- Belediye başkanı acil durumlarda meclisi toplantıya çağırır. Bu çağrı yılda **üç defadan** fazla olamaz ve her toplantı **bir birleşimi** geçemez.\n- Çağrı ve gündem en az **üç gün** önceden üyelere yazılı olarak duyurulur.\n- Çağrıyı gerektiren konular dışında hiçbir konu görüşülemez.",
+      "articleRefs": [
+        "20"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Toplantı ve karar yeter sayısı",
+      "body": "**Yeter sayılar:**\n- **Toplantı yeter sayısı:** üye tam sayısının salt çoğunluğu.\n- **Karar yeter sayısı:** katılanların salt çoğunluğu. Ancak bu sayı üye tam sayısının **dörtte birinden** az olamaz.\n\n**Eşitlik:**\n- Oylamada eşitlik çıkarsa meclis başkanının bulunduğu taraf çoğunluk sayılır.\n- Gizli oylamada eşitlik çıkarsa oylama tekrarlanır. Eşitlik bozulmazsa başkan kur'a çeker.\n\n**Yeter sayı sağlanamazsa:**\n- Başkan, gün ve saatini tespit ederek en geç **üç gün** içinde toplanmak üzere meclisi tatil eder.\n- Gelecek toplantı, üye tam sayısının dörtte birinden az olmayan üyeyle yapılır.\n\n**Oy kullanma:**\n- Üyeler oylarını bizzat kullanır. Gizli oyda fizikî engelli üye, tayin edeceği kişi eliyle oy kullanabilir.\n- Oylama gizli, işaretle veya ad okunarak yapılır. Oy kabul, ret veya çekimser olur.\n- Kararları meclis başkanı ve kâtip üyeler imzalar; kararlar bir sonraki toplantıda üyelere dağıtılır.",
+      "articleRefs": [
+        "22"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Sayılar yer değiştirince",
+      "body": "**Toplantı süresi:** Bütçe toplantısı için süre en çok **yirmi gün**, diğer toplantılar için en çok **beş gündür**. '15 gün' diye bir toplantı süresi yoktur.\n\n**Yeter sayılar:** Burada kesirler karıştırılır. Meclis **salt çoğunlukla** toplanır; '1/3 ile toplanır' yanlıştır. Karar yeter sayısının alt sınırı **dörtte birdir**; 'üçte bir' yanlıştır.\n\n**Erteleme:** Toplantı yeter sayısı sağlanamazsa meclis en geç **üç gün** içinde toplanmak üzere tatil edilir.",
+      "articleRefs": [
+        "20",
+        "22"
+      ],
+      "counterNumbers": [
+        15
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Meclis kararlarının kesinleşmesi",
+      "body": "**İade ve kesinleşme:**\n- Belediye başkanı, hukuka aykırı gördüğü kararı gerekçesiyle birlikte **beş gün** içinde yeniden görüşülmek üzere meclise iade edebilir.\n- Yeniden görüşülmesi istenmeyen kararlar kesinleşir.\n- Yeniden görüşülmesi istenip de üye tam sayısının **salt çoğunluğuyla** ısrar edilen kararlar da kesinleşir.\n- Başkan, ısrarla kesinleşen kararlar aleyhine **on gün** içinde idarî yargıya başvurabilir.\n\n**Gönderme ve duyuru:**\n- Kesinleşen kararlar en geç **yedi gün** içinde mahallin en büyük mülkî idare amirine gönderilir. Gönderilmeyen karar yürürlüğe girmez.\n- Kesinleşen kararların özetleri **yedi gün** içinde uygun araçlarla halka duyurulur.\n\nŞıkta '15 gün içinde mülkî idare amirine gönderilir' görürsen yanlıştır; süre yedi gündür.",
+      "articleRefs": [
+        "23"
+      ],
+      "counterNumbers": [
+        15
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "İhtisas komisyonları",
+      "body": "**Kuruluş:**\n- Meclis, kendi üyeleri arasından en az **üç**, en fazla **beş** kişilik ihtisas komisyonları kurabilir.\n- Komisyonun süresi aynı meclis kararında belirtilir ve **bir yılı** geçemez.\n- Komisyonlar, siyasî parti gruplarının ve bağımsız üyelerin meclisteki oranına göre oluşturulur.\n\n**Zorunlu komisyonlar:**\n- İl ve ilçe belediyeleri ile nüfusu **10.000**'in üzerindeki belediyelerde **plân ve bütçe** komisyonu ile **imar** komisyonu kurulması zorunludur.\n- Kanun zorunluluğu yalnız bu komisyonlar için koyar.\n\n**Çalışma:**\n- Meclis toplantısının ardından imar komisyonu en fazla **on iş günü**, diğer komisyonlar **beş iş günü** içinde kendilerine havale edilen işleri sonuçlandırır.\n- Rapor bu sürede meclise sunulmazsa konu meclis başkanınca doğrudan gündeme alınır.\n- Muhtarlar, kamu kuruluşu amirleri, meslek kuruluşları, üniversiteler, sendikalar ve sivil toplum temsilcileri **oy hakkı olmaksızın**, kendi görev ve faaliyet alanlarına giren konuların görüşüldüğü toplantılara katılıp görüş bildirebilir.\n- Komisyon raporları alenîdir.",
+      "articleRefs": [
+        "24"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Denetim komisyonu",
+      "body": "- **Nerede:** İl ve ilçe belediyeleri ile nüfusu **10.000**'in üzerindeki belediyelerde kurulur.\n- **Ne zaman:** Her **ocak** ayı toplantısında oluşturulur.\n- **Neyi denetler:** Belediyenin bir önceki yıl gelir ve giderlerini, bunlara ilişkin hesap kayıt ve işlemlerini.\n- **Nasıl seçilir:** Meclis, kendi üyeleri arasından **gizli oyla** seçer. Üye sayısı **üçten** az, **beşten** çok olamaz. Parti grupları ve bağımsız üyelerin oranına göre oluşur.\n- **Çalışma yeri ve imkânları:** Belediye başkanının belediye binası içinde belirlediği yerde çalışır. Kamu personelinden ve uzmanlardan yararlanabilir, her türlü bilgi ve belgeyi isteyebilir.\n- **Süre:** Çalışmasını **kırkbeş işgünü** içinde tamamlar ve raporunu **mart** ayı sonuna kadar meclis başkanlığına sunar.\n- **Suç duyurusu:** Suç teşkil eden hususlarda meclis başkanlığı yetkili mercilere suç duyurusunda bulunur.\n\nÜye sayısı sorusunda üç–beş aralığının dışındaki büyük rakamlar çeldiricidir.",
+      "articleRefs": [
+        "25"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Meclisin bilgi edinme ve denetim yolları",
+      "body": "**Yollar:** faaliyet raporunu değerlendirme, denetim komisyonu, soru, genel görüşme ve gensoru.\n\n**Soru:**\n- Üye, meclis başkanlığına önerge vererek sözlü veya yazılı soru sorar.\n- Soruyu belediye başkanı ya da görevlendireceği kişi cevaplar.\n\n**Genel görüşme:**\n- Meclis üyelerinin en az **üçte biri** isteyebilir.\n- Meclis kabul ederse gündeme alınır.\n\n**Faaliyet raporu:**\n- Önceki yıla ait rapordaki açıklamalar üye tam sayısının **dörtte üç** çoğunluğuyla yeterli görülmezse yetersizlik kararı alınır.\n- Yetersizlik kararı ve tutanak, meclis başkan vekilince mülkî idare amirine gönderilir.\n- Vali dosyayı gerekçeli görüşüyle **Danıştaya** gönderir.\n- Danıştay uygun görürse belediye başkanı başkanlıktan düşer.\n\n**Gensoru:**\n- Üye tam sayısının en az **üçte biri** imzasıyla verilir.\n- Üye tam sayısının **salt çoğunluğu** ile gündeme alınır.\n- **Üç tam gün** geçmedikçe görüşülemez.\n- Karara bağlanmasında faaliyet raporundaki usul uygulanır.",
+      "articleRefs": [
+        "26"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Meclis soruşturması yok, Danıştay var",
+      "body": "**Yollar:** Faaliyet raporu, denetim komisyonu, soru, genel görüşme ve gensoru. 'Meclis soruşturması' bu listede yoktur; şıklarda görürsen cevap odur.\n\n**Yetersizlik kararı:** Aranan çoğunluk **dörtte üçtür**. Üçte iki, beşte üç, beşte dört ya da salt çoğunluk yanlıştır.\n\n**Son durak:** Yetersizlik dosyası **Danıştaya** gider. İdare mahkemesi, bölge idare mahkemesi ya da bakan değil.\n\n**Genel görüşme:** İstemek için üyelerin **üçte biri** yeterlidir; 'dörtte bir' yanlıştır.",
+      "articleRefs": [
+        "26"
+      ],
+      "counterNumbers": [
+        "üçte iki",
+        "beşte üç",
+        "beşte dört",
+        "dörtte bir"
+      ]
+    },
+    {
+      "type": "numbers",
+      "title": "Belediye meclisi: sayılar ve süreler",
+      "rows": [
+        {
+          "label": "Taşınmaz kiralamada meclis kararı",
+          "value": "üç yıldan fazla",
+          "refs": [
+            "18"
+          ]
+        },
+        {
+          "label": "Sınırlı aynî hak tesisi",
+          "value": "otuz yılı geçmemek",
+          "refs": [
+            "18"
+          ]
+        },
+        {
+          "label": "Meclisin sulh, kabul ve feragat yetkisi",
+          "value": "beşbin YTL'den fazla uyuşmazlık",
+          "refs": [
+            "18"
+          ]
+        },
+        {
+          "label": "Bütçe toplantısı süresi",
+          "value": "en çok yirmi gün",
+          "refs": [
+            "20"
+          ]
+        },
+        {
+          "label": "Diğer toplantıların süresi",
+          "value": "en çok beş gün",
+          "refs": [
+            "20"
+          ]
+        },
+        {
+          "label": "Yıllık tatil",
+          "value": "bir ay",
+          "refs": [
+            "20"
+          ]
+        },
+        {
+          "label": "Olağanüstü toplantı",
+          "value": "yılda en fazla üç defa, her biri bir birleşim",
+          "refs": [
+            "20"
+          ]
+        },
+        {
+          "label": "Olağanüstü toplantıya çağrı",
+          "value": "en az üç gün önce",
+          "refs": [
+            "20"
+          ]
+        },
+        {
+          "label": "Toplantı yeter sayısı",
+          "value": "üye tam sayısının salt çoğunluğu",
+          "refs": [
+            "22"
+          ]
+        },
+        {
+          "label": "Karar yeter sayısının alt sınırı",
+          "value": "üye tam sayısının dörtte biri",
+          "refs": [
+            "22"
+          ]
+        },
+        {
+          "label": "Yeter sayı yoksa yeni toplantı",
+          "value": "en geç üç gün içinde",
+          "refs": [
+            "22"
+          ]
+        },
+        {
+          "label": "Başkanın kararı iadesi",
+          "value": "beş gün",
+          "refs": [
+            "23"
+          ]
+        },
+        {
+          "label": "Israr için gereken çoğunluk",
+          "value": "üye tam sayısının salt çoğunluğu",
+          "refs": [
+            "23"
+          ]
+        },
+        {
+          "label": "İdarî yargıya başvuru",
+          "value": "on gün",
+          "refs": [
+            "23"
+          ]
+        },
+        {
+          "label": "Mülkî idare amirine gönderme / halka duyuru",
+          "value": "yedi gün / yedi gün",
+          "refs": [
+            "23"
+          ]
+        },
+        {
+          "label": "İhtisas komisyonu üye sayısı ve süresi",
+          "value": "üç–beş üye; bir yılı geçmemek",
+          "refs": [
+            "24"
+          ]
+        },
+        {
+          "label": "İmar komisyonu / diğer komisyonlar",
+          "value": "on iş günü / beş iş günü",
+          "refs": [
+            "24"
+          ]
+        },
+        {
+          "label": "Denetim komisyonu üye sayısı",
+          "value": "üç–beş",
+          "refs": [
+            "25"
+          ]
+        },
+        {
+          "label": "Denetim komisyonu çalışma süresi",
+          "value": "kırkbeş işgünü; rapor mart sonuna kadar",
+          "refs": [
+            "25"
+          ]
+        },
+        {
+          "label": "Genel görüşme isteği",
+          "value": "üyelerin en az üçte biri",
+          "refs": [
+            "26"
+          ]
+        },
+        {
+          "label": "Yetersizlik kararı",
+          "value": "üye tam sayısının dörtte üçü",
+          "refs": [
+            "26"
+          ]
+        },
+        {
+          "label": "Gensoru önergesi / gündeme alma",
+          "value": "en az üçte bir imza / salt çoğunluk",
+          "refs": [
+            "26"
+          ]
+        },
+        {
+          "label": "Gensorunun görüşülmesi",
+          "value": "üç tam gün geçmedikçe görüşülemez",
+          "refs": [
+            "26"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "18",
+        "20",
+        "22",
+        "23",
+        "24",
+        "25",
+        "26"
+      ]
+    },
+    {
+      "type": "exam_stats",
+      "title": "Sınav der ki",
+      "rows": [
+        {
+          "label": "Bu ünitenin maddelerinden yayındaki soru",
+          "value": "24",
+          "refs": [
+            "4",
+            "6",
+            "7",
+            "9",
+            "10",
+            "11",
+            "15",
+            "18",
+            "20",
+            "22",
+            "23",
+            "24",
+            "25",
+            "26"
+          ]
+        },
+        {
+          "label": "md 26 — Meclisin bilgi edinme ve denetim yolları",
+          "value": "4 soru",
+          "refs": [
+            "26"
+          ]
+        },
+        {
+          "label": "md 18 — Meclisin görev ve yetkileri",
+          "value": "3 soru",
+          "refs": [
+            "18"
+          ]
+        },
+        {
+          "label": "md 4 — Kuruluş",
+          "value": "2 soru",
+          "refs": [
+            "4"
+          ]
+        },
+        {
+          "label": "md 6 — Sınırların kesinleşmesi",
+          "value": "2 soru",
+          "refs": [
+            "6"
+          ]
+        },
+        {
+          "label": "md 15 — Belediyenin yetkileri ve imtiyazları",
+          "value": "2 soru",
+          "refs": [
+            "15"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "4",
+        "6",
+        "7",
+        "9",
+        "10",
+        "11",
+        "15",
+        "18",
+        "20",
+        "22",
+        "23",
+        "24",
+        "25",
+        "26"
+      ],
+      "generated": true
+    },
+    {
+      "type": "bridge",
+      "title": "Bu üniteden soru çöz",
+      "articleRefs": [
+        "4",
+        "6",
+        "7",
+        "9",
+        "10",
+        "11",
+        "15",
+        "18",
+        "20",
+        "22",
+        "23",
+        "24",
+        "25",
+        "26"
+      ],
+      "generated": true,
+      "rows": [
+        {
+          "label": "Madde kapsamlı seans",
+          "value": "md 4, 6, 7, 9–11, 15, 18, 20, 22–26, 10 soru",
+          "refs": [
+            "4",
+            "6",
+            "7",
+            "9",
+            "10",
+            "11",
+            "15",
+            "18",
+            "20",
+            "22",
+            "23",
+            "24",
+            "25",
+            "26"
+          ]
+        }
+      ]
+    }
+  ]
+}
