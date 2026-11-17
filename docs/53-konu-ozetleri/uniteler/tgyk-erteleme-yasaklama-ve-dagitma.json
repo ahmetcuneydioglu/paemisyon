@@ -1,0 +1,484 @@
+{
+  "unit": {
+    "slug": "tgyk-erteleme-yasaklama-ve-dagitma",
+    "legislationSlug": "2911-sayili-toplanti-ve-gosteri-yuruyusleri-kanunu",
+    "topicId": "477f97e4-2862-4836-a40a-6812e0609898",
+    "title": "Erteleme, yasaklama, kanuna aykırı toplantı ve dağıtma",
+    "subtitle": "Kim geri bırakır, kim erteler, kim yasaklar; toplantı ne zaman Kanuna aykırı sayılır ve nasıl dağıtılır?",
+    "articleFrom": "14",
+    "articleTo": "25",
+    "readingMinutes": 13,
+    "sourceLabel": "AI özeti — 2911 Sayılı Toplantı ve Gösteri Yürüyüşleri Kanunu, md 14–20, 22–25",
+    "articleNos": [
+      "14",
+      "15",
+      "16",
+      "17",
+      "18",
+      "19",
+      "20",
+      "22",
+      "23",
+      "24",
+      "25"
+    ],
+    "generatedBy": "claude-opus-5-5 (ozet-uret.ts)",
+    "sortOrder": 2
+  },
+  "blocks": [
+    {
+      "type": "concept",
+      "title": "Kim geri bırakır, kim erteler, kim yasaklar?",
+      "body": "Bu ünitede bir toplantının önüne çıkabilecek engelleri göreceksin. Toplantıyı **düzenleme kurulu** kendisi geri bırakabilir. **İdare** ise toplantıyı erteleyebilir ya da yasaklayabilir. Erteleme yetkisi vali, bölge valisi ve İçişleri Bakanlığı arasında paylaşılır. Bu paylaşımda belirleyici olan, güvenlik kuvvetlerinin yetip yetmemesidir. Kaymakam da belirli bir toplantıyı erteleyebilir. Yasaklama için ise ayrıca **suç işleneceğine dair açık ve yakın tehlike** şartı aranır. Bu şart, belirli bir toplantı için de ilçelerdeki bütün toplantılar için de geçerlidir. Her soruda önce şunları sor: Kim karar veriyor, hangi gerekçeyle, ne kadar süreyle?",
+      "articleRefs": [
+        "14",
+        "15",
+        "16",
+        "17",
+        "19"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Düzenleme kurulunun geri bırakması",
+      "body": "Toplantı, düzenleme kurulunca **geri bırakılabilir**.\n\n- **Kim karar verir:** düzenleme kurulunun **çoğunluğu**\n- **Kime, nasıl:** bildirimin verildiği **valilik veya kaymakamlığa yazı ile**\n- **Ne zaman:** toplantının yapılacağı saatten **en az yirmidört saat önce**\n- **Ne kadar:** **kırksekiz saati geçmemek üzere**\n- **Kaç kez:** **yalnız bir kez**",
+      "articleRefs": [
+        "14"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Geri bırakmada karıştırılanlar",
+      "body": "Geri bırakma bildirimi İçişleri Bakanlığına, bölge valiliğine, kolluk amirine ya da belediyeye gitmez. Bildirim, toplantı bildiriminin verildiği **valilik veya kaymakamlığa yazıyla** yapılır. Süreleri de birbirine karıştırma. Yirmidört saat, geri bırakmanın toplantıdan **ne kadar önce** bildirileceğini gösterir. Kırksekiz saat ise toplantının **en çok ne kadar** geri bırakılabileceğidir. Bir de şunu unutma: bu hak **yalnız bir kez** kullanılır ve kararı kurulun **çoğunluğu** verir.",
+      "articleRefs": [
+        "14"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Aynı il, aynı gün, birden çok toplantı",
+      "body": "**Şart:** Bir il sınırı içinde aynı günde birden çok toplantı yapılmak istenir. Vali de emrindeki güvenlik kuvvetlerinin ve gerektiğinde yararlanabileceği diğer güçlerin bu toplantıların güvenliğini sağlamaya **yeterli olmadığı kanısına** varır.\n\n**Sonuç:** Vali, toplantılardan **bir kısmını** **on günü aşmamak üzere bir kez** erteleyebilir.\n\n**Ölçüt:** Ertelemede **müracaat önceliği** göz önünde bulundurulur.",
+      "articleRefs": [
+        "15"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Takviye yetmezse: bölge valiliği ve İçişleri Bakanlığı",
+      "body": "**a) Aynı bölge valiliğine bağlı birden çok il:** Valiler bölge valiliğinden takviye ister. Bölge valisi bu isteklerin karşılanamayacağı kanısına varırsa, takviye gönderilemeyen illerdeki toplantıları **bölge valiliği** erteleyebilir.\n\n**b) Birden çok bölge valiliğine bağlı iller:** Bölge valileri İçişleri Bakanlığından takviye ister. İstekler karşılanamayacaksa, takviye gönderilemeyen bölge valiliğine bağlı illerdeki toplantıları **İçişleri Bakanlığı** erteleyebilir.\n\n**Her durumda:** erteleme **on günü aşmamak üzere bir kez** yapılabilir ve ertelemede **müracaat önceliği** göz önünde bulundurulur.",
+      "articleRefs": [
+        "16"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Takviye ertelemelerinde tuzak",
+      "body": "Ertelenecek toplantılar seçilirken ölçüt **müracaat önceliğidir**. Katılımcı sayısı, kurul üye sayısı, yerin merkeze uzaklığı ya da konunun siyasi olup olmadığı ölçüt değildir. Yetkiliyi bulmak için şunu sor: **Takviye kimden istendi?** Valiler bölge valiliğinden istediyse bölge valiliği erteler. Bölge valileri İçişleri Bakanlığından istediyse Bakanlık erteler. Süreyi de kaçırma: burada sınır **on gün**dür. On beş gün ya da otuz gün diyen şıklar yanlıştır.",
+      "articleRefs": [
+        "15",
+        "16"
+      ],
+      "counterNumbers": [
+        15,
+        30
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Belirli bir toplantının ertelenmesi veya yasaklanması",
+      "body": "**Yetkili:** bölge valisi, vali veya kaymakam\n\n**Amaçlar:** millî güvenlik, kamu düzeni, suç işlenmesinin önlenmesi, genel sağlığın ve genel ahlâkın veya başkalarının hak ve özgürlüklerinin korunması\n\n**Erteleme:** belirli bir toplantı, **bir ayı aşmamak üzere** ertelenebilir.\n\n**Yasaklama:** ancak **suç işleneceğine dair açık ve yakın tehlike** mevcutsa yapılabilir.",
+      "articleRefs": [
+        "17"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Md 17'de kim var, kim yok?",
+      "body": "Md 17'nin listesinde yalnızca **bölge valisi, vali ve kaymakam** vardır. İçişleri Bakanlığı, Emniyet Genel Müdürlüğü, il idare kurulu ya da Cumhuriyet savcısı bu maddeye göre belirli bir toplantıyı erteleyemez. Şıklarda kaymakamı görürsen atlama. Yasaklamaya geçmek için bildirimin geç verilmesi ya da aynı gün başka toplantı bulunması yetmez. Aranan şart **suç işleneceğine dair açık ve yakın tehlike**dir. Süre de takviye ertelemelerindeki on günle karışmasın: burada sınır **bir ay**dır.",
+      "articleRefs": [
+        "17",
+        "15"
+      ]
+    },
+    {
+      "type": "numbers",
+      "title": "Geri bırakma ve erteleme süreleri",
+      "rows": [
+        {
+          "label": "Geri bırakmanın bildirilmesi (toplantı saatinden en az)",
+          "value": "24 saat önce",
+          "refs": [
+            "14"
+          ]
+        },
+        {
+          "label": "Geri bırakma süresi (en çok)",
+          "value": "48 saat",
+          "refs": [
+            "14"
+          ]
+        },
+        {
+          "label": "Geri bırakma hakkı",
+          "value": "Yalnız 1 kez",
+          "refs": [
+            "14"
+          ]
+        },
+        {
+          "label": "Vali — aynı ilde aynı gün birden çok toplantı (en çok)",
+          "value": "10 gün, 1 kez",
+          "refs": [
+            "15"
+          ]
+        },
+        {
+          "label": "Bölge valiliği — takviye karşılanamazsa (en çok)",
+          "value": "10 gün, 1 kez",
+          "refs": [
+            "16"
+          ]
+        },
+        {
+          "label": "İçişleri Bakanlığı — takviye karşılanamazsa (en çok)",
+          "value": "10 gün, 1 kez",
+          "refs": [
+            "16"
+          ]
+        },
+        {
+          "label": "Belirli toplantının ertelenmesi — bölge valisi, vali, kaymakam (en çok)",
+          "value": "1 ay",
+          "refs": [
+            "17"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "14",
+        "15",
+        "16",
+        "17"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Erteleme ve yasaklama kararının tebliği",
+      "body": "- Karar **gerekçeli** olur ve **bir yazı ile** tebliğ edilir.\n- **Kime:** düzenleme kurulu **başkanına**; başkan bulunamazsa **üyelerden birine**.\n- **Ne zaman:** toplantının başlama saatinden **en az yirmidört saat önce**.\n- **Kapsam:** bölge valisi, vali veya kaymakamlarca ertelenen veya yasaklanan toplantılar ile İçişleri Bakanlığınca ertelenen toplantılar.\n- **Bilgi verme:** Vali veya kaymakam karar verdiyse **bölge valiliğine ve İçişleri Bakanlığına** bilgi verilir. Bölge valisi karar verdiyse **İçişleri Bakanlığına** bilgi verilir.\n- **İstisna:** 17 nci maddedeki durumlarda en az yirmidört saat önce tebliğ şartı aranmaksızın erteleme veya yasaklama yapılabilecek hâller **yönetmelikte** gösterilir.\n- **Sonrası:** Toplantının ertelenen günden sonraki bir günde yapılabilmesi için düzenleme kurulunun 10 uncu maddeye göre **yeni bildirimde** bulunması gerekir.",
+      "articleRefs": [
+        "18"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Tebliğde yanlış şıkların sevdiği yerler",
+      "body": "Karar topluluğa ilan edilmez, üyelerin tamamına ayrı ayrı da gönderilmez. Muhatap önce **kurul başkanıdır**; o bulunamazsa **üyelerden biri**. Kolluk amiri ya da tüzel kişinin organı muhatap değildir. Vali veya kaymakam karar verdiyse bilgi **hem bölge valiliğine hem İçişleri Bakanlığına** gider. “Yalnız” diye başlayan şıklara dikkat et. Erteleme süresi bitince eski bildirim kendiliğinden geçerlilik kazanmaz, idare de yeni tarih belirlemez: kurul **yeni bildirim** verir. Yirmidört saat önce tebliğ şartı aranmayan hâller kanunda, genelgede ya da kararnamede değil, **yönetmelikte** gösterilir. Tebliğ süresi de on iki saat değil, **yirmidört saattir**.",
+      "articleRefs": [
+        "18"
+      ],
+      "counterNumbers": [
+        12
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "İl veya ilçelerde bütün toplantılar",
+      "body": "**Bölge valisi — erteleme:** Millî güvenlik, kamu düzeni, suç işlenmesinin önlenmesi, genel sağlığın ve genel ahlâkın veya başkalarının hak ve özgürlüklerinin korunması amacıyla erteleme yapabilir. Kapsam, bölgeye dahil illerin birinde veya birkaçında ya da bir ilin bir veya birkaç ilçesinde **bütün toplantılardır**. Süre **bir ayı geçemez**.\n\n**Vali — yasaklama:** Aynı sebeplere dayalı olarak ve **suç işleneceğine dair açık ve yakın tehlike** mevcutsa yasaklama yapabilir. Kapsam, ile bağlı ilçelerin birinde veya birkaçında **bütün toplantılardır**. Süre **bir ayı geçemez**.\n\n**Yasaklama kararı:**\n- gerekçeli verilir,\n- kararın kısa metni, yasaklamanın uygulanacağı yerlerde **mutat vasıtalarla ilan edilir**,\n- **İçişleri Bakanlığına bilgi verilir**.",
+      "articleRefs": [
+        "19"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Md 19'da erteleyen ve yasaklayan farklı",
+      "body": "Bu maddede roller ayrılır: **bölge valisi erteler, vali yasaklar.** Bölge valisinin ertelemesi il bütünüyle sınırlı değildir; bir ilin bir veya birkaç ilçesini de kapsayabilir. Valinin yasaklaması da belirli bir toplantıyla sınırlı değildir. Açık ve yakın tehlike varsa ilçelerdeki **bütün toplantıları** kapsayabilir. Bütün toplantıları yasaklama yetkisi İçişleri Bakanlığına ait değildir. Süre sınırı erteleme ve yasaklamada aynıdır: **bir ay**. Md 19, yasaklama kararını kişiye tebliğe değil **ilana** bağlar. Karar gerekçeli verilir, mutat vasıtalarla ilan edilir ve İçişleri Bakanlığına bilgi verilir. “Kurul başkanına şahsen tebliğ edilmedikçe hüküm ifade etmez” diyen şık yanlıştır.",
+      "articleRefs": [
+        "19",
+        "18"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Gösteri yürüyüşleri ve yasak yerler",
+      "body": "**Yürüyüşler:** Gösteri yürüyüşlerinin **şekil ve şartları** ile **ertelenmesi veya yasaklanması** hakkında da Kanunun **3 üncü ve 4 üncü bölümlerindeki** hükümler uygulanır.\n\nŞehir ve kasaba içindeki genel yollarda yapılacak yürüyüşlerin bildiriminde, 6 ncı madde gereğince ilan olunan yol ve yönlere uyulması şarttır. Ayrıca şunların belirtilmesi **zorunludur**:\n- yürüyüşe geçmek için seçilecek **toplanma yeri**,\n- **izlenecek yol**,\n- **dağılma yeri**.\n\n**Yasak yerler:** Şu yerlerde toplantı yapılamaz:\n- parklar,\n- mabetler,\n- kamu hizmeti görülen bina ve tesisler ile bunların eklentileri,\n- Türkiye Büyük Millet Meclisine **bir kilometre** uzaklıktaki alan.\n\n**Genel meydanlar:** Halkın ve ulaşım araçlarının gelip geçmesini sağlamak üzere **valilik ve kaymakamlıklarca** yapılacak düzenlemelere uyulması **zorunludur**.",
+      "articleRefs": [
+        "20",
+        "22"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Yürüyüş bildirimi ve meydan düzeni",
+      "body": "Gösteri yürüyüşleri için ayrı bir usul arama. Şekil, şart, erteleme ve yasaklamada **3 üncü ve 4 üncü bölümler** uygulanır. Genel yollardaki yürüyüş bildiriminde zorunlu olanlar **toplanma yeri, izlenecek yol ve dağılma yeri**dir. Taşınacak pankartların metni bu listede yoktur. Genel meydan düzenlemesini belediye, emniyet müdürlüğü ya da düzenleme kurulu yapmaz; bu düzenlemeyi **valilik ve kaymakamlıklar** yapar. Meclis çevresindeki yasak alan beş yüz metre ya da birkaç kilometre değil, **bir kilometredir**.",
+      "articleRefs": [
+        "20",
+        "22"
+      ],
+      "counterNumbers": [
+        500
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Kanuna aykırı sayılan toplantı ve yürüyüşler",
+      "body": "Şu hâllerde yapılan toplantı veya gösteri yürüyüşü **Kanuna aykırı sayılır**:\n- **a)** 9 ve 10 uncu maddelere uygun bildirim verilmeden ya da belirtilen gün ve saatten önce veya sonra,\n- **b)** Şunlardan biriyle katılınarak:\n  - ateşli silah, patlayıcı (havai fişek, molotof dâhil), kesici ve delici alet,\n  - taş, sopa, zincir, boğma teli, demir bilye, sapan gibi bereleyici ve boğucu araç,\n  - yakıcı, aşındırıcı, yaralayıcı ecza, zehir, sis ve gaz,\n  - yasadışı örgüt amblem ve işaretleri ya da bunları taşıyan üniformayı andırır giysi,\n  - kimliği gizlemek amacıyla yüzün tamamen veya kısmen örtülmesi,\n  - suç niteliğindeki afiş, pankart, döviz ve slogan ya da bunların ses cihazıyla yayınlanması,\n- **c)** 7 nci madde hükümleri gözetilmeksizin,\n- **d)** 6 ve 10 uncu maddelerde belirtilen yerler dışında,\n- **e)** 20 nci maddedeki yöntem ve şartlara ve 22 nci maddedeki yasak ve önlemlere uyulmaksızın,\n- **f)** 4 üncü madde ile kapsam dışı bırakılan konularda kendi amaç, kural ve sınırları dışına çıkılarak,\n- **g)** kanunların suç saydığı maksatlar için,\n- **h)** bildirimde belirtilen amaç dışına çıkılarak,\n- **i)** 14, 15, 16, 17 ve 19 uncu maddelere göre tespit edilen erteleme veya yasaklama süresi sona ermeden,\n- **j)** 12 nci madde gereğince toplantının dağılmasına karar verilmesi hâlinde,\n- **k)** 21 inci madde hükmüne aykırı olarak,\n- **l)** 3 üncü maddenin 2 nci fıkrasına uyulmadan.",
+      "articleRefs": [
+        "23"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Md 23'te sayılanlar ve sayılmayanlar",
+      "body": "**(i) bendini ezberle:** Dayanak maddeler **14, 15, 16, 17 ve 19**'dur. Tebliğe ilişkin md 18 ve yürüyüşlere ilişkin md 20 bu listede yoktur. **(b) bendinde** demir bilye, sapan, boğma teli, zincir, havai fişek, molotof ve yakıcı-aşındırıcı ecza sayılır. Lazer ışın cihazı bentte adıyla geçmez. Toplantının bildirilen saatten önce kendiliğinden sona ermesi aykırılık hâli değildir. Aykırılık, belirtilen gün ve saatten önce veya sonra **toplanmaktır**. Kurul 12 nci maddeye göre dağılma kararı verdiyse, toplantı **(j) bendi** gereği Kanuna aykırı sayılır. Kanun kapsamı dışındaki toplantılar da kendi amaç, kural ve sınırları dışına çıkılırsa Kanuna aykırı sayılır.",
+      "articleRefs": [
+        "23"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Sonradan Kanuna aykırı hâle dönüşen toplantı",
+      "body": "Kanuna uygun başlayan bir toplantı veya yürüyüş, 23 üncü maddedeki durumlardan biri veya birkaçı yüzünden Kanuna aykırı hâle dönüşebilir. Bu durumda:\n\n1. **Düzenleme kurulu veya kurul başkanı** toplantının sona erdiğini topluluğa ilan eder ve durumu **derhâl yetkili kolluk amirine** bildirir.\n2. Kurul bu görevi yapmazsa **yetkili kolluk amiri** durumu **mahallin en büyük mülki amirine** bildirir. Sona erdirme kararını **mülki amir** alır.\n3. Mülki amir, mahallin güvenlik amirlerini veya bunlardan birini olay yerine gönderir. Bunu **yazılı** emirle yapar; acele hâllerde **sözlü** emir de verebilir, ancak emir **sonradan yazıyla teyit edilir**.\n4. Görevlendirilen amir, topluluğa **Kanuna uyularak dağılmalarını, dağılmazlarsa zor kullanılacağını ihtar eder**.\n5. Topluluk dağılmazsa **zor kullanılarak dağıtılır**.",
+      "articleRefs": [
+        "24"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "İhtarsız zor, uzaklaştırma ve aykırı başlayan toplantı",
+      "body": "**İhtarsız zor:** Sonradan Kanuna aykırı hâle dönüşen toplantıda şu durumlarda ihtara gerek olmaksızın zor kullanılır:\n- güvenlik kuvvetlerine karşı **fiilî saldırı veya mukavemet**,\n- güvenlik kuvvetlerinin korudukları yer ve kişilere karşı fiilî saldırı.\n\n**Uzaklaştırma:** 23 üncü madde (b) bendindeki silah, araç, alet, madde veya sloganlarla katılanlar güvenlik kuvvetlerince **uzaklaştırılır ve toplantıya devam edilir**. Bunların sayıları ve davranışları dağıtmayı gerektirecek derecedeyse dağıtma hükümleri uygulanır. Bu kişilerin tanınması ve uzaklaştırılmasında **düzenleme kurulu, güvenlik kuvvetlerine yardım etmekle yükümlüdür**.\n\n**Kanuna aykırı başlayan toplantı:** Güvenlik kuvvetleri olayı **en seri şekilde mahallin en büyük mülki amirine** haber verir ve mevcut imkânlarla gerekli tedbirleri alır. Müdahale eden amir topluluğa dağılma ihtarında bulunur. Topluluk dağılmazsa zor kullanılarak dağıtılır.",
+      "articleRefs": [
+        "24"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Dağıtmada karıştırılanlar",
+      "body": "Toplantının sona erdiğini ilk ilan eden **düzenleme kurulu veya kurul başkanıdır**. Sona erdirme kararını ise kolluk amiri, bölge valisi ya da savcı değil, **mahallin en büyük mülki amiri** alır. İhtarın içeriğinde hem dağılma çağrısı hem de zor kullanılacağı uyarısı bulunur. İhtar için tekrar sayısı, yazılı olma şartı ya da beklenecek süre öngörülmemiştir. Güvenlik amiri sözlü emirle de görevlendirilebilir; ancak bu acele hâllere özgüdür ve emir sonradan yazıyla teyit edilir. Kanuna aykırı başlayan toplantıda zor kullanmak için bölge valiliğinin onayı aranmaz. İhtarsız zor için fiilî saldırı veya mukavemet gerekir. Suç niteliğinde slogan atılması ya da bitiş saatinin aşılması bu sonucu doğurmaz. Son olarak md 25: Topluluk içinde suç işleyenleri ve suçluları yakalamak için 24 üncü maddedeki emir ve ihtarlara gerek yoktur.",
+      "articleRefs": [
+        "24",
+        "25"
+      ]
+    },
+    {
+      "type": "numbers",
+      "title": "Tebliğ, bütün toplantılar ve yasak alan",
+      "rows": [
+        {
+          "label": "Erteleme veya yasaklama kararının tebliği (başlama saatinden en az)",
+          "value": "24 saat önce",
+          "refs": [
+            "18"
+          ]
+        },
+        {
+          "label": "Bölge valisi — il veya ilçelerde bütün toplantıların ertelenmesi (en çok)",
+          "value": "1 ay",
+          "refs": [
+            "19"
+          ]
+        },
+        {
+          "label": "Vali — ilçelerde bütün toplantıların yasaklanması (en çok)",
+          "value": "1 ay",
+          "refs": [
+            "19"
+          ]
+        },
+        {
+          "label": "TBMM çevresinde toplantı yapılamayan alan",
+          "value": "1 kilometre",
+          "refs": [
+            "22"
+          ]
+        },
+        {
+          "label": "Md 23 (i) — süresi dolmadan toplanılırsa aykırılık doğuran maddeler",
+          "value": "md 14, 15, 16, 17, 19",
+          "refs": [
+            "23"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "18",
+        "19",
+        "22",
+        "23"
+      ]
+    },
+    {
+      "type": "compare",
+      "title": "Md 17 (belirli toplantı) ↔ Md 19 (bütün toplantılar)",
+      "rows": [
+        {
+          "aspect": "Kapsam",
+          "left": "Belirli bir toplantı",
+          "right": "İllerin veya ilçelerin bütün toplantıları",
+          "refs": [
+            "17",
+            "19"
+          ]
+        },
+        {
+          "aspect": "Erteleyen",
+          "left": "Bölge valisi, vali veya kaymakam",
+          "right": "Bölge valisi",
+          "refs": [
+            "17",
+            "19"
+          ]
+        },
+        {
+          "aspect": "Yasaklayan",
+          "left": "Bölge valisi, vali veya kaymakam",
+          "right": "Vali (ile bağlı ilçelerde)",
+          "refs": [
+            "17",
+            "19"
+          ]
+        },
+        {
+          "aspect": "Yasaklama şartı",
+          "left": "Suç işleneceğine dair açık ve yakın tehlike",
+          "right": "Aynı sebepler ve suç işleneceğine dair açık ve yakın tehlike",
+          "refs": [
+            "17",
+            "19"
+          ]
+        },
+        {
+          "aspect": "Süre sınırı",
+          "left": "Erteleme: bir ayı aşmamak üzere",
+          "right": "Erteleme ve yasaklama: bir ayı geçmemek üzere",
+          "refs": [
+            "17",
+            "19"
+          ]
+        },
+        {
+          "aspect": "Kararın duyurulması",
+          "left": "Gerekçeli karar, kurul başkanına, bulunamazsa üyelerden birine yazıyla tebliğ edilir",
+          "right": "Yasaklama kararı gerekçeli verilir, özeti mutat vasıtalarla ilan edilir ve İçişleri Bakanlığına bilgi verilir",
+          "refs": [
+            "18",
+            "19"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "17",
+        "18",
+        "19"
+      ]
+    },
+    {
+      "type": "exam_stats",
+      "title": "Sınav der ki",
+      "rows": [
+        {
+          "label": "Bu ünitenin maddelerinden yayındaki soru",
+          "value": "34",
+          "refs": [
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "22",
+            "23",
+            "24",
+            "25"
+          ]
+        },
+        {
+          "label": "md 24 — Toplantı veya gösteri yürüyüşünün dağıtılması",
+          "value": "7 soru",
+          "refs": [
+            "24"
+          ]
+        },
+        {
+          "label": "md 18 — Yasaklama veya erteleme kararının tebliği",
+          "value": "5 soru",
+          "refs": [
+            "18"
+          ]
+        },
+        {
+          "label": "md 23 — Kanuna aykırı toplantı ve gösteri yürüyüşleri",
+          "value": "5 soru",
+          "refs": [
+            "23"
+          ]
+        },
+        {
+          "label": "md 16 — Toplantının bölge valiliği ve İçişleri Bakanlığınca ertelenmesi",
+          "value": "3 soru",
+          "refs": [
+            "16"
+          ]
+        },
+        {
+          "label": "md 17 — Toplantının ertelenmesi veya bazı hâllerde yasaklanması",
+          "value": "3 soru",
+          "refs": [
+            "17"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "14",
+        "15",
+        "16",
+        "17",
+        "18",
+        "19",
+        "20",
+        "22",
+        "23",
+        "24",
+        "25"
+      ],
+      "generated": true
+    },
+    {
+      "type": "bridge",
+      "title": "Bu üniteden soru çöz",
+      "articleRefs": [
+        "14",
+        "15",
+        "16",
+        "17",
+        "18",
+        "19",
+        "20",
+        "22",
+        "23",
+        "24",
+        "25"
+      ],
+      "generated": true,
+      "rows": [
+        {
+          "label": "Madde kapsamlı seans",
+          "value": "md 14–20, 22–25, 10 soru",
+          "refs": [
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "22",
+            "23",
+            "24",
+            "25"
+          ]
+        }
+      ]
+    }
+  ]
+}

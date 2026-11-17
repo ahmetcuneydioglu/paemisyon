@@ -1,0 +1,554 @@
+{
+  "unit": {
+    "slug": "tgyk-yasaklar-ve-ceza-hukumleri",
+    "legislationSlug": "2911-sayili-toplanti-ve-gosteri-yuruyusleri-kanunu",
+    "topicId": "477f97e4-2862-4836-a40a-6812e0609898",
+    "title": "Yasaklar ve ceza hükümleri",
+    "subtitle": "Çağrı ve propaganda araçları, kışkırtma yasağı, ceza aralıkları ve son hükümler",
+    "articleFrom": "26",
+    "articleTo": "40",
+    "readingMinutes": 12,
+    "sourceLabel": "AI özeti — 2911 Sayılı Toplantı ve Gösteri Yürüyüşleri Kanunu, md 26–34, 37–40",
+    "articleNos": [
+      "26",
+      "27",
+      "28",
+      "29",
+      "30",
+      "31",
+      "32",
+      "33",
+      "34",
+      "37",
+      "38",
+      "39",
+      "40"
+    ],
+    "generatedBy": "claude-opus-5-5 (ozet-uret.ts)",
+    "sortOrder": 3
+  },
+  "blocks": [
+    {
+      "type": "concept",
+      "title": "Bu ünitede ne var?",
+      "body": "Bu ünitede kanunun yasak ve ceza tarafını görüyorsun. Önce iki kural maddesi gelir: çağrı ve propaganda araçları (md 26) ile kışkırtma yasağı (md 27). Ardından md 28–34 arası gelir. Bu maddelerin neredeyse hepsi bir hapis cezası aralığı içerir. Sınavın en sevdiği şey de bu aralıklardır: hangi fiil, kaç aydan kaç yıla. En sonda yönetmelik, saklı hükümler, kaldırılan kanun ve yürürlük maddeleri (md 37–40) var. Cezaları çalışırken sık tekrar eden kalıbı da tanı: \"fiil daha ağır bir cezayı gerektiren ayrı bir suç teşkil etmediği takdirde\". Bu kalıp, fiil daha ağır bir suç oluşturuyorsa o maddedeki cezanın uygulanmayacağını söyler.",
+      "articleRefs": [
+        "26",
+        "27",
+        "28",
+        "29",
+        "30",
+        "31",
+        "32",
+        "33",
+        "34",
+        "37",
+        "38",
+        "39",
+        "40"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Md 26: Davetiye, levha ve ilanlar",
+      "body": "**Md 26**: Toplantı veya yürüyüşe çağrı ya da propaganda için kullanılan basılı, çoğaltılmış veya el ile yazılmış **davetiye, levha ve ilanlarda** şunlar zorunludur:\n- **Düzenleme kurulu başkanı** ile **en az altı üyesinin** adları, soyadları ve imzaları bulunur.\n- Asılması gerekenler, 6 ncı maddedeki yönteme de uyulmak şartıyla, **valilik veya kaymakamlıklarca önceden tespit edilmiş yerlere** asılır.\n\n**Yasak:** Bu propaganda ve çağrı alet ve araçlarında halkı suç işlemeye **özendiren veya kışkırtan** yazı veya resim bulunamaz.",
+      "articleRefs": [
+        "26"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Md 26: Ses yükselten araçla çağrı ve kapalı yer",
+      "body": "**Hangi günler?** Toplantı veya gösteri yürüyüşünün yapılacağı tarihten **bir önceki günden** toplantının **başlayacağı saate kadar**.\n\n**Hangi saatlerde?** Yalnızca **güneşin doğuşundan batışına kadarki** zaman içinde.\n\nBu süre dışında çağrı için ses yükselten veya ileten alet ya da araç **kullanılamaz**.\n\n**Kapalı yer toplantıları:** Ses yükseltici alet veya araçlarla **dışarıya yayın yapılamaz**.",
+      "articleRefs": [
+        "26"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Md 26'da sık karıştırılanlar",
+      "body": "**Üye sayısı:** Davetiye, levha ve ilanlarda düzenleme kurulu başkanı ile **en az altı** üyenin imzası bulunmalı. Beş ya da yedi değil.\n\n**Zaman:** Ses yükselten araçla çağrı, toplantının bitiş saatine değil **başlayacağı saate** kadar yapılabilir. Gece değil, **güneşin doğuşundan batışına** kadar. Bir hafta öncesinden değil, **bir önceki günden** başlar.\n\n**Kapalı yer:** Yasak olan ses yükselticinin kendisi değil, onunla **dışarıya yayın** yapmaktır. Bu yasak için metinde valilik izni ya da düzenleme kurulu kararıyla açılan bir kapı da yok.",
+      "counterNumbers": [
+        "beş",
+        "yedi"
+      ],
+      "articleRefs": [
+        "26"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Md 27: Kışkırtma yasağı",
+      "body": "**Md 27**: Halka karşı, halkı **Kanuna aykırı** toplantı veya yürüyüşe **özendirmek veya kışkırtmak** yasaktır. Yasak şu yolların hepsini kapsar:\n- doğrudan doğruya ya da ses yükselten veya ileten herhangi bir alet veya araçla söz söyleyerek veya seslenerek,\n- basılmış, çoğaltılmış, elle yazılmış veya çizilmiş kâğıtları duvarlara veya diğer yerlere yapıştırarak veya dağıtarak,\n- **benzeri araç ve yollarla**.\n\n**Sonuç:** Bu hareketler güvenlik kuvvetlerince **derhal menedilir**.",
+      "articleRefs": [
+        "27"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Md 27: Sayım kapalı değil, men derhal",
+      "body": "Şıklarda \"yalnızca söz söylemek\" ya da \"yalnızca kâğıt yapıştırmak\" görürsen ele. Metin sözlü seslenmeyi de, kâğıt yapıştırmayı ve dağıtmayı da sayar. Üstüne \"benzeri araç ve yollarla\" diyerek kapıyı açık bırakır. Yasak \"halka karşı\" yapılan hareketleri hedefler. Metinde onu yalnız düzenleme kurulu üyeleriyle ya da katılanlarla sınırlayan bir ifade yok.\n\nGüvenlik kuvvetlerinin yükümlülüğü de net: **derhal menetmek**. Metinde mülki amirin yazılı emri, savcı talimatı, dava açılması ya da önceden ihtar şartı yer almaz.",
+      "articleRefs": [
+        "27"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Md 28: Yasaklara aykırı hareket",
+      "body": "- **Kanuna aykırı** toplantı veya gösteri yürüyüşü **düzenleyen, yöneten** ve bunların hareketlerine **katılanlar**: **bir yıl altı aydan üç yıla** kadar hapis. Fiil daha ağır bir cezayı gerektiren ayrı bir suç teşkil etmediği takdirde uygulanır.\n- 10 uncu madde gereğince verilen bildirimde düzenleme kurulu üyesi gösterilip **9 uncu maddedeki nitelikleri taşımayanlar**: toplantı veya yürüyüş yapılırsa **bir yıla kadar** hapis.\n- **11 ve 12 nci maddelerdeki görevleri** yerine getirmeyen düzenleme kurulu üyeleri: **altı aydan iki yıla** kadar hapis.\n- **Güvenlik kuvvetlerine** veya toplantı ya da yürüyüş safahatını **teknik araç ve gereçlerle tespit için görevlendirilenlere**, görevleri sırasında cebir ve şiddet, tehdit veya nüfuz ve müessir kuvvet sarfederek mani olanlar: **iki yıldan beş yıla** kadar hapis. Fiilleri daha ağır bir cezayı gerektirmediği takdirde uygulanır.",
+      "articleRefs": [
+        "28"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Md 28: Kim korunuyor, kim ne alıyor?",
+      "body": "Son fıkrada korunanlar yalnız şu ikisidir: **güvenlik kuvvetleri** ve **safahatı teknik araç ve gereçlerle tespit için görevlendirilenler**. Hükümet komiseri, mülki amir, düzenleme kurulunun görevlileri ya da basın mensupları bu fıkrada sayılmaz. Bu fıkranın ceza aralığı **iki yıldan beş yıla** kadardır. \"Bir–beş\" ya da \"iki–yedi\" gibi şıklara kanma.\n\nNitelik taşımayan kurul üyesinin cezası **bir yıla kadar hapis**tir, adli para cezası değil. Bu ceza da ancak toplantı veya yürüyüş **yapılırsa** gündeme gelir. Kanuna aykırı toplantıyı düzenleyen, yöneten ve katılanlarda üst sınır **üç yıl**dır, dört değil.",
+      "counterNumbers": [
+        "yedi",
+        "dört"
+      ],
+      "articleRefs": [
+        "28"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Md 29–30: Engellemek ve huzuru bozmak",
+      "body": "**Md 29 — Engelleyenler:** Toplantı veya yürüyüş yapılmasına **engel olan** ya da devamına imkân vermeyecek **tertipler ile** toplantı veya yürüyüşü **ihlal eden** kimse: **dokuz aydan bir yıl altı aya** kadar hapis.\n\n**Md 30 — Huzur ve sükûnu bozanlar:** **Yapılmakta olan** toplantı veya yürüyüşte, huzur ve sükûnu bozmak maksadıyla **tehdit, hakaret, saldırı veya mukavemette** bulunanlar ya da başka bir suretle huzur ve sükûnun bozulmasına sebebiyet verenler: **bir yıl altı aydan üç yıla** kadar hapis.\n\n**Bu maddelerde ortak şart:** Fiil daha ağır bir cezayı gerektiren ayrı bir suç teşkil etmemelidir.",
+      "articleRefs": [
+        "29",
+        "30"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Engelleme mi, huzur bozma mı?",
+      "body": "Bu maddeler en çok birbirine karıştırılır. **Engelleme (md 29)** daha hafiftir: dokuz aydan bir yıl altı aya. **Huzur bozma (md 30)** daha ağırdır: bir yıl altı aydan üç yıla. Boşluk doldurma sorusunda md 29 için \"dokuz – altı\" kalıbını hatırla: dokuz ay ile bir yıl altı ay.\n\nMd 30'da açıkça sayılan fiiller tehdit, hakaret, saldırı ve mukavemettir. İzinsiz ses yükseltici kullanmak bu sayımda yok. Yapılmakta olan toplantıda huzuru bozmak maksadıyla hakaret eden kişinin cezası da, daha ağır ayrı bir suç oluşmuyorsa, md 30'daki aralıktır.",
+      "articleRefs": [
+        "29",
+        "30"
+      ]
+    },
+    {
+      "type": "numbers",
+      "title": "Sayılar ve cezalar I (md 26–30)",
+      "rows": [
+        {
+          "label": "Davetiye, levha, ilanda imzası bulunacak kurul üyesi (başkan dışında)",
+          "value": "En az altı",
+          "refs": [
+            "26"
+          ]
+        },
+        {
+          "label": "Ses yükselten araçla çağrının başlangıcı",
+          "value": "Toplantı tarihinden bir önceki gün",
+          "refs": [
+            "26"
+          ]
+        },
+        {
+          "label": "Ses yükselten araçla çağrının bitişi",
+          "value": "Toplantının başlayacağı saat",
+          "refs": [
+            "26"
+          ]
+        },
+        {
+          "label": "Kanuna aykırı toplantıyı düzenleyen, yöneten, katılan",
+          "value": "Bir yıl altı ay – üç yıl hapis",
+          "refs": [
+            "28"
+          ]
+        },
+        {
+          "label": "Nitelik taşımayan kurul üyesi (toplantı yapılırsa)",
+          "value": "Bir yıla kadar hapis",
+          "refs": [
+            "28"
+          ]
+        },
+        {
+          "label": "11 ve 12 nci madde görevlerini yerine getirmeyen kurul üyesi",
+          "value": "Altı ay – iki yıl hapis",
+          "refs": [
+            "28"
+          ]
+        },
+        {
+          "label": "Güvenlik kuvvetlerine veya tespit görevlilerine cebir, tehdit veya nüfuz kullanarak mani olan",
+          "value": "İki yıl – beş yıl hapis",
+          "refs": [
+            "28"
+          ]
+        },
+        {
+          "label": "Toplantıyı engelleyen veya ihlal eden",
+          "value": "Dokuz ay – bir yıl altı ay hapis",
+          "refs": [
+            "29"
+          ]
+        },
+        {
+          "label": "Huzur ve sükûnu bozan",
+          "value": "Bir yıl altı ay – üç yıl hapis",
+          "refs": [
+            "30"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "26",
+        "28",
+        "29",
+        "30"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Md 31: Kanuna aykırı propaganda vasıtaları",
+      "body": "Propaganda vasıtalarında ceza basamaklanır:\n1. Başkan ve **en az altı üyenin** ad, soyad ve imzasını taşımayan md 26 vasıtalarını **hazırlayan, yazdıran, bastıran, propaganda maksadıyla kullanan** ya da md 26'daki yasak ve şartlara başka surette uymayanlar: **altı aydan bir yıla** kadar hapis.\n2. Vasıtalarda halkı **suç işlemeye teşvik ve tahrik** eden yazı, resim veya işaret bulunursa ya da bu maksatla başka araçlar kullanılırsa: **bir yıl altı aydan üç yıla** kadar hapis.\n3. Teşvik ve tahrik sonucunda **suç işlenir veya suçun icrasına teşebbüs edilirse**, teşvik veya tahrikte bulunanlar: **üç yıldan beş yıla** kadar hapis.\n\n**Teşvik ve tahrik basamaklarında şart:** Fiil daha ağır bir cezayı gerektiren ayrı bir suç teşkil etmemelidir.",
+      "articleRefs": [
+        "31",
+        "26"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Md 32: Direnme",
+      "body": "- Kanuna aykırı toplantı veya gösteri yürüyüşüne katılıp **ihtara ve zor kullanmaya rağmen dağılmamakta ısrar** edenler: **altı aydan üç yıla** kadar hapis.\n- Bu suçu toplantı ve gösteri yürüyüşünü **tertip edenler** işlerse, ceza **yarı oranında artırılarak** hükmolunur.\n- İhtara ve zor kullanmaya rağmen kolluk görevlilerine **cebir veya tehdit** kullanılarak direnilirse, **ayrıca** 5237 sayılı Türk Ceza Kanununun **265 inci maddesinde** tanımlanan suçtan da cezaya hükmolunur.\n\n**İstisna:** Dağıtma, 23 üncü maddedeki hâllerden biri gerçekleşmeden veya 24 üncü madde hükmü yerine getirilmeden, **yetki sınırı aşılarak** yapılmış olabilir. Bu durumda bu fiilleri işleyenlerin cezaları **dörttebire kadar indirilerek uygulanabilir**. Ceza vermekten **vazgeçilebilir** de.",
+      "articleRefs": [
+        "32"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Md 32: Oranlar ve atıf",
+      "body": "Tertip edenlerde artırım **yarı oranında**dır. Üçte bir, bir kat ya da iki kat değil.\n\nCebir veya tehditle direnmede ek ceza, Türk Ceza Kanununun **265 inci maddesinden** gelir. Şıklarda başka kanunlar ya da başka maddeler görünse de metin yalnız bunu sayar.\n\nYetki sınırı aşılarak dağıtmada kelimelere dikkat et: indirim **dörttebire kadar**dır ve \"uygulanabileceği gibi, ceza vermekten de vazgeçilebilir\" denmiştir. Yani hüküm \"-abilir\" kipiyle kurulmuş bir imkândır, zorunlu bir indirim değildir. \"Yarı oranında indirim\" ya da \"indirim zorunludur\" diyen şıklar yanlıştır.",
+      "counterNumbers": [
+        "üçte bir",
+        "bir kat",
+        "iki kat"
+      ],
+      "articleRefs": [
+        "32"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Md 33: Silahlı ve yasak sembollerle katılma",
+      "body": "Toplantı ve gösteri yürüyüşüne şu şekillerde katılanlar hapisle cezalandırılır:\n\n**(a) bendi — iki yıl altı aydan dört yıla kadar:**\n- ateşli silahlar; havai fişek, molotof ve benzeri el yapımı olanlar dâhil patlayıcı maddeler,\n- her türlü kesici, delici aletler; taş, sopa, demir ve lastik çubuklar, boğma teli veya zincir, demir bilye ve sapan gibi bereleyici ve boğucu araçlar,\n- yakıcı, aşındırıcı, yaralayıcı eczalar, her türlü zehirler, her türlü sis, gaz ve benzeri maddeler taşıyarak katılmak,\n- **kimliğini gizlemek amacıyla yüzünü tamamen veya kısmen** bez vesair unsurlarla örterek katılmak.\n\n**(b) bendi — altı aydan üç yıla kadar:**\n- yasadışı örgüt ve topluluklara ait **amblem ve işaret** taşıyarak ya da bunları üzerinde bulunduran üniformayı andırır giysiler giyerek katılmak,\n- kanunların suç saydığı nitelikte **afiş, pankart, döviz, resim, levha**, araç ve gereçler taşıyarak, bu nitelikte **sloganlar** söyleyerek veya ses cihazlarıyla yayınlayarak katılmak.\n\n**Ayrıca:** Toplantı kanuna aykırıysa ve dağılmamak için direnilirse, md 32 hükümlerine göre de cezaya hükmolunur.",
+      "articleRefs": [
+        "33",
+        "32"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Md 33: Hangi bent?",
+      "body": "Yüz örtmek hafif bir fiil gibi görünür ama **(a) bendinde**dir: iki yıl altı aydan dört yıla. Kimliğini gizlemek için yüzünü bezle örten ve yanında demir çubuk taşıyan kişi de bu bentten cezalandırılır. Amblem, pankart, döviz ve slogan ise **(b) bendindedir**: altı aydan üç yıla.\n\nBentleri ayırmanın kolay yolu şu: silah, patlayıcı, alet, zehir, gaz ve yüz örtme (a) bendinde; sembol ve söylem (b) bendinde.\n\nToplantı kanuna aykırıysa ve dağılmamak için direnilirse cezalar birbirinin içinde erimez. Md 33 cezasının **yanında ayrıca** md 32 hükümlerine göre de cezaya hükmolunur.",
+      "articleRefs": [
+        "33",
+        "32"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Md 34: Tahrikçiler ve suç ortakları",
+      "body": "27 nci maddedeki kışkırtma yasağına aykırı hareket edenlerin cezası, toplantının akıbetine göre değişir:\n- Toplantı veya yürüyüş **vukubulmamışsa** ya da vukubulup **ilk emir ve ihtar üzerine dağıtılmışsa**: **bir yıl altı aydan dört yıla** kadar hapis.\n- Toplantı ve yürüyüş **zorla dağıtılmışsa**: **üç yıldan beş yıla** kadar hapis.\n\n**Şart:** Metin, \"fiil daha ağır bir cezayı gerektiren ayrı bir suç teşkil etmediği takdirde\" kaydını ilk emir ve ihtar üzerine dağılma hâlinin ceza aralığından önce yazar.",
+      "articleRefs": [
+        "34",
+        "27"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Md 37–40: Son hükümler",
+      "body": "**Md 37 — Yönetmelik:** Şu konular yönetmelikle düzenlenir:\n- düzenleme kurulunun, güvenlik kuvvetlerinin ve görevli askeri birliklerin görev, yetki ve sorumluluklarının uygulanış biçimi,\n- 10 ve 18 inci maddelerdeki hususlar,\n- Kanunun uygulanmasına ilişkin diğer hususlar.\n\nYönetmeliği **Adalet, Milli Savunma ve İçişleri** bakanlıkları, Kanunun yayımı tarihinden itibaren **üç ay içinde** çıkarır. Yönetmelik Resmi Gazetede yayımlanır.\n\n**Md 38 — Saklı hükümler:** **İl İdaresi Kanunu** ile diğer kanunlardaki, bu Kanun kapsamına giren konularla ilgili yetkiler saklıdır.\n\n**Md 39 — Kaldırılan hükümler:** 10/2/1963 tarih ve **171 sayılı** Toplantı ve Gösteri Yürüyüşü Hürriyeti Hakkında Kanun yürürlükten kaldırılmıştır.\n\n**Md 40 — Yürürlük:** Kanun, yayımı tarihinden **üç ay sonra** yürürlüğe girer.",
+      "articleRefs": [
+        "37",
+        "38",
+        "39",
+        "40"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Son hükümlerde çeldiriciler",
+      "body": "**Bakanlıklar:** Yönetmeliği **Adalet, Milli Savunma ve İçişleri** bakanlıkları çıkarır. \"Yalnız İçişleri\" ya da Dışişleri veya Milli Eğitim eklenmiş üçlüler yanlıştır.\n\n**Saklı yetkiler:** Maddede adı geçen kanun **İl İdaresi Kanunu**dur, metin yanına \"diğer kanunlar\"ı ekler. Kaldırılan kanun ise **171 sayılı** olandır. İl İdaresi Kanunu kaldırılmamış, aksine yetkileri saklı tutulmuştur.\n\n**Süreler:** Yönetmelik yayımdan itibaren **üç ay içinde** çıkarılır. Kanun ise yayımdan **üç ay sonra** yürürlüğe girer. \"Yayımı tarihinde\" ya da \"altı ay sonra\" diyen şıklar yanlıştır.",
+      "counterNumbers": [
+        "altı"
+      ],
+      "articleRefs": [
+        "37",
+        "38",
+        "39",
+        "40"
+      ]
+    },
+    {
+      "type": "numbers",
+      "title": "Sayılar ve cezalar II (md 31–40)",
+      "rows": [
+        {
+          "label": "İmzasız veya md 26 şartlarına aykırı propaganda vasıtası",
+          "value": "Altı ay – bir yıl hapis",
+          "refs": [
+            "31"
+          ]
+        },
+        {
+          "label": "Suç işlemeye teşvik ve tahrik içeren vasıta",
+          "value": "Bir yıl altı ay – üç yıl hapis",
+          "refs": [
+            "31"
+          ]
+        },
+        {
+          "label": "Teşvik sonucu suç işlenir veya teşebbüs edilirse",
+          "value": "Üç yıl – beş yıl hapis",
+          "refs": [
+            "31"
+          ]
+        },
+        {
+          "label": "Direnme (dağılmamakta ısrar)",
+          "value": "Altı ay – üç yıl hapis",
+          "refs": [
+            "32"
+          ]
+        },
+        {
+          "label": "Direnmeyi tertip edenler işlerse",
+          "value": "Ceza yarı oranında artırılır",
+          "refs": [
+            "32"
+          ]
+        },
+        {
+          "label": "Yetki sınırı aşılarak dağıtma",
+          "value": "Dörttebire kadar indirim veya cezadan vazgeçme",
+          "refs": [
+            "32"
+          ]
+        },
+        {
+          "label": "Silah, patlayıcı, alet, yüz örtme — (a) bendi",
+          "value": "İki yıl altı ay – dört yıl hapis",
+          "refs": [
+            "33"
+          ]
+        },
+        {
+          "label": "Amblem, pankart, slogan — (b) bendi",
+          "value": "Altı ay – üç yıl hapis",
+          "refs": [
+            "33"
+          ]
+        },
+        {
+          "label": "Kışkırtma: toplantı olmamış veya ilk ihtarla dağılmış",
+          "value": "Bir yıl altı ay – dört yıl hapis",
+          "refs": [
+            "34"
+          ]
+        },
+        {
+          "label": "Kışkırtma: toplantı zorla dağıtılmış",
+          "value": "Üç yıl – beş yıl hapis",
+          "refs": [
+            "34"
+          ]
+        },
+        {
+          "label": "Yönetmeliğin çıkarılma süresi",
+          "value": "Yayımdan itibaren üç ay içinde",
+          "refs": [
+            "37"
+          ]
+        },
+        {
+          "label": "Kanunun yürürlüğü",
+          "value": "Yayımdan üç ay sonra",
+          "refs": [
+            "40"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "31",
+        "32",
+        "33",
+        "34",
+        "37",
+        "40"
+      ]
+    },
+    {
+      "type": "compare",
+      "title": "Propaganda vasıtası (md 26/31) – Kışkırtma (md 27/34)",
+      "rows": [
+        {
+          "aspect": "Yasağın konusu",
+          "left": "Davetiye, levha ve ilanların imza ve asma şartları; halkı suç işlemeye özendiren yazı veya resim",
+          "right": "Halkı Kanuna aykırı toplantı veya yürüyüşe özendirmek veya kışkırtmak",
+          "refs": [
+            "26",
+            "27"
+          ]
+        },
+        {
+          "aspect": "İdare ve kolluk",
+          "left": "Asılacaklar valilik veya kaymakamlıkça önceden tespit edilmiş yerlere asılır",
+          "right": "Hareketler güvenlik kuvvetlerince derhal menedilir",
+          "refs": [
+            "26",
+            "27"
+          ]
+        },
+        {
+          "aspect": "Temel ceza",
+          "left": "Şartlara uymayan vasıta: altı ay – bir yıl hapis",
+          "right": "Toplantı olmamış veya ilk ihtarla dağılmış: bir yıl altı ay – dört yıl hapis",
+          "refs": [
+            "31",
+            "34"
+          ]
+        },
+        {
+          "aspect": "Ağır hâl",
+          "left": "Teşvik sonucu suç işlenir veya teşebbüs edilirse: üç yıl – beş yıl hapis",
+          "right": "Toplantı zorla dağıtılmışsa: üç yıl – beş yıl hapis",
+          "refs": [
+            "31",
+            "34"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "26",
+        "27",
+        "31",
+        "34"
+      ]
+    },
+    {
+      "type": "exam_stats",
+      "title": "Sınav der ki",
+      "rows": [
+        {
+          "label": "Bu ünitenin maddelerinden yayındaki soru",
+          "value": "27",
+          "refs": [
+            "26",
+            "27",
+            "28",
+            "29",
+            "30",
+            "31",
+            "32",
+            "33",
+            "34",
+            "37",
+            "38",
+            "39",
+            "40"
+          ]
+        },
+        {
+          "label": "md 28 — Yasaklara aykırı hareket",
+          "value": "5 soru",
+          "refs": [
+            "28"
+          ]
+        },
+        {
+          "label": "md 26 — Çağrı ve propaganda araçları",
+          "value": "3 soru",
+          "refs": [
+            "26"
+          ]
+        },
+        {
+          "label": "md 32 — Direnme",
+          "value": "3 soru",
+          "refs": [
+            "32"
+          ]
+        },
+        {
+          "label": "md 33 — Toplantı ve yürüyüşe silahlı katılanlar",
+          "value": "3 soru",
+          "refs": [
+            "33"
+          ]
+        },
+        {
+          "label": "md 27 — Kışkırtma yasağı",
+          "value": "2 soru",
+          "refs": [
+            "27"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "26",
+        "27",
+        "28",
+        "29",
+        "30",
+        "31",
+        "32",
+        "33",
+        "34",
+        "37",
+        "38",
+        "39",
+        "40"
+      ],
+      "generated": true
+    },
+    {
+      "type": "bridge",
+      "title": "Bu üniteden soru çöz",
+      "articleRefs": [
+        "26",
+        "27",
+        "28",
+        "29",
+        "30",
+        "31",
+        "32",
+        "33",
+        "34",
+        "37",
+        "38",
+        "39",
+        "40"
+      ],
+      "generated": true,
+      "rows": [
+        {
+          "label": "Madde kapsamlı seans",
+          "value": "md 26–34, 37–40, 10 soru",
+          "refs": [
+            "26",
+            "27",
+            "28",
+            "29",
+            "30",
+            "31",
+            "32",
+            "33",
+            "34",
+            "37",
+            "38",
+            "39",
+            "40"
+          ]
+        }
+      ]
+    }
+  ]
+}

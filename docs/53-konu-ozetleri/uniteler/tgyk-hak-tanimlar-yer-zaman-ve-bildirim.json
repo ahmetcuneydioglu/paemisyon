@@ -1,0 +1,479 @@
+{
+  "unit": {
+    "slug": "tgyk-hak-tanimlar-yer-zaman-ve-bildirim",
+    "legislationSlug": "2911-sayili-toplanti-ve-gosteri-yuruyusleri-kanunu",
+    "topicId": "477f97e4-2862-4836-a40a-6812e0609898",
+    "title": "Toplantı hakkı, tanımlar, yer, zaman ve bildirim",
+    "subtitle": "Hak, istisnalar, yer ve güzergâh, düzenleme kurulu ve bildirim — md 1–12",
+    "articleFrom": "1",
+    "articleTo": "12",
+    "readingMinutes": 12,
+    "sourceLabel": "AI özeti — 2911 Sayılı Toplantı ve Gösteri Yürüyüşleri Kanunu, md 1–12",
+    "articleNos": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12"
+    ],
+    "generatedBy": "claude-opus-5-5 (ozet-uret.ts)",
+    "sortOrder": 1
+  },
+  "blocks": [
+    {
+      "type": "concept",
+      "title": "Kanun neyi düzenler?",
+      "body": "Bu Kanun, toplantı ve gösteri yürüyüşü düzenleme hakkını kullanırken uygulanacak şekil, şart ve usulleri koyar. Kapsamında şunlar var: gerçek ve tüzelkişilerin düzenleyeceği toplantı ve yürüyüşlerin yeri, zamanı, usul ve şartları; düzenleme kurulunun görev ve sorumlulukları; yetkili merciin yasaklama ve erteleme halleri; güvenlik kuvvetlerinin görev ve yetkileri; yasaklar ve ceza hükümleri. Kapsam sorusunda bu listeyi hatırla. Listede olmayan bir başlık görürsen dikkat et. Örneğin siyasi partilerin kendi tüzüklerine göre yaptıkları kapalı yer toplantıları bu Kanunun konusu değildir, istisnadır.",
+      "articleRefs": [
+        "1",
+        "4"
+      ]
+    },
+    {
+      "type": "concept",
+      "title": "Toplantı ve gösteri yürüyüşü: amaç belirleyicidir",
+      "body": "Kanun, toplantıyı ve gösteri yürüyüşünü aynı amaçla tanımlar. Amaç, belirli konular üzerinde **halkı aydınlatmak** ve **bir kamuoyu yaratmak** suretiyle o konuyu **benimsetmektir**. Toplantıyı da yürüyüşü de gerçek ve tüzelkişiler bu Kanun çerçevesinde düzenler. Aradaki fark biçimdedir. **Toplantı**, açık ve kapalı yer toplantılarının tamamını kapsar. **Gösteri yürüyüşü** ise bu amaçla düzenlenen yürüyüştür. Amaç aranmaksızın bir araya gelmek bu tanıma girmez.",
+      "articleRefs": [
+        "2"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Mülki amir ve güvenlik amirleri",
+      "body": "**Mahallin en büyük mülki amiri:** illerde **vali**, ilçelerde **kaymakam**.\n\n**Mahallin güvenlik amirleri:**\n- İllerde: il emniyet müdürü ve il jandarma komutanı\n- İlçelerde: ilçe emniyet amiri veya komiseri ve ilçe jandarma komutanı\n- Sahil Güvenlik Komutanlığı için: Sahil Güvenlik Bölge Komutanı, Sahil Güvenlik Grup Komutanı, Sahil Güvenlik Karakol Komutanı ile Sahil Güvenlik Gemi/Bot Komutanı\n\n**İstisna:** Bir ile bağlı ilçelerin o ilin belediye sınırları içindeki kısımlarında, bu Kanunun uygulanması yönünden mahallin en büyük mülki amiri **ilin valisidir**.",
+      "articleRefs": [
+        "2"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Tanımlarda sık düşülen tuzaklar",
+      "body": "- Mülki amir ile güvenlik amirini karıştırma. Vali ve kaymakam **mülki amirdir**. Emniyet müdürü ve jandarma komutanı **güvenlik amiridir**. Vali yardımcısı ve bölge valisi bu tanımda geçmez.\n- Güvenlik amirleri arasında **il emniyet müdür yardımcısı yoktur**. İl düzeyinde yalnızca il emniyet müdürü ve il jandarma komutanı sayılır.\n- İlçe, ilin belediye sınırları içinde kalıyorsa kaymakamı değil, **ilin valisini** işaretle.\n- Toplantı tanımı yalnızca açık ya da yalnızca kapalı yeri kapsamaz, **açık ve kapalı yer** toplantılarının ikisini birden kapsar. Toplantıyı yalnızca tüzelkişiler değil, **gerçek ve tüzelkişiler** düzenler.",
+      "articleRefs": [
+        "2"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Toplantı ve gösteri yürüyüşü hakkı",
+      "body": "**Herkes**, önceden **izin almaksızın**, bu Kanun hükümlerine göre şu şartlarla toplantı ve gösteri yürüyüşü düzenleme hakkına sahiptir:\n- **silahsız** ve **saldırısız** olmak,\n- **kanunların suç saymadığı belirli amaçlar** taşımak.\n\n**Yabancılar için ayrı kurallar vardır:**\n- Yabancıların bu Kanuna göre toplantı ve gösteri yürüyüşü **düzenlemesi**, İçişleri Bakanlığının **iznine** bağlıdır.\n- Yabancıların bu Kanuna göre düzenlenen toplantıda **topluluğa hitap etmesi** ve afiş, pankart, resim, flama, levha, araç ve gereç **taşıması** için izin gerekmez. Toplantının yapılacağı mahallin en büyük mülkî idare amirliğine toplantıdan **en az 48 saat önce bildirim** yapılması yeterlidir.",
+      "articleRefs": [
+        "3"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "İzin mi, bildirim mi?",
+      "body": "Bu maddede sık sorulan soru tipi 'yanlış olan hangisi' biçimindedir ve şıklardan biri 'hak önceden izne bağlıdır' der. Bu şık yanlıştır, çünkü herkes için kural **izinsizliktir**. İzin yalnızca yabancıların toplantı ve yürüyüş **düzenlemesinde** aranır. Bu izni **İçişleri Bakanlığı** verir, valilik ya da Dışişleri Bakanlığı vermez. Yabancının toplantıda konuşması veya pankart taşıması ise izne değil, mülkî idare amirliğine **bildirime** bağlıdır. Şıklarda izin ile bildirimin yer değiştirildiğini görürsen o şıkkı ele. Bildirim süresi 48 saattir. 12, 24, 36 ya da 72 saat yazan şıklar çeldiricidir.",
+      "articleRefs": [
+        "3"
+      ],
+      "counterNumbers": [
+        12,
+        24,
+        36,
+        72
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Kanuna tabi olmayan toplantı ve faaliyetler",
+      "body": "Aşağıdakiler bu Kanun hükümlerine **tabi değildir**:\n- **a)** Siyasi partilerin, kamu kurumu niteliğindeki meslek kuruluşlarının, sendikaların, vakıfların, derneklerin, ticari ortaklıkların ve diğer tüzelkişilerin özel kanunlarına ve kendi tüzüklerine göre yapacakları **kapalı yer toplantıları**\n- **b)** Kanun veya gelenek ve göreneklere göre yapılacak toplantı, tören, şenlik, karşılama ve uğurlamalar. Bunun şartı **kanunlara uymak** ve **kendi kural ve sınırları içinde kalmaktır**.\n- **c)** Spor faaliyetleri ile bilimsel, ticari ve ekonomik amaçlarla yapılan toplantılar\n- **d)** Cumhurbaşkanı, Cumhurbaşkanı yardımcıları ve bakanların Devlet işleri hakkındaki toplantı ve konuşmaları ile Türkiye Büyük Millet Meclisi üyelerinin halk ile yapacakları **sohbet niteliğindeki** görüşmeler",
+      "articleRefs": [
+        "4"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "İstisnalarda ince ayrımlar",
+      "body": "- Bir sendikanın kendi tüzüğüne göre **kapalı salonda** yaptığı toplantı Kanuna tabi değildir. Aynı sendikanın meydanda yaptığı **açık yer toplantısı** ise Kanuna tabidir. Tüzelkişi olmak kendi başına istisna sağlamaz.\n- 'Tüzelkişilerin siyasi amaçlı toplantı ve gösterileri' istisnalar listesinde **yer almaz**.\n- Devlet işleri hakkındaki toplantı ve konuşmalarda yalnızca **Cumhurbaşkanı, Cumhurbaşkanı yardımcıları ve bakanlar** sayılır. Valiler, belediye başkanları ve parti genel başkanları bu listede yoktur.\n- Türkiye Büyük Millet Meclisi üyelerinin halkla görüşmesi, ancak **sohbet niteliğindeyse** istisna sayılır. Denetim, propaganda ya da bilimsel nitelikteki görüşmeler bu istisnaya girmez.\n- Gelenek ve görenek törenlerinin istisna sayılması için şart, **kanunlara uymak ve kendi kural ve sınırları içinde kalmaktır**. Kapalı yer veya bildirim şartı aranmaz.",
+      "articleRefs": [
+        "4"
+      ]
+    },
+    {
+      "type": "concept",
+      "title": "Seçim propaganda toplantıları: saklı hüküm",
+      "body": "Seçim zamanlarında yapılacak propaganda toplantıları için bu Kanun ayrı bir düzen kurmaz. Bu toplantılarla ilgili kanun hükümleri **saklıdır**. Şuna dikkat et: propaganda toplantıları istisnalar maddesinde sayılmamıştır, ayrı bir maddede saklı tutulmuştur. Bakanlık izni, kısaltılmış bildirim süresi ya da küçültülmüş düzenleme kurulu gibi şıkların metinde dayanağı yoktur.",
+      "articleRefs": [
+        "5",
+        "4"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Yer ve güzergâhın belirlenmesi",
+      "body": "**Kural:** Toplantı ve gösteri yürüyüşleri, tüm il ve ilçe sınırları içinde, maddedeki hükümlere uyulmak şartıyla **her yerde** yapılabilir.\n\n**Yer ve güzergâhı belirleyen:** **mahallin en büyük mülki amiri**.\n\n**Uyulacak ölçütler:**\n- kamu düzenini ve genel asayişi bozmamak,\n- vatandaşların günlük yaşamını aşırı ve katlanılmaz derecede zorlaştırmamak,\n- 22 nci maddenin birinci fıkrasında sayılan sınırlamalara uymak.\n\n**Görüşü alınanlar:**\n- Türkiye Büyük Millet Meclisinde grubu bulunan siyasi partilerin il ve ilçe temsilcileri\n- Güzergâhın geçeceği ilçe ve il belediye başkanları\n- En çok üyeye sahip üç sendikanın il ve ilçe temsilcileri\n- Kamu kurumu niteliğindeki meslek kuruluşlarının il ve ilçe temsilcileri\n\nİl ve ilçenin büyüklüğü, gelişmişliği ve yerleşim özellikleri dikkate alınarak **birden fazla** yer ve güzergâh belirlenebilir.",
+      "articleRefs": [
+        "6"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Duyuru, değişiklik ve tercih",
+      "body": "**Duyuru:** Belirlenen yer ve güzergâh şu kanallarda ilan edilerek halka duyurulur: yerel gazeteler, internet haber siteleri, valilik ve kaymakamlık internet siteleri.\n\n**Sonradan yapılan değişiklik:** Aynı yöntemle yapılır ve duyurudan **15 gün sonra** geçerli olur.\n\n**Tercih:** Birden fazla yer ve güzergâh belirlenen il ve ilçelerde **düzenleme kurulu**, kamu düzenini ve genel asayişi bozmayacak şekilde bunlardan birini tercih edebilir.",
+      "articleRefs": [
+        "6"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Güzergâh sorularında çeldiriciler",
+      "body": "- Yer ve güzergâhı belirleme yetkisi **mahallin en büyük mülki amirindedir**. İçişleri Bakanlığı, Emniyet Genel Müdürlüğü, il emniyet müdürü ya da belediye başkanı bu yetkiye sahip değildir. Belediye başkanı yalnızca görüş verir.\n- Görüşü alınanlar arasında **emniyet temsilcisi yoktur**.\n- Duyuru kanalları arasında **Resmî Gazete yoktur**.\n- Yer ve güzergâhı mülki amir **belirler**. Birden fazla seçenek varsa aralarından **tercihi düzenleme kurulu yapar**.\n- Değişiklik duyurudan 15 gün sonra geçerli olur. 7, 10, 20 ya da 30 gün yazan şıklar çeldiricidir.",
+      "articleRefs": [
+        "6"
+      ],
+      "counterNumbers": [
+        7,
+        10,
+        20,
+        30
+      ]
+    },
+    {
+      "type": "numbers",
+      "title": "Ara tablo: hak ve güzergâh",
+      "rows": [
+        {
+          "label": "Yabancının hitap ve pankart taşıma bildirimi, toplantıdan en az",
+          "value": "48 saat önce",
+          "refs": [
+            "3"
+          ]
+        },
+        {
+          "label": "Görüşü alınan sendika sayısı (en çok üyeye sahip olanlar)",
+          "value": "3",
+          "refs": [
+            "6"
+          ]
+        },
+        {
+          "label": "Yer ve güzergâh değişikliğinin geçerlilik süresi",
+          "value": "Duyurudan 15 gün sonra",
+          "refs": [
+            "6"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "3",
+        "6"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Başlama zamanı ve yerin niteliği",
+      "body": "**Zaman:** Toplantı ve yürüyüşlere ve bu amaçla toplanmalara **güneş doğmadan başlanamaz**. Ölçüt belirli bir saat ya da çalışma saatleri değil, güneşin doğuşudur.\n\n**Yerin niteliği:** Toplantının yapıldığı yer, **toplantı süresince umuma açık yer** sayılır. Bu sonuç toplantı süresine bağlıdır ve düzenleme kurulunun kararına bağlı değildir.",
+      "articleRefs": [
+        "7",
+        "8"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Düzenleme kurulu",
+      "body": "Bu Kanuna göre yapılacak toplantıları bir düzenleme kurulu düzenler. Kurulun özellikleri şunlardır:\n- Üyeler **fiil ehliyetine sahip** ve **18 yaşını doldurmuş** kişilerdir.\n- Kurul **en az 7 kişiden** oluşur.\n- Başkanı kurul **kendi aralarından seçer**. Başkanı mülki amir belirlemez.\n- **Diplomatik dokunulmazlığı bulunan** kişiler kurul başkanı veya üyesi olamaz.\n\n**Tüzel kişiler:** Tüzel kişilerin toplantı ve gösteri yürüyüşü düzenlemesi, **yetkili organlarının kararına** bağlıdır.",
+      "articleRefs": [
+        "9"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Bildirim verilmesi",
+      "body": "**Kim imzalar:** Düzenleme kurulu üyelerinin **tamamı**.\n\n**Ne zaman verilir:** Toplantıdan **en az 48 saat önce** ve **çalışma saatleri içinde**.\n\n**Nereye verilir:** Toplantının yapılacağı yerin bağlı bulunduğu **valilik veya kaymakamlığa**.\n\n**Bildirimde belirtilenler:**\n- a) Toplantının amacı\n- b) Toplantının yapılacağı yer, gün, başlayış ve bitiş saatleri\n- c) Kurul başkanı ile üyelerinin açık kimlikleri, meslekleri, ikametgâhları ve varsa çalışma yerleri\n\nBildirime yönetmelikte gösterilecek belgeler eklenir. Bildirim karşılığında **gün ve saati gösteren alındı belgesi** verilmesi **zorunludur**.\n\n**Bildirim kabul edilmez ya da alındı belgesi verilmezse:** Durum tutanakla tespit edilir ve **noter vasıtasıyla ihbar** yapılır. İhbar saati, bildirimin verilme saati sayılır.\n\n**Aynı yerde ve aynı gün için birden fazla kurul bildirim verirse:** **İlk verilen bildirim** geçerlidir. Diğer kurullara durum hemen yazılı olarak bildirilir.",
+      "articleRefs": [
+        "10"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Bildirimde en çok karıştırılanlar",
+      "body": "- Bildirimi yalnızca başkanın imzalaması yetmez, **tüm üyeler** imzalar.\n- Bildirimde **katılımcı sayısı istenmez**. Bildirimde amaç, yer, gün ve saatler ile kurul başkanı ve üyelerinin açık kimlikleri, meslekleri, ikametgâhları ve varsa çalışma yerleri yer alır.\n- Alındı belgesi bir **izin belgesi değildir** ve verilmesi idarenin takdirine bırakılmamıştır. Verilmesi **zorunludur** ve bildirimin gün ile saatini tespit eder.\n- İdare bildirimi almazsa izlenecek yol **tutanak ve noter ihbarıdır**. Esas alınan saat, tutanağın düzenlendiği saat değil, **ihbar saatidir**. Posta ya da Bakanlığa gönderme yolu yoktur.\n- Çakışma hâlinde üye sayısına, kuraya ya da mülki amirin takdirine bakılmaz. **İlk verilen bildirim** geçerlidir.\n- Süre en az 48 saattir. 6, 12, 24 ya da 72 saat yazan şıklar çeldiricidir.",
+      "articleRefs": [
+        "10"
+      ],
+      "counterNumbers": [
+        6,
+        12,
+        24,
+        72
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Toplantının yapılması ve kayıt",
+      "body": "- Toplantı, md 6 hükümlerine uyularak **bildirimde belirtilen yerde** yapılır.\n- Düzenleme kurulu, kendi üyelerinden **başkan dahil en az 7 kişiyi** toplantı yerinde bulundurmakla yükümlüdür.\n- Bu yükümlülüğün yerine getirildiğine dair **tutanağı düzenleme kurulu hazırlar** ve **yetkili kolluk amirine teslim eder**.\n\n**Ses ve görüntü kaydı:**\n- Katılımcıların ve konuşmacıların ses ve görüntüleri, **kolluk** tarafından **yapıldığı belli olacak şekilde** kaydedilebilir.\n- Elde edilen kayıt ve görüntüler **şüphelilerin ve suç delillerinin tespiti** dışında başka bir amaçla kullanılamaz.",
+      "articleRefs": [
+        "11"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Toplantı yerinde kim, ne kadar?",
+      "body": "- Sayıyı ezberlerken 'başkan dahil' ifadesini unutma: toplantı yerinde **başkan dahil en az 7** üye bulunmalıdır. 'Başkan hariç 7' ve 5 ya da 9 kişi yazan şıklar çeldiricidir.\n- Tutanağı kolluk, noter ya da mülki amir hazırlamaz. **Kurul hazırlar ve kolluk amirine teslim eder.**\n- Kayıtların kamuoyunu bilgilendirmek için de kullanılabileceğini söyleyen şık yanlıştır. Kayıtlar yalnızca şüphelilerin ve suç delillerinin tespiti için kullanılabilir.",
+      "articleRefs": [
+        "11"
+      ],
+      "counterNumbers": [
+        5,
+        9
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Düzenleme kurulunun görev ve sorumluluğu",
+      "body": "**Yükümlülük:** Düzenleme kurulu, toplantının **sükûn ve düzenini** ve **bildirimde yazılı amaç dışına çıkılmamasını** sağlamakla yükümlü ve sorumludur. Bunun için gereken önlemleri alır ve gerektiğinde **güvenlik kuvvetlerinin yardımını** ister.\n\n**Dağılma kararı:** Toplantı amacı dışına çıkarsa ya da düzen içinde gerçekleşmesi imkânsız görülürse dağılma kararını **kurul** alır. Kurul toplanamazsa kararı **kurul başkanı** alır. Karar alan, durumu **derhâl yetkili kolluk amirine** bildirir.\n\n**Sorumluluğun sona ermesi:** Kurulun sorumluluğu, topluluk toplantı yerinden **tamamen dağılıncaya kadar** sürer. Bildirimdeki bitiş saati ya da dağılma kararının alındığı an bu sorumluluğu sona erdirmez.",
+      "articleRefs": [
+        "12"
+      ]
+    },
+    {
+      "type": "numbers",
+      "title": "Ünite sonu tablosu: sayılar ve süreler",
+      "rows": [
+        {
+          "label": "Toplantı bildirimi, toplantıdan en az",
+          "value": "48 saat önce",
+          "refs": [
+            "10"
+          ]
+        },
+        {
+          "label": "Yabancının hitap ve taşıma bildirimi, toplantıdan en az",
+          "value": "48 saat önce",
+          "refs": [
+            "3"
+          ]
+        },
+        {
+          "label": "Düzenleme kurulu üye sayısı (en az)",
+          "value": "7 kişi",
+          "refs": [
+            "9"
+          ]
+        },
+        {
+          "label": "Kurul üyelerinde yaş şartı",
+          "value": "18 yaşını doldurmuş",
+          "refs": [
+            "9"
+          ]
+        },
+        {
+          "label": "Toplantı yerinde bulunacak üye sayısı (başkan dahil, en az)",
+          "value": "7 kişi",
+          "refs": [
+            "11"
+          ]
+        },
+        {
+          "label": "Yer ve güzergâh değişikliğinin geçerlilik süresi",
+          "value": "Duyurudan 15 gün sonra",
+          "refs": [
+            "6"
+          ]
+        },
+        {
+          "label": "Görüşü alınan sendika sayısı (en çok üyeye sahip olanlar)",
+          "value": "3",
+          "refs": [
+            "6"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "3",
+        "6",
+        "9",
+        "10",
+        "11"
+      ]
+    },
+    {
+      "type": "compare",
+      "title": "Mülki amir mi, düzenleme kurulu mu?",
+      "leftLabel": "Mahallin en büyük mülki amiri",
+      "rightLabel": "Düzenleme kurulu",
+      "rows": [
+        {
+          "aspect": "Kimdir",
+          "left": "İllerde vali, ilçelerde kaymakam",
+          "right": "Fiil ehliyetli, 18 yaşını doldurmuş, en az 7 kişi",
+          "refs": [
+            "2",
+            "9"
+          ]
+        },
+        {
+          "aspect": "Yer ve güzergâh",
+          "left": "Görüş alarak belirler",
+          "right": "Birden fazla belirlenmişse birini tercih edebilir",
+          "refs": [
+            "6"
+          ]
+        },
+        {
+          "aspect": "Bildirim",
+          "left": "Valilik veya kaymakamlık olarak alır; alındı belgesi vermek zorunlu",
+          "right": "Tüm üyelerin imzasıyla en az 48 saat önce verir",
+          "refs": [
+            "10"
+          ]
+        },
+        {
+          "aspect": "Kurul başkanı",
+          "left": "Belirlemez",
+          "right": "Kendi aralarından seçer",
+          "refs": [
+            "9"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "2",
+        "6",
+        "9",
+        "10"
+      ]
+    },
+    {
+      "type": "exam_stats",
+      "title": "Sınav der ki",
+      "rows": [
+        {
+          "label": "Bu ünitenin maddelerinden yayındaki soru",
+          "value": "35",
+          "refs": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12"
+          ]
+        },
+        {
+          "label": "md 10 — Bildirim verilmesi",
+          "value": "6 soru",
+          "refs": [
+            "10"
+          ]
+        },
+        {
+          "label": "md 4 — İstisnalar",
+          "value": "5 soru",
+          "refs": [
+            "4"
+          ]
+        },
+        {
+          "label": "md 6 — Toplantı ve gösteri yürüyüşü yer ve güzergahı",
+          "value": "5 soru",
+          "refs": [
+            "6"
+          ]
+        },
+        {
+          "label": "md 2 — Tanımlar",
+          "value": "4 soru",
+          "refs": [
+            "2"
+          ]
+        },
+        {
+          "label": "md 3 — Toplantı ve gösteri yürüyüşü hakkı",
+          "value": "3 soru",
+          "refs": [
+            "3"
+          ]
+        },
+        {
+          "label": "Resmî sınavlarda",
+          "value": "2024 PAEM 8. Dönem İlk Derece Amirlik Eğitimi Yazılı Sınavı (1)",
+          "refs": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12"
+      ],
+      "generated": true
+    },
+    {
+      "type": "bridge",
+      "title": "Bu üniteden soru çöz",
+      "articleRefs": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12"
+      ],
+      "generated": true,
+      "rows": [
+        {
+          "label": "Madde kapsamlı seans",
+          "value": "md 1–12, 10 soru",
+          "refs": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12"
+          ]
+        }
+      ]
+    }
+  ]
+}
