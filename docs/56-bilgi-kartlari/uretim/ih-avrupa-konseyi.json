@@ -1,0 +1,152 @@
+{
+  "deck": {
+    "topicId": "3064a669-2b5d-4912-a4a4-797ea8b36ae5",
+    "legislationSlug": "avrupa-konseyi-statusu",
+    "sourceLabel": "AI bilgi kartı — Avrupa Konseyi Statüsü md Başlangıç, 1–25, 27–42",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: resmî madde metni + çıkmış sorular)"
+  },
+  "cards": [
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Avrupa Konseyi Statüsü'ne göre millî savunmayla ilgili konular Konseyin yetki alanına girer mi?",
+      "back": "Hayır. Millî savunmayla ilgili konular Avrupa Konseyinin yetki alanı dışındadır.",
+      "explanation": "Konsey amacına şu yollarla ulaşır: ortak çıkarları ilgilendiren konuların incelenmesi, anlaşmalar yapılması, ekonomik, sosyal, kültürel, bilimsel, hukuki ve idari alanlarda ortak hareket edilmesi, insan hakları ile temel özgürlüklerin korunup geliştirilmesi.",
+      "articleRefs": [
+        "1"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Avrupa Konseyi Statüsü'ne göre her üye devlet hangi iki ilkeyi kabul eder?",
+      "back": "Hukukun üstünlüğü ilkesini ve yetkisi altındaki herkesin insan haklarından ve temel özgürlüklerden yararlanması ilkesini.",
+      "explanation": "Her üye ayrıca Konseyin amacının gerçekleştirilmesine içtenlikle ve etkin biçimde katılmayı taahhüt eder.",
+      "articleRefs": [
+        "3"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Avrupa Konseyi Statüsü'ne göre bir Avrupa devletini Konsey üyeliğine hangi organ davet eder?",
+      "back": "Bakanlar Komitesi. Davet edilen devlet, Statüye katılma belgesini Genel Sekretere verdiğinde üye olur.",
+      "explanation": "Davet, hukukun üstünlüğü ile insan hakları ilkelerine uymaya yeterli ve istekli görülen Avrupa devletine yapılabilir.",
+      "articleRefs": [
+        "4",
+        "3"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Avrupa Konseyi Statüsü'ne göre hukukun üstünlüğü ve insan hakları ilkelerini ciddi biçimde ihlal eden üye, çekilme davetine uymazsa Bakanlar Komitesi ne karar verebilir?",
+      "back": "Üyenin, Komitenin belirleyeceği tarihten itibaren artık Konsey üyesi olmadığına karar verebilir.",
+      "explanation": "Ciddi ihlalde üye temsil hakkından geçici olarak yoksun bırakılabilir ve Bakanlar Komitesince Konseyden çekilmeye davet edilebilir. Üyelikten çıkarma kararı, bu davete uyulmazsa verilebilir.",
+      "articleRefs": [
+        "8",
+        "3"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Avrupa Konseyi Statüsü'ne göre Konseyin organları hangileridir?",
+      "back": "Bakanlar Komitesi ve Parlamenter Meclis. Bu iki organa Sekretarya yardım eder.",
+      "articleRefs": [
+        "10"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Avrupa Konseyinin merkezi neresidir?",
+      "back": "Strazburg.",
+      "articleRefs": [
+        "11"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Avrupa Konseyinin resmî dilleri hangileridir?",
+      "back": "Fransızca ve İngilizce.",
+      "explanation": "Başka dillerin ne zaman ve hangi şartlarla kullanılabileceğini Bakanlar Komitesi ile Parlamenter Meclisin içtüzükleri belirler.",
+      "articleRefs": [
+        "12"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Avrupa Konseyi Bakanlar Komitesinde üye devletleri kim temsil eder?",
+      "back": "Dışişleri Bakanları. Her üyenin Komitede bir temsilcisi, her temsilcinin bir oyu vardır.",
+      "articleRefs": [
+        "14"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Avrupa Konseyi Statüsü'ne göre Parlamenter Meclis, Konseyin nasıl bir organıdır?",
+      "back": "Görüşme (müzakere) organıdır; aldığı kararları tavsiye biçiminde Bakanlar Komitesine iletir.",
+      "explanation": "Meclis, Statüyle kendisine verilen yetkilere giren konuları görüşür.",
+      "articleRefs": [
+        "22"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Avrupa Konseyi Statüsü'ne göre Genel Sekreteri Bakanlar Komitesi mi atar?",
+      "back": "Hayır. Genel Sekreter ve Genel Sekreter Yardımcısı, Bakanlar Komitesinin tavsiyesi üzerine Parlamenter Meclis tarafından atanır.",
+      "explanation": "Sekretarya bir Genel Sekreter, bir Genel Sekreter Yardımcısı ve gerekli personelden oluşur. Sekretaryanın diğer üyelerini Genel Sekreter atar.",
+      "articleRefs": [
+        "36"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Avrupa Konseyi Genel Sekreteri, Sekretaryanın faaliyetlerinden Parlamenter Meclise karşı mı sorumludur?",
+      "back": "Hayır. Genel Sekreter, Sekretaryanın faaliyetlerinden Bakanlar Komitesine karşı sorumludur.",
+      "explanation": "Genel Sekreter, Parlamenter Meclisin ihtiyaç duyduğu idari ve diğer hizmetleri de sağlar. Sekretarya Konsey merkezinde bulunur.",
+      "articleRefs": [
+        "37"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Avrupa Konseyi Statüsü ne zaman ve nerede imzalanmıştır?",
+      "back": "5 Mayıs 1949'da Londra'da.",
+      "articleRefs": [
+        "42"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Avrupa Konseyi Statüsü'ne göre Konsey adına hareket etmeye yetkili organ hangisidir?",
+      "back": "Bakanlar Komitesi; Avrupa Konseyi adına hareket etmeye yetkili organdır.",
+      "explanation": "Bakanlar Komitesi, Konseyin teşkilatına ve iç işleyişine ilişkin her konuyu bağlayıcı biçimde karara bağlar. Parlamenter Meclis ise görüşme organıdır; kararlarını tavsiye olarak Komiteye iletir.",
+      "articleRefs": [
+        "13",
+        "16",
+        "22"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Avrupa Konseyi Statüsü'ne göre Konseyin amacı nedir?",
+      "back": "Ortak ülkü ve ilkelerini korumak, yaymak ve ilerlemelerini sağlamak üzere üyeleri arasında daha sıkı bir birlik kurmak.",
+      "articleRefs": [
+        "1"
+      ]
+    }
+  ]
+}

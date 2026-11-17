@@ -1,0 +1,50 @@
+{
+ "bakilan": 112,
+ "bulgular": [
+  {
+   "articleNo": "105",
+   "sinif": "B",
+   "yer": "1. fıkra, son sözcük",
+   "dokumde": "…için gerekli olan imtiyaz ve masuniyetlerden faydalanır[?].",
+   "goruntude": "\"için gerekli olan imtiyaz ve masuniyetlerden fayda…\" — \"için gerekli olan imtiyaz\" ve \"masuniyetlerden\" harf kalıntılarından okunuyor; son sözcük \"fayd\" ile başlıyor, eki OKUNAMIYOR. Görünen kalıntı yaklaşık 8 harf genişliğinde (2. fıkradaki \"faydalanırlar\"dan belirgin kısa; \"faydalanır\" ile bağdaşır, \"faydalanırlar\" olamaz). Başka sözcük (olumsuzluk, sayı, ek ibare) için yer yok; satır bu sözcükle bitiyor.",
+   "sayfa": "s-08",
+   "guven": "okunamıyor"
+  },
+  {
+   "articleNo": "110",
+   "sinif": "C",
+   "yer": "3. fıkra, \"Kırallığı, Amerika\"",
+   "dokumde": "…Birleşik Kırallığı, Amerika Birleşik Devletleri ve imza eden…",
+   "goruntude": "Satır sonunda \"Kırallığı\" (virgül basılmamış/çıkmamış), sonraki satır \"Amerika Birleşik Devletleri ve imza eden…\". Virgül dökümün eklemesi (ilk okuyucu bildirmiş); anlamı değiştirmiyor.",
+   "sayfa": "s-08",
+   "guven": "kesin"
+  }
+ ],
+ "belirsizGorusleri": [
+  {
+   "articleNo": "105",
+   "gorus": "1. fıkra: 800 ve 1600 dpi kırpmada (dogrula/z105-a, z105-b, z105-1-*) metin \"1. Teşkilât, Üyelerinden her birinin ülkesinde amaçlarına erişmek için gerekli olan imtiyaz ve masuniyetlerden fayda[…]\" olarak okunuyor; son sözcüğün eki okunamıyor, uzunluğu \"faydalanır\" ile uyumlu. [?] işareti yerinde; kaynak 1 bit 200 dpi olduğundan büyütme yeni bilgi vermiyor. Anlam riski düşük (yüklem tek olasılık), ama harf harf doğrulanmış sayılmaz."
+  },
+  {
+   "articleNo": "105",
+   "gorus": "2. fıkra: \"2. Birleşmiş Milletler Üyelerinin temsilcileri ve Teşkilâtın memurları Teşkilât ile ilgili görevlerini tam bağımsızlık içinde yapabilmek için gerekli imtiyaz ve masuniyetlerden keza faydalanırlar\" — ilk iki satır net; üçüncü satırda \"gerekli imtiyaz ve\" net, \"masuniye.lerden ke.a fayda.an.rlar\" kırık harflerle ama sözcük uzunlukları ve kalan harfler dökümle birebir örtüşüyor. Büyük olasılıkla doğru."
+  },
+  {
+   "articleNo": "106",
+   "gorus": "\"42 nci maddeye\" net. \"43 uncu maddede\": ilk rakam 4 net; ikinci rakam kırık, solu açık ve sağda iki kavis var (3 biçimi; 5'in düz üst çizgisi ve sol dikmesi yok) → 3, büyük olasılık. Ek \"uncu\" baskıda gerçekten böyle. Md 82'deki \"43 üncü maddeye uygun … mahsus anlaşma\" aynı atfı destekliyor. \"30 Ekim 1943\", \"dört Millet Demeci\", \"5 nci fıkrası\" net."
+  },
+  {
+   "articleNo": "109",
+   "gorus": "1. fıkra: \"…Genel Konferansı toplanabilecektir. Konferansta Teşkilâtın her Üyes[i] b[ir] oya sahip olacaktır.\" — \"Üyes\" sonrası i silinmiş, \"bir\" sözcüğü \"bıı/bu\" gibi kırık; devamı \"oya sahip olacaktır\" net. Döküm doğru (büyük olasılık). \"üçte iki çoğunluğu\", \"her hangi yedi Üyesinin\" net; 2. fıkrada \"üçte iki\", \"bütün süreli üyeleri\", \"üçte ikisi\"; 3. fıkrada \"onuncu yıllık toplantısından\", \"herhangi yedi Üyesinin\" net."
+  },
+  {
+   "articleNo": "110",
+   "gorus": "3. fıkra: sayılan devletler ve sıra görüntüyle aynı (Çin Cumhuriyeti, Fransa, SSCB, Büyük Britanya ve Kuzey İrlanda Birleşik Kırallığı, ABD, \"ve imza eden diğer Devletlerin çoğunluğu\"). \"Kırallığı\"dan sonraki virgül basılı değil, dökümün eklemesi; sütunun sağ kenarında tire/noktalama düşmüş (Cum-, tara-). Kabul edilebilir."
+  },
+  {
+   "articleNo": "12",
+   "gorus": "1. fıkra sonu baskıda \"meğerki, Güvenlik Meclisi bunu ondan isteye..\" (iki nokta). Dökümdeki \"isteye.\" görüntüye sadık; eksik ek tamamlanmamış, doğru karar."
+  }
+ ],
+ "genel": "Başlangıç + 111 maddenin tamamına bakıldı, bakılamayan madde yok (s-02…s-08 kaynak PDF'ten 250 dpi sütun kırpmalarıyla, s-01 ile s-02'nin md 2/4–12 kısmı tam sayfa görüntüsünden; s-08'in silik yerleri 800–1600 dpi). A sınıfı bulgu YOK: atlanmış/çift fıkra, bent, olumsuzluk, yanlış sayı ya da atıf saptanmadı; madde sırası ve bölüm başlıkları (I–XIX) görüntüyle aynı. Doğrulanan sayılar: md 9 \"en çok beş temsilcisi\"; md 18/2 \"üçte iki\" ve sayılan konular, \"86 ncı maddenin 1c fıkrası\"; md 23 \"onbir Üye\", beş devlet adı, \"diğer altı Üye\", \"iki yıllık\", ilk seçimde \"üçü bir yıl\"; md 27/2 ve 27/3 \"yedi\" üye, \"VI ncı bölüm ile 52 nci maddenin 3 üncü fıkrası\"; md 61 \"18\" üye (iki yerde rakamla), \"altı Üye her yıl, üç yıllık\", \"altısının … bir yıl … diğer altı üyeninki iki yıl\"; md 86 \"23 üncü madde\", \"üç yıl\"; md 108 \"üçte iki\" (iki kez); md 109 \"üçte iki\", \"yedi\", \"onuncu yıllık toplantı\"; md 110 devlet listesi. \"SÜRELİ/SÜRESİZ\": baskıda GERÇEKTEN böyle, döküm ters çevirmemiş — daimî üyeler için \"süreli\": md 23/1 (\"Güvenlik Meclisinin süreli Üyeleridir\"), md 27/3 (\"süreli Üyelerin hepsinin oyları dâhil\"), md 47/2 (\"süreli Üyelerinin Kurmay Başkanları\", \"Komitede süreli olarak temsil edilmeyen\"), md 108 (\"Güvenlik Meclisi süreli Üyelerinin hepsi\"), md 109/2 (\"bütün süreli üyeleri\"); seçilen üyeler için \"süresiz\": md 18/2 (\"süresiz üyelerinin seçimi\"), md 23/1 (\"süresiz Üye olarak seçilir\"), md 23/2 (iki kez). Ayrıca \"süreli\" = sürekli anlamıyla md 28/1 (\"görevlerini süreli olarak yerine getirebilecek\") ve md 101/2 (\"süreli olarak mahsus memurlar\") de baskıda böyle. Bu, çevirinin kendi terimi (süreli = sürekli/daimî); kart üretiminde çağdaş anlamıyla ters okunma riski var, metne not düşülmeli. Md 43/1 \"milletlerarası barış ve güvenliğin muhafazası için Kurulun emrine gerekli silâhlı kuvvetleri vermeği\" görüntüde aynen böyle (\"Kurulun\"). Bildirilen dizgi hataları (müessesesler, işbilirği, iştişari, huhukî, isteye.., 13/1-a noktasız) görüntüde aynen var. Döküm bankaya girebilir; tek açık nokta md 105/1'in son sözcüğünün eki (okunamıyor, [?] kalmalı ya da insan gözüyle/başka nüshayla kapatılmalı). Düşük riskli silik yerler: md 105/2 son üç sözcük, md 106 \"43\", md 109/1 \"Üyesi bir\"."
+}

@@ -1,0 +1,40 @@
+{
+  "deck": {
+    "topicId": "574c0ca8-c773-4982-9d19-0ff40586a6d7",
+    "legislationSlug": "eskhus",
+    "sourceLabel": "AI bilgi kartı — Ekonomik, Sosyal ve Kültürel Haklara İlişkin Uluslararası Sözleşme md 16–31",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: resmî madde metni + çıkmış sorular)"
+  },
+  "cards": [
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Ekonomik, Sosyal ve Kültürel Haklar Sözleşmesi'nin yürürlüğe girmesi, Birleşmiş Milletler Genel Sekreteri'ne kaçıncı onaylama ya da katılma belgesinin iletilmesine bağlıdır?",
+      "back": "Otuz beşinci belgeye; Sözleşme bu belgenin iletilmesi tarihinden üç ay sonra yürürlüğe girer.",
+      "articleRefs": [
+        "27"
+      ],
+      "explanation": "Sonradan taraf olan devlet için de süre aynıdır: Sözleşme, o devletin kendi onaylama ya da katılma belgesinin iletilmesinden üç ay sonra yürürlüğe girer."
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Ekonomik, Sosyal ve Kültürel Haklar Sözleşmesi'nin hükümleri, federal bir devlette bazı kesimler bakımından istisna yapılarak uygulanabilir mi?",
+      "back": "Hayır. Sözleşme hükümleri hiçbir sınırlama ya da istisna yapılmaksızın Federal Devletlerin bütün kesimleri bakımından geçerlidir.",
+      "articleRefs": [
+        "28"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Ekonomik, Sosyal ve Kültürel Haklar Sözleşmesi'nde, Genel Kurul'ca onaylanan bir değişikliğin yürürlüğe girmesi için Taraf Devletlerin ne kadarının kabulü gerekir?",
+      "back": "Üçte ikisinin; her devlet değişikliği kendi anayasa kurallarına uygun olarak kabul eder.",
+      "explanation": "Değişiklik önce Birleşmiş Milletler Genel Kurulu'nca onaylanır. Değişikliği görüşecek Taraf Devletler konferansının toplanması için ise Taraf Devletlerin en az üçte birinin desteği yeterlidir.",
+      "articleRefs": [
+        "29"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,184 @@
+{
+  "deck": {
+    "topicId": "a75768ab-a02a-423a-b7a9-5eac2506bf2a",
+    "legislationSlug": "bm-iskenceye-karsi-sozlesme",
+    "sourceLabel": "AI bilgi kartı — İşkenceye ve Diğer Zalimane, Gayriinsani veya Küçültücü Muamele veya Cezaya Karşı Birleşmiş Milletler Sözleşmesi md 17–27, 29–32",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: resmî madde metni + çıkmış sorular; stil kapısı 1 açıklama yeniden yazıldı)"
+  },
+  "cards": [
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Birleşmiş Milletler İşkenceye Karşı Sözleşme ile kurulan BM İşkenceye Karşı Komite kaç uzmandan oluşur?",
+      "back": "On uzmandan; uzmanları Taraf Devletler seçer.",
+      "explanation": "Uzmanlar, insan hakları alanında yetkinliğiyle tanınmış ve yüksek ahlaki niteliklere sahip kişilerdir. Seçimde hakkaniyete uygun coğrafi dağılım ile hukuk deneyimi olan kişilerin Komite'de yer almasının yararı gözetilir.",
+      "articleRefs": [
+        "17"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "BM İşkenceye Karşı Komite üyeleri kimler tarafından ve hangi oylama usulüyle seçilir?",
+      "back": "Taraf Devletlerce, gizli oyla; Taraf Devletlerin aday gösterdiği kişiler listesinden.",
+      "explanation": "Her Taraf Devlet kendi vatandaşları arasından bir kişiyi aday gösterebilir. Seçim, Birleşmiş Milletler Genel Sekreterinin topladığı Taraf Devletler toplantısında yapılır; en çok oyu ve hazır bulunup oy veren temsilcilerin oylarının mutlak çoğunluğunu alanlar seçilir.",
+      "articleRefs": [
+        "17"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "BM İşkenceye Karşı Komite üyeleri kaç yıl için seçilir?",
+      "back": "Dört yıl için; aday gösterilirlerse yeniden seçilebilirler.",
+      "explanation": "İlk seçimde seçilen beş üyenin görev süresi ise iki yılın sonunda sona erer; bu beş üye kurayla belirlenir.",
+      "articleRefs": [
+        "17"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "BM İşkenceye Karşı Komite'nin toplantı yeter sayısı kaç üyedir?",
+      "back": "Altı üye; kararlar hazır bulunan üyelerin çoğunluğunun oyuyla alınır.",
+      "explanation": "Komite çalışma kurallarını kendisi belirler; bu kurallarda toplantı yeter sayısı ile karar usulünün yer alması zorunludur. Komite görevlilerini iki yıllık süre için seçer; bunlar yeniden seçilebilir.",
+      "articleRefs": [
+        "18"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "BM İşkenceye Karşı Sözleşme'ye göre Taraf Devletler, Komite'ye tamamlayıcı raporlarını hangi sıklıkla sunar?",
+      "back": "Dört yılda bir; Komite'nin isteyebileceği diğer raporları da sunarlar.",
+      "explanation": "Taraf Devletler, Sözleşme'nin kendileri için yürürlüğe girmesinden sonra bir yıl içinde, Sözleşme'den doğan yükümlülüklerini yerine getirmek için aldıkları tedbirler hakkında rapor sunar.",
+      "articleRefs": [
+        "19"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "BM İşkenceye Karşı Sözleşme'ye göre Taraf Devletlerin Komite'ye sunduğu raporları bütün Taraf Devletlere kim gönderir?",
+      "back": "Birleşmiş Milletler Genel Sekreteri.",
+      "explanation": "Her rapor Komite tarafından incelenir. Komite uygun gördüğü genel yorumları yapabilir; bunlar ilgili Taraf Devlete gönderilir. O devlet dilerse gözlemleriyle karşılık verebilir.",
+      "articleRefs": [
+        "19"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "BM İşkenceye Karşı Komite, hangi durumda bir Taraf Devleti elindeki bilginin incelenmesinde işbirliği yapmaya davet eder?",
+      "back": "O devletin ülkesinde işkencenin sistematik biçimde uygulandığına dair inandırıcı bilgi alırsa; devleti bu konudaki gözlemlerini sunmaya da davet eder.",
+      "explanation": "Komite gerekli görürse üyelerinden birini ya da birkaçını gizli soruşturma yapmak ve acilen rapor vermek üzere görevlendirebilir. Soruşturma, ilgili devletle anlaşmaya varılırsa o ülkeye ziyareti de içerebilir.",
+      "articleRefs": [
+        "20"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "BM İşkenceye Karşı Komite, yürüttüğü gizli soruşturmanın sonuç özetini ilgili Taraf Devlete danışmadan yıllık raporuna koyabilir mi?",
+      "back": "Hayır. Soruşturma tamamlandıktan sonra Komite, ilgili Taraf Devlete danıştıktan sonra sonuçların özetini yıllık raporuna koymaya karar verebilir.",
+      "explanation": "Soruşturmayla ilgili bütün işlemler gizlidir ve her aşamada Taraf Devletin işbirliği aranır. Yıllık rapor, Komite'nin Birleşmiş Milletler Genel Kurulu'na ve Taraf Devletlere sunduğu rapordur.",
+      "articleRefs": [
+        "20",
+        "24"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "BM İşkenceye Karşı Komite, gizli soruşturmayı yürüten üyelerinin bulgularını inceledikten sonra bu bulguları kime gönderir?",
+      "back": "İlgili Taraf Devlete; uygun gördüğü yorum ve önerileriyle birlikte.",
+      "articleRefs": [
+        "20"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "BM İşkenceye Karşı Sözleşme'deki devletlerarası şikâyet usulünde Komite'nin bir şikâyeti inceleyebilmesi için hangi devletlerin Komite'nin yetkisini beyanla tanımış olması gerekir?",
+      "back": "Hem şikâyeti yapan hem de şikâyetin ilgilendirdiği Taraf Devletin.",
+      "explanation": "Beyan herhangi bir zamanda yapılabilir ve Birleşmiş Milletler Genel Sekreterine yapılacak başka bir beyanla geri alınabilir. Usul, beş Taraf Devletin beyanda bulunmasıyla uygulanmaya başlar.",
+      "articleRefs": [
+        "21"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "BM İşkenceye Karşı Sözleşme'deki devletlerarası şikâyet usulünde, yazılı başvuruyu alan devlet açıklamasını kaç ay içinde verir?",
+      "back": "Üç ay içinde; meseleyi açıklayan yazılı beyanını başvuruyu gönderen devlete verir.",
+      "explanation": "Süre, başvurunun alınmasından itibaren işler.",
+      "articleRefs": [
+        "21"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "BM İşkenceye Karşı Sözleşme'deki devletlerarası şikâyet usulünde Komite, bildirimi aldıktan sonra raporunu altı ay içinde mi sunar?",
+      "back": "Hayır. Komite raporunu bildirimin alındığı tarihten sonra on iki ay içinde sunar; altı ay, meselenin Komite'ye götürülebilmesi için beklenen süredir.",
+      "explanation": "Dostane çözüme ulaşılırsa rapor, olayların kısa anlatımı ve varılan çözümle sınırlı kalır. Çözüme ulaşılamazsa olayların kısa açıklamasına ilgili devletlerin yazılı sunumları ve sözlü sunumlarının tutanağı eklenir. Rapor her durumda ilgili Taraf Devletlere tebliğ edilir.",
+      "articleRefs": [
+        "21"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "BM İşkenceye Karşı Sözleşme'deki devletlerarası şikâyet usulünde Komite, kendisine getirilen meseleyi hangi tespiti yaptıktan sonra inceler?",
+      "back": "Konuyla ilgili bütün iç hukuk yollarına başvurulduğunu ve bunların tüketildiğini tespit ettikten sonra.",
+      "explanation": "Bu yolların işletilmesi makul olmayan biçimde geciktirilmişse ya da mağdura etkin bir yardım sağlanması muhtemel değilse bu kural uygulanmaz. Komite bu şikâyetleri kapalı toplantıda inceler.",
+      "articleRefs": [
+        "21"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "BM İşkenceye Karşı Sözleşme'deki bireysel şikâyet usulünde Komite, hangi Taraf Devletleri ilgilendiren şikâyetleri alabilir?",
+      "back": "Yalnız, kişilerden gelen şikâyetleri alma ve inceleme konusunda Komite'nin yetkisini tanıdığını beyan etmiş Taraf Devletleri ilgilendirenleri.",
+      "explanation": "Beyan her zaman yapılabilir. Komite bu şikâyetleri kapalı toplantıda inceler ve görüşlerini ilgili Taraf Devlete ve kişiye bildirir.",
+      "articleRefs": [
+        "22"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "BM İşkenceye Karşı Sözleşme'deki bireysel şikâyet usulünde Komite'nin şikâyeti inceleyebilmesi için, aynı konu başka bir uluslararası usul bakımından hangi durumda olmalıdır?",
+      "back": "Aynı konu başka bir uluslararası soruşturma veya çözüm usulünde incelenmemiş ve hâlen incelenmiyor olmalıdır.",
+      "explanation": "Kişinin bütün iç hukuk yollarını tüketmiş olması da aranır; bu yolların işletilmesi makul olmayan biçimde uzarsa ya da mağdurun zararını etkin biçimde karşılaması muhtemel değilse bu şart aranmaz.",
+      "articleRefs": [
+        "22"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "BM İşkenceye Karşı Komite, faaliyetleri hakkındaki yıllık raporunu kimlere sunar?",
+      "back": "Birleşmiş Milletler Genel Kurulu'na ve Taraf Devletlere.",
+      "articleRefs": [
+        "24"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "BM İşkenceye Karşı Sözleşme, BM İşkenceye Karşı Komite'ye hangi denetim yollarını tanır?",
+      "back": "Devlet raporlarının incelenmesi, gizli soruşturma, devletlerarası şikâyet ve bireysel şikâyet.",
+      "explanation": "Devletlerarası ve bireysel şikâyet usulleri, ilgili Taraf Devletin Komite'nin yetkisini tanıdığını beyan etmesine bağlıdır.",
+      "articleRefs": [
+        "19",
+        "20",
+        "21",
+        "22"
+      ]
+    }
+  ]
+}

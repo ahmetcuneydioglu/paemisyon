@@ -1,0 +1,142 @@
+{
+  "deck": {
+    "topicId": "8aa7d9cd-57b9-4092-9ed1-ce2a65ceeca4",
+    "legislationSlug": "mshus",
+    "sourceLabel": "AI bilgi kartı — Medeni ve Siyasi Haklara İlişkin Uluslararası Sözleşme md 28–53",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: resmî madde metni + çıkmış sorular)"
+  },
+  "cards": [
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "İnsan Hakları Komitesi hangi sözleşmeyle kurulmuştur?",
+      "back": "Medeni ve Siyasi Haklara İlişkin Uluslararası Sözleşme ile.",
+      "explanation": "Komite, bu Sözleşme'ye Taraf Devletlerin sunduğu raporları inceler.",
+      "articleRefs": [
+        "28",
+        "40"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "İnsan Hakları Komitesi kaç üyeden oluşur?",
+      "back": "On sekiz üyeden. Üyeler, Medeni ve Siyasi Haklar Sözleşmesi'ne Taraf Devletlerin vatandaşları arasından seçilir.",
+      "explanation": "Üyelerde yüksek ahlaki karakter ve insan hakları alanında tanınmış yetkinlik aranır. Hukuk deneyimi olan bazı kişilerin Komite'ye katılmasının yararı da göz önünde bulundurulur.",
+      "articleRefs": [
+        "28"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "İnsan Hakları Komitesi üyeleri hangi sıfatla görev yapar?",
+      "back": "Kendi kişisel sıfatlarıyla.",
+      "explanation": "Komite üyeleri seçimle göreve gelir.",
+      "articleRefs": [
+        "28"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Medeni ve Siyasi Haklar Sözleşmesi'ne Taraf bir Devlet, İnsan Hakları Komitesi üyeliğine başka bir Devletin vatandaşını aday gösterebilir mi?",
+      "back": "Hayır. Aday gösterilen kişiler aday gösteren Devletin vatandaşı olmalıdır. Ayrıca her Devlet iki kişiden fazla aday gösteremez.",
+      "explanation": "Bir kimse yeniden aday gösterilebilir.",
+      "articleRefs": [
+        "29"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "İnsan Hakları Komitesi üyelerini kim seçer?",
+      "back": "Medeni ve Siyasi Haklar Sözleşmesi'ne Taraf Devletler. Seçim, Taraf Devletler toplantısında gizli oyla yapılır.",
+      "explanation": "Toplantıyı Birleşmiş Milletler Genel Sekreteri düzenler. Seçilmek için hazır bulunan ve oy kullanan temsilcilerin oylarının en çoğunu almak ve salt çoğunluğunu sağlamak gerekir.",
+      "articleRefs": [
+        "29",
+        "30"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "İnsan Hakları Komitesi seçiminde üyeliğin dağılımına ilişkin hangi esaslar göz önünde bulundurulur?",
+      "back": "Üyeliğin adil coğrafi dağılımı esası ile farklı uygarlık biçimlerinin ve belli başlı hukuk sistemlerinin temsili esası.",
+      "explanation": "Ayrıca Komite'de aynı Devletten birden fazla üye bulunamaz.",
+      "articleRefs": [
+        "31"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "İnsan Hakları Komitesi üyeleri kaç yıllık bir süre için seçilir?",
+      "back": "Dört yıl. Tekrar aday gösterilirlerse yeniden seçilebilirler.",
+      "explanation": "Görev süresi sona erince seçimler, Sözleşme'nin bu bölümündeki maddelere göre yeniden yapılır.",
+      "articleRefs": [
+        "32"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "İnsan Hakları Komitesi normal olarak nerede toplanır?",
+      "back": "Birleşmiş Milletler Genel Merkezi'nde ya da Cenevre'deki Birleşmiş Milletler Ofisi'nde.",
+      "explanation": "Komite'nin ilk oturumunu Birleşmiş Milletler Genel Sekreteri, Genel Merkez'de toplar. Komite sonraki toplantılarını kendi çalışma usullerinde öngörülen zamanlarda yapar.",
+      "articleRefs": [
+        "37"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "İnsan Hakları Komitesi üyesi göreve başlamadan önce ne yapar?",
+      "back": "Görevlerini tarafsız ve vicdanına göre yürüteceğine Komite önünde and içer.",
+      "articleRefs": [
+        "38"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "İnsan Hakları Komitesi kararlarını hangi çoğunlukla alır?",
+      "back": "Mevcut üyelerin çoğunluğu ile.",
+      "explanation": "Komite çalışma usullerini kendisi belirler; ancak bu kuralın çalışma usullerinde yer alması zorunludur.",
+      "articleRefs": [
+        "39"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "İnsan Hakları Komitesi'nin toplantı yeter sayısı kaç üyedir?",
+      "back": "On iki üye.",
+      "explanation": "Komite on sekiz üyeden oluşur; toplanabilmesi için on iki üyenin bulunması gerekir.",
+      "articleRefs": [
+        "39",
+        "28"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Medeni ve Siyasi Haklar Sözleşmesi'ne Taraf bir Devlet, Sözleşme kendisi bakımından yürürlüğe girdikten sonra ilk raporunu hangi süre içinde sunar?",
+      "back": "Bir yıl içinde. Bundan sonra İnsan Hakları Komitesi ne zaman isterse rapor sunar.",
+      "explanation": "Raporlar Birleşmiş Milletler Genel Sekreteri'ne sunulur; Genel Sekreter onları incelenmek üzere Komite'ye iletir. Komite raporları inceler, kendi raporlarını ve uygun gördüğü görüşleri Taraf Devletlere iletir.",
+      "articleRefs": [
+        "40"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "İnsan Hakları Komitesi yıllık çalışma raporlarını Birleşmiş Milletler Genel Kurulu'na hangi organ aracılığıyla sunar?",
+      "back": "Ekonomik ve Sosyal Konsey aracılığıyla.",
+      "articleRefs": [
+        "45"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,269 @@
+{
+  "deck": {
+    "topicId": "8aa7d9cd-57b9-4092-9ed1-ce2a65ceeca4",
+    "legislationSlug": "mshus",
+    "sourceLabel": "AI bilgi kartı — Medeni ve Siyasi Haklara İlişkin Uluslararası Sözleşme md Başlangıç, 1–15",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: resmî madde metni + çıkmış sorular)"
+  },
+  "cards": [
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Medeni ve Siyasi Haklar Sözleşmesi'nin Başlangıç bölümüne göre Sözleşme'deki haklar neyden kaynaklanır?",
+      "back": "Kişinin doğuştan sahip olduğu onurdan.",
+      "explanation": "Başlangıç, insanlık ailesinin tüm mensuplarının doğuştan sahip oldukları onurun ve eşit ve devredilmez haklarının tanınmasını dünyada özgürlük, adalet ve barışın temeli sayar.",
+      "articleRefs": [
+        "Başlangıç"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Medeni ve Siyasi Haklar Sözleşmesi'ne göre Taraf Devlet, Sözleşme'deki hakları ihlal edilen kişi için neyi güvence altına almakla yükümlüdür?",
+      "back": "İhlalin etkin şekilde telafi edilmesini. İhlali resmi sıfatla görev yapan kişiler gerçekleştirmiş olsa bile bu güvence geçerlidir.",
+      "explanation": "Telafi isteyen kişinin hakkı yetkili yargı, yürütme ya da yasama organlarınca veya Devletin yasal sisteminde öngörülen başka bir yetkili organca karara bağlanır. Devlet ayrıca yargısal telafi olanaklarını sağlamakla ve verilen kararların yetkili organlarca uygulanmasını güvence altına almakla yükümlüdür.",
+      "articleRefs": [
+        "2"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Medeni ve Siyasi Haklar Sözleşmesi, Sözleşme'deki haklardan yararlanmada erkekler ve kadınlar bakımından Taraf Devletlere hangi yükümlülüğü getirir?",
+      "back": "Bütün medeni ve siyasal haklardan erkeklerle kadınların eşit yararlanmasını güvence altına alma yükümlülüğünü.",
+      "articleRefs": [
+        "3"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Medeni ve Siyasi Haklar Sözleşmesi'ne göre Taraf Devletler hangi durumda Sözleşme'den doğan yükümlülüklerinden ayrılan tedbirler alabilir?",
+      "back": "Ulusun hayatını tehdit eden ve varlığı resmen ilan edilmiş olağanüstü bir durum ortaya çıktığında, durumun gerektirdiği ölçüde alabilir.",
+      "explanation": "Bu tedbirler uluslararası hukuktan kaynaklanan diğer yükümlülüklere aykırı olamaz. Ayrıca ırk, renk, cinsiyet, dil, din ya da toplumsal kökene dayalı bir ayrımcılık içeremez.",
+      "articleRefs": [
+        "4"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Medeni ve Siyasi Haklar Sözleşmesi'ne göre olağanüstü durumda bile Sözleşme'nin hangi maddelerine aykırılık getirilemez?",
+      "back": "6, 7, 8 (1. ve 2. fıkralar), 11, 15, 16 ve 18. maddelerine.",
+      "explanation": "Bunlar arasında yaşama hakkı (md 6), işkence ve kötü muamele yasağı (md 7), kölelik ve kulluk yasağı (md 8/1-2), yalnızca bir sözleşmeden doğan yükümlülüğü yerine getirememe yüzünden hapsedilmeme (md 11) ve işlendiği zaman suç sayılmayan fiil yüzünden suçlu sayılmama (md 15) yer alır.",
+      "articleRefs": [
+        "4",
+        "6",
+        "7",
+        "8",
+        "11",
+        "15"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Medeni ve Siyasi Haklar Sözleşmesi'ne göre aykırılık hakkından yararlanan Taraf Devlet, diğer Taraf Devletlere bildirimini kimin aracılığıyla yapar?",
+      "back": "Birleşmiş Milletler Genel Sekreteri aracılığıyla yapar; bildirim derhal yapılır.",
+      "explanation": "Bildirimde Devletin hangi hükümleri uygulamaktan kaçındığı ve buna yol açan nedenler yer alır. Aykırılığı sona erdirdiği tarih de aynı kanalla bildirilir.",
+      "articleRefs": [
+        "4"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Medeni ve Siyasi Haklar Sözleşmesi'ne göre ölüm cezasını kaldırmamış ülkelerde idam hükmü hangi suçlar için verilebilir?",
+      "back": "Yalnız en ağır suçlar için verilebilir. Hüküm, suçun işlendiği anda yürürlükte olan yasalara uygun olmalıdır.",
+      "explanation": "Hüküm bu Sözleşme'ye ve Soykırım Suçunun Önlenmesi ve Cezalandırılması Sözleşmesi'ne aykırı olamaz. Ceza ancak yetkili bir mahkemenin kesin kararı üzerine uygulanabilir. Ölüm cezasına çarptırılan herkes, cezanın affedilmesini ya da daha hafif bir cezaya çevrilmesini isteme hakkına sahiptir.",
+      "articleRefs": [
+        "6"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Medeni ve Siyasi Haklar Sözleşmesi'ne göre hangi yaşın altındaki kişilerin işlediği suçlar için ölüm cezası verilemez?",
+      "back": "On sekiz (18) yaşın altındakilerin.",
+      "explanation": "Ölçüt, kişinin suçu işlediği andaki yaşıdır.",
+      "articleRefs": [
+        "6"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Medeni ve Siyasi Haklar Sözleşmesi'ne göre hamile kadınlar bakımından yasak olan, ölüm cezasının verilmesi midir, yerine getirilmesi midir?",
+      "back": "Yerine getirilmesi. Hamile kadınların idam cezaları yerine getirilemez; cezanın verilememesi ise on sekiz yaşın altındakilerin işlediği suçlar içindir.",
+      "explanation": "Aynı fıkrada iki ayrı güvence vardır. Yaşa bağlı güvence cezanın verilmesini, hamileliğe bağlı güvence ise cezanın yerine getirilmesini engeller.",
+      "articleRefs": [
+        "6"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Medeni ve Siyasi Haklar Sözleşmesi'nin işkence yasağı maddesine göre kişi, özgür rızası olmadan hangi deneylere tabi tutulamaz?",
+      "back": "Tıbbi ya da bilimsel deneylere.",
+      "explanation": "Madde ayrıca hiç kimsenin işkenceye ya da zalimane, insanlık dışı ya da küçük düşürücü muamele ya da cezalandırmaya maruz bırakılamayacağını söyler.",
+      "articleRefs": [
+        "7"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Medeni ve Siyasi Haklar Sözleşmesi, mahkeme kararına bağlı işler dışında hangi hizmetleri \"zorla ya da zorunlu çalıştırma\" teriminin dışında tutar?",
+      "back": "Askeri nitelikteki hizmeti, toplumun varlığını ya da refahını tehdit eden olağanüstü hal ya da felakette istenen hizmeti ve olağan kişisel yükümlülüklerin parçası olan iş ve hizmeti.",
+      "explanation": "Askeri hizmete katılmayı vicdani bakımdan reddetme hakkının tanındığı ülkelerde, bu hakkı kullananlardan yasal olarak istenen ulusal hizmet de terimin dışındadır. Mahkeme kararına bağlı işlerden biri şudur: suç karşılığı ağır işlerde çalışma cezası verilen ülkelerde, yetkili mahkemenin verdiği böyle bir karar uyarınca ağır işte çalıştırma yasağa takılmaz.",
+      "articleRefs": [
+        "8"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Medeni ve Siyasi Haklar Sözleşmesi'ne göre, ulusun hayatını tehdit eden olağanüstü durumda zorla ya da zorunlu çalıştırma yasağından ayrılan tedbir alınabilir mi?",
+      "back": "Evet. Sözleşme, 8. maddenin yalnız 1. ve 2. fıkralarını (kölelik ve kulluk) aykırılık getirilemeyen hükümler arasında sayar; zorla çalıştırma yasağı 3. fıkradadır. Tedbir durumun gerektirdiği ölçüde olmalıdır.",
+      "explanation": "Olağanüstü durumda alınacak tedbirin kayıtları vardır: durumun varlığı resmen ilan edilmiş olmalı, tedbir uluslararası hukuktan kaynaklanan diğer yükümlülüklere aykırı olmamalı ve ırk, renk, cinsiyet, dil, din ya da toplumsal kökene dayalı ayrımcılık içermemelidir.",
+      "articleRefs": [
+        "8",
+        "4"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Medeni ve Siyasi Haklar Sözleşmesi'ne göre suç işlediği iddiasıyla yakalanan ya da tutuklanan kişi kimin önüne çıkarılır?",
+      "back": "Derhal bir yargıcın ya da yasalarla yargı erkini kullanmaya yetkili kılınmış başka bir resmi görevlinin önüne çıkarılır.",
+      "explanation": "Bu kişi, uygun bir süre içinde yargılanma ya da salıverilme hakkına sahiptir. Tutuklanan herkese, tutuklandığı anda tutuklanma nedenleri ve hakkındaki iddialar derhal bildirilir.",
+      "articleRefs": [
+        "9"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Medeni ve Siyasi Haklar Sözleşmesi'ne göre yargılanmayı bekleyen kişinin salıverilmesi hangi amaçla güvencelere bağlanabilir?",
+      "back": "Sanığın duruşmalarda, yargılamanın diğer aşamalarında ve gerektiğinde hükmün yerine getirilmesinde hazır bulunmasını sağlamak amacıyla.",
+      "explanation": "Yakalanma ya da tutuklanma yoluyla özgürlüğünden yoksun bırakılan herkes mahkemeye başvurabilir. Mahkeme tutuklamanın yasallığı konusunda gecikmeksizin karar verir.",
+      "articleRefs": [
+        "9"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Medeni ve Siyasi Haklar Sözleşmesi'ne göre yasal olmayan bir yakalama ya da tutuklamadan mağdur olan kişinin hangi hakkı vardır?",
+      "back": "İcra edilebilir bir tazminat hakkı.",
+      "explanation": "Kişi özgürlüğünden ancak kanunun belirlediği sebeplere ve usule uygun olarak yoksun bırakılabilir. Hiç kimse keyfi olarak yakalanamaz veya tutuklanamaz.",
+      "articleRefs": [
+        "9"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Medeni ve Siyasi Haklar Sözleşmesi'ne göre sanık durumundaki kişiler kural olarak kimlerden ayrı tutulur?",
+      "back": "Hüküm giymiş kişilerden. İstisnai durumlar dışında ayrı tutulur ve hüküm giymemiş kişilerin statüsüne uygun işlem görürler.",
+      "explanation": "Küçük sanıklar yetişkinlerden ayrı tutulur ve durumlarının karara bağlanması için mümkün olan en kısa sürede mahkeme önüne çıkarılır. Cezaevi sisteminin asıl amacı mahkumların ıslahı ve topluma yeniden kazandırılmasıdır.",
+      "articleRefs": [
+        "10"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Medeni ve Siyasi Haklar Sözleşmesi'ne göre kişi, hangi tür yükümlülüğünü yerine getirememesi yüzünden hapsedilemez?",
+      "back": "Yalnızca bir sözleşmeden doğan yükümlülüğünü.",
+      "explanation": "Bu hüküm, olağanüstü durumda bile aykırılık getirilemeyen maddeler arasındadır.",
+      "articleRefs": [
+        "11",
+        "4"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Medeni ve Siyasi Haklar Sözleşmesi'ne göre ülke içinde serbest dolaşım ve ülkeyi terk etme haklarına hangi sınırlamalar konabilir?",
+      "back": "Yalnız ulusal güvenliği, kamu düzenini, kamu sağlığını ya da genel ahlakı veya başkalarının hak ve özgürlüklerini korumak üzere yasalarla konmuş ve Sözleşme'deki diğer haklarla uyumlu sınırlamalar.",
+      "explanation": "Yasal olarak bir Devletin ülkesinde bulunan herkes, o ülkede özgürce hareket etme ve ikametgahını seçme hakkına sahiptir. Herkes, kendi ülkesi de dahil herhangi bir ülkeyi terk etmekte özgürdür. Hiç kimse kendi ülkesine girme hakkından keyfi olarak yoksun bırakılamaz.",
+      "articleRefs": [
+        "12"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Medeni ve Siyasi Haklar Sözleşmesi'ne göre, Taraf Devletin ülkesinde yasal olarak bulunan yabancıya sınırdışı edilmesine karşı neden ileri sürme ve durumunu yeniden gözden geçirtme imkânı her durumda tanınır mı?",
+      "back": "Hayır. Ulusal güvenlik bakımından zorunlu nedenler aksini gerektirebilir. Bu durum dışında bu imkânlar ve yetkili merciler önünde temsil hakkı tanınır.",
+      "explanation": "Yabancı ancak yasalara uygun olarak verilmiş bir karar uyarınca sınırdışı edilebilir. Gözden geçirmeyi yetkili makamlar ya da bu makamlarca özel olarak atanmış kişi ya da kişiler yapar.",
+      "articleRefs": [
+        "13"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Medeni ve Siyasi Haklar Sözleşmesi'ne göre basın ve dinleyiciler hangi gerekçelerle duruşmaların dışında tutulabilir?",
+      "back": "Demokratik bir toplumda ahlak, kamu düzeni ya da ulusal güvenlik gerekçeleriyle, tarafların özel hayatı bunu gerektirdiğinde ya da mahkemenin açıklığın adalete zarar vereceği sonucuna vardığı özel durumlarda.",
+      "explanation": "Kural, yasalar uyarınca kurulmuş yetkili, bağımsız ve tarafsız bir mahkeme önünde adil ve kamuya açık duruşmadır. Dışarıda tutma, mahkemenin gerekli gördüğü ölçüde, duruşmaların tümü ya da bir kısmı için olabilir.",
+      "articleRefs": [
+        "14"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Medeni ve Siyasi Haklar Sözleşmesi'ne göre mahkemede kullanılan dili anlamayan sanığa tercüman yardımı, yalnız ödeme olanağı yoksa mı parasız sağlanır?",
+      "back": "Hayır. Tercümanın parasız yardımı ödeme olanağına bağlanmamıştır. \"Ödeme yapma olanağı yoksa\" kaydı, adaletin gerektirdiği durumlarda tayin edilen avukat için aranır.",
+      "explanation": "Asgari garantiler arasında şunlar da bulunur: aleyhindeki iddianın niteliği ve nedenleri hakkında en kısa zamanda ve anlayacağı bir dilde ayrıntılı bilgi verilmesi, savunma için yeterli zaman ve kolaylık tanınması, gereksiz gecikme olmadan yargılanma ve kendi aleyhine tanıklığa ya da suç itirafına zorlanmama.",
+      "articleRefs": [
+        "14"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Medeni ve Siyasi Haklar Sözleşmesi'ne göre bir suçla itham edilen kişi ne zamana kadar masum kabul edilir?",
+      "back": "Yasalara göre suçlu olduğu kesinleşene kadar.",
+      "explanation": "Bu güvence masumiyet karinesi olarak anılır ve bir suçla itham edilen herkes için geçerlidir.",
+      "articleRefs": [
+        "14"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Medeni ve Siyasi Haklar Sözleşmesi'ne göre kişi hangi durumda aynı fiil için yeniden yargılanamaz ve cezalandırılamaz?",
+      "back": "Bir ülkenin yasalarına ve ceza usulüne göre daha önce kesin olarak mahkum olmuş ya da beraat etmişse.",
+      "articleRefs": [
+        "14"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Medeni ve Siyasi Haklar Sözleşmesi'ne göre, fiil işlendikten sonra yasa o fiil için daha hafif bir ceza öngörürse faile hangi ceza uygulanır: fiil zamanındaki mi, sonraki mi?",
+      "back": "Sonraki, daha hafif ceza.",
+      "explanation": "Suç sayılan bir fiile, işlendiği zaman yürürlükte olan cezadan daha ağır ceza verilemez. İşlendiği zaman ulusal ya da uluslararası hukuk bakımından suç sayılmayan bir fiil ya da ihmal yüzünden kimse suçlu sayılamaz.",
+      "articleRefs": [
+        "15"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Medeni ve Siyasi Haklar Sözleşmesi'ne göre, işlendiği sırada ulusal hukukta suç sayılmayan bir fiil hangi ölçüte göre suç sayılıyorsa yine de yargılanabilir?",
+      "back": "İşlendiği sırada uluslar topluluğunun kabul ettiği genel hukuk ilkelerine göre suç sayılıyorsa yargılanabilir.",
+      "explanation": "Sözleşme'nin 15. maddesindeki hiçbir hüküm, böyle bir fiil ya da ihmal yüzünden bir kimsenin yargılanmasını ya da cezalandırılmasını engelleyemez.",
+      "articleRefs": [
+        "15"
+      ]
+    }
+  ]
+}

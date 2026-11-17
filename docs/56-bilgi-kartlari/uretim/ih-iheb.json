@@ -1,0 +1,303 @@
+{
+  "deck": {
+    "topicId": "7a0e6f5a-a9a9-4183-83df-044fdfc2ad23",
+    "legislationSlug": "iheb",
+    "sourceLabel": "AI bilgi kartı — İnsan Hakları Evrensel Beyannamesi md Başlangıç, 1–30",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: resmî madde metni + çıkmış sorular)"
+  },
+  "cards": [
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "İnsan Hakları Evrensel Beyannamesi'ni hangi organ ilan eder?",
+      "back": "Birleşmiş Milletler Genel Kurulu ilan eder.",
+      "explanation": "Beyanname, toplumun bütün bireyleri ve organları öğretim ve eğitim yoluyla bu haklara saygıyı geliştirsin; hakların hem üye devletlerin halkları hem de bu devletlerin yönetimi altındaki ülkelerin halkları arasında fiilen tanınıp uygulanmasını sağlamaya çalışsın diye ilan edilir.",
+      "articleRefs": [
+        "Başlangıç"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "İnsan Hakları Evrensel Beyannamesi'nin Başlangıç bölümüne göre, insanın zorbalığa ve baskıya karşı son çare olarak ayaklanmak zorunda kalmaması için ne zorunludur?",
+      "back": "İnsan haklarının bir hukuk düzeniyle korunması zorunludur.",
+      "articleRefs": [
+        "Başlangıç"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "İnsan Hakları Evrensel Beyannamesi'nin Başlangıç bölümüne göre, insanlık ailesinin bütün üyelerinin onurunun ve eşit, devredilemez haklarının tanınması neyin temelidir?",
+      "back": "Özgürlüğün, adaletin ve dünya barışının temelidir.",
+      "articleRefs": [
+        "Başlangıç"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "İnsan Hakları Evrensel Beyannamesi'nin ilk maddesine göre insanlar birbirlerine karşı hangi anlayışla hareket etmelidir?",
+      "back": "Kardeşlik anlayışıyla hareket etmelidirler.",
+      "explanation": "Aynı maddeye göre bütün insanlar özgür, onur ve haklar bakımından eşit doğar; akıl ve vicdana sahiptirler.",
+      "articleRefs": [
+        "1"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "İnsan Hakları Evrensel Beyannamesi'ne göre herkes, ilan edilen hak ve özgürlüklerden hangi farklar gözetilmeksizin yararlanır?",
+      "back": "Irk, renk, cinsiyet, dil, din, siyasi veya başka herhangi bir inanç, ulusal veya toplumsal köken, servet, doğuş veya başka herhangi bir fark gözetilmeksizin yararlanır.",
+      "articleRefs": [
+        "2"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "İnsan Hakları Evrensel Beyannamesi yaşama hakkıyla birlikte her bireyin hakkı olarak neleri sayar?",
+      "back": "Yaşama, özgürlük ve kişi güvenliği her bireyin hakkıdır.",
+      "articleRefs": [
+        "3"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "İnsan Hakları Evrensel Beyannamesi, köleliğin yanında başka neyi her türlü biçimiyle yasaklar?",
+      "back": "Köle ticaretini yasaklar. Kölelik ve köle ticareti her türlü biçimiyle yasaktır.",
+      "explanation": "Hiç kimse kölelik veya kulluk altında tutulamaz.",
+      "articleRefs": [
+        "4"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "İnsan Hakları Evrensel Beyannamesi, işkencenin yanında hangi nitelikteki ceza ve muameleleri yasaklar?",
+      "back": "Zalimce, insanlık dışı veya onur kırıcı ceza ya da muameleleri yasaklar.",
+      "articleRefs": [
+        "5"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "İnsan Hakları Evrensel Beyannamesi'ne göre herkes, ayrımcı muamelenin yanında başka neye karşı da eşit korunma hakkına sahiptir?",
+      "back": "Böyle bir ayrımcı muameleye yönelik her türlü kışkırtmaya karşı da eşit korunma hakkına sahiptir.",
+      "explanation": "Aynı madde, herkesin kanun önünde eşit olduğunu ve ayrım gözetilmeksizin kanunun eşit korumasından yararlanma hakkına sahip olduğunu da söyler.",
+      "articleRefs": [
+        "7"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "İnsan Hakları Evrensel Beyannamesi'ne göre kişi, anayasa veya kanunla tanınan temel haklarına aykırı işlemlere karşı nereye başvurma hakkına sahiptir?",
+      "back": "Ulusal mahkemelere başvurma hakkına sahiptir; bu başvuru fiilen sonuç verecek nitelikte olmalıdır.",
+      "articleRefs": [
+        "8"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "İnsan Hakları Evrensel Beyannamesi kişi özgürlüğü bakımından hangi işlemlerin keyfî olarak yapılmasını yasaklar?",
+      "back": "Hiç kimse keyfî olarak tutulamaz, alıkonulamaz veya sürülemez.",
+      "articleRefs": [
+        "9"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "İnsan Hakları Evrensel Beyannamesi'ne göre davanın bağımsız ve tarafsız bir mahkemede açık olarak görülmesi hakkı yalnız ceza suçlamaları için mi tanınır?",
+      "back": "Hayır. Bu hak, kişinin haklarının ve yükümlülüklerinin ya da kendisine yöneltilen cezai nitelikteki bir suçlamanın belirlenmesinde, tam bir eşitlik içinde tanınır.",
+      "explanation": "Dava, bağımsız ve tarafsız bir mahkeme tarafından hakkaniyete uygun ve açık olarak görülür.",
+      "articleRefs": [
+        "10"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "İnsan Hakları Evrensel Beyannamesi'ne göre bir suç işlemekle suçlanan kişi ne zamana kadar masum sayılır?",
+      "back": "Savunması için gerekli bütün güvencelerin sağlandığı açık bir yargılama ile kanuna göre suçlu olduğu tespit edilinceye kadar masum sayılır.",
+      "articleRefs": [
+        "11"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "İnsan Hakları Evrensel Beyannamesi'ne göre verilecek ceza hangi cezadan daha ağır olamaz?",
+      "back": "Suçun işlendiği sırada uygulanan cezadan daha ağır olamaz.",
+      "explanation": "Aynı fıkraya göre hiç kimse, işlendiği sırada ulusal veya uluslararası hukuka göre suç oluşturmayan bir fiil veya ihmal yüzünden de mahkûm edilemez.",
+      "articleRefs": [
+        "11"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "İnsan Hakları Evrensel Beyannamesi'ne göre kişi hangi konularda keyfî müdahalelere maruz bırakılamaz?",
+      "back": "Özel hayatı, ailesi, konutu veya yazışması konularında keyfî müdahalelere maruz bırakılamaz. Şeref ve itibarına yönelik saldırılara da maruz bırakılamaz.",
+      "explanation": "Herkesin bu müdahale ve saldırılara karşı kanunla korunma hakkı vardır.",
+      "articleRefs": [
+        "12"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "İnsan Hakları Evrensel Beyannamesi'ne göre herkes, ülkeden ayrılma ve ülkeye dönme bakımından hangi haklara sahiptir?",
+      "back": "Kendi ülkesi de dâhil herhangi bir ülkeden ayrılma ve ülkesine geri dönme hakkına sahiptir.",
+      "explanation": "Herkes ayrıca herhangi bir devletin toprakları içinde serbestçe dolaşma ve yerleşme hakkına sahiptir.",
+      "articleRefs": [
+        "13"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "İnsan Hakları Evrensel Beyannamesi'ne göre, gerçekten adi bir suça dayanan kovuşturma hâlinde sığınma hakkı ileri sürülebilir mi?",
+      "back": "Hayır. Adi bir suça veya Birleşmiş Milletlerin ilke ve amaçlarına aykırı faaliyetlere gerçekten dayanan kovuşturmalarda bu hak ileri sürülemez.",
+      "explanation": "Kural olarak herkes, zulüm karşısında başka ülkelere sığınma hakkına sahiptir.",
+      "articleRefs": [
+        "14"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "İnsan Hakları Evrensel Beyannamesi'ne göre hiç kimse vatandaşlık bakımından nelerden keyfî olarak yoksun bırakılamaz?",
+      "back": "Vatandaşlığından ve vatandaşlığını değiştirme hakkından keyfî olarak yoksun bırakılamaz.",
+      "explanation": "Aynı madde, herkesin bir vatandaşlığa hakkı olduğunu da ilan eder.",
+      "articleRefs": [
+        "15"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "İnsan Hakları Evrensel Beyannamesi'ne göre evlilik kimlerin rızasıyla kurulur?",
+      "back": "Ancak evlenecek kişilerin özgür ve tam rızasıyla kurulur.",
+      "articleRefs": [
+        "16"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "İnsan Hakları Evrensel Beyannamesi'ne göre evlilik çağına gelen bir kişinin evlenme hakkı din bakımından sınırlanabilir mi?",
+      "back": "Hayır. Evlilik çağına gelen her erkek ve kadın, ırk, vatandaşlık veya din bakımından hiçbir sınırlamaya tabi olmaksızın evlenme ve aile kurma hakkına sahiptir.",
+      "explanation": "Aile, toplumun doğal ve temel unsurudur; toplum ve devlet tarafından korunma hakkına sahiptir.",
+      "articleRefs": [
+        "16"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "İnsan Hakları Evrensel Beyannamesi mal ve mülk bakımından hangi iki güvenceyi tanır?",
+      "back": "Herkes tek başına veya başkalarıyla birlikte mal ve mülk sahibi olabilir; hiç kimse mal ve mülkünden keyfî olarak yoksun bırakılamaz.",
+      "articleRefs": [
+        "17"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "İnsan Hakları Evrensel Beyannamesi'ne göre din özgürlüğü, din veya kanaatin hangi yollarla açığa vurulmasını kapsar?",
+      "back": "Tek başına veya topluca, açık olarak veya özel biçimde; öğretim, uygulama, ibadet ve ayinlerle açığa vurulmasını kapsar.",
+      "explanation": "Düşünce, vicdan ve din özgürlüğü, din veya kanaat değiştirme özgürlüğünü de içerir.",
+      "articleRefs": [
+        "18"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "İnsan Hakları Evrensel Beyannamesi'ne göre ifade özgürlüğü, bilgi ve fikirler bakımından hangi hakları içerir?",
+      "back": "Ülke sınırları söz konusu olmaksızın bilgi ve fikirleri her araçla arama, elde etme ve yayma hakkını içerir. Kişi fikirlerinden ötürü de rahatsız edilemez.",
+      "articleRefs": [
+        "19"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 1,
+      "front": "İnsan Hakları Evrensel Beyannamesi'ne göre bir kişi bir derneğe üye olmaya zorlanabilir mi?",
+      "back": "Hayır. Hiç kimse bir derneğe üye olmaya zorlanamaz.",
+      "explanation": "Herkes barışçıl toplanma, dernek kurma ve derneğe katılma özgürlüğüne sahiptir.",
+      "articleRefs": [
+        "20"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "İnsan Hakları Evrensel Beyannamesi'ne göre hükümet otoritesinin temeli nedir?",
+      "back": "Halkın iradesidir. Bu irade; gizli oyla veya serbestliği sağlayacak eşdeğer bir usulle, genel ve eşit oy verme yoluyla, belirli aralıklarla yapılan dürüst seçimlerle ifade edilir.",
+      "articleRefs": [
+        "21"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "İnsan Hakları Evrensel Beyannamesi'ne göre herkes, çıkarlarının korunması için hangi örgütleri kurma ve bunlara katılma hakkına sahiptir?",
+      "back": "Sendika kurma ve sendikalara katılma hakkına sahiptir.",
+      "articleRefs": [
+        "23"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "İnsan Hakları Evrensel Beyannamesi'ne göre sosyal korunma yalnız evlilik içinde doğan çocuklara mı tanınır?",
+      "back": "Hayır. Bütün çocuklar, evlilik içinde de dışında da doğsalar, aynı sosyal korunmadan yararlanır.",
+      "explanation": "Analık ve çocukluk, özel bakım ve yardım görme hakkına sahiptir.",
+      "articleRefs": [
+        "25"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "İnsan Hakları Evrensel Beyannamesi'ne göre yüksek öğretim zorunlu mudur?",
+      "back": "Hayır. Zorunlu olan ilk eğitimdir; yüksek öğretim ise liyakate göre herkese tam eşitlikle açık olmalıdır.",
+      "explanation": "Eğitim, en azından ilk ve temel eğitim aşamalarında parasız olmalıdır. Teknik ve mesleki öğretimden herkes yararlanabilmelidir. Ana baba, çocuklarına verilecek eğitimin türünü öncelikle seçme hakkına sahiptir.",
+      "articleRefs": [
+        "26"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "İnsan Hakları Evrensel Beyannamesi'ne göre hak ve özgürlüklere getirilecek sınırlamalar kanun dışında bir yolla belirlenebilir mi?",
+      "back": "Hayır. Sınırlamalar ancak kanunla ve yalnız şu amaçlarla belirlenir: başkalarının hak ve özgürlüklerinin tanınmasını ve bunlara saygı gösterilmesini sağlamak; demokratik bir toplumda ahlakın, düzenin ve genel refahın haklı gereklerini karşılamak.",
+      "explanation": "Bu hak ve özgürlükler hiçbir şekilde Birleşmiş Milletlerin amaç ve ilkelerine aykırı olarak kullanılamaz.",
+      "articleRefs": [
+        "29"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "İnsan Hakları Evrensel Beyannamesi'nin hükümleri, hangi faaliyete hak tanıyacak biçimde yorumlanamaz?",
+      "back": "Beyannamede ilan edilen hak ve özgürlüklerin bir devlet, grup veya kişi tarafından yok edilmesini amaçlayan bir faaliyete girişmeye ya da bunu fiilen gerçekleştirmeye hak tanıyacak biçimde yorumlanamaz.",
+      "articleRefs": [
+        "30"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,219 @@
+{
+  "deck": {
+    "topicId": "8aa7d9cd-57b9-4092-9ed1-ce2a65ceeca4",
+    "legislationSlug": "mshus",
+    "sourceLabel": "AI bilgi kartı — Medeni ve Siyasi Haklara İlişkin Uluslararası Sözleşme md 16–27",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: resmî madde metni + çıkmış sorular)"
+  },
+  "cards": [
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Medeni ve Siyasi Haklar Sözleşmesi'ne göre herkes, her yerde, kanun önünde hangi hakka sahiptir?",
+      "back": "Kanun önünde kişi olarak tanınma hakkına.",
+      "explanation": "Hak \"herkes\" ve \"her yerde\" kaydıyla tanınır; kişi ya da yer bakımından bir sınır konulmamıştır.",
+      "articleRefs": [
+        "16"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Medeni ve Siyasi Haklar Sözleşmesi'ne göre bir kimsenin özel hayatına, ailesine, evine ya da haberleşmesine hangi nitelikteki müdahaleler yasaktır?",
+      "back": "Keyfi ya da yasadışı müdahaleler. Ayrıca hiç kimsenin şeref ve itibarına yasal olmayan tecavüzlerde bulunulamaz.",
+      "explanation": "Herkesin bu gibi müdahalelere ya da tecavüzlere karşı yasalarca korunma hakkı vardır.",
+      "articleRefs": [
+        "17"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Medeni ve Siyasi Haklar Sözleşmesi'ne göre kişinin dinini veya inançlarını ortaya koyma özgürlüğüne hangi amaçlarla kısıtlama getirilebilir?",
+      "back": "Kamu güvenliğini, düzenini, sağlığını, ahlakını ya da başkalarının temel hak ve özgürlüklerini korumak için. Kısıtlama gerekli olmalı ve yasalarla belirlenmelidir.",
+      "explanation": "Ortaya koyma özgürlüğü, din ya da inancı aleni veya özel olarak, bireysel ya da toplu olarak ibadet, icra, icaplarını yerine getirme ya da öğretme bakımından kapsar.",
+      "articleRefs": [
+        "18"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Medeni ve Siyasi Haklar Sözleşmesi'ne göre kişinin kendi seçtiği bir din ya da inanca sahip olma ya da bunu benimseme özgürlüğü neye karşı korunur?",
+      "back": "Bu özgürlüğü zedeleyecek baskıya karşı. Hiç kimse böyle bir baskıya maruz bırakılamaz.",
+      "explanation": "Kısıtlama hükmü ise din veya inançları ortaya koyma özgürlüğü için düzenlenmiştir: bu özgürlüğe yasalarla belirlenen ve gerekli kısıtlamalar getirilebilir.",
+      "articleRefs": [
+        "18"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Medeni ve Siyasi Haklar Sözleşmesi'ne göre Taraf Devletler, ana-babaların çocuklarına hangi eğitimi verme özgürlüğüne saygı göstermekle yükümlüdür?",
+      "back": "Çocuklarına kendi inançlarına uygun bir dinsel ve ahlaki eğitim verme özgürlüğüne.",
+      "explanation": "Bu saygı yükümlülüğü, uygulanabilir olan durumlarda yasalarca saptanmış vasileri de kapsar.",
+      "articleRefs": [
+        "18"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Medeni ve Siyasi Haklar Sözleşmesi'ne göre düşünceleri açıklama hakkı, bilgi ve fikirler bakımından hangi özgürlüğü de içerir?",
+      "back": "Ülkesel sınırlara bağlı olmaksızın her çeşit bilgiyi ve fikri araştırma, edinme ve iletme özgürlüğünü.",
+      "explanation": "Bu özgürlük sözlü, yazılı ya da basılı biçimde, sanat eserleri biçiminde ya da kişinin kendi seçeceği herhangi bir başka biçimde kullanılabilir.",
+      "articleRefs": [
+        "19"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Medeni ve Siyasi Haklar Sözleşmesi'ne göre düşünceleri açıklama hakkına konulacak bir sınırlamanın geçerli olması için hangi şartlar birlikte aranır?",
+      "back": "Sınırlama yasalarda öngörülmüş olmalı ve sayılan amaçlar bakımından gerekli olmalıdır.",
+      "explanation": "Sayılan amaçlar: başkalarının haklarına, şöhretine saygı; ulusal güvenliğin, kamu düzeninin, kamu sağlığının, genel ahlakın korunması. Sınırlamaların dayanağı, bu hakkın kullanılmasının özel bazı görev ve sorumlulukları da beraberinde getirmesidir.",
+      "articleRefs": [
+        "19"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Medeni ve Siyasi Haklar Sözleşmesi'ne göre başkalarının şöhretine saygı amacıyla, bir kimsenin istediği düşünceye sahip olma hakkına yasayla sınırlama konulabilir mi?",
+      "back": "Hayır. Herkes, kimsenin müdahalesi olmaksızın istediği düşünceye sahip olma hakkına sahiptir. Sınırlamalar, düşünceleri açıklama hakkının kullanılmasına ilişkindir.",
+      "explanation": "Maddedeki sınırlama hükmü, düşünceleri açıklama ile bilgi ve fikir araştırma, edinme ve iletme haklarının kullanılmasına yöneliktir. Bu sınırlamalar yasalarda öngörülmeli ve sayılan amaçlar için gerekli olmalıdır.",
+      "articleRefs": [
+        "19"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Medeni ve Siyasi Haklar Sözleşmesi'ne göre hangi propaganda türü yasalarla yasaklanır?",
+      "back": "Her türlü savaş propagandası.",
+      "articleRefs": [
+        "20"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Medeni ve Siyasi Haklar Sözleşmesi'ne göre ulusal, ırksal ya da dinsel nefretin savunulması hangi şekli aldığında yasalarla yasaklanır?",
+      "back": "Ayrımcılık, düşmanlık ya da şiddete kışkırtma şeklini aldığında.",
+      "articleRefs": [
+        "20"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Medeni ve Siyasi Haklar Sözleşmesi'ne göre barışçı toplantı hakkına getirilecek bir sınırlama hangi şartları birlikte taşımalıdır?",
+      "back": "Yasalara uygun olarak konulmuş olmalı ve demokratik bir toplumda sayılan amaçlar bakımından gerekli olmalıdır. Bunların dışında sınırlama getirilemez.",
+      "explanation": "Sayılan amaçlar: ulusal güvenlik, kamu güvenliği, kamu düzeni, kamu sağlığının korunması, genel ahlakın korunması, başkalarının hak ve özgürlüklerinin korunması.",
+      "articleRefs": [
+        "21"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Medeni ve Siyasi Haklar Sözleşmesi'ne göre başkalarıyla bir araya gelip dernek kurma hakkı, kişinin kendi çıkarlarını korumak için hangi hakkı da kapsar?",
+      "back": "Sendikalar kurma ya da bunlara girme hakkını.",
+      "articleRefs": [
+        "22"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Medeni ve Siyasi Haklar Sözleşmesi'ne göre dernek ve sendika hakkının kullanılmasında hangi meslek mensuplarına yasal sınırlamalar konulması engellenmemiştir?",
+      "back": "Silahlı kuvvetler ya da polis teşkilatı mensuplarına.",
+      "explanation": "Genel kural şudur: bu hakka yalnız yasalara uygun olarak konulmuş ve demokratik bir toplumda sayılan amaçlar bakımından gerekli sınırlamalar getirilebilir. Bu kural, anılan meslek mensuplarına yasal sınırlamalar konulmasına engel değildir.",
+      "articleRefs": [
+        "22"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Medeni ve Siyasi Haklar Sözleşmesi'ne göre bir evlilik bağının kurulabilmesi için hangi şart mutlaka aranır?",
+      "back": "Evlenmek niyetinde olan eşlerin tam ve özgür rızası. Bu rıza olmaksızın hiçbir evlilik bağı kurulamaz.",
+      "explanation": "Evlenebilecek yaşta bulunan erkeklerle kadınlara evlenme ve aile kurma hakkı tanınır. Aile, toplumun doğal ve temel birimidir; toplum ve devlet tarafından korunma hakkına sahiptir.",
+      "articleRefs": [
+        "23"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Medeni ve Siyasi Haklar Sözleşmesi'ne göre Taraf Devletler, eşlerin hangi dönemlerde eşit hak ve sorumluluklara sahip olmasını sağlamak için tedbir alır?",
+      "back": "Evlenirken, evlilik süresince ve evliliğin sona ermesinde.",
+      "explanation": "Evlilik sona erdiğinde, çocuklar için gerekli koruyucu hükümler öngörülmesi de sağlanır.",
+      "articleRefs": [
+        "23"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Medeni ve Siyasi Haklar Sözleşmesi'ne göre her çocuk için doğumundan hemen sonra neler güvence altına alınır?",
+      "back": "Nüfus kütüğüne kaydedilmesi ve bir isme sahip olması.",
+      "explanation": "Her çocuğun ayrıca bir vatandaşlık kazanma hakkı vardır.",
+      "articleRefs": [
+        "24"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Medeni ve Siyasi Haklar Sözleşmesi'ne göre her çocuk, hangi statüsünün gerektirdiği koruma tedbirlerinin alınması hakkına sahiptir?",
+      "back": "Reşit olmayan kişi statüsünün gerektirdiği koruma tedbirlerinin alınması hakkına.",
+      "explanation": "Bu hak, ırk, renk, cinsiyet, dil, din, ulusal ya da toplumsal köken, mülkiyet ya da doğum bakımından hiçbir ayrım gözetilmeksizin her çocuğa tanınır.",
+      "articleRefs": [
+        "24"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Medeni ve Siyasi Haklar Sözleşmesi'ne göre yurttaşın oy kullanma ve seçilme hakkı hangi nitelikteki seçimlerde güvence altındadır?",
+      "back": "Genel, eşit ve gizli oyla belirli dönemlerde yapılan gerçek seçimlerde. Bu seçimler, seçmenlerin iradelerini özgürce ortaya koymalarını garanti etmelidir.",
+      "explanation": "Bu hak, her yurttaşa ayrımlara ve makul olmayan kısıtlamalara bağlı olmaksızın tanınır.",
+      "articleRefs": [
+        "25"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Medeni ve Siyasi Haklar Sözleşmesi'ne göre yurttaşın kamu yönetimine katılma hakkı yalnız seçilmiş temsilciler aracılığıyla mı kullanılır?",
+      "back": "Hayır. Her yurttaş kamu yönetimine doğrudan doğruya da katılabilir, özgürce seçilmiş temsilciler aracılığıyla da.",
+      "explanation": "Aynı hüküm, her yurttaşa genel anlamda eşit olarak ülkesinin kamu hizmetlerine girme hak ve fırsatını da tanır.",
+      "articleRefs": [
+        "25"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Medeni ve Siyasi Haklar Sözleşmesi'ne göre yasalar, ayrımcılığa karşı nasıl bir koruma sağlamalıdır?",
+      "back": "Eşit ve etkili koruma. Yasalar ayrıca her türlü ayrımı yasaklar.",
+      "explanation": "Herkes yasalar önünde eşittir ve hiçbir ayrım gözetilmeksizin yasalarca eşit derecede korunur. Hükümde ırk, renk, cinsiyet, dil, din, siyasal ya da başka fikir, ulusal ya da toplumsal köken, mülkiyet, doğum ve diğer statüler örnek olarak anılır.",
+      "articleRefs": [
+        "26"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Medeni ve Siyasi Haklar Sözleşmesi'ne göre etnik, dinsel ya da dil azınlıklarına mensup kişiler, kendi gruplarının diğer üyeleriyle birlikte hangi haklardan yoksun bırakılamaz?",
+      "back": "Kendi kültürlerinden yararlanma, kendi dinlerine inanma ve bu dine göre ibadet etme ya da kendi dillerini kullanma hakkından.",
+      "explanation": "Hüküm, etnik, dinsel ya da dil azınlıklarının bulunduğu devletlerde uygulanır.",
+      "articleRefs": [
+        "27"
+      ]
+    }
+  ]
+}

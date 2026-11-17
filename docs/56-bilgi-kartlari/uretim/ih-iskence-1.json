@@ -1,0 +1,208 @@
+{
+  "deck": {
+    "topicId": "a75768ab-a02a-423a-b7a9-5eac2506bf2a",
+    "legislationSlug": "bm-iskenceye-karsi-sozlesme",
+    "sourceLabel": "AI bilgi kartı — İşkenceye ve Diğer Zalimane, Gayriinsani veya Küçültücü Muamele veya Cezaya Karşı Birleşmiş Milletler Sözleşmesi md Başlangıç, 1–16",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: resmî madde metni + çıkmış sorular)"
+  },
+  "cards": [
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "BM İşkenceye Karşı Sözleşme'nin Başlangıç'ında anılan, işkenceye tabi tutulan kimselerin korunmasına dair Beyanname, Genel Kurul tarafından hangi tarihte kabul edilmiştir?",
+      "back": "9 Aralık 1975'te.",
+      "explanation": "Başlangıç bu Beyanname'yi de dikkate alır. Sözleşme'nin amacı, işkenceye ve diğer zalimane, insanlık dışı veya küçültücü muamele ya da cezaya karşı mücadeleyi bütün dünyada daha etkili kılmaktır.",
+      "articleRefs": [
+        "Başlangıç"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "BM İşkenceye Karşı Sözleşme'nin Başlangıç'ında, işkence yasağını öngören hüküm olarak İnsan Hakları Evrensel Beyannamesi'nin kaçıncı maddesi anılır?",
+      "back": "5. maddesi. Aynı yasak için Uluslararası Medeni ve Siyasi Haklar Sözleşmesi'nin 7. maddesi de anılır.",
+      "explanation": "Anılan iki hüküm, hiç kimsenin işkenceye ya da zalimane, insanlık dışı veya küçültücü muamele veya cezaya tabi tutulmamasını öngörür.",
+      "articleRefs": [
+        "Başlangıç"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "BM İşkenceye Karşı Sözleşme'deki tanıma göre işkence, ne tür bir acı veya ıstırap veren fiildir?",
+      "back": "Fiziksel veya manevi ağır acı ya da ıstırap veren fiil.",
+      "explanation": "Tanım, fiilin bir kamu görevlisiyle ya da bu sıfatla hareket eden başka bir kişiyle bağlantısını da arar.",
+      "articleRefs": [
+        "1"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Yalnızca yasal yaptırımların uygulanmasından doğan acı ve ıstırap, BM İşkenceye Karşı Sözleşme'deki işkence tanımına girer mi?",
+      "back": "Hayır. Yasal yaptırımların uygulanmasından doğan, bunların doğasında bulunan ya da bunlara bağlı olarak ortaya çıkan acı ve ıstırap tanıma girmez.",
+      "explanation": "Tanım, konuda daha geniş kapsamlı hükümler içeren uluslararası belgeleri ve iç hukuku etkilemez.",
+      "articleRefs": [
+        "1"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "BM İşkenceye Karşı Sözleşme'ye göre savaş hâli ya da iç siyasi istikrarsızlık, işkencenin uygulanması için gerekçe gösterilebilir mi?",
+      "back": "Hayır. Hiçbir istisnai durum işkenceye gerekçe gösterilemez: ne savaş hâli ne savaş tehdidi, ne iç siyasi istikrarsızlık ne de başka bir olağanüstü hâl.",
+      "explanation": "Taraf Devlet, yetkisi altındaki ülkelerde işkence olaylarını önlemek için etkili yasal, idari, adli veya başka tedbirleri almakla yükümlüdür.",
+      "articleRefs": [
+        "2"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "BM İşkenceye Karşı Sözleşme'ye göre bir üst görevlinin ya da bir kamu makamının emri, işkenceyi haklı kılan bir gerekçe sayılabilir mi?",
+      "back": "Hayır. Üst görevlinin ya da kamu makamının emri, işkencenin haklılığına gerekçe kabul edilemez.",
+      "explanation": "Aynı maddeye göre hiçbir istisnai durum da işkencenin uygulanması için gerekçe gösterilemez.",
+      "articleRefs": [
+        "2"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "BM İşkenceye Karşı Sözleşme'ye göre Taraf Devlet bir kişiyi hangi devlete geri gönderemez, sınır dışı edemez veya iade edemez?",
+      "back": "Kişinin işkenceye tabi tutulma tehlikesi altında olduğuna dair esaslı sebepler bulunan devlete.",
+      "explanation": "Yetkili makamlar bu sebeplerin bulunup bulunmadığını belirlerken ilgili bütün hususları göz önünde tutar. O devlette insan hakları ihlalleri bulunup bulunmadığı da bu hususlar arasındadır.",
+      "articleRefs": [
+        "3"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "BM İşkenceye Karşı Sözleşme'ye göre Taraf Devlet, işkence eyleminin kendisi dışında hangi fiilleri de ceza kanununda suç saymak zorundadır?",
+      "back": "İşkenceye teşebbüsü ve işkenceye iştirak eden ya da suç ortaklığı yapan kişinin fiilini.",
+      "explanation": "Taraf Devlet bu fiilleri ağırlıklarına uygun yaptırımlarla cezalandırır.",
+      "articleRefs": [
+        "4"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "BM İşkenceye Karşı Sözleşme'ye göre Taraf Devlet, suçun işlendiği yer bakımından işkence suçları üzerinde hangi hâllerde yetkisini kurar?",
+      "back": "Suç kendi yetkisi altındaki ülkelerde ya da o Devlette kayıtlı bir gemi veya uçakta işlenmişse.",
+      "explanation": "Öteki yetki hâlleri şunlardır: sanığın o Devletin uyruğunda olması, mağdurun o Devletin uyruğunda olup Devletin bunu uygun görmesi ve sanığın o Devletin ülkesinde bulunup iade edilmemesi.",
+      "articleRefs": [
+        "5"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "BM İşkenceye Karşı Sözleşme'ye göre işkence mağdurunun kendi uyruğunda olması, Taraf Devlet için yetki kurmayı her durumda zorunlu kılar mı?",
+      "back": "Hayır. Mağdurun uyrukluğuna dayanan yetki, ancak bu Devletin uygun görmesi hâlinde kurulur. Suçun yeri ve sanığın uyrukluğu hâllerinde böyle bir şart aranmaz.",
+      "explanation": "Sözleşme, iç hukuka göre kullanılan herhangi bir ceza yetkisini de dışlamaz.",
+      "articleRefs": [
+        "5"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "BM İşkenceye Karşı Sözleşme'ye göre, ülkesinde bulunan işkence sanığını iade etmeyen Taraf Devlet ne yapmak zorundadır?",
+      "back": "Kovuşturma amacıyla dosyayı kendi yetkili makamlarına iletir.",
+      "explanation": "Bu makamlar, o Devletin kanunlarına göre ciddi nitelikteki başka herhangi bir suçta olduğu gibi karar verir. Kovuşturulan kişiye kovuşturmanın bütün aşamalarında adil muamele güvence altına alınır.",
+      "articleRefs": [
+        "7"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "BM İşkenceye Karşı Sözleşme'ye göre, iadeyi sözleşme şartına bağlayan Taraf Devlet, aralarında iade sözleşmesi bulunmayan başka bir Taraf Devletten talep aldığında bu Sözleşme'yi iadenin hukuki temeli saymak zorunda mıdır?",
+      "back": "Hayır; sayabilir. Bu bir imkândır, zorunluluk değildir. İade ayrıca talep edilen Devletin kanunundaki diğer şartlara tabidir.",
+      "explanation": "Taraf Devletler arasındaki mevcut iade sözleşmelerinde bu suçlar iade edilebilir suç sayılır. Taraf Devletler, aralarında yapacakları her iade sözleşmesine de bu suçları dahil etmeyi üstlenir.",
+      "articleRefs": [
+        "8"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "BM İşkenceye Karşı Sözleşme'ye göre Taraf Devlet, işkence yasağına ilişkin eğitim ve bilgiyi kimlerin eğitim programına koymak zorundadır?",
+      "back": "Sivil veya askeri kanun uygulayıcı personelin, tıbbi personelin ve kamu görevlilerinin. Ayrıca tutuklanan, nezarete alınan veya hapsedilen kişilerin tutuklanması, sorgulanması ya da muamelesiyle ilgilenebilecek diğer kişilerin.",
+      "explanation": "Taraf Devlet bu yasağı, söz konusu kişilerin görev ve yetkilerine ilişkin kurallara ve talimatlara da koyar.",
+      "articleRefs": [
+        "10"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "BM İşkenceye Karşı Sözleşme'ye göre Taraf Devlet, işkence olaylarını önlemek için neleri sistematik biçimde gözden geçirir?",
+      "back": "Tutuklanan, nezarete alınan veya hapsedilen kişilerin tutuklanması ve göreceği muameleyle ilgili düzenlemeleri. Bunlara ilişkin sorgulama kurallarını, talimatları, yöntemleri ve uygulamaları da gözden geçirir.",
+      "explanation": "Yükümlülük, Taraf Devletin yetkisi altındaki ülkeleri kapsar.",
+      "articleRefs": [
+        "11"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "BM İşkenceye Karşı Sözleşme'ye göre, bir işkence eyleminin işlendiğine inanmak için ciddi sebepler varsa Taraf Devletin yetkili makamları nasıl bir soruşturma yürütür?",
+      "back": "Derhal ve tarafsız bir soruşturma yürütür.",
+      "explanation": "Taraf Devlet, yetkisi altındaki ülkelerde ciddi sebeplerin bulunduğu her durumda bu soruşturmanın yürütülmesini sağlar.",
+      "articleRefs": [
+        "12"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "BM İşkenceye Karşı Sözleşme'ye göre işkence şikâyetinde şikâyetçi ve tanıklar, şikâyetleri veya tanıklıkları yüzünden neye karşı korunur?",
+      "back": "Her türlü kötü muameleye ve tehdide karşı. Taraf Devlet bunun için önlem alır.",
+      "explanation": "Taraf Devlet, işkenceye uğradığını ileri süren kişinin yetkili makamlara şikâyet hakkını ve şikâyetinin gecikmeden, tarafsızca incelenmesini sağlar.",
+      "articleRefs": [
+        "13"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "BM İşkenceye Karşı Sözleşme'ye göre işkence eylemi sonucu mağdur ölürse tazminat almaya kimler yetkilidir?",
+      "back": "Mağdurun bakmakla yükümlü olduğu kişiler.",
+      "explanation": "Mağdur, mümkün olan rehabilitasyon imkânlarını da kapsayan adil ve yeterli bir tazminat hakkına sahiptir. Bu hüküm, iç hukuktan doğabilecek tazminat haklarını etkilemez.",
+      "articleRefs": [
+        "14"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "BM İşkenceye Karşı Sözleşme'ye göre Taraf Devlet, işkence yapılarak alındığı tespit edilen bir ifade bakımından neyi sağlamak zorundadır?",
+      "back": "Kural olarak, bu ifadenin kovuşturmalarda delil olarak kabul edilmemesini.",
+      "explanation": "Kural, ifadenin işkence yapılarak alındığının tespit edilmesine bağlıdır.",
+      "articleRefs": [
+        "15"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "BM İşkenceye Karşı Sözleşme'nin hangi maddelerindeki yükümlülükler, işkence derecesine varmayan zalimane, insanlık dışı veya küçültücü muamele ya da cezaya da uygulanır?",
+      "back": "10, 11, 12 ve 13. maddelerdeki yükümlülükler: eğitim, sorgulama kurallarının gözden geçirilmesi, derhal ve tarafsız soruşturma ile şikâyet hakkı.",
+      "explanation": "Taraf Devlet, bu fiillerin bir kamu görevlisi ya da resmî sıfatla hareket eden başka bir kişi tarafından işlenmesini önlemeyi üstlenir. Kamu görevlisinin teşviki ya da açık veya örtülü onayıyla işlenmesi de bu kapsamdadır.",
+      "articleRefs": [
+        "16",
+        "10",
+        "11",
+        "12",
+        "13"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,261 @@
+{
+  "deck": {
+    "topicId": "574c0ca8-c773-4982-9d19-0ff40586a6d7",
+    "legislationSlug": "eskhus",
+    "sourceLabel": "AI bilgi kartı — Ekonomik, Sosyal ve Kültürel Haklara İlişkin Uluslararası Sözleşme md Başlangıç, 1–15",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: resmî madde metni + çıkmış sorular)"
+  },
+  "cards": [
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Ekonomik, Sosyal ve Kültürel Haklar Sözleşmesi'nin Başlangıç kısmına göre, insanlık ailesinin tüm mensuplarının doğuştan sahip oldukları onurun ve eşit ve devredilmez haklarının tanınması neyin temelidir?",
+      "back": "Dünyada özgürlük, adalet ve barışın temelidir.",
+      "explanation": "Başlangıç bu tespiti Birleşmiş Milletler Şartı'nda ilan edilmiş ilkelere dayandırır. Bu hakların kişinin doğuştan sahip olduğu onurundan kaynaklandığını da kabul eder.",
+      "articleRefs": [
+        "Başlangıç"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Ekonomik, Sosyal ve Kültürel Haklar Sözleşmesi'nde kendi kaderini tayin etme hakkı kime tanınır?",
+      "back": "Bütün halklara tanınır. Halklar bu hakla kendi siyasal statülerini özgürce kararlaştırır ve ekonomik, sosyal ve kültürel gelişmelerini özgürce sağlar.",
+      "explanation": "Taraf Devletler bu hakkın gerçekleşmesini kolaylaştırır ve bu hakka saygı gösterir. Özerk olmayan ve vesayet altındaki ülkelerin yönetiminden sorumlu Devletler de buna dahildir.",
+      "articleRefs": [
+        "1"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Ekonomik, Sosyal ve Kültürel Haklar Sözleşmesi'ne göre bir halk, varlığını sürdürmesi için gerekli olan kendi olanaklarından yoksun bırakılabilir mi?",
+      "back": "Hayır. Bir halk hiçbir durumda bu olanaklardan yoksun bırakılamaz.",
+      "explanation": "Halklar kendi doğal zenginlik ve kaynaklarından özgürce yararlanır. Bunu, karşılıklı yarar ilkesine dayanan uluslararası ekonomik işbirliğinden ve uluslararası hukuktan doğan yükümlülüklerine zarar vermeden yaparlar.",
+      "articleRefs": [
+        "1"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Ekonomik, Sosyal ve Kültürel Haklar Sözleşmesi'ne göre Taraf Devlet, tanınan hakların tam olarak kullanılması bakımından neyi taahhüt eder?",
+      "back": "Bu hakların tam olarak kullanılmasını aşamalı olarak sağlamak amacıyla tedbir almayı taahhüt eder. Bunun için mevcut kaynakların azamisini kullanır ve yasal düzenleme dahil her türlü uygun yönteme başvurur.",
+      "explanation": "Devlet bu tedbirleri hem tek başına hem de uluslararası yardım ve işbirliği yoluyla alır. İşbirliğinde ekonomik ve teknik alan önde gelir.",
+      "articleRefs": [
+        "2"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Ekonomik, Sosyal ve Kültürel Haklar Sözleşmesi'ndeki haklar hangi bakımlardan ayrım gözetilmeksizin uygulanır?",
+      "back": "Irk, renk, cinsiyet, dil, din, siyasal ya da başka fikir, ulusal ya da toplumsal köken, mülkiyet, doğum ya da başka bir statü bakımından.",
+      "explanation": "Taraf Devletler bu ayrım gözetmeme ilkesini taahhüt eder. Sayım \"başka bir statü\" ifadesiyle biter.",
+      "articleRefs": [
+        "2"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Ekonomik, Sosyal ve Kültürel Haklar Sözleşmesi'ne göre gelişmekte olan ülkeler, hangi hakları yabancılara hangi ölçüde vereceklerini belirleyebilir?",
+      "back": "Sözleşme'de tanınan ekonomik hakları. Bunu insan haklarını ve kendi ulusal ekonomilerini dikkate alarak belirlerler.",
+      "explanation": "Hükmün öznesi gelişmekte olan ülkeler, konusu Sözleşme'de tanınan ekonomik haklardır.",
+      "articleRefs": [
+        "2"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Ekonomik, Sosyal ve Kültürel Haklar Sözleşmesi'ne göre Taraf Devletler, Sözleşme'deki hakları kullanmada kimlere eşit hak sağlamakla yükümlüdür?",
+      "back": "Kadınlarla erkeklere. Eşitlik, Sözleşme'de belirtilen bütün ekonomik, sosyal ve kültürel haklarda sağlanır.",
+      "articleRefs": [
+        "3"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Ekonomik, Sosyal ve Kültürel Haklar Sözleşmesi'ne göre Devlet, yasada öngörmek kaydıyla, bir hakkı o hakkın niteliğiyle bağdaşmayacak ölçüde sınırlayabilir mi?",
+      "back": "Hayır. Sınırlama ancak yasanın belirlediği ölçüde ve hakların niteliğiyle bağdaştığı ölçüde yapılabilir. Amacı da yalnızca demokratik bir toplumda genel refahın arttırılması olabilir.",
+      "explanation": "Bu şartlar birlikte aranır: yasallık, hakkın niteliğiyle bağdaşma ve demokratik toplumda genel refah amacı. Biri eksikse sınırlama Sözleşme'ye uygun olmaz.",
+      "articleRefs": [
+        "4"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Bir ülkede kanun, sözleşme, yönetmelik ya da teamülle tanınmış bir temel insan hakkı, Ekonomik, Sosyal ve Kültürel Haklar Sözleşmesi'nin bu hakkı daha az ölçüde tanıdığı gerekçesiyle sınırlanabilir mi?",
+      "back": "Hayır. Bu gerekçeyle sınırlanamaz ve kaldırılamaz.",
+      "explanation": "Sözleşme bir hakkı hiç tanımasa ya da daha az ölçüde tanısa da, ülkede var olan temel insan hakları korunur. Ayrıca Sözleşme'nin hiçbir hükmü; bir Devlete, gruba ya da kişiye, Sözleşme'de tanınan hak ve özgürlükleri ortadan kaldırmaya ya da Sözleşme'de öngörülenden daha geniş ölçüde sınırlamaya yönelik bir eyleme girişme hakkı verir biçimde yorumlanamaz.",
+      "articleRefs": [
+        "5"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Ekonomik, Sosyal ve Kültürel Haklar Sözleşmesi'nde tanınan çalışma hakkı herkese hangi fırsatı verir?",
+      "back": "Serbestçe seçtiği ya da kabul ettiği bir işte çalışarak hayatını kazanma fırsatını verir.",
+      "explanation": "Taraf Devletler bu hakkı tanır ve korunması için gerekli tedbirleri alır. Tedbirler teknik ve mesleki rehberlik ile eğitim programlarını içermelidir. Tam ve üretken istihdamı sağlamaya yönelik politika ve teknikler de bunlara dahildir.",
+      "articleRefs": [
+        "6"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Ekonomik, Sosyal ve Kültürel Haklar Sözleşmesi'nde, adil ve elverişli çalışma koşullarından yararlanma hakkı kapsamında kadınlara hangi güvence verilir?",
+      "back": "Çalışma koşullarının erkeklerin koşullarından daha aşağı olmayacağı güvencesi verilir. Aynı iş için aynı ücreti alacakları da güvence altındadır.",
+      "explanation": "Bu güvence, bütün işçilere emeklerine karşılık asgari olarak sağlanacak adil ücret ve eşit işlere hiçbir ayrım yapılmaksızın eşit ödeme hükmünün devamıdır. Aynı bentte işçilere ve ailelerine saygın bir yaşam düzeyi sağlayacak ücret de güvence altındadır.",
+      "articleRefs": [
+        "7"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Ekonomik, Sosyal ve Kültürel Haklar Sözleşmesi'ne göre işyerinde uygun bir üst kademeye yükselme yalnızca kıdem esasına göre mi yapılır?",
+      "back": "Hayır. Yükselme yalnızca kıdem ve yeterlilik esaslarına göre yapılır. Herkese bu konuda eşit olanak tanınır.",
+      "explanation": "Ölçüt kıdem ile yeterliliğin birlikte aranmasıdır. Bu güvence, adil ve elverişli çalışma koşullarından yararlanma hakkının parçasıdır.",
+      "articleRefs": [
+        "7"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Ekonomik, Sosyal ve Kültürel Haklar Sözleşmesi'nde adil ve elverişli çalışma koşulları hakkı, dinlenme ve tatil bakımından neleri güvence altına alır?",
+      "back": "Dinlenme, boş zaman, çalışma saatlerinin makul ölçülerde sınırlanması, ücretli dönemsel tatiller ve resmi tatillerde ücret verilmesi.",
+      "explanation": "Aynı hak güvenli ve sağlıklı çalışma koşullarını da güvence altına alır.",
+      "articleRefs": [
+        "7"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Ekonomik, Sosyal ve Kültürel Haklar Sözleşmesi'ne göre dilediği sendikaya girme hakkı yalnızca neye bağlı olarak kullanılır?",
+      "back": "Yalnızca ilgili örgütün kurallarına bağlı olarak kullanılır.",
+      "explanation": "Sendika kurma ve girme hakkına yalnız yasalarda belirtilen sınırlamalar getirilebilir. Bu sınırlamalar demokratik bir toplumda ulusal güvenlik ve kamu düzeni menfaati ya da başkalarının hak ve özgürlüklerinin korunması bakımından gerekli olmalıdır.",
+      "articleRefs": [
+        "8"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Ekonomik, Sosyal ve Kültürel Haklar Sözleşmesi, sendika ve grev haklarının polis mensuplarınca kullanılmasına yasal kısıtlama getirilmesine engel olur mu?",
+      "back": "Hayır. Sözleşme, bu hakların silahlı kuvvetler, polis ya da devlet yönetiminin mensuplarınca kullanılmasına yasal kısıtlamalar getirilmesine engel olmaz.",
+      "explanation": "Bu mensuplar için getirilecek kısıtlama yasal olmalıdır. Hüküm, maddede sayılan sendika haklarını da grev hakkını da kapsar.",
+      "articleRefs": [
+        "8"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Ekonomik, Sosyal ve Kültürel Haklar Sözleşmesi grev hakkını hangi kayıtla güvence altına alır?",
+      "back": "Her ülkenin yasalarına uygun olarak kullanılmak kaydıyla.",
+      "explanation": "Taraf Devletler grev hakkını güvence altına almakla yükümlüdür. Aynı maddede sendika kurma, dilediği sendikaya girme ve sendikaların özgürce faaliyette bulunma hakları da güvence altındadır.",
+      "articleRefs": [
+        "8"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Ekonomik, Sosyal ve Kültürel Haklar Sözleşmesi, sosyal güvenlik hakkını tanırken hangi unsuru açıkça bu hakka dahil eder?",
+      "back": "Sosyal sigortayı. Taraf Devletler herkesin sosyal sigorta dahil sosyal güvenlik hakkını tanır.",
+      "articleRefs": [
+        "9"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Ekonomik, Sosyal ve Kültürel Haklar Sözleşmesi'ne göre çalışan anneler, doğumdan önce ve sonraki özel koruma döneminde hangi izinden yararlanmalıdır?",
+      "back": "Ücretli izinden ya da yeterli sosyal güvenlik tedbirlerini kapsayan izinden yararlanmalıdır.",
+      "explanation": "Annelere doğumdan önce ve sonra makul bir süreyle özel koruma sağlanmalıdır. İzin bu dönem içindir.",
+      "articleRefs": [
+        "10"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Ekonomik, Sosyal ve Kültürel Haklar Sözleşmesi'ne göre Devletler, çocukların ücretli olarak çalıştırılması konusunda ne yapmalıdır?",
+      "back": "Yaş sınırları koymalıdır. Çocukların bu sınırların altında ücretli çalıştırılmasını da yasalarla yasaklamalı ve cezalandırmalıdır.",
+      "explanation": "Çocuklar ve gençler ekonomik ve sosyal sömürüden korunmalıdır. Bazı işlerde çalıştırılmaları yasalarla cezalandırılmalıdır: ahlaki değerlerine ya da sağlıklarına zararlı olabilecek, hayatlarını tehlikeye sokabilecek ya da normal gelişmelerini engelleyebilecek işler.",
+      "articleRefs": [
+        "10"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Ekonomik, Sosyal ve Kültürel Haklar Sözleşmesi'ne göre yeterli bir yaşam düzeyine sahip olma hakkı hangi unsurları açıkça kapsar?",
+      "back": "Yeterli beslenme, giyim ve konutu kapsar. Hak, kişinin kendisi ve ailesi için tanınır.",
+      "explanation": "Hak, yaşam koşullarını sürekli geliştirmeyi de içerir. Taraf Devletler herkesin açlıktan kurtulma temel hakkını kabul eder. Hür rızaya dayalı uluslararası işbirliğinin temel önemini de kabul ederler.",
+      "articleRefs": [
+        "11"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Ekonomik, Sosyal ve Kültürel Haklar Sözleşmesi'ne göre herkes, sağlık bakımından hangi standarda sahip olma hakkına sahiptir?",
+      "back": "Ulaşılabilecek en yüksek fiziksel ve zihinsel sağlık standardına sahip olma hakkına sahiptir.",
+      "explanation": "Tedbirlerin amaçları arasında ölü doğum ve çocuk ölümleri oranlarının düşürülmesi vardır. Salgın, yöresel, mesleki ve diğer hastalıkların önlenmesi, tedavisi ve kontrolü de bunlardandır. Hastalık durumunda herkese tıbbi hizmet ve tıbbi bakım sağlayacak koşulların yaratılması da bu amaçlar arasındadır.",
+      "articleRefs": [
+        "12"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Ekonomik, Sosyal ve Kültürel Haklar Sözleşmesi'ne göre ilköğretim nasıl olacaktır?",
+      "back": "Herkes için zorunlu ve parasız olacaktır.",
+      "explanation": "İlköğretim görmemiş ya da ilköğretimi tamamlamamış olanlar için temel eğitim elden geldiğince teşvik edilir veya yoğunlaştırılır.",
+      "articleRefs": [
+        "13"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Ekonomik, Sosyal ve Kültürel Haklar Sözleşmesi'ne göre yüksek öğretim herkes için zorunlu ve parasız mıdır?",
+      "back": "Hayır. Zorunlu ve parasız olan ilköğretimdir. Yüksek öğretim, özellikle parasız eğitimin aşamalı olarak geliştirilmesi yoluyla, kişisel yetenek temelinde herkese eşit derecede açık olur.",
+      "explanation": "Orta öğretim, teknik ve mesleki eğitim dahil, her türlü uygun yöntemle ve özellikle parasız eğitimin aşamalı olarak yaygınlaştırılması yoluyla herkes için açık ve ulaşılabilir kılınır.",
+      "articleRefs": [
+        "13"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Ekonomik, Sosyal ve Kültürel Haklar Sözleşmesi'ne taraf olduğu tarihte zorunlu ve parasız ilköğretim sistemini sağlayamamış Devlet, ayrıntılı eylem planını ne kadar süre içinde kabul etmekle yükümlüdür?",
+      "back": "Taraf olma tarihini izleyen iki yıl içinde kabul etmekle yükümlüdür. Planın amacı, herkes için zorunlu parasız ilköğretim ilkesinin aşamalı olarak uygulanmasıdır.",
+      "articleRefs": [
+        "14"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Ekonomik, Sosyal ve Kültürel Haklar Sözleşmesi'ne göre kişinin kendisinin yarattığı bilimsel, edebi ya da sanatsal üründen doğan hangi çıkarları korunur?",
+      "back": "Maddi ve manevi çıkarları korunur.",
+      "explanation": "Aynı madde kültürel yaşama katılma hakkını tanır. Bilimsel ilerlemeden ve uygulamalarından yararlanma hakkı da bu maddededir. Taraf Devletler bilimsel araştırma ve yaratıcı faaliyetler için gerekli özgürlüğe saygı göstermekle yükümlüdür.",
+      "articleRefs": [
+        "15"
+      ]
+    }
+  ]
+}
