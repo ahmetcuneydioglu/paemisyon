@@ -1,0 +1,441 @@
+{
+  "unit": {
+    "slug": "pasap-pasaport-verilmesi-yasaklar-ve-ceza-hukumleri",
+    "legislationSlug": "5682-sayili-pasaport-kanunu",
+    "topicId": "baaa49b6-e1cc-410a-9391-3ea8c36e2a49",
+    "title": "Pasaportların verilmesi, yasaklar ve ceza hükümleri",
+    "subtitle": "Pasaportu kim verir, kime verilmez, pasaportsuz girene ne yaptırım uygulanır",
+    "articleFrom": "15",
+    "articleTo": "34",
+    "readingMinutes": 12,
+    "sourceLabel": "AI özeti — 5682 Sayılı Pasaport Kanunu, md 15–23, 27, 34",
+    "articleNos": [
+      "15",
+      "16",
+      "17",
+      "18",
+      "19",
+      "20",
+      "21",
+      "22",
+      "23",
+      "27",
+      "34"
+    ],
+    "generatedBy": "claude-opus-5-5 (ozet-uret.ts)",
+    "sortOrder": 2
+  },
+  "blocks": [
+    {
+      "type": "concept",
+      "title": "Pasaportu kim verir?",
+      "body": "Türk vatandaşıysan umuma mahsus münferit ya da umuma mahsus müşterek pasaportunu yurt içinde **İçişleri Bakanlığı** verir. İçişleri Bakanı yetki verirse **valilikler** de verebilir. Yurt dışındaysan başvuracağın yer **Türkiye Cumhuriyeti konsoloslukları**dır. Bu işte Dışişleri Bakanlığının ya da Emniyet Genel Müdürlüğünün tek başına yetkisi yoktur.",
+      "articleRefs": [
+        "15"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Umuma mahsus pasaport: refakat hanesi ve süreler",
+      "body": "**Refakat hanesi:** Pasaport sahibi talep ederse reşit olmayan **kız ve erkek çocukları** pasaportun refakat hanesine kaydolunur.\n- Refakat hanesine yazılı olanlar, pasaport sahibinin **beraberinde bulunmadıkça** o pasaportla seyahat edemez.\n\n**Geçerlilik:** Umuma mahsus münferit pasaportlar, Kanundaki istisnalar saklı kalmak kaydıyla **altı aydan az olmamak** üzere İçişleri Bakanlığınca belirlenecek sürelerle düzenlenir.\n\n**Dönüş kolaylığı:** Askerlik hizmeti için celp edilenlerin ve yabancı memlekette yoksul kaldığı sabit olan Türk vatandaşlarının pasaportları, Türkiye'ye dönüşleri için **bir ay** uzatılır. Pasaportu olmayana **bir ay** süreli seyahat belgesi verilir.",
+      "articleRefs": [
+        "15"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Refakat hanesindeki çocuk tek başına gidebilir mi?",
+      "body": "Hayır. Kanuni temsilcinin muvafakati, valilik izni ya da bir ay süreli seyahat belgesi bu kuralı aşmaz. Çocuk pasaport sahibinin **beraberinde değilse** o pasaportla seyahat edemez. Şıklarda sık rastlanan iki çarpıtma daha var:\n- Kayıt yalnız erkek çocuklar için değildir; kanun **kız ve erkek** çocukları birlikte sayar.\n- Kaydı başlatan şey **pasaport sahibinin talebidir**. Maddede Bakanlık izni ya da konsolosluk kütüğü gibi ek bir şart aranmaz.",
+      "articleRefs": [
+        "15"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Umuma mahsus müşterek pasaport",
+      "body": "**Kime:** Toplu hâlde yolculuk etmek isteyen ve **en az 5 kişilik** bir kafile oluşturan Türk vatandaşlarına, **istedikleri takdirde** verilir.\n\n**Süre:** Verildiği tarihten itibaren **3 ay, 6 ay ve 1 yıl** geçerli olmak üzere düzenlenir.\n\n**Şekil:** Münferit pasaport gibi düzenlenir. Kafiledekilerin fotoğraflarını içeren bir liste eklenir.\n\n**Kafileden ayrılan:** Ayrıca pasaport almak zorundadır.\n\n**Harçsız olanlar:**\n- Seyahati Türkiye için kültürel, ticari veya sosyal bir menfaat sağlayacağı sabit olanlar,\n- **Milli Eğitim Bakanlığının müsaadesiyle** ilmi tetkik yapmak ya da yabancı memleketlerdeki spor temas ve müsabakalarına katılmak üzere kafile hâlinde gezi yapacak öğretmen, öğrenci ve sporcular.",
+      "articleRefs": [
+        "16"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Müşterek pasaportta kaydırılmış süreler",
+      "body": "Süre seçenekleri üç tanedir: **3 ay, 6 ay, 1 yıl**. Şıklarda bu dizinin bir basamak kaydırılmış hâli çıkar; örneğin üst uçta iki yıl. Dikkat etmen gereken diğer noktalar:\n- Müşterek pasaport **isteğe bağlıdır**. Kafileye zorla verilmez, münferit pasaport almayı da yasaklamaz.\n- Kafile şartı vardır. \"Aynı aileden olmak\" tek başına yetmez.\n- Kafileden ayrılan kişi pasaportun suretiyle ya da kafile başkanının izniyle yoluna devam edemez; **ayrıca pasaport alır**.\n- Öğretmen, öğrenci ve sporcu kafilelerinin harç muafiyetinde müsaade **Milli Eğitim Bakanlığından** alınır, İçişleri ya da Dışişleri Bakanlığından değil.",
+      "articleRefs": [
+        "16"
+      ]
+    },
+    {
+      "type": "numbers",
+      "title": "Sayılar: md 15–16",
+      "rows": [
+        {
+          "label": "Müşterek pasaport için asgari kafile",
+          "value": "5 kişi",
+          "refs": [
+            "16"
+          ]
+        },
+        {
+          "label": "Müşterek pasaport geçerlilik süreleri",
+          "value": "3 ay / 6 ay / 1 yıl",
+          "refs": [
+            "16"
+          ]
+        },
+        {
+          "label": "Münferit pasaport geçerliliği (alt sınır)",
+          "value": "altı ay",
+          "refs": [
+            "15"
+          ]
+        },
+        {
+          "label": "Celp edilen veya yoksul kalan vatandaşın pasaport uzatması",
+          "value": "bir ay",
+          "refs": [
+            "15"
+          ]
+        },
+        {
+          "label": "Pasaportu olmayana verilen dönüş seyahat belgesi",
+          "value": "bir ay",
+          "refs": [
+            "15"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "15",
+        "16"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Başvuru, reşit olmayanlar ve yabancı velayet kararları",
+      "body": "**A)** Umuma mahsus pasaport için başvuru yerlerini ve istenecek belgeleri **İçişleri Bakanlığı** tespit eder.\n- Yurt dışında kayıtlı olduğun konsolosluğa başvurursan pasaport, **konsolosluk kütüğündeki kayıtlar** esas alınarak verilir.\n- Başka bir konsolosluğa başvuran kişi tabiiyet ilmühaberi ya da eski pasaportu dışında nüfus tezkeresini de ibraz etmezse, o konsolosluk pasaportun verilmesini gerekli gördüğü tahkikata bağlayabilir.\n\n**C)** Reşit olmayanlar ve mahcurlar **yalnız seyahat** için pasaport alacaksa, **kanuni mümessillerinin muvafakatini içeren, resmi bir makamdan tasdikli vesika** ibraz etmek zorundadır.\n\n**E)** Yabancı ülke adli veya idari makamlarının verdiği velayet ya da vesayet kararları, **kararın verildiği ülkedeki** Türkiye Cumhuriyeti dış temsilciliklerine yapılan pasaport başvurularında **kabul edilebilir**.",
+      "articleRefs": [
+        "17"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Muvafakat belgesi ve yabancı karar",
+      "body": "Yalnız seyahat edecek reşit olmayan için aranan belge mahkeme kararı, nüfus müdürlüğü belgesi ya da mülki amir onayı değildir. Aranan belge, **kanuni mümessilin muvafakatini içeren tasdikli vesika**dır.\nYabancı velayet ya da vesayet kararında iki inceliğe dikkat et:\n- Bu kararlar Türkiye'deki her başvuruda değil, yalnız **kararın verildiği ülkedeki dış temsilcilikte** geçer.\n- Kanunun ifadesi \"kabul edilebilir\" şeklindedir. Ne \"hiç kabul edilmez\" denir ne de \"her başvuruda ayrı Bakanlık onayı\" aranır.\n\nBaşvuru yerlerini ve belgeleri **İçişleri Bakanlığı** belirler. Valilik, Emniyet Genel Müdürlüğü ya da iki bakanlığın ortak kararı bu yetkiye sahip değildir.",
+      "articleRefs": [
+        "17"
+      ]
+    },
+    {
+      "type": "concept",
+      "title": "\"Yabancılara mahsus\" damgalı pasaport",
+      "body": "Bu pasaport, tabiiyetsiz olanlara ve tabiiyet durumu düzensiz olduğu için fiilen tabiiyetsiz muamelesi görmesinde **İçişleri Bakanlığınca zaruret görülen** kişilere, gerektiğinde yine bu Bakanlığın **kararıyla** verilir. Pasaportun üzerindeki damga bir uyarı niteliğindedir: Belge Türk vatandaşlığını kazanma bakımından hiçbir anlam taşımaz ve hamili lehine **hiçbir hak kazanımı doğurmaz**. Yurt dışında yoksul kalan Türk vatandaşının dönüş belgesiyle de karıştırma; o konu md 15'in alanıdır.",
+      "articleRefs": [
+        "18",
+        "15"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Yabancılara mahsus pasaportun iki nevi",
+      "body": "**A) Tek giriş veya tek çıkış için:**\n- Girişte, Türkiye'ye girişle geçerliliği sona erer. Çıkışta, şerhte yazılı memlekete varışla sona erer.\n- Sahibi, pasaportu verilişinden itibaren **bir ay içinde** bulunduğu memleketi terk ederek kullanmak zorundadır. Kullanmazsa pasaportun yenilenmesi gerekir.\n- Geçerliliğini yitirmesinin üzerinden **iki ay** geçmişse yenileme **İçişleri Bakanlığının kararına** bağlıdır.\n\n**B) Bir gidiş ve geliş için:**\n- **Üç aydan az olmamak** kaydıyla İçişleri Bakanlığının takdir ettiği süre için düzenlenir.\n\n**Kim verir:** Yurt içinde İçişleri Bakanlığı verir. Yabancı memlekette ise Türkiye Cumhuriyeti konsolosluk makamları verir; bunun için İçişleri Bakanlığının talebi veya tasvibi üzerine **Dışişleri Bakanlığının talimatı** gerekir.\n\n**Fotoğraf:** Pasaportta sahibinin ve varsa refakat hanesindekilerin birer kıta fotoğrafı bulunur.",
+      "articleRefs": [
+        "18"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Yabancılara mahsus pasaportta karışan yerler",
+      "body": "Süreleri birbirine karıştırma:\n- **Bir ay**, A neviinin kullanılması gereken süredir.\n- **İki ay**, yenilemenin İçişleri Bakanlığı kararına bağlandığı eşiktir.\n- **Üç ay**, B neviinin asgari geçerlilik süresidir.\n\nŞıklarda sık çıkan diğer yanlışlar:\n- Konsolosluk bu pasaportu bulunduğu ülkenin muvafakatiyle **doğrudan düzenleyemez**. Dışişleri Bakanlığının talimatı gerekir, bu talimat da İçişleri Bakanlığının talebine ya da tasvibine dayanır.\n- Pasaportun verilmesine Dışişleri Bakanlığı karar vermez; **İçişleri Bakanlığı** karar verir.\n- Refakat hanesindekiler pasaport sahibinden **ayrı seyahat edemez**. Eş de kocasıyla aynı tabiiyet durumundaysa refakat hanesine yazılabilir.",
+      "articleRefs": [
+        "18"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Pasavan ve benzeri belgeler",
+      "body": "**Kime ve nerede:** **Türk vatandaşlarına**, Türkiye Cumhuriyeti ile **hemhudut memleketlerin hudut mıntıkaları** içinde pasaport yerine kullanılmak üzere verilir.\n\n**Usul:** Belgenin şeklini, veriliş tarzını, geçerlilik süresini ve kimlere verileceğini, ilgili Devletlerle yapılmış ya da yapılacak anlaşmalara uygun olarak **İçişleri ve Dışişleri Bakanlıkları müştereken** tespit eder.\n\n**Harç:** Bu belgeler pasaport harcına tabi değildir. **Hususi tarifelerine göre** resme ve harca tabidir.",
+      "articleRefs": [
+        "19"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Mürettebat belgeleri",
+      "body": "**Mürettebata verilen belgeler:**\n- Türkiye karasuları dışına çıkan Türk gemilerinin Türk vatandaşı olan mürettebatına **bölge liman ve deniz işleri müdürlükleri** fotoğraflı \"Gemiadamı Cüzdanı\" düzenler.\n- Havayolu uluslararası ulaşım araçlarının memur ve mürettebatına **idareleri**, anlaşmalardaki örneğe uygun olarak fotoğraflı \"Uçak Mürettebatı Belgesi\" düzenler.\n- Demiryolu uluslararası ulaşım araçlarının memur ve mürettebatına **anlaşmalarda öngörülen yetkili makamlar** fotoğraflı \"Demiryolu Personeli Kimlik Belgesi\" düzenler.\n\n**Şartlar:**\n- Demiryolu personeli kimlik belgesi, anlaşmalarda öngörülen yetkili makamlarca **tasdik edilmedikçe** pasaport yerine kullanılamaz.\n- Gemiadamı cüzdanı ve uçak mürettebatı belgesi düzenleyen kurumlar, ilgililerin **22. madde kapsamındaki durumunu** yetkili merciden teyit etmek zorundadır.\n- Gemiadamları ve uçak mürettebatına verilecek belgelerin şeklini ve muhtevasını **İçişleri, Dışişleri ve Ulaştırma Bakanlıkları** müştereken tespit eder.\n\n**Yabancı mürettebat:** Usulüne uygun vesikalarıyla Türk karasularına ve liman şehirlerine **karşılıklılık esasına** göre girip çıkar.",
+      "articleRefs": [
+        "20",
+        "22"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Pasavan, mürettebat belgesi ve md 21 atfı",
+      "body": "Bu konuda sık yapılan hatalar şunlar:\n- Pasavan yabancılara verilmez ve tüm ülkelerde geçmez. **Türk vatandaşına**, yalnız **hemhudut ülkelerin hudut mıntıkasında** geçerli olarak verilir.\n- Pasavan harçsız değildir. Pasaport harcına da tabi değildir; **hususi tarifeye** tabidir.\n- Demiryolu kimlik belgesi için \"hiçbir hâlde pasaport yerine geçmez\" ifadesi yanlıştır. **Tasdik edilirse** pasaport yerine kullanılabilir.\n- Gemi ve uçak mürettebatı belgesinin şekli konusunda üçlü yetki **İçişleri**, Dışişleri ve Ulaştırma Bakanlıklarına aittir. Sağlık, Ticaret ya da Maliye bakanlıkları bu üçlüde yer almaz.\n- Gemiadamı cüzdanını sahil güvenlik, emniyet ya da gümrük düzenlemez; **bölge liman ve deniz işleri müdürlükleri** düzenler.\n- **md 21:** 19. ve 20. maddelerdeki vesikalar verilirken **7, 17 ve 22. maddeler** de uygulanır. Bu ünitede 17. madde başvuru şartlarını, 22. madde ise pasaport verilmeyecek hâlleri düzenler.",
+      "articleRefs": [
+        "19",
+        "20",
+        "21",
+        "17",
+        "22"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Kime pasaport verilmez?",
+      "body": "**Pasaport veya seyahat vesikası verilmeyecek olanlar:**\n- Yurt dışına çıkmaları **mahkemelerce yasaklananlar**,\n- Terör örgütlerine aidiyeti, iltisakı veya irtibatı belirlenen yurt dışındaki eğitim, öğretim ve sağlık kuruluşlarının, vakıf, dernek veya şirketlerin **kurucusu ve yöneticisi olduğu veya bu yerlerde çalıştığı İçişleri Bakanlığınca tespit edilenler**.\n\n**İstisna:** Yabancı memleketlere gitmesi **mahkemelerce yasaklananlar dışında** kalanlara, zaruri hâllerde **Cumhurbaşkanının onayıyla** pasaport veya pasaport yerine geçen seyahat vesikası verilebilir.\n\n**Sonuç:** Bu kişilerin yurt dışına çıkışı engellenir, kendilerine pasaport veya vesika verilmez, verilmişse geri alınır.",
+      "articleRefs": [
+        "22"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Tahdit bildirim zinciri",
+      "body": "**Birinci adım:** İlgili daireler, kişinin **açık kimliğini** ve **tahdit sebebini** mahallin polis makamlarına bildirir. Açık kimlik şunlardan oluşur:\n- adı, soyadı,\n- doğum yeri ve tarihi,\n- ana ve baba adı,\n- nüfusa kayıtlı olduğu yer.\n\n**İkinci adım:** Polis makamları bu bilgileri alır almaz **bağlı bulundukları il emniyet müdürlüğü kanalıyla**, en seri haberleşme aracıyla ve **yazılı olarak** şu yerlere bildirir:\n- hudut kapısı bulunan emniyet müdürlükleri,\n- şahsın nüfusa kayıtlı olduğu il emniyet müdürlüğü,\n- Emniyet Genel Müdürlüğü.",
+      "articleRefs": [
+        "22"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Yenilenmeyen pasaport, kayıp ve sınır dışı",
+      "body": "**Süresi dolan pasaport:** Aşağıdaki kişilerin süresi dolan pasaportları **yenilenmez**; bunun yerine kendilerine **Türkiye'ye dönmeleri için seyahat vesikası** verilir:\n- pasaport verilmesi veya yurt dışına çıkması yasaklananlar,\n- yurt dışında kalmalarında **genel güvenlik bakımından mahzur** bulunduğu tespit edilenler.\n\n**Kayıp ve sınır dışı:** Pasaportunu veya pasaport yerine geçen vesikasını kaybedip bunu haklı bir sebebe dayandıramayanlara ya da bulundukları ülkeden sınır dışı edilenlere, **çıkarılış sebepleri göz önünde tutularak** pasaport veya vesika **verilmeyebilir**.",
+      "articleRefs": [
+        "22"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "md 22'de \"verilmez\" ile \"verilmeyebilir\" farkı",
+      "body": "Sınır dışı edilen ya da pasaportunu haklı sebep olmadan kaybeden kişi için kanun **\"verilmeyebilir\"** der. Bu bir takdir yetkisidir; \"hiçbir surette verilmez\" ya da \"sınır dışı edilmiş olması dikkate alınamaz\" ifadeleri yanlıştır. Cumhurbaşkanı onayı da burada aranmaz.\nŞu noktalara da dikkat et:\n- Genel güvenlik bakımından mahzurlu kişi belgesiz bırakılmaz; ona **dönüş için seyahat vesikası** verilir.\n- Terör bağlantılı kuruluşlar bakımından kapsam **kurucu, yönetici ve çalışanları** içerir. Tespiti Dışişleri Bakanlığı değil, **İçişleri Bakanlığı** yapar.\n- Polise bildirilen bilgiler arasında **yurt dışı adresi yoktur**.\n- Bildirim valilik, kaymakamlık ya da doğrudan Emniyet Genel Müdürlüğü üzerinden yapılmaz; **il emniyet müdürlüğü kanalıyla** yapılır.",
+      "articleRefs": [
+        "22"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Toplu seyahat yasağı ve ülke sınırlı pasaport",
+      "body": "**Cumhurbaşkanının yetkisi:** Harp tehlikesi ya da memleket güvenliğine veya sağlık durumuna dokunan diğer olağanüstü hâller dolayısıyla Türk vatandaşlarının yabancı memleketlere gitmesini **kısmen veya tamamen men edebilir**. Siyasi ve ekonomik mülahazalarla **yalnız belli ülkeler için geçerli** pasaport düzenlenmesine de karar verebilir.\n\n**Yurt dışındaki makamların yetkisi:** Yurt dışında pasaport vermeye yetkili Türk makamları, aşağıdaki sebeplerle ve **Dışişleri Bakanlığının talimatı veya muvafakatiyle** pasaportları yalnız belli memleketlere gitmek için geçerli olacak şekilde düzenleyebilir:\n- harp tehlikesi,\n- yabancı memleketlerde çıkabilecek dahili karışıklıklar,\n- salgın hastalıklar,\n- siyasi veya ekonomik nedenler.\n\n**Dikkat:** Men yetkisi İçişleri Bakanlığına, Dışişleri Bakanlığına ya da valiliklere değil, **Cumhurbaşkanına** aittir.",
+      "articleRefs": [
+        "23"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Vize muafiyeti ve pasaportsuz giriş cezası",
+      "body": "**md 27:** Yabancıların aşağıdaki pasaportlarına verilen vizeler **hiçbir harca veya resme tabi değildir**:\n- diplomatik pasaportlar,\n- bu Kanundaki hususi ve servis damgalı pasaportlara karşılık gelen pasaportlar.\n\nMaddede bu muafiyete bağlanmış başka bir şart sayılmaz.\n\n**md 34:** Türkiye Cumhuriyeti sınırlarından her nasılsa **pasaportsuz girmiş vatandaşlara** **bin TL'den üç bin TL'ye kadar idarî para cezası** verilir. Yaptırım hapis cezası, adli para cezası, vatandaşlıktan çıkarma ya da sınır dışı etme değildir.",
+      "articleRefs": [
+        "27",
+        "34"
+      ]
+    },
+    {
+      "type": "numbers",
+      "title": "Sayılar: md 18 ve md 34",
+      "rows": [
+        {
+          "label": "Yabancılara mahsus pasaport nevi sayısı",
+          "value": "2",
+          "refs": [
+            "18"
+          ]
+        },
+        {
+          "label": "A nevi: kullanma süresi (verilişten itibaren)",
+          "value": "1 ay",
+          "refs": [
+            "18"
+          ]
+        },
+        {
+          "label": "A nevi: yenilemenin İçişleri Bakanlığı kararına bağlandığı süre",
+          "value": "2 ay",
+          "refs": [
+            "18"
+          ]
+        },
+        {
+          "label": "B nevi: geçerlilik alt sınırı",
+          "value": "3 ay",
+          "refs": [
+            "18"
+          ]
+        },
+        {
+          "label": "Pasaportsuz giren vatandaş: idarî para cezası alt sınırı",
+          "value": "1.000 TL",
+          "refs": [
+            "34"
+          ]
+        },
+        {
+          "label": "Pasaportsuz giren vatandaş: idarî para cezası üst sınırı",
+          "value": "3.000 TL",
+          "refs": [
+            "34"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "18",
+        "34"
+      ]
+    },
+    {
+      "type": "compare",
+      "title": "Refakat hanesi: umuma mahsus ve yabancılara mahsus pasaport",
+      "rows": [
+        {
+          "aspect": "Kimler kaydolur",
+          "left": "Reşit olmayan kız ve erkek çocuklar",
+          "right": "Tabiiyet bakımından aynı durumda olan, reşit olmayan ve iş sahibi bulunmayan kız veya erkek çocuklar; kocasıyla aynı durumdaki karısı",
+          "refs": [
+            "15",
+            "18"
+          ]
+        },
+        {
+          "aspect": "Kaydın dayanağı",
+          "left": "Pasaport sahibinin talebi",
+          "right": "Kayıt caizdir (yapılabilir)",
+          "refs": [
+            "15",
+            "18"
+          ]
+        },
+        {
+          "aspect": "Ayrı seyahat",
+          "left": "Pasaport sahibinin beraberinde bulunmadıkça seyahat edemezler",
+          "right": "Pasaport sahibiyle seyahat etmedikçe pasaportu kullanamazlar",
+          "refs": [
+            "15",
+            "18"
+          ]
+        },
+        {
+          "aspect": "Veren makam",
+          "left": "Yurt içinde İçişleri Bakanlığı veya yetki verilen valilik; yurt dışında konsolosluk",
+          "right": "Yurt içinde İçişleri Bakanlığı; yurt dışında Dışişleri Bakanlığının talimatıyla konsolosluk",
+          "refs": [
+            "15",
+            "18"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "15",
+        "18"
+      ]
+    },
+    {
+      "type": "exam_stats",
+      "title": "Sınav der ki",
+      "rows": [
+        {
+          "label": "Bu ünitenin maddelerinden yayındaki soru",
+          "value": "33",
+          "refs": [
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22",
+            "23",
+            "27",
+            "34"
+          ]
+        },
+        {
+          "label": "md 18",
+          "value": "6 soru",
+          "refs": [
+            "18"
+          ]
+        },
+        {
+          "label": "md 22",
+          "value": "6 soru",
+          "refs": [
+            "22"
+          ]
+        },
+        {
+          "label": "md 20",
+          "value": "5 soru",
+          "refs": [
+            "20"
+          ]
+        },
+        {
+          "label": "md 16",
+          "value": "4 soru",
+          "refs": [
+            "16"
+          ]
+        },
+        {
+          "label": "md 15",
+          "value": "3 soru",
+          "refs": [
+            "15"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "15",
+        "16",
+        "17",
+        "18",
+        "19",
+        "20",
+        "21",
+        "22",
+        "23",
+        "27",
+        "34"
+      ],
+      "generated": true
+    },
+    {
+      "type": "bridge",
+      "title": "Bu üniteden soru çöz",
+      "articleRefs": [
+        "15",
+        "16",
+        "17",
+        "18",
+        "19",
+        "20",
+        "21",
+        "22",
+        "23",
+        "27",
+        "34"
+      ],
+      "generated": true,
+      "rows": [
+        {
+          "label": "Madde kapsamlı seans",
+          "value": "md 15–23, 27, 34, 10 soru",
+          "refs": [
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22",
+            "23",
+            "27",
+            "34"
+          ]
+        }
+      ]
+    }
+  ]
+}
