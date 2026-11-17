@@ -1,0 +1,610 @@
+{
+  "unit": {
+    "slug": "iik-il-idaresi-vali-kaymakam-ve-idare-kurullari",
+    "legislationSlug": "5442-il-idaresi-kanunu",
+    "topicId": "4d185b8e-a24f-4f0e-8c29-d17e03eeec11",
+    "title": "İl idaresi: vali, kaymakam ve idare kurulları",
+    "subtitle": "Bölünme ve kuruluş usulü, valinin ve kaymakamın yetkileri, sicil ve disiplin, idare kurulları, 66. madde yaptırımı",
+    "articleFrom": "1",
+    "articleTo": "66",
+    "readingMinutes": 14,
+    "sourceLabel": "AI özeti — 5442 İl İdaresi Kanunu, md 1, 2, 4, 9, 11, 13, 18, 24, 27, 31, 34, 36, 53, 57, 58, 66",
+    "articleNos": [
+      "1",
+      "2",
+      "4",
+      "9",
+      "11",
+      "13",
+      "18",
+      "24",
+      "27",
+      "31",
+      "34",
+      "36",
+      "53",
+      "57",
+      "58",
+      "66"
+    ],
+    "generatedBy": "claude-opus-5-5 (ozet-uret.ts)",
+    "sortOrder": 1
+  },
+  "blocks": [
+    {
+      "type": "concept",
+      "title": "Merkezi idarenin taşradaki basamakları",
+      "body": "Türkiye, merkezi idare kuruluşu bakımından illere bölünür; iller ilçelere, ilçeler de bucaklara ayrılır. Bu bölünmede coğrafya durumu, iktisadi şartlar ve kamu hizmetlerinin gerekleri esas alınır. İl genel idaresinin başı ve mercii validir, ilçe genel idaresinin başı ve mercii ise kaymakamdır. Bu yapıyı aklında bir merdiven gibi tut: her basamağın başında bir amir var ve bu amirlerin yetkileri sınavın en sevdiği konudur.",
+      "articleRefs": [
+        "1",
+        "4",
+        "27"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Bölünme ölçütüne eklenen yabancı şık",
+      "body": "Bölünme ölçütleri sorulduğunda listeye 'mahallî ihtiyaçların gereği gibi karşılanması' eklenir. Kanun bunu saymaz; ölçütler yalnızca **coğrafya durumu, iktisadi şartlar ve kamu hizmetlerinin gerekleri**dir.\n\nBir de bucak tuzağı var: bucak, merkezi idare kuruluşu bakımından yapılan bölünmenin bir basamağıdır. Onu bir mahallî idare birimi sanma.",
+      "articleRefs": [
+        "1"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "İl, ilçe, bucak ve köyde kim karar verir?",
+      "body": "**Kanun ile:** il ve ilçe kurulması, kaldırılması, merkezlerinin belirtilmesi, adlarının değiştirilmesi, bir ilçenin başka bir ile bağlanması.\n\n**Cumhurbaşkanı onayı ile:** bucak kurulması, kaldırılması, merkezinin belirtilmesi; il, ilçe ve bucak sınırlarının ve bucak adlarının değiştirilmesi; bir köyün, kasabanın veya bucağın başka bir il ve ilçeye bağlanması; mühim mevki ve tabii arazi adlarının değiştirilmesi.\n\n**Bakanlık mütalaası alınarak, İçişleri Bakanlığının tasvibiyle:** yeniden köy kurulması veya yerinin değiştirilmesi (Bayındırlık ve Sağlık ve Sosyal Yardım Bakanlıkları).\n\n**İçişleri Bakanlığının tasvibiyle:** köy ve kasabaların aynı ilçe içinde bir bucaktan başka bucağa bağlanması, köy adlarının değiştirilmesi, köylerin birleştirilmesi ve ayrılması, bir köy, mahalle veya semtin başka bir köyle birleştirilmesi.\n\n**Mütalaa:** kaza kurulması, kaldırılması, sınır değişikliği ve (B, C, Ç) hâllerinde ilgili vilayetler idare heyetleriyle umumi meclislerinin mütalaası alınır.\n\n**Ad:** il, ilçe ve bucağa merkez yapılan şehir, kasaba veya köyün adı verilir; coğrafi veya tarihi bir sanı varsa o da isim olarak verilebilir.",
+      "articleRefs": [
+        "2"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Ad değişikliğinde merci birime göre değişir",
+      "body": "Ad değişikliği soruları seni şaşırtmak için kurulur:\n- İl ve ilçe adı → **kanun**\n- Bucak adı → **Cumhurbaşkanı onayı**\n- Köy adı → **İçişleri Bakanlığının tasvibi**\n\n'İlçe' kelimesini görünce Cumhurbaşkanı kararı ya da vali kararı şıkkına kayma: ilçe kurmak, kaldırmak, adını değiştirmek ve başka bir ile bağlamak hep kanun işidir. Köy adında ise ne kanun ne Cumhurbaşkanı onayı; merci İçişleri Bakanlığının tasvibidir (ilgili il idare kurulu ile il genel meclisinin mütalaası da alınır).",
+      "articleRefs": [
+        "2"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "İl teşkilatı ve valinin emri dışında kalanlar",
+      "body": "İl genel idaresinin **başı ve mercii validir**. Bakanlıkların kuruluş mevzuatına göre illerde **lüzumu kadar teşkilat** bulunur.\n- Her teşkilatın başında bulunanlar **il idare şube başkanlarıdır**.\n- Onların emri altında çalışanlar **ilin ikinci derecede memurlarıdır**.\n- Bu teşkilat valinin emri altındadır.\n\n**İstisna:** yargıç, Cumhuriyet savcısı ve yargıç sınıfında bulunanlar, adalet memurları, askeri birlikler, askeri fabrika ve müesseseler, askerlik daire ve şubeleri bu hükmün dışındadır.",
+      "articleRefs": [
+        "4"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Valinin hukuki durumu ve görevleri",
+      "body": "**Vali, ilde Cumhurbaşkanının temsilcisi ve idari yürütme vasıtasıdır.** Bu sıfatla:\n- İlin genel idaresinden **Cumhurbaşkanına karşı** sorumludur. Cumhurbaşkanı yardımcıları ve bakanlar, görevlerine ait işler için valilere re'sen emir ve talimat verir.\n- Bakanlıklar ve tüzelkişiliği haiz genel müdürlükler il işlerini **doğrudan valiliklere** yazar; valilikler de onlarla doğrudan muhabere eder.\n- **Hesabat ve teknik hususlarda** vali, idare şube başkanlarına vali adına imza yetkisi verebilir.\n- Mevzuatın neşir, ilan ve uygulanmasını sağlar; mevzuatın verdiği yetkiyi kullanmak için **genel emirler** çıkarabilir ve bunları ilan eder.\n- Adli ve askeri teşkilat dışındaki bütün Devlet dairelerini, özel işyerlerini, özel idare, belediye ve köy idarelerini denetler, teftiş eder.\n- İlde teşkilatı bulunmayan işi, yakın ilgili bir idare şube veya daire başkanından isteyebilir; bu işin yapılması mecburidir.\n- Devlet gelirlerinin tahakkuk, tahsil ve ödeme işleri için tedbir alır; kamu mallarının korunmasını ister ve denetler; Devlet dairelerini binalarda toplama tedbirlerini aldırır.\n- **Cumhuriyet Bayramında** ilde resmi törenlere başkanlık eder ve tebrikleri kabul eder.",
+      "articleRefs": [
+        "9"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Vali kimi temsil eder, imzayı kime verir?",
+      "body": "Şıklarda İçişleri Bakanı, bakanlar, Bakanlar Kurulu ya da il genel meclisi dizilir; vali ilde **Cumhurbaşkanının** temsilcisi ve idari yürütme vasıtasıdır. 'Bakanların temsilcisi' diyen ifade yanlıştır.\n\nİmza yetkisi kaymakama, belediye başkanına ya da meclis üyelerine değil; hesabat ve teknik işlerde **idare şube başkanlarına** verilir.\n\nGenel emir yetkisi valinindir; il idare kurulu, il genel meclisi, şube başkanları ya da kaymakam için 9. maddede böyle bir yetki yoktur. Valinin 11/C'ye dayanarak ilan ettiği bir yasak kararı da **genel emir** niteliğindedir; tüzük, yönetmelik ya da genelge diye işaretleme.\n\nSon olarak: mahkemeler arasında iş dağıtmak gibi yargıya dönük bir görev valiye verilmemiştir; yargıç ve Cumhuriyet savcısı valinin emri altında değildir.",
+      "articleRefs": [
+        "9",
+        "4",
+        "11"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Vali ve kolluk: kamu düzeni yetkileri",
+      "body": "- Vali, il sınırları içindeki **genel ve özel bütün kolluk kuvvet ve teşkilatının amiridir**; kolluk amir ve memurları verdiği emirleri derhal yerine getirir.\n- Sınır ve kıyı emniyetiyle ilgili bütün işleri yürürlükteki hükümlere göre sağlar ve yürütür.\n- Huzur ve güvenlik, kişi dokunulmazlığı, tasarrufa ilişkin emniyet, kamu esenliği ve **önleyici kolluk** valinin ödevidir; bunlar için karar ve tedbir alır.\n- Kamu düzeni olağan hayatı durduracak veya kesintiye uğratacak şekilde bozulmuşsa ya da ciddi belirti varsa: **on beş günü geçmemek üzere** şüpheli kişiler için belirli yerlere giriş ve çıkışı sınırlayabilir; dolaşma, toplanma ve araç seyrini düzenleyebilir veya kısıtlayabilir; ruhsatlı da olsa silah ve mermi taşınmasını ve naklini yasaklayabilir.\n- Bu kararlara uymayanlara **66. madde** uygulanır.\n- Kolluk ast ve üstlerinin yerlerini il içinde geçici veya sürekli değiştirebilir.\n- Emrindeki kuvvet yetmezse İçişleri Bakanlığından ve gerekirse en yakın kara, deniz, hava birlik komutanlığından yardım ister; acil durumda istek, sonradan yazıya dönüştürülmek kaydıyla sözlü yapılabilir.\n- Adli kuruluşlar ile (D fıkrası saklı kalmak kaydıyla) askerî kuruluşlar dışındaki bütün kamu kurum ve kuruluşlarının itfaiye, ambulans, çekici, iş makinesi gibi araçlarından yararlanabilir, personeline görev verebilir (**H fıkrası**); bu yetkiler ilçede **kaymakam** tarafından da kullanılabilir.",
+      "articleRefs": [
+        "11",
+        "66"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "On beş gün mü, yedi gün mü?",
+      "body": "Sınırlama süresi sorusunda şıklar on gün, otuz gün, kırk beş gün ya da üç ay diye dizilir. Doğru cevap **on beş gün**dür.\n\nAynı maddede geçen **yedi gün** başka bir süredir: kamuya açık alanlarda kurulacak güvenlik sistemleri için il özel idaresi, belediye, köy ve diğer kamu tüzelkişilikleri valiliğin talebini yedi gün içinde sonuçlandırır. İkisini birbirine taşıma.",
+      "articleRefs": [
+        "11"
+      ],
+      "counterNumbers": [
+        10,
+        30,
+        45,
+        3
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Vali, il memurlarının en büyük amiri",
+      "body": "Vali, adli ve askeri daireler hariç, bakanlıklar ve tüzelkişiliği haiz genel müdürlüklerin il teşkilatında çalışan bütün memur ve müstahdemlerin **en büyük amiridir**. Bu sıfatla:\n- Memur ve müstahdemlerin çalışmalarına nezaret eder, teşkilatın işlemesini denetler.\n- Savunma aldıktan sonra **uyarma, kınama ve beş günlüğe kadar aylıktan kesme** cezalarını verir ve uygular. Daha ağır cezalar için teklif ve talepte bulunabilir; yetkili disiplin mercii bu teklifi karara bağlamak zorundadır.\n- Valilerce re'sen verilen cezalar **kesindir** ve tebliğ tarihinden itibaren sicile geçer.\n- Tayini merkeze ait il memurlarının yıllık mezuniyetini valiliğin iş'arı üzerine bağlı oldukları bakanlık veya tüzelkişiliği haiz genel müdürlük verir; acele hâllerde vali **15 güne kadar** mezuniyet verir ve ilgili makamlara bildirir.\n- Şikâyetleri inceler; haksız veya kanunsuz muamele görürse kanuni muameleye başvurur ve kararını derhal uygulatır.",
+      "articleRefs": [
+        "13"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Valinin birinci derecede sicil amiri olduğu kişiler",
+      "body": "Bu liste kapalıdır, ezberle: **vali muavini, kaymakamlar, il idare şube başkanları, il ve bölge muhakemat müdürleri, genel ve özel kolluk amirleri.** Diğer memurların sicil amiri ikinci derecede validir.\n\nTuzak, şube başkanı ile onun emrindeki memuru karıştırmak. İl idare şube başkanının emri altında çalışanlar ilin ikinci derecede memurlarıdır. Yani il millî eğitim müdürünün emrindeki bir şube müdürü için vali birinci derecede değil, ikinci derecede sicil amiridir.",
+      "articleRefs": [
+        "18",
+        "4"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "İdare şube başkanları toplantısı",
+      "body": "Vali, **yılda dört defadan az olmamak üzere** lüzum gördüğü zamanlarda idare şube başkanlarını **heyet hâlinde** toplar.\n- **Amaç:** idarede birliğin sağlanması, işlerin gözden geçirilip düzenlenmesi, teşkilatın ahenkli çalışması.\n- Alınan kararların yürütülmesi **bütün idare şubeleri için mecburidir**.\n- İstihsalin artırılması, ticaret ve ulaştırma işlerinin kolaylaştırılması, çiftçinin kalkındırılması, umumi refah gibi konularda tedbirler planlaştırılır.\n- Toplantıya kaymakamlar, belediye, ticaret ve ziraat odası başkanları ile diğer memur ve ilgililer **çağrılabilir**.",
+      "articleRefs": [
+        "24"
+      ]
+    },
+    {
+      "type": "numbers",
+      "title": "Vali: sayılar ve süreler",
+      "rows": [
+        {
+          "label": "Belirli yerlere giriş-çıkış sınırlaması (en çok)",
+          "value": "on beş gün",
+          "refs": [
+            "11"
+          ]
+        },
+        {
+          "label": "Güvenlik sistemi talebinin kurumlarca sonuçlandırılması",
+          "value": "yedi gün içinde",
+          "refs": [
+            "11"
+          ]
+        },
+        {
+          "label": "Birlik komutanının konuta giriş kararının hâkim onayına sunulması",
+          "value": "yirmi dört saat içinde",
+          "refs": [
+            "11"
+          ]
+        },
+        {
+          "label": "Valinin re'sen verebileceği aylıktan kesme",
+          "value": "beş günlüğe kadar",
+          "refs": [
+            "13"
+          ]
+        },
+        {
+          "label": "Acele hâlde valinin verdiği mezuniyet",
+          "value": "15 güne kadar",
+          "refs": [
+            "13"
+          ]
+        },
+        {
+          "label": "İdare şube başkanları toplantısı",
+          "value": "yılda dört defadan az olmamak üzere",
+          "refs": [
+            "24"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "11",
+        "13",
+        "24"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Kaymakam: ilçenin başı ve mercii",
+      "body": "İlçe genel idaresinin **başı ve mercii kaymakamdır**. Kaymakam, ilçede **Cumhurbaşkanının idari yürütme vasıtasıdır** ve ilçenin genel idaresinden sorumludur. Bakanlıkların kuruluş mevzuatına göre ilçede lüzumu kadar teşkilat bulunur.\n- Mevzuatın neşir, ilan ve uygulanmasını sağlar; **valinin talimat ve emirlerini yürütmekle ödevlidir**.\n- Valiler ilçe işlerini doğrudan kaymakama yazar; kaymakam bağlı olduğu valiyle muhabere eder. **Olağanüstü hâllerde** İçişleri Bakanlığı ve diğer bakanlıklarla muhabere edebilir ve valiye bilgi verir.\n- Valinin talimat ve emirleri ilçe idare şube başkanlarına **kaymakamlar yolu ile** tebliğ olunur.\n- Adli ve askeri daire ve müesseseler dışındaki bütün Devlet dairelerini, özel işyerlerini, özel idare, belediye ve köy idarelerini denetler ve teftiş eder.\n- İlçenin her yönden genel idare ve genel gidişini düzenlemek ve denetlemekten sorumludur.",
+      "articleRefs": [
+        "27",
+        "31"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Kaymakamın el çektirme, disiplin ve izin yetkileri",
+      "body": "**İşten el çektirme (denetlemesi sırasında iş başında kalmasında mahzur gördüklerini):** ilçe idare şube başkanlarını **valinin muvafakatiyle**, diğer memur ve müstahdemleri **re'sen** ve kendi sorumluluğu altında.\n\n**Disiplin:** ilçenin idare şube başkanları, ikinci derecedeki memurlar, genel ve özel kolluk amir ve memurlarına savunma aldıktan sonra **uyarma ve kınama** verir ve uygular; daha ağır cezalar için teklif ve talepte bulunabilir. Re'sen verdiği cezalar kesindir, tebliğ tarihinden itibaren sicile geçer. İlçe memurlarına takdirname de verebilir.\n\n**İzin:** ilçe idare şube başkanlarına acele hâllerde **8 güne kadar**; tayini kendisine ait memurlara yıllık izinden mahsup edilmek üzere **bir aya kadar**. Tayini kendisine ait olmayanlara izin verilmeden önce kaymakamın mütalaası alınır.\n\n**Diğer:** teşkilatı olmayan işi yakın ilgili idare veya daire başkanlığından ister; uzman memurlardan iş istemek için **valiliğe teklif** eder; askerlik şikâyetlerini kabul eder, cevabı yeterli görmezse **valiye** bildirir; Cumhuriyet Bayramında ilçedeki törenlere başkanlık eder.",
+      "articleRefs": [
+        "31"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Kaymakamı valiyle karıştırma",
+      "body": "Kaymakam ilçede **valinin değil, Cumhurbaşkanının** idari yürütme vasıtasıdır; 'valinin' diyen şık yanlıştır.\n\nEl çektirmede ince ayrım: kaymakam ilçe idare şube başkanlarını **re'sen değil, valinin muvafakatiyle** işten el çektirir.\n\nDisiplinde kaymakamın elinde yalnız uyarma ve kınama var; aylıktan kesme ve kademe ilerlemesinin durdurulması onun re'sen verebileceği cezalar değildir. Aylıktan kesmeyi vali verir.\n\nAcele hâlde izin: vali için 15 gün, kaymakam için 8 gün. 10 gün diye bir süre yok.\n\nGenel emir yetkisi 9. maddede valiye tanınmıştır, kaymakama değil.",
+      "articleRefs": [
+        "27",
+        "31",
+        "9",
+        "13"
+      ],
+      "counterNumbers": [
+        10
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Kaymakamın sicil amirliği ve devir-teftişi",
+      "body": "**Sicil:** kaymakam; ilçe idare şube başkanlarının, genel, özel ve kolluk amirlerinin **birinci derecede**, diğer memurların **ikinci derecede** sicil amiridir. Kolluk amirleri için 'ikinci derece' diyen şık yanlıştır.\n\n**Devir ve teftiş:** kaymakam her yıl ilçenin **bütün bucaklarını**, köylerin **en az yarısını** ve ilçe içindeki teşkilatı teftiş eder.\n- Halkın dilek ve ihtiyaçlarını yerinde gözden geçirir ve gereğini yapar.\n- Devir ve teftişe çıkacağı zaman **valiyi haberdar eder**.\n- Sonucu bir **raporla valiye** bildirir; İçişleri Bakanına ya da Cumhurbaşkanına değil.",
+      "articleRefs": [
+        "34",
+        "36"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "İdare kurulları ve bucak meclisi",
+      "body": "**İl idare kurulu:** başkan **vali**. Üyeler: hukuk işleri müdürü, defterdar, millî eğitim, bayındırlık, sağlık ve sosyal yardım, tarım ve veteriner müdürleri. Vali, kurula başkanlık etmek üzere **vali muavinini** görevlendirebilir.\n\n**İlçe idare kurulu:** başkan **kaymakam**. Üyeler: tahrirat kâtibi, malmüdürü, Hükümet hekimi, millî eğitim memuru, tarım memuru ve veteriner.\n\n**Bucak meclisi:** yılda bir defa **Ekim ayının başında** toplanır; toplantı süresini meclis belirtir.",
+      "articleRefs": [
+        "57",
+        "58",
+        "53"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Karar ve tedbirlere uymamanın yaptırımı",
+      "body": "İl genel kurulu, idare kurulları veya en büyük mülkiye amirlerinin kanuni yetkiye dayanarak aldığı ve usulen tebliğ ya da ilan ettiği karar ve tedbirlere muhalefet eden, müşkülat gösteren veya riayet etmeyenler, **mahallî mülkî amir** tarafından **Kabahatler Kanununun 32 nci maddesi** uyarınca cezalandırılır.\n\n**Ağırlaştırılmış hâl:** kamu düzenini ve güvenliğini veya kişilerin can ve mal emniyetini tehlikeye düşürecek **toplumsal olaylar** baş gösterdiğinde valinin kamu düzenini sağlamak amacıyla aldığı ve usulüne göre ilan ettiği karar ve tedbirlere aykırı davrananlar **üç aydan bir yıla kadar hapis** cezasıyla cezalandırılır. 'Altı aydan iki yıla kadar' diyen şık yanlıştır.",
+      "articleRefs": [
+        "66"
+      ],
+      "counterNumbers": [
+        6,
+        2
+      ]
+    },
+    {
+      "type": "numbers",
+      "title": "Kaymakam, bucak ve yaptırım: sayılar",
+      "rows": [
+        {
+          "label": "Acele hâlde ilçe idare şube başkanlarına izin",
+          "value": "8 güne kadar",
+          "refs": [
+            "31"
+          ]
+        },
+        {
+          "label": "Tayini kaymakama ait memurlara izin",
+          "value": "bir aya kadar",
+          "refs": [
+            "31"
+          ]
+        },
+        {
+          "label": "Kaymakamın her yıl teftiş ettiği köyler",
+          "value": "en az yarısı (bucakların tamamı)",
+          "refs": [
+            "36"
+          ]
+        },
+        {
+          "label": "Bucak meclisi toplantısı",
+          "value": "yılda bir defa, Ekim ayının başında",
+          "refs": [
+            "53"
+          ]
+        },
+        {
+          "label": "Toplumsal olayda vali kararına aykırılık",
+          "value": "üç aydan bir yıla kadar hapis",
+          "refs": [
+            "66"
+          ]
+        },
+        {
+          "label": "Diğer karar ve tedbirlere aykırılık",
+          "value": "Kabahatler Kanununun 32 nci maddesi",
+          "refs": [
+            "66"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "31",
+        "36",
+        "53",
+        "66"
+      ]
+    },
+    {
+      "type": "compare",
+      "title": "Vali ile kaymakam yan yana",
+      "rows": [
+        {
+          "aspect": "Kimin idari yürütme vasıtası",
+          "left": "Cumhurbaşkanının; ilde aynı zamanda temsilcisi",
+          "right": "Cumhurbaşkanının",
+          "refs": [
+            "9",
+            "27"
+          ]
+        },
+        {
+          "aspect": "Sorumluluk",
+          "left": "İlin genel idaresinden Cumhurbaşkanına karşı sorumlu",
+          "right": "İlçenin genel idaresinden sorumlu",
+          "refs": [
+            "9",
+            "27"
+          ]
+        },
+        {
+          "aspect": "Re'sen disiplin cezası",
+          "left": "Uyarma, kınama, beş günlüğe kadar aylıktan kesme",
+          "right": "Uyarma, kınama",
+          "refs": [
+            "13",
+            "31"
+          ]
+        },
+        {
+          "aspect": "Acele hâlde izin",
+          "left": "15 güne kadar mezuniyet (tayini merkeze ait il memurları)",
+          "right": "8 güne kadar (ilçe idare şube başkanları)",
+          "refs": [
+            "13",
+            "31"
+          ]
+        },
+        {
+          "aspect": "Birinci derecede sicil amirliği",
+          "left": "Vali muavini, kaymakamlar, il idare şube başkanları, il ve bölge muhakemat müdürleri, genel ve özel kolluk amirleri",
+          "right": "İlçe idare şube başkanları, genel, özel ve kolluk amirleri",
+          "refs": [
+            "18",
+            "34"
+          ]
+        },
+        {
+          "aspect": "Genel emir",
+          "left": "Çıkarabilir ve ilan eder",
+          "right": "31. maddede sayılmaz",
+          "refs": [
+            "9",
+            "31"
+          ]
+        },
+        {
+          "aspect": "Muhabere",
+          "left": "Bakanlıklar ve tüzelkişiliği haiz genel müdürlüklerle doğrudan",
+          "right": "Bağlı olduğu valiyle; olağanüstü hâlde bakanlıklarla, valiye bilgi vererek",
+          "refs": [
+            "9",
+            "31"
+          ]
+        },
+        {
+          "aspect": "Askerlik şikâyetine cevap yetersizse",
+          "left": "Bölge, tümen veya korkomutanlıklarına ve Millî Savunma Bakanlığına müracaat",
+          "right": "Keyfiyeti valiye bildirir",
+          "refs": [
+            "11",
+            "31"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "9",
+        "11",
+        "13",
+        "18",
+        "27",
+        "31",
+        "34"
+      ]
+    },
+    {
+      "type": "compare",
+      "title": "İl idare kurulu ile ilçe idare kurulu",
+      "rows": [
+        {
+          "aspect": "Başkan",
+          "left": "Vali (vali muavinini görevlendirebilir)",
+          "right": "Kaymakam",
+          "refs": [
+            "57",
+            "58"
+          ]
+        },
+        {
+          "aspect": "Hukuk ve yazı işleri",
+          "left": "Hukuk işleri müdürü",
+          "right": "Tahrirat kâtibi",
+          "refs": [
+            "57",
+            "58"
+          ]
+        },
+        {
+          "aspect": "Mali işler",
+          "left": "Defterdar",
+          "right": "Malmüdürü",
+          "refs": [
+            "57",
+            "58"
+          ]
+        },
+        {
+          "aspect": "Sağlık",
+          "left": "Sağlık ve sosyal yardım müdürü",
+          "right": "Hükümet hekimi",
+          "refs": [
+            "57",
+            "58"
+          ]
+        },
+        {
+          "aspect": "Eğitim",
+          "left": "Millî eğitim müdürü",
+          "right": "Millî eğitim memuru",
+          "refs": [
+            "57",
+            "58"
+          ]
+        },
+        {
+          "aspect": "Tarım ve hayvancılık",
+          "left": "Tarım müdürü, veteriner müdürü",
+          "right": "Tarım memuru, veteriner",
+          "refs": [
+            "57",
+            "58"
+          ]
+        },
+        {
+          "aspect": "Bayındırlık",
+          "left": "Bayındırlık müdürü",
+          "right": "Sayılmaz",
+          "refs": [
+            "57",
+            "58"
+          ]
+        },
+        {
+          "aspect": "Listede olmayanlar",
+          "left": "İl emniyet müdürü, garnizon komutanı, il özel idaresi genel sekreteri, il genel meclisi başkanı",
+          "right": "Hukuk işleri müdürü",
+          "refs": [
+            "57",
+            "58"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "57",
+        "58"
+      ]
+    },
+    {
+      "type": "exam_stats",
+      "title": "Sınav der ki",
+      "rows": [
+        {
+          "label": "Bu ünitenin maddelerinden yayındaki soru",
+          "value": "32",
+          "refs": [
+            "1",
+            "2",
+            "4",
+            "9",
+            "11",
+            "13",
+            "18",
+            "24",
+            "27",
+            "31",
+            "34",
+            "36",
+            "53",
+            "57",
+            "58",
+            "66"
+          ]
+        },
+        {
+          "label": "md 9 — II - Valilerin hukuki durumları, görev ve yetkileri",
+          "value": "5 soru",
+          "refs": [
+            "9"
+          ]
+        },
+        {
+          "label": "md 2",
+          "value": "4 soru",
+          "refs": [
+            "2"
+          ]
+        },
+        {
+          "label": "md 57 — İl ve İlçe İdare Kurulları",
+          "value": "4 soru",
+          "refs": [
+            "57"
+          ]
+        },
+        {
+          "label": "md 11 — E) (Mülga: 23/1/2008-5728/578 md.)",
+          "value": "3 soru",
+          "refs": [
+            "11"
+          ]
+        },
+        {
+          "label": "md 31 — II - Kaymakamların hukuki durumları, görev ve yetkileri",
+          "value": "3 soru",
+          "refs": [
+            "31"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "1",
+        "2",
+        "4",
+        "9",
+        "11",
+        "13",
+        "18",
+        "24",
+        "27",
+        "31",
+        "34",
+        "36",
+        "53",
+        "57",
+        "58",
+        "66"
+      ],
+      "generated": true
+    },
+    {
+      "type": "bridge",
+      "title": "Bu üniteden soru çöz",
+      "articleRefs": [
+        "1",
+        "2",
+        "4",
+        "9",
+        "11",
+        "13",
+        "18",
+        "24",
+        "27",
+        "31",
+        "34",
+        "36",
+        "53",
+        "57",
+        "58",
+        "66"
+      ],
+      "generated": true,
+      "rows": [
+        {
+          "label": "Madde kapsamlı seans",
+          "value": "md 1, 2, 4, 9, 11, 13, 18, 24, 27, 31, 34, 36, 53, 57, 58, 66, 10 soru",
+          "refs": [
+            "1",
+            "2",
+            "4",
+            "9",
+            "11",
+            "13",
+            "18",
+            "24",
+            "27",
+            "31",
+            "34",
+            "36",
+            "53",
+            "57",
+            "58",
+            "66"
+          ]
+        }
+      ]
+    }
+  ]
+}

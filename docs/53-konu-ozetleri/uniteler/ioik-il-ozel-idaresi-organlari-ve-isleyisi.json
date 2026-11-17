@@ -1,0 +1,670 @@
+{
+  "unit": {
+    "slug": "ioik-il-ozel-idaresi-organlari-ve-isleyisi",
+    "legislationSlug": "5302-il-ozel-idaresi-kanunu",
+    "topicId": "cc810ce5-feac-47bd-b4f9-9a9edf7c4672",
+    "title": "İl özel idaresi: organlar ve işleyiş",
+    "subtitle": "Tanım ve görevlerden il genel meclisi, il encümeni, vali ve bütçe sürecine",
+    "articleFrom": "3",
+    "articleTo": "45",
+    "readingMinutes": 14,
+    "sourceLabel": "AI özeti — 5302 İl Özel İdaresi Kanunu, md 3, 4, 6, 7, 11, 12, 14–16, 18, 21, 22, 26, 27, 30, 40, 45",
+    "articleNos": [
+      "3",
+      "4",
+      "6",
+      "7",
+      "11",
+      "12",
+      "14",
+      "15",
+      "16",
+      "18",
+      "21",
+      "22",
+      "26",
+      "27",
+      "30",
+      "40",
+      "45"
+    ],
+    "generatedBy": "claude-opus-5-5 (ozet-uret.ts)",
+    "sortOrder": 1
+  },
+  "blocks": [
+    {
+      "type": "concept",
+      "title": "İl özel idaresi nedir?",
+      "body": "Önce büyük resmi kur. İl özel idaresi, il halkının mahallî müşterek nitelikteki ihtiyaçlarını karşılamak için kurulan bir kamu tüzel kişisidir. Karar organını seçmenler seçer. İdarî ve malî özerkliği vardır. Organları il genel meclisi, il encümeni ve validir. İl özel idaresi, ilin kurulmasına dair kanunla kurulur. İlin kaldırılmasıyla tüzel kişiliği sona erer. Bu ünitede bu organların nasıl toplandığını, nasıl karar aldığını ve birbirini nasıl denetlediğini göreceksin.",
+      "articleRefs": [
+        "3",
+        "4"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Organ listesine sızan yabancılar",
+      "body": "Organ sorusunda şıklara **il idare kurulu** ya da **il idare şube başkanları** konur. Kanundaki organlar yalnızca şunlardır: **il genel meclisi, il encümeni ve vali**. Bu üçlüden biri eksikse ya da yerine il idare kurulu girmişse şık yanlıştır.\n\nTüzel kişiliğin başlangıcı ve sonu da sorulur. Kuruluş, ilin kurulmasına dair **kanunla** olur. Sona erme ise ilin kaldırılmasına bağlanmıştır. Kararname, bakanlık kararı ya da onay gibi idari işlemler md 4'te yer almaz.",
+      "articleRefs": [
+        "3",
+        "4"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Görev alanı: iki ayrı halka",
+      "body": "Şart: hizmet **mahallî müşterek nitelikte** olmalıdır.\n\n**İl sınırları içinde:**\n- gençlik ve spor, sağlık, tarım, sanayi ve ticaret\n- ilin çevre düzeni plânı (belediye sınırları il sınırı olan büyükşehir belediyeleri hariç)\n- bayındırlık ve iskân, toprağın korunması, erozyonun önlenmesi\n- kültür, sanat, turizm, sosyal hizmet ve yardımlar, yoksullara mikro kredi\n- çocuk yuvaları ve yetiştirme yurtları\n- ilk ve orta öğretim kurumlarının arsa temini, binalarının yapım, bakım ve onarımı\n\n**Belediye sınırları dışında:**\n- imar, yol, su, kanalizasyon, katı atık, çevre, acil yardım ve kurtarma\n- orman köylerinin desteklenmesi, ağaçlandırma, park ve bahçe tesisi\n\n**Ayrıca:**\n- bisiklet yolları ve şeritleri, yaya yolları ve gürültü bariyerleri\n- mabetler ve cemevlerinin yapım, bakım ve onarımı (yapabilir)\n\n**Kaynak aktarımı:** Bakanlıklar, kaynak aktararak il özel idaresine yatırım yaptırabilir. Aktarma ilgili bakanın onayıyla yapılır. Bu yatırımlar görev alanı sınırlamasına tabi olmadan bütün il sınırları içinde yapılabilir.\n\n**Çevre düzeni plânı:** Valinin koordinasyonunda yapılır. Belediye meclisi ile il genel meclisi onaylar; belediye sınırları il sınırı olan büyükşehir belediyelerinde plânı büyükşehir belediyesi yapar veya yaptırır, doğrudan belediye meclisi onaylar.\n\n**Koordinasyon:** Hizmetler arasındaki koordinasyonu o ilin valisi sağlar.",
+      "articleRefs": [
+        "6"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "\"Belediye sınırları dışında\" sorusu",
+      "body": "Soru kökünde \"belediye sınırları dışında\" ifadesini görünce şu listeyi hatırla: **imar, yol, su, kanalizasyon, katı atık**, çevre, acil yardım ve kurtarma, ağaçlandırma, park ve bahçe.\n\nTurizm, gençlik ve spor, tarım ve toprağın korunması ise **il sınırları içinde** sayılan hizmetlerdir. Bu yüzden en sevilen çeldiricilerdir. İki listeyi birbirine karıştırma.",
+      "articleRefs": [
+        "6"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Yetkiler ve imtiyazlar",
+      "body": "**Yetkiler (md 7, birinci fıkra):**\n- **a)** Kanunla verilen görevler için her türlü faaliyette bulunmak; izin ve ruhsat vermek, denetlemek.\n- **b)** Yönetmelik çıkarmak, emir vermek, yasak koymak, kanunlarda belirtilen cezaları vermek.\n- **c)** Taşınır ve taşınmaz mal almak, satmak, kiralamak, kiraya vermek, takas etmek, sınırlı aynî hak tesis etmek.\n- **d)** Borç almak ve bağış kabul etmek.\n- **e)** Vergi, resim ve harçlar dışında kalan ve miktarı yirmibeşmilyar Türk Lirasına kadar olan dava konusu uyuşmazlıkları anlaşmayla tasfiye etmek.\n- **f)** Kendine ait vergi, resim ve harçların tarh, tahakkuk ve tahsilini yapmak.\n- **g)** Belediye sınırları dışındaki gayri sıhhî müesseselere ve umuma açık istirahat ve eğlence yerlerine ruhsat vermek ve denetlemek.\n- **h)** Belediye sınırları dışında asansörlerin tescilini ve yıllık periyodik kontrolünü yapmak.\n\n**Diğer yetkiler:** Kamuoyu yoklaması ve araştırması yapabilir.\n\n**İmtiyazlar:**\n- İl özel idaresinin mallarına karşı suç işleyen, Devlet malına karşı suç işlemiş sayılır.\n- **Haczedilemeyenler:** proje karşılığı borçlanmayla elde edilen gelirler; vergi, resim ve harçlar; şartlı bağışlar; kamu hizmetlerinde fiilen kullanılan mallar.",
+      "articleRefs": [
+        "7"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Havaalanı ruhsatı ve \"yetki değildir\" soruları",
+      "body": "Belediye sınırları dışında ruhsat il özel idaresinde gibi görünür. Ancak bir istisna var: **sivil hava ulaşımına açık havaalanları bünyesindeki tüm tesislere** iş yeri açma ve çalışma ruhsatı dahil her türlü ruhsatı **Sivil Havacılık Genel Müdürlüğü** verir. Valilik, il özel idaresi, belediye ya da bakanlık şıkları yanlıştır.\n\n\"Hangisi md 7'de yoktur?\" sorusunda bütçe ifadelerine dikkat et. \"Bütçe ve kesin hesabı kabul etmek\" ya da \"bütçede aktarma yapmak\" md 7 listesinde yer almaz.",
+      "articleRefs": [
+        "7"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Meclis başkanlık divanı",
+      "body": "**İlk toplantı:**\n- İl genel meclisi, seçim sonuçlarının ilânını izleyen **beşinci gün** kendiliğinden toplanır.\n- Bu toplantıya **en yaşlı üye** başkanlık eder.\n\n**Seçim:** Meclis, üyeleri arasından ve **gizli oyla** şunları seçer:\n- meclis başkanı\n- birinci ve ikinci başkan vekilleri\n- ikisi yedek olmak üzere **dört kâtip üye**\n\n**Görev süresi:**\n- İlk seçilen divan **ilk iki yıl** için görev yapar.\n- Sonra seçilen divan, ilk mahallî idareler seçimlerine kadar görev yapar.\n\n**Diğer kurallar:**\n- Divan seçimi **üç gün** içinde tamamlanır.\n- Boşalmada yenisi kalan süreyi tamamlamak üzere seçilir.\n- Başkanlık sırası: meclis başkanı → birinci başkan vekili → ikinci başkan vekili.\n- Meclis çalışmalarının esas ve usullerini İçişleri Bakanlığı yönetmelikle düzenler.",
+      "articleRefs": [
+        "11"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Meclis toplantısı",
+      "body": "**Olağan toplantı:**\n- Meclisin belirleyeceği **bir aylık tatil** hariç, her ayın **ilk haftası** toplanır.\n- Toplantı, önceden belirlenen günde ve mutat toplantı yerinde yapılır.\n\n**Toplantı süresi:**\n- Bütçe görüşmesine rastlayan toplantı en çok **yirmi gün** sürer.\n- Diğer toplantılar en çok **beş gün** sürer.\n\n**Toplantı yeri:** Mutat yer dışında toplanmak zorunluysa, meclis başkanı yeri belirler. Üyelere ve valiye önceden bilgi verilir.\n\n**Açıklık:**\n- Toplantılar **açıktır**.\n- Başkanın veya herhangi bir üyenin gerekçeli önerisiyle, katılanların salt çoğunluğu kapalı oturum kararı verebilir.\n\n**Tutanak:** Görüşmeleri görevliler tutanağa geçirir. Tutanağı başkan ve kâtip üyeler imzalar.\n\n**Olağanüstü toplantı:**\n- Meclis başkanı acil durumlarda çağırır.\n- Yılda **üç defadan** fazla olamaz; her toplantı **bir birleşimi** geçemez.\n- Çağrı ve gündem, üyelere en az **üç gün** önceden yazılı olarak duyurulur.\n- Çağrıyı gerektiren konu dışında hiçbir konu görüşülemez.",
+      "articleRefs": [
+        "12"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "En yaşlı mı en genç mi, kaç ay tatil?",
+      "body": "İlk toplantıya **en yaşlı üye** başkanlık eder. \"En genç üye\" yazan şık yanlıştır.\n\nTatil **bir aylıktır** ve tatili meclis belirler. Daha uzun bir tatil süresi veren şık yanlıştır.\n\nToplantı sürelerini de karıştırma:\n- **Yirmi gün** yalnız bütçe görüşmesine rastlayan toplantı için geçerlidir.\n- **Beş gün** diğer toplantılar içindir.\n- 15 gün gibi ara değerler maddede yoktur.",
+      "articleRefs": [
+        "11",
+        "12"
+      ],
+      "counterNumbers": [
+        15
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Toplantı ve karar yeter sayısı",
+      "body": "**Yeter sayılar:**\n- **Toplantı:** üye tam sayısının salt çoğunluğu.\n- **Karar:** katılanların salt çoğunluğu. Ancak karar yeter sayısı üye tam sayısının **dörtte birinden** az olamaz.\n\n**Eşitlik hâli:**\n- **Oylamada eşitlik:** meclis başkanının bulunduğu taraf çoğunluk sayılır.\n- **Gizli oylamada eşitlik:** oylama tekrarlanır. Eşitlik bozulmazsa meclis başkanı **kur'a** çeker.\n\n**Yeter sayı sağlanamazsa:**\n- Başkan, meclisi en geç **üç gün** içinde toplanmak üzere tatil eder.\n- Gelecek toplantı, üye tam sayısının dörtte birinden az olmayan üyeyle yapılır.\n- Görüşme sırasındaki yoklamada karar yeter sayısı yoksa aynı kural uygulanır.\n\n**Oy kullanma:**\n- Üyeler oylarını bizzat kullanır.\n- Fizikî bakımdan engelli üyeler, gizli oyu tayin edecekleri kişi eliyle kullanabilir.\n- Oylama gizli, işaretle veya ad okunarak yapılır.\n- Oy kabul, ret veya çekimser olur.",
+      "articleRefs": [
+        "14"
+      ]
+    },
+    {
+      "type": "numbers",
+      "title": "Meclis: divan, toplantı, yeter sayı",
+      "rows": [
+        {
+          "label": "Seçim sonuçlarının ilânından sonra ilk toplantı",
+          "value": "5. gün, kendiliğinden",
+          "refs": [
+            "11"
+          ]
+        },
+        {
+          "label": "İlk başkanlık divanının görev süresi",
+          "value": "2 yıl",
+          "refs": [
+            "11"
+          ]
+        },
+        {
+          "label": "Kâtip üye sayısı",
+          "value": "4 (2'si yedek)",
+          "refs": [
+            "11"
+          ]
+        },
+        {
+          "label": "Divan seçiminin tamamlanma süresi",
+          "value": "3 gün",
+          "refs": [
+            "11"
+          ]
+        },
+        {
+          "label": "Yıllık tatil",
+          "value": "1 ay",
+          "refs": [
+            "12"
+          ]
+        },
+        {
+          "label": "Bütçe görüşmesine rastlayan toplantı",
+          "value": "en çok 20 gün",
+          "refs": [
+            "12"
+          ]
+        },
+        {
+          "label": "Diğer toplantılar",
+          "value": "en çok 5 gün",
+          "refs": [
+            "12"
+          ]
+        },
+        {
+          "label": "Olağanüstü toplantı",
+          "value": "yılda en çok 3 defa; her biri en çok 1 birleşim",
+          "refs": [
+            "12"
+          ]
+        },
+        {
+          "label": "Olağanüstü toplantı çağrısı",
+          "value": "en az 3 gün önceden, yazılı",
+          "refs": [
+            "12"
+          ]
+        },
+        {
+          "label": "Karar yeter sayısının alt sınırı",
+          "value": "üye tam sayısının 1/4'ü",
+          "refs": [
+            "14"
+          ]
+        },
+        {
+          "label": "Toplantı yeter sayısı sağlanamazsa yeniden toplanma",
+          "value": "en geç 3 gün içinde",
+          "refs": [
+            "14"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "11",
+        "12",
+        "14"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Meclis kararlarının kesinleşmesi",
+      "body": "**Valiye gönderme:**\n- Kararların tam metni en geç **beş gün** içinde valiye gönderilir.\n- Valiye gönderilmeyen kararlar **yürürlüğe girmez**.\n\n**Valinin iadesi:**\n- Vali, hukuka aykırı gördüğü kararı **yedi gün** içinde iade edebilir.\n- İadede gerekçesini belirtir ve kararın yeniden görüşülmesini ister.\n\n**Kesinleşme:** Yeniden görüşülmesi istenmeyen kararlar kesinleşir.\n\n**Duyuru:** Kesinleşen karar özetleri, toplantıyı izleyen en geç **yedi gün** içinde çeşitli yollarla halka duyurulur.\n\n**Dikkat:** Gönderme süresi beş gündür. Yedi gün ise iade ve duyuru süresidir.",
+      "articleRefs": [
+        "15"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "İhtisas komisyonları",
+      "body": "**Kuruluş:**\n- Görev süresi **bir yıl**dır.\n- Üye sayısı en az **üç**, en fazla **beş** kişidir.\n- **Plân ve Bütçe** ile **İmar ve Bayındırlık** komisyonları en çok **yedi** kişidir.\n- Komisyonlar, parti gruplarının ve bağımsızların meclisteki oranına göre oluşturulur.\n\n**Kurulması zorunlu olanlar:**\n- eğitim, kültür ve sosyal hizmetler\n- imar ve bayındırlık\n- çevre ve sağlık\n- plân ve bütçe\n\n**Çalışma süresi:**\n- İmar ve bayındırlık dışındakilerin çalışması meclis toplantı süresiyle sınırlıdır.\n- Toplantıyı müteakip imar ve bayındırlık en fazla **on iş günü**, diğerleri **beş iş günü** toplanır.\n- Rapor süresinde gelmezse meclis başkanı konuyu doğrudan gündeme alır.\n\n**Katılım:** Kaymakamlar, kamu kuruluşu amirleri, meslek kuruluşları, üniversite, sendika, muhtar ve sivil toplum temsilcileri katılabilir. Ancak **oy hakları yoktur**.\n\n**Raporlar:** Raporlar alenîdir.\n\n**Dikkat:** \"Tarım ve hayvancılık\" zorunlu listede yoktur.",
+      "articleRefs": [
+        "16"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Bilgi edinme ve denetim yolları",
+      "body": "**Yollar:** soru, genel görüşme ve faaliyet raporunu değerlendirme.\n\n**Soru:**\n- Üye, meclis başkanlığına önerge vererek sözlü veya yazılı soru sorar.\n- Soruyu vali veya görevlendireceği kişi cevaplar.\n\n**Genel görüşme:**\n- Üyelerin en az **üçte biri** ister.\n- Meclis kabul ederse konu gündeme alınır.\n\n**Faaliyet raporu:**\n- Vali, **mart ayı** toplantısında bir önceki yıla ait raporu sunar.\n- Açıklamalar üye tam sayısının **dörtte üç** çoğunluğuyla yeterli görülmezse yetersizlik kararı verilir.\n- Tutanak, meclis başkanı tarafından İçişleri Bakanlığına gönderilir.\n\n**Dikkat:**\n- \"Meclis soruşturması\" bu listede yoktur.\n- Genel görüşme için tek üye ya da 10 üye yetmez; ölçü üçte birdir.\n- Üçte bir (genel görüşme) ile dörtte üçü (yetersizlik) karıştırma.",
+      "articleRefs": [
+        "18"
+      ],
+      "counterNumbers": [
+        10
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Üyeliğin sona ermesi ve meclisin feshi",
+      "body": "**Üyelik kendiliğinden sona erer:** ölüm ve istifa.\n\n**Üyeliğin düşürülmesi (devamsızlık):**\n- Özürsüz veya izinsiz olarak arka arkaya **üç birleşim günü** ya da **bir yıl** içindeki toplantıların **yarısına** katılmayan üye için uygulanır.\n- Savunması alınır.\n- Üye tam sayısının salt çoğunluğuyla karar verilir.\n\n**Seçilme yeterliliğinin kaybı:** Valinin bildirmesi üzerine üyeliğin düşmesine **Danıştay** karar verir.\n\n**Fesih sebepleri:**\n- **a)** Kanunla verilen görevleri süresinde yapmayı ihmal edip işleri aksatmak.\n- **b)** Görevle ilgisi olmayan siyasî konularda karar almak.\n\n**Fesih usulü:**\n- **İçişleri Bakanlığının bildirisi** üzerine **Danıştay kararıyla** fesih olur.\n- İçişleri Bakanlığı gerekli görürse fesih bildirisiyle birlikte toplantıların ertelenmesini de ister. Danıştay bunu en geç **bir ay** içinde karara bağlar.\n- Yeni seçilen meclis kalan süreyi tamamlar.\n\n**Dikkat:**\n- Devamsızlık ölçüsü arka arkaya üç birleşim günüdür; 20 birleşim günü gibi şıklar yanlıştır.\n- Feshi Danıştay yapar; erteleme talebi İçişleri Bakanlığından gelir.",
+      "articleRefs": [
+        "21",
+        "22"
+      ],
+      "counterNumbers": [
+        20
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "İl encümeninin görev ve yetkileri",
+      "body": "- **a)** Stratejik plân, yıllık çalışma programı, bütçe ve kesin hesabı inceleyip meclise görüş bildirmek.\n- **b)** Yıllık çalışma programındaki işlerle ilgili **kamulaştırma kararlarını** almak ve uygulamak.\n- **c)** Öngörülmeyen giderler ödeneğinin harcama yerlerini belirlemek.\n- **d)** Bütçede fonksiyonel sınıflandırmanın **ikinci düzeyleri** arasında aktarma yapmak.\n- **e)** Kanunlarda öngörülen **cezaları vermek**.\n- **f)** Vergi, resim ve harçlar dışında kalan ve miktarı beşmilyar Türk Lirasına kadar olan ihtilafların sulhen halline karar vermek.\n- **g)** Taşınmaz satımı, trampa ve tahsis kararlarını uygulamak; süresi **üç yılı** geçmeyen kiralamaya karar vermek.\n- **h)** Belediye sınırları dışındaki umuma açık yerlerin **açılış ve kapanış saatlerini** belirlemek.\n- **i)** Valinin havale ettiği konularda görüş bildirmek.\n- **j)** Kanunlarla verilen diğer görevleri yapmak.",
+      "articleRefs": [
+        "26"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Encümen toplantısı",
+      "body": "**Toplanma:**\n- Encümen **haftada en az bir defa**, önceden belirlenen gün ve saatte toplanır.\n- Başkan acil durumlarda encümeni toplantıya çağırabilir.\n\n**Yeter sayı ve oylama:**\n- Üye tam sayısının salt çoğunluğuyla toplanır, katılanların salt çoğunluğuyla karar verir.\n- Eşitlikte başkanın tarafı çoğunluk sayılır.\n- **Çekimser oy kullanılamaz.** Bu kural ihale komisyonu toplantılarında da geçerlidir.\n\n**Gündem:**\n- Gündemi **vali** hazırlar.\n- Üyeler gündem maddesi teklif edebilir.\n- Gündemdeki konular en geç **bir hafta** içinde karara bağlanır.\n\n**İmza:** Kararları başkan ve katılan üyeler imzalar. Muhalifler gerekçelerini açıklar.\n\n**Valinin itirazı:**\n- Vali, kanun ve diğer mevzuat hükümleri ile il genel meclisi kararlarına aykırı gördüğü kararın bir sonraki toplantıda tekrar görüşülmesini isteyebilir.\n- Encümen ısrar ederse karar kesinleşir.\n- Vali uygulamayı durdurur ve **on gün** içinde yürütmeyi durdurma talebiyle idari yargıya başvurur.\n- Danıştay en geç **altmış gün** içinde karar verir.\n\n**Katılma yasağı:** Başkan ve üyeler, kendileri, ikinci derece dahil kan ve kayın hısımları ve evlatlıklarıyla ilgili toplantılara katılamaz.",
+      "articleRefs": [
+        "27"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Encümen mi, vali mi?",
+      "body": "**Toplanma sıklığı:** Encümen \"ayda bir\" değil, **haftada en az bir defa** toplanır.\n\n**Israr hâli süreleri:**\n- Kesinleşen karara karşı valinin başvuru süresi **on gün**dür.\n- Altmış gün ise Danıştay'ın karar süresidir.\n\n**Valinin görevleri (encümenin değil):**\n- taşınır ve taşınmaz malları idare etmek\n- gelir ve alacakları takip ve tahsil etmek\n- il halkının huzur ve esenliği için önlem almak\n- teşkilatı sevk ve idare etmek\n- şartsız bağışları kabul etmek\n\n**Encümende kalanlar:**\n- umuma açık yerlerin açılış ve kapanış saatleri\n- üç yılı geçmeyen kiralama\n- kamulaştırma kararı\n- kanunlarda öngörülen cezaları vermek\n\nBir yaptırım kararını kimin aldığı sorulursa encümeni düşün.\n\n**Kadro ihdası:** Valinin listesinde yoktur; vali yalnızca personeli atar.",
+      "articleRefs": [
+        "26",
+        "27",
+        "30"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Hizmetlerde aksama",
+      "body": "**Ön şart:**\n- Hizmetler ciddî biçimde aksatılmış olmalıdır.\n- Bu durum halkın sağlık, huzur ve esenliğini hayatî derecede olumsuz etkilemelidir.\n- Bunu **ilgili bakanlığın talebi** üzerine **yetkili sulh hukuk hâkimi** belirler.\n\n**Süreç (İçişleri Bakanlığı yürütür):**\n- **a)** Aksamanın giderilmesini, makul bir süre vererek il özel idaresinden ister.\n- **b)** Giderilmezse, hizmetin yerine getirilmesini o ilin **valisinden** ister.\n\n**Valinin kullanacağı imkânlar:**\n- Vali önce il özel idaresinin araç, gereç, personel ve kaynaklarını kullanır.\n- Bunlar yetmezse diğer kamu kurumlarının imkânlarını da kullanabilir.\n\n**Maliyet:**\n- Vali maliyeti **İller Bankasına** bildirir.\n- Tutar, il özel idaresinin müteakip ay genel bütçe vergi gelirlerinden aldığı paydan valilik emrine gönderilir.\n\n**Dikkat:** Aksamayı belirleyen Danıştay değil, **sulh hukuk hâkimidir**.",
+      "articleRefs": [
+        "40"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Bütçenin hazırlanması ve kabulü",
+      "body": "**Hazırlık:**\n- Bütçe tasarısını **vali** hazırlar.\n- Tasarı **eylül ayı başında** il encümenine sunulur.\n\n**Encümen aşaması:** Encümen tasarıyı inceler ve görüşüyle birlikte **kasım ayının birinci gününden önce** il genel meclisine sunar.\n\n**Meclis aşaması:**\n- Meclis tasarıyı **yıl başından önce** aynen veya değiştirerek kabul eder.\n- Bütçe denkliğini bozacak biçimde gider artırıcı ve gelir azaltıcı değişiklik **yapamaz**.\n\n**Süresinde kesinleşmezse:**\n- Vali, görüşüyle birlikte durumu İçişleri Bakanlığına bildirir.\n- İçişleri Bakanının **otuz gün** içinde vereceği karar kesindir.\n\n**Dikkat:** Bakanlığa gitme yalnız \"süresi içinde kesinleşmeme\" hâli için öngörülmüştür. Kesinleşen bütçe onaya gönderilmez.",
+      "articleRefs": [
+        "45"
+      ]
+    },
+    {
+      "type": "numbers",
+      "title": "Kararlar, komisyonlar, encümen, bütçe",
+      "rows": [
+        {
+          "label": "Meclis kararının valiye gönderilmesi",
+          "value": "en geç 5 gün",
+          "refs": [
+            "15"
+          ]
+        },
+        {
+          "label": "Valinin iade süresi",
+          "value": "7 gün",
+          "refs": [
+            "15"
+          ]
+        },
+        {
+          "label": "Kesinleşen karar özetlerinin halka duyurulması",
+          "value": "en geç 7 gün",
+          "refs": [
+            "15"
+          ]
+        },
+        {
+          "label": "İhtisas komisyonu görev süresi",
+          "value": "1 yıl",
+          "refs": [
+            "16"
+          ]
+        },
+        {
+          "label": "İhtisas komisyonu üye sayısı",
+          "value": "en az 3, en fazla 5",
+          "refs": [
+            "16"
+          ]
+        },
+        {
+          "label": "Plân ve Bütçe / İmar ve Bayındırlık komisyonu",
+          "value": "en çok 7 kişi",
+          "refs": [
+            "16"
+          ]
+        },
+        {
+          "label": "İmar ve bayındırlık komisyonu çalışma süresi",
+          "value": "en fazla 10 iş günü",
+          "refs": [
+            "16"
+          ]
+        },
+        {
+          "label": "Diğer komisyonların çalışma süresi",
+          "value": "5 iş günü",
+          "refs": [
+            "16"
+          ]
+        },
+        {
+          "label": "Genel görüşme isteği",
+          "value": "üyelerin en az 1/3'ü",
+          "refs": [
+            "18"
+          ]
+        },
+        {
+          "label": "Faaliyet raporu yetersizlik kararı",
+          "value": "üye tam sayısının 3/4'ü",
+          "refs": [
+            "18"
+          ]
+        },
+        {
+          "label": "Devamsızlık nedeniyle üyeliğin düşmesi",
+          "value": "arka arkaya 3 birleşim günü ya da 1 yıl içindeki toplantıların yarısı",
+          "refs": [
+            "21"
+          ]
+        },
+        {
+          "label": "Danıştay'ın erteleme kararı",
+          "value": "en geç 1 ay",
+          "refs": [
+            "22"
+          ]
+        },
+        {
+          "label": "Encümenin sulhen hal yetkisi",
+          "value": "beşmilyar TL'ye kadar",
+          "refs": [
+            "26"
+          ]
+        },
+        {
+          "label": "Encümenin karar verebileceği kiralama",
+          "value": "3 yılı geçmemek üzere",
+          "refs": [
+            "26"
+          ]
+        },
+        {
+          "label": "Encümen toplantısı",
+          "value": "haftada en az 1 defa",
+          "refs": [
+            "27"
+          ]
+        },
+        {
+          "label": "Encümenin gündemi karara bağlama süresi",
+          "value": "en geç 1 hafta",
+          "refs": [
+            "27"
+          ]
+        },
+        {
+          "label": "Israr edilen encümen kararına valinin başvurusu",
+          "value": "10 gün",
+          "refs": [
+            "27"
+          ]
+        },
+        {
+          "label": "Danıştay'ın itirazı karara bağlaması",
+          "value": "en geç 60 gün",
+          "refs": [
+            "27"
+          ]
+        },
+        {
+          "label": "Bütçe tasarısının encümene sunulması",
+          "value": "eylül ayı başı",
+          "refs": [
+            "45"
+          ]
+        },
+        {
+          "label": "Encümenin bütçeyi meclise sunması",
+          "value": "kasım ayının 1. gününden önce",
+          "refs": [
+            "45"
+          ]
+        },
+        {
+          "label": "Kesinleşmeyen bütçede İçişleri Bakanının kararı",
+          "value": "30 gün içinde, kesin",
+          "refs": [
+            "45"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "15",
+        "16",
+        "18",
+        "21",
+        "22",
+        "26",
+        "27",
+        "45"
+      ]
+    },
+    {
+      "type": "compare",
+      "title": "İl encümeni ve vali yan yana",
+      "rows": [
+        {
+          "aspect": "Bütçe",
+          "left": "Bütçe ve kesin hesabı inceleyip meclise görüş bildirir",
+          "right": "Bütçeyi hazırlar ve uygular",
+          "refs": [
+            "26",
+            "30"
+          ]
+        },
+        {
+          "aspect": "Aktarma",
+          "left": "Fonksiyonel sınıflandırmanın ikinci düzeyleri arasında",
+          "right": "Meclis ve encümenin yetkisi dışında kalan aktarmalar",
+          "refs": [
+            "26",
+            "30"
+          ]
+        },
+        {
+          "aspect": "Taşınmaz mallar",
+          "left": "Satım, trampa ve tahsis kararlarını uygular; üç yılı geçmeyen kiralamaya karar verir",
+          "right": "Taşınır ve taşınmaz malları idare eder",
+          "refs": [
+            "26",
+            "30"
+          ]
+        },
+        {
+          "aspect": "Uyuşmazlık ve dava",
+          "left": "Vergi, resim ve harçlar dışında beşmilyar TL'ye kadar ihtilafların sulhen halline karar verir",
+          "right": "Davacı veya davalı olarak temsil eder ya da vekil tayin eder",
+          "refs": [
+            "26",
+            "30"
+          ]
+        },
+        {
+          "aspect": "Ceza ve önlem",
+          "left": "Kanunlarda öngörülen cezaları verir",
+          "right": "İl halkının huzur, esenlik, sağlık ve mutluluğu için önlem alır",
+          "refs": [
+            "26",
+            "30"
+          ]
+        },
+        {
+          "aspect": "Bağış",
+          "left": "Sayılmamış",
+          "right": "Şartsız bağışları kabul eder",
+          "refs": [
+            "26",
+            "30"
+          ]
+        },
+        {
+          "aspect": "Personel",
+          "left": "Sayılmamış",
+          "right": "İl özel idaresi personelini atar",
+          "refs": [
+            "26",
+            "30"
+          ]
+        },
+        {
+          "aspect": "Encümenle ilişki",
+          "left": "Gündem maddesi teklif edebilir",
+          "right": "Encümene başkanlık eder; gündemi hazırlar",
+          "refs": [
+            "27",
+            "30"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "26",
+        "27",
+        "30"
+      ]
+    },
+    {
+      "type": "exam_stats",
+      "title": "Sınav der ki",
+      "rows": [
+        {
+          "label": "Bu ünitenin maddelerinden yayındaki soru",
+          "value": "26",
+          "refs": [
+            "3",
+            "4",
+            "6",
+            "7",
+            "11",
+            "12",
+            "14",
+            "15",
+            "16",
+            "18",
+            "21",
+            "22",
+            "26",
+            "27",
+            "30",
+            "40",
+            "45"
+          ]
+        },
+        {
+          "label": "md 26 — Encümenin görev ve yetkileri",
+          "value": "4 soru",
+          "refs": [
+            "26"
+          ]
+        },
+        {
+          "label": "md 7 — İl özel idaresinin yetkileri ve imtiyazları",
+          "value": "2 soru",
+          "refs": [
+            "7"
+          ]
+        },
+        {
+          "label": "md 12 — Meclis toplantısı",
+          "value": "2 soru",
+          "refs": [
+            "12"
+          ]
+        },
+        {
+          "label": "md 18 — Meclisin bilgi edinme ve denetim yolları",
+          "value": "2 soru",
+          "refs": [
+            "18"
+          ]
+        },
+        {
+          "label": "md 22 — Meclisin feshi",
+          "value": "2 soru",
+          "refs": [
+            "22"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "3",
+        "4",
+        "6",
+        "7",
+        "11",
+        "12",
+        "14",
+        "15",
+        "16",
+        "18",
+        "21",
+        "22",
+        "26",
+        "27",
+        "30",
+        "40",
+        "45"
+      ],
+      "generated": true
+    },
+    {
+      "type": "bridge",
+      "title": "Bu üniteden soru çöz",
+      "articleRefs": [
+        "3",
+        "4",
+        "6",
+        "7",
+        "11",
+        "12",
+        "14",
+        "15",
+        "16",
+        "18",
+        "21",
+        "22",
+        "26",
+        "27",
+        "30",
+        "40",
+        "45"
+      ],
+      "generated": true,
+      "rows": [
+        {
+          "label": "Madde kapsamlı seans",
+          "value": "md 3, 4, 6, 7, 11, 12, 14–16, 18, 21, 22, 26, 27, 30, 40, 45, 10 soru",
+          "refs": [
+            "3",
+            "4",
+            "6",
+            "7",
+            "11",
+            "12",
+            "14",
+            "15",
+            "16",
+            "18",
+            "21",
+            "22",
+            "26",
+            "27",
+            "30",
+            "40",
+            "45"
+          ]
+        }
+      ]
+    }
+  ]
+}
