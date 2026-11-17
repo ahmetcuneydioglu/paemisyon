@@ -1,0 +1,543 @@
+{
+  "unit": {
+    "slug": "iyuk-karar-yurutmenin-durdurulmasi-ve-yetki",
+    "legislationSlug": "2577-idari-yargilama-usulu-kanunu-iyuk",
+    "topicId": "e22d1f78-8191-4099-9134-044c59114bd7",
+    "title": "Karar, yürütmenin durdurulması ve yetki",
+    "subtitle": "İnceleme, karar, işlemden kaldırma, yürütmenin durdurulması, kararların uygulanması, yetki ve bağlantı",
+    "articleFrom": "20",
+    "articleTo": "38",
+    "readingMinutes": 13,
+    "sourceLabel": "AI özeti — 2577 İdari Yargılama Usulü Kanunu (İYUK), md 20, 24, 26–34, 36–38",
+    "articleNos": [
+      "20",
+      "24",
+      "26",
+      "27",
+      "28",
+      "29",
+      "30",
+      "31",
+      "32",
+      "33",
+      "34",
+      "36",
+      "37",
+      "38"
+    ],
+    "generatedBy": "claude-opus-5-5 (ozet-uret.ts)",
+    "sortOrder": 2
+  },
+  "blocks": [
+    {
+      "type": "concept",
+      "title": "İdari yargıda mahkeme incelemeyi kendisi yürütür",
+      "body": "İdari yargıda inceleme kendiliğinden yapılır. Danıştay, bölge idare mahkemeleri ile idare ve vergi mahkemeleri, baktıkları davaya ait her türlü incelemeyi kendileri yürütür. Mahkeme, belirlediği süre içinde gerekli gördüğü evrakı ve bilgiyi taraflardan ve ilgili diğer yerlerden isteyebilir. Bu kararlara süresinde uymak mecburidir. Haklı sebep varsa süre bir defaya mahsus uzatılabilir. Taraf ara kararının gereğini yapmazsa, bunun karara etkisini mahkeme önceden takdir eder ve ara kararında ayrıca belirtir.",
+      "articleRefs": [
+        "20"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Belge için kanunda sabit gün yok",
+      "body": "Sık görülen yanlış şık şudur: “istenen belgeler **30 gün** içinde gönderilir”. Kanun böyle bir süre koymaz; süreyi mahkeme belirler.\n\nDoğru olanları da tanı:\n- Haklı sebep varsa süre bir defaya mahsus uzatılabilir.\n- İstenen bilgi ve belgeler Devletin güvenliğine veya yüksek menfaatlerine ilişkin olabilir. Bunlarla birlikte yabancı devletlere de ilişkin olabilir. Bu hâllerde Cumhurbaşkanı ya da ilgili Cumhurbaşkanı yardımcısı veya bakan, gerekçesini bildirerek bu bilgi ve belgeleri vermeyebilir.\n\nDengeyi kuran cümleyi unutma: verilmeyen bilgi ve belgelere dayanılarak ileri sürülen savunmaya göre karar verilemez.",
+      "articleRefs": [
+        "20"
+      ],
+      "counterNumbers": [
+        30
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Kararda neler belirtilir? (md 24)",
+      "body": "- Tarafların ve varsa vekil veya temsilcilerinin ad ve soyadları yahut unvanları ve **adresleri**\n- Davacının ileri sürdüğü olaylar ve dayandığı hukuki sebepler, istem sonucu ve **davalının savunması** (kısaca)\n- **Danıştayda görülen davalarda** tetkik hakimi ve savcının ad ve soyadları ile düşünceleri\n- Duruşmalı davalarda duruşma yapılıp yapılmadığı; yapıldıysa hazır bulunan taraflar ve vekil veya temsilcileri\n- Kararın dayandığı hukuki sebepler, gerekçe ve hüküm; **tazminat davalarında** hükmedilen tazminatın miktarı\n- Yargılama giderleri ve hangi tarafa yükletildiği\n- Kararın tarihi ve oybirliği mi, oyçokluğu ile mi verildiği\n- Başkan ve üyelerin veya hakimin ad ve soyadları, imzaları ve varsa karşı oyları\n- Daire veya mahkemenin adı, dosyanın esas ve karar numarası\n\n**Kararlar, verildiği tarihten itibaren otuz gün içinde yazılır ve imzalanır.**\n\nDikkat: tazminat miktarı yalnız tazminat davalarına özgü bir kalemdir. İptal davasını kabul eden kararda bu kalem bulunmaz.",
+      "articleRefs": [
+        "24"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Dosyanın işlemden kaldırılması (md 26)",
+      "body": "**Kişilik veya nitelik değişikliği** (ölüm veya herhangi bir sebep):\n- Dosya, davayı takip hakkı kendisine geçenin başvurmasına kadar işlemden kaldırılır.\n- Gerçek kişi tarafın ölümünde dosya, idarenin mirasçılar aleyhine takibi yenilemesine kadar işlemden kaldırılır.\n- **Dört ay** içinde yenileme dilekçesi verilmezse, varsa yürütmenin durdurulması kararı kendiliğinden hükümsüz kalır.\n- Yalnız öleni ilgilendiren davalara ait dilekçeler iptal edilir.\n\n**Davacının gösterdiği adrese tebligat yapılamaması:**\n- Dosya, yeni adres bildirilinceye kadar işlemden kaldırılır.\n- Varsa yürütmenin durdurulması kararı kendiliğinden hükümsüz kalır.\n- İşlemden kaldırma tarihinden başlayarak **bir yıl** içinde yeni adres bildirilip dosyanın yeniden işleme konulması istenmezse, davanın **açılmamış sayılmasına** karar verilir.\n\nİşlemden kaldırma ve açılmamış sayılma kararları diğer tarafa tebliğ edilir.",
+      "articleRefs": [
+        "26"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Dört ay mı, bir yıl mı?",
+      "body": "Bu maddedeki süreleri karıştırma.\n\n**Dört ay:** Kişilik veya nitelik değişikliğinde yenileme dilekçesi süresidir. Kaçırılırsa yürütmenin durdurulması kararı hükümsüz kalır.\n\n**Bir yıl:** Adrese tebligat yapılamadığında yeni adres bildirme süresidir. Kaçırılırsa dava açılmamış sayılır.\n\nDava sürerken taraf değişebilir; örneğin dava konusu taşınmaz satılabilir. Bu durumda mahkeme:\n- davayı yeni malikle kendiliğinden sürdürmez,\n- davayı husumetten reddetmez,\n- “karar verilmesine yer yok” da demez.\n\nTakip hakkı kendisine geçenin başvurusuna kadar dosyanın **işlemden kaldırılmasına** karar verir.",
+      "articleRefs": [
+        "26"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Yürütmenin durdurulması: şartlar ve usul (md 27)",
+      "body": "**Temel kural:** Danıştayda veya idari mahkemelerde dava açılması, dava edilen idari işlemin yürütülmesini **durdurmaz**.\n\n**Şartlar birlikte gerçekleşmeli:**\n- İşlemin uygulanması hâlinde **telafisi güç veya imkânsız zararların** doğması **ve**\n- İşlemin **açıkça hukuka aykırı** olması\n\n**Usul:** Karar, davalı idarenin savunması alındıktan veya savunma süresi geçtikten sonra, gerekçe gösterilerek verilir. Kararda iki husus belirtilmek zorundadır:\n- işlemin hangi gerekçelerle hukuka açıkça aykırı olduğu,\n- doğacak telafisi güç veya imkânsız zararların neler olduğu.\n\n**İstisna:** Uygulanmakla etkisi tükenecek işlemler, savunma alınmadan da durdurulabilir. Savunma alındıktan sonra yeniden karar verilir. Ancak kamu görevlileri hakkındaki şu işlemler bu gruptan **sayılmaz**:\n- atama ve naklen atama,\n- görev ve unvan değişikliği,\n- geçici veya sürekli görevlendirme.\n\n**Savunmasız ret:** Dava dilekçesi ve eklerinden istemin yerinde olmadığı anlaşılırsa, istem savunma alınmadan reddedilebilir.\n\n**Yasak:** Sadece ilgili kanun veya Cumhurbaşkanlığı Kararnamesi hükmünün iptali için Anayasa Mahkemesine başvurulduğu gerekçesiyle yürütmenin durdurulması kararı verilemez.",
+      "articleRefs": [
+        "27"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Vergi davası, teminat ve kısaltılan süreler (md 27)",
+      "body": "**Vergi mahkemelerinde fark:** Vergi uyuşmazlığından doğan davanın açılması, tahsil işlemlerini durdurur. Bu etki şunların yalnız **dava konusu edilen bölümü** için geçerlidir: tarh edilen vergi, resim, harç ve benzeri mali yükümler ile bunların zam ve cezaları.\n\n**Tahsili durdurmayan hâller** (bunlarda yürütmenin durdurulması istenebilir):\n- Adrese tebligat yapılamadığı için işlemden kaldırılan vergi dosyalarında (md 26) tahsil devam eder. Bu dosyanın yeniden işleme konulması da tahsili durdurmaz.\n- İhtirazi kayıtla verilen beyannameler üzerine yapılan işlemlerden doğan davalar\n- Tahsilat işlemlerinden dolayı açılan davalar\n\n**Teminat:**\n- Yürütmenin durdurulması kararları teminat karşılığında verilir; durumun gereklerine göre teminat aranmayabilir.\n- **İdareden ve adli yardımdan faydalanan kimselerden teminat alınmaz.**\n- Teminata ilişkin anlaşmazlıkları, yürütmenin durdurulması hakkında karar veren daire, mahkeme veya hakim çözümler.\n\n**Hız:** Yürütmenin durdurulması istemli davalarda md 16'da yazılı süreler kısaltılabilir. Tebliğin memur eliyle yapılmasına da karar verilebilir.",
+      "articleRefs": [
+        "27"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "İtiraz ve kararın sonrası (md 27)",
+      "body": "**İtiraz mercileri:**\n- Danıştay dava dairesi kararı → konusuna göre İdari veya Vergi Dava Daireleri Kurulu\n- Bölge idare mahkemesi kararı → en yakın bölge idare mahkemesi\n- İdare ve vergi mahkemesi ile tek hakim kararı → bölge idare mahkemesi\n\n**İtiraz süresi:** Kararın tebliğini izleyen günden itibaren **yedi gün** içinde, **bir defaya mahsus** olmak üzere.\n\n**Merciin süresi:** Dosyanın kendisine gelişinden itibaren **yedi gün** içinde karar vermek zorundadır.\n\n**İtiraz üzerine verilen kararlar kesindir.**\n\n**Sonrası:**\n- Yürütmenin durdurulması kararı verilen dosyalar **öncelikle** incelenir ve karara bağlanır.\n- Yürütmenin durdurulmasına dair kararlar **onbeş gün** içinde yazılır ve imzalanır.\n- Aynı sebeplere dayanılarak **ikinci kez** yürütmenin durdurulması isteminde bulunulamaz.",
+      "articleRefs": [
+        "27"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Yürütmenin durdurulmasında klasik tuzaklar",
+      "body": "**“Dava açmak işlemin yürütülmesini durdurur.”** Yanlış. Genel kural tam tersidir: dava açılması yürütmeyi durdurmaz. Vergi mahkemelerindeki tahsil kuralını idari işlemlerin geneline taşıma.\n\n**“Tek şart yeterli.”** Yanlış. Telafisi güç veya imkânsız zarar ile açıkça hukuka aykırılık **birlikte** aranır. Bunlardan hiçbiri tek başına yetmez. Yalnızca teminat göstermek de yetmez.\n\n**“İtiraz üzerine verilen karara temyiz yolu açıktır.”** Yanlış. İtiraz bir defaya mahsustur ve üzerine verilen karar kesindir.\n\nDoğru şıkları da tanı; şunların hepsi kanunda yazılıdır:\n- öncelikli inceleme,\n- onbeş günde yazım ve imza,\n- aynı sebeple ikinci kez istem yasağı,\n- yedi günlük itiraz süresi,\n- merciin yedi günlük karar süresi.",
+      "articleRefs": [
+        "27"
+      ]
+    },
+    {
+      "type": "numbers",
+      "title": "Süreler ve sayılar: md 20–27",
+      "rows": [
+        {
+          "label": "Belge isteme süresinin haklı sebeple uzatılması",
+          "value": "1 defa",
+          "refs": [
+            "20"
+          ]
+        },
+        {
+          "label": "Öncelikli işler dışındaki dosyaların tekemmülden itibaren sonuçlandırılması",
+          "value": "en geç 6 ay",
+          "refs": [
+            "20"
+          ]
+        },
+        {
+          "label": "Kararın yazılıp imzalanması",
+          "value": "verildiği tarihten itibaren 30 gün",
+          "refs": [
+            "24"
+          ]
+        },
+        {
+          "label": "Kişilik veya nitelik değişikliğinde yenileme dilekçesi (verilmezse yürütmenin durdurulması kararı hükümsüz)",
+          "value": "4 ay",
+          "refs": [
+            "26"
+          ]
+        },
+        {
+          "label": "Adrese tebligat yapılamayınca yeni adres bildirme (bildirilmezse dava açılmamış sayılır)",
+          "value": "işlemden kaldırmadan itibaren 1 yıl",
+          "refs": [
+            "26"
+          ]
+        },
+        {
+          "label": "Yürütmenin durdurulması kararına itiraz",
+          "value": "tebliği izleyen günden itibaren 7 gün",
+          "refs": [
+            "27"
+          ]
+        },
+        {
+          "label": "İtiraz hakkı",
+          "value": "1 defa",
+          "refs": [
+            "27"
+          ]
+        },
+        {
+          "label": "İtiraz merciinin karar süresi",
+          "value": "dosyanın gelişinden itibaren 7 gün",
+          "refs": [
+            "27"
+          ]
+        },
+        {
+          "label": "Yürütmenin durdurulması kararının yazılıp imzalanması",
+          "value": "15 gün",
+          "refs": [
+            "27"
+          ]
+        },
+        {
+          "label": "Aynı sebeple yeniden yürütmenin durdurulması istemi",
+          "value": "ikinci kez yapılamaz",
+          "refs": [
+            "27"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "20",
+        "24",
+        "26",
+        "27"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Kararların uygulanması (md 28)",
+      "body": "**Kural:** İdare, Danıştay, bölge idare, idare ve vergi mahkemelerinin esasa ve yürütmenin durdurulmasına ilişkin kararlarının icaplarına göre **gecikmeksizin** işlem tesis etmeye veya eylemde bulunmaya mecburdur. Bu süre hiçbir şekilde kararın idareye tebliğinden başlayarak **otuz günü** geçemez. Disiplin hükümleri saklıdır.\n\n**Para:** Şunlar, davacının veya vekilinin idareye yazılı olarak bildireceği banka hesabına, bildirim tarihinden itibaren, birinci fıkradaki usul ve esaslar çerçevesinde (gecikmeksizin, en geç otuz gün içinde) yatırılır:\n- hükmedilen miktar,\n- vekalet ücreti,\n- yargılama giderleri.\n\nSüresinde ödenmezse genel hükümler dairesinde infaz ve icra olunur.\n\n**Faiz:** Tazminat ve vergi davalarında, kararın tebliğ tarihi ile ödeme tarihi arasındaki süre için tecil faizi oranında faiz ödenir. Ancak kararın davacıya tebliği ile banka hesap numarasının idareye bildirildiği tarih arasında faiz işlemez.\n\n**Uygulanmazsa:** İdare aleyhine maddi ve manevi tazminat davası açılabilir. Karar kamu görevlilerince süresinde yerine getirilmezse de tazminat davası **ancak ilgili idare aleyhine** açılabilir.\n\n**Vergi:** Kararın tebliğinden sonra tespit edilen vergi, resim, harç ve benzeri mali yükümler ile zam ve cezaların miktarı mükellefe bildirilir.\n\n**Senin için önemli istisna:** Aşağıdaki davalarda göreve iade sonucunu doğuran kararlara göre işlemler, **nihai kararların kesinleşmesinden sonra** yerine getirilir.\n\nKimleri kapsar:\n- Emniyet, Jandarma ve Sahil Güvenlik teşkilatı personeli ve adayları\n- Polis Akademisi ile Jandarma ve Sahil Güvenlik Akademisi ve bunlara bağlı eğitim kurumlarındaki öğrenciler ve adayları\n- Millî Savunma Bakanlığı personeli ve adayları\n- Milli Savunma Üniversitesi askeri öğrencileri ve adayları\n- Millî İstihbarat Teşkilatı Başkanlığı personeli\n\nHangi davalarda:\n- Terör örgütleriyle eylem birliği içinde olmak, bu örgütlere yardım etmek, kamu imkân ve kaynaklarını bu örgütleri desteklemeye yönelik kullanmak ya da kullandırmak, bu örgütlerin propagandasını yapmak veya bu örgütlerle iltisaklı olmak gerekçeleriyle kamu görevine alınmayan, kamu görevinden veya meslekten ayrılan/çıkarılan yahut sözleşmesi feshedilenlerle ilgili davalar\n- 375 sayılı Kanun Hükmünde Kararnamenin geçici 35 inci maddesi uyarınca tesis edilen idari işlemlere karşı açılan davalar\n- Güvenlik soruşturması ve arşiv araştırmasının olumsuz değerlendirilmesine karşı açılan davalar",
+      "articleRefs": [
+        "28"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Otuz gün: üst sınır, başlangıcı tebliğ",
+      "body": "Sorulan çoğu zaman şu sayıdır: idarenin karara göre işlem tesis etme süresi en çok **otuz gün**dür ve kararın idareye tebliğinden başlar. **On beş gün** ya da **altmış gün** şıklarına düşme.\n\nOtuz gün bir izin değil, sınırdır. Asıl kural “gecikmeksizin” işlem yapmaktır.\n\nİkinci tuzak: “Kararı süresinde uygulamayan kamu görevlisine doğrudan tazminat davası açılır.” Yanlış. Tazminat davası ancak ilgili idare aleyhine açılabilir.",
+      "articleRefs": [
+        "28"
+      ],
+      "counterNumbers": [
+        15,
+        60
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Açıklama ve düzeltmede düşülen yanlışlar",
+      "body": "**“Açıklama her zaman istenebilir.”** Yanlış. Açıklama veya aykırılığın kaldırılması **kararın yerine getirilmesine kadar** istenebilir.\n\nAçıklamayla ilgili doğru bilgiler:\n- Karar yeterince açık değilse veya birbirine aykırı hüküm fıkraları taşıyorsa istenir.\n- Kararı vermiş olan daire veya mahkeme inceler.\n- Dilekçe, karşı taraf sayısından **bir nüsha fazla** verilir.\n\n**Düzeltmenin kapsamı sınırlıdır.** Yalnız şu yanlışlıklar düzeltilebilir:\n- tarafların adı ve soyadı,\n- tarafların sıfatı,\n- iddialarının sonucu,\n- hüküm fıkrasındaki hesap yanlışlıkları.\n\nMahkemenin **görev ve yetkisi** bu listede yoktur; düzeltme yoluyla istenemez. Düzeltmeye karar verilirse düzeltme ilamın altına yazılır.",
+      "articleRefs": [
+        "29",
+        "30"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Kanunda hüküm yoksa: Hukuk Muhakemeleri Kanunu (md 31)",
+      "body": "İYUK'ta hüküm bulunmayan şu konularda Hukuk Usulü Muhakemeleri Kanunu hükümleri uygulanır:\n- hakimin davaya bakmaktan memnuiyeti ve reddi\n- ehliyet\n- üçüncü şahısların davaya katılması\n- davanın ihbarı\n- tarafların vekilleri\n- dosyanın taraflar ve ilgililerce incelenmesi\n- feragat ve kabul\n- teminat\n- mukabil dava\n- bilirkişi, keşif ve delillerin tespiti\n- yargılama giderleri\n- adli yardım\n- duruşmada mahkemenin sükununu ve inzibatını bozan hareketler\n- elektronik işlemler ile ses ve görüntü nakli yoluyla duruşma\n\n**Ancak:**\n- Davanın ihbarı Danıştay, mahkeme veya hakim tarafından **re'sen** yapılır.\n- Bilirkişiler, bilirkişilik bölge kurullarının hazırladığı listelerden seçilir.\n- Vergi uyuşmazlıklarında, Hukuk Usulü Muhakemeleri Kanununa atıf yapılan hâller saklı kalmak üzere, Vergi Usul Kanunu uygulanır.\n\n**Tuzak:** “Yetki kuralları” bu listede yoktur. Yetkiyi İYUK kendisi düzenler (md 32 ve devamı).",
+      "articleRefs": [
+        "31",
+        "32"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Genel yetki kuralı (md 32)",
+      "body": "Göreve ilişkin hükümler saklı kalmak şartıyla, İYUK'ta veya özel kanunlarda yetkili idare mahkemesi gösterilmemişse yetkili mahkeme şudur: **dava konusu idari işlemi veya idari sözleşmeyi yapan idari merciin bulunduğu yerdeki idare mahkemesi.**\n\n**Bu Kanunun uygulanmasında yetki kamu düzenindendir.**",
+      "articleRefs": [
+        "32"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Yetkide anlaşma yok, “davacının yeri” de yok",
+      "body": "**“Taraflar anlaşarak yetkili mahkemeyi belirleyebilir.”** Yanlış. Bu Kanunun uygulanmasında yetki kamu düzenindendir.\n\nİptal davasında genel yetkili mahkeme **işlemi yapan idari merciin bulunduğu yer**dir. Şunlar genel yetkili yer değildir:\n- davacının bulunduğu yer,\n- merciin bağlı olduğu kuruluşun yeri,\n- işleme katılan mercilerden herhangi birinin yeri.\n\n**Özel yetki kuralı olan konular:**\n- kamu görevlileri (md 33)\n- taşınmazlar ile köy, belediye ve özel idareler (md 34)\n- idari sözleşmelerden doğanlar dışındaki tam yargı davaları (md 36)\n- vergi uyuşmazlıkları (md 37)\n\n**İdari sözleşmeler** ve düzenleyici işlemler için bu maddelerde ayrı kural yoktur; yetkili mahkeme başka bir hükümde gösterilmemişse md 32'deki genel kural uygulanır.",
+      "articleRefs": [
+        "32",
+        "33",
+        "34",
+        "36",
+        "37"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Kamu görevlilerinde yetki (md 33)",
+      "body": "- **Atama ve nakil** → yeni **veya** eski görev yeri idare mahkemesi\n- **Görevine son verme, emekli etme, görevden uzaklaştırma** → son görev yaptığı yer idare mahkemesi\n- **İlgilinin görevli bulunduğu yer idare mahkemesine giden davalar:**\n  - görevle ilişkiyi kesmeyen disiplin cezaları\n  - ilerleme, yükselme, sicil, intibak, diğer özlük ve parasal haklar\n  - mahalli idare organları ve üyelerinin geçici bir tedbir olarak görevden uzaklaştırılması\n- **Hâkim ve savcılar** (özel kanunlar saklı): mali ve sosyal hakları, sicilleri ve müfettiş hal kâğıtları → görev yerinin bağlı olduğu bölge idare mahkemesine **en yakın** bölge idare mahkemesinin bulunduğu yer idare mahkemesi",
+      "articleRefs": [
+        "33"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Kurumun merkezi yetki vermez",
+      "body": "İzmir'den Erzurum'a atanan memur, atamaya karşı hem İzmir'de hem Erzurum'da dava açabilir; çünkü yetkili yer yeni veya eski görev yeridir. Kurumun merkezinin bulunduğu şehir bu davada yetkili değildir.\n\nEmeklilikte de aynı tuzak kurulur. Emekli edilme davasında yetkili yer, emeklilik işlemini yapan merciin yeri değil, **son görev yapılan yer**dir. Görevden uzaklaştırma da son görev yerine gider.\n\nDikkat: mahalli idare organlarının **geçici bir tedbir** olarak görevden uzaklaştırılması farklıdır. Bu davalar ilgilinin görevli bulunduğu yere gider.",
+      "articleRefs": [
+        "33"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Taşınmaz, mahalli idare, tam yargı ve vergide yetki",
+      "body": "**Taşınmazlar (md 34):** Şu davalarda yetkili mahkeme, taşınmazın bulunduğu yer idare mahkemesidir:\n- imar, kamulaştırma, yıkım, işgal, tahsis, ruhsat ve iskan gibi taşınmaz mallarla ilgili mevzuatın uygulanması,\n- bunlara bağlı her türlü haklar,\n- kamu malları.\n\n**Köy, belediye, özel idare ve sınır uyuşmazlıkları (md 34):** Mülki idari birimin, köy, belediye veya mahallenin bulunduğu **yahut yeni bağlandığı** yer idare mahkemesi yetkilidir. Bulunduğu yer de, yeni bağlandığı yer de olabilir.\n\n**Tam yargı (md 36)** — idari sözleşmelerden doğanlar hariç, sırasıyla:\n- Zararı doğuran idari uyuşmazlığı çözümlemeye yetkili mahkeme\n- Zarar bayındırlık, ulaştırma gibi bir hizmetten veya idarenin herhangi bir eyleminden doğmuşsa: hizmetin görüldüğü veya **eylemin yapıldığı yer**. Eylemi yürüten merciin yeri değil!\n- Diğer hâllerde: davacının ikametgâhının bulunduğu yer\n\n**Vergi (md 37):** Aşağıdaki dairenin bulunduğu yerdeki vergi mahkemesi yetkilidir:\n- Genel olarak: vergi, resim, harç ve benzeri mali yükümleri tarh ve tahakkuk ettiren, zam ve cezaları kesen daire\n- Gümrük vergileri ile Vergi Usul Kanununa göre şikâyet yoluyla düzeltme taleplerinin reddinde: tarh ve tahakkuk ettiren daire\n- Amme Alacaklarının Tahsil Usulü Kanununun uygulanmasında: **ödeme emrini düzenleyen** daire\n- Diğer uyuşmazlıklarda: dava konusu işlemi yapan daire",
+      "articleRefs": [
+        "34",
+        "36",
+        "37"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Bağlantılı davalar (md 38)",
+      "body": "**Tanım:** Şu davalar bağlantılıdır:\n- aynı maddi veya hukuki sebepten doğan davalar,\n- biri hakkında verilecek hükmün diğerini etkileyeceği davalar.\n\n**Kim karar verir:** Bağlantının varlığına taraflardan birinin isteği üzerine **veya doğrudan doğruya mahkemece** karar verilir. “Mahkeme kendiliğinden karar veremez” şıkkı bu yüzden yanlıştır.\n\n**Dosya nereye gider:**\n- Davalardan biri Danıştaydaysa → Danıştay\n- Davalar değişik bölge idare mahkemelerinin yargı çevrelerindeki mahkemelerdeyse → Danıştay\n- Davalar aynı bölge idare mahkemesinin yargı çevresindeki mahkemelerdeyse → o yer bölge idare mahkemesi",
+      "articleRefs": [
+        "38"
+      ]
+    },
+    {
+      "type": "numbers",
+      "title": "Son tekrar: sınavda en çok sorulan sayılar",
+      "rows": [
+        {
+          "label": "İdarenin karara göre işlem tesisi (tebliğden itibaren)",
+          "value": "en çok 30 gün",
+          "refs": [
+            "28"
+          ]
+        },
+        {
+          "label": "Açıklama dilekçesi",
+          "value": "karşı taraf sayısı + 1 nüsha",
+          "refs": [
+            "29"
+          ]
+        },
+        {
+          "label": "Açıklama dilekçesine cevap",
+          "value": "2 nüsha",
+          "refs": [
+            "29"
+          ]
+        },
+        {
+          "label": "Açıklama veya aykırılığın kaldırılması istemi",
+          "value": "kararın yerine getirilmesine kadar",
+          "refs": [
+            "29"
+          ]
+        },
+        {
+          "label": "Kararların yazılıp imzalanması (genel)",
+          "value": "30 gün",
+          "refs": [
+            "24"
+          ]
+        },
+        {
+          "label": "Yürütmenin durdurulması kararlarının yazılıp imzalanması",
+          "value": "15 gün",
+          "refs": [
+            "27"
+          ]
+        },
+        {
+          "label": "Yürütmenin durdurulmasına itiraz",
+          "value": "7 gün, 1 defa",
+          "refs": [
+            "27"
+          ]
+        },
+        {
+          "label": "Adrese tebligat yapılamayınca yeni adres bildirme",
+          "value": "1 yıl",
+          "refs": [
+            "26"
+          ]
+        },
+        {
+          "label": "Kişilik veya nitelik değişikliğinde yenileme dilekçesi",
+          "value": "4 ay",
+          "refs": [
+            "26"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "24",
+        "26",
+        "27",
+        "28",
+        "29"
+      ]
+    },
+    {
+      "type": "compare",
+      "title": "Açıklama (sol) ve yanlışlığın düzeltilmesi (sağ)",
+      "rows": [
+        {
+          "aspect": "Ne zaman istenir",
+          "left": "Karar yeterince açık değilse veya birbirine aykırı hüküm fıkraları taşıyorsa",
+          "right": "İki tarafın adı-soyadı, sıfatı, iddialarının sonucuna ilişkin yanlışlık ya da hüküm fıkrasındaki hesap yanlışlığı varsa",
+          "refs": [
+            "29",
+            "30"
+          ]
+        },
+        {
+          "aspect": "Kim ister",
+          "left": "Taraflardan her biri",
+          "right": "Md 29'daki hükümler uygulanır",
+          "refs": [
+            "29",
+            "30"
+          ]
+        },
+        {
+          "aspect": "Dilekçe",
+          "left": "Karşı taraf sayısından bir nüsha fazla",
+          "right": "Md 29'daki hükümler uygulanır",
+          "refs": [
+            "29",
+            "30"
+          ]
+        },
+        {
+          "aspect": "İnceleyen",
+          "left": "Kararı vermiş olan daire veya mahkeme; gerek görürse karşı tarafa tebliğ eder, cevap iki nüsha",
+          "right": "Md 29'daki hükümler uygulanır",
+          "refs": [
+            "29",
+            "30"
+          ]
+        },
+        {
+          "aspect": "Süre",
+          "left": "Kararın yerine getirilmesine kadar",
+          "right": "Md 29'un son fıkrası (süre) uygulanmaz",
+          "refs": [
+            "29",
+            "30"
+          ]
+        },
+        {
+          "aspect": "Sonuç",
+          "left": "Daire veya mahkemenin kararı taraflara tebliğ olunur",
+          "right": "Düzeltme ilamın altına yazılır",
+          "refs": [
+            "29",
+            "30"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "29",
+        "30"
+      ]
+    },
+    {
+      "type": "exam_stats",
+      "title": "Sınav der ki",
+      "rows": [
+        {
+          "label": "Bu ünitenin maddelerinden yayındaki soru",
+          "value": "21",
+          "refs": [
+            "20",
+            "24",
+            "26",
+            "27",
+            "28",
+            "29",
+            "30",
+            "31",
+            "32",
+            "33",
+            "34",
+            "36",
+            "37",
+            "38"
+          ]
+        },
+        {
+          "label": "md 27 — Yürütmenin durdurulması",
+          "value": "3 soru",
+          "refs": [
+            "27"
+          ]
+        },
+        {
+          "label": "md 32",
+          "value": "3 soru",
+          "refs": [
+            "32"
+          ]
+        },
+        {
+          "label": "md 26",
+          "value": "2 soru",
+          "refs": [
+            "26"
+          ]
+        },
+        {
+          "label": "md 33",
+          "value": "2 soru",
+          "refs": [
+            "33"
+          ]
+        },
+        {
+          "label": "md 38",
+          "value": "2 soru",
+          "refs": [
+            "38"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "20",
+        "24",
+        "26",
+        "27",
+        "28",
+        "29",
+        "30",
+        "31",
+        "32",
+        "33",
+        "34",
+        "36",
+        "37",
+        "38"
+      ],
+      "generated": true
+    },
+    {
+      "type": "bridge",
+      "title": "Bu üniteden soru çöz",
+      "articleRefs": [
+        "20",
+        "24",
+        "26",
+        "27",
+        "28",
+        "29",
+        "30",
+        "31",
+        "32",
+        "33",
+        "34",
+        "36",
+        "37",
+        "38"
+      ],
+      "generated": true,
+      "rows": [
+        {
+          "label": "Madde kapsamlı seans",
+          "value": "md 20, 24, 26–34, 36–38, 10 soru",
+          "refs": [
+            "20",
+            "24",
+            "26",
+            "27",
+            "28",
+            "29",
+            "30",
+            "31",
+            "32",
+            "33",
+            "34",
+            "36",
+            "37",
+            "38"
+          ]
+        }
+      ]
+    }
+  ]
+}

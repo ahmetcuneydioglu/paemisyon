@@ -1,0 +1,618 @@
+{
+  "unit": {
+    "slug": "iyuk-dava-turleri-sureler-ve-dava-acilmasi",
+    "legislationSlug": "2577-idari-yargilama-usulu-kanunu-iyuk",
+    "topicId": "e22d1f78-8191-4099-9134-044c59114bd7",
+    "title": "Dava türleri, dava açma süreleri ve ilk inceleme",
+    "subtitle": "İptal, tam yargı ve sözleşme davaları; dilekçe, süreler, idareye başvuru, ilk inceleme, tebligat ve duruşma",
+    "articleFrom": "2",
+    "articleTo": "19",
+    "readingMinutes": 13,
+    "sourceLabel": "AI özeti — 2577 İdari Yargılama Usulü Kanunu (İYUK), md 2, 3, 5–11, 14–19",
+    "articleNos": [
+      "2",
+      "3",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "14",
+      "15",
+      "16",
+      "17",
+      "18",
+      "19"
+    ],
+    "generatedBy": "claude-opus-5-5 (ozet-uret.ts)",
+    "sortOrder": 1
+  },
+  "blocks": [
+    {
+      "type": "concept",
+      "title": "İdari yargı neyi denetler?",
+      "body": "İdarenin bir işlemi ya da eylemi hakkını veya menfaatini zedelediyse kapı idari yargıdır. Şunu baştan aklına yaz: İdari yargı yetkisi, idari eylem ve işlemlerin **hukuka uygunluğunun denetimi** ile sınırlıdır. Hâkim 'Bu işlem hukuka uygun mu?' diye sorar. 'Daha yerinde bir karar verilebilir miydi?' diye soramaz, çünkü idari mahkemeler yerindelik denetimi yapamaz.",
+      "articleRefs": [
+        "2"
+      ],
+      "derivedNumbers": [],
+      "counterNumbers": []
+    },
+    {
+      "type": "rule",
+      "title": "İdari dava türleri",
+      "body": "**a) İptal davası:** İdari işlem **yetki, şekil, sebep, konu ve maksat** yönlerinden biri ile hukuka aykırıysa, **menfaati ihlal edilenler** tarafından açılır.\n**b) Tam yargı davası:** İdari eylem ve işlemlerden dolayı **kişisel hakları doğrudan muhtel olanlar** tarafından açılır.\n**c) İdari sözleşme davaları:** Kamu hizmetlerinden birinin yürütülmesi için yapılan her türlü idari sözleşmeden dolayı taraflar arasında çıkan uyuşmazlıklar.\n**İstisna:** Tahkim yolu öngörülen imtiyaz şartlaşma ve sözleşmelerinden doğan uyuşmazlıklar bu kapsamın dışındadır.\n**Ayrımı unutma:** İptalde 'menfaat ihlali', tam yargıda 'kişisel hakkın doğrudan muhtel olması' aranır.",
+      "articleRefs": [
+        "2"
+      ],
+      "derivedNumbers": [],
+      "counterNumbers": []
+    },
+    {
+      "type": "trap",
+      "title": "İptal kararı, ruhsat kararı değildir",
+      "body": "Sınavın sevdiği tuzak şu cümle: 'İdari mahkeme, hukuka aykırı bulduğu işlemin yerine geçecek yeni bir idari işlem niteliğinde karar verebilir.' Bu **yanlıştır**. İdari mahkemeler idari eylem ve işlem niteliğinde yargı kararı veremez, yerindelik denetimi yapamaz, idarenin takdir yetkisini kaldıracak biçimde karar veremez. Yürütme görevinin kanunlarda ve Cumhurbaşkanlığı Kararnamelerinde gösterilen şekil ve esaslara uygun olarak yerine getirilmesini kısıtlayacak karar da veremez. Bu yüzden ruhsat talebinin reddini iptal eden mahkeme kararı, sana ruhsat verildiği anlamına gelmez. Mahkeme ruhsat veren bir işlem niteliğinde karar kuramaz.",
+      "articleRefs": [
+        "2"
+      ],
+      "derivedNumbers": [],
+      "counterNumbers": []
+    },
+    {
+      "type": "rule",
+      "title": "Dava dilekçesi",
+      "body": "**Kime:** Danıştay, idare mahkemesi ve vergi mahkemesi başkanlıklarına hitaben yazılmış **imzalı** dilekçe ile. Yargıtay ve Sayıştay bu sayımda yer almaz.\n**Dilekçede gösterilir:**\n- Tarafların, varsa vekillerinin veya temsilcilerinin ad ve soyadları veya unvanları ve adresleri; gerçek kişilerin **T.C. kimlik numarası**\n- Davanın konu ve sebepleri ile dayandığı deliller\n- Davaya konu idari işlemin **yazılı bildirim tarihi**\n- Vergi, resim, harç ve benzeri mali yükümlerle bunların zam ve cezalarına ilişkin davalarda ve tam yargı davalarında **uyuşmazlık konusu miktar**\n- Vergi davalarında verginin veya vergi cezasının nevi ve yılı, ihbarnamenin tarihi ve numarası, varsa mükellef hesap numarası\n**Ekler:** Dava konusu kararın ve belgelerin asılları veya örnekleri eklenir. Dilekçe ve eklerinin örnekleri **karşı taraf sayısından bir fazla** olur.",
+      "articleRefs": [
+        "3"
+      ],
+      "derivedNumbers": [],
+      "counterNumbers": []
+    },
+    {
+      "type": "rule",
+      "title": "Her işleme ayrı dava, müşterek dilekçe ancak şartla",
+      "body": "**Kural:** Her idari işlem aleyhine ayrı ayrı dava açılır.\n**İstisna:** Aralarında maddi veya hukuki yönden bağlılık ya da sebep-sonuç ilişkisi bulunan birden fazla işleme karşı bir dilekçe ile de dava açılabilir.\n**Müşterek dilekçe şartları (birlikte aranır):**\n- Davacıların hak veya menfaatlerinde **iştirak** bulunması\n- Davaya yol açan maddi olay veya hukuki sebeplerin **aynı** olması\n⚠ 'Sebepler farklı olmalı' diyen şık yanlıştır. Metin **aynı** der.",
+      "articleRefs": [
+        "5"
+      ],
+      "derivedNumbers": [],
+      "counterNumbers": []
+    },
+    {
+      "type": "rule",
+      "title": "Dava ne zaman açılmış sayılır?",
+      "body": "- Dilekçenin harç ve posta ücretleri alındıktan sonra deftere kaydı **derhal** yapılır. Kayıt tarih ve sayısı dilekçenin üzerine yazılır.\n- **Dava, bu kaydın yapıldığı tarihte açılmış sayılır.**\n- Davacıya kayıt tarih ve sayısını gösteren **imzalı ve mühürlü, pulsuz** bir alındı kâğıdı verilir.\n- 4 üncü maddede yazılı diğer yerlere verilen dilekçeler en geç **üç gün** içinde Danıştaya veya ait olduğu mahkeme başkanlığına **taahhütlü** gönderilir.\n- Harç veya posta ücretinin eksikliğine ilişkin tebligat **re'sen genel bütçeden** yapılır.",
+      "articleRefs": [
+        "6"
+      ],
+      "derivedNumbers": [],
+      "counterNumbers": []
+    },
+    {
+      "type": "rule",
+      "title": "Dava açma süresi",
+      "body": "**Genel süre** (özel kanunda ayrı süre gösterilmemişse):\n- Danıştayda ve idare mahkemelerinde **altmış gün**\n- Vergi mahkemelerinde **otuz gün**\n**Başlangıç:** İdari uyuşmazlıklarda süre, yazılı bildirimin yapıldığı tarihi izleyen gün başlar. Vergi uyuşmazlıklarında tahsilatın, tebliğin, istihkak sahibine ödemenin veya tescilin yapıldığı tarihi izleyen gün başlar. İdarenin dava açması gereken konularda ise merci veya komisyon kararının idareye geldiği tarihi izleyen gün başlar.\n**İlanla bildirim:** Adresi belli olmayanlara ilanla bildirim yapıldıysa, özel kanunda aksi yoksa süre son ilan tarihini izleyen günden itibaren **onbeş gün sonra** işlemeye başlar.\n**İlanı gereken düzenleyici işlemler:** Süre, ilan tarihini izleyen gün başlar. Uygulama üzerine ilgili; düzenleyici işleme, uygulanan işleme ya da her ikisine birden dava açabilir. Düzenleyici işlemin iptal edilmemiş olması, ona dayalı işlemin iptaline engel olmaz.",
+      "articleRefs": [
+        "7"
+      ],
+      "derivedNumbers": [],
+      "counterNumbers": []
+    },
+    {
+      "type": "trap",
+      "title": "Danıştayda da süre altmış gün",
+      "body": "Soru kökü 'Danıştayda kaç gün?' diye sorduğunda otuzu işaretleme. Danıştay ile idare mahkemesi **aynı** genel süreye tabidir: **altmış gün**. Otuz gün yalnızca vergi mahkemelerinin genel süresidir. 'Altmış-otuz' sıralamasını ters çeviren şıklara ve yetmiş beş ya da doksan gibi metinde hiç geçmeyen sayılara dikkat et. Vergi uyuşmazlığı olmayan sıradan bir idari işleme, örneğin bir sınavda başarısız sayılma işlemine karşı açılacak iptal davasında da genel süre altmış gündür.",
+      "articleRefs": [
+        "7"
+      ],
+      "derivedNumbers": [],
+      "counterNumbers": [
+        75,
+        90
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Süre hesabı ve görevsiz yerde açılan dava",
+      "body": "**Sürelerle ilgili genel esaslar (md 8):**\n- Süreler tebliğ, yayın veya ilan tarihini izleyen günden itibaren işlemeye başlar.\n- Tatil günleri sürelere dahildir. Son gün tatile rastlarsa süre, tatili izleyen çalışma gününün bitimine kadar uzar.\n- Sürenin bitmesi çalışmaya ara verme zamanına rastlarsa süre, ara vermenin sona erdiği günü izleyen tarihten itibaren **yedi gün** uzamış sayılır.\n**Görevsiz adli yargı yeri (md 9):**\n- Danıştayın, idare veya vergi mahkemesinin görevine giren bir dava adli yargı yerinde açılıp görev yönünden reddedilebilir. Bu durumda kararın kesinleşmesini izleyen günden itibaren **otuz gün** içinde görevli mahkemede dava açılabilir.\n- Görevsiz yargı merciine başvurma tarihi, Danıştaya, idare ve vergi mahkemelerine başvurma tarihi olarak kabul edilir.\n- Otuz günlük süre geçmiş olsa dahi, idari dava açma süresi henüz dolmamışsa bu süre içinde dava açılabilir.",
+      "articleRefs": [
+        "8",
+        "9"
+      ],
+      "derivedNumbers": [],
+      "counterNumbers": []
+    },
+    {
+      "type": "numbers",
+      "title": "Süreler — dava açma aşaması",
+      "rows": [
+        {
+          "label": "Davanın açılmış sayıldığı an",
+          "value": "Deftere kaydın yapıldığı tarih",
+          "refs": [
+            "6"
+          ]
+        },
+        {
+          "label": "Diğer yerlere verilen dilekçenin gönderilmesi",
+          "value": "En geç 3 gün, taahhütlü",
+          "refs": [
+            "6"
+          ]
+        },
+        {
+          "label": "Eksik harç/posta ücretini tamamlama",
+          "value": "30 gün; yerine getirilmezse bildirim bir daha tekrarlanır",
+          "refs": [
+            "6"
+          ]
+        },
+        {
+          "label": "İşlemden kaldırılan dosyayı yeniden işleme koyma",
+          "value": "Kaldırma kararının tebliğinden itibaren 3 ay",
+          "refs": [
+            "6"
+          ]
+        },
+        {
+          "label": "Dava açma süresi — Danıştay ve idare mahkemesi",
+          "value": "60 gün",
+          "refs": [
+            "7"
+          ]
+        },
+        {
+          "label": "Dava açma süresi — vergi mahkemesi",
+          "value": "30 gün",
+          "refs": [
+            "7"
+          ]
+        },
+        {
+          "label": "İlanla bildirimde sürenin başlaması",
+          "value": "Son ilan tarihini izleyen günden itibaren 15 gün sonra",
+          "refs": [
+            "7"
+          ]
+        },
+        {
+          "label": "Çalışmaya ara vermeye rastlayan sürenin uzaması",
+          "value": "Ara vermenin sona erdiği günü izleyen tarihten itibaren 7 gün",
+          "refs": [
+            "8"
+          ]
+        },
+        {
+          "label": "Adli yargıdaki görevsizlikten sonra görevli yerde dava",
+          "value": "Kararın kesinleşmesini izleyen günden itibaren 30 gün",
+          "refs": [
+            "9"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "6",
+        "7",
+        "8",
+        "9"
+      ],
+      "derivedNumbers": [],
+      "counterNumbers": []
+    },
+    {
+      "type": "rule",
+      "title": "İdareden işlem iste, cevap gelmezse dava aç",
+      "body": "- İlgililer, haklarında idari davaya konu olabilecek bir işlem veya eylemin yapılması için idari makamlara başvurabilir.\n- **Otuz gün** içinde cevap verilmezse istek **reddedilmiş sayılır**. İlgili, otuz günün bittiği tarihten itibaren dava açma süresi içinde, konusuna göre Danıştaya, idare veya vergi mahkemesine dava açabilir.\n- Otuz gün içinde verilen cevap **kesin değilse** ilgilinin önünde seçenek vardır. Bu cevabı ret sayıp dava açabilir ya da kesin cevabı bekleyebilir. Beklerken dava açma süresi işlemez. Ancak bekleme süresi başvuru tarihinden itibaren **dört ayı** geçemez.\n- Dava açılmamış ya da süreden reddedilmişse ve yetkili makam otuz günden sonra cevap verirse, cevabın tebliğinden itibaren **altmış gün** içinde dava açılabilir.",
+      "articleRefs": [
+        "10"
+      ],
+      "derivedNumbers": [],
+      "counterNumbers": []
+    },
+    {
+      "type": "rule",
+      "title": "Dava açmadan önce üst makama başvuru",
+      "body": "- Dava açmadan önce, idari işlemin kaldırılması, geri alınması, değiştirilmesi veya yeni bir işlem yapılması **üst makamdan** istenebilir. Üst makam yoksa işlemi yapmış olan makamdan istenir.\n- Başvuru **idari dava açma süresi içinde** yapılır ve işlemeye başlamış olan süreyi **durdurur**.\n- **Otuz gün** içinde cevap verilmezse istek reddedilmiş sayılır.\n- Ret veya ret sayılma hâlinde dava açma süresi **yeniden işlemeye başlar**. Başvurma tarihine kadar geçmiş süre de hesaba katılır.",
+      "articleRefs": [
+        "11"
+      ],
+      "derivedNumbers": [],
+      "counterNumbers": []
+    },
+    {
+      "type": "trap",
+      "title": "Durdurur, sıfırlamaz",
+      "body": "md 11'deki başvuru dava açma süresini **durdurur**. Süreyi kesip baştan başlatmaz, süreye otuz gün de eklemez. Ret gelince başvuruya kadar geçmiş süre hesaba katılır, yani süre kaldığı yerden devam eder. md 10'daki ince nokta ise kesin olmayan cevapta saklı. Kesin cevabı beklersen süre işlemez, ama bekleme başvuru tarihinden itibaren **dört ayı** aşamaz. İki, üç ya da altı ay diyen şıklar yanlıştır. İdarenin sessiz kalması da md 10'da da md 11'de de **otuz gün** sonunda ret sayılır. On ya da on beş gün değil.",
+      "articleRefs": [
+        "10",
+        "11"
+      ],
+      "derivedNumbers": [],
+      "counterNumbers": [
+        2,
+        3,
+        6,
+        10,
+        15
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "İlk inceleme: kim, neye, hangi sırayla bakar?",
+      "body": "**Kayıt:** Danıştayda dilekçeyi Evrak Müdürlüğü kaydeder, Genel Sekreterlik görevli daireye havale eder. Bölge idare, idare ve vergi mahkemelerinde evrak bürosu kaydeder ve dilekçe sahibine ücretsiz alındı kâğıdı verilir.\n**İnceleyen:** Danıştayda daire başkanının görevlendireceği tetkik hâkimi inceler. İdare ve vergi mahkemelerinde mahkeme başkanı veya görevlendireceği üye inceler.\n**Sırasıyla incelenen yönler:**\na) Görev ve yetki\nb) İdari merci tecavüzü\nc) Ehliyet\nd) İdari davaya konu olacak kesin ve yürütülmesi gereken bir işlem olup olmadığı\ne) Süre aşımı\nf) Husumet\ng) 3 ve 5 inci maddelere uygunluk\n**Süre:** İnceleme ve işlemler dilekçenin alındığı tarihten itibaren en geç **onbeş gün** içinde sonuçlandırılır.\n**Rapor:** Aykırılık görülürse görevli daire veya mahkemeye raporla bildirilir. Tek hâkimle çözümlenecek davalarda rapor düzenlenmez, 15 inci madde hükümlerini ilgili hâkim uygular.\n**Sonuç:** Aykırılık görülmezse tebligat yapılır. Bu hususlar ilk incelemeden sonra tespit edilirse de davanın her safhasında 15 inci madde uygulanır.",
+      "articleRefs": [
+        "14"
+      ],
+      "derivedNumbers": [],
+      "counterNumbers": []
+    },
+    {
+      "type": "rule",
+      "title": "İlk inceleme üzerine verilecek kararlar",
+      "body": "- **Görev ve yetki:** Adli yargının görevli olduğu konuda davanın **reddi** kararı verilir. İdari yargı içinde görevli veya yetkili olmayan mahkemeye açılmışsa dava görev veya yetki yönünden reddedilir **ve dosya görevli/yetkili mahkemeye gönderilir**.\n- **İdari merci tecavüzü:** Dilekçe görevli idare merciine **tevdi** edilir. Danıştaya veya mahkemeye başvurma tarihi, mercie başvurma tarihi sayılır.\n- **Ehliyet, kesin ve yürütülmesi gereken işlem, süre aşımı:** **Davanın reddi** kararı verilir.\n- **Husumet:** Hasım gösterilmemiş veya yanlış hasım gösterilmişse dilekçe **gerçek hasma tebliğ** edilir.\n- **3 ve 5 inci maddelere aykırılık:** **Otuz gün** içinde yeniden düzenlenmek veya noksanı tamamlanmak üzere **dilekçenin reddi** kararı verilir.\n- **Avukat olmayan vekil:** Ehliyetli kişinin avukat olmayan vekili dava açmışsa da dilekçe reddedilir. Otuz gün içinde **bizzat veya bir avukat vasıtasıyla** dava açılması gerekir.\n- 3 üncü maddeye aykırılıktan reddedilen dilekçe yenilenirken **ayrıca harç alınmaz**.\n- Yenilenen dilekçede aynı yanlışlıklar yapılırsa **dava reddedilir**.",
+      "articleRefs": [
+        "15"
+      ],
+      "derivedNumbers": [],
+      "counterNumbers": []
+    },
+    {
+      "type": "trap",
+      "title": "Davanın reddi mi, dilekçenin reddi mi?",
+      "body": "**Sıra sorusu:** 'Hangisi önce incelenir?' dendiğinde listeyi hatırla. Görev ve yetkiden hemen sonra **idari merci tecavüzü** gelir. Ehliyet, kesin işlem, süre aşımı ve husumet ondan sonradır.\n**Karar sorusu:** Dilekçede gerçek kişinin T.C. kimlik numarası yoksa bu, 3 üncü maddeye aykırılıktır. Verilecek karar **dilekçenin reddidir**, davanın reddi değil. Vergi mahkemesinin görevine giren bir dava idare mahkemesinde açıldıysa, hata idari yargının içindedir. Bu durumda dava görev yönünden reddedilir **ve** dosya vergi mahkemesine gönderilir. 'Yalnızca ret' diyen şık eksiktir.\n**Kanun yolu sorusu:** İstinaf veya temyize kapalı kararlar şunlardır: idari yargı içindeki görev/yetki reddi ve gönderme, gerçek hasma tebliğ ve dilekçenin reddi. Görevli idare merciine tevdi ve davanın reddi gibi diğer ilk inceleme kararlarına ilgisine göre istinaf ya da temyiz yolu açıktır.\n**Bozma**, ilk inceleme üzerine verilecek kararlar arasında yer almaz.",
+      "articleRefs": [
+        "3",
+        "14",
+        "15"
+      ],
+      "derivedNumbers": [],
+      "counterNumbers": []
+    },
+    {
+      "type": "rule",
+      "title": "Tebligat ve cevap verme",
+      "body": "- Dava dilekçesinin ve eklerinin birer örneği davalıya tebliğ edilir. Davalının savunması da davacıya tebliğ edilir.\n- Davacının ikinci dilekçesi davalıya, davalının ikinci savunması davacıya tebliğ edilir. Davacı buna **cevap veremez**. Ancak ikinci savunmada davacının cevaplamasını gerektiren hususlar varsa davacıya süre verilir.\n- **Cevap süresi:** Tebliğden itibaren **otuz gün**. Haklı sebep varsa taraf isteği üzerine mahkeme kararıyla uzatılabilir. Uzatma **bir defaya mahsus** yapılır ve otuz günü geçemez. Süre geçtikten sonraki uzatma talebi kabul edilmez.\n- Süre geçtikten sonra verilen savunma veya ikinci dilekçeye dayanılarak hak iddia edilemez.\n- **Tam yargı davasında miktar artırımı:** Miktar, süre veya diğer usul kuralları gözetilmeksizin artırılabilir. Artırım nihai karar verilinceye kadar, harcı ödenerek, bir defaya mahsus yapılır. Artırım dilekçesi, karşı tarafın **otuz gün** içinde cevap vermesi için tebliğ edilir.\n- İşlem dosyalarının aslı veya onaylı örneği idarenin savunmasıyla birlikte gönderilir.\n- Danıştayda ilk derece mahkemesi sıfatıyla görülen davalarda savcının esas hakkındaki yazılı düşüncesi taraflara tebliğ edilir. Taraflar **on gün** içinde yazılı görüş bildirebilir.",
+      "articleRefs": [
+        "16"
+      ],
+      "derivedNumbers": [],
+      "counterNumbers": []
+    },
+    {
+      "type": "trap",
+      "title": "Cevap süresi otuz gün, savcı düşüncesi Danıştayı gösterir",
+      "body": "Tebliğe cevap süresi **otuz gündür**. 'Yetmiş beş gün' diyen şık metinde hiç geçmez. Miktar artırımında dikkat: Bu imkân **tam yargı** davalarına özgüdür, nihai karara kadar istenir ve harca tabidir. Artırım dilekçesine karşı taraf otuz gün içinde **cevap verebilir**, 'cevap verilemez' diyen şık yanlıştır. 'Cevap veremez' kuralı yalnızca davalının ikinci savunmasına karşı davacı için geçerlidir. Bir soruda ilk derece yargılamasında savcının esas hakkındaki yazılı düşüncesi taraflara tebliğ ediliyorsa, dava **Danıştayda** ilk derece sıfatıyla görülüyordur.",
+      "articleRefs": [
+        "16"
+      ],
+      "derivedNumbers": [],
+      "counterNumbers": [
+        75
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Duruşma ve karar",
+      "body": "**Ne zaman yapılır (md 17):**\n- Taraflardan birinin isteği üzerine şu davalarda duruşma yapılır: iptal davaları, **yirmibeşbin Türk Lirasını** aşan tam yargı davaları ve tarh edilen vergi, resim, harç ve benzeri mali yükümlerle bunların zam ve cezaları toplamı yirmibeşbin Türk Lirasını aşan vergi davaları.\n- Temyiz ve istinafta duruşma, tarafların istemine ve Danıştay veya ilgili bölge idare mahkemesi kararına bağlıdır.\n- Duruşma talebi dava dilekçesiyle, cevap ve savunmalarda yapılabilir.\n- Danıştay, mahkeme ve hâkim bu kayıtlara bağlı olmaksızın **kendiliğinden** duruşma kararı verebilir.\n- Davetiyeler duruşma gününden en az **otuz gün** önce gönderilir.\n**Nasıl yürür (md 18):**\n- Duruşmalar **açık** yapılır. Genel ahlak veya kamu güvenliği gerektirirse daire veya mahkeme kararıyla kısmen ya da tamamen gizli yapılır.\n- Duruşmayı **başkan** yönetir. Taraflara **ikişer defa** söz verilir.\n- Taraflardan yalnız biri gelirse onun açıklamaları dinlenir. Hiçbiri gelmezse duruşma açılmaz ve inceleme evrak üzerinde yapılır.\n- Danıştaydaki duruşmalarda **savcının bulunması şarttır**. Taraflar dinlendikten sonra savcı yazılı düşüncesini açıklar, ardından taraflara son olarak ne diyecekleri sorulur.\n**Karar (md 19):** Duruşmadan sonra en geç **onbeş gün** içinde karar verilir. Ara kararı verilen hâllerde, karar yerine getirilince dosya öncelikle incelenir.",
+      "articleRefs": [
+        "17",
+        "18",
+        "19"
+      ],
+      "derivedNumbers": [],
+      "counterNumbers": []
+    },
+    {
+      "type": "trap",
+      "title": "Duruşma sorularındaki sayı tuzakları",
+      "body": "Davetiye duruşmadan en az **otuz gün** önce gider, 'yedi gün' şıkkı yanlıştır. Taraflara **ikişer** defa söz verilir, üçer değil. Duruşma kural olarak **açıktır**, 'kapalı yapılır' diyen şık yanlıştır. Karar duruşmadan sonra en geç **onbeş gün** içinde verilir. Beş, yedi ya da on gün diyen şıklara aldanma. Danıştayda açılan bir iptal davasında ise şunları bil: Davacı isterse duruşma yapılır. İdare de talebini savunmasında yapabilir. Duruşmada savcı bulunmak zorundadır.",
+      "articleRefs": [
+        "17",
+        "18",
+        "19"
+      ],
+      "derivedNumbers": [],
+      "counterNumbers": [
+        3,
+        5,
+        7,
+        10
+      ]
+    },
+    {
+      "type": "numbers",
+      "title": "Süreler — başvuru, inceleme ve yargılama",
+      "rows": [
+        {
+          "label": "İdari makama başvuruda zımni ret",
+          "value": "30 gün",
+          "refs": [
+            "10"
+          ]
+        },
+        {
+          "label": "Kesin olmayan cevapta en uzun bekleme",
+          "value": "Başvuru tarihinden itibaren 4 ay",
+          "refs": [
+            "10"
+          ]
+        },
+        {
+          "label": "Otuz günden sonra gelen cevaba karşı dava",
+          "value": "Cevabın tebliğinden itibaren 60 gün",
+          "refs": [
+            "10"
+          ]
+        },
+        {
+          "label": "Üst makama başvuruda zımni ret",
+          "value": "30 gün",
+          "refs": [
+            "11"
+          ]
+        },
+        {
+          "label": "İlk incelemenin sonuçlandırılması",
+          "value": "Dilekçenin alındığı tarihten itibaren en geç 15 gün",
+          "refs": [
+            "14"
+          ]
+        },
+        {
+          "label": "Dilekçe reddinden sonra yenileme",
+          "value": "30 gün",
+          "refs": [
+            "15"
+          ]
+        },
+        {
+          "label": "Tebliğe cevap",
+          "value": "30 gün; bir defaya mahsus, en çok 30 gün uzatma",
+          "refs": [
+            "16"
+          ]
+        },
+        {
+          "label": "Miktar artırımı dilekçesine cevap",
+          "value": "30 gün",
+          "refs": [
+            "16"
+          ]
+        },
+        {
+          "label": "Savcı düşüncesine görüş (Danıştay, ilk derece)",
+          "value": "10 gün",
+          "refs": [
+            "16"
+          ]
+        },
+        {
+          "label": "Taraf isteğiyle duruşma sınırı (tam yargı / vergi)",
+          "value": "25.000 TL'yi aşan",
+          "refs": [
+            "17"
+          ]
+        },
+        {
+          "label": "Duruşma davetiyesi",
+          "value": "Duruşma gününden en az 30 gün önce",
+          "refs": [
+            "17"
+          ]
+        },
+        {
+          "label": "Duruşmada söz",
+          "value": "Taraflara ikişer defa",
+          "refs": [
+            "18"
+          ]
+        },
+        {
+          "label": "Duruşmadan sonra karar",
+          "value": "En geç 15 gün",
+          "refs": [
+            "19"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "10",
+        "11",
+        "14",
+        "15",
+        "16",
+        "17",
+        "18",
+        "19"
+      ],
+      "derivedNumbers": [],
+      "counterNumbers": []
+    },
+    {
+      "type": "compare",
+      "title": "Harç/posta başta eksik — posta sonradan azaldı",
+      "rows": [
+        {
+          "aspect": "Durum",
+          "left": "Dava harç veya posta ücreti verilmeden ya da eksik verilerek açıldı",
+          "right": "Dava açıldıktan sonra posta ücreti, tebliğ işlemlerini engelleyecek ölçüde azaldı",
+          "refs": [
+            "6"
+          ]
+        },
+        {
+          "aspect": "Tamamlama süresi",
+          "left": "30 gün",
+          "right": "30 gün",
+          "refs": [
+            "6"
+          ]
+        },
+        {
+          "aspect": "Gereği yapılmazsa",
+          "left": "Bildirim bir daha tekrarlanır",
+          "right": "Bildirim bir daha tekrarlanır",
+          "refs": [
+            "6"
+          ]
+        },
+        {
+          "aspect": "Verilecek karar",
+          "left": "Davanın açılmamış sayılması",
+          "right": "Önce dosyanın işlemden kaldırılması",
+          "refs": [
+            "6"
+          ]
+        },
+        {
+          "aspect": "Sonraki adım",
+          "left": "Karar davacıya tebliğ edilir",
+          "right": "Kaldırma kararının tebliğinden itibaren 3 ay içinde noksan tamamlanıp yenilenmezse davanın açılmamış sayılması",
+          "refs": [
+            "6"
+          ]
+        },
+        {
+          "aspect": "Tebligat masrafı",
+          "left": "Re'sen genel bütçeden",
+          "right": "Re'sen genel bütçeden",
+          "refs": [
+            "6"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "6"
+      ],
+      "derivedNumbers": [],
+      "counterNumbers": []
+    },
+    {
+      "type": "exam_stats",
+      "title": "Sınav der ki",
+      "rows": [
+        {
+          "label": "Bu ünitenin maddelerinden yayındaki soru",
+          "value": "26",
+          "refs": [
+            "2",
+            "3",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19"
+          ]
+        },
+        {
+          "label": "md 15",
+          "value": "4 soru",
+          "refs": [
+            "15"
+          ]
+        },
+        {
+          "label": "md 2",
+          "value": "3 soru",
+          "refs": [
+            "2"
+          ]
+        },
+        {
+          "label": "md 7",
+          "value": "3 soru",
+          "refs": [
+            "7"
+          ]
+        },
+        {
+          "label": "md 16",
+          "value": "3 soru",
+          "refs": [
+            "16"
+          ]
+        },
+        {
+          "label": "md 3",
+          "value": "2 soru",
+          "refs": [
+            "3"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "2",
+        "3",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "14",
+        "15",
+        "16",
+        "17",
+        "18",
+        "19"
+      ],
+      "generated": true
+    },
+    {
+      "type": "bridge",
+      "title": "Bu üniteden soru çöz",
+      "articleRefs": [
+        "2",
+        "3",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "14",
+        "15",
+        "16",
+        "17",
+        "18",
+        "19"
+      ],
+      "generated": true,
+      "rows": [
+        {
+          "label": "Madde kapsamlı seans",
+          "value": "md 2, 3, 5–11, 14–19, 10 soru",
+          "refs": [
+            "2",
+            "3",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19"
+          ]
+        }
+      ]
+    }
+  ]
+}

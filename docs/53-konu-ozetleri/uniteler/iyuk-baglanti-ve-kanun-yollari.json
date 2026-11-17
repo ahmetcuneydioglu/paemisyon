@@ -1,0 +1,465 @@
+{
+  "unit": {
+    "slug": "iyuk-baglanti-ve-kanun-yollari",
+    "legislationSlug": "2577-idari-yargilama-usulu-kanunu-iyuk",
+    "topicId": "e22d1f78-8191-4099-9134-044c59114bd7",
+    "title": "Bağlantı, görev-yetki uyuşmazlıkları ve kanun yolları",
+    "subtitle": "Merci tayini, istinaf, temyiz, kanun yararına temyiz, yargılamanın yenilenmesi, çekinme-ret ve çalışmaya ara verme",
+    "articleFrom": "41",
+    "articleTo": "62",
+    "readingMinutes": 12,
+    "sourceLabel": "AI özeti — 2577 İdari Yargılama Usulü Kanunu (İYUK), md 41, 43–45, 50–53, 56, 57, 61, 62",
+    "articleNos": [
+      "41",
+      "43",
+      "44",
+      "45",
+      "50",
+      "51",
+      "52",
+      "53",
+      "56",
+      "57",
+      "61",
+      "62"
+    ],
+    "generatedBy": "claude-opus-5-5 (ozet-uret.ts)",
+    "sortOrder": 3
+  },
+  "blocks": [
+    {
+      "type": "concept",
+      "title": "Karar çıktı; şimdi hangi kapı?",
+      "body": "İdare ya da vergi mahkemesi kararını verdi diyelim. Bu karara karşı kural olarak ilk durak, mahkemenin bulunduğu yargı çevresindeki bölge idare mahkemesine istinaftır. Danıştay temyizde bozma kararı verirse bölge idare mahkemesi bu karara uyabilir ya da kararında ısrar edebilir. Yollar bununla da bitmez. Başsavcı, kesin olarak verilmiş ya da istinaf veya temyiz incelemesinden geçmeden kesinleşmiş kararlardan yürürlükteki hukuka aykırı bir sonucu ifade edenleri kanun yararına temyiz edebilir. Sayılı sebeplerden birine dayanılarak yargılamanın yenilenmesi de istenebilir. Bu ünitede her yolun kime, ne kadar sürede ve hangi sonuçla işlediğini göreceksin.",
+      "articleRefs": [
+        "45",
+        "50",
+        "51",
+        "53"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Bağlantı iddiası reddedilirse",
+      "body": "**Kural:** Mahkeme bağlantı iddiasını kabul etmezse bu konuda verilen **ara kararı taraflara tebliğ edilir**.\n\n**Başvuru süresi:** Tebliğ tarihini izleyen **onbeş gün** içinde.\n\n**Başvuru mercii:**\n- Aynı yargı çevresindeki mahkemeler için → **o yer bölge idare mahkemesi**\n- 38 inci maddenin 2 ve 3 üncü fıkrasındaki durumlarla ilgili davalar için → **Danıştay**\n\n**Sonuç:** Başvuru üzerine bölge idare mahkemesi veya Danıştay görevli dairesi durumu yukarıdaki maddelerde yazılı usullere göre inceler ve karara bağlar.",
+      "articleRefs": [
+        "41"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Görevsizlik-yetkisizlik ve dosyanın yolculuğu",
+      "body": "**Kural:** İdare ve vergi mahkemeleri, idari yargının görev alanına giren bir davada görevsizlik veya yetkisizlik sebebiyle davanın reddine karar verirse dosyayı **Danıştaya** ya da **görevli ve yetkili idare veya vergi mahkemesine** gönderir.\n\n- Görevsizlik sebebiyle gönderilen dosyada Danıştay davayı görevi içinde görmezse dosyanın yetkili ve görevli mahkemeye gönderilmesine karar verir.\n- Dosyanın gönderildiği mahkeme de kendisini görevsiz veya yetkisiz görürse uyuşmazlığı kimin çözeceği şöyle belirlenir:\n  - Bu mahkeme ile ilk görevsizlik veya yetkisizlik kararını veren mahkeme **aynı bölge idare mahkemesinin yargı çevresindeyse** → **bölge idare mahkemesi**\n  - Aksi hâlde → **Danıştay**\n\n**Kararların niteliği:** Danıştay ve bölge idare mahkemesinin görev ve yetki uyuşmazlıklarında verdiği kararlar **kesindir**. Bu kararlar ilgili mahkemelere bildirilir ve taraflara tebliğ olunur.\n\n**Harç:** Bu madde hükümleri gereğince verilen kararlarla görevli ve yetkili kılınan mahkemeye yeniden dava açılırsa **harç alınmaz**.",
+      "articleRefs": [
+        "43"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Merci tayini",
+      "body": "**Sebepler:** Aşağıdaki hâllerde dava dosyası, tarafların veya mahkemelerin istemi üzerine merci tayini için gönderilir:\n- Yetkili mahkemenin davaya bakmasına **fiili veya hukuki engel** çıkması\n- İki mahkemenin **yargı çevresi sınırlarında tereddüt** edilmesi\n- İki mahkemenin de aynı davaya bakmaya **yetkili olduklarına** karar vermesi\n\n**Nereye gönderilir?**\n- Uyuşmazlık aynı yargı çevresindeki mahkeme veya mahkemeler arasında çıkmışsa → **o yargı çevresindeki bölge idare mahkemesi**\n- Sair hâllerde → **Danıştay**\n\nDanıştay ve bölge idare mahkemesi görevli ve yetkili mahkemeyi kararlaştırır. Bu kararlar **kesindir**.",
+      "articleRefs": [
+        "44"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Bağlantı, uyuşmazlık, merci tayini: sık karışanlar",
+      "body": "- Bağlantı istemi reddedildiğinde esas hükmü beklemen gerekmez. Ara karar tebliğ edilir ve tebliğ tarihini izleyen **onbeş gün** içinde bölge idare mahkemesine ya da Danıştaya başvurulabilir. “Ret kararına ancak esas hükümle birlikte kanun yoluna gidilir” diyen şık yanlıştır.\n- Merci tayini sebepleri arasında, iki mahkemenin aynı davaya bakmaya **yetkili** olduklarına karar vermesi vardır. İkisinin de kendini **yetkisiz** görmesi ise 43. maddedeki görev-yetki uyuşmazlığıdır. Merci tayini sebebi olarak sorulursa bu şıkkı ele.\n- Görevsizlik kararıyla gönderilen dosyanın gittiği mahkeme de kendini görevsiz görebilir. İki mahkeme aynı bölge idare mahkemesinin yargı çevresindeyse uyuşmazlığı **bölge idare mahkemesi** çözer, Danıştay değil. Çözüm mercii ya bölge idare mahkemesi ya da Danıştaydır. Başka kurum adı veren şıklar çeldiricidir.",
+      "articleRefs": [
+        "41",
+        "43",
+        "44"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "İstinaf: süre ve kesin kararlar",
+      "body": "**Kural:** İdare ve vergi mahkemelerinin kararlarına karşı istinaf yoluna başvurulabilir. Başka kanunlarda farklı bir kanun yolu öngörülmüş olsa dahi bu kural geçerlidir.\n- **Nereye?** Mahkemenin bulunduğu yargı çevresindeki **bölge idare mahkemesine**\n- **Ne zaman?** Kararın tebliğinden itibaren **otuz gün** içinde\n\n**İstisna — kesin kararlar:** Konusu **otuz bir bin Türk lirasını** geçmeyen aşağıdaki davalarda idare ve vergi mahkemelerince verilen kararlar kesindir ve istinaf yoluna başvurulamaz:\n- Vergi davaları\n- Tam yargı davaları\n- İdari işlemlere karşı açılan iptal davaları\n\n**İvedi yargılama:** İvedi yargılama usulüne tabi davalarda istinaf yoluna başvurulamaz.\n\n**Usul:** İstinaf, temyizin şekil ve usullerine tabidir. İstinaf başvurusuna konu olacak kararlara karşı yapılan kanun yolu başvurularında dilekçedeki hitap ve istekle bağlı kalınmaksızın dosyalar bölge idare mahkemesine gönderilir.",
+      "articleRefs": [
+        "45"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Bölge idare mahkemesi istinafta ne karar verir?",
+      "body": "**Başvurunun reddi:** Bölge idare mahkemesi şu hâllerde istinaf başvurusunu reddeder:\n- Kararı hukuka uygun bulursa\n- Kararın sonucu hukuka uygun olmakla birlikte gerekçeyi doğru veya yeterli bulmazsa (bu durumda gerekçeyi değiştirerek)\n- Karardaki maddi yanlışlıkların düzeltilmesi mümkünse (bu durumda gerekli düzeltmeyi yaparak)\n\n**Kaldırma ve esastan karar:** Bölge idare mahkemesi kararı hukuka uygun bulmazsa başvuruyu kabul eder ve kararı kaldırır. Ardından **işin esası hakkında yeniden karar verir**. Gerekirse kararı veren mahkeme ya da başka bir yer idare veya vergi mahkemesi istinabe olunabilir.\n\n**Kaldırma ve geri gönderme:** Dosya yalnız aşağıdaki hâllerde kararı veren mahkemeye gönderilir:\n- İlk inceleme kararlarına ya da usule ilişkin diğer nihai kararlara karşı başvurunun haklı bulunması\n- Davaya görevsiz veya yetkisiz mahkemenin ya da reddedilmiş veya yasaklanmış hâkimin bakmış olması\n- Dilekçenin reddi gerekirken dava hakkında karar verilmesi\n- Dosyanın eksik veya yanlış hasımla tekemmül ettirilmesi\n- Talep hakkında karar verilmemesi ya da eksik hükümle karar verilmesi\n- Gerekli keşif veya bilirkişi incelemesinin yaptırılmaması\n- Gerekli duruşmanın yapılmaması\n\nGeri gönderme kararı **kesindir**. Keşif-bilirkişi ve duruşma eksikliğini ise bölge idare mahkemesi kendisi giderip karar verebilir.\n\n**Hâkim yasağı:** Kararı veren ya da karara katılan hâkim, aynı davanın istinaf incelemesinde bulunamaz.",
+      "articleRefs": [
+        "45"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "İstinafta karışan süreler ve ifadeler",
+      "body": "- İstinaf süresi, kararın tebliğinden itibaren **otuz gün**dür. **Yedi gün** ise bölge idare mahkemesinin 48 inci maddenin yedinci fıkrası uyarınca verdiği kararlara karşı **temyiz** süresidir. Bu ikisini karıştırma.\n- “İvedi yargılama usulüne tabi davalarda istinafa başvurulabilir” ifadesi **yanlıştır**. Bu davalarda istinaf yolu kapalıdır.\n- İstinaf, temyizin şekil ve usullerine tabidir. Bu ifade doğrudur.\n- Kararı veren ya da karara katılan hâkimin istinaf incelemesinde bulunamaması da doğru bilgidir ve şıklarda sık çıkar.\n- Başvurunun reddi yalnız kararın hukuka uygun bulunmasıyla sınırlı değildir. Ret, gerekçe değiştirilerek ya da maddi yanlışlık düzeltilerek de verilebilir.",
+      "articleRefs": [
+        "45"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Bozma, uyma, ısrar",
+      "body": "**Kararın gönderilmesi:** Temyiz incelemesi sonucunda verilen karar, dosyayla birlikte kararı veren mercie gönderilir.\n\n**Onama kararları:** Danıştay ilgili dairesinin onama kararları dosyayla birlikte ilk derece mahkemesine gönderilir. Kararın bir örneği de bölge idare mahkemesine gönderilir. Bu kararlar, dosyanın geldiği tarihten itibaren **yedi gün** içinde taraflara tebliğe çıkarılır.\n\n**Bozma üzerine:** İlgili merci dosyayı öncelikle inceler. Varsa gerekli tahkik işlemlerini tamamlar ve yeniden karar verir.\n\n**Bölge idare mahkemesinin seçimi:**\n- **Uyarsa:** Yeni kararın temyiz incelemesi, bozma kararına uygunlukla sınırlı olarak yapılır.\n- **Israr ederse:** Israr kararı temyiz edildiğinde istemi konusuna göre **Danıştay İdari veya Vergi Dava Daireleri Kurulu** inceler ve karara bağlar.\n\nBu kurulların kararlarına **uyulması zorunludur**.",
+      "articleRefs": [
+        "50"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Israr kararını kim inceler?",
+      "body": "Israr kararının temyizini Danıştayın dava dairesi incelemez. İstemi konusuna göre **İdari Dava Daireleri Kurulu** ya da **Vergi Dava Daireleri Kurulu** inceler. Şıklarda ilgili daire, İdari İşler Kurulu, İçtihatları Birleştirme Kurulu gibi başka Danıştay birimleri görürsen ele. Unutma: bu kurulların kararlarına uyulması zorunludur.",
+      "articleRefs": [
+        "50"
+      ]
+    },
+    {
+      "type": "numbers",
+      "title": "Kanun yolu süreleri ve sınırlar",
+      "rows": [
+        {
+          "label": "Bağlantı iddiasının reddine ilişkin ara karara karşı başvuru",
+          "value": "Tebliğ tarihini izleyen 15 gün",
+          "refs": [
+            "41"
+          ]
+        },
+        {
+          "label": "İdare ve vergi mahkemesi kararlarına karşı istinaf",
+          "value": "Kararın tebliğinden itibaren 30 gün",
+          "refs": [
+            "45"
+          ]
+        },
+        {
+          "label": "İstinafa kapalı (kesin) kararlarda parasal sınır",
+          "value": "Konusu 31.000 TL'yi geçmeyen vergi, tam yargı ve iptal davaları",
+          "refs": [
+            "45"
+          ]
+        },
+        {
+          "label": "Bölge idare mahkemesinin 48 inci maddenin yedinci fıkrası uyarınca verdiği kararlara karşı temyiz",
+          "value": "Tebliğ tarihini izleyen günden itibaren 7 gün",
+          "refs": [
+            "45"
+          ]
+        },
+        {
+          "label": "Temyize açık olmayan bölge idare mahkemesi kararlarının ilk derece mahkemesince tebliğe çıkarılması",
+          "value": "7 gün",
+          "refs": [
+            "45"
+          ]
+        },
+        {
+          "label": "Danıştay onama kararlarının taraflara tebliğe çıkarılması",
+          "value": "Dosyanın geldiği tarihten itibaren 7 gün",
+          "refs": [
+            "50"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "41",
+        "45",
+        "50"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Kanun yararına temyiz",
+      "body": "**Hangi kararlar?** Niteliği bakımından yürürlükteki hukuka aykırı bir sonucu ifade eden şu kararlar:\n- İdare ve vergi mahkemeleri ile bölge idare mahkemelerinin **kesin olarak** verdiği kararlar\n- **İstinaf veya temyiz incelemesinden geçmeden kesinleşmiş** kararlar\n\n**Kim başvurur?** **Başsavcı**. Başvuru, ilgili bakanlıkların göstereceği lüzum üzerine ya da kendiliğinden yapılır.\n\n**Sonuç:** Temyiz isteği yerinde görülürse karar **kanun yararına bozulur**. Bu bozma, daha önce kesinleşmiş merci kararının **hukuki sonuçlarını kaldırmaz**.\n\n**İlan:** Bozma kararının bir örneği ilgili bakanlığa gönderilir ve **Resmi Gazete'de** yayımlanır.",
+      "articleRefs": [
+        "51"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Kanun yararına temyizde çeldiriciler",
+      "body": "- Kanun yararına bozma, kesinleşmiş kararın hukuki sonuçlarını **kaldırmaz**. “Ortadan kaldırır” diyen şık yanlıştır.\n- 51. madde bu yol için bir başvuru süresi öngörmez. Başvuruyu süreye bağlayan şık çeldiricidir.\n- Başvuruyu taraflar yapmaz, **Başsavcı** yapar. Başsavcı, bakanlık lüzumu üzerine ya da kendiliğinden harekete geçer.\n- Temyiz incelemesinden geçmeden kesinleşen idare ve vergi mahkemesi kararları da bu yola konu olabilir. Bu ifade doğrudur.",
+      "articleRefs": [
+        "51"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Kanun yolunda yürütmenin durdurulması",
+      "body": "**Kural:** Temyiz veya istinaf yoluna başvurulması, hâkim, mahkeme veya Danıştay kararlarının **yürütülmesini durdurmaz**.\n\n**İstisna:** Bu kararların teminat karşılığında yürütülmesinin durdurulmasına şu merciler karar verebilir:\n- Temyiz istemini incelemeye yetkili Danıştay dava dairesi veya kurulu\n- İstinaf başvurusunu incelemeye yetkili bölge idare mahkemesi\n\n**Teminat:**\n- İptal davalarında teminat **istenmeyebilir**.\n- İdareden ve adli yardımdan yararlananlardan teminat **alınmaz**.\n\n**Davanın reddine ilişkin kararlar:** Bu kararlara karşı kanun yoluna gidilirse, dava konusu işlem hakkında yürütmenin durdurulması kararı ancak 27 nci maddede öngörülen koşul varsa verilebilir.\n\n**Kesinlik:** Temyiz ve istinaf incelemesi sırasında yürütmenin durdurulması istemleri hakkında verilen kararlar **kesindir**.\n\n**Bozma:** Kararın bozulması, kararın yürütülmesini **kendiliğinden** durdurur.",
+      "articleRefs": [
+        "52"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Teminat ve bozma: ters çevrilen cümleler",
+      "body": "Bu maddeden gelen sorularda yanlış şıklar çoğunlukla doğru kuralın tersine çevrilmesiyle kurulur:\n- “İptal davalarında teminat şarttır” → yanlış. Teminat **istenmeyebilir**.\n- “Bozma, yürütmeyi durdurmaz” → yanlış. Bozma, yürütmeyi **kendiliğinden durdurur**.\n- “İdareden ve adli yardımdan yararlananlardan teminat alınır” → yanlış. Teminat **alınmaz**.\n\nAyrıca şunları unutma:\n- Kanun yoluna başvurmak yürütmeyi kendiliğinden durdurmaz. Durdurma için yetkili merciin karar vermesi gerekir.\n- Temyiz ve istinaf sırasında bu istemler hakkında verilen kararlar **kesindir**.",
+      "articleRefs": [
+        "52"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Yargılamanın yenilenmesi",
+      "body": "**Hangi kararlar?** Danıştay ile bölge idare, idare ve vergi mahkemelerinin kararları.\n\n**Sebepler (maddede sayılanlarla sınırlı):**\n- Zorlayıcı sebeplerle ya da lehine karar verilen tarafın eylemi yüzünden elde edilemeyen bir belgenin, karardan sonra ele geçirilmesi\n- Karara esas alınan belgenin sahteliğine hükmedilmesi ya da sahteliğin mahkeme veya resmi bir makam huzurunda ikrar edilmesi; ya da sahtelik hükmünün karardan önce verilmiş olması ve yenilemeyi isteyenin karar zamanında bundan haberi olmaması\n- Karara esas alınan bir ilam hükmünün, kesinleşen bir mahkeme kararıyla bozularak ortadan kalkması\n- Bilirkişinin kasıtla gerçeğe aykırı beyanda bulunduğunun mahkeme kararıyla belirlenmesi\n- Lehine karar verilen tarafın, karara etkisi olan bir hile kullanması\n- Davanın vekil veya kanuni temsilci olmayan kimselerle görülüp karara bağlanması\n- Çekinmeye mecbur olan başkan, üye veya hâkimin katılmasıyla karar verilmesi\n- Tarafları, konusu ve sebebi aynı olan bir davada, kanuni dayanak yokken önceki ilamın hükmüne aykırı karar verilmesi\n- Hükmün İnsan Haklarını ve Ana Hürriyetleri Korumaya Dair Sözleşmenin veya eki protokollerin ihlâliyle verildiğinin Avrupa İnsan Hakları Mahkemesinin kesinleşmiş kararıyla tespit edilmesi; ya da bu mahkemeye yapılan başvuruda dostane çözüm veya tek taraflı deklarasyon sonucunda düşme kararı verilmesi\n\n**Kim karar verir?** Esas kararı vermiş olan mahkeme.\n\n**Süreler:**\n- Önceki ilama aykırı karar sebebi için **on yıl**\n- Avrupa İnsan Hakları Mahkemesi kararına dayanan sebep için, bu kararın kesinleştiği tarihten itibaren **bir yıl**\n- Diğer sebepler için **altmış gün**\n\nSüreler, dayanılan sebebin istemde bulunan yönünden gerçekleştiği tarihi izleyen günden başlar.",
+      "articleRefs": [
+        "53"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Yenilemede süre ve merci tuzakları",
+      "body": "- Maddede geçen süreler yalnızca **altmış gün**, **bir yıl** ve **on yıl**dır. Listede **otuz gün** gibi bunların dışında kalan bir süre görürsen onu ele.\n- Avrupa İnsan Hakları Mahkemesi kararına dayanan istemde süre **bir yıl**dır ve bu mahkemenin kararının kesinleştiği tarihten itibaren işler. Altmış gün ya da on yıl değildir.\n- Yenileme istemini **esas kararı vermiş olan mahkeme** karara bağlar. Kararı idare mahkemesi vermiş ve bu karar Danıştayca onanarak kesinleşmişse de istemi yine o idare mahkemesi karara bağlar. Bu durumda Danıştay dairesi ya da bölge idare mahkemesi şıkları yanlıştır.\n- “Görev ve yetki dışında bir işe bakılmış olması” sebepler arasında sayılmaz. Maddedeki sebepler sınırlı biçimde sayılmıştır.",
+      "articleRefs": [
+        "53"
+      ],
+      "counterNumbers": [
+        30
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Çekinme ve ret: kim inceler, kim karar verir?",
+      "body": "- **Danıştayda:** Dava dairesinden çekinen veya reddedilen başkan ve üyeler ikiden fazla değilse, bunlar hariç tutularak daire kurulu tamamlanır ve istemi bu kurul inceler. İstem yerinde görülürse esas hakkında da aynı kurul karar verir. Çekinen veya reddedilenler ikiden fazlaysa istem İdari ya da Vergi Dava Daireleri Kuruluna gider.\n- **Tetkik hâkimi ve savcılar:** Danıştay tetkik hâkimleri ve savcıları da sebeplerini bildirerek **çekinebilir** ve taraflarca **reddedilebilir**. Bunun mümkün olmadığını söyleyen şık yanlıştır. İstemi, davaya bakmakla görevli daire karara bağlar.\n- **Tek hâkimli davalar:** Hâkimin reddi istemini, reddedilen hâkimin katılmadığı **idare veya vergi mahkemesi** inceler. Bölge idare mahkemesi ya da Danıştay incelemez.\n- **İdare mahkemesinde birden çok başkan ve üye:** Birden çok başkan ve üye reddedilir ya da çekinirse istemi **bölge idare mahkemesi** inceler. İstemi yerinde bulursa **işin esası hakkında da kendisi** karar verir. Dosyanın başka bir idare mahkemesine gönderildiğini söyleyen şık yanlıştır.",
+      "articleRefs": [
+        "56",
+        "57"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Çalışmaya ara verme ve nöbetçi mahkeme",
+      "body": "**Süre:** Bölge idare, idare ve vergi mahkemeleri, her yıl **bir eylülde** başlamak üzere **yirmi temmuzdan otuz bir ağustosa** kadar çalışmaya ara verir.\n\n**Yararlanamayanlar:** Aşağıdaki şartların ikisini birlikte taşıyan yerlerdeki idari yargı mercileri çalışmaya ara vermeden yararlanamaz:\n- Yargı çevresine dâhil olduğu bölge idare mahkemesinin bulunduğu il merkezi dışında kalmak\n- Sadece bir idare veya bir vergi mahkemesi bulunan yer olmak\n\nBu mahkemeler, 62 nci maddedeki sınırlamaya tabi olmadan görevlerine devam eder.\n\n**Nöbetçi mahkeme:** Birden fazla idari yargı mercii olan yerlerde, bölge idare mahkemesi başkanının önerisi üzerine Hâkimler ve Savcılar Yüksek Kurulunca nöbetçi mahkeme kurulur. Bu mahkemede, idare veya vergi mahkemeleri başkan ve üyeleri arasından görevlendirilen yeteri kadar hâkim yer alır. Bölge idare mahkemeleri için de aynı usulle, tüm daire başkan ve üyeleri arasından **nöbetçi daire** kurulur.\n\n**Nöbetçi mahkemenin gördüğü işler:**\n- Yürütmenin durdurulmasına ve delillerin tespitine ait işler\n- Kanunen belli süre içinde karara bağlanması gereken işler\n\n**İzin:** Çalışmaya ara vermeden yararlanamayanların ve nöbetçi kalanların yıllık izin hakları saklıdır.",
+      "articleRefs": [
+        "61",
+        "62"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Ara verme ve nöbetçi mahkemede tuzaklar",
+      "body": "- Ara vermeden yararlanamamak için iki şart birlikte aranır: il merkezi dışında olmak **ve** sadece bir idare veya bir vergi mahkemesi bulunan yer olmak. “İl merkezi dışındaki mahkemelerin hiçbiri yararlanamaz” diyen şık bu yüzden yanlıştır.\n- Nöbetçi mahkemenin işleri arasında **duruşma istemi** sayılmamıştır. Bu mahkemenin işleri şunlardır: yürütmenin durdurulması, delillerin tespiti ve kanunen belli süre içinde karara bağlanması gereken işler.\n- Tarihleri sıraya koy: ara **yirmi temmuzda** başlar, **otuz bir ağustosta** biter, çalışma yılı **bir eylülde** başlar.\n- Ara vermeden yararlanamayanların ve nöbetçi kalanların yıllık izin hakkı saklıdır. Bu ifade doğrudur.",
+      "articleRefs": [
+        "61",
+        "62"
+      ]
+    },
+    {
+      "type": "numbers",
+      "title": "Yenileme süreleri ve ara verme tarihleri",
+      "rows": [
+        {
+          "label": "Yargılamanın yenilenmesi — önceki ilamın hükmüne aykırı karar sebebi",
+          "value": "10 yıl",
+          "refs": [
+            "53"
+          ]
+        },
+        {
+          "label": "Yargılamanın yenilenmesi — Avrupa İnsan Hakları Mahkemesi kararına dayanan sebep",
+          "value": "Bu kararın kesinleştiği tarihten itibaren 1 yıl",
+          "refs": [
+            "53"
+          ]
+        },
+        {
+          "label": "Yargılamanın yenilenmesi — diğer sebepler",
+          "value": "60 gün",
+          "refs": [
+            "53"
+          ]
+        },
+        {
+          "label": "Yenileme sürelerinin başlangıcı",
+          "value": "Sebebin istemde bulunan yönünden gerçekleştiği tarihi izleyen gün",
+          "refs": [
+            "53"
+          ]
+        },
+        {
+          "label": "Çalışmaya ara vermenin başlangıcı",
+          "value": "20 Temmuz",
+          "refs": [
+            "61"
+          ]
+        },
+        {
+          "label": "Çalışmaya ara vermenin sonu",
+          "value": "31 Ağustos",
+          "refs": [
+            "61"
+          ]
+        },
+        {
+          "label": "Yeni çalışma yılının başlangıcı",
+          "value": "1 Eylül",
+          "refs": [
+            "61"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "53",
+        "61"
+      ]
+    },
+    {
+      "type": "compare",
+      "title": "Çekinme ve ret: Danıştay (sol) – bölge idare, idare ve vergi mahkemeleri (sağ)",
+      "rows": [
+        {
+          "aspect": "Olağan durum",
+          "left": "Çekinen veya reddedilenler hariç tutulup daire kurulu tamamlanır; istemi bu kurul inceler.",
+          "right": "İstemi, reddedilen başkan ve üyenin katılmadığı mahkeme inceler. Tek hâkimli davada istemi, reddedilen hâkimin katılmadığı idare veya vergi mahkemesi inceler.",
+          "refs": [
+            "56",
+            "57"
+          ]
+        },
+        {
+          "aspect": "Sayı artınca",
+          "left": "Çekinen veya reddedilenler ikiden fazlaysa istemi idari dava daireleri için İdari Dava Daireleri Kurulu, vergi dava daireleri için Vergi Dava Daireleri Kurulu inceler.",
+          "right": "İdare veya vergi mahkemesinde birden çok başkan ve üye reddedilirse istemi bölge idare mahkemesi inceler. Bölge idare mahkemesinde birden çok başkan veya üye reddedilirse istemi Danıştay inceler.",
+          "refs": [
+            "56",
+            "57"
+          ]
+        },
+        {
+          "aspect": "Esas hakkında karar",
+          "left": "İstemi kabul eden daire kurulu veya Kurul, davanın esası hakkında da karar verir.",
+          "right": "Ret istemini yerinde gören Danıştay veya mahkeme, işin esası hakkında da karar verir.",
+          "refs": [
+            "56",
+            "57"
+          ]
+        },
+        {
+          "aspect": "Noksan üye",
+          "left": "Kurullarda noksan üyelikler diğer dava dairelerinden tamamlanır. Kurulların toplanmasına engel olacak sayıda ret isteminde bulunulamaz ve çekinilemez.",
+          "right": "Çekinme hâlinde başka bir hâkimin görevlendirilmesinde, noksan üyenin tamamlanmasında ve görevli mahkemenin belirlenmesinde aynı hükümler uygulanır.",
+          "refs": [
+            "56",
+            "57"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "56",
+        "57"
+      ]
+    },
+    {
+      "type": "exam_stats",
+      "title": "Sınav der ki",
+      "rows": [
+        {
+          "label": "Bu ünitenin maddelerinden yayındaki soru",
+          "value": "20",
+          "refs": [
+            "41",
+            "43",
+            "44",
+            "45",
+            "50",
+            "51",
+            "52",
+            "53",
+            "56",
+            "57",
+            "61",
+            "62"
+          ]
+        },
+        {
+          "label": "md 53",
+          "value": "4 soru",
+          "refs": [
+            "53"
+          ]
+        },
+        {
+          "label": "md 57",
+          "value": "3 soru",
+          "refs": [
+            "57"
+          ]
+        },
+        {
+          "label": "md 41",
+          "value": "2 soru",
+          "refs": [
+            "41"
+          ]
+        },
+        {
+          "label": "md 45",
+          "value": "2 soru",
+          "refs": [
+            "45"
+          ]
+        },
+        {
+          "label": "md 51",
+          "value": "2 soru",
+          "refs": [
+            "51"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "41",
+        "43",
+        "44",
+        "45",
+        "50",
+        "51",
+        "52",
+        "53",
+        "56",
+        "57",
+        "61",
+        "62"
+      ],
+      "generated": true
+    },
+    {
+      "type": "bridge",
+      "title": "Bu üniteden soru çöz",
+      "articleRefs": [
+        "41",
+        "43",
+        "44",
+        "45",
+        "50",
+        "51",
+        "52",
+        "53",
+        "56",
+        "57",
+        "61",
+        "62"
+      ],
+      "generated": true,
+      "rows": [
+        {
+          "label": "Madde kapsamlı seans",
+          "value": "md 41, 43–45, 50–53, 56, 57, 61, 62, 10 soru",
+          "refs": [
+            "41",
+            "43",
+            "44",
+            "45",
+            "50",
+            "51",
+            "52",
+            "53",
+            "56",
+            "57",
+            "61",
+            "62"
+          ]
+        }
+      ]
+    }
+  ]
+}
