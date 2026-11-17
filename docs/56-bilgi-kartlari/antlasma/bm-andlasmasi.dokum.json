@@ -1,717 +1,717 @@
 {
-  "belge": "Birleşmiş Milletler Andlaşması",
-  "kunye": "T.C. Resmî Gazete, 24 Ağustos 1945 Cuma, Sayı: 6092, Sahife 9237–9244 — Sanfransisko'da 26 Haziran 1945 tarihinde yapılmış ve imzalanmış olan Birleşmiş Milletler Andlaşması ile Milletlerarası Adalet Divanı Statüsünün onanması hakkında kanun (Kanun No: 4801, Kabul tarihi: 15/8/1945; kanun metninin altındaki tarih 20/8/1945)",
-  "notlar": "Kapsam: Başlangıç + 111 madde (BÖLÜM I–XIX). Çekince/beyan: basılı metinde yok. İmza listesi basılmamış; yalnız kapanış formülü var (\"Yukarıdaki hükümleri tasdiken…\" ve \"Sanfransisko'da yirmi altı Haziran bin dokuzyüz kırkbeşte yapılmıştır\"), bu iki cümle 111. maddenin metninin sonuna alındı. Kapsam dışı bırakılanlar: 4801 sayılı onay kanununun 3 maddesi (künyede); Milletlerarası Adalet Divanı Statüsü — nüshanın 8–12. sayfalarında (Sahife 9244–9248; kaynak PDF s. 8–12), 70 madde, BÖLÜM I–V (Madde 1 bölüm başlığından önce gelir); s. 12'nin altından itibaren ilgisiz Bakanlar Kurulu Kararı ve ilanlar. Bölüm içi italik alt başlıklar (Terekküp Tarzı, Görevler ve Yetkiler, Oy, Usül) madde kenar başlığı değil grup başlığı olduğundan `bolum` alanına \"BÖLÜM IV — Genel Kurul — Oy\" biçiminde eklendi; `title` hepsinde boş. Bölüm adı basıldığı gibi (\"BÖLÜM : IV\" → \"BÖLÜM IV\"). Yazım: baskıda harf noktaları yaygın biçimde silik (ı/i, u/ü, o/ö); sözcüğün doğru yazımı esas alındı, eski yazım ve sözcükler (prensipi, menfaatlar, olmıyan, hertürlü, deyin, eğemenlik, Kırallığı, Rusca, iki ayrı yazım: mütaallik/müteallik, usul/usül, vücude/vücuda, İrlânda/İrlanda) korundu. Satır sonunda düşmüş cümle sonu noktaları tamamlandı. Baskıdaki dizgi hataları DÜZELTİLMEDEN bırakıldı: md 57/2 \"müessesesler\", md 73/d \"işbilirği\", md 96/1 \"iştişari\" (96/2'de \"istişari\"), md 104 \"huhukî\", md 12/1 sonu \"isteye.\" (baskıda \"isteye..\"), md 13/1-a sonunda noktalama yok. Çevirinin kendine özgü terimleri basıldığı gibidir: Güvenlik Meclisinin daimî üyeleri için \"süreli\", geçici üyeleri için \"süresiz\" (md 23, 27, 47, 108, 109); md 43/1'de \"Kurulun emrine\" (Güvenlik Meclisi kastedilen yerde baskıda böyle); md 61/3'te temsilci cümlesi ayrı fıkra numarası almadan 3. fıkranın sonunda. 1945 metnidir: Güvenlik Meclisi onbir üye / yedi oy (md 23, 27, 109), Ekonomik ve Sosyal Meclis 18 üye (md 61) basıldığı gibi yazıldı, güncelleme yapılmadı.",
-  "maddeler": [
-    {
-      "articleNo": "Başlangıç",
-      "title": "",
-      "bolum": "",
-      "text": "Bir insan ömrü içinde iki kere beşeriyete tarif olunmaz acılar yükleyen harb belâsından, geleceğin nesillerini korumaya,\nİnsanın ana haklarına, şahsın haysiyet ve değerine, erkek ve kadınlar için olduğu gibi büyük ve küçük milletler için de hak eşitliğine olan imanımızı yeniden ilân etmeğe,\nAdaletin muhafazası ve andlaşmalarla devletlerarası hukukunun diğer kaynaklarından doğan vecibelere saygı gösterilmesi için gerekli şartları yaratmağa,\nSosyal ilerlemeyi kolaylaştırmağa ve daha büyük bir serbestlik içinde daha iyi yaşama şartları ihdas etmeğe,\nVe bu maksatla,\nTesamühle hareket etmeğe, iyi komşuluk zihniyeti içinde birbirimizle barışık yaşamağa,\nMilletlerarası barış ve güvenliğin muhafazası için kuvvetlerimizi birleştirmeğe,\nMüşterek menfaatin icapları dışında, silâh kuvvetinin kullanılmamasını sağlayan prensipleri kabule ve usulleri tesise,\nBütün milletlerin ekonomik ve sosyal ilerlemesini kolaylaştırmak için milletlerarası müesseselere başvurmağa,\nAzmetmiş olan, biz, Birleşmiş Milletler Halkı,\nBu amaçları gerçekleştirmek için, gayretlerimizi beraberce sarfetmeğe karar verdik.\nBuna binaen, Sanfransisko şehrinde toplanıp, usulüne uygun görülen yetki mektuplarını hâmil bulunan temsilcileri vasıtasiyle, metbu Hükümetlerimiz, işbu Birleşmiş Milletler Andlaşmasını kabul etmişler ve aşağıdaki vesikalarla Birleşmiş Milletler adını alacak olan Milletlerarası bir Teşkilât kurmuşlardır."
-    },
-    {
-      "articleNo": "1",
-      "title": "",
-      "bolum": "BÖLÜM I — Amaçlar ve Prensipler",
-      "text": "Birleşmiş Milletlerin amaçları şunlardır :\n1. Milletlerarası barış ve güvenliği muhafaza etmek, ve bu maksatla : Barışın uğrayacağı tehditleri önlemek ve uzaklaştırmak ve her türlü saldırma fiilini veya barışın başka suretle bozulması halini ortadan kaldırmak üzere, müessir müşterek tedbirleri almak; barışın bozulmasını intaç edebilecek milletlerarası mahiyette uyuşmazlıkların veya durumların düzeltilmesini veya çözülmesini, adalet ve devletlerarası hukuku prensiplerine uygun olarak barış yollariyle gerçekleştirmek;\n2. Milletlerarasında, milletlerin hak eşitliği prensipine ve kendi mukadderatlarını kendilerinin tâyin hakkına saygı üzerine kurulmuş dostane münasebetler geliştirmek ve dünya barışının sağlamlaştırılması için elverişli her türlü diğer tedbirleri almak;\n3. Ekonomik, sosyal, fikrî ve insani mahiyetteki milletlerarası dâvaları çözerek ve, ırk, cins, dil veya din farkı gözetmeksizin herkesin insan haklarına ve ana hürriyetlerine karşı saygıyı geliştirerek ve teşvik ederek, milletlerarası işbirliğini gerçekleştirmek,\n4. Milletlerin bu müşterek amaçlara doğru sarfettikleri gayretlerin ahenkleştiği bir merkez olmak."
-    },
-    {
-      "articleNo": "2",
-      "title": "",
-      "bolum": "BÖLÜM I — Amaçlar ve Prensipler",
-      "text": "Birleşmiş Milletler Teşkilâtı ve Üyeleri, birinci maddede beyan edilen amaçlara ulaşmak için aşağıdaki prensiplere uyarak hareket edeceklerdir :\n1. Teşkilât bütün Üyelerinin egemen eşitliği prensipi üzerine kurulmuştur.\n2. Teşkilâtın Üyeleri, üyelik sıfatından doğan hak ve menfaatlardan her birinin faydalanmasını sağlamak için, işbu Andlaşma müfadı gereğince üzerlerine aldıkları bütün vecibeleri iyi niyetle yerine getireceklerdir.\n3. Teşkilâtın Üyeleri, milletlerarası mahiyetteki uyuşmazlıklarını, milletlerarası barış ve güvenliği ve adaleti tehlikeye koymayacak şekilde barış yolları ile çözerler.\n4. Teşkilâtın Üyeleri, milletlerarası münasebetlerinde gerek herhangi bir başka Devletin toprak bütünlüğüne veya siyasî bağımsızlığına karşı, gerekse Birleşmiş Milletlerin amaçları ile telif edilemiyecek herhangi bir surette, tehdide veya kuvvet kullanılmasına başvurmaktan kaçınırlar.\n5. Teşkilâtın Üyeleri, işbu Andlaşma hükümleri gereğince, Teşkilâtın giriştiği herhangi bir teşebbüse hertürlü yardımda bulunurlar ve Teşkilâtça aleyhinde önleyici veya zorlayıcı tedbir alınan Devlete yardım etmekten kaçınırlar.\n6. Teşkilât, Birleşmiş Milletler Üyesi olmıyan Devletlerin, milletlerarası barış ve güvenliğin muhafazasının icabettirdiği ölçüde, işbu esaslara uygun olarak hareket etmesini sağlar.\n7. İşbu Andlaşmanın hiçbir hükmü, ne özü itibariyle bir Devletin millî yetkisi içinde bulunan işlere, Birleşmiş Milletlerin karışmasına cevaz verir, ve ne de Üyeleri, bu gibi işleri, işbu Andlaşma gereğince bir çözme tarzına bağlamaya icbar eder; bununla beraber, VII nci bölümde derpiş edilen zorlama tedbirlerinin uygulanmasına bu prensip hiçbir suretle halel getirmez."
-    },
-    {
-      "articleNo": "3",
-      "title": "",
-      "bolum": "BÖLÜM II — Üyeler",
-      "text": "Milletlerarası Teşkilâtı kurmak için Sanfransisko'da toplanan Birleşmiş Milletler Konferansına iştirak etmiş veya 1 Ocak 1942 tarihli Birleşmiş Milletler Demecini önceden imzalamış bulunan ve işbu Andlaşmayı imzalıyarak 110 uncu madde gereğince onayan Devletler, Birleşmiş Milletlerin aslî Üyeleridir."
-    },
-    {
-      "articleNo": "4",
-      "title": "",
-      "bolum": "BÖLÜM II — Üyeler",
-      "text": "1. İşbu Andlaşma vecibelerini kabul edip bunları yerine getirmeğe muktedir ve istekli olduklarına Teşkilâtça hükmedilen bütün diğer barışsever Devletler Birleşmiş Milletler Üyesi olabilirler.\n2. İşbu şartları haiz olan her Devletin, Birleşmiş Milletler Üyeliğine kabulü, Güvenlik Meclisinin tavsiyesi üzerine, Genel Kurul karariyle olur."
-    },
-    {
-      "articleNo": "5",
-      "title": "",
-      "bolum": "BÖLÜM II — Üyeler",
-      "text": "Güvenlik Meclisi tarafından aleyhinde önleyici veya zorlayıcı bir teşebbüse girişilen bir Teşkilât Üyesi, Güvenlik Meclisinin tavsiyesi üzerine Üyelik sıfatından doğan hak ve imtiyazları kullanmaktan, Genel Kurulca menedilebilir. İşbu hak ve imtiyazların yeniden kullanılmasına Güvenlik Meclisi müsaade edebilir."
-    },
-    {
-      "articleNo": "6",
-      "title": "",
-      "bolum": "BÖLÜM II — Üyeler",
-      "text": "Bir Teşkilât Üyesi işbu Andlaşma'da beyan olunan prensipleri devamlı şekilde ihlâl etmekte ısrar ederse, Güvenlik Meclisinin tavsiyesi üzerine, Genel Kurulca Teşkilâttan ihraç edilebilir."
-    },
-    {
-      "articleNo": "7",
-      "title": "",
-      "bolum": "BÖLÜM III — Uzuvlar",
-      "text": "1. Birleşmiş Milletler Teşkilâtının başlıca uzuvları olarak : Bir Genel Kurul, bir Güvenlik Meclisi, bir Ekonomik ve Sosyal Meclis, bir Vesayet Meclisi, bir Milletlerarası Adalet Divanı ve bir Sekreterlik ihdas edilmiştir.\n2. Gerekli görülebilecek tâli uzuvlar işbu Andlaşmaya uygun olarak ihdas edilebilecektir."
-    },
-    {
-      "articleNo": "8",
-      "title": "",
-      "bolum": "BÖLÜM III — Uzuvlar",
-      "text": "Teşkilâtın başlıca ve tâli uzuvlarında, erkeklerin ve kadınların bütün görevlere, eşit şartlar içinde, seçilebilmelerine, Teşkilâtça, hiçbir kayıtlama konmayacaktır."
-    },
-    {
-      "articleNo": "9",
-      "title": "",
-      "bolum": "BÖLÜM IV — Genel Kurul — Terekküp Tarzı",
-      "text": "1. Genel Kurul Birleşmiş Milletlerin bütün Üyelerinden terekküp eder.\n2. Her Üyenin Genel Kurul'da en çok beş temsilcisi bulunur."
-    },
-    {
-      "articleNo": "10",
-      "title": "",
-      "bolum": "BÖLÜM IV — Genel Kurul — Görevler ve Yetkiler",
-      "text": "Genel Kurul, işbu Andlaşma çerçevesine giren veya işbu Andlaşmada derpiş edilen uzuvlardan herhangi birinin yetki ve görevlerini ilgilendiren, her türlü mesele veya işleri görüşebilir ve 12 nci madde hükümleri mahfuz kalmak şartiyle, işbu mesele veya işler hakkında, Birleşmiş Milletler Teşkilâtı Üyelerine, Güvenlik Meclisine veya Teşkilât Üyeleri ile beraber Güvenlik Meclisine tavsiyelerde bulunabilir."
-    },
-    {
-      "articleNo": "11",
-      "title": "",
-      "bolum": "BÖLÜM IV — Genel Kurul — Görevler ve Yetkiler",
-      "text": "1. Genel Kurul, silâhsızlanmada ve silâhlanmanın düzenlenmesinde hâkim olan prensipler dâhil olmak üzere, milletlerarası barış ve güvenliğin muhafazası hususundaki işbirliğinin genel prensiplerini tetkik ve bu prensipler hakkında ya Teşkilât Üyelerine, ya Güvenlik Meclisine veya Teşkilât Üyeleri ile beraber Güvenlik Meclisine tavsiyelerde bulunabilir.\n2. Genel Kurul, Birleşmiş Milletlerden her hangi biri, veya Güvenlik Meclisi veyahut Teşkilât Üyesi olmayan bir Devlet tarafından, 35 inci maddenin ikinci fıkrası hükümlerine göre kendisine sunulan ve milletlerarası barış ve güvenliğin muhafazasını ilgilendiren her türlü meseleleri görüşebilir ve 12 nci madde hükmü mahfuz kalmak üzere, bu gibi her türlü meseleler hakkında ya ilgili Devlet veya Devletlere, ya Güvenlik Meclisine veyahut da Devletler ile beraber Güvenlik Meclisine tavsiyelerde bulunabilir. Bir teşebbüse lüzum gösteren bu neviden her mesele Genel Kurul tarafından görüşülmezden önce veya görüşüldükten sonra, Güvenlik Meclisine havale edilir.\n3. Genel Kurul, milletlerarası barış ve güvenliği tehlikeye koyacak gibi görünen durumlara, Güvenlik Meclisinin dikkatini çekebilir.\n4. Genel Kurulun, işbu maddede sayılan yetkileri 10 uncu maddenin şümulünü tahdit etmez."
-    },
-    {
-      "articleNo": "12",
-      "title": "",
-      "bolum": "BÖLÜM IV — Genel Kurul — Görevler ve Yetkiler",
-      "text": "1. Güvenlik Meclisi, bir uyuşmazlık veya herhangi bir durum karşısında, işbu Andlaşmanın kendisine yüklediği görevleri yaptığı müddetçe, Genel Kurul bu uyuşmazlık veya durum hakkında hiçbir tavsiyede bulunmamalıdır, meğerki, Güvenlik Meclisi bunu ondan isteye.\n2. Genel Sekreter, Güvenlik Meclisinin rizası ile her devrede, milletlerarası barış ve güvenliğin muhafazasına mütaallik olup, Güvenlik Meclisinin meşgul bulunduğu işleri Genel Kurulun ıttılaına sunar, keza Güvenlik Meclisi sözü geçen işlerle meşgul olmayı bıraktığı anda, Sekreterlik bundan Genel Kurulu veya, Genel Kurul toplantı halinde değilse, Teşkilât Üyelerini haberdar eder."
-    },
-    {
-      "articleNo": "13",
-      "title": "",
-      "bolum": "BÖLÜM IV — Genel Kurul — Görevler ve Yetkiler",
-      "text": "1. Genel Kurul;\na) Siyasî sahada milletlerarası iş birliğini geliştirmek ve devletlerarası hukukunun tedricî gelişmesi ile takninini teşvik etmek\nb) Ekonomik, sosyal alanlar ile fikrî kültür ve eğitim ve sağlık alanlarında milletlerarası işbirliğini geliştirmek ve ırk, cins, dil veya din farkı gözetmeksizin herkesin insan haklarından ve ana hürriyetlerden faydalanmasını kolaylaştırmak için tetkiklere yol açar ve tavsiyelerde bulunur.\n2. Genel Kurulun, yukardaki 1 b fıkrasında sözü geçen meselelerle ilgili diğer sorum, görev ve yetkileri IX ve X uncu bölümlerde beyan edilmiştir."
-    },
-    {
-      "articleNo": "14",
-      "title": "",
-      "bolum": "BÖLÜM IV — Genel Kurul — Görevler ve Yetkiler",
-      "text": "12 nci madde hükümleri mahfuz kalmak şartiyle, Birleşmiş Milletlerin amaç ve prensiplerini beyan eden işbu Andlaşma hükümlerinin ihlâlinden doğan durumlar da dâhil olmak üzere, Genel Kurulca umumun iyiliğine zarar verecek veya milletler arasındaki dostane münasebetleri tehlikeye koyacak mahiyette görülen, menşei ne olursa olsun, herhangi bir durumun, barış yoluyla düzeltilmesini temin edebilecek tedbirler tavsiye olunabilir."
-    },
-    {
-      "articleNo": "15",
-      "title": "",
-      "bolum": "BÖLÜM IV — Genel Kurul — Görevler ve Yetkiler",
-      "text": "1. Genel Kurul, Güvenlik Meclisinin yıllık raporları ile, mahsus raporlarını kabul eder ve inceler, bu raporlar Güvenlik Meclisinin milletlerarası barış ve güvenliği muhafaza için kararlaştırdığı veya aldığı tedbirler hakkında malûmat ve izahat ihtiva eder.\n2. Genel Kurul, Teşkilâtın diğer uzuvlarının raporlarını kabul eder ve inceler."
-    },
-    {
-      "articleNo": "16",
-      "title": "",
-      "bolum": "BÖLÜM IV — Genel Kurul — Görevler ve Yetkiler",
-      "text": "Genel Kurul, milletlerarası Vesayet rejimi hususunda, XII ve XIII üncü bölümler gereğince kendisine düşen görevleri yerine getirir; ezcümle, stratejik bölge olarak gösterilmemiş bulunan bölgelere müteallik Vesayet anlaşmalarını tasvip eder."
-    },
-    {
-      "articleNo": "17",
-      "title": "",
-      "bolum": "BÖLÜM IV — Genel Kurul — Görevler ve Yetkiler",
-      "text": "1. Genel Kurul, Teşkilâtın bütçesini inceler ve tasvip eder.\n2. Teşkilâtın giderlerini, Genel Kurulun yaptığı taksim gereğince Üyeler üzerlerine alırlar.\n3. Genel Kurul, 57 nci maddede bahis mevzuu olan ihtisas müesseseleri ile yapılan bütün malî ve bütçeye mütaallik anlaşmaları inceler ve tasvip eder ve anılan müesseselerin idarî bütçelerini, kendilerine tavsiyelerde bulunmak üzere, inceler."
-    },
-    {
-      "articleNo": "18",
-      "title": "",
-      "bolum": "BÖLÜM IV — Genel Kurul — Oy",
-      "text": "1. Genel Kurulun her Üyesi bir oya sahiptir.\n2. Önemli meseleler hakkında Genel Kurul, hazır bulunan ve oy veren üyelerin üçte iki çoğunluğu ile karar verir. Önemli sayılan meseleler şunlardır: Milletlerarası barış ve güvenliğin muhafazasına taallûk eden tavsiyeler, Güvenlik Meclisinin süresiz üyelerinin seçimi, Ekonomik ve Sosyal Meclis Üyelerinin seçimi, 86 ncı maddenin 1c fıkrası gereğince, Vesayet Meclisi Üyelerinin seçilmesi, Teşkilâta yeni Üyeler kabulü, Üyelerin hak ve imtiyazlarının taliki, Üyelerin ihracı, Vesayet rejiminin işlemesine mütaallik meseleler ve bütçe meseleleri.\n3. Üçte iki çoğunlukla çözülecek yeni mesele nevilerinin tesbiti de dâhil olmak üzere, başka meseleler hakkındaki kararlar, hazır bulunan ve oy veren üyelerin çoğunluğu ile alınır."
-    },
-    {
-      "articleNo": "19",
-      "title": "",
-      "bolum": "BÖLÜM IV — Genel Kurul — Oy",
-      "text": "Teşkilât giderlerine iştirak hissesinin ödenmesinde geciken bir Birleşmiş Milletler Üyesi, gecikmiş ödemelerinin tutarı, geçen tam iki senelik hissesine eşit veya bundan fazla ise, Genel Kurulda oya iştirak edemez. Bununla beraber Genel Kurul, bu gecikmenin Üyenin iradesi dışında olan durumlardan ileri geldiğini görürse, bu Üyenin oya iştirakine müsaade edebilir."
-    },
-    {
-      "articleNo": "20",
-      "title": "",
-      "bolum": "BÖLÜM IV — Genel Kurul — Usül",
-      "text": "Genel Kurul yılda bir olağan toplantı ve durum icabettirince, olağanüstü toplantılar yapar. Olağanüstü toplantılar, Güvenlik Meclisinin veya Birleşmiş Milletler Üyelerinin çoğunluğunun isteği üzerine Genel Sekreterin daveti ile yapılır."
-    },
-    {
-      "articleNo": "21",
-      "title": "",
-      "bolum": "BÖLÜM IV — Genel Kurul — Usül",
-      "text": "Genel Kurul içtüzüğünü kendi tesbit eder. Her toplantı için Başkanını seçer."
-    },
-    {
-      "articleNo": "22",
-      "title": "",
-      "bolum": "BÖLÜM IV — Genel Kurul — Usül",
-      "text": "Genel Kurul görevlerinin yapılması için gerekli gördüğü tâli uzuvları vücude getirebilir."
-    },
-    {
-      "articleNo": "23",
-      "title": "",
-      "bolum": "BÖLÜM V — Güvenlik Meclisi — Terekküp Tarzı",
-      "text": "1. Güvenlik Meclisi Teşkilâtın onbir Üyesinden mürekkeptir. Çin Cumhuriyeti, Fransa, Sovyet Sosyalist Cumhuriyetleri Birliği, Büyük Britanya ve Kuzey İrlânda Birleşik Kırallığı ve Amerika Birleşik Devletleri, Güvenlik Meclisinin süreli Üyeleridir. Teşkilâtın diğer altı Üyesi, her şeyden evvel Teşkilât Üyelerinin milletlerarası barış ve güvenliğin muhafazasındaki ve Teşkilâtın diğer gayelerinin sağlanmasındaki payını, ve aynı zamanda da âdilâne bir coğrafi taksimi bilhassa gözönünde tutan Genel Kurul tarafından, Güvenlik Meclisine süresiz Üye olarak seçilir.\n2. Güvenlik Meclisinin süresiz Üyeleri iki yıllık bir devre için seçilirler. Bununla beraber süresiz Üyelerin ilk seçiminde, bunlardan üçü bir yıl için seçilecektir. Çıkan Üyeler derhal yeniden seçilemezler.\n3. Güvenlik Meclisinin her Üyesinin Mecliste bir temsilcisi vardır."
-    },
-    {
-      "articleNo": "24",
-      "title": "",
-      "bolum": "BÖLÜM V — Güvenlik Meclisi — Görevler ve Yetkiler",
-      "text": "1. Teşkilâtın çabuk ve tesirli hareketinin temini için, Üyeleri, Milletlerarası barış ve güvenliğin muhafazasının başlıca sorumunu Güvenlik Meclisine verirler ve Güvenlik Meclisinin, bu sorumun kendisine yüklediği görevleri yerine getirirken, kendi adlarına hareket ettiğini kabul ederler.\n2. Bu görevlerin yapılmasında, Güvenlik Meclisi, Birleşmiş Milletler amaç ve prensiplerine uygun olarak hareket eder. Güvenlik Meclisine işbu görevleri yerine getirebilmesi için verilen muayyen ve mahsus yetkiler VI, VII, VIII, ve XII nci bölümlerde gösterilmiştir.\n3. Güvenlik Meclisi, Genel Kurulun incelemesine yıllık raporlar ve icabı halinde mahsus raporlar sunar."
-    },
-    {
-      "articleNo": "25",
-      "title": "",
-      "bolum": "BÖLÜM V — Güvenlik Meclisi — Görevler ve Yetkiler",
-      "text": "Teşkilât Üyeleri işbu Andlaşma gereğince, Güvenlik Meclisinin kararlarını kabul etmek ve uygulamak hususunda mutabıktırlar."
-    },
-    {
-      "articleNo": "26",
-      "title": "",
-      "bolum": "BÖLÜM V — Güvenlik Meclisi — Görevler ve Yetkiler",
-      "text": "Dünya insan ve ekonomi kaynaklarının yalnız en küçük kısmını silâhlanmaya ayırarak, milletlerarası barış ve güvenliğin kurulmasını ve muhafazasını kolaylaştırmak için, Güvenlik Meclisi 47 nci maddede derpiş edilen Kurmay Komitesinin yardımiyle bir silâhlanmayı tanzim sistemi kurmak üzere Teşkilât Üyelerine sunulacak plânları hazırlamakla mükelleftir."
-    },
-    {
-      "articleNo": "27",
-      "title": "",
-      "bolum": "BÖLÜM V — Güvenlik Meclisi — Oy",
-      "text": "1. Güvenlik Meclisinin her Üyesi bir oya sahiptir.\n2. Güvenlik Meclisinin usul meselelerindeki kararları yedi üyenin, müspet oyu ile alınır;\n3. Güvenlik Meclisinin diğer bütün meselelerdeki kararları, süreli Üyelerin hepsinin oyları dâhil olmak üzere, yedi Üyenin müspet oyu ile alınır, şukadar ki, VI ncı bölüm ile 52 nci maddenin 3 üncü fıkrası mefadı gereğince alınan kararlarda, bir uyuşmazlıkta taraf olan, oy vermekten imtina eder."
-    },
-    {
-      "articleNo": "28",
-      "title": "",
-      "bolum": "BÖLÜM V — Güvenlik Meclisi — Usül",
-      "text": "1. Güvenlik Meclisi, görevlerini süreli olarak yerine getirebilecek surette teşkilâtlandırılmıştır. Bu maksatla, Güvenlik Meclisinin her Üyesi Teşkilâtın makarrında her zaman bir temsilci bulundurmalıdır.\n2. Güvenlik Meclisi, muayyen zamanlarda, her bir Üyesinin, dilerse, kendisini Hükümetinin bir Üyesi veya bilhassa tâyin edilen başka bir temsilci tarafından temsil ettirebileceği toplantılar yapar.\n3. Güvenlik Meclisi, Teşkilâtın makarrından başka, ödevini kolaylaştırmak için en elverişli gördüğü herhangi bir yerde toplantılar yapabilir."
-    },
-    {
-      "articleNo": "29",
-      "title": "",
-      "bolum": "BÖLÜM V — Güvenlik Meclisi — Usül",
-      "text": "Güvenlik Meclisi görevlerinin yapılabilmesi için gerekli gördüğü tâli uzuvları vücuda getirebilir."
-    },
-    {
-      "articleNo": "30",
-      "title": "",
-      "bolum": "BÖLÜM V — Güvenlik Meclisi — Usül",
-      "text": "Güvenlik Meclisi Başkanının seçim şeklini de tâyin eden içtüzüğünü kendi tesbit eder."
-    },
-    {
-      "articleNo": "31",
-      "title": "",
-      "bolum": "BÖLÜM V — Güvenlik Meclisi — Usül",
-      "text": "Güvenlik Meclisi Üyesi olmayan her Teşkilât Üyesi, Güvenlik Meclisine sunulan ve işbu Üyenin menfaatlarına hassatan dokunduğu Meclisce mütalâa olunan her meselenin görüşülmesine, oy sahibi olmaksızın, iştirak edebilir."
-    },
-    {
-      "articleNo": "32",
-      "title": "",
-      "bolum": "BÖLÜM V — Güvenlik Meclisi — Usül",
-      "text": "Güvenlik Meclisi Üyesi olmayan her hangi bir Birleşmiş Milletler Üyesi veya Birleşmiş Milletler Üyesi olmayan her hangi bir Devlet, Güvenlik Meclisince incelenen bir uyuşmazlıkta taraf olduğu takdirde, işbu uyuşmazlığın görüşülmesine oy sahibi olmaksızın iştirake davet edilir. Güvenlik Meclisi Teşkilât Üyesi olmayan bir Devletin iştirakine koymayı uygun bulduğu şartları tâyin eder."
-    },
-    {
-      "articleNo": "33",
-      "title": "",
-      "bolum": "BÖLÜM VI — Uyuşmazlıkların Barış Yolu ile Çözülmesi",
-      "text": "1. Uzaması, milletlerarası barış ve güvenliğin muhafazasını tehdit edebilecek mahiyette bir uyuşmazlıkta taraf olanlar, bu uyuşmazlığın çözülmesini her şeyden önce görüşme, soruşturma, ara bulma, uzlaşma, tahkim ve yargı yollariyle veya bölge teşkil veya anlaşmalarına başvurarak veyahut kendi seçecekleri başka barış yollariyle aramalıdırlar.\n2. Güvenlik Meclisi, gerekli görürse tarafları, aralarındaki uyuşmazlığı bu gibi yollarla çözmeğe davet eder."
-    },
-    {
-      "articleNo": "34",
-      "title": "",
-      "bolum": "BÖLÜM VI — Uyuşmazlıkların Barış Yolu ile Çözülmesi",
-      "text": "Güvenlik Meclisi, her hangi bir uyuşmazlık veya milletler arasında bir anlaşmazlıkla neticelenebilecek veya uyuşmazlık doğurabilecek durum hakkında; bu uyuşmazlığın veya durumun uzamasının milletlerarası barış ve güvenliğin muhafazasını tehdit etmek istidadında olup olmadığını tesbit için soruşturmada bulunabilir."
-    },
-    {
-      "articleNo": "35",
-      "title": "",
-      "bolum": "BÖLÜM VI — Uyuşmazlıkların Barış Yolu ile Çözülmesi",
-      "text": "1. Her Teşkilât Üyesi 34 üncü maddede kastolunan mahiyette bir uyuşmazlık veya durum üzerine Güvenlik Meclisinin veya Genel Kurulun dikkatini çekebilir.\n2. Teşkilât Üyesi olmayan bir Devlet, taraf olduğu her hangi bir uyuşmazlık üzerine, Andlaşmada derpiş edilen barış yoluyla çözme mükellefiyetini, bu uyuşmazlık için önceden kabul etmek şartiyle, Güvenlik Meclisinin veya Genel Kurulun dikkatini çekebilir.\n3. İşbu madde gereğince dikkatine sunulan meseleler hakkında Genel Kurulun hareketleri 11 ve 12 nci maddeler hükümlerine tabidir."
-    },
-    {
-      "articleNo": "36",
-      "title": "",
-      "bolum": "BÖLÜM VI — Uyuşmazlıkların Barış Yolu ile Çözülmesi",
-      "text": "1. Güvenlik Meclisi, 33 üncü maddede zikredilen mahiyette bir uyuşmazlığın veya buna benzer durumun gelişmesinin her hangi bir safhasında, uygun düşen düzeltme usül veya tarzlarını tavsiye edebilir.\n2. Güvenlik Meclisi, bu uyuşmazlığın çözülmesi için taraflarca önceden kabul edilmiş olan bütün usulleri gözönünde tutacaktır.\n3. İşbu maddede derpiş edilen tavsiyelerde bulunurken, Güvenlik Meclisi, hukukî mahiyette uyuşmazlıkların umumiyet itibariyle taraflarca Milletlerarası Adalet Divanı Statüsü hükümlerine göre Divana sunulması lâzımgeldiğini de nazara alacaktır."
-    },
-    {
-      "articleNo": "37",
-      "title": "",
-      "bolum": "BÖLÜM VI — Uyuşmazlıkların Barış Yolu ile Çözülmesi",
-      "text": "1. 33 üncü maddede zikredilen mahiyette bir uyuşmazlıkta taraf olanlar onu, anılan maddede gösterilen yollarla çözmeğe muvaffak olamazlarsa, Güvenlik Meclisine sunarlar.\n2. Güvenlik Meclisi bir uyuşmazlığın uzamasının filhakika, milletlerarası barış ve güvenliğin muhafazasını tehdit eder göründüğüne hükmederse, 36 ncı madde gereğince mi hareket edeceğine yoksa uygun gördüğü başka çözme şekilleri mi tavsiye edeceğine karar verir."
-    },
-    {
-      "articleNo": "38",
-      "title": "",
-      "bolum": "BÖLÜM VI — Uyuşmazlıkların Barış Yolu ile Çözülmesi",
-      "text": "33 ilâ 37 nci maddeler hükümlerine halel gelmemek üzere, Güvenlik Meclisi, bir uyuşmazlıkta taraf olanların hepsi arzu ettikleri takdirde, işbu uyuşmazlığın barış yolu ile çözülmesi için taraflara tavsiyelerde bulunabilir."
-    },
-    {
-      "articleNo": "39",
-      "title": "",
-      "bolum": "BÖLÜM VII — Barışın Tehdidi, Bozulması ve Saldırma Fiili Halinde Yapılacak Hareket",
-      "text": "Güvenlik Meclisi, barışın tehdit edildiğini, bozulduğunu veya bir saldırma fiilinin vukubulduğunu tesbit eder ve milletlerarası barış ve güvenliğin muhafazası veya yeniden tesisi için tavsiyelerde bulunur veya 41 ve 42 nci maddeler gereğince hangi tedbirler alınacağını kararlaştırır."
-    },
-    {
-      "articleNo": "40",
-      "title": "",
-      "bolum": "BÖLÜM VII — Barışın Tehdidi, Bozulması ve Saldırma Fiili Halinde Yapılacak Hareket",
-      "text": "Durumun vahimleşmesine mâni olmak üzere, Güvenlik Meclisi, 39 uncu madde gereğince tavsiyelerde bulunmazdan veya alınacak tedbirleri kararlaştırmazdan evvel, ilgili tarafları, gerekli veya temenniye değer gördüğü geçici tedbirlere riayete davet edebilir. Bu geçici tedbirler her hangi bir şekilde, ilgili tarafların haklarına, iddialarına veya durumlarına halel getirmez. İşbu geçici tedbirlerin yerine getirilmemesi halinde, Güvenlik Meclisi bu noksanı gereği gibi nazara alacaktır."
-    },
-    {
-      "articleNo": "41",
-      "title": "",
-      "bolum": "BÖLÜM VII — Barışın Tehdidi, Bozulması ve Saldırma Fiili Halinde Yapılacak Hareket",
-      "text": "Güvenlik Meclisi, kararlarını yürütmek için silâhlı kuvvet kullanılmasını gerektirmeyen ne gibi tedbirlerin alınması lâzım geleceğini tesbit ve Birleşmiş Milletler Üyelerini bu tedbirleri uygulamağa davet edebilir. Bu tedbirlere, ekonomik münasebetlerin ve demiryolu, deniz, hava, posta, telgraf, radyo ve diğer ulaştırma vasıtalarının tamamen veya kısmen kesilmesi ile siyasi münasebetlerin kat'ı da dâhil olabilir."
-    },
-    {
-      "articleNo": "42",
-      "title": "",
-      "bolum": "BÖLÜM VII — Barışın Tehdidi, Bozulması ve Saldırma Fiili Halinde Yapılacak Hareket",
-      "text": "Güvenlik Meclisi 41 nci maddede derpiş olunan tedbirlerin uygun olmayacaklarına veya uygun olmadıklarının sabit olduğuna hükmederse, milletlerarası barış ve güvenliğin muhafazası veya yeniden tesisi için, hava, deniz veya kara kuvvetleri vasıtasiyle gerekli addettiği hertürlü teşebbüse geçebilir. Bu teşebbüse, nümayişler, abluka tedbirleri ve Birleşmiş Milletler Üyelerinin hava, deniz veya kara kuvvetleri tarafından yapılacak başka hareketler dâhil olabilir."
-    },
-    {
-      "articleNo": "43",
-      "title": "",
-      "bolum": "BÖLÜM VII — Barışın Tehdidi, Bozulması ve Saldırma Fiili Halinde Yapılacak Hareket",
-      "text": "1. Birleşmiş Milletlerin bütün Üyeleri milletlerarası barış ve güvenliğin muhafazasını desteklemek üzere, Güvenlik Meclisinin daveti ile ve mahsus bir anlaşma veya mahsus anlaşmalar gereğince, milletlerarası barış ve güvenliğin muhafazası için Kurulun emrine gerekli silâhlı kuvvetleri vermeği ve geçit hakkı da dâhil olmak üzere yardım ve kolaylıklarda bulunmayı taahhüt ederler.\n2. Yukarda kastolunan anlaşma veya anlaşmalar bu kuvvetlerin miktar ve mahiyetini, hazırlık derecelerini ve genel mevkileri ile gösterilecek kolaylık ve yardımın mahiyetini tesbit edecektir.\n3. Anlaşma veya anlaşmalar Güvenlik Meclisinin teşebbüsü üzerine, kabil olur olmaz müzakere edilecektir. Bu anlaşmalar, Güvenlik Meclisi ile Teşkilât Üyeleri veya Güvenlik Meclisi ile Teşkilât Üyelerinden mürekkep guruplar arasında aktedilecek ve imzalayan Devletler tarafından, her birinin anayasası usülleri gereğince onanacaktır."
-    },
-    {
-      "articleNo": "44",
-      "title": "",
-      "bolum": "BÖLÜM VII — Barışın Tehdidi, Bozulması ve Saldırma Fiili Halinde Yapılacak Hareket",
-      "text": "Güvenlik Meclisi kuvvete başvurmağa karar verince, Mecliste temsil edilmeyen bir Üyeyi 43 ncü madde gereğince kabul edilen taahhütlerin yerine getirilmesi için silâhlı kuvvet vermeğe davet etmezden önce, işbu Üyeyi silâhlı kuvvetlerine mensup birliklerin kullanılması hususundaki Güvenlik Meclisinin kararlarına, isterse, iştirake davet edecektir."
-    },
-    {
-      "articleNo": "45",
-      "title": "",
-      "bolum": "BÖLÜM VII — Barışın Tehdidi, Bozulması ve Saldırma Fiili Halinde Yapılacak Hareket",
-      "text": "Teşkilâtın süratle askerî mahiyette tedbirler alabilmesini mümkün kılmak üzere Birleşmiş Milletler Üyeleri milletlerarası zorlayıcı bir hareketin müşterek olarak yapılabilmesi için derhal kullanılabilecek millî hava kuvvetleri birlikleri bulunduracaklardır. 43 ncü maddede zikredilen mahsus anlaşma veya mahsus anlaşmalarla çizilen hadler içinde Güvenlik Meclisi, Kurmay Komitesinin yardımı ile, bu birliklerin kuvvetini ve hazırlık derecelerini tâyin ve bunların müşterek hareketlerini derpiş eden plânları tesbit eder."
-    },
-    {
-      "articleNo": "46",
-      "title": "",
-      "bolum": "BÖLÜM VII — Barışın Tehdidi, Bozulması ve Saldırma Fiili Halinde Yapılacak Hareket",
-      "text": "Silâh kuvvetinin kullanılması için plânları Kurmay Komitesinin yardımı ile, Güvenlik Meclisi tesbit eder."
-    },
-    {
-      "articleNo": "47",
-      "title": "",
-      "bolum": "BÖLÜM VII — Barışın Tehdidi, Bozulması ve Saldırma Fiili Halinde Yapılacak Hareket",
-      "text": "1. Milletlerarası barış ve güvenliğin muhafazası, Güvenlik Meclisinin emrine verilen kuvvetlerin kullanılması ve komutası, silâhlanmanın düzenlenmesi ve muhtemel silâhsızlanma için Meclisin muhtaç olduğu askerî vasıtalarla ilgili her hususta Meclise tavsiyelerde bulunacak ve onu destekleyecek bir Kurmay Komitesi kurulmuştur.\n2. Kurmay Komitesi, Güvenlik Meclisinin süreli Üyelerinin Kurmay Başkanlarından veya bunların temsilcilerinden terekküp eder. Komitede süreli olarak temsil edilmeyen herhangi bir Birleşmiş Milletler Üyesinin iştiraki, Komitenin ödevini iyi yapabilmesi hususunda çalışmaları için lüzumlu olduğu zaman Komite işbu Üyeyi kendisine katılmağa dâvet eder.\n3. Kurmay Komitesi, Güvenlik Meclisinin emrine verilen bütün silâhlı kuvvetlerin strateji bakımından idaresinden, işbu Meclise tabi olarak sorumludur. İşbu kuvvetlerin komutasına ait meseleler sonradan çözülecektir.\n4. Kurmay Komitesi tarafından, Güvenlik Meclisinin izni ile ve ilgili bölge teşkillerine danıştıktan sonra tâli bölge komiteleri vücuda getirilebilir."
-    },
-    {
-      "articleNo": "48",
-      "title": "",
-      "bolum": "BÖLÜM VII — Barışın Tehdidi, Bozulması ve Saldırma Fiili Halinde Yapılacak Hareket",
-      "text": "1. Güvenlik Meclisinin milletlerarası barış ve güvenliğin muhafazası hususundaki kararlarının yürütülmesi için gerekli tedbirler, Meclisin takdirine göre Birleşmiş Milletlerin bütün Üyeleri veya bunlardan bazıları tarafından alınır.\n2. İşbu kararlar, Birleşmiş Milletler Üyeleri tarafından doğrudan doğruya ve iştirak ettikleri milletlerarası teşkillerdeki hareketleri ile yürütülür."
-    },
-    {
-      "articleNo": "49",
-      "title": "",
-      "bolum": "BÖLÜM VII — Barışın Tehdidi, Bozulması ve Saldırma Fiili Halinde Yapılacak Hareket",
-      "text": "Birleşmiş Milletler Üyeleri, Güvenlik Meclisi tarafından kararlaştırılan tedbirlerin yürütülmesinde karşılıklı olarak destekleşmek üzere birbirlerine katılırlar."
-    },
-    {
-      "articleNo": "50",
-      "title": "",
-      "bolum": "BÖLÜM VII — Barışın Tehdidi, Bozulması ve Saldırma Fiili Halinde Yapılacak Hareket",
-      "text": "Bir Devlet, Güvenlik Meclisi tarafından alınan önleyici veya zorlayıcı tedbirlerin mevzuu olursa, başka herhangi bir Devletin, Birleşmiş Milletler Üyesi olsun veya olmasın, işbu tedbirlerin yürütülmesi yüzünden özel ekonomik zorluklar karşısında kaldığı takdirde, bu zorlukların çözülmesi için Güvenlik Meclisine danışmaya hakkı olacaktır."
-    },
-    {
-      "articleNo": "51",
-      "title": "",
-      "bolum": "BÖLÜM VII — Barışın Tehdidi, Bozulması ve Saldırma Fiili Halinde Yapılacak Hareket",
-      "text": "İşbu Andlaşmanın hiçbir hükmü, Birleşmiş Milletler Üyelerinden birinin silâhlı bir saldırmaya hedef olması halinde, Güvenlik Meclisi milletlerarası barış ve güvenliğin muhafazası için lüzumlu tedbirleri alıncaya kadar, tabiî olan münferit veya müşterek meşru müdafaa hakkına halel getirmez. Bu meşru müdafaa hakkını kullanarak Üyelerin aldığı tedbirler derhal Güvenlik Meclisine bildirilir ve Meclisin, işbu Andlaşmaya dayanarak milletlerarası barış ve güvenliğin muhafaza veya iadesi için lüzumlu göreceği şekilde heran hareket etmek yetki ve ödevine hiçbir veçhile tesir etmez."
-    },
-    {
-      "articleNo": "52",
-      "title": "",
-      "bolum": "BÖLÜM VIII — Bölge Anlaşmaları",
-      "text": "1. İşbu Andlaşmanın hiçbir hükmü, milletlerarası barış ve güvenliğin muhafazasına mütaallik olup, mevziî mahiyette bir harekete müsait bulunan işlerin çözülmesi amacını güden bölge anlaşma veya teşkillerinin mevcudiyetine mâni değildir; yeter ki işbu anlaşma veya teşkillerin ve bunların faaliyetinin Birleşmiş Milletler amaç ve prensipleri ile telifi kabil olsun.\n2. Bu Anlaşmaları akdeden veya bu teşkilleri vücude getiren Birleşmiş Milletler Üyeleri, mevziî mahiyette uyuşmazlıkları, Güvenlik Meclisine arzetmeden önce, işbu Anlaşma veya teşkiller vasıtasiyle, barış yoluyla çözmek hususunda bütün gayretlerini sarfetmelidir.\n3. Güvenlik Meclisi, mevziî mahiyette uyuşmazlıkların, bu bölge anlaşmaları veya teşkilleri vasıtasiyle, barış yolu ile çözülmesinin gelişmesini, ister ilgili Devletlerin teşebbüsü, ister Meclisin havalesi üzerine, teşvik eder.\n4. İşbu madde, 34 ve 35 nci maddelerin uygulanmasına hiçbir veçhile halel vermez."
-    },
-    {
-      "articleNo": "53",
-      "title": "",
-      "bolum": "BÖLÜM VIII — Bölge Anlaşmaları",
-      "text": "1. Güvenlik Meclisi, icabederse, kendi yetkisi altında alınan zorlayıcı tedbirlerin uygulanması için bölge anlaşmalarını veya teşkillerini kullanır. Bununla beraber, Güvenlik Meclisinin müsaadesi olmaksızın, bölge anlaşmaları gereğince veya bölge teşkilleri tarafından hiçbir zorlayıcı harekete teşebbüs edilmiyecektir; işbu maddenin ikinci fıkrasındaki tarife göre düşman Devlet sayılanlara karşı, 107 nci madde gereğince alınan veya böyle bir Devlet tarafından yeniden saldırma siyasetine başlanmasına karşı tevcih olunan bölge anlaşmalarında derpiş edilen tedbirler, ilgili Hükümetlerin isteği üzerine, böyle bir Devlet tarafından yapılacak yeni bir saldırmayı önlemek ödevinin Teşkilâta verilmesi kabil oluncaya kadar, bundan müstesnadır.\n2. İşbu maddenin birinci fıkrasında kullanılan «düşman Devlet» tâbiri, İkinci Dünya Harbinde, işbu Andlaşmayı imza edenlerden herhangi birinin düşmanı bulunan her Devlete şâmildir."
-    },
-    {
-      "articleNo": "54",
-      "title": "",
-      "bolum": "BÖLÜM VIII — Bölge Anlaşmaları",
-      "text": "Güvenlik Meclisi, her zaman milletlerarası barış ve güvenliğin muhafazası için bölge anlaşmaları gereğince veya bölge teşkilleri tarafından girişilen veya tasarlanan her hareketten tamamiyle haberli bulundurulmalıdır."
-    },
-    {
-      "articleNo": "55",
-      "title": "",
-      "bolum": "BÖLÜM IX — Milletlerarası Ekonomik ve Sosyal İşbirliği",
-      "text": "Milletler arasında hak eşitliği prensipine ve her milletin kendi mukadderatını kendisinin tâyin etmesi hakkına saygı gösterilmesine dayanan barış ve dostluk münasebetlerini sağlamak için lüzumlu istikrar ve refah şartlarını yaratmak üzere, Birleşmiş Milletler:\na) Hayat seviyelerinin yükselmesini, tam çalıştırmayı ve ekonomik ve sosyal alanda ilerleme ve gelişme şartlarını;\nb) Ekonomik, sosyal alanlarla sağlık alanındaki milletlerarası dâvaların ve bunlara bağlı başka dâvaların çözülmesini; fikrî kültürle eğitim alanında milletlerarası işbirliğini;\nc) Irk, cins, dil veya din farkı gözetmeksizin herkesin insan haklarına ve ana hürriyetlerine bütün dünyada bilfiil saygı gösterilmesini,\nkolaylaştıracaktır."
-    },
-    {
-      "articleNo": "56",
-      "title": "",
-      "bolum": "BÖLÜM IX — Milletlerarası Ekonomik ve Sosyal İşbirliği",
-      "text": "Üyeler, 55 nci maddede beyan olunan amaçlara erişmek için gerek beraberce gerek tek başlarına, Teşkilâtla işbirliği halinde hareket eylemeyi taahhüt ederler."
-    },
-    {
-      "articleNo": "57",
-      "title": "",
-      "bolum": "BÖLÜM IX — Milletlerarası Ekonomik ve Sosyal İşbirliği",
-      "text": "1. Hükümetlerarası anlaşmalarla kurulan ve statüleri hükümleri gereğince ekonomik, sosyal, fikrî kültür ve eğitim, sağlık ve sair bunlara bağlı alanlarda milletlerarası geniş yetkileri bulunan muhtelif ihtisas müesseseleri 63 üncü madde gereğince Teşkilâta bağlanmıştır.\n2. Teşkilâta bu suretle bağlanan müessesesler aşağıda «ihtisas müesseseleri» diye anılacaklardır."
-    },
-    {
-      "articleNo": "58",
-      "title": "",
-      "bolum": "BÖLÜM IX — Milletlerarası Ekonomik ve Sosyal İşbirliği",
-      "text": "Teşkilât, ihtisas müesseselerinin programlariyle faaliyetlerini ahenkleştirmek için tavsiyelerde bulunur."
-    },
-    {
-      "articleNo": "59",
-      "title": "",
-      "bolum": "BÖLÜM IX — Milletlerarası Ekonomik ve Sosyal İşbirliği",
-      "text": "Teşkilât, 55 inci maddede beyan edilen amaçlara varmak üzere gerekli her türlü yeni ihtisas müesseselerinin kurulması için, icabedince, ilgili Devletler arasında görüşmeler yapılmasına önayak olur."
-    },
-    {
-      "articleNo": "60",
-      "title": "",
-      "bolum": "BÖLÜM IX — Milletlerarası Ekonomik ve Sosyal İşbirliği",
-      "text": "Genel Kurul ve ona tabi olarak, X ncu bölüm hükümleriyle kendisine bahşedilen yetkilere malik bulunan Ekonomik ve Sosyal Meclis, Teşkilâtın işbu bölümde beyan edilen görevlerini yerine getirmekle mükelleftir."
-    },
-    {
-      "articleNo": "61",
-      "title": "",
-      "bolum": "BÖLÜM X — Ekonomik ve Sosyal Meclis — Terekküp Tarzı",
-      "text": "1. Ekonomik ve Sosyal Meclis, Genel Kurulca seçilen 18 Birleşmiş Milletler Üyesinden mürekkeptir.\n2. Üçüncü fıkra hükümleri mahfuz kalmak şartiyle, Ekonomik ve Sosyal Meclisin altı Üyesi her yıl, üç yıllık bir devre için seçilirler. Çıkan Üyeler derhal yeniden seçilebilir.\n3. Ekonomik ve Sosyal Meclisin 18 Üyesi ilk seçimde tâyin edilir. Genel Kurulca tesbit edilen hükümlere göre bu üyelerden altısının görevi bir yıl sonra ve diğer altı üyeninki iki yıl sonra bitecektir. Ekonomik ve Sosyal Meclisin her Üyesinin Mecliste bir temsilcisi vardır."
-    },
-    {
-      "articleNo": "62",
-      "title": "",
-      "bolum": "BÖLÜM X — Ekonomik ve Sosyal Meclis — Görevler ve Yetkiler",
-      "text": "1. Ekonomik ve Sosyal Meclis, ekonomik, sosyal, fikrî kültür ve eğitim, sağlık ve diğer bunlara bağlı alanlarda milletlerarası meseleler üzerinde incelemeler ve raporlar yapabilir veya yaptırabilir ve bütün bu meseleler hakkında Genel Kurula, Teşkilât Üyelerine ve ilgili ihtisas müesseselerine tavsiyelerde bulunabilir.\n2. Meclis, herkesin insan haklarına ve ana hürriyetlerine bilfiil saygı gösterilmesini sağlamak üzere tavsiyelerde bulunabilir.\n3. Meclis, yetkisine giren meseleler hakkında Genel Kurula sunulmak üzere anlaşma projeleri hazırlayabilir.\n4. Meclis, Teşkilât tarafından konulan kaidelere uygun olarak yetkisine giren meseleler hakkında milletlerarası konferanslar toplayabilir."
-    },
-    {
-      "articleNo": "63",
-      "title": "",
-      "bolum": "BÖLÜM X — Ekonomik ve Sosyal Meclis — Görevler ve Yetkiler",
-      "text": "1. Ekonomik ve Sosyal Meclis, 57 nci maddede kasdedilen müesseselerin herhangi birisi ile, işbu müessesenin Teşkilâta hangi şartlarla bağlanacağını tesbit edecek anlaşmalar yapabilir. İşbu anlaşmalar Genel Kurulun tasvibine sunulur.\n2. Ekonomik ve Sosyal Meclis, ihtisas müesseselerine danışarak, onlara tavsiyelerde bulunarak ve Genel Kurulla Birleşmiş Milletler Üyelerine tavsiyeler yaparak işbu müesseselerin çalışmalarını ahenkleştirebilir."
-    },
-    {
-      "articleNo": "64",
-      "title": "",
-      "bolum": "BÖLÜM X — Ekonomik ve Sosyal Meclis — Görevler ve Yetkiler",
-      "text": "1. Ekonomik ve Sosyal Meclis, ihtisas müesseselerinden muntazam raporlar alabilmek için her türlü faydalı tedbirlere başvurabilir. Ekonomik ve Sosyal Meclis, kendi yaptığı tavsiyeler ve işbu Meclisin yetkisine giren konular hakkında Genel Kurul tarafından yapılan tavsiyeleri yürütmek üzere başvurulan tedbirler hususunda raporlar almak için Teşkilât Üyeleri ile ve ihtisas müesseseleri ile anlaşabilir.\n2. Meclis, işbu raporlar hakkındaki mülâhazalarını Genel Kurula bildirebilir."
-    },
-    {
-      "articleNo": "65",
-      "title": "",
-      "bolum": "BÖLÜM X — Ekonomik ve Sosyal Meclis — Görevler ve Yetkiler",
-      "text": "Ekonomik ve Sosyal Meclis, Güvenlik Meclisine malûmat verebilecek ve bunun isteği üzerine kendisine yardım edecektir."
-    },
-    {
-      "articleNo": "66",
-      "title": "",
-      "bolum": "BÖLÜM X — Ekonomik ve Sosyal Meclis — Görevler ve Yetkiler",
-      "text": "1. Ekonomik ve Sosyal Meclis, Genel Kurulun tavsiyelerini yürütmek hususunda yetkisine giren bütün görevleri yerine getirir.\n2. Meclis, Genel Kurulun tasvibi ile Teşkilât Üyelerinin veya ihtisas müesseselerinin kendisinden isteyecekleri hizmetleri yapabilir.\n3. Meclis işbu Andlaşmanın diğer kısımlarında kendisine gösterilen veya Genel Kurulca kendisine verilebilecek olan ödevleri yerine getirir."
-    },
-    {
-      "articleNo": "67",
-      "title": "",
-      "bolum": "BÖLÜM X — Ekonomik ve Sosyal Meclis — Oy",
-      "text": "1. Ekonomik ve Sosyal Meclisin her Üyesi bir oya sahiptir.\n2. Ekonomik ve Sosyal Meclisin kararları, hazır bulunan ve oy veren Üyelerin çoğunluğu ile alınır."
-    },
-    {
-      "articleNo": "68",
-      "title": "",
-      "bolum": "BÖLÜM X — Ekonomik ve Sosyal Meclis — Usül",
-      "text": "Ekonomik ve Sosyal Meclis, ekonomik ve sosyal meseleler ve insan haklarının gelişmesi için komisyonlar ile görevlerinin yapılmasına yarayacak her türlü başka komisyonlar kurabilir."
-    },
-    {
-      "articleNo": "69",
-      "title": "",
-      "bolum": "BÖLÜM X — Ekonomik ve Sosyal Meclis — Usül",
-      "text": "Ekonomik ve Sosyal Meclis, Teşkilâtın bir Üyesini önemle ilgilendiren bir meseleyi incelerken, işbu Üyeyi oy hakkı olmaksızın görüşmelerine iştirake davet eder."
-    },
-    {
-      "articleNo": "70",
-      "title": "",
-      "bolum": "BÖLÜM X — Ekonomik ve Sosyal Meclis — Usül",
-      "text": "Ekonomik ve Sosyal Meclis, ihtisas müesseseleri temsilcilerinin oy hakkı olmaksızın, Meclisin ve ihdas ettiği komisyonların görüşmelerine iştirak etmeleri, kendi temsilcilerinin de ihtisas müesseselerinin görüşmelerine iştirak etmeleri için bütün tedbirleri alabilir."
-    },
-    {
-      "articleNo": "71",
-      "title": "",
-      "bolum": "BÖLÜM X — Ekonomik ve Sosyal Meclis — Usül",
-      "text": "Ekonomik ve Sosyal Meclis, yetkisine giren meselelerle uğraşan Hükümet dışı teşkillere danışmağa yarayan bütün tedbirleri alabilir. İşbu hükümler milletlerarası teşkillere ve, gereği halinde Teşkilâtın ilgili Üyesine danışıldıktan sonra, millî teşkillere tatbik edilebilir."
-    },
-    {
-      "articleNo": "72",
-      "title": "",
-      "bolum": "BÖLÜM X — Ekonomik ve Sosyal Meclis — Usül",
-      "text": "1. Ekonomik ve Sosyal Meclis, Başkanının tâyin şeklini de tesbit eden içtüzüğünü kabul eder.\n2. Meclis, tüzüğü uyarınca ihtiyaca göre toplanır; tüzükte, Meclisin, Üyelerinin çoğunluğunun isteği üzerine, toplanmasını derpiş eden hükümler bulunacaktır."
-    },
-    {
-      "articleNo": "73",
-      "title": "",
-      "bolum": "BÖLÜM XI — Muhtar Olmayan Ülkeler hakkında Demeç",
-      "text": "Halkının kendi kendini henüz tamamen idare etmediği ülkeleri idare etmekle sorumlu olan veya bu sorumu yüklenen Birleşmiş Milletler Üyeleri, işbu ülkeler ahalisinin menfaatlerinin başta gelmesi prensipini tanırlar. Birleşmiş Milletler Üyeleri bu ahalinin, işbu Andlaşma ile kurulan milletlerarası barış ve güvenlik sisteminin çerçevesi içinde, refahını imkânın son haddine kadar kolaylaştırmak mükellefiyetini kutsal bir ödev bilirler ve bu amaçla:\na) Sözü geçen ahalinin kültürüne saygı göstererek siyasî, ekonomik ve sosyal ilerlemesi ile eğitiminin gelişmesini sağlamağı, bu ahaliye hakkaniyetle muamele etmeyi ve onu suiistimallere karşı korumağı;\nb) Her ülkenin ve ahalisinin ve bunun gelişmesindeki muhtelif derecelerin özel şartlarına uyar ölçüde, bu ahalinin kendi kendini idare edebilmek kabiliyetini geliştirmeyi, siyasi emellerini gözönünde tutmayı ve hür siyasî müesseselerinin tedrici gelişmesine yardım etmeyi,\nc) Milletlerarası barış ve güvenliği kuvvetlendirmeyi;\nd) İşbu maddede beyan edilen sosyal, ekonomik ve ilmî amaçlara bilfiil erişmek üzere yapıcı gelişme tedbirlerini kolaylaştırmayı, ilmî araştırmaları teşvik etmeyi, kendi aralarında ve şartlar müsait oldukça, Milletlerarası ihtisas müesseseleri ile işbilirği yapmayı,\ne) Güvenlik icapları ve anayasalara müteallik mülâhazalar mahfuz kalmak üzere, sorumlu bulundukları ülkelerin ekonomik, sosyal ve eğitim şartları hakkında, XII ve XIII ncü bölümlerin mevzuu olanlardan gayri istatistik vesair teknik mahiyetteki malûmatı, bilgi için muntazaman Genel Sekretere vermeyi;\nkabul ederler."
-    },
-    {
-      "articleNo": "74",
-      "title": "",
-      "bolum": "BÖLÜM XI — Muhtar Olmayan Ülkeler hakkında Demeç",
-      "text": "Teşkilât Üyeleri, ana vatan ülkelerinde olduğu kadar işbu bölümün mevzuu olan ülkelerde de siyasetlerinin, dünyanın diğer kısımlarının menfaatları ve refahı gözönünde tutulmak şartiyle, sosyal, ekonomik ve ticarî alanlarda iyi komşuluk genel prensipi üzerine kurulmuş olması gerektiği hususunda dahi mutabıktırlar."
-    },
-    {
-      "articleNo": "75",
-      "title": "",
-      "bolum": "BÖLÜM XII — Milletlerarası Vesayet Rejimi",
-      "text": "Birleşmiş Milletler Teşkilâtı, kendi yetkisi altında muahhar özel anlaşmalar gereğince Vesayet Rejimine tabi kılınabilecek ülkelerin idare ve murakabesi için, milletlerarası bir Vesayet Rejimi tesis edecektir. Bu gibi ülkeler aşağıda «Vesayet altında ülke» tabiri ile gösterilmiştir."
-    },
-    {
-      "articleNo": "76",
-      "title": "",
-      "bolum": "BÖLÜM XII — Milletlerarası Vesayet Rejimi",
-      "text": "Vesayet rejiminin öz gayeleri, işbu Andlaşmanın birinci maddesinde beyan edilen Birleşmiş Milletler amaçlarına uygun olarak şunlardır :\na) Milletlerarası barış ve güvenliği kuvvetlendirmek;\nb) Vesayet altındaki ülkeler halkının siyasi, ekonomik ve sosyal ilerlemesini ve eğitiminin gelişmesini kolaylaştırmak, her ülke ve ahalisine has şartları, ilgili ahalinin serbestçe izhar edilen emellerini ve her Vesayet anlaşmasında derpiş edilebilecek hükümleri de gözönünde tutmak şartiyle, işbu ülkeler halkının kendi kendilerini idare kabiliyetine veya bağımsızlığa doğru tedrici gelişmelerini de kolaylaştırmak;\nc) Irk, cins, dil veya din farkı gözetmeksizin herkesin insan haklarına ve ana hürriyetlerine saygı gösterilmesini teşvik etmek ve dünya milletlerinin birbirlerine bağlı oldukları duygusunu geliştirmek;\nd) Sosyal, ekonomik ve ticarî alanda bütün Teşkilât Üyeleri ile uyruklarına, eşit muamele yapılmasını sağlamak ve işbu uyruklara adaletin tevziinde de, yukarda beyan edilen amaçların gerçekleştirilmesine halel gelmemek ve 80 inci madde hükümleri mahfuz kalmak şartiyle, keza eşit muamele yapılmasını sağlamak."
-    },
-    {
-      "articleNo": "77",
-      "title": "",
-      "bolum": "BÖLÜM XII — Milletlerarası Vesayet Rejimi",
-      "text": "1. Vesayet rejimi aşağıdaki nevilerden olup, Vesayet anlaşmaları gereğince bu rejime tabi kılınabilecek olan ülkelere tatbik edilecektir :\na) Halen manda altında bulunan ülkeler;\nb) İkinci Dünya Harbi neticesinde düşman Devletlerden ayrılabilecek ülkeler;\nc) İdarelerinden sorumlu Devletlerce, isteyerek bu rejime tabi kılınan ülkeler.\n2. Yukarda zikredilen nevilere giren hangi ülkelerin hangi şartlar altında vesayet rejimine tabi kılınacağını sonradan yapılacak bir anlaşma tesbit edecektir."
-    },
-    {
-      "articleNo": "78",
-      "title": "",
-      "bolum": "BÖLÜM XII — Milletlerarası Vesayet Rejimi",
-      "text": "Birleşmiş Milletler Üyesi olan memleketlere, bunlar arasındaki münasebetlerin temeli eşit eğemenlik prensipine saygı olmak gerektiğine göre, Vesayet rejimi tatbik edilmiyecektir."
-    },
-    {
-      "articleNo": "79",
-      "title": "",
-      "bolum": "BÖLÜM XII — Milletlerarası Vesayet Rejimi",
-      "text": "Vesayet rejimine tabi kılınacak her ülke için, işbu rejimin hükümleri ve bu rejimde yapılabilecek değişiklikler ve tashihler Birleşmiş Milletlerin bir Üyesinin mandasına tabi ülkelerde, manda sahibi Devlet de dâhil olmak şartiyle, doğrudan doğruya ilgili Devletler arasında yapılacak bir anlaşmaya mevzu olacak ve 83 ve 85 inci maddeler gereğince onanacaktır."
-    },
-    {
-      "articleNo": "80",
-      "title": "",
-      "bolum": "BÖLÜM XII — Milletlerarası Vesayet Rejimi",
-      "text": "1. 77, 79 ve 81 inci maddelere uygun olarak yapılacak ve ülkelerden herbirini Vesayet rejimi altına koyacak olan özel Vesayet anlaşmaları ile tesbit edilebilecek hususlar dışında ve sözü geçen anlaşmalar yapılıncaya kadar, işbu bölümün hiçbir hükmü, her hangi bir devletin veya herhangi bir milletin haklarını, yahut yürürlükte olup bazı Teşkilât Üyelerinin taraf bulunabilecekleri milletlerarası akitlerin hükümlerini herhangi bir şekilde doğrudan doğruya veya dolayısiyle değiştirir gibi yorumlanmıyacaktır.\n2. İşbu maddenin birinci fıkrası, 77 nci maddede derpiş edildiği üzere, manda altındaki ülkeleri veya başka ülkeleri Vesayet rejimi altına koymağa mâtuf anlaşmaların görüşülmesinin ve akdinin gecikmesini veya talikını haklı gösterecek şekilde yorumlanmamalıdır."
-    },
-    {
-      "articleNo": "81",
-      "title": "",
-      "bolum": "BÖLÜM XII — Milletlerarası Vesayet Rejimi",
-      "text": "Vesayet anlaşması, herhalde, Vesayet altındaki ülkenin hangi şartlarla idare edileceğini ihtiva eder ve idareyi üzerine alacak makamı gösterir. Aşağıda «idare ile görevlendirilmiş makam» tabiri ile anılacak olan işbu makam bir veya birkaç devlet veya bizzat Teşkilât olabilir."
-    },
-    {
-      "articleNo": "82",
-      "title": "",
-      "bolum": "BÖLÜM XII — Milletlerarası Vesayet Rejimi",
-      "text": "43 üncü maddeye uygun olarak akdedilen herhangi bir mahsus anlaşmaya veya mahsus anlaşmalara halel vermeksizin bir Vesayet anlaşmasının, tatbik edildiği Vesayet altındaki ülkenin tamamına veya bir kısmına şâmil, bir veya birkaç stratejik bölgeyi işbu anlaşma gösterebilir."
-    },
-    {
-      "articleNo": "83",
-      "title": "",
-      "bolum": "BÖLÜM XII — Milletlerarası Vesayet Rejimi",
-      "text": "1. Stratejik bölgeler hususunda, Teşkilâta verilen bütün görevler, Vesayet anlaşmaları hükümlerinin tasvibi ve bunların muhtemel değişmeleri veya tashihleri de dahil olmak üzere, Güvenlik Meclisince görülür.\n2. 76 ncı maddede beyan edilen öz amaçların her stratejik bölge ahalisi için de tatbiki kabildir.\n3. Güvenlik Meclisi, Vesayet anlaşmaları hükümleri hususunda ve güvenlik icapları mahfuz kalmak şartiyle, stratejik bölgelerde Teşkilâtın, Vesayet rejimi bakımından yüklendiği siyasi, ekonomik ve sosyal mahiyette ve eğitime mütaallik görevlerinin ifasında Vesayet Meclisinin yardımına başvuracaktır."
-    },
-    {
-      "articleNo": "84",
-      "title": "",
-      "bolum": "BÖLÜM XII — Milletlerarası Vesayet Rejimi",
-      "text": "İdare ile görevlendirilmiş makam, Vesayet altındaki ülkenin milletlerarası barış ve güvenliğin muhafazasına iştirak etmesine itina etmekle mükelleftir. Bu maksatla, Güvenlik Meclisine karşı giriştiği taahhütleri yerine getirmek ve mahallî müdafaayı ve ülke dâhilinde asayişin muhafazasını sağlamak için, işbu ülkeden gönüllü birlikler, kolaylıklar ve yardım temin edebilir."
-    },
-    {
-      "articleNo": "85",
-      "title": "",
-      "bolum": "BÖLÜM XII — Milletlerarası Vesayet Rejimi",
-      "text": "1. Stratejik bölge olarak gösterilmemiş olan bütün bölgeler hakkındaki Vesayet anlaşmaları hususunda, Vesayet Anlaşmaları hükümlerinin tasvibi ve bunların değiştirilmesiyle tashihi de dâhil olmak üzere, Teşkilâtın görevlerini Genel Kurul yapar.\n2. Genel Kurulun yetkisi altında hareket eden Vesayet Meclisi görevlerinin yapılmasında Genel Kurula yardım eder."
-    },
-    {
-      "articleNo": "86",
-      "title": "",
-      "bolum": "BÖLÜM XIII — Vesayet Meclisi — Terekküp Tarzı",
-      "text": "1. Vesayet Meclisi Birleşmiş Milletlerin aşağıdaki Üyelerinden terekküp eder:\na) Vesayet altındaki ülkelerin idaresiyle görevlendirilmiş Üyeler,\nb) 23 üncü maddede adları ile anılmış olupta Vesayet altında ülke idare etmeyen Üyeler,\nc) Vesayet Meclisinin, eşit sayıda Vesayet altında ülke idare eden ve etmeyen Birleşmiş Milletler Üyelerinden müteşekkil olmasını sağlamak üzere, Genel Kurulca üç yıl için seçilecek gereken sayıda başka Üyeler,\n2. Vesayet Meclisi Üyelerinden her biri kendisini Mecliste temsil etmek üzere özel ehliyette bir şahsı tâyin eder."
-    },
-    {
-      "articleNo": "87",
-      "title": "",
-      "bolum": "BÖLÜM XIII — Vesayet Meclisi — Görevler ve Yetkiler",
-      "text": "Genel Kurul ve, onun yetkisi altında, Vesayet Meclisi görevlerini yerine getirirlerken:\na) İdare ile görevlendirilmiş makamın sunduğu raporları tetkik;\nb) Dilekçeleri kabul ve bunları anılan makamla danışarak tetkik;\nc) Anılan makamca idare edilen ülkelerde, işbu makamla tesbit edilecek tarihlerde, zaman zaman teftişler tertip;\nd) Vesayet anlaşmaları hükümleri gereğince işbu tedbirleri veya başka tedbirleri ittihaz,\nedebilir."
-    },
-    {
-      "articleNo": "88",
-      "title": "",
-      "bolum": "BÖLÜM XIII — Vesayet Meclisi — Görevler ve Yetkiler",
-      "text": "Vesayet Meclisi, Vesayet altındaki her ülke ahalisinin siyasi, ekonomik, ve sosyal alanlarla eğitim alanındaki ilerlemeleri hakkında bir soru cetveli tanzim eder; Genel Kurulun yetkisine tabi Vesayet altındaki her hangi bir ülkenin idaresiyle görevlendirilmiş makam, Genel Kurula, yukarıda zikredilen soru cetvelini esas tutan bir yıllık rapor sunar."
-    },
-    {
-      "articleNo": "89",
-      "title": "",
-      "bolum": "BÖLÜM XIII — Vesayet Meclisi — Oy",
-      "text": "1. Vesayet Meclisinin her Üyesi bir oya sahiptir;\n2. Vesayet Meclisinin kararları hazır bulunan ve oy veren Üyelerin çoğunluğu ile alınır."
-    },
-    {
-      "articleNo": "90",
-      "title": "",
-      "bolum": "BÖLÜM XIII — Vesayet Meclisi — Usul",
-      "text": "1. Vesayet Meclisi, Başkanının tâyin şeklini de tesbit eden, İçtüzüğünü kabul eder.\n2. Meclis, ihtiyaca göre tüzüğü gereğince toplanır; tüzükte, Üyelerinin çoğunluğunun isteği üzerine Meclisin toplanmasını derpiş eden hükümler vardır."
-    },
-    {
-      "articleNo": "91",
-      "title": "",
-      "bolum": "BÖLÜM XIII — Vesayet Meclisi — Usul",
-      "text": "Vesayet Meclisi, icabında, her birinin yetkisi içinde bulunan meselelerde, Ekonomik ve Sosyal Meclisle ihtisas müesseselerinin yardımına başvurur."
-    },
-    {
-      "articleNo": "92",
-      "title": "",
-      "bolum": "BÖLÜM XIV — Milletlerarası Adalet Divanı",
-      "text": "Milletlerarası Adalet Divanı, Birleşmiş Milletlerin başlıca adalet uzvu olacaktır. Divan, Milletlerarası Daimî Adalet Divanının Statüsü esasına dayanan ve ayrılmaz bir cüzü olduğu işbu Andlaşmaya ekli bulunan bir Statüye göre çalışır."
-    },
-    {
-      "articleNo": "93",
-      "title": "",
-      "bolum": "BÖLÜM XIV — Milletlerarası Adalet Divanı",
-      "text": "1. Bütün Birleşmiş Milletler Üyeleri, ipso facto, Milletlerarası Adalet Divanı Statüsüne taraftırlar.\n2. Teşkilât Üyesi olmayan Devletlerin Milletlerarası Adalet Divanı Statüsüne taraf olabilmeleri şartları, her bir halde, Güvenlik Meclisinin tavsiyesi üzerine Genel Kurul tarafından tâyin edilir."
-    },
-    {
-      "articleNo": "94",
-      "title": "",
-      "bolum": "BÖLÜM XIV — Milletlerarası Adalet Divanı",
-      "text": "1. Birleşmiş Milletlerin her Üyesi, taraf olduğu bütün uyuşmazlıklarda, Milletlerarası Adalet Divanının kararına uymağı taahhüt eder.\n2. Bir uyuşmazlıkta taraf olan Devletlerden biri, Divanın verdiği bir hükme göre kendisine düşen vecibeleri yerine getirmezse, öbür taraf, Güvenlik Meclisine başvurabilir ve işbu Meclis, lüzum gördüğü takdirde hükmün yerine getirilmesi için tavsiyelerde bulunabilir veya alınacak tedbirleri kararlaştırabilir."
-    },
-    {
-      "articleNo": "95",
-      "title": "",
-      "bolum": "BÖLÜM XIV — Milletlerarası Adalet Divanı",
-      "text": "İşbu Andlaşmanın hiçbir hükmü, Teşkilât Üyelerinin, uyuşmazlıklarının çözülmesini, zaten mevcut olan veya ileride akdedilebilecek olan anlaşmalar gereğince, başka mahkemelere tevdi etmelerine mâni değildir."
-    },
-    {
-      "articleNo": "96",
-      "title": "",
-      "bolum": "BÖLÜM XIV — Milletlerarası Adalet Divanı",
-      "text": "1. Genel Kurul veya Güvenlik Meclisi, Milletlerarası Adalet Divanından hukukî her hangi bir mesele hakkında iştişari rey isteyebilir.\n2. Genel Kurulca bu hususta her hangi bir anda yetkili kılınabilecek olan Teşkilâtın bütün diğer uzuvları ve ihtisas müesseseleri, çalışmaları alanında karşılarına çıkacak hukuki meseleler hakkında keza Divandan istişari rey istiyebilirler."
-    },
-    {
-      "articleNo": "97",
-      "title": "",
-      "bolum": "BÖLÜM XV — Sekreterlik",
-      "text": "Sekreterlik bir Genel Sekreter ile Teşkilâtın icabettirebileceği memurları ihtiva eder. Genel Sekreter Güvenlik Meclisinin tavsiyesi üzerine Genel Kurul tarafından tâyin edilir. Genel Sekreter Teşkilâtın en yüksek memurudur."
-    },
-    {
-      "articleNo": "98",
-      "title": "",
-      "bolum": "BÖLÜM XV — Sekreterlik",
-      "text": "Genel Sekreter, Genel Kurulun, Güvenlik Meclisinin, Ekonomik ve Sosyal Meclisin, ve Vesayet Meclisinin bütün toplantılarında işbu sıfatla hareket eder. Bu uzuvlar tarafından kendisine yükletilen görevleri yapar. Teşkilâtın çalışması hakkında Genel Kurula bir yıllık rapor sunar."
-    },
-    {
-      "articleNo": "99",
-      "title": "",
-      "bolum": "BÖLÜM XV — Sekreterlik",
-      "text": "Genel Sekreter, fikrince milletlerarası barış ve güvenliğin muhafazasını tehlikeye koyabilecek her hususa Güvenlik Meclisinin dikkatini çekebilir."
-    },
-    {
-      "articleNo": "100",
-      "title": "",
-      "bolum": "BÖLÜM XV — Sekreterlik",
-      "text": "1. Genel Sekreter ve sekreterlik memurları ödevlerinin görülmesinde her hangi bir Hükümetten veya Teşkilât dışında her hangi bir makamdan ne talimat isterler ve ne de kabul ederler. Milletlerarası memurlukları durumu ile telif edilemeyecek her hareketten kaçınırlar ve yalnız Teşkilâta karşı sorumlu olurlar.\n2. Teşkilâtın her Üyesi, Genel Sekreterin ve memurların görevlerinin milletlerarası mahiyetine saygı göstermeği ve kendilerine, ödevlerinin yerine getirilmesinde tesir etmeğe çalışmamağı taahhüt eder."
-    },
-    {
-      "articleNo": "101",
-      "title": "",
-      "bolum": "BÖLÜM XV — Sekreterlik",
-      "text": "1. Memurlar, Genel Kurulca tesbit edilen kaidelere göre Genel Sekreter tarafından tâyin edilirler.\n2. Ekonomik ve Sosyal Meclise, Vesayet Meclisine ve gerekiyorsa, Teşkilâtın başka uzuvlarına süreli olarak mahsus memurlar verilir. İşbu memurlar Sekreterlik kadrosuna dâhildir.\n3. Memurların alınmasında ve kullanılma şartlarının tesbitinde hâkim mülâhaza, Teşkilâta en yüksek çalışma, ehliyet ve dürüstlük vasıflarını haiz kimselerin hizmetini sağlamak lüzumu olmalıdır. Memur alınırken mümkün olduğu kadar geniş bir coğrafi taksim esasına uyulmasının önemi, gereği gibi gözönünde bulundurulacaktır."
-    },
-    {
-      "articleNo": "102",
-      "title": "",
-      "bolum": "BÖLÜM XVI — Çeşitli Hükümler",
-      "text": "1. İşbu Andlaşmanın yürürlüğe girmesinden sonra Birleşmiş Milletlerin bir Üyesi tarafından aktedilen her milletlerarası andlaşma veya anlaşma, mümkün olan en kısa zamanda Sekreterlikte tescil edilecek ve Sekreterlikçe neşredilecektir.\n2. İşbu maddenin birinci fıkrası hükümlerine uygun olarak tescil edilmemiş olan bir milletlerarası andlaşma veya anlaşmanın taraflarından hiçbiri, Teşkilâtın bir uzvu önünde anılan andlaşma veya anlaşmayı ileri süremez."
-    },
-    {
-      "articleNo": "103",
-      "title": "",
-      "bolum": "BÖLÜM XVI — Çeşitli Hükümler",
-      "text": "Birleşmiş Milletler Üyelerinin işbu Andlaşmadan doğan vecibeleri ile başka her hangi bir milletlerarası anlaşmadan doğan vecibelerinin çatışması halinde Andlaşma vecibeleri üstün gelecektir."
-    },
-    {
-      "articleNo": "104",
-      "title": "",
-      "bolum": "BÖLÜM XVI — Çeşitli Hükümler",
-      "text": "Teşkilât, Üyelerinden herbirinin ülkesinde, görevlerini yerine getirmesi ve amaçlarına erişmesi için gerekli huhukî ehliyeti haizdir."
-    },
-    {
-      "articleNo": "105",
-      "title": "",
-      "bolum": "BÖLÜM XVI — Çeşitli Hükümler",
-      "text": "1. Teşkilât, Üyelerinden her birinin ülkesinde amaçlarına erişmek için gerekli olan imtiyaz ve masuniyetlerden faydalanır[?].\n2. Birleşmiş Milletler Üyelerinin temsilcileri ve Teşkilâtın memurları Teşkilât ile ilgili görevlerini tam bağımsızlık içinde yapabilmek için gerekli imtiyaz ve masuniyetlerden keza faydalanırlar.\n3. Genel Kurul, işbu maddenin birinci ve ikinci fıkralarının uygulanması teferruatının tesbiti için tavsiyeler yapabilir veya Birleşmiş Milletler Üyelerine bu maksatla anlaşmalar teklif edebilir."
-    },
-    {
-      "articleNo": "106",
-      "title": "",
-      "bolum": "BÖLÜM XVII — Güvenliğe mütaallik Geçici Hükümler",
-      "text": "Güvenlik Meclisine, kanaatince, 42 nci maddeye göre kendisine düşen sorumları yüklenmeğe başlamak imkânını verecek olan ve 43 uncu maddede anılan mahsus anlaşmaların yürürlüğe girmesine deyin, 30 Ekim 1943 tarihinde Moskova'da imzalanan dört Millet Demeci âkitleri ile Fransa, aralarında ve gerekirse başka Teşkilât Üyeleri ile işbu Demecin 5 nci fıkrası hükümlerine uygun olarak Birleşmiş Milletler adına, milletlerarası barış ve güvenliğin muhafazası için gerekli her türlü hareketin birlikte yapılması zımnında danışacaklardır."
-    },
-    {
-      "articleNo": "107",
-      "title": "",
-      "bolum": "BÖLÜM XVII — Güvenliğe mütaallik Geçici Hükümler",
-      "text": "İşbu Andlaşmanın hiçbir hükmü, Andlaşmayı imzalayan her hangi bir Devletin İkinci Dünya Harbinde düşmanı bulunmuş olan bir Devlete karşı, bu husustaki sorumluluğu haiz olan Hükümetler tarafından, bu harbin bir neticesi olarak girişilmiş veya tecviz edilmiş bir harekete ne tesir eder, ne de mâni olur."
-    },
-    {
-      "articleNo": "108",
-      "title": "",
-      "bolum": "BÖLÜM XVIII — Değişiklikler",
-      "text": "İşbu Andlaşmada yapılacak değişiklikler, Genel Kurul Üyelerinin üçte iki çoğunluğu ile kabul edilir ve Güvenlik Meclisi süreli Üyelerinin hepsi dâhil olmak üzere, Teşkilât Üyelerinin üçte ikisi tarafından her birinin anayasası hükümleri gereğince onandığı zaman, bütün Birleşmiş Milletler Üyeleri için yürürlüğe girer."
-    },
-    {
-      "articleNo": "109",
-      "title": "",
-      "bolum": "BÖLÜM XVIII — Değişiklikler",
-      "text": "1. Genel Kurulun üçte iki çoğunluğu ve Güvenlik Meclisinin her hangi yedi Üyesinin oyları ile tesbit edilecek tarih ve mahalde işbu Andlaşmanın yeniden gözden geçirilmesi maksadiyle Birleşmiş Milletler Üyelerinin bir Genel Konferansı toplanabilecektir. Konferansta Teşkilâtın her Üyesi bir oya sahip olacaktır.\n2. İşbu Andlaşmada yapılması, konferansın üçte iki çoğunluğu ile tavsiye edilecek her değişiklik, Güvenlik Meclisinin bütün süreli üyeleri dâhil olmak üzere, Birleşmiş Milletler Üyelerinin üçte ikisi tarafından her birinin anayasası hükümleri gereğine göre onanınca yürürlüğe girecektir.\n3. Genel Kurulun, işbu Andlaşmanın yürürlüğe girmesini takibeden onuncu yıllık toplantısından önce, konferans henüz toplanmamış bulunursa, sözü geçen toplantının gündemine, işbu konferansın davet edilmesi hususunda bir teklif dercedilecek ve Genel Kurulun çoğunluğu ve Güvenlik Meclisinin herhangi yedi Üyesinin oyu ile karar verildiği takdirde, konferans toplanacaktır."
-    },
-    {
-      "articleNo": "110",
-      "title": "",
-      "bolum": "BÖLÜM XIX — Onanma ve İmza",
-      "text": "1. İşbu Andlaşma, imza eden Devletler tarafından her birinin anayasa kaideleri gereğince onanacaktır.\n2. Tasdiknameler, Amerika Birleşik Devletleri Hükümeti nezdine tevdi edilecek ve her tevdi işbu Hükümetçe bütün imza eden Devletlere ve, tâyin edildiği zaman, Teşkilât Genel Sekreterine bildirilecektir.\n3. İşbu Andlaşma, Çin Cumhuriyeti, Fransa, Sovyet Sosyalist Cumhuriyetleri Birliği, Büyük Britanya ve Kuzey İrlanda Birleşik Kırallığı, Amerika Birleşik Devletleri ve imza eden diğer Devletlerin çoğunluğu tarafından tasdiknamelerin tevdiinden sonra yürürlüğe girecektir. Bundan sonra, Amerika Birleşik Devletleri Hükümetince tasdiknamelerin tevdiine dair bir mazbata tanzim edilerek bunun birer örneği bütün imza eden Devletlere verilecektir.\n4. İşbu Andlaşmayı imzalamış olup yürürlüğe girmesinden sonra onayacak olan Devletler, her birinin tasdiknamesinin tevdii tarihinden itibaren Birleşmiş Milletler aslî Üyesi olacaklardır."
-    },
-    {
-      "articleNo": "111",
-      "title": "",
-      "bolum": "BÖLÜM XIX — Onanma ve İmza",
-      "text": "Çince, Fransızca, Rusca, İngilizce ve İspanyolca metinleri aynı derecede muteber sayılacak olan işbu Andlaşma, Amerika Birleşik Devletleri Hükümeti arşivine tevdi edilecektir. İşbu Hükümetçe, bütün diğer imza eden Devletler Hükümetlerine aslına uygunluğu usulünce tasdik edilmiş nüshalar verilecektir.\nYukarıdaki hükümleri tasdiken Birleşmiş Milletler Hükümetleri temsilcileri işbu Andlaşmayı imzalamışlardır.\nSanfransisko'da yirmi altı Haziran bin dokuzyüz kırkbeşte yapılmıştır."
-    }
-  ],
-  "belirsiz": [
-    {
-      "articleNo": "105",
-      "yer": "1. fıkra, son sözcük",
-      "sorun": "Satır baskıda çok silik. \"için gerekli olan imtiyaz ve masuniyetlerden\" harf biçimlerinden ve 2. fıkradaki koşut ifadeden okunuyor; son sözcük \"fayda…\" ile başlıyor, eki seçilemiyor (\"faydalanır\" olarak yazıldı ve [?] ile işaretlendi).",
-      "sayfa": "s-08"
-    },
-    {
-      "articleNo": "105",
-      "yer": "2. fıkra, son iki sözcük",
-      "sorun": "Satır silik; \"masuniyetlerden keza faydalanırlar\" harf biçimlerinden okundu, düşük güven.",
-      "sayfa": "s-08"
-    },
-    {
-      "articleNo": "106",
-      "yer": "\"43 uncu maddede\"",
-      "sorun": "İkinci rakam kırık basılmış (3 mü 5 mi); 900 dpi büyütmede sağ yanda iki kavis görülüyor → 3 okundu. Sıra eki baskıda \"uncu\" (3 ile uyumsuz, olduğu gibi bırakıldı). Md 82'de \"43 üncü maddeye uygun olarak akdedilen … mahsus anlaşma\" ifadesi aynı atfı destekliyor.",
-      "sayfa": "s-08"
-    },
-    {
-      "articleNo": "109",
-      "yer": "1. fıkra, ikinci cümle",
-      "sorun": "Satır silik: \"toplanabilecektir. Konferansta Teşkilâtın her Üyesi bir oya\" — \"Üyesi\" sonundaki i ve \"bir\" sözcüğü kısmen silinmiş; bağlamdan (devamı \"oya sahip olacaktır\") okundu.",
-      "sayfa": "s-08"
-    },
-    {
-      "articleNo": "110",
-      "yer": "3. fıkra, \"Kırallığı, Amerika\"",
-      "sorun": "\"Kırallığı\" satır sonunda; bu sütunun sağ kenarında noktalama ve tireler basılmamış (aynı fıkrada \"Cum-\", \"tara-\" tireleri de yok). Sayım virgülü tarafımdan kondu, baskıda görünmüyor.",
-      "sayfa": "s-08"
-    },
-    {
-      "articleNo": "12",
-      "yer": "1. fıkra sonu",
-      "sorun": "Baskıda \"isteye..\" (iki nokta); fiil eki eksik basılmış olabilir (isteye/istiye…). Görünen hâliyle \"isteye.\" yazıldı.",
-      "sayfa": "s-02"
-    }
-  ]
+ "belge": "Birleşmiş Milletler Andlaşması",
+ "kunye": "T.C. Resmî Gazete, 24 Ağustos 1945 Cuma, Sayı: 6092, Sahife 9237–9244 — Sanfransisko'da 26 Haziran 1945 tarihinde yapılmış ve imzalanmış olan Birleşmiş Milletler Andlaşması ile Milletlerarası Adalet Divanı Statüsünün onanması hakkında kanun (Kanun No: 4801, Kabul tarihi: 15/8/1945; kanun metninin altındaki tarih 20/8/1945)",
+ "notlar": "Kapsam: Başlangıç + 111 madde (BÖLÜM I–XIX). Çekince/beyan: basılı metinde yok. İmza listesi basılmamış; yalnız kapanış formülü var (\"Yukarıdaki hükümleri tasdiken…\" ve \"Sanfransisko'da yirmi altı Haziran bin dokuzyüz kırkbeşte yapılmıştır\"), bu iki cümle 111. maddenin metninin sonuna alındı. Kapsam dışı bırakılanlar: 4801 sayılı onay kanununun 3 maddesi (künyede); Milletlerarası Adalet Divanı Statüsü — nüshanın 8–12. sayfalarında (Sahife 9244–9248; kaynak PDF s. 8–12), 70 madde, BÖLÜM I–V (Madde 1 bölüm başlığından önce gelir); s. 12'nin altından itibaren ilgisiz Bakanlar Kurulu Kararı ve ilanlar. Bölüm içi italik alt başlıklar (Terekküp Tarzı, Görevler ve Yetkiler, Oy, Usül) madde kenar başlığı değil grup başlığı olduğundan `bolum` alanına \"BÖLÜM IV — Genel Kurul — Oy\" biçiminde eklendi; `title` hepsinde boş. Bölüm adı basıldığı gibi (\"BÖLÜM : IV\" → \"BÖLÜM IV\"). Yazım: baskıda harf noktaları yaygın biçimde silik (ı/i, u/ü, o/ö); sözcüğün doğru yazımı esas alındı, eski yazım ve sözcükler (prensipi, menfaatlar, olmıyan, hertürlü, deyin, eğemenlik, Kırallığı, Rusca, iki ayrı yazım: mütaallik/müteallik, usul/usül, vücude/vücuda, İrlânda/İrlanda) korundu. Satır sonunda düşmüş cümle sonu noktaları tamamlandı. Baskıdaki dizgi hataları DÜZELTİLMEDEN bırakıldı: md 57/2 \"müessesesler\", md 73/d \"işbilirği\", md 96/1 \"iştişari\" (96/2'de \"istişari\"), md 104 \"huhukî\", md 12/1 sonu \"isteye.\" (baskıda \"isteye..\"), md 13/1-a sonunda noktalama yok. Çevirinin kendine özgü terimleri basıldığı gibidir: Güvenlik Meclisinin daimî üyeleri için \"süreli\", geçici üyeleri için \"süresiz\" (md 23, 27, 47, 108, 109); md 43/1'de \"Kurulun emrine\" (Güvenlik Meclisi kastedilen yerde baskıda böyle); md 61/3'te temsilci cümlesi ayrı fıkra numarası almadan 3. fıkranın sonunda. 1945 metnidir: Güvenlik Meclisi onbir üye / yedi oy (md 23, 27, 109), Ekonomik ve Sosyal Meclis 18 üye (md 61) basıldığı gibi yazıldı, güncelleme yapılmadı. | 17 Kas 2026: md 105/1 son sözcüğü iki okumada da okunamadı; kullanıcı kararıyla bankaya alınırken tahmin yazılmadı, okunamadığı metinde köşeli ayraçla belirtildi.",
+ "maddeler": [
+  {
+   "articleNo": "Başlangıç",
+   "title": "",
+   "bolum": "",
+   "text": "Bir insan ömrü içinde iki kere beşeriyete tarif olunmaz acılar yükleyen harb belâsından, geleceğin nesillerini korumaya,\nİnsanın ana haklarına, şahsın haysiyet ve değerine, erkek ve kadınlar için olduğu gibi büyük ve küçük milletler için de hak eşitliğine olan imanımızı yeniden ilân etmeğe,\nAdaletin muhafazası ve andlaşmalarla devletlerarası hukukunun diğer kaynaklarından doğan vecibelere saygı gösterilmesi için gerekli şartları yaratmağa,\nSosyal ilerlemeyi kolaylaştırmağa ve daha büyük bir serbestlik içinde daha iyi yaşama şartları ihdas etmeğe,\nVe bu maksatla,\nTesamühle hareket etmeğe, iyi komşuluk zihniyeti içinde birbirimizle barışık yaşamağa,\nMilletlerarası barış ve güvenliğin muhafazası için kuvvetlerimizi birleştirmeğe,\nMüşterek menfaatin icapları dışında, silâh kuvvetinin kullanılmamasını sağlayan prensipleri kabule ve usulleri tesise,\nBütün milletlerin ekonomik ve sosyal ilerlemesini kolaylaştırmak için milletlerarası müesseselere başvurmağa,\nAzmetmiş olan, biz, Birleşmiş Milletler Halkı,\nBu amaçları gerçekleştirmek için, gayretlerimizi beraberce sarfetmeğe karar verdik.\nBuna binaen, Sanfransisko şehrinde toplanıp, usulüne uygun görülen yetki mektuplarını hâmil bulunan temsilcileri vasıtasiyle, metbu Hükümetlerimiz, işbu Birleşmiş Milletler Andlaşmasını kabul etmişler ve aşağıdaki vesikalarla Birleşmiş Milletler adını alacak olan Milletlerarası bir Teşkilât kurmuşlardır."
+  },
+  {
+   "articleNo": "1",
+   "title": "",
+   "bolum": "BÖLÜM I — Amaçlar ve Prensipler",
+   "text": "Birleşmiş Milletlerin amaçları şunlardır :\n1. Milletlerarası barış ve güvenliği muhafaza etmek, ve bu maksatla : Barışın uğrayacağı tehditleri önlemek ve uzaklaştırmak ve her türlü saldırma fiilini veya barışın başka suretle bozulması halini ortadan kaldırmak üzere, müessir müşterek tedbirleri almak; barışın bozulmasını intaç edebilecek milletlerarası mahiyette uyuşmazlıkların veya durumların düzeltilmesini veya çözülmesini, adalet ve devletlerarası hukuku prensiplerine uygun olarak barış yollariyle gerçekleştirmek;\n2. Milletlerarasında, milletlerin hak eşitliği prensipine ve kendi mukadderatlarını kendilerinin tâyin hakkına saygı üzerine kurulmuş dostane münasebetler geliştirmek ve dünya barışının sağlamlaştırılması için elverişli her türlü diğer tedbirleri almak;\n3. Ekonomik, sosyal, fikrî ve insani mahiyetteki milletlerarası dâvaları çözerek ve, ırk, cins, dil veya din farkı gözetmeksizin herkesin insan haklarına ve ana hürriyetlerine karşı saygıyı geliştirerek ve teşvik ederek, milletlerarası işbirliğini gerçekleştirmek,\n4. Milletlerin bu müşterek amaçlara doğru sarfettikleri gayretlerin ahenkleştiği bir merkez olmak."
+  },
+  {
+   "articleNo": "2",
+   "title": "",
+   "bolum": "BÖLÜM I — Amaçlar ve Prensipler",
+   "text": "Birleşmiş Milletler Teşkilâtı ve Üyeleri, birinci maddede beyan edilen amaçlara ulaşmak için aşağıdaki prensiplere uyarak hareket edeceklerdir :\n1. Teşkilât bütün Üyelerinin egemen eşitliği prensipi üzerine kurulmuştur.\n2. Teşkilâtın Üyeleri, üyelik sıfatından doğan hak ve menfaatlardan her birinin faydalanmasını sağlamak için, işbu Andlaşma müfadı gereğince üzerlerine aldıkları bütün vecibeleri iyi niyetle yerine getireceklerdir.\n3. Teşkilâtın Üyeleri, milletlerarası mahiyetteki uyuşmazlıklarını, milletlerarası barış ve güvenliği ve adaleti tehlikeye koymayacak şekilde barış yolları ile çözerler.\n4. Teşkilâtın Üyeleri, milletlerarası münasebetlerinde gerek herhangi bir başka Devletin toprak bütünlüğüne veya siyasî bağımsızlığına karşı, gerekse Birleşmiş Milletlerin amaçları ile telif edilemiyecek herhangi bir surette, tehdide veya kuvvet kullanılmasına başvurmaktan kaçınırlar.\n5. Teşkilâtın Üyeleri, işbu Andlaşma hükümleri gereğince, Teşkilâtın giriştiği herhangi bir teşebbüse hertürlü yardımda bulunurlar ve Teşkilâtça aleyhinde önleyici veya zorlayıcı tedbir alınan Devlete yardım etmekten kaçınırlar.\n6. Teşkilât, Birleşmiş Milletler Üyesi olmıyan Devletlerin, milletlerarası barış ve güvenliğin muhafazasının icabettirdiği ölçüde, işbu esaslara uygun olarak hareket etmesini sağlar.\n7. İşbu Andlaşmanın hiçbir hükmü, ne özü itibariyle bir Devletin millî yetkisi içinde bulunan işlere, Birleşmiş Milletlerin karışmasına cevaz verir, ve ne de Üyeleri, bu gibi işleri, işbu Andlaşma gereğince bir çözme tarzına bağlamaya icbar eder; bununla beraber, VII nci bölümde derpiş edilen zorlama tedbirlerinin uygulanmasına bu prensip hiçbir suretle halel getirmez."
+  },
+  {
+   "articleNo": "3",
+   "title": "",
+   "bolum": "BÖLÜM II — Üyeler",
+   "text": "Milletlerarası Teşkilâtı kurmak için Sanfransisko'da toplanan Birleşmiş Milletler Konferansına iştirak etmiş veya 1 Ocak 1942 tarihli Birleşmiş Milletler Demecini önceden imzalamış bulunan ve işbu Andlaşmayı imzalıyarak 110 uncu madde gereğince onayan Devletler, Birleşmiş Milletlerin aslî Üyeleridir."
+  },
+  {
+   "articleNo": "4",
+   "title": "",
+   "bolum": "BÖLÜM II — Üyeler",
+   "text": "1. İşbu Andlaşma vecibelerini kabul edip bunları yerine getirmeğe muktedir ve istekli olduklarına Teşkilâtça hükmedilen bütün diğer barışsever Devletler Birleşmiş Milletler Üyesi olabilirler.\n2. İşbu şartları haiz olan her Devletin, Birleşmiş Milletler Üyeliğine kabulü, Güvenlik Meclisinin tavsiyesi üzerine, Genel Kurul karariyle olur."
+  },
+  {
+   "articleNo": "5",
+   "title": "",
+   "bolum": "BÖLÜM II — Üyeler",
+   "text": "Güvenlik Meclisi tarafından aleyhinde önleyici veya zorlayıcı bir teşebbüse girişilen bir Teşkilât Üyesi, Güvenlik Meclisinin tavsiyesi üzerine Üyelik sıfatından doğan hak ve imtiyazları kullanmaktan, Genel Kurulca menedilebilir. İşbu hak ve imtiyazların yeniden kullanılmasına Güvenlik Meclisi müsaade edebilir."
+  },
+  {
+   "articleNo": "6",
+   "title": "",
+   "bolum": "BÖLÜM II — Üyeler",
+   "text": "Bir Teşkilât Üyesi işbu Andlaşma'da beyan olunan prensipleri devamlı şekilde ihlâl etmekte ısrar ederse, Güvenlik Meclisinin tavsiyesi üzerine, Genel Kurulca Teşkilâttan ihraç edilebilir."
+  },
+  {
+   "articleNo": "7",
+   "title": "",
+   "bolum": "BÖLÜM III — Uzuvlar",
+   "text": "1. Birleşmiş Milletler Teşkilâtının başlıca uzuvları olarak : Bir Genel Kurul, bir Güvenlik Meclisi, bir Ekonomik ve Sosyal Meclis, bir Vesayet Meclisi, bir Milletlerarası Adalet Divanı ve bir Sekreterlik ihdas edilmiştir.\n2. Gerekli görülebilecek tâli uzuvlar işbu Andlaşmaya uygun olarak ihdas edilebilecektir."
+  },
+  {
+   "articleNo": "8",
+   "title": "",
+   "bolum": "BÖLÜM III — Uzuvlar",
+   "text": "Teşkilâtın başlıca ve tâli uzuvlarında, erkeklerin ve kadınların bütün görevlere, eşit şartlar içinde, seçilebilmelerine, Teşkilâtça, hiçbir kayıtlama konmayacaktır."
+  },
+  {
+   "articleNo": "9",
+   "title": "",
+   "bolum": "BÖLÜM IV — Genel Kurul — Terekküp Tarzı",
+   "text": "1. Genel Kurul Birleşmiş Milletlerin bütün Üyelerinden terekküp eder.\n2. Her Üyenin Genel Kurul'da en çok beş temsilcisi bulunur."
+  },
+  {
+   "articleNo": "10",
+   "title": "",
+   "bolum": "BÖLÜM IV — Genel Kurul — Görevler ve Yetkiler",
+   "text": "Genel Kurul, işbu Andlaşma çerçevesine giren veya işbu Andlaşmada derpiş edilen uzuvlardan herhangi birinin yetki ve görevlerini ilgilendiren, her türlü mesele veya işleri görüşebilir ve 12 nci madde hükümleri mahfuz kalmak şartiyle, işbu mesele veya işler hakkında, Birleşmiş Milletler Teşkilâtı Üyelerine, Güvenlik Meclisine veya Teşkilât Üyeleri ile beraber Güvenlik Meclisine tavsiyelerde bulunabilir."
+  },
+  {
+   "articleNo": "11",
+   "title": "",
+   "bolum": "BÖLÜM IV — Genel Kurul — Görevler ve Yetkiler",
+   "text": "1. Genel Kurul, silâhsızlanmada ve silâhlanmanın düzenlenmesinde hâkim olan prensipler dâhil olmak üzere, milletlerarası barış ve güvenliğin muhafazası hususundaki işbirliğinin genel prensiplerini tetkik ve bu prensipler hakkında ya Teşkilât Üyelerine, ya Güvenlik Meclisine veya Teşkilât Üyeleri ile beraber Güvenlik Meclisine tavsiyelerde bulunabilir.\n2. Genel Kurul, Birleşmiş Milletlerden her hangi biri, veya Güvenlik Meclisi veyahut Teşkilât Üyesi olmayan bir Devlet tarafından, 35 inci maddenin ikinci fıkrası hükümlerine göre kendisine sunulan ve milletlerarası barış ve güvenliğin muhafazasını ilgilendiren her türlü meseleleri görüşebilir ve 12 nci madde hükmü mahfuz kalmak üzere, bu gibi her türlü meseleler hakkında ya ilgili Devlet veya Devletlere, ya Güvenlik Meclisine veyahut da Devletler ile beraber Güvenlik Meclisine tavsiyelerde bulunabilir. Bir teşebbüse lüzum gösteren bu neviden her mesele Genel Kurul tarafından görüşülmezden önce veya görüşüldükten sonra, Güvenlik Meclisine havale edilir.\n3. Genel Kurul, milletlerarası barış ve güvenliği tehlikeye koyacak gibi görünen durumlara, Güvenlik Meclisinin dikkatini çekebilir.\n4. Genel Kurulun, işbu maddede sayılan yetkileri 10 uncu maddenin şümulünü tahdit etmez."
+  },
+  {
+   "articleNo": "12",
+   "title": "",
+   "bolum": "BÖLÜM IV — Genel Kurul — Görevler ve Yetkiler",
+   "text": "1. Güvenlik Meclisi, bir uyuşmazlık veya herhangi bir durum karşısında, işbu Andlaşmanın kendisine yüklediği görevleri yaptığı müddetçe, Genel Kurul bu uyuşmazlık veya durum hakkında hiçbir tavsiyede bulunmamalıdır, meğerki, Güvenlik Meclisi bunu ondan isteye.\n2. Genel Sekreter, Güvenlik Meclisinin rizası ile her devrede, milletlerarası barış ve güvenliğin muhafazasına mütaallik olup, Güvenlik Meclisinin meşgul bulunduğu işleri Genel Kurulun ıttılaına sunar, keza Güvenlik Meclisi sözü geçen işlerle meşgul olmayı bıraktığı anda, Sekreterlik bundan Genel Kurulu veya, Genel Kurul toplantı halinde değilse, Teşkilât Üyelerini haberdar eder."
+  },
+  {
+   "articleNo": "13",
+   "title": "",
+   "bolum": "BÖLÜM IV — Genel Kurul — Görevler ve Yetkiler",
+   "text": "1. Genel Kurul;\na) Siyasî sahada milletlerarası iş birliğini geliştirmek ve devletlerarası hukukunun tedricî gelişmesi ile takninini teşvik etmek\nb) Ekonomik, sosyal alanlar ile fikrî kültür ve eğitim ve sağlık alanlarında milletlerarası işbirliğini geliştirmek ve ırk, cins, dil veya din farkı gözetmeksizin herkesin insan haklarından ve ana hürriyetlerden faydalanmasını kolaylaştırmak için tetkiklere yol açar ve tavsiyelerde bulunur.\n2. Genel Kurulun, yukardaki 1 b fıkrasında sözü geçen meselelerle ilgili diğer sorum, görev ve yetkileri IX ve X uncu bölümlerde beyan edilmiştir."
+  },
+  {
+   "articleNo": "14",
+   "title": "",
+   "bolum": "BÖLÜM IV — Genel Kurul — Görevler ve Yetkiler",
+   "text": "12 nci madde hükümleri mahfuz kalmak şartiyle, Birleşmiş Milletlerin amaç ve prensiplerini beyan eden işbu Andlaşma hükümlerinin ihlâlinden doğan durumlar da dâhil olmak üzere, Genel Kurulca umumun iyiliğine zarar verecek veya milletler arasındaki dostane münasebetleri tehlikeye koyacak mahiyette görülen, menşei ne olursa olsun, herhangi bir durumun, barış yoluyla düzeltilmesini temin edebilecek tedbirler tavsiye olunabilir."
+  },
+  {
+   "articleNo": "15",
+   "title": "",
+   "bolum": "BÖLÜM IV — Genel Kurul — Görevler ve Yetkiler",
+   "text": "1. Genel Kurul, Güvenlik Meclisinin yıllık raporları ile, mahsus raporlarını kabul eder ve inceler, bu raporlar Güvenlik Meclisinin milletlerarası barış ve güvenliği muhafaza için kararlaştırdığı veya aldığı tedbirler hakkında malûmat ve izahat ihtiva eder.\n2. Genel Kurul, Teşkilâtın diğer uzuvlarının raporlarını kabul eder ve inceler."
+  },
+  {
+   "articleNo": "16",
+   "title": "",
+   "bolum": "BÖLÜM IV — Genel Kurul — Görevler ve Yetkiler",
+   "text": "Genel Kurul, milletlerarası Vesayet rejimi hususunda, XII ve XIII üncü bölümler gereğince kendisine düşen görevleri yerine getirir; ezcümle, stratejik bölge olarak gösterilmemiş bulunan bölgelere müteallik Vesayet anlaşmalarını tasvip eder."
+  },
+  {
+   "articleNo": "17",
+   "title": "",
+   "bolum": "BÖLÜM IV — Genel Kurul — Görevler ve Yetkiler",
+   "text": "1. Genel Kurul, Teşkilâtın bütçesini inceler ve tasvip eder.\n2. Teşkilâtın giderlerini, Genel Kurulun yaptığı taksim gereğince Üyeler üzerlerine alırlar.\n3. Genel Kurul, 57 nci maddede bahis mevzuu olan ihtisas müesseseleri ile yapılan bütün malî ve bütçeye mütaallik anlaşmaları inceler ve tasvip eder ve anılan müesseselerin idarî bütçelerini, kendilerine tavsiyelerde bulunmak üzere, inceler."
+  },
+  {
+   "articleNo": "18",
+   "title": "",
+   "bolum": "BÖLÜM IV — Genel Kurul — Oy",
+   "text": "1. Genel Kurulun her Üyesi bir oya sahiptir.\n2. Önemli meseleler hakkında Genel Kurul, hazır bulunan ve oy veren üyelerin üçte iki çoğunluğu ile karar verir. Önemli sayılan meseleler şunlardır: Milletlerarası barış ve güvenliğin muhafazasına taallûk eden tavsiyeler, Güvenlik Meclisinin süresiz üyelerinin seçimi, Ekonomik ve Sosyal Meclis Üyelerinin seçimi, 86 ncı maddenin 1c fıkrası gereğince, Vesayet Meclisi Üyelerinin seçilmesi, Teşkilâta yeni Üyeler kabulü, Üyelerin hak ve imtiyazlarının taliki, Üyelerin ihracı, Vesayet rejiminin işlemesine mütaallik meseleler ve bütçe meseleleri.\n3. Üçte iki çoğunlukla çözülecek yeni mesele nevilerinin tesbiti de dâhil olmak üzere, başka meseleler hakkındaki kararlar, hazır bulunan ve oy veren üyelerin çoğunluğu ile alınır."
+  },
+  {
+   "articleNo": "19",
+   "title": "",
+   "bolum": "BÖLÜM IV — Genel Kurul — Oy",
+   "text": "Teşkilât giderlerine iştirak hissesinin ödenmesinde geciken bir Birleşmiş Milletler Üyesi, gecikmiş ödemelerinin tutarı, geçen tam iki senelik hissesine eşit veya bundan fazla ise, Genel Kurulda oya iştirak edemez. Bununla beraber Genel Kurul, bu gecikmenin Üyenin iradesi dışında olan durumlardan ileri geldiğini görürse, bu Üyenin oya iştirakine müsaade edebilir."
+  },
+  {
+   "articleNo": "20",
+   "title": "",
+   "bolum": "BÖLÜM IV — Genel Kurul — Usül",
+   "text": "Genel Kurul yılda bir olağan toplantı ve durum icabettirince, olağanüstü toplantılar yapar. Olağanüstü toplantılar, Güvenlik Meclisinin veya Birleşmiş Milletler Üyelerinin çoğunluğunun isteği üzerine Genel Sekreterin daveti ile yapılır."
+  },
+  {
+   "articleNo": "21",
+   "title": "",
+   "bolum": "BÖLÜM IV — Genel Kurul — Usül",
+   "text": "Genel Kurul içtüzüğünü kendi tesbit eder. Her toplantı için Başkanını seçer."
+  },
+  {
+   "articleNo": "22",
+   "title": "",
+   "bolum": "BÖLÜM IV — Genel Kurul — Usül",
+   "text": "Genel Kurul görevlerinin yapılması için gerekli gördüğü tâli uzuvları vücude getirebilir."
+  },
+  {
+   "articleNo": "23",
+   "title": "",
+   "bolum": "BÖLÜM V — Güvenlik Meclisi — Terekküp Tarzı",
+   "text": "1. Güvenlik Meclisi Teşkilâtın onbir Üyesinden mürekkeptir. Çin Cumhuriyeti, Fransa, Sovyet Sosyalist Cumhuriyetleri Birliği, Büyük Britanya ve Kuzey İrlânda Birleşik Kırallığı ve Amerika Birleşik Devletleri, Güvenlik Meclisinin süreli Üyeleridir. Teşkilâtın diğer altı Üyesi, her şeyden evvel Teşkilât Üyelerinin milletlerarası barış ve güvenliğin muhafazasındaki ve Teşkilâtın diğer gayelerinin sağlanmasındaki payını, ve aynı zamanda da âdilâne bir coğrafi taksimi bilhassa gözönünde tutan Genel Kurul tarafından, Güvenlik Meclisine süresiz Üye olarak seçilir.\n2. Güvenlik Meclisinin süresiz Üyeleri iki yıllık bir devre için seçilirler. Bununla beraber süresiz Üyelerin ilk seçiminde, bunlardan üçü bir yıl için seçilecektir. Çıkan Üyeler derhal yeniden seçilemezler.\n3. Güvenlik Meclisinin her Üyesinin Mecliste bir temsilcisi vardır."
+  },
+  {
+   "articleNo": "24",
+   "title": "",
+   "bolum": "BÖLÜM V — Güvenlik Meclisi — Görevler ve Yetkiler",
+   "text": "1. Teşkilâtın çabuk ve tesirli hareketinin temini için, Üyeleri, Milletlerarası barış ve güvenliğin muhafazasının başlıca sorumunu Güvenlik Meclisine verirler ve Güvenlik Meclisinin, bu sorumun kendisine yüklediği görevleri yerine getirirken, kendi adlarına hareket ettiğini kabul ederler.\n2. Bu görevlerin yapılmasında, Güvenlik Meclisi, Birleşmiş Milletler amaç ve prensiplerine uygun olarak hareket eder. Güvenlik Meclisine işbu görevleri yerine getirebilmesi için verilen muayyen ve mahsus yetkiler VI, VII, VIII, ve XII nci bölümlerde gösterilmiştir.\n3. Güvenlik Meclisi, Genel Kurulun incelemesine yıllık raporlar ve icabı halinde mahsus raporlar sunar."
+  },
+  {
+   "articleNo": "25",
+   "title": "",
+   "bolum": "BÖLÜM V — Güvenlik Meclisi — Görevler ve Yetkiler",
+   "text": "Teşkilât Üyeleri işbu Andlaşma gereğince, Güvenlik Meclisinin kararlarını kabul etmek ve uygulamak hususunda mutabıktırlar."
+  },
+  {
+   "articleNo": "26",
+   "title": "",
+   "bolum": "BÖLÜM V — Güvenlik Meclisi — Görevler ve Yetkiler",
+   "text": "Dünya insan ve ekonomi kaynaklarının yalnız en küçük kısmını silâhlanmaya ayırarak, milletlerarası barış ve güvenliğin kurulmasını ve muhafazasını kolaylaştırmak için, Güvenlik Meclisi 47 nci maddede derpiş edilen Kurmay Komitesinin yardımiyle bir silâhlanmayı tanzim sistemi kurmak üzere Teşkilât Üyelerine sunulacak plânları hazırlamakla mükelleftir."
+  },
+  {
+   "articleNo": "27",
+   "title": "",
+   "bolum": "BÖLÜM V — Güvenlik Meclisi — Oy",
+   "text": "1. Güvenlik Meclisinin her Üyesi bir oya sahiptir.\n2. Güvenlik Meclisinin usul meselelerindeki kararları yedi üyenin, müspet oyu ile alınır;\n3. Güvenlik Meclisinin diğer bütün meselelerdeki kararları, süreli Üyelerin hepsinin oyları dâhil olmak üzere, yedi Üyenin müspet oyu ile alınır, şukadar ki, VI ncı bölüm ile 52 nci maddenin 3 üncü fıkrası mefadı gereğince alınan kararlarda, bir uyuşmazlıkta taraf olan, oy vermekten imtina eder."
+  },
+  {
+   "articleNo": "28",
+   "title": "",
+   "bolum": "BÖLÜM V — Güvenlik Meclisi — Usül",
+   "text": "1. Güvenlik Meclisi, görevlerini süreli olarak yerine getirebilecek surette teşkilâtlandırılmıştır. Bu maksatla, Güvenlik Meclisinin her Üyesi Teşkilâtın makarrında her zaman bir temsilci bulundurmalıdır.\n2. Güvenlik Meclisi, muayyen zamanlarda, her bir Üyesinin, dilerse, kendisini Hükümetinin bir Üyesi veya bilhassa tâyin edilen başka bir temsilci tarafından temsil ettirebileceği toplantılar yapar.\n3. Güvenlik Meclisi, Teşkilâtın makarrından başka, ödevini kolaylaştırmak için en elverişli gördüğü herhangi bir yerde toplantılar yapabilir."
+  },
+  {
+   "articleNo": "29",
+   "title": "",
+   "bolum": "BÖLÜM V — Güvenlik Meclisi — Usül",
+   "text": "Güvenlik Meclisi görevlerinin yapılabilmesi için gerekli gördüğü tâli uzuvları vücuda getirebilir."
+  },
+  {
+   "articleNo": "30",
+   "title": "",
+   "bolum": "BÖLÜM V — Güvenlik Meclisi — Usül",
+   "text": "Güvenlik Meclisi Başkanının seçim şeklini de tâyin eden içtüzüğünü kendi tesbit eder."
+  },
+  {
+   "articleNo": "31",
+   "title": "",
+   "bolum": "BÖLÜM V — Güvenlik Meclisi — Usül",
+   "text": "Güvenlik Meclisi Üyesi olmayan her Teşkilât Üyesi, Güvenlik Meclisine sunulan ve işbu Üyenin menfaatlarına hassatan dokunduğu Meclisce mütalâa olunan her meselenin görüşülmesine, oy sahibi olmaksızın, iştirak edebilir."
+  },
+  {
+   "articleNo": "32",
+   "title": "",
+   "bolum": "BÖLÜM V — Güvenlik Meclisi — Usül",
+   "text": "Güvenlik Meclisi Üyesi olmayan her hangi bir Birleşmiş Milletler Üyesi veya Birleşmiş Milletler Üyesi olmayan her hangi bir Devlet, Güvenlik Meclisince incelenen bir uyuşmazlıkta taraf olduğu takdirde, işbu uyuşmazlığın görüşülmesine oy sahibi olmaksızın iştirake davet edilir. Güvenlik Meclisi Teşkilât Üyesi olmayan bir Devletin iştirakine koymayı uygun bulduğu şartları tâyin eder."
+  },
+  {
+   "articleNo": "33",
+   "title": "",
+   "bolum": "BÖLÜM VI — Uyuşmazlıkların Barış Yolu ile Çözülmesi",
+   "text": "1. Uzaması, milletlerarası barış ve güvenliğin muhafazasını tehdit edebilecek mahiyette bir uyuşmazlıkta taraf olanlar, bu uyuşmazlığın çözülmesini her şeyden önce görüşme, soruşturma, ara bulma, uzlaşma, tahkim ve yargı yollariyle veya bölge teşkil veya anlaşmalarına başvurarak veyahut kendi seçecekleri başka barış yollariyle aramalıdırlar.\n2. Güvenlik Meclisi, gerekli görürse tarafları, aralarındaki uyuşmazlığı bu gibi yollarla çözmeğe davet eder."
+  },
+  {
+   "articleNo": "34",
+   "title": "",
+   "bolum": "BÖLÜM VI — Uyuşmazlıkların Barış Yolu ile Çözülmesi",
+   "text": "Güvenlik Meclisi, her hangi bir uyuşmazlık veya milletler arasında bir anlaşmazlıkla neticelenebilecek veya uyuşmazlık doğurabilecek durum hakkında; bu uyuşmazlığın veya durumun uzamasının milletlerarası barış ve güvenliğin muhafazasını tehdit etmek istidadında olup olmadığını tesbit için soruşturmada bulunabilir."
+  },
+  {
+   "articleNo": "35",
+   "title": "",
+   "bolum": "BÖLÜM VI — Uyuşmazlıkların Barış Yolu ile Çözülmesi",
+   "text": "1. Her Teşkilât Üyesi 34 üncü maddede kastolunan mahiyette bir uyuşmazlık veya durum üzerine Güvenlik Meclisinin veya Genel Kurulun dikkatini çekebilir.\n2. Teşkilât Üyesi olmayan bir Devlet, taraf olduğu her hangi bir uyuşmazlık üzerine, Andlaşmada derpiş edilen barış yoluyla çözme mükellefiyetini, bu uyuşmazlık için önceden kabul etmek şartiyle, Güvenlik Meclisinin veya Genel Kurulun dikkatini çekebilir.\n3. İşbu madde gereğince dikkatine sunulan meseleler hakkında Genel Kurulun hareketleri 11 ve 12 nci maddeler hükümlerine tabidir."
+  },
+  {
+   "articleNo": "36",
+   "title": "",
+   "bolum": "BÖLÜM VI — Uyuşmazlıkların Barış Yolu ile Çözülmesi",
+   "text": "1. Güvenlik Meclisi, 33 üncü maddede zikredilen mahiyette bir uyuşmazlığın veya buna benzer durumun gelişmesinin her hangi bir safhasında, uygun düşen düzeltme usül veya tarzlarını tavsiye edebilir.\n2. Güvenlik Meclisi, bu uyuşmazlığın çözülmesi için taraflarca önceden kabul edilmiş olan bütün usulleri gözönünde tutacaktır.\n3. İşbu maddede derpiş edilen tavsiyelerde bulunurken, Güvenlik Meclisi, hukukî mahiyette uyuşmazlıkların umumiyet itibariyle taraflarca Milletlerarası Adalet Divanı Statüsü hükümlerine göre Divana sunulması lâzımgeldiğini de nazara alacaktır."
+  },
+  {
+   "articleNo": "37",
+   "title": "",
+   "bolum": "BÖLÜM VI — Uyuşmazlıkların Barış Yolu ile Çözülmesi",
+   "text": "1. 33 üncü maddede zikredilen mahiyette bir uyuşmazlıkta taraf olanlar onu, anılan maddede gösterilen yollarla çözmeğe muvaffak olamazlarsa, Güvenlik Meclisine sunarlar.\n2. Güvenlik Meclisi bir uyuşmazlığın uzamasının filhakika, milletlerarası barış ve güvenliğin muhafazasını tehdit eder göründüğüne hükmederse, 36 ncı madde gereğince mi hareket edeceğine yoksa uygun gördüğü başka çözme şekilleri mi tavsiye edeceğine karar verir."
+  },
+  {
+   "articleNo": "38",
+   "title": "",
+   "bolum": "BÖLÜM VI — Uyuşmazlıkların Barış Yolu ile Çözülmesi",
+   "text": "33 ilâ 37 nci maddeler hükümlerine halel gelmemek üzere, Güvenlik Meclisi, bir uyuşmazlıkta taraf olanların hepsi arzu ettikleri takdirde, işbu uyuşmazlığın barış yolu ile çözülmesi için taraflara tavsiyelerde bulunabilir."
+  },
+  {
+   "articleNo": "39",
+   "title": "",
+   "bolum": "BÖLÜM VII — Barışın Tehdidi, Bozulması ve Saldırma Fiili Halinde Yapılacak Hareket",
+   "text": "Güvenlik Meclisi, barışın tehdit edildiğini, bozulduğunu veya bir saldırma fiilinin vukubulduğunu tesbit eder ve milletlerarası barış ve güvenliğin muhafazası veya yeniden tesisi için tavsiyelerde bulunur veya 41 ve 42 nci maddeler gereğince hangi tedbirler alınacağını kararlaştırır."
+  },
+  {
+   "articleNo": "40",
+   "title": "",
+   "bolum": "BÖLÜM VII — Barışın Tehdidi, Bozulması ve Saldırma Fiili Halinde Yapılacak Hareket",
+   "text": "Durumun vahimleşmesine mâni olmak üzere, Güvenlik Meclisi, 39 uncu madde gereğince tavsiyelerde bulunmazdan veya alınacak tedbirleri kararlaştırmazdan evvel, ilgili tarafları, gerekli veya temenniye değer gördüğü geçici tedbirlere riayete davet edebilir. Bu geçici tedbirler her hangi bir şekilde, ilgili tarafların haklarına, iddialarına veya durumlarına halel getirmez. İşbu geçici tedbirlerin yerine getirilmemesi halinde, Güvenlik Meclisi bu noksanı gereği gibi nazara alacaktır."
+  },
+  {
+   "articleNo": "41",
+   "title": "",
+   "bolum": "BÖLÜM VII — Barışın Tehdidi, Bozulması ve Saldırma Fiili Halinde Yapılacak Hareket",
+   "text": "Güvenlik Meclisi, kararlarını yürütmek için silâhlı kuvvet kullanılmasını gerektirmeyen ne gibi tedbirlerin alınması lâzım geleceğini tesbit ve Birleşmiş Milletler Üyelerini bu tedbirleri uygulamağa davet edebilir. Bu tedbirlere, ekonomik münasebetlerin ve demiryolu, deniz, hava, posta, telgraf, radyo ve diğer ulaştırma vasıtalarının tamamen veya kısmen kesilmesi ile siyasi münasebetlerin kat'ı da dâhil olabilir."
+  },
+  {
+   "articleNo": "42",
+   "title": "",
+   "bolum": "BÖLÜM VII — Barışın Tehdidi, Bozulması ve Saldırma Fiili Halinde Yapılacak Hareket",
+   "text": "Güvenlik Meclisi 41 nci maddede derpiş olunan tedbirlerin uygun olmayacaklarına veya uygun olmadıklarının sabit olduğuna hükmederse, milletlerarası barış ve güvenliğin muhafazası veya yeniden tesisi için, hava, deniz veya kara kuvvetleri vasıtasiyle gerekli addettiği hertürlü teşebbüse geçebilir. Bu teşebbüse, nümayişler, abluka tedbirleri ve Birleşmiş Milletler Üyelerinin hava, deniz veya kara kuvvetleri tarafından yapılacak başka hareketler dâhil olabilir."
+  },
+  {
+   "articleNo": "43",
+   "title": "",
+   "bolum": "BÖLÜM VII — Barışın Tehdidi, Bozulması ve Saldırma Fiili Halinde Yapılacak Hareket",
+   "text": "1. Birleşmiş Milletlerin bütün Üyeleri milletlerarası barış ve güvenliğin muhafazasını desteklemek üzere, Güvenlik Meclisinin daveti ile ve mahsus bir anlaşma veya mahsus anlaşmalar gereğince, milletlerarası barış ve güvenliğin muhafazası için Kurulun emrine gerekli silâhlı kuvvetleri vermeği ve geçit hakkı da dâhil olmak üzere yardım ve kolaylıklarda bulunmayı taahhüt ederler.\n2. Yukarda kastolunan anlaşma veya anlaşmalar bu kuvvetlerin miktar ve mahiyetini, hazırlık derecelerini ve genel mevkileri ile gösterilecek kolaylık ve yardımın mahiyetini tesbit edecektir.\n3. Anlaşma veya anlaşmalar Güvenlik Meclisinin teşebbüsü üzerine, kabil olur olmaz müzakere edilecektir. Bu anlaşmalar, Güvenlik Meclisi ile Teşkilât Üyeleri veya Güvenlik Meclisi ile Teşkilât Üyelerinden mürekkep guruplar arasında aktedilecek ve imzalayan Devletler tarafından, her birinin anayasası usülleri gereğince onanacaktır."
+  },
+  {
+   "articleNo": "44",
+   "title": "",
+   "bolum": "BÖLÜM VII — Barışın Tehdidi, Bozulması ve Saldırma Fiili Halinde Yapılacak Hareket",
+   "text": "Güvenlik Meclisi kuvvete başvurmağa karar verince, Mecliste temsil edilmeyen bir Üyeyi 43 ncü madde gereğince kabul edilen taahhütlerin yerine getirilmesi için silâhlı kuvvet vermeğe davet etmezden önce, işbu Üyeyi silâhlı kuvvetlerine mensup birliklerin kullanılması hususundaki Güvenlik Meclisinin kararlarına, isterse, iştirake davet edecektir."
+  },
+  {
+   "articleNo": "45",
+   "title": "",
+   "bolum": "BÖLÜM VII — Barışın Tehdidi, Bozulması ve Saldırma Fiili Halinde Yapılacak Hareket",
+   "text": "Teşkilâtın süratle askerî mahiyette tedbirler alabilmesini mümkün kılmak üzere Birleşmiş Milletler Üyeleri milletlerarası zorlayıcı bir hareketin müşterek olarak yapılabilmesi için derhal kullanılabilecek millî hava kuvvetleri birlikleri bulunduracaklardır. 43 ncü maddede zikredilen mahsus anlaşma veya mahsus anlaşmalarla çizilen hadler içinde Güvenlik Meclisi, Kurmay Komitesinin yardımı ile, bu birliklerin kuvvetini ve hazırlık derecelerini tâyin ve bunların müşterek hareketlerini derpiş eden plânları tesbit eder."
+  },
+  {
+   "articleNo": "46",
+   "title": "",
+   "bolum": "BÖLÜM VII — Barışın Tehdidi, Bozulması ve Saldırma Fiili Halinde Yapılacak Hareket",
+   "text": "Silâh kuvvetinin kullanılması için plânları Kurmay Komitesinin yardımı ile, Güvenlik Meclisi tesbit eder."
+  },
+  {
+   "articleNo": "47",
+   "title": "",
+   "bolum": "BÖLÜM VII — Barışın Tehdidi, Bozulması ve Saldırma Fiili Halinde Yapılacak Hareket",
+   "text": "1. Milletlerarası barış ve güvenliğin muhafazası, Güvenlik Meclisinin emrine verilen kuvvetlerin kullanılması ve komutası, silâhlanmanın düzenlenmesi ve muhtemel silâhsızlanma için Meclisin muhtaç olduğu askerî vasıtalarla ilgili her hususta Meclise tavsiyelerde bulunacak ve onu destekleyecek bir Kurmay Komitesi kurulmuştur.\n2. Kurmay Komitesi, Güvenlik Meclisinin süreli Üyelerinin Kurmay Başkanlarından veya bunların temsilcilerinden terekküp eder. Komitede süreli olarak temsil edilmeyen herhangi bir Birleşmiş Milletler Üyesinin iştiraki, Komitenin ödevini iyi yapabilmesi hususunda çalışmaları için lüzumlu olduğu zaman Komite işbu Üyeyi kendisine katılmağa dâvet eder.\n3. Kurmay Komitesi, Güvenlik Meclisinin emrine verilen bütün silâhlı kuvvetlerin strateji bakımından idaresinden, işbu Meclise tabi olarak sorumludur. İşbu kuvvetlerin komutasına ait meseleler sonradan çözülecektir.\n4. Kurmay Komitesi tarafından, Güvenlik Meclisinin izni ile ve ilgili bölge teşkillerine danıştıktan sonra tâli bölge komiteleri vücuda getirilebilir."
+  },
+  {
+   "articleNo": "48",
+   "title": "",
+   "bolum": "BÖLÜM VII — Barışın Tehdidi, Bozulması ve Saldırma Fiili Halinde Yapılacak Hareket",
+   "text": "1. Güvenlik Meclisinin milletlerarası barış ve güvenliğin muhafazası hususundaki kararlarının yürütülmesi için gerekli tedbirler, Meclisin takdirine göre Birleşmiş Milletlerin bütün Üyeleri veya bunlardan bazıları tarafından alınır.\n2. İşbu kararlar, Birleşmiş Milletler Üyeleri tarafından doğrudan doğruya ve iştirak ettikleri milletlerarası teşkillerdeki hareketleri ile yürütülür."
+  },
+  {
+   "articleNo": "49",
+   "title": "",
+   "bolum": "BÖLÜM VII — Barışın Tehdidi, Bozulması ve Saldırma Fiili Halinde Yapılacak Hareket",
+   "text": "Birleşmiş Milletler Üyeleri, Güvenlik Meclisi tarafından kararlaştırılan tedbirlerin yürütülmesinde karşılıklı olarak destekleşmek üzere birbirlerine katılırlar."
+  },
+  {
+   "articleNo": "50",
+   "title": "",
+   "bolum": "BÖLÜM VII — Barışın Tehdidi, Bozulması ve Saldırma Fiili Halinde Yapılacak Hareket",
+   "text": "Bir Devlet, Güvenlik Meclisi tarafından alınan önleyici veya zorlayıcı tedbirlerin mevzuu olursa, başka herhangi bir Devletin, Birleşmiş Milletler Üyesi olsun veya olmasın, işbu tedbirlerin yürütülmesi yüzünden özel ekonomik zorluklar karşısında kaldığı takdirde, bu zorlukların çözülmesi için Güvenlik Meclisine danışmaya hakkı olacaktır."
+  },
+  {
+   "articleNo": "51",
+   "title": "",
+   "bolum": "BÖLÜM VII — Barışın Tehdidi, Bozulması ve Saldırma Fiili Halinde Yapılacak Hareket",
+   "text": "İşbu Andlaşmanın hiçbir hükmü, Birleşmiş Milletler Üyelerinden birinin silâhlı bir saldırmaya hedef olması halinde, Güvenlik Meclisi milletlerarası barış ve güvenliğin muhafazası için lüzumlu tedbirleri alıncaya kadar, tabiî olan münferit veya müşterek meşru müdafaa hakkına halel getirmez. Bu meşru müdafaa hakkını kullanarak Üyelerin aldığı tedbirler derhal Güvenlik Meclisine bildirilir ve Meclisin, işbu Andlaşmaya dayanarak milletlerarası barış ve güvenliğin muhafaza veya iadesi için lüzumlu göreceği şekilde heran hareket etmek yetki ve ödevine hiçbir veçhile tesir etmez."
+  },
+  {
+   "articleNo": "52",
+   "title": "",
+   "bolum": "BÖLÜM VIII — Bölge Anlaşmaları",
+   "text": "1. İşbu Andlaşmanın hiçbir hükmü, milletlerarası barış ve güvenliğin muhafazasına mütaallik olup, mevziî mahiyette bir harekete müsait bulunan işlerin çözülmesi amacını güden bölge anlaşma veya teşkillerinin mevcudiyetine mâni değildir; yeter ki işbu anlaşma veya teşkillerin ve bunların faaliyetinin Birleşmiş Milletler amaç ve prensipleri ile telifi kabil olsun.\n2. Bu Anlaşmaları akdeden veya bu teşkilleri vücude getiren Birleşmiş Milletler Üyeleri, mevziî mahiyette uyuşmazlıkları, Güvenlik Meclisine arzetmeden önce, işbu Anlaşma veya teşkiller vasıtasiyle, barış yoluyla çözmek hususunda bütün gayretlerini sarfetmelidir.\n3. Güvenlik Meclisi, mevziî mahiyette uyuşmazlıkların, bu bölge anlaşmaları veya teşkilleri vasıtasiyle, barış yolu ile çözülmesinin gelişmesini, ister ilgili Devletlerin teşebbüsü, ister Meclisin havalesi üzerine, teşvik eder.\n4. İşbu madde, 34 ve 35 nci maddelerin uygulanmasına hiçbir veçhile halel vermez."
+  },
+  {
+   "articleNo": "53",
+   "title": "",
+   "bolum": "BÖLÜM VIII — Bölge Anlaşmaları",
+   "text": "1. Güvenlik Meclisi, icabederse, kendi yetkisi altında alınan zorlayıcı tedbirlerin uygulanması için bölge anlaşmalarını veya teşkillerini kullanır. Bununla beraber, Güvenlik Meclisinin müsaadesi olmaksızın, bölge anlaşmaları gereğince veya bölge teşkilleri tarafından hiçbir zorlayıcı harekete teşebbüs edilmiyecektir; işbu maddenin ikinci fıkrasındaki tarife göre düşman Devlet sayılanlara karşı, 107 nci madde gereğince alınan veya böyle bir Devlet tarafından yeniden saldırma siyasetine başlanmasına karşı tevcih olunan bölge anlaşmalarında derpiş edilen tedbirler, ilgili Hükümetlerin isteği üzerine, böyle bir Devlet tarafından yapılacak yeni bir saldırmayı önlemek ödevinin Teşkilâta verilmesi kabil oluncaya kadar, bundan müstesnadır.\n2. İşbu maddenin birinci fıkrasında kullanılan «düşman Devlet» tâbiri, İkinci Dünya Harbinde, işbu Andlaşmayı imza edenlerden herhangi birinin düşmanı bulunan her Devlete şâmildir."
+  },
+  {
+   "articleNo": "54",
+   "title": "",
+   "bolum": "BÖLÜM VIII — Bölge Anlaşmaları",
+   "text": "Güvenlik Meclisi, her zaman milletlerarası barış ve güvenliğin muhafazası için bölge anlaşmaları gereğince veya bölge teşkilleri tarafından girişilen veya tasarlanan her hareketten tamamiyle haberli bulundurulmalıdır."
+  },
+  {
+   "articleNo": "55",
+   "title": "",
+   "bolum": "BÖLÜM IX — Milletlerarası Ekonomik ve Sosyal İşbirliği",
+   "text": "Milletler arasında hak eşitliği prensipine ve her milletin kendi mukadderatını kendisinin tâyin etmesi hakkına saygı gösterilmesine dayanan barış ve dostluk münasebetlerini sağlamak için lüzumlu istikrar ve refah şartlarını yaratmak üzere, Birleşmiş Milletler:\na) Hayat seviyelerinin yükselmesini, tam çalıştırmayı ve ekonomik ve sosyal alanda ilerleme ve gelişme şartlarını;\nb) Ekonomik, sosyal alanlarla sağlık alanındaki milletlerarası dâvaların ve bunlara bağlı başka dâvaların çözülmesini; fikrî kültürle eğitim alanında milletlerarası işbirliğini;\nc) Irk, cins, dil veya din farkı gözetmeksizin herkesin insan haklarına ve ana hürriyetlerine bütün dünyada bilfiil saygı gösterilmesini,\nkolaylaştıracaktır."
+  },
+  {
+   "articleNo": "56",
+   "title": "",
+   "bolum": "BÖLÜM IX — Milletlerarası Ekonomik ve Sosyal İşbirliği",
+   "text": "Üyeler, 55 nci maddede beyan olunan amaçlara erişmek için gerek beraberce gerek tek başlarına, Teşkilâtla işbirliği halinde hareket eylemeyi taahhüt ederler."
+  },
+  {
+   "articleNo": "57",
+   "title": "",
+   "bolum": "BÖLÜM IX — Milletlerarası Ekonomik ve Sosyal İşbirliği",
+   "text": "1. Hükümetlerarası anlaşmalarla kurulan ve statüleri hükümleri gereğince ekonomik, sosyal, fikrî kültür ve eğitim, sağlık ve sair bunlara bağlı alanlarda milletlerarası geniş yetkileri bulunan muhtelif ihtisas müesseseleri 63 üncü madde gereğince Teşkilâta bağlanmıştır.\n2. Teşkilâta bu suretle bağlanan müessesesler aşağıda «ihtisas müesseseleri» diye anılacaklardır."
+  },
+  {
+   "articleNo": "58",
+   "title": "",
+   "bolum": "BÖLÜM IX — Milletlerarası Ekonomik ve Sosyal İşbirliği",
+   "text": "Teşkilât, ihtisas müesseselerinin programlariyle faaliyetlerini ahenkleştirmek için tavsiyelerde bulunur."
+  },
+  {
+   "articleNo": "59",
+   "title": "",
+   "bolum": "BÖLÜM IX — Milletlerarası Ekonomik ve Sosyal İşbirliği",
+   "text": "Teşkilât, 55 inci maddede beyan edilen amaçlara varmak üzere gerekli her türlü yeni ihtisas müesseselerinin kurulması için, icabedince, ilgili Devletler arasında görüşmeler yapılmasına önayak olur."
+  },
+  {
+   "articleNo": "60",
+   "title": "",
+   "bolum": "BÖLÜM IX — Milletlerarası Ekonomik ve Sosyal İşbirliği",
+   "text": "Genel Kurul ve ona tabi olarak, X ncu bölüm hükümleriyle kendisine bahşedilen yetkilere malik bulunan Ekonomik ve Sosyal Meclis, Teşkilâtın işbu bölümde beyan edilen görevlerini yerine getirmekle mükelleftir."
+  },
+  {
+   "articleNo": "61",
+   "title": "",
+   "bolum": "BÖLÜM X — Ekonomik ve Sosyal Meclis — Terekküp Tarzı",
+   "text": "1. Ekonomik ve Sosyal Meclis, Genel Kurulca seçilen 18 Birleşmiş Milletler Üyesinden mürekkeptir.\n2. Üçüncü fıkra hükümleri mahfuz kalmak şartiyle, Ekonomik ve Sosyal Meclisin altı Üyesi her yıl, üç yıllık bir devre için seçilirler. Çıkan Üyeler derhal yeniden seçilebilir.\n3. Ekonomik ve Sosyal Meclisin 18 Üyesi ilk seçimde tâyin edilir. Genel Kurulca tesbit edilen hükümlere göre bu üyelerden altısının görevi bir yıl sonra ve diğer altı üyeninki iki yıl sonra bitecektir. Ekonomik ve Sosyal Meclisin her Üyesinin Mecliste bir temsilcisi vardır."
+  },
+  {
+   "articleNo": "62",
+   "title": "",
+   "bolum": "BÖLÜM X — Ekonomik ve Sosyal Meclis — Görevler ve Yetkiler",
+   "text": "1. Ekonomik ve Sosyal Meclis, ekonomik, sosyal, fikrî kültür ve eğitim, sağlık ve diğer bunlara bağlı alanlarda milletlerarası meseleler üzerinde incelemeler ve raporlar yapabilir veya yaptırabilir ve bütün bu meseleler hakkında Genel Kurula, Teşkilât Üyelerine ve ilgili ihtisas müesseselerine tavsiyelerde bulunabilir.\n2. Meclis, herkesin insan haklarına ve ana hürriyetlerine bilfiil saygı gösterilmesini sağlamak üzere tavsiyelerde bulunabilir.\n3. Meclis, yetkisine giren meseleler hakkında Genel Kurula sunulmak üzere anlaşma projeleri hazırlayabilir.\n4. Meclis, Teşkilât tarafından konulan kaidelere uygun olarak yetkisine giren meseleler hakkında milletlerarası konferanslar toplayabilir."
+  },
+  {
+   "articleNo": "63",
+   "title": "",
+   "bolum": "BÖLÜM X — Ekonomik ve Sosyal Meclis — Görevler ve Yetkiler",
+   "text": "1. Ekonomik ve Sosyal Meclis, 57 nci maddede kasdedilen müesseselerin herhangi birisi ile, işbu müessesenin Teşkilâta hangi şartlarla bağlanacağını tesbit edecek anlaşmalar yapabilir. İşbu anlaşmalar Genel Kurulun tasvibine sunulur.\n2. Ekonomik ve Sosyal Meclis, ihtisas müesseselerine danışarak, onlara tavsiyelerde bulunarak ve Genel Kurulla Birleşmiş Milletler Üyelerine tavsiyeler yaparak işbu müesseselerin çalışmalarını ahenkleştirebilir."
+  },
+  {
+   "articleNo": "64",
+   "title": "",
+   "bolum": "BÖLÜM X — Ekonomik ve Sosyal Meclis — Görevler ve Yetkiler",
+   "text": "1. Ekonomik ve Sosyal Meclis, ihtisas müesseselerinden muntazam raporlar alabilmek için her türlü faydalı tedbirlere başvurabilir. Ekonomik ve Sosyal Meclis, kendi yaptığı tavsiyeler ve işbu Meclisin yetkisine giren konular hakkında Genel Kurul tarafından yapılan tavsiyeleri yürütmek üzere başvurulan tedbirler hususunda raporlar almak için Teşkilât Üyeleri ile ve ihtisas müesseseleri ile anlaşabilir.\n2. Meclis, işbu raporlar hakkındaki mülâhazalarını Genel Kurula bildirebilir."
+  },
+  {
+   "articleNo": "65",
+   "title": "",
+   "bolum": "BÖLÜM X — Ekonomik ve Sosyal Meclis — Görevler ve Yetkiler",
+   "text": "Ekonomik ve Sosyal Meclis, Güvenlik Meclisine malûmat verebilecek ve bunun isteği üzerine kendisine yardım edecektir."
+  },
+  {
+   "articleNo": "66",
+   "title": "",
+   "bolum": "BÖLÜM X — Ekonomik ve Sosyal Meclis — Görevler ve Yetkiler",
+   "text": "1. Ekonomik ve Sosyal Meclis, Genel Kurulun tavsiyelerini yürütmek hususunda yetkisine giren bütün görevleri yerine getirir.\n2. Meclis, Genel Kurulun tasvibi ile Teşkilât Üyelerinin veya ihtisas müesseselerinin kendisinden isteyecekleri hizmetleri yapabilir.\n3. Meclis işbu Andlaşmanın diğer kısımlarında kendisine gösterilen veya Genel Kurulca kendisine verilebilecek olan ödevleri yerine getirir."
+  },
+  {
+   "articleNo": "67",
+   "title": "",
+   "bolum": "BÖLÜM X — Ekonomik ve Sosyal Meclis — Oy",
+   "text": "1. Ekonomik ve Sosyal Meclisin her Üyesi bir oya sahiptir.\n2. Ekonomik ve Sosyal Meclisin kararları, hazır bulunan ve oy veren Üyelerin çoğunluğu ile alınır."
+  },
+  {
+   "articleNo": "68",
+   "title": "",
+   "bolum": "BÖLÜM X — Ekonomik ve Sosyal Meclis — Usül",
+   "text": "Ekonomik ve Sosyal Meclis, ekonomik ve sosyal meseleler ve insan haklarının gelişmesi için komisyonlar ile görevlerinin yapılmasına yarayacak her türlü başka komisyonlar kurabilir."
+  },
+  {
+   "articleNo": "69",
+   "title": "",
+   "bolum": "BÖLÜM X — Ekonomik ve Sosyal Meclis — Usül",
+   "text": "Ekonomik ve Sosyal Meclis, Teşkilâtın bir Üyesini önemle ilgilendiren bir meseleyi incelerken, işbu Üyeyi oy hakkı olmaksızın görüşmelerine iştirake davet eder."
+  },
+  {
+   "articleNo": "70",
+   "title": "",
+   "bolum": "BÖLÜM X — Ekonomik ve Sosyal Meclis — Usül",
+   "text": "Ekonomik ve Sosyal Meclis, ihtisas müesseseleri temsilcilerinin oy hakkı olmaksızın, Meclisin ve ihdas ettiği komisyonların görüşmelerine iştirak etmeleri, kendi temsilcilerinin de ihtisas müesseselerinin görüşmelerine iştirak etmeleri için bütün tedbirleri alabilir."
+  },
+  {
+   "articleNo": "71",
+   "title": "",
+   "bolum": "BÖLÜM X — Ekonomik ve Sosyal Meclis — Usül",
+   "text": "Ekonomik ve Sosyal Meclis, yetkisine giren meselelerle uğraşan Hükümet dışı teşkillere danışmağa yarayan bütün tedbirleri alabilir. İşbu hükümler milletlerarası teşkillere ve, gereği halinde Teşkilâtın ilgili Üyesine danışıldıktan sonra, millî teşkillere tatbik edilebilir."
+  },
+  {
+   "articleNo": "72",
+   "title": "",
+   "bolum": "BÖLÜM X — Ekonomik ve Sosyal Meclis — Usül",
+   "text": "1. Ekonomik ve Sosyal Meclis, Başkanının tâyin şeklini de tesbit eden içtüzüğünü kabul eder.\n2. Meclis, tüzüğü uyarınca ihtiyaca göre toplanır; tüzükte, Meclisin, Üyelerinin çoğunluğunun isteği üzerine, toplanmasını derpiş eden hükümler bulunacaktır."
+  },
+  {
+   "articleNo": "73",
+   "title": "",
+   "bolum": "BÖLÜM XI — Muhtar Olmayan Ülkeler hakkında Demeç",
+   "text": "Halkının kendi kendini henüz tamamen idare etmediği ülkeleri idare etmekle sorumlu olan veya bu sorumu yüklenen Birleşmiş Milletler Üyeleri, işbu ülkeler ahalisinin menfaatlerinin başta gelmesi prensipini tanırlar. Birleşmiş Milletler Üyeleri bu ahalinin, işbu Andlaşma ile kurulan milletlerarası barış ve güvenlik sisteminin çerçevesi içinde, refahını imkânın son haddine kadar kolaylaştırmak mükellefiyetini kutsal bir ödev bilirler ve bu amaçla:\na) Sözü geçen ahalinin kültürüne saygı göstererek siyasî, ekonomik ve sosyal ilerlemesi ile eğitiminin gelişmesini sağlamağı, bu ahaliye hakkaniyetle muamele etmeyi ve onu suiistimallere karşı korumağı;\nb) Her ülkenin ve ahalisinin ve bunun gelişmesindeki muhtelif derecelerin özel şartlarına uyar ölçüde, bu ahalinin kendi kendini idare edebilmek kabiliyetini geliştirmeyi, siyasi emellerini gözönünde tutmayı ve hür siyasî müesseselerinin tedrici gelişmesine yardım etmeyi,\nc) Milletlerarası barış ve güvenliği kuvvetlendirmeyi;\nd) İşbu maddede beyan edilen sosyal, ekonomik ve ilmî amaçlara bilfiil erişmek üzere yapıcı gelişme tedbirlerini kolaylaştırmayı, ilmî araştırmaları teşvik etmeyi, kendi aralarında ve şartlar müsait oldukça, Milletlerarası ihtisas müesseseleri ile işbilirği yapmayı,\ne) Güvenlik icapları ve anayasalara müteallik mülâhazalar mahfuz kalmak üzere, sorumlu bulundukları ülkelerin ekonomik, sosyal ve eğitim şartları hakkında, XII ve XIII ncü bölümlerin mevzuu olanlardan gayri istatistik vesair teknik mahiyetteki malûmatı, bilgi için muntazaman Genel Sekretere vermeyi;\nkabul ederler."
+  },
+  {
+   "articleNo": "74",
+   "title": "",
+   "bolum": "BÖLÜM XI — Muhtar Olmayan Ülkeler hakkında Demeç",
+   "text": "Teşkilât Üyeleri, ana vatan ülkelerinde olduğu kadar işbu bölümün mevzuu olan ülkelerde de siyasetlerinin, dünyanın diğer kısımlarının menfaatları ve refahı gözönünde tutulmak şartiyle, sosyal, ekonomik ve ticarî alanlarda iyi komşuluk genel prensipi üzerine kurulmuş olması gerektiği hususunda dahi mutabıktırlar."
+  },
+  {
+   "articleNo": "75",
+   "title": "",
+   "bolum": "BÖLÜM XII — Milletlerarası Vesayet Rejimi",
+   "text": "Birleşmiş Milletler Teşkilâtı, kendi yetkisi altında muahhar özel anlaşmalar gereğince Vesayet Rejimine tabi kılınabilecek ülkelerin idare ve murakabesi için, milletlerarası bir Vesayet Rejimi tesis edecektir. Bu gibi ülkeler aşağıda «Vesayet altında ülke» tabiri ile gösterilmiştir."
+  },
+  {
+   "articleNo": "76",
+   "title": "",
+   "bolum": "BÖLÜM XII — Milletlerarası Vesayet Rejimi",
+   "text": "Vesayet rejiminin öz gayeleri, işbu Andlaşmanın birinci maddesinde beyan edilen Birleşmiş Milletler amaçlarına uygun olarak şunlardır :\na) Milletlerarası barış ve güvenliği kuvvetlendirmek;\nb) Vesayet altındaki ülkeler halkının siyasi, ekonomik ve sosyal ilerlemesini ve eğitiminin gelişmesini kolaylaştırmak, her ülke ve ahalisine has şartları, ilgili ahalinin serbestçe izhar edilen emellerini ve her Vesayet anlaşmasında derpiş edilebilecek hükümleri de gözönünde tutmak şartiyle, işbu ülkeler halkının kendi kendilerini idare kabiliyetine veya bağımsızlığa doğru tedrici gelişmelerini de kolaylaştırmak;\nc) Irk, cins, dil veya din farkı gözetmeksizin herkesin insan haklarına ve ana hürriyetlerine saygı gösterilmesini teşvik etmek ve dünya milletlerinin birbirlerine bağlı oldukları duygusunu geliştirmek;\nd) Sosyal, ekonomik ve ticarî alanda bütün Teşkilât Üyeleri ile uyruklarına, eşit muamele yapılmasını sağlamak ve işbu uyruklara adaletin tevziinde de, yukarda beyan edilen amaçların gerçekleştirilmesine halel gelmemek ve 80 inci madde hükümleri mahfuz kalmak şartiyle, keza eşit muamele yapılmasını sağlamak."
+  },
+  {
+   "articleNo": "77",
+   "title": "",
+   "bolum": "BÖLÜM XII — Milletlerarası Vesayet Rejimi",
+   "text": "1. Vesayet rejimi aşağıdaki nevilerden olup, Vesayet anlaşmaları gereğince bu rejime tabi kılınabilecek olan ülkelere tatbik edilecektir :\na) Halen manda altında bulunan ülkeler;\nb) İkinci Dünya Harbi neticesinde düşman Devletlerden ayrılabilecek ülkeler;\nc) İdarelerinden sorumlu Devletlerce, isteyerek bu rejime tabi kılınan ülkeler.\n2. Yukarda zikredilen nevilere giren hangi ülkelerin hangi şartlar altında vesayet rejimine tabi kılınacağını sonradan yapılacak bir anlaşma tesbit edecektir."
+  },
+  {
+   "articleNo": "78",
+   "title": "",
+   "bolum": "BÖLÜM XII — Milletlerarası Vesayet Rejimi",
+   "text": "Birleşmiş Milletler Üyesi olan memleketlere, bunlar arasındaki münasebetlerin temeli eşit eğemenlik prensipine saygı olmak gerektiğine göre, Vesayet rejimi tatbik edilmiyecektir."
+  },
+  {
+   "articleNo": "79",
+   "title": "",
+   "bolum": "BÖLÜM XII — Milletlerarası Vesayet Rejimi",
+   "text": "Vesayet rejimine tabi kılınacak her ülke için, işbu rejimin hükümleri ve bu rejimde yapılabilecek değişiklikler ve tashihler Birleşmiş Milletlerin bir Üyesinin mandasına tabi ülkelerde, manda sahibi Devlet de dâhil olmak şartiyle, doğrudan doğruya ilgili Devletler arasında yapılacak bir anlaşmaya mevzu olacak ve 83 ve 85 inci maddeler gereğince onanacaktır."
+  },
+  {
+   "articleNo": "80",
+   "title": "",
+   "bolum": "BÖLÜM XII — Milletlerarası Vesayet Rejimi",
+   "text": "1. 77, 79 ve 81 inci maddelere uygun olarak yapılacak ve ülkelerden herbirini Vesayet rejimi altına koyacak olan özel Vesayet anlaşmaları ile tesbit edilebilecek hususlar dışında ve sözü geçen anlaşmalar yapılıncaya kadar, işbu bölümün hiçbir hükmü, her hangi bir devletin veya herhangi bir milletin haklarını, yahut yürürlükte olup bazı Teşkilât Üyelerinin taraf bulunabilecekleri milletlerarası akitlerin hükümlerini herhangi bir şekilde doğrudan doğruya veya dolayısiyle değiştirir gibi yorumlanmıyacaktır.\n2. İşbu maddenin birinci fıkrası, 77 nci maddede derpiş edildiği üzere, manda altındaki ülkeleri veya başka ülkeleri Vesayet rejimi altına koymağa mâtuf anlaşmaların görüşülmesinin ve akdinin gecikmesini veya talikını haklı gösterecek şekilde yorumlanmamalıdır."
+  },
+  {
+   "articleNo": "81",
+   "title": "",
+   "bolum": "BÖLÜM XII — Milletlerarası Vesayet Rejimi",
+   "text": "Vesayet anlaşması, herhalde, Vesayet altındaki ülkenin hangi şartlarla idare edileceğini ihtiva eder ve idareyi üzerine alacak makamı gösterir. Aşağıda «idare ile görevlendirilmiş makam» tabiri ile anılacak olan işbu makam bir veya birkaç devlet veya bizzat Teşkilât olabilir."
+  },
+  {
+   "articleNo": "82",
+   "title": "",
+   "bolum": "BÖLÜM XII — Milletlerarası Vesayet Rejimi",
+   "text": "43 üncü maddeye uygun olarak akdedilen herhangi bir mahsus anlaşmaya veya mahsus anlaşmalara halel vermeksizin bir Vesayet anlaşmasının, tatbik edildiği Vesayet altındaki ülkenin tamamına veya bir kısmına şâmil, bir veya birkaç stratejik bölgeyi işbu anlaşma gösterebilir."
+  },
+  {
+   "articleNo": "83",
+   "title": "",
+   "bolum": "BÖLÜM XII — Milletlerarası Vesayet Rejimi",
+   "text": "1. Stratejik bölgeler hususunda, Teşkilâta verilen bütün görevler, Vesayet anlaşmaları hükümlerinin tasvibi ve bunların muhtemel değişmeleri veya tashihleri de dahil olmak üzere, Güvenlik Meclisince görülür.\n2. 76 ncı maddede beyan edilen öz amaçların her stratejik bölge ahalisi için de tatbiki kabildir.\n3. Güvenlik Meclisi, Vesayet anlaşmaları hükümleri hususunda ve güvenlik icapları mahfuz kalmak şartiyle, stratejik bölgelerde Teşkilâtın, Vesayet rejimi bakımından yüklendiği siyasi, ekonomik ve sosyal mahiyette ve eğitime mütaallik görevlerinin ifasında Vesayet Meclisinin yardımına başvuracaktır."
+  },
+  {
+   "articleNo": "84",
+   "title": "",
+   "bolum": "BÖLÜM XII — Milletlerarası Vesayet Rejimi",
+   "text": "İdare ile görevlendirilmiş makam, Vesayet altındaki ülkenin milletlerarası barış ve güvenliğin muhafazasına iştirak etmesine itina etmekle mükelleftir. Bu maksatla, Güvenlik Meclisine karşı giriştiği taahhütleri yerine getirmek ve mahallî müdafaayı ve ülke dâhilinde asayişin muhafazasını sağlamak için, işbu ülkeden gönüllü birlikler, kolaylıklar ve yardım temin edebilir."
+  },
+  {
+   "articleNo": "85",
+   "title": "",
+   "bolum": "BÖLÜM XII — Milletlerarası Vesayet Rejimi",
+   "text": "1. Stratejik bölge olarak gösterilmemiş olan bütün bölgeler hakkındaki Vesayet anlaşmaları hususunda, Vesayet Anlaşmaları hükümlerinin tasvibi ve bunların değiştirilmesiyle tashihi de dâhil olmak üzere, Teşkilâtın görevlerini Genel Kurul yapar.\n2. Genel Kurulun yetkisi altında hareket eden Vesayet Meclisi görevlerinin yapılmasında Genel Kurula yardım eder."
+  },
+  {
+   "articleNo": "86",
+   "title": "",
+   "bolum": "BÖLÜM XIII — Vesayet Meclisi — Terekküp Tarzı",
+   "text": "1. Vesayet Meclisi Birleşmiş Milletlerin aşağıdaki Üyelerinden terekküp eder:\na) Vesayet altındaki ülkelerin idaresiyle görevlendirilmiş Üyeler,\nb) 23 üncü maddede adları ile anılmış olupta Vesayet altında ülke idare etmeyen Üyeler,\nc) Vesayet Meclisinin, eşit sayıda Vesayet altında ülke idare eden ve etmeyen Birleşmiş Milletler Üyelerinden müteşekkil olmasını sağlamak üzere, Genel Kurulca üç yıl için seçilecek gereken sayıda başka Üyeler,\n2. Vesayet Meclisi Üyelerinden her biri kendisini Mecliste temsil etmek üzere özel ehliyette bir şahsı tâyin eder."
+  },
+  {
+   "articleNo": "87",
+   "title": "",
+   "bolum": "BÖLÜM XIII — Vesayet Meclisi — Görevler ve Yetkiler",
+   "text": "Genel Kurul ve, onun yetkisi altında, Vesayet Meclisi görevlerini yerine getirirlerken:\na) İdare ile görevlendirilmiş makamın sunduğu raporları tetkik;\nb) Dilekçeleri kabul ve bunları anılan makamla danışarak tetkik;\nc) Anılan makamca idare edilen ülkelerde, işbu makamla tesbit edilecek tarihlerde, zaman zaman teftişler tertip;\nd) Vesayet anlaşmaları hükümleri gereğince işbu tedbirleri veya başka tedbirleri ittihaz,\nedebilir."
+  },
+  {
+   "articleNo": "88",
+   "title": "",
+   "bolum": "BÖLÜM XIII — Vesayet Meclisi — Görevler ve Yetkiler",
+   "text": "Vesayet Meclisi, Vesayet altındaki her ülke ahalisinin siyasi, ekonomik, ve sosyal alanlarla eğitim alanındaki ilerlemeleri hakkında bir soru cetveli tanzim eder; Genel Kurulun yetkisine tabi Vesayet altındaki her hangi bir ülkenin idaresiyle görevlendirilmiş makam, Genel Kurula, yukarıda zikredilen soru cetvelini esas tutan bir yıllık rapor sunar."
+  },
+  {
+   "articleNo": "89",
+   "title": "",
+   "bolum": "BÖLÜM XIII — Vesayet Meclisi — Oy",
+   "text": "1. Vesayet Meclisinin her Üyesi bir oya sahiptir;\n2. Vesayet Meclisinin kararları hazır bulunan ve oy veren Üyelerin çoğunluğu ile alınır."
+  },
+  {
+   "articleNo": "90",
+   "title": "",
+   "bolum": "BÖLÜM XIII — Vesayet Meclisi — Usul",
+   "text": "1. Vesayet Meclisi, Başkanının tâyin şeklini de tesbit eden, İçtüzüğünü kabul eder.\n2. Meclis, ihtiyaca göre tüzüğü gereğince toplanır; tüzükte, Üyelerinin çoğunluğunun isteği üzerine Meclisin toplanmasını derpiş eden hükümler vardır."
+  },
+  {
+   "articleNo": "91",
+   "title": "",
+   "bolum": "BÖLÜM XIII — Vesayet Meclisi — Usul",
+   "text": "Vesayet Meclisi, icabında, her birinin yetkisi içinde bulunan meselelerde, Ekonomik ve Sosyal Meclisle ihtisas müesseselerinin yardımına başvurur."
+  },
+  {
+   "articleNo": "92",
+   "title": "",
+   "bolum": "BÖLÜM XIV — Milletlerarası Adalet Divanı",
+   "text": "Milletlerarası Adalet Divanı, Birleşmiş Milletlerin başlıca adalet uzvu olacaktır. Divan, Milletlerarası Daimî Adalet Divanının Statüsü esasına dayanan ve ayrılmaz bir cüzü olduğu işbu Andlaşmaya ekli bulunan bir Statüye göre çalışır."
+  },
+  {
+   "articleNo": "93",
+   "title": "",
+   "bolum": "BÖLÜM XIV — Milletlerarası Adalet Divanı",
+   "text": "1. Bütün Birleşmiş Milletler Üyeleri, ipso facto, Milletlerarası Adalet Divanı Statüsüne taraftırlar.\n2. Teşkilât Üyesi olmayan Devletlerin Milletlerarası Adalet Divanı Statüsüne taraf olabilmeleri şartları, her bir halde, Güvenlik Meclisinin tavsiyesi üzerine Genel Kurul tarafından tâyin edilir."
+  },
+  {
+   "articleNo": "94",
+   "title": "",
+   "bolum": "BÖLÜM XIV — Milletlerarası Adalet Divanı",
+   "text": "1. Birleşmiş Milletlerin her Üyesi, taraf olduğu bütün uyuşmazlıklarda, Milletlerarası Adalet Divanının kararına uymağı taahhüt eder.\n2. Bir uyuşmazlıkta taraf olan Devletlerden biri, Divanın verdiği bir hükme göre kendisine düşen vecibeleri yerine getirmezse, öbür taraf, Güvenlik Meclisine başvurabilir ve işbu Meclis, lüzum gördüğü takdirde hükmün yerine getirilmesi için tavsiyelerde bulunabilir veya alınacak tedbirleri kararlaştırabilir."
+  },
+  {
+   "articleNo": "95",
+   "title": "",
+   "bolum": "BÖLÜM XIV — Milletlerarası Adalet Divanı",
+   "text": "İşbu Andlaşmanın hiçbir hükmü, Teşkilât Üyelerinin, uyuşmazlıklarının çözülmesini, zaten mevcut olan veya ileride akdedilebilecek olan anlaşmalar gereğince, başka mahkemelere tevdi etmelerine mâni değildir."
+  },
+  {
+   "articleNo": "96",
+   "title": "",
+   "bolum": "BÖLÜM XIV — Milletlerarası Adalet Divanı",
+   "text": "1. Genel Kurul veya Güvenlik Meclisi, Milletlerarası Adalet Divanından hukukî her hangi bir mesele hakkında iştişari rey isteyebilir.\n2. Genel Kurulca bu hususta her hangi bir anda yetkili kılınabilecek olan Teşkilâtın bütün diğer uzuvları ve ihtisas müesseseleri, çalışmaları alanında karşılarına çıkacak hukuki meseleler hakkında keza Divandan istişari rey istiyebilirler."
+  },
+  {
+   "articleNo": "97",
+   "title": "",
+   "bolum": "BÖLÜM XV — Sekreterlik",
+   "text": "Sekreterlik bir Genel Sekreter ile Teşkilâtın icabettirebileceği memurları ihtiva eder. Genel Sekreter Güvenlik Meclisinin tavsiyesi üzerine Genel Kurul tarafından tâyin edilir. Genel Sekreter Teşkilâtın en yüksek memurudur."
+  },
+  {
+   "articleNo": "98",
+   "title": "",
+   "bolum": "BÖLÜM XV — Sekreterlik",
+   "text": "Genel Sekreter, Genel Kurulun, Güvenlik Meclisinin, Ekonomik ve Sosyal Meclisin, ve Vesayet Meclisinin bütün toplantılarında işbu sıfatla hareket eder. Bu uzuvlar tarafından kendisine yükletilen görevleri yapar. Teşkilâtın çalışması hakkında Genel Kurula bir yıllık rapor sunar."
+  },
+  {
+   "articleNo": "99",
+   "title": "",
+   "bolum": "BÖLÜM XV — Sekreterlik",
+   "text": "Genel Sekreter, fikrince milletlerarası barış ve güvenliğin muhafazasını tehlikeye koyabilecek her hususa Güvenlik Meclisinin dikkatini çekebilir."
+  },
+  {
+   "articleNo": "100",
+   "title": "",
+   "bolum": "BÖLÜM XV — Sekreterlik",
+   "text": "1. Genel Sekreter ve sekreterlik memurları ödevlerinin görülmesinde her hangi bir Hükümetten veya Teşkilât dışında her hangi bir makamdan ne talimat isterler ve ne de kabul ederler. Milletlerarası memurlukları durumu ile telif edilemeyecek her hareketten kaçınırlar ve yalnız Teşkilâta karşı sorumlu olurlar.\n2. Teşkilâtın her Üyesi, Genel Sekreterin ve memurların görevlerinin milletlerarası mahiyetine saygı göstermeği ve kendilerine, ödevlerinin yerine getirilmesinde tesir etmeğe çalışmamağı taahhüt eder."
+  },
+  {
+   "articleNo": "101",
+   "title": "",
+   "bolum": "BÖLÜM XV — Sekreterlik",
+   "text": "1. Memurlar, Genel Kurulca tesbit edilen kaidelere göre Genel Sekreter tarafından tâyin edilirler.\n2. Ekonomik ve Sosyal Meclise, Vesayet Meclisine ve gerekiyorsa, Teşkilâtın başka uzuvlarına süreli olarak mahsus memurlar verilir. İşbu memurlar Sekreterlik kadrosuna dâhildir.\n3. Memurların alınmasında ve kullanılma şartlarının tesbitinde hâkim mülâhaza, Teşkilâta en yüksek çalışma, ehliyet ve dürüstlük vasıflarını haiz kimselerin hizmetini sağlamak lüzumu olmalıdır. Memur alınırken mümkün olduğu kadar geniş bir coğrafi taksim esasına uyulmasının önemi, gereği gibi gözönünde bulundurulacaktır."
+  },
+  {
+   "articleNo": "102",
+   "title": "",
+   "bolum": "BÖLÜM XVI — Çeşitli Hükümler",
+   "text": "1. İşbu Andlaşmanın yürürlüğe girmesinden sonra Birleşmiş Milletlerin bir Üyesi tarafından aktedilen her milletlerarası andlaşma veya anlaşma, mümkün olan en kısa zamanda Sekreterlikte tescil edilecek ve Sekreterlikçe neşredilecektir.\n2. İşbu maddenin birinci fıkrası hükümlerine uygun olarak tescil edilmemiş olan bir milletlerarası andlaşma veya anlaşmanın taraflarından hiçbiri, Teşkilâtın bir uzvu önünde anılan andlaşma veya anlaşmayı ileri süremez."
+  },
+  {
+   "articleNo": "103",
+   "title": "",
+   "bolum": "BÖLÜM XVI — Çeşitli Hükümler",
+   "text": "Birleşmiş Milletler Üyelerinin işbu Andlaşmadan doğan vecibeleri ile başka her hangi bir milletlerarası anlaşmadan doğan vecibelerinin çatışması halinde Andlaşma vecibeleri üstün gelecektir."
+  },
+  {
+   "articleNo": "104",
+   "title": "",
+   "bolum": "BÖLÜM XVI — Çeşitli Hükümler",
+   "text": "Teşkilât, Üyelerinden herbirinin ülkesinde, görevlerini yerine getirmesi ve amaçlarına erişmesi için gerekli huhukî ehliyeti haizdir."
+  },
+  {
+   "articleNo": "105",
+   "title": "",
+   "bolum": "BÖLÜM XVI — Çeşitli Hükümler",
+   "text": "1. Teşkilât, Üyelerinden her birinin ülkesinde amaçlarına erişmek için gerekli olan imtiyaz ve masuniyetlerden fayda… [sözcüğün devamı Resmî Gazete nüshasında okunamıyor].\n2. Birleşmiş Milletler Üyelerinin temsilcileri ve Teşkilâtın memurları Teşkilât ile ilgili görevlerini tam bağımsızlık içinde yapabilmek için gerekli imtiyaz ve masuniyetlerden keza faydalanırlar.\n3. Genel Kurul, işbu maddenin birinci ve ikinci fıkralarının uygulanması teferruatının tesbiti için tavsiyeler yapabilir veya Birleşmiş Milletler Üyelerine bu maksatla anlaşmalar teklif edebilir."
+  },
+  {
+   "articleNo": "106",
+   "title": "",
+   "bolum": "BÖLÜM XVII — Güvenliğe mütaallik Geçici Hükümler",
+   "text": "Güvenlik Meclisine, kanaatince, 42 nci maddeye göre kendisine düşen sorumları yüklenmeğe başlamak imkânını verecek olan ve 43 uncu maddede anılan mahsus anlaşmaların yürürlüğe girmesine deyin, 30 Ekim 1943 tarihinde Moskova'da imzalanan dört Millet Demeci âkitleri ile Fransa, aralarında ve gerekirse başka Teşkilât Üyeleri ile işbu Demecin 5 nci fıkrası hükümlerine uygun olarak Birleşmiş Milletler adına, milletlerarası barış ve güvenliğin muhafazası için gerekli her türlü hareketin birlikte yapılması zımnında danışacaklardır."
+  },
+  {
+   "articleNo": "107",
+   "title": "",
+   "bolum": "BÖLÜM XVII — Güvenliğe mütaallik Geçici Hükümler",
+   "text": "İşbu Andlaşmanın hiçbir hükmü, Andlaşmayı imzalayan her hangi bir Devletin İkinci Dünya Harbinde düşmanı bulunmuş olan bir Devlete karşı, bu husustaki sorumluluğu haiz olan Hükümetler tarafından, bu harbin bir neticesi olarak girişilmiş veya tecviz edilmiş bir harekete ne tesir eder, ne de mâni olur."
+  },
+  {
+   "articleNo": "108",
+   "title": "",
+   "bolum": "BÖLÜM XVIII — Değişiklikler",
+   "text": "İşbu Andlaşmada yapılacak değişiklikler, Genel Kurul Üyelerinin üçte iki çoğunluğu ile kabul edilir ve Güvenlik Meclisi süreli Üyelerinin hepsi dâhil olmak üzere, Teşkilât Üyelerinin üçte ikisi tarafından her birinin anayasası hükümleri gereğince onandığı zaman, bütün Birleşmiş Milletler Üyeleri için yürürlüğe girer."
+  },
+  {
+   "articleNo": "109",
+   "title": "",
+   "bolum": "BÖLÜM XVIII — Değişiklikler",
+   "text": "1. Genel Kurulun üçte iki çoğunluğu ve Güvenlik Meclisinin her hangi yedi Üyesinin oyları ile tesbit edilecek tarih ve mahalde işbu Andlaşmanın yeniden gözden geçirilmesi maksadiyle Birleşmiş Milletler Üyelerinin bir Genel Konferansı toplanabilecektir. Konferansta Teşkilâtın her Üyesi bir oya sahip olacaktır.\n2. İşbu Andlaşmada yapılması, konferansın üçte iki çoğunluğu ile tavsiye edilecek her değişiklik, Güvenlik Meclisinin bütün süreli üyeleri dâhil olmak üzere, Birleşmiş Milletler Üyelerinin üçte ikisi tarafından her birinin anayasası hükümleri gereğine göre onanınca yürürlüğe girecektir.\n3. Genel Kurulun, işbu Andlaşmanın yürürlüğe girmesini takibeden onuncu yıllık toplantısından önce, konferans henüz toplanmamış bulunursa, sözü geçen toplantının gündemine, işbu konferansın davet edilmesi hususunda bir teklif dercedilecek ve Genel Kurulun çoğunluğu ve Güvenlik Meclisinin herhangi yedi Üyesinin oyu ile karar verildiği takdirde, konferans toplanacaktır."
+  },
+  {
+   "articleNo": "110",
+   "title": "",
+   "bolum": "BÖLÜM XIX — Onanma ve İmza",
+   "text": "1. İşbu Andlaşma, imza eden Devletler tarafından her birinin anayasa kaideleri gereğince onanacaktır.\n2. Tasdiknameler, Amerika Birleşik Devletleri Hükümeti nezdine tevdi edilecek ve her tevdi işbu Hükümetçe bütün imza eden Devletlere ve, tâyin edildiği zaman, Teşkilât Genel Sekreterine bildirilecektir.\n3. İşbu Andlaşma, Çin Cumhuriyeti, Fransa, Sovyet Sosyalist Cumhuriyetleri Birliği, Büyük Britanya ve Kuzey İrlanda Birleşik Kırallığı, Amerika Birleşik Devletleri ve imza eden diğer Devletlerin çoğunluğu tarafından tasdiknamelerin tevdiinden sonra yürürlüğe girecektir. Bundan sonra, Amerika Birleşik Devletleri Hükümetince tasdiknamelerin tevdiine dair bir mazbata tanzim edilerek bunun birer örneği bütün imza eden Devletlere verilecektir.\n4. İşbu Andlaşmayı imzalamış olup yürürlüğe girmesinden sonra onayacak olan Devletler, her birinin tasdiknamesinin tevdii tarihinden itibaren Birleşmiş Milletler aslî Üyesi olacaklardır."
+  },
+  {
+   "articleNo": "111",
+   "title": "",
+   "bolum": "BÖLÜM XIX — Onanma ve İmza",
+   "text": "Çince, Fransızca, Rusca, İngilizce ve İspanyolca metinleri aynı derecede muteber sayılacak olan işbu Andlaşma, Amerika Birleşik Devletleri Hükümeti arşivine tevdi edilecektir. İşbu Hükümetçe, bütün diğer imza eden Devletler Hükümetlerine aslına uygunluğu usulünce tasdik edilmiş nüshalar verilecektir.\nYukarıdaki hükümleri tasdiken Birleşmiş Milletler Hükümetleri temsilcileri işbu Andlaşmayı imzalamışlardır.\nSanfransisko'da yirmi altı Haziran bin dokuzyüz kırkbeşte yapılmıştır."
+  }
+ ],
+ "belirsiz": [
+  {
+   "articleNo": "105",
+   "yer": "1. fıkra, son sözcük",
+   "sorun": "Satır baskıda çok silik. \"için gerekli olan imtiyaz ve masuniyetlerden\" harf biçimlerinden ve 2. fıkradaki koşut ifadeden okunuyor; son sözcük \"fayda…\" ile başlıyor, eki seçilemiyor (\"faydalanır\" olarak yazıldı ve [?] ile işaretlendi).",
+   "sayfa": "s-08"
+  },
+  {
+   "articleNo": "105",
+   "yer": "2. fıkra, son iki sözcük",
+   "sorun": "Satır silik; \"masuniyetlerden keza faydalanırlar\" harf biçimlerinden okundu, düşük güven.",
+   "sayfa": "s-08"
+  },
+  {
+   "articleNo": "106",
+   "yer": "\"43 uncu maddede\"",
+   "sorun": "İkinci rakam kırık basılmış (3 mü 5 mi); 900 dpi büyütmede sağ yanda iki kavis görülüyor → 3 okundu. Sıra eki baskıda \"uncu\" (3 ile uyumsuz, olduğu gibi bırakıldı). Md 82'de \"43 üncü maddeye uygun olarak akdedilen … mahsus anlaşma\" ifadesi aynı atfı destekliyor.",
+   "sayfa": "s-08"
+  },
+  {
+   "articleNo": "109",
+   "yer": "1. fıkra, ikinci cümle",
+   "sorun": "Satır silik: \"toplanabilecektir. Konferansta Teşkilâtın her Üyesi bir oya\" — \"Üyesi\" sonundaki i ve \"bir\" sözcüğü kısmen silinmiş; bağlamdan (devamı \"oya sahip olacaktır\") okundu.",
+   "sayfa": "s-08"
+  },
+  {
+   "articleNo": "110",
+   "yer": "3. fıkra, \"Kırallığı, Amerika\"",
+   "sorun": "\"Kırallığı\" satır sonunda; bu sütunun sağ kenarında noktalama ve tireler basılmamış (aynı fıkrada \"Cum-\", \"tara-\" tireleri de yok). Sayım virgülü tarafımdan kondu, baskıda görünmüyor.",
+   "sayfa": "s-08"
+  },
+  {
+   "articleNo": "12",
+   "yer": "1. fıkra sonu",
+   "sorun": "Baskıda \"isteye..\" (iki nokta); fiil eki eksik basılmış olabilir (isteye/istiye…). Görünen hâliyle \"isteye.\" yazıldı.",
+   "sayfa": "s-02"
+  }
+ ]
 }

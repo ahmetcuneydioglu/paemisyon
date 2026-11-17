@@ -1,0 +1,231 @@
+{
+  "deck": {
+    "topicId": "b30fbcee-b5ea-4b73-a91a-6ca681a46b0b",
+    "legislationSlug": "bm-andlasmasi",
+    "sourceLabel": "AI bilgi kartı — Birleşmiş Milletler Andlaşması md Başlangıç, 1–22",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: resmî madde metni + çıkmış sorular)"
+  },
+  "cards": [
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Birleşmiş Milletler Şartı, hükümet temsilcilerinin hangi şehirde toplanmasıyla kabul edilmiştir?",
+      "back": "San Francisco.",
+      "explanation": "Başlangıç bölümüne göre hükümetler, bu şehirde toplanan temsilcileri aracılığıyla Şart'ı kabul etmiş ve Birleşmiş Milletler adını alacak uluslararası bir örgüt kurmuştur.",
+      "articleRefs": [
+        "Başlangıç"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "BM Şartı'na göre Birleşmiş Milletler, barışı bozabilecek uluslararası uyuşmazlıkları barışçı yollarla çözerken hangi ilkelere uyar?",
+      "back": "Adalet ve uluslararası hukuk ilkelerine.",
+      "explanation": "Aynı amaç bendinde barışa yönelik tehditleri önlemek ve uzaklaştırmak, her türlü saldırı fiilini ortadan kaldırmak için etkili ortak önlemler almak da yer alır.",
+      "articleRefs": [
+        "1"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "BM Şartı'nda sayılan amaçlara göre herkesin insan haklarına ve temel özgürlüklerine saygı, hangi farklar gözetilmeksizin geliştirilir?",
+      "back": "Irk, cinsiyet, dil veya din farkı gözetilmeksizin.",
+      "explanation": "Bu hüküm, uluslararası işbirliğini gerçekleştirme amacının parçasıdır. Aynı bentte ekonomik, sosyal, düşünsel ve insani nitelikteki uluslararası sorunların çözülmesi de sayılır.",
+      "articleRefs": [
+        "1"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "BM Şartı'na göre Birleşmiş Milletler Örgütü hangi ilke üzerine kurulmuştur?",
+      "back": "Bütün üyelerinin egemen eşitliği ilkesi üzerine.",
+      "explanation": "Üyeler ayrıca Şart gereğince üstlendikleri yükümlülükleri iyi niyetle yerine getirir ve uluslararası uyuşmazlıklarını barışçı yollarla çözer.",
+      "articleRefs": [
+        "2"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "BM Şartı'na göre üye devletler, uluslararası ilişkilerinde başka bir devletin toprak bütünlüğüne ya da siyasi bağımsızlığına karşı neye başvurmaktan kaçınır?",
+      "back": "Tehdide veya kuvvet kullanmaya.",
+      "explanation": "Yasak daha geniştir: Birleşmiş Milletlerin amaçlarıyla bağdaşmayan başka her türlü tehdit ya da kuvvet kullanımını da kapsar.",
+      "articleRefs": [
+        "2"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "BM Şartı'ndaki iç işlerine karışmama ilkesi, Şart'ın zorlama önlemlerine ilişkin bölümünün uygulanmasını engeller mi?",
+      "back": "Hayır. Şart, özü bakımından bir devletin ulusal yetkisine giren işlere Birleşmiş Milletlerin karışmasına izin vermez; ancak bu ilke, Şart'ta öngörülen zorlama önlemlerinin uygulanmasını hiçbir biçimde engellemez.",
+      "explanation": "Şart, üyeleri bu tür işleri Şart'a göre bir çözüm yoluna bağlamaya da zorlamaz.",
+      "articleRefs": [
+        "2"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Birleşmiş Milletler üyeliğine kabul, Güvenlik Konseyinin kararıyla mı olur?",
+      "back": "Hayır. Kabul, Güvenlik Konseyinin tavsiyesi üzerine Genel Kurul kararıyla olur.",
+      "explanation": "Üye olacak devletin barışsever olması, BM Şartı'ndaki yükümlülükleri kabul etmesi ve Örgütçe bunları yerine getirmeye yetenekli ve istekli görülmesi gerekir.",
+      "articleRefs": [
+        "4"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Birleşmiş Milletlerde üyelik hak ve ayrıcalıklarını kullanmaktan yoksun bırakılan bir üyeye, bu hakları yeniden kullanma izni Genel Kurulca mı verilir?",
+      "back": "Hayır. Yoksun bırakma kararını Güvenlik Konseyinin tavsiyesi üzerine Genel Kurul verebilir; hakların yeniden kullanılmasına ise Güvenlik Konseyi izin verebilir.",
+      "explanation": "Bu yaptırım, Güvenlik Konseyinin hakkında önleyici ya da zorlayıcı bir girişim başlattığı üyeye uygulanabilir.",
+      "articleRefs": [
+        "5"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "BM Şartı'ndaki ilkeleri sürekli olarak çiğnemekte direnen bir üyeyi Birleşmiş Milletlerden hangi organ çıkarabilir?",
+      "back": "Genel Kurul çıkarabilir; bunun için Güvenlik Konseyinin tavsiyesi gerekir.",
+      "explanation": "Çıkarma zorunlu değildir, Genel Kurulun takdirindedir. Koşulu, üyenin Şart'ta belirtilen ilkeleri sürekli olarak çiğnemekte direnmesidir.",
+      "articleRefs": [
+        "6"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "BM Şartı'na göre Birleşmiş Milletlerin başlıca organları hangileridir?",
+      "back": "Genel Kurul, Güvenlik Konseyi, Ekonomik ve Sosyal Konsey, Vesayet Konseyi, Uluslararası Adalet Divanı ve Sekretarya.",
+      "explanation": "Bu organların yanında, gerekli görülen yardımcı organlar da Şart'a uygun olarak kurulabilir.",
+      "articleRefs": [
+        "7"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Birleşmiş Milletler Genel Kurulunda her üye devletin en çok kaç temsilcisi bulunabilir?",
+      "back": "En çok beş temsilcisi bulunabilir.",
+      "explanation": "Genel Kurul, Birleşmiş Milletlerin bütün üyelerinden oluşur.",
+      "articleRefs": [
+        "9"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Güvenlik Konseyi bir uyuşmazlıkla ilgili olarak BM Şartı'nın kendisine verdiği görevleri yürütürken, Genel Kurul o uyuşmazlık hakkında hangi durumda tavsiyede bulunabilir?",
+      "back": "Yalnız Güvenlik Konseyi bunu isterse; aksi hâlde Genel Kurul hiçbir tavsiyede bulunmaz.",
+      "explanation": "Bu sınır, Güvenlik Konseyi o uyuşmazlık ya da durumla ilgili görevlerini sürdürdüğü sürece geçerlidir.",
+      "articleRefs": [
+        "12"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "BM Şartı'na göre Birleşmiş Milletlerin bütçesini hangi organ inceler ve onaylar?",
+      "back": "Genel Kurul; üyeler de Örgütün giderlerini Genel Kurulun yaptığı paylaştırmaya göre üstlenir.",
+      "explanation": "Genel Kurul, uzmanlık kuruluşlarıyla yapılan mali ve bütçeye ilişkin anlaşmaları da inceler ve onaylar.",
+      "articleRefs": [
+        "17"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Birleşmiş Milletler Genel Kurulunda her üyenin kaç oyu vardır?",
+      "back": "Bir oyu vardır.",
+      "explanation": "Genel Kurul kararları, hazır bulunan ve oy veren üyeler üzerinden alınır.",
+      "articleRefs": [
+        "18"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Birleşmiş Milletler Genel Kurulu önemli konularda hangi çoğunlukla karar verir?",
+      "back": "Hazır bulunan ve oy veren üyelerin üçte iki çoğunluğuyla.",
+      "explanation": "Önemli sayılan konulardan bazıları: uluslararası barış ve güvenliğin korunmasına ilişkin tavsiyeler, Güvenlik Konseyinin geçici üyelerinin seçimi, yeni üye kabulü, üyelik hak ve ayrıcalıklarının askıya alınması, üyelikten çıkarma ve bütçe konuları.",
+      "articleRefs": [
+        "18"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Birleşmiş Milletlere katkı payını ödemekte geciken üye, gecikmiş ödemeleri ne kadara ulaşınca Genel Kurulda oy kullanamaz?",
+      "back": "Gecikmiş ödemelerinin tutarı, geçen tam iki yılın katkı payına eşit ya da bundan fazla olunca.",
+      "explanation": "Oy hakkının yitirilmesi için eşitlik yeterlidir; borcun bu tutarı aşması gerekmez.",
+      "articleRefs": [
+        "19"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "BM Genel Kurulu, katkı payı borcu nedeniyle oy kullanamayan bir üyenin oy kullanmasına hangi durumda izin verebilir?",
+      "back": "Gecikmenin, üyenin iradesi dışındaki durumlardan kaynaklandığını görürse.",
+      "explanation": "İzni veren organ Genel Kuruldur ve izin vermek onun takdirindedir.",
+      "articleRefs": [
+        "19"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Birleşmiş Milletler Genel Kurulu yılda kaç olağan toplantı yapar?",
+      "back": "Yılda bir olağan toplantı yapar; durum gerektirdiğinde olağanüstü toplantılar da yapar.",
+      "articleRefs": [
+        "20"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Birleşmiş Milletler Genel Kurulunun olağanüstü toplantıları kimin çağrısıyla yapılır?",
+      "back": "Genel Sekreterin çağrısıyla; çağrı, Güvenlik Konseyinin ya da Birleşmiş Milletler üyelerinin çoğunluğunun isteği üzerine yapılır.",
+      "explanation": "Olağanüstü toplantı, durum gerektirdiğinde yapılır.",
+      "articleRefs": [
+        "20"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "BM Şartı'na göre Genel Kurul, herkesin insan haklarından ve temel özgürlüklerden yararlanmasını kolaylaştırmak için hangi yetkileri kullanır?",
+      "back": "İncelemeler başlatır ve tavsiyelerde bulunur.",
+      "explanation": "Bu yetki ırk, cinsiyet, dil veya din farkı gözetilmeksizin herkesi kapsar. Genel Kurul aynı yolla ekonomik ve sosyal alanlar ile kültür, eğitim ve sağlık alanlarında uluslararası işbirliğini geliştirmeye de çalışır.",
+      "articleRefs": [
+        "13"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "BM Şartı'na göre Birleşmiş Milletlerin uluslar arasında geliştirmeyi amaçladığı dostça ilişkiler, hangi ilkelere saygı üzerine kurulur?",
+      "back": "Ulusların hak eşitliği ilkesine ve kendi kaderlerini kendilerinin belirlemesi hakkına saygı üzerine.",
+      "explanation": "Aynı amaç bendinde dünya barışını güçlendirmeye elverişli başka her türlü önlemi almak da yer alır.",
+      "articleRefs": [
+        "1"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "BM Şartı'na göre Birleşmiş Milletlerin başlıca ve yardımcı organlarındaki görevlere seçilebilme bakımından kadınlar ve erkekler için hangi kural geçerlidir?",
+      "back": "Erkekler ve kadınlar bütün görevlere eşit koşullarla seçilebilir; Örgüt buna hiçbir kısıtlama koymaz.",
+      "articleRefs": [
+        "8"
+      ]
+    }
+  ]
+}

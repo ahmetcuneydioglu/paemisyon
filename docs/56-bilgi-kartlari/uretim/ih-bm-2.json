@@ -1,0 +1,150 @@
+{
+  "deck": {
+    "topicId": "b30fbcee-b5ea-4b73-a91a-6ca681a46b0b",
+    "legislationSlug": "bm-andlasmasi",
+    "sourceLabel": "AI bilgi kartı — Birleşmiş Milletler Andlaşması md 24–26, 28–54",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: resmî madde metni + çıkmış sorular)"
+  },
+  "cards": [
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Birleşmiş Milletler Şartı'na göre üyeler, uluslararası barış ve güvenliğin korunmasında başlıca sorumluluğu hangi organa verir?",
+      "back": "Güvenlik Konseyine. Üyeler, Konseyin bu sorumluluktan doğan görevleri yerine getirirken kendi adlarına hareket ettiğini kabul eder.",
+      "explanation": "Konsey bu görevleri yaparken Birleşmiş Milletlerin amaç ve ilkelerine uygun davranır; Genel Kurula yıllık raporlar, gerektiğinde de özel raporlar sunar.",
+      "articleRefs": [
+        "24"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Birleşmiş Milletler Şartı'na göre üye devletler, Güvenlik Konseyi kararları bakımından hangi yükümlülüğü üstlenmiştir?",
+      "back": "Bu kararları kabul etmeyi ve uygulamayı.",
+      "articleRefs": [
+        "25"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Güvenlik Konseyi üyesi olmayan bir Birleşmiş Milletler üyesi, Konseyin onun çıkarlarını özellikle etkilediğini değerlendirdiği bir sorunun görüşülmesinde oy kullanabilir mi?",
+      "back": "Hayır. Görüşmeye katılabilir, ama oy hakkı yoktur.",
+      "explanation": "Katılım için sorunun Güvenlik Konseyine sunulmuş olması ve Konseyin, bu üyenin çıkarlarının özellikle etkilendiği kanısına varması gerekir.",
+      "articleRefs": [
+        "31"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Birleşmiş Milletler Şartı'na göre, sürmesi uluslararası barış ve güvenliği tehdit edebilecek bir uyuşmazlığın tarafları çözümü öncelikle hangi yollarla aramalıdır?",
+      "back": "Görüşme, soruşturma, arabuluculuk, uzlaşma, tahkim ve yargı yoluyla; bölgesel kuruluş veya anlaşmalara başvurarak ya da kendi seçecekleri başka barışçı yollarla.",
+      "explanation": "Güvenlik Konseyi gerekli görürse tarafları, uyuşmazlığı bu yollarla çözmeye çağırır.",
+      "articleRefs": [
+        "33"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "BM Şartı'na göre Güvenlik Konseyi, bir uyuşmazlığın çözümü için tavsiyede bulunurken hukuki nitelikteki uyuşmazlıkların kural olarak taraflarca nereye götürülmesi gerektiğini göz önünde tutar?",
+      "back": "Uluslararası Adalet Divanına; Divan Statüsü hükümlerine göre.",
+      "explanation": "Konsey, uyuşmazlığın her aşamasında uygun çözüm usul veya yöntemlerini tavsiye edebilir; tarafların önceden kabul ettiği usulleri de göz önünde tutar.",
+      "articleRefs": [
+        "36"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Birleşmiş Milletler Şartı'na göre barışın tehdit edildiğini, bozulduğunu veya bir saldırı eyleminin gerçekleştiğini hangi organ saptar?",
+      "back": "Güvenlik Konseyi. Ardından ya tavsiyede bulunur ya da hangi önlemlerin alınacağına karar verir.",
+      "articleRefs": [
+        "39"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "BM Şartı'na göre Güvenlik Konseyi, tavsiyede bulunmadan ya da önlem kararlaştırmadan önce durumun ağırlaşmasını önlemek için tarafları neye çağırabilir?",
+      "back": "Gerekli ya da yerinde gördüğü geçici önlemlere uymaya.",
+      "explanation": "Geçici önlemler tarafların haklarını, iddialarını veya durumlarını hiçbir biçimde zedelemez; uyulmazsa Konsey bunu gereğince dikkate alır.",
+      "articleRefs": [
+        "40"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Birleşmiş Milletler Güvenlik Konseyinin, kararlarını uygulatmak için başvurabileceği, silahlı kuvvet kullanımını gerektirmeyen önlemler arasında neler sayılır?",
+      "back": "Ekonomik ilişkilerin ve demiryolu, deniz, hava, posta, telgraf, radyo ve diğer ulaştırma araçlarının tamamen veya kısmen kesilmesi ile siyasi ilişkilerin kesilmesi.",
+      "explanation": "Konsey bu önlemleri belirler ve Birleşmiş Milletler üyelerini bunları uygulamaya çağırabilir.",
+      "articleRefs": [
+        "41"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Birleşmiş Milletler Güvenlik Konseyi, hava, deniz veya kara kuvvetleriyle harekete hangi durumda geçebilir?",
+      "back": "Silahlı kuvvet kullanımını gerektirmeyen önlemlerin uygun olmayacağı ya da uygun olmadığının anlaşıldığı sonucuna varırsa.",
+      "explanation": "Bu harekete gösteriler, abluka önlemleri ve Birleşmiş Milletler üyelerinin hava, deniz veya kara kuvvetlerince yapılacak başka hareketler girebilir.",
+      "articleRefs": [
+        "42",
+        "41"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Birleşmiş Milletler Şartı'na göre silahlı saldırıya uğrayan bir üye devlet, meşru müdafaa hakkını ne zamana kadar kullanabilir?",
+      "back": "Güvenlik Konseyi uluslararası barış ve güvenliğin korunması için gerekli önlemleri alıncaya kadar. Bu doğal hak bireysel ya da ortak olarak kullanılabilir.",
+      "explanation": "Bu hakkı kullanan üyelerin aldığı önlemler derhal Güvenlik Konseyine bildirilir; bu önlemler Konseyin her an harekete geçme yetki ve görevini hiçbir biçimde etkilemez.",
+      "articleRefs": [
+        "51"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "BM Şartı, uluslararası barış ve güvenliğin korunmasıyla ilgili bölgesel anlaşma ve kuruluşların varlığına hangi şartla engel olmaz?",
+      "back": "Bu anlaşma ve kuruluşların ve faaliyetlerinin Birleşmiş Milletlerin amaç ve ilkeleriyle bağdaşması şartıyla.",
+      "explanation": "Bu anlaşmaları yapan ya da kuruluşları kuran üyeler, yerel nitelikteki uyuşmazlıkları Güvenlik Konseyine götürmeden önce bu anlaşma veya kuruluşlar aracılığıyla barışçı yoldan çözmek için bütün çabayı göstermelidir.",
+      "articleRefs": [
+        "52"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Birleşmiş Milletler Şartı'na göre bölgesel kuruluşlar, Güvenlik Konseyinin izni olmadan zorlayıcı eyleme girişebilir mi?",
+      "back": "Hayır. Güvenlik Konseyinin izni olmadan bölgesel anlaşmalar uyarınca ya da bölgesel kuruluşlarca zorlayıcı eyleme girişilemez.",
+      "explanation": "Güvenlik Konseyi gerektiğinde, kendi yetkisi altında alınan zorlayıcı önlemlerin uygulanması için bölgesel anlaşma ve kuruluşlardan yararlanır.",
+      "articleRefs": [
+        "53"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "BM Şartı'na göre, barışı tehdit edebilecek bir uyuşmazlığın tarafları onu görüşme, arabuluculuk, tahkim gibi barışçı yollarla çözemezse ne yapar?",
+      "back": "Uyuşmazlığı Güvenlik Konseyine sunar.",
+      "explanation": "Konsey, uyuşmazlığın sürmesinin uluslararası barış ve güvenliği gerçekten tehdit eder göründüğü sonucuna varırsa, uygun çözüm usullerini mi yoksa uygun gördüğü başka çözüm biçimlerini mi tavsiye edeceğine karar verir.",
+      "articleRefs": [
+        "37"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "BM Şartı'na göre Güvenlik Konseyi, bir uyuşmazlık ya da uyuşmazlık doğurabilecek bir durum hakkında hangi amaçla soruşturma yapabilir?",
+      "back": "Uyuşmazlığın ya da durumun sürmesinin uluslararası barış ve güvenliğin korunmasını tehdit edecek nitelikte olup olmadığını saptamak için.",
+      "articleRefs": [
+        "34"
+      ]
+    }
+  ]
+}

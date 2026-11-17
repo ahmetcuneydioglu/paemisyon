@@ -115,3 +115,44 @@ Bunlar konu özeti/ders tarafında ya da onaylanacak ayrı bir dayanakla karşı
 - İHEB'in 1949 baskısı bugün bilinen metinden kısa yerler içerir (Önsöz'de bir gerekçe paragrafı, md 16/1'in ikinci
   cümlesi, md 8'de "yetkili"); döküm baskıya sadıktır, bu yerlere dayanan kart yoktur.
 - Eklenen kartlar (hakemin eklediği 12 kart) yalnız mekanik kapıdan ve hakemden geçti, iki denetçiden geçmedi.
+
+## 7. Yayın (17 Kas 2026, kullanıcı kararı)
+
+- Beş belge yayımlandı (`mevzuat-yayinla.ts`: iheb, eskhus, mshus, bm-iskenceye-karsi-sozlesme,
+  avrupa-konseyi-statusu; 194 kayıt) ve 167 kart toplu yayınlandı (`kart-toplu-yayin.ts`: kapıdan 167/167). Prod'da
+  toplam 7.464 kart yayında, incelemede 0.
+- **BM Andlaşması bankaya alındı, TASLAK** (`bm-andlasmasi`, Başlangıç + 111 madde). Md 105/1'in okunamayan son
+  sözcüğü tahminle doldurulmadı; metinde "fayda… [sözcüğün devamı Resmî Gazete nüshasında okunamıyor]" olarak durur.
+  Künye, metnin 1945 hâli olduğunu, 23/27/61/109. maddelerdeki sayıların sonradan değiştiğini ve "süreli/süresiz"
+  terimini belirtir. Yayımlanmadı, kart üretilmedi.
+- İl ve İlçe İnsan Hakları Kurulları yönetmeliği alınmayacak (kullanıcı kararı).
+
+## 8. BM Andlaşması: yayın ve kartlar (17 Kas 2026, kullanıcı kararı)
+
+Kullanıcı "yayınla ve üret" dedi. Belge yayımlandı (112 kayıt). Kartlar yalnız değişmeyen maddelerden üretildi; girdiye
+ALINMAYANLAR: md 23, 27, 61, 108, 109 (üye sayıları ve oy çoklukları sonradan değişti), md 105 (okunamayan sözcük),
+md 73–91 (özerk olmayan ülkeler ve vesayet), md 106–107, 110–111.
+
+| Deste | Kapsam | Üretim | Son |
+| --- | --- | --- | --- |
+| ih-bm-1 | Başlangıç, md 1–22 (amaç, ilke, üyelik, organlar, Genel Kurul) | 24 | 22 |
+| ih-bm-2 | md 24–26, 28–54 (Güvenlik Konseyi, barışçı çözüm, zorlama önlemleri, bölgesel anlaşmalar) | 21 | 14 |
+| ih-bm-3 | md 55–60, 62–72, 92–104 (ekonomik ve sosyal işbirliği, Divan, Sekretarya) | 18 | 16 |
+
+52 kart yayında (toplu yayın kapısından 52/52). İnsan Hakları turunun toplamı: altı belge, on iki deste, 219 kart.
+
+- **Terim eşlemesi:** Birleşmiş Milletler Şartı / BM Şartı (metinde Andlaşma), Güvenlik Konseyi (Güvenlik Meclisi),
+  Ekonomik ve Sosyal Konsey, Vesayet Konseyi, Uluslararası Adalet Divanı (Milletlerarası Adalet Divanı), Sekretarya,
+  uzman kuruluşlar (ihtisas müesseseleri), daimî/geçici üye (metinde süreli/süresiz). Banka belgeyi "Birleşmiş
+  Milletler Antlaşması" adıyla da soruyor.
+- **Denetimde eskimiş sayı ya da ters terim karta sızmadı** (altı denetçi). Uygulamada işlememiş hükümlere dayanan
+  kartlar çıkarıldı: özel anlaşmalar ve hazır hava birlikleri (md 43–45), Askerî Kurmay Komitesi (md 47), silahlanma
+  planları (md 26), "düşman devlet" istisnası (md 53), vesayet anlaşmaları (md 16).
+- **Kaynak eksiği (en önemlisi):** Güvenlik Konseyi'nin üye sayısı, beş daimî üye, veto ve geçici üyelerin süresi
+  kartsız kaldı; bankada Konsey hakkında sorulanların çoğu budur. Şart'ın değişiklik işlenmiş güncel resmî metni ya
+  da ayrı bir dayanak gerekir. Divan'ın merkezi, yargıç sayısı ve seçimi (Divan Statüsü; dökülmedi), Genel
+  Sekreter'in görev süresi, uzman kuruluş adları da metinde yok.
+- Altı ana organı sayan kart Vesayet Konseyi'ni de sayar (metne sadık); Konsey'in 1994'ten beri çalışmadığı karta
+  yazılmadı.
+- Hakemlerin eklediği ya da yeniden kurduğu 8 kart iki denetçiden geçmedi (mekanik kapı + hakem).
+

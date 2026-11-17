@@ -1,0 +1,171 @@
+{
+  "deck": {
+    "topicId": "b30fbcee-b5ea-4b73-a91a-6ca681a46b0b",
+    "legislationSlug": "bm-andlasmasi",
+    "sourceLabel": "AI bilgi kartı — Birleşmiş Milletler Andlaşması md 55–60, 62–72, 92–104",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: resmî madde metni + çıkmış sorular)"
+  },
+  "cards": [
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "BM Şartı'na göre Birleşmiş Milletler, hangi farklar gözetilmeksizin herkesin insan haklarına ve temel özgürlüklerine saygı gösterilmesini kolaylaştırır?",
+      "back": "Irk, cinsiyet, dil veya din farkı gözetilmeksizin; bu saygının bütün dünyada fiilen gösterilmesini kolaylaştırır.",
+      "explanation": "Amaç, milletler arasında hak eşitliğine ve her milletin kendi kaderini belirleme hakkına saygıya dayanan barış ve dostluk ilişkileri için gereken istikrar ve refah koşullarını yaratmaktır. Aynı maddede yaşam düzeylerinin yükseltilmesi ve tam istihdam da kolaylaştırılacak hususlar arasındadır.",
+      "articleRefs": [
+        "55"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "BM Şartı'nda «uzman kuruluşlar» diye anılan kuruluşlar hangileridir?",
+      "back": "Hükümetler arası anlaşmalarla kurulan; ekonomik, sosyal, kültür, eğitim, sağlık ve bunlara bağlı alanlarda geniş uluslararası yetkileri bulunan ve Birleşmiş Milletlere bağlanan kuruluşlardır.",
+      "explanation": "Bir uzman kuruluşun Birleşmiş Milletlere hangi şartlarla bağlanacağını, Ekonomik ve Sosyal Konseyin o kuruluşla yaptığı anlaşma belirler; bu anlaşma Genel Kurulun onayına sunulur.",
+      "articleRefs": [
+        "57",
+        "63"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "BM Şartı'na göre; ekonomik, sosyal, kültür, eğitim ve sağlık alanlarında inceleme yapan ve herkesin insan haklarına ve temel özgürlüklerine saygı gösterilmesini sağlamak için tavsiyede bulunabilen organ hangisidir?",
+      "back": "Ekonomik ve Sosyal Konsey.",
+      "explanation": "Konsey ayrıca Genel Kurula sunulmak üzere anlaşma tasarıları hazırlayabilir ve yetkisine giren konularda uluslararası konferanslar toplayabilir.",
+      "articleRefs": [
+        "62"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "BM Şartı'na göre Ekonomik ve Sosyal Konsey kararlarını hangi çoğunlukla alır?",
+      "back": "Hazır bulunan ve oy veren üyelerin çoğunluğuyla.",
+      "articleRefs": [
+        "67"
+      ],
+      "explanation": "Konseyin her üyesinin bir oyu vardır."
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "BM Şartı'na göre Ekonomik ve Sosyal Konsey hangi konularda komisyon kurabilir?",
+      "back": "Ekonomik ve sosyal konularda ve insan haklarının geliştirilmesi için; ayrıca görevlerini yerine getirmesine yarayacak başka komisyonları da kurabilir.",
+      "articleRefs": [
+        "68"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "BM Şartı'na göre Birleşmiş Milletlerin başlıca yargı organı hangisidir?",
+      "back": "Uluslararası Adalet Divanı; Şart'ın ayrılmaz parçası olan ekli Statüsüne göre çalışır.",
+      "explanation": "Divanın Statüsü, Uluslararası Daimî Adalet Divanının Statüsü esasına dayanır.",
+      "articleRefs": [
+        "92"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "BM Şartı'na göre Birleşmiş Milletler üyesi bir devlet, Uluslararası Adalet Divanı Statüsüne nasıl taraf olur?",
+      "back": "Kendiliğinden; bütün Birleşmiş Milletler üyeleri, üye olmakla Divan Statüsüne taraftır.",
+      "articleRefs": [
+        "93"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "BM Şartı'na göre, Birleşmiş Milletler üyesi olmayan bir devletin Uluslararası Adalet Divanı Statüsüne taraf olma şartlarını Güvenlik Konseyi mi belirler?",
+      "back": "Hayır. Bu şartları, her olayda Güvenlik Konseyinin tavsiyesi üzerine Genel Kurul belirler.",
+      "explanation": "Güvenlik Konseyi yalnız tavsiyede bulunur; şartlar her devlet için ayrı ayrı belirlenir.",
+      "articleRefs": [
+        "93"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "BM Şartı'na göre bir devlet, Uluslararası Adalet Divanının kararından doğan yükümlülüklerini yerine getirmezse karşı taraf Birleşmiş Milletlerin hangi organına başvurabilir?",
+      "back": "Güvenlik Konseyine. Konsey gerekli görürse kararın yerine getirilmesi için tavsiyede bulunabilir veya alınacak önlemleri kararlaştırabilir.",
+      "explanation": "Birleşmiş Milletlerin her üyesi, taraf olduğu bütün uyuşmazlıklarda Divanın kararına uymayı taahhüt eder.",
+      "articleRefs": [
+        "94"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "BM Şartı'na göre Birleşmiş Milletlerin uzman kuruluşları, Uluslararası Adalet Divanından her hukuki konuda danışma görüşü isteyebilir mi?",
+      "back": "Hayır. Ancak Genel Kurul yetki verirse ve yalnız kendi çalışma alanlarında karşılaştıkları hukuki konularda isteyebilirler.",
+      "explanation": "Her hukuki konuda danışma görüşü isteyebilenler Genel Kurul ile Güvenlik Konseyidir. Birleşmiş Milletlerin öteki organları da uzman kuruluşlarla aynı şarta bağlıdır: Genel Kurulun yetki vermesi ve kendi çalışma alanı.",
+      "articleRefs": [
+        "96"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "BM Şartı'na göre Birleşmiş Milletlerin en yüksek memuru kimdir?",
+      "back": "Genel Sekreter.",
+      "explanation": "Sekretarya, bir Genel Sekreter ile Birleşmiş Milletlerin ihtiyaç duyduğu memurlardan oluşur.",
+      "articleRefs": [
+        "97"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "BM Şartı'na göre BM Genel Sekreterini Güvenlik Konseyi mi atar?",
+      "back": "Hayır. Genel Sekreter, Güvenlik Konseyinin tavsiyesi üzerine Genel Kurul tarafından atanır.",
+      "explanation": "Güvenlik Konseyinin rolü tavsiyeyle sınırlıdır; atamayı Genel Kurul yapar.",
+      "articleRefs": [
+        "97"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "BM Genel Sekreteri ve Sekretarya memurları görevlerinden dolayı kime karşı sorumludur?",
+      "back": "Yalnız Birleşmiş Milletlere karşı; hiçbir hükümetten veya örgüt dışındaki bir makamdan talimat istemez ve kabul etmezler.",
+      "explanation": "Her üye devlet de Genel Sekreterin ve memurların görevlerinin uluslararası niteliğine saygı göstermeyi ve onları etkilemeye çalışmamayı taahhüt eder.",
+      "articleRefs": [
+        "100"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "BM Şartı'na göre BM Genel Sekreteri, uluslararası barış ve güvenliğin korunmasını tehlikeye sokabileceğini düşündüğü bir konuya hangi organın dikkatini çekebilir?",
+      "back": "Güvenlik Konseyinin dikkatini çekebilir; neyin tehlike oluşturabileceğini Genel Sekreter kendi görüşüne göre değerlendirir.",
+      "articleRefs": [
+        "99"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "BM Şartı'na göre, Birleşmiş Milletler Sekretaryasına tescil ettirilmemiş bir uluslararası antlaşmayı tarafları Birleşmiş Milletlerin bir organı önünde ileri sürebilir mi?",
+      "back": "Hayır. Tescil edilmemiş antlaşmayı taraflardan hiçbiri Birleşmiş Milletlerin bir organı önünde ileri süremez.",
+      "explanation": "Şart yürürlüğe girdikten sonra bir üye devletin yaptığı her uluslararası antlaşma, mümkün olan en kısa zamanda Sekretaryaya tescil ettirilir ve Sekretarya tarafından yayımlanır.",
+      "articleRefs": [
+        "102"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Üye devletlerin BM Şartı'ndan doğan yükümlülükleri ile başka bir uluslararası antlaşmadan doğan yükümlülükleri çatışırsa hangisi üstün gelir?",
+      "back": "BM Şartı'ndan doğan yükümlülükler üstün gelir.",
+      "articleRefs": [
+        "103"
+      ]
+    }
+  ]
+}
