@@ -1,0 +1,537 @@
+{
+  "unit": {
+    "slug": "dmk-siniflar-memurluga-alinma-ve-atama",
+    "legislationSlug": "657-sayili-devlet-memurlari-kanunu",
+    "topicId": "8b68257c-bd1e-4a44-bb49-830ee4d8e4c9",
+    "title": "Sınıflar, memurluğa alınma, adaylık ve atama",
+    "subtitle": "Hizmet sınıfları, giriş dereceleri, memurluk şartları, aday memurluk, istisnai memurluk ve göreve başlama süreleri",
+    "articleFrom": "36",
+    "articleTo": "63",
+    "readingMinutes": 13,
+    "sourceLabel": "AI özeti — 657 Sayılı Devlet Memurları Kanunu, md 36, 40, 41, 47, 48, 54, 56, 58, 59, 61–63",
+    "articleNos": [
+      "36",
+      "40",
+      "41",
+      "47",
+      "48",
+      "54",
+      "56",
+      "58",
+      "59",
+      "61",
+      "62",
+      "63"
+    ],
+    "generatedBy": "claude-opus-5-5 (ozet-uret.ts)",
+    "sortOrder": 2
+  },
+  "blocks": [
+    {
+      "type": "concept",
+      "title": "Her memurun bir sınıfı var",
+      "body": "Kanun, memurları yaptıkları işin niteliğine göre sınıflara ayırır. Yönetim ve büro işi gören Genel İdare'den öğretmenlerin Eğitim ve Öğretim sınıfına, polisin Emniyet Hizmetleri'ne kadar toplam on iki sınıf var. Sınıf önemlidir, çünkü memuriyete hangi derece ve kademeden gireceğin, nereye kadar yükselebileceğin ve önceki çalışmalarının nasıl sayılacağı büyük ölçüde sınıfına ve öğrenimine bağlıdır. Genel İdare Hizmetleri sınıfı 'kalan' sınıftır: yönetim, icra, büro ve benzeri hizmetleri gören ve diğer sınıflara girmeyen memurlar buraya düşer.",
+      "articleRefs": [
+        "36"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Memur sınıfları listesi",
+      "body": "**Kanunda sayılan hizmet sınıfları:**\n- I. Genel İdare Hizmetleri\n- II. Teknik Hizmetler\n- III. Sağlık Hizmetleri ve Yardımcı Sağlık Hizmetleri\n- IV. Eğitim ve Öğretim Hizmetleri\n- V. Avukatlık Hizmetleri\n- VI. Din Hizmetleri\n- VII. Emniyet Hizmetleri\n- VIII. Jandarma Hizmetleri\n- IX. Sahil Güvenlik Hizmetleri\n- X. Yardımcı Hizmetler\n- XI. Mülki İdare Amirliği Hizmetleri\n- XII. Milli İstihbarat Hizmetleri\n\n**Avukatlık Hizmetleri:** avukatlık ruhsatına sahip, baroya kayıtlı ve kurumunu yargı mercilerinde temsil yetkisini haiz memurlar.\n**Mülki İdare Amirliği Hizmetleri:** valiler ve kaymakamlar, bu sıfatları kazanıp İçişleri Bakanlığı merkez ve iller kuruluşunda çalışanlar ile maiyet memurları.",
+      "articleRefs": [
+        "36"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Sınıf mı, değil mi?",
+      "body": "Soru kökü 'hangisi memur sınıflarından değildir?' diye geliyorsa kulağa resmî gelen ama listede olmayan bir ad arıyorsun. **Adalet hizmetleri**, **Hukuk hizmetleri** ya da **Özel güvenlik hizmetleri** diye bir sınıf yok. Hukukla ilgili tek sınıf **Avukatlık Hizmetleri**. Mülki idare amirliği, din, sahil güvenlik ve milli istihbarat ise gerçek sınıflardır.\n\nİkinci klasik tuzak şu: **kimyager** Teknik Hizmetler sınıfındadır. Fizikçi, matematikçi, jeolog ve istatistikçi de bu sınıftadır. Buna karşılık **biyolog, fizikoterapist, tıp teknoloğu, psikolog ve sosyal hizmetler mütehassısı** Sağlık Hizmetleri ve Yardımcı Sağlık Hizmetleri sınıfındadır. Biyoloğu 'bilim insanı' diye teknik sınıfa koyma.",
+      "articleRefs": [
+        "36"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Emniyet, Jandarma ve Sahil Güvenlik sınıfları",
+      "body": "**Emniyet Hizmetleri sınıfı:** Özel kanunlarına göre görev yapan çarşı ve mahalle bekçisi, polis, komiser muavini, komiser, başkomiser, emniyet müfettişi, polis müfettişi, emniyet amiri ve emniyet müdürü ile emniyet müdürü sıfatını kazanmış emniyet mensubu memurlar.\n\n**Jandarma Hizmetleri sınıfı:** Jandarma Genel Komutanlığı kadrolarında bulunan subay, astsubay, uzman jandarma ile çarşı ve mahalle bekçileri.\n\n**Sahil Güvenlik Hizmetleri sınıfı:** Sahil Güvenlik Komutanlığı kadrolarında bulunan subay ve astsubaylar.\n\n**Dikkat:** Çarşı ve mahalle bekçisi hem Emniyet hem Jandarma sınıfının tanımında geçer. Sahil Güvenlik sınıfının tanımında ise yalnız subay ve astsubay geçer.",
+      "articleRefs": [
+        "36"
+      ]
+    },
+    {
+      "type": "numbers",
+      "title": "Öğrenime göre giriş ve yükselinebilecek derece/kademe",
+      "rows": [
+        {
+          "label": "İlkokulu bitirenler",
+          "value": "Giriş 15/1 · Üst sınır 7/Son",
+          "refs": [
+            "36"
+          ]
+        },
+        {
+          "label": "Ortaokulu bitirenler",
+          "value": "Giriş 14/2 · Üst sınır 5/Son",
+          "refs": [
+            "36"
+          ]
+        },
+        {
+          "label": "Ortaokul dengi mesleki veya teknik öğrenim",
+          "value": "Giriş 14/3 · Üst sınır 5/Son",
+          "refs": [
+            "36"
+          ]
+        },
+        {
+          "label": "Ortaokul üstü 1 yıl mesleki veya teknik öğrenim",
+          "value": "Giriş 13/1 · Üst sınır 4/Son",
+          "refs": [
+            "36"
+          ]
+        },
+        {
+          "label": "Ortaokul üstü 2 yıl mesleki veya teknik öğrenim",
+          "value": "Giriş 13/2 · Üst sınır 4/Son",
+          "refs": [
+            "36"
+          ]
+        },
+        {
+          "label": "Liseyi bitirenler",
+          "value": "Giriş 13/3 · Üst sınır 3/Son",
+          "refs": [
+            "36"
+          ]
+        },
+        {
+          "label": "Lise dengi mesleki veya teknik öğrenim",
+          "value": "Giriş 12/2 · Üst sınır 3/Son",
+          "refs": [
+            "36"
+          ]
+        },
+        {
+          "label": "Lise veya dengi üstü 1 yıllık mesleki veya teknik öğrenim",
+          "value": "Giriş 11/1 · Üst sınır 2/Son",
+          "refs": [
+            "36"
+          ]
+        },
+        {
+          "label": "Lise veya dengi üstü 2 yıl ya da ortaokul üstü en az 5 yıllık mesleki veya teknik öğrenim",
+          "value": "Giriş 10/1 · Üst sınır 2/Son",
+          "refs": [
+            "36"
+          ]
+        },
+        {
+          "label": "Lise veya dengi üstü 3 yıl teknik veya mesleki öğrenim",
+          "value": "Giriş 10/2 · Üst sınır 2/Son",
+          "refs": [
+            "36"
+          ]
+        },
+        {
+          "label": "2 yıl süreli yüksek öğrenim",
+          "value": "Giriş 10/2 · Üst sınır 1/Son",
+          "refs": [
+            "36"
+          ]
+        },
+        {
+          "label": "3 yıl süreli yüksek öğrenim",
+          "value": "Giriş 10/3 · Üst sınır 1/Son",
+          "refs": [
+            "36"
+          ]
+        },
+        {
+          "label": "4 yıl süreli yüksek öğrenim",
+          "value": "Giriş 9/1 · Üst sınır 1/Son",
+          "refs": [
+            "36"
+          ]
+        },
+        {
+          "label": "5 yıl süreli yüksek öğrenim",
+          "value": "Giriş 9/2 · Üst sınır 1/Son",
+          "refs": [
+            "36"
+          ]
+        },
+        {
+          "label": "6 yıl süreli yüksek öğrenim",
+          "value": "Giriş 9/3 · Üst sınır 1/Son",
+          "refs": [
+            "36"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "36"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Giriş tablosunda kaydırma tuzağı",
+      "body": "Tablo sorularında üç tuzak sık döner:\n- **İlkokul** mezununun girişi 15/1, üst sınırı 7. derecedir. 14, ortaokulun giriş derecesidir. İlkokul satırını ortaokul satırıyla karıştırma.\n- **Lise üstü 1 yıllık** mesleki veya teknik öğrenim 11/1'den başlar. 10/1 bir alt satırın, yani lise üstü 2 yılın değeridir.\n- **Yüksek öğrenimde** 2 yıl 10/2, 3 yıl 10/3'tür. 4 yıldan itibaren 9. dereceye geçilir: 9/1, 9/2, 9/3. Bütün yüksek öğrenim satırlarında üst sınır 1. derecedir.",
+      "articleRefs": [
+        "36"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Emniyet Hizmetleri sınıfına özel derece kuralları",
+      "body": "**Girişte ilave:**\n- İlkokul, ortaokul ve dengi okulları bitirenler: ilkokul ve ortaokul giriş derecelerine **iki derece** eklenir.\n- Lise ve dengi okulları bitirenler: lise giriş derece ve kademesine **bir derece bir kademe** eklenir.\n- Yüksek öğrenimi bitirenler: aynı yüksek öğrenimin giriş derece ve kademesine **bir derece** eklenir.\n\n**Yükselinebilecek derece:**\n- Emniyet müdürleri, başkomiser ve emniyet amirleri dışında kalanlar: **3. derecenin son kademesi**\n- Başkomiser ve emniyet amirleri: **2. derecenin son kademesi**\n- Yukarıda sayılanlardan yükseköğrenimli olanlar: **1. derecenin son kademesi**\n- Emniyet müdürleri ve bu sıfatı taşıyan emniyet teşkilatı mensupları: **1. derecenin son kademesi**",
+      "articleRefs": [
+        "36"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Memuriyet öncesi hizmetlerin değerlendirilmesi",
+      "body": "Bazı hizmet süreleri belirli oranda memuriyette geçmiş sayılır. Değerlendirilen sürenin **her yılı bir kademe**, **her üç yılı bir derece** verir.\n- **Avukatlık** sınıfına girenlerin avukatlıkla geçirdiği süre: **3/4**\n- Basın kartıyla **gazetecilik** yapmış olanlar (meslekle ilgili görevde istihdam şartıyla): **3/4**\n- **Teknik** ve **sağlık** sınıfları: bu Kanun ve 87. maddedeki kurumlarda geçen sürenin tamamı ile geri kalan sürenin 3/4'ü toplanır. Sağlıkta, mahrumiyet bölgelerinde en az 3 yıl çalışanların veya çalışacak olanların süreleri de tam sayılır.\n- **Özel okulda** öğretmenlik veya yöneticilik yaptıktan sonra Milli Eğitim Bakanlığında memuriyet kabul edenler: **2/3**\n- Sözleşmeli olarak geçen süreler, memuriyete geçirilince her yıl bir kademe ve her üç yıl bir derece olarak sayılır.\n\n**Sınırlar:** Yalnız özel sektörde geçen süre **12 yılı** geçemez. İntibak sonucu girilen derece, öğrenime göre yükselinebilecek derecenin son kademe aylığını geçemez.\n\n**Avukatlık stajı:** Stajını açıkta yapana iki, memuriyette yapana bir kademe ilerlemesi uygulanır.",
+      "articleRefs": [
+        "36"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Yaş ve öğrenim şartı",
+      "body": "**Yaş:** Genel olarak **18 yaşını** tamamlayanlar Devlet memuru olabilir.\n**İstisna:** Bir meslek veya sanat okulunu bitirenler, iki şartla Devlet memurluklarına atanabilir:\n- en az **15 yaşını** doldurmuş olmak,\n- Türk Medeni Kanununun 12. maddesine göre **kazai rüşt kararı** almak.\n\n**Öğrenim:** Genel olarak **ortaokulu** bitirenler memur olabilir. Ortaokul mezunlarından istekli bulunmazsa **ilkokulu** bitirenlerin alınması da caizdir.\n\nBelli görevlere atanmak veya belli derecelere yükselmek için ek şartlar konulabilir. Bu şartlar daha yüksek öğrenim, belirli fakülte, okul veya öğrenim dalı, meslek içi eğitim programı ya da yabancı dil bilmek olabilir. Dayanakları kuruluş kanunları veya bu Kanun, Cumhurbaşkanlığı kararnameleri ve kuruluş kanunlarına dayanılarak çıkarılacak yönetmeliklerdir.",
+      "articleRefs": [
+        "40",
+        "41"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Boş kadroların ilanı",
+      "body": "**Kim duyurur:** Devlet Personel Başkanlığı.\n**Ne zaman:** Başvurma süresinin bitiminden **en az 15 gün önce**.\n**Neyi duyurur:**\n- boş kadroların sınıf ve dereceleri, bulundukları kurum ve yerler,\n- alınacak personel sayısı, genel ve özel şartlar,\n- en son başvurma tarihi ve başvurulacak merciler,\n- sınav yerleri ve zamanları, gerek görülen diğer bilgiler.\n\n**Nerede duyurur:** Resmi Gazete, internet haber sitesi, radyo, televizyon, ülke çapında tirajı yüksek gazeteler ve Basın İlân Kurumu İlan Portalından **asgari biri** ile uygun görülecek diğer araçlar.\n\n**Sınavsız atama:** Kadro adedinden fazla istekli varsa açılacak sınavın gün ve yeri aynı şartlarla ayrıca duyurulur.\n\n**Dikkat:** Süre, başvurunun *bitiminden* geriye doğru sayılır. Şıklardaki 30, 20 ya da 10 gün yanlıştır.",
+      "articleRefs": [
+        "47"
+      ],
+      "counterNumbers": [
+        30,
+        20,
+        10
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Memurluğa alınmada genel ve özel şartlar",
+      "body": "**A) Genel şartlar:**\n1. Türk vatandaşı olmak\n2. 40. maddedeki yaş şartlarını taşımak\n3. 41. maddedeki öğrenim şartlarını taşımak\n4. Kamu haklarından mahrum bulunmamak\n5. Sayılan mahkûmiyetlerden biri bulunmamak\n6. Askerlik durumu bakımından şu hâllerden birinde olmak:\n   - askerlikle ilgisi bulunmamak,\n   - askerlik çağına gelmemiş olmak,\n   - çağına gelmişse muvazzaf askerliğini yapmış, ertelenmiş veya yedek sınıfa geçirilmiş olmak.\n7. Görevini devamlı yapmasına engel olabilecek akıl hastalığı bulunmamak (53. madde hükümleri saklıdır)\n\n**B) Özel şartlar:**\n1. Hizmet göreceği sınıf için 36 ve 41. maddelerde belirtilen öğretim ve eğitim kurumlarının birinden diploma almış olmak\n2. Kurumların özel kanun veya diğer mevzuatında aranan şartları taşımak",
+      "articleRefs": [
+        "48"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Mahkûmiyet, yaş ve öğrenim tuzakları",
+      "body": "**Mahkûmiyet engelini iki parça hâlinde düşün:**\n- **Kasten** işlenen herhangi bir suçtan **bir yıl veya daha fazla** hapis cezası engeldir.\n- Sayılan suçlardan mahkûmiyet, cezanın süresine bakılmaksızın ve **affa uğramış olsa bile** engeldir. Bu suçlar: devletin güvenliğine karşı suçlar, Anayasal düzene ve bu düzenin işleyişine karşı suçlar, zimmet, irtikâp, **rüşvet**, **hırsızlık**, dolandırıcılık, sahtecilik, güveni kötüye kullanma, hileli iflas, ihaleye fesat karıştırma, edimin ifasına fesat karıştırma, suçtan kaynaklanan malvarlığı değerlerini aklama ve kaçakçılık.\n- Türk Ceza Kanununun 53. maddesindeki süreler geçmiş olsa bile engel kalkmaz.\n\nBu yüzden kısa süreli bir hırsızlık veya zimmet cezası da, affa uğramış bir rüşvet mahkûmiyeti de engeldir. **Taksirle** ölüme sebebiyet ise kasten işlenmiş bir suç değildir ve listede de yoktur. Bu nedenle bu bentteki engele girmez.\n\n**Yaş tuzağı:** 18 yaşından önce atanmak için meslek veya sanat okulunu bitirmek, 15 yaşını doldurmak ve kazai rüşt kararı almak gerekir. **Ortaokul mezuniyeti** ve **veli onayı** bu şartlar arasında değildir.\n\n**Öğrenim tuzağı:** Genel öğrenim şartı **ortaokuldur**. 'En az ilkokul mezunu olmak' genel şart değildir.",
+      "articleRefs": [
+        "40",
+        "41",
+        "48"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Aday memur olarak atanma",
+      "body": "**Atanma:** Sınavlarda başarılı olup memur olmak isteyenler, **başarı listesindeki sıraya** göre atanır. Atama, 47. maddeye göre ilan edilen **kadro sayısı kadar** yapılır. Atamayı kurumları yapar ve kişi **memur adayı** olur.\n\n**Adaylık süresi:** **bir yıldan az, iki yıldan çok olamaz.**\n\n**Nakil yasağı:** Adaylık süresi içinde aday memurun **başka kurumlara nakli yapılamaz**.",
+      "articleRefs": [
+        "54"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Adaylıkta ilişik kesme",
+      "body": "**Adaylık süresi içinde şu kişilerin ilişiği kesilir:**\n- Temel ve hazırlayıcı eğitim ve staj devrelerinin **herhangi birinde** başarısız olanlar\n- **Birden fazla** uyarma ve/veya kınama cezası alanlar\n- **Aylıktan kesme** ya da **kademe ilerlemesinin durdurulması** cezası alanlar\n\n**Usul:** Disiplin amirleri **teklif eder**, atamaya yetkili amir **onaylar**. İlişiği kesilenler, kurumlarınca derhal Kamu Personel Bilgi Sisteminin bulunduğu kuruma bildirilir.\n\n**Sonuç:** Bu maddeye göre ilişiği kesilenler **üç yıl** süreyle Devlet memurluğuna alınmaz. Sağlık nedenleriyle ilişiği kesilenler bu yasağın dışındadır.",
+      "articleRefs": [
+        "56"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Tek uyarma yetmez; teklif ve onay kimden?",
+      "body": "**Tek bir uyarma ya da tek bir kınama ilişik kestirmez.** Bu iki hafif cezada eşik 'birden fazla'dır. Aylıktan kesme veya kademe ilerlemesinin durdurulması ise **tek başına** yeter. Soruda yalnız 'bir kez uyarma' ya da yalnız 'bir kez kınama' varsa ilişik kesilmez.\n\n**Teklif ve onay sırası iki maddede de aynıdır.** Hem ilişik kesmede (md 56) hem asli memurluğa atamada (md 58) **teklif disiplin amirlerinden, onay atamaya yetkili amirden** gelir. Şıklarda 'disiplin kurulu', 'yüksek disiplin kurulu' ya da sırası ters çevrilmiş bir ifade görürsen o şıkkı ele.\n\n**Süre:** İlişiği kesilen aday **üç yıl** memurluğa alınmaz. Tek istisna sağlık nedenleridir.",
+      "articleRefs": [
+        "56",
+        "58"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Asli memurluğa atanma",
+      "body": "Adaylık devresi içinde eğitimde **başarılı** olan adaylar asli memurluğa atanır. Bunun için **disiplin amirlerinin teklifi** ve **atamaya yetkili amirin onayı** gerekir.\n- Atama **onay tarihinden** itibaren geçerlidir.\n- Asli memurluğa geçme tarihi **adaylık süresinin sonunu geçemez**.",
+      "articleRefs": [
+        "58"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "İstisnai memurluklar",
+      "body": "**Ne demek:** Sayılan kadrolara, Kanunun atanma, sınavlar, kademe ilerlemesi ve derece yükselmesi hükümlerine bağlı olmaksızın, tahsis edilmiş derece aylığı ile memur atanabilir.\n\n**Sayılanlardan bazıları:**\n- Cumhurbaşkanlığı ile Türkiye Büyük Millet Meclisinin memurlukları\n- Bakan Yardımcılıkları, Bakanlık Müşavirlikleri, Özel Kalem Müdürlükleri\n- **Valilikler**, Büyükelçilikler, Elçilikler, Daimi Temsilcilikler\n- Dışişleri Bakanlığı Stratejik Araştırmalar Merkezi Başkanlığı\n- Din İşleri Yüksek Kurulu Üyelikleri\n- Milli İstihbarat Teşkilatı memurlukları\n- Milli Güvenlik Kurulu Genel Sekreterliği Müşavirlikleri, Hukuk Müşavirliği ve Genel Sekreter Sekreterliği\n- Anayasa Mahkemesi Basın Müşavirliği\n\n**Kazanılmış hak değildir:** Bu kadrolar, emeklilik aylığının hesabında ve diğer memurluklara naklen atanmada hiçbir sınıf için kazanılmış hak sayılmaz. Emeklilik kıdemi ise yürümeye devam eder.\n\n**Uygulanan hükümler:** Atanma, sınavlar, kademe ilerlemesi ve derece yükselmesi **dışındaki bütün hükümler** uygulanır. Kişi, atandığı kadronun derece aylığının ilk kademesini kazanılmış hak olarak elde ettiği tarihten itibaren kademe ilerlemesi ve derece yükselmesi hükümlerine de tabi olur.",
+      "articleRefs": [
+        "59",
+        "61"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Valilik evet, kaymakamlık hayır",
+      "body": "**Valilik istisnai memurluktur, kaymakamlık değildir.** Listede Valilikler var, kaymakamlık yok. En çok bu ikili karıştırılır. Bakanlıkların genel müdürlükleri de listede geçmez. Listedeki bakanlık kadroları arasında Bakan Yardımcılıkları, Bakanlık Müşavirlikleri ve Özel Kalem Müdürlükleri vardır.\n\n**İstisnai memura hangi hüküm uygulanır?** Başlangıçta dışarıda kalan dört başlık şunlardır: atanma, sınavlar, kademe ilerlemesi ve derece yükselmesi. **Disiplin** bu dörtlünün içinde değildir. Yani istisnai memur da Kanunun disiplin hükümlerine tabidir.",
+      "articleRefs": [
+        "59",
+        "61"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Göreve başlama süreleri",
+      "body": "İlk defa, yeniden veya yer değiştirme suretiyle atananlar için:\n- **Aynı yerdeki** görev: atama emrinin tebliğ gününü **izleyen iş günü** içinde işe başlanır.\n- **Başka yerdeki** görev: tebliğden itibaren **15 gün içinde** o yere hareket edilir ve belli yol süresini **izleyen iş günü** içinde işe başlanır.\n- **Savaş ve olağanüstü hallerde** bu süre Cumhurbaşkanı Kararı ile **kısaltılabilir**.\n\n**Sürenin daha geç başladığı durumlar:**\n1. İzinde veya geçici görevdeyken atananlarda iznin veya geçici görevin bitimi\n2. Hesaplarını devretmek zorunda olan sayman ve sayman mutemetlerinde devrin sona ermesi\n3. Eski görevine devamı kurumunca yazılı tebliğ edilenlerde, yerine atanan memurun gelmesi veya yeni görev yerine hareketinin kurumunca tebliği\n\n**Ayrıca:**\n- İzinli veya raporlu olmak tebligata engel değildir, ancak süreler izin veya rapor bitince başlar.\n- Yer değiştirme atamalarında yolluk, ödeme emri aranmaksızın saymanlıklarca derhal ödenir.\n- 'Yer' deyiminin kapsamını İçişleri ve Maliye Bakanlıkları birlikte belirler.",
+      "articleRefs": [
+        "62"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Süresinde göreve başlamamanın sonuçları",
+      "body": "**İlk defa veya yeniden atananlar:**\n- Belge ile ispatı mümkün zorlayıcı sebep olmadan 62. maddedeki süre içinde işe başlamayanların atanması **iptal edilir**.\n- Bu kişiler **1 yıl** süreyle Devlet memuru olarak istihdam edilemez.\n- Zorlayıcı sebep olsa bile göreve başlamama hâli **iki ayı aşarsa** atama işlemi, atamaya yetkili makamlarca iptal edilir.\n\n**Başka yere atananlar:**\n- Süresinde hareket edip yol süresi sonunda başlamayanlara **10 günlük** ek süre verilebilir.\n- Bu ek sürede, eski görevden ayrılış ile yeni göreve başlayış arasında **aylık verilmez**.\n- Zorlayıcı sebep olmadan bu süre sonunda da başlamayanlar **memuriyetten çekilmiş sayılır**.",
+      "articleRefs": [
+        "63"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "'Aynı gün' değil, 'izleyen iş günü'",
+      "body": "**Aynı yere atanan** memur, tebliğ gününü izleyen iş günü işe başlar. Şıklardaki 'aynı gün' bir tuzaktır.\n\n**15 gün hareket süresidir, işe başlama süresi değildir.** Başka yere atanan kişi önce 15 gün içinde yola çıkar. Ardından belli yol süresi gelir, işe de onu izleyen iş günü başlar.\n\n**Süreleri birbirine karıştırma:**\n- Zorlayıcı sebeple başlamama: **iki ay** aşılırsa atama iptal edilir.\n- Başka yere atanana verilebilecek ek süre: **10 gün**, aylıksız.\n- İlk defa veya yeniden atanıp zorlayıcı sebep olmadan süresinde başlamayana yasak: **1 yıl** memur olamama.\n\nAdaylıkta ilişiği kesilenin yasağı **üç yıl**, göreve başlamayanın yasağı **1 yıl**dır. Bu ikisini birbirine karıştırma.",
+      "articleRefs": [
+        "56",
+        "62",
+        "63"
+      ]
+    },
+    {
+      "type": "numbers",
+      "title": "Ünitenin sayıları",
+      "rows": [
+        {
+          "label": "Genel olarak memur olma yaşı",
+          "value": "18",
+          "refs": [
+            "40"
+          ]
+        },
+        {
+          "label": "Meslek veya sanat okulu mezunu için alt yaş (kazai rüşt kararıyla)",
+          "value": "15",
+          "refs": [
+            "40"
+          ]
+        },
+        {
+          "label": "Kadro ilanı: başvuru bitiminden en az",
+          "value": "15 gün önce",
+          "refs": [
+            "47"
+          ]
+        },
+        {
+          "label": "Adaylık süresi",
+          "value": "En az 1 yıl – en fazla 2 yıl",
+          "refs": [
+            "54"
+          ]
+        },
+        {
+          "label": "Adaylıkta ilişiği kesilenin memurluğa alınmama süresi (sağlık nedenleri hariç)",
+          "value": "3 yıl",
+          "refs": [
+            "56"
+          ]
+        },
+        {
+          "label": "Aynı yere atananın işe başlaması",
+          "value": "Tebliğ gününü izleyen iş günü",
+          "refs": [
+            "62"
+          ]
+        },
+        {
+          "label": "Başka yere atananın hareket süresi",
+          "value": "15 gün",
+          "refs": [
+            "62"
+          ]
+        },
+        {
+          "label": "İlk defa veya yeniden atanıp süresinde başlamayanın istihdam yasağı",
+          "value": "1 yıl",
+          "refs": [
+            "63"
+          ]
+        },
+        {
+          "label": "Zorlayıcı sebeple başlamamada iptal eşiği",
+          "value": "2 ay",
+          "refs": [
+            "63"
+          ]
+        },
+        {
+          "label": "Başka yere atanana ek süre (aylıksız)",
+          "value": "10 gün",
+          "refs": [
+            "63"
+          ]
+        },
+        {
+          "label": "Avukatlık ve gazetecilik süresinin sayılan oranı",
+          "value": "3/4",
+          "refs": [
+            "36"
+          ]
+        },
+        {
+          "label": "Özel okul hizmetinin sayılan oranı",
+          "value": "2/3",
+          "refs": [
+            "36"
+          ]
+        },
+        {
+          "label": "Yalnız özel sektörde geçen sürenin üst sınırı",
+          "value": "12 yıl",
+          "refs": [
+            "36"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "36",
+        "40",
+        "47",
+        "54",
+        "56",
+        "62",
+        "63"
+      ]
+    },
+    {
+      "type": "exam_stats",
+      "title": "Sınav der ki",
+      "rows": [
+        {
+          "label": "Bu ünitenin maddelerinden yayındaki soru",
+          "value": "32",
+          "refs": [
+            "36",
+            "40",
+            "41",
+            "47",
+            "48",
+            "54",
+            "56",
+            "58",
+            "59",
+            "61",
+            "62",
+            "63"
+          ]
+        },
+        {
+          "label": "md 36",
+          "value": "11 soru",
+          "refs": [
+            "36"
+          ]
+        },
+        {
+          "label": "md 56",
+          "value": "6 soru",
+          "refs": [
+            "56"
+          ]
+        },
+        {
+          "label": "md 62",
+          "value": "3 soru",
+          "refs": [
+            "62"
+          ]
+        },
+        {
+          "label": "md 48",
+          "value": "2 soru",
+          "refs": [
+            "48"
+          ]
+        },
+        {
+          "label": "md 59",
+          "value": "2 soru",
+          "refs": [
+            "59"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "36",
+        "40",
+        "41",
+        "47",
+        "48",
+        "54",
+        "56",
+        "58",
+        "59",
+        "61",
+        "62",
+        "63"
+      ],
+      "generated": true
+    },
+    {
+      "type": "bridge",
+      "title": "Bu üniteden soru çöz",
+      "articleRefs": [
+        "36",
+        "40",
+        "41",
+        "47",
+        "48",
+        "54",
+        "56",
+        "58",
+        "59",
+        "61",
+        "62",
+        "63"
+      ],
+      "generated": true,
+      "rows": [
+        {
+          "label": "Madde kapsamlı seans",
+          "value": "md 36, 40, 41, 47, 48, 54, 56, 58, 59, 61–63, 10 soru",
+          "refs": [
+            "36",
+            "40",
+            "41",
+            "47",
+            "48",
+            "54",
+            "56",
+            "58",
+            "59",
+            "61",
+            "62",
+            "63"
+          ]
+        }
+      ]
+    }
+  ]
+}
