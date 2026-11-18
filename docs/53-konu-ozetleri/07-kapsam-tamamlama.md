@@ -146,3 +146,25 @@ başlıklarla değiştirildi; kaynak etiketi (yalnız panel) madde listesinden y
 - TCK 217/A sorusunun madde bağı yanlış (dayanak md 218); TCK 123/A öncüllü sorusunda saik öncülü yanlış doğru sayılmış (şıklarda doğru seçenek yok).
 - 6458 md 102 sorusu: ödeme süresi ile dava süresi karışmış olabilir.
 - Dört şıklı sorular: 5607 (4), 3071 (3), 6458 ve diğerleri.
+
+## Yükleme sonucu (19 Kas 2026, kullanıcı çalıştırdı)
+
+Yükleme + premium (karar 8) + toplu yayın + ilerleme tamamlandı: prod'da **195 ünite yayında, incelemede 0**;
+sıra ≥3 olup açık duran ünite 0. Maddeli 4.055 sorunun 4.040'ı bir üniteye düşüyor.
+
+Üniteye düşmeyen 15 soru:
+
+| Mevzuat | Madde | Neden |
+|---|---|---|
+| 2911 | 34/A, Ek 1 | yürürlükte, üniteye alınmamış (aralık modu "/A" ve "Ek"i eşlemez) |
+| 2911 | Geçici 1 | ilk üç aya ilişkin geçiş hükmü; soru etiketi şüpheli (banka) |
+| 5901 | Ek 1 (saklı nüfus) | yürürlükte, üniteye alınmamış |
+| 4483 | 10, 14, 15, Ek 1 | yürürlükte, `myhk` ünitesi bu maddeleri kapsamıyor |
+| 5682 | Ek 2, Ek 4, Ek 6 | yürürlükte, `pasap` üniteleri aralık modunda |
+| 2575 | 19/A, 52/A (Başkanlık Kurulu) | yürürlükte, `dank` ünitesi kapsamıyor |
+| EAYY | 32 | bölme süzgeci metni "(Mülga…)" ile başlayan ama yeniden düzenlenmiş maddeyi düşürdü (aynı nedenle md 10 da dışarıda, sorusu yok) |
+| TCK | "45-49" | aralık etiketi bilinçli olarak eşlenmez; madde aralığı tek ünitenin (`tck-hapis-ve-adli-para-cezasi`) içinde |
+
+Madde düzeyinde kapsanmayan öteki maddelerin büyük kısmı amaç/kapsam/dayanak, yürürlük/yürütme ve geçiş hükümleridir
+(tasarım gereği dışarıda); büyük kanunlarda (657, TCK özel hükümler, İçtüzük, 2918, 5393, 5442, 7201) üniteler sınavda
+sorulan maddelerle sınırlıdır.
