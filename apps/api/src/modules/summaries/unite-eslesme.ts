@@ -11,6 +11,8 @@
  * Saf mantık: ProgressService (seans sonu kancası) ve doldurma betiği aynı kodu kullanır.
  */
 
+import { maddeNoAyristir } from '../../common/madde-no';
+
 export interface UnitRange {
   id: string;
   topicId: string;
@@ -80,16 +82,23 @@ export function unitCovers(
   return n >= from && n <= to;
 }
 
-/** Konunun üniteleri içinde maddeyi kapsayan ilk ünite (kapsamlar örtüşmez; örtüşürse sıralı ilk kazanır). */
+/**
+ * Konunun üniteleri içinde maddeyi kapsayan ilk ünite (kapsamlar örtüşmez; örtüşürse sıralı ilk kazanır).
+ * Liste etiketli soru ("43, 141") dayanak maddesine, yani İLK maddeye göre düşer — `question_articles`
+ * bağındaki primary ile aynı kural (S1-B, `maddeNoAyristir`). Aralık etiketi ("45-49") üniteye bağlanmaz.
+ */
 export function unitOfArticle(
   units: readonly UnitRange[],
   topicId: string,
   articleNo: string | null,
 ): UnitRange | null {
   if (!articleNo) return null;
+  const a = maddeNoAyristir(articleNo);
+  const dayanak = a.tur === 'liste' ? a.primary : articleNo;
+  if (!dayanak) return null;
   for (const u of units) {
     if (u.topicId !== topicId) continue;
-    if (unitCovers(u, articleNo)) return u;
+    if (unitCovers(u, dayanak)) return u;
   }
   return null;
 }

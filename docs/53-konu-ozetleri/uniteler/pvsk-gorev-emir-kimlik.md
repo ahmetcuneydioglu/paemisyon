@@ -245,10 +245,10 @@ Yönetmeliği İçişleri Bakanlığı çıkarır, görüşü ise **Adalet Bakan
 
 | Konu | Değer | md |
 |---|---|---|
-| Bu ünitenin maddelerinden yayındaki soru | 18 | 1, 2, 4, 4/A, 5 |
-| md 4/A | 7 soru | 4/A |
-| md 5 | 6 soru | 5 |
-| md 2 | 3 soru | 2 |
+| Bu ünitenin maddelerinden yayındaki soru | 22 | 1, 2, 4, 4/A, 5 |
+| md 4/A | 8 soru | 4/A |
+| md 5 | 8 soru | 5 |
+| md 2 | 4 soru | 2 |
 | md 1 | 1 soru | 1 |
 | md 4 | 1 soru | 4 |
 | Resmî sınavlarda | 2024 PAEM 8. Dönem İlk Derece Amirlik Eğitimi Yazılı Sınavı (1) | 1, 2, 4, 4/A, 5 |

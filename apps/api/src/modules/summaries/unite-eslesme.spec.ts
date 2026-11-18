@@ -113,6 +113,13 @@ describe('ünite eşlemesi', () => {
     expect(unitOfArticle(UNITS, 'anayasa', null)).toBeNull();
     expect(unitOfArticle(UNITS, 'anayasa', 'Geçici 2')).toBeNull();
   });
+  it('liste etiketi ilk maddeye (dayanak) göre düşer; aralık etiketi bağlanmaz', () => {
+    expect(unitOfArticle(UNITS, 'anayasa', '87, 75')?.id).toBe('u8');
+    expect(unitOfArticle(UNITS, 'anayasa', '75, 87')?.id).toBe('u7');
+    expect(unitOfArticle(UNITS, 'anayasa', '120, 75')).toBeNull();
+    expect(unitOfArticle(UNITS, 'anayasa', '75-86')).toBeNull();
+    expect(unitOfArticle(PVSK, 'pvsk', 'Ek 6, 16')?.id).toBe('g4');
+  });
 });
 
 describe('ünite sayımı (konu ilerlemesiyle aynı kural)', () => {

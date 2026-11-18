@@ -321,12 +321,12 @@ Adaylıkta ilişiği kesilenin yasağı **üç yıl**, göreve başlamayanın ya
 
 | Konu | Değer | md |
 |---|---|---|
-| Bu ünitenin maddelerinden yayındaki soru | 32 | 36, 40, 41, 47, 48, 54, 56, 58, 59, 61, 62, 63 |
+| Bu ünitenin maddelerinden yayındaki soru | 34 | 36, 40, 41, 47, 48, 54, 56, 58, 59, 61, 62, 63 |
 | md 36 | 11 soru | 36 |
 | md 56 | 6 soru | 56 |
-| md 62 | 3 soru | 62 |
+| md 62 | 4 soru | 62 |
+| md 63 | 3 soru | 63 |
 | md 48 | 2 soru | 48 |
-| md 59 | 2 soru | 59 |
 
 ## Köprü · Bu üniteden soru çöz
 

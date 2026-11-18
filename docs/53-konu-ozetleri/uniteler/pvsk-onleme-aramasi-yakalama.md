@@ -241,12 +241,12 @@ Polis, gerekli görülen kişilerden, tespit edilmiş ikametgâh veya iş adresl
 
 | Konu | Değer | md |
 |---|---|---|
-| Bu ünitenin maddelerinden yayındaki soru | 20 | 9, 13, 13/A, 15, 20, Ek 2, Ek 3 |
-| md 9 | 6 soru | 9 |
-| md 13 | 6 soru | 13 |
+| Bu ünitenin maddelerinden yayındaki soru | 25 | 9, 13, 13/A, 15, 20, Ek 2, Ek 3 |
+| md 9 | 8 soru | 9 |
+| md 13 | 8 soru | 13 |
 | md 20 | 3 soru | 20 |
 | md 13/A | 2 soru | 13/A |
-| md 15 | 1 soru | 15 |
+| md Ek 3 | 2 soru | Ek 3 |
 | Resmî sınavlarda | 2024 PAEM 8. Dönem İlk Derece Amirlik Eğitimi Yazılı Sınavı (1) | 9, 13, 13/A, 15, 20, Ek 2, Ek 3 |
 
 ## Köprü · Bu üniteden soru çöz

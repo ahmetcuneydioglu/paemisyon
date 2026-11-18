@@ -7,7 +7,7 @@
     "subtitle": "Kademeli zor, silah kullanma hâlleri, suça el koyma, teşhis ve silah kullanan polis hakkında yapılacak işlem",
     "articleFrom": "16",
     "articleTo": "Ek 9",
-    "readingMinutes": 12,
+    "readingMinutes": 9,
     "sourceLabel": "AI özeti — 2559 Sayılı Polis Vazife ve Salâhiyet Kanunu (PVSK), md 16, 17, Ek 4, Ek 6, Ek 9",
     "articleNos": [
       "16",
@@ -362,7 +362,7 @@
       "rows": [
         {
           "label": "Bu ünitenin maddelerinden yayındaki soru",
-          "value": "19",
+          "value": "23",
           "refs": [
             "16",
             "17",
@@ -373,16 +373,23 @@
         },
         {
           "label": "md 16",
-          "value": "9 soru",
+          "value": "10 soru",
           "refs": [
             "16"
           ]
         },
         {
           "label": "md Ek 6",
-          "value": "6 soru",
+          "value": "8 soru",
           "refs": [
             "Ek 6"
+          ]
+        },
+        {
+          "label": "md Ek 4",
+          "value": "2 soru",
+          "refs": [
+            "Ek 4"
           ]
         },
         {
@@ -397,13 +404,6 @@
           "value": "1 soru",
           "refs": [
             "17"
-          ]
-        },
-        {
-          "label": "md Ek 4",
-          "value": "1 soru",
-          "refs": [
-            "Ek 4"
           ]
         }
       ],

@@ -289,12 +289,12 @@ Yasak listesine dikkatle bak. Kollektif şirket ortaklığı yasaktır. Komandit
 
 | Konu | Değer | md |
 |---|---|---|
-| Bu ünitenin maddelerinden yayındaki soru | 20 | 1, 2, 3, 4, 6, 7, 10, 11, 13, 17, 21, 22, 28 |
+| Bu ünitenin maddelerinden yayındaki soru | 23 | 1, 2, 3, 4, 6, 7, 10, 11, 13, 17, 21, 22, 28 |
+| md 4 | 4 soru | 4 |
 | md 3 | 3 soru | 3 |
-| md 4 | 3 soru | 4 |
+| md 28 | 3 soru | 28 |
 | md 1 | 2 soru | 1 |
-| md 21 | 2 soru | 21 |
-| md 28 | 2 soru | 28 |
+| md 11 | 2 soru | 11 |
 
 ## Köprü · Bu üniteden soru çöz
 

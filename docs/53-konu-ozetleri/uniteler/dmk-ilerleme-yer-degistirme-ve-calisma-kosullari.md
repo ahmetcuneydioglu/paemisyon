@@ -381,12 +381,12 @@ Hastalık izni sorusunda 'UZATMA DÂHİL' ibaresini gördüğün an hesap yap:
 
 | Konu | Değer | md |
 |---|---|---|
-| Bu ünitenin maddelerinden yayındaki soru | 43 | 64, 68, 77, 80, 83, 86, 89, 91, 94, 97, 98, 100, 102, 103, 104, 105, 108 |
+| Bu ünitenin maddelerinden yayındaki soru | 56 | 64, 68, 77, 80, 83, 86, 89, 91, 94, 97, 98, 100, 102, 103, 104, 105, 108 |
+| md 104 | 8 soru | 104 |
+| md 105 | 8 soru | 105 |
+| md 108 | 8 soru | 108 |
 | md 103 | 5 soru | 103 |
-| md 105 | 5 soru | 105 |
-| md 108 | 5 soru | 108 |
 | md 64 | 4 soru | 64 |
-| md 104 | 4 soru | 104 |
 
 ## Köprü · Bu üniteden soru çöz
 

@@ -221,12 +221,12 @@ Bu Kanun ve diğer kanunlara göre gerekli hâllerde **silah kullanmak zorunda k
 
 | Konu | Değer | md |
 |---|---|---|
-| Bu ünitenin maddelerinden yayındaki soru | 19 | 16, 17, Ek 4, Ek 6, Ek 9 |
-| md 16 | 9 soru | 16 |
-| md Ek 6 | 6 soru | Ek 6 |
+| Bu ünitenin maddelerinden yayındaki soru | 23 | 16, 17, Ek 4, Ek 6, Ek 9 |
+| md 16 | 10 soru | 16 |
+| md Ek 6 | 8 soru | Ek 6 |
+| md Ek 4 | 2 soru | Ek 4 |
 | md Ek 9 | 2 soru | Ek 9 |
 | md 17 | 1 soru | 17 |
-| md Ek 4 | 1 soru | Ek 4 |
 
 ## Köprü · Bu üniteden soru çöz
 

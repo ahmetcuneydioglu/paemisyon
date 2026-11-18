@@ -7,7 +7,7 @@
     "subtitle": "Hizmet sınıfları, giriş dereceleri, memurluk şartları, aday memurluk, istisnai memurluk ve göreve başlama süreleri",
     "articleFrom": "36",
     "articleTo": "63",
-    "readingMinutes": 13,
+    "readingMinutes": 12,
     "sourceLabel": "AI özeti — 657 Sayılı Devlet Memurları Kanunu, md 36, 40, 41, 47, 48, 54, 56, 58, 59, 61–63",
     "articleNos": [
       "36",
@@ -426,7 +426,7 @@
       "rows": [
         {
           "label": "Bu ünitenin maddelerinden yayındaki soru",
-          "value": "32",
+          "value": "34",
           "refs": [
             "36",
             "40",
@@ -458,9 +458,16 @@
         },
         {
           "label": "md 62",
-          "value": "3 soru",
+          "value": "4 soru",
           "refs": [
             "62"
+          ]
+        },
+        {
+          "label": "md 63",
+          "value": "3 soru",
+          "refs": [
+            "63"
           ]
         },
         {
@@ -468,13 +475,6 @@
           "value": "2 soru",
           "refs": [
             "48"
-          ]
-        },
-        {
-          "label": "md 59",
-          "value": "2 soru",
-          "refs": [
-            "59"
           ]
         }
       ],

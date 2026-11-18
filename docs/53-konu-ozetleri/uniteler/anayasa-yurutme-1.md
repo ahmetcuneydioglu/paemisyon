@@ -367,8 +367,8 @@ Gündemin özelliğine göre ilgili bakan ve kişiler toplantılara çağrılıp
 
 | Konu | Değer | md |
 |---|---|---|
-| Bu ünitenin maddelerinden yayındaki soru | 119 | 101, 103, 104, 105, 106, 107, 108, 110, 116, 117, 118, 119, 122 |
-| md 106 — Cumhurbaşkanı yardımcıları, Cumhurbaşkanına vekâlet ve bakanlar | 25 soru | 106 |
+| Bu ünitenin maddelerinden yayındaki soru | 118 | 101, 103, 104, 105, 106, 107, 108, 110, 116, 117, 118, 119, 122 |
+| md 106 — Cumhurbaşkanı yardımcıları, Cumhurbaşkanına vekâlet ve bakanlar | 24 soru | 106 |
 | md 104 — Görev ve yetkileri | 17 soru | 104 |
 | md 101 — Adaylık ve seçimi | 15 soru | 101 |
 | md 119 — (…) | 14 soru | 119 |

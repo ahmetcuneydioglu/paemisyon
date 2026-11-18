@@ -8,6 +8,7 @@ import {
   validateBlock,
   validateUnit,
   unitArticleNos,
+  readingMinutesOf,
   type ArticleText,
   type SummaryBlockJson,
   type SummaryUnitJson,
@@ -309,5 +310,33 @@ describe('ünite: açık madde listesi (PVSK)', () => {
     });
     expect(unit.blocks[3].rows?.[0]?.value).toBe('md 1, 2, 4, 4/A, 5, 3 soru');
     expect(unit.blocks[3].articleRefs).toEqual(['2', '4/A']);
+  });
+});
+
+describe('okuma süresi metinden hesaplanır', () => {
+  const kart = (body: string, generated = false): SummaryBlockJson => ({
+    type: 'concept',
+    title: 'Başlık',
+    body,
+    articleRefs: ['1'],
+    generated,
+  });
+  it('180 kelime/dk; betik üretimi kartlar ve markdown işaretleri sayılmaz', () => {
+    const govde = Array.from({ length: 1799 }, (_, i) => (i % 7 === 0 ? '**kalın**' : 'kelime')).join(' ');
+    // 1799 gövde + 1 başlık = 1800 kelime → 10 dk; üretilen kartın kelimeleri eklenmez.
+    expect(readingMinutesOf({ blocks: [kart(govde), kart('çok uzun '.repeat(5000), true)] })).toBe(10);
+  });
+  it('satır hücreleri sayılır, refs ve tek başına noktalama sayılmaz', () => {
+    const b: SummaryBlockJson = {
+      type: 'numbers',
+      title: 'Tablo',
+      rows: Array.from({ length: 540 }, () => ({ label: 'süre —', value: 'on gün', refs: ['5', '6'] })),
+      articleRefs: ['5'],
+    };
+    // 1 başlık + 540 × 3 kelime = 1621 → round(9,0) = 9
+    expect(readingMinutesOf({ blocks: [b] })).toBe(9);
+  });
+  it('kısa ünitede alt sınır 3 dakikadır', () => {
+    expect(readingMinutesOf({ blocks: [kart('kısa')] })).toBe(3);
   });
 });

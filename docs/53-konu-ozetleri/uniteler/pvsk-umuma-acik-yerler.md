@@ -252,12 +252,12 @@ Merci de karıştırılır. Bildirim emniyet müdürlüğüne değil, **mahallin
 
 | Konu | Değer | md |
 |---|---|---|
-| Bu ünitenin maddelerinden yayındaki soru | 19 | 6, 7, 8, 10, 11, 12, 14, 19, 21, Ek 1, Geçici 1 |
+| Bu ünitenin maddelerinden yayındaki soru | 23 | 6, 7, 8, 10, 11, 12, 14, 19, 21, Ek 1, Geçici 1 |
 | md 6 | 4 soru | 6 |
 | md 7 | 4 soru | 7 |
-| md 8 | 3 soru | 8 |
-| md 12 | 2 soru | 12 |
-| md Ek 1 | 2 soru | Ek 1 |
+| md 8 | 4 soru | 8 |
+| md Ek 1 | 4 soru | Ek 1 |
+| md 11 | 2 soru | 11 |
 | Hiç soru çıkmamış | md 21, md Geçici 1 | 6, 7, 8, 10, 11, 12, 14, 19, 21, Ek 1, Geçici 1 |
 
 ## Köprü · Bu üniteden soru çöz

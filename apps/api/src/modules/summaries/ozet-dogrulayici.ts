@@ -400,3 +400,33 @@ export function fillGeneratedBlocks(data: SummaryUnitJson, stats: ExamStatsInput
     }
   }
 }
+
+/**
+ * Okuma hızı (kelime/dakika). Yoğun mevzuat kartı için ders çalışma hızı; 109 ünitenin metninde medyan
+ * 12 dakikaya denk gelir (Doc 53 hedefi 10–15 dk). Kaynak: 18 Kas 2026 ölçümü (Doc 53/07).
+ */
+export const OKUMA_HIZI_KELIME_DK = 180;
+
+/** Kartın okura görünen metni: başlık, gövde (markdown işaretleri ayıklanmış) ve satır hücreleri. */
+function gorunenMetin(b: SummaryBlockJson): string {
+  const hucreler = (b.rows ?? []).flatMap((r) =>
+    Object.entries(r)
+      .filter(([k, v]) => k !== 'refs' && typeof v === 'string')
+      .map(([, v]) => v as string),
+  );
+  return [b.title ?? '', (b.body ?? '').replace(/[*_#>`|]/g, ' '), ...hucreler].join(' ');
+}
+
+/**
+ * Ünitenin okuma süresi (dakika): betik üretimi olmayan kartların kelime sayısı / okuma hızı, en az 3.
+ * Modelin tahmini yerine metinden hesaplanır; `ozet-dogrula --write` ve yayındaki ünite tazelemesi kullanır.
+ */
+export function readingMinutesOf(data: Pick<SummaryUnitJson, 'blocks'>): number {
+  const kelime = data.blocks
+    .filter((b) => !b.generated)
+    .map(gorunenMetin)
+    .join(' ')
+    .split(/\s+/)
+    .filter((w) => /[\p{L}\p{N}]/u.test(w)).length;
+  return Math.max(3, Math.round(kelime / OKUMA_HIZI_KELIME_DK));
+}

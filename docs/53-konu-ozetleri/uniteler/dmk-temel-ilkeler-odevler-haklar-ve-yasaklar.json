@@ -346,7 +346,7 @@
       "rows": [
         {
           "label": "Bu ünitenin maddelerinden yayındaki soru",
-          "value": "20",
+          "value": "23",
           "refs": [
             "1",
             "2",
@@ -364,6 +364,13 @@
           ]
         },
         {
+          "label": "md 4",
+          "value": "4 soru",
+          "refs": [
+            "4"
+          ]
+        },
+        {
           "label": "md 3",
           "value": "3 soru",
           "refs": [
@@ -371,10 +378,10 @@
           ]
         },
         {
-          "label": "md 4",
+          "label": "md 28",
           "value": "3 soru",
           "refs": [
-            "4"
+            "28"
           ]
         },
         {
@@ -385,17 +392,10 @@
           ]
         },
         {
-          "label": "md 21",
+          "label": "md 11",
           "value": "2 soru",
           "refs": [
-            "21"
-          ]
-        },
-        {
-          "label": "md 28",
-          "value": "2 soru",
-          "refs": [
-            "28"
+            "11"
           ]
         }
       ],

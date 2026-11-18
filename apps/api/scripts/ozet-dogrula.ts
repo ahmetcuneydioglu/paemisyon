@@ -5,13 +5,15 @@
  *
  * Çekirdek `src/modules/summaries/ozet-dogrulayici.ts`'te (admin içe aktarma ve kart düzenleme
  * aynı kodu kullanır). Bu CLI: mevzuatın maddelerini veritabanından okur, exam_stats/bridge
- * kartlarını veriden doldurur, raporu basar; --write JSON'u doldurulmuş hâliyle yerine yazar,
+ * kartlarını veriden doldurur, okuma süresini metinden hesaplar (`readingMinutesOf`), raporu basar;
+ * --write JSON'u doldurulmuş hâliyle yerine yazar,
  * --md yanına okunur Markdown üretir. Çıkış kodu: kusur varsa 1. connection_limit=1'e çevirir.
  */
 import { PrismaClient } from '@prisma/client';
 import { readFileSync, writeFileSync } from 'fs';
 import {
   fillGeneratedBlocks,
+  readingMinutesOf,
   unitArticleNos,
   validateUnit,
   type SummaryUnitJson,
@@ -83,6 +85,8 @@ export function renderMarkdown(data: SummaryUnitJson, legName: string): string {
   const refs = unitArticleNos(data);
   const stats = await collectExamStats(prisma, byNo, refs);
   fillGeneratedBlocks(data, stats);
+  // Okuma süresi modelin tahmini değil, metinden hesaplanır (Doc 53/07, 180 kelime/dk).
+  data.unit.readingMinutes = readingMinutesOf(data);
   const v = validateUnit(data, byNo);
 
   console.log(`Ünite: ${data.unit.title}\nMevzuat: ${leg.name} · madde ${byNo.size}`);
@@ -90,7 +94,9 @@ export function renderMarkdown(data: SummaryUnitJson, legName: string): string {
     console.log(`\n[${b.index + 1}] ${b.type} — ${b.title}`);
     for (const l of b.lines) console.log(`  ${l}`);
   }
-  console.log(`\nSonuç: ${v.ok ? 'GEÇTİ' : v.fails + ' kusur'} · ${data.blocks.length} blok · ${stats.totalQuestions} bağlı soru`);
+  console.log(
+    `\nSonuç: ${v.ok ? 'GEÇTİ' : v.fails + ' kusur'} · ${data.blocks.length} blok · ${stats.totalQuestions} bağlı soru · ${data.unit.readingMinutes} dk`,
+  );
 
   if (WANT_WRITE) writeFileSync(file, JSON.stringify(data, null, 2) + '\n');
   if (WANT_MD) {

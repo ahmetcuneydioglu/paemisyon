@@ -238,7 +238,7 @@ Devlet Personel Başkanlığına her ceza bildirilmez; oraya yalnız **çıkarma
 
 | Konu | Değer | md |
 |---|---|---|
-| Bu ünitenin maddelerinden yayındaki soru | 31 | 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 39, Geçici 1, Geçici 2 |
+| Bu ünitenin maddelerinden yayındaki soru | 30 | 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 39, Geçici 1, Geçici 2 |
 | md 29 — Zamanaşımı | 7 soru | 29 |
 | md 30 — Cezalara itiraz ve cezanın kesinleşmesi | 6 soru | 30 |
 | md 31 — Savunma hakkı | 5 soru | 31 |

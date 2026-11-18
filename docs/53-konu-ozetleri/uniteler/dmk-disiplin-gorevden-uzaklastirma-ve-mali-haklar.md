@@ -415,7 +415,7 @@ Kurumlar belirli sınıflardaki memurluklara eleman yetiştirmek için:
 
 | Konu | Değer | md |
 |---|---|---|
-| Bu ünitenin maddelerinden yayındaki soru | 57 | 125, 126, 127, 128, 130, 131, 132, 133, 135, 138, 139, 140, 141, 145, 147, 164, 165, 178, 206, 208, 221, 225 |
+| Bu ünitenin maddelerinden yayındaki soru | 60 | 125, 126, 127, 128, 130, 131, 132, 133, 135, 138, 139, 140, 141, 145, 147, 164, 165, 178, 206, 208, 221, 225 |
 | md 125 | 19 soru | 125 |
 | md 135 | 6 soru | 135 |
 | md 126 | 4 soru | 126 |

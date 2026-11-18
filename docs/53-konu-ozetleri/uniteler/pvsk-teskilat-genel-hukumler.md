@@ -225,8 +225,8 @@ Merkez kuruluncaya kadar bazı karar ve yazılı emirler **derhal** yerine getir
 
 | Konu | Değer | md |
 |---|---|---|
-| Bu ünitenin maddelerinden yayındaki soru | 13 | 22, 23, 24, 25, 26, 27, 28, Ek 5, Ek 7, Ek 10, Geçici 2 |
-| md Ek 7 | 9 soru | Ek 7 |
+| Bu ünitenin maddelerinden yayındaki soru | 17 | 22, 23, 24, 25, 26, 27, 28, Ek 5, Ek 7, Ek 10, Geçici 2 |
+| md Ek 7 | 13 soru | Ek 7 |
 | md 22 | 1 soru | 22 |
 | md 24 | 1 soru | 24 |
 | md 25 | 1 soru | 25 |
