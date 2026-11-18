@@ -13,6 +13,7 @@
  */
 import { PrismaClient } from '@prisma/client';
 import { writeFileSync } from 'fs';
+import { articleKey } from '../src/modules/summaries/unite-eslesme';
 
 const argv = process.argv.slice(2);
 const artIdx = argv.indexOf('--articles');
@@ -102,6 +103,33 @@ export interface OzetGirdi {
     const q = byQ.get(r.question.id) ?? { articleNos: new Set<string>(), stem: cv.stem, options: cv.options };
     q.articleNos.add(no);
     byQ.set(r.question.id, q);
+  }
+  // Madde bağı (question_articles) olmayan ama konusu ve madde etiketi (`articleNo`) bu ünitenin maddesine düşen
+  // sorular da girdidir: ünite eşlemesi (`unitOfArticle`) ve hâkimiyet bu etiketle çalışır. Küçük kanunlarda
+  // (6136, 6284 Uyg. Yön., 6222 …) soruların çoğunda yalnız etiket var (18 Kas 2026).
+  if (leg.topicId) {
+    const keyToNo = new Map(arts.map((a) => [articleKey(a.articleNo), a.articleNo]));
+    const tagged = await prisma.question.findMany({
+      where: {
+        topicId: leg.topicId,
+        deletedAt: null,
+        articleNo: { not: null },
+        currentVersion: { status: 'published' },
+        id: { notIn: [...byQ.keys()] },
+      },
+      select: {
+        id: true,
+        articleNo: true,
+        currentVersion: {
+          select: { stem: true, options: { orderBy: { sortOrder: 'asc' }, select: { text: true, isCorrect: true } } },
+        },
+      },
+    });
+    for (const t of tagged) {
+      const no = keyToNo.get(articleKey(t.articleNo));
+      if (!no || !t.currentVersion) continue;
+      byQ.set(t.id, { articleNos: new Set([no]), stem: t.currentVersion.stem, options: t.currentVersion.options });
+    }
   }
   for (const q of byQ.values()) for (const no of q.articleNos) count.set(no, (count.get(no) ?? 0) + 1);
 
