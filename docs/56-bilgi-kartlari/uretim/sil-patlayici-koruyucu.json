@@ -1,0 +1,164 @@
+{
+  "deck": {
+    "topicId": "6f0d2a35-5fb5-4223-99ea-8d4ac367b873",
+    "sourceSlug": "silah-bilgisi-ve-atis",
+    "sourceLabel": "AI bilgi kartı — Silah Bilgisi: Patlayıcılar, gaz maskesi ve yelek (kaynak pasajı 10-01…10-10)",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: kaynak pasajı + bankadaki sorular; stil kapısı 2 açıklama yeniden yazıldı)"
+  },
+  "cards": [
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Patlayıcı maddenin ateşlenip patlamasına hangi etkiler yol açar?",
+      "back": "Kıvılcım (ateş), reaksiyon (asit) ve şok.",
+      "explanation": "Ateşlenen madde yüksek ısı, ışık, gaz, ses ve basınç üretir. Bunların havada ani ve şiddetli biçimde yayılmasına patlama denir.",
+      "articleRefs": [
+        "10-01"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Fabrikasyon patlayıcılar güçlerine göre nasıl sınıflandırılır?",
+      "back": "Düşük güçte ve yüksek güçte patlayıcılar olarak. Karabarut ile dumansız barut düşük güçte; TNT, C3 ve C4 yüksek güçtedir.",
+      "explanation": "Fabrikasyon patlayıcılar ayrıca üretim amacına göre ticari ve askerî, üretildikleri hâle göre de sıvı, katı ve gaz olarak sınıflandırılır.",
+      "articleRefs": [
+        "10-02"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Dinamit askerî amaçla imal edilen fabrikasyon patlayıcılar arasında mı sayılır?",
+      "back": "Hayır. Dinamit ticari amaçlı üretilir. Askerî amaçlıların örnekleri TNT, PETN, C3 ve C4'tür.",
+      "explanation": "Dumansız barut da ticari amaçlı fabrikasyon patlayıcılara örnektir.",
+      "articleRefs": [
+        "10-02"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Elektrikli fünyeyi adi (normal) fünyeden ayıran yapısal özellik nedir?",
+      "back": "İki değişik renkte kablosunun olması; bunun dışında adi fünyeyle aynı yapıdadır.",
+      "explanation": "Her iki fünye de son derece hassas patlayıcıdır.",
+      "articleRefs": [
+        "10-03"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 1,
+      "front": "Mektuba ya da hediye paketine gizlenmiş bomba fabrikasyon bomba sayılır mı?",
+      "back": "Hayır. Bunlar, teröristin kendi imal edip eşyaya tuzakladığı el yapımı bombalardır.",
+      "explanation": "Fabrikasyon bombalara askerî el bombaları, roketler, tüfek bombaları ve mayınlar örnek verilir. Teröristler bombayı gizlemek için telefon, oyuncak, çöp kutusu, ekmek, otomobil gibi her şeyi tuzaklayabilir.",
+      "articleRefs": [
+        "10-03"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "El yapımı bombalar ateşlenmelerine göre hangi gruplara ayrılır?",
+      "back": "Anında ateşlenen, gecikmeli ateşlenen ve ateşlenmesi bir harekete bağlı bombalar.",
+      "explanation": "Harekete bağlı olanlar bubi tuzaklarıdır. Bunlar basınçtan kurtulma, çekme, basma, sallama ve devirme gibi her türlü hareketle patlayabilir.",
+      "articleRefs": [
+        "10-04"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Radyo kontrollü bomba gecikmeli ateşlenen bombalar arasında mı yer alır?",
+      "back": "Hayır. Radyo kontrollü bomba, kablo kumandalı bombayla birlikte anında ateşlenen gruptadır.",
+      "explanation": "Gecikmeli ateşlenen bombalar saatli, mekanik gecikmeli, fiziki gecikmeli, elektronik gecikmeli ve kimyasal gecikmeli bombalardır.",
+      "articleRefs": [
+        "10-04"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Bombanın patladığı anda yarattığı birincil etkiler nelerdir?",
+      "back": "Basınç etkisi, yakma etkisi ve parça etkisi.",
+      "explanation": "Basınç dalgaları patlama merkezinden her yöne yayılır. Askerî amaçla üretilen parça tesirli el bombaları parça etkisi sınıfına girer. Patlamadan sonra çevrede doğan etkiler (kırılan camlar, yangın, gaz kaçağı, panik gibi) ise ikincil etkilerdir.",
+      "articleRefs": [
+        "10-05"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Bomba olay yerinde basın mensupları neden kordona dahi yaklaştırılmaz?",
+      "back": "Flaş ışıkları bomba uzmanının gözünü etkileyip onu geçici olarak görmez hâle getirir. Bazı bombalar da gazetecinin flaşıyla patlayabilir.",
+      "explanation": "Kordon içine bomba uzmanından başka hiçbir görevli alınmaz. Böylece uzmanın rahat çalışması sağlanır.",
+      "articleRefs": [
+        "10-05"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "SR6M Sahra Koruyucu Gaz maskesi kullanıcıyı hangi maddelere karşı korur?",
+      "back": "Kimyasal, biyolojik ve radyoaktif maddelere karşı korur; bunu gözleri ve yüzü örterek yapar.",
+      "explanation": "Bu maske karbonmonoksit gazına karşı etkili değildir.",
+      "articleRefs": [
+        "10-06"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "SR6M gaz maskesi hangi üç ana gruptan oluşur?",
+      "back": "Yüz parçası, süzgeç ve çanta.",
+      "explanation": "Süzgeç, yüz parçası üzerindeki süzgeç tutucusuna vidalanır. Yüz parçası büyük, orta ve küçük olmak üzere üç boyda üretilir.",
+      "articleRefs": [
+        "10-06"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Gaz maskesi süzgecinde hava, içeri alınmadan önce hangi filtrelerden geçer?",
+      "back": "Cam elyaf ve karbon filtrelerden geçer. Temizlenen hava giriş valfinden geçip maske ile yüz arasına yerleşir.",
+      "explanation": "Verilen nefes ağızdan çıkış valfine gönderilir ve dışarı atılır. NBC filtresi sarin ve öteki sinir gazları, hardal gazı gibi kimyasal ve biyolojik savaş ajanlarına karşı etkilidir.",
+      "articleRefs": [
+        "10-08"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Gaz maskesi süzgeci, oksijeni yetersiz bir ortamda neden solunuma uygun hava sağlayamaz?",
+      "back": "Süzgeç temiz oksijen üretmez; yalnızca gelen havayı temizler. Gelen havada oksijen yetersizse solunuma uygun hava sağlayamaz.",
+      "explanation": "Süzgeç karbon monoksit gazına karşı da koruyucu değildir.",
+      "articleRefs": [
+        "10-09"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Alt ve üst kapakları açılmış ama kirli ortamda hiç kullanılmamış süzgeç, ikinci kullanım için yeniden depolanabilir mi?",
+      "back": "Hayır. Kapakları açılan süzgeç hiç kullanılmamış olsa da saklanmaz; mutlaka imha edilir.",
+      "explanation": "Kirli ortamda kısa bir süre kullanılmış süzgeç için de aynı kural geçerlidir: ikinci kullanım için saklanmaz, imha edilir.",
+      "articleRefs": [
+        "10-09"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Kurşun geçirmez yelekte darbe savuşturucu (berelenmeyi önleyici) tampon nereye yerleştirilir?",
+      "back": "İç yumuşak zırhın arkasına, vücuda en yakın konumda yerleştirilir. Ardından cepçikler kapatılır.",
+      "explanation": "İç yumuşak zırh, dış kılıfın iç ceplerine yerleştirilir. Sert seramik zırh plakaları ise dış kılıfın ön ceplerine konur.",
+      "articleRefs": [
+        "10-10"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,125 @@
+{
+  "deck": {
+    "topicId": "6f0d2a35-5fb5-4223-99ea-8d4ac367b873",
+    "sourceSlug": "silah-bilgisi-ve-atis",
+    "sourceLabel": "AI bilgi kartı — Silah Bilgisi: Kimyasal silahlar ve ilk yardım (kaynak pasajı 09-01…09-08)",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: kaynak pasajı + bankadaki sorular; stil kapısı 2 açıklama yeniden yazıldı)"
+  },
+  "cards": [
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Demokratik polis sisteminde, şartlar ne olursa olsun hangi kuvvete başvurulmalıdır?",
+      "back": "Asgari kuvvete.",
+      "explanation": "Bu nedenle kimyasal silahlar daha az öldürücü polis silahı kabul edilir. Her polis ekibinde ve karakolunda hizmete hazır olmaları gerekir. Usulüne uygun kullanılmazlarsa tehlikeli olabilirler; bu yüzden yalnız yetkili kılınmış ve iyi eğitilmiş kişiler kullanmalıdır.",
+      "articleRefs": [
+        "09-01"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Kimyasal maddeli fişekler kişilere hangi mesafeden daha yakından nişan alınarak atılmamalıdır?",
+      "back": "180 cm. Bu mesafeden daha yakına ve bel hizasının üstüne nişan alınarak atış yapılmaz.",
+      "explanation": "Kimyasal maddeli mühimmatın çok yakından kişilerin yüzüne atılmaması için azami dikkat gösterilir. Silahı kullanacak kişi, imalatçının kullanma talimatını, uyarılarını ve ilk yardım tavsiyelerini kullanmadan önce öğrenmelidir.",
+      "articleRefs": [
+        "09-01"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Patlamalı CN veya CS fişekleri kişilerin yüzüne doğru kullanılırsa ne olabilir?",
+      "back": "Gözler yaralanabilir, hatta körlük oluşabilir.",
+      "explanation": "Yakın mesafede fırlatıcı tapa, yoğunlaştırılmış kimyasal madde tanecikleri ya da yanan barut göze girip yaralayabilir. Bu yüzden birçok ülkede bu tür fişekler hizmetten kaldırılıp imha edilmiştir. Yerlerine Streamer ya da Tear Dust silahlarının konulması çok daha az tehlikelidir.",
+      "articleRefs": [
+        "09-01"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Göz yaşartıcı gaz diye anılan kimyasal maddeler gerçekten gaz hâlinde midir?",
+      "back": "Hayır. Saf hâlde toz şekere çok benzeyen katı taneciklerdir; \"göz yaşartıcı gaz\" yalnızca yaygın kullanılan bir addır.",
+      "explanation": "Kimyasal madde araçlarıyla yayıldıklarında da teknik olarak çoğunlukla çok ince sert tanecikler hâlindedirler. Yine de sis, toz ve sıvı olarak anılırlar.",
+      "articleRefs": [
+        "09-02",
+        "09-07"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Elma çiçeği kokusuna sahip göz yaşartıcı madde hangisidir?",
+      "back": "CN.",
+      "explanation": "CN gözlerde ve göz iç zarında yoğun tahriş, sel gibi göz yaşı ve geçici olarak görememe yapar. Deride nemli kısımlarda batma ve yanma hissi oluşur. Ağızda salya salgısı ve baş ağrısı da görülür.",
+      "articleRefs": [
+        "09-03"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "CN'ye uzun süre maruz kalındığında sindirim sisteminde hangi etki görülür?",
+      "back": "Mide bulantısı.",
+      "explanation": "CN aşırı dozda deride kabarcıkların oluşmasına da yol açar.",
+      "articleRefs": [
+        "09-03"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "CN göğüste tahriş ve boğulma hissine yol açar mı?",
+      "back": "Hayır. CN'nin göğüste tesiri yoktur. Göğüste tahriş, öksürme, boğulma hissi ve panik CS'nin etkileridir.",
+      "explanation": "CS burunda tahriş, yanma ve akıntı da yapar. Baş dönmesi, huzursuzluk ve halsizliğe yol açar. CS biber kokusuna sahiptir.",
+      "articleRefs": [
+        "09-03",
+        "09-04"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Amerikan ordusu gösteri bastırma maddesi olarak CN'yi mi standart olarak benimsemiştir?",
+      "back": "Hayır, CS'yi benimsemiştir. CS'nin etkileri çok daha şiddetlidir.",
+      "explanation": "CS gözlerde yanma hissi ve sel gibi göz yaşı yapar. Gözlerin elde olmadan kapanmasına da yol açar.",
+      "articleRefs": [
+        "09-04"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Gözleri göz yaşartıcı maddeden etkilenen kişi açık havaya çıkarılınca rahatsızlığın büyük kısmı ne kadar sürede geçer?",
+      "back": "15 veya 20 dakika içinde.",
+      "explanation": "Kişi gazlı bölgeden açık havaya çıkarılır ve gözleri rüzgâra karşı gelecek şekilde tutulur; sakin durması sağlanır, hareket etmesi önlenir. Gözleri ovuşturulmaz, kontak lens varsa çıkarılır. Akan göz yaşı gözleri temizler; tanecikler gözlere yerleşmişse gözler bol suyla yıkanır.",
+      "articleRefs": [
+        "09-05"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Göz yaşartıcı maddeyle ciltte aşırı bulaşma varsa temiz suyla ne kadar süre devamlı yıkama yapılır?",
+      "back": "10 dakika.",
+      "explanation": "Nemli cilt bölgelerinde batma ve yanma hissi görülür; madde yoğun alındıysa cilt kabarır ve su toplar. Kişi temiz havalı bir yere oturtulur, hareketsiz ve sakin tutulur.",
+      "articleRefs": [
+        "09-05"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Göz yaşartıcı maddeye maruz kalan kişi için hangi durumlarda en kısa sürede tıbbi yardım alınmalıdır?",
+      "back": "Etkiler şiddetli ve uzun sürerse, başka hastalıklara dönüşürse ya da yaralar bulaşırsa.",
+      "explanation": "Orta şiddette CN ya da CS'ye maruz kalan kişide görme ve nefes alma üzerindeki etkiler temiz havada birkaç dakika içinde geçebilir.",
+      "articleRefs": [
+        "09-05"
+      ]
+    }
+  ]
+}

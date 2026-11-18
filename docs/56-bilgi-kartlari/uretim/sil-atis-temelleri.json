@@ -1,0 +1,182 @@
+{
+  "deck": {
+    "topicId": "6f0d2a35-5fb5-4223-99ea-8d4ac367b873",
+    "sourceSlug": "silah-bilgisi-ve-atis",
+    "sourceLabel": "AI bilgi kartı — Silah Bilgisi: Atış hazırlığı ve atış pozisyonları (kaynak pasajı 03-01…03-07)",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: kaynak pasajı + bankadaki sorular; stil kapısı 1 açıklama yeniden yazıldı)"
+  },
+  "cards": [
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Atıcının önünden birinin geçmesine izin vermeden önce silahın hangi durumda olduğundan emin olmalısın?",
+      "back": "Silindiri ya da mekanizması açık, mermi yatağı boş, şarjörü çıkarılmış ve emniyetli bir noktaya doğrultulmuş olmalı.",
+      "explanation": "Ateş pozisyonunun önünde biri bulunduğu sürece silahlara el sürülmez.",
+      "articleRefs": [
+        "03-01"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Basınç seviyesi bakımından hangi mühimmat asla kullanılmaz?",
+      "back": "Basınç seviyesi endüstriyel standartları aşan mühimmatı. +P+ mermiler hem sana hem silahına zarar verebilir.",
+      "explanation": "Ateşli silah ile mühimmatı bir sistem oluşturur. Bu yüzden ikisinin performansı birbirine sıkı sıkıya bağlıdır.",
+      "articleRefs": [
+        "03-01"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Kabze kavrama nedir?",
+      "back": "Tabancanın sap sayılabilecek kısmını avuç içinde tutmaktır.",
+      "explanation": "Kavrarken öne çıkan hususlar şunlardır: geri tepmeyi savuşturmak, namlu doğrultusunu kol doğrultusuyla aynı düzlemde tutmak ve avuç içi ile kabze arasında hiç boşluk bırakmamak. Kavrama kuvveti, silahın kolunun bir uzantısı gibi hissedilmesini sağlayacak kadar olmalıdır.",
+      "articleRefs": [
+        "03-02"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Çift elle atışta baş parmaklar nasıl yerleştirilir?",
+      "back": "Namlu istikametine paralel yerleştirilir; çünkü baş parmaklar atış sırasında denge unsuru sayılır.",
+      "explanation": "Çift elle tutuşta kabze önce tek elle kavranır. Ardından destek elinin parmakları tetik korkuluğunu alttan destekleyecek biçimde yerleştirilir ve diğer elin parmaklarının üzerine kıvrılır.",
+      "articleRefs": [
+        "03-02"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Baş parmaklar yukarı kalkık olursa vuruşlar hedefin altında mı toplanır?",
+      "back": "Hayır. Kalkık baş parmakla vuruşlar genellikle hedefin üst kısmında toplanır. Hedefin altına düşen vuruşlar baş parmağın aşağı bastırılıp kıvrılmasından kaynaklanır.",
+      "explanation": "En isabetli sonuç, baş parmaklar namluya paralel olduğunda alınır. Yarı ve tam ortopedik kabzelerdeki çıkıntılara konan baş parmak da namluya paralel durur.",
+      "articleRefs": [
+        "03-02"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Tek elle atışta vücut hedefe göre genellikle kaç derece yarım yan döner?",
+      "back": "Genellikle 45 derece yarım yan döner; vücut hedef doğrultusunda dik durur.",
+      "explanation": "Silahı taşıyan kol, silahla birlikte hedefe gergince uzatılır.",
+      "articleRefs": [
+        "03-03"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Tek elle duruş pozisyonunda bacakların arası en az ne kadar açık olmalı?",
+      "back": "En az iki omzun arasındaki mesafe kadar açık olmalı; vücut ağırlığı her iki bacağa eşit dağıtılır.",
+      "articleRefs": [
+        "03-03"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Kapalı poligon çift elle atış yarışma pozisyonu hangi durumda kullanılır?",
+      "back": "Yalnızca poligonlarda çift elle yapılan yarışmalarda kullanılır. Bu pozisyonda kollar hedefe uzatılır, vücut tam cephe döner.",
+      "explanation": "Bu pozisyon uzun yıllar teşkilat eğitiminde öğretildi. Ancak silahlı çatışmada atıcıyı büyük boy bir hedef hâline getirir ve vücuda hiç esneklik kazandırmaz.",
+      "articleRefs": [
+        "03-04"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Kolların gergince uzatıldığı, vücudun tam cephe döndüğü ve dizlerin sandalyeye oturur gibi kırıldığı çift elle duruşta ayakların arası ne kadar açılır?",
+      "back": "İki omuz arasındaki mesafeden daha fazla açılır.",
+      "explanation": "Tek elle duruş pozisyonunda ise bacakların arası en az iki omuz arasındaki mesafe kadar açık olur.",
+      "articleRefs": [
+        "03-04",
+        "03-03"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Çökerek atış pozisyonu hangi durumlarda uygulanır?",
+      "back": "Daha fazla destek sağlayarak atış yapmak gerektiğinde ya da alçak siperlerin arkasına saklanarak atış yaparken uygulanır.",
+      "articleRefs": [
+        "03-04"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Oturarak atışta hata yapmamak için tabancayı ne zaman çekmelisin?",
+      "back": "Oturmadan önce çekmelisin.",
+      "explanation": "Tabanca namlu bacaklara yönelmeyecek biçimde bacağa paralel tutulur. Atıcının kulvarının dışına ve gerisine taşmamalıdır, çünkü yan kulvarlarda da atış yapılmaktadır.",
+      "articleRefs": [
+        "03-05"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Destekli oturarak atışta kollar nereden ve neyle desteklenir?",
+      "back": "Dizlerle, bilek bölgesinden desteklenir. Bu istikrarlı bir pozisyondur.",
+      "explanation": "Desteksiz oturarak atışta ise kollar tamamen uzatılır ve ayaklar vücuda yakın tutulur; bu da dizleri ve tabancayı yükseltir. Tabanca fazla yükselirse ayaklar vücuttan uzaklaştırılarak ayar yapılır.",
+      "articleRefs": [
+        "03-05"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Hedefin en fazla küçültülebildiği atış pozisyonu hangisidir?",
+      "back": "Yatarak atış pozisyonudur.",
+      "explanation": "Yatarak atış iki biçimde yapılır. Birincisinde yüz üstü uzanırsın ve gövden bütünüyle zemine değer; ayakların bitişik de durabilir, yanlara açık da. İkincisinde silahı tuttuğun kolun tarafına doğru yarım yan dönersin, öteki bacağını büküp karnına doğru çekersin. Bu ikinci duruş, yana yuvarlanarak hem yönünü hem de yerini değiştirmene olanak tanır.",
+      "articleRefs": [
+        "03-06"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Sağ yan taraftan barikat gerisi atış yaparken hangi ayak geride olur?",
+      "back": "Sağ ayak geride olur; tabanca sağ eldedir ve ayakta dik durulur.",
+      "explanation": "Sağ elle ateş ediliyorsa nişan mutlaka sağ gözle alınır. Böylece barikatın gizleme özelliğinden en üst düzeyde yararlanılır.",
+      "articleRefs": [
+        "03-07"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Sağ yan taraftan barikat gerisi atışta tabanca desteğini nereden alır?",
+      "back": "Barikata dayanan sol elin baş parmağından alır. Sağ el, bilek kısmından bu baş parmağın üzerine yerleştirilir; bilek serbestçe hareket edebilmelidir.",
+      "explanation": "Horoz, tabanca yerleştirildikten sonra kurulur.",
+      "articleRefs": [
+        "03-07"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Tabancayı doğrudan barikata dayamak daha fazla destek sağlar mı?",
+      "back": "Hayır. Fazladan destek sağlamaz; tabancaya hasar verir ve geri tepme atışı hedefin tamamen dışına kaydırır.",
+      "explanation": "Barikat pozisyonunda tüm destek baş parmaktan alınır ve tabancanın hiçbir kısmı barikata temas etmez.",
+      "articleRefs": [
+        "03-07"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Atışta her durumda en hızlı ateş etmek mi esastır?",
+      "back": "Hayır. Bazı durumlarda silahı çok süratli çekip ateş etmek gerekir; bazı durumlarda ise acele etmeden yapılan isabetli atış daha önemlidir.",
+      "explanation": "Her atış pozisyonunun yararlı ve sakıncalı yanları vardır; önemli olan ortama göre en etkili pozisyonu seçmektir.",
+      "articleRefs": [
+        "03-02"
+      ],
+      "counterNumbers": []
+    }
+  ]
+}

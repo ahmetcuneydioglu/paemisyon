@@ -1,0 +1,134 @@
+{
+  "deck": {
+    "topicId": "6f0d2a35-5fb5-4223-99ea-8d4ac367b873",
+    "sourceSlug": "silah-bilgisi-ve-atis",
+    "sourceLabel": "AI bilgi kartı — Silah Bilgisi: MP-5 makineli tabanca (kaynak pasajı 06-15…06-23)",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: kaynak pasajı + bankadaki sorular)"
+  },
+  "cards": [
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "MP-5 makineli tabancayı hangi firma geliştirmiştir?",
+      "back": "Alman Heckler-Koch firması geliştirmiştir.",
+      "articleRefs": [
+        "06-15"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "MP-5 makineli tabanca hangi fişeği kullanır?",
+      "back": "9x19 mm Parabellum fişek kullanır.",
+      "explanation": "Silahın çapı 9 mm, kovan boyu 19 mm'dir.",
+      "articleRefs": [
+        "06-15",
+        "06-16"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "MP-5 makineli tabanca hangi sisteme göre çalışır?",
+      "back": "Geri tepme sistemine göre çalışır ve namlusu sabittir.",
+      "explanation": "Atış ayar mandalıyla yarı otomatik ya da tam otomatik atış yapılabilir.",
+      "articleRefs": [
+        "06-15"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Uzun (sabit) dipçikli MP-5 makineli tabancanın şarjörsüz (boş) ağırlığı ne kadardır?",
+      "back": "2,450 kg. Açılır-kapanır dipçikli modelde şarjörsüz ağırlık 2,550 kg'dır.",
+      "articleRefs": [
+        "06-16"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "MP-5'te makaralı kilitleme düzeni, mermi çekirdeği namluyu terk edene kadar neyi önler?",
+      "back": "Boş kovanın fişek yatağından geri çekilmesini önler. Böylece barut gazı basıncından azami ölçüde yararlanılır.",
+      "explanation": "Mekanizma parçaları gecikmeli olarak geri teper. Kilit makaraları mekanizma başlığına tam oturunca mekanizma geri gitmeye devam eder; bu sırada boş kovan atılır ve horoz yeniden kurulur.",
+      "articleRefs": [
+        "06-17",
+        "06-16"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "MP-5'te kurma kolu en geri pozisyona alınıp takılı bırakılırsa ne işlev görür?",
+      "back": "Bir tür emniyet görevi yapar.",
+      "explanation": "Kurma kolu namlunun üst kısmındadır. Silahı elle doldurmak ve kurmak için de kullanılır.",
+      "articleRefs": [
+        "06-19"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "MP-5'in 1. grubunda hangi parçalar birlikte yer alır?",
+      "back": "Gövde, namlu, kurma kolu ve nişangâh düzeni.",
+      "explanation": "Bu parçalar birbirine bağlıdır; diğer bütün ana parçalar bu grubun içine ya da üzerine takılır.",
+      "articleRefs": [
+        "06-19",
+        "06-18"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "MP-5'te namluyu alttan yarım kapatan, pimle tespit edilen ve yerinden çıkarılabilen parça hangisidir?",
+      "back": "El kundağıdır.",
+      "articleRefs": [
+        "06-19",
+        "06-16"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "MP-5'te boş kovan atacağı mekanizma ve iğne grubuna mı aittir?",
+      "back": "Hayır, boş kovan atacağı kabze grubuna aittir. Mekanizma ve iğne grubu ise boş kovanı tırnak yardımıyla çıkarır.",
+      "explanation": "Tetik mekanizması kutusu tetiği, horozu, boş kovan atacağını ve emniyet mandalını kapsar. Bu kutu kabze grubunun içine yerleştirilmiştir.",
+      "articleRefs": [
+        "06-19"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "MP-5'te tam otomatik atıştan vazgeçmek için ne yapmak yeterlidir?",
+      "back": "Tetiği bırakmak yeterlidir. Tetik parmakla çekili tutuldukça atış kendiliğinden sürer.",
+      "explanation": "Tam otomatik atışta emniyet tetiği devre dışı kalır. Yarı otomatik atışta ise horoz, her atıştan sonra ancak tetik yeniden çekilince serbest kalır.",
+      "articleRefs": [
+        "06-20"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "MP-5'in döner gezinde kaç ayrı büyüklükte daire bulunur?",
+      "back": "4 ayrı büyüklükte daire bulunur. Atıcı bunlardan birini nişan alacağı mesafeye göre seçer.",
+      "explanation": "Zayıf aydınlatmada ya da ani atış gerektiğinde büyük çaplı daireyi seçmek nişan almayı kolaylaştırır ve hızlandırır.",
+      "articleRefs": [
+        "06-20",
+        "06-19"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "MP-5'te yükseklik ve rüzgâr ayarı hangi parçayla yapılır?",
+      "back": "Döner gezle yapılır.",
+      "explanation": "Gez, mesafeye göre ayarlanabildiği gibi rüzgâr için de ayarlanabilir.",
+      "articleRefs": [
+        "06-19",
+        "06-16"
+      ]
+    }
+  ]
+}

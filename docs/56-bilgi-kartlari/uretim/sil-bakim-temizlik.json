@@ -1,0 +1,133 @@
+{
+  "deck": {
+    "topicId": "6f0d2a35-5fb5-4223-99ea-8d4ac367b873",
+    "sourceSlug": "silah-bilgisi-ve-atis",
+    "sourceLabel": "AI bilgi kartı — Silah Bilgisi: Silah bakımı ve temizliği (kaynak pasajı 08-01…08-03)",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: kaynak pasajı + bankadaki sorular; stil kapısı 2 açıklama yeniden yazıldı)"
+  },
+  "cards": [
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Ateş edilmemiş bir silah bir yere bırakılacaksa bakım olarak ne yapılır?",
+      "back": "Dış kısmı hafif yağlı bir bezle silinir.",
+      "explanation": "Atış yapıldıysa bakım daha kapsamlıdır: sürgü, çerçeve ve şarjör kir ve atış artıklarından bez ya da yumuşak fırçayla temizlenir, namlu içi de namlu fırçasıyla temizlenir.",
+      "articleRefs": [
+        "08-01"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Silah bakımında üretici firmanın belirttiği özel silah yağı bulunamazsa hangi yağ kullanılabilir?",
+      "back": "Dikiş makinesi yağı kullanılabilir.",
+      "explanation": "Asıl kullanılması gereken, üretici firmanın belirttiği özel silah yağıdır. Dikiş makinesi yağına ancak bu yağ bulunamadığında başvurulur.",
+      "articleRefs": [
+        "08-01"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Her atıştan sonra mutlaka temizlenip hafifçe yağlanması gereken kısım hangisidir?",
+      "back": "Namlu. Diğer kısımların bez ya da fırçayla silinmesi, hareket eden kısımların da zaman zaman yağlanması yeterlidir.",
+      "explanation": "Namlu içi namlu fırçasıyla iyice temizlenir. Atış artıklarını çıkarmak için bu işlem birkaç defa tekrarlanır.",
+      "articleRefs": [
+        "08-01"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Atıştan önce namlu içinin bol yağlı bırakılması doğru mudur?",
+      "back": "Hayır. Atıştan önce namlu içi aşırı yağlı ve tozlu olmamalıdır; namlu üzerindeki yağ silinir.",
+      "explanation": "Namlu, atıştan önce yağsız olması gereken parçalardandır. Silah çok az yağlıyken ya da pratik olarak yağsızken de işlevini görür.",
+      "articleRefs": [
+        "08-01",
+        "08-03"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Silahın yağlanmasında nasıl bir yağ kullanılmalıdır?",
+      "back": "Çok ince yağ kullanılmalı; kalın yağdan kesinlikle kaçınılır.",
+      "explanation": "İnce yağdan kastedilen, özel silah yağı ya da dikiş makinesi yağıdır.",
+      "articleRefs": [
+        "08-01"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Günlük atışlardan sonra hangi silahların temizlenmesi gerekir?",
+      "back": "Tümünün. Otomatik de olsa tek tek doldurulan da olsa her silah günlük atıştan sonra mutlaka temizlenir.",
+      "articleRefs": [
+        "08-02"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Silahlarda görülen pek çok tutukluk neden kaynaklanır?",
+      "back": "Silahı kullananın ihmalinden ve silah hakkındaki bilgi eksikliğinden.",
+      "explanation": "Bu nedenle bütün otomatik silahlar devamlı temizlik ve bakım ister.",
+      "articleRefs": [
+        "08-02"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Gazla çalışan tüfekte sert kromdan yapılmış piston ve gaz kapağı atıştan önce hafifçe yağlı bırakılmalı mı?",
+      "back": "Hayır. Bu parçalar atışa yağsız girmelidir; hafif yağlanmışlarsa silinip kurulanır.",
+      "explanation": "Atıştan önce yağsız olması gereken parçalar arasında namlu, gaz silindiri, piston krom parçaları ve gaz kapağı yer alır.",
+      "articleRefs": [
+        "08-02",
+        "08-03"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Gazla çalışan tüfekte namlunun içi ile gaz silindiri ön yarısının iç kısmı neden daha fazla özen ister?",
+      "back": "Barut gazının yanmasına ve sürtünmesine doğrudan maruz kaldıkları için.",
+      "explanation": "Şartlar elverdiğinde namlu ve gaz silindirinin tam temizliği acele edilmeden yapılır. Namlu özel yağa batırılmış fırça ya da süngerle, gaz silindiri ön parçasının içi ve gaz bloku da fırça ve özel yağla yıkanır. Ardından temiz bezle kurulanır; beyaz pamuklu bez temiz çıkana dek işlem sürer. Son olarak namlu, fişek yatağı da dahil, ve gaz silindiri hafifçe yağlanır.",
+      "articleRefs": [
+        "08-02"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Gazla çalışan tüfekte namlu ve gaz silindiri temizlenirken zımpara kâğıdı gibi aşındırıcı bir madde kullanılabilir mi?",
+      "back": "Hayır. Aşındırıcı maddeler her zaman zararlıdır; namlu ve gaz silindiri bunlarla temas etmeyecek biçimde düzenli temizlenir.",
+      "articleRefs": [
+        "08-02"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Gazla çalışan tüfekte atıştan hemen sonra, atış sahasından ayrılmadan namlu ve gaz silindiri nasıl temizlenir?",
+      "back": "Yağla ıslatılmış bir bez parçasıyla temizlenir.",
+      "explanation": "Bu önlem barut gazı artıklarının zararlı etkisini nötr hâle getirir. Gaz silindiri ile gaz blokunda karbon birikmesini de önler.",
+      "articleRefs": [
+        "08-03"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Gazla çalışan tüfekte atış sahasından ayrılmadan namlu ve gaz silindirini yağlı bezle silmek, normal temizliği zarar vermeden en az ne kadar geciktirmeye imkân verir?",
+      "back": "En az 24 saat.",
+      "explanation": "Bu ön tedbir emniyet sağlar. Namlu ve gaz silindirinin son temizliğini de kolaylaştırır.",
+      "articleRefs": [
+        "08-03"
+      ]
+    }
+  ]
+}

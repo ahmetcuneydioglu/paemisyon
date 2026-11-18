@@ -1,0 +1,132 @@
+{
+  "deck": {
+    "topicId": "6f0d2a35-5fb5-4223-99ea-8d4ac367b873",
+    "sourceSlug": "silah-bilgisi-ve-atis",
+    "sourceLabel": "AI bilgi kartı — Silah Bilgisi: Doldurma, boşaltma, sökme ve takma (kaynak pasajı 05-01…05-12)",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: kaynak pasajı + bankadaki sorular)"
+  },
+  "cards": [
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Tabanca şarjöründeki fişeklerin kendiliğinden dışarı çıkmasını ne engeller?",
+      "back": "Şarjör ağız kenarları. Gerdelin altındaki şarjör yayı fişekleri sürekli dışarı iter, kenarlar ise çıkışa izin vermez.",
+      "explanation": "Boşaltırken şarjörü sol avucunda tutarsın. Sağ baş parmakla fişeğin dibine aşağı doğru bastırır, kenarlardan ileri itersin; fişek avucuna düşer.",
+      "articleRefs": [
+        "05-02"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "CZ 75 tabanca, horoz kurulu değilken emniyet mandalıyla emniyete alınabilir mi?",
+      "back": "Hayır. Emniyete alma yalnızca horoz kuruluyken yapılabilir; diğer durumlarda mandal zorlanmaz.",
+      "explanation": "Emniyete almak için mandal sağ el parmağıyla tamamen yukarı itilir. Ateş etmek için mandal aşağı çekilerek emniyetten kurtarılır.",
+      "articleRefs": [
+        "05-03"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "CZ 75 tabancada son fişek ateşlenip şarjör boşalınca sürgü ne durumda kalır?",
+      "back": "Sürgü geride takılı kalır. Normal durumuna getirmek için sürgü tutucusunun gerideki tırtırlı kısmını aşağı bastırırsın.",
+      "explanation": "Emniyetten kurtarılmış tabancada nişan alınır ve her atış için tetik ayrı ayrı çekilir.",
+      "articleRefs": [
+        "05-03"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Kapalı bir yerde, örneğin binada, tabancayı boşaltırken namluyu nereye çevirmelisin?",
+      "back": "Duvarların döşeme ya da tavanla kesiştiği köşelere. Açık yerlerde ise çekirdeğin saplanabileceği yumuşak zeminler seçilir.",
+      "explanation": "Namlu, karşısına canlı hedef gelmeyecek ölü bir noktaya yöneltilir. İstenmeyen bir patlamada çekirdeğin sekerek yön değiştirebileceği göz önünde tutulur.",
+      "articleRefs": [
+        "05-04"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Tabanca boşaltılırken şarjörden önce sürgü çekilip fişek yatağı boşaltılır mı?",
+      "back": "Hayır. Önce şarjör çıkarılır, ardından sürgü geriye kadar çekilip fişek yatağı boşaltılır.",
+      "explanation": "Sürgü çekili durumdayken sürgü tutucusunun geri kısmı yukarı itilerek kilitlenir ve sürgü açık tutulur. Fişek yatağının boşluğu göz ve/veya elle kontrol edilir. Ardından sürgü tutucusu aşağı bastırılır, şarjör yerleştirilir ve tetik çekilir.",
+      "articleRefs": [
+        "05-04"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "CZ 75 tabancanın sürgüsü kızaklardan çıkarılırken hangi parçalarla birlikte çıkar?",
+      "back": "Namlu, yerine getiren yay ve kılavuz çubuğu ile birlikte çıkar.",
+      "explanation": "Sürgü çıkarılırken tetiğe hafifçe baskı yapmak işi kolaylaştırır.",
+      "articleRefs": [
+        "05-05"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "CZ 75 tabanca hangi sırayla sökülür?",
+      "back": "Önce şarjör çıkarılır ve fişek yatağı boşaltılır. Sonra sürgü çerçeveden alınır. Ardından yerine getiren yay ile kılavuz çubuğu, en son da namlu sürgüden ayrılır.",
+      "explanation": "Sürgüyü çıkarmak için sürgünün sol yanındaki çentik, çerçevenin sol yanındaki sökme kılavuz çentiğiyle çakıştırılır ve sürgü tutucusu mili dışarı alınır. Yay ile kılavuz çubuğu çıkarken yayın fırlamamasına dikkat edilir.",
+      "articleRefs": [
+        "05-05"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "CZ 75 tabanca söküldüğünde hangi parçalara ayrılır?",
+      "back": "Sürgü, namlu, yerine getiren yay ve kılavuz çubuğu, çerçeve ve sürgü tutucusu.",
+      "explanation": "Sökmeye başlamadan önce şarjör çıkarılır ve fişek yatağı fişekten arındırılır.",
+      "articleRefs": [
+        "05-05"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Sürekli (tam otomatik) atışa ayarlı silahta tetiği çekip ilk patlama sesini duyar duymaz bırakarak yapılan atışlara ne denir?",
+      "back": "Darbe atışı.",
+      "explanation": "Tetik bırakılmadıkça sürekli atış devam eder ve şarjördeki bütün fişekler biter.",
+      "articleRefs": [
+        "05-09"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Sürekli (tam otomatik) atışa ayarlı silahta tek atış nasıl yapılabilir?",
+      "back": "Tetiği çok süratli çekip bırakarak.",
+      "explanation": "Tek tek (yarı otomatik) atışta ise her atış için tetik ayrı ayrı çekilir.",
+      "articleRefs": [
+        "05-09"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Tüfekte kabze grubu ve tetik mekanizması sökülmeden önce horoz neden düşürülür?",
+      "back": "Horoz kurma yayının serbest kalması için.",
+      "explanation": "Ardından emniyet (ateş ayar) mandalı dikey duruma gelene kadar döndürülür ve dışarı çekilerek çıkarılır. Sonra tetik mekanizması kabzeden alınır.",
+      "articleRefs": [
+        "05-11"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Tüfeği taktıktan sonra takma işlemlerinin doğru yapıldığını nasıl kontrol edersin?",
+      "back": "Doldurma ve kurma hareketlerini tekrarlayarak kontrol edersin.",
+      "explanation": "Takma sırası şöyledir: el kundağı, yerine getiren yayla birlikte mekanizma, kabze grubu, dipçik ve taşıma kayışı. Kabze grubu kapatılırken emniyet mandalı emniyet durumuna getirilir.",
+      "articleRefs": [
+        "05-12"
+      ]
+    }
+  ]
+}

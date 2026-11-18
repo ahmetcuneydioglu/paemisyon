@@ -1,0 +1,190 @@
+{
+  "deck": {
+    "topicId": "6f0d2a35-5fb5-4223-99ea-8d4ac367b873",
+    "sourceSlug": "silah-bilgisi-ve-atis",
+    "sourceLabel": "AI bilgi kartı — Silah Bilgisi: Silah emniyet kuralları (kaynak pasajı 01-01…01-04)",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: kaynak pasajı + bankadaki sorular; stil kapısı 1 açıklama yeniden yazıldı)"
+  },
+  "cards": [
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Ateş etmeye hazır olana kadar tetik parmağını nerede tutarsın?",
+      "back": "Tetikten uzakta, tetik korkuluğunun üzerinde tutarsın; böylece gerektiğinde tetiğe hemen ulaşırsın.",
+      "explanation": "Silah, tetik çekilmedikçe ateş etmez. Parmağın korkuluk üzerinde durması, her an gerekebilecek tetik çekme hareketine hazır olmanı sağlar.",
+      "articleRefs": [
+        "01-01"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Biri silahın boş olduğunu söylediyse, bu söze dayanıp kontrolü atlayabilir misin?",
+      "back": "Hayır. Silahın boş olduğuna dair beyanlara aldırmazsın; kontrolü her zaman kendin yaparsın.",
+      "explanation": "Tabancaya her zaman doluymuş ve tetik çekilince ateşe hazırmış gibi davranılır. Silah ele alınırken de çok büyük özen gösterilir.",
+      "articleRefs": [
+        "01-01"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Ateş etmeden önce hedefin arkasıyla ilgili hangi koşul sağlanmalıdır?",
+      "back": "Hedefin arkasında ne olduğu bilinmeli; sekmeye yol açabilecek yüzeylerin bulunmadığı emniyetli bir arka dayanak olmalıdır.",
+      "explanation": "Merminin nereyi vuracağından emin olmadan ateş edilmez. Hedefin ne ya da kim olduğu kesin olarak teşhis edilmeden de tetiğe basılmaz.",
+      "articleRefs": [
+        "01-01"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Kullanılmayan bir silah evde nasıl emniyet altına alınır?",
+      "back": "Tetik kilidiyle kilitlenir ya da şarjörü çıkarılıp silindiri boşaltılır. Silah evdeyken hep boş tutulur.",
+      "explanation": "Silah kilitli bir çekmecede ya da gözden uzak bir yerde saklanır. Boş olduğunun kontrol edilmesi de unutulmaz.",
+      "articleRefs": [
+        "01-02"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Evde hava cereyanı sağlanamıyorsa tabanca nasıl korunur?",
+      "back": "Dış yüzeyi ince bir film tabakası hâlinde tabanca gresiyle yağlanır, ardından yağlı kâğıda sarılır.",
+      "explanation": "Silahı yerleştirirken çevresinde hava cereyanı bulunmasına dikkat edilir. Hava almayan bir yerde metal kısımlar hava şartlarıyla karşılaşınca terler ve paslanır.",
+      "articleRefs": [
+        "01-02"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "İyi saklanmayan fişeklerde kapsül ve barutun ateş almamasına ne yol açar?",
+      "back": "Rutubetlenme. Serin ve kuru bir yerde saklanan fişekler yıllarca bozulmadan kalabilir.",
+      "explanation": "Fişekleri silahla aynı yere koyma; orijinal kutularında, çocukların ulaşamayacağı kilitli bir yerde sakla. Çapları farklı fişekleri birbirinden ayrı yerlerde tut.",
+      "articleRefs": [
+        "01-02"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Silahı bir yerden bir yere nakletmeden önce yapacağın ilk iş nedir?",
+      "back": "Silahı boşaltmaktır.",
+      "explanation": "Otomobil ya da benzeri bir araçta dolu bir silahı güvenle koyabileceğin bir yer yoktur. Boşaltılan silah ayrıca kutu ya da çekmece gibi bir yere konur.",
+      "articleRefs": [
+        "01-03"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Görevdeyken silahın araçta kutu ya da çekmece gibi bir yere konması tedbiri aynen uygulanır mı?",
+      "back": "Hayır. Görev sırasında taşıma, görevin gerektirdiği şartlara göre yapılır; bu tedbir o durumu kapsamaz.",
+      "explanation": "Görev dışındaki nakilde silah önce boşaltılır, sonra kutu ya da çekmece gibi bir yere konur.",
+      "articleRefs": [
+        "01-03"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Atıştan sonra silah nakledilecekse, yanındaki diğer silah taşıyanlar için ne yaparsın?",
+      "back": "Onları da silahlarını boşaltıp boş olduğunu kontrol etmeleri için uyarırsın.",
+      "explanation": "Kendi silahında da şarjörü çıkarırsın, silindiri boşaltırsın ve silahın boş olduğunu kontrol edersin.",
+      "articleRefs": [
+        "01-03"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 1,
+      "front": "Fişek ateş almadığında hemen sebebini araştırmaya başlar mısın?",
+      "back": "Hayır. Önce bir süre beklersin; ateş almamanın sebebini ancak ondan sonra araştırırsın.",
+      "explanation": "Atış sırasında silahın dolu olduğu hiçbir zaman unutulmaz ve buna göre davranılır.",
+      "articleRefs": [
+        "01-04"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Poligonda tutukluk ya da arıza olduğunda namluyu hedef istikametinden başka bir yöne çevirebilir misin?",
+      "back": "Hayır. Tutukluk, arıza ve benzeri durumlarda namlu hedef istikametinde kalır; yanında arkadaşların ve eğiticiler vardır.",
+      "explanation": "Tutukluk ya da arıza, namluyu çevirmek için gerekçe değildir; atış sırasında silahın dolu olduğu hiçbir zaman unutulmaz.",
+      "articleRefs": [
+        "01-04"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Silahında hangi mühimmatı kullanırsın?",
+      "back": "Yalnız silahın için tasarlanmış, doğru kalibredeki mühimmatı kullanırsın; uygun olmayan mühimmat asla kullanılmaz.",
+      "articleRefs": [
+        "01-01"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Silahla ilgilenmek için neden özel bir silah alanı belirlenir?",
+      "back": "Dikkatin dağılmasını önlemek için. Ayrıca o yerde belli ölçüde emniyet tertibatı bulunduğundan kaza ateşlemesinde zarar en aza iner.",
+      "explanation": "Silahın, uygun sanılan her yer ve ortamda kurcalanmasına izin verilmez. Silahı kontrol etmek isteyen kişi, işlemi bu iş için belirlenmiş yerde yapar.",
+      "articleRefs": [
+        "01-01"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Poligonda atıcı, atışın açıklanmasından hedeflerin kontrolüne kadar hangi hatları kullanır?",
+      "back": "Hazırlık hattı, atış hattı ve hedef hattı. Atışın türü hazırlık hattında açıklanır, atış atış hattında yapılır, atış bitince hedef hattına gidilip hedeflere bakılır.",
+      "explanation": "Atış hattına atış amirinin komutuyla gelinir. Atış bitiminde silahlar bırakılır; hedef hattına ancak atış amirinin “hedef kontrol” komutuyla gidilir.",
+      "articleRefs": [
+        "01-04"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Kurulu horozu tetiği çekerek kurulu durumdan kurtarırken nasıl davranırsın?",
+      "back": "Horozu parmağınla sağlamca tutarsın, hatta bir parmağını önüne koyarsın. Horoz kurtulunca parmağını hızla tetikten çeker, horozu yavaşça düşürmeye devam edersin.",
+      "explanation": "Gerekmedikçe horoz el ile düşürülmez.",
+      "articleRefs": [
+        "01-04"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Elinde tabanca varken biriyle sohbete dalmak neden emniyet kuralına aykırıdır?",
+      "back": "Silah eldeyken bütün dikkat silaha yönelmelidir. Sohbete dalınca namlu yönünü denetlemek zorlaşır ve dikkat emniyetten konuşmaya kayar.",
+      "articleRefs": [
+        "01-01"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Poligonda hedef istikametindeki kişileri mermi isabetinden korumak için ateş etmeden önce neyi kontrol edersin?",
+      "back": "Ateş hattının gerisinde insan bulunup bulunmadığını kontrol edersin.",
+      "articleRefs": [
+        "01-04"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Mermi yatağının boş olduğunu gözle kontrol ederken silah hangi durumda olmalıdır?",
+      "back": "Şarjör boşaltılmış ve kızak açık olmalıdır. Ardından namlunun tıkanıklıklardan arındırıldığından emin olunur.",
+      "articleRefs": [
+        "01-01"
+      ]
+    }
+  ]
+}

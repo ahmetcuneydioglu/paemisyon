@@ -1,0 +1,152 @@
+{
+  "deck": {
+    "topicId": "6f0d2a35-5fb5-4223-99ea-8d4ac367b873",
+    "sourceSlug": "silah-bilgisi-ve-atis",
+    "sourceLabel": "AI bilgi kartı — Silah Bilgisi: Nişan alma ve tetik (kaynak pasajı 04-01…04-09)",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: kaynak pasajı + bankadaki sorular)"
+  },
+  "cards": [
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Nişan alırken bakış yoğunluğu hangi öğe üzerinde sabitlenir?",
+      "back": "Arpacık üzerinde sabitlenir. Bu sırada gez ve hedef bulanık görülür.",
+      "explanation": "Gez göze arpacıktan daha yakın, hedef ise arpacıktan daha uzaktadır; arpacık göze en uygun mesafededir. Bakışı arpacığa sabitlemek gözü daha az yorar ve daha sağlıklı atış sağlar.",
+      "articleRefs": [
+        "04-03"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Tutuş kusursuzsa, gez ve arpacık ayarsız olsa da atış sonucu iyi olur mu?",
+      "back": "Hayır. Gez ve arpacık ayarsızsa, tutuş ne kadar iyi olursa olsun sonuç kötü olur.",
+      "explanation": "Tersi de geçerlidir: gez ve arpacık tam ayarlıysa, tutuş kusurlu olsa bile mermi gez ve arpacığın nişan aldığı yere gider.",
+      "articleRefs": [
+        "04-03"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Doğru nişan almak için gez içindeki arpacık nasıl görünmelidir?",
+      "back": "Arpacığın tepesi, gezin silme tepesiyle aynı seviyede olmalıdır. Arpacığın sağında ve solunda kalan boşluklar da eşit olmalıdır.",
+      "explanation": "Gezin içine yerleştirilen arpacık net görülür ve bu hizalama onun üzerinden yapılır.",
+      "articleRefs": [
+        "04-04"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Tabancada tetik nasıl çekilir?",
+      "back": "Tetik boşluğu alındıktan sonra yalnız işaret parmağının gücüyle, önden arkaya düz bir hatta, ezer gibi artan bir kuvvetle çekilir.",
+      "explanation": "Tetik, işaret parmağının ilk boğumunun ucuna yerleştirilir. Tetiği çeken parmak, tetik dışında tabancanın başka bir yerine değmez.",
+      "articleRefs": [
+        "04-04"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Nişan hattı hangi öğelerin aynı düzlemde bulunmasıyla oluşur?",
+      "back": "Göz, gez, arpacık ve hedef.",
+      "explanation": "Nişan hattı doğru ya da dikkatli ayarlanmazsa mermi istenen noktadan başka bir yere isabet eder. Ayardaki dikkatsizlik, atıcıların genel hatalarının başında gelir.",
+      "articleRefs": [
+        "04-02",
+        "04-05"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Nişan aldıktan sonra dikkatini hedef noktasına ve silahın patlamasına kaydıran atıcının isabetini ne bozar?",
+      "back": "Gez ile arpacık arasındaki irtibatın bozulması. Tutuş ve tetik düşürme mükemmel olsa da isabet olumsuz etkilenir.",
+      "explanation": "Dikkat hedefe ve patlamaya kayınca gez ile arpacık ikinci planda kalır ve atıcı farkında olmadan tuzağa düşer. Bu dikkatsizlik tecrübeli atıcıda da görülür.",
+      "articleRefs": [
+        "04-05"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Hedefteki isabetler çok dağınıksa ve belirli bir bölgede gruplaşma yoksa hangi sonuca varılır?",
+      "back": "Düzeltme yapılamaz, çünkü hangi yönde düzeltileceği belirlenemez. Atıcının istikrarsız atış yaptığı sonucuna varılır.",
+      "explanation": "Düzeltme ancak isabetler merkez dışında bir bölgede gruplaşmışsa mümkündür.",
+      "articleRefs": [
+        "04-06"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "İsabetler hedefin sol yukarısında gruplaşıyorsa gez hangi yöne kaydırılır?",
+      "back": "Sağa ve aşağıya kaydırılır. Düzeltme tek seferde olmaz; isabetler merkezde toplanana kadar etap etap sürer.",
+      "explanation": "Her düzeltmeden sonra yeniden atış yapılır ve isabetlerin merkeze yaklaşması izlenir.",
+      "articleRefs": [
+        "04-06"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Nişangâhta hata yokken merkeze nişan alan atıcının isabetleri başka bir bölgede gruplaşıyorsa, nişan değiştirerek nasıl düzeltme yapılır?",
+      "back": "Gruplaşmanın merkezi bulunur ve nişan noktasına uzaklığı belirlenir. Sonra bu uzaklık kadar ters yöndeki bir noktaya nişan alınır.",
+      "explanation": "Aynı yöntem, gez ya da arpacıktaki hatayı düzeltmeye fırsat olmadığında da kullanılabilir. Bunun için atıcının silahındaki hatayı ve derecesini önceden bilmesi gerekir.",
+      "articleRefs": [
+        "04-06"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Kuvvetli ışıkta parlayan bir arpacık, parlama olan tarafta nasıl görünür?",
+      "back": "Küçük görünür. Gölge olan tarafta ise büyük görünür.",
+      "explanation": "Parlama, kuvvetli ışık alan yönlerde ve özellikle arpacığın ucundaki boya aşındığında oluşur. Atış müsabakalarında bu hatayı azaltmak için arpacık kibrit ya da çakmak isiyle karartılır.",
+      "articleRefs": [
+        "04-06"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Nişan hattı bir kez ayarlandıktan sonra kalan hatalar neyle düzeltilir?",
+      "back": "Yalnız bilek hareketiyle düzeltilir. Kabzadaki basınç hiç değiştirilmez, ardından bilek tamamen kilitli tutulur.",
+      "explanation": "Bilek, mengeneyle sıkıştırılmış gibi kilitli kalmalıdır. Tetiğe basınç yapılırken gez ve arpacık sürekli kontrol altında tutulur.",
+      "articleRefs": [
+        "04-07"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Tetik çekilirken nişan hattının bozulduğunu fark edersen en uygun yöntem nedir?",
+      "back": "Geri dönüp nişan hattını yeniden ayarlarsın, sonra tetiğe baştan basınç yapmaya başlarsın.",
+      "explanation": "Basıncı aynı seviyede tutup hattı düzeltmek ve kaldığın yerden devam etmek, ani tetik çekmeye ve kabzadaki basıncın artmasına yol açabilir.",
+      "articleRefs": [
+        "04-07"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Yarım ay biçimindeki tetikte tetiği çekecek parmak nereye konmalıdır?",
+      "back": "Yarım ayın ortasına, hatta daha aşağısına; her atışta da aynı noktaya.",
+      "explanation": "Tetik üst ucundaki pim etrafında döner. Parmak tetiğin üst tarafına konursa daha fazla, alt uca yakın konursa daha az basınç gerekir. Parmağın yeri değiştikçe atıcı gereken basıncı yanlış tahmin edebilir.",
+      "articleRefs": [
+        "04-07"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Atışta göz ile gez arasındaki mesafeyi uzatmak ne sağlar?",
+      "back": "Arpacık gez içine tam oturur ve gez boşluğunu doldurur. Böylece nişan daha sağlıklı alınır.",
+      "explanation": "Teknik bir zorunluluk yoksa bu mesafe mümkün olduğunca uzatılır. Kollar ileri uzatılır, dirsekten bükülmez.",
+      "articleRefs": [
+        "04-08"
+      ]
+    }
+  ]
+}

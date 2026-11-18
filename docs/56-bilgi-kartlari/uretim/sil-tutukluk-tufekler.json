@@ -1,0 +1,215 @@
+{
+  "deck": {
+    "topicId": "6f0d2a35-5fb5-4223-99ea-8d4ac367b873",
+    "sourceSlug": "silah-bilgisi-ve-atis",
+    "sourceLabel": "AI bilgi kartı — Silah Bilgisi: Tutukluklar ve piyade tüfekleri (kaynak pasajı 07-01…07-13)",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: kaynak pasajı + bankadaki sorular; stil kapısı 2 açıklama yeniden yazıldı)"
+  },
+  "cards": [
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Tabancada boş kovan dışarı atılmıyorsa tırnakla ilgili hangi arıza bu tutukluğa sebep olabilir?",
+      "back": "Tırnağın ya da tırnak yayının kırık olması; bu durumda silah tamire yollanır.",
+      "explanation": "Aynı tutukluğa arızalı kovan atacağı da yol açabilir; o zaman da silah tamire gönderilir. Sebep kirli fişek yatağıysa fişek yatağı ve gaz kanalları temizlenir.",
+      "articleRefs": [
+        "07-01"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Tabancada kapsül ateşlenmiyor ve fişekte sorun yoksa hangi parçaların kırık olması sebep olabilir?",
+      "back": "İğne, iğne ucu ya da iğne yayı kırık olabilir; silah tamire gönderilir.",
+      "explanation": "Kapsülün ateşlenmemesine hatalı fişek de yol açabilir; bu durumda başka fişek kullanılır.",
+      "articleRefs": [
+        "07-01"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Tabancada mekanizma şarjörden mermi almadan ileri gidiyorsa sebep iğne yayının kırık olması olabilir mi?",
+      "back": "Hayır. Bu tutukluğun sebepleri şarjörle ilgilidir: iyi takılmamış, gevşek ya da ağız kenarları deforme olmuş şarjör.",
+      "explanation": "İyi takılmamış şarjör yerine iyice oturtulur. Şarjör gevşekse şarjör çıkarma mandalı kontrol edilir, uygun değilse bakıma gönderilir. Ağız kenarları deforme şarjör değiştirilir, arızalısı tamire yollanır. İğne yayının kırık olması ise kapsülün ateşlenmemesine sebep olabilir.",
+      "articleRefs": [
+        "07-01"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Tabancada mekanizma kapanmıyor ve doldurma düzenli olmuyorsa sebep ne olabilir?",
+      "back": "Fişek yatağının kirli olması, fişeğin hatalı olması ya da yerine getiren yayın esnekliğini kaybetmesi.",
+      "explanation": "Kirli fişek yatağı temizlenir, hatalı fişek değiştirilir; esnekliğini kaybetmiş yerine getiren yay için silah tamire gönderilir.",
+      "articleRefs": [
+        "07-01"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "G-3 otomatik piyade tüfeğinin çapı nedir?",
+      "back": "7,62 mm (7,62x51 mm NATO fişeği).",
+      "explanation": "Heckler – Koch tasarımı, NATO standardı bir otomatik piyade tüfeğidir; MKE Kırıkkale Silah Fabrikasında da üretilmiştir.",
+      "articleRefs": [
+        "07-02"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "G-3 otomatik piyade tüfeğinin tesirli menzili kaç metredir?",
+      "back": "400 m.",
+      "explanation": "Azami menzili 3700 m'dir. Nişangâh menzili 100-200-300-400 m olarak verilir.",
+      "articleRefs": [
+        "07-02"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "G-3 otomatik piyade tüfeğinin atış sürati, yani dakikadaki atım miktarı nedir?",
+      "back": "Dakikada 500-600 atım.",
+      "explanation": "Tüfeğin ilk hızı 780-800 m/sn'dir.",
+      "articleRefs": [
+        "07-02"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "G-3'te atış ayar (emniyet) mandalındaki E, T ve S harfleri hangi atış durumlarını gösterir?",
+      "back": "E emniyet, T tek atış, S otomatik (seri) atış.",
+      "explanation": "Mandal kabzanın sol tarafındadır; E beyaz, T ve S kırmızı işaretlidir. Mandal mili üzerindeki beyaz işaretin gösterdiği harf, silahın o anki atış durumunu belirtir.",
+      "articleRefs": [
+        "07-03"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "G-3'te tetik çekildiğinde hangi parça iğneye çarparak kapsülün ateşlenmesini sağlar?",
+      "back": "Horoz; tetik çekilince kilitten kurtulur ve iğneye çarpar.",
+      "explanation": "Kapsül ateşlenince oluşan gaz mermiyi ileri sürer ve aynı anda kovanın dip tablasını da zorlar. Dip tablası bu basıncın bir bölümünü mekanizma başına geçirir; mekanizmanın geriye gidişi bu itişle başlar.",
+      "articleRefs": [
+        "07-04"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "G-3'te emniyet mandalı S (otomatik atış) konumundayken atış ne zamana kadar sürer?",
+      "back": "Tetik bırakılıncaya ya da şarjör boşalıncaya kadar.",
+      "explanation": "Otomatik atışta atış kesilmez; horoz kurtarma kolu, mekanizma kilitlendiği anda horozu kurtarır. Tek atışta ise atışı tetik komuta manivelası keser.",
+      "articleRefs": [
+        "07-04"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "G-3'te parçaların karışmaması için ana parçalar silah numarasının hangi kısmını taşır?",
+      "back": "Silah numarasının son üç rakamını.",
+      "explanation": "Bu numarayı taşıyan parçalar arasında gövde, mekanizma gövdesi ve başı, iğne hamili ile kabza dipçik bağlama başlığı bulunur. Silah alet kullanmadan sökülebilir; aynı odada birden fazla silah sökülürken parçaların karışmaması gerekir.",
+      "articleRefs": [
+        "07-05"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "G-3'te mekanizmanın ve kabza-tetik düzeninin kendi parçalarına ayrılması hangi durumda yapılır?",
+      "back": "Yalnız ana temizlik sırasında.",
+      "explanation": "Mekanizmayı sökmek için bir elle mekanizma gövdesi tutulur, öbür elle mekanizma başı döndürülerek gövdeden ayrılır. Kabza-tetik düzeni takıldıktan sonra emniyet mandalı E (emniyet) durumuna getirilir.",
+      "articleRefs": [
+        "07-05"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "AK-47 Kalaşnikof tüfeği 7,62x51 mm NATO fişeği mi kullanır?",
+      "back": "Hayır. AK-47 7,62x39 mm fişek kullanır; 7,62x51 mm NATO, G-3 otomatik piyade tüfeğinin fişeğidir.",
+      "explanation": "AK-47 tam ve yarı otomatik çalışan bir yakın muhabere silahıdır. G-3 ise Heckler – Koch tasarımı, NATO standardı bir otomatik piyade tüfeğidir.",
+      "articleRefs": [
+        "07-06",
+        "07-02"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "AK-47'de emniyet mandalı en üst konumdan orta konuma indirildiğinde silah tek tek atış mı yapar?",
+      "back": "Hayır; orta konum SERİ (tam otomatik) atıştır. Tek tek (yarı otomatik) en alt konumdur, en üst konum ise emniyettir.",
+      "explanation": "AK-47'nin emniyet mandalı silahın sağ tarafındadır.",
+      "articleRefs": [
+        "07-06"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "AK-47 Kalaşnikof'ta emniyet mandalı en üst konumdayken silah dolduruş yapar mı?",
+      "back": "Hayır; en üst konum emniyettir ve silah emniyetteyken dolduruş yapmaz.",
+      "articleRefs": [
+        "07-06"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "AK-47 Kalaşnikof'ta kurma kolu atış sırasında yerinde mi durur, mekanizmayla birlikte mi hareket eder?",
+      "back": "Mekanizmaya sabittir; silah çalışırken onunla birlikte hareket eder. Kurma kolu silahın sağ tarafındadır.",
+      "explanation": "Bu tüfeğin emniyet mandalı da sağdadır. Sabit ve seyyar dipçiklisi bulunur; ayarlı gezle 800 m'ye kadar atış yapılabilir.",
+      "articleRefs": [
+        "07-06"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "M-16 A2 711 Rifle'da kabzanın üzerindeki pompanın görevleri nelerdir?",
+      "back": "Sessiz dolduruş yapmak (özellikle pusularda) ve yerine tam oturmayan mekanizmayı oturtmak.",
+      "explanation": "Sessiz dolduruşta kurma kolu geri çekilip yavaşça bırakılır, ardından pompaya basılır. Pompanın önündeki dirsek biçimli kovan siperliği, sol elle atış yapanları boş kovandan korur.",
+      "articleRefs": [
+        "07-07"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "M-16 A2 711 Rifle'da şarjördeki fişek bittiğinde mekanizma grubunu geride kilitleyen parça hangisidir?",
+      "back": "Silahın sol tarafında, tetiğin üstünde bulunan kilitleme mandalı.",
+      "explanation": "Şarjör değiştirildikten sonra bu mandala basılınca yeniden dolduruş yapılır; kurma kolunu kullanmak gerekmez.",
+      "articleRefs": [
+        "07-07"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "M-16 A2 723 Karabin'i M-16 A2 711 Rifle'dan ayıran özellikler nelerdir?",
+      "back": "Seyyar dipçiği ve orta boy namlusu; yapı ve çalışma sistemi bakımından iki silah aynıdır.",
+      "explanation": "Karabin'in tesirli menzili 600 m, atış sürati dakikada 600-900'dür.",
+      "articleRefs": [
+        "07-12"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "M-16 A2 733 Komando'nun namlusu, M-16 A2 723 Karabin'in namlusundan uzun mudur?",
+      "back": "Hayır; Komando'nun namlusu 29 cm, Karabin'inki 37 cm'dir. Namlusu daha kısa olan Komando'dur.",
+      "explanation": "İki silah da M-16 A2 711 Rifle ile aynı yapı ve çalışma sistemine sahiptir ve seyyar dipçiklidir. Komando'nun tesirli menzili 450 m, Karabin'inki 600 m'dir.",
+      "articleRefs": [
+        "07-13",
+        "07-12"
+      ],
+      "counterNumbers": []
+    }
+  ]
+}

@@ -1,0 +1,197 @@
+{
+  "deck": {
+    "topicId": "6f0d2a35-5fb5-4223-99ea-8d4ac367b873",
+    "sourceSlug": "silah-bilgisi-ve-atis",
+    "sourceLabel": "AI bilgi kartı — Silah Bilgisi: Tabanca modelleri ve emniyet sistemleri (kaynak pasajı 06-01…06-14)",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: kaynak pasajı + bankadaki sorular; stil kapısı 1 açıklama yeniden yazıldı)"
+  },
+  "cards": [
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Kırıkkale tabancasının seri imalatı hangi tabanca modeli esas alınarak yapıldı?",
+      "back": "Walther modeli. Denemelerde Walther örneği daha başarılı bulundu.",
+      "explanation": "1944'te Kırıkkale Tüfek Fabrikasında Beretta ve Walther örnek alınarak deneme tabancaları yapıldı.",
+      "articleRefs": [
+        "06-01"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Kırıkkale tabancasında mandal emniyeti hangi konumdayken tabanca emniyete alınmış olur?",
+      "back": "Mandal aşağı çevrildiğinde. Mandal yukarı çevrilince emniyet açılır.",
+      "explanation": "Mandal, sürgünün gerisinde ve sol yandadır. Emniyet konumunda mandal gövdesi iğnenin geri kısmını içine alır ve iğneyi kilitler. Bu konumda düşen horoz iğneye değil, mandal gövdesine vurur.",
+      "articleRefs": [
+        "06-03"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Kırıkkale tabancası emniyetteyken dolduruş yapılırsa horoza ne olur?",
+      "back": "Sürgü horozu kurar. Sürgü ileri giderken mandal gövdesi horoz düşürme kanadına bastırır ve horozu düşürür. İğne kilitli olduğu için ateşleme olmaz.",
+      "explanation": "Emniyet açıkken dolduruş yapılırsa horoz geride kurulu kalır. Kurulu horozu indirmek için mandal emniyet konumuna çevrilir; mandal gövdesinin dolu kısmı kanada basınç yaparak horozu düşürür.",
+      "articleRefs": [
+        "06-03"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Kırıkkale tabancasında tetik çekilmedikçe horozun iğneye vurmasını hangi parça engeller?",
+      "back": "Kurma parçası mandalı. Tetik çekilmezse aşağıda kalır ve horozun ileri gitmesini durdurur.",
+      "explanation": "Bu parça tetik emniyeti görevi görür. Tetik çekilince mandal yükselir ve çıkıntısı horozdaki girintinin karşısına gelir; horoz ancak o zaman iğneye vurabilir.",
+      "articleRefs": [
+        "06-03",
+        "06-04"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Kırıkkale tabancasında fişek yatağında fişek olduğunu gösteren parça hangisidir?",
+      "back": "İkaz pimi. Sürgünün hemen gerisindedir ve fişek varken belirgin biçimde dışarı çıkar.",
+      "explanation": "Tabanca boşken pim, kendi yayıyla içeri itildiği için dışarıdan küçük görünür. Fişek yatağı doluyken fişeğin dip tablası pimi dışarı doğru iter.",
+      "articleRefs": [
+        "06-04"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Kırıkkale tabancasında ikaz pimi dışarı çıkık görünüyorsa tabanca kesinlikle dolu mudur?",
+      "back": "Hayır. Pim yayı düşmüş, kırılmış ya da sıkışmışsa tabanca boşken de pim çıkık kalabilir.",
+      "explanation": "Tersi de olabilir: pimin ucu kırıksa tabanca dolu olduğu hâlde pim yeterince dışarı çıkmaz ve boş izlenimi verir.",
+      "articleRefs": [
+        "06-04"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "CZ 75 tabancada seri numaraları birbirinden farklıysa bu neyi gösterir?",
+      "back": "Numaralı parçaların başka tabancalardan alınıp değiştirildiğini gösterir. Fabrika çıkışında bu numaralar aynı rakamlardan oluşur.",
+      "explanation": "Seri numaraları üç yerde bulunur: fişek yatağının üstünde (kovan atma boşluğundan görülür), sürgünün sağ yan yüzeyinde ve çerçevenin sağ yan yüzeyinde.",
+      "articleRefs": [
+        "06-05"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "CZ 75 tabancada mandal (parmak) emniyeti neleri bloke eder?",
+      "back": "Çekili horozu ve tetik mekanizmasını bloke eder; kapak takımının hareketini de engeller.",
+      "explanation": "Mandal emniyeti, elle çalışan mekanik bir emniyettir.",
+      "articleRefs": [
+        "06-06"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "CZ 75 tabancada horoz elle çekilirken kaza ile elden kurtulursa ne olur?",
+      "back": "Horoz emniyet çentiğine takılı kalır ve ateşleme pimine vuramaz.",
+      "explanation": "Horoz gövdesinde iki çene vardır: ilki emniyet içindir, ikincisi horozu kurulu duruma getirir.",
+      "articleRefs": [
+        "06-06"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "CZ 75 tabancada hangi emniyet sistemleri bulunur?",
+      "back": "Mandal (parmak) emniyeti, horoz emniyeti ve iğne pimi bloklama emniyeti.",
+      "explanation": "İğne pimi bloklama emniyeti, tetik çekilmedikçe ateşleme iğnesini bloke eder; tabanca yüksekten düşse bile ateş almaz.",
+      "articleRefs": [
+        "06-06"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Browning (14'lü) tabancada tetik çekilince horoz kendiliğinden kurulur mu?",
+      "back": "Hayır. Browning tek hareketlidir (Single-Action): horozun dolduruşta ya da elle kurulmuş olması gerekir. Tetik yalnız kurulu horozu düşürür.",
+      "explanation": "Tetiğin çekilmesi yalnız kurulu horozun düşmesini sağlar.",
+      "articleRefs": [
+        "06-08"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Browning (14'lü) tabancanın şarjörü 14 fişek alır mı?",
+      "back": "Hayır. Şarjör 13 fişek alır; fişek yatağındaki bir fişekle birlikte toplam kapasite 14 olur.",
+      "explanation": "Teknik özelliklerde de şarjör kapasitesi 13 adet olarak verilir. Tabanca 9 mm Parabellum fişek kullanır.",
+      "articleRefs": [
+        "06-08",
+        "06-09"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Browning (14'lü) tabancada şarjör çıkarılınca tetik çekilse bile ateş edilememesini hangi düzen sağlar?",
+      "back": "Şarjör emniyeti. Yaylı bir piston geri kayar ve tetik ile tetik manivelası arasındaki bağlantıyı keser.",
+      "explanation": "Şarjör yuvasına takılınca pistonu içeri iter; tetik manivelası normal görev konumuna döner. II. Dünya Savaşı'ndaki Alman modeli dışındaki Browning tabancalarda bu düzen bulunur.",
+      "articleRefs": [
+        "06-10",
+        "06-08"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Browning (14'lü) tabancada hangi emniyetler bulunur?",
+      "back": "Mandal emniyeti, horoz emniyeti ve şarjör emniyeti.",
+      "explanation": "Mandal emniyeti horoz kurma parçasını ve sürgüyü kilitler. Horozdaki ayrı emniyet çenesi, tam kurulmadan kayan horozun iğneye vurmasını önler.",
+      "articleRefs": [
+        "06-10"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Smith Wesson Mod. 10 toplu tabancaya ayrı bir emniyet parçası takılmış mıdır?",
+      "back": "Hayır, ayrı bir emniyet parçası takılmamıştır. Yine de tetik çekilmedikçe tetik çenesi horozun kapsüle vurmasını önler.",
+      "explanation": "Bu sayede horoza dışarıdan gelen darbe ya da tabancanın yere düşmesiyle ateş alması mümkün değildir.",
+      "articleRefs": [
+        "06-11"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Smith Wesson Mod. 10 tabancada çift hareketli atış hangi durumlarda tercih edilir?",
+      "back": "Tabancanın çok hızlı kullanılması gereken yakın çarpışmalarda ve acil durumlarda.",
+      "explanation": "Bu atışta tetiğe daha fazla basınç gerekir. Bu yüzden namlu ucu aşağı yönelir ve mermi hedeflenen noktanın altına isabet eder. Her atıştan sonra tetik bırakılıp yeniden çekilir.",
+      "articleRefs": [
+        "06-12"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Ruger (P 85) tabancanın şarjör kapasitesi kaç fişektir?",
+      "back": "15 fişektir. Fişek yatağı dahil kapasite 16 olur.",
+      "explanation": "Tabanca 9 mm Parabellum tipi fişek kullanır. Geri tepme sistemiyle çalışır; yarı otomatiktir ve hem tek hem çift hareketli atış yapabilir.",
+      "articleRefs": [
+        "06-13"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Ruger (P 85) tabancada tetik çekilmedikçe ateşleme iğnesinin ileri gitmesini hangi emniyet önler?",
+      "back": "İğne kilit pim bloku. Tabanca düşse, horoz darbe alsa ya da çekilip bırakılsa bile iğneyi emniyette tutar.",
+      "explanation": "Mandal emniyeti ise sürgü üzerindeki çift taraflı mandaldır. Bu mandal ateşleme iğnesini geride kilitler ve kurulu horozu indirir.",
+      "articleRefs": [
+        "06-14"
+      ]
+    }
+  ]
+}

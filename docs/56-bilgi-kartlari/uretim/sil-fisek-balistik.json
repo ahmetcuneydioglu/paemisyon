@@ -1,0 +1,198 @@
+{
+  "deck": {
+    "topicId": "6f0d2a35-5fb5-4223-99ea-8d4ac367b873",
+    "sourceSlug": "silah-bilgisi-ve-atis",
+    "sourceLabel": "AI bilgi kartı — Silah Bilgisi: Fişek, çekirdek ve balistik (kaynak pasajı 02-10…02-16)",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: kaynak pasajı + bankadaki sorular; stil kapısı 1 açıklama yeniden yazıldı)"
+  },
+  "cards": [
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Fişeklerin merkez vuruşlu ya da kenar vuruşlu diye ayrılmasında ölçüt nedir?",
+      "back": "Ateşleme maddesinin, yani kapsülün fişekte bulunduğu yer.",
+      "articleRefs": [
+        "02-10"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Fişekler hangi ölçüte göre toplu tabanca fişeği ya da otomatik tabanca fişeği diye ayrılır?",
+      "back": "Kovan dip tablasının biçimine göre. Dip tablası dışa taşan (çıkıntılı) fişek toplu tabanca fişeği, kovan gövdesi genişliğinde girintili olan otomatik tabanca fişeğidir.",
+      "explanation": "Bu sınıflandırma kapsülün yerine ya da çekirdeğin ucuna bakmaz; kovanın dip kısmının dışa taşıp taşmadığı belirleyicidir.",
+      "articleRefs": [
+        "02-10"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Kapsülde oluşan ateş baruta nereden geçerek ulaşır?",
+      "back": "Alev kanallarından. Kapsül, ateşleme iğnesinin ya da horozun darbesiyle ateşlenir; doğan ateş bu kanallardan geçip barutu tutuşturur.",
+      "explanation": "Kapsül genellikle ince tabaka hâlinde pirinç, bakır veya nikelden yapılır.",
+      "articleRefs": [
+        "02-11"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Berdan tipi kapsülde örs kapsüle bitişik midir?",
+      "back": "Hayır. Berdan tipinde örs kovanın bir parçasıdır. Örsü kapsüle bitişik olan tip Boksör tipi kapsüldür.",
+      "explanation": "Boksör tipi kapsül ABD'de çok yaygındır ve ticari fişeklerde standart kabul edilir. Berdan tipi ise Avrupa'da daha yaygındır.",
+      "articleRefs": [
+        "02-11"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "İlk hızı yüksek bir çekirdeğin menzili, ilk hızı düşük olanınkine göre nasıldır?",
+      "back": "Daha uzundur. İlk hızları farklı çekirdeklerin menzilleri de farklı olur.",
+      "articleRefs": [
+        "02-12"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Havasız ama yer çekimi olan bir ortamda yapılan atışta mermi yolu nasıl bir şekil alır?",
+      "back": "Düzgün bir parabol. Yükseliş ve düşüş açıları eşittir; tepe noktası mermi yolunun tam ortasındadır.",
+      "articleRefs": [
+        "02-12"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Tabii yan denen sapma, yiv ve setlerin çekirdeğe verdiği dönüşe göre hangi yöne olur?",
+      "back": "Dönüş hangi taraftaysa o tarafa. Bu sapma nişangah ayarlamasıyla giderilir.",
+      "explanation": "Sapmanın büyüklüğü ilk hıza ve dönüş hızına göre artar ya da azalır.",
+      "articleRefs": [
+        "02-13"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Havanın ısınması menzili kısaltır mı?",
+      "back": "Hayır. Isınan havanın yoğunluğu azalır ve menzil uzar. Menzili kısaltan, havanın yoğunluğunun artmasıdır.",
+      "explanation": "Hava yoğunluğunu basınç, sıcaklık ve nem belirler. Yoğunluk yükseldikçe çekirdeğin ulaşabildiği uzaklık azalır. Isı bu yoğunluğu değiştiren etkenlerden biridir: sıcak hava seyrekleşir ve menzil artar. Yakın mesafeden yapılan atışlarda yoğunluğun etkisi belirgin değildir.",
+      "articleRefs": [
+        "02-13"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Rüzgâr çekirdeğin menzilini ve yönünü nasıl etkiler?",
+      "back": "Karşıdan esen rüzgâr menzili kısaltır, arkadan esen uzatır, yandan esen sapmaya yol açabilir.",
+      "articleRefs": [
+        "02-13"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Sivri uçlu çekirdeğin menzili küt uçlu çekirdeğe göre nasıldır?",
+      "back": "Daha uzundur. Sivri çekirdek havanın direncini daha kolay yarar.",
+      "explanation": "Çapı küçük çekirdekler de havayı daha kolay deler. Yakın atışta çekirdek hedefin yapısından etkilenip şekil değiştirebilir.",
+      "articleRefs": [
+        "02-13"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Merminin gidişi sırasındaki herhangi bir noktada sahip olduğu iş görme gücüne ne denir?",
+      "back": "Kinetik enerji.",
+      "explanation": "Hareket hâlindeki mermi bir cisme çarpınca onu az çok tahrip edebilir. Bu tahrip gücü, çarptığı cismin mukavemetine ve katılığına, ayrıca merminin kütlesine ve hızına göre artar ya da azalır.",
+      "articleRefs": [
+        "02-13"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Üzerinde \"357 Magnum\" ibaresi bulunan fişekler hangi toplu tabancalarda kullanılmalıdır?",
+      "back": "Yalnız bu fişekler için imal edilmiş, üzerinde \"357 Magnum\" ibaresi bulunan, daha sağlam ve güçlü madeni yapıdaki toplu tabancalarda.",
+      "explanation": "Magnum fişeklerin ilk hızı ve enerjisi normal fişeklerden yüksektir. Normal toplu tabancada kullanılırsa top yuvaları ve namlu parçalanıp atıcıya zarar verebilir. Parçalanma olmasa bile silah ağır hasar görür ve sonra normal fişeklerle bile kullanılamayabilir.",
+      "articleRefs": [
+        "02-14"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "38 kalibre fişekler hangi tür tabancalar için imal edilmiştir?",
+      "back": "Toplu tabancalar için; Smith-Wesson ve Colt toplu tabancalarında kullanılmak üzere yapılmışlardır.",
+      "explanation": "Bu fişeklerin kovan boyu değişebilir; çekirdekleri de çok farklı şekil ve yapıda olabilir.",
+      "articleRefs": [
+        "02-14"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "38 kalibre fişeklerde küt uçlu gömleksiz çekirdek daha çok hangi amaçla imal edilmiştir?",
+      "back": "Eğitim atışları için. Hedef kâğıdını çapı kadar düzgün deldiği için isabet yeri uzaktan kolayca görülür.",
+      "explanation": "Ucu küt, gömleksiz ve yumuşak kurşundan olduğu için ezilir; delici gücü çok azdır. Vücudu delip geçme ihtimali az olduğundan kalabalık yerlerde tercih edilir. Ancak oto ve benzeri araçlara ve içindekilere karşı etkili olması mümkün değildir.",
+      "articleRefs": [
+        "02-14"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Küçük çaplı mermilerde uç kısmı oyuk (hollow point) çekirdek hedefe çarpıp girince ne olur?",
+      "back": "Normal çapından çok daha fazla genişler ya da parçalanır.",
+      "articleRefs": [
+        "02-15"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Oyuk uçlu çekirdeğin hedefte genişlemesi bir patlamanın (infilak) sonucu mudur?",
+      "back": "Hayır. Genişleme çekirdek ucunun şeklinden, madeni yapısından ve oyuktaki basınçtan kaynaklanır; ortada bir infilak yoktur.",
+      "explanation": "Hollow point çekirdeğin genişlemesi ya da parçalanması mekanik bir etkidir; çekirdek hedefte ikinci kez patlamaz.",
+      "articleRefs": [
+        "02-15"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Ateşleme sistemleri birbirinden farklı olsa da hepsinde ateşlemeyi sağlayan ortak şart nedir?",
+      "back": "Fişek kapsülüne yeterli bir darbenin yapılması.",
+      "articleRefs": [
+        "02-16"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Otomatik tabancalarda fişek silindire yerleştirilir mi?",
+      "back": "Hayır. Silindir toplu tabancalarda bulunur. Otomatik tabancada fişek, horoz ya da iğneyle karşı karşıya gelecek biçimde fişek yatağına yerleştirilir.",
+      "explanation": "İki silah türünde de fişek mutlaka horoz ya da iğneyle karşı karşıya gelecek şekilde yerleştirilmelidir.",
+      "articleRefs": [
+        "02-16"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Kovan içinde genişleyen barut gazı önce hangi parçayı kovandan ayırır?",
+      "back": "Çekirdeği. Gaz, en zayıf yöndeki çekirdeği kovandan ayırır ve namlu boyunca iterek hızla dışarı fırlatır.",
+      "explanation": "Kapsül alevi barutu tutuşturur. Yanan barut çok miktarda ve hızla genişleyen gaz üretir.",
+      "articleRefs": [
+        "02-16"
+      ]
+    }
+  ]
+}

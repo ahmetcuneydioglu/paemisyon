@@ -1,0 +1,147 @@
+{
+  "deck": {
+    "topicId": "6f0d2a35-5fb5-4223-99ea-8d4ac367b873",
+    "sourceSlug": "silah-bilgisi-ve-atis",
+    "sourceLabel": "AI bilgi kartı — Silah Bilgisi: Silahların tanımı ve sınıflandırılması (kaynak pasajı 02-01…02-06)",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: kaynak pasajı + bankadaki sorular)"
+  },
+  "cards": [
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Hangi araç ve aletlere genel olarak silah denir?",
+      "back": "Yakından ya da uzaktan canlıyı öldürebilen, yaralayan, etkisiz bırakan ya da hasta eden; cansızı parçalayan ya da yok eden tüm araç ve aletlere.",
+      "explanation": "Tanım iki yönlüdür. Bir yanda canlılara yönelik etkiler, öbür yanda cansızlara yönelik etkiler yer alır. Yakından ve uzaktan kullanım birlikte kapsanır.",
+      "articleRefs": [
+        "02-01"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Ateşli silah, mermi çekirdeğini uzak mesafeye hangi güçle fırlatır?",
+      "back": "Barut gazının basıncıyla.",
+      "explanation": "Ateşli silahlar ağır ve hafif olmak üzere iki grupta incelenir.",
+      "articleRefs": [
+        "02-02"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Hafif ateşli silah kaç kişi tarafından kullanılabilir?",
+      "back": "Bir kişi; tahrip gücü ağır ateşli silahlara göre daha azdır.",
+      "explanation": "Hafif ateşli silahlar kendi içinde uzun namlulu ve kısa namlulu olarak ikiye ayrılır.",
+      "articleRefs": [
+        "02-02"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Ağır ateşli silahlar sıklıkla ferdi suçlarda mı kullanılır?",
+      "back": "Hayır. Ağır ateşli silahlar sıklıkla cephe savaşlarında kullanılır; ferdi suçlarda sıklıkla hafif ateşli silahlar kullanılır.",
+      "explanation": "Ağır ateşli silahları birden fazla kişi kullanır ve tahrip güçleri fazladır; top, roket ve uçaksavar bunlara örnektir. Polis ferdi suçlarla ilgilendiği için hafif ateşli silahlar üzerinde yoğunlaşır.",
+      "articleRefs": [
+        "02-02"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Harp tüfeklerinin namlusu yiv bakımından nasıldır?",
+      "back": "Yivli ve setlidir; harp tüfekleri uzun menzile ve delici güce sahiptir.",
+      "articleRefs": [
+        "02-03"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Harp tüfekleri günümüzde hangi tiplerde imal edilip kullanılmaktadır?",
+      "back": "Otomatik tüfek ve makineli tüfek olarak.",
+      "articleRefs": [
+        "02-03"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Tek atışlı tabancalar namlu sayısına göre hangi iki gruba ayrılır?",
+      "back": "Tek namlulu tek atışlı tabancalar ve birden fazla namlulu tek atışlı tabancalar.",
+      "explanation": "Tek atışlı tabancaların yivli ve yivsiz tipleri vardır; namlusu kesilmiş, dipçiksiz bir av tüfeğine benzerler.",
+      "articleRefs": [
+        "02-04"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Otomatik tabancada ilk dolduruşu kim yapar?",
+      "back": "Atıcı. Sonraki dolduruşları silah kendiliğinden yapar; fişeği fişek yatağına sürer ve boş kovanı atar.",
+      "articleRefs": [
+        "02-04"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Yarı otomatik tabancada her atış için tetik nasıl kullanılır?",
+      "back": "Her atışta tetiğin ayrı ayrı çekilmesi gerekir.",
+      "explanation": "Tam otomatik tabancada ise tetik bir kez çekilip bırakılmadıkça atış, şarjördeki fişekler bitene kadar sürer.",
+      "articleRefs": [
+        "02-04"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Tam otomatik tabancada şarjördeki tüm fişeklerin atılması için tetik kaç kere çekilir?",
+      "back": "Bir kere; tetik bırakılmadıkça atış, şarjördeki fişekler bitene kadar sürer.",
+      "explanation": "Otomatik tabancalar ateşleme sistemlerinin yapısına göre yarı otomatik ve tam otomatik olarak ayrılır.",
+      "articleRefs": [
+        "02-04"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Geri tepme sisteminde sürgüyü yeniden ileri götüren parça hangisidir?",
+      "back": "Yerine getiren yay (irca yayı). İleri giden sürgü, şarjörün en üstündeki fişeği fişek yatağına sürer.",
+      "articleRefs": [
+        "02-05"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Geri tepme sistemiyle çalışan tabancalar nasıl beslenir?",
+      "back": "Şarjörle beslenirler.",
+      "articleRefs": [
+        "02-05"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Geri tepmeli silahlara yüksek güçlülük (HP) özelliğini hangi sistemler kazandırır?",
+      "back": "Çekirdek namludan ayrılıncaya dek, boş kovanın fişek yatağından çıkışını erteleyen sistemler.",
+      "explanation": "Söz konusu gecikme, ateşlemenin hemen ardından boş kovanın geri çekilmesine uygulanır.",
+      "articleRefs": [
+        "02-06"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "MP-5'te yüksek güçlülük (HP) özelliği sürgü ile namlunun kilitlenmesine mi dayanır?",
+      "back": "Hayır. MP-5'te makaralı sistem kullanılır. Sürgü ile namlunun kilitlenmesi 14'lü Browning ve CZ-75 gibi silahlarda görülür.",
+      "explanation": "Her iki düzenek de aynı işi görür: mermi çekirdeği namluyu terk edene kadar boş kovanın geri çekilmesini geciktirir.",
+      "articleRefs": [
+        "02-06"
+      ],
+      "counterNumbers": []
+    }
+  ]
+}

@@ -1,0 +1,186 @@
+{
+  "deck": {
+    "topicId": "6f0d2a35-5fb5-4223-99ea-8d4ac367b873",
+    "sourceSlug": "silah-bilgisi-ve-atis",
+    "sourceLabel": "AI bilgi kartı — Silah Bilgisi: Tabancanın başlıca parçaları (kaynak pasajı 02-07…02-09)",
+    "generatedBy": "claude-opus-5-5 (kart-uret.ts; kaynak: kaynak pasajı + bankadaki sorular)"
+  },
+  "cards": [
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Tetiği çektiğinde yalnızca önceden kurulmuş horozun düştüğü atış sistemine ne denir?",
+      "back": "Tek hareketli atış. Bu sistemde tetik horozu kurmaz, yalnızca kurulu duran horozu düşürür.",
+      "explanation": "Tek hareketli atışta tetiği çekmeden önce horozun kurulmuş olması gerekir.",
+      "articleRefs": [
+        "02-07"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Tetiği çekmek horozu hem kurup hem düşürüyorsa bu atış sistemine ne denir?",
+      "back": "Çift hareketli atış.",
+      "articleRefs": [
+        "02-07"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Tabancada kapsüle darbe yapıp barutu tutuşturan kısma ne ad verilir?",
+      "back": "Ateşleme tertibatı. Sistemin çeşidine göre görev alan parça sayısı azalıp artabilir.",
+      "articleRefs": [
+        "02-09"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Kapsüle ateşleme darbesini doğrudan horozun yaptığı sisteme ne ad verilir?",
+      "back": "Horozlu sistem.",
+      "articleRefs": [
+        "02-09"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Ateşleme çekiçli ve iğneli sistemde kapsüle darbeyi doğrudan horoz mu yapar?",
+      "back": "Hayır. Darbeyi ateşleme çekici yapar, iğne bu darbeyi kapsüle iletir. Darbenin doğrudan horozdan gelmesi horozlu sistemin özelliğidir.",
+      "explanation": "İki sistemi ayıran şey darbenin kapsüle nasıl ulaştığıdır: horozlu sistemde horoz doğrudan vurur, çekiçli ve iğneli sistemde çekicin darbesi iğne aracılığıyla kapsüle gider.",
+      "articleRefs": [
+        "02-09"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Yiv ve setleri matkapla delinmek yerine dövülerek elde edilen namluya ne denir?",
+      "back": "Dövme namlu. MP-5 makineli tabancaların ve G-3 piyade tüfeklerinin namluları bu yöntemle yapılır.",
+      "articleRefs": [
+        "02-07"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Yiv ve setlerin çekirdeğe kazandırdığı dönüş hareketi atışa ne sağlar?",
+      "back": "Çekirdeğin havada takla atması önlenir. Menzil uzar, deliş gücü artar ve çekirdek hedefe ucuyla daha kuvvetli vurur.",
+      "explanation": "Yiv namlunun içindeki girintiler, set ise çıkıntılardır. Birbirine paralel ve helezon biçimindedirler; sağa ya da sola dönerli olabilirler.",
+      "articleRefs": [
+        "02-07"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Bir silahın çapı, namludaki karşılıklı iki yiv arasındaki mesafe midir?",
+      "back": "Hayır. Çap, karşılıklı iki set arasındaki mesafedir; bazı silahlarda iki yiv arasındaki açıklık da çap olarak kabul edilir.",
+      "explanation": "Setler karşılıklı gelmiyorsa ölçüm, karşı tarafta da set varmış gibi kabul edilerek yapılır.",
+      "articleRefs": [
+        "02-07"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Tabancada çekirdeğin hedefe isabetle yönelmesini sağlayan nişan tertibatı hangi parçalardan oluşur?",
+      "back": "Arpacık ve gez. Bu tertibat bir gözetleme düzeneğidir.",
+      "articleRefs": [
+        "02-08"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Namludaki setlerin kurşun ya da çekirdek gömleği üzerinde bıraktığı izlere ne ad verilir?",
+      "back": "Rayyür. Bu izleri setler bırakır ve izler her silaha özgüdür.",
+      "articleRefs": [
+        "02-07"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Tabancada arpacık nerede bulunur?",
+      "back": "Namlu ağzına yakın bir noktada, sürgünün ya da namlunun üzerinde.",
+      "explanation": "Arpacığın biçimi silahtan silaha değişir. Dikdörtgen, üçgen, koni, küre ya da çember içine yerleştirilmiş şekillerde olabilir.",
+      "articleRefs": [
+        "02-08"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Otomatik tabancada atıştan sonra boş kovanı geriye çeken parça hangisidir?",
+      "back": "Sürgüdeki tırnak. Geri gelen kovan arkadaki çıkarıcıya çarpar ve kovan atma boşluğundan dışarı atılır.",
+      "explanation": "Barut gazının basıncı kovan dip tablası üzerinden mekanizmayı geriye iter; tırnak da kovanı bu hareketle birlikte geri getirir.",
+      "articleRefs": [
+        "02-08"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Fişeğin şarjörden fişek yatağına geçerken tırmandığı kısma ne denir?",
+      "back": "Rampa.",
+      "articleRefs": [
+        "02-07"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Fişek yatağının iç yüzeyinde yiv ve set bulunur mu?",
+      "back": "Hayır. Fişek yatağında yiv ve set yoktur. MP-5 ve G-3'lerin fişek yataklarındaki gaz kanalları helezon değildir; namlu eksenine paralel ve düz uzanır.",
+      "explanation": "Fişek yatağının çapı namludan biraz daha geniştir. Fişek çapından aşırı büyükse ya da aşınarak bu hâle gelmişse, atışta kovan genişler, şişer, hatta ayrılır.",
+      "articleRefs": [
+        "02-07"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Toplu tabancalarda fişekleri silindirden dışarı çıkaran parça sürgüdeki tırnak mıdır?",
+      "back": "Hayır. Toplu tabancalarda bu işi yıldız şeklindeki tırnak yapar; fişekler kovan dibindeki çıkıntıya takılarak çıkarılır. Sürgüdeki tırnak otomatik tabancalarda görev yapar.",
+      "explanation": "Bu yöntem iki tür toplu tabancada da geçerlidir: namlusu silindirle birlikte çerçeveden açılanlarda ve yalnız silindiri mandalla açılanlarda.",
+      "articleRefs": [
+        "02-08"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Otomatik tabancalarda fişek yatağı şarjörün bir parçası mıdır?",
+      "back": "Hayır. Fişek yatağı namlunun hemen arkasında, ona bitişik ve onun devamı olarak bulunur.",
+      "explanation": "Fişek yatağı atışa hazır fişeğin bulunduğu yerdir. Toplu tabancalarda fişek yatağı namludan ayrıdır; bu görevi silindirdeki top yuvaları yapar.",
+      "articleRefs": [
+        "02-07"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Otomatik silahlarda fişek yatağındaki fişeğin namlu içine kaçmasını ne önler?",
+      "back": "Destek. Fişeğin kovanının uç kısmı buraya dayanır.",
+      "articleRefs": [
+        "02-07"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Tabancada atış için sırada bekleyen fişeklerin bulunduğu kısma ne denir?",
+      "back": "Hazne. Otomatik tabancada hazneyi şarjör ile şarjör yuvası, toplu tabancada silindirdeki top yuvaları oluşturur.",
+      "articleRefs": [
+        "02-07"
+      ]
+    }
+  ]
+}
