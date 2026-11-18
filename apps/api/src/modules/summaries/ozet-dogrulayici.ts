@@ -127,6 +127,12 @@ const MD_NO = '\\d+(?:\\/[\\dA-ZÇĞİÖŞÜ]+)?'; // "84", "84/2", "4/A"
 export function extractNumbers(text: string): number[] {
   const t = binlikAyracSil(text)
     .replace(/(^|\n)\s*\d+\.\s/g, '$1 ') // liste numarası: "1. ", "2. "
+    // AİHS protokol maddesi: "P4-7", "md P6-8", "Ek P-1" (Ek Protokol) — madde numarasıdır, sayı değil
+    .replace(/\b(?:md\.?\s*)?(?:Ek\s+)?P\d*-\d+\b/g, ' ')
+    // Protokolün adı: "md P13", "P7 maddeleri", "Protokol No. 7", "7 numaralı Protokol", "13 No'lu Protokol"
+    .replace(/\b(?:md\.?\s*)?P\d+\b/g, ' ')
+    .replace(/\bProtokol\s+No\.?\s*\d+/gi, ' ')
+    .replace(/\b\d+\s*(?:numaralı|no\.?['’]?lu|nolu)\s+(?:Ek\s+)?Protokol/gi, ' ')
     .replace(/\bmd\.?\s*(ek|geçici)\s*\d+/gi, ' ') // madde atfı: "md Ek 6", "md Geçici 2"
     .replace(/\b(ek|geçici)\s+(madde\s+)?\d+(\s*[–-]\s*\d+)?/gi, ' ') // "Ek 6", "Geçici 2", "ek madde 7", "Ek 1–3"
     // "md 84", "md 84/2", "md 4/A", "md 1–6", "md 100 ve 101", "md 128, 130 ve 134"
@@ -137,7 +143,8 @@ export function extractNumbers(text: string): number[] {
       new RegExp(`\\b${MD_NO}\\s*(?:inci|nci|uncu|üncü|ıncı|ncı|ncu|ncü)\\s*madde`, 'gi'),
       ' ',
     ) // "139 uncu madde"
-    .replace(/\b\d+\/[\dA-ZÇĞİÖŞÜ]+\b/g, ' '); // fıkra kesri ve harfli madde ("4/A")
+    // fıkra kesri, harfli madde ("4/A") ve bent atfı ("32/d", "32/ç"); Türkçe harf için \p{L} sınırı
+    .replace(/(?<![\p{L}\d])\d+\/[\p{L}\d]+(?![\p{L}\d])/gu, ' ');
   const out = new Set<number>();
   for (const m of t.matchAll(/\d+/g)) out.add(Number(m[0]));
   return [...out];
