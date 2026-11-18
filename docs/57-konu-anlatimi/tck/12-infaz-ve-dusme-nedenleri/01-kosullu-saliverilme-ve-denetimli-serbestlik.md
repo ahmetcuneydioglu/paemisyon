@@ -120,6 +120,16 @@ Kurumdan ayrıldıktan sonra denetimli serbestlik müdürlüğüne başvurması 
 
 Denetim altındaki hükümlü kolluğun günlük işinin parçasıdır. Hakkında belirli bir bölgede bulunma ya da belirli yerlere gitmeme yükümlülüğü bulunan kişinin bu yükümlülüğe aykırı davrandığı saptandığında durum tutanağa bağlanır ve denetimli serbestlik müdürlüğüne bildirilir; kurumun iade kararı ya da firar nedeniyle çıkarılan yakalama emri kolluk tarafından yerine getirilir. Denetim süresindeki bir kişinin yeni bir suçun şüphelisi olarak yakalanması hâlinde bu durumun adli makamlara bildirilmesi, salıverilmenin geri alınıp alınmayacağı bakımından önem taşır.
 
+## Sınavda çıktı
+
+Sorular koşullu salıverilmenin tümüyle kapalı olduğu hâli ve bu hâlin hangi suç bölümleriyle sınırlı olduğunu yoklar.
+
+:::soru 92d73145-fe96-45a0-9f09-6d3abc236c33
+:::
+
+:::soru f5455d66-3f45-4388-bf42-bea79b80fbf0
+:::
+
 ---
 
 ## Kaynak ve inceleme notları — kullanıcı metnine dahil değil
@@ -133,4 +143,5 @@ Denetim altındaki hükümlü kolluğun günlük işinin parçasıdır. Hakkınd
 - Madde bağları: 5275 md 107, md 105/A.
 - Gömülü soru yok: bu maddelere bağlı yayınlı soru public uçtan aranmadı (5275 sayılı Kanun hedef listesinde değildi). Kullanıcı `ders-soru-ara.ts "Ceza Hukuku" "koşullu salıverilme" "denetimli serbestlik"` ile arayabilir. Soru üretilmedi.
 - DENETİM DÜZELTMESİ (bağımsız denetim, Opus oturumu, 14 Kas 2026): "Sabıka ya da suç türü bakımından genel engel yoktur" 5275 md 107/16 (örgüt faaliyeti çerçevesinde devletin güvenliği, anayasal düzen, millî savunma suçlarından ağırlaştırılmış müebbette koşullu salıverilme yok) ve md 107/13 son cümlesi (geri almadan sonra aynı hükümde yeniden koşullu salıverilme yok) karşısında yanlıştı → düzeltildi. Üçte iki listesi md 107/2 (a)–(h) ve 107/4 ile; dörtte üç grubu md 108/9 (TCK 102/2, 103, 104/2–3, 188) ve 3713 md 17 ile yazıldı (çocuklara ilişkin (e), (g) bentleri ve TMK kapsamındaki çocuklar sayılmadı). Mükerrir süreleri (md 108/1), örgüt suçlarında otuz altı/otuz yıl (md 107/4) ve ikinci tekerrürde dörtte üç (md 108/3, 7550/2025) burada ana yer; tck/11/03 buraya gönderir. "İnfaz edilmiş sayılır" md 107/14'ün iki koşuluyla; geri almada çektirilecek süre md 107/13-a/b ile; md 105/A/2 kurum koşulu tabloya eklendi. "Firar etmiş sayılır" md 105/A/8'de geçmiyor, cümle çıkarıldı (kanun kaçma suçu hükümlerine gönderir). "Ezberlemek yerine güncel kanun metnine bakmak gerekir" kaldırıldı. Önceki notlardaki "dörtte üç bankadan kısmen okundu" kaydı bu düzeltmeyle kapandı. Gömülü soru hâlâ yok.
+- SORU EKLENDİ (Opus oturumu, 19 Kas 2026): kullanıcının prod `ders-soru-ara.ts` aramasıyla bulunan maddesiz yayınlı sorular; anahtarlar 5275 md 107/16 metniyle hesaplandı: 92d73145… E (örgüt faaliyeti çerçevesinde işlenmesi dolayısıyla ağırlaştırılmış müebbet), f5455d66… A (I ve III; md 107/16 Dördüncü Kısmın 4. "Devletin Güvenliğine Karşı Suçlar", 5. "Anayasal Düzene…", 6. "Millî Savunmaya Karşı Suçlar" bölümlerini sayar — adliyeye ve kamu idaresine karşı suçlar dışında). Gövdedeki ilgili cümle (Koşullar, ilk paragraf) bu kapsamla uyumlu. İkisi de beş şıklı, share 200, başka Doc 57 dersinde kullanılmamış.
 - AI taslak; insan düzenleme ve yayın onayı bekliyor.

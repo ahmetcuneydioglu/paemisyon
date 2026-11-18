@@ -105,7 +105,7 @@ Cezanın infazına genel af ya da etkin pişmanlık dışında başka bir hukuki
 Bu kurum Ceza Kanunundaki hak yoksunluklarını değil, öteki kanunlardaki yoksunlukları ilgilendirir. Ceza Kanunundaki yoksunluklar infazla ya da kendi sürelerinin dolmasıyla zaten sona erer; onlar için ayrı bir karara gerek yoktur. Kurumun kendisi de Ceza Kanununda düzenlenmemiştir: "yasaklanmış hakların geri verilmesi Türk Ceza Kanununda açıkça düzenlenmiştir" ifadesi yanlıştır. Kanundaki yer Adli Sicil Kanunudur.
 :::
 
-Karar hakların geleceğe dönük olarak kullanılmasını sağlar; mahkûmiyeti ortadan kaldırmaz. Kişi yeniden aday olabilir ya da mesleğe başvurabilir; fakat geçmişte yitirdiği görev kendiliğinden geri gelmez. Karar ayrıca arşiv kaydının silinme süresini kısaltır: otuz yıl yerine on beş yıl.
+Karar hakların geleceğe dönük olarak kullanılmasını sağlar; mahkûmiyeti ortadan kaldırmaz. Kişi yeniden aday olabilir ya da mesleğe başvurabilir; fakat geçmişte yitirdiği görev kendiliğinden geri gelmez. Karar ayrıca arşiv kaydının silinme süresini kısaltır: otuz yıl yerine on beş yıl. Bu yola başvurmanın bütün masrafları hükümlüye aittir.
 
 ## Dört kavram yan yana
 
@@ -117,6 +117,19 @@ Karar hakların geleceğe dönük olarak kullanılmasını sağlar; mahkûmiyeti
 | Yasaklanmış hakların geri verilmesi | İnfazdan üç yıl sonra | Mahkeme, talep üzerine | Öteki kanunlardaki yoksunluklar kalkar |
 
 Bu dersle dersin başında çizilen haritanın son ayağı, yaptırım hukuku, tamamlanır: suçun nasıl kurulduğu ve hangi yaptırımın uygulandığı görüldükten sonra, cezalandırma yetkisinin nasıl sona erdiği ve geride hangi izi bıraktığı da görülmüş olur. Kolluk görevlisi bu izle sicil sorgusunda ve göreve giriş koşullarında yeniden karşılaşır.
+
+## Sınavda çıktı
+
+Sorular sicile kaydedilmeyen kararları, arşiv kaydının silinme süresini ve yasaklanmış hakların geri verilmesinin koşullarını yoklar.
+
+:::soru e25a5669-6af0-4b11-b708-289d7f7c5de5
+:::
+
+:::soru 792ac2bf-3b4d-4108-bfa5-5caceed3a6f0
+:::
+
+:::soru dae7f0cf-5aaf-4c89-924c-7e57ca7050ec
+:::
 
 ---
 
@@ -133,4 +146,5 @@ Bu dersle dersin başında çizilen haritanın son ayağı, yaptırım hukuku, t
 - Gömülü soru yok: 5352 sayılı Kanuna bağlı yayınlı soru public uçtan aranmadı. Kullanıcı `ders-soru-ara.ts "Ceza Hukuku" "adli sicil" "arşiv kaydı" "yasaklanmış hakların geri verilmesi"` ile arayabilir. Soru üretilmedi.
 - SONRADAN EKLENEN PARAGRAF, teyit edilmeli: adli sicil bilgilerinin gizliliği 5352 md 11'e dayanır (madde bu turda okunmadı); kolluk görevlisinin amaç dışı sorgulamasının sonuçları ve "sabıka tek başına yakalama nedeni değildir" cümlesi yazımdır (TCK md 135–136 ve PVSK'nın genel koşulları).
 - DENETİM DÜZELTMESİ (bağımsız denetim, Opus oturumu, 14 Kas 2026): Kolluğun sorgulama yetkisi 5352 md 13/1-b'ye çekildi (bir suça ilişkin soruşturma ve kovuşturma kapsamında, Adalet Bakanının onayıyla); "görevinin gerektirdiği ölçüde" genellemesi metinde yok. "Ceza Kanunundaki yoksunluklar infazla kendiliğinden sona erer" cümlesine TCK md 53/5–6 istisnası eklendi (kötüye kullanılan hak ve meslek yasağı, sürücü belgesi geri alma infazdan sonra işler). Dört kavram tablosunun ilk satırı üst tabloyla (md 9/1) hizalandı. Kapanış iki cümlesi tck/01/01 harita tablosuna bağlandı. İNSAN İNCELEMESİ: 5352 md 9/3 ikinci cümlesi "Adlî para cezasına mahkûmiyet hükümleri ile cezanın ertelenmesine ilişkin hükümler, adlî sicil kaydına alınmadan doğrudan arşive kaydedilir" der; "Kaydedilir" sütunundaki adli para cezası ve erteleme satırları md 4'ün sayımına göre duruyor, bu iki kararın sicilde değil doğrudan arşivde görüneceği gövdede söylenmedi — okuma teyit edilip gerekirse gövdeye eklenmeli.
+- SORU EKLENDİ (Opus oturumu, 19 Kas 2026): kullanıcının prod `ders-soru-ara.ts` aramasıyla bulunan maddesiz yayınlı sorular; anahtarlar 5352 metniyle hesaplandı: e25a5669… E (disiplin hapsi md 5/1-b ile kaydedilmez; hapis, koşullu salıverilme, geri alınma ve özel affa ilişkin Cumhurbaşkanlığı kararı md 4/1-a ve i ile kaydedilir), 792ac2bf… B (md 12/1-c "diğer mahkûmiyetler" beş yıl), dae7f0cf… E (md 13/A/7 masraflar hükümlüye aittir; A–D md 13/A/1, 2, 3, 6 ile doğru). Gövdeye md 13/A/7 cümlesi eklendi ("bütün masrafları hükümlüye aittir"). ALINMAYANLAR (panel): 113614da… — anahtarı md 9/3 ikinci cümlesini GENEL kural sayıyor (adli para cezası ve erteleme doğrudan arşive; beklenen yanıt E "II, III ve IV"); bu, md 4/1-b ve c ile gerilimde ve ders "Kaydedilir" sütununu md 4'e göre veriyor — md 9/3'ün okunuşu insan kararı (karar genel kural yönünde verilirse soru eklenip gövdedeki sicil/arşiv anlatımı buna göre düzeltilmeli). 5d5cae66… — düşme kararı (IV) md 4 sayımında olmadığı için kaydedilmez sonucu çıkarımla (E); md 5 açıkça saymaz, kullanılmadı.
 - AI taslak; insan düzenleme ve yayın onayı bekliyor.
