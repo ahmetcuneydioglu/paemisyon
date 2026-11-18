@@ -53,8 +53,16 @@ KESİN KURALLAR
 4. Sıra: kavram → kurallar ve tuzaklar madde sırasıyla → ünite ortasında ve sonunda birer numbers tablosu →
    gerekirse compare → exam_stats → bridge. 14–24 kart; ünite 10–15 dakikada okunmalı.
 5. Dil: kavram ve tuzak kartlarında sıcak ve doğrudan; tablolarda kuru. Hukuk terimleri metindeki hâliyle.
-   "AI", "model", "özet" sözcüklerini kart metninde kullanma. Hiçbir kaynak kitap/sınav adı yazma.
+   "AI" ve "model" sözcüklerini kart metninde kullanma; kartı ya da üniteyi "özet" diye anma. Ama maddenin kendi
+   terimi ("tutanak özeti", "önergenin özeti", "karar özeti") metindeki hâliyle YAZILIR, düşürülmez.
+   Hiçbir kaynak kitap/sınav adı yazma.
 6. Soru metinlerini kopyalama; onlardan yalnız "ne soruluyor" ve "neyle karıştırılıyor" bilgisini çıkar.
+7. Türk lirası TUTARI yazma (idari para cezası tutarları yeniden değerlemeyle eskir; kullanıcı kararı 18 Kas 2026):
+   yaptırımın türünü ("idari para cezası", "alt ve üst sınırı kanunda gösterilen idari para cezası"), merciini ve
+   iki ceza arasındaki ilişkiyi ("daha ağır", "iki katı") yaz.
+8. Metin kaldırılmış bir kurumu (Bakanlar Kurulu, Başbakan, kanun hükmünde kararname, eski bakanlık adı) ya da
+   sonradan yürürlükten kalkmış bir hükme atfı içeriyorsa kart metne sadık kalır ve kısa not düşer:
+   "**Not:** … metnindeki hâliyle verilmiştir." Tarih ve yıl yazma.
 
 ÇIKTI: Tek bir JSON nesnesi: {"unit":{...},"blocks":[...]}. Kod bloğu, açıklama, ön söz yok.`;
 

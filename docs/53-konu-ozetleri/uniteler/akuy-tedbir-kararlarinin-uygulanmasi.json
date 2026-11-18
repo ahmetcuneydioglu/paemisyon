@@ -1,0 +1,513 @@
+{
+  "unit": {
+    "slug": "akuy-tedbir-kararlarinin-uygulanmasi",
+    "legislationSlug": "6284-sayili-kanuna-iliskin-uygulama-yonetmeligi",
+    "topicId": "61f85a6c-e9a1-4f19-85bc-dd8cbf04287e",
+    "title": "Tedbir kararlarının uygulanması",
+    "subtitle": "Kim karar verir, kim uygular, kime bildirilir: barınma, geçici koruma, konuttan uzaklaştırma, silah, tedavi, gizlilik ve maddi yardım",
+    "articleFrom": "3",
+    "articleTo": "42",
+    "readingMinutes": 15,
+    "sourceLabel": "AI özeti — 6284 Sayılı Kanuna İlişkin Uygulama Yönetmeliği, md 3, 5, 7, 10, 16, 19, 26, 28, 32, 35, 42",
+    "articleNos": [
+      "3",
+      "5",
+      "7",
+      "10",
+      "16",
+      "19",
+      "26",
+      "28",
+      "32",
+      "35",
+      "42"
+    ],
+    "generatedBy": "claude-opus-5-5 (ozet-uret.ts)",
+    "sortOrder": 1
+  },
+  "blocks": [
+    {
+      "type": "concept",
+      "title": "Tedbir kararı: iki yönlü bir kalkan",
+      "body": "Bu ünitenin merkezinde **tedbir kararı** var. Tedbir kararını hâkim, mülkî amir veya kolluk verir. Bunu talep ya da ihbar üzerine yapabilir, resen de yapabilir. Karar iki yöne bakar. **Koruyucu tedbir kararı** korunan kişi hakkında verilir. Korunan kişi şiddet mağdurudur; varsa beraberindeki çocukları, aile bireyleri ve tek taraflı ısrarlı takip mağduru da bu kapsamdadır. **Önleyici tedbir kararı** ise şiddet uygulayan veya uygulama tehlikesi bulunan kişi hakkında verilir. Her iki kararda da olayın niteliği dikkate alınır. Okurken her maddede şu üç soruyu sor: kararı kim verir, kim uygular, kime bildirilir?",
+      "articleRefs": [
+        "3"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Kilit tanımlar",
+      "body": "- **Hâkim:** Aile mahkemesi hâkimi.\n- **Kolluk:** Polis, jandarma ve sahil güvenlik birimleri.\n- **Hayati tehlike:** Kişinin ölümle sonuçlanabilecek bir şiddet olayına maruz kalması ya da kalma ihtimalinin bulunması.\n- **Geçici koruma:** Hayati tehlikesi bulunan şiddet mağdurunun, şiddet uygulayandan gelebilecek tehlikelere karşı kolluk tarafından korunmasıdır. Tanıma göre gerektiğinde teknik cihaz ve donanım kullanılır. Koruma **24 saat esasına göre kesintisiz** yürütülür.\n- **Aydınlatılmış rıza:** Korunan kişiye tedbirin sebepleri, aşamaları ve sonuçları anlayabileceği biçimde açıklanır. Kişi özgür iradesiyle bunların tamamını anlayıp kabul ettiğini **yazılı beyan** eder.\n- **ŞÖNİM:** Danışmanlık, rehberlik, yönlendirme ve izleme hizmeti veren merkezdir. Çalışmaları **7 gün 24 saat** esasına göre yürütülür ve tercihen kadın personel istihdam edilir.\n- **Müdürlük:** Aile ve Sosyal Politikalar il veya ilçe müdürlüğü.\n- **Konukevi:** Şiddet mağdurlarının, varsa çocuklarıyla birlikte geçici süreyle kalabildiği yatılı sosyal hizmet kuruluşudur. Sığınmaevi, kadın sığınağı, kadınevi, şefkatevi gibi adlarla da açılabilir.\n\n**Not:** Tanımlar Yönetmelik metnindeki hâliyle verilmiştir; Bakanlık bugün Aile ve Sosyal Hizmetler Bakanlığı adını taşır. Kanun md 12 ayrıca teknik araç ve yöntemlerin hâkim kararıyla kullanılabileceğini, bu yolla kişilerin ses ve görüntülerinin dinlenemeyeceğini, izlenemeyeceğini ve kayda alınamayacağını söyler.",
+      "articleRefs": [
+        "3"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Gecikmesinde sakınca kimin değerlendirmesiyle belirlenir?",
+      "body": "Bu hâl, **kolluğun yapacağı tahkikat ve risk değerlendirmesi** sonucunda ortaya çıkar. ŞÖNİM'in sosyal araştırması, savcının ön incelemesi, mülkî amirin ön incelemesi ya da il müdürlüğünün ihbar incelemesi gibi şıklar seni yanıltmasın.\n\nTanımın ikinci ayağını da unutma: derhal işlem yapılmazsa şiddetin önlenememesi, can güvenliğinin ya da hak ve hürriyetlerin tehlikeye girmesi, korunan kişinin zarar görmesi, şiddetin iz, eser, emare ve delillerinin kaybolması, şiddet uygulayanın kaçması veya kimliğinin tespit edilememesi gibi ihtimaller doğmalı ve mülkî amirden ya da hâkimden karar almak için yeterince vakit bulunmamalıdır.\n\nAynı maddedeki ikinci tuzak **şikâyet mercileri**dir. Tanımda yalnızca şunlar sayılır: kolluk, mülkî amir, Cumhuriyet başsavcılığı, hâkim ve **Bakanlığın ilgili birimleri**. Okul idaresi, muhtarlık, kamu sağlık kuruluşu ya da meslek kuruluşu bu listede yer almaz.",
+      "articleRefs": [
+        "3"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "İhbar ve şikâyet üzerine kim ne yapar?",
+      "body": "- **Kolluk:**\n  - Genel hükümler doğrultusunda gerekli işlemleri yapar.\n  - Gecikmesinde sakınca bulunan hâllerde aldığı koruyucu ve önleyici tedbirleri, tedbirin niteliğine göre **mülkî amire veya hâkime** onaya sunar.\n  - Kendisine intikal eden her olayı **gecikmeksizin, en seri vasıtalarla** ŞÖNİM'e bildirir.\n- **Cumhuriyet başsavcılığı:** Evrakın bir örneğini, karar verilmek üzere ivedilikle **hâkime veya mülkî amire** gönderir.\n- **Mülkî amir:**\n  - Kanun md 3'te sayılan koruyucu tedbirlerden birine, birkaçına veya uygun göreceği benzer tedbirlere karar verebilir.\n  - Olayın niteliğine göre şikâyet veya ihbarı **kolluğa veya Cumhuriyet başsavcılığına** bildirir.\n- Hâkim veya mülkî amirin verdiği kararlar **ivedilikle ŞÖNİM'e** bildirilir.",
+      "articleRefs": [
+        "5"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Onay makamını ve bildirim hızını karıştırma",
+      "body": "Kolluk, gecikmesinde sakınca bulunan hâllerde aldığı tedbiri **mülkî amire veya hâkime** onaya sunar. Cumhuriyet başsavcılığının onayına sunulduğunu söyleyen şık yanlıştır.\n\nKolluk olayları ŞÖNİM'e **gecikmeksizin** bildirir. \"Aylık\" ya da \"dönemsel\" bildirim diyen şık yanlıştır.\n\nMülkî amir şikâyeti **kolluğa veya Cumhuriyet başsavcılığına** bildirir; aile mahkemesine göndermez.\n\nDoğru cümleyi akılda tutmanın kısa yolu: savcılık evrakın bir örneğini **hâkime veya mülkî amire** gönderir.",
+      "articleRefs": [
+        "5"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Barınma yeri sağlanması nasıl uygulanır?",
+      "body": "- **Asıl yer:** Bakanlığa ait veya Bakanlığın gözetim ve denetimi altındaki yerler.\n- **Bu yerler yetersizse:** Kişi kamu kurum ve kuruluşlarına ait sosyal tesis, yurt veya benzeri yerlerde **geçici olarak** barındırılır. Bunun için mülkî amirin, acele hâllerde kolluğun veya Bakanlığın talebi gerekir. Barınma, güvenli nakil sağlanıncaya kadar sürer.\n- **Geçici barınma sırasında:**\n  - Kişinin güvenliğini geçici barınmanın sağlandığı **yer kolluğu** sağlar.\n  - Barınma ve iaşe giderlerini **ŞÖNİM** öder.\n  - Kişinin yerleştirildiği yere ilişkin bilgi ŞÖNİM'e bildirilir.\n  - ŞÖNİM, kişinin talebini de dikkate alarak uygun ilk kabul birimini veya konukevini belirler.\n- **Hayati tehlike varsa:** Yerleştirmeye **kolluk refakat eder**.\n- **Nakil:** ŞÖNİM il içi ve il dışı nakillerde araç tahsis eder; ulaşım giderlerini ve korunan kişinin zorunlu giderlerini karşılar.\n- **Tedbiri kolluk amiri uyguladıysa ya da kişi kolluktaysa:**\n  - Kolluk kişiyi ivedilikle ŞÖNİM'e ulaştırır.\n  - Bu mümkün değilse kişiye geçici barınma sağlanır. Giderler Bakanlık bütçesinin ilgili tertibinden karşılanır.\n\n**Not:** Yönetmelik metnindeki hâliyle verilmiştir; Kanun md 10 aynı durumda kişinin Bakanlığın il veya ilçe müdürlüğüne ivedilikle ulaştırılacağını söyler.",
+      "articleRefs": [
+        "7"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Barınma yerine kabul için onay aranmaz",
+      "body": "Kişi kamu kurum ve kuruluşlarına ait barınma yerine mülkî amirin veya kolluk amirinin kararıyla getirilebilir. Her iki durumda da **başka herhangi bir karar veya onay aranmaksızın derhal kabul edilir**. \"Mülkî amirin onayıyla kabul edilir\" diyen şık bu yüzden yanlıştır. Bu kural yalnız barınma yerine kabulün bekletilmemesini düzenler. Kolluk amirinin gecikmesinde sakınca bulunan hâlde aldığı tedbir ise yine niteliğine göre mülkî amirin veya hâkimin onayına sunulur (md 5).\n\nİkinci durum: hakkında **resen** barınma tedbiri verilen kişi barınma yerinde kalmak istemeyebilir. Bu durumda kişinin **aydınlatılmış rızası alınır** ve **ŞÖNİM** onu kalmak istediği yere ulaştırır. Hayati tehlike varsa kolluk refakati talep edilir.\n\nŞu şıklar yanlıştır:\n- Süre dolana kadar zorla tutulması,\n- Dosyanın aile mahkemesine gönderilmesi,\n- Mülkî amirin yazılı onayının beklenmesi.",
+      "articleRefs": [
+        "5",
+        "7"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Geçici koruma altına alma",
+      "body": "- **Kararı kim verir?** Mülkî amir; gecikmesinde sakınca bulunan hâllerde kolluk amiri.\n- **Şart:** Şiddet mağdurunun hayati tehlikesinin bulunması.\n- **Başlatma:** İlgilinin talebi üzerine veya resen.\n- **Görevli ve yetkili kolluk:** Kişinin yerleşim yerindeki, bulunduğu yerdeki veya tedbirin uygulanacağı yerdeki kolluk.\n- **Yer değiştirme:**\n  - Korunan kişi gideceği yeri acil durumlarda **hemen**, diğer hâllerde **24 saat öncesinden** kolluğa bildirir.\n  - Kolluk, gideceği yerdeki kolluğu gecikmeksizin haberdar eder.\n  - Tedbir uygulanmaya devam eder.\n- **Fiziki koruma tedbirleri:** Tanık koruma tedbirlerine ilişkin Yönetmelikte yer alır. Bunları hâkim veya mülkî amir, gecikmesinde sakınca bulunan hâllerde **kolluk** belirler.\n- **Tebliğ:** Kolluk aşağıdakileri korunan kişiye açıklar, tutanağa geçirir ve tebliğ eder:\n  - Kararın kapsamı ve içeriği,\n  - Arayabileceği telefon numaraları,\n  - Kolluğun sorumlulukları,\n  - Hangi durumlarda kolluğa bilgi vermesi gerektiği,\n  - Geçici koruma hizmetinden sorumlu kolluk birimi.",
+      "articleRefs": [
+        "10"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Tutanağı kolluk tutar, süre 24 saattir",
+      "body": "Geçici koruma kararını korunan kişiye açıklayıp tutanağa geçiren ve tebliğ eden **ŞÖNİM** değil, **kolluktur**.\n\nAcil olmayan bir yolculukta korunan kişi gideceği yeri kolluğa **24 saat öncesinden** bildirir. 48 saat, 72 saat, bir hafta ya da iki hafta diyen şıklar çeldiricidir.\n\nFiziki koruma tedbirlerinin gecikmesinde sakınca bulunan hâllerde **kolluk** tarafından belirlenmesi ise doğru bir ifadedir.",
+      "articleRefs": [
+        "10"
+      ],
+      "counterNumbers": [
+        48,
+        72,
+        2
+      ]
+    },
+    {
+      "type": "numbers",
+      "title": "Geçici koruma ve ilk bildirimler: süreler",
+      "rows": [
+        {
+          "label": "Geçici koruma esası",
+          "value": "24 saat, kesintisiz",
+          "refs": [
+            "3"
+          ]
+        },
+        {
+          "label": "ŞÖNİM çalışma esası",
+          "value": "7 gün 24 saat",
+          "refs": [
+            "3"
+          ]
+        },
+        {
+          "label": "Korunan kişinin yer değişikliği bildirimi (acil durum)",
+          "value": "Hemen",
+          "refs": [
+            "10"
+          ]
+        },
+        {
+          "label": "Korunan kişinin yer değişikliği bildirimi (diğer hâller)",
+          "value": "24 saat öncesinden",
+          "refs": [
+            "10"
+          ]
+        },
+        {
+          "label": "Gidilecek yerin kolluğunun haberdar edilmesi",
+          "value": "Gecikmeksizin",
+          "refs": [
+            "10"
+          ]
+        },
+        {
+          "label": "Kolluğun her olayı ŞÖNİM'e bildirmesi",
+          "value": "Gecikmeksizin, en seri vasıtalarla",
+          "refs": [
+            "5"
+          ]
+        },
+        {
+          "label": "Hâkim / mülkî amir kararlarının ŞÖNİM'e bildirimi",
+          "value": "İvedilikle",
+          "refs": [
+            "5"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "3",
+        "5",
+        "10"
+      ],
+      "counterNumbers": [
+        48,
+        72
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Kimlik ve bilgi-belgelerin değiştirilmesi",
+      "body": "- **Kararı yalnızca hâkim** verir. Dayanak Tanık Koruma Kanunu hükümleridir.\n- **İki şart birlikte aranır:**\n  - Korunan kişinin hayati tehlikesi bulunmalıdır.\n  - Bu tehlikeyi önlemek için diğer tedbirlerin yeterli olmayacağı anlaşılmalıdır.\n- İlgilinin **aydınlatılmış rızası** gerekir.\n- **Karar yolu:**\n  - Hâkim kararı **Cumhuriyet başsavcılığına** gönderir.\n  - Başsavcılık kararı ivedilikle **İçişleri Bakanlığına** iletir.\n  - İçişleri Bakanlığı işlemin sonucunu Cumhuriyet başsavcılığına bildirir.\n- **Dikkat:** \"Kimlik bilgilerinin değiştirilmesi – nüfus müdürlüğü\" eşleştirmesi yanlıştır. Doğru zincir hâkim → Cumhuriyet başsavcılığı → İçişleri Bakanlığı şeklindedir.",
+      "articleRefs": [
+        "16"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Müşterek konuttan uzaklaştırma ve konut tahsisi",
+      "body": "- **Hâkim**, şiddet uygulayanın korunan kişiyle birlikte oturdukları müşterek konuttan uzaklaştırılmasına karar verebilir. Konut da korunan kişiye tahsis edilebilir.\n- **Kişisel eşya ve belgeler:**\n  - Talep hâlinde **mülkî amir ya da hâkim** karar verebilir.\n  - Eşya ve belgeler korunan kişiye, şiddet uygulayana ya da bunların yakınlarına **kolluk marifetiyle** teslim edilir.\n  - Teslim edilecek eşya ve belgeler **tedbir kararında gösterilir**.\n- **Giderler:** Tedbir, şiddet uygulayanın uzaklaştırıldığı konutun kira, elektrik, su, telefon, doğalgaz ve benzeri giderlerini karşılamaya devam etmesine **engel değildir**.\n- **Hâkimin ek kararları:** Koruma kararı süresince hâkim şunlara da karar verebilir:\n  - Aile konutunun kira sözleşmesinin feshedilmemesi,\n  - Kamu konutu tahsisinin kaldırılması yönünde talepte bulunulmaması,\n  - Bu tür yükümlülüklerin devamı,\n  - Uygun göreceği diğer tedbirler.\n- **Bildirim:** Kira tedbiri **kiralayana**, kamu konutu tedbiri **ilgili kamu kurumuna** bildirilir.",
+      "articleRefs": [
+        "19"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Konuttan uzaklaştırmada çeldiriciler",
+      "body": "Uzaklaştırma, şiddet uygulayanın konutun kira, elektrik, su, telefon, doğalgaz gibi giderlerini ödemeyi sürdürmesine **engel değildir**.\n\nŞu şıklar yanlıştır:\n- Eşya ve belgelerin \"teslim sırasında belirlendiği\" söyleniyorsa yanlıştır; bunlar **tedbir kararında gösterilir**.\n- Eşya teslimine **Cumhuriyet savcısı** karar vermez; mülkî amir ya da hâkim karar verir.\n- Maddede konut tahsisi için korunan kişinin **mülkiyet hakkı** şartı yoktur. Yalnızca birlikte oturdukları müşterek konuttan söz edilir.\n- Maddede uzaklaştırma ve konut tahsisine **hâkim** karar verir; mülkî amirin böyle bir yetkisi sayılmaz. \"Gecikmesinde sakınca bulunan hâlde mülkî amir verir\" diyen şık yanlıştır.\n\n**Not:** Yönetmelik metnindeki hâliyle verilmiştir; Kanun md 5 ayrıca bu tedbirin gecikmesinde sakınca bulunan hâlde kolluk amirince de alınabileceğini ve hâkimin onayına sunulacağını söyler.",
+      "articleRefs": [
+        "19"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Silah teslimi ve muayene-tedavi tedbiri",
+      "body": "**Silah teslimi**\n- **Hâkim**, şiddet uygulayanın zimmetindeki silahı kurumuna teslim etmesine karar verebilir. Silah taşıması zorunlu bir kamu görevi ifa etse bile bu karar verilebilir.\n- Kurum amiri, karar süresinin sonuna kadar ya da tedbirin değiştirildiğine veya kaldırıldığına dair yeni bir karar verilinceye kadar kararı uygular. Silahı **hiçbir şekilde iade etmez**.\n- Teslim ve iade, **kurum amiri, şiddet uygulayan ve bir tanık** arasında imzalanan tutanakla yapılır.\n\n**Muayene ve tedavi**\n- **Hâkim** karar verir. Amaç, şiddet eğilimine yol açan davranışları önlemektir.\n- **Zorunlu başvuru yeri:**\n  - İllerde il halk sağlığı müdürlüğü,\n  - İlçelerde toplum sağlığı merkezi.\n- **Sevk:** Kişi kamuya ait sağlık kuruluşuna sevk edilir.\n  - İllerde sevki, varsa il halk sağlığı müdürlüğünün ruh sağlığı şubesi yapar.\n  - İlçelerde sevki toplum sağlığı merkezi yapar.\n- Tedavinin sürüp sürmediği ve işlemin sonucu ŞÖNİM'e bildirilir.\n- **Tedavi reddedilirse:** Durum tutanakla tespit edilir ve ivedilikle **Cumhuriyet başsavcılığına ve ŞÖNİM'e** bildirilir.\n- Giderler md 44'teki usul ve esaslara göre karşılanır.\n\n**Not:** Kurum adları Yönetmelik metnindeki hâliyle verilmiştir; il halk sağlığı müdürlükleri bugün ayrı bir teşkilat olarak yer almaz, görevleri il sağlık müdürlüklerine geçmiştir.",
+      "articleRefs": [
+        "26",
+        "28"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Tutanağı kim imzalar, ret kime bildirilir?",
+      "body": "**Silah tutanağı:** Doğru üçlü **kurum amiri + şiddet uygulayan + bir tanık** şeklindedir. Şu şıklar yanlıştır:\n- Kolluk amiri,\n- Korunan kişi,\n- Cumhuriyet savcısı,\n- ŞÖNİM görevlisi,\n- \"İki tanık\".\n\n**Tedaviyi reddetme:** Durum tutanakla tespit edilir ve **Cumhuriyet başsavcılığına ve ŞÖNİM'e** bildirilir. Kolluk zoruyla tedaviye götürme ya da tedbirin kendiliğinden kalkması maddede yoktur. \"Kolluk amiri zorlama hapsine karar verir\" diyen şık da yanlıştır.\n\n**Not:** Kanun md 13'e göre tedbir kararına aykırılıkta zorlama hapsine **hâkim** karar verir.",
+      "articleRefs": [
+        "26",
+        "28"
+      ],
+      "counterNumbers": [
+        2
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Gizlilik kararı",
+      "body": "- **Ne zaman verilir?** Gerekli bulunması hâlinde, tedbir kararıyla birlikte, talep üzerine veya resen.\n- **Neler gizli tutulur?**\n  - Korunan kişinin ve diğer aile bireylerinin kimlik bilgileri ve kimliği ortaya çıkarabilecek bilgileri,\n  - Adresleri,\n  - Korumanın etkinliği bakımından önemli diğer bilgiler.\n- **Hangi kayıtlarda?** Tüm resmî kayıtlarda. Örnekler: Millî Eğitim Bakanlığı, MERNİS, Sosyal Güvenlik Kurumu, UYAP, kolluk, bankalar, sağlık kurum ve kuruluşları.\n- Bu bilgileri hukuka aykırı olarak başkasına veren veya ifşa eden kişi hakkında Türk Ceza Kanununun ilgili hükümleri uygulanır.\n- **Adli işlemlerde:** Gizlilik, Tanık Koruma Tedbirlerine İlişkin Esas ve Usuller Hakkında Yönetmelik çerçevesinde yürütülür.\n- **Tebligat:** Korunan kişiye yapılacak tebligatlarda **ŞÖNİM'in adresi** kullanılır.\n- **Nüfus kaydına işleme:** Karar, **ŞÖNİM müdürü aracılığıyla** nüfus kaydına işlenir.\n  - Şerhte kararı veren merciin adı ile kararın tarih ve sayısı bulunur.\n  - Korunan kişiden resmî işlemlerde **adres beyanı istenmez**.\n  - Gizli kayıtlar **yalnızca elektronik ortamda** tutulur.\n- **Silinme:** Şerh, tedbir süresinin sona ermesini takip eden **15. gün** MERNİS'ten silinir.\n- **Değişiklik veya kaldırma:** Nüfus müdürlüğü kararı gecikmeksizin yerine getirir.",
+      "articleRefs": [
+        "32"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Gizlilikte dört yanlış şık",
+      "body": "Doğru cevabı kolayca bulursun: **tebligatlarda ŞÖNİM'in adres bilgileri kullanılır**.\n\nÇeldiriciler şunlardır:\n- Kararın **kolluk amiri** aracılığıyla nüfus kaydına işlendiğini söyleyen şık yanlıştır. Bu iş **ŞÖNİM müdürü** aracılığıyla yapılır.\n- Resmî işlemlerde adres beyanı **istenmez**.\n- Gizli kayıtlar kâğıtta değil, **yalnızca elektronik ortamda** tutulur.\n- Şerhte şiddet uygulayanın kimlik bilgileri yer almaz. Şerhte kararı veren merciin adı ile kararın tarih ve sayısı bulunur.",
+      "articleRefs": [
+        "32"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Tedbir kararlarının bildirimi ve kolluk kontrolü",
+      "body": "- **Bildirim:**\n  - Kararlar, niteliğine göre Cumhuriyet başsavcılığına, kolluğa veya müdürlüğe gecikmeksizin, en seri vasıtalarla bildirilir.\n  - Başvurular ile kabul ve ret kararlarını başvuru yapılan merci ŞÖNİM'e bildirir.\n- **Uygulama:**\n  - Kamu kurum ve kuruluşları kararları ŞÖNİM ile işbirliği içinde ivedilikle yerine getirir.\n  - Kararın alınması ve uygulanması aşamasında **uzlaşma ya da arabuluculuk önerilemez**.\n- **Görevli kolluk:** Aşağıdaki kararları, kişinin yerleşim yerindeki, bulunduğu yerdeki veya tedbirin uygulanacağı yerdeki kolluk yerine getirir:\n  - Geçici koruma,\n  - Gecikmesinde sakınca bulunan hâlde barınma yeri sağlanması,\n  - Önleyici tedbirler.\n- **Önleyici tedbirin yolu:**\n  - Cumhuriyet başsavcılığı kararı kolluğa ivedilikle gönderir; uygulama kolluk marifetiyle izlenir.\n  - Gerektiğinde kararın başvuranlar tarafından kolluğa götürülmesine imkân tanınır.\n- **Kolluk kontrol yöntemleri** (karar süresince, korunan kişi üzerinden):\n  - Korunan kişinin bulunduğu konutun **haftada en az bir kez** ziyaret edilmesi,\n  - **İkinci derece dâhil** yakınlarıyla iletişim kurulması,\n  - Komşularının bilgisine başvurulması,\n  - Oturduğu yerin muhtarından bilgi alınması,\n  - Bulunduğu konutun çevresinde araştırma yapılması.\n- **Aykırılık hâlinde:**\n  - Şiddet uygulayan tedbire aykırı davranırsa tutanak tutulur ve Cumhuriyet başsavcılığına gönderilir.\n  - Korunan kişi tedbire uymazsa bunu kolluk amiri tutanakla tespit eder.\n- **ŞÖNİM'e bildirim:** İş ve işlemlerin aşamaları ve sonucu **aynı gün en geç saat 16.00'ya kadar** ŞÖNİM'e bildirilir.\n- Kararın tefhim veya tebliğ edilmemesi **uygulanmasına engel değildir**.\n\n**Not:** Bildirim kuralları Yönetmelik metnindeki hâliyle verilmiştir; Kanun md 10'a göre kararlar her durumda Bakanlığın il ve ilçe müdürlüklerine, niteliğine göre ayrıca Cumhuriyet başsavcılığına veya kolluğa bildirilir. Başvurular ile kabul ve ret kararları da il ve ilçe müdürlüklerine derhâl bildirilir.",
+      "articleRefs": [
+        "35"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Uzlaşma yok, iş yeri amiri yok, saat 16.00",
+      "body": "Bu maddede üç noktaya dikkat et.\n\n- **Yapılamayan işlem:** Şiddet mağduru ile şiddet uygulayan arasında **uzlaşma veya arabuluculuk önermek**. Kararın başvuranlarca kolluğa götürülmesi, korunan kişinin uymamasının tutanakla tespiti ve ŞÖNİM ile işbirliği ise maddede açıkça yer alır.\n- **Sayılmayan kontrol yöntemi:** Listede **iş yeri amirinden bilgi almak yoktur**. Listede konut ziyareti, yakınlar, komşular, muhtar ve konut çevresi vardır.\n- **Saat:** Bildirim için son saat **aynı gün 16.00**'dır. 17.00, ertesi gün ya da 24-48 saat diyen şıklar çeldiricidir.",
+      "articleRefs": [
+        "35"
+      ],
+      "counterNumbers": [
+        17,
+        24,
+        48
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Geçici maddi yardımın tahsili ve gerçeğe aykırı beyan",
+      "body": "- **Şiddet uygulayana tebliğ:** Ödeme tutarı, ödemenin yapılacağı yer ve tebliğden itibaren **bir ay içinde** ödenmesi gerektiği şiddet uygulayana tebliğ edilir.\n- **Süresinde ödenmezse:** İlgili vergi dairesi tutarı 6183 sayılı Kanun hükümlerine göre takip ve tahsil eder.\n- **Gerçeğe aykırı beyanın tespiti:** Korunan kişinin gerçeğe aykırı beyanı üç yoldan tespit edilebilir: müdürlüğe yapılan ihbar, kollukta tespit veya ŞÖNİM'in izleme sırasında tespiti. Bu durumda:\n  - **Tutanak tutulur** ve **sosyal inceleme raporu** düzenlenir.\n  - Yapılan ödemeler, ödeme yapılan **korunan kişiden** 6183 sayılı Kanuna göre tahsil edilir.\n  - Şiddet uygulayandan daha önce tahsil edilen tutar **kendisine iade edilir**.\n- **Dikkat:** Maddede koruyucu tedbirin kendiliğinden kalkması diye bir sonuç yoktur.",
+      "articleRefs": [
+        "42"
+      ]
+    },
+    {
+      "type": "numbers",
+      "title": "Uygulama, gizlilik ve tahsil: süreler ve ölçüler",
+      "rows": [
+        {
+          "label": "Silah teslim/iade tutanağı",
+          "value": "Kurum amiri + şiddet uygulayan + 1 tanık",
+          "refs": [
+            "26"
+          ]
+        },
+        {
+          "label": "Gizlilik şerhinin MERNİS'ten silinmesi",
+          "value": "Tedbir süresinin bitimini takip eden 15. gün",
+          "refs": [
+            "32"
+          ]
+        },
+        {
+          "label": "Kolluk kontrolü: konut ziyareti",
+          "value": "Haftada en az 1 kez",
+          "refs": [
+            "35"
+          ]
+        },
+        {
+          "label": "Kolluk kontrolü: yakınlarla iletişim",
+          "value": "İkinci derece dâhil",
+          "refs": [
+            "35"
+          ]
+        },
+        {
+          "label": "İşlem aşamaları ve sonucunun ŞÖNİM'e bildirimi",
+          "value": "Aynı gün en geç saat 16.00",
+          "refs": [
+            "35"
+          ]
+        },
+        {
+          "label": "Geçici maddi yardım tutarının ödenmesi",
+          "value": "Tebliğden itibaren 1 ay içinde",
+          "refs": [
+            "42"
+          ]
+        },
+        {
+          "label": "Süresinde ödenmeyen tutarın tahsili",
+          "value": "6183 sayılı Kanun, ilgili vergi dairesi",
+          "refs": [
+            "42"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "26",
+        "32",
+        "35",
+        "42"
+      ],
+      "counterNumbers": [
+        17
+      ]
+    },
+    {
+      "type": "compare",
+      "title": "Mülkî amir mi, hâkim mi?",
+      "rows": [
+        {
+          "aspect": "Geçici koruma altına alma",
+          "left": "Mülkî amir verir; gecikmesinde sakınca bulunan hâlde kolluk amiri",
+          "right": "Maddenin birinci fıkrasında sayılmaz",
+          "refs": [
+            "10"
+          ]
+        },
+        {
+          "aspect": "Fiziki koruma tedbirlerinin belirlenmesi",
+          "left": "Belirler; gecikmesinde sakınca bulunan hâlde kolluk",
+          "right": "Belirler; gecikmesinde sakınca bulunan hâlde kolluk",
+          "refs": [
+            "10"
+          ]
+        },
+        {
+          "aspect": "Kolluğun gecikmesinde sakınca bulunan hâlde aldığı tedbirin onayı",
+          "left": "Tedbirin niteliğine göre onaya sunulur",
+          "right": "Tedbirin niteliğine göre onaya sunulur",
+          "refs": [
+            "5"
+          ]
+        },
+        {
+          "aspect": "Kimlik ve bilgi-belgelerin değiştirilmesi",
+          "left": "Sayılmaz",
+          "right": "Karar verir",
+          "refs": [
+            "16"
+          ]
+        },
+        {
+          "aspect": "Müşterek konuttan uzaklaştırma ve konut tahsisi",
+          "left": "Sayılmaz",
+          "right": "Karar verir",
+          "refs": [
+            "19"
+          ]
+        },
+        {
+          "aspect": "Kişisel eşya ve belgelerin teslimi",
+          "left": "Talep hâlinde karar verebilir",
+          "right": "Talep hâlinde karar verebilir",
+          "refs": [
+            "19"
+          ]
+        },
+        {
+          "aspect": "Zimmetteki silahın kuruma teslimi",
+          "left": "Sayılmaz",
+          "right": "Karar verir",
+          "refs": [
+            "26"
+          ]
+        },
+        {
+          "aspect": "Muayene ve tedavi",
+          "left": "Sayılmaz",
+          "right": "Karar verir",
+          "refs": [
+            "28"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "5",
+        "10",
+        "16",
+        "19",
+        "26",
+        "28"
+      ]
+    },
+    {
+      "type": "exam_stats",
+      "title": "Sınav der ki",
+      "rows": [
+        {
+          "label": "Bu ünitenin maddelerinden yayındaki soru",
+          "value": "16",
+          "refs": [
+            "3",
+            "5",
+            "7",
+            "10",
+            "16",
+            "19",
+            "26",
+            "28",
+            "32",
+            "35",
+            "42"
+          ]
+        },
+        {
+          "label": "md 35",
+          "value": "3 soru",
+          "refs": [
+            "35"
+          ]
+        },
+        {
+          "label": "md 3",
+          "value": "2 soru",
+          "refs": [
+            "3"
+          ]
+        },
+        {
+          "label": "md 7",
+          "value": "2 soru",
+          "refs": [
+            "7"
+          ]
+        },
+        {
+          "label": "md 10",
+          "value": "2 soru",
+          "refs": [
+            "10"
+          ]
+        },
+        {
+          "label": "md 5",
+          "value": "1 soru",
+          "refs": [
+            "5"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "3",
+        "5",
+        "7",
+        "10",
+        "16",
+        "19",
+        "26",
+        "28",
+        "32",
+        "35",
+        "42"
+      ],
+      "generated": true
+    },
+    {
+      "type": "bridge",
+      "title": "Bu üniteden soru çöz",
+      "articleRefs": [
+        "3",
+        "5",
+        "7",
+        "10",
+        "16",
+        "19",
+        "26",
+        "28",
+        "32",
+        "35",
+        "42"
+      ],
+      "generated": true,
+      "rows": [
+        {
+          "label": "Madde kapsamlı seans",
+          "value": "md 3, 5, 7, 10, 16, 19, 26, 28, 32, 35, 42, 10 soru",
+          "refs": [
+            "3",
+            "5",
+            "7",
+            "10",
+            "16",
+            "19",
+            "26",
+            "28",
+            "32",
+            "35",
+            "42"
+          ]
+        }
+      ]
+    }
+  ]
+}

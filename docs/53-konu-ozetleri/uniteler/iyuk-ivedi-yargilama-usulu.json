@@ -1,0 +1,539 @@
+{
+  "unit": {
+    "slug": "iyuk-ivedi-yargilama-usulu",
+    "legislationSlug": "2577-idari-yargilama-usulu-kanunu-iyuk",
+    "topicId": "e22d1f78-8191-4099-9134-044c59114bd7",
+    "title": "İvedi yargılama usulü",
+    "subtitle": "İYUK 20/A ve 20/B: kapsam, kısa süreler, temyiz",
+    "articleFrom": "20/A",
+    "articleTo": "20/B",
+    "readingMinutes": 8,
+    "sourceLabel": "AI özeti — 2577 İdari Yargılama Usulü Kanunu (İYUK), md 20/A, 20/B",
+    "articleNos": [
+      "20/A",
+      "20/B"
+    ],
+    "generatedBy": "claude-opus-5-5 (ozet-uret.ts)",
+    "sortOrder": 4
+  },
+  "blocks": [
+    {
+      "type": "concept",
+      "title": "Hızlı hat: ivedi yargılama",
+      "body": "Kanun bazı idari uyuşmazlıklar için süreleri kısaltılmış özel bir yargılama usulü öngörür. 20/A'da ihale, acele kamulaştırma, özelleştirme gibi işlemlerden doğan uyuşmazlıklarda uygulanan ivedi yargılama usulünü görürsün. 20/B'de ise Millî Eğitim Bakanlığı ile Ölçme, Seçme ve Yerleştirme Merkezinin merkezî ve ortak sınavlarına ilişkin davalar için ayrı bir usul var. İkisinde de iskelet aynıdır: kısa dava açma süresi, hızlı ilk inceleme, kısa savunma, itiraz yolu kapalı yürütmeyi durdurma kararları ve hızlı temyiz. Fark büyük ölçüde sürelerdedir. 20/B ayrıca yürütmenin durdurulması ve iptal kararlarının sınava katılanların lehine uygulanmasını öngörür.",
+      "articleRefs": [
+        "20/A",
+        "20/B"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "İvedi usulün kapsamı",
+      "body": "İvedi yargılama usulü şu işlemlerden doğan uyuşmazlıklarda uygulanır:\n- **İhale işlemleri** (ihaleden yasaklama kararları hariç)\n- **Acele kamulaştırma** işlemleri\n- **Özelleştirme Yüksek Kurulu** kararları\n- 2634 sayılı Turizmi Teşvik Kanunu uyarınca yapılan **satış, tahsis ve kiralama** işlemleri\n- 2872 sayılı Çevre Kanunu uyarınca **çevresel etki değerlendirmesi** sonucu alınan kararlar (idari yaptırım kararları hariç)\n- 6306 sayılı Afet Riski Altındaki Alanların Dönüştürülmesi Hakkında Kanun uyarınca alınan **Cumhurbaşkanı kararları**",
+      "articleRefs": [
+        "20/A"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Kapsamda \"hariç\" sözcüğüne dikkat",
+      "body": "İhale işlemleri ivedi usule tabidir, ama ihaleden yasaklama kararları hariç. Çevresel etki değerlendirmesi sonucu alınan kararlar da kapsamdadır, ama 2872 sayılı Çevre Kanunu uyarınca verilen idari yaptırım kararları hariç. 6306 sayılı Kanun'dan yalnızca bu Kanun uyarınca alınan Cumhurbaşkanı kararları sayılmıştır. \"Her türlü ihale işlemi\" ya da \"çevre mevzuatındaki tüm kararlar\" gibi geniş ifadeler gördüğünde dur ve istisnayı hatırla.",
+      "articleRefs": [
+        "20/A"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "İvedi usulde dava açma ve ilk inceleme",
+      "body": "- **Dava açma süresi:** otuz gün.\n- Kanunun **11. madde** hükümleri **uygulanmaz**.\n- **Yedi gün** içinde ilk inceleme yapılır, dava dilekçesi ve ekleri tebliğe çıkarılır.",
+      "articleRefs": [
+        "20/A"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "İlk inceleme yedi gün içinde",
+      "body": "Yanlış şık seni şuna çeker: \"On beş gün içinde ilk inceleme yapılır.\" Hayır. İvedi usulde ilk inceleme yedi gün içinde yapılır, dava dilekçesi ve ekleri de bu sürede tebliğe çıkarılır. On beş günü savunmada, temyiz başvurusunda ve temyize cevapta görürsün; ilk incelemede değil. Bir de şunu unutma: yürütmenin durdurulması talebine ilişkin kararlara itiraz edilemez. \"İtiraz edilebilir\" diyen şık yanlıştır.",
+      "articleRefs": [
+        "20/A"
+      ],
+      "counterNumbers": [
+        15
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "İvedi usulde savunma ve tekemmül",
+      "body": "- **Savunma süresi:** dava dilekçesinin tebliğinden itibaren **on beş gün**.\n- Bu süre **bir defaya mahsus** olmak üzere **en fazla on beş gün** uzatılabilir; savunma için toplamda en fazla 30 gün.\n- Dosya, **savunmanın verilmesi** veya **savunma verme süresinin geçmesiyle** tekemmül etmiş sayılır.",
+      "articleRefs": [
+        "20/A"
+      ],
+      "derivedNumbers": [
+        {
+          "value": 30,
+          "expr": "15 + 15",
+          "refs": [
+            "20/A"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Yürütmenin durdurulması ve karar süresi",
+      "body": "- **Yürütmenin durdurulması** talebine ilişkin kararlara **itiraz edilemez**.\n- Dava, dosyanın **tekemmülünden itibaren en geç bir ay** içinde karara bağlanır.\n- Ara kararı verilmesi, keşif, bilirkişi incelemesi ya da duruşma yapılması gibi işlemler **ivedilikle** sonuçlandırılır.",
+      "articleRefs": [
+        "20/A"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "İvedi usulde temyiz",
+      "body": "- Nihai kararlara karşı **tebliğ tarihinden itibaren on beş gün** içinde temyiz yoluna başvurulabilir.\n- Temyiz dilekçeleri **üç gün** içinde incelenir ve tebliğe çıkarılır; Kanunun **48. madde** hükümleri bu maddeye aykırı olmayan ölçüde kıyasen uygulanır.\n- **Temyiz dilekçelerine cevap süresi:** on beş gün.\n- Temyiz istemi **en geç iki ay** içinde karara bağlanır; karar **en geç bir ay** içinde tebliğe çıkarılır.",
+      "articleRefs": [
+        "20/A"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Temyiz süreleri yer değiştirmesin",
+      "body": "Şıklar temyiz sürelerini birbirine karıştırarak kurulur. Temyiz istemi en geç iki ay içinde karara bağlanır; bir ay, kararın tebliğe çıkarılma süresidir. Temyiz dilekçelerine cevap süresi on beş gündür, yirmi gün değil. Temyiz dilekçeleri üç gün içinde incelenip tebliğe çıkarılır; yedi gün ilk incelemenin süresidir. Temyiz başvurusu ise nihai kararın tebliğinden itibaren on beş gün içinde yapılır.",
+      "articleRefs": [
+        "20/A"
+      ],
+      "counterNumbers": [
+        20,
+        7
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Danıştay'ın temyiz incelemesi",
+      "body": "Danıştay evrak üzerinde inceleme yapar ve **işin esası hakkında karar verir**, eğer:\n- maddi vakıalar hakkında edinilen bilgiyi **yeterli** görürse,\n- temyiz **sadece hukuki noktalara** ilişkinse,\n- temyiz olunan karardaki **maddi yanlışlıkların düzeltilmesi** mümkünse.\n\nAksi hâlde gerekli inceleme ve tahkikatı **kendisi yaparak** esas hakkında yeniden karar verir.\n\n**İstisna:** İlk inceleme üzerine verilen kararlara karşı yapılan temyizi haklı bulursa kararı **bozar ve dosyayı geri gönderir**.\n\nTemyiz üzerine verilen kararlar **kesindir**. Bu kural 20/A ve 20/B'de aynıdır.",
+      "articleRefs": [
+        "20/A",
+        "20/B"
+      ]
+    },
+    {
+      "type": "numbers",
+      "title": "İvedi yargılama usulü: süreler",
+      "rows": [
+        {
+          "label": "Dava açma süresi",
+          "value": "30 gün",
+          "refs": [
+            "20/A"
+          ]
+        },
+        {
+          "label": "İlk inceleme ve tebliğe çıkarma",
+          "value": "7 gün içinde",
+          "refs": [
+            "20/A"
+          ]
+        },
+        {
+          "label": "Savunma süresi",
+          "value": "Tebliğden itibaren 15 gün",
+          "refs": [
+            "20/A"
+          ]
+        },
+        {
+          "label": "Savunma süresinin uzatılması",
+          "value": "Bir defaya mahsus, en fazla 15 gün",
+          "refs": [
+            "20/A"
+          ]
+        },
+        {
+          "label": "Davanın karara bağlanması",
+          "value": "Tekemmülden itibaren en geç 1 ay",
+          "refs": [
+            "20/A"
+          ]
+        },
+        {
+          "label": "Temyiz başvurusu",
+          "value": "Tebliğden itibaren 15 gün",
+          "refs": [
+            "20/A"
+          ]
+        },
+        {
+          "label": "Temyiz dilekçelerinin incelenmesi ve tebliği",
+          "value": "3 gün içinde",
+          "refs": [
+            "20/A"
+          ]
+        },
+        {
+          "label": "Temyiz dilekçelerine cevap",
+          "value": "15 gün",
+          "refs": [
+            "20/A"
+          ]
+        },
+        {
+          "label": "Temyiz isteminin karara bağlanması",
+          "value": "En geç 2 ay",
+          "refs": [
+            "20/A"
+          ]
+        },
+        {
+          "label": "Temyiz kararının tebliğe çıkarılması",
+          "value": "En geç 1 ay",
+          "refs": [
+            "20/A"
+          ]
+        },
+        {
+          "label": "Yürütmenin durdurulması kararlarına itiraz",
+          "value": "Edilemez",
+          "refs": [
+            "20/A"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "20/A"
+      ]
+    },
+    {
+      "type": "concept",
+      "title": "Sınav davalarına özel usul",
+      "body": "20/B bir alanı kendine ayırır: Millî Eğitim Bakanlığı ile Ölçme, Seçme ve Yerleştirme Merkezi tarafından yapılan merkezî ve ortak sınavlar, bu sınavlara ilişkin iş ve işlemler ve sınav sonuçları hakkında açılan davalar. Burada da 11. madde uygulanmaz, ilk inceleme yedi gün içinde yapılır, yürütmenin durdurulması kararlarına itiraz edilemez. Süreler ise günlerle ölçülür; dava açma süresi bile on gündür. Bu bölümde en çok sayılara dikkat etmen gerekecek.",
+      "articleRefs": [
+        "20/B"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Sınav davalarında dava açma ve savunma",
+      "body": "- **Dava açma süresi:** on gün.\n- Kanunun **11. madde** hükümleri **uygulanmaz**.\n- **Yedi gün** içinde ilk inceleme yapılır, dava dilekçesi ve ekleri tebliğe çıkarılır.\n- **Savunma süresi:** dava dilekçesinin tebliğinden itibaren **üç gün**. Bu süre **bir defaya mahsus** olmak üzere **en fazla üç gün** uzatılabilir; savunma için toplamda en fazla 6 gün.\n- Dosya, savunmanın verilmesi veya savunma verme süresinin geçmesiyle **tekemmül etmiş** sayılır.",
+      "articleRefs": [
+        "20/B"
+      ],
+      "derivedNumbers": [
+        {
+          "value": 6,
+          "expr": "3 + 3",
+          "refs": [
+            "20/B"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Dava açma on gün, ilk inceleme yedi gün",
+      "body": "Sınav davalarında dava açma süresi on gündür. Şıklarda on beş, yirmi ya da otuz gün görürsen ele: otuz gün 20/A'daki ivedi usulün süresidir. \"Dava açma süresi yedi gündür\" şıkı da yanlış; yedi gün ilk incelemenin süresidir. Tersine \"on gün içinde ilk inceleme yapılır\" da yanlış. Bu iki sayının yeri değiştirildiğinde fark etmen gerekiyor.",
+      "articleRefs": [
+        "20/B",
+        "20/A"
+      ],
+      "counterNumbers": [
+        7,
+        10,
+        15,
+        20,
+        30
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Savunma: üç gün, bir kez, en fazla üç gün",
+      "body": "Sınav davalarında savunma süresi üç gündür; beş ya da yedi gün değil. \"Savunma süresi uzatılamaz\" diyen şık da yanlıştır: süre bir defaya mahsus olmak üzere en fazla üç gün uzatılabilir. Bir de şuna dikkat et: savunma süresi içinde verilmezse dosya \"tekemmül etmemiş\" sayılmaz. Tam tersi geçerlidir; savunma verme süresinin geçmesiyle dosya tekemmül etmiş sayılır. Yürütmenin durdurulması kararlarına \"üç gün içinde itiraz edilebilir\" şıkı da yanlıştır; itiraz edilemez.",
+      "articleRefs": [
+        "20/B"
+      ],
+      "counterNumbers": [
+        5,
+        7
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Sınav davalarında karar ve temyiz",
+      "body": "- **Yürütmenin durdurulması** talebine ilişkin kararlara **itiraz edilemez**.\n- Dava, dosyanın **tekemmülünden itibaren en geç on beş gün** içinde karara bağlanır; ara kararı, keşif, bilirkişi incelemesi ya da duruşma gibi işlemler **ivedilikle** sonuçlandırılır.\n- Nihai kararlara karşı **tebliğden itibaren beş gün** içinde temyiz yoluna başvurulabilir.\n- Temyiz dilekçeleri **üç gün** içinde incelenir ve tebliğe çıkarılır; **48. madde** bu maddeye aykırı olmayan ölçüde kıyasen uygulanır.\n- **Temyize cevap süresi:** beş gün.\n- Temyiz istemi **en geç on beş gün** içinde karara bağlanır; karar **en geç yedi gün** içinde tebliğe çıkarılır.",
+      "articleRefs": [
+        "20/B"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Kararlar sınava katılanların lehine uygulanır",
+      "body": "Merkezî ve ortak sınavlar, bu sınavlara ilişkin iş ve işlemler ve sınav sonuçları hakkında açılan davalarda verilen:\n- **yürütmenin durdurulması** kararları ve\n- **iptal** kararları,\n\nsöz konusu **sınava katılan kişilerin lehine sonuç doğuracak şekilde** uygulanır.",
+      "articleRefs": [
+        "20/B"
+      ]
+    },
+    {
+      "type": "numbers",
+      "title": "Sınav davaları: süreler",
+      "rows": [
+        {
+          "label": "Dava açma süresi",
+          "value": "10 gün",
+          "refs": [
+            "20/B"
+          ]
+        },
+        {
+          "label": "İlk inceleme ve tebliğe çıkarma",
+          "value": "7 gün içinde",
+          "refs": [
+            "20/B"
+          ]
+        },
+        {
+          "label": "Savunma süresi",
+          "value": "Tebliğden itibaren 3 gün",
+          "refs": [
+            "20/B"
+          ]
+        },
+        {
+          "label": "Savunma süresinin uzatılması",
+          "value": "Bir defaya mahsus, en fazla 3 gün",
+          "refs": [
+            "20/B"
+          ]
+        },
+        {
+          "label": "Davanın karara bağlanması",
+          "value": "Tekemmülden itibaren en geç 15 gün",
+          "refs": [
+            "20/B"
+          ]
+        },
+        {
+          "label": "Temyiz başvurusu",
+          "value": "Tebliğden itibaren 5 gün",
+          "refs": [
+            "20/B"
+          ]
+        },
+        {
+          "label": "Temyiz dilekçelerinin incelenmesi ve tebliği",
+          "value": "3 gün içinde",
+          "refs": [
+            "20/B"
+          ]
+        },
+        {
+          "label": "Temyiz dilekçelerine cevap",
+          "value": "5 gün",
+          "refs": [
+            "20/B"
+          ]
+        },
+        {
+          "label": "Temyiz isteminin karara bağlanması",
+          "value": "En geç 15 gün",
+          "refs": [
+            "20/B"
+          ]
+        },
+        {
+          "label": "Temyiz kararının tebliğe çıkarılması",
+          "value": "En geç 7 gün",
+          "refs": [
+            "20/B"
+          ]
+        },
+        {
+          "label": "Yürütmenin durdurulması kararlarına itiraz",
+          "value": "Edilemez",
+          "refs": [
+            "20/B"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "20/B"
+      ]
+    },
+    {
+      "type": "compare",
+      "title": "İvedi usul ve sınav davaları yan yana",
+      "rows": [
+        {
+          "aspect": "Kapsam",
+          "left": "İhale işlemleri (ihaleden yasaklama kararları hariç), acele kamulaştırma, Özelleştirme Yüksek Kurulu kararları, 2634 sayılı Kanun'a göre satış, tahsis ve kiralama, ÇED kararları (idari yaptırım kararları hariç), 6306 sayılı Kanun uyarınca alınan Cumhurbaşkanı kararları",
+          "right": "MEB ve ÖSYM'nin merkezî ve ortak sınavları, ilgili iş ve işlemler, sınav sonuçları",
+          "refs": [
+            "20/A",
+            "20/B"
+          ]
+        },
+        {
+          "aspect": "Dava açma süresi",
+          "left": "30 gün",
+          "right": "10 gün",
+          "refs": [
+            "20/A",
+            "20/B"
+          ]
+        },
+        {
+          "aspect": "11. madde",
+          "left": "Uygulanmaz",
+          "right": "Uygulanmaz",
+          "refs": [
+            "20/A",
+            "20/B"
+          ]
+        },
+        {
+          "aspect": "İlk inceleme",
+          "left": "7 gün içinde",
+          "right": "7 gün içinde",
+          "refs": [
+            "20/A",
+            "20/B"
+          ]
+        },
+        {
+          "aspect": "Savunma süresi",
+          "left": "15 gün + bir defaya mahsus en fazla 15 gün",
+          "right": "3 gün + bir defaya mahsus en fazla 3 gün",
+          "refs": [
+            "20/A",
+            "20/B"
+          ]
+        },
+        {
+          "aspect": "Yürütmenin durdurulması kararlarına itiraz",
+          "left": "Edilemez",
+          "right": "Edilemez",
+          "refs": [
+            "20/A",
+            "20/B"
+          ]
+        },
+        {
+          "aspect": "Davanın karara bağlanması",
+          "left": "Tekemmülden itibaren en geç 1 ay",
+          "right": "Tekemmülden itibaren en geç 15 gün",
+          "refs": [
+            "20/A",
+            "20/B"
+          ]
+        },
+        {
+          "aspect": "Temyiz başvurusu",
+          "left": "Tebliğden itibaren 15 gün",
+          "right": "Tebliğden itibaren 5 gün",
+          "refs": [
+            "20/A",
+            "20/B"
+          ]
+        },
+        {
+          "aspect": "Temyiz dilekçelerinin incelenmesi",
+          "left": "3 gün içinde",
+          "right": "3 gün içinde",
+          "refs": [
+            "20/A",
+            "20/B"
+          ]
+        },
+        {
+          "aspect": "Temyize cevap",
+          "left": "15 gün",
+          "right": "5 gün",
+          "refs": [
+            "20/A",
+            "20/B"
+          ]
+        },
+        {
+          "aspect": "Temyizin karara bağlanması",
+          "left": "En geç 2 ay",
+          "right": "En geç 15 gün",
+          "refs": [
+            "20/A",
+            "20/B"
+          ]
+        },
+        {
+          "aspect": "Temyiz kararının tebliğe çıkarılması",
+          "left": "En geç 1 ay",
+          "right": "En geç 7 gün",
+          "refs": [
+            "20/A",
+            "20/B"
+          ]
+        },
+        {
+          "aspect": "Temyiz üzerine verilen kararlar",
+          "left": "Kesin",
+          "right": "Kesin",
+          "refs": [
+            "20/A",
+            "20/B"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "20/A",
+        "20/B"
+      ]
+    },
+    {
+      "type": "exam_stats",
+      "title": "Sınav der ki",
+      "rows": [
+        {
+          "label": "Bu ünitenin maddelerinden yayındaki soru",
+          "value": "5",
+          "refs": [
+            "20/A",
+            "20/B"
+          ]
+        },
+        {
+          "label": "md 20/B",
+          "value": "3 soru",
+          "refs": [
+            "20/B"
+          ]
+        },
+        {
+          "label": "md 20/A",
+          "value": "2 soru",
+          "refs": [
+            "20/A"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "20/A",
+        "20/B"
+      ],
+      "generated": true
+    },
+    {
+      "type": "bridge",
+      "title": "Bu üniteden soru çöz",
+      "articleRefs": [
+        "20/A",
+        "20/B"
+      ],
+      "generated": true,
+      "rows": [
+        {
+          "label": "Madde kapsamlı seans",
+          "value": "md 20/A, 20/B, 5 soru",
+          "refs": [
+            "20/A",
+            "20/B"
+          ]
+        }
+      ]
+    }
+  ]
+}

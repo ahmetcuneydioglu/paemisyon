@@ -1,0 +1,403 @@
+{
+  "unit": {
+    "slug": "kabk-ek-kabahatler",
+    "legislationSlug": "5326-sayili-kabahatler-kanunu",
+    "topicId": "569628d2-5e1c-4788-ad66-1ef20d9374f6",
+    "title": "Ek kabahatler",
+    "subtitle": "112'yi meşgul etme ve asılsız ihbar, tüzel kişilerin sorumluluğu, sahte paranın bildirilmemesi",
+    "articleFrom": "42/A",
+    "articleTo": "43/B",
+    "readingMinutes": 6,
+    "sourceLabel": "AI özeti — 5326 Sayılı Kabahatler Kanunu, md 42/A, 43/A, 43/B",
+    "articleNos": [
+      "42/A",
+      "43/A",
+      "43/B"
+    ],
+    "generatedBy": "claude-opus-5-5 (ozet-uret.ts)",
+    "sortOrder": 4
+  },
+  "blocks": [
+    {
+      "type": "concept",
+      "title": "Bu ünitede neler var?",
+      "body": "Bu ünitede kanunun sonradan eklenen maddelerinden oluşan küçük bir grup var. İlki 112 Acil Çağrı Merkezini meşgul edenleri ve asılsız ihbarda bulunanları cezalandırır. Ardından gelen madde, belirli suçlar tüzel kişinin yararına işlendiğinde bu tüzel kişiye idari para cezası verilmesini düzenler. Sonuncusu, kendisine ibraz edilen paranın sahte olduğunu anlayıp bunu bildirmeyen banka ve finans kuruluşlarını hedef alır. Okurken her maddede şu soruya odaklan: Cezayı kim veriyor ve hangi yaptırım uygulanıyor?",
+      "articleRefs": [
+        "42/A",
+        "43/A",
+        "43/B"
+      ]
+    },
+    {
+      "type": "concept",
+      "title": "112 hattı oyuncak değil",
+      "body": "112 Acil Çağrı Merkezi gerçek bir acil durumda sana ulaşması gereken hattır. Hattı boş yere meşgul eden ya da olmayan bir olayı ihbar eden kişi, gerçekten yardıma ihtiyacı olan birinin önünü keser. Kanun bu yüzden iki ayrı fiili cezalandırır: 112'yi meşgul etmek amacıyla aramak ve asılsız ihbarda bulunmak. Her ikisinde de idari para cezasını il valileri verir.",
+      "articleRefs": [
+        "42/A"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "112'yi meşgul etmek",
+      "body": "**Fiil:** 112 Acil Çağrı Merkezini **meşgul etmek amacıyla** arayarak görevlilerle konuşmak **veya** ısrarla çağrı bırakmak.\n\n**Yetkili:** il valileri.\n\n**Yaptırım:** idari para cezası. Kanun bu fiile, asılsız ihbardan daha hafif bir ceza öngörür.\n\nDikkat: Aramanın meşgul etme amacıyla yapılması gerekir.",
+      "articleRefs": [
+        "42/A"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "112'ye asılsız ihbar",
+      "body": "**Fiil:** 112 Acil Çağrı Merkezine asılsız ihbarda bulunmak.\n\n**Şart:** İhbarın asılsız olduğu, **olay yerine giden ekiplerce tutanakla** tespit edilmelidir.\n\n**Yetkili:** il valileri.\n\n**Yaptırım:** idari para cezası. Bu ceza, meşgul etmek amacıyla aramanın cezasından ağırdır.",
+      "articleRefs": [
+        "42/A"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Tutanağı ekip tutar, cezayı vali verir",
+      "body": "Sorular sana genellikle 'cezayı kim verir?' diye sorar. Yanlış şıklarda kolluk görevlileri, ilçe kaymakamları, Cumhuriyet savcısı, 112 Acil Çağrı Merkezi müdürü ya da Sağlık Bakanlığı karşına çıkar. Olay yerine giden ekipler ihbarın asılsız olduğunu tutanakla tespit eder, ancak cezayı vermez. Her iki fiil için de cevap aynıdır: **il valileri**.",
+      "articleRefs": [
+        "42/A"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Hangisi daha ağır?",
+      "body": "Kanun iki fiile ayrı tutarlar öngörür: asılsız ihbarın cezası, meşgul etmek amacıyla aramanın cezasından **ağırdır**. 'Her ikisinin cezası aynıdır' ya da 'meşgul etme daha ağırdır' diyen şıklar yanlıştır. Meşgul etme de bir kabahattir, yalnızca asılsız ihbar cezalandırılmaz. Maddedeki yaptırım her iki fiil için de idari para cezasıdır.",
+      "articleRefs": [
+        "42/A"
+      ],
+      "derivedNumbers": [
+        {
+          "value": 10,
+          "expr": "15000 / 1500",
+          "refs": [
+            "42/A"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Tekrar hâlinde iki katı",
+      "body": "Bu maddede yazılı fiillerin **bir yıl içinde** tekrarlanması hâlinde idari para cezası **iki katı** olarak uygulanır.\n\n- Kapsam: maddede yazılı fiiller, yani hem meşgul etme amacıyla arama hem asılsız ihbar.\n- Süre: bir yıl içinde.\n- Sonuç: idari para cezası iki katına çıkar. Yaptırımın türü değişmez.",
+      "articleRefs": [
+        "42/A"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Fiil türü değişse de iki kat",
+      "body": "Bir senaryo düşün: Kişi daha önce asılsız ihbar nedeniyle ceza almış, aradan bir yıl geçmeden bu kez 112'yi meşgul etmek amacıyla arıyor. 'Fiil türü farklı, tekrar hükmü uygulanmaz' diyen şık seni tuzağa düşürmek için oradadır. Madde, 'bu maddede yazılı fiillerin' tekrarından söz eder ve iki fiil de bu maddede yer alır. Bu durumda meşgul etme cezası iki katı olarak uygulanır. Hapis cezası ya da hat iptali yoktur. 'Yılda yalnızca bir kez ceza verilir' de yanlıştır.",
+      "articleRefs": [
+        "42/A"
+      ],
+      "derivedNumbers": [
+        {
+          "value": 3000,
+          "expr": "1500 * 2",
+          "refs": [
+            "42/A"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "numbers",
+      "title": "112 kabahatleri: rakamlar",
+      "rows": [
+        {
+          "label": "Meşgul etmek amacıyla arama / ısrarla çağrı bırakma",
+          "value": "İdari para cezası",
+          "refs": [
+            "42/A"
+          ]
+        },
+        {
+          "label": "Asılsız ihbar (tutanakla tespit)",
+          "value": "İdari para cezası (meşgul etmeden ağır)",
+          "refs": [
+            "42/A"
+          ]
+        },
+        {
+          "label": "Tekrar süresi",
+          "value": "1 yıl içinde",
+          "refs": [
+            "42/A"
+          ]
+        },
+        {
+          "label": "Tekrarda uygulanan ceza",
+          "value": "İki katı",
+          "refs": [
+            "42/A"
+          ]
+        },
+        {
+          "label": "Yetkili makam",
+          "value": "İl valileri",
+          "refs": [
+            "42/A"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "42/A"
+      ],
+      "derivedNumbers": [
+        {
+          "value": 3000,
+          "expr": "1500 * 2",
+          "refs": [
+            "42/A"
+          ]
+        },
+        {
+          "value": 30000,
+          "expr": "15000 * 2",
+          "refs": [
+            "42/A"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "concept",
+      "title": "Suçu insan işler, yararını tüzel kişi görür",
+      "body": "Tüzel kişi kendi eliyle suç işleyemez. Ama onun adına hareket eden biri, belirli bir suçu tüzel kişinin yararına işleyebilir. Kanun bu durumda yalnızca suçu işleyen kişiyle yetinmez, **ayrıca** tüzel kişiye de idari para cezası verir. Böylece suçtan kazanç sağlayan yapı da bunun bedelini öder.",
+      "articleRefs": [
+        "43/A"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Tüzel kişiye ceza: kim, hangi şartla?",
+      "body": "**Suçu işleyen kişi şunlardan biri olmalıdır:**\n- tüzel kişinin organı veya temsilcisi,\n- organ veya temsilci olmamakla birlikte, tüzel kişinin faaliyeti çerçevesinde görev üstlenen kişi.\n\n**Şartlar:**\n- Sayılan suçlardan biri **tüzel kişinin yararına** işlenmiş olmalıdır.\n- Fiil, **daha ağır idarî para cezasını gerektiren bir kabahat oluşturmamalıdır.**\n\n**Sonuç:** Tüzel kişiye ayrıca idarî para cezası verilir.",
+      "articleRefs": [
+        "43/A"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Hangi suçlar?",
+      "body": "**5237 sayılı Türk Ceza Kanunu:**\n- Dolandırıcılık (157 ve 158. maddeler)\n- Uyuşturucu veya uyarıcı madde imal ve ticareti (188. madde)\n- İhaleye fesat karıştırma (235. madde)\n- Edimin ifasına fesat karıştırma (236. madde)\n- Rüşvet (252. madde)\n- Suçtan kaynaklanan malvarlığı değerlerini aklama (282. madde)\n\n**Diğer kanunlar:**\n- 5411 sayılı Bankacılık Kanunu md 160: zimmet\n- 5607 sayılı Kaçakçılıkla Mücadele Kanunu: kaçakçılık suçları\n- 5015 sayılı Petrol Piyasası Kanunu Ek 5: bu maddede tanımlanan suç\n- 6415 sayılı Kanun md 4: terörizmin finansmanı",
+      "articleRefs": [
+        "43/A"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Zimmet hangi kanundan?",
+      "body": "Listedeki zimmet suçu Türk Ceza Kanunu'ndan değil, **5411 sayılı Bankacılık Kanunu**'nun 160. maddesinden gelir. Terörizmin finansmanı da 6415 sayılı Kanun'a dayanır. Dolandırıcılık, rüşvet, ihaleye fesat karıştırma, edimin ifasına fesat karıştırma, uyuşturucu ve aklama ise 5237 sayılı Kanun'dadır. Sorular bu kaynakları karıştırmana güvenebilir.",
+      "articleRefs": [
+        "43/A"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Tüzel kişiye verilecek cezanın sınırları",
+      "body": "**Yaptırım:** alt ve üst sınırı kanunda gösterilen idarî para cezası.\n\n**Ancak:** İdari para cezası, işleme veya eyleme konu **menfaatin iki katından az olamaz.**",
+      "articleRefs": [
+        "43/A"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "İdari ceza ama kararı mahkeme verir",
+      "body": "Bu madde sınavda seni şaşırtabilir. Ortada idari para cezası var ama karar yetkisi idarede değil. Tüzel kişiye verilecek cezaya, **sayılan suçlardan dolayı yargılama yapmakla görevli mahkeme** karar verir. İlgili kamu kurumunun en üst amiri, Cumhuriyet başsavcısı, mahallin en büyük mülkî amiri ve Mali Suçları Araştırma Kurulu yanlış şıklardır. Savcıyı sahte para bildirimine sakla, orada yetkili odur.",
+      "articleRefs": [
+        "43/A",
+        "43/B"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Sahte para bildirilmezse",
+      "body": "**Kapsamdaki tüzel kişiler:** 5411 sayılı Kanunun 3 üncü maddesinde tanımlanan bankalar ve finansal kuruluşlar, paranın sayım ve incelemesini yaparak bankalara destek hizmeti veren kuruluşlar ile mevzuat çerçevesinde dövize ilişkin işlemler yapmasına izin verilen şirketler.\n\n**Şart:** Kendilerine **her ne amaçla olursa olsun** ibraz edilen paranın sahte olduğu anlaşılmalı ve 5237 sayılı Kanunun 278 inci maddesindeki **bildirim yükümlülüğü yerine getirilmemelidir.**\n\n**Yetkili:** Cumhuriyet savcısı.\n\n**Yaptırım:** alt ve üst sınırı kanunda gösterilen idarî para cezası.",
+      "articleRefs": [
+        "43/B"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Banka denince BDDK'yı işaretleme",
+      "body": "Konu banka olunca akla hemen Bankacılık Düzenleme ve Denetleme Kurumu ya da Türkiye Cumhuriyet Merkez Bankası gelir. Sulh ceza hâkimi ve mahallin en büyük mülkî amiri de sık görülen yanlış şıklardır. Sahte parayı bildirmeyen kuruluşa cezayı **Cumhuriyet savcısı** verir. Paranın hangi amaçla ibraz edildiğinin de önemi yoktur, çünkü madde 'her ne amaçla olursa olsun' der.",
+      "articleRefs": [
+        "43/B"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Kim verir? Hızlı ayrım",
+      "body": "Bu ünitede en çok dikkat isteyen nokta yetkili makamdır:\n- **112'yi meşgul etme ve asılsız ihbar:** il valileri.\n- **Tüzel kişinin yararına işlenen katalog suçlar:** sayılan suçlardan dolayı yargılama yapmakla görevli mahkeme.\n- **Sahte paranın bildirilmemesi:** Cumhuriyet savcısı.\n\nKaymakam ve kolluk bu maddelerin hiçbirinde ceza vermeye yetkili değildir. 112 kabahatlerinde yetki doğrudan **il valilerine** verilmiştir. Tüzel kişinin sorumluluğunda ve sahte paranın bildirilmemesinde ise mülkî amir yetkili değildir.",
+      "articleRefs": [
+        "42/A",
+        "43/A",
+        "43/B"
+      ]
+    },
+    {
+      "type": "numbers",
+      "title": "Ünitenin tüm rakamları",
+      "rows": [
+        {
+          "label": "112'yi meşgul etme",
+          "value": "İdari para cezası",
+          "refs": [
+            "42/A"
+          ]
+        },
+        {
+          "label": "112'ye asılsız ihbar",
+          "value": "İdari para cezası (daha ağır)",
+          "refs": [
+            "42/A"
+          ]
+        },
+        {
+          "label": "112 kabahatlerinde tekrar",
+          "value": "1 yıl içinde, iki katı",
+          "refs": [
+            "42/A"
+          ]
+        },
+        {
+          "label": "Tüzel kişi sorumluluğu",
+          "value": "Alt ve üst sınırlı idari para cezası",
+          "refs": [
+            "43/A"
+          ]
+        },
+        {
+          "label": "Tüzel kişi sorumluluğu, menfaat kuralı",
+          "value": "Menfaatin iki katından az olamaz",
+          "refs": [
+            "43/A"
+          ]
+        },
+        {
+          "label": "Sahte parayı bildirmeme",
+          "value": "Alt ve üst sınırlı idari para cezası",
+          "refs": [
+            "43/B"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "42/A",
+        "43/A",
+        "43/B"
+      ]
+    },
+    {
+      "type": "compare",
+      "title": "Tüzel kişi sorumluluğu ile bildirim yükümlülüğü",
+      "rows": [
+        {
+          "aspect": "Cezayı doğuran durum",
+          "left": "Sayılan suçlardan birinin tüzel kişinin yararına işlenmesi",
+          "right": "İbraz edilen paranın sahte olduğu anlaşıldığı hâlde TCK 278'deki bildirimin yapılmaması",
+          "refs": [
+            "43/A",
+            "43/B"
+          ]
+        },
+        {
+          "aspect": "Kapsamdaki tüzel kişi",
+          "left": "Organı, temsilcisi veya faaliyeti çerçevesinde görev üstlenen kişi eliyle suç işlenen tüzel kişi",
+          "right": "Bankalar, finansal kuruluşlar, bankalara para sayım ve inceleme desteği veren kuruluşlar, dövize ilişkin işlem yapmasına izin verilen şirketler",
+          "refs": [
+            "43/A",
+            "43/B"
+          ]
+        },
+        {
+          "aspect": "Yetkili",
+          "left": "Sayılan suçlardan dolayı yargılama yapmakla görevli mahkeme",
+          "right": "Cumhuriyet savcısı",
+          "refs": [
+            "43/A",
+            "43/B"
+          ]
+        },
+        {
+          "aspect": "Ceza",
+          "left": "Alt ve üst sınırlı idari para cezası; menfaatin iki katından az olamaz",
+          "right": "Alt ve üst sınırlı idari para cezası",
+          "refs": [
+            "43/A",
+            "43/B"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "43/A",
+        "43/B"
+      ]
+    },
+    {
+      "type": "exam_stats",
+      "title": "Sınav der ki",
+      "rows": [
+        {
+          "label": "Bu ünitenin maddelerinden yayındaki soru",
+          "value": "6",
+          "refs": [
+            "42/A",
+            "43/A",
+            "43/B"
+          ]
+        },
+        {
+          "label": "md 42/A — Asılsız çağrı ve asılsız ihbar",
+          "value": "4 soru",
+          "refs": [
+            "42/A"
+          ]
+        },
+        {
+          "label": "md 43/A — Tüzel kişilerin sorumluluğu",
+          "value": "1 soru",
+          "refs": [
+            "43/A"
+          ]
+        },
+        {
+          "label": "md 43/B — Tüzel kişilerin bildirim yükümlülüğü",
+          "value": "1 soru",
+          "refs": [
+            "43/B"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "42/A",
+        "43/A",
+        "43/B"
+      ],
+      "generated": true
+    },
+    {
+      "type": "bridge",
+      "title": "Bu üniteden soru çöz",
+      "articleRefs": [
+        "42/A",
+        "43/A",
+        "43/B"
+      ],
+      "generated": true,
+      "rows": [
+        {
+          "label": "Madde kapsamlı seans",
+          "value": "md 42/A, 43/A, 43/B, 6 soru",
+          "refs": [
+            "42/A",
+            "43/A",
+            "43/B"
+          ]
+        }
+      ]
+    }
+  ]
+}

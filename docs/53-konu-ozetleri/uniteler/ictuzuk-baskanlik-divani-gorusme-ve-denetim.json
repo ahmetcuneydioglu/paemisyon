@@ -1,0 +1,612 @@
+{
+  "unit": {
+    "slug": "ictuzuk-baskanlik-divani-gorusme-ve-denetim",
+    "legislationSlug": "tbmm-ictuzugu",
+    "topicId": "d4a6b734-0110-4c9e-ae57-8cc39091a369",
+    "title": "Başkanlık Divanı, görüşme ve denetim",
+    "subtitle": "Andiçme, Divanın kuruluşu ve boşalmalar, komisyonlar, kanun teklifinin Genel Kurul yolu, genel görüşme ve uyarma cezası",
+    "articleFrom": "3",
+    "articleTo": "159",
+    "readingMinutes": 12,
+    "sourceLabel": "AI özeti — Türkiye Büyük Millet Meclisi İçtüzüğü, md 3, 5, 8, 9, 12, 14, 27, 71, 75–77, 81, 91, 102, 113, 158, 159",
+    "articleNos": [
+      "3",
+      "5",
+      "8",
+      "9",
+      "12",
+      "14",
+      "27",
+      "71",
+      "75",
+      "76",
+      "77",
+      "81",
+      "91",
+      "102",
+      "113",
+      "158",
+      "159"
+    ],
+    "generatedBy": "claude-opus-5-5 (ozet-uret.ts)",
+    "sortOrder": 1
+  },
+  "blocks": [
+    {
+      "type": "concept",
+      "title": "Meclis'in yönetim masası: Başkanlık Divanı",
+      "articleRefs": [
+        "9",
+        "14"
+      ],
+      "body": "Türkiye Büyük Millet Meclisinin bir yönetim masası var: Başkanlık Divanı. Bu masa bir Başkan, dört Başkanvekili, yedi Katip Üye ve üç İdare Amirinden kurulur. Başkanvekili, Katip Üye ve İdare Amiri unvanlarının üçü de bu Divanın üyesidir. Başkan masanın başında oturur: Divana ve Danışma Kuruluna başkanlık eder, Genel Kurul görüşmelerini yönetir, Meclisi Meclis dışında temsil eder. Meclisin idari ve mali işlerini ve kolluk işlerini de o yürütür ve denetler."
+    },
+    {
+      "type": "rule",
+      "title": "İlk toplantı ve andiçme",
+      "articleRefs": [
+        "3"
+      ],
+      "body": "**Ne zaman?** Genel Kurul, milletvekili genel seçimi kesin sonuçlarının Yüksek Seçim Kurulunca ilanını takip eden **üçüncü gün saat 14.00'te** **çağrısız** olarak toplanır. Bu birleşimde önce andiçme töreni yapılır.\n**Nasıl?** Her milletvekili Anayasadaki metni kürsüden yüksek sesle **aynen** okur.\n**Hangi sırayla?** Seçim çevresi, soyadı ve adlarının alfabe sırasına göre.\n**Törende bulunmayan veya ara seçimde seçilen:** Katıldığı ilk birleşimin başında andiçer.\n**Sonuç:** Milletvekilleri andiçerek göreve başlar. Andiçmekten imtina eden milletvekili, milletvekili sıfatından kaynaklanan haklardan yararlanamaz.\n**Cumhurbaşkanı yardımcıları ve bakanlar:** Atandıkları tarihten sonra yapılan ilk birleşimde andiçerler."
+    },
+    {
+      "type": "trap",
+      "title": "Andiçmeyen sıfatı kaybetmez, haklarını kullanamaz",
+      "articleRefs": [
+        "3"
+      ],
+      "body": "Şıklarda 'milletvekili sıfatını kazanamaz', 'milletvekilliği Başkanlık Divanı kararıyla düşer', 'TBMM kararıyla düşürülür' gibi cümleler görürsün. Madde 3 bunların hiçbirini söylemez. Doğru ifade tektir: andiçmekten imtina eden milletvekili **sıfatından kaynaklanan haklardan yararlanamaz**. 'Hiçbir hukuki sonucu yoktur' şıkkı da yanlıştır. İkinci tuzak Cumhurbaşkanı yardımcılarındadır. Andiçme gün sayısıyla ya da 'en geç şu kadar birleşim' diye verilmez. Kural şudur: **atandıkları tarihten sonra yapılan ilk birleşimde** andiçerler.",
+      "counterNumbers": []
+    },
+    {
+      "type": "rule",
+      "title": "Divanın kuruluşu: önce geçici, sonra kalıcı",
+      "articleRefs": [
+        "8",
+        "9"
+      ],
+      "body": "**Geçici Başkanlık (md 8):** Yasama döneminin birinci birleşiminin ilk oturumundan Başkan seçilinceye kadar **en yaşlı milletvekili** Geçici Başkanlık görevini yapar. İkinci derecede en yaşlı üye Başkanvekilliği görevini yerine getirir. **En genç altı milletvekili** geçici olarak Katip Üyelik yapar.\n**Başkanlık Divanı (md 9):** Bir Başkan, dört Başkanvekili, yedi Katip Üye ve üç İdare Amirinden kurulur.\n**Sayının artırılması:** Gerektiğinde Genel Kurul, Danışma Kurulunun teklifi üzerine **Katip Üyelerin veya İdare Amirlerinin** sayısını artırabilir."
+    },
+    {
+      "type": "rule",
+      "title": "Divanda boşalma",
+      "articleRefs": [
+        "12"
+      ],
+      "body": "- **Başkanlık boşalırsa:** Yeni Başkan seçilinceye kadar **en yaşlı Başkanvekili** Geçici Başkanlık görevini yerine getirir.\n- **Diğer üyelikler boşalırsa:** Noksan üyelik tamamlanıncaya kadar Divanın görev ve yetkisi aynen devam eder. Noksan üyelik en kısa zamanda tamamlanır.\n- **Parti bağı koparsa:** Mensup olduğu siyasi parti ile üyelik bağı sona eren ya da TBMM'de grup kurma hakkını kaybeden bir siyasi parti mensubu üyenin Divandaki görevi **kendiliğinden** sona erer. Bu durumda da bir önceki fıkra uygulanır.\n- **Grup oranları değişirse:** Grupların Divandaki üyelik sayısı ve görev yerleri değişen oranlara uymuyorsa Başkan bu durumu tespit eder. Ardından 11 inci madde uyarınca gereken işlem yapılır."
+    },
+    {
+      "type": "rule",
+      "title": "Başkanın görevleri ve vekili",
+      "articleRefs": [
+        "14"
+      ],
+      "body": "**Görevler:**\n- TBMM'yi Meclis dışında temsil etmek\n- Genel Kurul görüşmelerini yönetmek\n- Tutanak dergisi ile tutanak özetinin düzenlenmesini denetlemek\n- Başkanlık Divanına başkanlık etmek ve Divanın gündemini hazırlamak\n- Danışma Kuruluna başkanlık etmek\n- Komisyonları denetlemek; işlerde birikme varsa komisyon başkanı ve üyelerini uyarmak ve durumu Genel Kurulun bilgisine sunmak\n- Başkanlık Divanı kararlarını uygulamak\n- İdari ve mali işler ile kolluk işlerini yürütmek ve denetlemek\n- Başkanlık Divanı bünyesinde oluşturulacak \"Türkiye Büyük Millet Meclisi Kültür, Sanat ve Yayın Kurulu\" aracılığıyla Meclisi ve çalışmalarını yurt içinde ve yurt dışında tanıtıcı tedbirler almak ve yayın yapmak\n- Anayasa, kanunlar ve içtüzükler gereğince verilen görevleri yerine getirmek\n**Vekâlet:** Başkan, özürlü olduğu ya da TBMM toplantı halindeyken Ankara dışında bulunduğu zaman, **Başkanvekillerinden birisini yazıyla** vekil olarak tayin eder.\n**Konut:** Başkan, TBMM Başkanlığına ayrılan resmi konaklarda oturur."
+    },
+    {
+      "type": "trap",
+      "title": "Yaş mı, seçim mi, vekâlet mi?",
+      "articleRefs": [
+        "8",
+        "12",
+        "14"
+      ],
+      "body": "Üç ayrı boşluğu üç ayrı kural doldurur. Şıklar bunları birbirine karıştırır:\n- **Dönem başı (md 8):** Başkan seçilinceye kadar geçici başkanlığı seçim değil **yaş** belirler. En yaşlı milletvekili Geçici Başkandır. 'Geçici Başkanlık Divanı seçimi yapılır' yanlıştır.\n- **Başkanlıkta boşalma (md 12):** Geçici başkanlığı en yaşlı **Başkanvekili** yürütür; 'en yaşlı TBMM üyesi' yanlıştır. Bu görev yeni Başkan seçilinceye kadar sürer, yani 'kalan süreyi tamamlar' da yanlıştır. Bu madde, boşalmada yeni Başkan seçimi için gün sayısı vermez; bu seçime günlü bir süre bağlayan şıklar bu maddeye dayanmaz.\n- **Başkan özürlüyse ya da Meclis toplantı halindeyken Ankara dışındaysa (md 14):** Yazıyla vekil tayin ettiği kişi bir **Başkanvekilidir**, İdare Amiri değildir.",
+      "counterNumbers": []
+    },
+    {
+      "type": "rule",
+      "title": "Komisyonlarda yönetim ve yeter sayılar",
+      "articleRefs": [
+        "27"
+      ],
+      "body": "Komisyonlar başkanlarının yönetiminde çalışır. Başkan bulunmadığında **başkanvekili**, o da yoksa **sözcü** komisyona başkanlık eder.\n- **Toplantı yeter sayısı:** Üye tamsayısının **üçte biri**\n- **Karar yeter sayısı:** Hazır bulunan üyelerin **salt çoğunluğu**"
+    },
+    {
+      "type": "trap",
+      "title": "Komisyonda iki ayrı taban: tamsayı ve hazır bulunanlar",
+      "articleRefs": [
+        "27"
+      ],
+      "body": "Toplanmak için **üye tamsayısına**, karar vermek için **hazır bulunan üyelere** bakılır. Şıklar toplantı yeter sayısı olarak salt çoğunluk, üçte iki ya da dörtte üç önerir. Hepsi yanlıştır; toplantı için **üçte bir** yeter. Karar tarafında 'üçte iki' de yanlıştır; doğrusu hazır bulunanların **salt çoğunluğu**dur.",
+      "counterNumbers": [
+        "2/3",
+        "3/4"
+      ]
+    },
+    {
+      "type": "numbers",
+      "title": "Sayılar: açılış, tatil, Divan, komisyon",
+      "articleRefs": [
+        "3",
+        "5",
+        "8",
+        "9",
+        "27"
+      ],
+      "rows": [
+        {
+          "label": "Genel Kurulun ilk toplanması",
+          "value": "Kesin sonuçların ilanını takip eden üçüncü gün, saat 14.00, çağrısız",
+          "refs": [
+            "3"
+          ]
+        },
+        {
+          "label": "Tatile giriş",
+          "value": "1 Temmuz (Genel Kurul başka karar almadıkça)",
+          "refs": [
+            "5"
+          ]
+        },
+        {
+          "label": "Bir yasama yılında azami tatil",
+          "value": "3 ay",
+          "refs": [
+            "5"
+          ]
+        },
+        {
+          "label": "Geçici Katip Üyeler",
+          "value": "En genç 6 milletvekili",
+          "refs": [
+            "8"
+          ]
+        },
+        {
+          "label": "Başkan",
+          "value": "1",
+          "refs": [
+            "9"
+          ]
+        },
+        {
+          "label": "Başkanvekili",
+          "value": "4",
+          "refs": [
+            "9"
+          ]
+        },
+        {
+          "label": "Katip Üye",
+          "value": "7 (artırılabilir)",
+          "refs": [
+            "9"
+          ]
+        },
+        {
+          "label": "İdare Amiri",
+          "value": "3 (artırılabilir)",
+          "refs": [
+            "9"
+          ]
+        },
+        {
+          "label": "Başkanlık Divanı toplam",
+          "value": "15 üye (Katip Üye ve İdare Amiri sayısı artırılmadıkça)",
+          "refs": [
+            "9"
+          ]
+        },
+        {
+          "label": "Komisyon toplantı yeter sayısı",
+          "value": "Üye tamsayısının 1/3'ü",
+          "refs": [
+            "27"
+          ]
+        },
+        {
+          "label": "Komisyon karar yeter sayısı",
+          "value": "Hazır bulunan üyelerin salt çoğunluğu",
+          "refs": [
+            "27"
+          ]
+        }
+      ],
+      "derivedNumbers": [
+        {
+          "value": 15,
+          "expr": "1 + 4 + 7 + 3",
+          "refs": [
+            "9"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Kapalı oturum tutanakları",
+      "articleRefs": [
+        "71"
+      ],
+      "body": "Kapalı oturum tutanakları birleştirildikten sonra **kapalı bir oturum** yapılır ve eski tutanak özeti okunur. Tutanak, özetiyle birlikte bir zarfa konur, hazır bulunan **Katip Üyeler** tarafından hemen **mumla mühürlenir** ve Meclis arşivine verilir.\n**Yayım:** Tutanaklar ve özetleri, kapalı oturum tarihinden itibaren **on yıl** geçtikten sonra yayımlanabilir.\n**Erken ya da geç yayım:** Genel Kurul, Danışma Kurulunun teklifi üzerine **işaret oyuyla** karar verir."
+    },
+    {
+      "type": "trap",
+      "title": "Üç ay, on yıl: kaydırılan rakamlar",
+      "articleRefs": [
+        "5",
+        "71"
+      ],
+      "body": "Çalışma usulü sorularında doğru cümlelerin arasına tek bir rakam hatası saklanır. Tatilde sınır **üç ay**dır; bir yasama yılı içinde üç aydan fazla tatil yapılamaz. '5 ay' diyen şık yanlıştır. Danışma Kurulunun önerisi üzerine Genel Kurul başka karar almadıkça Meclis **1 Temmuz**'da tatile girer. Kapalı oturum tutanaklarında süre **on yıl**dır; '5 yıl' yanlıştır. Bu süre dolunca tutanaklar 'doğrudan yayımlanır' da denmez, **yayımlanabilir** denir. Daha önce ya da sonra yayımlanmasına Genel Kurul karar verir.",
+      "counterNumbers": [
+        5
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Kanun teklifinin geri alınması",
+      "articleRefs": [
+        "75"
+      ],
+      "body": "- **Gündeme alınmadan önce:** Teklif sahibi, Genel Kurula bilgi verilmek şartıyla teklifini geri alabilir.\n- **Başkası sahiplenirse:** Teklifi diğer bir üye veya esas komisyon üzerine alırsa görüşmeye devam olunur.\n- **Gündeme alındıktan sonra:** Geri alma yine mümkündür, ancak **Genel Kurulun karar vermesi** gerekir.\n**Dikkat:** 'Gündeme alındıktan sonra hiçbir şekilde geri alınamaz' cümlesi yanlıştır."
+    },
+    {
+      "type": "trap",
+      "title": "Bir tam yıl mı, bir yasama dönemi mi?",
+      "articleRefs": [
+        "76",
+        "77"
+      ],
+      "body": "Burada iki ayrı durum ve iki ayrı ölçü birbirine karıştırılır:\n- **Reddedilen teklif (md 76):** Ret tarihinden itibaren **bir tam yıl** geçmedikçe, **aynı yasama dönemi içinde** yeniden verilemez. Süre ret tarihinden başlar; teklifin verildiği tarih ya da yeni yasama yılının başı esas alınmaz. 'Hiçbir şekilde verilemez' yanlıştır, çünkü yasak yalnız aynı yasama dönemi içindir. 'Dönem boyunca hiç verilemez' de yanlıştır, çünkü yasak ret tarihinden itibaren bir tam yıl sürer; yıl dolunca teklif aynı dönemde de yeniden verilebilir.\n- **Sonuçlandırılamamış teklif (md 77):** Yasama dönemi bitince **hükümsüz sayılır**. Soru köklerinde bu durum 'kadük' diye geçer. Ölçü bir yasama dönemidir; 'bir tam yıl' ya da 'bir yasama yılı' değildir. Üyeler bu teklifleri yenileyebilir. Yenilenen teklifin tümü üzerindeki görüşmelerden sonra önceki dönemlere ait rapor ve metinler, açıkça belirtilmek kaydıyla komisyonca benimsenebilir.\n- **Dönem başında hükümsüz sayılanlar:** Önceki dönemin yazılı soru, Meclis araştırması ve genel görüşme önergeleri ile Cumhurbaşkanınca bir daha görüşülmek üzere geri gönderilen kanunlar. Bir yasama döneminde sonuçlandırılamamış olan yürürlükteki kanun hükmünde kararnameler ise hükümsüz sayılmaz; bunlar hakkında kanun teklifleri hakkındaki hükümler uygulanır.\n**Not:** Bu hüküm İçtüzük metnindeki hâliyle verilmiştir; kanun hükmünde kararname çıkarma yetkisi bugün Anayasa'da yer almaz.",
+      "counterNumbers": []
+    },
+    {
+      "type": "rule",
+      "title": "Kanun teklifi Genel Kurulda",
+      "articleRefs": [
+        "81"
+      ],
+      "body": "**Sıra:** a) tümü hakkında görüşme → b) komisyonla soru-cevap → c) maddelerine geçilmesinin oylanması → ç) maddelerin görüşülmesi → d) tümünün oylanması.\n**Soru-cevap:** Tümü için **yirmi dakika**, maddeler için **on dakika**.\n**Konuşma süreleri:** Danışma Kurulunun teklifiyle Genel Kurul aksini kararlaştırmamışsa geçerlidir. Tümü üzerinde grup ve komisyon adına **yirmişer**, üyeler **onar** dakika konuşur. Maddeler üzerinde bunun **yarısı** uygulanır: grup ve komisyon 10, üye 5 dakika.\n**Oylama:** Anayasa değişiklikleri hariç, tümü açık oylamaya tâbi değilse **en az yirmi milletvekilinin** talebiyle açık oy kullanılır. Aksi halde tümü ve maddeler **işaret oyuyla** oylanır.\n**Ret:** Maddelerine geçilmesi veya tümü kabul edilmeyen teklif Genel Kurulca reddedilmiş olur.\n**Geri gönderilen kanun:** Cumhurbaşkanınca bir daha görüşülmek üzere geri gönderilen kanunda, yalnız uygun bulunmayan maddelerin görüşülmesine, görüşmelere başlamadan önce Genel Kurulca görüşmesiz karar verilebilir. Tümünün oylaması her halde yapılır. Aynen kabul için **üye tamsayısının salt çoğunluğu** aranır. Bu çoğunluk bulunamazsa kanunun tümü ya da oylanan madde reddedilmiş sayılır.",
+      "derivedNumbers": [
+        {
+          "value": 10,
+          "expr": "20 / 2",
+          "refs": [
+            "81"
+          ]
+        },
+        {
+          "value": 5,
+          "expr": "10 / 2",
+          "refs": [
+            "81"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Maddelerine geçilmezse: tekrar yok, ret var",
+      "articleRefs": [
+        "81",
+        "77"
+      ],
+      "body": "Maddelerine geçilmesi kabul edilmeyen teklif için şıklar oylamayı '24 saat' ya da '48 saat' içinde tekrarlatır, 'kadük olur' der ya da oylamayı sonuçsuz sayıp maddelere geçer. Hepsi yanlıştır. Madde 81'e göre maddelerine geçilmesi **veya** tümü kabul edilmeyen teklif Genel Kurulca **reddedilmiş olur**. Hükümsüz sayılma ise başka bir durumdur: yasama döneminde sonuçlandırılamamış teklifin akıbetidir (md 77).",
+      "counterNumbers": [
+        24,
+        48
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Temel kanunlar: bölüm bölüm görüşme",
+      "articleRefs": [
+        "91"
+      ],
+      "body": "**Hangi teklifler?** Bu kanunlar taşıdıkları özelliklerle tanımlanır: bir hukuk dalını sistematik olarak bütünüyle veya kapsamlı olarak değiştirecek biçimde genel ilkeler içermesi, kişisel veya toplumsal yaşamın büyük bir bölümünü ilgilendirmesi, kendi alanındaki özel kanunların dayandığı temel kavramları göstermesi, özel kanunlar arasında uygulamada ahenk sağlaması gibi. Bunlara İçtüzüğü bütünüyle veya kapsamlı olarak değiştiren ya da yürürlüğe koyan teklifler de dahildir.\n**Karar:** Esas komisyonun veya grupların teklifi ve Danışma Kurulunun **oybirliği** ile önerisi üzerine Genel Kurul karar verebilir. Teklif bölümler halinde görüşülür; her bölüm **en çok otuz maddeyi** geçemez. Danışma Kurulunda oybirliği sağlanamazsa siyasi parti gruplarının önerisi üzerine de Genel Kurul karar verebilir.\n**Görüşme:** Bölümler, maddeler okunmaksızın ayrı ayrı görüşülür. Bölümdeki maddeler **ayrı ayrı oylanır**.\n**Önergeler:** Milletvekilleri ve esas komisyon değişiklik önergesi verebilir. Milletvekilleri madde üzerinde, Anayasaya aykırılık önergeleri dahil **iki** önerge verebilir. Her siyasi parti grubuna mensup milletvekillerinin **birer** önerge hakkı saklıdır.\n**Soru-cevap:** Bölümler üzerinde **onbeş dakika** ile sınırlıdır."
+    },
+    {
+      "type": "rule",
+      "title": "Genel görüşme önergesi",
+      "articleRefs": [
+        "102"
+      ],
+      "body": "- **Kim isteyebilir?** Siyasi parti grupları veya **en az yirmi milletvekili**, Başkanlığa verilen bir önergeyle.\n- **Duyuru:** İstem derhal gelen kâğıtlar listesine alınarak milletvekillerine duyurulur.\n- **Uzunluk:** Önerge metni **beşyüz kelimeden** fazlaysa istek sahipleri, beşyüz kelimeyi geçmemek üzere **önergenin özetini** eklemek zorundadır.\n- **Karar:** Genel görüşme açılıp açılmamasına Genel Kurul **işaretle oylama** suretiyle karar verir.\n- **Kimler konuşur?** Siyasi parti grupları ile birinci imza sahibi ya da onun göstereceği bir diğer imza sahibi."
+    },
+    {
+      "type": "trap",
+      "title": "Grup ne yapabilir, ne yapamaz?",
+      "articleRefs": [
+        "102",
+        "113"
+      ],
+      "body": "Siyasi parti grupları genel görüşme açılmasını isteyebilir (md 102). Ancak **Meclis soruşturması** ile ilgili olarak gruplarda görüşme yapılamaz ve **karar alınamaz** (md 113). 'Grupların yapamayacağı iş' sorulduğunda aradığın şık budur. Tek açık kapı şudur: gruplar, soruşturma komisyonu üyelikleri için Anayasanın 100 üncü maddesine göre gösterilecek adayları tespit amacıyla **seçim yapabilir**. Kısacası aday belirlemek serbesttir, soruşturmayı tartışıp karara bağlamak yasaktır.",
+      "counterNumbers": []
+    },
+    {
+      "type": "rule",
+      "title": "Uyarma cezası ve söz yasağı",
+      "articleRefs": [
+        "158",
+        "159"
+      ],
+      "body": "- **Yetki:** Uyarma cezası verilmesinin gereğini takdir ve yerine getirme yetkisi **Başkana** aittir.\n- **Savunma:** Cezayı alan milletvekili söz isterse ona oturumun veya birleşimin sonunda söz verilir. Başkan gerekirse daha önce de söz verebilir.\n- **Kaldırma:** Başkan açıklamayı yeterli görmezse cezayı kaldırmaz. Yeterli görürse cezayı kaldırdığını bildirir.\n- **Aynı birleşimde iki defa uyarma:** Durum tutanak özetinde belirtilir (md 158). Ayrıca milletvekilinin o birleşimin sonuna kadar söz söylemesi, Başkanın teklifi üzerine Genel Kurulca **görüşmesiz ve işaret oyu ile** yasaklanabilir (md 159)."
+    },
+    {
+      "type": "trap",
+      "title": "Uyarmayı Başkan verir, sözü Genel Kurul keser",
+      "articleRefs": [
+        "158",
+        "159"
+      ],
+      "body": "Bu konudaki sorular aynı mekanizmayı iki ucundan yoklar. Uyarmayı kim verir? **Başkan** verir; İdare Amirleri, Genel Kurul, Disiplin komisyonu ya da başka bir komisyon değil (md 158). Aynı birleşimde iki defa uyarma alana ne olur? Durum tutanak özetinde belirtilir (md 158); ayrıca **söz söylemekten yasaklanabilir** (md 159). Şıklarda kınama, Meclisten geçici çıkarma, ödenek ya da yolluk kesintisi görürsen bil ki madde 159'un öngördüğü sonuç bunlar değildir. Söz yasağını Başkan tek başına koymaz: Başkan teklif eder, **Genel Kurul** görüşmesiz ve işaret oyuyla karar verir. Yasak o birleşimin sonuna kadar sürer.",
+      "counterNumbers": []
+    },
+    {
+      "type": "numbers",
+      "title": "Sayılar: görüşme ve denetim",
+      "articleRefs": [
+        "71",
+        "76",
+        "81",
+        "91",
+        "102",
+        "159"
+      ],
+      "rows": [
+        {
+          "label": "Kapalı oturum tutanaklarının yayımı",
+          "value": "Oturum tarihinden itibaren 10 yıl sonra (yayımlanabilir)",
+          "refs": [
+            "71"
+          ]
+        },
+        {
+          "label": "Reddedilen teklifin yeniden verilmesi",
+          "value": "Ret tarihinden itibaren 1 tam yıl (aynı yasama dönemi içinde)",
+          "refs": [
+            "76"
+          ]
+        },
+        {
+          "label": "Soru-cevap, teklifin tümü",
+          "value": "20 dakika",
+          "refs": [
+            "81"
+          ]
+        },
+        {
+          "label": "Soru-cevap, maddeler",
+          "value": "10 dakika",
+          "refs": [
+            "81"
+          ]
+        },
+        {
+          "label": "Tümü üzerinde grup ve komisyon konuşması",
+          "value": "20'şer dakika",
+          "refs": [
+            "81"
+          ]
+        },
+        {
+          "label": "Tümü üzerinde üye konuşması",
+          "value": "10'ar dakika",
+          "refs": [
+            "81"
+          ]
+        },
+        {
+          "label": "Madde üzerinde grup ve komisyon konuşması",
+          "value": "10 dakika",
+          "refs": [
+            "81"
+          ]
+        },
+        {
+          "label": "Madde üzerinde üye konuşması",
+          "value": "5 dakika",
+          "refs": [
+            "81"
+          ]
+        },
+        {
+          "label": "Açık oylama talebi",
+          "value": "En az 20 milletvekili",
+          "refs": [
+            "81"
+          ]
+        },
+        {
+          "label": "Geri gönderilen kanunu aynen kabul",
+          "value": "Üye tamsayısının salt çoğunluğu",
+          "refs": [
+            "81"
+          ]
+        },
+        {
+          "label": "Temel kanunda bir bölüm",
+          "value": "En çok 30 madde",
+          "refs": [
+            "91"
+          ]
+        },
+        {
+          "label": "Temel kanunda bölüm soru-cevabı",
+          "value": "15 dakika",
+          "refs": [
+            "91"
+          ]
+        },
+        {
+          "label": "Temel kanunda milletvekili önergesi (madde başına)",
+          "value": "2 (her grubun birer önerge hakkı saklı)",
+          "refs": [
+            "91"
+          ]
+        },
+        {
+          "label": "Genel görüşme istemi",
+          "value": "Siyasi parti grubu veya en az 20 milletvekili",
+          "refs": [
+            "102"
+          ]
+        },
+        {
+          "label": "Genel görüşme önergesinde kelime sınırı",
+          "value": "500 kelime (aşarsa önergenin özeti eklenir)",
+          "refs": [
+            "102"
+          ]
+        },
+        {
+          "label": "Söz yasağı eşiği",
+          "value": "Aynı birleşimde 2 uyarma cezası",
+          "refs": [
+            "159"
+          ]
+        }
+      ],
+      "derivedNumbers": [
+        {
+          "value": 10,
+          "expr": "20 / 2",
+          "refs": [
+            "81"
+          ]
+        },
+        {
+          "value": 5,
+          "expr": "10 / 2",
+          "refs": [
+            "81"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "exam_stats",
+      "title": "Sınav der ki",
+      "rows": [
+        {
+          "label": "Bu ünitenin maddelerinden yayındaki soru",
+          "value": "19",
+          "refs": [
+            "3",
+            "5",
+            "8",
+            "9",
+            "12",
+            "14",
+            "27",
+            "71",
+            "75",
+            "76",
+            "77",
+            "81",
+            "91",
+            "102",
+            "113",
+            "158",
+            "159"
+          ]
+        },
+        {
+          "label": "md 3 — İlk toplantı, andiçme ve göreve başlama",
+          "value": "3 soru",
+          "refs": [
+            "3"
+          ]
+        },
+        {
+          "label": "md 12",
+          "value": "2 soru",
+          "refs": [
+            "12"
+          ]
+        },
+        {
+          "label": "md 76",
+          "value": "2 soru",
+          "refs": [
+            "76"
+          ]
+        },
+        {
+          "label": "md 5 — Tatil",
+          "value": "1 soru",
+          "refs": [
+            "5"
+          ]
+        },
+        {
+          "label": "md 8",
+          "value": "1 soru",
+          "refs": [
+            "8"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "3",
+        "5",
+        "8",
+        "9",
+        "12",
+        "14",
+        "27",
+        "71",
+        "75",
+        "76",
+        "77",
+        "81",
+        "91",
+        "102",
+        "113",
+        "158",
+        "159"
+      ],
+      "generated": true
+    },
+    {
+      "type": "bridge",
+      "title": "Bu üniteden soru çöz",
+      "articleRefs": [
+        "3",
+        "5",
+        "8",
+        "9",
+        "12",
+        "14",
+        "27",
+        "71",
+        "75",
+        "76",
+        "77",
+        "81",
+        "91",
+        "102",
+        "113",
+        "158",
+        "159"
+      ],
+      "generated": true,
+      "rows": [
+        {
+          "label": "Madde kapsamlı seans",
+          "value": "md 3, 5, 8, 9, 12, 14, 27, 71, 75–77, 81, 91, 102, 113, 158, 159, 10 soru",
+          "refs": [
+            "3",
+            "5",
+            "8",
+            "9",
+            "12",
+            "14",
+            "27",
+            "71",
+            "75",
+            "76",
+            "77",
+            "81",
+            "91",
+            "102",
+            "113",
+            "158",
+            "159"
+          ]
+        }
+      ]
+    }
+  ]
+}

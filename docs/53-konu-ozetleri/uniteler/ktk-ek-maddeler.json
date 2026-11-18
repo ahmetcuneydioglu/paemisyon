@@ -1,0 +1,531 @@
+{
+  "unit": {
+    "slug": "ktk-ek-maddeler",
+    "legislationSlug": "2918-sayili-karayollari-trafik-kanunu",
+    "topicId": "3f91916c-8d15-40f4-bb20-5bcca9253c34",
+    "title": "Ek maddeler: yetkiler, denetim ve özel düzenlemeler",
+    "subtitle": "Kış lastiği, izinsiz yolcu taşıma, ceza artırımı, fahri trafik müfettişliği, aday sürücülük ve araç sicilleri",
+    "articleFrom": "65/A",
+    "articleTo": "Ek 20",
+    "readingMinutes": 13,
+    "sourceLabel": "AI özeti — 2918 Sayılı Karayolları Trafik Kanunu, md 65/A, Ek 2, Ek 3, Ek 4, Ek 6, Ek 12, Ek 14, Ek 16, Ek 17, Ek 18, Ek 20",
+    "articleNos": [
+      "65/A",
+      "Ek 2",
+      "Ek 3",
+      "Ek 4",
+      "Ek 6",
+      "Ek 12",
+      "Ek 14",
+      "Ek 16",
+      "Ek 17",
+      "Ek 18",
+      "Ek 20"
+    ],
+    "generatedBy": "claude-opus-5-5 (ozet-uret.ts)",
+    "sortOrder": 4
+  },
+  "blocks": [
+    {
+      "type": "concept",
+      "title": "Kış lastiği zorunluluğunu kim getirir?",
+      "body": "Kış lastiği her yerde ve her mevsimde kendiliğinden zorunlu değil. Zorunluluğu Ulaştırma ve Altyapı Bakanlığı getirir. Bunu illerin hava ve iklim şartlarına göre, araç cinslerine göre ve yılın belirli bir dönemi için yapar. Bakanlık bu yetkisini valiliklere devredebilir. Yani asıl yetkili Bakanlıktır, valilik ancak devir yoluyla devreye girer. Soru kökünde \"hangi makam yetkilidir\" görürsen cevabın Ulaştırma ve Altyapı Bakanlığı.",
+      "articleRefs": [
+        "65/A"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Kış lastiği ve kar zinciri: denetim ve yaptırım",
+      "body": "**Denetime yetkililer:** Ulaştırma ve Altyapı Bakanlığının yetkilendirdiği Bakanlık personeli, Emniyet Genel Müdürlüğü, Jandarma Genel Komutanlığı, Ticaret Bakanlığının sınır kapılarındaki birimleri ve belediyelerin denetim birimleri.\n\n**Kış lastiği yükümlülüğüne uymama:**\n- Aracın **işletenine**, maddede belirtilen görevlilerce idari para cezası uygulanır.\n- Denetimle görevli olanlar, aracın lastiklerini uygun hâle getirebileceği en yakın yerleşim birimine kadar gitmesine izin verir.\n\n**Kar zinciri:** Karlı ve buzlu hava şartlarında kamyon, çekici ve otobüs cinsi araçların güvenle seyredemediği karayollarında kar zinciri bulundurmayan, kullanmayan veya kullanılabilir durumda tutmayan araçların **sürücüsüne** idari para cezası uygulanır.\n\n**Trafik akışını engelleme:** Kar ve buzla mücadele çalışmaları sırasında kar zinciri kullanmadığı için trafik akışına engel olan kamyon, çekici ve otobüs cinsi araçların sürücüsüne ayrı ve daha yüksek tutarlı bir idari para cezası uygulanır.\n\n**Cumhurbaşkanının yetkisi:** Maddede belirtilen idari para cezasının tutarını azaltmaya ve iki katına kadar artırmaya Cumhurbaşkanı yetkilidir.\n\n**Usul ve esaslar:** Ulaştırma ve Altyapı Bakanlığı ile İçişleri Bakanlığınca müştereken belirlenir.",
+      "articleRefs": [
+        "65/A"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Sık karıştırılan: Bakanlık mı, valilik mi, Cumhurbaşkanı mı?",
+      "body": "Kış lastiğini zorunlu tutan makam Ulaştırma ve Altyapı Bakanlığıdır. İçişleri Bakanlığı ve Karayolları Genel Müdürlüğü bu yetkiye sahip değildir. Valilikler ancak Bakanlık yetkisini devrederse yetkili olur. Cumhurbaşkanının buradaki rolü yalnızca ceza tutarına ilişkindir: tutarı azaltabilir ya da iki katına kadar artırabilir, zorunluluğu kendisi getirmez. İkinci tuzak cezanın muhatabıdır: kış lastiği cezası **işletene**, kar zinciri cezası **sürücüye** kesilir.",
+      "articleRefs": [
+        "65/A"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Ek 2: Aracı tescil maksadı dışında kullanmak",
+      "body": "**Kural:** Aracı motorlu araç tescil belgesinde gösterilen maksadın dışında kullananlara ve bu şekilde sürülmesine izin veren araç sahiplerine idari para cezası uygulanır. Ayrıca araç on beş gün süreyle trafikten menedilir.\n\n**Süresi bitmiş izinle taşıma:** Belediyenin tahdit veya tahsis kapsamına aldığı ve bu kapsamda verdiği çalışma izninin/ruhsatının süresi bittiği hâlde belediye sınırları içinde yolcu taşıyan kişiye idari para cezası uygulanır. Araç, eksikliği giderilinceye kadar trafikten menedilir.\n\n**Hizmet alan da cezalı:** Ayırıcı işareti bulunmayan ve belediye iznine aykırı yolcu taşıma yasağı kapsamındaki araçlardan (izin almadan, faaliyet konusu dışında ya da çalışma bölgesi/güzergâh dışında taşıma) taşımacılık hizmeti alanlara da idari para cezası uygulanır.",
+      "articleRefs": [
+        "Ek 2"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Ek 2: Belediyeden izin almadan yolcu taşıma",
+      "body": "Belediye sınırları içinde, ilgili belediyeden alınması gereken izne aykırı yolcu taşımak yasaktır:\n- **(a)** Çalışma izni/ruhsatı almadan taşıma: idari para cezası. Araç altmış gün trafikten menedilir. Sürücü belgesi otuz gün süreyle geri alınır.\n- **(b)** İzin/ruhsatta belirtilen faaliyet konusu dışında taşıma: idari para cezası. Araç otuz gün trafikten menedilir.\n- **(c)** İzin/ruhsatta belirtilen çalışma bölgesi/güzergâh dışında taşıma: idari para cezası. Araç on beş gün trafikten menedilir.\n\nPara cezasının en yükseği (a), en düşüğü (c) bendindedir.\n\n**Tekrar:** Son ihlalin gerçekleştiği tarihten geriye doğru bir yıl içinde fıkra tekrar ihlal edilirse idari para cezaları iki kat uygulanır.\n\n**Belgenin geri alınması ve iadesi:** (a) bendinde sürücü belgesini 6 ncı maddede sayılan görevliler **otuz gün süreyle** geri alır. Belgenin iade edilebilmesi için ayrıca bu Kanun kapsamında verilen idari para cezalarının **tamamının tahsil edilmiş** olması şarttır.\n\n**İşletenin yükümlülüğü:** İşleten veya araç sahibi, sürücünün kendisi olup olmadığına bakılmaksızın, aracın bu şekilde kullanılmaması için gerekli tedbirleri almak ve denetimini yapmakla yükümlüdür.",
+      "articleRefs": [
+        "Ek 2"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Sık karıştırılan: altmış gün, otuz gün, on beş gün",
+      "body": "İzin veya ruhsat almadan yolcu taşıyan aracın men süresi **altmış gün**dür. Otuz gün iki ayrı yerde geçer: (b) bendinde aracın men süresi ve (a) bendinde sürücü belgesinin geri alınma süresi. On beş gün ise (c) bendinin ve tescil maksadı dışında kullanımın men süresidir. Dört ay ya da bir yıl bir men süresi değildir; bir yıl, tekrarda geriye doğru bakılan süredir. Belge iadesinde de dikkat et: belge otuz gün süreyle geri alınır, iade için ayrıca cezaların tamamının tahsili şarttır. Psiko-teknik değerlendirme ve psikiyatri uzmanı muayenesi, aday sürücü belgesi iptal edildikten sonra sürücü kursuna başlamak için aranır. Bu şartı buraya taşıma.",
+      "articleRefs": [
+        "Ek 2",
+        "Ek 17"
+      ],
+      "counterNumbers": [
+        4
+      ]
+    },
+    {
+      "type": "numbers",
+      "title": "Kış şartları ve izinsiz taşıma: yaptırımlar ve süreler",
+      "rows": [
+        {
+          "label": "Kış lastiği yükümlülüğüne uymama (işletene)",
+          "value": "İdari para cezası",
+          "refs": [
+            "65/A"
+          ]
+        },
+        {
+          "label": "Maddedeki idari para cezasının tutarı",
+          "value": "Cumhurbaşkanınca azaltılabilir ya da iki katına kadar artırılabilir",
+          "refs": [
+            "65/A"
+          ]
+        },
+        {
+          "label": "Kar zinciri bulundurmama, kullanmama veya kullanılabilir durumda tutmama (sürücüye)",
+          "value": "İdari para cezası",
+          "refs": [
+            "65/A"
+          ]
+        },
+        {
+          "label": "Kar ve buzla mücadelede kar zinciri kullanmayıp trafik akışını engelleme (kamyon, çekici, otobüs sürücüsüne)",
+          "value": "Daha yüksek tutarlı idari para cezası",
+          "refs": [
+            "65/A"
+          ]
+        },
+        {
+          "label": "Tescil maksadı dışında kullanma",
+          "value": "İdari para cezası + on beş gün men",
+          "refs": [
+            "Ek 2"
+          ]
+        },
+        {
+          "label": "İzin/ruhsat almadan taşıma (a)",
+          "value": "İdari para cezası + altmış gün men + belge otuz gün geri alınır",
+          "refs": [
+            "Ek 2"
+          ]
+        },
+        {
+          "label": "Faaliyet konusu dışında taşıma (b)",
+          "value": "İdari para cezası + otuz gün men",
+          "refs": [
+            "Ek 2"
+          ]
+        },
+        {
+          "label": "Bölge/güzergâh dışında taşıma (c)",
+          "value": "İdari para cezası + on beş gün men",
+          "refs": [
+            "Ek 2"
+          ]
+        },
+        {
+          "label": "İzinsiz taşıma yasağının son ihlalden geriye doğru bir yıl içinde tekrar ihlali",
+          "value": "İdari para cezaları iki kat",
+          "refs": [
+            "Ek 2"
+          ]
+        },
+        {
+          "label": "Süresi bitmiş izin/ruhsatla taşıma",
+          "value": "İdari para cezası + eksiklik giderilinceye kadar men",
+          "refs": [
+            "Ek 2"
+          ]
+        },
+        {
+          "label": "Ayırıcı işareti olmayan araçtan hizmet alan",
+          "value": "İdari para cezası",
+          "refs": [
+            "Ek 2"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "65/A",
+        "Ek 2"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Ek 3: Ceza tutarlarının artırılması ve tek fiil kuralı",
+      "body": "**Yıllık artış:** Kanundaki fiiller için önceki yılda uygulanan mutlak ceza tutarları her takvim yılı başından geçerli olmak üzere artırılır. Artış, o yıl için Vergi Usul Kanunu hükümleri uyarınca tespit ve ilan olunan **yeniden değerleme oranında** yapılır.\n\n**Tecil yok:** Kanunun ifadesiyle, bu Kanun hükümlerine göre faillere uygulanan hafif para cezaları tecil edilemez.\n\n**Tek fiil, birden çok yasak:** Bir fiil, idari para cezası gerektiren birden çok yasağı birlikte ihlal ediyorsa faile **en ağır** idari para cezası uygulanır.",
+      "articleRefs": [
+        "Ek 3"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Sık karıştırılan: hangi oran, hangi ceza?",
+      "body": "Artış oranı tüketici fiyat endeksi değildir. Memur aylık katsayısı, gecikme zammı oranı ya da Cumhurbaşkanınca belirlenen ayrı bir oran da değildir. Doğru cevap her zaman Vergi Usul Kanununa göre ilan olunan yeniden değerleme oranıdır. Tek fiille birden çok yasak ihlal edildiğinde cezalar toplanmaz. Her yasak için ayrı ayrı ceza da kesilmez, en hafif ceza da seçilmez. Faile en ağır idari para cezası uygulanır.",
+      "articleRefs": [
+        "Ek 3"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Ek 4: Ölümlü otobüs kazalarının ilanı",
+      "body": "**Kapsam:** Karayollarında yolcu taşımacılığı yapan otobüs ve benzeri taşıtların karıştığı **ölümlü** trafik kazaları.\n\n**İlan edilebilecekler:** Ölümlü kazanın sonuçları; bununla birlikte\n- kusurlu araç veya araçları kullanan sürücü,\n- araca ait plaka numaraları,\n- otobüs işleticisi teşebbüsün unvanı.\n\n**Biçim:** Televizyon ve basın organları aracılığıyla, kamuoyuna görüntülü ve yazılı olarak yapılır.\n\n**Şart:** İlan **kusur oranlarından söz edilmeksizin** yapılır.\n\n**Sonuç:** Bu ilan sırrın ifşaı ve ticari itibarın ihlali sayılmaz.",
+      "articleRefs": [
+        "Ek 4"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Ek 6: Fahri trafik müfettişliği",
+      "body": "**Kimlere verilir:** Karayolu Trafik Güvenliği Kurulunun önerdiği ve Karayolu Trafik Güvenliği Üst Kurulunun uygun gördüğü kişilere verilir. Görevi **valiler** verir. Amaç, sürücülerin trafik kurallarına uyup uymadığını denetleyen yetkililere yardımcı olmaktır.\n\n**Görev:**\n- Kanunun suç saydığı fiilleri işleyenler hakkında, Emniyet Genel Müdürlüğünce verilen tutanağı düzenlerler.\n- Tutanağı, aracın tescilli olduğu trafik kuruluşuna gönderilmek üzere en geç bir hafta içinde **herhangi bir** trafik kuruluşuna teslim ederler.\n\n**Eğitim:** İçişleri Bakanlığının belirleyeceği esas ve usullere göre eğitime tabi tutulabilirler.\n\n**Ücret:** Hizmet fahri ve ücretsizdir.\n\n**Kötüye kullanma:** Görevini kötüye kullandığı tespit edilenler, kanunun ifadesiyle, iki aydan altı aya kadar hafif hapis cezası ile cezalandırılır; ayrıca belgeleri iptal edilir. Yargılamaları tabi oldukları esaslara göre yapılır.\n\n**Yönetmelik:** Yetki, sorumluluk ve diğer usul ve esaslar İçişleri Bakanlığınca çıkarılacak yönetmelikte belirlenir.",
+      "articleRefs": [
+        "Ek 6"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Sık karıştırılan: fahri müfettişin belgesi",
+      "body": "Kötüye kullananın belgesine dokunulmadığını söyleyen ifade yanlıştır: görevini kötüye kullanan fahri trafik müfettişine kanunun ifadesiyle hafif hapis cezası verilir, ayrıca belgesi iptal edilir. Teslim yeri de karıştırılır. Tutanak en geç bir hafta içinde herhangi bir trafik kuruluşuna teslim edilir, aracın tescilli olduğu kuruluşa ise oradan gönderilir. Görevi valiler verir. Eğitim kesin bir zorunluluk olarak değil, \"tabi tutulabilirler\" biçiminde düzenlenmiştir.",
+      "articleRefs": [
+        "Ek 6"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Ek 12: Yol kenarı tesislerde alkollü içki",
+      "body": "**Kural:** Otoyollarda **ve** Devlet karayollarında yapılacak ve açılacak yapı ve tesislerde alkollü içki satılmasına izin verilmez.\n\n**İstisna:** Konaklama yerleri ve belediye mücavir alanları.\n\nYasak iki yol türünü birlikte kapsar. Maddede bunların dışında bir istisna, valilik izni ya da uzaklık ölçütü yer almaz.",
+      "articleRefs": [
+        "Ek 12"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Ek 14: Teslim alınmayan araçların satışı",
+      "body": "**Kural:** Buluntu olduğu için ya da Kanun gereğince trafikten men edilerek alıkonulan araçlardan sahiplerinin **altı ay** içinde teslim almadığı veya aramadığı araçlar Hazinece satılır. Bedelleri emanet hesabına alınır. Adresi bilinen maliklere satıştan önce tebligat yapılır.\n\n**Şerhler:** Satılamaz, devredilemez, haciz, ihtiyati haciz, rehin gibi şerhler için ilgili kurumlara satış bildirilir. Bu şerhler satış tarihinden itibaren ayrıca bir işleme gerek olmaksızın kalkmış sayılır. Haciz, ihtiyati haciz ve rehin gibi şerhler satış sonrasında satış bedeli üzerinde devam eder.\n\n**Eksik numaralar:** Şasi ve/veya motor seri numaraları yoksa, düşmüşse, silinmiş ya da tahrip edilmişse, satışı yapacak kurum bu eksikleri tamamlar.\n\n**Borçlar:** Vergi, ceza veya prim gibi borçlar satıştan önceki sahibine aittir. Mülkiyet, alana tüm borç ve yüklerinden ari olarak geçer.\n\n**Bedelin dağıtımı:** Önce sırasıyla şu ödemeler yapılır:\n1. muhafaza ve satış giderleri,\n2. tanıtım numaralarının tespiti ve tamamlanması giderleri,\n3. vergi, resim veya harç gibi malın aynından doğan alacaklar.\n\nKalan tutar tüm alacakları karşılıyorsa hak sahiplerine dağıtılır. Bakiye kalırsa kamu bankalarında nemalandırılır ve satıştan itibaren beş yıl içinde başvurulursa nemalarıyla ödenir. Başvuru olmazsa Hazineye irat kaydedilir. Kalan tutar alacakları karşılamıyorsa sıra cetveli yapılmak üzere ilgili kuruma gönderilir.",
+      "articleRefs": [
+        "Ek 14"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Ek 16: Belediye kameralarının hizmet bedeli",
+      "body": "**Kural:** Belediyeler veya sermayesinin tamamı belediyelere ait şirketler, kendi bütçe kaynaklarıyla elektronik sistemler kurabilir. Emniyet Genel Müdürlüğü bu sistemleri trafik ihlallerinin tespiti için kullanırsa, bu sistemlerle aylık dönemler hâlinde yapılan tespitlere dayanılarak düzenlenen trafik idari yaptırım karar tutanaklarındaki idari para cezasının **%30**'u ilgili belediyeye ödenir. Ödeme sistem kullanımı hizmet bedeli olarak, izleyen ayın sonuna kadar Emniyet Genel Müdürlüğü bütçesinden yapılır.\n\n**Hasılat paylaşımı hâli:** Sistemler belediyelerce hasılat paylaşımı yoluyla kurdurulup işlettirilirse oran yatırım maliyetine ulaşıncaya kadar %30, sonrasında %15'tir.\n\n**Usul ve esaslar:** Maliye Bakanlığı ve İçişleri Bakanlığınca (Emniyet Genel Müdürlüğü) müştereken belirlenir.\n\n**Not:** Bakanlık adı kanun metnindeki hâliyle verilmiştir; bu bakanlığın bugünkü adı Hazine ve Maliye Bakanlığıdır.\n\n**Dikkat:** %15 genel oran değildir. Yalnızca hasılat paylaşımında, yatırım maliyetine ulaşıldıktan sonra uygulanır.",
+      "articleRefs": [
+        "Ek 16"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Ek 17: Aday sürücülük ve iptal sebepleri",
+      "body": "**Kimler aday sürücüdür:** İlk defa sürücü belgesi alanlar ile belgesi herhangi bir nedenle iptal edilip yeniden belge almaya hak kazananlar. Belgenin alındığı tarihten itibaren **iki yıl** süreyle aday sürücü sayılırlar.\n\n**Aday sürücülük süresi içinde** şu hâllerde aday sürücü belgesi iptal edilir:\n- **a)** Sürücü belgesinin geçici olarak geri alınmasını gerektiren bir ihlal yapılması,\n- **b)** 75 ceza puanının aşılması,\n- **c)** Araç cinsine bakılmaksızın 0.20 promilin üzerinde alkollü araç kullanıldığının tespiti,\n- **ç)** 53 üncü maddenin ikinci fıkrası, 74 üncü veya 78 inci maddelerden herhangi birinin üç kez ihlali.\n\n**İptali kim yapar:** 6 ncı maddede sayılan görevliler.",
+      "articleRefs": [
+        "Ek 17"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Ek 17: İptalden sonra yeniden belge",
+      "body": "Aday sürücü belgesi iptal edilen kişi sürücü kurslarına devam etmeli ve yapılan sınavlarda başarılı olarak motorlu taşıt sürücüsü sertifikası almalıdır.\n\n**Kursa başlayabilmek için şunlar zorunludur:**\n- Psiko-teknik değerlendirme ve psikiyatri uzmanı muayenesi sonucunda sürücülüğe engel hâli bulunmadığını gösteren belgenin kursa ibrazı,\n- Kanun kapsamında verilen idari para cezalarının tamamının tahsil edilmiş olması,\n- Varsa iptal sonrası bekleme süresinin veya geçici geri alma sonrası geri alma süresinin geçmiş olması.",
+      "articleRefs": [
+        "Ek 17"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Sık karıştırılan: aday sürücüde puan ve süre",
+      "body": "Aday sürücülük süresi **iki yıl**dır; daha uzun süre veren şık yanlıştır. Ceza puanına bağlı iptal sebebi **75 puanın aşılması**dır. 50 puan gibi farklı eşikler çeldiricidir. Alkolde ölçü, araç cinsine bakılmaksızın **0.20 promilin üzerinde** alkollü araç kullanmaktır; '0.20 promil ve üzeri' diyen şık metinden ayrılır. Tekrar eden ihlallerde ölçü, sayılan maddelerden herhangi birinin üç kez ihlal edilmesidir.",
+      "articleRefs": [
+        "Ek 17"
+      ],
+      "counterNumbers": [
+        50
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Ek 18: Araç tescilinin noterliklere devri ve sicil gizliliği",
+      "body": "**Devir:** Emniyet Genel Müdürlüğünün yürüttüğü araç tescil iş ve işlemleri, 131 inci madde hükümleri saklı kalmak üzere, Türkiye Noterler Birliği koordinesinde noterliklere devredilebilir.\n- Noterliklere devredilen araç tescil iş ve işlemleri hakkında mevzuatta Emniyet birimlerine yapılan atıflar noterliklere yapılmış sayılır.\n- Araç sicil ve tescil sistemi veri tabanını Türkiye Noterler Birliği tutar, yönetir ve güvenliğini sağlar. Bilgiler anlık olarak Emniyet Genel Müdürlüğü ve Jandarma Genel Komutanlığı ile paylaşılır.\n- Ücret ile usul ve esaslar Adalet Bakanlığı ve İçişleri Bakanlığınca müştereken çıkarılan yönetmelikle belirlenir.\n- Devir tamamlanıncaya kadar işlemleri eski birimler yürütmeye devam eder.\n\n**Gizlilik:** Araç sicilleri ve dayanak belgeler gizlidir. Bunları yalnızca yetkili ve sorumlular ile teftiş ve denetim yetkisi olanlar görüp inceleyebilir. **Mahkemeler bu hükmün dışındadır.** Bilgileri işleyen görevliler ve araç kayıtlarından yararlanan diğer görevliler de gizliliğe uymak zorundadır.\n\n**Devrin istisnası:** Devir hükümleri istihbarat, gizlilik veya güvenlik gerektiren hizmetlerde kullanılan araçların tescil, belge, plaka ve sivil plaka işlemlerine uygulanmaz.",
+      "articleRefs": [
+        "Ek 18"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Ek 20: Kural ihlalini özendiren paylaşımlar",
+      "body": "**Yasak:** Kanunun idari yaptırıma bağladığı bir eylemi basın, yayın, internet, sosyal ve dijital medya veya diğer elektronik cihazlar yoluyla paylaşarak trafik kural ihlali yapmaya özendiren görüntüleri **alenen yaymak ve övmek** yasaktır.\n\n**Yaptırım:** Uymayanlara idari para cezası verilir.\n\nYasak radyo ve televizyonla sınırlı değildir; maddede sayılan tüm kanalları kapsar. Yaptırımı da idari para cezasıdır.",
+      "articleRefs": [
+        "Ek 20"
+      ]
+    },
+    {
+      "type": "numbers",
+      "title": "Ek maddelerde süreler ve oranlar",
+      "rows": [
+        {
+          "label": "Fahri müfettişin tutanağı teslim süresi",
+          "value": "En geç bir hafta",
+          "refs": [
+            "Ek 6"
+          ]
+        },
+        {
+          "label": "Fahri müfettişin görevi kötüye kullanması",
+          "value": "İki aydan altı aya kadar hafif hapis (kanunun ifadesiyle) + belge iptali",
+          "refs": [
+            "Ek 6"
+          ]
+        },
+        {
+          "label": "Alıkonulan aracın teslim alınmaması hâlinde satış",
+          "value": "Altı ay",
+          "refs": [
+            "Ek 14"
+          ]
+        },
+        {
+          "label": "Satış bedeli bakiyesi için başvuru süresi",
+          "value": "Satıştan itibaren beş yıl",
+          "refs": [
+            "Ek 14"
+          ]
+        },
+        {
+          "label": "Belediye sistemleri hizmet bedeli",
+          "value": "%30",
+          "refs": [
+            "Ek 16"
+          ]
+        },
+        {
+          "label": "Hasılat paylaşımında yatırım maliyetine ulaşıldıktan sonra",
+          "value": "%15",
+          "refs": [
+            "Ek 16"
+          ]
+        },
+        {
+          "label": "Aday sürücülük süresi",
+          "value": "İki yıl",
+          "refs": [
+            "Ek 17"
+          ]
+        },
+        {
+          "label": "Aday sürücü iptali: ceza puanı",
+          "value": "75 puanın aşılması",
+          "refs": [
+            "Ek 17"
+          ]
+        },
+        {
+          "label": "Aday sürücü iptali: alkol",
+          "value": "0.20 promilin üzeri",
+          "refs": [
+            "Ek 17"
+          ]
+        },
+        {
+          "label": "Aday sürücü iptali: tekrar eden ihlal",
+          "value": "Üç kez",
+          "refs": [
+            "Ek 17"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "Ek 6",
+        "Ek 14",
+        "Ek 16",
+        "Ek 17"
+      ]
+    },
+    {
+      "type": "compare",
+      "title": "Belge geri alma (Ek 2) ile aday belge iptali (Ek 17)",
+      "rows": [
+        {
+          "aspect": "Sonuç",
+          "left": "İzin/ruhsat almadan taşımada sürücü belgesi otuz gün geri alınır",
+          "right": "Aday sürücü belgesi iptal edilir",
+          "refs": [
+            "Ek 2",
+            "Ek 17"
+          ]
+        },
+        {
+          "aspect": "İşlemi yapan",
+          "left": "6 ncı maddede sayılan görevliler",
+          "right": "6 ncı maddede sayılan görevliler",
+          "refs": [
+            "Ek 2",
+            "Ek 17"
+          ]
+        },
+        {
+          "aspect": "Belgeye yeniden kavuşma yolu",
+          "left": "İade",
+          "right": "Sürücü kursu + sınav + motorlu taşıt sürücüsü sertifikası",
+          "refs": [
+            "Ek 2",
+            "Ek 17"
+          ]
+        },
+        {
+          "aspect": "İdari para cezalarının tamamının tahsili",
+          "left": "Şart",
+          "right": "Şart",
+          "refs": [
+            "Ek 2",
+            "Ek 17"
+          ]
+        },
+        {
+          "aspect": "Psiko-teknik değerlendirme ve psikiyatri muayenesi",
+          "left": "Aranmaz",
+          "right": "Kursa başlamak için zorunlu",
+          "refs": [
+            "Ek 2",
+            "Ek 17"
+          ]
+        },
+        {
+          "aspect": "Süre unsuru",
+          "left": "Belge otuz gün süreyle geri alınır; iade ayrıca cezaların tamamının tahsiline bağlıdır",
+          "right": "Varsa iptal sonrası bekleme süresi veya geri alma süresi kadar zamanın geçmiş olması zorunlu",
+          "refs": [
+            "Ek 2",
+            "Ek 17"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "Ek 2",
+        "Ek 17"
+      ]
+    },
+    {
+      "type": "exam_stats",
+      "title": "Sınav der ki",
+      "rows": [
+        {
+          "label": "Bu ünitenin maddelerinden yayındaki soru",
+          "value": "14",
+          "refs": [
+            "65/A",
+            "Ek 2",
+            "Ek 3",
+            "Ek 4",
+            "Ek 6",
+            "Ek 12",
+            "Ek 14",
+            "Ek 16",
+            "Ek 17",
+            "Ek 18",
+            "Ek 20"
+          ]
+        },
+        {
+          "label": "md Ek 2",
+          "value": "2 soru",
+          "refs": [
+            "Ek 2"
+          ]
+        },
+        {
+          "label": "md Ek 3",
+          "value": "2 soru",
+          "refs": [
+            "Ek 3"
+          ]
+        },
+        {
+          "label": "md Ek 17",
+          "value": "2 soru",
+          "refs": [
+            "Ek 17"
+          ]
+        },
+        {
+          "label": "md 65/A",
+          "value": "1 soru",
+          "refs": [
+            "65/A"
+          ]
+        },
+        {
+          "label": "md Ek 4",
+          "value": "1 soru",
+          "refs": [
+            "Ek 4"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "65/A",
+        "Ek 2",
+        "Ek 3",
+        "Ek 4",
+        "Ek 6",
+        "Ek 12",
+        "Ek 14",
+        "Ek 16",
+        "Ek 17",
+        "Ek 18",
+        "Ek 20"
+      ],
+      "generated": true
+    },
+    {
+      "type": "bridge",
+      "title": "Bu üniteden soru çöz",
+      "articleRefs": [
+        "65/A",
+        "Ek 2",
+        "Ek 3",
+        "Ek 4",
+        "Ek 6",
+        "Ek 12",
+        "Ek 14",
+        "Ek 16",
+        "Ek 17",
+        "Ek 18",
+        "Ek 20"
+      ],
+      "generated": true,
+      "rows": [
+        {
+          "label": "Madde kapsamlı seans",
+          "value": "md 65/A, Ek 2, Ek 3, Ek 4, Ek 6, Ek 12, Ek 14, Ek 16, Ek 17, Ek 18, Ek 20, 10 soru",
+          "refs": [
+            "65/A",
+            "Ek 2",
+            "Ek 3",
+            "Ek 4",
+            "Ek 6",
+            "Ek 12",
+            "Ek 14",
+            "Ek 16",
+            "Ek 17",
+            "Ek 18",
+            "Ek 20"
+          ]
+        }
+      ]
+    }
+  ]
+}

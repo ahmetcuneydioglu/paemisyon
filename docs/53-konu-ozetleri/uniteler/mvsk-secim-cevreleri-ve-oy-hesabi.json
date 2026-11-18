@@ -1,0 +1,544 @@
+{
+  "unit": {
+    "slug": "mvsk-secim-cevreleri-ve-oy-hesabi",
+    "legislationSlug": "2839-milletvekili-secimi-kanunu",
+    "topicId": "fd517cd6-8889-4a46-b644-e6b156a5a9f3",
+    "title": "Seçim çevreleri ve milletvekili dağılımı",
+    "subtitle": "Sandalyeler illere nasıl dağılır, baraj nasıl işler, oylar sandalyeye nasıl dönüşür",
+    "articleFrom": "1",
+    "articleTo": "34/A",
+    "readingMinutes": 8,
+    "sourceLabel": "AI özeti — 2839 Milletvekili Seçimi Kanunu, md 1–6, 33, 34, 34/A",
+    "articleNos": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "33",
+      "34",
+      "34/A"
+    ],
+    "generatedBy": "claude-opus-5-5 (ozet-uret.ts)",
+    "sortOrder": 1
+  },
+  "blocks": [
+    {
+      "type": "concept",
+      "title": "Bu kanun neyi düzenler?",
+      "body": "Milletvekili seçiminin kuralları bu kanunda toplanır: seçim sistemi ve usulü, seçim çevreleri ile milletvekili sayısı, seçim dönemi ve zamanı, ara seçim, seçimin yenilenmesi, seçilebilme ve aday olma esasları. Bu ünitede iki soruya odaklanıyorsun: Sandalyeler illere ve seçim çevrelerine nasıl paylaştırılıyor? Sandıktan çıkan oylar sandalyeye nasıl dönüşüyor?",
+      "articleRefs": [
+        "1"
+      ],
+      "derivedNumbers": [],
+      "counterNumbers": []
+    },
+    {
+      "type": "rule",
+      "title": "Seçimin temel ilkeleri",
+      "body": "Milletvekili seçimi:\n- **tek derecelidir**,\n- **nispi temsil** sistemine göre yapılır,\n- **genel, eşit ve gizli** oyla yapılır,\n- bütün yurtta **aynı günde** yapılır,\n- **yargı yönetim ve denetimi** altında yapılır.\n\nSeçmen oyunu tam bir serbestlikle **kendisi** kullanır. Oy gizlidir ama oyların **sayımı, dökümü ve tutanaklara bağlanması açık** yapılır.",
+      "articleRefs": [
+        "2"
+      ],
+      "derivedNumbers": [],
+      "counterNumbers": []
+    },
+    {
+      "type": "trap",
+      "title": "Çoğunluk değil, nispi temsil",
+      "body": "Şıklarda 'basit çoğunluk', 'mutlak çoğunluk', 'tek isimli' ya da 'barajsız' ifadelerini görürsen dikkat et. md 2 açıkça **nispi temsil** sistemini öngörür. md 33'e göre sistem barajlıdır. Doğru kalıp şudur: **nispi temsil + yüzde 7 ülke barajı + md 34'teki bölme yöntemi**.",
+      "articleRefs": [
+        "2",
+        "33",
+        "34"
+      ],
+      "derivedNumbers": [],
+      "counterNumbers": []
+    },
+    {
+      "type": "rule",
+      "title": "600 sandalye ve ilk dağıtım",
+      "body": "**Milletvekili sayısı 600'dür** (md 3).\n\nİllere dağıtım şöyle başlar: toplam milletvekili sayısından **her ile önce bir milletvekili** verilir (md 4). Böylece nüfusu ne olursa olsun her il en az bir milletvekili çıkarır. Geri kalan sandalyeler nüfusa göre paylaştırılır.",
+      "articleRefs": [
+        "3",
+        "4"
+      ],
+      "derivedNumbers": [],
+      "counterNumbers": []
+    },
+    {
+      "type": "rule",
+      "title": "Kalan sandalyeler nüfusa göre nasıl dağıtılır?",
+      "body": "**Ölçü sayısı:** Son genel nüfus sayımıyla belli olan Türkiye nüfusu, illere önce verilen milletvekilleri çıkarıldıktan sonra kalan milletvekili sayısına bölünür. Bu bölmeden bir sayı elde edilir.\n\n**İl payı:** İl nüfusu bu sayıya bölünür. Sonuç, ilin **ayrıca** çıkaracağı milletvekili sayısıdır.\n\n**Kalanlar:** Nüfusu milletvekili çıkarmaya yetmeyen illerin nüfusları ile artık nüfus bırakan illerin artık nüfusları büyüklüklerine göre sıraya konur. İlk hesapta dağıtılmamış milletvekillikleri bu sıraya göre verilir.\n\n**Eşitlik:** Son kalan milletvekilliğinde iki veya daha fazla ilin nüfusu ya da nüfus artığı eşitse **ad çekilir**.",
+      "articleRefs": [
+        "4"
+      ],
+      "derivedNumbers": [],
+      "counterNumbers": []
+    },
+    {
+      "type": "rule",
+      "title": "İl kaç seçim çevresine bölünür?",
+      "body": "Tespit sonunda ilin çıkaracağı milletvekili sayısına bakılır:\n- **18'e kadar** milletvekili çıkaran il **bir** seçim çevresi sayılır.\n- **19'dan 35'e kadar** milletvekili çıkaran il **iki** seçim çevresine bölünür.\n- **36 ve daha fazla** milletvekili çıkaran il **üç** seçim çevresine bölünür.\n\nBu seçim çevreleri **numara sırasına göre** adlandırılır.",
+      "articleRefs": [
+        "4"
+      ],
+      "derivedNumbers": [],
+      "counterNumbers": []
+    },
+    {
+      "type": "rule",
+      "title": "Seçim çevreleri çizilirken",
+      "body": "Bölünen illerde seçim çevreleri belirlenirken şu ölçütler gözetilir:\na) Seçim çevreleri, mümkün olduğu ölçüde **eşit veya birbirine yakın** sayıda milletvekili çıkaracak şekilde oluşturulur.\nb) Mümkün olduğu ölçüde **ilçelerin mülki bütünlüğü** dikkate alınır.\nc) Aynı seçim çevresindeki ilçelerin **nüfus ve coğrafi yakınlıkları** ile **ulaşım imkânları** göz önünde bulundurulur.\n\nİlin milletvekilleri seçim çevrelerine nüfusa göre dağıtılır. Bu dağıtımda illerin milletvekili sayısını tespit etmeye ilişkin esaslar uygulanır.",
+      "articleRefs": [
+        "4"
+      ],
+      "derivedNumbers": [],
+      "counterNumbers": []
+    },
+    {
+      "type": "trap",
+      "title": "Seçim çevresi sınırları",
+      "body": "Bu konudaki sorularda sınırlar karıştırılır. Hepsi md 4'te yazılıdır. **18'e kadar** milletvekili çıkaran il bir seçim çevresidir. **19 dahil, 35 dahil** iki seçim çevresi oluşur. **36 ve daha fazlası** için üç seçim çevresi oluşur. Bu bölünme zorunludur, takdire bırakılmamıştır. Üçten fazla çevre öngörülmemiştir; yani bir il en çok üç seçim çevresine bölünebilir. 'Kural olarak her il bir seçim çevresidir' ifadesi doğru kabul edilir. Bölünme yalnız çok milletvekili çıkaran illerde söz konusudur.",
+      "articleRefs": [
+        "4"
+      ],
+      "derivedNumbers": [],
+      "counterNumbers": []
+    },
+    {
+      "type": "rule",
+      "title": "Seçim çevrelerini kim, ne zaman ilan eder?",
+      "body": "Seçim çevrelerini ve her seçim çevresinin çıkaracağı milletvekili sayısını **Yüksek Seçim Kurulu** md 4'e göre tespit eder. Genel nüfus sayımı sonuçlarının açıklanmasından itibaren **en geç altı ay içinde** bunları **Resmi Gazete, radyo ve televizyonla** ilan eder. Altı aylık süre hem tespiti hem ilanı kapsar.",
+      "articleRefs": [
+        "5",
+        "4"
+      ],
+      "derivedNumbers": [],
+      "counterNumbers": []
+    },
+    {
+      "type": "rule",
+      "title": "Seçim zamanı ve savaş ertelemesi",
+      "body": "**Dönem:** TBMM seçimleri **beş yılda bir**, Cumhurbaşkanı seçimi ile birlikte **aynı gün** yapılır.\n\n**Oy günü:** Bir önceki seçimin yapıldığı tarihten itibaren beş yılın dolmasından önceki **son Pazar** günü oy verilir.\n\n**Başlangıç tarihi:** Oy verme gününden geriye doğru hesaplanan **altmış günlük** sürenin ilk günüdür.\n\n**İstisna (savaş):** Savaş sebebiyle yeni seçim yapılmasına imkân görülmezse TBMM, seçimlerin **bir yıl** geriye bırakılmasına karar verebilir. Geri bırakma sebebi ortadan kalkmamışsa bu işlem aynı usulle **tekrarlanabilir**.",
+      "articleRefs": [
+        "6"
+      ],
+      "derivedNumbers": [],
+      "counterNumbers": []
+    },
+    {
+      "type": "numbers",
+      "title": "Sayılarla: sandalyeler ve takvim",
+      "rows": [
+        {
+          "label": "Milletvekili sayısı",
+          "value": "600",
+          "refs": [
+            "3"
+          ]
+        },
+        {
+          "label": "Her ile önce verilen milletvekili",
+          "value": "1",
+          "refs": [
+            "4"
+          ]
+        },
+        {
+          "label": "Bir seçim çevresi sayılan il",
+          "value": "18'e kadar milletvekili",
+          "refs": [
+            "4"
+          ]
+        },
+        {
+          "label": "İki seçim çevresine bölünen il",
+          "value": "19–35 milletvekili",
+          "refs": [
+            "4"
+          ]
+        },
+        {
+          "label": "Üç seçim çevresine bölünen il",
+          "value": "36 ve daha fazla milletvekili",
+          "refs": [
+            "4"
+          ]
+        },
+        {
+          "label": "YSK'nın seçim çevrelerini ilan süresi",
+          "value": "Sayım sonuçlarının açıklanmasından itibaren en geç 6 ay",
+          "refs": [
+            "5"
+          ]
+        },
+        {
+          "label": "TBMM seçim dönemi",
+          "value": "5 yılda bir, Cumhurbaşkanı seçimiyle aynı gün",
+          "refs": [
+            "6"
+          ]
+        },
+        {
+          "label": "Oy verme günü",
+          "value": "5 yılın dolmasından önceki son Pazar",
+          "refs": [
+            "6"
+          ]
+        },
+        {
+          "label": "Seçimin başlangıç tarihi",
+          "value": "Oy gününden geriye 60 günlük sürenin ilk günü",
+          "refs": [
+            "6"
+          ]
+        },
+        {
+          "label": "Savaş hâlinde geri bırakma",
+          "value": "1 yıl (sebep sürerse tekrarlanabilir)",
+          "refs": [
+            "6"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
+      "derivedNumbers": [],
+      "counterNumbers": []
+    },
+    {
+      "type": "concept",
+      "title": "Baraj: hesaptan önceki eşik",
+      "body": "Oylar sandalyeye çevrilmeden önce bir eşikten geçmek gerekir. Ülke genelinde geçerli oyların **yüzde yedisini geçemeyen** parti, barajı aşan bir ittifakın içinde değilse, bir seçim çevresinde ne kadar güçlü olursa olsun milletvekili çıkaramaz. İttifakta baraj, ittifak yapan partilerin aldıkları geçerli oyların **toplamına** göre hesaplanır; bu partiler için ayrıca baraj hesabı yapılmaz. Bu yüzden önce 'eşiği kim geçti?' diye bak, çevredeki hesaba sonra geç.",
+      "articleRefs": [
+        "33"
+      ],
+      "derivedNumbers": [],
+      "counterNumbers": []
+    },
+    {
+      "type": "rule",
+      "title": "Yüzde yedilik baraj",
+      "body": "**Kural:** Genel seçimlerde ülke genelinde, ara seçimlerde seçim yapılan çevrelerin tümünde geçerli oyların **yüzde yedisini geçmeyen** partiler milletvekili çıkaramaz.\n\n**İttifak:** Seçim ittifakı yapılmışsa baraj, ittifak partilerinin aldığı geçerli oyların **toplamı** üzerinden hesaplanır. Bu partiler için ayrıca baraj hesabı yapılmaz.\n\n**Partili listedeki bağımsız:** Bir siyasi partinin listesinde yer alan bağımsız aday, ancak o partinin yüzde yedilik barajı aşmasıyla seçilebilir.\n\n**Usul:** İl seçim kurulları birleştirme tutanağını düzenledikten sonra sonuçları en seri şekilde telgrafla, ayrıca telefon veya telsizle Yüksek Seçim Kuruluna bildirir. YSK Türkiye genelinde geçerli oyları toplar. Her parti ve ittifakın oyunu genel geçerli oy toplamına bölerek oy yüzdesini hesaplar. Barajı aşanların isimlerini il seçim kurullarına bildirir ve ilan eder.\n\n**İlandan sonra:** Bir veya birkaç seçim çevresinde seçimin iptal edilmesi, ülke genelindeki oy yüzdesinin yeniden tespitini gerektirmez.",
+      "articleRefs": [
+        "33"
+      ],
+      "derivedNumbers": [],
+      "counterNumbers": []
+    },
+    {
+      "type": "trap",
+      "title": "Barajın yeri ve oranı",
+      "body": "Baraj sorularında iki noktaya dikkat et.\n\n**Yer:** Baraj **ülke genelinde** hesaplanır; ara seçimde ise seçim yapılan çevrelerin tümünde. md 33'te ayrıca bir 'seçim çevresi barajı' yoktur. Şıkta bunu görürsen ifade yanlıştır.\n\n**Oran:** Baraj **yüzde 7**'dir, yüzde 10 değildir. Metin 'yüzde yedisini geçmeyen partiler milletvekili çıkaramaz' der. Yani tam yüzde 7 yetmez, bu oranı **geçmek** gerekir.",
+      "articleRefs": [
+        "33"
+      ],
+      "derivedNumbers": [],
+      "counterNumbers": [
+        10
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Sandalye hesabına kimler girer?",
+      "body": "**Hesaba girenler:**\n- bağımsız adaylar,\n- md 33'teki oranı aşan siyasi partiler,\n- bu oranı aşan ittifakı oluşturan partiler.\n\nBarajı aşamayan partinin oyu, çevrede ne kadar yüksek olursa olsun bölme listesine girmez.\n\n**İstisna:** Seçime katılan siyasi partilerden veya ittifaklardan hiçbiri oranı aşamamışsa milletvekilleri yine aynı bölme ve ad çekme kurallarıyla paylaştırılır.",
+      "articleRefs": [
+        "34",
+        "33"
+      ],
+      "derivedNumbers": [],
+      "counterNumbers": []
+    },
+    {
+      "type": "rule",
+      "title": "Çevrede sandalye hesabı adım adım",
+      "body": "Hesap her seçim çevresinde ayrı yapılır:\n1. Hesaba giren siyasi partilerin ve bağımsız adayların adları alt alta, aldıkları geçerli oylar da hizalarına yazılır.\n2. Partilerin oyları **önce bire, sonra ikiye, sonra üçe…** bölünür. Bölme, çevrenin çıkaracağı milletvekili sayısına ulaşıncaya kadar sürer.\n3. Bağımsız adayın oyu bölünmez, olduğu gibi kalır.\n4. Elde edilen paylar ile bağımsız adayların oyları ayrım yapılmaksızın **en büyükten en küçüğe** sıralanır.\n5. Çevrenin milletvekili sayısı kadar sandalye, rakamların büyüklük sırasına göre payların sahiplerine verilir.\n6. Son kalan milletvekilliği için birbirine eşit rakamlar varsa **ad çekilir**.",
+      "articleRefs": [
+        "34"
+      ],
+      "derivedNumbers": [],
+      "counterNumbers": []
+    },
+    {
+      "type": "rule",
+      "title": "İttifakta baraj ve dağıtım",
+      "body": "**Barajda:** İttifak partilerinin geçerli oyları toplanır. Yüzde 7 barajı bu toplama göre hesaplanır; partiler için ayrıca baraj hesabı yapılmaz (md 33).\n\n**Seçim çevresinde:** İttifakın oy toplamı genel barajı geçerse sandalye hesabı ittifak toplamıyla yapılmaz. Her partinin **o seçim çevresinde kendi aldığı oy sayısı** esas alınır ve md 34'teki bölme yöntemi uygulanır.",
+      "articleRefs": [
+        "33",
+        "34"
+      ],
+      "derivedNumbers": [],
+      "counterNumbers": []
+    },
+    {
+      "type": "trap",
+      "title": "Çevrenin birincisi barajın altında kalırsa",
+      "body": "Hesap sorularında en sık kurulan tuzak şudur: çevrede en çok oyu alan parti ülke barajını geçememiştir. Bu partinin oyu bölme listesine hiç yazılmaz ve o çevrede milletvekili çıkaramaz. İlk adımın her zaman aynı olsun: barajı geçemeyen partiyi listeden sil. Sonra kalan partilerin oylarını bire, ikiye, üçe… böl, payları sırala ve sandalyeleri dağıt. Kalan partilerden birinin birden fazla sandalye alması olağandır.",
+      "articleRefs": [
+        "33",
+        "34"
+      ],
+      "derivedNumbers": [],
+      "counterNumbers": []
+    },
+    {
+      "type": "trap",
+      "title": "Bölme yönteminin adı: d'Hondt",
+      "body": "Sorularda md 34'teki bölme yöntemi 'd'Hondt' adıyla geçer. 'Milli bakiye', 'en büyük artık', 'ulusal artık', 'en kuvvetli ortalama' gibi şıklar yanlıştır. md 34'te artık oyların ayrıca toplanıp dağıtıldığı bir aşama yoktur. Her çevredeki sandalyeler o çevrede, bire, ikiye, üçe… bölme paylarının sırasıyla tamamlanır. Ülke seçim çevresi hesabını düzenleyen md 34/A da iptal edilmiştir.",
+      "articleRefs": [
+        "34",
+        "34/A"
+      ],
+      "derivedNumbers": [],
+      "counterNumbers": []
+    },
+    {
+      "type": "rule",
+      "title": "Ülke seçim çevresi hesabı yürürlükte değil",
+      "body": "md 34/A'nın başlığı hâlâ yerinde durur: 'Siyasi partilerin çıkaracakları ülke seçim çevresi milletvekili sayısının hesabı'. Ancak maddenin içeriği **Anayasa Mahkemesi kararıyla iptal edilmiştir**. md 34'teki iptal edilen fıkra da yürürlükte değildir. Sonuç olarak ülke seçim çevresi üzerinden sandalye hesabı yapan bir hüküm yoktur. Sandalyeler seçim çevrelerinde, md 34'teki bölme yöntemiyle dağıtılır.",
+      "articleRefs": [
+        "34/A",
+        "34"
+      ],
+      "derivedNumbers": [],
+      "counterNumbers": []
+    },
+    {
+      "type": "numbers",
+      "title": "Sayılarla: baraj ve oy hesabı",
+      "rows": [
+        {
+          "label": "Ülke barajı (genel seçim)",
+          "value": "Ülke genelinde geçerli oyların yüzde 7'sini geçmek",
+          "refs": [
+            "33"
+          ]
+        },
+        {
+          "label": "Baraj (ara seçim)",
+          "value": "Seçim yapılan çevrelerin tümünde yüzde 7",
+          "refs": [
+            "33"
+          ]
+        },
+        {
+          "label": "İttifakta baraj",
+          "value": "Partilerin oy toplamı üzerinden yüzde 7; partiye ayrıca hesap yok",
+          "refs": [
+            "33"
+          ]
+        },
+        {
+          "label": "Parti oylarının bölenleri",
+          "value": "1, 2, 3 … çevrenin milletvekili sayısına kadar",
+          "refs": [
+            "34"
+          ]
+        },
+        {
+          "label": "Bağımsız adayın oyu",
+          "value": "Bölünmez, olduğu gibi sıraya girer",
+          "refs": [
+            "34"
+          ]
+        },
+        {
+          "label": "Son sandalyede eşit rakam",
+          "value": "Ad çekme",
+          "refs": [
+            "34"
+          ]
+        },
+        {
+          "label": "Hiçbir parti barajı aşamazsa",
+          "value": "Tüm partiler bölme hesabına girer",
+          "refs": [
+            "34"
+          ]
+        },
+        {
+          "label": "İl başına en çok seçim çevresi",
+          "value": "3",
+          "refs": [
+            "4"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "33",
+        "34",
+        "4"
+      ],
+      "derivedNumbers": [],
+      "counterNumbers": []
+    },
+    {
+      "type": "compare",
+      "title": "Siyasi parti | Bağımsız aday",
+      "rows": [
+        {
+          "aspect": "Baraj",
+          "left": "Ülke genelinde yüzde 7'yi geçmek zorunda; ittifaktaysa ittifak partilerinin oy toplamı esas alınır, partiye ayrıca baraj hesabı yapılmaz",
+          "right": "Baraj aranmaz; doğrudan hesaba girer",
+          "refs": [
+            "33",
+            "34"
+          ]
+        },
+        {
+          "aspect": "Oyun hesaptaki yeri",
+          "left": "Oyu bire, ikiye, üçe… çevrenin milletvekili sayısına kadar bölünür",
+          "right": "Oyu bölünmez, olduğu gibi yazılır",
+          "refs": [
+            "34"
+          ]
+        },
+        {
+          "aspect": "Sıralama",
+          "left": "Payları ortak sıraya girer",
+          "right": "Oyu aynı ortak sıraya girer",
+          "refs": [
+            "34"
+          ]
+        },
+        {
+          "aspect": "Parti listesinde yer alırsa",
+          "left": "—",
+          "right": "Listesindeki partinin yüzde 7 barajı aşmasıyla seçilebilir",
+          "refs": [
+            "33"
+          ]
+        },
+        {
+          "aspect": "Son sandalyede eşitlik",
+          "left": "Ad çekilir",
+          "right": "Ad çekilir",
+          "refs": [
+            "34"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "33",
+        "34"
+      ],
+      "derivedNumbers": [],
+      "counterNumbers": []
+    },
+    {
+      "type": "exam_stats",
+      "title": "Sınav der ki",
+      "rows": [
+        {
+          "label": "Bu ünitenin maddelerinden yayındaki soru",
+          "value": "7",
+          "refs": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "33",
+            "34",
+            "34/A"
+          ]
+        },
+        {
+          "label": "md 34",
+          "value": "3 soru",
+          "refs": [
+            "34"
+          ]
+        },
+        {
+          "label": "md 33",
+          "value": "2 soru",
+          "refs": [
+            "33"
+          ]
+        },
+        {
+          "label": "md 2",
+          "value": "1 soru",
+          "refs": [
+            "2"
+          ]
+        },
+        {
+          "label": "md 4",
+          "value": "1 soru",
+          "refs": [
+            "4"
+          ]
+        },
+        {
+          "label": "Hiç soru çıkmamış",
+          "value": "md 1, md 3, md 5, md 6, md 34/A",
+          "refs": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "33",
+            "34",
+            "34/A"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "33",
+        "34",
+        "34/A"
+      ],
+      "generated": true
+    },
+    {
+      "type": "bridge",
+      "title": "Bu üniteden soru çöz",
+      "articleRefs": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "33",
+        "34",
+        "34/A"
+      ],
+      "generated": true,
+      "rows": [
+        {
+          "label": "Madde kapsamlı seans",
+          "value": "md 1–6, 33, 34, 34/A, 7 soru",
+          "refs": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "33",
+            "34",
+            "34/A"
+          ]
+        }
+      ]
+    }
+  ]
+}

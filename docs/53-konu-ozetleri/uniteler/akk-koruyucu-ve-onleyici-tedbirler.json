@@ -1,0 +1,638 @@
+{
+  "unit": {
+    "slug": "akk-koruyucu-ve-onleyici-tedbirler",
+    "legislationSlug": "6284-sayili-ailenin-korunmasi-kanunu",
+    "topicId": "6787ab70-76ef-4fcf-88a8-fbd3e0d7f563",
+    "title": "Koruyucu ve önleyici tedbirler",
+    "subtitle": "Mülkî amir, hâkim ve kolluk tedbirleri; süreler, itiraz, zorlama hapsi ve destek hizmetleri",
+    "articleFrom": "1",
+    "articleTo": "25",
+    "readingMinutes": 13,
+    "sourceLabel": "AI özeti — 6284 Sayılı Ailenin Korunması Kanunu, md 1–25",
+    "articleNos": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+      "15",
+      "16",
+      "17",
+      "18",
+      "19",
+      "20",
+      "21",
+      "22",
+      "23",
+      "24",
+      "25"
+    ],
+    "generatedBy": "claude-opus-5-5 (ozet-uret.ts)",
+    "sortOrder": 1
+  },
+  "blocks": [
+    {
+      "type": "concept",
+      "title": "Bu Kanun kimi korur?",
+      "body": "Kanun, şiddete uğrayan veya şiddete uğrama tehlikesi bulunan kadınları, çocukları, aile bireylerini ve tek taraflı ısrarlı takip mağduru olan kişileri korur. Amaç hem korumak hem de şiddeti önlemektir. Şiddet tanımı geniştir: fiziksel, cinsel, psikolojik, sözlü veya ekonomik her türlü tutum ve davranış; tehdit, baskı ve özgürlüğün keyfî engellenmesi de buna dahildir. Ev içi şiddet için aynı haneyi paylaşmak şart değildir. Kanunda \"hâkim\" denince aile mahkemesi hâkimini anla. Tedbir kararını hâkim, kolluk görevlileri ve mülkî amirler istem üzerine veya resen verir. Kadınları cinsiyete dayalı şiddetten koruyan özel tedbirler ayrımcılık olarak yorumlanamaz.",
+      "articleRefs": [
+        "1",
+        "2"
+      ]
+    },
+    {
+      "type": "concept",
+      "title": "Koruyucu mu, önleyici mi?",
+      "body": "Tedbirleri hedefine göre ayır. **Koruyucu tedbirler** korunan kişiye yöneliktir: barınma, geçici koruma, işyeri değişikliği gibi. **Önleyici tedbirler** şiddet uygulayana yöneliktir: uzaklaştırma, yaklaşmama, silah teslimi gibi. Koruyucu tedbiri mülkî amir (md 3) ya da hâkim (md 4) verir. Önleyici tedbiri hâkim verir (md 5). Gecikmesinde sakınca bulunan hâllerde bunların bazılarını kolluk amiri de alabilir. Bir soru kökünü okurken önce \"tedbir kim için?\", sonra \"kararı kim veriyor?\" diye sor.",
+      "articleRefs": [
+        "3",
+        "4",
+        "5"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Mülkî amirin koruyucu tedbirleri",
+      "body": "Mülkî amir, korunan kişiler için aşağıdaki tedbirlerden birine, birkaçına veya uygun görülecek benzer tedbirlere karar verebilir:\n- **(a)** Kendisine ve gerekiyorsa beraberindeki çocuklara, bulunduğu yerde veya başka bir yerde uygun **barınma yeri** sağlanması.\n- **(b)** Diğer kanunlar kapsamındaki yardımlar saklı kalmak üzere **geçici maddi yardım** yapılması.\n- **(c)** Psikolojik, meslekî, hukukî ve sosyal bakımdan **rehberlik ve danışmanlık** hizmeti verilmesi.\n- **(ç)** Hayatî tehlikenin bulunması hâlinde, ilgilinin talebi üzerine veya resen **geçici koruma** altına alınması.\n- **(d)** **Kreş imkânı.** Gerekli olması hâlinde, korunan kişinin çocukları varsa çalışma yaşamına katılımını desteklemek için sağlanır. Süre en çok dört ay, kişi çalışıyorsa en çok iki aydır. Tutar, on altı yaşından büyükler için her yıl belirlenen aylık net asgari ücretin yarısını geçemez. Belgelendirme gerekir ve gider Bakanlık bütçesinden karşılanır.",
+      "articleRefs": [
+        "3"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Kolluk amiri ve koruyucu tedbir",
+      "body": "Gecikmesinde sakınca bulunan hâllerde md 3'ün yalnızca **(a) barınma yeri** ve **(ç) geçici koruma** tedbirleri kolluk amirlerince de alınabilir.\n- Kolluk amiri evrakı en geç kararın alındığı tarihi takip eden **ilk işgünü** içinde **mülkî amirin** onayına sunar.\n- Mülkî amir **kırksekiz saat** içinde onaylamazsa tedbir **kendiliğinden kalkar**.\n\nGeçici maddi yardım, rehberlik-danışmanlık ve kreş imkânı bu yetkinin dışındadır.",
+      "articleRefs": [
+        "3"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Hâkimin koruyucu tedbirleri",
+      "body": "Hâkim, korunan kişiler için şu koruyucu tedbirlerden birine, birkaçına veya benzerlerine karar verebilir:\n- **(a)** İşyerinin değiştirilmesi.\n- **(b)** Kişi evliyse müşterek yerleşim yerinden ayrı yerleşim yeri belirlenmesi.\n- **(c)** 4721 sayılı Türk Medenî Kanunundaki şartlar varsa ve korunan kişi talep ederse tapu kütüğüne **aile konutu şerhi** konulması.\n- **(ç)** Tanık Koruma Kanunu hükümlerine göre kimlik ve ilgili diğer bilgi ve belgelerin değiştirilmesi. Bunun için üç şart birlikte aranır: hayatî tehlike bulunmalı, diğer tedbirler yetersiz kalmalı ve ilgilinin **aydınlatılmış rızası** olmalıdır.",
+      "articleRefs": [
+        "4"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Mülkî amir listesi mi, hâkim listesi mi?",
+      "body": "Mülkî amir ve hâkim listelerini birbirinden ayır. **Mülkî amir** şunlara karar verir: barınma, geçici maddi yardım, rehberlik-danışmanlık, geçici koruma ve kreş. **Hâkim** ise işyeri değişikliği, ayrı yerleşim yeri, aile konutu şerhi ve kimlik değişikliğine karar verir. Şıklarda \"işyerinin değiştirilmesi\" ya da \"ayrı yerleşim yeri\" mülkî amire yakıştırılır; bunlar hâkimindir. \"Hayatî tehlike\" ifadesi hem md 3'te hem md 4'te geçer, buna dikkat et. Mülkî amirde bu ifade geçici korumaya bağlanır, hâkimde kimlik değişikliğine. Bir de \"sağlık kuruluşuna başvurma\" ve \"müşterek konutun tahsisi\" şıkları var. Bunlar koruyucu değildir; şiddet uygulayana yönelik, hâkimin verdiği önleyici tedbirlerdir.",
+      "articleRefs": [
+        "3",
+        "4",
+        "5"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "type": "rule",
+      "title": "Hâkimin önleyici tedbirleri",
+      "body": "Hâkim, şiddet uygulayan hakkında şu tedbirlerden birine, birkaçına veya benzerlerine karar verebilir:\n- **(a)** Mağdura şiddet tehdidi, hakaret, aşağılama veya küçük düşürme içeren söz ve davranışlarda bulunmaması.\n- **(b)** Müşterek konuttan veya bulunduğu yerden derhâl uzaklaştırılması ve müşterek konutun korunan kişiye tahsisi.\n- **(c)** Korunan kişilere, bulundukları konuta, okula ve işyerine yaklaşmaması.\n- **(ç)** Çocuklarla ilgili daha önce verilmiş bir kişisel ilişki kurma kararı varsa ilişkinin refakatçi eşliğinde yapılması, sınırlanması ya da tümüyle kaldırılması.\n- **(d)** Gerekirse korunan kişinin, şiddete uğramamış olsalar bile yakınlarına, tanıklarına ve çocuklarına yaklaşmaması. Kişisel ilişki kurulmasına ilişkin hâller saklıdır.\n- **(e)** Şahsi eşyalara ve ev eşyalarına zarar vermemesi.\n- **(f)** İletişim araçlarıyla veya sair surette rahatsız etmemesi.\n- **(g)** Kanunen izinli silahları kolluğa teslim etmesi.\n- **(ğ)** Silah taşıması zorunlu bir kamu görevi ifa etse bile zimmetindeki silahı kurumuna teslim etmesi.\n- **(h)** Korunan kişilerin bulundukları yerlerde alkol, uyuşturucu veya uyarıcı madde kullanmaması ya da bunların etkisindeyken yaklaşmaması. Bağımlılık varsa hastaneye yatmak dâhil muayene ve tedavisi sağlanır.\n- **(ı)** Bir sağlık kuruluşuna muayene veya tedavi için başvurması ve tedavisinin sağlanması.",
+      "articleRefs": [
+        "5"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Önleyici tedbirde kolluk, onay ve nafaka",
+      "body": "- Gecikmesinde sakınca bulunan hâllerde **(a), (b), (c) ve (d)** bentlerindeki tedbirleri kolluk amirleri de alabilir.\n- Kolluk amiri evrakı en geç kararı takip eden **ilk işgünü** içinde **hâkimin** onayına sunar. Hâkim **yirmidört saat** içinde onaylamazsa tedbir **kendiliğinden kalkar**.\n- Hâkim ayrıca 5395 sayılı Çocuk Koruma Kanunundaki koruyucu ve destekleyici tedbirlere karar verebilir. 4721 sayılı Kanuna göre velayet, kayyım, nafaka ve kişisel ilişki konularında da yetkilidir.\n- Şiddet uygulayan ailenin geçimini sağlıyor ya da geçime katkıda bulunuyor olabilir. Bu durumda 4721 sayılı Kanuna göre nafakaya hükmedilmemişse, hâkim mağdurun yaşam düzeyini gözeterek **talep edilmese dahi tedbir nafakasına** hükmedebilir.",
+      "articleRefs": [
+        "5"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "İşyeri, silah ve saat tuzakları",
+      "body": "Sayılmayan önleyici tedbir sorulduğunda **işyerinin değiştirilmesi** şıkkına dikkat et. Bu tedbir md 4'teki koruyucu tedbirdir. Gecikmesinde sakınca bulunan hâlde kolluk amirinin alabileceği önleyici tedbirler yalnız **(a), (b), (c) ve (d)** bentleridir. Araya giren **(ç)** bendi (çocuklarla kişisel ilişkinin refakatçi eşliğinde yapılması, sınırlanması ya da kaldırılması) bu listede yoktur. **Silahları kolluğa teslim etme (g)** de bu listede yoktur, ona yalnız hâkim karar verir. Bir de onay merciini ve süreyi çaprazlayan şıklar var. md 3'te kolluğun koruyucu tedbirini **mülkî amir kırksekiz saat** içinde onaylar. md 5'te önleyici tedbiri **hâkim yirmidört saat** içinde onaylar. \"Hâkim – kırksekiz saat\" ya da \"mülkî amir – yirmidört saat\" şıkları yanlıştır.",
+      "articleRefs": [
+        "3",
+        "4",
+        "5"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "type": "numbers",
+      "title": "Ara tablo: kreş ve kolluk onayları",
+      "rows": [
+        {
+          "label": "Kreş imkânı – süre üst sınırı",
+          "value": "dört ay",
+          "refs": [
+            "3"
+          ]
+        },
+        {
+          "label": "Kreş imkânı – kişi çalışıyorsa süre üst sınırı",
+          "value": "iki ay",
+          "refs": [
+            "3"
+          ]
+        },
+        {
+          "label": "Kreş tutarı üst sınırı",
+          "value": "on altı yaşından büyükler için aylık net asgari ücretin yarısı",
+          "refs": [
+            "3"
+          ]
+        },
+        {
+          "label": "Kolluğun alabileceği koruyucu tedbirler",
+          "value": "md 3 (a) barınma, (ç) geçici koruma",
+          "refs": [
+            "3"
+          ]
+        },
+        {
+          "label": "Kolluğun alabileceği önleyici tedbirler",
+          "value": "md 5 (a), (b), (c), (d)",
+          "refs": [
+            "5"
+          ]
+        },
+        {
+          "label": "Kolluk amirinin evrakı onaya sunması",
+          "value": "kararı takip eden ilk işgünü içinde",
+          "refs": [
+            "3",
+            "5"
+          ]
+        },
+        {
+          "label": "Koruyucu tedbirde onay (mülkî amir)",
+          "value": "kırksekiz saat",
+          "refs": [
+            "3"
+          ]
+        },
+        {
+          "label": "Önleyici tedbirde onay (hâkim)",
+          "value": "yirmidört saat",
+          "refs": [
+            "5"
+          ]
+        },
+        {
+          "label": "Süresinde onaylanmazsa",
+          "value": "kendiliğinden kalkar",
+          "refs": [
+            "3",
+            "5"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "3",
+        "5"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "İhbar, başvuru, süre ve delil",
+      "body": "- **İhbar:** Şiddet veya şiddet tehlikesi varsa **herkes** resmi makam veya mercilere ihbar edebilir. İhbarı alan kamu görevlisi görevini gecikmeksizin yerine getirmek ve yetkilileri haberdar etmekle yükümlüdür.\n- **Başvuru:** Tedbir kararı ilgilinin talebi, Bakanlık, kolluk görevlileri ya da Cumhuriyet savcısının başvurusu üzerine verilir. Karar, en çabuk ve en kolay ulaşılabilecek yer hâkiminden, mülkî amirden ya da kolluk biriminden talep edilebilir.\n- **Süre:** Tedbir kararı ilk defasında **en çok altı ay** için verilir. Şiddet tehlikesinin devam edeceği anlaşılırsa süre veya şekil değiştirilebilir, tedbir kaldırılabilir ya da aynen devam ettirilebilir. Bu karar resen ya da korunan kişi, Bakanlık veya kolluk talebiyle verilir.\n- **Delil:** Koruyucu tedbir için şiddetin uygulandığına dair **delil veya belge aranmaz**. Önleyici tedbir **geciktirilmeksizin** verilir.",
+      "articleRefs": [
+        "7",
+        "8"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Tebliğ, ihtar, gizlilik ve eşya teslimi",
+      "body": "- Tedbir kararı korunan kişiye **ve** şiddet uygulayana tefhim veya tebliğ edilir.\n- Tedbir talebinin **reddi** kararı **sadece korunan kişiye** tebliğ edilir.\n- Gecikmesinde sakınca bulunan hâllerde kolluk biriminin verdiği karar, şiddet uygulayana **bir tutanakla derhâl** tebliğ edilir.\n- Tefhim ve tebliğde, karara aykırılık hâlinde **zorlama hapsi** uygulanacağı ihtarı yapılır.\n- Gerekirse korunan kişi ve diğer aile bireylerinin kimlik bilgileri, adresleri ve korumanın etkinliği için önemli bilgiler tüm resmi kayıtlarda **gizli tutulur**. Tebligat için ayrı bir adres tespit edilir. Bu bilgileri hukuka aykırı olarak veren, ifşa eden veya açıklayana 5237 sayılı Türk Ceza Kanunu uygulanır.\n- Talep hâlinde kişisel eşya ve belgeler **kolluk marifetiyle** teslim edilir.",
+      "articleRefs": [
+        "8"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Tebliğ ve delil şıklarına dikkat",
+      "body": "md 8'in şıklarında şu çarpıtmalara dikkat et. \"Darp raporu olmadan karar verilemez\" ya da \"şiddet uygulayanın ifadesi alınmalı\" diyen şıklar yanlıştır. Koruyucu tedbir kararı için şiddetin uygulandığına dair **delil veya belge aranmaz**. Ret kararı \"her iki tarafa\" tebliğ edilmez, **yalnız korunan kişiye** tebliğ edilir. Kolluğun acil kararı şiddet uygulayana **tutanakla derhâl** tebliğ edilir. Bu konuda \"onaydan sonra\" ya da \"ilk işgünü içinde\" diyen şıklar yanlıştır. Kişisel eşya teslimini icra müdürlüğü veya Bakanlık yapmaz, **kolluk** yapar.",
+      "articleRefs": [
+        "8"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "type": "rule",
+      "title": "İtiraz",
+      "body": "- Kararlara karşı ilgililer, tefhim veya tebliğ tarihinden itibaren **iki hafta** içinde **aile mahkemesine** itiraz edebilir.\n- Hâkimin tedbir kararına itiraz edilirse dosya şu yerlere gecikmeksizin gönderilir:\n  - Aile mahkemesinin birden fazla dairesi varsa numara olarak kendisini izleyen daireye, son numaralı daire içinse **birinci daireye**.\n  - Aile mahkemesinin **tek dairesi** varsa o yerdeki **asliye hukuk mahkemesine**.\n  - Aile mahkemesi hâkimi ile asliye hukuk hâkimi **aynı hâkimse** **en yakın asliye hukuk mahkemesine**.\n- İtiraz mercii kararını **bir hafta** içinde verir. İtiraz üzerine verilen kararlar **kesindir**.",
+      "articleRefs": [
+        "9"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "İtirazda süre ve merci karışıklığı",
+      "body": "Bu maddede iki süre var ve şıklar onları yer değiştirir. İtiraz etme süresi **iki hafta**, merciin karar verme süresi **bir hafta**dır. Tek daireli bir yerde hâkimler farklı kişilerse dosya **aynı yerdeki asliye hukuka** gider. \"En yakın asliye hukuk\" yalnızca aile hâkimi ile asliye hukuk hâkimi aynı kişiyse doğrudur. Asliye ceza, sulh hukuk veya bölge adliye mahkemesi bu zincirde yer almaz.",
+      "articleRefs": [
+        "9"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "type": "rule",
+      "title": "Bildirim ve uygulama",
+      "body": "- Tedbir kararları Bakanlığın il ve ilçe müdürlüklerine bildirilir. Kararın niteliğine göre Cumhuriyet başsavcılığına veya kolluğa da **en seri vasıtalarla** bildirilir.\n- Başvurular ve bunların kabul ya da ret kararları, başvuru yapılan merci tarafından Bakanlığın il ve ilçe müdürlüklerine **derhâl** bildirilir.\n- Geçici koruma ve önleyici tedbirleri şu yerlerin kolluk birimi yerine getirir: kişinin yerleşim yeri, bulunduğu yer ya da **tedbirin uygulanacağı yer**.\n- Kararı kolluk amiri verip uyguladıysa ya da korunan kişi kolluktaysa, kişi Bakanlığın il veya ilçe müdürlüğüne **ivedilikle ulaştırılır**. Bu mümkün değilse Bakanlık bütçesinden geçici barınma sağlanır.\n- Kararın tefhim veya tebliğ edilmemesi **uygulanmasına engel değildir**.\n- Barınma yeri kararı verilenler, Bakanlığa ait veya Bakanlığın denetimindeki yerlere yerleştirilir. Bu yerler yetersizse kamu kurumlarının sosyal tesis, yurt veya benzeri yerlerinde geçici olarak barındırılabilirler.\n- İşyeri değişikliği kararını, kişinin tabi olduğu mevzuata göre yetkili merci veya kişi yerine getirir.",
+      "articleRefs": [
+        "10"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Kolluk personeli, teknik takip ve yönetmelik",
+      "body": "- Kolluk görevlerini, çocuk ve kadının insan hakları ile kadın erkek eşitliği konusunda **eğitim almış** ve belirlenmiş yeteri kadar personel yürütür.\n- Tedbir kararlarının uygulanmasında teknik araç ve yöntemler yalnızca **hâkim kararı** ile kullanılabilir. Bu yolla kişilerin ses ve görüntüleri **dinlenemez, izlenemez, kayda alınamaz**.\n- Teknik takibin usul ve esasları **yönetmelikle** düzenlenir.\n- Kanun, uygulama yönetmeliklerinin **altı ay** içinde Bakanlıkça hazırlanmasını öngörmüştür. Görüşü alınacak bakanlıklar **Adalet, İçişleri, Maliye, Milli Eğitim ve Sağlık** Bakanlıklarıdır. Millî Savunma Bakanlığı bu listede yoktur.\n\n**Not:** Bakanlık adları Kanun metnindeki hâliyle verilmiştir; Maliye Bakanlığı bugün Hazine ve Maliye Bakanlığı adını taşır.",
+      "articleRefs": [
+        "11",
+        "12",
+        "22"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Tedbir kararına aykırılık: zorlama hapsi",
+      "body": "- Tedbir kararına aykırı davranan şiddet uygulayan, **fiili bir suç oluştursa bile**, hâkim kararıyla **üç günden on güne kadar** zorlama hapsine tabi tutulur. Süre, ihlal edilen tedbirin niteliğine ve aykırılığın ağırlığına göre belirlenir.\n- Aykırılığın **her tekrarında** süre **onbeş günden otuz güne kadar**dır.\n- Zorlama hapsinin **toplam süresi altı ayı geçemez**.\n- Zorlama hapsi kararlarını **Cumhuriyet başsavcılığı** yerine getirir. Kararlar Bakanlığın il ve ilçe müdürlüklerine bildirilir.\n- Bu sonuç, tebliğ sırasında yapılan ihtarla şiddet uygulayana önceden bildirilir.",
+      "articleRefs": [
+        "8",
+        "13"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Şiddet önleme ve izleme merkezleri, koordinasyon",
+      "body": "- Merkezleri Bakanlık kurar. Merkezler **yedi gün yirmidört saat** esasıyla çalışır, uzman personel görev yapar ve tercihen kadın personel istihdam edilir.\n- Merkezler genel olarak şu hizmetleri verir: tedbir ve zorlama hapsi verileriyle bilgi bankası oluşturur, **tedbir kararlarının sicilini** tutar, barınma, sağlık ve adlî yardım hizmetlerini koordine eder, sivil toplum kuruluşlarıyla işbirliği yapar.\n- Korunan kişiye rehberlik, danışmanlık ve izleme hizmeti verir.\n- Hâkimin isteği üzerine hem korunan kişi hem şiddet uygulayan için **sosyal araştırma raporu** hazırlar.\n- Şiddet uygulayanın öfke kontrolü, bağımlılık tedavisi ve meslek edindirme programlarına katılımını teşvik eder.\n- Mağdura ve şiddet uygulayana hizmetler, zorunlu hâller dışında **farklı birimlerde** sunulur.\n- Kurumlararası koordinasyonu **Bakanlık** yapar.\n- Radyo ve televizyon kuruluşları ayda **en az doksan dakika** bilgilendirme yayını yapar. Yayınlar 08.00–22.00 arasında olmalı, **asgari otuz dakikası 17.00–22.00** arasına denk gelmelidir. Bu saatler dışındaki yayınlar süreye sayılmaz. Denetimi Radyo ve Televizyon Üst Kurulu yapar.\n- İlköğretim ve ortaöğretim müfredatına kadının insan hakları ve kadın erkek eşitliği dersleri konulur.",
+      "articleRefs": [
+        "14",
+        "15",
+        "16"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Geçici maddi yardım, nafaka, sağlık ve masraf",
+      "body": "- **Geçici maddi yardım:** Günlük ödeme yapılır. Tutar, on altı yaşından büyükler için belirlenen aylık net asgari ücretin **otuzda birine kadar**dır.\n  - Birden fazla korunan kişi varsa ilave her kişi için bu tutarın **yüzde yirmisi** ayrıca ödenir.\n  - Toplam tutar günlük ödemenin **bir buçuk katını** geçemez.\n  - Barınma yeri sağlanırsa tutarlar **yüzde elli** azaltılır.\n- **Geri tahsil:** Ödemeler Bakanlık bütçesinden yapılır ve şiddet uygulayandan tebliğden itibaren **bir ay** içinde tahsil edilir. Tahsil edilemeyen kısım 6183 sayılı Kanuna göre vergi dairesince takip edilir. Korunan kişi gerçeğe aykırı beyanda bulunmuşsa yardım bu kişiden tahsil edilir.\n- **Nafaka:** Karar örneği resen icra müdürlüğüne gönderilir. Borçlunun Sosyal Güvenlik Kurumu ile bağlantısı varsa nafaka, korunan kişinin başvurusu aranmadan aylık, maaş veya ücretinden tahsil edilir.\n- **Sağlık:** Koruyucu tedbir verilen kişi genel sağlık sigortasından yararlanamıyorsa (sigortalı ya da bakmakla yükümlü olunan kişi değilse, prim borcu yüzünden fiilen yararlanamıyorsa veya başka mevzuata göre tedavi yardımı hakkı yoksa) bu hâl sürdükçe gelir testi yapılmadan genel sağlık sigortalısı sayılır.\n- **Masraf:** Başvuru ve icra işlemlerinden harç veya masraf alınmaz. md 17 ödemeleri gelir vergisi ile veraset ve intikal vergisinden, bu ödemelere ait kâğıtlar damga vergisinden müstesnadır. Bakanlık, gerekli görürse davalara katılabilir.",
+      "articleRefs": [
+        "17",
+        "18",
+        "19",
+        "20"
+      ]
+    },
+    {
+      "type": "numbers",
+      "title": "Son tablo: süreler ve oranlar",
+      "rows": [
+        {
+          "label": "Tedbir kararı – ilk defasında en çok",
+          "value": "altı ay",
+          "refs": [
+            "8"
+          ]
+        },
+        {
+          "label": "İtiraz süresi (tefhim/tebliğden)",
+          "value": "iki hafta",
+          "refs": [
+            "9"
+          ]
+        },
+        {
+          "label": "İtiraz merciinin karar süresi",
+          "value": "bir hafta",
+          "refs": [
+            "9"
+          ]
+        },
+        {
+          "label": "Zorlama hapsi – ilk aykırılık",
+          "value": "üç günden on güne kadar",
+          "refs": [
+            "13"
+          ]
+        },
+        {
+          "label": "Zorlama hapsi – her tekrarda",
+          "value": "onbeş günden otuz güne kadar",
+          "refs": [
+            "13"
+          ]
+        },
+        {
+          "label": "Zorlama hapsi – toplam üst sınır",
+          "value": "altı ay",
+          "refs": [
+            "13"
+          ]
+        },
+        {
+          "label": "Geçici maddi yardım – günlük",
+          "value": "on altı yaşından büyükler için net asgari ücretin otuzda birine kadar",
+          "refs": [
+            "17"
+          ]
+        },
+        {
+          "label": "İlave her korunan kişi",
+          "value": "günlük tutarın yüzde yirmisi",
+          "refs": [
+            "17"
+          ]
+        },
+        {
+          "label": "Geçici maddi yardım tavanı",
+          "value": "günlük tutarın bir buçuk katı",
+          "refs": [
+            "17"
+          ]
+        },
+        {
+          "label": "Barınma sağlanırsa",
+          "value": "yüzde elli azaltılır",
+          "refs": [
+            "17"
+          ]
+        },
+        {
+          "label": "Şiddet uygulayandan tahsil",
+          "value": "tebliğden itibaren bir ay",
+          "refs": [
+            "17"
+          ]
+        },
+        {
+          "label": "Bilgilendirme yayını",
+          "value": "ayda en az doksan dakika",
+          "refs": [
+            "16"
+          ]
+        },
+        {
+          "label": "Yayın saatleri",
+          "value": "08.00–22.00; asgari otuz dakikası 17.00–22.00",
+          "refs": [
+            "16"
+          ]
+        },
+        {
+          "label": "Uygulama yönetmelikleri",
+          "value": "altı ay içinde",
+          "refs": [
+            "22"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "8",
+        "9",
+        "13",
+        "16",
+        "17",
+        "22"
+      ]
+    },
+    {
+      "type": "compare",
+      "title": "Kolluk amiri tedbiri: md 3 mü, md 5 mi?",
+      "rows": [
+        {
+          "aspect": "Tedbirin türü",
+          "left": "Koruyucu (korunan kişi için)",
+          "right": "Önleyici (şiddet uygulayan için)",
+          "refs": [
+            "3",
+            "5"
+          ]
+        },
+        {
+          "aspect": "Alabileceği tedbirler",
+          "left": "(a) barınma yeri, (ç) geçici koruma",
+          "right": "(a) söz ve davranış yasağı, (b) uzaklaştırma, (c) yaklaşmama, (d) yakınlara ve tanıklara yaklaşmama",
+          "refs": [
+            "3",
+            "5"
+          ]
+        },
+        {
+          "aspect": "Evrakı sunma",
+          "left": "Kararı takip eden ilk işgünü içinde",
+          "right": "Kararı takip eden ilk işgünü içinde",
+          "refs": [
+            "3",
+            "5"
+          ]
+        },
+        {
+          "aspect": "Onay mercii",
+          "left": "Mülkî amir",
+          "right": "Hâkim",
+          "refs": [
+            "3",
+            "5"
+          ]
+        },
+        {
+          "aspect": "Onay süresi",
+          "left": "kırksekiz saat",
+          "right": "yirmidört saat",
+          "refs": [
+            "3",
+            "5"
+          ]
+        },
+        {
+          "aspect": "Onaylanmazsa",
+          "left": "Kendiliğinden kalkar",
+          "right": "Kendiliğinden kalkar",
+          "refs": [
+            "3",
+            "5"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "3",
+        "5"
+      ]
+    },
+    {
+      "type": "exam_stats",
+      "title": "Sınav der ki",
+      "rows": [
+        {
+          "label": "Bu ünitenin maddelerinden yayındaki soru",
+          "value": "28",
+          "refs": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "22"
+          ]
+        },
+        {
+          "label": "md 8 — Tedbir kararının verilmesi, tebliği ve gizlilik",
+          "value": "6 soru",
+          "refs": [
+            "8"
+          ]
+        },
+        {
+          "label": "md 3 — Mülkî amir tarafından verilecek koruyucu tedbir kararları",
+          "value": "4 soru",
+          "refs": [
+            "3"
+          ]
+        },
+        {
+          "label": "md 5 — Hâkim tarafından verilecek önleyici tedbir kararları",
+          "value": "3 soru",
+          "refs": [
+            "5"
+          ]
+        },
+        {
+          "label": "md 9 — İtiraz",
+          "value": "3 soru",
+          "refs": [
+            "9"
+          ]
+        },
+        {
+          "label": "md 17 — Geçici maddi yardım yapılması",
+          "value": "3 soru",
+          "refs": [
+            "17"
+          ]
+        },
+        {
+          "label": "Hiç soru çıkmamış",
+          "value": "md 1, md 2, md 7, md 11, md 14, md 15, md 18, md 19, md 20",
+          "refs": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "22"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17",
+        "18",
+        "19",
+        "20",
+        "22"
+      ],
+      "generated": true
+    },
+    {
+      "type": "bridge",
+      "title": "Bu üniteden soru çöz",
+      "articleRefs": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17",
+        "18",
+        "19",
+        "20",
+        "22"
+      ],
+      "generated": true,
+      "rows": [
+        {
+          "label": "Madde kapsamlı seans",
+          "value": "md 1–25, 10 soru",
+          "refs": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "22"
+          ]
+        }
+      ]
+    }
+  ]
+}

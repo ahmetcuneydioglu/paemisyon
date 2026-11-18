@@ -1,0 +1,549 @@
+{
+  "unit": {
+    "slug": "akoy-adli-kolluk-gorev-ve-iliskiler",
+    "legislationSlug": "adli-kolluk-yonetmeligi",
+    "topicId": "55edda12-a684-4664-9564-a9844de0b7f3",
+    "title": "Adli kolluk: görev ve ilişkiler",
+    "subtitle": "Kim emir verir, kime bildirilir, kim denetler: savcı, kolluk amiri ve mülki idare amiri",
+    "articleFrom": "1",
+    "articleTo": "15",
+    "readingMinutes": 11,
+    "sourceLabel": "AI özeti — Adli Kolluk Yönetmeliği, md 1–15",
+    "articleNos": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+      "15"
+    ],
+    "generatedBy": "claude-opus-5-5 (ozet-uret.ts)",
+    "sortOrder": 1
+  },
+  "blocks": [
+    {
+      "type": "concept",
+      "title": "Bu yönetmelik neyi düzenler?",
+      "body": "Bu ünitede adlî kolluğun çalışma kurallarını göreceksin. Yönetmelik şunları düzenler: çalışma esasları, görevlilerin nitelikleri, adlî işlemlerin denetimi, hizmet öncesi ve hizmet içi eğitim, diğer hizmet birimleriyle ilişkiler, değerlendirme raporları ve uzmanlık dallarına göre çalışılacak bölümler. Dayanağı, 5271 sayılı Ceza Muhakemesi Kanununun 167 nci maddesidir. Bunu aklında tut, çünkü dayanak sorusu kolay puandır.",
+      "articleRefs": [
+        "1",
+        "2"
+      ]
+    },
+    {
+      "type": "concept",
+      "title": "Adlî kolluk kimdir?",
+      "body": "Adlî kolluk ayrı bir teşkilat değildir. Bağlı bulunduğu kolluk teşkilâtının bir parçasıdır. CMK ile kolluk teşkilâtlarının kendi mevzuatında belirtilen soruşturma işlemlerini yapmak üzere, tâbi oldukları atama usulüne göre görevlendirilen komutan, âmir, memur ve diğer görevlilerden oluşur. Şunu unutma: Adlî kolluğun **öncelikli görevi**, karşılaştığı suçun işlenmesini **önlemektir**.",
+      "articleRefs": [
+        "3",
+        "5"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Tanımlar: sorumlu, en üst amir, evreler",
+      "body": "**Adlî kolluk sorumlusu:** Mahallin en büyük **mülki idare amiri** tarafından görevlendirilen adlî kolluk komutanı, amiri veya sorumlusudur.\n\n**En üst dereceli kolluk amiri:**\n- Emniyet Genel Müdürlüğünde il emniyet müdürü, ilçe emniyet müdürü veya amiri\n- Jandarma Genel Komutanlığında il jandarma komutanı, ilçe ve merkez ilçe jandarma komutanı\n- Sahil Güvenlik Komutanlığında birlik komutanı\n- Gümrük ve Ticaret Bakanlığında gümrük muhafaza kaçakçılık ve istihbarat müdürü\n\n**Not:** Bakanlık adı Yönetmelik metnindeki hâliyle verilmiştir; bu bakanlık bugün yoktur, gümrük teşkilâtı Ticaret Bakanlığı bünyesindedir.\n\n**Cumhuriyet savcısı:** Yetkili Cumhuriyet başsavcıları ile Cumhuriyet savcılarıdır.\n\n**Soruşturma:** Yetkili mercilerce suç şüphesinin öğrenilmesinden **iddianamenin kabulüne** kadar geçen evredir.\n\n**Kovuşturma:** İddianamenin kabulü ile başlar, **hükmün kesinleşmesine** kadar sürer.\n\n**Gecikmesinde sakınca bulunan hâl:** Derhâl işlem yapılmazsa delillerin kaybolması, şüphelinin kaçması veya kimliğinin saptanamaması ihtimalidir.",
+      "articleRefs": [
+        "3"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Adlî kolluk personeli nerede görevlendirilir?",
+      "body": "Soruşturma yapmak üzere, mevcut imkânlar ölçüsünde yeterince adlî kolluk personeli görevlendirilir. Görevlendirilecek yerler şunlardır:\n- **Emniyet Genel Müdürlüğü:** asgarî tam teşekküllü bir polis karakolu bulunan yerler\n- **Jandarma Genel Komutanlığı:** asgarî tam teşekküllü bir jandarma karakolu bulunan yerler\n- **Sahil Güvenlik Komutanlığı:** asgarî sahil güvenlik bot komutanlıklarının bulunduğu yerler\n- **Gümrük Muhafaza Genel Müdürlüğü:** gümrük muhafaza kaçakçılık ve istihbarat müdürlüğü, gümrük müdürlüğü ile müstakil bölge ve kısım âmirlikleri bulunan yerler",
+      "articleRefs": [
+        "4"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Emir zinciri: adlî iş ve idarî iş ayrımı",
+      "body": "- Cumhuriyet başsavcılığı, adlî görevlere ilişkin emir ve talimatlarını **öncelikle adlî kolluk sorumlularına** veya adlî kolluk görevi yapan diğer birim âmirlerine verir.\n- **Cumhuriyet savcıları**, emir ve talimatlarını kolluk birimleri arasındaki işbölümüne ve teşkilâtların görev ve yetki alanlarına göre verir.\n- Adlî kolluk, adlî görevler **dışındaki** hizmetlerde üstlerinin emrindedir.\n- Adlî görevi bulunmayan üstler, yürütülen soruşturmayla ilgili **emir ve talimat veremez**. md 7 hükümleri saklıdır.\n- Adlî kolluk görevlileri, kadrolarındaki birime mevzuatla verilmiş adlî dışı görevleri de yerine getirir.\n- Özlük hakları, bağlı oldukları teşkilât tarafından yürütülür.\n- En üst dereceli kolluk amiri, adlî olayları görevli ve yetkili **mülki idare amirine derhâl** bildirir.",
+      "articleRefs": [
+        "5"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Emri mülki amir vermez",
+      "body": "Sınavda doğru esaslar arasına şu cümle gizlenir: \"Mülki amirlerce adlî görevlerle ilgili emir ve talimatlar işbölümüne göre verilir.\" Bu ifade yanlış. Adlî görevlerle ilgili emri **Cumhuriyet savcıları** verir. Mülki idare amirinin bu yönetmelikteki rolleri şunlardır: adlî kolluk sorumlusunu görevlendirmek, en üst dereceli kolluk amirinden adlî olayların bildirimini almak ve başsavcının değerlendirme raporunu almak. Soruşturmaya emir vermek bu roller arasında yok. Şu üç cümle ise doğrudur, onlara takılma: adlî görevler dışında üstlerin emrindedir, öncelikli görev suçu önlemektir, adlî dışı görevler de yapılır.",
+      "articleRefs": [
+        "3",
+        "5",
+        "11"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Soruşturma nasıl başlar, kime bildirilir?",
+      "body": "- Soruşturma işlemleri, Cumhuriyet savcısının emir ve talimatları doğrultusunda **öncelikle adlî kolluğa** yaptırılır. Savcının adlî emirleri **gecikmeksizin** yerine getirilir.\n- Yönetmeliğe göre ihbar ve şikâyetler, el konulan olaylar, yakalanan kişiler ve uygulanan tedbirler **derhâl** hem **Cumhuriyet başsavcılığına** hem **en üst dereceli kolluk amirine** bildirilir. Ardından ilgili savcının emriyle soruşturma işlemlerine başlanır. **Not:** Bildirim Yönetmelik metnindeki hâliyle verilmiştir; CMK md 161 ise el konulan olayların, yakalananların ve tedbirlerin emrinde çalışılan Cumhuriyet savcısına bildirilmesini öngörür.\n- Yönetmeliğin andığı CMK md 135'in altıncı fıkrasında sayılan suçlarda, Cumhuriyet savcısı soruşturmanın aşamaları hakkında başsavcıya **yazılı** bilgi vermek zorundadır. Bunu doğrudan ya da varsa başsavcı vekili aracılığıyla yapar. Bu yazılar görüldü şerhinden sonra soruşturma dosyasında saklanır. **Not:** Atıf Yönetmelik metnindeki hâliyle verilmiştir; bu suçlar CMK md 135'in bugünkü metninde başka bir fıkrada sayılır.\n- En üst dereceli kolluk amiri, adlî kolluk görevlileri üzerinde **gözetim, denetim, planlama**, gerektiğinde diğer idarî tedbirleri almaya ve **iş bölümü** yapmaya yetkilidir.",
+      "articleRefs": [
+        "6"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Savcının emri: yazılı mı, sözlü mü?",
+      "body": "**Kural:** Cumhuriyet savcısı emirlerini **yazılı** verir.\n\n**İstisna:** Acele hâllerde emir **sözlü** verilebilir.\n- Sözlü emir en kısa sürede yazılı hâle getirilir. Mümkünse en seri iletişim aracıyla kolluğa bildirilir. Mümkün değilse kolluk görevlilerinin alması için hazır edilir.\n- **Dikkat:** Kolluk görevlisi, emrin yazılı hâle gelmesini **beklemeden** sözlü emrin gereğini yerine getirir.",
+      "articleRefs": [
+        "6"
+      ]
+    },
+    {
+      "type": "numbers",
+      "title": "Zaman ifadeleri: ne zaman, kime?",
+      "rows": [
+        {
+          "label": "Savcının adlî emirlerinin yerine getirilmesi",
+          "value": "Gecikmeksizin",
+          "refs": [
+            "6"
+          ]
+        },
+        {
+          "label": "İhbar, şikâyet, el konulan olay, yakalama ve tedbirlerin bildirimi",
+          "value": "Derhâl; Cumhuriyet başsavcılığına ve en üst dereceli kolluk amirine",
+          "refs": [
+            "6"
+          ]
+        },
+        {
+          "label": "Adlî olayların mülki idare amirine bildirimi",
+          "value": "Derhâl; en üst dereceli kolluk amiri tarafından",
+          "refs": [
+            "5"
+          ]
+        },
+        {
+          "label": "Doğal olmayan ölüm şüphesi veya kimliği belirlenemeyen ölü",
+          "value": "Derhâl; Cumhuriyet başsavcılığına",
+          "refs": [
+            "6"
+          ]
+        },
+        {
+          "label": "Sözlü emrin yazılı hâle getirilmesi",
+          "value": "En kısa sürede",
+          "refs": [
+            "6"
+          ]
+        },
+        {
+          "label": "Sözlü emrin uygulanması",
+          "value": "Yazılı hâli beklenmeden",
+          "refs": [
+            "6"
+          ]
+        },
+        {
+          "label": "Yönetmeliğin andığı CMK md 135 altıncı fıkra suçlarında başsavcıya bilgi",
+          "value": "Yazılı; zorunlu (bu suçlar CMK md 135'in bugünkü metninde başka bir fıkrada sayılır)",
+          "refs": [
+            "6"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "5",
+        "6"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Şüpheli ölüm ve sulh ceza hâkimi",
+      "body": "**Şüpheli ölüm:** Ölümün doğal nedenlerden olmadığı kuşkusu varsa ya da ölünün kimliği belirlenemiyorsa kolluk görevlisi:\n- durumu **derhâl** Cumhuriyet başsavcılığına bildirir,\n- savcının emri doğrultusunda soruşturma işlemlerine başlar.\n\n**Sulh ceza hâkimi:** Şu hâllerde sulh ceza hâkimi de bütün soruşturma işlemlerini yapabilir:\n- **Suçüstü** veya **gecikmesinde sakınca bulunan** hâl varsa, **ve**\n- Cumhuriyet savcısına **erişilemiyorsa** ya da olayın genişliği savcının iş gücünü **aşıyorsa**.\n\nBu durumda adlî kolluk, hâkimin emrettiği tedbirleri alır ve araştırmaları yürütür.",
+      "articleRefs": [
+        "6"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Hukuka aykırı delil nereye yazılır?",
+      "body": "Bu sorunun cevabı tek kelime: **fezleke**. Adlî kolluk, savcının emirleri doğrultusunda şüphelinin **lehine veya aleyhine** olan tüm delilleri kanuni koşullara uyarak toplar ve muhafaza altına alır. Sonra bunları bir **fezleke** ile Cumhuriyet savcısına sunar. Hukuka aykırı delil elde edildiği tespit edilirse bu da **fezlekede** belirtilir. Sınavda karşına arama tutanağı, dizi pusulası, üst yazı ya da \"ayrı bir tespit tutanağı\" çıkabilir. Bunların hiçbiri doğru değil. Bir de \"sadece aleyhe deliller\" ifadesine dikkat et: kolluk lehe delilleri de toplar.",
+      "articleRefs": [
+        "6"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Olay yerinde işlemi engelleyen kişi",
+      "body": "Olay yerinde işlemlere başlayan adlî kolluk görevlisi, işlemlere engel olan ya da **yetkisi içinde** aldığı tedbirlere aykırı davranan kişiye karşı, işlemler sonuçlanıncaya kadar şu sırayı izler:\n- **Önce:** sözlü ikaz\n- **Uyulmazsa:** zor kullanarak olay yerinden uzaklaştırma\n- **Israr edilirse:** yakalama işlemi\n\nSıra önemli. Doğrudan yakalama ile başlanmaz.",
+      "articleRefs": [
+        "6"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Diğer kolluk birimleri de adlî kolluk olabilir",
+      "body": "Gerektiğinde ya da **Cumhuriyet savcısının talebi** hâlinde, diğer kolluk birimleri de adlî kolluk görevini yerine getirmekle **yükümlüdür**. Bu durumda bu görevliler hakkında, adlî görevleri nedeniyle **Ceza Muhakemesi Kanunu** hükümleri uygulanır. Hatırla: md 5'teki \"adlî görevi olmayan üst soruşturmaya emir veremez\" kuralı, bu maddenin hükümleri saklı tutularak uygulanır.",
+      "articleRefs": [
+        "7",
+        "5"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Nitelikler ve eğitim",
+      "body": "**Nitelikler:**\n- Adlî kolluk görevlisi, kendi mevzuatına göre kolluk görevlisinde aranan niteliklere sahip olmalıdır.\n- Üstlendiği görevin gerektirdiği bilgi ve vasıfları taşıması sağlanır.\n- Her hizmet bölümünün koşulları, kanunda veya kolluğun bağlı olduğu bakanlığın mevzuatında belirtilir.\n\n**Eğitim:** Personel hizmet öncesi ve hizmet içi eğitime tâbi tutulur.\n- **Hizmet öncesi eğitim:** Amaç, personeli adlî kolluk görevini yapabilecek biçimde yetiştirmektir. Müfredatta TCK'nın temel ilkeleri, ceza sorumluluğunun esasları, özel hükümler ve CMK ile diğer kanunlardaki kolluk soruşturma işlemlerinin hukukî çerçevesi yer alır.\n- **Hizmet içi eğitim:** Temel konulara ek olarak görevin içeriğine uygun alanlarda verilir. Hizmet öncesi eğitimin eksiklerini tamamlamayı, değişiklik ve gelişmelere uyumu sağlamayı ve hizmet dallarının personel ihtiyacını karşılamayı hedefler.\n- Eğitim, her teşkilâtın kendi mevzuatı çerçevesinde yapılır.",
+      "articleRefs": [
+        "8",
+        "9"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Eğitici personeli hangi bakanlık verir?",
+      "body": "Akla ilk İçişleri Bakanlığı geliyor, değil mi? Ama doğru cevap **Adalet Bakanlığı**. İşleyiş şöyle: Kolluğun bağlı olduğu bakanlık **talep ederse**, Adalet Bakanlığı eğitici personel görevlendirir. Bir ayrıntı daha: **Hizmet içi** eğitimler planlanırken Adalet Bakanlığının **veya** yetkili Cumhuriyet başsavcısının görüşü de alınır. Millî Savunma ya da Gençlik ve Spor gibi şıklar yalnızca dikkat dağıtmak için orada.",
+      "articleRefs": [
+        "9"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Sertifika ve değerlendirme raporu",
+      "body": "**Sertifika:**\n- Adlî kolluk eğitimini başarıyla bitiren personele **ilgili eğitim birimlerince** sertifika verilir.\n- Adlî görevlerde **öncelikle sertifikası olan** kolluk personeli görevlendirilir.\n\n**Değerlendirme raporu:**\n- **Cumhuriyet başsavcıları**, her yılın sonunda adlî kolluk sorumluları hakkında değerlendirme raporu düzenler ve **mülki idare amirlerine** gönderir.\n- Raporda soruşturma ve kovuşturma işlemlerindeki ehliyet, çalışkanlık, iş disiplini ve başarı durumu yer alır.\n- Rapor, ilgilinin sicili düzenlenirken dikkate alınır.",
+      "articleRefs": [
+        "10",
+        "11",
+        "3"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Birden fazla başsavcılık varsa raporu kim yazar?",
+      "body": "Senaryo şu olabilir: Birimin merkezi X ilçesinde, ama işlerin çoğu Y ilçesinde yapılıyor. Raporu kim yazar? İş yoğunluğuna değil, **merkeze** bakacaksın. Birden fazla başsavcılığın yetki çevresinde çalışan adlî kolluk sorumlusunun raporunu, **adlî kolluk biriminin merkezinin bulunduğu yer Cumhuriyet başsavcısı** düzenler. Diğer yer başsavcılıklarının **görüşü** alınır, ama rapor ortak yazılmaz ve her biri ayrı rapor da yazmaz. Kaymakam ise raporu yazan değil, raporun gönderildiği taraftır.",
+      "articleRefs": [
+        "11"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Uzmanlaşma ve ihtisas",
+      "body": "- Personelin uzmanlaşması için, mümkün olduğunca **aynı veya benzer görevlerde** çalışması amacıyla **kendi teşkilâtlarınca** gerekli tedbirler alınır.\n- Adlî kolluk görevlileri, katıldıkları **meslek içi kurslar** sonunda belirli branşlarda ihtisaslaşır.\n- Olayın özelliğine göre **kolluk âmiri**, soruşturmada ihtiyaç duyduğu konularda ihtisaslaşmış personeli görevlendirir. Böylece soruşturmanın daha kapsamlı yapılmasını sağlar.",
+      "articleRefs": [
+        "12"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Öncelik sertifikada, uzman görevlendirmesi kolluk amirinde",
+      "body": "Bu konuda sınavda sorulan iki ayrı soru birbirine karıştırılıyor.\n\n**Soru: Adlî görevde öncelikle kim görevlendirilir?** Cevap: **sertifikası olan** personel. Şu şıklar çeldiricidir: aynı veya benzer görevlerde çalışmış olmak (uzmanlaşma tedbiri), meslek içi kursla ihtisaslaşmış olmak, başsavcının önerdiği personel, olumlu değerlendirme raporu olan personel.\n\n**Soru: Bilişim dolandırıcılığı gibi özel bir olayda uzman personeli kim görevlendirir?** Cevap: **kolluk âmiri**. Cumhuriyet savcısı, sulh ceza hâkimi, eğitim birimi ya da Adalet Bakanlığı değil.",
+      "articleRefs": [
+        "10",
+        "12"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Adlî kolluk hizmetinin denetimi",
+      "body": "Cumhuriyet başsavcıları ve Cumhuriyet savcıları:\n- Adlî kolluk görevlilerinin yaptığı adlî işlemleri **her zaman** denetler.\n- Gerektiğinde soruşturma evrakını ilgili adlî kolluk biriminde inceler. Eksik gördüğü hususların tamamlanmasını emredebilir. Ayrıca evrakın ve tarafların **bulunduğu hâl üzere** başsavcılığa getirilmesi talimatını da verebilir.\n- Nezarethaneleri, varsa ifade alma odalarını, gözaltındaki kişilerin durumunu, gözaltı sürelerini ve gözaltıya ilişkin tüm kayıt ve işlemleri denetler.\n- Denetimin sonucunu **nezarethaneye alınanların kaydına ait deftere** yazar.",
+      "articleRefs": [
+        "13"
+      ]
+    },
+    {
+      "type": "numbers",
+      "title": "Kim, ne zaman, nereye?",
+      "rows": [
+        {
+          "label": "Yönetmeliğin dayanağı",
+          "value": "CMK md 167",
+          "refs": [
+            "2"
+          ]
+        },
+        {
+          "label": "Adlî kolluk sorumlusunu görevlendiren",
+          "value": "Mahallin en büyük mülki idare amiri",
+          "refs": [
+            "3"
+          ]
+        },
+        {
+          "label": "Eğitici personeli görevlendiren",
+          "value": "Adalet Bakanlığı (kolluğun bağlı olduğu bakanlık talep ederse)",
+          "refs": [
+            "9"
+          ]
+        },
+        {
+          "label": "Sertifikayı veren",
+          "value": "İlgili eğitim birimleri",
+          "refs": [
+            "10"
+          ]
+        },
+        {
+          "label": "Değerlendirme raporunun zamanı",
+          "value": "Her yılın sonunda",
+          "refs": [
+            "11"
+          ]
+        },
+        {
+          "label": "Değerlendirme raporunu düzenleyen / gönderilen",
+          "value": "Cumhuriyet başsavcısı / mülki idare amiri",
+          "refs": [
+            "11"
+          ]
+        },
+        {
+          "label": "İhtisaslaşmış personeli görevlendiren",
+          "value": "Kolluk âmiri",
+          "refs": [
+            "12"
+          ]
+        },
+        {
+          "label": "Adlî işlemlerin denetimi",
+          "value": "Her zaman; başsavcılar ve savcılar",
+          "refs": [
+            "13"
+          ]
+        },
+        {
+          "label": "Nezarethane denetiminin kaydı",
+          "value": "Nezarethaneye alınanların kaydına ait defter",
+          "refs": [
+            "13"
+          ]
+        },
+        {
+          "label": "Yürürlük",
+          "value": "Yayımı tarihinde",
+          "refs": [
+            "14"
+          ]
+        },
+        {
+          "label": "Yürütme",
+          "value": "Adalet ve İçişleri Bakanları birlikte",
+          "refs": [
+            "15"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "2",
+        "3",
+        "9",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15"
+      ]
+    },
+    {
+      "type": "compare",
+      "title": "Cumhuriyet savcısı mı, en üst dereceli kolluk amiri mi?",
+      "rows": [
+        {
+          "aspect": "Soruşturmaya ilişkin emir ve talimat",
+          "left": "Verir; yazılı, acele hâlde sözlü",
+          "right": "Adlî görevi yoksa veremez",
+          "refs": [
+            "5",
+            "6"
+          ]
+        },
+        {
+          "aspect": "Bildirim alma",
+          "left": "İhbar, olay, yakalama ve tedbirler derhâl başsavcılığa bildirilir",
+          "right": "Yönetmeliğe göre aynı bildirimler derhâl ona da yapılır",
+          "refs": [
+            "6"
+          ]
+        },
+        {
+          "aspect": "Gözetim, planlama, iş bölümü",
+          "left": "Adlî işlemleri her zaman denetler",
+          "right": "Gözetim, denetim, planlama, idarî tedbir ve iş bölümü yetkisi vardır",
+          "refs": [
+            "6",
+            "13"
+          ]
+        },
+        {
+          "aspect": "Mülki idare amiriyle ilişki",
+          "left": "Başsavcı, değerlendirme raporunu mülki idare amirine gönderir",
+          "right": "Adlî olayları mülki idare amirine derhâl bildirir",
+          "refs": [
+            "5",
+            "11"
+          ]
+        },
+        {
+          "aspect": "Nezarethane ve gözaltı kayıtları",
+          "left": "Denetler, sonucu deftere kaydeder",
+          "right": "Bu yönetmelik ona böyle bir yetki tanımaz; md 13 yalnız başsavcı ve savcıları sayar",
+          "refs": [
+            "13"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "5",
+        "6",
+        "11",
+        "13"
+      ]
+    },
+    {
+      "type": "exam_stats",
+      "title": "Sınav der ki",
+      "rows": [
+        {
+          "label": "Bu ünitenin maddelerinden yayındaki soru",
+          "value": "6",
+          "refs": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15"
+          ]
+        },
+        {
+          "label": "md 5 — Adlî kollukla ilgili esaslar",
+          "value": "1 soru",
+          "refs": [
+            "5"
+          ]
+        },
+        {
+          "label": "md 6 — Görev ve yetkiler",
+          "value": "1 soru",
+          "refs": [
+            "6"
+          ]
+        },
+        {
+          "label": "md 9 — Adlî kolluğun hizmet öncesi ve hizmet içi eğitimi",
+          "value": "1 soru",
+          "refs": [
+            "9"
+          ]
+        },
+        {
+          "label": "md 10 — Sertifika",
+          "value": "1 soru",
+          "refs": [
+            "10"
+          ]
+        },
+        {
+          "label": "md 11 — Değerlendirme raporları",
+          "value": "1 soru",
+          "refs": [
+            "11"
+          ]
+        },
+        {
+          "label": "Hiç soru çıkmamış",
+          "value": "md 1, md 2, md 3, md 4, md 7, md 8, md 13, md 14, md 15",
+          "refs": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15"
+      ],
+      "generated": true
+    },
+    {
+      "type": "bridge",
+      "title": "Bu üniteden soru çöz",
+      "articleRefs": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15"
+      ],
+      "generated": true,
+      "rows": [
+        {
+          "label": "Madde kapsamlı seans",
+          "value": "md 1–15, 6 soru",
+          "refs": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15"
+          ]
+        }
+      ]
+    }
+  ]
+}

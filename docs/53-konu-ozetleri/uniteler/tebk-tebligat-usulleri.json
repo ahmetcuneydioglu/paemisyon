@@ -1,0 +1,451 @@
+{
+  "unit": {
+    "slug": "tebk-tebligat-usulleri",
+    "legislationSlug": "7201-sayili-tebligat-kanunu",
+    "topicId": "fc664c8f-e47b-4601-a661-9b6c5bd06e97",
+    "title": "Tebligat usulleri",
+    "subtitle": "Elektronik tebligat, vekile tebligat, muhtara teslim, parmak bastırma, yurt dışı, ilanen tebliğ, adres değişikliği, ceza ve yönetmelik",
+    "articleFrom": "7/A",
+    "articleTo": "60",
+    "readingMinutes": 9,
+    "sourceLabel": "AI özeti — 7201 Sayılı Tebligat Kanunu, md 7/A, 11, 21, 24, 27, 31, 35, 56, 60",
+    "articleNos": [
+      "7/A",
+      "11",
+      "21",
+      "24",
+      "27",
+      "31",
+      "35",
+      "56",
+      "60"
+    ],
+    "generatedBy": "claude-opus-5-5 (ozet-uret.ts)",
+    "sortOrder": 1
+  },
+  "blocks": [
+    {
+      "type": "concept",
+      "title": "Tebligat hangi yollarla yapılır?",
+      "body": "Bu ünitede tebligatın hangi yollarla yapıldığını göreceksin. Sayılan kişilere elektronik yolla yapılması zorunludur (md 7/A). Vekille takip edilen işlerde tebligat vekile yapılır (md 11). Adreste muhatap ve onun yerine tebligat yapılabilecek kimselerden hiçbiri bulunmazsa ya da tebellüğden kaçınılırsa evrak muhtara, ihtiyar heyeti azasına ya da zabıtaya teslim edilir (md 21). İmza atamayan kişi parmak basar (md 24). Yurt dışında resmî görevdeki memura tebligat Dışişleri Bakanlığı vasıtasıyla yapılır (md 27). Son olarak ilanen tebliğ vardır (md 31). Çoğu yolun, tebliğin ne zaman yapılmış sayılacağına dair ayrı kuralı var. Bu tarihleri dikkatle izle.",
+      "articleRefs": [
+        "7/A",
+        "11",
+        "21",
+        "24",
+        "27",
+        "31"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Elektronik tebligat kimlere zorunlu?",
+      "body": "**Tebligatın elektronik yolla yapılması zorunlu** olanlar:\n1. 5018 sayılı Kanuna ekli (I), (II), (III) ve (IV) sayılı cetvellerdeki kamu idareleri ile bunlara bağlı döner sermayeli kuruluşlar\n2. 5018 sayılı Kanunda tanımlanan mahallî idareler\n3. Özel kanunla kurulmuş diğer kamu kurum ve kuruluşları, kanunla kurulan fonlar ve kefalet sandıkları\n4. Kamu iktisadi teşebbüsleri ile bağlı ortaklıkları, müessese ve işletmeleri\n5. Sermayesinin **yüzde ellisinden fazlası** kamuya ait diğer ortaklıklar\n6. Kamu kurumu niteliğindeki meslek kuruluşları ve üst kuruluşları\n7. Kanunla kurulanlar dahil **tüm özel hukuk tüzel kişileri**\n8. Noterler\n9. Baro levhasına yazılı avukatlar\n10. Sicile kayıtlı arabulucular ve bilirkişiler\n11. İdareleri, kamu iktisadi teşebbüslerini veya sermayesinin yüzde ellisinden fazlası kamuya ait diğer ortaklıkları adli ve idari yargı mercileri, icra müdürlükleri veya hakemler nezdinde vekil sıfatıyla temsile yetkili kişilerin bağlı bulunduğu birim",
+      "articleRefs": [
+        "7/A"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Elektronik tebligat: talep, istisna, tarih, sistem",
+      "body": "- **Kapsam dışındakiler:** Talep ederlerse kendilerine elektronik tebligat adresi verilir. Adres verildikten sonra bu kişilere de tebligatın elektronik yolla yapılması **zorunludur**.\n- **İstisna:** Elektronik tebligat zorunlu bir sebeple yapılamazsa, Kanunda belirtilen diğer usullerle tebligat yapılır.\n- **Yapılmış sayılma:** Tebligat, muhatabın elektronik adresine ulaştığı tarihi izleyen **beşinci günün sonunda** yapılmış sayılır.\n- **Sistem:** İşlemler Ulusal Elektronik Tebligat Sistemi üzerinden yürütülür. Sistemi Posta ve Telgraf Teşkilatı Anonim Şirketi kurar ve işletir. Aynı şirket, sistemin güvenliği ve verilerin muhafazası için her türlü tedbiri alır.\n- **Usul ve esaslar:** Yönetmelikle belirlenir.",
+      "articleRefs": [
+        "7/A"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Sistemin adı ve düzenleme türü",
+      "body": "Elektronik tebligatın yürütüldüğü sistem **Ulusal Elektronik Tebligat Sistemi (UETS)**'dir. Şıklarda UYAP, MERSİS, DETSİS ya da SEGBİS gibi başka kamu sistemleri görürsen aldanma. Sistemi kuran ve işleten de Posta ve Telgraf Teşkilatı Anonim Şirketidir. Bu maddenin uygulama usul ve esasları **yönetmelikle** belirlenir. Kanun, tüzük, tebliğ ya da genelge şıkları yanlıştır.",
+      "articleRefs": [
+        "7/A"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Vekile ve kanuni mümessile tebligat",
+      "body": "- Vekil vasıtasıyla takip edilen işlerde tebligat **vekile** yapılır.\n- Vekil birden çoksa **birine** tebligat yapılması yeterlidir.\n- Tebligat birden fazla vekile yapılmışsa, **ilkine** yapılan tebliğ tarihi asıl tebliğ tarihi sayılır.\n- **Saklı hüküm:** Ceza Muhakemeleri Usulü Kanununun, kararların sanıklara tebliğine ilişkin hükümleri saklıdır.\n- Avukatın bürosunda yapılacak tebligatlar **resmî çalışma gün ve saatleri** içinde yapılır.\n- Kanuni mümessili bulunanlara veya bulunması gerekenlere tebligat bu **mümessillere** yapılır. Kanunlara göre bizzat kendilerine yapılması gerekiyorsa bu kural uygulanmaz.\n\n**Not:** Ceza Muhakemeleri Usulü Kanunu adı madde metnindeki hâliyle verilmiştir; bu kanunun yerini bugün Ceza Muhakemesi Kanunu almıştır.",
+      "articleRefs": [
+        "11"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Birden çok vekil varsa",
+      "body": "Şıklarda ‘vekillerin hepsine tebligat yapmak şarttır’ fikri yanlış ifade olarak karşına çıkar. Kanun, vekillerden **birine** tebligat yapılmasını yeterli sayar. Birden fazlasına yapılmışsa, sonuncusuna değil **ilkine** yapılan tebliğin tarihi esas alınır.",
+      "articleRefs": [
+        "11"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Adreste kimse yoksa: muhtar veya zabıtaya teslim",
+      "body": "**Şart:** Muhatap ve onun yerine tebligat yapılabilecek kimselerden hiçbiri adreste bulunmaz ya da tebellüğden imtina eder.\n\n**Usul:**\n- Tebliğ memuru evrakı imza karşılığında teslim eder. Teslim edilecek kişi, o yerin muhtarı veya ihtiyar heyeti azasından biri ya da zabıta amir veya memurlarıdır.\n- Teslim alanın adresini içeren ihbarname, adresteki binanın kapısına yapıştırılır.\n- Muhatap adreste bulunmuyorsa, kendisine durumun haber verilmesi mümkün oldukça en yakın komşulardan birine, varsa yönetici veya kapıcıya da bildirilir.\n\n**Tebliğ tarihi:** İhbarnamenin kapıya yapıştırıldığı tarihtir.\n\n**Adres kayıt sistemindeki adres:** Gösterilen adres muhatabın adres kayıt sistemindeki adresiyse, muhatap orada hiç oturmamış ya da oradan sürekli ayrılmış olsa bile evrak muhtar, ihtiyar heyeti azası ya da zabıta amir veya memuruna imza karşılığında teslim edilir ve ihbarname kapıya yapıştırılır. Tebliğ tarihi yine ihbarnamenin kapıya yapıştırıldığı tarihtir.\n\nMuhtar, ihtiyar heyeti azaları, zabıta amir ve memurları evrakı **kabule mecburdur**.",
+      "articleRefs": [
+        "21"
+      ]
+    },
+    {
+      "type": "numbers",
+      "title": "Ara tablo: tarihler ve eşikler",
+      "rows": [
+        {
+          "label": "Elektronik tebligatın yapılmış sayılması",
+          "value": "Elektronik adrese ulaştığı tarihi izleyen 5. günün sonu",
+          "refs": [
+            "7/A"
+          ]
+        },
+        {
+          "label": "Ortaklıklarda zorunlu e-tebligat için kamu payı",
+          "value": "Sermayenin yüzde ellisinden fazlası",
+          "refs": [
+            "7/A"
+          ]
+        },
+        {
+          "label": "Birden fazla vekile tebligatta asıl tebliğ tarihi",
+          "value": "İlkine yapılan tebliğ tarihi",
+          "refs": [
+            "11"
+          ]
+        },
+        {
+          "label": "Avukat bürosunda tebligat zamanı",
+          "value": "Resmî çalışma gün ve saatleri",
+          "refs": [
+            "11"
+          ]
+        },
+        {
+          "label": "Muhtar veya zabıtaya teslimde tebliğ tarihi",
+          "value": "İhbarnamenin kapıya yapıştırıldığı tarih",
+          "refs": [
+            "21"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "7/A",
+        "11",
+        "21"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "İmza atamayana tebligat: parmak sırası",
+      "body": "Muhatap imza edecek kadar yazı bilmiyorsa ya da imza edemeyecek durumdaysa, komşularından bir kişi huzurunda parmak bastırılır. Sıra şöyledir:\n1. **Sol elin başparmağı**\n2. Sol elin başparmağı yoksa: sol elin diğer bir parmağı\n3. Sol el yoksa: sağ elin başparmağı\n4. O da yoksa: sağ elin diğer parmaklarından biri\n5. İki eli de yoksa: tebliğ evrakı kendisine verilir\n\nBu durum tebliğ mazbatasında açıkça yazılır ve hazır bulunan kişiye de imza ettirilir. Okur yazar komşu bulunmazsa ya da komşu imzadan imtina ederse, tebliğ memuru şu kişilerden birini davet eder: mahalle veya köyün muhtarı, ihtiyar heyeti azası ya da bir zabıta memuru. Tebligat bunların huzurunda yapılır.",
+      "articleRefs": [
+        "24"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Hangi parmak önce?",
+      "body": "Sıranın başında **sol elin başparmağı** var. Sağ elin başparmağına ancak sol el hiç yoksa geçilir. Şıklardaki sağ başparmak ve işaret parmağı seçenekleri çeldiricidir. İşaret parmağı maddede adıyla geçmez, ‘diğer parmak’ basamağına girer. Okur yazar bir komşu bulunmazsa ya da bulunan komşu imzadan kaçınırsa, tebliğ sırasında hazır bulunmak üzere muhtar, ihtiyar heyeti azası veya bir zabıta memuru çağrılır.",
+      "articleRefs": [
+        "24"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Yurt dışındaki memur ve askeri şahıslar",
+      "body": "- **Yabancı memlekette resmî vazifeyle bulunan Türk memurları:** Tebligat **Dışişleri Bakanlığı** vasıtasıyla yapılır.\n- **Yabancı memleketlerdeki askeri şahıslar:** Tebligat, bağlı bulundukları **Kara, Deniz, Hava Kuvvetleri Kumandanlıkları** ile **Jandarma Genel Komutanlığı** vasıtasıyla yapılır.",
+      "articleRefs": [
+        "27"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Yurt dışındaki memur: hangi bakanlık?",
+      "body": "Yurt dışında resmî görevle bulunan Türk memurunun tebligatı **Dışişleri Bakanlığı** üzerinden gider. İçişleri, Adalet, Millî Savunma ya da Cumhurbaşkanlığı şıkları çeldiricidir. Yabancı memleketlerdeki askeri şahıslara ise tebligat, bağlı oldukları Kara, Deniz, Hava Kuvvetleri Kumandanlıkları ile Jandarma Genel Komutanlığı vasıtasıyla yapılır.",
+      "articleRefs": [
+        "27"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "İlanen tebliğ ne zaman yapılmış sayılır?",
+      "body": "İlanen tebliğ, **son ilan tarihinden itibaren yedi gün sonra** yapılmış sayılır.\n\n**İstisna:** İlanen tebliğe karar veren merci, gerekirse daha uzun bir müddet belirleyebilir. **Ancak bu süre 15 günü geçemez.**",
+      "articleRefs": [
+        "31"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "İlanen tebliğde süre ve başlangıç",
+      "body": "İlanen tebliğ, son ilan tarihinden itibaren **yedi gün** sonra yapılmış sayılır; 3 ya da 5 gün diyen şıklar yanlıştır. Sürenin başlangıcına da dikkat et: süre ilk ilandan değil, **son** ilan tarihinden işler. Merci süreyi uzatabilir, ama 15 günü aşamaz.",
+      "articleRefs": [
+        "31"
+      ],
+      "counterNumbers": [
+        3,
+        5
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Adres değişikliği",
+      "body": "- Kendisine veya adresine usulüne göre tebliğ yapılmış kimse adresini değiştirirse, yenisini **hemen** tebliği yaptıran kaza merciine bildirmeye mecburdur. Sonraki tebliğler yeni adrese yapılır.\n- Yeni adres bildirilmez ve adres kayıt sisteminde yerleşim yeri adresi de tespit edilemezse, evrakın bir nüshası eski adresteki binanın kapısına asılır. **Asılma tarihi tebliğ tarihidir.**\n- Bundan sonra eski adrese çıkarılan tebliğler muhataba yapılmış sayılır.\n- **Tüzel kişiler:** Daha önce tebligat yapılmamış olsa bile **resmî kayıtlardaki adresleri** esas alınır ve bu hükümler uygulanır.\n- **Yurt dışı:** Şu durumda yurt dışındaki Türk vatandaşına tebligat yapılmış sayılır:\n  - Daha önce yurt dışı adresine tebligat yapılmıştır.\n  - Kişi adresini değiştirmiş ve bunu tebliğ çıkaran mercie bildirmemiştir.\n  - Adres kayıt sisteminden de yerleşim yeri adresi tespit edilememiştir.\n  \n  Bu durumda Türkiye Büyükelçiliği veya Konsolosluğu eski adrese bildirim gönderir. Bildirimin adrese ulaştığının belgelendiği tarihten itibaren **otuz gün sonra** tebligat yapılmış sayılır.",
+      "articleRefs": [
+        "35"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Talik edilen evraka müdahalenin cezası",
+      "body": "**Fiiller:**\n- Tebliğ evrakının veya ihbarnamenin talikine karşı koymak\n- Talik edilen evrakı bulunduğu yerden koparmak, imha etmek ya da okunamaz hâle getirmek\n\n**Ceza:** **Üç aydan bir yıla kadar hapis** ve **yirmi beş günden yüz elli güne kadar adlî para cezası**.",
+      "articleRefs": [
+        "56"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Adlî para cezasının sınırları",
+      "body": "Aralık **25 günden 150 güne** kadardır. On–elli, on–yetmiş beş, yirmi–yüz, elli–iki yüz gibi şıklar çeldiricidir. Hapis cezasıyla karıştırma: hapis üç aydan bir yıla kadardır. Maddede hapis ile adlî para cezası ‘ve’ ile bağlanmıştır, ikisine birlikte hükmolunur.",
+      "articleRefs": [
+        "56"
+      ],
+      "counterNumbers": [
+        10,
+        50,
+        75,
+        20,
+        100,
+        200
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Kanunun uygulama yönetmeliği",
+      "body": "Kanunun uygulanmasına ilişkin usul ve esaslar **yönetmelikle** belirlenir. Yönetmeliği **Adalet Bakanlığı** çıkarır. Çıkarılırken **İçişleri, Maliye ve Ulaştırma** bakanlıklarının görüşü alınır.\n\n**Not:** Bakanlık adları madde metnindeki hâliyle verilmiştir; bugün Hazine ve Maliye Bakanlığı ile Ulaştırma ve Altyapı Bakanlığı adlarını taşırlar.",
+      "articleRefs": [
+        "60"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Görüş veren mi, yönetmeliği çıkaran mı?",
+      "body": "Yönetmeliği çıkaran makam **Adalet Bakanlığıdır**. İçişleri, Maliye ve Ulaştırma bakanlıklarının yalnızca **görüşü alınır**. Bu yüzden şıklarda sana tanıdık gelirler, ama doğru cevap değildirler. Şıklarda bugünkü adlarıyla, Hazine ve Maliye ya da Ulaştırma ve Altyapı olarak da görünebilirler; onlar da yalnızca görüş verir. Dışişleri, Ticaret ya da Millî Eğitim ise maddede hiç geçmez.",
+      "articleRefs": [
+        "60"
+      ]
+    },
+    {
+      "type": "numbers",
+      "title": "Ünite sonu: süreler ve cezalar",
+      "rows": [
+        {
+          "label": "Elektronik tebligat",
+          "value": "Elektronik adrese ulaştığı tarihi izleyen 5. günün sonu",
+          "refs": [
+            "7/A"
+          ]
+        },
+        {
+          "label": "İlanen tebliğin yapılmış sayılması",
+          "value": "Son ilan tarihinden itibaren 7 gün sonra",
+          "refs": [
+            "31"
+          ]
+        },
+        {
+          "label": "İlanen tebliğde merciin belirleyebileceği azami süre",
+          "value": "15 gün",
+          "refs": [
+            "31"
+          ]
+        },
+        {
+          "label": "Yurt dışı adres değişikliğinde tebligat",
+          "value": "Bildirimin ulaştığının belgelendiği tarihten itibaren 30 gün sonra",
+          "refs": [
+            "35"
+          ]
+        },
+        {
+          "label": "Md 56: hapis",
+          "value": "3 aydan 1 yıla kadar",
+          "refs": [
+            "56"
+          ]
+        },
+        {
+          "label": "Md 56: adlî para cezası",
+          "value": "25 günden 150 güne kadar",
+          "refs": [
+            "56"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "7/A",
+        "31",
+        "35",
+        "56"
+      ]
+    },
+    {
+      "type": "compare",
+      "title": "Muhtara teslim ile adres değişikliğinde kapıya asma",
+      "rows": [
+        {
+          "aspect": "Ne zaman uygulanır?",
+          "left": "Muhatap ve tebligat yapılabilecek kimselerden hiçbiri adreste yok ya da tebellüğden imtina ediyor",
+          "right": "Daha önce kendisine veya adresine usulüne göre tebliğ yapılmış muhatap adresini değiştirmiş, yenisini bildirmemiş; adres kayıt sisteminde yerleşim yeri adresi de tespit edilemiyor",
+          "refs": [
+            "21",
+            "35"
+          ]
+        },
+        {
+          "aspect": "Evrak nereye gider?",
+          "left": "Muhtar, ihtiyar heyeti azası ya da zabıta amir veya memuruna imza karşılığında teslim edilir",
+          "right": "Bir nüshası eski adresteki binanın kapısına asılır",
+          "refs": [
+            "21",
+            "35"
+          ]
+        },
+        {
+          "aspect": "Kapıya ne konur?",
+          "left": "Teslim alanın adresini içeren ihbarname",
+          "right": "Tebliğ olunacak evrakın nüshası",
+          "refs": [
+            "21",
+            "35"
+          ]
+        },
+        {
+          "aspect": "Tebliğ tarihi",
+          "left": "İhbarnamenin kapıya yapıştırıldığı tarih",
+          "right": "Evrakın kapıya asıldığı tarih",
+          "refs": [
+            "21",
+            "35"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "21",
+        "35"
+      ]
+    },
+    {
+      "type": "exam_stats",
+      "title": "Sınav der ki",
+      "rows": [
+        {
+          "label": "Bu ünitenin maddelerinden yayındaki soru",
+          "value": "9",
+          "refs": [
+            "7/A",
+            "11",
+            "21",
+            "24",
+            "27",
+            "31",
+            "35",
+            "56",
+            "60"
+          ]
+        },
+        {
+          "label": "md 7/A",
+          "value": "2 soru",
+          "refs": [
+            "7/A"
+          ]
+        },
+        {
+          "label": "md 60",
+          "value": "2 soru",
+          "refs": [
+            "60"
+          ]
+        },
+        {
+          "label": "md 11",
+          "value": "1 soru",
+          "refs": [
+            "11"
+          ]
+        },
+        {
+          "label": "md 24",
+          "value": "1 soru",
+          "refs": [
+            "24"
+          ]
+        },
+        {
+          "label": "md 27",
+          "value": "1 soru",
+          "refs": [
+            "27"
+          ]
+        },
+        {
+          "label": "Hiç soru çıkmamış",
+          "value": "md 21, md 35",
+          "refs": [
+            "7/A",
+            "11",
+            "21",
+            "24",
+            "27",
+            "31",
+            "35",
+            "56",
+            "60"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "7/A",
+        "11",
+        "21",
+        "24",
+        "27",
+        "31",
+        "35",
+        "56",
+        "60"
+      ],
+      "generated": true
+    },
+    {
+      "type": "bridge",
+      "title": "Bu üniteden soru çöz",
+      "articleRefs": [
+        "7/A",
+        "11",
+        "21",
+        "24",
+        "27",
+        "31",
+        "35",
+        "56",
+        "60"
+      ],
+      "generated": true,
+      "rows": [
+        {
+          "label": "Madde kapsamlı seans",
+          "value": "md 7/A, 11, 21, 24, 27, 31, 35, 56, 60, 9 soru",
+          "refs": [
+            "7/A",
+            "11",
+            "21",
+            "24",
+            "27",
+            "31",
+            "35",
+            "56",
+            "60"
+          ]
+        }
+      ]
+    }
+  ]
+}
