@@ -236,11 +236,11 @@ Sınır dışı edilen ya da pasaportunu haklı sebep olmadan kaybeden kişi iç
 
 Maddede bu muafiyete bağlanmış başka bir şart sayılmaz.
 
-**md 34:** Türkiye Cumhuriyeti sınırlarından her nasılsa **pasaportsuz girmiş vatandaşlara** **bin TL'den üç bin TL'ye kadar idarî para cezası** verilir. Yaptırım hapis cezası, adli para cezası, vatandaşlıktan çıkarma ya da sınır dışı etme değildir.
+**md 34:** Türkiye Cumhuriyeti sınırlarından her nasılsa **pasaportsuz girmiş vatandaşlara** **idarî para cezası** verilir. Yaptırım hapis cezası, adli para cezası, vatandaşlıktan çıkarma ya da sınır dışı etme değildir.
 
-## Sayılar · Sayılar: md 18 ve md 34
+## Sayılar · Sayılar: md 18
 
-<sub>md 18, 34</sub>
+<sub>md 18</sub>
 
 | Konu | Değer | md |
 |---|---|---|
@@ -248,8 +248,6 @@ Maddede bu muafiyete bağlanmış başka bir şart sayılmaz.
 | A nevi: kullanma süresi (verilişten itibaren) | 1 ay | 18 |
 | A nevi: yenilemenin İçişleri Bakanlığı kararına bağlandığı süre | 2 ay | 18 |
 | B nevi: geçerlilik alt sınırı | 3 ay | 18 |
-| Pasaportsuz giren vatandaş: idarî para cezası alt sınırı | 1.000 TL | 34 |
-| Pasaportsuz giren vatandaş: idarî para cezası üst sınırı | 3.000 TL | 34 |
 
 ## Karşılaştırma · Refakat hanesi: umuma mahsus ve yabancılara mahsus pasaport
 

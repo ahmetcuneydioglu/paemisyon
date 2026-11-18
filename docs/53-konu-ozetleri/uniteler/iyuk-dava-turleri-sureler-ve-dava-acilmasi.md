@@ -193,7 +193,7 @@ Tebliğe cevap süresi **otuz gündür**. 'Yetmiş beş gün' diyen şık metind
 <sub>md 17, 18, 19</sub>
 
 **Ne zaman yapılır (md 17):**
-- Taraflardan birinin isteği üzerine şu davalarda duruşma yapılır: iptal davaları, **yirmibeşbin Türk Lirasını** aşan tam yargı davaları ve tarh edilen vergi, resim, harç ve benzeri mali yükümlerle bunların zam ve cezaları toplamı yirmibeşbin Türk Lirasını aşan vergi davaları.
+- Taraflardan birinin isteği üzerine şu davalarda duruşma yapılır: iptal davaları, kanunda gösterilen **parasal sınırı** aşan tam yargı davaları ve tarh edilen vergi, resim, harç ve benzeri mali yükümlerle bunların zam ve cezaları toplamı aynı sınırı aşan vergi davaları.
 - Temyiz ve istinafta duruşma, tarafların istemine ve Danıştay veya ilgili bölge idare mahkemesi kararına bağlıdır.
 - Duruşma talebi dava dilekçesiyle, cevap ve savunmalarda yapılabilir.
 - Danıştay, mahkeme ve hâkim bu kayıtlara bağlı olmaksızın **kendiliğinden** duruşma kararı verebilir.
@@ -226,7 +226,7 @@ Davetiye duruşmadan en az **otuz gün** önce gider, 'yedi gün' şıkkı yanl�
 | Tebliğe cevap | 30 gün; bir defaya mahsus, en çok 30 gün uzatma | 16 |
 | Miktar artırımı dilekçesine cevap | 30 gün | 16 |
 | Savcı düşüncesine görüş (Danıştay, ilk derece) | 10 gün | 16 |
-| Taraf isteğiyle duruşma sınırı (tam yargı / vergi) | 25.000 TL'yi aşan | 17 |
+| Taraf isteğiyle duruşma sınırı (tam yargı / vergi) | Kanunda gösterilen parasal sınırı aşan | 17 |
 | Duruşma davetiyesi | Duruşma gününden en az 30 gün önce | 17 |
 | Duruşmada söz | Taraflara ikişer defa | 18 |
 | Duruşmadan sonra karar | En geç 15 gün | 19 |

@@ -122,7 +122,7 @@ Yerel yönetimde zinciri doğru kur: il genel meclisi üyesi valiye, belediye me
 
 <sub>md 13</sub>
 
-**Haksız mal edinme:** Kanunun daha ağır bir cezayı gerektirmediği takdirde **üç yıldan beş yıla kadar hapis** ve **beş milyon liradan on milyon liraya kadar ağır para cezası** verilir.
+**Haksız mal edinme:** Kanunun daha ağır bir cezayı gerektirmediği takdirde **üç yıldan beş yıla kadar hapis** ve **ağır para cezası** verilir.
 
 **Haksız edinilen malı kaçırma veya gizleme:** Aynı ceza verilir.
 
@@ -179,7 +179,6 @@ Bu maddede şıkları bozan noktalar hep aynı. Muhbirin kimliğinde kural gizli
 | Konu | Değer | md |
 |---|---|---|
 | Haksız mal edinme — hapis | Üç yıldan beş yıla kadar | 13 |
-| Haksız mal edinme — ağır para cezası | Beş milyon liradan on milyon liraya kadar | 13 |
 | Malı kaçırma veya gizleme | Haksız mal edinmeyle aynı ceza | 13 |
 | 11 ve 12. madde mahkûmiyeti — yasaklanma | Ceza süresi kadar | 15 |
 | 13. madde mahkûmiyeti — yasaklanma | Müebbeten | 15 |

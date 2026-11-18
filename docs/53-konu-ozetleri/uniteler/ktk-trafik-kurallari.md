@@ -47,7 +47,7 @@ Karayollarında trafik sağdan akar. Bu ünitedeki kuralların hepsi bu cümleye
 - Altı defa ihlalde belge **iptal** edilir. Yeniden kursa başlamak için şunlar gerekir: iptalden itibaren en az bir yıl geçmesi, cezaların tamamının tahsili, psiko-teknik değerlendirme ve psikiyatri uzmanı muayenesi.
 - Kırmızı ışığı ihlal ederek kazaya sebep olan sürücünün belgesi **altmış gün** geri alınır.
 
-**Dur ikazına uymayıp kaçma:** 200.000 Türk lirası idari para cezası uygulanır. Sürücü belgesi altmış gün geri alınır ve araç altmış gün trafikten menedilir.
+**Dur ikazına uymayıp kaçma:** idari para cezası uygulanır. Sürücü belgesi altmış gün geri alınır ve araç altmış gün trafikten menedilir.
 
 ## Tuzak · Çekici, gösteri ve uyma sırası
 
@@ -55,7 +55,7 @@ Karayollarında trafik sağdan akar. Bu ünitedeki kuralların hepsi bu cümleye
 
 **Sağdan ikinci şerit:** Bu yasak; motosiklet, otomobil, kamyonet, panelvan, minibüs ve otobüs **dışındaki** araçlar için konmuştur. Şıklarda otomobil, minibüs, panelvan veya otobüs görürsen bunlar listede sayılan muaf araçlardır. Doğru cevap, çekici gibi listede olmayan araçtır.
 
-**Gösteri tuzağı:** Kanuna uygun toplantı ve gösteri yürüyüşünde aracı durdurup trafiği engellemek söz konusu olabilir. Bu durumda şu şıklar cazip görünür: 90.000 Türk lirası ceza, iki kat uygulama, altmış gün geri alma, altmış gün men. Hepsi yanlış; bu durumda o bentteki kabahat **oluşmaz**.
+**Gösteri tuzağı:** Kanuna uygun toplantı ve gösteri yürüyüşünde aracı durdurup trafiği engellemek söz konusu olabilir. Bu durumda şu şıklar cazip görünür: idari para cezası, iki kat uygulama, altmış gün geri alma, altmış gün men. Hepsi yanlış; bu durumda o bentteki kabahat **oluşmaz**.
 
 **Sıralama tuzağı:** Işık levhadan önce gelir. Ama ikisinden de önce zabıtanın işareti gelir. Doğru sıra: zabıta → ışık → levha.
 
@@ -67,8 +67,8 @@ Uyuşturucu veya uyarıcı madde almış ya da alkollü sürücünün karayolund
 - **Zorunlu muayene:** Şu kazalara karışan kişi muayeneye tabi tutulur: yaralanmalı, ölümlü veya kollukça müdahil olunan maddi hasarlı kaza.
 - **İtiraz veya ölçüme izin vermeme:** Bu kazalara karışan sürücü şu yerlerden en yakınına götürülür: adli tıp kurumu, adli tabiplik veya Sağlık Bakanlığına bağlı sağlık kuruluşu. Orada kan, tükürük veya idrar gibi örnekler alınır. Bu işlemde 5271 sayılı Ceza Muhakemesi Kanununun 75 inci maddesi, beşinci fıkrası hariç uygulanır.
 - **Ölüm veya üfleyemeyecek kadar yaralanma:** Aynı usulle örnek alınır.
-- **Ölçüm yaptırmayan sürücü:** 150.000 Türk lirası ceza verilir, belge beş yıl geri alınır.
-- **Uyuşturucu veya uyarıcı madde aldığı tespit edilen sürücü:** 150.000 Türk lirası ceza verilir ve belge **iptal** edilir. Yeniden kursa başlamak için iptalden itibaren en az beş yıl geçmesi gerekir.
+- **Ölçüm yaptırmayan sürücü:** idari para cezası verilir, belge beş yıl geri alınır.
+- **Uyuşturucu veya uyarıcı madde aldığı tespit edilen sürücü:** idari para cezası verilir ve belge **iptal** edilir. Yeniden kursa başlamak için iptalden itibaren en az beş yıl geçmesi gerekir.
 - Uyuşturucu şüphesinde 5271 sayılı Kanunun adli kolluğa ilişkin hükümleri uygulanır.
 
 ## Tuzak · Promil ve tekrar tuzakları
@@ -96,7 +96,7 @@ Aksine bir karar alınıp işaretlenmemişse sürücüler yönetmelikteki hız s
 - Bir yıl içinde beşinci kez geri alınan belge, psiko-teknik değerlendirme ve psikiyatri uzmanı muayenesinden geçilmeden iade edilmez.
 - Nüfusu 5.000'in altındaki yerleşim yerlerinde denetim yerini **mahalli mülki idare amiri** belirler.
 - **Hız cihazı tespit edici yasağı:** Hız tespit cihazlarının yerini tespit eden veya sürücüyü ikaz eden cihazların imali, ithali ve araçta bulundurulması yasaktır.
-- İmal ve ithal edene 370.000 Türk lirası, araçta bulunduran işletene 185.000 Türk lirası ceza verilir.
+- İmal ve ithal edene ve araçta bulunduran işletene ayrı ayrı idari para cezası verilir; imal ve ithal edenin cezası daha ağırdır.
 - Bu cihaza **mülki amir** el koyar; mülkiyetin kamuya geçirilmesine de mülki amir karar verir.
 
 ## Kural · Hızını azalt, doğru kavisle dön
@@ -143,26 +143,25 @@ Dönüşlerde ilk geçiş hakkı şunlara verilir: kurallara uygun geçen yayala
 
 | Konu | Değer | md |
 |---|---|---|
-| (g), (j), (n) bentleri ihlali | 90.000 TL; belge altmış gün geri alma, araç altmış gün men | 46 |
+| (g), (j), (n) bentleri ihlali | İdari para cezası; belge altmış gün geri alma, araç altmış gün men | 46 |
 | (n) bendi otoyol, köprü, viyadük veya tünelde | Ceza ve süreler iki kat | 46 |
-| Saldırı amacıyla ısrarla takip | 180.000 TL; belge altmış gün, araç altmış gün men | 46 |
+| Saldırı amacıyla ısrarla takip | İdari para cezası; belge altmış gün, araç altmış gün men | 46 |
 | Şerit kuralları: beş yıl içinde ikinci geri alma | Sürücü belgesi iptal | 46 |
-| Dur ikazına uymayıp kaçma | 200.000 TL; belge altmış gün, araç altmış gün men | 47 |
-| Kırmızı ışık, bir yılda ikinci → altıncı defa | 10.000 TL → 80.000 TL | 47 |
+| Dur ikazına uymayıp kaçma | İdari para cezası; belge altmış gün, araç altmış gün men | 47 |
 | Kırmızı ışık, bir yılda üç / dört / beş defa | Belge otuz / altmış / doksan gün | 47 |
 | Kırmızı ışık, bir yılda altı defa | İptal; kursa başlamak için en az bir yıl | 47 |
 | Hususi otomobil alkol sınırı | 0.50 promil üzeri | 48 |
 | Diğer araçlarda promil alt sınırı | 0.21 | 48 |
 | Ayrıca TCK 179 uncu madde üçüncü fıkra uygulanır | 1.00 promil üzeri | 48 |
 | Kazaya sebebiyette TCK ilgili hükümleri | Hususi otomobil 0.50, diğer araçlar 0.20 promil üzeri | 48 |
-| Alkollü sürüş, ilk | 25.000 TL; belge altı ay | 48 |
-| Alkollü sürüş, beş yıl içinde ikinci | 50.000 TL; belge iki yıl | 48 |
-| Alkollü sürüş, beş yıl içinde üç ve üstü | 150.000 TL; her seferinde beşer yıl | 48 |
-| Uyuşturucu veya uyarıcı madde | 150.000 TL; iptal; en az beş yıl sonra kurs | 48 |
-| Ölçüm yaptırmama | 150.000 TL; belge beş yıl | 48 |
+| Alkollü sürüş, ilk | İdari para cezası; belge altı ay | 48 |
+| Alkollü sürüş, beş yıl içinde ikinci | Daha ağır idari para cezası; belge iki yıl | 48 |
+| Alkollü sürüş, beş yıl içinde üç ve üstü | Daha ağır idari para cezası; her seferinde beşer yıl | 48 |
+| Uyuşturucu veya uyarıcı madde | İdari para cezası; iptal; en az beş yıl sonra kurs | 48 |
+| Ölçüm yaptırmama | İdari para cezası; belge beş yıl | 48 |
 | Hız: belge geri alma (yerleşim içi 46-55 / 56-65 / 66+ km/s) | 30 / 60 / 90 gün | 51 |
 | Hız: belge geri alma (yerleşim dışı 51-60 / 61-70 / 71+ km/s) | 30 / 60 / 90 gün | 51 |
-| Hız cihazı tespit edicisi | İmal ve ithal 370.000 TL; bulunduran işleten 185.000 TL | 51 |
+| Hız cihazı tespit edicisi | İmal ve ithal edene ve bulunduran işletene ayrı ayrı idari para cezası | 51 |
 
 ## Kural · Geçme ve geçilme
 
@@ -194,8 +193,8 @@ Dönüşlerde ilk geçiş hakkı şunlara verilir: kurallara uygun geçen yayala
 - Geçilirken başka bir aracı geçmeye veya sola dönmeye kalkışamaz.
 
 **Yol vermeme cezası:**
-- 71 inci maddenin (a) ve (b) bentlerindeki araçlara (cankurtaran, itfaiye vb.) yol vermeyene: 46.000 TL, belge **otuz gün** geri alma, araç otuz gün men.
-- (c)–(g) bentlerindeki araçlara yol vermeyene: 15.000 TL.
+- 71 inci maddenin (a) ve (b) bentlerindeki araçlara (cankurtaran, itfaiye vb.) yol vermeyene: idari para cezası, belge **otuz gün** geri alma, araç otuz gün men.
+- (c)–(g) bentlerindeki araçlara yol vermeyene: idari para cezası.
 
 ## Kural · Şerit izleme ve kavşakta geçiş hakkı
 
@@ -260,7 +259,7 @@ Kurala aykırı park eden araç trafik zabıtasınca kaldırılabilir. Kaldırma
 **Yasak yüklemeler:** taşıma sınırı üstünde yolcu almak, azami yüklü ağırlığı veya dingil ağırlığını aşmak, gabari dışı yük yüklemek, yük üstüne yolcu bindirmek, yükü uygun bağlamadan yüklemek.
 - Fazla yolcular en yakın yerleşim biriminde indirilir; sorumluluk ve giderler işletene aittir.
 - Azami yüklü ağırlık **%20'den fazla** aşılırsa fazla yük uygun hâle getirilmeden yola devam edilemez.
-- Fazla yükleme cezası %10'a kadar aşımda 10.000 TL'den başlar, %25'in üzerindeki aşımda 60.000 TL'ye çıkar. Ceza işleten ve gönderene ayrı ayrı uygulanır.
+- Fazla yükleme cezası aşım oranı büyüdükçe kademeli olarak ağırlaşır. Ceza işleten ve gönderene ayrı ayrı uygulanır.
 
 ## Kural · Bisiklet, elektrikli skuter, motosiklet
 
@@ -282,9 +281,9 @@ Kurala aykırı park eden araç trafik zabıtasınca kaldırılabilir. Kaldırma
 - Sırtta taşınabilen kişisel eşya dışında yük ve yolcu taşınmaz.
 - Otoyolda, şehirler arası karayollarında ve azami hız sınırı **50 km/s** üzerindeki yollarda kullanılamaz.
 
-**Akrobatik sürüş:** Motorlu bisiklet ve motosikleti tek teker üzerinde, seleye yatarak, selede ayağa kalkarak, kendi etrafında döndürerek veya teker kaydırarak sürmek yasaktır; izinli gösteriler hariçtir. Yaptırım: 46.000 TL, belge altmış gün geri alma, araç altmış gün men.
+**Akrobatik sürüş:** Motorlu bisiklet ve motosikleti tek teker üzerinde, seleye yatarak, selede ayağa kalkarak, kendi etrafında döndürerek veya teker kaydırarak sürmek yasaktır; izinli gösteriler hariçtir. Yaptırım: idari para cezası, belge altmış gün geri alma, araç altmış gün men.
 
-**Paylaşımlı skuter işletmeciliği:** Ulaştırma ve Altyapı Bakanlığından yetki belgesi gerekir. Belgesiz faaliyete 86.900 TL ceza verilir.
+**Paylaşımlı skuter işletmeciliği:** Ulaştırma ve Altyapı Bakanlığından yetki belgesi gerekir. Belgesiz faaliyete idari para cezası verilir.
 
 ## Kural · Yayaların kuralları
 
@@ -315,7 +314,7 @@ Kurala aykırı park eden araç trafik zabıtasınca kaldırılabilir. Kaldırma
 - Halkın can ve mal güvenliği tehlikeye sokulmaz.
 - **Duyulur ve görünür** geçiş üstünlüğü işareti verilir.
 
-Bu araçlar trafik kısıtlama ve yasaklarına bağlı değildir. Birbirleriyle karşılaştıklarında yukarıdaki sıra uygulanır. Zorunluluk yokken geçiş üstünlüğünü kullanmak yasaktır; cezası 46.000 TL'dir.
+Bu araçlar trafik kısıtlama ve yasaklarına bağlı değildir. Birbirleriyle karşılaştıklarında yukarıdaki sıra uygulanır. Zorunluluk yokken geçiş üstünlüğünü kullanmak yasaktır; yaptırımı idari para cezasıdır.
 
 **Örnek:** orman yangını aracı → asayiş için giden zabıta → afet aracı.
 
@@ -326,7 +325,7 @@ Bu araçlar trafik kısıtlama ve yasaklarına bağlı değildir. Birbirleriyle 
 **Görevli veya ışık olmayan, levhayla belirlenmiş yaya ve okul geçidi:**
 - Sürücü yavaşlar.
 - Geçen veya geçmek üzere olan yayaya **durarak** ilk geçiş hakkını verir. Yavaşlamak tek başına yetmez.
-- Uymayan sürücüye 488 TL ceza verilir.
+- Uymayan sürücüye idari para cezası verilir.
 
 **Demiryolu geçidinde yasak olanlar:**
 - Geçidin durumuna uygun olmayan hızla geçmek
@@ -373,7 +372,7 @@ Bu araçlar trafik kısıtlama ve yasaklarına bağlı değildir. Birbirleriyle 
 **Yalnız maddi hasarlı kaza:** Kazaya dahil herkes görevliye gerek görmezse, durumu **aralarında yazılı olarak saptayıp** ayrılabilir.
 
 **İzinsiz ayrılmanın yaptırımı:**
-- Anlaşma dışında, zabıtanın iznini almadan ve zaruret olmaksızın ayrılan veya kaza yerindeki durumu değiştiren sürücüye 46.000 TL ceza verilir.
+- Anlaşma dışında, zabıtanın iznini almadan ve zaruret olmaksızın ayrılan veya kaza yerindeki durumu değiştiren sürücüye idari para cezası verilir.
 - Ölümlü veya yaralanmalı kazada zabıtanın iznini almadan ve zaruret olmaksızın ayrılana ayrıca **bir yıldan üç yıla kadar hapis** cezası verilir ve belge **iki yıl** geri alınır.
 
 **İlk yardım ve bildirim:**
@@ -383,28 +382,23 @@ Bu araçlar trafik kısıtlama ve yasaklarına bağlı değildir. Birbirleriyle 
 
 ## Sayılar · Sayılar: geçme, park, yük, yaya, kaza
 
-<sub>md 55, 56, 61, 65, 66, 68, 71, 74, 79, 81</sub>
+<sub>md 55, 56, 61, 65, 66, 68, 79, 81</sub>
 
 | Konu | Değer | md |
 |---|---|---|
-| Geçiş üstünlüğü (a)-(b) araçlarına yol vermeme | 46.000 TL; belge otuz gün, araç otuz gün men | 55 |
-| Diğer geçiş üstünlüğü araçlarına yol vermeme | 15.000 TL | 55 |
+| Geçiş üstünlüğü (a)-(b) araçlarına yol vermeme | İdari para cezası; belge otuz gün, araç otuz gün men | 55 |
 | Kavşak öncesi şerit değiştirme yasağı (yerleşim dışı / içi) | yüzelli metre / otuz metre | 56 |
 | Yangın musluğu; kamu kapıları | her iki yönden beş metre | 61 |
 | Durak levhası; geçiş üstünlüğü giriş-çıkış levhası | onbeş metre | 61 |
 | Alt geçit, üst geçit, köprüler | on metre | 61 |
 | Engelli park yeri ihlali | Ceza iki kat | 61 |
 | Fazla yükle yola devam yasağı | %20'den fazla aşım | 65 |
-| Fazla yükleme cezası (%10'a kadar → %25 üzeri) | 10.000 TL → 60.000 TL; işleten ve gönderene ayrı ayrı | 65 |
-| Ağırlık ve boyut kontrolünden kaçma | 60.000 TL | 65 |
+| Fazla yükleme cezası | Aşım oranına göre kademeli idari para cezası; işleten ve gönderene ayrı ayrı | 65 |
 | Elektrikli skuterin kullanılamadığı yollar | Azami hız sınırı 50 km/s üzeri | 66 |
-| Akrobatik sürüş | 46.000 TL; belge altmış gün, araç altmış gün men | 66 |
+| Akrobatik sürüş | İdari para cezası; belge altmış gün, araç altmış gün men | 66 |
 | Geçitsiz yerde karşıya geçiş istisnası | Yüz metre kadar mesafede geçit veya kavşak yoksa | 68 |
-| Zorunluluk yokken geçiş üstünlüğü kullanma | 46.000 TL | 71 |
-| Yaya geçidinde yol vermeme | 488 TL | 74 |
 | Yetkisiz park ücreti | Altı ay–iki yıl hapis; beş bin güne kadar adli para cezası | 79 |
 | Ölümlü veya yaralanmalı kazada izinsiz ayrılma | Bir–üç yıl hapis; belge iki yıl geri alma | 81 |
-| Kazada izinsiz ayrılma (idari ceza) | 46.000 TL | 81 |
 
 ## Karşılaştırma · Kazaya kim el koyar?
 

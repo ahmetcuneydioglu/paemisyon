@@ -295,7 +295,7 @@
     {
       "type": "rule",
       "title": "Duruşma ve karar",
-      "body": "**Ne zaman yapılır (md 17):**\n- Taraflardan birinin isteği üzerine şu davalarda duruşma yapılır: iptal davaları, **yirmibeşbin Türk Lirasını** aşan tam yargı davaları ve tarh edilen vergi, resim, harç ve benzeri mali yükümlerle bunların zam ve cezaları toplamı yirmibeşbin Türk Lirasını aşan vergi davaları.\n- Temyiz ve istinafta duruşma, tarafların istemine ve Danıştay veya ilgili bölge idare mahkemesi kararına bağlıdır.\n- Duruşma talebi dava dilekçesiyle, cevap ve savunmalarda yapılabilir.\n- Danıştay, mahkeme ve hâkim bu kayıtlara bağlı olmaksızın **kendiliğinden** duruşma kararı verebilir.\n- Davetiyeler duruşma gününden en az **otuz gün** önce gönderilir.\n**Nasıl yürür (md 18):**\n- Duruşmalar **açık** yapılır. Genel ahlak veya kamu güvenliği gerektirirse daire veya mahkeme kararıyla kısmen ya da tamamen gizli yapılır.\n- Duruşmayı **başkan** yönetir. Taraflara **ikişer defa** söz verilir.\n- Taraflardan yalnız biri gelirse onun açıklamaları dinlenir. Hiçbiri gelmezse duruşma açılmaz ve inceleme evrak üzerinde yapılır.\n- Danıştaydaki duruşmalarda **savcının bulunması şarttır**. Taraflar dinlendikten sonra savcı yazılı düşüncesini açıklar, ardından taraflara son olarak ne diyecekleri sorulur.\n**Karar (md 19):** Duruşmadan sonra en geç **onbeş gün** içinde karar verilir. Ara kararı verilen hâllerde, karar yerine getirilince dosya öncelikle incelenir.",
+      "body": "**Ne zaman yapılır (md 17):**\n- Taraflardan birinin isteği üzerine şu davalarda duruşma yapılır: iptal davaları, kanunda gösterilen **parasal sınırı** aşan tam yargı davaları ve tarh edilen vergi, resim, harç ve benzeri mali yükümlerle bunların zam ve cezaları toplamı aynı sınırı aşan vergi davaları.\n- Temyiz ve istinafta duruşma, tarafların istemine ve Danıştay veya ilgili bölge idare mahkemesi kararına bağlıdır.\n- Duruşma talebi dava dilekçesiyle, cevap ve savunmalarda yapılabilir.\n- Danıştay, mahkeme ve hâkim bu kayıtlara bağlı olmaksızın **kendiliğinden** duruşma kararı verebilir.\n- Davetiyeler duruşma gününden en az **otuz gün** önce gönderilir.\n**Nasıl yürür (md 18):**\n- Duruşmalar **açık** yapılır. Genel ahlak veya kamu güvenliği gerektirirse daire veya mahkeme kararıyla kısmen ya da tamamen gizli yapılır.\n- Duruşmayı **başkan** yönetir. Taraflara **ikişer defa** söz verilir.\n- Taraflardan yalnız biri gelirse onun açıklamaları dinlenir. Hiçbiri gelmezse duruşma açılmaz ve inceleme evrak üzerinde yapılır.\n- Danıştaydaki duruşmalarda **savcının bulunması şarttır**. Taraflar dinlendikten sonra savcı yazılı düşüncesini açıklar, ardından taraflara son olarak ne diyecekleri sorulur.\n**Karar (md 19):** Duruşmadan sonra en geç **onbeş gün** içinde karar verilir. Ara kararı verilen hâllerde, karar yerine getirilince dosya öncelikle incelenir.",
       "articleRefs": [
         "17",
         "18",
@@ -390,7 +390,7 @@
         },
         {
           "label": "Taraf isteğiyle duruşma sınırı (tam yargı / vergi)",
-          "value": "25.000 TL'yi aşan",
+          "value": "Kanunda gösterilen parasal sınırı aşan",
           "refs": [
             "17"
           ]

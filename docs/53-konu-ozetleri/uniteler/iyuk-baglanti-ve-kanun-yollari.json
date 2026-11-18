@@ -75,7 +75,7 @@
     {
       "type": "rule",
       "title": "İstinaf: süre ve kesin kararlar",
-      "body": "**Kural:** İdare ve vergi mahkemelerinin kararlarına karşı istinaf yoluna başvurulabilir. Başka kanunlarda farklı bir kanun yolu öngörülmüş olsa dahi bu kural geçerlidir.\n- **Nereye?** Mahkemenin bulunduğu yargı çevresindeki **bölge idare mahkemesine**\n- **Ne zaman?** Kararın tebliğinden itibaren **otuz gün** içinde\n\n**İstisna — kesin kararlar:** Konusu **otuz bir bin Türk lirasını** geçmeyen aşağıdaki davalarda idare ve vergi mahkemelerince verilen kararlar kesindir ve istinaf yoluna başvurulamaz:\n- Vergi davaları\n- Tam yargı davaları\n- İdari işlemlere karşı açılan iptal davaları\n\n**İvedi yargılama:** İvedi yargılama usulüne tabi davalarda istinaf yoluna başvurulamaz.\n\n**Usul:** İstinaf, temyizin şekil ve usullerine tabidir. İstinaf başvurusuna konu olacak kararlara karşı yapılan kanun yolu başvurularında dilekçedeki hitap ve istekle bağlı kalınmaksızın dosyalar bölge idare mahkemesine gönderilir.",
+      "body": "**Kural:** İdare ve vergi mahkemelerinin kararlarına karşı istinaf yoluna başvurulabilir. Başka kanunlarda farklı bir kanun yolu öngörülmüş olsa dahi bu kural geçerlidir.\n- **Nereye?** Mahkemenin bulunduğu yargı çevresindeki **bölge idare mahkemesine**\n- **Ne zaman?** Kararın tebliğinden itibaren **otuz gün** içinde\n\n**İstisna — kesin kararlar:** Konusu kanunda gösterilen **parasal sınırı** geçmeyen aşağıdaki davalarda idare ve vergi mahkemelerince verilen kararlar kesindir ve istinaf yoluna başvurulamaz:\n- Vergi davaları\n- Tam yargı davaları\n- İdari işlemlere karşı açılan iptal davaları\n\n**İvedi yargılama:** İvedi yargılama usulüne tabi davalarda istinaf yoluna başvurulamaz.\n\n**Usul:** İstinaf, temyizin şekil ve usullerine tabidir. İstinaf başvurusuna konu olacak kararlara karşı yapılan kanun yolu başvurularında dilekçedeki hitap ve istekle bağlı kalınmaksızın dosyalar bölge idare mahkemesine gönderilir.",
       "articleRefs": [
         "45"
       ]
@@ -132,7 +132,7 @@
         },
         {
           "label": "İstinafa kapalı (kesin) kararlarda parasal sınır",
-          "value": "Konusu 31.000 TL'yi geçmeyen vergi, tam yargı ve iptal davaları",
+          "value": "Konusu kanunda gösterilen parasal sınırı geçmeyen vergi, tam yargı ve iptal davaları",
           "refs": [
             "45"
           ]

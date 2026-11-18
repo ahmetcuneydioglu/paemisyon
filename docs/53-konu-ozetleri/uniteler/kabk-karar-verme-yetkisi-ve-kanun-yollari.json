@@ -188,7 +188,7 @@
     {
       "type": "rule",
       "title": "Dinleme ve son karar",
-      "body": "**Dinleme (md 28)**\n- Mahkeme cevap dilekçesinin bir örneğini başvuranlara tebliğ eder; **talep üzerine veya re'sen** tarafları belli gün ve saatte dinleyebilir.\n- Dinleme günü ile tebligat günü arasında **en az bir haftalık** zaman bırakılır.\n- Mazeretsiz hazır bulunmama, **yoklukta karar verilmesine engel değildir**; bu husus tebligat yazısında açıkça belirtilir.\n- Ceza Muhakemesi Kanununun tanıklık, bilirkişi incelemesi ve keşif hükümleri uygulanır.\n- Sıra: başvuru sahibi ve avukatı → kurum temsilcisi → varsa tanıklar → bilirkişi raporu → diğer deliller.\n- **Son söz**, aleyhine karar verilen hazır tarafa sorulur; kanunî temsilci veya avukat da kullanabilir. Son karar hazır tarafların huzurunda açıklanır.\n\n**Son karar**\n- Karar hukuka uygunsa: **“başvurunun reddine”**\n- Karar hukuka aykırıysa: **“idarî yaptırım kararının kaldırılmasına”**\n- Alt ve üst sınırı kanunda gösterilen para cezalarında mahkeme **miktarı değiştirerek** de başvurunun kabulüne karar verebilir.\n- **Onbeşbin Türk Lirası dahil** idarî para cezalarına karşı başvuru üzerine verilen kararlar **kesindir**.",
+      "body": "**Dinleme (md 28)**\n- Mahkeme cevap dilekçesinin bir örneğini başvuranlara tebliğ eder; **talep üzerine veya re'sen** tarafları belli gün ve saatte dinleyebilir.\n- Dinleme günü ile tebligat günü arasında **en az bir haftalık** zaman bırakılır.\n- Mazeretsiz hazır bulunmama, **yoklukta karar verilmesine engel değildir**; bu husus tebligat yazısında açıkça belirtilir.\n- Ceza Muhakemesi Kanununun tanıklık, bilirkişi incelemesi ve keşif hükümleri uygulanır.\n- Sıra: başvuru sahibi ve avukatı → kurum temsilcisi → varsa tanıklar → bilirkişi raporu → diğer deliller.\n- **Son söz**, aleyhine karar verilen hazır tarafa sorulur; kanunî temsilci veya avukat da kullanabilir. Son karar hazır tarafların huzurunda açıklanır.\n\n**Son karar**\n- Karar hukuka uygunsa: **“başvurunun reddine”**\n- Karar hukuka aykırıysa: **“idarî yaptırım kararının kaldırılmasına”**\n- Alt ve üst sınırı kanunda gösterilen para cezalarında mahkeme **miktarı değiştirerek** de başvurunun kabulüne karar verebilir.\n- **Onbeşbin Türk Lirası dahil** (kanun metnindeki tutar) idarî para cezalarına karşı başvuru üzerine verilen kararlar **kesindir**.",
       "articleRefs": [
         "28"
       ]
@@ -196,7 +196,7 @@
     {
       "type": "trap",
       "title": "Başvurunun incelenmesinde çeldiriciler",
-      "body": "Son karar sorularında ceza yargılamasının kalıplarına kapılma: beraat/mahkûmiyet, onama/bozma, iptal/yürütmenin durdurulması, düşme/durma burada yok. Mahkemenin son kararı **başvurunun reddi** ya da **idarî yaptırım kararının kaldırılması**dır; alt ve üst sınırı kanunda gösterilen para cezalarında mahkeme miktarı değiştirerek de başvurunun kabulüne karar verebilir. Kurumun cevap süresi **on beş gün**dür; “on gün” şıkkı tuzaktır, “iki hafta” ise son karara itiraz süresidir. Taraf mazeretsiz gelmezse dinleme zorunlu olarak ertelenmez; yokluğunda karar verilebilir. **Onbeşbin Türk Lirası dahil** cezalarda karar kesindir: itiraz, istinaf, idare mahkemesi ya da temyiz şıklarına kanma.",
+      "body": "Son karar sorularında ceza yargılamasının kalıplarına kapılma: beraat/mahkûmiyet, onama/bozma, iptal/yürütmenin durdurulması, düşme/durma burada yok. Mahkemenin son kararı **başvurunun reddi** ya da **idarî yaptırım kararının kaldırılması**dır; alt ve üst sınırı kanunda gösterilen para cezalarında mahkeme miktarı değiştirerek de başvurunun kabulüne karar verebilir. Kurumun cevap süresi **on beş gün**dür; “on gün” şıkkı tuzaktır, “iki hafta” ise son karara itiraz süresidir. Taraf mazeretsiz gelmezse dinleme zorunlu olarak ertelenmez; yokluğunda karar verilebilir. **Onbeşbin Türk Lirası dahil** (kanun metnindeki tutar) cezalarda karar kesindir: itiraz, istinaf, idare mahkemesi ya da temyiz şıklarına kanma.",
       "articleRefs": [
         "28",
         "29"
@@ -272,7 +272,7 @@
         },
         {
           "label": "Kesin karar sınırı",
-          "value": "onbeşbin Türk Lirası dahil idarî para cezaları",
+          "value": "onbeşbin Türk Lirası dahil idarî para cezaları (kanun metnindeki tutar)",
           "refs": [
             "28"
           ]

@@ -201,7 +201,6 @@ Komisyon sorularında yanlış şıklar küçük bir kelimeyi değiştirerek kur
 | Elektrikli skuter: azami hız | 25 km/saat | 3 |
 | Sağlık Bakanlığının kaydını tuttuğu ölümler | Kazadan sonraki 30 gün içinde; bildirim takip eden ayın sonuna kadar Emniyet Genel Müdürlüğüne | 8 |
 | Ağırlık-boyut kontrolü yetkili işletmesine eksiklik giderme süresi | Azamî 15 gün | 8 |
-| Aykırı hareketi tespit edilen yetkili işletme sahibine ceza | 1.700 TL | 8 |
 | Komisyondaki üniversite, vakıf, kamuya yararlı dernek veya kuruluş temsilcileri | Toplam en fazla 3 | 12 |
 
 ## Kural · Tescil, ayırım işaretleri ve resmî araç rengi
@@ -241,7 +240,7 @@ Bu üç maddede 'trafikten men', 'el koyma' ve 'kamuya geçme' sıkça karışt�
 **Belgesiz sürüş (md 36)**
 - Motorlu araçların sürücü belgesi olmayan kişilerce karayollarında sürülmesi **ve sürülmesine izin verilmesi** yasaktır.
 - Araçları şu kişiler sürebilir: Yönetmelikte sınıfları belirtilen sürücü belgesine sahip olanlar, çok taraflı anlaşmalara göre sürücü belgesi bulunanlar veya geçerli uluslararası sürücü belgesi olanlar.
-- Belgesiz, belgesi geri alınmışken ya da belgesi iptal edilmişken araç kullanan sürücüye idari para cezası verilir. Sürülmesine izin veren **işletene de tescil plakası üzerinden** 40.000 Türk lirası idari para cezası verilir.
+- Belgesiz, belgesi geri alınmışken ya da belgesi iptal edilmişken araç kullanan sürücüye idari para cezası verilir. Sürülmesine izin veren **işletene de tescil plakası üzerinden** idari para cezası verilir.
 
 **Belge gerekmeyenlerde yaş (md 37)**
 Bu kişilerin sürücü belgesi alması zorunlu değildir, ama şu yaşları bitirmiş olmaları gerekir:
@@ -324,30 +323,26 @@ Sürücü belgesi sorularındaki yanlış şıklar genellikle şu noktalarda kur
 - Sürücülüğe engel bir hâlin olmadığı ya da bu hâlin sonradan ortadan kalktığı sağlık raporuyla tespit edilirse belge kişiye **iade edilir**.
 - Bu durumda belge kişide bırakılmaz ve yetkili kurumca doğrudan iptal edilmez. Yol, geri alma ve sağlık muayenesidir.
 
-## Sayılar · Tescil ve sürücü belgesi: cezalar, yaşlar, süreler
+## Sayılar · Tescil ve sürücü belgesi: yaptırımlar, yaşlar, süreler
 
 <sub>md 21, 26, 36, 37, 39, 42, 44</sub>
 
 | Konu | Değer | md |
 |---|---|---|
-| Tescil belgesi ve plakası olmadan karayoluna çıkan sürücü | 46.000 TL; araç eksiklik giderilinceye kadar trafikten men | 21 |
-| Hurdaya çıkarılmış aracı karayolunda süren | 46.000 TL; araç men, mülki amir el koyar, mülkiyet kamuya geçer | 21 |
-| Ayırım işareti yükümlülüğüne veya yönetmeliğe aykırı sürücü | 690 TL | 26 |
-| İzin verilmeyen araçta ışıklı/sesli uyarı cihazı | 96.000 TL; belge 30 gün geri alınır, araç 30 gün men | 26 |
-| Aynı ihlal, son ihlalden geriye bir yıl içinde iki veya daha fazla kez | Her seferinde 192.000 TL; belge 60 gün geri alınır, araç 60 gün men | 26 |
-| İzinli araçta cihazı takılacağı yerlerin dışında bulundurma | 96.000 TL; son ihlalden geriye bir yıl içinde iki veya daha fazla kez ihlalde her seferinde 192.000 TL, belge 30 gün geri, araç 30 gün men | 26 |
+| Tescil belgesi ve plakası olmadan karayoluna çıkan sürücü | İdari para cezası; araç eksiklik giderilinceye kadar trafikten men | 21 |
+| Hurdaya çıkarılmış aracı karayolunda süren | İdari para cezası; araç men, mülki amir el koyar, mülkiyet kamuya geçer | 21 |
+| İzin verilmeyen araçta ışıklı/sesli uyarı cihazı | İdari para cezası; belge 30 gün geri alınır, araç 30 gün men | 26 |
+| Aynı ihlal, son ihlalden geriye bir yıl içinde iki veya daha fazla kez | Her seferinde daha yüksek idari para cezası; belge 60 gün geri alınır, araç 60 gün men | 26 |
+| İzinli araçta cihazı takılacağı yerlerin dışında bulundurma | İdari para cezası; son ihlalden geriye bir yıl içinde iki veya daha fazla kez ihlalde her seferinde daha yüksek ceza, belge 30 gün geri, araç 30 gün men | 26 |
 | 60 gün geri alınan belgenin iadesi | Psiko-teknik değerlendirme ve psikiyatri uzmanı muayenesi; ayrıca bu madde kapsamında geri alınan bütün belgelerde (otuz günlük geri almalar dahil) trafik idari para cezalarının tamamının tahsili | 26 |
-| Sürücü belgesi olmadan motorlu araç kullanma | 40.000 TL | 36 |
-| Belge geçici olarak ya da tedbiren geri alınmışken araç kullanma | 200.000 TL | 36 |
-| Belge iptal edilmişken araç kullanma | 200.000 TL | 36 |
-| Belgesiz sürüşe izin veren işleten | Tescil plakası üzerinden 40.000 TL | 36 |
+| Belgesiz sürüşe izin veren işleten | Tescil plakası üzerinden idari para cezası | 36 |
 | Bisiklet kullanma yaşı | 11 yaşını bitirmiş | 37 |
 | Elektrikli bisiklet ve elektrikli skuter kullanma yaşı | 15 yaşını bitirmiş | 37 |
 | Motorsuz taşıt kullanma ve hayvan sürme yaşı | 13 yaşını bitirmiş | 37 |
-| Belge sınıfı dışındaki aracı sürme | 700 TL; araç sahibine de tescil plakası üzerinden aynı miktar | 39 |
-| Geçerlilik süresi dolmuş belgeyle araç kullanma | 343 TL; sürücü belgesi geri alınır | 39 |
-| Dış ülke belgesiyle süre ve şartlara aykırı araç kullanma | Her seferinde 343 TL | 39 |
-| Sertifikayı sürücü belgesine dönüştürmeden araç kullanma | 700 TL; araç sahibine de tescil plakası üzerinden aynı miktar | 42 |
+| Belge sınıfı dışındaki aracı sürme | İdari para cezası; araç sahibine de tescil plakası üzerinden aynı miktar | 39 |
+| Geçerlilik süresi dolmuş belgeyle araç kullanma | İdari para cezası; sürücü belgesi geri alınır | 39 |
+| Dış ülke belgesiyle süre ve şartlara aykırı araç kullanma | Her seferinde idari para cezası | 39 |
+| Sertifikayı sürücü belgesine dönüştürmeden araç kullanma | İdari para cezası; araç sahibine de tescil plakası üzerinden aynı miktar | 42 |
 | İkamet adresi değişikliğini bildirme süresi | 30 gün | 44 |
 
 ## Karşılaştırma · Geri alma mı, iptal mi?

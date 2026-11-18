@@ -143,13 +143,15 @@ Hâkim kararı, mülkî âmir tarafından dernek yöneticilerine **yazıyla** du
 - **e)** Kanunların muhafaza altına alınmasına olanak verdiği kişilerin üstü veya eşyası.
 - **f)** 298 sayılı Kanun md 79'daki silâh taşıma yasağı kapsamında silâh taşıdığından şüphelenilen kişiler.
 
+**Not:** (c) ve (d) bentleri Yönetmelik metnindeki hâliyle verilmiştir. Sıkıyönetim Anayasa değişikliğiyle Anayasa'dan çıkarılmıştır; Olağanüstü Hâl Valiliği de bugün uygulamada yoktur. Sınavda Yönetmelik metni sorulur.
+
 **Özel işletme girişleri:** Kontrol, girmek isteyenin **rızasına** bağlıdır. Kontrolü kabul etmeyen bu yerlere giremez. Kontrolü esasta özel güvenlik görevlileri yapar. Yerin ve katılanların özel niteliklerine göre kolluk da önleme araması yapabilir.
 
 ## Tuzak · Sık karıştırılan: kararsız arama ve rıza
 
 <sub>md 19, 25</sub>
 
-- Olağanüstü hâlde emri **Olağanüstü Hâl Valisi** verir. Sıkıyönetimde emri **sıkıyönetim komutanı** verir. Şıklarda bu ikisi yer değiştirir. İçişleri Bakanı ve mülkî âmir de bu emirleri vermez.
+- Olağanüstü hâlde emri **Olağanüstü Hâl Valisi** verir. Sıkıyönetimde emri **sıkıyönetim komutanı** verir. Şıklarda bu ikisi yer değiştirir. İçişleri Bakanı ve mülkî âmir de bu emirleri vermez. Bu iki hâl Yönetmelik metnindeki hâliyle sorulur; ikisi de bugün uygulamada değildir.
 - **Sendika genel kurulunun yakın çevresinde** yapılacak arama, kararsız arama hâllerinden değildir. Bu yer önleme araması yapılabilen yerler arasındadır; bu yüzden hâkim kararı ya da gecikmesinde sakınca bulunan hâllerde mülkî âmirin yazılı emri gerekir.
 - Özel işletme girişinde kontrolü reddeden kişiye zor kullanılmaz. Kimliği alınıp içeri bırakılmaz, mülkî âmirden emir de istenmez. **Kişi o yere giremez.**
 
@@ -336,8 +338,8 @@ Diğer hâllerde arama kararı gösterilir. Gecikmesinde sakınca veya tehlike v
 |---|---|---|
 | Durdurmada kolluk âmiri kararının hâkim onayına sunulması | 24 saat içinde | 27 |
 | Hava meydanı, liman ve sınır kapısında kararsız arama | 5442 sayılı Kanun ek 1. madde | 25 |
-| Olağanüstü Hâl Valisinin emriyle arama | 2935 sayılı Kanun md 11 | 25 |
-| Sıkıyönetim komutanının emriyle arama | 1402 sayılı Kanun md 3 | 25 |
+| Olağanüstü Hâl Valisinin emriyle arama | 2935 sayılı Kanun md 11 (Yönetmelik metni) | 25 |
+| Sıkıyönetim komutanının emriyle arama | 1402 sayılı Kanun md 3 (Yönetmelik metni) | 25 |
 | Seçimde silâh taşıma yasağı kapsamında arama | 298 sayılı Kanun md 79 | 25 |
 | Gece adlî arama yapılabilen umuma açık yerler | 2559 sayılı Kanun md 7 | 31 |
 | Arama kararının verdiği yetki (aksine hüküm yoksa) | bir kez | 31 |

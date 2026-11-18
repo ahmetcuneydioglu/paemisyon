@@ -235,13 +235,6 @@
           ]
         },
         {
-          "label": "Aykırı hareketi tespit edilen yetkili işletme sahibine ceza",
-          "value": "1.700 TL",
-          "refs": [
-            "8"
-          ]
-        },
-        {
           "label": "Komisyondaki üniversite, vakıf, kamuya yararlı dernek veya kuruluş temsilcileri",
           "value": "Toplam en fazla 3",
           "refs": [
@@ -278,7 +271,7 @@
         "37",
         "39"
       ],
-      "body": "**Belgesiz sürüş (md 36)**\n- Motorlu araçların sürücü belgesi olmayan kişilerce karayollarında sürülmesi **ve sürülmesine izin verilmesi** yasaktır.\n- Araçları şu kişiler sürebilir: Yönetmelikte sınıfları belirtilen sürücü belgesine sahip olanlar, çok taraflı anlaşmalara göre sürücü belgesi bulunanlar veya geçerli uluslararası sürücü belgesi olanlar.\n- Belgesiz, belgesi geri alınmışken ya da belgesi iptal edilmişken araç kullanan sürücüye idari para cezası verilir. Sürülmesine izin veren **işletene de tescil plakası üzerinden** 40.000 Türk lirası idari para cezası verilir.\n\n**Belge gerekmeyenlerde yaş (md 37)**\nBu kişilerin sürücü belgesi alması zorunlu değildir, ama şu yaşları bitirmiş olmaları gerekir:\n- Bisiklet: **11**\n- Elektrikli bisiklet ve elektrikli skuter: **15**\n- Motorsuz taşıt kullananlar ve hayvan sürücüleri: **13**\n- Hepsinin bedensel ve ruhsal bakımdan sağlıklı olması da zorunludur. Bu şartlara uymayanlara araç kullandıranlar ve hayvan tevdi edenler cezalandırılır.\n\n**Sınıf ve süre (md 39)**\n- Belge sınıfının dışındaki aracı sürmek yasaktır. Sürücüye idari para cezası verilir; ona araç kullandıran araç sahibine de tescil plakası üzerinden aynı miktarda ceza verilir.\n- Sürücü belgeleri **süreli** verilir. Yenilenen belgeden harç alınmaz.\n- Geçerlilik süresi dolmuş belgeyle araç kullanan sürücüye idari para cezası verilir **ve sürücü belgesi geri alınır**.\n- Dış ülke belgesiyle, yönetmelikteki süre ve şartlara aykırı araç kullananlara her seferinde ceza verilir."
+      "body": "**Belgesiz sürüş (md 36)**\n- Motorlu araçların sürücü belgesi olmayan kişilerce karayollarında sürülmesi **ve sürülmesine izin verilmesi** yasaktır.\n- Araçları şu kişiler sürebilir: Yönetmelikte sınıfları belirtilen sürücü belgesine sahip olanlar, çok taraflı anlaşmalara göre sürücü belgesi bulunanlar veya geçerli uluslararası sürücü belgesi olanlar.\n- Belgesiz, belgesi geri alınmışken ya da belgesi iptal edilmişken araç kullanan sürücüye idari para cezası verilir. Sürülmesine izin veren **işletene de tescil plakası üzerinden** idari para cezası verilir.\n\n**Belge gerekmeyenlerde yaş (md 37)**\nBu kişilerin sürücü belgesi alması zorunlu değildir, ama şu yaşları bitirmiş olmaları gerekir:\n- Bisiklet: **11**\n- Elektrikli bisiklet ve elektrikli skuter: **15**\n- Motorsuz taşıt kullananlar ve hayvan sürücüleri: **13**\n- Hepsinin bedensel ve ruhsal bakımdan sağlıklı olması da zorunludur. Bu şartlara uymayanlara araç kullandıranlar ve hayvan tevdi edenler cezalandırılır.\n\n**Sınıf ve süre (md 39)**\n- Belge sınıfının dışındaki aracı sürmek yasaktır. Sürücüye idari para cezası verilir; ona araç kullandıran araç sahibine de tescil plakası üzerinden aynı miktarda ceza verilir.\n- Sürücü belgeleri **süreli** verilir. Yenilenen belgeden harç alınmaz.\n- Geçerlilik süresi dolmuş belgeyle araç kullanan sürücüye idari para cezası verilir **ve sürücü belgesi geri alınır**.\n- Dış ülke belgesiyle, yönetmelikteki süre ve şartlara aykırı araç kullananlara her seferinde ceza verilir."
     },
     {
       "type": "rule",
@@ -320,7 +313,7 @@
     },
     {
       "type": "numbers",
-      "title": "Tescil ve sürücü belgesi: cezalar, yaşlar, süreler",
+      "title": "Tescil ve sürücü belgesi: yaptırımlar, yaşlar, süreler",
       "articleRefs": [
         "21",
         "26",
@@ -333,42 +326,35 @@
       "rows": [
         {
           "label": "Tescil belgesi ve plakası olmadan karayoluna çıkan sürücü",
-          "value": "46.000 TL; araç eksiklik giderilinceye kadar trafikten men",
+          "value": "İdari para cezası; araç eksiklik giderilinceye kadar trafikten men",
           "refs": [
             "21"
           ]
         },
         {
           "label": "Hurdaya çıkarılmış aracı karayolunda süren",
-          "value": "46.000 TL; araç men, mülki amir el koyar, mülkiyet kamuya geçer",
+          "value": "İdari para cezası; araç men, mülki amir el koyar, mülkiyet kamuya geçer",
           "refs": [
             "21"
           ]
         },
         {
-          "label": "Ayırım işareti yükümlülüğüne veya yönetmeliğe aykırı sürücü",
-          "value": "690 TL",
-          "refs": [
-            "26"
-          ]
-        },
-        {
           "label": "İzin verilmeyen araçta ışıklı/sesli uyarı cihazı",
-          "value": "96.000 TL; belge 30 gün geri alınır, araç 30 gün men",
+          "value": "İdari para cezası; belge 30 gün geri alınır, araç 30 gün men",
           "refs": [
             "26"
           ]
         },
         {
           "label": "Aynı ihlal, son ihlalden geriye bir yıl içinde iki veya daha fazla kez",
-          "value": "Her seferinde 192.000 TL; belge 60 gün geri alınır, araç 60 gün men",
+          "value": "Her seferinde daha yüksek idari para cezası; belge 60 gün geri alınır, araç 60 gün men",
           "refs": [
             "26"
           ]
         },
         {
           "label": "İzinli araçta cihazı takılacağı yerlerin dışında bulundurma",
-          "value": "96.000 TL; son ihlalden geriye bir yıl içinde iki veya daha fazla kez ihlalde her seferinde 192.000 TL, belge 30 gün geri, araç 30 gün men",
+          "value": "İdari para cezası; son ihlalden geriye bir yıl içinde iki veya daha fazla kez ihlalde her seferinde daha yüksek ceza, belge 30 gün geri, araç 30 gün men",
           "refs": [
             "26"
           ]
@@ -381,29 +367,8 @@
           ]
         },
         {
-          "label": "Sürücü belgesi olmadan motorlu araç kullanma",
-          "value": "40.000 TL",
-          "refs": [
-            "36"
-          ]
-        },
-        {
-          "label": "Belge geçici olarak ya da tedbiren geri alınmışken araç kullanma",
-          "value": "200.000 TL",
-          "refs": [
-            "36"
-          ]
-        },
-        {
-          "label": "Belge iptal edilmişken araç kullanma",
-          "value": "200.000 TL",
-          "refs": [
-            "36"
-          ]
-        },
-        {
           "label": "Belgesiz sürüşe izin veren işleten",
-          "value": "Tescil plakası üzerinden 40.000 TL",
+          "value": "Tescil plakası üzerinden idari para cezası",
           "refs": [
             "36"
           ]
@@ -431,28 +396,28 @@
         },
         {
           "label": "Belge sınıfı dışındaki aracı sürme",
-          "value": "700 TL; araç sahibine de tescil plakası üzerinden aynı miktar",
+          "value": "İdari para cezası; araç sahibine de tescil plakası üzerinden aynı miktar",
           "refs": [
             "39"
           ]
         },
         {
           "label": "Geçerlilik süresi dolmuş belgeyle araç kullanma",
-          "value": "343 TL; sürücü belgesi geri alınır",
+          "value": "İdari para cezası; sürücü belgesi geri alınır",
           "refs": [
             "39"
           ]
         },
         {
           "label": "Dış ülke belgesiyle süre ve şartlara aykırı araç kullanma",
-          "value": "Her seferinde 343 TL",
+          "value": "Her seferinde idari para cezası",
           "refs": [
             "39"
           ]
         },
         {
           "label": "Sertifikayı sürücü belgesine dönüştürmeden araç kullanma",
-          "value": "700 TL; araç sahibine de tescil plakası üzerinden aynı miktar",
+          "value": "İdari para cezası; araç sahibine de tescil plakası üzerinden aynı miktar",
           "refs": [
             "42"
           ]

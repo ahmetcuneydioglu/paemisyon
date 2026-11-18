@@ -169,7 +169,7 @@ Belediye, belde sakinlerinin mahallî müşterek nitelikteki ihtiyaçlarını ka
 - **Borçlanmaya** karar vermek ve **şartlı bağışları** kabul etmek.
 - Taşınmaz alımına, satımına, takasına ve tahsisine karar vermek.
 - Taşınmazın **üç yıldan fazla** kiralanmasına ve **otuz yılı** geçmemek üzere sınırlı aynî hak tesisine karar vermek.
-- Vergi, resim ve harçlar dışında kalan ve **beşbin YTL**'den fazla dava konusu olan uyuşmazlıklarda sulh ile tasfiyeye, kabul ve feragate karar vermek.
+- Vergi, resim ve harçlar dışında kalan ve kanunda gösterilen tutardan fazla dava konusu olan uyuşmazlıklarda sulh ile tasfiyeye, kabul ve feragate karar vermek.
 - Belediye adına **imtiyaz** verilmesine, yap-işlet ve yap-işlet-devret modeline ve özelleştirmeye karar vermek.
 
 **Seçim, kadro ve yönetmelik:**
@@ -342,7 +342,7 @@ Bu konuda soru kökü çoğunlukla 'hangisi meclisin görevi değildir' diye sor
 |---|---|---|
 | Taşınmaz kiralamada meclis kararı | üç yıldan fazla | 18 |
 | Sınırlı aynî hak tesisi | otuz yılı geçmemek | 18 |
-| Meclisin sulh, kabul ve feragat yetkisi | beşbin YTL'den fazla uyuşmazlık | 18 |
+| Meclisin sulh, kabul ve feragat yetkisi | Kanunda gösterilen tutardan fazla uyuşmazlık | 18 |
 | Bütçe toplantısı süresi | en çok yirmi gün | 20 |
 | Diğer toplantıların süresi | en çok beş gün | 20 |
 | Yıllık tatil | bir ay | 20 |

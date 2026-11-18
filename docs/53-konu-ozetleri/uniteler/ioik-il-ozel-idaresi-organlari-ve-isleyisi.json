@@ -69,7 +69,7 @@
     {
       "type": "rule",
       "title": "Yetkiler ve imtiyazlar",
-      "body": "**Yetkiler (md 7, birinci fıkra):**\n- **a)** Kanunla verilen görevler için her türlü faaliyette bulunmak; izin ve ruhsat vermek, denetlemek.\n- **b)** Yönetmelik çıkarmak, emir vermek, yasak koymak, kanunlarda belirtilen cezaları vermek.\n- **c)** Taşınır ve taşınmaz mal almak, satmak, kiralamak, kiraya vermek, takas etmek, sınırlı aynî hak tesis etmek.\n- **d)** Borç almak ve bağış kabul etmek.\n- **e)** Vergi, resim ve harçlar dışında kalan ve miktarı yirmibeşmilyar Türk Lirasına kadar olan dava konusu uyuşmazlıkları anlaşmayla tasfiye etmek.\n- **f)** Kendine ait vergi, resim ve harçların tarh, tahakkuk ve tahsilini yapmak.\n- **g)** Belediye sınırları dışındaki gayri sıhhî müesseselere ve umuma açık istirahat ve eğlence yerlerine ruhsat vermek ve denetlemek.\n- **h)** Belediye sınırları dışında asansörlerin tescilini ve yıllık periyodik kontrolünü yapmak.\n\n**Diğer yetkiler:** Kamuoyu yoklaması ve araştırması yapabilir.\n\n**İmtiyazlar:**\n- İl özel idaresinin mallarına karşı suç işleyen, Devlet malına karşı suç işlemiş sayılır.\n- **Haczedilemeyenler:** proje karşılığı borçlanmayla elde edilen gelirler; vergi, resim ve harçlar; şartlı bağışlar; kamu hizmetlerinde fiilen kullanılan mallar.",
+      "body": "**Yetkiler (md 7, birinci fıkra):**\n- **a)** Kanunla verilen görevler için her türlü faaliyette bulunmak; izin ve ruhsat vermek, denetlemek.\n- **b)** Yönetmelik çıkarmak, emir vermek, yasak koymak, kanunlarda belirtilen cezaları vermek.\n- **c)** Taşınır ve taşınmaz mal almak, satmak, kiralamak, kiraya vermek, takas etmek, sınırlı aynî hak tesis etmek.\n- **d)** Borç almak ve bağış kabul etmek.\n- **e)** Vergi, resim ve harçlar dışında kalan ve miktarı kanunda gösterilen sınıra kadar olan dava konusu uyuşmazlıkları anlaşmayla tasfiye etmek.\n- **f)** Kendine ait vergi, resim ve harçların tarh, tahakkuk ve tahsilini yapmak.\n- **g)** Belediye sınırları dışındaki gayri sıhhî müesseselere ve umuma açık istirahat ve eğlence yerlerine ruhsat vermek ve denetlemek.\n- **h)** Belediye sınırları dışında asansörlerin tescilini ve yıllık periyodik kontrolünü yapmak.\n\n**Diğer yetkiler:** Kamuoyu yoklaması ve araştırması yapabilir.\n\n**İmtiyazlar:**\n- İl özel idaresinin mallarına karşı suç işleyen, Devlet malına karşı suç işlemiş sayılır.\n- **Haczedilemeyenler:** proje karşılığı borçlanmayla elde edilen gelirler; vergi, resim ve harçlar; şartlı bağışlar; kamu hizmetlerinde fiilen kullanılan mallar.",
       "articleRefs": [
         "7"
       ]
@@ -248,7 +248,7 @@
     {
       "type": "rule",
       "title": "İl encümeninin görev ve yetkileri",
-      "body": "- **a)** Stratejik plân, yıllık çalışma programı, bütçe ve kesin hesabı inceleyip meclise görüş bildirmek.\n- **b)** Yıllık çalışma programındaki işlerle ilgili **kamulaştırma kararlarını** almak ve uygulamak.\n- **c)** Öngörülmeyen giderler ödeneğinin harcama yerlerini belirlemek.\n- **d)** Bütçede fonksiyonel sınıflandırmanın **ikinci düzeyleri** arasında aktarma yapmak.\n- **e)** Kanunlarda öngörülen **cezaları vermek**.\n- **f)** Vergi, resim ve harçlar dışında kalan ve miktarı beşmilyar Türk Lirasına kadar olan ihtilafların sulhen halline karar vermek.\n- **g)** Taşınmaz satımı, trampa ve tahsis kararlarını uygulamak; süresi **üç yılı** geçmeyen kiralamaya karar vermek.\n- **h)** Belediye sınırları dışındaki umuma açık yerlerin **açılış ve kapanış saatlerini** belirlemek.\n- **i)** Valinin havale ettiği konularda görüş bildirmek.\n- **j)** Kanunlarla verilen diğer görevleri yapmak.",
+      "body": "- **a)** Stratejik plân, yıllık çalışma programı, bütçe ve kesin hesabı inceleyip meclise görüş bildirmek.\n- **b)** Yıllık çalışma programındaki işlerle ilgili **kamulaştırma kararlarını** almak ve uygulamak.\n- **c)** Öngörülmeyen giderler ödeneğinin harcama yerlerini belirlemek.\n- **d)** Bütçede fonksiyonel sınıflandırmanın **ikinci düzeyleri** arasında aktarma yapmak.\n- **e)** Kanunlarda öngörülen **cezaları vermek**.\n- **f)** Vergi, resim ve harçlar dışında kalan ve miktarı kanunda gösterilen sınıra kadar olan ihtilafların sulhen halline karar vermek.\n- **g)** Taşınmaz satımı, trampa ve tahsis kararlarını uygulamak; süresi **üç yılı** geçmeyen kiralamaya karar vermek.\n- **h)** Belediye sınırları dışındaki umuma açık yerlerin **açılış ve kapanış saatlerini** belirlemek.\n- **i)** Valinin havale ettiği konularda görüş bildirmek.\n- **j)** Kanunlarla verilen diğer görevleri yapmak.",
       "articleRefs": [
         "26"
       ]
@@ -376,13 +376,6 @@
           ]
         },
         {
-          "label": "Encümenin sulhen hal yetkisi",
-          "value": "beşmilyar TL'ye kadar",
-          "refs": [
-            "26"
-          ]
-        },
-        {
           "label": "Encümenin karar verebileceği kiralama",
           "value": "3 yılı geçmemek üzere",
           "refs": [
@@ -483,7 +476,7 @@
         },
         {
           "aspect": "Uyuşmazlık ve dava",
-          "left": "Vergi, resim ve harçlar dışında beşmilyar TL'ye kadar ihtilafların sulhen halline karar verir",
+          "left": "Vergi, resim ve harçlar dışında, kanunda gösterilen tutara kadar ihtilafların sulhen halline karar verir",
           "right": "Davacı veya davalı olarak temsil eder ya da vekil tayin eder",
           "refs": [
             "26",

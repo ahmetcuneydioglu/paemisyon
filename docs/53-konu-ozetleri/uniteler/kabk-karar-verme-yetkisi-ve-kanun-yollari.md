@@ -152,13 +152,13 @@ Merci soruları senaryoyla gelir. Kısa yol şu: karar mahkemeden çıktıysa su
 - Karar hukuka uygunsa: **“başvurunun reddine”**
 - Karar hukuka aykırıysa: **“idarî yaptırım kararının kaldırılmasına”**
 - Alt ve üst sınırı kanunda gösterilen para cezalarında mahkeme **miktarı değiştirerek** de başvurunun kabulüne karar verebilir.
-- **Onbeşbin Türk Lirası dahil** idarî para cezalarına karşı başvuru üzerine verilen kararlar **kesindir**.
+- **Onbeşbin Türk Lirası dahil** (kanun metnindeki tutar) idarî para cezalarına karşı başvuru üzerine verilen kararlar **kesindir**.
 
 ## Tuzak · Başvurunun incelenmesinde çeldiriciler
 
 <sub>md 28, 29</sub>
 
-Son karar sorularında ceza yargılamasının kalıplarına kapılma: beraat/mahkûmiyet, onama/bozma, iptal/yürütmenin durdurulması, düşme/durma burada yok. Mahkemenin son kararı **başvurunun reddi** ya da **idarî yaptırım kararının kaldırılması**dır; alt ve üst sınırı kanunda gösterilen para cezalarında mahkeme miktarı değiştirerek de başvurunun kabulüne karar verebilir. Kurumun cevap süresi **on beş gün**dür; “on gün” şıkkı tuzaktır, “iki hafta” ise son karara itiraz süresidir. Taraf mazeretsiz gelmezse dinleme zorunlu olarak ertelenmez; yokluğunda karar verilebilir. **Onbeşbin Türk Lirası dahil** cezalarda karar kesindir: itiraz, istinaf, idare mahkemesi ya da temyiz şıklarına kanma.
+Son karar sorularında ceza yargılamasının kalıplarına kapılma: beraat/mahkûmiyet, onama/bozma, iptal/yürütmenin durdurulması, düşme/durma burada yok. Mahkemenin son kararı **başvurunun reddi** ya da **idarî yaptırım kararının kaldırılması**dır; alt ve üst sınırı kanunda gösterilen para cezalarında mahkeme miktarı değiştirerek de başvurunun kabulüne karar verebilir. Kurumun cevap süresi **on beş gün**dür; “on gün” şıkkı tuzaktır, “iki hafta” ise son karara itiraz süresidir. Taraf mazeretsiz gelmezse dinleme zorunlu olarak ertelenmez; yokluğunda karar verilebilir. **Onbeşbin Türk Lirası dahil** (kanun metnindeki tutar) cezalarda karar kesindir: itiraz, istinaf, idare mahkemesi ya da temyiz şıklarına kanma.
 
 ## Kural · İtiraz yolu
 
@@ -201,7 +201,7 @@ Kurum, başvuruyu kabul edip kararını geri alabilir; bunun için başvuranın 
 | Kurumun cevap süresi | Dilekçenin tebliğinden itibaren en geç 15 gün | 28 |
 | Cevap dilekçesi nüshası | Başvuran kişi sayısından 1 fazla | 28 |
 | Dinleme günü ile tebligat günü arası | En az 1 hafta | 28 |
-| Kesin karar sınırı | onbeşbin Türk Lirası dahil idarî para cezaları | 28 |
+| Kesin karar sınırı | onbeşbin Türk Lirası dahil idarî para cezaları (kanun metnindeki tutar) | 28 |
 | Son karara itiraz süresi | Kararın tebliğinden itibaren en geç 2 hafta | 29 |
 
 ## Karşılaştırma · Başvuru ve itiraz

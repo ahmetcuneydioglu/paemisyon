@@ -70,7 +70,7 @@ Danıştay ve bölge idare mahkemesi görevli ve yetkili mahkemeyi kararlaştır
 - **Nereye?** Mahkemenin bulunduğu yargı çevresindeki **bölge idare mahkemesine**
 - **Ne zaman?** Kararın tebliğinden itibaren **otuz gün** içinde
 
-**İstisna — kesin kararlar:** Konusu **otuz bir bin Türk lirasını** geçmeyen aşağıdaki davalarda idare ve vergi mahkemelerince verilen kararlar kesindir ve istinaf yoluna başvurulamaz:
+**İstisna — kesin kararlar:** Konusu kanunda gösterilen **parasal sınırı** geçmeyen aşağıdaki davalarda idare ve vergi mahkemelerince verilen kararlar kesindir ve istinaf yoluna başvurulamaz:
 - Vergi davaları
 - Tam yargı davaları
 - İdari işlemlere karşı açılan iptal davaları
@@ -143,7 +143,7 @@ Israr kararının temyizini Danıştayın dava dairesi incelemez. İstemi konusu
 |---|---|---|
 | Bağlantı iddiasının reddine ilişkin ara karara karşı başvuru | Tebliğ tarihini izleyen 15 gün | 41 |
 | İdare ve vergi mahkemesi kararlarına karşı istinaf | Kararın tebliğinden itibaren 30 gün | 45 |
-| İstinafa kapalı (kesin) kararlarda parasal sınır | Konusu 31.000 TL'yi geçmeyen vergi, tam yargı ve iptal davaları | 45 |
+| İstinafa kapalı (kesin) kararlarda parasal sınır | Konusu kanunda gösterilen parasal sınırı geçmeyen vergi, tam yargı ve iptal davaları | 45 |
 | Bölge idare mahkemesinin 48 inci maddenin yedinci fıkrası uyarınca verdiği kararlara karşı temyiz | Tebliğ tarihini izleyen günden itibaren 7 gün | 45 |
 | Temyize açık olmayan bölge idare mahkemesi kararlarının ilk derece mahkemesince tebliğe çıkarılması | 7 gün | 45 |
 | Danıştay onama kararlarının taraflara tebliğe çıkarılması | Dosyanın geldiği tarihten itibaren 7 gün | 50 |

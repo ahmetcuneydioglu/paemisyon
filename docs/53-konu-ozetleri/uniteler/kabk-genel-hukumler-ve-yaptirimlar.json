@@ -248,7 +248,7 @@
     {
       "type": "rule",
       "title": "Soruşturma zamanaşımı",
-      "body": "Süre dolarsa kişi hakkında idarî para cezasına **karar verilemez**.\n\n**Süreler:**\n- 100.000 TL veya daha fazla idarî para cezası gerektiren kabahat: **5 yıl**\n- 50.000 TL veya daha fazla: **4 yıl**\n- 50.000 TL'den az: **3 yıl**\n- **Nispi** idarî para cezası gerektiren kabahat: **8 yıl**\n\n**Başlangıç:** Tanımdaki fiilin işlenmesi ya da neticenin gerçekleşmesi.\n**Fiil aynı zamanda suçsa:** Suça ilişkin dava zamanaşımı hükümleri uygulanır.\n**Özel kural:** Maddede sayılan kanunlarda (Karayolları Trafik Kanunu, Milletvekili Seçimi Kanunu, Nüfus Hizmetleri Kanunu, Karayolu Taşıma Kanunu, Askerlik Kanunu (89. maddesi hariç) gibi) belirtilen fiillerde, fiilin işlendiği tarihi takip eden **takvim yılının son günü** bitimine kadar idarî para cezası verilip tebliğ edilmezse idarî yaptırım kararı verilemez; verilmiş olanlar **düşer**.",
+      "body": "Süre dolarsa kişi hakkında idarî para cezasına **karar verilemez**.\n\n**Süreler:** Kabahatin gerektirdiği idarî para cezası büyüdükçe süre uzar; kademelerin parasal sınırları kanun metnindedir.\n- En yüksek kademe: **5 yıl**\n- Orta kademe: **4 yıl**\n- En düşük kademe: **3 yıl**\n- **Nispi** idarî para cezası gerektiren kabahat: **8 yıl**\n\n**Başlangıç:** Tanımdaki fiilin işlenmesi ya da neticenin gerçekleşmesi.\n**Fiil aynı zamanda suçsa:** Suça ilişkin dava zamanaşımı hükümleri uygulanır.\n**Özel kural:** Maddede sayılan kanunlarda (Karayolları Trafik Kanunu, Milletvekili Seçimi Kanunu, Nüfus Hizmetleri Kanunu, Karayolu Taşıma Kanunu, Askerlik Kanunu (89. maddesi hariç) gibi) belirtilen fiillerde, fiilin işlendiği tarihi takip eden **takvim yılının son günü** bitimine kadar idarî para cezası verilip tebliğ edilmezse idarî yaptırım kararı verilemez; verilmiş olanlar **düşer**.",
       "articleRefs": [
         "20"
       ]
@@ -256,7 +256,7 @@
     {
       "type": "rule",
       "title": "Yerine getirme zamanaşımı",
-      "body": "Süre dolarsa idarî para cezasına ya da mülkiyetin kamuya geçirilmesine ilişkin karar **artık yerine getirilemez**.\n\n**Süreler (karar verilen ceza miktarına göre):**\n- 50.000 TL veya daha fazla: **7 yıl**\n- 20.000 TL veya daha fazla: **5 yıl**\n- 10.000 TL veya daha fazla: **4 yıl**\n- 10.000 TL'den az: **3 yıl**\n- **Mülkiyetin kamuya geçirilmesi:** **10 yıl**\n\n**Başlangıç:** Kararın kesinleşmesinin rastladığı takvim yılını **takip eden takvim yılı başı**. Karar ya da tebliğ tarihi değil.\n**İşlemezlik:** Kanun hükmü gereği yerine getirmeye başlanamıyor ya da yerine getirilemiyorsa zamanaşımı **işlemez**.",
+      "body": "Süre dolarsa idarî para cezasına ya da mülkiyetin kamuya geçirilmesine ilişkin karar **artık yerine getirilemez**.\n\n**Süreler (karar verilen ceza miktarına göre):** Ceza büyüdükçe süre uzar; kademelerin parasal sınırları kanun metnindedir.\n- En yüksek kademe: **7 yıl**\n- İkinci kademe: **5 yıl**\n- Üçüncü kademe: **4 yıl**\n- En düşük kademe: **3 yıl**\n- **Mülkiyetin kamuya geçirilmesi:** **10 yıl**\n\n**Başlangıç:** Kararın kesinleşmesinin rastladığı takvim yılını **takip eden takvim yılı başı**. Karar ya da tebliğ tarihi değil.\n**İşlemezlik:** Kanun hükmü gereği yerine getirmeye başlanamıyor ya da yerine getirilemiyorsa zamanaşımı **işlemez**.",
       "articleRefs": [
         "21"
       ]
@@ -266,21 +266,21 @@
       "title": "Sayılar: zamanaşımı süreleri",
       "rows": [
         {
-          "label": "Soruşturma — 100.000 TL veya daha fazla",
+          "label": "Soruşturma — en yüksek parasal kademe",
           "value": "5 yıl",
           "refs": [
             "20"
           ]
         },
         {
-          "label": "Soruşturma — 50.000 TL veya daha fazla",
+          "label": "Soruşturma — orta kademe",
           "value": "4 yıl",
           "refs": [
             "20"
           ]
         },
         {
-          "label": "Soruşturma — 50.000 TL'den az",
+          "label": "Soruşturma — en düşük kademe",
           "value": "3 yıl",
           "refs": [
             "20"
@@ -294,28 +294,28 @@
           ]
         },
         {
-          "label": "Yerine getirme — 50.000 TL veya daha fazla",
+          "label": "Yerine getirme — en yüksek parasal kademe",
           "value": "7 yıl",
           "refs": [
             "21"
           ]
         },
         {
-          "label": "Yerine getirme — 20.000 TL veya daha fazla",
+          "label": "Yerine getirme — ikinci kademe",
           "value": "5 yıl",
           "refs": [
             "21"
           ]
         },
         {
-          "label": "Yerine getirme — 10.000 TL veya daha fazla",
+          "label": "Yerine getirme — üçüncü kademe",
           "value": "4 yıl",
           "refs": [
             "21"
           ]
         },
         {
-          "label": "Yerine getirme — 10.000 TL'den az",
+          "label": "Yerine getirme — en düşük kademe",
           "value": "3 yıl",
           "refs": [
             "21"
@@ -358,8 +358,8 @@
         },
         {
           "aspect": "En düşük kademe",
-          "left": "50.000 TL'den az: 3 yıl",
-          "right": "10.000 TL'den az: 3 yıl",
+          "left": "En düşük parasal kademe: 3 yıl",
+          "right": "En düşük parasal kademe: 3 yıl",
           "refs": [
             "20",
             "21"

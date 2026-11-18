@@ -231,7 +231,7 @@ Yakalanan kişi Cumhuriyet savcısınca bırakılması emredilmezse **soruşturm
 
 **Gönderme için zorunlu süre:** **12 saatten** fazla olamaz.
 
-Metinde ayrıca CMK 250. maddenin birinci fıkrasındaki suçlara bakan ağır ceza mahkemelerinin görev alanındaki suçlar için **48 saat** öngören fıkra yer alır; bu fıkra metinde Danıştay kararıyla **yürütmesi durdurulmuş** olarak gösterilir.
+Metinde ayrıca CMK 250. maddenin birinci fıkrasındaki suçlara bakan ağır ceza mahkemelerinin görev alanındaki suçlar için **48 saat** öngören fıkra yer alır; bu fıkra metinde Danıştay kararıyla **yürütmesi durdurulmuş** olarak gösterilir. Atıf yapılan CMK md 250 de sonradan yürürlükten kaldırılmıştır.
 
 Dikkat: Boşluk doldurma sorusunda doğru eşleşme **yirmi dört – on iki**dir. “Kırk sekiz – yirmi dört” ya da “yirmi dört – yirmi dört” gibi çiftler iki süreyi birbirine karıştırır.
 

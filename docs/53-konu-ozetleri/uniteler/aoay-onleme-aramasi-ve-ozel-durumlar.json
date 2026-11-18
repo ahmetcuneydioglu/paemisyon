@@ -175,7 +175,7 @@
     {
       "type": "rule",
       "title": "Ayrıca arama emri veya kararı gerekmeyen hâller",
-      "body": "- **a)** Kamu hizmetine özgülenmiş, giriş ve çıkışı kurala bağlı bina ve tesislere girenlerin üstü, eşyası ve aracı.\n- **b)** 5442 sayılı Kanun ek 1. madde kapsamında sivil hava meydanları, limanlar ve sınır kapıları. Burada yolcular X-ray'den geçirilir, gerektiğinde üstleri ve eşyaları aranır. Burada görevli kamu ve özel kuruluş personeli de aranabilir.\n- **c)** 2935 sayılı Kanun md 11 kapsamında **Olağanüstü Hâl Valisinin emriyle** kişilerin üstü ve eşyası.\n- **d)** 1402 sayılı Kanun md 3 kapsamında **sıkıyönetim komutanının emriyle** konut, dernek, parti, sendika binaları, işyerleri, gönderiler ve kişilerin üzeri.\n- **e)** Kanunların muhafaza altına alınmasına olanak verdiği kişilerin üstü veya eşyası.\n- **f)** 298 sayılı Kanun md 79'daki silâh taşıma yasağı kapsamında silâh taşıdığından şüphelenilen kişiler.\n\n**Özel işletme girişleri:** Kontrol, girmek isteyenin **rızasına** bağlıdır. Kontrolü kabul etmeyen bu yerlere giremez. Kontrolü esasta özel güvenlik görevlileri yapar. Yerin ve katılanların özel niteliklerine göre kolluk da önleme araması yapabilir.",
+      "body": "- **a)** Kamu hizmetine özgülenmiş, giriş ve çıkışı kurala bağlı bina ve tesislere girenlerin üstü, eşyası ve aracı.\n- **b)** 5442 sayılı Kanun ek 1. madde kapsamında sivil hava meydanları, limanlar ve sınır kapıları. Burada yolcular X-ray'den geçirilir, gerektiğinde üstleri ve eşyaları aranır. Burada görevli kamu ve özel kuruluş personeli de aranabilir.\n- **c)** 2935 sayılı Kanun md 11 kapsamında **Olağanüstü Hâl Valisinin emriyle** kişilerin üstü ve eşyası.\n- **d)** 1402 sayılı Kanun md 3 kapsamında **sıkıyönetim komutanının emriyle** konut, dernek, parti, sendika binaları, işyerleri, gönderiler ve kişilerin üzeri.\n- **e)** Kanunların muhafaza altına alınmasına olanak verdiği kişilerin üstü veya eşyası.\n- **f)** 298 sayılı Kanun md 79'daki silâh taşıma yasağı kapsamında silâh taşıdığından şüphelenilen kişiler.\n\n**Not:** (c) ve (d) bentleri Yönetmelik metnindeki hâliyle verilmiştir. Sıkıyönetim Anayasa değişikliğiyle Anayasa'dan çıkarılmıştır; Olağanüstü Hâl Valiliği de bugün uygulamada yoktur. Sınavda Yönetmelik metni sorulur.\n\n**Özel işletme girişleri:** Kontrol, girmek isteyenin **rızasına** bağlıdır. Kontrolü kabul etmeyen bu yerlere giremez. Kontrolü esasta özel güvenlik görevlileri yapar. Yerin ve katılanların özel niteliklerine göre kolluk da önleme araması yapabilir.",
       "articleRefs": [
         "25"
       ]
@@ -183,7 +183,7 @@
     {
       "type": "trap",
       "title": "Sık karıştırılan: kararsız arama ve rıza",
-      "body": "- Olağanüstü hâlde emri **Olağanüstü Hâl Valisi** verir. Sıkıyönetimde emri **sıkıyönetim komutanı** verir. Şıklarda bu ikisi yer değiştirir. İçişleri Bakanı ve mülkî âmir de bu emirleri vermez.\n- **Sendika genel kurulunun yakın çevresinde** yapılacak arama, kararsız arama hâllerinden değildir. Bu yer önleme araması yapılabilen yerler arasındadır; bu yüzden hâkim kararı ya da gecikmesinde sakınca bulunan hâllerde mülkî âmirin yazılı emri gerekir.\n- Özel işletme girişinde kontrolü reddeden kişiye zor kullanılmaz. Kimliği alınıp içeri bırakılmaz, mülkî âmirden emir de istenmez. **Kişi o yere giremez.**",
+      "body": "- Olağanüstü hâlde emri **Olağanüstü Hâl Valisi** verir. Sıkıyönetimde emri **sıkıyönetim komutanı** verir. Şıklarda bu ikisi yer değiştirir. İçişleri Bakanı ve mülkî âmir de bu emirleri vermez. Bu iki hâl Yönetmelik metnindeki hâliyle sorulur; ikisi de bugün uygulamada değildir.\n- **Sendika genel kurulunun yakın çevresinde** yapılacak arama, kararsız arama hâllerinden değildir. Bu yer önleme araması yapılabilen yerler arasındadır; bu yüzden hâkim kararı ya da gecikmesinde sakınca bulunan hâllerde mülkî âmirin yazılı emri gerekir.\n- Özel işletme girişinde kontrolü reddeden kişiye zor kullanılmaz. Kimliği alınıp içeri bırakılmaz, mülkî âmirden emir de istenmez. **Kişi o yere giremez.**",
       "articleRefs": [
         "19",
         "25"
@@ -288,14 +288,14 @@
         },
         {
           "label": "Olağanüstü Hâl Valisinin emriyle arama",
-          "value": "2935 sayılı Kanun md 11",
+          "value": "2935 sayılı Kanun md 11 (Yönetmelik metni)",
           "refs": [
             "25"
           ]
         },
         {
           "label": "Sıkıyönetim komutanının emriyle arama",
-          "value": "1402 sayılı Kanun md 3",
+          "value": "1402 sayılı Kanun md 3 (Yönetmelik metni)",
           "refs": [
             "25"
           ]

@@ -25,6 +25,7 @@ Gözaltı süreleri **azamî** sürelerdir. Yani bu süreler sana "en fazla bu k
 - **Yer:** Anayasa md 120 gereğince olağanüstü hâl ilân edilen bölgelerde yakalanan kişiler.
 - **Süre:** CMK md 91'de **dört gün** olarak belirlenen süre, savcının **talebi** ve **hâkim kararı** ile **yedi güne kadar** uzatılabilir.
 - **Dinleme:** Hâkim, karar vermeden önce yakalanan ve gözaltına alınan kişiyi dinler.
+- **Not:** Bu istisna Yönetmelik metnindeki hâliyle verilmiştir. Dayandığı CMK md 250 sonradan yürürlükten kaldırılmış, Anayasa md 120 de Anayasa değişikliğiyle yürürlükten kalkmıştır. Sınavda Yönetmelik metni sorulur; güncel hukuku kanundan kontrol et.
 
 **Dikkat:** Savcı emrinde her uzatma en çok bir gündür, iki gün değil.
 
@@ -177,6 +178,8 @@ Bu çocuklar hakkında şu kurallar uygulanır:
 - **Talep aranmaksızın:**
   - Kişi 18 yaşını doldurmamış, sağır veya dilsiz ya da kendini savunamayacak derecede malûlse ve müdafii de yoksa,
   - Üst sınırı en az **beş yıl** hapis cezasını gerektiren suçlarda.
+
+**Not:** Bu eşik Yönetmelik metnindeki hâliyle verilmiştir. CMK'nın zorunlu müdafiye ilişkin hükmü bugün farklı bir eşik (alt sınırı beş yıldan fazla hapis) kullanır.
 
 ## Kural · Müdafi ile görüşme
 
@@ -344,6 +347,7 @@ j) İfade tutanağa bağlanır. Tutanakta şunlar yer alır:
 **Yer gösterme — kim yaptırır?**
 - **Cumhuriyet savcısı:** Kendisine yüklenen suç hakkında **açıklamada bulunmuş** şüpheliye yaptırabilir.
 - **Adlî kolluk âmiri:** Yalnız CMK md 250'nin birinci fıkrası kapsamındaki suçlarda yetkilidir. Bunlar dışında kolluk âmirleri yaptıramaz.
+- **Not:** Bu kural Yönetmelik metnindeki hâliyle verilmiştir; atıf yapılan CMK md 250 sonradan yürürlükten kaldırılmıştır.
 
 **Yer gösterme — nasıl yapılır?**
 - Soruşturmanın gizliliği ilkesine uygun yapılır.
@@ -376,7 +380,7 @@ j) İfade tutanağa bağlanır. Tutanakta şunlar yer alır:
 |---|---|---|
 | İfadede hazır bulunabilecek müdafi | en çok üç | 20, 21 |
 | Talep aranmaksızın müdafi — yaş | 18 yaşını doldurmamış | 20 |
-| Talep aranmaksızın müdafi — suç | üst sınırı en az beş yıl hapis | 20 |
+| Talep aranmaksızın müdafi — suç | üst sınırı en az beş yıl hapis (Yönetmelik metni; CMK'da eşik farklı) | 20 |
 | Nezarethane genişliği | en az 7 metrekare | 25 |
 | Nezarethane yüksekliği | 2,5 metre | 25 |
 | Duvarlar arası mesafe | en az 2 metre | 25 |

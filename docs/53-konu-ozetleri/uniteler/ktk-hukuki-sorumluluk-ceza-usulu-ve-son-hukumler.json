@@ -231,7 +231,7 @@
     {
       "type": "rule",
       "title": "Basılı kâğıt, plaka ve sürücü belgesi geliri",
-      "body": "- **Cins ve nevi:** Trafik şube veya bürolarında ve sürücü kurslarında kullanılan basılı kâğıtların ve plakaların cins ve nevilerini İçişleri Bakanlığı ile Bayındırlık ve İskan Bakanlığı tespit eder.\n- **Basım:** Basılı kâğıtları ve plakaları **Türkiye Şoförler ve Otomobilciler Federasyonu** bastırır.\n- **Gelir payı:** Satıştan federasyona kalan net gelirin **%60'ı**, her yıl **Şubat ayı sonuna kadar** İçişleri Bakanlığı Merkez Saymanlığı hesabına yatırılır ve Emniyet Genel Müdürlüğü hizmetlerinde kullanılır. Kalanı federasyona aittir.\n- **Sürücü belgesi basımı:** 210 sayılı Değerli Kağıtlar Kanunu kapsamındaki sürücü belgelerini, Maliye ve Gümrük Bakanlığının görüşü alınarak **Emniyet Genel Müdürlüğü** bastırır.\n- **Sürücü belgesi geliri:** Belgelerin verilmesi ve yenilenmesi hizmetlerinden elde edilen gelirin **tamamı Türk Polis Teşkilatı Güçlendirme Vakfına** aittir.\n- **Yetkisiz basım veya dağıtım:** **10.000 Türk Lirası** idari para cezası verilir. Ayrıca Türk Ceza Kanununun 204. maddesine göre cezalandırılır.",
+      "body": "- **Cins ve nevi:** Trafik şube veya bürolarında ve sürücü kurslarında kullanılan basılı kâğıtların ve plakaların cins ve nevilerini İçişleri Bakanlığı ile Bayındırlık ve İskan Bakanlığı tespit eder.\n- **Basım:** Basılı kâğıtları ve plakaları **Türkiye Şoförler ve Otomobilciler Federasyonu** bastırır.\n- **Gelir payı:** Satıştan federasyona kalan net gelirin **%60'ı**, her yıl **Şubat ayı sonuna kadar** İçişleri Bakanlığı Merkez Saymanlığı hesabına yatırılır ve Emniyet Genel Müdürlüğü hizmetlerinde kullanılır. Kalanı federasyona aittir.\n- **Sürücü belgesi basımı:** 210 sayılı Değerli Kağıtlar Kanunu kapsamındaki sürücü belgelerini, Maliye ve Gümrük Bakanlığının görüşü alınarak **Emniyet Genel Müdürlüğü** bastırır.\n- **Sürücü belgesi geliri:** Belgelerin verilmesi ve yenilenmesi hizmetlerinden elde edilen gelirin **tamamı Türk Polis Teşkilatı Güçlendirme Vakfına** aittir.\n- **Yetkisiz basım veya dağıtım:** idari para cezası verilir. Ayrıca Türk Ceza Kanununun 204. maddesine göre cezalandırılır.",
       "articleRefs": [
         "131"
       ]
@@ -328,7 +328,7 @@
         },
         {
           "label": "Yetkisiz basım veya dağıtım",
-          "value": "10.000 TL idari para cezası + TCK md 204",
+          "value": "İdari para cezası + TCK md 204",
           "refs": [
             "131"
           ]

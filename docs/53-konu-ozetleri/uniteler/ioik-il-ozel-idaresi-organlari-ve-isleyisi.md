@@ -63,7 +63,7 @@ Turizm, gençlik ve spor, tarım ve toprağın korunması ise **il sınırları 
 - **b)** Yönetmelik çıkarmak, emir vermek, yasak koymak, kanunlarda belirtilen cezaları vermek.
 - **c)** Taşınır ve taşınmaz mal almak, satmak, kiralamak, kiraya vermek, takas etmek, sınırlı aynî hak tesis etmek.
 - **d)** Borç almak ve bağış kabul etmek.
-- **e)** Vergi, resim ve harçlar dışında kalan ve miktarı yirmibeşmilyar Türk Lirasına kadar olan dava konusu uyuşmazlıkları anlaşmayla tasfiye etmek.
+- **e)** Vergi, resim ve harçlar dışında kalan ve miktarı kanunda gösterilen sınıra kadar olan dava konusu uyuşmazlıkları anlaşmayla tasfiye etmek.
 - **f)** Kendine ait vergi, resim ve harçların tarh, tahakkuk ve tahsilini yapmak.
 - **g)** Belediye sınırları dışındaki gayri sıhhî müesseselere ve umuma açık istirahat ve eğlence yerlerine ruhsat vermek ve denetlemek.
 - **h)** Belediye sınırları dışında asansörlerin tescilini ve yıllık periyodik kontrolünü yapmak.
@@ -289,7 +289,7 @@ Toplantı sürelerini de karıştırma:
 - **c)** Öngörülmeyen giderler ödeneğinin harcama yerlerini belirlemek.
 - **d)** Bütçede fonksiyonel sınıflandırmanın **ikinci düzeyleri** arasında aktarma yapmak.
 - **e)** Kanunlarda öngörülen **cezaları vermek**.
-- **f)** Vergi, resim ve harçlar dışında kalan ve miktarı beşmilyar Türk Lirasına kadar olan ihtilafların sulhen halline karar vermek.
+- **f)** Vergi, resim ve harçlar dışında kalan ve miktarı kanunda gösterilen sınıra kadar olan ihtilafların sulhen halline karar vermek.
 - **g)** Taşınmaz satımı, trampa ve tahsis kararlarını uygulamak; süresi **üç yılı** geçmeyen kiralamaya karar vermek.
 - **h)** Belediye sınırları dışındaki umuma açık yerlerin **açılış ve kapanış saatlerini** belirlemek.
 - **i)** Valinin havale ettiği konularda görüş bildirmek.
@@ -411,7 +411,6 @@ Bir yaptırım kararını kimin aldığı sorulursa encümeni düşün.
 | Faaliyet raporu yetersizlik kararı | üye tam sayısının 3/4'ü | 18 |
 | Devamsızlık nedeniyle üyeliğin düşmesi | arka arkaya 3 birleşim günü ya da 1 yıl içindeki toplantıların yarısı | 21 |
 | Danıştay'ın erteleme kararı | en geç 1 ay | 22 |
-| Encümenin sulhen hal yetkisi | beşmilyar TL'ye kadar | 26 |
 | Encümenin karar verebileceği kiralama | 3 yılı geçmemek üzere | 26 |
 | Encümen toplantısı | haftada en az 1 defa | 27 |
 | Encümenin gündemi karara bağlama süresi | en geç 1 hafta | 27 |
@@ -430,7 +429,7 @@ Bir yaptırım kararını kimin aldığı sorulursa encümeni düşün.
 | Bütçe | Bütçe ve kesin hesabı inceleyip meclise görüş bildirir | Bütçeyi hazırlar ve uygular | 26, 30 |
 | Aktarma | Fonksiyonel sınıflandırmanın ikinci düzeyleri arasında | Meclis ve encümenin yetkisi dışında kalan aktarmalar | 26, 30 |
 | Taşınmaz mallar | Satım, trampa ve tahsis kararlarını uygular; üç yılı geçmeyen kiralamaya karar verir | Taşınır ve taşınmaz malları idare eder | 26, 30 |
-| Uyuşmazlık ve dava | Vergi, resim ve harçlar dışında beşmilyar TL'ye kadar ihtilafların sulhen halline karar verir | Davacı veya davalı olarak temsil eder ya da vekil tayin eder | 26, 30 |
+| Uyuşmazlık ve dava | Vergi, resim ve harçlar dışında, kanunda gösterilen tutara kadar ihtilafların sulhen halline karar verir | Davacı veya davalı olarak temsil eder ya da vekil tayin eder | 26, 30 |
 | Ceza ve önlem | Kanunlarda öngörülen cezaları verir | İl halkının huzur, esenlik, sağlık ve mutluluğu için önlem alır | 26, 30 |
 | Bağış | Sayılmamış | Şartsız bağışları kabul eder | 26, 30 |
 | Personel | Sayılmamış | İl özel idaresi personelini atar | 26, 30 |

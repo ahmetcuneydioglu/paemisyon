@@ -183,10 +183,10 @@ Saklı tutulan hükümlerde de liste sorusu gelir. Diğer kanunlarda belirli bir
 
 Süre dolarsa kişi hakkında idarî para cezasına **karar verilemez**.
 
-**Süreler:**
-- 100.000 TL veya daha fazla idarî para cezası gerektiren kabahat: **5 yıl**
-- 50.000 TL veya daha fazla: **4 yıl**
-- 50.000 TL'den az: **3 yıl**
+**Süreler:** Kabahatin gerektirdiği idarî para cezası büyüdükçe süre uzar; kademelerin parasal sınırları kanun metnindedir.
+- En yüksek kademe: **5 yıl**
+- Orta kademe: **4 yıl**
+- En düşük kademe: **3 yıl**
 - **Nispi** idarî para cezası gerektiren kabahat: **8 yıl**
 
 **Başlangıç:** Tanımdaki fiilin işlenmesi ya da neticenin gerçekleşmesi.
@@ -199,11 +199,11 @@ Süre dolarsa kişi hakkında idarî para cezasına **karar verilemez**.
 
 Süre dolarsa idarî para cezasına ya da mülkiyetin kamuya geçirilmesine ilişkin karar **artık yerine getirilemez**.
 
-**Süreler (karar verilen ceza miktarına göre):**
-- 50.000 TL veya daha fazla: **7 yıl**
-- 20.000 TL veya daha fazla: **5 yıl**
-- 10.000 TL veya daha fazla: **4 yıl**
-- 10.000 TL'den az: **3 yıl**
+**Süreler (karar verilen ceza miktarına göre):** Ceza büyüdükçe süre uzar; kademelerin parasal sınırları kanun metnindedir.
+- En yüksek kademe: **7 yıl**
+- İkinci kademe: **5 yıl**
+- Üçüncü kademe: **4 yıl**
+- En düşük kademe: **3 yıl**
 - **Mülkiyetin kamuya geçirilmesi:** **10 yıl**
 
 **Başlangıç:** Kararın kesinleşmesinin rastladığı takvim yılını **takip eden takvim yılı başı**. Karar ya da tebliğ tarihi değil.
@@ -215,14 +215,14 @@ Süre dolarsa idarî para cezasına ya da mülkiyetin kamuya geçirilmesine ili�
 
 | Konu | Değer | md |
 |---|---|---|
-| Soruşturma — 100.000 TL veya daha fazla | 5 yıl | 20 |
-| Soruşturma — 50.000 TL veya daha fazla | 4 yıl | 20 |
-| Soruşturma — 50.000 TL'den az | 3 yıl | 20 |
+| Soruşturma — en yüksek parasal kademe | 5 yıl | 20 |
+| Soruşturma — orta kademe | 4 yıl | 20 |
+| Soruşturma — en düşük kademe | 3 yıl | 20 |
 | Soruşturma — nispi idarî para cezası | 8 yıl | 20 |
-| Yerine getirme — 50.000 TL veya daha fazla | 7 yıl | 21 |
-| Yerine getirme — 20.000 TL veya daha fazla | 5 yıl | 21 |
-| Yerine getirme — 10.000 TL veya daha fazla | 4 yıl | 21 |
-| Yerine getirme — 10.000 TL'den az | 3 yıl | 21 |
+| Yerine getirme — en yüksek parasal kademe | 7 yıl | 21 |
+| Yerine getirme — ikinci kademe | 5 yıl | 21 |
+| Yerine getirme — üçüncü kademe | 4 yıl | 21 |
+| Yerine getirme — en düşük kademe | 3 yıl | 21 |
 | Yerine getirme — mülkiyetin kamuya geçirilmesi | 10 yıl | 21 |
 
 ## Karşılaştırma · Soruşturma zamanaşımı ve yerine getirme zamanaşımı
@@ -233,7 +233,7 @@ Süre dolarsa idarî para cezasına ya da mülkiyetin kamuya geçirilmesine ili�
 |---|---|---|---|
 | Dolmasının sonucu | İdarî para cezasına karar verilemez | Karar artık yerine getirilemez | 20, 21 |
 | Süreyi belirleyen | Kabahatin gerektirdiği idarî para cezası | Karar verilen idarî para cezası | 20, 21 |
-| En düşük kademe | 50.000 TL'den az: 3 yıl | 10.000 TL'den az: 3 yıl | 20, 21 |
+| En düşük kademe | En düşük parasal kademe: 3 yıl | En düşük parasal kademe: 3 yıl | 20, 21 |
 | Özel süre | Nispi idarî para cezası: 8 yıl | Mülkiyetin kamuya geçirilmesi: 10 yıl | 20, 21 |
 | Başlangıç | Fiilin işlenmesi ya da neticenin gerçekleşmesi | Kesinleşmenin rastladığı takvim yılını takip eden takvim yılı başı | 20, 21 |
 | Özel durum | Fiil aynı zamanda suçsa dava zamanaşımı hükümleri | Kanun gereği yerine getirilemiyorsa zamanaşımı işlemez | 20, 21 |

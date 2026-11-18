@@ -190,7 +190,7 @@ Dikkat: Kararı trafik kuruluşu değil mahkeme verir. Süre ceza süresini aşa
 - **Gelir payı:** Satıştan federasyona kalan net gelirin **%60'ı**, her yıl **Şubat ayı sonuna kadar** İçişleri Bakanlığı Merkez Saymanlığı hesabına yatırılır ve Emniyet Genel Müdürlüğü hizmetlerinde kullanılır. Kalanı federasyona aittir.
 - **Sürücü belgesi basımı:** 210 sayılı Değerli Kağıtlar Kanunu kapsamındaki sürücü belgelerini, Maliye ve Gümrük Bakanlığının görüşü alınarak **Emniyet Genel Müdürlüğü** bastırır.
 - **Sürücü belgesi geliri:** Belgelerin verilmesi ve yenilenmesi hizmetlerinden elde edilen gelirin **tamamı Türk Polis Teşkilatı Güçlendirme Vakfına** aittir.
-- **Yetkisiz basım veya dağıtım:** **10.000 Türk Lirası** idari para cezası verilir. Ayrıca Türk Ceza Kanununun 204. maddesine göre cezalandırılır.
+- **Yetkisiz basım veya dağıtım:** idari para cezası verilir. Ayrıca Türk Ceza Kanununun 204. maddesine göre cezalandırılır.
 
 ## Kural · Sicil kayıtları ve taşıma kısıtlaması
 
@@ -240,7 +240,7 @@ Bu maddelerde soru çoğu zaman «hangi kurum?» diye gelir ve şıklarda birbir
 | Ölümlü kazada asli kusur | 1 yıl geri alma | 118 |
 | Diğer cürümlerde geçici geri alma | Ceza süresini geçmemek üzere, infazdan sonra | 119 |
 | Federasyon net gelirinden yatırılan pay | %60, Şubat ayı sonuna kadar | 131 |
-| Yetkisiz basım veya dağıtım | 10.000 TL idari para cezası + TCK md 204 | 131 |
+| Yetkisiz basım veya dağıtım | İdari para cezası + TCK md 204 | 131 |
 | Sürücü belgesi verme ve yenileme geliri | Tamamı Türk Polis Teşkilatı Güçlendirme Vakfına | 131 |
 
 ## Karşılaştırma · Tebligat: araç sahibine (md 116) mi, yabancı plakaya (md 115) mı?

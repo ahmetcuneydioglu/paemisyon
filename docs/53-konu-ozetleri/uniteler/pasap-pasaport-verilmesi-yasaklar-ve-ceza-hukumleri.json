@@ -224,7 +224,7 @@
     {
       "type": "rule",
       "title": "Vize muafiyeti ve pasaportsuz giriş cezası",
-      "body": "**md 27:** Yabancıların aşağıdaki pasaportlarına verilen vizeler **hiçbir harca veya resme tabi değildir**:\n- diplomatik pasaportlar,\n- bu Kanundaki hususi ve servis damgalı pasaportlara karşılık gelen pasaportlar.\n\nMaddede bu muafiyete bağlanmış başka bir şart sayılmaz.\n\n**md 34:** Türkiye Cumhuriyeti sınırlarından her nasılsa **pasaportsuz girmiş vatandaşlara** **bin TL'den üç bin TL'ye kadar idarî para cezası** verilir. Yaptırım hapis cezası, adli para cezası, vatandaşlıktan çıkarma ya da sınır dışı etme değildir.",
+      "body": "**md 27:** Yabancıların aşağıdaki pasaportlarına verilen vizeler **hiçbir harca veya resme tabi değildir**:\n- diplomatik pasaportlar,\n- bu Kanundaki hususi ve servis damgalı pasaportlara karşılık gelen pasaportlar.\n\nMaddede bu muafiyete bağlanmış başka bir şart sayılmaz.\n\n**md 34:** Türkiye Cumhuriyeti sınırlarından her nasılsa **pasaportsuz girmiş vatandaşlara** **idarî para cezası** verilir. Yaptırım hapis cezası, adli para cezası, vatandaşlıktan çıkarma ya da sınır dışı etme değildir.",
       "articleRefs": [
         "27",
         "34"
@@ -232,7 +232,7 @@
     },
     {
       "type": "numbers",
-      "title": "Sayılar: md 18 ve md 34",
+      "title": "Sayılar: md 18",
       "rows": [
         {
           "label": "Yabancılara mahsus pasaport nevi sayısı",
@@ -261,25 +261,10 @@
           "refs": [
             "18"
           ]
-        },
-        {
-          "label": "Pasaportsuz giren vatandaş: idarî para cezası alt sınırı",
-          "value": "1.000 TL",
-          "refs": [
-            "34"
-          ]
-        },
-        {
-          "label": "Pasaportsuz giren vatandaş: idarî para cezası üst sınırı",
-          "value": "3.000 TL",
-          "refs": [
-            "34"
-          ]
         }
       ],
       "articleRefs": [
-        "18",
-        "34"
+        "18"
       ]
     },
     {

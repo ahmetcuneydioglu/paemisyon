@@ -194,7 +194,7 @@
     {
       "type": "rule",
       "title": "Haksız mal edinmenin cezası",
-      "body": "**Haksız mal edinme:** Kanunun daha ağır bir cezayı gerektirmediği takdirde **üç yıldan beş yıla kadar hapis** ve **beş milyon liradan on milyon liraya kadar ağır para cezası** verilir.\n\n**Haksız edinilen malı kaçırma veya gizleme:** Aynı ceza verilir.",
+      "body": "**Haksız mal edinme:** Kanunun daha ağır bir cezayı gerektirmediği takdirde **üç yıldan beş yıla kadar hapis** ve **ağır para cezası** verilir.\n\n**Haksız edinilen malı kaçırma veya gizleme:** Aynı ceza verilir.",
       "articleRefs": [
         "13"
       ]
@@ -248,13 +248,6 @@
         {
           "label": "Haksız mal edinme — hapis",
           "value": "Üç yıldan beş yıla kadar",
-          "refs": [
-            "13"
-          ]
-        },
-        {
-          "label": "Haksız mal edinme — ağır para cezası",
-          "value": "Beş milyon liradan on milyon liraya kadar",
           "refs": [
             "13"
           ]
