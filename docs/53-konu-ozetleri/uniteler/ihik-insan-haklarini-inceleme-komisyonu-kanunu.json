@@ -1,0 +1,456 @@
+{
+  "unit": {
+    "slug": "ihik-insan-haklarini-inceleme-komisyonu-kanunu",
+    "legislationSlug": "3686-sayili-insan-haklarini-inceleme-komisyonu-kanunu",
+    "topicId": "3a4a4920-5abf-48ac-8e49-4c409475d7e5",
+    "title": "İnsan Haklarını İnceleme Komisyonu",
+    "subtitle": "TBMM'deki İnsan Haklarını İnceleme Komisyonunun kuruluşu, görevleri, yetkileri ve çalışma usulü",
+    "articleFrom": "1",
+    "articleTo": "10",
+    "readingMinutes": 5,
+    "sourceLabel": "AI özeti — 3686 Sayılı İnsan Haklarını İnceleme Komisyonu Kanunu, md 1–8, 10",
+    "articleNos": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "10"
+    ],
+    "generatedBy": "claude-opus-5-5 (ozet-uret.ts)",
+    "sortOrder": 1
+  },
+  "blocks": [
+    {
+      "type": "concept",
+      "title": "Komisyon neden var?",
+      "body": "Bu Kanun, **Türkiye Büyük Millet Meclisinde** kurulan bir komisyonu düzenler: İnsan Haklarını İnceleme Komisyonu. Komisyonun amacı, Dünya'da ve ülkemizde insan haklarına saygıyı ve bu konudaki gelişmeleri izlemek, uygulamaların bu gelişmelere uyumunu sağlamak ve başvuruları incelemektir. Kanun da bu komisyonun kuruluşunu, görevlerini, yetkilerini, çalışma usul ve esaslarını düzenler. Aklında şöyle kalsın: Bu bir Meclis komisyonudur. Bakanlığa bağlı bir kurum değildir.",
+      "articleRefs": [
+        "1"
+      ]
+    },
+    {
+      "type": "concept",
+      "title": "Hangi haklar kapsamda?",
+      "body": "Kanunun kapsamı geniştir. Bir yanda T.C. Anayasası ile İnsan Hakları Evrensel Beyannamesi ve Avrupa İnsan Hakları Sözleşmesi gibi **çok taraflı uluslararası belgelerde** belirlenmiş insan hak ve hürriyetleri vardır. Öbür yanda **uluslararası alanda genel kabul gören** insan hakları vardır. Yani komisyon yalnızca Anayasa'daki haklarla sınırlı değildir; uluslararası belgelerdeki ve genel kabul gören haklar da kapsamdadır.",
+      "articleRefs": [
+        "2"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Üye sayısı ve temsil",
+      "body": "**Üye sayısı:** Danışma Kurulunun teklifi üzerine **Genel Kurulca** belirlenir.\n\n**Temsil:** Siyasi parti grupları ile bağımsızlar komisyonda temsil edilir. Temsil, Meclisteki sayılarının üye tamsayısına nispet edilmesiyle bulunan yüzde oranına göre yapılır. Bu hesapta **boş üyelikler hariç** tutulur.",
+      "articleRefs": [
+        "3"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Komisyon üyeliği için seçim ve görev süresi",
+      "body": "- Bir yasama döneminde **iki seçim** yapılır.\n- **İlk seçilenlerin** görev süresi **iki yıldır**.\n- **İkinci devre** için seçilenlerin görev süresi **o yasama döneminin sonuna kadar** devam eder.",
+      "articleRefs": [
+        "3"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Komisyonun başkanlık seçimi",
+      "body": "Komisyon, siyasi parti gruplarının yüzde oranlarına göre şu görevlileri seçer: **bir başkan, iki başkanvekili, bir sözcü ve bir katip**.\n\n**Toplanma:** Bu seçim için Komisyon üye tamsayısının **salt çoğunluğuyla** toplanır. (Olağan toplantı yeter sayısı ise üye tamsayısının en az üçte biridir, md 6.)\n**Seçim:** Toplantıya katılanların **salt çoğunluğunun gizli oyuyla** yapılır.",
+      "articleRefs": [
+        "3",
+        "6"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Görevler: izleme, uyum, kanun teklifleri",
+      "body": "Komisyonun görevlerinin ilk kısmı şunlardır:\n- **a)** Uluslararası alanda genel kabul gören insan hakları konusundaki gelişmeleri izlemek.\n- **b)** Türkiye'nin insan hakları alanında taraf olduğu uluslararası andlaşmalar ile Anayasa, diğer milli mevzuat ve uygulamalar arasında uyum için gereken değişiklikleri tespit etmek ve bu amaçla yasal düzenlemeler önermek.\n- **c)** TBMM Başkanlığınca havale edilen kanun tekliflerini ve **olağanüstü hal sırasında çıkarılan Cumhurbaşkanlığı kararnamelerini** görüşmek. Ayrıca TBMM komisyonlarının gündemindeki konular hakkında **istem üzerine** görüş ve öneri bildirmek.",
+      "articleRefs": [
+        "4"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Görevler (devam): inceleme, başvuru, dış ülkeler, rapor",
+      "body": "Görevlerin ikinci kısmı şunlardır:\n- **d)** Türkiye'nin insan hakları uygulamalarının, taraf olduğu uluslararası andlaşmalara, Anayasa ve Kanunlara uygunluğunu incelemek. Bu amaçla araştırmalar yapmak, iyileştirmeler ve çözümler önermek.\n- **e)** İnsan haklarının ihlale uğradığına dair iddialarla ilgili başvuruları incelemek ya da gerekli gördüğü hallerde ilgili mercilere iletmek.\n- **f)** Gerektiğinde **dış ülkelerdeki** insan hakları ihlallerini incelemek. Bu ihlalleri o ülke parlamenterlerinin dikkatine doğrudan ya da mevcut parlamenter forumlar aracılığıyla sunmak.\n- **g)** **Her yıl** yapılan çalışmaları, elde edilen sonuçları ve yurtiçi ile yurtdışında insan haklarına saygı ve uygulamaları kapsayan bir rapor hazırlamak.",
+      "articleRefs": [
+        "4"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Komisyonun yetkileri",
+      "body": "Komisyon, görevleriyle ilgili olarak şu kurumlardan **bilgi isteyebilir** ve **buralarda inceleme yapabilir**:\n- Bakanlıklar\n- Genel ve Katma Bütçeli Daireler\n- mahalli idareler ve muhtarlıklar\n- üniversiteler\n- diğer kamu kurum ve kuruluşları\n- **özel kuruluşlar**\n\nKomisyon ayrıca ilgililerini **çağırıp bilgi alabilir**. Gerekli gördüğünde uygun bulacağı uzmanların bilgilerine başvurabilir. **Ankara dışında da** çalışabilir.\n\n**Not:** \"Genel ve Katma Bütçeli Daireler\" ibaresi madde metnindeki hâliyle verilmiştir; katma bütçe ayrımı bugünkü bütçe sisteminde yer almaz.",
+      "articleRefs": [
+        "5"
+      ]
+    },
+    {
+      "type": "numbers",
+      "title": "Kuruluş ve görevlerde sayılar",
+      "rows": [
+        {
+          "label": "Bir yasama döneminde yapılan üyelik seçimi",
+          "value": "İki",
+          "refs": [
+            "3"
+          ]
+        },
+        {
+          "label": "İlk seçilenlerin görev süresi",
+          "value": "İki yıl",
+          "refs": [
+            "3"
+          ]
+        },
+        {
+          "label": "İkinci devre seçilenlerin görev süresi",
+          "value": "O yasama döneminin sonuna kadar",
+          "refs": [
+            "3"
+          ]
+        },
+        {
+          "label": "Başkan",
+          "value": "Bir",
+          "refs": [
+            "3"
+          ]
+        },
+        {
+          "label": "Başkanvekili",
+          "value": "İki",
+          "refs": [
+            "3"
+          ]
+        },
+        {
+          "label": "Sözcü",
+          "value": "Bir",
+          "refs": [
+            "3"
+          ]
+        },
+        {
+          "label": "Katip",
+          "value": "Bir",
+          "refs": [
+            "3"
+          ]
+        },
+        {
+          "label": "Başkanlık seçimi için toplanma",
+          "value": "Üye tamsayısının salt çoğunluğu",
+          "refs": [
+            "3"
+          ]
+        },
+        {
+          "label": "Başkanlık seçimi",
+          "value": "Toplantıya katılanların salt çoğunluğu, gizli oy",
+          "refs": [
+            "3"
+          ]
+        },
+        {
+          "label": "Faaliyet raporu",
+          "value": "Her yıl",
+          "refs": [
+            "4"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "3",
+        "4"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Toplantı ve karar yeter sayısı",
+      "body": "**Toplantı:** Komisyon, üye tamsayısının **en az üçte biri** ile toplanır.\n**Karar:** Toplantıya katılanların **salt çoğunluğu** ile karar verir.\n**Alt sınır:** Karar yeter sayısı **hiçbir şekilde** üye tamsayısının **dörtte birinin bir fazlasından** az olamaz.",
+      "articleRefs": [
+        "6"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Alt komisyonlar ve raporların yolu",
+      "body": "Komisyon, incelemelerini **alt komisyonlar** kurarak da yapabilir.\n\nRaporların izlediği yol şöyledir:\n- Komisyon, görevleriyle ilgili raporlarını **TBMM Başkanlığına** sunar.\n- Raporlar, **Danışma Kurulunun görüş ve önerisi** ile Genel Kurul gündemine alınabilir. Genel Kurul, raporu okuyarak ya da üzerinde görüşme açarak bilgi edinir.\n- Raporlar **Cumhurbaşkanlığı ve ilgili bakanlıklara** da Başkanlıkça gönderilir.",
+      "articleRefs": [
+        "6"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Sorumlular hakkında bildirim ve giderler",
+      "body": "**Kovuşturma için bildirim:** Komisyon gerekli görürse, inceleme konusunun sorumluları hakkında genel hükümlere göre kovuşturma veya işlem yapılabilmesi için Komisyon raporu ilgili mercie bildirilir. Bildirimi **TBMM Başkanlığı** yapar.\n\n**Giderler:** Komisyon çalışmalarıyla ilgili yurtiçi ve yurtdışı görevlendirme giderlerinin karşılanması için iki şey gerekir:\n- Komisyonun Kararı\n- TBMM Başkanının onayı\n\nGiderler **6245 sayılı Harcırah Kanunu** hükümlerine göre **TBMM Bütçesinden** karşılanır.",
+      "articleRefs": [
+        "6"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Başvuruların incelenmesi ve sonucun bildirilmesi",
+      "body": "Komisyon, **TBMM Başkanlığınca havale olunan** başvurularla ilgili konuları inceler.\n\nKomisyon, başvuru sahibine **en geç altmış gün içinde** bilgi verir. Bu bilgi, başvurunun **sonucu** ya da **yapılmakta olan işlem** hakkındadır.",
+      "articleRefs": [
+        "7"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Uygulanacak İçtüzük ve denetim",
+      "body": "Bu Kanunda **sarahat olmayan hallerde** Komisyonun çalışmalarına **TBMM İçtüzüğü** hükümleri uygulanır.\n\nTBMM Başkanının, İçtüzük gereğince komisyonlar üzerinde sahip olduğu **denetleme yetkisi** bu Komisyon için de geçerlidir.",
+      "articleRefs": [
+        "8"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Yürütme",
+      "body": "Bu Kanun hükümlerini **TBMM Başkanı** ile **Bakanlar Kurulu** yürütür.\n\n**Not:** Yürütme maddesi metnindeki hâliyle verilmiştir.",
+      "articleRefs": [
+        "10"
+      ]
+    },
+    {
+      "type": "numbers",
+      "title": "Çalışma usulünde sayılar ve süreler",
+      "rows": [
+        {
+          "label": "Üye sayısını belirleyen",
+          "value": "Genel Kurul (Danışma Kurulunun teklifi üzerine)",
+          "refs": [
+            "3"
+          ]
+        },
+        {
+          "label": "Toplantı yeter sayısı",
+          "value": "Üye tamsayısının en az üçte biri",
+          "refs": [
+            "6"
+          ]
+        },
+        {
+          "label": "Karar yeter sayısı",
+          "value": "Toplantıya katılanların salt çoğunluğu",
+          "refs": [
+            "6"
+          ]
+        },
+        {
+          "label": "Karar yeter sayısının alt sınırı",
+          "value": "Üye tamsayısının dörtte birinin bir fazlası",
+          "refs": [
+            "6"
+          ]
+        },
+        {
+          "label": "Başvuru sahibine bilgi verme süresi",
+          "value": "En geç altmış gün",
+          "refs": [
+            "7"
+          ]
+        },
+        {
+          "label": "Görevlendirme giderlerinde uygulanan kanun",
+          "value": "6245 sayılı Harcırah Kanunu",
+          "refs": [
+            "6"
+          ]
+        },
+        {
+          "label": "Giderlerin karşılandığı bütçe",
+          "value": "TBMM Bütçesi",
+          "refs": [
+            "6"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "3",
+        "6",
+        "7"
+      ]
+    },
+    {
+      "type": "compare",
+      "title": "Başkanlık seçimi ile olağan karar",
+      "rows": [
+        {
+          "aspect": "Toplanma",
+          "left": "Üye tamsayısının salt çoğunluğu",
+          "right": "Üye tamsayısının en az üçte biri",
+          "refs": [
+            "3",
+            "6"
+          ]
+        },
+        {
+          "aspect": "Karar",
+          "left": "Toplantıya katılanların salt çoğunluğu",
+          "right": "Toplantıya katılanların salt çoğunluğu",
+          "refs": [
+            "3",
+            "6"
+          ]
+        },
+        {
+          "aspect": "Oylama biçimi",
+          "left": "Gizli oy",
+          "right": "Kanunda ayrıca belirtilmemiştir; sarahat olmayan hallerde TBMM İçtüzüğü uygulanır",
+          "refs": [
+            "3",
+            "8"
+          ]
+        },
+        {
+          "aspect": "Alt sınır",
+          "left": "Kanunda ayrıca belirtilmemiştir",
+          "right": "Üye tamsayısının dörtte birinin bir fazlasından az olamaz",
+          "refs": [
+            "3",
+            "6"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "3",
+        "6",
+        "8"
+      ]
+    },
+    {
+      "type": "compare",
+      "title": "Başvuru ile rapor",
+      "rows": [
+        {
+          "aspect": "Komisyona geliş / Komisyondan çıkış",
+          "left": "TBMM Başkanlığınca havale edilir",
+          "right": "Komisyon tarafından TBMM Başkanlığına sunulur",
+          "refs": [
+            "7",
+            "6"
+          ]
+        },
+        {
+          "aspect": "Konu",
+          "left": "İnsan haklarının ihlale uğradığına dair iddialar",
+          "right": "Görevlerle ilgili çalışmalar; yıllık raporda çalışmalar, sonuçlar, yurtiçi ve yurtdışında insan haklarına saygı ve uygulamalar",
+          "refs": [
+            "4",
+            "6"
+          ]
+        },
+        {
+          "aspect": "Komisyonun yaptığı",
+          "left": "İnceler ya da gerekli gördüğünde ilgili mercilere iletir",
+          "right": "Raporu hazırlar ve TBMM Başkanlığına sunar",
+          "refs": [
+            "4",
+            "6"
+          ]
+        },
+        {
+          "aspect": "Muhatap",
+          "left": "Başvuru sahibine en geç altmış gün içinde bilgi verilir",
+          "right": "Genel Kurul gündemine alınabilir; Cumhurbaşkanlığı ve ilgili bakanlıklara Başkanlıkça gönderilir",
+          "refs": [
+            "7",
+            "6"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "4",
+        "6",
+        "7"
+      ]
+    },
+    {
+      "type": "exam_stats",
+      "title": "Sınav der ki",
+      "rows": [
+        {
+          "label": "Bu ünitenin maddelerinden yayındaki soru",
+          "value": "0",
+          "refs": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "10"
+          ]
+        },
+        {
+          "label": "Hiç soru çıkmamış",
+          "value": "md 1, md 2, md 3, md 4, md 5, md 6, md 7, md 8, md 10",
+          "refs": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "10"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "10"
+      ],
+      "generated": true
+    },
+    {
+      "type": "bridge",
+      "title": "Bu üniteden soru çöz",
+      "articleRefs": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "10"
+      ],
+      "generated": true,
+      "rows": [
+        {
+          "label": "Madde kapsamlı seans",
+          "value": "md 1–8, 10, 0 soru",
+          "refs": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "10"
+          ]
+        }
+      ]
+    }
+  ]
+}

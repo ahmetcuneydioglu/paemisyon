@@ -1,0 +1,752 @@
+{
+  "unit": {
+    "slug": "dk-1-amac-kapsam-ve-tanimlar",
+    "legislationSlug": "5253-sayili-dernekler-kanunu",
+    "topicId": "92736577-adb7-4e81-8935-9eb3391f748e",
+    "title": "Dernek kurma, organlar ve denetim",
+    "subtitle": "Dernek kurma hakkı, tüzük, iç ve dış denetim, bildirim süreleri, lokaller ve kamu yararına çalışan dernekler",
+    "articleFrom": "1",
+    "articleTo": "31",
+    "readingMinutes": 16,
+    "sourceLabel": "AI özeti — 5253 Sayılı Dernekler Kanunu, md 1–13, 15–26, 26/A, 26/B, 27, 27/A, 28–30, 30/A, 31",
+    "articleNos": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12",
+      "13",
+      "15",
+      "16",
+      "17",
+      "18",
+      "19",
+      "20",
+      "21",
+      "22",
+      "23",
+      "24",
+      "25",
+      "26",
+      "26/A",
+      "26/B",
+      "27",
+      "27/A",
+      "28",
+      "29",
+      "30",
+      "30/A",
+      "31"
+    ],
+    "generatedBy": "claude-opus-5-5 (ozet-uret.ts)",
+    "sortOrder": 1
+  },
+  "blocks": [
+    {
+      "type": "concept",
+      "title": "Dernek nedir, kim kurar?",
+      "body": "Kanun; dernekleri, dernek şube ve temsilciliklerini, federasyon ve konfederasyonları, merkezi yurt dışında bulunan dernek ve vakıflar ile diğer kâr amacı gütmeyen kuruluşların Türkiye'deki şube ve temsilciliklerini düzenler. Yasak ve izne tâbi faaliyetler, yükümlülükler, denetim ve cezalar bu kapsamdadır. Dernek; kazanç paylaşma dışında, kanunlarla yasaklanmamış belirli ve ortak bir amaç için en az 7 gerçek veya tüzel kişinin bilgi ve çalışmalarını sürekli olarak birleştirmesiyle oluşan, tüzel kişiliği olan bir topluluktur. Fiil ehliyetin varsa önceden izin almadan dernek kurabilirsin. Sık geçecek terimleri şimdiden oturt: **yerleşim yeri**, yönetim faaliyetlerinin yürütüldüğü yerdir. **Dernek merkezi**, bu yerin bulunduğu il veya ilçedir. **Mülkî idare amiri**, dernek merkezinin bulunduğu yerin vali veya kaymakamıdır. **Dernekler birimi** ise illerde il dernekler müdürlüğü, ilçelerde dernekler büro şefliğidir.",
+      "articleRefs": [
+        "1",
+        "2",
+        "3"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Dernek kurma hakkı ve sınırları",
+      "body": "**Kural:** Fiil ehliyetine sahip gerçek veya tüzel kişiler **önceden izin almaksızın** dernek kurabilir.\n\n**Saklı kısıtlamalar:** Türk Silâhlı Kuvvetleri ve kolluk kuvvetleri mensupları ile kamu kurum ve kuruluşlarının memur statüsündeki görevlileri hakkında özel kanunlarında getirilen kısıtlamalar saklıdır.\n\n**Organ yasağı:** Aşağıdaki suçlardan mahkûm olanlar, derneklerin **genel kurul dışındaki** organlarında görev alamaz:\n- Terörizmin Finansmanının Önlenmesi Hakkında Kanun kapsamındaki suçlar\n- Uyuşturucu veya uyarıcı madde imal ve ticareti\n- Suçtan kaynaklanan malvarlığı değerlerini aklama\n\nTürk Ceza Kanununun 53. maddesinde belirtilen süreler geçmiş veya affa uğramış olsa bile bu yasak uygulanır. Organa seçildikten sonra bu suçlardan mahkûm olanın görevi sona erer.\n\n**İstisna:** Yasaklanmış hakların geri verilmesi kararı verilmişse bu hükümler uygulanmaz.",
+      "articleRefs": [
+        "3"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Çocuk derneklerinde yaş sınırları",
+      "body": "Yaşlar ve izin türleri birbirine çok kolay karışır, dikkat et:\n- **15 yaşını bitiren** ve ayırt etme gücüne sahip küçük, yasal temsilcisinin **yazılı izniyle** çocuk derneği **kurabilir** veya kurulmuş bir çocuk derneğine üye olabilir.\n- **12 yaşını bitiren** küçük, yasal temsilcisinin **izniyle** yalnızca **üye** olabilir. Yönetim ve denetim kurullarında görev alamaz.\n- **18 yaşından büyükler** çocuk derneklerine kurucu da üye de olamaz.\n\nÇocuk derneği kurabilmek için 15 yaşını bitirmek ve yasal temsilcinin yazılı izni gerekir. 12 yaş için metin yalnızca \"izin\" der. Ek bilgi: çocuk dernekleri lokal açamaz.",
+      "articleRefs": [
+        "3",
+        "26/A"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "type": "rule",
+      "title": "Tüzükte bulunması zorunlu hususlar",
+      "body": "Her derneğin bir tüzüğü bulunur. Tüzükte şunların belirtilmesi **zorunludur**:\n- a) Derneğin adı ve merkezi\n- b) Amacı, çalışma konuları, çalışma biçimleri ve faaliyet alanı\n- c) Üye olma ve üyelikten çıkmanın şart ve şekilleri\n- d) Genel kurulun toplanma şekli ve zamanı\n- e) Genel kurulun görevleri, yetkileri, oy kullanma ve karar alma usul ve şekilleri\n- f) Yönetim ve denetim kurullarının görev ve yetkileri, seçilme şekli, asıl ve yedek üye sayısı\n- g) Şube bulunup bulunmayacağı; bulunacaksa şubelerin kuruluşu, görev ve yetkileri ve dernek genel kurulunda nasıl temsil edileceği\n- h) Giriş ve yıllık aidat miktarının belirlenme şekli\n- ı) Borçlanma usulleri\n- j) İç denetim şekilleri\n- k) Tüzüğün değiştirilme şekli\n- l) Fesih hâlinde mal varlığının tasfiye şekli",
+      "articleRefs": [
+        "4"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Uluslararası faaliyet, tüzel kişi üyenin oyu, şube ve üst kuruluşlar",
+      "body": "**Uluslararası faaliyet:** Dernekler tüzükteki amaçları için uluslararası faaliyette ve işbirliğinde bulunabilir. Yurt dışında temsilcilik veya şube açabilir, dernek veya üst kuruluş kurabilir, yurt dışındaki kuruluşlara katılabilir.\n\n**Yabancı dernekler:** Türkiye'de faaliyet, işbirliği, temsilcilik veya şube açma, dernek ya da üst kuruluş kurma veya bunlara katılma için şu iki şart birlikte aranır:\n- **Dışişleri Bakanlığının görüşü** alınır.\n- **İçişleri Bakanlığının izni** gerekir.\n\n**Tüzel kişi üye:** Oyu, tüzel kişinin yönetim kurulu başkanı veya temsille görevlendireceği kişi kullanır. Bu kişinin görevi sona erince oy kullanacak kişi yeniden belirlenir.\n\n**Şube genel kurulu:** Olağan toplantılar, merkez genel kurulundan **en az 2 ay önce** bitirilmek zorundadır.\n\n**Üst kuruluşlar:** Federasyon, derneklerin oluşturduğu tüzel kişiliği olan üst kuruluştur. Konfederasyon ise federasyonların oluşturduğu üst kuruluştur. Federasyonun üye sayısı **5'ten**, konfederasyonun üye sayısı **3'ten** aşağı düşer ve bu durum **3 ay** içinde giderilmezse kendiliğinden sona erme hükümleri uygulanır. Federasyon ve konfederasyonlar **temsilcilik dışında** hiçbir ad altında başka örgüt kuramaz.",
+      "articleRefs": [
+        "2",
+        "5",
+        "6",
+        "7",
+        "8"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "İç denetim",
+      "body": "**Esas:** Derneklerde iç denetim esastır. İç denetimi genel kurul, yönetim kurulu veya denetim kurulu yapabilir. Bağımsız denetim kuruluşlarına da denetim yaptırılabilir.\n\n**Denetim kurulunun yükümlülüğü:** Genel kurul, yönetim kurulu veya bağımsız denetim kuruluşunun denetim yapmış olması, denetim kurulunun yükümlülüğünü **ortadan kaldırmaz**.\n\n**Kapsam ve sıklık:** Denetim kurulu şunları tüzükteki esas ve usullere göre, **1 yılı geçmeyen aralıklarla** denetler:\n- Derneğin amaç ve çalışma konuları doğrultusunda faaliyet gösterip göstermediği\n- Defter, hesap ve kayıtların mevzuata ve tüzüğe uygun tutulup tutulmadığı\n\n**Rapor:** Sonuçlar bir rapor hâlinde yönetim kuruluna sunulur. Genel kurul toplandığında ona da sunulur.\n\n**Yetki:** Denetim kurulu üyelerinin istemi üzerine her türlü bilgi, belge ve kayıt gösterilir veya verilir. Yönetim yerleri, müesseseler ve eklentilerine girme isteği yerine getirilir.",
+      "articleRefs": [
+        "9"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Yardım ve kamu ile ortak proje",
+      "body": "**Maddî yardım:** Dernekler tüzükteki amaçlar için şu kuruluşlardan maddî yardım alabilir ve bunlara yardımda bulunabilir:\n- Benzer amaçlı dernekler\n- Siyasi partiler\n- İşçi ve işveren sendikaları\n- Meslekî kuruluşlar\n\n**Ortak proje:** Dernekler, kamu kurum ve kuruluşlarıyla onların görev alanına giren konularda ortak proje yürütebilir. Bu hüküm, Dernek ve Vakıfların Kamu Kurum ve Kuruluşları ile İlişkilerine Dair Kanun hükümleri saklı kalmak üzere uygulanır. Kamu, proje maliyetinin **en fazla %50**'si oranında aynî veya nakdî katkı sağlayabilir.\n\n**İstisna:** Şu projelerde %50 oranı aranmaz:\n- İş Kanunu çerçevesinde engellilerin ve eski hükümlülerin mesleki eğitim ve mesleki rehabilitasyonu\n- Bu kişilerin kendi işlerini kurmaları\n- Engellilerin iş bulmasını sağlayacak destek teknolojileri\n- Benzeri projeler",
+      "articleRefs": [
+        "10"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Gelir, gider, defterler, sandık ve ücretler",
+      "body": "**Gelir ve gider belgeleri:**\n- Gelirler **alındı belgesi** ile toplanır, giderler **harcama belgesi** ile yapılır.\n- Gelir banka aracılığıyla toplanırsa bankanın düzenlediği dekont veya hesap özeti gibi belgeler alındı belgesi yerine geçer.\n- Alındı ve harcama belgelerinin saklama süresi **5 yıl**dır.\n\n**Yönetim kurulu kararı gerekenler:**\n- Alındı belgeleri yönetim kurulu kararıyla bastırılır.\n- Gelirleri toplayacak kişiler yönetim kurulu kararıyla belirlenir ve bunlar adına **yetki belgesi** düzenlenir.\n\n**Defterler:** Dernekler birimi ya da noterden onaylı olmak zorundadır.\n\n**Sandık:** Dernekler üyelerinin yiyecek, giyecek gibi zarurî ihtiyaçları, diğer mal ve hizmetler ile kısa vadeli kredi ihtiyaçları için sandık kurabilir. Şartlar:\n- Sandık tüzükte yazılı olmalıdır.\n- Kâr üyelere paylaştırılmaz.\n- Kâr gelir, faiz veya başka adlarla üyelere aktarılmaz.\n\n**Görevliler ve ücretler:**\n- Dernek hizmetleri gönüllüler veya yönetim kurulu kararıyla göreve başlatılan ücretliler aracılığıyla yürütülür.\n- Yönetim ve denetim kurullarının **kamu görevlisi olmayan** başkan ve üyelerine ücret verilebilir.\n- Ücret, ödenek, yolluk ve tazminatları genel kurul tespit eder.\n- Bu kurulların dışındaki üyelere ücret, huzur hakkı veya başka adla karşılık ödenemez.\n- Dernek hizmeti için görevlendirilen üyelerin gündelik ve yolluk miktarlarını da genel kurul tespit eder.",
+      "articleRefs": [
+        "11",
+        "12",
+        "13"
+      ]
+    },
+    {
+      "type": "numbers",
+      "title": "Sayılar ve süreler — I",
+      "rows": [
+        {
+          "label": "Dernek kurmak için asgari kişi",
+          "value": "7 gerçek veya tüzel kişi",
+          "refs": [
+            "2"
+          ]
+        },
+        {
+          "label": "Çocuk derneği kurma / üye olma (yazılı izinle)",
+          "value": "15 yaşını bitiren",
+          "refs": [
+            "3"
+          ]
+        },
+        {
+          "label": "Çocuk derneğine yalnız üyelik (izinle)",
+          "value": "12 yaşını bitiren",
+          "refs": [
+            "3"
+          ]
+        },
+        {
+          "label": "Çocuk derneğine kurucu/üye olamayanlar",
+          "value": "18 yaşından büyükler",
+          "refs": [
+            "3"
+          ]
+        },
+        {
+          "label": "Şube olağan genel kurulunun bitirilmesi",
+          "value": "Merkez genel kurulundan en az 2 ay önce",
+          "refs": [
+            "7"
+          ]
+        },
+        {
+          "label": "Federasyonda sona erme eşiği",
+          "value": "Üye sayısı 5'ten aşağı",
+          "refs": [
+            "8"
+          ]
+        },
+        {
+          "label": "Konfederasyonda sona erme eşiği",
+          "value": "Üye sayısı 3'ten aşağı",
+          "refs": [
+            "8"
+          ]
+        },
+        {
+          "label": "Üye eksikliğini giderme süresi",
+          "value": "3 ay",
+          "refs": [
+            "8"
+          ]
+        },
+        {
+          "label": "Denetim kurulu denetim aralığı",
+          "value": "1 yılı geçmeyen aralıklarla",
+          "refs": [
+            "9"
+          ]
+        },
+        {
+          "label": "Ortak projede kamu katkısı",
+          "value": "Proje maliyetinin en fazla %50'si",
+          "refs": [
+            "10"
+          ]
+        },
+        {
+          "label": "Alındı ve harcama belgesi saklama",
+          "value": "5 yıl",
+          "refs": [
+            "11"
+          ]
+        },
+        {
+          "label": "Basımevinin seri ve sıra numarası bildirimi",
+          "value": "15 gün içinde, mülkî idare amirliğine",
+          "refs": [
+            "16"
+          ]
+        },
+        {
+          "label": "Hata ve noksanlıkların giderilmesi",
+          "value": "Mülkî idare amirinin yazılı istemi üzerine 30 gün içinde",
+          "refs": [
+            "17"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "2",
+        "3",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "16",
+        "17"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Tasfiye, basımevi, hata giderme ve yargılama usulü",
+      "body": "**Tasfiye:** Genel kurul kararıyla feshedilen veya kendiliğinden sona erdiği tespit edilen derneğin para, mal ve hakları tüzükteki esaslara göre tasfiye edilir.\n\n**Mahkeme kararıyla devir:** Şu hâllerde bütün para, mal ve haklar mahkeme kararıyla devredilir:\n- Tüzük tasfiyeyi genel kurula bırakmış ama genel kurul karar almamış ya da toplanamamışsa\n- Dernek mahkeme kararıyla feshedilmişse\n\nDevralan, **amacına en yakın** ve kapatıldığı tarihte **en fazla üyeye sahip** dernektir.\n\n**Kayıt silme:** Tasfiye ve devir işlemleri tamamlanınca derneğin dernekler kütüğündeki kayıtları silinir.\n\n**Devir yasağı:** Feshi için soruşturma veya dava açılmış bir dernek fesih ve devir kararı alsa bile, soruşturma ve dava sonuçlanıncaya kadar **devir işlemi yapılmaz**.\n\n**Basımevi:** Alındı belgelerini basan basımevi, belgelerin seri ve sıra numaralarını **15 gün** içinde mülkî idare amirliğine bildirir.\n\n**Hata ve noksanlık:** Kanuna, Türk Medenî Kanununa veya bunlara dayanan yönetmeliklere aykırı, konusu **suç teşkil etmeyen** hata ve noksanlıklar, mülkî idare amirinin **yazılı istemi** üzerine **30 gün** içinde giderilir.\n\n**Yargılama:** Bu Kanunla ilgili hukuk davalarında **basit yargılama usulü** uygulanır.",
+      "articleRefs": [
+        "15",
+        "16",
+        "17",
+        "18"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Beyanname ve kamu görevlilerince denetim",
+      "body": "**Beyanname:** Dernekler yıl sonu itibarıyla faaliyetlerini ve gelir-gider sonuçlarını gösteren beyannameyi **her yıl Nisan ayı sonuna kadar** mülkî idare amirliğine verir.\n\n**Kim denetletir:** Gerekli görülen hâllerde İçişleri Bakanı veya mülkî idare amiri, derneği **kamu görevlilerine** denetletebilir. Denetimde şunlara bakılır:\n- Tüzükteki amaçlar doğrultusunda faaliyet gösterilip gösterilmediği\n- Defter ve kayıtların mevzuata uygun tutulup tutulmadığı\n\n**Denetimin şartları:**\n- Denetimin risk değerlendirmelerine göre, **3 yılı geçmeyecek şekilde** her yıl yapılması esastır.\n- Bu denetimlerde **kolluk kuvveti mensupları görevlendirilemez**.\n- Denetim **mesai saatleri içerisinde** yapılır.\n- Denetim derneğe **en az 24 saat önce** bildirilir.\n\n**Derneğin yükümlülüğü:** Görevli memurların istediği her türlü bilgi, belge ve kayıt gösterilir veya verilir. Yönetim yerleri, müesseseler ve eklentilerine girme isteği yerine getirilir.\n\n**Bilirkişi:** Uzmanlık veya teknik bilgi gerektiren durumlarda İçişleri Bakanlığı, valilikler ve kaymakamlıklar bilirkişi görevlendirebilir.\n\n**Suç tespiti:** Denetimde suç teşkil eden fiil tespit edilirse mülkî idare amiri durumu **derhal** Cumhuriyet savcılığına ve derneğe bildirir.\n\n**Not:** Maddenin bazı cümle ve fıkraları Anayasa Mahkemesi kararıyla iptal edilmiştir. Burada yalnızca metinde yer alan hükümler verilmiştir.",
+      "articleRefs": [
+        "19"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Nisan sonu ve iki farklı denetim",
+      "body": "Beyanname her yıl **Nisan ayı sonuna** kadar mülkî idare amirliğine verilir. Bu ayı başka bir ayla karıştırma.\n\nİkinci tuzak, dernek denetimi ile lokal denetimini karıştırmaktır.\n\n**Dernek denetimi:**\n- Kamu görevlilerine yaptırılır.\n- Kolluk kuvveti mensupları **görevlendirilemez**.\n- Mesai saatleri içinde yapılır.\n- En az 24 saat önce bildirilir.\n\n**Lokal denetimi:**\n- Mülkî idare amiri, kamu görevlilerine **veya kolluk kuvvetlerine** yaptırır.\n- Önceden bildirim şartı **aranmaz**.\n- Mesai saatleri içinde yapılma şartı **aranmaz**.",
+      "articleRefs": [
+        "19",
+        "26/B"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "type": "rule",
+      "title": "Kolluk kuvvetlerinin derneğe girmesi",
+      "body": "**Kural:** Kolluk kuvvetleri dernek ve eklentilerine giremez, arama yapamaz, buradaki eşyaya el koyamaz.\n\n**İstisnalar:** Kamu düzeninin korunması veya suç işlenmesinin önlenmesi nedenlerinden birine bağlı olarak şunlardan biri varsa giriş, arama ve el koyma yapılabilir:\n- Usulüne göre verilmiş **hâkim kararı**\n- Gecikmesinde sakınca bulunan durumlarda **mülkî idare amirinin yazılı emri**\n\n**Süreler:**\n- Mülkî idare amirinin kararı **24 saat** içinde görevli hâkimin onayına sunulur.\n- Hâkim kararını el koymadan itibaren **48 saat** içinde açıklar.\n- Aksi hâlde el koyma **kendiliğinden kalkar**.\n\n**Duyuru:** Hâkim kararı mülkî idare amiri tarafından dernek yöneticilerine yazıyla duyurulur.",
+      "articleRefs": [
+        "20"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Yurt dışı yardım, taşınmaz ve genel kurul bildirimleri",
+      "body": "**Yurt dışından yardım:** Dernekler mülkî idare amirliğine **önceden bildirimde** bulunarak yurt dışındaki kişi, kurum ve kuruluşlardan aynî ve nakdî yardım alabilir. Nakdî yardımların **bankalar aracılığıyla** alınması zorunludur.\n\n**Yurt dışına yardım:** Yardım yapılmadan önce mülkî idare amirliğine bildirilir.\n\n**Taşınmaz:**\n- Taşınmaz alım ve satımı, genel kurulun yetki vermesi üzerine yönetim kurulu kararıyla yapılır.\n- Edinilen taşınmaz, tapuya tescilinden itibaren **1 ay** içinde mülkî idare amirliğine bildirilir.\n\n**Genel kurul ve üyelik bildirimleri:** Bildirimler merkezin bulunduğu dernekler birimine yapılır.\n- Genel kurulu izleyen **30 gün** içinde yönetim kurulu, denetim kurulu ve diğer organlara seçilen asıl ve yedek üyeler bildirilir.\n- Üyeliğe kabul edilenler ile üyeliği sona erenler, kabul ve sona erme tarihinden itibaren **45 gün** içinde bildirilir.\n- Bildirimde adı, soyadı, doğum tarihi ve kimlik numarası yer alır.\n- Organlarda ve yerleşim yerinde meydana gelen değişiklikler de aynı usule tâbidir.",
+      "articleRefs": [
+        "21",
+        "22",
+        "23"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Temsilcilik ve plâtform",
+      "body": "**Temsilcilik:**\n- Dernekler gerekli gördükleri yerlerde temsilcilik açabilir.\n- Temsilcilikler şube veya dernek genel kurullarında **temsil edilmez**.\n- **Şubeler temsilcilik açamaz.**\n- Temsilciliğin adresini, yönetim kurulu kararıyla görevlendirilen temsilci, o yerin mülkî idare amirliğine yazılı olarak bildirir.\n\n**Plâtform:** Derneklerin kendi aralarında veya vakıf, sendika ve benzeri sivil toplum kuruluşlarıyla ortak bir amaç için oluşturduğu birlikteliktir. Tüzel kişiliği yoktur ve geçici niteliktedir.\n- Amaçla ilgili ve kanunla yasaklanmayan alanlarda kurulur.\n- Yetkili organların kararıyla oluşturulur.\n- Kanunların dernekler için yasakladığı amaç ve faaliyetlerle kurulamaz, faaliyet gösteremez.\n- Bu yasağa aykırı hareket edenlere bu Kanun ve ilgili kanunların cezaî hükümleri uygulanır.",
+      "articleRefs": [
+        "2",
+        "24",
+        "25"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Lokal açma ve işletme",
+      "body": "**Tanım:** Lokal, tüzükteki amaçlar için mülkî idare amiri izniyle açılan ve üyelerin bir araya geldiği sosyal mekândır.\n\n**İzin gerektirenler:** Şunlar mülkî idare amirinin iznine bağlıdır:\n- Eğitim ve öğretim için yurt ve pansiyon açmak\n- Üyeler için lokal açmak\n- Lokalde alkollü içki kullanılması\n- Bu tesislerin işletilmesi\n\n**Kim açabilir:**\n- **En az 1 yıldan beri** faaliyette bulunan dernekler açabilir.\n- Federasyon ve konfederasyonlarda bu süre şartı aranmaz.\n- **Çocuk dernekleri lokal açamaz.**\n\n**Lokal açılamayacak yerler:**\n- Patlayıcı, parlayıcı ve yanıcı gibi tehlikeli maddelerin üretildiği, satıldığı, kullanıldığı ve depolandığı yerler\n- Öğretim kurumları ve ibadethaneler ile bunlara **100 metreden yakın** mesafe\n- Öğrenci yurtlarının bulunduğu binalar\n- İtfaiye ve ambulans gibi hizmetlerin kolaylıkla ulaşamayacağı yerler\n- Binaların ortak kullanılan bağımsız bölümleri\n- Sabit veya seyyar her çeşit kara, deniz ve hava taşıma aracı\n\n**İşletme kuralları:**\n- Lokalin hangi derneğe ait olduğunu gösteren tabela, dışarıdan ilk bakışta görülecek yere asılır.\n- Lokalde bir **sorumlu müdür** bulunur.\n- Alkollü içki izni için lokalin **içkili yer bölgesi** içinde olması zorunludur.\n- Canlı müzik izni mülkî idare amirinin kararıyla verilebilir.\n- Lokal, yönetim kurulunun hazırladığı yönergeye göre işletilir.",
+      "articleRefs": [
+        "2",
+        "26",
+        "26/A"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Lokal denetimi, men ve belge iptali",
+      "body": "**Denetim:** Mülkî idare amiri lokalleri kamu görevlilerine veya kolluk kuvvetlerine denetletir. Önceden bildirim ve mesai saatleri şartı **aranmaz**.\n\n**Geçici men:** Denetimde şu hâllerden biri tespit edilirse mülkî idare amiri lokali **30 günü geçmemek** üzere geçici süreyle faaliyetten men eder:\n- Kanuna aykırı faaliyet\n- Kumar oynanması\n- Alkollü içki sunumu izni alınmadan alkollü içki kullandırılması\n- Hayvanları Koruma Kanunu kapsamında hayvanlara kötü muamele, fiziki veya psikolojik acı çektirilmesi\n\n**Belge iptali:** Mülkî idare amiri **lokal açma ve işletme belgesini** şu hâllerde iptal eder:\n- Kumar oynanması için yer ve imkân sağlandığının tespiti\n- Uyuşturucu veya uyarıcı madde imali, ticareti, kullanımı ya da kullanımının kolaylaştırılmasının tespiti\n- Ateşli Silahlar ve Bıçaklar ile Diğer Aletler Hakkında Kanuna aykırı silah bulundurulması veya satılmasının tespiti\n- Geçici men sebepleri nedeniyle **1 yıl içinde 3 defa** men edilen lokalde bu fiillerin tekrar işlenmesi",
+      "articleRefs": [
+        "26/B"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Kamu yararına çalışan dernekler ve Kızılay",
+      "body": "**Tespit:** Kamu yararına çalışan dernekler **Cumhurbaşkanı kararıyla** tespit edilir.\n\n**Şartlar:**\n- Derneğin **en az 1 yıldan beri** faaliyette olması\n- Amacı ve faaliyetlerinin topluma yararlı sonuçlar verecek nitelik ve ölçüde olması\n\nStatünün kazanılması, kaybedilmesi ve gerekli belgeler **yönetmelikte** düzenlenir.\n\n**Denetim:** Bu dernekler **en az 2 yılda bir** denetlenir.\n\n**Görevden uzaklaştırma:** Denetim raporlarına göre organlarda görevli üyeler veya ilgili personel hapis cezası gerektiren suç işlemişse, **İçişleri Bakanınca** geçici tedbir olarak görevden uzaklaştırılabilir.\n\n**Kayyım:**\n- Dernek merkezinin bulunduğu ilin **valisi**, uzaklaştırma kararının derneğe bildirilmesiyle eş zamanlı olarak sulh hukuk mahkemesinden kayyım atanmasını ister.\n- Mahkeme **1 hafta** içinde, öncelikle dernek üyeleri arasından ve görevden uzaklaştırılanların sayısı kadar kayyım atar.\n- Kararda kayyımın görev ve yetkileri ile dernekçe ödenecek ücreti belirtilir.\n- Kayyımın görevi, dava sonucu verilen hüküm kesinleşinceye kadar sürer.\n- Boşalan kayyımların yerine aynı usulle yenisi atanır.\n\n**Statünün kaldırılması:** Denetimde nitelik kaybı tespit edilirse statü kararı aynı usulle, yani Cumhurbaşkanı kararıyla kaldırılır.\n\n**Diğer hükümler:**\n- Türkiye Kızılay Derneği ve Türk Hava Kurumunun tüzüklerini onaylamaya **Cumhurbaşkanı** yetkilidir.\n- Kamu yararına çalışan derneklerin mallarına karşı suç işleyenler, **Devlet malına karşı suç işlemiş gibi** cezalandırılır.\n\n**Kızılay'ın teşkilatı:**\n- Merkezinde genel kurul, yönetim kurulu ve denetim kurulu oluşturulur.\n- Şubelerinde genel kurul ve yönetim kurulu oluşturulur.\n- Bu şartla tüzüğünde belirlenen şekilde teşkilatlanır.\n- İş ve işlemleri kanunlara, tüzüğüne ve yönetim kurulunca çıkarılan yönetmeliklere göre yürütülür.",
+      "articleRefs": [
+        "27",
+        "27/A"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Kamu yararı: 1 yıl faaliyet, 2 yılda bir denetim",
+      "body": "Sayılar ve makamlar birbirine kolay karışır:\n- Kamu yararına çalışan dernekler **en az 2 yılda bir** denetlenir.\n- Statü için derneğin **en az 1 yıldan beri** faaliyette olması şarttır. Bu iki sayıyı birbirinin yerine koyma.\n- Statünün kazanılması ve kaybedilmesine ilişkin esaslar **yönetmelikte** düzenlenir.\n- Tespit makamı **Cumhurbaşkanı**dır. Görevden uzaklaştırma yetkisi ise **İçişleri Bakanı**ndadır. Bu iki makamı birbirine karıştırma.",
+      "articleRefs": [
+        "27"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "type": "rule",
+      "title": "Dernek adları, yasaklar ve yazışma dili",
+      "body": "**İzinle kullanılan kelimeler:** Şu kelimeler ve baş ya da sonlarına ek getirilerek oluşturulan kelimeler dernek adında **İçişleri Bakanlığının izniyle** kullanılabilir: Türk, Türkiye, Milli, Cumhuriyet, Atatürk, Mustafa Kemal, Şehit, Gazi.\n\n**Kullanılması yasak işaretler:**\n- Mevcut veya mahkeme kararıyla kapatılmış ya da feshedilmiş bir siyasî partinin, sendikanın, derneğin veya üst kuruluşun adı, amblemi, rumuzu, rozeti ve benzeri işaretleri\n- Başka bir ülkeye ait bayrak, amblem ve flamalar\n- Daha önce kurulmuş Türk devletlerine ait bayrak, amblem ve flamalar\n\n**Yasak amaç ve faaliyetler:** Dernekler:\n- Tüzükteki amaç ve çalışma konuları dışında faaliyette bulunamaz.\n- Anayasa ve kanunlarla açıkça yasaklanan amaçlar veya suç teşkil eden fiiller için kurulamaz.\n- Askerliğe, millî savunma ve genel kolluk hizmetlerine hazırlayıcı öğretim ve eğitim yapamaz; bunun için kamp veya eğitim yeri açamaz.\n- Üyeleri için özel kıyafet veya üniforma kullanamaz.\n\n**Dil:** Defter ve kayıtlarda, Türkiye Cumhuriyetinin resmî kurumlarıyla yazışmalarda **Türkçe** kullanılır.\n\n**Not:** Md 30/A (görevden uzaklaştırma ve faaliyetten geçici alıkoyma) Anayasa Mahkemesi kararıyla iptal edilmiştir.",
+      "articleRefs": [
+        "28",
+        "29",
+        "30",
+        "30/A",
+        "31"
+      ]
+    },
+    {
+      "type": "numbers",
+      "title": "Sayılar ve süreler — II",
+      "rows": [
+        {
+          "label": "Beyanname verme",
+          "value": "Her yıl Nisan ayı sonuna kadar, mülkî idare amirliğine",
+          "refs": [
+            "19"
+          ]
+        },
+        {
+          "label": "Kamu görevlilerince denetim",
+          "value": "Risk değerlendirmesine göre, 3 yılı geçmeyecek şekilde her yıl (esas)",
+          "refs": [
+            "19"
+          ]
+        },
+        {
+          "label": "Denetimin derneğe bildirimi",
+          "value": "En az 24 saat önce",
+          "refs": [
+            "19"
+          ]
+        },
+        {
+          "label": "El koyma kararının hâkim onayına sunulması",
+          "value": "24 saat içinde",
+          "refs": [
+            "20"
+          ]
+        },
+        {
+          "label": "Hâkimin kararını açıklaması",
+          "value": "El koymadan itibaren 48 saat içinde",
+          "refs": [
+            "20"
+          ]
+        },
+        {
+          "label": "Taşınmaz bildirimi",
+          "value": "Tapuya tescilden itibaren 1 ay içinde",
+          "refs": [
+            "22"
+          ]
+        },
+        {
+          "label": "Organlara seçilenlerin bildirimi",
+          "value": "Genel kurulu izleyen 30 gün içinde",
+          "refs": [
+            "23"
+          ]
+        },
+        {
+          "label": "Üyeliğe kabul / üyeliğin sona ermesi bildirimi",
+          "value": "45 gün içinde",
+          "refs": [
+            "23"
+          ]
+        },
+        {
+          "label": "Lokal açma için faaliyet süresi",
+          "value": "En az 1 yıl",
+          "refs": [
+            "26/A"
+          ]
+        },
+        {
+          "label": "Lokal yasak mesafe",
+          "value": "Öğretim kurumu ve ibadethaneye 100 metreden yakın",
+          "refs": [
+            "26/A"
+          ]
+        },
+        {
+          "label": "Lokalin geçici men süresi",
+          "value": "30 günü geçmemek üzere",
+          "refs": [
+            "26/B"
+          ]
+        },
+        {
+          "label": "Belge iptali için men sayısı",
+          "value": "1 yıl içinde 3 defa men + fiilin tekrarı",
+          "refs": [
+            "26/B"
+          ]
+        },
+        {
+          "label": "Kamu yararı statüsü için faaliyet",
+          "value": "En az 1 yıl",
+          "refs": [
+            "27"
+          ]
+        },
+        {
+          "label": "Kamu yararına çalışan dernek denetimi",
+          "value": "En az 2 yılda bir",
+          "refs": [
+            "27"
+          ]
+        },
+        {
+          "label": "Mahkemenin kayyım kararı",
+          "value": "1 hafta içinde",
+          "refs": [
+            "27"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "19",
+        "20",
+        "22",
+        "23",
+        "26/A",
+        "26/B",
+        "27"
+      ]
+    },
+    {
+      "type": "compare",
+      "title": "Şube ve temsilcilik",
+      "rows": [
+        {
+          "aspect": "Tüzel kişilik",
+          "left": "Yok",
+          "right": "Yok",
+          "refs": [
+            "2"
+          ]
+        },
+        {
+          "aspect": "Organ",
+          "left": "Bünyesinde organları bulunur",
+          "right": "Bünyesinde organları bulunmaz",
+          "refs": [
+            "2"
+          ]
+        },
+        {
+          "aspect": "Genel kurulda temsil",
+          "left": "Dernek genel kurulunda nasıl temsil edileceği tüzükte belirtilir",
+          "right": "Şube veya dernek genel kurullarında temsil edilmez",
+          "refs": [
+            "4",
+            "24"
+          ]
+        },
+        {
+          "aspect": "Genel kurul takvimi",
+          "left": "Olağan genel kurul, merkez genel kurulundan en az 2 ay önce bitirilir",
+          "right": "—",
+          "refs": [
+            "7"
+          ]
+        },
+        {
+          "aspect": "Kim açar",
+          "left": "Derneğe bağlı açılır; şube bulunup bulunmayacağı tüzükte gösterilir",
+          "right": "Dernekler gerekli gördükleri yerlerde açar; şubeler temsilcilik açamaz",
+          "refs": [
+            "2",
+            "4",
+            "24"
+          ]
+        },
+        {
+          "aspect": "Federasyon ve konfederasyon",
+          "left": "Temsilcilik dışında örgüt kuramadıkları için açamaz",
+          "right": "Açabilirler; temsilcilik dışında her ne ad altında olursa olsun başka bir örgüt kuramazlar",
+          "refs": [
+            "8"
+          ]
+        },
+        {
+          "aspect": "İdareye bildirim",
+          "left": "—",
+          "right": "Adres, görevlendirilen temsilci tarafından o yerin mülkî idare amirliğine yazılı bildirilir",
+          "refs": [
+            "24"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "2",
+        "4",
+        "7",
+        "8",
+        "24"
+      ]
+    },
+    {
+      "type": "exam_stats",
+      "title": "Sınav der ki",
+      "rows": [
+        {
+          "label": "Bu ünitenin maddelerinden yayındaki soru",
+          "value": "2",
+          "refs": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22",
+            "23",
+            "24",
+            "25",
+            "26",
+            "26/A",
+            "26/B",
+            "27",
+            "27/A",
+            "28",
+            "29",
+            "30",
+            "30/A",
+            "31"
+          ]
+        },
+        {
+          "label": "md 19 — Beyanname verme yükümlülüğü ve denetim",
+          "value": "1 soru",
+          "refs": [
+            "19"
+          ]
+        },
+        {
+          "label": "md 27 — Kamu yararına çalışan dernekler",
+          "value": "1 soru",
+          "refs": [
+            "27"
+          ]
+        },
+        {
+          "label": "Hiç soru çıkmamış",
+          "value": "md 1, md 2, md 3, md 4, md 5, md 6, md 7, md 8, md 9, md 10, md 11, md 12, md 13, md 15, md 16, md 17, md 18, md 20, md 21, md 22, md 23, md 24, md 25, md 26, md 26/A, md 26/B, md 27/A, md 28, md 29, md 30, md 30/A, md 31",
+          "refs": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22",
+            "23",
+            "24",
+            "25",
+            "26",
+            "26/A",
+            "26/B",
+            "27",
+            "27/A",
+            "28",
+            "29",
+            "30",
+            "30/A",
+            "31"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12",
+        "13",
+        "15",
+        "16",
+        "17",
+        "18",
+        "19",
+        "20",
+        "21",
+        "22",
+        "23",
+        "24",
+        "25",
+        "26",
+        "26/A",
+        "26/B",
+        "27",
+        "27/A",
+        "28",
+        "29",
+        "30",
+        "30/A",
+        "31"
+      ],
+      "generated": true
+    },
+    {
+      "type": "bridge",
+      "title": "Bu üniteden soru çöz",
+      "articleRefs": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12",
+        "13",
+        "15",
+        "16",
+        "17",
+        "18",
+        "19",
+        "20",
+        "21",
+        "22",
+        "23",
+        "24",
+        "25",
+        "26",
+        "26/A",
+        "26/B",
+        "27",
+        "27/A",
+        "28",
+        "29",
+        "30",
+        "30/A",
+        "31"
+      ],
+      "generated": true,
+      "rows": [
+        {
+          "label": "Madde kapsamlı seans",
+          "value": "md 1–13, 15–26, 26/A, 26/B, 27, 27/A, 28–30, 30/A, 31, 2 soru",
+          "refs": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22",
+            "23",
+            "24",
+            "25",
+            "26",
+            "26/A",
+            "26/B",
+            "27",
+            "27/A",
+            "28",
+            "29",
+            "30",
+            "30/A",
+            "31"
+          ]
+        }
+      ]
+    }
+  ]
+}

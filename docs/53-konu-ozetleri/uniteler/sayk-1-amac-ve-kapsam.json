@@ -1,0 +1,721 @@
+{
+  "unit": {
+    "slug": "sayk-1-amac-ve-kapsam",
+    "legislationSlug": "6085-sayistay-kanunu",
+    "topicId": "c8f4a045-6e4c-4fa6-b3a6-557cd0032d20",
+    "title": "Sayıştayın görevleri ve meslek mensupları",
+    "subtitle": "Sayıştayın denetim alanı, görev ve yetkileri; Başkan, daire başkanı, üye, denetçi ve savcıların nitelikleri, seçimi ve atanması",
+    "articleFrom": "1",
+    "articleTo": "18",
+    "readingMinutes": 15,
+    "sourceLabel": "AI özeti — 6085 Sayıştay Kanunu, md 1–18",
+    "articleNos": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+      "15",
+      "16",
+      "17",
+      "18"
+    ],
+    "generatedBy": "claude-opus-5-5 (ozet-uret.ts)",
+    "sortOrder": 1
+  },
+  "blocks": [
+    {
+      "type": "concept",
+      "title": "Sayıştay ne için var?",
+      "body": "Sayıştayı, **Türkiye Büyük Millet Meclisi adına** kamunun parasını izleyen kurum olarak düşün. Amaç; hesap verme sorumluluğu ve mali saydamlık çerçevesinde kamu idarelerinin etkili, ekonomik, verimli ve hukuka uygun çalışmasını, kamu kaynaklarının da amaç, hedef ve mevzuata uygun elde edilip korunmasını ve kullanılmasını sağlamak. Bunun için Sayıştay denetim yapar, sorumluların hesap ve işlemlerini **kesin hükme bağlar** ve kanunlarla verilen inceleme, denetleme ve hükme bağlama işlerini yürütür. Bu işleri yaparken **işlevsel ve kurumsal bağımsızlığı** olan bir kurumdur.",
+      "articleRefs": [
+        "1",
+        "3"
+      ],
+      "derivedNumbers": [],
+      "counterNumbers": []
+    },
+    {
+      "type": "rule",
+      "title": "Temel tanımlar: denetim türleri ve raporlar",
+      "body": "**Denetim ağacı**\n- **Sayıştay denetimi** = düzenlilik denetimi + performans denetimi\n- **Düzenlilik denetimi** = mali denetim + uygunluk denetimi\n- **Mali denetim:** mali rapor ve tabloların güvenilirliği ve doğruluğu\n- **Uygunluk denetimi:** gelir, gider ve mallara ilişkin hesap ve işlemlerin kanunlara ve diğer hukuki düzenlemelere uygunluğu\n- **Performans denetimi:** idarelerce belirlenen hedef ve göstergelerle ilgili faaliyet sonuçlarının ölçülmesi\n\n**Hesap yargılaması:** Kanunlarla belirlenen sorumluların hesap ve işlemlerinin mevzuata uygunluğunun yargılama yoluyla kesin hükme bağlanması ve buna ilişkin kanun yolları.\n\n**Raporlar**\n- **Yargılamaya esas rapor:** Denetçilerin, genel yönetim kapsamındaki kamu idarelerinde tespit ettiği kamu zararına ilişkin; daire yargılamasına esas.\n- **Denetim raporu:** Denetim grup başkanlıkları veya denetçilerce hazırlanır; Sayıştay raporlarına esas.\n- **Sayıştay raporu:** Sayıştay Başkanı tarafından TBMM'ye sunulan veya kamu idarelerine gönderilen rapor.\n\n**Sayıştay incelemesi:** Kesin hükme bağlama ve denetim dışındaki diğer çalışmalar.\n**Sayıştay denetçisi:** Uzman denetçi, başdenetçi, denetçi ve denetçi yardımcısı.\n**Kamu idaresi:** Kamu veya özel hukuka tabi olup olmadığına bakılmaksızın Sayıştay denetimine tabi tüm idare, kuruluş, müessese, birlik, işletme, bağlı ortaklık ve şirketler.",
+      "articleRefs": [
+        "2"
+      ],
+      "derivedNumbers": [],
+      "counterNumbers": []
+    },
+    {
+      "type": "rule",
+      "title": "Denetim alanı",
+      "body": "Sayıştay şunları denetler:\n- Merkezi yönetim bütçesi kapsamındaki kamu idareleri, sosyal güvenlik kurumları, mahallî idareler, sermayesinde doğrudan veya dolaylı kamu payı olan ve özel kanun veya Cumhurbaşkanlığı kararnamesiyle kurulmuş anonim ortaklıklar, diğer kamu idareleri — **kamu kurumu niteliğindeki meslek kuruluşları hariç**\n- Bu idarelere bağlı, bunların kurduğu veya doğrudan ya da dolaylı ortak olduğu her çeşit idare, kuruluş, müessese, birlik, işletme ve şirket\n- Her türlü iç ve dış borçlanma, borç verme, hibeler, Hazine garantileri ve alacakları, nakit yönetimi; **Avrupa Birliği fonları dahil** yurt içi ve yurt dışı kaynak ve fonların kullanımı\n- Bütçede yer alıp almadığına bakılmaksızın **özel hesaplar dahil** tüm kamu hesapları, fonları, kaynakları ve faaliyetleri\n\n**İstisnai yol:** Kamu payı **%50'den az** olup ilgili mevzuatı uyarınca bağımsız denetime tabi şirketler, iştirakleri ve bağlı ortaklıkları, Sayıştaya gönderilen **bağımsız denetim raporları esas alınarak** denetlenir. Sayıştay, münhasıran bu raporlara dayanarak hazırladığı raporu TBMM'ye sunar.\n\n**Uluslararası kuruluşlar:** Andlaşma veya sözleşmedeki esaslar çerçevesinde hesap ve işlemleri denetlenir.",
+      "articleRefs": [
+        "4"
+      ],
+      "derivedNumbers": [],
+      "counterNumbers": []
+    },
+    {
+      "type": "rule",
+      "title": "Görevler ve yetkiler",
+      "body": "**Görevler**\n- Kamu idarelerinin mali faaliyet, karar ve işlemlerini hesap verme sorumluluğu çerçevesinde denetler; TBMM'ye doğru, yeterli, zamanlı bilgi ve rapor sunar.\n- **Genel yönetim kapsamındaki** kamu idarelerinin hesap ve işlemlerinin mevzuata uygunluğunu denetler, kamu zararına yol açan hususları **kesin hükme bağlar**.\n- **Genel uygunluk bildirimini** TBMM'ye sunar.\n- Kanunlarla verilen inceleme, denetleme ve hükme bağlama işlerini yapar.\n\n**Yetkiler**\n- Kamu idareleri ve görevlileriyle **doğrudan yazışma**\n- Belge, defter ve kayıtları mensupları aracılığıyla görme; **mallar hariç** dilediği yere getirtme\n- Her derece ve sınıftan memuru sözlü bilgi için çağırma; kamu idarelerinden temsilci isteme\n- Bilgi ve belgeyi kamu idareleri ile **bankalar dahil** diğer gerçek ve tüzel kişilerden isteme\n- Mensupları veya bilirkişilerle **yerinde ve işlemin her safhasında** inceleme (bilirkişi genel hükümlere tabi)\n- Hesap dönemine bağlı olmaksızın yılı içinde, yıllar itibariyle; sektör, program, proje ve konu bazında denetleme\n- Gerekirse Sayıştay dışından uzman görevlendirme; bilirkişi ve uzmana ilişkin esaslar yönetmelikle belirlenir.",
+      "articleRefs": [
+        "5",
+        "6"
+      ],
+      "derivedNumbers": [],
+      "counterNumbers": []
+    },
+    {
+      "type": "rule",
+      "title": "Sorumlular ve sorumluluk halleri",
+      "body": "- Sorumlular ve sorumluluk hallerinde **5018 sayılı Kanun** ve Sayıştay denetimiyle ilgili diğer kanunlar esas alınır.\n- Kamu kaynağının elde edilmesi ve kullanılmasında görevli ve yetkili olanlar; kaynakların etkili, ekonomik, verimli ve hukuka uygun elde edilmesi, kullanılması, muhasebeleştirilmesi, raporlanması ve kötüye kullanılmaması için önlem alınmasından sorumludur.\n- Bu sorumluluğun yerine getirilip getirilmediği TBMM'ye sunulan Sayıştay raporlarında belirtilir; **kamu zararı** ise tazmine ilişkin hükme bağlama ile sonuçlanır.\n- Sorumlular, mevzuata aykırı karar, işlem veya eylemleriyle **illiyet bağı** kurularak ilamda yer alan kamu zararını **tek başlarına veya birlikte** tazminle yükümlüdür.\n- Usulüne uygun görevlendirilmeden mali iş yapanların işlemleri bir hesaba dahil edilmemişse sorumluluk onlara da uygulanır; durum yöneticilerin **yazılı emri** ile oluşmuşsa yöneticiler de sorumluluğa ortak olur.\n- **Bakanlar**, kaynakların etkili, ekonomik ve verimli kullanılması ile hukuki ve mali konularda **Cumhurbaşkanına** karşı sorumludur.",
+      "articleRefs": [
+        "7"
+      ],
+      "derivedNumbers": [],
+      "counterNumbers": []
+    },
+    {
+      "type": "trap",
+      "title": "Performans denetimi tazmin doğurmaz",
+      "body": "Dikkat: Her denetim kesin hükme bağlamaya varmaz. **Performans denetimleri mali ve hukuki sorumluluk doğurmaz.** Kesin hükme bağlanan şey, **genel yönetim kapsamındaki** kamu idarelerinde sorumluların hesap ve işlemlerinden **kamu zararına** yol açan hususlardır. Bir de şu ayrıma bak: Bakanlar, kamu kaynaklarının etkili, ekonomik ve verimli kullanılması ile hukuki ve mali konularda **Cumhurbaşkanına** karşı sorumludur.",
+      "articleRefs": [
+        "5",
+        "7"
+      ],
+      "derivedNumbers": [],
+      "counterNumbers": []
+    },
+    {
+      "type": "rule",
+      "title": "Hesapların verilmesi",
+      "body": "- Hesapları **muhasebe yetkilileri** hazırlar; üst yönetici veya görevlendirdiği harcama yetkilileri ile muhasebe yetkilileri denetime hazır bekletir ya da Sayıştayın bildireceği yere gönderir.\n- Sunulacak defter, kayıt ve belgelerin çeşidi, verilme yeri, süresi ve usulünü **Sayıştay** belirler.\n- Hesabın verilmemesinden doğan sorumluluk, hesabın **istendiği tarihte görev başında bulunan** muhasebe yetkilisi ile üst yönetici veya görevlendirdiği harcama yetkilisine aittir.\n- Kamu idareleri **her hesap yılı başında** muhasebe birimlerini ve muhasebe yetkililerinin ad ve soyadlarını Sayıştaya bildirir; yıl içindeki değişiklikler **değişiklik tarihinden itibaren en geç bir ay** içinde bildirilir.",
+      "articleRefs": [
+        "8"
+      ],
+      "derivedNumbers": [],
+      "counterNumbers": []
+    },
+    {
+      "type": "rule",
+      "title": "Bilgi vermeyene yaptırım: yarım aylık",
+      "body": "- Sorumlular ve ilgililer istenen bilgi, kayıt ve belgeleri vermek, işlem ve malların fiili ve fiziki durumunu **geciktirmeksizin** göstermek zorundadır; belgelerin asıllarını, aslı gösterilemiyorsa ikinci nüshalarını gösterirler.\n- Hesabı zamanında ve tam vermeyen ya da denetim ve yargılamayı güçleştirenlerin aylıkları, **Sayıştayın istemi üzerine ilgili kamu idaresince**, eksiksiz verinceye kadar **yarım** ödenir.\n- Yarım aylık başladıktan sonra **muhasebe yetkilileri en çok üç ay**, diğer görevliler **Sayıştayca belli edilen süre** içinde yine vermezse, kamu idaresince **görevden uzaklaştırılır** ve haklarında soruşturma veya kovuşturma yapılır.\n- **Sayıştay ilamlarının infazını izlemeyen ve gereklerini yerine getirmeyenlere** de aynı hükümler uygulanır.\n- Bu kurallara uymayanlar ile md 6'nın birinci ve ikinci fıkralarının gereklerini haklı bir sebep olmadan tam ve zamanında yerine getirmeyen ilgililer hakkında Sayıştayın istemi üzerine **disiplin veya ceza kovuşturması** yapılır.",
+      "articleRefs": [
+        "6",
+        "9"
+      ],
+      "derivedNumbers": [],
+      "counterNumbers": []
+    },
+    {
+      "type": "rule",
+      "title": "Sayıştay mensupları ve organları",
+      "body": "**Mensuplar**\n- **Meslek mensupları:** Sayıştay Başkanı; daire başkanları ve üyeler; Sayıştay denetçileri\n- **Başsavcı ve savcılar**\n- **Yönetim mensupları**\n\n**Organlar**\n- Başkanlık\n- Daireler\n- Genel Kurul\n- Temyiz Kurulu\n- Daireler Kurulu\n- Rapor Değerlendirme Kurulu\n- Yüksek Disiplin Kurulu\n- Meslek Mensupları Yükseltme ve Disiplin Kurulu\n- Denetim, Planlama ve Koordinasyon Kurulu\n- Başsavcılık",
+      "articleRefs": [
+        "10",
+        "11"
+      ],
+      "derivedNumbers": [],
+      "counterNumbers": []
+    },
+    {
+      "type": "trap",
+      "title": "Başsavcı meslek mensubu mu?",
+      "body": "Hayır. Kanun mensupları üç bende ayırır ve **başsavcı ile savcılar ayrı bir bentte** sayılır; meslek mensupları arasında yer almazlar. Meslek mensupları yalnızca Sayıştay Başkanı, daire başkanları ve üyeler ile Sayıştay denetçileridir. Ama organlar listesinde **Başsavcılık** vardır, onu unutma. Kurul adlarını da birbirine karıştırma: **Yüksek Disiplin Kurulu** ile **Meslek Mensupları Yükseltme ve Disiplin Kurulu** iki ayrı organdır.",
+      "articleRefs": [
+        "10",
+        "11"
+      ],
+      "derivedNumbers": [],
+      "counterNumbers": []
+    },
+    {
+      "type": "numbers",
+      "title": "Sayılar ve süreler: denetim ve hesaplar",
+      "rows": [
+        {
+          "label": "Bağımsız denetim raporlarına dayalı denetim — kamu payı",
+          "value": "%50'den az + ilgili mevzuatı uyarınca bağımsız denetime tabi",
+          "refs": [
+            "4"
+          ]
+        },
+        {
+          "label": "Muhasebe birimleri ve yetkililerinin bildirimi",
+          "value": "Her hesap yılı başında",
+          "refs": [
+            "8"
+          ]
+        },
+        {
+          "label": "Yıl içindeki değişikliğin bildirimi",
+          "value": "Değişiklik tarihinden itibaren en geç bir ay",
+          "refs": [
+            "8"
+          ]
+        },
+        {
+          "label": "Bilgi ve belge vermeyenin aylığı",
+          "value": "Eksiksiz verinceye kadar yarım ödenir",
+          "refs": [
+            "9"
+          ]
+        },
+        {
+          "label": "Yarım aylıktan sonra muhasebe yetkilisine süre",
+          "value": "En çok üç ay",
+          "refs": [
+            "9"
+          ]
+        },
+        {
+          "label": "Yarım aylıktan sonra diğer görevlilere süre",
+          "value": "Sayıştayca belli edilen süre",
+          "refs": [
+            "9"
+          ]
+        },
+        {
+          "label": "Süre sonunda",
+          "value": "Görevden uzaklaştırma; soruşturma veya kovuşturma",
+          "refs": [
+            "9"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "4",
+        "8",
+        "9"
+      ],
+      "derivedNumbers": [],
+      "counterNumbers": []
+    },
+    {
+      "type": "rule",
+      "title": "Başkan ve üyelerin nitelikleri",
+      "body": "**Ortak şart (Başkan ve üye):** Hukuk, siyasal bilgiler, iktisat, işletme, iktisadi ve idari bilimler fakülteleri veya YÖK'çe denkliği onanmış yurt içi ya da yurt dışı **en az dört yıllık** fakülte veya yüksekokul mezuniyeti + mezuniyetten sonra kamu idarelerinde **en az onaltı yıl** çalışma.\n\n**Başkanlık için ayrıca** şu görevlerde **toplam bir yıl** bulunmak:\n- Sayıştay üyeliği\n- Bakanlık\n- Müsteşarlık veya valilik\n- Rektörlük\n- Başbakanlık ve bakanlıklar ile bağlı kuruluşlarda genel müdürlük veya başkanlık\n- Maliye Teftiş Kurulu ile Hesap Uzmanları Kurulu Başkanlığı\n- Başbakanlık ve bakanlıklar Teftiş Kurulu başkanlıkları\n- Düzenleyici ve Denetleyici Kurul başkanlıkları\n\n**Üyelik için ayrıca** şu görevlerde **toplam bir yıl** bulunmak:\n- Başkanlık listesindeki görevler (**Sayıştay üyeliği hariç**) ve müsteşar yardımcılığı\n- **Birinci sınıfa ayrılmak şartıyla** Sayıştay denetçiliği, başsavcılık veya savcılık\n- Profesörlük\n- **Birinci sınıfa ayrılmak şartıyla** idari veya adli yargı hâkimliği veya savcılığı\n- Başbakanlık, bakanlıklar ve Hazine Müsteşarlığı merkez denetim elemanlığı\n\n**Sayıştay dışından seçilen üye**, son görev yaptığı idareyle ilgili işlere **üç yıl** bakamaz.\n\n**Not:** Başbakanlık, müsteşarlık, Hazine Müsteşarlığı, Maliye Teftiş Kurulu ve Hesap Uzmanları Kurulu kanun metnindeki hâliyle verilmiştir.",
+      "articleRefs": [
+        "12"
+      ],
+      "derivedNumbers": [],
+      "counterNumbers": []
+    },
+    {
+      "type": "rule",
+      "title": "Sayıştay Başkanının seçimi",
+      "body": "- Nitelikli istekliler arasından, md 16 esaslarına göre belirlenen **iki aday** arasından **TBMM Genel Kurulunca gizli oyla** seçilir.\n- Seçime, görev süresinin dolmasından **otuz gün önce** veya makamın boşalmasından **on gün sonra** başlanır; başlamadan itibaren **otuz gün** içinde sonuçlandırılır.\n- Bu sürelerde Meclisin **ara verme veya tatil günleri** sayılmaz.\n- **Yeter sayı:** Toplantıya katılanların **salt çoğunluğu**; ancak bu oy TBMM üye tamsayısının **dörtte birinin bir fazlasından** az olamaz.\n- **Görev süresi beş yıl**; bir kimse **en fazla iki defa** seçilebilir. Görev, yeni Başkan göreve başlayıncaya kadar sürer.\n- Görevi biten Başkan **boş kadro şartı aranmaksızın** Sayıştay üyesi olarak devam eder; boşalan ilk üye kadrosu ona tahsis edilir ve **en kıdemli üye** sayılır.",
+      "articleRefs": [
+        "13"
+      ],
+      "derivedNumbers": [],
+      "counterNumbers": []
+    },
+    {
+      "type": "rule",
+      "title": "Daire başkanlarının seçimi",
+      "body": "- **Sayıştay Genel Kurulunca**, **en az üç yılını doldurmuş üyeler** arasından **gizli oy** ve **üye tamsayısının salt çoğunluğu** ile seçilir.\n- İlk üç oylamada salt çoğunluk sağlanamazsa, üçüncü oylamada en çok oy alan **iki aday** için **dördüncü oylama** yapılır; en fazla oy alan seçilir.\n- **Görev süresi dört yıl.** Süresi dolan veya kendi isteğiyle üyeliğe dönen **yeniden seçilebilir**.\n- Seçim, görev süresinin bittiği ya da boşalmanın olduğu tarihten itibaren **onbeş gün** içinde yapılır; **çalışmaya ara verme** müddeti hesaba katılmaz.\n- Görevi biten daire başkanı **boş üye kadrosu şartı aranmaksızın** üyeliğe döner; boşalan ilk üye kadrosu kendisine tahsis edilir.",
+      "articleRefs": [
+        "14"
+      ],
+      "derivedNumbers": [],
+      "counterNumbers": []
+    },
+    {
+      "type": "rule",
+      "title": "Üyelerin seçimi",
+      "body": "- **Kontenjan:** Üyelerin **beşte üçü** Sayıştay meslek mensuplarından; kalanların **en az yarısı** Maliye Bakanlığı meslek mensuplarından olmak üzere md 12'deki nitelikleri taşıyan adaylar arasından seçilir.\n- Boşalmada, daire başkanlığı kadroları da dahil, boşalan kontenjan için seçim yapılır.\n- Boşalan üyelik sayısı **beşi bulduğunda**, Sayıştay Başkanlığı **yedi gün içinde** Resmî Gazete ve diğer basın-yayın organlarıyla duyuru yapar.\n- Başvuru Sayıştaya yapılır; süre ilk duyurudan itibaren **otuz gün**.\n- **Sayıştay Genel Kurulu**, siciller üzerinde inceleme yaparak, **mevcut üye sayısının salt çoğunluğunun gizli oyu** ile **her boş yer için dörder aday** seçer; bu iş başvuru süresinin bitiminden itibaren **otuz gün** içinde biter.\n- Sonuçlar, adayların **sicil özetleri** ile birlikte seçimi takip eden **üç iş günü** içinde TBMM Başkanlığına sunulur.\n- Otuz günde seçim tamamlanamazsa, aday adaylığı kabul edilenlerin **tümü**, sicil özetleri ve kontenjan grupları belirtilerek TBMM Başkanlığına sunulur.\n\n**Not:** Maliye Bakanlığı kanun metnindeki hâliyle verilmiştir.",
+      "articleRefs": [
+        "15"
+      ],
+      "derivedNumbers": [],
+      "counterNumbers": []
+    },
+    {
+      "type": "rule",
+      "title": "Ön Seçim Geçici Komisyonu",
+      "body": "- TBMM Genel Kurulundaki Sayıştay Başkanlığı ve üyeliği seçimleri için değerlendirme yapmak ve aday belirlemek üzere **Sayıştay Başkanı ve Üyeleri Ön Seçim Geçici Komisyonu** kurulur.\n- **Plan ve Bütçe Komisyonu üyeleri** arasından, siyasi parti ve bağımsızların temsil güçleri oranında ve **ad çekme** usulüyle belirlenen **onbeş kişiden** oluşur.\n- Plan ve Bütçe Komisyonu Başkanı kendi parti grubunun kontenjanından katılır ve **başkanlık eder**.\n- **Salt çoğunlukla toplanır.** Başkan adayları için aday listesi, üye adayları için kontenjan gruplarına göre **birleşik oy pusulası** kullanılır; oylama **gizlidir**.\n- **Aday seçilme:** ilk turda **üye tam sayısının** salt çoğunluğu; ikinci turda **oylamaya katılanların** salt çoğunluğu; üçüncü oylamada geçerli oyların **en yükseğini** alanlar. Eşitlikte eşit oy alanlar arasında yeniden oylanır.\n- Gerekli gördüğünde adaylarla **mülakat yapabilir**.\n- Kontenjan oranlarına göre **boş üyelik sayısının iki katı** aday TBMM Genel Kuruluna sunulur; Genel Kurulda gizli oylama yapılır, **seçilecek üye sayısından fazla verilen oylar geçersizdir**.",
+      "articleRefs": [
+        "16"
+      ],
+      "derivedNumbers": [],
+      "counterNumbers": []
+    },
+    {
+      "type": "trap",
+      "title": "Hangi seçimde hangi çoğunluk?",
+      "body": "Seçimlerdeki çoğunluk türleri birbirine çok benziyor, ayrıntıya dikkat et:\n- **Sayıştay Başkanı (TBMM Genel Kurulu):** **toplantıya katılanların** salt çoğunluğu, ama TBMM üye tamsayısının dörtte birinin bir fazlasından az olmamak üzere.\n- **Daire başkanı (Sayıştay Genel Kurulu):** **üye tamsayısının** salt çoğunluğu; ilk üç oylamada sonuç çıkmazsa **dördüncü oylama** en çok oy alan iki aday arasında yapılır.\n- **Üye adayı belirleme (Sayıştay Genel Kurulu):** **mevcut üye sayısının** salt çoğunluğu, her boş yer için **dörder** aday.\n- **Ön Seçim Geçici Komisyonu:** ilk tur üye tam sayısının, ikinci tur oylamaya katılanların salt çoğunluğu, **üçüncü oylamada** en yüksek oy yeter. TBMM Genel Kuruluna giden aday sayısı boş üyeliğin **iki katı**dır.",
+      "articleRefs": [
+        "13",
+        "14",
+        "15",
+        "16"
+      ],
+      "derivedNumbers": [],
+      "counterNumbers": []
+    },
+    {
+      "type": "rule",
+      "title": "Denetçi yardımcılığı giriş sınavı",
+      "body": "- **Denetçiler, denetçi yardımcılığından yetişir.**\n- Hukuk, siyasal bilgiler, iktisat, işletme, iktisadi ve idari bilimler veya YÖK'çe denkliği kabul edilen **en az dört yıllık** fakülte ya da yüksekokul mezunları giriş sınavına girer; kazananlar **Sayıştay Başkanınca aday olarak** atanır.\n- **Yaş:** Sınav yılının **ocak ayının ilk günü** itibarıyla **31 yaşını** (yüksek lisans veya doktora sahipleri için **35 yaşını**) bitirmemiş olmak + 657 sayılı Devlet Memurları Kanununun 48 inci maddesindeki genel nitelikler.\n- **Giriş sınavı = eleme + yazılı + mülakat.** Eleme ve yazılı sınavları, Sayıştay Başkanlığıyla yapılan protokole göre **Öğrenci Seçme ve Yerleştirme Merkezi** yapar.\n- **Eleme:** alan bilgisi, genel kültür, genel yetenek; test usulü. **Yetmiş puandan** az olmamak üzere kadronun **beş katına** kadar aday yazılıya çağrılır.\n- **Yazılı:** zorunlu iktisat, maliye, hukuk, kompozisyon; seçimlik ticaret hukuku veya muhasebe. Yetmiş puandan az olmamak üzere kadronun **üç katına** kadar aday mülakata çağrılır.\n- **Mülakat yönleri:** bir konuyu kavrayıp özetleme, ifade ve muhakeme; liyakat, temsil kabiliyeti, davranışların mesleğe uygunluğu; özgüven, ikna, inandırıcılık; genel yetenek ve genel kültür; bilimsel ve teknolojik gelişmelere açıklık. Her biri **yirmişer puan**; puanlar ayrı ayrı tutanağa geçer, başka kayıt sistemi kullanılmaz.\n- **Mülakat komisyonu:** Sayıştay Başkanı veya görevlendireceği daire başkanı başkanlığında **iki üye ve üç uzman denetçi**, toplam **altı kişi**. Başarı için yüz tam puan üzerinden ortalamanın **en az yetmiş** olması gerekir.\n- **Sonuç listesi:** eleme, yazılı ve mülakat puanlarının **aritmetik ortalaması**; ilandaki kadro sayısı kadar atama.\n\n**Not:** \"Öğrenci Seçme ve Yerleştirme Merkezi\" adı kanun metnindeki hâliyle verilmiştir; kurumun bugünkü adı Ölçme, Seçme ve Yerleştirme Merkezi Başkanlığıdır.",
+      "articleRefs": [
+        "17"
+      ],
+      "derivedNumbers": [],
+      "counterNumbers": []
+    },
+    {
+      "type": "rule",
+      "title": "Adaylık, staj ve denetçiliğe atanma",
+      "body": "- **Mesleki eğitim ve staj:** en az iki, en çok üç yıl.\n- **Adaylık süresi:** en az bir, en çok iki yıl.\n- Adaylık sonunda **olumlu sicil** alanlar, **Meslek Mensupları Yükseltme ve Disiplin Kurulu** kararı ve **Sayıştay Başkanının onayı** ile denetçi yardımcılığına atanır; alamayanların görevine aynı usulle son verilir.\n- Denetçiliğe atanmak için eğitim ve staj sonundaki **sınavda başarı + olumlu sicil** şarttır.\n- **Yeterlik sınavında başarısız** olanların meslek mensupluğu ile ilişiği kesilir; **yazılı talepte** bulunanlar Sayıştay Başkanının onayıyla **yönetim mensubu** olarak atanır.\n- Denetçiliğe atama: Meslek Mensupları Yükseltme ve Disiplin Kurulu kararı + Sayıştay Başkanının onayı.\n- Giriş sınavı, eğitim dersleri, staj ve sınav usulleri **yönetmelikle** düzenlenir.",
+      "articleRefs": [
+        "17"
+      ],
+      "derivedNumbers": [],
+      "counterNumbers": []
+    },
+    {
+      "type": "rule",
+      "title": "Başsavcı ve savcılar",
+      "body": "- **Süresi dolan Sayıştay Başsavcısı yeniden atanabilir.**\n- Görevi sona eren Başsavcı **boş kadro şartı aranmaksızın Sayıştay savcısı** olarak devam eder; boşalan ilk savcı kadrosu kendisine tahsis edilir.\n- **Savcı olabilmek için:** Hukuk, siyasal bilgiler, iktisat, işletme, iktisadi ve idari bilimler fakülteleri veya YÖK'çe denkliği kabul edilen yurt içi ya da yurt dışı **en az dört yıllık** fakülte veya yüksekokul mezuniyeti + yükseköğrenimden sonra **mali, iktisadi veya hukuki** konularla ilgili kamu görevlisi olarak **en az on yıl** çalışma.\n- **Başsavcı**, **birinci sınıfa ayrılmış ve bu sınıfta dokuz yılını doldurmuş denetçinin** haklarından yararlanır.\n- Savcıların intibakında Sayıştay dışındaki hizmet sürelerinin **üçte ikisi** dikkate alınır.\n- Başsavcı ve savcılar; aylık, ödenek, mali, sosyal, emeklilik ve diğer haklar ile disiplin, ceza kovuşturması, sicil ve teminat bakımından **kendi derece ve kıdemindeki denetçilere** ilişkin hükümlere tabidir.\n\n**Not:** Birinci fıkranın ilk iki cümlesi mülgadır; Başsavcının süresine atıf yapan kalan hüküm kanun metnindeki hâliyle verilmiştir.",
+      "articleRefs": [
+        "18"
+      ],
+      "derivedNumbers": [],
+      "counterNumbers": []
+    },
+    {
+      "type": "numbers",
+      "title": "Sayılar ve süreler: nitelik, seçim ve atama",
+      "rows": [
+        {
+          "label": "Başkan ve üye — öğrenim",
+          "value": "En az 4 yıllık fakülte veya yüksekokul",
+          "refs": [
+            "12"
+          ]
+        },
+        {
+          "label": "Başkan ve üye — kamu idarelerinde çalışma",
+          "value": "En az 16 yıl",
+          "refs": [
+            "12"
+          ]
+        },
+        {
+          "label": "Başkan ve üye — sayılan görevlerde bulunma",
+          "value": "Toplam 1 yıl",
+          "refs": [
+            "12"
+          ]
+        },
+        {
+          "label": "Dışarıdan seçilen üye — son idaresinin işlerine bakamama",
+          "value": "3 yıl",
+          "refs": [
+            "12"
+          ]
+        },
+        {
+          "label": "Başkan seçimine başlama",
+          "value": "Süre dolmadan 30 gün önce / boşalmadan 10 gün sonra",
+          "refs": [
+            "13"
+          ]
+        },
+        {
+          "label": "Başkan seçiminin sonuçlanması",
+          "value": "Başlamadan itibaren 30 gün",
+          "refs": [
+            "13"
+          ]
+        },
+        {
+          "label": "Başkan seçimi alt sınırı",
+          "value": "TBMM üye tamsayısının dörtte birinin bir fazlası",
+          "refs": [
+            "13"
+          ]
+        },
+        {
+          "label": "Başkan görev süresi",
+          "value": "5 yıl; en fazla 2 defa",
+          "refs": [
+            "13"
+          ]
+        },
+        {
+          "label": "Daire başkanı adayı — üyelik kıdemi",
+          "value": "En az 3 yıl",
+          "refs": [
+            "14"
+          ]
+        },
+        {
+          "label": "Daire başkanı görev süresi",
+          "value": "4 yıl",
+          "refs": [
+            "14"
+          ]
+        },
+        {
+          "label": "Daire başkanı seçimi",
+          "value": "15 gün içinde",
+          "refs": [
+            "14"
+          ]
+        },
+        {
+          "label": "Sayıştay meslek mensuplarından gelen üyeler",
+          "value": "Beşte üç",
+          "refs": [
+            "15"
+          ]
+        },
+        {
+          "label": "Kalan üyeliklerde Maliye Bakanlığı meslek mensupları",
+          "value": "En az yarısı",
+          "refs": [
+            "15"
+          ]
+        },
+        {
+          "label": "Duyuru eşiği ve süresi",
+          "value": "Boşalan üyelik 5 olunca; 7 gün içinde",
+          "refs": [
+            "15"
+          ]
+        },
+        {
+          "label": "Üye adaylığı başvuru süresi",
+          "value": "İlk duyurudan itibaren 30 gün",
+          "refs": [
+            "15"
+          ]
+        },
+        {
+          "label": "Sayıştay Genel Kurulunun aday seçimi",
+          "value": "Her boş yer için dörder; 30 gün içinde",
+          "refs": [
+            "15"
+          ]
+        },
+        {
+          "label": "Sonuçların TBMM Başkanlığına sunulması",
+          "value": "3 iş günü",
+          "refs": [
+            "15"
+          ]
+        },
+        {
+          "label": "Ön Seçim Geçici Komisyonu",
+          "value": "15 kişi",
+          "refs": [
+            "16"
+          ]
+        },
+        {
+          "label": "TBMM Genel Kuruluna sunulan üye adayı",
+          "value": "Boş üyelik sayısının 2 katı",
+          "refs": [
+            "16"
+          ]
+        },
+        {
+          "label": "Denetçi yardımcılığı sınavı — yaş",
+          "value": "31 yaşını bitirmemiş (lisansüstü: 35)",
+          "refs": [
+            "17"
+          ]
+        },
+        {
+          "label": "Eleme sınavı",
+          "value": "En az 70 puan; kadronun 5 katı yazılıya",
+          "refs": [
+            "17"
+          ]
+        },
+        {
+          "label": "Yazılı sınav",
+          "value": "En az 70 puan; kadronun 3 katı mülakata",
+          "refs": [
+            "17"
+          ]
+        },
+        {
+          "label": "Mülakat",
+          "value": "Her yön 20 puan; 6 kişilik komisyon; ortalama en az 70",
+          "refs": [
+            "17"
+          ]
+        },
+        {
+          "label": "Mesleki eğitim ve staj",
+          "value": "En az 2, en çok 3 yıl",
+          "refs": [
+            "17"
+          ]
+        },
+        {
+          "label": "Adaylık",
+          "value": "En az 1, en çok 2 yıl",
+          "refs": [
+            "17"
+          ]
+        },
+        {
+          "label": "Savcılık — kamu görevi",
+          "value": "En az 10 yıl",
+          "refs": [
+            "18"
+          ]
+        },
+        {
+          "label": "Başsavcının hakları",
+          "value": "Birinci sınıfta 9 yılını doldurmuş denetçi",
+          "refs": [
+            "18"
+          ]
+        },
+        {
+          "label": "Savcı intibakı — dış hizmet",
+          "value": "Üçte ikisi",
+          "refs": [
+            "18"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17",
+        "18"
+      ],
+      "derivedNumbers": [],
+      "counterNumbers": []
+    },
+    {
+      "type": "compare",
+      "title": "Sayıştay Başkanı mı, daire başkanı mı?",
+      "rows": [
+        {
+          "aspect": "Seçen organ",
+          "left": "TBMM Genel Kurulu, gizli oy",
+          "right": "Sayıştay Genel Kurulu, gizli oy",
+          "refs": [
+            "13",
+            "14"
+          ]
+        },
+        {
+          "aspect": "Kimler arasından",
+          "left": "Nitelikli isteklilerden md 16'ya göre belirlenen iki aday",
+          "right": "En az üç yılını doldurmuş üyeler",
+          "refs": [
+            "13",
+            "14"
+          ]
+        },
+        {
+          "aspect": "Gerekli oy",
+          "left": "Toplantıya katılanların salt çoğunluğu; TBMM üye tamsayısının dörtte birinin bir fazlasından az olmamak kaydıyla",
+          "right": "Üye tamsayısının salt çoğunluğu; ilk üç oylamada olmazsa dördüncü oylamada en çok oy alan",
+          "refs": [
+            "13",
+            "14"
+          ]
+        },
+        {
+          "aspect": "Seçim zamanı",
+          "left": "Süre dolmadan otuz gün önce ya da boşalmadan on gün sonra başlar; otuz günde sonuçlanır",
+          "right": "Süre bitiminden ya da boşalmadan itibaren onbeş gün içinde",
+          "refs": [
+            "13",
+            "14"
+          ]
+        },
+        {
+          "aspect": "Sürede sayılmayan günler",
+          "left": "Meclisin ara verme veya tatil günleri",
+          "right": "Çalışmaya ara verme müddeti",
+          "refs": [
+            "13",
+            "14"
+          ]
+        },
+        {
+          "aspect": "Görev süresi",
+          "left": "Beş yıl",
+          "right": "Dört yıl",
+          "refs": [
+            "13",
+            "14"
+          ]
+        },
+        {
+          "aspect": "Yeniden seçilme",
+          "left": "En fazla iki defa",
+          "right": "Süresi dolan veya kendi isteğiyle üyeliğe dönen yeniden seçilebilir",
+          "refs": [
+            "13",
+            "14"
+          ]
+        },
+        {
+          "aspect": "Görev bitince",
+          "left": "Boş kadro şartı aranmaksızın üye; ilk boş üye kadrosu tahsis edilir; en kıdemli üye sayılır",
+          "right": "Boş üye kadrosu şartı aranmaksızın üyeliğe döner; ilk boş üye kadrosu tahsis edilir",
+          "refs": [
+            "13",
+            "14"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "13",
+        "14"
+      ],
+      "derivedNumbers": [],
+      "counterNumbers": []
+    },
+    {
+      "type": "exam_stats",
+      "title": "Sınav der ki",
+      "rows": [
+        {
+          "label": "Bu ünitenin maddelerinden yayındaki soru",
+          "value": "0",
+          "refs": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18"
+          ]
+        },
+        {
+          "label": "Hiç soru çıkmamış",
+          "value": "md 1, md 2, md 3, md 4, md 5, md 6, md 7, md 8, md 9, md 10, md 11, md 12, md 13, md 14, md 15, md 16, md 17, md 18",
+          "refs": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17",
+        "18"
+      ],
+      "generated": true
+    },
+    {
+      "type": "bridge",
+      "title": "Bu üniteden soru çöz",
+      "articleRefs": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17",
+        "18"
+      ],
+      "generated": true,
+      "rows": [
+        {
+          "label": "Madde kapsamlı seans",
+          "value": "md 1–18, 0 soru",
+          "refs": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18"
+          ]
+        }
+      ]
+    }
+  ]
+}

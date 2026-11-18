@@ -1,0 +1,653 @@
+{
+  "unit": {
+    "slug": "aymk-4-mali-sosyal-ve-diger-haklar",
+    "legislationSlug": "6216-anayasa-mahkemesinin-kurulusu-ve-yargilama-usulleri-hakkinda-kanun",
+    "topicId": "746633d6-5e90-404b-b0ea-ebcd670b4dc8",
+    "title": "Mali, sosyal ve diğer haklar",
+    "subtitle": "Aylık oranları, göstergeler, izin, sağlık giderleri, kuruluş günü, yurt dışı görevlendirme, staj ve kadrolar",
+    "articleFrom": "68",
+    "articleTo": "Ek 1",
+    "readingMinutes": 8,
+    "sourceLabel": "AI özeti — 6216 Anayasa Mahkemesinin Kuruluşu ve Yargılama Usulleri Hakkında Kanun, md 68–73, 73/A, 74–77, Ek 1",
+    "articleNos": [
+      "68",
+      "69",
+      "70",
+      "71",
+      "72",
+      "73",
+      "73/A",
+      "74",
+      "75",
+      "76",
+      "77",
+      "Ek 1"
+    ],
+    "generatedBy": "claude-opus-5-5 (ozet-uret.ts)",
+    "sortOrder": 4
+  },
+  "blocks": [
+    {
+      "type": "concept",
+      "title": "Paranın adresi bu Kanun",
+      "body": "Bu ünitede Anayasa Mahkemesinde görev yapanların mali ve sosyal haklarını öğreneceksin. Başlangıç noktası md 68. Bu maddeye göre şu kişilerin aylık ve ödenekleri ile diğer mali, sosyal hak ve yardımları **bu Kanun hükümlerine tabidir**: Başkan, başkanvekilleri, üyeler, raportörler, raportör yardımcıları ve raportör yardımcısı adayları. Listeyi bu sırayla aklında tut. Aşağıdaki aylık tablosu da aynı sırayı izliyor.",
+      "articleRefs": [
+        "68"
+      ]
+    },
+    {
+      "type": "concept",
+      "title": "Kıstas aylık: her şeyin ölçüsü",
+      "body": "Aylık sistemi tek bir ölçüye dayanır: **kıstas aylık**. Kıstas aylığı oluşturan her bir ödeme unsurunun belli bir yüzdesi, unvana ve dereceye göre ödenir. En tepede Anayasa Mahkemesi Başkanı var ve kıstasın %100'ünü alır. Her grubun içinde derece düştükçe oran da düşer. Gruplar arasında ise sıra bozulur: birinci derecedeki raportör yardımcısı (%65), birinci derecedeki diğer raportörden (%55) fazla alır. En altta raportör yardımcısı adayları %37 ile yer alır. Oranları ezberlerken tepeden aşağı doğru git, işin kolaylaşır.",
+      "articleRefs": [
+        "69"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "İkramiye hesabı ve derece yükselmesi",
+      "body": "**İkramiye:** Ödeme unsurları arasındaki ikramiye hesaplanırken, kıstas aylık içindeki ikramiyenin bir mali yıldaki toplam tutarının **on ikide biri** dikkate alınır.\n\n**Derece yükselmesi:** Dereceleri yükselen raportörler ve raportör yardımcıları, yeni derecelerinin aylığına şu tarihten itibaren hak kazanır:\n- yükselmenin geçerlilik tarihini **takip eden ayın on beşi**.",
+      "articleRefs": [
+        "69"
+      ]
+    },
+    {
+      "type": "numbers",
+      "title": "Aylık oranları (kıstas aylığın yüzdesi)",
+      "rows": [
+        {
+          "label": "Anayasa Mahkemesi Başkanı",
+          "value": "%100",
+          "refs": [
+            "69"
+          ]
+        },
+        {
+          "label": "Başkanvekilleri",
+          "value": "%90",
+          "refs": [
+            "69"
+          ]
+        },
+        {
+          "label": "Üyeler",
+          "value": "%86",
+          "refs": [
+            "69"
+          ]
+        },
+        {
+          "label": "Birinci sınıf raportörler",
+          "value": "%79",
+          "refs": [
+            "69"
+          ]
+        },
+        {
+          "label": "Birinci sınıfa ayrılmış raportörler",
+          "value": "%65",
+          "refs": [
+            "69"
+          ]
+        },
+        {
+          "label": "Birinci derecedeki diğer raportörler",
+          "value": "%55",
+          "refs": [
+            "69"
+          ]
+        },
+        {
+          "label": "İkinci derece raportörler",
+          "value": "%53",
+          "refs": [
+            "69"
+          ]
+        },
+        {
+          "label": "Üçüncü derece raportörler",
+          "value": "%51",
+          "refs": [
+            "69"
+          ]
+        },
+        {
+          "label": "Dördüncü derece raportörler",
+          "value": "%49",
+          "refs": [
+            "69"
+          ]
+        },
+        {
+          "label": "Beşinci derece raportörler",
+          "value": "%47",
+          "refs": [
+            "69"
+          ]
+        },
+        {
+          "label": "Altıncı derece raportörler",
+          "value": "%45",
+          "refs": [
+            "69"
+          ]
+        },
+        {
+          "label": "Yedinci derece raportörler",
+          "value": "%43",
+          "refs": [
+            "69"
+          ]
+        },
+        {
+          "label": "Sekizinci derece raportörler",
+          "value": "%41",
+          "refs": [
+            "69"
+          ]
+        },
+        {
+          "label": "Birinci derece raportör yardımcıları",
+          "value": "%65",
+          "refs": [
+            "69"
+          ]
+        },
+        {
+          "label": "İkinci derece raportör yardımcıları",
+          "value": "%56",
+          "refs": [
+            "69"
+          ]
+        },
+        {
+          "label": "Üçüncü derece raportör yardımcıları",
+          "value": "%54",
+          "refs": [
+            "69"
+          ]
+        },
+        {
+          "label": "Dördüncü derece raportör yardımcıları",
+          "value": "%52",
+          "refs": [
+            "69"
+          ]
+        },
+        {
+          "label": "Beşinci derece raportör yardımcıları",
+          "value": "%50",
+          "refs": [
+            "69"
+          ]
+        },
+        {
+          "label": "Altıncı derece raportör yardımcıları",
+          "value": "%47",
+          "refs": [
+            "69"
+          ]
+        },
+        {
+          "label": "Yedinci derece raportör yardımcıları",
+          "value": "%46",
+          "refs": [
+            "69"
+          ]
+        },
+        {
+          "label": "Sekizinci derece raportör yardımcıları",
+          "value": "%44",
+          "refs": [
+            "69"
+          ]
+        },
+        {
+          "label": "Raportör yardımcısı adayları",
+          "value": "%37",
+          "refs": [
+            "69"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "69"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "%65 iki kez geçiyor, dikkat!",
+      "body": "Tabloda **%65** iki ayrı grubun oranıdır: **birinci sınıfa ayrılmış raportörler** ve **birinci derecedeki raportör yardımcıları**. Bu iki grubu birbirinin yerine koyma.\n\nİkinci tuzak: **birinci sınıf raportör** (%79) ile **birinci sınıfa ayrılmış raportör** (%65) aynı şey değildir. Birinci derecedeki diğer raportörler ise %55 alır. Yani birinci derecedeki raportör yardımcısının oranı, birinci derecedeki diğer raportörün oranından yüksektir.\n\nRaportörlerde birinci dereceden sekizinci dereceye kadar oran her derecede iki puan düşer (%55'ten %41'e). Raportör yardımcılarında böyle düzenli bir aralık yok, onları tek tek bil.",
+      "articleRefs": [
+        "69"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "type": "rule",
+      "title": "Birinci sınıf raportöre ek puan",
+      "body": "Birinci sınıf raportörlerin aylık oranına şu esaslarla ek yapılır:\n- **her üç yılda bir, iki puan** eklenir;\n- ödemeye esas oran **%83'ü geçemez**;\n- **şart:** birinci sınıfa ayrılma niteliklerini kaybetmemiş olmak.\n\n%79'dan başlayan oran, iki artışla %83 tavanına ulaşır. Bu da 6 yıl eder.",
+      "articleRefs": [
+        "69"
+      ],
+      "derivedNumbers": [
+        {
+          "value": 6,
+          "expr": "((83 - 79) / 2) * 3",
+          "refs": [
+            "69"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Vergi ve yargı ödeneği",
+      "body": "**Vergi:** Kıstas aylığı oluşturan ödeme unsurlarından vergiye tabi olmayanlar, bu maddeye göre yapılan ödemelerde de vergiye tabi olmaz.\n\n**Yargı ödeneği:** Başkana, başkanvekillerine, üyelere ve raportörlere, bu maddeye göre ödenen **brüt aylıklarının %10'u** oranında yargı ödeneği verilir.\n\nRaportör yardımcıları ve raportör yardımcısı adayları bu fıkrada sayılmaz.",
+      "articleRefs": [
+        "69"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Dışarıdan gelen raportörler ve ödenmeyenler",
+      "body": "**Yükseköğretim kurumlarından veya Sayıştaydan gelen raportörler:** Bunlara, aynı derece, kademe ve kıdemdeki **hâkim ve savcı raportörlere** ödenen aylık ve ödenekler esas alınarak ödeme yapılır.\n\n**Ödenmeyenler.** Bu maddeye göre ödeme yapılanlara şunlar ödenmez:\n- 375 sayılı Kanun Hükmünde Kararname kapsamındaki ödemeler (**yabancı dil tazminatı hariç**);\n- temsil, makam ve yüksek hâkimlik tazminatları;\n- 657 sayılı Kanunun 152 nci maddesi uyarınca yapılan ödeme.\n\n**Not:** 375 sayılı Kanun Hükmünde Kararnameye atıf, madde metnindeki hâliyle verilmiştir.",
+      "articleRefs": [
+        "69"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Göstergeler, aylık ek ödenek ve boşluk hâli",
+      "body": "**Ek göstergeler:**\n- Başkan: **9.000**\n- Üyeler: **8.000**\n\n**Yüksek hâkimlik tazminat göstergesi:** **17.000**\n\n**Aylık ek ödenek:** Gösterge rakamı, memur aylıklarına uygulanan katsayı ile çarpılır.\n- Başkan, başkanvekilleri ve üyeler için gösterge: **40.000**\n- Raportörler için gösterge: **10.000**\n\nBu ödeneğe hak kazanılmasında ve ödenmesinde 2802 sayılı Kanunun aylıklara ilişkin hükmü uygulanır. Ödenek, **damga vergisi hariç**, hiçbir vergi ve kesintiye tabi tutulmaz.\n\n**Boşluk hâli:** Şu konularda bu Kanunda hüküm yoksa, ilgisine göre 2802 sayılı Kanun ile 657 sayılı Kanun uygulanır:\n- aylığın ödenme zamanı;\n- aylığın hangi hâllerde geri alınacağı;\n- sosyal hak ve yardımlar;\n- yardımcılıktan ve açıktan atanmada aylık ve ödeneğe hak kazanma.",
+      "articleRefs": [
+        "69"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Gösterge rakamlarını birbirine karıştırma",
+      "body": "Bu maddede sayılar çok, hangi rakamın kime ait olduğunu iyi oturt:\n- **9.000 / 8.000:** Başkan ve üyelerin ek göstergesi.\n- **17.000:** yüksek hâkimlik tazminat göstergesi.\n- **40.000:** Başkan, başkanvekilleri ve üyelerin aylık ek ödenek göstergesi.\n- **10.000:** raportörlerin aylık ek ödenek göstergesi.\n- **5.000:** Mahkemede görevli, 657 sayılı Kanuna tabi personelin ek ödeme göstergesi.\n\nEn sinsi eşleşme **10** rakamıdır. Raportöre hem brüt aylığın **%10'u** yargı ödeneği verilir, hem de **10.000** göstergeli aylık ek ödenek. Biri yüzde, diğeri gösterge rakamıdır.",
+      "articleRefs": [
+        "69"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "type": "rule",
+      "title": "İzin",
+      "body": "**Yıllık izin:** Başkan ve üyelerin **kırk günlük** yıllık izin hakkı vardır.\n\n**Şart:** Şu işler engellenmemelidir:\n- Yüce Divan sıfatıyla bakılan işler;\n- Anayasaya göre süreye tabi olan işler.\n\n**Hastalık ve mazeret izinleri:** Genel hükümlere tabidir.\n\n**İzni veren:** Yıllık ve mazeret izinlerini **Başkan** verir.",
+      "articleRefs": [
+        "70"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "40 gün kimin, izni kim verir?",
+      "body": "Kırk günlük yıllık izin hakkı md 70'te **Başkan ve üyeler** için yazılıdır. Raportörler bu fıkrada sayılmaz.\n\nBu hak koşulsuz da değildir. Yüce Divan işleri ve Anayasaya göre süreye tabi işler engellenmemelidir.\n\nİzni kimin verdiğine dikkat et. Başkanın verdiği izinler **yıllık ve mazeret** izinleridir. Hastalık izni bu cümlede geçmez. Hastalık ve mazeret izinleri genel hükümlere tabidir.",
+      "articleRefs": [
+        "70"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "type": "rule",
+      "title": "Sağlık giderleri",
+      "body": "**Kimler:**\n- Başkan ve üyeler;\n- bunların emeklileri;\n- bakmakla yükümlü oldukları aile fertleri.\n\n**Ölçü:** Türkiye Büyük Millet Meclisi üyelerinin tabi olduğu hükümler ve esaslar.\n\n**Ödeyen:** Mahkeme bütçesi.",
+      "articleRefs": [
+        "71"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Kuruluş günü ve onur belgesi",
+      "body": "**Kuruluş günü:** Her yılın **25 Nisan**ı Mahkemenin kuruluş günüdür. Kuruluş günü törenlerle kutlanır. Seminer, konferans ve benzeri etkinlikler tertiplenebilir.\n\n**Onur belgesi:** Emekliye ayrılmış başkanlara, başkanvekillerine ve üyelere onur belgesi ile geçmiş hizmetlerinin anısını simgeleyen birer armağan verilir.\n\n**Gider:** Tören ve armağan giderleri için her yıl Mahkeme bütçesine yeterli ödenek konulur. Bu harcamalar 4734 sayılı **Kamu İhale Kanununa tabi değildir**.",
+      "articleRefs": [
+        "72"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Yabancı ülkelere gönderilme",
+      "body": "**Kimler:** Raportörler ve raportör yardımcıları.\n\n**Amaç:** bilgi ve görgü artırma, lisansüstü eğitim, bilimsel araştırma ya da karşılıklı iş birliği.\n\n**Nerede:** yabancı ülke mahkemeleri, üniversiteler veya uluslararası kuruluşlarda çalışmak ya da öğrenim görmek.\n\n**Kim, ne kadar:** Başkanlıkça **iki yıla kadar** görevlendirilebilirler. Başkanlık gerekli görürse süre **bir katına kadar** uzatılabilir.\n\n**Uygulanacak hükümler:** Mali haklar, yükümlülükler, mecburî hizmet, giderlerin karşılanması ile aylık ve ödeneklerin transferi konularında **Devlet memurlarına ilişkin hükümler** uygulanır.\n\n**Haklar:** Derece yükselmeleri, kademe ilerlemeleri, emeklilik, aylık, ödenek ve diğer bütün özlük hakları ile yükümlülükleri devam eder.",
+      "articleRefs": [
+        "73"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Yurt dışında süre ve kişi tuzağı",
+      "body": "Yurt dışına gönderilenler **raportörler ve raportör yardımcılarıdır**. Üyeler bu maddede sayılmaz. Karar **Başkanlığındır**.\n\nSüre iki yıla kadardır. \"Bir katına kadar uzatma\" süreye iki yıl daha ekleyebilir. Böylece toplam süre en çok 4 yıl olur.\n\nBu kişilerin mali hakları için Devlet memurlarına ilişkin hükümler uygulanır. Görevlendirme süresince özlük hakları kesilmez, devam eder.",
+      "articleRefs": [
+        "73"
+      ],
+      "derivedNumbers": [
+        {
+          "value": 4,
+          "expr": "2 + 2",
+          "refs": [
+            "73"
+          ]
+        }
+      ],
+      "counterNumbers": []
+    },
+    {
+      "type": "rule",
+      "title": "Mahkemede staj",
+      "body": "**Kimler staj yapabilir:**\n- hâkim ve savcı yardımcıları;\n- avukat stajyerleri.\n\n**Usul ve esaslar:** yönetmelikle düzenlenir.",
+      "articleRefs": [
+        "73/A"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Kadrolar ve kaldırılan kanun",
+      "body": "**Kadrolar:** Mahkemenin kadrolarının tespiti, ihdası, kullanımı ve iptali ile kadrolara ilişkin diğer hususlar, 190 sayılı Kanun Hükmünde Kararname hükümlerine göre düzenlenir.\n\n**Üye, raportör ve iç denetçi kadroları:** Bu Kanuna ekli **(I) sayılı Kadro Cetveli**nde düzenlenmiştir.\n\n**Kaldırılan kanun:** 2949 sayılı Anayasa Mahkemesinin Kuruluşu ve Yargılama Usulleri Hakkında Kanun yürürlükten kaldırılmıştır.\n\n**Not:** 190 sayılı Kanun Hükmünde Kararnameye atıf, madde metnindeki hâliyle verilmiştir.",
+      "articleRefs": [
+        "74",
+        "75",
+        "Ek 1"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Yürürlük ve yürütme",
+      "body": "**Yürürlük:**\n- 45 ila 51 inci maddeler kendileri için belirlenen ayrı tarihte;\n- diğer hükümler **yayımı tarihinde**\n\nyürürlüğe girer.\n\n**Yürütme:** Kanun hükümlerini **Bakanlar Kurulu** yürütür.\n\n**Not:** Bakanlar Kurulu ifadesi madde metnindeki hâliyle verilmiştir.",
+      "articleRefs": [
+        "76",
+        "77"
+      ]
+    },
+    {
+      "type": "numbers",
+      "title": "Süreler, göstergeler ve tavanlar",
+      "rows": [
+        {
+          "label": "Birinci sınıf raportör oran tavanı",
+          "value": "%83",
+          "refs": [
+            "69"
+          ]
+        },
+        {
+          "label": "Birinci sınıf raportöre ek",
+          "value": "3 yılda bir 2 puan",
+          "refs": [
+            "69"
+          ]
+        },
+        {
+          "label": "Yargı ödeneği",
+          "value": "brüt aylığın %10'u",
+          "refs": [
+            "69"
+          ]
+        },
+        {
+          "label": "Ek gösterge (Başkan / üye)",
+          "value": "9.000 / 8.000",
+          "refs": [
+            "69"
+          ]
+        },
+        {
+          "label": "Yüksek hâkimlik tazminat göstergesi",
+          "value": "17.000",
+          "refs": [
+            "69"
+          ]
+        },
+        {
+          "label": "Aylık ek ödenek göstergesi (Başkan, başkanvekilleri, üyeler)",
+          "value": "40.000",
+          "refs": [
+            "69"
+          ]
+        },
+        {
+          "label": "Aylık ek ödenek göstergesi (raportörler)",
+          "value": "10.000",
+          "refs": [
+            "69"
+          ]
+        },
+        {
+          "label": "Ek ödeme göstergesi (657 sayılı Kanuna tabi personel)",
+          "value": "5.000",
+          "refs": [
+            "69"
+          ]
+        },
+        {
+          "label": "İkramiye hesabında esas",
+          "value": "yıllık toplamın 1/12'si",
+          "refs": [
+            "69"
+          ]
+        },
+        {
+          "label": "Yeni derece aylığının başlangıcı",
+          "value": "geçerlilik tarihini takip eden ayın 15'i",
+          "refs": [
+            "69"
+          ]
+        },
+        {
+          "label": "Başkan ve üyelerin yıllık izni",
+          "value": "40 gün",
+          "refs": [
+            "70"
+          ]
+        },
+        {
+          "label": "Mahkemenin kuruluş günü",
+          "value": "25 Nisan",
+          "refs": [
+            "72"
+          ]
+        },
+        {
+          "label": "Yurt dışı görevlendirme",
+          "value": "2 yıla kadar",
+          "refs": [
+            "73"
+          ]
+        },
+        {
+          "label": "Uzatmayla birlikte en çok",
+          "value": "4 yıl",
+          "refs": [
+            "73"
+          ]
+        },
+        {
+          "label": "(I) sayılı Kadro Cetvelinde üye kadrosu",
+          "value": "15",
+          "refs": [
+            "Ek 1",
+            "77"
+          ]
+        },
+        {
+          "label": "(I) sayılı Kadro Cetvelinde hâkim ve savcı raportör kadrosu",
+          "value": "170",
+          "refs": [
+            "Ek 1",
+            "77"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "69",
+        "70",
+        "72",
+        "73",
+        "77",
+        "Ek 1"
+      ],
+      "derivedNumbers": [
+        {
+          "value": 4,
+          "expr": "2 + 2",
+          "refs": [
+            "73"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "compare",
+      "title": "Aylık ek ödenek ile ek ödeme",
+      "rows": [
+        {
+          "aspect": "Dayanak",
+          "left": "Aylık ek ödenek (md 69/9)",
+          "right": "Ek ödeme (md 69/11)",
+          "refs": [
+            "69"
+          ]
+        },
+        {
+          "aspect": "Kime",
+          "left": "Başkan, başkanvekilleri, üyeler ve raportörler",
+          "right": "Mahkemede görevli, 657 sayılı Kanuna tabi personel",
+          "refs": [
+            "69"
+          ]
+        },
+        {
+          "aspect": "Gösterge",
+          "left": "40.000 (Başkan, başkanvekilleri, üyeler); 10.000 (raportörler)",
+          "right": "5.000",
+          "refs": [
+            "69"
+          ]
+        },
+        {
+          "aspect": "Hesap",
+          "left": "Gösterge × memur aylıklarına uygulanan katsayı",
+          "right": "Gösterge × memur aylıklarına uygulanan aylık katsayısı",
+          "refs": [
+            "69"
+          ]
+        },
+        {
+          "aspect": "Vergi ve kesinti",
+          "left": "Damga vergisi hariç vergi ve kesintiye tabi değil",
+          "right": "Damga vergisi hariç vergi ve kesintiye tabi tutulamaz",
+          "refs": [
+            "69"
+          ]
+        },
+        {
+          "aspect": "Ek kural",
+          "left": "Hak kazanma ve ödemede 2802 sayılı Kanunun aylıklara ilişkin hükmü uygulanır",
+          "right": "Başka bir ödemenin hesaplanmasında dikkate alınmaz",
+          "refs": [
+            "69"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "69"
+      ]
+    },
+    {
+      "type": "exam_stats",
+      "title": "Sınav der ki",
+      "rows": [
+        {
+          "label": "Bu ünitenin maddelerinden yayındaki soru",
+          "value": "0",
+          "refs": [
+            "68",
+            "69",
+            "70",
+            "71",
+            "72",
+            "73",
+            "73/A",
+            "74",
+            "75",
+            "76",
+            "77",
+            "Ek 1"
+          ]
+        },
+        {
+          "label": "Hiç soru çıkmamış",
+          "value": "md 68, md 69, md 70, md 71, md 72, md 73, md 73/A, md 74, md 75, md 76, md 77, md Ek 1",
+          "refs": [
+            "68",
+            "69",
+            "70",
+            "71",
+            "72",
+            "73",
+            "73/A",
+            "74",
+            "75",
+            "76",
+            "77",
+            "Ek 1"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "68",
+        "69",
+        "70",
+        "71",
+        "72",
+        "73",
+        "73/A",
+        "74",
+        "75",
+        "76",
+        "77",
+        "Ek 1"
+      ],
+      "generated": true
+    },
+    {
+      "type": "bridge",
+      "title": "Bu üniteden soru çöz",
+      "articleRefs": [
+        "68",
+        "69",
+        "70",
+        "71",
+        "72",
+        "73",
+        "73/A",
+        "74",
+        "75",
+        "76",
+        "77",
+        "Ek 1"
+      ],
+      "generated": true,
+      "rows": [
+        {
+          "label": "Madde kapsamlı seans",
+          "value": "md 68–73, 73/A, 74–77, Ek 1, 0 soru",
+          "refs": [
+            "68",
+            "69",
+            "70",
+            "71",
+            "72",
+            "73",
+            "73/A",
+            "74",
+            "75",
+            "76",
+            "77",
+            "Ek 1"
+          ]
+        }
+      ]
+    }
+  ]
+}

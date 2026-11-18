@@ -1,0 +1,618 @@
+{
+  "unit": {
+    "slug": "yuk-4-genel-usuller",
+    "legislationSlug": "6458-sayili-yabancilar-ve-uluslararasi-koruma-kanunu",
+    "topicId": "18c6184c-6f45-4501-a075-0614a48ab77e",
+    "title": "Uluslararası koruma usulü, haklar ve yükümlülükler",
+    "subtitle": "Başvurudan karara, itirazdan haklara: uluslararası koruma usulü",
+    "articleFrom": "65",
+    "articleTo": "90",
+    "readingMinutes": 17,
+    "sourceLabel": "AI özeti — 6458 Sayılı Yabancılar ve Uluslararası Koruma Kanunu, md 65–90",
+    "articleNos": [
+      "65",
+      "66",
+      "67",
+      "68",
+      "69",
+      "70",
+      "71",
+      "72",
+      "73",
+      "74",
+      "75",
+      "76",
+      "77",
+      "78",
+      "79",
+      "80",
+      "81",
+      "82",
+      "83",
+      "84",
+      "85",
+      "86",
+      "87",
+      "88",
+      "89",
+      "90"
+    ],
+    "generatedBy": "claude-opus-5-5 (ozet-uret.ts)",
+    "sortOrder": 4
+  },
+  "blocks": [
+    {
+      "type": "concept",
+      "title": "Başvurunun adresi: valilik",
+      "body": "Uluslararası koruma başvurusunun kapısı valiliktir. Başvuru valiliğe bizzat yapılır. Başvuru ülke içinde ya da sınır kapısında kolluk birimine yapılırsa derhâl valiliğe bildirilir; başvuruyla ilgili işlemleri valilik yürütür. Her yabancı veya vatansız kişi kendi adına başvurabilir. Başvuru sahibi, başvuruları aynı gerekçeye dayanan ve kendisiyle birlikte gelen aile üyeleri adına da başvuru yapabilir. Bu durumda ergin aile üyelerinin, kendi adlarına başvuruda bulunulmasına yönelik muvafakati alınır.",
+      "articleRefs": [
+        "65"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Başvuru yapmak her şeyi durdurmaz",
+      "body": "Sık karıştırılan noktalar:\n- Makul bir süre içinde valiliğe **kendiliğinden** başvuran kişi, yasa dışı giriş veya kalışının geçerli nedenlerini açıklamak kaydıyla **cezai işleme** tabi tutulmaz. Bu, Türkiye'ye yasal giriş şartlarını ihlal etmek ya da Türkiye'de yasal şekilde bulunmamak için geçerlidir. Şartları kaçırma: kişi hem kendiliğinden ve makul sürede başvurmalı hem de geçerli nedenleri açıklamalıdır.\n- Hürriyeti kısıtlanan kişinin başvurusu valiliğe derhâl bildirilir. Ancak başvurunun alınması ve değerlendirilmesi diğer adli ve idari işlemleri, tedbir ve yaptırımları **engellemez**.\n- Başvuru sahibi **sadece başvuruda bulunduğu için** idari gözetim altına alınamaz.",
+      "articleRefs": [
+        "65",
+        "68"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Refakatsiz çocuklar ve özel ihtiyaç sahipleri",
+      "body": "**Refakatsiz çocuk (md 66):**\n- Tüm işlemlerde çocuğun **yüksek yararı** esastır. Başvuru alındığı andan itibaren 5395 sayılı Çocuk Koruma Kanunu hükümleri uygulanır.\n- Fiziki görünümü ile beyan ettiği yaş uyumlu görülmeyen yabancıya Bakanlıkça sağlık kuruluşlarında **yaş tespiti** yaptırılır. On sekiz yaşından küçük olduğu tespit edilenler Aile, Çalışma ve Sosyal Hizmetler Bakanlığı il müdürlüklerine teslim edilir.\n- Çocuğun görüşü dikkate alınarak **Aile, Çalışma ve Sosyal Hizmetler Bakanlığı** çocuğu uygun konaklama yerlerine, yetişkin akrabalarının ya da koruyucu bir ailenin yanına yerleştirir.\n- Refakatsiz çocukların başvuruları **hızlandırılmış olarak değerlendirilemez** (md 79).\n\n**Özel ihtiyaç sahipleri (md 67):**\n- Bu Kısımda yazılı hak ve işlemlerde **öncelik** tanınır.\n- İşkence, cinsel saldırı ya da diğer ciddi psikolojik, bedensel veya cinsel şiddete maruz kalanlara, bu fiillerin neden olduğu hasarları giderecek yeterli tedavi imkânı sağlanır.\n- Mülakatlarda bu kişilerin özel durumları göz önünde bulundurulur. Çocuğun mülakatında psikolog, çocuk gelişimci veya sosyal çalışmacı ya da ebeveyni veya yasal temsilcisi hazır bulunabilir (md 75).\n\n**Not:** Aile, Çalışma ve Sosyal Hizmetler Bakanlığı adı metnindeki hâliyle verilmiştir; bakanlığın bugünkü adı Aile ve Sosyal Hizmetler Bakanlığıdır.",
+      "articleRefs": [
+        "66",
+        "67",
+        "75",
+        "79"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Başvuru sahibinin idari gözetimi: istisna",
+      "body": "Başvuru sahibinin idari gözetim altına alınması **istisnai** bir işlemdir. Yalnızca şu hâllerde mümkündür:\n- **a)** Kimlik veya vatandaşlık bilgilerinin doğruluğuyla ilgili ciddi şüphe varsa, bu bilgilerin tespiti amacıyla\n- **b)** Sınır kapılarında usulüne aykırı surette ülkeye girmekten alıkonulması amacıyla\n- **c)** İdari gözetim altına alınmazsa başvurusuna temel oluşturan unsurların belirlenemeyecek olması hâlinde\n- **ç)** Kamu düzeni veya kamu güvenliği açısından ciddi tehlike oluşturması hâlinde\n\n**Önce hafif tedbir:** İdari gözetimin gerekip gerekmediği bireysel olarak değerlendirilir. Gözetimden önce md 71'deki ikamet zorunluluğu ve bildirim yükümlülüğünün yeterli olup olmayacağına bakılır. Valilik, idari gözetim yerine başka usuller de belirleyebilir. Bu tedbirler yeterli olmazsa idari gözetim uygulanır.",
+      "articleRefs": [
+        "68"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "İdari gözetimin usulü ve itirazı",
+      "body": "- **Tebliğ:** Karar; gerekçeleri ve gözetimin süresini içerecek şekilde kişiye, yasal temsilcisine ya da avukatına **yazılı** olarak tebliğ edilir. Kişi bir avukat tarafından temsil edilmiyorsa, kendisi veya yasal temsilcisi kararın sonucu ve itiraz usulleri hakkında bilgilendirilir.\n- **Süre:** Başvuru sahibinin idari gözetim süresi **otuz günü geçemez**. İşlemler en kısa sürede tamamlanır. Şartlar ortadan kalkınca gözetim derhâl sonlandırılır.\n- Her aşamada kararı alan makam gözetimi sonlandırabilir ve md 71'deki yükümlülüklerin ya da başka tedbirlerin yerine getirilmesini isteyebilir.\n- **İtiraz:** Kişi, yasal temsilcisi ya da avukatı **sulh ceza hâkimine** başvurabilir. Başvuru gözetimi **durdurmaz**. Dilekçe idareye verilirse yetkili hâkime derhâl ulaştırılır. Hâkim incelemeyi **beş gün** içinde sonuçlandırır ve kararı **kesindir**. Şartların ortadan kalktığı veya değiştiği iddiasıyla yeniden başvurulabilir.\n- Kişi, yönetmelikle belirlenen usul ve esaslara göre ziyaretçi kabul edebilir. Yasal temsilcisi, avukat, noter ve Birleşmiş Milletler Mülteciler Yüksek Komiserliği görevlileriyle görüşme imkânı sağlanır.",
+      "articleRefs": [
+        "68"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Kayıt, bilgilendirme ve ikamet",
+      "body": "**Kayıt ve kontrol (md 69):**\n- Başvurular valiliklerce kaydedilir.\n- Başvuru sahibi kimlik bilgilerini doğru bildirmekle yükümlüdür. Varsa kimliğini ispatlayacak belge ve seyahat dokümanlarını yetkili makamlara teslim eder. Bunun için üzerinde ve eşyalarında kontrol yapılabilir.\n- Kimlik belgesi yoksa, kişisel verilerin karşılaştırılmasından ve araştırmalardan elde edilen bilgiler kullanılır. Yine de bilgi elde edilemezse **başvuranın beyanı** esas alınır.\n- Kayıt esnasında ülkeyi terk etme sebepleri, başından geçen olaylar, Türkiye'ye giriş şekli, güzergâh ve vasıta bilgileri alınır. Başka bir ülkede daha önce yapılmış başvuru ya da alınmış korumaya ilişkin bilgi ve belgeler de alınır.\n- Mülakat zamanı ve yeri **kayıt esnasında** bildirilir.\n- Kamu sağlığını tehlikeye düşürebileceği değerlendirilen başvuru sahibi sağlık kontrolünden geçirilir.\n\n**Bilgilendirme ve tercüman (md 70):**\n- Kayıt esnasında başvuru sahibi şu konularda bilgilendirilir: usuller, hak ve yükümlülükler, yükümlülüklere uymamanın sonuçları, itiraz usulleri ve süreleri.\n- **Talep hâlinde** başvuru, kayıt ve mülakat aşamalarındaki kişisel görüşmelerde tercümanlık sağlanır.\n\n**İkamet ve bildirim (md 71):**\n- Başvuru sahibine idari yükümlülükler getirilebilir: kabul ve barınma merkezinde, belirli bir yerde veya ilde ikamet etme ya da istenilen şekil ve sürelerde bildirimde bulunma gibi.\n- Adres kayıt sistemine kayıt yaptırmak ve ikamet adresini valiliğe bildirmek **zorunludur**.",
+      "articleRefs": [
+        "69",
+        "70",
+        "71"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Kabul edilemez başvuru",
+      "body": "Başvuru sahibi şu durumlardaysa başvurunun **kabul edilemez** olduğuna karar verilir:\n- **a)** Farklı bir gerekçe öne sürmeksizin aynı başvuruyu yenilemişse\n- **b)** Kendi adına başvuru yapılmasına muvafakat verdikten sonra; başvurunun herhangi bir aşamasında haklı bir neden göstermeksizin ya da başvurunun reddedilmesinin ardından farklı bir gerekçe öne sürmeksizin ayrı bir başvuru yapmışsa\n- **c)** İlk iltica ülkesinden (md 73) gelmişse\n- **ç)** Güvenli üçüncü ülkeden (md 74) gelmişse\n\nBu durumlar değerlendirmenin herhangi bir aşamasında ortaya çıkarsa değerlendirme durdurulur. Karar ilgiliye, yasal temsilcisine ya da avukatına tebliğ edilir.\n\n**İlk iltica ülkesi:** Kişinin daha önce mülteci olarak tanındığı ve bu korumadan hâlen yararlanabildiği ülkedir. Geri göndermeme ilkesini de içeren yeterli ve etkili korumadan hâlen faydalanabileceği ülke de bu kapsamdadır.\n\n**Güvenli üçüncü ülke:** Kişinin Sözleşmeye uygun korumayla sonuçlanabilecek bir başvuru yaptığı veya başvurma imkânı olduğu ülkedir. Şu şartları taşır:\n- Kişilerin hayatı veya hürriyeti ırkı, dini, tabiiyeti, belli bir toplumsal gruba mensubiyeti veya siyasi düşünceleri nedeniyle tehdit altında değildir.\n- Kişilerin işkenceye, insanlık dışı ya da onur kırıcı ceza veya muameleye tabi tutulacağı ülkelere geri gönderilmemesi ilkesi uygulanır.\n- Sözleşmeye uygun koruma elde etme imkânı vardır.\n- Ciddi zarar görme riski yoktur.\n\nBir ülkenin güvenli olup olmadığı her başvuru sahibi için **ayrı** değerlendirilir.\n\nBu ülkelerden gelenler için gönderme işlemleri başlatılır. Ancak gönderme gerçekleşinceye kadar **ülkede kalışlarına izin verilir** ve bu durum ilgiliye tebliğ edilir. O ülke kişiyi kabul etmezse başvuruya ilişkin işlemler devam ettirilir.",
+      "articleRefs": [
+        "72",
+        "73",
+        "74"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Mülakat",
+      "body": "- Başvuru sahibiyle **kayıt tarihinden** itibaren **otuz gün** içinde bireysel mülakat yapılır. Mahremiyet dikkate alınır ve kişiye kendini en iyi şekilde ifade etme imkânı tanınır.\n- Aile üyelerinin bulunması gerekli görülürse, kişinin **muvafakati** alınarak mülakat aile üyeleriyle birlikte yapılabilir.\n- Başvuru sahibinin **talebi üzerine** avukatı mülakata **gözlemci** olarak katılabilir.\n- Başvuru sahibi yetkililerle iş birliği yapmak ve başvurusunu destekleyecek tüm bilgi ve belgeleri sunmakla yükümlüdür.\n- Mülakat gerçekleştirilemezse yeni tarih belirlenir ve kişiye tebliğ edilir. Mülakat tarihleri arasında **en az on gün** bulunur.\n- Gerekli görüldüğünde ek mülakatlar yapılabilir.\n- Mülakatlar sesli veya görsel olarak kayıt altına alınabilir. Bu durumda kişi bilgilendirilir.\n- Her mülakatın sonunda **tutanak** düzenlenir ve bir örneği mülakat yapılan kişiye verilir.",
+      "articleRefs": [
+        "75"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Uluslararası Koruma Başvuru Sahibi Kimlik Belgesi",
+      "body": "- Belge, **kayıt işlemleri tamamlanan** başvuru sahibine ve varsa birlikte geldiği aile üyelerine düzenlenir.\n- Belge, uluslararası koruma talebinde bulunulduğunu belirtir ve **yabancı kimlik numarasını** içerir.\n- Geçerlilik süresi ve uzatılmasına ilişkin usul ve esaslar **Bakanlıkça** düzenlenir.\n- Şekli ve içeriği **Genel Müdürlükçe** belirlenir.\n- Belge **hiçbir harca tabi değildir** ve **ikamet izni yerine geçer**.\n\n**Not:** \"Genel Müdürlük\" (Göç İdaresi Genel Müdürlüğü) madde metnindeki hâliyle verilmiştir; md 121/A'daki Göç İdaresi Başkanlığı aynı teşkilattır.",
+      "articleRefs": [
+        "76"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Başvurunun geri çekilmesi veya geri çekilmiş sayılması",
+      "body": "Başvuru sahibinde şu hâllerden biri varsa başvurusu **geri çekilmiş kabul edilir** ve değerlendirme durdurulur:\n- **a)** Başvurusunu geri çektiğini **yazılı** olarak beyan etmesi\n- **b)** Mazeretsiz olarak mülakata **üç defa üst üste** gelmemesi\n- **c)** İdari gözetim altında bulunduğu yerden kaçması\n- **ç)** Mazeretsiz olarak bildirim yükümlülüğünü **üç defa üst üste** yerine getirmemesi, belirlenen ikamet yerine gitmemesi veya ikamet yerini izinsiz terk etmesi\n- **d)** Kişisel verilerinin alınmasına karşı çıkması\n- **e)** Kayıt ve mülakattaki yükümlülüklerine uymaması",
+      "articleRefs": [
+        "77"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Geri çekilmiş mi, kabul edilemez mi, hızlandırılmış mı?",
+      "body": "Bu kavramlar aynı soruda yan yana gelir. Ayırt edici noktaları tut:\n- **Mülakata gelmemek** kendi başına yetmez. Başvurunun geri çekilmiş sayılması için kişinin **mazeretsiz** ve **üç defa üst üste** gelmemesi gerekir. Bildirim yükümlülüğünde de aynı ölçü geçerlidir.\n- İkamet yerine gitmemek veya ikamet yerini izinsiz terk etmek için tekrar şartı aranmaz. Mazeretsiz olması yeterlidir.\n- **Geri çekilmiş sayıldıktan sonra yeniden başvuru**, md 79'da **hızlandırılmış** değerlendirme hâli olarak sayılır.\n- Kabul edilemezlik ise **aynı başvurunun farklı gerekçe olmadan yenilenmesine** bağlanmıştır (md 72).\n- **Sahte belge veya yanıltıcı bilgi** kullanmak başvuru aşamasında hızlandırılmış değerlendirme sebebidir. Statü bu yolla alınmışsa iptal sebebidir (md 86).",
+      "articleRefs": [
+        "72",
+        "77",
+        "79",
+        "86"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Karar",
+      "body": "- Başvurular, **kayıt tarihinden** itibaren en geç **altı ay** içinde **Genel Müdürlükçe** sonuçlandırılır.\n- Bu sürede karar verilemezse başvuru sahibi bilgilendirilir.\n- Genel Müdürlük bu yetkilerini **valiliklere devredebilir**.\n- Kararlar **bireysel** olarak verilir. md 64'ün altıncı fıkrası saklı kalmak kaydıyla, aile adına yapılan başvuru bütün olarak değerlendirilir ve karar tüm aile üyelerini kapsar.\n- Karar verilirken menşe veya önceki ikamet ülkesinin mevcut genel şartları ile başvuru sahibinin kişisel şartları göz önünde bulundurulur.\n- **Ülke içinde koruma:** Zulüm veya ciddi zarar görme tehdidine karşı ülkenin belirli bir bölgesinde koruma sağlanabiliyor olabilir. Kişi o bölgeye güvenli şekilde seyahat edip yerleşebilecekse, uluslararası korumaya muhtaç olmadığına karar verilebilir. Bu durum başvurunun tam bir incelemeye tabi tutulmasını engellemez.\n- **Tebliğ:** Karar ilgiliye, yasal temsilcisine ya da avukatına tebliğ edilir. **Olumsuz** kararın tebliğinde maddi gerekçeler ve hukuki dayanaklar da belirtilir. Kişinin avukatı yoksa, kendisi veya yasal temsilcisi kararın sonucu, itiraz usulleri ve süreleri hakkında bilgilendirilir.",
+      "articleRefs": [
+        "78"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Hızlandırılmış değerlendirme",
+      "body": "Başvuru sahibinde şu hâllerden biri varsa başvurusu **hızlandırılmış** olarak değerlendirilir:\n- **a)** Gerekçelerini sunarken uluslararası korumayı gerektirecek konulara hiç değinmemişse\n- **b)** Sahte belge ya da yanıltıcı bilgi ve belge kullanarak ya da kararı olumsuz etkileyebilecek bilgi ve belgeleri sunmayarak yetkilileri yanlış yönlendirmişse\n- **c)** Kimliğinin ya da uyruğunun tespitini güçleştirmek amacıyla kimlik veya seyahat belgelerini kötü niyetle imha etmiş ya da elden çıkarmışsa\n- **ç)** Sınır dışı edilmek üzere idari gözetim altındaysa\n- **d)** Sadece Türkiye'den gönderilmesine yol açacak bir kararın uygulanmasını erteletmek ya da engellemek amacıyla başvurmuşsa\n- **e)** Kamu düzeni veya kamu güvenliği açısından tehlike oluşturuyorsa ya da bu nedenlerle daha önce sınır dışı edilmişse\n- **f)** Başvurusu geri çekilmiş sayıldıktan sonra yeniden başvurmuşsa\n\n**Süreler:**\n- Mülakat, **başvuru tarihinden** itibaren en geç **üç gün** içinde yapılır.\n- Başvuru, mülakattan sonra en geç **beş gün** içinde sonuçlandırılır.\n\n**İstisnalar:**\n- İncelemesinin uzun süreceği anlaşılan başvurular hızlandırılmış değerlendirmeden çıkarılabilir.\n- **Refakatsiz çocukların** başvuruları hızlandırılmış olarak değerlendirilemez.",
+      "articleRefs": [
+        "79"
+      ]
+    },
+    {
+      "type": "numbers",
+      "title": "Başvuru sürecinde sayılar ve süreler",
+      "rows": [
+        {
+          "label": "Başvuru sahibinin idari gözetim süresi (azami)",
+          "value": "30 gün",
+          "refs": [
+            "68"
+          ]
+        },
+        {
+          "label": "Sulh ceza hâkiminin idari gözetim incelemesini sonuçlandırması",
+          "value": "5 gün",
+          "refs": [
+            "68"
+          ]
+        },
+        {
+          "label": "Olağan bireysel mülakat",
+          "value": "Kayıt tarihinden itibaren 30 gün içinde",
+          "refs": [
+            "75"
+          ]
+        },
+        {
+          "label": "Mülakat tarihleri arası",
+          "value": "En az 10 gün",
+          "refs": [
+            "75"
+          ]
+        },
+        {
+          "label": "Geri çekilmiş sayılma: mazeretsiz mülakata gelmeme",
+          "value": "3 defa üst üste",
+          "refs": [
+            "77"
+          ]
+        },
+        {
+          "label": "Geri çekilmiş sayılma: bildirim yükümlülüğüne mazeretsiz uymama",
+          "value": "3 defa üst üste",
+          "refs": [
+            "77"
+          ]
+        },
+        {
+          "label": "Olağan karar süresi (Genel Müdürlük)",
+          "value": "Kayıt tarihinden itibaren en geç 6 ay",
+          "refs": [
+            "78"
+          ]
+        },
+        {
+          "label": "Hızlandırılmış değerlendirmede mülakat",
+          "value": "Başvuru tarihinden itibaren en geç 3 gün",
+          "refs": [
+            "79"
+          ]
+        },
+        {
+          "label": "Hızlandırılmış değerlendirmede sonuçlandırma",
+          "value": "Mülakattan sonra en geç 5 gün",
+          "refs": [
+            "79"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "68",
+        "75",
+        "77",
+        "78",
+        "79"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "İdari itiraz, yargı yolu ve avukatlık",
+      "body": "**İdari itiraz ve yargı yolu (md 80):**\n- **İdari itiraz:** Kararın tebliğinden itibaren **on gün** içinde **Uluslararası Koruma Değerlendirme Komisyonuna** itiraz edilebilir.\n- md 68, 72 ve 79'a göre verilen kararlara karşı **sadece yargı yoluna** başvurulabilir.\n- İdari itiraz sonucu verilen karar ilgiliye, yasal temsilcisine ya da avukatına tebliğ edilir. Karar olumsuzsa ve kişinin avukatı yoksa, kendisi veya yasal temsilcisi kararın sonucu, itiraz usulleri ve süreleri hakkında bilgilendirilir.\n- İdari itiraz usullerini Bakanlık düzenleyebilir.\n- **İdare mahkemesi:** md 72 ve 79 kapsamındaki kararlara karşı tebliğden itibaren **on beş gün** içinde başvurulur. Diğer idari karar ve işlemlere karşı bu süre **otuz gün**dür.\n- md 68'deki yargı yolu bu düzenin dışındadır. İdari gözetime karşı başvuru sulh ceza hâkimine yapılır.\n- md 72 ve 79 kapsamındaki dava başvuruları **on beş gün** içinde sonuçlandırılır. Mahkemenin kararı **kesindir**.\n- İtiraz veya yargılama süreci sonuçlanıncaya kadar kişinin **ülkede kalışına izin verilir**.\n\n**Avukatlık ve danışmanlık (md 81):**\n- Başvuru sahibi ve statü sahibi, ücreti kendisince karşılanmak kaydıyla avukatla temsil edilebilir.\n- Ücreti karşılama imkânı olmayan kişiye, yargı önündeki başvurularında 1136 sayılı Kanunun adli yardım hükümlerine göre avukatlık hizmeti sağlanır.\n- Başvuru sahibi ve statü sahibi, sivil toplum kuruluşlarının sağladığı danışmanlık hizmetlerinden faydalanabilir.",
+      "articleRefs": [
+        "68",
+        "80",
+        "81"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Hangi karara nereye, kaç günde?",
+      "body": "En çok karıştırılan yer itiraz merciidir.\n\n**İdari gözetim (md 68):**\n- Başvuru Komisyona değil, **sulh ceza hâkimine** yapılır.\n- Başvuru gözetimi **durdurmaz**.\n- Hâkim **beş gün** içinde sonuçlandırır ve kararı kesindir.\n\n**Kabul edilemezlik (md 72) ve hızlandırılmış değerlendirme (md 79):**\n- Komisyona itiraz **yoktur**. Doğrudan **idare mahkemesine** gidilir.\n- Başvuru süresi tebliğden itibaren **on beş gün**dür.\n- Mahkeme de **on beş gün** içinde sonuçlandırır ve kararı kesindir.\n\n**Diğer kararlar:**\n- Komisyona itiraz süresi tebliğden itibaren **on gün**dür.\n- İdare mahkemesine başvuru süresi tebliğden itibaren **otuz gün**dür.\n\nİtiraz ve dava süreleri kararın **tebliğinden** başlar. İtiraz veya yargılama sonuçlanıncaya kadar kişinin ülkede kalışına izin verilir.",
+      "articleRefs": [
+        "68",
+        "80"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Statü sahibinin ikameti, kimlik ve seyahat belgesi",
+      "body": "**İkamet (md 82):**\n- **Şartlı mülteci** ve **ikincil koruma statüsü sahibine** Genel Müdürlükçe yükümlülük getirilebilir. Bunun sebebi **kamu düzeni veya kamu güvenliğidir**.\n- Bu yükümlülük, belirli bir ilde ikamet etme ile belirlenen süre ve usullerle bildirimde bulunmadır.\n- Bu maddede mülteci sayılmaz.\n- Bu kişiler adres kayıt sistemine kayıt yaptırmak ve ikamet adresini valiliğe bildirmekle yükümlüdür.\n\n**Kimlik belgesi (md 83):**\n- Mülteci, şartlı mülteci ve ikincil koruma statüsü verilenlere kimlik belgesi düzenlenir. Belge yabancı kimlik numarasını içerir.\n- Belge hiçbir harca tabi değildir ve ikamet izni yerine geçer.\n- Şekil, içerik, geçerlilik süresi ve uzatmaya ilişkin usul ve esasları Bakanlık düzenler.\n\n**Seyahat belgesi (md 84):**\n- **Mültecilere** valiliklerce Sözleşmede belirtilen seyahat belgesi düzenlenir.\n- Şartlı mülteci ve ikincil koruma statüsü sahiplerinin talepleri 5682 sayılı Kanunun 18 inci maddesi çerçevesinde değerlendirilir.",
+      "articleRefs": [
+        "82",
+        "83",
+        "84"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Genel ilkeler, geri dönüş, eğitim, sosyal yardım ve sağlık",
+      "body": "**Genel ilkeler (md 88):**\n- Uluslararası koruma statüsü sahipleri **karşılıklılık şartından muaftır**.\n- Başvuru sahibine, başvurusu reddedilene veya statü sahibine sağlanan hak ve imkânlar, Türk vatandaşlarına sağlananlardan **fazla olacak şekilde yorumlanamaz**.\n\n**Gönüllü geri dönüş (md 87):**\n- Gönüllü olarak geri dönmek isteyenlere ayni ve nakdi destek sağlanabilir.\n- Genel Müdürlük bu çalışmaları uluslararası kuruluşlar, kamu kurum ve kuruluşları ve sivil toplum kuruluşlarıyla iş birliği içinde yapabilir.\n\n**Eğitim ve sosyal yardım (md 89):**\n- Başvuru sahibi veya statü sahibi ve aile üyeleri ilköğretim ve ortaöğretim hizmetlerinden **faydalanır**.\n- İhtiyaç sahibi olanların sosyal yardım ve hizmetlere erişimi **sağlanabilir**.\n\n**Sağlık (md 89):**\n- Sağlık güvencesi ve ödeme gücü olmayanlar, başvuru kaydından itibaren **bir yıl** süreyle 5510 sayılı Kanun hükümlerine tabidir.\n- Özel ihtiyaç sahipleri ve Bakanlıkça sigorta kaydının devamı uygun görülenler için bu süre sınırı aranmaz.\n- Primler için Genel Müdürlük bütçesine ödenek konur. Ödeme gücüne göre primin tamamı veya belli bir oranı talep edilir.\n- Başvurusu hakkında idarece olumsuz karar verilenler genel sağlık sigortası kapsamından çıkarılır.\n- Bazı kişiler, sigortalılıklarının sona erdirilmesi için en geç **on gün** içinde Sosyal Güvenlik Kurumuna bildirilir. Bunlar sağlık güvencesi veya ödeme gücü olduğu ya da yalnız tıbbi tedavi amacıyla başvurduğu sonradan anlaşılanlardır. Yapılan tedavi ve ilaç masrafları bu kişilerden geri alınır.",
+      "articleRefs": [
+        "87",
+        "88",
+        "89"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Çalışma hakkı ve harçlık",
+      "body": "- **Başvuru sahibi veya şartlı mülteci:** Uluslararası koruma başvurusu tarihinden **altı ay sonra** çalışma izni almak için başvurabilir.\n- **Mülteci veya ikincil koruma statüsü sahibi:** Statü almasından itibaren bağımlı veya bağımsız olarak çalışabilir.\n- Mülteci veya ikincil koruma statüsü sahibine verilen kimlik belgesi **çalışma izni yerine de geçer** ve bu durum belgeye yazılır.\n- Yabancıların çalışamayacağı iş ve mesleklere ilişkin diğer mevzuattaki hükümler saklıdır.\n\n**Sınırlama:**\n- Mülteci ve ikincil koruma statüsü sahibinin iş piyasasına erişimi sınırlandırılabilir. Bunun için iş piyasasındaki durum ve çalışma hayatındaki gelişmeler ile istihdama ilişkin sektörel ve ekonomik şartların bunu gerekli kılması gerekir.\n- Sınırlama belirli bir süre için yapılır. Tarım, sanayi veya hizmet sektörleri, belirli bir meslek, iş kolu ya da mülki ve coğrafi alan itibarıyla uygulanabilir.\n- Şu kişilere bu sınırlamalar **uygulanmaz**: Türkiye'de **üç yıl** ikamet edenler, Türk vatandaşıyla evli olanlar ve Türk vatandaşı çocuğu olanlar.\n\n**Usul ve harçlık:**\n- Çalışmaya ilişkin usul ve esaslar, Bakanlığın görüşü alınarak Çalışma ve Sosyal Güvenlik Bakanlığı tarafından belirlenir.\n- **Harçlık** yalnız **başvuru sahibine** verilebilir. Kişinin muhtaç olduğu tespit edilmiş olmalıdır. md 72 ve 79'da sayılanlar harçlık alamaz.\n- Harçlık, Maliye Bakanlığının uygun görüşü alınarak Bakanlığın belirleyeceği usul ve esaslar çerçevesinde verilir.\n\n**Not:** Bakanlık adları metindeki hâliyle verilmiştir.",
+      "articleRefs": [
+        "89"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Yükümlülükler ve hakların sınırlanması",
+      "body": "Başvuru sahibi veya statü sahibi, bu Kısımdaki diğer yükümlülüklerine ek olarak şunlarla yükümlüdür:\n- Çalışma durumuna ait güncel bilgileri **otuz gün** içinde bildirmek\n- Gelirlerini, taşınır ve taşınmazlarını **otuz gün** içinde bildirmek\n- Adres, kimlik ve medeni hâl değişikliklerini **yirmi iş günü** içinde bildirmek\n- Haksız yararlandığı tespit edilen hizmet, yardım ve imkânların bedellerini tamamen veya kısmen geri ödemek\n- Genel Müdürlükçe bu Kısım çerçevesinde istenilenleri yerine getirmek\n\nDikkat: Bildirim sürelerinden yalnız biri **iş günü** ile hesaplanır. Bu süre adres, kimlik ve medeni hâl değişikliklerine aittir.\n\n**Sınırlama:**\n- Yükümlülüklere uymayanların haklarına sınırlama getirilebilir.\n- Başvurusu veya statüsü hakkında olumsuz karar verilenlerin haklarına da sınırlama getirilebilir.\n- **Eğitim ve temel sağlık hakları** bu sınırlamanın dışındadır.\n- Değerlendirme bireysel yapılır. Karar kişiye, yasal temsilcisine ya da avukatına yazılı olarak tebliğ edilir.",
+      "articleRefs": [
+        "90"
+      ]
+    },
+    {
+      "type": "numbers",
+      "title": "İtiraz, haklar ve yükümlülüklerde süreler",
+      "rows": [
+        {
+          "label": "Uluslararası Koruma Değerlendirme Komisyonuna itiraz",
+          "value": "Tebliğden itibaren 10 gün",
+          "refs": [
+            "80"
+          ]
+        },
+        {
+          "label": "md 72 ve 79 kararlarına karşı idare mahkemesine başvuru",
+          "value": "Tebliğden itibaren 15 gün",
+          "refs": [
+            "80"
+          ]
+        },
+        {
+          "label": "Diğer idari karar ve işlemlere karşı idare mahkemesine başvuru",
+          "value": "Tebliğden itibaren 30 gün",
+          "refs": [
+            "80"
+          ]
+        },
+        {
+          "label": "md 72 ve 79 kapsamındaki davaların sonuçlandırılması",
+          "value": "15 gün (karar kesin)",
+          "refs": [
+            "80"
+          ]
+        },
+        {
+          "label": "Genel sağlık sigortası kapsamı (güvencesiz ve ödeme gücü olmayan)",
+          "value": "Başvuru kaydından itibaren 1 yıl",
+          "refs": [
+            "89"
+          ]
+        },
+        {
+          "label": "Güvencesi sonradan anlaşılanların SGK'ya bildirimi",
+          "value": "En geç 10 gün",
+          "refs": [
+            "89"
+          ]
+        },
+        {
+          "label": "Başvuru sahibi ve şartlı mültecinin çalışma izni başvurusu",
+          "value": "Başvuru tarihinden 6 ay sonra",
+          "refs": [
+            "89"
+          ]
+        },
+        {
+          "label": "İş piyasası sınırlamasının uygulanmadığı ikamet süresi",
+          "value": "3 yıl",
+          "refs": [
+            "89"
+          ]
+        },
+        {
+          "label": "Çalışma durumu bildirimi",
+          "value": "30 gün",
+          "refs": [
+            "90"
+          ]
+        },
+        {
+          "label": "Gelir, taşınır ve taşınmaz bildirimi",
+          "value": "30 gün",
+          "refs": [
+            "90"
+          ]
+        },
+        {
+          "label": "Adres, kimlik ve medeni hâl değişikliği bildirimi",
+          "value": "20 iş günü",
+          "refs": [
+            "90"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "80",
+        "89",
+        "90"
+      ]
+    },
+    {
+      "type": "compare",
+      "title": "Statünün sona ermesi ve iptali",
+      "rows": [
+        {
+          "aspect": "Kurum",
+          "left": "Sona erme (md 85)",
+          "right": "İptal (md 86)",
+          "refs": [
+            "85",
+            "86"
+          ]
+        },
+        {
+          "aspect": "Hâller",
+          "left": "Vatandaşı olduğu ülkenin korumasından kendi isteğiyle tekrar yararlanma; kaybettiği vatandaşlığı kendi isteğiyle tekrar kazanma; yeni vatandaşlık kazanıp o ülkenin korumasından yararlanma; terk ettiği veya zulüm korkusuyla dışında bulunduğu ülkeye kendi isteğiyle dönme",
+          "right": "Sahte belge kullanma, hile, aldatma yoluyla veya beyan etmediği gerçeklerle statü verilmesine neden olma; statü verildikten sonra md 64 çerçevesinde hariçte tutulması gerektiğinin anlaşılması",
+          "refs": [
+            "85",
+            "86"
+          ]
+        },
+        {
+          "aspect": "Koşulların ortadan kalkması",
+          "left": "Koşullar ortadan kalktığı için vatandaşı olduğu ülkenin korumasından yararlanabilme; vatansızsa önceden yaşadığı ikamet ülkesine dönebilme; bu incelemede şartların ortadan kalkıp kalkmadığına veya önemli ve kalıcı şekilde değişip değişmediğine bakılır (md 85/2)",
+          "right": "Maddede bu yönde bir hâl sayılmamıştır",
+          "refs": [
+            "85",
+            "86"
+          ]
+        },
+        {
+          "aspect": "Türkiye'den ayrılma ve ölüm",
+          "left": "md 84 saklı kalmak kaydıyla: kendi isteğiyle Türkiye'den ayrılma; üçüncü bir ülkenin korumasından faydalanma; üçüncü bir ülkeye insani nedenler veya yeniden yerleştirme kapsamında kabul edilme; üçüncü bir ülkeye çıkış yapma; ölüm",
+          "right": "Maddede bu yönde bir hâl sayılmamıştır",
+          "refs": [
+            "85",
+            "86"
+          ]
+        },
+        {
+          "aspect": "İkincil korumaya özgü",
+          "left": "Şartlar ortadan kalktığında veya korumaya gerek bırakmayacak derecede değiştiğinde de sona erer; değişikliğin önemli ve kalıcı olup olmadığına bakılır",
+          "right": "Ayrı bir hâl öngörülmemiştir",
+          "refs": [
+            "85",
+            "86"
+          ]
+        },
+        {
+          "aspect": "Yeniden değerlendirme",
+          "left": "Statü yeniden değerlendirilebilir; nedenler yazılı bildirilir ve kişiye statünün devamı için sözlü veya yazılı gerekçe sunma fırsatı verilir",
+          "right": "Maddede yeniden değerlendirme usulü düzenlenmemiştir",
+          "refs": [
+            "85",
+            "86"
+          ]
+        },
+        {
+          "aspect": "Tebliğ",
+          "left": "Maddi gerekçe ve hukuki dayanakları içeren karar ilgiliye, yasal temsilcisine ya da avukatına tebliğ edilir; avukatı yoksa sonuç, itiraz usulleri ve süreleri hakkında bilgilendirilir",
+          "right": "Maddi gerekçe ve hukuki dayanakları içeren karar ilgiliye, yasal temsilcisine ya da avukatına tebliğ edilir; avukatı yoksa sonuç, itiraz usulleri ve süreleri hakkında bilgilendirilir",
+          "refs": [
+            "85",
+            "86"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "85",
+        "86"
+      ]
+    },
+    {
+      "type": "exam_stats",
+      "title": "Sınav der ki",
+      "rows": [
+        {
+          "label": "Bu ünitenin maddelerinden yayındaki soru",
+          "value": "0",
+          "refs": [
+            "65",
+            "66",
+            "67",
+            "68",
+            "69",
+            "70",
+            "71",
+            "72",
+            "73",
+            "74",
+            "75",
+            "76",
+            "77",
+            "78",
+            "79",
+            "80",
+            "81",
+            "82",
+            "83",
+            "84",
+            "85",
+            "86",
+            "87",
+            "88",
+            "89",
+            "90"
+          ]
+        },
+        {
+          "label": "Hiç soru çıkmamış",
+          "value": "md 65, md 66, md 67, md 68, md 69, md 70, md 71, md 72, md 73, md 74, md 75, md 76, md 77, md 78, md 79, md 80, md 81, md 82, md 83, md 84, md 85, md 86, md 87, md 88, md 89, md 90",
+          "refs": [
+            "65",
+            "66",
+            "67",
+            "68",
+            "69",
+            "70",
+            "71",
+            "72",
+            "73",
+            "74",
+            "75",
+            "76",
+            "77",
+            "78",
+            "79",
+            "80",
+            "81",
+            "82",
+            "83",
+            "84",
+            "85",
+            "86",
+            "87",
+            "88",
+            "89",
+            "90"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "65",
+        "66",
+        "67",
+        "68",
+        "69",
+        "70",
+        "71",
+        "72",
+        "73",
+        "74",
+        "75",
+        "76",
+        "77",
+        "78",
+        "79",
+        "80",
+        "81",
+        "82",
+        "83",
+        "84",
+        "85",
+        "86",
+        "87",
+        "88",
+        "89",
+        "90"
+      ],
+      "generated": true
+    },
+    {
+      "type": "bridge",
+      "title": "Bu üniteden soru çöz",
+      "articleRefs": [
+        "65",
+        "66",
+        "67",
+        "68",
+        "69",
+        "70",
+        "71",
+        "72",
+        "73",
+        "74",
+        "75",
+        "76",
+        "77",
+        "78",
+        "79",
+        "80",
+        "81",
+        "82",
+        "83",
+        "84",
+        "85",
+        "86",
+        "87",
+        "88",
+        "89",
+        "90"
+      ],
+      "generated": true,
+      "rows": [
+        {
+          "label": "Madde kapsamlı seans",
+          "value": "md 65–90, 0 soru",
+          "refs": [
+            "65",
+            "66",
+            "67",
+            "68",
+            "69",
+            "70",
+            "71",
+            "72",
+            "73",
+            "74",
+            "75",
+            "76",
+            "77",
+            "78",
+            "79",
+            "80",
+            "81",
+            "82",
+            "83",
+            "84",
+            "85",
+            "86",
+            "87",
+            "88",
+            "89",
+            "90"
+          ]
+        }
+      ]
+    }
+  ]
+}

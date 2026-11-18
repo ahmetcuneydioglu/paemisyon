@@ -1,0 +1,477 @@
+{
+  "unit": {
+    "slug": "cuaik-2",
+    "legislationSlug": "6706-cezai-konularda-uluslararasi-adli-is-birligi-kanunu",
+    "topicId": "8acb1d24-36dc-4517-89d0-68043758dcd1",
+    "title": "Kovuşturmanın ve infazın devri, hükümlü nakli",
+    "subtitle": "Soruşturma ve kovuşturmanın devri ile devralınması, infazın devralınması ve devredilmesi, hükümlü nakli, masraflar, yönetmelik ve yürürlükten kaldırılan mevzuat",
+    "articleFrom": "24",
+    "articleTo": "36",
+    "readingMinutes": 14,
+    "sourceLabel": "AI özeti — 6706 Cezai Konularda Uluslararası Adli İş Birliği Kanunu, md 24–36",
+    "articleNos": [
+      "24",
+      "25",
+      "26",
+      "27",
+      "28",
+      "29",
+      "30",
+      "31",
+      "32",
+      "33",
+      "34",
+      "35",
+      "36"
+    ],
+    "generatedBy": "claude-opus-5-5 (ozet-uret.ts)",
+    "sortOrder": 2
+  },
+  "blocks": [
+    {
+      "type": "concept",
+      "title": "Dava da, ceza da, hükümlü de sınır geçebilir",
+      "body": "Bu maddeler, bir suçla ilgili işin başka bir devlete taşınmasını anlatır. Taşınabilen ilk şey soruşturma veya kovuşturmadır: md 24 devretmeyi, md 25 devralmayı düzenler. İkincisi mahkûmiyet kararının infazıdır: md 26–27 devralmayı, md 28–29 devretmeyi düzenler. Üçüncüsü ceza infaz kurumundaki hükümlünün kendisidir: md 30–31 Türkiye'ye nakli, md 32–33 Türkiye'den nakli düzenler. Her yönde kilit aktör **Merkezî Makam**dır. Talepler onun görüşüyle gider ya da gelir ve gerektiğinde onun tarafından reddedilir. Ünitenin sonunda masraflar (md 34), yönetmelik (md 35) ve yürürlükten kaldırılan mevzuat (md 36) yer alır.",
+      "articleRefs": [
+        "24",
+        "25",
+        "26",
+        "27",
+        "28",
+        "29",
+        "30",
+        "31",
+        "32",
+        "33",
+        "34",
+        "35",
+        "36"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Soruşturma veya kovuşturmanın devri: ne zaman, nasıl?",
+      "body": "**Kapsam:** Üst sınırı **bir yıl veya daha fazla hapis cezasını** gerektiren suçlardan dolayı yürütülen soruşturma veya kovuşturmalar.\n\n**Devredilebilir, eğer:**\n- Şüpheli veya sanık **yabancı devletin vatandaşı** olduğu için Türkiye'de hazır bulundurulamıyor ya da adlî yardımlaşma yoluyla savunması alınamıyorsa;\n- **Türk vatandaşı** olan şüpheli veya sanık yabancı devlette **mutat olarak bulunuyor** ya da **deliller bu devlette** ise ve devir gerçeğin ortaya çıkarılmasına imkân veriyorsa.\n\n**Usul:**\n- Devri **adlî merciler** talep eder.\n- Talep, **Merkezî Makamın olumlu görüşü** üzerine ilgili devlete gönderilir.\n- Talep, soruşturma veya kovuşturmanın yürütülmesine **engel değildir**.\n- Talebe dosyanın bir sureti ve gerekli olduğunda tercümesi eklenir.\n- Devir talebi kabul edilirse, istem üzerine delil niteliğindeki eşyalar da gönderilir.\n\n**Geçici tedbir:** Gecikmesinde sakınca bulunan hâllerde, devir talebiyle birlikte veya öncesinde talep edilen devlet makamlarından **elkoyma ve tutuklama dâhil bütün geçici tedbirlerin** alınması istenebilir.",
+      "articleRefs": [
+        "24"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Devir kabul edilince Türkiye'deki dosyaya ne olur?",
+      "body": "**Soruşturmanın devri kabul edilirse:**\n- Ceza Muhakemesi Kanununun 171 inci maddesindeki koşullara ve sonuçlarına bakılmaksızın **kamu davasının açılmasının ertelenmesine** karar verilir.\n- Yabancı adlî merci şüpheli hakkında dava açarsa **kovuşturmaya yer olmadığına** karar verilir.\n- Dava açılmazsa, bu kararın gerekçesi değerlendirilerek soruşturmaya devam edilebilir.\n\n**Kovuşturmanın devri kabul edilirse:**\n- **Durma kararı** verilir.\n- Yabancı adlî merci sanık hakkında mahkûmiyet kararı verirse **düşme kararı** verilir.\n- Mahkûmiyet dışında bir karar verilirse, bu kararın gerekçesi değerlendirilerek kovuşturmaya devam edilebilir.\n\n**Dosyanın geri dönmesi:** Aşağıdaki hâllerde soruşturma veya kovuşturmanın **yürütülmesine karar verilir**:\n- Yabancı devlet, devrin kabulüne ilişkin karardan vazgeçtiğini bildirirse;\n- Devredilen işin sağlıklı yürütülmediği **Merkezî Makamca adlî mercie** bildirilirse.",
+      "articleRefs": [
+        "24"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Erteleme mi, durma mı? Aşamaları karıştırma",
+      "body": "Devir kabul edildiğinde verilecek karar, dosyanın hangi aşamada olduğuna göre değişir. Aşamaları birbirine karıştırma, kuralı aşamaya göre ezberle:\n\n- **Soruşturma** aşamasında önce **erteleme** verilir. Yabancı adlî merci dava açarsa **kovuşturmaya yer olmadığı** kararı gelir. Burada dava açılması yeterlidir, mahkûmiyet aranmaz.\n- **Kovuşturma** aşamasında önce **durma** verilir. Yabancı adlî merci mahkûmiyet kararı verirse **düşme** gelir. Burada **mahkûmiyet** aranır.\n\nMd 24, soruşturma aşaması için durma veya düşme, kovuşturma aşaması için de erteleme kararı öngörmez. Bir uyarı daha: devir talebi, soruşturma veya kovuşturmanın yürütülmesini durdurmaz.",
+      "articleRefs": [
+        "24"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Soruşturma veya kovuşturmanın devralınması",
+      "body": "**Devralınabilir:** Suç yurt dışında işlenmiş olmalı. Türk hukukuna göre **zamanaşımına veya affa uğramamış** olmalı. Üst sınırı **bir yıl veya daha fazla hapis cezasını** gerektirmeli. Bu suç nedeniyle yabancı bir devlette yürütülen soruşturma veya kovuşturma devralınabilir.\n\n**Ancak devir talebi kabul edilmez, eğer:**\n- Kişi Türkiye'de **mutat olarak bulunmuyorsa**;\n- Kişi **Türk vatandaşı değilse**;\n- Suç, **talep eden devletin sınırları dışında** işlenmişse;\n- Kişi aynı fiil nedeniyle **daha önce Türkiye'de yargılanmışsa**.\n\nYani devralma için kişinin hem Türk vatandaşı olması hem de Türkiye'de mutat olarak bulunması gerekir.\n\n**Usul:**\n- Talep, **Merkezî Makamın uygun görmesi** üzerine **yetkili Cumhuriyet başsavcılığına** gönderilir.\n- Başsavcılık, devre konu suça ilişkin soruşturma başlatır ve sonucuna göre işlem yapar.\n\n**Geçerlilik:** Talep eden yabancı devletin mevzuatına göre yapılmış soruşturma veya kovuşturma işlemleri ve elde edilen deliller, **Türk hukuku bakımından geçerli sayılır**.",
+      "articleRefs": [
+        "25"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "İnfazın devralınması: koşullar ve red",
+      "body": "Yabancı devlet mahkemelerinin verdiği mahkûmiyet kararları, aşağıdaki koşullar **birlikte** bulunursa Türkiye'de infaz edilebilir:\n- Hükümlünün **Türkiye'de bulunması**;\n- Mahkûmiyet kararının **kesinleşmiş** olması;\n- Fiilin Türk hukukuna göre **suç teşkil etmesi** ve **zamanaşımına uğramamış** olması;\n- Hürriyeti bağlayıcı cezalar için, merkezî makamlarca aksi kararlaştırılmadıkça, talep tarihinde infazı gereken **en az altı ay** hürriyeti bağlayıcı cezanın bulunması;\n- **Aynı suçtan** Türkiye'de soruşturma veya kovuşturma yapılmamış olması.\n\n**İstenen belgeler:**\n- Mahkûmiyet kararının onaylı sureti;\n- Hükme esas alınan kanun maddelerinin metni;\n- İnfazı gereken bakiye cezayı gösteren belge;\n- Gerekli görülebilecek diğer bilgi ve belgeler;\n- Gerekirse bu belgelerin tercümeleri.\n\n**Red:** Devir koşulları yoksa ya da devir Türkiye'nin **millî güvenliği ile temel çıkarlarına** uygun düşmeyecekse, devir talebi **Merkezî Makam tarafından reddedilir**.",
+      "articleRefs": [
+        "26"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Uyarlama kararı: Ankara ağır ceza mahkemesi",
+      "body": "**Talepten önce koruma tedbiri:** İnfazın devrine ilişkin talep alınmadan önce de koruma tedbiri alınabilir. Bunun için yabancı devletin istemi ve **Merkezî Makamın olumlu görüşü** gerekir. Mahkûmiyete konu suç, ceza miktarı ve şahsın kaçma şüphesi dikkate alınır ve 14. madde uyarınca karar verilir.\n\n**Uyarlama:**\n- Talep, Türk hukukuna göre uyarlama kararı verilmesi için **Ankara ağır ceza mahkemesine** gönderilir.\n- Mahkeme **on beş gün içinde** karar verir. Yabancı kararda sübutu kabul edilen fiile Türk kanunlarına göre verilmesi gereken cezayı tayin eder.\n- Belirlenen ceza, yabancı mahkeme kararında tayin edilen **ceza süresini geçemez**.\n- Uyarlama kararına karşı **itiraz** kanun yoluna başvurulabilir.\n- Ağır ceza mahkemesi **koruma tedbirleri** hakkında da karar vermeye yetkilidir.\n\n**Bildirim:** Uyarlama kararı, talep eden devlet makamlarına bildirilmek üzere **Merkezî Makama** gönderilir.",
+      "articleRefs": [
+        "26"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Devralınan cezanın Türkiye'de infazı",
+      "body": "- Yabancı devlet infazı devrederse, durum **uyarlama kararını veren mahkemeye** bildirilir.\n- Mahkeme, infaza başlanması için kararı **Cumhuriyet başsavcılığına** gönderir.\n- Mahkeme kararı ayrıca **Adalet Bakanlığı Adli Sicil ve İstatistik Genel Müdürlüğüne** bildirir.\n- Ağır ceza mahkemesinin verdiği mahkûmiyet kararı **Türk kanunlarına göre** infaz edilir.\n- Mahkûmiyetin esasına ilişkin talepler, hükmün esası hakkında karar veren **devlet mahkemelerine** yapılabilir. Bu talepler üzerine verilen kararlar ağır ceza mahkemesince **yeniden uyarlanır**.\n- İnfaz sırasında hükmün verildiği devlette veya Türkiye'de genel veya özel af kabul edilebilir. Suç ve cezayı ortadan kaldıran veya hafifleten bir sebep de ortaya çıkabilir. Bu hâllerde hükümlünün hukukî durumunu **uyarlama kararını veren ağır ceza mahkemesi** karara bağlar.",
+      "articleRefs": [
+        "27"
+      ]
+    },
+    {
+      "type": "numbers",
+      "title": "Sayılar: devir ve infazın devralınması",
+      "rows": [
+        {
+          "label": "Soruşturma veya kovuşturmanın devri: suçun hapis cezası üst sınırı",
+          "value": "bir yıl veya daha fazla",
+          "refs": [
+            "24"
+          ]
+        },
+        {
+          "label": "Soruşturma veya kovuşturmanın devralınması: suçun hapis cezası üst sınırı",
+          "value": "bir yıl veya daha fazla",
+          "refs": [
+            "25"
+          ]
+        },
+        {
+          "label": "İnfazın devralınması: talep tarihinde infazı gereken hürriyeti bağlayıcı ceza",
+          "value": "en az altı ay (merkezî makamlarca aksi kararlaştırılmadıkça)",
+          "refs": [
+            "26"
+          ]
+        },
+        {
+          "label": "Ankara ağır ceza mahkemesinin uyarlama süresi",
+          "value": "on beş gün içinde",
+          "refs": [
+            "26"
+          ]
+        },
+        {
+          "label": "Uyarlanan cezanın sınırı",
+          "value": "yabancı mahkemenin tayin ettiği ceza süresini geçemez",
+          "refs": [
+            "26"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "24",
+        "25",
+        "26"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "İnfazın devredilmesi: Türk kararı yabancı devlette",
+      "body": "Türk mahkemelerinin verdiği mahkûmiyet kararlarının yabancı devlette infaz edilmesini **Cumhuriyet başsavcılığı** talep edebilir. Aşağıdaki koşullar **birlikte** aranır:\n- Hükümlü infazın devredileceği devlette bulunmalı. Ayrıca bu devletin **vatandaşı** olmalı ya da bu devletle **güçlü sosyal bağları** bulunmalı.\n- Mahkûmiyet kararı **kesinleşmiş** olmalı.\n- Fiil, **yabancı devlet hukukuna göre** suç teşkil etmeli.\n- Hapis cezaları için, merkezî makamlarca aksi kararlaştırılmadıkça, talep tarihinde infazı gereken **en az altı ay** hapis cezası bulunmalı.\n- **Merkezî Makamın olumlu görüşü** bulunmalı.\n\n**Ayrıca bil:**\n- Cezaları **denetimli serbestlik tedbiri** uygulanarak infaz edilen hükümlülerin cezaları da devredilebilir.\n- Devir talebi, infaz işlemlerinin yürütülmesine **engel değildir**.\n\n**Red:** Devir ceza adaletinin amaçlarına hizmet etmeyecekse ya da Türkiye'nin millî güvenliği ile temel çıkarlarına uygun düşmeyecekse, talep Merkezî Makam tarafından **reddedilir**.\n\n**Geri alma:** Devrin yapılacağı devletten infazın nasıl yapılacağı sorulur. Gelen bilgilere göre talep, Merkezî Makamın uygun görüşüyle **Cumhuriyet başsavcılığınca geri alınabilir**.",
+      "articleRefs": [
+        "28"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Devredilen infazın sonuçları",
+      "body": "- **Merkezî Makam**, yabancı devletten bazı önemli bilgileri bildirmesini ister: infaz sırasında ortaya çıkacak özel durumlar, infazın tamamlanması ve hükümlünün firarı gibi bilgiler.\n- Merkezî Makama ulaşan bilgiler **Cumhuriyet başsavcılığına** bildirilir.\n- Kararın tamamen infaz edilmesi ya da infaz kabiliyetini kısmen veya tamamen kaybetmesi, **Türk hukuku bakımından da aynı sonuçları** doğurur.\n- Yabancı devlet kararı **infaz etmez veya edemezse**, infaz işlemlerine **Türkiye'de devam edilir**.",
+      "articleRefs": [
+        "29"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Türkiye'ye hükümlü nakli",
+      "body": "Yabancı devlet mahkemesince mahkûm edilmiş ve **ceza infaz kurumunda bulunan** hükümlü, aşağıdaki koşullar **birlikte** bulunursa cezanın infazı için Türkiye'ye nakledilebilir:\n- Hükümlü **Türk vatandaşı** olmalı ya da Türkiye ile **güçlü sosyal bağları** bulunmalı.\n- Hükümlü veya **kanunî temsilcisi rıza** göstermeli.\n- Mahkûmiyet kararı **kesinleşmiş** olmalı.\n- Fiil **Türk hukukuna göre** suç teşkil etmeli.\n- Merkezî makamlarca aksi kararlaştırılmadıkça, talep tarihinde infazı gereken **en az altı ay** hapis cezası bulunmalı.\n\n**Talep:** Hükümlü, kanunî temsilcisi veya **yakını** nakil talebinde bulunabilir. Bu durumda yabancı makamlardan şu belgeler istenir:\n- Mahkûmiyet kararının onaylı sureti;\n- Hükme esas alınan kanun maddelerinin metni;\n- Nakle **rıza belgesi**;\n- İnfazı gereken cezayı gösteren belge;\n- Gerekirse tıbbî raporlar ve tedavi tavsiyeleri;\n- Gerekirse bu belgelerin tercümeleri.\n\n**Red:** Talep Merkezî Makam tarafından **reddedilebilir**. Red sebepleri şunlardır: nakil koşullarının bulunmaması, naklin hükümlünün sosyal rehabilitasyonuna katkı sağlamayacak olması, ceza adaletinin amaçlarına hizmet etmeyecek olması ya da millî güvenlik ile temel çıkarlara uygun düşmeyecek olması.\n\n**Karar:** Hükümlülerin nakline **Adalet Bakanı** karar verir.",
+      "articleRefs": [
+        "30"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Nakledilen hükümlünün Türkiye'de infazı",
+      "body": "- Nakle karar verilince, ceza infaz kurumlarında kalacağı süre **hükümlüye ve yabancı makamlara** bildirilir.\n- Yabancı devlet ve hükümlü nakli kabul ederse hükümlü Türkiye'ye getirilir.\n- Hükümlü, nakil dosyasıyla birlikte **Cumhuriyet başsavcılığına** teslim edilir.\n- **Cumhuriyet başsavcılığı**, infazına başlanan karara ilişkin bilgileri Adalet Bakanlığı Adli Sicil ve İstatistik Genel Müdürlüğüne bildirir.\n- Mahkûmiyet kararı **Türk kanunlarına göre** infaz edilir.\n- Mahkûmiyetin esasına ilişkin talepler, hükmün esası hakkında karar veren devlet mahkemelerine yapılabilir. Verilen kararlar, maddenin ikinci fıkrası uyarınca Türk kanunlarına göre **infaz edilir**.\n- İnfaz sırasında af ya da suç veya cezayı ortadan kaldıran veya hafifleten bir sebep çıkabilir. Bu hâlde hükümlünün hukukî durumu hakkında **bulunduğu yer ağır ceza mahkemesi** karar verir.",
+      "articleRefs": [
+        "31"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "İki \"Türkiye'de infaz\" maddesi aynı değil",
+      "body": "Md 27 ve md 31 aynı başlığı taşır. Bu benzerlik iki maddeyi karıştırmaya çok elverişlidir. Farkları şöyle:\n\n- **Adli sicile bildirimi kim yapar?** Md 27'de (infazın devralınması) bunu **mahkeme** yapar. Md 31'de (hükümlü nakli) bunu **Cumhuriyet başsavcılığı** yapar.\n- **Esasa ilişkin yabancı kararlar ne olur?** Md 27'de ağır ceza mahkemesince **yeniden uyarlanır**. Md 31'de Türk kanunlarına göre **infaz edilir**.\n- **Af ya da hafifletici sebep çıkarsa hangi mahkeme karar verir?** Md 27'de **uyarlama kararını veren ağır ceza mahkemesi** karar verir. Md 31'de hükümlünün **bulunduğu yer ağır ceza mahkemesi** karar verir.\n\n**Ankara ağır ceza mahkemesi** uyarlama kararını veren mahkemedir (md 26) ve uyarlama kararı infazın devralınmasına aittir. Md 31 bu mahkemeyi anmaz.",
+      "articleRefs": [
+        "26",
+        "27",
+        "31"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Türkiye'den hükümlü nakli",
+      "body": "Türk mahkemesince mahkûm edilmiş ve ceza infaz kurumunda bulunan hükümlü, aşağıdaki koşullar **birlikte** bulunursa yabancı devlete nakledilebilir:\n- Hükümlü nakledileceği devletin **vatandaşı** olmalı ya da bu devletle **güçlü sosyal bağları** bulunmalı.\n- Hükümlü veya **kanunî temsilcisi rıza** göstermeli.\n- Mahkûmiyet kararı **kesinleşmiş** olmalı.\n- Fiil, **nakli istenen devlet hukukuna göre** suç teşkil etmeli.\n- Merkezî makamlarca aksi kararlaştırılmadıkça, talep tarihinde infazı gereken **en az altı ay** hapis cezası bulunmalı.\n- Hükümlü hakkında **başka bir suçtan** Türkiye'de soruşturma veya kovuşturma bulunmamalı.\n\n**Talep ve belgeler:** Talepte hükümlü, kanunî temsilcisi veya yakını bulunabilir. Belgeler o devletin makamlarına gönderilir: onaylı suret, kanun metni, rıza belgesi, bakiye cezayı gösteren belge, gerekirse tıbbî raporlar ve tercümeler.\n\n**Red:** Md 30'daki sebeplerle Merkezî Makam talebi **reddedebilir**.\n\n**Karar öncesi:** Naklin yapılacağı devletten şu bilgiler istenir: hükümlünün ceza infaz kurumunda kalacağı süre ve infazın nasıl yapılacağı. Bu bilgi **hükümlüye tebliğ edilir**.\n\n**Karar:** Yabancı devlet **muvafakat** verirse nakle **Adalet Bakanı** karar verir.",
+      "articleRefs": [
+        "32",
+        "30"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Para cezası ile yargılama gideri aynı kurala bağlı değil",
+      "body": "Türkiye'den nakilde iki ayrı ödeme şartı vardır. Bu iki şart kolayca birbirine karıştırılır.\n\n**Adlî para cezası:**\n- Nakle karar verilebilmesi için ödenmesi **gerekir**.\n- Ödenmezse, ödenmeyen kısma karşılık gelen gün miktarı **hapis cezasına çevrilir**.\n- Türkiye'de infaz edilen ceza önce bu çevrilen hapis cezasına **mahsup edilir**. Yetmezse bakiye hapis cezasına **eklenir**.\n- Bulunan ceza miktarı yabancı devlete bildirilir. O devlet kabul ederse nakle karar verilebilir.\n\n**Yargılama giderleri:**\n- Nakil talebinin kabulü için ödenmiş olması gerekir.\n- **Ancak** hükümlü ödeyebilecek durumda değilse, giderler **ödenmeden de** nakle karar verilebilir.\n\n\"Ödeme gücü yoksa ödenmeden nakil\" istisnası yalnız **yargılama giderleri** için vardır. Adlî para cezasında bu istisna yoktur, onun yerine çevirme yolu işler.",
+      "articleRefs": [
+        "32"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Türkiye'den nakledilen hükümlüde infazın sonuçları",
+      "body": "- **Merkezî Makam**, yabancı devletten bilgi ister: infaz sırasında ortaya çıkacak özel durumlar, infazın tamamlanması ve hükümlünün firarı.\n- Merkezî Makama ulaşan bilgiler **kararı veren mahkemeye** bildirilir.\n- Kararın yabancı devlet tarafından tamamen infaz edilmesi ya da infaz kabiliyetini kısmen veya tamamen kaybetmesi, **Türk hukuku bakımından da aynı sonuçları** doğurur.\n- Yabancı devlet kararı **infaz edemezse**, infaz işlemlerine **Türkiye'de devam edilir**.",
+      "articleRefs": [
+        "33"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Md 29 ile md 33: bilgi kime gider?",
+      "body": "Bu iki madde neredeyse aynıdır. Yine de önemli farkları vardır:\n\n- **Bilgi kime gider?** İnfazın devredilmesinde (md 29) bilgi **Cumhuriyet başsavcılığına** gider. Türkiye'den hükümlü naklinde (md 33) bilgi **kararı veren mahkemeye** gider.\n- **Hangi bilgiler istenir?** Md 29, infazın tamamlanması veya hükümlünün firarı **gibi** önemli bilgileri ister; sayım örnek niteliğindedir. Md 33 ise infazın tamamlanması ve hükümlünün firarına **ilişkin** bilgileri anar; \"gibi\" ifadesi yoktur.\n- **Türkiye'de devam hangi hâlde?** Md 29 yabancı devletin kararı **infaz etmemesi veya edememesi** hâlini sayar. Md 33'ün metninde ise yalnız **infaz edememe** hâli geçer.\n\nOrtak nokta şudur: tam infaz ya da infaz kabiliyetinin kısmen veya tamamen kaybı, her iki maddede de Türk hukuku bakımından aynı sonucu doğurur.",
+      "articleRefs": [
+        "29",
+        "33"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Masrafları kim öder?",
+      "body": "**Genel kural:** Bu Kanun uyarınca yapılan adlî iş birliği taleplerinin giderlerini **yerine getiren devlet** karşılar. Merkezî makamların aksine bir mutabakatı varsa o uygulanır.\n\n**İade masrafları:**\n- Soruşturma veya kovuşturmanın sonuçlandırılması için iade istenirse, masraflar **yargılama giderlerinden** sayılır.\n- Mahkûmiyet kararının infazı için iade istenirse, masraflar faiziyle birlikte **bir ay içinde** ödenmelidir. Faiz, ödendiği tarihten tahsil edildiği tarihe kadar 6183 sayılı Kanunun 51 inci maddesindeki **gecikme zammı oranında** hesaplanır. Bunu hükümlüye **iade talep eden Cumhuriyet başsavcılığı** bildirir.\n- Bu süre içinde ödenmezse alacak, Amme Alacaklarının Tahsil Usulü Hakkında Kanuna göre takip ve tahsil için **ilgili vergi dairesine** bildirilir.\n\n**Türkiye'ye nakil masrafları:**\n- Bu masrafları **hükümlü** karşılar. Ödeme, hükümlü veya onun adına herhangi bir kişi tarafından **Adalet Bakanlığınca açılan hesaba** yatırılır.\n- Hükümlü karşılayacak durumda değilse, masraflar **Adalet Bakanlığı bütçesindeki ödenekten** karşılanabilir. Bu kararda suçun niteliği, naklin kamusal yararı, cezaevi koşulları ve bakiye cezanın süresi gibi hususlar gözetilir.\n- Görevlilere ilişkin masraflar **6245 sayılı Harcırah Kanunu** hükümlerine göre hesaplanır.",
+      "articleRefs": [
+        "34"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Yönetmelik ve yürürlükten kaldırılan mevzuat",
+      "body": "**Yönetmelik:** Bu Kanunun uygulanmasına ilişkin yönetmelikleri **Adalet Bakanlığı** yürürlüğe koyar.\n\n**Kanunun yürürlüğe girdiği tarih itibarıyla yürürlükten kaldırılanlar:**\n- 2080 sayılı Ceza Kovuşturmalarının Aktarılmasına Dair Avrupa Sözleşmesi'nin Onaylanması ve Uygulanması Hakkında Kanunun **3 üncü maddesi**;\n- 2081 sayılı Ceza Yargılarının Milletlerarası Değeri Konusunda Avrupa Sözleşmesinin Onaylanması ve Uygulanması Hakkında Kanunun **4 üncü maddesinin birinci ve üçüncü fıkraları** ile **5 inci maddesi**;\n- 3002 sayılı Türk Vatandaşları Hakkında Yabancı Ülke Mahkemelerinden ve Yabancılar Hakkında Türk Mahkemelerinden Verilen Ceza Mahkumiyetlerinin İnfazına Dair Kanunun **tamamı**;\n- 5237 sayılı Türk Ceza Kanununun **18 inci maddesi**.",
+      "articleRefs": [
+        "35",
+        "36"
+      ]
+    },
+    {
+      "type": "numbers",
+      "title": "Sayılar: infazın devri, nakil ve masraflar",
+      "rows": [
+        {
+          "label": "İnfazın devredilmesi: talep tarihinde infazı gereken hapis cezası",
+          "value": "en az altı ay (merkezî makamlarca aksi kararlaştırılmadıkça)",
+          "refs": [
+            "28"
+          ]
+        },
+        {
+          "label": "Türkiye'ye hükümlü nakli: talep tarihinde infazı gereken hapis cezası",
+          "value": "en az altı ay (merkezî makamlarca aksi kararlaştırılmadıkça)",
+          "refs": [
+            "30"
+          ]
+        },
+        {
+          "label": "Türkiye'den hükümlü nakli: talep tarihinde infazı gereken hapis cezası",
+          "value": "en az altı ay (merkezî makamlarca aksi kararlaştırılmadıkça)",
+          "refs": [
+            "32"
+          ]
+        },
+        {
+          "label": "İnfaz amaçlı iade masraflarının ödeme süresi",
+          "value": "bir ay içinde",
+          "refs": [
+            "34"
+          ]
+        },
+        {
+          "label": "İade masraflarına uygulanacak faiz",
+          "value": "6183 sayılı Kanunun 51 inci maddesindeki gecikme zammı oranı",
+          "refs": [
+            "34"
+          ]
+        },
+        {
+          "label": "Görevlilere ilişkin nakil masraflarının hesabı",
+          "value": "6245 sayılı Harcırah Kanunu",
+          "refs": [
+            "34"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "28",
+        "30",
+        "32",
+        "34"
+      ]
+    },
+    {
+      "type": "compare",
+      "title": "İnfazın devralınması (sol) ile Türkiye'ye hükümlü nakli (sağ)",
+      "rows": [
+        {
+          "aspect": "Kişiye bağlı koşul",
+          "left": "Hükümlünün Türkiye'de bulunması",
+          "right": "Türk vatandaşı olması veya Türkiye ile güçlü sosyal bağları; yabancı devlette ceza infaz kurumunda bulunması",
+          "refs": [
+            "26",
+            "30"
+          ]
+        },
+        {
+          "aspect": "Rıza",
+          "left": "Koşullar arasında sayılmaz",
+          "right": "Hükümlünün veya kanunî temsilcisinin rızası şart",
+          "refs": [
+            "26",
+            "30"
+          ]
+        },
+        {
+          "aspect": "Fiil",
+          "left": "Türk hukukuna göre suç olmalı ve zamanaşımına uğramamış olmalı",
+          "right": "Türk hukukuna göre suç olmalı",
+          "refs": [
+            "26",
+            "30"
+          ]
+        },
+        {
+          "aspect": "Asgari ceza (talep tarihinde)",
+          "left": "En az altı ay hürriyeti bağlayıcı ceza",
+          "right": "En az altı ay hapis cezası",
+          "refs": [
+            "26",
+            "30"
+          ]
+        },
+        {
+          "aspect": "Red",
+          "left": "Merkezî Makam reddeder: koşul yoksa veya millî güvenlik ile temel çıkarlara uygun değilse",
+          "right": "Merkezî Makam reddedebilir: ayrıca sosyal rehabilitasyona katkı ve ceza adaletinin amaçları da gözetilir",
+          "refs": [
+            "26",
+            "30"
+          ]
+        },
+        {
+          "aspect": "Kilit karar",
+          "left": "Ankara ağır ceza mahkemesinin uyarlama kararı",
+          "right": "Adalet Bakanının nakil kararı",
+          "refs": [
+            "26",
+            "30"
+          ]
+        },
+        {
+          "aspect": "Af veya hafifletici sebepte yetkili mahkeme",
+          "left": "Uyarlama kararını veren ağır ceza mahkemesi",
+          "right": "Hükümlünün bulunduğu yer ağır ceza mahkemesi",
+          "refs": [
+            "27",
+            "31"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "26",
+        "27",
+        "30",
+        "31"
+      ]
+    },
+    {
+      "type": "exam_stats",
+      "title": "Sınav der ki",
+      "rows": [
+        {
+          "label": "Bu ünitenin maddelerinden yayındaki soru",
+          "value": "0",
+          "refs": [
+            "24",
+            "25",
+            "26",
+            "27",
+            "28",
+            "29",
+            "30",
+            "31",
+            "32",
+            "33",
+            "34",
+            "35",
+            "36"
+          ]
+        },
+        {
+          "label": "Hiç soru çıkmamış",
+          "value": "md 24, md 25, md 26, md 27, md 28, md 29, md 30, md 31, md 32, md 33, md 34, md 35, md 36",
+          "refs": [
+            "24",
+            "25",
+            "26",
+            "27",
+            "28",
+            "29",
+            "30",
+            "31",
+            "32",
+            "33",
+            "34",
+            "35",
+            "36"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "24",
+        "25",
+        "26",
+        "27",
+        "28",
+        "29",
+        "30",
+        "31",
+        "32",
+        "33",
+        "34",
+        "35",
+        "36"
+      ],
+      "generated": true
+    },
+    {
+      "type": "bridge",
+      "title": "Bu üniteden soru çöz",
+      "articleRefs": [
+        "24",
+        "25",
+        "26",
+        "27",
+        "28",
+        "29",
+        "30",
+        "31",
+        "32",
+        "33",
+        "34",
+        "35",
+        "36"
+      ],
+      "generated": true,
+      "rows": [
+        {
+          "label": "Madde kapsamlı seans",
+          "value": "md 24–36, 0 soru",
+          "refs": [
+            "24",
+            "25",
+            "26",
+            "27",
+            "28",
+            "29",
+            "30",
+            "31",
+            "32",
+            "33",
+            "34",
+            "35",
+            "36"
+          ]
+        }
+      ]
+    }
+  ]
+}

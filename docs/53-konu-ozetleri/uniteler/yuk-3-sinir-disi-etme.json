@@ -1,0 +1,568 @@
+{
+  "unit": {
+    "slug": "yuk-3-sinir-disi-etme",
+    "legislationSlug": "6458-sayili-yabancilar-ve-uluslararasi-koruma-kanunu",
+    "topicId": "18c6184c-6f45-4501-a075-0614a48ab77e",
+    "title": "Sınır dışı etme ve uluslararası koruma türleri",
+    "subtitle": "Karar, itiraz, idari gözetim, geri gönderme merkezleri ve koruma statüleri",
+    "articleFrom": "52",
+    "articleTo": "64",
+    "readingMinutes": 15,
+    "sourceLabel": "AI özeti — 6458 Sayılı Yabancılar ve Uluslararası Koruma Kanunu, md 52–57, 57/A, 58–60, 60/A, 61–64",
+    "articleNos": [
+      "52",
+      "53",
+      "54",
+      "55",
+      "56",
+      "57",
+      "57/A",
+      "58",
+      "59",
+      "60",
+      "60/A",
+      "61",
+      "62",
+      "63",
+      "64"
+    ],
+    "generatedBy": "claude-opus-5-5 (ozet-uret.ts)",
+    "sortOrder": 3
+  },
+  "blocks": [
+    {
+      "type": "concept",
+      "title": "Sınır dışı etme kararla başlar",
+      "body": "Sınır dışı etme, yabancının Türkiye'den gönderilmesidir ve dayanağı her zaman bir **sınır dışı etme kararıdır**. Bu kararla yabancı nereye gönderilebilir? **Menşe ülkesine**, **transit gideceği ülkeye** ya da **üçüncü bir ülkeye**. Yani gönderilecek yer yalnızca yabancının kendi ülkesi değildir. 'Sadece menşe ülkesine' gibi daraltılmış ifadeler seni yanıltmasın.",
+      "articleRefs": [
+        "52"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Kararı kim alır, kime tebliğ edilir?",
+      "body": "**Karar mercii:** Valilikler. Karar, Genel Müdürlüğün talimatı üzerine **veya resen** alınır.\n\n**Tebliğ:** Karar **gerekçeleriyle birlikte** şu kişilerden birine tebliğ edilir:\n- hakkında karar alınan yabancı,\n- yasal temsilcisi,\n- avukatı.\n\n**Bilgilendirme:** Yabancı bir avukat tarafından temsil edilmiyorsa, kendisi veya yasal temsilcisi kararın sonucu, itiraz usulleri ve süreleri hakkında bilgilendirilir.\n\n**Not:** \"Genel Müdürlük\" madde metnindeki hâliyle verilmiştir.",
+      "articleRefs": [
+        "53"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Sınır dışı etme kararına karşı yargı yolu",
+      "body": "**Kim başvurur:** Yabancı veya yasal temsilcisi ya da avukatı.\n**Nereye:** İdare mahkemesine.\n**Ne zaman:** Kararın tebliğinden itibaren **yedi gün** içinde.\n\n- Mahkemeye başvuran kişi, sınır dışı etme kararını veren makama da başvurusunu bildirir.\n- Savunmanın verilmesi veya savunma verme süresinin geçmesiyle dosya **tekemmül etmiş** sayılır.\n- Davacının gösterdiği adrese tebligat yapılamazsa, 2577 sayılı Kanunun 26 ncı maddesinin üçüncü fıkrasındaki süre **iki ay** olarak uygulanır.\n- Duruşma yapılması mahkemenin **takdirine** bağlıdır.\n- Başvurular, dosyanın tekemmülünden itibaren sonuçlandırılır. Ara karar ya da duruşma yapılması gereken hâllerde süre bunların tamamlanmasından başlar. Karar süresi **on beş gün**dür.\n- Mahkemenin bu konudaki kararı **kesindir**.\n\n**Güvence:** Yabancının rızası saklı kalmak kaydıyla, dava açma süresi içinde yabancı **sınır dışı edilmez**. Yargı yoluna başvurulmuşsa bu güvence yargılama sonuçlanıncaya kadar sürer.",
+      "articleRefs": [
+        "53"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Yedi mi, on beş mi? Mahkeme mi, hâkim mi?",
+      "body": "Bu sayıları birbirine karıştırmak çok kolay, dikkat et:\n- **Yedi gün**, yabancının dava açma süresidir ve kararın tebliğinden başlar.\n- **On beş gün**, mahkemenin karar verme süresidir ve dosyanın tekemmülünden başlar.\n\nMerci de bir tuzaktır. Sınır dışı etme kararına karşı **idare mahkemesine** gidilir. **Sulh ceza hâkimi** ise idari gözetim kararının merciidir.\n\nBir de etki farkı var. Sınır dışı etme davasında, dava süresince yabancı sınır dışı edilmez; bu güvence yabancının rızası saklı kalmak kaydıyla işler. İdari gözetim kararına karşı başvuru ise gözetimi **durdurmaz**.",
+      "articleRefs": [
+        "53",
+        "57"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Kimler hakkında sınır dışı etme kararı alınır?",
+      "body": "**Aşağıdakiler hakkında karar alınır:**\n- a) 5237 sayılı Kanunun 59 uncu maddesi kapsamında sınır dışı edilmesi gerektiği değerlendirilenler\n- b) Terör örgütü ya da çıkar amaçlı suç örgütü yöneticisi, üyesi veya destekleyicisi olanlar\n- c) Türkiye'ye giriş, vize ve ikamet izinleri için yapılan işlemlerde gerçek dışı bilgi ve sahte belge kullananlar\n- ç) Türkiye'de bulunduğu süre zarfında geçimini meşru olmayan yollardan sağlayanlar\n- d) Kamu düzeni, kamu güvenliği ya da kamu sağlığı açısından tehdit oluşturanlar\n- e) Vize veya vize muafiyeti süresini **on günden fazla** aşanlar ya da vizesi iptal edilenler\n- f) İkamet izinleri iptal edilenler\n- g) İkamet izni süresinin sona ermesinden itibaren, kabul edilebilir gerekçesi olmadan bu süreyi **on günden fazla** ihlal edenler\n- ğ) Çalışma izni olmadan çalıştığı tespit edilenler\n- h) Türkiye'ye yasal giriş veya Türkiye'den yasal çıkış hükümlerini ihlal edenler ya da bu hükümleri ihlale **teşebbüs** edenler\n- ı) Hakkında giriş yasağı bulunmasına rağmen Türkiye'ye geldiği tespit edilenler\n- i) Uluslararası koruma başvurusu reddedilen, uluslararası korumadan hariçte tutulan, başvurusu kabul edilemez olarak değerlendirilen, başvurusunu geri çeken ya da başvurusu geri çekilmiş sayılan, statüsü sona eren veya iptal edilenlerden, son karardan sonra Türkiye'de kalma hakkı bulunmayanlar\n- j) İkamet izni uzatma başvurusu reddedilip **on gün içinde** Türkiye'den çıkış yapmayanlar\n- k) Uluslararası kurum ve kuruluşlarca tanımlanan terör örgütleriyle ilişkili olduğu değerlendirilenler\n\n**Uluslararası koruma kapsamındaki kişiler:** (b), (d) ve (k) bentleri kapsamında oldukları değerlendirilen uluslararası koruma başvuru sahibi veya statü sahibi hakkında, uluslararası koruma işlemlerinin **her aşamasında** sınır dışı etme kararı alınabilir.",
+      "articleRefs": [
+        "54"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "On gün: fazla aşmak ile içinde çıkmamak",
+      "body": "Bu maddede sayı hep aynı, ama kalıp farklı. Dikkat et:\n- **Vize veya vize muafiyeti:** Süreyi **on günden fazla** aşan kişi hakkında karar alınır. Vizesi iptal edilen için ise bir süre şartı yazılmamıştır.\n- **İkamet izni süresi:** Kabul edilebilir gerekçe olmadan süreyi **on günden fazla** ihlal eden kişi hakkında karar alınır. İkamet izni iptal edilen için de bir süre şartı yazılmamıştır.\n- **Uzatma başvurusu reddedilen:** **On gün içinde** Türkiye'den çıkış yapmayan kişi hakkında karar alınır.\n\nFiil kipine de bak. Birinci fıkrada sayılan yabancılar hakkında karar **alınır**; ancak md 55'te sayılan hâllerde, md 54 kapsamında olsalar dahi karar alınmaz. (b), (d) ve (k) bentleri kapsamındaki uluslararası koruma başvuru sahibi veya statü sahibi için ise karar her aşamada **alınabilir**.",
+      "articleRefs": [
+        "54",
+        "55"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Kimler hakkında sınır dışı etme kararı alınmaz?",
+      "body": "54 üncü madde kapsamında olsalar **dahi**, aşağıdakiler hakkında sınır dışı etme kararı **alınmaz**:\n- a) Sınır dışı edileceği ülkede ölüm cezasına, işkenceye, insanlık dışı ya da onur kırıcı ceza veya muameleye maruz kalacağı konusunda **ciddi emare** bulunanlar\n- b) Ciddi sağlık sorunları, yaş ve hamilelik durumu nedeniyle seyahat etmesi riskli görülenler\n- c) Hayati tehlike arz eden hastalıkları için tedavisi devam ederken, sınır dışı edileceği ülkede tedavi imkânı bulunmayanlar\n- ç) **Mağdur destek sürecinden yararlanmakta olan** insan ticareti mağdurları\n- d) **Tedavileri tamamlanıncaya kadar** psikolojik, fiziksel veya cinsel şiddet mağdurları\n\n**Değerlendirme:** Herkes için **ayrı** yapılır.\n**Yükümlülük:** Bu kişilerden belli bir adreste ikamet etmeleri ve istenilen şekil ve sürelerde bildirimde bulunmaları istenebilir.",
+      "articleRefs": [
+        "55"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Türkiye'yi terke davet ve Çıkış İzin Belgesi",
+      "body": "**Süre:** Sınır dışı etme kararı alınanlara, Türkiye'yi terk edebilmeleri için **on beş günden az olmamak üzere otuz güne kadar** süre tanınır. Bu süre sınır dışı etme kararında belirtilir.\n\n**Aşağıdakilere süre tanınmaz:**\n- kaçma ve kaybolma riski bulunanlar,\n- yasal giriş veya yasal çıkış kurallarını ihlal edenler,\n- sahte belge kullananlar,\n- asılsız belgelerle ikamet izni almaya çalışanlar veya aldığı tespit edilenler,\n- kamu düzeni, kamu güvenliği veya kamu sağlığı açısından tehdit oluşturanlar.\n\n**Çıkış İzin Belgesi:** Türkiye'den çıkış için süre tanınan kişilere verilir ve **hiçbir harca tabi değildir**. Ancak vize ve ikamet harçları ile bunların cezalarına ilişkin yükümlülükler saklıdır.",
+      "articleRefs": [
+        "56"
+      ]
+    },
+    {
+      "type": "numbers",
+      "title": "Sayılar: karar, dava ve terk süreleri",
+      "rows": [
+        {
+          "label": "Sınır dışı etme kararına karşı dava açma süresi (tebliğden itibaren)",
+          "value": "7 gün",
+          "refs": [
+            "53"
+          ]
+        },
+        {
+          "label": "Mahkemenin başvuruyu sonuçlandırma süresi",
+          "value": "15 gün",
+          "refs": [
+            "53"
+          ]
+        },
+        {
+          "label": "Adrese tebligat yapılamazsa 2577 sayılı Kanunun 26 ncı maddesinin üçüncü fıkrasındaki süre",
+          "value": "2 ay",
+          "refs": [
+            "53"
+          ]
+        },
+        {
+          "label": "Vize veya vize muafiyeti süresinin aşılması (karar sebebi)",
+          "value": "10 günden fazla",
+          "refs": [
+            "54"
+          ]
+        },
+        {
+          "label": "İkamet izni süresinin gerekçesiz ihlali (karar sebebi)",
+          "value": "10 günden fazla",
+          "refs": [
+            "54"
+          ]
+        },
+        {
+          "label": "İkamet izni uzatma başvurusu reddedilenin çıkış süresi",
+          "value": "10 gün içinde",
+          "refs": [
+            "54"
+          ]
+        },
+        {
+          "label": "Türkiye'yi terk için tanınan süre",
+          "value": "15–30 gün",
+          "refs": [
+            "56"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "53",
+        "54",
+        "56"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Yakalama, valilik kararı ve idari gözetim",
+      "body": "**Yakalama:** 54 üncü madde kapsamındaki yabancı kolluk tarafından yakalanırsa, hakkında karar verilmek üzere **derhâl valiliğe** bildirilir. Sınır dışı etme kararı alınması gerektiği değerlendirilirse kararı valilik alır. Değerlendirme ve karar süresi **kırk sekiz saati** geçemez.\n\n**İdari gözetim:** Hakkında sınır dışı etme kararı alınanlardan aşağıdakiler için valilik idari gözetim kararı alır ya da 57/A maddesi uyarınca idari gözetime alternatif yükümlülükler getirir:\n- kaçma ve kaybolma riski bulunanlar,\n- Türkiye'ye giriş veya çıkış kurallarını ihlal edenler,\n- sahte ya da asılsız belge kullananlar,\n- kabul edilebilir bir mazereti olmaksızın tanınan sürede Türkiye'den çıkmayanlar,\n- kamu düzeni, kamu güvenliği veya kamu sağlığı açısından tehdit oluşturanlar.\n\n**Nakil:** İdari gözetim kararı alınan yabancı, yakalamayı yapan kolluk birimince **kırk sekiz saat** içinde geri gönderme merkezine götürülür.",
+      "articleRefs": [
+        "57",
+        "57/A"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "İdari gözetimin süresi, denetimi ve itirazı",
+      "body": "**Süre:** Geri gönderme merkezlerindeki idari gözetim **altı ayı** geçemez. Sınır dışı etme işlemleri tamamlanamazsa bu süre en fazla **altı ay daha** uzatılabilir. Uzatma için işlemlerin, yabancının iş birliği yapmaması veya ülkesiyle ilgili doğru bilgi ya da belgeleri vermemesi nedeniyle tamamlanamamış olması gerekir.\n\n**Aylık değerlendirme:** İdari gözetimin devamında zaruret olup olmadığını valilik **her ay** düzenli olarak değerlendirir. Gerek görülürse **otuz günlük** süre beklenmez. Zaruret görülmezse idari gözetim **derhâl** sonlandırılır ve yabancıya 57/A maddesi uyarınca alternatif yükümlülükler getirilir.\n\n**Tebliğ:** İdari gözetim kararı, sürenin uzatılması ve aylık değerlendirmelerin sonuçları gerekçesiyle birlikte tebliğ edilir. Tebliğ yabancıya veya yasal temsilcisine ya da avukatına yapılır. Avukatla temsil edilmeyen kişi veya yasal temsilcisi; kararın sonucu, itiraz usulleri ve süreleri hakkında bilgilendirilir.\n\n**İtiraz:** Kişi veya yasal temsilcisi ya da avukatı **sulh ceza hâkimine** başvurabilir.\n- Başvuru idari gözetimi **durdurmaz**.\n- Dilekçe idareye verilirse yetkili sulh ceza hâkimine derhâl ulaştırılır.\n- Hâkim incelemeyi **beş gün** içinde sonuçlandırır ve kararı **kesindir**.\n- Şartların ortadan kalktığı veya değiştiği iddiasıyla **yeniden** başvurulabilir.\n\n**Avukatlık hizmeti:** Yargı yoluna başvuran ve avukatlık ücretlerini karşılama imkânı bulunmayan kişiye, talebi hâlinde 1136 sayılı Avukatlık Kanunu hükümlerine göre avukatlık hizmeti sağlanır.\n\n**Cihaz incelemesi:** Uyruk tespiti amacıyla elektronik ve iletişim cihazları incelenebilir. Elde edilen veriler bu amaç dışında kullanılmaz.",
+      "articleRefs": [
+        "57"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "İdari gözetimde gözden kaçan ayrıntılar",
+      "body": "- **Uzatma kendiliğinden olmaz.** Ek süre ancak işlemler, yabancının iş birliği yapmaması ya da ülkesiyle ilgili doğru bilgi veya belge vermemesi yüzünden tamamlanamadıysa gündeme gelir.\n- **Ayın dolmasını beklemek şart değil.** Değerlendirme her ay yapılır, ama gerek görülürse otuz günlük süre beklenmez.\n- **Gözetimin bitmesi serbest kalmak demek değil.** İdari gözetimin devamında zaruret görülmeyen yabancıya alternatif yükümlülükler getirilir.\n- **Başvuru durdurmaz.** Sulh ceza hâkimine başvurmak gözetimi askıya almaz. Bunu sınır dışı etme davasındaki 'yargılama sonuçlanıncaya kadar sınır dışı edilmez' güvencesiyle karıştırma.\n- **Cihaz verileri tek amaca hizmet eder.** Elektronik ve iletişim cihazlarından elde edilen veriler yalnız uyruk tespiti için kullanılır.",
+      "articleRefs": [
+        "57",
+        "53"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "İdari gözetime alternatif yükümlülükler",
+      "body": "**Kimlere:** 57 nci maddenin ikinci fıkrasında sayılan yabancılara ya da idari gözetimi sonlandırılan yabancılara getirilebilir.\n\n**Yükümlülükler:**\n- a) Belirli adreste ikamet etme\n- b) Bildirimde bulunma\n- c) Aile temelli geri dönüş\n- ç) Geri dönüş danışmanlığı\n- d) Kamu yararına hizmetlerde gönüllülük esasıyla görev alma\n- e) Teminat\n- f) Elektronik izleme\n\n**Süre:** Bu yükümlülüklerden bir ya da birkaçı getirilirse süre **yirmi dört ayı** geçemez.\n\n**Zorunluluk:** 57 nci maddenin ikinci fıkrası kapsamında olup idari gözetim altına alınmayan yabancıya, bu yükümlülüklerden birinin ya da birkaçının getirilmesi **zorunludur**.\n\n**Tebliğ:** Yükümlülük kararı gerekçeleriyle birlikte yabancıya veya yasal temsilcisine ya da avukatına tebliğ edilir. Avukatla temsil edilmeyen kişi veya yasal temsilcisi; kararın sonucu, itiraz usulleri ve süreleri hakkında bilgilendirilir.\n\n**Elektronik izlemeye itiraz:** Sulh ceza hâkimine başvurulabilir. Başvuru yükümlülüğü durdurmaz. Hâkim **beş gün** içinde sonuçlandırır ve kararı kesindir.\n\n**Uymama:** Yükümlülüklere uymayan yabancı idari gözetim altına alınabilir.\n\n**Teminat:** Yabancı teminat süresi içinde Türkiye'den çıkmazsa teminat Hazineye irat kaydedilir. Mücbir sebepler ve mahkeme sürecinin sona ermemesi hâlleri bunun dışındadır.\n\n**Usul ve esaslar:** Bakanlıkça düzenlenir.",
+      "articleRefs": [
+        "57/A",
+        "57"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Geri gönderme merkezleri ve sağlanan hizmetler",
+      "body": "**Tutulma yeri:** İdari gözetime alınan yabancılar geri gönderme merkezlerinde tutulur.\n\n**İşletme:** Merkezleri Bakanlık işletir. Bakanlık, merkezleri **protokol** yaparak da işlettirebilir. Protokol yapılabilecekler şunlardır:\n- kamu kurum ve kuruluşları,\n- Türkiye Kızılay Derneği,\n- kamu yararına çalışan derneklerden göç alanında uzmanlığı bulunanlar.\n\n**Yönetmelik:** Merkezlerin kurulması, yönetimi, işletilmesi, devri ve denetimi ile merkezlere nakil işlemlerinin usul ve esasları yönetmelikle düzenlenir.\n\n**Merkezde sağlananlar:**\n- a) Yabancının bedelini karşılayamadığı acil ve temel sağlık hizmetleri **ücretsiz** verilir.\n- b) Yakınlarına, notere, yasal temsilciye ve avukata erişme ve onlarla görüşme imkânı sağlanır. Telefon hizmetlerine erişme imkânı da sağlanır.\n- c) Ziyaretçileri, vatandaşı olduğu ülkenin konsolosluk yetkilisi ve Birleşmiş Milletler Mülteciler Yüksek Komiserliği görevlisiyle görüşebilme imkânı sağlanır.\n- ç) Çocukların yüksek yararları gözetilir ve aileler ayrı yerlerde barındırılır.\n- d) Çocukların eğitim ve öğretimden yararlandırılması için Millî Eğitim Bakanlığınca gerekli tedbirler alınır.\n\n**STK ziyareti:** Göç alanında uzmanlığı bulunan ilgili sivil toplum kuruluşu temsilcileri, **Genel Müdürlüğün izniyle** merkezleri ziyaret edebilir.\n\n**Not:** \"Genel Müdürlük\" madde metnindeki hâliyle verilmiştir.",
+      "articleRefs": [
+        "58",
+        "59"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Sınır dışı etmenin yerine getirilmesi ve gönüllü geri dönüş",
+      "body": "**Götürme:** Geri gönderme merkezlerindeki yabancılar, kolluk birimi tarafından sınır kapılarına götürülür. Merkeze sevk edilmeden sınır dışı edilecek yabancılar ise Genel Müdürlük taşra teşkilatının koordinesinde kolluk birimlerince götürülür.\n\n**Seyahat masrafları yabancının kendisince karşılanır:**\n- Parası masrafın tamamına yetiyorsa masraf parasından karşılanır ve artan tutar kendisine bırakılır.\n- Hiç parası yoksa masrafın tamamını Genel Müdürlük karşılar.\n- Parası masrafa yetmiyorsa masrafı Genel Müdürlük karşılar. Parasının temel gereksinim tutarı kadar kısmı kendisine bırakılır, artanı masraf karşılığında Hazineye gelir kaydedilir. Temel gereksinim tutarını Genel Müdürlük her mali yıl başında belirler.\n- Parası temel gereksinim tutarının altındaysa masrafın tamamını Genel Müdürlük karşılar ve parası kendisine bırakılır.\n- Masraflar geri ödenmediği sürece yabancının Türkiye'ye girişine izin verilmeyebilir.\n\n**Belgeler:** Pasaport veya diğer belgeler, sınır dışı edilinceye kadar tutulabilir. Biletler, sınır dışı işlemlerinde kullanılmak üzere paraya çevrilebilir.\n\n**Garantörler:** Kalışını veya dönüşünü garanti ettikleri yabancının sınır dışı edilme masraflarını, garanti veren gerçek veya tüzel kişiler öder. Yabancıyı izinsiz çalıştıran işveren veya işveren vekilleri için 4817 sayılı Kanunun 21 inci maddesinin üçüncü fıkrası uygulanır.\n\n**İş birliği:** Genel Müdürlük; uluslararası kuruluşlar, ilgili ülke makamları ve sivil toplum kuruluşlarıyla iş birliği yapabilir.\n\n**Gönüllü geri dönüş:** Hakkında sınır dışı etme kararı alınmış ve menşe ülkesine gönüllü olarak dönmek isteyen düzensiz göçmenlere **ayni veya nakdi destek** sağlanabilir. Destek, bu kişilerden Genel Müdürlüğün uygun gördüklerine verilir. Gönüllü geri dönüş çalışmaları; uluslararası kuruluşlar, kamu kurum ve kuruluşları ve sivil toplum kuruluşlarıyla iş birliği hâlinde yürütülebilir.\n\n**Not:** \"Genel Müdürlük\" ifadesi ve 4817 sayılı Kanuna yapılan atıf madde metnindeki hâliyle verilmiştir.",
+      "articleRefs": [
+        "60",
+        "60/A"
+      ]
+    },
+    {
+      "type": "concept",
+      "title": "Uluslararası korumanın statüleri",
+      "body": "Kanun uluslararası korumayı **mülteci**, **şartlı mülteci** ve **ikincil koruma** olarak ayırır.\n\nMülteci ve şartlı mültecide ortak nokta zulüm korkusudur. Kişi ırkı, dini, tabiiyeti, belli bir toplumsal gruba mensubiyeti veya siyasi düşünceleri yüzünden zulme uğrayacağından haklı sebeplerle korktuğu için **vatandaşı olduğu ülkenin dışında bulunur**. Bu ülkenin korumasından yararlanamaz ya da bu korku nedeniyle yararlanmak istemez. Vatansız kişide ölçü, önceden yaşadığı **ikamet ülkesinin dışında bulunmak** ve oraya dönememek ya da bu korku nedeniyle dönmek istememektir.\n\nAralarındaki çizgiyi şu soru çizer: **Olaylar nerede meydana geldi?** Avrupa ülkelerindeyse mülteci, Avrupa ülkeleri dışındaysa şartlı mülteci statüsü verilir. Şartlı mülteci, üçüncü ülkeye yerleştirilinceye kadar Türkiye'de kalabilir.\n\nMülteci veya şartlı mülteci olarak nitelendirilemeyen kişi için ikincil koruma vardır. Bu kişi geri gönderilirse ölüm cezası, işkence ya da silahlı çatışmadaki ayrım gözetmeyen şiddet tehdidiyle karşılaşacaktır.\n\nHer statü, **statü belirleme işlemleri sonrasında** verilir.",
+      "articleRefs": [
+        "61",
+        "62",
+        "63"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "İkincil koruma",
+      "body": "**Kime verilir:** Mülteci veya şartlı mülteci olarak **nitelendirilemeyen** yabancı ya da vatansız kişiye. Bu kişi, menşe ülkesine veya ikamet ülkesine geri gönderilirse:\n- a) ölüm cezasına mahkûm olacak veya ölüm cezası infaz edilecek,\n- b) işkenceye, insanlık dışı ya da onur kırıcı ceza veya muameleye maruz kalacak,\n- c) uluslararası veya ülke genelindeki silahlı çatışma durumlarında, ayrım gözetmeyen şiddet hareketleri nedeniyle şahsına yönelik ciddi tehditle karşılaşacak olmalıdır.\n\nBu nedenle menşe ülkesinin veya ikamet ülkesinin korumasından yararlanamamalı ya da bu tehdit nedeniyle yararlanmak istememelidir.\n\n**Nasıl verilir:** Statü belirleme işlemleri sonrasında ikincil koruma statüsü verilir.\n\n**Dikkat:** Bu maddede zulüm nedenleri sayılmaz. Sayılanlar, geri gönderilince karşılaşılacak ölüm cezası, işkence ve ciddi tehdit hâlleridir.",
+      "articleRefs": [
+        "63"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Uluslararası korumanın haricinde tutulma",
+      "body": "**Başvuru sahibi aşağıdaki hâllerde uluslararası korumadan hariçte tutulur:**\n- a) Birleşmiş Milletler Mülteciler Yüksek Komiserliği dışında, diğer bir Birleşmiş Milletler organı veya örgütünden **hâlen** koruma veya yardım görüyorsa,\n- b) İkamet ettiği ülkenin yetkili makamlarınca, o ülke vatandaşlarının hak ve yükümlülüklerine sahip olarak tanınıyorsa,\n- c) Sözleşmenin 1 inci maddesinin (F) fıkrasında belirtilen fiillerden suçlu olduğuna dair **ciddi kanaat** varsa.\n\n**(a) bendinde koruma biterse:** Koruma veya yardım herhangi bir nedenle sona erebilir. Bu durumda kişinin konumu Birleşmiş Milletler Genel Kurulu kararlarına istinaden kesin bir çözüme kavuşturulmamışsa, kişi bu Kanunun sağladığı korumadan yararlanabilir.\n\n**Türkiye dışındaki zalimce eylemler:** Başvuru sahibi, başvurudan önce Türkiye dışında zalimce eylemler yapmış olabilir. Bunu düşündürecek nedenler varsa, eylemin saiki ne olursa olsun, (c) bendi kapsamında değerlendirme yapılır.\n\n**İştirak ve tahrik:** (c) bendindeki ve Türkiye dışındaki zalimce eylemlere ilişkin suç ya da fiillerin işlenmesine iştirak eden de hariçte tutulur. Bu fiillerin işlenmesini tahrik eden kişi de hariçte tutulur.",
+      "articleRefs": [
+        "64"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Yalnız ikincil korumadan hariçte tutanlar ve aile üyeleri",
+      "body": "Burada ayrımı kaçırma: Bazı nedenler kişiyi yalnız **ikincil korumadan** hariçte tutar.\n\n(c) bendi, zalimce eylemler ve iştirak ya da tahrik hâllerine ek olarak, şu kişiler **ikincil korumadan** hariçte tutulur:\n- Kamu düzeni veya kamu güvenliği açısından tehlike oluşturduğuna dair **ciddi emareler** bulunan yabancı veya vatansız kişi.\n- Daha önce suç işlemiş ve **sadece bu suçun cezasını çekmemek için** menşe veya ikamet ülkesini terk etmiş yabancı veya vatansız kişi. Bu suç, (c) bendi kapsamında olmayan ama Türkiye'de işlenseydi **hapis cezası** gerektirecek bir suçtur.\n\nAileyi de unutma. Başvuru sahibinin hariçte tutulması, aile üyelerinin de hariçte tutulmasını **gerektirmez**. Bunun şartı, hariçte tutma nedenlerinden herhangi birinin diğer aile üyeleri için oluşmamasıdır.",
+      "articleRefs": [
+        "64"
+      ]
+    },
+    {
+      "type": "numbers",
+      "title": "Sayılar: idari gözetim ve alternatif yükümlülükler",
+      "rows": [
+        {
+          "label": "Yakalanan yabancı için valiliğin değerlendirme ve karar süresi",
+          "value": "en fazla 48 saat",
+          "refs": [
+            "57"
+          ]
+        },
+        {
+          "label": "Geri gönderme merkezine götürme",
+          "value": "48 saat içinde",
+          "refs": [
+            "57"
+          ]
+        },
+        {
+          "label": "Geri gönderme merkezinde idari gözetim",
+          "value": "en fazla 6 ay",
+          "refs": [
+            "57"
+          ]
+        },
+        {
+          "label": "Uzatma (iş birliği yapmama / doğru bilgi veya belge vermeme)",
+          "value": "en fazla 6 ay daha",
+          "refs": [
+            "57"
+          ]
+        },
+        {
+          "label": "İdari gözetimin azami toplam süresi",
+          "value": "12 ay",
+          "refs": [
+            "57"
+          ]
+        },
+        {
+          "label": "Zaruret değerlendirmesi",
+          "value": "her ay (gerekirse 30 günlük süre beklenmez)",
+          "refs": [
+            "57"
+          ]
+        },
+        {
+          "label": "Sulh ceza hâkiminin idari gözetim incelemesi",
+          "value": "5 gün",
+          "refs": [
+            "57"
+          ]
+        },
+        {
+          "label": "Alternatif yükümlülüklerin süresi",
+          "value": "en fazla 24 ay",
+          "refs": [
+            "57/A"
+          ]
+        },
+        {
+          "label": "Elektronik izleme itirazında sulh ceza hâkiminin incelemesi",
+          "value": "5 gün",
+          "refs": [
+            "57/A"
+          ]
+        }
+      ],
+      "derivedNumbers": [
+        {
+          "value": 12,
+          "expr": "6 + 6",
+          "refs": [
+            "57"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "57",
+        "57/A"
+      ]
+    },
+    {
+      "type": "compare",
+      "title": "Sınır dışı etme kararına itiraz – idari gözetim kararına itiraz",
+      "rows": [
+        {
+          "aspect": "Başvuran",
+          "left": "Yabancı veya yasal temsilcisi ya da avukatı",
+          "right": "İdari gözetim altına alınan kişi veya yasal temsilcisi ya da avukatı",
+          "refs": [
+            "53",
+            "57"
+          ]
+        },
+        {
+          "aspect": "Merci",
+          "left": "İdare mahkemesi",
+          "right": "Sulh ceza hâkimi",
+          "refs": [
+            "53",
+            "57"
+          ]
+        },
+        {
+          "aspect": "Başvuru zamanı",
+          "left": "Kararın tebliğinden itibaren yedi gün içinde",
+          "right": "Maddede ilk başvuru için süre yazılmamıştır; idari gözetim şartlarının ortadan kalktığı veya değiştiği iddiasıyla yeniden başvurulabilir",
+          "refs": [
+            "53",
+            "57"
+          ]
+        },
+        {
+          "aspect": "Karar süresi",
+          "left": "Dosyanın tekemmülünden (ya da ara karar veya duruşmanın tamamlanmasından) itibaren on beş gün",
+          "right": "İnceleme beş gün içinde sonuçlandırılır",
+          "refs": [
+            "53",
+            "57"
+          ]
+        },
+        {
+          "aspect": "Başvurunun etkisi",
+          "left": "Dava açma süresi içinde ve yargılama sonuçlanıncaya kadar sınır dışı edilmez (yabancının rızası saklı)",
+          "right": "Başvuru idari gözetimi durdurmaz",
+          "refs": [
+            "53",
+            "57"
+          ]
+        },
+        {
+          "aspect": "Bildirim / ulaştırma",
+          "left": "Başvuran, kararı veren makama da başvurusunu bildirir",
+          "right": "Dilekçe idareye verilirse derhâl yetkili sulh ceza hâkimine ulaştırılır",
+          "refs": [
+            "53",
+            "57"
+          ]
+        },
+        {
+          "aspect": "Kararın niteliği",
+          "left": "Kesin",
+          "right": "Kesin",
+          "refs": [
+            "53",
+            "57"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "53",
+        "57"
+      ]
+    },
+    {
+      "type": "compare",
+      "title": "Mülteci – şartlı mülteci",
+      "rows": [
+        {
+          "aspect": "Olayların meydana geldiği yer",
+          "left": "Avrupa ülkeleri",
+          "right": "Avrupa ülkeleri dışı",
+          "refs": [
+            "61",
+            "62"
+          ]
+        },
+        {
+          "aspect": "Zulüm nedenleri",
+          "left": "Irk, din, tabiiyet, belli bir toplumsal gruba mensubiyet, siyasi düşünce",
+          "right": "Irk, din, tabiiyet, belli bir toplumsal gruba mensubiyet, siyasi düşünce",
+          "refs": [
+            "61",
+            "62"
+          ]
+        },
+        {
+          "aspect": "Kişi",
+          "left": "Vatandaşı olduğu ülkenin dışında bulunan yabancı ya da önceki ikamet ülkesinin dışında bulunan vatansız kişi",
+          "right": "Vatandaşı olduğu ülkenin dışında bulunan yabancı ya da önceki ikamet ülkesinin dışında bulunan vatansız kişi",
+          "refs": [
+            "61",
+            "62"
+          ]
+        },
+        {
+          "aspect": "Verilme",
+          "left": "Statü belirleme işlemleri sonrasında mülteci statüsü",
+          "right": "Statü belirleme işlemleri sonrasında şartlı mülteci statüsü",
+          "refs": [
+            "61",
+            "62"
+          ]
+        },
+        {
+          "aspect": "Türkiye'de kalış",
+          "left": "Maddede ayrıca bir kalış kaydı yok",
+          "right": "Üçüncü ülkeye yerleştirilinceye kadar Türkiye'de kalmasına izin verilir",
+          "refs": [
+            "61",
+            "62"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "61",
+        "62"
+      ]
+    },
+    {
+      "type": "exam_stats",
+      "title": "Sınav der ki",
+      "rows": [
+        {
+          "label": "Bu ünitenin maddelerinden yayındaki soru",
+          "value": "0",
+          "refs": [
+            "52",
+            "53",
+            "54",
+            "55",
+            "56",
+            "57",
+            "57/A",
+            "58",
+            "59",
+            "60",
+            "60/A",
+            "61",
+            "62",
+            "63",
+            "64"
+          ]
+        },
+        {
+          "label": "Hiç soru çıkmamış",
+          "value": "md 52, md 53, md 54, md 55, md 56, md 57, md 57/A, md 58, md 59, md 60, md 60/A, md 61, md 62, md 63, md 64",
+          "refs": [
+            "52",
+            "53",
+            "54",
+            "55",
+            "56",
+            "57",
+            "57/A",
+            "58",
+            "59",
+            "60",
+            "60/A",
+            "61",
+            "62",
+            "63",
+            "64"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "52",
+        "53",
+        "54",
+        "55",
+        "56",
+        "57",
+        "57/A",
+        "58",
+        "59",
+        "60",
+        "60/A",
+        "61",
+        "62",
+        "63",
+        "64"
+      ],
+      "generated": true
+    },
+    {
+      "type": "bridge",
+      "title": "Bu üniteden soru çöz",
+      "articleRefs": [
+        "52",
+        "53",
+        "54",
+        "55",
+        "56",
+        "57",
+        "57/A",
+        "58",
+        "59",
+        "60",
+        "60/A",
+        "61",
+        "62",
+        "63",
+        "64"
+      ],
+      "generated": true,
+      "rows": [
+        {
+          "label": "Madde kapsamlı seans",
+          "value": "md 52–57, 57/A, 58–60, 60/A, 61–64, 0 soru",
+          "refs": [
+            "52",
+            "53",
+            "54",
+            "55",
+            "56",
+            "57",
+            "57/A",
+            "58",
+            "59",
+            "60",
+            "60/A",
+            "61",
+            "62",
+            "63",
+            "64"
+          ]
+        }
+      ]
+    }
+  ]
+}

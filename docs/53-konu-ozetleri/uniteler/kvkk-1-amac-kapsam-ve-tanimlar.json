@@ -1,0 +1,596 @@
+{
+  "unit": {
+    "slug": "kvkk-1-amac-kapsam-ve-tanimlar",
+    "legislationSlug": "6698-sayili-kisisel-verilerin-korunmasi-kanunu",
+    "topicId": "efcd80f1-04c1-42b1-90bc-2d6f22df40c2",
+    "title": "Kişisel verilerin işlenmesi ve ilgili kişinin hakları",
+    "subtitle": "Kişisel veri, işlenme ve aktarım şartları, yurt dışına aktarım, ilgili kişinin hakları, başvuru, şikâyet ve yaptırımlar",
+    "articleFrom": "1",
+    "articleTo": "18",
+    "readingMinutes": 16,
+    "sourceLabel": "AI özeti — 6698 Sayılı Kişisel Verilerin Korunması Kanunu, md 1–18",
+    "articleNos": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+      "15",
+      "16",
+      "17",
+      "18"
+    ],
+    "generatedBy": "claude-opus-5-5 (ozet-uret.ts)",
+    "sortOrder": 1
+  },
+  "blocks": [
+    {
+      "type": "concept",
+      "title": "Kanun kimi korur, kimi bağlar?",
+      "body": "Kanunun amacı iki unsurludur: kişisel veriler işlenirken başta **özel hayatın gizliliği** olmak üzere kişilerin **temel hak ve özgürlüklerini korumak** ve kişisel verileri işleyen gerçek ve tüzel kişilerin **yükümlülükleri ile uyacakları usul ve esasları düzenlemek**. Kanun iki tarafa uygulanır: kişisel verileri işlenen **gerçek kişiler** ve bu verileri işleyen **gerçek ve tüzel kişiler**. Kapsam için tek bir ayrıntıyı aklında tut: Tamamen veya kısmen otomatik işleme kapsamdadır. Otomatik olmayan yollarla işleme ise ancak **herhangi bir veri kayıt sisteminin parçası olmak kaydıyla** kapsama girer.",
+      "articleRefs": [
+        "1",
+        "2"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Tanımlar: anahtar kavramlar",
+      "body": "- **Kişisel veri:** Kimliği belirli veya belirlenebilir gerçek kişiye ilişkin her türlü bilgi.\n- **İlgili kişi:** Kişisel verisi işlenen gerçek kişi.\n- **Açık rıza:** Belirli bir konuya ilişkin, bilgilendirilmeye dayanan ve özgür iradeyle açıklanan rıza.\n- **Anonim hâle getirme:** Kişisel verilerin, başka verilerle eşleştirilerek dahi hiçbir surette kimliği belirli veya belirlenebilir bir gerçek kişiyle ilişkilendirilemeyecek hâle getirilmesi.\n- **Kişisel verilerin işlenmesi:** Kişisel verilerin tamamen veya kısmen otomatik olan ya da herhangi bir veri kayıt sisteminin parçası olmak kaydıyla otomatik olmayan yollarla elde edilmesi, kaydedilmesi, depolanması, muhafaza edilmesi, değiştirilmesi, yeniden düzenlenmesi, açıklanması, aktarılması, devralınması, elde edilebilir hâle getirilmesi, sınıflandırılması ya da kullanılmasının engellenmesi gibi veriler üzerinde gerçekleştirilen **her türlü işlem**.\n- **Veri kayıt sistemi:** Kişisel verilerin belirli kriterlere göre yapılandırılarak işlendiği kayıt sistemi.\n- **Kurum / Kurul / Başkan:** Kişisel Verileri Koruma Kurumu / Kişisel Verileri Koruma Kurulu / Kişisel Verileri Koruma Kurumu Başkanı.",
+      "articleRefs": [
+        "3"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Veri sorumlusu mu, veri işleyen mi?",
+      "body": "En çok karıştırılan çift bu. Ayırt etmenin anahtarı şu soru: **Amacı ve vasıtayı kim belirliyor?** Kişisel verilerin işleme amaçlarını ve vasıtalarını belirleyen, veri kayıt sisteminin kurulmasından ve yönetilmesinden sorumlu olan kişi **veri sorumlusudur**. Veri sorumlusunun verdiği yetkiye dayanarak **onun adına** veri işleyen kişi ise **veri işleyendir**. İkisi de gerçek veya tüzel kişi olabilir. Bu yüzden 'veri sorumlusu tüzel kişidir, veri işleyen gerçek kişidir' gibi kalıplara kanma. Veri başkası eliyle işlendiğinde veri sorumlusu güvenlik tedbirlerinden kurtulmaz; bu kişilerle birlikte **müştereken sorumludur**. Son olarak Kurum ile Kurul'u karıştırma: Yeterlilik kararını ve aktarım izinlerini **Kurul** verir, standart sözleşme ise **Kuruma** bildirilir.",
+      "articleRefs": [
+        "3",
+        "9",
+        "12"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Genel ilkeler",
+      "body": "Kişisel veriler **ancak** bu Kanunda ve diğer kanunlarda öngörülen usul ve esaslara uygun olarak işlenebilir. İşlemede aşağıdaki ilkelere uymak **zorunludur**:\n- a) Hukuka ve dürüstlük kurallarına uygun olma.\n- b) Doğru ve **gerektiğinde** güncel olma.\n- c) Belirli, açık ve meşru amaçlar için işlenme.\n- ç) İşlendikleri amaçla bağlantılı, sınırlı ve ölçülü olma.\n- d) İlgili mevzuatta öngörülen veya işlendikleri amaç için gerekli olan süre kadar muhafaza edilme.\n\n**Dikkat:** Metin 'her zaman güncel' demez, 'gerektiğinde güncel' der. Muhafaza süresi için de iki ölçü vardır: mevzuatta öngörülen süre ya da amaç için gerekli süre.",
+      "articleRefs": [
+        "4"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Kişisel verilerin işlenme şartları",
+      "body": "**Ana kural:** Kişisel veriler ilgili kişinin **açık rızası olmaksızın işlenemez**.\n\n**İstisna:** Aşağıdaki şartlardan **birinin** varlığı hâlinde açık rıza aranmaz:\n- a) Kanunlarda açıkça öngörülmesi.\n- b) Fiili imkânsızlık nedeniyle rızasını açıklayamayacak durumda bulunan veya rızasına hukuki geçerlilik tanınmayan kişinin kendisinin ya da bir başkasının hayatı veya beden bütünlüğünün korunması için zorunlu olması.\n- c) Bir sözleşmenin kurulması veya ifasıyla doğrudan doğruya ilgili olması kaydıyla, sözleşmenin taraflarına ait kişisel verilerin işlenmesinin gerekli olması.\n- ç) Veri sorumlusunun hukuki yükümlülüğünü yerine getirebilmesi için zorunlu olması.\n- d) İlgili kişinin kendisi tarafından alenileştirilmiş olması.\n- e) Bir hakkın tesisi, kullanılması veya korunması için veri işlemenin zorunlu olması.\n- f) İlgili kişinin temel hak ve özgürlüklerine zarar vermemek kaydıyla, veri sorumlusunun meşru menfaatleri için veri işlenmesinin zorunlu olması.",
+      "articleRefs": [
+        "5"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Özel nitelikli kişisel veriler",
+      "body": "**Hangileri?** Kişilerin ırkı, etnik kökeni, siyasi düşüncesi, felsefi inancı, dini, mezhebi veya diğer inançları, kılık ve kıyafeti, dernek, vakıf ya da sendika üyeliği, sağlığı, cinsel hayatı, ceza mahkûmiyeti ve güvenlik tedbirleriyle ilgili verileri ile **biyometrik ve genetik** veriler.\n\n**Ana kural:** İşlenmeleri **yasaktır**.\n\n**İstisnalar:** Aşağıdaki hâllerden birinde işlenebilir:\n- a) İlgili kişinin açık rızasının olması.\n- b) Kanunlarda açıkça öngörülmesi.\n- c) Fiili imkânsızlık nedeniyle rızasını açıklayamayacak durumda bulunan veya rızasına hukuki geçerlilik tanınmayan kişinin kendisinin ya da bir başkasının hayatı veya beden bütünlüğünün korunması için zorunlu olması.\n- ç) İlgili kişinin alenileştirdiği verilere ilişkin olması ve **alenileştirme iradesine uygun** olması.\n- d) Bir hakkın tesisi, kullanılması veya korunması için zorunlu olması.\n- e) Sır saklama yükümlülüğü altında bulunan kişiler veya yetkili kurum ve kuruluşlarca; kamu sağlığının korunması, koruyucu hekimlik, tıbbi teşhis, tedavi ve bakım hizmetlerinin yürütülmesi ile sağlık hizmetlerinin planlanması, yönetimi ve finansmanı amacıyla gerekli olması.\n- f) İstihdam, iş sağlığı ve güvenliği, sosyal güvenlik, sosyal hizmetler ve sosyal yardım alanlarındaki hukuki yükümlülüklerin yerine getirilmesi için zorunlu olması.\n- g) Siyasi, felsefi, dini veya sendikal amaçlarla kurulan vakıf, dernek ve diğer kâr amacı gütmeyen kuruluş ya da oluşumların; tâbi oldukları mevzuata ve amaçlarına uygun, faaliyet alanlarıyla sınırlı ve üçüncü kişilere açıklanmamak kaydıyla, mevcut veya eski üyelerine ve mensuplarına ya da bu kuruluşlarla düzenli olarak temasta olan kişilere yönelik olması.\n\n**Her durumda:** Kurul tarafından belirlenen **yeterli önlemlerin** ayrıca alınması şarttır.",
+      "articleRefs": [
+        "6"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Özel nitelikli veride gözden kaçanlar",
+      "body": "Listeyi ezberlerken en çok şunlar atlanır: **kılık ve kıyafet**, **dernek, vakıf ya da sendika üyeliği**, **ceza mahkûmiyeti ve güvenlik tedbirleri**, **biyometrik ve genetik** veriler. Bunların hepsi özel niteliklidir.\n\nBurada açık rıza ana kural değildir, istisnalardan yalnızca **biridir**. Ana kural **yasaktır**.\n\nAlenileştirmede ek bir kayıt vardır: Veri ilgili kişinin alenileştirdiği verilere ilişkin olmalı **ve** alenileştirme iradesine uygun olmalıdır.\n\n(e) bendindeki sağlık amaçlı işlemeyi herkes yapamaz. İşleyen, **sır saklama yükümlülüğü altındaki kişiler veya yetkili kurum ve kuruluşlar** olmalıdır.\n\nHangi istisnaya dayanırsan dayan, Kurulun belirlediği **yeterli önlemler** ayrıca şarttır.",
+      "articleRefs": [
+        "6"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Silme, yok etme, anonim hâle getirme",
+      "body": "Veriler bu Kanuna ve ilgili diğer kanunlara uygun işlenmiş olsa bile, **işlenmesini gerektiren sebepler ortadan kalkınca** silinir, yok edilir veya anonim hâle getirilir.\n- **Nasıl başlar?** Resen ya da ilgili kişinin talebi üzerine.\n- **Kim yapar?** Veri sorumlusu.\n- Bu konuda diğer kanunlarda yer alan hükümler **saklıdır**.\n- Usul ve esaslar **yönetmelikle** düzenlenir.",
+      "articleRefs": [
+        "7"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Kişisel verilerin aktarılması",
+      "body": "**Ana kural:** Kişisel veriler, ilgili kişinin **açık rızası olmaksızın aktarılamaz**.\n\n**İstisna:** Aşağıdaki hâllerde açık rıza aranmaksızın aktarılabilir:\n- md 5'in ikinci fıkrasındaki şartlardan birinin bulunması,\n- **yeterli önlemler alınmak kaydıyla**, md 6'nın üçüncü fıkrasındaki şartlardan birinin bulunması.\n\nKişisel verilerin aktarılmasına ilişkin diğer kanunlardaki hükümler **saklıdır**.",
+      "articleRefs": [
+        "8",
+        "5",
+        "6"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Yurt dışına aktarım: yeterlilik kararı",
+      "body": "**Birinci yol: yeterlilik kararı.** Kişisel veriler iki şart birlikte bulunduğunda yurt dışına aktarılabilir: md 5 ve md 6'daki şartlardan birinin varlığı **ve** aktarımın yapılacağı ülke, ülke içerisindeki sektörler veya uluslararası kuruluşlar hakkında yeterlilik kararı bulunması. Aktarımı **veri sorumluları ve veri işleyenler** yapabilir.\n- Kararı **Kurul** verir ve karar **Resmî Gazete'de** yayımlanır. Kurul ihtiyaç duyarsa ilgili kurum ve kuruluşların görüşünü alır.\n- Karar **en geç dört yılda bir** değerlendirilir.\n- Kurul, değerlendirme sonucunda veya gerekli gördüğü diğer hâllerde kararı **ileriye etkili olmak üzere** değiştirebilir, askıya alabilir veya kaldırabilir.\n\n**Öncelikle dikkate alınan hususlar:**\n- Türkiye ile karşılıklılık durumu.\n- Ülkenin ilgili mevzuatı ve uygulaması ile uluslararası kuruluşun tâbi olduğu kurallar.\n- Bağımsız ve etkin bir veri koruma kurumunun varlığı ile idari ve adli başvuru yollarının bulunması.\n- Kişisel verilerin korunmasıyla ilgili uluslararası sözleşmelere taraf olma veya uluslararası kuruluşlara üye olma durumu.\n- Türkiye'nin üye olduğu küresel veya bölgesel kuruluşlara üyelik.\n- Türkiye'nin taraf olduğu uluslararası sözleşmeler.",
+      "articleRefs": [
+        "9"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Yeterlilik kararı yoksa: uygun güvenceler ve arızi aktarım",
+      "body": "**İkinci yol: uygun güvenceler.** Yeterlilik kararı yoksa aktarım için üç şart birlikte aranır: md 5 veya md 6 şartlarından birinin varlığı, ilgili kişinin aktarımın yapılacağı ülkede de **haklarını kullanma ve etkili kanun yollarına başvurma imkânı** ve taraflarca aşağıdaki güvencelerden birinin sağlanması:\n- a) Yurt dışındaki kamu kurum ve kuruluşları veya uluslararası kuruluşlar ile Türkiye'deki kamu kurum ve kuruluşları veya kamu kurumu niteliğindeki meslek kuruluşları arasında, uluslararası sözleşme niteliğinde olmayan bir anlaşma **ve Kurul izni**.\n- b) Ortak ekonomik faaliyette bulunan teşebbüs grubu şirketleri için **Kurul tarafından onaylanan** bağlayıcı şirket kuralları.\n- c) **Kurul tarafından ilan edilen** standart sözleşme. Bu sözleşme imzalanmasından itibaren **beş iş günü** içinde veri sorumlusu veya veri işleyen tarafından **Kuruma bildirilir**.\n- ç) Yeterli korumayı sağlayacak hükümler içeren yazılı bir taahhütname **ve Kurul izni**.\n\n**Üçüncü yol: arızi aktarım.** Ne yeterlilik kararı ne de uygun güvence varsa, **arızi olmak kaydıyla** yalnızca şu hâllerde aktarım yapılabilir:\n- a) Muhtemel riskler hakkında bilgilendirilen ilgili kişinin aktarıma açık rıza vermesi.\n- b) İlgili kişi ile veri sorumlusu arasındaki bir sözleşmenin ifası veya ilgili kişinin talebiyle alınan sözleşme öncesi tedbirler için zorunlu olması.\n- c) İlgili kişi yararına, veri sorumlusu ile başka bir gerçek veya tüzel kişi arasında yapılacak sözleşmenin kurulması veya ifası için zorunlu olması.\n- ç) Üstün bir kamu yararı için zorunlu olması.\n- d) Bir hakkın tesisi, kullanılması veya korunması için zorunlu olması.\n- e) Fiili imkânsızlık nedeniyle rızasını açıklayamayan veya rızasına hukuki geçerlilik tanınmayan kişinin kendisinin ya da bir başkasının hayatı veya beden bütünlüğünün korunması için zorunlu olması.\n- f) Kamuya veya meşru menfaati bulunan kişilere açık bir sicilden aktarım. Bunun için sicile erişim şartlarının sağlanması ve meşru menfaati olan kişinin talep etmesi gerekir.\n\nArızi aktarımın (a), (b) ve (c) bentleri, kamu kurum ve kuruluşlarının **kamu hukukuna tâbi faaliyetlerine uygulanmaz**.",
+      "articleRefs": [
+        "9"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Yurt dışı aktarımda karıştırılanlar",
+      "body": "**Sıra önemli:** yeterlilik kararı → uygun güvenceler → arızi aktarım. Arızi hâllere ancak ilk iki yol da yoksa başvurulur.\n\n**İzin, onay ve bildirimi karıştırma:**\n- Kamu kuruluşları arasındaki anlaşmada ve yazılı taahhütnamede **Kurul izni** aranır.\n- Bağlayıcı şirket kurallarında **Kurul onayı** aranır.\n- Standart sözleşme için metin Kurul izni öngörmez. Sözleşme Kurulca ilan edilir ve imzadan sonra **Kuruma bildirilir**.\n\n**Kim aktarabilir?** Yurt dışına aktarımı yalnız veri sorumlusu değil, **veri işleyen de** yapabilir.\n\n**Kararda değişiklik:** Yeterlilik kararındaki değişiklik, askıya alma ve kaldırma **ileriye etkilidir**.\n\n**Ciddi zarar hâli:** Türkiye'nin veya ilgili kişinin menfaatinin ciddi şekilde zarar göreceği durumlarda aktarım, uluslararası sözleşme hükümleri saklı kalmak üzere, ancak **ilgili kamu kurum veya kuruluşunun görüşü alınarak Kurulun izniyle** yapılabilir.\n\n**Sonraki aktarımlar:** Yurt dışına aktarılan verilerin sonraki aktarımlarında ve uluslararası kuruluşlara aktarımlarda da Kanundaki güvenceler sağlanır ve md 9 uygulanır.",
+      "articleRefs": [
+        "9"
+      ]
+    },
+    {
+      "type": "numbers",
+      "title": "Yurt dışına aktarımda sayılar",
+      "rows": [
+        {
+          "label": "Yeterlilik kararının değerlendirilmesi",
+          "value": "En geç 4 yılda bir",
+          "refs": [
+            "9"
+          ]
+        },
+        {
+          "label": "Standart sözleşmenin Kuruma bildirimi",
+          "value": "İmzadan itibaren 5 iş günü içinde",
+          "refs": [
+            "9"
+          ]
+        },
+        {
+          "label": "Yeterlilik kararında öncelikle dikkate alınan husus",
+          "value": "6",
+          "refs": [
+            "9"
+          ]
+        },
+        {
+          "label": "Uygun güvence türü",
+          "value": "4",
+          "refs": [
+            "9"
+          ]
+        },
+        {
+          "label": "Arızi aktarım hâli",
+          "value": "7",
+          "refs": [
+            "9"
+          ]
+        }
+      ],
+      "derivedNumbers": [
+        {
+          "value": 6,
+          "expr": "count(md 9/3 bentleri: a, b, c, ç, d, e)",
+          "refs": [
+            "9"
+          ]
+        },
+        {
+          "value": 4,
+          "expr": "count(md 9/4 bentleri: a, b, c, ç)",
+          "refs": [
+            "9"
+          ]
+        },
+        {
+          "value": 7,
+          "expr": "count(md 9/6 bentleri: a, b, c, ç, d, e, f)",
+          "refs": [
+            "9"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "9"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Aydınlatma yükümlülüğü ve ilgili kişinin hakları",
+      "body": "**Aydınlatma yükümlülüğü:** Veri sorumlusu veya yetkilendirdiği kişi, kişisel verilerin **elde edilmesi sırasında** ilgili kişilere şu konularda bilgi vermekle yükümlüdür:\n- a) Veri sorumlusunun ve varsa temsilcisinin kimliği.\n- b) Kişisel verilerin hangi amaçla işleneceği.\n- c) İşlenen verilerin kimlere ve hangi amaçla aktarılabileceği.\n- ç) Veri toplamanın yöntemi ve hukuki sebebi.\n- d) md 11'de sayılan diğer hakları.\n\n**Haklar:** Herkes veri sorumlusuna başvurarak kendisiyle ilgili şu haklara sahiptir:\n- Kişisel veri işlenip işlenmediğini öğrenme.\n- Verileri işlenmişse buna ilişkin bilgi talep etme.\n- İşlenme amacını ve verilerin amacına uygun kullanılıp kullanılmadığını öğrenme.\n- Yurt içinde veya yurt dışında verilerin aktarıldığı üçüncü kişileri bilme.\n- Eksik veya yanlış işlenmişse düzeltilmesini isteme.\n- md 7 çerçevesinde silinmesini veya yok edilmesini isteme.\n- Düzeltme ile silme veya yok etme işlemlerinin, verilerin aktarıldığı üçüncü kişilere bildirilmesini isteme.\n- Münhasıran otomatik sistemlerle yapılan analiz sonucunda kendisi aleyhine çıkan sonuca itiraz etme.\n- Kanuna aykırı işleme sebebiyle zarara uğramışsa zararın giderilmesini talep etme.\n\n**Dikkat:** Aydınlatma, veriler **elde edilirken** yapılır. Haklar ise **veri sorumlusuna başvurarak** kullanılır.",
+      "articleRefs": [
+        "10",
+        "11"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Veri güvenliğine ilişkin yükümlülükler",
+      "body": "Veri sorumlusu, uygun güvenlik düzeyini sağlamak için **gerekli her türlü teknik ve idari tedbiri** almak zorundadır. Bu tedbirlerin amacı:\n- Kişisel verilerin hukuka aykırı olarak işlenmesini önlemek.\n- Kişisel verilere hukuka aykırı olarak erişilmesini önlemek.\n- Kişisel verilerin muhafazasını sağlamak.\n\n**Diğer yükümlülükler:**\n- Veriler kendi adına başka bir gerçek veya tüzel kişi tarafından işleniyorsa, veri sorumlusu bu tedbirler bakımından o kişilerle **müştereken sorumludur**.\n- Veri sorumlusu, kendi kurum veya kuruluşunda Kanunun uygulanması için gerekli denetimleri **yapmak veya yaptırmak** zorundadır.\n- Veri sorumluları ile veri işleyenler, öğrendikleri verileri Kanuna aykırı olarak başkasına açıklayamaz ve işleme amacı dışında kullanamaz. Bu yükümlülük **görevden ayrıldıktan sonra da** devam eder.\n- Veriler kanuni olmayan yollarla başkalarınca elde edilirse veri sorumlusu durumu **en kısa sürede ilgilisine ve Kurula** bildirir. Kurul gerekirse bu durumu kendi internet sitesinde ya da uygun göreceği başka bir yöntemle ilan edebilir.",
+      "articleRefs": [
+        "12"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Önce veri sorumlusuna başvuru, sonra Kurula şikâyet",
+      "body": "**Başvuru:** İlgili kişi taleplerini **yazılı olarak** veya Kurulun belirleyeceği diğer yöntemlerle veri sorumlusuna iletir.\n- Veri sorumlusu talebi, niteliğine göre en kısa sürede ve **en geç otuz gün** içinde **ücretsiz** olarak sonuçlandırır. İşlem ayrıca bir maliyet gerektiriyorsa **Kurulca belirlenen tarifedeki ücret** alınabilir.\n- Veri sorumlusu talebi kabul eder ya da **gerekçesini açıklayarak** reddeder. Cevabını ilgili kişiye yazılı olarak veya elektronik ortamda bildirir. Talep kabul edilirse gereğini yerine getirir.\n- Başvuru veri sorumlusunun hatasından kaynaklanıyorsa alınan ücret ilgiliye **iade edilir**.\n\n**Şikâyet:** Şikâyet yolu üç durumda açılır: başvurunun reddedilmesi, verilen cevabın yetersiz bulunması veya başvuruya süresinde cevap verilmemesi. Bu durumlarda ilgili kişi, veri sorumlusunun cevabını öğrendiği tarihten itibaren **otuz** ve her hâlde başvuru tarihinden itibaren **altmış gün** içinde Kurula şikâyette bulunabilir.\n- md 13'teki başvuru yolu **tüketilmeden** şikâyet yoluna başvurulamaz.\n- Kişilik hakları ihlal edilenlerin genel hükümlere göre **tazminat hakkı saklıdır**.",
+      "articleRefs": [
+        "13",
+        "14"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Kurulun incelemesi",
+      "body": "- Kurul, **şikâyet üzerine** veya ihlal iddiasını öğrenmesi durumunda **resen**, görev alanına giren konularda gerekli incelemeyi yapar.\n- Dilekçe Hakkının Kullanılmasına Dair Kanunun 6 ncı maddesindeki şartları taşımayan ihbar veya şikâyetler **incelemeye alınmaz**.\n- Veri sorumlusu, Kurulun istediği bilgi ve belgeleri **on beş gün** içinde göndermek ve gerektiğinde **yerinde inceleme** yapılmasına imkân sağlamak zorundadır. Bunun tek istisnası **Devlet sırrı** niteliğindeki bilgi ve belgelerdir.\n- Kurul şikâyeti inceleyerek ilgililere cevap verir. Şikâyet tarihinden itibaren **altmış gün** içinde cevap verilmezse talep **reddedilmiş sayılır**.\n- İhlal anlaşılırsa Kurul, hukuka aykırılıkların veri sorumlusunca giderilmesine karar verir ve kararı ilgililere tebliğ eder. Karar tebliğden itibaren gecikmeksizin ve **en geç otuz gün** içinde yerine getirilir.\n- İhlal **yaygınsa** Kurul **ilke kararı** alır ve yayımlar. Bu karardan önce, ihtiyaç duyarsa ilgili kurum ve kuruluşların görüşlerini alabilir.\n- **Telafisi güç veya imkânsız zararların** doğması **ve açıkça hukuka aykırılık** olması hâlinde Kurul, veri işlenmesinin veya verinin yurt dışına aktarılmasının **durdurulmasına** karar verebilir.",
+      "articleRefs": [
+        "15"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Süreleri ve sırayı karıştırma",
+      "body": "**Otuz gün** birden fazla yerde karşına çıkar:\n- veri sorumlusunun başvuruyu sonuçlandırma süresi (en geç),\n- ilgili kişinin cevabı öğrendikten sonraki şikâyet süresi,\n- Kurul kararının tebliğden sonra yerine getirilme süresi (en geç).\nSoruda hangisinin sorulduğuna bak.\n\n**Altmış gün** de karışır:\n- başvuru tarihinden itibaren şikâyet için 'her hâlde' son sınırdır,\n- Kurulun şikâyete cevap verme süresidir.\n\nKurul altmış gün içinde cevap vermezse talep **reddedilmiş** sayılır, **kabul edilmiş** sayılmaz.\n\n**On beş gün**, veri sorumlusunun Kurula bilgi ve belge gönderme süresidir. Bunu başvuru süresiyle karıştırma.\n\nBaşvuru yolu tüketilmeden Kurula **şikâyette** bulunulamaz: **başvuru** veri sorumlusuna, **şikâyet** Kurula yapılır. Kurulun ihlal iddiasını öğrenip **resen** inceleme yapması ise ayrı bir yoldur.\n\nBaşvuru kural olarak **ücretsizdir**. Ücret ancak işlem ayrıca maliyet gerektirirse ve Kurulun tarifesine göre alınır.",
+      "articleRefs": [
+        "13",
+        "14",
+        "15"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Veri Sorumluları Sicili",
+      "body": "- Sicil, **Kurulun gözetiminde**, **Başkanlık** tarafından **kamuya açık** olarak tutulur.\n- Kişisel verileri işleyen gerçek ve tüzel kişiler, **veri işlemeye başlamadan önce** sicile kaydolmak zorundadır.\n- **İstisna:** Kurul, kendi belirleyeceği objektif kriterleri göz önüne alarak kayıt zorunluluğuna istisna getirebilir. Bu kriterler arasında işlenen verinin niteliği, sayısı, veri işlemenin kanundan kaynaklanması veya üçüncü kişilere aktarılma durumu sayılır.\n- Kayıt başvurusu bir **bildirimle** yapılır. Bildirimde şunlar yer alır:\n  - Veri sorumlusu ve varsa temsilcisinin kimlik ve adres bilgileri.\n  - Verilerin hangi amaçla işleneceği.\n  - Veri konusu kişi grupları ile bu kişilere ait veri kategorileri.\n  - Verilerin aktarılabileceği alıcı veya alıcı grupları.\n  - Yabancı ülkelere aktarımı öngörülen veriler.\n  - Veri güvenliğine ilişkin alınan tedbirler.\n  - İşlendikleri amaç için gerekli olan **azami süre**.\n- Bu bilgilerdeki değişiklikler **derhâl Başkanlığa** bildirilir.\n- Diğer usul ve esaslar yönetmelikle düzenlenir.",
+      "articleRefs": [
+        "16"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Suçlar ve kabahatler",
+      "body": "**Suçlar:** Kişisel verilere ilişkin suçlarda 5237 sayılı Türk Ceza Kanununun 135 ila 140 ıncı madde hükümleri uygulanır. md 7'ye aykırı olarak kişisel verileri **silmeyen veya anonim hâle getirmeyenler**, 5237 sayılı Kanunun 138 inci maddesine göre cezalandırılır.\n\n**Kabahatler:** Aşağıdaki hâllerde **alt ve üst sınırı kanunda gösterilen idari para cezası** verilir:\n- a) md 10'daki aydınlatma yükümlülüğünü yerine getirmemek.\n- b) md 12'deki veri güvenliği yükümlülüklerini yerine getirmemek.\n- c) md 15 uyarınca verilen Kurul kararlarını yerine getirmemek.\n- ç) md 16'daki sicile kayıt ve bildirim yükümlülüğüne aykırı hareket etmek.\n- d) md 9'un beşinci fıkrasındaki standart sözleşme bildirim yükümlülüğünü yerine getirmemek.\n\n**Kime uygulanır?** İdari para cezaları **gerçek kişiler ile özel hukuk tüzel kişileri** hakkında uygulanır:\n- (a), (b), (c) ve (ç) bentleri: veri sorumlusu.\n- (d) bendi: veri sorumlusu veya veri işleyen.\n\n**Yargı yolu:** Kurulca verilen idari para cezalarına karşı **idare mahkemelerinde** dava açılabilir.\n\n**Kamu kesimi:** Burada idari para cezası değil, disiplin yolu işler. Bu eylemler kamu kurum ve kuruluşları ile kamu kurumu niteliğindeki meslek kuruluşları bünyesinde işlenirse, Kurulun bildirimi üzerine görevliler hakkında **disiplin hükümlerine** göre işlem yapılır ve sonuç Kurula bildirilir.",
+      "articleRefs": [
+        "17",
+        "18",
+        "9"
+      ]
+    },
+    {
+      "type": "numbers",
+      "title": "Başvuru, şikâyet ve sicil süreleri",
+      "rows": [
+        {
+          "label": "Hukuka aykırı elde edilmenin ilgiliye ve Kurula bildirimi",
+          "value": "En kısa sürede",
+          "refs": [
+            "12"
+          ]
+        },
+        {
+          "label": "Başvurunun veri sorumlusunca sonuçlandırılması",
+          "value": "En geç 30 gün, kural olarak ücretsiz",
+          "refs": [
+            "13"
+          ]
+        },
+        {
+          "label": "Kurula şikâyet (cevabı öğrenme tarihinden)",
+          "value": "30 gün",
+          "refs": [
+            "14"
+          ]
+        },
+        {
+          "label": "Kurula şikâyet (her hâlde, başvuru tarihinden)",
+          "value": "60 gün",
+          "refs": [
+            "14"
+          ]
+        },
+        {
+          "label": "Kurula bilgi ve belge gönderme",
+          "value": "15 gün",
+          "refs": [
+            "15"
+          ]
+        },
+        {
+          "label": "Kurulun şikâyete cevabı",
+          "value": "60 gün; cevap yoksa ret sayılır",
+          "refs": [
+            "15"
+          ]
+        },
+        {
+          "label": "Kurul kararının yerine getirilmesi",
+          "value": "Tebliğden itibaren en geç 30 gün",
+          "refs": [
+            "15"
+          ]
+        },
+        {
+          "label": "Sicile kayıt",
+          "value": "Veri işlemeye başlamadan önce",
+          "refs": [
+            "16"
+          ]
+        },
+        {
+          "label": "Sicil bilgilerindeki değişikliğin bildirimi",
+          "value": "Derhâl, Başkanlığa",
+          "refs": [
+            "16"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "12",
+        "13",
+        "14",
+        "15",
+        "16"
+      ]
+    },
+    {
+      "type": "compare",
+      "title": "Kişisel veri ile özel nitelikli kişisel veri",
+      "rows": [
+        {
+          "aspect": "Ana kural",
+          "left": "Kişisel veri: Açık rıza olmaksızın işlenemez",
+          "right": "Özel nitelikli veri: İşlenmesi yasaktır",
+          "refs": [
+            "5",
+            "6"
+          ]
+        },
+        {
+          "aspect": "Açık rızanın yeri",
+          "left": "Ana kuraldır; istisnalarda açık rıza aranmaz",
+          "right": "İstisnalardan biridir",
+          "refs": [
+            "5",
+            "6"
+          ]
+        },
+        {
+          "aspect": "Kanunlarda açıkça öngörülme",
+          "left": "İstisna",
+          "right": "İstisna",
+          "refs": [
+            "5",
+            "6"
+          ]
+        },
+        {
+          "aspect": "Fiili imkânsızlık, hayat veya beden bütünlüğü",
+          "left": "İstisna",
+          "right": "İstisna",
+          "refs": [
+            "5",
+            "6"
+          ]
+        },
+        {
+          "aspect": "Alenileştirme",
+          "left": "İlgili kişinin kendisi tarafından alenileştirilmiş olması",
+          "right": "Alenileştirilen verilere ilişkin ve alenileştirme iradesine uygun olması",
+          "refs": [
+            "5",
+            "6"
+          ]
+        },
+        {
+          "aspect": "Bir hakkın tesisi, kullanılması veya korunması",
+          "left": "İstisna",
+          "right": "İstisna",
+          "refs": [
+            "5",
+            "6"
+          ]
+        },
+        {
+          "aspect": "Sözleşmenin kurulması veya ifası",
+          "left": "İstisna (sözleşme taraflarının verileri)",
+          "right": "Sayılmamış",
+          "refs": [
+            "5",
+            "6"
+          ]
+        },
+        {
+          "aspect": "Hukuki yükümlülük",
+          "left": "Veri sorumlusunun hukuki yükümlülüğü",
+          "right": "İstihdam, iş sağlığı ve güvenliği, sosyal güvenlik, sosyal hizmetler ve sosyal yardım alanlarındaki hukuki yükümlülükler",
+          "refs": [
+            "5",
+            "6"
+          ]
+        },
+        {
+          "aspect": "Meşru menfaat",
+          "left": "İstisna (temel hak ve özgürlüklere zarar vermemek kaydıyla)",
+          "right": "Sayılmamış",
+          "refs": [
+            "5",
+            "6"
+          ]
+        },
+        {
+          "aspect": "Sağlık amaçlı işleme",
+          "left": "Ayrı bent yok",
+          "right": "Sır saklama yükümlülüğü altındakiler veya yetkili kurum ve kuruluşlarca",
+          "refs": [
+            "5",
+            "6"
+          ]
+        },
+        {
+          "aspect": "Kâr amacı gütmeyen kuruluşlar",
+          "left": "Ayrı bent yok",
+          "right": "Siyasi, felsefi, dini veya sendikal amaçlı kuruluşların üye, mensup ve düzenli temastaki kişilerine yönelik; şartlı",
+          "refs": [
+            "5",
+            "6"
+          ]
+        },
+        {
+          "aspect": "Ek şart",
+          "left": "Bu maddede ek önlem şartı yok",
+          "right": "Kurulca belirlenen yeterli önlemler",
+          "refs": [
+            "5",
+            "6"
+          ]
+        },
+        {
+          "aspect": "Açık rıza olmadan aktarım",
+          "left": "md 5/2 şartlarından biri",
+          "right": "Yeterli önlemler alınmak kaydıyla md 6/3 şartlarından biri",
+          "refs": [
+            "8"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "5",
+        "6",
+        "8"
+      ]
+    },
+    {
+      "type": "exam_stats",
+      "title": "Sınav der ki",
+      "rows": [
+        {
+          "label": "Bu ünitenin maddelerinden yayındaki soru",
+          "value": "0",
+          "refs": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18"
+          ]
+        },
+        {
+          "label": "Hiç soru çıkmamış",
+          "value": "md 1, md 2, md 3, md 4, md 5, md 6, md 7, md 8, md 9, md 10, md 11, md 12, md 13, md 14, md 15, md 16, md 17, md 18",
+          "refs": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17",
+        "18"
+      ],
+      "generated": true
+    },
+    {
+      "type": "bridge",
+      "title": "Bu üniteden soru çöz",
+      "articleRefs": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17",
+        "18"
+      ],
+      "generated": true,
+      "rows": [
+        {
+          "label": "Madde kapsamlı seans",
+          "value": "md 1–18, 0 soru",
+          "refs": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18"
+          ]
+        }
+      ]
+    }
+  ]
+}

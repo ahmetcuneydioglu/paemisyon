@@ -1,0 +1,585 @@
+{
+  "unit": {
+    "slug": "aymk-3-bireysel-basvuru",
+    "legislationSlug": "6216-anayasa-mahkemesinin-kurulusu-ve-yargilama-usulleri-hakkinda-kanun",
+    "topicId": "746633d6-5e90-404b-b0ea-ebcd670b4dc8",
+    "title": "Bireysel başvuru ve parti kapatma davaları",
+    "subtitle": "Başvuru şartları ve süreler, parti kapatma ve ihtar, iptal talebi, mali denetim, Yüce Divan, ret ve çekinme, karar nisabı",
+    "articleFrom": "45",
+    "articleTo": "67",
+    "readingMinutes": 13,
+    "sourceLabel": "AI özeti — 6216 Anayasa Mahkemesinin Kuruluşu ve Yargılama Usulleri Hakkında Kanun, md 45–67",
+    "articleNos": [
+      "45",
+      "46",
+      "47",
+      "48",
+      "49",
+      "50",
+      "51",
+      "52",
+      "53",
+      "54",
+      "55",
+      "56",
+      "57",
+      "58",
+      "59",
+      "60",
+      "61",
+      "62",
+      "63",
+      "64",
+      "65",
+      "66",
+      "67"
+    ],
+    "generatedBy": "claude-opus-5-5 (ozet-uret.ts)",
+    "sortOrder": 3
+  },
+  "blocks": [
+    {
+      "type": "concept",
+      "title": "Bireysel başvuru: kamu gücüne karşı kişisel yol",
+      "body": "Anayasada güvence altına alınmış temel hak ve özgürlüklerinden biri, Avrupa İnsan Hakları Sözleşmesi ve Türkiye'nin taraf olduğu ek protokoller kapsamında kalıyor ve kamu gücü tarafından ihlal edildiyse Anayasa Mahkemesine bireysel başvuru yapabilirsin. Kapı \"herkes\" için açıktır. Ancak içeri girebilmen için ihlale yol açtığı ileri sürülen işlem, eylem ya da ihmal nedeniyle güncel ve kişisel bir hakkının doğrudan etkilenmiş olması gerekir. Üç anahtarı aklında tut: kamu gücü, Anayasa ile Sözleşmenin ortak alanı ve doğrudan etkilenme.",
+      "articleRefs": [
+        "45",
+        "46"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Başvurunun ön şartları ve konusu olamayanlar",
+      "body": "**Başvuru yollarının tüketilmesi:** İhlale neden olduğu ileri sürülen işlem, eylem ya da ihmal için kanunda öngörülmüş **idari ve yargısal başvuru yollarının tamamı**, bireysel başvurudan önce tüketilmiş olmalıdır.\n\n**Doğrudan bireysel başvuru yapılamaz:**\n- Yasama işlemleri aleyhine\n- Düzenleyici idari işlemler aleyhine\n\n**Bireysel başvurunun konusu olamaz:**\n- Anayasa Mahkemesi kararları\n- Anayasanın yargı denetimi dışında bıraktığı işlemler",
+      "articleRefs": [
+        "45"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Kimler başvurabilir?",
+      "body": "**Genel şart:** Başvuruyu yalnızca ihlale yol açtığı ileri sürülen işlem, eylem ya da ihmal nedeniyle **güncel ve kişisel bir hakkı doğrudan etkilenenler** yapabilir.\n\n**Tüzel kişiler:**\n- Kamu tüzel kişileri bireysel başvuru **yapamaz**.\n- Özel hukuk tüzel kişileri **sadece tüzel kişiliğe ait haklarının** ihlal edildiği gerekçesiyle başvurabilir.\n\n**Yabancılar:** Yalnızca Türk vatandaşlarına tanınan haklarla ilgili olarak bireysel başvuru yapamaz.",
+      "articleRefs": [
+        "46"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Tüzel kişi ve yabancı ayrımına dikkat",
+      "body": "Kamu tüzel kişisi ile özel hukuk tüzel kişisini aynı kefeye koyma. Kamu tüzel kişisinin bireysel başvuru hakkı hiç yoktur. Özel hukuk tüzel kişisi ise başvurabilir, ama yalnızca tüzel kişiliğe ait hakları için. Yabancılar için de mutlak bir yasak yok: md 45 \"herkes\" der. Yasak, yalnızca Türk vatandaşlarına tanınan haklarla sınırlıdır. Şıkta \"yabancılar bireysel başvuru yapamaz\" diye genelleme görürsen dur ve tekrar oku.",
+      "articleRefs": [
+        "45",
+        "46"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Başvuru usulü ve dilekçenin içeriği",
+      "body": "**Nasıl yapılır:** Kanunda ve İçtüzükte belirtilen şartlara uygun olarak **doğrudan** ya da **mahkemeler veya yurt dışı temsilcilikler vasıtasıyla** yapılır. Diğer yollarla kabulün usul ve esasları İçtüzükle düzenlenir.\n\n**Harç:** Bireysel başvurular **harca tabidir**.\n\n**Dilekçede belirtilmesi gerekenler:**\n- Başvurucunun ve varsa temsilcisinin kimlik ve adres bilgileri\n- İhlal edildiği ileri sürülen hak ve özgürlük ile dayanılan Anayasa hükümleri\n- İhlal gerekçeleri\n- Başvuru yollarının tüketilmesine ilişkin aşamalar\n- Başvuru yollarının tüketildiği tarih; başvuru yolu öngörülmemişse ihlalin öğrenildiği tarih\n- Varsa uğranılan zarar\n\n**Eklenmesi şart olanlar:** Dayanılan deliller, ihlale neden olduğu ileri sürülen işlem veya kararların aslı ya da örneği ve harcın ödendiğine dair belge.\n\n**Avukatla temsil:** Vekâletname sunulmalıdır.",
+      "articleRefs": [
+        "47"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Başvuru süresi, mazeret ve eksiklik",
+      "body": "**Süre:** Başvuru, başvuru yollarının tüketildiği tarihten itibaren **otuz gün** içinde yapılır. Başvuru yolu öngörülmemişse bu süre ihlalin öğrenildiği tarihten itibaren işler.\n\n**Haklı mazeret:** Süresi içinde başvuramayan kişi, mazeretin kalktığı tarihten itibaren **onbeş gün** içinde ve mazeretini belgeleyen delillerle birlikte başvurabilir. Mahkeme önce mazeretin geçerli olup olmadığını inceler ve talebi kabul veya reddeder.\n\n**Evrakta eksiklik:** Mahkeme yazı işleri, başvurucuya veya varsa vekiline **onbeş günü geçmemek üzere** süre verir. Bu süre verilirken, geçerli mazeret olmaksızın eksiklik tamamlanmazsa başvurunun reddine karar verileceği de bildirilir.",
+      "articleRefs": [
+        "47"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Kabul edilebilirlik incelemesi",
+      "body": "**Şart:** Kabul edilebilirlik kararı verilebilmesi için md 45–47'deki şartların taşınması gerekir.\n\n**Kabul edilemezlik kararı verilebilecek başvurular:**\n- Anayasanın uygulanması ve yorumlanması veya temel hakların kapsamının ve sınırlarının belirlenmesi açısından **önem taşımayan** ve başvurucunun **önemli bir zarara uğramadığı** başvurular\n- **Açıkça dayanaktan yoksun** başvurular\n\n**İncelemeyi kim yapar:** Kabul edilebilirlik incelemesini **komisyonlar** yapar.\n- Şartların taşınmadığına **oy birliği** ile karar verilirse kabul edilemezlik kararı verilir.\n- Oy birliği sağlanamazsa dosya **bölümlere** havale edilir.\n\n**Kabul edilemezlik kararları:** Kesindir ve ilgililere tebliğ edilir.",
+      "articleRefs": [
+        "48"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Esas inceleme ve tedbir",
+      "body": "**Esas incelemeyi kim yapar:** Kabul edilebilirliğine karar verilen başvuruların esas incelemesini **bölümler** yapar. İş yükünün bölümler arasında dengeli dağıtılması için gerekli önlemleri Başkan alır.\n\n**Adalet Bakanlığı:** Başvurunun kabul edilebilirliğine karar verilirse bir örneği bilgi için Adalet Bakanlığına gönderilir. Bakanlık, gerekli gördüğü hâllerde görüşünü Mahkemeye yazılı olarak bildirir.\n\n**İnceleme yöntemi:** Komisyonlar ve bölümler her türlü araştırma ve incelemeyi yapabilir. İnceleme **dosya üzerinden** yapılır; gerekli görülürse duruşma yapılmasına da karar verilebilir.\n\n**Tedbir:** Bölümler, esas inceleme aşamasında resen veya başvurucunun talebi üzerine tedbire karar verebilir. Bu durumda esas hakkındaki karar **en geç altı ay** içinde verilmelidir. Aksi takdirde tedbir kararı **kendiliğinden kalkar**.\n\n**Mahkeme kararına karşı başvurularda sınır:** İnceleme, bir temel hakkın ihlal edilip edilmediği ve ihlalin nasıl ortadan kaldırılacağıyla sınırlıdır. Kanun yolunda gözetilmesi gereken hususlarda inceleme yapılamaz.\n\n**Boşluk hâli:** Kanunda ve İçtüzükte hüküm yoksa, ilgili usul kanunlarının bireysel başvurunun niteliğine uygun hükümleri uygulanır.",
+      "articleRefs": [
+        "49"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Kararlar ve başvuru hakkının kötüye kullanılması",
+      "body": "**Karar:** Esas inceleme sonunda hakkın ihlal edildiğine ya da edilmediğine karar verilir. İhlal kararında, ihlalin ve sonuçlarının ortadan kaldırılması için yapılması gerekenlere hükmedilir. Ancak **yerindelik denetimi yapılamaz** ve **idari eylem ve işlem niteliğinde karar verilemez**.\n\n**İhlal bir mahkeme kararından kaynaklanmışsa:**\n- Dosya, yeniden yargılama yapılmak üzere ilgili mahkemeye gönderilir.\n- Yeniden yargılamada hukuki yarar yoksa başvurucu lehine tazminata hükmedilebilir veya genel mahkemelerde dava açılması yolu gösterilebilir.\n- Yeniden yargılama yapan mahkeme, mümkünse dosya üzerinden karar verir.\n\n**Tebliğ ve yayım:** Bölümlerin esas hakkındaki kararları gerekçeleriyle birlikte ilgililere ve Adalet Bakanlığına tebliğ edilir ve Mahkemenin internet sayfasında yayımlanır.\n\n**İçtihat farklılıkları:** Komisyonlar arasındakini bağlı oldukları bölümler, bölümler arasındakini Genel Kurul karara bağlar.\n\n**Feragat:** Davadan feragat hâlinde düşme kararı verilir.\n\n**Kötüye kullanma:** Bireysel başvuru hakkını açıkça kötüye kullandığı tespit edilen başvurucu aleyhine, yargılama giderlerinin dışında, üst sınırı kanunda gösterilen **disiplin para cezasına** hükmedilebilir. Bu ceza verildiği anda kesindir ve derhâl infaz edilir. Seçenek yaptırımlara çevrilemez, adli sicil kayıtlarında yer almaz ve 6183 sayılı Kanun hükümlerine göre tahsil edilir.",
+      "articleRefs": [
+        "50",
+        "51",
+        "60"
+      ]
+    },
+    {
+      "type": "numbers",
+      "title": "Bireysel başvuru: süreler ve oy",
+      "rows": [
+        {
+          "label": "Başvuru süresi (yolların tüketilmesinden ya da ihlalin öğrenilmesinden itibaren)",
+          "value": "30 gün",
+          "refs": [
+            "47"
+          ]
+        },
+        {
+          "label": "Haklı mazerette başvuru (mazeretin kalktığı tarihten itibaren)",
+          "value": "15 gün",
+          "refs": [
+            "47"
+          ]
+        },
+        {
+          "label": "Evrak eksikliğini giderme süresi (üst sınır)",
+          "value": "15 gün",
+          "refs": [
+            "47"
+          ]
+        },
+        {
+          "label": "Tedbir hâlinde esas kararın verilmesi (en geç)",
+          "value": "6 ay",
+          "refs": [
+            "49"
+          ]
+        },
+        {
+          "label": "Komisyonda kabul edilemezlik kararı için gereken oy",
+          "value": "Oy birliği",
+          "refs": [
+            "48"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "47",
+        "48",
+        "49"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Siyasi parti kapatma davaları",
+      "body": "**Davayı kim açar:** Yargıtay Cumhuriyet Başsavcısı.\n\n**Verilebilecek kararlar:** Mahkeme, Anayasanın 69 uncu maddesinde sayılan hâllerden ötürü\n- partinin kapatılmasına veya\n- dava konusu fiillerin ağırlığına göre partinin Devlet yardımından **kısmen ya da tamamen** yoksun bırakılmasına\n\nkarar verebilir. Her iki karar için de **toplantıya katılan üyelerin üçte iki oy çokluğu** gerekir.\n\n**Usul:** Dava, 5271 sayılı Kanunun davanın mahiyetine uygun hükümleri uygulanarak **dosya üzerinden Genel Kurulca** incelenir ve kesin karara bağlanır.\n\n**Aşamalar:**\n- Başkanın görevlendirdiği raportör ilk inceleme raporunu hazırlayıp Başkanlığa sunar.\n- İddianamenin kabulüne karar verilirse iddianame ve ekleri partiye gönderilir; partinin usul ve esasa ilişkin savunması alınır.\n- Partinin yazılı savunması Yargıtay Cumhuriyet Başsavcılığına gönderilir.\n- Yargıtay Cumhuriyet Başsavcısından **sonra**, partinin genel başkanlığının veya tayin edeceği bir vekilin sözlü savunması dinlenir.\n- Hakkında siyasi yasaklılık istenenler savunmalarını yazılı olarak sunabilir.\n- Genel Kurul, gerekli gördüğünde sözlü açıklamalarını dinlemek için ilgilileri ve konu hakkında bilgisi olanları çağırabilir.\n\n**Karar:** Yargıtay Cumhuriyet Başsavcısı ile ilgili siyasi partiye tebliğ edilir ve Resmî Gazetede yayımlanır.",
+      "articleRefs": [
+        "52",
+        "65"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Siyasi partilere ihtar",
+      "body": "**Kim başvurur:** Yargıtay Cumhuriyet Başsavcısı.\n\n**Hangi iddiayla başvurur:** Partinin şu hükümlere aykırı hareket ettiği iddiasıyla:\n- 2820 sayılı Siyasi Partiler Kanununun **101 inci maddesi dışında kalan** emredici hükümleri\n- Diğer kanunların siyasi partilerle ilgili emredici hükümleri\n\n**Usul:** Mahkemenin vereceği süre içinde partinin savunması alınır. Aykırılık tespit edilirse, aykırılığın giderilmesi için parti hakkında **ihtar kararı** verilir.\n\n**Tebliğ ve yayım:** Karar Yargıtay Cumhuriyet Başsavcısı ile ilgili partiye tebliğ edilir ve Resmî Gazetede yayımlanır.",
+      "articleRefs": [
+        "53"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Dokunulmazlığın kaldırılması ve milletvekilliğinin düşmesine karşı iptal talebi",
+      "body": "**Konu:** Yasama dokunulmazlığının kaldırılmasına veya milletvekilliğinin düşmesine ilişkin Türkiye Büyük Millet Meclisi kararları.\n\n**Kimler başvurabilir:**\n- İlgili milletvekili, Cumhurbaşkanı yardımcısı veya bakan\n- Bir diğer milletvekili\n\n**Süre:** Kararın alındığı günden başlayarak **yedi gün** içinde.\n\n**İddia:** Kararın Anayasaya, kanuna veya Türkiye Büyük Millet Meclisi İçtüzüğüne aykırılığı.\n\n**Karar:** Mahkeme talebi **onbeş gün** içinde kesin olarak karara bağlar.\n\n**Evrak:** Mahkeme, ilgilinin ibraz etmesini beklemeksizin gerekli evrakı doğrudan getirtir.",
+      "articleRefs": [
+        "54"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Siyasi partilerin mali denetimi",
+      "body": "**Sayıştayın rolü:** Mahkeme, partilerin mal edinimleri ile gelir ve giderlerinin kanuna uygunluğunu denetlemek için Sayıştaydan yardım sağlar.\n\n**Gönderim:** Partiler, kesin hesaplarının onaylı birer örneğini **haziran ayı sonuna kadar** 2820 sayılı Kanuna uygun olarak Anayasa Mahkemesi Başkanlığına gönderir. Gönderilecekler şunlardır:\n- Karara bağlanarak birleştirilmiş kesin hesap\n- Parti merkez ve bağlı ilçeleri de kapsayan iller teşkilatının kesin hesapları\n\n**İnceleme zinciri:**\n- Mahkeme belgeleri incelenmek üzere Sayıştay Başkanlığına gönderir.\n- Sayıştayın düzenlediği raporlar karara bağlanmak üzere Mahkemeye döner.\n- İnceleme 2820 sayılı Kanun hükümlerine göre yapılır.\n- Raporlar partiye gönderilir; partiden **en geç iki ay** içinde görüşünü bildirmesi istenir.\n- Mahkeme, partinin raporlar hakkındaki görüşlerini de değerlendirir.\n\n**Karar:** Birer örneği ilgili partiye ve sicil dosyasına konulmak üzere Yargıtay Cumhuriyet Başsavcılığına gönderilir. Karar Resmî Gazetede yayımlanır.",
+      "articleRefs": [
+        "55",
+        "56"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Yüce Divanda duruşma",
+      "body": "**Duruşma ve hüküm:** Genel Kurul, Yüce Divan sıfatıyla çalışırken yürürlükteki kanunlara göre duruşma yapar ve hüküm verir.\n\n**Süre:** Cumhurbaşkanı, Cumhurbaşkanı yardımcıları ve bakanlar hakkındaki yargılamalar **üç ay** içinde tamamlanır. Bu sürede tamamlanamazsa **ilave üç aylık** süre içinde kesin olarak tamamlanır.\n\n**İddianamenin iadesi:** Yüce Divan, 5271 sayılı Kanundaki iade sebeplerinin yanında başka esaslı hukuka aykırı hâller varsa da iddianamenin veya iddianame yerine geçen belgelerin iadesine karar verebilir.\n\n**Sanığın yokluğu:** Sorgusu yapılmış sanık sonraki oturumlara gelmezse ve Yüce Divan onun hazır bulunmasına gerek görmezse, vâreste tutulma talebi olmasa dahi duruşmaya yokluğunda devam edilerek kamu davası sonuçlandırılabilir. Müdafi her zaman duruşmada hazır bulunabilir.\n\n**Kayıt:** Kayıt, Başkanın uygun göreceği teknik araçlarla yapılır. Duruşma tutanaklarının her sayfasını Başkan ile tutanağı düzenleyenler imzalar.\n\n**Savcılık görevi:** Yargıtay Cumhuriyet Başsavcısı veya Başsavcıvekili yürütür. Görevlendirilen Yargıtay Cumhuriyet savcıları da onlarla birlikte duruşmaya katılabilir.",
+      "articleRefs": [
+        "57"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Yüce Divan hükmüne karşı yeniden inceleme",
+      "body": "**Kimler başvurabilir:** Yargıtay Cumhuriyet Başsavcısı veya Başsavcıvekili, sanık, müdafi, katılan veya vekili.\n\n**Süre ve şekil:** Hükmün açıklanmasından itibaren **onbeş gün** içinde Yüce Divana dilekçe verilir. Hüküm, başvuru hakkı olanların yokluğunda açıklanmışsa süre tebliğ tarihinden başlar.\n\n**İnceleme yöntemi:** İnceleme dosya üzerinden yapılır. Ancak istem üzerine ya da resen duruşma açılmasına da karar verilebilir. İstemde bulunabilecekler: Başsavcı veya Başsavcıvekili, sanık veya katılan. Duruşma açılırsa duruşma günü taraflara tebliğ edilir. Sanık duruşmada hazır bulunabilir ya da kendini bir müdafi ile temsil ettirebilir.\n\n**Söz sırası:** Önce yeniden inceleme başvurusunda bulunan tarafa söz verilir. **Her hâlde son söz sanığındır.**\n\n**Kapsam ve sonuç:**\n- İnceleme yalnızca başvuruda belirtilen hususlarla sınırlıdır.\n- Başvuru yerinde görülürse başvuru konusu hakkında da karar verilir.\n- Verilen kararlar kesindir.",
+      "articleRefs": [
+        "58"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Davaya bakamama ve ret",
+      "body": "**Başkan ve üyeler şu dava ve işlere bakamaz:**\n- Kendilerine ait olan veya kendilerini ilgilendiren dava ve işler\n- Aralarındaki evlilik bağı kalkmış olsa bile eşinin dava ve işleri\n- Kan veya akrabalık yönünden üstsoy ve altsoyunun dava ve işleri\n- **Dördüncü dereceye kadar** (dâhil) kan yönünden civar hısımlarının dava ve işleri\n- Akrabalığı doğuran evlilik bağı kalkmış olsa bile **üçüncü dereceye kadar** (dâhil) akrabalık yönünden civar hısımlarının dava ve işleri\n- Aralarında evlatlık bağı bulunan kimselerin dava ve işleri\n- Vekil, vasi veya kayyım sıfatıyla hareket ettikleri dava ve işler\n- Hâkim, savcı, hakem sıfatıyla baktıkları ya da tanık veya bilirkişi olarak beyanda bulundukları dava ve işler\n- İstişarî görüş ve düşüncelerini ifade ettikleri dava ve işler\n\n**Ret sebebi:** Tarafsız hareket edemeyecekleri kanısını haklı kılan hâller.\n\n**Ret dilekçesi:**\n- Ret sebepleri açıkça gösterilmeli ve deliller birlikte bildirilmelidir; aksi hâlde dilekçe reddolunur.\n- **Yemin delil teşkil etmez.**\n- **Ret şahsidir.** Genel Kurul ya da bölümlerin toplanmasına mani olacak sayıda üyenin reddine ilişkin talepler dinlenmez.\n\n**Kötü niyetli ret:** Talep kötü niyetle yapılmışsa ve esas yönünden kabul edilmezse, talepte bulunanların **her birine** alt ve üst sınırı kanunda gösterilen disiplin para cezası verilir.",
+      "articleRefs": [
+        "59",
+        "60"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Bilgi ve belge, Devlet sırrı, araç-gereç, harç",
+      "body": "**Bilgi ve belge isteme yetkisi:** Mahkeme şunlarla doğrudan yazışabilir, bilgi ve belge isteyebilir:\n- Yasama, yürütme ve yargı organları\n- Kamu idareleri ve kamu görevlileri\n- Bankalar ile diğer gerçek ve tüzel kişiler\n\nMahkeme ayrıca her türlü belge, kayıt ve işlemi inceleyebilir, her derece ve sınıftan kamu görevlisini çağırabilir, idareden temsilci isteyebilir. Talepleri belirtilen sürede yerine getirmeyenler hakkında genel hükümlere göre **doğrudan soruşturma** yapılır.\n\n**Devlet sırrı:**\n- Mahkemenin baktığı dava ve işlerle ilgili bilgiler, Devlet sırrı olduğu gerekçesiyle Mahkemeye karşı **gizli tutulamaz**.\n- Tanıklık konusu bilgi Devlet sırrı niteliğindeyse tanık, stenograf ve zabıt kâtibi dahi olmaksızın dinlenir.\n- Başkan, tanık açıklamalarından sadece davanın esasına etkili olanları tutanağa geçirir.\n- Bu hükümler sözlü açıklamasına başvurulanlara ve bilirkişilere de uygulanır.\n\n**Devlet sırrı sayılan bilgiler:** Açıklanması Devletin dış ilişkilerine, millî savunmasına ve millî güvenliğine zarar verebilecek; anayasal düzen ve dış ilişkilerde tehlike yaratabilecek nitelikteki bilgiler.\n\n**Araç-gereç:** Başkan; Yüce Divan, siyasi parti kapatma davaları ve sözlü açıklamalarda duruşmanın gerektirdiği durumlarda Devlet kurum ve kuruluşlarının araç, gereç, stenograf ve teknik personelini isteyebilir. Bu istemler ilgili makamlarca **derhâl** yerine getirilir.\n\n**Harç istisnası:** **Bireysel başvurular dışındaki** başvurular, alınacak kararlar ve bunlarla ilgili işlemler harca tabi değildir. Bireysel başvuru ise harca tabidir.",
+      "articleRefs": [
+        "47",
+        "62",
+        "63",
+        "64"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Oylama, karar nisabı ve kararların etkisi",
+      "body": "**Karar nisabı:**\n- Genel Kurul ve bölümler kararlarını **katılanların salt çoğunluğuyla** alır.\n- Oylar eşitse başkanın bulunduğu tarafın görüşü doğrultusunda karar verilmiş olur.\n- **Üçte iki** oy çokluğu (toplantıya katılan üyelerin) aranan hâller: Anayasa değişikliklerinde iptal, siyasi partinin kapatılması, Devlet yardımından yoksun bırakılması.\n- Oylamaya **en kıdemsiz üyeden** başlanır.\n\n**Kararların niteliği:** Mahkeme kararları kesindir. Yasama, yürütme ve yargı organlarını, idare makamlarını, gerçek ve tüzel kişileri bağlar.\n\n**İptal kararları:**\n- Geriye yürümez.\n- İptal edilen kanun, Cumhurbaşkanlığı kararnamesi veya Türkiye Büyük Millet Meclisi İçtüzüğü, kararın Resmî Gazetede yayımlandığı tarihte yürürlükten kalkar.\n- Mahkeme gerekli görürse, kararın yürürlüğe gireceği tarihi Resmî Gazetede yayımlandığı günden başlayarak **bir yılı geçmemek üzere** ayrıca kararlaştırabilir.\n- Mahkeme iptal ederken kanun koyucu gibi hareketle yeni bir uygulamaya yol açacak biçimde hüküm tesis edemez.\n- Gerekçesi yazılmadan açıklanamaz.\n\n**Yazım ve imza:** Kararlar gerekçeli yazılır ve incelemeye katılan başkan ve üyelerce imzalanır. Muhalifler muhalefet nedenlerini İçtüzükte belirtilen süre içinde yazılı olarak teslim eder.\n\n**Yayım:** İptal ve itiraz başvuruları sonucu verilen gerekçeli kararlar Resmî Gazetede hemen yayımlanır.",
+      "articleRefs": [
+        "65",
+        "66"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Yargılamanın yenilenmesi",
+      "body": "**Hangi kararlara karşı:** Siyasi parti kapatma davalarında veya Yüce Divan sıfatıyla verilen kararlara karşı, 5271 sayılı Kanun hükümlerine göre istenebilir.\n\n**Avrupa İnsan Hakları Mahkemesi kararı üzerine:** AİHM, bu kararlardan birinin Avrupa İnsan Hakları Sözleşmesi ve eki protokollerin ihlali suretiyle verildiğine hükmedebilir. Bu durumda AİHM kararının kesinleştiği tarihten itibaren **bir yıl** içinde Anayasa Mahkemesinden yenileme talep edilebilir.\n\n**Sonuç:** Mahkeme istemi esaslı ve kabule değer bulursa yargılamanın yenilenmesine karar verir. İstem genel hükümlere göre sonuçlandırılır.",
+      "articleRefs": [
+        "67"
+      ]
+    },
+    {
+      "type": "numbers",
+      "title": "Kapatma, iptal talebi, mali denetim, Yüce Divan: sayılar",
+      "rows": [
+        {
+          "label": "Dokunulmazlık / milletvekilliğinin düşmesi kararına karşı başvuru (karar gününden)",
+          "value": "7 gün",
+          "refs": [
+            "54"
+          ]
+        },
+        {
+          "label": "İptal talebinin kesin olarak karara bağlanması",
+          "value": "15 gün",
+          "refs": [
+            "54"
+          ]
+        },
+        {
+          "label": "Kesin hesapların AYM Başkanlığına gönderilmesi",
+          "value": "Haziran ayı sonu",
+          "refs": [
+            "55"
+          ]
+        },
+        {
+          "label": "Partinin Sayıştay raporlarına görüş bildirmesi (en geç)",
+          "value": "2 ay",
+          "refs": [
+            "56"
+          ]
+        },
+        {
+          "label": "Cumhurbaşkanı, yardımcıları ve bakanların Yüce Divan yargılaması",
+          "value": "3 ay + ilave 3 ay",
+          "refs": [
+            "57"
+          ]
+        },
+        {
+          "label": "Cumhurbaşkanı, yardımcıları ve bakanların Yüce Divan yargılamasında toplam azami süre",
+          "value": "6 ay",
+          "refs": [
+            "57"
+          ]
+        },
+        {
+          "label": "Yüce Divan hükmüne karşı yeniden inceleme (açıklamadan ya da tebliğden)",
+          "value": "15 gün",
+          "refs": [
+            "58"
+          ]
+        },
+        {
+          "label": "Katılma engeli: kan yönünden civar hısımlık",
+          "value": "dördüncü derece dâhil",
+          "refs": [
+            "59"
+          ]
+        },
+        {
+          "label": "Katılma engeli: akrabalık yönünden civar hısımlık",
+          "value": "üçüncü derece dâhil",
+          "refs": [
+            "59"
+          ]
+        },
+        {
+          "label": "Kapatma, Devlet yardımından yoksun bırakma, Anayasa değişikliği iptali",
+          "value": "Katılan üyelerin üçte iki oy çokluğu",
+          "refs": [
+            "52",
+            "65"
+          ]
+        },
+        {
+          "label": "Diğer kararlar",
+          "value": "Katılanların salt çoğunluğu",
+          "refs": [
+            "65"
+          ]
+        },
+        {
+          "label": "İptal kararının yürürlüğünün ertelenmesi (en fazla)",
+          "value": "1 yıl",
+          "refs": [
+            "66"
+          ]
+        },
+        {
+          "label": "AİHM ihlal kararı üzerine yargılamanın yenilenmesi (kesinleşmeden itibaren)",
+          "value": "1 yıl",
+          "refs": [
+            "67"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "52",
+        "54",
+        "55",
+        "56",
+        "57",
+        "58",
+        "59",
+        "65",
+        "66",
+        "67"
+      ],
+      "derivedNumbers": [
+        {
+          "value": 6,
+          "expr": "3 + 3",
+          "refs": [
+            "57"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "compare",
+      "title": "Ret ve çekinme",
+      "rows": [
+        {
+          "aspect": "Kimden gelir",
+          "left": "Ret: Başkan veya üye hakkında talepte bulunan",
+          "right": "Çekinme: Başkan veya üyenin kendisi",
+          "refs": [
+            "60",
+            "61"
+          ]
+        },
+        {
+          "aspect": "Dayanak",
+          "left": "Tarafsız hareket edemeyecekleri kanısını haklı kılan hâller",
+          "right": "md 59 ve md 60'ta yazılı sebepler",
+          "refs": [
+            "60",
+            "61"
+          ]
+        },
+        {
+          "aspect": "Karar mercii",
+          "left": "Genel Kurul ya da bölümler",
+          "right": "Genel Kurul",
+          "refs": [
+            "60",
+            "61"
+          ]
+        },
+        {
+          "aspect": "İlgili üyenin durumu",
+          "left": "İlgili üye katılmaksızın karar verilir",
+          "right": "Üye görüşmeye iştirak eder, oylamaya katılamaz",
+          "refs": [
+            "60",
+            "61"
+          ]
+        },
+        {
+          "aspect": "Kararın niteliği",
+          "left": "Kesin",
+          "right": "Kesin",
+          "refs": [
+            "60",
+            "61"
+          ]
+        },
+        {
+          "aspect": "Ek şartlar ve yaptırım",
+          "left": "Sebep ve deliller dilekçede gösterilir; yemin delil değildir; ret şahsidir; kötü niyetli ve esastan kabul edilmeyen talepte her talepçiye disiplin para cezası",
+          "right": "—",
+          "refs": [
+            "60"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "59",
+        "60",
+        "61"
+      ]
+    },
+    {
+      "type": "exam_stats",
+      "title": "Sınav der ki",
+      "rows": [
+        {
+          "label": "Bu ünitenin maddelerinden yayındaki soru",
+          "value": "0",
+          "refs": [
+            "45",
+            "46",
+            "47",
+            "48",
+            "49",
+            "50",
+            "51",
+            "52",
+            "53",
+            "54",
+            "55",
+            "56",
+            "57",
+            "58",
+            "59",
+            "60",
+            "61",
+            "62",
+            "63",
+            "64",
+            "65",
+            "66",
+            "67"
+          ]
+        },
+        {
+          "label": "Hiç soru çıkmamış",
+          "value": "md 45, md 46, md 47, md 48, md 49, md 50, md 51, md 52, md 53, md 54, md 55, md 56, md 57, md 58, md 59, md 60, md 61, md 62, md 63, md 64, md 65, md 66, md 67",
+          "refs": [
+            "45",
+            "46",
+            "47",
+            "48",
+            "49",
+            "50",
+            "51",
+            "52",
+            "53",
+            "54",
+            "55",
+            "56",
+            "57",
+            "58",
+            "59",
+            "60",
+            "61",
+            "62",
+            "63",
+            "64",
+            "65",
+            "66",
+            "67"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "45",
+        "46",
+        "47",
+        "48",
+        "49",
+        "50",
+        "51",
+        "52",
+        "53",
+        "54",
+        "55",
+        "56",
+        "57",
+        "58",
+        "59",
+        "60",
+        "61",
+        "62",
+        "63",
+        "64",
+        "65",
+        "66",
+        "67"
+      ],
+      "generated": true
+    },
+    {
+      "type": "bridge",
+      "title": "Bu üniteden soru çöz",
+      "articleRefs": [
+        "45",
+        "46",
+        "47",
+        "48",
+        "49",
+        "50",
+        "51",
+        "52",
+        "53",
+        "54",
+        "55",
+        "56",
+        "57",
+        "58",
+        "59",
+        "60",
+        "61",
+        "62",
+        "63",
+        "64",
+        "65",
+        "66",
+        "67"
+      ],
+      "generated": true,
+      "rows": [
+        {
+          "label": "Madde kapsamlı seans",
+          "value": "md 45–67, 0 soru",
+          "refs": [
+            "45",
+            "46",
+            "47",
+            "48",
+            "49",
+            "50",
+            "51",
+            "52",
+            "53",
+            "54",
+            "55",
+            "56",
+            "57",
+            "58",
+            "59",
+            "60",
+            "61",
+            "62",
+            "63",
+            "64",
+            "65",
+            "66",
+            "67"
+          ]
+        }
+      ]
+    }
+  ]
+}

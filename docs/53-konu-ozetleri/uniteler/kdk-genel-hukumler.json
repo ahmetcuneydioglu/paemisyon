@@ -1,0 +1,854 @@
+{
+  "unit": {
+    "slug": "kdk-genel-hukumler",
+    "legislationSlug": "6328-sayili-kamu-denetciligi-kurumu-kanunu",
+    "topicId": "387f7067-fbf4-4f00-876c-e9cdc903039a",
+    "title": "Kamu Denetçiliği Kurumu: yapı ve başvuru",
+    "subtitle": "Kamu Denetçiliği Kurumunun yapısı, Başdenetçi ve denetçilerin seçimi, başvuru, inceleme ve personel hükümleri",
+    "articleFrom": "1",
+    "articleTo": "37",
+    "readingMinutes": 15,
+    "sourceLabel": "AI özeti — 6328 Sayılı Kamu Denetçiliği Kurumu Kanunu, md 1–37",
+    "articleNos": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+      "15",
+      "16",
+      "17",
+      "18",
+      "19",
+      "20",
+      "21",
+      "22",
+      "23",
+      "24",
+      "25",
+      "26",
+      "27",
+      "28",
+      "29",
+      "30",
+      "31",
+      "32",
+      "33",
+      "34",
+      "35",
+      "36",
+      "37"
+    ],
+    "generatedBy": "claude-opus-5-5 (ozet-uret.ts)",
+    "sortOrder": 1
+  },
+  "blocks": [
+    {
+      "type": "concept",
+      "title": "Kamu Denetçiliği Kurumu ne işe yarar?",
+      "body": "İdareden şikâyetin varsa, mahkemeye gitmeden önce başvurabileceğin bağımsız bir kapı düşün: Kamu Denetçiliği Kurumu tam olarak bu. Kanun onu, kamu hizmetlerinin işleyişinde **bağımsız ve etkin bir şikâyet mekanizması** olarak kurar. Kurum, idarenin her türlü eylem ve işlemleri ile tutum ve davranışlarını, insan haklarına dayalı adalet anlayışı içinde, **hukuka ve hakkaniyete uygunluk** yönlerinden inceler, araştırır ve idareye **önerilerde bulunur**. Harekete geçmesi için de bir **şikâyet** gerekir. Kanun ayrıca Kurumun kuruluşunu, görev ve çalışma usullerini, Başdenetçi ve denetçilerin niteliklerini, seçimlerini ve özlük haklarını, Kurum personelinin atanmasını ve özlük haklarını düzenler.",
+      "articleRefs": [
+        "1",
+        "2",
+        "5"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Kuruluş, yapı ve temel tanımlar",
+      "body": "**Kurum:**\n- Türkiye Büyük Millet Meclisi **Başkanlığına bağlı**, **kamu tüzel kişiliğini haiz**, **özel bütçeli**; merkezi **Ankara**.\n- **Başdenetçilik** ve **Genel Sekreterlikten** oluşur.\n- Kurumda **bir Başdenetçi** ve **beş denetçi** ile Genel Sekreter ve diğer personel görev yapar.\n- Gerekli gördüğü yerlerde **büro açabilir**.\n\n**Başdenetçilik:** Başdenetçi ve denetçilerden oluşur. Kurum, **Başdenetçi** tarafından yönetilir ve temsil edilir.\n\n**Komisyon:** TBMM Dilekçe Komisyonu ile İnsan Haklarını İnceleme Komisyonu üyelerinden oluşan **Karma Komisyon**. Komisyonun Başkanı, Başkanvekili, Sözcüsü ve Kâtibi, **Dilekçe Komisyonunun** Başkanı, Başkanvekili, Sözcüsü ve Kâtibidir.\n\n**İdare:** merkezî yönetim kapsamındaki kamu idareleri, sosyal güvenlik kurumları, mahallî idareler ve bağlı idareleri, mahallî idare birlikleri, döner sermayeli kuruluşlar, kanunlarla kurulan fonlar, kamu tüzel kişiliğini haiz kuruluşlar, kamu iktisadi teşebbüsleri, sermayesinin yüzde ellisinden fazlası kamuya ait kuruluşlar ile bağlı ortaklık ve müesseseleri, kamu kurumu niteliğindeki meslek kuruluşları ve **kamu hizmeti yürüten özel hukuk tüzel kişileri**.",
+      "articleRefs": [
+        "3",
+        "4",
+        "6"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Görev alanı ve dışında kalanlar",
+      "body": "**Kural:** Kurum, idarenin işleyişiyle ilgili **şikâyet üzerine** idarenin her türlü eylem ve işlemleri ile tutum ve davranışlarını hukuka ve hakkaniyete uygunluk yönlerinden inceler, araştırır ve idareye önerilerde bulunur.\n\n**Kurumun görev alanı dışında kalanlar:**\n- **Yasama** yetkisinin kullanılmasına ilişkin işlemler,\n- **Yargı** yetkisinin kullanılmasına ilişkin kararlar,\n- Türk Silahlı Kuvvetlerinin **sırf askerî nitelikteki** faaliyetleri.\n\n**Not:** Fıkranın (a) bendi mülgadır; görev alanı dışındaki hâller metnin yürürlükteki hâliyle verilmiştir.",
+      "articleRefs": [
+        "5"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Başdenetçi, denetçiler ve Genel Sekreterlik",
+      "body": "**Başdenetçinin görevleri:**\n- Şikâyetleri incelemek, araştırmak ve idareye önerilerde bulunmak.\n- Kanunun uygulanmasına ilişkin **yönetmelikleri** hazırlamak.\n- **Yıllık raporu** hazırlamak; yıllık raporu beklemeksizin gerek gördüğü konularda **özel rapor** hazırlamak; raporları kamuoyuna duyurmak.\n- Yokluğunda kendisine **vekâlet edecek denetçiyi** belirlemek.\n- Birisi **kadın ve çocuk hakları** alanında görevlendirilmek üzere denetçiler arasındaki iş bölümünü düzenlemek.\n- **Genel Sekreteri ve diğer personeli atamak.**\n\n**Denetçiler:** Başdenetçiye yardımcı olur ve onun verdiği görevleri yapar; görevlendirildikleri konu veya alanlarda **tek başlarına** çalışır, önerilerini **Başdenetçiye** sunarlar. İş birliğini ve uyumlu çalışmayı Başdenetçi sağlar; iş bölümü ilkeleri **yönetmelikle** belirlenir. Kurum, faaliyetlerinde elektronik ortam ve iletişim araçlarının kullanılmasını gözetir.\n\n**Genel Sekreterlik:** Kurumun **idari ve mali işleri** ile sekretarya hizmetlerini yürütür: büro işlemi, personelin şahsi dosyaları, arşiv, mali hizmetler ve strateji geliştirme birimlerine verilen görevler, izin ve emeklilik işlemleri, özlük işleri ile sağlık ve sosyal hizmetler, bilişim sisteminin kullanılması.",
+      "articleRefs": [
+        "7",
+        "8",
+        "9"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Başdenetçi ve denetçi seçilme nitelikleri",
+      "body": "Başdenetçi veya denetçi seçilebilmek için:\n- **Türk vatandaşı** olmak.\n- **Seçimin yapıldığı tarihte** Başdenetçi için **elli**, denetçi için **kırk** yaşını doldurmuş olmak.\n- Dört yıllık eğitim veren fakültelerden (tercihen hukuk, siyasal bilgiler, iktisadi ve idarî bilimler, iktisat ve işletme) veya denkliği kabul edilmiş yurt içi ya da yurt dışı yükseköğretim kurumlarından mezun olmak.\n- Kamu kurum ve kuruluşlarında, uluslararası kuruluşlarda, sivil toplum kuruluşlarında, kamu kurumu niteliğindeki meslek kuruluşlarında ya da özel sektörde **toplamda en az on yıl** çalışmış olmak.\n- Kamu haklarından yasaklı olmamak.\n- **Başvuru sırasında** herhangi bir siyasi partiye üye olmamak.\n- TCK 53. maddedeki süreler geçmiş olsa bile **kasten işlenen bir suçtan hapis cezasına** mahkûm olmamak; affa uğramış olsa veya hükmün açıklanmasının geri bırakılması kararı verilmiş olsa bile **Türk Ceza Kanununun ikinci kitabının birinci kısmının bir ve ikinci bölümündeki suçlar**, Devletin güvenliğine karşı suçlar, anayasal düzene ve bu düzenin işleyişine karşı suçlar, millî savunmaya karşı suçlar, Devlet sırlarına karşı suçlar ve casusluk suçları ile yabancı devletlerle olan ilişkilere karşı suçlardan veya **zimmet, irtikap, rüşvet, hırsızlık, dolandırıcılık, sahtecilik, güveni kötüye kullanma, hileli iflas, ihaleye fesat karıştırma, edimin ifasına fesat karıştırma, suçtan kaynaklanan malvarlığı değerlerini aklama veya kaçakçılık** suçlarından mahkûm olmamak.",
+      "articleRefs": [
+        "10"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Adaylık ve seçim süreci",
+      "body": "**Bildirim:** Görev süresinin bitmesinden **doksan gün önce**; görev herhangi bir sebeple sona ererse sona erme tarihinden itibaren **onbeş gün içinde** Kurum durumu Başkanlığa bildirir.\n\n**Başvuru:** Başkanlığın ilân ettiği süre içinde, nitelikleri taşıyan aday adayları **Başkanlığa** başvurur.\n\n**Başdenetçi:**\n- **Komisyon**, başvuru süresinin bittiği tarihten itibaren onbeş gün içinde **üç aday** belirleyip Genel Kurula sunulmak üzere Başkanlığa bildirir.\n- **Genel Kurul**, bildirim tarihinden itibaren onbeş gün içinde seçimlere başlar; Başdenetçi **gizli oyla** seçilir.\n\n**Denetçi:**\n- Komisyonun oluşturacağı **alt komisyon**, onbeş gün içinde seçilecek denetçi sayısının **üç katı** kadar aday belirleyip Komisyona sunar.\n- **Komisyon** sonraki onbeş gün içinde seçimi yapar. Birden fazla denetçi seçiminde **birleşik oy pusulası** düzenlenir; seçilecek sayıdan fazla verilen oylar **geçersiz** sayılır.\n\n**Genel süre:** Seçimler, Kurumun Başkanlığa başvurduğu tarihten itibaren **en geç doksan gün** içinde sonuçlandırılır. Bu maddedeki süreler TBMM **tatilde veya araverme** sırasında **işlemez**.",
+      "articleRefs": [
+        "11"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Oylama turlarını karıştırma",
+      "body": "Oylama sırası iki seçimde de aynı başlar, sonda ayrılır. Hem Başdenetçide hem denetçide **birinci ve ikinci oylamada** üye tamsayısının **üçte iki** çoğunluğu aranır; **üçüncü oylamada** üye tamsayısının **salt çoğunluğu** yeter. Fark **dördüncü oylamada**: Başdenetçide üçüncü oylamada en çok oy alan **iki aday** yarışır; denetçide ise en çok oy alanlardan **seçilecek aday sayısının iki katı** kadar aday ile seçime gidilir. Dördüncü oylamada **karar yeter sayısı olmak şartıyla** en fazla oy alan seçilir. Bir de unutma: denetçileri Genel Kurul değil **Komisyon** seçer.",
+      "articleRefs": [
+        "11"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "type": "rule",
+      "title": "Bağımsızlık, andiçme ve görev süresi",
+      "body": "**Bağımsızlık:** Hiçbir organ, makam, merci veya kişi Başdenetçiye ve denetçilere görevleriyle ilgili **emir ve talimat veremez, genelge gönderemez, tavsiye ve telkinde bulunamaz**. Başdenetçi ve denetçiler **tarafsızlık** ilkesine uymak zorundadır.\n\n**Andiçme:** Başdenetçi **Genel Kurulda**, denetçiler **Komisyonda** andiçer: “Görevimi tam bir tarafsızlık, dürüstlük, hakkaniyet ve adalet anlayışı içinde yerine getireceğime, namusum ve şerefim üzerine andiçerim.”\n\n**Görev süresi:**\n- Başdenetçi ve denetçiler için **dört yıl**.\n- Bir dönem görev yapan kimse **sadece bir dönem daha** seçilebilir.\n- Görev süresince **eski görevleriyle ilişikleri kesilir**.\n- Kamu görevlisiyken seçilenler, memuriyete giriş şartlarını kaybetme dışındaki bir nedenle görevleri sona erer, ayrılmak ister veya süreleri dolarsa, **otuz gün** içinde eski kurumlarına başvurduklarında atamaya yetkili makamlarca **otuz gün** içinde mükteseplerine uygun bir kadroya atanır.\n- **Yüksek mahkeme üyeliğinden** gelenler, herhangi bir işleme gerek olmaksızın ve **boş kadro şartı aranmaksızın** üyelik görevine döner; boşalan ilk üye kadrosu kendilerine tahsis edilir.\n- Süresi dolması sebebiyle görevi sona erenlere, atamaları yapılıncaya kadar aylık ücret ile sosyal hak ve yardımlar **Kurum** tarafından ödenmeye devam eder.",
+      "articleRefs": [
+        "12",
+        "13",
+        "14"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Görev süresinde iki klasik hata",
+      "body": "İstifa, ölüm veya görevden alınma gibi bir nedenle süresi bitmeden ayrılan Başdenetçi ya da denetçinin yerine seçilen kişi, öncekinin **kalan süresini tamamlamaz**; onun görev süresi de **dört yıldır**. Yeniden seçilmede de sınır var: bir dönem görev yapan kimse **sadece bir dönem daha** seçilebilir. Eski kuruma dönüşte süreleri karıştırma: kişi **otuz gün** içinde başvurur, atamaya yetkili makam da **otuz gün** içinde atar.",
+      "articleRefs": [
+        "14"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "type": "numbers",
+      "title": "Başdenetçi ve denetçiler: sayılar",
+      "rows": [
+        {
+          "label": "Denetçi sayısı",
+          "value": "5",
+          "refs": [
+            "4"
+          ]
+        },
+        {
+          "label": "Başdenetçi için asgari yaş (seçim tarihinde)",
+          "value": "50 yaşını doldurmuş",
+          "refs": [
+            "10"
+          ]
+        },
+        {
+          "label": "Denetçi için asgari yaş (seçim tarihinde)",
+          "value": "40 yaşını doldurmuş",
+          "refs": [
+            "10"
+          ]
+        },
+        {
+          "label": "Toplam çalışma süresi",
+          "value": "En az 10 yıl",
+          "refs": [
+            "10"
+          ]
+        },
+        {
+          "label": "Görev süresi bitmeden Başkanlığa bildirim",
+          "value": "90 gün önce",
+          "refs": [
+            "11"
+          ]
+        },
+        {
+          "label": "Görev herhangi bir sebeple sona ererse bildirim",
+          "value": "Sona erme tarihinden itibaren 15 gün içinde",
+          "refs": [
+            "11"
+          ]
+        },
+        {
+          "label": "Başdenetçi için Komisyonun belirlediği aday",
+          "value": "3 aday",
+          "refs": [
+            "11"
+          ]
+        },
+        {
+          "label": "Denetçi için alt komisyonun belirlediği aday",
+          "value": "Seçilecek sayının 3 katı",
+          "refs": [
+            "11"
+          ]
+        },
+        {
+          "label": "Aday belirleme süresi",
+          "value": "Başvuru süresi bitiminden itibaren 15 gün",
+          "refs": [
+            "11"
+          ]
+        },
+        {
+          "label": "Genel Kurulun Başdenetçi seçimine başlaması",
+          "value": "Bildirimden itibaren 15 gün içinde",
+          "refs": [
+            "11"
+          ]
+        },
+        {
+          "label": "Seçimlerin sonuçlanması",
+          "value": "En geç 90 gün",
+          "refs": [
+            "11"
+          ]
+        },
+        {
+          "label": "Görev süresi",
+          "value": "4 yıl",
+          "refs": [
+            "14"
+          ]
+        },
+        {
+          "label": "Eski kuruma başvuru / atama",
+          "value": "30 gün / 30 gün",
+          "refs": [
+            "14"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "4",
+        "10",
+        "11",
+        "14"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Başvuru: kim, nasıl, nereye",
+      "body": "**Kim:** **Gerçek ve tüzel kişiler.** Başvuru sahibinin talebi üzerine başvuru **gizli tutulur**.\n\n**Nasıl:** **Türkçe dilekçe** ile. Dilekçede ad ve soyad, imza, yerleşim yeri veya iş adresi; Türkiye Cumhuriyeti vatandaşları için vatandaşlık kimlik numarası, yabancılar için pasaport numarası bulunur. Tüzel kişide unvan, yerleşim yeri, yetkili kişinin imzası, varsa merkezi tüzel kişilik numarası ve yetki belgesi aranır. Yönetmelik şartlarına uyularak **elektronik ortamda** veya diğer iletişim araçlarıyla da başvurulabilir.\n\n**Nereye:** Kuruma; ayrıca illerde **valilikler**, ilçelerde **kaymakamlıklar** aracılığıyla.\n\n**Ücret:** Başvurulardan **ücret alınmaz**.\n\n**İncelenmeyen başvurular:**\n- Belli bir konuyu içermeyenler,\n- Yargı organlarında görülmekte olan veya yargı organlarınca karara bağlanmış uyuşmazlıklara ilişkin olanlar,\n- Yukarıda **Nasıl** başlığında sayılan dilekçe şartlarını taşımayanlar,\n- Sebepleri, konusu ve tarafları aynı olanlar ile daha önce sonuçlandırılanlar.",
+      "articleRefs": [
+        "17"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "İdari başvuru yolları ve başvuru süresi",
+      "body": "**Şart:** İdari Yargılama Usulü Kanununda öngörülen idari başvuru yolları ile özel kanunlardaki **zorunlu idari başvuru yollarının tüketilmesi** gerekir.\n\n- Tüketilmeden yapılan başvurular **ilgili kuruma gönderilir**.\n- **İstisna:** **Telafisi güç veya imkânsız zararların** doğması ihtimali varsa Kurum, idari başvuru yolları tüketilmese dahi başvuruyu kabul edebilir.\n\n**Süre:** İdarenin cevabının tebliğinden; idare **altmış gün** içinde cevap vermezse bu sürenin bitmesinden itibaren **altı ay** içinde Kuruma başvurulur.\n\n**Başvuru tarihi:** Dilekçenin Kuruma, valilik veya kaymakamlığa verildiği tarih; diğer hâllerde başvurunun **Kuruma ulaştığı** tarih.\n\n**Dava süresine etkisi:** Dava açma süresi içinde yapılan başvuru, işlemeye başlamış olan dava açma süresini **durdurur**.",
+      "articleRefs": [
+        "17"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Başvuruda sık karıştırılanlar",
+      "body": "Kuruma yalnız gerçek kişiler başvurur sanma; **tüzel kişiler** de başvurabilir ve başvuru **ücretsizdir**. İdari başvuru yolunu tüketmeden gelen başvuru Kurumda kalmaz, **ilgili kuruma gönderilir**; ama telafisi güç veya imkânsız zarar ihtimali varsa Kurum yine de **kabul edebilir**. Sürelerin yerini değiştirme: **altmış gün** idarenin cevap süresi, **altı ay** Kuruma başvuru süresidir. Son olarak, yargı organlarında görülmekte olan ya da yargı organlarınca karara bağlanmış bir uyuşmazlık Kurumda **incelenmez**.",
+      "articleRefs": [
+        "17"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "type": "rule",
+      "title": "Bilgi ve belge, bilirkişi, tanık",
+      "body": "**Bilgi ve belge:**\n- Kurumun istediği bilgi ve belgeler, isteğin tebliğinden itibaren **otuz gün** içinde verilmek zorundadır.\n- Haklı bir neden olmaksızın vermeyenler hakkında **Başdenetçi veya denetçinin başvurusu üzerine** ilgili merci **soruşturma açar**.\n- **Devlet sırrı** veya **ticari sır** niteliğindeki bilgi ve belgeler, yetkili mercilerin **en üst makam veya kurulunca gerekçe belirtilerek** verilmeyebilir.\n- **Ancak** Devlet sırrı niteliğindekiler Başdenetçi veya görevlendireceği denetçi tarafından **yerinde incelenebilir**.\n\n**Bilirkişi:** **Başdenetçi veya denetçiler** görevlendirebilir. Ücret, görevlendirmeyi yapanın kararıyla ödenir; her inceleme ve araştırma konusu için kamu görevlilerine **(1.000)**, diğer kişilere **(2.000)** gösterge rakamının memur aylık katsayısıyla çarpımını geçemez. Bu ödemeler **damga vergisi hariç** vergi ve kesintiye tabi değildir; Harcırah Kanunu hükümleri saklıdır.\n\n**Tanık:** **Başdenetçi, denetçiler veya uzmanlar** tanık ya da ilgili kişileri dinleyebilir.",
+      "articleRefs": [
+        "18",
+        "19"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "İnceleme sonucu ve dava açma süresi",
+      "body": "**İnceleme süresi:** Başvuru tarihinden itibaren **en geç altı ay**.\n\n**Bildirim:** Sonuç ve varsa öneriler **ilgili mercie ve başvurana** bildirilir. Başvurana ayrıca işleme karşı **başvuru yolları, başvuru süresi ve başvurulacak makam** gösterilir.\n\n**İdarenin cevabı:** İlgili merci, öneri doğrultusunda tesis ettiği işlemi ya da önerilen çözümü uygulanabilir görmezse **gerekçesini otuz gün içinde** Kuruma bildirir.\n\n**Durmuş dava açma süresi kaldığı yerden işlemeye başlar:**\n- **Ret:** gerekçeli ret kararının ilgiliye tebliğinden itibaren.\n- **Kabul:** ilgili merci önerinin ardından **otuz gün** içinde işlem tesis etmez veya eylemde bulunmazsa.\n- **Gecikme:** Kurum incelemeyi başvuru tarihinden itibaren **altı ay** içinde sonuçlandıramazsa.\n\nSüre baştan başlamaz; **kaldığı yerden** devam eder.",
+      "articleRefs": [
+        "20",
+        "21"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Raporlar ve açıklama yetkisi",
+      "body": "**Yıllık rapor:**\n- Kurum, **her takvim yılı sonunda** faaliyetleri ve önerileri kapsayan raporu **Komisyona** sunar.\n- Komisyon, **araverme ve tatil dönemleri hariç iki ay** içinde görüşür; kendi kanaat ve görüşlerini de içerecek şekilde **özetleyerek** Genel Kurula sunulmak üzere hazırladığı raporu **Başkanlığa** gönderir.\n- Komisyonun raporu Genel Kurulda **ivedilikle** görüşülür.\n- Kurumun yıllık raporu ayrıca **Resmî Gazetede** yayımlanarak kamuoyuna duyurulur.\n\n**Yıllık raporu beklemeden:** Kurum, açıklanmasında fayda gördüğü hususları **her zaman** kamuoyuna duyurabilir.\n\n**Açıklama yetkisi:** Kurumun faaliyetleri hakkında **Başdenetçi veya görevlendireceği denetçi**.",
+      "articleRefs": [
+        "22",
+        "23"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Personel, görevlendirme ve bütçe",
+      "body": "**Genel Sekreter:** En az dört yıllık yükseköğretim mezunu, Devlet Memurları Kanununa tabi görevlerde **on yıl** hizmeti bulunan ve aynı Kanunun 48. maddesindeki şartları taşıyanlar arasından **Başdenetçi** atar. **Diğer personeli** de Başdenetçi atar.\n\n**Uzman yardımcısı:** Devlet Memurları Kanununun 48. maddesindeki genel şartlar yanında dört yıllık fakülte (veya denkliği kabul edilmiş kurum) mezuniyeti, **giriş sınavında başarı** ve sınav yılının **ocak ayının ilk günü** itibarıyla **otuzbeş** yaşını doldurmamış olmak.\n\n**Uzman:** En az **üç yıl** çalışan uzman yardımcısı **yeterlik sınavına** girer; başarılı olup yabancı dil seviye tespit sınavında en az **(C)** düzeyi veya uluslararası kabul görmüş sınavlardan denk puan alan **kamu denetçiliği uzmanı** unvanını alır. Başarısız olanlar istekleri hâlinde Kurumda veya Devlet Personel Başkanlığınca diğer kamu kurum ve kuruluşlarında uygun kadrolara atanır.\n\n**Uygulanacak hükümler:** Kanunda hüküm yoksa **Devlet Memurları Kanunu**. Mali ve sosyal haklarda Genel Sekretere **bakanlık genel müdürleri**, uzmanlara aynı derecedeki **adalet uzmanları**, uzman yardımcılarına **adalet uzman yardımcıları**, diğer personele Adalet Bakanlığında aynı unvanlı ve dereceli kadrolarda çalışanlara uygulanan hükümler uygulanır.\n\n**Görevlendirme:** Merkezî yönetim kapsamındaki kamu idarelerinde, sosyal güvenlik kurumlarında, mahallî idareler ile bunların bağlı idarelerinde ve birliklerinde, döner sermayeli kuruluşlarda, kanunlarla kurulan fonlarda, kamu tüzel kişiliğini haiz kuruluşlarda, sermayesinin yüzde ellisinden fazlası kamuya ait kuruluşlarda, kamu iktisadi teşebbüsleri ile bunlara bağlı ortaklık ve müesseselerde çalışanlar ile **hâkim ve savcılar**, **muvafakatleri** alınarak Kurumda görevlendirilebilir. Sayıları Kamu Denetçiliği Uzmanı kadro sayısının **yüzde yirmisini** aşamaz; süre **iki yılı** geçemez, ihtiyaç hâlinde **bir yıllık** dönemlerle uzatılabilir. Talepler **on iş günü** içinde yerine getirilir; görevlendirilenler kurumlarından **aylıklı izinli** sayılır, Kurumdaki süreleri kendi kurumlarında geçmiş sayılır.\n\n**Bütçe:** Gelirler **TBMM bütçesinden alınacak Hazine yardımı** ve diğer gelirlerdir.\n\n**Not:** Devlet Personel Başkanlığı metnindeki hâliyle verilmiştir.",
+      "articleRefs": [
+        "24",
+        "25",
+        "26",
+        "27",
+        "28",
+        "29"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Yasaklar",
+      "body": "**Tüm Kurum mensupları için** (Başdenetçi, denetçiler, Genel Sekreter, uzman ve uzman yardımcıları ile diğer personel):\n- Siyasi partilere **üye olamaz**; herhangi bir siyasi parti, kişi veya zümrenin yararını veya zararını hedef alan davranışta bulunamaz.\n- Görevlerini yaparken **dil, ırk, cinsiyet, siyasi düşünce, felsefi inanç, din ve mezhep** ayırımı yapamaz.\n- Görevleri sebebiyle öğrendikleri mesleki veya ticari sırları **görevden ayrılmış olsalar bile** açıklayamaz, kendi veya başkalarının yararına kullanamaz.\n- Görev süresince **resmî veya özel hiçbir görev alamaz, ticaretle uğraşamaz**.\n\n**Hısımlık yasağı:** Başdenetçi, denetçiler, Genel Sekreter, uzman ve uzman yardımcıları; kendilerinin, eşlerinin ve **üçüncü dereceye kadar (bu derece dâhil)** kan ve kayın hısımlarının şikâyetlerini inceleyemez. Bu fıkrada **diğer personel sayılmamıştır**.\n\n**İstisnalar:** Bilimsel yayınlarda bulunma; görev veya meslekleriyle ilgili davet edildikleri ulusal veya uluslararası kongre, konferans ve benzeri toplantılara katılma; **derneklerde üyelik**; **kâr amacı gütmeyen kooperatiflerde ortaklık**.",
+      "articleRefs": [
+        "30"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Emeklilik ve son hükümler",
+      "body": "**Sigortalılık:** Başdenetçi, denetçiler, Genel Sekreter, uzman ve uzman yardımcıları ile diğer personel, Sosyal Sigortalar ve Genel Sağlık Sigortası Kanununun 4. maddesinin birinci fıkrasının **(c) bendi** kapsamında sigortalı sayılır.\n\n- Prime esas kazançta Başdenetçi için **en yüksek Devlet memuru**, denetçiler için **bakanlık genel müdürleri** esas alınır.\n- Emekli aylığı alırken Başdenetçi veya denetçi seçilenlerin **istekleri hâlinde** emekli aylıkları kesilir ve yeniden sigortalı sayılırlar; görev bitiminde aylıkları genel hükümlere göre yeniden belirlenir.\n- Başdenetçi ve denetçiler hakkında **yaş haddine ilişkin hükümler uygulanmaz**.\n\n**Kadrolar:** Ekli listedeki kadrolar ihdas edilerek Genel Kadro ve Usulü Hakkında Kanun Hükmünde Kararnamenin eki (I) sayılı cetvele Kamu Denetçiliği Kurumu bölümü olarak eklenmiştir. Diğer kanunlarda yapılan değişiklikler yerlerine işlenmiştir.\n\n**Yürürlük:** **17. madde** (başvuru) yayımı tarihinden **dokuz ay sonra**, diğer maddeler yayımı tarihinde yürürlüğe girer.\n\n**Yürütme:** Türkiye Büyük Millet Meclisi Başkanı ve Bakanlar Kurulu.\n\n**Not:** Kanun hükmünde kararname ve Bakanlar Kurulu atıfları metnindeki hâliyle verilmiştir.",
+      "articleRefs": [
+        "33",
+        "34",
+        "35",
+        "36",
+        "37"
+      ]
+    },
+    {
+      "type": "numbers",
+      "title": "Başvuru, inceleme ve personel süreleri",
+      "rows": [
+        {
+          "label": "İdarenin başvuruya cevap süresi",
+          "value": "60 gün",
+          "refs": [
+            "17"
+          ]
+        },
+        {
+          "label": "Kuruma başvuru süresi",
+          "value": "Cevabın tebliğinden ya da 60 günün bitiminden itibaren 6 ay",
+          "refs": [
+            "17"
+          ]
+        },
+        {
+          "label": "Bilgi ve belge verme süresi",
+          "value": "Tebliğden itibaren 30 gün",
+          "refs": [
+            "18"
+          ]
+        },
+        {
+          "label": "Bilirkişi ücreti üst sınırı (kamu görevlisi)",
+          "value": "(1.000) gösterge × memur aylık katsayısı",
+          "refs": [
+            "19"
+          ]
+        },
+        {
+          "label": "Bilirkişi ücreti üst sınırı (diğer kişiler)",
+          "value": "(2.000) gösterge × memur aylık katsayısı",
+          "refs": [
+            "19"
+          ]
+        },
+        {
+          "label": "İnceleme ve araştırma süresi",
+          "value": "Başvuru tarihinden itibaren en geç 6 ay",
+          "refs": [
+            "20"
+          ]
+        },
+        {
+          "label": "Önerinin uygulanamama gerekçesinin bildirimi",
+          "value": "30 gün",
+          "refs": [
+            "20"
+          ]
+        },
+        {
+          "label": "Kabulde dava süresinin yeniden işlemesi",
+          "value": "Merci 30 gün içinde işlem tesis etmezse",
+          "refs": [
+            "21"
+          ]
+        },
+        {
+          "label": "Komisyonun yıllık raporu görüşmesi",
+          "value": "2 ay (araverme ve tatil hariç)",
+          "refs": [
+            "22"
+          ]
+        },
+        {
+          "label": "Genel Sekreter hizmet şartı",
+          "value": "Devlet Memurları Kanununa tabi görevlerde 10 yıl",
+          "refs": [
+            "24"
+          ]
+        },
+        {
+          "label": "Uzman yardımcılığı yaş sınırı",
+          "value": "35 yaşını doldurmamış",
+          "refs": [
+            "25"
+          ]
+        },
+        {
+          "label": "Yeterlik sınavı için çalışma süresi",
+          "value": "En az 3 yıl",
+          "refs": [
+            "26"
+          ]
+        },
+        {
+          "label": "Görevlendirilebilecek personel sınırı",
+          "value": "Uzman kadro sayısının %20'si",
+          "refs": [
+            "28"
+          ]
+        },
+        {
+          "label": "Görevlendirme süresi",
+          "value": "2 yıl; 1 yıllık dönemlerle uzatılabilir",
+          "refs": [
+            "28"
+          ]
+        },
+        {
+          "label": "Görevlendirme talebinin karşılanması",
+          "value": "10 iş günü",
+          "refs": [
+            "28"
+          ]
+        },
+        {
+          "label": "Şikâyeti incelenemeyecek hısımlar",
+          "value": "3. dereceye kadar (dâhil) kan ve kayın hısımları",
+          "refs": [
+            "30"
+          ]
+        },
+        {
+          "label": "Başvuru maddesinin yürürlüğü",
+          "value": "Yayımdan 9 ay sonra",
+          "refs": [
+            "36"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "17",
+        "18",
+        "19",
+        "20",
+        "21",
+        "22",
+        "24",
+        "25",
+        "26",
+        "28",
+        "30",
+        "36"
+      ]
+    },
+    {
+      "type": "compare",
+      "title": "Başdenetçi ve denetçi yan yana",
+      "rows": [
+        {
+          "aspect": "Sayı",
+          "left": "Bir",
+          "right": "Beş",
+          "refs": [
+            "4"
+          ]
+        },
+        {
+          "aspect": "Asgari yaş",
+          "left": "Elli yaşını doldurmuş",
+          "right": "Kırk yaşını doldurmuş",
+          "refs": [
+            "10"
+          ]
+        },
+        {
+          "aspect": "Adayları belirleyen",
+          "left": "Komisyon; üç aday",
+          "right": "Komisyonun oluşturduğu alt komisyon; seçilecek sayının üç katı",
+          "refs": [
+            "11"
+          ]
+        },
+        {
+          "aspect": "Seçen organ",
+          "left": "Genel Kurul (gizli oy)",
+          "right": "Komisyon",
+          "refs": [
+            "11"
+          ]
+        },
+        {
+          "aspect": "Dördüncü oylama",
+          "left": "En çok oy alan iki aday",
+          "right": "Seçilecek aday sayısının iki katı kadar aday",
+          "refs": [
+            "11"
+          ]
+        },
+        {
+          "aspect": "Andiçme yeri",
+          "left": "Genel Kurul",
+          "right": "Komisyon",
+          "refs": [
+            "13"
+          ]
+        },
+        {
+          "aspect": "Nitelik kaybında sona erme",
+          "left": "Komisyon tespit eder; Genel Kurul görüşmesiz karar verir",
+          "right": "Komisyon tespit eder ve karar verir",
+          "refs": [
+            "15"
+          ]
+        },
+        {
+          "aspect": "Kesinleşmiş mahkeme kararının sunulduğu yer",
+          "left": "Genel Kurul",
+          "right": "Komisyon",
+          "refs": [
+            "15"
+          ]
+        },
+        {
+          "aspect": "Mali haklar",
+          "left": "En yüksek Devlet memuru",
+          "right": "Bakanlık genel müdürleri",
+          "refs": [
+            "16"
+          ]
+        },
+        {
+          "aspect": "Prime esas kazanç",
+          "left": "En yüksek Devlet memuru esas",
+          "right": "Bakanlık genel müdürleri esas",
+          "refs": [
+            "33"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "4",
+        "10",
+        "11",
+        "13",
+        "15",
+        "16",
+        "33"
+      ]
+    },
+    {
+      "type": "compare",
+      "title": "Ceza soruşturması: Başdenetçi ve denetçiler / Kurum personeli",
+      "rows": [
+        {
+          "aspect": "Soruşturma izni (görevleri sebebiyle işlendiği öne sürülen suçlarda)",
+          "left": "Türkiye Büyük Millet Meclisi Başkanı",
+          "right": "Başdenetçi (Genel Sekreter, uzman ve uzman yardımcıları için)",
+          "refs": [
+            "31",
+            "32"
+          ]
+        },
+        {
+          "aspect": "İzin kararına itiraz mercii",
+          "left": "Danıştayın ilgili dairesi",
+          "right": "Ankara Bölge İdare Mahkemesi",
+          "refs": [
+            "31",
+            "32"
+          ]
+        },
+        {
+          "aspect": "Soruşturmayı yapan",
+          "left": "Yargıtay Cumhuriyet Başsavcısı",
+          "right": "Suçun işlendiği yer Cumhuriyet başsavcısı veya görevlendireceği Cumhuriyet savcısı (diğer personel dâhil)",
+          "refs": [
+            "31",
+            "32"
+          ]
+        },
+        {
+          "aspect": "Kamu davasının görüleceği yer",
+          "left": "Yargıtayın ilgili ceza dairesi",
+          "right": "Aynı yer mahkemesi",
+          "refs": [
+            "31",
+            "32"
+          ]
+        },
+        {
+          "aspect": "Temyiz mercii",
+          "left": "Yargıtay Ceza Genel Kurulu",
+          "right": "Maddede ayrıca düzenlenmemiştir",
+          "refs": [
+            "31",
+            "32"
+          ]
+        },
+        {
+          "aspect": "Hüküm bulunmayan hâller",
+          "left": "Memurlar ve Diğer Kamu Görevlilerinin Yargılanması Hakkında Kanun",
+          "right": "Memurlar ve Diğer Kamu Görevlilerinin Yargılanması Hakkında Kanun",
+          "refs": [
+            "31",
+            "32"
+          ]
+        },
+        {
+          "aspect": "Ağır cezalık suçta suçüstü",
+          "left": "Genel hükümlere tabi",
+          "right": "Genel hükümlere tabi",
+          "refs": [
+            "31",
+            "32"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "31",
+        "32"
+      ]
+    },
+    {
+      "type": "exam_stats",
+      "title": "Sınav der ki",
+      "rows": [
+        {
+          "label": "Bu ünitenin maddelerinden yayındaki soru",
+          "value": "0",
+          "refs": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22",
+            "23",
+            "24",
+            "25",
+            "26",
+            "27",
+            "28",
+            "29",
+            "30",
+            "31",
+            "32",
+            "33",
+            "34",
+            "35",
+            "36",
+            "37"
+          ]
+        },
+        {
+          "label": "Hiç soru çıkmamış",
+          "value": "md 1, md 2, md 3, md 4, md 5, md 6, md 7, md 8, md 9, md 10, md 11, md 12, md 13, md 14, md 15, md 16, md 17, md 18, md 19, md 20, md 21, md 22, md 23, md 24, md 25, md 26, md 27, md 28, md 29, md 30, md 31, md 32, md 33, md 34, md 35, md 36, md 37",
+          "refs": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22",
+            "23",
+            "24",
+            "25",
+            "26",
+            "27",
+            "28",
+            "29",
+            "30",
+            "31",
+            "32",
+            "33",
+            "34",
+            "35",
+            "36",
+            "37"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17",
+        "18",
+        "19",
+        "20",
+        "21",
+        "22",
+        "23",
+        "24",
+        "25",
+        "26",
+        "27",
+        "28",
+        "29",
+        "30",
+        "31",
+        "32",
+        "33",
+        "34",
+        "35",
+        "36",
+        "37"
+      ],
+      "generated": true
+    },
+    {
+      "type": "bridge",
+      "title": "Bu üniteden soru çöz",
+      "articleRefs": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17",
+        "18",
+        "19",
+        "20",
+        "21",
+        "22",
+        "23",
+        "24",
+        "25",
+        "26",
+        "27",
+        "28",
+        "29",
+        "30",
+        "31",
+        "32",
+        "33",
+        "34",
+        "35",
+        "36",
+        "37"
+      ],
+      "generated": true,
+      "rows": [
+        {
+          "label": "Madde kapsamlı seans",
+          "value": "md 1–37, 0 soru",
+          "refs": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22",
+            "23",
+            "24",
+            "25",
+            "26",
+            "27",
+            "28",
+            "29",
+            "30",
+            "31",
+            "32",
+            "33",
+            "34",
+            "35",
+            "36",
+            "37"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,572 @@
+{
+  "unit": {
+    "slug": "kmyk-2",
+    "legislationSlug": "5018-sayili-kamu-mali-yonetimi-ve-kontrol-kanunu",
+    "topicId": "270990de-e156-4db0-b5fb-eb469562dd8a",
+    "title": "Bütçenin Uygulanması: Ödenek, Yüklenme ve Harcama Yetkisi",
+    "subtitle": "Bütçenin yürürlüğe girmesi, ödenek aktarma, yedek ve örtülü ödenek, yüklenmeler, harcama yetkilisi ve gerçekleştirme",
+    "articleFrom": "19",
+    "articleTo": "33",
+    "readingMinutes": 15,
+    "sourceLabel": "AI özeti — 5018 Sayılı Kamu Malî Yönetimi ve Kontrol Kanunu, md 19–33",
+    "articleNos": [
+      "19",
+      "20",
+      "21",
+      "22",
+      "23",
+      "24",
+      "25",
+      "26",
+      "27",
+      "28",
+      "29",
+      "30",
+      "31",
+      "32",
+      "33"
+    ],
+    "generatedBy": "claude-opus-5-5 (ozet-uret.ts)",
+    "sortOrder": 2
+  },
+  "blocks": [
+    {
+      "type": "concept",
+      "title": "Ödenekten ödemeye giden yol",
+      "body": "Bütçede ödenek olması, paranın kendiliğinden harcandığı anlamına gelmez. Zincir şu sırayla işler:\n- **Ödenek:** Bütçede yeterli ödeneği bulunmayan iş için yüklenmeye girişilemez.\n- **Harcama talimatı:** Harcama ancak harcama yetkilisinin talimat vermesiyle yapılabilir. Talimatta işin konusu ve tutarı, süresi, kullanılabilir ödeneği ve gerçekleştirme usulü yer alır.\n- **Yüklenme ve gerçekleştirme:** Talimat üzerine iş yaptırılır, mal veya hizmet alınır; bunun karşılığında ödeme yükümlülüğüne, yani **yüklenmeye** girilir. Gerçekleştirme görevlileri teslim alır ve belgeler.\n- **Ödeme:** Ödeme emri belgesi harcama yetkilisince imzalanır ve tutar hak sahibine ödenir.\n\nYani harcama talimatı yüklenmeden **önce** gelir. Bu zincirde her halkanın bir sorumlusu var; kimin neyi yaptığını ve neden sorumlu olduğunu ayırt etmen gerekir.",
+      "articleRefs": [
+        "26",
+        "31",
+        "32",
+        "33"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Bütçenin kabulü, yayımı ve süresinde çıkmazsa",
+      "body": "**Kabul ve yayım:** TBMM, merkezî yönetim bütçe kanun teklifinin metnini maddeler, gider ve gelir cetvellerini kamu idareleri itibarıyla görüşür ve oylar. Kanun **malî yıl başından önce** Resmî Gazetede yayımlanır.\n\n**Kamu yatırım programı:** Bütçe kanununa uygun olarak hazırlanır. Kanunun yürürlüğe girdiği tarihten itibaren **15 gün** içinde **Cumhurbaşkanı kararıyla** Resmî Gazetede yayımlanır.\n\n**Bütçe süresinde yürürlüğe konulamazsa:**\n1. **Geçici bütçe kanunu** çıkarılır. Ödenekleri, bir önceki yıl bütçe başlangıç ödeneklerinin belirli bir oranı esas alınarak belirlenir.\n2. Geçici bütçe kanunu da çıkarılamazsa, yeni bütçe kabul edilinceye kadar bir önceki yılın bütçesi **yeniden değerleme oranına göre artırılarak** uygulanır.\n\nCari yıl bütçesi yürürlüğe girince bu uygulamalar sona erer. O tarihe kadar yapılan harcamalar, girişilen yüklenmeler ve tahsil olunan gelirler cari yıl bütçesine dahil edilir.\n\n**Ek bütçe:** Ödenekler yetersiz kalırsa veya öngörülmeyen hizmetler için yapılabilir. Şartları: **karşılığı gelir gösterilmek kaydıyla** ve **kanunla**.",
+      "articleRefs": [
+        "19"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Kanunla mı, kararla mı?",
+      "body": "Bütçe, geçici bütçe ve ek bütçe: üçü de **kanunla** yapılır. Ek bütçe için karşılığının gelir olarak gösterilmesi şarttır; bunu atlama.\n\nKamu yatırım programı ise **Cumhurbaşkanı kararıyla** yayımlanır. 15 günlük süre, bütçe kanununun **yürürlüğe girdiği tarihten** başlar.\n\nGeçici bütçe kanunu da çıkarılamazsa önceki yılın bütçesi aynen uygulanmaz; **yeniden değerleme oranına göre artırılarak** uygulanır. Geçici bütçe ödeneklerinin oranı maddede rakamla verilmez, yalnızca 'belirli bir oran' denir. Şıkta somut bir yüzde görürsen dikkatli ol.",
+      "articleRefs": [
+        "19"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Ödenek kullanma esasları",
+      "body": "- **Genel bütçe kapsamındaki idareler:** **Ayrıntılı harcama programı** hazırlar ve vize için Cumhurbaşkanlığına gönderir. Ödenekler, nakit planlaması da dikkate alınarak vize edilen programlara ve serbest bırakma oranlarına göre kullanılır.\n- **Özel bütçeli idareler ve sosyal güvenlik kurumları:** **Ayrıntılı finansman programı** hazırlar ve harcamalarını bu programa uygun yapar.\n- Bu programların hazırlanması, vizesi, uygulanması ve izlenmesine dair usul ve esasları **Cumhurbaşkanlığı** belirler.\n- Kamu idareleri bütçelerindeki **ödeneklerin üzerinde harcama yapamaz**. Ödenekler, tahsis edildikleri amaçlar doğrultusunda yılı içindeki giderler için kullanılır.\n- **İstisna:** Şu borçlar ilgili idarenin **cari yıl bütçesinden** ödenir:\n  - ait olduğu malî yılda ödenemeyen, emanet hesabına alınamayan ve zamanaşımına uğramamış geçen yıllar borçları,\n  - ilama bağlı borçlar.\n- Yılı içinde hizmetin gerektirdiği hâllerde yeni tertipler, gelir kodları ve finansman kodları açılabilir. Bu, Cumhurbaşkanlığınca belirlenen usul ve esaslar çerçevesinde olur.\n- Cari yılda kullanılmayan ödenekler **yıl sonunda iptal edilir**.",
+      "articleRefs": [
+        "20"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Seferberlik ve savaşta savunma ödenekleri",
+      "body": "**Hangi durumlarda:** Genel veya kısmi seferberlik, savaş ilanı veya zorunlu askeri hazırlıkların yapıldığı olağanüstü haller.\n\n**Hangi idareler:** **Millî Savunma Bakanlığı, Jandarma Genel Komutanlığı ve Sahil Güvenlik Komutanlığı.** Bu idarelerin bütçelerindeki mevcut ödenekler, ödenek toplamları aşılmamak şartıyla **birleştirilerek** kullanılabilir.\n\n**Ödenek yetmezse:** Toplam ödenek tutarının **yüzde 15'ine kadar** ek harcama yapılabilir.\n\n**Sevk ve intikal giderleri:** Harcama yetkililerinin onayıyla görevlendirilen mutemetlere avans verilebilir. Avans, gönderilecek ödeneğe istinaden **bir ay** içinde mahsup edilir.\n\nListede Emniyet Genel Müdürlüğü yer almaz.",
+      "articleRefs": [
+        "20"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Ödenek aktarması",
+      "body": "**Bütçeler arası aktarma** (bir idareden diğerine): **Kanunla** yapılır.\n- Ancak genel bütçe ödeneklerinin **yüzde 10'unu** geçmemek kaydıyla, bu aktarmalara ilişkin yetki, işlem, usul ve esaslar **merkezî yönetim bütçe kanununda** belirlenir.\n- Amaç: harcamalarda tasarruf sağlamak, dengeli ve etkili bir bütçe politikası gerçekleştirmek.\n\n**Bütçe içi aktarma:**\n- İdare, aktarma yapılacak tertipteki ödeneğin **yüzde 20'sine** kadar kendisi aktarma yapabilir.\n- Yüzde 20'yi aşan aktarmaları **Cumhurbaşkanlığı** yapar. Sınırı, kurum bütçesinin başlangıç ödenekleri toplamının **yüzde 20'sidir**.\n- Yatırım programına ek yatırım cetvellerindeki projelerde değişiklik yapılırsa, değişikliğin gerektirdiği aktarmaların **tamamını** ilgili idareler yapar.",
+      "articleRefs": [
+        "21"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Hangi tertipten aktarma yapılamaz?",
+      "body": "Şu üç tertipten **diğer tertiplere ödenek aktarılamaz**:\n- personel giderleri tertipleri,\n- aktarma yapılmış tertipler,\n- yedek ödenekten aktarma yapılmış tertipler.\n\nTek istisna: Yatırım programına ek yatırım cetvellerindeki projelerde değişiklik olursa, **aktarma yapılan tertiplerden** diğer tertiplere aktarma yapılabilir.\n\n'Yüzde 20' iki kez geçiyor; karıştırma:\n- İdarenin kendi yetkisinde ölçü, aktarma yapılacak **tertipteki ödenektir**.\n- Cumhurbaşkanlığının sınırında ölçü, **kurum bütçesinin başlangıç ödenekleri toplamıdır**.\n\nBütçeler arasındaki yüzde 10'luk sınır ise **genel bütçe ödeneklerine** göre hesaplanır.",
+      "articleRefs": [
+        "21"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Ödenek gönderme ve yedek ödenek",
+      "body": "**Ödenek gönderme (md 22):**\n- Merkez teşkilatı harcama yetkilileri, merkez dışı birimlere **Ödenek Gönderme Belgesi** düzenleyerek ödenek gönderir.\n- Merkezî yönetimde bu konudaki usul ve esasları belirlemeye **Hazine ve Maliye Bakanı** yetkilidir.\n\n**Yedek ödenek (md 23):**\n- Amaçları: bütçe kanunundaki hizmet ve amaçları gerçekleştirmek, ödenek yetersizliğini gidermek, bütçelerde öngörülmeyen hizmetleri karşılamak.\n- Kimin bütçesine aktarılır: (I) sayılı cetveldeki idareler ile (II) sayılı cetveldeki idarelerden bütçe kanununda gösterilecek olanlar.\n- Sınırı: **genel bütçe ödeneklerinin yüzde 2'si**.\n- Aktarma yetkisi: **Cumhurbaşkanı**.\n- Yıl içindeki aktarmaların tür, tutar ve idareler itibarıyla dağılımı, yılın bitimini takip eden **15 gün** içinde **Cumhurbaşkanlığınca** ilan edilir.",
+      "articleRefs": [
+        "22",
+        "23"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Örtülü ödenek",
+      "body": "**Tanım:** Cumhurbaşkanlığı bütçesine konulan ödenektir. Şu amaçlarla ilgili Devlet ve Hükümet icapları için kullanılır:\n- kapalı istihbarat ve kapalı savunma hizmetleri,\n- Devletin millî güvenliği ve yüksek menfaatleri ile Devlet itibarının gerekleri,\n- siyasi, sosyal ve kültürel amaçlar,\n- olağanüstü hizmetler.\n\nKanunlarla veya Cumhurbaşkanlığı kararnameleriyle verilen görevlerin gerektirdiği **istihbarat hizmetlerini yürüten diğer kamu idarelerinin** bütçelerine de konulabilir.\n\n**Kullanılamaz:**\n- Cumhurbaşkanının ve ailesinin kişisel harcamaları,\n- siyasi partilerin idare, propaganda ve seçim ihtiyaçları.\n\n**Sınır:** İlgili yılda bu amaçla ayrılan ödenekler toplamı, genel bütçe başlangıç ödenekleri toplamının **binde 5'ini** geçemez.\n\n**Cumhurbaşkanının belirledikleri:** kullanılma yeri, giderin kim tarafından yapılacağı, hesapların tutulma ve kapatılma yöntemi, gideri yapan değişirse yeni yetkiliye aktarılacak belgeler. Giderler de Cumhurbaşkanının belirlediği esaslara göre gerçekleştirilir ve ödenir.",
+      "articleRefs": [
+        "24"
+      ]
+    },
+    {
+      "type": "numbers",
+      "title": "Sayılar ve süreler (md 19–24)",
+      "rows": [
+        {
+          "label": "Kamu yatırım programının Resmî Gazetede yayımı",
+          "value": "Bütçe kanununun yürürlüğe girdiği tarihten itibaren 15 gün içinde",
+          "refs": [
+            "19"
+          ]
+        },
+        {
+          "label": "Olağanüstü hâlde savunma bütçelerinde ek harcama",
+          "value": "Toplam ödenek tutarının yüzde 15'ine kadar",
+          "refs": [
+            "20"
+          ]
+        },
+        {
+          "label": "Sevk ve intikal avansının mahsubu",
+          "value": "Bir ay içinde",
+          "refs": [
+            "20"
+          ]
+        },
+        {
+          "label": "Bütçeler arası aktarma (bütçe kanunuyla belirlenen yetki)",
+          "value": "Genel bütçe ödeneklerinin yüzde 10'u",
+          "refs": [
+            "21"
+          ]
+        },
+        {
+          "label": "İdarenin kendi bütçesi içinde aktarma",
+          "value": "Aktarma yapılacak tertipteki ödeneğin yüzde 20'si",
+          "refs": [
+            "21"
+          ]
+        },
+        {
+          "label": "Yüzde 20'yi aşan aktarma (Cumhurbaşkanlığı)",
+          "value": "Kurum bütçesi başlangıç ödenekleri toplamının yüzde 20'si",
+          "refs": [
+            "21"
+          ]
+        },
+        {
+          "label": "Yedek ödenek",
+          "value": "Genel bütçe ödeneklerinin yüzde 2'si",
+          "refs": [
+            "23"
+          ]
+        },
+        {
+          "label": "Yedek ödenek aktarmalarının ilanı",
+          "value": "Yılın bitimini takip eden 15 gün içinde",
+          "refs": [
+            "23"
+          ]
+        },
+        {
+          "label": "Örtülü ödenek üst sınırı",
+          "value": "Genel bütçe başlangıç ödenekleri toplamının binde 5'i",
+          "refs": [
+            "24"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "19",
+        "20",
+        "21",
+        "23",
+        "24"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Kamu yatırım projeleri",
+      "body": "- Kamu yatırım projeleri ilgili mevzuat hükümleri çerçevesinde hazırlanır, uygulanır ve izlenir.\n- **Vizeye bağlı olmayan ve ek yatırım cetvellerinde yer almayanlar:** Millî Savunma Bakanlığı, Jandarma Genel Komutanlığı ve Sahil Güvenlik Komutanlığı bütçelerinin mal ve hizmet alım tertiplerindeki şu kalemler:\n  - savunma sektörü, altyapı, inşa, iskân ve tesisler,\n  - NATO altyapı yatırımlarının gerektirdiği inşa ve tesisler ile bunlara ilişkin kamulaştırmalar,\n  - stratejik hedef planı içindeki alım ve hizmetler.\n- (III) sayılı cetveldeki idarelerin yatırım nitelikli projeleri, yatırım programında **bilgi için** yer alır.\n- Sosyal güvenlik kurumları ve mahallî idarelerin yatırımlarının uygulanması ve izlenmesine ilişkin usul ve esasları **Cumhurbaşkanlığı** belirler.\n- **Rapor:** Projelerin gerçekleşme ve uygulama sonuçları, izleyen yılın **Mart ayı sonuna** kadar rapor hâlinde **Sayıştay Başkanlığına, Cumhurbaşkanlığına ve Hazine ve Maliye Bakanlığına** gönderilir.\n- **Yapılabilirlik etüdü:** Maliyeti, Cumhurbaşkanı Kararında belirlenecek sınırın üzerindeki yeni proje teklifleri bu etütle birlikte sunulur. Etüt, fayda-maliyet veya maliyet-etkinlik analizleri ile çevresel analizleri içerir. **Afetlerle ilgili olanlar hariçtir.**",
+      "articleRefs": [
+        "25"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Yüklenme",
+      "body": "**Yüklenme:** İş yaptırılması, mal veya hizmet alınması karşılığında geleceğe yönelik bir ödeme yükümlülüğüne girilmesidir. Dayanağı şunlardan biri olmalıdır:\n- usulüne uygun düzenlenmiş sözleşme esasları,\n- kanun hükmü,\n- Cumhurbaşkanlığı kararnamesi hükmü.\n\n**Kurallar:**\n- Bütçede **yeterli ödeneği bulunmayan** işler için yüklenmeye girişilemez.\n- Yüklenme süresi **malî yılla sınırlıdır**.\n- Harcama yetkilileri, **tahsis edilen ödenekler dahilinde** yüklenmeye girebilir.\n- Yüklenilen tutara ait ödenekler **saklı tutulur**; başka iş, mal veya hizmet için kullanılamaz.",
+      "articleRefs": [
+        "26"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Ertesi yıla geçen yüklenmeler",
+      "body": "**Hangi işler için:** Niteliğinden dolayı malî yılla sınırlı tutulamayan ve sürekliliği bulunan işler.\n\n**Şartlar:**\n- her iş itibarıyla, bütçelerinde öngörülen ödeneklerin **yüzde 50'sini** geçmemek,\n- izleyen yılın **Haziran** ayını geçmemek,\n- yüklenme süresi **12 ayı** aşmamak,\n- **ilgili üst yöneticinin onayı**.\n\n**Kapsamdaki işler:**\n- **a)** TSK'nın yapım, onarım, etüt ve proje işleri, araştırma-geliştirme projeleri, giyecek ve yiyecek alımları, makine-teçhizat ve silah-mühimmat-teçhizat alımları ile bunların bakım, onarım ve imalatı\n- **b)** Yiyecek, yakacak, akaryakıt ve madeni yağ\n- **c)** Temini ve korunması güç ilaç, aşı, serum ve tıbbi sarf malzemeleri\n- **d)** Süreli yayın alımı; taşıma, koruma ve güvenlik, temizlik ve yemek hizmetleri\n- **e)** Taşıtların malî sorumluluk sigortası; yurt dışından tedarik edilen silah, silah-teçhizat ve mühimmat sevki için nakliyat sigortası\n- **f)** Makine-teçhizat, yol ve otoyol, bilgisayar ve haberleşme sistemlerinin bakımı; her türlü onarım; elektronik bilgi erişim hizmetleri\n- **g)** Emniyet Genel Müdürlüğü, Jandarma Genel Komutanlığı ve Sahil Güvenlik Komutanlığının yapım, onarım, etüt-proje, araştırma-geliştirme, yiyecek-giyecek, makine-teçhizat, silah-mühimmat alımları ile bunların bakım, onarım ve imalatı\n- **h)** Milli İstihbarat Teşkilatı Müsteşarlığının etüt-proje, araştırma-geliştirme, makine, silah-mühimmat, teçhizat ve sistem alımları ile bunların bakım, onarım ve imalatı\n- **ı)** Türkiye İş Kurumunun aktif işgücü hizmetleri kapsamındaki kurs ve programları\n\n**İstisna:** (d) bendindeki işler için yüzde 50 sınırı **Millî Eğitim Bakanlığı** için aranmaz.\n\n**Not:** Milli İstihbarat Teşkilatı Müsteşarlığı ifadesi madde metnindeki hâliyle verilmiştir.",
+      "articleRefs": [
+        "27"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Gelecek yıllara yaygın yüklenmeler",
+      "body": "- **Yatırım projeleri:** Merkezî yönetim kapsamındaki idareler, bir malî yıl içinde tamamlanamayan yatırım projeleri için girişebilir.\n- **TSK Stratejik Hedef Planındaki projeler:** 3833 sayılı Kanun çerçevesinde **Millî Savunma Bakanlığı** yetkilidir.\n- **Asayiş ve güvenlik alımları:** Emniyet Genel Müdürlüğü, Jandarma Genel Komutanlığı ve Sahil Güvenlik Komutanlığının bir malî yılda tamamlanamayan alımlarında **İçişleri Bakanlığı** yetkilidir.\n- **Dış temsilcilikler:** Dışişleri Bakanlığı, **Cumhurbaşkanlığının onayıyla** yabancı ülkelerde bina veya arsa satın alabilir, bina yaptırabilir veya kiralayabilir.\n- **Kiralama ve sayılan hizmetler:**\n  - Şartlar: yılı bütçesinde ödeneği bulunması; merkezî yönetim idareleri için ayrıca Cumhurbaşkanlığının onayı.\n  - Kapsam: satın alınması ekonomik olmayan makine-teçhizat, cihaz ve taşıtlar; hava ambulansı ve yangınla mücadele için hava ve deniz araçlarının kiralanması veya finansal kiralanması; afet lojistik depolarının işletilmesi; yemek ve personel taşıma; telefon, acil çağrı, internet ve elektronik haberleşme; elektrik ve doğalgaz; harita, plan, proje, etüt ve müşavirlik; 6114 sayılı Kanuna göre yapılan sınav işlemleriyle sınırlı olarak basım, dağıtım, nakil, kamera kaydı ve izlenmesi ile sınav güvenliği ve gizliliğine ilişkin alımlar; ulusal araştırma kurumlarının yayın alımları; orman ağaçlandırma ve amenajman; kit karşılığı cihaz, ilaç, aşı ve anti-serum alımları.\n  - Süre: **üç yılı geçmemek** üzere (üst sınır); finansal kiralamada **dört yıl**.\n  - Onay: **üst yönetici**.\n- **Cumhurbaşkanının yetkisi:**\n  - sayılanlar dışındaki, birden fazla yıla yaygın olması zorunlu veya ekonomik alımları belirlemek (yüklenme süresi **3 yılı** geçmemek üzere),\n  - bu fıkradaki süreleri **beş katına** kadar artırmak.\n- **Sürekli hizmet alımları:** Genel yönetim idarelerinin, 4734 sayılı Kanunun 62 nci maddesinin birinci fıkrasının (e) bendi kapsamındaki sürekli nitelikteki hizmet alımlarında yüklenme süresi **3 yıldır**. Zorunlu hâllerde, gerekçe gösterilerek **üst yöneticinin onayıyla kısaltılabilir**.",
+      "articleRefs": [
+        "28"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Ertesi yıl mı, gelecek yıllar mı?",
+      "body": "İki maddeyi karıştırma.\n\n**Md 27, ertesi yıla geçen yüklenme:** Sürekliliği olan işin bir sonraki yıla sarkmasıdır. Ölçüleri:\n- ödeneğin **yüzde 50'si**,\n- izleyen yılın **Haziran** ayı,\n- en fazla **12 ay**,\n- üst yönetici onayı.\n\n**Md 28, gelecek yıllara yaygın yüklenme:** Birden çok yılı kapsar. Kiralama ve sayılan hizmetlerde süre **üç yılı geçemez** (üst sınır), finansal kiralamada **dört yıl**dır. 4734 sayılı Kanunun 62 nci maddesinin (e) bendi kapsamındaki sürekli hizmet alımlarında ise yüklenme süresi doğrudan **üç yıldır**; gerekçeyle kısaltılabilir. Biri tavan, öteki belirlenmiş süredir.\n\n**Merciler sık karıştırılır:**\n- TSK Stratejik Hedef Planı projeleri: Millî Savunma Bakanlığı\n- EGM, Jandarma ve Sahil Güvenlik asayiş alımları: İçişleri Bakanlığı\n- Dış temsilcilik binası: Dışişleri Bakanlığı, ama Cumhurbaşkanlığının onayıyla\n- Süreleri beş katına kadar artırmak: Cumhurbaşkanı\n\nMillî Eğitim Bakanlığı istisnası yalnızca (d) bendi için ve yalnızca yüzde 50 sınırını kaldırır.",
+      "articleRefs": [
+        "27",
+        "28"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Kamu kaynağı, yardım ve Cumhurbaşkanının bütçe yetkileri",
+      "body": "**Kamu kaynağı (md 29):**\n- Gerçek veya tüzel kişilere, **kanunda veya Cumhurbaşkanlığı kararnamesinde dayanağı olmadan** kamu kaynağı kullandırılamaz, yardımda bulunulamaz, menfaat sağlanamaz.\n- **İstisna:** Genel yönetim idarelerinin bütçelerinde öngörülmüş olmak kaydıyla, kamu yararı gözetilerek dernek, vakıf, birlik, kurum, kuruluş, sandık ve benzeri teşekküllere yardım yapılabilir.\n- Bu yardımların esas ve usulleri, **Cumhurbaşkanı tarafından çıkarılan yönetmelikle** belirlenir.\n\n**Cumhurbaşkanının yetkileri (md 30):**\n- Bütçe uygulamasında gerekli önlemleri almak, standart belirlemek ve sınırlama koymak.\n- Kamu istihdam politikasına yön vermek.\n- Harcama ve gerçekleşmeleri izlemek; ödeneklerin dağıtım ve kullanımını esaslara bağlamak.\n- Kamu idareleri için uyulması zorunlu düzenlemeler yapmak.\n\n**Bilgi verme zorunluluğu:** Genel yönetim idareleri ile merkezî yönetim bütçesinden yardım alan kurum, kuruluş, vakıf, dernek ve benzerleri şunları istenirse **Cumhurbaşkanlığına** vermek zorundadır: gelir-gider tahminleri, malî tablolar, borç-alacak durumları, personel giderlerine ilişkin bilgi ve belgeler. Bilgi vermeyen veya uygun harcama yapmayanlar hakkında önlem almaya **Cumhurbaşkanı** yetkilidir.\n\n**Temmuz ayı içinde kamuoyuna açıklama:**\n- Genel yönetim idareleri: ilk altı aylık uygulama sonuçları, ikinci altı aya ilişkin beklenti ve hedefler, faaliyetler.\n- Cumhurbaşkanlığı: bütçe kanununun ilk altı aylık sonuçları, finansman durumu, ikinci altı aya ilişkin beklenti ve hedefler ile faaliyetleri kapsayan malî durum.",
+      "articleRefs": [
+        "29",
+        "30"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Harcama yetkilisi",
+      "body": "- **Genel kural:** Bütçeyle ödenek tahsis edilen her harcama biriminin **en üst yöneticisi** harcama yetkilisidir.\n- **Güçlük olan idareler:** Teşkilat yapısı veya personel durumu nedeniyle güçlük bulunan ya da harcama birimleri sınıflandırılmayan idarelerde harcama yetkisini üst yönetici veya onun belirleyeceği kişiler yürütür. Bunun için uygun görüş gerekir:\n  - mahallî idarelerde **İçişleri veya Çevre ve Şehircilik Bakanlığının**,\n  - diğer idarelerde **Hazine ve Maliye Bakanlığının**.\n- **Yükseköğretim Kurulu, üniversiteler ve yüksek teknoloji enstitüleri:**\n  - Harcama yetkilileri **ödenek gönderme belgesiyle** belirlenir. Ödenek gönderilen birim harcama birimidir; o birimin en üst yöneticisi harcama yetkilisidir.\n  - Ödeneklerin birimlere dağılımının planlanması ve kullanılması: **Cumhurbaşkanlığı** belirler.\n  - Ödenek gönderme belgesine bağlanması: **Hazine ve Maliye Bakanlığı** belirler.\n- Genel yönetimde harcama yetkililerinin belirlenmesi, bir üst kademede birleştirilmesi ve devrine ilişkin usul ve esasları **Hazine ve Maliye Bakanlığı** belirler.\n- **Harcama sınırı:** Harcama yetkilisi bütçedeki ödenek kadar harcama yapabilir. Ödenek gönderme belgesiyle ödenek verilen harcama yetkilisi ise tahsis edilen tutar kadar.\n\n**Not:** Çevre ve Şehircilik Bakanlığı adı madde metnindeki hâliyle verilmiştir.",
+      "articleRefs": [
+        "31"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Yetki devredilir, sorumluluk devredilmez",
+      "body": "Harcama yetkisinin devredilmesi, yetkiyi devredenin **idarî sorumluluğunu ortadan kaldırmaz**. 'Devredince sorumluluk tamamen devralana geçer' şıkkı yanlıştır.\n\nKurul kararıyla yapılan harcamalarda durum farklıdır. Kanunların veya Cumhurbaşkanlığı kararnamelerinin verdiği yetkiyle yönetim kurulu, icra komitesi, komisyon ve benzeri kurul kararıyla harcama yapılırsa, harcama yetkisinden doğan sorumluluk **kurul, komite veya komisyona** aittir.\n\nUygun görüş merciini de karıştırma: mahallî idarelerde İçişleri veya Çevre ve Şehircilik Bakanlığı, diğer idarelerde Hazine ve Maliye Bakanlığı.\n\n**Not:** Çevre ve Şehircilik Bakanlığı adı madde metnindeki hâliyle verilmiştir.",
+      "articleRefs": [
+        "31"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Harcama talimatı ve giderin gerçekleştirilmesi",
+      "body": "**Harcama talimatı (md 32):** Bütçeden harcama, ancak harcama yetkilisinin **harcama talimatı** vermesiyle yapılabilir.\n- Talimatta yer alanlar: hizmet gerekçesi, işin konusu ve tutarı, süresi, kullanılabilir ödenek, gerçekleştirme usulü, gerçekleştirme görevlilerine ilişkin bilgiler.\n- Harcama yetkilisi şunlardan sorumludur: talimatın bütçe ilke ve esaslarına, kanun ve diğer mevzuata uygunluğu; ödeneklerin **etkili, ekonomik ve verimli** kullanılması.\n\n**Gerçekleştirme (md 33):**\n- İş, mal veya hizmetin usulüne uygun alındığı ya da gerçekleştirildiği, görevlendirilmiş kişi veya komisyonlarca onaylanmalı ve gerçekleştirme belgeleri düzenlenmelidir.\n- Giderin gerçekleştirilmesi şu iki adımla **tamamlanır**: görevlinin düzenlediği **ödeme emri belgesinin** harcama yetkilisince imzalanması ve tutarın hak sahibine ödenmesi.\n- **Gerçekleştirme görevlileri** harcama talimatı üzerine şunları yapar: işi yaptırır, mal veya hizmeti alır, teslim alma işlemlerini yapar, belgelendirir, ödeme için gerekli belgeleri hazırlar. Bu işlemlerden sorumludurlar.\n- Ortak elektronik veri tabanından yapılan harcamalarda **veri giriş işlemleri gerçekleştirme görevi sayılır**. Usul ve esasları Hazine ve Maliye Bakanlığı belirler.\n\n**Gerçekleştirme belgelerinin şekil ve türleri** yönetmeliklerle belirlenir:\n- merkezî yönetim için **Hazine ve Maliye Bakanlığı**,\n- mahallî idareler için **İçişleri veya Çevre ve Şehircilik Bakanlığı**,\n- sosyal güvenlik kurumları için bağlı veya ilgili oldukları bakanlıklar.\n\nMahallî idareler ve sosyal güvenlik kurumları için Hazine ve Maliye Bakanlığının uygun görüşü alınır. Kamu borç yönetimine ilişkin giderler de bu kapsamdadır.\n\n**Not:** Çevre ve Şehircilik Bakanlığı adı madde metnindeki hâliyle verilmiştir.",
+      "articleRefs": [
+        "32",
+        "33"
+      ]
+    },
+    {
+      "type": "numbers",
+      "title": "Sayılar ve süreler (md 25–33)",
+      "rows": [
+        {
+          "label": "Yatırım gerçekleşme ve uygulama raporu",
+          "value": "İzleyen yılın Mart ayı sonuna kadar",
+          "refs": [
+            "25"
+          ]
+        },
+        {
+          "label": "Yüklenme süresi (genel kural)",
+          "value": "Malî yılla sınırlı",
+          "refs": [
+            "26"
+          ]
+        },
+        {
+          "label": "Ertesi yıla geçen yüklenme oranı",
+          "value": "Her iş itibarıyla ödeneklerin yüzde 50'si",
+          "refs": [
+            "27"
+          ]
+        },
+        {
+          "label": "Ertesi yıla geçen yüklenme son sınırı",
+          "value": "İzleyen yılın Haziran ayı",
+          "refs": [
+            "27"
+          ]
+        },
+        {
+          "label": "Ertesi yıla geçen yüklenme süresi",
+          "value": "12 ayı aşmamak üzere",
+          "refs": [
+            "27"
+          ]
+        },
+        {
+          "label": "Kiralama ve sayılan hizmetlerde yaygın yüklenme",
+          "value": "En fazla 3 yıl (üç yılı geçmemek üzere)",
+          "refs": [
+            "28"
+          ]
+        },
+        {
+          "label": "Finansal kiralama",
+          "value": "4 yıl",
+          "refs": [
+            "28"
+          ]
+        },
+        {
+          "label": "Cumhurbaşkanının belirleyeceği diğer alımlar",
+          "value": "Yüklenme süresi 3 yılı geçmemek üzere",
+          "refs": [
+            "28"
+          ]
+        },
+        {
+          "label": "Sürelerin artırılması (Cumhurbaşkanı)",
+          "value": "Beş katına kadar",
+          "refs": [
+            "28"
+          ]
+        },
+        {
+          "label": "4734 sayılı Kanun md 62 (e) kapsamı sürekli hizmet alımları",
+          "value": "3 yıl; gerekçeyle üst yönetici onayıyla kısaltılabilir",
+          "refs": [
+            "28"
+          ]
+        },
+        {
+          "label": "Altı aylık uygulama sonuçlarının açıklanması",
+          "value": "Temmuz ayı içinde",
+          "refs": [
+            "30"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "25",
+        "26",
+        "27",
+        "28",
+        "30"
+      ]
+    },
+    {
+      "type": "compare",
+      "title": "Yedek ödenek ve örtülü ödenek",
+      "rows": [
+        {
+          "aspect": "Amaç",
+          "left": "Hizmet ve amaçları gerçekleştirmek, ödenek yetersizliğini gidermek, öngörülmeyen hizmetler",
+          "right": "Kapalı istihbarat ve kapalı savunma, millî güvenlik ve yüksek menfaatler, Devlet itibarı, siyasi-sosyal-kültürel amaçlar, olağanüstü hizmetler",
+          "refs": [
+            "23",
+            "24"
+          ]
+        },
+        {
+          "aspect": "Yer",
+          "left": "(I) sayılı cetveldeki idareler ile (II) sayılı cetvelden bütçe kanununda gösterilecek idarelerin bütçelerine aktarılmak üzere",
+          "right": "Cumhurbaşkanlığı bütçesi; istihbarat hizmeti yürüten diğer kamu idarelerinin bütçeleri",
+          "refs": [
+            "23",
+            "24"
+          ]
+        },
+        {
+          "aspect": "Üst sınır",
+          "left": "Genel bütçe ödeneklerinin yüzde 2'si",
+          "right": "Genel bütçe başlangıç ödenekleri toplamının binde 5'i",
+          "refs": [
+            "23",
+            "24"
+          ]
+        },
+        {
+          "aspect": "Yetkili",
+          "left": "Aktarma yetkisi: Cumhurbaşkanı",
+          "right": "Kullanılma yeri, gideri yapan, hesap usulü: Cumhurbaşkanı",
+          "refs": [
+            "23",
+            "24"
+          ]
+        },
+        {
+          "aspect": "Ayırt edici hüküm",
+          "left": "Aktarmalar, yılın bitimini takip eden 15 gün içinde Cumhurbaşkanlığınca ilan edilir",
+          "right": "Cumhurbaşkanının ve ailesinin kişisel harcamaları ile siyasi partilerin idare, propaganda ve seçim ihtiyaçlarında kullanılamaz",
+          "refs": [
+            "23",
+            "24"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "23",
+        "24"
+      ]
+    },
+    {
+      "type": "compare",
+      "title": "Ertesi yıla geçen ve gelecek yıllara yaygın yüklenme",
+      "rows": [
+        {
+          "aspect": "Kapsam",
+          "left": "Niteliğinden dolayı malî yılla sınırlı tutulamayan ve sürekliliği bulunan sayılı iş ve hizmetler",
+          "right": "Bir malî yılda tamamlanamayan yatırım projeleri; sayılan kiralama, hizmet ve alımlar",
+          "refs": [
+            "27",
+            "28"
+          ]
+        },
+        {
+          "aspect": "Ölçü",
+          "left": "Her iş itibarıyla ödeneklerin yüzde 50'si",
+          "right": "Kiralama ve hizmetlerde yılı bütçesinde ödeneği bulunması",
+          "refs": [
+            "27",
+            "28"
+          ]
+        },
+        {
+          "aspect": "Süre",
+          "left": "İzleyen yılın Haziran ayını geçmemek; en fazla 12 ay",
+          "right": "Kiralama ve hizmetlerde en fazla 3 yıl; finansal kiralamada 4 yıl; Cumhurbaşkanı bu süreleri beş katına kadar artırabilir",
+          "refs": [
+            "27",
+            "28"
+          ]
+        },
+        {
+          "aspect": "Onay",
+          "left": "İlgili üst yönetici",
+          "right": "Üst yönetici (merkezî yönetim için Cumhurbaşkanlığı onayıyla); TSK Stratejik Hedef Planı: Millî Savunma Bakanlığı; asayiş alımları: İçişleri Bakanlığı; dış temsilcilik: Dışişleri, Cumhurbaşkanlığı onayıyla",
+          "refs": [
+            "27",
+            "28"
+          ]
+        },
+        {
+          "aspect": "Özel hüküm",
+          "left": "(d) bendinde yüzde 50 sınırı Millî Eğitim Bakanlığı için aranmaz",
+          "right": "4734 sayılı Kanun md 62 (e) kapsamındaki sürekli hizmet alımlarında süre 3 yıl; gerekçeyle kısaltılabilir",
+          "refs": [
+            "27",
+            "28"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "27",
+        "28"
+      ]
+    },
+    {
+      "type": "exam_stats",
+      "title": "Sınav der ki",
+      "rows": [
+        {
+          "label": "Bu ünitenin maddelerinden yayındaki soru",
+          "value": "0",
+          "refs": [
+            "19",
+            "20",
+            "21",
+            "22",
+            "23",
+            "24",
+            "25",
+            "26",
+            "27",
+            "28",
+            "29",
+            "30",
+            "31",
+            "32",
+            "33"
+          ]
+        },
+        {
+          "label": "Hiç soru çıkmamış",
+          "value": "md 19, md 20, md 21, md 22, md 23, md 24, md 25, md 26, md 27, md 28, md 29, md 30, md 31, md 32, md 33",
+          "refs": [
+            "19",
+            "20",
+            "21",
+            "22",
+            "23",
+            "24",
+            "25",
+            "26",
+            "27",
+            "28",
+            "29",
+            "30",
+            "31",
+            "32",
+            "33"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "19",
+        "20",
+        "21",
+        "22",
+        "23",
+        "24",
+        "25",
+        "26",
+        "27",
+        "28",
+        "29",
+        "30",
+        "31",
+        "32",
+        "33"
+      ],
+      "generated": true
+    },
+    {
+      "type": "bridge",
+      "title": "Bu üniteden soru çöz",
+      "articleRefs": [
+        "19",
+        "20",
+        "21",
+        "22",
+        "23",
+        "24",
+        "25",
+        "26",
+        "27",
+        "28",
+        "29",
+        "30",
+        "31",
+        "32",
+        "33"
+      ],
+      "generated": true,
+      "rows": [
+        {
+          "label": "Madde kapsamlı seans",
+          "value": "md 19–33, 0 soru",
+          "refs": [
+            "19",
+            "20",
+            "21",
+            "22",
+            "23",
+            "24",
+            "25",
+            "26",
+            "27",
+            "28",
+            "29",
+            "30",
+            "31",
+            "32",
+            "33"
+          ]
+        }
+      ]
+    }
+  ]
+}

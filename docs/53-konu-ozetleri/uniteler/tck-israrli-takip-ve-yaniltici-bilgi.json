@@ -1,0 +1,353 @@
+{
+  "unit": {
+    "slug": "tck-israrli-takip-ve-yaniltici-bilgi",
+    "legislationSlug": "turk-ceza-kanunu",
+    "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+    "title": "Israrlı takip ve halkı yanıltıcı bilgiyi alenen yayma",
+    "subtitle": "TCK md 123/A ve 217/A: hareketler, saik, nitelikli hâller, artırım ve şikâyet",
+    "articleFrom": "123/A",
+    "articleTo": "217/A",
+    "readingMinutes": 7,
+    "sourceLabel": "AI özeti — Türk Ceza Kanunu, md 123/A, 217/A",
+    "articleNos": [
+      "123/A",
+      "217/A"
+    ],
+    "generatedBy": "claude-opus-5-5 (ozet-uret.ts)",
+    "sortOrder": 15
+  },
+  "blocks": [
+    {
+      "type": "concept",
+      "title": "Israrlı takip: kilit sözcük \"ısrarlı\"",
+      "body": "Md 123/A'nın cezalandırdığı davranış iki yoldan biriyle yapılır: birini ısrarlı bir şekilde **fiziken takip etmek** ya da haberleşme ve iletişim araçlarını, bilişim sistemlerini veya üçüncü kişileri kullanarak onunla **temas kurmaya çalışmak**. Bunun mağdurda bir iz bırakması gerekir. Mağdur ya ciddi bir huzursuzluk yaşamalı ya da kendisinin veya yakınlarından birinin güvenliğinden endişe duymalıdır. Soruyu okurken üç şeyi ara: ısrar, bu iki yoldan biriyle yapılan takip veya temas girişimi ve mağdurdaki bu sonuç.",
+      "articleRefs": [
+        "123/A"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Temel hâl: hareket, sonuç, ceza",
+      "body": "**Hareket** (ısrarlı bir şekilde):\n- fiziken takip etmek, **ya da**\n- haberleşme ve iletişim araçlarını, bilişim sistemlerini veya üçüncü kişileri kullanarak temas kurmaya çalışmak.\n\n**Sonuç** (bir kimse üzerinde):\n- ciddi bir huzursuzluk oluşması, **ya da**\n- kendisinin veya yakınlarından birinin güvenliğinden endişe duyması.\n\n**Ceza:** Faile altı aydan iki yıla kadar hapis cezası verilir.",
+      "articleRefs": [
+        "123/A"
+      ]
+    },
+    {
+      "type": "concept",
+      "title": "Temasın kurulması gerekmez, girişim yeter",
+      "body": "Madde \"temas kurmaya çalışmak\" der. Yani temasın kurulması gerekmez, girişim tek başına harekettir. Ama girişim metinde sayılan yollardan biriyle yapılmalıdır: haberleşme ve iletişim araçları, bilişim sistemleri ya da üçüncü kişiler. Üçüncü kişi kullanıldığında girişim mağdura doğrudan yöneltilmiş olmaz, yine de kapsamdadır. Sonuç şartı ise değişmez: mağdurda ciddi bir huzursuzluk ya da güvenlik endişesi oluşmalıdır.",
+      "articleRefs": [
+        "123/A"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "“Telefon, gürültü, hukuka aykırı başka davranış” şartı 123/A'nın değil",
+      "body": "Bir öncül, ısrarlı takibin oluşması için telefonla rahatsız etmeyi, gürültü yapmayı ya da \"hukuka aykırı başka davranışı\" şart koşabilir. Bu kalıp md 123/A'nın metninde **yok**; md 123'ün (kişilerin huzur ve sükûnunu bozma) sözleridir. Maddenin saydığı yollar yalnızca ikidir: fiziken takip etmek ya da araçlar, bilişim sistemleri veya üçüncü kişiler üzerinden temas kurmaya çalışmak. Telefonla ulaşmaya çalışmak elbette haberleşme aracıyla temas girişimidir. Yanlış olan, bu kalıbın suçun şartı gibi sunulmasıdır. Öncülü her zaman maddenin kendi kelimeleriyle karşılaştır.",
+      "articleRefs": [
+        "123/A",
+        "123"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Nitelikli hâller: bir yıldan üç yıla",
+      "body": "Suçun aşağıdaki hâllerden biriyle işlenmesi hâlinde faile **bir yıldan üç yıla kadar hapis cezası** verilir:\n\n- **a)** Çocuğa ya da ayrılık kararı verilen veya boşandığı eşe karşı işlenmesi,\n- **b)** Mağdurun okulunu, iş yerini, konutunu değiştirmesine ya da okulunu veya işini bırakmasına neden olması,\n- **c)** Hakkında uzaklaştırma ya da konuta, okula veya iş yerine yaklaşmama tedbirine karar verilen fail tarafından işlenmesi.",
+      "articleRefs": [
+        "123/A"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Hakkında tedbir kararı bulunan fail: cezası artar",
+      "body": "\"Uzaklaştırma veya yaklaşmama tedbiri verilen failin işlemesi cezayı artırır\" diye bir öncül görürsen bu **doğru**dur. (c) bendi tam olarak bunu söyler. Bu durumda ceza, temel hâldeki altı aydan iki yıla kadar hapis yerine bir yıldan üç yıla kadar hapistir. Bentlerin içeriğini de karıştırma. Okul, iş yeri veya konut değiştirme ya da okulu veya işi bırakma (b) bendindedir. Çocuk ve ayrılık kararı verilen veya boşanılan eş ise (a) bendindedir.",
+      "articleRefs": [
+        "123/A"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Israrlı takip şikâyete bağlıdır",
+      "body": "Md 123/A'da düzenlenen suçun **soruşturulması ve kovuşturulması şikâyete bağlıdır.**\n\nBu kural maddenin tamamı için konmuştur. Temel hâl de nitelikli hâller de şikâyete bağlıdır.",
+      "articleRefs": [
+        "123/A"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "\"Resen yapılır\" ve \"ayrıca başka suçtan ceza\": ikisi de yanlış",
+      "body": "Israrlı takip sorularında iki yanlış öncül sık çıkar.\n\nBirincisi: \"Soruşturma ve kovuşturma resen yapılır.\" Bu **yanlış**. Madde açıkça şikâyete bağlı der.\n\nİkincisi: \"Israrlı takip oluştuğunda ayrıca kişilerin huzur ve sükûnunu bozma suçundan da ceza verilir.\" Md 123/A böyle bir hüküm içermez. Maddedeki ceza, temel hâl ve nitelikli hâller olmak üzere iki kademeden ibarettir.",
+      "articleRefs": [
+        "123/A"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Fail herkes olabilir, mağdur \"bir kimse\"",
+      "body": "Madde, fail için özel bir sıfat aramaz ve doğrudan \"faile\" der. Mağdur da metinde \"bir kimse\" olarak geçer. Mağdurun kim olduğu yalnız cezanın ağırlığını etkiler. Mağdur çocuksa ya da ayrılık kararı verilen veya boşanılan eşse nitelikli hâl uygulanır. Failin kim olduğu da bir yerde önem kazanır: hakkında uzaklaştırma veya yaklaşmama tedbirine karar verilmiş olması cezayı artırır.",
+      "articleRefs": [
+        "123/A"
+      ]
+    },
+    {
+      "type": "numbers",
+      "title": "Israrlı takip: sayılar ve usul",
+      "rows": [
+        {
+          "label": "Temel hâl: hapis",
+          "value": "altı aydan iki yıla kadar",
+          "refs": [
+            "123/A"
+          ]
+        },
+        {
+          "label": "Nitelikli hâller (a, b, c): hapis",
+          "value": "bir yıldan üç yıla kadar",
+          "refs": [
+            "123/A"
+          ]
+        },
+        {
+          "label": "Soruşturma ve kovuşturma",
+          "value": "şikâyete bağlı",
+          "refs": [
+            "123/A"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "123/A"
+      ]
+    },
+    {
+      "type": "concept",
+      "title": "Halkı yanıltıcı bilgiyi alenen yayma: \"sırf\" ile başlar",
+      "body": "Md 217/A, gerçeğe aykırı bir bilgiyi alenen yayan herkesi cezalandırmaz. Failin bunu **sırf** halk arasında endişe, korku veya panik yaratmak saikiyle yapması gerekir. Bilgi belli konularla ilgili olmalıdır: ülkenin iç ve dış güvenliği, kamu düzeni ve genel sağlığı. Yayma da kamu barışını bozmaya elverişli şekilde yapılmalıdır. Bu maddede saik, konu ve elverişlilik birlikte aranır.",
+      "articleRefs": [
+        "217/A"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "217/A temel hâl: unsurlar tek tek",
+      "body": "**Saik:** Sırf halk arasında endişe, korku veya panik yaratmak.\n\n**Bilginin niteliği:** Gerçeğe aykırı.\n\n**Bilginin konusu:** Ülkenin iç ve dış güvenliği, kamu düzeni ve genel sağlığı ile ilgili.\n\n**Hareket:** Alenen yaymak.\n\n**Elverişlilik:** Kamu barışını bozmaya elverişli şekilde.\n\n**Ceza:** Bir yıldan üç yıla kadar hapis cezası.",
+      "articleRefs": [
+        "217/A"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Manevi unsur sorusu: cevap saikte",
+      "body": "Manevi unsur sorulduğunda doğru şık \"sırf halk arasında endişe, korku veya panik yaratma saiki gerekir\" olandır.\n\nŞıklarda şunları görebilirsin: taksir yeterlidir, olası kast yeterlidir, genel kast yeterlidir, haksız yarar elde etme amacı zorunludur, kamu görevlisini yanıltma amacı gerekir. Bunların hiçbiri md 217/A'nın metninde yok. Madde açıkça belirli bir saik arar.",
+      "articleRefs": [
+        "217/A"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Unsur gibi görünen ama unsur olmayanlar",
+      "body": "\"Hangileri kanuni tanımda yer alır / almaz?\" sorularında şu öncüller seni yanıltmak için konur. Hiçbiri md 217/A'da **yazmaz**:\n\n- Bilginin kaynağının belli olmaması\n- Bilginin belli sayıda kişi tarafından paylaşılmış olması\n- Bilginin sosyal medya üzerinden yayılması\n- Eylemin haksız yarar sağlama amacıyla işlenmesi\n\nTanımda **olanlar** ise şunlardır: sırf halk arasında endişe, korku veya panik yaratma saiki; bilginin gerçeğe aykırı olması; bilginin ülkenin iç ve dış güvenliği, kamu düzeni ve genel sağlığı ile ilgili olması; bilginin kamu barışını bozmaya elverişli şekilde alenen yayılması.",
+      "articleRefs": [
+        "217/A"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "\"Yalnız gerçeğe aykırı bilgiyi alenen yaymak yeterlidir\": hayır",
+      "body": "Bu öncül yanlıştır. Gerçeğe aykırı bilgiyi alenen yaymak tek başına yetmez. Bilgi ülkenin iç ve dış güvenliği, kamu düzeni ve genel sağlığı ile ilgili olmalıdır. Yayma kamu barışını bozmaya elverişli şekilde yapılmalıdır. Fail de sırf halk arasında endişe, korku veya panik yaratmak saikiyle hareket etmelidir. Biri bile eksikse madde karşılanmaz.",
+      "articleRefs": [
+        "217/A"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "217/A'da artırım: iki neden ve md 218",
+      "body": "Fail suçu aşağıdaki hâllerden biriyle işlerse, **birinci fıkraya göre verilen ceza yarı oranında artırılır**:\n\n- gerçek kimliğini gizleyerek, **veya**\n- bir örgütün faaliyeti çerçevesinde.\n\nMd 217/A'nın kendi saydığı artırım nedenleri bu ikisidir. Ayrıca md 218'deki ortak hükme göre, 217/A'nın da aralarında bulunduğu yukarıdaki maddelerde tanımlanan suçlar **basın ve yayın yoluyla** işlenirse verilecek ceza **yarı oranına kadar** artırılır.",
+      "articleRefs": [
+        "217/A",
+        "218"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "\"Kimliğini gizleme\" ile \"kaynağın belli olmaması\" aynı şey değil",
+      "body": "Bu iki ifade birbirine çok benzer, ama maddedeki yerleri farklıdır.\n\nFailin **gerçek kimliğini gizleyerek** suçu işlemesi bir **artırım** nedenidir ve ceza yarı oranında artırılır.\n\n**Bilginin kaynağının belli olmaması** ise maddede hiç geçmez. Ne unsurdur ne artırım nedenidir. Şıkta \"kaynak\" gördüğünde bunu hatırla.",
+      "articleRefs": [
+        "217/A"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Aynı aralık, farklı kademe",
+      "body": "\"Bir yıldan üç yıla kadar hapis\" iki maddede de geçer, ama aynı kademeyi göstermez. Md 123/A'da bu aralık **nitelikli hâllerin** cezasıdır. Israrlı takibin temel hâli altı aydan iki yıla kadar hapistir. Md 217/A'da ise aynı aralık **temel hâlin** cezasıdır. Fail gerçek kimliğini gizlemiş ya da bir örgütün faaliyeti çerçevesinde hareket etmişse bu ceza yarı oranında artırılır. Soruda hangi maddenin hangi hâlinin sorulduğuna bak.",
+      "articleRefs": [
+        "123/A",
+        "217/A"
+      ]
+    },
+    {
+      "type": "numbers",
+      "title": "İki madde: sayılar tablosu",
+      "rows": [
+        {
+          "label": "123/A temel hâl: hapis",
+          "value": "altı aydan iki yıla kadar",
+          "refs": [
+            "123/A"
+          ]
+        },
+        {
+          "label": "123/A nitelikli hâller: hapis",
+          "value": "bir yıldan üç yıla kadar",
+          "refs": [
+            "123/A"
+          ]
+        },
+        {
+          "label": "123/A soruşturma ve kovuşturma",
+          "value": "şikâyete bağlı",
+          "refs": [
+            "123/A"
+          ]
+        },
+        {
+          "label": "217/A temel hâl: hapis",
+          "value": "bir yıldan üç yıla kadar",
+          "refs": [
+            "217/A"
+          ]
+        },
+        {
+          "label": "217/A gerçek kimliği gizleme veya örgüt faaliyeti çerçevesinde işleme",
+          "value": "birinci fıkraya göre verilen ceza yarı oranında artırılır",
+          "refs": [
+            "217/A"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "123/A",
+        "217/A"
+      ]
+    },
+    {
+      "type": "compare",
+      "title": "Israrlı takip ile halkı yanıltıcı bilgiyi alenen yayma",
+      "rows": [
+        {
+          "aspect": "Hareket",
+          "left": "Israrlı bir şekilde fiziken takip etmek ya da araçlar, bilişim sistemleri veya üçüncü kişiler kullanarak temas kurmaya çalışmak",
+          "right": "Gerçeğe aykırı bilgiyi alenen yaymak",
+          "refs": [
+            "123/A",
+            "217/A"
+          ]
+        },
+        {
+          "aspect": "Aranan sonuç ya da elverişlilik",
+          "left": "Bir kimse üzerinde ciddi huzursuzluk ya da kendisinin veya yakınlarından birinin güvenliğinden endişe",
+          "right": "Kamu barışını bozmaya elverişli şekilde yayma",
+          "refs": [
+            "123/A",
+            "217/A"
+          ]
+        },
+        {
+          "aspect": "Saik",
+          "left": "Maddede saik yazılı değil",
+          "right": "Sırf halk arasında endişe, korku veya panik yaratmak",
+          "refs": [
+            "123/A",
+            "217/A"
+          ]
+        },
+        {
+          "aspect": "Temel ceza",
+          "left": "Altı aydan iki yıla kadar hapis",
+          "right": "Bir yıldan üç yıla kadar hapis",
+          "refs": [
+            "123/A",
+            "217/A"
+          ]
+        },
+        {
+          "aspect": "Ağırlaştırıcı hâl",
+          "left": "Çocuk veya ayrılık kararı verilen / boşanılan eş; okul, iş, konut değiştirtme veya okul, iş bıraktırma; tedbir kararlı fail → bir yıldan üç yıla kadar hapis",
+          "right": "Gerçek kimliği gizleme veya örgüt faaliyeti çerçevesinde işleme → yarı oranında artırım; basın ve yayın yoluyla işleme → md 218'e göre yarı oranına kadar artırım",
+          "refs": [
+            "123/A",
+            "217/A",
+            "218"
+          ]
+        },
+        {
+          "aspect": "Soruşturma ve kovuşturma",
+          "left": "Şikâyete bağlı",
+          "right": "Maddede şikâyet şartına dair hüküm yok",
+          "refs": [
+            "123/A",
+            "217/A"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "123/A",
+        "217/A",
+        "218"
+      ]
+    },
+    {
+      "type": "exam_stats",
+      "title": "Sınav der ki",
+      "rows": [
+        {
+          "label": "Bu ünitenin maddelerinden yayındaki soru",
+          "value": "6",
+          "refs": [
+            "123/A",
+            "217/A"
+          ]
+        },
+        {
+          "label": "md 217/A — Halkı yanıltıcı bilgiyi alenen yayma",
+          "value": "4 soru",
+          "refs": [
+            "217/A"
+          ]
+        },
+        {
+          "label": "md 123/A — Israrlı takip",
+          "value": "2 soru",
+          "refs": [
+            "123/A"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "123/A",
+        "217/A"
+      ],
+      "generated": true
+    },
+    {
+      "type": "bridge",
+      "title": "Bu üniteden soru çöz",
+      "articleRefs": [
+        "123/A",
+        "217/A"
+      ],
+      "generated": true,
+      "rows": [
+        {
+          "label": "Madde kapsamlı seans",
+          "value": "md 123/A, 217/A, 6 soru",
+          "refs": [
+            "123/A",
+            "217/A"
+          ]
+        }
+      ]
+    }
+  ]
+}

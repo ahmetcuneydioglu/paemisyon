@@ -1,0 +1,468 @@
+{
+  "unit": {
+    "slug": "kmk-2-cesitli-hukumler",
+    "legislationSlug": "5607-sayili-kacakcilikla-mucadele-kanunu",
+    "topicId": "1589379f-ddfe-4ce9-b572-543838b93032",
+    "title": "Görevli mahkeme, ikramiye ve çeşitli hükümler",
+    "subtitle": "Yetkili mahkeme, görevliler, tutanak, silah kullanma, ikramiye",
+    "articleFrom": "17",
+    "articleTo": "25",
+    "readingMinutes": 9,
+    "sourceLabel": "AI özeti — 5607 Sayılı Kaçakçılıkla Mücadele Kanunu, md 17–25",
+    "articleNos": [
+      "17",
+      "18",
+      "19",
+      "20",
+      "21",
+      "22",
+      "23",
+      "24",
+      "25"
+    ],
+    "generatedBy": "claude-opus-5-5 (ozet-uret.ts)",
+    "sortOrder": 2
+  },
+  "blocks": [
+    {
+      "type": "concept",
+      "title": "Bu ünitede neler var?",
+      "body": "Bu ünite kaçakçılık suçlarının yargılama, önleme ve ödül tarafını bir araya getirir. Önce davanın hangi mahkemede görüleceğini ve gümrük idaresinin davaya nasıl katıldığını göreceksin. Sonra kaçakçılığı önleme, izleme ve araştırmakla kimlerin yükümlü olduğunu ve muhbirin kimliğinin nasıl korunduğunu öğreneceksin. Ardından tutanağa nelerin yazılacağına, kontrollü teslimatı kimin yürüttüğüne ve silahın hangi adımlarla kullanılacağına geçeceksin. İkramiyenin kime, hangi esasla ve ne zaman ödendiğini gördükten sonra kriminal laboratuvarlar ve yürürlükten kaldırılan eski kanunla üniteyi kapatacaksın.",
+      "articleRefs": [
+        "17",
+        "18",
+        "19",
+        "20",
+        "21",
+        "22",
+        "23",
+        "24",
+        "25"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Davalar hangi mahkemede görülür?",
+      "body": "Bu Kanun kapsamına giren suçlar dolayısıyla açılan davalar şu mahkemelerde görülür: **Adalet Bakanlığının teklifi** üzerine **Hakimler ve Savcılar Yüksek Kurulunca** belirlenen **asliye ceza mahkemeleri**.\n\n**İstisna:** Bu suçlarla bağlantılı olarak **resmî belgede sahtecilik** suçu işlenmişse görevli mahkeme **ağır ceza mahkemesidir**.\n\n**Not:** Kurulun adı madde metnindeki hâliyle verilmiştir; Kurul bugün **Hâkimler ve Savcılar Kurulu** adını taşır ve sorularda bu adla geçebilir.",
+      "articleRefs": [
+        "17"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Mahkeme sorusunda iki tuzak",
+      "body": "Bu konudaki sorular seni iki noktadan yakalamaya çalışır:\n\n- **Mahkemenin türü:** Resmî belgede sahtecilik bağlantısı yoksa davalar **asliye ceza** mahkemesinde görülür; ağır ceza, asliye hukuk ya da asliye ticaret diyen şık yanlıştır. Ağır ceza mahkemesi yalnız resmî belgede sahtecilik bağlantısında görevlidir.\n- **Kimin belirlediği:** Adalet Bakanlığı yalnız **teklif eder**, mahkemeleri **Kurul belirler**. \"Adalet Bakanlığı tarafından belirlenen\" diyen şık yanlıştır.",
+      "articleRefs": [
+        "17"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Gümrük idaresi davaya katılabilir",
+      "body": "Bu Kanunda tanımlanan suçlar dolayısıyla açılan davalarda:\n\n- Mahkeme, **iddianamenin bir örneğini** ilgili **gümrük idaresine** de gönderir.\n- İlgili gümrük idaresi **başvurusu üzerine** davaya **katılan** olarak kabul edilir.\n\nKatılma kendiliğinden gerçekleşmez, gümrük idaresinin başvurusuna bağlıdır.",
+      "articleRefs": [
+        "18"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Kaçakçılıkla mücadelede kimler yükümlü?",
+      "body": "Bu Kanunla yaptırım altına alınan fiilleri **önleme, izleme ve araştırmakla** yükümlü olanlar:\n\n- **Mülkî amirler**\n- **Gümrük Müsteşarlığı** personeli\n- **Emniyet Genel Müdürlüğü** personeli\n- **Jandarma Genel Komutanlığı** personeli\n- **Sahil Güvenlik Komutanlığı** personeli\n\n**Operasyon gerektiren olay:** Görevliler bu tür kaçakçılık olaylarından haberdar olduklarında kanunî görevlerini yapmaya başlar ve **aynı zamanda** mahallin **en büyük mülkî amirine** bilgi verirler.\n\n**Not:** Gümrük Müsteşarlığı madde metnindeki hâliyle verilmiştir.",
+      "articleRefs": [
+        "19"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Bilgi-belge talebi ve muhbirin korunması",
+      "body": "**Bilgi ve belge talebi:** Kaçakçılığı önleme, izleme ve soruşturmakla görevli olanların bu Kanun kapsamındaki suçlarla ilgili bilgi ve belge talepleri; kamu veya özel, gerçek veya tüzel kişilerce **eksiksiz** karşılanmak zorundadır. **Savunma hakkına ilişkin hükümler saklıdır.**\n\n**Kimliğin gizliliği:** md 3 kapsamındaki suçları ihbar edenler ile md 23 gereğince ikramiye ödenmesi öngörülen muhbirlerin kimliği hiçbir şekilde açıklanamaz. İki istisna vardır:\n- kişinin **izni** varsa,\n- **ihbarın niteliği** kişi hakkında **suç oluşturuyorsa**.\n\nBu kişiler hakkında **tanıkların korunmasına ilişkin hükümler** uygulanır.\n\n**Kapsam genişler:** md 3 ile md 23 birinci fıkra (a) ve (b) bentlerinde belirtilen suçlardan elde edilen **malvarlığı değerlerini ihbar edenler** ile bu değerleri **aklama suçunu ihbar edenler** hakkında da aynı hükümler uygulanır.",
+      "articleRefs": [
+        "19"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "İzleme tutanağında neler bulunur?",
+      "body": "Kaçakçılık fiillerinin izlenmesine ilişkin tutanak aşağıdakileri **kapsamalı** ve **imza altına alınmalıdır**:\n\n- **a)** Tarih, yer, düzenleyenlerin unvan ve isimleri, **hâkim kararının** tarih ve sayısı; işlem **Cumhuriyet savcısının yazılı emri** ile yapılmışsa emrin tarih ve sayısı\n- **b)** Olay ve kanıtları; suç konusu eşya ve taşıma araçlarının türü, kapsamı, miktarı ve nitelikleri ile **nerede ve ne suretle el konulduğu**\n- **c)** İlgilinin kimliği, işi, yerleşim yeri ve varsa **ifadesi**\n\n**Onama:** Tutanağın ilgilileri ilgilendiren kısımları kendilerine **okunur** ya da okumaları için **verilir**. Bu husus tutanağa yazılır ve ilgililere imzalatılır.\n\n**İmzadan kaçınma:** Kaçınma hâlinde **nedenleri tutanağa geçirilir**.",
+      "articleRefs": [
+        "20"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Kontrollü teslimatı kim yürütür?",
+      "body": "Bu Kanun çerçevesindeki kontrollü teslimat işlemleri **4208 sayılı Kanunun** 10 uncu, 11 inci ve 13 üncü maddeleri hükümleri çerçevesinde yürütülür.\n\nYürütenler:\n- **Gümrük Müsteşarlığı**\n- **Emniyet Genel Müdürlüğü**\n- **Jandarma Genel Komutanlığı**\n- **Sahil Güvenlik Komutanlığı**\n\nMülkî amirler bu listede yer almaz.\n\n**Not:** Gümrük Müsteşarlığı madde metnindeki hâliyle verilmiştir.",
+      "articleRefs": [
+        "21"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Silah kullanma: gümrük bölgesine izinsiz giriş-çıkış",
+      "body": "Gümrük Kanunu gereğince belirlenen **kapı ve yollardan başka yerlerden** gümrük bölgesine girmek, çıkmak veya geçmek isteyen kişiye karşı adımlar şöyledir:\n\n1. **“Dur” uyarısı** yapılır.\n2. Kişi uymazsa uyarı **havaya ateş edilerek** yinelenir.\n3. **Silahla karşılığa yeltenilirse** ya da başka surette **meşru müdafaa** durumuna düşülürse, yetkili memurlar **saldırıyı etkisiz kılacak oranda doğrudan hedefe** ateş edebilir.\n\n**Güvence:** Memur hakkında silah kullanma nedeniyle soruşturma veya kovuşturma açılırsa **bağlı bulunduğu kurum avukat sağlar** ve avukatlık ücretini **kurum karşılar**.",
+      "articleRefs": [
+        "22"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Silah kullanma: deniz araçları",
+      "body": "Kaçakçılığı önleme, izleme ve araştırmakla yükümlü olanlar, gümrük bölgesindeki **her nevi deniz aracına yanaşıp** yükünü ve belgelerini **incelemeye yetkilidir**.\n\nYanaşmaya izin vermeyip kaçan veya kaçmaya teşebbüs eden deniz aracına karşı adımlar:\n\n1. **Uluslararası deniz işaretlerine** göre telsiz, flama, mors ve benzeri işaretlerle **durması ihtar** edilir.\n2. İhtara uymazsa **uyarı mahiyetinde** ateş edilir.\n3. Buna da uymayıp kaçmaya devam ederse **durmaya zorlayacak şekilde üzerine** ateş edilir.",
+      "articleRefs": [
+        "22"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "İkramiyenin esası: hangi eşyada hangi değer?",
+      "body": "Kaçak zannıyla eşya yakalanırsa **muhbir** ve **elkoyma ikramiyesine** hak kazananlara ikramiye ödenir. Esas alınan değer eşyanın türüne göre değişir:\n\n- **(a) Silah, mermi ve TCK md 174 maddeleri:** 6136 sayılı Kanunun md 12'sine aykırılık suçlarında yakalanan silah ve mermiler ile TCK md 174'e muhalefet suçlarında yakalanan maddeler için esas, **Milli Savunma Bakanlığınca her yıl** belirlenen değerdir. Olay tarihindeki değer dikkate alınır.\n- **(b) Uyuşturucu, ekili bitki ve bandrolsüz ürün:** Uyuşturucu maddede birim miktar, uyuşturucu elde etmek için ekilen bitkide ekili alanın yüzölçümü esas alınır; **Cumhurbaşkanınca** tespit edilen sabit rakam **memur aylık katsayısı** ile çarpılır. Md 3'ün on sekizinci fıkrası kapsamındaki yakalamalarda (işaretsiz ya da taklit veya yanıltıcı işaretli tütün mamulü, makaron, yaprak sigara kâğıdı, etil alkol, metanol, alkollü içki) ise sabit rakamlar Cumhurbaşkanınca **paket, kilogram ve litre** bazında tespit edilir ve memur aylık katsayısı ile çarpılır. Metinde bu fıkrayla birlikte anılan on dokuzuncu fıkra mülgadır.\n- **(c) Diğer eşya:** **Çıkış kaçağında FOB**, **giriş kaçağında CIF** kıymeti esas alınır. Sahipsiz eşyanın değerini **üç kişilik heyet** belirler. Heyeti mahallin **en büyük mülkî amiri** görevlendirir; heyet Maliye Bakanlığı, Gümrük Müsteşarlığı ve sanayi ve ticaret odası temsilcilerinden oluşur.\n\n**Ödeme kaynağı:** Elkoyma ikramiyesine hak kazananların bağlı olduğu kurumun bütçesi.\n\n**Not:** Maliye Bakanlığı ve Gümrük Müsteşarlığı madde metnindeki hâliyle verilmiştir.",
+      "articleRefs": [
+        "23",
+        "3"
+      ]
+    },
+    {
+      "type": "numbers",
+      "title": "İkramiye oranları ve ödeme zamanı (md 23/1)",
+      "rows": [
+        {
+          "label": "(a) Silah-mermi, sahipli — kamu davası açılınca",
+          "value": "%25",
+          "refs": [
+            "23"
+          ]
+        },
+        {
+          "label": "(a) Silah-mermi, sahipli — kesinleşmeyi takip eden üç ay içinde",
+          "value": "%75",
+          "refs": [
+            "23"
+          ]
+        },
+        {
+          "label": "(a) Silah-mermi, sahipsiz — müsadere kararı kesinleşince",
+          "value": "%50",
+          "refs": [
+            "23"
+          ]
+        },
+        {
+          "label": "(b) Uyuşturucu, sahipli",
+          "value": "Yarısı dava açılınca, diğer yarısı kesinleşmede",
+          "refs": [
+            "23"
+          ]
+        },
+        {
+          "label": "(b) Uyuşturucu, sahipsiz",
+          "value": "Tamamı, müsadere kesinleşince",
+          "refs": [
+            "23"
+          ]
+        },
+        {
+          "label": "(c) Diğer eşya, sahipli",
+          "value": "%50",
+          "refs": [
+            "23"
+          ]
+        },
+        {
+          "label": "(c) Diğer eşya, sahipsiz",
+          "value": "%25",
+          "refs": [
+            "23"
+          ]
+        },
+        {
+          "label": "(c) Kıymet esası",
+          "value": "Çıkış kaçağı FOB, giriş kaçağı CIF",
+          "refs": [
+            "23"
+          ]
+        },
+        {
+          "label": "(c) Sahipsiz eşya değer heyeti",
+          "value": "Üç kişi",
+          "refs": [
+            "23"
+          ]
+        },
+        {
+          "label": "Kesinleşmeye bağlı ödeme süresi",
+          "value": "Kesinleşmeyi takip eden üç ay içinde",
+          "refs": [
+            "23"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "23"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "İkramiye kime dağıtılır?",
+      "body": "**Paylaşım:**\n- İkramiyenin **yüzde ellisi muhbirlere**, **yüzde ellisi** elkoyma ikramiyesine hak kazananlara verilir.\n- **İhbarsız** yakalamada ikramiyenin **tamamı** elkoyma ikramiyesine hak kazananlara ödenir.\n- Kaçakçılığı önleme, izleme ve soruşturmakla yükümlü olanlara **muhbir ikramiyesi ödenmez**.\n\n**Elkoyma ikramiyesine hak kazananlar** (görevlilerden):\n- yakalama işlemine **bizzat ve fiilen** katılanlar,\n- iletişimin tespiti, dinlenmesi, kayda alınması, **gizli soruşturmacı** ve **teknik araçla izleme** tedbirlerinde görevlendirilenler,\n- bilgi toplama, analiz, değerlendirme, fiziki takip, planlama veya sevk idare çalışmalarıyla katkı sağlayanlar.\n\n**Vergi:** İkramiyeler **damga vergisi hariç** vergi, resim ve harca tâbi değildir.",
+      "articleRefs": [
+        "23"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "İkramiyede sınırlar, yönetmelik ve ek personel",
+      "body": "**Üst sınırlar** (elkoyma ikramiyesi):\n- **Olay başına:** (30.000) gösterge rakamı × memur aylık katsayısı. Katsayı, kamu davasının açıldığı ya da mahkûmiyet veya müsadere kararının kesinleştiği tarihteki katsayıdır.\n- **Bir yılda:** (120.000) gösterge rakamı × memur aylık katsayısı.\n- Bu sınırlar **kaçak akaryakıt** ikramiyelerine **uygulanmaz**.\n\n**Yönetmelik:** Müşterek operasyonlarda ve kontrollü teslimatta ikramiye ödemesi, birim fiyatların tespiti ve maddenin diğer uygulama hususları (akaryakıt hariç) **Maliye** ve **Millî Savunma** bakanlıklarının görüşü alınarak **Gümrük ve Ticaret Bakanlığı** ile **İçişleri Bakanlığı** tarafından müştereken çıkarılan yönetmelikle düzenlenir.\n\n**İkramiye alabilen ek personel:**\n- 3497 sayılı Kanun uyarınca görevli **Kara Kuvvetleri Komutanlığı hudut birlikleri** personeli (desteğine/emrine verilen unsurlar dahil)\n- Yardım talebi hâlinde kaçakçılıkla mücadele görevi verilen **Deniz Kuvvetleri Komutanlığı** personeli\n\n**Not:** Maliye Bakanlığı ile Gümrük ve Ticaret Bakanlığı madde metnindeki hâliyle verilmiştir.",
+      "articleRefs": [
+        "23"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Küçük miktarlı uyuşturucu ve alt eşik",
+      "body": "**Küçük miktarlı yakalama:** Cumhurbaşkanınca belirlenecek birim miktarını aşmayan uyuşturucu veya uyarıcı madde yakalamalarında:\n- İkramiye **kamu davası açıldıktan sonra** ödenir ve **kabul edilen iddianame sayısı** üzerinden hesaplanır.\n- **Örgütlü suçlarda** muhbir ve elkoyma ikramiyesine hak kazananlara, **bireysel suçlarda** yalnızca elkoyma ikramiyesine hak kazananlara ödenir.\n- Tutar, Cumhurbaşkanınca tespit edilen sabit rakamların memur aylık katsayısı ile çarpımıdır ve **tek seferde** ödenir.\n- Bu durumda birinci fıkranın (b) bendi kapsamında **ayrıca ikramiye ödenmez**.\n\n**Alt eşik:** Birinci fıkradaki ikramiye tutarı, **3.000** gösterge rakamının olay tarihindeki memur maaş katsayısı ile çarpımından **az** ise **ikramiye talep dosyası hazırlanmaz**.",
+      "articleRefs": [
+        "23"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Kaçak akaryakıtta ikramiye",
+      "body": "**İhbar sonucu sahipli yakalama:**\n- Kamu davası açılmasını takip eden üç ay içinde: **yüzde onu ihbar edene**, **yüzde onu** elkoyma ikramiyesine hak kazananlara.\n- Mahkûmiyet hükmünün veya müsadere kararının kesinleşmesini takip eden üç ay içinde **ilave** ikramiye: **yüzde on beşi ihbar edene**, **yüzde on beşi** yakalama eylemine **bizzat ve fiilen katılan** kamu görevlilerine.\n\n**İhbarsız sahipli yakalama:**\n- Dava açılınca **yüzde onu** elkoyma ikramiyesine hak kazananlara.\n- Kesinleşmede **yüzde on beşi** bizzat ve fiilen katılan kamu görevlilerine ilave olarak.\n\n**Sahipsiz akaryakıt:** İhbar edenlere ve elkoyma ikramiyesine hak kazananlara ödenecek ikramiyeler **yüzde elli eksik** ödenir.\n\n**Ödeme ve yönetmelik:** Ödemeler ilgili kurumların bütçesinden yapılır, gerekli ödeneği **Maliye Bakanlığı** aktarır. Usul ve esaslar ile esas tutarlar, Maliye Bakanlığının görüşü alınarak **Gümrük ve Ticaret Bakanlığı** ile **İçişleri Bakanlığı** tarafından müştereken çıkarılan yönetmelikle düzenlenir.\n\n**Not:** Maliye Bakanlığı ile Gümrük ve Ticaret Bakanlığı madde metnindeki hâliyle verilmiştir.",
+      "articleRefs": [
+        "23"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Kriminal laboratuvar ve yürürlükten kaldırılan kanun",
+      "body": "**Kriminal laboratuvar:** Kaçakçılık fiillerinin önlenmesi, izlenmesi ve araştırılması çerçevesinde görev yapmak üzere **Gümrük Müsteşarlığınca** kriminal laboratuvarlar kurulur. Laboratuvarların çalışma usul ve esasları da **Gümrük Müsteşarlığınca** çıkarılacak **yönetmelikle** belirlenir.\n\n**Yürürlükten kaldırılan:** **4926 sayılı** Kaçakçılıkla Mücadele Kanunu yürürlükten kaldırılmıştır.\n\n**Not:** Gümrük Müsteşarlığı madde metnindeki hâliyle verilmiştir.",
+      "articleRefs": [
+        "24",
+        "25"
+      ]
+    },
+    {
+      "type": "numbers",
+      "title": "Dağılım, sınırlar ve akaryakıt oranları",
+      "rows": [
+        {
+          "label": "Muhbir payı (genel)",
+          "value": "%50",
+          "refs": [
+            "23"
+          ]
+        },
+        {
+          "label": "Elkoyma payı (genel)",
+          "value": "%50",
+          "refs": [
+            "23"
+          ]
+        },
+        {
+          "label": "İhbarsız yakalama",
+          "value": "Tamamı elkoyma ikramiyesine hak kazananlara",
+          "refs": [
+            "23"
+          ]
+        },
+        {
+          "label": "Olay başına üst sınır",
+          "value": "(30.000) gösterge × memur aylık katsayısı",
+          "refs": [
+            "23"
+          ]
+        },
+        {
+          "label": "Yıllık üst sınır",
+          "value": "(120.000) gösterge × memur aylık katsayısı",
+          "refs": [
+            "23"
+          ]
+        },
+        {
+          "label": "Talep dosyası alt eşiği",
+          "value": "3.000 gösterge × memur maaş katsayısı",
+          "refs": [
+            "23"
+          ]
+        },
+        {
+          "label": "Akaryakıt, ihbarlı — dava açılınca",
+          "value": "İhbar eden %10, elkoyma %10",
+          "refs": [
+            "23"
+          ]
+        },
+        {
+          "label": "Akaryakıt, ihbarlı — kesinleşmede ilave",
+          "value": "İhbar eden %15, fiilen katılan %15",
+          "refs": [
+            "23"
+          ]
+        },
+        {
+          "label": "Akaryakıt, ihbarsız",
+          "value": "Dava açılınca %10, kesinleşmede ilave %15",
+          "refs": [
+            "23"
+          ]
+        },
+        {
+          "label": "Akaryakıt, sahipsiz",
+          "value": "Yüzde elli eksik ödeme",
+          "refs": [
+            "23"
+          ]
+        },
+        {
+          "label": "Ödeme süresi",
+          "value": "Takip eden üç ay içinde",
+          "refs": [
+            "23"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "23"
+      ]
+    },
+    {
+      "type": "compare",
+      "title": "Silah kullanma: kişi mi, deniz aracı mı?",
+      "rows": [
+        {
+          "aspect": "Kime karşı",
+          "left": "Kapı ve yollardan başka yerlerden gümrük bölgesine giren, çıkan veya geçmek isteyen kişi",
+          "right": "Yanaşmaya izin vermeyip kaçan veya kaçmaya teşebbüs eden deniz aracı",
+          "refs": [
+            "22"
+          ]
+        },
+        {
+          "aspect": "İlk uyarı",
+          "left": "“Dur” uyarısı",
+          "right": "Telsiz, flama, mors vb. uluslararası deniz işaretleriyle durma ihtarı",
+          "refs": [
+            "22"
+          ]
+        },
+        {
+          "aspect": "Uyulmazsa",
+          "left": "Havaya ateşle uyarı yinelenir",
+          "right": "Uyarı mahiyetinde ateş edilir",
+          "refs": [
+            "22"
+          ]
+        },
+        {
+          "aspect": "Son aşama",
+          "left": "Silahla karşılık ya da meşru müdafaada, saldırıyı etkisiz kılacak oranda doğrudan hedefe ateş",
+          "right": "Kaçmaya devam ederse durmaya zorlayacak şekilde üzerine ateş",
+          "refs": [
+            "22"
+          ]
+        },
+        {
+          "aspect": "Ayrıca",
+          "left": "Soruşturma ve kovuşturmada kurum avukat sağlar, ücretini karşılar",
+          "right": "Her nevi deniz aracına yanaşıp yük ve belgeleri inceleme yetkisi",
+          "refs": [
+            "22"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "22"
+      ]
+    },
+    {
+      "type": "exam_stats",
+      "title": "Sınav der ki",
+      "rows": [
+        {
+          "label": "Bu ünitenin maddelerinden yayındaki soru",
+          "value": "1",
+          "refs": [
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22",
+            "23",
+            "24",
+            "25"
+          ]
+        },
+        {
+          "label": "md 17 — Yetkili merciler",
+          "value": "1 soru",
+          "refs": [
+            "17"
+          ]
+        },
+        {
+          "label": "Hiç soru çıkmamış",
+          "value": "md 18, md 19, md 20, md 21, md 22, md 23, md 24, md 25",
+          "refs": [
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22",
+            "23",
+            "24",
+            "25"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "17",
+        "18",
+        "19",
+        "20",
+        "21",
+        "22",
+        "23",
+        "24",
+        "25"
+      ],
+      "generated": true
+    },
+    {
+      "type": "bridge",
+      "title": "Bu üniteden soru çöz",
+      "articleRefs": [
+        "17",
+        "18",
+        "19",
+        "20",
+        "21",
+        "22",
+        "23",
+        "24",
+        "25"
+      ],
+      "generated": true,
+      "rows": [
+        {
+          "label": "Madde kapsamlı seans",
+          "value": "md 17–25, 1 soru",
+          "refs": [
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22",
+            "23",
+            "24",
+            "25"
+          ]
+        }
+      ]
+    }
+  ]
+}

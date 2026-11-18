@@ -1,0 +1,767 @@
+{
+  "unit": {
+    "slug": "oguy-2-atesli-silahlar",
+    "legislationSlug": "ozel-guvenlik-hizmetlerine-dair-kanunun-uygulanmasina-iliskin-yonetmelik",
+    "topicId": "0334bf9e-f6c1-4073-89cf-f82d02b3bfa3",
+    "title": "Ateşli silahlar, eğitim ve denetim",
+    "subtitle": "Silah izni, kayıt ve fişek; temel ve yenileme eğitimi, sınav ve sertifika; denetim ve idari para cezası",
+    "articleFrom": "24",
+    "articleTo": "50",
+    "readingMinutes": 15,
+    "sourceLabel": "AI özeti — Özel Güvenlik Hizmetlerine Dair Kanunun Uygulanmasına İlişkin Yönetmelik, md 24–47, Ek 1, Ek 2, 48, 50",
+    "articleNos": [
+      "24",
+      "25",
+      "26",
+      "27",
+      "28",
+      "29",
+      "30",
+      "31",
+      "32",
+      "33",
+      "34",
+      "35",
+      "36",
+      "37",
+      "38",
+      "39",
+      "40",
+      "41",
+      "42",
+      "43",
+      "44",
+      "45",
+      "46",
+      "47",
+      "Ek 1",
+      "Ek 2",
+      "48",
+      "50"
+    ],
+    "generatedBy": "claude-opus-5-5 (ozet-uret.ts)",
+    "sortOrder": 2
+  },
+  "blocks": [
+    {
+      "type": "concept",
+      "title": "Önce önlem ve cihaz, silah en son",
+      "body": "Koruma ve güvenlikte ilk sırada **fiziki önlemler** ve **güvenlik cihazları** var. Komisyon, orantılılık ilkesine uygun olarak canlılar üzerinde kalıcı etkisi olmayan kimyasalların kullanılmasına da izin verebilir. Silah ancak görevin niteliği gereği bu tedbirlerin yeterli olmayacağı anlaşılırsa gündeme gelir. Yani sıralamayı aklında tut: önlem ve cihaz, gerekirse kimyasal, en son ateşli silah.",
+      "articleRefs": [
+        "24"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Silah kararı, temini ve muhafazası",
+      "body": "**Karar (md 24):** Komisyon; 6136 sayılı Kanuna göre ruhsatlandırılması mümkün **yarı otomatik tabancaların** ve 2521 sayılı Kanun kapsamındaki **av silahlarının** bulundurulmasına ve taşınmasına karar verir. Silahların **sayısı ve niteliği** Komisyon kararında belirtilir. Silah taşıyacak görevlide 6136 sayılı Kanun ve yönetmeliğindeki şartlar aranır.\n\n**Uzun namlulu silah (md 26):** Niteliği ve sayısı **komisyonun kararı ve valinin onayı** ile tayin edilir.\n\n**Temin (md 25):** Komisyon kararı üzerine **valilikçe** silah alma yetkisi verilir. Kaynaklar: özel güvenlik birimlerinin fazla silahları; kamu kurum ve kuruluşlarının ihtiyaç fazlası, standart dışı, zor alım yoluyla ele geçen silahları; Makine Kimya Endüstrisi Kurumu; genel hükümler.\n\n**Muhafaza:** Silah, fişek ve tesisat **özel oda, kasa veya demir kuşaklı ve takviye kilitli dolapta** saklanır; sorumlu, özel güvenlik izni verilen kişi veya kuruluş yetkilileridir.\n\n**Kendi adına ruhsatlı silah:** Genel kolluk ve Milli İstihbarat Teşkilatı emeklileri ile bu görevlerde **en az beş yıl** çalışıp kendi isteğiyle ayrılanlar, kendi taşıma ruhsatlı silahlarını özel güvenlik hizmetinde kullanabilir. Şart: korunacak kişi, kurum veya kuruluşun Komisyona müracaat edip izin alması. Bu izin Komisyonca verilen personel ve silah kadrosu içinde değerlendirilir; md 27 hükümleri Ek 8 hariç uygulanır; ancak **görev alanı kıstası ve md 28 uygulanmaz**.\n\n**Not:** Makine Kimya Endüstrisi Kurumu adı yönetmelik metnindeki hâliyle verilmiştir.",
+      "articleRefs": [
+        "24",
+        "25",
+        "26"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Silahların kaydı ve taşıma belgesi",
+      "body": "**Kayıt (md 27):**\n- Komisyon, izin verilen her ateşli silahı **Ek-6 Silah Bulundurma Kayıt Defteri**ne işler.\n- Özel güvenlik izni verilen kişi veya kuruluş, silahları **Ek-7 Silah Demirbaş Defteri**ne kaydeder.\n- Görev alanında muhafaza edilen silahlar görevliye, her sayfası yöneticilerce onaylı **Ek-8 Devir Teslim ve Rapor Defteri**ne imza karşılığı devir teslim edilir.\n- Görevli, silahı Kanunda belirtilen istisnalar dışında **görev alanı dışına çıkaramaz**.\n\n**Belge (md 28):** Her ateşli silah için **Özel Güvenlik Silah Taşıma/Bulundurma Belgesi** düzenlenir. Silahla görev yapan, bu belgeyi **kimlik kartı ile beraber** taşır. **Kişi koruma** ile **para ve değerli eşya nakli** yapan görevli ayrıca **görev belgesini** de bulundurur. Belgenin rengi, şekli, muhtevası, basımı, dağıtımı ve hizmet bedeli **Bakanlıkça** belirlenir.",
+      "articleRefs": [
+        "27",
+        "28"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Üç defter, üç ayrı el",
+      "body": "Burada en çok **kim hangi defteri tutar** karışır. Komisyonun tuttuğu defter **Silah Bulundurma Kayıt Defteri** (Ek-6); kuruluşun kendi tuttuğu **Silah Demirbaş Defteri** (Ek-7); görevliyle silahın el değiştirdiği yer **Devir Teslim ve Rapor Defteri** (Ek-8). Bir ayrıntı daha: kendi adına ruhsatlı silahını kullanan görevliye 27. madde uygulanır ama **Ek-8 hariç** tutulur. “Demirbaş defterini komisyon tutar” dersen yanılırsın.",
+      "articleRefs": [
+        "25",
+        "27"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Fişek temini ve nakli",
+      "body": "- İzin verilen **her silah için yirmi beş adet** fişek alınabilir.\n- Miktar, **Komisyonun kararı ve valinin onayı** ile görev yeri ve niteliğine göre artırılabilir.\n- Görev nedeniyle sarf edilen ve **tutanakla** tespit edilen eksik fişekler tamamlanır.\n- **Ateşli silah eğitiminde kullanılacak fişekler bu sınırlamaya tabi değildir.** Programlı eğitimler dışında atış eğitimi yaptıracaklara talep hâlinde **genel kollukça** fişek alma izni verilir.\n\n**Nakil:** Silah eğitimleri için, **eğitime başlamadan önce** ilgili kişi, kurum ve kuruluşun **talebi doğrultusunda**, silah taşıma yetkisini haiz, kurumca görevlendirilen ve **valiliğin uygun gördüğü** kişiye **kursiyer sayısı oranında** silah ve mermi nakli izni verilebilir; eğitim kurumu yöneticisi/yöneticileri de **müteselsilen** sorumludur. Hizmette kullanılan silah ve fişeklerin nakli de silah taşıma yetkisini haiz, valiliğin uygun gördüğü kişiyle yapılabilir.",
+      "articleRefs": [
+        "29"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Silah ve fişeklerin devri",
+      "body": "**Kimler devreder:** Özel güvenlik izni veya silah bulundurma ve taşıma izni iptal edilen ya da ihtiyaç fazlası bildiren kişi ve kuruluşlar; devir **genel hükümlere** göre yapılır.\n\n**Süreler:**\n- **Altı ay** içinde devir yapılmazsa,\n- **takip eden iki ay** içinde silahın sahibi 6136 sayılı Kanuna göre **ruhsat başvurusu** yapmak zorundadır.\n- Süresinde ruhsatlandırılmayan silahlar **müsadere edilmek üzere adli makamlara** intikal ettirilir.\n\n**Tüfekler ve tam otomatik tabancalar:** devredilebilir, **genel kolluk kuruluşlarına bağışlanabilir** ya da imha edilmek üzere **valilikçe Makine Kimya Endüstrisi Kurumuna** verilir.\n\n**Ekspertiz:** Devredilecek, hibe, imha edilecek veya satılacak silahlar için **Bölge Kriminal Polis Laboratuvarlarından** ekspertiz raporu aldırılır.\n\n**Not:** Makine Kimya Endüstrisi Kurumu adı yönetmelik metnindeki hâliyle verilmiştir.",
+      "articleRefs": [
+        "30"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Eğitim kurumu izni ve inceleme",
+      "body": "**Yer (md 31):** Temel ve yenileme eğitimi **Bakanlıktan faaliyet izni alan özel eğitim kurumlarında** yapılır. Tesisin **zorunlu deprem sigortası ve tapusu** bulunmalıdır.\n\n**Başvuruya eklenen belgeler:**\n- Kurucu, yönetici, uzman eğitici ve varsa tüzel kişi ortak temsilcilerinin T.C. Kimlik Numarası ile tesis adresini belirten dilekçe; tesis kendilerinin ise tapu, kira ise kira sözleşmesi örneği,\n- Yapı kullanma izni veya belediyeden fenni sakınca olmadığına dair yazı,\n- Yöneticiler için yetki belgesi,\n- Yangın sigortası poliçesi sureti.\n\n**İnceleme (md 32):** Belgeler eksiksizse, sorumluluk bölgesi esasına göre başkanı **emniyet müdürü veya jandarma subay sınıfı bir rütbeli** olan, özel güvenlikle ilgili birimde çalışan **üç kişilik inceleme komisyonu** tesisin uygunluğunu, araç-gereç ve teçhizatı, yangın önlemlerini ve belgelerin gerçeği yansıtıp yansıtmadığını araştırıp **rapor** düzenler. Başvurunun alınmasıyla birlikte **kurucular ve yönetici** hakkında güvenlik soruşturması başlatılır.\n\n**Sonuç:** İnceleme ve soruşturma olumluysa, **ruhsat harcı** yatırıldıktan sonra **Ek-10 Özel Güvenlik Eğitim Kurumu Faaliyet İzin Belgesi** düzenlenir; kurucuya, yöneticiye, kanuni vekile veya yetkilendirilen kişiye **elden** teslim edilir.",
+      "articleRefs": [
+        "31",
+        "32"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Temel eğitim programı, hizmet içi ve alan eğitimi",
+      "body": "- Adaylar **asgari yüz yirmi saatlik** eğitime tabi tutulur; **yirmi saati silah ve atış** eğitimidir.\n- **Silah taşımayacak** görevli için silah ve atış eğitimi zorunlu değildir; temel eğitimi **yüz saatten aşağı olmaz**.\n- “**özel güvenlik görevlisi olur**” ibareli sağlık raporu ve öğrenim belgesi **temel eğitimden önce** istenir.\n- Dersler, asgari ders saatleri ve uzman eğiticilerin nitelikleri **Ek-11**'deki tablodadır.\n- **Havalimanı ve havaalanı:** Sivil Havacılık Güvenliği ile Uyuşturucu Madde Bilgileri. **Deniz limanı:** ISPS Kod. çerçevesinde Deniz Limanı Güvenliği ve Uyuşturucu Madde Bilgileri.\n\n**Hizmet içi ve alan eğitimi:** Görev yeri ve görevin özelliğine göre verilebilir; **Bakanlıkça** veya faaliyet izinli özel eğitim kurumlarınca verilir. Hizmet içi eğitimi ayrıca özel güvenlik izni bulunan kişi, kurum, kuruluş veya şirketler **kendi personeline** verebilir. Müfredatlar **Bakanlığa bildirilir**; Bakanlığın oluşturacağı komisyonun izin verdiği hizmet içi eğitimler verilir. Alan eğitiminin usul ve esasları Bakanlıkça belirlenir.\n\nİstihdam edenler, personelin **fiziki yeterliliğinin** görev müddetince sürmesini sağlamakla yükümlüdür.",
+      "articleRefs": [
+        "33"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Ders düzeni ve uzman eğitici sınırları",
+      "body": "**Temel eğitim düzeni:**\n- Günlük **sekiz**, haftada **kırk sekiz** saatten fazla olamaz.\n- Bir ders saati **kırk dakika**; iki ders arası **en az on dakika**.\n- Aynı ders konusunda, **ikişer dersten** fazla olmamak üzere blok ders yapılabilir.\n- **Haftanın bir günü** istirahattır, ders yapılmaz.\n\n**Uzman eğitici:**\n- **Fiilen memur** olan: haftada toplam **yirmi** saatten fazla ders veremez; mesai içinde ders için haftada **sekiz** saatten fazla izin alamaz.\n- **Emekli veya özel sektörde** çalışan: haftada **kırk beş** saatten fazla ders veremez.\n- Bir eğitici, şartları taşısa bile bir eğitim kurumunda **en fazla üç farklı derse** girebilir.",
+      "articleRefs": [
+        "33"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Atış eğitimi ve poligon",
+      "body": "- Temel ve yenileme eğitiminde **Bakanlıkça belirlenen mesafeden** ve **25 fişek** üzerinden atış yaptırılır.\n- Başarı için **25 fişeğin en az 15'i** hedefe isabet etmelidir.\n- Başaramayana **ek fişek istihkakı** alınarak başarılı oluncaya kadar atış yaptırılır.\n- Fişeklerin sarf edildiğine dair tutanağı **atış yerinin sorumlusu ve eğitim kurumu yöneticisi** imzalar.\n- Silahlı görevlilere, istihdam eden kurum/kuruluş veya şirketçe **her yıl en az 25 fişek** üzerinden hizmet içi atış yaptırılır.\n\n**Poligon:** Silah Bilgisi ve Atış dersinin uygulamaları uygulamalı eğitim alanında/poligonda, **atış eğitimleri ise poligonda** yapılır. Kendine ait atış poligonu olmayan özel eğitim kurumu, **hizmet içi eğitimleri aksatmamak** ve ilgili kamu kuruluşunun uygun görüşünü almak şartıyla **bedeli mukabilinde** özel veya kamu poligonundan yararlanabilir; atış poligonunu eğitim faaliyetine başladığı tarihten itibaren **on beş gün** içinde **Valiliğe** bildirir. Güvenlik Sistemleri dersi, cihazların kurulu olduğu alanlarda da yapılabilir.",
+      "articleRefs": [
+        "33"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "25 mi, 15 mi, 5 mi?",
+      "body": "Fişek sayıları birbirine çok benziyor, dikkat et:\n- **25** — silah başına alınabilen fişek (md 29). Eğitim fişekleri bu sınırlamaya **tabi değil**.\n- **25 / 15** — eğitimde atılan fişek ve başarı için gereken asgari isabet (md 33).\n- **En az 25** — silahlı görevliye her yıl yaptırılan hizmet içi atış (md 33).\n- **5** — uygulamalı **sınavdaki** atış (md 38).\nEğitim atışını sınav atışıyla karıştırırsan doğru cevabı kaçırırsın.",
+      "articleRefs": [
+        "29",
+        "33",
+        "38"
+      ]
+    },
+    {
+      "type": "numbers",
+      "title": "Silah ve temel eğitim sayıları",
+      "rows": [
+        {
+          "label": "Silah başına fişek izni",
+          "value": "25 adet",
+          "refs": [
+            "29"
+          ]
+        },
+        {
+          "label": "Kendi ruhsatlı silahını kullanma: istekle ayrılanlarda asgari hizmet",
+          "value": "5 yıl",
+          "refs": [
+            "25"
+          ]
+        },
+        {
+          "label": "Silah ve fişek devri için süre",
+          "value": "6 ay",
+          "refs": [
+            "30"
+          ]
+        },
+        {
+          "label": "Devir olmazsa ruhsat başvurusu",
+          "value": "izleyen 2 ay içinde",
+          "refs": [
+            "30"
+          ]
+        },
+        {
+          "label": "Eğitim kurumu inceleme komisyonu",
+          "value": "3 kişi",
+          "refs": [
+            "32"
+          ]
+        },
+        {
+          "label": "Temel eğitim",
+          "value": "asgari 120 saat",
+          "refs": [
+            "33"
+          ]
+        },
+        {
+          "label": "Silah ve atış eğitimi",
+          "value": "20 saat",
+          "refs": [
+            "33"
+          ]
+        },
+        {
+          "label": "Silahsız görevli temel eğitimi",
+          "value": "en az 100 saat",
+          "refs": [
+            "33"
+          ]
+        },
+        {
+          "label": "Günlük / haftalık azami eğitim",
+          "value": "8 / 48 saat",
+          "refs": [
+            "33"
+          ]
+        },
+        {
+          "label": "Ders saati / iki ders arası",
+          "value": "40 dakika / en az 10 dakika",
+          "refs": [
+            "33"
+          ]
+        },
+        {
+          "label": "Memur uzman eğitici: haftalık ders / mesai içi izin",
+          "value": "en fazla 20 saat / en fazla 8 saat",
+          "refs": [
+            "33"
+          ]
+        },
+        {
+          "label": "Emekli veya özel sektör uzman eğitici: haftalık ders",
+          "value": "en fazla 45 saat",
+          "refs": [
+            "33"
+          ]
+        },
+        {
+          "label": "Bir eğiticinin bir kurumda girebileceği farklı ders",
+          "value": "en fazla 3",
+          "refs": [
+            "33"
+          ]
+        },
+        {
+          "label": "Eğitim atışı / başarı için isabet",
+          "value": "25 fişek / en az 15",
+          "refs": [
+            "33"
+          ]
+        },
+        {
+          "label": "Yıllık hizmet içi atış",
+          "value": "en az 25 fişek",
+          "refs": [
+            "33"
+          ]
+        },
+        {
+          "label": "Poligonun Valiliğe bildirimi",
+          "value": "15 gün içinde",
+          "refs": [
+            "33"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "25",
+        "29",
+        "30",
+        "32",
+        "33"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Yenileme eğitimi",
+      "body": "- Görevliler ve yöneticiler, kimlik kartlarının yenilenebilmesi için **beş yılda bir** yenileme eğitimi alır.\n- Eğitim **en az altmış ders saati**dir; **sekiz ders saati** silah bilgisi ve atış dersine ayrılır. Konular ve saatler **Ek-13**'tedir.\n- Havalimanı ve deniz limanı görevlileri için uluslararası sözleşmelerden doğan hükümler saklıdır.\n- Günlük **sekiz**, haftada **kırk sekiz** saati geçemez; ders saati **kırk dakika**, ara **en az on dakika**; ikişer dersi geçmeyen blok ders yapılabilir.\n\n**Yerinde yenileme:** Kendi bünyesinde özel güvenlik birimi olan, **en az yirmi** görevli istihdam eden yerlerde; yeterli araç-gereç ve sınıf ortamı varsa ve **il valiliği** yerinde incelemede uygun bulursa yapılabilir. **Özel güvenlik şirketlerinden hizmet alanlar yerinde yenileme eğitimi yapamaz.**\n\nEğitime katılanların hizmet ve iş akitleri devam eder; **özlük haklarından yoksun bırakılamaz**.",
+      "articleRefs": [
+        "34"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Devam zorunluluğu ve sınav düzeni",
+      "body": "**Devam (md 35):** Her dersin sonunda devam çizelgesi düzenlenir. **Her bir dersin %25'inden fazlasına** devam etmeyen dersi tamamlamamış sayılır. Temel, yenileme ve alan eğitim programını **bir yıl içinde** tamamlamayanın kursla ilişiği kesilir.\n\n**Sınav (md 36):** Temel ve yenileme eğitimini tamamlayanlar **yazılı ve uygulamalı** sınava girer. Yazılı sınav, **merkezi sınav komisyonunca** hazırlanan sorularla **illerde** yapılır. Gözlemci sayısını Bakanlık belirler; gözlemciler ve uygulamalı sınav komisyonu personeli **valilikçe** belirlenir.\n\n**Yazılı sınav (md 37):** Yeri, tarihi, başvuru süresi ve istenen belgeler **en az on beş gün önceden** Komisyonca ilan edilir. Çoktan seçmeli, iki kısım:\n- **Temel:** birinci kısım **80**, silah bilgisi kısmı **20** soru.\n- **Yenileme:** birinci kısım **40**, silah bilgisi kısmı **20** soru.\n\n**Uygulamalı sınav (md 38):** Bakanlıkça belirlenen mesafeden **5 fişekle** atış; **yazılı sınavdan hemen sonra** yapılır. Aday çoksa birden fazla komisyon kurulabilir, sınav devam eden günlerde tamamlanabilir.",
+      "articleRefs": [
+        "35",
+        "36",
+        "37",
+        "38"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Sınav sonuçlarının değerlendirilmesi",
+      "body": "- Yazılı sınavın iki kısmı ve uygulamalı sınav **ayrı ayrı 100 puan** üzerinden değerlendirilir.\n- **Silahlı** aday: her iki yazılı kısımdan **ve** uygulamalıdan **ayrı ayrı en az 60** puan almalıdır.\n- **Sınav puanı** = birinci kısmın **%50**'si + ikinci kısmın **%25**'i + uygulamalının **%25**'i.\n- Başarısız aday, kursa yeniden devam etmeden **bir yıl içinde birbirini takip eden beş sınava daha** girebilir. **Toplam altı** sınavda da başarısızsa yeniden kurs şartı aranır.\n- **Silahsız** görev yapacak olan: yalnız **birinci kısmı** cevaplar, **en az altmış** puanla başarılı sayılır.\n- Silah bilgisi ve atış fark dersini alan özel güvenlik meslek yüksekokulu mezunu: silah bilgisiyle ilgili yazılı ve uygulamalı sınavdan **altmış** puanla başarılı. Öğrenciler eğitim döneminde **silahsız ve gözlemci sıfatıyla** staj yapabilir; **iki yıllık** öğrenim boyunca silah eğitimi alabilir, bu eğitim mezuniyetle geçerli sayılır.\n\n**Yenileme sınavı:** **Seviye tespitine** yöneliktir; puan sertifikaya işlenir, yükselmelerde işverence göz önüne alınabilir. Görevli, çalışma izni süresince seviye yükseltme sınavlarına girebilir.\n\nOptik cevap kâğıtları, atış kâğıtları ve benzeri doküman **altı ay** saklanır, sonra tutanakla imha edilir.",
+      "articleRefs": [
+        "39"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Sertifika ve ders malzemesi",
+      "body": "**Sertifika (md 41):** Temel eğitim sonrası yazılı ve uygulamalı sınavlarda ve alan eğitimi sınavında başarılı olanlara, yenileme eğitimi sınavlarında seviye puanı yeniden belirlenenlere **Ek-12 Özel Güvenlik Eğitim Sertifikası valilikçe onaylanarak** verilir.\n- Temel ve yenileme eğitimi sertifikası: **beş yıl**\n- Alan eğitimi sertifikası: **süresiz**\n\n**Ders malzemesi (md 42):** Yayınların **Emniyet Genel Müdürlüğü Yayın Yönetmeliği**'ne göre tavsiye edilmiş olması şarttır. **Üniversitelerde** ders kitabı ve ekipmanı olarak kullanılan materyalde bu şart aranmaz. Uygulamalı dersler için yeterli ekipman hazır bulundurulur.",
+      "articleRefs": [
+        "41",
+        "42"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Denetim: kim, neyi, nasıl?",
+      "body": "**Kim (md 43):** **Bakanlık ve valilikler**, Kanun ve Yönetmeliğe uyulup uyulmadığını, yasak uygulama ve davranış olup olmadığını, amaç dışı faaliyet bulunup bulunmadığını tespit için **her zaman** denetleyebilir.\n\n**Kimler denetlenir:** özel güvenlik şirketleri, alarm izleme merkezleri, özel güvenlik birimleri, özel eğitim kurumları.\n\n**Bakanlık adına:** Sorumluluk bölgesi esasına göre **Jandarma Genel Komutanlığı ve Emniyet Genel Müdürlüğü merkez teşkilatına** bağlı ilgili birimler. Havalimanı ve limanlarda uluslararası anlaşmalar ve ilgili yönetmelik hükümleri de göz önünde bulundurulur.\n\n**Neye bakılır (md 44):**\n- Faaliyet izni ve personelin çalışma izinlerinin geçerliliği,\n- Görevliler için **mali sorumluluk sigortası**,\n- Üçüncü kişilerle yapılan sözleşmelerin usulüne uygunluğu ve **zamanında valiliğe bildirimi**,\n- Görev alanına uyulması,\n- Silah ve teçhizatın ruhsatlı olması ve usulüne uygun korunması,\n- Kayıt ve defterler, eğitim hizmetleri, Kanun ve Yönetmeliğin diğer hükümleri, amaç dışı faaliyet.",
+      "articleRefs": [
+        "43",
+        "44"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Denetim sonucu ve idari para cezası",
+      "body": "**Rapor (md 45):** Bir sureti denetlenen birimin dosyasında, bir sureti **valilikte**, ilgisine göre bir sureti **Bakanlıkta**.\n\n**Eksiklik:** Yazılı bildirilir; niteliğine göre **asgari yedi gün** süre verilir. Süre sonunda giderilmezse veya suç teşkil eden uygulama tespit edilirse **Kanunun 19 uncu ve 20 nci maddesindeki** cezalar uygulanır.\n\n**İptal:** Amacı dışında faaliyet gösteren veya suç kaynağına dönüşen **şirketlerin ve özel eğitim kurumlarının faaliyet izni Bakanlıkça**, **alarm izleme merkezlerinin yeterlilik belgesi valilikçe** iptal edilir.\n\n**İdari para cezası (md 46):**\n- Kanunun 20 nci maddesindeki hâllerde, tutanaklar eklenerek **en az yedi gün** süre verilip savunma istenir.\n- Savunması yeterli görülmeyene **ilçelerde kaymakamın, illerde valinin** onayıyla idari para cezası verilir.\n- Onaylar **yedi gün içinde** ilçelerde **mal müdürlüklerine**, illerde **defterdarlığa** gönderilir.\n- Ceza, valilik veya kaymakamlığın bildirimi üzerine **6183 sayılı Kanun** hükümlerine göre Maliye Bakanlığınca tahsil olunur.\n\n**Not:** “Maliye Bakanlığı” adı yönetmelik metnindeki hâliyle verilmiştir.",
+      "articleRefs": [
+        "45",
+        "46"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Üç ayrı “yedi gün” ve iki ayrı iptal mercii",
+      "body": "Bu iki maddede **yedi gün** üç farklı yerde geçiyor: eksikliği gidermek için **asgari** yedi gün (md 45), savunma için **en az** yedi gün (md 46), ceza onaylarının mal müdürlüğüne/defterdarlığa gönderilmesi için yedi gün **içinde** (md 46). Hangisinin sorulduğuna bak. Merci tuzağı da var: faaliyet izni iptali **Bakanlık**, alarm izleme merkezi yeterlilik belgesi iptali **valilik**. Cezayı onaylayan ise ilçede **kaymakam**, ilde **vali**.",
+      "articleRefs": [
+        "45",
+        "46"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Ücretler, istihdam hesabı ve son hükümler",
+      "body": "**Sınav görevlisi ücreti (md 40):** Sınav komisyonu üyelerine ve gözetim ile değerlendirme görevlilerine, Emniyet Genel Müdürlüğüne bağlı eğitim kurumlarında ders saatlerine dair Bakanlar Kurulu kararıyla yürürlüğe giren esaslara göre **ders ücreti** ödenir.\n\n**Sakat ve eski hükümlü (md 47):** 4857 sayılı İş Kanununun 30 uncu maddesine göre çalıştırılacak sayının belirlenmesinde **özel güvenlik görevlileri hesaba dahil edilmez**.\n\n**Ücret (Ek 1):** Eğitim, sınav ve belgelendirme ücretleri **Bakanlıkça** belirlenir; işlemler ilgisine göre **Polis Akademisi Başkanlığı** veya **Jandarma ve Sahil Güvenlik Akademisi Başkanlığı** Döner Sermaye İşletmeleri vasıtasıyla yürütülür. Gelirler, ilgisine göre Emniyet Genel Müdürlüğü veya Jandarma Genel Komutanlığında özel güvenlik hizmetlerinin geliştirilmesi kapsamında kullanılır. Ayrıntılar birimler arası **protokolle** düzenlenir.\n\n**Taban ücret (Ek 2):** Eğitim maliyeti ve il/ilçenin ekonomik koşulları dikkate alınarak, özel güvenlik alanındaki sivil toplum kuruluşu ile eğitim kurumu temsilcisinin katılımıyla **Komisyon** belirler; **her yıl Ocak ayı** içinde duyurulur, **1 Şubat**'tan itibaren **bir yıl** uygulanır. Eğitim kurumları taban ücretin **altında kayıt yapamaz**.\n\n**Md 48:** Bazı Kurum ve Kuruluşların Korunması ve Güvenliklerinin Sağlanması Hakkında Kanunun Uygulanmasına Dair Yönetmelik ve değişiklikleri yürürlükten kaldırılmıştır.\n\n**Md 50:** Yönetmeliği **İçişleri Bakanı** yürütür.\n\n**Not:** “Bakanlar Kurulu” kararına yapılan atıf yönetmelik metnindeki hâliyle verilmiştir.",
+      "articleRefs": [
+        "40",
+        "47",
+        "Ek 1",
+        "Ek 2",
+        "48",
+        "50"
+      ]
+    },
+    {
+      "type": "numbers",
+      "title": "Yenileme, sınav, sertifika ve denetim sayıları",
+      "rows": [
+        {
+          "label": "Yenileme eğitimi sıklığı",
+          "value": "5 yılda bir",
+          "refs": [
+            "34"
+          ]
+        },
+        {
+          "label": "Yenileme eğitimi süresi",
+          "value": "en az 60 ders saati",
+          "refs": [
+            "34"
+          ]
+        },
+        {
+          "label": "Yenilemede silah bilgisi ve atış",
+          "value": "8 ders saati",
+          "refs": [
+            "34"
+          ]
+        },
+        {
+          "label": "Yerinde yenileme için asgari görevli",
+          "value": "20",
+          "refs": [
+            "34"
+          ]
+        },
+        {
+          "label": "Devamsızlık sınırı",
+          "value": "her dersin %25'inden fazlası",
+          "refs": [
+            "35"
+          ]
+        },
+        {
+          "label": "Programı tamamlama süresi",
+          "value": "1 yıl",
+          "refs": [
+            "35"
+          ]
+        },
+        {
+          "label": "Yazılı sınav ilanı",
+          "value": "en az 15 gün önceden",
+          "refs": [
+            "37"
+          ]
+        },
+        {
+          "label": "Temel eğitim yazılı sınavı",
+          "value": "80 + 20 soru",
+          "refs": [
+            "37"
+          ]
+        },
+        {
+          "label": "Yenileme eğitimi yazılı sınavı",
+          "value": "40 + 20 soru",
+          "refs": [
+            "37"
+          ]
+        },
+        {
+          "label": "Uygulamalı sınav atışı",
+          "value": "5 fişek",
+          "refs": [
+            "38"
+          ]
+        },
+        {
+          "label": "Her sınav bölümünün değerlendirilmesi",
+          "value": "100 puan üzerinden",
+          "refs": [
+            "39"
+          ]
+        },
+        {
+          "label": "Başarı barajı (her bölüm ayrı)",
+          "value": "en az 60 puan",
+          "refs": [
+            "39"
+          ]
+        },
+        {
+          "label": "Sınav puanı ağırlıkları (birinci kısım / ikinci kısım / uygulamalı)",
+          "value": "%50 / %25 / %25",
+          "refs": [
+            "39"
+          ]
+        },
+        {
+          "label": "Kursa dönmeden ek sınav hakkı",
+          "value": "1 yıl içinde 5 sınav daha (toplam 6)",
+          "refs": [
+            "39"
+          ]
+        },
+        {
+          "label": "Sınav dokümanlarının saklanması",
+          "value": "6 ay",
+          "refs": [
+            "39"
+          ]
+        },
+        {
+          "label": "Temel ve yenileme sertifikası / alan eğitimi sertifikası",
+          "value": "5 yıl / süresiz",
+          "refs": [
+            "41"
+          ]
+        },
+        {
+          "label": "Eksikliği giderme süresi",
+          "value": "asgari 7 gün",
+          "refs": [
+            "45"
+          ]
+        },
+        {
+          "label": "Savunma süresi",
+          "value": "en az 7 gün",
+          "refs": [
+            "46"
+          ]
+        },
+        {
+          "label": "Ceza onaylarının gönderilmesi",
+          "value": "7 gün içinde",
+          "refs": [
+            "46"
+          ]
+        },
+        {
+          "label": "Taban ücret duyurusu / uygulanması",
+          "value": "Ocak ayı / 1 Şubat'tan itibaren 1 yıl",
+          "refs": [
+            "Ek 2"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "34",
+        "35",
+        "37",
+        "38",
+        "39",
+        "41",
+        "45",
+        "46",
+        "Ek 2"
+      ]
+    },
+    {
+      "type": "compare",
+      "title": "Temel eğitim ve yenileme eğitimi",
+      "rows": [
+        {
+          "aspect": "Süre",
+          "left": "Asgari 120 saat",
+          "right": "En az 60 ders saati",
+          "refs": [
+            "33",
+            "34"
+          ]
+        },
+        {
+          "aspect": "Silah bilgisi ve atış",
+          "left": "20 saat",
+          "right": "8 ders saati",
+          "refs": [
+            "33",
+            "34"
+          ]
+        },
+        {
+          "aspect": "Günlük / haftalık azami",
+          "left": "8 / 48 saat",
+          "right": "8 / 48 saat",
+          "refs": [
+            "33",
+            "34"
+          ]
+        },
+        {
+          "aspect": "Haftalık istirahat günü",
+          "left": "Haftanın bir günü ders yapılmaz",
+          "right": "34. maddede bu hüküm yer almaz",
+          "refs": [
+            "33",
+            "34"
+          ]
+        },
+        {
+          "aspect": "Eğitim yeri",
+          "left": "Bakanlıktan faaliyet izni alan özel eğitim kurumları",
+          "right": "Özel eğitim kurumları; şartlar varsa fiilen hizmet verilen yerlerde de",
+          "refs": [
+            "31",
+            "34"
+          ]
+        },
+        {
+          "aspect": "Yazılı sınav birinci kısım",
+          "left": "80 soru",
+          "right": "40 soru",
+          "refs": [
+            "37"
+          ]
+        },
+        {
+          "aspect": "Yazılı sınav silah bilgisi kısmı",
+          "left": "20 soru",
+          "right": "20 soru",
+          "refs": [
+            "37"
+          ]
+        },
+        {
+          "aspect": "Sınavın amacı",
+          "left": "Başarı ölçümü; silahlı adayda her bölümden en az 60 puan",
+          "right": "Seviye tespiti; puan sertifikaya işlenir",
+          "refs": [
+            "39"
+          ]
+        },
+        {
+          "aspect": "Sertifika geçerliliği",
+          "left": "Beş yıl",
+          "right": "Beş yıl",
+          "refs": [
+            "41"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "31",
+        "33",
+        "34",
+        "37",
+        "39",
+        "41"
+      ]
+    },
+    {
+      "type": "exam_stats",
+      "title": "Sınav der ki",
+      "rows": [
+        {
+          "label": "Bu ünitenin maddelerinden yayındaki soru",
+          "value": "0",
+          "refs": [
+            "24",
+            "25",
+            "26",
+            "27",
+            "28",
+            "29",
+            "30",
+            "31",
+            "32",
+            "33",
+            "34",
+            "35",
+            "36",
+            "37",
+            "38",
+            "39",
+            "40",
+            "41",
+            "42",
+            "43",
+            "44",
+            "45",
+            "46",
+            "47",
+            "Ek 1",
+            "Ek 2",
+            "48",
+            "50"
+          ]
+        },
+        {
+          "label": "Hiç soru çıkmamış",
+          "value": "md 24, md 25, md 26, md 27, md 28, md 29, md 30, md 31, md 32, md 33, md 34, md 35, md 36, md 37, md 38, md 39, md 40, md 41, md 42, md 43, md 44, md 45, md 46, md 47, md Ek 1, md Ek 2, md 48, md 50",
+          "refs": [
+            "24",
+            "25",
+            "26",
+            "27",
+            "28",
+            "29",
+            "30",
+            "31",
+            "32",
+            "33",
+            "34",
+            "35",
+            "36",
+            "37",
+            "38",
+            "39",
+            "40",
+            "41",
+            "42",
+            "43",
+            "44",
+            "45",
+            "46",
+            "47",
+            "Ek 1",
+            "Ek 2",
+            "48",
+            "50"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "24",
+        "25",
+        "26",
+        "27",
+        "28",
+        "29",
+        "30",
+        "31",
+        "32",
+        "33",
+        "34",
+        "35",
+        "36",
+        "37",
+        "38",
+        "39",
+        "40",
+        "41",
+        "42",
+        "43",
+        "44",
+        "45",
+        "46",
+        "47",
+        "Ek 1",
+        "Ek 2",
+        "48",
+        "50"
+      ],
+      "generated": true
+    },
+    {
+      "type": "bridge",
+      "title": "Bu üniteden soru çöz",
+      "articleRefs": [
+        "24",
+        "25",
+        "26",
+        "27",
+        "28",
+        "29",
+        "30",
+        "31",
+        "32",
+        "33",
+        "34",
+        "35",
+        "36",
+        "37",
+        "38",
+        "39",
+        "40",
+        "41",
+        "42",
+        "43",
+        "44",
+        "45",
+        "46",
+        "47",
+        "Ek 1",
+        "Ek 2",
+        "48",
+        "50"
+      ],
+      "generated": true,
+      "rows": [
+        {
+          "label": "Madde kapsamlı seans",
+          "value": "md 24–47, Ek 1, Ek 2, 48, 50, 0 soru",
+          "refs": [
+            "24",
+            "25",
+            "26",
+            "27",
+            "28",
+            "29",
+            "30",
+            "31",
+            "32",
+            "33",
+            "34",
+            "35",
+            "36",
+            "37",
+            "38",
+            "39",
+            "40",
+            "41",
+            "42",
+            "43",
+            "44",
+            "45",
+            "46",
+            "47",
+            "Ek 1",
+            "Ek 2",
+            "48",
+            "50"
+          ]
+        }
+      ]
+    }
+  ]
+}

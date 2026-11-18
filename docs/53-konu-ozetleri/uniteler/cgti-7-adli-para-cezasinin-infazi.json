@@ -1,0 +1,496 @@
+{
+  "unit": {
+    "slug": "cgti-7-adli-para-cezasinin-infazi",
+    "legislationSlug": "5275-ceza-ve-guvenlik-tedbirlerinin-infazi-hakkinda-kanun",
+    "topicId": "3a7fb703-175b-4a01-a217-a00766c51d07",
+    "title": "Adli para cezası ve koşullu salıverilme",
+    "subtitle": "Ödenmeyen adlî para cezası, koşullu salıverilme, mükerrirlere özgü infaz rejimi ve seçenekli yaptırımlar",
+    "articleFrom": "106",
+    "articleTo": "109",
+    "readingMinutes": 12,
+    "sourceLabel": "AI özeti — 5275 Ceza ve Güvenlik Tedbirlerinin İnfazı Hakkında Kanun, md 106–109",
+    "articleNos": [
+      "106",
+      "107",
+      "108",
+      "109"
+    ],
+    "generatedBy": "claude-opus-5-5 (ozet-uret.ts)",
+    "sortOrder": 7
+  },
+  "blocks": [
+    {
+      "type": "concept",
+      "title": "Adlî para cezası: Hazineye ödenen para",
+      "body": "Adlî para cezası, Türk Ceza Kanununun 52 nci maddesinin birinci fıkrasındaki usule göre belirlenen bir miktar paranın Devlet Hazinesine ödenmesinden ibarettir. Cezayı içeren ilâm Cumhuriyet Başsavcılığına verilir. Cumhuriyet savcısı otuz gün içinde, ödeme için hükümlüye 20 nci maddenin üçüncü fıkrası uyarınca bir ödeme emri tebliğ eder. Yani ödeme sürecini mahkeme değil, savcılık yürütür.",
+      "articleRefs": [
+        "106"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Ödenmezse: hapse çevirme ve kamuya yararlı iş",
+      "body": "**Şart:** Hükümlü, tebliğ olunan ödeme emri üzerine belli süre içinde adlî para cezasını ödemez.\n\n**Sonuç:**\n- **Cumhuriyet savcısının kararı** ile ödenmeyen kısma karşılık gelen gün miktarı hapis cezasına çevrilir.\n- Hükümlü, **iki saat çalışması karşılığı bir gün** olmak üzere kamuya yararlı bir işte çalıştırılır.\n- Günlük çalışma süresi **en az iki, en fazla sekiz saat** olacak şekilde **denetimli serbestlik müdürlüğünce** belirlenir.\n\n**Uymama hâli:** Hükümlü programa ve denetimli serbestlik görevlilerinin uyarı ve önerilerine uymazsa çalıştığı günler hapis cezasından mahsup edilir; kalan kısmın tamamı **açık ceza infaz kurumunda** yerine getirilir.\n\n**Ayrıca:** Adlî para cezasının hapse çevrileceği mahkeme ilâmında yazılı olmasa bile bu hüküm Cumhuriyet Başsavcılığınca uygulanır.",
+      "articleRefs": [
+        "106"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Kim karar verir, nerede çektirilir?",
+      "body": "Burada iki makam ve bir yer birbirine karışır, dikkat et. Hapse çevirme kararını **mahkeme değil, Cumhuriyet savcısı** verir. Günlük çalışma süresini **savcı değil, denetimli serbestlik müdürlüğü** belirler. Programa uymayan hükümlünün kalan cezası **açık** ceza infaz kurumunda çektirilir; \"kapalı ceza infaz kurumu\" diyen şık yanlıştır. \"İlâmda hapse çevrileceği yazmıyorsa çevrilemez\" şıkkına da kanma: md 106/5'e göre ilâmda yazılı olmasa bile çevirme Cumhuriyet Başsavcılığınca uygulanır.",
+      "articleRefs": [
+        "106"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "type": "rule",
+      "title": "Taksit, üst sınır ve sonradan ödeme",
+      "body": "**Taksit:** Hükümde adlî para cezası takside bağlanmamışsa, **bir aylık süre içinde cezanın üçte birini** ödeyen hükümlünün isteği üzerine geri kalan kısmın **birer ay ara ile iki eşit taksitte** ödenmesine izin verilir. İlk taksit süresinde ödenmezse ikinci takside ilişkin izin hükümsüz kalır.\n\n**Üst sınır:** Adlî para cezası yerine çektirilen hapis süresi **üç yılı** geçemez. Birden fazla hükümle adlî para cezalarına mahkûmiyet hâlinde bu süre **beş yılı** geçemez.\n\n**Sonradan ödeme:** Hükümlü, hapis yattığı veya kamuya yararlı işte çalıştığı günlerin dışındaki günlere karşılık gelen parayı öderse hapisten çıkartılır veya kamuya yararlı işte çalıştırılma sona erer.",
+      "articleRefs": [
+        "106"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Çevrilen hapsin özel rejimi",
+      "body": "**Kural:** 16 ncı madde hükümleri saklı kalmak üzere, adlî para cezasından çevrilen hapsin infazı:\n- **ertelenemez**,\n- infazında **koşullu salıverilme hükümleri uygulanmaz**.\n\n**Hak yoksunlukları:** Hapse çevrilmiş olsa bile hak yoksunlukları bakımından esas alınan **adlî para cezasıdır**, çevrilen hapis değil.",
+      "articleRefs": [
+        "106"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Çocuğun adlî para cezası hapse çevrilmez",
+      "body": "Çocuklar hakkında hükmedilen adlî para cezası ödenmezse bu ceza **hapse çevrilemez**. Bu durumda tahsil yoluna gidilir: ilâm, Cumhuriyet Başsavcılığınca **mahallin en büyük mal memuruna** verilir ve kalan ceza 6183 sayılı Amme Alacaklarının Tahsil Usulü Hakkında Kanuna göre tahsil edilir. Aynı tahsil yolu, yetişkin hükümlüde infaz edilen hapsin veya kamuya yararlı işte çalışmanın cezayı tamamen karşılamadığı hâlde de işler. \"Çocuğun cezası kamuya yararlı işe çevrilir\" ya da \"açık ceza infaz kurumunda çektirilir\" diyen şıklar yanlıştır.",
+      "articleRefs": [
+        "106"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "type": "numbers",
+      "title": "Adlî para cezası: sayılar ve süreler",
+      "rows": [
+        {
+          "label": "Ödeme emrinin tebliği",
+          "value": "30 gün içinde (Cumhuriyet savcısı)",
+          "refs": [
+            "106"
+          ]
+        },
+        {
+          "label": "Kamuya yararlı iş karşılığı",
+          "value": "2 saat çalışma = 1 gün",
+          "refs": [
+            "106"
+          ]
+        },
+        {
+          "label": "Günlük çalışma süresi",
+          "value": "En az 2, en fazla 8 saat",
+          "refs": [
+            "106"
+          ]
+        },
+        {
+          "label": "Taksit için ilk ödeme",
+          "value": "1 aylık süre içinde cezanın üçte biri",
+          "refs": [
+            "106"
+          ]
+        },
+        {
+          "label": "Geri kalan kısım",
+          "value": "Birer ay ara ile 2 eşit taksit",
+          "refs": [
+            "106"
+          ]
+        },
+        {
+          "label": "Çevrilen hapis üst sınırı",
+          "value": "3 yıl",
+          "refs": [
+            "106"
+          ]
+        },
+        {
+          "label": "Birden fazla hükümle mahkûmiyette üst sınır",
+          "value": "5 yıl",
+          "refs": [
+            "106"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "106"
+      ]
+    },
+    {
+      "type": "concept",
+      "title": "Koşullu salıverilme: iyi hâl şart",
+      "body": "Koşullu salıverilmeden yararlanabilmek için mahkûmun kurumdaki infaz süresini **iyi hâlli** olarak geçirmesi gerekir. Ceza infaz kurumu idaresi gerekçeli rapor hazırlar, infaz hâkimi karar verir; hükümlü bir denetim süresine tâbi olur. Denetim süresi yükümlülüklere uygun ve iyi hâlli geçirilirse ceza infaz edilmiş sayılır. Bu ünitenin en çok sayı içeren yeri burası; oranları gruplar hâlinde öğren.",
+      "articleRefs": [
+        "107"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Genel oranlar ve üçte iki listesi",
+      "body": "**Genel kural:**\n- Ağırlaştırılmış müebbet: **otuz yıl**\n- Müebbet: **yirmidört yıl**\n- Diğer süreli hapis: cezanın **yarısı**\n\n**Üçte iki uygulananlar (Türk Ceza Kanunu):**\n- Kasten öldürme (md 81, 82, 83) – süreli hapis\n- Neticesi sebebiyle ağırlaşmış yaralama (yalnız md 87, ikinci fıkra, (d) bendi) – süreli hapis; md 87'nin öteki hâlleri bu listede yoktur\n- İşkence (md 94, 95) ve eziyet (md 96) – süreli hapis\n- Cinsel saldırı (md 102, ikinci fıkra hariç), reşit olmayanla cinsel ilişki (md 104, ikinci ve üçüncü fıkra hariç), cinsel taciz (md 105) – süreli hapis\n- Cinsel dokunulmazlığa karşı suçlardan (md 102–105) hapis cezası alan **çocuklar**\n- Özel hayata ve hayatın gizli alanına karşı suçlar (md 132–138) – süreli hapis\n- Uyuşturucu veya uyarıcı madde imal ve ticareti (md 188) – hapis cezası alan **çocuklar**\n- Devlet sırlarına karşı suçlar ve casusluk (md 326 ilâ 339) – süreli hapis\n\n**Ayrıca üçte iki:** Örgüt suçları ile Terörle Mücadele Kanunu kapsamındaki suçlardan mahkûm **çocuklar**; 2937 sayılı Devlet İstihbarat Hizmetleri ve Milli İstihbarat Teşkilatı Kanunu kapsamındaki suçlardan mahkûm olanlar.",
+      "articleRefs": [
+        "107"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Birden fazla cezada kurumda geçirilecek süre",
+      "body": "Koşullu salıverilme için infaz kurumunda geçirilmesi gereken süre:\n- Birden fazla ağırlaştırılmış müebbet **veya** ağırlaştırılmış müebbet + müebbet: **otuzaltı yıl**\n- Birden fazla müebbet: **otuz yıl**\n- Bir ağırlaştırılmış müebbet + süreli hapis: **en fazla otuzaltı yıl**\n- Bir müebbet + süreli hapis: **en fazla otuz yıl**\n- Birden fazla süreli hapis: **en fazla yirmisekiz yıl**",
+      "articleRefs": [
+        "107"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Örgüt suçlarında koşullu salıverilme",
+      "body": "**Kapsam:** Suç işlemek için örgüt kurmak veya yönetmek ya da örgütün faaliyeti çerçevesinde işlenen suçtan mahkûmiyet.\n\n**Süreler:**\n- Ağırlaştırılmış müebbet: **otuzaltı yıl**\n- Müebbet: **otuz yıl**\n- Süreli hapis: cezanın **üçte ikisi**\n- Oranı üçte ikiden fazla olan suçlarda o suçun kendi oranı uygulanır.\n\n**Birden fazla cezada üst süreler:**\n- Birden fazla ağırlaştırılmış müebbet veya ağırlaştırılmış müebbet + müebbet: **kırk yıl**\n- Birden fazla müebbet: **otuzdört yıl**\n- Ağırlaştırılmış müebbet + süreli: **en fazla kırk yıl**\n- Müebbet + süreli: **en fazla otuzdört yıl**\n- Birden fazla süreli: **en fazla otuziki yıl**\n\n**İstisna:** Bu hükümler **çocuklar hakkında uygulanmaz**.",
+      "articleRefs": [
+        "107"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Onbeş yaş mı, onsekiz yaş mı?",
+      "body": "İki farklı yaş sınırı var. Hükümlünün **onbeş yaşını dolduruncaya kadar** infaz kurumunda geçirdiği **bir gün, iki gün** sayılır. Ama bu avantaj şu suçlarda yok: kasten öldürme (md 81, 82, 83), cinsel dokunulmazlığa karşı suçlar (md 102 ve 103), uyuşturucu veya uyarıcı madde imal ve ticareti (md 188) ve suç işlemek amacıyla örgüt kurma (md 220). **Onsekiz yaşından küçük** sınırı ise bambaşka bir hükümdür: bu hükümlüler denetim süresinde eğitimlerine, gerektiğinde barınma imkânı da olan bir kurumda devam ederler. \"Onsekiz yaşına kadar bir gün iki gün sayılır\" diyen şık yanlıştır.",
+      "articleRefs": [
+        "107"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "type": "rule",
+      "title": "Denetim süresi ve yükümlülükler",
+      "body": "**Süre:** Denetim süresi, infaz kurumunda geçirilmesi gereken süre kadardır; süreli hapislerde **hakederek tahliye tarihini geçemez**.\n\n**Denetim süresinde:**\n- Hükümlü, kurumda öğrendiği meslek veya sanatı icra etmek üzere bir kamu kurumunda ya da aynı işi yapan birinin gözetiminde ücret karşılığı çalıştırılabilir.\n- Onsekiz yaşından küçükler eğitimlerine devam eder.\n- İnfaz hâkimi rehberlik edecek bir **uzman kişi** görevlendirebilir; bu kişi **üçer aylık** sürelerle rapor düzenleyip infaz hâkimine verir.\n- İnfaz hâkimi, **iki yılı geçmemek üzere** hükümlünün denetimli serbestlik müdürlüğünce belirlenecek yükümlülüklere tabi tutulmasına karar verebilir: belirli bölgede denetim ve gözetim altında bulundurma, belirlenen yer veya bölgelere gitmeme, belirlenen programlara katılma.\n\n**Esneklik:** İnfaz hâkimi denetim süresinin tedbirsiz veya yükümlülüksüz geçirilmesine karar verebilir ya da tedbiri/yükümlülükleri süre içinde kaldırabilir.",
+      "articleRefs": [
+        "107"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Karar ve geri alma",
+      "body": "**Karar:** Ceza infaz kurumu idaresinin gerekçeli raporu, infaz işlemlerinin yapıldığı yer **infaz hâkimliğine** verilir. İnfaz hâkimi raporu uygun bulursa **dosya üzerinden** karar verir; uygun bulmazsa gerekçesini gösterir. Bu kararlara itiraz yoluna gidilebilir.\n\n**Geri alma sebepleri:**\n- Denetim süresinde hapis cezasını gerektiren **kasıtlı** bir suç işlemek,\n- Yükümlülüklere **infaz hâkiminin uyarısına rağmen uymamakta ısrar** etmek.\n\n**Sonuç (ceza infaz kurumunda aynen çektirilir):**\n- Suç hâlinde: sonraki suçu işlediği tarihten başlamak ve hak ederek tahliye tarihini geçmemek koşuluyla her bir suç için verilen hapis cezasının **iki katı** süre,\n- Yükümlülük ihlalinde: uymama tarihi ile hak ederek salıverilme tarihi arasını geçmemek koşuluyla ihlalin niteliğine göre takdir edilecek süre.\n\nGeri almadan sonra aynı hükmün infazında **bir daha koşullu salıverilme kararı verilmez**.\n\n**Yetkili merci:** Hükmü veren ilk derece mahkemesinin bulunduğu yer infaz hâkimliği; cezaların toplandığı hâllerde ve hüküm bölge adliye mahkemesi veya Yargıtay tarafından verilmişse 101 inci maddenin ikinci fıkrasına göre belirlenen infaz hâkimliği, dosya üzerinden karar verir. İtiraz yolu açıktır.",
+      "articleRefs": [
+        "107"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Geri almada ve yasakta sık yapılan hatalar",
+      "body": "Geri almada çektirilecek süre \"kalan cezanın tamamı\" değildir; suç hâlinde sonraki her bir suç için verilen hapis cezasının **iki katı** süredir ve hak ederek tahliye tarihini geçemez. Geri alma için **taksirli** değil **kasıtlı** suç gerekir; yükümlülük ihlalinde ise tek bir aykırılık yetmez, **uyarıya rağmen ısrar** aranır. Kararı mahkeme değil **infaz hâkimliği**, duruşmalı değil **dosya üzerinden** verir. Bir de mutlak yasak var: Türk Ceza Kanunundaki Devletin Güvenliğine Karşı Suçlar, Anayasal Düzene ve Bu Düzenin İşleyişine Karşı Suçlar ile Milli Savunmaya Karşı Suçlar bölümlerindeki bir suçun **örgüt faaliyeti çerçevesinde** işlenmesi dolayısıyla **ağırlaştırılmış müebbet** verilmişse koşullu salıverilme hükümleri **hiç uygulanmaz**.",
+      "articleRefs": [
+        "107"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "type": "rule",
+      "title": "Mükerrirlerde koşullu salıverilme",
+      "body": "**Tekerrür hâlinde işlenen suçtan mahkûmiyette** iyi hâlli olarak çekilmesi gereken süre:\n- Ağırlaştırılmış müebbet: **otuzdokuz yıl**\n- Müebbet: **otuzüç yıl**\n- Birden fazla süreli hapis: **en fazla otuziki yıl**\n- Süreli hapis: cezanın **üçte ikisi**\n- Oranı üçte ikiden fazla olan suçlarda o suçun kendi oranı uygulanır.\n\n**Ekleme sınırı:** Tekerrür nedeniyle koşullu salıverme süresine eklenecek miktar, tekerrüre esas alınan cezanın **en ağırından** fazla olamaz. İkinci defa tekerrürde bu sınır uygulanmaz.\n\n**İkinci defa tekerrür:** Yukarıdaki süreler uygulanır; ancak süreli hapis cezalarında oran **dörtte üç**tür. İkinci defa tekerrür hükümlerinin uygulanacağı **hükümde belirtilir**.",
+      "articleRefs": [
+        "108"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Mükerrir denetim süresi ve disiplin hapsi",
+      "body": "**Denetim süresi:** İnfaz hâkimi, mükerrir hakkında cezanın infazının **tamamlanmasından sonra** başlamak ve **bir yıldan az olmamak** üzere denetim süresi belirler. Bu süre içinde koşullu salıverilmeye ilişkin hükümler uygulanır.\n\n**Uzatma:** İnfaz hâkimi denetim süresini **en fazla beş yıla kadar** uzatabilir.\n\n**Disiplin hapsi:** İnfaz tamamlandıktan sonra devam eden denetim süresinde yükümlülük ve yasaklara aykırı hareket eden mükerrir, **infaz hâkimi kararı** ile disiplin hapsine tabi tutulur. Süresi **on beş günden az, üç aydan fazla** olamaz.",
+      "articleRefs": [
+        "108"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Mükerrir olmasa da bu rejime girenler",
+      "body": "**Çocuğa karşı suç (md 108/8):** Çocuğa karşı işlenen bir suçtan ağırlaştırılmış müebbet veya müebbet hapis cezasına mahkûmiyette mükerrir süreleri uygulanır.\n\n**Bazı suçlar (md 108/9):** Türk Ceza Kanununun md 102 ikinci fıkrasındaki cinsel saldırı, md 103 çocukların cinsel istismarı, md 104 ikinci ve üçüncü fıkrasındaki reşit olmayanla cinsel ilişki ve md 188 uyuşturucu veya uyarıcı madde imal ve ticareti suçlarından hapis cezası alanlara da mükerrir süreleri uygulanır; süreli hapislerde oran **dörtte üç**tür.\n\n**Tedavi ve yükümlülükler (md 188 hariç):** Cezanın infazı sırasında ve koşullu salıverilmede denetim süresi içinde, infaz hâkimi şunlardan bir veya birkaçına karar verir:\n- Tıbbi tedaviye tabi tutulmak\n- Tedavi amaçlı programlara katılmak\n- Mağdurun oturduğu ve çalıştığı yerleşim bölgesinde ikamet etmekten yasaklanmak\n- Mağdurun bulunduğu yerlere yaklaşmaktan yasaklanmak\n- Çocuklarla bir arada olmayı gerektiren ortamda çalışmaktan yasaklanmak\n- Çocuklar hakkında bakım ve gözetim yükümlülüğü gerektiren faaliyetten yasaklanmak\n\n**Çocuk istisnası (md 108/10):** Dokuzuncu fıkra hükümleri **çocuklar hakkında uygulanmaz**. Yani md 102 ikinci fıkra, md 103, md 104 ikinci ve üçüncü fıkra ve md 188 suçlarından hapis cezası alan çocuğa ne mükerrir süreleri ve dörtte üç oranı ne de tedavi ve yasak yükümlülükleri uygulanır. Bu çocuklar md 107'deki **üçte iki** oranına tabidir. İstisna yalnız dokuzuncu fıkra içindir; sekizinci fıkrayı kapsamaz.\n\n**Yönetmelik:** Dokuzuncu fıkranın uygulanmasına ilişkin usul ve esaslar, **Sağlık Bakanlığının görüşü** alınarak **Adalet Bakanlığı** tarafından hazırlanan yönetmelikle düzenlenir.",
+      "articleRefs": [
+        "108"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Cinsel suçlar ve uyuşturucuda hangi oran?",
+      "body": "Aynı suç adı iki ayrı maddede geçiyor, fıkraya ve faile bak. Cinsel saldırıda **md 102 ikinci fıkra hariç** hâller ve reşit olmayanla cinsel ilişkide **md 104 ikinci ve üçüncü fıkra hariç** hâller md 107 kapsamında **üçte iki**ye tabidir. Tam o hariç tutulan fıkralar (md 102 ikinci fıkra, md 104 ikinci ve üçüncü fıkra) ile çocukların cinsel istismarı (md 103) ise md 108 kapsamında süreli hapiste **dörtte üç**e tabidir. Fail çocuksa tablo değişir: md 108/10 dokuzuncu fıkrayı çocuklara kapatır; cinsel dokunulmazlığa karşı suçlardan (md 102, 103, 104 ve 105) hapis cezası alan çocuklar md 107 gereği **üçte iki**ye tabidir. Uyuşturucu ticaretinde (md 188) de ayrım var: hapis cezası alan **çocuklar** üçte iki, diğer hükümlüler dörtte üç. Ayrıca md 108'deki tedavi ve yasak yükümlülükleri md 188 suçunda uygulanmaz.",
+      "articleRefs": [
+        "107",
+        "108"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "type": "concept",
+      "title": "Seçenekli yaptırımlar: rejim yönetmelikte",
+      "body": "Kısa süreli hapis cezası yerine Türk Ceza Kanununun 50 nci maddesine göre hükmedilen seçenekli yaptırımların infazında uygulanacak rejim **Cumhurbaşkanınca çıkarılan yönetmelikte** gösterilir. Yönetmelik soruları karışmasın: seçenekli yaptırımların rejimini Cumhurbaşkanınca çıkarılan yönetmelik belirler; md 108'deki tedavi ve yasak yükümlülüklerinin usul ve esaslarını ise Sağlık Bakanlığının görüşü alınarak Adalet Bakanlığının hazırladığı yönetmelik düzenler.",
+      "articleRefs": [
+        "109",
+        "108"
+      ]
+    },
+    {
+      "type": "numbers",
+      "title": "Koşullu salıverilme ve denetim: sayılar",
+      "rows": [
+        {
+          "label": "Ağırlaştırılmış müebbet (genel)",
+          "value": "30 yıl",
+          "refs": [
+            "107"
+          ]
+        },
+        {
+          "label": "Müebbet (genel)",
+          "value": "24 yıl",
+          "refs": [
+            "107"
+          ]
+        },
+        {
+          "label": "Süreli hapis (genel)",
+          "value": "Cezanın yarısı",
+          "refs": [
+            "107"
+          ]
+        },
+        {
+          "label": "Süreli hapis (md 107'de sayılan suçlar)",
+          "value": "Cezanın üçte ikisi",
+          "refs": [
+            "107"
+          ]
+        },
+        {
+          "label": "Birden fazla ağırlaştırılmış müebbet / ağırlaştırılmış müebbet + müebbet",
+          "value": "36 yıl",
+          "refs": [
+            "107"
+          ]
+        },
+        {
+          "label": "Birden fazla müebbet",
+          "value": "30 yıl",
+          "refs": [
+            "107"
+          ]
+        },
+        {
+          "label": "Birden fazla süreli hapis",
+          "value": "En fazla 28 yıl",
+          "refs": [
+            "107"
+          ]
+        },
+        {
+          "label": "Örgüt suçu: ağırlaştırılmış müebbet / müebbet / süreli",
+          "value": "36 yıl / 30 yıl / üçte iki",
+          "refs": [
+            "107"
+          ]
+        },
+        {
+          "label": "Örgüt suçu, birden fazla ceza: üst süreler",
+          "value": "40 yıl / 34 yıl / en fazla 32 yıl",
+          "refs": [
+            "107"
+          ]
+        },
+        {
+          "label": "Onbeş yaşını dolduruncaya kadar",
+          "value": "1 gün = 2 gün",
+          "refs": [
+            "107"
+          ]
+        },
+        {
+          "label": "Denetimde yükümlülük süresi",
+          "value": "2 yılı geçmemek üzere",
+          "refs": [
+            "107"
+          ]
+        },
+        {
+          "label": "Rehber uzman raporu",
+          "value": "Üçer aylık",
+          "refs": [
+            "107"
+          ]
+        },
+        {
+          "label": "Geri almada suç hâlinde çektirilecek süre",
+          "value": "Verilen hapis cezasının 2 katı",
+          "refs": [
+            "107"
+          ]
+        },
+        {
+          "label": "Tekerrür: ağırlaştırılmış müebbet / müebbet",
+          "value": "39 yıl / 33 yıl",
+          "refs": [
+            "108"
+          ]
+        },
+        {
+          "label": "Tekerrür: birden fazla süreli / süreli",
+          "value": "En fazla 32 yıl / üçte iki",
+          "refs": [
+            "108"
+          ]
+        },
+        {
+          "label": "İkinci defa tekerrür ve md 108'deki bazı suçlar (süreli)",
+          "value": "Dörtte üç",
+          "refs": [
+            "108"
+          ]
+        },
+        {
+          "label": "Mükerrir denetim süresi",
+          "value": "En az 1 yıl; en fazla 5 yıla kadar uzatılabilir",
+          "refs": [
+            "108"
+          ]
+        },
+        {
+          "label": "Disiplin hapsi",
+          "value": "15 gün – 3 ay",
+          "refs": [
+            "108"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "107",
+        "108"
+      ]
+    },
+    {
+      "type": "compare",
+      "title": "Örgüt suçu mu, tekerrür mü?",
+      "rows": [
+        {
+          "aspect": "Ağırlaştırılmış müebbet",
+          "left": "Örgüt suçu: 36 yıl",
+          "right": "Tekerrür: 39 yıl",
+          "refs": [
+            "107",
+            "108"
+          ]
+        },
+        {
+          "aspect": "Müebbet",
+          "left": "Örgüt suçu: 30 yıl",
+          "right": "Tekerrür: 33 yıl",
+          "refs": [
+            "107",
+            "108"
+          ]
+        },
+        {
+          "aspect": "Süreli hapis",
+          "left": "Örgüt suçu: üçte iki",
+          "right": "Tekerrür: üçte iki; ikinci defa tekerrürde dörtte üç",
+          "refs": [
+            "107",
+            "108"
+          ]
+        },
+        {
+          "aspect": "Birden fazla süreli hapis",
+          "left": "Örgüt suçu: en fazla 32 yıl",
+          "right": "Tekerrür: en fazla 32 yıl",
+          "refs": [
+            "107",
+            "108"
+          ]
+        },
+        {
+          "aspect": "Oranı üçte ikiden fazla suçlar",
+          "left": "Suçun kendi oranı uygulanır",
+          "right": "Suçun kendi oranı uygulanır",
+          "refs": [
+            "107",
+            "108"
+          ]
+        },
+        {
+          "aspect": "İnfaz sonrası",
+          "left": "Ayrı bir denetim süresi öngörülmemiş",
+          "right": "İnfaz tamamlandıktan sonra en az 1 yıl denetim; ihlalde disiplin hapsi",
+          "refs": [
+            "107",
+            "108"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "107",
+        "108"
+      ]
+    },
+    {
+      "type": "exam_stats",
+      "title": "Sınav der ki",
+      "rows": [
+        {
+          "label": "Bu ünitenin maddelerinden yayındaki soru",
+          "value": "0",
+          "refs": [
+            "106",
+            "107",
+            "108",
+            "109"
+          ]
+        },
+        {
+          "label": "Hiç soru çıkmamış",
+          "value": "md 106, md 107, md 108, md 109",
+          "refs": [
+            "106",
+            "107",
+            "108",
+            "109"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "106",
+        "107",
+        "108",
+        "109"
+      ],
+      "generated": true
+    },
+    {
+      "type": "bridge",
+      "title": "Bu üniteden soru çöz",
+      "articleRefs": [
+        "106",
+        "107",
+        "108",
+        "109"
+      ],
+      "generated": true,
+      "rows": [
+        {
+          "label": "Madde kapsamlı seans",
+          "value": "md 106–109, 0 soru",
+          "refs": [
+            "106",
+            "107",
+            "108",
+            "109"
+          ]
+        }
+      ]
+    }
+  ]
+}

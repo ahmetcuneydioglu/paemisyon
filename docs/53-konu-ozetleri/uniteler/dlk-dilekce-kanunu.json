@@ -1,0 +1,458 @@
+{
+  "unit": {
+    "slug": "dlk-dilekce-kanunu",
+    "legislationSlug": "3071-sayili-dilekce-kanunu",
+    "topicId": "02899557-fb4b-4fa6-8fc7-6cbea966d191",
+    "title": "Dilekçe hakkı ve kullanılması",
+    "subtitle": "Dilekçe hakkı, zorunlu unsurlar, incelenemeyecek dilekçeler ve cevap süreleri",
+    "articleFrom": "1",
+    "articleTo": "11",
+    "readingMinutes": 6,
+    "sourceLabel": "AI özeti — 3071 Sayılı Dilekçe Kanunu, md 1–9, 11",
+    "articleNos": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "11"
+    ],
+    "generatedBy": "claude-opus-5-5 (ozet-uret.ts)",
+    "sortOrder": 1
+  },
+  "blocks": [
+    {
+      "type": "concept",
+      "title": "Dilekçe hakkı: derdini yazıyla anlatma hakkı",
+      "body": "Bir dileğin ya da şikâyetin olabilir. Bu konu seni ilgilendirebilir, kamuyu da ilgilendirebilir. Kanun sana Türkiye Büyük Millet Meclisine ve yetkili makamlara **yazı ile** başvurma hakkı tanır. Kanunun amacı bu hakkın **kullanılma biçimini** düzenlemektir. Kanun kimin başvurabileceğini, dilekçede neler bulunacağını ve başvurunun nasıl cevaplanacağını gösterir.",
+      "articleRefs": [
+        "1",
+        "3",
+        "7"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Amaç ve kapsam",
+      "body": "**Amaç (md 1):** Türk vatandaşlarının ve Türkiye'de ikamet eden yabancıların kendileriyle veya kamu ile ilgili dilek ve şikâyetleri hakkında, Türkiye Büyük Millet Meclisine ve yetkili makamlara yazı ile başvurma haklarının kullanılma biçimini düzenlemek.\n\n**Kapsam (md 2):** Türk vatandaşları ve Türkiye'de ikamet eden yabancılar tarafından **Türkiye Büyük Millet Meclisi** ile **idarî makamlara** yapılan dilek ve şikâyetler hakkındaki başvurular.",
+      "articleRefs": [
+        "1",
+        "2"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Hak sahipleri: vatandaş ve yabancı",
+      "body": "- **Türk vatandaşları:** Kendileriyle veya kamu ile ilgili dilek ve şikâyetleri hakkında Türkiye Büyük Millet Meclisine ve yetkili makamlara yazı ile başvurma hakkına sahiptir.\n- **Türkiye'de ikamet eden yabancılar:** Bu haktan şu kayıtlarla yararlanabilir:\n  - **karşılıklılık esası** gözetilir,\n  - dilekçeleri **Türkçe** yazılır.",
+      "articleRefs": [
+        "3"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Yabancıda şartlar düşmez",
+      "body": "Yabancıların **karşılıklılık esası gözetilmeksizin** bu haktan yararlanabileceğini söyleyen ifade yanlıştır. Maddede karşılıklılık esasının gözetilmesi **ve** dilekçenin Türkçe yazılması birlikte aranır. Bu şartlardan birini düşüren şık seni tuzağa çeker. \"Türkiye'de ikamet eden\" ifadesini de gözden kaçırma.",
+      "articleRefs": [
+        "3"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Dilekçede bulunması zorunlu unsurlar",
+      "body": "Türkiye Büyük Millet Meclisine veya yetkili makamlara **verilen veya gönderilen** dilekçelerde şunlar bulunmalıdır:\n- dilekçe sahibinin **adı-soyadı**,\n- dilekçe sahibinin **imzası**,\n- **iş veya ikametgâh adresi**.\n\nBu şartlardan herhangi birini taşımayan dilekçe **incelenemez** (md 6/c).",
+      "articleRefs": [
+        "4",
+        "6"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Yanlış makama verilen dilekçe",
+      "body": "Dilekçe, konusuyla ilgili olmayan bir **idari makama** verilirse bu makam:\n- dilekçeyi **yetkili idari makama gönderir**,\n- ayrıca **dilekçe sahibine bilgi verir**.",
+      "articleRefs": [
+        "5"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "İncelenemeyecek dilekçeler",
+      "body": "Türkiye Büyük Millet Meclisine veya yetkili makamlara verilen veya gönderilen dilekçelerden aşağıdakiler **incelenemez**:\n- a) **Belli bir konuyu** ihtiva etmeyenler,\n- b) **Yargı mercilerinin görevine** giren konularla ilgili olanlar,\n- c) 4 üncü maddede gösterilen şartlardan (adı-soyadı, imza, iş veya ikametgâh adresi) **herhangi birini taşımayanlar**.",
+      "articleRefs": [
+        "6",
+        "4"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Yargının görevine giren konudaki dilekçe incelenemez",
+      "body": "Yanlış şık tam tersini söyler ve yargı mercilerinin görevine giren konularla ilgili dilekçelerin incelendiğini ileri sürer. Kanun açıktır: bu dilekçeler **incelenemez**. Aynı listede belli bir konuyu ihtiva etmeyen dilekçeler de yer alır; onlar da incelenemez. Bu yüzden \"belli bir konuyu ihtiva etmeyenler incelenemez\" cümlesi doğru bir ifade olarak karşına çıkabilir.",
+      "articleRefs": [
+        "6"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Cevap süresi: en geç otuz gün",
+      "body": "Türk vatandaşlarının ve Türkiye'de ikamet eden yabancıların kendileri ve kamu ile ilgili dilek ve şikâyetleri konusunda yetkili makamlara yaptıkları başvurularda dilekçe sahiplerine:\n- başvurunun **sonucu** veya\n- yapılmakta olan işlemin **safahatı**\nhakkında **en geç otuz gün içinde gerekçeli olarak** cevap verilir.\n\nİşlem safahatı duyurulmuşsa alınan **sonuç ayrıca bildirilir**.",
+      "articleRefs": [
+        "7"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Otuz gün, gerekçeli cevap",
+      "body": "Bu maddeden gelen soru doğrudan süreyi sorar. Şıklarda on, on beş ve yirmi gibi sayılar seni şaşırtmaya çalışır. Doğrusu **en geç otuz gün**dür. \"Gerekçeli olarak\" ifadesini de unutma: Cevap gerekçesiyle birlikte verilir. Safahat bildirildiğinde iş bitmez, alınan sonuç ayrıca bildirilir.",
+      "articleRefs": [
+        "7"
+      ],
+      "counterNumbers": [
+        10,
+        15,
+        20
+      ]
+    },
+    {
+      "type": "numbers",
+      "title": "Süreler bir bakışta",
+      "rows": [
+        {
+          "label": "Yetkili makamın dilekçe sahibine gerekçeli cevabı",
+          "value": "En geç 30 gün",
+          "refs": [
+            "7"
+          ]
+        },
+        {
+          "label": "Dilekçe Komisyonunda inceleme ve karara bağlama",
+          "value": "60 gün içinde sonuçlandırılır",
+          "refs": [
+            "8"
+          ]
+        },
+        {
+          "label": "Komisyonca gönderilen dilekçeye ilgili kamu kurum veya kuruluşunun cevabı",
+          "value": "30 gün içinde",
+          "refs": [
+            "8"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "7",
+        "8"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Türkiye Büyük Millet Meclisine yapılan başvurular",
+      "body": "- Türkiye Büyük Millet Meclisine gönderilen dilekçelerin **Dilekçe Komisyonunda** incelenmesi ve karara bağlanması **altmış gün** içinde sonuçlandırılır.\n- İlgili kamu kurum veya kuruluşları, Dilekçe Komisyonunca gönderilen dilekçeleri **otuz gün** içinde cevaplandırır.\n- İnceleme ve karara bağlamanın **esas ve usulleri** Türkiye Büyük Millet Meclisi **İçtüzüğünde** gösterilir.",
+      "articleRefs": [
+        "8"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Altmış–otuz çiftini bozma",
+      "body": "Boşluk doldurma sorusunda sıra önemlidir. Önce Komisyonun süresi gelir: **altmış**. Sonra kurumların cevap süresi gelir: **otuz**. Kırk beş–on beş, otuz–on beş, on beş–yedi ve on–yedi çiftleri yanlıştır. Sırayı da ters çevirme. Komisyon altmış gün içinde sonuçlandırır, ilgili kurum otuz gün içinde cevaplar.",
+      "articleRefs": [
+        "8"
+      ],
+      "counterNumbers": [
+        45,
+        15,
+        10,
+        7
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Esas ve usuller İçtüzükte",
+      "body": "\"İnceleme ve karara bağlamanın esas ve usulleri nerede gösterilir?\" sorusunda şıklara kanun, genelge, yönetmelik ve Cumhurbaşkanlığı kararnamesi dizilir. Bunların hiçbiri doğru değildir. Türkiye Büyük Millet Meclisine yapılan başvuruların esas ve usulleri **Türkiye Büyük Millet Meclisi İçtüzüğünde** gösterilir.",
+      "articleRefs": [
+        "8"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Dilekçe Komisyonunun yetkileri",
+      "body": "Dilekçe Komisyonu görevleri ile ilgili olarak şu yetkilere sahiptir:\n- **kamu kurum ve kuruluşları, kamu kurumu niteliğindeki meslek kuruluşları ile özel kuruluşlardan** her türlü bilgi ve belgeyi almak,\n- ilgilileri çağırıp bilgi almak,\n- idari denetimin yapılmasını istemek,\n- bilirkişi görevlendirmek,\n- yerinde inceleme yapmak.\n\n**Yükümlülük:** Bu yetki kullanıldığında kamu kurum ve kuruluşları ile kamu personeli şunlarla yükümlüdür:\n- talep edilen bilgi ve belgeyi vermek,\n- idari denetimi yapmak,\n- yerinde inceleme için gerekli tedbirleri almak.",
+      "articleRefs": [
+        "8"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Komisyon özel kuruluşlara da ulaşır",
+      "body": "Komisyonun bilgi ve belge alabileceği yerler yalnız kamu kurumları değildir. Listede **kamu kurumu niteliğindeki meslek kuruluşları** ve **özel kuruluşlar** da sayılır. Yükümlülük cümlesinde ise **kamu kurum ve kuruluşları ile kamu personeli** anılır. Şunu da karıştırma: Komisyon idari denetimi kendisi yapmaz, **yapılmasını ister**. Bilirkişi görevlendirmek ve yerinde inceleme yapmak ise doğrudan Komisyonun yetkileri arasındadır.",
+      "articleRefs": [
+        "8"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Kaldırılan kanun ve yürütme",
+      "body": "- **Kaldırılan hüküm (md 9):** 140 sayılı Türk Vatandaşlarının Türkiye Büyük Millet Meclisine Dilekçe ile Başvurmaları ve Dilekçelerin İncelenmesi ile Karara Bağlanmasının Düzenlenmesine Dair Kanun yürürlükten kaldırılmıştır.\n- **Yürütme (md 11):** Bu Kanun hükümlerini **Türkiye Büyük Millet Meclisi Başkanı ile Bakanlar Kurulu** yürütür.\n\n**Not:** Bakanlar Kurulu ifadesi madde metnindeki hâliyle verilmiştir.",
+      "articleRefs": [
+        "9",
+        "11"
+      ]
+    },
+    {
+      "type": "numbers",
+      "title": "Listeler bir bakışta",
+      "rows": [
+        {
+          "label": "Dilekçede zorunlu unsurlar",
+          "value": "Adı-soyadı · imza · iş veya ikametgâh adresi",
+          "refs": [
+            "4"
+          ]
+        },
+        {
+          "label": "İncelenemeyecek dilekçeler",
+          "value": "Belli bir konuyu ihtiva etmeyen · yargı mercilerinin görevine giren konularla ilgili olan · zorunlu unsurlardan herhangi birini taşımayan",
+          "refs": [
+            "6",
+            "4"
+          ]
+        },
+        {
+          "label": "Dilekçe Komisyonunun yetkileri",
+          "value": "Her türlü bilgi ve belgeyi almak · ilgilileri çağırıp bilgi almak · idari denetimin yapılmasını istemek · bilirkişi görevlendirmek · yerinde inceleme yapmak",
+          "refs": [
+            "8"
+          ]
+        },
+        {
+          "label": "Yürürlükten kaldırılan kanun",
+          "value": "140 sayılı Kanun",
+          "refs": [
+            "9"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "4",
+        "6",
+        "8",
+        "9"
+      ]
+    },
+    {
+      "type": "compare",
+      "title": "Yetkili makama başvuru ve Türkiye Büyük Millet Meclisine başvuru",
+      "rows": [
+        {
+          "aspect": "Başvurulan yer",
+          "left": "Yetkili makamlar",
+          "right": "Türkiye Büyük Millet Meclisi",
+          "refs": [
+            "7",
+            "8"
+          ]
+        },
+        {
+          "aspect": "İnceleyen",
+          "left": "Başvurulan yetkili makam",
+          "right": "Dilekçe Komisyonu",
+          "refs": [
+            "7",
+            "8"
+          ]
+        },
+        {
+          "aspect": "Süre",
+          "left": "En geç otuz gün içinde gerekçeli cevap",
+          "right": "Altmış gün içinde inceleme ve karara bağlama",
+          "refs": [
+            "7",
+            "8"
+          ]
+        },
+        {
+          "aspect": "Ara adım",
+          "left": "Safahat duyurulursa sonuç ayrıca bildirilir",
+          "right": "İlgili kamu kurum veya kuruluşları, Komisyonca gönderilen dilekçeyi otuz gün içinde cevaplandırır",
+          "refs": [
+            "7",
+            "8"
+          ]
+        },
+        {
+          "aspect": "Esas ve usullerin gösterildiği yer",
+          "left": "md 7'de ayrı bir gönderme yoktur",
+          "right": "İnceleme ve karara bağlamanın esas ve usulleri Türkiye Büyük Millet Meclisi İçtüzüğünde gösterilir",
+          "refs": [
+            "7",
+            "8"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "7",
+        "8"
+      ]
+    },
+    {
+      "type": "compare",
+      "title": "Türk vatandaşı ve Türkiye'de ikamet eden yabancı",
+      "rows": [
+        {
+          "aspect": "Dilekçe hakkı",
+          "left": "Hakka sahiptir",
+          "right": "Haktan yararlanabilir",
+          "refs": [
+            "3"
+          ]
+        },
+        {
+          "aspect": "Ek kayıt",
+          "left": "Maddede ek kayıt öngörülmemiştir",
+          "right": "Karşılıklılık esası gözetilir ve dilekçe Türkçe yazılır",
+          "refs": [
+            "3"
+          ]
+        },
+        {
+          "aspect": "Dilekçede zorunlu unsurlar",
+          "left": "Adı-soyadı, imza, iş veya ikametgâh adresi",
+          "right": "Adı-soyadı, imza, iş veya ikametgâh adresi",
+          "refs": [
+            "4"
+          ]
+        },
+        {
+          "aspect": "Yetkili makamın cevabı",
+          "left": "En geç otuz gün içinde, gerekçeli",
+          "right": "En geç otuz gün içinde, gerekçeli",
+          "refs": [
+            "7"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "3",
+        "4",
+        "7"
+      ]
+    },
+    {
+      "type": "exam_stats",
+      "title": "Sınav der ki",
+      "rows": [
+        {
+          "label": "Bu ünitenin maddelerinden yayındaki soru",
+          "value": "5",
+          "refs": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "11"
+          ]
+        },
+        {
+          "label": "md 8",
+          "value": "2 soru",
+          "refs": [
+            "8"
+          ]
+        },
+        {
+          "label": "md 3",
+          "value": "1 soru",
+          "refs": [
+            "3"
+          ]
+        },
+        {
+          "label": "md 6",
+          "value": "1 soru",
+          "refs": [
+            "6"
+          ]
+        },
+        {
+          "label": "md 7",
+          "value": "1 soru",
+          "refs": [
+            "7"
+          ]
+        },
+        {
+          "label": "Hiç soru çıkmamış",
+          "value": "md 1, md 2, md 4, md 5, md 9, md 11",
+          "refs": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "11"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "11"
+      ],
+      "generated": true
+    },
+    {
+      "type": "bridge",
+      "title": "Bu üniteden soru çöz",
+      "articleRefs": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "11"
+      ],
+      "generated": true,
+      "rows": [
+        {
+          "label": "Madde kapsamlı seans",
+          "value": "md 1–9, 11, 5 soru",
+          "refs": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "11"
+          ]
+        }
+      ]
+    }
+  ]
+}

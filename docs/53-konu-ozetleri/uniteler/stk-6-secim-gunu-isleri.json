@@ -1,0 +1,458 @@
+{
+  "unit": {
+    "slug": "stk-6-secim-gunu-isleri",
+    "legislationSlug": "298-sayili-secimlerin-temel-hukumleri-kanunu",
+    "topicId": "fc5b7d84-ad74-446c-9ac6-3d4172a04ccf",
+    "title": "Sayım, döküm ve geçersiz oy pusulaları",
+    "subtitle": "Sayım ve döküm, geçersiz ve hesaba katılmayan oy pusulaları, sandık sonuç tutanağı, ilçe ve il birleştirmesi",
+    "articleFrom": "100",
+    "articleTo": "109",
+    "readingMinutes": 15,
+    "sourceLabel": "AI özeti — 298 Sayılı Seçimlerin Temel Hükümleri Kanunu, md 100–102, 105, 107–109",
+    "articleNos": [
+      "100",
+      "101",
+      "102",
+      "105",
+      "107",
+      "108",
+      "109"
+    ],
+    "generatedBy": "claude-opus-5-5 (ozet-uret.ts)",
+    "sortOrder": 6
+  },
+  "blocks": [
+    {
+      "type": "concept",
+      "title": "Sandıktan il seçim kuruluna giden yol",
+      "body": "Oy verme bitince iş bitmez, asıl iş başlar. Önce sandık kurulu zarfları açar, oyları sayar ve döker (md 100). Bu sırada hangi oy pusulasının **geçersiz** (md 101), hangisinin **hesaba katılmayan** (md 102) olduğuna karar verir. Sonuçları **sandık sonuç tutanağına** geçirir ve ilan eder (md 105). Bütün evrak mühürlü bir torbayla ilçe seçim kuruluna götürülür (md 107). İlçe seçim kurulu gelen tutanakları birleştirir ve denetler (md 108). Kanunların görev verdiği hallerde de il seçim kurulu ilçe tutanaklarını birleştirir (md 109). Bu sırayı aklında tutarsan maddeler yerine oturur.",
+      "articleRefs": [
+        "100",
+        "101",
+        "102",
+        "105",
+        "107",
+        "108",
+        "109"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Sayım ve döküm nasıl başlar?",
+      "body": "**Oyların sayım ve dökümüne derhal başlanır, açık ve aralıksız yapılır.** Şikâyet ve itirazlar işi **durdurmaz**.\n\nSandık kurulu başkanı başlamadan önce sayım ve döküm cetvellerinin **boş ve yazısız** olduğunu hazır bulunanlara gösterir ve görev dağıtır:\n- **Bir üye** sandıktaki zarfları başkana verir.\n- **İki üye** okunan oy pusulalarını sayım ve döküm cetvellerine işler.\n- **Bir üye** okunan pusulaları ve açılan zarfları masaya düzenli biçimde yerleştirir ve korur.\n\n**Cetvel düzeni:** Önce siyasi partilerin adları, birleşik oy pusulasındaki sıraya göre soldan sağa yazılır. Sonra varsa bağımsız adaylara birer sütun ayrılır. İttifak varsa en son ittifakların ortak oyları için sütun açılır ve sütunun üzerine ittifakın unvanı yazılır.\n\n**Okuma:** Başkan zarfı açar ve oy pusulasının ön yüzünü herkesin görebileceği ve işitebileceği şekilde okur. \"EVET\" mührü hangi partinin ya da bağımsız adayın yerine basılmışsa onun adı okunur. Aynı zarfta birden fazla oy kullanılan seçimlerde pusulalar okunmadan önce seçim türüne göre ters çevrilerek tasnif edilir.",
+      "articleRefs": [
+        "100"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Hangi seçimin pusulası önce sayılır?",
+      "body": "**Cumhurbaşkanı ve milletvekili seçimleri birlikte yapılıyorsa:** Önce Cumhurbaşkanı seçimine ait oy pusulaları sayılır ve dökülür.\n\n**Mahalli idare organları seçimlerinde** sıra şöyledir:\n- **Büyükşehirlerde:** büyükşehir belediye başkanlığı → belediye başkanlığı → belediye meclisi üyeliği → muhtarlık\n- **Diğer illerde:** belediye başkanlığı → belediye meclisi üyeliği → il genel meclisi üyeliği → muhtarlık\n\nMuhtarlık seçimlerinde zarftan çıkan oy pusulaları hangi muhtar ya da üyelere aitse onların adı ve soyadı okunur.\n\nAynı zarfta birden fazla oy kullanılan seçimlerde zarftan eksik oy pusulası çıkabilir. Bu durumda eksik oyların hangi seçim türüne ait olduğu ve sayısı tespit edilir. İçinden hiç pusula çıkmayan boş zarfların sayısı da tespit edilir. Bu bilgiler zarfların açılması bittikten sonra sandık sonuç tutanağına işlenir.",
+      "articleRefs": [
+        "100"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Sayım sırasında sık karıştırılan",
+      "body": "İki sıralamayı birbirine karıştırma.\n\n**Büyükşehir sıralaması:** Büyükşehir belediye başkanlığı ile başlar. Bu sıralamada **il genel meclisi üyeliği yer almaz.**\n\n**Diğer iller sıralaması:** Belediye başkanlığı ile başlar. İl genel meclisi üyeliği belediye meclisi üyeliğinden **sonra**, muhtarlıktan **önce** gelir.\n\nMuhtarlık her iki sıralamada da **en sondadır**.\n\nCumhurbaşkanı ve milletvekili seçimleri birlikte yapılıyorsa ilk sayılan milletvekili değil, **Cumhurbaşkanı** seçimidir.",
+      "articleRefs": [
+        "100"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "İttifak alanına basılan \"EVET\" mührü",
+      "body": "İttifak alanı içinde \"EVET\" mührü şu yerlerden birine basılmışsa pusula **geçerlidir** ve **o siyasi partinin** sütununa işlenir:\n- bir siyasi partiye ayrılan alana,\n- hem bir siyasi partiye ayrılan alana hem de ittifak unvanı bölümüne,\n- ittifak unvanı bölümüne taşacak şekilde bir siyasi partiye ayrılan alana.\n\nBu haller dışında mühür **yalnız ittifak alanı içine** basılmışsa pusula yine **geçerlidir**. Bu kez oy, **ittifakın ortak oyları** sütununa işlenir.\n\n**İşaretleme usulü:** İtiraza uğramadan geçerli sayılan her oy, okunur okunmaz görevli üyeler tarafından aynı anda işlenir. Sütundaki rakamlar birden başlayarak sırayla çizilir. Başkan bu işlemi sürekli denetler.",
+      "articleRefs": [
+        "100"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Cetveller tutmazsa: ikinci ve üçüncü sayım",
+      "body": "Bütün zarflar açılıp okunduktan sonra başkan, her parti, bağımsız aday ve ittifak için **her iki sayım ve döküm cetvelinde** işaretlenmiş son rakamları karşılaştırır.\n\n- **Rakamlar aynıysa:** Geçerli oylar toplanır. Toplam, o seçim türüne ait **özel tutanağa yazı ve rakamla** işlenir.\n- **Aynı değilse → ikinci sayım:** Geçerli tüm pusulalar tek tek yeniden okunur. Oylar boş ve yazısız, ayrı iki cetvele işlenir.\n- **Yine tutmazsa → üçüncü sayım:** Kurulun varsa siyasi partili olmayan üyesi, yoksa başkanın belirleyeceği üye oyları **tek** sayım ve döküm cetveline işler. Bu sayımın sonucuna göre işlem yapılır.\n\nBirden fazla sayım yapıldıysa her cetvelin üzerine hangi sayıma ait olduğu **büyük harflerle** yazılır ve **tüm cetveller muhafaza edilir**.\n\nSon geçerli zarf da okunduktan sonra başkan açılmamış geçerli zarf kalıp kalmadığını kontrol eder. Açılan zarf sayısını tutanağa işlenmiş geçerli zarf sayısıyla karşılaştırır ve sonucu tutanak defterine işler.",
+      "articleRefs": [
+        "100"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Tereddütlü pusulalar, saklama ve ilan",
+      "body": "**Ayrılan pusulalar:** Geçersiz sayılan, hesaba katılmaması gereken, tereddüt edilen ya da itiraza uğrayan oy pusulaları cetvele **işlenmeden ayrılır**. Bunları sandık kurulu başkanı muhafaza eder.\n\n**Karar zamanı:** Ayrılan pusulalar, geçerli oylar cetvellere işlendikten **sonra** sandık kurulunca **ayrı ayrı** değerlendirilir. Karar tutanak defterine yazılır, mühürlenir ve imzalanır.\n\n**Kararın sonucu:** Kurul kararıyla geçerli sayılan ya da hesaba katılan pusulalar ait oldukları sütuna işlenir. Bunların toplamı özel tutanağa yazılır.\n\n**Geçerli sayılmayan ya da hesaba katılmayan pusulalar:** Ayrı ayrı paket yapılır, paketin üzeri mühürlenir ve üzerine sayısı yazılır. Bu pusulalar **yakılmaz, yırtılmaz ve yok edilemez.**\n\n**Son adımlar:** Toplamlar her sütunun altına rakam ve yazıyla yazılır. Başkan sonuçları **yüksek sesle ilan eder**. Ardından sonuçlar sandık sonuç tutanağına işlenir. Başkan bu bilgileri cetvelle karşılaştırır, sonra tutanak imzalanır ve mühürlenir. Bütün işlemler tutanak defterine de geçirilir.",
+      "articleRefs": [
+        "100"
+      ]
+    },
+    {
+      "type": "numbers",
+      "title": "Sayım masasının sayıları",
+      "rows": [
+        {
+          "label": "Zarfları sandıktan alıp başkana veren üye",
+          "value": "Bir üye",
+          "refs": [
+            "100"
+          ]
+        },
+        {
+          "label": "Okunan oyları sayım ve döküm cetvellerine işleyen üye",
+          "value": "İki üye",
+          "refs": [
+            "100"
+          ]
+        },
+        {
+          "label": "Okunan pusulaları ve zarfları masaya yerleştirip koruyan üye",
+          "value": "Bir üye",
+          "refs": [
+            "100"
+          ]
+        },
+        {
+          "label": "Olağan sayımda karşılaştırılan cetvel",
+          "value": "İki sayım ve döküm cetveli",
+          "refs": [
+            "100"
+          ]
+        },
+        {
+          "label": "Üçüncü sayımda kullanılan cetvel",
+          "value": "Tek sayım ve döküm cetveli",
+          "refs": [
+            "100"
+          ]
+        },
+        {
+          "label": "Sayım masasında kalabilecek parti müşahidi (beşten fazlaysa ad çekilir)",
+          "value": "Beş; her biri ayrı partiden",
+          "refs": [
+            "100"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "100"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Geçerli olmayan birleşik oy pusulaları",
+      "body": "Aşağıdaki birleşik oy pusulaları **geçerli değildir**:\n- Sandık kurulunca verilen ve o seçim için düzenlenmiş biçim ve renkte olmayan\n- Arkasında **\"Türkiye Cumhuriyeti Yüksek Seçim Kurulu\" filigranı** bulunmayan\n- Arkasında **sandık kurulu mührü** bulunmayan\n- Hiçbir yerine \"EVET\" mührü basılmamış olan\n- Partilere ya da bağımsız adaylara ayrılan alanlardan **birden fazlasına** \"EVET\" mührü basılmış olan\n- \"EVET\" mührü birden fazla parti ya da bağımsız aday alanına **taşmış** olan\n- Sandığın ait olduğu seçim çevresinden **başka bir seçim çevresi** için düzenlenmiş olan\n- Bütünlüğü bozulacak şekilde yırtılmış ya da koparılmış olan\n- Üzerine \"EVET\" mührü dışında ya da onun yerine özel işaret, isim, imza kaşesi, mühür veya parmak izi basılmış olan\n- Parti ya da bağımsız aday bölümleri belirgin şekilde ve özel olarak karalanmış, çizilmiş ya da işaretlenmiş olan\n- Matbu yazı ve şekiller dışında yazı, harf ya da sayı yazılmış veya şekil çizilmiş olan\n\n**Not:** Birden fazla alana basılan ya da taşan mühür kuralının ittifak istisnası vardır. Mühür yalnız ittifak alanının içinde kalıyorsa pusula geçerlidir; aynı ittifaktaki birden fazla partiye basılmış ya da taşmış olması bunu değiştirmez. Oy, ittifakın ortak oyları sütununa işlenir.",
+      "articleRefs": [
+        "100",
+        "101"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Pusulayı geçersiz kılmayan haller",
+      "body": "Aşağıdaki haller oy pusulasını **geçersiz kılmaz**:\n- Zarfların açılması ya da oyların okunması sırasında yırtılması\n- Bütünlüğü bozulmadan bir kısmının **kazaen** yırtılması\n- Lekelenmiş olması, ancak bunun özel olarak işaret koymak amacıyla yapıldığının anlaşılamaması\n- Pusula katlanarak zarfa konduğu için \"EVET\" mührünün ya da arkadaki sandık kurulu mühür izinin pusulanın diğer kısımlarına geçmesi\n- \"EVET\" mührünün yalnızca iki parti alanını ayıran **çift çizgili bölgeye** taşması\n- Başka bir parti ya da bağımsız aday alanına taşmamak kaydıyla, bir partinin alanına **birden çok** \"EVET\" mührü basılması\n- Yetkili seçim kurullarınca gönderilen ve YSK filigranı bulunan pusulanın arkasının, **sandık kurullarının ihmaliyle** mühürlenmemiş olması\n\n**Aynı zarfta birden fazla pusula kullanılan seçimler:** Bir seçim türüne ait pusulanın geçersiz olması, diğerlerinin geçersiz sayılmasını gerektirmez.\n\n**Muhtarlık seçimleri:** Bu maddedeki sebepler dışındaki geçersizlik sebeplerini **Yüksek Seçim Kurulu** belirler.",
+      "articleRefs": [
+        "101"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Mühür ve taşma: ince çizgi",
+      "body": "Bu kurallar birbirine çok benziyor, dikkat et.\n\n**Arka mühür:** Arkasında sandık kurulu mührü olmayan pusula **geçersizdir**. Ama pusula yetkili kurulca gönderilmiş, YSK filigranını taşıyor ve mühür **sandık kurulunun ihmali** yüzünden basılmamışsa pusula **geçerlidir**. Filigranın hiç olmaması ise doğrudan geçersizlik sebebidir.\n\n**Taşma:** \"EVET\" mührü **başka bir parti ya da bağımsız aday alanına** taşmışsa pusula geçersizdir. Mühür yalnızca iki alanı ayıran **çift çizgili bölgeye** taşmışsa pusula geçerlidir.\n\n**Birden çok mühür:** Mühürler **farklı alanlara** basılmışsa pusula geçersizdir. Hepsi **aynı partinin alanına** basılmış ve başka alana taşmamışsa pusula geçerlidir.\n\n**İttifak istisnası:** Taşma ve birden çok mühür kuralı ittifak alanında farklı işler. Mühürler **yalnız ittifak alanının içinde** kalıyorsa pusula **geçerlidir**. Aynı ittifaktaki iki partinin alanına basılmış ya da birinden ötekine taşmış olması bunu değiştirmez. Bu oy, **ittifakın ortak oyları** sütununa işlenir. Mühür ittifak içinde tek bir partinin alanındaysa (ittifak unvanı bölümüne taşsa bile) oy o partinin sütununa işlenir.",
+      "articleRefs": [
+        "100",
+        "101"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Hesaba katılan ve katılmayan oy pusulaları",
+      "body": "**Baskı hatası pusulayı düşürmez:** Birleşik oy pusulasında baskıda silinme ya da yanlışlık olabilir. Oyun hangi parti ya da bağımsız aday lehine kullanıldığı \"EVET\" mührünün yerinden **kesin olarak anlaşılıyorsa**, pusula **hesaba katılır**.\n\n**Zarftan yabancı madde çıkarsa:** Zarftan el ilanı, broşür, özel işaret, yazı ya da şekil taşıyan kâğıt veya işaret amacı taşıyan herhangi bir madde çıkabilir. Bu durumda o zarftaki pusulaların **hiçbiri** hesaba katılmaz.\n\n**Zarfta tek oy pusulası kullanılan seçimler:** Zarftan aynı ya da başka seçim türüne ait ikinci bir pusula çıkarsa **hiçbiri** hesaba katılmaz.\n\n**Zarfta birden fazla oy pusulası kullanılan seçimler:**\n- Aynı seçim türüne ait birden fazla pusula çıkarsa **yalnız o türün** pusulaları hesaba katılmaz, diğerleri katılır.\n- Zarfta kullanılması gerekenler dışında **başka bir seçim türünün** pusulası çıkarsa **hiçbiri** hesaba katılmaz.\n- Pusulalardan biri ya da birkaçı **eksik** çıkarsa diğerleri hesaba katılır.",
+      "articleRefs": [
+        "102"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "\"Fazla pusula\" her zaman aynı sonucu doğurmaz",
+      "body": "Zarftan fazla pusula çıktığında sonuç, zarfta **kaç pusula kullanıldığına** ve fazla pusulanın **hangi seçim türüne** ait olduğuna bağlıdır.\n\n- **Tek pusulalı zarf:** Fazla pusula aynı türden de olsa başka türden de olsa, zarftaki **hiçbir** pusula hesaba katılmaz.\n- **Çok pusulalı zarf, aynı türden fazlalık:** Yalnız **o seçim türünün** pusulaları düşer, diğerleri hesaba katılır.\n- **Çok pusulalı zarf, o zarfa ait olmayan başka bir seçim türünün pusulası:** Zarfın **tamamı** düşer.\n\n\"Eksik pusula\" ise kimseyi yakmaz. Çok pusulalı zarfta eksik olan dışındaki pusulalar hesaba katılır.",
+      "articleRefs": [
+        "102"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Sandık sonuç tutanağı",
+      "body": "Sandık kurulu, **her seçim türü için ayrı** hazırlanmış sandık sonuç tutanağını **iki nüsha** düzenler. Tutanak, sayım ve döküm sırasında elde edilen bilgilere ve cetvel sonucuna dayanır. Başkan ve üyeler **ad ve soyadlarını yazarak** imzalar, tutanak sandık kurulu mührüyle mühürlenir.\n\n**İşlenecek bilgilerden dikkat çekenler:**\n- Sandığın açılış saati ve dakikası; sandık saat 17.00'den sonra açılmışsa bunun sebebi\n- Oy verme saati bitiminde sırada bekleyen ve oy kullandırılan seçmen sayısı\n- Sandık seçmen listesinde kayıtlı olmadığı hâlde Kanun gereği o sandıkta oy kullanan seçmen sayısı\n- Zarf sayısı oy kullanan seçmen sayısından fazlaysa, eşitliği sağlamak için **yakılan zarf** sayısı\n- Belediye seçimlerinde eksik çıkan oyların hangi seçim türüne ait olduğu ve sayısı; içinden pusula çıkmayan boş zarf sayısı\n- Geçersiz ve hesaba katılmayan pusulaların sayısı ve **sebebi**\n- Partilerin, bağımsız adayların ve ittifakların ortak oyları (yazı ve rakamla)\n- Birden fazla sayım yapıldıysa sayısı; sonucun hazır bulunanlara ilan edildiği\n\n**İlan:** Tutanağın onaylı bir sureti, sandığın konduğu binada herkesin görebileceği bir yere asılır. Oy verme gününden itibaren **bir hafta** asılı kalır.\n\nSandık kuruluna, her seçim türü için oy pusulasındaki parti ve bağımsız aday sayısından **beş fazla** sandık sonuç tutanağı verilir. Tutanakların düzenlenmesine ilişkin usul ve esasları **Yüksek Seçim Kurulu** belirler.",
+      "articleRefs": [
+        "105"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Tutanağın suretini kim alır?",
+      "body": "Sandık sonuç tutanağının birer sureti, o seçim çevresinde seçime katılan ve **talep eden** siyasi parti ve bağımsız adayların müşahitlerine verilir. Suretler önce sandık kurulu başkanı ve üyelerince imzalanır ve mühürlenir.\n\n**Öncelik:** Talep halinde suret **önce sandık kurulunun siyasi partili üyelerine** imza karşılığı verilir. Bu durumda **o partinin müşahidine ayrıca tutanak verilmez.**\n\n**Biçim:** Müşahitlere verilecek tutanaklar **çok yapraklı kopyalı suret** biçiminde hazırlanır.\n\n**Kayıt:** Suret alan müşahidin ya da üyenin ad ve soyadı, temsil ettiği parti ya da bağımsız aday tutanak defterine yazılır. Ardından teslim aldığına dair imzası alınır.",
+      "articleRefs": [
+        "105"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Torba ilçe seçim kuruluna gider",
+      "body": "**Torbaya konanlar:** Hesaba katılan ve muteber sayılan pusulalar, sandık kurulunun tutanakları, kurulca imzalanmış sayım cetvelleri, hesaba katılmayan, muteber sayılmayan ya da itiraza uğrayan pusulalar, hesaba katılmayan zarflar ve tutanak defteri. Bunlar kurulca mühürlü ve imzalı **ayrı ayrı paketler** hâlinde konur. Torba da kurulun mührüyle mühürlenir, başkan ve üyelerce imzalanır.\n\n**Torbayı kim götürür?** Sandık kurulu başkanı ile **ad çekme ile seçilecek en az iki üye**. Torba, kurulun bağlı olduğu ilçe seçim kuruluna teslim edilir. Diğer üyeler ve müşahitler isterlerse katılabilir. Bunun için taşıtta yer olması ya da taşıtı kendilerinin sağlaması gerekir.\n\n**İlçede teslim:** İlçe seçim kurulu torbayı getiren üyelerin **önünde** açar. İçindekiler için **müfredatlı üç nüsha** tutanak düzenler. Tutanağı torbayı teslim edenler, ilçe seçim kurulu başkanı ve üyelerden biri imzalar. Nüshalardan biri il seçim kuruluna gönderilecek evraka bağlanır, biri sandık kurulu başkanına verilir.",
+      "articleRefs": [
+        "107"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "İlçe seçim kurulunda birleştirme",
+      "body": "Sandık sonuç tutanaklarının birleştirilmesi ve sonuçların belirlenmesi **açık ve aralıksız** yapılır.\n\n**Kimler hazır bulunabilir?** İsterlerse şunlar hazır bulunur: siyasi partilerin aday ve müşahitleri, bağımsız adaylar ve müşahitleri, ilçe seçim kurullarındaki siyasi parti temsilcileri.\n- Bağımsız aday ve müşahitleri **üçten fazla** olursa **ad çekilir** ve adı ilk çıkan **üçü** kalır.\n- **Siyasi parti aday ve müşahitleri için ad çekme yapılmaz.**\n- Hazır bulunanlara işlemleri yakından takip edebilecekleri bir yer ayrılır.\n\n**Çalışma düzeni:** Kurul tutanakları geldikçe alır ve aralıksız çalışır. Gelen tutanakları her seçim türü ve çevresine ait özel tutanaklara **sandık geliş sırasına göre** işler. En son tutanak geldikten sonra ilçedeki bütün tutanakların birleştirilmesi tamamlanır ve sonuç bir tutanakla tespit edilir.\n\nBu işlemler, Kanundaki usul ve esaslara uygun olmak şartıyla, YSK'nın belirleyeceği usul ve esaslar çerçevesinde **bilgisayar ortamında** da yapılabilir.",
+      "articleRefs": [
+        "108"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Ad çekme kimin için yapılır?",
+      "body": "Burada roller ters dönüyor, iyi ayır.\n\n**Sandık başında (sayım masası):** Ad çekme **parti müşahitleri** içindir. Sayıları **beşten fazla** ise başkan, kurul önünde ad çekerek sandık başında kalacak **beş** parti müşahidini belirler. Bunların her biri **ayrı partiden** olur. Diğer müşahitler ile **bağımsız aday müşahitleri** için yakından takip edebilecekleri bir yer ayrılır.\n\n**İlçe seçim kurulunda (birleştirme):** Ad çekme **bağımsız aday ve müşahitleri** içindir. Sayıları **üçten fazla** ise ad çekilir ve **üçü** kalır. **Siyasi parti aday ve müşahitleri için ad çekme yapılmaz.**",
+      "articleRefs": [
+        "100",
+        "108"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "İlçede denetim, ilan ve teslim",
+      "body": "**Denetim:** Birleşik oy pusulası kullanılan seçimlerde, ilçe birleştirme tutanağı imzalanmadan önce, birleştirilen sandık tutanaklarındaki tüm bilgileri gösteren bir döküm cetveli hazırlanır. Cetvel, kurulun **siyasi partili üyelerine birer nüsha** verilir. Ardından başkanın görevlendireceği **memur üyelerden biri** oy sayılarını birleştirme tutanağındaki sıraya göre **yüksek sesle** okur ve yanlışlık olup olmadığı denetlenir. İmkân varsa denetim hazır bulunanlar için cihazlarla görüntülü yayınlanabilir.\n\n**Hata kaydı:** Hataları **diğer memur üye** denetim tutanağına geçirir. Hatalı işlenmiş sandık tutanakları bir kenara ayrılır. Denetim tutanağı başkan ve üyelerce imzalanır. Hata varsa düzeltilmiş birleştirme tutanağı imzalanır ve sonuçlar hazır bulunanlara **sözlü olarak** ilan edilir.\n\n**Tutanak özeti:** İlçe birleştirme tutanak özetinin onaylı sureti ilçe seçim kurulunda **bir hafta** asılı kalır.\n\n**Suretlerin dağıtımı:** Tutanak özeti ile denetim tutanağının imzalı ve mühürlü suretleri, kurulun siyasi partili üyelerine imza karşılığı verilir. İlan süresi içinde **yazılı talepte** bulunan ve o seçim çevresinde seçime katılan siyasi parti ilçe başkanlıklarına ve bağımsız adaylara da **bir defaya mahsus**, imza karşılığı verilir.\n\n**Birden çok ilçe seçim kurulu olan ilçeler:** Her kurul kendi denetim ve birleştirme tutanak özetinin onaylı suretini **bir numaralı** ilçe seçim kuruluna teslim eder. Birinci ilçe seçim kurulu bu sonuçları birleştirir.\n\n**İle teslim:** Milletvekili ve büyükşehir belediye başkanlığı seçimlerinde ilçe birleştirme tutanağı ve özetinin onaylı suretleri il seçim kuruluna teslim edilir. Teslimi ilçe seçim kurulu başkanı ile **en az iki üye**, **en kısa sürede** yapar.\n\nAsıl ve geçici ilçe seçim kurulu başkanları, bu işlemlerin yapıldığı yerlerde sandık kurulu başkanlarının sahip olduğu yetkileri kullanabilir.",
+      "articleRefs": [
+        "108"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "İl seçim kurulunda birleştirme",
+      "body": "İl seçim kurulları, seçimle ilgili kanunların tutanak düzenlemeyi kendilerine **görev olarak verdiği hallerde** ilçe seçim tutanaklarını birleştirir ve **il seçim tutanaklarını** düzenler.\n\n**İlan:** Birleştirme sonucunu gösteren tutanağın içindekiler hazır bulunanlara ilan edilir. Bir sureti il seçim kurulu başkanınca **il seçim kurulu kapısına** asılır ve **bir hafta** asılı kalır.\n\n**Başkanın yetkisi:** İl seçim kurulu başkanları, sayım, döküm ve birleştirme işlerinin yapıldığı yerde, sandık kurulu başkanlarının 82, 83 ve 84. maddeler gereğince sandık yerinde sahip olduğu yetkilere sahiptir.",
+      "articleRefs": [
+        "109"
+      ]
+    },
+    {
+      "type": "numbers",
+      "title": "Tutanak, teslim ve ilan sayıları",
+      "rows": [
+        {
+          "label": "Sandık sonuç tutanağı nüshası (her seçim türü için ayrı)",
+          "value": "İki nüsha",
+          "refs": [
+            "105"
+          ]
+        },
+        {
+          "label": "Açılış sebebinin tutanağa yazılması",
+          "value": "Sandık saat 17.00'den sonra açılmışsa",
+          "refs": [
+            "105"
+          ]
+        },
+        {
+          "label": "Sandık sonuç tutanağının binada asılı kalma süresi",
+          "value": "Oy verme gününden itibaren bir hafta",
+          "refs": [
+            "105"
+          ]
+        },
+        {
+          "label": "Sandık kuruluna verilen sandık sonuç tutanağı",
+          "value": "Oy pusulasındaki parti ve bağımsız aday sayısından beş fazla",
+          "refs": [
+            "105"
+          ]
+        },
+        {
+          "label": "Torbayı ilçe seçim kuruluna götürenler",
+          "value": "Sandık kurulu başkanı + ad çekmeyle en az iki üye",
+          "refs": [
+            "107"
+          ]
+        },
+        {
+          "label": "İlçe seçim kurulunun torba için düzenlediği tutanak",
+          "value": "Müfredatlı üç nüsha",
+          "refs": [
+            "107"
+          ]
+        },
+        {
+          "label": "İlçede birleştirmeyi izleyen bağımsız aday ve müşahit",
+          "value": "Üçten fazlaysa ad çekilir, üçü kalır",
+          "refs": [
+            "108"
+          ]
+        },
+        {
+          "label": "İlçe birleştirme tutanak özetinin asılı kalma süresi",
+          "value": "Bir hafta",
+          "refs": [
+            "108"
+          ]
+        },
+        {
+          "label": "Parti ilçe başkanlıklarına ve bağımsız adaylara suret",
+          "value": "Yazılı talep üzerine, bir defaya mahsus",
+          "refs": [
+            "108"
+          ]
+        },
+        {
+          "label": "İl seçim kuruluna teslim (milletvekili, büyükşehir belediye başkanlığı)",
+          "value": "İlçe seçim kurulu başkanı + en az iki üye, en kısa sürede",
+          "refs": [
+            "108"
+          ]
+        },
+        {
+          "label": "İl seçim tutanağı suretinin kurul kapısında kalma süresi",
+          "value": "Bir hafta",
+          "refs": [
+            "109"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "105",
+        "107",
+        "108",
+        "109"
+      ]
+    },
+    {
+      "type": "compare",
+      "title": "Tek pusulalı zarf ↔ çok pusulalı zarf",
+      "rows": [
+        {
+          "aspect": "Seçim",
+          "left": "Bir zarfta tek oy pusulası kullanılan seçimler",
+          "right": "Bir zarfta birden fazla oy pusulası kullanılan seçimler",
+          "refs": [
+            "102"
+          ]
+        },
+        {
+          "aspect": "Zarftan el ilanı, broşür ya da işaret amaçlı madde çıkması",
+          "left": "Zarftaki pusulaların hiçbiri hesaba katılmaz",
+          "right": "Zarftaki pusulaların hiçbiri hesaba katılmaz",
+          "refs": [
+            "102"
+          ]
+        },
+        {
+          "aspect": "Aynı seçim türüne ait fazladan pusula",
+          "left": "Hiçbiri hesaba katılmaz",
+          "right": "Yalnız o seçim türünün pusulaları hesaba katılmaz; diğerleri katılır",
+          "refs": [
+            "102"
+          ]
+        },
+        {
+          "aspect": "Başka seçim türüne ait pusula",
+          "left": "Hiçbiri hesaba katılmaz",
+          "right": "Zarfta kullanılması gerekenler dışında bir türse hiçbiri hesaba katılmaz",
+          "refs": [
+            "102"
+          ]
+        },
+        {
+          "aspect": "Eksik pusula",
+          "left": "—",
+          "right": "Diğerleri hesaba katılır; eksik oyların türü ve sayısı sandık sonuç tutanağına işlenir",
+          "refs": [
+            "100",
+            "102"
+          ]
+        },
+        {
+          "aspect": "Bir pusulanın geçersiz olması",
+          "left": "—",
+          "right": "Diğerlerinin geçersiz sayılmasını gerektirmez",
+          "refs": [
+            "101"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "100",
+        "101",
+        "102"
+      ]
+    },
+    {
+      "type": "exam_stats",
+      "title": "Sınav der ki",
+      "rows": [
+        {
+          "label": "Bu ünitenin maddelerinden yayındaki soru",
+          "value": "0",
+          "refs": [
+            "100",
+            "101",
+            "102",
+            "105",
+            "107",
+            "108",
+            "109"
+          ]
+        },
+        {
+          "label": "Hiç soru çıkmamış",
+          "value": "md 100, md 101, md 102, md 105, md 107, md 108, md 109",
+          "refs": [
+            "100",
+            "101",
+            "102",
+            "105",
+            "107",
+            "108",
+            "109"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "100",
+        "101",
+        "102",
+        "105",
+        "107",
+        "108",
+        "109"
+      ],
+      "generated": true
+    },
+    {
+      "type": "bridge",
+      "title": "Bu üniteden soru çöz",
+      "articleRefs": [
+        "100",
+        "101",
+        "102",
+        "105",
+        "107",
+        "108",
+        "109"
+      ],
+      "generated": true,
+      "rows": [
+        {
+          "label": "Madde kapsamlı seans",
+          "value": "md 100–102, 105, 107–109, 0 soru",
+          "refs": [
+            "100",
+            "101",
+            "102",
+            "105",
+            "107",
+            "108",
+            "109"
+          ]
+        }
+      ]
+    }
+  ]
+}

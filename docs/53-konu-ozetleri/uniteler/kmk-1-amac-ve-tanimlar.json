@@ -1,0 +1,559 @@
+{
+  "unit": {
+    "slug": "kmk-1-amac-ve-tanimlar",
+    "legislationSlug": "5607-sayili-kacakcilikla-mucadele-kanunu",
+    "topicId": "1589379f-ddfe-4ce9-b572-543838b93032",
+    "title": "Kaçakçılık suçları ve usul hükümleri",
+    "subtitle": "Kaçakçılık suçları, nitelikli hâller, etkin pişmanlık, arama, elkoyma, müsadere ve tasfiye",
+    "articleFrom": "1",
+    "articleTo": "16/A",
+    "readingMinutes": 16,
+    "sourceLabel": "AI özeti — 5607 Sayılı Kaçakçılıkla Mücadele Kanunu, md 1–7, 9–13, 15, 16, 16/A",
+    "articleNos": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "9",
+      "10",
+      "11",
+      "12",
+      "13",
+      "15",
+      "16",
+      "16/A"
+    ],
+    "generatedBy": "claude-opus-5-5 (ozet-uret.ts)",
+    "sortOrder": 1
+  },
+  "blocks": [
+    {
+      "type": "concept",
+      "title": "Bu Kanun neyi düzenler?",
+      "body": "Kanunun amacı iki yönlüdür. Birincisi, hangi fiillerin kaçakçılık sayıldığını ve bunlara hangi yaptırımın uygulanacağını belirlemektir. İkincisi, kaçakçılığı önlemenin, izlemenin ve araştırmanın usul ve esaslarını koymaktır. Bu ünitede bu iki yönü de göreceksin: önce suçlar ve cezalar gelir, ardından arama, elkoyma, müsadere ve tasfiye gibi usul hükümleri.",
+      "articleRefs": [
+        "1"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Tanımlar",
+      "body": "**Gümrük vergileri:** Gümrük idaresi veya başka idarelerce, eşyanın ithali veya ihracına bağlı olarak uygulanan vergiler ile diğer malî yükümlülükler.\n\n**Gümrüklenmiş değer:** Uluslararası kıymet sözleşmesine göre belirlenir.\n- İthal eşyası: **CIF** kıymeti + gümrük vergileri\n- İhraç eşyası: **FOB** kıymeti + gümrük vergileri\n\n**Akaryakıt:** Benzin, gaz yağı, jet yakıtı, motorin, fuel-oil, sıvılaştırılmış petrol gazları, doğal gaz gibi akaryakıt ürünleri; akaryakıt yerine kullanılan petrol türevleri ve bunların karışımları; akaryakıt yerine kullanılan diğer ürünler.",
+      "articleRefs": [
+        "2"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Eşyayı ülkeye sokmak: iki temel kaçakçılık fiili",
+      "body": "**Gümrük işlemlerine tabi tutmaksızın ülkeye sokma:** bir yıldan beş yıla kadar hapis ve on bin güne kadar adlî para cezası.\n- Eşya **gümrük kapıları dışından** sokulursa ceza **üçte birinden yarısına kadar** artırılır.\n\n**Aldatıcı işlem ve davranışlarla**, gümrük vergileri kısmen veya tamamen ödenmeksizin ülkeye sokma: **iki yıldan beş yıla kadar** hapis ve on bin güne kadar adlî para cezası.",
+      "articleRefs": [
+        "3"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Aldatıcı işlem eklenince alt sınır yükselir",
+      "body": "Aldatıcı işlem ve davranışla vergiyi ödemeden eşya sokmanın cezası **iki yıldan beş yıla** kadardır. Şıklarda \"bir–beş\" görürsen dikkat et: o, eşyayı gümrük işlemine hiç tabi tutmadan sokmanın ve gerçekleşmemiş ihracatı gerçekleşmiş göstermenin aralığıdır. \"bir–üç\" ise transit rejimi, geçici ithalat ve ihracı yasak eşya gibi hafif fıkraların aralığıdır. Akılda tutman için: üst sınır aynı kalır (beş yıl), aldatıcı işlem girince alt sınır bir yıldan iki yıla çıkar. Kanunda \"hile\" sözcüğü ise geçici ithalat ve dahilde işleme fıkrasında geçer; onun aralığı bir–üçtür.",
+      "articleRefs": [
+        "3"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "type": "rule",
+      "title": "Rejim ihlalleri, kaçak eşyayı alıp satmak, muaf eşya",
+      "body": "**Transit rejimi** çerçevesinde taşınan serbest dolaşımda bulunmayan eşyayı rejime aykırı olarak gümrük bölgesinde bırakma: bir yıldan üç yıla kadar hapis, beş bin güne kadar adlî para cezası.\n\n**Geçici ithalat ve dahilde işleme rejimi** ile getirilen eşyayı hile ile yurt dışına çıkarmış gibi işlem yapma: bir yıldan üç yıla kadar hapis, beş bin güne kadar adlî para cezası.\n\n**İştirak etmeksizin**, ilk dört fıkradaki fiillerin (gümrük işlemine tabi tutmadan ya da aldatıcı işlemle sokma, transit ve geçici ithalat ihlalleri) konusunu oluşturan eşyayı bu özelliğini bilerek ve **ticarî amaçla** satın alma, satışa arz etme, satma, taşıma veya saklama: bir yıldan üç yıla kadar hapis, beş bin güne kadar adlî para cezası. İthali yasak eşyada bu fiiller ayrı ve daha ağır cezaya bağlanmıştır.\n\nÖzel kanunları gereğince gümrük vergilerinden **muaf** ithal edilen eşyayı ithal amacı dışında kullanma, satma, devretme ya da bu özelliğini bilerek satın alma veya kabul etme: **altı aydan iki yıla** kadar hapis, beş bin güne kadar adlî para cezası.",
+      "articleRefs": [
+        "3"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Yasak eşya ve sahte ihracat",
+      "body": "**İthali yasak eşyayı ülkeye sokma** (fiil daha ağır cezayı gerektiren suç oluşturmuyorsa): **iki yıldan altı yıla** kadar hapis ve yirmi bin güne kadar adlî para cezası.\n- Bu eşyayı bilerek satın alan, satışa arz eden, satan, taşıyan veya saklayan da **aynı ceza** ile cezalandırılır.\n\n**İhracı yasak eşyayı ülkeden çıkarma** (fiil daha ağır cezayı gerektiren başka bir suç oluşturmuyorsa): bir yıldan üç yıla kadar hapis, beş bin güne kadar adlî para cezası.\n\n**Teşvik, sübvansiyon veya parasal iadeden yararlanmak için** ihracatı gerçekleşmediği hâlde gerçekleşmiş gibi gösterme ya da ihraç edilen malın cins, miktar, evsaf veya fiyatını değişik gösterme: bir yıldan beş yıla kadar hapis, on bin güne kadar adlî para cezası.\n- Beyanname ile gerçekte ihraç edilen eşya arasındaki fark **yüzde onu aşmıyorsa** sadece Gümrük Kanunu hükümlerine göre işlem yapılır.",
+      "articleRefs": [
+        "3"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Akaryakıt kaçakçılığı",
+      "body": "**Ağırlaştırıcı eşya türü (onuncu fıkra):** Suçun konusu akaryakıt, tütün, tütün mamulleri, makaron, yaprak sigara kâğıdı, etil alkol, metanol veya alkollü içki ise **kendinden önceki fıkralara** (birinci ila dokuzuncu fıkralar) göre verilecek cezalar **yarısından iki katına kadar** artırılır; bu artırımla verilecek ceza **üç yıldan az olamaz**.\n\nAşağıdaki fiillerin her biri için ceza **iki yıldan beş yıla** kadar hapis ve yirmi bin güne kadar adlî para cezasıdır:\n- Ulusal markeri Enerji Piyasası Düzenleme Kurumunun belirlediği seviyenin altında olan veya hiç içermeyen akaryakıtı ticarî amaçla üretme, bulundurma, nakletme; satışa arz etme, satma; bilerek ve ticarî amaçla satın alma. Akaryakıtın kaçak olarak yurda sokulduğu anlaşılırsa onuncu fıkraya göre cezaya hükmolunur.\n- Enerji Piyasası Düzenleme Kurumundan izin almadan solvent, madenî yağ, baz yağ, asfalt ve benzeri petrol ürünlerinden akaryakıt üretme ya da bunları doğrudan akaryakıt yerine ikmal ederek üretme; bunları satışa arz etme, satma, bulundurma, bilerek ve ticarî amaçla satın alma, taşıma, saklama. Akaryakıt yerine kullanılan diğer ürünler için de aynı hüküm uygulanır.\n- Boru hatlarından, depolardan veya kuyulardan kanunlara aykırı alınan ürünleri satışa arz etme, satma, bulundurma, bilerek ticarî amaçla satın alma, taşıma, saklama.\n- Kaçak akaryakıt veya sahte ulusal marker elde etmeye, satmaya ya da herhangi bir piyasa faaliyetine konu etmeye yarayacak şekilde, lisansa esas belgelere aykırı sabit ya da seyyar tank, düzenek veya ekipman bulundurma.\n- Ulusal markeri yetkisiz üretme, satışa arz etme, satma, yetkisiz kişilerden satın alma, kabul etme, bilerek nakletme veya bulundurma. Markerin yerine kullanılmak amacıyla üretilen kimyasal terkipler de bu kapsamdadır.",
+      "articleRefs": [
+        "3"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Tütün, alkol ve bandrol",
+      "body": "Aşağıdaki fiillerin her biri için ceza **üç yıldan altı yıla** kadar hapis ve yirmi bin güne kadar adlî para cezasıdır:\n- Tütün mamulleri, makaron, yaprak sigara kâğıdı, etil alkol, metanol ve alkollü içkilerin ambalajlarına uygulanan bandrol, etiket, hologram, pul, damga veya benzeri işaretlerin **taklitlerini** imal etme veya ülkeye sokma; bunları bilerek bulundurma, nakletme, satma, kullanma.\n- Bu işaretleri usulüne göre temin edip belirlenen ürünlerde kullanmadan yayma; sahte evrakla ya da kurumları yanıltarak temin etme; taklit, tahrif ederek veya üründen kaldırarak amacı dışında kullanma.\n- İşaret taşımayan ya da taklit veya yanıltıcı işaret taşıyan bu ürünleri ticarî amaçla üretme, bulundurma, nakletme; satışa arz etme, satma; bilerek ve ticarî amaçla satın alma. Ürünün kaçak olarak yurda sokulduğu anlaşılırsa onuncu fıkraya göre cezaya hükmolunur.\n\n**Doldurulmuş makaron:** Ticarî amaçla makaron veya yaprak sigara kâğıdını tütün ya da başka madde doldurulmuş olarak satma, satışa arz etme, bulundurma, nakletme: üç yıldan altı yıla kadar **hapis** (metinde adlî para cezası öngörülmemiştir).\n\n**Yetkisiz tütün ticareti:** Tarım ve Orman Bakanlığından yetki belgesi almadan veya bildirimde bulunmadan tütün ticareti: iki yıldan beş yıla kadar **hapis**.",
+      "articleRefs": [
+        "3"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Teşebbüs ve eşyanın değeri",
+      "body": "**Teşebbüs:** Bu maddede tanımlanan fiiller teşebbüs aşamasında kalsa bile **tamamlanmış gibi** cezalandırılır. Teşebbüs için ayrıca bir indirim bekleme.\n\n**Eşyanın değeri:**\n- Değer **fahiş** ise cezalar yarısından bir katına kadar **artırılır**.\n- Değer **hafif** ise cezalar yarısına kadar **indirilir**.\n- Değer **pek hafif** ise cezalar üçte birine kadar **indirilir**.",
+      "articleRefs": [
+        "3"
+      ]
+    },
+    {
+      "type": "numbers",
+      "title": "Kaçakçılık fiilleri: ceza tablosu",
+      "rows": [
+        {
+          "label": "Gümrük işlemine tabi tutmadan sokma",
+          "value": "bir–beş yıl hapis; on bin güne kadar adlî para",
+          "refs": [
+            "3"
+          ]
+        },
+        {
+          "label": "Gümrük kapıları dışından sokma",
+          "value": "ceza üçte birinden yarısına kadar artırılır",
+          "refs": [
+            "3"
+          ]
+        },
+        {
+          "label": "Aldatıcı işlemle vergi ödemeden sokma",
+          "value": "iki–beş yıl hapis; on bin güne kadar adlî para",
+          "refs": [
+            "3"
+          ]
+        },
+        {
+          "label": "Transit rejimi ihlali / geçici ithalat-dahilde işleme hilesi",
+          "value": "bir–üç yıl hapis; beş bin güne kadar adlî para",
+          "refs": [
+            "3"
+          ]
+        },
+        {
+          "label": "İştirak etmeksizin, ilk dört fıkradaki eşyayı ticarî amaçla alma, satma, taşıma, saklama",
+          "value": "bir–üç yıl hapis; beş bin güne kadar adlî para",
+          "refs": [
+            "3"
+          ]
+        },
+        {
+          "label": "Muaf ithal edilen eşyayı amaç dışı kullanma",
+          "value": "altı ay–iki yıl hapis; beş bin güne kadar adlî para",
+          "refs": [
+            "3"
+          ]
+        },
+        {
+          "label": "İthali yasak eşya",
+          "value": "iki–altı yıl hapis; yirmi bin güne kadar adlî para",
+          "refs": [
+            "3"
+          ]
+        },
+        {
+          "label": "İhracı yasak eşya",
+          "value": "bir–üç yıl hapis; beş bin güne kadar adlî para",
+          "refs": [
+            "3"
+          ]
+        },
+        {
+          "label": "Gerçekleşmemiş ihracatı gerçekleşmiş gösterme",
+          "value": "bir–beş yıl hapis; on bin güne kadar adlî para",
+          "refs": [
+            "3"
+          ]
+        },
+        {
+          "label": "Beyan ile ihraç edilen eşya farkı",
+          "value": "yüzde onu aşmıyorsa yalnız Gümrük Kanunu işlemi",
+          "refs": [
+            "3"
+          ]
+        },
+        {
+          "label": "Akaryakıt, tütün, alkol vb. konu eşya",
+          "value": "yarısından iki katına kadar artırım; en az üç yıl",
+          "refs": [
+            "3"
+          ]
+        },
+        {
+          "label": "Marker, izinsiz akaryakıt üretimi, boru hattı, tank-düzenek, yetkisiz marker",
+          "value": "iki–beş yıl hapis; yirmi bin güne kadar adlî para",
+          "refs": [
+            "3"
+          ]
+        },
+        {
+          "label": "Bandrol taklidi, amaç dışı kullanımı, bandrolsüz ürün",
+          "value": "üç–altı yıl hapis; yirmi bin güne kadar adlî para",
+          "refs": [
+            "3"
+          ]
+        },
+        {
+          "label": "Doldurulmuş makaron / yaprak sigara kâğıdı",
+          "value": "üç–altı yıl hapis",
+          "refs": [
+            "3"
+          ]
+        },
+        {
+          "label": "Yetki belgesiz tütün ticareti",
+          "value": "iki–beş yıl hapis",
+          "refs": [
+            "3"
+          ]
+        },
+        {
+          "label": "Eşya değeri fahiş / hafif / pek hafif",
+          "value": "yarısından bir katına artırım / yarısına kadar indirim / üçte birine kadar indirim",
+          "refs": [
+            "3"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "3"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Nitelikli hâller: artırım ve ayrıca ceza",
+      "body": "Bu Kanunda tanımlanan suçlar;\n- **Bir örgütün faaliyeti çerçevesinde** işlenirse: ceza **iki kat** artırılır.\n- **Üç veya daha fazla kişi** tarafından birlikte işlenirse: ceza **yarı oranında** artırılır.\n- **Tüzel kişinin faaliyeti çerçevesinde veya yararına** işlenirse: ayrıca tüzel kişilere özgü **güvenlik tedbirlerine** hükmolunur.\n- Kaçakçılığı önlemek, izlemek, araştırmak ve soruşturmakla **görevli kişilerce** ya da **meslek ve sanatın sağladığı kolaylıklardan** yararlanılarak işlenirse: ceza **yarı oranında** artırılır.\n- **Belgede sahtecilik** yapılarak işlenirse: ceza artırılmaz, **ayrıca** bu suçtan dolayı da cezaya hükmolunur.",
+      "articleRefs": [
+        "4"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Kişi sayısı ve sahtecilik tuzağı",
+      "body": "Nitelikli hâllerde iki tuzak sık çıkar.\n\n**Birlikte işleme:** Eşik **üç veya daha fazla kişi**dir; \"iki veya daha fazla kişi\" yazan şık yanlıştır. Artış da \"iki kat\" değil, **yarı oranında**dır. Bu maddede iki kat artış örgüt hâlinde ve tank, düzenek veya ekipmanla kaçak akaryakıt satışında öngörülür.\n\n**Belgede sahtecilik:** Burada bir artırım yoktur. Sahtecilik suçundan **ayrıca** cezaya hükmolunur. \"Yarı oranında artırılır\" diyen şık yanlıştır.\n\nBu maddede yarı oranında artış yalnız iki yerde geçer: üç veya daha fazla kişiyle işleme ile görevli kişilerce ya da meslek ve sanat kolaylığıyla işleme.",
+      "articleRefs": [
+        "4"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "type": "rule",
+      "title": "Göz yuman görevli, ağır eşya, düzenek, ilan",
+      "body": "**Göz yuman görevli:** Kaçakçılığı önlemek, izlemek ve araştırmakla görevli olup suçun işlenmesine **kasten göz yuman** kişi, işlenen suçun **müşterek faili** olarak sorumlu tutulur.\n\n**Tehlikeli eşya:** Eşya Devletin siyasî, iktisadî veya askerî güvenliğini bozacak ya da çevre veya toplum sağlığını tehdit edecek nitelikteyse, fiil daha ağır cezayı gerektiren bir suç oluşturmadığı takdirde hapis cezası **on yıldan az olamaz**.\n\n**Düzenekle kaçak akaryakıt satışı:** Satış, lisansa aykırı sabit ya da seyyar tank, düzenek veya ekipmanla gerçekleştirilirse cezalar **iki kat** artırılır.\n\n**Kamuoyuna ilan:** Tütün, alkollü içki, akaryakıt, uyuşturucu, silah ve mühimmat, elektronik eşya, canlı hayvan ve et, çay, şeker, zeytin gibi gıda maddeleri ile gerekli görülen diğer kaçakçılık türlerinde mahkûmiyet hükmü kesinleşenler Gümrük ve Ticaret Bakanlığınca kamuoyuna **ilan edilebilir**. Süre, usul ve kapsam yönetmelikle belirlenir.\n\n**Not:** Bakanlık adı kanun metnindeki hâliyle verilmiştir.",
+      "articleRefs": [
+        "4"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Etkin pişmanlık",
+      "body": "**Haber verme (suça iştirak etmiş kişi):**\n- Resmî makamlar haber almadan **önce** fiili, diğer failleri ve kaçak eşyanın saklandığı yerleri merciine bildirir ve bu bilgi faillerin yakalanmasını veya eşyanın ele geçirilmesini sağlarsa **cezalandırılmaz**.\n- Haber alındıktan **sonra** fiilin bütünüyle ortaya çıkmasına hizmet ve yardım ederse ceza **üçte iki oranında** indirilir.\n\n**Ödeme yoluyla:** Yedinci fıkrası (ithali yasak eşya) hariç kaçakçılık fiillerinde, fail suç konusu eşyanın **gümrüklenmiş değerinin iki katı** parayı Devlet Hazinesine öderse:\n- Soruşturma evresi sona erinceye kadar ödemişse ceza **yarı oranında** indirilir.\n- Kovuşturma evresinde hüküm verilinceye kadar ödemişse ceza **üçte bir oranında** indirilir.\n\n**İhtar:** Soruşturma evresinde Cumhuriyet savcısı şüpheliye yapar; yapılmamışsa kovuşturma evresinde hâkim sanığa yapar.\n\n**Uygulanmaz:** Ödeme yoluyla indirim **mükerrirler** hakkında ve suç **örgüt faaliyeti** çerçevesinde işlenmişse uygulanmaz.",
+      "articleRefs": [
+        "5",
+        "3"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Yolcu eşyası ve deniz taşıtları",
+      "body": "**Yolcu:** Beyanına aykırı olarak üzerinde, eşyası arasında veya taşıma aracında çıkan eşya **ticarî mahiyette** ya da **ithali veya ihracı yasak** ise kaçakçılık fiillerine ilişkin hükümler (md 3) uygulanır.\n\n**Gemi kaptanı:** Hukuken geçerli bir mazereti olmadan, izinsiz olarak gümrük bölgesine girip sahile veya başka bir gemiye yanaşan geminin kaptanı; gemide **yasak eşya** ya da **yükleme veya taşıma belgelerinde yer almayan eşya** bulunursa kaçakçılık suçuna ilişkin hükümlere göre cezalandırılır.",
+      "articleRefs": [
+        "6",
+        "7",
+        "3"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Arama ve elkoyma",
+      "body": "**Genel kural:** Kaçak eşya, her türlü silâh, mühimmat, patlayıcı ve uyuşturucu bulunduğundan şüphe edilen kap, ambalaj, taşıma araçları ile kişilerin üzerinde yapılacak arama ve elkoymalar **Ceza Muhakemesi Kanunu** uyarınca yerine getirilir.\n\n**Gümrük salonları ve kapıları:** Kaçak eşya sakladığından kuşkulanılan kişilerin üzeri, eşyası, yükleri ve araçları gümrük kontrolü amacıyla **gümrük görevlilerince** aranabilir.\n\n**Kaçak giriş yolları:** Gümrük bölgesine Gümrük Kanunu gereğince belirlenen kapı ve yollar dışından girmek, çıkmak veya geçmek **yasaktır**. Bu yerlerde rastlanan kişi ve taşıma araçları **yetkili memurlarca** durdurulur; kişilerin eşya, yük ve üzerleri ile taşıma araçları aranır.\n\nHer iki aramada da tespit edilen kaçak eşyaya **derhal** elkonulur.",
+      "articleRefs": [
+        "9"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Taşıta elkoyma ve alıkoyma",
+      "body": "**Elkoyma:** Suçta kullanılan taşıtlara Ceza Muhakemesi Kanununun 128 inci maddesinin dördüncü fıkrasına göre elkonulur.\n\n**Alıkoyma hâlleri:** Elkonulan taşıt, elkoyma kararı veren mercilerce şu hâllerde alıkonulur:\n- Kaçak eşyanın taşıtta özel hazırlanmış gizli tertibatta saklanmış veya taşınmış olması (md 13)\n- Taşıtın Türkiye'de sicile kayıtlı olmaması\n- Soruşturma ve kovuşturma sürerken suçta tekrar kullanılması\n\n**Teminatla iade:** Sahibi taşıtın değeri kadar teminatı alıkoyma tarihinden itibaren **otuz gün** içinde gümrük idaresine teslim ederse taşıt iade edilir. Aksi hâlde tasfiye idaresince soruşturma ve kovuşturma sonucu beklenmeksizin **derhal tasfiye** olunur.\n\n**Alıkonulmayan taşıt:** Elkoyma kararı bulunup alıkonulmayan taşıt, gümrük idaresinin tebligatından itibaren **doksan gün** içinde masraflar karşılanarak sahibince teslim alınmazsa derhal tasfiye olunur.\n\n**Satışla tasfiye:** Taşıt satılarak tasfiye edilirse, muhafaza ve satış için gereken bütün masraflar karşılandıktan sonra kalan miktar, kovuşturma sonucuna göre işlem yapılmak üzere emanet hesabına alınır.\n\n**Değer ölçüsü:**\n- Kara taşıtı: kasko değeri\n- Deniz taşıtı: tekne ve makine sigortasına esas değer\n- Sigortasız taşıt, hava ve demiryolu taşıtı: piyasa değeri",
+      "articleRefs": [
+        "10",
+        "13"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Elkonulan eşyanın muhafazası",
+      "body": "- Elkonulan eşya ve alıkonulan taşıtlar; miktar, cins, marka, tip, model, seri numarası gibi ayırıcı özellikleri gösteren bir **tutanakla gümrük idaresine** teslim edilir. Gümrük idaresi gerekli yerlerde depo temin eder.\n- Alıkonulan **deniz taşıtları** teminatla teslim alınmazsa, giderler sahip veya donatana ait olmak üzere **liman işletme müdürlüğüne** teslim edilir. Masraflar karşılandığı sürece tasfiyeye gidilmez.\n- Özel tesis gerektiren ya da depolama kapasitesini aşan eşya ilgili idarelere; bu mümkün değilse büyükşehirler dahil ilçelerde **kaymakamın**, illerde **valinin** uygun göreceği yerlere konulur.\n- Bandrol vb. işaret taşımayan tütün mamulleri, etil alkol, metanol, alkollü içkiler, makaron, yaprak sigara kâğıdı ile ilaç, ilaç hammaddeleri, tıbbi cihaz ve malzemeler, elektronik sigara ve elektronik nargile dahil ürünler; el koyan idarelerce numune alınarak (numune alınamıyorsa ayırt edici bilgileri tespit edilerek) tutanakla **imha edilir**. Ancak ilaç, ilaç hammaddeleri, tıbbi cihaz ve malzemeler ile etil alkolden imha dışındaki yöntemlerle tasfiyesi uygun görülenler yönetmelikle belirlenir.\n- Kaçak akaryakıt hariç muhafaza, depolama, nakliye ve imha masrafları Gümrük ve Ticaret Bakanlığı döner sermaye işletmesi gelirlerinden karşılanır.\n- **Kaçak akaryakıt**, yakalandığı ildeki **il özel idaresine**, il özel idaresi yoksa **yatırım izleme ve koordinasyon başkanlığına** yakalandığı yerde tutanakla teslim edilir; masraflarını da bu kurumlar karşılar.\n\n**Not:** Bakanlık adı kanun metnindeki hâliyle verilmiştir.",
+      "articleRefs": [
+        "11"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Geri gönderme, müsadere, kaim değer",
+      "body": "**Geri gönderme:** Yükleme veya taşıma belgelerinde belirtilerek gümrüğe getirilen yasak eşya, teminat altında ve güvenlik tedbirleri alınarak geldiği yere veya başka bir ülkeye iade ve sevk olunur. Toplum ve çevre sağlığı yönünden tehlikeli eşya ile atık maddelerde ilgililer hakkında soruşturma başlatılır, eşya da gümrük yetkililerince **derhal** getirildiği ülkeye iade edilir.\n\n**Müsadere:** Türk Ceza Kanununun eşya ve kazanç müsaderesi hükümleri uygulanır. Kaçak eşya taşımasında bilerek kullanılan taşıma aracının müsaderesi için şu koşullardan **biri** gerekir:\na) Eşyanın özel hazırlanmış gizli tertibatta saklanmış veya taşınmış olması\nb) Eşyanın araç yükünün tamamını veya ağırlıklı bölümünü oluşturması ya da naklinin bu aracı gerektirmesi\nc) Eşyanın girişi veya çıkışı yasak ya da toplum veya çevre sağlığına zararlı olması\n\nEtkin pişmanlık nedeniyle ceza verilmemesi veya kamu davasının düşmesi, **sadece suç konusu eşya** ile ilgili olarak müsadere hükümlerinin uygulanmasına engel değildir.\n\n**Kaim değer:** Müsaderesi gereken eşyanın kaim değerinden, eşyanın **gümrüklenmiş değeri** anlaşılır.",
+      "articleRefs": [
+        "12",
+        "13",
+        "15"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Tasfiye",
+      "body": "- Müsadere yaptırımı uygulanabilecek eşya **sahibine iade edilemez**.\n- Kaçak akaryakıt hariç elkonulan eşya hakkında, el koyma tarihinden itibaren **altı ay** içinde tasfiye kararı verilir. Eşyanın zarara uğraması veya değerinde esaslı kayıp tehlikesi varsa ya da muhafazası ciddi külfet oluşturuyorsa süre **bir ay**dır.\n- Kararı **soruşturma aşamasında hâkim**, **kovuşturma aşamasında mahkeme** verir. Süre içinde karar verilmezse eşya **derhal** tasfiye edilir.\n- Tasfiyeden önce mümkünse numune alınır; değilse eşyanın ayırt edici özellikleri tespit edilir.\n- Satış bedeli **emanet hesabına** alınır. İade kararı verilirse bedel, el koyma tarihinden iade tarihine kadar **kanuni faiziyle** hak sahibine ödenir. Emanetteki tutar yetmezse fark, eşya imha edilmişse bedeli gümrük idaresince genel bütçeden karşılanır.\n- İade kararlarında yürürlükteki gümrük ve dış ticaret mevzuatına göre işlem yapılır.\n- Tasfiyeyi **tasfiye idaresi**, Gümrük Kanunu hükümlerine göre yapar.",
+      "articleRefs": [
+        "16"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Kaçak akaryakıtın tasfiyesi",
+      "body": "**Teknik düzenlemelere uygun akaryakıt:** İl özel idaresi (yoksa yatırım izleme ve koordinasyon başkanlığı) numune alarak kamu kurum ve kuruluşları ile mahalli idarelere **bedelsiz tahsis** eder ya da **satar**. Teslim tutanağı ve numune en yakın gümrük idaresine teslim edilir.\n\n**Hudut kapıları:** Kara, hava ve deniz hudut kapılarında elkonulan akaryakıt numune alınarak, gümrüğe terk edilen veya terk edilmiş sayılan akaryakıt ise numune alınmaksızın gümrük idarelerinin (gerektiğinde kamu kurumları ve mahalli idarelerin) kullanımına tahsis edilir ya da satılır.\n\n**Satış bedeli:** İl özel idaresinin veya yatırım izleme ve koordinasyon başkanlığının bütçesine gelir kaydedilir.\n\n**Sahipsiz akaryakıt:** Ulusal marker saha ölçümü Enerji Piyasası Düzenleme Kurumunun belirlediği seviyede değilse **analiz yapılmaksızın** teknik düzenlemelere aykırı kabul edilir ve tasfiye edilir.\n\n**Uygun olmayan akaryakıt:** En yakın rafineriye satılır. Bedel beyaz ürünlerde rafinerinin bir önceki ay sonundaki ham petrol/devir maliyet fiyatından, diğer ürünlerde ise yüzde altmışından az olamaz. Rafineri, süreçlerine zarar vermeyeceği analizle kanıtlanan akaryakıtı teslim almakla yükümlüdür; zarar verecekse akaryakıt lisanslı atık yakma ve beraber yakma tesislerinde bertaraf ettirilir.\n\n**Sahibi lehine sonuç:** Satış bedelinden vergiler düşülerek, tahsiste ise belirlenen bedel üzerinden, el koymadan kararın kesinleşmesine kadar **kanuni faiziyle** ödeme yapılır.\n\n**İhale:** Bu kapsamdaki alımlarda 4734 sayılı Kanun, kaçak akaryakıt satışında 2886 sayılı Devlet İhale Kanunu uygulanmaz.",
+      "articleRefs": [
+        "16/A"
+      ]
+    },
+    {
+      "type": "numbers",
+      "title": "Oranlar ve süreler",
+      "rows": [
+        {
+          "label": "Örgüt faaliyeti çerçevesinde işleme",
+          "value": "ceza iki kat artırılır",
+          "refs": [
+            "4"
+          ]
+        },
+        {
+          "label": "Üç veya daha fazla kişiyle birlikte işleme",
+          "value": "ceza yarı oranında artırılır",
+          "refs": [
+            "4"
+          ]
+        },
+        {
+          "label": "Görevli kişilerce / meslek ve sanat kolaylığıyla işleme",
+          "value": "ceza yarı oranında artırılır",
+          "refs": [
+            "4"
+          ]
+        },
+        {
+          "label": "Devlet güvenliğini bozan / çevre-toplum sağlığını tehdit eden eşya",
+          "value": "hapis on yıldan az olamaz",
+          "refs": [
+            "4"
+          ]
+        },
+        {
+          "label": "Tank, düzenek veya ekipmanla kaçak akaryakıt satışı",
+          "value": "cezalar iki kat artırılır",
+          "refs": [
+            "4"
+          ]
+        },
+        {
+          "label": "Haber alındıktan sonra fiilin ortaya çıkmasına yardım",
+          "value": "ceza üçte iki oranında indirilir",
+          "refs": [
+            "5"
+          ]
+        },
+        {
+          "label": "Etkin pişmanlıkta ödenecek tutar",
+          "value": "gümrüklenmiş değerin iki katı",
+          "refs": [
+            "5"
+          ]
+        },
+        {
+          "label": "Soruşturma evresi sona erinceye kadar ödeme",
+          "value": "ceza yarı oranında indirilir",
+          "refs": [
+            "5"
+          ]
+        },
+        {
+          "label": "Kovuşturmada hüküm verilinceye kadar ödeme",
+          "value": "ceza üçte bir oranında indirilir",
+          "refs": [
+            "5"
+          ]
+        },
+        {
+          "label": "Alıkonulan taşıt için teminat teslimi",
+          "value": "alıkoyma tarihinden itibaren otuz gün",
+          "refs": [
+            "10"
+          ]
+        },
+        {
+          "label": "Alıkonulmayan taşıtı teslim alma",
+          "value": "tebligattan itibaren doksan gün",
+          "refs": [
+            "10"
+          ]
+        },
+        {
+          "label": "Tasfiye kararı (genel)",
+          "value": "el koyma tarihinden itibaren altı ay",
+          "refs": [
+            "16"
+          ]
+        },
+        {
+          "label": "Tasfiye kararı (zarar, değer kaybı tehlikesi, ciddi külfet)",
+          "value": "bir ay",
+          "refs": [
+            "16"
+          ]
+        },
+        {
+          "label": "Uygun olmayan akaryakıtın rafineriye satışı (beyaz ürün dışı)",
+          "value": "yüzde altmışından az olamaz",
+          "refs": [
+            "16/A"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "4",
+        "5",
+        "10",
+        "16",
+        "16/A"
+      ]
+    },
+    {
+      "type": "exam_stats",
+      "title": "Sınav der ki",
+      "rows": [
+        {
+          "label": "Bu ünitenin maddelerinden yayındaki soru",
+          "value": "3",
+          "refs": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "15",
+            "16",
+            "16/A"
+          ]
+        },
+        {
+          "label": "md 4 — Nitelikli haller",
+          "value": "2 soru",
+          "refs": [
+            "4"
+          ]
+        },
+        {
+          "label": "md 3 — sübvansiyon veya parasal iadelerden yararlanmak amacıyla ihracat gerçekleşmediği hâlde",
+          "value": "1 soru",
+          "refs": [
+            "3"
+          ]
+        },
+        {
+          "label": "Hiç soru çıkmamış",
+          "value": "md 1, md 2, md 5, md 6, md 7, md 9, md 10, md 11, md 12, md 13, md 15, md 16, md 16/A",
+          "refs": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "15",
+            "16",
+            "16/A"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "9",
+        "10",
+        "11",
+        "12",
+        "13",
+        "15",
+        "16",
+        "16/A"
+      ],
+      "generated": true
+    },
+    {
+      "type": "bridge",
+      "title": "Bu üniteden soru çöz",
+      "articleRefs": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "9",
+        "10",
+        "11",
+        "12",
+        "13",
+        "15",
+        "16",
+        "16/A"
+      ],
+      "generated": true,
+      "rows": [
+        {
+          "label": "Madde kapsamlı seans",
+          "value": "md 1–7, 9–13, 15, 16, 16/A, 3 soru",
+          "refs": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "15",
+            "16",
+            "16/A"
+          ]
+        }
+      ]
+    }
+  ]
+}

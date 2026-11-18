@@ -1,0 +1,544 @@
+{
+  "unit": {
+    "slug": "ckuy-2",
+    "legislationSlug": "cocuk-koruma-kanunu-uygulama-yonetmeligi",
+    "topicId": "7b47e1cc-1573-4cfc-99fa-6c82b73b88ec",
+    "title": "Sosyal inceleme ve denetim altına alma",
+    "subtitle": "Sosyal inceleme raporu, denetim görevlisi, denetim plânı, raporlar, ara verme ve sona erme, eğitim ve kayıtlar",
+    "articleFrom": "20",
+    "articleTo": "40",
+    "readingMinutes": 12,
+    "sourceLabel": "AI özeti — Çocuk Koruma Kanunu Uygulama Yönetmeliği, md 20–40",
+    "articleNos": [
+      "20",
+      "21",
+      "22",
+      "23",
+      "24",
+      "25",
+      "26",
+      "27",
+      "28",
+      "29",
+      "30",
+      "31",
+      "32",
+      "33",
+      "34",
+      "35",
+      "36",
+      "37",
+      "38",
+      "39",
+      "40"
+    ],
+    "generatedBy": "claude-opus-5-5 (ozet-uret.ts)",
+    "sortOrder": 2
+  },
+  "blocks": [
+    {
+      "type": "concept",
+      "title": "Sosyal inceleme: hâkimin çocuğu tanıma aracı",
+      "body": "Sosyal inceleme, çocuğun bireysel özelliklerini ve sosyal çevresini gösteren incelemedir. Mahkemeler, çocuk hâkimleri veya Cumhuriyet savcıları gerektiğinde bu incelemeyi yaptırır. İncelemeyi yapan bilirkişi bir rapor düzenler. Raporda çocuğun aile ortamı, sosyal çevre koşulları, gördüğü eğitim, fiziksel ve ruhsal gelişimi yer alır. Mahkeme, suça sürüklenmiş çocuğun kusur yeteneğini takdir ederken bu raporu göz önünde bulundurur. Ama son sözü her zaman mahkeme söyler.",
+      "articleRefs": [
+        "20",
+        "21"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Kim yaptırır, kim talep eder, ne zaman zorunlu?",
+      "body": "**Yaptırabilir:** Gerektiğinde mahkemeler, çocuk hâkimleri veya Cumhuriyet savcıları.\n\n**Talep edebilir:** Soruşturma ve kovuşturma aşamalarında şu kişiler, mahkeme veya çocuk hâkimine müracaat ederek talep edebilir:\n- çocuk,\n- veli veya vasisi,\n- müdafi veya bu kimselerin avukatları.\n\n**Zorunlu hâl:** Fiili işlediği sırada şu çocuklar için sosyal inceleme yaptırılması **zorunludur**:\n- 12 yaşını bitirmiş, 15 yaşını doldurmamış çocuklar,\n- 15 yaşını doldurmuş, 18 yaşını doldurmamış sağır ve dilsizler.\n\nAmaç, fiilin hukukî anlam ve sonuçlarını algılama ve davranışlarını yönlendirme yeteneğinin olup olmadığını takdir etmektir.\n\n**Ek görüş:** Bu hâllerde hâkim veya mahkeme, sosyal inceleme raporunun yanında görüş alır. Görüş adlî tıp uzmanı, psikiyatrist ya da zorunluluk hâlinde uzman hekimden alınır.\n\n**Not:** Zorunlu hâller Yönetmelik metnindeki hâliyle verilmiştir; Kanunda sosyal inceleme zorunluluğu sonradan genişletilmiş ve 15 yaşını doldurmamış bütün çocukları kapsar hâle gelmiştir.",
+      "articleRefs": [
+        "20"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Kusur yeteneğine kim karar verir?",
+      "body": "Soru kökü \"algılama ve yönlendirme yeteneğini kim takdir eder?\" diye sorarsa cevap: **münhasıran mahkeme**. Bilirkişi, sosyal çalışma görevlisi ya da adlî tıp uzmanı bu kararı vermez.\n\nDahası, sosyal inceleme raporunda bu yeteneğin olup olmadığı hakkında **sonuç değerlendirmesinde bulunulmaz**. Rapor ve uzman görüşü yalnızca yol gösterir. Hâkim, raporda yer alan gözlem, tespit ve değerlendirmeleri göz önünde bulundurur ve kararı kendisi verir.",
+      "articleRefs": [
+        "20",
+        "21"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Acil tedbir, inceleme süresi ve gerekçe",
+      "body": "- **Acil durum:** Derhâl tedbir alınmasını gerektiren acil durumlarda, sosyal inceleme sonucu beklenmeden tedbir kararı verilebilir. Sosyal inceleme daha sonra yaptırılır ve gerektiğinde tedbir kararı değiştirilebilir.\n- **Süre:** İnceleme, kararda gösterilen sürede tamamlanır. Gerektiğinde ek süre talep edilebilir. Kararda süre belirtilmemişse inceleme, çocuğun durumunun aciliyetine uygun bir süre içinde tamamlanır ve rapor mahkemeye sunulur.\n- **Yaptırmama:** Mahkeme veya çocuk hâkimi sosyal inceleme yaptırmazsa, gerekçesini kararda gösterir.\n\n**Not:** Bu kural Yönetmelik metnindeki hâliyle verilmiştir. Kanunda sonradan değiştirilmiştir: Cumhuriyet savcısı, mahkeme veya çocuk hâkimi 15 yaşını doldurmuş çocuk hakkında sosyal inceleme yaptırmazsa gerekçe iddianamede veya kararda gösterilir.",
+      "articleRefs": [
+        "20"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Sosyal inceleme raporunda neler yer alır?",
+      "body": "Raporda, incelemenin özelliğine ve verilen görevin niteliğine göre aşağıdakilerin **tamamına veya bir kısmına** yer verilir:\n- Çocuğun doğumundan başlayarak geçirdiği gelişim aşamaları\n- Fiziksel, zihinsel, duygusal, sosyal ve moral gelişim özellikleri\n- Ailesinin toplumsal, ekonomik ve kültürel durumu; aile bireyleri arasındaki ilişki\n- Okul ve iş ortamı ile boş zamanlarını değerlendirdiği çevre\n- İçinde bulunduğu hukukî durum ve adlî mercilerin müdahalesini gerektiren olaylar\n- İnceleme sırasında uzmanlarca tespit edilen davranışları\n- Suçluluğa, topluma uyumsuzluğa veya korunmaya muhtaç olmaya neden olan etkenler\n- Fiziksel, psikolojik ve sosyal incelemede elde edilen ve olayın açıklanması bakımından önemli görülen bilgiler\n- Kanunun 5 inci maddesindeki tedbirlerden hangisinin yararlı olacağı ve denetim altına almaya gerek olup olmadığına dair öneriler\n- Tedbir veya denetim kararlarının ne kadar süreyle uygulanması gerektiğine ilişkin öneriler\n- Çocuk ve ailesine uygulanabilecek özel tretman veya psikiyatrik tedavi önerileri",
+      "articleRefs": [
+        "21"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Sosyal inceleme raporundan kim bilgi alır?",
+      "body": "- **Örnek alabilenler:** Çocuğun avukatı veya yasal temsilcisi. Örneği Cumhuriyet savcısından, mahkemeden veya çocuk hâkiminden alır.\n- **Çocuk:** Çocuğa raporun içeriği hakkında bilgi verilir.\n- **Gizlilik:** Bilgi ve belgeler gizli tutulur, amacı dışında kullanılamaz.\n- **Yararlanma:** Tedbir kararlarını yerine getiren kişi, kurum veya kuruluşlar da rapordan yararlanabilir. Bu yararlanma; uygulama plânı, denetim plânı, denetim raporu ve değerlendirme raporlarına esas olmak üzere ve gizlilik ile sınırlama ilkelerine uyarak yapılır.",
+      "articleRefs": [
+        "22"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Yasak kime konabilir?",
+      "body": "Burada ayrı sınırlamalar var, karıştırma.\n\n**İnceleme yasağı:** Bilgi sahibi olmanın çocuğun yararına aykırı olduğu kanaatine varılırsa raporun incelenmesi kısmen veya tamamen yasaklanabilir. Ama bu yasak **çocuk ve avukatı hariç** kişiler için, yani yasal temsilci için konur. Avukata inceleme yasağı konmaz.\n\n**Çocuğa verilmeyebilecek bilgi:** Bazı bilgiler çocuğun psiko-sosyal gelişimini olumsuz etkileyebilir. Bu durumda, çocuğun yarar ve esenliğinin gözetilmesi temel ilkesiyle bu bilgi ve belgeler çocuğa verilmeyebilir.\n\nAynı kurgu, denetim plânı ile denetim ve değerlendirme raporları için de geçerlidir.",
+      "articleRefs": [
+        "22",
+        "35"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Denetim altına alma ne demek?",
+      "body": "Denetim altına alma kararının anlamı, çocuk hakkında verilen karara göre değişir.\n\n**Koruyucu ve destekleyici tedbir kararı verilen çocukta:** Kararın amacına ulaşması ve çocuğa etkili bir koruma ve gözetim hizmeti sunulması için kararların yerine getirilmesinin izlenmesi ve denetlenmesidir.\n\n**Kamu davasının açılmasının ertelenmesi veya hükmün açıklanmasının geri bırakılması kararı verilen çocukta:** Mahkemenin belirttiği koşullar ve süre içinde, denetim plânı doğrultusunda yürüyen toplum temelli bir uygulamadır. Bu uygulamada çocuğun toplumla bütünleşmesi için ihtiyaç duyduğu her türlü hizmet, program ve kaynak sağlanır.\n\n**Karardan önce araştırılanlar:** Denetim altına alma kararı verilebilecek hâllerde şunlar araştırılır:\n- çocuğun yetiştirilme şekli,\n- kişisel özellikleri,\n- yaşadığı çevre ve bulunduğu ortam,\n- suça yönelmesine etkin davranışlar.",
+      "articleRefs": [
+        "23"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Denetim görevlisi: görevlendirme ve görevler",
+      "body": "**Görevlendirmede dikkat edilenler:**\n- Çocuğun kişisel özellik ve ihtiyaçları dikkate alınır.\n- Çocukla iyi iletişim kurabilecek olanlar tercih edilir.\n\n**Görevin yürütülmesinde:** Çocuk hakkında koruyucu ve destekleyici tedbir kararı da varsa, tedbiri yerine getiren kurum veya kuruluşlarla işbirliği yapılır. Gerektiğinde denetim plânı ve denetim raporlarının hazırlanmasında oradaki uzmanlardan yararlanılır.\n\n**Görevler:**\n- Çocuğun eğitim, aile, kurum, iş ve sosyal çevreye uyumu için onu desteklemek, yardımcı olmak, gerektiğinde önerilerde bulunmak\n- Eğitim, iş, destek alabileceği kurumlar, hakları ve haklarını kullanma konularında rehberlik etmek\n- İhtiyaç duyduğu hizmetlerden yararlanmasında yardımcı olmak\n- Kaldığı yerleri ve ilişki kurduğu kişileri ziyaret ederek yaşam şartlarını yerinde incelemek\n- Kararın uygulanmasını, sonuçlarını ve etkilerini izlemek; yükümlülüklerin yerine getirilmesini denetlemek\n- Çocuğun gelişimi hakkında **üçer aylık** sürelerle Cumhuriyet savcısı veya mahkemeye rapor vermek\n\n**İşbirliği:** Görevli, gerektiğinde ana ve baba, vasi, bakım ve gözetimden sorumlu kimse ve öğretmenlerle işbirliği yapar.\n\n**Bilgi verme zorunluluğu:** Ana ve baba, vasi, bakım ve gözetimden sorumlu kimse ile okul, işyeri ve ilgili kurum yetkilileri görevliye yardımcı olmak ve istediği bilgileri vermek **zorundadır**.\n\n**Müdahale yasağı:** Çocuğun yakınları görevlinin yetkilerine **müdahale edemez**.",
+      "articleRefs": [
+        "24",
+        "25"
+      ]
+    },
+    {
+      "type": "numbers",
+      "title": "Sayılar: sosyal inceleme ve denetimin başlangıcı",
+      "rows": [
+        {
+          "label": "Yönetmeliğe göre sosyal incelemenin zorunlu olduğu yaş (fiil sırasında)",
+          "value": "12 yaşını bitirmiş – 15 yaşını doldurmamış",
+          "refs": [
+            "20"
+          ]
+        },
+        {
+          "label": "Yönetmeliğe göre sağır ve dilsizlerde zorunlu sosyal inceleme (fiil sırasında)",
+          "value": "15 yaşını doldurmuş – 18 yaşını doldurmamış",
+          "refs": [
+            "20"
+          ]
+        },
+        {
+          "label": "Şube müdürlüğü veya büronun denetim görevlisi görevlendirdiği suça sürüklenen çocuk (suç tarihinde)",
+          "value": "12 yaşını bitirmiş",
+          "refs": [
+            "24"
+          ]
+        },
+        {
+          "label": "Kurumun gözetim esaslarına göre denetlediği suça sürüklenen çocuk (suç tarihinde)",
+          "value": "12 yaşını bitirmemiş",
+          "refs": [
+            "24"
+          ]
+        },
+        {
+          "label": "Aileye veya kanunî temsilciye bildirilen başvuru süresi (erteleme ve hükmün açıklanmasının geri bırakılması)",
+          "value": "10 gün",
+          "refs": [
+            "26",
+            "27"
+          ]
+        },
+        {
+          "label": "Denetim plânının hazırlanma süresi",
+          "value": "Görevlendirmeyi takip eden 10 gün",
+          "refs": [
+            "28"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "20",
+        "24",
+        "26",
+        "27",
+        "28"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Kamu davasının açılmasının ertelenmesi hâlinde",
+      "body": "**Denetim de kararlaştırıldıysa** karar şu sırayla ilerler:\n1. Mahkeme kararı Cumhuriyet başsavcılığına gönderilir.\n2. Başsavcılık kararı denetimli serbestlik genel defterine kaydeder ve şube müdürlüğü veya büroya iletir.\n3. Şube müdürlüğü veya büro kararı çocukların denetimine ilişkin deftere kaydeder.\n4. Çocuğun ailesine veya kanuni temsilcisine, **on gün içinde** çocukla birlikte başvurması için bildirim yapılır.\n5. Süresinde başvurulursa denetim görevlisi görevlendirilir.\n\n**Denetim kararlaştırılmadıysa:** İlâmlar Cumhuriyet başsavcılığınca takip edilir.\n\n**Kayıt:** Erteleme kararları, talî karar fişi düzenlenerek Adlî Sicil ve İstatistik Genel Müdürlüğüne gönderilir. Bu kayıtlar ancak bir soruşturma veya kovuşturmayla bağlantılı olarak kullanılabilir. Bunun için kaydı Cumhuriyet savcısı, hâkim veya mahkemenin istemesi gerekir. Kullanım, kanunun ilgili maddelerinde belirtilen amaçlarla sınırlıdır.",
+      "articleRefs": [
+        "26"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Hükmün açıklanmasının geri bırakılması hâlinde",
+      "body": "**Yükümlülük yok, denetim yok:** Karar yalnızca talî karar fişiyle Adlî Sicil ve İstatistik Genel Müdürlüğüne gönderilir.\n\n**Yükümlülük ve/veya denetim varsa:**\n- Karar Cumhuriyet başsavcılığına gönderilir ve denetimli serbestlik genel defterine kaydedilir.\n- Ardından şube müdürlüğü veya büroya iletilir ve çocukların denetimine ilişkin deftere kaydedilir.\n- Aileye veya kanunî temsilciye **on gün içinde** başvuru bildirimi yapılır.\n\n**Süresinde başvurulmazsa:** Defterdeki kayıt kapatılır. Durum Cumhuriyet başsavcılığı aracılığıyla mahkemeye bildirilir.\n\n**Süresinde başvurulursa:**\n- Sadece yükümlülük varsa: denetimli serbestliğe ilişkin yönetmelikteki usûl ve esaslar uygulanır.\n- Sadece denetim varsa: bu Yönetmeliğin md 24 ve md 25 hükümleri uygulanır.\n- Yükümlülük ile birlikte denetim varsa: yukarıdaki usûllerin her biri uygulanır.\n\n**Kayıt:** Bu kararlar da talî karar fişiyle gönderilir. Kullanım sınırı ertelemedeki gibidir.\n\n**Not:** Yükümlülüklerin yerine getirilmesine ilişkin yönetmelik atfı Yönetmelik metnindeki hâliyle verilmiştir.",
+      "articleRefs": [
+        "27"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Başvurulmazsa ne olur? Ertelemeyi geri bırakmayla karıştırma",
+      "body": "Başvuru için verilen süre ertelemede de, hükmün açıklanmasının geri bırakılmasında da on gün. Fark, başvurulmazsa ne olacağında.\n\n**Geri bırakmada:** Metin açık. Defterdeki kayıt kapatılır ve durum Cumhuriyet başsavcılığı aracılığıyla mahkemeye bildirilir.\n\n**Ertelemede:** Metin yalnızca \"süresinde başvurulursa denetim görevlisi görevlendirilir\" der.\n\nŞunu da ayırt et:\n- Erteleme kararı verilip denetim altına alınmayan çocuğun ilâmlarını **Cumhuriyet başsavcılığı** takip eder.\n- Geri bırakmada yükümlülük de denetim de yoksa karar doğrudan talî karar fişiyle **Adlî Sicil ve İstatistik Genel Müdürlüğüne** gider.",
+      "articleRefs": [
+        "26",
+        "27"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Denetim plânı",
+      "body": "- **Kim hazırlar:** Denetim görevlisi. Bunu sosyal incelemeyi yapan uzman veya mahkeme nezdindeki sosyal çalışma görevlisi ile birlikte yapar.\n- **Ne zaman:** Görevlendirmeyi takip eden **on gün** içinde.\n- **Görüş:** Koruyucu ve destekleyici tedbiri uygulayacak yerin görüşü alınır. Plân işbirliği içinde hazırlanır.\n- **Dikkate alınanlar:**\n  - tedbirin amacı, niteliği ve süresi,\n  - çocuğun ihtiyaçları,\n  - çocuğun içinde bulunduğu tehlike hâlinin ciddiyeti,\n  - ana ve baba, vasi, bakım ve gözetimden sorumlu kimsenin çocuğa verdiği desteğin derecesi,\n  - suça sürüklenme sebebiyle tedbir alınmışsa suç teşkil eden fiilin mahiyeti,\n  - **çocuğun görüşü**.\n- **Onay:** Plân, mahkeme veya çocuk hâkimince onaylandıktan sonra derhal uygulanır.",
+      "articleRefs": [
+        "28"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "İnfaz hangi tarihte başlar?",
+      "body": "Çocuklar hakkında verilen denetimli serbestlik kararlarında infaza başlama tarihi şunlar değildir:\n- mahkeme kararının tarihi,\n- görevlendirme tarihi,\n- plânın hazırlandığı gün.\n\nDoğru cevap: **denetim plânının hâkim tarafından onaylandığı tarih**. Şıklarda karar tarihi, kesinleşme tarihi ya da görevlendirme tarihini görürsen ele.",
+      "articleRefs": [
+        "28"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Denetime ara verme ve denetimin sona ermesi",
+      "body": "**Ara verme:** Denetim altına alınan kişi yerleşim yerinden geçici süreyle ayrılabilir; örneğin askere gitmek, sağlık ya da yurtdışı eğitimi için. Bunu haklı, geçerli ve gerektiğinde belgelendirilebilen bir mazerete dayandırabilirse denetime ara verilir.\n- Ara verme kararını **Cumhuriyet başsavcılığı** verir.\n- Karar md 33'e göre tebliğ edilir.\n\n**Sona erme:**\n- Kararda öngörülen sürenin dolmasıyla sona erer.\n- Tedbirden beklenen yarar elde edilirse süre dolmadan da kaldırılabilir.\n- Çocuğun başka bir suçtan tutuklanması veya cezasının yerine getirilmesine başlanmasıyla sona erer.",
+      "articleRefs": [
+        "31",
+        "32"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Bildirim, yetki alanı ve yerleşim yeri değişikliği",
+      "body": "- **Bildirim:** Şube müdürlüğü veya büronun suça sürüklenen çocuğun ailesine veya kanunî temsilcisine yapacağı bildirim, Tebligat Kanunu hükümlerine göre yapılır.\n- **Adres:** Bildirim hükümde gösterilen adrese yapılır. Hükümlü, adres değişikliğini mahkemeye veya Cumhuriyet başsavcılığına bildirmekle yükümlüdür. Bildirmezse hükümdeki adrese yapılan tebligat geçerlidir.\n- **Şube müdürlüğü veya büro olmayan yer:** O yerin Cumhuriyet başsavcılığı kararı genel deftere kaydeder ve şube müdürlüğünün bağlı olduğu Cumhuriyet başsavcılığına gönderir. O başsavcılık da kararı kaydedip şube müdürlüğüne gönderir.\n- **Yerleşim yeri değişikliği:** İnfaz sırasında yerleşim yeri değişirse dosya, yeni yerleşim yerindeki şube müdürlüğü veya büroya gönderilir.",
+      "articleRefs": [
+        "33",
+        "34"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Görevlilerin eğitimi",
+      "body": "- **Hâkim ve savcı adayları:** Meslek öncesi eğitimde eğitim alır.\n- **Hâkim ve savcılar:** Meslek içi eğitimde, mahkemelerin bağımsızlığı ve hâkimlik teminatı esaslarına uygun olarak eğitim alır. Bu eğitim uzmanlaşmalarına ve kendilerini geliştirmelerine yöneliktir.\n- **Sosyal çalışma görevlileri ve denetim görevlileri:** Adaylık dönemlerinde ve hizmet içi eğitimde eğitim alır. Hizmet içi eğitim de uzmanlaşma ve kendini geliştirmeye yöneliktir.\n\n**Eğitim konuları:** çocuk hukuku, sosyal hizmet, çocuk gelişimi ve psikolojisi gibi konular.",
+      "articleRefs": [
+        "36",
+        "37"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Kayıt, karton ve saklama",
+      "body": "- **Erteleme kartonu:** Cumhuriyet başsavcılıklarında, kamu davasının açılmasının ertelenmesi kararları özel bir kartonda saklanır. Karar nüshalarında Cumhuriyet savcısının imzası ve başsavcılık mührü zorunludur.\n- **Denetim kartonu:** Denetim altına alınan çocuklara ilişkin kararlar, tarih ve sıra numarasına göre özel kartonda saklanır.\n  - Nüshalarda hâkim veya mahkeme başkanı ile zabıt kâtibinin imzası ve mahkeme mührü zorunludur.\n  - Çocukların isimlerini ve karar numaralarını gösteren bir liste yapılır.\n  - Liste, **mükerrer karar verilmesini önlemek** için o yerdeki çocuk ve çocuk ağır ceza mahkemelerine bildirilir.\n- **Dava dosyası:** Şu evrak dava dosyasında ayrı bir bölümde, tarih sırasıyla muhafaza edilir:\n  - sosyal inceleme raporu,\n  - denetim plânı, denetim ve değerlendirme raporları,\n  - kişilik gelişimini, aile ve sosyal çevreyi gösteren evrak.\n- **Sosyal inceleme kartonu:** Raporun bir örneği, raporu hazırlatan mahkeme veya Cumhuriyet başsavcılığınca ayrı kartonda tutulur ve isme göre listelenir. Liste **her ay** güncellenir. Aynı yerdeki çocuk ve çocuk ağır ceza mahkemeleri ile Cumhuriyet başsavcılığına gönderilir.\n- **Elektronik ortam:** Elektronik kayda başlanırsa kayıtlar defterlerle birlikte ayrıca elektronik ortamda tutulur. Elektronik kayıtların ihtiyacı karşıladığı tespit edilirse yazılı tutma uygulamasından vazgeçilebilir.",
+      "articleRefs": [
+        "38",
+        "39",
+        "40"
+      ]
+    },
+    {
+      "type": "numbers",
+      "title": "Sayılar: raporlar ve takvim",
+      "rows": [
+        {
+          "label": "Denetim görevlisinin gelişim raporu (Cumhuriyet savcısı veya mahkemeye)",
+          "value": "Üçer aylık sürelerle",
+          "refs": [
+            "25"
+          ]
+        },
+        {
+          "label": "Denetim raporu (mahkeme veya çocuk hâkimine)",
+          "value": "Her ay, ayrıca talep hâlinde",
+          "refs": [
+            "29"
+          ]
+        },
+        {
+          "label": "Değerlendirme raporu (mahkeme veya çocuk hâkimine)",
+          "value": "Üç ayda bir",
+          "refs": [
+            "30"
+          ]
+        },
+        {
+          "label": "Denetim plânının hazırlanması",
+          "value": "Görevlendirmeyi takip eden 10 gün",
+          "refs": [
+            "28"
+          ]
+        },
+        {
+          "label": "Başvuru için bildirilen süre",
+          "value": "10 gün",
+          "refs": [
+            "26",
+            "27"
+          ]
+        },
+        {
+          "label": "Sosyal inceleme listelerinin güncellenmesi",
+          "value": "Her ay",
+          "refs": [
+            "39"
+          ]
+        },
+        {
+          "label": "İnfaza başlama tarihi",
+          "value": "Denetim plânının hâkimce onaylandığı tarih",
+          "refs": [
+            "28"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "25",
+        "26",
+        "27",
+        "28",
+        "29",
+        "30",
+        "39"
+      ]
+    },
+    {
+      "type": "compare",
+      "title": "Denetim görevini kim yürütür?",
+      "rows": [
+        {
+          "aspect": "Kapsam",
+          "left": "Suç tarihinde 12 yaşını bitirmiş, koruyucu ve destekleyici tedbirle birlikte denetim altına alınan suça sürüklenen çocuk (Yönetmelik terimi; Kanunda adli süreçteki çocuk); kamu davasının açılmasının ertelenmesi veya hükmün açıklanmasının geri bırakılmasıyla denetim altına alınan çocuk",
+          "right": "Korunma ihtiyacı olan çocuk; suç tarihinde 12 yaşını bitirmemiş suça sürüklenen çocuk; çocuğun aileye teslimi kararı",
+          "refs": [
+            "24"
+          ]
+        },
+        {
+          "aspect": "Görevi yürüten",
+          "left": "Denetimli serbestlik ve yardım merkezî şube müdürlüğü veya bürosunca (Yönetmelik metnindeki adıyla) görevlendirilen denetim görevlisi",
+          "right": "Sosyal Hizmetler ve Çocuk Esirgeme Kurumu (Yönetmelik metnindeki adıyla)",
+          "refs": [
+            "24"
+          ]
+        },
+        {
+          "aspect": "Esas",
+          "left": "Denetim görevlisinin görevleri",
+          "right": "Gözetim esasları",
+          "refs": [
+            "24",
+            "25"
+          ]
+        },
+        {
+          "aspect": "Kararın yolu",
+          "left": "Mahkeme → Cumhuriyet başsavcılığı (denetimli serbestlik genel defteri) → şube müdürlüğü veya büro (çocukların denetimine ilişkin defter)",
+          "right": "Cumhuriyet başsavcılığı (denetimli serbestlik genel defteri) → doğrudan kuruma",
+          "refs": [
+            "24"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "24",
+        "25"
+      ]
+    },
+    {
+      "type": "compare",
+      "title": "Denetim raporu – değerlendirme raporu",
+      "rows": [
+        {
+          "aspect": "Sıklık",
+          "left": "Her ay, ayrıca talep hâlinde",
+          "right": "Üç ayda bir",
+          "refs": [
+            "29",
+            "30"
+          ]
+        },
+        {
+          "aspect": "Verildiği yer",
+          "left": "Mahkeme veya çocuk hâkimi",
+          "right": "Mahkeme veya çocuk hâkimi",
+          "refs": [
+            "29",
+            "30"
+          ]
+        },
+        {
+          "aspect": "İçerik",
+          "left": "Kararın uygulama biçimi ve çocuk üzerindeki etkileri; ana ve baba, vasi, bakım ve gözetimden sorumlu kimse veya kurumların sorumluluklarını yerine getirip getirmediği; kararın değiştirilmesini gerektiren durum olup olmadığı; istenen diğer hususlar",
+          "right": "Rehberlik ve iyileştirme çalışmaları sonucunda çocuğun gösterdiği gelişme; olumsuz davranışlarını değiştirmedeki istekliliği ve başarısı; yapılması faydalı görülen diğer çalışmalar",
+          "refs": [
+            "29",
+            "30"
+          ]
+        },
+        {
+          "aspect": "Birbiriyle ilişkisi",
+          "left": "Değerlendirme raporu hazırlanan hâllerde onun içinde değerlendirilir",
+          "right": "Hazırlandığında denetim raporu bunun içinde değerlendirilir",
+          "refs": [
+            "30"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "29",
+        "30"
+      ]
+    },
+    {
+      "type": "exam_stats",
+      "title": "Sınav der ki",
+      "rows": [
+        {
+          "label": "Bu ünitenin maddelerinden yayındaki soru",
+          "value": "0",
+          "refs": [
+            "20",
+            "21",
+            "22",
+            "23",
+            "24",
+            "25",
+            "26",
+            "27",
+            "28",
+            "29",
+            "30",
+            "31",
+            "32",
+            "33",
+            "34",
+            "35",
+            "36",
+            "37",
+            "38",
+            "39",
+            "40"
+          ]
+        },
+        {
+          "label": "Hiç soru çıkmamış",
+          "value": "md 20, md 21, md 22, md 23, md 24, md 25, md 26, md 27, md 28, md 29, md 30, md 31, md 32, md 33, md 34, md 35, md 36, md 37, md 38, md 39, md 40",
+          "refs": [
+            "20",
+            "21",
+            "22",
+            "23",
+            "24",
+            "25",
+            "26",
+            "27",
+            "28",
+            "29",
+            "30",
+            "31",
+            "32",
+            "33",
+            "34",
+            "35",
+            "36",
+            "37",
+            "38",
+            "39",
+            "40"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "20",
+        "21",
+        "22",
+        "23",
+        "24",
+        "25",
+        "26",
+        "27",
+        "28",
+        "29",
+        "30",
+        "31",
+        "32",
+        "33",
+        "34",
+        "35",
+        "36",
+        "37",
+        "38",
+        "39",
+        "40"
+      ],
+      "generated": true
+    },
+    {
+      "type": "bridge",
+      "title": "Bu üniteden soru çöz",
+      "articleRefs": [
+        "20",
+        "21",
+        "22",
+        "23",
+        "24",
+        "25",
+        "26",
+        "27",
+        "28",
+        "29",
+        "30",
+        "31",
+        "32",
+        "33",
+        "34",
+        "35",
+        "36",
+        "37",
+        "38",
+        "39",
+        "40"
+      ],
+      "generated": true,
+      "rows": [
+        {
+          "label": "Madde kapsamlı seans",
+          "value": "md 20–40, 0 soru",
+          "refs": [
+            "20",
+            "21",
+            "22",
+            "23",
+            "24",
+            "25",
+            "26",
+            "27",
+            "28",
+            "29",
+            "30",
+            "31",
+            "32",
+            "33",
+            "34",
+            "35",
+            "36",
+            "37",
+            "38",
+            "39",
+            "40"
+          ]
+        }
+      ]
+    }
+  ]
+}

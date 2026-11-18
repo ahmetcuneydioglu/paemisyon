@@ -1,0 +1,673 @@
+{
+  "unit": {
+    "slug": "stk-2-secim-oncesi-isleri",
+    "legislationSlug": "298-sayili-secimlerin-temel-hukumleri-kanunu",
+    "topicId": "fc5b7d84-ad74-446c-9ac6-3d4172a04ccf",
+    "title": "Seçmen kütüğü, askı listeleri ve propaganda",
+    "subtitle": "Seçmen kütüğü, askı ve sandık listeleri, propaganda, kapalı yer toplantısı ve seçim büroları",
+    "articleFrom": "28",
+    "articleTo": "51/A",
+    "readingMinutes": 17,
+    "sourceLabel": "AI özeti — 298 Sayılı Seçimlerin Temel Hükümleri Kanunu, md 28, 30, 32–47, 49–51, 51/A",
+    "articleNos": [
+      "28",
+      "30",
+      "32",
+      "33",
+      "34",
+      "35",
+      "36",
+      "37",
+      "38",
+      "39",
+      "40",
+      "41",
+      "42",
+      "43",
+      "44",
+      "45",
+      "46",
+      "47",
+      "49",
+      "50",
+      "51",
+      "51/A"
+    ],
+    "generatedBy": "claude-opus-5-5 (ozet-uret.ts)",
+    "sortOrder": 2
+  },
+  "blocks": [
+    {
+      "type": "concept",
+      "title": "Her şey seçmen kütüğüyle başlar",
+      "body": "Seçim öncesi işlerin merkezinde **seçmen kütüğü** var. Kütük, bu Kanuna göre seçmen olan vatandaşları tek olarak tanımlayan ve oturdukları yeri belirleyen bilgileri kapsayan bilgisayar ortamıdır. Seçmenlik sıfatının tayininde esas da odur. Sandık seçmen listeleri bu kütükten çıkarılır ve sandık seçmen listesinde yazılı olmayan seçmen oy veremez. Bu ünitede göreceğin yazım, askı ve liste işleri bu kütüğü kurmaya ve doğru tutmaya yöneliktir: Askı listesi, kütükteki yanlışların düzeltilmesi ve eksiklerin tamamlanması amacıyla hazırlanır (md 39). Kanun ayrıca seçmenin kütüğe bir kez yazılacağını ve birden fazla oy kullanamayacağını öngörür.",
+      "articleRefs": [
+        "28",
+        "34",
+        "39"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Kütükle ilgili tanımlar",
+      "body": "- **Seçmen Kütüğü:** Seçmen olan vatandaşları tek olarak tanımlayan ve oturdukları yeri belirleyen bilgileri kapsayan bilgisayar ortamı. Yüksek Seçim Kuruluna bağlı olarak kurulan **Seçmen Kütüğü Genel Müdürlüğü** tarafından yürütülen çalışmalarla elde edilir.\n- **Veri:** Seçmeni tanımlamak için kullanılan adı, soyadı, doğum yılı, doğum yeri gibi kayıtların her biri.\n- **Seçmene Ait Bilgi:** Bir seçmeni tek olarak tanımlayan verilerin bütünü.\n- **Seçmenin Adresi:** Devamlı oturduğu konutun bulunduğu ilçe, muhtarlık, sokak isimleri ile binanın kapı ve varsa daire numarası.\n- **Güncelleştirme:** Kütükteki bilgilerin Kanunda yazıldığı şekilde değiştirilmesi, düzeltilmesi ve tamamlanması.\n- **Yurt Dışı Seçmen Kütüğü:** Yurt dışında bulunan seçmen vatandaşların adres kayıt sistemindeki bilgilerine dayalı olarak oluşturulan bilgiler topluluğu.\n\nHer seçmen; **seçmen kütüğü sıra numarası, adı, soyadı, ana ve babasının adı, doğduğu ilçe ve doğum yılı** ile belirlenir ve tanımlanır.",
+      "articleRefs": [
+        "28"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Seçim müdürlüklerinin yeri ve YSK kararlarının gücü",
+      "body": "**Seçim müdürlükleri** için öncelikle **adliye ve hükümet konaklarında** yeterli nitelikte yer ayırmakla **Cumhuriyet Başsavcıları ile mülki amirler** görevlidir.\n\nSeçmen kütüğünün kurulması, güncelleştirilmesi ve kütükten elde edilen liste, çizelge ve malzemenin ulaştırılıp dağıtılması için **Yüksek Seçim Kurulunca alınan kararlar bütün kamu kuruluşlarını ve görevlilerini bağlar.**\n\nYazım ve denetlemede görevlendirileceklerin ödev ve yetkileri, formların şekli ve dolduruluşu, kullanılacak evrak ve evrakın teslimi ile yazımın denetlenmesine ilişkin ilke, yöntem ve kurallar Yüksek Seçim Kurulunca belirtilir.",
+      "articleRefs": [
+        "30",
+        "32"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Kütüğün düzenlenmesi ve güncelleştirilmesi",
+      "body": "**Seçmen kütüğü**, adres kayıt sistemindeki **yerleşim yeri adresi** bilgileri esas alınarak, Yüksek Seçim Kurulunca belirlenecek usul ve esaslara göre **her yıl yeniden düzenlenir**. Sürekli bilgi toplama ile **her seçim döneminde güncelleştirilir**. Düzenleme ve güncelleştirmenin ilke, kural ve yöntemleri Yüksek Seçim Kurulunca düzenlenecek **genelge** ile belirlenir.\n\nKütük şu bilgi ve belgelere dayanılarak kurulur ve güncelleştirilir:\n- yazım ve denetlemede toplanan bilgiler,\n- ad, soyad, yaş ve cinsiyet tashihleri,\n- seçme ehliyetini kaybetme veya yeniden kazanma gibi yargı kararları,\n- vatandaşlıktan ıskat ya da yeniden vatandaşlık kazanma bilgileri,\n- vefat bilgileri,\n- seçim bölgesi içinde ve dışındaki ikametgâh değişiklikleri,\n- Yüksek Seçim Kurulunun belirleyeceği kural ve yönteme uygun olarak toplanacak diğer belgeler.\n\n**Mahalli idareler genel seçiminde:** Güncelleme işlemleri, yerleşim yeri adresine göre oluşturulan, **seçimin başlangıç tarihinden üç ay önceki** seçmen kütüğü üzerinden yapılır.\n\n**Yurt dışı:** Yurt dışı seçmen kütüğü de adres kayıt sistemindeki yerleşim yeri adresi bilgileri esas alınarak oluşturulur. **Yurt dışı seçmen listeleri** bu kütük esas alınarak Yüksek Seçim Kurulunca oluşturulur ve **elektronik ortamda ilan edilir.**",
+      "articleRefs": [
+        "33",
+        "35"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Seçmenlik sıfatı ve yazımın temel kuralları",
+      "body": "- **Seçmenlik sıfatının tayininde esas, seçmen kütüğüdür.**\n- Kütükte seçmenin adı, soyadı, baba adı, ana adı, doğum yılı, doğduğu ilçe adı ve oturduğu yer adresi bulunması esastır.\n- Herkes nüfus kütüğünde yazılı **doğduğu ay ve güne** göre işleme tabi tutulur. O yıl seçim yapılacaksa, seçmen listeleri hazırlanırken **on sekiz yaşın** doldurulmasının hesabında **seçim günü (o gün dahil)** esas alınır.\n- Seçmene ait bilgi **eksikse**, bilgi tamamlanıncaya kadar seçmen **sandık seçmen listesine yazılmaz**. Tamamlama kurallarını Yüksek Seçim Kurulu belirler ve yayınlar.\n- Sandık seçmen listeleri seçmen kütüğünden çıkarılır; **sandık seçmen listesinde yazılı olmayan seçmen oy veremez.**\n- Seçmen kütüğe **bir kez** yazılır ve birden fazla oy kullanamaz.\n- **Yazım**, görevlilerin insan oturan yerleri birer birer gezip seçmenleri görmeleri suretiyle yapılır. Yazım memuru yazım yerinde bulunan seçmeni yazar, seçmenin bildirdiği adresi yazar ve **seri numaralı yazım formunu her seçmene imzalatır.**",
+      "articleRefs": [
+        "34"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "On sekiz yaş hangi güne göre?",
+      "body": "Dikkat et: On sekiz yaşın doldurulup doldurulmadığı, listenin hazırlandığı güne göre değil, **seçim gününe göre** hesaplanır ve **seçim günü de dahildir**. Hesap, nüfus kütüğündeki **doğduğu ay ve gün** üzerinden yapılır.\n\nİkinci tuzak: \"Seçmenlik sıfatının tayininde esas nedir?\" diye sorulursa cevap **seçmen kütüğüdür**. Ama oy verebilmek için **sandık seçmen listesinde yazılı olmak** gerekir. Kütükte kaydı olup bilgisi eksik olan seçmen, bilgi tamamlanıncaya kadar sandık seçmen listesine yazılmaz.",
+      "articleRefs": [
+        "34"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Yazım günü ve yazımdaki güvenceler",
+      "body": "- Seçmen kütüğü adres kayıt sistemindeki bilgiler esas alınarak **her yıl güncelleştirilerek** oluşturulur.\n- **Kütük düzenlemesi nedeniyle seçmen hiçbir şekilde oy kullanma hakkından yoksun bırakılamaz.**\n- Adresi kapanmış olduğu için adres kayıt sisteminde görünmeyenler, Nüfus ve Vatandaşlık İşleri Genel Müdürlüğünün adres kayıt sistemindeki **en son geçerli adres** kayıt bilgileriyle kütüğe kaydedilir.\n- Gerektiğinde, kütüğün **dört yılda bir yeniden düzenlenmesi** ve **iki yılda bir denetlenmesi** için bilgi toplamak amacıyla, bütün Türkiye'de aynı zamanda **Nisan ayının ikinci pazar günü** yazım yapılmasına **Yüksek Seçim Kurulu** karar verir.\n- Yazım günü **saat 05.00'ten** itibaren, yazımın bittiği alışılmış araçlarla ilan edilinceye kadar, görevlilerden başkalarının bulundukları yerden ayrılmaları **yasaktır**.\n- Yazım ve denetim her hâlde **aynı gün saat 19.00'a kadar** bitirilmiş olmalıdır.\n- 14. maddenin dördüncü fıkrasına göre ilan edilen siyasi partilerin **ilçe başkanları**, yazım memurunun yanına **bir temsilci** verebilir. İsimler ilçe seçim kurulunun isteği üzerine bildirilen sürede liste hâlinde teslim edilir; temsilciler ilçe seçim kurulu başkanlığından aldıkları belgeyle görev yapar. Listedeki isimler ve görev yerleri **sonradan değiştirilmez.**\n- Yazım sırasında seçmenin oyunu kullanmasını engelleyecek bir **engelliliği** varsa, bu durum forma kaydedilir.",
+      "articleRefs": [
+        "36"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "\"Her yıl\" mı, \"dört yılda bir\" mi?",
+      "body": "Bu iki ifadeyi birbirine karıştırma. Seçmen kütüğü, adres kayıt sistemi esas alınarak **her yıl** yeniden düzenlenir ve güncelleştirilir. **Dört yılda bir yeniden düzenleme** ve **iki yılda bir denetleme** ise, gerektiğinde Nisan ayının ikinci pazar günü yapılacak yazımla bilgi toplamanın amacıdır ve bu yazıma Yüksek Seçim Kurulu karar verir.\n\nSaatlere de dikkat: Ayrılma yasağı **05.00'te başlar** ama sabit bir saatte bitmez; **yazımın bittiği ilan edilinceye kadar** sürer. **19.00** ise yazım ve denetimin en geç bitirilmesi gereken saattir.",
+      "articleRefs": [
+        "33",
+        "36"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Kroki ve binalar cetveli",
+      "body": "**Yazımda dayanılanlar:** Formlara yazılacak bilginin tespitinde **resmî belgeler** esas tutulur. Yazımda 38. maddeye göre düzenlenmiş kroki ve cetvelden yararlanılır. Devamlı oturulan adresin tespitinde **muhtarlıkların** ve varsa **apartman yöneticilerinin** kayıtlarından faydalanılır.\n\n**Muhtarlık Krokisi:** Şehir ve kasabalarda, **ilçe seçim kurulu başkanının denetimi altında belediyeler**, her muhtarlık için **iki yılda bir** düzenlemek zorundadır. Krokide muhtarlık sınırları, sokak adları ve her sokağın baş ve sonundaki bina numaraları; sokaklara ayrılmamış yerlerde dağınık yapılar numaralarıyla gösterilir.\n\n**Binalar Cetveli:** Köylerde ve kroki yapılmasına teknik imkân bulunmayan şehir ve kasabalarda kroki yerine düzenlenir. İlçe seçim kurulu başkanının denetimi altında **şehir ve kasabalarda belediyelerce, köylerde muhtarlıklarca** yapılır.\n\n- Muhtarlıkta numarası olmayan ve içinde insan oturan yerler **numaralanır**. Binalar cetveli ve numaralama, İstatistik Genel Müdürlüğünün Numaralama Yönetmeliği esaslarına göre yapılır.\n- Kroki ve binalar cetveli **yıl sonu durumunu** gösterecek şekilde düzenlenir.\n- Onaylı birer örneği, ilçe seçim kurulu başkanı tarafından 14. maddenin dördüncü fıkrasına göre ilan edilen siyasi partilerin ilçe başkanlıklarına **her iki yılda bir**, Yüksek Seçim Kurulunun belirleyeceği ayda **alındı belgesi** karşılığı verilir.\n\n**Not:** \"İstatistik Genel Müdürlüğü\" metnindeki hâliyle verilmiştir.",
+      "articleRefs": [
+        "37",
+        "38"
+      ]
+    },
+    {
+      "type": "numbers",
+      "title": "Kütük ve yazımda sayılar",
+      "rows": [
+        {
+          "label": "Kütüğün yeniden düzenlenmesi",
+          "value": "Her yıl",
+          "refs": [
+            "33"
+          ]
+        },
+        {
+          "label": "Mahalli idareler genel seçiminde güncellemeye esas kütük",
+          "value": "Seçimin başlangıç tarihinden üç ay önceki kütük",
+          "refs": [
+            "33"
+          ]
+        },
+        {
+          "label": "Seçmen listesine yazılma yaşı",
+          "value": "On sekiz yaş; seçim günü (o gün dahil) esas",
+          "refs": [
+            "34"
+          ]
+        },
+        {
+          "label": "Yazımla yeniden düzenleme",
+          "value": "Dört yılda bir",
+          "refs": [
+            "36"
+          ]
+        },
+        {
+          "label": "Yazımla denetleme",
+          "value": "İki yılda bir",
+          "refs": [
+            "36"
+          ]
+        },
+        {
+          "label": "Yazım günü",
+          "value": "Nisan ayının ikinci pazar günü",
+          "refs": [
+            "36"
+          ]
+        },
+        {
+          "label": "Ayrılma yasağının başlangıcı",
+          "value": "Saat 05.00",
+          "refs": [
+            "36"
+          ]
+        },
+        {
+          "label": "Yazım ve denetimin en geç bitişi",
+          "value": "Aynı gün saat 19.00",
+          "refs": [
+            "36"
+          ]
+        },
+        {
+          "label": "Parti ilçe başkanının yazım memuru yanına verebileceği temsilci",
+          "value": "Bir",
+          "refs": [
+            "36"
+          ]
+        },
+        {
+          "label": "Muhtarlık krokisinin düzenlenmesi",
+          "value": "İki yılda bir",
+          "refs": [
+            "38"
+          ]
+        },
+        {
+          "label": "Kroki/binalar cetveli örneğinin partilere verilmesi",
+          "value": "Her iki yılda bir",
+          "refs": [
+            "38"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "33",
+        "34",
+        "36",
+        "38"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Muhtarlık bölgesi askı listesi",
+      "body": "**Tanım:** Kütükte yazılı adreslere göre aynı muhtarlıkta oturan seçmenlerin kütük numarası, adı ve soyadı, ana ve baba adı, doğum yılı, doğum yeri ve adresinin yazılı olduğu, **soyadı alfabe sırasına** göre sıralanmış liste. Amacı kütükteki yanlışları düzeltmek ve eksikleri tamamlamaktır.\n\n- **Her yıl sonundaki** kesinleşmiş bilgilere dayanılarak kütükten elde edilir.\n- **Her yıl mart ayında** gönderilir: ait olduğu **muhtarlığa iki nüsha**; ilan edilen siyasi partilerin o ilçedeki **ilçe başkanlarına bir nüsha**; **ilçe seçim kurulu başkanlığına iki nüsha**; **il seçim kurulu başkanlığına bir nüsha**.\n- **Seçim dönemlerinde** muhtarlıklarda askıya çıkarılır ve **iki hafta** askıda kalır; halkın kolayca görüp okuyabileceği yerlere asılır.\n- Asıldığı tarih ve yerler, sandık bölgelerini gösteren cetvelle birlikte **mahallî gazetelerle** ve alışılmış araçlarla ilan edilir.\n- Asılma ve ilan, ilçe seçim kurulu başkanının görevlendirdiği kimselerce **tutanakla**; askıdan indirildiği tarih **ayrı bir tutanakla** tespit edilir. Tutanakları ilçe seçim kurulu başkanı ayrı bir dosyada saklar.\n- İlçe seçim kurulu başkanı asılma tarih ve yerlerini mahallin **mülki amirine derhal** yazıyla bildirir.\n- Askıdayken listelerin korunmasından **idare amirleriyle zabıta amir ve memurları** sorumludur.\n- İlçe seçim kurulu başkanı aramayı kolaylaştıracak tedbirleri alır; muhtar, ihtiyar heyeti üyeleri veya görevlendirilenlerden birinin belli saatlerde askı yerinde hazır bulunmasını sağlar ve durumu askı yerinde ilan eder.",
+      "articleRefs": [
+        "39",
+        "40"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Askı listesinde kim, ne zaman?",
+      "body": "Gönderme ile askıya çıkarmayı ayır: Askı listesi **her yıl mart ayında gönderilir**, ama muhtarlıkta **seçim dönemlerinde** askıya çıkarılır ve **iki hafta** asılı kalır.\n\nKoruma sorusu gelirse ilçe seçim kurulu başkanını seçme: Askıdaki listeleri korumaktan **idare amirleriyle zabıta amir ve memurları** sorumludur. İlçe seçim kurulu başkanı ise tutanakları saklar ve mülki amire bildirim yapar.\n\nNakil istemine dikkat: Askı süresi içinde bir seçim çevresinden diğerine yapılan nakil istemi, **itiraz üzerine** ya da şüpheli bir girişim kanaatiyle **resen** incelenir. İstem kabul edilmezse seçmen kaydı **dondurulmaz**; seçmenin kaydı bir önce kayıtlı olduğu adreste devam eder.",
+      "articleRefs": [
+        "39",
+        "40"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Mükerrer kayıt",
+      "body": "**Adı ve soyadı, ana ve baba adı, doğum yeri ve doğum yılı** aynı olan iki bilgi **tek bir seçmeni** tanımlar.\n\n- Bu durumda Seçmen Kütüğü Genel Müdürlüğü, **seçmen sıra numarası büyük olan** bilgiyi kütükte bırakır, diğerini **mükerrer listesine** alır.\n- Mükerrer listesinde bilgi **iki yıl** saklanır.\n\nAskı listesinde benzer ama tam aynı olmayan bilgiler varsa (adı ve soyadı aynı olup baba adı, ana adı, doğum yılı, doğduğu ilçe verilerinden biri veya ikisi farklıysa; adı ve soyadında bir veya iki harf ile bu verilerden biri farklıysa; adı ve soyadı aynı olup birinde bir isim fazlaysa ve bu veriler aynı ya da biri farklıysa; adresi ile bu verilerden biri veya ikisi farklıysa ya da Yüksek Seçim Kurulunun belirleyeceği durumlarda):\n- **İtiraz üzerine veya resen**, bilginin tek mi yoksa birden fazla seçmeni mi tanımladığına **ilçe seçim kurulu başkanı** karar verir.\n- Karar, işlenmek üzere Seçmen Kütüğü Genel Müdürlüğüne gönderilir.",
+      "articleRefs": [
+        "41"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Sandık bölgesi askı listesi ve sandık seçmen listesi",
+      "body": "**Sandık bölgesi askı listesi:** 122. maddeye göre kütüğe işlenmesi gereken kararlar işlendikten sonra elde edilen kütükten çıkarılır. Sandık seçmen listesindeki bilgileri aynı sırayla içerir. Liste il ve ilçe seçim kurulu başkanlıklarına gönderilir; ilçe seçim kurulu başkanı, ilan edilen siyasi partilerin o ilçedeki başkanlarına birer suret teslim eder.\n\n**Sandık seçmen listesi:** Aynı sandık bölgesinde oturan seçmenlerin kütük numarası, adı, soyadı, ana ve baba adı, doğum yılı, doğum yeri ve adresinin yazılı olduğu, **soyadı alfabe sırasına** göre sıralanmış liste. Her sayfasında il, ilçe, muhtarlık isimleri, sandık numarası ve **geçerlik süresi** yer alır; sandık kuruluna verilecek nüshalarda sandık başı işlemleri için sütunlar bulunur.\n\n- Oy verme gününden **120 gün önce** kütükte kesinleşmiş bilgilere dayanılarak çıkarılır.\n- Oy verme gününden **30 gün önce** gönderilir:\n  1. Teslim edilmek üzere ilgili seçim kurulu başkanlıklarına: her sandık için **iki nüsha sandık kurulu başkanına**; **birer nüsha** seçime katılan siyasi partilerin ilçe başkanlıklarına ve **bir nüsha** ilgili muhtarlığa, bu ikisi oy verme gününden **20 gün önce**,\n  2. **İki nüsha** ilçe seçim kurulu başkanlıklarına,\n  3. **Bir nüsha** il seçim kurulu başkanlıklarına.\n- Muhtarlıklardaki listeleri vatandaşlar **her zaman** inceleyebilir.\n- **Muhtarlar**, oy verme gününden **10 gün önceden** oy verme günü **saat 17.00'ye kadar**, çalışma saatleri içinde seçmenlerin sandık numarası, sandık yeri ve oy verme hakkındaki sorularını cevaplandırmak, seçim kurullarının yayınlarını dağıtmak, afiş, işaret ve levhaları asıp dağıtmak ve seçim kurulunun görevlendirdiği personele yardımcı olmak zorundadır.",
+      "articleRefs": [
+        "42",
+        "43"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "120 – 30 – 20 – 10: Hangisi ne?",
+      "body": "Sandık seçmen listesindeki dört süre en kolay karıştırılan sayılar:\n- **120 gün:** Listenin dayandığı bilgilerin kütükte kesinleştiği an. Liste bu bilgilere göre çıkarılır.\n- **30 gün:** Listenin seçim kurulu başkanlıklarına **gönderildiği** an.\n- **20 gün:** Siyasi parti ilçe başkanlıklarına ve muhtarlığa **teslim** anı.\n- **10 gün:** Muhtarların seçmenlere bilgi verme görevinin **başladığı** an; görev oy verme günü saat 17.00'ye kadar sürer.\n\nNüsha sayısında da dikkatli ol: Sandık kurulu başkanına **her sandık için iki nüsha**, muhtarlığa **bir nüsha** verilir.",
+      "articleRefs": [
+        "43"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Seçmen bilgi kâğıdı ve yıllık listeler",
+      "body": "**Seçmen bilgi kâğıdı:** Kütükte kayıtlı her seçmen için hazırlanır. Seçmene **hangi seçim bölgesinde, kaç numaralı sandıkta** oy vereceğini, **seçmen sıra numarasını** ve diğer bilgileri bildirir. Seçim çevrelerinin özelliklerine göre Yüksek Seçim Kurulunca tespit edilen esaslar dairesinde gönderilir veya dağıtılır.\n- Seçmen bilgi kâğıdı **hiçbir surette kimlik belirlemesinde belge olarak kullanılmaz**; bu husus kâğıdın üzerine yazılır.\n\n**Yıllık listeler:** Kütükteki seçmen bilgileri **her yıl**, seçmenlerin oturdukları il ve ilçeye göre ayrılmış listeler hâlinde **il ve ilçe seçim kurulu başkanlıklarına birer nüsha** gönderilir.\n- Bu listelerin **son iki yıllık** olanı kurul üyelerinin incelemesine açık tutulur.\n- Listelerin çıkarılma, gönderilme ve saklanma kurallarını Yüksek Seçim Kurulu belirler.\n- Seçmen Kütüğü Genel Müdürlüğü; ülke, il ve ilçe düzeyinde soyadı alfabe ve kütük sıra numarasına göre düzenlenmiş listelerin düzenlenmesini ve siyasi partilerin inceleme kural ve sürelerini belirler.",
+      "articleRefs": [
+        "44",
+        "45"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Genel Müdürlüğün raporu ve kütük suretleri",
+      "body": "**Rapor toplantısı:** Seçmen Kütüğü Genel Müdürlüğünün program, tasarım, sonuç, genelge ve uygulamalarını tanıtan raporu, **Yüksek Seçim Kurulu Başkanı başkanlığında** görüşülür.\n- Katılanlar: 14. maddenin dördüncü fıkrasına göre ilan edilen siyasi partilerin **birer temsilcisi**, Yüksek Seçim Kurulu üyeleri, **Seçmen Kütüğü Genel Müdürü ve gerekli gördüğü üç personeli**.\n- Toplantı **üç ayda bir** yapılır; günü Yüksek Seçim Kurulu Başkanınca saptanır.\n- Belirlenen gün ve saatte **gelenlerle yetinilerek** açılır.\n- Amaç bilgi almaktır; **karar alınmaz**.\n- Toplantı maddede sayılanlar dışındakilere **kapalıdır**.\n- **Görüşme özeti**, Yüksek Seçim Kurulunca katılanlara toplantıdan sonraki **bir ay içinde** gönderilir.\n\n**Kütük suretleri:**\n- Genel Müdürlük **her yıl sonuna göre** kütüğü ve kütükten elde edilen listenin bir suretini **Yüksek Seçim Kurulu Başkanına** teslim eder. Kütüğün suretleri Genel Müdürlükte kalır.\n- Seçimlere katılma yeterliliğini taşıyan **siyasi parti merkezleri** ya da yetkilendirilmiş **il veya ilçe başkanları** talep ederse, Yüksek Seçim Kurulunun belirlediği gider **Maliye veznesine** yatırılıp makbuz ibraz edilmek kaydıyla kütükler verilir. Kütükleri **ilçe seçim kurulu başkanı**, **bir seçim döneminde iki defadan fazla olmamak üzere**, bilgisayar ortamında veya liste düzeyinde **imza karşılığı** verir.\n- Diğer devlet kuruluşlarının Genel Müdürlükteki bilgilerden yararlanma yöntem ve kuralları **yasa ile** düzenlenir.",
+      "articleRefs": [
+        "46",
+        "47"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Propaganda süresi ve açık yerde toplu sözlü propaganda",
+      "body": "**Seçimlerde propaganda, bu Kanun hükümleri dairesinde serbesttir.**\n- **Başlangıç:** Oy verme gününden önceki **onuncu günün sabahı**.\n- **Bitiş:** Oy verme gününden önceki günün **saat 18.00'i**.\n\n**Dikkat:** Bu genel kuraldır. Seçim büroları ise **seçimin başlangıç tarihinden itibaren** açılabilir ve bürolarda görüntülü ve sesli propaganda yapılabilir (md 51/A).\n\n**Yasak yerler:** Seçim zamanında **genel yollar** üzerinde, **mabetlerde**, **kamu hizmeti görülen bina ve tesislerde** ve ilçe seçim kurullarınca gösterilenler dışındaki **meydanlarda** toplu olarak sözlü propaganda yapılamaz.\n\n**Meydanların tespiti:** İlçe seçim kurulları, gidiş-gelişi bozmayacak ve pazarların kurulmasına engel olmayacak biçimde, toplantıların genel olarak yapıldığı ve varsa elektrik tesisatı olan yerleri seçer.\n\n**Sıra:** Siyasi partilerin başvurusu üzerine toplantı, meydan, gün, sıra ve saatleri ilçe seçim kurulu **ad çekme** ile belirler ve ilgililere tebliğ eder. **Bağımsız adaylar** için de aynı şekilde **haftada bir gün** ayrılır.\n\n**Saat yasağı:** Açık yerlerde, **güneşin batmasını müteakip ikinci saatin sonundan güneşin doğmasına kadar** toplu olarak sözlü propaganda yapılamaz.",
+      "articleRefs": [
+        "49",
+        "50",
+        "51/A"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Kapalı yer toplantısı",
+      "body": "Seçimlere katılan **siyasi partiler veya bağımsız adaylar** adına kapalı yer toplantısı yapılabilir.\n\n- Toplantı yapmak isteyenler **üç kişilik bir heyet** kurar ve **en yakın zabıta amir veya memuruna haber verir**. Köylerde **muhtara veya vekiline** haber vermek yeterlidir.\n- **Heyetin görevi:** Toplantının düzenini sağlamak; kanunlara karşı hareketleri, edep törelerine aykırı veya suç işlemeye kışkırtıcı söz ve fiilleri önlemek. Böyle bir durumda önlemeye çalışır, **gerekirse zabıtayı çağırır**.\n- Heyet, söz alacakları **tayin ve tahdit** edebilir.\n- Konuşmalar, 56. madde hükmü saklı kalmak üzere **hoparlörle** yayınlanabilir.\n- **Müdahale yasağı:** Heyetin isteği veya yetkili seçim kurullarının kararı dışında **zabıta amir ve memurları, muhtar veya ihtiyar meclisleri** hiçbir suretle müdahale edemez.\n- **Yasak yerler:** **Mabetler, okullar**, kışla, karargâh, ordugâh gibi **askerî bina ve tesisler**, **askerî mahfiller** ve **kamu hizmeti görülen diğer yerler**.",
+      "articleRefs": [
+        "51"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Seçim büroları",
+      "body": "**Seçimin başlangıç tarihinden itibaren**, seçime katılan siyasi partiler ve bağımsız adaylar, katıldıkları seçim çevrelerinde seçim büroları açabilir.\n\n**Kullanılamayacak bina ve tesisler:** Devlet ve diğer kamu tüzel kişileri ile bunlara bağlı kuruluşlar; Devletin veya kamu tüzel kişilerinin doğrudan ya da dolaylı katıldığı teşebbüs ve ortaklıklar; özel gelir kaynakları ve imkânları kanunla sağlanmış kamu yararına çalışan dernekler; Devletten yardım alan ve vergi muafiyeti olan vakıflar; kamu kurumu niteliğindeki meslek kuruluşları, üretici birlikleri, kooperatif birlikleri, **bankalar ve sendikalar**.\n\n**Açılış bildirimle olur:** Siyasi partilerin il veya ilçe başkanlıkları ile bağımsız adaylar, büronun adresini ve **en az bir sorumlusunun** kimlik ve iletişim bilgilerini içeren bildirimi;\n- seçimin başlangıcından yazılı propagandanın başlangıç tarihine kadar **mahallin en büyük mülki amirine**,\n- propaganda süresi başladıktan sonra **ilçe seçim kuruluna**\nverdiklerinde büro **açılmış sayılır**. Bildirimle açılan büroların listesini mahallin en büyük mülki amiri ilçe seçim kurullarına gönderir.\n\n**Eksiklik:** Açılma şartlarını taşımayan büroya eksikleri tamamlaması için **üç gün** süre verilir; uyulmazsa büro, şartlar tamamlanıncaya kadar **mülki amirlerce kapatılır**.\n\n**Faaliyet:** Diğer seçim faaliyetleri saklı kalmak üzere **görüntülü ve sesli propaganda** yapılabilir; sesli yayınlar **çevresel gürültü** mevzuatına uygun olmalıdır. Bürolar **saat 09.00'dan 23.00'e kadar** halka açık faaliyette bulunabilir.",
+      "articleRefs": [
+        "51/A"
+      ]
+    },
+    {
+      "type": "numbers",
+      "title": "Listeler, propaganda ve bürolarda sayılar",
+      "rows": [
+        {
+          "label": "Muhtarlık bölgesi askı listesinin gönderilmesi",
+          "value": "Her yıl mart ayı",
+          "refs": [
+            "39"
+          ]
+        },
+        {
+          "label": "Askı listesinin muhtarlığa gönderilen nüshası",
+          "value": "İki",
+          "refs": [
+            "39"
+          ]
+        },
+        {
+          "label": "Askı süresi",
+          "value": "İki hafta",
+          "refs": [
+            "40"
+          ]
+        },
+        {
+          "label": "Mükerrer listesinde saklama",
+          "value": "İki yıl",
+          "refs": [
+            "41"
+          ]
+        },
+        {
+          "label": "Sandık seçmen listesine esas bilgilerin kesinleşmesi",
+          "value": "Oy verme gününden 120 gün önce",
+          "refs": [
+            "43"
+          ]
+        },
+        {
+          "label": "Sandık seçmen listesinin gönderilmesi",
+          "value": "Oy verme gününden 30 gün önce",
+          "refs": [
+            "43"
+          ]
+        },
+        {
+          "label": "Sandık kurulu başkanına verilen nüsha",
+          "value": "Her sandık için iki",
+          "refs": [
+            "43"
+          ]
+        },
+        {
+          "label": "Partilere ve muhtarlığa teslim",
+          "value": "Oy verme gününden 20 gün önce",
+          "refs": [
+            "43"
+          ]
+        },
+        {
+          "label": "Muhtarların bilgi verme görevi",
+          "value": "Oy verme gününden 10 gün önceden oy verme günü saat 17.00'ye kadar",
+          "refs": [
+            "43"
+          ]
+        },
+        {
+          "label": "Yıllık listelerden incelemeye açık olan",
+          "value": "Son iki yıllık",
+          "refs": [
+            "45"
+          ]
+        },
+        {
+          "label": "Rapor toplantısı",
+          "value": "Üç ayda bir",
+          "refs": [
+            "46"
+          ]
+        },
+        {
+          "label": "Genel Müdürün toplantıya getirebileceği personel",
+          "value": "Üç",
+          "refs": [
+            "46"
+          ]
+        },
+        {
+          "label": "Görüşme özetinin gönderilmesi",
+          "value": "Toplantıdan sonraki bir ay içinde",
+          "refs": [
+            "46"
+          ]
+        },
+        {
+          "label": "Kütüğün partilere verilmesi",
+          "value": "Bir seçim döneminde en çok iki defa",
+          "refs": [
+            "47"
+          ]
+        },
+        {
+          "label": "Propagandanın başlangıcı",
+          "value": "Oy verme gününden önceki onuncu günün sabahı",
+          "refs": [
+            "49"
+          ]
+        },
+        {
+          "label": "Propagandanın bitişi",
+          "value": "Oy verme gününden önceki günün saat 18.00'i",
+          "refs": [
+            "49"
+          ]
+        },
+        {
+          "label": "Bağımsız adaylara toplu sözlü propaganda",
+          "value": "Haftada bir gün",
+          "refs": [
+            "50"
+          ]
+        },
+        {
+          "label": "Açık yerde toplu sözlü propaganda yasağı",
+          "value": "Güneşin batmasını müteakip ikinci saatin sonundan güneşin doğmasına kadar",
+          "refs": [
+            "50"
+          ]
+        },
+        {
+          "label": "Kapalı yer toplantısı heyeti",
+          "value": "Üç kişi",
+          "refs": [
+            "51"
+          ]
+        },
+        {
+          "label": "Seçim bürosunda eksiklik tamamlama süresi",
+          "value": "Üç gün",
+          "refs": [
+            "51/A"
+          ]
+        },
+        {
+          "label": "Seçim bürosunun halka açık faaliyet saatleri",
+          "value": "09.00–23.00",
+          "refs": [
+            "51/A"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "39",
+        "40",
+        "41",
+        "43",
+        "45",
+        "46",
+        "47",
+        "49",
+        "50",
+        "51",
+        "51/A"
+      ]
+    },
+    {
+      "type": "compare",
+      "title": "Açık yerde toplu sözlü propaganda ↔ Kapalı yer toplantısı",
+      "rows": [
+        {
+          "aspect": "Kimler adına",
+          "left": "Siyasi partilerin başvurusu üzerine; bağımsız adaylara haftada bir gün ayrılır",
+          "right": "Seçimlere katılan siyasi partiler veya bağımsız adaylar",
+          "refs": [
+            "50",
+            "51"
+          ]
+        },
+        {
+          "aspect": "Usul",
+          "left": "İlçe seçim kurulu toplantı, meydan, gün, sıra ve saati ad çekme ile belirler ve tebliğ eder",
+          "right": "Üç kişilik heyet kurulur, en yakın zabıta amir veya memuruna haber verilir; köylerde muhtara veya vekiline",
+          "refs": [
+            "50",
+            "51"
+          ]
+        },
+        {
+          "aspect": "Yapılabileceği yer",
+          "left": "İlçe seçim kurullarınca gösterilen meydanlar",
+          "right": "Yasak yerler dışındaki kapalı yerler",
+          "refs": [
+            "50",
+            "51"
+          ]
+        },
+        {
+          "aspect": "Yasak yerler",
+          "left": "Genel yollar, mabetler, kamu hizmeti görülen bina ve tesisler, gösterilenler dışındaki meydanlar",
+          "right": "Mabetler, okullar, askerî bina ve tesisler, askerî mahfiller, kamu hizmeti görülen diğer yerler",
+          "refs": [
+            "50",
+            "51"
+          ]
+        },
+        {
+          "aspect": "Zaman sınırı",
+          "left": "Güneşin batmasını müteakip ikinci saatin sonundan güneşin doğmasına kadar yapılamaz",
+          "right": "Propaganda süresi içinde",
+          "refs": [
+            "49",
+            "50",
+            "51"
+          ]
+        },
+        {
+          "aspect": "Düzen ve müdahale",
+          "left": "İlçe seçim kurulu gidiş-gelişi bozmayacak, pazarlara engel olmayacak yerleri seçer",
+          "right": "Heyet düzeni sağlar, gerekirse zabıtayı çağırır; heyetin isteği veya seçim kurulu kararı dışında müdahale edilemez",
+          "refs": [
+            "50",
+            "51"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "49",
+        "50",
+        "51"
+      ]
+    },
+    {
+      "type": "exam_stats",
+      "title": "Sınav der ki",
+      "rows": [
+        {
+          "label": "Bu ünitenin maddelerinden yayındaki soru",
+          "value": "0",
+          "refs": [
+            "28",
+            "30",
+            "32",
+            "33",
+            "34",
+            "35",
+            "36",
+            "37",
+            "38",
+            "39",
+            "40",
+            "41",
+            "42",
+            "43",
+            "44",
+            "45",
+            "46",
+            "47",
+            "49",
+            "50",
+            "51",
+            "51/A"
+          ]
+        },
+        {
+          "label": "Hiç soru çıkmamış",
+          "value": "md 28, md 30, md 32, md 33, md 34, md 35, md 36, md 37, md 38, md 39, md 40, md 41, md 42, md 43, md 44, md 45, md 46, md 47, md 49, md 50, md 51, md 51/A",
+          "refs": [
+            "28",
+            "30",
+            "32",
+            "33",
+            "34",
+            "35",
+            "36",
+            "37",
+            "38",
+            "39",
+            "40",
+            "41",
+            "42",
+            "43",
+            "44",
+            "45",
+            "46",
+            "47",
+            "49",
+            "50",
+            "51",
+            "51/A"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "28",
+        "30",
+        "32",
+        "33",
+        "34",
+        "35",
+        "36",
+        "37",
+        "38",
+        "39",
+        "40",
+        "41",
+        "42",
+        "43",
+        "44",
+        "45",
+        "46",
+        "47",
+        "49",
+        "50",
+        "51",
+        "51/A"
+      ],
+      "generated": true
+    },
+    {
+      "type": "bridge",
+      "title": "Bu üniteden soru çöz",
+      "articleRefs": [
+        "28",
+        "30",
+        "32",
+        "33",
+        "34",
+        "35",
+        "36",
+        "37",
+        "38",
+        "39",
+        "40",
+        "41",
+        "42",
+        "43",
+        "44",
+        "45",
+        "46",
+        "47",
+        "49",
+        "50",
+        "51",
+        "51/A"
+      ],
+      "generated": true,
+      "rows": [
+        {
+          "label": "Madde kapsamlı seans",
+          "value": "md 28, 30, 32–47, 49–51, 51/A, 0 soru",
+          "refs": [
+            "28",
+            "30",
+            "32",
+            "33",
+            "34",
+            "35",
+            "36",
+            "37",
+            "38",
+            "39",
+            "40",
+            "41",
+            "42",
+            "43",
+            "44",
+            "45",
+            "46",
+            "47",
+            "49",
+            "50",
+            "51",
+            "51/A"
+          ]
+        }
+      ]
+    }
+  ]
+}

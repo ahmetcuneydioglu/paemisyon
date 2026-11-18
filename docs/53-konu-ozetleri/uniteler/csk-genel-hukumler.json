@@ -1,0 +1,666 @@
+{
+  "unit": {
+    "slug": "csk-genel-hukumler",
+    "legislationSlug": "6271-cumhurbaskani-secimi-kanunu",
+    "topicId": "80c2d965-7e69-4c77-b67f-3a00043867e4",
+    "title": "Cumhurbaşkanı seçimi",
+    "subtitle": "Seçim ilkeleri, seçim takvimi, adaylık, propaganda, oy kullanma ve andiçme",
+    "articleFrom": "1",
+    "articleTo": "24",
+    "readingMinutes": 13,
+    "sourceLabel": "AI özeti — 6271 Cumhurbaşkanı Seçimi Kanunu, md 1–8, 8/A, 9–21, 24",
+    "articleNos": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "8/A",
+      "9",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+      "15",
+      "16",
+      "17",
+      "18",
+      "19",
+      "20",
+      "21",
+      "24"
+    ],
+    "generatedBy": "claude-opus-5-5 (ozet-uret.ts)",
+    "sortOrder": 1
+  },
+  "blocks": [
+    {
+      "type": "concept",
+      "title": "Cumhurbaşkanını halk seçer",
+      "body": "Bu Kanun; Cumhurbaşkanı seçimini, adaylarda aranacak nitelikleri ve seçim öncesi, seçim günü, seçim sonrası işlemlerin usul ve esaslarını düzenler. Temel cümleyi aklında tut: **Cumhurbaşkanı halk tarafından seçilir.** Seçim genel, eşit ve gizli oyla, bütün yurtta aynı günde, yargı yönetim ve denetimi altında yapılır. Seçmen oyunu tam bir serbestlikle kendisi kullanır. Oyların sayımı, dökümü ve tutanaklara bağlanması ise açık olarak yapılır.",
+      "articleRefs": [
+        "1",
+        "2"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Yurt dışındaki vatandaş oy kullanamaz mı?",
+      "body": "Bu ifade yanlıştır. **Yurt dışında yaşayan Türk vatandaşları da oy kullanır.** Kanun bunu yasaklamaz. Oy kullanmalarının 298 sayılı Kanun hükümleri çerçevesinde sağlanacağını söyler. Şu ifadeler ise doğrudur: oyların sayımı, dökümü ve tutanaklara bağlanması açık yapılır; seçmen oyunu tam bir serbestlikle kendisi kullanır; seçim bütün yurtta aynı günde yapılır.",
+      "articleRefs": [
+        "2"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Gizli olan oy, açık olan sayım",
+      "body": "İkisini ters çevirme. **Oy verme gizlidir.** Oyların **sayımı, dökümü ve tutanaklara bağlanması** ise **açık** yapılır. Bir şıkta \"tutanaklara bağlama açık yapılır\" görürsen doğrudur. Denetimi de karıştırma: seçim **yargı yönetim ve denetimi** altında yapılır. Seçimin düzen içinde yönetimi ve dürüstlüğü için gereken bütün işlemleri yapmaya ve yaptırmaya yetkili kurum **Yüksek Seçim Kurulu**dur.",
+      "articleRefs": [
+        "2"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Kanunda hüküm yoksa ne uygulanır?",
+      "body": "Bu Kanunda özel hüküm bulunmayan hâllerde, aşağıdaki kanunlar ile bunların ek ve değişikliklerinin **bu Kanuna aykırı olmayan** hükümleri uygulanır:\n- 298 sayılı Seçimlerin Temel Hükümleri ve Seçmen Kütükleri Hakkında Kanun\n- 2820 sayılı Siyasi Partiler Kanunu\n- 2839 sayılı Milletvekili Seçimi Kanunu\n- 2972 sayılı Mahalli İdareler ile Mahalle Muhtarlıkları ve İhtiyar Heyetleri Seçimi Hakkında Kanun\n- 3376 sayılı Anayasa Değişikliklerinin Halkoyuna Sunulması Hakkında Kanun\n\n**Yüksek Seçim Kurulu**, seçimlerin başlamasından bitimine kadar gerekli ilke kararlarını almaya yetkilidir. Bu kanunlarda ve bu Kanunda seçimle ilgili olarak yer alan bütün süreleri de **gerektiğinde kısaltarak** tespit ve ilân edebilir.",
+      "articleRefs": [
+        "2"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Beş yıl, aynı gün, en fazla iki dönem",
+      "body": "- Cumhurbaşkanı ve Türkiye Büyük Millet Meclisi seçimleri **beş yılda bir aynı günde** yapılır.\n- Bir kimse **en fazla iki defa** Cumhurbaşkanı seçilebilir.\n- **İstisna:** Cumhurbaşkanının ikinci döneminde **Meclis** seçimlerin yenilenmesine karar verirse, Cumhurbaşkanı **bir defa daha** aday olabilir.\n- **Oy verme günü:** Cumhurbaşkanı ve TBMM'nin görev sürelerinin dolmasından önceki **son Pazar** günüdür. Görev süresi, birlikte yapılan bir önceki seçim tarihi esas alınarak belirlenir.\n- **Seçimin başlangıç tarihi:** Oy verme gününden geriye doğru hesaplanan **altmış günlük** sürenin ilk günüdür.\n- Seçimin bu süreler içinde tamamlanması için seçim takvimini Yüksek Seçim Kurulu **resen** belirler ve ilân eder.",
+      "articleRefs": [
+        "3"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Yenileme kararı ve makamın boşalması",
+      "body": "**Seçimlerin yenilenmesi:** Karar **kırksekiz saat** içinde Resmî Gazete'de yayımlanarak ilân olunur. Kararın verildiği günden sonra gelen **altmışıncı** günü takip eden **ilk Pazar** günü, Cumhurbaşkanı ile TBMM genel seçimi birlikte yapılır.\n\n**Makam herhangi bir nedenle boşalırsa** TBMM genel seçimine kalan süreye bakılır:\n- **Bir yıl veya daha az** kalmışsa seçim, makamın boşaldığı günden sonra gelen altmışıncı günü takip eden ilk Pazar günü **TBMM genel seçimiyle birlikte** yapılır.\n- **Bir yıldan fazla** kalmışsa seçim, makamın boşaldığı günden sonra gelen **kırkbeş gün içindeki son Pazar** günü yapılır. Bu şekilde seçilen Cumhurbaşkanı TBMM seçim tarihine kadar görevine devam eder. **Kalan süreyi tamamlayan Cumhurbaşkanı için bu süre dönemden sayılmaz.**",
+      "articleRefs": [
+        "3"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "İki turlu sistem ve ikame",
+      "body": "- İlk oylamada **geçerli oyların salt çoğunluğunu** alan aday Cumhurbaşkanı seçilir.\n- Bu çoğunluk sağlanamazsa, ilk oylamayı izleyen **ikinci Pazar** günü ikinci oylama yapılır.\n- İkinci oylamaya, ilk oylamada en çok oy alan **iki aday** katılır. Bu turda **geçerli oyların çoğunluğunu** alan aday seçilir.\n- **İkame:** İkinci oylamaya katılmaya hak kazanan adaylardan biri herhangi bir nedenle seçime katılmazsa, boşalan adaylık birinci oylamadaki sıraya göre ikame edilir. İkame en geç **geçici sonuçların ilânını takip eden gün saat 17.00**'ye kadar yapılabilir.",
+      "articleRefs": [
+        "4"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Tek aday, görevin devamı, milletvekilliği",
+      "body": "- Oylamaya **tek adayla** gidilirse oylama **referandum şeklinde** yapılır. Geçerli oyların salt çoğunluğunu alan aday seçilir.\n- Aday salt çoğunluğu alamazsa **seçim yenilenir**. Kesin sonuçların ilânından sonra gelen **kırkbeşinci** günü takip eden ilk Pazar günü **sadece Cumhurbaşkanı seçimi** yapılır.\n- Görev süresinin dolması, seçimlerin yenilenmesine karar verilmesi ya da seçimlerin tamamlanamaması hâllerinde mevcut Cumhurbaşkanının görevi **yenisi göreve başlayıncaya kadar** devam eder.\n- Cumhurbaşkanı seçilen kişinin, varsa **TBMM üyeliği sona erer**.",
+      "articleRefs": [
+        "4"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Savaşta geri bırakma ve seçilme yeterliği",
+      "body": "**Geri bırakma (md 5):** TBMM, savaş sebebiyle yeni seçimlerin yapılmasına imkân görülmediğine karar verirse, Cumhurbaşkanı seçimi **bir yıl** geriye bırakılır. Geri bırakma sebebi ortadan kalkmamışsa bu işlem, erteleme kararındaki usule göre **tekrarlanabilir**.\n\n**Seçilme yeterliği (md 6):** Aranan ortak nitelikler şunlardır:\n- **kırk yaşını doldurmuş** olmak,\n- **yüksek öğrenim** yapmış olmak.\n\nBu niteliklere sahip **TBMM üyeleri** Cumhurbaşkanı seçilebilir. Bu niteliklere ek olarak **milletvekili seçilme yeterliğine** de sahip olan her Türk vatandaşı da seçilebilir.",
+      "articleRefs": [
+        "5",
+        "6"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Kim aday gösterebilir?",
+      "body": "Cumhurbaşkanlığına aday gösterebilenler:\n1. Siyasi parti grupları,\n2. En son milletvekili genel seçiminde toplam geçerli oyların **tek başına veya birlikte en az yüzde beşini** almış siyasi partiler,\n3. En az **yüzbin seçmen**.\n\n- Aday gösterilmek, kişinin **yazılı muvafakatine** bağlıdır.\n- Aday gösterme süresi sona erdikten sonra **hiçbir şekilde** yeni aday gösterilemez.\n- TBMM'de grubu bulunan partiler **grup kararıyla** aday gösterir. Diğer partiler **tüzüklerinde gösterilen yetkili organın kararıyla** aday gösterir.\n- Her siyasi parti veya parti grubu **ancak bir aday** için başvurabilir. Buna karşılık **bir kişiyi birden fazla** parti veya parti grubu aday gösterebilir.\n- Bilgi ve belgelerde eksiklik varsa Yüksek Seçim Kurulu ilgili partiye **beş günlük** süre verir. Eksikliği bu süre içinde gidermeyen parti aday göstermekten **vazgeçmiş sayılır**.",
+      "articleRefs": [
+        "7",
+        "8"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Seçmenlerce aday gösterilme",
+      "body": "Aday gösterilmek isteyen kişi Yüksek Seçim Kuruluna **bizzat** başvurur. Başvuruda şunları verir:\n- kimlik ve açık adres bilgilerini içeren dilekçe,\n- seçilme yeterliğine ilişkin belgeler,\n- en yüksek Devlet memuruna yapılan ödemelerin bir aylık brüt tutarının **on katının** maliye veznesine emaneten yatırıldığını gösteren makbuz.\n\nİnceleme ve süreç:\n- Kurul başvuruyu **iki gün** içinde inceler.\n- Seçilme yeterliği yoksa başvuru **reddedilir**. Başvuran, kararın bildirilmesinden itibaren **iki gün** içinde yeniden inceleme isteyebilir. Kurul bu talebi **üç gün** içinde karara bağlar.\n- Belgelerde eksiklik varsa **iki gün** süre verilir. Eksik bu sürede tamamlanmazsa başvuru reddedilir.\n- Kurul, başvurusu kabul edilenleri ilân eder. Seçmen, bu ilândaki kişilerden **sadece biri için, bir kez** teklifte bulunabilir. Bunun için kayıtlı olduğu **ilçe seçim kuruluna bizzat** başvurur.\n- Belirlenen süre içinde **yüzbin seçmen** tarafından teklif edilen kişiler geçici aday listesinde gösterilir.\n- Yatırılan tutar, yüzbin seçmen teklifine ulaşılması veya ölüm hâlinde seçimden sonra talep üzerine iade edilir. Diğer hâllerde **Hazineye gelir** kaydedilir.",
+      "articleRefs": [
+        "8/A"
+      ]
+    },
+    {
+      "type": "numbers",
+      "title": "Seçim takvimi ve adaylık sayıları",
+      "rows": [
+        {
+          "label": "Seçimlerin yapılma aralığı",
+          "value": "5 yılda bir, aynı günde",
+          "refs": [
+            "3"
+          ]
+        },
+        {
+          "label": "Bir kimsenin en fazla seçilme sayısı",
+          "value": "2 defa",
+          "refs": [
+            "3"
+          ]
+        },
+        {
+          "label": "Seçimin başlangıç tarihi",
+          "value": "Oy verme gününden geriye 60 günlük sürenin ilk günü",
+          "refs": [
+            "3"
+          ]
+        },
+        {
+          "label": "Yenileme kararının ilânı",
+          "value": "48 saat içinde Resmî Gazete'de",
+          "refs": [
+            "3"
+          ]
+        },
+        {
+          "label": "Yenilemede oy verme günü",
+          "value": "Karardan sonraki 60. günü takip eden ilk Pazar",
+          "refs": [
+            "3"
+          ]
+        },
+        {
+          "label": "Makam boşaldı, genel seçime 1 yıldan fazla var",
+          "value": "Boşalmadan sonraki 45 gün içindeki son Pazar",
+          "refs": [
+            "3"
+          ]
+        },
+        {
+          "label": "İkinci oylama",
+          "value": "İlk oylamayı izleyen ikinci Pazar",
+          "refs": [
+            "4"
+          ]
+        },
+        {
+          "label": "İkamenin son anı",
+          "value": "Geçici sonuçların ilânını takip eden gün saat 17.00",
+          "refs": [
+            "4"
+          ]
+        },
+        {
+          "label": "Tek adayda salt çoğunluk sağlanamazsa",
+          "value": "Kesin sonuçların ilânından sonraki 45. günü takip eden ilk Pazar",
+          "refs": [
+            "4"
+          ]
+        },
+        {
+          "label": "Savaş sebebiyle geri bırakma",
+          "value": "1 yıl",
+          "refs": [
+            "5"
+          ]
+        },
+        {
+          "label": "Asgari yaş",
+          "value": "40 yaşını doldurmuş",
+          "refs": [
+            "6"
+          ]
+        },
+        {
+          "label": "Parti oy şartı",
+          "value": "En az %5, tek başına veya birlikte",
+          "refs": [
+            "7"
+          ]
+        },
+        {
+          "label": "Seçmen teklifi",
+          "value": "En az 100.000 seçmen",
+          "refs": [
+            "7",
+            "8/A"
+          ]
+        },
+        {
+          "label": "Parti belgesinde eksiklik giderme",
+          "value": "5 gün",
+          "refs": [
+            "8"
+          ]
+        },
+        {
+          "label": "Seçmen adaylığında emanet",
+          "value": "En yüksek Devlet memuruna yapılan ödemelerin bir aylık brüt tutarının on katı",
+          "refs": [
+            "8/A"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "8/A"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Geçici ve kesin aday listesi",
+      "body": "- Yüksek Seçim Kurulu, seçilme yeterliğini ve aday gösterilme şartlarını taşıyanları gösteren **geçici aday listesi**ni belirler. Liste ve itiraz süresi **Resmî Gazete**de yayımlanır.\n- Resmî Gazetedeki ilândan itibaren **iki gün** içinde, geçici listeye veya listeye alınmamaya ilişkin karara karşı Yüksek Seçim Kuruluna itiraz edilebilir.\n- Kurul itirazları **üç gün** içinde **kesin karara** bağlar ve **kesin aday listesini** Resmî Gazetede yayımlar.\n- **Adaylıkta eksilme:** Birinci oylamada, kesin listenin yayımından oy verme günü saat **17.00**'ye kadar listede meydana gelen eksilmeler **değişikliği gerektirmez**.",
+      "articleRefs": [
+        "9",
+        "10",
+        "12"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Aday olanın görevi: ayrılma ve geri dönme",
+      "body": "**Ayrılma:** Aşağıdakiler, Cumhurbaşkanı adayı gösterilirse görevlerinden **ayrılmış sayılır**. Ayrılma anı, adaylık başvurusu değil, **aday listesinin kesinleştiği tarih**tir:\n- hâkimler ve savcılar, yüksek yargı organları mensupları,\n- yüksek öğretim kurumlarındaki öğretim elemanları, Yükseköğretim Kurulu ve Radyo ve Televizyon Üst Kurulu üyeleri,\n- memur statüsündeki görevliler ve işçi niteliği taşımayan diğer kamu görevlileri,\n- belediye başkanları, subaylar ve astsubaylar,\n- siyasi partilerin il ve ilçe yönetim kurulu başkan ve üyeleri, belediye meclisi ve il genel meclisi üyeleri,\n- kamu kurumu niteliğindeki meslek kuruluşları ile sendikalar, kamu bankaları, üst birlikler ve bunların üst kuruluşları ile katıldıkları teşebbüs veya ortaklıkların yönetim ve denetim kurullarında görev alanlar.\n\nYüksek Seçim Kurulu bu durumu adayın bağlı olduğu bakanlığa veya kuruma **derhal** bildirir.\n\n**Dönüş:** Adaylığı veya seçimi kaybeden Devlet memurları ve diğer kamu görevlileri eski görevlerine ya da kazanılmış hak aylık derecelerindeki başka bir göreve dönebilir. Bunun için Cumhurbaşkanının seçildiğinin ilânını takip eden **bir ay** içinde müracaat etmeleri gerekir.\n\n**Dönemeyenler:** yüksek mahkeme üyeleri, hâkimler, savcılar ve bu meslekten sayılanlar ile **subay ve astsubaylar**.",
+      "articleRefs": [
+        "11"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Propaganda dönemi",
+      "body": "- Propaganda dönemi **aday listesinin kesinleştiği gün** başlar. Oylamanın yapılacağı günden **önceki gün saat 18.00**'de sona erer.\n- Türkiye Radyo ve Televizyonlarındaki propaganda yayınlarının tam bir **tarafsızlık ve eşitlik** içinde yapılmasını Yüksek Seçim Kurulu ile Türkiye Radyo ve Televizyon Kurumu birlikte sağlar.\n- Adayların özel radyo ve televizyonlardaki propaganda konuşmalarına, **süre ile ilgili sınırlamalar dışında**, 298 sayılı Kanunun ilgili hükümleri uygulanır.\n- Propagandaya dair diğer hususlarda 298 sayılı Kanun **kıyasen** uygulanır. Başbakan, bakanlar ve milletvekilleriyle ilgili yasaklar da buna dâhildir.\n\n**Not:** \"Başbakan\" ifadesi kanun metnindeki hâliyle verilmiştir.",
+      "articleRefs": [
+        "13"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Bağış, yardım ve seçim hesabı",
+      "body": "**Kimlerden bağış ve yardım alınamaz?** Yabancı devletlerden, uluslararası kuruluşlardan, **tüzel kişilerden** ve Türk uyrukluğunda olmayan gerçek kişilerden. Adaylar **ödünç niteliğinde para** da kabul edemez.\n\n- **Yardım sınırı:** Her bir kişinin adaylara yapabileceği nakdî yardım, her bir tur için, en yüksek Devlet memuruna fiilen yapılan ödemelerin **bir aylık brüt tutarını** geçemez.\n- **Vergi ve kullanım:** Bağış ve yardımlar **veraset ve intikal vergisinden müstesnadır**. Yalnızca seçim harcamalarında kullanılır.\n- **Seçim Hesabı:** Kurulca belirlenen tutarın üzerindeki nakdî yardımlar, adayın kendi adına açtıracağı **\"Seçim Hesabı\"**na yatırılır. Bu tutarın altındakiler makbuz karşılığında alınır ve yine seçim hesabına yatırılır.\n- **Mal bildirimi:** Adaylar, adaylık başvurusu süresi içinde mal bildiriminde bulunmak zorundadır. Seçilenin mal bildirimi, sonuçlar kesinleşince Resmî Gazetede yayımlanır.\n- **Denetim:** Hesaplara ilişkin bilgi ve belgeler, sonuçların kesinleşmesini izleyen **on gün** içinde Yüksek Seçim Kuruluna sunulur. Kurul hesapları **bir ay** içinde inceler. İnceleme sonuçları **kesindir** ve incelemenin tamamlanmasını müteakip **bir ay** içinde ilân edilir.\n- **Hazineye intikal:** Limiti aşan miktar ile harcanmayan kısım Hazineye intikal ettirilir. Kurul bu görevde Sayıştaydan ve gerekli görülen diğer kamu kurumlarından yardım alabilir.\n- **Yetkilendirme:** Aday, Kurula önceden bildirmek şartıyla, kayıt ve ibraz işleri için yetki almış mali müşavirlik meslek mensuplarından veya avukatlardan birini ya da birkaçını yetkili kılabilir.",
+      "articleRefs": [
+        "14"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Birleşik oy pusulası ve oy kullanma",
+      "body": "**Normal oylama:** Filigranlı birleşik oy pusulasında \"Cumhurbaşkanı Adayları\" ibaresi yer alır. Altında, sırası Yüksek Seçim Kurulunun **çektiği kurayla** belirlenen adayların adı ve soyadı bulunur. Seçmen mührü tercih ettiği adaya ait **özel daire** içine basar.\n\n**Referandum şeklinde oylama:** **Beyaz** üzerine \"Evet\", **kahverengi** üzerine \"Hayır\" yazılı, iki ayrı renkten oluşan birleşik oy pusulası kullanılır. Seçmen mührü tercih ettiği **kısmın** üzerine basar.\n\n**İkisinde ortak olanlar:**\n- Seçmen, sandık kurulunun verdiği pusulayı ve \"Evet\" veya \"Tercih\" yazılı mührü alarak kapalı oy verme yerine girer.\n- Pusulayı zarfa koyar ve zarfı sandığa atar.\n- Mührü **sandık kurulu başkanına** geri verir.\n\n**Basım:** Yüksek Seçim Kurulu pusulaları kendisi bastırabilir ya da uygun göreceği il seçim kurulları vasıtasıyla bastırabilir. Gerekli ödenek Maliye Bakanlığınca karşılanır.\n\n**Not:** \"Maliye Bakanlığı\" adı kanun metnindeki hâliyle verilmiştir.",
+      "articleRefs": [
+        "15",
+        "16",
+        "17"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Tutanaklar, iptal ve kesin sonuç",
+      "body": "- Sandık, ilçe ve il seçim kurullarınca düzenlenecek tutanakların içeriğini ve sonuçların birleştirilmesine ilişkin usul ve esasları **Yüksek Seçim Kurulu** belirler.\n- Kurul, il seçim kurullarından gelen sonuçları birleştirerek ilân eder.\n- **İptal:** Bir veya birkaç seçim çevresinde seçim ya da birleştirme tutanağı, seçim işlemleri sebebiyle iptal edilebilir. Bu durumda Kurul, iptal edilen kısmın **ülke genelindeki sonuçlara etkisi** olup olmadığına bakar. Buna göre o çevrelerde seçimin yenilenip yenilenmeyeceğine karar verir.\n- **Kesin sonuç:** Kurul kesin sonuçları **TBMM Başkanlığı** ile **Cumhurbaşkanlığı Makamına** bildirir, kamuoyuna ilân eder ve **Resmî Gazetede** yayımlar.\n- **Tutanak:** Kurul, seçilen adına **Cumhurbaşkanı seçildiğine dair bir tutanak** düzenler. Tutanak, seçilen Cumhurbaşkanına verilmek üzere TBMM Başkanlığına sunulur.",
+      "articleRefs": [
+        "18",
+        "19",
+        "20"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Andiçme töreni",
+      "body": "- Seçilen adına düzenlenen tutanak **TBMM Genel Kurulunda** verilir. Tutanağı TBMM Başkanı veya Geçici Başkan verir ve **aynı birleşimde** andiçme töreni yapılır.\n- Cumhurbaşkanı ve TBMM genel seçimi birlikte yapılmışsa bu birleşim, Meclisin toplandığı ilk günü takip eden **üç gün** içinde gerçekleştirilir.\n- Cumhurbaşkanı **ikinci oylamada** seçilmişse ya da **sadece Cumhurbaşkanı seçimi** yapılmışsa tören, seçim sonucunun kesinleşmesini takip eden **üç gün** içinde yapılır. TBMM toplantı hâlinde değilse **derhal** toplantıya çağrılır.\n- Cumhurbaşkanınca atanan Cumhurbaşkanı yardımcıları ve Bakanlar, atanmalarını **takip eden gün** andiçer.",
+      "articleRefs": [
+        "21"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Kanunu kim yürütür?",
+      "body": "Bu Kanun hükümlerini **Türkiye Büyük Millet Meclisi Başkanı** ile **Bakanlar Kurulu** yürütür.\n\n**Not:** \"Bakanlar Kurulu\" ifadesi kanun metnindeki hâliyle verilmiştir.",
+      "articleRefs": [
+        "24"
+      ]
+    },
+    {
+      "type": "numbers",
+      "title": "Süreler ve saatler",
+      "rows": [
+        {
+          "label": "Seçmen adaylık başvurusunun incelenmesi",
+          "value": "2 gün",
+          "refs": [
+            "8/A"
+          ]
+        },
+        {
+          "label": "Ret kararına karşı yeniden inceleme talebi",
+          "value": "Bildirimden itibaren 2 gün",
+          "refs": [
+            "8/A"
+          ]
+        },
+        {
+          "label": "Yeniden inceleme talebinin karara bağlanması",
+          "value": "3 gün",
+          "refs": [
+            "8/A"
+          ]
+        },
+        {
+          "label": "Seçmen adaylığında eksiklik tamamlama",
+          "value": "2 gün",
+          "refs": [
+            "8/A"
+          ]
+        },
+        {
+          "label": "Geçici aday listesine itiraz",
+          "value": "Resmî Gazete ilânından itibaren 2 gün",
+          "refs": [
+            "10"
+          ]
+        },
+        {
+          "label": "İtirazların kesin karara bağlanması",
+          "value": "3 gün",
+          "refs": [
+            "10"
+          ]
+        },
+        {
+          "label": "Kaybeden kamu görevlisinin göreve dönüş müracaatı",
+          "value": "Seçildiğinin ilânını takip eden 1 ay",
+          "refs": [
+            "11"
+          ]
+        },
+        {
+          "label": "Eksilmenin listeyi değiştirmediği son an",
+          "value": "Oy verme günü saat 17.00",
+          "refs": [
+            "12"
+          ]
+        },
+        {
+          "label": "Propagandanın sona ermesi",
+          "value": "Oylamadan önceki gün saat 18.00",
+          "refs": [
+            "13"
+          ]
+        },
+        {
+          "label": "Seçim hesabı belgelerinin sunulması",
+          "value": "Sonuçların kesinleşmesini izleyen 10 gün",
+          "refs": [
+            "14"
+          ]
+        },
+        {
+          "label": "Kurulun seçim hesaplarını incelemesi",
+          "value": "1 ay",
+          "refs": [
+            "14"
+          ]
+        },
+        {
+          "label": "İnceleme sonuçlarının ilânı",
+          "value": "İncelemenin tamamlanmasını müteakip 1 ay",
+          "refs": [
+            "14"
+          ]
+        },
+        {
+          "label": "Andiçme (birlikte yapılan seçimde)",
+          "value": "Meclisin toplandığı ilk günü takip eden 3 gün içinde",
+          "refs": [
+            "21"
+          ]
+        },
+        {
+          "label": "Andiçme (ikinci oylamada seçilme veya yalnız Cumhurbaşkanı seçimi)",
+          "value": "Seçim sonucunun kesinleşmesini takip eden 3 gün içinde",
+          "refs": [
+            "21"
+          ]
+        },
+        {
+          "label": "Cumhurbaşkanı yardımcıları ve Bakanların andı",
+          "value": "Atanmayı takip eden gün",
+          "refs": [
+            "21"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "8/A",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "21"
+      ]
+    },
+    {
+      "type": "compare",
+      "title": "Siyasi parti adaylığı (sol) – Seçmen adaylığı (sağ)",
+      "rows": [
+        {
+          "aspect": "Kim gösterir",
+          "left": "Siyasi parti grupları; en son milletvekili genel seçiminde tek başına veya birlikte en az %5 almış siyasi partiler",
+          "right": "En az 100.000 seçmen",
+          "refs": [
+            "7",
+            "8/A"
+          ]
+        },
+        {
+          "aspect": "Karar / teklif yolu",
+          "left": "Grubu olan parti: grup kararı; diğerleri: tüzükte gösterilen yetkili organın kararı",
+          "right": "Seçmen, kayıtlı olduğu ilçe seçim kuruluna bizzat başvurup aday formunu imzalar",
+          "refs": [
+            "8",
+            "8/A"
+          ]
+        },
+        {
+          "aspect": "Yüksek Seçim Kuruluna başvuru",
+          "left": "Adayın ismi, muvafakat belgesi ve gerekli diğer belgelerle, Kurulun ilân ettiği süre içinde",
+          "right": "Aday olmak isteyen kişi dilekçe, yeterlik belgeleri ve emanet makbuzuyla bizzat başvurur",
+          "refs": [
+            "8",
+            "8/A"
+          ]
+        },
+        {
+          "aspect": "Emanet tutar",
+          "left": "—",
+          "right": "En yüksek Devlet memuru ödemelerinin bir aylık brüt tutarının on katı; şartları oluşursa iade, aksi hâlde Hazineye gelir",
+          "refs": [
+            "8/A"
+          ]
+        },
+        {
+          "aspect": "Tekrar sınırı",
+          "left": "Her parti veya grup yalnız bir aday; bir kişiyi birden fazla parti veya grup gösterebilir",
+          "right": "Her seçmen ilân edilen kişilerden sadece biri için bir kez teklif verebilir",
+          "refs": [
+            "8",
+            "8/A"
+          ]
+        },
+        {
+          "aspect": "Eksiklik süresi ve sonucu",
+          "left": "5 gün; gidermeyen parti aday göstermekten vazgeçmiş sayılır",
+          "right": "2 gün; tamamlanmazsa başvuru reddedilir",
+          "refs": [
+            "8",
+            "8/A"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "7",
+        "8",
+        "8/A"
+      ]
+    },
+    {
+      "type": "exam_stats",
+      "title": "Sınav der ki",
+      "rows": [
+        {
+          "label": "Bu ünitenin maddelerinden yayındaki soru",
+          "value": "1",
+          "refs": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "8/A",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "24"
+          ]
+        },
+        {
+          "label": "md 2 — Seçimde uygulanacak genel ilkeler",
+          "value": "1 soru",
+          "refs": [
+            "2"
+          ]
+        },
+        {
+          "label": "Hiç soru çıkmamış",
+          "value": "md 1, md 3, md 4, md 5, md 6, md 7, md 8, md 8/A, md 9, md 10, md 11, md 12, md 13, md 14, md 15, md 16, md 17, md 18, md 19, md 20, md 21, md 24",
+          "refs": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "8/A",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "24"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "8/A",
+        "9",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17",
+        "18",
+        "19",
+        "20",
+        "21",
+        "24"
+      ],
+      "generated": true
+    },
+    {
+      "type": "bridge",
+      "title": "Bu üniteden soru çöz",
+      "articleRefs": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "8/A",
+        "9",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17",
+        "18",
+        "19",
+        "20",
+        "21",
+        "24"
+      ],
+      "generated": true,
+      "rows": [
+        {
+          "label": "Madde kapsamlı seans",
+          "value": "md 1–8, 8/A, 9–21, 24, 1 soru",
+          "refs": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "8/A",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "24"
+          ]
+        }
+      ]
+    }
+  ]
+}

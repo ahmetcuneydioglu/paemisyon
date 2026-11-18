@@ -1,0 +1,651 @@
+{
+  "unit": {
+    "slug": "stk-1-ilkeler",
+    "legislationSlug": "298-sayili-secimlerin-temel-hukumleri-kanunu",
+    "topicId": "fc5b7d84-ad74-446c-9ac6-3d4172a04ccf",
+    "title": "Seçim ilkeleri ve seçim kurulları",
+    "subtitle": "Seçim ilkeleri, seçme hakkı ve Yüksek Seçim Kurulundan sandık kuruluna kurulların yapısı",
+    "articleFrom": "1",
+    "articleTo": "27",
+    "readingMinutes": 16,
+    "sourceLabel": "AI özeti — 298 Sayılı Seçimlerin Temel Hükümleri Kanunu, md 1–10, 14–20, 20/A, 21–27",
+    "articleNos": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "14",
+      "15",
+      "16",
+      "17",
+      "18",
+      "19",
+      "20",
+      "20/A",
+      "21",
+      "22",
+      "23",
+      "24",
+      "25",
+      "26",
+      "27"
+    ],
+    "generatedBy": "claude-opus-5-5 (ozet-uret.ts)",
+    "sortOrder": 1
+  },
+  "blocks": [
+    {
+      "type": "concept",
+      "title": "Bu Kanun hangi seçimlerde uygulanır?",
+      "body": "Bu Kanun tek bir seçime ait değil. Cumhurbaşkanı, milletvekili, il genel meclisi üyeliği, belediye başkanlığı, belediye meclisi üyeliği, muhtarlık, ihtiyar meclisi üyeliği ve ihtiyar heyeti üyeliği seçimleri kendi özel kanunlarına göre yapılır. Bu seçimlerin hepsinde bu Kanunun hükümleri de uygulanır. Listeyi seçimlerle sınırlı tutma: Anayasa değişikliklerine ilişkin kanunlar halk oyuna sunulduğunda da bu Kanun devrededir.",
+      "articleRefs": [
+        "1"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Seçim ilkeleri ve seçim çevresi",
+      "body": "Seçimler **serbest, eşit, tek dereceli genel oy** esaslarına göre yapılır.\n- Seçmen oyunu **kendisi** kullanır.\n- Oy **gizli** verilir.\n- Oyların sayımı, dökümü ve tutanaklara bağlanması **açık** olarak yapılır.\n\n**Seçim çevresi:** Seçimlerde **her il bir seçim çevresidir.** Özel kanunlarındaki çevre ayırmaları saklıdır.\n\n**Seçim bölgesi (md 4):** Seçimlerde **her muhtarlık bir seçim bölgesidir**.",
+      "articleRefs": [
+        "2",
+        "3",
+        "4"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Sandık bölgesi",
+      "body": "Seçimlerde her seçim bölgesi gerektiği kadar **sandık bölgesine** ayrılır.\n\n**Aynı binada oturanlar:** Bu seçmenler farklı sandık bölgelerine kaydedilebilir. Bunun için iki şart vardır:\n- **hane bütünlüklerinin korunması**,\n- **aynı seçim bölgesinde kalmaları**.\n\nSeçim türüne göre sandık bölgesindeki seçmen sayısını **Yüksek Seçim Kurulu** belirler (md 14).",
+      "articleRefs": [
+        "5",
+        "14"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Seçme hakkı ve oy kullanamayanlar",
+      "body": "**Seçme ve halk oylamasına katılma hakkı:** 18 yaşını dolduran her Türk vatandaşı bu hakka sahiptir.\n\n**Oy kullanamazlar (md 7):**\n- Silah altında bulunan erler, onbaşılar ve kıta çavuşları. Her ne sebeple olursa olsun izinli bulunanlar da bu hükme tabidir.\n- Askeri öğrenciler.\n- Ceza infaz kurumlarında hükümlü olarak bulunanlar.\n\n**Seçmen olamazlar (md 8):**\n- Kısıtlı olanlar.\n- Kamu hizmetinden yasaklı olanlar.",
+      "articleRefs": [
+        "6",
+        "7",
+        "8"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Oy kullanamayan mı, seçmen olamayan mı?",
+      "body": "İki listeyi birbirine karıştırma.\n\n**Oy kullanamaz (md 7):** Silah altındaki er, onbaşı ve kıta çavuşu (izinli olsa bile), askeri öğrenci ve ceza infaz kurumunda hükümlü olarak bulunan kişi.\n\n**Seçmen olamaz (md 8):** Kısıtlı olan ve kamu hizmetinden yasaklı olan kişi.\n\nBir ayrıntıya daha dikkat et: Silah altındaki er izinli olarak evine gelmiş olsa bile oy kullanamaz. Madde bunu açıkça yazar. Ceza infaz kurumu bendinde ise anahtar sözcük **hükümlü** sözcüğüdür; tutuklu bu bende girmez.\n\nHükümlüyü de tek kalıpla okuma: md 86, tutuklu sandık seçmen listesine kaydedilmişken taksirli suçlar dışında bir suçtan cezası kesinleşene oy kullandırmaz; md 87 de ceza infaz kurumunda taksirli suçlardan hükümlü bulunan seçmen için cezaevi idaresinin belgesini kimlik belgesi yerine sayar. Bu iki madde, ceza infaz kurumundaki taksirli suçtan hükümlü seçmenin oy kullandığını gösterir.",
+      "articleRefs": [
+        "7",
+        "8",
+        "86",
+        "87"
+      ]
+    },
+    {
+      "type": "concept",
+      "title": "Seçimi kim yürütür?",
+      "body": "Seçim işlerini **seçim kurulları** yürütür. Yapıyı yukarıdan aşağıya doğru düşün:\n- Ankara'da bir **Yüksek Seçim Kurulu**,\n- her seçim çevresinde bir **il seçim kurulu**,\n- her ilçede bir **ilçe seçim kurulu**,\n- her sandık için bir **sandık kurulu**.\n\nValiler, kaymakamlar, belediye başkanları, muhtarlar ve bütün kamu görevlileri bu kurulların istediği bilgi ve belgeleri göndermek zorundadır. Bu bilgi ve belgeler gecikmeden, süresinde ve doğru olarak gönderilir.",
+      "articleRefs": [
+        "9",
+        "10"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Kurul sayısını artıran hâller",
+      "body": "- **Yurt Dışı İlçe Seçim Kurulu:** Yurt dışındaki vatandaşların oy kullanmasıyla ilgili seçim işlerini yönetir. **Ankara İl Seçim Kuruluna bağlıdır.** İhtiyaç duyulursa birden fazla kurulabilir.\n- **Merkez ilçe seçim kurulu:** İl merkezlerinde ayrıca kurulur.\n- **Nüfusu 200.000'i aşan ilçeler:** Nüfus, son nüfus sayımına göre belirlenir. Bu ilçelerde **birden fazla** ilçe seçim kurulu kurulur. Köy ve mahalle sınırları (seçim bölgeleri) esas alınır ve mümkün olduğu ölçüde nüfus eşitliği gözetilir.\n- **Diğer belediyeler:** İl ve ilçe belediyeleri dışındaki belediyeler **bölünmeden**, mahalleleriyle bir bütün olarak ilçe seçim kurullarından **birine** bağlanır.",
+      "articleRefs": [
+        "10"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Yüksek Seçim Kurulu: kesin karara bağladığı itirazlar",
+      "body": "YSK aşağıdaki itirazları **kesin** karara bağlar:\n- **İl seçim kurullarının teşekkülüne, işlemlerine ve kararlarına itirazlar:** Oy verme gününden önce ve itiraz konusunun gerektirdiği süratle karara bağlanır.\n- **Adaylığa ait itirazlar:** Bu Kanun ve özel kanunları gereğince karara bağlanır.\n- **İl seçim kurullarının oy verme günü işlemleri hakkındaki kararlarına itirazlar:** Derhal incelenir.\n- **İl seçim kurullarınca düzenlenen tutanaklara itirazlar.**\n- **Seçimlerden sonra süresi içinde yapılan bazı itirazlar:** Bunlar seçimin sonucuna müessir olan ve çevre seçiminin ya da seçilenlerden birinin veya birkaçının tutanağının iptalini gerektiren itirazlardır. YSK bunları **alt kurullara yapılan itirazların silsilesine ve sürelerine uygunluğunu araştırmaksızın** inceler.\n\nYSK ayrıca:\n- il ve ilçe seçim kurullarının teşekkülünü sağlar,\n- il seçim kurulu başkanlıklarının sorularını derhal cevaplar,\n- seçimin bütün yurtta düzenle yapılması için tedbir alır ve genelgeleri zamanında yapar.",
+      "articleRefs": [
+        "14"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Adaylık itirazında son söz",
+      "body": "Adaylığa yapılan itirazda kesin kararı veren merci **Yüksek Seçim Kurulu**dur. Adaylığın hangi seçime ait olduğu sonucu değiştirmez: md 14, adaylığa ait itirazlar hakkında bu Kanun ve özel kanunları gereğince kesin karar verme görevini YSK'ya verir.\n\nŞıklarda başka bir idari makam ya da yargı mercii görürsen dikkat et: Bu maddede adaylık itirazında kesin karar görevi YSK'ya verilir.",
+      "articleRefs": [
+        "14"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Yüksek Seçim Kurulu: malzeme ve düzenleme görevleri",
+      "body": "- **Özel zarflar:** YSK, oy pusulası konulacak özel zarfları yaptırır. Zarfların kağıdında \"Türkiye Cumhuriyeti Yüksek Seçim Kurulu\" filigranı bulunur. Renk ve ölçüleri piyasadaki zarflardan farklıdır; icabında her seçim için ayrı renk ve ölçüde olur. Üretim, kağıt hamurundan teslim alınmaya kadar devamlı gözetim ve denetim altında yapılır. Zarflar il seçim kurullarına alındı belgesi karşılığında gönderilir. Filigran ve zarf ölçü kalıplarını YSK saklar.\n- **Birleşik oy pusulası:** Bu pusulalar filigranlıdır ve katlanıp bir kenarı yapıştırılınca zarf hâline gelir. YSK, her 400'ü ve her 400'lük paketi aynı numarayı taşıyacak şekilde bastırır. Her sandık için bir paket ilçe seçim kurullarına zamanında ulaştırılır.\n- **Basılı kağıtlar:** Form, evrak ve liste ile **görme engelli seçmenler için oy pusulasına uygun şablon** dahil her türlü basılı kağıdın tasarım ve baskısını YSK yaptırır.\n- **Seçmen Kütüğü Genel Müdürlüğü:** YSK bu birimin ilkelerini belirler, yönetmeliklerini yayınlar, programlarını yapar ve onu denetler.\n- **Yurt dışı:** YSK, Yurt Dışı İlçe Seçim Kurulunun oluşturulması için gerekli düzenlemeleri yapar. Gerekirse Dışişleri Bakanlığının görüşünü alarak bu Bakanlık mensupları arasından **en az daire başkanı** seviyesinde görevlendirme yapar.",
+      "articleRefs": [
+        "14"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Siyasi partilerin seçime katılma yeterliliği",
+      "body": "**Şart:** Bu şart şu seçimler için aranır: milletvekili genel ve ara seçimleri ile belediye başkanlığı, belediye meclisi ve il genel meclisi üyelikleri genel ve ara seçimleri. Bu seçimlere katılmak isteyen parti, **oy verme gününden en az 6 ay önce** **illerin en az yarısında** teşkilat kurmuş ve büyük kongresini yapmış olmalıdır. 6 aylık süre iki şart için de geçerlidir.\n\n**Bir ilde teşkilatlanma:** Parti, merkez ilçesi dahil o ilin ilçelerinin **en az üçte birinde** teşkilat kurmalıdır.\n\n**Yeterliliğin kaybı:** Parti, ilçe, il ve büyük kongrelerini **üst üste 2 defa** yapmamışsa seçime katılma yeterliliğini kaybeder. Kongreler, bu teşkilatlanma yeter sayısı esas alınarak, Siyasi Partiler Kanunu ve parti tüzüğündeki süreler içinde yapılmalıdır.\n\n**İlan:** YSK, seçime katılabilecek partileri tespit eder ve şu sürelerde ilan eder:\n- seçimin başlangıç tarihinden **10 gün** içinde,\n- seçimin yenilenmesi hâlinde yenileme kararının ilanından sonraki **5 gün** içinde.\n\n**Ayrı bir tespit:** YSK, şu şartları taşıyan partilerin adlarını da tespit ve ilan eder: tüzüğüne göre ilk genel kongresini yapmış, illerin en az yarısında ve en az 6 ay önce il ve ilçe teşkilatını kurmuş olmak. Bu ilan, ilçe seçim kurullarının yeniden kurulması için öngörülen ayların ikinci haftasında yapılır.",
+      "articleRefs": [
+        "14"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Muhtarlık seçimi istisnası",
+      "body": "İki ayrı yetkide aynı istisna var, gözden kaçırma.\n\n**Seçim güvenliği tedbirleri:** Talep, oy verme gününden en geç bir ay önce vali ya da il seçim kurulu başkanından gelir. Bu talep üzerine YSK şunlara karar verebilir:\n- sandıkların en yakın seçim bölgesine taşınması,\n- sandık bölgelerinin birleştirilmesi,\n- seçim bölgelerinin birleştirilmesi ile seçmen listelerinin karma düzenlenmesi.\n\nAma bu son tedbirde (seçim bölgelerini birleştirip seçmen listelerini karma düzenlemede) **muhtarlık seçimleri hariçtir.**\n\n**Seyyar sandık:** Hastalığı veya engeli sebebiyle yatağa bağımlı seçmenler için seyyar sandık usulünü de YSK belirler. Bu da **muhtarlık seçimleri hariç** uygulanır.",
+      "articleRefs": [
+        "14"
+      ]
+    },
+    {
+      "type": "numbers",
+      "title": "Sayılar: kurul yapısı ve YSK görevleri",
+      "rows": [
+        {
+          "label": "Birden fazla ilçe seçim kurulu kurulan ilçe",
+          "value": "Son nüfus sayımına göre nüfusu 200.000'i aşan",
+          "refs": [
+            "10"
+          ]
+        },
+        {
+          "label": "Birleşik oy pusulası paketi",
+          "value": "Her 400 pusula ve her 400'lük paket aynı numara; her sandığa bir paket",
+          "refs": [
+            "14"
+          ]
+        },
+        {
+          "label": "Seçime katılma: teşkilat kurulacak iller",
+          "value": "İllerin en az yarısı",
+          "refs": [
+            "14"
+          ]
+        },
+        {
+          "label": "Seçime katılma: teşkilat ve büyük kongre süresi",
+          "value": "Oy verme gününden en az 6 ay önce",
+          "refs": [
+            "14"
+          ]
+        },
+        {
+          "label": "Bir ilde teşkilatlanma",
+          "value": "Merkez ilçe dahil ilçelerin en az üçte biri",
+          "refs": [
+            "14"
+          ]
+        },
+        {
+          "label": "Kongreleri yapmama: yeterlilik kaybı",
+          "value": "Üst üste 2 defa",
+          "refs": [
+            "14"
+          ]
+        },
+        {
+          "label": "Seçime katılacak partilerin ilanı",
+          "value": "Seçimin başlangıç tarihinden 10 gün içinde",
+          "refs": [
+            "14"
+          ]
+        },
+        {
+          "label": "Seçimin yenilenmesinde parti ilanı",
+          "value": "Yenileme kararının ilanından sonraki 5 gün içinde",
+          "refs": [
+            "14"
+          ]
+        },
+        {
+          "label": "Sandık taşıma ve birleştirme talebi",
+          "value": "Oy verme gününden en geç 1 ay önce; vali veya il seçim kurulu başkanı",
+          "refs": [
+            "14"
+          ]
+        },
+        {
+          "label": "Dışişleri mensubu görevlendirme",
+          "value": "En az daire başkanı seviyesinde",
+          "refs": [
+            "14"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "10",
+        "14"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "İl seçim kurulu nasıl kurulur?",
+      "body": "**Yapı:** 1 başkan, 2 asıl üye, 2 yedek üye.\n\n**Zaman:** Kurul 2 yılda bir, **ocak ayının son haftasında** belirlenir ve 2 yıl görev yapar.\n\n**Kimler arasından:** İl merkezinde görev yapan **hâkimler** arasından seçilir. Bu hâkimler kınama veya daha ağır disiplin cezası almamış olmalıdır. Ayrıca en az birinci sınıfa ayrılmış olmalı ve bu niteliği kaybetmemiş olmalıdır.\n\n**Kim belirler:** Adli yargı ilk derece mahkemesi adalet komisyonu, **ad çekme** ile belirler.\n- İlk çıkan hâkim **başkan**, sonraki 2 hâkim **asıl**, son çıkan 2 hâkim **yedek** üye olur.\n- Ad çekmeye katılacak hâkim 5'ten azsa önce ad çekme yapılır. Eksik kalanlar **en kıdemli** hâkimden başlanarak belirlenir.\n- Ad çekmeye katılacak hâkim hiç yoksa başkan ve bütün üyeler en kıdemli hâkimden başlanarak belirlenir.\n- Kıdem belirlenirken kınama veya daha ağır disiplin cezası almış olanlar kıdemsiz sayılır.\n\n**Boşalma:** Başkanlık boşalırsa asıl ve yedek üyelerden **en kıdemli hâkim** başkanlık eder. Üyelik boşalırsa aynı ad çekme usulüyle tamamlanır.\n\n**Görevi yapacak hâkim yoksa:** Merci, o yerin bağlı olduğu ağır ceza mahkemesinin yargı çevresindeki bir hâkime yetki verir. Orada da imkân yoksa en yakın ağır ceza mahkemelerinin yargı çevresinden bir hâkim gönderilir. Bu hâkim gelene kadar kurulun **gizli oyla** kendi arasından seçeceği bir üye başkanlık eder.",
+      "articleRefs": [
+        "15"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Siyasi parti temsilcileri",
+      "body": "**İl ve ilçe seçim kurullarında:** İki grup parti, o il ve ilçede teşkilatı varsa bu kurullarda **birer temsilci** bulundurur:\n- son milletvekili ve Cumhuriyet Senatosu genel ve ara seçimlerinde kendi listesinden yasama meclislerinden birine en az bir üye seçtirmiş partiler,\n- YSK'nın tespit ve ilan ettiği partiler.\n\n**YSK'da:** Seçime katılan partilerden iki grup, genel başkanlarının **yazılı yetkisi** şartıyla **bir asıl, bir yedek** temsilci bulundurabilir:\n- en son milletvekili genel seçiminde **en çok oy almış 4 parti**,\n- **TBMM'de grubu bulunan** partiler.\n\n**Yetki sınırı:**\n- Temsilciler kurulun bütün çalışma ve görüşmelerine katılır ama **oy kullanamaz.**\n- Görüş bildirirlerse kurul bunları dinler, sonra kendi arasında görüşüp karar verir ve kararı temsilcilere bildirir.\n- Temsilcilerin toplantıya katılmaması işlerin görüşülmesini **durdurmaz**.\n\n**Hakkın sona ermesi:** YSK'nın yaptığı ilandan seçime katılamayacağı anlaşılan partinin temsilci bulundurma hakkı sona erer. O seçim çevresinde seçime katılmayan partinin hakkı da sona erer.\n\n**Not:** \"Cumhuriyet Senatosu\" ifadesi metnindeki hâliyle verilmiştir.",
+      "articleRefs": [
+        "17"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "İlçe seçim kurulu ve geçici ilçe seçim kurulu",
+      "body": "**Yapı:** 1 başkan, 6 asıl, 6 yedek üye. Kurul 2 yılda bir, **ocak ayının son haftasında** kurulur ve 2 yıl görev yapar.\n\n**Başkan:** Başkan bir hâkimdir ve adli yargı ilk derece mahkemesi adalet komisyonunca **ad çekme** ile belirlenir.\n- İlçede görev yapan hâkimler arasından seçilir; merkez ilçelerde de aynı nitelikteki hâkimler arasından seçilir.\n- Hâkim kınama veya daha ağır disiplin cezası almamış, en az birinci sınıfa ayrılmış ve birinci sınıfa ayrılma niteliklerini kaybetmemiş olmalıdır.\n- Ad çekmeye katılacak hâkim yoksa **en kıdemli hâkim** başkan olur.\n- Başkanlık boşalırsa yeni başkan aynı usulle belirlenir.\n\n**Toplantı:** Kurul **asıl üyeleriyle** toplanır. Gelmeyen asıl üyenin yerine öncelikle **kendi yedeği** çağrılır.\n\n**Geçici ilçe seçim kurulu:** Seçmen sayısı **25 000'i aşan** ilçelerde kurulabilir. Bu kurul aşağıdaki görevleri ilçe seçim kurulu adına (niyabeten) yerine getirir:\n- seçim evrakını dağıtmak ve toplamak,\n- sandık kurulu başkanlarını ve en az bir üyeyi eğitmek,\n- sandık kurullarından sonuçları alıp birleştirmek ve bağlı olduğu ilçe seçim kuruluna teslim etmek.\n\nKurulun yapısı:\n- 1 başkan ve 6 üyeden oluşur.\n- Başkan, il ve ilçe seçim kurullarında görev almış hâkimlerden sonra gelen en kıdemli hâkimdir.\n- 2 üyeyi başkan, kamu görevlileri arasından belirler.\n- 4 üye, 4 yedeğiyle birlikte siyasi partilerden alınır.\n- Çalışma usulünü, kurulacağı ilçeleri, sayısını ve görev süresini **YSK** kararlaştırır.",
+      "articleRefs": [
+        "18"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "İlçe seçim kurulu üyeleri",
+      "body": "**Partilerden 4 asıl, 4 yedek üye:**\n- İlçe seçim kurulu başkanı, ilçede teşkilatı bulunan ve son milletvekili genel seçiminde **o ilçede en çok oy almış 4 partiye** tebligat yapar. Partiler birer asıl ve birer yedek üye adını **2 gün içinde** bildirir.\n- Eksik kalırsa aynı şartları taşıyan diğer partilerden, oy büyüklüğü sırasına göre tamamlanır. Oylarda eşitlik varsa **ad çekilir**.\n- Yine tamamlanamazsa YSK'nın ilan ettiği partilerden o ilçede teşkilatı olanlar arasında ad çekilir.\n- Partilerden doldurulamayan üyelikler Devlet memurlarından tamamlanır.\n\n**Devlet memurlarından 2 asıl ve yedek üye:** Memurda şu nitelikler aranır:\n- ilçe merkezinde görev yapmak,\n- **toplam memuriyet süresi 10 yıldan fazla** olmak,\n- yasama meclisleri veya yerel idare seçimlerinden birine parti adayı ya da aday adayı olarak katılmamış olmak,\n- **hiçbir partiye kaydolmamış** olmak.\n\nBu memurlar o ilçedeki görev sürelerine göre listelenir. Listenin **ilk 8 sırası** arasından ad çekilir. Ad çekme, partilerden gelen asıl üyelerin huzurunda başkan tarafından yapılır. Önce çıkanlar asıl, sonrakiler yedek olur. Aynı bakanlıktan birden fazla asıl üye olamaz; zorunlu durumlar saklıdır.\n\n**Boşalma:** Asıl üyelik boşalırsa yerine **kendi yedeği** gelir. Göreve gelen kişi, yerine geldiği üyenin süresini tamamlar. Seçime katılamayacağı anlaşılan ya da o çevrede seçime katılmayan partinin üyelerinin görevi sona erer.",
+      "articleRefs": [
+        "19"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Yurt Dışı İlçe Seçim Kurulunun görevleri",
+      "body": "- Yurt dışı seçmen kütüğüne kayıtlı vatandaşların seçim iş ve işlemlerinin düzenle yürütülmesini sağlar ve **yurt dışı sandık kurullarını** kurar.\n- Oy pusulalarını, arkası kendi mührüyle mühürlenmiş oy zarflarını ve diğer araçları gönderir. Bunlar, oy verme işleminin başlayacağı günden **en geç 7 gün önce**, Dışişleri Bakanlığı aracılığıyla temsilciliklerde hazır bulunmalıdır. Gerekirse oy sandığı, kabin gibi araçların mahallinden teminini Dışişleri Bakanlığından ister.\n- Yurt dışı sandık kurullarının işlem ve kararlarına yapılan itiraz ve şikâyetleri karara bağlar.\n- Yurt dışı seçmen kütüğüne askı süresinde yapılan itirazları sonuçlandırır. Kararları Nüfus ve Vatandaşlık İşleri Genel Müdürlüğüne gönderir.\n- Bazı seçmenlerin kütükteki kayıtlarının **dondurulmasına** karar verir: silah altındaki erler, erbaşlar ve askeri öğrenciler (izinli olsalar bile) ile kesinleşmiş mahkeme kararıyla kısıtlananlar.\n- Ağzı mühürlü gelen oy torbalarını, yurt içinde oy verme süresi bittikten sonra açtırır. Bunun için kurulan sandık kurulunda **1 başkan, 1 kamu görevlisi üye** bulunur. Ayrıca son milletvekili genel seçiminde Türkiye genelinde **en çok oy alan 3 partinin** bildirdiği birer asil ve yedek üye yer alır.\n- Sonuçları, geçici gümrük kapısı seçim kurullarından gelen sonuçlarla birleştirir ve **Ankara İl Seçim Kuruluna** iletir.",
+      "articleRefs": [
+        "20/A"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Sandık kurulu: başkan, üyeler, çalışma süresi",
+      "body": "**Yapı:** 1 başkan, 6 asıl, 6 yedek üye. Kurul **asıl üyeleriyle** toplanır.\n\n**Başkan (md 22):**\n- Mülki idare amiri, ilçede görev yapan tüm kamu görevlilerinin listesini ilçe seçim kurulu başkanlığına gönderir. Liste, yerleşim yeri adresleri esas alınarak hazırlanır.\n- İlçe seçim kurulu başkanı, gereken başkan sayısının **2 katı** kamu görevlisini ad çekmeyle tespit eder. Bunlardan mani hâli olmayanlar başkan olur.\n- Başkan göreve gelmezse **kamu görevlisi üye** başkanlık eder. O da yoksa **en yaşlı üye** başkanlık eder.\n\n**Partilerden 5 asıl, 5 yedek üye (md 23):**\n- Tebligat, o seçim çevresinde seçime katılan ve ilçede teşkilatı bulunan partilerden, son milletvekili genel seçiminde o ilçede **en çok oy almış 5 partiye** yapılır.\n- Bu partiler her sandık için birer asıl ve birer yedek üye adını **5 gün içinde** bildirir.\n- Eksik kalırsa diğer partilerden oy sırasına göre tamamlanır. Oylarda eşitlik varsa ad çekilir.\n- Bir parti, **oluru olmadan** başka bir partinin üyesini sandık kurulu üyesi gösteremez.\n\n**Kamu görevlisi 1 asıl, 1 yedek üye:** Başkan olarak belirlenmeyen kamu görevlileri arasından, gereken üye sayısının **2 katı** ad çekmeyle tespit edilir. Mani hâli olmayanlar asıl ve yedek üye olur.\n\n**Ad çekme ve eksikler:**\n- Ad çekmeyi ilçe seçim kurulunun huzurunda kurulun başkanı yapar.\n- Gelmeyen asıl üyenin yerine önce **kendi yedeği** alınır.\n- Üyelikler yine doldurulamazsa ilçe seçim kurulu başkanı eksikleri, o çevrede bulunan ve görev verilmesinde sakınca olmayan kimselerden tamamlar.\n\n**Kuruluş ve çalışma (md 24):** Sandık kurulları **YSK'nın tespit ve ilan ettiği tarihte** kurulur. Üyeler, YSK'nın yerel özelliklere göre tespit ettiği tarihte göreve başlar. Sayıma ilişkin evrak ilçe seçim kuruluna teslim edilinceye kadar **aralıksız** çalışırlar.",
+      "articleRefs": [
+        "21",
+        "22",
+        "23",
+        "24"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Müşahit, seçilemeyenler ve and",
+      "body": "Üç ayrıntı sık şaşırtır.\n\n**Müşahit:** Sandık başı işlemlerini takip etmek için **siyasi partiler ve bağımsız adaylar** birer müşahit gönderebilir. Bağımsız adayı bu listeden çıkarma.\n\n**Kurullara seçilemeyenler:**\n- idare amirleri,\n- zabıta amir ve memurları,\n- Askeri Ceza Kanununun 3 üncü maddesinde yazılı askeri şahıslar,\n- TBMM üyeleri,\n- adaylar.\n\nSiyasi partiler, siyasi partilere üye olamayacak kimseleri de bu kurullarda üye, müşahit veya temsilci olarak görevlendiremez.\n\n**And:** md 27'ye göre görevine başlamadan önce kurul önünde birer birer and içenler **YSK, il ve ilçe seçim kurullarının** başkan, asıl ve yedek üyeleridir. Sandık kurulu bu maddede sayılmaz, ama bu onun and içmediği anlamına gelmez: **Sandık kurulu başkan ve üyeleri** de oy verme günü göreve başlamadan önce, ilk iş olarak, sandık başında birer birer and içer (md 70). Sandık kurulunun andını yanlış sayma; farkı yer ve zamandadır.\n\n**Not:** \"648 sayılı Siyasi Partiler Kanunu\" atfı metnindeki hâliyle verilmiştir.",
+      "articleRefs": [
+        "25",
+        "26",
+        "27",
+        "70"
+      ]
+    },
+    {
+      "type": "numbers",
+      "title": "Sayılar: kurulların oluşumu",
+      "rows": [
+        {
+          "label": "İl seçim kurulu",
+          "value": "1 başkan, 2 asıl, 2 yedek üye; hepsi hâkim",
+          "refs": [
+            "15"
+          ]
+        },
+        {
+          "label": "İl seçim kurulu kuruluşu ve görev süresi",
+          "value": "2 yılda bir, ocak ayının son haftası; 2 yıl",
+          "refs": [
+            "15"
+          ]
+        },
+        {
+          "label": "İl seçim kurulu ad çekmesinde hâkim yetersizliği",
+          "value": "5'ten az hâkim: eksikler en kıdemliden",
+          "refs": [
+            "15"
+          ]
+        },
+        {
+          "label": "İlçe seçim kurulu",
+          "value": "1 başkan, 6 asıl, 6 yedek üye; 2 yıl görev",
+          "refs": [
+            "18"
+          ]
+        },
+        {
+          "label": "Geçici ilçe seçim kurulu",
+          "value": "Seçmen sayısı 25 000'i aşan ilçe; 1 başkan, 6 üye (2 kamu görevlisi, 4 parti + 4 yedek)",
+          "refs": [
+            "18"
+          ]
+        },
+        {
+          "label": "İlçe seçim kurulu: parti üyeleri",
+          "value": "En çok oy almış 4 parti; 4 asıl, 4 yedek; ad bildirme 2 gün",
+          "refs": [
+            "19"
+          ]
+        },
+        {
+          "label": "İlçe seçim kurulu: memur üyeler",
+          "value": "2 asıl ve yedek; memuriyet 10 yıldan fazla; listenin ilk 8 sırası",
+          "refs": [
+            "19"
+          ]
+        },
+        {
+          "label": "Yurt dışı seçim araç ve gereçleri",
+          "value": "Oy verme başlangıcından en geç 7 gün önce temsilcilikte",
+          "refs": [
+            "20/A"
+          ]
+        },
+        {
+          "label": "Yurt dışı oy torbası sandık kurulu",
+          "value": "1 başkan, 1 kamu görevlisi üye; en çok oy alan 3 partiden birer asil ve yedek",
+          "refs": [
+            "20/A"
+          ]
+        },
+        {
+          "label": "Sandık kurulu",
+          "value": "1 başkan, 6 asıl, 6 yedek üye",
+          "refs": [
+            "21"
+          ]
+        },
+        {
+          "label": "Sandık kurulu başkanı ad çekmesi",
+          "value": "İhtiyaç duyulan başkan sayısının 2 katı kamu görevlisi",
+          "refs": [
+            "22"
+          ]
+        },
+        {
+          "label": "Sandık kurulu: parti üyeleri",
+          "value": "En çok oy almış 5 parti; 5 asıl, 5 yedek; ad bildirme 5 gün",
+          "refs": [
+            "23"
+          ]
+        },
+        {
+          "label": "Sandık kurulu: kamu görevlisi üye",
+          "value": "1 asıl, 1 yedek; ihtiyacın 2 katı ad çekme",
+          "refs": [
+            "23"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "15",
+        "18",
+        "19",
+        "20/A",
+        "21",
+        "22",
+        "23"
+      ]
+    },
+    {
+      "type": "compare",
+      "title": "İl seçim kurulu ↔ ilçe seçim kurulu",
+      "rows": [
+        {
+          "aspect": "Oluşum",
+          "left": "1 başkan, 2 asıl, 2 yedek üye; hepsi hâkim",
+          "right": "1 başkan, 6 asıl, 6 yedek üye; başkan hâkim, üyeler 4 parti + 2 Devlet memuru",
+          "refs": [
+            "15",
+            "18",
+            "19"
+          ]
+        },
+        {
+          "aspect": "Kuruluş zamanı ve süre",
+          "left": "2 yılda bir, ocak ayının son haftası; 2 yıl",
+          "right": "2 yılda bir, ocak ayının son haftası; 2 yıl",
+          "refs": [
+            "15",
+            "18"
+          ]
+        },
+        {
+          "aspect": "Başkanın belirlenmesi",
+          "left": "Adalet komisyonunun ad çekmesinde ilk çıkan hâkim",
+          "right": "Adalet komisyonunun ad çekmesiyle belirlenen hâkim; hâkim yoksa en kıdemli hâkim",
+          "refs": [
+            "15",
+            "18"
+          ]
+        },
+        {
+          "aspect": "Başkanlık boşalırsa",
+          "left": "Asıl ve yedek üyelerden en kıdemli hâkim başkanlık eder",
+          "right": "Başkan aynı usulle yeniden belirlenir",
+          "refs": [
+            "15",
+            "18"
+          ]
+        },
+        {
+          "aspect": "İncelediği itirazlar",
+          "left": "İlçe seçim kurullarının teşekkülü, işlemleri ve kararları; derhal",
+          "right": "Sandık kurullarının teşekkülü, işlemleri ve kararları",
+          "refs": [
+            "16",
+            "20"
+          ]
+        },
+        {
+          "aspect": "Araç ve gereç gönderdiği yer",
+          "left": "İlçe seçim kurulları",
+          "right": "Sandık kurulları",
+          "refs": [
+            "16",
+            "20"
+          ]
+        },
+        {
+          "aspect": "Tutanak",
+          "left": "İlçe tutanaklarını birleştirip il seçim çevresi tutanağını düzenler",
+          "right": "Sandık tutanaklarını birleştirip ilçe seçim tutanağını düzenler, il seçim kuruluna derhal teslim eder",
+          "refs": [
+            "16",
+            "20"
+          ]
+        },
+        {
+          "aspect": "Kendine özgü görev",
+          "left": "Aday beyanname ve listelerini alır, ilan eder, itirazları inceler; geçici ve kesin aday listelerini ilan eder",
+          "right": "Sandık kurullarını kurar",
+          "refs": [
+            "16",
+            "20"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "15",
+        "16",
+        "18",
+        "19",
+        "20"
+      ]
+    },
+    {
+      "type": "exam_stats",
+      "title": "Sınav der ki",
+      "rows": [
+        {
+          "label": "Bu ünitenin maddelerinden yayındaki soru",
+          "value": "1",
+          "refs": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "20/A",
+            "21",
+            "22",
+            "23",
+            "24",
+            "25",
+            "26",
+            "27"
+          ]
+        },
+        {
+          "label": "md 14",
+          "value": "1 soru",
+          "refs": [
+            "14"
+          ]
+        },
+        {
+          "label": "Hiç soru çıkmamış",
+          "value": "md 1, md 2, md 3, md 4, md 5, md 6, md 7, md 8, md 9, md 10, md 15, md 16, md 17, md 18, md 19, md 20, md 20/A, md 21, md 22, md 23, md 24, md 25, md 26, md 27",
+          "refs": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "20/A",
+            "21",
+            "22",
+            "23",
+            "24",
+            "25",
+            "26",
+            "27"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "14",
+        "15",
+        "16",
+        "17",
+        "18",
+        "19",
+        "20",
+        "20/A",
+        "21",
+        "22",
+        "23",
+        "24",
+        "25",
+        "26",
+        "27"
+      ],
+      "generated": true
+    },
+    {
+      "type": "bridge",
+      "title": "Bu üniteden soru çöz",
+      "articleRefs": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "14",
+        "15",
+        "16",
+        "17",
+        "18",
+        "19",
+        "20",
+        "20/A",
+        "21",
+        "22",
+        "23",
+        "24",
+        "25",
+        "26",
+        "27"
+      ],
+      "generated": true,
+      "rows": [
+        {
+          "label": "Madde kapsamlı seans",
+          "value": "md 1–10, 14–20, 20/A, 21–27, 1 soru",
+          "refs": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "20/A",
+            "21",
+            "22",
+            "23",
+            "24",
+            "25",
+            "26",
+            "27"
+          ]
+        }
+      ]
+    }
+  ]
+}

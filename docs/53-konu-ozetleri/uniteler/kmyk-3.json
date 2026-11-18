@@ -1,0 +1,588 @@
+{
+  "unit": {
+    "slug": "kmyk-3",
+    "legislationSlug": "5018-sayili-kamu-mali-yonetimi-ve-kontrol-kanunu",
+    "topicId": "270990de-e156-4db0-b5fb-eb469562dd8a",
+    "title": "Bütçe Uygulaması, Kamu Gelirleri, Kamu Malları ve Muhasebe",
+    "subtitle": "Ödeme sırası, ön ödeme, bağış ve yardımlar, faaliyet raporları, kesin hesap, taşınır-taşınmaz yönetimi ve muhasebe ilkeleri",
+    "articleFrom": "34",
+    "articleTo": "51",
+    "readingMinutes": 15,
+    "sourceLabel": "AI özeti — 5018 Sayılı Kamu Malî Yönetimi ve Kontrol Kanunu, md 34–51",
+    "articleNos": [
+      "34",
+      "35",
+      "36",
+      "37",
+      "38",
+      "39",
+      "40",
+      "41",
+      "42",
+      "43",
+      "44",
+      "45",
+      "46",
+      "47",
+      "48",
+      "49",
+      "50",
+      "51"
+    ],
+    "generatedBy": "claude-opus-5-5 (ozet-uret.ts)",
+    "sortOrder": 3
+  },
+  "blocks": [
+    {
+      "type": "concept",
+      "title": "Ödenemeyen para nereye gider?",
+      "body": "Ödeme emri belgesi düzenlendi ama para hak sahibine ödenemedi diyelim. Tutar ortada kalmaz. Önce **bütçeye gider yazılır**, sonra **emanet hesaplarına alınır** ve ödeme oradan yapılır. Emanet de sonsuza kadar beklemez. Malın alındığı ya da hizmetin yapıldığı malî yılı izleyen **beşinci yılın sonuna** kadar talep edilmeyen tutarlar bütçeye **gelir** kaydedilir. Bundan sonra bu tutarı ancak **mahkeme kararı** üzerine alabilirsin. Alacaklı tarafını da aklında tut. İlgili olduğu malî yılın sonundan başlayarak **beş yıl** içinde, geçerli bir mazereti olmadan yazılı talepte bulunmadığı ya da belgelerini vermediği için ödenemeyen borçlar **zamanaşımına uğrar ve kamu idaresi lehine düşer**.",
+      "articleRefs": [
+        "34"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Nakit yetmezse: ödeme sırası ve öncelikler",
+      "body": "**Kural:** Kamu idaresinin nakit mevcudu tüm ödemeleri karşılayamıyorsa giderler **muhasebe kayıtlarına alınma sırasına** göre ödenir.\n\n**İstisna — sırasıyla öncelik verilenler:**\n1. Kanunları gereğince diğer kamu idarelerine ödenmesi gereken vergi, resim, harç, prim, fon kesintisi, pay ve benzeri tutarlar\n2. Tarifeye bağlı ödemeler\n3. İlama bağlı borçlar\n4. Ödenmemesi hâlinde gecikme cezası veya faiz gibi ek yük getirecek borçlar\n5. Ödenmesi talep edilen emanet hesaplarındaki tutarlar\n\n**Ödeneği yerinde bulunmayan giderler (genel bütçe):** Bu kural şu giderleri kapsar:\n- bir taahhüde ve harcama talimatına dayanmayan,\n- Cumhurbaşkanlığınca belirlenecek ekonomik kodlardan yapılan,\n- bütçede ödeneği öngörülmüş olmakla birlikte oluştuğu yer ve zamanda ödeneği bulunmayan giderler.\n\nBu giderler harcama belgeleri eklenerek usulüne göre gerçekleştirilir ve ilgili hesaplara alınır. Ödeme **ödeneğin gelmesini müteakip** yapılır. Ödenek gönderme belgeleri **en geç malî yılın sonuna kadar** muhasebe birimine gönderilir. Usul ve esasları Hazine ve Maliye Bakanlığı belirler.",
+      "articleRefs": [
+        "34"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Ön ödeme: avans ve kredi",
+      "body": "**Ön ödeme yolları:** avans vermek veya kredi açmak.\n\n**Şartlar:** harcama yetkilisinin uygun görmesi **ve** karşılığı ödeneğin saklı tutulması.\n\n**Hangi hâllerde:**\n- İlgili kanunlarda öngörülen hâller\n- Gerçekleştirme işlemlerinin tamamlanması beklenilemeyecek **ivedi veya zorunlu** giderler\n\nVerilecek avansın **üst sınırları** merkezî yönetim bütçe kanununda gösterilir.\n\n**Yükleniciye bütçe dışı avans:** Üç şartla ödenebilir:\n- sözleşmesinde belirtilmiş olmalıdır,\n- **teminat karşılığında** verilir,\n- yüklenme tutarının **yüzde otuzunu** geçemez.\n\nİlgili kanunların veya Cumhurbaşkanlığı kararnamelerinin bütçe dışı avansa ilişkin hükümleri saklıdır.",
+      "articleRefs": [
+        "35"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Devreden kredi, yüklenme artığı ve mutemedin mahsubu",
+      "body": "**Akreditif kredi artıkları:** Ertesi yıla devredilir, ancak ödenekleri iptal olunur. Devredilen artıkların karşılığı, idare bütçesinin ilgili tertibine ödenek olarak kaydedilir. Bu kaydı genel bütçede **Cumhurbaşkanı**, diğer idarelerde **üst yönetici** yapar.\n\n**Yüklenme artığı:** Yıl sonunda yüklenme artığının devredilmesi için şu koşullar **birlikte** aranır:\n- sözleşmenin bitim tarihinde hizmetin bir kısmı yerine getirilememiş **ya da** zorunlu nedenlerle sözleşmenin uygulanmasına başlanamamış olmalı,\n- **ve** idarece **ek süre** verilmiş olmalı,\n- **ve** bu süre ertesi malî yıla taşmış olmalı.\n\nBu tutarların ödenekleri için akreditif hükümleri uygulanır. Hizmet ek sürede yapılıp kanıtlayıcı belgeler verilince tutar, **hizmetin yapıldığı yıl** bütçesine gider kaydıyla ödenir.\n\n**Mutemet:** İlgili kanunlarında başka bir süre yoksa harcadığı tutarın kanıtlayıcı belgelerini **avanslarda bir ay, kredilerde üç ay** içinde muhasebe yetkilisine verir. Artan tutarı da iade etmek zorundadır. Süresinde mahsup edilmeyen avanslar hakkında **6183 sayılı Kanun** hükümleri uygulanır.\n\n**Usul:** Merkezî yönetimde Cumhurbaşkanınca çıkarılan yönetmelik, diğer idarelerde ilgili mevzuat uygulanır. **Emniyet Genel Müdürlüğü, Jandarma Genel Komutanlığı ve Sahil Güvenlik Komutanlığı** için ayrı bir düzen vardır. Bunların bir mali yıl içinde tamamlanması mümkün olmayan asayiş ve güvenlik hizmetlerine yönelik alımlarında avans ve kredi usulleri **İçişleri Bakanlığınca** çıkarılan yönetmelikle düzenlenir.",
+      "articleRefs": [
+        "35"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Gelir toplamanın ilkeleri ve kanunilik",
+      "body": "**Gelir toplama ilkeleri:**\n- Gelir politikaları ve uygulamalarına ilişkin ilkeler, amaçlar, stratejiler ve taahhütler **her malî yıl başında** kamuoyuna duyurulur.\n- Mükellef ve sorumlulara, vergi, resim, harç ve benzeri yükümlülüklerini kolayca yerine getirmeleri için gerekli hizmetler sağlanır.\n- Mükellef ve sorumluların vergiye uyumu teşvik edilir.\n- Hakların korunması ve yükümlülükler konusunda mükelleflerin bilgilendirilmesi için ilgili idareler gerekli önlemleri alır.\n\n**Kanunilik:** Vergi, resim, harç ve benzeri malî yükümlülükler **kanunla** konulur, değiştirilir veya kaldırılır.\n- Genel yönetim kapsamındaki idarelerin gelirlerinin kanuni dayanakları bütçelerinde gösterilir.\n- Tarh, tahakkuk ve tahsil, ilgili kanunlardaki usullere göre yapılır.\n- Genel bütçe gelirlerinde bu işleri Hazine ve Maliye Bakanlığı ya da tarh ve tahakkuka ilgili mevzuatına göre yetkili idareler yürütür.\n\n**Sorumluluk:** Kamu gelirlerinin tarh, tahakkuk ve tahsiliyle yetkili ve görevli olanlar, bu işlemlerin **zamanında ve eksiksiz** yapılmasından sorumludur.\n\n**Silme:** Tahsili zamanaşımına uğrayan gelirlerin silinmesine ilişkin usul ve esasları Hazine ve Maliye Bakanlığı belirler. İlgili kanunlardaki hükümler saklıdır.",
+      "articleRefs": [
+        "36",
+        "37",
+        "38"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Pay ödeneği eklenir, özel ödenek eklenmez",
+      "body": "**Paylar:** Genel yönetim kapsamındaki bir idarenin topladığı vergi, resim, harç ve benzeri gelirlerden başka idare, kurum ve kuruluşlara **verilecek paylar**, **geliri toplayan idarenin bütçesine** bu amaçla konulan ödenekten karşılanır. Malî yıl içinde kullanılabilecek ödenek, tahsil edilen miktara göre hesaplanan pay miktarını geçemez. Hesaplanan pay, ayrılan ödeneği aşarsa **aradaki farkı geçmemek kaydıyla ödenek eklenebilir**. Bu konuda genel bütçede Hazine ve Maliye Bakanı, diğer idarelerde üst yöneticiler yetkilidir.\n\n**Özel gelir – özel ödenek:** Özel ödenek miktarları ilgili idarelerin bütçelerinde gösterilir. Malî yıl içinde kullanılabilecek özel ödenek, **tahsil edilen özel gelir tutarını geçemez**. Tahsil edilen özel gelir ödenek tutarını aşsa bile **ödenek eklenemez**.\n\n**Tarifeler:** Fiyatlandırılabilir mal ve hizmetlerin tarifeleri ile uygulama usul ve esasları, **Hazine ve Maliye Bakanlığının görüşü alınarak** ilgili kamu idarelerince belirlenir.\n\n**Ödenek işlemleri:** Özel gelirlerin ödenek kaydı, gelecek yıla devri ve iptaline ilişkin yetki ve işlemler merkezî yönetim bütçe kanununda gösterilir.",
+      "articleRefs": [
+        "37",
+        "39"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Bağış ve yardım: toplama yasağı ve kayıt",
+      "body": "**Yasak:** Hiçbir gerçek veya tüzel kişi, kamu hizmetinin karşılığı olarak ya da kamu hizmetleriyle ilişkilendirerek bağış veya yardım toplayamaz. Benzeri adlar altında tahsilat da yapamaz.\n\n**Kayıt:** Kamu idarelerine yapılan her türlü bağış ve yardım **gelir** kaydedilir. Nakdi olmayan bağış ve yardımlar, ilgili mevzuatına göre **değerlemeye tâbi tutularak** kayda alınır.\n\n**Şartlı bağış ve yardım:** Kamu yararına kullanılmak üzere yapılır. Hizmeti yapacak idarenin **üst yöneticisi** uygun görürse:\n- bütçede açılacak bir tertibe gelir kaydedilir,\n- şart kılındığı amaca harcanmak üzere açılacak bir tertibe ödenek kaydedilir.\n\nDış finansman kaynağından sağlananlarda 4749 sayılı Kanun hükümleri saklıdır. Bu ödenekten amaç dışında başka bir tertibe **aktarma yapılamaz**.",
+      "articleRefs": [
+        "40"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Şartlı bağışta devir, iptal ve iade",
+      "body": "**Devir:** Malî yıl sonuna kadar harcanmayan tutarlar, bağış ve yardımın amacı gerçekleşinceye kadar ertesi yıl bütçesine devredilir ve ödenek kaydedilir.\n\n**İptal edilebilecek ödenekler:**\n- Tahsis amacı gerçekleştirilmiş olanlardan kalan tutarlar\n- Tahsis amacını gerçekleştirmeye yetersiz olanlar\n- Yılı bütçesinde belirlenen tutarı aşmayan ve **iki yıl** devrettiği hâlde harcanmayanlar\n\n**İptal yetkisi:** Genel bütçede **Cumhurbaşkanı**, diğer idarelerde **üst yönetici**.\n\n**İade:** Bağış ve yardım, kullanılmadığı ya da amaç dışı kullanıldığı için geri istenirse **bütçeye gider kaydıyla** ilgilisine geri verilir.\n\n**Zarar:** Şu tutarlar **sorumluluğu tespit edilenlere ödettirilir**:\n- şartlı bağışın zamanında kullanılmamasından doğan zararlar,\n- amaç dışı kullanım nedeniyle yapılan harcamalar.",
+      "articleRefs": [
+        "40"
+      ]
+    },
+    {
+      "type": "numbers",
+      "title": "Sayılar ve süreler: bütçe uygulaması ve gelirler",
+      "rows": [
+        {
+          "label": "Emanette talep edilmeyen tutarın bütçeye gelir kaydı",
+          "value": "Malın alındığı / hizmetin yapıldığı malî yılı izleyen beşinci yılın sonu",
+          "refs": [
+            "34"
+          ]
+        },
+        {
+          "label": "Gelir kaydedilen emanet tutarının ödenmesi",
+          "value": "Mahkeme kararı üzerine",
+          "refs": [
+            "34"
+          ]
+        },
+        {
+          "label": "Alacaklının talep etmediği borcun zamanaşımı",
+          "value": "Malî yıl sonundan başlayarak 5 yıl",
+          "refs": [
+            "34"
+          ]
+        },
+        {
+          "label": "Ödeneği yerinde bulunmayan giderde ödenek gönderme belgesi",
+          "value": "En geç malî yılın sonu",
+          "refs": [
+            "34"
+          ]
+        },
+        {
+          "label": "Yükleniciye bütçe dışı avans üst sınırı",
+          "value": "Yüklenme tutarının %30'u (teminat karşılığı)",
+          "refs": [
+            "35"
+          ]
+        },
+        {
+          "label": "Avans üst sınırlarının gösterildiği yer",
+          "value": "Merkezî yönetim bütçe kanunu",
+          "refs": [
+            "35"
+          ]
+        },
+        {
+          "label": "Mutemedin belge verme süresi — avans",
+          "value": "1 ay",
+          "refs": [
+            "35"
+          ]
+        },
+        {
+          "label": "Mutemedin belge verme süresi — kredi",
+          "value": "3 ay",
+          "refs": [
+            "35"
+          ]
+        },
+        {
+          "label": "Gelir politikalarının kamuoyuna duyurulması",
+          "value": "Her malî yıl başında",
+          "refs": [
+            "36"
+          ]
+        },
+        {
+          "label": "Şartlı bağış ödeneğinde iptal edilebilecek devir",
+          "value": "Yılı bütçesinde belirlenen tutarı aşmayan ve 2 yıl devrettiği hâlde harcanmayan",
+          "refs": [
+            "40"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "34",
+        "35",
+        "36",
+        "40"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Faaliyet raporları: kim hazırlar, kime gider?",
+      "body": "**Hazırlayan:** Üst yöneticiler ve bütçeyle ödenek tahsis edilen harcama yetkilileri, hesap verme sorumluluğu çerçevesinde **her yıl** faaliyet raporu hazırlar.\n\n**Rapor türleri:**\n- **Birim faaliyet raporu:** Harcama yetkilileri hazırlar.\n- **İdare faaliyet raporu:** Üst yönetici, birim raporlarını esas alarak hazırlar ve **kamuoyuna açıklar**. Merkezî yönetim idareleri ve sosyal güvenlik kurumları birer örneğini **Sayıştay ve Cumhurbaşkanlığına** gönderir.\n- **Mahallî idarelerin idare faaliyet raporları:** Birer örneği **Sayıştay ve Çevre ve Şehircilik Bakanlığına** gönderilir.\n- **Mahallî idareler genel faaliyet raporu:** Çevre ve Şehircilik Bakanlığı kendi değerlendirmeleriyle hazırlar ve kamuoyuna açıklar. Birer örneği Sayıştay ve Cumhurbaşkanlığına gönderilir.\n- **Genel faaliyet raporu:** Cumhurbaşkanlığı hazırlar. Merkezî yönetim idareleri ile sosyal güvenlik kurumlarının bir malî yıldaki faaliyet sonuçlarını gösterir. Mahallî idarelerin malî yapısına ilişkin genel değerlendirmeler de içerir. Kamuoyuna açıklanır, bir örneği Sayıştaya gönderilir.\n\n**Sayıştay'dan Meclise:** Sayıştay şu raporları dış denetim sonuçlarını dikkate alarak ve görüşlerini belirterek Türkiye Büyük Millet Meclisine sunar:\n- idare faaliyet raporları (mahallî idarelerinkiler hariç),\n- mahallî idareler genel faaliyet raporu,\n- genel faaliyet raporu.\n\nMeclisteki görüşmelere **üst yöneticinin veya görevlendireceği yardımcısının ilgili bakanla birlikte** katılması zorunludur.\n\n**İdare faaliyet raporunun içeriği:**\n- idareye ilişkin genel bilgiler,\n- malî bilgiler: kullanılan kaynaklar, bütçe hedef ve gerçekleşmeleri, sapmaların nedenleri, varlık ve yükümlülükler, yardım yapılan birlik, kurum ve kuruluşların faaliyetleri,\n- stratejik plan ve performans programı uyarınca yürütülen faaliyetler ve performans bilgileri.\n\n**Usul:** Sayıştayın görüşü alınarak Cumhurbaşkanınca çıkarılan yönetmelikle belirlenir.\n\n**Not:** Bakanlık adı metnindeki hâliyle verilmiştir.",
+      "articleRefs": [
+        "41"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Kesin hesap kanunu",
+      "body": "**Onama:** Türkiye Büyük Millet Meclisi, merkezî yönetim bütçe kanununun uygulama sonuçlarını onama yetkisini **kesin hesap kanunuyla** kullanır.\n\n**Hazırlık:** Teklifi **Hazine ve Maliye Bakanlığı** hazırlar. Bunu muhasebe kayıtlarını dikkate alarak ve merkezî yönetim bütçe kanununun şekline uygun olarak yapar.\n\n**Sunuş:** Teklif, bir yıllık uygulama sonuçlarını karşılaştırmalı gösteren gerekçesiyle birlikte sunulur. **İzleyen malî yılın Haziran ayı sonuna kadar Cumhurbaşkanı** tarafından Türkiye Büyük Millet Meclisine sunulur. Bir örneği Sayıştaya gönderilir.\n\n**Teklifin ekleri:**\n- a) Genel mizan\n- b) Bütçe gelirleri kesin hesap cetveli ve açıklaması\n- c) Bütçe giderleri kesin hesap cetvelleri ve açıklaması\n- d) Bütçe gelir ve giderlerinin iller ve idareler itibarıyla dağılımı\n- e) Devlet borçları ve Hazine garantilerine ilişkin cetveller\n- f) Yılı içerisinde silinen kamu alacakları cetveli\n- g) Mal yönetim hesabı icmal cetvelleri\n- h) Hazine ve Maliye Bakanlığınca gerekli görülen diğer belgeler\n\n**Usul:** Merkezî yönetim idareleri bütçelerinin kesin hesabına ilişkin usul ve esasları Hazine ve Maliye Bakanlığı belirler.\n\n**Görüşme:** Şu belgeler merkezî yönetim bütçe kanunu teklifiyle **birlikte** görüşülür:\n- idarelerin faaliyet raporları,\n- genel faaliyet raporu,\n- dış denetim genel değerlendirme raporu,\n- kesin hesap kanunu teklifi.\n\nBu raporlar ile genel uygunluk bildirimi Meclis komisyonlarında **öncelikle** görüşülür.\n\n**Mahallî idareler ve sosyal güvenlik kurumları:** Bütçelerinin kesin hesaba bağlanması kendi kanunlarındaki hükümlere göre yapılır.",
+      "articleRefs": [
+        "42"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Genel uygunluk bildirimi",
+      "body": "**Kim, ne zaman:** Sayıştay, merkezî yönetim kapsamındaki idareler için genel uygunluk bildirimini düzenler. Bildirimi, kesin hesap kanun teklifinin **verilmesinden başlayarak en geç yetmiş beş gün** içinde Türkiye Büyük Millet Meclisine sunar.\n\n**Neye dayanır:** Dış denetim raporları, idare faaliyet raporları ve genel faaliyet raporu dikkate alınarak hazırlanır.\n\n**Dikkat:** Teklifin ve bildirimin Meclise verilmiş olması iki sonuç doğurmaz:\n- O yıla ait Sayıştayca sonuçlandırılmamış denetimleri **önlemez**.\n- Hesapların **kesin hükme bağlandığı anlamına gelmez**.",
+      "articleRefs": [
+        "43"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Kamu malları: hangi konu nerede düzenlenir?",
+      "body": "**İlgili kanunlarında düzenlenenler:**\n- taşınır ve taşınmaz edinilmesi, yönetilmesi, trampası, elden çıkarılması,\n- ecrimisilin tahsil ve takibinde izlenecek yöntem,\n- Devletin hüküm ve tasarrufu altındaki yerlerin yönetimi ve korunması,\n- işgalli malların tahliyesi gibi hususlar.\n\n**Cumhurbaşkanınca çıkarılan yönetmeliklerle belirlenenler:**\n- bu malların kaydı,\n- taşınırların muhafazası ve kullanımı,\n- mal yönetim hesabının verilmesi,\n- mal yönetim sorumluları ile onlar adına görev yapacakların belirlenmesi.\n\n**Güvenlik ve istihbarat birimleri:** Türk Silahlı Kuvvetleri, Jandarma Genel Komutanlığı, Sahil Güvenlik Komutanlığı, Millî İstihbarat Teşkilatı ve Emniyet Genel Müdürlüğü için **ayrı bir hüküm** vardır. Bunların **taşınırlarının** kayda alınması ile yönetim ve **iç denetimine** ilişkin usul ve esaslar, **Cumhurbaşkanınca çıkarılan yönetmelikle** belirlenir.",
+      "articleRefs": [
+        "44"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Taşınır ve taşınmaz: edinme, tescil, bedelsiz devir",
+      "body": "**Edinme:** Genel yönetim kapsamındaki idareler, kamu hizmetlerinin zorunlu kıldığı durumlarda gereken nicelik ve nitelikte taşınır ve taşınmaz edinebilir.\n- Yer: yurt içinde veya yurt dışında.\n- Yol: bedeli **peşin veya taksitle ödeyerek ya da finansal kiralama** yoluyla.\n\nTaşınmaz satın alma veya kamulaştırma işlemleri, **yetki devri** yoluyla başka bir kamu idaresi eliyle yürütülebilir.\n\n**Tescil:**\n- Genel bütçe kapsamındaki idarelerin edindiği taşınmazlar → **Hazine adına**\n- Diğer kamu idarelerine ait taşınmazlar → **kendi tüzel kişilikleri adına**\n\nHazine adına tescil edilen taşınmazları **Çevre ve Şehircilik Bakanlığı** yönetir. Tescil işlemleri, adına tescil yapılan idarenin taşınmazın bulunduğu yerdeki ilgili birimine bildirilir.\n\n**Kendi ürettiğini kullanma:** İdare kendi ürettiği malı kendi tüketiminde kullanırsa bedeli **rayiç bedel** üzerinden ilgili ödenek tertibine gider, karşılığı da gelir kaydedilir.\n\n**Bedelsiz devir:** Kamu idareleri şunları diğer kamu idarelerine bedelsiz devredebilir:\n- ihtiyaç fazlası taşınırlarını,\n- taşınmazlarını; ancak tapu kütüğüne **şerh** konulması şarttır. Şerh, taşınmazın kamu hizmetinde kullanılacağını ve amacına uygun kullanılmazsa geri alınacağını gösterir.\n\nDevredilmeyecek mallar ile devir ve kayıt usullerini Çevre ve Şehircilik Bakanlığı belirler.\n\n**Uyuşmazlık:** İdareler arasındaki taşınmaz mülkiyeti uyuşmazlıklarını **görevli mahkemeler** çözer.\n\n**Not:** Bakanlık adı metnindeki hâliyle verilmiştir.",
+      "articleRefs": [
+        "45"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Satış ve tahsis yetkisi",
+      "body": "**Satış:**\n- Genel bütçe kapsamındaki idarelerin her türlü taşınır ve taşınmazının satışına **Çevre ve Şehircilik Bakanlığı** yetkilidir. Satış bedelleri **genel bütçeye gelir** kaydedilir.\n- Diğer kamu idarelerinde elden çıkarma, kanunlarında ve Cumhurbaşkanlığı kararnamelerinde belirtilen **yetkili organlarının kararıyla** yapılır.\n- Merkezî yönetim idarelerinin taşınmazlarından değeri, her yıl merkezî yönetim bütçe kanununda belirtilen **sınırın üzerinde** olanlar **Cumhurbaşkanı kararıyla** satılır.\n\n**Tahsis:** Kamu idareleri, kanunlarında veya Cumhurbaşkanlığı kararnamelerinde belirtilen hizmetleri yerine getirmek için tahsis yapabilir. Mülkiyetlerindeki taşınmazları ve Devletin hüküm ve tasarrufu altındaki yerleri **birbirlerine ve köy tüzel kişiliklerine bedelsiz** tahsis edebilirler. Tahsis edilen taşınmaz **amaç dışı kullanılamaz**.\n\n**Tahsis yetkisi:**\n- Hazinenin özel mülkiyetindeki taşınmazlar ile Devletin hüküm ve tasarrufu altındaki yerler → **Çevre ve Şehircilik Bakanlığı**. Bakanlık bunları tahsis eder; kamu ihtiyaçları için gerekli olmayanların tahsisini de kaldırır.\n- Diğer taşınmazların tahsisi ve tahsisin kaldırılması → **maliki kamu idaresi**\n\nUygulama yönetmeliğini Çevre ve Şehircilik Bakanlığı çıkarır. Kanunlardaki özel hükümler saklıdır.\n\n**Not:** Bakanlık adı metnindeki hâliyle verilmiştir.",
+      "articleRefs": [
+        "46",
+        "47"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Taşınırdan kim sorumlu?",
+      "body": "**İdarenin sorumluluğu:** Kamu idareleri, taşınırların yönetimi, kaydı, muhafazası ve kullanımından sorumludur.\n\n**Sorumluluk aranmayan hâller:**\n- taşınırın özelliğinden veya olağan kullanımından kaynaklanan **yıpranma**,\n- usulüne uygun olarak belirlenen **fireler**.\n\n**Görevlinin sorumluluğu:** Kullanmak üzere taşınır teslim edilen görevli, taşınırın korunmasından ve ona verilen zararlardan sorumludur. İdare, zararın sorumlusuna ödettirilmesini sağlamakla **yükümlüdür**.\n\n**İlke:** Mallarla ilgili şu işlemler mevzuattaki kurallar dahilinde, hizmetin amacına uygun olarak ve **verimlilik ve tutumluluk** ilkesine göre yapılır: edinme, kiralama, tahsis, yönetim, kullanma ve elden çıkarma. Bu ilkeye aykırı eylem ve işlemlerden doğan zararlardan, malların yönetimi veya kullanılması konusunda **yetki verilenler** sorumludur.",
+      "articleRefs": [
+        "48"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Muhasebe sistemi ve Devlet Muhasebesi Standartları Kurulu",
+      "body": "**Amaç:** Muhasebe sistemi, karar, kontrol ve hesap verme süreçlerinin etkili çalışmasını sağlayacak şekilde kurulur. Malî raporların düzenlenmesine ve **kesin hesabın** çıkarılmasına da temel oluşturur. Kamu hesapları, yönetim ve denetim yetkilileriyle kamuoyuna gerekli bilgiyi sağlamak amacıyla tutulur.\n\n**Standartlar:** Genel yönetim kapsamındaki idarelerin muhasebe ve raporlama standartlarını **Devlet Muhasebesi Standartları Kurulu** belirler.\n- Standartlar **uluslararası standartlara uygun** olmalıdır.\n- Kurul Hazine ve Maliye Bakanlığı bünyesinde oluşturulur.\n- Kurulda Sayıştay Başkanlığı, Hazine ve Maliye Bakanlığı ve diğer ilgili kuruluşların temsilcileri yer alır.\n- Standartlar **Resmî Gazetede** yayımlanır.\n- Kurulun yapısı, çalışma usul ve esasları **Maliye Bakanlığınca** çıkarılacak yönetmelikle düzenlenir.\n- Kurulda görevlendirilenlerin **aslî görevleri devam eder**.\n- Toplantı ücreti, ayda ikiden fazla olmamak üzere her toplantı günü için ödenir.\n\n**Kim neyi düzenler:**\n- Çerçeve hesap planı ile raporların şekil, süre ve türleri → Cumhurbaşkanınca çıkarılan yönetmelik\n- Muhasebe işlemleri, hesap planları ve belgelerin şekil ve türleri → merkezî yönetimde Hazine ve Maliye Bakanlığı; sosyal güvenlik kurumlarında ilgili idareler; mahallî idarelerde İçişleri ile Çevre ve Şehircilik bakanlıkları (Hazine ve Maliye Bakanlığının uygun görüşüyle)\n- Detaylı hesap planları → Hazine ve Maliye Bakanlığı\n\n**Muhasebeleştirme anı:** Bir ekonomik değer şu durumlarda muhasebeleştirilir: **yaratıldığında, başka bir şekle dönüştürüldüğünde, mübadeleye konu edildiğinde, el değiştirdiğinde veya yok olduğunda**. Bütün malî işlemlerin muhasebeleştirilmesi ve **her muhasebe kaydının belgeye dayanması** şarttır.\n\n**Not:** Maliye Bakanlığı ile mahallî idarelere ilişkin Çevre ve Şehircilik Bakanlığı adları madde metnindeki hâliyle verilmiştir.",
+      "articleRefs": [
+        "49",
+        "50"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Hangi yılın hesabına yazılır?",
+      "body": "**Tahakkuk:** Kamu gelir ve giderleri **tahakkuk ettirildikleri malî yılın** hesaplarında gösterilir. Tahakkuk ettirilecek giderler, Devlet muhasebesi kayıtlarında ekonomik sınıflandırmanın **dördüncü düzeyini** de kapsayacak şekilde gösterilir.\n\n**Bütçe:** Bütçe gelirleri **tahsil edildiği** yılda, bütçe giderleri **ödendiği** yılda muhasebeleştirilir.\n\n**Malî yıl esası:** Kamu hesapları malî yıl esasına göre tutulur. Yıl bitimine kadar fiilen yapılmış ama mahsup edilememiş ödemeler olabilir. Bunların mahsubu, ödenekleri saklı tutularak malî yılın bitimini izleyen **bir ay** içinde yapılabilir.\n\n**Uzatma:** Zorunlu hâllerde **Hazine ve Maliye Bakanlığı** bu süreyi uzatabilir:\n- bütçe giderlerinde en fazla **bir ay**,\n- diğer işlemlerde en fazla **iki ay**.",
+      "articleRefs": [
+        "51"
+      ]
+    },
+    {
+      "type": "numbers",
+      "title": "Sayılar ve süreler: raporlama, kesin hesap ve muhasebe",
+      "rows": [
+        {
+          "label": "Faaliyet raporu hazırlanması",
+          "value": "Her yıl",
+          "refs": [
+            "41"
+          ]
+        },
+        {
+          "label": "Kesin hesap kanunu teklifinin Meclise sunulması",
+          "value": "İzleyen malî yılın Haziran ayı sonuna kadar",
+          "refs": [
+            "42"
+          ]
+        },
+        {
+          "label": "Kesin hesap kanunu teklifini sunan",
+          "value": "Cumhurbaşkanı",
+          "refs": [
+            "42"
+          ]
+        },
+        {
+          "label": "Genel uygunluk bildiriminin Meclise sunulması",
+          "value": "Kesin hesap teklifinin verilmesinden başlayarak en geç 75 gün",
+          "refs": [
+            "43"
+          ]
+        },
+        {
+          "label": "Taşınmaz satışında Cumhurbaşkanı kararı",
+          "value": "Değeri bütçe kanunundaki sınırın üzerinde olan merkezî yönetim taşınmazları",
+          "refs": [
+            "46"
+          ]
+        },
+        {
+          "label": "Devlet Muhasebesi Standartları Kurulu toplantı ücreti ödenecek gün sayısı",
+          "value": "Ayda en fazla 2 toplantı günü",
+          "refs": [
+            "49"
+          ]
+        },
+        {
+          "label": "Devlet Muhasebesi Standartları Kurulu toplantı ücreti göstergesi",
+          "value": "3000 gösterge × memur aylık katsayısı",
+          "refs": [
+            "49"
+          ]
+        },
+        {
+          "label": "Giderlerin kayıtta gösterildiği ekonomik sınıflandırma düzeyi",
+          "value": "Dördüncü düzey",
+          "refs": [
+            "51"
+          ]
+        },
+        {
+          "label": "Mahsup dönemi",
+          "value": "Malî yılın bitimini izleyen 1 ay",
+          "refs": [
+            "51"
+          ]
+        },
+        {
+          "label": "Mahsup süresinin uzatılması — bütçe giderleri",
+          "value": "En fazla 1 ay",
+          "refs": [
+            "51"
+          ]
+        },
+        {
+          "label": "Mahsup süresinin uzatılması — diğer işlemler",
+          "value": "En fazla 2 ay",
+          "refs": [
+            "51"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "41",
+        "42",
+        "43",
+        "46",
+        "49",
+        "51"
+      ]
+    },
+    {
+      "type": "compare",
+      "title": "Genel bütçe mi, diğer idare mi? Yetki kimde",
+      "rows": [
+        {
+          "aspect": "Kapsam",
+          "left": "Genel bütçe kapsamındaki kamu idareleri",
+          "right": "Diğer kamu idareleri",
+          "refs": [
+            "35",
+            "37",
+            "40",
+            "45",
+            "46"
+          ]
+        },
+        {
+          "aspect": "Devredilen kredi artığı karşılığı ödenek kaydı",
+          "left": "Cumhurbaşkanı",
+          "right": "Üst yönetici",
+          "refs": [
+            "35"
+          ]
+        },
+        {
+          "aspect": "Pay için ödenek eklemesi",
+          "left": "Hazine ve Maliye Bakanı",
+          "right": "Üst yöneticiler",
+          "refs": [
+            "37"
+          ]
+        },
+        {
+          "aspect": "Şartlı bağış ödeneklerinin iptali",
+          "left": "Cumhurbaşkanı",
+          "right": "Üst yönetici",
+          "refs": [
+            "40"
+          ]
+        },
+        {
+          "aspect": "Edinilen taşınmazın tescili",
+          "left": "Hazine adına",
+          "right": "Kendi tüzel kişilikleri adına",
+          "refs": [
+            "45"
+          ]
+        },
+        {
+          "aspect": "Taşınır ve taşınmaz satışı",
+          "left": "Çevre ve Şehircilik Bakanlığı (bakanlık adı metnindeki hâliyle); bedel genel bütçeye gelir",
+          "right": "Kanunlarında ve Cumhurbaşkanlığı kararnamelerinde belirtilen yetkili organlarının kararı",
+          "refs": [
+            "46"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "35",
+        "37",
+        "40",
+        "45",
+        "46"
+      ]
+    },
+    {
+      "type": "compare",
+      "title": "Güvenlik birimleri: avans-kredi mi, taşınır mı?",
+      "rows": [
+        {
+          "aspect": "Konu",
+          "left": "Avans ve kredi işlemleri",
+          "right": "Taşınırlar",
+          "refs": [
+            "35",
+            "44"
+          ]
+        },
+        {
+          "aspect": "Sayılan birimler",
+          "left": "Emniyet Genel Müdürlüğü, Jandarma Genel Komutanlığı, Sahil Güvenlik Komutanlığı",
+          "right": "Türk Silahlı Kuvvetleri, Jandarma Genel Komutanlığı, Sahil Güvenlik Komutanlığı, Millî İstihbarat Teşkilatı, Emniyet Genel Müdürlüğü",
+          "refs": [
+            "35",
+            "44"
+          ]
+        },
+        {
+          "aspect": "Düzenlenen husus",
+          "left": "Bir mali yıl içinde tamamlanması mümkün olmayan asayiş ve güvenlik hizmetlerine yönelik alımların avans ve kredi usulleri",
+          "right": "Taşınırların kayda alınması ile yönetim ve iç denetimine ilişkin usul ve esaslar",
+          "refs": [
+            "35",
+            "44"
+          ]
+        },
+        {
+          "aspect": "Düzenleyen",
+          "left": "İçişleri Bakanlığınca çıkarılan yönetmelik",
+          "right": "Cumhurbaşkanınca çıkarılan yönetmelik",
+          "refs": [
+            "35",
+            "44"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "35",
+        "44"
+      ]
+    },
+    {
+      "type": "exam_stats",
+      "title": "Sınav der ki",
+      "rows": [
+        {
+          "label": "Bu ünitenin maddelerinden yayındaki soru",
+          "value": "0",
+          "refs": [
+            "34",
+            "35",
+            "36",
+            "37",
+            "38",
+            "39",
+            "40",
+            "41",
+            "42",
+            "43",
+            "44",
+            "45",
+            "46",
+            "47",
+            "48",
+            "49",
+            "50",
+            "51"
+          ]
+        },
+        {
+          "label": "Hiç soru çıkmamış",
+          "value": "md 34, md 35, md 36, md 37, md 38, md 39, md 40, md 41, md 42, md 43, md 44, md 45, md 46, md 47, md 48, md 49, md 50, md 51",
+          "refs": [
+            "34",
+            "35",
+            "36",
+            "37",
+            "38",
+            "39",
+            "40",
+            "41",
+            "42",
+            "43",
+            "44",
+            "45",
+            "46",
+            "47",
+            "48",
+            "49",
+            "50",
+            "51"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "34",
+        "35",
+        "36",
+        "37",
+        "38",
+        "39",
+        "40",
+        "41",
+        "42",
+        "43",
+        "44",
+        "45",
+        "46",
+        "47",
+        "48",
+        "49",
+        "50",
+        "51"
+      ],
+      "generated": true
+    },
+    {
+      "type": "bridge",
+      "title": "Bu üniteden soru çöz",
+      "articleRefs": [
+        "34",
+        "35",
+        "36",
+        "37",
+        "38",
+        "39",
+        "40",
+        "41",
+        "42",
+        "43",
+        "44",
+        "45",
+        "46",
+        "47",
+        "48",
+        "49",
+        "50",
+        "51"
+      ],
+      "generated": true,
+      "rows": [
+        {
+          "label": "Madde kapsamlı seans",
+          "value": "md 34–51, 0 soru",
+          "refs": [
+            "34",
+            "35",
+            "36",
+            "37",
+            "38",
+            "39",
+            "40",
+            "41",
+            "42",
+            "43",
+            "44",
+            "45",
+            "46",
+            "47",
+            "48",
+            "49",
+            "50",
+            "51"
+          ]
+        }
+      ]
+    }
+  ]
+}

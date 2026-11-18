@@ -89,3 +89,60 @@ Tekrarlayan ZAYIF örüntüler: düşen şart/istisna, aşırı genelleme, eski 
   "kural olarak" kaydını taşımıyor.
 - 2576 md 6 sorusu: Gümrük idari para cezası ödeme emrinin vergi mahkemesinin görevine girmediği anahtarı madde
   metninden doğrudan çıkmıyor.
+
+---
+
+# Dalga turu: kalan bütün mevzuat (19 Kasım 2026)
+
+Kullanıcı kararı: ünitesi olmayan bankadaki bütün mevzuat (sorulu ve sorusuz) konu özetine alınır, üç dalga arka
+arkaya yürütülür. **84 yeni ünite** (39 mevzuat) + TCK ek ünitesi (md 123/A, 217/A; sıra 15, premium) + Anayasa
+Başlangıç (6 kart, `anayasa-genel-esaslar`'a eklendi; ünite liste moduna geçti, bağlı soru 17 → 22).
+
+## Bölme
+
+Bölüm yapısına göre, hedef ~24 bin karakter / ünite (üst 30 bin), küçük kuyruk önceki üniteye katılır; Geçici
+maddeler dışarıda. Büyük mevzuat: 298 (8 ünite), 5275 (8), 5018 (5), 6458 (5), 2820 (4), 6216 (4), 6085 (4).
+**Süzgeç hatası:** mülgaları ayıklamak için konulan "60 karakterden kısa metin" eşiği yürürlükteki 7 kısa maddeyi de
+düşürdü (5188 md 17, AİHS P4-4 ve P16-5, 298 md 4, Avrupa Konseyi Statüsü md 2 ve 11, İHEB md 3). Hepsi sonradan
+ilgili üniteye kart cümlesi ve madde bağıyla eklendi.
+
+## Hat
+
+Üretim 8 işçi, ortak kuyruk (`mkdir` kilidi) → betik → bağımsız denetçi (ILKE.md) → düzeltici (DUZELTME.md) → betik.
+Her ünite denetlendi; ESAS bulgular elle karşılaştırıldı. Öne çıkanlar: 298 md 70 and içme ve md 100 ittifak alanı;
+2820 md 98 kapatma oy oranı (kanunda beşte üç, Anayasa md 149'da üçte iki → not); 5253 md 32/t (dayandığı md 19/4
+AYM'ce iptal → not); 5018 harcama sırası; 5275 md 107 oranları; 5352 arşiv kuralının kapsamı; 6458 md 102 merci;
+BM Andlaşması (bankadaki metin ilk metin: üye ve oy sayıları kartlardan çıkarıldı, not düşüldü).
+
+## Doğrulayıcıya bu turda eklenenler (`a7965773`)
+
+- AİHS protokol madde atfı ("P4-7", "md P13", "Ek P-1", "Protokol No. 7") sayı değildir.
+- Bent atfı küçük ve Türkçe harfle ("32/d", "32/ç") sayı değildir.
+- Bilinen sınır: betik yalnız RAKAMLARI denetler; yazıyla yazılmış sayıları ("iki katı", "üçte iki") denetçi kontrol
+  etti, betik görmez. `count(...)` biçimli derivedNumbers geçersizdir (yayındaki `anayasa-genel-esaslar`'da ve
+  `kvkk-1`'de etkisiz kayıtlar duruyor).
+
+## Başlıklar
+
+Bölüm başlıklarından gelen ipucu başlıklar ("Amaç, Kapsam ve Tanımlar, …", "Bölüm I, Bölüm II") 72 ünitede elle kısa
+başlıklarla değiştirildi; kaynak etiketi (yalnız panel) madde listesinden yeniden kuruldu.
+
+## İnsan incelemesi için notlar
+
+- "Bugünkü adı" notları madde metni dışından gelir (Parlamenter Meclis, Ölçme Seçme ve Yerleştirme Merkezi,
+  Hâkimler ve Savcılar Kurulu, BM daimi üye devlet adları, katma bütçe ayrımı, Göç İdaresi Başkanlığı).
+- AİHS ve sorusuz mevzuatta "Sınav der ki" kartı 0 soru gösterir; AİHS'nin 73 sorusu madde etiketsiz.
+- En uzun üniteler: `stk-8` 21 dk, `tihek-1` 18 dk, `ertky` 17 dk.
+
+## Banka bulguları (düzeltilmedi)
+
+- 7062 md 14 metninin sonuna değişiklik listesi ve **jQuery kodu** yapışmış; md 11 sonuna md 12 başlığının yarısı — mevzuat okuyucusunda görünür, öncelikli.
+- BM Andlaşması bankada ilk metniyle (Güvenlik Meclisi 11 → bugün 15, Ekonomik ve Sosyal Meclis 18 → 54, md 27 oy sayısı 7 → 9); yayındaki BM Andlaşması bilgi kartları da kontrol edilmeli.
+- 5275 md 59 metni md 58'e karışmış (md 59 hiçbir üniteye girmedi); md 12 başlığı boş, md 48 ve 51 başlıkları dipnot artığı.
+- 5607 md 3 başlık alanı bozuk ("Sınav der ki" kartında görünür).
+- AİHS P16-10 metninin sonuna Sözleşme md 47'nin üç fıkrası yapışmış.
+- Teknik Takip Yönetmeliği: bölüm ve madde başlıkları önceki maddenin metnine yapışmış (md 3, 4, 6, 14, 15).
+- 3376 md 5 metni yarım (alt bentler ve Cumhurbaşkanına ayrılan süre eksik).
+- TCK 217/A sorusunun madde bağı yanlış (dayanak md 218); TCK 123/A öncüllü sorusunda saik öncülü yanlış doğru sayılmış (şıklarda doğru seçenek yok).
+- 6458 md 102 sorusu: ödeme süresi ile dava süresi karışmış olabilir.
+- Dört şıklı sorular: 5607 (4), 3071 (3), 6458 ve diğerleri.

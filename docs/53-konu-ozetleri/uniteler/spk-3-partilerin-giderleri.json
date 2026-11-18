@@ -1,0 +1,664 @@
+{
+  "unit": {
+    "slug": "spk-3-partilerin-giderleri",
+    "legislationSlug": "2820-siyasi-partiler-kanunu",
+    "topicId": "52223b97-98b3-408b-93f4-3e3a03bf509b",
+    "title": "Parti giderleri ve mali denetim",
+    "subtitle": "Giderler, bütçe ve kesinhesap, Anayasa Mahkemesinin mali denetimi, partilere getirilen yasaklar ve kapatma",
+    "articleFrom": "70",
+    "articleTo": "107",
+    "readingMinutes": 17,
+    "sourceLabel": "AI özeti — 2820 Siyasi Partiler Kanunu, md 70–90, 93–96, 98–104, 106, 107",
+    "articleNos": [
+      "70",
+      "71",
+      "72",
+      "73",
+      "74",
+      "75",
+      "76",
+      "77",
+      "78",
+      "79",
+      "80",
+      "81",
+      "82",
+      "83",
+      "84",
+      "85",
+      "86",
+      "87",
+      "88",
+      "89",
+      "90",
+      "93",
+      "94",
+      "95",
+      "96",
+      "98",
+      "99",
+      "100",
+      "101",
+      "102",
+      "103",
+      "104",
+      "106",
+      "107"
+    ],
+    "generatedBy": "claude-opus-5-5 (ozet-uret.ts)",
+    "sortOrder": 3
+  },
+  "blocks": [
+    {
+      "type": "concept",
+      "title": "Gider kimin adına yapılır?",
+      "body": "Bir siyasi partinin harcamalarında temel çerçeve basittir. Giderler partinin **amaçlarına aykırı olamaz** ve bütün giderler **parti tüzelkişiliği adına** yapılır. Giderleri, sözleşmeleri ve yükümlülükleri yetkili kılınan kişi veya kurul yapar. Bu kişi veya kurul genel merkezde parti tüzelkişiliği adına, illerde il yönetim kurulu adına, ilçelerde ise ilçe yönetim kurulu adına hareket eder. Harcamayı fiilen yapan kişi değişebilir, gider yine partinin tüzelkişiliği adınadır.",
+      "articleRefs": [
+        "70",
+        "71"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Harcamada belge, karar ve saklama",
+      "body": "- **Belge:** Kanunda gösterilen tutara kadar olan harcamaların makbuz veya fatura gibi bir belgeyle tevsik edilmesi zorunlu değildir.\n- **Karar şartı:** Ancak **bütün** harcamaların yetkili organ veya merciin kararına dayanması şarttır.\n- **İstisna:** İki durumda ayrıca karar alınmasına gerek yoktur. Birincisi, yetkili organca onaylanan bütçede öngörülmüş olmak kaydıyla kanunda gösterilen tutarı aşmayan harcamalardır. İkincisi, genel tarifeye bağlı giderlerdir.\n- **Saklama süresi:** Giderlere ait belgeler **beş yıl** saklanır. Süre, kesinhesap hakkındaki Anayasa Mahkemesi ilk inceleme kararının ilgili partiye bildirilme tarihinden itibaren işler. Özel kanunlardaki daha uzun süreler saklıdır.\n- **Hesap verme:** Parti teşkilatı, bağlı olduğu üst kademeye gelir ve giderleri hakkında tüzükte gösterilen sürede hesap verir. Bu süre **altı aydan fazla olamaz**.",
+      "articleRefs": [
+        "70"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Teşkilatın sözleşmeleri ve borç verme yasağı",
+      "body": "**Md 71:** İl ve ilçe teşkilatlarının parti tüzelkişiliği adına sözleşme yapmasına ve yükümlülük altına girmesine ilişkin esasları **merkez karar ve yönetim kurulu** tespit eder.\n\nAşağıdaki hâllerde parti tüzelkişiliği teşkilat kademelerinin sözleşmelerinden (hizmet sözleşmeleri dâhil) ve yükümlülüklerinden **hiçbir suretle sorumlu tutulamaz**:\n- sözleşme bu esaslara aykırıysa,\n- merkez karar ve yönetim kurulunca önceden yazılı yetki verilmemişse,\n- sözleşme sonradan bir kararla onaylanmamışsa.\n\nBu hâllerde merkez karar ve yönetim kurulu, genel başkan veya parti tüzelkişiliği aleyhine takipte bulunulamaz. Sorumluluk sözleşmeyi yapan veya yükümlülük altına giren kişilere aittir.\n\n**Md 72:** Siyasi partiler üyelerine ve diğer gerçek ve tüzelkişilere **hiçbir şekilde borç veremezler**.",
+      "articleRefs": [
+        "71",
+        "72"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Bütçe ve kesinhesap takvimi",
+      "body": "- **İl bütçeleri:** Bağlı ilçeleri de kapsayan iller teşkilatı, gelir tahminlerini ve gider miktarlarını gösteren bir yıllık bütçe hazırlar. Bu bütçeyi ilgili takvim yılından önceki **Ekim ayı sonuna** kadar genel merkeze gönderir.\n- **Karara bağlama:** İl bütçeleri ve aynı sürede hazırlanan genel merkez bütçesi, en geç ilgili takvim yılından önceki **Aralık ayı sonuna** kadar **merkez karar ve yönetim kurulunca** incelenir ve karara bağlanır.\n- **Hesap esası:** Hesaplar **bilanço esasına** göre düzenlenir.\n- **Kesinhesap:** Parti merkezi ve iller teşkilatı, bütçe yılını izleyen **Nisan ayı sonuna** kadar bir önceki yılın kesinhesabını hazırlar. Merkez karar ve yönetim kurulu bunları inceler, karara bağlar ve birleştirir.\n- **Düzenleme biçimi:** Bütçe, bilanço, gelir ve gider cetvelleri ile kesinhesapların nasıl düzenleneceği partilerin **içyönetmeliklerinde** gösterilir.",
+      "articleRefs": [
+        "73"
+      ]
+    },
+    {
+      "type": "concept",
+      "title": "Anayasa Mahkemesi neyi denetler, neyi denetlemez?",
+      "body": "Partilerin mali denetimini **Anayasa Mahkemesi** yapar. Mahkeme, partinin mal edinimlerinin ve gelir-giderlerinin **Kanuna uygunluğuna** bakar. Bu denetim, partinin amaçlarına ulaşmak için faydalı gördüğü faaliyetleri daraltacak biçimde yapılamaz. Mahkeme bu faaliyetlerin yerindeliğine de giremez. Denetimde harcamanın **gerçek mahiyeti** esas alınır. Şekle ve usule ilişkin eksiklikler, tek başına harcamanın kabul edilmemesini gerektirmez.",
+      "articleRefs": [
+        "74"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Kesin hesabın verilmesi ve harcama serbestisi",
+      "body": "- **Kim, ne zaman:** Bu yükümlülük **genel başkana** aittir. Genel başkan, birleştirilmiş kesin hesabın ve iller teşkilatı kesin hesaplarının onaylı birer örneğini **Haziran ayı sonuna** kadar verir. Örnekler **Anayasa Mahkemesine**, bilgi için de **Yargıtay Cumhuriyet Başsavcılığına** gönderilir.\n- **Eklenecek listeler:** Aynı hesap döneminde edinilen mallara ilişkin listeler eklenir. Bu listeler taşınmazları ve kanunda gösterilen değeri aşan taşınırları kapsar. Menkul kıymetler ve her türlü haklar da listelere girer. Listelerde değer, edinim tarihi ve edinim şekli belirtilir.\n- **Kapatma hâlinde:** Kapatma kararının verildiği tarihe kadar olan hesaplar da denetlenip karara bağlanır. Kesin hesabın verilmesine ve denetime ilişkin esas ve usulleri Anayasa Mahkemesi belirler.\n- **Harcama serbestisi:** Partiler, amaçlarına ulaşmak için gerekli gördükleri siyasi faaliyetler kapsamında **her türlü harcamayı** yapabilir.\n- **Alım usulleri:** Mal ve hizmet alımı ile yapım işleri şu usullerle yapılabilir: açık ihale, kapalı zarf usulü, yazılı veya sözlü olmak üzere doğrudan veya pazarlık usulü.\n- **Tevsik:** Harcamalar fatura veya fatura yerine geçen belgelerle kanıtlanır. Bunların temini mümkün değilse, harcamanın doğruluğunu gösteren diğer belgeler kullanılır. Asıl belge kaybolma, yırtılma, yanma gibi mücbir sebeplerle temin edilemiyorsa, belgeyi düzenleyenden alınacak **tasdikli örnek** kullanılabilir.\n- **Gider yazılabilenler:**\n  - Ücretli çalışanlara ödenen ayni ve nakdi sağlık ve sosyal yardım giderleri.\n  - Görevlendirilen kişilerin yurt içi ve yurt dışı seyahatlerindeki konaklama, yol ve diğer zorunlu harcamaları.\n  - Mal ve hizmet alım sözleşmelerinden doğan mahkeme kararlarıyla ödenen miktar ve masraflar.",
+      "articleRefs": [
+        "74"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Denetim nasıl yapılır?",
+      "body": "- **Belge isteme:** Anayasa Mahkemesi, kesinhesaplara ait bilgilerin belgelendirilmesini partilerden **her zaman** isteyebilir.\n- **Yöntem:** Denetim **evrak üzerinde** yapılır. Mahkeme denetimi şu yollarla yürütebilir:\n  - Sayıştaydan yardım sağlanarak hazırlatılan raporlar üzerinden.\n  - Genel merkezde ve mahalli teşkilatlarda yaptırılan inceleme ve araştırmalar üzerinden. Bu incelemeyi doğrudan, kendi üyeleri arasından görevlendirdiği bir **naip üye** eliyle veya mahallin **en kıdemli adli veya idari yargı hakimi** niyabetinde yaptırabilir.\n- **Bilirkişi:** Bu amaçla **yeminli bilirkişi** görevlendirebilir.\n- **Açıklama:** Parti başkanından veya temsilcisinden **yazılı mütalaa** isteyebilir. Gerekirse sorumlu uzman muhasipler dâhil ilgililerin **sözlü açıklamalarını** dinler.\n- **Karar:** Mahkeme gelir ve giderlerin doğruluğuna ve kanuna uygunluğuna karar verir. Kanuna uygun olmayan gelir ve giderler bakımından ise bunların **Hazineye gelir kaydedilmesine** karar verir.\n- **Kongre etkisi:** Büyük kongrenin kesinhesaplar hakkındaki kararları denetimi **etkilemez**.\n- **Kesinlik:** Bu denetim sonucunda verilen kararlar **kesindir**.",
+      "articleRefs": [
+        "75"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Mali denetimde sık karıştırılanlar",
+      "body": "**Denetimi Sayıştay yapmaz.** Denetim Anayasa Mahkemesinindir. Sayıştay yalnızca raporların hazırlanmasında yardım sağlar.\n\n**Kesin hesap Yargıtay Cumhuriyet Başsavcılığına bilgi için verilir.** Denetim mercii Başsavcılık değildir.\n\n**Kongre onayı denetimi bitirmez.** Büyük kongre kesinhesabı onaylamış olsa bile Anayasa Mahkemesinin denetimi bundan etkilenmez.\n\n**Şekil eksikliği ret sebebi değildir.** Esas olan harcamanın gerçek mahiyetidir.\n\n**Denetim yerindeliğe girmez.** Mahkeme yalnızca kanuna uygunluğu denetler.",
+      "articleRefs": [
+        "74",
+        "75"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "type": "rule",
+      "title": "Kanuna aykırı gelir ve mallar Hazineye",
+      "body": "- **Aykırı bağış, mal veya gelir:** Şunların karşılığı **Hazineye irat kaydedilir**:\n  - bu yolla elde edilen gelirlerin tamamı,\n  - Kanundaki miktarları aşan gelirler,\n  - taşınmazların kanuni miktarı geçen kısmı.\n  Taşınmaz malların kendisi ise **Hazine adına tapuya tescil** edilir.\n- **Md 67'ye aykırı kredi veya borç:** Anayasa Mahkemesi kararıyla **Hazinece el konulur**. Hazine, kredi veya borcu verene karşı hiçbir yükümlülük altına girmez.\n- **Md 69'a aykırı, tevsik edilmeyen kaynaktan gelir:** Anayasa Mahkemesi kararıyla Hazineye irat kaydedilir.\n- **Belgelendirilmeyen gider:** Belgelendirilmesi gerektiği hâlde belgelendirilmeyen giderler miktarınca parti malvarlığı Hazineye irat kaydedilir.\n- **Md 68'e aykırı taşınmaz (md 77):** Anayasa Mahkemesi kararıyla ve bu Mahkemenin göstereceği süre içinde, mallar **parti tarafından paraya çevrilir**.",
+      "articleRefs": [
+        "76",
+        "77"
+      ]
+    },
+    {
+      "type": "numbers",
+      "title": "Mali takvim ve süreler",
+      "rows": [
+        {
+          "label": "İl bütçelerinin genel merkeze gönderilmesi",
+          "value": "İlgili takvim yılından önceki Ekim ayı sonu",
+          "refs": [
+            "73"
+          ]
+        },
+        {
+          "label": "Bütçelerin merkez karar ve yönetim kurulunca karara bağlanması",
+          "value": "En geç ilgili takvim yılından önceki Aralık ayı sonu",
+          "refs": [
+            "73"
+          ]
+        },
+        {
+          "label": "Kesinhesapların hazırlanması",
+          "value": "Bütçe yılını izleyen Nisan ayı sonu",
+          "refs": [
+            "73"
+          ]
+        },
+        {
+          "label": "Kesin hesap örneklerinin Anayasa Mahkemesine verilmesi",
+          "value": "Haziran ayı sonu",
+          "refs": [
+            "74"
+          ]
+        },
+        {
+          "label": "Gider belgelerini saklama süresi",
+          "value": "Beş yıl (ilk inceleme kararının partiye bildiriminden itibaren)",
+          "refs": [
+            "70"
+          ]
+        },
+        {
+          "label": "Teşkilatın üst kademeye hesap verme süresi (üst sınır)",
+          "value": "Altı ay",
+          "refs": [
+            "70"
+          ]
+        },
+        {
+          "label": "Md 68'e aykırı taşınmazın paraya çevrilmesi",
+          "value": "Anayasa Mahkemesinin göstereceği süre",
+          "refs": [
+            "77"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "70",
+        "73",
+        "74",
+        "77"
+      ]
+    },
+    {
+      "type": "concept",
+      "title": "Partilere yasaklar: ortak kalıp",
+      "body": "Kanun bu bölümde partilerin neyi amaçlayamayacağını ve hangi faaliyetlerde bulunamayacağını tek tek sayar. Korunan değerler Devlet düzeni, bağımsızlık, Devletin tekliği, millet bütünlüğü, eşitlik, laiklik ve Atatürk'tür. Kalıp çoğunlukla aynıdır: **\"amacını güdemezler ve bu amaca yönelik faaliyette bulunamazlar.\"** Bazı yasaklar ise doğrudan bir davranışı yasaklar: azınlık bulunduğunu ileri sürmek, Türkçeden başka dil kullanmak, parti adı ve amblemlerinde Atatürk'ün adını veya resmini kullanmak gibi. Hepsinin üstünde genel bir kural vardır: tüzük, program ve faaliyetler Anayasa ve bu Kanun hükümlerine aykırı olamaz. Partiler tüzük ve programları dışında faaliyette de bulunamaz.",
+      "articleRefs": [
+        "78",
+        "79",
+        "80",
+        "81",
+        "82",
+        "83",
+        "84",
+        "85",
+        "86",
+        "90"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Devlet düzeni, bağımsızlık ve millet bütünlüğü",
+      "body": "**Md 78.** Partiler şu esasları değiştirmeyi amaçlayamaz:\n- Cumhuriyet şekli,\n- Anayasanın başlangıç kısmı ve 2 nci maddesindeki esaslar,\n- 3 üncü maddedeki hükümler (ülke ve milletiyle bölünmez bütünlük, dil, bayrak, milli marş, başkent),\n- egemenliğin kayıtsız şartsız Türk Milletine ait olması,\n- seçimlerin serbest, eşit, gizli, genel oy, açık sayım ve döküm esaslarına göre yargı yönetim ve denetimi altında yapılması.\n\nAyrıca partiler:\n- dil, ırk, renk, din ve mezhep ayrımı yaratamaz,\n- bölge, ırk, belli kişi, aile, zümre veya cemaat, din, mezhep veya tarikat esaslarına dayanamaz ve bu adları kullanamaz,\n- sınıf veya zümre egemenliğini ya da herhangi bir tür diktatörlüğü amaçlayamaz,\n- askerlik, güvenlik veya sivil savunma hizmetlerine hazırlayıcı eğitim ve öğretim faaliyetinde bulunamaz,\n- genel ahlak ve adaba aykırı amaç güdemez,\n- Anayasayı hak ve hürriyetleri yok etme hakkı verir şekilde yorumlayamaz.\n\n**Md 79.** Yabancı devletlerden, uluslararası kuruluşlardan ve Türk uyruğunda olmayan gerçek ve tüzel kişilerden doğrudan veya dolaylı **yardım kabul edemez**, bunlardan **emir alamaz**.\n\n**Md 80.** Devletin tekliği ilkesini değiştirmeyi amaçlayamaz.\n\n**Md 81.** Azınlık bulunduğunu ileri süremez. Tüzük ve programın yazımında ve yayınlanmasında, kongrelerde, toplantılarda, mitinglerde ve propagandada **Türkçe'den başka dil kullanamaz**. Başkalarının bunu yapmasına da kayıtsız kalamaz. **İstisna:** Tüzük ve program, kanunla yasaklanmış diller dışındaki bir yabancı dile çevrilebilir.\n\n**Md 82.** Bölgecilik veya ırkçılık amacı güdemez.\n\n**Md 83.** Kanun önünde eşitlik prensibine aykırı amaç güdemez.",
+      "articleRefs": [
+        "78",
+        "79",
+        "80",
+        "81",
+        "82",
+        "83"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Laiklik, Atatürk ve din",
+      "body": "**Md 84 – İnkılap kanunları:** Partiler şu kanunların hükümlerine aykırı amaç güdemez:\n- Tevhidi Tedrisat Kanunu,\n- Şapka İktisası Hakkında Kanun,\n- Tekke ve Zaviyelerle Türbelerin Seddine dair Kanun,\n- Türk Kanunu Medenisiyle kabul edilen **medeni nikah** esası,\n- Beynelmilel Erkamın Kabulü Hakkında Kanun,\n- Türk Harflerinin Kabul ve Tatbiki Hakkında Kanun,\n- Lakap ve Unvanların Kaldırıldığına Dair Kanun,\n- Bazı Kisvelerin Giyilemeyeceğine Dair Kanun.\n\n**Md 85 – Atatürk:** Partiler Atatürk'ün şahsiyetini, faaliyetlerini veya hatırasını kötüleyemez, küçük düşüremez. Parti adı ve amblemlerinde **Atatürk'ün adını veya resmini** kullanamaz.\n\n**Md 86 – Laiklik ve halifelik:** Laiklik niteliğinin değiştirilmesini ve halifeliğin yeniden kurulmasını amaçlayamaz.\n\n**Md 87 – Din istismarı:** Devletin sosyal, ekonomik, siyasi veya hukuki temel düzenini kısmen de olsa dini esas ve inançlara uydurmak amacıyla, siyasi amaçla ya da siyasi menfaat sağlamak maksadıyla din, dini hissiyat veya dince mukaddes tanınan şeyler alet edilerek propaganda yapılamaz. Bunlar bu amaçlarla istismar edilemez ve kötüye kullanılamaz.\n\n**Md 88 – Dini tören:** Partiler dini tören ve ayin tertipleyemez. Bu tören ve ayinlere parti sıfatıyla katılamaz. Dini bayramları, ayinleri ve cenaze törenlerini propaganda vesilesi yapamaz.\n\n**Md 89 – Diyanet:** Diyanet İşleri Başkanlığının genel idare içinde yer almasına ilişkin Anayasanın 136 ncı maddesine aykırı amaç güdemez.\n\n**Not:** Türk Kanunu Medenisine yapılan atıf metnindeki hâliyle verilmiştir.",
+      "articleRefs": [
+        "84",
+        "85",
+        "86",
+        "87",
+        "88",
+        "89"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Yasak var, istisnası da var",
+      "body": "**\"Partiler hiçbir cenaze törenine katılamaz\" yanlıştır.** Aşağıdaki hâllerde partinin temsili ve parti adına çelenk gönderilmesi yasağın dışındadır:\n- Devlet protokolünce düzenlenen cenaze törenleri,\n- partiden bir üyenin ölümü,\n- parti nezaketi gereği başka parti üyesinin veya bağımsız kişinin cenazesi.\n\nAnma törenleri ve bayramlaşmalar da serbesttir. Hepsinin şartı aynıdır: **siyasi propagandaya dönüştürülmemek**. Partinin kendisinin dini tören tertiplemesi ise yasaktır.\n\n**\"Tüzük hiçbir yabancı dile çevrilemez\" yanlıştır.** Kanunla yasaklanmış diller dışındaki bir yabancı dile çevrilebilir. Kongre, miting ve propagandada ise Türkçe'den başka dil kullanılamaz.\n\n**Atatürk yasağı** yalnız kötüleme yasağı değildir. Parti adı ve amblemlerinde Atatürk'ün adı veya resmi de kullanılamaz.",
+      "articleRefs": [
+        "81",
+        "85",
+        "88"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "type": "rule",
+      "title": "Tüzük dışı faaliyet, parti içi demokrasi, üniforma",
+      "body": "- **Md 90:** Tüzük, program ve faaliyetler Anayasa ve bu Kanun hükümlerine aykırı olamaz. Partiler **tüzük ve programları dışında faaliyette bulunamaz**.\n- **Md 93:** Şu konular parti tüzüğüne, üyeler arasındaki **eşitlik ilkesine** ve **demokrasi esaslarına** aykırı olamaz:\n  - parti içi çalışmalar, yönetim ve denetim,\n  - parti organları için yapılan seçimler,\n  - genel başkanlık, genel merkez organları ve parti gruplarının kararları, eylem ve işlemleri.\n- **Md 94:** Partiler üye ve personeli için **üniforma**, üniforma niteliğinde kıyafet, **kol bağı** ve benzeri alametler ihdas edemez ve kullandıramaz.\n  - **İstisna:** Kongre ve toplantılarda görevlendirilen üye ve personel, görevi gereği **şerit, kurdela** ve benzeri işaretler kullanabilir.\n  - Partiler kimseye güvenlik kuvvetlerinin görev veya yetkilerini üstlenme görevi veremez. Kongre ve toplantılarda üyelerinin bu şekilde hareket etmesine de izin veremez.",
+      "articleRefs": [
+        "90",
+        "93",
+        "94"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Kapatılan partinin devamı ve isim yasakları",
+      "body": "**Md 95 – Kapatılan parti:**\n- Kapatılan parti başka bir ad altında **kurulamaz**.\n- Kapatılmaya söz veya eylemleriyle neden olan üyeler (kurucular dâhil) **beş yıl** süreyle başka bir partinin kurucusu, üyesi, yöneticisi ve denetçisi olamaz.\n- Bu süre, Anayasa Mahkemesinin kesin kararının Resmi Gazetede gerekçeli olarak yayımlanmasından başlar.\n- Partiler bu kişileri hiçbir suretle seçimlerde **aday gösteremez**.\n\n**Md 96 – İsim, amblem ve devamlık:**\n- Anayasa Mahkemesince temelli kapatılan veya siyasi parti siciline kayıtlı partilerin isimleri, amblemleri, rumuzları ve rozetleri başka bir parti tarafından **aynen veya iltibasa mahal verecek şekilde** kullanılamaz.\n- Daha önce kurulmuş Türk devletlerine ait, topluma mal olmuş bayrak, amblem ve flamalar partilerce kullanılmaz.\n- Kurulacak partiler, kapatılan bir partinin **devamı olduklarını beyan edemez**.\n- Komünist, anarşist, faşist, teokratik, nasyonal sosyalist, din, dil, ırk, mezhep ve bölge adlarıyla (veya aynı anlama gelen adlarla) parti kurulamaz. Bu kelimeler parti adında kullanılamaz.",
+      "articleRefs": [
+        "95",
+        "96"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Kapatma davası ve İnceleme Kurulu",
+      "body": "**Md 98 – Kapatma davası:**\n- Davayı **Yargıtay Cumhuriyet Başsavcısı**, **Anayasa Mahkemesinde** açar.\n- Kapatma kararı için **beşte üç oy çokluğu** şarttır. **Not:** Kanun metnindeki hâliyle verilmiştir; Anayasa md 149 bugün parti kapatma kararı için üye tamsayısının üçte iki oy çokluğunu arar.\n- Anayasa Mahkemesinin kararları kesindir.\n- Cumhuriyet Başsavcılığı, Cumhuriyet savcılarına ve sorgu hakimlerine tanınan bütün yetkilere sahiptir. Anayasa ve kanunların yalnız hakimlere tanıdığı yetkiler bunun dışındadır.\n- Başsavcılık partilerden belge isteyebilir. Partiler bu isteklere **en geç onbeş gün** içinde cevap vermek zorundadır.\n- Soruşturma Başsavcıvekili veya yardımcılar eliyle de yürütülebilir.\n- Soruşturma için görevlendirilen yardımcılar, soruşturma sonuçlanıncaya kadar ancak Başsavcının **yazılı muvafakatı** ile başka göreve atanabilir. Yargıtay üyeliğine seçilme bu kuralın dışındadır.\n\n**Md 99 – Siyasi Partilerle İlgili Yasakları İnceleme Kurulu:**\n- Kapatma isteklerinin Başsavcılıkça reddine karşı yapılan itirazları inceler.\n- **Yargıtay ceza daireleri başkanlarından** kurulur ve en kıdemlisi Kurulun Başkanıdır.\n- Bir daire başkanının özrü hâlinde o dairenin en kıdemli üyesi Kurula katılır.\n- Kurul **üye tamsayısı** ile toplanır. Karar yeter sayısı **üye tamsayısının salt çoğunluğudur**.\n\n**Not:** \"Sorgu hakimi\" ifadesi metnindeki hâliyle verilmiştir; sorgu hâkimliği bugünkü ceza yargılamasında yer almaz.",
+      "articleRefs": [
+        "98",
+        "99"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Kapatma davası nasıl başlar?",
+      "body": "**Başlatma yolları:** Anayasada yazılı nedenlerle kapatma davası şu yollarla açılır:\n- **re'sen**,\n- Bakanlar Kurulu kararı üzerine **Adalet Bakanının** istemiyle,\n- bir **siyasi partinin** istemi üzerine.\n\n**Parti istemi için şartlar:** İstemde bulunan parti\n- son milletvekili genel seçimlerine katılmış olmalı,\n- TBMM'de grubu bulunmalı,\n- ilk büyük kongresini yapmış olmalı,\n- merkez karar ve yönetim kurulunun **üye tamsayısının salt çoğunluğuyla** karar almış olmalı.\nİstem, parti adına **genel başkan** tarafından Başsavcılığa yazılı olarak yapılır.\n\n**Başsavcılığın değerlendirmesi:** Yeterli delil varsa dava açılır. Yoksa Başsavcılık dava açmayacağını Adalet Bakanına veya parti genel başkanlığına yazıyla bildirir.\n\n**İtiraz:** Bildirimin tebliğinden başlayarak **otuz gün** içinde Kurula yazıyla itiraz edilebilir.\n\n**Kurulun incelemesi:** Kurul itirazı ivedilikle, **en geç otuz gün** içinde inceler.\n- İtirazı haklı görmezse dava açılmaz.\n- Haklı görürse Başsavcılık dava açmakla yükümlüdür.\n\n**Seçim dönemi:** Adalet Bakanı ve parti istemine ilişkin yollar belli bir süre içinde uygulanamaz. Bu süre, milletvekili genel seçimi, seçimin yenilenmesi veya ara seçim kararının Resmi Gazetede yayımlanmasından başlar ve oy verme gününün ertesi gününe kadar sürer.\n\n**Not:** Bakanlar Kurulu metnindeki hâliyle verilmiştir.",
+      "articleRefs": [
+        "100"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Kapatma sebepleri ve odak hâli",
+      "body": "**Kapatma hâlleri (md 101):**\n- **(a)** Tüzük ve programın Devletin bağımsızlığına, ülke ve millet bütünlüğüne, insan haklarına, eşitlik ve hukuk devleti ilkelerine, millet egemenliğine, demokratik ve laik cumhuriyet ilkelerine aykırı olması. Diktatörlüğü savunmayı amaçlaması ve suç işlenmesini teşvik etmesi de bu bende girer.\n- **(b)** Partinin, Anayasanın 68 inci maddesinin dördüncü fıkrasına aykırı eylemlerin **odağı** hâline geldiğinin Anayasa Mahkemesince tespiti.\n- **(c)** Yabancı devletlerden, uluslararası kuruluşlardan ve Türk uyrukluğunda olmayan gerçek ve tüzel kişilerden **maddi yardım** alınması.\n\n**Kapatma yerine yaptırım:** Anayasa Mahkemesi **(a) ve (b)** hâllerinde temelli kapatma yerine başka bir karar verebilir. Fiillerin ağırlığına göre partiyi son yıllık **Devlet yardımından kısmen veya tamamen yoksun bırakabilir**. Yardım tamamen ödenmişse aynı miktarın Hazineye iadesine karar verilir.\n\n**Odak hâli (md 103):** Odak olup olmadığını **Anayasa Mahkemesi** belirler. Parti şu durumlarda odak sayılır:\n- fiiller üyelerce **yoğun şekilde** işlenmiş ve bu durum aşağıdaki organlarca zımnen veya açıkça benimsenmişse,\n- ya da fiiller doğrudan bu organlarca **kararlılık içinde** işlenmişse.\n\nİlgili organlar: büyük kongre, genel başkan, merkez karar veya yönetim organları, TBMM grup genel kurulu veya grup yönetim kurulu.",
+      "articleRefs": [
+        "101",
+        "103"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Devlet yardımından yoksunluk, ihtar ve kapatmanın sonucu",
+      "body": "**Md 102 – Bilgi ve belge vermeyen parti:** İstenen bilgi ve belgeleri süresinde vermeyen partiye **ikinci bir yazı** tebliğ edilir. Yine cevap verilmezse Başsavcılık, partinin Devlet yardımından kısmen veya tamamen yoksun bırakılması için Anayasa Mahkemesinde re'sen dava açabilir. Parti bu istemlere karşı Anayasa Mahkemesine itiraz edebilir.\n\n**Md 102 – Organ veya üye fiili:**\n- Büyük kongre, merkez karar ve yönetim kurulu (iki ayrı kurul olarak oluşturulmuşsa bu kurullar), TBMM grup yönetim kurulu, TBMM grup genel kurulu ve genel başkan **dışında kalan** bir parti organı, mercii veya kurulu Anayasanın 68 inci maddesinin dördüncü fıkrasına aykırı fiil işlerse, fiilden başlayarak **iki yıl** geçmemiş olmak şartıyla Başsavcılık o organın **işten el çektirilmesini** yazıyla partiden ister. Sayılan bu organlar ve genel başkan el çektirme isteminin kapsamında değildir.\n- Bu fiil ve konuşmalardan hüküm giyen üyelerin **partiden kesin olarak çıkarılmasını** ister.\n- Parti, tebliğden itibaren **otuz gün** içinde istenen hususu yerine getirmezse Devlet yardımından yoksun bırakma davası açılır.\n- İddianamenin tebliğinden itibaren **otuz gün** içinde el çektirme ve ihraç yapılırsa dava **düşer**.\n\n**Md 104 – İhtar ve isim başvurusu:**\n- Md 101 dışındaki emredici hükümlere ve diğer kanunların partilerle ilgili emredici hükümlerine aykırılıkta Cumhuriyet Başsavcılığı re'sen yazıyla başvurur. Anayasa Mahkemesi aykırılığın giderilmesi için **ihtar kararı** verir.\n- Temelli kapatılan veya sicile kayıtlı partilerin isim, amblem ve rumuzlarının kullanılmasında Başsavcılık re'sen ya da ilgili parti doğrudan başvurur.\n- Mahkeme, başvurudan itibaren **en geç otuz gün** içinde, sicile kayıt önceliğine göre inceleme yapar.\n- Aykırılık görürse isim, amblem ve rumuzun **hükümsüzlüğüne ve sicilden terkinine** karar verir.\n\n**Md 106 – Bildirim:** İdari merciler ve mahkemeler bu fiilleri mahalli Cumhuriyet savcılığına **derhal ve yazılı** bildirir. Savcılıklar da Adalet Bakanlığına ve belgeleriyle birlikte Cumhuriyet Başsavcılığına yazıyla bildirir.\n\n**Md 107 – Kapatmanın sonucu:** Kapatılan partinin bütün malları **Hazineye** geçer. Kapatma kararını **Bakanlar Kurulu** uygular.\n\n**Not:** Bakanlar Kurulu metnindeki hâliyle verilmiştir.",
+      "articleRefs": [
+        "102",
+        "104",
+        "106",
+        "107"
+      ]
+    },
+    {
+      "type": "numbers",
+      "title": "Kapatma ve yaptırım süreleri",
+      "rows": [
+        {
+          "label": "Kapatma kararı için oy çokluğu",
+          "value": "Beşte üç (Kanun metnindeki hâliyle; Anayasa md 149 bugün parti kapatma kararı için üye tamsayısının üçte iki oy çokluğunu arar)",
+          "refs": [
+            "98"
+          ]
+        },
+        {
+          "label": "Partinin Başsavcılık isteklerine cevap süresi",
+          "value": "En geç onbeş gün",
+          "refs": [
+            "98"
+          ]
+        },
+        {
+          "label": "İnceleme Kurulunun karar yeter sayısı",
+          "value": "Üye tamsayısının salt çoğunluğu",
+          "refs": [
+            "99"
+          ]
+        },
+        {
+          "label": "Parti isteminde merkez karar ve yönetim kurulu karar sayısı",
+          "value": "Üye tamsayısının salt çoğunluğu",
+          "refs": [
+            "100"
+          ]
+        },
+        {
+          "label": "Başsavcılığın ret bildirimine itiraz süresi",
+          "value": "Tebliğden başlayarak otuz gün",
+          "refs": [
+            "100"
+          ]
+        },
+        {
+          "label": "Kurulun itirazı inceleme süresi",
+          "value": "En geç otuz gün",
+          "refs": [
+            "100"
+          ]
+        },
+        {
+          "label": "Organın işten el çektirilmesini isteme sınırı",
+          "value": "Fiilden başlayarak iki yıl",
+          "refs": [
+            "102"
+          ]
+        },
+        {
+          "label": "El çektirme veya ihraç istemini yerine getirme süresi",
+          "value": "Tebliğden itibaren otuz gün",
+          "refs": [
+            "102"
+          ]
+        },
+        {
+          "label": "Davanın düşmesi için el çektirme veya ihraç süresi",
+          "value": "İddianame tebliğinden itibaren otuz gün",
+          "refs": [
+            "102"
+          ]
+        },
+        {
+          "label": "İsim, amblem ve rumuz başvurusunu inceleme süresi",
+          "value": "Başvurudan itibaren en geç otuz gün",
+          "refs": [
+            "104"
+          ]
+        },
+        {
+          "label": "Kapatmaya neden olan üyelerin başka partide görev yasağı",
+          "value": "Beş yıl",
+          "refs": [
+            "95"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "95",
+        "98",
+        "99",
+        "100",
+        "102",
+        "104"
+      ]
+    },
+    {
+      "type": "compare",
+      "title": "Kapatma davası mı, ihtar başvurusu mu?",
+      "rows": [
+        {
+          "aspect": "Başvuran",
+          "left": "Kapatma davası: Yargıtay Cumhuriyet Başsavcısı",
+          "right": "Aykırılık başvurusu: Cumhuriyet Başsavcılığı, re'sen ve yazıyla (isim, amblem ve rumuzda ilgili parti de doğrudan başvurabilir)",
+          "refs": [
+            "98",
+            "104"
+          ]
+        },
+        {
+          "aspect": "Başlatma yolu",
+          "left": "Re'sen, Bakanlar Kurulu kararı üzerine Adalet Bakanının istemiyle (Bakanlar Kurulu metnindeki hâliyle) veya bir siyasi partinin istemi üzerine",
+          "right": "Re'sen",
+          "refs": [
+            "100",
+            "104"
+          ]
+        },
+        {
+          "aspect": "Mahkeme",
+          "left": "Anayasa Mahkemesi",
+          "right": "Anayasa Mahkemesi",
+          "refs": [
+            "98",
+            "104"
+          ]
+        },
+        {
+          "aspect": "Sebep",
+          "left": "Md 101'de sayılan hâller",
+          "right": "Md 101 dışındaki emredici hükümlere ve diğer kanunların partilerle ilgili emredici hükümlerine aykırılık",
+          "refs": [
+            "101",
+            "104"
+          ]
+        },
+        {
+          "aspect": "Sonuç",
+          "left": "Kapatma; (a) ve (b) hâllerinde Devlet yardımından kısmen veya tamamen yoksun bırakma da verilebilir",
+          "right": "Aykırılığın giderilmesi için ihtar kararı; isim, amblem ve rumuzda hükümsüzlük ve sicilden terkin",
+          "refs": [
+            "101",
+            "104"
+          ]
+        },
+        {
+          "aspect": "Karar sayısı",
+          "left": "Beşte üç oy çokluğu (Kanun metnindeki hâliyle; Anayasa md 149 bugün parti kapatma kararı için üye tamsayısının üçte iki oy çokluğunu arar)",
+          "right": "Metinde ayrıca gösterilmemiştir",
+          "refs": [
+            "98",
+            "104"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "98",
+        "100",
+        "101",
+        "104"
+      ]
+    },
+    {
+      "type": "exam_stats",
+      "title": "Sınav der ki",
+      "rows": [
+        {
+          "label": "Bu ünitenin maddelerinden yayındaki soru",
+          "value": "0",
+          "refs": [
+            "70",
+            "71",
+            "72",
+            "73",
+            "74",
+            "75",
+            "76",
+            "77",
+            "78",
+            "79",
+            "80",
+            "81",
+            "82",
+            "83",
+            "84",
+            "85",
+            "86",
+            "87",
+            "88",
+            "89",
+            "90",
+            "93",
+            "94",
+            "95",
+            "96",
+            "98",
+            "99",
+            "100",
+            "101",
+            "102",
+            "103",
+            "104",
+            "106",
+            "107"
+          ]
+        },
+        {
+          "label": "Hiç soru çıkmamış",
+          "value": "md 70, md 71, md 72, md 73, md 74, md 75, md 76, md 77, md 78, md 79, md 80, md 81, md 82, md 83, md 84, md 85, md 86, md 87, md 88, md 89, md 90, md 93, md 94, md 95, md 96, md 98, md 99, md 100, md 101, md 102, md 103, md 104, md 106, md 107",
+          "refs": [
+            "70",
+            "71",
+            "72",
+            "73",
+            "74",
+            "75",
+            "76",
+            "77",
+            "78",
+            "79",
+            "80",
+            "81",
+            "82",
+            "83",
+            "84",
+            "85",
+            "86",
+            "87",
+            "88",
+            "89",
+            "90",
+            "93",
+            "94",
+            "95",
+            "96",
+            "98",
+            "99",
+            "100",
+            "101",
+            "102",
+            "103",
+            "104",
+            "106",
+            "107"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "70",
+        "71",
+        "72",
+        "73",
+        "74",
+        "75",
+        "76",
+        "77",
+        "78",
+        "79",
+        "80",
+        "81",
+        "82",
+        "83",
+        "84",
+        "85",
+        "86",
+        "87",
+        "88",
+        "89",
+        "90",
+        "93",
+        "94",
+        "95",
+        "96",
+        "98",
+        "99",
+        "100",
+        "101",
+        "102",
+        "103",
+        "104",
+        "106",
+        "107"
+      ],
+      "generated": true
+    },
+    {
+      "type": "bridge",
+      "title": "Bu üniteden soru çöz",
+      "articleRefs": [
+        "70",
+        "71",
+        "72",
+        "73",
+        "74",
+        "75",
+        "76",
+        "77",
+        "78",
+        "79",
+        "80",
+        "81",
+        "82",
+        "83",
+        "84",
+        "85",
+        "86",
+        "87",
+        "88",
+        "89",
+        "90",
+        "93",
+        "94",
+        "95",
+        "96",
+        "98",
+        "99",
+        "100",
+        "101",
+        "102",
+        "103",
+        "104",
+        "106",
+        "107"
+      ],
+      "generated": true,
+      "rows": [
+        {
+          "label": "Madde kapsamlı seans",
+          "value": "md 70–90, 93–96, 98–104, 106, 107, 0 soru",
+          "refs": [
+            "70",
+            "71",
+            "72",
+            "73",
+            "74",
+            "75",
+            "76",
+            "77",
+            "78",
+            "79",
+            "80",
+            "81",
+            "82",
+            "83",
+            "84",
+            "85",
+            "86",
+            "87",
+            "88",
+            "89",
+            "90",
+            "93",
+            "94",
+            "95",
+            "96",
+            "98",
+            "99",
+            "100",
+            "101",
+            "102",
+            "103",
+            "104",
+            "106",
+            "107"
+          ]
+        }
+      ]
+    }
+  ]
+}

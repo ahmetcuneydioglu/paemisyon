@@ -1,0 +1,676 @@
+{
+  "unit": {
+    "slug": "mshs-2-bolum-iv",
+    "legislationSlug": "mshus",
+    "topicId": "8aa7d9cd-57b9-4092-9ed1-ce2a65ceeca4",
+    "title": "İnsan Hakları Komitesi ve uygulama usulleri",
+    "subtitle": "Komite'nin kuruluşu, raporlama, devletlerarası başvuru, uzlaştırma, imza ve yürürlük",
+    "articleFrom": "28",
+    "articleTo": "53",
+    "readingMinutes": 13,
+    "sourceLabel": "AI özeti — Medeni ve Siyasi Haklara İlişkin Uluslararası Sözleşme, md 28–53",
+    "articleNos": [
+      "28",
+      "29",
+      "30",
+      "31",
+      "32",
+      "33",
+      "34",
+      "35",
+      "36",
+      "37",
+      "38",
+      "39",
+      "40",
+      "41",
+      "42",
+      "43",
+      "44",
+      "45",
+      "46",
+      "47",
+      "48",
+      "49",
+      "50",
+      "51",
+      "52",
+      "53"
+    ],
+    "generatedBy": "claude-opus-5-5 (ozet-uret.ts)",
+    "sortOrder": 2
+  },
+  "blocks": [
+    {
+      "type": "concept",
+      "title": "İnsan Hakları Komitesi",
+      "body": "Sözleşme kendi denetim organını kurar: İnsan Hakları Komitesi. Sözleşme boyunca kısaca Komite diye anılır. Komite **18 üyeden** oluşur ve Sözleşme'de belirtilen görevleri yürütür. Üyeler seçimle gelir ve kendi **kişisel sıfatlarıyla** görev yapar. Bu ikisini aklına yaz: 18 üye, kişisel sıfat.",
+      "articleRefs": [
+        "28"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Üyelik nitelikleri ve aday gösterme",
+      "body": "**Kimler üye olabilir? (md 28)**\n- Sözleşme'ye Taraf Devletlerin vatandaşları,\n- yüksek ahlaki karaktere sahip,\n- insan hakları alanında ehliyetleriyle tanınan kişiler.\n- Hukuk deneyimi olan bazı kişilerin katılmasının yararı da göz önünde bulundurulur.\n\n**Aday gösterme ve seçim (md 29)**\n- Üyeler, Taraf Devletlerce aday gösterilen kişilerin listesinden **gizli oyla** seçilir.\n- Her Taraf Devlet **en fazla 2 kişi** aday gösterebilir.\n- Adaylar **aday gösteren Devletin vatandaşı** olmalıdır.\n- Bir kimse **yeniden aday gösterilebilir**.",
+      "articleRefs": [
+        "28",
+        "29"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Seçim takvimi ve seçilme çoğunluğu",
+      "body": "- **İlk seçim:** Sözleşme'nin yürürlüğe girdiği tarihten sonra **en geç 6 ay** içinde yapılır.\n- **Çağrı:** BM Genel Sekreteri, seçim tarihinden **en az 4 ay önce** Taraf Devletleri **3 ay içinde** aday göstermeye yazılı olarak çağırır. 34. madde uyarınca boşalan üyelikler için yapılan seçimler bunun dışındadır.\n- **Liste:** Genel Sekreter adayların **alfabetik listesini**, aday gösteren Devletleri de belirterek hazırlar. Listeyi her seçimden **en az 1 ay önce** Taraf Devletlere iletir.\n- **Seçim yeri:** Genel Sekreter'in BM Genel Merkezi'nde düzenlediği Taraf Devletler toplantısıdır.\n- **Toplantı nisabı:** Taraf Devletlerin **üçte ikisi**.\n- **Seçilme:** Hazır bulunan ve oy kullanan temsilcilerin oylarının **en çoğunu** alan ve **salt çoğunluğunu** sağlayan adaylar seçilir.",
+      "articleRefs": [
+        "30"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Dağılım ve görev süresi",
+      "body": "**Dağılım (md 31)**\n- Komite'de aynı Devletten **birden fazla üye bulunamaz**.\n- Seçimde şu esaslar göz önünde bulundurulur: üyeliğin adil coğrafi dağılımı, farklı uygarlık biçimlerinin temsili ve belli başlı hukuk sistemlerinin temsili.\n\n**Görev süresi (md 32)**\n- Üyeler **4 yıl** için seçilir. Tekrar aday gösterilirlerse yeniden seçilebilirler.\n- **İstisna:** İlk seçimde seçilenlerden **9 üyenin** süresi **2 yıl** sonunda dolar. Bu 9 üye, ilk seçimden hemen sonra **kura** ile belirlenir. Kurayı 30. maddedeki toplantının Başkanı çeker.\n- Görev süresi sona erince seçimler bu bölümdeki maddelere göre yapılır.",
+      "articleRefs": [
+        "31",
+        "32"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "İki aday, ama tek üye",
+      "body": "Her Taraf Devlet en fazla **2 aday** gösterebilir (md 29). Ama Komite'de aynı Devletten **birden fazla üye bulunamaz** (md 31). Bu yüzden her Devletin Komite'ye iki üye gönderdiğini söyleyen bir ifade yanlıştır. İkinci tuzak da şu: aday, **aday gösteren Devletin vatandaşı** olmak zorundadır (md 29). Seçilen üye ise Komite'de kendi **kişisel sıfatıyla** görev yapar (md 28).",
+      "articleRefs": [
+        "28",
+        "29",
+        "31"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "type": "rule",
+      "title": "Üyeliğin boşalması",
+      "body": "**Görevini yapamaz hâle gelme**\n- Şart: Öteki üyelerin **oybirliği** ile varacakları görüşe göre, üye **geçici nitelikte bir hazır bulunmama durumu dışında** başka bir nedenle görevini yapamaz hâle gelmiş olmalıdır.\n- Komite Başkanı durumu BM Genel Sekreteri'ne bildirir. Genel Sekreter üyeliğin boş olduğunu ilan eder.\n\n**Ölüm ya da görevden çekilme**\n- Başkan **hemen** Genel Sekreter'e bildirir.\n- Genel Sekreter üyeliği, ölüm ya da çekilmenin **hüküm doğurduğu tarih itibarıyla** boş ilan eder.",
+      "articleRefs": [
+        "33"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Boşalan üyeliğin doldurulması",
+      "body": "- **Şart:** Üyelik 33. maddeye göre boş ilan edilmiş olmalıdır. **Ayrıca** yeri boşalan üyenin görev süresi, ilan tarihinden sonra **6 ay içinde sona ermiyor** olmalıdır.\n- BM Genel Sekreteri durumu Taraf Devletlere bildirir.\n- Devletler, 29. maddeye göre **2 ay içinde** aday gösterebilir.\n- Genel Sekreter adayların **alfabetik listesini** hazırlayıp Taraf Devletlere iletir.\n- Seçim, bu bölümün ilgili hükümlerine göre yapılır.\n- Seçilen üye, yeri boşalan üyenin **kalan süresinin sonuna kadar** görev yapar.",
+      "articleRefs": [
+        "34"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Ara seçimin takvimi farklıdır",
+      "body": "Olağan seçimde Devletlere aday göstermek için **3 ay** tanınır ve çağrı seçimden **en az 4 ay önce** yapılır (md 30). Bu takvim, 34. madde uyarınca boşalan üyelikler için yapılan seçimlerde uygulanmaz. Boşalan üyelikte aday gösterme süresi **2 ay**dır (md 34). Ara seçimle gelen üye yeni bir **4 yıllık** süre başlatmaz (md 32). Yeri boşalan üyenin **kalan süresini** tamamlar (md 34). Bir de şunu unutma: kalan süre ilan tarihinden sonra **6 ay** içinde bitiyorsa bu doldurma süreci işlemez (md 34).",
+      "articleRefs": [
+        "30",
+        "32",
+        "34"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "type": "numbers",
+      "title": "Komite'nin kuruluş sayıları",
+      "rows": [
+        {
+          "label": "Komite üye sayısı",
+          "value": "18",
+          "refs": [
+            "28"
+          ]
+        },
+        {
+          "label": "Bir Taraf Devletin gösterebileceği en fazla aday",
+          "value": "2",
+          "refs": [
+            "29"
+          ]
+        },
+        {
+          "label": "Aynı Devletten Komite üyesi",
+          "value": "En fazla 1 (birden fazla bulunamaz)",
+          "refs": [
+            "31"
+          ]
+        },
+        {
+          "label": "İlk seçim",
+          "value": "Yürürlükten sonra en geç 6 ay içinde",
+          "refs": [
+            "30"
+          ]
+        },
+        {
+          "label": "Genel Sekreter'in yazılı çağrısı",
+          "value": "Seçimden en az 4 ay önce",
+          "refs": [
+            "30"
+          ]
+        },
+        {
+          "label": "Olağan seçimde aday gösterme süresi",
+          "value": "3 ay",
+          "refs": [
+            "30"
+          ]
+        },
+        {
+          "label": "Alfabetik listenin iletilmesi",
+          "value": "Seçimden en az 1 ay önce",
+          "refs": [
+            "30"
+          ]
+        },
+        {
+          "label": "Seçim toplantısı nisabı",
+          "value": "Taraf Devletlerin üçte ikisi",
+          "refs": [
+            "30"
+          ]
+        },
+        {
+          "label": "Seçilme için gereken oy",
+          "value": "Oyların en çoğu + salt çoğunluk",
+          "refs": [
+            "30"
+          ]
+        },
+        {
+          "label": "Üyelerin görev süresi",
+          "value": "4 yıl",
+          "refs": [
+            "32"
+          ]
+        },
+        {
+          "label": "İlk seçimde süresi kısa tutulan üyeler",
+          "value": "9 üye, 2 yıl (kura ile)",
+          "refs": [
+            "32"
+          ]
+        },
+        {
+          "label": "Boşalan üyeliğin doldurulması için eşik",
+          "value": "Kalan süre ilan tarihinden sonra 6 ay içinde bitmiyorsa",
+          "refs": [
+            "34"
+          ]
+        },
+        {
+          "label": "Boşalan üyelikte aday gösterme süresi",
+          "value": "2 ay",
+          "refs": [
+            "34"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "28",
+        "29",
+        "30",
+        "31",
+        "32",
+        "34"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Maaş, sekretarya, toplantı yeri ve and",
+      "body": "- **Maaş (md 35):** Üyeler BM kaynaklarından maaş alır. Bunun için BM Genel Kurulu'nun onayı gerekir. Koşulları, Komite'nin sorumluluklarının önemi göz önüne alınarak Genel Kurul saptar.\n- **Eleman ve kolaylıklar (md 36):** Komite'nin görevlerini etkili biçimde yürütebilmesi için bunları BM Genel Sekreteri sağlar.\n- **İlk oturum (md 37):** Genel Sekreter toplar, yeri BM Genel Merkezi'dir.\n- **Sonraki toplantılar (md 37):** Komite kendi çalışma usullerinde öngörülen zamanlarda toplanır.\n- **Normal toplantı yeri (md 37):** BM Genel Merkezi **ya da** Cenevre'deki BM Ofisi.\n- **And (md 38):** Her üye göreve başlamadan önce **Komite önünde** and içer. Görevlerini **tarafsız ve vicdanına göre** yürüteceğine söz verir.",
+      "articleRefs": [
+        "35",
+        "36",
+        "37",
+        "38"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Komite'nin çalışma usulü",
+      "body": "- Komite **memurlarını 2 yıllık** bir süre için seçer. Memurlar yeniden seçilebilir.\n- Komite çalışma usullerini **kendisi belirler**.\n- Ancak bu kurallar, diğer hususların yanı sıra şu ikisini içermek zorundadır:\n  - **Toplantı yeterlik sayısı: 12 üye**\n  - **Kararlar: mevcut üyelerin çoğunluğu ile**",
+      "articleRefs": [
+        "39"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Nisap ve çoğunlukları birbirine karıştırma",
+      "body": "Bu ünitede birbirine benzeyen üç ayrı sayı kümesi var:\n- **Komite üyelerini seçen Taraf Devletler toplantısı** (md 30): Nisap Taraf Devletlerin **üçte ikisi**dir. Aday, oyların **en çoğunu** almalı ve **salt çoğunluğu** sağlamalıdır.\n- **Komite'nin kendi toplantıları** (md 39): Yeterlik sayısı **12 üye**dir. Kararlar **mevcut üyelerin çoğunluğu** ile alınır.\n- **Süreler:** Komite üyelerinin görev süresi **4 yıl**dır (md 32). Komite'nin seçtiği memurlarınki ise **2 yıl**dır (md 39).",
+      "articleRefs": [
+        "30",
+        "32",
+        "39"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "type": "rule",
+      "title": "Taraf Devletlerin raporları",
+      "body": "**Ne zaman?**\n- Sözleşme ilgili Devlet bakımından yürürlüğe girdikten sonra **1 yıl içinde**;\n- bundan sonra **Komite ne zaman isterse**.\n\n**Neyi kapsar?**\n- Hakların gerçekleştirilmesi için alınan tedbirler.\n- Hakların kullanılmasında kaydedilen gelişmeler.\n- Varsa, uygulamayı etkileyen unsur ve güçlükler.\n\n**Raporun yolu**\n- Raporlar BM Genel Sekreteri'ne sunulur. Genel Sekreter onları inceleme için Komite'ye sunar.\n- Genel Sekreter, **Komite'ye danıştıktan sonra**, ihtisas kuruluşlarının yetki alanına giren bölümleri bu kuruluşlara iletebilir.\n- Komite raporları inceler. Kendi raporlarını ve uygun gördüğü görüşleri Taraf Devletlere iletir.\n- Komite, raporların örnekleriyle birlikte görüşlerini **Ekonomik ve Sosyal Konsey**'e de iletebilir.\n- Taraf Devletler bu görüşlere ilişkin kendi görüş ve yorumlarını Komite'ye sunabilir.\n\n**Komite'nin kendi raporu (md 45):** Komite, Ekonomik ve Sosyal Konsey aracılığıyla BM Genel Kurulu'na **yıllık** çalışma raporu sunar.",
+      "articleRefs": [
+        "40",
+        "45"
+      ]
+    },
+    {
+      "type": "concept",
+      "title": "Devletlerarası başvuru isteğe bağlıdır",
+      "body": "Bir Devletin başka bir Devleti Komite'ye şikâyet edebilmesi kendiliğinden işlemez. Taraf Devlet önce bir **bildirim** yapar. Bu bildirimle Komite'nin, başka bir Devletin yükümlülüklerini yerine getirmediği iddiasını içeren başvuruları kabul ve inceleme yetkisini tanıdığını açıklar. Başvuruyu ancak böyle bir bildirimde bulunmuş Devlet yapabilir. Bildirimde bulunmamış bir Devleti ilgilendiren başvuru da kabul edilmez.\n\nMaddenin işleyişi şöyledir:\n- Madde, **10 Taraf Devlet** bildirimde bulununca yürürlüğe girer.\n- Bildirimler BM Genel Sekreteri'ne iletilir.\n- Bildirim Genel Sekreter'e duyurularak her zaman geri alınabilir.\n- Geri alma, daha önce yapılmış bir başvurunun konusu olan sorunun ele alınmasını engellemez.\n- Ama geri alan Devlet yeni bir bildirimde bulunmadıkça herhangi bir Taraf Devletten başka başvuru kabul edilmez.",
+      "articleRefs": [
+        "41"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Devletlerarası başvurunun usulü",
+      "body": "1. **Yazılı başvuru:** Bir Taraf Devlet, diğerinin Sözleşme hükümlerini yerine getirmediği görüşündeyse sorunu yazılı başvuruyla o Devletin dikkatine sunar.\n2. **Açıklama:** Başvuruyu alan Devlet **3 ay içinde** yazılı açıklama ya da beyanda bulunur. Açıklama, mümkün ve uygun olduğu ölçüde iç hukuk usulleri ve çözüm yollarına ilişkin bilgiyi de içerir.\n3. **Komite'ye götürme:** Sorun, ilk başvurunun alınmasından sonra **6 ay içinde** iki Devleti de tatmin edecek biçimde düzeltilmemiş olabilir. Bu durumda Devletlerden herhangi biri, diğer Devlete ve Komite'ye bildirerek sorunu Komite'ye götürebilir.\n4. **İç hukuk yolları:** Komite sorunu ancak bütün iç hukuk yollarına başvurulduğu ve bunların tüketildiği kanısına varırsa ele alır. **İstisna:** Çözüm yolları makul olmayan biçimde uzamışsa bu kural uygulanmaz.\n5. **Kapalı oturum:** Komite bu başvuruları kapalı oturumda inceler.\n6. **Dostane çözüm:** Komite, insan hak ve temel özgürlüklerine saygı temelinde dostane çözüm için iyi niyet girişimlerinde bulunur. İlgili Devletleri gerekli bilgileri vermeye çağırabilir. Devletlerin Komite'de **temsil edilme** ve **sözlü ve/veya yazılı beyan** hakkı vardır.\n7. **Rapor:** Komite, Komite'ye götürme bildiriminin alınmasından sonra **12 ay içinde** rapor hazırlar ve rapor ilgili Devletlere bildirilir.",
+      "articleRefs": [
+        "41"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Ad hoc Uzlaştırma Komisyonu: kuruluş",
+      "body": "- **Ne zaman?** 41. maddeye göre Komite'ye iletilen soruna, ilgili Devletleri tatmin edecek bir çözüm bulunamamışsa.\n- **Şart:** İlgili Taraf Devletlerin **önceden alınmış rızası**. Bu şart sağlanırsa Komite Komisyon **kurabilir**.\n- **Amaç:** Sözleşme'ye saygı temelinde dostane çözüm için iyi niyet girişimleri.\n- **Oluşum:** İlgili Devletlerin kabul edeceği **5 kişi**.\n- **Anlaşma olmazsa:** Devletler oluşum konusunda **3 ay içinde** anlaşamayabilir. Bu durumda üzerinde anlaşılamayan üyeleri Komite üyeleri seçer: **kendi aralarından, gizli oy ve üçte iki çoğunlukla**.\n- **Üyeler:** Kişisel sıfatlarıyla görev yapar.\n- **Vatandaşlık yasağı:** Üyeler şu Devletlerin vatandaşı olamaz: ilgili Taraf Devletler, Sözleşme'ye Taraf olmayan bir Devlet, 41. madde bildirimini yapmamış bir Taraf Devlet.\n- **Başkan ve usul:** Komisyon Başkanını kendisi seçer, çalışma usullerini kendisi belirler.\n- **Toplantı yeri:** Normal olarak BM Genel Merkezi ya da Cenevre'deki BM Ofisi. Genel Sekreter ve ilgili Devletlere danışılarak başka uygun yerler de saptanabilir.\n- **Sekretarya:** 36. maddeye göre kurulan sekretarya Komisyon'un işlerini de yürütür.\n- **Bilgiler:** Komite'nin edindiği bilgiler Komisyon'a verilir. Komisyon, ilgili Devletleri başka bilgiler vermeye çağırabilir.",
+      "articleRefs": [
+        "42"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Komisyon raporu, harcamalar ve ayrıcalıklar",
+      "body": "**Rapor**\n- Komisyon, sorunu ele almasından başlayarak **en geç 12 ay** içinde **Komite Başkanı'na** rapor sunar. Rapor ilgili Devletlere bildirilmek üzere sunulur.\n- **12 ayda bitirememişse:** Rapor, çalışmalar hakkında kısa bir açıklamayla sınırlıdır.\n- **Dostane çözüm bulunmuşsa:** Rapor, vakıaların ve varılan sonucun kısaca belirtilmesiyle sınırlıdır.\n- **Bulunamamışsa:** Rapor şunları kapsar:\n  - bütün vakıalara ilişkin bulgular,\n  - dostane çözüm imkânları hakkındaki görüşler,\n  - Devletlerin yazılı beyanları ve sözlü beyan tutanakları.\n- Bu son durumda Devletler, raporu aldıktan sonra **3 ay içinde** rapordaki hususları kabul edip etmediklerini Komite Başkanı'na bildirir.\n- 42. madde, Komite'nin 41. maddedeki sorumluluklarını haleldar etmez.\n\n**Harcamalar**\n- İlgili Devletler, Genel Sekreter'in tahminlerine göre harcamaları **eşit olarak** paylaşır.\n- Devletler ödemeden önce, gerekirse Genel Sekreter harcamaları karşılamaya yetkilidir.\n\n**Ayrıcalıklar (md 43)**\n- Komite üyeleri ve ad hoc uzlaştırma komisyonu üyeleri bu ayrıcalıklardan yararlanır.\n- Bunlar, BM Ayrıcalıkları ve Dokunulmazlıkları Sözleşmesi'nde BM adına görev yapan uzmanlar için öngörülen kolaylık, ayrıcalık ve dokunulmazlıklardır.",
+      "articleRefs": [
+        "42",
+        "43"
+      ]
+    },
+    {
+      "type": "compare",
+      "title": "Komite raporu ve Komisyon raporu",
+      "rows": [
+        {
+          "aspect": "Organ",
+          "left": "Komite (18 üye); 41. madde bildirimi yapmış Devletler arasındaki başvuruyu inceler",
+          "right": "Ad hoc Uzlaştırma Komisyonu (5 kişi); ilgili Devletlerin önceden rızasıyla Komite kurabilir",
+          "refs": [
+            "28",
+            "41",
+            "42"
+          ]
+        },
+        {
+          "aspect": "Rapor süresi",
+          "left": "Komite'ye götürme bildiriminin alınmasından sonra 12 ay içinde",
+          "right": "Sorunu ele almasından başlayarak en geç 12 ay içinde",
+          "refs": [
+            "41",
+            "42"
+          ]
+        },
+        {
+          "aspect": "Rapor kime",
+          "left": "İlgili Taraf Devletlere bildirilir",
+          "right": "İlgili Devletlere bildirilmek üzere Komite Başkanı'na sunulur",
+          "refs": [
+            "41",
+            "42"
+          ]
+        },
+        {
+          "aspect": "Dostane çözüm bulunmuşsa",
+          "left": "Vakıalar kısaca ve varılan sonuç",
+          "right": "Vakıalar ve varılan sonuç kısaca",
+          "refs": [
+            "41",
+            "42"
+          ]
+        },
+        {
+          "aspect": "Dostane çözüm bulunamamışsa",
+          "left": "Vakıalar kısaca; yazılı beyanlar ve sözlü beyan tutanakları eklenir",
+          "right": "Bütün vakıalara ilişkin bulgular ve çözüm imkânlarına dair görüşler; yazılı beyanlar ve sözlü beyan tutanakları",
+          "refs": [
+            "41",
+            "42"
+          ]
+        },
+        {
+          "aspect": "Süre içinde bitirilemezse",
+          "left": "41. maddede ayrı bir rapor biçimi öngörülmemiş",
+          "right": "Çalışmalar hakkında kısa açıklama",
+          "refs": [
+            "41",
+            "42"
+          ]
+        },
+        {
+          "aspect": "Rapordan sonra",
+          "left": "41. maddede bir kabul bildirimi süresi yok",
+          "right": "Devletler 3 ay içinde rapordaki hususları kabul edip etmediklerini Komite Başkanı'na bildirir",
+          "refs": [
+            "41",
+            "42"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "28",
+        "41",
+        "42"
+      ]
+    },
+    {
+      "type": "concept",
+      "title": "Sözleşme'nin saklı tuttukları",
+      "body": "Sözleşme kendini tek yol olarak görmez.\n- **Md 44:** Uygulamaya ilişkin hükümler, BM ve ihtisas kuruluşlarının kuruluş belgeleri ve sözleşmelerindeki insan hakları usullerine halel getirmez. Taraf Devletler bir uyuşmazlığı, aralarında yürürlükte olan genel ya da özel uluslararası andlaşmalara göre başka usullerle de çözebilir.\n- **Md 46:** Sözleşme'nin hiçbir hükmü, BM Şartı'nın ve ihtisas kuruluşlarının kuruluş belgelerinin bu konulardaki hükümlerini haleldar edecek şekilde yorumlanamaz.\n- **Md 47:** Sözleşme'nin hiçbir hükmü, tüm halkların doğal zenginlik ve kaynaklarından tam olarak ve özgürce yararlanma ve bunları kullanma haklarını haleldar edecek şekilde yorumlanamaz.",
+      "articleRefs": [
+        "44",
+        "46",
+        "47"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "İmza, onay, katılma ve yürürlük",
+      "body": "**İmzaya açık olanlar (md 48)**\n- BM'nin ya da ihtisas kuruluşlarından birinin üyesi olan Devletler.\n- Uluslararası Adalet Divanı Statüsü'ne Taraf olan bütün Devletler.\n- BM Genel Kurulu'nun Taraf olmaya çağırdığı herhangi bir Devlet.\n- Aynı Devletler katılmaya da açıktır.\n\n**Onay ve katılma (md 48)**\n- Sözleşme **onaylamaya tabidir**. Onay belgeleri BM Genel Sekreteri'ne tevdi edilir.\n- Katılma, katılma belgesinin Genel Sekreter'e tevdiiyle gerçekleşir.\n- Genel Sekreter her onay ve katılma belgesini, imzalamış ya da katılmış bütün Devletlere bildirir.\n\n**Yürürlük (md 49)**\n- Sözleşme, **35. onay ya da katılma belgesinin** iletilmesinden **3 ay sonra** yürürlüğe girer.\n- Sonradan onaylayan ya da katılan Devlet bakımından, o Devletin kendi belgesini iletmesinden **3 ay sonra** yürürlüğe girer.\n\n**Federal Devletler (md 50)**\n- Hükümler, **hiçbir sınırlama ya da istisna olmaksızın** Federal Devletlerin bütün kesimlerinde geçerlidir.",
+      "articleRefs": [
+        "48",
+        "49",
+        "50"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Değişiklik, bildirimler ve geçerli metinler",
+      "body": "**Değişiklik (md 51)**\n1. Her Taraf Devlet değişiklik önerebilir ve öneriyi BM Genel Sekreteri'ne iletir.\n2. Genel Sekreter önerileri Taraf Devletlere gönderir. Devletlere, önerileri ele alıp oylamak için bir konferanstan yana olup olmadıklarını sorar.\n3. Taraf Devletlerin **en az üçte biri** desteklerse Genel Sekreter, BM gözetiminde konferans toplar.\n4. Konferansta hazır bulunan ve oy veren Devletlerin **çoğunluğu** değişikliği kabul ederse, değişiklik onay için **BM Genel Kurulu**'na sunulur.\n5. Değişiklik iki şartla yürürlüğe girer: Genel Kurul'un onayı ve Taraf Devletlerin **üçte ikisinin** kendi anayasal kurallarına uygun kabulü.\n6. Yürürlüğe giren değişiklik yalnızca onu **kabul eden** Devletleri bağlar. Ötekiler Sözleşme hükümleri ve daha önce kabul ettikleri değişikliklerle bağlı kalır.\n\n**Bildirimler (md 52)**\n- Genel Sekreter, 48. maddede belirtilen bütün Devletlere şunları bildirir: imza, onay ve katılmalar; Sözleşme'nin yürürlüğe giriş tarihi; değişikliklerin yürürlüğe giriş tarihi.\n- Bu yükümlülük, 48. maddedeki onay ve katılma belgesi iletim bildirimlerinin dışındadır.\n\n**Metinler (md 53)**\n- Çince, Fransızca, İngilizce, İspanyolca ve Rusça metinler **aynı derecede geçerlidir**.\n- Sözleşme BM arşivinde saklanır.\n- Onaylı örnekleri 48. maddede belirtilen tüm Devletlere gönderilir.",
+      "articleRefs": [
+        "51",
+        "52",
+        "53"
+      ]
+    },
+    {
+      "type": "numbers",
+      "title": "Raporlama, başvuru ve son hükümler sayıları",
+      "rows": [
+        {
+          "label": "Taraf Devletin ilk raporu",
+          "value": "Yürürlükten sonra 1 yıl içinde",
+          "refs": [
+            "40"
+          ]
+        },
+        {
+          "label": "Başvuruyu alan Devletin açıklama süresi",
+          "value": "3 ay",
+          "refs": [
+            "41"
+          ]
+        },
+        {
+          "label": "Sorunun Komite'ye götürülebilmesi",
+          "value": "İlk başvurudan sonra 6 ay içinde düzeltilmezse",
+          "refs": [
+            "41"
+          ]
+        },
+        {
+          "label": "Komite raporu (devletlerarası başvuru)",
+          "value": "Bildirimden sonra 12 ay içinde",
+          "refs": [
+            "41"
+          ]
+        },
+        {
+          "label": "41. maddenin yürürlüğü için gereken bildirim",
+          "value": "10 Taraf Devlet",
+          "refs": [
+            "41"
+          ]
+        },
+        {
+          "label": "Uzlaştırma Komisyonu üye sayısı",
+          "value": "5",
+          "refs": [
+            "42"
+          ]
+        },
+        {
+          "label": "Komisyon oluşumunda anlaşma süresi",
+          "value": "3 ay",
+          "refs": [
+            "42"
+          ]
+        },
+        {
+          "label": "Anlaşılamayan Komisyon üyelerinin seçimi",
+          "value": "Komite üyelerince, gizli oy, üçte iki çoğunluk",
+          "refs": [
+            "42"
+          ]
+        },
+        {
+          "label": "Komisyon raporu",
+          "value": "En geç 12 ay",
+          "refs": [
+            "42"
+          ]
+        },
+        {
+          "label": "Komisyon raporuna Devletlerin yanıtı",
+          "value": "3 ay içinde",
+          "refs": [
+            "42"
+          ]
+        },
+        {
+          "label": "Sözleşme'nin yürürlüğe girmesi",
+          "value": "35. belgenin iletilmesinden 3 ay sonra",
+          "refs": [
+            "49"
+          ]
+        },
+        {
+          "label": "Sonradan katılan Devlet için yürürlük",
+          "value": "Kendi belgesinden 3 ay sonra",
+          "refs": [
+            "49"
+          ]
+        },
+        {
+          "label": "Değişiklik konferansı için destek",
+          "value": "Taraf Devletlerin en az üçte biri",
+          "refs": [
+            "51"
+          ]
+        },
+        {
+          "label": "Değişikliğin yürürlüğü",
+          "value": "Genel Kurul onayı + Taraf Devletlerin üçte ikisinin kabulü",
+          "refs": [
+            "51"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "40",
+        "41",
+        "42",
+        "49",
+        "51"
+      ]
+    },
+    {
+      "type": "exam_stats",
+      "title": "Sınav der ki",
+      "rows": [
+        {
+          "label": "Bu ünitenin maddelerinden yayındaki soru",
+          "value": "0",
+          "refs": [
+            "28",
+            "29",
+            "30",
+            "31",
+            "32",
+            "33",
+            "34",
+            "35",
+            "36",
+            "37",
+            "38",
+            "39",
+            "40",
+            "41",
+            "42",
+            "43",
+            "44",
+            "45",
+            "46",
+            "47",
+            "48",
+            "49",
+            "50",
+            "51",
+            "52",
+            "53"
+          ]
+        },
+        {
+          "label": "Hiç soru çıkmamış",
+          "value": "md 28, md 29, md 30, md 31, md 32, md 33, md 34, md 35, md 36, md 37, md 38, md 39, md 40, md 41, md 42, md 43, md 44, md 45, md 46, md 47, md 48, md 49, md 50, md 51, md 52, md 53",
+          "refs": [
+            "28",
+            "29",
+            "30",
+            "31",
+            "32",
+            "33",
+            "34",
+            "35",
+            "36",
+            "37",
+            "38",
+            "39",
+            "40",
+            "41",
+            "42",
+            "43",
+            "44",
+            "45",
+            "46",
+            "47",
+            "48",
+            "49",
+            "50",
+            "51",
+            "52",
+            "53"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "28",
+        "29",
+        "30",
+        "31",
+        "32",
+        "33",
+        "34",
+        "35",
+        "36",
+        "37",
+        "38",
+        "39",
+        "40",
+        "41",
+        "42",
+        "43",
+        "44",
+        "45",
+        "46",
+        "47",
+        "48",
+        "49",
+        "50",
+        "51",
+        "52",
+        "53"
+      ],
+      "generated": true
+    },
+    {
+      "type": "bridge",
+      "title": "Bu üniteden soru çöz",
+      "articleRefs": [
+        "28",
+        "29",
+        "30",
+        "31",
+        "32",
+        "33",
+        "34",
+        "35",
+        "36",
+        "37",
+        "38",
+        "39",
+        "40",
+        "41",
+        "42",
+        "43",
+        "44",
+        "45",
+        "46",
+        "47",
+        "48",
+        "49",
+        "50",
+        "51",
+        "52",
+        "53"
+      ],
+      "generated": true,
+      "rows": [
+        {
+          "label": "Madde kapsamlı seans",
+          "value": "md 28–53, 0 soru",
+          "refs": [
+            "28",
+            "29",
+            "30",
+            "31",
+            "32",
+            "33",
+            "34",
+            "35",
+            "36",
+            "37",
+            "38",
+            "39",
+            "40",
+            "41",
+            "42",
+            "43",
+            "44",
+            "45",
+            "46",
+            "47",
+            "48",
+            "49",
+            "50",
+            "51",
+            "52",
+            "53"
+          ]
+        }
+      ]
+    }
+  ]
+}

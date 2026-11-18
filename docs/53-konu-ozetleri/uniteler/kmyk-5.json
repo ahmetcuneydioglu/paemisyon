@@ -1,0 +1,556 @@
+{
+  "unit": {
+    "slug": "kmyk-5",
+    "legislationSlug": "5018-sayili-kamu-mali-yonetimi-ve-kontrol-kanunu",
+    "topicId": "270990de-e156-4db0-b5fb-eb469562dd8a",
+    "title": "Dış Denetim, Kamu Zararı ve Son Hükümler",
+    "subtitle": "Sayıştay denetimi, kamu zararı, para cezaları, zamanaşımı, teftiş ve ek maddeler",
+    "articleFrom": "68",
+    "articleTo": "Ek 9",
+    "readingMinutes": 12,
+    "sourceLabel": "AI özeti — 5018 Sayılı Kamu Malî Yönetimi ve Kontrol Kanunu, md 68–82, Ek 1, Ek 2, Ek 3, Ek 4, Ek 5, Ek 6, Ek 7, Ek 8, Ek 9",
+    "articleNos": [
+      "68",
+      "69",
+      "70",
+      "71",
+      "72",
+      "73",
+      "74",
+      "75",
+      "76",
+      "77",
+      "78",
+      "79",
+      "80",
+      "81",
+      "82",
+      "Ek 1",
+      "Ek 2",
+      "Ek 3",
+      "Ek 4",
+      "Ek 5",
+      "Ek 6",
+      "Ek 7",
+      "Ek 8",
+      "Ek 9"
+    ],
+    "generatedBy": "claude-opus-5-5 (ozet-uret.ts)",
+    "sortOrder": 5
+  },
+  "blocks": [
+    {
+      "type": "concept",
+      "title": "Dış denetim: harcamadan sonra, sonucu Meclise",
+      "body": "Sayıştayın yaptığı dış denetim **harcama sonrası** bir denetimdir. Amacı, genel yönetim kapsamındaki kamu idarelerinin **hesap verme sorumluluğu** çerçevesinde yönetimin malî faaliyet, karar ve işlemlerini incelemektir. İnceleme iki ölçüte göre yapılır: **kanunlara uygunluk** ve **kurumsal amaç, hedef ve planlara uygunluk**. Sonuçlar **Türkiye Büyük Millet Meclisine** raporlanır. Sayıştay, denetim raporlarını ve bunlara verilen cevapları dikkate alarak düzenlediği **dış denetim genel değerlendirme raporunu** Meclise sunar.",
+      "articleRefs": [
+        "68"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Dış denetim nasıl yapılır?",
+      "body": "Dış denetim, **genel kabul görmüş uluslararası denetim standartları** dikkate alınarak iki yoldan yapılır:\n- **(a)** Kamu idaresi hesapları ve belgeleri esas alınır. Malî tabloların güvenilirliği ve doğruluğu yönünden **malî denetim** yapılır. Ayrıca gelir, gider ve mallara ilişkin malî işlemlerin kanunlara ve diğer hukuki düzenlemelere uygun olup olmadığı tespit edilir.\n- **(b)** Kamu kaynaklarının **etkili, ekonomik ve verimli** kullanılıp kullanılmadığı belirlenir. Faaliyet sonuçları ölçülür ve **performans** bakımından değerlendirilir.\n\nKamu idarelerinin iç denetçilerinin raporları, **talep edilmesi hâlinde** Sayıştay denetçilerinin bilgisine sunulur.\n\n(a) ve (b) bentlerine göre düzenlenen raporlar idareler itibarıyla **konsolide edilir**. Bir örneği ilgili kamu idaresine verilir ve raporu **üst yönetici** cevaplandırır. Sayıştay, raporları ve cevapları dikkate alarak **dış denetim genel değerlendirme raporunu** düzenler ve TBMM'ye sunar.",
+      "articleRefs": [
+        "68"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Hükme bağlama, denetim ve Sayıştayın denetçisi",
+      "body": "**Hükme bağlamayı** denetimle karıştırma. Hükme bağlama, gelir, gider ve mal hesapları ile bunlara ilişkin işlemlerin yasal düzenlemelere uygun olup olmadığına **karar verilmesidir**.\n\nRolleri de karıştırma:\n- Denetim raporunu **üst yönetici** cevaplar.\n- Genel değerlendirme raporunu TBMM'ye **Sayıştay** sunar.\n- İç denetçi raporları kendiliğinden değil, **talep edilirse** Sayıştay denetçilerine sunulur.\n\nPeki Sayıştayı kim denetler? Denetim **her yıl**, TBMM adına yapılır. Gerekli mesleki niteliklere sahip denetim elemanlarından oluşan **komisyonu** TBMM **Başkanlık Divanı** görevlendirir. Komisyon, hesapları ve belgeleri esas alır. Yani Divan görevlendirir, denetimi komisyon yapar.",
+      "articleRefs": [
+        "68",
+        "69"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Kamu zararı yoksa da ceza var: aykırı harcama talimatı",
+      "body": "**Kamu zararı oluşturmasa bile** aşağıdaki durumlarda harcama talimatı veren **harcama yetkililerine** para cezası verilir:\n- bütçelere aykırı talimat,\n- ayrıntılı harcama programlarına aykırı talimat,\n- serbest bırakma oranlarına aykırı talimat,\n- ödenek gönderme belgelerindeki ödenek miktarını **aşan** talimat.\n\n**Yaptırım:** Her türlü aylık, ödenek, zam ve tazminat dahil yapılan bir aylık net ödemeler toplamının **iki katı tutarına kadar** para cezası.",
+      "articleRefs": [
+        "70"
+      ]
+    },
+    {
+      "type": "concept",
+      "title": "Kamu zararı nedir?",
+      "body": "Kamu zararının unsurlarını sırayla düşün:\n1. Ortada bir **kamu görevlisi** vardır ve bu kişinin **kasıt, kusur veya ihmali** söz konusudur.\n2. Bundan **mevzuata aykırı** bir karar, işlem veya eylem doğar.\n3. Sonuçta kamu kaynağında **artışa engel** olunur ya da **eksilmeye** neden olunur.\n\nYani yalnızca kasadan fazla para çıkması değil, girmesi gereken paranın girmemesi de kamu zararıdır.",
+      "articleRefs": [
+        "71"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Kamu zararının belirlenmesinde esas alınan hâller",
+      "body": "Kamu zararı belirlenirken şu hâller esas alınır:\n- **(a)** İş, mal veya hizmet karşılığı belirlenen tutardan **fazla ödeme** yapılması.\n- **(b)** Mal alınmadan, iş veya hizmet yaptırılmadan ödeme yapılması.\n- **(c)** Transfer niteliğindeki giderlerde fazla veya yersiz ödemede bulunulması.\n- **(d)** İş, mal veya hizmetin **rayiç bedelinden** daha yüksek fiyatla alınması veya yaptırılması.\n- **(e)** İdare gelirlerinin tarh, tahakkuk veya tahsil işlemlerinin mevzuata uygun yapılmaması.\n- **(g)** Mevzuatında öngörülmediği hâlde ödeme yapılması.\n\n**(f)** bendi mülgadır.",
+      "articleRefs": [
+        "71"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Kamu zararının tahsili ve gerçek dışı belge",
+      "body": "**Tahsil:** Kamu zararı kontrol, denetim, inceleme, kesin hükme bağlama veya yargılama sonucunda tespit edilebilir. Tespit edilen zarar, **zararın oluştuğu tarihten itibaren** ilgili mevzuatına göre hesaplanacak **faiziyle birlikte** ilgililerden tahsil edilir.\n\n**Gerçek dışı belge:** Şu durumları gösteren belge düzenleyip kamu kaynağında artışa engel olan veya eksilmeye neden olanlar sorumludur:\n- alınmamış para, mal ve değerleri alınmış gibi göstermek,\n- sağlanmamış hizmetleri sağlanmış gibi göstermek,\n- yapılmamış inşaat, onarım ve üretimi yapılmış veya bitmiş gibi göstermek.\n\nBu belgeleri **bilerek** düzenleyen, imzalayan veya onaylayanlar da aynı kapsamdadır. Bunlar hakkında **Türk Ceza Kanunu** veya diğer kanunların ilgili hükümleri uygulanır. **Ayrıca** bir aylık net ödemelerin **iki katı tutarına kadar** para cezası verilir.\n\n**Yönetmelik:** Zararın kamu görevlisinden veya diğer gerçek ve tüzel kişilerden tahsiline ilişkin usûl ve esaslar, **Cumhurbaşkanı** tarafından çıkarılan yönetmelikle düzenlenir.",
+      "articleRefs": [
+        "71"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Yetkisiz tahsilat ve ödeme",
+      "body": "Kanunların veya Cumhurbaşkanlığı kararnamelerinin öngördüğü şekilde **yetkili kılınmamış** hiçbir gerçek veya tüzel kişi kamu adına tahsilat veya ödeme yapamaz.\n\nŞu hâllerde yaptırım uygulanır:\n- yetkisiz tahsilat veya ödeme yapılması,\n- kamu hizmeti karşılığında ya da kamu hizmetleriyle ilişkilendirilerek **bağış veya yardım** toplanması,\n- başka adlarla tahsilat veya ödeme yapılması.\n\nBu tutarlar, işlemi yapanlardan alınır. İlgisine göre ya **bütçeye gelir** kaydedilir ya da ilgililerine iade edilmek üzere **emanet hesaplarına** kaydedilir. Ayrıca ilgililer hakkında **adli ve idari** yönden gerekli işlemler yapılır.",
+      "articleRefs": [
+        "72"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Para cezasını kim verir, nasıl tahsil edilir?",
+      "body": "Bu Kanundaki para cezalarını ilgili kamu idaresinin **üst yöneticisi** verir.\n\nTahsil şöyle yapılır:\n- **herhangi bir hüküm almaya gerek kalmaksızın** uygulanır,\n- karar verilmesini **izleyen ay başından** başlar,\n- ilgiliye yapılan her türlü aylık, ödenek, zam ve tazminat dahil bir aylık net ödemelerin **dörtte biri** oranında kesilir.",
+      "articleRefs": [
+        "73"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Zamanaşımı",
+      "body": "Kamu zararları ve bu Kanundaki para cezaları belirli bir süre içinde tespit ve tahsil edilmezse **zamanaşımına uğrar**.\n\n- **Başlangıç:** Kamu zararının meydana geldiği ve para cezasını gerektiren fiilin işlendiği yılı **izleyen malî yılın başı**.\n- **Bitiş:** **Onuncu yılın sonu**.\n- **Saklı hüküm:** Zamanaşımını **kesen ve durduran** genel hükümler saklıdır.",
+      "articleRefs": [
+        "74"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "İki katı mı, dörtte biri mi?",
+      "body": "Bu iki oranı sık karıştırırsın:\n- **İki katı:** Cezanın **üst sınırıdır** (md 70 ve md 71).\n- **Dörtte biri:** Cezanın bir aylık net ödemeden **her ay kesilecek oranıdır** (md 73).\n\nCezayı mahkeme değil, **üst yönetici** verir. Kesinti için ayrıca hüküm alınması gerekmez. Kesinti karar ayını değil, **izleyen ay başını** bekler.\n\nZamanaşımı da fiilin işlendiği gün başlamaz. Sayaç **izleyen malî yılın başında** çalışır ve **onuncu yılın sonunda** dolar.\n\nSon olarak md 70'teki cezada **kamu zararı şartı yoktur**.",
+      "articleRefs": [
+        "70",
+        "71",
+        "73",
+        "74"
+      ]
+    },
+    {
+      "type": "numbers",
+      "title": "Ceza, kesinti ve süreler",
+      "rows": [
+        {
+          "label": "Sayıştayın TBMM adına denetlenmesi",
+          "value": "Her yıl",
+          "refs": [
+            "69"
+          ]
+        },
+        {
+          "label": "Aykırı harcama talimatı (kamu zararı yok)",
+          "value": "Bir aylık net ödemeler toplamının iki katına kadar para cezası",
+          "refs": [
+            "70"
+          ]
+        },
+        {
+          "label": "Gerçek dışı belge düzenleme",
+          "value": "Bir aylık net ödemelerin iki katına kadar para cezası + TCK hükümleri",
+          "refs": [
+            "71"
+          ]
+        },
+        {
+          "label": "Kamu zararına işleyen faiz",
+          "value": "Zararın oluştuğu tarihten itibaren",
+          "refs": [
+            "71"
+          ]
+        },
+        {
+          "label": "Para cezasının kesinti oranı",
+          "value": "Bir aylık net ödemelerin dörtte biri",
+          "refs": [
+            "73"
+          ]
+        },
+        {
+          "label": "Kesintinin başlangıcı",
+          "value": "Karar verilmesini izleyen ay başı",
+          "refs": [
+            "73"
+          ]
+        },
+        {
+          "label": "Zamanaşımının başlangıcı",
+          "value": "Fiilin işlendiği yılı izleyen malî yılın başı",
+          "refs": [
+            "74"
+          ]
+        },
+        {
+          "label": "Zamanaşımının bitişi",
+          "value": "Onuncu yılın sonu",
+          "refs": [
+            "74"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "69",
+        "70",
+        "71",
+        "73",
+        "74"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Teftiş ve bilgi-belge yükümlülüğü",
+      "body": "**Teftiş (md 75):** Şu durumlardan biri ortaya çıkarsa **Cumhurbaşkanı** teftiş ettirir:\n- malî yönetim ve kontrol sisteminin zaafa uğraması,\n- yolsuzluk veya kamu zararına yönelik emarelerin ortaya çıkması.\n\nTeftiş, kamu idarelerinin tüm malî yönetim ve kontrol sistemlerini ve malî karar ve işlemlerini **mevzuata uygunluk** yönünden kapsar.\n\n**Muhafaza (md 76):** Malî karar ve işlemlere ilişkin her türlü kayıt, bilgi ve belge, kamu idarelerince **düzenli olarak** muhafaza edilir.\n\n**Denetime yardım (md 76):** Kamu idareleri ve görevlileri, denetimle görevlendirilenlere karşı şunları yapmak **zorundadır**:\n- malî yönetim ve kontrol sistemleri ile bütçenin hazırlanması, uygulanması, sonuçlandırılması, muhasebeleştirilmesi ve raporlanması işlemlerine ait bilgi ve belgeleri ibraz etmek,\n- görevin sağlıklı yapılması için önlem almak,\n- her türlü yardım ve kolaylığı göstermek.",
+      "articleRefs": [
+        "75",
+        "76"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Sosyal güvenlik kurumları ve mahallî idareler",
+      "body": "**Genel kural:** Sosyal güvenlik kurumları ve mahallî idarelerin bütçelerinin hazırlanması, uygulanması ve diğer malî işlemleri **ilgili kanunlarına** tâbidir. Bu Kanunun hükümleri ise saklıdır.\n\n**Ancak:** Bu kurumların **ayrıntılı harcama programları** ile **finansman programları** bütçeleriyle birlikte hazırlanır, görüşülür ve onaylanır. Ödenekler de bu usul ve esaslara göre kullanılır.\n\n**Mahallî idarelerde teftiş:**\n- **Ne zaman?** Malî yönetim ve kontrol sisteminin zaafa uğradığı, yolsuzluk veya kamu zararı emarelerinin ortaya çıktığı durumlarda.\n- **Nasıl başlar?** İl özel idareleri için **valinin**, belediyeler için **belediye başkanının** talebiyle ya da doğrudan **Cumhurbaşkanının onayıyla**.\n- **Kim yaptırır?** **İçişleri Bakanı**, yetkili denetim elemanlarına teftiş ettirir.\n- **Raporlar nereye gider?** Bir örneği **İç Denetim Koordinasyon Kuruluna**, bir örneği de gerekli işlemler için ilgili vali veya belediye başkanına gönderilir.",
+      "articleRefs": [
+        "77"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Hasılat payı ve gelir fazlaları",
+      "body": "**KİT ve kamu şirketleri:**\n- Gayrisafi hasılatın **yüzde onbeşine kadar** bir bedel tahsil edilir ve **genel bütçeye** gelir kaydedilir.\n- Bedel alınacak kurum ve kuruluşları, oranları, ödeme yerini ve zamanını **Cumhurbaşkanı** belirler.\n- Zamanında ödenmeyen paylara Cumhurbaşkanının belirlediği oranda **zam** uygulanır ve paylar 6183 sayılı Kanuna göre tahsil edilir.\n- Zam, bu payları ödeme yetkisi verilmiş **görevlilerden** alınır.\n- Hazine ve Maliye Bakanlığınca verilmiş **ek süreler için zam uygulanmaz**.\n\n**Düzenleyici ve denetleyici kurumlar:**\n- **Üçer aylık** dönemler itibarıyla oluşan gelir fazlaları, her üç ayda bir, **izleyen ayın onbeşine kadar** genel bütçeye aktarılır.\n- Bu hüküm İstanbul Menkul Kıymetler Borsası hakkında da uygulanır.\n- Süresinde ödenmeyen tutarlar 6183 sayılı Kanuna göre **gecikme zammı** uygulanarak takip ve tahsil edilir.\n\n**Not:** İstanbul Menkul Kıymetler Borsası adı madde metnindeki hâliyle verilmiştir.",
+      "articleRefs": [
+        "78"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Kamu alacaklarının kayıtlardan çıkarılması",
+      "body": "**Kapsam:** İdare hesaplarında kayıtlı olup 6183 sayılı Amme Alacaklarının Tahsil Usulü Hakkında Kanun kapsamında izlenenlerin **dışında kalan** kamu alacakları. Özel mevzuat hükümleri saklıdır.\n\n**Hangi alacaklar?**\n- **(a)** Zarurî veya mücbir sebeplerle takip ve tahsil imkânı kalmayanlar.\n- **(b)** Tahsil için yapılacak takibat giderlerinin **asıl alacak tutarından fazla** olacağı anlaşılanlar.\n\n**Yetki:** **Merkezî yönetim bütçe kanununda gösterilen tutarlara kadar** olanları kayıtlardan çıkarmaya **üst yöneticiler** yetkilidir.\n\n**Tutarı aşanlar:** (a) bendine göre belirlenen tutarı aşan alacaklardan silinmesi öngörülenler, merkezî yönetim bütçe kanununda **ayrıca gösterilir**.",
+      "articleRefs": [
+        "79"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Düzenleme yetkisi, kaldırılan hükümler, yürürlük",
+      "body": "**md 80:** Kanunun uygulanmasına ilişkin gerekli düzenlemeleri yapmaya **Hazine ve Maliye Bakanlığı** yetkilidir.\n\n**md 81:** Bu Kanunun geçici maddelerindeki hükümler saklı kalmak kaydıyla şunlar yürürlükten kaldırılmıştır:\n- 1050 sayılı Muhasebei Umumiye Kanunu ile ek ve değişiklikleri,\n- 832 sayılı Sayıştay Kanununun 30, 32, 33, 36, 37 nci maddeleri ile diğer maddelerinin bu Kanuna aykırı hükümleri,\n- kapsamdaki idareler için diğer kanunlarda yer alan ve 1050 sayılı Kanuna, 6245 sayılı Harcırah Kanununa ve 832 sayılı Sayıştay Kanununa tâbi olunmadığına dair istisna veya muafiyet getiren hükümler (211 sayılı Kanunun 98 - 106 ncı maddeleri hariç),\n- 4749 sayılı Kanunun 14 üncü maddesinin üçüncü fıkrası,\n- 4481 sayılı Kanunun 15 inci maddesi,\n- diğer kanunların bu Kanuna aykırı hükümleri.\n\n**md 82 (yürürlük):**\n- md 30, 66, 67, 80, 82 ve 83 ile geçici 2, 3, 4, 5, 7, 8, 10, 12, 13 ve 14 üncü maddeler **yayımı** tarihinde,\n- md 81 (e) bendi ile geçici 6 **1.1.2004** tarihinde,\n- diğer hükümler **1.1.2005** tarihinde yürürlüğe girer.",
+      "articleRefs": [
+        "80",
+        "81",
+        "82"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Muhasebe hizmetleri ve fonlar",
+      "body": "**Ek 1 (muhasebe hizmetleri):**\n- TBMM ve Sayıştayın muhasebe hizmetlerini **TBMM Başkanının** görevlendirdiği muhasebe yetkilileri yürütür.\n- Cumhurbaşkanlığının muhasebe hizmetlerini **Cumhurbaşkanlığının** görevlendirdiği muhasebe yetkilileri yürütür.\n\n**Ek 2 (fonlar):**\n- **Gelirlerin toplanması:** Çeşitli mevzuatla kurulmuş fonların her türlü geliri, TCMB nezdinde Hazine ve Maliye Bakanlığı adına açılan **müşterek fon hesabına** yatırılır. Fonlar arası pay ve kesintileri **TCMB** yapar.\n- **Destekleme ve Fiyat İstikrar Fonu:** Gelirleri, kesintilerden sonra kalan tutar üzerinden genel bütçenin **(B)** işaretli cetveline gelir kaydedilir. Fon, hizmetlerini **(A)** işaretli cetveldeki ödeneklerle yürütür.\n- **İstisna:** Bu Fonun kredi ana para geri dönüşleri, kredi faizleri, borçlanma ve satış hasılatı (B) cetveline gelir kaydedilmez. Bunlar doğrudan müşterek fon hesabından Fonun gider hesabına aktarılır.\n- **Kapsam dışı fonlar:** Gelir ve harcamaları bütçe ile ilişkilendirilmez. Ancak müşterek hesapta toplanan gelirlerinden, **Cumhurbaşkanının** belirleyeceği oran ve tutarlarda kesinti yapılarak genel bütçeye gelir kaydedilebilir.\n- **Usûl:** Fonlar hizmet ve harcamalarını kendi mevzuatına göre yürütür. Fon gelirlerinin tahsili, takibi, gelir kaydı, muhasebeleştirilmesi ve denetimine ilişkin süre, esas ve usûlleri **Hazine ve Maliye Bakanlığı** tespit eder.\n- **Tasfiye:** Hizmet alanı kalmayan fonları **Cumhurbaşkanı** tasfiye edebilir. Kanun ve kanun hükmünde kararname ile kurulanlar bunun dışındadır. Tasfiyeye ilişkin düzenlemeleri **Hazine ve Maliye Bakanı** yapar.\n- **Aktarma:** Cumhurbaşkanı fonların gider hesapları üzerinden aktarma yapabilir.\n\n**Not:** \"kanun hükmünde kararname\" ifadesi madde metnindeki hâliyle verilmiştir.",
+      "articleRefs": [
+        "Ek 1",
+        "Ek 2"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "FATİH, elektronik ortam, cetveller, yeniden teşkilatlanma",
+      "body": "**Ek 3 (FATİH Projesi):** Millî Eğitim Bakanlığınca yapılacak şu işlerde **üst yöneticinin onayıyla 15 yıla kadar** gelecek yıllara yaygın yüklenmeye girişilebilir:\n- yazılım, donanım ve dijital içerik alımı,\n- internet erişim hizmetleri ve ağ altyapısı,\n- AR-GE merkezi ve veri merkezi kurulumu,\n- bunların bakım, onarım ve işletme işleri.\n\n**Ek 4 (elektronik ortam):** Kanun kapsamındaki tüm iş ve işlemler elektronik ortamda yapılabilir. **Hazine ve Maliye Bakanlığı** şunlara yetkilidir:\n- elektronik belgelerin oluşturulması, kaydı, iletilmesi, muhafazası ve ibrazının usullerini belirlemek,\n- sertifika altyapısını kurmak veya mevcut altyapıları kullanmak,\n- birlikte işlerlik standartlarını belirlemek.\n\nBakanlık bu belirlemelerde **Sayıştayın uygun görüşünü** alır.\n\n**Ek 5 (cetveller):** Cumhurbaşkanlığı kararnameleriyle kurulan idarelerin Kanuna ekli cetvellerden hangisinde yer alacağı, **ilgili Cumhurbaşkanlığı kararnamesinde** belirtilir.\n\n**Ek 6 (yeniden teşkilatlanma):**\n- Yeniden teşkilatlanma çerçevesinde yapılan ödenek aktarmaları, md 21 ve yılı merkezi yönetim bütçe kanunundaki aktarma sınırlamalarına **tabi değildir**. Ancak **personel giderleri tertiplerinden diğer tertiplere** yapılan aktarmalar bu serbestliğin dışındadır.\n- Gerekli bütçe işlemleri ile bütçe uygulaması ve kesin hesaplara ilişkin düzenlemeleri **Cumhurbaşkanı** yapar.\n- Süreç tamamlanıncaya kadar zorunlu harcamalar, kapatılan idare veya ilgili idare bütçesinden karşılanır.\n- Kapatılan birim ve idareler için **faaliyet raporu düzenlenmez**. Bunların faaliyet sonuçları, görevlerin devredildiği idarelerin raporlarında gösterilir.",
+      "articleRefs": [
+        "Ek 3",
+        "Ek 4",
+        "Ek 5",
+        "Ek 6"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Mücbir sebep, orta vadeli program, tasarruf tedbirleri",
+      "body": "**Ek 7 (mücbir sebep):**\n- **Hangi hâller?** Deprem, yangın, sel gibi doğal afetler, salgın hastalık veya Hazine ve Maliye Bakanlığı bilişim sistemlerinin herhangi bir nedenle çalışmaması.\n- **Yöntem:** Bu hâllerde veri, bilgi ve belgelerin oluşturulması, kaydedilmesi, iletilmesi, muhafazası ve ibrazına ilişkin yöntemleri **Hazine ve Maliye Bakanlığı** belirler.\n- **Yaptırım yok:** Bakanlık bilişim sistemleri üzerinden yürütülen işlemlerde yaşanan gecikme nedeniyle **gecikme faizi, gecikme zammı ve ceza** gibi yaptırımlar uygulanmaz.\n\n**Ek 8 (atıflar):** Mevzuatta **orta vadeli mali plana** yapılan atıflar **orta vadeli programa** yapılmış sayılır.\n\n**Ek 9 (tasarruf tedbirleri):**\n- Harcama ve uygulamaların tasarruf tedbirlerine uygunluğunu **idareler ve/veya Hazine ve Maliye Bakanlığı** izler ve denetler.\n- Tedbirlere aykırı iş ve işlemleri tespit edilenler hakkında tabi oldukları mevzuata göre **disiplin hükümleri** uygulanır.\n- Sonuçları idareler **Cumhurbaşkanlığına** bildirir.",
+      "articleRefs": [
+        "Ek 7",
+        "Ek 8",
+        "Ek 9"
+      ]
+    },
+    {
+      "type": "numbers",
+      "title": "Oranlar, süreler ve yürürlük",
+      "rows": [
+        {
+          "label": "KİT ve kamu şirketleri hasılat payı",
+          "value": "Gayrisafi hasılatın yüzde onbeşine kadar",
+          "refs": [
+            "78"
+          ]
+        },
+        {
+          "label": "Düzenleyici ve denetleyici kurum gelir fazlası dönemi",
+          "value": "Üçer aylık dönemler",
+          "refs": [
+            "78"
+          ]
+        },
+        {
+          "label": "Gelir fazlasının genel bütçeye aktarılması",
+          "value": "Her üç ayda bir, izleyen ayın onbeşine kadar",
+          "refs": [
+            "78"
+          ]
+        },
+        {
+          "label": "FATİH Projesi yaygın yüklenme süresi",
+          "value": "Üst yönetici onayıyla 15 yıla kadar",
+          "refs": [
+            "Ek 3"
+          ]
+        },
+        {
+          "label": "Yürürlük: md 30, 66, 67, 80, 82, 83 ve sayılan geçici maddeler",
+          "value": "Yayımı tarihinde",
+          "refs": [
+            "82"
+          ]
+        },
+        {
+          "label": "Yürürlük: md 81 (e) bendi ve geçici 6",
+          "value": "1.1.2004",
+          "refs": [
+            "82"
+          ]
+        },
+        {
+          "label": "Yürürlük: diğer hükümler",
+          "value": "1.1.2005",
+          "refs": [
+            "82"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "78",
+        "82",
+        "Ek 3"
+      ]
+    },
+    {
+      "type": "compare",
+      "title": "Genel teftiş ve mahallî idare teftişi",
+      "rows": [
+        {
+          "aspect": "Kapsam",
+          "left": "Kamu idarelerinin tüm malî yönetim ve kontrol sistemleri, malî karar ve işlemleri",
+          "right": "İl özel idareleri ve belediyelerin tüm malî yönetim ve kontrol sistemleri, malî karar ve işlemleri",
+          "refs": [
+            "75",
+            "77"
+          ]
+        },
+        {
+          "aspect": "Gerekçe",
+          "left": "Sistemin zaafa uğraması, yolsuzluk veya kamu zararı emaresi",
+          "right": "Sistemin zaafa uğraması, yolsuzluk veya kamu zararı emaresi",
+          "refs": [
+            "75",
+            "77"
+          ]
+        },
+        {
+          "aspect": "Teftiş ettiren",
+          "left": "Cumhurbaşkanı",
+          "right": "İçişleri Bakanı (yetkili denetim elemanlarına)",
+          "refs": [
+            "75",
+            "77"
+          ]
+        },
+        {
+          "aspect": "Başlatma",
+          "left": "Cumhurbaşkanı",
+          "right": "Vali veya belediye başkanının talebi ya da doğrudan Cumhurbaşkanının onayı",
+          "refs": [
+            "75",
+            "77"
+          ]
+        },
+        {
+          "aspect": "Ölçüt",
+          "left": "Mevzuata uygunluk",
+          "right": "Mevzuata uygunluk",
+          "refs": [
+            "75",
+            "77"
+          ]
+        },
+        {
+          "aspect": "Raporun gönderildiği yer",
+          "left": "—",
+          "right": "Bir örneği İç Denetim Koordinasyon Kuruluna, bir örneği vali veya belediye başkanına",
+          "refs": [
+            "77"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "75",
+        "77"
+      ]
+    },
+    {
+      "type": "exam_stats",
+      "title": "Sınav der ki",
+      "rows": [
+        {
+          "label": "Bu ünitenin maddelerinden yayındaki soru",
+          "value": "0",
+          "refs": [
+            "68",
+            "69",
+            "70",
+            "71",
+            "72",
+            "73",
+            "74",
+            "75",
+            "76",
+            "77",
+            "78",
+            "79",
+            "80",
+            "81",
+            "82",
+            "Ek 1",
+            "Ek 2",
+            "Ek 3",
+            "Ek 4",
+            "Ek 5",
+            "Ek 6",
+            "Ek 7",
+            "Ek 8",
+            "Ek 9"
+          ]
+        },
+        {
+          "label": "Hiç soru çıkmamış",
+          "value": "md 68, md 69, md 70, md 71, md 72, md 73, md 74, md 75, md 76, md 77, md 78, md 79, md 80, md 81, md 82, md Ek 1, md Ek 2, md Ek 3, md Ek 4, md Ek 5, md Ek 6, md Ek 7, md Ek 8, md Ek 9",
+          "refs": [
+            "68",
+            "69",
+            "70",
+            "71",
+            "72",
+            "73",
+            "74",
+            "75",
+            "76",
+            "77",
+            "78",
+            "79",
+            "80",
+            "81",
+            "82",
+            "Ek 1",
+            "Ek 2",
+            "Ek 3",
+            "Ek 4",
+            "Ek 5",
+            "Ek 6",
+            "Ek 7",
+            "Ek 8",
+            "Ek 9"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "68",
+        "69",
+        "70",
+        "71",
+        "72",
+        "73",
+        "74",
+        "75",
+        "76",
+        "77",
+        "78",
+        "79",
+        "80",
+        "81",
+        "82",
+        "Ek 1",
+        "Ek 2",
+        "Ek 3",
+        "Ek 4",
+        "Ek 5",
+        "Ek 6",
+        "Ek 7",
+        "Ek 8",
+        "Ek 9"
+      ],
+      "generated": true
+    },
+    {
+      "type": "bridge",
+      "title": "Bu üniteden soru çöz",
+      "articleRefs": [
+        "68",
+        "69",
+        "70",
+        "71",
+        "72",
+        "73",
+        "74",
+        "75",
+        "76",
+        "77",
+        "78",
+        "79",
+        "80",
+        "81",
+        "82",
+        "Ek 1",
+        "Ek 2",
+        "Ek 3",
+        "Ek 4",
+        "Ek 5",
+        "Ek 6",
+        "Ek 7",
+        "Ek 8",
+        "Ek 9"
+      ],
+      "generated": true,
+      "rows": [
+        {
+          "label": "Madde kapsamlı seans",
+          "value": "md 68–82, Ek 1, Ek 2, Ek 3, Ek 4, Ek 5, Ek 6, Ek 7, Ek 8, Ek 9, 0 soru",
+          "refs": [
+            "68",
+            "69",
+            "70",
+            "71",
+            "72",
+            "73",
+            "74",
+            "75",
+            "76",
+            "77",
+            "78",
+            "79",
+            "80",
+            "81",
+            "82",
+            "Ek 1",
+            "Ek 2",
+            "Ek 3",
+            "Ek 4",
+            "Ek 5",
+            "Ek 6",
+            "Ek 7",
+            "Ek 8",
+            "Ek 9"
+          ]
+        }
+      ]
+    }
+  ]
+}

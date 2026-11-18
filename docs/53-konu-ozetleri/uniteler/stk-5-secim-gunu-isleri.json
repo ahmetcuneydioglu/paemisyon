@@ -1,0 +1,557 @@
+{
+  "unit": {
+    "slug": "stk-5-secim-gunu-isleri",
+    "legislationSlug": "298-sayili-secimlerin-temel-hukumleri-kanunu",
+    "topicId": "fc5b7d84-ad74-446c-9ac6-3d4172a04ccf",
+    "title": "Yurt dışı oyları ve sayım öncesi işlemler",
+    "subtitle": "Yurt dışı seçmenin oy yolları, sayım öncesi tedbirler ve zarfların kontrolü",
+    "articleFrom": "94/B",
+    "articleTo": "98",
+    "readingMinutes": 15,
+    "sourceLabel": "AI özeti — 298 Sayılı Seçimlerin Temel Hükümleri Kanunu, md 94/B, 94/C, 94/D, 94/E, 95–98",
+    "articleNos": [
+      "94/B",
+      "94/C",
+      "94/D",
+      "94/E",
+      "95",
+      "96",
+      "97",
+      "98"
+    ],
+    "generatedBy": "claude-opus-5-5 (ozet-uret.ts)",
+    "sortOrder": 5
+  },
+  "blocks": [
+    {
+      "type": "concept",
+      "title": "Oy nasıl toplanır, nasıl sayılır?",
+      "body": "Seçim gününde sandık başında iki büyük iş var: oyları toplamak ve saymak. Bu ünitenin ilk maddeleri yurt dışındaki seçmeni anlatıyor. Kanun ona birden fazla yol açıyor: mektup, temsilciliklerdeki sandık, elektronik ortam ve gümrük kapısı. Her yolun kendi süresi, bitiş saati ve sayım düzeni var. Ama hepsi aynı yere varıyor: önce Yurt Dışı İlçe Seçim Kurulu, sonra Ankara İl Seçim Kurulu, en sonunda Yüksek Seçim Kurulu (YSK). Sonraki maddeler sandık açılmadan önceki hazırlığı ve zarfların tek tek kontrolünü anlatıyor. Okurken hep şu üç soruyu sor: kim, ne zaman, hangi tutanakla?",
+      "articleRefs": [
+        "94/B",
+        "94/C",
+        "94/D",
+        "94/E",
+        "95",
+        "96",
+        "97",
+        "98"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Mektupla oy: pusula seçmene nasıl ulaşır?",
+      "body": "**Gönderim zinciri:**\n- YSK, özel olarak imal ettirdiği oy pusulasını ve özel renkte bastırılmış oy zarflarını **Yurt Dışı İlçe Seçim Kuruluna** gönderir.\n- Yurt Dışı İlçe Seçim Kurulu, arkasını kendi mührüyle mühürlediği oy pusulasını ve oy zarflarını seçmenin yurt dışında kayıtlı olduğu adrese yollar. Gönderim, seçimin yapılacağı günden **yetmiş beş gün** önce yapılır.\n\n**Zarf düzeni (içten dışa):**\n1. Bir köşesinde Yurt Dışı İlçe Seçim Kurulunun mührü bulunan **küçük zarf**. Oy pusulası bu zarfa konur.\n2. Üzerinde “Yurt Dışı İlçe Seçim Kurulu Ankara/TÜRKİYE” yazan **orta boy ikinci zarf**.\n3. Üzerinde seçmenin yurt dışı adresi yazan **üçüncü büyük zarf**.",
+      "articleRefs": [
+        "94/B"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Mektupla oy: işaretleme, dönüş ve geç gelen mektup",
+      "body": "**Seçmen ne yapar?**\n- Kendi adresi yazılı zarfı açar.\n- Oy pusulasında tercih ettiği siyasi parti sütunundaki daireyi **(X) işaretiyle** işaretler. Cumhurbaşkanı seçimi ya da halkoylaması pusulasında ise tercih ettiği bölümü işaretler.\n- **Sadece oy pusulasını** küçük zarfa koyar ve zarfı kapatır.\n- Küçük zarfı “Yurt Dışı İlçe Seçim Kurulu Ankara/TÜRKİYE” adresli ikinci zarfa koyar.\n- Mektubu, **seçim günü saat 17:00'a kadar** Kurulda bulunacak şekilde postalar.\n\n**Kurula ulaşan mektup:**\n- Önce seçmenin kimliği tespit edilir ve seçmen kütüğündeki ismi işaretlenir.\n- Mektubu **sandık kurulu** açar. Oy pusulasının bulunduğu zarf **açılmaksızın** sandığa atılır.\n- Sandık **her gün saat 17:00'da** açılır. Zarflar oy veren seçmen sayısıyla karşılaştırılır ve uygunluk tutanakla saptanır.\n- Zarflar açılmadan, tutanağın bir örneğiyle birlikte torbaya konur. Torbanın ağzı mühürlenir ve Yurt Dışı İlçe Seçim Kuruluna teslim edilir.\n- **Seçim günü saat 17:00'dan sonra gelen mektuplar** tutanakla tespit edilir, sonra **yakılarak imha edilir**.\n\n**Usul ve gider:**\n- Mektupların gönderilmesi, güvenliği ve kimlik tespitine ilişkin usul ve esasları **YSK** belirler. Bunun için Posta ve Telgraf Teşkilatı Genel Müdürlüğünün görüşünü alır.\n- Posta giderlerini **YSK** karşılar.\n\n**Not:** Posta ve Telgraf Teşkilatı Genel Müdürlüğü adı madde metnindeki hâliyle verilmiştir.",
+      "articleRefs": [
+        "94/B"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Yurt dışı oyları toplama nasıl eklenir?",
+      "body": "**Mektupla gelen oyların sayımı ve sonucun iletilmesi (94/B):**\n- Seçim günü saat 17:00'dan itibaren oy torbalarını **Yurt Dışı İlçe Seçim Kurulu** açar. Sayım, döküm ve birleştirme işlemlerini yapar.\n- Sonuçlar **Ankara İl Seçim Kuruluna** iletilir.\n- Ankara İl Seçim Kurulu birleştirme tutanağını düzenleyip **YSK**'ya gönderir.\n\n**Ülke geneli:** YSK, yurt dışı toplam geçerli oy sayısını Türkiye genelindeki toplam geçerli oy sayısına **ilave eder**. Böylece yurt düzeyinde genel oy miktarı ve her partinin ülke genelinde aldığı geçerli oy bulunur.\n\n**Seçim çevresi:**\n- Her seçim çevresinde geçerli toplam oy belli bir **oranda artırılır**.\n- Bu oran şöyle bulunur: Yurt Dışı İlçe Seçim Kurulundan Ankara İl Seçim Kuruluna gelen toplam oy, diğer seçim kurullarından gelen oylara bölünür.\n- Artış farkı partilere, Ankara İl Seçim Kurulundan gelen oydaki **hisseleri oranında** taksim edilir.\n- Elde edilen rakamlar, partilerin o seçim çevresinde aldıkları geçerli oylara eklenir.\n\n**Öteki yollarda sayım:** Temsilcilik sandıklarından gelen torbaları, Yurt Dışı İlçe Seçim Kurulunun denetimi altında **sandık kurulları** açıp sayar (94/C). Elektronik ortamdaki oyları Yurt Dışı İlçe Seçim Kurulu **tespit ederek** sayar (94/D). Gümrük kapısında sayım ve dökümü **geçici gümrük kapısı seçim kurulları** yapar (94/E).\n\n**Ortak hüküm:** Sandıkta (94/C), elektronik ortamda (94/D) ve gümrük kapısında (94/E) kullanılan oylar da **94/B'nin ilgili hükümlerine göre** değerlendirilir.",
+      "articleRefs": [
+        "94/B",
+        "94/C",
+        "94/D",
+        "94/E"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Temsilcilikte sandık: ne zaman ve hangi saatlerde?",
+      "body": "**Nerede?** Yurt dışı seçmen kütüğüne kayıtlı seçmen, yurt dışı temsilciliklerde kurulan sandıklarda oy verir. İhtiyaç olursa yerel makamların uygun göreceği diğer yerlerde de sandık kurulabilir.\n\n**Süre ve saatler:**\n- **Başlangıç:** seçimin yapılacağı günden **kırk beş gün** önce.\n- **Bitiş:** seçim gününden önceki **üçüncü gün saat 17.00**.\n- **Gün takvimi:** oy verme günleri, YSK'nın belirlediği usul ve esaslarla düzenlenen **oy verme gün takvimine** göre işler.\n- **Saatler:** mahalli saatle **08.00–17.00** arası.\n\n**YSK'nın yetkileri:**\n- **Kısaltma:** yabancı ülkedeki seçmen sayısı gözetilerek oy kullanma gün süresi kısaltılabilir. Kararı Dışişleri Bakanlığının görüşü alınarak **YSK** verir.\n- **Yirmi dört saat:** hangi temsilcilik ve mahalde tatil günleri dâhil yirmi dört saat, hangisinde daha az süre oy kullanılacağına da Dışişleri Bakanlığının görüşüyle YSK karar verir. Bu karar **elektronik ortamda** ilan edilir.",
+      "articleRefs": [
+        "94/C"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Yurt dışı sandık kurulu nasıl oluşur?",
+      "body": "**Kim belirler, kim seçer?**\n- Hangi temsilcilik ve mahalde sandık kurulacağını **YSK** belirler. Sandık kurulunun hangi görevlilerden oluşacağını da YSK belirler. Her iki kararda Dışişleri Bakanlığının görüşü alınır.\n- Bu belirlemeye göre başkan ve üyeleri **Yurt Dışı İlçe Seçim Kurulu** seçer.\n\n**Oluşum:**\n- Bir başkan.\n- Bir kamu görevlisi üye.\n- Son milletvekili genel seçiminde Türkiye genelinde en çok oy alan **üç** siyasi partinin bildirdiği birer isim.\n- Yedek üyeler de aynı usulle seçilir.\n\n**Kurallar:**\n- Partiler üye bildirmezse eksiklik, kamu görevlileri veya seçmenler arasından seçilecek üyeyle doldurulur.\n- Başkan ve üye seçimi öncelikle sandığın kurulacağı yerde görevli kamu görevlileri ve seçmenler arasından yapılır.\n- Siyasi partiler **her oy verme günü için ayrı** sandık kurulu üyesi bildirebilir.\n- Başkan ve üyeler **70. madde** hükmüne göre yemin ederek göreve başlar.\n- Sandık kurulları, oy verme gizliliğini ve serbestliğini sağlayacak sayıda kapalı oy verme yeri hazırlar.",
+      "articleRefs": [
+        "94/C"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Temsilcilikte oy verme, günlük sayım ve torba",
+      "body": "**Kimlik tespiti:**\n- Sandık kurulu başkanı seçmenin kimliğini tespit eder. Bunun için Türkiye Cumhuriyeti kimlik numarasını taşıyan **nüfus cüzdanı veya pasaport** kullanılır.\n- Başkan, Bilgisayar Destekli Merkezi Seçmen Kütüğü Sistemi üzerinden seçmenin **diğer yöntemlerle oy kullanıp kullanmadığını** kontrol eder.\n\n**Oy verme:**\n- Oy kullanmadığı anlaşılan seçmene sandık kurulu mührüyle mühürlenmiş oy pusulası ve oy zarfı verilir. Seçmen ayrıca “Evet” veya “Tercih” yazılı mührü alır.\n- Seçmen kapalı oy verme yerine girer ve oyunu kullanır.\n- Oyunu kullanan seçmene, çizelgede isminin bulunduğu yer imzalatılır.\n\n**Günlük sayım:**\n- Sandık **her gün** oy verme süresinin bitim saati olan 17.00'de açılır. Başka bir bitim saati belirlenmişse o saatte açılır.\n- Oy zarfları açılmadan sayılır. Zarf adedi, oy kullanan seçmen sayısı ve bunların uygunluğu tutanakla tespit edilir.\n\n**Dış temsilcilikteki sandık kurulu:**\n- **Görevi:** oyları saklamak ve ağzı mühürlü torbaları Yurt Dışı İlçe Seçim Kuruluna ulaştırmak. Ulaştırma yöntemlerini YSK belirler.\n- **Oluşumu:** misyon şefi veya en kıdemli kişinin başkanlığında, temsilcilikte görevli bir kamu görevlisi üye ve üç partinin bildirdiği isimlerden oluşur.\n- **Kuran:** Dışişleri Bakanlığının görüşü alınarak Yurt Dışı İlçe Seçim Kurulu kurar.\n- Partiler üye bildirmezse eksiklik **kamu görevlileri arasından** doldurulur.\n\n**Torba ve teslim:**\n- Kapalı zarflar, tutanağın **aslı** ile birlikte torbaya konur. Torbanın ağzı sandık kurulu mührüyle mühürlenir.\n- Başkan torbayı ilgili **komisyona** teslim eder.\n- Komisyon torbaları en seri vasıtayla Yurt Dışı İlçe Seçim Kuruluna gönderir.\n- Tutanağın sureti temsilcilikte saklanır.\n\n**Sayım:** Torbalar, **yurt içinde oy verme süresi bittikten sonra** açılır. Sayım ve dökümü, Yurt Dışı İlçe Seçim Kurulunun denetiminde sandık kurulları yapar.",
+      "articleRefs": [
+        "94/C"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Elektronik ortamda oy",
+      "body": "**YSK'nın yetkileri:**\n- 35. madde çerçevesinde belirlenen yurt dışındaki vatandaşlar, **Türkiye Cumhuriyeti kimlik numarası** aracılığıyla elektronik ortamda oy kullanabilir. YSK bunun için gerekli teknik alt yapıyı kurmaya yetkilidir.\n- Güvenli oy için **şifre veya benzeri güvenlik tedbirleri** almaya yetkilidir.\n- **Mükerrer oy kullanılmasını engelleyecek** önlemleri almaya yetkilidir.\n\n**Süre:** Oy, seçimin yapılacağı tarihten **otuz gün** önce başlayan belirlenmiş süre içinde kullanılır. Son an, **seçim günü Türkiye saatiyle 17:00**'dır.\n\n**Sayım:**\n- Oylar, seçim günü saat 17:00'dan itibaren **Yurt Dışı İlçe Seçim Kurulunca** tespit edilir.\n- Sayım, döküm ve birleştirme yapılır. Sonuç Ankara İl Seçim Kuruluna iletilir.\n- Ankara İl Seçim Kurulu birleştirme tutanağını düzenleyip YSK'ya gönderir.\n\n**Değerlendirme:** **94/B**'nin ilgili hükümlerine göre yapılır.",
+      "articleRefs": [
+        "94/D"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Gümrük kapısında oy: süre ve hazırlık",
+      "body": "**Kim oy verir?** Yurt dışı seçmen kütüğüne kayıtlı seçmenler.\n\n**Ne zaman?**\n- Seçimin yapılacağı günden önceki **kırk beşinci gün saat 08:00**'den başlar.\n- **Seçim günü saat 17:00**'a kadar sürer.\n- Oy verilecek gümrük kapılarını YSK tespit eder.\n\n**Yirmi dört saat:** Hangi gümrük kapısında tatil günleri dâhil 24 saat, hangisinde daha az süre oy kullanılacağını **YSK** tespit eder.\n\n**Malzeme:** YSK, özel olarak imal ettirdiği pusulaları ve özel renkli zarfları gönderir. Bunlar oy verme gününden **en geç üç gün önce** ilgili **ilçe seçim kurullarında** bulunmalıdır.\n\n**Kurullar:** Aşağıdakileri YSK **önceden** belirler:\n- geçici gümrük kapısı seçim kurulu ile sandık kurullarının adedi,\n- üyelerin ve yedeklerin sayısı,\n- kurulların hangi görevlilerden oluşacağı.\n\n**Diğer kurallar:**\n- Sandık kurulları, oy serbestliğini ve gizliliğini sağlayacak sayıda kapalı oy verme yeri hazırlar.\n- İlgili idari makamlar sandık kurullarına her türlü kolaylığı gösterir.\n- **Gümrük kapılarında seçim propagandası yapılamaz.**",
+      "articleRefs": [
+        "94/E"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Gümrük kapısında oy verme ve sayım",
+      "body": "**Kimlik tespiti:** Sandık kurulu başkanı aşağıdaki belgelerden biriyle kimliği tespit eder:\n- Türkiye Cumhuriyeti kimlik numarasını gösteren nüfus hüviyet cüzdanı,\n- kimlik tespiti amacıyla düzenlenmiş ve TC kimlik numarası taşıyan resmî belgeler,\n- pasaport.\n\nBaşkan ayrıca Bilgisayar Destekli Merkezi Seçmen Kütüğü Sistemi üzerinden seçmenin diğer yöntemlerle oy kullanıp kullanmadığını kontrol eder.\n\n**Oy verme:**\n- Seçmen, mühürlü pusula ve zarfı, “Evet” veya “Tercih” yazılı mührü alarak kapalı oy verme yerine girer.\n- Oy verme işlemini genel esaslara göre tamamlar.\n- Çizelgede isminin bulunduğu yer seçmene imzalatılır.\n\n**Sandık kurulu değişirken:**\n- Oy verme süresince sandık kurulu değişirse sandık açılır.\n- Zarf adedi, oy kullanan seçmen sayısı ve bunların uygunluğu tutanakla tespit edilir.\n\n**Torba ve teslim:**\n- Zarflar ve tutanağın bir **sureti** torbaya konur, torbanın ağzı mühürlenir.\n- Başkan torbayı **geçici gümrük kapısı seçim kuruluna** teslim eder.\n\n**Sayım:**\n- Seçim günü saat 17.00'den itibaren sandık ve torbalar açılır.\n- Sayım ve dökümü **geçici gümrük kapısı seçim kurulları** yapar.\n- Bu kurullar birleştirme tutanağı düzenler.\n- Tutanak, seçim işlerine ait diğer evrak ve varsa itiraz dilekçeleri **Yurt Dışı İlçe Seçim Kuruluna** en seri vasıtayla gönderilir.\n\n**Değerlendirme:** 94/B'nin ilgili hükümlerine göre yapılır.",
+      "articleRefs": [
+        "94/E"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Gümrük kapısı kaç gün önce açılır?",
+      "body": "Soru gümrük kapısında oy vermenin kaç gün önce başladığını soruyor. Cevap: **kırk beş gün**.\n\nÇeldiriciler genellikle komşu maddelerdeki sürelerden gelir:\n- **Yetmiş beş gün:** mektupla oyda pusulanın seçmene gönderildiği gün (94/B).\n- **Otuz gün:** elektronik oyun başlangıcı (94/D).\n- 15 ya da 60 gibi sayılar bu maddelerin hiçbirinde geçmez.\n\nKısa kalıp: **mektup 75 → sandık ve gümrük 45 → elektronik 30**.\n\nBir ayrıntıya daha dikkat et. Temsilcilikteki sandık da 45 günle başlar, ama seçim gününden önceki **üçüncü gün** kapanır. Gümrük kapısı ise **seçim günü 17:00**'a kadar açıktır.",
+      "articleRefs": [
+        "94/B",
+        "94/C",
+        "94/D",
+        "94/E"
+      ],
+      "counterNumbers": [
+        15,
+        60
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Torbaya tutanağın aslı mı girer, sureti mi?",
+      "body": "Yurt dışı yollarında torbaya giren tutanak her yolda aynı değildir. Her yolun ifadesi farklı:\n- **Mektup sandığı (94/B):** zarflar tutanağın **bir örneği** ile torbaya konur. Torba Yurt Dışı İlçe Seçim Kuruluna teslim edilir.\n- **Temsilcilik sandığı (94/C):** zarflar tutanağın **aslı** ile torbaya konur. **Sureti** temsilcilikte saklanır. Torbayı başkan ilgili **komisyona** teslim eder.\n- **Gümrük kapısı (94/E):** zarflar tutanağın **bir sureti** ile torbaya konur. Teslim **geçici gümrük kapısı seçim kuruluna** yapılır.\n\nŞıklarda “aslı” ile “sureti” yer değiştirmişse önce hangi yolun sorulduğuna bak.",
+      "articleRefs": [
+        "94/B",
+        "94/C",
+        "94/E"
+      ]
+    },
+    {
+      "type": "numbers",
+      "title": "Yurt dışında oy: günler ve saatler",
+      "rows": [
+        {
+          "label": "Mektup: pusulanın seçmen adresine gönderilmesi",
+          "value": "Seçimden 75 gün önce",
+          "refs": [
+            "94/B"
+          ]
+        },
+        {
+          "label": "Mektup: Kurulda bulunması gereken son an",
+          "value": "Seçim günü 17:00",
+          "refs": [
+            "94/B"
+          ]
+        },
+        {
+          "label": "Mektup: sandığın açılması",
+          "value": "Her gün 17:00",
+          "refs": [
+            "94/B"
+          ]
+        },
+        {
+          "label": "Mektup: geç gelen mektup",
+          "value": "17:00'dan sonra gelen yakılarak imha",
+          "refs": [
+            "94/B"
+          ]
+        },
+        {
+          "label": "Temsilcilik sandığı: başlangıç",
+          "value": "Seçimden 45 gün önce",
+          "refs": [
+            "94/C"
+          ]
+        },
+        {
+          "label": "Temsilcilik sandığı: bitiş",
+          "value": "Seçim gününden önceki 3. gün 17.00",
+          "refs": [
+            "94/C"
+          ]
+        },
+        {
+          "label": "Temsilcilik sandığı: oy saatleri",
+          "value": "Mahalli saatle 08.00–17.00",
+          "refs": [
+            "94/C"
+          ]
+        },
+        {
+          "label": "Elektronik oy: başlangıç",
+          "value": "Seçimden 30 gün önce",
+          "refs": [
+            "94/D"
+          ]
+        },
+        {
+          "label": "Elektronik oy: bitiş",
+          "value": "Seçim günü Türkiye saatiyle 17:00",
+          "refs": [
+            "94/D"
+          ]
+        },
+        {
+          "label": "Gümrük kapısı: başlangıç",
+          "value": "Seçimden önceki 45. gün 08:00",
+          "refs": [
+            "94/E"
+          ]
+        },
+        {
+          "label": "Gümrük kapısı: bitiş",
+          "value": "Seçim günü 17:00",
+          "refs": [
+            "94/E"
+          ]
+        },
+        {
+          "label": "Gümrük kapısı: pusula ve zarfların ilçe seçim kurulunda bulunması",
+          "value": "Oy verme gününden en geç 3 gün önce",
+          "refs": [
+            "94/E"
+          ]
+        },
+        {
+          "label": "Tatil dâhil 24 saat oy verilecek yerler",
+          "value": "YSK belirler",
+          "refs": [
+            "94/C",
+            "94/E"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "94/B",
+        "94/C",
+        "94/D",
+        "94/E"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Sayım tedbirleri: açıklık ve boş alan",
+      "body": "- Sayım ve döküm **açık** yapılır.\n- Oy verme yerinde hazır bulunanlar sayım ve dökümü takip eder.\n- Kurul, faaliyetinin selameti ve düzeni için sayım ve döküm masası etrafında **boş kalması gereken kısmı bir kararla** belirtir.\n- Bu kısmın etrafında (**ip germek gibi**) tedbirler alabilir.\n- Bu tedbirler, hazır bulunanların işlemleri **takip etmesine engel olmamalıdır**.",
+      "articleRefs": [
+        "95"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Sandık ne zaman açılabilir?",
+      "body": "**Açılış saati:** Sandık **saat 17.00'den önce açılamaz**. Tek istisna: 89. maddenin son fıkrası uyarınca YSK başka bir süre koymuşsa o süre geçerlidir.\n\n**Oy verme bitince:**\n- Kurul başkanı oy vermenin bittiğini **yüksek sesle ilan eder**.\n- Masa üzerinde **sandıktan başka ne varsa** kaldırılır.\n- Oy vermenin bittiği saat **tutanak defterine** yazılır.\n\n**Ardından:**\n- Sandık seçmen listesinde yazılı seçmenlerin toplamı tespit edilir.\n- Adların hizasındaki **imza veya parmak izleri** sayılarak oy verenlerin toplamı bulunur.\n- Her ikisi tutanağa geçirilir ve sonuç yüksek sesle ilan edilir.",
+      "articleRefs": [
+        "96"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Kullanılmayan zarflar ve boş torba",
+      "body": "- Kullanılmayan **oy zarfları veya birleşik oy pusulaları** sayılır.\n- Bu sayı **oy veren seçmen sayısına eklenir**.\n- Toplamın, kurula teslim edilen zarf veya birleşik oy pusulası toplamına uyup uymadığı tespit edilir.\n- Kullanılmayanlar **bir paket** hâlinde mühürlenir ve üzerine **sayısı** yazılır.\n- Sonra, sandıktan çıkacak oy pusulalarının konacağı **torbanın boş olduğu** tespit edilir.\n- Bütün bu işlemler tutanağa geçirilir.",
+      "articleRefs": [
+        "97"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Sandığın açılışı ve zarfların sayılması",
+      "body": "- Önceki maddelerdeki işlemler tamamlanır.\n- Ardından sandık, **oy verme yerinde hazır bulunanların gözü önünde** açılır. Açan kişi **sandık kurulu başkanıdır**.\n- Sandıktan çıkan zarfları başkan **yüksek sesle iki defa** sayar.\n- İki sayım arasında fark çıkarsa **üçüncü sayım** yapılır ve onun sonucuna göre işlem yapılır.\n- Böylece o seçimde kullanılan toplam zarf sayısı tespit edilir.\n- Bu sayı, o seçim türüne ait **özel tutanağın** ilgili yerine işlenir.\n- Bütün zarflar sayıldıktan sonra **geçerlilik** kontrolüne geçilir.",
+      "articleRefs": [
+        "98"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Hangi zarf geçersiz, hangisi yine de geçerli?",
+      "body": "**Geçersiz sayılan zarflar:**\n- Sandık kurulunca verilen biçim ve renkte olmayan zarf.\n- Üzerinde ilçe seçim kurulu ve sandık kurulu mührü bulunmayan zarf.\n- Tamamı yırtılmış zarf.\n- Üzerinde ilçe seçim kurulu ve sandık kurulu mührü dışında herhangi bir mühür, imza, yazı, parmak izi veya işaret bulunan zarf.\n\n**İstisna, yine de geçerli sayılanlar:**\n- Sandık kurulu mührü olmayan ama üzerinde **Türkiye Cumhuriyeti Yüksek Seçim Kurulu filigranı, amblemi ve ilçe seçim kurulu mührü** bulunan zarf.\n- Üzerinde **leke veya çizik** bulunan, ama bunun özel işaret koymak amacıyla yapıldığı **kesin olarak anlaşılamayan** zarf.",
+      "articleRefs": [
+        "98"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "İtirazlı zarflar ve fazla çıkan zarflar",
+      "body": "**İtirazlı ve geçersiz zarflar:**\n- İtiraza uğrayan zarfları ve itirazsız geçersiz sayılan zarfları başkan **bir kenara ayırır**.\n- Bütün zarflar kontrol edildikten sonra sandık kurulu itirazlı zarfları inceler. Her biri için geçerli ya da geçersiz kararı verir.\n- Sandıktan çıkan geçerli ve geçersiz zarfların toplamları **ayrı ayrı** özel tutanağa işlenir.\n- Geçersiz zarflar paketlenir. Paketin üzeri mühürlenir ve zarf sayısı yazılır.\n- Bu zarflar **saklanır ve kesinlikle açılmaz**.\n\n**Karşılaştırma:** Geçerli ve geçersiz zarfların toplamı, o seçim türü için oy kullanan seçmen sayısıyla karşılaştırılır.\n- Zarf sayısı **eşit veya eksik** ise başkaca işlem yapılmaz.\n- Zarf sayısı **fazla** ise önce **geçersiz zarf sayısı düşülür**.\n- Eşitlik yine sağlanamazsa başkan, geçerli zarflar arasından eşitliği sağlayacak sayıda zarfı **gelişigüzel çeker**.\n- Çekilen zarflar **açılmadan derhal yakılarak imha edilir**. İmha edilen zarf sayısı tutanağa yazılır.\n\n**Kapanış:**\n- Geçerli zarflar sandığa geri konur ve sayıma geçilir.\n- Tüm işlemler tutanak defterine geçirilir. Defteri sandık kurulu başkanı ve üyeleri **imzalar ve mühürler**.\n- Sandıklar, **bütün seçimlere ait** sayım ve döküm bitinceye kadar oy verme yerinden çıkarılamaz.",
+      "articleRefs": [
+        "98"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Zarf sayımında üç kritik nokta",
+      "body": "Bu maddede şıklar genellikle şu üç noktada karıştırılır:\n1. **Fazla zarfta sıra:** önce geçersiz zarflar düşülür, sonra geçerliler arasından gelişigüzel çekilir. Çekilen zarflar **açılmadan** yakılır. Zarfların içine bakıldığını söyleyen şık yanlıştır.\n2. **Sandık kurulu mührü olmayan zarf:** kendiliğinden geçersiz değildir. Üzerinde YSK filigranı, amblemi ve ilçe seçim kurulu mührü varsa **geçerli** sayılır.\n3. **Eksik zarf:** zarf sayısı oy kullanan seçmen sayısına eşit ya da ondan eksikse başkaca bir işlem yapılmaz. Düzeltme yalnız **fazla** zarf durumunda yapılır.\n\nSon olarak sayım kuralını hatırla: zarflar **iki** kez sayılır, fark çıkarsa **üçüncü** sayıma geçilir.",
+      "articleRefs": [
+        "98"
+      ]
+    },
+    {
+      "type": "numbers",
+      "title": "Sayım ve döküm: saatler ve adetler",
+      "rows": [
+        {
+          "label": "Sandığın açılabileceği en erken saat",
+          "value": "17.00 (YSK başka süre koymadıysa)",
+          "refs": [
+            "96"
+          ]
+        },
+        {
+          "label": "Zarfların sayılması",
+          "value": "İki defa, yüksek sesle",
+          "refs": [
+            "98"
+          ]
+        },
+        {
+          "label": "İki sayım arasında fark",
+          "value": "Üçüncü sayım",
+          "refs": [
+            "98"
+          ]
+        },
+        {
+          "label": "Mektup ve temsilcilik sandığının günlük açılışı",
+          "value": "Her gün 17.00 (temsilcilikte başka bir bitim saati belirlenmişse o saatte)",
+          "refs": [
+            "94/B",
+            "94/C"
+          ]
+        },
+        {
+          "label": "Mektup ve elektronik oyların sayım başlangıcı",
+          "value": "Seçim günü 17:00'dan itibaren",
+          "refs": [
+            "94/B",
+            "94/D"
+          ]
+        },
+        {
+          "label": "Gümrük kapısı sayım başlangıcı",
+          "value": "Seçim günü 17.00'den itibaren",
+          "refs": [
+            "94/E"
+          ]
+        },
+        {
+          "label": "Yurt dışı sandık kurulunda parti temsilcisi",
+          "value": "En çok oy alan üç partiden birer isim",
+          "refs": [
+            "94/C"
+          ]
+        },
+        {
+          "label": "Yurt dışı sandık kurulu asıl üye sayısı (başkan dâhil)",
+          "value": "5",
+          "refs": [
+            "94/C"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "94/B",
+        "94/C",
+        "94/D",
+        "94/E",
+        "96",
+        "98"
+      ],
+      "derivedNumbers": [
+        {
+          "value": 5,
+          "expr": "1 + 1 + 3",
+          "refs": [
+            "94/C"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "compare",
+      "title": "Temsilcilik sandığı ve gümrük kapısı",
+      "rows": [
+        {
+          "aspect": "Başlangıç",
+          "left": "Seçimden 45 gün önce",
+          "right": "Seçimden önceki 45. gün 08:00",
+          "refs": [
+            "94/C",
+            "94/E"
+          ]
+        },
+        {
+          "aspect": "Bitiş",
+          "left": "Seçim gününden önceki 3. gün 17.00",
+          "right": "Seçim günü 17:00",
+          "refs": [
+            "94/C",
+            "94/E"
+          ]
+        },
+        {
+          "aspect": "Oy saatleri",
+          "left": "Mahalli saatle 08.00–17.00; tatil dâhil 24 saat olacak yerleri YSK belirler",
+          "right": "Tatil dâhil 24 saat ya da daha az; YSK tespit eder",
+          "refs": [
+            "94/C",
+            "94/E"
+          ]
+        },
+        {
+          "aspect": "Yeri kim belirler",
+          "left": "YSK, Dışişleri Bakanlığının görüşüyle",
+          "right": "YSK",
+          "refs": [
+            "94/C",
+            "94/E"
+          ]
+        },
+        {
+          "aspect": "Kimlik belgesi",
+          "left": "Nüfus cüzdanı veya pasaport",
+          "right": "Nüfus hüviyet cüzdanı, TC kimlik numaralı resmî belgeler veya pasaport",
+          "refs": [
+            "94/C",
+            "94/E"
+          ]
+        },
+        {
+          "aspect": "Torbaya giren tutanak",
+          "left": "Aslı (sureti temsilcilikte kalır)",
+          "right": "Bir sureti",
+          "refs": [
+            "94/C",
+            "94/E"
+          ]
+        },
+        {
+          "aspect": "Torbanın teslim yeri",
+          "left": "İlgili komisyon",
+          "right": "Geçici gümrük kapısı seçim kurulu",
+          "refs": [
+            "94/C",
+            "94/E"
+          ]
+        },
+        {
+          "aspect": "Sayımı yapan",
+          "left": "Yurt Dışı İlçe Seçim Kurulunun denetiminde sandık kurulları",
+          "right": "Geçici gümrük kapısı seçim kurulları",
+          "refs": [
+            "94/C",
+            "94/E"
+          ]
+        },
+        {
+          "aspect": "Sayımın zamanı",
+          "left": "Yurt içinde oy verme süresi bittikten sonra",
+          "right": "Seçim günü 17.00'den itibaren",
+          "refs": [
+            "94/C",
+            "94/E"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "94/C",
+        "94/E"
+      ]
+    },
+    {
+      "type": "exam_stats",
+      "title": "Sınav der ki",
+      "rows": [
+        {
+          "label": "Bu ünitenin maddelerinden yayındaki soru",
+          "value": "1",
+          "refs": [
+            "94/B",
+            "94/C",
+            "94/D",
+            "94/E",
+            "95",
+            "96",
+            "97",
+            "98"
+          ]
+        },
+        {
+          "label": "md 94/E — Yurt dışı seçmenlerin gümrük kapılarında oy vermesi",
+          "value": "1 soru",
+          "refs": [
+            "94/E"
+          ]
+        },
+        {
+          "label": "Hiç soru çıkmamış",
+          "value": "md 94/B, md 94/C, md 94/D, md 95, md 96, md 97, md 98",
+          "refs": [
+            "94/B",
+            "94/C",
+            "94/D",
+            "94/E",
+            "95",
+            "96",
+            "97",
+            "98"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "94/B",
+        "94/C",
+        "94/D",
+        "94/E",
+        "95",
+        "96",
+        "97",
+        "98"
+      ],
+      "generated": true
+    },
+    {
+      "type": "bridge",
+      "title": "Bu üniteden soru çöz",
+      "articleRefs": [
+        "94/B",
+        "94/C",
+        "94/D",
+        "94/E",
+        "95",
+        "96",
+        "97",
+        "98"
+      ],
+      "generated": true,
+      "rows": [
+        {
+          "label": "Madde kapsamlı seans",
+          "value": "md 94/B, 94/C, 94/D, 94/E, 95–98, 1 soru",
+          "refs": [
+            "94/B",
+            "94/C",
+            "94/D",
+            "94/E",
+            "95",
+            "96",
+            "97",
+            "98"
+          ]
+        }
+      ]
+    }
+  ]
+}

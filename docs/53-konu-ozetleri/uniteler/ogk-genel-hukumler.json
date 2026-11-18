@@ -1,0 +1,668 @@
+{
+  "unit": {
+    "slug": "ogk-genel-hukumler",
+    "legislationSlug": "5188-sayili-ozel-guvenlik-hizmetlerine-dair-kanun",
+    "topicId": "b451923e-eac4-44f2-9d0b-49d741cb0cfc",
+    "title": "Özel güvenlik: izin, görevliler ve yasaklar",
+    "subtitle": "İzin ve komisyon, şirketler, yetkiler, görev alanı, görevlide aranan şartlar, adlî ve idari yaptırımlar",
+    "articleFrom": "1",
+    "articleTo": "28",
+    "readingMinutes": 17,
+    "sourceLabel": "AI özeti — 5188 Sayılı Özel Güvenlik Hizmetlerine Dair Kanun, md 1–28",
+    "articleNos": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+      "15",
+      "16",
+      "17",
+      "18",
+      "19",
+      "20",
+      "21",
+      "22",
+      "23",
+      "24",
+      "25",
+      "26",
+      "27",
+      "28"
+    ],
+    "generatedBy": "claude-opus-5-5 (ozet-uret.ts)",
+    "sortOrder": 1
+  },
+  "blocks": [
+    {
+      "type": "concept",
+      "title": "Özel güvenlik neyi tamamlar?",
+      "body": "Bu Kanun'un amacı, **kamu güvenliğini tamamlayıcı mahiyetteki** özel güvenlik hizmetlerinin esas ve usullerini belirlemektir. Özel güvenlik genel kolluğun yerine geçmez, onu tamamlar. Kanunun kapsamında şu konular var: özel güvenlik izninin verilmesi, bu hizmeti yürütecek kişi ve kuruluşların ruhsatlandırılması ve bunların denetlenmesi. Bu üniteyi okurken her kuralda kendine şunu sor: Bu işe kim izin veriyor, kim denetliyor?",
+      "articleRefs": [
+        "1",
+        "2"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Özel güvenlik izni: komisyon kararı ve valinin izni",
+      "body": "**Kural:** Aşağıdaki durumlar **özel güvenlik komisyonunun kararı üzerine valinin iznine** bağlıdır:\n- kişilerin silahlı personel tarafından korunması,\n- kurum ve kuruluşlar bünyesinde özel güvenlik birimi kurulması,\n- güvenlik hizmetinin şirketlere gördürülmesi.\n\n**İstisna:** Toplantı, konser, sahne gösterileri ve benzeri etkinliklerde ve para veya değerli eşya nakli gibi geçici ya da acil hallerde izni **valilik** verir. Bu durumda **komisyon kararı aranmaz**.\n\n- İzin, kişi ve kuruluşların talebi üzerine, koruma ve güvenlik ihtiyacı dikkate alınarak verilir.\n- Bünyede özel güvenlik birimi kurulmuş olması, ihtiyaç duyulduğunda ayrıca güvenlik şirketine hizmet gördürülmesine mani değildir.\n- Komisyon şunları belirlemeye yetkilidir: personelin ve bulundurulabilecek ya da taşınabilecek silah ve teçhizatın azamî miktarı ve niteliği. Gerekli hallerde diğer fizikî ve aletli güvenlik tedbirlerini de belirler.\n- Havalimanı ve liman gibi yerlerde alınacak tedbirlere ilişkin uluslararası yükümlülükler saklıdır.\n\n**Sona erdirme:** Geçici haller dışındaki uygulama, **en az bir ay önce başvurulması** şartıyla, komisyonun kararı ve valinin onayı ile sona erdirilebilir.",
+      "articleRefs": [
+        "3"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Özel güvenlik komisyonu",
+      "body": "**Başkan:** Valinin görevlendireceği bir vali yardımcısı.\n\n**Üyeler:**\n- il emniyet müdürlüğü temsilcisi,\n- il jandarma komutanlığı temsilcisi,\n- ticaret odası başkanlığı temsilcisi,\n- sanayi odası başkanlığı temsilcisi.\n\nSanayi odasının bulunmadığı illerde komisyona **ticaret ve sanayi odası başkanlığının** temsilcisi katılır.\n\nÖzel güvenlik izni verilmesi ya da uygulamanın kaldırılması için başvuran kişi ya da kuruluşun temsilcisi, ilgili toplantıya **üye olarak** katılır.\n\n**Karar usulü:**\n- Kararlar oy çokluğu ile alınır.\n- Oyların eşitliği halinde başkanın bulunduğu taraf çoğunluk sayılır.\n- **Çekimser oy kullanılamaz.**",
+      "articleRefs": [
+        "4"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Valilik mi, komisyon mu? Üye mi, gözlemci mi?",
+      "body": "Para veya değerli eşya nakli geçici ya da acil bir haldir. Bu durumda izni **valilik** verir ve komisyon kararı aranmaz. “Komisyon kararı şartıyla” diyen şık yanlıştır. İl emniyet müdürlüğü ve İçişleri Bakanlığı da bu iznin mercii değildir.\n\n“En az bir ay önce başvuru” şartı izin almak için değildir. Bu şart, geçici haller dışındaki uygulamanın **sona erdirilmesi** içindir.\n\nKomisyon sorularında en çok yanıltan ayrıntı şudur: Başvuran kişi ya da kuruluşun temsilcisi toplantıya **gözlemci olarak değil, üye olarak** katılır. Ayrıca komisyonda çekimser oy yoktur ve eşitlikte başkanın tarafı çoğunluk sayılır.",
+      "articleRefs": [
+        "3",
+        "4"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Şirketlerin faaliyet izni ve yükümlülükleri",
+      "body": "**Faaliyet izni İçişleri Bakanlığından alınır.** İzin için iki şart zorunludur:\n- şirket hisselerinin nama yazılı olması,\n- faaliyet alanının münhasıran koruma ve güvenlik hizmeti olması.\n\n**Bildirimler:**\n- Şubeler **bir ay** içinde Bakanlığa ve ilgili valiliğe yazılı olarak bildirilir.\n- Hisse devirleri **bir ay** içinde Bakanlığa bildirilir.\n- Üçüncü kişilere sağlanacak hizmet, **hizmetin başladığı gün mesai saati bitimine kadar** ilgili valiliğe yazılı olarak bildirilir. Acil ve geçici nitelikteki hizmette süre kaydı aranmaz.\n- Görevlilerin çalışma izin belgelerinin suretleri **bir ay** içinde ilgili kişi, kurum ya da kuruluşa bildirilir.\n\n**Yabancılar:** Yabancı kişilerin şirket kurması ve yabancı şirketlerin Türkiye'de hizmet vermesi **mütekabiliyet** esasına tâbidir.\n\n**Kişilerde aranan şartlar:**\n- Kurucu, yönetici, eğitici ve tüzel kişi ortağın yetkilendirdiği temsilcilerde md 10'un birinci fıkrasının (a), (d) ve (h) bentlerindeki şartlar aranır.\n- **Yönetici** ayrıca **lisans** mezunu olmalı ve özel güvenlik temel eğitimini başarıyla tamamlamış olmalıdır. Yönetici, sadece bir faaliyet izin belgesinde yönetici unvanı alabilir.\n- **Güvenlik sorumlusu** şu yerlerde en az bir tane belirlenir: özel güvenlik birimleri, şirket şubeleri ve **onbeş kişi ve üzerinde** görevli istihdam edilen yerler. Güvenlik sorumlusunda md 10 şartlarına ek olarak en az **önlisans** mezunu olma şartı aranır.\n\n**Şartların kaybı:** Kurucu, temsilci ve yöneticide aranan şartlar kaybedilirse eksiklik **iki ay** içinde giderilmelidir. Giderilmez ya da bu kişiler değiştirilmezse faaliyet izni **iptal edilir**.\n\n**Alarm izleme merkezi:** Kurmak ve işletmek için **valilikten yeterlilik belgesi** alınması zorunludur.",
+      "articleRefs": [
+        "5"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Yönetici lisans, güvenlik sorumlusu önlisans",
+      "body": "Öğrenim şartlarını karıştırma: **yönetici lisans**, **güvenlik sorumlusu en az önlisans** mezunu olmalıdır (md 5). Lise mezuniyeti ise md 10'da **silahlı görev yapacak görevli** için aranır; silahsız görevli için en az sekiz yıllık ilköğretim veya ortaokul yeterlidir.\n\nMercileri de karıştırma:\n- Şirkete faaliyet iznini valilik değil, **İçişleri Bakanlığı** verir.\n- Alarm izleme merkezi için yeterlilik belgesi ise **valilikten** alınır.",
+      "articleRefs": [
+        "5",
+        "10"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Mülki idare amirinin ek önlem yetkisi",
+      "body": "Mülki idare amirleri, kamu güvenliğinin gerektirdiği hallerde özel güvenlik izni verilen yerlerdeki tedbirleri denetlemeye yetkilidir. Tedbirleri yetersiz bulurlarsa **ek önlemler aldırabilirler**.\n\nİl İdaresi Kanunu ile vali ve kaymakamlara verilen yetkiler saklıdır. Bu yetkiler kullanıldığında özel güvenlik birimi ve personeli, **mülkî idare amirinin ve genel kolluk amirinin emirlerini** yerine getirmek zorundadır.",
+      "articleRefs": [
+        "6"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Özel güvenlik görevlisinin yetkileri",
+      "body": "Özel güvenlik görevlisinin yetkileri Kanunda tek tek sayılmıştır:\n\n**Alana giriş kontrolü:** Koruma alanına girmek isteyenleri duyarlı kapıdan geçirme, üstlerini dedektörle arama, eşyalarını X-ray cihazından veya benzeri güvenlik sistemlerinden geçirme.\n\n**Etkinlikler ve toplu ulaşım:** Aşağıdaki yerlerde bu yetkilere ek olarak **kimlik sorma** yetkisi de vardır:\n- toplantı, konser, spor müsabakası, sahne gösterileri ve benzeri etkinlikler,\n- cenaze ve düğün törenleri,\n- hava meydanı, liman, gar, istasyon ve terminal gibi toplu ulaşım tesisleri.\n\n**Yakalama:**\n- Ceza Muhakemesi Kanununun 90 ıncı maddesine göre yakalama.\n- Görev alanında, hakkında yakalama emri veya mahkûmiyet kararı bulunan kişileri yakalama **ve arama**.\n- Kişinin vücudu veya sağlığı bakımından mevcut bir tehlikeden korunması amacıyla yakalama.\n- Olay yerini ve delilleri koruma; bu amaçla Ceza Muhakemesi Kanununun 168 inci maddesine göre yakalama.\n\n**İşyeri ve konutlara girme:** Yangın, deprem gibi tabiî afet durumlarında ve imdat istenmesi halinde, görev alanındaki işyeri ve konutlara girme.\n\n**Emanete alma:**\n- Aramalar sırasında suç teşkil eden, delil olabilecek ya da tehlike doğurabilecek eşya; **genel kolluğa derhal bildirmek şartıyla**.\n- Terk edilmiş ve bulunmuş eşya.\n\n**Zor kullanma:** Türk Medeni Kanununun 981 inci, Borçlar Kanununun 52 nci ve Türk Ceza Kanununun 24 ve 25 inci maddelerine göre.\n\n**Not:** Borçlar Kanununun 52 nci maddesine atıf metnindeki hâliyle verilmiştir; atıf yapılan Borçlar Kanunu yürürlükten kalkmış, yerini Türk Borçlar Kanunu almıştır.",
+      "articleRefs": [
+        "7"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Silah bulundurma ve taşıma",
+      "body": "Hangi hizmet için ne miktar ve özellikte ateşli silah bulundurulabileceğini **komisyon** belirler.\n\n**Silahlı görevli çalıştırılamayan yerler:**\n- eğitim ve öğretim kurumları,\n- sağlık tesisleri,\n- talih oyunları işletmeleri,\n- içkili yerler.\n\nGörevliler özel toplantılarda, spor müsabakalarında, sahne gösterileri ve benzeri etkinliklerde **silahlı görev yapamaz**.\n\nSilah ve teçhizatı **ilgili kişi veya kuruluş** temin eder.\n\n**Kural:** Özel güvenlik şirketleri ateşli silah alamaz ve bulunduramaz.\n\n**İstisna:** Komisyonun kararı ve valinin onayı ile silah alma, kullanma ve taşıma izni verilebilir:\n- şirketlere, para ve değerli eşya nakli ile geçici süreli koruma ve güvenlik hizmetlerinde kullanılmak üzere,\n- özel güvenlik eğitimi veren kurumlara, silah eğitiminde kullanılmak üzere.",
+      "articleRefs": [
+        "8"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Yetki ve silah sorularındaki tuzaklar",
+      "body": "- **Silahı kim temin eder?** Fabrika gibi bir yerin korunması sürekli olarak bir şirkete verilmişse silah ve teçhizatı **hizmeti talep eden kuruluş** temin eder. Şirket, valilik ya da komisyon değil. Şirketin silah alabilmesi, para ve değerli eşya nakli ile geçici süreli hizmetlerle sınırlıdır.\n- **Yakalama ve arama:** Görevli, görev alanında hakkında mahkûmiyet kararı bulunan kişiyi **yakalayıp arayabilir**. Bir kişiyi vücudu veya sağlığı için mevcut bir tehlikeden korumak amacıyla da yakalayabilir.\n- **Görevliye karşı suç:** “Görevliye karşı görevi dolayısıyla suç işleyen genel hükümlere göre cezalandırılır” ifadesi yanlıştır. Fail, **kamu görevlisine karşı suç işlemiş gibi** cezalandırılır (md 23).\n- **Kimlik sorma:** Bu yetki her yerde yoktur. Yalnızca etkinliklerde, cenaze ve düğün törenlerinde ve toplu ulaşım tesislerinde sayılmıştır.",
+      "articleRefs": [
+        "7",
+        "8",
+        "23"
+      ]
+    },
+    {
+      "type": "numbers",
+      "title": "Süreler ve sayılar: izin ve şirketler",
+      "rows": [
+        {
+          "label": "Geçici haller dışındaki uygulamayı sona erdirme başvurusu",
+          "value": "En az 1 ay önce",
+          "refs": [
+            "3"
+          ]
+        },
+        {
+          "label": "Şube bildirimi (Bakanlık ve valilik)",
+          "value": "1 ay içinde",
+          "refs": [
+            "5"
+          ]
+        },
+        {
+          "label": "Hisse devri bildirimi (Bakanlık)",
+          "value": "1 ay içinde",
+          "refs": [
+            "5"
+          ]
+        },
+        {
+          "label": "Şartları kaybeden kurucu, temsilci veya yönetici için eksikliği giderme",
+          "value": "2 ay içinde; aksi hâlde faaliyet izni iptal",
+          "refs": [
+            "5"
+          ]
+        },
+        {
+          "label": "Üçüncü kişilere sağlanan hizmetin valiliğe bildirimi",
+          "value": "Hizmetin başladığı gün mesai saati bitimine kadar",
+          "refs": [
+            "5"
+          ]
+        },
+        {
+          "label": "Acil ve geçici hizmetin bildirimi",
+          "value": "Süre kaydı aranmaz",
+          "refs": [
+            "5"
+          ]
+        },
+        {
+          "label": "Çalışma izin belgesi suretlerinin hizmet alana bildirimi",
+          "value": "1 ay içinde",
+          "refs": [
+            "5"
+          ]
+        },
+        {
+          "label": "Güvenlik sorumlusu zorunluluğu",
+          "value": "15 kişi ve üzeri görevli istihdam edilen yerlerde en az 1",
+          "refs": [
+            "5"
+          ]
+        },
+        {
+          "label": "Yöneticinin en az öğrenimi",
+          "value": "Lisans",
+          "refs": [
+            "5"
+          ]
+        },
+        {
+          "label": "Güvenlik sorumlusunun en az öğrenimi",
+          "value": "Önlisans",
+          "refs": [
+            "5"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "3",
+        "5"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Görev alanı",
+      "body": "- Md 7'deki yetkiler **sadece görevli olunan süre içinde ve görev alanında** kullanılabilir.\n- Görevliler silahlarını **görev alanı dışına çıkaramaz**.\n- **Güzergâh ifade eden durumlarda güzergâh boyu görev alanı sayılır.** Kanun şu örnekleri sayar:\n  - işlenmiş bir suçun sanığının veya suç işleyeceğinden kuvvetle şüphe edilen kişinin takibi,\n  - dışarıdan yapılan saldırılara karşı tedbir alınması,\n  - para ve değerli eşya nakli,\n  - cenaze töreni.\n- Görev alanı, zorunlu hallerde **komisyon kararıyla** genişletilebilir.\n- **Kişi korumasında görev alanı:**\n  - korunan kişiyle birlikteyken **ülke geneli**,\n  - korunan kişi olmaksızın **kişi koruma izni verilen ilin sınırları**.\n- Zor kullanma ve yakalama gerektiren olaylar **en seri vasıtayla** yetkili genel kolluğa bildirilir. Yakalanan kişi ve zapt edilen eşya genel kolluğa teslim edilir.",
+      "articleRefs": [
+        "9"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Kişi korumasında görev alanı",
+      "body": "Kişi korumasındaki görev alanı sık ters çevrilir. Korunan kişiyle birlikteyken görev alanı **ülke genelidir**. Korunan kişi yanında değilken görev alanı, **kişi koruma izni verilen ilin sınırlarıdır**. “Korunan kişiyle birlikteyken il sınırları” ifadesi bu iki durumun yerini değiştirdiği için yanlıştır.",
+      "articleRefs": [
+        "9"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Özel güvenlik görevlisinde aranan şartlar",
+      "body": "- Türkiye Cumhuriyeti vatandaşı olmak.\n- **Öğrenim:** Silahsız görev için en az sekiz yıllık ilköğretim veya ortaokul; silahlı görev için en az lise veya dengi okul mezunu olmak.\n- **18 yaşını** doldurmuş olmak.\n- **Adli sicil:** Türk Ceza Kanununun 53 üncü maddesindeki süreler geçmiş olsa bile şu şartlar aranır:\n  - Kasten işlenen bir suçtan **bir yıl veya daha fazla** hapis cezasına mahkûm olmamak.\n  - Affa uğramış olsa bile aşağıdaki suçlardan mahkûm olmamak veya hakkında hükmün açıklanmasının geri bırakılması kararı verilmemiş olmak: Devletin güvenliğine, Anayasal düzene ve bu düzenin işleyişine, özel hayata ve hayatın gizli alanına, cinsel dokunulmazlığa karşı suçlar; uyuşturucu veya uyarıcı madde suçları; zimmet, irtikâp, rüşvet, hırsızlık, dolandırıcılık, sahtecilik, güveni kötüye kullanma, hileli iflas, ihaleye fesat karıştırma, edimin ifasına fesat karıştırma, suçtan kaynaklanan malvarlığı değerlerini aklama, kaçakçılık ve fuhuş.\n  - Aşağıdaki suçlardan hakkında **devam etmekte olan bir kovuşturma** bulunmamak: Devletin güvenliğine, anayasal düzene ve bu düzenin işleyişine, özel hayata ve hayatın gizli alanına, cinsel dokunulmazlığa karşı suçlar ile uyuşturucu veya uyarıcı madde suçları.\n- Görevin yapılmasına engel olabilecek vücut ve akıl hastalığı ile engelli bulunmamak.\n- Md 14'teki özel güvenlik temel eğitimini başarıyla tamamlamış olmak.\n- Güvenlik soruşturması olumlu olmak.",
+      "articleRefs": [
+        "10"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Kovuşturma listesi, mahkûmiyet listesinden dardır",
+      "body": "Mahkûmiyet listesi uzundur, devam eden kovuşturma listesi kısadır. Devam eden kovuşturma yalnızca şu suçlarda engel olarak sayılmıştır:\n- Devletin güvenliğine, anayasal düzene ve bu düzenin işleyişine karşı suçlar,\n- özel hayata ve hayatın gizli alanına karşı suçlar,\n- cinsel dokunulmazlığa karşı suçlar,\n- **uyuşturucu veya uyarıcı madde suçları**.\n\nHırsızlık, kaçakçılık, fuhuş ve suçtan kaynaklanan malvarlığı değerlerini aklama yalnızca mahkûmiyet ve hükmün açıklanmasının geri bırakılması listesinde yer alır. Bu suçlar kovuşturma bendinde sayılmaz.\n\nÖğrenim şartında da silahlı ve silahsız ayrımını unutma: lise şartı silahlı görevli içindir.",
+      "articleRefs": [
+        "10"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Çalışma izni, kimlik kartı ve kıyafet",
+      "body": "**Çalışma izni (md 11)**\n- Valilik, şu kişiler hakkında güvenlik soruşturması ve arşiv araştırması yapar: özel güvenlik görevlisi olacaklar ile şirketlerde, alarm izleme merkezlerinde ve eğitim kurumlarında kurucu ve/veya yönetici olacaklar.\n- Soruşturma ve araştırma **bir ay** içinde tamamlanır. Her kimlik verilmesinde veya ihtiyaç duyulduğunda yenilenir.\n- Sonucu olumlu olan ve temel eğitimi başarıyla bitirenlere **valilikçe** çalışma izni verilir.\n- Şirketlerde eğitici ve temsilci olacaklarda ve şirketin tüzel kişi ortaklarında da kurucularda aranan şartlar aranır.\n- Göreve başlayan görevli, işveren tarafından **onbeş gün** içinde valiliğe bildirilir.\n- Şartları taşımadığı veya sonradan kaybettiği tespit edilenlerin kimliği iptal edilir.\n- Şu kişiler özel güvenlik şirket veya birimlerinde çalışamaz: terör örgütlerine ya da Milli Güvenlik Kurulunca Devletin milli güvenliğine karşı faaliyette bulunduğuna karar verilen yapı, oluşum veya gruplara iltisakı veya irtibatı tespit edilenler.\n\n**Kimlik kartı (md 12)**\n- Kimlik kartını **valilik** verir. Kartta görevlinin adı, soyadı ve silahlı ya da silahsız olduğu yazılır.\n- Kart, görev alanında ve süresince herkesin görebileceği şekilde yakaya takılır.\n- **Üzerinde kimlik kartı olmayan görevli, md 7'deki yetkileri kullanamaz.**\n- Herhangi bir sebeple görevden ayrılan görevli, işveren tarafından **onbeş gün** içinde valiliğe bildirilir.\n\n**Kıyafet (md 13)**\n- Görevli, görev alanı içinde ve görev süresince üniforma giyer.\n- Görevin ve işyerinin özelliği nedeniyle gerekli görülen hallerde sivil kıyafetle görev yapılmasına **komisyon** izin verebilir.",
+      "articleRefs": [
+        "11",
+        "12",
+        "13"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Eğitim, tazminat ve çalışma güvenceleri",
+      "body": "**Eğitim (md 14)**\n- Temel eğitim teorik, pratik ve silah eğitiminden oluşur; **yüz yirmi** ders saatinden az olamaz.\n- Yenileme eğitimi **altmış** ders saatinden az olamaz.\n- Yükseköğretim kurumlarının güvenlikle ilgili fakülte, meslek yüksek okulu ya da bölümlerinden mezun olanlarda, **silah eğitimi dışında** temel eğitim şartı aranmaz.\n- Şu kişilerde temel eğitim şartı ve md 10/b'deki öğrenim şartı aranmaz: genel kolluk ve Milli İstihbarat Teşkilatından emekli olanlar ile bu görevlerde en az **beş yıl** çalıştıktan sonra kendi isteğiyle ayrılanlar.\n- Eğitimi, ücreti karşılığında İçişleri Bakanlığı ya da Bakanlıktan faaliyet izni alan özel eğitim kurumları verir.\n- Yenileme eğitimi, yeterli bina, araç, gereç ve personel varsa **valiliğin izniyle** hizmetin sağlandığı yerde verilebilir.\n- Eğitim kurumlarının kurucu ve yöneticilerinde md 5'in üçüncü fıkrasındaki şartlar aranır.\n\n**Tazminat (md 15)**\n- Görevini yaparken yaralanan veya engelli hâle gelen görevliye ya da ölen görevlinin kanunî mirasçılarına tazminat ödenir. Miktar ve esaslar iş sözleşmesine veya toplu iş sözleşmesine göre belirlenir.\n- Mahkeme genel hükümlere göre daha yüksek tazminata hükmederse, sözleşmeye dayanılarak ödenen tutarlar mahsup edilir.\n- Bu tazminat, İş Kanunu kapsamındaki diğer tazminatlarla ilişkilendirilmez.\n- Kamu kurum ve kuruluşlarında çalışan görevliler için şu miktarlardan **hangisi yüksekse** o ödenir: iş sözleşmesi, toplu iş sözleşmesi veya Nakdi Tazminat ve Aylık Bağlanması Hakkında Kanun.\n\n**Yasaklar (md 16 ve md 18)**\n- Özel güvenlik personeli, Kanunda belirtilen koruma ve güvenlik hizmetleri dışında başka bir işte çalıştırılamaz.\n- Görevliler **lokavt** dolayısıyla işten uzaklaştırılamaz.\n\n**Grev yasağı (md 17):** Özel güvenlik personeli **greve katılamaz**.",
+      "articleRefs": [
+        "14",
+        "15",
+        "16",
+        "18",
+        "17"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Sivil kıyafet iznini valilik değil, komisyon verir",
+      "body": "Sivil kıyafetle görev yapılmasına **valilik değil, komisyon** izin verir. Bu izin, görevin ve işyerinin özelliği nedeniyle gerekli görülen hallerde verilebilir (md 13).\n\nValiliğin izni ise başka bir konuda aranır: yeterli bina, araç, gereç ve personel bulunması şartıyla **yenileme eğitimi**, valiliğin izniyle güvenlik hizmetinin sağlandığı yerde verilebilir (md 14).\n\nKısacası “valiliğin izni” ifadesi yenileme eğitiminde doğru, sivil kıyafette yanlıştır.",
+      "articleRefs": [
+        "13",
+        "14"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Adlî suçlar",
+      "body": "- **Özel güvenlik izni almadan görevli istihdam etmek (md 3):** Kişiler veya kuruluşların yöneticileri, üç aydan bir yıla kadar hapis **veya** adlî para cezası ile cezalandırılır.\n- **İzinsiz faaliyet:** Aşağıdakiler üç aydan bir yıla kadar hapis **ve** beşbin güne kadar adlî para cezası ile cezalandırılır:\n  - md 5 faaliyet izni olmadan faaliyette bulunan şirketin kurucu ve yöneticileri,\n  - md 3 izni olmadan birim kuran kurum ve kuruluşların yöneticileri,\n  - md 14 izni olmadan eğitim veren kurum ve kuruluşların yöneticileri.\n  Bu şekilde cezalandırılanlar, şirketlerde ve eğitim kurumlarında kurucu ve yönetici olamaz.\n- **Çalışma izni verilmeyeni görevli olarak istihdam etmek (md 11):** Yetkililere üç aydan bir yıla kadar hapis verilir.\n  - Kişi silâhlı çalıştırılmışsa ceza **bir kat artırılır**.\n  - Suç bir tüzel kişinin faaliyeti çerçevesinde işlenirse ayrıca güvenlik tedbirlerine hükmolunur.\n- **Malî sorumluluk sigortası yaptırmadan istihdam (md 21):** İstihdam edilen her kişi için yüzelli gün adlî para cezası.\n- **İzinsiz ilan ve reklam:** Faaliyet izni olmadan hizmet veya eğitim verdiğini ilân eden ya da reklam yapanlara altı aya kadar hapis ve elli günden az olmamak üzere adlî para cezası.",
+      "articleRefs": [
+        "19"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "İdari para cezası ve diğer idari yaptırımlar",
+      "body": "Bu maddedeki cezaları **mahalli mülki amir** verir.\n\n**İdari para cezası gerektiren fiiller:**\n- Kimlik kartını başkasına kullandırmak (yönetici ve görevli). Ayrıca kart valilikçe iptal edilir ve bu kişiler bir daha özel güvenlik alanında çalışamaz.\n- Hizmeti md 5'teki süre içinde valiliğe bildirmemek (şirket; her bildirim için).\n- Md 6 uyarınca istenen ilave tedbirleri almamak (yöneticiler).\n- Denetimde geçerli mazeret olmadan güvenlik sorumlusunu veya yöneticiyi bulundurmamak; denetim kapsamındaki bilgi, belge ve kayıtları vermemek.\n- Denetimde istenen eksiklikleri gidermemek (yöneticiler).\n- Görevliyi başka işte çalıştırmak, üniforma giydirmemek veya izin verilen dışında teçhizat giydirerek çalıştırmak (her tespit için).\n- Md 11 ve md 12'deki bildirimleri süresinde yapmamak.\n\n**Cezaların ağırlık sırası:**\n- En ağır: ilave tedbirleri almamak ve denetim eksikliklerini gidermemek.\n- Ortada: denetimde sorumluyu bulundurmamak veya belge vermemek.\n- En hafif: kimlik kullandırma, bildirim ve çalıştırma ihlalleri.\n\n**Bir yıl süreyle özel güvenlik alanında görev alamama:**\n- Mülki idare amirinin veya yetkili genel kolluk amirinin emirlerini yerine getirmeyen yönetici ve görevliler.\n- Göreviyle bağlantılı olarak öğrendiği suçu yetkili genel kolluğa bildirmeyen yönetici ve görevliler.\n- Emrin yerine getirilmemesine sebep olan, bağlı oldukları kişi, kurum, kuruluş veya şirket yetkilileri.\n\n**Altı ay süreyle görev alamama:** Grev yasağına uymayan görevliler.\n\n**Kimlik kartının iptali ve bir daha çalışamama:**\n- Yetkili genel kolluğa karşı, **görevini yapmasını engellemek amacıyla** direnen, cebir kullanan ya da tehdit eden yönetici ve görevli.\n- Ateşli silahını Kanuna aykırı veya görev alanı dışında kullanan görevli.\n- Görevi dışında üniformasıyla toplantı ve gösteri yürüyüşüne katılan görevli.",
+      "articleRefs": [
+        "20"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Adlî mi, idari mi? Bir yıl mı, altı ay mı?",
+      "body": "**Adlî suçların dördü izin eksikliğine dayanır:**\n- izinsiz istihdam,\n- izinsiz faaliyet,\n- çalışma izni olmayanı istihdam,\n- faaliyet izni olmadan **ilan ve reklam**.\n\nBeşincisi **sigortasız istihdamdır**: özel güvenlik malî sorumluluk sigortası yaptırmadan görevli istihdam etmek.\n\nŞu fiiller ise md 20'deki **idari** yaptırımlardır: kimlik kartını başkasına kullandırmak, denetimde belge vermemek, izin verilen dışında teçhizat giydirmek ve ilave tedbirleri almamak.\n\n**Suçu bildirmeyen görevli:** Md 20, göreviyle bağlantılı olarak öğrendiği suçu yetkili genel kolluğa bildirmeyen görevliye idari para cezası öngörmez. Yaptırım, **bir yıl süreyle özel güvenlik alanında görev alamamaktır**.\n\nKarıştırılan diğer süreler:\n- Altı ay görev alamama: grev yasağına uymayanlar.\n- Bir daha çalışamama: kimlik kullandırma, kolluğa direnme ve silahı aykırı kullanma gibi haller.",
+      "articleRefs": [
+        "19",
+        "20"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Sigorta, denetim, ceza uygulaması ve son hükümler",
+      "body": "**Malî sorumluluk sigortası (md 21)**\n- Özel hukuk tüzel kişileri ve özel güvenlik şirketleri, görevlilerinin üçüncü kişilere verecekleri zararlar için özel güvenlik malî sorumluluk sigortası yaptırmak zorundadır.\n- Bu sigortayı Türkiye'de ilgili branşta çalışmaya yetkili sigorta şirketleri yapar ve yapmakla yükümlüdür.\n- Bu yükümlülüğe uymayan sigorta şirketine Hazine Müsteşarlığınca idari para cezası verilir. Bu ceza, md 20'deki idari para cezalarının hepsinden ağırdır.\n\n**Not:** Hazine Müsteşarlığı, metnindeki hâliyle verilmiştir.\n\n**Denetim (md 22)**\n- Özel güvenlik birimlerini, şirketleri ve eğitim kurumlarını **İçişleri Bakanlığı ve valilikler** denetler. Komisyon ya da il emniyet müdürlüğü bu maddede denetim mercii değildir.\n- Denetimin usul ve esasları yönetmelikle belirlenir.\n- Tespit edilen eksikliklerin verilen süre içinde giderilmesi zorunludur.\n- Şirketin faaliyet izni şu hallerde iptal edilir: amacı dışında faaliyet göstermesi, suç kaynağına dönüşmesi ya da terör örgütlerine aidiyetinin, irtibatının veya iltisakının tespit edilmesi. Bu şirketlerin kurucu, temsilci ve yöneticileri özel güvenlik alanında faaliyette bulunamaz.\n\n**Ceza uygulaması (md 23)**\n- Görevliler, görevleriyle bağlantılı suçlardan **kamu görevlisi gibi** cezalandırılır.\n- Görevliye karşı görevi dolayısıyla suç işleyen, **kamu görevlisine karşı suç işlemiş gibi** cezalandırılır.\n\n**Son hükümler (md 24–28)**\n- Şirketlere ve eğitim kurumlarına faaliyet izni, görevlilere çalışma izni verilmesi için ruhsat harcı alınır ve mal sandığına yatırılır.\n- Harç miktarları her yıl Vergi Usul Kanununa göre belirlenen yeniden değerleme oranıyla artırılır.\n- Uygulama yönetmeliğini İçişleri Bakanlığı, Kanunun yayımından itibaren **üç ay** içinde çıkarır.\n- Bazı Kurum ve Kuruluşların Korunması ve Güvenliklerinin Sağlanması Hakkında Kanun yürürlükten kaldırılmıştır.\n- Md 19 ve md 20, Kanunda ayrıca gösterilen tarihte yürürlüğe girmiştir. Diğer maddeler yayımı tarihinde yürürlüğe girmiştir.\n\n**Not:** “Mal sandığı” ifadesi metnindeki hâliyle verilmiştir.",
+      "articleRefs": [
+        "20",
+        "21",
+        "22",
+        "23",
+        "24",
+        "25",
+        "26",
+        "27",
+        "28"
+      ]
+    },
+    {
+      "type": "numbers",
+      "title": "Süreler ve sayılar: görevli, eğitim ve cezalar",
+      "rows": [
+        {
+          "label": "Asgari yaş",
+          "value": "18 yaşını doldurmuş olmak",
+          "refs": [
+            "10"
+          ]
+        },
+        {
+          "label": "Silahsız görevlinin öğrenimi",
+          "value": "En az 8 yıllık ilköğretim veya ortaokul",
+          "refs": [
+            "10"
+          ]
+        },
+        {
+          "label": "Silahlı görevlinin öğrenimi",
+          "value": "En az lise veya dengi",
+          "refs": [
+            "10"
+          ]
+        },
+        {
+          "label": "Engel olan kasıtlı suç mahkûmiyeti",
+          "value": "1 yıl veya daha fazla hapis",
+          "refs": [
+            "10"
+          ]
+        },
+        {
+          "label": "Güvenlik soruşturması ve arşiv araştırması",
+          "value": "1 ay içinde tamamlanır",
+          "refs": [
+            "11"
+          ]
+        },
+        {
+          "label": "Göreve başlayan görevlinin valiliğe bildirimi",
+          "value": "15 gün içinde",
+          "refs": [
+            "11"
+          ]
+        },
+        {
+          "label": "Görevden ayrılan görevlinin valiliğe bildirimi",
+          "value": "15 gün içinde",
+          "refs": [
+            "12"
+          ]
+        },
+        {
+          "label": "Temel eğitim",
+          "value": "En az 120 ders saati",
+          "refs": [
+            "14"
+          ]
+        },
+        {
+          "label": "Yenileme eğitimi",
+          "value": "En az 60 ders saati",
+          "refs": [
+            "14"
+          ]
+        },
+        {
+          "label": "Kolluk veya MİT'ten isteğiyle ayrılanlarda eğitim muafiyeti için hizmet",
+          "value": "En az 5 yıl",
+          "refs": [
+            "14"
+          ]
+        },
+        {
+          "label": "İzinsiz istihdam, izinsiz faaliyet, çalışma izni olmayanı istihdam",
+          "value": "3 aydan 1 yıla kadar hapis",
+          "refs": [
+            "19"
+          ]
+        },
+        {
+          "label": "İzinsiz faaliyette adlî para cezası",
+          "value": "5000 güne kadar",
+          "refs": [
+            "19"
+          ]
+        },
+        {
+          "label": "Sigortasız istihdam",
+          "value": "Her kişi için 150 gün adlî para cezası",
+          "refs": [
+            "19"
+          ]
+        },
+        {
+          "label": "Çalışma izni olmayanı silâhlı çalıştırma",
+          "value": "Ceza 1 kat artırılır",
+          "refs": [
+            "19"
+          ]
+        },
+        {
+          "label": "İzinsiz ilan ve reklam",
+          "value": "6 aya kadar hapis ve en az 50 gün adlî para cezası",
+          "refs": [
+            "19"
+          ]
+        },
+        {
+          "label": "Emre uymama veya suçu genel kolluğa bildirmeme",
+          "value": "1 yıl görev alamama",
+          "refs": [
+            "20"
+          ]
+        },
+        {
+          "label": "Grev yasağına uymama",
+          "value": "6 ay görev alamama",
+          "refs": [
+            "20"
+          ]
+        },
+        {
+          "label": "Uygulama yönetmeliğinin çıkarılması",
+          "value": "Yayımdan itibaren 3 ay içinde",
+          "refs": [
+            "26"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "10",
+        "11",
+        "12",
+        "14",
+        "19",
+        "20",
+        "26"
+      ]
+    },
+    {
+      "type": "exam_stats",
+      "title": "Sınav der ki",
+      "rows": [
+        {
+          "label": "Bu ünitenin maddelerinden yayındaki soru",
+          "value": "11",
+          "refs": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22",
+            "23",
+            "24",
+            "25",
+            "26",
+            "27",
+            "28"
+          ]
+        },
+        {
+          "label": "md 3 — Özel güvenlik izni",
+          "value": "1 soru",
+          "refs": [
+            "3"
+          ]
+        },
+        {
+          "label": "md 4 — Özel güvenlik komisyonu",
+          "value": "1 soru",
+          "refs": [
+            "4"
+          ]
+        },
+        {
+          "label": "md 5 — Faaliyet izni",
+          "value": "1 soru",
+          "refs": [
+            "5"
+          ]
+        },
+        {
+          "label": "md 7 — Özel güvenlik görevlilerinin yetkileri",
+          "value": "1 soru",
+          "refs": [
+            "7"
+          ]
+        },
+        {
+          "label": "md 8 — Silah bulundurma ve taşıma yetkisi",
+          "value": "1 soru",
+          "refs": [
+            "8"
+          ]
+        },
+        {
+          "label": "Hiç soru çıkmamış",
+          "value": "md 1, md 2, md 6, md 11, md 12, md 14, md 15, md 16, md 17, md 18, md 21, md 23, md 24, md 25, md 26, md 27, md 28",
+          "refs": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22",
+            "23",
+            "24",
+            "25",
+            "26",
+            "27",
+            "28"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17",
+        "18",
+        "19",
+        "20",
+        "21",
+        "22",
+        "23",
+        "24",
+        "25",
+        "26",
+        "27",
+        "28"
+      ],
+      "generated": true
+    },
+    {
+      "type": "bridge",
+      "title": "Bu üniteden soru çöz",
+      "articleRefs": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17",
+        "18",
+        "19",
+        "20",
+        "21",
+        "22",
+        "23",
+        "24",
+        "25",
+        "26",
+        "27",
+        "28"
+      ],
+      "generated": true,
+      "rows": [
+        {
+          "label": "Madde kapsamlı seans",
+          "value": "md 1–28, 10 soru",
+          "refs": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22",
+            "23",
+            "24",
+            "25",
+            "26",
+            "27",
+            "28"
+          ]
+        }
+      ]
+    }
+  ]
+}

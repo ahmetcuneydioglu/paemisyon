@@ -1,0 +1,548 @@
+{
+  "unit": {
+    "slug": "ytk-genel-hukumler",
+    "legislationSlug": "2860-sayili-yardim-toplama-kanunu",
+    "topicId": "11f0f172-a435-4a78-97bc-9815f65f7e1c",
+    "title": "Yardım toplama: izin, usul ve denetim",
+    "subtitle": "Kim, hangi izinle, hangi şekilde yardım toplar; süreler, denetim ve yaptırımlar",
+    "articleFrom": "1",
+    "articleTo": "32",
+    "readingMinutes": 9,
+    "sourceLabel": "AI özeti — 2860 Sayılı Yardım Toplama Kanunu, md 1–20, 24–32",
+    "articleNos": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+      "15",
+      "16",
+      "17",
+      "18",
+      "19",
+      "20",
+      "24",
+      "25",
+      "26",
+      "27",
+      "28",
+      "29",
+      "30",
+      "31",
+      "32"
+    ],
+    "generatedBy": "claude-opus-5-5 (ozet-uret.ts)",
+    "sortOrder": 1
+  },
+  "blocks": [
+    {
+      "type": "concept",
+      "title": "Bu Kanun neyi düzenler?",
+      "body": "Bu Kanun üç soruya cevap verir: Kim yardım toplayabilir? Hangi amaçla toplayabilir? Toplanan yardım nasıl toplanır, kullanılır ve denetlenir? Bu çerçeveyi aklında tutarsan ünitenin geri kalanı kolayca yerine oturur. Bir de her şeyin altında yatan temel ilke var: **yardım isteğe bağlıdır**. Kişi ve kuruluşlar yardımda bulunmaya zorlanamaz.",
+      "articleRefs": [
+        "1",
+        "4"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Kim toplar, ne kapsam dışıdır?",
+      "body": "**Yardım toplayabilenler:** gerçek kişiler, dernekler, kurumlar, vakıflar, spor kulüpleri, gazete ve dergiler.\n\n**Amaç:** Kamu yararına uygun olarak amaçlarını gerçekleştirmek, muhtaç kişilere yardım sağlamak, kamu hizmetlerinden bir veya birkaçını gerçekleştirmek ya da bu hizmetlere destek olmak.\n\n**Kapsam dışı olanlar:**\n- Türk Silahlı Kuvvetlerinin kendi bünyesi içindeki yardım toplama faaliyetleri,\n- Dernekler, sendikalar ve bunların üst kuruluşları, spor kulüpleri, mesleki kuruluşlar ve bağış kabulüne yetkili vakıflara kendi statülerine göre üyeleri ve diğer kişilerce yapılan bağış ve yardımlar,\n- Bu kuruluşların öz kaynaklarından sağladıkları gelirler.\n\nMevzuat hükümlerine göre bazı derneklere, vakıflara, meslek kuruluşlarına ve kamu kuruluşlarına tanınmış hak ve ayrıcalıklar **saklıdır**. Kanun, Cem'i İanat Nizamnamesi'ni yürürlükten kaldırmıştır.",
+      "articleRefs": [
+        "2",
+        "3",
+        "31",
+        "32"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Yardım toplama şekilleri",
+      "body": "Yardım şu yollarla toplanabilir:\n- makbuzla,\n- belirli yerlere kutu koyarak,\n- bankalarda hesap açtırarak,\n- yardım pulu çıkararak,\n- eşya piyangosu düzenleyerek,\n- kültürel gösteriler ve sergiler yoluyla,\n- spor gösterileri, gezi ve eğlenceler düzenleyerek,\n- bilgileri otomatik ya da elektronik olarak işleme tâbi tutmuş sistemler kullanarak.\n\nBir faaliyette bu şekillerden **bir veya birkaçı** kullanılabilir. Makbuz ve biletlerin biçimi, bastırılması, kullanılması ve dağıtılmasına ilişkin esaslar **yönetmelikte** belirtilir.",
+      "articleRefs": [
+        "5"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Makbuzda amaç: herkese mi, yalnız gerçek kişiye mi?",
+      "body": "Dikkat et, burada iki ayrı kural var. Yardımın **hangi amaç için toplandığının** makbuz ve biletlerde belirtilmesi **herkes için** zorunludur. Yalnızca gerçek kişilere özgü olan kural ise başkadır: gerçek kişiler, bu iş için hazırlanacak **özel** makbuz veya biletleri kullanır. Bu iki kuralı birbirine karıştırma. Şekil sayısına da takılma: tek bir faaliyette birden fazla yardım toplama şekli birlikte kullanılabilir.",
+      "articleRefs": [
+        "5"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "İzin zorunluluğu ve istisnası",
+      "body": "**Kural:** Kişiler ve kuruluşlar, yetkili makamdan izin almadan yardım toplayamaz.\n\n**İstisna:** Kamu yararına çalışan dernek, kurum ve vakıflardan hangilerinin izin almadan yardım toplayabileceğini **Cumhurbaşkanı** belirler ve ilan eder.\n\n**İzinsiz faaliyetin sonucu:** Faaliyet güvenlik kuvvetlerince **derhal menedilir** ve sorumlular hakkında **kovuşturma** yapılır.",
+      "articleRefs": [
+        "6"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "İnternette izinsiz yardım toplama",
+      "body": "1. İzinsiz yardım toplamanın internet ortamında yapıldığı tespit edilirse **ilgili valilik veya İçişleri Bakanlığı**, içeriğin çıkarılması için içerik ve/veya yer sağlayıcıya bildirimde bulunur. Bildirim elektronik posta veya diğer iletişim araçlarıyla yapılır. Bunun için internet sayfalarındaki iletişim araçları, alan adı, IP adresi ve benzeri kaynaklardan elde edilen bilgiler kullanılır.\n2. İçerik **en geç 24 saat** içinde çıkarılmazsa ya da sağlayıcıya ilişkin bilgiler edinilemezse veya teknik nedenlerle bildirim yapılamazsa, valilik veya İçişleri Bakanlığı erişimin engellenmesi için **sulh ceza hâkimliğine** başvurur.\n3. Sulh ceza hâkimliğinin vereceği erişimin engellenmesi kararına karşı Ceza Muhakemesi Kanunu hükümlerine göre itiraz edilebilir.\n4. Erişimin engellenmesi kararı, **içeriğe erişimin engellenmesi (URL vb.)** yöntemiyle verilir.",
+      "articleRefs": [
+        "6"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "İzni kim verir?",
+      "body": "- Faaliyet **bir ilçenin sınırları içindeyse** izin o ilçenin **kaymakamından** alınır.\n- Faaliyet **bir ilin birden fazla ilçesini** kapsıyorsa izin o ilin **valisinden** alınır.\n- Faaliyet **birden fazla ili** kapsıyorsa izin, faaliyete girişecek gerçek veya tüzel kişilerin **yerleşim yerinin bulunduğu ilin valisinden** alınır. İzni veren valilik, ilgili valiliklere ve İçişleri Bakanlığına bilgi verir.\n\nYardım toplama faaliyetleriyle ilgili işlemler **dernekler birimlerince** yürütülür.",
+      "articleRefs": [
+        "7"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Birden fazla il varsa izni Bakanlık mı verir?",
+      "body": "Hayır. Faaliyet birden fazla ili kapsasa bile izni **İçişleri Bakanlığı vermez**. İzin, yardım toplayacak kişilerin **yerleşim yerinin bulunduğu ilin valisinden** alınır. Bakanlık ve öteki valilikler yalnızca **bilgilendirilir**. Bir ayrıntı daha: ilin birden fazla ilçesini kapsayan faaliyette yetki kaymakamda değil, **validedir**.",
+      "articleRefs": [
+        "7"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Başvuru ve inceleme",
+      "body": "**Başvuru:** İstek, **dilekçeyle** izin vermeye yetkili makama bildirilir.\n- Gazete ve dergilerde dilekçeyi **sorumlu yazı işleri müdürü** verir.\n- Yardım öğrenim kurumları yararına ya da kurum içinde toplanacaksa, dilekçeye **kurum sorumlusunun yazılı izni** eklenmesi zorunludur.\n- Dilekçede bulunacak hususlar ve eklenecek belgeler yönetmelikte gösterilir.\n\n**İnceleme:** Yetkili makam şu konuları inceler:\n- işin önemi,\n- faaliyete girişeceklerin yeterlikleri,\n- yapılacak hizmetin amaca ve kamu yararına uygunluğu,\n- faaliyetin başarıya ulaşıp ulaşamayacağı,\n- gerekli görülen diğer konular.\n\nSonuç başvuranlara **en geç 2 ay** içinde bildirilir.",
+      "articleRefs": [
+        "8",
+        "9"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Süre ve sorumlu kurul",
+      "body": "**Süre:** Yardım toplama süresini **izin veren makam** takdir eder. Bu süre **1 yılı geçemez**. Haklı sebepler varsa süre, izin veren makamca uzatılabilir.\n\n**Sorumlu kurul:**\n- Gerçek kişiler, **en az 3 kişiden** oluşan bir sorumlu kurul oluşturmak zorundadır.\n- Tüzel kişilerde sorumlu kurul, **yönetim organlarıdır**.\n- Sorumlu kurulda görev alanlar ve bu kuruldaki değişiklikler, izin veren makama **10 gün** içinde bildirilir.",
+      "articleRefs": [
+        "10",
+        "11"
+      ]
+    },
+    {
+      "type": "numbers",
+      "title": "Başvuru, süre ve sorumlu kurul sayıları",
+      "rows": [
+        {
+          "label": "İnternetteki izinsiz içeriğin sağlayıcıca çıkarılması",
+          "value": "en geç 24 saat",
+          "refs": [
+            "6"
+          ]
+        },
+        {
+          "label": "Başvuru sonucunun bildirilmesi",
+          "value": "en geç 2 ay",
+          "refs": [
+            "9"
+          ]
+        },
+        {
+          "label": "Yardım toplama süresi (üst sınır)",
+          "value": "1 yıl",
+          "refs": [
+            "10"
+          ]
+        },
+        {
+          "label": "Gerçek kişilerde sorumlu kurul",
+          "value": "en az 3 kişi",
+          "refs": [
+            "11"
+          ]
+        },
+        {
+          "label": "Sorumlu kurul üyeleri ve değişikliklerin bildirimi",
+          "value": "10 gün",
+          "refs": [
+            "11"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "6",
+        "9",
+        "10",
+        "11"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Gazete ve dergilerde yardım",
+      "body": "- Başvuru dilekçesini **sorumlu yazı işleri müdürü** verir.\n- Toplanan para yardımları, bankada açılacak **özel bir hesaba** yatırılır.\n- Yardıma katılanların adları ve yardım tutarı, yardımda bulunan aksini istemedikçe gazete ve dergide **yayımlanır**.\n- Faaliyet sonunda toplanan yardımın miktarı gazete ve dergi aracılığıyla açıklanır.",
+      "articleRefs": [
+        "8",
+        "12"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Kamu görevlileri yardım toplamada",
+      "body": "- Kamu görevlileri, **vali veya kaymakamdan izin** almadıkça yardım toplama faaliyetlerinde çalışamaz.\n- İzinle çalışan kamu görevlilerine, her ne ad altında olursa olsun **ücret verilemez**.\n- **İstisna:** Türk Hava Kurumu; kurban derisi, bağırsak toplamak, fitre ve zekat zarfı dağıtmak suretiyle yardım toplamada görevlendirdiği kamu personeline ücret verebilir.\n- **Hiç çalışamayanlar:** Silahlı Kuvvetler, adli ve idari yargıda görevli hâkim ve savcılar, güvenlik kuvvetleri mensupları ve özel kolluk görevlileri.",
+      "articleRefs": [
+        "13"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "İzinle mi çalışır, hiç mi çalışamaz?",
+      "body": "Burada iki ayrı grup var, bunları ayırt et. **Genel kamu görevlisi**, vali veya kaymakamdan izin alarak yardım toplama faaliyetinde çalışabilir. Silahlı Kuvvetler, hâkim ve savcılar, güvenlik kuvvetleri mensupları ve özel kolluk görevlileri için ise izin yolu bile yoktur; bu kişiler **çalışamaz**. Ücrette de dikkatli ol: izinli kamu görevlisine ücret verilemez. Tek istisna, **Türk Hava Kurumunun** belirli faaliyetlerde görevlendirdiği kamu personelidir. Bu personele **Kurum** ücret verebilir.",
+      "articleRefs": [
+        "13"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Sorumluluk, dosya ve gözetim",
+      "body": "**Sorumluluk:** Faaliyete girişenler şunlardan sorumludur:\n- faaliyetin düzenli ve verimli yürütülmesi,\n- faaliyetin süresi içinde sonuçlandırılması,\n- toplanan para ve eşyanın korunması,\n- toplanan para ve eşyanın amaca uygun kullanılması.\n\n**Dosya ve kimlik:** İzin veren makam, her faaliyet için bir dosya tutar. Görev alacaklara, faaliyetin konu ve süresini belirten **fotoğraflı kimlik belgesi** verilir. Bu belge faaliyetin sonunda geri alınır ve dosyada saklanır.\n\n**Denetim:** Net gelirin amaç doğrultusunda kullanılıp kullanılmadığı, **izin veren makamın** gözetim ve denetimine tabidir. Makam, memurlar arasından veya dışarıdan yeterli sayıda denetçi görevlendirir ve bunu ilgililere bildirir. Eski eser ve anıtların onarılması için toplanan yardımlarda **Vakıflar Genel Müdürlüğü veya Kültür ve Turizm Bakanlığı** ayrıca denetleme yapabilir.",
+      "articleRefs": [
+        "14",
+        "15",
+        "16"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Kesinhesap ve denetleme raporu",
+      "body": "**Kesinhesap:** Sorumlu kurullar, yardım toplama süresinin bitiminden itibaren **10 gün** içinde kesinhesabı çıkarır ve bir örneğini izin veren makama verir. Zorunlu hâllerde bu süre, izin veren makamca **30 güne kadar** uzatılabilir. Makam, kesinhesabın bir örneğini denetçilere gönderir.\n\n**Rapor:** Denetçiler, faaliyetin belgelerini ve kesinhesabı inceler. Sonucu, belirlenen süre içinde rapor hâlinde görevlendiren makama verir. Raporda şunlar bulunmalıdır:\n- brüt gelir,\n- faaliyet için yapılan gider,\n- faaliyet sonunda sağlanan net gelir,\n- bu gelirin amacı gerçekleştirmede yeterli olup olamayacağı,\n- izin veren makamca incelenmesi istenen hususlara ilişkin açıklamalar.\n\nDenetçiler, girmesinde yarar gördükleri hususları da rapora yazar.\n\n**Ücret:** Denetçi ücretinin miktarını İçişleri ve Maliye Bakanlıkları birlikte tespit eder. Ücret, İçişleri Bakanlığı bütçesine konulacak ödenekten karşılanır.\n\n**Not:** Bakanlık adı metnindeki hâliyle verilmiştir.",
+      "articleRefs": [
+        "17",
+        "18",
+        "19",
+        "20"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Gider sınırları",
+      "body": "**Brüt gelirin yüzde onu:** makbuz, belirli yerlere kutu koyma, otomatik ya da elektronik sistemler, bankada hesap açtırma ve yardım pulu yoluyla toplamada.\n\n**Brüt gelirin yüzde kırkı:** eşya piyangosu, kültürel gösteriler, sergiler, spor gösterileri, gezi ve eğlenceler yoluyla toplamada.\n\nGiderler bu oranları geçemez. Oranlar aşılırsa aradaki fark, haklı nedenler olmadıkça **sorumlu kurul üyelerine ödettirilir**.",
+      "articleRefs": [
+        "24"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Hangi şekil hangi orana tabi?",
+      "body": "Bu konuda kısa bir ipucu işini görür. Etkinlik düzenleyerek yapılan toplamalar (eşya piyangosu, kültürel gösteri, sergi, spor gösterisi, gezi, eğlence) **yüzde kırk** sınırına tabidir. Geri kalanlar (makbuz, kutu, banka hesabı, yardım pulu, elektronik sistemler) **yüzde on** sınırına tabidir. Oranın **brüt gelire** göre hesaplandığını unutma; net gelir esas alınmaz. Sınır aşılırsa farkı, haklı neden yoksa **sorumlu kurul üyeleri** öder.",
+      "articleRefs": [
+        "24"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Artan yardım, basımevleri, yabancı temsilcilikler",
+      "body": "**Yetmeyen ya da artan yardım:** Yardım, amacı gerçekleştirecek miktara ulaşmazsa veya amaç gerçekleştikten sonra artarsa, izin veren makam bu yardımı o veya benzeri amacı gerçekleştirebilecek kuruluş ya da kuruluşlara **devrettirir**.\n\n**Basımevleri:** İzinli faaliyet için makbuz, bilet ve yardım pullarının seri ve numaralarını bastıktan sonra durumu **7 gün** içinde izin veren makama bildirir ve basılanların birer örneğini gönderir.\n\n**Yabancı temsilcilikler:** Türkiye'de yabancı temsilciliklerin yardım toplaması **Dışişleri Bakanlığının** iznine bağlıdır. Bu faaliyetlerde Kanun hükümleri uygulanmaz.",
+      "articleRefs": [
+        "25",
+        "26",
+        "27"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Zimmet ve idari yaptırımlar",
+      "body": "**Zimmet:** Yardım toplama faaliyetinden elde edilen mal ve paraları zimmetine geçiren kişi, **kamu görevlisi olup olmadığına bakılmaksızın**, Türk Ceza Kanununun zimmet suçuna ilişkin hükümlerine göre cezalandırılır.\n\n**İdari para cezaları:**\n- **İzinsiz yardım toplama:** alt ve üst sınırı kanunda gösterilen idari para cezası.\n- **İnternet ortamında izinsiz yardım toplama:** ayrıca düzenlenmiş, daha ağır bir cezadır; alt ve üst sınırları izinsiz yardım toplama cezasınınkinden yüksektir.\n- **İzinsiz yardım toplanmasına yer ve imkân sağlama:** uyarıya rağmen faaliyet sonlandırılmazsa idari para cezası.\n- **İzin verilen şekil dışında başka şekillerle ya da izin verilen yer dışında yardım toplama:** uyarıya rağmen faaliyet sonlandırılmazsa, alt ve üst sınırı kanunda gösterilen idari para cezası.\n- **Kanunun diğer hükümlerine aykırılık:** fiil suç oluşturmuyorsa idari para cezası.\n\n**Karar mercii:** Kural olarak **yardım toplama iznini veren makam** karar verir. İzinsiz yardım toplamada ise **vali** karar verir. Vali bu yetkisini vali yardımcılarına veya kaymakamlara devredebilir.",
+      "articleRefs": [
+        "28",
+        "29"
+      ]
+    },
+    {
+      "type": "numbers",
+      "title": "Kesinhesap, gider sınırı ve diğer süreler",
+      "rows": [
+        {
+          "label": "Kesinhesabın çıkarılıp izin veren makama verilmesi",
+          "value": "süre bitiminden itibaren 10 gün",
+          "refs": [
+            "17"
+          ]
+        },
+        {
+          "label": "Kesinhesap süresinin zorunlu hâlde uzatılması",
+          "value": "30 güne kadar",
+          "refs": [
+            "17"
+          ]
+        },
+        {
+          "label": "Gider sınırı: makbuz, kutu, elektronik sistem, banka hesabı, yardım pulu",
+          "value": "brüt gelirin yüzde onu",
+          "refs": [
+            "24"
+          ]
+        },
+        {
+          "label": "Gider sınırı: eşya piyangosu, gösteri, sergi, spor, gezi, eğlence",
+          "value": "brüt gelirin yüzde kırkı",
+          "refs": [
+            "24"
+          ]
+        },
+        {
+          "label": "Basımevinin izin veren makama bildirimi",
+          "value": "7 gün",
+          "refs": [
+            "26"
+          ]
+        },
+        {
+          "label": "Uygulama yönetmeliğinin hazırlanıp yayımlanması (Kanunun yayımından itibaren)",
+          "value": "6 ay",
+          "refs": [
+            "30"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "17",
+        "24",
+        "26",
+        "30"
+      ]
+    },
+    {
+      "type": "compare",
+      "title": "İzinsiz toplama ile izin kapsamı dışına çıkma",
+      "rows": [
+        {
+          "aspect": "Kapsam",
+          "left": "İzinsiz yardım toplama",
+          "right": "İzinli faaliyette izin verilen şekil veya yer dışına çıkma",
+          "refs": [
+            "29"
+          ]
+        },
+        {
+          "aspect": "Uyarı şartı",
+          "left": "Yok; faaliyet güvenlik kuvvetlerince derhal menedilir",
+          "right": "Var; uyarıya rağmen sonlandırılmazsa ceza verilir",
+          "refs": [
+            "6",
+            "29"
+          ]
+        },
+        {
+          "aspect": "Ek sonuç",
+          "left": "Sorumlular hakkında kovuşturma yapılır",
+          "right": "—",
+          "refs": [
+            "6"
+          ]
+        },
+        {
+          "aspect": "İdari para cezası",
+          "left": "Alt ve üst sınırlı; internet ortamında sınırlar daha yüksek",
+          "right": "Alt ve üst sınırlı",
+          "refs": [
+            "29"
+          ]
+        },
+        {
+          "aspect": "Karar mercii",
+          "left": "Vali (yetkisini vali yardımcılarına veya kaymakamlara devredebilir)",
+          "right": "Yardım toplama iznini veren makam",
+          "refs": [
+            "29"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "6",
+        "29"
+      ]
+    },
+    {
+      "type": "exam_stats",
+      "title": "Sınav der ki",
+      "rows": [
+        {
+          "label": "Bu ünitenin maddelerinden yayındaki soru",
+          "value": "0",
+          "refs": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "24",
+            "25",
+            "26",
+            "27",
+            "28",
+            "29",
+            "30",
+            "31",
+            "32"
+          ]
+        },
+        {
+          "label": "Hiç soru çıkmamış",
+          "value": "md 1, md 2, md 3, md 4, md 5, md 6, md 7, md 8, md 9, md 10, md 11, md 12, md 13, md 14, md 15, md 16, md 17, md 18, md 19, md 20, md 24, md 25, md 26, md 27, md 28, md 29, md 30, md 31, md 32",
+          "refs": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "24",
+            "25",
+            "26",
+            "27",
+            "28",
+            "29",
+            "30",
+            "31",
+            "32"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17",
+        "18",
+        "19",
+        "20",
+        "24",
+        "25",
+        "26",
+        "27",
+        "28",
+        "29",
+        "30",
+        "31",
+        "32"
+      ],
+      "generated": true
+    },
+    {
+      "type": "bridge",
+      "title": "Bu üniteden soru çöz",
+      "articleRefs": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17",
+        "18",
+        "19",
+        "20",
+        "24",
+        "25",
+        "26",
+        "27",
+        "28",
+        "29",
+        "30",
+        "31",
+        "32"
+      ],
+      "generated": true,
+      "rows": [
+        {
+          "label": "Madde kapsamlı seans",
+          "value": "md 1–20, 24–32, 0 soru",
+          "refs": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "24",
+            "25",
+            "26",
+            "27",
+            "28",
+            "29",
+            "30",
+            "31",
+            "32"
+          ]
+        }
+      ]
+    }
+  ]
+}

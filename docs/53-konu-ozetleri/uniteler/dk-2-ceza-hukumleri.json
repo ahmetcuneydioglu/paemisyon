@@ -1,0 +1,534 @@
+{
+  "unit": {
+    "slug": "dk-2-ceza-hukumleri",
+    "legislationSlug": "5253-sayili-dernekler-kanunu",
+    "topicId": "92736577-adb7-4e81-8935-9eb3391f748e",
+    "title": "Ceza hükümleri ve diğer hükümler",
+    "subtitle": "İdari para cezası, adlî para cezası, hapis; uygulama yetkisi, atıflar, yönetmelik ve elektronik kayıt",
+    "articleFrom": "32",
+    "articleTo": "Ek 2",
+    "readingMinutes": 13,
+    "sourceLabel": "AI özeti — 5253 Sayılı Dernekler Kanunu, md 32–38, Ek 1, Ek 2",
+    "articleNos": [
+      "32",
+      "33",
+      "34",
+      "35",
+      "36",
+      "37",
+      "38",
+      "Ek 1",
+      "Ek 2"
+    ],
+    "generatedBy": "claude-opus-5-5 (ozet-uret.ts)",
+    "sortOrder": 2
+  },
+  "blocks": [
+    {
+      "type": "concept",
+      "title": "Ceza hükümlerine nasıl bakmalısın?",
+      "body": "Md 32, Kanuna aykırı davranışlara uygulanacak cezaları bent bent sayar. Karşına çıkacak yaptırımlar idari para cezası, adlî para cezası ve hapis cezasıdır. Bazı bentlerde bunlara genel kurulun iptali, tesisin ya da şubenin kapatılması, derneğin feshi veya sanığın görevden geçici olarak uzaklaştırılması eklenir. Bir anahtarı baştan cebine koy: md 33'e göre md 32'de geçen “dernek yöneticileri” ibaresi dernek yönetim kurulu başkanını ifade eder. Yani bir bent “dernek yöneticilerine” diyorsa, ceza kural olarak başkana verilir.",
+      "articleRefs": [
+        "32",
+        "33"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Üyelik ve genel kurul aykırılıkları",
+      "body": "**Md 32/a — Üyelik:** Şu kişilere **idari para cezası** verilir:\n- Dernek kurma hakkına sahip olmadığı hâlde dernek kuranlar.\n- Derneğe üye olması kanunlarla yasaklandığı hâlde üye olanlar.\n- Bu kişileri bilerek üyeliğe kabul eden veya kaydını silmeyen dernek yöneticileri.\n- Üye olma hakkını kaybeden kişiyi üyelikten silmeyen dernek yöneticileri.\n\n**Md 32/b — Genel kurul:** Şu durumlarda dernek yöneticilerine **idari para cezası** verilir:\n- Genel kurulu süresinde toplantıya çağırmamak.\n- Toplantıyı kanun ve tüzük hükümlerine aykırı yapmak.\n- Toplantıyı dernek merkezinin bulunduğu veya tüzükte belirtilen yer dışında yapmak.\n\n**Ayrıca:** Mahkemece, kanun ve tüzüğe aykırı yapılan genel kurul toplantılarının **iptaline de karar verilebilir**.",
+      "articleRefs": [
+        "32"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Para hareketleri: yurt dışı yardım ve banka zorunluluğu",
+      "body": "**Md 32/c — Yurt dışı yardım:** Yurt dışı yardımı bankalar aracılığıyla almayan dernek yöneticilerine, bu şekilde alınan paranın **yüzde yirmi beşi** oranında idari para cezası verilir.\n\n**Md 32/u — Banka, finans kuruluşu veya Posta ve Telgraf Teşkilatı Anonim Şirketi:** Kanunda gösterilen parasal sınırı aşan her türlü gelir, tahsilat, gider ve ödemeyi bu kuruluşlar aracılığıyla yapmayan dernek yöneticilerine ceza verilir.\n- Ceza **her bir işlem için** ayrı hesaplanır.\n- Tutarı, işleme konu tutarın **%10'una kadar** idari para cezasıdır.\n\n**Parasal sınırın güncellenmesi:**\n- Sınır her takvim yılı başından geçerli olmak üzere artırılır.\n- Artış, Hazine ve Maliye Bakanlığınca tespit ve ilan edilen yeniden değerleme oranında yapılır.\n- Hesapta bir Türk lirasının küsuru dikkate alınmaz.",
+      "articleRefs": [
+        "32"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Defter ve kayıt yükümlülükleri",
+      "body": "**Md 32/d:**\n- Tutulması gereken defter veya kayıtları **tutmayan** ya da **tasdiksiz** defter tutan dernek yöneticileri **üç aydan bir yıla kadar hapis veya adlî para cezası** ile cezalandırılır.\n- Defter ve kayıtlar **usulüne uygun tutulmazsa** dernek yöneticilerine ve defterleri tutmakla sorumlu kişilere **idari para cezası** verilir.\n\n**Md 32/k — Zayi belgesi:** Defter ve belgeler, gerekli dikkat ve özen gösterilmiş olmasına rağmen elde olmayan bir nedenle okunamaz hâle gelebilir ya da kaybolabilir. Bu durumda:\n- Öğrenme tarihinden itibaren **on beş gün** içinde dernek merkezinin bulunduğu yerin yetkili mahkemesine zayi belgesi için başvurulmalıdır.\n- Başvurmayan veya belgeyi denetim sırasında ibraz edemeyen kişi **üç aydan bir yıla kadar hapis veya adlî para cezası** ile cezalandırılır.\n- 9 ve 19. maddelerin üçüncü fıkralarındaki zorunluluğa uymayanlara da aynı ceza uygulanır.",
+      "articleRefs": [
+        "32"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Tutmamak, usulsüz tutmak, tahrif etmek: üç ayrı ceza",
+      "body": "Bu üç fiili birbirine karıştırma, her birinin cezası farklı:\n- Defteri hiç **tutmamak** ya da **tasdiksiz** tutmak: üç aydan bir yıla kadar hapis **veya** adlî para cezası (md 32/d).\n- Defteri tutup **usulüne uygun tutmamak**: yalnızca idari para cezası (md 32/d).\n- Defter veya kayıtları **tahrif etmek, yok etmek ya da gizlemek**: altı aydan iki yıla kadar hapis **ve** adlî para cezası (md 32/e). Bu bent, fiil daha ağır bir cezayı gerektirmiyorsa uygulanır.\n\nBağlaca da dikkat et. “Veya” iki cezadan birinin seçildiğini, “ve” iki cezanın birlikte verildiğini gösterir.",
+      "articleRefs": [
+        "32"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "type": "rule",
+      "title": "Seçime hile ve derneğin malına el uzatma",
+      "body": "**Md 32/e:** Şu fiilleri işleyenler, fiil daha ağır bir cezayı gerektirmediği takdirde **altı aydan iki yıla kadar hapis ve adlî para cezası** ile cezalandırılır:\n- Genel kurul ve diğer dernek organlarındaki seçim ve oylamalara ya da oyların sayım ve dökümüne hile karıştırmak.\n- Defter veya kayıtları tahrif etmek, yok etmek veya gizlemek.\n\n**Md 32/f:** Kendisine tevdi olunan derneğe ait para, para hükmündeki evrak, senet veya sair malları kendi ya da başkasının menfaatine şu şekillerde kullanmak suçtur:\n- Sarf, istihlâk, rehin veya satış.\n- Gizleme, imha, inkâr, tahrif veya tağyir.\n\n**Kimler sorumlu:** Yönetim kurulu başkanı ve üyeleri, denetçiler ve derneğin diğer personeli.\n\n**Ceza:** Türk Ceza Kanununun **güveni kötüye kullanma** suçuna ilişkin hükümleri uygulanır.\n\n**Ayrıca:** Mahkeme, yargılama sırasında sanıkların organlardaki görevlerinden **geçici olarak uzaklaştırılmasına** karar verebilir.",
+      "articleRefs": [
+        "32"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Gelir toplama, yabancı kuruluşlar ve basımevleri",
+      "body": "**Md 32/d son cümle — Yetki belgesi:** Adına yetki belgesi düzenlenmediği hâlde gelir toplayanlara ve bilerek buna izin veren **yönetim kurulu üyelerine** idari para cezası verilir.\n\n**Md 32/g — İzinsiz şube veya temsilcilik:** Yetkili mercilerin izni olmadan yabancı derneklerin ve merkezi yurt dışında bulunan kâr amacı gütmeyen kuruluşların Türkiye'deki şube veya temsilciliklerini açanlara, faaliyetlerini yürütenlere, bunlarla iş birliği yapanlara ya da bunları üye kabul edenlere idari para cezası verilir.\n- İzinsiz açılan şube veya temsilciliğin **kapatılmasına karar verilir**.\n\n**Md 32/h:** 16. maddedeki bildirim yükümlülüğünü yerine getirmeyen **basımevi yöneticilerine** idari para cezası verilir.\n\n**Md 32/ı:** 17. maddedeki zorunluluğa uymayanlara idari para cezası verilir.",
+      "articleRefs": [
+        "32"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Ceza her zaman başkana mı?",
+      "body": "Md 33'e göre md 32'deki “dernek yöneticileri” ibaresi yönetim kurulu başkanı demektir. Ama her bent bu ibareyi kullanmaz; muhatabı başka olan bentler de vardır:\n- Dernek kurma hakkı olmadığı hâlde **dernek kuranlar** ve üyeliği kanunla yasak olduğu hâlde **üye olanlar** (32/a). Yasaklı kişiyi üyeliğe kabul eden ya da kaydını silmeyen ise dernek yöneticileridir.\n- Usulsüz tutulan defterler: başkanla birlikte **defterleri tutmakla sorumlu kişiler** (32/d).\n- Yetki belgesi olmadan gelir toplama: **gelir toplayanlar** ve bilerek izin veren **yönetim kurulu üyeleri** (32/d).\n- Seçim ve oylamalara **hile karıştıranlar**; defter veya kayıtları **tahrif eden, yok eden ya da gizleyenler** (32/e).\n- Derneğin malında güveni kötüye kullanma: **başkan ve üyeler, denetçiler ve diğer personel** (32/f).\n- İzinsiz yabancı şube veya temsilcilik: **açanlar, faaliyetlerini yürütenler, iş birliği yapanlar ve bunları üye kabul edenler** (32/g).\n- 16. maddedeki bildirim yükümlülüğü: **basımevi yöneticileri** (32/h).\n- Beyannameyi bilerek gerçeğe aykırı **verenler** (32/j).\n- 24. maddedeki bildirim: dernek yöneticileriyle birlikte **temsilciler** (32/l).\n- 30. maddenin (b) bendinde kurulması yasak dernekleri **kuranlar** (32/p).\n- 3. maddenin üçüncü fıkrasına aykırı olarak **dernek organlarında görev alanlar** (ek fıkra).",
+      "articleRefs": [
+        "32",
+        "33"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "type": "numbers",
+      "title": "Defter, kayıt ve para hareketleri: cezalar",
+      "rows": [
+        {
+          "label": "Defter/kayıt tutmama veya tasdiksiz defter (32/d)",
+          "value": "3 ay – 1 yıl hapis veya adlî para cezası",
+          "refs": [
+            "32"
+          ]
+        },
+        {
+          "label": "Defter/kayıtları usulüne uygun tutmama (32/d)",
+          "value": "İdari para cezası",
+          "refs": [
+            "32"
+          ]
+        },
+        {
+          "label": "Seçim/oylamaya hile; defter tahrifi, yok etme, gizleme (32/e)",
+          "value": "6 ay – 2 yıl hapis ve adlî para cezası",
+          "refs": [
+            "32"
+          ]
+        },
+        {
+          "label": "Zayi belgesi için mahkemeye başvuru süresi (32/k)",
+          "value": "Öğrenme tarihinden itibaren 15 gün",
+          "refs": [
+            "32"
+          ]
+        },
+        {
+          "label": "Zayi başvurusu yapmama veya belgeyi denetimde ibraz edememe (32/k)",
+          "value": "3 ay – 1 yıl hapis veya adlî para cezası",
+          "refs": [
+            "32"
+          ]
+        },
+        {
+          "label": "9 ve 19. maddelerin üçüncü fıkralarına uymama (32/k)",
+          "value": "3 ay – 1 yıl hapis veya adlî para cezası",
+          "refs": [
+            "32"
+          ]
+        },
+        {
+          "label": "Yurt dışı yardımı banka dışından alma (32/c)",
+          "value": "Alınan paranın %25'i oranında idari para cezası",
+          "refs": [
+            "32"
+          ]
+        },
+        {
+          "label": "Parasal sınırı aşan işlemi aracı kuruluş dışında yapma (32/u)",
+          "value": "Her işlem için tutarın %10'una kadar idari para cezası",
+          "refs": [
+            "32"
+          ]
+        },
+        {
+          "label": "Derneğin malında güveni kötüye kullanma (32/f)",
+          "value": "TCK güveni kötüye kullanma hükümleri; görevden geçici uzaklaştırma kararı verilebilir",
+          "refs": [
+            "32"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "32"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Beyanname ve bildirim yükümlülükleri",
+      "body": "**Md 32/j:** 19. maddedeki beyannameyi **bilerek gerçeğe aykırı** verenler, **yüz günden az olmamak üzere adlî para cezası** ile cezalandırılır.\n\n**Md 32/l:** Şu kişilere **idari para cezası** verilir:\n- 22 ve 24. maddelerdeki bildirim yükümlülüğünü yerine getirmeyen dernek yöneticileri.\n- 19. maddedeki beyanname verme yükümlülüğünü yerine getirmeyen dernek yöneticileri.\n- 24. maddede belirtilen temsilciler.\n\n**Md 32/s:** 23. maddedeki bildirim yükümlülüğünü yerine getirmeyen dernek yöneticilerine **idari para cezası** verilir.",
+      "articleRefs": [
+        "32"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Beyannameyi vermemek ile yanlış vermek aynı değil",
+      "body": "Bu ikisi en kolay karıştırılan bentlerdir:\n- 19. maddedeki beyannameyi **hiç vermemek**: idari para cezası (32/l).\n- Beyannameyi **bilerek gerçeğe aykırı vermek**: yüz günden az olmamak üzere adlî para cezası (32/j).\n\nKısacası, “bilerek gerçeğe aykırı” ifadesini görünce idari yaptırımdan adlî cezaya geçtiğini hatırla. Beyannameyle karıştırılmaması gereken bir başka yükümlülük 19. maddenin üçüncü fıkrasıdır: denetimde görevli memurların istediği her türlü bilgi, belge ve kayıtları göstermek veya vermek, yönetim yerleri, müesseseler ve eklentilerine girme isteğini yerine getirmek. Buna uymamak üç aydan bir yıla kadar hapis veya adlî para cezası gerektirir (32/k).",
+      "articleRefs": [
+        "32",
+        "19"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "type": "rule",
+      "title": "Alt ve üst sınırlı idari para cezaları",
+      "body": "**Md 32/k ikinci cümle:** 21. maddenin birinci ve ikinci fıkralarındaki yükümlülüklere aykırı hareket edenlere **alt ve üst sınırı kanunda gösterilen idari para cezası** verilir.\n\n**Md 32/t:** 19. maddenin dördüncü fıkrasına aykırı hareket edenlere **alt ve üst sınırı kanunda gösterilen idari para cezası** öngörülür.\n\n**İstisna (yalnız 32/t):** Bu aykırılık bir kamu kurum ve kuruluşu bünyesinde gerçekleşmişse süreç şöyle işler:\n- Md 33'ün üçüncü fıkrasıyla yetkilendirilen makam bildirimde bulunur.\n- Bu bildirim üzerine görev yapanlar hakkında **disiplin hükümlerine göre** işlem yapılır. Kişinin çalıştırılma biçimine bakılmaz.\n- İşlemin sonucu yetkili makama bildirilir.\n\n**Not:** 32/t bendi Kanun metnindeki hâliyle verilmiştir; atıf yaptığı 19. maddenin dördüncü fıkrası Anayasa Mahkemesince iptal edildiğinden bu bendin uygulama alanı kalmamıştır.",
+      "articleRefs": [
+        "32",
+        "33",
+        "19"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Tesis, adlandırma ve yasak faaliyetler",
+      "body": "**Md 32/m:** 26. maddedeki tesisleri izinsiz açan dernek yöneticilerine idari para cezası verilir. Tesisin **kapatılmasına da karar verilebilir**.\n\n**Md 32/n:** Şu dernek yöneticileri, fiil daha ağır bir cezayı gerektirmiyorsa **yüz günden az olmamak üzere adlî para cezası** ile cezalandırılır ve derneğin **feshine de karar verilir**:\n- 28. maddedeki kelimeleri izinsiz kullananlar.\n- Yazılı uyarıya rağmen 29. maddedeki yasaklara aykırı hareket edenler.\n\n**Md 32/o:**\n- 30. maddenin (a) bendindeki yasağa aykırılık: **elli günden az olmamak üzere adlî para cezası**.\n- (c) bendine aykırı faaliyet: fiil daha ağır bir cezayı gerektirmiyorsa **bir yıldan üç yıla kadar hapis**. Ayrıca tesisin **kapatılmasına karar verilir**.\n\n**Md 32/p:** 30. maddenin (b) bendindeki kurulması yasak dernekleri kuranlar ve bu bende aykırı hareket eden dernek yöneticileri cezalandırılır. Fiil daha ağır bir cezayı gerektirmiyorsa ceza **bir yıldan üç yıla kadar hapis ve elli günden az olmamak üzere adlî para cezasıdır**. Derneğin **feshine de karar verilir**.\n\n**Md 32/r:** 31. maddedeki zorunluluğa uymayanlara idari para cezası verilir.",
+      "articleRefs": [
+        "32"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "“Karar verilir” mi, “verilebilir” mi?",
+      "body": "Ek yaptırımlarda fiilin kipi soruyu belirler. Hangisi zorunlu, hangisi takdirli, iyi ayır:\n\n**Zorunlu (“verilir”):**\n- İzinsiz şube veya temsilciliğin kapatılması (32/g).\n- 28. ve 29. madde aykırılığında fesih (32/n).\n- 30. maddenin (c) bendinde tesisin kapatılması (32/o).\n- 30. maddenin (b) bendinde fesih (32/p).\n\n**Takdirli (“verilebilir”):**\n- Aykırı genel kurulun mahkemece iptali (32/b).\n- Sanıkların görevden geçici olarak uzaklaştırılması (32/f).\n- 26. maddedeki tesisin kapatılması (32/m).\n\nEn çok karışan çift şu: izinsiz **tesiste** kapatma takdirlidir, izinsiz **şube veya temsilcilikte** zorunludur.",
+      "articleRefs": [
+        "32"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "type": "rule",
+      "title": "Organlarda görev alma yasağına aykırılık",
+      "body": "**Md 32 ek fıkra:** Kanunun 3. maddesinin üçüncü fıkrasına aykırı olarak dernek organlarında görev alanlara idari para cezası verilir. Bu kişilerin görevlerini yazılı uyarıya rağmen **yedi gün** içinde sonlandırmayan dernek yöneticilerine de idari para cezası verilir.\n\n**İkinci aşama:** Mülki idare amirince **ikinci yazılı uyarı** yapılır. Buna rağmen bu kişilerin görevleri **otuz gün** içinde sonlandırılmazsa Türk Medenî Kanununun 89. maddesine göre işlem tesis edilir.",
+      "articleRefs": [
+        "32"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Cezaların uygulanması",
+      "body": "**Çocuk dernekleri:** Bu Kanundaki cezalar çocuk dernekleri hakkında hemen uygulanmaz. Ceza, **yazılı olarak uyarılmasına rağmen tekrar edilmesi** hâlinde uygulanır.\n\n**“Dernek yöneticileri”:** Md 32'de geçen bu ibare **dernek yönetim kurulu başkanını** ifade eder.\n\n**Yetkili merci:** Bu Kanunda yazılı **idari yaptırımlara** karar vermeye **mahalli mülki amir** yetkilidir.",
+      "articleRefs": [
+        "33"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Eski kanunlara yapılan atıflar",
+      "body": "**Atıfların yönü:** Diğer kanunlarda şu kanunlara yapılan atıflar **bu Kanuna** ya da bu Kanunun aynı konuları düzenleyen maddelerine yapılmış sayılır:\n- 3512 sayılı Cemiyetler Kanunu.\n- 1630 sayılı Dernekler Kanunu.\n- 2908 sayılı Dernekler Kanunu.\n\nBu kanunların ek ve değişikliklerine ya da belli maddelerine yapılan atıflar da aynı kurala tabidir.\n\n**Boşluk hâli:** Bu Kanunda hüküm bulunmayan hâllerde, aynı konuları düzenleyen **4721 sayılı Türk Medeni Kanununun** ilgili hükümlerine atıf yapılmış sayılır.",
+      "articleRefs": [
+        "34"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Yönetmelikler",
+      "body": "**Kural:** Kanunun ilgili maddelerinde öngörülen yönetmelikleri **İçişleri Bakanlığı** çıkarır.\n\n**Kulüp adını alan dernekler:** Bunlarla ilgili yönetmeliği **Gençlik ve Spor Genel Müdürlüğünün bağlı olduğu Bakanlık** çıkarır.\n\n**Süre:** Yönetmelikler **en geç altı ay** içinde Resmî Gazetede yayımlanarak yürürlüğe konulur.\n\n**Geçiş:** Yeni yönetmelikler çıkarılıncaya kadar mevcut yönetmeliklerin bu Kanuna aykırı olmayan hükümleri uygulanmaya devam eder.\n\n**Not:** “Gençlik ve Spor Genel Müdürlüğünün bağlı olduğu Bakanlık” ifadesi metnindeki hâliyle verilmiştir.",
+      "articleRefs": [
+        "37"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Değiştirilen ve yürürlükten kaldırılan hükümler",
+      "body": "**Md 38/H:** 2908 sayılı Dernekler Kanunu **yürürlükten kaldırılmıştır**.\n\n**Md 38/B:** 4721 sayılı Kanunun 58, 64, 77, 92 ve 93. maddelerinden belirli ibareler çıkarılmıştır.\n\n**Md 38/C:** 4721 sayılı Kanunun 61. maddesi ile 79. maddesinin üçüncü fıkrası yürürlükten kaldırılmıştır.\n\n**Md 38/A, D, E, F-G:** Şu düzenlemelerle ilgili değişiklikler ilgili metinlerin yerine işlenmiştir:\n- 4721 sayılı Kanun.\n- 3152 sayılı İçişleri Bakanlığı Teşkilât ve Görevleri Hakkında Kanun.\n- 227 sayılı Vakıflar Genel Müdürlüğünün Teşkilat ve Görevleri Hakkında Kanun Hükmünde Kararname.\n- 2860 sayılı Yardım Toplama Kanunu.\n\n**Ek 1:** Kanun hükmünde kararname ile eklenmiş, Anayasa Mahkemesi kararıyla **iptal edilmiştir**.\n\n**Not:** Md 38/E ve Ek 1'deki kanun hükmünde kararname atıfları metnindeki hâliyle verilmiştir.",
+      "articleRefs": [
+        "38",
+        "Ek 1"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Kayıtların tutulması ve elektronik ortam",
+      "body": "**Kayıtları kim tutar:** Kayıtlar **İçişleri Bakanlığınca ve mülki idare amirliklerince** tutulur. Kapsamda şunlar vardır:\n- Bu Kanuna ve 4721 sayılı Kanuna göre kurulan dernekler.\n- 3335 sayılı Kanuna göre kurulan uluslararası nitelikteki teşekküller.\n- Bunlara ait müesseseler ve tabi oldukları kanunlara göre elde edilen bilgi ve belgeler.\n\nBu kayıtlar İçişleri Bakanlığınca oluşturulan **dernekler kütüğüne** kaydedilir.\n\n**Yurt dışı:** Türk vatandaşlarının yurt dışında kurduğu dernek ve diğer kâr amacı gütmeyen kuruluşların kayıtları, ilgili makamlar aracılığıyla **İçişleri Bakanlığı** tarafından tutulur.\n\n**Elektronik ortam:**\n- Bu Kanun ve Türk Medeni Kanununa göre derneklerle ilgili her türlü kayıt, iş ve işlem elektronik ortamda **da yapılabilir**.\n- Bu maddedeki kuruluşlarca İçişleri Bakanlığınca belirlenen iş ve işlemler de elektronik ortamda yapılabilir.\n\n**Usul ve esaslar:** İçişleri Bakanlığınca çıkarılan yönetmelikle belirlenir.",
+      "articleRefs": [
+        "Ek 2"
+      ]
+    },
+    {
+      "type": "numbers",
+      "title": "Bent bent yaptırımlar ve süreler",
+      "rows": [
+        {
+          "label": "Üyelik aykırılıkları (32/a)",
+          "value": "İdari para cezası",
+          "refs": [
+            "32"
+          ]
+        },
+        {
+          "label": "Genel kurul aykırılıkları (32/b)",
+          "value": "İdari para cezası; mahkemece iptal kararı verilebilir",
+          "refs": [
+            "32"
+          ]
+        },
+        {
+          "label": "Yetki belgesi olmadan gelir toplama (32/d)",
+          "value": "İdari para cezası",
+          "refs": [
+            "32"
+          ]
+        },
+        {
+          "label": "İzinsiz yabancı şube/temsilcilik (32/g)",
+          "value": "İdari para cezası; kapatma kararı verilir",
+          "refs": [
+            "32"
+          ]
+        },
+        {
+          "label": "Basımevi bildirimi (32/h)",
+          "value": "İdari para cezası",
+          "refs": [
+            "32"
+          ]
+        },
+        {
+          "label": "17. madde zorunluluğu (32/ı)",
+          "value": "İdari para cezası",
+          "refs": [
+            "32"
+          ]
+        },
+        {
+          "label": "Beyannameyi bilerek gerçeğe aykırı verme (32/j)",
+          "value": "En az 100 gün adlî para cezası",
+          "refs": [
+            "32"
+          ]
+        },
+        {
+          "label": "Bildirim/beyanname vermeme (32/l, 32/s)",
+          "value": "İdari para cezası",
+          "refs": [
+            "32"
+          ]
+        },
+        {
+          "label": "21. maddenin birinci ve ikinci fıkraları (32/k)",
+          "value": "Alt ve üst sınırı kanunda gösterilen idari para cezası",
+          "refs": [
+            "32"
+          ]
+        },
+        {
+          "label": "19. maddenin dördüncü fıkrası (32/t)",
+          "value": "Alt ve üst sınırı kanunda gösterilen idari para cezası öngörülür; md 19'un dördüncü fıkrası iptal edildiğinden uygulama alanı kalmamıştır",
+          "refs": [
+            "32",
+            "19"
+          ]
+        },
+        {
+          "label": "26. maddedeki tesisi izinsiz açma (32/m)",
+          "value": "İdari para cezası; kapatma kararı verilebilir",
+          "refs": [
+            "32"
+          ]
+        },
+        {
+          "label": "28/29. madde aykırılığı (32/n)",
+          "value": "En az 100 gün adlî para cezası; fesih",
+          "refs": [
+            "32"
+          ]
+        },
+        {
+          "label": "30. maddenin (a) bendi (32/o)",
+          "value": "En az 50 gün adlî para cezası",
+          "refs": [
+            "32"
+          ]
+        },
+        {
+          "label": "30. maddenin (c) bendi (32/o)",
+          "value": "1 – 3 yıl hapis; tesis kapatılır",
+          "refs": [
+            "32"
+          ]
+        },
+        {
+          "label": "30. maddenin (b) bendi (32/p)",
+          "value": "1 – 3 yıl hapis ve en az 50 gün adlî para cezası; fesih",
+          "refs": [
+            "32"
+          ]
+        },
+        {
+          "label": "31. madde zorunluluğu (32/r)",
+          "value": "İdari para cezası",
+          "refs": [
+            "32"
+          ]
+        },
+        {
+          "label": "3. maddenin üçüncü fıkrasına aykırı görevi sonlandırma süresi (ilk yazılı uyarı)",
+          "value": "7 gün",
+          "refs": [
+            "32"
+          ]
+        },
+        {
+          "label": "Mülki idare amirinin ikinci yazılı uyarısından sonra süre",
+          "value": "30 gün; sonra TMK 89. maddeye göre işlem",
+          "refs": [
+            "32"
+          ]
+        },
+        {
+          "label": "Yönetmeliklerin yayımlanma süresi",
+          "value": "En geç 6 ay",
+          "refs": [
+            "37"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "32",
+        "37",
+        "19"
+      ]
+    },
+    {
+      "type": "compare",
+      "title": "Md 35 ile md 36: Kanun kimlere uygulanır?",
+      "rows": [
+        {
+          "aspect": "Kapsam",
+          "left": "Md 35: Kamu kurumu niteliğindeki meslek kuruluşları; işçi ve işveren sendikaları ve üst kuruluşları",
+          "right": "Md 36: Dernek şubeleri; dernek ve vakıfların üst kuruluşları; merkezi yurt dışındaki dernek, vakıf ve kâr amacı gütmeyen kuruluşların Türkiye'deki şube veya temsilcilikleri ile Türkiye'de faaliyet ve iş birliği izinleri",
+          "refs": [
+            "35",
+            "36"
+          ]
+        },
+        {
+          "aspect": "Uygulanan hükümler",
+          "left": "Yalnızca 19, 20, 23, 26, 28, 29, 30 ve 31. maddeler",
+          "right": "Bu Kanunun hükümleri",
+          "refs": [
+            "35",
+            "36"
+          ]
+        },
+        {
+          "aspect": "Ceza hükümleri",
+          "left": "Ceza hükümleriyle birlikte uygulanır",
+          "right": "Ceza hükümleriyle birlikte uygulanır",
+          "refs": [
+            "35",
+            "36"
+          ]
+        },
+        {
+          "aspect": "Şart / boşluk",
+          "left": "Özel kanunlarında hüküm bulunmamak kaydıyla",
+          "right": "Bu Kanunda hüküm yoksa Türk Medenî Kanunu hükümleri uygulanır",
+          "refs": [
+            "35",
+            "36"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "35",
+        "36"
+      ]
+    },
+    {
+      "type": "exam_stats",
+      "title": "Sınav der ki",
+      "rows": [
+        {
+          "label": "Bu ünitenin maddelerinden yayındaki soru",
+          "value": "0",
+          "refs": [
+            "32",
+            "33",
+            "34",
+            "35",
+            "36",
+            "37",
+            "38",
+            "Ek 1",
+            "Ek 2"
+          ]
+        },
+        {
+          "label": "Hiç soru çıkmamış",
+          "value": "md 32, md 33, md 34, md 35, md 36, md 37, md 38, md Ek 1, md Ek 2",
+          "refs": [
+            "32",
+            "33",
+            "34",
+            "35",
+            "36",
+            "37",
+            "38",
+            "Ek 1",
+            "Ek 2"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "32",
+        "33",
+        "34",
+        "35",
+        "36",
+        "37",
+        "38",
+        "Ek 1",
+        "Ek 2"
+      ],
+      "generated": true
+    },
+    {
+      "type": "bridge",
+      "title": "Bu üniteden soru çöz",
+      "articleRefs": [
+        "32",
+        "33",
+        "34",
+        "35",
+        "36",
+        "37",
+        "38",
+        "Ek 1",
+        "Ek 2"
+      ],
+      "generated": true,
+      "rows": [
+        {
+          "label": "Madde kapsamlı seans",
+          "value": "md 32–38, Ek 1, Ek 2, 0 soru",
+          "refs": [
+            "32",
+            "33",
+            "34",
+            "35",
+            "36",
+            "37",
+            "38",
+            "Ek 1",
+            "Ek 2"
+          ]
+        }
+      ]
+    }
+  ]
+}

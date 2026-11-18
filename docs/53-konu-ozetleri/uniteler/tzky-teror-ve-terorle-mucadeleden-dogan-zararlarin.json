@@ -1,0 +1,687 @@
+{
+  "unit": {
+    "slug": "tzky-teror-ve-terorle-mucadeleden-dogan-zararlarin",
+    "legislationSlug": "teror-ve-terorle-mucadeleden-dogan-zararlarin-karsilanmasi-hakkinda-yonetmelik",
+    "topicId": "931c3a08-1e30-40ec-bca4-0eb9fb75aa44",
+    "title": "Zarar tespit komisyonu ve ödeme usulü",
+    "subtitle": "Zarar tespit komisyonu, başvuru, sulhname, nakdî ödeme ve aynî ifa",
+    "articleFrom": "1",
+    "articleTo": "29",
+    "readingMinutes": 12,
+    "sourceLabel": "AI özeti — Terör ve Terörle Mücadeleden Doğan Zararların Karşılanması Hakkında Yönetmelik, md 1–22, 22/A, 23–29",
+    "articleNos": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+      "15",
+      "16",
+      "17",
+      "18",
+      "19",
+      "20",
+      "21",
+      "22",
+      "22/A",
+      "23",
+      "24",
+      "25",
+      "26",
+      "27",
+      "28",
+      "29"
+    ],
+    "generatedBy": "claude-opus-5-5 (ozet-uret.ts)",
+    "sortOrder": 1
+  },
+  "blocks": [
+    {
+      "type": "concept",
+      "title": "Bu Yönetmelik kimin zararını, nasıl karşılar?",
+      "body": "Terör eylemleri ya da terörle mücadele kapsamında yürütülen faaliyetler yüzünden **maddi zarara** uğrayan **gerçek kişiler** ile **özel hukuk tüzel kişileri** bu Yönetmeliğin muhatabıdır. Yöntem dava değil, **sulh**: illerde kurulan Zarar Tespit Komisyonu zararı tespit eder, mahsupları düşer, safi miktarı belirler ve bunu bir sulhname tasarısıyla sana önerir. Kabul edersen zarar aynî ya da nakdî olarak karşılanır. Yönetmelikte Bakanlık İçişleri Bakanlığı, Vali ise komisyonun bulunduğu il valisidir.",
+      "articleRefs": [
+        "1",
+        "2",
+        "4"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Kapsam dışı kalan zararlar",
+      "body": "Şu zararlar Yönetmelik kapsamı **dışındadır**:\n- Devletçe arazi veya konut tahsisiyle ya da başka şekilde karşılanan zararlar\n- Mahkeme kararıyla veya 4353 sayılı Kanunun ilgili maddeleri gereğince karşılanan zararlar\n- Avrupa İnsan Hakları Mahkemesince hükmedilen ya da dostane çözümle uzlaşılan tazminatla karşılanan zararlar\n- **Terör dışındaki** ekonomik ve sosyal sebeplerle uğranılan zararlar; güvenlik kaygısı dışında **kendi isteğiyle** yerini terk edenlerin bu sebeple uğradığı zararlar\n- Kişinin **kendi kastı** sonucu oluşan zararlar\n- 3713 sayılı Kanun kapsamındaki suçlar ile terör olaylarında yardım ve yataklık suçlarından **mahkûm olanların** bu fiillerinden doğan zararları\n\n**Ayrıca:** Bu suçlardan ceza kovuşturması açılmış olanlar hakkında kovuşturma sonuçlanıncaya kadar işlem yapılmaz.",
+      "articleRefs": [
+        "2"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Mahkûmiyet mi, kovuşturma mı? Kast mı, kusur mu?",
+      "body": "Burada iki ayrımı karıştırma.\n\n**Mahkûm olanın bu fiillerinden doğan zararı** kapsam dışıdır. **Hakkında kovuşturma açılmış olan** ise kapsam dışı sayılmaz; yalnızca kovuşturma sonuçlanıncaya kadar işlem **bekletilir**.\n\n**Kendi kastıyla** oluşan zarar kapsam dışıdır. Zarar görenin **kusur veya ihmali** ise başvuruyu düşürmez; zarar belirlenirken göz önünde bulundurulur.",
+      "articleRefs": [
+        "2",
+        "16"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "type": "rule",
+      "title": "Komisyonun kuruluşu ve üyeleri",
+      "body": "- Komisyon illerde, başvuru üzerine **10 gün içinde vali onayıyla** kurulur.\n- **Başkan:** Valinin görevlendireceği bir **vali yardımcısı**. Yapı: **1 başkan + 6 üye**.\n- Üyeler: Vali tarafından o ilde görev yapan kamu görevlileri arasından seçilen maliye, bayındırlık ve iskan, tarım ve köyişleri, sağlık, sanayi ve ticaret konularında uzman birer kişi ile **baro yönetim kurulunca** seçilen bir **avukat**.\n- İlk kuruluşta baro, avukat üyenin ismini valiliğin talebi üzerine en geç **1 hafta** içinde bildirir.\n- Başkan ve üyeler **her yıl ocak ayının ilk haftasında** yeniden belirlenir; baro avukat üyenin ismini **her yıl aralık sonuna kadar** bildirir. Eski üyeler yeniden görevlendirilebilir.\n- Atanma, hastalık, kaza, engellilik gibi nedenlerle görev yapamayan üyenin görevine **vali onayıyla** son verilir; vali en geç **1 hafta** içinde yeni üye tespit eder. Avukat üyede bu hâl baroya bildirilir, baro **1 hafta** içinde yeni üye belirler.\n- İş yoğunluğunda aynı ilde vali onayıyla **birden fazla komisyon** kurulabilir; görev dağılımını vali yapar.\n\n**Not:** Uzmanlık konularının adları metindeki hâliyle verilmiştir.",
+      "articleRefs": [
+        "5",
+        "6"
+      ],
+      "derivedNumbers": [
+        {
+          "value": 7,
+          "expr": "1 + 6",
+          "refs": [
+            "6"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Komisyonun dört görevi",
+      "body": "1. Zarar görenin, mirasçılarının veya yetkili temsilcilerinin başvurusu üzerine Yönetmelik kapsamına giren bir **zararın bulunup bulunmadığını tespit etmek**.\n2. Mahsuplar düşülerek belirlenen nakdî veya aynî ödeme miktarını içeren **sulhname tasarılarını hazırlamak**.\n3. Sulhname tasarısı kabul edilmez veya kabul edilmemiş sayılırsa **uyuşmazlık tutanağı** düzenleyip bir örneğini ilgiliye tebliğ etmek.\n4. Kapsama giren bir zarar bulunmadığı tespit edilirse **karar tutanağı** düzenleyip bir örneğini ilgiliye tebliğ etmek.",
+      "articleRefs": [
+        "7"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Başvuru: nereye, ne zaman, nasıl?",
+      "body": "- **Kim:** Zarar gören, mirasçıları veya yetkili temsilcileri.\n- **Nereye:** Zararın gerçekleştiği veya olayın meydana geldiği **il valiliğine**. Başka valiliklere, kaymakamlıklara, dış temsilciliklere, bakanlıklara ve kamu kurumlarına yapılan başvurular ilgili valiliğe gönderilir.\n- **Süre:** Olayın öğrenilmesinden itibaren **60 gün** ve her hâlde olayın meydana gelmesinden itibaren **1 yıl**. Sonraki başvurular kabul edilmez.\n- Yaralanma ve engelli hâle gelmede yaralının **hastaneye kabulünden çıkışına kadar geçen süre** hesaba katılmaz.\n- Süreden red bir **tutanağa** bağlanır ve ilgiliye yazılı tebliğ edilir.\n- Mirasçı veya temsilci başvurusunda **veraset ilâmı** ve **noterden tasdikli vekâletname** eklenir. Elden başvuruda alındı belgesi verilir.\n- Dilekçede: ad, soyad, ikametgâh adresi, zararın nev'i, tutarı, gerçekleşme şekli, yeri ve tarihi.\n- Komisyon çalışmasını başvuru tarihinden (başka mercie yapılan başvuruda valiliğe ulaştığı tarihten) itibaren **6 ay** içinde tamamlar; zorunlu hâllerde **komisyon kararı ve vali onayı** ile **3 ay** uzatılabilir.\n- Dava açma süresi içinde yapılan başvuru, nihai işlem sonucunun tebliğine kadar dava açma sürelerini **durdurur**.\n- Başvurular **Başvuru Kayıt Defterine (EK-A)** işlenir.",
+      "articleRefs": [
+        "8"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Başvuru süresinde iki saat birlikte işler",
+      "body": "Öğrenmeden itibaren **60 gün** ile olaydan itibaren **1 yıl** birbirinin alternatifi değildir; ikisi birlikte işler, hangisi önce dolarsa başvuru kapısı kapanır. Bu sürelerin başlangıç noktalarını da birbirine karıştırma.\n\nKomisyonun **6 aylık** çalışma süresi ise senin başvuru sürene ait değildir; komisyonun kendi iş bitirme süresidir. Uzatmayı tek başına vali yapamaz, komisyon da yapamaz: uzatma için **komisyon kararı ve vali onayı** birlikte gerekir.\n\nSon olarak: Başvuru, dava açma sürelerini **keser** değil, **durdurur**.",
+      "articleRefs": [
+        "8"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "type": "numbers",
+      "title": "Kuruluş ve başvuru süreleri",
+      "rows": [
+        {
+          "label": "Komisyonun başvuru üzerine kurulması",
+          "value": "10 gün içinde, vali onayıyla",
+          "refs": [
+            "5"
+          ]
+        },
+        {
+          "label": "Baronun avukat üye ismini bildirmesi (ilk kuruluş / boşalma)",
+          "value": "en geç 1 hafta",
+          "refs": [
+            "6"
+          ]
+        },
+        {
+          "label": "Valinin boşalan üye yerine yeni üye tespiti",
+          "value": "en geç 1 hafta",
+          "refs": [
+            "6"
+          ]
+        },
+        {
+          "label": "Başkan ve üyelerin yeniden belirlenmesi",
+          "value": "her yıl ocak ayının ilk haftası",
+          "refs": [
+            "6"
+          ]
+        },
+        {
+          "label": "Başvuru süresi (öğrenmeden)",
+          "value": "60 gün",
+          "refs": [
+            "8"
+          ]
+        },
+        {
+          "label": "Başvuru süresi (olaydan, her hâlde)",
+          "value": "1 yıl",
+          "refs": [
+            "8"
+          ]
+        },
+        {
+          "label": "Komisyonun çalışmayı tamamlama süresi",
+          "value": "6 ay",
+          "refs": [
+            "8"
+          ]
+        },
+        {
+          "label": "Zorunlu hâlde uzatma",
+          "value": "3 ay (komisyon kararı + vali onayı)",
+          "refs": [
+            "8"
+          ]
+        },
+        {
+          "label": "Uzatmayla birlikte azami süre",
+          "value": "9 ay",
+          "refs": [
+            "8"
+          ]
+        },
+        {
+          "label": "Kanun öncesi döneme ilişkin başvuruların sonuçlandırılması",
+          "value": "başvurudan itibaren 2 yıl",
+          "refs": [
+            "8"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "5",
+        "6",
+        "8"
+      ],
+      "derivedNumbers": [
+        {
+          "value": 9,
+          "expr": "6 + 3",
+          "refs": [
+            "8"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Toplantı, ücret, giderler ve sekreterya",
+      "body": "- Toplantı yeri, günü ve sıklığı **komisyon başkanının önerisi üzerine vali** tarafından belirlenir; **gündemi başkan** tespit eder.\n- Başkan ve üyelere, **ayda 6'dan fazla olmamak üzere** her toplantı için **500 gösterge** rakamının memur aylık katsayısıyla çarpımı tutarında toplantı ücreti ödenir.\n- Memuriyet mahalli dışında keşfe katılan üyeler ile bilirkişilere 6245 sayılı Harcırah Kanununa göre harcırah ödenir. Avukat üyede **birinci dereceden** maaş alan Devlet memurunun harcırahı esas alınır.\n- Bilirkişi ücreti **komisyon kararıyla** ödenir: kamu görevlisine dosya başına **500**, diğer kişilere **1000** gösterge rakamının katsayıyla çarpımını geçmemek üzere. Birden fazla bilirkişi varsa ücret **paylaştırılır**.\n- Bu ödemelerden **damga vergisi hariç** kesinti yapılmaz.\n- Giderler: **Bakanlık ve/veya il özel idaresi** bütçesi. Cari harcamalar il özel idaresi bütçesinden de karşılanabilir.\n- Sekreterya: **il özel idaresi**; il özel idaresi bulunmayan illerde **valilik hukuk işleri şube müdürlüğü**.",
+      "articleRefs": [
+        "9",
+        "12",
+        "14"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Bilirkişi kim olabilir, kim toplantıya giremez?",
+      "body": "Komisyon kamu çalışanlarını bilirkişi olarak görevlendirebilir, ama **adli ve askeri teşkilat ile kolluk kuvvetleri** bunun dışındadır. Komisyonun **kendi üyeleri** de bilirkişi olarak görevlendirilemez.\n\nBaşkan ve üyeler; kendilerinin, ailelerinin, **üçüncü dereceye kadar (bu derece dahil)** kan ve kayın hısımlarının ve vekili, vasisi ya da kayyımı oldukları kişilerin zararlarıyla ilgili toplantılara **katılamaz**.\n\nKomisyonun görevlendirdiği kamu görevlileri, komisyonun verdiği görevleri **öncelikli** olarak yerine getirir.",
+      "articleRefs": [
+        "10"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "type": "rule",
+      "title": "Keşif",
+      "body": "- Komisyon **gerek görürse** keşif yapar; keşif zorunlu değildir.\n- Keşif yeri, gün ve saatini **komisyon başkanı** belirler; üyelere ve/veya bilirkişiye ve başvuru sahibine ya da temsilcisine **yazılı** bildirir.\n- Başvuru sahibi, veli/vasisi veya temsilcisi ve varsa şahitler hazır bulunur. **Muhtar veya o yer mahallinden 2 kişinin** de hazır bulunması sağlanır.\n- Tutanakta (EK-B) yer alanlar: keşif tarihi; zarar görenin adı soyadı; zararın yeri, tarihi, nev'i, miktarı; zarar gören maldan faydalanma imkânı; zarar görenin **ihmal, kusur ve kastı**; mahsup edilecek miktarlar. Hazır bulunanlar imzalar.\n- Başvuru sahibi veya temsilcisi gelmezse bu durum tutanağa yazılır.",
+      "articleRefs": [
+        "11"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Komisyon kararları",
+      "body": "- Komisyon **salt çoğunlukla toplanır**; kararlar **üye tam sayısının salt çoğunluğu** ile alınır.\n- **Çekimser kalınamaz.**\n- Karara katılmayan üye **gerekçesini yazarak** imzalar.\n- Kararlara sıra numarası verilir. Başvuru tarihi ve kayıt defteri sıra numarası, kararın tarih ve sayısı, zarar görenin adı soyadı, **kararın özeti**, sulhname bilgileri, ifa tarzı, ödenecek miktar ve ödeme tarihi, **komisyon başkanınca onaylanan** komisyon karar defterine (EK-C) işlenir.",
+      "articleRefs": [
+        "6",
+        "13"
+      ],
+      "derivedNumbers": [
+        {
+          "value": 7,
+          "expr": "1 + 6",
+          "refs": [
+            "6"
+          ]
+        },
+        {
+          "value": 4,
+          "expr": "floor(7 / 2) + 1",
+          "refs": [
+            "6",
+            "13"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Karşılanacak zararlar ve zararın belirlenmesi",
+      "body": "**Sulh yoluyla karşılanabilecek zararlar:**\n- (a) Hayvanlara, ağaçlara, ürünlere ve diğer taşınır ve taşınmazlara verilen her türlü zarar\n- (b) Yaralanma, engelli hâle gelme ve ölüm hâllerinde uğranılan zararlar ile tedavi ve cenaze giderleri\n- (c) Terörle mücadele faaliyetleri nedeniyle **mal varlığına ulaşamamaktan** doğan maddi zararlar\n\n**Belirleme:** Zarar görenin beyanı, adlî, idarî ve askerî mercilerdeki bilgi ve belgeler, olayın oluş şekli, zarar görenin aldığı tedbirler ve varsa kusur veya ihmali göz önünde tutularak, **hakkaniyete ve günün ekonomik koşullarına uygun** biçimde, komisyonca doğrudan ya da bilirkişi aracılığıyla belirlenir.\n\n**Taşınmaz zararı:** 2942 sayılı Kamulaştırma Kanununun kıymet takdiri esasları **kıyasen** uygulanır.\n\n**Belgeler:** Başvuru sahibi dilekçeyle birlikte olayın oluş tarzını açıklayan her türlü bilgi ve belgeyi sunar; komisyon gerekli görürse adli, idari ve askeri mercilerden belge ister.",
+      "articleRefs": [
+        "15",
+        "16",
+        "17"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Kanun öncesi döneme ait zararlar",
+      "body": "- **19/7/1987** ile Kanunun yürürlüğe girdiği **27/7/2004** arasında 3713 sayılı Kanun kapsamındaki eylemler veya terörle mücadele faaliyetleri nedeniyle zarar görenlere, **Kanunun yürürlüğe girdiği tarihten itibaren 1 yıl** içinde başvurmaları hâlinde Yönetmelik uygulanır. Bu başvurular **2 yıl** içinde sonuçlandırılır.\n- Aynı dönemde **görevleri başında** zarar gören kamu görevlileri veya mirasçıları, ilgili mevzuata göre farklı kriterle tazminat almışlarsa ve **Kanunun yayımından itibaren 1 yıl** içinde başvurmuşlarsa: Bu Yönetmeliğe göre almaları gerekenle aradaki **eksik tutar yasal faiziyle** ödenir. Ödenen tazminat fazlaysa **iade istenmez**.",
+      "articleRefs": [
+        "8",
+        "18"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Karşılama şekli: aynî ifaya öncelik",
+      "body": "- 15. maddenin **(a) ve (c)** bentlerindeki zararlar **aynî veya nakdî** karşılanır; imkânlar ölçüsünde **aynî ifaya öncelik** verilir. Aynî ifa bireysel veya genel nitelikli projelerle yapılabilir.\n- Yaralanma, engelli hâle gelme ve ölüm hâllerinde ise **nakdî ödeme** yapılır.\n- Konut, ahır ve benzeri yapılar, tarımsal, sınai ve zanaat araç gereçleri, canlı hayvan gibi mameleklerdeki zararlarda Çevre ve Şehircilik, Gıda, Tarım ve Hayvancılık, Gümrük ve Ticaret müdürlüklerinin hasar raporları ile mahkemelerce karara bağlanan hasar tespitleri esas alınarak öncelikle aynî ifa yoluna gidilir. Zarar aynî olarak sulhnamede ve komisyon kararında belirtilir.\n- Satın alma ve teslimde **ödeneğin aktarıldığı kurumun** esas ve usulleri uygulanır.\n- Toplu projelerde zarar proje bedelinden mahsup edilir; **kalan kısım 7269 sayılı Kanun** hükümleri çerçevesinde tahsil olunur.\n\n**Not:** Müdürlük adları metindeki hâliyle verilmiştir.",
+      "articleRefs": [
+        "19",
+        "20",
+        "21"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Yaralanma, engellilik ve ölümde nakdî ödeme",
+      "body": "Esas: **7000 gösterge** rakamının memur aylık katsayısıyla çarpımı.\n- **Yaralanma:** Bu miktarın **onda biri** × doktor veya sağlık kurulu raporuyla belirlenen iş ve güce engel olma süresi; **6 katını geçemez**.\n- **Çalışma gücü kaybı:** EK-D cetvelinde belirlenen katı tutarında.\n- **Ölüm:** Mirasçılara **50 katı** tutarında; mirasçılara intikalde Türk Medenî Kanununun miras hükümleri uygulanır.\n- Hesapta, ödemeye ilişkin **valinin veya Bakanın onayı tarihindeki** gösterge ve katsayı esas alınır.\n- Bakanlar Kurulu, göstergeyi **yüzde 30'a kadar artırmaya** veya kanunî sınıra kadar indirmeye yetkilidir.\n- Gerçek veya özel hukuk tüzel kişilerinin zarar görene yaptığı ödemeler sebebiyle **Devlete rücu edilemez**.\n\n**Not:** Bakanlar Kurulu metindeki hâliyle verilmiştir.",
+      "articleRefs": [
+        "21"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Sağlık raporları ve malullere aylık",
+      "body": "**Raporlar:**\n- Çalışma gücü kaybının tespitinde, atıf yapılan sağlık kurulu raporları yönetmeliği uygulanır; yetkili sağlık kurumlarının raporları komisyona sunulur.\n- Yaralanma raporları **resmi sağlık kurum ve kuruluşlarından** alınmış veya bunlarca onaylanmış olmalıdır.\n- Kanunun yürürlüğünden önceki yaralanma ve engellilikte, resmi kuruluşlardan önceden alınmış raporlar esas alınır.\n- Raporda iş gücü kayıp oranı yoksa, **yeniden muayeneye gerek görülmeksizin** yüzde olarak belirtilmesi istenir.\n\n**Aylık (9.500 gösterge × memur aylık katsayısı üzerinden):**\n- Çalışma gücü kaybı %40–%60 (dâhil): **yüzde 60**\n- %61–%79 (dâhil): **yüzde 80**\n- %80–%100 (dâhil): **tamamı**\n- Ölenlerin 5510 sayılı Kanuna göre hak sahiplerine: tutarın tamamı üzerinden **paylaştırma** tutarında.\n\n**Not:** Atıf yapılan sağlık kurulu raporları yönetmeliği metindeki hâliyle verilmiştir.",
+      "articleRefs": [
+        "22",
+        "22/A"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Mahsup edilecek miktarlar",
+      "body": "Hesaplanan **gayri safi** zarar miktarından şunlar düşülür:\n- Kamu kurum ve kuruluşları ile kamu kurumu niteliğindeki meslek kuruluşlarınca uygulanmış projelerin zararın giderilmesine **katkıları**\n- Zarar görenin değerlendirebileceği **enkaz ve diğer yararlar**\n- Sigorta şirketlerince veya ilgili mevzuata göre kamu kurumları ve sosyal güvenlik kuruluşlarınca karşılanan **tazminatlar ile tedavi ve cenaze giderleri**\n\n**Güncelleme:** Mahsup edilecek değerler her yıl bir önceki yıla ilişkin, 213 sayılı Vergi Usul Kanununa göre belirlenen **yeniden değerleme oranında** artırılarak uygulanır. Bu güncelleme **aynî ifa edilebilecek zararlarda uygulanmaz**.",
+      "articleRefs": [
+        "23",
+        "24"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Sulhname, onay, ödeme, denetim ve tebligat",
+      "body": "- Komisyon; tespit edilen zararı, nakdî ödeme tutarını, ifa tarzını ve mahsupları dikkate alarak **safi miktarı** belirler. Sulhname tasarısı örneği (EK-E) **davet yazısıyla** hak sahibine tebliğ edilir.\n- Davet yazısında: **30 gün** içinde gelip imzalaması veya yetkili temsilci göndermesi gerektiği, aksi hâlde tasarıyı **kabul etmemiş sayılacağı** ve **yargı yolu hakkının saklı** olduğu yazılır.\n- Kabul hâlinde tasarıyı hak sahibi veya temsilcisi ile **komisyon başkanı** imzalar; ardından **Vali veya Bakan** onaylar.\n- Kabul edilmez veya kabul edilmemiş sayılırsa **uyuşmazlık tutanağı** düzenlenir, bir örneği ilgiliye gönderilir.\n- Zarar, imzadan sonra **valinin onayı** üzerine, Bakanlık bütçesindeki ödenekten **3 ay** içinde karşılanır. Bakanlık, Yönetmelikte belirlenen tutarın üzerindeki ödemelerin **Bakan onayıyla** yapılmasını kararlaştırabilir; bu tutar her yıl yeniden değerleme oranında artırılır.\n- Ödemeler onay tarih ve sırasına göre yapılır; nakdî ödemeler **banka hesabına** yatırılır.\n- **Denetim:** Valilik ve Bakanlık. Zarar tespit işlemlerinde görevlendirilenlere **bu görevleri nedeniyle veya görevleri sırasında** işlenen suçlarda Devlet memurlarına karşı işlenen suçlara; bu kişilerin **bu görevleri sırasında** işledikleri suçlarda Devlet memurlarının işledikleri suçlara ilişkin hükümler uygulanır.\n- **Tebligat:** 7201 sayılı Tebligat Kanunu; ancak **memur vasıtasıyla** yapılması esastır.",
+      "articleRefs": [
+        "25",
+        "26",
+        "27",
+        "28",
+        "29"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Rücu: kim, kime?",
+      "body": "İki hüküm zıt yönlüdür, karıştırma.\n\n**Devlete rücu edilemez:** Gerçek kişiler veya özel hukuk tüzel kişileri zarar görene ödeme yaptıysa, bu ödeme sebebiyle Devletten geri isteyemez.\n\n**Devlet rücu eder:** Devlet, yaptığı ödeme nedeniyle genel hükümlere göre **sorumlulara** rücu eder. Bu istemde zamanaşımı süreleri **bir kat artırılarak** uygulanır.",
+      "articleRefs": [
+        "21",
+        "26"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "type": "numbers",
+      "title": "Gösterge, oran ve ödeme süreleri",
+      "rows": [
+        {
+          "label": "Toplantı ücreti göstergesi",
+          "value": "500",
+          "refs": [
+            "9"
+          ]
+        },
+        {
+          "label": "Ücret ödenen toplantı üst sınırı",
+          "value": "ayda 6",
+          "refs": [
+            "9"
+          ]
+        },
+        {
+          "label": "Bilirkişi ücreti üst sınırı — kamu görevlisi",
+          "value": "dosya başına 500 gösterge",
+          "refs": [
+            "12"
+          ]
+        },
+        {
+          "label": "Bilirkişi ücreti üst sınırı — diğer kişiler",
+          "value": "dosya başına 1000 gösterge",
+          "refs": [
+            "12"
+          ]
+        },
+        {
+          "label": "Nakdî ödeme göstergesi",
+          "value": "7000",
+          "refs": [
+            "21"
+          ]
+        },
+        {
+          "label": "Yaralanma",
+          "value": "onda biri × iş ve güce engel olma süresi; en fazla 6 katı",
+          "refs": [
+            "21"
+          ]
+        },
+        {
+          "label": "Ölüm (mirasçılara)",
+          "value": "50 katı",
+          "refs": [
+            "21"
+          ]
+        },
+        {
+          "label": "Göstergeyi artırma yetkisi",
+          "value": "yüzde 30'a kadar",
+          "refs": [
+            "21"
+          ]
+        },
+        {
+          "label": "Aylık göstergesi",
+          "value": "9.500",
+          "refs": [
+            "22/A"
+          ]
+        },
+        {
+          "label": "Çalışma gücü kaybı %40–%60",
+          "value": "yüzde 60",
+          "refs": [
+            "22/A"
+          ]
+        },
+        {
+          "label": "Çalışma gücü kaybı %61–%79",
+          "value": "yüzde 80",
+          "refs": [
+            "22/A"
+          ]
+        },
+        {
+          "label": "Çalışma gücü kaybı %80–%100",
+          "value": "tamamı",
+          "refs": [
+            "22/A"
+          ]
+        },
+        {
+          "label": "Sulhname daveti",
+          "value": "30 gün",
+          "refs": [
+            "25"
+          ]
+        },
+        {
+          "label": "Sulhname sonrası ödeme",
+          "value": "3 ay içinde",
+          "refs": [
+            "26"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "9",
+        "12",
+        "21",
+        "22/A",
+        "25",
+        "26"
+      ]
+    },
+    {
+      "type": "compare",
+      "title": "Uyuşmazlık tutanağı ve karar tutanağı",
+      "rows": [
+        {
+          "aspect": "Ne zaman düzenlenir",
+          "left": "Uyuşmazlık tutanağı: Sulhname tasarısı kabul edilmez veya kabul edilmemiş sayılırsa",
+          "right": "Karar tutanağı: Kapsama giren bir zarar bulunmadığı tespit edilirse",
+          "refs": [
+            "7",
+            "25"
+          ]
+        },
+        {
+          "aspect": "Zararın varlığı",
+          "left": "Zarar tespit edilmiş, ancak sulh yoluyla karşılanamamıştır",
+          "right": "Kanun ve Yönetmelik kapsamında zarar yok",
+          "refs": [
+            "7",
+            "25"
+          ]
+        },
+        {
+          "aspect": "Kabul etmemiş sayılma",
+          "left": "30 gün içinde gelmeyen veya temsilci göndermeyen hak sahibi",
+          "right": "—",
+          "refs": [
+            "25"
+          ]
+        },
+        {
+          "aspect": "İlgiliye bildirim",
+          "left": "Bir örneği ilgiliye tebliğ edilir",
+          "right": "Bir örneği ilgiliye tebliğ edilir",
+          "refs": [
+            "7"
+          ]
+        },
+        {
+          "aspect": "Sonrası",
+          "left": "Yargı yoluna başvurma hakkı saklı",
+          "right": "Yönetmelik ayrıca düzenlemez; dava açma süresi içinde yapılan başvuru, nihai işlemin ilgiliye tebliğine kadar dava açma sürelerini her iki hâlde de durdurur (md 8)",
+          "refs": [
+            "8",
+            "25"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "7",
+        "8",
+        "25"
+      ]
+    },
+    {
+      "type": "exam_stats",
+      "title": "Sınav der ki",
+      "rows": [
+        {
+          "label": "Bu ünitenin maddelerinden yayındaki soru",
+          "value": "0",
+          "refs": [
+            "1",
+            "2",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22",
+            "22/A",
+            "23",
+            "24",
+            "25",
+            "26",
+            "27",
+            "28",
+            "29"
+          ]
+        },
+        {
+          "label": "Hiç soru çıkmamış",
+          "value": "md 1, md 2, md 4, md 5, md 6, md 7, md 8, md 9, md 10, md 11, md 12, md 13, md 14, md 15, md 16, md 17, md 18, md 19, md 20, md 21, md 22, md 22/A, md 23, md 24, md 25, md 26, md 27, md 28, md 29",
+          "refs": [
+            "1",
+            "2",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22",
+            "22/A",
+            "23",
+            "24",
+            "25",
+            "26",
+            "27",
+            "28",
+            "29"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "1",
+        "2",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17",
+        "18",
+        "19",
+        "20",
+        "21",
+        "22",
+        "22/A",
+        "23",
+        "24",
+        "25",
+        "26",
+        "27",
+        "28",
+        "29"
+      ],
+      "generated": true
+    },
+    {
+      "type": "bridge",
+      "title": "Bu üniteden soru çöz",
+      "articleRefs": [
+        "1",
+        "2",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17",
+        "18",
+        "19",
+        "20",
+        "21",
+        "22",
+        "22/A",
+        "23",
+        "24",
+        "25",
+        "26",
+        "27",
+        "28",
+        "29"
+      ],
+      "generated": true,
+      "rows": [
+        {
+          "label": "Madde kapsamlı seans",
+          "value": "md 1–22, 22/A, 23–29, 0 soru",
+          "refs": [
+            "1",
+            "2",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22",
+            "22/A",
+            "23",
+            "24",
+            "25",
+            "26",
+            "27",
+            "28",
+            "29"
+          ]
+        }
+      ]
+    }
+  ]
+}

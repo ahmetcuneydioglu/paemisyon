@@ -1,0 +1,549 @@
+{
+  "unit": {
+    "slug": "ttsy-teknik-yontemlerle-takip-sistemlerinin-kullanilmasina",
+    "legislationSlug": "teknik-yontemlerle-takip-sistemlerinin-kullanilmasina-dair-yonetmelik",
+    "topicId": "c245c059-861e-4c26-995a-f0518502cce8",
+    "title": "Teknik takip: karar, uygulama ve ihlal",
+    "subtitle": "Elektronik kelepçeyle tedbir takibi: Komisyon, Karar, uyarı ve ihlal prosedürü, süreler",
+    "articleFrom": "1",
+    "articleTo": "22",
+    "readingMinutes": 16,
+    "sourceLabel": "AI özeti — Teknik Yöntemlerle Takip Sistemlerinin Kullanılmasına Dair Yönetmelik, md 1–20, 22",
+    "articleNos": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+      "15",
+      "16",
+      "17",
+      "18",
+      "19",
+      "20",
+      "22"
+    ],
+    "generatedBy": "claude-opus-5-5 (ozet-uret.ts)",
+    "sortOrder": 1
+  },
+  "blocks": [
+    {
+      "type": "concept",
+      "title": "Bu Yönetmelik neyi düzenler?",
+      "articleRefs": [
+        "1",
+        "2",
+        "3"
+      ],
+      "body": "Bu Yönetmelik tek bir soruya cevap verir. 6284 sayılı Ailenin Korunması ve Kadına Karşı Şiddetin Önlenmesine Dair Kanun'a göre tedbir kararları verilir. Bu kararlar teknik araç ve yöntemlerle nasıl takip edilir? Yönetmeliğin dayanağı Kanunun 12 nci maddesidir. Kapsamı ise bu takipte görevi, yetkisi ve sorumluluğu bulunan iki bakanlığın iş ve işlemleridir: Aile ve Sosyal Hizmetler Bakanlığı ile İçişleri Bakanlığı. Aklında şöyle tut: teknik araç ve yöntemlerle takip kararını (Karar) hâkim verir. Bu Yönetmelik, Kanun kapsamında verilen tedbir kararlarının elektronik kelepçe ve benzeri araçlarla nasıl izleneceğini anlatır."
+    },
+    {
+      "type": "rule",
+      "title": "Tanımlar: kişiler, Karar ve araçlar",
+      "articleRefs": [
+        "3"
+      ],
+      "body": "- **Yükümlü:** Kanunda şiddet olarak tanımlanan tutum ve davranışları uygulayan veya uygulama tehlikesi bulunan kişidir. Ayrıca hakkında Kanunun 12 nci maddesi kapsamında teknik yöntemlerle takip kararına hükmedilmiş olmalıdır.\n- **Şiddet mağduru:** Şiddete doğrudan ya da dolaylı olarak maruz kalan veya kalma tehlikesi bulunan kişidir. Şiddetten etkilenen veya etkilenme tehlikesi bulunan kişiler de bu kapsamdadır.\n- **Karar:** Tedbir kararlarının etkin uygulanması amacıyla Kanunun 12 nci maddesine dayanılarak verilir. Teknik araç ve yöntemler kullanılabileceğine ilişkin **hâkim** kararıdır.\n- **Teknik yöntemlerle takip:** Tedbirin ihlal edilip edilmediğinin denetlenmesidir. Elektronik kelepçe, mağdur koruma ünitesi, GPS ünitesi gibi araçlar kullanılır; denetim coğrafi bilgi sistemleri üzerinden yapılır.\n- **Elektronik kelepçe:** Yükümlünün ayak veya kol bileğine takılan elektronik cihazdır.\n- **İzleme üniteleri:** Elektronik kelepçe ile birlikte, yükümlü ve şiddet mağdurunun konumunu tanımlayan cihazlardır. İzleme merkeziyle karşılıklı iletişim kurarlar. Tampon bölge ve/veya yasaklı bölge ihlalinde izleme merkezine, şiddet mağduruna ve yükümlüye uyarı verirler.\n- **İhlal tespit tutanağı:** İzleme personeli düzenler. Yasak bölgenin ihlali, cihazın çıkarılması, cihaza zarar verilmesi gibi davranışlar tespit edildiğinde tutulur.\n- **İletişim listesi:** Acil aramalarda hızlı yönlendirme ve müdahale için kullanılan formdur. İlgili kurum, kuruluş ve personelin iletişim bilgilerini içerir."
+    },
+    {
+      "type": "rule",
+      "title": "Bölgeler ve asgari mesafe",
+      "articleRefs": [
+        "3"
+      ],
+      "body": "- **Yasak bölge:** Karara göre yükümlünün şiddet mağduruna yaklaşmasının yasak olduğu yerlerdir: mağdurun konutu, işyeri, okulu ve benzeri yerler.\n- **Tampon bölge:** Mahkeme kararında belirtilen yasak bölgeye **ilaveten** belirlenen ek ya da ara bölgedir. **İzleme merkezi ve uygulama ekibi** koordineli olarak belirler. Amacı, kolluğun hızlı ve etkin müdahalesini sağlamak ve mağduru güvenli bölgeye ulaştırmaktır.\n- **Güvenli bölge:** Yükümlünün mağdura fiziksel olarak zarar verme ihtimalinin düşük olduğu güvenli yer ya da konumdur.\n- **Asgari mesafe:** Yükümlünün mağdura fiziksel olarak herhangi bir biçimde zarar vermesini engelleyecek mesafedir. Kolluğun acil durumda hızlı ve etkin müdahalesini sağlamak üzere belirlenir; şu gibi ölçütler göz önünde bulundurulur:\n  - ev ve iş adresleri ile konumların birbirine yakınlığı,\n  - şehrin yüzölçümü ve nüfus yoğunluğu,\n  - trafik durumu,\n  - kolluğun etkin müdahale süresi."
+    },
+    {
+      "type": "rule",
+      "title": "Tanımlar: birimler ve görevliler",
+      "articleRefs": [
+        "3"
+      ],
+      "body": "- **İzleme merkezi:** İçişleri Bakanlığı **Emniyet Genel Müdürlüğü** bünyesinde kurulu elektronik izleme merkezidir.\n- **İzleme merkezi amiri:** Merkezin idaresinden sorumlu amirdir.\n- **İzleme personeli:** Emniyet Genel Müdürlüğü ve Jandarma Genel Komutanlığı tarafından izleme merkezinde görevlendirilir. Gerekli hizmet içi eğitime tabi tutulmuş personeldir.\n- **Uygulama ekibi:** Kolluk görevlilerinden oluşur. İzleme ünitelerinin teslimi, takılıp/çıkarılması ve kullanıma hazır hale getirilmesi işlerini **illerde** yürütür. Büro Amirlikleri ile Şube Müdürlüğü/Kısım Amirliğinde oluşturulur.\n- **ŞÖNİM:** Danışmanlık, rehberlik, yönlendirme ve izleme hizmetleri verir. Tercihen kadın personel istihdam edilir. Çalışmalar yedi gün yirmi dört saat esasına göre yürütülür.\n- **Komisyon:** ŞÖNİM bünyesinde kurulur. Üyeleri ŞÖNİM Müdürü, en az bir meslek elemanı ve polis irtibat görevlisi/jandarma personelidir; **asgari üç** personelden oluşur.\n- **Polis irtibat görevlisi:** İl Emniyet Müdürlüğünce ŞÖNİM'de görevlendirilen polis memurudur. Bağlı olduğu birimin kurumsal temsilini yapar.\n- **Meslek elemanı:** İl müdürlüğü bünyesinde görev yapan meslek mensubudur. Sosyal hizmet, psikoloji, çocuk gelişimi, psikolojik danışmanlık ve rehberlik ile sosyoloji bölümlerinden mezun olmalıdır.\n- **İl müdürlükleri:** Aile ve Sosyal Hizmetler Bakanlığı il müdürlükleridir."
+    },
+    {
+      "type": "trap",
+      "title": "Tampon bölge ≠ yasak bölge",
+      "articleRefs": [
+        "3",
+        "13"
+      ],
+      "counterNumbers": [],
+      "body": "Bu ikisini karıştırma. Yasak bölgeyi mahkeme kararı belirler. Tampon bölge ise kararda yazmaz; yasak bölgeye ilaveten izleme merkezi ve uygulama ekibi koordineli olarak belirler. Sonuçları da farklıdır. Yükümlü tampon bölgeye girerse uyarı prosedürü işler. Tampon bölgeye girdikten sonra uyarıya rağmen yasak bölgeye girmeye devam ederse ihlal prosedürü işler. Yani tampon bölgeye giriş bir uyarı hâlidir."
+    },
+    {
+      "type": "rule",
+      "title": "İzleme merkezi nasıl çalışır?",
+      "articleRefs": [
+        "4",
+        "13"
+      ],
+      "body": "- Teknik yöntemlerle takip kararlarının gereği, Emniyet Genel Müdürlüğünde kurulu izleme merkezinde yerine getirilir.\n- Takip işlemlerini izleme merkezi amiri ve izleme personeli **yedi gün yirmi dört saat** esasına göre yürütür. Personeli Emniyet Genel Müdürlüğü ve Jandarma Genel Komutanlığı uygun görür; gerekli vasıflara sahip ve yeterli sayıda olmalıdır.\n- İşler uygulama ekibi ve ŞÖNİM ile koordineli yürütülür.\n- Sisteme dâhil tüm vakaların bilgilerini içeren bir **veri sistemi** oluşturulur. Verilerle ilgili işlemler md 20'ye göre yapılır.\n- Görevli ve yetkililer dışındaki üçüncü kişiler merkeze giremez; **ziyaretçi kabul edilmez**.\n- Kayıt alma özelliği olan cihazlarla merkeze girilmez: mobil telefon, kamera, bilgisayar, fotoğraf makinesi, flaş bellek gibi.\n- İzleme ekranları sürekli açık ve güncel tutulur. Sistemin çalışırlığı ve güncelliği sürekli takip edilir.\n- Takip edilen kişilerin genel bilgileri dosyalanır ve arşivlenir. İletişim listesi hazırlanır ve sürekli güncel tutulur.\n\n**İhlal tespit edilince:** Önce yükümlü ile irtibata geçilir; ihlal devam ederse ilgili kolluk birimleriyle irtibata geçilir ve yükümlü ile mağdurun bulunduğu bölgenin koordinat bilgisi paylaşılır. Mağdurla da irtibata geçilir; güvenli bir konuma yönlendirilir ve güvende olduğu teyit edilir (uyarı ve ihlal hâllerinde mağdur eş zamanlı aranır, md 13). İhlale ilişkin tespit tutanağı ivedilikle ilgili kolluk birimi ile ŞÖNİM'e ulaştırılır."
+    },
+    {
+      "type": "rule",
+      "title": "İzleme merkezi amiri ve izleme personeli",
+      "articleRefs": [
+        "5",
+        "6"
+      ],
+      "body": "**İzleme merkezi amirinin görevleri (md 5).** Amir şunları **sağlar**:\n- işlerin mevzuata uygun yürütülmesi,\n- merkezdeki işbirliği ve koordinasyon,\n- **günlük vardiya listesinin** hazırlanması ve kontrolü,\n- çalışma ortamının düzeni ve personelin verimli çalışması,\n- tüm vakaların veri sistemine işlenmesi,\n- iletişim listesinin hazırlanması ve güncel tutulması.\n\n**İzleme personelinin görevleri (md 6):**\n- Vardiya süresince izleme ekranını sürekli açık ve güncel tutar. Sisteme belirli sürelerde gelmesi gereken bilgilerin gelip gelmediğini kontrol eder.\n- Kişi, Karar ve ihlal bilgilerini veri sistemine kaydeder; gerektiğinde raporlar.\n- **Kararın sona ermesinden on beş gün önce** uygulama ekibini, ilgili kolluk birimini ve ŞÖNİM'i bilgilendirir.\n- İletişim listesini **hazırlar**.\n- Uyarı gerektiren durumda md 13'ün ikinci fıkrasındaki uyarı prosedürünü uygular.\n- Uyarıya rağmen ihlal varsa md 13'ün dördüncü, beşinci, altıncı ve yedinci fıkralarındaki ihlal prosedürünü uygular.\n- Mağduru güvenli konuma yönlendirir ve güvende olduğunu teyit eder.\n\n**Gizlilik:** İzleme personeli merkezin işleyişine ve Kararların taraflarına ilişkin bilgileri üçüncü kişilerle paylaşamaz."
+    },
+    {
+      "type": "rule",
+      "title": "Teknik yöntemlerle takip uygulama ekibi",
+      "articleRefs": [
+        "7"
+      ],
+      "body": "**Kimden oluşur?** Büro Amirliği ile Şube Müdürlükleri/Kısım Amirliklerindeki kolluk görevlileri arasından oluşturulur. Bu görevliler, kadına yönelik şiddetle mücadele ve teknik yöntemlerle takip konularında **eğitim almış** olmalıdır.\n\n**Görevleri:**\n- İzleme ünitelerini izleme merkezinden **yazılı olarak** talep etmek.\n- Ünitelerin taraflara teslimi ve geri alınması işlemlerini yapmak (md 16 ve 17).\n- Süresi biten ya da sonlandırılan vakalarda geri alınan üniteleri izleme merkezine iade etmek.\n- Tebliğ kurulum esnasında yapılır ve taraflar itiraz edeceğini belirtirse: kurulum tamamlandıktan sonra md 14'teki itiraz prosedürü hakkında bilgi vermek ve tutanağı **Cumhuriyet Başsavcılığına** göndermek.\n- İzleme merkezinden gelen ihlal bilgisini takip etmek ve ünitelerdeki arızaların giderilmesi işlerini yürütmek.\n- Mağdur ve yükümlü farklı illerde ikamet ediyorsa, iller arası işbirliği gereken konularda izleme merkezine bilgi vermek.\n- İzleme merkezi ve gerektiğinde ŞÖNİM ile koordinasyon sağlamak; izleme merkezinin göreve ilişkin taleplerini yerine getirmek.\n\n**Farklı il kolluğu yetkiliyse:** İşlemleri **şiddet mağdurunun ikamet ettiği yerdeki** sorumlu kolluk birimi yürütür."
+    },
+    {
+      "type": "rule",
+      "title": "Vakanın tespiti ve Komisyon değerlendirmesi",
+      "articleRefs": [
+        "8",
+        "9"
+      ],
+      "body": "**Vakanın tespiti (md 8).** Bazı vakalarda teknik yöntemlerle takibe uygunluk kanaati oluşur. Örneğin koruyucu ve önleyici tedbir kararları yetersiz kalmıştır ya da mağdurun hayatının olağan akışı aksamaktadır.\n- Bu vakaları Büro Amirliği, Şube Müdürlüğü/Kısım Amirliği ve Aile ve Sosyal Hizmetler Bakanlığına bağlı birimler tespit eder.\n- Vaka; bilgi, belge ve delillerle birlikte Komisyonda değerlendirilmek üzere **ŞÖNİM'e** gönderilir.\n\n**Komisyon (md 9).** Üyeleri ŞÖNİM Müdürü, en az bir meslek elemanı ve polis irtibat/jandarma görevlisidir; **asgari üç kişi**den oluşur. Kolluk sorumluluk bölgesine göre Büro Amiri/Çocuk ve Kadın Kısım Amiri Komisyona davet **edilebilir**.\n\nKomisyon iki konuda değerlendirme yapar: vakanın takibe uygunluğu ve takip kararının **alınması, uzatılması ve kaldırılması**. Değerlendirme şunları içerir:\n- Meslek elemanının mağdurla yaptığı görüşmeye ilişkin durum değerlendirme raporu incelenir.\n- Polis irtibat görevlisi/jandarma personelinin yükümlü hakkında resmi kayıtlardan edindiği bilgiler incelenir.\n- Gerek görülürse yükümlüyle ASH İl Müdürlükleri bünyesinde görüşülebilir. Görüşme raporu, nihai değerlendirme raporuna eklenmek üzere ŞÖNİM'e gönderilir.\n- İlgili kolluk birimi **asgari mesafe raporu** hazırlar. Bu iş polis irtibat görevlisi/jandarma personelinin koordinesinde ve **gecikmeksizin** yapılır; rapor ŞÖNİM'e gönderilir.\n- Asgari mesafe değerlendirilirken şu gibi kriterler göz önünde bulundurulur: ev, iş, okul ve benzeri adreslerin yakınlığı, gündelik güzergâhlar arasındaki mesafe, şehrin yüzölçümü, nüfus yoğunluğu, trafik durumu ve kolluğun etkin müdahale süresi."
+    },
+    {
+      "type": "rule",
+      "title": "Komisyondan sonra: rapor ve mahkeme",
+      "articleRefs": [
+        "9"
+      ],
+      "body": "- Komisyon bir **nihai değerlendirme raporu** hazırlar.\n- Vaka takibe elverişli bulunursa rapora asgari mesafe önerisi ve diğer belgeler eklenir. Karar talebini **ŞÖNİM**, **aile mahkemesine ivedilikle** sunar.\n- Bazı vakalar Komisyondan geçmeden mahkemeye ulaşır. Bu durumda Komisyon, **hâkim talep ederse** değerlendirme yapar. ŞÖNİM'in hazırladığı rapor ivedilikle aile mahkemesine sunulur.\n- Kararda asgari mesafe belirlenmemişse, asgari mesafe önerisini ve güvenli bölgeleri **ilgili kolluk birimi** belirler. Bunlar polis irtibat görevlisi/jandarma personeli aracılığıyla ŞÖNİM'e gönderilir. ŞÖNİM, **ek Karar talebini** Kararı veren aile mahkemesine sunar.\n- Uzatma ya da kaldırma değerlendirmesi, Karar süresinin sona ermesinden **en az on beş gün önce** yapılır. Bu değerlendirmede yükümlünün izleme sürecindeki ihlal bilgileri dikkate alınır.\n- Vaka takibe elverişli bulunmazsa ŞÖNİM, risk durumuna uygun bir **müdahale planı** hazırlar. Gerektiğinde uygun koruyucu ve önleyici tedbir için aile mahkemesinden talepte bulunur."
+    },
+    {
+      "type": "numbers",
+      "title": "Sayılar: Komisyon ve izleme",
+      "articleRefs": [
+        "3",
+        "4",
+        "6",
+        "9"
+      ],
+      "rows": [
+        {
+          "label": "Komisyonun üye sayısı",
+          "value": "asgari üç",
+          "refs": [
+            "3",
+            "9"
+          ]
+        },
+        {
+          "label": "Komisyonda meslek elemanı",
+          "value": "en az bir",
+          "refs": [
+            "9"
+          ]
+        },
+        {
+          "label": "İzleme merkezinde takip esası",
+          "value": "yedi gün yirmi dört saat",
+          "refs": [
+            "4"
+          ]
+        },
+        {
+          "label": "ŞÖNİM çalışma esası",
+          "value": "yedi gün yirmi dört saat",
+          "refs": [
+            "3"
+          ]
+        },
+        {
+          "label": "İzleme personelinin Karar sonu bildirimi",
+          "value": "Kararın sona ermesinden on beş gün önce",
+          "refs": [
+            "6"
+          ]
+        },
+        {
+          "label": "Komisyonun uzatma/kaldırma değerlendirmesi",
+          "value": "Karar süresinin sona ermesinden en az on beş gün önce",
+          "refs": [
+            "9"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Karar talebi ve tebliğ",
+      "articleRefs": [
+        "10",
+        "11"
+      ],
+      "body": "**Karar talebi (md 10)**\n- **Kimler talep eder?** ŞÖNİM, kolluk, şiddet mağduru ya da Cumhuriyet savcısı.\n- **Kimden talep edilir?** En çabuk ve en kolay ulaşılabilecek yer aile mahkemesi hâkiminden.\n\n**Tebliğ (md 11)**\n- Kararı taraflara **uygulama ekibi** tebliğ eder. Tebliğ **ilgili kolluk biriminde**, **farklı zamanlarda** ve ivedilikle yapılır.\n- Tebliğ sırasında yükümlüye iki ihtar yapılır:\n  - tedbir kararları **yedi gün yirmi dört saat** esasına göre elektronik olarak takip edilecektir;\n  - Karara aykırılık halinde **zorlama hapsi** uygulanacaktır.\n- Yükümlü kurulumu kabul etmezse md 14'teki itiraz prosedürü uygulanır. Ancak **itiraz, Kararın uygulanmasını durdurmaz**.\n\n**Karar uygulanamıyorsa**\n- Bazı nedenlerle uygulama mümkün olmayabilir: yükümlü davet çağrılarına cevap vermez, taraflara ulaşılamaz ya da yükümlü ceza infaz kurumundadır.\n- Bu durumda uygulama ekibi durumu tutanağa bağlar.\n- Tutanak mahkemeye sunulmak üzere ilgili kolluk birimine bildirilir; ayrıca bilgi için ŞÖNİM'e ve izleme merkezine bildirilir.\n- Uygulama süresi boyunca araştırma devam eder. Dayanak, 6284 sayılı Kanuna İlişkin Uygulama Yönetmeliğinin 35 inci maddesinin beşinci fıkrasıdır.\n- Yükümlüye ulaşılınca ŞÖNİM ve izleme merkezi ile koordineli olarak Karar uygulanır."
+    },
+    {
+      "type": "trap",
+      "title": "Talep eden kim, tebliğ nasıl?",
+      "articleRefs": [
+        "10",
+        "11"
+      ],
+      "counterNumbers": [],
+      "body": "Burada iki tuzak var.\n\nBirincisi talep edenler listesi: ŞÖNİM, kolluk, şiddet mağduru ve Cumhuriyet savcısı. Yükümlü bu listede yok. Talep edilen hâkim de, en çabuk ve en kolay ulaşılabilecek yer aile mahkemesi hâkimidir.\n\nİkincisi tebliğ. Karar taraflara aynı anda değil, farklı zamanlarda tebliğ edilir. Tebliği uygulama ekibi, ilgili kolluk biriminde yapar.\n\nAyrıca ihtarın içeriğini unutma: Karara aykırılığın sonucu zorlama hapsidir. Yükümlü kuruluma karşı çıksa bile itiraz, Kararın uygulanmasını durdurmaz."
+    },
+    {
+      "type": "rule",
+      "title": "İzleme süreci: uyarı mı, ihlal mi?",
+      "articleRefs": [
+        "12",
+        "13"
+      ],
+      "body": "**İzleme süreci (md 12)**\n- Karar, ilgili tedbir kararları olmaksızın **tek başına uygulanamaz**.\n- İzleme süreci, izleme ünitelerinin taraflara **teslimi ile başlar** ve **geri alınmasıyla sona erer**.\n- Asgari mesafe bilgisi izleme merkezinde sisteme kaydedilir. Tampon bölge ve yasak bölge harita üzerinden işaretlenir.\n- Mağdur ve yükümlü, izleme merkezinde sistem üzerinden izlenir.\n\n**Sıra (md 13):** Önce uyarı prosedürü uygulanır. Uyarıya rağmen Karar ihlal edilirse ihlal prosedürü uygulanır.\n\n**Uyarı prosedürü hâlleri.** İzleme personeli yükümlüyle iletişime geçer. Bu hâller şunlardır:\n- Yükümlü, izleme merkezinin belirlediği tampon bölgeye girer.\n- Yükümlü alıcı cihazı yanında taşımaz veya şarj etmez.\n- Yükümlü elektronik kelepçeye ve alıcı cihaza zarar verecek biçimde müdahalede bulunur.\n\n**İhlal prosedürü hâlleri:**\n- Yükümlü tampon bölgeye girdikten sonra, uyarıya rağmen yasak bölgeye girmeye devam eder.\n- Yükümlü uyarıya rağmen elektronik kelepçeye ve alıcı cihaza müdahale etmeye ve zarar vermeye devam eder."
+    },
+    {
+      "type": "rule",
+      "title": "İhlalden sonra yapılacaklar",
+      "articleRefs": [
+        "13"
+      ],
+      "body": "- İzleme personeli bir **ihlal tespit tutanağı** düzenler. Tutanak, **Cumhuriyet Başsavcılığına gönderilmek üzere ilgili kolluk birimine** ivedilikle ulaştırılır; bilgi için ŞÖNİM'e de gönderilir.\n- Mağdur, şu hâllerde izleme personeli tarafından **eş zamanlı** aranır: uyarı ve ihlal hâlleri ile izlemenin teknik sebeplerle kesintiye uğraması. Mağdur olası tehlike hakkında bilgilendirilir ve güvenli bölgeye geçmesi istenir.\n- İhlal devam ederse ve/veya elektronik kelepçe yükümlünün vücudundan çıkarılırsa, izleme personeli **112/155/156 Acil Çağrı Hatları** ve ilgili kolluk birimleriyle irtibata geçer. Yükümlü ile mağdurun bulunduğu bölgenin koordinat bilgisini paylaşır.\n- İhbarı alan kolluk birimi yükümlüye gerekli müdahaleyi yapar.\n- Kolluk, ilgili Cumhuriyet Savcısını ivedilikle bilgilendirir. Duruma ilişkin tutanağı düzenleyip Cumhuriyet Başsavcılığına ivedilikle gönderir.\n- Ardından Kanunun 13 üncü maddesi kapsamında gerekli işlemler yapılır."
+    },
+    {
+      "type": "trap",
+      "title": "Mağdur kurala uymazsa ne olur?",
+      "articleRefs": [
+        "13"
+      ],
+      "counterNumbers": [],
+      "body": "Diyelim ki cihazı şarj etmeyen, yanında taşımayan, hatta yükümlüye kendisi yaklaşan kişi şiddet mağduru. Bu durumlar md 13'ün ikinci ve dördüncü fıkralarında sayılan uyarı ve ihlal hâlleri arasında yer almaz; o hâllerin hepsi yükümlünün davranışlarıdır. Mağdur için üçüncü fıkra ayrı bir yol çizer: izleme personeli mağdura ulaşır, gerekli yönlendirme ve bilgilendirmeyi yapar.\n\nBir ayrıntıya daha dikkat et. İzleme teknik sebeplerle kesintiye uğrarsa da mağdur eş zamanlı aranır ve güvenli bölgeye geçmesi istenir. Acil çağrı hatlarıyla irtibat ise ancak iki hâlde kurulur: ihlalin devam etmesi ve/veya kelepçenin vücuttan çıkarılması."
+    },
+    {
+      "type": "rule",
+      "title": "İtiraz, devam ve kaldırma",
+      "articleRefs": [
+        "14",
+        "15"
+      ],
+      "body": "**İtiraz (md 14)**\n- İlgililer Karara karşı **aile mahkemesine** itiraz edebilir.\n- Süre, **tefhim veya tebliğ** tarihinden itibaren **iki hafta**dır.\n- İtiraz sürecinde Kanunun 9 uncu maddesindeki hükümler uygulanır.\n- İtiraz, Kararın uygulanmasını **durdurmaz**.\n\n**Devam ve kaldırma (md 15)**\n- Komisyon, uygulama süresinin sona ermesinden **on beş gün önce** takibin devamı ya da kaldırılması konusunda değerlendirme yapar.\n- Devam kanaati oluşursa izleme kesintiye uğramamalıdır. Bu yüzden **ŞÖNİM**, talebi süre sona ermeden **on gün önce** aile mahkemesine sunar.\n- Uzatma değerlendirmesini ŞÖNİM, sürenin sona ermesinden **en az yedi gün önce** bildirir. Bildirim kolluğun ilgili Büro/Kısım Amirliği ile izleme merkezine yapılır.\n- Vaka takibe elverişsiz bulunabilir ya da risk durumu değişebilir. Bu tespiti izleme merkezi, ŞÖNİM veya ilgili kolluk birimi yapar. Bu durumda kaldırma talebi Komisyon değerlendirmesinin ardından ŞÖNİM tarafından aile mahkemesine sunulur.\n- Süre bittiğinde veya Karar kaldırıldığında, izleme personeli tarafları ünitelerin teslimi için uygulama ekibine yönlendirir.\n- Uzatma gecikirse ya da takip yapılamazsa ŞÖNİM, risk durumuna uygun bir müdahale planı hazırlar. Plan, ilgili kurum ve kuruluşların işbirliğinde uygulanır."
+    },
+    {
+      "type": "trap",
+      "title": "On beş, on, yedi: sırayı karıştırma",
+      "articleRefs": [
+        "6",
+        "9",
+        "15"
+      ],
+      "counterNumbers": [],
+      "body": "Sürenin sonuna doğru üç farklı gün sayısı var.\n\n**On beş gün önce:** Komisyon, devam ya da kaldırma değerlendirmesini yapar. md 9 bunu 'en az on beş gün önce' diye yazar. İzleme personeli de Kararın sona ermesinden on beş gün önce uygulama ekibini, ilgili kolluk birimini ve ŞÖNİM'i bilgilendirir.\n\n**On gün önce:** Devam kanaati varsa ŞÖNİM, talebi aile mahkemesine sunar.\n\n**En az yedi gün önce:** ŞÖNİM, uzatma değerlendirmesini kolluğun Büro/Kısım Amirliğine ve izleme merkezine bildirir.\n\nUnutma: talebi mahkemeye sunan Komisyon değil, ŞÖNİM'dir."
+    },
+    {
+      "type": "rule",
+      "title": "Ünitelerin teslimi, geri alınması ve zarar görmesi",
+      "articleRefs": [
+        "16",
+        "17",
+        "18"
+      ],
+      "body": "**Teslim ve takma (md 16)**\n- Uygulama ekibi tarafları kolluk birimine **farklı zamanlarda** davet eder.\n- Gerekli hijyen ve temizlik işlemlerinden sonra izleme üniteleri takılır ve teslim edilir.\n- Taraflara uyulması gereken kurallar ve cihaz kullanım prosedürleri anlatılır; bir **uygulama kılavuzu** teslim edilir.\n- Taraflara bir tutanak imzalatılır. Tutanak, ünitelerin teslimini ve kurallara uyulacağı **taahhüdünü** içerir.\n- Sistemin aktivasyonu izleme merkezi ile koordineli biçimde sağlanır.\n\n**Çıkarma ve geri alma (md 17)**\n- Karar sona erince **izleme merkezi**, tarafları kolluğun ilgili Büro/Kısım Amirliğine yönlendirir.\n- Aynı anda uygulama ekibi bilgilendirilir.\n- Taraflara imzalatılan çıkarma ve geri alma tutanaklarını uygulama ekibi dosyalar.\n\n**Ünitelere zarar (md 18)**\n- Yükümlü ünitelere zarar verebilir ya da kullanımlarını hukuka aykırı olarak engelleyebilir.\n- Bu durumda olay tutanağa bağlanır ve **Cumhuriyet Başsavcılığına ivedilikle suç duyurusunda** bulunulur.\n- Bu davranış ayrıca **Karar ihlali** sayılır; md 13'teki ihlal prosedürü işletilir."
+    },
+    {
+      "type": "rule",
+      "title": "Koordinasyon, veriler ve yürütme",
+      "articleRefs": [
+        "19",
+        "20",
+        "22"
+      ],
+      "body": "**Koordinasyon ve eğitim (md 19)**\n- İşler, Aile ve Sosyal Hizmetler Bakanlığı ile İçişleri Bakanlığına bağlı ilgili kuruluşların işbirliği ve koordinasyonunda yürütülür.\n- Matbu formlar, kılavuz ve benzeri dokümanlar oluşturulur ve gerektiğinde güncellenir.\n- Görev alan personel için düzenli eğitim programları hazırlanır ve uygulanır.\n\n**Veriler (md 20)**\n- Görevli kurum ve kuruluşlar, kendi görev alanlarında verilerin tutulmasından sorumludur. Talep üzerine bu verileri paylaşmaktan da sorumludurlar.\n- Bazı görüşmeler kayıt altına alınır: izleme merkezinin ihlal durumunda veya uyarı niteliğinde yükümlü ve mağdurla yaptığı görüşmeler. Kişilere bu kaydın yapılacağı, **sistemin aktivasyonu esnasında** bildirilir.\n- Bunun dışında kişilerin ses ve görüntüleri, özel hayatın gizliliği ilkesini ihlal edecek şekilde dinlenemez, izlenemez ve kayıt altına alınamaz.\n- Verilerin kaydı, işlenmesi ve paylaşımı **6698 sayılı Kişisel Verilerin Korunması Kanununa** uygun yapılır.\n- Veriler **5 yıl** süreyle saklanır.\n\n**Yürütme (md 22):** Aile ve Sosyal Hizmetler Bakanı ve İçişleri Bakanı **birlikte** yürütür."
+    },
+    {
+      "type": "numbers",
+      "title": "Sayılar: süreler, hatlar, kanunlar",
+      "articleRefs": [
+        "2",
+        "13",
+        "14",
+        "15",
+        "20"
+      ],
+      "rows": [
+        {
+          "label": "Dayanak kanun",
+          "value": "6284 sayılı Kanun, 12 nci madde",
+          "refs": [
+            "2"
+          ]
+        },
+        {
+          "label": "Karara itiraz süresi",
+          "value": "tefhim veya tebliğden itibaren iki hafta",
+          "refs": [
+            "14"
+          ]
+        },
+        {
+          "label": "Devam/kaldırma değerlendirmesi",
+          "value": "uygulama süresinin sona ermesinden on beş gün önce",
+          "refs": [
+            "15"
+          ]
+        },
+        {
+          "label": "Devam talebinin aile mahkemesine sunulması",
+          "value": "süre sona ermeden on gün önce",
+          "refs": [
+            "15"
+          ]
+        },
+        {
+          "label": "Uzatma değerlendirmesinin bildirimi",
+          "value": "sürenin sona ermesinden en az yedi gün önce",
+          "refs": [
+            "15"
+          ]
+        },
+        {
+          "label": "Acil Çağrı Hatları",
+          "value": "112/155/156",
+          "refs": [
+            "13"
+          ]
+        },
+        {
+          "label": "Kişisel verilerde uygulanacak kanun",
+          "value": "6698 sayılı Kişisel Verilerin Korunması Kanunu",
+          "refs": [
+            "20"
+          ]
+        },
+        {
+          "label": "Verilerin saklama süresi",
+          "value": "5 yıl",
+          "refs": [
+            "20"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "compare",
+      "title": "İzleme merkezi mi, uygulama ekibi mi?",
+      "articleRefs": [
+        "3",
+        "4",
+        "7",
+        "11",
+        "13",
+        "17"
+      ],
+      "rows": [
+        {
+          "aspect": "Yeri",
+          "left": "İçişleri Bakanlığı Emniyet Genel Müdürlüğü bünyesinde kurulu",
+          "right": "İllerde; Büro Amirliği ile Şube Müdürlüğü/Kısım Amirliğinde",
+          "refs": [
+            "3",
+            "4",
+            "7"
+          ]
+        },
+        {
+          "aspect": "Personeli",
+          "left": "İzleme merkezi amiri ile Emniyet Genel Müdürlüğü ve Jandarma Genel Komutanlığının görevlendirdiği, hizmet içi eğitime tabi tutulmuş izleme personeli",
+          "right": "Kadına yönelik şiddetle mücadele ve teknik yöntemlerle takip konularında eğitim almış kolluk görevlileri",
+          "refs": [
+            "3",
+            "4",
+            "7"
+          ]
+        },
+        {
+          "aspect": "Asıl işi",
+          "left": "Yedi gün yirmi dört saat takip, veri sistemi, uyarı ve ihlal prosedürleri",
+          "right": "Ünitelerin teslimi, takılıp çıkarılması, geri alınması, iadesi ve arızaların giderilmesi",
+          "refs": [
+            "3",
+            "4",
+            "7",
+            "13"
+          ]
+        },
+        {
+          "aspect": "Ünitelerle ilişkisi",
+          "left": "Üniteler ondan yazılı olarak talep edilir; geri alınan üniteler ona iade edilir",
+          "right": "Üniteleri izleme merkezinden yazılı olarak talep eder ve geri aldıktan sonra iade eder",
+          "refs": [
+            "7"
+          ]
+        },
+        {
+          "aspect": "Tuttuğu tutanaklar",
+          "left": "İhlal tespit tutanağı: Cumhuriyet Başsavcılığına gönderilmek üzere ilgili kolluk birimine, bilgi için ŞÖNİM'e",
+          "right": "İtiraz tutanağı Cumhuriyet Başsavcılığına; uygulanamama tutanağı ilgili kolluk birimine; çıkarma ve geri alma tutanaklarını dosyalar",
+          "refs": [
+            "7",
+            "11",
+            "13",
+            "17"
+          ]
+        },
+        {
+          "aspect": "Karar sona erince",
+          "left": "Tarafları kolluğun ilgili Büro/Kısım Amirliğine yönlendirir",
+          "right": "Eş zamanlı olarak bilgilendirilir",
+          "refs": [
+            "17"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "exam_stats",
+      "title": "Sınav der ki",
+      "rows": [
+        {
+          "label": "Bu ünitenin maddelerinden yayındaki soru",
+          "value": "0",
+          "refs": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "22"
+          ]
+        },
+        {
+          "label": "Hiç soru çıkmamış",
+          "value": "md 1, md 2, md 3, md 4, md 5, md 6, md 7, md 8, md 9, md 10, md 11, md 12, md 13, md 14, md 15, md 16, md 17, md 18, md 19, md 20, md 22",
+          "refs": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "22"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17",
+        "18",
+        "19",
+        "20",
+        "22"
+      ],
+      "generated": true
+    },
+    {
+      "type": "bridge",
+      "title": "Bu üniteden soru çöz",
+      "articleRefs": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17",
+        "18",
+        "19",
+        "20",
+        "22"
+      ],
+      "generated": true,
+      "rows": [
+        {
+          "label": "Madde kapsamlı seans",
+          "value": "md 1–20, 22, 0 soru",
+          "refs": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "22"
+          ]
+        }
+      ]
+    }
+  ]
+}

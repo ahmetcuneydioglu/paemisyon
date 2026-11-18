@@ -1,0 +1,579 @@
+{
+  "unit": {
+    "slug": "ckuy-1",
+    "legislationSlug": "cocuk-koruma-kanunu-uygulama-yonetmeligi",
+    "topicId": "7b47e1cc-1573-4cfc-99fa-6c82b73b88ec",
+    "title": "Soruşturma, kolluk işlemleri ve sosyal inceleme",
+    "subtitle": "Tanımlar, suça sürüklenen çocuğun soruşturma ve yargılaması, adlî kontrol, çocuk bürosu, kolluğun çocuk birimi, sosyal çalışma görevlileri",
+    "articleFrom": "1",
+    "articleTo": "19",
+    "readingMinutes": 14,
+    "sourceLabel": "AI özeti — Çocuk Koruma Kanunu Uygulama Yönetmeliği, md 1–19",
+    "articleNos": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+      "15",
+      "16",
+      "17",
+      "18",
+      "19"
+    ],
+    "generatedBy": "claude-opus-5-5 (ozet-uret.ts)",
+    "sortOrder": 1
+  },
+  "blocks": [
+    {
+      "type": "concept",
+      "title": "Bu yönetmelik ne için var?",
+      "body": "Bu yönetmeliğin amacı, korunma ihtiyacı olan veya suça sürüklenen çocukları korumak, haklarını ve esenliklerini güvence altına almaktır. Ayrıca Çocuk Koruma Kanununun uygulanmasına ilişkin usûl ve esasları düzenler. Kapsamı geniştir. Denetim altına alınmasına karar verilen, korunma ihtiyacı olan ve suça sürüklenen çocuklar hakkındaki uygulamalar kapsama girer. Sosyal inceleme raporları ile suça sürüklenen çocukların soruşturma ve yargılama usûlleri de kapsamdadır. Bu alanda görev yapanların hizmet öncesi ve hizmet içi eğitimi de bu yönetmeliğin konusudur. Dayanağını da bil: 5395 sayılı Çocuk Koruma Kanununun 32 ve 47 nci maddeleri.",
+      "articleRefs": [
+        "1",
+        "2",
+        "3"
+      ],
+      "derivedNumbers": [],
+      "counterNumbers": []
+    },
+    {
+      "type": "concept",
+      "title": "Çocuk kimdir? İki ayrı kategori",
+      "body": "Çocuk, **daha erken yaşta ergin olsa bile** 18 yaşını doldurmamış kişidir. Erginlik çocukluğu bitirmez, bunu aklında tut. Bu çocuklar iki gruba ayrılır.\n\n**Korunma ihtiyacı olan çocuk:** Bedensel, zihinsel, ahlâkî, sosyal ve duygusal gelişimi ile kişisel güvenliği tehlikede olan çocuktur. İhmal veya istismar edilen ya da suç mağduru olan çocuk da bu gruptadır. Yani suç mağduru çocuk bu kategoriye girer.\n\n**Suça sürüklenen çocuk:** Kanunlarda suç olarak tanımlanan bir fiili işlediği iddiasıyla hakkında soruşturma veya kovuşturma yapılan çocuktur. İşlediği fiil nedeniyle hakkında güvenlik tedbirine karar verilen çocuk da bu gruptadır.\n\n**Not:** \"Suça sürüklenen çocuk\" terimi Yönetmelik metnindeki hâliyle verilmiştir; Kanunda bu kavramın adı sonradan \"adli süreçteki çocuk\" olarak değiştirilmiştir.",
+      "articleRefs": [
+        "4"
+      ],
+      "derivedNumbers": [],
+      "counterNumbers": []
+    },
+    {
+      "type": "rule",
+      "title": "Diğer tanımlar",
+      "body": "- **Çocuk hâkimi:** Suça sürüklenen ve korunma ihtiyacı olan çocuklar hakkında tedbir kararlarını veren çocuk mahkemesi hâkimidir. Ancak **hakkında kovuşturma başlatılmış olanlar hariç** tutulur.\n- **Mahkeme:** Çocuk mahkemeleri ile çocuk ağır ceza mahkemeleridir. Çocuk mahkemesi bulunmayan yerlerde aile ya da asliye hukuk mahkemeleri ile ceza mahkemeleri bu görevi üstlenir.\n- **Kurum:** Çocuğun bakılıp gözetildiği ve tedbir kararlarının yerine getirildiği resmî veya özel kurumlardır.\n- **Sosyal çalışma görevlisi:** Psikolojik danışmanlık ve rehberlik, psikoloji ya da sosyal hizmet alanlarında eğitim veren kurumlardan mezun meslek mensuplarıdır.\n- **Denetim görevlisi:** Denetimli serbestlik ve yardım merkezlerinde kadrolu veya geçici olarak görev yapan psikolog, sosyal çalışmacı, sosyolog ve öğretmendir.\n- **Şube Müdürlüğü:** Taşra teşkilâtındaki denetimli serbestlik ve yardım merkezi şube müdürlüğüdür.\n- **Büro:** Şube müdürlüğü bulunmayan ilçelerde şube müdürlüğüne bağlı olarak kurulan büroyu ifade eder.\n\n**Dikkat:** Sosyal çalışma görevlisi mezuniyet alanıyla tanımlanır. Denetim görevlisi ise hem görev yaptığı yerle (denetimli serbestlik ve yardım merkezleri) hem de mesleğiyle (psikolog, sosyal çalışmacı, sosyolog, öğretmen) tanımlanır.\n\n**Not:** Sosyal çalışma görevlisi tanımı ile denetimli serbestlik birimlerinin adları Yönetmelik metnindeki hâliyle verilmiştir. Kanundaki sosyal çalışma görevlisi tanımı sonradan genişletilmiş; sosyoloji, çocuk gelişimi, öğretmenlik, aile ve tüketici bilimleri de eklenmiştir.",
+      "articleRefs": [
+        "4"
+      ],
+      "derivedNumbers": [],
+      "counterNumbers": []
+    },
+    {
+      "type": "rule",
+      "title": "Soruşturmayı kim yapar?",
+      "body": "- Suça sürüklenen çocuk hakkındaki soruşturmayı **çocuk bürosunda görevli Cumhuriyet savcısı bizzat** yapar.\n- **Gecikmesinde sakınca bulunan hâllerde** büroda görevli olmayan Cumhuriyet savcıları da soruşturmayı yerine getirebilir.\n- Çocuk mahkemeleri ve çocuk ağır ceza mahkemeleri bulunmayan yerler için ayrı bir kural vardır. Bu mahkemeler kurulup göreve başlayıncaya kadar soruşturmayı, Cumhuriyet başsavcılığının **iş bölümünde gösterilen** Cumhuriyet savcısı yapar.\n- Bazen suçun işlendiği yerin bağlı olduğu ağır ceza mahkemesi ile çocuk mahkemesi ya da çocuk ağır ceza mahkemesi farklı yerlerde bulunur. Bu durumda savcı, soruşturma evrakını çocuk mahkemesine veya çocuk ağır ceza mahkemesine dava açılmak üzere, bu mahkemenin bulunduğu yer Cumhuriyet başsavcılığına **fezleke düzenleyerek** gönderir.\n- Yakalama, gözaltına alma ve ifade almada, Yakalama, Gözaltına Alma ve İfade Alma Yönetmeliğinin **çocuklara ilişkin hükümleri** uygulanır.",
+      "articleRefs": [
+        "5"
+      ],
+      "derivedNumbers": [],
+      "counterNumbers": []
+    },
+    {
+      "type": "rule",
+      "title": "Mağdur çocuğun tanık olarak dinlenmesi",
+      "body": "- Mağdur çocuk tanık olarak dinlenirken Ceza Muhakemesi Kanununun tanıklığa ilişkin hükümleri uygulanır. Ancak **yemin hariç** tutulur.\n- Suçun etkisiyle **psikolojisi bozulmuş** mağdur çocuk, o suça ilişkin soruşturmada tanık olarak **bir defa** dinlenebilir. Maddî gerçeğin ortaya çıkarılması bakımından zorunluluk arz eden hâller saklıdır.\n- Dinleme sırasında psikoloji, psikiyatri, tıp veya eğitim alanında **uzman bir kişi bulundurulur**. Bu kişiler hakkında bilirkişilere ilişkin hükümler uygulanır.",
+      "articleRefs": [
+        "5"
+      ],
+      "derivedNumbers": [],
+      "counterNumbers": []
+    },
+    {
+      "type": "trap",
+      "title": "\"Bulundurulabilir\" mi, \"bulundurulur\" mu?",
+      "body": "Bu iki fiili birbirine karıştırma, fark tam burada.\n\n**Sosyal çalışma görevlisi → takdire bağlıdır.** Suça sürüklenen çocuğun ifadesi alınırken veya diğer işlemler sırasında çocuğun yanında sosyal çalışma görevlisi *bulundurulabilir*. Kovuşturmada da mahkeme veya hâkim, sorgu ve diğer işlemler sırasında onu *bulundurabilir*.\n\n**Uzman → zorunludur.** Mağdur çocuk tanık olarak dinlenirken psikoloji, psikiyatri, tıp veya eğitim alanında uzman bir kişi *bulundurulur*. Bu kural hem soruşturmada hem kovuşturmada aynıdır.\n\nBir şey daha var: Mağdur çocuğun tanıklığında **yemin uygulanmaz**. Tanıklığa ilişkin diğer hükümler ise geçerlidir.",
+      "articleRefs": [
+        "5",
+        "13"
+      ],
+      "derivedNumbers": [],
+      "counterNumbers": []
+    },
+    {
+      "type": "rule",
+      "title": "Savcının bildirim yükümlülüğü",
+      "body": "- Cumhuriyet savcısı soruşturmayı yürütürken korunma ihtiyacı olan çocuğu Sosyal Hizmetler ve Çocuk Esirgeme Kurumuna **bildirmekle yükümlüdür**. Amaç, tedbir kararı alınabilmesidir.\n- Kurum gerekli incelemeyi **derhâl** yapar.\n- Bazı hâllerde koruyucu ve destekleyici tedbir kararı alınması gerekir. Bu durumda il veya ilçe sosyal hizmetler müdürlüğü, yönetmeliğin 21 inci maddesine uygun bir **sosyal inceleme raporu** hazırlar. Rapor, talep yazısı ekinde mahkemeye veya çocuk hâkimine sunulur.\n- Raporun bir örneği soruşturmayı yapan Cumhuriyet savcılığına gönderilir.\n- Savcı da gerekli görürse çocuk hâkiminden koruyucu ve destekleyici tedbir kararı verilmesini isteyebilir.\n\n**Not:** Sosyal Hizmetler ve Çocuk Esirgeme Kurumu ile sosyal hizmetler müdürlüğü adları Yönetmelik metnindeki hâliyle verilmiştir.",
+      "articleRefs": [
+        "5"
+      ],
+      "derivedNumbers": [],
+      "counterNumbers": []
+    },
+    {
+      "type": "rule",
+      "title": "Küçük yaştaki çocuklar ve yaş düzeltme",
+      "body": "- Bazı çocuklar hakkında da soruşturma yapılabilir. Bunlar, **fiili işlediği sırada 12 yaşından küçük** çocuklar ile **15 yaşını doldurmamış sağır ve dilsizlerdir**. Ancak bu soruşturmanın amacı sınırlıdır: delillerin toplanması veya başka fail ya da faillerin bulunup bulunmadığının belirlenmesi.\n- Bazı çocuklar görünüş itibarıyla 12 yaşından büyüktür ama nüfus kaydına göre 12 yaşından küçüktür. Bazen de çocuğun nüfusa kayıtlı yaşının gerçek yaşı olmadığı başka bir şekilde anlaşılır. Bu hâllerde çocuğun yaşı **hukuk mahkemesi nezdinde dava açılıp düzeltilmeden kamu davası açılamaz**.",
+      "articleRefs": [
+        "5"
+      ],
+      "derivedNumbers": [],
+      "counterNumbers": []
+    },
+    {
+      "type": "rule",
+      "title": "Gözaltı ve yetişkinlerle birlikte suç",
+      "body": "**Gözaltı:**\n- Gözaltına alınan çocuklar **kolluğun çocuk biriminde** tutulur.\n- Çocuk birimi yoksa çocuklar, gözaltına alınan **yetişkinlerden ayrı bir yerde** tutulur.\n\n**Yetişkinlerle birlikte suç:**\n- Adlî kolluk çocuklar hakkında **ayrı evrak** düzenler. Soruşturma ve kovuşturma da ayrı yürütülür.\n- Mahkeme lüzum görürse çocuk hakkındaki yargılamayı genel mahkemedeki davanın sonucuna kadar **bekletebilir**.\n\n**Birleştirme:**\n- Davaların birlikte yürütülmesi zorunlu görülebilir. Bu hâlde genel mahkemelerde, yargılamanın her aşamasında, mahkemelerin uygun bulması şartıyla birleştirme kararı verilebilir.\n- Birleştirmeyi genel mahkeme isterse çocuk hakkındaki davayı yürüten mahkemenin, çocuk mahkemesi isterse genel mahkemenin uygun bulması gerekir.\n- Her iki hâlde de iki davanın birleştirilmesine dair ara kararı **genel mahkeme** verir ve bunu çocuk hakkındaki davayı gören mahkemeye bildirir.\n- Bunun üzerine çocuk mahkemesi birleştirme kararı verir, dosyasını esastan kapatır ve genel mahkemeye gönderir.\n- Birleştirilen davalar **genel mahkemelerde** görülür.",
+      "articleRefs": [
+        "6",
+        "7"
+      ],
+      "derivedNumbers": [],
+      "counterNumbers": []
+    },
+    {
+      "type": "rule",
+      "title": "Zincir ve kelepçe yasağı",
+      "body": "**Kural:** Çocuklara zincir, kelepçe ve benzeri aletler **takılamaz**.\n\n**İstisna:** Zorunlu hâllerde kolluk gerekli önlemi alabilir. Bu önlemin amacı şu tehlikeleri önlemektir:\n- çocuğun kaçması,\n- çocuğun kendisinin veya başkalarının hayatı ya da beden bütünlüğü bakımından doğabilecek tehlikeler.",
+      "articleRefs": [
+        "8"
+      ],
+      "derivedNumbers": [],
+      "counterNumbers": []
+    },
+    {
+      "type": "numbers",
+      "title": "Yaşlar ve sayılar (md 4–5)",
+      "rows": [
+        {
+          "label": "Çocuk (erken ergin olsa bile)",
+          "value": "18 yaşını doldurmamış kişi",
+          "refs": [
+            "4"
+          ]
+        },
+        {
+          "label": "Yalnız delil toplama / başka fail amacıyla soruşturma — çocuk",
+          "value": "Fiil sırasında 12 yaşından küçük",
+          "refs": [
+            "5"
+          ]
+        },
+        {
+          "label": "Aynı amaçla soruşturma — sağır ve dilsiz",
+          "value": "15 yaşını doldurmamış",
+          "refs": [
+            "5"
+          ]
+        },
+        {
+          "label": "Yaş düzeltilmeden kamu davası açılamayan",
+          "value": "Görünüşte 12 yaşından büyük, nüfus kaydına göre 12 yaşından küçük çocuk; ayrıca nüfustaki yaşının gerçek yaşı olmadığı başka şekilde anlaşılan çocuk",
+          "refs": [
+            "5"
+          ]
+        },
+        {
+          "label": "Psikolojisi bozulmuş mağdur çocuğun soruşturmada tanık dinlenmesi",
+          "value": "Bir defa (maddî gerçek zorunluluğu saklı)",
+          "refs": [
+            "5"
+          ]
+        },
+        {
+          "label": "Mağdur çocuk tanık dinlenirken bulundurulan uzman",
+          "value": "Bir kişi (psikoloji, psikiyatri, tıp veya eğitim)",
+          "refs": [
+            "5"
+          ]
+        },
+        {
+          "label": "Mağdur çocuğun tanıklığında yemin",
+          "value": "Uygulanmaz",
+          "refs": [
+            "5"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "4",
+        "5"
+      ],
+      "derivedNumbers": [],
+      "counterNumbers": []
+    },
+    {
+      "type": "rule",
+      "title": "Adlî kontrol ve sonuç alınamazsa",
+      "body": "Soruşturma veya kovuşturma evrelerinde suça sürüklenen çocuk hakkında adlî kontrol tedbirine karar verilebilir. Bunlar 5271 sayılı Ceza Muhakemesi Kanununun 109 uncu maddesinde sayılan tedbirlerdir. Bunlara ek olarak aşağıdakilerden **bir ya da birkaçı** da uygulanabilir:\n- belirlenen çevre sınırları dışına çıkmamak,\n- belirlenen bazı yerlere gidememek veya ancak bazı yerlere gidebilmek,\n- belirlenen kişi ve kuruluşlarla ilişki kurmamak.\n\nBazen tedbirlerden **sonuç alınamaz**, sonuç alınamayacağı anlaşılır ya da tedbirlere **uyulmaz**. Bu durumda yetkili yargı mercii iki yoldan birini seçebilir:\n- tutuklama kararı verebilir,\n- yükümlülükleri bütünüyle veya kısmen kaldırabilir, değiştirebilir ya da bazılarından geçici olarak muaf tutabilir.\n\nAdlî kontrol yükümlülükleri yerine getirilirken Denetimli Serbestlik ve Yardım Merkezleri ile Koruma Kurulları Yönetmeliği hükümleri uygulanır.\n\n**Not:** Atıf yapılan yönetmeliğin adı Yönetmelik metnindeki hâliyle verilmiştir.",
+      "articleRefs": [
+        "9",
+        "10",
+        "12"
+      ],
+      "derivedNumbers": [],
+      "counterNumbers": []
+    },
+    {
+      "type": "trap",
+      "title": "Tutuklama yasağı: iki şart birlikte",
+      "body": "Tutuklama yasağının iki şartı vardır ve ikisi aynı anda aranır:\n1. Çocuk **15 yaşını doldurmamış** olmalıdır.\n2. Fiil, **üst sınırı 5 yılı aşmayan** hapis cezasını gerektirmelidir.\n\nBu iki şart birlikte varsa çocuk hakkında tutuklama kararı **verilemez**. Ölçüt cezanın *alt* sınırı değil, *üst* sınırıdır. Yasak da her çocuğa değil, yalnızca 15 yaşını doldurmamış çocuklara özgüdür.",
+      "articleRefs": [
+        "11"
+      ],
+      "derivedNumbers": [],
+      "counterNumbers": []
+    },
+    {
+      "type": "rule",
+      "title": "Duruşma kapalı, hüküm de kapalı",
+      "body": "- Çocukların duruşmaları **kapalı** yapılır. Hüküm de kapalı duruşmada açıklanır.\n- Duruşmada şu kişiler hazır bulunabilir: çocuk, velisi, vasisi, mahkemece görevlendirilmiş sosyal çalışma görevlisi, çocuğun bakımını üstlenen aile ve çocuk kurumda bakılıyorsa kurumun temsilcisi.\n- **İstisna:** Kovuşturma sırasında 18 yaşını doldurmuş çocuklar hakkında yargılama **açık** yapılır ve hüküm açık tefhim edilir. Ancak 5271 sayılı Kanunun 182 nci maddesinin ikinci fıkrasındaki koşullar varsa mahkeme duruşmanın kapalı yapılmasına karar verebilir.\n- Sosyal çalışma görevlisinin bu süreçteki görevi bellidir. Çocuğa haklarını öğretir ve onu yargılama süreci hakkında bilgilendirir. Kendini güvende hissetmesi, süreci anlaması ve görüşlerini serbestçe ifade etmesi için de ona yardım eder.\n- Yararı gerektirirse çocuk duruşma salonundan çıkarılabilir. Sorgusu yapılmış çocuğun duruşmada hazır bulundurulmasına gerek görülmeyebilir.\n- Çocuk mahkemeleri henüz bulunmayan yerlerde kovuşturmayı, bu mahkemeler kurulup göreve başlayıncaya kadar görevli mahkemeler yapar. Bu mahkemeler Kanun ve ilgili yönetmelik hükümlerine göre hareket eder.",
+      "articleRefs": [
+        "13"
+      ],
+      "derivedNumbers": [],
+      "counterNumbers": []
+    },
+    {
+      "type": "rule",
+      "title": "Cumhuriyet savcılığı çocuk bürosu",
+      "body": "**Kuruluş:**\n- Cumhuriyet başsavcılıklarında bir çocuk bürosu kurulur.\n- Cumhuriyet başsavcısı bu büroda yeterli sayıda Cumhuriyet savcısını görevlendirir. Bu savcılar, Kanunun 28 inci maddesinin birinci fıkrasındaki nitelikleri taşıyan kişiler arasından seçilir.\n- Büroda ayrıca **bir müdür ve yeterli sayıda zabıt kâtibi** görevlendirilir.\n\n**Görevler:**\n- Suça sürüklenen çocuklar hakkındaki soruşturma işlemlerini yürütmek.\n- Tedbir gereken durumlarda tedbir alınmasını **gecikmeksizin** sağlamak.\n- Yardıma, eğitime, işe veya barınmaya ihtiyacı olan ya da uyum güçlüğü çeken çocuklara destek hizmetleri sağlamak. Bu çocuklar korunma ihtiyacı olan, suç mağduru veya suça sürüklenen çocuklardır. Büro bu amaçla kamu kurum ve kuruluşları ve sivil toplum kuruluşlarıyla işbirliği yapar. Bu gibi durumları Sosyal Hizmetler ve Çocuk Esirgeme Kurumuna veya diğer kurum ve kuruluşlara bildirir.\n- Koruyucu ve destekleyici tedbir kararlarının uygulanmasına ilişkin yönetmelik gereğince il veya ilçe koordinasyon makamlarıyla işbirliği yapmak.\n- Kanunlarla verilen diğer görevleri yerine getirmek.\n\nGecikmesinde sakınca bulunan hâllerde bu görevleri büroda görevli olmayan savcılar da yerine getirebilir.\n\n**Not:** Kurum adı Yönetmelik metnindeki hâliyle verilmiştir.",
+      "articleRefs": [
+        "14",
+        "15"
+      ],
+      "derivedNumbers": [],
+      "counterNumbers": []
+    },
+    {
+      "type": "rule",
+      "title": "Kolluğun çocuk birimi: bildirim ve yakın",
+      "body": "- Çocuklarla ilgili kolluk görevini **öncelikle kolluğun çocuk birimleri** yerine getirir.\n- Kolluk, çocukların soruşturma nedeniyle kolluk biriminde bulunan yetişkinlerle karşılaşmasını engellemek için gerekli tedbirleri alır.\n- Çocuk birimi, korunma ihtiyacı olan veya suça sürüklenen çocuk hakkında işleme başlandığında durumu **derhal** şu kişi ve kurumlara bildirir:\n  - veli veya vasiye ya da çocuğun bakımını üstlenen kimseye,\n  - **baroya**,\n  - Sosyal Hizmetler ve Çocuk Esirgeme Kurumuna,\n  - çocuk resmî veya özel bir kurumda kalıyorsa kurum temsilcisine.\n- Bildirim durumu tutanağa bağlanır ve **derhâl** Cumhuriyet savcısına bildirilir. Tutanak soruşturma dosyasına konulur.\n- Çocuğun yararı aksini gerektirmedikçe, kollukta bulunduğu süre boyunca yanında yakınlarından birinin **devamlı** bulunmasına imkân sağlanır.\n\n**Not:** Kurum adı Yönetmelik metnindeki hâliyle verilmiştir.",
+      "articleRefs": [
+        "16"
+      ],
+      "derivedNumbers": [],
+      "counterNumbers": []
+    },
+    {
+      "type": "trap",
+      "title": "Şüpheli yakın: ne bilgi, ne refakat, ne teslim",
+      "body": "Bazı yakınlardan, çocuğu **suça azmettirdiği veya istismar ettiği** şüphesi vardır. Bu yakınlar için kolluğun üç adımında da aynı istisna geçerlidir:\n- **Bilgi verilmez.** Bildirim yapılmaz.\n- **Yanında bulundurulmaz.** Kollukta çocuğa refakat edemezler. Bu durum tutanağa yazılır ve adlî veya idarî makamlara gönderilen evraka eklenir.\n- **Teslim edilmez.** Suça sürüklenen çocuğun aileye teslimi gereken hâlde çocuk bu yakınlara değil, Cumhuriyet savcısının talimatı alınarak Sosyal Hizmetler ve Çocuk Esirgeme Kurumuna teslim edilir.\n\nBildirim listesindeki **baroyu** da unutma. Kolluk yalnızca aileye ve kuruma değil, baroya da derhal bildirim yapar.\n\n**Not:** Kurum adı Yönetmelik metnindeki hâliyle verilmiştir.",
+      "articleRefs": [
+        "16"
+      ],
+      "derivedNumbers": [],
+      "counterNumbers": []
+    },
+    {
+      "type": "rule",
+      "title": "Teslim kuralları",
+      "body": "- Suça sürüklenen çocuğun aileye teslimi gerekebilir. Ancak bazen veli, vasi, kanunî temsilci veya bakımı üstlenen kişi bulunamaz ya da bu kişiler çocuğu suça azmettirmekten veya istismar etmekten şüphelenilir. Bu hâllerde çocuk birimi, **Cumhuriyet savcısının talimatını alarak** çocuğu Sosyal Hizmetler ve Çocuk Esirgeme Kurumuna teslim eder.\n- Kolluk görevlisi, teslim ettiği kişilerin çocuğa yeterli rehberliği sunamadığını veya onu yeterince gözetemediğini öğrenebilir. Bu durumda Kuruma **derhâl** bildirimde bulunur.\n- Korunma ihtiyacı içindeki çocuğun yaşama, gelişme, korunma ve katılım hakları ile yarar ve esenliği tehlikeye düşebilir. Bu tespit edilirse çocuk birimi gerekli önlemleri alarak çocuğun güvenliğini sağlar. Ardından çocuğu **mümkün olan en kısa sürede** Kuruma teslim eder.\n- Kurum, kolluğun getirdiği çocukların **derhâl** teslim alınabilmesi için gerekli önlemleri alır.\n- Suç mağduru olan ve korunma ihtiyacı içinde bulunan çocuğun Kuruma teslimi, **Cumhuriyet savcısının talimatı** doğrultusunda yapılır.\n\n**Not:** Kurum adı Yönetmelik metnindeki hâliyle verilmiştir.",
+      "articleRefs": [
+        "16"
+      ],
+      "derivedNumbers": [],
+      "counterNumbers": []
+    },
+    {
+      "type": "rule",
+      "title": "Sosyal çalışma görevlilerinin atanması ve görevlendirme sırası",
+      "body": "**Atama:**\n- Adalet Bakanlığı her mahkemeye **en az birer**, iş durumuna göre de yeterli sayıda sosyal çalışma görevlisi atar.\n- Bu görevliler psikolojik danışmanlık ve rehberlik, psikoloji ya da sosyal hizmet alanlarında **en az lisans** düzeyinde eğitim veren kurumlardan mezun olmalıdır.\n- Atamada çocuk ve aile sorunları, çocuk hukuku ve çocuk suçluluğunun önlenmesi alanlarında **lisansüstü** eğitim yapmış olanlar tercih edilir.\n\n**Not:** Atama usulü ve mezuniyet alanları Yönetmelik metnindeki hâliyle verilmiştir; Kanunda bu hükümler sonradan değiştirilmiştir. Kanuna göre görevliler mahkemelerde görevlendirilmek üzere adli destek ve mağdur hizmetleri müdürlüğüne atanır.\n\n**Sosyal inceleme raporunu kim düzenler?**\n- Raporları öncelikle mahkemelere atanan bu görevliler düzenler. Koruyucu ve destekleyici tedbir kararlarının uygulanmasına ilişkin yönetmelik hükümleri saklıdır.\n- Atanmış görevli yoksa ya da görevi yapmasında fiilî veya hukukî engel varsa, aynı niteliklere sahip başka görevliler görevlendirilebilir. Bunlar diğer kamu kurumlarında çalışan veya serbest meslek icra eden sosyal çalışma görevlileridir.\n- Başka bir uzmanlık dalına ihtiyaç duyulursa mahkeme, aynı nitelikleri taşıyan kamu çalışanları veya serbest meslek mensupları arasından görevlendirme yapabilir.\n- Bunlardan da temin edilemezse denetimli serbestlik görevlisi olarak istihdam edilen sosyal çalışma görevlisinden yararlanılabilir.\n\n**Görevlendirme ve ödemeler:**\n- Görevlendirmede bilirkişi listelerinden yararlanılır.\n- Görevlendirilenlerin ücretini mahkeme veya çocuk hâkimi, bilirkişilik esaslarına göre belirler.\n- Hem bu ücret hem de onaylanan masraflar **Cumhuriyet başsavcılığının suçüstü ödeneğinden** ödenir.\n\n**İnceleme yeri:**\n- İncelenecek çevre mahkemenin yetki alanı dışındaysa inceleme, davayı gören mahkemenin talimatıyla çocuğun bulunduğu yerdeki mahkemece yaptırılır.\n- Büyükşehir belediye sınırları içinde ise bu incelemeyi davayı gören mahkemenin görevlileri yapabilir.",
+      "articleRefs": [
+        "17"
+      ],
+      "derivedNumbers": [],
+      "counterNumbers": []
+    },
+    {
+      "type": "rule",
+      "title": "Sosyal çalışma görevlisinin ilkeleri ve görevleri",
+      "body": "**Çalışma ilkeleri:** Görevli, Kanundaki temel ilkeler ve meslek etiği kurallarına uyar. Buna göre yükümlülükleri şunlardır:\n- Çocukla ihtiyacına göre yeterli süre ve sayıda görüşmek.\n- Kollukta ve adlîyedeki görüşmeleri çocuğun özelliklerine uygun mekânda ve biçimde yapmak.\n- Görüşme öncesinde çocuğu amaç, haklar, yükümlülükler ve sonuçlar hakkında bilgilendirmek.\n- Yeterli idrak gücüne sahip çocuğun kendisiyle ilgili kararlara katılımını sağlamak.\n- **Gizlilik ilkesine** uymak ve verileri yalnız yetkililere bildirmek.\n- Psiko-sosyal rehberlik yapmak ve çocuğun **örselenmemesi** için önlem almak.\n\n**Görevleri:**\n- Karardan önce sosyal inceleme yapmak ve raporu kendisini görevlendiren mercie sunmak.\n- İfade ve sorgu sırasında çocuğun yanında bulunmak. Çocuğun, hakları ve kendisine yöneltilen suçlama hakkında **anlayabileceği bir dilde** bilgilendirilmesini sağlamak.\n- İncelemesini engelleyen durumları **derhal** mercie bildirmek.\n- Uzmanlar ve kurumlarla işbirliği yapmak.\n- Mahkeme, hâkim ve çocuk bürosu savcıları ondan ayrıca toplumsal kaynakları araştırmasını isteyebilir. Koruyucu ve destekleyici tedbirin uygulanması, takibi ve denetimine ilişkin inceleme yapmasını da isteyebilirler. Bu ikinci görev, görevlinin denetim görevlisi olarak sahip olduğu yetkileri ortadan kaldırmaz.\n\n**Bilgi isteme yetkisi:** Görevli, inceleme sırasında kurum ve kuruluşlardan bilgi ve belge isteyebilir. Bunlar arasında Sosyal Hizmetler ve Çocuk Esirgeme Kurumu, Millî Eğitim, Çalışma ve Sosyal Güvenlik ile Sağlık Bakanlıkları ve yerel yönetimler vardır. İlgililer bu bilgileri vermek zorundadır. **Meslek sırrı kapsamındaki bilgiler ise istisnadır.**\n\n**Not:** Kurum ve bakanlık adları Yönetmelik metnindeki hâliyle verilmiştir.",
+      "articleRefs": [
+        "18",
+        "19"
+      ],
+      "derivedNumbers": [],
+      "counterNumbers": []
+    },
+    {
+      "type": "numbers",
+      "title": "Yaşlar, sınırlar ve oranlar (md 11–17)",
+      "rows": [
+        {
+          "label": "Tutuklama kararı verilemeyen çocuk",
+          "value": "15 yaşını doldurmamış",
+          "refs": [
+            "11"
+          ]
+        },
+        {
+          "label": "Bu yasakta fiilin cezası",
+          "value": "Üst sınırı 5 yılı aşmayan hapis cezası",
+          "refs": [
+            "11"
+          ]
+        },
+        {
+          "label": "Kovuşturmada yargılaması açık yapılan çocuk",
+          "value": "18 yaşını doldurmuş",
+          "refs": [
+            "13"
+          ]
+        },
+        {
+          "label": "Bu hâlde kapalı duruşma dayanağı",
+          "value": "5271 sayılı Kanun, 182 nci madde, ikinci fıkra koşulları",
+          "refs": [
+            "13"
+          ]
+        },
+        {
+          "label": "Psikolojisi bozulmuş mağdur çocuğun kovuşturmada tanık dinlenmesi",
+          "value": "Bir defa (maddî gerçek zorunluluğu saklı)",
+          "refs": [
+            "13"
+          ]
+        },
+        {
+          "label": "Her mahkemeye atanan sosyal çalışma görevlisi (Yönetmelik metnindeki hâliyle)",
+          "value": "En az birer; iş durumuna göre yeterli sayıda",
+          "refs": [
+            "17"
+          ]
+        },
+        {
+          "label": "Sosyal çalışma görevlisinin eğitim düzeyi",
+          "value": "En az lisans; lisansüstü tercih sebebi",
+          "refs": [
+            "17"
+          ]
+        },
+        {
+          "label": "Mahkemelere atanan sosyal çalışma görevlilerine aylık ödenek",
+          "value": "Aylık brüt tutarının yüzde ellisi",
+          "refs": [
+            "17"
+          ]
+        },
+        {
+          "label": "Tedbir uygulayan Kurum sosyal çalışma görevlilerine aylık ödenek",
+          "value": "Aylık brüt tutarının yüzde ellisi",
+          "refs": [
+            "17"
+          ]
+        },
+        {
+          "label": "Görevlendirme ücreti ve onaylı masraflar",
+          "value": "Cumhuriyet başsavcılığının suçüstü ödeneğinden",
+          "refs": [
+            "17"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "11",
+        "13",
+        "17"
+      ],
+      "derivedNumbers": [],
+      "counterNumbers": []
+    },
+    {
+      "type": "compare",
+      "title": "Soruşturma evresi ve kovuşturma evresi",
+      "rows": [
+        {
+          "aspect": "Yürüten",
+          "left": "Soruşturma: çocuk bürosunda görevli Cumhuriyet savcısı, bizzat",
+          "right": "Kovuşturma: mahkeme (çocuk mahkemesi / çocuk ağır ceza mahkemesi)",
+          "refs": [
+            "4",
+            "5",
+            "13"
+          ]
+        },
+        {
+          "aspect": "Çocuk mahkemesi bulunmayan yer",
+          "left": "Başsavcılığın iş bölümünde gösterilen Cumhuriyet savcısı",
+          "right": "Görevli mahkemeler, Kanun ve ilgili yönetmelik hükümlerine göre",
+          "refs": [
+            "5",
+            "13"
+          ]
+        },
+        {
+          "aspect": "Sosyal çalışma görevlisi",
+          "left": "İfade alma ve diğer işlemlerde bulundurulabilir",
+          "right": "Mahkeme veya hâkim sorgu ve diğer işlemlerde bulundurabilir",
+          "refs": [
+            "5",
+            "13"
+          ]
+        },
+        {
+          "aspect": "Mağdur çocuğun tanıklığı",
+          "left": "CMK tanıklık hükümleri, yemin hariç",
+          "right": "CMK tanıklık hükümleri, yemin hariç",
+          "refs": [
+            "5",
+            "13"
+          ]
+        },
+        {
+          "aspect": "Psikolojisi bozulmuş mağdur çocuk",
+          "left": "Soruşturmada bir defa dinlenebilir",
+          "right": "Kovuşturmada bir defa dinlenebilir",
+          "refs": [
+            "5",
+            "13"
+          ]
+        },
+        {
+          "aspect": "Uzman",
+          "left": "Bulundurulur; bilirkişi hükümleri uygulanır",
+          "right": "Bulundurulur; bilirkişi hükümleri uygulanır",
+          "refs": [
+            "5",
+            "13"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "4",
+        "5",
+        "13"
+      ],
+      "derivedNumbers": [],
+      "counterNumbers": []
+    },
+    {
+      "type": "exam_stats",
+      "title": "Sınav der ki",
+      "rows": [
+        {
+          "label": "Bu ünitenin maddelerinden yayındaki soru",
+          "value": "0",
+          "refs": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19"
+          ]
+        },
+        {
+          "label": "Hiç soru çıkmamış",
+          "value": "md 1, md 2, md 3, md 4, md 5, md 6, md 7, md 8, md 9, md 10, md 11, md 12, md 13, md 14, md 15, md 16, md 17, md 18, md 19",
+          "refs": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17",
+        "18",
+        "19"
+      ],
+      "generated": true
+    },
+    {
+      "type": "bridge",
+      "title": "Bu üniteden soru çöz",
+      "articleRefs": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17",
+        "18",
+        "19"
+      ],
+      "generated": true,
+      "rows": [
+        {
+          "label": "Madde kapsamlı seans",
+          "value": "md 1–19, 0 soru",
+          "refs": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19"
+          ]
+        }
+      ]
+    }
+  ]
+}

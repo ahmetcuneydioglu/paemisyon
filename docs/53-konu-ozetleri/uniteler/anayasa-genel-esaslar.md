@@ -1,14 +1,78 @@
 # Genel esaslar
 
-_Devletin nitelikleri, egemenlik, eşitlik, Anayasa'nın bağlayıcılığı_
+_Başlangıç, devletin nitelikleri, egemenlik, eşitlik, Anayasa'nın bağlayıcılığı_
 
-Kaynak: T.C. Anayasası, md 1–11. Durum: in_review. AI özeti — T.C. Anayasası, md 1–11 (yalnız admin görür).
+Kaynak: T.C. Anayasası, md Başlangıç, 1–11. Durum: in_review. AI özeti — T.C. Anayasası, md Başlangıç, 1–11 (yalnız admin görür).
 
 ## Kavram · Devletin kimliği girişte yazılı
 
 <sub>md 1, 2, 3, 4</sub>
 
 Anayasa'nın girişi devletin kimliğini tarif eder. md 1 şeklini söyler: **Türkiye Devleti bir Cumhuriyettir.** md 2 bu Cumhuriyetin niteliklerini sayar. md 3 ise ülke ve milletiyle bölünmezliği, dili, bayrağı, milli marşı ve başkenti belirler. Bu maddeleri birlikte öğren, çünkü md 4 tam da onları değiştirilemez hükümler olarak korur.
+
+## Kavram · Başlangıç: Anayasa neyi belirler?
+
+<sub>md Başlangıç</sub>
+
+Başlangıç “…belirleyen bu Anayasa” diye açılır: Bu Anayasa, **Türk Vatanı ve Milletinin ebedi varlığını** ve **Yüce Türk Devletinin bölünmez bütünlüğünü** belirler. Yönünü de hemen söyler: Türkiye Cumhuriyetinin kurucusu, ölümsüz önder ve eşsiz kahraman **Atatürk'ün belirlediği milliyetçilik anlayışı** ve onun **inkılap ve ilkeleri** doğrultusunda. Anayasa, Türkiye Cumhuriyetinin **Dünya milletleri ailesinin eşit haklara sahip şerefli bir üyesi** olarak ebedi varlığı, refahı, maddi ve manevi mutluluğu ile **çağdaş medeniyet düzeyine ulaşma azmi** yönündedir. Ardından esaslar, noktalı virgülle ayrılan paragraflarda sıralanır. Metin şöyle kapanır: Anayasa **TÜRK MİLLETİ TARAFINDAN**, **demokrasiye aşık Türk evlatlarının vatan ve millet sevgisine** emanet ve tevdi olunur.
+
+## Kural · Millet iradesi ve egemenlik
+
+<sub>md Başlangıç</sub>
+
+Başlangıç'ta yer alan esaslar:
+- **Millet iradesinin mutlak üstünlüğü**
+- **Egemenliğin kayıtsız şartsız Türk Milletine ait olduğu**
+- Egemenliği millet adına kullanmaya yetkili kılınan **hiçbir kişi ve kuruluş**, bu Anayasada gösterilen **hürriyetçi demokrasi** ve bunun icaplarıyla belirlenmiş **hukuk düzeni dışına çıkamaz**.
+
+## Kural · Kuvvetler ayrımı
+
+<sub>md Başlangıç</sub>
+
+Kuvvetler ayrımı Devlet organları arasında **üstünlük sıralaması anlamına gelmez**.
+
+Kuvvetler ayrımı:
+- belli Devlet yetki ve görevlerinin kullanılmasından ibarettir ve bununla sınırlıdır,
+- **medeni bir işbölümü ve işbirliğidir**.
+
+**Üstünlük ancak Anayasa ve kanunlarda bulunur.**
+
+## Kural · Korunma göremeyecek faaliyetler ve laiklik
+
+<sub>md Başlangıç</sub>
+
+**Hiçbir faaliyet** şunların karşısında korunma göremez:
+- Türk milli menfaatleri
+- Türk varlığı
+- Devleti ve ülkesiyle bölünmezliği esası
+- Türklüğün tarihi ve manevi değerleri
+- Atatürk milliyetçiliği, ilke ve inkılapları ve medeniyetçiliği
+
+Aynı paragrafa göre **laiklik ilkesinin gereği olarak** kutsal din duyguları **Devlet işlerine ve politikaya kesinlikle karıştırılamaz**.
+
+## Kural · Onurlu hayat ve huzurlu hayat talebi
+
+<sub>md Başlangıç</sub>
+
+**Her Türk vatandaşı**, bu Anayasadaki temel hak ve hürriyetlerden **eşitlik ve sosyal adalet gereklerince** yararlanır.
+
+Bu şekilde yararlanarak şu hak ve yetkilere **doğuştan** sahiptir:
+- milli kültür, medeniyet ve hukuk düzeni içinde **onurlu bir hayat sürdürme**,
+- maddi ve manevi varlığını bu yönde **geliştirme**.
+
+Topluca Türk vatandaşları milli gurur ve iftiharlarda, milli sevinç ve kederlerde ortaktır. Birbirinin hak ve hürriyetlerine kesin saygı, karşılıklı içten sevgi ve kardeşlik duygularıyla ve **“Yurtta sulh, cihanda sulh”** arzu ve inancı içinde **huzurlu bir hayat talebine hakları** vardır.
+
+## Karşılaştırma · Metindeki ifade ↔ çeldiricideki hâli
+
+<sub>md Başlangıç, 6</sub>
+
+| Yön | Sol | Sağ | md |
+|---|---|---|---|
+| Korunma göremeyecek olan | Hiçbir faaliyet | “Hiçbir düşünce ve mülahaza” — Başlangıç'ta yok | Başlangıç |
+| Hak ve hürriyetlerden yararlanan | Her Türk vatandaşı | “Yabancılar” — Başlangıç'ta yok | Başlangıç |
+| Egemenliği kullananlara sınır | Hiçbir kişi ve kuruluş hürriyetçi demokrasi ve hukuk düzeni dışına çıkamaz | “Kişiye, zümreye veya sınıfa bırakılamaz” — md 6'nın sözü, Başlangıç'ta yok | Başlangıç, 6 |
+| Üstünlük | Ancak Anayasa ve kanunlarda | “Kanunların yargısal denetimi” — Başlangıç'ta yok | Başlangıç |
+| Başlangıç'ın uygulanması | Yorumlanıp uygulanmak üzere | “Uygulamadan kalkmıştır” — metne ters | Başlangıç |
 
 ## Kural · Cumhuriyetin nitelikleri
 
@@ -210,23 +274,23 @@ Bu ünitede sorular çoğu zaman cümleyi verip başlığını sorar. Eşleştir
 
 ## Sınav der ki
 
-<sub>md 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11</sub>
+<sub>md Başlangıç, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11</sub>
 
 | Konu | Değer | md |
 |---|---|---|
-| Bu ünitenin maddelerinden yayındaki soru | 17 | 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11 |
+| Bu ünitenin maddelerinden yayındaki soru | 22 | Başlangıç, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11 |
+| md Başlangıç — Başlangıç | 5 soru | Başlangıç |
 | md 10 — Kanun önünde eşitlik | 4 soru | 10 |
 | md 2 — Cumhuriyetin nitelikleri | 3 soru | 2 |
 | md 6 — Egemenlik | 3 soru | 6 |
 | md 4 — Değiştirilemeyecek hükümler | 2 soru | 4 |
-| md 9 — Yargı yetkisi | 2 soru | 9 |
-| Resmî sınavlarda | 2024 PAEM 8. Dönem İlk Derece Amirlik Eğitimi Yazılı Sınavı (1), 2026 PAEM 10. Dönem İlk Derece Amirlik Eğitimi Yazılı Sınavı (1) | 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11 |
-| Hiç soru çıkmamış | md 1, md 3, md 5 | 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11 |
+| Resmî sınavlarda | 2024 PAEM 8. Dönem İlk Derece Amirlik Eğitimi Yazılı Sınavı (1), 2026 PAEM 10. Dönem İlk Derece Amirlik Eğitimi Yazılı Sınavı (1) | Başlangıç, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11 |
+| Hiç soru çıkmamış | md 1, md 3, md 5 | Başlangıç, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11 |
 
 ## Köprü · Bu üniteden soru çöz
 
-<sub>md 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11</sub>
+<sub>md Başlangıç, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11</sub>
 
 | Konu | Değer | md |
 |---|---|---|
-| Madde kapsamlı seans | md 1–11, 10 soru | 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11 |
+| Madde kapsamlı seans | md Başlangıç, 1–11, 10 soru | Başlangıç, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11 |

@@ -1,0 +1,558 @@
+{
+  "unit": {
+    "slug": "ask-adli-sicil-kanunu",
+    "legislationSlug": "5352-adli-sicil-kanunu",
+    "topicId": "96b6ca9d-9c80-4b37-8bba-ef13eef075e8",
+    "title": "Adli sicil kayıtları ve silinme",
+    "subtitle": "Kayıt, arşiv, silinme ve yasaklanmış hakların geri verilmesi",
+    "articleFrom": "1",
+    "articleTo": "20",
+    "readingMinutes": 13,
+    "sourceLabel": "AI özeti — 5352 Adli Sicil Kanunu, md 1–13, 13/A, 14–20",
+    "articleNos": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12",
+      "13",
+      "13/A",
+      "14",
+      "15",
+      "16",
+      "17",
+      "18",
+      "19",
+      "20"
+    ],
+    "generatedBy": "claude-opus-5-5 (ozet-uret.ts)",
+    "sortOrder": 1
+  },
+  "blocks": [
+    {
+      "type": "concept",
+      "title": "Adlî sicil: mahkûmiyetin resmî izi",
+      "body": "Bir mahkûmiyet kesinleştiğinde arkasında bir iz kalır. Bu Kanun o izin nasıl tutulacağını ve kime bildirileceğini düzenler. Kesinleşmiş ceza ve güvenlik tedbirlerine mahkûmiyete ilişkin bilgiler otomatik işleme tâbi bir sistemle toplanır, sınıflandırılır, değerlendirilir ve muhafaza edilir. Gerektiğinde de en seri ve sağlıklı biçimde ilgililere bildirilir (md 1). Bilgiler önce mahallinde bilgisayar ortamına aktarılır, ardından Adalet Bakanlığı Adlî Sicil ve İstatistik Genel Müdürlüğündeki **Merkezî Adlî Sicilde** tutulur. Merkezî Adlî Sicilde **tüm** adlî sicil bilgileri tutulur. Hakkında Türk mahkemelerinin ya da yabancı ülke mahkemelerinin kesinleşmiş ve Türk Hukukuna göre tanınan mahkûmiyet kararı bulunan Türk vatandaşlarının kayıtları da buna dahildir, Türkiye'de suç işlemiş yabancıların kayıtları da (md 2). Anahtar kelimeyi aklında tut: **kesinleşmiş**.",
+      "articleRefs": [
+        "1",
+        "2"
+      ],
+      "derivedNumbers": [],
+      "counterNumbers": []
+    },
+    {
+      "type": "rule",
+      "title": "Merkezî ve mahalli adlî sicilin görevleri",
+      "body": "**Merkezî Adlî Sicil (md 3/1):** Adlî sicil kayıtlarını güncelleştirir, düzenler ve düzeltir. Bu kayıtları mahalli adlî sicillere de ulaştırır.\n\n**Mahalli adlî sicil (md 3/2):**\n- Bulunduğu yer ile gerektiğinde diğer yerlere ait adlî sicil bilgilerini bilgisayara girer,\n- Bu bilgileri merkezî adlî sicile aktarır,\n- Merkezî adlî sicilden bilgileri alır ve ilgili şahıs ve kurumlara iletir.",
+      "articleRefs": [
+        "3"
+      ],
+      "derivedNumbers": [],
+      "counterNumbers": []
+    },
+    {
+      "type": "rule",
+      "title": "Adlî sicile kaydedilenler: hapis, erteleme, para cezası",
+      "body": "**Ana kural (md 4/1):** Türk mahkemelerince vatandaş veya yabancı hakkında verilmiş ve **kesinleşmiş** mahkûmiyet hükümleri adlî sicile kaydedilir.\n\n**a) Hapis cezaları:**\n- Mahkûmiyet kararı\n- Koşullu salıverilme kararı\n- Koşullu salıverilmede denetim süresinin uzatılmasına ilişkin karar\n- Koşullu salıverilme kararının geri alınmasına dair karar\n- Hapis cezasının infazının tamamlandığı hususu\n\n**b) Hapis cezasının ertelenmesi:**\n- Denetim süresi\n- Denetim süresi yükümlülüklere uygun veya iyi halli geçirildiği için cezanın infaz edilmiş sayıldığı hususu\n- Ertelenen cezanın infaz kurumunda çektirilmesine ilişkin karar\n\n**c) Adlî para cezası:**\n- Mahkûmiyet hükmü\n- Cezanın ödenmek suretiyle infaz edildiği hususu\n- Cezanın tazyik hapsi suretiyle kısmen veya tamamen infaz edildiği hususu\n- Tazyik hapsinden sonra kalan kısmın ödenmek suretiyle infaz edildiği hususu\n\n**d) Kısa süreli hapis cezasına seçenek yaptırım:**\n- Seçenek yaptırım olarak adlî para cezasına mahkûmiyet veya güvenlik tedbiri uygulanması hükmü\n- Güvenlik tedbirinin gerekleri yerine getirilmediği için hapis cezasının infazına ilişkin karar\n- Güvenlik tedbirinin değiştirilmesine ilişkin karar",
+      "articleRefs": [
+        "4"
+      ],
+      "derivedNumbers": [],
+      "counterNumbers": []
+    },
+    {
+      "type": "rule",
+      "title": "Adlî sicile kaydedilenler: hak yoksunluğu, af ve diğerleri",
+      "body": "**e) Belli hakları kullanmaktan yoksun bırakılma:**\n- Kasten işlenen suç nedeniyle hapis cezasına mahkûmiyetin kanunî sonucu olarak bazı haklardan yoksun kalınır. Cezanın ertelenmesi dolayısıyla bu haklara getirilen istisnaya ilişkin karar kaydedilir.\n- Mahkûmiyet hükmüyle bağlantılı olarak verilen bazı kararlar da kaydedilir. Bunlar belli bir hak ve yetkinin kullanılmasının veya belli bir meslek veya sanatın icrasının yasaklanmasına ya da sürücü belgesinin geri alınmasına ilişkin kararlardır.\n\n**f)** Türk vatandaşı hakkında yabancı mahkemeden verilip kesinleşen mahkûmiyet, Türk hukuku bakımından hak yoksunluklarına yol açabilir. Bu yoksunluklara ilişkin olarak Cumhuriyet savcısının istemi üzerine mahkemece verilen karar kaydedilir.\n\n**g)** Ceza mahkûmiyetini bütün sonuçlarıyla ortadan kaldıran şikayetten vazgeçme veya etkin pişmanlık dolayısıyla verilen karar\n\n**h)** Ceza zamanaşımının dolduğunun tespitine ilişkin karar\n\n**i)** Genel veya özel affa ilişkin kanun; özel affa ilişkin Cumhurbaşkanlığı kararı\n\n**j)** Askerî Ceza Kanununa göre verilmiş mahkûmiyet kararlarındaki ferî cezalar\n\n**k)** Akıl hastalığı nedeniyle hükmedilen güvenlik tedbirlerine ilişkin kararlar\n\n**Ayrıca (md 4/2):** Kanun yararına bozma veya yargılamanın yenilenmesi sonucunda verilen mahkûmiyet hükmü için de aynı kurallar uygulanır. Eski hükümde değişiklik yapan tüm hüküm ve kararlar da böyledir.\n\n**Gizli kimlik (md 4/3):** Kanun gereği gerçek kimliği saklı tutulan kişilerin adlî sicil ve arşiv kayıtlarına ilişkin usul ve esaslar yönetmelikle düzenlenir.",
+      "articleRefs": [
+        "4"
+      ],
+      "derivedNumbers": [],
+      "counterNumbers": []
+    },
+    {
+      "type": "rule",
+      "title": "Adlî sicile kaydedilmeyenler",
+      "body": "Türk mahkemelerince verilmiş olsa bile şunlar adlî sicile **kaydedilmez** (md 5):\n- a) Disiplin suçlarına ve sırf askerî suçlara ilişkin mahkûmiyet hükümleri\n- b) Disiplin veya tazyik hapsine ilişkin kararlar\n- c) İdarî para cezasına ilişkin kararlar",
+      "articleRefs": [
+        "5"
+      ],
+      "derivedNumbers": [],
+      "counterNumbers": []
+    },
+    {
+      "type": "trap",
+      "title": "Para cezası, tazyik hapsi, askerî suç: hangisi sicile girer?",
+      "body": "Bu başlıklar sık karıştırılır, dikkat et.\n- **Para cezası:** Adlî para cezası kaydedilir (md 4). İdarî para cezasına ilişkin kararlar ise kaydedilmez (md 5).\n- **Tazyik hapsi:** Tazyik hapsine ilişkin kararlar kaydedilmez (md 5). Ama adlî para cezasının tazyik hapsi suretiyle infaz edildiği hususu, adlî para cezası başlığı altında kaydedilir (md 4).\n- **Askerî:** Sırf askerî suçlara ilişkin mahkûmiyet hükümleri kaydedilmez (md 5). Askerî Ceza Kanununa göre verilmiş mahkûmiyet kararlarındaki ferî cezalar ise kaydedilir (md 4).",
+      "articleRefs": [
+        "4",
+        "5"
+      ],
+      "derivedNumbers": [],
+      "counterNumbers": []
+    },
+    {
+      "type": "rule",
+      "title": "Diğer bilgilerin kaydı: KDAE, HAGB ve karşılıksız yararlanma",
+      "body": "**Kamu davasının açılmasının ertelenmesi** ve **hükmün açıklanmasının geri bırakılması** kararları da kaydedilir (md 6/1). Ancak bu kayıtlar yalnızca bir soruşturma veya kovuşturmayla bağlantılı olarak verilir. İsteyebilecek olanlar mahkeme, hâkim veya Cumhuriyet Başsavcılığıdır.\n\n**Karşılıksız yararlanma suçunda etkin pişmanlık (md 6/2):**\n- Etkin pişmanlıktan yararlanan şüpheli, sanık veya hükümlü hakkında verilen kararlar adlî sicilde bunlara mahsus bir sisteme kaydedilir.\n- Bu kayıtlar **15 yıl** muhafaza edilir.\n- Kayıtlar ancak bir soruşturma veya kovuşturmayla bağlantılı olarak Cumhuriyet savcısı veya mahkeme isterse verilebilir.",
+      "articleRefs": [
+        "6"
+      ],
+      "derivedNumbers": [],
+      "counterNumbers": []
+    },
+    {
+      "type": "rule",
+      "title": "Adlî sicil bilgisi kime, kimce verilir?",
+      "body": "**Kime verilir? (md 7)**\nKullanılış amacı belirtilmek şartıyla şunlara verilebilir:\n- İlgili kişiye ya da vekâletnamede açıkça belirtilmek koşuluyla vekiline\n- Kamu kurum ve kuruluşlarına\n- Kamu kurumu niteliğindeki meslek kuruluşlarına\n\nYabancı devletlerin istediği bilgiler **mütekabiliyet esasına** göre verilir.\n\n**Kim verir? (md 8)**\n- Mahalli adlî sicillerde: Cumhuriyet başsavcılıkları ve kaymakamlıklar\n- Yurt dışında: elçilik ve konsolosluklar\n- Merkezî adlî sicilde: Adalet Bakanlığı Adlî Sicil ve İstatistik Genel Müdürlüğü",
+      "articleRefs": [
+        "7",
+        "8"
+      ],
+      "derivedNumbers": [],
+      "counterNumbers": []
+    },
+    {
+      "type": "rule",
+      "title": "Adlî sicilden silinme ve arşive alınma",
+      "body": "**Arşive alınma (md 9/1):** Aşağıdaki hâllerde bilgiler Adlî Sicil ve İstatistik Genel Müdürlüğünce silinir ve **arşiv kaydına** alınır:\n- a) Cezanın veya güvenlik tedbirinin infazının tamamlanması\n- b) Ceza mahkûmiyetini bütün sonuçlarıyla ortadan kaldıran şikayetten vazgeçme veya etkin pişmanlık\n- c) Ceza zamanaşımının dolması\n- d) Genel af\n\n**Ölüm (md 9/2):** Adlî sicil bilgileri ilgilinin ölümü üzerine **tamamen silinir**.\n\n**Yabancı mahkeme kararları (md 9/3):** Bu hüküm, Türk vatandaşları hakkında yabancı mahkemelerce verilmiş hürriyeti bağlayıcı cezaya mahkûmiyet hükümleri içindir. Söz konusu hükümler md 4/1-f'ye göre adlî sicile kaydedilmiş olmalıdır. Kesinleştiği tarihten itibaren mahkûmiyet kararında belirtilen süre geçince sicilden çıkarılır ve arşiv kaydına alınır. Aynı fıkraya göre yabancı mahkemelerin Türk vatandaşları hakkında verdiği **adlî para cezasına mahkûmiyet hükümleri** ile **cezanın ertelenmesine ilişkin hükümler** ise adlî sicil kaydına alınmadan **doğrudan arşive** kaydedilir.\n\n**Türk mahkemelerinin kararları:** Türk mahkemelerinin verdiği adlî para cezası ve erteleme hükümleri doğrudan arşive gitmez; md 4/1-b ve c'ye göre **adlî sicile kaydedilir**.",
+      "articleRefs": [
+        "9",
+        "4"
+      ],
+      "derivedNumbers": [],
+      "counterNumbers": []
+    },
+    {
+      "type": "trap",
+      "title": "İnfaz bitti, kayıt yok oldu mu? Hayır",
+      "body": "İnfaz tamamlandı diye kayıt yok olmaz. md 9/1'deki hâllerde bilgi adlî sicilden silinir ama **arşiv kaydına alınır**. Bu hâller şunlardır: infazın tamamlanması, şikayetten vazgeçme veya etkin pişmanlık, ceza zamanaşımı ve genel af. Adlî sicil bilgisi, ilgilinin ölümüyle **tamamen silinir** (md 9/2). Kaydı tamamen sildiren başka hâller de vardır: fiilin kanunla suç olmaktan çıkarılması, kanun yararına bozma veya yargılamanın yenilenmesi sonucunda verilen beraat ya da ceza verilmesine yer olmadığı kararının kesinleşmesi ve akıl hastalığı nedeniyle hükmedilen güvenlik tedbirinin infazının tamamlanması (md 12/2, 12/3 ve 12/4).\n\nSayımda yalnız **genel af** var; özel af md 9/1'de geçmez.\n\nAdlî para cezası ve ertelemede ayrıma dikkat et. Türk mahkemelerinin verdiği bu hükümler md 4/1-b ve c'ye göre **adlî sicile kaydedilir** ve md 9/1'deki hâllerde silinerek arşive alınır. Sicile uğramadan **doğrudan arşive** kaydedilen adlî para cezası ve erteleme hükümleri md 9/3'te geçer; bu fıkra yabancı mahkemelerin Türk vatandaşları hakkında verdiği kararları düzenler.",
+      "articleRefs": [
+        "9",
+        "4",
+        "12"
+      ],
+      "derivedNumbers": [],
+      "counterNumbers": []
+    },
+    {
+      "type": "rule",
+      "title": "Arşiv bilgilerini kimler isteyebilir?",
+      "body": "Arşiv bilgilerini şunlar isteyebilir (md 10/1):\n- a) Kişinin kendisi ya da vekâletnamede açıkça belirtilmiş olmak koşuluyla vekili; kullanılış amacını belirtmesi gerekir\n- b) Bir soruşturma veya kovuşturma kapsamında Cumhuriyet başsavcılıkları, hâkim veya mahkemeler\n- c) Yetkili seçim kurulları\n- d) Özel kanunlarda gösterilen hâllerde ilgili kamu kurum ve kuruluşları\n\nAdlî sicil bilgisinden farkına dikkat et. Kamu kurum ve kuruluşlarına adlî sicil bilgisi amaç belirtilerek verilebilir (md 7). Arşivi ise ancak özel kanunlarda gösterilen hâllerde isteyebilirler.",
+      "articleRefs": [
+        "7",
+        "10"
+      ],
+      "derivedNumbers": [],
+      "counterNumbers": []
+    },
+    {
+      "type": "rule",
+      "title": "Özel korumalar ve gizlilik",
+      "body": "- **Yakınının kaydı (md 10/2):** Kişi hakkında bir karar alınırken ya da bir işlem yapılırken bir yakınının adlî sicil ve arşiv kayıtları istenemez. Bu bilgiler kişiyi herhangi bir haktan yoksun bırakmak için dayanak olarak da kullanılamaz. Bu yasakların istisnası, kanunda açıkça belirtilen hâllerdir.\n- **Küçükler (md 10/3):** 18 yaşından küçüklerle ilgili adlî sicil ve arşiv kayıtlarını yalnızca Cumhuriyet başsavcılıkları, hâkim veya mahkemeler isteyebilir. Bu istek de ancak soruşturma ve kovuşturma kapsamında değerlendirme amacıyla yapılabilir.\n- **Gizlilik (md 11):** Adlî sicil ve arşiv bilgileri gizlidir. Görevlilerce açıklanamaz. Kanuna göre bilgi verilen kişi, kurum ve kuruluşlar da bu bilgileri veriliş amacı dışında kullanamaz.",
+      "articleRefs": [
+        "10",
+        "11"
+      ],
+      "derivedNumbers": [],
+      "counterNumbers": []
+    },
+    {
+      "type": "rule",
+      "title": "Arşiv kayıtlarının tamamen silinmesi",
+      "body": "Arşiv bilgileri şu hâllerde **tamamen silinir** (md 12/1):\n- a) İlgilinin ölümü üzerine\n- b) Anayasanın 76 ncı maddesi ile Türk Ceza Kanunu dışındaki kanunlarda bir hak yoksunluğuna neden olan mahkûmiyetler. Süre, kaydın arşive alınma koşullarının oluştuğu tarihten itibaren işler:\n  1. Yasaklanmış hakların geri verilmesi kararı alınmışsa **15 yıl** geçmesiyle\n  2. Bu karar koşulu aranmaksızın **30 yıl** geçmesiyle\n- c) Diğer mahkûmiyetler: aynı tarihten itibaren **5 yıl** geçmesiyle\n\n**Ayrıca tamamen silinir:**\n- Fiil kanunla suç olmaktan çıkarılırsa, o suçtan mahkûmiyete ilişkin adlî sicil ve arşiv kayıtları **talep aranmaksızın** silinir (md 12/2).\n- Kanun yararına bozma veya yargılamanın yenilenmesi sonucunda beraat ya da ceza verilmesine yer olmadığı kararı verilebilir. Bu karar kesinleşirse önceki mahkûmiyete ilişkin adlî sicil ve arşiv kaydı silinir (md 12/3).\n- Akıl hastalığı nedeniyle hükmedilen güvenlik tedbirlerine ilişkin kayıtlar, infazın tamamlanmasıyla silinir (md 12/4).",
+      "articleRefs": [
+        "12"
+      ],
+      "derivedNumbers": [],
+      "counterNumbers": []
+    },
+    {
+      "type": "trap",
+      "title": "15 mi, 30 mu, 5 mi?",
+      "body": "Arşivden tamamen silinme süresi mahkûmiyetin türüne göre değişir.\n- Anayasa md 76 veya Türk Ceza Kanunu dışındaki kanunlarda hak yoksunluğuna yol açan mahkûmiyetlerde: yasaklanmış hakların geri verilmesi kararı alınmışsa **15 yıl**; bu karar koşulu aranmaksızın **30 yıl**.\n- Geri kalan bütün mahkûmiyetlerde: **5 yıl**.\n\nSürelerin başlangıcı hükmün kesinleşmesi değildir. Başlangıç, **kaydın arşive alınma koşullarının oluştuğu tarih**tir.\n\nAkıl hastalığı nedeniyle hükmedilen güvenlik tedbirlerinde süre beklenmez; infaz tamamlanınca kayıt tamamen silinir. Fiil suç olmaktan çıkarıldığında da kimsenin talebi gerekmez.",
+      "articleRefs": [
+        "12"
+      ],
+      "derivedNumbers": [],
+      "counterNumbers": []
+    },
+    {
+      "type": "numbers",
+      "title": "Kayıt ve silinme süreleri",
+      "rows": [
+        {
+          "label": "Karşılıksız yararlanmada etkin pişmanlık kayıtlarının muhafaza süresi",
+          "value": "15 yıl",
+          "refs": [
+            "6"
+          ]
+        },
+        {
+          "label": "Kayıtları yalnız soruşturma/kovuşturma kapsamında istenebilenler",
+          "value": "18 yaşından küçükler",
+          "refs": [
+            "10"
+          ]
+        },
+        {
+          "label": "Arşivden silinme: hak yoksunluğu, geri verme kararı alınmışsa",
+          "value": "15 yıl",
+          "refs": [
+            "12"
+          ]
+        },
+        {
+          "label": "Arşivden silinme: hak yoksunluğu, geri verme kararı aranmaksızın",
+          "value": "30 yıl",
+          "refs": [
+            "12"
+          ]
+        },
+        {
+          "label": "Arşivden silinme: diğer mahkûmiyetler",
+          "value": "5 yıl",
+          "refs": [
+            "12"
+          ]
+        },
+        {
+          "label": "Arşiv silinme sürelerinin başlangıcı",
+          "value": "Kaydın arşive alınma koşullarının oluştuğu tarih",
+          "refs": [
+            "12"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "6",
+        "10",
+        "12"
+      ],
+      "derivedNumbers": [],
+      "counterNumbers": []
+    },
+    {
+      "type": "rule",
+      "title": "Adlî sicil ve arşivde sorgulama yetkisi",
+      "body": "**Bir suça ilişkin soruşturma ve kovuşturma kapsamında (md 13/1):**\n- Mahkeme, hâkim ve Cumhuriyet Başsavcılığı adlî sicil ve arşiv kayıtlarında **doğrudan doğruya** sorgulama yapabilir.\n- Kolluk ile diğer kamu kurum ve kuruluşları **Adalet Bakanının onayı ile** sorgulama yapabilir.\n\n**Mevzuat kayıt alınmasını öngörüyorsa (md 13/2):** Kamu kurum ve kuruluşları ilgili kişiler hakkında adlî sicil ve arşiv kayıtlarında sorgulama yapabilir. Bunu Adalet Bakanlığının belirleyeceği usul ve esaslar çerçevesinde yaparlar.\n\n**Gerçek kişiler (md 13/2):** Kendileriyle ilgili kayıtları sorgulayabilirler. Bunun için Adalet Bakanlığının belirleyeceği usul ve esaslara uyar, **güvenli kimlik doğrulama araçlarını** kullanırlar. Sonucu fiziki veya elektronik ortamda merciine verebilirler.",
+      "articleRefs": [
+        "13"
+      ],
+      "derivedNumbers": [],
+      "counterNumbers": []
+    },
+    {
+      "type": "rule",
+      "title": "Yasaklanmış hakların geri verilmesi: şartlar",
+      "body": "**Amaç (md 13/A-1):** Bu yol, 5237 sayılı Türk Ceza Kanunu **dışındaki** kanunların getirdiği hak yoksunluklarını gidermek içindir. Söz konusu kanunlar bu yoksunlukları belli bir suça ya da belli bir cezaya mahkûmiyete bağlamış olabilir.\n\n**Şartlar (md 13/A-1):** Türk Ceza Kanununun 53 üncü maddesinin beşinci ve altıncı fıkraları saklı kalmak kaydıyla şunlar gerekir:\n- a) Mahkûm olunan cezanın **infazının tamamlandığı tarihten** itibaren **3 yıl** geçmiş olması\n- b) Kişinin bu süre zarfında yeni bir suç işlememiş olması ve hayatını iyi halli olarak sürdürdüğü hususunda mahkemede kanaat oluşması\n\n**İnfaza başka nedenle son verilmişse (md 13/A-2):** Bu kural, infaza genel af veya etkin pişmanlık dışında başka bir hukukî nedenle son verilen durumlar içindir. Bu durumda **hükmün kesinleştiği tarihten** itibaren **5 yıl** geçmesi gerekir. Ancak bu süre, mahkûm olunan hapis cezasına 3 yıl eklenerek bulunacak süreden az olamaz.",
+      "articleRefs": [
+        "13/A"
+      ],
+      "derivedNumbers": [],
+      "counterNumbers": []
+    },
+    {
+      "type": "rule",
+      "title": "Yasaklanmış hakların geri verilmesi: usul",
+      "body": "- **Talep (md 13/A-3):** Hükümlü veya vekili yapar.\n- **Karar veren mahkeme (md 13/A-3):** Hükmü veren mahkeme ya da hükümlünün ikametgâhının bulunduğu yerdeki aynı derecedeki mahkeme.\n- **İnceleme (md 13/A-4):** Dosya üzerinden yapılabilir. Mahkeme isterse Cumhuriyet savcısını ve hükümlüyü dinleyerek de karar verebilir.\n- **Kanun yolu (md 13/A-5):** Hükümle ilgili olarak Ceza Muhakemesi Kanununda öngörülen kanun yolu.\n- **Kayıt (md 13/A-6):** Karar kesinleşirse adlî sicil arşivine kaydedilir.\n- **Masraf (md 13/A-7):** Bütün masraflar hükümlü tarafından karşılanır.",
+      "articleRefs": [
+        "13/A"
+      ],
+      "derivedNumbers": [],
+      "counterNumbers": []
+    },
+    {
+      "type": "trap",
+      "title": "Geri verme süresinde başlangıç noktasına bak",
+      "body": "Süre sorularında önce sürenin nereden başladığına bak.\n- **Olağan durum:** **3 yıl**, cezanın **infazının tamamlandığı** tarihten işler.\n- **İnfaza başka nedenle son verildiyse:** Burada genel af veya etkin pişmanlık dışındaki bir hukukî neden söz konusudur. **5 yıl**, **hükmün kesinleştiği** tarihten işler. Bu süre hapis cezası + 3 yıldan kısa olamaz.\n\nKapsamı da karıştırma. Bu yol Türk Ceza Kanunu dışındaki kanunlardaki hak yoksunlukları içindir. Talebi hükümlü ya da vekili yapar, masrafları da hükümlü karşılar.",
+      "articleRefs": [
+        "13/A"
+      ],
+      "derivedNumbers": [],
+      "counterNumbers": []
+    },
+    {
+      "type": "rule",
+      "title": "Komisyon, yönetmelik ve son hükümler",
+      "body": "**Komisyon (md 14):** **3 hâkimden** oluşan bir komisyon kurulur. Komisyon, Adlî Sicil ve İstatistik Genel Müdürlüğünün teklifi ve Bakan onayı ile oluşturulur. Görevi, adlî sicil ve arşiv kayıtlarının silinmesiyle ilgili kararları almak ve kanunla verilen diğer görevleri yerine getirmektir.\n\n**Yönetmelik (md 15):** Kanunun uygulama usul ve esasları Adalet Bakanlığınca çıkarılacak yönetmelikte belirlenir. Yönetmelik, Kanunun yürürlüğe girdiği tarihten itibaren **6 ay** içinde çıkarılır.\n\n**Atamalar (md 16):** Aşağıdaki personel Adalet Bakanlığınca atanır; gerektiğinde sözleşmeli olarak da çalıştırılabilir. Kapsamdakiler, merkezî ve mahalli adlî sicildeki şube müdürü, mühendis, çözümleyici, programcı, istatistik uzmanı, tercüman, şef, bilgisayar işletmeni ile veri hazırlama ve kontrol işletmenleridir.\n\n**Malî hükümler (md 17):** Mülgadır.\n\n**Yürürlükten kaldırılan hükümler (md 18):** 3682 sayılı Adlî Sicil Kanunu yürürlükten kaldırılmıştır.\n\n**Yürütme (md 20):** Kanun hükümlerini Bakanlar Kurulu yürütür.\n\n**Not:** Yürütme maddesi Kanun metnindeki hâliyle verilmiştir; Bakanlar Kurulu bugün Anayasa'da yer almaz ve ibare Kanun metninde güncellenmemiştir.",
+      "articleRefs": [
+        "14",
+        "15",
+        "16",
+        "17",
+        "18",
+        "20"
+      ],
+      "derivedNumbers": [],
+      "counterNumbers": []
+    },
+    {
+      "type": "numbers",
+      "title": "Geri verme, komisyon ve yönetmelik sayıları",
+      "rows": [
+        {
+          "label": "Geri verme: infazın tamamlanmasından itibaren beklenecek süre",
+          "value": "3 yıl",
+          "refs": [
+            "13/A"
+          ]
+        },
+        {
+          "label": "Geri verme: infaza başka hukukî nedenle son verilmişse, kesinleşmeden itibaren",
+          "value": "5 yıl",
+          "refs": [
+            "13/A"
+          ]
+        },
+        {
+          "label": "Geri verme: bu sürenin alt sınırı",
+          "value": "Hapis cezası + 3 yıl",
+          "refs": [
+            "13/A"
+          ]
+        },
+        {
+          "label": "Silinme kararlarını alan komisyonun üye sayısı",
+          "value": "3 hâkim",
+          "refs": [
+            "14"
+          ]
+        },
+        {
+          "label": "Yönetmeliğin çıkarılma süresi",
+          "value": "6 ay",
+          "refs": [
+            "15"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "13/A",
+        "14",
+        "15"
+      ],
+      "derivedNumbers": [],
+      "counterNumbers": []
+    },
+    {
+      "type": "compare",
+      "title": "Adlî sicil kaydı mı, arşiv kaydı mı?",
+      "rows": [
+        {
+          "aspect": "İçerik",
+          "left": "Adlî sicil: kesinleşmiş mahkûmiyet hükümleri ve md 4'te sayılan kararlar",
+          "right": "Arşiv: md 9/1'deki hâllerde sicilden silinen bilgiler; md 9/3'e göre yabancı mahkemelerin Türk vatandaşları hakkında verdiği adlî para cezası ve erteleme hükümleri doğrudan arşive",
+          "refs": [
+            "4",
+            "9"
+          ]
+        },
+        {
+          "aspect": "Kime verilir / kim isteyebilir",
+          "left": "Amaç belirtilerek ilgili kişi veya vekili (vekâletnamede açıkça belirtilmişse); kamu kurum ve kuruluşları; kamu kurumu niteliğindeki meslek kuruluşları; yabancı devletler mütekabiliyetle",
+          "right": "Amaç belirtilerek kişi veya vekili; soruşturma/kovuşturma kapsamında Cumhuriyet başsavcılıkları, hâkim veya mahkemeler; yetkili seçim kurulları; özel kanunlardaki hâllerde ilgili kamu kurum ve kuruluşları",
+          "refs": [
+            "7",
+            "10"
+          ]
+        },
+        {
+          "aspect": "Kayıttan çıkış",
+          "left": "İnfazın tamamlanması, şikayetten vazgeçme veya etkin pişmanlık, ceza zamanaşımı, genel af → arşive alınır",
+          "right": "15 yıl / 30 yıl / 5 yıl geçmesiyle → tamamen silinir",
+          "refs": [
+            "9",
+            "12"
+          ]
+        },
+        {
+          "aspect": "Ölüm",
+          "left": "Tamamen silinir",
+          "right": "Tamamen silinir",
+          "refs": [
+            "9",
+            "12"
+          ]
+        },
+        {
+          "aspect": "Fiilin suç olmaktan çıkarılması",
+          "left": "Talep aranmaksızın tamamen silinir",
+          "right": "Talep aranmaksızın tamamen silinir",
+          "refs": [
+            "12"
+          ]
+        },
+        {
+          "aspect": "18 yaşından küçükler",
+          "left": "Yalnız soruşturma/kovuşturma kapsamında Cumhuriyet başsavcılıkları, hâkim veya mahkemelerce istenebilir",
+          "right": "Yalnız soruşturma/kovuşturma kapsamında Cumhuriyet başsavcılıkları, hâkim veya mahkemelerce istenebilir",
+          "refs": [
+            "10"
+          ]
+        },
+        {
+          "aspect": "Gizlilik",
+          "left": "Gizlidir; veriliş amacı dışında kullanılamaz",
+          "right": "Gizlidir; veriliş amacı dışında kullanılamaz",
+          "refs": [
+            "11"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "4",
+        "7",
+        "9",
+        "10",
+        "11",
+        "12"
+      ],
+      "derivedNumbers": [],
+      "counterNumbers": []
+    },
+    {
+      "type": "exam_stats",
+      "title": "Sınav der ki",
+      "rows": [
+        {
+          "label": "Bu ünitenin maddelerinden yayındaki soru",
+          "value": "0",
+          "refs": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "13/A",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "20"
+          ]
+        },
+        {
+          "label": "Hiç soru çıkmamış",
+          "value": "md 1, md 2, md 3, md 4, md 5, md 6, md 7, md 8, md 9, md 10, md 11, md 12, md 13, md 13/A, md 14, md 15, md 16, md 17, md 18, md 20",
+          "refs": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "13/A",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "20"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12",
+        "13",
+        "13/A",
+        "14",
+        "15",
+        "16",
+        "17",
+        "18",
+        "20"
+      ],
+      "generated": true
+    },
+    {
+      "type": "bridge",
+      "title": "Bu üniteden soru çöz",
+      "articleRefs": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12",
+        "13",
+        "13/A",
+        "14",
+        "15",
+        "16",
+        "17",
+        "18",
+        "20"
+      ],
+      "generated": true,
+      "rows": [
+        {
+          "label": "Madde kapsamlı seans",
+          "value": "md 1–13, 13/A, 14–20, 0 soru",
+          "refs": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "13/A",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "20"
+          ]
+        }
+      ]
+    }
+  ]
+}

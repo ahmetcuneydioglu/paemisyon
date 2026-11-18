@@ -1,0 +1,600 @@
+{
+  "unit": {
+    "slug": "cgti-1-amac",
+    "legislationSlug": "5275-ceza-ve-guvenlik-tedbirlerinin-infazi-hakkinda-kanun",
+    "topicId": "3a7fb703-175b-4a01-a217-a00766c51d07",
+    "title": "İnfazın ilkeleri, kurumlar ve ertelenme",
+    "subtitle": "İnfazın ilkeleri, ceza infaz kurumlarının türleri ve infazın ertelenmesi",
+    "articleFrom": "1",
+    "articleTo": "18",
+    "readingMinutes": 16,
+    "sourceLabel": "AI özeti — 5275 Ceza ve Güvenlik Tedbirlerinin İnfazı Hakkında Kanun, md 1–16, 16/A, 17, 17/A, 18",
+    "articleNos": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+      "15",
+      "16",
+      "16/A",
+      "17",
+      "17/A",
+      "18"
+    ],
+    "generatedBy": "claude-opus-5-5 (ozet-uret.ts)",
+    "sortOrder": 1
+  },
+  "blocks": [
+    {
+      "type": "concept",
+      "title": "İnfaz neye hizmet eder?",
+      "body": "Bu Kanun, ceza ve güvenlik tedbirlerinin infazına ilişkin usûl ve esasları düzenler. Temel ilke **eşitliktir**. İnfaz kuralları hükümlülerin ırk, dil, din, mezhep, milliyet, renk, cinsiyet, doğum, felsefî inanç, millî veya sosyal köken, siyasî veya diğer fikir ve düşünceleri, ekonomik güçleri ve diğer toplumsal konumları yönünden ayırım yapılmadan uygulanır. Hiçbir kimseye ayrıcalık tanınmaz. Zalimane, insanlık dışı, aşağılayıcı ve onur kırıcı davranışlarda da bulunulamaz. Amacı sorarlarsa önce şunu hatırla: öncelikle **genel ve özel önlemeyi** sağlamak. Bunun yolu, hükümlünün yeniden suç işlemesini engelleyici etkenleri güçlendirmek ve toplumu suça karşı korumaktır. Ayrıca hükümlünün yeniden sosyalleşmesi teşvik edilir. Üretken, kanunlara, nizamlara ve toplumsal kurallara saygılı, sorumluluk taşıyan bir yaşam biçimine uyumu kolaylaştırılır.",
+      "articleRefs": [
+        "1",
+        "2",
+        "3"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Kesinleşmeden infaz yok",
+      "body": "**İnfazın koşulu:** Mahkûmiyet hükümleri kesinleşmedikçe infaz olunamaz.\n\n**Dayanak ve izleme:**\n- Mahkeme, kesinleşen ve yerine getirilmesini onayladığı cezaya ilişkin hükmü **Cumhuriyet Başsavcılığına** gönderir.\n- Bu hükme göre cezanın infazı **Cumhuriyet savcısı** tarafından izlenir ve denetlenir.",
+      "articleRefs": [
+        "4",
+        "5"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Hapis cezalarının infazında gözetilecek ilkeler",
+      "body": "Hapis cezalarının infaz rejimi şu temel ilkelere dayalı olarak düzenlenir:\n- **a) Güvenlik:** Hükümlüler kaçmalarını önleyecek tedbirler alınarak düzen, güvenlik ve disiplin çerçevesinde güvenli biçimde tutulur.\n- **b) Düzenli yaşam ve insan onuru:** Hükümlülerin düzenli bir yaşam sürdürmeleri sağlanır. Hürriyetten yoksunluk, insan onuruna saygının korunmasını sağlayan maddî ve manevî koşullar altında çektirilir. Anayasada yer alan diğer haklar, infazın temel amaçları saklı kalmak üzere, bu Kanunda öngörülen kurallar uyarınca kısıtlanabilir.\n- **c) İyileştirme ve kanunîlik:** Mümkün olan araç ve olanaklar kullanılır. Hükümlünün kanun ve yönetmeliklerle tanınmış haklarının dokunulmazlığı için kanunîlik ve hukuka uygunluk ilkeleri esas alınır.\n- **d) Bireyselleştirme:** İyileştirmeye gereksinimi olmadığı saptanan hükümlüler için kişilikleriyle orantılı bireyselleştirilmiş programlara özen gösterilir. Bu hususlar yönetmeliklerde düzenlenir.\n- **e) Adalet ve denetim:** Kurumlar, kanun ve yönetmeliklerin verdiği yetkilere dayanarak nitelikli elemanlarca denetlenir.\n- **f) Koruma:** Yaşam hakkı ile beden ve ruh bütünlüğünü korumak için her türlü koruyucu tedbirin alınması zorunludur.\n- **g) Uyma yükümlülüğü:** Hükümlünün kanun ve yönetmeliklerin belirttiği hükümlere uyması zorunludur.\n- **h) Disiplin:** Kurum düzenini ihlâl edenlere Kanunda belirtilen disiplin cezaları uygulanır. Bu cezalara Kanunda belirtilen merciler, sürelerine uygun olarak hükmeder. Savunma ve itirazlar da Kanunun gösterdiği mercilere yapılır.",
+      "articleRefs": [
+        "6"
+      ]
+    },
+    {
+      "type": "concept",
+      "title": "İyileştirme neyle ölçülür?",
+      "body": "Bir iyileştirme programının işe yarayıp yaramadığını, hükümlünün **elde ettiği yeni tutum ve becerilere** bakarak anlarsın. Programların başarısı bunlarla orantılı olarak ölçülür. Bu yüzden hükümlünün iyileştirme çabalarına istekli olması teşvik edilir. Hapis cezası, kendi içindeki zararlı etki yapıcı niteliği mümkün olduğu ölçüde azaltacak programlar, usûller, araçlar ve zihniyet doğrultusunda yerine getirilir. İyileştirme araçları da hükümlünün sağlığını ve kişiliğine olan saygısını korumasını sağlayacak usûl ve esaslara göre uygulanır.",
+      "articleRefs": [
+        "7"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Kapalı ve yüksek güvenlikli kapalı ceza infaz kurumları",
+      "body": "**Kapalı ceza infaz kurumu:** İç ve dış güvenlik görevlileri bulunur. Firara karşı engellerle donatılmıştır. Oda ve koridor kapıları kapalı tutulur. Hükümlünün gereksinimine göre bireysel, grup hâlinde veya toplu iyileştirme uygulanabilir.\n\n**Yüksek güvenlikli kapalı:** Oda ve koridor kapıları **sürekli** kapalıdır. Sıkı güvenlik rejimine tâbi hükümlüler **bir veya üç kişilik** odalarda barındırılır. İyileştirme bireysel veya grup hâlinde yapılır.\n\n**Cezası doğrudan bu kurumlarda infaz edilenler:**\n- **Ağırlaştırılmış müebbet hapis** cezasına mahkûm olanlar.\n- Süresine bakılmaksızın, suç işlemek amacıyla örgüt kurmak, yönetmek veya örgütün faaliyeti çerçevesinde, Türk Ceza Kanunundaki şu suçlardan mahkûm olanlar:\n  - insanlığa karşı suçlar (TCK md 77, 78),\n  - kasten öldürme suçları (TCK md 81, 82),\n  - uyuşturucu veya uyarıcı madde imal ve ticareti (TCK md 188),\n  - Devletin güvenliğine karşı suçlardan yalnız TCK md 302, 303, 304, 307 ve 308,\n  - Anayasal düzene ve bu düzenin işleyişine karşı suçlar (TCK md 309–315).\n\n**Sonradan gönderilenler:**\n- Eylem ve tutumları nedeniyle tehlikeli hâlde bulunan ve özel gözetim ve denetim altında bulundurulmaları gerekli olduğu saptananlar.\n- Bulundukları kurumda düzen ve disiplini bozanlar.\n- İyileştirme tedbir, araç ve usûllerine ısrarla karşı koyanlar.\n\n**Yetersizlik hâli:** Bu kurumlar ihtiyacı karşılamazsa diğer kapalı ceza infaz kurumlarının yüksek güvenlikli bölümleri kullanılır.",
+      "articleRefs": [
+        "8",
+        "9"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Üçte iki mi, üçte bir mi?",
+      "body": "Yüksek güvenlikli kurumdan çıkışta kesirleri karıştırma. Üç ayrı ölçü var:\n- **Müebbet hapiste:** 107 nci maddede belirtilen koşullu salıverilme süresinin **üçte ikisi**. Ölçü toplam ceza değildir.\n- **Süreli hapiste:** toplam cezanın **üçte biri**.\n- **Tehlikeli hâl, düzeni bozma veya iyileştirmeye ısrarla karşı koyma nedeniyle sonradan gönderilenlerde:** **geriye kalan** toplam cezanın üçte biri.\n\nSürenin dolması da yetmez, **iyi hâl** göstermek gerekir. Tutum ve kişiliğe uygun başka kuruma gönderme kararı \"verilebilir\"; zorunlu değildir.",
+      "articleRefs": [
+        "9"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Kadın ve çocuk kapalı ceza infaz kurumları",
+      "body": "**Kadın kapalı:**\n- Kadın hükümlülerin hapis cezalarının infaz edildiği, 8 ve 9 uncu maddelere göre kurulmuş kurumlardır.\n- **İç güvenlik görevlileri kadınlardan** oluşturulur.\n- Kurumlar yetersizse cezalar, diğer kurumların erkek hükümlülerin kaldığı bölümlerle **bağlantısı olmayan** bölümlerinde infaz edilir.\n\n**Çocuk kapalı:**\n- Şu çocuklar barındırılır: çocuk hükümlüler veya tutuklular ile çocuk eğitimevlerinden disiplin veya diğer nedenlerle kapalı kuruma nakillerine karar verilen çocuklar.\n- Firara karşı engelleri ve iç ve dış güvenlik görevlileri bulunur. Eğitim ve öğretime dayalı kurumlardır.\n- Oniki-onsekiz yaş grubu çocuklar suç türleri, cinsiyetleri ve fizikî gelişim durumları göz önüne alınarak ayrı ayrı bölümlerde barındırılır.\n- Kendilerine özgü kurum yoksa kapalı kurumların çocuklara ayrılan bölümlerine yerleştirilirler.\n- Ayrı bölüm de yoksa kız çocukları kadın kapalı kurumunun bir bölümünde veya diğer kapalı kurumların kendilerine ayrılan bölümlerinde barındırılır.\n- Eğitim ve öğretim verilmesi ilkesine **tam olarak** uyulur.",
+      "articleRefs": [
+        "10",
+        "11"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Gençlik kapalı ceza infaz kurumları; gözlem ve sınıflandırma",
+      "body": "**Gençlik kapalı:**\n- Cezanın **infazına başlandığı tarihte** onsekiz yaşını bitirmiş olup da yirmibir yaşını doldurmamış genç hükümlülerin cezalarını çektiği kurumlardır.\n- Eğitim ve öğretim esasına dayalıdır. Firara karşı engelleri ve iç ve dış güvenlik görevlileri bulunur.\n- Ayrı kurum kurulamazsa diğer kapalı kurumların gençlere ayrılan bölümlerinde, bu maddedeki esaslara göre barındırılırlar.\n- 9 uncu madde kapsamındaki gençlerin cezaları, gençlik kapalı kurumlarının **güvenlikli bölümlerinde** yerine getirilir.\n\n**Gözlem ve sınıflandırma merkezleri:**\n- Hükümlülerin durumlarına uygun kurumlara ayrımını, 23 üncü maddede belirtilen gözlem ve sınıflandırma merkezleri yapar.\n- Merkezlerin kuruluş, görev, çalışma esas ve usûlleri yönetmelikte gösterilir.",
+      "articleRefs": [
+        "12",
+        "13"
+      ]
+    },
+    {
+      "type": "numbers",
+      "title": "Kurum türlerinde sayılar",
+      "rows": [
+        {
+          "label": "Yüksek güvenlikli kapalıda oda",
+          "value": "bir veya üç kişilik",
+          "refs": [
+            "9"
+          ]
+        },
+        {
+          "label": "Başka kuruma gönderilme – müebbet hapis",
+          "value": "koşullu salıverilme süresinin üçte ikisi + iyi hâl",
+          "refs": [
+            "9"
+          ]
+        },
+        {
+          "label": "Başka kuruma gönderilme – süreli hapis",
+          "value": "toplam cezanın üçte biri + iyi hâl",
+          "refs": [
+            "9"
+          ]
+        },
+        {
+          "label": "Başka kuruma gönderilme – sonradan gönderilenler",
+          "value": "geriye kalan toplam cezanın üçte biri + iyi hâl",
+          "refs": [
+            "9"
+          ]
+        },
+        {
+          "label": "Çocuk kapalıda ayrı bölümlerde barındırılan grup",
+          "value": "oniki-onsekiz yaş",
+          "refs": [
+            "11"
+          ]
+        },
+        {
+          "label": "Gençlik kapalı – yaş (infaza başlama tarihinde)",
+          "value": "onsekiz yaşını bitirmiş, yirmibir yaşını doldurmamış",
+          "refs": [
+            "12"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "9",
+        "11",
+        "12"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Açık ceza infaz kurumları: tanım ve doğrudan alınanlar",
+      "body": "**Tanım:**\n- İyileştirmede hükümlülerin çalıştırılmalarına ve meslek edindirilmelerine öncelik verilir.\n- Firara karşı engel ve **dış güvenlik görevlisi bulunmaz**. Güvenlik bakımından kurum görevlilerinin gözetim ve denetimi ile yetinilir.\n- İhtiyaca göre **kadın açık** ve **gençlik açık** ceza infaz kurumları şeklinde de kurulabilir.\n\n**Cezası doğrudan açık kurumda yerine getirilenler:**\n- **a)** Kasıtlı suçlardan toplam **üç yıl veya daha az** hapis cezasına mahkûm olanlar. Şunlar bu kapsam dışındadır:\n  - terör suçları, örgüt kurmak, yönetmek veya örgüte üye olmak suçları, örgüt faaliyeti kapsamında işlenen suçlar ve cinsel dokunulmazlığa karşı suçlardan mahkûm olanlar,\n  - **ikinci defa mükerrir** olanlar,\n  - koşullu salıverilme kararının geri alınması nedeniyle cezası aynen infaz edilenler.\n- **b)** Taksirli suçlardan toplam **beş yıl veya daha az** hapis cezasına mahkûm olanlar.\n- **c)** Adlî para cezası infaz sürecinde hapis cezasına çevrilenler.\n- **d)** İcra ve İflas Kanunu gereğince tazyik hapsine tabi tutulanlar.",
+      "articleRefs": [
+        "14"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Açık ve kapalı arasında geçiş",
+      "body": "**Kapalıdan açığa:** Karar, 89 uncu madde uyarınca yapılan değerlendirme sonucunda verilir.\n\n**İnfaz hâkiminin onayından sonra uygulananlar:** Aşağıdaki hükümlülerin açığa ayrılmasına ilişkin idare ve gözlem kurulu kararları:\n- toplam **on yıl ve daha fazla** hapis cezasına mahkûm olanlar,\n- terör suçları, örgüt kurmak, yönetmek veya örgüte üye olmak suçları ve örgüt faaliyeti kapsamında işlenen suçlardan mahkûm olanlar,\n- kasten öldürme ve cinsel dokunulmazlığa karşı suçlardan mahkûm olanlar,\n- uyuşturucu veya uyarıcı madde imal ve ticareti suçlarından mahkûm olanlar.\n\n**Açıktan kapalıya** (doğrudan alınanlar dahil):\n- **a)** Firar edenler veya başka bir fiilden dolayı haklarında tutuklama kararı verilenler → idare ve gözlem kurulu kararıyla.\n- **b)** Kınamadan başka bir disiplin cezası alıp bu cezası kesinleşenler; ya da disiplin cezası kesinleşmemiş olsa bile eylemi kurum düzeni veya kişi güvenliği bakımından tehlike oluşturanlar → idare ve gözlem kurulu kararıyla.\n- **c)** Açık kurum şartlarına veya çalışma koşullarına uyum sağlayamayacakları saptananlar → idare ve gözlem kurulu kararı **ve infaz hâkiminin onayıyla**.\n\nAyırma, süreler ve geri gönderme gibi konulardaki usul ve esaslar yönetmelikte gösterilir.",
+      "articleRefs": [
+        "14"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Her disiplin cezası kapalıya döndürmez",
+      "body": "Açıktan kapalıya dönüşte iki inceliğe dikkat et.\n\n**Kınama yetmez.** Kınama dışında bir disiplin cezası alınmış ve bu ceza kesinleşmiş olmalı. Ceza kesinleşmeden gönderme ancak eylem kurum düzeni ya da kişi güvenliği bakımından tehlike oluşturuyorsa mümkündür.\n\n**İnfaz hâkiminin onayı her yerde aranmaz.** Açık kurum şartlarına veya çalışma koşullarına uyum sağlayamayacağı saptananlarda onay gerekir. Firar, tutuklama ve disiplin hâllerinde idare ve gözlem kurulunun kararı yeterlidir.",
+      "articleRefs": [
+        "14"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Çocuk eğitimevleri",
+      "body": "**Tanım:** Çocuk hükümlüler hakkındaki cezaların; eğitilme, meslek edinme ve yeniden toplumla bütünleştirilme amaçlarıyla yerine getirildiği tesislerdir.\n- **Firara karşı engel bulundurulmaz.**\n- Kurum güvenliği iç güvenlik görevlilerinin gözetim ve sorumluluğunda sağlanır.\n\n**Kalış süresi:** Kurum içinde veya dışında bir eğitim ve öğretim programına devam eden ve onsekiz yaşını dolduran çocuklar, eğitimlerini tamamlayabilmeleri için **yirmibir yaşını bitirinceye kadar** kalabilir. Bu bir izindir; \"verilebilir\".\n\n**Çocuk kapalıdan eğitimevine ayırma:**\n- Kararı, 89 uncu madde uyarınca idare ve gözlem kurulu verir.\n- Değerlendirme **en geç üç ayda bir** yapılır.\n- Değerlendirmeye **en az bir uzman** görevli katılır: psikolog, pedagog, çocuk gelişimcisi, sosyal çalışmacı, psikolojik danışman, rehberlik uzmanı, öğretmen ve Türkiye Barolar Birliğinin çocuk hakları komisyonundan görevlendireceği avukat gibi.\n- Tutum ve davranışı olumsuz değerlendirilen çocuğun yeniden değerlendirilme süresi **altı ayı** geçemez.\n\n**Cezası doğrudan eğitimevinde yerine getirilenler:**\n- kasıtlı suçlardan toplam **üç yıl veya daha az** süreli hapis cezasına mahkûm olanlar,\n- taksirli suçlardan toplam **beş yıl veya daha az** süreli hapis cezasına mahkûm olanlar.\n\n**Çocuk kapalıya gönderilenler** (idare ve gözlem kurulu kararıyla):\n- Firar edenler veya başka bir fiilden dolayı haklarında tutuklama kararı verilenler.\n- **Kapalı ceza infaz kurumuna iade** veya **odaya kapatma** disiplin cezası alıp bu cezası kesinleşenler.\n- Disiplin cezası kesinleşmemiş olsa bile eylemi kurum düzeni veya kişi güvenliği bakımından tehlike oluşturanlar.",
+      "articleRefs": [
+        "15"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Hastalık nedeniyle infazın geri bırakılması",
+      "body": "**Akıl hastalığı:**\n- Cezanın infazı geriye bırakılır.\n- Hükümlü iyileşinceye kadar Türk Ceza Kanununun 57 nci maddesinde belirtilen sağlık kurumunda koruma ve tedavi altına alınır.\n- **Sağlık kurumunda geçen süreler cezaevinde geçmiş sayılır.**\n\n**Diğer hastalıklar:**\n- İnfaza, resmî sağlık kuruluşlarının mahkûmlara ayrılan bölümlerinde devam olunur.\n- İnfaz mahkûmun hayatı için **kesin bir tehlike** teşkil ediyorsa, iyileşinceye kadar geri bırakılır.\n\n**Usul:**\n- **Rapor:** Adlî Tıp Kurumunca düzenlenen rapor; ya da Adalet Bakanlığınca belirlenen tam teşekküllü hastanelerin sağlık kurullarınca düzenlenip Adlî Tıp Kurumunca onaylanan rapor.\n- **Karar mercii:** infazın yapıldığı yer Cumhuriyet Başsavcılığı.\n- **Tebliğ ve bildirim:** Karar, mahkûmun tâbi olacağı yükümlülükler belirtilerek kendisine ve yasal temsilcisine tebliğ edilir. Bulunacağı yer, kendisi veya yasal temsilcisi tarafından ilgili Cumhuriyet Başsavcılığına bildirilir.\n- **İnceleme:** Sağlık durumu raporda belirtilen sürelere göre incelettirilir. Süre belirtilmemişse **birer yıllık** dönemlere göre incelettirilir.\n- **Devam kararı:** İnceleme sonuçlarına göre, geri bırakmanın devamına kararı veren Cumhuriyet Başsavcılığı karar verir.\n- **İzleme:** Tedbirler, bildirimin yapıldığı yerdeki kolluk makam ve memurlarınca yerine getirilir.\n- **Kaldırma:** Yükümlülüklere aykırılıkta karar, kararı veren Cumhuriyet Başsavcılığınca kaldırılır. Bu karara karşı **infaz hâkimliğine** başvurulabilir.",
+      "articleRefs": [
+        "16"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Gebelik, doğum ve ağır hastalık",
+      "body": "**Gebelik ve doğum:**\n- İnfaz, gebe olan veya doğurduğu tarihten itibaren **bir yıl altı ay** geçmemiş bulunan kadınlar hakkında geri bırakılır.\n- Çocuk ölmüş veya anasından başka birine verilmişse, doğumdan itibaren **iki ay** geçince ceza infaz olunur.\n\n**İstisna:** Kapalı ceza infaz kurumuna girdikten sonra gebe kalanlardan şunlar hakkında bu geri bırakma uygulanmaz:\n- koşullu salıverilmesine **altı yıldan fazla** süre kalanlar,\n- eylem ve tutumları nedeniyle tehlikeli sayılanlar.\n\nBu kişilerin cezasının o kısmı, kurumlarda kendileri için düzenlenen uygun yerlerde infaz olunur.\n\n**Ağır hastalık veya engellilik:**\n- **Şartlar:** Mahkûm, maruz kaldığı ağır bir hastalık veya engellilik nedeniyle ceza infaz kurumu koşullarında hayatını yalnız idame ettirememeli. Toplum güvenliği bakımından da ağır ve somut tehlike oluşturmayacağı değerlendirilmeli.\n- **Sonuç:** Cezanın infazı, üçüncü fıkradaki usule göre iyileşinceye kadar geri bırakılabilir.",
+      "articleRefs": [
+        "16"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "\"Geri bırakılır\" ile \"geri bırakılabilir\" aynı şey değil",
+      "body": "16 ncı maddede fiilin kipine dikkat et.\n\n**\"Geri bırakılır\" denen hâller:**\n- akıl hastalığı,\n- hayat için kesin tehlike oluşturan diğer hastalıklar,\n- gebelik ve doğum.\n\n**\"Geri bırakılabilir\" denen hâl:** Ağır hastalık veya engellilik nedeniyle hayatını yalnız idame ettiremeyen mahkûm. Burada ayrıca toplum güvenliği bakımından ağır ve somut tehlike oluşturmayacağı değerlendirmesi de aranır.\n\n**Bir dikkat noktası daha:** Diğer hastalıklarda kural geri bırakma değildir; infaz resmî sağlık kuruluşlarının mahkûmlara ayrılan bölümlerinde sürer. \"Sağlık kurumunda geçen süreler cezaevinde geçmiş sayılır\" cümlesi ise akıl hastalığı fıkrasında yer alır.",
+      "articleRefs": [
+        "16"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Çocuğunun hastalığı nedeniyle kadın hükümlünün cezasının ertelenmesi",
+      "body": "**Şartlar** (infazına başlanmış olsa bile):\n- Kadın hükümlü, toplam **on yıl veya daha az** süreli hapis cezasına mahkûm olmuş ya da adli para cezası infaz sürecinde hapis cezasına çevrilmiş olmalı.\n- **On sekiz yaşını doldurmamış** çocuğu, engelliliği nedeniyle bakıma muhtaç olmalı ya da ağır bir hastalığa maruz kalmış olmalı.\n- Toplum güvenliği bakımından ağır ve somut tehlike oluşturmayacağı değerlendirilmeli.\n\n**Erteleme:**\n- Cumhuriyet Başsavcılığınca **bir yıla kadar** ertelenebilir.\n- Her defasında **altı ayı** geçmemek üzere **en çok dört kez** uzatılabilir. İlk erteleme ile uzatmalar birlikte en fazla **bir yıl ve dört kez altı ay** eder.\n- Erteleme süresi içinde **zamanaşımı işlemez**.\n- Çocuğun durumu 16 ncı maddenin üçüncü fıkrasına göre belirlenir.\n\n**Erteleme kaldırılır, ceza derhâl infaz olunur:**\n- ertelemenin amacına veya yükümlülüklere aykırılık denetimli serbestlik müdürlüğü veya kolluk birimlerince tespit edilirse,\n- kasten işlenen bir suçtan kamu davası açılırsa,\n- çocuk iyileşirse.\n\n**Yükümlülükler:** Cumhuriyet savcısı hükümlüyü şunlardan **en az birine** tâbi tutar:\n- belirli bir yerleşim bölgesini terk etmemek,\n- belirlenen yerlere belirtilen süreler içinde düzenli olarak başvurmak,\n- ekonomik durumu göz önünde bulundurularak belirlenen güvence miktarını yatırmak.\n\nAyrıca **yurt dışına çıkamama** yükümlülüğü konulur.",
+      "articleRefs": [
+        "16/A"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Hükümlünün istemiyle erteleme ve ara verme",
+      "body": "**İstemle erteleme:**\n- **Kapsam:** Kasten işlenen suçlarda **üç yıl**, taksirle işlenen suçlarda **beş yıl** veya daha az süreli hapis cezaları.\n- **Kim ister?** Çağrı üzerine gelen hükümlü.\n- **Kim karar verir?** Cumhuriyet Başsavcılığı erteleyebilir.\n- **Süre:** Her defasında **bir yılı** geçmemek üzere **en fazla iki kez** uygulanabilir.\n- **Kaldırma:** Erteleme süresinde kasten işlenen bir suçtan kamu davası açılırsa erteleme kaldırılır, ceza derhal infaz olunur.\n- **Şart:** Kabul, güvence gösterilmesine veya diğer bir şarta bağlanabilir.\n\n**Ara verme:**\n- **Kapsam:** Aynı cezalar, infazına başlanmış olsa bile.\n- **Hangi hâllerde?** Zorunlu ve çok ivedi hâllerde. Metindeki örnekler:\n  - hükümlünün yükseköğrenimini bitirebilmesi,\n  - ana, baba, eş veya çocukların ölümü ya da sürekli hastalık veya malullükleri nedeniyle ailenin ticari faaliyetlerinin yürütülebilmesinin veya tarım topraklarının işlenebilmesinin imkânsız hâle gelmesi,\n  - eş veya çocukların sürekli hastalık veya malullükleri nedeniyle bakıma muhtaç olması,\n  - hükümlünün hastalığının sürekli tedavi gerektirmesi.\n- **Süre:** Cumhuriyet Başsavcılığınca **bir yılı geçmeyen** sürelerle verilir. **İki defadan fazla olamaz.**\n\n**Bu madde kimlere uygulanmaz?**\n- terör suçları, örgüt faaliyetleri çerçevesinde işlenen suçlar ve cinsel dokunulmazlığa karşı suçlardan mahkûm olanlar,\n- mükerrirlere özgü infaz rejimi uygulanmasına karar verilenler,\n- disiplin veya tazyik hapsine mahkûm olanlar.",
+      "articleRefs": [
+        "17"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Aynı eşik, farklı istisnalar",
+      "body": "Kasıtlı suçlarda üç yıl veya daha az, taksirli suçlarda beş yıl veya daha az eşiği doğrudan açık ceza infaz kurumunda, doğrudan çocuk eğitimevinde ve istemle ertelemede karşına çıkar. Ama istisna listeleri aynı değil. Doğrudan çocuk eğitimevinde bu eşiğe hiçbir istisna bağlanmaz; açık kurumdaki terör, örgüt, cinsel dokunulmazlık, ikinci defa mükerrirlik ve koşullu salıverilmenin geri alınması istisnaları orada sayılmaz.\n\n**Tazyik hapsi:**\n- Açık kurumda: İcra ve İflas Kanunu gereğince tazyik hapsine tabi tutulanların cezası doğrudan açık kurumda yerine getirilir.\n- Ertelemede: Disiplin veya tazyik hapsine mahkûm olanlar hakkında istemle erteleme hiç uygulanmaz.\n\n**Tekrar suç işleyenler:**\n- Açık kurumda: \"ikinci defa mükerrir olanlar\" dışarıda kalır.\n- Ertelemede: \"mükerrirlere özgü infaz rejimi uygulanmasına karar verilenler\" dışarıda kalır.",
+      "articleRefs": [
+        "14",
+        "15",
+        "17"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Mahkemece infazın ertelenmesi veya durdurulması",
+      "body": "**Ne zaman?** Birlikte işlenmiş suçlarda, Ceza Muhakemesi Kanununun 280 inci maddesinin üçüncü fıkrası ve 306 ncı maddesinin uygulanma olanağının bulunduğu hâllerde.\n\n**Kimden istenir?** Hükmü veren **ilk derece mahkemesinden** infazın ertelenmesine veya durdurulmasına ilişkin karar istenebilir.\n\n**Usul:**\n- Karardan önce Cumhuriyet savcısı ve hükümlünün görüşlerini **yazılı olarak** bildirmesi istenebilir.\n- Karar **duruşma açılmaksızın** verilir.\n- Karara karşı **itiraz** yoluna gidilebilir.\n- Erteleme veya durdurma talebinin kabulü, güvence gösterilmesine veya diğer bir şarta bağlanabilir.",
+      "articleRefs": [
+        "17/A"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Akıl hastalığı dışında ruhsal rahatsızlığı olan hükümlüler",
+      "body": "**Kapsam:** Hapsedilme ve diğer nedenlerden kaynaklanan, akıl hastalığı dışında ruhsal rahatsızlıkları bulunan hükümlüler. Bunlar ruh ve sinir hastalıkları hastanelerinde tutulmaları gerekli görülmeyerek infaz kurumlarına geri gönderilmiş olmalıdır.\n\n**Kural:**\n- Cezaları, belirlenen infaz kurumlarının **mahsus bölümlerinde** infaz edilir.\n- Bu kurumların ihtiyaç duyduğu uzman ve diğer tıp görevlileri **Sağlık Bakanlığınca** karşılanır.\n\n**Akıl hastalığından farkı:** Akıl hastalığında infaz geri bırakılır ve hükümlü sağlık kurumunda koruma ve tedavi altına alınır (md 16). Burada ise ceza, kurumun mahsus bölümünde çektirilir.",
+      "articleRefs": [
+        "16",
+        "18"
+      ]
+    },
+    {
+      "type": "numbers",
+      "title": "Açık kurum, eğitimevi ve ertelemede sayılar",
+      "rows": [
+        {
+          "label": "Doğrudan açık – kasıtlı suçlar",
+          "value": "toplam üç yıl veya daha az",
+          "refs": [
+            "14"
+          ]
+        },
+        {
+          "label": "Doğrudan açık – taksirli suçlar",
+          "value": "toplam beş yıl veya daha az",
+          "refs": [
+            "14"
+          ]
+        },
+        {
+          "label": "Açığa ayrılmada infaz hâkimi onayı",
+          "value": "toplam on yıl ve daha fazla hapis",
+          "refs": [
+            "14"
+          ]
+        },
+        {
+          "label": "Çocuk eğitimevinde kalış izni",
+          "value": "yirmibir yaşını bitirinceye kadar",
+          "refs": [
+            "15"
+          ]
+        },
+        {
+          "label": "Eğitimevine ayırma değerlendirmesi",
+          "value": "en geç üç ayda bir; en az bir uzman katılır",
+          "refs": [
+            "15"
+          ]
+        },
+        {
+          "label": "Olumsuz değerlendirmede yeniden değerlendirme",
+          "value": "altı ayı geçemez",
+          "refs": [
+            "15"
+          ]
+        },
+        {
+          "label": "Doğrudan eğitimevi",
+          "value": "kasıtlı üç yıl / taksirli beş yıl veya daha az",
+          "refs": [
+            "15"
+          ]
+        },
+        {
+          "label": "Doğumdan sonra geri bırakma",
+          "value": "bir yıl altı ay",
+          "refs": [
+            "16"
+          ]
+        },
+        {
+          "label": "Çocuk ölmüş veya başkasına verilmişse",
+          "value": "doğumdan itibaren iki ay",
+          "refs": [
+            "16"
+          ]
+        },
+        {
+          "label": "Kurumda gebe kalanda geri bırakma uygulanmaz",
+          "value": "koşullu salıverilmeye altı yıldan fazla kalmışsa",
+          "refs": [
+            "16"
+          ]
+        },
+        {
+          "label": "Sağlık durumu incelemesi (raporda süre yoksa)",
+          "value": "birer yıllık dönemler",
+          "refs": [
+            "16"
+          ]
+        },
+        {
+          "label": "Kadın hükümlü erteleme – ceza sınırı",
+          "value": "toplam on yıl veya daha az",
+          "refs": [
+            "16/A"
+          ]
+        },
+        {
+          "label": "Kadın hükümlü erteleme – çocuğun yaşı",
+          "value": "on sekiz yaşını doldurmamış",
+          "refs": [
+            "16/A"
+          ]
+        },
+        {
+          "label": "Kadın hükümlü erteleme – süre",
+          "value": "bir yıla kadar; her defasında altı ayı geçmemek üzere en çok dört kez uzatma",
+          "refs": [
+            "16/A"
+          ]
+        },
+        {
+          "label": "Kadın hükümlü erteleme – azami toplam",
+          "value": "en fazla bir yıl ve dört kez altı ay",
+          "refs": [
+            "16/A"
+          ]
+        },
+        {
+          "label": "İstemle erteleme – kapsam",
+          "value": "kasten üç yıl / taksirle beş yıl veya daha az",
+          "refs": [
+            "17"
+          ]
+        },
+        {
+          "label": "İstemle erteleme – süre",
+          "value": "her defasında bir yılı geçmemek üzere, en fazla iki kez",
+          "refs": [
+            "17"
+          ]
+        },
+        {
+          "label": "Ara verme",
+          "value": "bir yılı geçmeyen sürelerle, iki defadan fazla olamaz",
+          "refs": [
+            "17"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "14",
+        "15",
+        "16",
+        "16/A",
+        "17"
+      ]
+    },
+    {
+      "type": "compare",
+      "title": "Kapalı ve yüksek güvenlikli kapalı",
+      "rows": [
+        {
+          "aspect": "Güvenlik görevlileri",
+          "left": "İç ve dış güvenlik görevlileri bulunur",
+          "right": "İç ve dış güvenlik görevlilerine sahiptir",
+          "refs": [
+            "8",
+            "9"
+          ]
+        },
+        {
+          "aspect": "Firara karşı engeller",
+          "left": "Teknik, mekanik, elektronik veya fizikî",
+          "right": "Teknik, mekanik, elektronik ve fizikî",
+          "refs": [
+            "8",
+            "9"
+          ]
+        },
+        {
+          "aspect": "Oda ve koridor kapıları",
+          "left": "Kapalı tutulur",
+          "right": "Sürekli kapalı tutulur",
+          "refs": [
+            "8",
+            "9"
+          ]
+        },
+        {
+          "aspect": "Temas",
+          "left": "Mevzuatın belirttiği hâllerde aynı oda dışındaki hükümlüler arasında ve dış çevre ile olanaklı",
+          "right": "Mevzuatın belirttiği hâllerde aynı oda dışındaki hükümlüler arasında ve dış çevre ile geçerli",
+          "refs": [
+            "8",
+            "9"
+          ]
+        },
+        {
+          "aspect": "Güvenlik düzeyi ve barındırma",
+          "left": "Yeterli düzeyde güvenlik sağlanmış",
+          "right": "Sıkı güvenlik rejimine tâbi hükümlüler; bir veya üç kişilik odalar",
+          "refs": [
+            "8",
+            "9"
+          ]
+        },
+        {
+          "aspect": "İyileştirme yöntemi",
+          "left": "Bireysel, grup hâlinde veya toplu",
+          "right": "Bireysel veya grup hâlinde",
+          "refs": [
+            "8",
+            "9"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "8",
+        "9"
+      ]
+    },
+    {
+      "type": "exam_stats",
+      "title": "Sınav der ki",
+      "rows": [
+        {
+          "label": "Bu ünitenin maddelerinden yayındaki soru",
+          "value": "0",
+          "refs": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "16/A",
+            "17",
+            "17/A",
+            "18"
+          ]
+        },
+        {
+          "label": "Hiç soru çıkmamış",
+          "value": "md 1, md 2, md 3, md 4, md 5, md 6, md 7, md 8, md 9, md 10, md 11, md 12, md 13, md 14, md 15, md 16, md 16/A, md 17, md 17/A, md 18",
+          "refs": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "16/A",
+            "17",
+            "17/A",
+            "18"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "16/A",
+        "17",
+        "17/A",
+        "18"
+      ],
+      "generated": true
+    },
+    {
+      "type": "bridge",
+      "title": "Bu üniteden soru çöz",
+      "articleRefs": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "16/A",
+        "17",
+        "17/A",
+        "18"
+      ],
+      "generated": true,
+      "rows": [
+        {
+          "label": "Madde kapsamlı seans",
+          "value": "md 1–16, 16/A, 17, 17/A, 18, 0 soru",
+          "refs": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "16/A",
+            "17",
+            "17/A",
+            "18"
+          ]
+        }
+      ]
+    }
+  ]
+}

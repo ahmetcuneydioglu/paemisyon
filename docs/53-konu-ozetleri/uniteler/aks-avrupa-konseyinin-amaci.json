@@ -1,0 +1,760 @@
+{
+  "unit": {
+    "slug": "aks-avrupa-konseyinin-amaci",
+    "legislationSlug": "avrupa-konseyi-statusu",
+    "topicId": "3064a669-2b5d-4912-a4a4-797ea8b36ae5",
+    "title": "Avrupa Konseyinin amacı ve organları",
+    "subtitle": "Kuruluş, üyelik, Bakanlar Komitesi, İstişari Assamble, Sekretarya, malî hükümler, tadil ve yürürlük",
+    "articleFrom": "Başlangıç",
+    "articleTo": "42",
+    "readingMinutes": 12,
+    "sourceLabel": "AI özeti — Avrupa Konseyi Statüsü, md Başlangıç, 1–42",
+    "articleNos": [
+      "Başlangıç",
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+      "15",
+      "16",
+      "17",
+      "18",
+      "19",
+      "20",
+      "21",
+      "22",
+      "23",
+      "24",
+      "25",
+      "26",
+      "27",
+      "28",
+      "29",
+      "30",
+      "31",
+      "32",
+      "33",
+      "34",
+      "35",
+      "36",
+      "37",
+      "38",
+      "39",
+      "40",
+      "41",
+      "42"
+    ],
+    "generatedBy": "claude-opus-5-5 (ozet-uret.ts)",
+    "sortOrder": 1
+  },
+  "blocks": [
+    {
+      "type": "concept",
+      "title": "Konsey neden kuruldu?",
+      "body": "Statüyü şu hükümetler kabul etti: Belçika, Danimarka, Fransa, İrlânda, İtalya, Lüksemburg, Holânda, Norveç, İsveç ile Büyük Britanya ve Şimalî İrlânda. Bu hükümetlere göre adalet ve milletlerarası işbirliğine dayanan barışı güçlendirmek, insan topluluğunun ve medeniyetin korunması için hayati önemdedir. Hepsi fert hürriyeti, siyasi hürriyet ve hukukun üstünlüğü prensiplerine bağlıdır. Bu yüzden aynı hisleri besleyen Avrupa memleketleri arasında daha sıkı bir birlik kurmayı zorunlu gördüler. Kurdukları yapıyı aklında böyle tut: **bir Hükümetler Temsilcileri Komitesi ve bir İstişari Assamble'den mürekkep Avrupa Konseyi**.\n\n**Not:** İstişari Assamble, Statü metnindeki addır; bu organ bugün Parlamenter Meclis adını taşır.",
+      "articleRefs": [
+        "Başlangıç"
+      ]
+    },
+    {
+      "type": "concept",
+      "title": "Amaç ve araçlar",
+      "body": "Konseyin amacı, üyeler arasında **daha sıkı bir birlik** kurmaktır. Bu birlikle üyelerin müşterek malı olan ülkü ve prensipler korunacak ve yayılacak, siyasi ve iktisadi ilerlemeleri sağlanacaktır. Bu amaca Konsey organları aracılığıyla ulaşılır. Araçlar şunlardır: müşterek menfaatleri ilgilendiren meseleleri incelemek, anlaşmalar akdetmek, iktisadi, içtimai, kültürel, ilmî, hukuki ve idari sahalarda müşterek bir hareket hattı kabul etmek, insan hakları ile ana hürriyetleri korumak ve geliştirmek.",
+      "articleRefs": [
+        "1"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Konseyin yetki sınırları",
+      "body": "- Üyelerin Avrupa Konseyi çalışmalarına katılması, **Birleşmiş Milletler** ve taraf oldukları diğer milletlerarası teşekküllerdeki faaliyetlerini **ihlâl etmemelidir**.\n- **Millî savunmayla ilgili meseleler** Avrupa Konseyinin yetkileri içine **girmez**.",
+      "articleRefs": [
+        "1"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Üyelik: şart, davet, katılma",
+      "body": "**Kimler üyedir:** Avrupa Konseyi üyeleri Statüye taraf olanlardır (md 2).\n\n**Şart:** Her üye, **hukukun üstünlüğü** prensibini ve hükmü altındaki her şahsın **insan haklarından ve ana hürriyetlerden faydalanması** prensibini kabul eder. Konseyin gayesine samimî ve fiilî surette katılmayı taahhüt eder.\n\n**Davet:** Bu şartlara uymaya ehliyetli ve istekli olduğuna kanaat getirilen her **Avrupa Devleti**, **Bakanlar Komitesi** tarafından üye olmaya davet edilebilir.\n\n**Üyeliğin kazanılması:** Davet edilen devlet, Statüye katıldığını gösteren belgeyi **Umumi Kâtibe tevdi** ettiğinde üye sıfatını kazanır.\n\n**Davetten önce:** Bakanlar Komitesi, müstakbel üyenin İstişari Assamble'deki **temsilci adedini** ve ödeyeceği **aidat nispetini** tespit eder.",
+      "articleRefs": [
+        "2",
+        "3",
+        "4",
+        "6"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Ortak üye",
+      "body": "- **Hususi hallerde** bir Avrupa Devleti, Bakanlar Komitesi tarafından **ortak üye** olmaya davet edilebilir. Şartlar tam üyelikteki gibidir: md 3'e uymaya ehliyetli ve istekli olmak.\n- Ortak üyelik de katılma belgesinin Umumi Kâtibe tevdiiyle kazanılır.\n- Ortak üyeler **yalnız İstişari Assamble'de** temsil edilebilir.\n- Statüdeki «Üye» tâbiri ortak üyeleri de kapsar. Tek istisna **Bakanlar Komitesinde temsil edilme**dir.\n- Ortak üyenin davetinden önce de Bakanlar Komitesi temsilci adedini ve aidat nispetini tespit eder.",
+      "articleRefs": [
+        "5",
+        "6"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Konseyden çıkma",
+      "body": "Her üye, çıkma kararını **Umumi Kâtibe bildirerek** Konseyden çıkabilir. İhbarın hüküm ifade ettiği an, yapıldığı zamana göre değişir:\n- İhbar malî senenin **ilk dokuz ayı** içinde yapılmışsa **aynı senenin sonunda** hüküm ifade eder.\n- İhbar malî senenin **son üç ayı** içinde yapılmışsa **takip eden malî senenin sonunda** hüküm ifade eder.",
+      "articleRefs": [
+        "7"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Temsil hakkından mahrumiyet ve çıkarılma",
+      "body": "**md 3'ü ciddi surette ihlâl:**\n- Üye, temsil hakkından bir müddet için mahrum edilebilir.\n- Bakanlar Komitesi üyeyi md 7'deki şartlar dâhilinde Konseyden **çekilmeye davet** edebilir.\n- Davet dikkate alınmazsa Komite, **kendi tayin edeceği tarihten itibaren** üyenin artık Konseye mensup olmadığına karar verebilir.\n\n**Malî vecibelerin yerine getirilmemesi:**\n- Bakanlar Komitesi üyeyi, vecibelerini yerine getirmediği müddetçe **Komitede ve İstişari Assamble'deki** temsil hakkından bir müddet için mahrum edebilir.",
+      "articleRefs": [
+        "7",
+        "8",
+        "9"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Çıkma, çekilmeye davet, mahrumiyet: karıştırma",
+      "body": "Üç ayrı yol var, sebeplerine bakarak ayırt et:\n- **Kendi isteğiyle çıkma** üyeye aittir. Üye kararını Umumi Kâtibe bildirir (md 7).\n- **Çekilmeye davet ve üyeliğin sona erdirilmesi** yalnız md 3'ün **ciddi ihlâlinde** söz konusudur. Karar Bakanlar Komitesinindir (md 8).\n- **Aidat ödememe** gibi malî vecibe ihlâlinde md 9 yalnız **temsil hakkından mahrumiyet** öngörür. Bu maddede çekilmeye davet ya da üyelikten çıkarma yer almaz.",
+      "articleRefs": [
+        "7",
+        "8",
+        "9"
+      ]
+    },
+    {
+      "type": "concept",
+      "title": "Organlar, merkez ve resmî diller",
+      "body": "Konseyin organları **Bakanlar Komitesi** ile **İstişari Assamble**dir. **Avrupa Konseyi Sekreterliği** organlar listesinde sayılmaz; bu iki organa yardım eder. Konseyin merkezi **Strazburg**'dadır. Resmî diller **Fransızca ile İngilizce**dir. Başka dillerin ne zaman ve hangi şartlarla kullanılacağını Bakanlar Komitesi ile İstişari Assamble'nin içtüzükleri belirler.\n\n**Not:** Organ adı Statü metnindeki hâliyle verilmiştir; İstişari Assamble bugün Parlamenter Meclis adını taşır, sorularda bu adla da geçebilir.",
+      "articleRefs": [
+        "10",
+        "11",
+        "12"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Bakanlar Komitesi: yapı, içtüzük, toplantı",
+      "body": "- Konsey namına md 15 ve md 16'ya göre hareket eden **yetkili organ** Bakanlar Komitesidir.\n- Her üyenin Komitede **bir temsilcisi** vardır. Her temsilcinin **bir oy** hakkı vardır.\n- Temsilciler **Dışişleri Bakanlarıdır**. Bakan katılamazsa ya da durum gerektirirse **yedek temsilci** tayin edilebilir. Yedek temsilci mümkün mertebe kendi memleketinin **Hükümet üyelerinden** biri olur.\n- Komite **kendi içtüzüğünü** kararlaştırır. İçtüzük ezcümle şunları düzenler: oy nispeti, başkanın tayin şekli ve görev süresi, gündem ve karar teklifleri usulü, yedek temsilci seçiminin tebliğ şekli.\n- Aksine karar verilmedikçe toplantılar **gizli** yapılır ve **Konsey merkezinde** yapılır. Gizli toplantıdaki tartışmalar ve sonuçları hakkında bilgi yayımlanıp yayımlanmayacağına Komite karar verir.\n- Komite, İstişari Assamble oturumlarının **açılmasından önce** ve oturumların **başlangıcında** **mecburi olarak** toplanır. Bunun dışında faydalı gördükçe toplanır.",
+      "articleRefs": [
+        "13",
+        "14",
+        "18",
+        "21"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Bakanlar Komitesi: yetkiler",
+      "body": "- **Tedbirleri inceler.** Komite, İstişari Assamble'nin tavsiyesi üzerine ya da **kendi teşebbüsüyle** Konseyin gayesine elverişli tedbirleri inceler. Sözleşme ve anlaşma akdi ile Hükümetlerce müşterek siyaset takibi de bu tedbirlere dâhildir. Vardığı neticeleri **Umumi Kâtip** üyelere tebliğ eder.\n- **Tavsiye verir.** Neticeler gerekirse Hükümetlere **tavsiyeler** şeklinde verilebilir. Komite, bu tavsiyeler üzerine ne muamele yapıldığını Hükümetlerden sorabilir.\n- **Teşkilât ve dahilî hususlarda bağlayıcı karar verir.** Konseyin teşkilâtına ve dahilî hususlarına ilişkin her meseleyi **uyulma mecburiyetiyle** çözer. Bu amaçla malî ve idari tüzükleri düzenler. İstişari Assamble'ye md 24, 28, 30, 32, 33 ve 35 ile verilen yetkiler saklıdır.\n- **Komite ve komisyon kurar.** Lüzum gördüğü istişari veya teknik mahiyette komite ve komisyonlar teşkil edebilir.\n- **Rapor gönderir.** İstişari Assamble toplandıkça faaliyeti hakkında lüzumlu vesaikle raporlar gönderir.",
+      "articleRefs": [
+        "15",
+        "16",
+        "17",
+        "19"
+      ]
+    },
+    {
+      "type": "numbers",
+      "title": "Bakanlar Komitesinde karar çoğunlukları",
+      "rows": [
+        {
+          "label": "Önemli meseleler: md 15 (b) tavsiyeleri; md 19; md 21'deki gizlilik ve yayın kararları; md 33; md 1 (d), md 7, md 15, md 20 ve md 22'nin tadili tavsiyeleri; Komitenin oy birliğine bağladığı meseleler",
+          "value": "Kullanılan oyların ittifakı + iştirak hakkını haiz temsilcilerin çoğunluğu",
+          "refs": [
+            "20"
+          ]
+        },
+        {
+          "label": "İçtüzük veya malî ve idari tüzük ile ilgili meseleler",
+          "value": "İştirak hakkını haiz temsilcilerin âdi çoğunluğu",
+          "refs": [
+            "20"
+          ]
+        },
+        {
+          "label": "md 4 ve md 5 gereğince alınan kararlar (üye ve ortak üye daveti)",
+          "value": "İştirak hakkını haiz temsilcilerin üçte iki çoğunluğu",
+          "refs": [
+            "20"
+          ]
+        },
+        {
+          "label": "Diğer bütün kararlar: bütçenin kabulü, içtüzüğe ve malî ve idari tüzüklere mütaallik kararlar, ittifak listesinde olmayan maddelerin tadili tavsiyeleri, hangi paragrafın uygulanacağı tereddüdü",
+          "value": "Oyların üçte iki çoğunluğu + iştirak hakkını haiz temsilcilerin çoğunluğu",
+          "refs": [
+            "20"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "20"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "«Üçte iki» kimin üçte ikisi?",
+      "body": "Çoğunluklarda paydayı yakalamazsan şıkta takılırsın:\n- **Üye ve ortak üye daveti**nde ölçü, iştirak hakkını haiz **temsilcilerin** üçte ikisidir (md 20/c).\n- **Diğer kararlar**da ölçü, **oyların** üçte ikisidir. Buna ayrıca iştirak hakkını haiz temsilcilerin çoğunluğu eklenir (md 20/d).\n- **Önemli meselelerde** aranan ittifak, **izhar olunan reylerin** ittifakıdır. Bu da iştirak hakkını haiz temsilcilerin çoğunluğuyla birlikte aranır (md 20/a).\n- **İstişari Assamble**'nin genel kuralı **oyların** üçte iki çoğunluğudur (md 29).\n\nBir ayrıntıya daha dikkat et: içtüzük ile malî ve idari tüzükler iki bentte geçer. md 20/b, bunlar **ile ilgili meseleler** hakkında iştirak hakkını haiz temsilcilerin **âdi çoğunluğunu** arar. md 20/d ise bütçenin kabulüne, içtüzüğe ve malî ve idari tüzüklere **mütaallik kararları** diğer kararlar arasında sayar; bunlar oyların üçte iki çoğunluğu ve iştirak hakkını haiz temsilcilerin çoğunluğuyla alınır.",
+      "articleRefs": [
+        "20",
+        "29"
+      ]
+    },
+    {
+      "type": "concept",
+      "title": "İstişari Assamble: müzakere eden organ",
+      "body": "İstişari Assamble Konseyin **müzakere edici organı**dır. Kararlarını **tavsiyeler** şeklinde Bakanlar Komitesine gönderir. Konseyin gayesine uygun ve yetkisi içindeki iki tür meseleyi tezekkür eder:\n- Bakanlar Komitesinin **mütalâa için havale ettiği** meseleler,\n- Assamble'nin teklif ettiği ve gündeme alınmasını **Komitenin tasvip ettiği** meseleler.\n\nKomite bu kararları verirken üyelerin taraf olduğu diğer Avrupa Hükümetlerarası teşekküllerin faaliyetlerini dikkate alır. Oturumda çıkan bir meselenin gündeme girip girmediğinde tereddüt doğarsa kararı **Assamble Başkanı** verir. Assamble yetkisine giren meseleler için **komiteler veya komisyonlar** kurabilir; bunu yaparken md 38 (d) hükümlerini göz önünde tutar.",
+      "articleRefs": [
+        "22",
+        "23",
+        "24"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Assamble temsilcileri",
+      "body": "- Temsilciler, her üyenin Hükümetlerce kabul edilmiş usule uygun olarak tayin edilir.\n- Temsilci, temsil ettiği üyenin **tâbiiyetini** taşır.\n- Temsilci **aynı zamanda Bakanlar Komitesi üyesi olamaz**.\n- Oturum sırasında **Assamble'nin muvafakati olmadan** hiçbir temsilcinin görevine son verilemez.\n- Her temsilcinin bir **vekili** olabilir. Vekil, temsilcinin yokluğunda toplantılara katılır, söz alır ve oy kullanır. Vekillerin tayininde de temsilcilere ilişkin şartlar uygulanır.\n- Kurucu devletlerin temsilci sayıları Statüde tek tek gösterilmiştir.\n- Bakanlar Komitesinin Assamble müzakerelerinde nasıl temsil edileceği ve Komite temsilcilerinin Assamble önünde hangi şartlarla söz alacağı, **Assamble ile istişareden sonra Komitece** kararlaştırılan içtüzük hükümlerine tabidir.",
+      "articleRefs": [
+        "25",
+        "26",
+        "27"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Assamble: Başkan, içtüzük, karar nisabı",
+      "body": "- Assamble **kendi içtüzüğünü** kendisi tespit ve kabul eder.\n- **Başkanını** üyeleri arasından seçer. Başkan **gelecek alelâde oturuma kadar** görev yapar.\n- Başkan çalışmaları idare eder, ama **ne müzakerelere ne de oya katılır**. Başkan seçilen kişinin **vekili** ise onun yerine katılır, söz alır ve oy verir.\n- İçtüzük ezcümle şunları düzenler: oy nisabı, Başkan ve büro üyelerinin seçimi ile görev süresi, gündemin tespiti ve tebliği, temsilci ve vekil isimlerinin bildirilmesi.\n- md 30 saklı kalmak üzere Assamble'nin bütün kararları **oyların üçte iki çoğunluğu** ile alınır. Bu kararlar arasında şunlar da vardır: Komiteye tavsiye, gündem için Komiteye teklif, komite veya komisyon kurma, oturumların açılış tarihini tespit, diğer kararlar için gerekli çoğunluğu belirleme.\n- **Kendi işleyiş tarzına** ilişkin kararlar, md 29'un son bendine göre Assamble'nin belirlediği çoğunlukla alınır. Büro üyelerinin seçimi, komite ve komisyon üyelerinin tayini ve içtüzük bu kararlardandır.\n- Gündeme alma teklifi konusundaki müzakereler, mesele tespit edildikten sonra **yalnız lehte veya aleyhte sebeplerle** sınırlıdır.",
+      "articleRefs": [
+        "28",
+        "29",
+        "30",
+        "31"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Assamble oturumları",
+      "body": "- Assamble **her yıl** bir **alelâde oturum** yapar.\n- Oturumun tarihini ve müddetini Assamble tespit eder. Bunu yaparken Parlâmentoların ve **Birleşmiş Milletler Genel Kurulu**nun oturumlarıyla çakışmayı mümkün mertebe önler.\n- Alelâde oturum **bir ayı aşamaz**. İstisna: Assamble ve Bakanlar Komitesi **müştereken** aksini kararlaştırabilir.\n- Alelâde oturumlar **Konsey merkezinde** yapılır. Burada da Assamble ve Komite müştereken aksine karar verebilir.\n- **Olağanüstü oturum:** Bakanlar Komitesi çağırır. Tarih ve yeri Komite tespit eder, **Assamble Başkanının muvafakati** gerekir.\n- Müzakereler **aleni**dir. Assamble aksine karar verebilir.",
+      "articleRefs": [
+        "32",
+        "33",
+        "34",
+        "35"
+      ]
+    },
+    {
+      "type": "compare",
+      "title": "Bakanlar Komitesi ve İstişari Assamble",
+      "rows": [
+        {
+          "aspect": "Niteliği",
+          "left": "Konsey namına md 15 ve md 16'ya göre hareket eden yetkili organ",
+          "right": "Konseyin müzakere edici organı; kararlarını tavsiye olarak Komiteye gönderir",
+          "refs": [
+            "13",
+            "22"
+          ]
+        },
+        {
+          "aspect": "Kimler oturur",
+          "left": "Her üyeden bir temsilci: Dışişleri Bakanı ya da yedek temsilci",
+          "right": "Hükümetlerce kabul edilmiş usulle tayin edilen, üyenin tâbiiyetindeki temsilciler",
+          "refs": [
+            "14",
+            "25"
+          ]
+        },
+        {
+          "aspect": "Ortak üyeler",
+          "left": "Temsil edilmez",
+          "right": "Temsil edilebilir",
+          "refs": [
+            "5"
+          ]
+        },
+        {
+          "aspect": "Genel karar kuralı",
+          "left": "Oyların üçte iki çoğunluğu + iştirak hakkını haiz temsilcilerin çoğunluğu (diğer kararlar)",
+          "right": "Oyların üçte iki çoğunluğu",
+          "refs": [
+            "20",
+            "29"
+          ]
+        },
+        {
+          "aspect": "Toplantıların aleniyeti",
+          "left": "Aksine karar yoksa gizli",
+          "right": "Aksine karar yoksa aleni",
+          "refs": [
+            "21",
+            "35"
+          ]
+        },
+        {
+          "aspect": "Toplantı yeri",
+          "left": "Aksine karar yoksa Konsey merkezi",
+          "right": "Alelâde oturumlar, müşterek aksi karar yoksa Konsey merkezi",
+          "refs": [
+            "21",
+            "33"
+          ]
+        },
+        {
+          "aspect": "İçtüzük",
+          "left": "Kendi içtüzüğünü kararlaştırır",
+          "right": "Kendi içtüzüğünü tespit ve kabul eder",
+          "refs": [
+            "18",
+            "28"
+          ]
+        },
+        {
+          "aspect": "Başkan",
+          "left": "Tayin şekli ve görev süresi içtüzükle belirlenir",
+          "right": "Üyeler arasından seçilir; gelecek alelâde oturuma kadar görev yapar; müzakere ve oya katılmaz",
+          "refs": [
+            "18",
+            "28"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "5",
+        "13",
+        "14",
+        "18",
+        "20",
+        "21",
+        "22",
+        "25",
+        "28",
+        "29",
+        "33",
+        "35"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Sekretarya",
+      "body": "- **Yapı:** Sekretarya bir **Genel Kâtip**, bir **Genel Kâtip Yardımcısı** ve lüzumlu personelden oluşur. md 4, 5, 7 ve 15'te geçen «Umumi Kâtip» de bu makamdır; Statü metni iki adı da kullanır.\n- **Genel Kâtip ve Yardımcısının tayini:** **Bakanlar Komitesinin tavsiyesi** üzerine **İstişari Assamble** tayin eder.\n- **Diğer personelin tayini:** İdari tüzüğe göre Genel Kâtip tayin eder.\n- **Yasaklar:** Sekretaryanın hiçbir üyesi herhangi bir Hükümette ücretli memuriyet üstlenemez. İstişari Assamble'nin veya bir millî meclisin üyesi olamaz. Göreviyle bağdaşmayan işler yapamaz.\n- **Bağımsızlık beyanı:** Her personel, Konseye bağlılığını ve hiçbir Hükümetten talimat istemeyeceğini ve kabul etmeyeceğini resmî ve aleni bir beyanla bildirir. Genel Kâtip ve Yardımcısı bu beyanı **Komite huzurunda** yapar. Diğer mensuplar **Genel Kâtip huzurunda** yapar.\n- **Üyelerin yükümlülüğü:** Her üye, sekretarya görevlerinin milletlerarası mahiyetine uyar ve personeli etkilemekten kaçınır.\n- **Merkez ve sorumluluk:** Sekretarya **Konsey merkezinde** bulunur. Genel Kâtip sekretaryanın faaliyetlerinden **Bakanlar Komitesine karşı** sorumludur. md 38 (d) saklı kalmak üzere İstişari Assamble'nin ihtiyacı olan idari ve diğer hizmetleri sağlar.",
+      "articleRefs": [
+        "4",
+        "5",
+        "7",
+        "15",
+        "36",
+        "37"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Masraflar, aidat, ayrıcalık ve muafiyetler",
+      "body": "- **Temsil masrafları:** Her üye, Bakanlar Komitesi ve İstişari Assamble'deki temsil masraflarını **kendisi** karşılar.\n- **Ortak masraflar:** Sekretarya masrafları ve diğer müşterek masraflar, her üyenin **nüfus adedine** göre Komitenin tespit ettiği nispetlerle üyeler arasında paylaştırılır.\n- **Ortak üyenin hissesi:** Komitece tespit edilir.\n- **Bütçe:** Genel Kâtip bütçeyi **her yıl**, malî tüzükteki şartlara göre **Komitenin tasvibine** sunar.\n- **Ödeneği aşan talepler:** Assamble'nin bütçedeki ödeneği aşan masraf doğuracak taleplerini Genel Kâtip Komiteye arz eder.\n- **Aidat:** Genel Kâtip aidat miktarını her yıl üye Hükümetlere tebliğ eder. Aidat tebliğ tarihinden itibaren **vacibüttediye** sayılır ve **en çok altı ay** içinde Genel Kâtipliğe ödenir.\n- **Ayrıcalık ve muafiyetler:** Konsey, temsilciler ve sekretarya, görevleri için gerekli ayrıcalık ve muafiyetlerden yararlanır. Assamble temsilcileri, Assamble ve komite veya komisyonlarındaki **müzakerelerde beyan ettikleri fikir ve verdikleri oylardan** dolayı hiçbir üyenin arazisinde **tevkif edilemez** ve haklarında **takibat yapılamaz**.\n- **Anlaşmalar:** Bakanlar Komitesi, ayrıcalıkları belirleyen bir anlaşmayı üye Hükümetlere tavsiye eder. Konsey merkezindeki ayrıcalıklar için **Fransa Cumhuriyeti Hükümeti** ile hususi bir anlaşma akdedilir.",
+      "articleRefs": [
+        "38",
+        "39",
+        "40"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Statünün tadili ve yürürlüğü",
+      "body": "**Tadil (md 41):**\n- Tadil teklifi Bakanlar Komitesine ya da md 23'teki şartlarla İstişari Assamble'ye yapılabilir.\n- Komite uygun gördüğü tadilâtı tavsiye eder ve bir **protokole** koyar.\n- Tadil protokolü **üyelerin üçte ikisi** tarafından imza ve tasdik edilince yürürlüğe girer.\n- **İstisna:** md 23–35, md 38 ve md 39'daki tadilâtı **Komite ve Assamble** tasvip ederse, tadilât Genel Kâtibin düzenleyip üye Hükümetlere tebliğ ettiği **ad hoc zabıtname**nin tarihinde yürürlüğe girer. Bu yol ancak Assamble'nin **ikinci alelâde oturumunun** sonundan sonra uygulanabilir.\n\n**Yürürlük (md 42):**\n- Tasdiknameler **Birleşik Kırallık Hükümetine** tevdi edilir.\n- Statü **yedi tasdik belgesinin** tevdiinden sonra yürürlüğe girer.\n- Statü yürürlüğe girdikten sonra tasdiknamesini tevdi eden her mümzi (imzacı) devlet, tevdi tarihinde Statüye taraf olur.\n- Davet üzerine sonradan katılan devlet ise katılma belgesini **Umumi Kâtibe** tevdi ederek üye olur (md 4); tasdikname vermez.\n- Statü **Londra'da 5 Mayıs 1949** tarihinde tek nüsha olarak düzenlenmiştir. **Fransızca ve İngilizce** metinler aynı derecede muteberdir.",
+      "articleRefs": [
+        "4",
+        "23",
+        "41",
+        "42"
+      ]
+    },
+    {
+      "type": "numbers",
+      "title": "Sayılar ve süreler",
+      "rows": [
+        {
+          "label": "Çıkma ihbarı malî senenin ilk dokuz ayında yapılırsa",
+          "value": "Aynı malî senenin sonunda hüküm ifade eder",
+          "refs": [
+            "7"
+          ]
+        },
+        {
+          "label": "Çıkma ihbarı malî senenin son üç ayında yapılırsa",
+          "value": "Takip eden malî senenin sonunda hüküm ifade eder",
+          "refs": [
+            "7"
+          ]
+        },
+        {
+          "label": "Bakanlar Komitesinde her üyenin temsilcisi ve oyu",
+          "value": "Bir temsilci, bir oy",
+          "refs": [
+            "14"
+          ]
+        },
+        {
+          "label": "Assamble alelâde oturumu",
+          "value": "Her yıl; süresi en çok bir ay (müşterek aksi karar hariç)",
+          "refs": [
+            "32"
+          ]
+        },
+        {
+          "label": "Assamble kararları (genel kural)",
+          "value": "Oyların üçte iki çoğunluğu",
+          "refs": [
+            "29"
+          ]
+        },
+        {
+          "label": "Aidatın ödenme süresi",
+          "value": "Tebliğden itibaren en çok altı ay",
+          "refs": [
+            "39"
+          ]
+        },
+        {
+          "label": "Tadil protokolünün yürürlüğü",
+          "value": "Üyelerin üçte ikisinin imza ve tasdiki",
+          "refs": [
+            "41"
+          ]
+        },
+        {
+          "label": "Kısa yoldan tadil ne zamandan sonra uygulanabilir",
+          "value": "Assamble'nin ikinci alelâde oturumunun sonundan sonra",
+          "refs": [
+            "41"
+          ]
+        },
+        {
+          "label": "Statünün yürürlüğe girmesi",
+          "value": "Yedi tasdik belgesinin tevdii",
+          "refs": [
+            "42"
+          ]
+        },
+        {
+          "label": "Statünün düzenlendiği yer ve tarih",
+          "value": "Londra, 5 Mayıs 1949",
+          "refs": [
+            "42"
+          ]
+        },
+        {
+          "label": "Üye olurken temsilci sayısı: Fransa, İtalya, İngiltere",
+          "value": "18'er",
+          "refs": [
+            "26"
+          ]
+        },
+        {
+          "label": "Üye olurken temsilci sayısı: Belçika, Holânda, İsveç",
+          "value": "6'şar",
+          "refs": [
+            "26"
+          ]
+        },
+        {
+          "label": "Üye olurken temsilci sayısı: Danimarka, İrlânda Cumhuriyeti, Norveç",
+          "value": "4'er",
+          "refs": [
+            "26"
+          ]
+        },
+        {
+          "label": "Üye olurken temsilci sayısı: Lüksemburg",
+          "value": "3",
+          "refs": [
+            "26"
+          ]
+        },
+        {
+          "label": "Sayılan on devletin üye olurken toplam temsilci sayısı",
+          "value": "87",
+          "refs": [
+            "26"
+          ]
+        }
+      ],
+      "derivedNumbers": [
+        {
+          "value": 87,
+          "expr": "18 + 18 + 18 + 6 + 6 + 6 + 4 + 4 + 4 + 3",
+          "refs": [
+            "26"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "7",
+        "14",
+        "26",
+        "29",
+        "32",
+        "39",
+        "41",
+        "42"
+      ]
+    },
+    {
+      "type": "exam_stats",
+      "title": "Sınav der ki",
+      "rows": [
+        {
+          "label": "Bu ünitenin maddelerinden yayındaki soru",
+          "value": "0",
+          "refs": [
+            "Başlangıç",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22",
+            "23",
+            "24",
+            "25",
+            "26",
+            "27",
+            "28",
+            "29",
+            "30",
+            "31",
+            "32",
+            "33",
+            "34",
+            "35",
+            "36",
+            "37",
+            "38",
+            "39",
+            "40",
+            "41",
+            "42"
+          ]
+        },
+        {
+          "label": "Hiç soru çıkmamış",
+          "value": "md Başlangıç, md 1, md 2, md 3, md 4, md 5, md 6, md 7, md 8, md 9, md 10, md 11, md 12, md 13, md 14, md 15, md 16, md 17, md 18, md 19, md 20, md 21, md 22, md 23, md 24, md 25, md 26, md 27, md 28, md 29, md 30, md 31, md 32, md 33, md 34, md 35, md 36, md 37, md 38, md 39, md 40, md 41, md 42",
+          "refs": [
+            "Başlangıç",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22",
+            "23",
+            "24",
+            "25",
+            "26",
+            "27",
+            "28",
+            "29",
+            "30",
+            "31",
+            "32",
+            "33",
+            "34",
+            "35",
+            "36",
+            "37",
+            "38",
+            "39",
+            "40",
+            "41",
+            "42"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "Başlangıç",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17",
+        "18",
+        "19",
+        "20",
+        "21",
+        "22",
+        "23",
+        "24",
+        "25",
+        "26",
+        "27",
+        "28",
+        "29",
+        "30",
+        "31",
+        "32",
+        "33",
+        "34",
+        "35",
+        "36",
+        "37",
+        "38",
+        "39",
+        "40",
+        "41",
+        "42"
+      ],
+      "generated": true
+    },
+    {
+      "type": "bridge",
+      "title": "Bu üniteden soru çöz",
+      "articleRefs": [
+        "Başlangıç",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17",
+        "18",
+        "19",
+        "20",
+        "21",
+        "22",
+        "23",
+        "24",
+        "25",
+        "26",
+        "27",
+        "28",
+        "29",
+        "30",
+        "31",
+        "32",
+        "33",
+        "34",
+        "35",
+        "36",
+        "37",
+        "38",
+        "39",
+        "40",
+        "41",
+        "42"
+      ],
+      "generated": true,
+      "rows": [
+        {
+          "label": "Madde kapsamlı seans",
+          "value": "md Başlangıç, 1–42, 0 soru",
+          "refs": [
+            "Başlangıç",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22",
+            "23",
+            "24",
+            "25",
+            "26",
+            "27",
+            "28",
+            "29",
+            "30",
+            "31",
+            "32",
+            "33",
+            "34",
+            "35",
+            "36",
+            "37",
+            "38",
+            "39",
+            "40",
+            "41",
+            "42"
+          ]
+        }
+      ]
+    }
+  ]
+}

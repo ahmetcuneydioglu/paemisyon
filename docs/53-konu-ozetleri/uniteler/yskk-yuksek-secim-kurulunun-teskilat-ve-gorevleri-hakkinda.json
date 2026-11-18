@@ -1,0 +1,495 @@
+{
+  "unit": {
+    "slug": "yskk-yuksek-secim-kurulunun-teskilat-ve-gorevleri-hakkinda",
+    "legislationSlug": "7062-yuksek-secim-kurulunun-teskilat-ve-gorevleri-hakkinda-kanun",
+    "topicId": "f9277971-f73f-4134-914d-0584c1190e6b",
+    "title": "Yüksek Seçim Kurulunun kuruluşu ve görevleri",
+    "subtitle": "Bağımsızlık, oluşum, karar usulü, görevler, teşkilat ve personel",
+    "articleFrom": "1",
+    "articleTo": "14",
+    "readingMinutes": 10,
+    "sourceLabel": "AI özeti — 7062 Yüksek Seçim Kurulunun Teşkilat ve Görevleri Hakkında Kanun, md 1–14",
+    "articleNos": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14"
+    ],
+    "generatedBy": "claude-opus-5-5 (ozet-uret.ts)",
+    "sortOrder": 1
+  },
+  "blocks": [
+    {
+      "type": "concept",
+      "title": "Seçimlerin hakemi: Yüksek Seçim Kurulu",
+      "body": "Bu Kanun, Yüksek Seçim Kurulunun kuruluşunu, teşkilatını, görev ve yetkilerini ve çalışma usul ve esaslarını düzenler. Kanunda geçen terimlerin anlamları şöyledir:\n- \"Kurul\": Yüksek Seçim Kurulu\n- \"Başkan\" ve \"Başkanvekili\": Kurulun Başkanı ve Başkanvekili\n- \"Üye\": Kurul üyesi\n\nAkılda tutman gereken ilk kural şu: Kurul, görevlerini yerine getirirken ve yetkilerini kullanırken **bağımsız ve tarafsızdır**. Hiçbir organ, makam, merci veya kişi Kurula emir ve talimat veremez.",
+      "articleRefs": [
+        "1",
+        "2",
+        "3"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Kurulun oluşumu",
+      "body": "**Kurul, yedi asıl ve dört yedek üyeden oluşur.**\n- Üyelerin **altısını Yargıtay**, **beşini Danıştay** Genel Kurulları seçer.\n- Seçim, bu kurulların kendi üyeleri arasından yapılır.\n- Seçimde **gizli oy** kullanılır ve **üye tamsayılarının salt çoğunluğu** aranır.\n- Üyelerin görev süresi **altı yıldır**.\n- Süresi biten üye **yeniden seçilebilir**.",
+      "articleRefs": [
+        "4"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Altı mı beş mi, altı yıl mı üç yıl mı?",
+      "body": "İki ayrımı birbirine karıştırma.\n\n**Kim kaç üye seçer?** Yargıtay **altı**, Danıştay **beş** üye seçer. Bu 11 üye, Kurulu yedi asıl ve dört yedek üye olarak oluşturur.\n\n**Süre mi, aralık mı?** Üyenin görev süresi **altı yıldır**. Görev süresi biten üyelerin yerine ise **üç yılda bir** seçim yapılır.\n\nGörev süresiyle yenileme aralığının yerini değiştiren bir şık gördüğünde dur ve tekrar oku.",
+      "articleRefs": [
+        "4"
+      ],
+      "derivedNumbers": [
+        {
+          "value": 11,
+          "expr": "6 + 5",
+          "refs": [
+            "4"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Başkan, Başkanvekili ve yedek üyeler",
+      "body": "- **Başkan ve Başkanvekili**, Kurul üyeleri arasından seçilir.\n- Bu seçimde **gizli oy** kullanılır ve **üye tamsayısının salt çoğunluğu** aranır.\n- Başkan ve Başkanvekili seçildikten **sonra**, yedek üyeler belirlenir.\n- Yedek üyeler, Yargıtay ve Danıştaydan seçilmiş üyeler arasından **ad çekme** ile **ikişer** kişi olarak belirlenir.\n- **Başkan ve Başkanvekili ad çekmeye girmezler.**",
+      "articleRefs": [
+        "4"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Yenileme seçimi",
+      "body": "- Görev süresi biten üyelerin yerine yenilerini belirlemek için **üç yılda bir**, **ocak ayının ikinci yarısında** seçim yapılır.\n- Üyelerin görev süresi, seçilme tarihlerine bakılmaksızın **bu ayın son gününden itibaren** hesaplanır.\n- Yeni üyelerin **tamamı seçilinceye kadar** eski üyeler görevlerine devam eder.\n- Her yenileme seçiminden sonra yedek üyeler, Başkan ve Başkanvekilinin girmediği ad çekme usulüyle yeniden belirlenir.",
+      "articleRefs": [
+        "4"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Başkanlık veya üyelik boşalırsa",
+      "body": "**Görevi üyelikten ayrılmadan bırakma:** Başkan veya Başkanvekili, Kurul üyeliğinden ayrılmadan görevini bırakırsa bu görev için seçim yapılır. Görevi bırakan kişi, bu göreve yeni seçilen üyenin yerini alır.\n\n**Kurul üyeliğinden ayrılma:** Başkan veya Başkanvekili Kurul üyeliğinden ayrılmışsa **önce üye seçimi** yapılır. Ardından, yeni üyenin de katıldığı oylamayla Başkan veya Başkanvekili seçilir. Yeni üyenin yeri, bu seçimin sonucuna ve bir önceki paragraftaki esasa göre belirlenir.\n\n**Diğer üyeler:** Bir üyenin üyeliği, görev süresi dolmadan herhangi bir sebeple sona ererse yerine yeni üye seçilir.\n\n**Görev süresi:** Kurul üyeliğinden ayrılan Başkan veya Başkanvekilinin (md 4/7) ve görev süresi dolmadan üyeliği sona eren üyenin (md 4/8) yerine yeni seçilen üye, yerine seçildiği Başkan, Başkanvekili veya üyenin **görev süresini tamamlar**. Kurul üyeliğinden ayrılmadan görevin bırakıldığı ilk hâlde ise yeni üye seçilmez; seçim Başkanlık veya Başkanvekilliği görevi için yapılır.",
+      "articleRefs": [
+        "4"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Kurumlarından izinli sayılma",
+      "body": "- **Başkan ve Başkanvekili**, görevleri süresince kurumlarından izinli sayılır.\n- **Üyeler** ise ihtiyaç duyulması hâlinde, Kurulca belirlenen süre zarfında izinli sayılır.\n- Her iki durumda da kurumlarındaki aylık, ödenek, her türlü zam ve tazminatlar ile diğer özlük haklarından **aynen yararlanmaya devam ederler**.",
+      "articleRefs": [
+        "4"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Karar verme usulü",
+      "body": "- Kurul kararlarını **salt çoğunlukla** verir.\n- **Oylar eşitse**, Başkanın bulunduğu tarafın görüşü doğrultusunda karar verilmiş olur.\n- **Prensip kararları** on beş gün içerisinde **Resmî Gazete'de** yayımlanır.\n- Seçime ilişkin **diğer kararlar** Kurulun **resmî internet sitesinde** yayımlanır.",
+      "articleRefs": [
+        "5"
+      ]
+    },
+    {
+      "type": "numbers",
+      "title": "Kurulun sayıları",
+      "rows": [
+        {
+          "label": "Asıl üye",
+          "value": "7",
+          "refs": [
+            "4"
+          ]
+        },
+        {
+          "label": "Yedek üye",
+          "value": "4",
+          "refs": [
+            "4"
+          ]
+        },
+        {
+          "label": "Yargıtay Genel Kurulunca seçilen üye",
+          "value": "6",
+          "refs": [
+            "4"
+          ]
+        },
+        {
+          "label": "Danıştay Genel Kurulunca seçilen üye",
+          "value": "5",
+          "refs": [
+            "4"
+          ]
+        },
+        {
+          "label": "Ad çekmeyle belirlenen yedek üye",
+          "value": "Yargıtay ve Danıştaydan seçilmiş üyeler arasından ikişer",
+          "refs": [
+            "4"
+          ]
+        },
+        {
+          "label": "Üye görev süresi",
+          "value": "6 yıl (yeniden seçilebilir)",
+          "refs": [
+            "4"
+          ]
+        },
+        {
+          "label": "Yenileme seçimi aralığı",
+          "value": "3 yılda bir",
+          "refs": [
+            "4"
+          ]
+        },
+        {
+          "label": "Yenileme seçiminin zamanı",
+          "value": "Ocak ayının ikinci yarısı",
+          "refs": [
+            "4"
+          ]
+        },
+        {
+          "label": "Başkan ve Başkanvekili seçimi",
+          "value": "Gizli oy, üye tamsayısının salt çoğunluğu",
+          "refs": [
+            "4"
+          ]
+        },
+        {
+          "label": "Prensip kararlarının Resmî Gazete'de yayımı",
+          "value": "15 gün içinde",
+          "refs": [
+            "5"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "4",
+        "5"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Kurulun görev ve yetkileri",
+      "body": "**Seçimin yönetimi ve uyuşmazlıklar**\n- Seçimlerin başlamasından bitimine kadar, seçimin **düzen içinde yönetimi ve dürüstlüğüyle** ilgili bütün işlemleri yapmak veya yaptırmak.\n- Seçim süresince ve seçimden sonra, seçim konularıyla ilgili bütün **yolsuzlukları, şikâyet ve itirazları** incelemek ve **kesin olarak** karara bağlamak.\n\n**Tutanaklar**\n- **Türkiye Büyük Millet Meclisi üyelerinin** seçim tutanaklarını kabul etmek.\n- **Cumhurbaşkanı** seçimi tutanaklarını kabul etmek ve seçilen Cumhurbaşkanı adına seçildiğine dair tutanak düzenlemek.\n\n**Düzenleme**\n- Seçmen kütüğünün oluşturulması, güncellenmesi, yönetilmesi ve denetimine ilişkin **usul ve esasları belirlemek**.\n- Bu Kanunun uygulanmasına ve görev alanına ilişkin **prensip kararları** almak ve diğer düzenlemeleri yapmak.\n\n**Bilgilendirme**\n- Radyo ve televizyonlarda zorunlu yayın kapsamında yayınlanacak **tanıtım programları** hazırlamak veya hazırlatmak.\n- Seçmen kütüğü hakkında tanıtım programlarıyla vatandaşları bilgilendirmek.\n\n**Seçmenlere kolaylık**\n- **Engelli seçmenlerin** oy kullanmalarını kolaylaştıracak her türlü tedbiri almak.\n- **Yurt dışındaki seçmenlerin** oy kullanmalarını kolaylaştıracak tedbirleri almak.\n\n**Diğer**\n- Görev alanıyla ilgili konularda yurt içi ve yurt dışı kuruluşlarla iş birliği yapmak.\n- Anayasa ve kanunlarla verilen diğer görevleri yerine getirmek.",
+      "articleRefs": [
+        "6"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Kesin karar ve iki ayrı tutanak",
+      "body": "**Kesin karar:** Seçim konularıyla ilgili yolsuzluk, şikâyet ve itirazları Kurul inceler ve **kesin olarak** karara bağlar. Bu yetki seçim süresiyle sınırlı değildir; **seçimden sonrasını da** kapsar.\n\n**İki ayrı tutanak görevi:** Burada ince bir fark var.\n- Türkiye Büyük Millet Meclisi üyelerinin seçim tutanaklarını Kurul **kabul eder**.\n- Cumhurbaşkanı seçiminde ise tutanakları kabul etmekle kalmaz, seçilen Cumhurbaşkanı adına **seçildiğine dair tutanak da düzenler**.\n\n**Tedbir ifadeleri:** Engelli seçmenler için \"**her türlü** tedbir\", yurt dışındaki seçmenler için ise \"kolaylaştıracak tedbirler\" ifadesi kullanılır.",
+      "articleRefs": [
+        "6"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Teşkilat",
+      "body": "Kurul teşkilatı **merkez** ve **taşra** birimlerinden oluşur.\n\n**Merkez teşkilatı:**\n- Seçmen Kütüğü Genel Müdürlüğü\n- Seçim Hizmetleri Genel Müdürlüğü\n- İnsan Kaynakları Dairesi Başkanlığı\n- Strateji Geliştirme Dairesi Başkanlığı\n- Özel Kalem Müdürlüğü\n\n**Taşra teşkilatı:** İlçe ve yurt dışı ilçe seçim kurullarına bağlı seçim müdürlüklerinden oluşur. Kurul, **gerekli görülen illerde** il seçim kuruluna bağlı seçim müdürlüğü **kurabilir**.",
+      "articleRefs": [
+        "7"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Başkan",
+      "body": "Başkan, Kurulun **genel yönetim ve temsilinden** sorumludur. Bu sorumluluk; Kurul çalışmalarının düzenlenmesini, yürütülmesini, değerlendirilmesini ve gerektiğinde kamuoyuna duyurulmasını kapsar.\n\n**Görev ve yetkileri:**\n- Kurulun toplantı gündemini belirlemek ve Kurul toplantılarına başkanlık etmek.\n- Kurul kararlarının yerine getirilmesini sağlamak.\n- Genel müdür, genel müdür yardımcısı ve daire başkanları ile diğer personeli **atamak**.\n- Düzenlemelerin hazırlanması için gerektiğinde komisyon kurulmasını **Kurula teklif etmek**.\n- Kanunlarla verilen diğer görevleri yerine getirmek.\n\n**Yetki devri:** Başkan, yetkilerinin bir kısmını **yazılı olarak** Başkanvekiline devredebilir.\n\n**Vekâlet:** Başkanın yokluğunda Başkanvekili, onun da yokluğunda **en yaşlı üye** vekâlet eder.",
+      "articleRefs": [
+        "8"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "İnsan Kaynakları ve Strateji Geliştirme",
+      "body": "**İnsan Kaynakları Dairesi Başkanlığı:**\n- Personelin atama, nakil, performans, terfi, disiplin, emeklilik ve benzeri özlük işlemlerini yürütür.\n- Personelin eğitim planını hazırlar, uygular ve değerlendirir.\n- Personel politikası ve planlaması, insan kaynakları sisteminin geliştirilmesi ve performans ölçütlerinin oluşturulması konusunda çalışma yapar ve teklifte bulunur.\n\n**Strateji Geliştirme Dairesi Başkanlığı:**\n- Mevzuatla **mali hizmetleri yürüten birimlere** verilen görevleri yapar.\n- Başkan tarafından verilen diğer görevleri yerine getirir.",
+      "articleRefs": [
+        "9"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Kurul personeli",
+      "body": "- Kurul personeli, bu Kanundaki hükümler saklı kalmak kaydıyla **657 sayılı Devlet Memurları Kanununa** tabidir.\n- Kurulda 657 sayılı Kanunun 4 üncü maddesinin (B) fıkrası uyarınca **sözleşmeli** personel çalıştırılabilir.\n- Seçimlerle ilgili hizmetler için aynı maddenin (C) fıkrası uyarınca **geçici personel** çalıştırılabilir.\n- Merkez teşkilatında **seçim uzmanı** ve **seçim uzman yardımcısı** istihdam edilebilir.\n- İlk defa atanacak diğer personeli **Başkan** atar. Adaylar, Kamu Personel Seçme Sınavında yönetmelikte belirlenen puan türünde asgari puanı almış olanlar arasından seçilir. Atama, **sözlü** ve gerektiğinde **uygulamalı** sınavın sonucuna göre yapılır.\n- Bu sınava, ilan edilecek kadro sayısının **beş katına kadar** aday çağrılır.\n- 657 sayılı Kanuna tabi personel, **Başkanın teklifi** üzerine **Adalet Bakanlığınca** Bakanlık merkez ve taşra teşkilatı kadrolarına atanabilir. Bu atama mükteseplerine uygun olarak yapılır ve atama izni sınırına tabi değildir.",
+      "articleRefs": [
+        "10"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Seçim müdürü ve seçim müdür yardımcıları",
+      "body": "- **Atama:** Kurul personeli arasında yapılacak veya yaptırılacak **yazılı ve sözlü** sınavın sonucuna göre **Başkan** atar.\n- **Öğrenim şartı:** Hukuk fakültesi veya siyasal bilgiler, idari bilimler, iktisat ve maliye alanlarında **en az dört yıllık** yükseköğrenim yapmış olmak ya da bunlara denkliği kabul edilmiş yabancı öğretim kurumlarından mezun olmak gerekir.\n- **Yer yasağı:** Nüfusa kayıtlı oldukları ilçelerde görev yapamazlar.\n- **Süre sınırı:** Geçici görevde geçen süreler de dâhil, aynı yerde **altı yıldan fazla** çalışamazlar. Bu süreyi dolduranlar, ihtiyaç hâlinde **Başkanın kararıyla en fazla bir yıl daha** aynı yerde çalışabilir.\n- **Bölge esası:** Görev süreleri bölge esasına göre belirlenir. Bölgeleri ve bu bölgelerde geçirilecek süreleri, coğrafi şartlar ile sosyal ve ekonomik imkânları dikkate alarak **Kurul** belirler.",
+      "articleRefs": [
+        "10"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Seçim iş ve işlemlerinde görevlendirme: kim hariç?",
+      "body": "**Kim görevlendirebilir?** Başkan ile il ve ilçe seçim kurulu başkanları, Kurulun belirleyeceği ilkeler çerçevesinde görevlendirme yapabilir.\n\n**Kimler görevlendirilebilir?** Kamu kurum ve kuruluşları ile kamu iktisadi teşebbüsleri ve iktisadi devlet teşekküllerindeki bütün memur, işçi ve hizmetliler seçim iş ve işlemlerinde görevlendirilebilir. Başkanlar bunlar dışında da gerekli gördükleri kimseleri çalıştırabilir.\n\n**Kimler hariç?** Şunlar md 10/11'deki görevlendirmenin **dışındadır**:\n- hâkimler\n- Cumhuriyet savcıları\n- vali ve kaymakamlar\n- asker kişiler\n- **kolluk amir ve memurları**\n\nBu kişileri \"görevlendirilebilenler\" arasında sayan şıkka dikkat et.\n\n**Disiplin:** Seçim kurulu başkanları, kendilerine bağlı seçim müdürü ve diğer personelin **disiplin amiridir**. Disiplin kurulu ise **Kurul merkezinde**, tüm personel için oluşturulur.\n\n**Geçici çalıştırma:** İlçe seçim kurulu başkanı, ihtiyaç hâlinde seçim müdürlüğü personelinin o yerdeki adalet hizmetlerinde, kadrolarına uygun görevlerde geçici olarak çalıştırılmasına müsaade edebilir.",
+      "articleRefs": [
+        "10"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Yönetim, denetim ve giderler",
+      "body": "**Yönetim:** İl ve ilçe seçim müdürlüklerini **seçim kurulu başkanları** yönetir. Bu yönetim, bu Kanun ve 298 sayılı Seçimlerin Temel Hükümleri ve Seçmen Kütükleri Hakkında Kanun hükümleri çerçevesinde yürütülür.\n\n**Seçim kurulu başkanlarının denetimi:**\n- Seçim müdürlükleri, seçim kurulu başkanlarınca **yılda en az bir defa** denetlenir.\n- Denetim, geçen bir yıllık işlemleri kapsamak üzere **her yıl ocak ayı içinde** yapılır.\n- Denetim raporunun bir örneği seçim müdürlüğünde saklanır.\n- Diğer örneği **en geç o ayın sonuna kadar** Kurul Başkanlığına gönderilir.\n\n**Adalet müfettişlerinin denetimi:** Seçim müdürlükleri, seçim kurulu başkanları tarafından ve seçim iş ve işlemleri **dışında** **adalet müfettişleri** vasıtasıyla da denetlenir. Bu denetimin usul ve esasları, Kurulun görüşü alınarak Adalet Bakanlığınca çıkarılan yönetmelikle belirlenir.\n\n**Giderler:** Kurul merkez ve taşra teşkilatının giderleri ile her türlü seçim giderleri, 298 sayılı Kanunun 181 inci maddesi uyarınca karşılanır.",
+      "articleRefs": [
+        "11"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Atıflar ve yürütme",
+      "body": "- 298 sayılı Kanunun bu Kanunla yürürlükten kaldırılan hükümlerine mevzuatta yapılan atıflar, **bu Kanunun ilgili hükümlerine** yapılmış sayılır.\n- Kanun hükümlerini **Bakanlar Kurulu** yürütür.\n\n**Not:** Yürütme maddesi metnindeki hâliyle verilmiştir.",
+      "articleRefs": [
+        "12",
+        "14"
+      ]
+    },
+    {
+      "type": "numbers",
+      "title": "Süreler ve sınırlar",
+      "rows": [
+        {
+          "label": "Prensip kararlarının Resmî Gazete'de yayımı",
+          "value": "15 gün içinde",
+          "refs": [
+            "5"
+          ]
+        },
+        {
+          "label": "Seçmen Kütüğü Genel Müdürlüğünün Kurula sunduğu raporlar",
+          "value": "3 aylık raporlar",
+          "refs": [
+            "9"
+          ]
+        },
+        {
+          "label": "Seçim müdürü ve yardımcısı için öğrenim şartı",
+          "value": "En az 4 yıllık yükseköğrenim",
+          "refs": [
+            "10"
+          ]
+        },
+        {
+          "label": "İlk atamada sözlü sınava çağrılacak aday",
+          "value": "İlan edilecek kadro sayısının 5 katına kadar",
+          "refs": [
+            "10"
+          ]
+        },
+        {
+          "label": "Seçim müdürü ve yardımcısının aynı yerde çalışma sınırı",
+          "value": "En fazla 6 yıl (geçici görev dâhil)",
+          "refs": [
+            "10"
+          ]
+        },
+        {
+          "label": "Başkan kararıyla ek çalışma",
+          "value": "En fazla 1 yıl daha",
+          "refs": [
+            "10"
+          ]
+        },
+        {
+          "label": "Seçim müdürlüklerinin seçim kurulu başkanlarınca denetimi",
+          "value": "Yılda en az 1 defa, ocak ayı içinde",
+          "refs": [
+            "11"
+          ]
+        },
+        {
+          "label": "Denetim raporunun Kurul Başkanlığına gönderilmesi",
+          "value": "En geç ocak ayının sonuna kadar",
+          "refs": [
+            "11"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "5",
+        "9",
+        "10",
+        "11"
+      ]
+    },
+    {
+      "type": "compare",
+      "title": "Seçmen Kütüğü Genel Müdürlüğü ↔ Seçim Hizmetleri Genel Müdürlüğü",
+      "rows": [
+        {
+          "aspect": "Ana iş",
+          "left": "Seçmen kütüğünü oluşturmak ve güncellemek",
+          "right": "Yurt içi ve yurt dışı seçim iş ve işlemlerinin hazırlıklarını yapmak, seçim çalışmalarını yürütmek",
+          "refs": [
+            "9"
+          ]
+        },
+        {
+          "aspect": "Seçmen ve oy",
+          "left": "Seçmenleri eksiksiz belirlemek, mükerrer seçmen kaydını önlemek, mükerrer oy kullananları tespit etmek, seçmenin kolay, doğru ve hızlı oy vermesini sağlamak",
+          "right": "Seçim araç ve gereçlerine ilişkin iş ve işlemleri yürütmek",
+          "refs": [
+            "9"
+          ]
+        },
+        {
+          "aspect": "Bilgi ve belge",
+          "left": "Bilgi işlem hizmetleri, bilişim sisteminin işletimi ve bakımı, bilgi güvenliği ve güvenilirliği",
+          "right": "Kurulun yazışmaları, genel evrak ve arşiv faaliyetleri",
+          "refs": [
+            "9"
+          ]
+        },
+        {
+          "aspect": "Destek işleri",
+          "left": "Seçimin çabuk sonuçlanmasını sağlayacak tedbirler, yıllık programlar",
+          "right": "Kiralama ve satın alma; temizlik, güvenlik, onarım, taşıma ve benzeri hizmetler; taşınır ve taşınmaz işlemleri",
+          "refs": [
+            "9"
+          ]
+        },
+        {
+          "aspect": "Ayırt edici görev",
+          "left": "Tanıtım programları ve seçime yönelik eğitim faaliyetleri",
+          "right": "Sivil savunma ve seferberlik hizmetleri",
+          "refs": [
+            "9"
+          ]
+        },
+        {
+          "aspect": "Ortak görevler",
+          "left": "Kurul kararlarının gereklerini yerine getirmek; kanunlarda gösterilen veya Başkanın verdiği diğer görevler",
+          "right": "Kurul kararlarının gereklerini yerine getirmek; kanunlarda gösterilen veya Başkanın verdiği diğer görevler",
+          "refs": [
+            "9"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "9"
+      ]
+    },
+    {
+      "type": "exam_stats",
+      "title": "Sınav der ki",
+      "rows": [
+        {
+          "label": "Bu ünitenin maddelerinden yayındaki soru",
+          "value": "0",
+          "refs": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "14"
+          ]
+        },
+        {
+          "label": "Hiç soru çıkmamış",
+          "value": "md 1, md 2, md 3, md 4, md 5, md 6, md 7, md 8, md 9, md 10, md 11, md 12, md 14",
+          "refs": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "14"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12",
+        "14"
+      ],
+      "generated": true
+    },
+    {
+      "type": "bridge",
+      "title": "Bu üniteden soru çöz",
+      "articleRefs": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12",
+        "14"
+      ],
+      "generated": true,
+      "rows": [
+        {
+          "label": "Madde kapsamlı seans",
+          "value": "md 1–14, 0 soru",
+          "refs": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "14"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,695 @@
+{
+  "unit": {
+    "slug": "yuk-2-ikamet",
+    "legislationSlug": "6458-sayili-yabancilar-ve-uluslararasi-koruma-kanunu",
+    "topicId": "18c6184c-6f45-4501-a075-0614a48ab77e",
+    "title": "İkamet izinleri ve vatansız kişiler",
+    "subtitle": "İkamet izni başvurusu, uzatma, kesinti, izin çeşitleri ve Vatansız Kişi Kimlik Belgesi",
+    "articleFrom": "19",
+    "articleTo": "51",
+    "readingMinutes": 15,
+    "sourceLabel": "AI özeti — 6458 Sayılı Yabancılar ve Uluslararası Koruma Kanunu, md 19–51",
+    "articleNos": [
+      "19",
+      "20",
+      "21",
+      "22",
+      "23",
+      "24",
+      "25",
+      "26",
+      "27",
+      "28",
+      "29",
+      "30",
+      "31",
+      "32",
+      "33",
+      "34",
+      "35",
+      "36",
+      "37",
+      "38",
+      "39",
+      "40",
+      "41",
+      "42",
+      "43",
+      "44",
+      "45",
+      "46",
+      "47",
+      "48",
+      "49",
+      "50",
+      "51"
+    ],
+    "generatedBy": "claude-opus-5-5 (ozet-uret.ts)",
+    "sortOrder": 2
+  },
+  "blocks": [
+    {
+      "type": "concept",
+      "title": "İkamet izni ne zaman şart?",
+      "body": "Türkiye'de vizenin ya da vize muafiyetinin tanıdığı süreden veya doksan günden fazla kalacak bir yabancı, ikamet izni almak zorundadır. Bir ayrıntıyı unutma: ikamet izni, altı ay içinde kullanılmaya başlanmazsa geçerliliğini kaybeder.",
+      "articleRefs": [
+        "19"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "İkamet izninden muaf olanlar",
+      "body": "**Muaf tutulanlar:**\n- Doksan güne kadar vizeyle veya vizeden muaf gelenler (vize ya da muafiyet süresince)\n- Vatansız Kişi Kimlik Belgesi sahipleri\n- Türkiye'de görevli diplomasi ve konsolosluk memurları\n- Bu memurların ailelerinden Dışişleri Bakanlığınca bildirilenler\n- Uluslararası kuruluşların Türkiye'deki temsilciliklerinde çalışan ve statüsü anlaşmalarla belirlenmiş olanlar\n- Türkiye Cumhuriyeti'nin taraf olduğu anlaşmalarla muaf tutulanlar\n- 5901 sayılı Kanunun 28 inci maddesi kapsamında olanlar\n- 76 ncı ve 83 üncü maddelerin birinci fıkraları kapsamında belge sahibi olanlar\n\n**Belge:** Diplomatlar, aileleri, uluslararası kuruluş çalışanları ve anlaşmayla muaf olanlara, şekli ve içeriği Bakanlık ve Dışişleri Bakanlığınca birlikte belirlenen belge tanzim edilir.\n\n**Muafiyet bitince:** Bu kişiler Türkiye'de kalmaya devam edecekse, **en geç on gün içinde** ikamet izni almak üzere valiliklere başvurur.",
+      "articleRefs": [
+        "20"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "İkamet izni başvurusu: kural konsolosluktur",
+      "body": "**Kural:** Başvuru, yabancının vatandaşı olduğu veya yasal olarak bulunduğu ülkedeki **konsolosluklara** yapılır.\n\n**Pasaport şartı:** Talep edilen ikamet izni süresinden **altmış gün daha uzun** süreli pasaport ya da pasaport yerine geçen belge aranır.\n\n**Eksik belge:** Değerlendirme, eksikler tamamlanıncaya kadar ertelenebilir; eksikler ilgiliye bildirilir.\n\n**Akış:** Konsolosluk, başvuruyu görüşüyle birlikte Genel Müdürlüğe iletir. Genel Müdürlük gerekli görürse ilgili kurumların görüşünü alır, başvuruyu sonuçlandırır ve izin düzenlenmesi veya ret için konsolosluğa bilgi verir.\n\n**Süre:** Başvurular **en geç doksan gün** içinde sonuçlandırılır. Ret işlemleri ilgiliye tebliğ edilir.\n\n**Aracı kurum:** Başvurular yetkili aracı kurum tarafından da yapılabilir. İçişleri Bakanlığı gerekli gördüğünde, azami üç yıl geçerli sözleşmelerle aracı kurum görevlendirilebilir.\n\n**Not:** \"Genel Müdürlük\" madde metnindeki hâliyle verilmiştir.",
+      "articleRefs": [
+        "21"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "İstisna: Türkiye içinden valiliğe başvuru",
+      "body": "İkamet izni başvuruları şu hâllerde **istisnai olarak valiliklere** de yapılabilir:\n- Adli veya idari makamların kararı ya da talebi\n- Yabancının Türkiye'den ayrılmasının makul veya mümkün olmadığı durumlar\n- Uzun dönem, öğrenci, insani ve insan ticareti mağduru ikamet izinleri\n- Aile ikamet izninden kısa dönem ikamet iznine geçiş\n- Türkiye'de ikamet izni bulunan anne veya babanın Türkiye'de doğan çocukları için başvuru\n- İzne esas gerekçenin sona ermesi veya değişmesi nedeniyle yeni kalış amacına uygun izin başvurusu\n- 20 nci maddenin ikinci fıkrası kapsamındaki başvurular (muafiyeti sona eren diplomasi ve konsolosluk memurları, bunların aileleri, uluslararası kuruluş temsilciliklerinde çalışanlar ve anlaşmayla muaf tutulanlar)\n- Türkiye'de yükseköğrenimini tamamlayanların kısa dönem ikamet iznine geçişi",
+      "articleRefs": [
+        "22"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Altmış gün: uzun mu, kısa mı?",
+      "body": "Aynı altmış gün iki ayrı maddede ters yönde geçer, dikkatli oku. **Başvururken** pasaportun, talep ettiğin ikamet izni süresinden altmış gün **daha uzun** olmalı (md 21). **İzin düzenlenirken** ise ikamet izni, pasaportun geçerlilik süresinden altmış gün **daha kısa** tutulur (md 23). Md 23'ün diğer iki unsurunu da aklında tut: izin **kalış amacına bağlı** ve **her yabancı için ayrı** düzenlenir. İkamet izninin şekli ve içeriği Bakanlıkça, ikamet izni yerine geçen çalışma izninin şekli ve içeriği ise Bakanlık ve ilgili kurumlarca birlikte belirlenir.",
+      "articleRefs": [
+        "21",
+        "23"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Uzatma; ret, iptal ve uzatmama",
+      "body": "**Uzatma (md 24):**\n- İkamet izinleri valiliklerce **uzatılabilir**. Uzatma başvuruları da valiliklerce sonuçlandırılır.\n- Başvuru, iznin dolmasına **altmış gün kalmasından itibaren** ve her koşulda **süre dolmadan önce** valiliğe yapılır.\n- Başvurana **harca tabi olmayan bir belge** verilir. Yabancı, izin süresi bitmiş olsa dahi karar verilinceye kadar bu belgeyle Türkiye'de ikamet edebilir.\n- Uzatılan izin, yasal izin süresinin **bitim tarihinden** itibaren başlatılır.\n\n**Türkiye içinden yapılan talepte ret, uzatmama, iptal (md 25):**\n- İşlemler ve tebliğleri valiliklerce yapılır.\n- Yabancının Türkiye'deki aile bağları, ikamet süresi, menşe ülkedeki durumu ve çocuğun yüksek yararı göz önünde bulundurulur; karar ertelenebilir.\n- Karar yabancıya ya da yasal temsilcisine veya avukatına tebliğ edilir. Tebligatta itiraz haklarının etkin şekilde nasıl kullanılacağı ve diğer yasal hak ve yükümlülükler yer alır.",
+      "articleRefs": [
+        "24",
+        "25"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Cezaevi, adres kaydı ve çalışma izni",
+      "body": "**Cezaevi ve geri gönderme merkezi (md 26):**\n- Tutuklu veya hükümlü olarak cezaevinde ya da idari gözetim altında geri gönderme merkezinde geçen süreler **ikamet izni süresinin ihlali sayılmaz**.\n- Bu kişilerin varsa ikamet izinleri **iptal edilebilir**.\n- Yabancı kimlik numarası bulunmayanlara, ikamet izni şartı aranmadan yabancı kimlik numarası verilebilir.\n\n**Adres kaydı:** Konsolosluklardan ikamet ve çalışma izni alarak gelen yabancılar, giriş tarihinden itibaren **en geç yirmi iş günü** içinde adres kayıt sistemine kaydolur.\n\n**Çalışma izni (md 27):**\n- Geçerli çalışma izni ile 4817 sayılı Kanunun 10 uncu maddesine istinaden verilen Çalışma İzni Muafiyet Teyit Belgesi **ikamet izni sayılır**.\n- Çalışma izni verilmesi veya uzatılması için yabancının 7 nci madde kapsamına girmemesi şartı aranır.\n\n**Not:** 4817 sayılı Kanuna yapılan atıf madde metnindeki hâliyle verilmiştir.",
+      "articleRefs": [
+        "26",
+        "27"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "İkamette kesinti ve izinler arası geçiş",
+      "body": "**Kesinti sayılan yurt dışı kalışlar:**\n- Bir yılda toplam **altı ayı geçen**, veya\n- Son **beş yıl** içinde toplam **bir yılı aşan** Türkiye dışında kalışlar.\n\n**İstisna:** Zorunlu kamu hizmeti, eğitim ve sağlık nedenleriyle yapılan kalışlar kesinti sayılmaz.\n\n**Sonuç:** Kesintisi olanların ikamet izni başvurularında veya başka izne geçişlerinde **önceki izin süreleri hesaba katılmaz**.\n\n**Kesintisiz sürenin hesabı:** Öğrenci ikamet izinlerinin **yarısı**, diğer ikamet izinlerinin **tamamı** sayılır.\n\n**Geçiş (md 29):** İzne esas gerekçe sona erer veya farklı bir gerekçe ortaya çıkarsa yabancı, yeni kalış amacına uygun ikamet izni talep edebilir. Usul ve esaslar yönetmelikle düzenlenir.",
+      "articleRefs": [
+        "28",
+        "29"
+      ]
+    },
+    {
+      "type": "numbers",
+      "title": "Sayılar ve süreler: başvurudan kesintiye",
+      "rows": [
+        {
+          "label": "İkamet izni zorunluluğu eşiği",
+          "value": "Vize/muafiyet süresinden veya 90 günden fazla kalış",
+          "refs": [
+            "19"
+          ]
+        },
+        {
+          "label": "İznin kullanılmaya başlanması",
+          "value": "6 ay içinde; aksi hâlde geçerliliğini kaybeder",
+          "refs": [
+            "19"
+          ]
+        },
+        {
+          "label": "Diplomat, ailesi, uluslararası kuruluş çalışanı ve anlaşmayla muaf olanın muafiyeti sona erince valiliğe başvuru",
+          "value": "En geç 10 gün",
+          "refs": [
+            "20"
+          ]
+        },
+        {
+          "label": "Başvuruda pasaport süresi",
+          "value": "Talep edilen izin süresinden 60 gün uzun",
+          "refs": [
+            "21"
+          ]
+        },
+        {
+          "label": "Başvurunun sonuçlandırılması",
+          "value": "En geç 90 gün",
+          "refs": [
+            "21"
+          ]
+        },
+        {
+          "label": "Aracı kurum sözleşmesi",
+          "value": "Azami 3 yıl",
+          "refs": [
+            "21"
+          ]
+        },
+        {
+          "label": "Düzenlenen izin süresi",
+          "value": "Pasaport geçerliliğinden 60 gün kısa",
+          "refs": [
+            "23"
+          ]
+        },
+        {
+          "label": "Uzatma başvurusu",
+          "value": "Sürenin dolmasına 60 gün kala başlar; süre dolmadan yapılır",
+          "refs": [
+            "24"
+          ]
+        },
+        {
+          "label": "Adres kaydı (konsolosluktan izinle gelen)",
+          "value": "Girişten itibaren en geç 20 iş günü",
+          "refs": [
+            "26"
+          ]
+        },
+        {
+          "label": "Kesinti: yıllık ölçü",
+          "value": "Bir yılda toplam 6 ayı geçen yurt dışı kalış",
+          "refs": [
+            "28"
+          ]
+        },
+        {
+          "label": "Kesinti: beş yıllık ölçü",
+          "value": "Son 5 yılda toplam 1 yılı aşan yurt dışı kalış",
+          "refs": [
+            "28"
+          ]
+        },
+        {
+          "label": "Kesintisiz sürede öğrenci izni",
+          "value": "Yarısı sayılır",
+          "refs": [
+            "28"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "19",
+        "20",
+        "21",
+        "23",
+        "24",
+        "26",
+        "28"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "İzin çeşitleri ve kısa dönem ikamet izni",
+      "body": "**İkamet izni çeşitleri (md 30):** kısa dönem, aile, öğrenci, uzun dönem, insani, insan ticareti mağduru.\n\n**Kısa dönem kimlere verilebilir (md 31):**\n- Bilimsel araştırma amacıyla gelecekler; taşınmaz malı bulunanlar; ticari bağlantı veya iş kuracaklar\n- Hizmet içi eğitim, Türkçe öğrenme kursu, kamu kurumları aracılığıyla eğitim, araştırma, staj ve kurslara katılacaklar; anlaşmalar veya öğrenci değişim programlarıyla gelecekler\n- Turizm amaçlı kalacaklar\n- Kamu sağlığına tehdit sayılan bir hastalık taşımamak kaydıyla tedavi görecekler\n- Adli veya idari makamların talebi ya da kararıyla kalması gerekenler\n- Aile ikamet izninden kısa döneme geçenler\n- Türkiye'de yükseköğrenimini tamamlayıp mezuniyetten itibaren **altı ay** içinde müracaat edenler\n- Türkiye'de çalışmayan ancak Cumhurbaşkanınca belirlenecek kapsam ve tutarda yatırım yapacaklar ile yabancı eşi ve ergin olmayan veya bağımlı yabancı çocukları\n- Kuzey Kıbrıs Türk Cumhuriyeti vatandaşları\n\n**Süreler:**\n- Genel kural: her defasında en fazla **ikişer yıllık**.\n- Yatırımcı ve KKTC vatandaşı: en fazla **beşer yıllık**.\n- Türkçe kursu: en fazla **iki defa**.\n- Mezun: **bir defaya mahsus**, en fazla **bir yıl**.\n\n**Taşınmaz:** İzne esas taşınmazın niteliği ve değeri Bakanlıkça belirlenir.\n\n**Dava:** Kısa dönem başvurusunun reddi veya iznin iptaline karşı açılan davada, savunmanın verilmesi veya savunma süresinin geçmesiyle dosya tekemmül etmiş sayılır. Davacının gösterdiği adrese tebligat yapılamazsa 2577 sayılı Kanunun 26 ncı maddesinin üçüncü fıkrasındaki süre **iki ay** uygulanır. Duruşma mahkemenin takdirindedir.",
+      "articleRefs": [
+        "30",
+        "31"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Kısa dönem: şartlar, ret ve iptal",
+      "body": "**Şartlar (md 32):**\n- 31 inci maddedeki gerekçelerden birini veya birkaçını ileri sürüp belgelerini ibraz etmek\n- 7 nci madde kapsamına girmemek\n- Genel sağlık ve güvenlik standartlarına uygun barınma şartlarına sahip olmak\n- İstenirse vatandaşı olduğu veya yasal olarak ikamet ettiği ülkenin yetkili makamlarınca düzenlenen adli sicil kaydını sunmak\n- Türkiye'de kalacağı adres bilgilerini vermek\n\n**Verilmez, verilmişse iptal edilir, süresi bitenler uzatılmaz (md 33):**\n- Şartlardan birinin veya birkaçının yerine getirilmemesi veya ortadan kalkması\n- İznin veriliş amacı dışında kullanıldığının belirlenmesi\n- Hakkında geçerli sınır dışı etme veya Türkiye'ye giriş yasağı kararı bulunması\n\nİznin yurt dışında kalış süresi bakımından iptaline ilişkin usul ve esaslar yönetmelikle düzenlenir.",
+      "articleRefs": [
+        "32",
+        "33"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Aile ikamet izni",
+      "body": "**Destekleyici:** Türk vatandaşları, 5901 sayılı Kanunun 28 inci maddesi kapsamında olanlar, ikamet izinlerinden birine sahip yabancılar, mülteciler ve ikincil koruma statüsü sahipleri.\n\n**Kime verilebilir:** Yabancı eşe; kendisinin veya eşinin ergin olmayan yabancı çocuğuna; kendisinin veya eşinin bağımlı yabancı çocuğuna.\n\n**Süre:** Her defasında **üç yılı aşmayacak** şekilde verilir; **hiçbir şekilde destekleyicinin ikamet izni süresini aşamaz**.\n\n**Birden fazla eş:** İzin eşlerden **yalnızca birine** verilir; diğer eşlerden olan çocuklara da verilebilir.\n\n**Çocuk:** Türkiye dışında varsa ortak velayeti bulunan anne veya babanın muvafakati aranır.\n\n**Eğitim:** Aile ikamet izni, **on sekiz yaşına kadar** öğrenci ikamet izni almadan ilk ve ortaöğretimde eğitim hakkı sağlar.\n\n**Kısa döneme geçiş:**\n- En az **üç yıl** aile izniyle kalmış ve **on sekiz yaşını** tamamlamış olan, talep ederse iznini kısa döneme dönüştürebilir.\n- **Boşanma:** Türk vatandaşıyla evli yabancıya, en az **üç yıl** aile izniyle kalmış olmak kaydıyla kısa dönem izni verilebilir. Aile içi şiddet mağduriyeti mahkeme kararıyla sabitse üç yıl şartı **aranmaz**.\n- **Destekleyicinin ölümü:** Bu kişiye bağlı kalanlara **süre şartı aranmadan** kısa dönem izni verilebilir.",
+      "articleRefs": [
+        "34"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Aile ikamet izninin şartları",
+      "body": "**Destekleyicide aranan şartlar:**\n- Toplam geliri asgari ücretten az olmamak üzere, aile fert başına asgari ücretin **üçte birinden** az olmayan aylık gelir\n- Ailenin nüfusuna uygun barınma şartları ve tüm aile fertlerini kapsayan sağlık sigortası\n- Başvuru tarihi itibarıyla **beş yıl** içinde aile düzenine karşı suçlardan hüküm giymediğini adli sicil kaydıyla belgelemek\n- Türkiye'de **en az bir yıldır** ikamet izniyle kalıyor olmak\n- Adres kayıt sisteminde kaydı bulunmak\n\n**Bir yıl şartı uygulanmaz:** Bilimsel araştırma amaçlı ikamet izni ya da çalışma izni bulunanlar, 5901 sayılı Kanunun 28 inci maddesi kapsamında olanlar ve Türk vatandaşıyla evli yabancılar.\n\n**Başvuran yabancıda aranan şartlar:**\n- Destekleyiciyle aile bağını gösteren bilgi ve belgeler\n- Birlikte yaşadığını veya yaşama niyeti taşıdığını ortaya koymak\n- Evliliği aile ikamet izni almak amacıyla yapmamış olmak\n- Eşlerden her birinin **on sekiz yaşını** doldurmuş olması\n- 7 nci madde kapsamına girmemek\n\n**Mülteci ve ikincil koruma statüsü sahipleri:** Destekleyiciye ilişkin şartlar aranmayabilir.",
+      "articleRefs": [
+        "35"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Aile izninin reddi, iptali; anlaşmalı evlilik",
+      "body": "**Verilmez, verilmişse iptal edilir, süresi bitenler uzatılmaz (md 36):**\n- 35 inci maddenin birinci ve üçüncü fıkralarındaki şartların karşılanmaması veya ortadan kalkması\n- Aile izni şartları ortadan kalktıktan sonra kısa dönem izni verilmemesi\n- Geçerli sınır dışı etme veya Türkiye'ye giriş yasağı kararı bulunması\n- İznin veriliş amacı dışında kullanıldığının belirlenmesi\n\nİznin yurt dışında kalış süresi bakımından iptali yönetmelikle düzenlenir.\n\n**Anlaşmalı evlilik (md 37):**\n- İzin verilmeden veya uzatılmadan önce **makul şüphe** varsa, evliliğin sırf ikamet izni için yapılıp yapılmadığını **valilikler** araştırır.\n- Bu amaç tespit edilirse izin verilmez, verilmişse iptal edilir.\n- İzin verildikten sonra da valiliklerce denetim yapılabilir.\n- Anlaşmalı evlilik yoluyla alınıp sonradan iptal edilen izinler, ikamet sürelerinin toplanmasında **hesaba katılmaz**.",
+      "articleRefs": [
+        "36",
+        "37"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Öğrenci ikamet izni ve çalışma hakkı",
+      "body": "**Kime verilir (md 38):**\n- Yükseköğretim kurumunda ön lisans, lisans, yüksek lisans veya doktora öğrenimi görecek yabancılara **verilir**.\n- Bakımı ve masrafları gerçek veya tüzel kişi tarafından üstlenilen ilk ve orta derece öğrencilerine, veli veya yasal temsilci muvafakatiyle öğrenim süresince **birer yıllık** sürelerle **verilebilir ve uzatılabilir**.\n- Kamu kurum ve kuruluşları aracılığıyla gelen öğrencilere öğrenim süresince ikamet izni verilebilir.\n- Öğrenci izni, öğrencinin anne ve babası ile diğer yakınlarına ikamet izni konusunda **hiçbir hak sağlamaz**.\n- Öğrenim süresi bir yıldan kısaysa izin süresi öğrenim süresini aşamaz.\n\n**Şartlar (md 39):** 38 inci madde kapsamındaki belgeleri ibraz etmek, 7 nci madde kapsamına girmemek, adres bilgilerini vermek.\n\n**Ret, iptal, uzatmama (md 40):** Şartların karşılanmaması veya ortadan kalkması; öğrenimin sürdürülemeyeceğine dair kanıt; amaç dışı kullanım; geçerli sınır dışı etme kararı veya giriş yasağı.\n\n**Çalışma (md 41):** Örgün öğrenim gören ön lisans, lisans, yüksek lisans ve doktora öğrencileri **çalışma izni almak kaydıyla** çalışabilir. Ön lisans ve lisans öğrencileri için çalışma hakkı **ilk yıldan sonra** başlar ve ilgili kanunlar ile Cumhurbaşkanlığı kararnameleriyle düzenlenir. Usul ve esasları Bakanlık ile Çalışma ve Sosyal Güvenlik Bakanlığı müştereken düzenler.",
+      "articleRefs": [
+        "38",
+        "39",
+        "40",
+        "41"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Uzun dönem ikamet izni ve şartları",
+      "body": "**Kural (md 42):** Türkiye'de kesintisiz **en az sekiz yıl** ikamet izniyle kalmış ya da Bakanlığın belirlediği şartlara uyan yabancılara, **Bakanlığın onayıyla valilikler** tarafından **süresiz** ikamet izni verilir.\n\n**Geçiş hakkı tanınmayanlar:** Mülteci, şartlı mülteci, ikincil koruma statüsü sahipleri, insani ikamet izni sahipleri ve geçici koruma sağlananlar.\n\n**Şartlar (md 43):**\n- Kesintisiz en az **sekiz yıl** ikamet izniyle kalmış olmak\n- Son **üç yıl** içinde sosyal yardım almamış olmak\n- Kendisinin ve varsa ailesinin geçimini sağlayacak yeterli ve düzenli gelir\n- Geçerli sağlık sigortası\n- Kamu düzeni veya kamu güvenliği açısından tehdit oluşturmamak\n\n**İstisna:** Bakanlığın belirlediği şartlara sahip olduğu için izin verilecek yabancılarda yalnızca kamu düzeni ve kamu güvenliği şartı aranır; diğerleri aranmaz.",
+      "articleRefs": [
+        "42",
+        "43"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Uzun dönem: haklar ve iptal",
+      "body": "**Haklar (md 44):** Uzun dönem ikamet izni sahibi, Türk vatandaşlarına tanınan haklardan yararlanır. **Hariç olanlar:**\n- Askerlik yapma yükümlülüğü\n- Seçme ve seçilme\n- Kamu görevlerine girme\n- Muaf olarak araç ithal etme\n- Özel kanunlardaki düzenlemeler\n\nSosyal güvenliğe ilişkin kazanılmış haklar saklıdır; kullanımı ilgili mevzuata tabidir. Bu haklara kısmen veya tamamen kısıtlama getirmeye **Cumhurbaşkanı** yetkilidir.\n\n**İptal sebepleri (md 45):**\n- Kamu düzeni veya kamu güvenliği açısından **ciddi tehdit** oluşturmak\n- Sağlık, eğitim ve ülkesindeki zorunlu kamu hizmeti dışında bir nedenle **kesintisiz bir yıldan fazla** Türkiye dışında bulunmak\n\nYurt dışında kalış nedeniyle izni iptal edilenlerin yeniden başvurusu ve sonuçlandırılmasına ilişkin usul ve esaslar yönetmelikle belirlenir.",
+      "articleRefs": [
+        "44",
+        "45"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Yurt dışında kalış: iki ayrı ölçü",
+      "body": "Yurt dışında kalış iki ayrı maddede, iki ayrı ölçüyle düzenlenir. Genel **kesinti** kuralında (md 28) ölçü **toplamdır**: bir yılda toplam altı ayı geçen ya da son beş yılda toplam bir yılı aşan kalışlar kesinti sayılır. **Uzun dönem izninin iptalinde** (md 45) ise ölçü **kesintisizliktir**: Türkiye dışında kesintisiz bir yıldan fazla bulunmak gerekir. İstisnalar da birebir aynı değil. Md 28'de zorunlu kamu hizmeti, eğitim ve sağlık sayılır; md 45'te sağlık, eğitim ve **ülkesindeki** zorunlu kamu hizmeti sayılır.",
+      "articleRefs": [
+        "28",
+        "45"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "İnsani ikamet izni",
+      "body": "**Kural:** Diğer izinlerin şartları aranmadan, **Bakanlıkça belirlenen sürelerle** sınırlı olmak kaydıyla ve **Genel Müdürlüğün onayı** alınarak **valiliklerce** verilebilir ve uzatılabilir.\n\n**Hâller:**\n- Çocuğun yüksek yararı söz konusu olduğunda\n- Sınır dışı etme veya giriş yasağı kararına rağmen çıkış yaptırılamadığında ya da ayrılma makul veya mümkün görülmediğinde\n- 55 inci madde uyarınca sınır dışı etme kararı alınmadığında\n- 53 üncü, 72 nci ve 77 nci maddelere göre yapılan işlemlere karşı yargı yoluna başvurulduğunda\n- İlk iltica ülkesi veya güvenli üçüncü ülkeye geri gönderme işlemleri sürerken\n- Acil nedenler, ülke menfaatleri, kamu düzeni ve kamu güvenliği gereği girişine ve kalmasına izin verilmesi gereken, ancak engel durumları nedeniyle başka izin alamayan yabancılar için\n- Olağanüstü durumlarda\n\n**Adres kaydı:** İznin veriliş tarihinden itibaren **en geç yirmi iş günü** içinde.\n\n**İptal (md 47):** İzni zorunlu kılan şartlar ortadan kalktığında, **Bakanlığın onayı** alınarak valiliklerce iptal edilir ve uzatılmaz. Dikkat: verilirken Genel Müdürlüğün, iptal edilirken Bakanlığın onayı aranır.",
+      "articleRefs": [
+        "46",
+        "47"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "İnsan ticareti mağduru ikamet izni",
+      "body": "**Kural (md 48):** İnsan ticareti mağduru olduğu veya olabileceği yönünde **kuvvetli şüphe** duyulan yabancılara, yaşadıklarının etkisinden kurtulabilmeleri ve yetkililerle iş birliği yapıp yapmayacaklarına karar verebilmeleri için **valiliklerce otuz gün** süreli ikamet izni verilir. Diğer izinlerin şartları aranmaz.\n\n**Uzatma (md 49):** İyileşme ve düşünme süresi için verilen izin, mağdurun güvenliği, sağlığı veya özel durumu nedeniyle **en fazla altışar aylık** sürelerle uzatılabilir; bu süreler **hiçbir şekilde toplam üç yılı geçemez**.\n\n**İptal:** Kişinin **kendi girişimleriyle** suçun failleriyle yeniden bağ kurduğu belirlenirse izin iptal edilir.",
+      "articleRefs": [
+        "48",
+        "49"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Vatansız kişiler",
+      "body": "**Tespit (md 50):** Vatansızlığın tespitini **Genel Müdürlük** yapar. Başka ülkelerce vatansız kişi işlemi görenler bu haktan yararlandırılmaz.\n\n**Vatansız Kişi Kimlik Belgesi:**\n- Türkiye'de yasal olarak ikamet edebilme hakkı sağlar; vatansız kişiler bu belgeyi almakla **yükümlüdür**.\n- Genel Müdürlüğün uygun görüşü alınarak **valiliklerce** düzenlenir.\n- **Hiçbir harca tabi değildir**, **ikamet izni yerine geçer**, **iki yılda bir** valiliklerce yenilenir.\n- Belgede yabancı kimlik numarası da yer alır.\n- Bu belgeyle geçirilen süreler ikamet sürelerinin toplanmasında hesaba katılır.\n- Kişi herhangi bir ülke vatandaşlığını kazanınca belge geçerliliğini kaybeder.\n- Usul ve esaslar yönetmelikle belirlenir.\n\n**Haklar ve güvenceler (md 51):** Belge sahipleri;\n- Bu Kanundaki ikamet izinlerinden birini talep edebilir,\n- Kamu düzeni veya kamu güvenliği açısından ciddi tehdit oluşturmadıkça **sınır dışı edilmez**,\n- Yabancılarla ilgili işlemlerde aranan **karşılıklılık şartından muaftır**,\n- Çalışma izniyle ilgili iş ve işlemlerde 4817 sayılı Kanun hükümlerine tabidir,\n- 5682 sayılı Kanunun 18 inci maddesi hükümlerinden yararlanabilir.",
+      "articleRefs": [
+        "50",
+        "51"
+      ]
+    },
+    {
+      "type": "numbers",
+      "title": "Sayılar ve süreler: izin çeşitleri ve vatansızlık",
+      "rows": [
+        {
+          "label": "Kısa dönem (genel), her defasında",
+          "value": "En fazla 2 yıl",
+          "refs": [
+            "31"
+          ]
+        },
+        {
+          "label": "Kısa dönem: yatırımcı ve KKTC vatandaşı",
+          "value": "En fazla 5 yıllık süreler",
+          "refs": [
+            "31"
+          ]
+        },
+        {
+          "label": "Kısa dönem: Türkçe kursu",
+          "value": "En fazla 2 defa",
+          "refs": [
+            "31"
+          ]
+        },
+        {
+          "label": "Kısa dönem: mezun başvurusu",
+          "value": "Mezuniyetten 6 ay içinde; bir defaya mahsus en fazla 1 yıl",
+          "refs": [
+            "31"
+          ]
+        },
+        {
+          "label": "Tebligat yapılamazsa İYUK süresi",
+          "value": "2 ay",
+          "refs": [
+            "31"
+          ]
+        },
+        {
+          "label": "Aile izni, her defasında",
+          "value": "3 yılı aşamaz; destekleyicinin süresini de aşamaz",
+          "refs": [
+            "34"
+          ]
+        },
+        {
+          "label": "Aile izniyle eğitim hakkı",
+          "value": "18 yaşına kadar",
+          "refs": [
+            "34"
+          ]
+        },
+        {
+          "label": "Aile izninden kısa döneme dönüşüm",
+          "value": "En az 3 yıl aile izni + 18 yaşını tamamlamak",
+          "refs": [
+            "34"
+          ]
+        },
+        {
+          "label": "Boşanmada kısa dönem",
+          "value": "En az 3 yıl aile izni (aile içi şiddette aranmaz)",
+          "refs": [
+            "34"
+          ]
+        },
+        {
+          "label": "Destekleyici geliri",
+          "value": "Fert başına asgari ücretin 1/3'ü; toplamda asgari ücretten az değil",
+          "refs": [
+            "35"
+          ]
+        },
+        {
+          "label": "Destekleyicinin adli sicili",
+          "value": "Başvuru tarihi itibarıyla 5 yıl içinde aile düzenine karşı suçtan hüküm yok",
+          "refs": [
+            "35"
+          ]
+        },
+        {
+          "label": "Destekleyicinin ikameti",
+          "value": "En az 1 yıl",
+          "refs": [
+            "35"
+          ]
+        },
+        {
+          "label": "Eşlerin yaşı",
+          "value": "Her biri 18",
+          "refs": [
+            "35"
+          ]
+        },
+        {
+          "label": "İlk ve orta derece öğrenci izni",
+          "value": "Birer yıllık süreler",
+          "refs": [
+            "38"
+          ]
+        },
+        {
+          "label": "Uzun dönem için ikamet",
+          "value": "Kesintisiz en az 8 yıl",
+          "refs": [
+            "42",
+            "43"
+          ]
+        },
+        {
+          "label": "Uzun dönem: sosyal yardım almamış olmak",
+          "value": "Son 3 yıl",
+          "refs": [
+            "43"
+          ]
+        },
+        {
+          "label": "Uzun dönem iptali",
+          "value": "Kesintisiz 1 yıldan fazla yurt dışı",
+          "refs": [
+            "45"
+          ]
+        },
+        {
+          "label": "İnsani izinde adres kaydı",
+          "value": "Verilişten itibaren en geç 20 iş günü",
+          "refs": [
+            "46"
+          ]
+        },
+        {
+          "label": "İnsan ticareti mağduru izni",
+          "value": "30 gün",
+          "refs": [
+            "48"
+          ]
+        },
+        {
+          "label": "İnsan ticareti mağduru izninin uzatılması",
+          "value": "En fazla 6'şar ay; toplam 3 yılı geçemez",
+          "refs": [
+            "49"
+          ]
+        },
+        {
+          "label": "Vatansız Kişi Kimlik Belgesinin yenilenmesi",
+          "value": "2 yılda bir",
+          "refs": [
+            "50"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "31",
+        "34",
+        "35",
+        "38",
+        "42",
+        "43",
+        "45",
+        "46",
+        "48",
+        "49",
+        "50"
+      ]
+    },
+    {
+      "type": "exam_stats",
+      "title": "Sınav der ki",
+      "rows": [
+        {
+          "label": "Bu ünitenin maddelerinden yayındaki soru",
+          "value": "0",
+          "refs": [
+            "19",
+            "20",
+            "21",
+            "22",
+            "23",
+            "24",
+            "25",
+            "26",
+            "27",
+            "28",
+            "29",
+            "30",
+            "31",
+            "32",
+            "33",
+            "34",
+            "35",
+            "36",
+            "37",
+            "38",
+            "39",
+            "40",
+            "41",
+            "42",
+            "43",
+            "44",
+            "45",
+            "46",
+            "47",
+            "48",
+            "49",
+            "50",
+            "51"
+          ]
+        },
+        {
+          "label": "Hiç soru çıkmamış",
+          "value": "md 19, md 20, md 21, md 22, md 23, md 24, md 25, md 26, md 27, md 28, md 29, md 30, md 31, md 32, md 33, md 34, md 35, md 36, md 37, md 38, md 39, md 40, md 41, md 42, md 43, md 44, md 45, md 46, md 47, md 48, md 49, md 50, md 51",
+          "refs": [
+            "19",
+            "20",
+            "21",
+            "22",
+            "23",
+            "24",
+            "25",
+            "26",
+            "27",
+            "28",
+            "29",
+            "30",
+            "31",
+            "32",
+            "33",
+            "34",
+            "35",
+            "36",
+            "37",
+            "38",
+            "39",
+            "40",
+            "41",
+            "42",
+            "43",
+            "44",
+            "45",
+            "46",
+            "47",
+            "48",
+            "49",
+            "50",
+            "51"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "19",
+        "20",
+        "21",
+        "22",
+        "23",
+        "24",
+        "25",
+        "26",
+        "27",
+        "28",
+        "29",
+        "30",
+        "31",
+        "32",
+        "33",
+        "34",
+        "35",
+        "36",
+        "37",
+        "38",
+        "39",
+        "40",
+        "41",
+        "42",
+        "43",
+        "44",
+        "45",
+        "46",
+        "47",
+        "48",
+        "49",
+        "50",
+        "51"
+      ],
+      "generated": true
+    },
+    {
+      "type": "bridge",
+      "title": "Bu üniteden soru çöz",
+      "articleRefs": [
+        "19",
+        "20",
+        "21",
+        "22",
+        "23",
+        "24",
+        "25",
+        "26",
+        "27",
+        "28",
+        "29",
+        "30",
+        "31",
+        "32",
+        "33",
+        "34",
+        "35",
+        "36",
+        "37",
+        "38",
+        "39",
+        "40",
+        "41",
+        "42",
+        "43",
+        "44",
+        "45",
+        "46",
+        "47",
+        "48",
+        "49",
+        "50",
+        "51"
+      ],
+      "generated": true,
+      "rows": [
+        {
+          "label": "Madde kapsamlı seans",
+          "value": "md 19–51, 0 soru",
+          "refs": [
+            "19",
+            "20",
+            "21",
+            "22",
+            "23",
+            "24",
+            "25",
+            "26",
+            "27",
+            "28",
+            "29",
+            "30",
+            "31",
+            "32",
+            "33",
+            "34",
+            "35",
+            "36",
+            "37",
+            "38",
+            "39",
+            "40",
+            "41",
+            "42",
+            "43",
+            "44",
+            "45",
+            "46",
+            "47",
+            "48",
+            "49",
+            "50",
+            "51"
+          ]
+        }
+      ]
+    }
+  ]
+}
