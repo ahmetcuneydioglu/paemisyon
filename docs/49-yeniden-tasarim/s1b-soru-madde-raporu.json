@@ -1,32 +1,32 @@
 {
   "ozet": {
-    "tarih": "2026-10-16T22:03:24.954Z",
+    "tarih": "2026-11-18T19:40:38.265Z",
     "mod": "APPLY",
-    "etiketliSoru": 3879,
+    "etiketliSoru": 4064,
     "soruDurumu": {
-      "published": 3878,
-      "versiyonsuz": 1
+      "published": 4045,
+      "versiyonsuz": 19
     },
-    "baglananSoru": 3855,
+    "baglananSoru": 4045,
     "bag": {
-      "toplam": 3876,
-      "primary": 3855,
+      "toplam": 4066,
+      "primary": 4045,
       "related": 21
     },
-    "tekMadde": 3841,
+    "tekMadde": 4031,
     "listeMadde": 14,
     "fikraEkiDusen": 1,
     "kusur": {
-      "toplam": 24,
+      "toplam": 19,
       "nedenlere": {
-        "konuda_madde_yok": 23,
+        "konuda_madde_yok": 18,
         "madde_bulunamadi": 0,
         "aralik": 1,
         "bos": 0
       }
     },
-    "yazilan": 3876,
-    "tablodaToplam": 3876
+    "yazilan": 196,
+    "tablodaToplam": 4072
   },
   "kusurlar": [
     {
@@ -153,41 +153,6 @@
       "topic": "İdare Hukuku",
       "articleNo": "125",
       "questionId": "1e31d171-b321-4c97-9056-91e8216ed398",
-      "status": "published"
-    },
-    {
-      "neden": "konuda_madde_yok",
-      "topic": "6458 Sayılı Yabancılar ve Uluslararası Koruma Kanunu",
-      "articleNo": "102",
-      "questionId": "5cfebb57-09d1-4c5f-b207-5d09afcfd8cc",
-      "status": null
-    },
-    {
-      "neden": "konuda_madde_yok",
-      "topic": "6458 Sayılı Yabancılar ve Uluslararası Koruma Kanunu",
-      "articleNo": "102",
-      "questionId": "bff6766d-8d5f-4f3a-86d4-fc7bdbad4524",
-      "status": "published"
-    },
-    {
-      "neden": "konuda_madde_yok",
-      "topic": "6458 Sayılı Yabancılar ve Uluslararası Koruma Kanunu",
-      "articleNo": "102",
-      "questionId": "b178c67d-3862-4b54-b2be-c97565ecc70d",
-      "status": "published"
-    },
-    {
-      "neden": "konuda_madde_yok",
-      "topic": "6458 Sayılı Yabancılar ve Uluslararası Koruma Kanunu",
-      "articleNo": "102",
-      "questionId": "1eb06eb0-11c8-4ac0-8906-778091424e42",
-      "status": "published"
-    },
-    {
-      "neden": "konuda_madde_yok",
-      "topic": "6458 Sayılı Yabancılar ve Uluslararası Koruma Kanunu",
-      "articleNo": "102",
-      "questionId": "068897c3-85b6-41e4-b97e-0d54c75bfecc",
       "status": "published"
     },
     {

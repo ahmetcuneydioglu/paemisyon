@@ -262,12 +262,12 @@ Bu maddeden gelen sorular neredeyse hep aynı yeri yoklar: hâkim kararı için 
 
 | Konu | Değer | md |
 |---|---|---|
-| Bu ünitenin maddelerinden yayındaki soru | 32 | 2, 3, 4, 5, 6, 7, 8, 9, 12 |
-| md 3 — İzin vermeye yetkili merciler | 10 soru | 3 |
-| md 9 — İtiraz | 7 soru | 9 |
-| md 12 — Hazırlık soruşturmasını yapacak merciler | 5 soru | 12 |
-| md 4 — Olayın yetkili mercie iletilmesi, işleme konulmayacak ihbar ve şikayetler | 2 soru | 4 |
-| md 6 — Ön inceleme yapanların yetkisi ve rapor | 2 soru | 6 |
+| Bu ünitenin maddelerinden yayındaki soru | 38 | 2, 3, 4, 5, 6, 7, 8, 9, 12 |
+| md 3 — İzin vermeye yetkili merciler | 11 soru | 3 |
+| md 9 — İtiraz | 8 soru | 9 |
+| md 12 — Hazırlık soruşturmasını yapacak merciler | 6 soru | 12 |
+| md 4 — Olayın yetkili mercie iletilmesi, işleme konulmayacak ihbar ve şikayetler | 4 soru | 4 |
+| md 6 — Ön inceleme yapanların yetkisi ve rapor | 3 soru | 6 |
 
 ## Köprü · Bu üniteden soru çöz
 
