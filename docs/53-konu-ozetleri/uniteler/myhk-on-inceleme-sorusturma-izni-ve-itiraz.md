@@ -201,6 +201,8 @@ Sorular bu kavramların yerini değiştirerek yanlış öncül üretir. Ayırt e
 - md 3'ün (e), (f), (g) (Cumhurbaşkanınca verilen izin hariç) ve (h) bentlerinde sayılanlar → **Danıştay İkinci Dairesi**
 - Diğerleri → yetkili merciin yargı çevresinde bulunduğu **bölge idare mahkemesi**
 
+**Not:** İtiraz mercii kanun metnindeki hâliyle verilmiştir. Danıştay Kanunu md 42/k memurların ve diğer kamu görevlilerinin yargılanmasına ilişkin işleri **Birinci Daireye** vermiş, İkinci Dairenin görevlerini sayan md 43 de yürürlükten kaldırılmıştır. Bu yüzden bugün bu itirazlara Danıştay **Birinci Dairesi** bakar. Soru bu kanunun metninden sorulursa cevap **İkinci Daire**dir.
+
 **Karar:** İtirazlar **öncelikle** incelenir ve **en geç üç ay** içinde karara bağlanır. Verilen kararlar **kesindir**.
 
 ## Tuzak · İtirazda süre ve merci karışmasın
@@ -210,6 +212,7 @@ Sorular bu kavramların yerini değiştirerek yanlış öncül üretir. Ayırt e
 - **İtiraz süresi on gündür.** Beş, yedi, on beş veya otuz gün diyen şıklar çeldiricidir.
 - **İtirazın karara bağlanma süresi en geç üç aydır.** On beş gün ya da altı ay diyen şıklar yanlıştır.
 - **Cumhurbaşkanlığında görevli memurlar:** Bu memurlar md 3'ün (g) bendine girer ve izni Cumhurbaşkanlığı Genel Sekreteri verir. İtiraz **Danıştay İkinci Dairesi**ne yapılır, süre yine **on gün**dür.
+- **İkinci mi, Birinci mi?** Bu kanunun metni **İkinci Daire** der; kanuna göre sorulan soruda cevap budur. Danıştay Kanunu md 42/k ise bu işleri **Birinci Daireye** vermiştir. Şıklarda ikisi birden varsa soru kökünün hangi kanuna dayandığına bak.
 - **İlçede görevli memur:** Örneğin devlet hastanesinde çalışan bir doktor; izni kaymakam verir. İtiraz, yetkili merciin yargı çevresindeki **bölge idare mahkemesi**ne yapılır. İdare mahkemesi değil, **bölge** idare mahkemesi.
 - Bu itiraz üzerine verilen kararlar **kesindir**.
 
@@ -250,7 +253,7 @@ Bu maddeden gelen sorular neredeyse hep aynı yeri yoklar: hâkim kararı için 
 | İtiraz süresi (tebliğden itibaren) | 10 gün | 9 |
 | İtirazın karara bağlanması (en geç) | 3 ay | 9 |
 | İtiraz kararlarının niteliği | Kesin | 9 |
-| md 3 (e), (f), (g) (Cumhurbaşkanınca verilen izin hariç) ve (h) için itiraz mercii | Danıştay İkinci Dairesi | 9 |
+| md 3 (e), (f), (g) (Cumhurbaşkanınca verilen izin hariç) ve (h) için itiraz mercii | Danıştay İkinci Dairesi (kanun metni; Danıştay Kanunu md 42/k’ya göre bugün Birinci Daire) | 9 |
 | Kanunun uygulanmadığı soruşturmalar | 765 sayılı TCK md 243 ve md 245; 1412 sayılı CMUK md 154, dördüncü fıkra | 2 |
 
 ## Sınav der ki

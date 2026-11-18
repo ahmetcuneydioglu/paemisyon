@@ -213,7 +213,7 @@
     {
       "type": "rule",
       "title": "İtiraz: kim, neye, nereye?",
-      "body": "**Bildirim:** Yetkili merci, izin verilmesine veya verilmemesine ilişkin kararını Cumhuriyet başsavcılığına, hakkında inceleme yapılan memura ve varsa şikâyetçiye bildirir.\n\n**Kim itiraz eder?**\n- İzin **verilmesi** kararına → hakkında inceleme yapılan memur veya diğer kamu görevlisi\n- İzin **verilmemesi** kararına → Cumhuriyet başsavcılığı veya şikâyetçi\n- Yetkili merciin **işleme koymama** kararına → şikâyetçi\n\n**Süre:** Kararın tebliğinden itibaren **on gün**.\n\n**İtiraz mercii:**\n- md 3'ün (e), (f), (g) (Cumhurbaşkanınca verilen izin hariç) ve (h) bentlerinde sayılanlar → **Danıştay İkinci Dairesi**\n- Diğerleri → yetkili merciin yargı çevresinde bulunduğu **bölge idare mahkemesi**\n\n**Karar:** İtirazlar **öncelikle** incelenir ve **en geç üç ay** içinde karara bağlanır. Verilen kararlar **kesindir**.",
+      "body": "**Bildirim:** Yetkili merci, izin verilmesine veya verilmemesine ilişkin kararını Cumhuriyet başsavcılığına, hakkında inceleme yapılan memura ve varsa şikâyetçiye bildirir.\n\n**Kim itiraz eder?**\n- İzin **verilmesi** kararına → hakkında inceleme yapılan memur veya diğer kamu görevlisi\n- İzin **verilmemesi** kararına → Cumhuriyet başsavcılığı veya şikâyetçi\n- Yetkili merciin **işleme koymama** kararına → şikâyetçi\n\n**Süre:** Kararın tebliğinden itibaren **on gün**.\n\n**İtiraz mercii:**\n- md 3'ün (e), (f), (g) (Cumhurbaşkanınca verilen izin hariç) ve (h) bentlerinde sayılanlar → **Danıştay İkinci Dairesi**\n- Diğerleri → yetkili merciin yargı çevresinde bulunduğu **bölge idare mahkemesi**\n\n**Not:** İtiraz mercii kanun metnindeki hâliyle verilmiştir. Danıştay Kanunu md 42/k memurların ve diğer kamu görevlilerinin yargılanmasına ilişkin işleri **Birinci Daireye** vermiş, İkinci Dairenin görevlerini sayan md 43 de yürürlükten kaldırılmıştır. Bu yüzden bugün bu itirazlara Danıştay **Birinci Dairesi** bakar. Soru bu kanunun metninden sorulursa cevap **İkinci Daire**dir.\n\n**Karar:** İtirazlar **öncelikle** incelenir ve **en geç üç ay** içinde karara bağlanır. Verilen kararlar **kesindir**.",
       "articleRefs": [
         "9"
       ]
@@ -221,7 +221,7 @@
     {
       "type": "trap",
       "title": "İtirazda süre ve merci karışmasın",
-      "body": "- **İtiraz süresi on gündür.** Beş, yedi, on beş veya otuz gün diyen şıklar çeldiricidir.\n- **İtirazın karara bağlanma süresi en geç üç aydır.** On beş gün ya da altı ay diyen şıklar yanlıştır.\n- **Cumhurbaşkanlığında görevli memurlar:** Bu memurlar md 3'ün (g) bendine girer ve izni Cumhurbaşkanlığı Genel Sekreteri verir. İtiraz **Danıştay İkinci Dairesi**ne yapılır, süre yine **on gün**dür.\n- **İlçede görevli memur:** Örneğin devlet hastanesinde çalışan bir doktor; izni kaymakam verir. İtiraz, yetkili merciin yargı çevresindeki **bölge idare mahkemesi**ne yapılır. İdare mahkemesi değil, **bölge** idare mahkemesi.\n- Bu itiraz üzerine verilen kararlar **kesindir**.",
+      "body": "- **İtiraz süresi on gündür.** Beş, yedi, on beş veya otuz gün diyen şıklar çeldiricidir.\n- **İtirazın karara bağlanma süresi en geç üç aydır.** On beş gün ya da altı ay diyen şıklar yanlıştır.\n- **Cumhurbaşkanlığında görevli memurlar:** Bu memurlar md 3'ün (g) bendine girer ve izni Cumhurbaşkanlığı Genel Sekreteri verir. İtiraz **Danıştay İkinci Dairesi**ne yapılır, süre yine **on gün**dür.\n- **İkinci mi, Birinci mi?** Bu kanunun metni **İkinci Daire** der; kanuna göre sorulan soruda cevap budur. Danıştay Kanunu md 42/k ise bu işleri **Birinci Daireye** vermiştir. Şıklarda ikisi birden varsa soru kökünün hangi kanuna dayandığına bak.\n- **İlçede görevli memur:** Örneğin devlet hastanesinde çalışan bir doktor; izni kaymakam verir. İtiraz, yetkili merciin yargı çevresindeki **bölge idare mahkemesi**ne yapılır. İdare mahkemesi değil, **bölge** idare mahkemesi.\n- Bu itiraz üzerine verilen kararlar **kesindir**.",
       "articleRefs": [
         "3",
         "9"
@@ -298,7 +298,7 @@
         },
         {
           "label": "md 3 (e), (f), (g) (Cumhurbaşkanınca verilen izin hariç) ve (h) için itiraz mercii",
-          "value": "Danıştay İkinci Dairesi",
+          "value": "Danıştay İkinci Dairesi (kanun metni; Danıştay Kanunu md 42/k’ya göre bugün Birinci Daire)",
           "refs": [
             "9"
           ]
