@@ -322,15 +322,23 @@ describe('okuma süresi metinden hesaplanır', () => {
     generated,
   });
   it('180 kelime/dk; betik üretimi kartlar ve markdown işaretleri sayılmaz', () => {
-    const govde = Array.from({ length: 1799 }, (_, i) => (i % 7 === 0 ? '**kalın**' : 'kelime')).join(' ');
+    const govde = Array.from({ length: 1799 }, (_, i) =>
+      i % 7 === 0 ? '**kalın**' : 'kelime',
+    ).join(' ');
     // 1799 gövde + 1 başlık = 1800 kelime → 10 dk; üretilen kartın kelimeleri eklenmez.
-    expect(readingMinutesOf({ blocks: [kart(govde), kart('çok uzun '.repeat(5000), true)] })).toBe(10);
+    expect(readingMinutesOf({ blocks: [kart(govde), kart('çok uzun '.repeat(5000), true)] })).toBe(
+      10,
+    );
   });
   it('satır hücreleri sayılır, refs ve tek başına noktalama sayılmaz', () => {
     const b: SummaryBlockJson = {
       type: 'numbers',
       title: 'Tablo',
-      rows: Array.from({ length: 540 }, () => ({ label: 'süre —', value: 'on gün', refs: ['5', '6'] })),
+      rows: Array.from({ length: 540 }, () => ({
+        label: 'süre —',
+        value: 'on gün',
+        refs: ['5', '6'],
+      })),
       articleRefs: ['5'],
     };
     // 1 başlık + 540 × 3 kelime = 1621 → round(9,0) = 9
@@ -344,12 +352,18 @@ describe('okuma süresi metinden hesaplanır', () => {
 describe('AİHS protokol madde atfı sayı sayılmaz', () => {
   it('"P4-7", "md P6-8", "Ek P-1" atıfları ayıklanır, gövdedeki sayı kalır', () => {
     expect(extractNumbers('md P4-7 ve P6-8 ile Ek P-1 maddeleri; süre üç ay, 5 gün')).toEqual([5]);
-    expect(extractNumbers('md P6 ile md P13; Protokol No. 7 ve 12 numaralı Protokol, 16 No\'lu Protokol; 3 yıl')).toEqual([3]);
+    expect(
+      extractNumbers(
+        "md P6 ile md P13; Protokol No. 7 ve 12 numaralı Protokol, 16 No'lu Protokol; 3 yıl",
+      ),
+    ).toEqual([3]);
   });
 });
 
 describe('bent atfı sayı sayılmaz', () => {
   it('"32/d", "(32/ç)", "4/A" ayıklanır; gövdedeki sayı kalır', () => {
-    expect(extractNumbers('Defter tutmama (32/d) ve hile (32/ç); 4/A maddesi; süre 15 gün')).toEqual([15]);
+    expect(
+      extractNumbers('Defter tutmama (32/d) ve hile (32/ç); 4/A maddesi; süre 15 gün'),
+    ).toEqual([15]);
   });
 });
