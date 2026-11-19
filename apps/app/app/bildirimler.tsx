@@ -6,7 +6,7 @@ import { NotificationRow } from "@/components/domain";
 import { AppText, Button, Chip, EmptyState, IconButton, Notice, Skeleton } from "@/components/ui";
 import { groupInbox, needsUpdate, recordNotificationEvent, useInbox, useReadAll, type InboxItem } from "@/features/notifications/queries";
 import { storeUrl } from "@/lib/app-meta";
-import { isStoreRoute, routeToHref } from "@/lib/deep-links";
+import { routeToHref, storeAction } from "@/lib/deep-links";
 import { useStackOptions } from "@/navigation/stack-options";
 import { useTheme } from "@/theme/ThemeProvider";
 
@@ -15,7 +15,8 @@ import { useTheme } from "@/theme/ThemeProvider";
  * Bu hafta · Daha önce), "Tümünü okundu say", aşağı kaydırınca imleçli devam. Görünen satır
  * okunmuş sayılmaz; okuma dokunuşla (`clicked` → readAt) ya da toplu düğmeyle. Hedefi bu
  * sürümün tanımadığı bildirim (`minAppVersion`) satırda "Güncelleme gerekli" taşır, dokununca
- * mağazaya yönlendirir; `store` rotalı (uygulama güncellemesi) bildirim de doğrudan mağazayı açar.
+ * mağazaya yönlendirir. `store` rotalı (uygulama güncellemesi) bildirimde `minAppVersion`
+ * mağazadaki sürümdür: eski uygulama doğrudan mağazayı açar, güncel olana "güncel" denir.
  * Kök yığında açılır; sekme çubuğu görünmez.
  */
 export default function BildirimlerScreen() {
@@ -35,6 +36,14 @@ export default function BildirimlerScreen() {
 
   const open = useCallback(
     (item: InboxItem) => {
+      // Uygulama güncellemesi bildirimi: eski sürüm bu platformun mağazasına, güncel sürüm burada kalır.
+      const store = storeAction(item.route, !needsUpdate(item));
+      if (store) {
+        void recordNotificationEvent(item.id, "clicked", "inbox");
+        if (store === "store") void Linking.openURL(storeUrl());
+        else Alert.alert("Uygulaman güncel", "Bu bildirimdeki sürüm zaten yüklü; mağazada güncellenecek bir şey yok.");
+        return;
+      }
       if (needsUpdate(item)) {
         Alert.alert("Güncelleme gerekli", "Bu bildirimin açtığı ekran uygulamanın yeni sürümünde. Mağazadan güncelleyip tekrar dene.", [
           { text: "Sonra" },
@@ -43,11 +52,6 @@ export default function BildirimlerScreen() {
         return;
       }
       void recordNotificationEvent(item.id, "clicked", "inbox");
-      // Uygulama güncellemesi bildirimi: ekran değil, bu platformun mağazası.
-      if (isStoreRoute(item.route)) {
-        void Linking.openURL(storeUrl());
-        return;
-      }
       router.push(routeToHref(item.route) as never);
     },
     [router],

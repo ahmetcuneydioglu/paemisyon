@@ -55,13 +55,22 @@ export function routeToHref(route: string | null | undefined): AppHref {
 
 /**
  * Mağaza rotası (sunucu `app_update` hedefi, 19 Kas 2026): uygulama içi ekran değil, cihazın kendi
- * mağazası açılır (`storeUrl`, app-meta.ts). Dokunuş noktaları `routeToHref`'ten ÖNCE bunu sorar;
- * tanımayan eski sürüm zaten sunucunun `minAppVersion` kapısından Bildirimler kutusuna düşer.
+ * mağazası (`storeUrl`, app-meta.ts). Bildirimin `minAppVersion`'ı mağazadaki sürümdür: ondan eski
+ * uygulama mağazaya gider, o sürüm ve üstü güncel sayılır ve uygulamada kalır. Dokunuş noktaları
+ * `routeToHref`'ten ve genel sürüm kapısından ÖNCE `storeAction` sorar (güncel olmayan uygulama
+ * kutuya uğramadan doğrudan mağazaya gitsin). Rotayı tanımayan 2.0 güncelse Bugün'e, eskiyse
+ * sunucu kapısından kutuya düşer.
  */
 export const STORE_ROUTE = "store";
 
 export function isStoreRoute(route: string | null | undefined): boolean {
   return (route ?? "").trim() === STORE_ROUTE;
+}
+
+/** Mağaza rotasında yapılacak: `store` mağazayı aç, `stay` uygulama güncel; başka rotada null. */
+export function storeAction(route: string | null | undefined, upToDate: boolean): "store" | "stay" | null {
+  if (!isStoreRoute(route)) return null;
+  return upToDate ? "stay" : "store";
 }
 
 /** `https://paemisyon.com/bildirim?git=<route>` → route; başka URL'de null. */

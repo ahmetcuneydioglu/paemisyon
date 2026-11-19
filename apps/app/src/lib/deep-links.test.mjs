@@ -1,6 +1,6 @@
 import assert from "node:assert/strict";
 import { test } from "node:test";
-import { isStoreRoute, routeFromUrl, routeToHref } from "./deep-links.ts";
+import { isStoreRoute, routeFromUrl, routeToHref, storeAction } from "./deep-links.ts";
 
 test("push route sözlüğü", () => {
   assert.equal(routeToHref("daily-quiz").pathname, "/seans");
@@ -53,4 +53,11 @@ test("mağaza rotası (uygulama güncellemesi) ekran değil", () => {
   assert.equal(isStoreRoute(null), false);
   // Tanımayan yol yine Bugün'e düşer; mağaza kararı routeToHref'ten önce verilir.
   assert.equal(routeToHref("store").pathname, "/(tabs)");
+});
+
+test("mağaza kararı: eski sürüm mağazaya, güncel sürüm uygulamada kalır", () => {
+  assert.equal(storeAction("store", false), "store");
+  assert.equal(storeAction("store", true), "stay");
+  assert.equal(storeAction("daily-quiz", false), null);
+  assert.equal(storeAction(null, true), null);
 });

@@ -35,12 +35,18 @@ describe('derin bağlantı kayıt defteri', () => {
     expect(resolveDeepLink({ target: 'exams' }).webPath).toBe('/denemeler');
     expect(resolveDeepLink(null).webPath).toBe('/bugun');
   });
-  it('uygulama güncellemesi mağaza rotası üretir; eski sürüm kapıdan kutuya düşer', () => {
-    expect(resolveDeepLink({ target: 'app_update' })).toEqual({
+  it('uygulama güncellemesi: sürüm kapısı parametredeki mağaza sürümüdür', () => {
+    expect(resolveDeepLink({ target: 'app_update', params: { version: '2.0.0' } })).toEqual({
       route: 'store',
       webPath: '/',
-      minAppVersion: '2.1.0',
+      minAppVersion: '2.0.0',
     });
+    expect(
+      resolveDeepLink({ target: 'app_update', params: { version: ' 2.1.3 ' } }).minAppVersion,
+    ).toBe('2.1.3');
+    // Sürümsüz ya da bozuk sürüm: hangi uygulamanın eski olduğu bilinemez, reddedilir.
+    expect(() => resolveDeepLink({ target: 'app_update' })).toThrow();
+    expect(() => resolveDeepLink({ target: 'app_update', params: { version: '2.1' } })).toThrow();
     expect(webPathFromRoute('store')).toBe('/');
   });
   it('bozuk parametreyi reddeder', () => {

@@ -1,3 +1,5 @@
+import { BadRequestException } from '@nestjs/common';
+
 /**
  * Derin bağlantı kayıt defteri (Doc 52 §5) — TEK kaynak. Her hedef iki çıktı
  * üretir: `route` (mobil sözlüğü; apps/app/src/lib/deep-links.ts routeToHref
@@ -36,10 +38,22 @@ type Entry = {
   route: (p: string) => string;
   webPath: (p: string) => string;
   minAppVersion: string;
+  /** Sürüm kapısı parametreden gelir (uygulama güncellemesi: "bu sürüme güncellesinler"). */
+  minAppVersionOf?: (p: string) => string;
 };
 
 const UUID = /^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$/;
 const SLUG = /^[a-z0-9-]{1,80}$/;
+const VERSION = /^\d{1,3}\.\d{1,3}\.\d{1,3}$/;
+const PARAM_LABEL: Record<string, string> = {
+  version: 'mağazadaki sürüm (ör. 2.0.0)',
+  examId: 'deneme seçimi',
+  sessionId: 'deneme oturumu kimliği',
+  id: 'soru kimliği',
+  topicId: 'konu kimliği',
+  legislationId: 'kanun seçimi',
+  slug: 'sınav kısa adı',
+};
 
 export const DEEP_LINKS: Record<DeepLinkTarget, Entry> = {
   home: { route: () => '', webPath: () => '/bugun', minAppVersion: '2.0.0' },
@@ -49,12 +63,18 @@ export const DEEP_LINKS: Record<DeepLinkTarget, Entry> = {
     webPath: () => '/kartlar?mode=due&source=notif',
     minAppVersion: '2.1.0',
   },
-  // Uygulama güncellemesi (19 Kas 2026): mobil `store` rotasında iOS App Store / Google Play'i
-  // cihazın platformuna göre açar (apps/app deep-links.ts `isStoreRoute`). Tanıyıcı 2.1.0 ile çıkar;
-  // daha eski uygulama sürüm kapısından Bildirimler kutusuna düşer, satır "Güncelleme gerekli" der ve
-  // dokununca yine mağazayı açar — yani bugünkü 2.0 kurulumları da mağazaya ulaşır, yalnız bir adım
-  // fazlasıyla. Web'de iki mağaza rozetinin durduğu ana sayfa.
-  app_update: { route: () => 'store', webPath: () => '/', minAppVersion: '2.1.0' },
+  // Uygulama güncellemesi: parametre mağazadaki (güncellenmesi istenen) sürümdür ve sürüm kapısı
+  // odur. Ondan eski uygulama "Güncelleme gerekli" görür ve mağazaya gider (2.0: kutu üzerinden,
+  // 2.1+: doğrudan); o sürüm ve üstü güncel sayılır, uygulamada kalır (apps/app deep-links.ts
+  // `storeAction`). İlk sürümde kapı sabit 2.1.0'dı ve mağazadaki en yeni 2.0.0'da bile herkese
+  // "Güncelleme gerekli" diyordu (19 Kas 2026). Web'de iki mağaza rozetinin durduğu ana sayfa.
+  app_update: {
+    param: 'version',
+    route: () => 'store',
+    webPath: () => '/',
+    minAppVersion: '2.0.0',
+    minAppVersionOf: (v) => v,
+  },
   daily_question: {
     route: () => 'daily-quiz',
     webPath: () => '/seans?mode=daily&source=notif',
@@ -137,10 +157,23 @@ export function resolveDeepLink(link: DeepLink | null | undefined): ResolvedLink
   let p = '';
   if (entry.param) {
     p = String(link.params?.[entry.param] ?? '').trim();
-    const ok = entry.param === 'slug' ? p === '' || SLUG.test(p) : UUID.test(p);
-    if (!ok) throw new Error(`Derin bağlantı parametresi geçersiz: ${link.target}.${entry.param}`);
+    const ok =
+      entry.param === 'slug'
+        ? p === '' || SLUG.test(p)
+        : entry.param === 'version'
+          ? VERSION.test(p)
+          : UUID.test(p);
+    // 400: panel formu bu mesajı gösterir (düz Error 500'e düşüp "sunucu hatası" diyordu).
+    if (!ok)
+      throw new BadRequestException(
+        `Dokununca açılacak ekran için ${PARAM_LABEL[entry.param] ?? entry.param} eksik ya da geçersiz.`,
+      );
   }
-  return { route: entry.route(p), webPath: entry.webPath(p), minAppVersion: entry.minAppVersion };
+  return {
+    route: entry.route(p),
+    webPath: entry.webPath(p),
+    minAppVersion: entry.minAppVersionOf ? entry.minAppVersionOf(p) : entry.minAppVersion,
+  };
 }
 
 /** Eski üreticiler (route dizgesi) için: mobil rotayı web yoluna çevirir. */

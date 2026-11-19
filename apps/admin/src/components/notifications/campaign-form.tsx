@@ -281,7 +281,14 @@ export function CampaignForm({ initial, campaignId, isAdmin }: { initial: Campai
           <Field label="CTA etiketi (isteğe bağlı)">
             <input className={inputCls} value={f.ctaLabel} onChange={(e) => set('ctaLabel', e.target.value)} placeholder="Denemeyi gör" />
           </Field>
-          <Field label="Dokununca açılacak ekran" help={param ? `Parametre: ${param} · min sürüm ${links.data?.targets.find((t) => t.target === f.target)?.minAppVersion ?? ''}` : undefined}>
+          <Field
+            label="Dokununca açılacak ekran"
+            help={
+              f.target === 'app_update'
+                ? 'Mağazadaki sürümü yaz: bundan eski uygulamalar "Güncelleme gerekli" görür ve mağazaya gider; bu sürüm ve üstü uygulamada kalır.'
+                : param ? `Parametre: ${param} · min sürüm ${links.data?.targets.find((t) => t.target === f.target)?.minAppVersion ?? ''}` : undefined
+            }
+          >
             <div className="grid gap-2 sm:grid-cols-2">
               <select className={inputCls} value={f.target} onChange={(e) => { set('target', e.target.value); set('targetParam', ''); }}>
                 {(links.data?.targets ?? [{ target: 'home', param: null, minAppVersion: '' }]).map((t) => (
@@ -296,7 +303,7 @@ export function CampaignForm({ initial, campaignId, isAdmin }: { initial: Campai
                   ))}
                 </select>
               ) : (
-                <input className={inputCls} value={f.targetParam} onChange={(e) => set('targetParam', e.target.value)} placeholder={param} />
+                <input className={inputCls} value={f.targetParam} onChange={(e) => set('targetParam', e.target.value)} placeholder={param === 'version' ? 'Mağazadaki sürüm, ör. 2.0.0' : param} inputMode={param === 'version' ? 'decimal' : undefined} />
               ))}
             </div>
           </Field>
