@@ -14,6 +14,7 @@
  *   kelime dizisi aynı olan maddeye (temiz madde) dokunulmaz.
  *
  * Yazılan madde kaynağın paragraf biçimine geçer (paragraf başına bir satır; Doc 48 §6 (a)).
+ * Kendi madde işareti ("Madde 4-") gövdenin başındaysa hizalamadan önce düşülür (19 Kas 2026; 5275, 5352).
  * Kullanıcı vurgularının ofsetleri saklı `snippet` yeni metinde aranarak yeniden hesaplanır.
  * `effectiveInfo`, `sourceUrl`, durum korunur; `lastVerifiedAt` güncellenir. Yazmadan önce
  * eski satırlar yedeğe alınır, her yazım `mevzuat-tazeleme.jsonl` defterine düşer.
@@ -168,7 +169,16 @@ function vurguAra(parca: string, startOffset: number, eski: string, yeni: string
       continue;
     }
     if (govde === a.text) { temiz++; continue; }
-    const { silinen: kos, eklenen } = hizala(kelimeler(a.text), kelimeler(govde));
+    // Kendi madde işareti gövdenin başına karışmış ("Madde 4- (1) …", "Geçici Madde 2- …"; 5275, 5352): eski metin
+    // TAM OLARAK bu maddenin işaretiyle başlıyor ve kaynak gövdesi öyle başlamıyorsa işaret hizalamadan önce düşülür.
+    // Koşu konumları eski dizinin gerçek indeksinde kalsın diye kaydırılır (sondaki başlık kuralı konuma bakar).
+    const eskiK0 = kelimeler(a.text), yeniK0 = kelimeler(govde);
+    const isaret = kelimeler(/^(Ek|Geçici)\s/.test(a.articleNo) ? a.articleNo.replace(/^(Ek|Geçici)\s+/, '$1 madde ') : `madde ${a.articleNo}`);
+    const basliyor = (d: string[]) => isaret.every((w, i) => d[i] === w);
+    const kirp = basliyor(eskiK0) && !basliyor(yeniK0) ? isaret.length : 0;
+    const h0 = hizala(eskiK0.slice(kirp), yeniK0);
+    const kos = h0.silinen.map((x) => ({ ...x, bas: x.bas + kirp, son: x.son + kirp }));
+    const eklenen = h0.eklenen;
     // Bu maddenin kaynak bölümünün sonundaki başlıklar: tek tek ve art arda birleşik hâlleri.
     const kb = (km ? temizle(km).kuyrukBasliklar : []).filter((b) => !/[.;,][”"’)\]]*$/.test(b)).map((b) => kelimeler(b).join(' ')); // cümle başlık değildir
     const buBasliklar = new Set([...basliklar, ...kb, ...kb.map((_, i) => kb.slice(i).join(' '))]);
