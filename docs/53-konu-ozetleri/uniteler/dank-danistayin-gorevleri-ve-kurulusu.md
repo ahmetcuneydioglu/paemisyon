@@ -2,7 +2,7 @@
 
 _Meslek mensupları, seçimler, daireler, kurullar, vekâlet, ilk derece görevi ve çalışmaya ara verme_
 
-Kaynak: 2575 Danıştay Kanunu, md 3, 10, 13, 15–18, 21, 22, 24, 40–42, 45, 48, 86, 87. Durum: in_review. AI özeti — 2575 Danıştay Kanunu, md 3, 10, 13, 15–18, 21, 22, 24, 40–42, 45, 48, 86, 87 (yalnız admin görür).
+Kaynak: 2575 Danıştay Kanunu, md 3, 10, 13, 15–18, 19/A, 21, 22, 24, 40–42, 45, 48, 52/A, 86, 87. Durum: in_review. AI özeti — 2575 Danıştay Kanunu, md 3, 10, 13, 15–18, 21, 22, 24, 40–42, 45, 48, 86, 87 (yalnız admin görür).
 
 ## Kavram · Danıştay'ın meslek mensupları kimler?
 
@@ -352,13 +352,31 @@ Yürütmenin durdurulması istemine bakmak bu listede vardır. Ancak yürütmeni
 | Yeni çalışma döneminin başlangıcı | 1 Eylül | 86 |
 | Nöbetçi daire | 1 daire başkanı + 4 üye + 1 yedek üye | 86 |
 
+## Kural · Md 19/A ve md 52/A: Başkanlık Kurulu
+
+<sub>md 19/A, 52/A</sub>
+
+**Oluşumu (md 19/A):** Başkanlık Kurulu, Danıştay Başkanının başkanlığında şu üyelerden oluşur.
+- **Altı asıl üye:** üçü daire başkanı, üçü Danıştay üyesi.
+- **Dört yedek üye:** ikisi daire başkanı, ikisi Danıştay üyesi.
+
+**Görevleri (md 52/A):**
+- Üyelerin görev yerlerini, dairelerin iş durumunu ve ihtiyaçlarını göz önünde tutarak belirlemek,
+- zorunlu hâllerde daire başkanı ve üyelerin dairelerini değiştirmek,
+- tetkik hâkimlerinin çalışacakları daireleri, kurulları ve görecekleri işleri belli etmek, gerektiğinde yerlerini değiştirmek,
+- daireler arasında iş bölümünü belirlemek,
+- yetkili mercii belirtilmemiş yönetim işlerini belli etmek veya yapmak,
+- kanunlarla verilen diğer görevleri yerine getirmek.
+
+**İtiraz:** Kurul kararlarına karşı ilgililer **yedi gün** içinde **Başkanlar Kuruluna** itiraz edebilir. Başkanlar Kurulu kararı aynen onaylayabileceği gibi değiştirerek de onaylayabilir. İtiraz üzerine verilen karar **kesindir**; aleyhine başka bir yargı merciine başvurulamaz.
+
 ## Sınav der ki
 
-<sub>md 3, 10, 13, 15, 16, 17, 18, 21, 22, 24, 40, 41, 42, 45, 48, 86, 87</sub>
+<sub>md 3, 10, 13, 15, 16, 17, 18, 19/A, 21, 22, 24, 40, 41, 42, 45, 48, 52/A, 86, 87</sub>
 
 | Konu | Değer | md |
 |---|---|---|
-| Bu ünitenin maddelerinden yayındaki soru | 21 | 3, 10, 13, 15, 16, 17, 18, 21, 22, 24, 40, 41, 42, 45, 48, 86, 87 |
+| Bu ünitenin maddelerinden yayındaki soru | 23 | 3, 10, 13, 15, 16, 17, 18, 19/A, 21, 22, 24, 40, 41, 42, 45, 48, 52/A, 86, 87 |
 | md 13 — Daireler | 3 soru | 13 |
 | md 10 — seçimleri ve görev süreleri | 2 soru | 10 |
 | md 40 — İçtihatların birleştirilmesini istemeye yetkili olanlar | 2 soru | 40 |
@@ -367,8 +385,8 @@ Yürütmenin durdurulması istemine bakmak bu listede vardır. Ancak yürütmeni
 
 ## Köprü · Bu üniteden soru çöz
 
-<sub>md 3, 10, 13, 15, 16, 17, 18, 21, 22, 24, 40, 41, 42, 45, 48, 86, 87</sub>
+<sub>md 3, 10, 13, 15, 16, 17, 18, 19/A, 21, 22, 24, 40, 41, 42, 45, 48, 52/A, 86, 87</sub>
 
 | Konu | Değer | md |
 |---|---|---|
-| Madde kapsamlı seans | md 3, 10, 13, 15–18, 21, 22, 24, 40–42, 45, 48, 86, 87, 10 soru | 3, 10, 13, 15, 16, 17, 18, 21, 22, 24, 40, 41, 42, 45, 48, 86, 87 |
+| Madde kapsamlı seans | md 3, 10, 13, 15–18, 19/A, 21, 22, 24, 40–42, 45, 48, 52/A, 86, 87, 10 soru | 3, 10, 13, 15, 16, 17, 18, 19/A, 21, 22, 24, 40, 41, 42, 45, 48, 52/A, 86, 87 |

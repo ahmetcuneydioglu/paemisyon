@@ -7,7 +7,7 @@
     "subtitle": "İki bölge, ikinci bölge yükümlülüğü, erteleme yolları, zorunlu ve talebe bağlı yer değiştirmeler",
     "articleFrom": "21",
     "articleTo": "47",
-    "readingMinutes": 14,
+    "readingMinutes": 15,
     "sourceLabel": "AI özeti — Emniyet Atama ve Yer Değiştirme Yönetmeliği, md 21, 23–31, 33–38, 40, 42–44, 46, 47",
     "articleNos": [
       "21",
@@ -20,6 +20,7 @@
       "29",
       "30",
       "31",
+      "32",
       "33",
       "34",
       "35",
@@ -454,12 +455,20 @@
       ]
     },
     {
+      "type": "rule",
+      "title": "Md 32: Çocuk öğrenimi ve eş görevi sebebiyle erteleme",
+      "body": "İkinci bölgeye atama sırası gelen ya da ikinci bölgedeki hizmet süresini doldurduğu için birinci bölgeye dönecek personel erteleme talebinde bulunabilir.\n- **Eş görevi:** Eşinin md 38'deki şartları taşıdığını belgeleyerek **Şubat ayı sonuna kadar** talepte bulunabilir.\n- **Çocuk öğrenimi:** Çocukları ilköğretim, ortaöğretim ve üniversite **son sınıfa geçecek** olan personel ile **en az iki çocuğu üniversite öğrenimi gören** personel talepte bulunabilir.\n\nÖğrenim sebebiyle erteleme talebi için çocuğun **aktif öğrencilik kaydı** bulunmalıdır.",
+      "articleRefs": [
+        "32"
+      ]
+    },
+    {
       "type": "exam_stats",
       "title": "Sınav der ki",
       "rows": [
         {
           "label": "Bu ünitenin maddelerinden yayındaki soru",
-          "value": "10",
+          "value": "11",
           "refs": [
             "21",
             "23",
@@ -471,6 +480,7 @@
             "29",
             "30",
             "31",
+            "32",
             "33",
             "34",
             "35",
@@ -534,6 +544,7 @@
             "29",
             "30",
             "31",
+            "32",
             "33",
             "34",
             "35",
@@ -560,6 +571,7 @@
         "29",
         "30",
         "31",
+        "32",
         "33",
         "34",
         "35",
@@ -589,6 +601,7 @@
         "29",
         "30",
         "31",
+        "32",
         "33",
         "34",
         "35",
@@ -606,7 +619,7 @@
       "rows": [
         {
           "label": "Madde kapsamlı seans",
-          "value": "md 21, 23–31, 33–38, 40, 42–44, 46, 47, 10 soru",
+          "value": "md 21, 23–38, 40, 42–44, 46, 47, 10 soru",
           "refs": [
             "21",
             "23",
@@ -618,6 +631,7 @@
             "29",
             "30",
             "31",
+            "32",
             "33",
             "34",
             "35",

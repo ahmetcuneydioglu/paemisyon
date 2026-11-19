@@ -6,7 +6,7 @@
     "title": "Pasaportların verilmesi, yasaklar ve ceza hükümleri",
     "subtitle": "Pasaportu kim verir, kime verilmez, pasaportsuz girene ne yaptırım uygulanır",
     "articleFrom": "15",
-    "articleTo": "34",
+    "articleTo": "Ek 6",
     "readingMinutes": 10,
     "sourceLabel": "AI özeti — 5682 Sayılı Pasaport Kanunu, md 15–23, 27, 34",
     "articleNos": [
@@ -20,7 +20,9 @@
       "22",
       "23",
       "27",
-      "34"
+      "34",
+      "Ek 2",
+      "Ek 6"
     ],
     "generatedBy": "claude-opus-5-5 (ozet-uret.ts)",
     "sortOrder": 2
@@ -314,12 +316,21 @@
       ]
     },
     {
+      "type": "rule",
+      "title": "Ek md 2 ve Ek md 6: Yönetmelik ve elektronik pasaport",
+      "body": "**Yönetmelik (Ek md 2):** Kanunun uygulanması, pasaportların şekil ve muhtevasının tespiti ile pasaport ve pasaport yerine geçerli belgelerin düzenlenmesine ait esaslar yönetmelikle belirtilir. Yönetmelik **İçişleri Bakanlığının koordinatörlüğünde**, Dışişleri ve Maliye ve Gümrük bakanlıklarının iştirakiyle hazırlanır.\n\n**Elektronik pasaport (Ek md 6):**\n- refakate kayıt işlemi yapılamaz,\n- pasaport temdit edilemez,\n- müşterek e-pasaport düzenlenemez.",
+      "articleRefs": [
+        "Ek 2",
+        "Ek 6"
+      ]
+    },
+    {
       "type": "exam_stats",
       "title": "Sınav der ki",
       "rows": [
         {
           "label": "Bu ünitenin maddelerinden yayındaki soru",
-          "value": "33",
+          "value": "35",
           "refs": [
             "15",
             "16",
@@ -331,7 +342,9 @@
             "22",
             "23",
             "27",
-            "34"
+            "34",
+            "Ek 2",
+            "Ek 6"
           ]
         },
         {
@@ -381,7 +394,9 @@
         "22",
         "23",
         "27",
-        "34"
+        "34",
+        "Ek 2",
+        "Ek 6"
       ],
       "generated": true
     },
@@ -399,13 +414,15 @@
         "22",
         "23",
         "27",
-        "34"
+        "34",
+        "Ek 2",
+        "Ek 6"
       ],
       "generated": true,
       "rows": [
         {
           "label": "Madde kapsamlı seans",
-          "value": "md 15–23, 27, 34, 10 soru",
+          "value": "md 15–23, 27, 34, Ek 2, Ek 6, 10 soru",
           "refs": [
             "15",
             "16",
@@ -417,7 +434,9 @@
             "22",
             "23",
             "27",
-            "34"
+            "34",
+            "Ek 2",
+            "Ek 6"
           ]
         }
       ]

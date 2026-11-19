@@ -2,7 +2,7 @@
 
 _Kapılar, pasaportsuz gelen vatandaş, vize muafiyeti; diplomatik, hususi damgalı ve hizmet damgalı pasaportlar_
 
-Kaynak: 5682 Sayılı Pasaport Kanunu, md 1–3, 5, 12–14. Durum: in_review. AI özeti — 5682 Sayılı Pasaport Kanunu, md 1–3, 5, 12–14 (yalnız admin görür).
+Kaynak: 5682 Sayılı Pasaport Kanunu, md 1–3, 5, 12–14, Ek 4. Durum: in_review. AI özeti — 5682 Sayılı Pasaport Kanunu, md 1–3, 5, 12–14 (yalnız admin görür).
 
 ## Kavram · Kapı, polis, sonra gümrük
 
@@ -238,13 +238,21 @@ Bu ayrımı ezberle. **Diplomatik** pasaportu Dışişleri Bakanlığı verir. *
 | Görevden ayrılanlar | Eski cumhurbaşkanları, eski başbakanlar, eski bakanlar, TBMM eski üyeleri | Emeklilik veya çekilmeyle ayrılanlar; belgeleriyle doğrudan İçişleri Bakanlığına başvurur | 13, 14 |
 | Fotoğraf | Sahibinin ve refakat hanesindekilerin birer kıta | Sahibinin ve refakat hanesindekilerin birer fotoğrafı | 13, 14 |
 
+## Kural · Ek md 4: Kadroyu almadan emekli olanlar
+
+<sub>md Ek 4</sub>
+
+Hususi damgalı pasaport almaya hakkı olan Devlet memurları ile subay ve astsubayların taşıdığı unvan ve/veya rütbeyi taşımakla beraber birinci, ikinci ve üçüncü derece kadroları **almadan emekli olan veya ayrılanlar** bu maddenin konusudur.
+
+Devlet memuriyetindeki hizmet süresi, unvan ve/veya rütbesi itibarıyla bugün hususi damgalı pasaport almaya hak kazananlar **emsal alınarak** bunlara da hususi pasaport verilir.
+
 ## Sınav der ki
 
-<sub>md 1, 2, 3, 5, 12, 13, 14</sub>
+<sub>md 1, 2, 3, 5, 12, 13, 14, Ek 4</sub>
 
 | Konu | Değer | md |
 |---|---|---|
-| Bu ünitenin maddelerinden yayındaki soru | 31 | 1, 2, 3, 5, 12, 13, 14 |
+| Bu ünitenin maddelerinden yayındaki soru | 32 | 1, 2, 3, 5, 12, 13, 14, Ek 4 |
 | md 14 — Hususi pasaportlar | 13 soru | 14 |
 | md 13 | 7 soru | 13 |
 | md 3 | 3 soru | 3 |
@@ -253,8 +261,8 @@ Bu ayrımı ezberle. **Diplomatik** pasaportu Dışişleri Bakanlığı verir. *
 
 ## Köprü · Bu üniteden soru çöz
 
-<sub>md 1, 2, 3, 5, 12, 13, 14</sub>
+<sub>md 1, 2, 3, 5, 12, 13, 14, Ek 4</sub>
 
 | Konu | Değer | md |
 |---|---|---|
-| Madde kapsamlı seans | md 1–3, 5, 12–14, 10 soru | 1, 2, 3, 5, 12, 13, 14 |
+| Madde kapsamlı seans | md 1–3, 5, 12–14, Ek 4, 10 soru | 1, 2, 3, 5, 12, 13, 14, Ek 4 |

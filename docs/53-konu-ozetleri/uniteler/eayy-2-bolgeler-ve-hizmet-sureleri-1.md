@@ -2,7 +2,7 @@
 
 _İki bölge, ikinci bölge yükümlülüğü, erteleme yolları, zorunlu ve talebe bağlı yer değiştirmeler_
 
-Kaynak: Emniyet Atama ve Yer Değiştirme Yönetmeliği, md 21, 23–31, 33–38, 40, 42–44, 46, 47. Durum: in_review. AI özeti — Emniyet Atama ve Yer Değiştirme Yönetmeliği, md 21, 23–31, 33–38, 40, 42–44, 46, 47 (yalnız admin görür).
+Kaynak: Emniyet Atama ve Yer Değiştirme Yönetmeliği, md 21, 23–38, 40, 42–44, 46, 47. Durum: in_review. AI özeti — Emniyet Atama ve Yer Değiştirme Yönetmeliği, md 21, 23–31, 33–38, 40, 42–44, 46, 47 (yalnız admin görür).
 
 ## Kavram · Yurt iki bölgeye ayrılır
 
@@ -297,24 +297,34 @@ Emniyet Teşkilatında, emniyet hizmetleri sınıfı dışındaki personelin ata
 | Yaş haddine kalan süre | Beş yıl | 44 |
 | Yaş haddine yaklaşan personelin istediği ile atanması için çalışma süresi | En az iki yıl | 44 |
 
+## Kural · Md 32: Çocuk öğrenimi ve eş görevi sebebiyle erteleme
+
+<sub>md 32</sub>
+
+İkinci bölgeye atama sırası gelen ya da ikinci bölgedeki hizmet süresini doldurduğu için birinci bölgeye dönecek personel erteleme talebinde bulunabilir.
+- **Eş görevi:** Eşinin md 38'deki şartları taşıdığını belgeleyerek **Şubat ayı sonuna kadar** talepte bulunabilir.
+- **Çocuk öğrenimi:** Çocukları ilköğretim, ortaöğretim ve üniversite **son sınıfa geçecek** olan personel ile **en az iki çocuğu üniversite öğrenimi gören** personel talepte bulunabilir.
+
+Öğrenim sebebiyle erteleme talebi için çocuğun **aktif öğrencilik kaydı** bulunmalıdır.
+
 ## Sınav der ki
 
-<sub>md 21, 23, 24, 25, 26, 27, 28, 29, 30, 31, 33, 34, 35, 36, 37, 38, 40, 42, 43, 44, 46, 47</sub>
+<sub>md 21, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 40, 42, 43, 44, 46, 47</sub>
 
 | Konu | Değer | md |
 |---|---|---|
-| Bu ünitenin maddelerinden yayındaki soru | 10 | 21, 23, 24, 25, 26, 27, 28, 29, 30, 31, 33, 34, 35, 36, 37, 38, 40, 42, 43, 44, 46, 47 |
+| Bu ünitenin maddelerinden yayındaki soru | 11 | 21, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 40, 42, 43, 44, 46, 47 |
 | md 23 — Bölgeler ve Hizmet Süreleri(1) | 2 soru | 23 |
 | md 29 — Hizmet İhtiyacı Sebebiyle Erteleme(4) | 2 soru | 29 |
 | md 21 — Bölgeler(3) | 1 soru | 21 |
 | md 28 — Hizmet Sürelerinin Hesaplanması(1) | 1 soru | 28 |
 | md 31 — Bir Yıl İçinde Atama Nedeniyle Erteleme(1) | 1 soru | 31 |
-| Hiç soru çıkmamış | md 24, md 25, md 26, md 27, md 30, md 33, md 35, md 36, md 37, md 38, md 40, md 43, md 46, md 47 | 21, 23, 24, 25, 26, 27, 28, 29, 30, 31, 33, 34, 35, 36, 37, 38, 40, 42, 43, 44, 46, 47 |
+| Hiç soru çıkmamış | md 24, md 25, md 26, md 27, md 30, md 33, md 35, md 36, md 37, md 38, md 40, md 43, md 46, md 47 | 21, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 40, 42, 43, 44, 46, 47 |
 
 ## Köprü · Bu üniteden soru çöz
 
-<sub>md 21, 23, 24, 25, 26, 27, 28, 29, 30, 31, 33, 34, 35, 36, 37, 38, 40, 42, 43, 44, 46, 47</sub>
+<sub>md 21, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 40, 42, 43, 44, 46, 47</sub>
 
 | Konu | Değer | md |
 |---|---|---|
-| Madde kapsamlı seans | md 21, 23–31, 33–38, 40, 42–44, 46, 47, 10 soru | 21, 23, 24, 25, 26, 27, 28, 29, 30, 31, 33, 34, 35, 36, 37, 38, 40, 42, 43, 44, 46, 47 |
+| Madde kapsamlı seans | md 21, 23–38, 40, 42–44, 46, 47, 10 soru | 21, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 40, 42, 43, 44, 46, 47 |

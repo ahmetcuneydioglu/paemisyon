@@ -2,7 +2,7 @@
 
 _Doğumla ve sonradan kazanma; şartlar, istisnai haller, yeniden kazanma ve sonuçlar_
 
-Kaynak: 5901 Sayılı Türk Vatandaşlığı Kanunu, md 3, 4, 6–22. Durum: in_review. AI özeti — 5901 Sayılı Türk Vatandaşlığı Kanunu, md 3, 4, 6–22 (yalnız admin görür).
+Kaynak: 5901 Sayılı Türk Vatandaşlığı Kanunu, md 3, 4, 6–22, Ek 1. Durum: in_review. AI özeti — 5901 Sayılı Türk Vatandaşlığı Kanunu, md 3, 4, 6–22 (yalnız admin görür).
 
 ## Kavram · Kanunun sözlüğü: kim Türk, kim yabancı?
 
@@ -230,13 +230,22 @@ md 11 ve md 16 uyarınca başvuranların gerekli şartları taşıyıp taşımad
 | Karar makamı | Bakanlık | Kaybettirilen: Cumhurbaşkanı; kaybeden: Bakanlık | 13, 14 |
 | Engel hâli | Millî güvenlik | Millî güvenlik | 13, 14 |
 
+## Kural · Ek md 1: Saklı nüfus
+
+<sub>md Ek 1</sub>
+
+Şu şartları taşıyan kişi Türk vatandaşlığını kazanır:
+- Onsekiz yaşını tamamlayıncaya kadar herhangi bir nedenle **aile kütüklerine kaydedilmemiş** olmak,
+- yabancı bir devletle **vatandaşlık bağı bulunmamak**,
+- ana veya baba ile, bunlar ölmüşse varsa kardeşleri ile hısımlığını gösterir **tıbbî rapor** ibraz etmek.
+
 ## Sınav der ki
 
-<sub>md 3, 4, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22</sub>
+<sub>md 3, 4, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, Ek 1</sub>
 
 | Konu | Değer | md |
 |---|---|---|
-| Bu ünitenin maddelerinden yayındaki soru | 39 | 3, 4, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22 |
+| Bu ünitenin maddelerinden yayındaki soru | 40 | 3, 4, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, Ek 1 |
 | md 12 — Türk vatandaşlığının kazanılmasında istisnai haller | 4 soru | 12 |
 | md 20 — Yetkili makam kararı ile Türk vatandaşlığının kazanılmasının geçerliliği ve sonuçları | 4 soru | 20 |
 | md 11 — Başvuru için aranan şartlar | 3 soru | 11 |
@@ -245,8 +254,8 @@ md 11 ve md 16 uyarınca başvuranların gerekli şartları taşıyıp taşımad
 
 ## Köprü · Bu üniteden soru çöz
 
-<sub>md 3, 4, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22</sub>
+<sub>md 3, 4, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, Ek 1</sub>
 
 | Konu | Değer | md |
 |---|---|---|
-| Madde kapsamlı seans | md 3, 4, 6–22, 10 soru | 3, 4, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22 |
+| Madde kapsamlı seans | md 3, 4, 6–22, Ek 1, 10 soru | 3, 4, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, Ek 1 |

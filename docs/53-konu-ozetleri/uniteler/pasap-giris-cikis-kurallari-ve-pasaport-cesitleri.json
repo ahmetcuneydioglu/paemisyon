@@ -6,7 +6,7 @@
     "title": "Giriş-çıkış kuralları ve pasaport çeşitleri",
     "subtitle": "Kapılar, pasaportsuz gelen vatandaş, vize muafiyeti; diplomatik, hususi damgalı ve hizmet damgalı pasaportlar",
     "articleFrom": "1",
-    "articleTo": "14",
+    "articleTo": "Ek 4",
     "readingMinutes": 12,
     "sourceLabel": "AI özeti — 5682 Sayılı Pasaport Kanunu, md 1–3, 5, 12–14",
     "articleNos": [
@@ -16,7 +16,8 @@
       "5",
       "12",
       "13",
-      "14"
+      "14",
+      "Ek 4"
     ],
     "generatedBy": "claude-opus-5-5 (ozet-uret.ts)",
     "sortOrder": 1
@@ -402,12 +403,20 @@
       ]
     },
     {
+      "type": "rule",
+      "title": "Ek md 4: Kadroyu almadan emekli olanlar",
+      "body": "Hususi damgalı pasaport almaya hakkı olan Devlet memurları ile subay ve astsubayların taşıdığı unvan ve/veya rütbeyi taşımakla beraber birinci, ikinci ve üçüncü derece kadroları **almadan emekli olan veya ayrılanlar** bu maddenin konusudur.\n\nDevlet memuriyetindeki hizmet süresi, unvan ve/veya rütbesi itibarıyla bugün hususi damgalı pasaport almaya hak kazananlar **emsal alınarak** bunlara da hususi pasaport verilir.",
+      "articleRefs": [
+        "Ek 4"
+      ]
+    },
+    {
       "type": "exam_stats",
       "title": "Sınav der ki",
       "rows": [
         {
           "label": "Bu ünitenin maddelerinden yayındaki soru",
-          "value": "31",
+          "value": "32",
           "refs": [
             "1",
             "2",
@@ -415,7 +424,8 @@
             "5",
             "12",
             "13",
-            "14"
+            "14",
+            "Ek 4"
           ]
         },
         {
@@ -461,7 +471,8 @@
         "5",
         "12",
         "13",
-        "14"
+        "14",
+        "Ek 4"
       ],
       "generated": true
     },
@@ -475,13 +486,14 @@
         "5",
         "12",
         "13",
-        "14"
+        "14",
+        "Ek 4"
       ],
       "generated": true,
       "rows": [
         {
           "label": "Madde kapsamlı seans",
-          "value": "md 1–3, 5, 12–14, 10 soru",
+          "value": "md 1–3, 5, 12–14, Ek 4, 10 soru",
           "refs": [
             "1",
             "2",
@@ -489,7 +501,8 @@
             "5",
             "12",
             "13",
-            "14"
+            "14",
+            "Ek 4"
           ]
         }
       ]

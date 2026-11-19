@@ -2,7 +2,7 @@
 
 _Pasaportu kim verir, kime verilmez, pasaportsuz girene ne yaptırım uygulanır_
 
-Kaynak: 5682 Sayılı Pasaport Kanunu, md 15–23, 27, 34. Durum: in_review. AI özeti — 5682 Sayılı Pasaport Kanunu, md 15–23, 27, 34 (yalnız admin görür).
+Kaynak: 5682 Sayılı Pasaport Kanunu, md 15–23, 27, 34, Ek 2, Ek 6. Durum: in_review. AI özeti — 5682 Sayılı Pasaport Kanunu, md 15–23, 27, 34 (yalnız admin görür).
 
 ## Kavram · Pasaportu kim verir?
 
@@ -260,13 +260,24 @@ Maddede bu muafiyete bağlanmış başka bir şart sayılmaz.
 | Ayrı seyahat | Pasaport sahibinin beraberinde bulunmadıkça seyahat edemezler | Pasaport sahibiyle seyahat etmedikçe pasaportu kullanamazlar | 15, 18 |
 | Veren makam | Yurt içinde İçişleri Bakanlığı veya yetki verilen valilik; yurt dışında konsolosluk | Yurt içinde İçişleri Bakanlığı; yurt dışında Dışişleri Bakanlığının talimatıyla konsolosluk | 15, 18 |
 
+## Kural · Ek md 2 ve Ek md 6: Yönetmelik ve elektronik pasaport
+
+<sub>md Ek 2, Ek 6</sub>
+
+**Yönetmelik (Ek md 2):** Kanunun uygulanması, pasaportların şekil ve muhtevasının tespiti ile pasaport ve pasaport yerine geçerli belgelerin düzenlenmesine ait esaslar yönetmelikle belirtilir. Yönetmelik **İçişleri Bakanlığının koordinatörlüğünde**, Dışişleri ve Maliye ve Gümrük bakanlıklarının iştirakiyle hazırlanır.
+
+**Elektronik pasaport (Ek md 6):**
+- refakate kayıt işlemi yapılamaz,
+- pasaport temdit edilemez,
+- müşterek e-pasaport düzenlenemez.
+
 ## Sınav der ki
 
-<sub>md 15, 16, 17, 18, 19, 20, 21, 22, 23, 27, 34</sub>
+<sub>md 15, 16, 17, 18, 19, 20, 21, 22, 23, 27, 34, Ek 2, Ek 6</sub>
 
 | Konu | Değer | md |
 |---|---|---|
-| Bu ünitenin maddelerinden yayındaki soru | 33 | 15, 16, 17, 18, 19, 20, 21, 22, 23, 27, 34 |
+| Bu ünitenin maddelerinden yayındaki soru | 35 | 15, 16, 17, 18, 19, 20, 21, 22, 23, 27, 34, Ek 2, Ek 6 |
 | md 18 | 6 soru | 18 |
 | md 22 | 6 soru | 22 |
 | md 20 | 5 soru | 20 |
@@ -275,8 +286,8 @@ Maddede bu muafiyete bağlanmış başka bir şart sayılmaz.
 
 ## Köprü · Bu üniteden soru çöz
 
-<sub>md 15, 16, 17, 18, 19, 20, 21, 22, 23, 27, 34</sub>
+<sub>md 15, 16, 17, 18, 19, 20, 21, 22, 23, 27, 34, Ek 2, Ek 6</sub>
 
 | Konu | Değer | md |
 |---|---|---|
-| Madde kapsamlı seans | md 15–23, 27, 34, 10 soru | 15, 16, 17, 18, 19, 20, 21, 22, 23, 27, 34 |
+| Madde kapsamlı seans | md 15–23, 27, 34, Ek 2, Ek 6, 10 soru | 15, 16, 17, 18, 19, 20, 21, 22, 23, 27, 34, Ek 2, Ek 6 |

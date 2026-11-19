@@ -6,7 +6,7 @@
     "title": "Türk vatandaşlığının kazanılması",
     "subtitle": "Doğumla ve sonradan kazanma; şartlar, istisnai haller, yeniden kazanma ve sonuçlar",
     "articleFrom": "3",
-    "articleTo": "22",
+    "articleTo": "Ek 1",
     "readingMinutes": 10,
     "sourceLabel": "AI özeti — 5901 Sayılı Türk Vatandaşlığı Kanunu, md 3, 4, 6–22",
     "articleNos": [
@@ -28,7 +28,8 @@
       "19",
       "20",
       "21",
-      "22"
+      "22",
+      "Ek 1"
     ],
     "generatedBy": "claude-opus-5-5 (ozet-uret.ts)",
     "sortOrder": 1
@@ -379,12 +380,20 @@
       ]
     },
     {
+      "type": "rule",
+      "title": "Ek md 1: Saklı nüfus",
+      "body": "Şu şartları taşıyan kişi Türk vatandaşlığını kazanır:\n- Onsekiz yaşını tamamlayıncaya kadar herhangi bir nedenle **aile kütüklerine kaydedilmemiş** olmak,\n- yabancı bir devletle **vatandaşlık bağı bulunmamak**,\n- ana veya baba ile, bunlar ölmüşse varsa kardeşleri ile hısımlığını gösterir **tıbbî rapor** ibraz etmek.",
+      "articleRefs": [
+        "Ek 1"
+      ]
+    },
+    {
       "type": "exam_stats",
       "title": "Sınav der ki",
       "rows": [
         {
           "label": "Bu ünitenin maddelerinden yayındaki soru",
-          "value": "39",
+          "value": "40",
           "refs": [
             "3",
             "4",
@@ -404,7 +413,8 @@
             "19",
             "20",
             "21",
-            "22"
+            "22",
+            "Ek 1"
           ]
         },
         {
@@ -462,7 +472,8 @@
         "19",
         "20",
         "21",
-        "22"
+        "22",
+        "Ek 1"
       ],
       "generated": true
     },
@@ -488,13 +499,14 @@
         "19",
         "20",
         "21",
-        "22"
+        "22",
+        "Ek 1"
       ],
       "generated": true,
       "rows": [
         {
           "label": "Madde kapsamlı seans",
-          "value": "md 3, 4, 6–22, 10 soru",
+          "value": "md 3, 4, 6–22, Ek 1, 10 soru",
           "refs": [
             "3",
             "4",
@@ -514,7 +526,8 @@
             "19",
             "20",
             "21",
-            "22"
+            "22",
+            "Ek 1"
           ]
         }
       ]

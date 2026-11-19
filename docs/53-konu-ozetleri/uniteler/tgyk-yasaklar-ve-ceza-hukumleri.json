@@ -6,8 +6,8 @@
     "title": "Yasaklar ve ceza hükümleri",
     "subtitle": "Çağrı ve propaganda araçları, kışkırtma yasağı, ceza aralıkları ve son hükümler",
     "articleFrom": "26",
-    "articleTo": "40",
-    "readingMinutes": 11,
+    "articleTo": "Ek 1",
+    "readingMinutes": 12,
     "sourceLabel": "AI özeti — 2911 Sayılı Toplantı ve Gösteri Yürüyüşleri Kanunu, md 26–34, 37–40",
     "articleNos": [
       "26",
@@ -19,10 +19,12 @@
       "32",
       "33",
       "34",
+      "34/A",
       "37",
       "38",
       "39",
-      "40"
+      "40",
+      "Ek 1"
     ],
     "generatedBy": "claude-opus-5-5 (ozet-uret.ts)",
     "sortOrder": 3
@@ -434,12 +436,28 @@
       ]
     },
     {
+      "type": "rule",
+      "title": "Md 34/A: Çocuklara uygulanmayan hüküm",
+      "body": "Kanuna aykırı toplantı ve gösteri yürüyüşüne katılarak **direnme** suçunu ya da katıldığı toplantı ve gösteri yürüyüşü sırasında **propaganda** suçunu işleyen çocuklar hakkında, bu suçlara bağlı olarak ayrıca 3713 sayılı Terörle Mücadele Kanununun 2 nci maddesinin ikinci fıkrası **uygulanmaz**.",
+      "articleRefs": [
+        "34/A"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Ek md 1: Rücu",
+      "body": "Şiddet olaylarının yaygınlaşarak kamu düzeninin ciddi şekilde bozulmasına yol açabilecek toplumsal olaylarda kamu mallarına ve gerçek ve tüzel kişilerin mallarına verilen zararları **Devlet karşılarsa**, ilgili idare ödeme nedeniyle **genel hükümlere göre** sorumlulara rücu eder.\n\nBu Kanun kapsamındaki rücu isteminde zamanaşımı süreleri **bir kat artırılarak** uygulanır.",
+      "articleRefs": [
+        "Ek 1"
+      ]
+    },
+    {
       "type": "exam_stats",
       "title": "Sınav der ki",
       "rows": [
         {
           "label": "Bu ünitenin maddelerinden yayındaki soru",
-          "value": "27",
+          "value": "29",
           "refs": [
             "26",
             "27",
@@ -450,10 +468,12 @@
             "32",
             "33",
             "34",
+            "34/A",
             "37",
             "38",
             "39",
-            "40"
+            "40",
+            "Ek 1"
           ]
         },
         {
@@ -502,10 +522,12 @@
         "32",
         "33",
         "34",
+        "34/A",
         "37",
         "38",
         "39",
-        "40"
+        "40",
+        "Ek 1"
       ],
       "generated": true
     },
@@ -522,16 +544,18 @@
         "32",
         "33",
         "34",
+        "34/A",
         "37",
         "38",
         "39",
-        "40"
+        "40",
+        "Ek 1"
       ],
       "generated": true,
       "rows": [
         {
           "label": "Madde kapsamlı seans",
-          "value": "md 26–34, 37–40, 10 soru",
+          "value": "md 26–34, 34/A, 37–40, Ek 1, 10 soru",
           "refs": [
             "26",
             "27",
@@ -542,10 +566,12 @@
             "32",
             "33",
             "34",
+            "34/A",
             "37",
             "38",
             "39",
-            "40"
+            "40",
+            "Ek 1"
           ]
         }
       ]

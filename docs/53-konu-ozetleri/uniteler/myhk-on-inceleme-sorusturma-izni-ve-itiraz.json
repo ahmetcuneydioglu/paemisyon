@@ -6,8 +6,8 @@
     "title": "Ön inceleme, soruşturma izni ve itiraz",
     "subtitle": "Kapsam, izin mercileri, ihbar şartları, süreler, itiraz ve hazırlık soruşturması",
     "articleFrom": "2",
-    "articleTo": "12",
-    "readingMinutes": 10,
+    "articleTo": "Ek 1",
+    "readingMinutes": 12,
     "sourceLabel": "AI özeti — 4483 Sayılı Memurların Yargılanması Hakkında Kanun, md 2–9, 12",
     "articleNos": [
       "2",
@@ -18,7 +18,11 @@
       "7",
       "8",
       "9",
-      "12"
+      "10",
+      "12",
+      "14",
+      "15",
+      "Ek 1"
     ],
     "generatedBy": "claude-opus-5-5 (ozet-uret.ts)",
     "sortOrder": 1
@@ -327,12 +331,37 @@
       ]
     },
     {
+      "type": "rule",
+      "title": "Md 10 ve md 14: İştirak ve vekiller",
+      "body": "**İştirak (md 10):** Bu Kanun kapsamındaki suç iştirak hâlinde işlenirse memur olmayan memur olanla, ast memur üst memurla **aynı mahkemede** yargılanır. Soruda ast ile üst suçu iştirak hâlinde işlemişse ikisinin de aynı mahkemede yargılanacağını hatırla.\n\n**Vekiller (md 14):** Bu Kanunun uygulanmasında vekiller, **asillerin tabi olduğu usule** tabidir. Vekâlet eden kişi için izin merciini ve usulü, vekâlet ettiği asile göre bul.",
+      "articleRefs": [
+        "10",
+        "14"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Md 15: Haksız isnat",
+      "body": "İhbar veya şikâyetin, edileni **mağdur etmek amacıyla** ve uydurma bir suç isnadıyla yapıldığı hazırlık soruşturması sonucunda anlaşılır ya da yargılama sonucunda sabit olursa, haksız isnatta bulunan hakkında yetkili ve görevli Cumhuriyet başsavcılığı **re'sen** soruşturmaya geçer.\n\nMemurların ve diğer kamu görevlilerinin, bu durumlarda kamu davası açılması için Cumhuriyet başsavcılığına başvurma ve haksız isnatta bulunan hakkında genel hükümlere göre **tazminat davası** açma hakkı saklıdır.",
+      "articleRefs": [
+        "15"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Ek md 1: Tazminat davası idareye açılır",
+      "body": "Ön inceleme, disiplin soruşturması veya diğer idari soruşturmaları yapmakla görevlendirilenler ile teftiş ya da denetim elemanlarının bu görevleriyle ilgili işlem, faaliyet, rapor ve görüş yazılarındaki kanaatleri ile kanunla verilen yetkilere dayanarak aldıkları tedbirlerden dolayı **ancak idare aleyhine** tazminat davası açılabilir. Kişisel kusur, haksız fiil ve diğer sorumluluk hâlleri de buna dâhildir.\n\n**Rücu:** Görevlinin suç sayılan eylemleri ile kin, garez ve hatıra dayalı olarak veya baskı veya telkinle kanaat oluşturduğu ya da değiştirdiği **kesinleşmiş yargı ya da disiplin kurulu kararıyla** tespit edilirse idarenin görevliye rücu hakkı saklıdır.\n\nBu raporlara dayanarak karar veren ya da işlem tesis edenler ile bu kararları ya da işlemleri hazırlayan, inha ya da teklif edenler hakkında da aynı kural uygulanır.",
+      "articleRefs": [
+        "Ek 1"
+      ]
+    },
+    {
       "type": "exam_stats",
       "title": "Sınav der ki",
       "rows": [
         {
           "label": "Bu ünitenin maddelerinden yayındaki soru",
-          "value": "38",
+          "value": "42",
           "refs": [
             "2",
             "3",
@@ -342,7 +371,11 @@
             "7",
             "8",
             "9",
-            "12"
+            "10",
+            "12",
+            "14",
+            "15",
+            "Ek 1"
           ]
         },
         {
@@ -390,7 +423,11 @@
         "7",
         "8",
         "9",
-        "12"
+        "10",
+        "12",
+        "14",
+        "15",
+        "Ek 1"
       ],
       "generated": true
     },
@@ -406,13 +443,17 @@
         "7",
         "8",
         "9",
-        "12"
+        "10",
+        "12",
+        "14",
+        "15",
+        "Ek 1"
       ],
       "generated": true,
       "rows": [
         {
           "label": "Madde kapsamlı seans",
-          "value": "md 2–9, 12, 10 soru",
+          "value": "md 2–10, 12, 14, 15, Ek 1, 10 soru",
           "refs": [
             "2",
             "3",
@@ -422,7 +463,11 @@
             "7",
             "8",
             "9",
-            "12"
+            "10",
+            "12",
+            "14",
+            "15",
+            "Ek 1"
           ]
         }
       ]

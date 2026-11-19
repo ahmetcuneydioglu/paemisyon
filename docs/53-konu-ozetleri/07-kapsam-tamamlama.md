@@ -168,3 +168,28 @@ sıra ≥3 olup açık duran ünite 0. Maddeli 4.055 sorunun 4.040'ı bir ünite
 Madde düzeyinde kapsanmayan öteki maddelerin büyük kısmı amaç/kapsam/dayanak, yürürlük/yürütme ve geçiş hükümleridir
 (tasarım gereği dışarıda); büyük kanunlarda (657, TCK özel hükümler, İçtüzük, 2918, 5393, 5442, 7201) üniteler sınavda
 sorulan maddelerle sınırlıdır.
+
+## Kuyruk: üniteye düşmeyen 15 sorunun 14'ü (19 Kas 2026)
+
+Yukarıdaki tablodaki yürürlükteki maddeler için yeni ünite açılmadı; 9 kart mevcut 7 üniteye eklendi ve madde
+listeleri genişletildi (Anayasa Başlangıç'taki yol). Kartlar madde metninden elle yazıldı, betik doğrulamasından
+geçti (7/7 GEÇTİ), bağımsız denetçi 9 kartı madde metnine karşı okudu (ESAS yok; 7 küçük bulgu işlendi).
+
+| Ünite | Eklenen madde |
+|---|---|
+| `tgyk-yasaklar-ve-ceza-hukumleri` | 2911 md 34/A, Ek 1 |
+| `tvk-vatandasligin-kazanilmasi` | 5901 Ek 1 |
+| `myhk-on-inceleme-sorusturma-izni-ve-itiraz` | 4483 md 10, 14, 15, Ek 1 |
+| `pasap-giris-cikis-kurallari-ve-pasaport-cesitleri` | 5682 Ek 4 |
+| `pasap-pasaport-verilmesi-yasaklar-ve-ceza-hukumleri` | 5682 Ek 2, Ek 6 |
+| `dank-danistayin-gorevleri-ve-kurulusu` | 2575 md 19/A, 52/A |
+| `eayy-2-bolgeler-ve-hizmet-sureleri-1` | Atama Yön. md 32 |
+
+Yükleme `--replace` ister; yedi ünitede okuma ilerlemesi satırı yoktu (prod sayımı 0), kayıp olmaz. Sıra:
+yükle → premium (`tgyk-yasaklar` sıra 3) → toplu yayın → ilerleme.
+
+Dışarıda kalan 2 soru: 2911 Geçici 1 (madde etiketi şüpheli, banka işi) ve TCK "45-49" aralık etiketi.
+
+Banka notları: 2575 md 19/A metni bankada yalnız birinci fıkra (seçen organ, görev süresi, toplanma usulü yok;
+sorunun doğru şıkkındaki "Genel Kurulunca seçilen" unsuru bu yüzden kartta yok); 5682 Ek 2 başlık alanı önceki
+maddenin dipnot artığı.

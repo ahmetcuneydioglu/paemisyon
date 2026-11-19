@@ -2,7 +2,7 @@
 
 _Kapsam, izin mercileri, ihbar şartları, süreler, itiraz ve hazırlık soruşturması_
 
-Kaynak: 4483 Sayılı Memurların Yargılanması Hakkında Kanun, md 2–9, 12. Durum: in_review. AI özeti — 4483 Sayılı Memurların Yargılanması Hakkında Kanun, md 2–9, 12 (yalnız admin görür).
+Kaynak: 4483 Sayılı Memurların Yargılanması Hakkında Kanun, md 2–10, 12, 14, 15, Ek 1. Durum: in_review. AI özeti — 4483 Sayılı Memurların Yargılanması Hakkında Kanun, md 2–9, 12 (yalnız admin görür).
 
 ## Kavram · Önce izin, sonra soruşturma
 
@@ -256,13 +256,39 @@ Bu maddeden gelen sorular neredeyse hep aynı yeri yoklar: hâkim kararı için 
 | md 3 (e), (f), (g) (Cumhurbaşkanınca verilen izin hariç) ve (h) için itiraz mercii | Danıştay İkinci Dairesi (kanun metni; Danıştay Kanunu md 42/k’ya göre bugün Birinci Daire) | 9 |
 | Kanunun uygulanmadığı soruşturmalar | 765 sayılı TCK md 243 ve md 245; 1412 sayılı CMUK md 154, dördüncü fıkra | 2 |
 
+## Kural · Md 10 ve md 14: İştirak ve vekiller
+
+<sub>md 10, 14</sub>
+
+**İştirak (md 10):** Bu Kanun kapsamındaki suç iştirak hâlinde işlenirse memur olmayan memur olanla, ast memur üst memurla **aynı mahkemede** yargılanır. Soruda ast ile üst suçu iştirak hâlinde işlemişse ikisinin de aynı mahkemede yargılanacağını hatırla.
+
+**Vekiller (md 14):** Bu Kanunun uygulanmasında vekiller, **asillerin tabi olduğu usule** tabidir. Vekâlet eden kişi için izin merciini ve usulü, vekâlet ettiği asile göre bul.
+
+## Kural · Md 15: Haksız isnat
+
+<sub>md 15</sub>
+
+İhbar veya şikâyetin, edileni **mağdur etmek amacıyla** ve uydurma bir suç isnadıyla yapıldığı hazırlık soruşturması sonucunda anlaşılır ya da yargılama sonucunda sabit olursa, haksız isnatta bulunan hakkında yetkili ve görevli Cumhuriyet başsavcılığı **re'sen** soruşturmaya geçer.
+
+Memurların ve diğer kamu görevlilerinin, bu durumlarda kamu davası açılması için Cumhuriyet başsavcılığına başvurma ve haksız isnatta bulunan hakkında genel hükümlere göre **tazminat davası** açma hakkı saklıdır.
+
+## Kural · Ek md 1: Tazminat davası idareye açılır
+
+<sub>md Ek 1</sub>
+
+Ön inceleme, disiplin soruşturması veya diğer idari soruşturmaları yapmakla görevlendirilenler ile teftiş ya da denetim elemanlarının bu görevleriyle ilgili işlem, faaliyet, rapor ve görüş yazılarındaki kanaatleri ile kanunla verilen yetkilere dayanarak aldıkları tedbirlerden dolayı **ancak idare aleyhine** tazminat davası açılabilir. Kişisel kusur, haksız fiil ve diğer sorumluluk hâlleri de buna dâhildir.
+
+**Rücu:** Görevlinin suç sayılan eylemleri ile kin, garez ve hatıra dayalı olarak veya baskı veya telkinle kanaat oluşturduğu ya da değiştirdiği **kesinleşmiş yargı ya da disiplin kurulu kararıyla** tespit edilirse idarenin görevliye rücu hakkı saklıdır.
+
+Bu raporlara dayanarak karar veren ya da işlem tesis edenler ile bu kararları ya da işlemleri hazırlayan, inha ya da teklif edenler hakkında da aynı kural uygulanır.
+
 ## Sınav der ki
 
-<sub>md 2, 3, 4, 5, 6, 7, 8, 9, 12</sub>
+<sub>md 2, 3, 4, 5, 6, 7, 8, 9, 10, 12, 14, 15, Ek 1</sub>
 
 | Konu | Değer | md |
 |---|---|---|
-| Bu ünitenin maddelerinden yayındaki soru | 38 | 2, 3, 4, 5, 6, 7, 8, 9, 12 |
+| Bu ünitenin maddelerinden yayındaki soru | 42 | 2, 3, 4, 5, 6, 7, 8, 9, 10, 12, 14, 15, Ek 1 |
 | md 3 — İzin vermeye yetkili merciler | 11 soru | 3 |
 | md 9 — İtiraz | 8 soru | 9 |
 | md 12 — Hazırlık soruşturmasını yapacak merciler | 6 soru | 12 |
@@ -271,8 +297,8 @@ Bu maddeden gelen sorular neredeyse hep aynı yeri yoklar: hâkim kararı için 
 
 ## Köprü · Bu üniteden soru çöz
 
-<sub>md 2, 3, 4, 5, 6, 7, 8, 9, 12</sub>
+<sub>md 2, 3, 4, 5, 6, 7, 8, 9, 10, 12, 14, 15, Ek 1</sub>
 
 | Konu | Değer | md |
 |---|---|---|
-| Madde kapsamlı seans | md 2–9, 12, 10 soru | 2, 3, 4, 5, 6, 7, 8, 9, 12 |
+| Madde kapsamlı seans | md 2–10, 12, 14, 15, Ek 1, 10 soru | 2, 3, 4, 5, 6, 7, 8, 9, 10, 12, 14, 15, Ek 1 |

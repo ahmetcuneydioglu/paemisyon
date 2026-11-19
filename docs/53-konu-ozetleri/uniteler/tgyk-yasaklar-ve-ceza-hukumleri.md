@@ -2,7 +2,7 @@
 
 _Çağrı ve propaganda araçları, kışkırtma yasağı, ceza aralıkları ve son hükümler_
 
-Kaynak: 2911 Sayılı Toplantı ve Gösteri Yürüyüşleri Kanunu, md 26–34, 37–40. Durum: in_review. AI özeti — 2911 Sayılı Toplantı ve Gösteri Yürüyüşleri Kanunu, md 26–34, 37–40 (yalnız admin görür).
+Kaynak: 2911 Sayılı Toplantı ve Gösteri Yürüyüşleri Kanunu, md 26–34, 34/A, 37–40, Ek 1. Durum: in_review. AI özeti — 2911 Sayılı Toplantı ve Gösteri Yürüyüşleri Kanunu, md 26–34, 37–40 (yalnız admin görür).
 
 ## Kavram · Bu ünitede ne var?
 
@@ -238,13 +238,27 @@ Yönetmeliği **Adalet, Milli Savunma ve İçişleri** bakanlıkları, Kanunun y
 | Temel ceza | Şartlara uymayan vasıta: altı ay – bir yıl hapis | Toplantı olmamış veya ilk ihtarla dağılmış: bir yıl altı ay – dört yıl hapis | 31, 34 |
 | Ağır hâl | Teşvik sonucu suç işlenir veya teşebbüs edilirse: üç yıl – beş yıl hapis | Toplantı zorla dağıtılmışsa: üç yıl – beş yıl hapis | 31, 34 |
 
+## Kural · Md 34/A: Çocuklara uygulanmayan hüküm
+
+<sub>md 34/A</sub>
+
+Kanuna aykırı toplantı ve gösteri yürüyüşüne katılarak **direnme** suçunu ya da katıldığı toplantı ve gösteri yürüyüşü sırasında **propaganda** suçunu işleyen çocuklar hakkında, bu suçlara bağlı olarak ayrıca 3713 sayılı Terörle Mücadele Kanununun 2 nci maddesinin ikinci fıkrası **uygulanmaz**.
+
+## Kural · Ek md 1: Rücu
+
+<sub>md Ek 1</sub>
+
+Şiddet olaylarının yaygınlaşarak kamu düzeninin ciddi şekilde bozulmasına yol açabilecek toplumsal olaylarda kamu mallarına ve gerçek ve tüzel kişilerin mallarına verilen zararları **Devlet karşılarsa**, ilgili idare ödeme nedeniyle **genel hükümlere göre** sorumlulara rücu eder.
+
+Bu Kanun kapsamındaki rücu isteminde zamanaşımı süreleri **bir kat artırılarak** uygulanır.
+
 ## Sınav der ki
 
-<sub>md 26, 27, 28, 29, 30, 31, 32, 33, 34, 37, 38, 39, 40</sub>
+<sub>md 26, 27, 28, 29, 30, 31, 32, 33, 34, 34/A, 37, 38, 39, 40, Ek 1</sub>
 
 | Konu | Değer | md |
 |---|---|---|
-| Bu ünitenin maddelerinden yayındaki soru | 27 | 26, 27, 28, 29, 30, 31, 32, 33, 34, 37, 38, 39, 40 |
+| Bu ünitenin maddelerinden yayındaki soru | 29 | 26, 27, 28, 29, 30, 31, 32, 33, 34, 34/A, 37, 38, 39, 40, Ek 1 |
 | md 28 — Yasaklara aykırı hareket | 5 soru | 28 |
 | md 26 — Çağrı ve propaganda araçları | 3 soru | 26 |
 | md 32 — Direnme | 3 soru | 32 |
@@ -253,8 +267,8 @@ Yönetmeliği **Adalet, Milli Savunma ve İçişleri** bakanlıkları, Kanunun y
 
 ## Köprü · Bu üniteden soru çöz
 
-<sub>md 26, 27, 28, 29, 30, 31, 32, 33, 34, 37, 38, 39, 40</sub>
+<sub>md 26, 27, 28, 29, 30, 31, 32, 33, 34, 34/A, 37, 38, 39, 40, Ek 1</sub>
 
 | Konu | Değer | md |
 |---|---|---|
-| Madde kapsamlı seans | md 26–34, 37–40, 10 soru | 26, 27, 28, 29, 30, 31, 32, 33, 34, 37, 38, 39, 40 |
+| Madde kapsamlı seans | md 26–34, 34/A, 37–40, Ek 1, 10 soru | 26, 27, 28, 29, 30, 31, 32, 33, 34, 34/A, 37, 38, 39, 40, Ek 1 |
