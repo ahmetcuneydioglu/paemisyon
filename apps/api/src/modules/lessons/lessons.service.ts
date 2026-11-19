@@ -416,7 +416,13 @@ export class LessonsService {
       });
       if (links.length)
         await tx.lessonLink.createMany({ data: links.map((l) => ({ ...l, lessonId: lesson.id })) });
-      return { id: lesson.id, versionNo: 1, replaced: false, unchanged: false, pendingVersion: false };
+      return {
+        id: lesson.id,
+        versionNo: 1,
+        replaced: false,
+        unchanged: false,
+        pendingVersion: false,
+      };
     });
     return { ...result, slug: input.slug, validation };
   }
