@@ -8,8 +8,9 @@
  * düzeltmesi için bu fazladır. Bu betik paneldeki "kart düzenle" ile aynı kapıyı kullanır: `--kartlar` ünite
  * JSON'undaki 1'den başlayan kart sırasıdır; prod kartı ünite + sıra (`sortOrder`) ile bulunur, türü ve
  * başlığı JSON'la aynı olmalıdır (kaymış sıra yanlış kartı ezmesin). Kart `validateBlock`'tan geçmezse
- * hiçbir şey yazılmaz. Yalnız body ve rows değişir; başlık, madde referansları, sayı alanları ve betik
- * üretimi kartlar (istatistik/köprü) bu betikle değişmez. Tek
+ * hiçbir şey yazılmaz. Yalnız body, rows ve derivedNumbers (türetilmiş sayı formülleri; 19 Kas 2026 —
+ * dipnot temizliğinden sonra formülü kapıdan geçmeyen kart düzeltilebilsin) değişir; başlık, madde
+ * referansları, counterNumbers ve betik üretimi kartlar (istatistik/köprü) bu betikle değişmez. Tek
  * `summary_block.update_many` denetim kaydı düşer. Varsayılan kuru çalıştırmadır; `--uygula` ile yazar.
  * DB-yazma penceresi: connection_limit=1.
  */
@@ -92,12 +93,17 @@ const sirali = (v: unknown): string =>
       const degisen: string[] = [];
       if ((p.body ?? null) !== (j.body ?? null)) degisen.push('body');
       if (sirali(p.rows ?? null) !== sirali(j.rows ?? null)) degisen.push('rows');
+      if (sirali(p.derivedNumbers ?? null) !== sirali(j.derivedNumbers ?? null)) degisen.push('derivedNumbers');
       console.log(`#${n} [${p.type}] ${p.title} — değişen: ${degisen.join(', ') || 'yok'}`);
       if (!degisen.length) continue;
       const data: Prisma.SummaryBlockUpdateInput = {};
       if (degisen.includes('body')) data.body = j.body ?? null;
       if (degisen.includes('rows'))
         data.rows = j.rows ? (j.rows as unknown as Prisma.InputJsonValue) : Prisma.JsonNull;
+      if (degisen.includes('derivedNumbers'))
+        data.derivedNumbers = j.derivedNumbers
+          ? (j.derivedNumbers as unknown as Prisma.InputJsonValue)
+          : Prisma.JsonNull;
       isler.push({ id: p.id, n, data });
     }
     console.log(`Ünite ${unite.unit.slug} (${unit.status}): ${isler.length} kart güncellenecek.`);

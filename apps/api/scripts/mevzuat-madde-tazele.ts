@@ -10,7 +10,7 @@
  * Güvenlik:
  *  - Varsayılan KURU ÇALIŞMA: eski/yeni metin yan yana basılır.
  *  - Kaynaktan madde bulunamazsa ya da temizlenmiş gövde boşsa o hedef ATLANIR.
- *  - Yazmadan önce eski satırlar yedeğe alınır (docs/32-yayin-denetimi/tazeleme-yedek-<tarih>.json),
+ *  - Yazmadan önce eski satırlar yedeğe alınır (docs/32-yayin-denetimi/tazeleme-yedek-<zaman>.json),
  *    her işlem docs/32-yayin-denetimi/mevzuat-tazeleme.jsonl defterine düşer.
  *
  *   npx tsx scripts/mevzuat-madde-tazele.ts <plan.json> [--tam]   (kuru; --tam gövdeyi kesmeden basar)
@@ -96,7 +96,8 @@ type Plan = { mevzuat: string; guncelle?: string[]; ekle?: string[]; effectiveIn
   console.log(`\nTOPLAM: ${islemler.filter((x) => x.tur === 'guncelle').length} güncelleme · ${islemler.filter((x) => x.tur === 'ekle').length} ekleme`);
   if (!YAZ) { console.log('(KURU ÇALIŞMA — --yaz ile uygulanır)'); return; }
 
-  const yedekYol = join(D32, `tazeleme-yedek-${simdi.toISOString().slice(0, 10)}.json`);
+  // Saniyeli ad: aynı gün ikinci yazım ilk yedeği EZMESİN (19 Kas 2026'da ezdi; git'ten geri alındı).
+  const yedekYol = join(D32, `tazeleme-yedek-${simdi.toISOString().slice(0, 19).replace(/:/g, '')}.json`);
   writeFileSync(yedekYol, JSON.stringify({ maddeler: yedek, siraAnahtari: yenidenAnahtar }, null, 1));
   await p.$transaction(async (tx) => {
     for (const r of yenidenAnahtar)

@@ -145,14 +145,14 @@
       "derivedNumbers": [
         {
           "value": 3,
-          "expr": "count(bedenî kuvvet, maddî güç, silah)",
+          "expr": "1 + 1 + 1",
           "refs": [
             "16"
           ]
         },
         {
           "value": 4,
-          "expr": "count(a, b, c, d)",
+          "expr": "1 + 1 + 1 + 1",
           "refs": [
             "16"
           ]
