@@ -24,6 +24,8 @@ export type DeepLinkTarget =
   | 'settings_notifications'
   /** Bilgi kartları (Doc 56): vadesi gelen kartlar; mobil sözlüğü `flashcards`. */
   | 'flashcards'
+  /** Mağaza (uygulama güncellemesi): cihaz kendi platformunun mağazasını açar; mobil sözlüğü `store`. */
+  | 'app_update'
   | 'home';
 
 export type DeepLink = { target: DeepLinkTarget; params?: Record<string, string> };
@@ -47,6 +49,12 @@ export const DEEP_LINKS: Record<DeepLinkTarget, Entry> = {
     webPath: () => '/kartlar?mode=due&source=notif',
     minAppVersion: '2.1.0',
   },
+  // Uygulama güncellemesi (19 Kas 2026): mobil `store` rotasında iOS App Store / Google Play'i
+  // cihazın platformuna göre açar (apps/app deep-links.ts `isStoreRoute`). Tanıyıcı 2.1.0 ile çıkar;
+  // daha eski uygulama sürüm kapısından Bildirimler kutusuna düşer, satır "Güncelleme gerekli" der ve
+  // dokununca yine mağazayı açar — yani bugünkü 2.0 kurulumları da mağazaya ulaşır, yalnız bir adım
+  // fazlasıyla. Web'de iki mağaza rozetinin durduğu ana sayfa.
+  app_update: { route: () => 'store', webPath: () => '/', minAppVersion: '2.1.0' },
   daily_question: {
     route: () => 'daily-quiz',
     webPath: () => '/seans?mode=daily&source=notif',
@@ -142,6 +150,7 @@ export function webPathFromRoute(route: string | null | undefined): string {
   if (r === 'daily-quiz') return DEEP_LINKS.daily_question.webPath('');
   if (r === 'denemeler') return '/denemeler';
   if (r === 'leaderboard') return '/liderlik';
+  if (r === 'store') return DEEP_LINKS.app_update.webPath('');
   const sonuc = r.match(/^deneme-sonuc\/([0-9a-fA-F-]{36})$/);
   if (sonuc) return `/sonuc/${sonuc[1]}`;
   const soru = r.match(/^question:(.+)$/);

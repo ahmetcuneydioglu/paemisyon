@@ -53,6 +53,17 @@ export function routeToHref(route: string | null | undefined): AppHref {
   return { pathname: "/(tabs)" };
 }
 
+/**
+ * Mağaza rotası (sunucu `app_update` hedefi, 19 Kas 2026): uygulama içi ekran değil, cihazın kendi
+ * mağazası açılır (`storeUrl`, app-meta.ts). Dokunuş noktaları `routeToHref`'ten ÖNCE bunu sorar;
+ * tanımayan eski sürüm zaten sunucunun `minAppVersion` kapısından Bildirimler kutusuna düşer.
+ */
+export const STORE_ROUTE = "store";
+
+export function isStoreRoute(route: string | null | undefined): boolean {
+  return (route ?? "").trim() === STORE_ROUTE;
+}
+
 /** `https://paemisyon.com/bildirim?git=<route>` → route; başka URL'de null. */
 export function routeFromUrl(url: string): string | null {
   try {

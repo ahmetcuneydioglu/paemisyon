@@ -4,11 +4,11 @@ import * as Device from "expo-device";
 import * as Notifications from "expo-notifications";
 import { useRouter } from "expo-router";
 import { useEffect, useRef } from "react";
-import { Platform } from "react-native";
+import { Linking, Platform } from "react-native";
 import { invalidateUnread, recordNotificationEvent } from "@/features/notifications/queries";
 import { api } from "./api";
-import { appVersion, deviceId, versionAtLeast } from "./app-meta";
-import { routeToHref } from "./deep-links";
+import { appVersion, deviceId, storeUrl, versionAtLeast } from "./app-meta";
+import { isStoreRoute, routeToHref } from "./deep-links";
 import { readLocal, writeLocal } from "./local-store";
 
 /**
@@ -17,7 +17,8 @@ import { readLocal, writeLocal } from "./local-store";
  * jeton yenilenince, `deviceId` + `appVersion` ile (Doc 52 §4.3). Ön planda gelen mesaj yerel
  * bildirim olarak gösterilir; dokunuş `data.route` ile yönlendirir (deep-links.ts) ve
  * `data.notificationId` varsa `opened` olayı yazar. `data.minAppVersion` bu sürümden büyükse
- * hedef yerine Bildirimler kutusu açılır (orada "Güncelleme gerekli"). Çıkışta jeton silinir.
+ * hedef yerine Bildirimler kutusu açılır (orada "Güncelleme gerekli"). `store` rotası ekran değil,
+ * cihazın mağaza sayfasını açar (uygulama güncellemesi bildirimi). Çıkışta jeton silinir.
  */
 Notifications.setNotificationHandler({
   handleNotification: async () => ({ shouldShowBanner: true, shouldShowList: true, shouldPlaySound: true, shouldSetBadge: false }),
@@ -80,7 +81,13 @@ function openFromPush(data: PushData | null | undefined, go: (href: ReturnType<t
     go({ pathname: "/bildirimler" });
     return;
   }
-  go(routeToHref(str(data?.route)));
+  const route = str(data?.route);
+  // Güncelleme bildirimi: ekran yerine bu platformun mağazası (iOS App Store / Google Play).
+  if (isStoreRoute(route)) {
+    void Linking.openURL(storeUrl());
+    return;
+  }
+  go(routeToHref(route));
 }
 
 type RemoteMessage = Parameters<Parameters<typeof onMessage>[1]>[0];

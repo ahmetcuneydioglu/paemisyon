@@ -47,6 +47,7 @@ describe("bildirimRotasi", () => {
     expect(bildirimRotasi("daily-quiz")).toBe("/seans?mode=daily&source=notif");
     expect(bildirimRotasi("denemeler")).toBe("/denemeler");
     expect(bildirimRotasi("leaderboard")).toBe("/liderlik");
+    expect(bildirimRotasi("store")).toBe("/");
     expect(bildirimRotasi(`deneme-sonuc/${sid}`)).toBe(`/sonuc/${sid}`);
     expect(bildirimRotasi(`question:${sid}`)).toBe(
       `/seans?mode=practice&questionId=${sid}&count=1&source=notif`,

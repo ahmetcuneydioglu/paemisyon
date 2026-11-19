@@ -1,5 +1,6 @@
 import Constants from "expo-constants";
 import * as Crypto from "expo-crypto";
+import { Platform } from "react-native";
 import { readLocal, writeLocal } from "./local-store";
 
 /**
@@ -13,6 +14,13 @@ let cached: string | null = null;
 
 export function appVersion(): string {
   return Constants.expoConfig?.version ?? "0.0.0";
+}
+
+/** Bu cihazın mağaza sayfası (güncelleme bildirimi ve "Güncelleme gerekli" uyarısı tek yerden). */
+export function storeUrl(): string {
+  return Platform.OS === "android"
+    ? "https://play.google.com/store/apps/details?id=com.paemisyon.paemisyon"
+    : "https://apps.apple.com/tr/app/paemisyon/id6802087692";
 }
 
 export async function deviceId(): Promise<string> {

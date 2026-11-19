@@ -35,6 +35,14 @@ describe('derin bağlantı kayıt defteri', () => {
     expect(resolveDeepLink({ target: 'exams' }).webPath).toBe('/denemeler');
     expect(resolveDeepLink(null).webPath).toBe('/bugun');
   });
+  it('uygulama güncellemesi mağaza rotası üretir; eski sürüm kapıdan kutuya düşer', () => {
+    expect(resolveDeepLink({ target: 'app_update' })).toEqual({
+      route: 'store',
+      webPath: '/',
+      minAppVersion: '2.1.0',
+    });
+    expect(webPathFromRoute('store')).toBe('/');
+  });
   it('bozuk parametreyi reddeder', () => {
     expect(() => resolveDeepLink({ target: 'exam_result', params: { sessionId: 'x' } })).toThrow();
   });

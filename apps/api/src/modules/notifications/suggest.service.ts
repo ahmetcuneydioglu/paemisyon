@@ -5,6 +5,32 @@ import { CATEGORY_POLICY } from './notification.categories';
 import { BODY_MAX, TEMPLATE_VARIABLES, templateWarnings, TITLE_MAX } from './template';
 
 const MODEL = 'claude-sonnet-5-5';
+/** Ret (refusal) olursa sunucu tarafında aynı istek bu modelle yeniden koşar. */
+const FALLBACK_MODEL = 'claude-sonnet-5';
+/**
+ * Sonnet 5.5'te düşünme hep açıktır ve düşünme jetonları `max_tokens`'tan yer. 800 sınırında
+ * düşünme ~550–700 jeton tutuyor, JSON yarıda kesiliyordu (stop_reason=max_tokens → "çözümlenemedi";
+ * 19 Kas 2026). Sınır yalnız tavan; kullanılan kadar ödenir.
+ */
+const MAX_TOKENS = 16000;
+
+/** Yapılandırılmış çıktı şeması: yanıt bu JSON'a uymak zorunda (serbest metin ayrıştırması yok). */
+const SUGGESTION_SCHEMA = {
+  type: 'object',
+  properties: {
+    suggestions: {
+      type: 'array',
+      items: {
+        type: 'object',
+        properties: { title: { type: 'string' }, body: { type: 'string' } },
+        required: ['title', 'body'],
+        additionalProperties: false,
+      },
+    },
+  },
+  required: ['suggestions'],
+  additionalProperties: false,
+} as const;
 
 export type SuggestInput = {
   category: NotificationCategory;
@@ -53,37 +79,64 @@ export class SuggestService {
       'Yasak kalıplar: "seni özledik", "geri dön", "fırsatları kaçırma", "kaçırma!". Suçlayıcı ya da baskı kuran dil yok.',
       `Başlık en çok ${TITLE_MAX} karakter, gövde en çok ${BODY_MAX} karakter; eylem imalı, somut (sayı/konu varsa kullan).`,
       `Kullanılabilir değişkenler (çift süslü parantezle): ${TEMPLATE_VARIABLES.map((v) => `{{${v}}}`).join(' ')}. Gerekmiyorsa kullanma.`,
-      `YALNIZ JSON döndür: [{"title": "...", "body": "..."}, ...] — tam ${n} öneri, başka metin yok.`,
+      `Tam ${n} öneri ver; her biri ayrı bir yaklaşım olsun.`,
     ].join('\n');
     const user = [
       `Kategori: ${policy.label} (${input.category}).`,
       `Amaç: ${input.goal.trim()}`,
       input.draft?.title || input.draft?.body
-        ? `Mevcut taslak — başlık: "${input.draft.title ?? ''}", gövde: "${input.draft.body ?? ''}". Bunu geliştir, farklı ${n} seçenek ver.`
+        ? `Mevcut taslak — başlık: "${input.draft.title ?? ''}", gövde: "${input.draft.body ?? ''}". Taslağı temel al ama kopyalama.`
         : '',
+      // Taslak varken model "geliştir"i tek sürüm diye okuyup 1 öneri dönüyordu (19 Kas 2026).
+      `suggestions dizisine tam ${n} öğe yaz: ${n} ayrı başlık+gövde çifti, her biri farklı bir yaklaşım.`,
     ]
       .filter(Boolean)
       .join('\n');
-    let text = '';
+    let res: Anthropic.Beta.BetaMessage;
     try {
-      const res = await this.client.messages.create({
+      res = await this.client.beta.messages.create({
         model: MODEL,
-        max_tokens: 800,
+        max_tokens: MAX_TOKENS,
+        // Kısa metin işi: derin düşünme gerekmiyor, panel yanıtı beklerken gecikme düşük kalsın.
+        output_config: {
+          effort: 'low',
+          format: { type: 'json_schema', schema: SUGGESTION_SCHEMA },
+        },
+        betas: ['server-side-fallback-2026-06-01'],
+        fallbacks: [{ model: FALLBACK_MODEL }],
         system,
         messages: [{ role: 'user', content: user }],
       });
-      text = res.content
-        .filter((b): b is Anthropic.TextBlock => b.type === 'text')
-        .map((b) => b.text)
-        .join('\n')
-        .trim();
     } catch (e) {
+      if (e instanceof Anthropic.RateLimitError) {
+        this.logger.warn(`AI öneri hız sınırına takıldı: ${e.message}`);
+        throw new ServiceUnavailableException(
+          'AI önerisi yoğunluk nedeniyle bekliyor; bir dakika sonra tekrar dene.',
+        );
+      }
       this.logger.error(`AI öneri üretilemedi: ${String(e)}`);
       throw new ServiceUnavailableException('AI önerisi şu an üretilemiyor; birazdan tekrar dene.');
     }
+    if (res.stop_reason === 'refusal') {
+      this.logger.warn(`AI öneri reddedildi: ${res.stop_details?.category ?? '—'}`);
+      throw new ServiceUnavailableException(
+        'AI bu amaç için öneri üretmedi; amacı farklı ifade edip tekrar dene.',
+      );
+    }
+    if (res.stop_reason === 'max_tokens') {
+      this.logger.error(`AI öneri jeton sınırında kesildi: ${JSON.stringify(res.usage)}`);
+      throw new ServiceUnavailableException('AI önerisi yarıda kesildi; tekrar dene.');
+    }
+    const text = res.content
+      .filter((b): b is Anthropic.Beta.BetaTextBlock => b.type === 'text')
+      .map((b) => b.text)
+      .join('')
+      .trim();
     const parsed = this.parse(text);
-    if (parsed.length === 0)
+    if (parsed.length === 0) {
+      this.logger.error(`AI öneri çözümlenemedi (stop=${res.stop_reason}): ${text.slice(0, 300)}`);
       throw new ServiceUnavailableException('AI önerisi çözümlenemedi; tekrar dene.');
+    }
     return parsed.slice(0, n).map((p) => {
       const warnings = templateWarnings(p.title, p.body);
       return {
@@ -94,11 +147,10 @@ export class SuggestService {
     });
   }
 
+  /** Şemalı çıktı `{ suggestions: [...] }`; yine de alanlar tek tek doğrulanır (boş metin elenir). */
   private parse(text: string): { title: string; body: string }[] {
-    const m = text.match(/\[[\s\S]*\]/);
-    if (!m) return [];
     try {
-      const arr = JSON.parse(m[0]) as unknown;
+      const arr = (JSON.parse(text) as { suggestions?: unknown } | null)?.suggestions;
       if (!Array.isArray(arr)) return [];
       return arr
         .filter(

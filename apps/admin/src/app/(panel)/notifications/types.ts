@@ -123,7 +123,8 @@ export const TARGET_LABEL: Record<string, string> = {
   home: 'Bugün (uygulamayı aç)', daily_question: 'Günün sorusu', question: 'Tek soru', exams: 'Denemeler listesi', exam: 'Deneme',
   exam_result: 'Deneme sonucu', leaderboard: 'Sıralama', review: 'Yanlış tekrarı', library: 'Kütüphane', legislation: 'Kanun metni',
   past_exam: 'Çıkmış sınavlar', statistics: 'Performans', plan: 'Planım', badges: 'Rozetler', membership: 'Üyelik',
-  notifications: 'Bildirimler', settings_notifications: 'Bildirim tercihleri',
+  notifications: 'Bildirimler', settings_notifications: 'Bildirim tercihleri', flashcards: 'Bilgi kartları',
+  app_update: 'Mağaza — uygulama güncellemesi (iOS App Store / Google Play)',
 };
 
 export const fmtDate = (iso: string | null | undefined) =>

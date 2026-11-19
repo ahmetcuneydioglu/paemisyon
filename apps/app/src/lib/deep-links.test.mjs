@@ -1,6 +1,6 @@
 import assert from "node:assert/strict";
 import { test } from "node:test";
-import { routeFromUrl, routeToHref } from "./deep-links.ts";
+import { isStoreRoute, routeFromUrl, routeToHref } from "./deep-links.ts";
 
 test("push route sözlüğü", () => {
   assert.equal(routeToHref("daily-quiz").pathname, "/seans");
@@ -43,4 +43,14 @@ test("bildirim evrensel bağlantısı", () => {
   assert.equal(routeFromUrl("https://paemisyon.com/bildirim"), "");
   assert.equal(routeFromUrl("https://evil.com/bildirim?git=x"), null);
   assert.equal(routeFromUrl("https://paemisyon.com/bugun"), null);
+});
+
+test("mağaza rotası (uygulama güncellemesi) ekran değil", () => {
+  assert.equal(isStoreRoute("store"), true);
+  assert.equal(isStoreRoute(" store "), true);
+  assert.equal(isStoreRoute("/store"), false);
+  assert.equal(isStoreRoute(""), false);
+  assert.equal(isStoreRoute(null), false);
+  // Tanımayan yol yine Bugün'e düşer; mağaza kararı routeToHref'ten önce verilir.
+  assert.equal(routeToHref("store").pathname, "/(tabs)");
 });

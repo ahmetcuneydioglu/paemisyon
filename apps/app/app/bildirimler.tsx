@@ -1,22 +1,22 @@
 import { Stack, useRouter } from "expo-router";
 import { BellOff, Settings2 } from "lucide-react-native";
 import { useCallback, useMemo, useState } from "react";
-import { Alert, Linking, Platform, RefreshControl, SectionList, View } from "react-native";
+import { Alert, Linking, RefreshControl, SectionList, View } from "react-native";
 import { NotificationRow } from "@/components/domain";
 import { AppText, Button, Chip, EmptyState, IconButton, Notice, Skeleton } from "@/components/ui";
 import { groupInbox, needsUpdate, recordNotificationEvent, useInbox, useReadAll, type InboxItem } from "@/features/notifications/queries";
-import { routeToHref } from "@/lib/deep-links";
+import { storeUrl } from "@/lib/app-meta";
+import { isStoreRoute, routeToHref } from "@/lib/deep-links";
 import { useStackOptions } from "@/navigation/stack-options";
 import { useTheme } from "@/theme/ThemeProvider";
-
-const STORE_URL = Platform.OS === "android" ? "https://play.google.com/store/apps/details?id=com.paemisyon.paemisyon" : "https://apps.apple.com/tr/app/paemisyon/id6802087692";
 
 /**
  * Bildirimler (Doc 52 §9, Figma 51:5): Tümü · Okunmamış süzgeci, gün grupları (Bugün · Dün ·
  * Bu hafta · Daha önce), "Tümünü okundu say", aşağı kaydırınca imleçli devam. Görünen satır
  * okunmuş sayılmaz; okuma dokunuşla (`clicked` → readAt) ya da toplu düğmeyle. Hedefi bu
  * sürümün tanımadığı bildirim (`minAppVersion`) satırda "Güncelleme gerekli" taşır, dokununca
- * mağazaya yönlendirir. Kök yığında açılır; sekme çubuğu görünmez.
+ * mağazaya yönlendirir; `store` rotalı (uygulama güncellemesi) bildirim de doğrudan mağazayı açar.
+ * Kök yığında açılır; sekme çubuğu görünmez.
  */
 export default function BildirimlerScreen() {
   const router = useRouter();
@@ -38,11 +38,16 @@ export default function BildirimlerScreen() {
       if (needsUpdate(item)) {
         Alert.alert("Güncelleme gerekli", "Bu bildirimin açtığı ekran uygulamanın yeni sürümünde. Mağazadan güncelleyip tekrar dene.", [
           { text: "Sonra" },
-          { text: "Mağazayı aç", onPress: () => void Linking.openURL(STORE_URL) },
+          { text: "Mağazayı aç", onPress: () => void Linking.openURL(storeUrl()) },
         ]);
         return;
       }
       void recordNotificationEvent(item.id, "clicked", "inbox");
+      // Uygulama güncellemesi bildirimi: ekran değil, bu platformun mağazası.
+      if (isStoreRoute(item.route)) {
+        void Linking.openURL(storeUrl());
+        return;
+      }
       router.push(routeToHref(item.route) as never);
     },
     [router],

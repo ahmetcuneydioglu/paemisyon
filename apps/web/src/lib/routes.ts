@@ -53,6 +53,8 @@ export function bildirimRotasi(git: string | null | undefined): string {
   if (r === "daily-quiz") return "/seans?mode=daily&source=notif";
   if (r === "denemeler") return "/denemeler";
   if (r === "leaderboard") return "/liderlik";
+  // Uygulama güncellemesi (mobilde mağaza açar): web'de iki mağaza rozetinin olduğu ana sayfa.
+  if (r === "store") return "/";
   const sonuc = r.match(/^deneme-sonuc\/([0-9a-fA-F-]{36})$/);
   if (sonuc) return `/sonuc/${sonuc[1]}`;
   const soru = r.match(/^question:(.+)$/);
