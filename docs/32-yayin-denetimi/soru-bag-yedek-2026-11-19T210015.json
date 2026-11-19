@@ -1,0 +1,147 @@
+[
+ {
+  "plan": {
+   "soru": "5e57ed04",
+   "articleNo": "34",
+   "baglar": [
+    {
+     "mevzuat": "5326",
+     "no": "34",
+     "relation": "primary"
+    },
+    {
+     "mevzuat": "5326",
+     "no": "42/A",
+     "relation": "related"
+    }
+   ],
+   "gerekce": "Tekerrür rejimleri sorusu md 17'ye bağlıydı; md 17'de tekerrür yok. Doğru cevap kumar kabahatinde (md 34) tekerrür hükmü bulunmamasına dayanıyor; A şıkkı md 42/A. 4207 md 5/16 iddiası resmî metinden doğrulandı."
+  },
+  "onceki": {
+   "id": "5e57ed04-eee9-48df-8380-116950f6127c",
+   "articleNo": "17",
+   "topicId": "569628d2-5e1c-4788-ad66-1ef20d9374f6",
+   "currentVersion": {
+    "id": "d254b76e-d9b2-4db1-a371-3effdbf4370b",
+    "status": "published",
+    "stem": "Kolluk uygulamasında farklı kanunlardaki idarî para cezalarının tekerrür rejimleri karşılaştırıldığında aşağıdaki eşleştirmelerden hangisi yanlıştır?",
+    "explanation": "Kabahatler Kanunu'ndaki kumar kabahatinde (m.34) TEKERRÜR HÜKMÜ YOKTUR; aynı kabahatin birden fazla işlenmesinde m.15/2 uyarınca her fiile ayrı ceza verilir ama artırım uygulanmaz. Diğer eşleştirmeler doğrudur ve 2026 uygulama tablosunda kabahat kabahat işlenmiştir: 42/A'da iki kat, 6458'de yarı oranında, 1774 Ek 1'de son cezanın iki katı, 4207'de kademeli bir kat/iki kat artırım."
+   },
+   "articles": [
+    {
+     "lawArticleId": "839aac44-d3b7-4e48-8a55-6c4f9280671f",
+     "relation": "primary",
+     "source": "legacy_article_no",
+     "lawArticle": {
+      "articleNo": "17",
+      "legislation": {
+       "number": "5326"
+      }
+     }
+    }
+   ]
+  }
+ },
+ {
+  "plan": {
+   "soru": "d6995095",
+   "baglar": [
+    {
+     "mevzuat": "5237",
+     "no": "217/A",
+     "relation": "primary"
+    },
+    {
+     "mevzuat": "5237",
+     "no": "218",
+     "relation": "related"
+    }
+   ],
+   "gerekce": "Doğru öncül (basın ve yayın yoluyla işlenmesi cezayı artırır) md 218'den geliyor; ikinci bağ eklendi."
+  },
+  "onceki": {
+   "id": "d6995095-4cac-4c87-bed3-ed9fc5212aad",
+   "articleNo": "217/A",
+   "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+   "currentVersion": {
+    "id": "e098834c-597b-4466-abd6-8763e79865ad",
+    "status": "published",
+    "stem": "Halkı yanıltıcı bilgiyi alenen yayma suçuyla ilgili I. Yalnız gerçeğe aykırı bilgiyi alenen yaymak yeterlidir. II. Basın-yayın yoluyla işlenmesi cezayı artırır. III. Suçun oluşması için genel kast yeterlidir. ifadelerinden hangileri doğrudur?",
+    "explanation": "Suç, endişe, korku veya panik yaratma özel saiki gerektirdiğinden genel kast yeterli değildir. Basın-yayın yoluyla işlenme TCK md. 218 kapsamında artırım doğurabilir."
+   },
+   "articles": [
+    {
+     "lawArticleId": "fe655e1b-ab26-4029-8dd7-ebaafe3ab167",
+     "relation": "primary",
+     "source": "legacy_article_no",
+     "lawArticle": {
+      "articleNo": "217/A",
+      "legislation": {
+       "number": "5237"
+      }
+     }
+    }
+   ]
+  }
+ },
+ {
+  "plan": {
+   "soru": "51e1dcb6",
+   "articleNo": "45",
+   "baglar": [
+    {
+     "mevzuat": "5237",
+     "no": "45",
+     "relation": "primary"
+    }
+   ],
+   "gerekce": "Madde etiketi '45-49' aralığıydı, hiçbir maddeye bağlanmıyordu; cezaların türünü sayan md 45'e bağlandı."
+  },
+  "onceki": {
+   "id": "51e1dcb6-4f61-4e3a-9d8a-291ab1789c44",
+   "articleNo": "45-49",
+   "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+   "currentVersion": {
+    "id": "87bb7572-5468-4d86-873d-866a73426703",
+    "status": "published",
+    "stem": "Aşağıdakilerden hangisi 5237 sayılı TCK'da öngörülen yaptırımlardan biri değildir?",
+    "explanation": "5237 sayılı TCK hapis cezasını ağırlaştırılmış müebbet, müebbet ve süreli hapis olarak düzenler; ayrıca adlî para cezası vardır. Eski Kanundaki hafif hapis cezası 5237 sayılı TCK'da bulunmaz."
+   },
+   "articles": []
+  }
+ },
+ {
+  "plan": {
+   "soru": "bff6766d",
+   "aciklama": {
+    "eski": "takvim yılı içinde tekrarda ceza yarı oranında artırılır, itiraz 30 gün içinde idare mahkemesinedir.",
+    "yeni": "takvim yılı içinde tekrarda ceza yarı oranında artırılır (m.102/3); verilen ceza tebliğ tarihinden itibaren otuz gün içinde ödenir (m.102/5)."
+   },
+   "gerekce": "Açıklama md 102/5'teki otuz günlük ÖDEME süresini itiraz süresi diye anlatıyordu; maddede kanun yolu düzenlenmiyor."
+  },
+  "onceki": {
+   "id": "bff6766d-8d5f-4f3a-86d4-fc7bdbad4524",
+   "articleNo": "102",
+   "topicId": "18c6184c-6f45-4501-a075-0614a48ab77e",
+   "currentVersion": {
+    "id": "f8dcf576-473e-42c6-a49d-c6ab7ff9ac03",
+    "status": "published",
+    "stem": "Bir apart işletmecisi, ülkede kanunsuz olarak bulunan yabancılara ücret karşılığı barınma imkânı sağladığı tespit edilmiştir. 6458 sayılı Kanun'un 102 nci maddesi uygulamasına göre bu kişi hakkında aşağıdakilerden hangisi doğrudur?",
+    "explanation": "6458 sayılı Kanun m.102/2'ye göre kanunsuz olarak yabancıların ülkeye girmesine, çıkmasına, seyahatine veya barınmasına imkân sağlayanlara kolluk tarafından idarî para cezası verilir; takvim yılı içinde tekrarda ceza yarı oranında artırılır, itiraz 30 gün içinde idare mahkemesinedir. Fiilin ayrıca TCK m.79 göçmen kaçakçılığı boyutuna ulaşması hâlinde suç hükümleri saklıdır; ancak idarî boyut m.102'de düzenlenmiştir."
+   },
+   "articles": [
+    {
+     "lawArticleId": "632d91d6-ee7d-42ee-91b8-4f07e9573457",
+     "relation": "primary",
+     "source": "legacy_article_no",
+     "lawArticle": {
+      "articleNo": "102",
+      "legislation": {
+       "number": "6458"
+      }
+     }
+    }
+   ]
+  }
+ }
+]

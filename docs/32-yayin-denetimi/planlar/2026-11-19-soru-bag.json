@@ -1,0 +1,55 @@
+[
+ {
+  "soru": "5e57ed04",
+  "articleNo": "34",
+  "baglar": [
+   {
+    "mevzuat": "5326",
+    "no": "34",
+    "relation": "primary"
+   },
+   {
+    "mevzuat": "5326",
+    "no": "42/A",
+    "relation": "related"
+   }
+  ],
+  "gerekce": "Tekerrür rejimleri sorusu md 17'ye bağlıydı; md 17'de tekerrür yok. Doğru cevap kumar kabahatinde (md 34) tekerrür hükmü bulunmamasına dayanıyor; A şıkkı md 42/A. 4207 md 5/16 iddiası resmî metinden doğrulandı."
+ },
+ {
+  "soru": "d6995095",
+  "baglar": [
+   {
+    "mevzuat": "5237",
+    "no": "217/A",
+    "relation": "primary"
+   },
+   {
+    "mevzuat": "5237",
+    "no": "218",
+    "relation": "related"
+   }
+  ],
+  "gerekce": "Doğru öncül (basın ve yayın yoluyla işlenmesi cezayı artırır) md 218'den geliyor; ikinci bağ eklendi."
+ },
+ {
+  "soru": "51e1dcb6",
+  "articleNo": "45",
+  "baglar": [
+   {
+    "mevzuat": "5237",
+    "no": "45",
+    "relation": "primary"
+   }
+  ],
+  "gerekce": "Madde etiketi '45-49' aralığıydı, hiçbir maddeye bağlanmıyordu; cezaların türünü sayan md 45'e bağlandı."
+ },
+ {
+  "soru": "bff6766d",
+  "aciklama": {
+   "eski": "takvim yılı içinde tekrarda ceza yarı oranında artırılır, itiraz 30 gün içinde idare mahkemesinedir.",
+   "yeni": "takvim yılı içinde tekrarda ceza yarı oranında artırılır (m.102/3); verilen ceza tebliğ tarihinden itibaren otuz gün içinde ödenir (m.102/5)."
+  },
+  "gerekce": "Açıklama md 102/5'teki otuz günlük ÖDEME süresini itiraz süresi diye anlatıyordu; maddede kanun yolu düzenlenmiyor."
+ }
+]

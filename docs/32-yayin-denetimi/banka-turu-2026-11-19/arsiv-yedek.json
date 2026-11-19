@@ -1,0 +1,266 @@
+[
+ {
+  "sinif": "bozuk",
+  "gerekce": "TCK 123/A öncüllü soru (fa9b6728): IV. öncül 'belirli bir saikle işlenir' doğru sayılmış; md 123/A saik aramıyor (genel kast). I ve II de yanlış olduğundan doğru cevap 'Yalnız III' şıklarda yok. Kullanıcı onayı 19 Kas 2026.",
+  "arsivlenen": {
+   "id": "10f9a2df-4b50-4bcd-bf5c-b9119ff49431",
+   "questionId": "fa9b6728-fc6a-4e86-b253-9914165c52dc",
+   "stem": "I. Suçun hukuksal konusu bireyin maddi ve manevi kişiliği ile vücut bütünlüğüdür.\nII. Suçun oluşması için ısrarla bir kimseye telefon edilmesi, gürültü yapılması veya hukuka aykırı başka davranışta bulunulması gerekir.\nIII. Genel bir suçtur; herkes fail veya mağdur olabilir.\nIV. Belirli bir saikle işlenir.\nIsrarlı takip suçu hakkında hangileri doğrudur?",
+   "explanation": "Israrlı takip TCK md. 123/A'da fiziken takip veya haberleşme araçları ve üçüncü kişiler kullanılarak temas kurmaya çalışma biçiminde düzenlenir. Herkes fail veya mağdur olabilir ve mağdurda ciddi huzursuzluk ya da güvenlik endişesi doğurma amacına yönelen özel kast aranır.",
+   "sourceLabel": null,
+   "options": [
+    {
+     "label": "A",
+     "text": "Yalnız II",
+     "isCorrect": false
+    },
+    {
+     "label": "B",
+     "text": "I ve III",
+     "isCorrect": false
+    },
+    {
+     "label": "C",
+     "text": "III ve IV",
+     "isCorrect": true
+    },
+    {
+     "label": "D",
+     "text": "II ve IV",
+     "isCorrect": false
+    },
+    {
+     "label": "E",
+     "text": "II, III ve IV",
+     "isCorrect": false
+    }
+   ],
+   "question": {
+    "articleNo": "123/A",
+    "topic": {
+     "name": "Türk Ceza Kanunu"
+    }
+   }
+  }
+ },
+ {
+  "sinif": "bozuk",
+  "gerekce": "TCK 103 (35fedbf2): fail 17 yaşında, fiil sarkıntılık düzeyinde; md 103/1 bu hâlde soruşturmayı mağdurun, velisinin veya vasisinin şikâyetine bağlıyor ve zihinsel engelli mağdur için istisna tanımıyor. Anahtar 'resen yapılır' madde metnine aykırı. Kullanıcı onayı 19 Kas 2026.",
+  "arsivlenen": {
+   "id": "eaaf4e62-249c-4d01-868d-dd6798a4637c",
+   "questionId": "35fedbf2-bd7a-4a05-a388-8c9ebcb7036d",
+   "stem": "On yedi yaşındaki Ahmet, on altı yaşındaki zihinsel engelli Burak'a cinsel arzularını tatmin etmek için ani dokunuşlarda bulunmuştur. Ahmet hakkında soruşturma ve kovuşturma nasıl yapılır?",
+   "explanation": "Fiilin hukuki anlam ve sonuçlarını algılama yeteneği gelişmemiş çocuğa karşı her türlü cinsel davranış istismardır. Sarkıntılık düzeyindeki fiilde şikâyet şartı yalnız failin çocuk olduğu belirli durumda mağdurun rızaya ehil olmasıyla bağlantılıdır; zihinsel engelli mağdur bakımından soruşturma RESEN yürütülür.",
+   "sourceLabel": null,
+   "options": [
+    {
+     "label": "A",
+     "text": "Burak'ın şikâyeti gerekir",
+     "isCorrect": false
+    },
+    {
+     "label": "B",
+     "text": "Burak'ın velisinin şikâyeti gerekir",
+     "isCorrect": false
+    },
+    {
+     "label": "C",
+     "text": "Resen yapılır; şikâyet aranmaz",
+     "isCorrect": true
+    },
+    {
+     "label": "D",
+     "text": "Ahmet'in yaşı nedeniyle soruşturma yapılamaz",
+     "isCorrect": false
+    },
+    {
+     "label": "E",
+     "text": "Yalnız sağlık bozulursa resen yapılır",
+     "isCorrect": false
+    }
+   ],
+   "question": {
+    "articleNo": "103",
+    "topic": {
+     "name": "Türk Ceza Kanunu"
+    }
+   }
+  }
+ },
+ {
+  "sinif": "bozuk",
+  "gerekce": "6458 md 102 (b178c67d): anahtar 'karara karşı 30 gün içinde idare mahkemesine başvurulabilir'. Md 102/5'teki otuz gün ÖDEME süresidir; maddede kanun yolu düzenlenmiyor. Doğru şık yok. Kullanıcı onayı 19 Kas 2026.",
+  "arsivlenen": {
+   "id": "4ed51f6a-a9d9-4f15-a2bc-2034615e3e13",
+   "questionId": "b178c67d-3862-4b54-b2be-c97565ecc70d",
+   "stem": "6458 sayılı Yabancılar ve Uluslararası Koruma Kanunu uygulamasında, Türkiye'ye yasa dışı giren bir yabancı hakkında düzenlenen idarî para cezasıyla ilgili aşağıdakilerden hangisi doğrudur?",
+   "explanation": "6458 sayılı Kanun m.102 kapsamındaki kabahatlerde (yasa dışı giriş-çıkış ve teşebbüs, giriş yasağını ihlal, süresinde ayrılmama, idarî gözetimden kaçma vb.) idarî para cezasını KOLLUK verir; kanun yolu ise Kabahatler Kanunu'nun genel rejiminden ayrılır — 30 GÜN içinde İDARE MAHKEMESİNE başvurulur ve ödeme süresi de 30 gündür. Sulh ceza / 15 gün rejimi burada geçerli değildir.",
+   "sourceLabel": "Özgün soru · 6458 SK m.102 · 2026 İPC uygulama tablosu",
+   "options": [
+    {
+     "label": "A",
+     "text": "Cezayı kolluk verir; karara karşı 30 gün içinde idare mahkemesine başvurulabilir",
+     "isCorrect": true
+    },
+    {
+     "label": "B",
+     "text": "Cezayı mülkî amir verir; karara karşı 15 gün içinde sulh ceza mahkemesine başvurulabilir",
+     "isCorrect": false
+    },
+    {
+     "label": "C",
+     "text": "Cezayı vali verir; karar kesindir, kanun yolu kapalıdır",
+     "isCorrect": false
+    },
+    {
+     "label": "D",
+     "text": "Cezayı Göç İdaresi Başkanlığı verir; karara karşı Danıştaya başvurulur",
+     "isCorrect": false
+    },
+    {
+     "label": "E",
+     "text": "Bu fiil kabahat değil suç olduğundan idarî para cezası verilemez",
+     "isCorrect": false
+    }
+   ],
+   "question": {
+    "articleNo": "102",
+    "topic": {
+     "name": "6458 Sayılı Yabancılar ve Uluslararası Koruma Kanunu"
+    }
+   }
+  }
+ },
+ {
+  "sinif": "yigilma",
+  "gerekce": "TCK 103 (169890d0): 801fb1e2 ile aynı kurgu ve aynı şıklar; bu kopyada 'yardım edeceğini söyleyerek zorlamıştır' ifadesi tehdit değil vaat anlatıyor, kurgu anahtarı taşımıyor. Öğretici olan 801fb1e2 bırakıldı. Kullanıcı onayı 19 Kas 2026.",
+  "arsivlenen": {
+   "id": "2c2e4a54-25e0-4d12-8d27-a30633c80404",
+   "questionId": "169890d0-8681-4a3a-a01d-3ac8e27bb80d",
+   "stem": "On altı yaşındaki Ahmet'in ceza infaz kurumunda bulunduğu sırada gardiyan Cem, tahliye için koşullu salıverme istemi hakkında yardım edeceğini söyleyerek Ahmet'i cinsel ilişkiye zorlamıştır. Cem'in sorumluluğu hakkında hangisi doğrudur?",
+   "explanation": "On beş yaşını tamamlamış çocuk bakımından cebir, tehdit, hile veya iradeyi etkileyen nedene dayalı cinsel davranış istismardır. Gardiyan kamu görevinin sağladığı nüfuzu ve toplu yaşama ortamının kolaylığını kullandığından nitelikli hâl uygulanır.",
+   "sourceLabel": null,
+   "options": [
+    {
+     "label": "A",
+     "text": "Çocukların cinsel istismarının nitelikli şekli ile tehdit suçlarından sorumludur",
+     "isCorrect": false
+    },
+    {
+     "label": "B",
+     "text": "Yalnız çocukların cinsel istismarının basit şeklinden sorumludur",
+     "isCorrect": false
+    },
+    {
+     "label": "C",
+     "text": "Yalnız reşit olmayanla cinsel ilişkiden sorumludur",
+     "isCorrect": false
+    },
+    {
+     "label": "D",
+     "text": "Reşit olmayanla cinsel ilişki ve tehditten sorumludur",
+     "isCorrect": false
+    },
+    {
+     "label": "E",
+     "text": "Yalnız çocukların cinsel istismarının nitelikli şeklinden sorumludur",
+     "isCorrect": true
+    }
+   ],
+   "question": {
+    "articleNo": "103",
+    "topic": {
+     "name": "Türk Ceza Kanunu"
+    }
+   }
+  }
+ },
+ {
+  "sinif": "yigilma",
+  "gerekce": "TCK 103 (167541ad): 25d16b8d ile aynı soru (aynı beş ifade, aynı anahtar); açıklaması daha zayıf olan arşivlendi. Kullanıcı onayı 19 Kas 2026.",
+  "arsivlenen": {
+   "id": "533af983-ce4d-4794-a915-a0f010d54666",
+   "questionId": "167541ad-f5f6-4201-b994-183a1b734454",
+   "stem": "Çocukların cinsel istismarı suçu hakkında aşağıdaki ifadelerden hangisi yanlıştır?",
+   "explanation": "Güncel TCK md. 103'te mağdurun beden veya ruh sağlığının bozulması artık neticesi sebebiyle ağırlaşmış hâl olarak yer almaz. Bitkisel hayat veya ölüm sonucu ile ağır netice doğuran cebir ve şiddet ayrıca düzenlenmiştir.",
+   "sourceLabel": null,
+   "options": [
+    {
+     "label": "A",
+     "text": "Mağdurun beden veya ruh sağlığının bozulması suçun sonucu nedeniyle ağırlaşmış şekillerinden biridir",
+     "isCorrect": true
+    },
+    {
+     "label": "B",
+     "text": "Cebir ve şiddet kasten yaralamanın ağır sonuçlarına yol açarsa ayrıca yaralama hükümleri uygulanır",
+     "isCorrect": false
+    },
+    {
+     "label": "C",
+     "text": "Soruşturma ve kovuşturma resen yapılır",
+     "isCorrect": false
+    },
+    {
+     "label": "D",
+     "text": "Sarkıntılık düzeyindeki suçun faili çocuksa soruşturma belirli şartlarla şikâyete bağlıdır",
+     "isCorrect": false
+    },
+    {
+     "label": "E",
+     "text": "Çocuklara karşı üstsoy veya nüfuz sahibi kişilerce işlenen suçlarda zamanaşımı çocuğun on sekiz yaşını bitirdiği günden başlar",
+     "isCorrect": false
+    }
+   ],
+   "question": {
+    "articleNo": "103",
+    "topic": {
+     "name": "Türk Ceza Kanunu"
+    }
+   }
+  }
+ },
+ {
+  "sinif": "bozuk",
+  "gerekce": "TCK 103 (4dd5c226): 'hangisi neticesi sebebiyle ağırlaşmış hâl değildir' kökünde A (organ işlev yitimi) ve E (yaşamsal tehlike) de md 103'te ağırlaşmış hâl olarak sayılmıyor; yalnız md 103/5'in kasten yaralamaya yollamasıyla ayrıca cezalandırılıyor. İki cevap riski. Aynı bilgi 25d16b8d'de ölçülüyor. Kullanıcı onayı 19 Kas 2026.",
+  "arsivlenen": {
+   "id": "cbbe01a3-efd1-4848-b3e8-7cfbb0f2b746",
+   "questionId": "4dd5c226-38fc-4a78-9c29-ffd9cb0f79e4",
+   "stem": "5237 sayılı TCK'ya göre aşağıdakilerden hangisi çocukların cinsel istismarı suçunun sonucu nedeniyle ağırlaşmış şekillerinden biri değildir?",
+   "explanation": "Güncel TCK md. 103'te mağdurun beden veya ruh sağlığının bozulması özel ağırlaştırıcı sonuç olarak yer almaz. Bitkisel hayat veya ölüm doğrudan md. 103/6'da; cebir ve şiddetin ağır yaralama sonuçları ise md. 103/5'in yollamasıyla ayrıca cezalandırılır.",
+   "sourceLabel": null,
+   "options": [
+    {
+     "label": "A",
+     "text": "Mağdurun organlarından birinin işlevini yitirmesi",
+     "isCorrect": false
+    },
+    {
+     "label": "B",
+     "text": "Mağdurun beden veya ruh sağlığının bozulması",
+     "isCorrect": true
+    },
+    {
+     "label": "C",
+     "text": "Mağdurun bitkisel yaşama girmesi",
+     "isCorrect": false
+    },
+    {
+     "label": "D",
+     "text": "Suç sonucu mağdurun ölmesi",
+     "isCorrect": false
+    },
+    {
+     "label": "E",
+     "text": "Mağdurun yaşamsal tehlike geçirmesi",
+     "isCorrect": false
+    }
+   ],
+   "question": {
+    "articleNo": "103",
+    "topic": {
+     "name": "Türk Ceza Kanunu"
+    }
+   }
+  }
+ }
+]
