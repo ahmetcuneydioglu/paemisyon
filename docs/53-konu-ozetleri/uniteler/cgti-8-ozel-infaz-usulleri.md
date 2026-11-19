@@ -86,7 +86,7 @@ Karara kimin yol açtığını da karıştırma. Hâkim kendiliğinden karar ver
 - **Altı ay**, doğumdan sonra **geçmiş olması gereken** süredir. Konutta infaz kararı ancak bu süre dolunca verilebilir.
 - **Bir yıl altı ay**, **geçmemiş olması gereken** süredir. Talep bu süre dolmadan yapılmalıdır.
 
-Ceza sınırını da karıştırma. Doğum yapmış kadın hükümlüde sınır toplam beş yıldır. 110(2)'de kadınlar için öngörülen sınır ise toplam üç yıldır.
+Ceza sınırını da karıştırma. Doğum yapmış kadın hükümlüde sınır toplam beş yıldır. Md 110'un ikinci fıkrasında kadınlar için öngörülen sınır ise toplam üç yıldır.
 
 ## Kural · Özel infaz usullerinde ortak hükümler
 
