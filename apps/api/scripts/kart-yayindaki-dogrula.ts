@@ -26,7 +26,8 @@ const prisma = new PrismaClient({ datasources: { db: { url } } });
   try {
     for (const no of nolar) {
       const leg = await prisma.legislation.findFirst({
-        where: { deletedAt: null, number: no },
+        // Sayı ise kanun numarası; değilse ad başı (numarasız yönetmelikler için — dipnot betiğiyle aynı kural).
+        where: /^\d+$/.test(no) ? { deletedAt: null, number: no } : { deletedAt: null, name: { startsWith: no } },
         select: { id: true, name: true },
       });
       if (!leg) {
