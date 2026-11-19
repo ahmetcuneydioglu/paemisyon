@@ -23,6 +23,7 @@ import { PrismaClient } from '@prisma/client';
 import { readFileSync, writeFileSync, appendFileSync } from 'fs';
 import { join } from 'path';
 import { articleSortKey } from '../src/modules/admin/law-articles/law-text-parser';
+import { vurguEsle } from './lib/vurgu-esle';
 import { kaynakGetir, temizle } from './lib/mevzuat-kaynak';
 
 const base = process.env.DATABASE_URL!;
@@ -103,6 +104,13 @@ type Plan = { mevzuat: string; guncelle?: string[]; ekle?: string[]; effectiveIn
     for (const x of islemler) {
       if (x.tur === 'guncelle') {
         await tx.lawArticle.update({ where: { id: x.id }, data: { text: x.yeni, effectiveInfo: `${x.effectiveInfo} (mevzuat.gov.tr konsolide metni, ${gun})`, lastVerifiedAt: simdi, sourceUrl: x.kaynakUrl } });
+        // Kullanıcı vurguları konumla saklanır; metin değişince yeni metne taşınır (19 Kas 2026: taşınmadığı için
+        // 3201 md 55'te vurgular kaymıştı). Yeni metinde karşılığı kalmayan vurgu olduğu yerde bırakılır ve bildirilir.
+        for (const h of await tx.articleHighlight.findMany({ where: { lawArticleId: x.id }, select: { id: true, startOffset: true, endOffset: true, snippet: true } })) {
+          const e = vurguEsle(h, x.eski ?? '', x.yeni);
+          if (e) await tx.articleHighlight.update({ where: { id: h.id }, data: e });
+          else console.log(`  ! ${x.mevzuat} md ${x.no}: vurgu yeni metinde bulunamadı («${h.snippet.slice(0, 50)}»)`);
+        }
       } else {
         await tx.lawArticle.create({ data: {
           topicId: x.topicId!, legislationId: x.legId, sectionId: x.sectionId, articleNo: x.no, title: x.baslik, text: x.yeni,

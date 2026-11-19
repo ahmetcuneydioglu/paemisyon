@@ -20,11 +20,12 @@
  * eski satırlar yedeğe alınır, her yazım `mevzuat-tazeleme.jsonl` defterine düşer.
  *
  *   npx tsx scripts/mevzuat-dipnot-temizle.ts <kanun-no|ad başı> [--rapor <dosya.md>]   (kuru)
- *   npx tsx scripts/mevzuat-dipnot-temizle.ts <kanun-no|ad başı> --yaz [--beklenen <A sayısı, hariç düşülmüş>] [--haric <md,md>]
+ *   npx tsx scripts/mevzuat-dipnot-temizle.ts <kanun-no|ad başı> --yaz [--beklenen <A sayısı, hariç düşülmüş, elle dahil>] [--haric <md,md>] [--elle <md,md>]
  */
 import { PrismaClient } from '@prisma/client';
 import { writeFileSync, appendFileSync } from 'fs';
 import { join } from 'path';
+import { vurguEsle } from './lib/vurgu-esle';
 import { kaynakGetir, temizle } from './lib/mevzuat-kaynak';
 
 const base = process.env.DATABASE_URL!;
@@ -113,24 +114,6 @@ function yapisikNumara(x: string): boolean {
 }
 
 /** Vurgu ofsetlerini yeni metinde snippet arayarak yeniden hesaplar. */
-function vurguEsle(h: { startOffset: number; endOffset: number; snippet: string }, eski: string, yeni: string) {
-  // Önce eski metindeki vurgulu kısmın TAMAMI (snippet 500 karakterde kesilebiliyor, PVSK md 20), dipnot
-  // numarası düşürülmüş hâliyle; bulunamazsa snippet.
-  const tam = eski.slice(h.startOffset, h.endOffset).replace(/([.;:,)”"…])\d{1,3}(?=\s|$)/g, '$1');
-  return vurguAra(tam, h.startOffset, eski, yeni) ?? vurguAra(h.snippet, h.startOffset, eski, yeni);
-}
-
-function vurguAra(parca: string, startOffset: number, eski: string, yeni: string) {
-  const kel = parca.trim().split(/\s+/).map((w) => w.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'));
-  if (!kel.length || !kel[0]) return null;
-  const re = new RegExp(kel.join('\\s+'), 'g');
-  const adaylar = [...yeni.matchAll(re)];
-  if (!adaylar.length) return null;
-  const oran = startOffset / Math.max(1, eski.length); // birden çok eşleşmede eski konuma en yakını
-  const m = adaylar.reduce((x, y) => (Math.abs(y.index! / yeni.length - oran) < Math.abs(x.index! / yeni.length - oran) ? y : x));
-  return { startOffset: m.index!, endOffset: m.index! + m[0].length };
-}
-
 (async () => {
   const hedef = process.argv[2];
   if (!hedef || hedef.startsWith('--')) throw new Error('kullanım: … <kanun-no|ad başı> [--rapor dosya.md] [--yaz]');
@@ -228,6 +211,20 @@ function vurguAra(parca: string, startOffset: number, eski: string, yeni: string
   if (!YAZ) { console.log('(KURU ÇALIŞMA — --yaz ile yalnız A sınıfı yazılır)'); return; }
   // Son denetimde şüpheli bulunan maddeler yazımdan çıkarılır: --haric "56,Ek 3"
   const haric = new Set((arg('--haric') ?? '').split(',').map((x) => x.trim()).filter(Boolean));
+  // Elle incelenip onaylanan B maddeleri (tek başına dipnot numarası, yarım dipnot kuyruğu): --elle "5,8,Ek 2".
+  // Kapı gevşemez, yalnız adı verilen madde geçer; vurgusu yeni metne eşlenemeyen madde yine yazılmaz.
+  const elle = new Set((arg('--elle') ?? '').split(',').map((x) => x.trim()).filter(Boolean));
+  for (const x of sonuclar.filter((s) => s.sinif === 'B' && elle.has(s.no) && s.yeni)) {
+    const a = leg.articles.find((y) => y.id === x.id)!;
+    const vs: Sonuc['vurgular'] = [];
+    let ok = true;
+    for (const h of a.highlights) { const e = vurguEsle(h, a.text, x.yeni!); if (e) vs.push({ id: h.id, ...e }); else ok = false; }
+    if (!ok) { console.log(`  ! md ${x.no}: vurgu eşlenemedi — --elle ile de yazılmadı`); continue; }
+    x.vurgular = vs;
+    x.sinif = 'A';
+  }
+  const bulunmayan = [...elle].filter((no) => !sonuclar.some((s) => s.no === no && s.sinif === 'A'));
+  if (bulunmayan.length) throw new Error(`--elle ile verilen madde yazılabilir değil: ${bulunmayan.join(', ')}; hiçbir şey yazılmadı`);
   const yazilacak = sonuclar.filter((x) => x.sinif === 'A' && !haric.has(x.no));
   // Kuru rapordan sonra kaynak değişmişse (yeni değişiklik yayımlandı) onaylanan küme bu değildir: yazma.
   const beklenen = arg('--beklenen');
