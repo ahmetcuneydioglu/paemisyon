@@ -193,3 +193,7 @@ Dışarıda kalan 2 soru: 2911 Geçici 1 (madde etiketi şüpheli, banka işi) v
 Banka notları: 2575 md 19/A metni bankada yalnız birinci fıkra (seçen organ, görev süresi, toplanma usulü yok;
 sorunun doğru şıkkındaki "Genel Kurulunca seçilen" unsuru bu yüzden kartta yok); 5682 Ek 2 başlık alanı önceki
 maddenin dipnot artığı.
+
+**Sonuç (19 Kas 2026, kullanıcı çalıştırdı):** yedi ünite `--replace` ile yüklendi, toplu yayın 7/7, ilerleme
+dolduruldu. Prod: 195 ünite yayında; maddeli 4.071 sorunun 4.069'u bir üniteye düşüyor (dışarıdaki 2 soru:
+2911 Geçici 1 ve TCK "45-49"). `--replace` premium işaretini korudu (premium betiği 0 değişiklik yazdı).
