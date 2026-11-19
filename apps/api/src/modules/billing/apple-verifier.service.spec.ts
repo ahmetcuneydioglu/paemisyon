@@ -224,10 +224,12 @@ describe('AppleVerifier.verify — imzalı zincir', () => {
   });
 
   it('BULGU 1: issuer adı ara sertifikayla aynı, kendi anahtarıyla imzalı sahte leaf → reddedilir', async () => {
-    // Eski checkIssued denetimi bu zinciri geçiriyordu (yalnız ad karşılaştırır).
-    expect(
-      new X509Certificate(pem('evil-leaf.pem')).checkIssued(new X509Certificate(pem('int.pem'))),
-    ).toBe(true);
+    // Eski checkIssued denetimi bu zinciri geçiriyordu (ad karşılaştırır, imza doğrulamaz). Ön koşul ad eşitliğiyle
+    // sınanır: OpenSSL 3 (CI) sahte leaf'e kendi anahtarının AKID'ini yazar ve checkIssued false döner; LibreSSL
+    // (macOS) yazmaz. Asıl denetim aşağıda: imza doğrulanmadığı için zincir reddedilmeli.
+    expect(new X509Certificate(pem('evil-leaf.pem')).issuer).toBe(
+      new X509Certificate(pem('int.pem')).subject,
+    );
     const jws = await sign(
       tx({ type: 'Non-Consumable', expiresDate: undefined }),
       'evil-leaf.key',
