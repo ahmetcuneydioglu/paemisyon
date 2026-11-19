@@ -91,6 +91,8 @@ export class SuggestDto {
   @IsString() @MinLength(3) @MaxLength(300) goal!: string;
   @IsOptional() @IsObject() draft?: { title?: string; body?: string } | null;
   @IsOptional() @IsInt() @Min(1) @Max(5) count?: number;
+  /** Hedef bir deneme mi: `{{deneme_adi}}` yalnız o zaman dolar, öneri ona göre yazılır. */
+  @IsOptional() @IsBoolean() examLinked?: boolean;
 }
 
 export class CampaignsQueryDto {

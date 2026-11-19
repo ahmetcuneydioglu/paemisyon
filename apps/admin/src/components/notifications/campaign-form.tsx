@@ -174,7 +174,7 @@ export function CampaignForm({ initial, campaignId, isAdmin }: { initial: Campai
   const emailOn = f.channels.includes('email');
   const canSend = f.name.trim().length >= 2 && f.title.trim().length >= 2 && f.body.trim().length >= 2 && !warnings.some((w) => w.code === 'emoji') && (!f.abEnabled || (f.titleB.trim().length >= 2 && f.bodyB.trim().length >= 2 && !EMOJI.test(f.titleB + f.bodyB)));
   const [aiGoal, setAiGoal] = useState('');
-  const suggest = useMutation({ mutationFn: () => api<Suggestion[]>('/admin/notifications/suggest', { method: 'POST', body: { category: f.category, goal: aiGoal, draft: { title: f.title, body: f.body }, count: 3 } }) });
+  const suggest = useMutation({ mutationFn: () => api<Suggestion[]>('/admin/notifications/suggest', { method: 'POST', body: { category: f.category, goal: aiGoal, draft: { title: f.title, body: f.body }, count: 3, examLinked: f.target === 'exam' && f.targetParam.trim() !== '' } }) });
 
   return (
     <div className="space-y-4">
@@ -236,7 +236,7 @@ export function CampaignForm({ initial, campaignId, isAdmin }: { initial: Campai
               ))}
             </div>
           </Field>
-          <Field label="AI metin önerisi" help="Claude yalnız önerir; seçtiğin metin forma yazılır, sen düzenlersin. Emoji ve yasaklı kalıp makinede elenir.">
+          <Field label="AI metin önerisi" help="Claude yalnız önerir; seçtiğin metin forma yazılır, sen düzenlersin. Emoji, yasaklı kalıp ve kampanyada boş gidecek değişken makinede elenir.">
             <div className="flex gap-2">
               <input className={inputCls} placeholder="Amaç: haftalık denemeye katılımı artır" value={aiGoal} onChange={(e) => setAiGoal(e.target.value)} />
               <button type="button" disabled={aiGoal.trim().length < 3 || suggest.isPending} onClick={() => suggest.mutate()} className="whitespace-nowrap rounded-lg border border-slate-300 px-3 py-1.5 text-sm disabled:opacity-50">{suggest.isPending ? 'Yazıyor…' : 'Öner'}</button>

@@ -121,7 +121,7 @@ export type AdminSettings = {
 export type LinkOptions = { targets: { target: string; param: string | null; minAppVersion: string }[]; options: { id: string; label: string }[] };
 export const TARGET_LABEL: Record<string, string> = {
   home: 'Bugün (uygulamayı aç)', daily_question: 'Günün sorusu', question: 'Tek soru', exams: 'Denemeler listesi', exam: 'Deneme',
-  exam_result: 'Deneme sonucu', leaderboard: 'Sıralama', review: 'Yanlış tekrarı', library: 'Kütüphane', legislation: 'Kanun metni',
+  exam_result: 'Deneme sonucu', leaderboard: 'Sıralama', review: 'Yanlış tekrarı', weak_topic: 'Konu alıştırması (10 soru)', library: 'Kütüphane', legislation: 'Kanun metni',
   past_exam: 'Çıkmış sınavlar', statistics: 'Performans', plan: 'Planım', badges: 'Rozetler', membership: 'Üyelik',
   notifications: 'Bildirimler', settings_notifications: 'Bildirim tercihleri', flashcards: 'Bilgi kartları',
   app_update: 'Mağaza — uygulama güncellemesi (iOS App Store / Google Play)',

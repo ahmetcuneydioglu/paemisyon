@@ -2,7 +2,15 @@ import Anthropic from '@anthropic-ai/sdk';
 import { Injectable, Logger, ServiceUnavailableException } from '@nestjs/common';
 import type { NotificationCategory } from '@prisma/client';
 import { CATEGORY_POLICY } from './notification.categories';
-import { BODY_MAX, TEMPLATE_VARIABLES, templateWarnings, TITLE_MAX } from './template';
+import {
+  BODY_MAX,
+  CAMPAIGN_VARIABLES,
+  campaignVariableWarnings,
+  templateWarnings,
+  TITLE_MAX,
+  type TemplateVariable,
+  type TemplateWarning,
+} from './template';
 
 const MODEL = 'claude-sonnet-5-5';
 /** Ret (refusal) olursa sunucu tarafında aynı istek bu modelle yeniden koşar. */
@@ -32,6 +40,32 @@ const SUGGESTION_SCHEMA = {
   additionalProperties: false,
 } as const;
 
+/**
+ * Öneri kampanya formunda yazılır; kampanyada yalnız kitle satırı + ad dolar (`CAMPAIGN_VARIABLES`),
+ * `deneme_adi` da yalnız hedef bir denemeyse. Model 25 değişkenlik tam listeyi görünce olay yükü
+ * değişkenleri ({{zayif_konu}}, {{sure}}…) uyduruyordu ve bunlar kullanıcıya BOŞ gidiyordu (19 Kas 2026).
+ * `link` push/kutu metnine girmez (e-posta düğmesi içindir).
+ */
+export function suggestionVariables(examLinked: boolean): TemplateVariable[] {
+  const vars = [...CAMPAIGN_VARIABLES].filter((v) => v !== 'link');
+  return examLinked ? [...vars, 'deneme_adi'] : vars;
+}
+
+/** Bu kodlardan birini taşıyan öneri forma yazılamaz (panel soluk gösterir, gerekçe satırda). */
+const BLOCKING = new Set(['emoji', 'forbidden', 'unknown_variable', 'no_source']);
+
+export function suggestionCheck(
+  title: string,
+  body: string,
+  examLinked: boolean,
+): { warnings: TemplateWarning[]; blocked: boolean } {
+  const warnings = [
+    ...templateWarnings(title, body),
+    ...campaignVariableWarnings(title, body, examLinked),
+  ];
+  return { warnings, blocked: warnings.some((w) => BLOCKING.has(w.code)) };
+}
+
 export type SuggestInput = {
   category: NotificationCategory;
   /** Editörün amacı: "haftalık denemeye katılımı artır", "sınava 7 gün kala moral" … */
@@ -39,13 +73,15 @@ export type SuggestInput = {
   /** Varsa mevcut taslak; model onu iyileştirir. */
   draft?: { title?: string; body?: string } | null;
   count?: number;
+  /** Kampanyanın hedefi bir deneme mi (`{{deneme_adi}}` yalnız o zaman dolar). */
+  examLinked?: boolean;
 };
 
 export type Suggestion = {
   title: string;
   body: string;
   warnings: { code: string; message: string }[];
-  /** emoji/yasaklı kelime: gönderilemez; panel soluk gösterir. */
+  /** emoji/yasaklı kelime/boş gidecek değişken: forma yazılamaz; panel soluk gösterir. */
   blocked: boolean;
 };
 
@@ -73,12 +109,16 @@ export class SuggestService {
       throw new ServiceUnavailableException('AI önerisi kapalı: ANTHROPIC_API_KEY tanımlı değil.');
     const n = Math.min(Math.max(input.count ?? 3, 1), 5);
     const policy = CATEGORY_POLICY[input.category];
+    const examLinked = input.examLinked === true;
+    const vars = suggestionVariables(examLinked);
     const system = [
       'Sen Paemisyon (polis amirliği sınavına hazırlık uygulaması) için bildirim metni yazan bir editörsün.',
       'Dil: Türkçe, "sen" hitabı, sakin ve meslek dilinde ("nöbet", "devriye", "tur"); abartı yok, ünlem yok, EMOJİ YOK.',
       'Yasak kalıplar: "seni özledik", "geri dön", "fırsatları kaçırma", "kaçırma!". Suçlayıcı ya da baskı kuran dil yok.',
-      `Başlık en çok ${TITLE_MAX} karakter, gövde en çok ${BODY_MAX} karakter; eylem imalı, somut (sayı/konu varsa kullan).`,
-      `Kullanılabilir değişkenler (çift süslü parantezle): ${TEMPLATE_VARIABLES.map((v) => `{{${v}}}`).join(' ')}. Gerekmiyorsa kullanma.`,
+      `Başlık en çok ${TITLE_MAX} karakter, gövde en çok ${BODY_MAX} karakter; eylem imalı ve somut.`,
+      'Somutluğu uydurma veriyle kurma: yalnız amaçta yazan bilgiyi ve aşağıdaki değişkenleri kullan.',
+      `Bu bildirimde yalnız şu değişkenler kişiye göre dolar (çift süslü parantezle): ${vars.map((v) => `{{${v}}}`).join(' ')}.`,
+      'Bu listede olmayan hiçbir {{…}} yazma: kullanıcıya boş gider. Gerekmiyorsa değişken kullanma.',
       `Tam ${n} öneri ver; her biri ayrı bir yaklaşım olsun.`,
     ].join('\n');
     const user = [
@@ -137,14 +177,9 @@ export class SuggestService {
       this.logger.error(`AI öneri çözümlenemedi (stop=${res.stop_reason}): ${text.slice(0, 300)}`);
       throw new ServiceUnavailableException('AI önerisi çözümlenemedi; tekrar dene.');
     }
-    return parsed.slice(0, n).map((p) => {
-      const warnings = templateWarnings(p.title, p.body);
-      return {
-        ...p,
-        warnings,
-        blocked: warnings.some((w) => w.code === 'emoji' || w.code === 'forbidden'),
-      };
-    });
+    return parsed
+      .slice(0, n)
+      .map((p) => ({ ...p, ...suggestionCheck(p.title, p.body, examLinked) }));
   }
 
   /** Şemalı çıktı `{ suggestions: [...] }`; yine de alanlar tek tek doğrulanır (boş metin elenir). */
