@@ -61,7 +61,8 @@ type Satir = { soru: string; articleNo?: string; baglar?: Bag[]; aciklama?: { es
       is.yeniBag = [];
       for (const b of s.baglar) {
         const a = await p.lawArticle.findFirst({
-          where: { deletedAt: null, articleNo: b.no, legislation: { number: b.mevzuat, deletedAt: null } },
+          // Sayı ise kanun numarası; değilse ad başı (numarasız mevzuat: "T.C. Anayasası").
+          where: { deletedAt: null, articleNo: b.no, legislation: /^\d+$/.test(b.mevzuat) ? { number: b.mevzuat, deletedAt: null } : { name: { startsWith: b.mevzuat }, deletedAt: null } },
           select: { id: true, topicId: true },
         });
         if (!a) throw new Error(`${s.soru}: ${b.mevzuat} md ${b.no} bankada yok`);
@@ -107,7 +108,7 @@ type Satir = { soru: string; articleNo?: string; baglar?: Bag[]; aciklama?: { es
         await tx.questionVersion.update({ where: { id: i.q.currentVersion.id }, data: { contentHash: i.yeniSik.hash } });
       }
     }
-  });
+  }, { timeout: 120_000, maxWait: 20_000 }); // 55 soruluk plan varsayılan 5 sn'yi aştı (21 Kas 2026)
   appendFileSync(
     join(D32, 'ilerleme.jsonl'),
     isler.map((i) => JSON.stringify({ id: i.q.currentVersion.id.slice(0, 8), soru: i.q.id.slice(0, 8), sinif: 'duzeltildi', bulgu: `BAĞ/AÇIKLAMA DÜZELTİLDİ — ${i.s.gerekce}`, zaman: simdi.toISOString() })).join('\n') + '\n',

@@ -1,0 +1,46 @@
+[
+ {
+  "sinif": "bozuk",
+  "gerekce": "Anayasa bağsız sorular denetimi (111faccb, 6271 md 8/A): anahtar B kesin yanlış ifade, ancak E şıkkı ('birden fazla aday için yapılan teklifler geçersizdir') kanunda yok; md 8/A-5'e göre ikinci teklif alınmaz, geçersizlik hükmü bulunmaz. İki yanlış ifade riski. Kullanıcı onayı 21 Kas 2026.",
+  "arsivlenen": {
+   "id": "289fded0-46a9-4d83-b411-6521c24490e1",
+   "questionId": "111faccb-320f-4343-b30d-d7f4876989d1",
+   "stem": "Seçmenlerce Cumhurbaşkanı adayı gösterme usulüne ilişkin aşağıdaki ifadelerden hangisi yanlıştır?",
+   "explanation": "Her seçmen yalnız BİR aday için ve BİZZAT teklifte bulunabilir. Kanunda seçmene aday tercihini sonradan değiştirme imkânı tanınmamıştır.",
+   "sourceLabel": null,
+   "options": [
+    {
+     "label": "A",
+     "text": "Her seçmen yalnız bir aday için teklifte bulunabilir.",
+     "isCorrect": false
+    },
+    {
+     "label": "B",
+     "text": "Seçmen, teklif süresi sona ermeden üç gün öncesine kadar aday tercihini değiştirebilir.",
+     "isCorrect": true
+    },
+    {
+     "label": "C",
+     "text": "Başvuru bizzat yapılır.",
+     "isCorrect": false
+    },
+    {
+     "label": "D",
+     "text": "Adaylık teklifi için belirlenen tutar yatırılır.",
+     "isCorrect": false
+    },
+    {
+     "label": "E",
+     "text": "Aynı seçmenin birden fazla aday için yaptığı teklifler geçersizdir.",
+     "isCorrect": false
+    }
+   ],
+   "question": {
+    "articleNo": null,
+    "topic": {
+     "name": "T.C. Anayasası"
+    }
+   }
+  }
+ }
+]
