@@ -10,11 +10,14 @@ import type {
   ExamAdjustment,
   ExamAdjustmentAction,
   ExamAdjustmentPreview,
+  ExamResults,
   ExamStats,
 } from '@/lib/types';
 
 const net = (n: number | null | undefined) => (n == null ? '—' : n.toFixed(2).replace('.', ','));
 const dur = (s: number | null) => (s == null ? '—' : `${Math.floor(s / 60)} dk`);
+const clock = (s: number | null) => (s == null ? '—' : `${Math.floor(s / 60)}:${String(s % 60).padStart(2, '0')}`);
+const RANK_PAGE = 20;
 
 /**
  * Deneme istatistiği ve soru iptali (Doc 50 §2.3, Figma A-istatistik).
@@ -31,8 +34,11 @@ export default function ExamStatsPage() {
   const [reason, setReason] = useState('');
   const [notify, setNotify] = useState(true);
   const [notice, setNotice] = useState<string | null>(null);
+  const [rankAll, setRankAll] = useState(false);
+  const [rankQuery, setRankQuery] = useState('');
 
   const stats = useQuery({ queryKey: ['admin-exam-stats', id], queryFn: () => api<ExamStats>(`/admin/exams/${id}/stats`) });
+  const results = useQuery({ queryKey: ['admin-exam-results', id], queryFn: () => api<ExamResults>(`/admin/exams/${id}/results`) });
   const adjustments = useQuery({
     queryKey: ['admin-exam-adjustments', id],
     queryFn: () => api<ExamAdjustment[]>(`/admin/exams/${id}/adjustments`),
@@ -48,6 +54,7 @@ export default function ExamStatsPage() {
   });
   const invalidate = () => {
     qc.invalidateQueries({ queryKey: ['admin-exam-stats', id] });
+    qc.invalidateQueries({ queryKey: ['admin-exam-results', id] });
     qc.invalidateQueries({ queryKey: ['admin-exam-adjustments', id] });
     qc.invalidateQueries({ queryKey: ['admin-exam', id] });
   };
@@ -93,7 +100,7 @@ export default function ExamStatsPage() {
             <Link href={`/exams/${id}?adim=4`} className="rounded-lg border border-slate-300 px-3 py-1.5 text-sm font-medium hover:bg-slate-50">
               Ayarlar ve sorular
             </Link>
-            <button type="button" onClick={() => stats.refetch()} className="rounded-lg border border-slate-300 px-3 py-1.5 text-sm font-medium hover:bg-slate-50">
+            <button type="button" onClick={() => { stats.refetch(); results.refetch(); }} className="rounded-lg border border-slate-300 px-3 py-1.5 text-sm font-medium hover:bg-slate-50">
               Yenile
             </button>
           </div>
@@ -167,6 +174,8 @@ export default function ExamStatsPage() {
           )}
         </Card>
       </div>
+
+      <RankingCard results={results} all={rankAll} onAll={setRankAll} query={rankQuery} onQuery={setRankQuery} minAnswerPercent={s.summary.minAnswerPercent ?? 20} />
 
       <div className="mb-2 flex flex-wrap items-center justify-between gap-2">
         <h2 className="text-sm font-semibold text-slate-700">Soru analizi</h2>
@@ -351,5 +360,111 @@ function QuestionRow({
         </tr>
       )}
     </>
+  );
+}
+
+/**
+ * Panel sıralaması: adayın gördüğü sıranın aynısı, ama ad ve e-posta açık ve "en az 10 çözüm"
+ * alt sınırı aranmaz. Eksik çözümler sıra almaz, listenin sonunda soluk durur.
+ */
+function RankingCard({
+  results,
+  all,
+  onAll,
+  query,
+  onQuery,
+  minAnswerPercent,
+}: {
+  results: { isPending: boolean; isError: boolean; error: unknown; data?: ExamResults; refetch: () => unknown };
+  all: boolean;
+  onAll: (v: boolean) => void;
+  query: string;
+  onQuery: (v: string) => void;
+  minAnswerPercent: number;
+}) {
+  const d = results.data;
+  const needle = query.trim().toLocaleLowerCase('tr-TR');
+  const matched = (d?.participants ?? []).filter(
+    (p) => !needle || `${p.displayName ?? ''} ${p.email ?? ''}`.toLocaleLowerCase('tr-TR').includes(needle),
+  );
+  const shown = all || needle ? matched : matched.slice(0, RANK_PAGE);
+  return (
+    <div className="mb-6">
+      <div className="mb-2 flex flex-wrap items-center justify-between gap-2">
+        <h2 className="text-sm font-semibold text-slate-700">
+          Sıralama{d ? ` (${d.summary.ranked} resmî çözüm${d.summary.incomplete ? ` · ${d.summary.incomplete} eksik çözüm` : ''})` : ''}
+        </h2>
+        <input
+          type="search"
+          value={query}
+          onChange={(e) => onQuery(e.target.value)}
+          placeholder="Ad ya da e-posta ara"
+          aria-label="Sıralamada ara"
+          className="w-56 rounded-lg border border-slate-300 px-3 py-1.5 text-sm"
+        />
+      </div>
+      <Card className="p-0">
+        {results.isPending ? (
+          <div className="p-6"><Spinner /></div>
+        ) : results.isError ? (
+          <div className="p-4"><ErrorBox error={results.error} onRetry={() => results.refetch()} /></div>
+        ) : (
+          <div className="overflow-x-auto">
+            <table className="w-full min-w-[820px] text-sm">
+              <thead>
+                <tr className="border-b border-slate-100 text-left text-xs text-slate-500">
+                  <th className="px-4 py-3 font-medium">#</th>
+                  <th className="px-3 py-3 font-medium">Aday</th>
+                  <th className="px-3 py-3 text-right font-medium">Net</th>
+                  <th className="px-3 py-3 text-right font-medium">D</th>
+                  <th className="px-3 py-3 text-right font-medium">Y</th>
+                  <th className="px-3 py-3 text-right font-medium">B</th>
+                  <th className="px-3 py-3 text-right font-medium">Süre</th>
+                  <th className="px-3 py-3 font-medium">Teslim</th>
+                </tr>
+              </thead>
+              <tbody className="divide-y divide-slate-50">
+                {shown.length === 0 && (
+                  <tr>
+                    <td colSpan={8} className="px-4 py-8 text-center text-slate-500">
+                      {needle ? 'Aramayla eşleşen aday yok.' : 'Henüz tamamlanan resmî çözüm yok.'}
+                    </td>
+                  </tr>
+                )}
+                {shown.map((p) => (
+                  <tr key={p.userId} className={p.rankEligible ? 'hover:bg-slate-50' : 'bg-slate-50/60 text-slate-400'}>
+                    <td className="px-4 py-2.5 font-semibold tabular-nums">{p.rank ?? '—'}</td>
+                    <td className="px-3 py-2.5">
+                      <div className={p.rankEligible ? 'font-medium text-slate-800' : ''}>{p.displayName || 'Adsız'}</div>
+                      <div className="text-xs text-slate-400">{p.email ?? '—'}</div>
+                    </td>
+                    <td className="px-3 py-2.5 text-right font-semibold tabular-nums">{net(p.score)}</td>
+                    <td className="px-3 py-2.5 text-right tabular-nums">{p.correctCount}</td>
+                    <td className="px-3 py-2.5 text-right tabular-nums">{p.wrongCount}</td>
+                    <td className="px-3 py-2.5 text-right tabular-nums">{p.blankCount}</td>
+                    <td className="px-3 py-2.5 text-right tabular-nums">{clock(p.durationSeconds)}</td>
+                    <td className="px-3 py-2.5 whitespace-nowrap text-xs">
+                      {p.completedAt ? new Date(p.completedAt).toLocaleString('tr-TR', { dateStyle: 'short', timeStyle: 'short' }) : '—'}
+                      {p.closedReason === 'timeout' && <span className="ml-2 rounded bg-slate-200 px-1.5 py-0.5 text-[11px] font-medium text-slate-700">süre doldu</span>}
+                      {!p.rankEligible && <span className="ml-2 rounded bg-amber-100 px-1.5 py-0.5 text-[11px] font-medium text-amber-800">eksik çözüm</span>}
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        )}
+      </Card>
+      <div className="mt-2 flex flex-wrap items-center justify-between gap-2 text-xs text-slate-500">
+        <span>
+          Eşitlikte sıra: net, az yanlış, kısa süre, erken teslim. Adaylar sıralamayı en az 10 resmî çözümde görür; panelde alt sınır yoktur. Eksik çözüm (&lt;%{minAnswerPercent} cevap) sıra almaz.
+        </span>
+        {!needle && matched.length > RANK_PAGE && (
+          <button type="button" onClick={() => onAll(!all)} className="font-medium text-indigo-700 hover:underline">
+            {all ? 'İlk 20’yi göster' : `Tümünü göster (${matched.length})`}
+          </button>
+        )}
+      </div>
+    </div>
   );
 }

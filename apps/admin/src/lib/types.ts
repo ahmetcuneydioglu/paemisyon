@@ -315,6 +315,25 @@ export interface ExamAutofillReport {
   missing: { section: string; need: number }[];
 }
 
+/** GET /admin/exams/:id/results — panel sıralaması (ad ve e-posta açık; eksik çözüm sırasız, sonda). */
+export interface ExamResults {
+  summary: { completed: number; ranked: number; incomplete: number; inProgress: number; avgScore: number | null; maxScore: number | null };
+  participants: {
+    rank: number | null;
+    userId: string;
+    displayName: string | null;
+    email: string | null;
+    score: number;
+    correctCount: number;
+    wrongCount: number;
+    blankCount: number;
+    durationSeconds: number | null;
+    completedAt: string | null;
+    closedReason: string | null;
+    rankEligible: boolean;
+  }[];
+}
+
 /** GET /admin/exams/:id/stats (Doc 50 istatistik). */
 export interface ExamStats {
   exam: {
@@ -421,26 +440,6 @@ export interface ExamReview {
   questionCount: number;
   dersDagilimi: { courseName: string; count: number }[];
   questions: ExamReviewQuestion[];
-}
-
-export interface ExamResults {
-  summary: {
-    completed: number;
-    inProgress: number;
-    avgScore: number | null;
-    maxScore: number | null;
-  };
-  participants: {
-    rank: number;
-    displayName: string;
-    email: string;
-    score: number;
-    correctCount: number;
-    wrongCount: number;
-    blankCount: number;
-    durationSeconds: number | null;
-    completedAt: string | null;
-  }[];
 }
 
 export interface AuditEntry {

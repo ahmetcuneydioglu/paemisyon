@@ -840,42 +840,67 @@ export class AdminExamsService {
   }
 
   /** Katılımcı sonuçları + özet. */
+  /**
+   * Panel sıralaması: adayın gördüğü sıranın aynısı (net, az yanlış, kısa süre, erken teslim;
+   * dördü de eşitse ortak sıra — 2, 2, 4), ama ad ve e-posta AÇIK ve alt sınır (en az 10 çözüm)
+   * aranmaz. Eksik çözümler (rankEligible=false) sıra almaz, listenin sonunda durur.
+   */
   async results(id: string) {
     await this.exists(id);
     const sessions = await this.prisma.quizSession.findMany({
       where: { examId: id, status: 'completed', attemptRole: 'official' },
       orderBy: [
+        { rankEligible: 'desc' },
         { score: 'desc' },
         { wrongCount: 'asc' },
         { durationSeconds: 'asc' },
         { completedAt: 'asc' },
       ],
-      include: { user: { select: { displayName: true, email: true } } },
+      include: { user: { select: { id: true, displayName: true, email: true } } },
     });
     const inProgress = await this.prisma.quizSession.count({
       where: { examId: id, status: 'in_progress' },
     });
-    const scores = sessions.map((s) => (s.score != null ? Number(s.score) : 0));
+    const eligible = sessions.filter((s) => s.rankEligible);
+    const scores = eligible.map((s) => (s.score != null ? Number(s.score) : 0));
+    const key = (s: (typeof sessions)[number]) =>
+      `${s.score != null ? Number(s.score) : 0}|${s.wrongCount}|${s.durationSeconds}|${s.completedAt?.getTime() ?? ''}`;
+    let prevKey: string | null = null;
+    let prevRank = 0;
     return {
       summary: {
         completed: sessions.length,
+        ranked: eligible.length,
+        incomplete: sessions.length - eligible.length,
         inProgress,
         avgScore: scores.length
           ? Math.round((scores.reduce((a, b) => a + b, 0) / scores.length) * 100) / 100
           : null,
         maxScore: scores.length ? Math.max(...scores) : null,
       },
-      participants: sessions.map((s, i) => ({
-        rank: i + 1,
-        displayName: s.user.displayName,
-        email: s.user.email,
-        score: s.score != null ? Number(s.score) : 0,
-        correctCount: s.correctCount,
-        wrongCount: s.wrongCount,
-        blankCount: s.blankCount,
-        durationSeconds: s.durationSeconds,
-        completedAt: s.completedAt,
-      })),
+      participants: sessions.map((s, i) => {
+        let rank: number | null = null;
+        if (s.rankEligible) {
+          const k = key(s);
+          rank = k === prevKey ? prevRank : i + 1;
+          prevKey = k;
+          prevRank = rank;
+        }
+        return {
+          rank,
+          userId: s.user.id,
+          displayName: s.user.displayName,
+          email: s.user.email,
+          score: s.score != null ? Number(s.score) : 0,
+          correctCount: s.correctCount,
+          wrongCount: s.wrongCount,
+          blankCount: s.blankCount,
+          durationSeconds: s.durationSeconds,
+          completedAt: s.completedAt,
+          closedReason: s.closedReason,
+          rankEligible: s.rankEligible,
+        };
+      }),
     };
   }
 
