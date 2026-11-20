@@ -1,0 +1,618 @@
+[
+ {
+  "sinif": "bozuk",
+  "gerekce": "Ağustos partisi denetimi, şüpheli soru (aba24401): TCK 82: kardeşini öldürmek isterken babasını öldüren fail; hedeflenen ve gerçekleşen mağdur aynı bentte (md 82/1-d). Anahtar öldürmenin temel şekli diyor; büyük olasılıkla yanlış anahtar. Kullanıcı onayı 21 Kas 2026.",
+  "arsivlenen": {
+   "id": "5613acc6-a71b-46e8-b94e-a3fd3623c8d1",
+   "questionId": "aba24401-f705-4265-ac9d-81201343db4b",
+   "stem": "Ahmet, husumet duyduğu kardeşi Burak'ı öldürmek için gece vakti gizlice onun evine girmiş; karanlıkta Burak sandığı kişiye üç el ateş etmiş, ancak öldürdüğü kişinin babası Murat olduğu anlaşılmıştır. Ahmet aşağıdakilerden hangisinden cezalandırılır?",
+   "explanation": "TCK m.30/2: \"Bir suçun daha ağır veya daha az cezayı gerektiren nitelikli hallerinin gerçekleştiği hususunda hataya düşen kişi, bu hatasından yararlanır.\" Ahmet, öldürdüğü kişinin babası olduğunu bilmediğinden m.82/1-d'deki üstsoya karşı öldürme nitelikli hâlinden sorumlu tutulamaz; şahısta hata kastı kaldırmadığı için kasten öldürmenin TEMEL şeklinden cezalandırılır. Buna karşılık konuta GECE VAKTİ girme, TCK m.116/4 uyarınca konut dokunulmazlığını ihlal suçunun nitelikli hâlidir.",
+   "sourceLabel": null,
+   "options": [
+    {
+     "label": "A",
+     "text": "Kasten öldürme suçunun temel şeklinden",
+     "isCorrect": false
+    },
+    {
+     "label": "B",
+     "text": "Konut dokunulmazlığını ihlal suçunun temel şekli ile kasten öldürme suçunun nitelikli şeklinden",
+     "isCorrect": false
+    },
+    {
+     "label": "C",
+     "text": "Konut dokunulmazlığını ihlal suçunun nitelikli şekli ve kasten öldürme suçunun temel şeklinden",
+     "isCorrect": true
+    },
+    {
+     "label": "D",
+     "text": "Kasten öldürme suçunun nitelikli şeklinden",
+     "isCorrect": false
+    },
+    {
+     "label": "E",
+     "text": "Konut dokunulmazlığını ihlal ve kasten öldürme suçlarının nitelikli şekillerinden",
+     "isCorrect": false
+    }
+   ],
+   "question": {
+    "articleNo": "82",
+    "topic": {
+     "name": "Türk Ceza Kanunu"
+    }
+   }
+  }
+ },
+ {
+  "sinif": "bozuk",
+  "gerekce": "Ağustos partisi denetimi, şüpheli soru (afbd126f): TCK 309: \"somut tehlike suçudur\" ifadesi yanlış sayılmış; madde metninden çıkmıyor ve öğretide tartışmalı, yanlış şık kalmayabilir. Kullanıcı onayı 21 Kas 2026.",
+  "arsivlenen": {
+   "id": "dbc99c03-d67a-4982-a78b-dd6a900afba8",
+   "questionId": "afbd126f-1345-4204-8a3a-a87c8ecabc78",
+   "stem": "Anayasayı ihlal suçuyla ilgili aşağıdaki ifadelerden hangisi yanlıştır?",
+   "explanation": "TCK m.309/1 cebir ve şiddet kullanarak Anayasal düzeni ortadan kaldırmaya, değiştirmeye veya fiilen uygulanmasını önlemeye TEŞEBBÜSÜ tamamlanmış suç sayar ve ağırlaştırılmış müebbet hapis öngörür. Bu yapı nedeniyle suç SOYUT TEHLİKE suçudur; somut bir tehlikenin doğması aranmaz, elverişli icra hareketlerinin yapılması yeterlidir. Buna karşılık fiilin maddede sayılan amaca yönelmiş olması suçun kurucu unsurudur; önem taşımayan şey failin siyasi veya ideolojik saikinin türüdür.",
+   "sourceLabel": null,
+   "options": [
+    {
+     "label": "A",
+     "text": "Somut tehlike suçudur",
+     "isCorrect": true
+    },
+    {
+     "label": "B",
+     "text": "Anayasal düzeni değiştirmeye yönelik teşebbüs cebir ve şiddetle gerçekleştirilmelidir",
+     "isCorrect": false
+    },
+    {
+     "label": "C",
+     "text": "Elverişli icra hareketlerinin yapılması suçun tamamlanması için yeterlidir",
+     "isCorrect": false
+    },
+    {
+     "label": "D",
+     "text": "Failin siyasi veya ideolojik saikinin türü suçun oluşması bakımından önem taşımaz",
+     "isCorrect": false
+    },
+    {
+     "label": "E",
+     "text": "Doğrudan kastla işlenebilir",
+     "isCorrect": false
+    }
+   ],
+   "question": {
+    "articleNo": "309",
+    "topic": {
+     "name": "Türk Ceza Kanunu"
+    }
+   }
+  }
+ },
+ {
+  "sinif": "bozuk",
+  "gerekce": "Ağustos partisi denetimi, şüpheli soru (7d2fb165): TCK 6: \"TCK'da itiyadi suçlara yer verilmemiştir\" yanlış sayılmış; kanun yalnız itiyadi suçluyu düzenler (md 6/1-h, 58/9). Yanlış şık kalmayabilir. Kullanıcı onayı 21 Kas 2026.",
+  "arsivlenen": {
+   "id": "0327df7d-f0ec-487e-a1b9-fc7a29deb599",
+   "questionId": "7d2fb165-94b5-4269-a6f6-c4c16d9efb0f",
+   "stem": "İtiyadi suçlarla ilgili aşağıdaki ifadelerden hangisi yanlıştır?",
+   "explanation": "TCK m.6'da itiyadi suçlu tanımlanmış, m.58/9'da itiyadi suçlu hakkında mükerrirlere özgü infaz rejimi ve denetimli serbestlik uygulanabileceği düzenlenmiştir.",
+   "sourceLabel": null,
+   "options": [
+    {
+     "label": "A",
+     "text": "Suçun oluşması için aynı hareketin belli sayıda yinelenmesi gerekir.",
+     "isCorrect": false
+    },
+    {
+     "label": "B",
+     "text": "5237 sayılı TCK'da itiyadi suçlara yer verilmemiştir.",
+     "isCorrect": true
+    },
+    {
+     "label": "C",
+     "text": "TCK'da itiyadi suçlu kavramı tanımlanmıştır.",
+     "isCorrect": false
+    },
+    {
+     "label": "D",
+     "text": "İtiyadi suç, itiyadı gösteren son hareketle tamamlanır.",
+     "isCorrect": false
+    },
+    {
+     "label": "E",
+     "text": "İtiyadi suçlular hakkında mükerrirlere özgü infaz rejimi uygulanabilir.",
+     "isCorrect": false
+    }
+   ],
+   "question": {
+    "articleNo": "6",
+    "topic": {
+     "name": "Türk Ceza Kanunu"
+    }
+   }
+  }
+ },
+ {
+  "sinif": "bozuk",
+  "gerekce": "Ağustos partisi denetimi, şüpheli soru (c77c4a3a): TCK 21: uçağa bomba olayında hedef dışındakiler için anahtar olası kast; kaçınılmaz netice doğrudan kasttır ve aynı partideki 8da919e0 bunu doğru sayıyor. Kullanıcı onayı 21 Kas 2026.",
+  "arsivlenen": {
+   "id": "290a2ee8-7c31-48a9-ab9a-25d9588374b5",
+   "questionId": "c77c4a3a-728e-41d7-8ccd-1e5c03309e9c",
+   "stem": "Bir kişi, belirli bir yolcuyu öldürmek amacıyla yolcu uçağına bomba koymuş; bombanın patlaması sonucu hedef dışındaki pilot, hostes ve yolcular da ölmüştür. Failin hedef dışındaki kişiler bakımından kastı nedir?",
+   "explanation": "Fail hedeflediği yolcu dışındaki kişilerin de ölebileceğini öngörmesine rağmen fiili işlemiştir. Bu kişiler yönünden OLASI KAST vardır.",
+   "sourceLabel": null,
+   "options": [
+    {
+     "label": "A",
+     "text": "Doğrudan kast",
+     "isCorrect": false
+    },
+    {
+     "label": "B",
+     "text": "Olası kast",
+     "isCorrect": true
+    },
+    {
+     "label": "C",
+     "text": "Özel kast",
+     "isCorrect": false
+    },
+    {
+     "label": "D",
+     "text": "Bilinçli taksir",
+     "isCorrect": false
+    },
+    {
+     "label": "E",
+     "text": "Bilinçsiz taksir",
+     "isCorrect": false
+    }
+   ],
+   "question": {
+    "articleNo": "21",
+    "topic": {
+     "name": "Türk Ceza Kanunu"
+    }
+   }
+  }
+ },
+ {
+  "sinif": "bozuk",
+  "gerekce": "Ağustos partisi denetimi, şüpheli soru (d1ee9c0c): TCK 42: E şıkkı (\"etkiler\") kaynak sorunun (d5217916) doğru saydığı yargının tersi; B ile birlikte iki yanlış ifade. Kullanıcı onayı 21 Kas 2026.",
+  "arsivlenen": {
+   "id": "b70df23b-e7a7-4acf-9a1d-c83598896f21",
+   "questionId": "d1ee9c0c-52a5-4cbe-a57b-936869b2f5f6",
+   "stem": "Bileşik suçla ilgili aşağıdaki ifadelerden hangisi yanlıştır?",
+   "explanation": "Bileşik suçta unsur veya ağırlaştırıcı neden oluşturan suç tamamlanmamışsa, somut olayın özelliğine göre bileşik suç da teşebbüs aşamasında kalabilir. Unsur suçun yarım kalmasına rağmen asıl suçun DAİMA tamamlanmış sayılması doğru değildir.",
+   "sourceLabel": null,
+   "options": [
+    {
+     "label": "A",
+     "text": "Bileşik suçu oluşturan suçlardan birinin kovuşturmasının şikâyete bağlı olması, bileşik suç bakımından aynı sonucu doğurmaz.",
+     "isCorrect": false
+    },
+    {
+     "label": "B",
+     "text": "Bileşik suçun unsuru olan suç tamamlanmadan asıl suç daima tamamlanmış sayılır.",
+     "isCorrect": true
+    },
+    {
+     "label": "C",
+     "text": "Bileşik suç kendisini oluşturan suçlara bölünmez.",
+     "isCorrect": false
+    },
+    {
+     "label": "D",
+     "text": "Zamanaşımı bileşik suçta belirtilen sonucun gerçekleştiği andan itibaren başlayabilir.",
+     "isCorrect": false
+    },
+    {
+     "label": "E",
+     "text": "Bileşik suçu oluşturan unsurun veya ağırlaştırıcı nedenin ortadan kalkması bileşik suçun varlığını etkiler.",
+     "isCorrect": false
+    }
+   ],
+   "question": {
+    "articleNo": "42",
+    "topic": {
+     "name": "Türk Ceza Kanunu"
+    }
+   }
+  }
+ },
+ {
+  "sinif": "bozuk",
+  "gerekce": "Ağustos partisi denetimi, şüpheli soru (0d3edeb1): TCK 43: farklı kişilerin hesaplarından aynı anda para çekme; md 43/2'ye göre zincirleme suç (C) de savunulur, anahtar yalnız \"mağdur banka\" kabulüyle doğru. Kullanıcı onayı 21 Kas 2026.",
+  "arsivlenen": {
+   "id": "fdf75d82-a08c-4477-8d72-b7ac7726f671",
+   "questionId": "0d3edeb1-7240-4c0f-a80b-17391bfcbaac",
+   "stem": "Ahmet, aynı bankanın farklı kişilere ait hesaplarından aynı anda para çekmiştir. Olayda hangi kurum söz konusudur?",
+   "explanation": "Fiil aynı bankaya ait bilişim sistemi üzerinden aynı anda gerçekleştirilmiş ve bankanın malvarlığına yönelmiştir. Hedef ve mağdur tek, hareketler arasında ayrılabilir zaman aralığı yoksa tek hırsızlık suçu oluşur.",
+   "sourceLabel": null,
+   "options": [
+    {
+     "label": "A",
+     "text": "Fikrî içtima",
+     "isCorrect": false
+    },
+    {
+     "label": "B",
+     "text": "Bileşik suç",
+     "isCorrect": false
+    },
+    {
+     "label": "C",
+     "text": "Zincirleme suç",
+     "isCorrect": false
+    },
+    {
+     "label": "D",
+     "text": "Karma suç",
+     "isCorrect": false
+    },
+    {
+     "label": "E",
+     "text": "Tek bir hırsızlık suçu",
+     "isCorrect": true
+    }
+   ],
+   "question": {
+    "articleNo": "43",
+    "topic": {
+     "name": "Türk Ceza Kanunu"
+    }
+   }
+  }
+ },
+ {
+  "sinif": "bozuk",
+  "gerekce": "Ağustos partisi denetimi, şüpheli soru (dfb40c8e): TCK 160: otobüste UNUTULAN saat; md 160 kaybedilmiş eşyayı arar, aynı partideki 583902c1 unutulan çantada hırsızlık diyor. İki cevap riski. Kullanıcı onayı 21 Kas 2026.",
+  "arsivlenen": {
+   "id": "f164c5f2-f454-485c-9189-5accfdc8ddff",
+   "questionId": "dfb40c8e-033d-4df3-abb7-a2b1b31536dd",
+   "stem": "Murat, otobüste Ahmet'in unuttuğu saati bulmuş ve sahibini veya yetkili mercileri haberdar etmeden saati sahiplenmiştir. Murat'ın eylemi nedir?",
+   "explanation": "Malikinin zilyetliğinden kaybolma nedeniyle çıkan eşya üzerinde iade etmeden veya yetkili mercileri bilgilendirmeden malik gibi tasarruf TCK md. 160 kapsamındadır.",
+   "sourceLabel": null,
+   "options": [
+    {
+     "label": "A",
+     "text": "Güveni kötüye kullanma",
+     "isCorrect": false
+    },
+    {
+     "label": "B",
+     "text": "Hırsızlık",
+     "isCorrect": false
+    },
+    {
+     "label": "C",
+     "text": "Kaybolmuş eşya üzerinde tasarruf",
+     "isCorrect": true
+    },
+    {
+     "label": "D",
+     "text": "Karşılıksız yararlanma",
+     "isCorrect": false
+    },
+    {
+     "label": "E",
+     "text": "Suç oluşturmaz",
+     "isCorrect": false
+    }
+   ],
+   "question": {
+    "articleNo": "160",
+    "topic": {
+     "name": "Türk Ceza Kanunu"
+    }
+   }
+  }
+ },
+ {
+  "sinif": "bozuk",
+  "gerekce": "Ağustos partisi denetimi, şüpheli soru (29488c8e): TCK 155: kök faili \"tahsilat memuru\" yapıyor; görev nedeniyle verilen parada zimmet (D) savunulur. Kullanıcı onayı 21 Kas 2026.",
+  "arsivlenen": {
+   "id": "517be272-9a9f-43a5-992c-830a284a5047",
+   "questionId": "29488c8e-e2de-4e9c-9ec2-75a5d4c0a8b9",
+   "stem": "Ahmet, belediyedeki borcunu yatırması için parayı önceden tanıdığı tahsilat memuru Murat'a bırakmıştır. Murat parayı vezneye yatırmayıp kendi ihtiyacı için kullanmıştır. Murat hangi suçtan sorumludur?",
+   "explanation": "Para Murat'a görevi dolayısıyla değil, kişisel tanışıklığa dayalı olarak belirli amaçla teslim edilmiştir. Devir amacı dışında kullanılması güveni kötüye kullanmadır; zimmet oluşmaz.",
+   "sourceLabel": null,
+   "options": [
+    {
+     "label": "A",
+     "text": "Güveni kötüye kullanma",
+     "isCorrect": true
+    },
+    {
+     "label": "B",
+     "text": "Hırsızlık",
+     "isCorrect": false
+    },
+    {
+     "label": "C",
+     "text": "Dolandırıcılık",
+     "isCorrect": false
+    },
+    {
+     "label": "D",
+     "text": "Zimmet",
+     "isCorrect": false
+    },
+    {
+     "label": "E",
+     "text": "İrtikâp",
+     "isCorrect": false
+    }
+   ],
+   "question": {
+    "articleNo": "155",
+    "topic": {
+     "name": "Türk Ceza Kanunu"
+    }
+   }
+  }
+ },
+ {
+  "sinif": "bozuk",
+  "gerekce": "Ağustos partisi denetimi, şüpheli soru (838137d4): TCK 271: II. öncül iki türlü okunuyor; her iki okumanın cevabı da şıklarda var. Kullanıcı onayı 21 Kas 2026.",
+  "arsivlenen": {
+   "id": "e9a2ab5e-40f2-434e-b672-1cf6e7f37e25",
+   "questionId": "838137d4-3b67-4142-9de2-71e021b7e98c",
+   "stem": "Suç uydurma suçuyla ilgili aşağıdaki ifadelerden hangileri yanlıştır?\nI. Kamu barışına karşı bir suçtur.\nII. İşlenmeyen hukuka aykırı bir eylemi ihbar ederek işlenebilir.\nIII. İhbar yetkili makamlara yapılmalıdır; belirli bir failin gösterilmesi gerekmez.\nIV. İftiranın aksine suçun delil veya emareleri uydurularak işlenemez.",
+   "explanation": "TCK m.271/1: \"İşlenmediğini bildiği bir SUÇU, yetkili makamlara işlenmiş gibi ihbar eden ya da işlenmeyen bir suçun DELİL VEYA EMARELERİNİ soruşturma yapılmasını sağlayacak biçimde uyduran kimseye üç yıla kadar hapis cezası verilir.\" Buna göre I yanlıştır: suç uydurma adliyeye karşı suçlar arasındadır, kamu barışına karşı değil. II yanlıştır: suçun konusu herhangi bir hukuka aykırı eylem değil, işlenmediği bilinen bir SUÇTUR. IV yanlıştır: madde, delil veya emare uydurma seçimlik hareketini açıkça kapsar. III ise doğrudur; madde belirli bir failin gösterilmesini aramaz — belirli bir kişiye isnatta bulunulursa m.267 iftira suçu gündeme gelir.",
+   "sourceLabel": null,
+   "options": [
+    {
+     "label": "A",
+     "text": "I ve II",
+     "isCorrect": false
+    },
+    {
+     "label": "B",
+     "text": "I ve III",
+     "isCorrect": false
+    },
+    {
+     "label": "C",
+     "text": "I ve IV",
+     "isCorrect": false
+    },
+    {
+     "label": "D",
+     "text": "II ve IV",
+     "isCorrect": false
+    },
+    {
+     "label": "E",
+     "text": "I, II ve IV",
+     "isCorrect": true
+    }
+   ],
+   "question": {
+    "articleNo": "271",
+    "topic": {
+     "name": "Türk Ceza Kanunu"
+    }
+   }
+  }
+ },
+ {
+  "sinif": "bozuk",
+  "gerekce": "Ağustos partisi denetimi, şüpheli soru (d9d67830): TCK 217: cevabı III. öncül (\"soyut tehlike suçudur\") belirliyor; nitelendirme öğretide tartışmalı, iki sonucun da şıkkı var. Kullanıcı onayı 21 Kas 2026.",
+  "arsivlenen": {
+   "id": "fb246659-9a9a-4e4a-b1f8-5df726d81dce",
+   "questionId": "d9d67830-f6c4-4247-9870-23fffb146c4d",
+   "stem": "Kanunlara uymamaya tahrik suçuyla ilgili I. Tahrik alenen yapılmalıdır. II. Tahrikin kamu barışını bozmaya elverişli olması aranmaz. III. Soyut tehlike suçudur. IV. Basın ve yayın yoluyla işlenmesi artırım doğurabilir. ifadelerinden hangileri yanlıştır?",
+   "explanation": "TCK md. 217, aleni tahrikin kamu barışını bozmaya elverişli olmasını şart koşar. Bu nedenle ikinci önerme yanlıştır.",
+   "sourceLabel": null,
+   "options": [
+    {
+     "label": "A",
+     "text": "Yalnız II",
+     "isCorrect": true
+    },
+    {
+     "label": "B",
+     "text": "I ve II",
+     "isCorrect": false
+    },
+    {
+     "label": "C",
+     "text": "II ve III",
+     "isCorrect": false
+    },
+    {
+     "label": "D",
+     "text": "II ve IV",
+     "isCorrect": false
+    },
+    {
+     "label": "E",
+     "text": "I, III ve IV",
+     "isCorrect": false
+    }
+   ],
+   "question": {
+    "articleNo": "217",
+    "topic": {
+     "name": "Türk Ceza Kanunu"
+    }
+   }
+  }
+ },
+ {
+  "sinif": "bozuk",
+  "gerekce": "Ağustos partisi denetimi, şüpheli soru (f523150b): CMK 12: kazanın yeri kökte yok; şıklardaki Edirne ve Bolu kökte geçmiyor (yeniden yazımda düşmüş). Anahtar madde metninden çıkmıyor. Kullanıcı onayı 21 Kas 2026.",
+  "arsivlenen": {
+   "id": "717f972a-5812-4521-890a-2de20f25a20f",
+   "questionId": "f523150b-b6cd-4787-8fc3-30e3178ccfd6",
+   "stem": "İtalya'dan Türkiye'ye gelen Selim, Belçika'dan aynı yönde gelen Mehmet'in aracına Türkiye'de çarpmış; yaralı Mehmet İstanbul'daki hastanede ölmüştür. Yer bakımından yetkili mahkeme hangisidir?",
+   "explanation": "Hareketin kısmen Türkiye'de yapılması veya neticenin Türkiye'de gerçekleşmesi hâlinde suç Türkiye'de işlenmiş sayılır. Neticenin gerçekleştiği İstanbul, suçun işlendiği yer olarak yetkilidir.",
+   "sourceLabel": null,
+   "options": [
+    {
+     "label": "A",
+     "text": "İstanbul mahkemesi",
+     "isCorrect": true
+    },
+    {
+     "label": "B",
+     "text": "Edirne mahkemesi",
+     "isCorrect": false
+    },
+    {
+     "label": "C",
+     "text": "Bolu mahkemesi",
+     "isCorrect": false
+    },
+    {
+     "label": "D",
+     "text": "Türkiye mahkemeleri yetkisizdir",
+     "isCorrect": false
+    },
+    {
+     "label": "E",
+     "text": "Yetkili mahkemeyi Yargıtay belirler",
+     "isCorrect": false
+    }
+   ],
+   "question": {
+    "articleNo": "12",
+    "topic": {
+     "name": "5271 Sayılı Ceza Muhakemesi Kanunu (CMK)"
+    }
+   }
+  }
+ },
+ {
+  "sinif": "bozuk",
+  "gerekce": "Ağustos partisi denetimi, şüpheli soru (169172de): 298: anahtar md 117'deki genel 48 saate dayanıyor; kök süreyi kurulların kuruluşuna bağlıyor, kanun orada ayrı süre koyuyor (md 119–121). Kullanıcı onayı 21 Kas 2026.",
+  "arsivlenen": {
+   "id": "163467e1-67c4-4828-8c10-039c50d5abaf",
+   "questionId": "169172de-dcea-465e-968a-38b09b5681d1",
+   "stem": "298 sayılı Kanuna göre seçim kurullarının kuruluşuna ilişkin şikâyetin reddi kararına karşı genel itiraz süresi ne kadardır?",
+   "explanation": "Seçim kurullarının kuruluş işlemlerine ilişkin şikâyetin reddi kararına karşı genel itiraz süresi KIRK SEKİZ SAATTİR.",
+   "sourceLabel": null,
+   "options": [
+    {
+     "label": "A",
+     "text": "48 saat",
+     "isCorrect": true
+    },
+    {
+     "label": "B",
+     "text": "3 gün",
+     "isCorrect": false
+    },
+    {
+     "label": "C",
+     "text": "5 gün",
+     "isCorrect": false
+    },
+    {
+     "label": "D",
+     "text": "7 gün",
+     "isCorrect": false
+    },
+    {
+     "label": "E",
+     "text": "10 gün",
+     "isCorrect": false
+    }
+   ],
+   "question": {
+    "articleNo": null,
+    "topic": {
+     "name": "T.C. Anayasası"
+    }
+   }
+  }
+ },
+ {
+  "sinif": "bozuk",
+  "gerekce": "Ağustos partisi denetimi, şüpheli soru (ef9deacc): Anayasa 161: \"yanlış\" diye işaretlenen C şıkkı güncel metinde yok ama metne aykırı da değil (2017 öncesi md 164). Kullanıcı onayı 21 Kas 2026.",
+  "arsivlenen": {
+   "id": "39e37de5-0282-4cf9-a347-355d9b75fee0",
+   "questionId": "ef9deacc-50ed-4e3a-b31c-bd21de7fce9f",
+   "stem": "1982 Anayasası'na göre kesinhesap kanun teklifiyle ilgili aşağıdaki ifadelerden hangisi yanlıştır?",
+   "explanation": "Anayasa m.161, kesinhesap kanunu teklifinin yeni yıl bütçe kanunu teklifiyle birlikte görüşülüp karara bağlanacağını düzenler; iki teklifin birlikte Plan ve Bütçe Komisyonu gündemine alınacağı yönünde bir anayasal hüküm yoktur. Diğer seçeneklerdeki süre ve sonuçlar madde metniyle uyumludur.",
+   "sourceLabel": null,
+   "options": [
+    {
+     "label": "A",
+     "text": "Cumhurbaşkanı teklifi, ilgili mali yılın sonundan başlayarak en geç altı ay sonra TBMM'ye sunar.",
+     "isCorrect": false
+    },
+    {
+     "label": "B",
+     "text": "Sayıştay genel uygunluk bildirimini, kesinhesap kanun teklifinin verilmesinden başlayarak en geç yetmiş beş gün içinde TBMM'ye sunar.",
+     "isCorrect": false
+    },
+    {
+     "label": "C",
+     "text": "Kesinhesap kanun teklifi, yeni bütçe kanunu teklifiyle birlikte Plan ve Bütçe Komisyonu gündemine alınır.",
+     "isCorrect": true
+    },
+    {
+     "label": "D",
+     "text": "TBMM kesinhesap kanun teklifini yeni yıl bütçe kanunu teklifiyle beraber görüşerek karara bağlar.",
+     "isCorrect": false
+    },
+    {
+     "label": "E",
+     "text": "Teklifin TBMM'ye verilmiş olması, ilgili yıla ait Sayıştayca sonuçlandırılmamış denetim ve hesap yargılamalarının karara bağlandığı anlamına gelmez.",
+     "isCorrect": false
+    }
+   ],
+   "question": {
+    "articleNo": "161",
+    "topic": {
+     "name": "T.C. Anayasası"
+    }
+   }
+  }
+ },
+ {
+  "sinif": "bozuk",
+  "gerekce": "Ağustos partisi denetimi, şüpheli soru (b2939dc0): Anayasa 79: III. öncül Yüksek Seçim Kurulu içtihadına bağlı ve iki yönlü; öncül 2017 öncesi ibareyi kullanıyor. Kullanıcı onayı 21 Kas 2026.",
+  "arsivlenen": {
+   "id": "aa730948-013e-4265-96d1-ce522d704363",
+   "questionId": "b2939dc0-2dbe-4427-83da-d8db54f2dda6",
+   "stem": "I. Yüksek Seçim Kurulu üyeleri, Yargıtay ve Danıştay genel kurullarınca gösterilen adaylar arasından Cumhurbaşkanınca seçilir.\nII. Yüksek Seçim Kurulu, TBMM üyelerinin seçim tutanaklarını kabul eder.\nIII. Bir milletvekilinin yükümlü olduğu askerlik hizmetini yapmadığının seçimden sonra ortaya çıkması hâlinde seçim tutanağını iptal eder.\nYüksek Seçim Kurulunun oluşumu ve görevleriyle ilgili yukarıdaki ifadelerden hangileri yanlıştır?",
+   "explanation": "Anayasa m.79'a göre YSK üyelerinin altısı Yargıtay, beşi Danıştay genel kurullarınca kendi üyeleri arasından seçilir; Cumhurbaşkanının seçim yetkisi yoktur. YSK, TBMM üyelerinin seçim tutanaklarını kabul eder. Seçimden sonra milletvekili seçilme yeterliliğine ilişkin ortaya çıkan durumların denetimi ise YSK'nın anayasal görevleri arasında değildir.",
+   "sourceLabel": null,
+   "options": [
+    {
+     "label": "A",
+     "text": "Yalnız I",
+     "isCorrect": false
+    },
+    {
+     "label": "B",
+     "text": "I ve II",
+     "isCorrect": false
+    },
+    {
+     "label": "C",
+     "text": "I ve III",
+     "isCorrect": true
+    },
+    {
+     "label": "D",
+     "text": "II ve III",
+     "isCorrect": false
+    },
+    {
+     "label": "E",
+     "text": "I, II ve III",
+     "isCorrect": false
+    }
+   ],
+   "question": {
+    "articleNo": "79",
+    "topic": {
+     "name": "T.C. Anayasası"
+    }
+   }
+  }
+ }
+]

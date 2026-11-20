@@ -108,9 +108,6 @@ Sorular zorunlu yan sonucu, hedefin yanındaki kişiye isabeti ve olası kastın
 :::soru 0b753e5c-1014-4c41-95cc-9c7c06310bd6
 :::
 
-:::soru c77c4a3a-728e-41d7-8ccd-1e5c03309e9c
-:::
-
 :::soru 33cdc805-b8de-4452-86c8-46b79f6f0d81
 :::
 
@@ -133,3 +130,4 @@ Sorular zorunlu yan sonucu, hedefin yanındaki kişiye isabeti ve olası kastın
 - Gömülü sorular: bankadaki yayınlı gerçek sorular, hepsi beş şıklı, share 200 (0b753e5c… cam ve hasım (beklenen: ikisi de doğrudan kast); c77c4a3a… uçağa bomba (beklenen: doğrudan kast); 33cdc805… hedefin yanındaki kişinin ölmesi (beklenen: iki ayrı kasten öldürme); 9b0d0ffd… olası kastın cezaya etkisi (beklenen: üçte birden yarısına kadar indirim, md 21/2)). Doğru şık public uçtan görülemez; "beklenen" yanıt dersin içeriğiyle uyumlu olandır, panelde anahtarla karşılaştırılmalı. Soru üretilmedi.
 - DENETİM DÜZELTMESİ (bağımsız denetim, Opus oturumu, 13 Kas 2026): Kaçınılmazlık tablosu "Soru | Yanıt | Kast türü" sütunlarıyla yeniden kuruldu (önceki başlık ile hücreler uyuşmuyordu).
 - AI taslak; insan düzenleme ve yayın onayı bekliyor.
+- 21 Kas 2026 (Ağustos partisi denetimi): gömülü c77c4a3a… çıkarıldı ve arşivlendi (uçağa bomba olayında anahtar olası kast; kaçınılmaz netice doğrudan kasttır).
