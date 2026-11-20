@@ -1,0 +1,2104 @@
+[
+ {
+  "sinif": "yigilma",
+  "gerekce": "Benzerlik taraması (21 Kas 2026): Aynı sınav iki kez içe aktarılmış (2022 Kaymakamlık). Kalan soru ca4c36b3 (İdare Hukuku). Kullanıcı onayı 21 Kas 2026.",
+  "arsivlenen": {
+   "id": "157a9f96-e159-4768-9fef-6d9f14e862c5",
+   "questionId": "fdba677d-f59d-4c62-9a2a-8c6c90d3aa53",
+   "stem": "Bir sözleşmenin idari sözleşme olarak nitelendirilebilmesi için aranan organik şart, kural olarak aşağıdakilerden hangisidir?",
+   "explanation": "Bir sözleşmenin idari sözleşme sayılıp sayılmayacağına önce taraflarına bakılarak karar verilir: organik (şekli) ölçüt, taraflardan en az birinin idare, yani bir kamu tüzel kişisi olmasını arar. Sözleşmenin konusunun kamu hizmeti, amacının kamu yararı olması maddi ölçütlerdir; uyuşmazlığın idari yargıda çözülmesi ise nitelendirmenin şartı değil sonucudur. Mal ve hizmet alımları ile yapım işleri bakımından ise 4735 sayılı Kamu İhale Sözleşmeleri Kanunu ayrı bir rejim kurar ve bu sözleşmeler idari sözleşme sayılmaz.",
+   "sourceLabel": "2022 Kaymakamlık Sınavı (çıkmış sorular)",
+   "options": [
+    {
+     "label": "A",
+     "text": "Sözleşmenin konusunun kamu hizmeti olması",
+     "isCorrect": false
+    },
+    {
+     "label": "B",
+     "text": "Sözleşmenin mal veya hizmet alımları ile yapım işlerini kapsaması",
+     "isCorrect": false
+    },
+    {
+     "label": "C",
+     "text": "Sözleşmenin amacının kamu yararı olması",
+     "isCorrect": false
+    },
+    {
+     "label": "D",
+     "text": "Sözleşmeden doğan uyuşmazlıkların idari yargıda çözümlenmesi",
+     "isCorrect": false
+    },
+    {
+     "label": "E",
+     "text": "Sözleşmenin taraflarından birinin idare olması",
+     "isCorrect": true
+    }
+   ],
+   "question": {
+    "articleNo": null,
+    "topic": {
+     "name": "İdare Hukuku"
+    }
+   }
+  }
+ },
+ {
+  "sinif": "yigilma",
+  "gerekce": "Benzerlik taraması (21 Kas 2026): Aynı soru (kök ve şıklar aynı ya da yalnız yazım farkı). Kalan soru d15d8e56 (5326 Sayılı Kabahatler Kanunu). Kullanıcı onayı 21 Kas 2026.",
+  "arsivlenen": {
+   "id": "483c5b67-0a2f-48cd-a02d-664263645a3c",
+   "questionId": "9770a3ab-0331-495d-ab2b-a55e8376ac9f",
+   "stem": "5326 sayılı Kabahatler Kanunu’na göre idari para cezası ve mülkiyetin kamuya geçirilmesine ilişkin idari yaptırım kararına karşı, kararın tebliği veya tefhimi tarihinden itibaren en geç kaç gün içinde, sulh ceza mahkemesine başvurulabilir?",
+   "explanation": "Kabahatler Kanunu m.27/1’e göre idarî para cezası ve mülkiyetin kamuya geçirilmesine ilişkin karara karşı, tebliğ veya tefhim tarihinden itibaren en geç ON BEŞ GÜN içinde sulh ceza mahkemesine başvurulabilir. Bu süre hak düşürücüdür; geçirilmesi hâlinde karar kesinleşir.",
+   "sourceLabel": "İÇİŞLERİ BAKANLIĞI GYS",
+   "options": [
+    {
+     "label": "A",
+     "text": "On",
+     "isCorrect": false
+    },
+    {
+     "label": "B",
+     "text": "On beş",
+     "isCorrect": true
+    },
+    {
+     "label": "C",
+     "text": "Yirmi",
+     "isCorrect": false
+    },
+    {
+     "label": "D",
+     "text": "Otuz",
+     "isCorrect": false
+    }
+   ],
+   "question": {
+    "articleNo": null,
+    "topic": {
+     "name": "5326 Sayılı Kabahatler Kanunu"
+    }
+   }
+  }
+ },
+ {
+  "sinif": "yigilma",
+  "gerekce": "Benzerlik taraması (21 Kas 2026): Aynı soru (kök ve şıklar aynı ya da yalnız yazım farkı). Kalan soru 8a41bfb1 (Atatürk İlkeleri ve İnkılap Tarihi). Kullanıcı onayı 21 Kas 2026.",
+  "arsivlenen": {
+   "id": "0ff7997d-eec0-46b7-b189-cf2eb14fc0e7",
+   "questionId": "55d4dd98-b68e-48e7-ba2d-1c08cb3c6be5",
+   "stem": "Türk demokrasi tarihinde yapılmış anayasalar arasında aşağıdakilerden hangisi bulunmaktadır?",
+   "explanation": "",
+   "sourceLabel": null,
+   "options": [
+    {
+     "label": "A",
+     "text": "1855 Kanûn-ı Esâsî",
+     "isCorrect": false
+    },
+    {
+     "label": "B",
+     "text": "1944 Anayasası",
+     "isCorrect": false
+    },
+    {
+     "label": "C",
+     "text": "1931 Anayasası",
+     "isCorrect": false
+    },
+    {
+     "label": "D",
+     "text": "1924 Anayasası",
+     "isCorrect": true
+    },
+    {
+     "label": "E",
+     "text": "1927 Anayasası",
+     "isCorrect": false
+    }
+   ],
+   "question": {
+    "articleNo": null,
+    "topic": {
+     "name": "Atatürk İlkeleri ve İnkılap Tarihi"
+    }
+   }
+  }
+ },
+ {
+  "sinif": "yigilma",
+  "gerekce": "Benzerlik taraması (21 Kas 2026): Aynı soru (kök ve şıklar aynı ya da yalnız yazım farkı). Kalan soru 4eab6e47 (Atatürk İlkeleri ve İnkılap Tarihi). Kullanıcı onayı 21 Kas 2026.",
+  "arsivlenen": {
+   "id": "1f368ff4-24f1-434d-b121-5b643e17cb71",
+   "questionId": "97a812c6-92d0-4d03-bfbb-ea247719d67c",
+   "stem": "Aşağıdaki antlaşmalardan hangisi TBMM Hükümeti'nin tanınması ve siyasî yönden güçlenmesi ile ilgili olarak Fransa'nın İngiltere'yle görüş ayrılığına düşmesine neden olmuştur?",
+   "explanation": null,
+   "sourceLabel": null,
+   "options": [
+    {
+     "label": "A",
+     "text": "Mudanya Mütarekesi",
+     "isCorrect": false
+    },
+    {
+     "label": "B",
+     "text": "Kars Antlaşması",
+     "isCorrect": false
+    },
+    {
+     "label": "C",
+     "text": "Moskova Antlaşması",
+     "isCorrect": false
+    },
+    {
+     "label": "D",
+     "text": "Ankara Antlaşması",
+     "isCorrect": true
+    },
+    {
+     "label": "E",
+     "text": "Gümrü Antlaşması",
+     "isCorrect": false
+    }
+   ],
+   "question": {
+    "articleNo": null,
+    "topic": {
+     "name": "Atatürk İlkeleri ve İnkılap Tarihi"
+    }
+   }
+  }
+ },
+ {
+  "sinif": "yigilma",
+  "gerekce": "Benzerlik taraması (21 Kas 2026): Aynı soru (kök ve şıklar aynı ya da yalnız yazım farkı). Kalan soru bfb7d607 (Atatürk İlkeleri ve İnkılap Tarihi). Kullanıcı onayı 21 Kas 2026.",
+  "arsivlenen": {
+   "id": "b2b78c5c-5d39-49e7-bd7c-51e1f3280bd5",
+   "questionId": "bbb9a85d-80a6-486d-8fe8-944783fa8399",
+   "stem": "Kuva-yı Milliye aşağıdaki hangi gelişmeyle sonra ermiştir?",
+   "explanation": "",
+   "sourceLabel": null,
+   "options": [
+    {
+     "label": "A",
+     "text": "Sakarya Savaşı’ndan sonra",
+     "isCorrect": false
+    },
+    {
+     "label": "B",
+     "text": "I. İnönü Savaşı’ndan sonra",
+     "isCorrect": true
+    },
+    {
+     "label": "C",
+     "text": "Büyük Taarruz’dan sonra",
+     "isCorrect": false
+    },
+    {
+     "label": "D",
+     "text": "Mudanya Mütarekesi’nden sonra",
+     "isCorrect": false
+    },
+    {
+     "label": "E",
+     "text": "II. İnönü Savaşı’ndan sonra",
+     "isCorrect": false
+    }
+   ],
+   "question": {
+    "articleNo": null,
+    "topic": {
+     "name": "Atatürk İlkeleri ve İnkılap Tarihi"
+    }
+   }
+  }
+ },
+ {
+  "sinif": "yigilma",
+  "gerekce": "Benzerlik taraması (21 Kas 2026): Aynı soru (kök ve şıklar aynı ya da yalnız yazım farkı). Kalan soru a353e9b9 (Atatürk İlkeleri ve İnkılap Tarihi). Kullanıcı onayı 21 Kas 2026.",
+  "arsivlenen": {
+   "id": "1e087d64-51c5-4fb1-8fb0-864a1c3e3b01",
+   "questionId": "1d64fc7b-2d3d-45d4-b1bc-eab6a3531b9f",
+   "stem": "Aşağıdakilerden hangisinde Mondros Mütarekesi'nden sonra Fransa tarafından işgal edilen yerler doğru olarak verilmiştir?",
+   "explanation": "",
+   "sourceLabel": null,
+   "options": [
+    {
+     "label": "A",
+     "text": "Antalya-Muğla-Denizli",
+     "isCorrect": false
+    },
+    {
+     "label": "B",
+     "text": "Erzurum-Bitlis-Diyarbakır",
+     "isCorrect": false
+    },
+    {
+     "label": "C",
+     "text": "İzmir-Aydın-Bursa",
+     "isCorrect": false
+    },
+    {
+     "label": "D",
+     "text": "Antep-Urfa-Maraş",
+     "isCorrect": true
+    },
+    {
+     "label": "E",
+     "text": "Samsun-Amasya-Tokat",
+     "isCorrect": false
+    }
+   ],
+   "question": {
+    "articleNo": null,
+    "topic": {
+     "name": "Atatürk İlkeleri ve İnkılap Tarihi"
+    }
+   }
+  }
+ },
+ {
+  "sinif": "yigilma",
+  "gerekce": "Benzerlik taraması (21 Kas 2026): Aynı soru (kök ve şıklar aynı ya da yalnız yazım farkı). Kalan soru 4891c331 (İnsan Hakları). Kullanıcı onayı 21 Kas 2026.",
+  "arsivlenen": {
+   "id": "e011e784-e12b-4d84-8dd7-ce2f6fbdf55b",
+   "questionId": "4e64782e-b888-4a51-aa52-e1e99392f867",
+   "stem": "İnsan haklarını birinci, ikinci ve üçüncü kuşak haklar olarak ayrıma tabi tutan düşünür aşağıdakilerden hangisidir?",
+   "explanation": "Hakları birinci kuşak (kişisel ve siyasal), ikinci kuşak (ekonomik, sosyal ve kültürel) ve üçüncü kuşak (dayanışma) haklar olarak ayıran tasnif, Karel Vasak'ın 1977'de UNESCO Courier'de yayımlanan yazısına dayanır ve Fransız Devrimi'nin özgürlük-eşitlik-kardeşlik şiarıyla eşleştirilir. Tuzak, kuşak ayrımının negatif/pozitif/aktif statü ayrımıyla karıştırılmasıdır; ikincisi Jellinek'e aittir.",
+   "sourceLabel": null,
+   "options": [
+    {
+     "label": "A",
+     "text": "Jellinek",
+     "isCorrect": false
+    },
+    {
+     "label": "B",
+     "text": "Karel Vasak",
+     "isCorrect": true
+    },
+    {
+     "label": "C",
+     "text": "John Locke",
+     "isCorrect": false
+    },
+    {
+     "label": "D",
+     "text": "Hobbes",
+     "isCorrect": false
+    },
+    {
+     "label": "E",
+     "text": "Rousseau",
+     "isCorrect": false
+    }
+   ],
+   "question": {
+    "articleNo": null,
+    "topic": {
+     "name": "İnsan Hakları"
+    }
+   }
+  }
+ },
+ {
+  "sinif": "yigilma",
+  "gerekce": "Benzerlik taraması (21 Kas 2026): Aynı soru (kök ve şıklar aynı ya da yalnız yazım farkı). Kalan soru 928695d6 (T.C. Anayasası). Kullanıcı onayı 21 Kas 2026.",
+  "arsivlenen": {
+   "id": "7de01323-230e-4f71-971a-0a5cd7e17c63",
+   "questionId": "ce9bd646-37c8-4fa9-a9b7-fd8217281668",
+   "stem": "Kişinin hukuka aykırı olarak tutuklanması veya yakalanması aşağıdakilerden hangisinin doğrudan ihlali niteliğindedir?",
+   "explanation": "Yakalama ve tutuklamanın anayasal şartları, Anayasa m.19'daki KİŞİ HÜRRİYETİ VE GÜVENLİĞİ güvencesi kapsamında düzenlenir. Bu şartlara aykırı yakalama veya tutuklama doğrudan bu hakkı ihlal eder.",
+   "sourceLabel": null,
+   "options": [
+    {
+     "label": "A",
+     "text": "Kişinin dokunulmazlığı",
+     "isCorrect": false
+    },
+    {
+     "label": "B",
+     "text": "Kişinin maddi ve manevi varlığının korunması",
+     "isCorrect": false
+    },
+    {
+     "label": "C",
+     "text": "Kişi hürriyeti ve güvenliği",
+     "isCorrect": true
+    },
+    {
+     "label": "D",
+     "text": "Özel hayatın gizliliği",
+     "isCorrect": false
+    },
+    {
+     "label": "E",
+     "text": "Suç ve cezalara ilişkin esaslar",
+     "isCorrect": false
+    }
+   ],
+   "question": {
+    "articleNo": "19",
+    "topic": {
+     "name": "T.C. Anayasası"
+    }
+   }
+  }
+ },
+ {
+  "sinif": "yigilma",
+  "gerekce": "Benzerlik taraması (21 Kas 2026): Aynı soru (kök ve şıklar aynı ya da yalnız yazım farkı). Kalan soru fb5a2090 (5271 Sayılı Ceza Muhakemesi Kanunu (CMK)). Kullanıcı onayı 21 Kas 2026.",
+  "arsivlenen": {
+   "id": "78e213be-f604-44aa-9b81-d70b7b3eb314",
+   "questionId": "ccd072f2-e7ee-4d76-b863-7d36c907905c",
+   "stem": "İddianamenin kabulünden başlayıp ilk derece mahkemesi tarafından bir hüküm verilmesine kadar geçen aşama aşağıdakilerden hangisidir?",
+   "explanation": "",
+   "sourceLabel": null,
+   "options": [
+    {
+     "label": "A",
+     "text": "Dar anlamda kovuşturma evresi",
+     "isCorrect": true
+    },
+    {
+     "label": "B",
+     "text": "Geniş anlamda kovuşturma evresi",
+     "isCorrect": false
+    },
+    {
+     "label": "C",
+     "text": "Soruşturma evresi",
+     "isCorrect": false
+    },
+    {
+     "label": "D",
+     "text": "İfade alma ve sorgu",
+     "isCorrect": false
+    },
+    {
+     "label": "E",
+     "text": "Duruşma evresi",
+     "isCorrect": false
+    }
+   ],
+   "question": {
+    "articleNo": null,
+    "topic": {
+     "name": "5271 Sayılı Ceza Muhakemesi Kanunu (CMK)"
+    }
+   }
+  }
+ },
+ {
+  "sinif": "yigilma",
+  "gerekce": "Benzerlik taraması (21 Kas 2026): Aynı soru (kök ve şıklar aynı ya da yalnız yazım farkı). Kalan soru 1bed7cc4 (5271 Sayılı Ceza Muhakemesi Kanunu (CMK)). Kullanıcı onayı 21 Kas 2026.",
+  "arsivlenen": {
+   "id": "94b4c063-4384-4797-b847-d6e24e28d3a5",
+   "questionId": "9adaf31b-f1bd-41b3-b9ee-5a7335bddbab",
+   "stem": "Aşağıdakilerden hangisi nezarethane işlemlerinde uyulması gereken kurallardan biri değildir?",
+   "explanation": "Yönetmeliğin 11. maddesine göre saldırgan tutum sergileyen ya da kendine zarar vermeye kalkışan kişiye önce SÖZLE müdahale edilerek kontrol altına alınmaya çalışılır; bu mümkün olmazsa ancak hareketini giderecek ölçüde kuvvet kullanılabilir, zaruret olmadıkça kuvvete başvurulmaz. Sorudaki seçenek bu sırayı tersine çevirerek önce kuvvet kullanılacağını söylemekte, ayrıca metinde bulunmayan 'diğer kişilerden ayrı bir yere alma' uygulamasından söz etmektedir. Oysa madde, saldırganlığı kontrol edilemeyen kişinin ayrı bir yere alınmasını değil, tıbbi müdahale için sağlık kuruluşuna gönderilmesini düzenler (aynı maddenin f bendi). Bu yüzden seçenek nezarethane işlemlerinde uyulması gereken kurallardan biri değildir ve sınav bu farkı ölçmektedir; sık karıştırılan nokta, sözle-kuvvet sırasının ve tıbbi sevk ile ayrı yere alma kavramlarının birbirine karıştırılmasıdır.",
+   "sourceLabel": null,
+   "options": [
+    {
+     "label": "A",
+     "text": "Aynı suçla ilgisi olanlar, birbirine hasım olanlar ve erkek ve kadınlar bir araya konulmaz.",
+     "isCorrect": false
+    },
+    {
+     "label": "B",
+     "text": "Nezarethanede zaruri hâller dışında beşten fazla kişi bir arada bulundurulmaz.",
+     "isCorrect": false
+    },
+    {
+     "label": "C",
+     "text": "Tuvalet, temizlik gibi zorunlu ihtiyaçların giderilmesi görevli memurun gözetiminde sağlanır.",
+     "isCorrect": false
+    },
+    {
+     "label": "D",
+     "text": "Gözaltına alınan kişi saldırgan bir tutum sergilemeye başladığı takdirde önce kuvvet kullanılır, eğer tutum önlenemezse diğer kişilerden ayrı bir yere alınır.",
+     "isCorrect": true
+    },
+    {
+     "label": "E",
+     "text": "Saldırgan tutum ve davranışları kontrol altına alınamayan kişiler tıbbî müdahalede bulunulması için sağlık kuruluşlarına gönderilir.",
+     "isCorrect": false
+    }
+   ],
+   "question": {
+    "articleNo": null,
+    "topic": {
+     "name": "5271 Sayılı Ceza Muhakemesi Kanunu (CMK)"
+    }
+   }
+  }
+ },
+ {
+  "sinif": "yigilma",
+  "gerekce": "Benzerlik taraması (21 Kas 2026): Aynı soru (kök ve şıklar aynı ya da yalnız yazım farkı). Kalan soru 6dfdb7d2 (5271 Sayılı Ceza Muhakemesi Kanunu (CMK)). Kullanıcı onayı 21 Kas 2026.",
+  "arsivlenen": {
+   "id": "b5c5df6d-b0b4-489f-ac66-f96cf2e4b6a2",
+   "questionId": "b5bc1a21-b532-4e40-8226-aa5550054bb1",
+   "stem": "I. Hâlen işlenmekte olan suç\nII. Hâlen işlenmemekle birlikte işlenmesi muhakkak olan suç\nIII. Fiilin işlenmesinden hemen sonra yakalanan kişinin işlediği suç\nIV. Fiilin pek az önce işlendiğini gösteren eşya veya delille yakalanan kimsenin işlediği suç\nYukarıdakilerden hangisi ya da hangileri suçüstü (meşhut suç) kapsamına girmektedir?",
+   "explanation": "5271 sayılı CMK m.2 fıkra (j) hükmüne göre SUÇÜSTÜ (meşhut suç) yalnızca üç hâli kapsar: hâlen işlenmekte olan suç; henüz işlenmiş olan fiille birlikte, işlenmesinden hemen sonra kolluk, suçtan zarar gören veya başkaları tarafından takip edilerek yakalanan kişinin işlediği suç; ve fiilin pek az önce işlendiğini gösteren eşya veya delille yakalanan kimsenin işlediği suç. Henüz işlenmemiş olan ama işlenmesi kesin (muhakkak) görülen bir fiil bu tanımın DIŞINDA kalır; suçüstü kavramı yalnızca işlenmiş veya işlenmekte olan fiiller için geçerlidir, ihtimal veya öngörüye dayanan durumlar kapsam dışıdır.",
+   "sourceLabel": null,
+   "options": [
+    {
+     "label": "A",
+     "text": "I ve II",
+     "isCorrect": false
+    },
+    {
+     "label": "B",
+     "text": "III ve IV",
+     "isCorrect": false
+    },
+    {
+     "label": "C",
+     "text": "I, III ve IV",
+     "isCorrect": true
+    },
+    {
+     "label": "D",
+     "text": "II, III ve IV",
+     "isCorrect": false
+    },
+    {
+     "label": "E",
+     "text": "I, II, III ve IV",
+     "isCorrect": false
+    }
+   ],
+   "question": {
+    "articleNo": "2",
+    "topic": {
+     "name": "5271 Sayılı Ceza Muhakemesi Kanunu (CMK)"
+    }
+   }
+  }
+ },
+ {
+  "sinif": "yigilma",
+  "gerekce": "Benzerlik taraması (21 Kas 2026): Aynı soru (kök ve şıklar aynı ya da yalnız yazım farkı). Kalan soru b1800ad2 (5271 Sayılı Ceza Muhakemesi Kanunu (CMK)). Kullanıcı onayı 21 Kas 2026.",
+  "arsivlenen": {
+   "id": "1048c5fc-5ca3-431f-b014-0142fcb0202b",
+   "questionId": "d6f3c201-70af-4d14-b32a-3fe1b2d04b50",
+   "stem": "I. Şüpheli veya sanığa, bilgisi dışında olması kaydıyla susma hakkının bildirilmesi gerekir.\nII. Susma hakkı, sanığın ne zaman ve nasıl konuşacağı hususunda serbest olmasını zorunlu kılar.\nIII. Susma, cezanın tayininde aleyhe bir etki yaratmaz.\nYukarıdakilerden hangisi yada hangileri susma hakkının kapsamına dâhil değildir?",
+   "explanation": "",
+   "sourceLabel": null,
+   "options": [
+    {
+     "label": "A",
+     "text": "Yalnız I",
+     "isCorrect": true
+    },
+    {
+     "label": "B",
+     "text": "Yalnız II",
+     "isCorrect": false
+    },
+    {
+     "label": "C",
+     "text": "Yalnız III",
+     "isCorrect": false
+    },
+    {
+     "label": "D",
+     "text": "I ve III",
+     "isCorrect": false
+    },
+    {
+     "label": "E",
+     "text": "I, II ve III",
+     "isCorrect": false
+    }
+   ],
+   "question": {
+    "articleNo": null,
+    "topic": {
+     "name": "5271 Sayılı Ceza Muhakemesi Kanunu (CMK)"
+    }
+   }
+  }
+ },
+ {
+  "sinif": "yigilma",
+  "gerekce": "Benzerlik taraması (21 Kas 2026): Aynı soru (kök ve şıklar aynı ya da yalnız yazım farkı). Kalan soru 89b5dfe3 (5271 Sayılı Ceza Muhakemesi Kanunu (CMK)). Kullanıcı onayı 21 Kas 2026.",
+  "arsivlenen": {
+   "id": "78f0191c-877f-49de-a00b-b0729a702c42",
+   "questionId": "bd80e828-3490-4d61-b2d0-e328542c9a23",
+   "stem": "Aşağıdakilerden hangisi şüpheli veya sanığın ceza muhakemesinde sahip olduğu haklar içerisinde yer almaz?",
+   "explanation": "CMK madde 237/1 uyarınca kamu davasına katılma (müdahil olma) hakkı yalnızca mağdura, suçtan zarar gören gerçek ve tüzel kişilere ve malen sorumlu olanlara tanınmıştır; şüpheli veya sanığın davaya müdahil olma diye bir hakkı YOKTUR, çünkü müdahillik zaten sanığın karşı tarafını ifade eder. Buna karşılık şüpheli veya sanığın adil yargılanma, aleni (açık) yargılanma, kendini suçlamaya zorlanmama (susma hakkı, CMK m.147/e) ve savunmada müdafi yardımından yararlanma/müdafinin yanında bulunması (CMK m.149) gibi hakları vardır. Sık sık karıştırılan nokta, 'katılan' sıfatının sanığa değil mağdur tarafına ait bir kurum olduğunun gözden kaçırılmasıdır.",
+   "sourceLabel": null,
+   "options": [
+    {
+     "label": "A",
+     "text": "Davaya müdahil olma hakkı",
+     "isCorrect": true
+    },
+    {
+     "label": "B",
+     "text": "Adil yargılanma hakkı",
+     "isCorrect": false
+    },
+    {
+     "label": "C",
+     "text": "Aleni yargılanma hakkı",
+     "isCorrect": false
+    },
+    {
+     "label": "D",
+     "text": "Kendini suçlamaya zorlanmama hakkı",
+     "isCorrect": false
+    },
+    {
+     "label": "E",
+     "text": "Savunmada hazır bulunma hakkı",
+     "isCorrect": false
+    }
+   ],
+   "question": {
+    "articleNo": "237",
+    "topic": {
+     "name": "5271 Sayılı Ceza Muhakemesi Kanunu (CMK)"
+    }
+   }
+  }
+ },
+ {
+  "sinif": "yigilma",
+  "gerekce": "Benzerlik taraması (21 Kas 2026): Aynı sınav iki kez içe aktarılmış (2022 Kaymakamlık). Kalan soru ac3533d0 (5302 İl Özel İdaresi Kanunu). Kullanıcı onayı 21 Kas 2026.",
+  "arsivlenen": {
+   "id": "44adb037-0cdd-4dfb-86cd-227129d3621b",
+   "questionId": "4260e35b-d137-4148-b16d-a0f40700291c",
+   "stem": "5302 sayılı İl Özel İdaresi Kanunu’na göre, encümen toplantısıyla ilgili aşağıdaki ifadelerden hangisi yanlıştır?",
+   "explanation": "5302 sayılı İl Özel İdaresi Kanunu'na göre encümen, haftada en az bir defa olmak üzere önceden belirlenen gün ve saatte toplanır; acil durumlarda başkan ayrıca toplantıya çağırabilir. 'Ayda en az bir defa' ölçüsü encümenin değil, toplanma sıklığı daha seyrek olan organların ölçüsüdür. Aynı maddede yer alan diğer kurallar doğrudur: encümen üye tam sayısının salt çoğunluğuyla toplanır, üyeler gündem maddesi teklif edebilir, gündemdeki konular en geç bir hafta içinde karara bağlanır ve valinin yeniden görüşülmesini istediği kararda encümen ısrar ederse karar kesinleşir.",
+   "sourceLabel": "2022 Kaymakamlık Sınavı (çıkmış sorular)",
+   "options": [
+    {
+     "label": "A",
+     "text": "Encümen üyeleri gündem maddesi teklif edebilir.",
+     "isCorrect": false
+    },
+    {
+     "label": "B",
+     "text": "Kural olarak ayda en az bir defa toplanır.",
+     "isCorrect": true
+    },
+    {
+     "label": "C",
+     "text": "Üye tam sayısının salt çoğunluğuyla toplanır.",
+     "isCorrect": false
+    },
+    {
+     "label": "D",
+     "text": "Gündemindeki konuları en geç bir hafta içinde görüşüp karara bağlar.",
+     "isCorrect": false
+    },
+    {
+     "label": "E",
+     "text": "Valinin tekrar görüşülmesini istediği kararlarda encümen ısrar ederse karar kesinleşir.",
+     "isCorrect": false
+    }
+   ],
+   "question": {
+    "articleNo": null,
+    "topic": {
+     "name": "5302 İl Özel İdaresi Kanunu"
+    }
+   }
+  }
+ },
+ {
+  "sinif": "yigilma",
+  "gerekce": "Benzerlik taraması (21 Kas 2026): Aynı sınav iki kez içe aktarılmış (2022 Kaymakamlık). Kalan soru a550fd6c (5393 Belediye Kanunu). Kullanıcı onayı 21 Kas 2026.",
+  "arsivlenen": {
+   "id": "086e42bf-884e-4a56-b033-3b747885ff63",
+   "questionId": "7c6ae624-1a3f-45c5-8ca1-1642bd6ef9a8",
+   "stem": "Elazığ ilinin merkez ilçesinin Akçakiraz Belde Belediyesi ile Yazıkonak Belde Belediyesi arasında, Elazığ ilinin ve merkez ilçesinin sınırlarının değiştirilmesini gerektirmeyecek nitelikte sınır uyuşmazlığı çıkıyor.\n\n5393 sayılı Belediye Kanunu’na göre bu uyuşmazlığı, ilgililerin görüşlerini de değerlendirerek aşağıdakilerin hangisi karara bağlar?",
+   "explanation": "5393 sayılı Belediye Kanunu'nun 7. maddesine göre bir il dâhilindeki beldeler veya köyler arasında sınır uyuşmazlığı çıkması hâlinde ilgili belediye meclisi ve köy ihtiyar meclisi ile kaymakamın görüşleri otuz gün süre verilerek istenir ve vali bu görüşleri değerlendirerek uyuşmazlığı karara bağlar. Olayda uyuşmazlık il ve ilçe sınırlarının değiştirilmesini gerektirmediği için, aynı maddenin 5442 sayılı İl İdaresi Kanunu'na yollama yapan ikinci fıkrası devreye girmez ve karar valide kalır. Kaymakamın rolü karar vermek değil görüş bildirmektir.",
+   "sourceLabel": "2022 Kaymakamlık Sınavı (çıkmış sorular)",
+   "options": [
+    {
+     "label": "A",
+     "text": "Çevre, Şehircilik ve İklim Değişikliği bakanı",
+     "isCorrect": false
+    },
+    {
+     "label": "B",
+     "text": "Elazığ valisi",
+     "isCorrect": true
+    },
+    {
+     "label": "C",
+     "text": "Elazığ belediye başkanı",
+     "isCorrect": false
+    },
+    {
+     "label": "D",
+     "text": "Elazığ İl İdare Kurulu",
+     "isCorrect": false
+    },
+    {
+     "label": "E",
+     "text": "Elazığ İl Genel Meclisi",
+     "isCorrect": false
+    }
+   ],
+   "question": {
+    "articleNo": null,
+    "topic": {
+     "name": "5393 Belediye Kanunu"
+    }
+   }
+  }
+ },
+ {
+  "sinif": "yigilma",
+  "gerekce": "Benzerlik taraması (21 Kas 2026): Aynı soru (kök ve şıklar aynı ya da yalnız yazım farkı). Kalan soru 097333fb (6136 Sayılı Ateşli Silahlar ve Bıçaklar Hakkında Kanun). Kullanıcı onayı 21 Kas 2026.",
+  "arsivlenen": {
+   "id": "7f65f266-302b-419c-9e14-98b84fab1172",
+   "questionId": "72b2e154-b7a7-4463-9e64-247b5ea3f70f",
+   "stem": "6136 sayılı Ateşli silahlar ve bıçaklar ile diğer Aletler hakkında kanun hükümlerine göre ateşli silahla işlenen suçlardan hükümlü bulunanlar ile taksirli suçlar hariç olmak üzere bir yıldan fazla hapis cezasına mahkûm olanlara, mahkûm olunan cezanın infazının tamamlandığı tarihten itibaren kaç yıl geçmedikçe ve haklarında yasaklanmış hakların geri verilmesine ilişkin karar verilmedikçe, ateşli silah taşıma ve bulundurma izni verilemez?",
+   "explanation": "Ateşli silahla işlenen suçlardan hükümlü olanlar ile taksirli suçlar dışında bir yıldan fazla hapis cezasına mahkûm olanlara, cezanın infazının tamamlandığı tarihten itibaren beş yıl geçmedikçe ve haklarında yasaklanmış hakların geri verilmesi kararı verilmedikçe silah taşıma ve bulundurma izni verilemez (6136 sayılı Kanun md 7). Bu beş yıllık süre iki koşuldan yalnızca biridir; süre dolsa bile yasaklanmış hakların geri verilmesi kararı olmadan izin verilemez.",
+   "sourceLabel": null,
+   "options": [
+    {
+     "label": "A",
+     "text": "Bir",
+     "isCorrect": false
+    },
+    {
+     "label": "B",
+     "text": "İki",
+     "isCorrect": false
+    },
+    {
+     "label": "C",
+     "text": "Üç",
+     "isCorrect": false
+    },
+    {
+     "label": "D",
+     "text": "Dört",
+     "isCorrect": false
+    },
+    {
+     "label": "E",
+     "text": "Beş",
+     "isCorrect": true
+    }
+   ],
+   "question": {
+    "articleNo": null,
+    "topic": {
+     "name": "6136 Sayılı Ateşli Silahlar ve Bıçaklar Hakkında Kanun"
+    }
+   }
+  }
+ },
+ {
+  "sinif": "yigilma",
+  "gerekce": "Benzerlik taraması (21 Kas 2026): Aynı sınav iki kez içe aktarılmış (2022 Kaymakamlık). Kalan soru 4889b0ed (657 Sayılı Devlet Memurları Kanunu). Kullanıcı onayı 21 Kas 2026.",
+  "arsivlenen": {
+   "id": "3d625bf4-1d51-42d6-b0c7-d745c97d73af",
+   "questionId": "6f980585-b7ef-4939-8164-56c4dbaa3faf",
+   "stem": "657 sayılı Devlet Memurları Kanunu’na göre; şahsen özel burs sağlayan ve bu burstan istifade etmesi için kendilerine maaşsız izin verilenler dışında her yıl yurt dışına gönderilebilecek devlet memurlarının kurumlar itibarıyla sayıları, aşağıdakilerden hangisinin kararıyla belirlenir?",
+   "explanation": "657 sayılı Devlet Memurları Kanunu'nun 80. maddesinin birinci fıkrası, şahsen özel burs sağlayan ve bu burstan yararlanmak için kendilerine maaşsız izin verilenler dışında her yıl yurt dışına gönderilebilecek Devlet memurlarının kurumlar itibarıyla sayılarının Cumhurbaşkanı kararıyla belirleneceğini düzenler. Bu yetki 2018'de 703 sayılı Kanun Hükmünde Kararname ile Bakanlar Kurulundan Cumhurbaşkanına geçmiştir; eski metne dayanan anlatımlarda hâlâ Bakanlar Kurulu geçebilir. Hiçbir bakana bu konuda tek başına belirleme yetkisi tanınmamıştır.",
+   "sourceLabel": "2022 Kaymakamlık Sınavı (çıkmış sorular)",
+   "options": [
+    {
+     "label": "A",
+     "text": "Cumhurbaşkanı",
+     "isCorrect": true
+    },
+    {
+     "label": "B",
+     "text": "İçişleri bakanı",
+     "isCorrect": false
+    },
+    {
+     "label": "C",
+     "text": "Hazine ve Maliye bakanı",
+     "isCorrect": false
+    },
+    {
+     "label": "D",
+     "text": "Millî Eğitim bakanı",
+     "isCorrect": false
+    },
+    {
+     "label": "E",
+     "text": "Dışişleri bakanı",
+     "isCorrect": false
+    }
+   ],
+   "question": {
+    "articleNo": null,
+    "topic": {
+     "name": "657 Sayılı Devlet Memurları Kanunu"
+    }
+   }
+  }
+ },
+ {
+  "sinif": "yigilma",
+  "gerekce": "Benzerlik taraması (21 Kas 2026): Aynı soru (kök ve şıklar aynı ya da yalnız yazım farkı). Kalan soru f0334495 (Atatürk İlkeleri ve İnkılap Tarihi). Kullanıcı onayı 21 Kas 2026.",
+  "arsivlenen": {
+   "id": "c6a84f9a-b2df-409e-a27d-300ff412f653",
+   "questionId": "62c524a4-f947-4deb-bb8c-02d2845967fb",
+   "stem": "Aşağıdakilerden hangisi Sadrazam Tevfik Paşa'nın söz hakkını TBMM Hükûmeti temsilcilerine bıraktığı ve İtilaf Devletleri'nin TBMM Hükûmeti'ni resmen tanıdıkları uluslararası konferansdır?",
+   "explanation": null,
+   "sourceLabel": null,
+   "options": [
+    {
+     "label": "A",
+     "text": "San Remo Konferansı",
+     "isCorrect": false
+    },
+    {
+     "label": "B",
+     "text": "Londra Konferansı",
+     "isCorrect": true
+    },
+    {
+     "label": "C",
+     "text": "Lozan Konferansı",
+     "isCorrect": false
+    },
+    {
+     "label": "D",
+     "text": "Bükreş Konferansı",
+     "isCorrect": false
+    },
+    {
+     "label": "E",
+     "text": "Spa Konferansı",
+     "isCorrect": false
+    }
+   ],
+   "question": {
+    "articleNo": null,
+    "topic": {
+     "name": "Atatürk İlkeleri ve İnkılap Tarihi"
+    }
+   }
+  }
+ },
+ {
+  "sinif": "yigilma",
+  "gerekce": "Benzerlik taraması (21 Kas 2026): Aynı soru (kök ve şıklar aynı ya da yalnız yazım farkı). Kalan soru 3c138ca9 (Atatürk İlkeleri ve İnkılap Tarihi). Kullanıcı onayı 21 Kas 2026.",
+  "arsivlenen": {
+   "id": "3ef5d831-ad00-435c-9733-b0ffd132df9c",
+   "questionId": "ed0ece73-0116-42b7-8ae7-a0241e3f7a1a",
+   "stem": "Aşağıdakilerden hangisi Mustafa Kemal Paşa’nın telkinleriyle kurulan; ancak Cumhuriyet’e karşı olanların faaliyetleri nedeniyle kurucuları tarafından kapatılan siyasi partidir?",
+   "explanation": null,
+   "sourceLabel": null,
+   "options": [
+    {
+     "label": "A",
+     "text": "Terakkiperver Cumhuriyet Fırkası",
+     "isCorrect": false
+    },
+    {
+     "label": "B",
+     "text": "Sulh ve Selamet-i Osmaniye Fırkası",
+     "isCorrect": false
+    },
+    {
+     "label": "C",
+     "text": "İttihat ve Terakki Fırkası",
+     "isCorrect": false
+    },
+    {
+     "label": "D",
+     "text": "Serbest Cumhuriyet Fırkası",
+     "isCorrect": true
+    },
+    {
+     "label": "E",
+     "text": "Cumhuriyet Halk Fırkası",
+     "isCorrect": false
+    }
+   ],
+   "question": {
+    "articleNo": null,
+    "topic": {
+     "name": "Atatürk İlkeleri ve İnkılap Tarihi"
+    }
+   }
+  }
+ },
+ {
+  "sinif": "yigilma",
+  "gerekce": "Benzerlik taraması (21 Kas 2026): Aynı soru, kökü yeniden yazılmış (şıklar ve anahtar aynı). Kalan soru b585f541 (Atatürk İlkeleri ve İnkılap Tarihi). Kullanıcı onayı 21 Kas 2026.",
+  "arsivlenen": {
+   "id": "73683c8c-ad08-4a00-ba30-23dcb33bd08c",
+   "questionId": "23da94d7-9359-420b-bc44-c24280d55fa8",
+   "stem": "Aşağıdakilerden hangisi Lozan Antlaşması’ndan sonra, Türkiye Cumhuriyeti hükûmetleri için bir sorun oluşturmamıştır?",
+   "explanation": null,
+   "sourceLabel": null,
+   "options": [
+    {
+     "label": "A",
+     "text": "Boğazlar meselesi",
+     "isCorrect": false
+    },
+    {
+     "label": "B",
+     "text": "Kapitülasyonlar",
+     "isCorrect": true
+    },
+    {
+     "label": "C",
+     "text": "Türkiye - Irak sınırı",
+     "isCorrect": false
+    },
+    {
+     "label": "D",
+     "text": "Hatay meselesi",
+     "isCorrect": false
+    },
+    {
+     "label": "E",
+     "text": "Türk - Yunan ilişkileri",
+     "isCorrect": false
+    }
+   ],
+   "question": {
+    "articleNo": null,
+    "topic": {
+     "name": "Atatürk İlkeleri ve İnkılap Tarihi"
+    }
+   }
+  }
+ },
+ {
+  "sinif": "yigilma",
+  "gerekce": "Benzerlik taraması (21 Kas 2026): Aynı soru, kökü yeniden yazılmış (şıklar ve anahtar aynı). Kalan soru 209feec7 (Atatürk İlkeleri ve İnkılap Tarihi). Kullanıcı onayı 21 Kas 2026.",
+  "arsivlenen": {
+   "id": "9cc658b8-6e63-4904-8bc8-1bdec2868c19",
+   "questionId": "e69e1139-6f14-4f4e-894f-8cc98c48370b",
+   "stem": "Aşağıdakilerden hangisi Sosyal alanda yapılan inkılaplar arasında yer almaz?",
+   "explanation": null,
+   "sourceLabel": null,
+   "options": [
+    {
+     "label": "A",
+     "text": "Din adamlarına ibadet yerlerinde şapka takma mecburiyeti getirilmesi",
+     "isCorrect": true
+    },
+    {
+     "label": "B",
+     "text": "Soyadı Kanunu’nun kabulü",
+     "isCorrect": false
+    },
+    {
+     "label": "C",
+     "text": "Tekke ve zaviyelerin kapatılması",
+     "isCorrect": false
+    },
+    {
+     "label": "D",
+     "text": "Kılık Kıyafet Kanunu’nun çıkarılması",
+     "isCorrect": false
+    },
+    {
+     "label": "E",
+     "text": "Takvim, saat ve ölçülerde değişiklikler",
+     "isCorrect": false
+    }
+   ],
+   "question": {
+    "articleNo": null,
+    "topic": {
+     "name": "Atatürk İlkeleri ve İnkılap Tarihi"
+    }
+   }
+  }
+ },
+ {
+  "sinif": "yigilma",
+  "gerekce": "Benzerlik taraması (21 Kas 2026): Aynı soru, kökü yeniden yazılmış (şıklar ve anahtar aynı). Kalan soru 693dff95 (Atatürk İlkeleri ve İnkılap Tarihi). Kullanıcı onayı 21 Kas 2026.",
+  "arsivlenen": {
+   "id": "4d65f347-400a-455e-89bc-f1aa897bf30d",
+   "questionId": "e33991e5-1067-4e68-9931-d3ef7364f074",
+   "stem": "Aşağıdakilerden hangisi Mustafa Kemal Paşa'nın, şapka giymek suretiyle Şapka İnkılabı'nı başlattığı şehirdir?",
+   "explanation": "",
+   "sourceLabel": null,
+   "options": [
+    {
+     "label": "A",
+     "text": "Edirne",
+     "isCorrect": false
+    },
+    {
+     "label": "B",
+     "text": "Kastamonu",
+     "isCorrect": true
+    },
+    {
+     "label": "C",
+     "text": "Erzurum",
+     "isCorrect": false
+    },
+    {
+     "label": "D",
+     "text": "Kütahya",
+     "isCorrect": false
+    },
+    {
+     "label": "E",
+     "text": "İzmir",
+     "isCorrect": false
+    }
+   ],
+   "question": {
+    "articleNo": null,
+    "topic": {
+     "name": "Atatürk İlkeleri ve İnkılap Tarihi"
+    }
+   }
+  }
+ },
+ {
+  "sinif": "yigilma",
+  "gerekce": "Benzerlik taraması (21 Kas 2026): Aynı sınav iki kez içe aktarılmış (2022 Kaymakamlık). Kalan soru 229b12e5 (İdare Hukuku). Kullanıcı onayı 21 Kas 2026.",
+  "arsivlenen": {
+   "id": "748e9e04-1bb9-4d03-99c1-aca8af208763",
+   "questionId": "6cdf6f73-8344-4eeb-be2c-8298b820c261",
+   "stem": "Kamu Denetçiliği Kurumu ile ilgili aşağıdaki ifadelerden hangisi yanlıştır?",
+   "explanation": "Kamu Denetçiliği Kurumu, Türkiye Büyük Millet Meclisi Başkanlığına bağlı, kamu tüzel kişiliğini haiz ve özel bütçeli bir kurumdur; Başdenetçilik ile Genel Sekreterlikten oluşur, Başdenetçi ve denetçilerin görev süresi dört yıldır ve Türk Silahlı Kuvvetlerinin sırf askerî nitelikteki faaliyetleri Kurumun görev alanı dışındadır. Başdenetçi ise Hâkimler ve Savcılar Kurulu üyeleri arasından değil, kanunda aranan nitelikleri taşıyan aday adayları arasından ilgili komisyonca belirlenen üç aday üzerinden Meclis Genel Kurulunca gizli oyla seçilir.",
+   "sourceLabel": "2022 Kaymakamlık Sınavı (çıkmış sorular)",
+   "options": [
+    {
+     "label": "A",
+     "text": "Başdenetçilik ve Genel Sekreterlikten oluşur.",
+     "isCorrect": false
+    },
+    {
+     "label": "B",
+     "text": "Başdenetçi ve denetçilerin görev süreleri 4 yıldır.",
+     "isCorrect": false
+    },
+    {
+     "label": "C",
+     "text": "Türkiye Büyük Millet Meclisi Başkanlığına bağlıdır.",
+     "isCorrect": false
+    },
+    {
+     "label": "D",
+     "text": "Başdenetçi; Hâkimler ve Savcılar Kurulu üyeleri arasından seçilir.",
+     "isCorrect": true
+    },
+    {
+     "label": "E",
+     "text": "Türk Silahlı Kuvvetlerinin sırf askerî nitelikteki faaliyetleri, görev alanına girmez.",
+     "isCorrect": false
+    }
+   ],
+   "question": {
+    "articleNo": null,
+    "topic": {
+     "name": "İdare Hukuku"
+    }
+   }
+  }
+ },
+ {
+  "sinif": "yigilma",
+  "gerekce": "Benzerlik taraması (21 Kas 2026): Aynı sınav iki kez içe aktarılmış (2022 Kaymakamlık). Kalan soru 7d3e2393 (İdare Hukuku). Kullanıcı onayı 21 Kas 2026.",
+  "arsivlenen": {
+   "id": "617ea8ac-d181-436c-99e7-5f2b04d74a3f",
+   "questionId": "ba62aeb0-905c-46da-8157-3c6aeca061ca",
+   "stem": "Diyanet İşleri başkanının atanmasına dair Cumhurbaşkanı kararı, Resmî Gazete’de yayımlanıyor.\n\nYukarıdaki idari işlemin; maddi açıdan, iradenin sayısı açısından ve iradenin dış dünyaya yansıması açısından tasnifi, sırasıyla aşağıdakilerin hangisinde doğru verilmiştir?",
+   "explanation": "Atama işlemi, belli bir kişiyi önceden objektif kurallarla düzenlenmiş bir statüye soktuğu için maddi bakımdan şart işlemdir. Tek bir makamın tek iradesiyle kurulduğundan irade sayısı bakımından basit işlem, Resmî Gazete'de yayımlanarak açıkça ortaya konduğundan da sarih işlemdir. Buradaki tuzak subjektif işlemle karıştırmaktır: subjektif işlem ilgilisine özgü, yeni ve özel bir hukuki durum yaratır; atamada ise kişi hazır bir statüye yerleştirilir.",
+   "sourceLabel": "2022 Kaymakamlık Sınavı (çıkmış sorular)",
+   "options": [
+    {
+     "label": "A",
+     "text": "Şart işlem - Basit işlem - Sarih işlem",
+     "isCorrect": true
+    },
+    {
+     "label": "B",
+     "text": "Şart işlem - Karma işlem - Zımni işlem",
+     "isCorrect": false
+    },
+    {
+     "label": "C",
+     "text": "Subjektif işlem - Basit işlem - Sarih işlem",
+     "isCorrect": false
+    },
+    {
+     "label": "D",
+     "text": "Subjektif işlem - Basit işlem - Zımni işlem",
+     "isCorrect": false
+    },
+    {
+     "label": "E",
+     "text": "Düzenleyici işlem - Karma işlem - Sarih işlem",
+     "isCorrect": false
+    }
+   ],
+   "question": {
+    "articleNo": null,
+    "topic": {
+     "name": "İdare Hukuku"
+    }
+   }
+  }
+ },
+ {
+  "sinif": "yigilma",
+  "gerekce": "Benzerlik taraması (21 Kas 2026): Aynı soru (kök ve şıklar aynı ya da yalnız yazım farkı). Kalan soru 4e8f2ac5 (İnsan Hakları). Kullanıcı onayı 21 Kas 2026.",
+  "arsivlenen": {
+   "id": "ca091108-7978-4ac3-a230-f275161ce0f9",
+   "questionId": "92541b3b-ad44-446b-bb9a-68d0abaa2983",
+   "stem": "Birleşmiş Milletler sözleşme dışı koruma mekanizmaları arasında yer alan 1503 usulü için aşağıdakilerden hangisi yanlıştır?",
+   "explanation": "Ekonomik ve Sosyal Konseyin 27 Mayıs 1970 tarihli 1503 (XLVIII) sayılı kararıyla kurulan usulün ayırt edici özelliği gizliliktir: başvurular ve alt komisyon ile Komisyon aşamasındaki görüşmeler kapalı yürütülür. Başvurular Genel Sekretere iletilir ve süzgeçten geçirilerek İnsan Hakları Komisyonunun önüne gelir; usul, aleni tartışmaya dayanan 1235 usulünü tamamlar. Tuzak, iki usulü birbirine karıştırmaktır: aleni olan 1235, gizli olan 1503'tür.",
+   "sourceLabel": null,
+   "options": [
+    {
+     "label": "A",
+     "text": "Ekonomik ve Sosyal Konseyin 1503 sayılı kararına dayanır.",
+     "isCorrect": false
+    },
+    {
+     "label": "B",
+     "text": "Kararla İnsan Hakları Komisyonuna soruşturma izni verilmiştir.",
+     "isCorrect": false
+    },
+    {
+     "label": "C",
+     "text": "1235 sayılı kararla eksik kalan kısımlar 1503 sayılı kararla tamamlanmıştır.",
+     "isCorrect": false
+    },
+    {
+     "label": "D",
+     "text": "Bu karara istinaden yapılan başvurular Birleşmiş Milletler Genel Sekreterine yapılır.",
+     "isCorrect": false
+    },
+    {
+     "label": "E",
+     "text": "Başvuru ve görüşmeler açık yürütülür.",
+     "isCorrect": true
+    }
+   ],
+   "question": {
+    "articleNo": null,
+    "topic": {
+     "name": "İnsan Hakları"
+    }
+   }
+  }
+ },
+ {
+  "sinif": "yigilma",
+  "gerekce": "Benzerlik taraması (21 Kas 2026): Aynı sınav iki kez içe aktarılmış (2022 Kaymakamlık). Kalan soru 4860ed27 (T.C. Anayasası). Kullanıcı onayı 21 Kas 2026.",
+  "arsivlenen": {
+   "id": "ed56232d-c53f-4fe6-9b81-f1f5b81fa650",
+   "questionId": "3fe8fe1d-05b7-4512-8b7c-dfcf6d84f69c",
+   "stem": "360 üyeden oluşan Yargıtay Genel Kurulu, Yargıtay birinci başkanını seçmek üzere 340 üyeyle toplanmıştır.\n\n1982 Anayasası'na göre, Yargıtay birinci başkanının seçilebilmesi için gerekli olan asgari oy sayısı kaçtır?",
+   "explanation": "Yargıtay Birinci Başkanı, birinci başkanvekilleri ve daire başkanları, kendi üyeleri arasından Yargıtay Genel Kurulunca üye tamsayısının salt çoğunluğu ve gizli oyla dört yıl için seçilir. Ölçüt toplantıya katılan üye sayısı değil üye tamsayısı olduğundan 340 rakamı hesaba girmez; 360 üyelik tamsayının salt çoğunluğu 181'dir. Tuzak, salt çoğunluğu toplantıya katılanlar üzerinden hesaplayıp 171'de karar kılmaktır.",
+   "sourceLabel": "2022 Kaymakamlık Sınavı (çıkmış sorular)",
+   "options": [
+    {
+     "label": "A",
+     "text": "90",
+     "isCorrect": false
+    },
+    {
+     "label": "B",
+     "text": "171",
+     "isCorrect": false
+    },
+    {
+     "label": "C",
+     "text": "181",
+     "isCorrect": true
+    },
+    {
+     "label": "D",
+     "text": "216",
+     "isCorrect": false
+    },
+    {
+     "label": "E",
+     "text": "240",
+     "isCorrect": false
+    }
+   ],
+   "question": {
+    "articleNo": null,
+    "topic": {
+     "name": "T.C. Anayasası"
+    }
+   }
+  }
+ },
+ {
+  "sinif": "yigilma",
+  "gerekce": "Benzerlik taraması (21 Kas 2026): Aynı sınav iki kez içe aktarılmış (2022 Kaymakamlık). Kalan soru 61b96926 (T.C. Anayasası). Kullanıcı onayı 21 Kas 2026.",
+  "arsivlenen": {
+   "id": "27df7f1f-6581-43f2-8b2f-5fe2087a7823",
+   "questionId": "602523ae-6406-4398-8190-ddf0c3924cef",
+   "stem": "1982 Anayasası’na göre, kişilerin haysiyet ve şereflerine dokunulması veya kendileriyle ilgili gerçeğe aykırı yayınlar yapılması hâllerinde tanınan ve kanunla düzenlenen hak aşağıdakilerden hangisidir?",
+   "explanation": "Kişilerin haysiyet ve şereflerine dokunulması veya kendileriyle ilgili gerçeğe aykırı yayınlar yapılması hâllerinde tanınan ve kanunla düzenlenen hak, düzeltme ve cevap hakkıdır. Düzeltme ve cevap yayımlanmazsa, yayımlanmasının gerekip gerekmediğine ilgilinin müracaat tarihinden itibaren en geç yedi gün içinde hâkim karar verir. Hak arama hürriyeti ve kanuni hâkim güvencesi yargısal başvuruya ilişkin güvenceler olduğundan burada aranan yayın karşısındaki cevap hakkını karşılamaz.",
+   "sourceLabel": "2022 Kaymakamlık Sınavı (çıkmış sorular)",
+   "options": [
+    {
+     "label": "A",
+     "text": "Düzeltme ve cevap hakkı",
+     "isCorrect": true
+    },
+    {
+     "label": "B",
+     "text": "Hak arama hürriyeti",
+     "isCorrect": false
+    },
+    {
+     "label": "C",
+     "text": "Mülkiyet hakkı",
+     "isCorrect": false
+    },
+    {
+     "label": "D",
+     "text": "Kanuni hâkim güvencesi",
+     "isCorrect": false
+    },
+    {
+     "label": "E",
+     "text": "İspat hakkı",
+     "isCorrect": false
+    }
+   ],
+   "question": {
+    "articleNo": null,
+    "topic": {
+     "name": "T.C. Anayasası"
+    }
+   }
+  }
+ },
+ {
+  "sinif": "yigilma",
+  "gerekce": "Benzerlik taraması (21 Kas 2026): Aynı soru (kök ve şıklar aynı ya da yalnız yazım farkı). Kalan soru d2cf1219 (T.C. Anayasası). Kullanıcı onayı 21 Kas 2026.",
+  "arsivlenen": {
+   "id": "1ebceb1c-a7eb-47ac-bcc7-af693fe5f958",
+   "questionId": "0452b449-1da5-4660-9455-85d952242481",
+   "stem": "Aşağıdakilerden hangisi Hâkimler ve Savcılar Kurulu'nun görevlerinden biri değildir?",
+   "explanation": "Anayasa m.159 fıkrasında HSK'nın görevleri tek tek sayılır: hâkim/savcıları mesleğe kabul etme, atama, nakletme, geçici yetki verme, yükselme ve birinci sınıfa ayırma, kadro dağıtma, meslekte kalmaları uygun görülmeyenler hakkında karar verme, disiplin cezası verme, görevden uzaklaştırma ve Adalet Bakanlığının mahkeme kaldırma/yargı çevresi değiştirme tekliflerini karara bağlama. Bunların hiçbirinde Anayasa Mahkemesi üyeliği seçimi yoktur; dolayısıyla E şıkkı HSK'nın görevi değildir ve doğru cevaptır. A, B, C şıkları doğrudan m.159 metninde sayılan görevlerdir. D şıkkı ise m.154'e dayanır: 'Yargıtay üyeleri... Hâkimler ve Savcılar Kurulunca... seçilir' ibaresinde Danıştay'daki (m.155) gibi bir oransal paylaşım (dörtte üç HSK/dörtte bir Cumhurbaşkanı) yer almadığından HSK Yargıtay üyelerinin tamamını seçer; bu da gerçek bir HSK görevidir. TUZAK: Anayasa Mahkemesi üye seçimi (m.146) TBMM (Sayıştay ve baro adaylarından) ile Cumhurbaşkanı (Yargıtay, Danıştay, YÖK adaylarından) arasında paylaşılmıştır — Yargıtay ve Danıştay genel kurulları burada yalnızca ADAY GÖSTERİR, seçimi Cumhurbaşkanı yapar; HSK'nın bu sürece hiçbir katılımı yoktur. Öğrenciler genellikle 'yüksek yargı organları birbirine üye seçer' varsayımıyla yanılır; oysa metin bu yetkiyi açıkça TBMM ve Cumhurbaşkanı'na hasretmiştir.",
+   "sourceLabel": null,
+   "options": [
+    {
+     "label": "A",
+     "text": "Adli ve idari yargı hâkim ve savcılarını mesleğe kabul etme, atama ve geçici yetki vermek",
+     "isCorrect": false
+    },
+    {
+     "label": "B",
+     "text": "Adalet Bakanlığının, bir mahkemenin kaldırılması veya yargı çevresinin değiştirilmesi konusundaki tekliflerini karara bağlamak",
+     "isCorrect": false
+    },
+    {
+     "label": "C",
+     "text": "Hâkim ve savcıları görevden uzaklaştırmak",
+     "isCorrect": false
+    },
+    {
+     "label": "D",
+     "text": "Yargıtay üyelerinin tümünü seçmek",
+     "isCorrect": false
+    },
+    {
+     "label": "E",
+     "text": "Anayasa Mahkemesine üye seçmek",
+     "isCorrect": true
+    }
+   ],
+   "question": {
+    "articleNo": "159",
+    "topic": {
+     "name": "T.C. Anayasası"
+    }
+   }
+  }
+ },
+ {
+  "sinif": "yigilma",
+  "gerekce": "Benzerlik taraması (21 Kas 2026): Aynı soru (kök ve şıklar aynı ya da yalnız yazım farkı). Kalan soru c2127063 (T.C. Anayasası). Kullanıcı onayı 21 Kas 2026.",
+  "arsivlenen": {
+   "id": "48f2608f-d533-4ac1-94cb-a76572cefc7d",
+   "questionId": "eeae0e6d-5765-48be-ab44-7b0e752cf80b",
+   "stem": "I. Bilgi edinme hakkı\nII. Kamu denetçisine başvurma hakkı\nIII. Dilekçe hakkı\nIV. Siyasi parti kurma hakkı\n1982 Anayasası'nda yukarıda sayılanlardan hangileri yalnızca Türk vatandaşlarına tanınmıştır?",
+   "explanation": "Anayasa m.74'e göre bilgi edinme ve kamu denetçisine başvurma hakları HERKESE tanınmıştır. Dilekçe hakkından vatandaşların yanında karşılıklılık şartıyla Türkiye'de ikamet eden yabancılar da yararlanabilir. Siyasi parti kurma hakkı ise m.68 uyarınca yalnız VATANDAŞLARA aittir.",
+   "sourceLabel": null,
+   "options": [
+    {
+     "label": "A",
+     "text": "Yalnız III",
+     "isCorrect": false
+    },
+    {
+     "label": "B",
+     "text": "Yalnız IV",
+     "isCorrect": true
+    },
+    {
+     "label": "C",
+     "text": "II ve IV",
+     "isCorrect": false
+    },
+    {
+     "label": "D",
+     "text": "I, II ve IV",
+     "isCorrect": false
+    }
+   ],
+   "question": {
+    "articleNo": "74",
+    "topic": {
+     "name": "T.C. Anayasası"
+    }
+   }
+  }
+ },
+ {
+  "sinif": "yigilma",
+  "gerekce": "Benzerlik taraması (21 Kas 2026): Aynı soru (kök ve şıklar aynı ya da yalnız yazım farkı). Kalan soru f0a81080 (T.C. Anayasası). Kullanıcı onayı 21 Kas 2026.",
+  "arsivlenen": {
+   "id": "75634ce0-985e-42ee-8486-2d42bc45fc5c",
+   "questionId": "7f12c628-f6de-493d-aa67-27adf46998b0",
+   "stem": "1982 Anayasası'na göre siyasi parti kapatma davasını açan ve davaya bakan merciler aşağıdakilerin hangisinde sırasıyla doğru verilmiştir?",
+   "explanation": "Anayasa m.69'a göre siyasi partilerin kapatılması, YARGITAY CUMHURİYET BAŞSAVCISININ açacağı dava üzerine ANAYASA MAHKEMESİNCE kesin olarak karara bağlanır.",
+   "sourceLabel": null,
+   "options": [
+    {
+     "label": "A",
+     "text": "Anayasa Mahkemesi - Anayasa Mahkemesi",
+     "isCorrect": false
+    },
+    {
+     "label": "B",
+     "text": "Anayasa Mahkemesi - Yargıtay",
+     "isCorrect": false
+    },
+    {
+     "label": "C",
+     "text": "Yargıtay - Anayasa Mahkemesi",
+     "isCorrect": false
+    },
+    {
+     "label": "D",
+     "text": "Yüksek Seçim Kurulu - Anayasa Mahkemesi",
+     "isCorrect": false
+    },
+    {
+     "label": "E",
+     "text": "Yargıtay Cumhuriyet Başsavcısı - Anayasa Mahkemesi",
+     "isCorrect": true
+    }
+   ],
+   "question": {
+    "articleNo": "69",
+    "topic": {
+     "name": "T.C. Anayasası"
+    }
+   }
+  }
+ },
+ {
+  "sinif": "yigilma",
+  "gerekce": "Benzerlik taraması (21 Kas 2026): Aynı soru (kök ve şıklar aynı ya da yalnız yazım farkı). Kalan soru 13e7a5ed (T.C. Anayasası). Kullanıcı onayı 21 Kas 2026.",
+  "arsivlenen": {
+   "id": "03946c63-a27e-42a0-8613-9258fbfbe77e",
+   "questionId": "cb3de7d0-866a-4784-8068-b396e297e244",
+   "stem": "1982 Anayasası'nda yakalama veya tutuklama konusunda, 'Bu esaslar dışında bir işleme tabi tutulan kişilerin uğradıkları zarar, tazminat hukukunun genel prensiplerine göre Devletçe ödenir.' hükmü aşağıdakilerden hangisi için güvence olarak düzenlenmiştir?",
+   "explanation": "Anayasa m.19, kişi hürriyeti ve güvenliğine ilişkin yakalama ve tutuklama güvencelerini düzenler. Maddede sayılan esaslara aykırı işleme tabi tutulanların zararı, tazminat hukukunun genel prensiplerine göre DEVLETÇE ÖDENİR.",
+   "sourceLabel": null,
+   "options": [
+    {
+     "label": "A",
+     "text": "Kişinin dokunulmazlığı",
+     "isCorrect": false
+    },
+    {
+     "label": "B",
+     "text": "Kişi hürriyeti ve güvenliği",
+     "isCorrect": true
+    },
+    {
+     "label": "C",
+     "text": "Adil yargılanma hakkı",
+     "isCorrect": false
+    },
+    {
+     "label": "D",
+     "text": "Hak arama hürriyeti",
+     "isCorrect": false
+    },
+    {
+     "label": "E",
+     "text": "Suç ve cezalara ilişkin esaslar",
+     "isCorrect": false
+    }
+   ],
+   "question": {
+    "articleNo": "19",
+    "topic": {
+     "name": "T.C. Anayasası"
+    }
+   }
+  }
+ },
+ {
+  "sinif": "yigilma",
+  "gerekce": "Benzerlik taraması (21 Kas 2026): Aynı sınav iki kez içe aktarılmış (2022 Kaymakamlık). Kalan soru 894f05d8 (T.C. Anayasası). Kullanıcı onayı 21 Kas 2026.",
+  "arsivlenen": {
+   "id": "69b92ba1-1c18-4efb-9086-c9c4005ac80b",
+   "questionId": "36f9d975-0835-4ea9-afeb-dc7bc7e49fea",
+   "stem": "I. Avukatlar\nII. Üst kademe yöneticileri\nIII. Birinci sınıf hâkim ve savcılar\n\n1982 Anayasası'na göre, Anayasa Mahkemesine üye seçilecek yukarıdaki meslek gruplarının hangileri için o meslek alanında en az 20 yıl çalışmış olma şartı aranır?",
+   "explanation": "Anayasa Mahkemesine üye seçilebilmek için kırk beş yaşın doldurulması yanında avukatlardan en az yirmi yıl fiilen avukatlık yapmış olmaları, üst kademe yöneticilerinden yükseköğrenim görmüş ve en az yirmi yıl kamu hizmetinde fiilen çalışmış olmaları, birinci sınıf hâkim ve savcılardan ise adaylık dâhil en az yirmi yıl çalışmış olmaları aranır; üç grup da yirmi yıllık kıdem şartına tabidir. Yirmi yıl ölçütü bulunmayan tek grup, profesör veya doçent unvanını kazanmış olması yeterli görülen yükseköğretim kurumu öğretim üyeleridir.",
+   "sourceLabel": "2022 Kaymakamlık Sınavı (çıkmış sorular)",
+   "options": [
+    {
+     "label": "A",
+     "text": "Yalnız I",
+     "isCorrect": false
+    },
+    {
+     "label": "B",
+     "text": "Yalnız II",
+     "isCorrect": false
+    },
+    {
+     "label": "C",
+     "text": "Yalnız III",
+     "isCorrect": false
+    },
+    {
+     "label": "D",
+     "text": "I ve II",
+     "isCorrect": false
+    },
+    {
+     "label": "E",
+     "text": "I, II ve III",
+     "isCorrect": true
+    }
+   ],
+   "question": {
+    "articleNo": null,
+    "topic": {
+     "name": "T.C. Anayasası"
+    }
+   }
+  }
+ },
+ {
+  "sinif": "yigilma",
+  "gerekce": "Benzerlik taraması (21 Kas 2026): Aynı sınav iki kez içe aktarılmış (2022 Kaymakamlık). Kalan soru 795b701e (T.C. Anayasası). Kullanıcı onayı 21 Kas 2026.",
+  "arsivlenen": {
+   "id": "0a075aaa-1b71-463a-972a-599c9ee8a731",
+   "questionId": "61558beb-27d3-4d39-8ed5-626a4523079d",
+   "stem": "1982 Anayasası ve Türkiye Büyük Millet Meclisi İçtüzüğü’ne göre bir milletvekili tek başına;\n\nI. kanun teklif etme,\nII. kanunların şekil bakımından Anayasa’ya aykırılığı iddiasıyla doğrudan iptal davası açma,\nIII. yazılı soru önergesi verme\n\nişlerinden hangilerini yapabilir?",
+   "explanation": "Kanun teklif etmeye milletvekilleri yetkilidir ve yazılı soru önergesi sadece bir milletvekili tarafından imzalanarak Başkanlığa verilir; bu iki iş tek bir milletvekilinin imzasıyla yapılabilir. Buna karşılık kanunların, Cumhurbaşkanlığı kararnamelerinin ve İçtüzüğün şekil veya esas bakımından Anayasa'ya aykırılığı iddiasıyla doğrudan doğruya iptal davası açma hakkı Cumhurbaşkanına, Mecliste en fazla üyeye sahip iki siyasi parti grubuna ve üye tamsayısının en az beşte biri tutarındaki üyelere aittir. Tuzak, şekil denetiminin kapsamının darlığına bakıp bu davanın tek imzayla açılabileceğini sanmaktır.",
+   "sourceLabel": "2022 Kaymakamlık Sınavı (çıkmış sorular)",
+   "options": [
+    {
+     "label": "A",
+     "text": "Yalnız I",
+     "isCorrect": false
+    },
+    {
+     "label": "B",
+     "text": "Yalnız II",
+     "isCorrect": false
+    },
+    {
+     "label": "C",
+     "text": "I ve III",
+     "isCorrect": true
+    },
+    {
+     "label": "D",
+     "text": "II ve III",
+     "isCorrect": false
+    },
+    {
+     "label": "E",
+     "text": "I, II ve III",
+     "isCorrect": false
+    }
+   ],
+   "question": {
+    "articleNo": null,
+    "topic": {
+     "name": "T.C. Anayasası"
+    }
+   }
+  }
+ },
+ {
+  "sinif": "yigilma",
+  "gerekce": "Benzerlik taraması (21 Kas 2026): Aynı soru (kök ve şıklar aynı ya da yalnız yazım farkı). Kalan soru 1eaa4e7c (T.C. Anayasası). Kullanıcı onayı 21 Kas 2026.",
+  "arsivlenen": {
+   "id": "9efe2634-fb80-470d-aaca-2243527ee69d",
+   "questionId": "7ed60c67-2625-4f89-b1ea-b3fa5d1c1206",
+   "stem": "Ekonomik ve Sosyal Konsey hangi yıl yapılan değişiklikle 1982 Anayasası'nda düzenlenmiştir?",
+   "explanation": "Ekonomik ve Sosyal Konsey, 7 Mayıs 2010 tarihli ve 5982 sayılı Kanun'un 23. maddesiyle Anayasa m.166'ya eklenmiştir.",
+   "sourceLabel": null,
+   "options": [
+    {
+     "label": "A",
+     "text": "2001",
+     "isCorrect": false
+    },
+    {
+     "label": "B",
+     "text": "2004",
+     "isCorrect": false
+    },
+    {
+     "label": "C",
+     "text": "2005",
+     "isCorrect": false
+    },
+    {
+     "label": "D",
+     "text": "2010",
+     "isCorrect": true
+    },
+    {
+     "label": "E",
+     "text": "2017",
+     "isCorrect": false
+    }
+   ],
+   "question": {
+    "articleNo": "166",
+    "topic": {
+     "name": "T.C. Anayasası"
+    }
+   }
+  }
+ },
+ {
+  "sinif": "yigilma",
+  "gerekce": "Benzerlik taraması (21 Kas 2026): Aynı soru (kök ve şıklar aynı ya da yalnız yazım farkı). Kalan soru 95b7ddc4 (T.C. Anayasası). Kullanıcı onayı 21 Kas 2026.",
+  "arsivlenen": {
+   "id": "b4356bb9-c63a-4e32-aa8a-9fa8e3ffab92",
+   "questionId": "d7b9ff73-f374-4d63-977f-750f4773ee7b",
+   "stem": "1982 Anayasası'nda 'çalışanların geçim şartlarının göz önünde bulundurulacağı' aşağıdakilerden hangisinin kapsamında açıkça belirtilmiştir?",
+   "explanation": "Anayasa m.55'e göre asgari ücretin tespitinde çalışanların GEÇİM ŞARTLARI ile ülkenin ekonomik durumu göz önünde bulundurulur.",
+   "sourceLabel": null,
+   "options": [
+    {
+     "label": "A",
+     "text": "Asgari ücretin tespitinde",
+     "isCorrect": true
+    },
+    {
+     "label": "B",
+     "text": "Sağlık hizmetlerinden yararlandırmada",
+     "isCorrect": false
+    },
+    {
+     "label": "C",
+     "text": "Konut hakkının kullandırılmasında",
+     "isCorrect": false
+    },
+    {
+     "label": "D",
+     "text": "Sosyal güvenlik hakkından yararlandırmada",
+     "isCorrect": false
+    },
+    {
+     "label": "E",
+     "text": "Grev hakkının kullanılmasında",
+     "isCorrect": false
+    }
+   ],
+   "question": {
+    "articleNo": "55",
+    "topic": {
+     "name": "T.C. Anayasası"
+    }
+   }
+  }
+ },
+ {
+  "sinif": "yigilma",
+  "gerekce": "Benzerlik taraması (21 Kas 2026): Aynı soru, kökü yeniden yazılmış (şıklar ve anahtar aynı). Kalan soru 74bb6f31 (T.C. Anayasası). Kullanıcı onayı 21 Kas 2026.",
+  "arsivlenen": {
+   "id": "9d325561-11e2-48fe-b183-e7bc042498d4",
+   "questionId": "568d4dde-7bd7-45d4-a8de-5e90f9617d30",
+   "stem": "I. Türk babanın ve Türk ananın çocuğu Türktür.\nII. Vatandaşlık, Cumhurbaşkanı kararıyla kazanılır ve kaybedilir.\nIII. Hiçbir Türk, vatana bağlılıkla bağdaşmayan bir eylemde bulunmadıkça vatandaşlıktan çıkarılamaz.\nIV. Vatandaşlıktan çıkarma ile ilgili karar ve işlemlere karşı yargı yolu kapatılamaz.\n1982 Anayasası'na göre Türk vatandaşlığıyla ilgili yukarıdaki ifadelerden hangileri Anayasa'da düzenlenmemiştir?",
+   "explanation": "Anayasa m.66, Türk babanın VEYA Türk ananın çocuğunun Türk olduğunu belirtir; I numaralı ifade 've' bağlacı nedeniyle Anayasa metniyle uyuşmaz. Vatandaşlık kanunun gösterdiği şartlarla kazanılır ve kanunda belirtilen hâllerde kaybedilir; Cumhurbaşkanı kararı anayasal kural değildir. III ve IV ise m.66'da açıkça yer alır.",
+   "sourceLabel": null,
+   "options": [
+    {
+     "label": "A",
+     "text": "I ve II",
+     "isCorrect": true
+    },
+    {
+     "label": "B",
+     "text": "I ve III",
+     "isCorrect": false
+    },
+    {
+     "label": "C",
+     "text": "II, III ve IV",
+     "isCorrect": false
+    },
+    {
+     "label": "D",
+     "text": "I ve IV",
+     "isCorrect": false
+    },
+    {
+     "label": "E",
+     "text": "I, II ve IV",
+     "isCorrect": false
+    }
+   ],
+   "question": {
+    "articleNo": "66",
+    "topic": {
+     "name": "T.C. Anayasası"
+    }
+   }
+  }
+ },
+ {
+  "sinif": "yigilma",
+  "gerekce": "Benzerlik taraması (21 Kas 2026): Aynı soru, kökü yeniden yazılmış (şıklar ve anahtar aynı). Kalan soru e4a0a29e (T.C. Anayasası). Kullanıcı onayı 21 Kas 2026.",
+  "arsivlenen": {
+   "id": "2f001156-3dc9-46dd-bf00-aafe6aeccfa6",
+   "questionId": "2ca7e076-ade0-4790-9184-fd6458017d33",
+   "stem": "I. İstifa eden milletvekilinin milletvekilliğinin düşürülmesi\nII. Milletvekilliğinin kesin hüküm giyme nedeniyle düşmesi\nIII. Milletvekilliğiyle bağdaşmayan bir görev veya hizmeti sürdürmekte ısrar eden milletvekilinin milletvekilliğinin düşürülmesi\nIV. Meclis çalışmalarına özürsüz veya izinsiz olarak bir ay içinde toplam beş birleşim günü katılmayan milletvekilinin milletvekilliğinin düşürülmesi\nV. Milletvekilinin kısıtlanması\n1982 Anayasası'na göre yukarıdaki durumlardan hangilerine karşı Anayasa Mahkemesine başvurulamaz?",
+   "explanation": "Anayasa m.85 uyarınca Anayasa Mahkemesine başvuru; dokunulmazlığın kaldırılması ile m.84'ün birinci, üçüncü veya dördüncü fıkralarına dayanan düşürme kararlarında mümkündür. Kesin hüküm giyme ve kısıtlanma hâllerinde üyelik, kesin mahkeme kararının Genel Kurula bildirilmesiyle düştüğünden bu yola başvurulamaz.",
+   "sourceLabel": null,
+   "options": [
+    {
+     "label": "A",
+     "text": "Yalnız I",
+     "isCorrect": false
+    },
+    {
+     "label": "B",
+     "text": "I ve II",
+     "isCorrect": false
+    },
+    {
+     "label": "C",
+     "text": "II ve V",
+     "isCorrect": true
+    },
+    {
+     "label": "D",
+     "text": "I, II ve III",
+     "isCorrect": false
+    },
+    {
+     "label": "E",
+     "text": "III, IV ve V",
+     "isCorrect": false
+    }
+   ],
+   "question": {
+    "articleNo": "85",
+    "topic": {
+     "name": "T.C. Anayasası"
+    }
+   }
+  }
+ },
+ {
+  "sinif": "yigilma",
+  "gerekce": "Benzerlik taraması (21 Kas 2026): Aynı soru, kökü yeniden yazılmış (şıklar ve anahtar aynı). Kalan soru 0daf055e (T.C. Anayasası). Kullanıcı onayı 21 Kas 2026.",
+  "arsivlenen": {
+   "id": "af1926ec-1981-41ae-951d-c15e14a6065e",
+   "questionId": "dc1b2f0d-ac3d-4916-8f58-3305cbeb290f",
+   "stem": "1982 Anayasası'na göre Cumhurbaşkanı, Anayasa Mahkemesine kaç üyeyi Yükseköğretim Kurulunun göstereceği adaylar arasından seçer?",
+   "explanation": "Anayasa m.146'ya göre Cumhurbaşkanı, en az ikisi hukukçu olmak üzere üç Anayasa Mahkemesi üyesini YÖK'ün kendi üyesi olmayan yükseköğretim kurumu öğretim üyeleri arasından göstereceği adaylar içinden seçer.",
+   "sourceLabel": null,
+   "options": [
+    {
+     "label": "A",
+     "text": "1",
+     "isCorrect": false
+    },
+    {
+     "label": "B",
+     "text": "2",
+     "isCorrect": false
+    },
+    {
+     "label": "C",
+     "text": "3",
+     "isCorrect": true
+    },
+    {
+     "label": "D",
+     "text": "4",
+     "isCorrect": false
+    },
+    {
+     "label": "E",
+     "text": "5",
+     "isCorrect": false
+    }
+   ],
+   "question": {
+    "articleNo": "146",
+    "topic": {
+     "name": "T.C. Anayasası"
+    }
+   }
+  }
+ },
+ {
+  "sinif": "yigilma",
+  "gerekce": "Benzerlik taraması (21 Kas 2026): Aynı soru, kökü yeniden yazılmış (şıklar ve anahtar aynı). Kalan soru 45f2495f (T.C. Anayasası). Kullanıcı onayı 21 Kas 2026.",
+  "arsivlenen": {
+   "id": "ee3e80d2-bcb9-4492-bf25-a74d66f3fa25",
+   "questionId": "73bfa986-cd30-40d9-a88d-eae1db48ddb5",
+   "stem": "I. Genel sağlık sigortası kurmak\nII. Toplu konut teşebbüslerini desteklemek\nIII. Gençleri alkol düşkünlüğünden korumak\n1982 Anayasası'na göre yukarıdakilerden hangileri Devlete yüklenmiş görevler arasında açıkça sayılmıştır?",
+   "explanation": "Anayasa m.56 genel sağlık sigortası kurulabilmesini, m.57 toplu konut teşebbüslerinin desteklenmesini ve m.58 gençlerin alkol düşkünlüğü gibi kötü alışkanlıklardan korunmasını düzenler. Üç öncül de anayasal hükme dayanmaktadır.",
+   "sourceLabel": null,
+   "options": [
+    {
+     "label": "A",
+     "text": "Yalnız I",
+     "isCorrect": false
+    },
+    {
+     "label": "B",
+     "text": "Yalnız II",
+     "isCorrect": false
+    },
+    {
+     "label": "C",
+     "text": "I ve II",
+     "isCorrect": false
+    },
+    {
+     "label": "D",
+     "text": "I ve III",
+     "isCorrect": false
+    },
+    {
+     "label": "E",
+     "text": "I, II ve III",
+     "isCorrect": true
+    }
+   ],
+   "question": {
+    "articleNo": "56",
+    "topic": {
+     "name": "T.C. Anayasası"
+    }
+   }
+  }
+ },
+ {
+  "sinif": "yigilma",
+  "gerekce": "Benzerlik taraması (21 Kas 2026): Aynı soru, kökü yeniden yazılmış (şıklar ve anahtar aynı). Kalan soru 7e7a6819 (T.C. Anayasası). Kullanıcı onayı 21 Kas 2026.",
+  "arsivlenen": {
+   "id": "9d5194b4-b10f-47e2-8479-d3a8ab6e5e2d",
+   "questionId": "6b976181-9608-4e8c-acb3-aa86d71c04bc",
+   "stem": "1982 Anayasası'na göre aşağıdakilerden hangisi milletvekilliği sıfatının kendiliğinden sona ermesi nedenlerinden biri değildir?",
+   "explanation": "Anayasa m.84'e göre istifa, milletvekilliğini tek başına ve kendiliğinden sona erdirmez. İstifanın geçerliliği önce TBMM Başkanlık Divanınca tespit edilir; ardından milletvekilliğinin düşmesine TBMM Genel Kurulunca karar verilir. Bu nedenle seçenekler arasında kendiliğinden sona erme nedeni olmayan hâl istifadır.",
+   "sourceLabel": null,
+   "options": [
+    {
+     "label": "A",
+     "text": "İstifa",
+     "isCorrect": true
+    },
+    {
+     "label": "B",
+     "text": "Cumhurbaşkanı seçilme",
+     "isCorrect": false
+    },
+    {
+     "label": "C",
+     "text": "Bakan olarak atanma",
+     "isCorrect": false
+    },
+    {
+     "label": "D",
+     "text": "Ölüm",
+     "isCorrect": false
+    },
+    {
+     "label": "E",
+     "text": "Yasama döneminin sona ermesi",
+     "isCorrect": false
+    }
+   ],
+   "question": {
+    "articleNo": "84",
+    "topic": {
+     "name": "T.C. Anayasası"
+    }
+   }
+  }
+ },
+ {
+  "sinif": "yigilma",
+  "gerekce": "Benzerlik taraması (21 Kas 2026): Aynı soru (kök ve şıklar aynı ya da yalnız yazım farkı). Kalan soru f06ce1e4 (Türk Ceza Kanunu). Kullanıcı onayı 21 Kas 2026.",
+  "arsivlenen": {
+   "id": "8f83770a-6b0b-4659-a1ce-cb2bb9e37849",
+   "questionId": "22a806a9-adf3-410c-90cd-f081ab9b6ca2",
+   "stem": "I. Hükümlünün ölümü\nII. Sanığın akıl hastası olması\nIII. Dava zamanaşımı\nIV. Ön ödeme\nHangileri kamu davasını düşüren nedenlerden değildir?",
+   "explanation": "Hükümlünün ölümünde kamu davası daha önce kesin hükümle sona ermiştir; ölüm cezanın infazına ilişkin sonuç doğurur. Sanığın akıl hastalığı da kamu davasını düşürmez. Dava zamanaşımı ve ön ödeme ise koşulları oluştuğunda kamu davasının düşmesine yol açar.",
+   "sourceLabel": null,
+   "options": [
+    {
+     "label": "A",
+     "text": "I ve II",
+     "isCorrect": true
+    },
+    {
+     "label": "B",
+     "text": "II ve III",
+     "isCorrect": false
+    },
+    {
+     "label": "C",
+     "text": "I ve IV",
+     "isCorrect": false
+    },
+    {
+     "label": "D",
+     "text": "III ve IV",
+     "isCorrect": false
+    },
+    {
+     "label": "E",
+     "text": "I, II ve IV",
+     "isCorrect": false
+    }
+   ],
+   "question": {
+    "articleNo": "64",
+    "topic": {
+     "name": "Türk Ceza Kanunu"
+    }
+   }
+  }
+ },
+ {
+  "sinif": "yigilma",
+  "gerekce": "Benzerlik taraması (21 Kas 2026): Aynı soru (kök ve şıklar aynı ya da yalnız yazım farkı). Kalan soru b68ea25b (Türk Ceza Kanunu). Kullanıcı onayı 21 Kas 2026.",
+  "arsivlenen": {
+   "id": "46d3a5fc-7f30-4ba4-a835-d6cbf60c8df2",
+   "questionId": "b01faf86-86a5-46cc-8264-4e38cfeb1a83",
+   "stem": "5237 sayılı Türk Ceza Kanunu'na göre, kanun hükümlerinin zaman bakımından uygulanmasıyla ilgili aşağıdaki ifadelerden hangisi yanlıştır?",
+   "explanation": "Suçun işlendiği zaman yürürlükte bulunan kanun ile sonradan yürürlüğe giren kanunların hükümleri farklı ise, failin lehine olan kanun uygulanır ve infaz olunur. Burada failin lehine hükümlerden anlaşılması gereken; yeni düzenlemelerin eskiye kıyasen failin durumunu daha iyi bir konuma getirmesidir. Dolayısıyla failin lehine olan yasa geçmişe yürür. Bu bakımdan kişinin şüpheli, sanık veya hükümlü olması önemli değildir. Yargılamasına başlanmamış, yargılamasına başlanmış, yargılama sonuçlandırılmış, alınan hüküm kesinleşerek hükmün infazına başlanılmış olsa dahi lehe kanun uygulanır. Ayrıca zaman bakımından uygulama açısından \"cezalar\" ile \"güvenlik tedbirleri\" aynı rejime tabidir. TCK'de lehe olan yasanın geçmişe uygulanması kuralı, geçici ve süreli yasalar yönünden kabul edilmemiştir. Buna göre, geçici ve süreli kanunlar, yürürlükte bulundukları süre içinde işlenmiş olan suçlar hakkında uygulanır. Son olarak infaz ile ilgili yasa, failin lehe ya da aleyhe olduğuna bakılmadan, yürürlüğe girdiği andan itibaren derhal uygulanır. Ancak infaz rejimine ilişkin aşağıda belirtilenler lehe hüküm içermeleri halinde geçmişe uygulanır:\n• Hapis cezasının ertelenmesi\n• Koşullu salıverme\n• Tekerrür",
+   "sourceLabel": null,
+   "options": [
+    {
+     "label": "A",
+     "text": "Sanık lehine olan normun geçmişe uygulanması kuralı geçici kanunlar yönünden geçerli değildir.",
+     "isCorrect": false
+    },
+    {
+     "label": "B",
+     "text": "Zaman bakımından uygulama açısından cezalar ile güvenlik tedbirleri aynı rejime tabidir.",
+     "isCorrect": false
+    },
+    {
+     "label": "C",
+     "text": "Yargılamanın yapıldığı zaman yürürlüğe giren kanun tarafından suç olmaktan çıkarılan fiil yönünden \"Lehe kanun geçmişe uygulanır.\" ilkesi geçerlidir.",
+     "isCorrect": false
+    },
+    {
+     "label": "D",
+     "text": "Sanık lehine olan kanunun belirlenmesinde tüm cezai sonuçlar dikkate alınarak değerlendirme yapılır.",
+     "isCorrect": false
+    },
+    {
+     "label": "E",
+     "text": "İnfaz rejimine ilişkin tüm kurallarda da lehe kanunun geçmişe uygulanırlığı ilkesi geçerlidir.",
+     "isCorrect": true
+    }
+   ],
+   "question": {
+    "articleNo": "7",
+    "topic": {
+     "name": "Türk Ceza Kanunu"
+    }
+   }
+  }
+ },
+ {
+  "sinif": "yigilma",
+  "gerekce": "Benzerlik taraması (21 Kas 2026): Aynı soru (kök ve şıklar aynı ya da yalnız yazım farkı). Kalan soru c5a8d66f (Türk Ceza Kanunu). Kullanıcı onayı 21 Kas 2026.",
+  "arsivlenen": {
+   "id": "a1601b29-d887-4b27-98ce-5eb53b76372a",
+   "questionId": "dfd918fd-1cef-4483-808d-14a9a42f96b1",
+   "stem": "I. Başkasını cebirle intihara zorlama\nII. Başkasını intihara alenen teşvik etme\nIII. Başkasını intihara azmettirme\nIV. Kusur yeteneği gelişmemiş olan kişiyi intihara sevk etme\n5237 sayılı TCK'ya göre yukarıdaki durumlardan hangilerinde fail kasten öldürme suçundan dolayı sorumlu olur?",
+   "explanation": "Cebir veya tehdit kullanarak kişiyi intihara mecbur edenler ile fiilin anlam ve sonuçlarını algılama yeteneği gelişmemiş veya ortadan kaldırılmış kişileri intihara sevk edenler KASTEN ÖLDÜRME suçundan sorumludur.",
+   "sourceLabel": null,
+   "options": [
+    {
+     "label": "A",
+     "text": "I ve II",
+     "isCorrect": false
+    },
+    {
+     "label": "B",
+     "text": "I ve III",
+     "isCorrect": false
+    },
+    {
+     "label": "C",
+     "text": "I ve IV",
+     "isCorrect": true
+    },
+    {
+     "label": "D",
+     "text": "II ve IV",
+     "isCorrect": false
+    },
+    {
+     "label": "E",
+     "text": "I, III ve IV",
+     "isCorrect": false
+    }
+   ],
+   "question": {
+    "articleNo": "84",
+    "topic": {
+     "name": "Türk Ceza Kanunu"
+    }
+   }
+  }
+ },
+ {
+  "sinif": "yigilma",
+  "gerekce": "Benzerlik taraması (21 Kas 2026): Aynı soru, kökü yeniden yazılmış (şıklar ve anahtar aynı). Kalan soru 1bbb86f4 (Türk Ceza Kanunu). Kullanıcı onayı 21 Kas 2026.",
+  "arsivlenen": {
+   "id": "054aefdc-2144-4b3a-a230-27fcf4e7d25b",
+   "questionId": "0c057db3-c853-4dd0-bd8f-6d752c6f4f2b",
+   "stem": "Ahmet, babası Burak'ı öldürmek için zehir vermiş; ancak zehir henüz etkisini göstermeden komşusu Cem ile tartışmış ve Cem tabancayla ateş ederek Burak'ı öldürmüştür. Buna göre Ahmet hangi suçtan sorumlu olur?",
+   "explanation": "Ahmet, üstsoyu olan babasını öldürmek amacıyla icra hareketlerine başlamış; fakat ölüm Ahmet'in fiilinden değil Cem'in bağımsız fiilinden doğmuştur. Bu nedenle Ahmet, ÜSTSOYA KARŞI kasten öldürmenin nitelikli şekline teşebbüsten sorumludur.",
+   "sourceLabel": null,
+   "options": [
+    {
+     "label": "A",
+     "text": "Sonucu nedeniyle ağırlaşan insan yaralama",
+     "isCorrect": false
+    },
+    {
+     "label": "B",
+     "text": "Kasten insan öldürme",
+     "isCorrect": false
+    },
+    {
+     "label": "C",
+     "text": "Kasten öldürme suçunun nitelikli şekline teşebbüs",
+     "isCorrect": true
+    },
+    {
+     "label": "D",
+     "text": "Kasten yaralama",
+     "isCorrect": false
+    },
+    {
+     "label": "E",
+     "text": "Kasten öldürme suçuna teşebbüs",
+     "isCorrect": false
+    }
+   ],
+   "question": {
+    "articleNo": "82",
+    "topic": {
+     "name": "Türk Ceza Kanunu"
+    }
+   }
+  }
+ },
+ {
+  "sinif": "yigilma",
+  "gerekce": "Benzerlik taraması (21 Kas 2026): Aynı soru, kökü yeniden yazılmış (şıklar ve anahtar aynı). Kalan soru 0a854856 (Türk Ceza Kanunu). Kullanıcı onayı 21 Kas 2026.",
+  "arsivlenen": {
+   "id": "92573a5a-6ee6-47f7-85bd-6f8c45b04975",
+   "questionId": "815e50e9-5f93-4b49-876b-f3f8f8e3dfc7",
+   "stem": "5237 sayılı TCK'ya göre aşağıdakilerden hangisi taksirle yaralama suçunun cezayı artıran nitelikli sonuçlarından biri değildir?",
+   "explanation": "TCK md. 89; kemik kırılması, yüzde sabit iz, yaşamı tehlikeye sokan durum ve birden fazla kişinin yaralanması gibi sonuçları açıkça düzenler. Fiilin sırf ÇOCUĞA KARŞI işlenmesi ise taksirle yaralamanın cezayı artıran sonucu değildir.",
+   "sourceLabel": null,
+   "options": [
+    {
+     "label": "A",
+     "text": "Eylemin çocuğa karşı işlenmiş olması",
+     "isCorrect": true
+    },
+    {
+     "label": "B",
+     "text": "Eylemin mağdurun vücudunda kemik kırılmasına neden olması",
+     "isCorrect": false
+    },
+    {
+     "label": "C",
+     "text": "Eylemin mağdurun yüzünde sabit ize neden olması",
+     "isCorrect": false
+    },
+    {
+     "label": "D",
+     "text": "Eylemin mağdurun yaşamını tehlikeye sokan bir duruma neden olması",
+     "isCorrect": false
+    },
+    {
+     "label": "E",
+     "text": "Eylemin birden fazla kişinin yaralanmasına neden olması",
+     "isCorrect": false
+    }
+   ],
+   "question": {
+    "articleNo": "89",
+    "topic": {
+     "name": "Türk Ceza Kanunu"
+    }
+   }
+  }
+ },
+ {
+  "sinif": "yigilma",
+  "gerekce": "Benzerlik taraması (21 Kas 2026): Aynı soru, kökü yeniden yazılmış (şıklar ve anahtar aynı). Kalan soru 2c9baabe (Türk Ceza Kanunu). Kullanıcı onayı 21 Kas 2026.",
+  "arsivlenen": {
+   "id": "8d4c798c-c804-42ea-9745-8abddd60767e",
+   "questionId": "fb1b13da-4895-44e1-ba54-dea07247d802",
+   "stem": "Ahmet, canı yansın diye annesi Berrin'in karnına yumruk atmış ve Berrin bu yumruk sonucunda ölmüştür. Buna göre olayda aşağıdaki suçlardan hangisi oluşmuştur?",
+   "explanation": "Ahmet'in kastı yaralamaya yöneliktir; ölüm neticesi kasten yaralamanın sonucunda doğmuştur. Üstsoya karşı kasten yaralama TCK md. 86/3-a kapsamındadır ve ölüm gerçekleştiğinde md. 87/4 uyarınca SONUCU NEDENİYLE AĞIRLAŞMIŞ KASTEN YARALAMA oluşur.",
+   "sourceLabel": null,
+   "options": [
+    {
+     "label": "A",
+     "text": "Kasten öldürme",
+     "isCorrect": false
+    },
+    {
+     "label": "B",
+     "text": "Kasten öldürme suçuna teşebbüs",
+     "isCorrect": false
+    },
+    {
+     "label": "C",
+     "text": "Kasten yaralama suçuna teşebbüs",
+     "isCorrect": false
+    },
+    {
+     "label": "D",
+     "text": "Sonucu nedeniyle ağırlaşmış kasten yaralama",
+     "isCorrect": true
+    },
+    {
+     "label": "E",
+     "text": "Taksirle öldürme",
+     "isCorrect": false
+    }
+   ],
+   "question": {
+    "articleNo": "87",
+    "topic": {
+     "name": "Türk Ceza Kanunu"
+    }
+   }
+  }
+ },
+ {
+  "sinif": "yigilma",
+  "gerekce": "Benzerlik taraması (21 Kas 2026): Aynı soru, kökü yeniden yazılmış (şıklar ve anahtar aynı). Kalan soru fd52ddb7 (Türk Ceza Kanunu). Kullanıcı onayı 21 Kas 2026.",
+  "arsivlenen": {
+   "id": "97fa60cc-1e38-436b-9787-ef59e5df4439",
+   "questionId": "929dd2ec-0d9c-4b1f-ba69-5bfdeee0db30",
+   "stem": "I. Belli hakları kullanmaktan yoksun bırakılma\nII. Yurt dışına çıkış yasağı\nIII. Kazanç müsaderesi\nIV. Gözlem altına alma\nHangileri TCK'da düzenlenen güvenlik tedbirlerinden değildir?",
+   "explanation": "Belli hakları kullanmaktan yoksun bırakılma ve kazanç müsaderesi TCK'nın güvenlik tedbirleri bölümünde düzenlenmiştir. Yurt dışına çıkış yasağı adli kontrol; gözlem altına alma ise ceza muhakemesi tedbiridir.",
+   "sourceLabel": null,
+   "options": [
+    {
+     "label": "A",
+     "text": "I ve III",
+     "isCorrect": false
+    },
+    {
+     "label": "B",
+     "text": "II ve III",
+     "isCorrect": false
+    },
+    {
+     "label": "C",
+     "text": "II ve IV",
+     "isCorrect": true
+    },
+    {
+     "label": "D",
+     "text": "III ve IV",
+     "isCorrect": false
+    },
+    {
+     "label": "E",
+     "text": "I, II ve IV",
+     "isCorrect": false
+    }
+   ],
+   "question": {
+    "articleNo": "53",
+    "topic": {
+     "name": "Türk Ceza Kanunu"
+    }
+   }
+  }
+ },
+ {
+  "sinif": "yigilma",
+  "gerekce": "Benzerlik taraması (21 Kas 2026): Aynı soru, kökü yeniden yazılmış (şıklar ve anahtar aynı). Kalan soru 698e486e (Türk Ceza Kanunu). Kullanıcı onayı 21 Kas 2026.",
+  "arsivlenen": {
+   "id": "21a5834c-4398-4e00-bb63-bae36cf7d3d1",
+   "questionId": "c98949b0-26c5-436e-8d86-bb8dd6cedcc2",
+   "stem": "I. Taksirli sorumluluk istisnaidir.\nII. Taksirle işlenen suçlardan dolayı verilecek ceza, zararın ağırlığına göre belirlenir.\nIII. Bilinçli (öngörülü) taksir cezayı ağırlaştıran bir nedendir.\nIV. Devletin güvenliğine ve siyasal yararlarına ilişkin bilgileri açıklama suçu taksirle işlenemez.\n5237 sayılı Türk Ceza Yasası'na göre taksirle ilgili yukarıdaki ifadelerden hangileri yanlıştır?",
+   "explanation": "TCK m.22/4'e göre 'Taksirle işlenen suçtan dolayı verilecek olan ceza failin kusuruna göre belirlenir'; zararın ağırlığı değil kusur esas alınır, bu yüzden II yanlıştır. Devletin güvenliğine ilişkin bilgileri açıklama suçu ise m.329/3'te 'failin taksiri sonucu meydana gelmiş ise' denilerek taksirle işlenebileceği açıkça düzenlenmiştir; bu nedenle IV de yanlıştır. I doğrudur çünkü m.22/1 taksirli sorumluluğu yalnızca kanunun açıkça belirttiği hallerle sınırlar, yani istisnaidir. III de doğrudur çünkü m.22/3 bilinçli taksiri genel bir ağırlaştırıcı neden olarak düzenler. Dolayısıyla yalnızca II ve IV yanlıştır, işaretli cevap doğrudur.",
+   "sourceLabel": null,
+   "options": [
+    {
+     "label": "A",
+     "text": "I ve III",
+     "isCorrect": false
+    },
+    {
+     "label": "B",
+     "text": "Yalnız II",
+     "isCorrect": false
+    },
+    {
+     "label": "C",
+     "text": "Yalnız IV",
+     "isCorrect": false
+    },
+    {
+     "label": "D",
+     "text": "II ve III",
+     "isCorrect": false
+    },
+    {
+     "label": "E",
+     "text": "II ve IV",
+     "isCorrect": true
+    }
+   ],
+   "question": {
+    "articleNo": "22",
+    "topic": {
+     "name": "Türk Ceza Kanunu"
+    }
+   }
+  }
+ }
+]
