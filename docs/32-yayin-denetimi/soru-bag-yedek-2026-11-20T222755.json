@@ -1,0 +1,119 @@
+[
+ {
+  "plan": {
+   "soru": "9dbb3a0e",
+   "articleNo": "4",
+   "baglar": [
+    {
+     "mevzuat": "5271",
+     "no": "4",
+     "relation": "primary"
+    }
+   ],
+   "gerekce": "Görev uyuşmazlığını ortak yüksek görevli mahkemenin çözeceği kuralı CMK md 4/2'dedir; md 17 yetki uyuşmazlığını düzenler."
+  },
+  "onceki": {
+   "id": "9dbb3a0e-51f1-4929-a283-0c4f051ad34b",
+   "articleNo": "17",
+   "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+   "currentVersion": {
+    "id": "d4a09faa-1ad9-437b-9524-4bb496beb20f",
+    "status": "published",
+    "stem": "Görev konusunda ceza mahkemeleri arasında olumlu veya olumsuz görev uyuşmazlığının çıkması hakkında görevli mahkeme aşağıdakilerden hangisi tarafından belirlenir?",
+    "explanation": "CMK m.17 uyarınca birkaç hâkim veya mahkeme arasında olumlu ya da olumsuz uyuşmazlık çıkması hâlinde, uyuşmazlığı ORTAK YÜKSEK GÖREVLİ MAHKEME çözer ve yetkili hâkim veya mahkemeyi belirler. Dikkat edilmesi gereken nokta, sadece 'yüksek görevli mahkeme' değil, tarafların bağlı olduğu ORTAK üst mahkemenin yetkili kılınmasıdır; sınavlarda bu ayrım sıkça karıştırılır. Bağlantılı davaların birleştirilmesinde ise CMK m.16 uyarınca mahkemeler arasında anlaşma sağlanamazsa, yine Cumhuriyet savcısının veya sanığın istemi üzerine ortak yüksek görevli mahkeme karar verir; bu iki madde birbirine benzer ama farklı konuları (yetki uyuşmazlığı / dava birleştirme) düzenler.",
+    "contentHash": "12962675094c5ebcc1c054d845479746f213973ffe791c248b8bc9d9fd9eadf4",
+    "options": [
+     {
+      "id": "0ce93e7f-4dff-4926-a5c9-a4278404920d",
+      "label": "A",
+      "text": "Yüksek görevli mahkeme"
+     },
+     {
+      "id": "cc21bc92-fe82-4a07-a12b-6294f6009573",
+      "label": "B",
+      "text": "Ortak yüksek görevli mahkeme"
+     },
+     {
+      "id": "c10bacc3-3ed8-43f6-afca-0544a933e2e7",
+      "label": "C",
+      "text": "Bölge adliye mahkemesi"
+     },
+     {
+      "id": "3f3f7579-e921-42d8-a971-f6d98d640bf7",
+      "label": "D",
+      "text": "Yargıtay ilgili ceza dairesi"
+     },
+     {
+      "id": "58d6230f-5f67-442d-839c-b297cede9b1a",
+      "label": "E",
+      "text": "Yargıtay Ceza Genel Kurulu"
+     }
+    ]
+   },
+   "articles": [
+    {
+     "lawArticleId": "9e2bf157-78f4-4e64-af16-8b02642b2e39",
+     "relation": "primary",
+     "source": "legacy_article_no",
+     "lawArticle": {
+      "articleNo": "17",
+      "legislation": {
+       "number": "5271"
+      }
+     }
+    }
+   ]
+  }
+ },
+ {
+  "plan": {
+   "soru": "71a95355",
+   "sik": {
+    "label": "E",
+    "eski": "I, II ve II",
+    "yeni": "I, II ve III"
+   },
+   "gerekce": "E şıkkında yazım hatası: üç öncüllü soruda 'I, II ve II'. Anahtar (D) ve diğer şıklar değişmedi."
+  },
+  "onceki": {
+   "id": "71a95355-06f6-4f60-a4dc-34a0968de298",
+   "articleNo": null,
+   "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+   "currentVersion": {
+    "id": "12b0546b-795f-49e5-843b-6f475872fb88",
+    "status": "published",
+    "stem": "Anayasa Mahkemesine yapılan iptal başvurusunda,\nI. Siyasi parti grubunun kanuna karşı şekil yönünden dava açmış olduğu\nII. Kanunun 140 milletvekilinin oyu ile kabul edilmiş olduğunun görülmesi\nIII. Kanunun hukuk devleti ilkesine açıkça aykırı olduğunun görülmesi\ndurumlarından hangileri hakkında ilk incelemede karar verilemez?",
+    "explanation": "DAYANAK: 6216 sayılı Kanun m.39/1: 'Mahkemece, dava dilekçesinin, 38 inci maddede gösterilen şartları ... taşıyıp taşımadığı, kayıt tarihinden itibaren on gün içinde incelenir.' İlk inceleme yalnızca dava açma yetkisi/usul şartlarını (m.38) kapsar; kanunun ANAYASAYA UYGUNLUĞUNA ilişkin (esasa ilişkin) değerlendirme ilk incelemede yapılamaz. DOĞRU SIK: D (II ve III). II. öncül (kanunun kaç oyla kabul edildiği) ŞEKİL DENETİMİ konusudur (Any. m.148: 'son oylamanın, öngörülen çoğunlukla yapılıp yapılmadığı') ve şekil denetimi de esas incelemesinde karara bağlanır, ilk incelemede değil. III. öncül (hukuk devleti ilkesine aykırılık) doğrudan esas incelemesidir. CELDİRİCİLER: I. öncül (parti grubunun şekil yönünden dava açmış olması) davanın AÇILMASINA ilişkin yetki/usul meselesidir, m.38 kapsamında ilk incelemede değerlendirilir; bu nedenle 'ilk incelemede karar verilemeyecekler' arasında sayılmaz. TUZAK: 'Şekil denetimi' ifadesi öğrenciyi 'ilk inceleme' ile karıştırmaya iter; oysa şekil denetimi de içerik (esas) incelemesinin bir türüdür, salt usul/yetki denetimi olan ilk incelemeden farklıdır.",
+    "contentHash": "a52fbca2ac19fe36a620ea068c75026f16e4276212726d104e8869f93f30543e",
+    "options": [
+     {
+      "id": "9431646d-73cc-41be-8def-9a0561532b7d",
+      "label": "A",
+      "text": "Yalnız I"
+     },
+     {
+      "id": "dc32d37a-e272-4ce9-93d1-af33f463c0d2",
+      "label": "B",
+      "text": "Yalnız II"
+     },
+     {
+      "id": "fc18776c-7dc3-42dc-a060-8d383a9f5eb3",
+      "label": "C",
+      "text": "I ve II"
+     },
+     {
+      "id": "2d0ed213-07d3-487f-9175-e697872cc998",
+      "label": "D",
+      "text": "II ve III"
+     },
+     {
+      "id": "c96d0928-32fb-45d1-a8cd-7e3d835cdef9",
+      "label": "E",
+      "text": "I, II ve II"
+     }
+    ]
+   },
+   "articles": []
+  }
+ }
+]

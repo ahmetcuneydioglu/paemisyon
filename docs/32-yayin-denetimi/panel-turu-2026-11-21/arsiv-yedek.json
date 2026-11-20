@@ -1,0 +1,442 @@
+[
+ {
+  "sinif": "bozuk",
+  "gerekce": "CMK 102 (d08ac505): anahtar terör suçlarında genel azami tutukluluğu 5 yıl sayıyor. Md 102/2: süre en çok iki yıl, uzatma bu suçlarda beş yılı geçemez; toplam yedi yıl. Doğru şık yok. Kullanıcı onayı 21 Kas 2026.",
+  "arsivlenen": {
+   "id": "5fc3a98e-24aa-4321-8c3c-bc2c34608431",
+   "questionId": "d08ac505-aa0d-4d50-96cd-c0738c5901b7",
+   "stem": "Ağır ceza mahkemesinin görevine giren ve Terörle Mücadele Kanunu kapsamına giren bir suçta, soruşturma evresi için öngörülen azami tutukluluk süresi ile tüm yargılama sürecinde (soruşturma+kovuşturma) uzatmalarla ulaşılabilecek genel azami tutukluluk süresi hangi seçenekte doğru verilmiştir?",
+   "explanation": "M.102/4 soruşturma evresine özgü ayrı bir üst sınır koyarken (TMK'da 1 yıl 6 ay+6 ay=2 yıl), m.102/2 tüm süreç için genel azami süreyi (TMK'da 5 yıl) düzenler. (Dayanak: CMK m. 102)",
+   "sourceLabel": null,
+   "options": [
+    {
+     "label": "A",
+     "text": "Soruşturma azami 3 yıl - genel azami 5 yıl",
+     "isCorrect": false
+    },
+    {
+     "label": "B",
+     "text": "Soruşturma azami 6 ay - genel azami 3 yıl",
+     "isCorrect": false
+    },
+    {
+     "label": "C",
+     "text": "Soruşturma azami 2 yıl - genel azami 3 yıl",
+     "isCorrect": false
+    },
+    {
+     "label": "D",
+     "text": "Soruşturma azami 1 yıl 6 ay (uzatmayla 2 yıl) - genel azami 5 yıl",
+     "isCorrect": true
+    },
+    {
+     "label": "E",
+     "text": "Soruşturma azami 1 yıl - genel azami 2 yıl",
+     "isCorrect": false
+    }
+   ],
+   "question": {
+    "articleNo": "102",
+    "topic": {
+     "name": "5271 Sayılı Ceza Muhakemesi Kanunu (CMK)"
+    }
+   }
+  }
+ },
+ {
+  "sinif": "bozuk",
+  "gerekce": "CMK 171 (103ce14d): 'koşullar arasında yer almaz' diye işaretlenen A şıkkı (uzlaştırma ve önödeme hariç, üst sınırı üç yıl veya daha az hapis) md 171/2'de aynen var; beş şık da doğru. Kullanıcı onayı 21 Kas 2026.",
+  "arsivlenen": {
+   "id": "b0301ff2-3997-4147-b98f-82aa147a6059",
+   "questionId": "103ce14d-89de-41ca-8e3c-a77589dd5ad4",
+   "stem": "Aşağıdakilerden hangisi kamu davasının açılmasının ertelenmesinin koşulları arasında yer almaz?",
+   "explanation": "CMK m.171/3 hükmüne göre kamu davasının açılmasının ertelenmesine karar verilebilmesi için şu dört koşulun birlikte gerçekleşmesi gerekir: şüphelinin daha önce kasıtlı bir suçtan hapis cezasıyla mahkûm olmamış olması, soruşturmanın erteleme hâlinde şüphelinin suç işlemekten çekineceği kanaatini vermesi, ertelemenin şüpheli ve toplum açısından yararlı olması, mağdur veya kamunun uğradığı zararın aynen iade, eski hâle getirme veya tazmin yoluyla tamamen giderilmesi. Suçun üst sınırının üç yıl veya daha az süreli hapis cezasını gerektirmesi ise aynı maddenin İKİNCİ fıkrasında düzenlenen ayrı bir kapsam (uygulama alanı) koşuludur; üçüncü fıkradaki bu dört şarttan biri değildir. Bu ikisinin (kapsam koşulu ile karar koşulları) birbirinden ayrılması sınavlarda sıkça karıştırılan bir noktadır.",
+   "sourceLabel": null,
+   "options": [
+    {
+     "label": "A",
+     "text": "Uzlaştırma ve ön ödeme kapsamındaki suçlar hariç, üst sınırı üç yıl veya daha az süreli hapis cezasını gerektiren bir suçun bulunması",
+     "isCorrect": true
+    },
+    {
+     "label": "B",
+     "text": "Şüphelinin daha önceden kasıtlı bir suçtan dolayı hapis cezasına mahkûm olmaması",
+     "isCorrect": false
+    },
+    {
+     "label": "C",
+     "text": "Kamu davasının açılmasının ertelenmesi hâlinde şüphelinin suç işlemekten çekineceği kanaati oluşması",
+     "isCorrect": false
+    },
+    {
+     "label": "D",
+     "text": "Kamu davasının açılmasının ertelenmesinin şüpheli ve toplum açısından kamu davası açılmasından daha yararlı olması",
+     "isCorrect": false
+    },
+    {
+     "label": "E",
+     "text": "Suçun işlenmesiyle mağdurun veya kamunun uğradığı zararın aynen iade, suçtan önceki hâle getirme veya tazmin suretiyle, tamamen giderilmesi",
+     "isCorrect": false
+    }
+   ],
+   "question": {
+    "articleNo": "171",
+    "topic": {
+     "name": "5271 Sayılı Ceza Muhakemesi Kanunu (CMK)"
+    }
+   }
+  }
+ },
+ {
+  "sinif": "bozuk",
+  "gerekce": "Anayasa 153 (25cc6615): anahtar yalnız 'gerekçeli kararın' yayımı ifadesine dayanıyor; karar gerekçesi yazılmadan açıklanamadığı için C şıkkı da md 153/3 ile bağdaşıyor. Ayırt edici değil. Kullanıcı onayı 21 Kas 2026.",
+  "arsivlenen": {
+   "id": "eeeddb5d-3a82-4e6b-aa26-1cd988959a92",
+   "questionId": "25cc6615-f36a-4023-b3c4-4310c9c001d0",
+   "stem": "Aşağıdakilerden hangisi Anayasa Mahkemesi kararlarının özelliklerinden biri değildir?",
+   "explanation": "Anayasa m.153'e göre iptal kararları kesindir, gerekçesi yazılmadan açıklanamaz (A ve B'nin kaynağı) ve Anayasa Mahkemesi kanun koyucu gibi davranarak yeni bir uygulamaya yol açacak hüküm tesis edemez (D). Kararlar Resmî Gazetede hemen yayımlanır ve yasama-yürütme-yargı organlarıyla idare makamlarını bağlar (E) — bunların hepsi maddeyle birebir örtüştüğünden doğru özelliklerdir. Ancak C şıkkındaki 'gerekçeli kararın Resmî Gazetede yayımlandığı tarih' ifadesi metinde yoktur; madde açıkça yürürlükten kalkma anını 'İPTAL KARARININ' yayım tarihine bağlar, 'gerekçeli karar' diye ayrı ve farklı bir zaman ölçütü tanımlamaz. Bu nedenle C, Anayasa Mahkemesi kararlarının maddede sayılan özelliklerinden biri DEĞİLDİR ve doğru cevap C'dir. Tuzak: 'gerekçesiz açıklanamama' kuralı ile 'yürürlükten kalkma anı' kuralının birbirine karıştırılıp aynı ifadeyle özdeşleştirilmesi — bunlar maddede ayrı cümlelerle düzenlenmiş iki farklı husustur.",
+   "sourceLabel": null,
+   "options": [
+    {
+     "label": "A",
+     "text": "İptal kararları geriye yürümez.",
+     "isCorrect": false
+    },
+    {
+     "label": "B",
+     "text": "İptal kararları gerekçesi yazılmadan açıklanamaz.",
+     "isCorrect": false
+    },
+    {
+     "label": "C",
+     "text": "İptal edilen yasa, Cumhurbaşkanlığı kararnamesi ve İçtüzükler, gerekçeli kararın Resmi Gazetede yayımlandığı tarihte yürürlükten kalkar.",
+     "isCorrect": true
+    },
+    {
+     "label": "D",
+     "text": "Anayasa Mahkemesi iptal kararı verirken, yasa koyucu gibi hareketle yeni bir uygulamaya yol açacak biçimde hüküm veremez.",
+     "isCorrect": false
+    },
+    {
+     "label": "E",
+     "text": "Anayasa Mahkemesi kararları Resmi Gazetede yayımlanır ve yasama, yürütme, yargı organlarını ve idare makamlarını bağlar.",
+     "isCorrect": false
+    }
+   ],
+   "question": {
+    "articleNo": "153",
+    "topic": {
+     "name": "T.C. Anayasası"
+    }
+   }
+  }
+ },
+ {
+  "sinif": "bozuk",
+  "gerekce": "TCK 21-22 (9dbaaec7): A'nın yanında C de yanlış ('sonucun istenmediği durumda kasttan söz edilemez'; olası kastta sonuç istenmez, kabullenilir). İki cevaplı; ders denetiminde de çıkarılmıştı. Kullanıcı onayı 21 Kas 2026.",
+  "arsivlenen": {
+   "id": "757a90ad-4bd1-4bdf-989d-faa3e56b8218",
+   "questionId": "9dbaaec7-005f-4f0d-8158-97b1e0e3af69",
+   "stem": "Kasta dayanan sorumlulukla ilgili aşağıdaki ifadelerden hangisi yanlıştır?",
+   "explanation": "TCK m.22/1'de 'Taksirle işlenen fiiller, kanunun açıkça belirttiği hallerde cezalandırılır' denilerek TAKSİRİN istisnai bir sorumluluk biçimi olduğu, buna karşılık KASTIN asıl/genel sorumluluk biçimi olduğu ortaya konur. Dolayısıyla A şıkkındaki 'kasta dayalı sorumluluk istisnaidir' ifadesi YANLIŞTIR ve doğru cevap A'dır. B, sırf hareket suçlarında hareketin bilinip istenmesinin yeterli olduğunu (m.21/1 ile uyumlu); C, sonuçlu suçlarda istenmeyen sonuç bakımından kasttan söz edilemeyeceğini; E ise olası kastta cezanın indirilebileceğini (m.21/2) doğru biçimde ifade eder, bu nedenle yanlış değildirler.",
+   "sourceLabel": null,
+   "options": [
+    {
+     "label": "A",
+     "text": "Kasta dayalı sorumluluk istisnai bir sorumluluktur.",
+     "isCorrect": true
+    },
+    {
+     "label": "B",
+     "text": "Sırf hareket suçlarında hareketin bilinip istenmesi yeterlidir.",
+     "isCorrect": false
+    },
+    {
+     "label": "C",
+     "text": "Sonuçlu suçlarda sonucun istenmediği durumda kasttan söz edilemez.",
+     "isCorrect": false
+    },
+    {
+     "label": "D",
+     "text": "Failin gerçekleştirmeyi istediği sonuca zorunlu olarak bağlı bulunan sonuçları öngördüğü durumlarda kastı bu sonuçlar bakımında da doğrudan kasttır.",
+     "isCorrect": false
+    },
+    {
+     "label": "E",
+     "text": "Suçun olası kast ile işlenmiş olması durumunda cezada indirim yapılır.",
+     "isCorrect": false
+    }
+   ],
+   "question": {
+    "articleNo": "22",
+    "topic": {
+     "name": "Türk Ceza Kanunu"
+    }
+   }
+  }
+ },
+ {
+  "sinif": "eskime",
+  "gerekce": "TCK 32 (8a5c52fe): md 32/2 son cümlesi 24/12/2025-7571/14 ile değişti ('Kişi hakkında ayrıca akıl hastalarına özgü güvenlik tedbirine hükmolunur'); E şıkkındaki 'kısmen veya tamamen güvenlik tedbiri olarak da uygulanabilir' artık metinde yok. C ile birlikte iki yanlış ifade var. Kullanıcı onayı 21 Kas 2026.",
+  "arsivlenen": {
+   "id": "83a395a3-932c-4c87-8fec-11b2cd289b03",
+   "questionId": "8a5c52fe-35ad-4b22-9518-a0da152b1bc3",
+   "stem": "5237 sayılı Türk Ceza Kanunu'na göre akıl hastalığının failin ceza sorumluluğuna etkisiyle ilgili aşağıdaki ifadelerden hangisi yanlıştır?",
+   "explanation": "TCK m.32/1'e göre algılama yeteneği olmayan veya yönlendirme yeteneği ÖNEMLİ DERECEDE azalmış kişiye ceza verilmez, güvenlik tedbirine hükmolunur. m.32/2'ye göre yönlendirme yeteneği önemli derecede olmamakla birlikte azalmış kişiye ise ceza VERİLİR fakat indirilir (ağırlaştırılmış müebbet yerine 25 yıl, müebbet yerine 20 yıl; diğer hâllerde en fazla 1/6 indirim); bu ceza kısmen veya tamamen akıl hastalarına özgü güvenlik tedbiri olarak da uygulanabilir. (C) bu nedenle yanlıştır.",
+   "sourceLabel": "2024 İDARİ HÂKİMLİK SINAVI",
+   "options": [
+    {
+     "label": "A",
+     "text": "Akıl hastalığı nedeniyle işlediği fiilin hukuki anlam ve sonuçlarını algılayamayan kişiye ceza verilmez.",
+     "isCorrect": false
+    },
+    {
+     "label": "B",
+     "text": "Akıl hastalığı nedeniyle işlediği fiille ilgili davranışlarını yönlendirme yeteneği önemli derecede azalmış olan kişiye ceza verilmez.",
+     "isCorrect": false
+    },
+    {
+     "label": "C",
+     "text": "Akıl hastalığı nedeniyle işlediği fiille ilgili davranışlarını yönlendirme yeteneği önemli derecede olmamakla birlikte azalmış olan kişiye ceza verilmez.",
+     "isCorrect": true
+    },
+    {
+     "label": "D",
+     "text": "Akıl hastalığı nedeniyle işlediği fiilin hukuki anlam ve sonuçlarını algılayamayan kişi hakkında güvenlik tedbirine hükmolunur.",
+     "isCorrect": false
+    },
+    {
+     "label": "E",
+     "text": "Davranışlarını yönlendirme yeteneği azalmış kişi hakkında tayin edilen ceza, süresi aynı olmak koşuluyla kısmen veya tamamen akıl hastalarına özgü güvenlik tedbiri olarak da uygulanabilir.",
+     "isCorrect": false
+    }
+   ],
+   "question": {
+    "articleNo": "32",
+    "topic": {
+     "name": "Türk Ceza Kanunu"
+    }
+   }
+  }
+ },
+ {
+  "sinif": "eskime",
+  "gerekce": "Yakalama Yön. md 16 türetimi (7a505f5d): yönetmelik 'en yakın sulh ceza hâkimi önüne çıkarılır' diyor; CMK md 94/2 (6526 ile değişik) aynı hâlde sesli ve görüntülü sistemle yetkili hâkim veya mahkemenin sorgusunu öngörüyor. Soru kanunla çelişen hükmü öğretiyor. Kullanıcı onayı 21 Kas 2026.",
+  "arsivlenen": {
+   "id": "7249921a-75b8-48a7-8fa3-d08c80ee9bd1",
+   "questionId": "7a505f5d-86c7-4ccf-a5e9-a45841e81d9c",
+   "stem": "Kovuşturma evresinde mahkemece hakkında yakalama emri verilen bir sanık, davanın görüldüğü yerden uzak bir ilde yakalanmıştır ve yirmi dört saat içinde yetkili mahkeme önüne çıkarılması mümkün görünmemektedir. Yakalama, Gözaltına Alma ve İfade Alma Yönetmeliği'ne göre sanık hakkında nasıl işlem yapılır?",
+   "explanation": "Hâkim veya mahkeme tarafından verilen yakalama emri üzerine yakalanan kişi için Yönetmelik iki kademeli bir güvence kurar. Asıl kural, kişinin en geç YİRMİ DÖRT SAAT içinde YETKİLİ hâkim veya mahkeme önüne çıkarılmasıdır. Bu mümkün değilse süre uzamaz; kişi AYNI SÜRE İÇİNDE en yakın sulh ceza hâkimi önüne çıkarılır. Sulh ceza hâkimi kişiyi serbest bırakmazsa, yetkili hâkim veya mahkemeye en kısa zamanda gönderilmek üzere tutuklanır. Hüküm soruşturma evresiyle sınırlı değildir; KOVUŞTURMA evresinde yakalanan sanık için de aynen uygulanır. Tuzak, bu durumu soruşturmayı tamamlamak için yürütülen gözaltıya benzetmektir: yakalama emri üzerine yakalanan kişi için Yönetmeliğin öngördüğü yol, kişinin hâkim önüne çıkarılmasıdır, gözaltı süresinin uzatılması değildir. Toplu suçlarda Cumhuriyet savcısının yazılı emriyle yapılan uzatma, soruşturma evresindeki şüpheliye ilişkin ayrı bir rejimdir ve mahkemenin yakalama emriyle yakalanan sanığa taşınamaz. Kişiyi yetkili mahkemeye ulaştırılıncaya kadar nezarethanede bekletmek ise yirmi dört saatlik sınırı anlamsız kılar. Makam da ayrıca önemlidir: kişinin önüne çıkarılacağı merci asliye ceza mahkemesi değil sulh ceza hâkimidir; kolluk âmirine ise mahkemenin yakalama emriyle yakalanan kişiyi serbest bırakma yetkisi tanınmamıştır.",
+   "sourceLabel": "Mevzuat türetimi — Yakalama, Gözaltına Alma ve İfade Alma Yönetmeliği md 16",
+   "options": [
+    {
+     "label": "A",
+     "text": "Yakalandığı yerdeki kolluk âmirinin kararıyla serbest bırakılır",
+     "isCorrect": false
+    },
+    {
+     "label": "B",
+     "text": "Cumhuriyet savcısının yazılı emriyle gözaltısı bir gün uzatılır",
+     "isCorrect": false
+    },
+    {
+     "label": "C",
+     "text": "Yetkili mahkemeye ulaştırılıncaya kadar nezarethanede tutulur",
+     "isCorrect": false
+    },
+    {
+     "label": "D",
+     "text": "Yakalandığı yerdeki asliye ceza mahkemesince tutuklanır",
+     "isCorrect": false
+    },
+    {
+     "label": "E",
+     "text": "Aynı süre içinde en yakın sulh ceza hâkimi önüne çıkarılır",
+     "isCorrect": true
+    }
+   ],
+   "question": {
+    "articleNo": "16",
+    "topic": {
+     "name": "Yakalama, Gözaltına Alma ve İfade Alma Yönetmeliği"
+    }
+   }
+  }
+ },
+ {
+  "sinif": "yigilma",
+  "gerekce": "Anayasa 104 (2d83e826): 08fac84a ile kök, şıklar ve anahtar birebir aynı; derste gömülü olan 08fac84a bırakıldı. Kullanıcı onayı 21 Kas 2026.",
+  "arsivlenen": {
+   "id": "d6a55e93-bc58-49ff-82e7-af8d8199ae95",
+   "questionId": "2d83e826-33db-40d5-b9d1-7ffda6388860",
+   "stem": "1982 Anayasası'na göre aşağıdakilerden hangisi Cumhurbaşkanının görev ve yetkileri arasında yer almaz?",
+   "explanation": "Anayasa m.104, Cumhurbaşkanının görev ve yetkilerini tek tek sayar: '...yönetmelikler çıkarabilir', '...Türk Silahlı Kuvvetlerinin kullanılmasına karar verir' ve 'Milli güvenlik politikalarını belirler ve gerekli tedbirleri alır' ifadeleriyle A, C ve D açıkça bu maddede yer alır. B şıkkındaki Danıştay üyelerinin dörtte birini seçme yetkisi ise madde 155'te düzenlenmiştir: '...dörtte biri, nitelikleri kanunda belirtilen görevliler arasından Cumhurbaşkanı; tarafından seçilir.' Bu dört yetki de metinle doğrulanmaktadır. E şıkkındaki 'Sayıştay başkan ve üyelerini seçmek' ise ne madde 104'ün yetki listesinde ne de madde 160'ın (Sayıştayın görev ve düzenlenişini anlatan) metninde Cumhurbaşkanına tanınan bir yetki olarak geçer; bu nedenle E, sorulan 'yer almayan' yetkidir ve doğru cevaptır. TUZAK: Danıştay (dörtte biri Cumhurbaşkanı, dörtte üçü HSK) ile Yargıtay (tamamı HSK) ve Sayıştay (TBMM) üyelerinin seçim usulleri sık karıştırılır; her yüksek yargı organının atama/seçim makamı farklıdır ve bu ayrım sınavda tipik bir çeldiricidir.",
+   "sourceLabel": null,
+   "options": [
+    {
+     "label": "A",
+     "text": "Yönetmelik çıkarmak",
+     "isCorrect": false
+    },
+    {
+     "label": "B",
+     "text": "Danıştay üyelerinin dörtte birini seçmek",
+     "isCorrect": false
+    },
+    {
+     "label": "C",
+     "text": "Türk Silahlı Kuvvetlerinin kullanılmasına karar vermek",
+     "isCorrect": false
+    },
+    {
+     "label": "D",
+     "text": "Milli güvenlik politikalarını belirlemek ve gerekli tedbirleri almak",
+     "isCorrect": false
+    },
+    {
+     "label": "E",
+     "text": "Sayıştay başkan ve üyelerini seçmek",
+     "isCorrect": true
+    }
+   ],
+   "question": {
+    "articleNo": "104",
+    "topic": {
+     "name": "T.C. Anayasası"
+    }
+   }
+  }
+ },
+ {
+  "sinif": "yigilma",
+  "gerekce": "Anayasa 105 (429a3153): e2a16126 ile aynı soru (aynı beş ifade, aynı anahtar); derste gömülü olan e2a16126 bırakıldı. Kullanıcı onayı 21 Kas 2026.",
+  "arsivlenen": {
+   "id": "8e89ff99-d8c6-4387-9ed2-32c27879adfd",
+   "questionId": "429a3153-0c85-4456-a1b9-7f140e37634f",
+   "stem": "1982 Anayasası'na göre Cumhurbaşkanının cezai sorumluluğuyla ilgili aşağıdaki ifadelerden hangisi yanlıştır?",
+   "explanation": "Anayasa m.105'e göre Cumhurbaşkanının görevde bulunduğu sürede işlediği iddia edilen suçlar bakımından görevi bittikten sonra da m.105'teki özel soruşturma ve Yüce Divan usulü uygulanır; genel hükümlere dönülmez.",
+   "sourceLabel": null,
+   "options": [
+    {
+     "label": "A",
+     "text": "Cumhurbaşkanı hakkında bir suç işlediği iddiasıyla TBMM üye tamsayısının salt çoğunluğunun vereceği önergeyle soruşturma açılması istenebilir.",
+     "isCorrect": false
+    },
+    {
+     "label": "B",
+     "text": "Soruşturma, siyasi partilerin komisyona gösterecekleri adaylar arasından ad çekme yoluyla oluşturulan on beş kişilik komisyonca yürütülür.",
+     "isCorrect": false
+    },
+    {
+     "label": "C",
+     "text": "Komisyon raporunu iki ay içinde sunar; bitiremezse bir aylık yeni ve kesin süre verilir.",
+     "isCorrect": false
+    },
+    {
+     "label": "D",
+     "text": "Komisyon raporu Başkanlığa verildikten sonra on gün içinde dağıtılır ve dağıtımından itibaren on gün içinde Genel Kurulda görüşülür.",
+     "isCorrect": false
+    },
+    {
+     "label": "E",
+     "text": "Cumhurbaşkanının görevdeyken işlediği iddia edilen suçlar, görevi bittikten sonra genel hükümlere göre soruşturulur.",
+     "isCorrect": true
+    }
+   ],
+   "question": {
+    "articleNo": "105",
+    "topic": {
+     "name": "T.C. Anayasası"
+    }
+   }
+  }
+ },
+ {
+  "sinif": "yigilma",
+  "gerekce": "Anayasa 83 (bb51240e): dfa97632 ile aynı soru (yalnız C şıkkının ifadesi farklı, anahtar aynı); derste gömülü olan dfa97632 bırakıldı. Kullanıcı onayı 21 Kas 2026.",
+  "arsivlenen": {
+   "id": "bbf7318e-529a-4846-946f-aea2db4b864d",
+   "questionId": "bb51240e-ed68-48df-ae0d-6771924758a4",
+   "stem": "1982 Anayasası'na göre yasama sorumsuzluğu ile ilgili aşağıda verilen ifadelerden hangisi yanlıştır?",
+   "explanation": "Anayasa m.83/1'e göre milletvekillerinin Meclis çalışmalarındaki oy, söz ve düşüncelerinden sorumlu tutulamaması kuralı 'mutlak ve süreklidir' (klasik doktrinde yasama sorumsuzluğu böyle nitelenir) — FAKAT aynı fıkra, bunların Meclis DIŞINDA tekrarlanması veya açığa vurulmasını ayrı bir rejime bağlar: 'o oturumdaki Başkanlık Divanının teklifi üzerine Meclisce başka bir karar alınmadıkça' bu da korunur. Yani dışarıda açığa vurma koruması KOŞULLUDUR, Meclis karar alırsa kalkar. İşaretli C şıkkı 'Meclis dışında açığa vurulması yasaklanamaz' diyerek bunu mutlakmış gibi sunar; bu ifade madde metnindeki açık istisnayla (Meclis kararı ile kaldırılabilme) çelişir, dolayısıyla YANLIŞTIR ve soru bunu doğru tespit etmiştir. A şıkkı 'oy ve sözlerini kapsar' ibaresiyle birebir örtüşür, doğrudur. B şıkkı sorumsuzluğun sadece Meclis çalışmalarıyla sınırlı olduğunu, Meclis dışı hiçbir eylemi (örneğin adi bir suç) kapsamadığını söyler; bu da doğrudur. D şıkkı, sorumsuzluğun cezai/hukuki takibata karşı koruma sağladığını ama Meclisin kendi iç disiplin cezası yetkisine (İçtüzük gereği) engel olmadığını belirtir; madde metninde aksine bir hüküm yoktur, doktrinle uyumludur. E şıkkı 'mutlak olarak korur' ifadesiyle sorumsuzluğun genel karakterini (Meclis içi eylemler için) doğru yansıtır; tuzak burada C ile E'nin karıştırılmasıdır — E'nin 'mutlaklığı' Meclis İÇİ eylemler içindir, C'nin sorunu ise Meclis DIŞI açığa vurmanın metinde AÇIKÇA koşula bağlanmış olmasıdır.",
+   "sourceLabel": null,
+   "options": [
+    {
+     "label": "A",
+     "text": "Meclis çalışmalarında verilen oyları da kapsar.",
+     "isCorrect": false
+    },
+    {
+     "label": "B",
+     "text": "Meclis çalışmalarından kaynaklanmayan hiçbir eylemi kapsamaz.",
+     "isCorrect": false
+    },
+    {
+     "label": "C",
+     "text": "Yasama sorumsuzluğunun kapsamına giren söz ve düşüncelerin Meclis dışında açığa vurulması yasaklanamaz.",
+     "isCorrect": true
+    },
+    {
+     "label": "D",
+     "text": "Yasama organının milletvekillerine disiplin cezası uygulamasına engel oluşturmaz.",
+     "isCorrect": false
+    },
+    {
+     "label": "E",
+     "text": "Kapsamına giren eylemlerde cezai takibata karşı mutlak olarak korur.",
+     "isCorrect": false
+    }
+   ],
+   "question": {
+    "articleNo": "83",
+    "topic": {
+     "name": "T.C. Anayasası"
+    }
+   }
+  }
+ },
+ {
+  "sinif": "yigilma",
+  "gerekce": "Anayasa 53 (13f8345a): ff1e8b0b ile aynı soru; açıklaması daha zayıf olan arşivlendi. Kullanıcı onayı 21 Kas 2026.",
+  "arsivlenen": {
+   "id": "ef0d760a-ee40-43cc-adcf-9bc5802b5124",
+   "questionId": "13f8345a-0721-427f-8e68-2ca6be59f35f",
+   "stem": "1982 Anayasası'na göre toplu sözleşme yapma hakkıyla ilgili aşağıdaki ifadelerden hangisi yanlıştır?",
+   "explanation": "Anayasa m.53 memurlar ve diğer kamu görevlileri bakımından toplu sözleşme uyuşmazlığında Kamu Görevlileri Hakem Kuruluna başvuru yolunu düzenler. Bu uyuşmazlık için GREV HAKKI tanınmamıştır. Kurul kararları kesindir ve toplu sözleşme hükmündedir.",
+   "sourceLabel": null,
+   "options": [
+    {
+     "label": "A",
+     "text": "Memurlar ve diğer kamu görevlileri toplu sözleşme yapma hakkına sahiptir",
+     "isCorrect": false
+    },
+    {
+     "label": "B",
+     "text": "Toplu sözleşme konusunda anlaşma sağlanamazsa grev hakkı kullanılabilir",
+     "isCorrect": true
+    },
+    {
+     "label": "C",
+     "text": "Uyuşmazlık çıkması hâlinde Kamu Görevlileri Hakem Kuruluna başvurulabilir",
+     "isCorrect": false
+    },
+    {
+     "label": "D",
+     "text": "Toplu sözleşme hükümlerinin emeklilere yansıtılması kanunla düzenlenir",
+     "isCorrect": false
+    },
+    {
+     "label": "E",
+     "text": "Toplu sözleşme hakkı sosyal ve ekonomik haklar bölümünde düzenlenmiştir",
+     "isCorrect": false
+    }
+   ],
+   "question": {
+    "articleNo": "53",
+    "topic": {
+     "name": "T.C. Anayasası"
+    }
+   }
+  }
+ }
+]

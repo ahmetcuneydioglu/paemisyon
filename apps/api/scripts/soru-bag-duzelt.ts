@@ -1,7 +1,8 @@
 /**
  * Banka turu (19 Kas 2026) — Yayındaki sorunun MADDE BAĞINI ve/veya AÇIKLAMASINDAKİ bir parçayı düzelt.
  *
- * Soru kökü, şıklar ve anahtar DEĞİŞMEZ (contentHash aynı kalır: parmak izi kök + şıklardan üretilir).
+ * Soru kökü ve anahtar DEĞİŞMEZ. Şık metni yalnız `sik` ile, YAZIM HATASI için değişir (21 Kas 2026:
+ * "I, II ve II" → "I, II ve III"); o zaman contentHash yeniden hesaplanır (parmak izi kök + şıklardan üretilir).
  * Yalnız kullanıcının soru bazında verdiği onayla çalıştırılır.
  *
  *   npx tsx scripts/soru-bag-duzelt.ts <plan.json>          (kuru)
@@ -13,6 +14,7 @@
  *   "baglar": [{ "mevzuat": "5326", "no": "34", "relation": "primary" }],   // (isteğe bağlı) verilirse mevcut
  *                                                       //  bağların YERİNE geçer; kaynak 'script' yazılır
  *   "aciklama": { "eski": "…", "yeni": "…" },           // (isteğe bağlı) parça açıklamada tam bir kez geçmeli
+ *   "sik": { "label": "E", "eski": "…", "yeni": "…" },  // (isteğe bağlı) şıkkın TAM metni; yalnız yazım hatası
  *   "gerekce": "…"
  * }]
  * Yazmadan önce eski durum docs/32-yayin-denetimi/soru-bag-yedek-<zaman>.json'a alınır; işlem
@@ -21,6 +23,7 @@
 import { PrismaClient } from '@prisma/client';
 import { readFileSync, writeFileSync, appendFileSync } from 'fs';
 import { join } from 'path';
+import { questionFingerprint } from '../src/modules/admin/questions/import-parser';
 
 const base = process.env.DATABASE_URL!;
 const url = base.includes('connection_limit')
@@ -30,7 +33,7 @@ const p = new PrismaClient({ datasources: { db: { url } } });
 const D32 = join(__dirname, '../../../docs/32-yayin-denetimi');
 
 type Bag = { mevzuat: string; no: string; relation: 'primary' | 'related' };
-type Satir = { soru: string; articleNo?: string; baglar?: Bag[]; aciklama?: { eski: string; yeni: string }; gerekce: string };
+type Satir = { soru: string; articleNo?: string; baglar?: Bag[]; aciklama?: { eski: string; yeni: string }; sik?: { label: string; eski: string; yeni: string }; gerekce: string };
 
 (async () => {
   const planYol = process.argv[2];
@@ -38,7 +41,7 @@ type Satir = { soru: string; articleNo?: string; baglar?: Bag[]; aciklama?: { es
   const YAZ = process.argv.includes('--yaz');
   const plan: Satir[] = JSON.parse(readFileSync(planYol, 'utf8'));
   const simdi = new Date();
-  const isler: { s: Satir; q: any; yeniBag?: { lawArticleId: string; relation: 'primary' | 'related' }[]; yeniAciklama?: string }[] = [];
+  const isler: { s: Satir; q: any; yeniBag?: { lawArticleId: string; relation: 'primary' | 'related' }[]; yeniAciklama?: string; yeniSik?: { id: string; text: string; hash: string } }[] = [];
   for (const s of plan) {
     const adaylar: { id: string }[] = await p.$queryRawUnsafe(
       `select id::text from questions where deleted_at is null and id::text like $1`, `${s.soru}%`);
@@ -46,7 +49,7 @@ type Satir = { soru: string; articleNo?: string; baglar?: Bag[]; aciklama?: { es
     const q = await p.question.findUniqueOrThrow({
       where: { id: adaylar[0].id },
       select: { id: true, articleNo: true, topicId: true,
-        currentVersion: { select: { id: true, status: true, stem: true, explanation: true } },
+        currentVersion: { select: { id: true, status: true, stem: true, explanation: true, contentHash: true, options: { select: { id: true, label: true, text: true }, orderBy: { sortOrder: 'asc' } } } },
         articles: { select: { lawArticleId: true, relation: true, source: true, lawArticle: { select: { articleNo: true, legislation: { select: { number: true } } } } } } },
     });
     if (q.currentVersion?.status !== 'published') throw new Error(`${s.soru}: yayında değil`);
@@ -74,6 +77,13 @@ type Satir = { soru: string; articleNo?: string; baglar?: Bag[]; aciklama?: { es
       is.yeniAciklama = e.replace(s.aciklama.eski, s.aciklama.yeni);
       console.log(`   açıklama: − «${s.aciklama.eski}»\n             + «${s.aciklama.yeni}»`);
     }
+    if (s.sik) {
+      const o = q.currentVersion.options.find((x) => x.label === s.sik!.label);
+      if (!o || o.text !== s.sik.eski) throw new Error(`${s.soru}: ${s.sik.label} şıkkı plandaki metinle aynı değil («${o?.text}»)`);
+      const hash = questionFingerprint(q.currentVersion.stem, q.currentVersion.options.map((x) => (x.id === o.id ? s.sik!.yeni : x.text)));
+      is.yeniSik = { id: o.id, text: s.sik.yeni, hash };
+      console.log(`   şık ${s.sik.label}: «${s.sik.eski}» → «${s.sik.yeni}»`);
+    }
     console.log(`   GEREKÇE: ${s.gerekce}`);
     isler.push(is);
   }
@@ -92,6 +102,10 @@ type Satir = { soru: string; articleNo?: string; baglar?: Bag[]; aciklama?: { es
         await tx.questionArticle.createMany({ data: i.yeniBag.map((b) => ({ questionId: i.q.id, lawArticleId: b.lawArticleId, relation: b.relation, source: 'script' as const })) });
       }
       if (i.yeniAciklama !== undefined) await tx.questionVersion.update({ where: { id: i.q.currentVersion.id }, data: { explanation: i.yeniAciklama } });
+      if (i.yeniSik) {
+        await tx.questionOption.update({ where: { id: i.yeniSik.id }, data: { text: i.yeniSik.text } });
+        await tx.questionVersion.update({ where: { id: i.q.currentVersion.id }, data: { contentHash: i.yeniSik.hash } });
+      }
     }
   });
   appendFileSync(
