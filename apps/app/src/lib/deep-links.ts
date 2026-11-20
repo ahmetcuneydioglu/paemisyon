@@ -27,7 +27,9 @@ export function routeToHref(route: string | null | undefined): AppHref {
   const q = r.match(/^question:(.+)$/);
   if (q && UUID.test(q[1]!)) return { pathname: "/seans", params: { mode: "practice", questionId: q[1]!, count: "1", source: "notif" } };
   const exam = r.match(/^\/denemeler\/([0-9a-fA-F-]{36})$/);
-  if (exam) return { pathname: "/seans", params: { exam: exam[1]! } };
+  // Deneme bildirimi oynatıcıya değil "Başlamadan önce" ekranına iner (20 Kas 2026): süre o ekrandaki
+  // düğmeyle başlar; devam eden, çözülmüş ya da henüz açılmamış deneme de doğru düğmeyi orada görür.
+  if (exam) return { pathname: "/(tabs)/denemeler/[examId]/kurallar", params: { examId: exam[1]!, role: "" } };
   // Konu özeti ünitesi (Doc 53): web /ozet/<slug> ile aynı adres.
   const ozet = r.match(/^\/?ozet\/([a-z0-9-]+)$/);
   if (ozet) return { pathname: "/ozet/[slug]", params: { slug: ozet[1]! } };
