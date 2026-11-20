@@ -103,9 +103,6 @@ Sorular kastı kaldıran hatayı, taksirli sorumluluğun saklı kalmasını ve s
 :::soru 3b9e17b9-7f40-46c7-a9af-959226d5240a
 :::
 
-:::soru cb318ad5-bd17-468e-a063-91c26e5b23be
-:::
-
 :::soru 59eee2a1-d2d1-4ede-aee0-d58a7637c05e
 :::
 
@@ -124,3 +121,4 @@ Sorular kastı kaldıran hatayı, taksirli sorumluluğun saklı kalmasını ve s
 - Gömülü sorular: bankadaki yayınlı gerçek sorular, hepsi beş şıklı, share 200 (b875ed7b… valiz (beklenen: maddi unsurda hata, kasıtlı hareket etmiş olmaz, fiil suç oluşturmaz); 3b9e17b9… avcılar (beklenen: taksirle yaralama); cb318ad5… rızaya dayalı ilişkiyi suç sanan kişi (beklenen: hukuki yanılmaya dayanan sözde suç); 59eee2a1… çoban (beklenen: malın başkasına ait olduğu konusunda yanıldığı için kastı kaldıran hata)). Doğru şık public uçtan görülemez; panelde anahtarla karşılaştırılmalı. Eş kurgulu 19ad6fad, 744c92eb, cdd645b2 alınmadı. Soru üretilmedi.
 - DENETİM DÜZELTMESİ (bağımsız denetim, Opus oturumu, 13 Kas 2026): Kilit örneği belirsizdi (girmeye rıza sanan kişi kilidin kırılmasına da rıza sanıyor olabilir, mala zarar verme kastı tartışmalı olurdu); olay, failin kilidi kırmaya izin olmadığını bildiği biçimde yeniden kuruldu.
 - AI taslak; insan düzenleme ve yayın onayı bekliyor.
+- 21 Kas 2026 (Ağustos partisi denetimi): gömülü cb318ad5… çıkarıldı ve arşivlendi (kökte olgu yanılgısı yokken anahtar "fiilî yanılmaya dayanan sözde suç"; dersin kendi anlatımıyla çelişiyordu).

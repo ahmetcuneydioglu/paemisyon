@@ -104,7 +104,7 @@ Sorular tanımı, bileşik suç sayılmayan olayları ve bölünmezliğin sonuç
 :::soru da6576ad-a08e-4ac9-84a8-95c5a7c582a9
 :::
 
-:::soru 558a8a30-fe33-4c94-804c-5e4ef11e6ff7
+:::soru 6592c541-87c0-435f-aee5-8ad1c9ec7f7d
 :::
 
 :::soru 63dff052-ad52-45a2-b4b2-15a2dd5c15d6
@@ -125,3 +125,4 @@ Sorular tanımı, bileşik suç sayılmayan olayları ve bölünmezliğin sonuç
 - SONRADAN EKLENEN PARAGRAFLAR, teyit edilmeli: birleştirmenin gerekçesi öğretidendir; "yağmadan sonra başka nedenle yaralama ayrı suçtur" genel kuraldır (yağmada cebrin yaralama boyutuna varması hâlindeki özel hükümler md 149'da; gövdede anılmadı).
 - DENETİM DÜZELTMESİ (bağımsız denetim, Opus oturumu, 13 Kas 2026): (1) bölünmezlik tablosu öğreti kaydına alındı (şikâyet, af, parça suçun suç olmaktan çıkarılması, teşebbüs satırları kanunda yazılı değil); (2) netice sebebiyle ağırlaşmış suçun bileşik suç olmadığı öğreti kaydıyla eklendi ve 03/06'ya gönderildi. Kitaptan aktarılan md 142/2-e, 149/1-d, 94/3, 109/2, 116/4, 292/2 bankadan okunup doğrulandı (V3).
 - AI taslak; insan düzenleme ve yayın onayı bekliyor.
+- 21 Kas 2026 (Ağustos partisi denetimi): gömülü 558a8a30… arşivlendi (ikizi olan kopya); yerine asıl soru 6592c541… gömüldü. Not: asılda da "ani suç" şıkkı öğretide doğru sayılabilir; insan incelemesinde bakılmalı.

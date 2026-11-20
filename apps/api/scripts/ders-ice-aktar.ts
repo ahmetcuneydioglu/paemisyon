@@ -10,6 +10,9 @@
  * Kitap künyesi panelde kalır (isPublic=false); URL'ler markdown notlarından, madde kaynakları `articles`tan gelir.
  */
 import { PrismaClient } from '@prisma/client';
+// Yükleme sırası: soru-ozeti ↔ public.service ↔ soru-paylasim döngüsü tsx altında ancak public.service önce
+// yüklenirse çözülüyor (aksi hâlde "Cannot access 'SORU_OZETI_SELECT' before initialization"; 21 Kas 2026).
+import '../src/modules/public/public.service';
 import { readFileSync } from 'fs';
 import { join } from 'path';
 import { lessonArticleRefs, parseLessonMarkdown } from '../src/modules/lessons/ders-markdown';

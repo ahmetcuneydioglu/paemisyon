@@ -4,6 +4,9 @@
  * Yayın kararı insanındır: betik yalnız kullanıcı çalıştırınca işler, admin kimliğiyle denetim satırı yazmaz.
  */
 import { PrismaClient } from '@prisma/client';
+// Yükleme sırası: soru-ozeti ↔ public.service ↔ soru-paylasim döngüsü tsx altında ancak public.service önce
+// yüklenirse çözülüyor (aksi hâlde "Cannot access 'SORU_OZETI_SELECT' before initialization"; 21 Kas 2026).
+import '../src/modules/public/public.service';
 import { LessonsService } from '../src/modules/lessons/lessons.service';
 import type { PrismaService } from '../src/infra/prisma/prisma.service';
 

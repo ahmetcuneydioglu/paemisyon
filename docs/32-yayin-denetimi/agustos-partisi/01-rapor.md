@@ -314,3 +314,28 @@ Kural: kopya bozuk ya da şüpheliyse kopya arşivlenir; kopya temiz ve derste g
 - `5bab37e7` ← `97691278`: Kök ve A, B, D aynı; ancak doğru (yanlış) şık "olası kastla işlenebilir" yerine "taksirle işlenebilir" yapılmış, C de değişmiş. Özde aynı kural (özel kast) ama kopya belirgin biçimde kolaylaşmış; ikisini birlikte tutmak tekrar hissi verir.
 - `08996806` ← `115b3f06`: I öncülü "nişanlıya karşı" yerine "gece vakti" yapılmış; doğru cevap harfi aynı (I ve III) ama I'in ölçtüğü bilgi farklı. II, III ve şıklar aynı.
 - `b787686b` ← `94b22cb3`: Kök ve dört doğru şık aynı (sırası farklı); ancak yanlış olan şık "ölenin yakınları yanında işlenmesi cezayı artırır" yerine "ölenin cenaze töreninde işlenmesi cezayı artırır" yapılmış. Özde aynı kural (tek artırım nedeni aleniyet); birlikte kalırlarsa tekrar hissi verir.
+
+## 5. Şüpheliler için öneri (21 Kas 2026, ana oturum; karar kullanıcıda)
+
+İkizi olan dört şüpheli (`8c7fd4ea`, `65f45185`, `2214d39e`, `558a8a30`) ikiz planıyla arşivlendi. Kalan 22:
+
+**Çekilmesi önerilenler (14):**
+
+| Soru | Madde | Gerekçe |
+|---|---|---|
+| `aba24401` | TCK 82 | Kardeşini öldürmek isterken babasını öldüren fail: ikisi de md 82/1-d'de; anahtar öldürmenin temel şekli diyor. Büyük olasılıkla yanlış anahtar. |
+| `afbd126f` | TCK 309 | "Somut tehlike suçudur" yanlış sayılmış; Yargıtay uygulaması tersini söylüyor, madde metninden çıkmıyor. Yanlış şık kalmayabilir. |
+| `7d2fb165` | TCK 6 | "TCK'da itiyadi suçlara yer verilmemiştir" yanlış sayılmış; kanun yalnız itiyadi suçluyu düzenliyor. Yanlış şık kalmayabilir. |
+| `c77c4a3a` | TCK 21 | Uçağa bomba: anahtar olası kast; kaçınılmaz netice doğrudan kasttır ve aynı partideki `8da919e0` bunu doğru sayıyor. DERSTE gömülü. |
+| `d1ee9c0c` | TCK 42 | E şıkkı ("etkiler") kaynak sorunun doğru saydığı yargının tersi; B ile birlikte iki yanlış ifade. |
+| `0d3edeb1` | TCK 43 | Farklı kişilerin hesaplarından aynı anda para çekme: md 43/2'ye göre zincirleme suç (C) de savunulur; anahtar yalnız "mağdur banka" kabulüyle doğru. |
+| `dfb40c8e` | TCK 160 | Otobüste UNUTULAN saat: md 160 kaybedilmiş eşyayı arar; aynı partideki `583902c1` unutulan çantada hırsızlık diyor. |
+| `29488c8e` | TCK 155 | Kök faili "tahsilat memuru" yapıyor; görev nedeniyle verilen parada zimmet (D) savunulur. |
+| `838137d4` | TCK 271 | II. öncül iki türlü okunuyor; her iki okumanın cevabı da şıklarda var. |
+| `d9d67830` | TCK 217 | Cevabı III. öncül ("soyut tehlike suçudur") belirliyor; nitelendirme öğretide tartışmalı, her iki sonucun şıkkı var. |
+| `f523150b` | CMK 12 | Kazanın yeri kökte yok; şıklardaki Edirne ve Bolu kökte geçmiyor (yeniden yazımda düşmüş). |
+| `169172de` | 298 | Anahtar md 117'deki genel 48 saate dayanıyor; kök süreyi kurulların kuruluşuna bağlıyor, oysa kanun orada ayrı süre koyuyor (md 119–121). |
+| `ef9deacc` | Anayasa 161 | "Yanlış" diye işaretlenen C güncel metinde yok ama metne aykırı da değil (2017 öncesi md 164). |
+| `b2939dc0` | Anayasa 79 | III. öncül YSK içtihadına bağlı ve iki yönlü; öncül 2017 öncesi ibareyi kullanıyor. |
+
+**Kalması önerilenler (8):** `037ee980` (C açıkça yanlış; D yalnız gevşek), `55051b58` (zorunluluk hâli: CMK md 223/3-b anahtarı destekliyor), `7fb3b567` ("her durumda" kaydı ifadeyi yanlış kılıyor; açıklaması düzeltilmeli), `3dd6369c`, `fe940727`, `66614094` (anahtar madde metniyle tutarlı, tartışma yan şıkta), `52ec5d68` (C kesin doğru; DERSTE), `edbea887` (md 259 metnine uyuyor; baskı vurgusu irtikâbı da düşündürüyor, sınırda).

@@ -95,7 +95,7 @@ Fail bir mağazadan iki bilgisayar ve bir telefon çalmak ister; polisin sesini 
 
 Sorular suç sayısını, hırsızlıkta zilyetliği ve tekerrür ayrımını yoklar.
 
-:::soru 86f390ba-cb25-4400-8ae5-e7232cdeb352
+:::soru 9245b0a1-a266-412e-87a3-88d28efab2e3
 :::
 
 :::soru 1097d7ac-a304-4df2-8ba1-cca73225db14
@@ -126,3 +126,4 @@ Sorular suç sayısını, hırsızlıkta zilyetliği ve tekerrür ayrımını yo
 - SONRADAN EKLENEN PARAGRAF (kolluk), yazımdır — teyit edilmeli.
 - DENETİM DÜZELTMESİ (bağımsız denetim, Opus oturumu, 13 Kas 2026): (1) tekerrüre md 58/2 süre koşulu kaydı; (2) cezaların toplanmasının infaz aşamasında 5275 md 99'da düzenlendiği eklendi; (3) zilyetlik ölçüsü ve eşler satırı uygulama/öğreti çözümü olarak kayda alındı; "istenenden azını alma" ana yeri bu ders, 07/02 buraya gönderiyor.
 - AI taslak; insan düzenleme ve yayın onayı bekliyor.
+- 21 Kas 2026 (Ağustos partisi denetimi): gömülü 86f390ba… arşivlendi (anahtar "on iki", TCK md 43/2'ye ve asıl sorunun anahtarına aykırı); yerine asıl soru 9245b0a1… (on kişi, beklenen: bir) gömüldü.

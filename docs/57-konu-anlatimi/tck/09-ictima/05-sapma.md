@@ -107,7 +107,7 @@ Sorular olası kastla gerçekleşen sapmayı ve farklı zamanlarda iki kişinin 
 :::soru 6aae8b85-eead-46e7-a2ad-b87fbb0f1de7
 :::
 
-:::soru a7f687c5-d3c6-419f-8b94-401f5986d4a6
+:::soru fa3bef00-3054-4a3d-8a18-fa2803648d06
 :::
 
 ---
@@ -125,3 +125,4 @@ Sorular olası kastla gerçekleşen sapmayı ve farklı zamanlarda iki kişinin 
 - Gömülü sorular: bankadaki yayınlı gerçek sorular, ikisi de beş şıklı (6aae8b85… arkadaki kişinin vurulabileceğini öngörüp ateşe devam eden fail (beklenen: hedefe karşı öldürmeye teşebbüs ve vurulan kişiye karşı kasten öldürme); a7f687c5… farklı zamanlarda iki kişiyi öldürme (beklenen: iki ayrı kasten öldürmeden sorumludur; "iki sonuçlu sapma" çeldiricidir)). Doğru şık public uçtan görülemez; panelde anahtarla karşılaştırılmalı. ALINMAYANLAR: 5e02f356 (yanındaki kişiye isabet eden mermi; beklenen yanıt failin manevi unsuruna göre değişir, soru kökü bunu söylemiyor — panel listesine), c5e45152 (şıkları public uçta kesik). Soru üretilmedi.
 - DENETİM DÜZELTMESİ (bağımsız denetim, Opus oturumu, 13 Kas 2026): (1) iki sonuçlu suçta sapma 09/04 ile hizalandı: sonuç ölçüsüne göre ayrı ayrı ceza (kitap s-087 kesin konuşur), farklı görüş kaydıyla; (2) tek sonuçlu tablo hücresi olası kast koşuluna bağlandı (kitap s-086); (3) taksir satırına "tek sonuç doğduğu için" gerekçesi; md 44 gerekçesine dayanan cümle doğrulanamadığı için "öğretide de kabul edilir" oldu; (4) nedensellikte sapma örneğine 02/04 göndermesi.
 - AI taslak; insan düzenleme ve yayın onayı bekliyor.
+- 21 Kas 2026 (Ağustos partisi denetimi): gömülü a7f687c5… arşivlendi (yeniden yazımda olay unsurları bulanıklaşmış); yerine asıl soru fa3bef00… gömüldü.
