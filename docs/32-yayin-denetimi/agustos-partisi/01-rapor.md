@@ -339,3 +339,56 @@ Kural: kopya bozuk ya da şüpheliyse kopya arşivlenir; kopya temiz ve derste g
 | `b2939dc0` | Anayasa 79 | III. öncül YSK içtihadına bağlı ve iki yönlü; öncül 2017 öncesi ibareyi kullanıyor. |
 
 **Kalması önerilenler (8):** `037ee980` (C açıkça yanlış; D yalnız gevşek), `55051b58` (zorunluluk hâli: CMK md 223/3-b anahtarı destekliyor), `7fb3b567` ("her durumda" kaydı ifadeyi yanlış kılıyor; açıklaması düzeltilmeli), `3dd6369c`, `fe940727`, `66614094` (anahtar madde metniyle tutarlı, tartışma yan şıkta), `52ec5d68` (C kesin doğru; DERSTE), `edbea887` (md 259 metnine uyuyor; baskı vurgusu irtikâbı da düşündürüyor, sınırda).
+
+## 6. Anayasa konulu bağsız 79 soru — güncel metinle ikinci denetim (21 Kas 2026)
+
+Metinler: bankadaki güncel Anayasa, 298, 2839, 6271, 7062, 2820, 3376 ve TBMM İçtüzüğü. Her şık madde metniyle karşılaştırıldı. Sınır: girdide anahtar işaretliydi (kör çözüm değil); eski anayasaların metni yoktu.
+
+Sonuç: temiz 55, metinsiz 22, şüpheli 2, kusurlu 0, eskimiş 0.
+
+| Soru | Hüküm | Dayanak | Not |
+|---|---|---|---|
+| `3324273c` | temiz | 298 md 7; Anayasa md 67/5 | D şıkkı 298 md 7/3 lafzıyla birebir; Anayasa md 67 taksirli suç hükümlüsünü ayırır ama kök "298'e göre" dediği için cevabı etkilemez. |
+| `856e3b58` | metinsiz | 1876 Kânûn-ı Esâsî (md 14 dilekçe, md 53 kanun layihası Heye |  |
+| `e458f91a` | metinsiz | 1921 Teşkilât-ı Esâsiye Kanunu; öğreti | D şıkkı zayıf: 1921 md 8 vekillerin görev ve sorumluluğunu özel kanuna bırakır; "bireysel sorumluluğu düzenlemesi" öğretideki meclis hükûmeti kabulüne dayanır. Cevabı etkilemez. |
+| `633932b5` | metinsiz | 1921 Anayasası 1923 değişikliği (364 sayılı Kanun); bilgi |  |
+| `2029fa15` | metinsiz | 1924 Anayasası md 87; bilgi |  |
+| `764727e8` | metinsiz | 1961 Anayasası md 102; 1924 Anayasası md 44; bilgi | 1876'da da vekillerin meclis üyesi olması şartı yoktu; kök "TBMM üyesi" dediği için 1961 yerleşik cevap. |
+| `254f05f4` | metinsiz | 1876 Kânûn-ı Esâsî md 102; bilgi |  |
+| `d16b8305` | metinsiz | 1982 için Anayasa md 175/1, md 80, md 83/1 (metinden doğrula |  |
+| `6774e98b` | metinsiz | 1961 Anayasası md 56 (1971, 1421 sayılı Kanunla değişik); bi |  |
+| `6add0443` | metinsiz | 1924 Anayasası 1928, 1934, 1937 değişiklikleri; bilgi |  |
+| `52d41cd4` | metinsiz | 1876 Kânûn-ı Esâsî md 42, 46, 50, 60, 62, 7; bilgi |  |
+| `a32ffd3f` | metinsiz | Tarih (1987, 1988, 2007, 2010, 2017 halkoylamaları) | Güncellik riski: bilgim Haziran 2026'ya kadar; o tarihten sonra yeni bir anayasa halkoylaması yapıldıysa soru eskir. İnsan teyidi önerilir. |
+| `f29f846d` | metinsiz | Anayasa md 175 (1982 ayağı metinden); 1961 ve öncesi için bi |  |
+| `2bec242d` | metinsiz | Genel öğreti (egemenlik teorileri) |  |
+| `2ef4c395` | metinsiz | Genel öğreti (kurucu iktidar); Anayasa md 175 |  |
+| `1178be33` | metinsiz | Genel öğreti (devlet biçimleri) |  |
+| `9c9f3596` | metinsiz | Genel öğreti (hükûmet sistemleri) |  |
+| `f406f4bf` | metinsiz | Genel öğreti (Duverger ölçütleri) | III öğretide tanımlayıcı unsur sayılmaz; yerleşik kabul. |
+| `18fe4428` | metinsiz | Genel öğreti (anayasa türleri) |  |
+| `374b4dee` | temiz | İçtüzük md 57/2 | Kök maddenin 2017 öncesi lafzını taşıyor ("görüşmeye tabi tezkereler", "maddelerine geçilmesi ve tümünün oylanması"); 1160 sayılı Kararla bu ibareler metinden çıkarıldı. Cevap değişmiyor ama kökün güncel lafza çekilmesi önerilir (eskimiş sayılmadı: cevap ve sayı aynı). |
+| `b9c3f17e` | temiz | İçtüzük md 105/2 | Aynı fıkra çalışma süresinin Genel Kurulca tespit edileceğini de söyler; kök "kural olarak" dediği için üç ay tek cevap. |
+| `d8dcf028` | temiz | İçtüzük md 9 | Genel Kurul sayıyı artırabilir (md 9/2); kök İçtüzükteki sayıyı soruyor, cevap 7. |
+| `7781d371` | temiz | İçtüzük md 142 | Sayıştay Başkanı seçiminin gizli oyla yapıldığı 6085 sayılı Kanun'dadır; o metin elde yok ama cevap md 142'deki listeden çıkıyor. D şıkkında md 142 kesinhesap için 'tümü' demiyor, cevabı etkilemez. |
+| `4a7b555a` | temiz | 2839 md 18 | D (30 gün) ile E (1 ay) genel/ara seçim kuralına ('bir ay önce') yakın çeldirici; kök yenilemeyi sorduğu için tek cevap A. |
+| `57922c30` | temiz | 2839 md 19 | D ve E maddeyi kısaltıyor: D'de 'savaş ve seferberlik hallerindeki ayrılma istekleri hariç' kaydı, E'de 'milletvekili seçilmemiş olanlar' kaydı yok. Sayısal olarak açık yanlış yalnız C olduğundan tek cevap korunuyor; istenirse şıklar madde kaydıyla tamamlanabilir. |
+| `037ee980` | suphe | 298 md 15 (7393 ile değişik), md 10; 2839 md 23 | Anahtar C kesin yanlış: md 15/1 'Bu suretle kurulan il seçim kurulu iki yıl süre ile görev yapar.' A ve B doğru (md 15/1: 'bir başkan ve iki asıl üye ile iki yedek üyeden oluşur ... iki yılda bir ocak ayının son haftasında ... ad çekme suretiyle tespit edilir'). Ancak iki şık güncel metinle tam örtüşmüyor: (1) D 'Başkanın yokluğ |
+| `2920c841` | temiz | 298 md 110, 112 | D şıkkı nöbetçi savcıya itirazın YAZILI olması kaydını atlıyor; cevabı etkilemez. |
+| `eb0efae2` | temiz | 298 md 79, 80, 82 | Üslup: kökte 'aşağıdakilerden hangisi' eksik; B şıkkı yasağı 'açık kalması' diye veriyor (anlaşılır). Kusur değil. |
+| `d1efa6f6` | temiz | 2820 md 23 | Kökte kanun adı yok; on beş gün metinde hazırlama süresidir, gönderme için ayrı süre yok. Cevabı etkilemez. |
+| `5fc7efae` | temiz | 2820 md 13, 19 | A şıkkındaki 'Büyük genel kurul' kanunda geçen bir ad değil (kanunda 'büyük kongre', md 13-14); açıklama da 'büyük kongre' diyor. Şık 'Büyük kongre' yapılabilir; cevabı etkilemez. |
+| `e0d8fd3a` | temiz | 2820 md 14 | A şıkkında yazım: 'tabi' → 'tabii'. |
+| `772f22d8` | temiz | 6271 md 13/1 | Açıklama başlangıcı 'kesin aday listesinin Resmî Gazete'de yayımlandığı gün' diye veriyor; bankadaki güncel md 13/1 'aday listesinin kesinleştiği gün' diyor. Açıklama metni düzeltilebilir; soru ve anahtar etkilenmiyor. |
+| `3c02b028` | metinsiz | 1924 Anayasası (md 87 parasız ilköğretim, md 22 Meclis tahki |  |
+| `161f3a4f` | metinsiz | Genel öğreti (devlet biçimleri) |  |
+| `bff3465f` | metinsiz | Genel öğreti (kurucu iktidar) |  |
+| `84ffac75` | metinsiz | Genel öğreti (hükûmet sistemleri) |  |
+| `432f13b2` | temiz | İçtüzük md 160/2, 160/4 ve md 161/5 | İlk turda teyit istenen md 160/161 ayrımı güncel metinle (2017, 1160 sayılı Karar) doğrulandı. |
+| `0d91b1aa` | temiz | 2839 md 5 | Kök 'genel nüfus bilgilerinin' diyor, bankadaki metin 'genel nüfus sayımı sonuçlarının'; cevabı etkilemez. |
+| `ed64de59` | temiz | 298 md 94/A | D ve E propaganda kuralına ilişkin, kök 'seçmenlerle ilgili' diyor; üslup, kusur değil. |
+| `954d2121` | temiz | 2820 md 7 | A şıkkı 'yerel meclis grupları' diyor; metin 'il genel meclisi ve belediye meclisi grupları'. Doğru. |
+| `ccfa24bb` | temiz | 2820 md 57 | Soru DÖRT ŞIKLI (beş şık kuralına aykırı; biçim). Ayrıca md 57 yalnız geçici/kesin çıkarma cezaları ve parti içi itiraz yolu tüketildikten sonrası için; kök bütün disiplin cezalarına genelliyor. Cevabı etkilemez. |
+| `b9bb5da7` | temiz | 2820 md 36 (ve 298 md 14/11) | II'nin doğruluğu metinde açık bir cümleye değil, grup ibaresinin metinden çıkarılmış olmasına dayanıyor (bilgime göre 2022, 7393 sayılı Kanun; bankadaki metin yalnız '(…)' gösteriyor). |
+| `5e6e898f` | temiz | 6271 md 11/2 | Kök süre başlangıcını 'seçim sonuçlarının kesinleşmesi' diye veriyor, metin 'YSK'ca Cumhurbaşkanının seçildiğinin ilân edilmesi' diyor; ayrıca hâkim, savcı, subay ve astsubaylar dönüş hakkının dışında, kök ayırmıyor. Süre sorulduğundan cevap tek; kök düzeltilebilir. |
+| `111faccb` | suphe | 6271 md 8/A f.2, 4, 5 | B kesin yanlış: md 8/A-4 'Seçmenler, ancak bu ilânda belirtilen kişilerden sadece biri için bir kez teklifte bulunabilirler'; tercih değiştirme imkânı yok. A (f.4) ve C (f.5 'bizzat başvururlar') doğru. Ancak E ('Aynı seçmenin birden fazla aday için yaptığı teklifler geçersizdir') metinde YOK: f.5'e göre ikinci teklif zaten alın |
