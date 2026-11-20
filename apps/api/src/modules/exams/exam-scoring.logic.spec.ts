@@ -269,3 +269,19 @@ describe('exam-state', () => {
     expect(listOrder('closed', 'completed')).toBe(4);
   });
 });
+
+describe('eksik çözüm eşiği (20 Kas 2026)', () => {
+  // eslint-disable-next-line @typescript-eslint/no-require-imports
+  const { minAnswersFor, isRankEligible } = require('./exam-scoring.logic');
+  it('100 soruda %20 → 20 cevap', () => {
+    expect(minAnswersFor(100, 20)).toBe(20);
+    expect(isRankEligible(19, 100, 20)).toBe(false);
+    expect(isRankEligible(20, 100, 20)).toBe(true);
+  });
+  it('yukarı yuvarlar ve hiç cevapsız çözüm her eşikte eksiktir', () => {
+    expect(minAnswersFor(25, 20)).toBe(5);
+    expect(minAnswersFor(33, 20)).toBe(7);
+    expect(minAnswersFor(100, 0)).toBe(1);
+    expect(isRankEligible(0, 100, 0)).toBe(false);
+  });
+});

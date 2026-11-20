@@ -23,6 +23,8 @@ export interface ExamFormValue {
   testOnly: boolean;
   questionsOpenAfterEnd: boolean;
   practiceAfterEnd: boolean;
+  /** Sıralamaya girmek için cevaplanması gereken en az soru yüzdesi. */
+  minAnswerPercent: number;
   remindEnabled: boolean;
 }
 
@@ -52,6 +54,7 @@ export function emptyExam(): ExamFormValue {
     testOnly: false,
     questionsOpenAfterEnd: true,
     practiceAfterEnd: true,
+    minAnswerPercent: 20,
     remindEnabled: true,
   };
 }
@@ -71,6 +74,7 @@ export function toFormValue(e: AdminExamDetail): ExamFormValue {
     testOnly: e.testOnly ?? false,
     questionsOpenAfterEnd: e.questionsOpenAfterEnd,
     practiceAfterEnd: e.practiceAfterEnd,
+    minAnswerPercent: e.minAnswerPercent ?? 20,
     remindEnabled: e.remindEnabled,
   };
 }
@@ -436,6 +440,27 @@ export function ExamSettingsForm({
           disabled={disabled}
           onChange={(b) => set({ practiceAfterEnd: b })}
         />
+        <div className="rounded-lg border border-slate-200 p-3">
+          <label className="block text-sm font-medium" htmlFor="min-answer-percent">
+            Sıralama eşiği (cevaplanan soru %)
+          </label>
+          <p className="mt-0.5 text-xs text-slate-500">
+            Resmî çözümde soruların bu yüzdesinden azını cevaplayan aday sıralamaya, katılımcı
+            sayısına ve ortalamaya girmez; sonucunu görür, resmî hakkı kullanılmış olur.
+            Değiştirince tamamlanmış çözümler yeniden değerlendirilir.
+          </p>
+          <input
+            id="min-answer-percent"
+            type="number"
+            min={0}
+            max={100}
+            step={5}
+            disabled={disabled}
+            value={v.minAnswerPercent}
+            onChange={(e) => set({ minAnswerPercent: Math.max(0, Math.min(100, Number(e.target.value) || 0)) })}
+            className="mt-2 w-24 rounded-md border border-slate-300 px-2 py-1.5 text-sm"
+          />
+        </div>
         <Toggle
           label="Sınav bitince sorular herkese açık görüntülenebilsin"
           help="Cevapsız soru listesi (/denemeler/:id/sorular). Yayınlanmış kitapçık mantığı."

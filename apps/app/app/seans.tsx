@@ -73,6 +73,8 @@ export default function SeansScreen() {
   const [deadline, setDeadline] = useState<number | null>(null);
   /** Doc 50: resmî çözümde admin anahtarı, tekrar çözümde her zaman — sunucu söyler, istemci kural bilmez. */
   const [reveal, setReveal] = useState(false);
+  /** Resmî çözümde sıralama eşiği (sunucudan); teslim sayfası uyarır. */
+  const [minAnswers, setMinAnswers] = useState<number | null>(null);
   const shownAt = useRef(0);
   const finishing = useRef(false);
   const [scrollY] = useState(() => new Animated.Value(0));
@@ -113,6 +115,7 @@ export default function SeansScreen() {
           if (active) {
             setTitle(r.title);
             setReveal(r.liveAnswerReveal === true);
+            setMinAnswers(r.minAnswers ?? null);
             if (r.givenAnswers.some((a) => a.flagged)) setFlags(new Set(r.givenAnswers.filter((a) => a.flagged).map((a) => a.questionId)));
           }
         } else {
@@ -714,6 +717,7 @@ export default function SeansScreen() {
                 flagged={flags.size}
                 remainingLabel={deadline != null && submitOpen ? fmtDuration(Math.max(0, Math.round((deadline - saat.simdi()) / 1000))) : null}
                 busy={finishing.current}
+                minAnswers={minAnswers}
               />
             </>
           ) : null}

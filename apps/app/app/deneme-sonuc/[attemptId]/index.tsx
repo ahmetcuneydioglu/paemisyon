@@ -36,7 +36,9 @@ export default function DenemeSonucScreen() {
 
   const sub = !d
     ? null
-    : official
+    : d.incomplete
+      ? "Eksik çözüm · sıralamaya girmedi"
+      : official
       ? rankText
         ? `${rankText}${rank?.percentile && rank.percentile <= 50 ? ` · ilk %${rank.percentile}` : ""}`
         : rank && !rank.available
@@ -98,6 +100,11 @@ export default function DenemeSonucScreen() {
               </Notice>
             ) : null}
             {practice ? <Notice tone="info">Bu çözüm sıralamaya girmedi; resmî sonucun sıralamada olduğu gibi duruyor.</Notice> : null}
+            {d.incomplete ? (
+              <Notice tone="warning" title="Eksik çözüm">
+                Sıralamaya girmek için en az {d.minAnswers ?? "—"} soru cevaplamak gerekiyor; bu çözümde {(d.correctCount ?? 0) + (d.wrongCount ?? 0)} cevap var. Sonucun ve cevap incelemen burada; sıralama ve Türkiye kıyasında yer almıyorsun.
+              </Notice>
+            ) : null}
             {d.closedReason === "timeout" ? <Notice tone="warning">Süre doldu; cevapların otomatik teslim edildi.</Notice> : null}
 
             <View style={{ flexDirection: "row", gap: space.s2 }}>

@@ -68,6 +68,7 @@ export default function KurallarScreen() {
                 <RuleCard icon={Trophy} tone="warning" title="Sıralamaya yalnız ilk çözümün girer" body={e.publishMode === "takvimli" ? `${ekle(fmtDate(e.startAt, { hour: "2-digit", minute: "2-digit" }), "den")} sınav bitene kadar bir kez girebilirsin. Sonrası pratik sayılır.` : "İkinci kez çözersen pratik sayılır, sıran değişmez. Hazır olduğundan emin ol."} />
               )}
               <RuleCard icon={Clock} tone="warning" title={`${e.durationMinutes} dakika kesintisiz zaman ayır`} body="Süre başlayınca durmaz; uygulamadan çıksan da işler. Dolunca cevapların otomatik teslim edilir." />
+              {!practice && e.minAnswers ? <RuleCard icon={Trophy} tone="info" title={`En az ${e.minAnswers} soru cevapla`} body="Daha az cevapla teslim edilen çözüm sıralamaya ve ortalamaya girmez; sonucunu yine görürsün, resmî hakkın kullanılmış olur." /> : null}
               <RuleCard icon={Minus} tone="info" title="4 yanlış 1 doğruyu götürür" body="Puan net ile hesaplanır: doğru − yanlış/4. Boş sorular neti etkilemez." />
               {e.publishMode === "takvimli" ? <RuleCard icon={Bell} tone="accent" title="Sonuçlar pencere kapanınca açıklanır" body={`Sıralama ve Türkiye kıyası ${ekle(fmtDate(e.endAt), "de")} herkese aynı anda açılır; sana bildirim göndeririz.`} /> : null}
               {e.liveAnswerReveal && !practice ? <Notice tone="info">Bu denemede şıkka basınca doğru/yanlış ve açıklama hemen görünür; cevap değiştirilemez.</Notice> : null}

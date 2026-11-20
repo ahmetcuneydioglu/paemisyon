@@ -54,6 +54,9 @@ export interface AttemptResult {
   totalQuestions: number;
   /** Takvimli resmî çözüm: pencere kapanana kadar kilitli (Doc 50 M4-d). */
   resultLocked: boolean;
+  /** Eksik çözüm (sunucu kararı): eşiğin altında cevaplandı, sıralamaya girmedi. */
+  incomplete?: boolean;
+  minAnswers?: number | null;
   resultAt: string | null;
   answeredCount?: number;
   correctCount: number | null;

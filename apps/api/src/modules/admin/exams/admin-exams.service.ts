@@ -39,6 +39,7 @@ export class AdminExamsService {
         examId: { in: exams.map((e) => e.id) },
         status: 'completed',
         attemptRole: 'official',
+        rankEligible: true, // eksik çözümler katılım ve ortalamaya girmez
       },
       _count: { _all: true },
       _avg: { score: true },
@@ -106,6 +107,7 @@ export class AdminExamsService {
       testOnly: exam.testOnly,
       questionsOpenAfterEnd: exam.questionsOpenAfterEnd,
       practiceAfterEnd: exam.practiceAfterEnd,
+      minAnswerPercent: exam.minAnswerPercent,
       /** Eski alan adı (panelin eski sürümü). */
       archiveOpenAfterEnd: exam.practiceAfterEnd,
       remindEnabled: exam.remindEnabled,
@@ -399,6 +401,23 @@ export class AdminExamsService {
     }
     const data = this.mapDto(dto);
     await this.prisma.exam.update({ where: { id }, data });
+    // Eşik değiştiyse tamamlanmış resmî çözümlerin sıralama uygunluğu yeniden hesaplanır
+    // (tek SQL; donmuş sıralama varsa aşağıdaki yeniden açma ya da betikle tazelenir).
+    if (dto.minAnswerPercent != null && dto.minAnswerPercent !== exam.minAnswerPercent) {
+      await this.prisma.$executeRaw`
+        UPDATE quiz_sessions qs
+        SET rank_eligible = (
+          (SELECT COUNT(*) FROM quiz_answers qa
+            WHERE qa.session_id = qs.id AND qa.selected_option_id IS NOT NULL)
+          >= GREATEST(1, CEIL(qs.total_questions * ${dto.minAnswerPercent}::numeric / 100))
+        )
+        WHERE qs.exam_id = ${id}::uuid AND qs.mode = 'deneme'
+          AND qs.attempt_role = 'official' AND qs.status = 'completed'`;
+      await this.audit.log(actor, 'exam.min_answer_percent', 'exam', id, {
+        from: exam.minAnswerPercent,
+        to: dto.minAnswerPercent,
+      });
+    }
     // Takvimli deneme yeniden açılırsa (pencere ileri alınır; "her gün 21:00" senaryosu):
     // donmuş sıralama eski turda kalır, kapanış cron'u rankingsComputedAt dolu diye yeni turu
     // atlar (3 Kas 2026 bulgusu: Haftalık Deneme-1, 2. tur katılımcıları sıralamaya girmedi).
@@ -886,6 +905,8 @@ export class AdminExamsService {
       liveAnswerReveal: dto.liveAnswerReveal ?? false,
       questionsOpenAfterEnd: dto.questionsOpenAfterEnd ?? true,
       practiceAfterEnd: dto.practiceAfterEnd ?? dto.archiveOpenAfterEnd ?? true,
+      // Gönderilmezse dokunulmaz (panelin eski sürümü eşiği sıfırlamasın).
+      ...(dto.minAnswerPercent != null ? { minAnswerPercent: dto.minAnswerPercent } : {}),
       remindEnabled: dto.remindEnabled ?? true,
       testOnly: dto.testOnly ?? false,
     };

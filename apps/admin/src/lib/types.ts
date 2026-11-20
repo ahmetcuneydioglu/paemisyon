@@ -287,6 +287,7 @@ export interface AdminExamDetail {
   testOnly?: boolean;
   questionsOpenAfterEnd: boolean;
   practiceAfterEnd: boolean;
+  minAnswerPercent?: number;
   /** Eski alan adı — practiceAfterEnd ile aynı. */
   archiveOpenAfterEnd: boolean;
   remindEnabled: boolean;
@@ -326,6 +327,9 @@ export interface ExamStats {
   summary: {
     started: number;
     completed: number;
+    /** Eşiğin altında cevaplayan resmî çözüm: sıralama ve ortalamaya girmez. */
+    incomplete?: number;
+    minAnswerPercent?: number;
     inProgress: number;
     practice: number;
     timeouts: number;

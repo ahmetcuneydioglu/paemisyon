@@ -76,6 +76,13 @@ export class UpsertExamDto {
   @IsBoolean()
   practiceAfterEnd?: boolean;
 
+  /** Sıralamaya girmek için cevaplanması gereken en az soru yüzdesi (0–100; varsayılan 20). */
+  @IsOptional()
+  @IsInt()
+  @Min(0)
+  @Max(100)
+  minAnswerPercent?: number;
+
   /** Eski alan adı (panelin eski sürümü) — practiceAfterEnd'e eşlenir. */
   @IsOptional()
   @IsBoolean()

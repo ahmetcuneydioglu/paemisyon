@@ -15,7 +15,7 @@ import { SettingsService } from '../../infra/settings/settings.service';
 import { BadgeService } from '../coach/badge.service';
 import { ProgressService } from '../progress/progress.service';
 import type { AuthenticatedUser } from '../auth/auth.types';
-import { scoreAttempt, type AdjustmentAction } from '../exams/exam-scoring.logic';
+import { isRankEligible, scoreAttempt, type AdjustmentAction } from '../exams/exam-scoring.logic';
 import { DEADLINE_GRACE_SECONDS } from '../exams/exam-state.logic';
 import { mixQuota, pickMix, pickTopicBalanced, pickComeback } from './session-mix.logic';
 // Ağırlıklı kota + konu-dengeli seçim admin autofill ile ORTAK saf mantık.
@@ -1696,6 +1696,18 @@ export class QuizService {
     // (kullanıcı "Bitir" + süre dolumu cron'u, çift dokunuş, çevrimdışı kuyruk) ikisi de
     // in_progress görüp olayı/ilerlemeyi İKİ KEZ yazıyordu. Yalnız in_progress → completed
     // geçişini kazanan çağrı devam eder; kaybeden saklanan sonucu döner.
+    // Eksik çözüm (20 Kas 2026): resmî deneme çözümünde işaretlenen şık sayısı denemenin
+    // eşiğinin altındaysa kayıt kalır ama sıralama ve toplu istatistiğe girmez.
+    let rankEligible = true;
+    if (session.mode === 'deneme' && session.attemptRole === 'official' && session.examId) {
+      const ex = await this.prisma.exam.findUnique({
+        where: { id: session.examId },
+        select: { minAnswerPercent: true },
+      });
+      const answered = validAnswers.filter((a) => a.selectedOptionId != null).length;
+      rankEligible = isRankEligible(answered, session.totalQuestions, ex?.minAnswerPercent ?? 20);
+    }
+
     const won = await this.prisma.quizSession.updateMany({
       where: { id: sessionId, status: 'in_progress' },
       data: {
@@ -1706,6 +1718,7 @@ export class QuizService {
         blankCount,
         score,
         durationSeconds,
+        rankEligible,
         ...(session.mode === 'deneme' ? { closedReason: reason } : {}),
       },
     });

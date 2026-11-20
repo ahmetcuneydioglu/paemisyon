@@ -46,7 +46,7 @@ function Group({ title, items }: { title: string; items: ExamHistoryItem[] }) {
         {items.map((it, i) => {
           const role = it.role === "official" ? "resmî" : it.role === "practice" ? "tekrar" : it.role === "personal" ? `${it.totalQuestions} soru` : "";
           const sub = `${it.completedAt ? fmtDate(it.completedAt, { day: "numeric", month: "short" }) : "—"} · ${role}${it.closedReason === "timeout" ? " · süre doldu" : ""}`;
-          const right = it.resultLocked ? "sonuç bekliyor" : it.rank != null ? `${it.rank}.` : it.role === "official" ? "sıralama bekliyor" : "sırasız";
+          const right = it.resultLocked ? "sonuç bekliyor" : it.incomplete ? "eksik çözüm" : it.rank != null ? `${it.rank}.` : it.role === "official" ? "sıralama bekliyor" : "sırasız";
           return (
             <ListRow
               key={it.attemptId}

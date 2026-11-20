@@ -125,9 +125,24 @@ export function rankWithTies<T extends RankInput>(rows: T[]): RankedRow<T>[] {
  * hiç cevap vermeden bırakan aday (göz atma) sıralamada 0 netle durup katılım
  * sayısını ve ortalamayı şişiriyordu (Paem11 Deneme 1, 30 Eki 2026).
  */
-export const ANSWERED_ATTEMPT = {
-  OR: [{ correctCount: { gt: 0 } }, { wrongCount: { gt: 0 } }],
-};
+export const ANSWERED_ATTEMPT = { rankEligible: true };
+
+/**
+ * Eksik çözüm eşiği (20 Kas 2026, kullanıcı kararı): resmî çözümün sıralamaya ve toplu
+ * istatistiğe girmesi için işaretlenmesi gereken en az şık sayısı. Puana değil cevap sayısına
+ * bakar: düşük net alan ama gerçekten çözen aday kalır, birkaç soru çözüp çıkan girmez.
+ * Hiç cevap vermeyen her durumda eksiktir (30 Eki 2026 kuralı).
+ */
+export function minAnswersFor(totalQuestions: number, minAnswerPercent: number): number {
+  return Math.max(1, Math.ceil((totalQuestions * Math.max(0, minAnswerPercent)) / 100));
+}
+export function isRankEligible(
+  answered: number,
+  totalQuestions: number,
+  minAnswerPercent: number,
+): boolean {
+  return answered >= minAnswersFor(totalQuestions, minAnswerPercent);
+}
 
 /** Sıralama görünürlüğü için en az resmî çözüm sayısı (jsps ile aynı). */
 export const RANKING_MIN_SAMPLE = 10;

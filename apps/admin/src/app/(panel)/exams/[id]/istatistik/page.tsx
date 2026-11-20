@@ -106,11 +106,12 @@ export default function ExamStatsPage() {
         </div>
       )}
 
-      <div className="mb-4 grid grid-cols-2 gap-3 md:grid-cols-4 xl:grid-cols-8">
+      <div className="mb-4 grid grid-cols-2 gap-3 md:grid-cols-3 xl:grid-cols-9">
         {(
           [
             ['Başlayan', s.summary.started],
             ['Tamamlayan', s.summary.completed],
+            [`Eksik çözüm (<%${s.summary.minAnswerPercent ?? 20})`, s.summary.incomplete ?? 0],
             ['Devam eden', s.summary.inProgress],
             ['Süre doldu', s.summary.timeouts],
             ['Tekrar çözüm', s.summary.practice],

@@ -1237,6 +1237,8 @@ model Exam {
   /// Takvimli pencere kapanınca "Pratik olarak çöz" açık mı (Doc 50). Eski
   /// archiveOpenAfterEnd'in yerini aldı; serbestte anlamsız (tekrar çözüm zaten var).
   practiceAfterEnd      Boolean         @default(true) @map("practice_after_end")
+  /// Sıralamaya girmek için cevaplanması gereken en az soru yüzdesi (20 Kas 2026, varsayılan %20).
+  minAnswerPercent      Int             @default(20) @map("min_answer_percent")
   /// Takvimli: 1 gün ve 1 saat önce hatırlatma; sonuç açıklandı bildirimi.
   remindEnabled         Boolean         @default(true) @map("remind_enabled")
   /// Yük planı (Doc 50 §5): yayınla → cevapsız soru paketi burada; start DB'ye yalnız oturum yazar.
@@ -1374,6 +1376,9 @@ model QuizSession {
   attemptRole            AttemptRole?         @map("attempt_role")
   /// Oturum nasıl kapandı (Doc 50 §3): teslim ya da süre dolumu.
   closedReason           SessionClosedReason? @map("closed_reason")
+  /// Deneme resmî çözümü sıralama ve toplu istatistiğe girer mi (eşik: Exam.minAnswerPercent).
+  /// Eksik çözüm kayıtta kalır, adayın kendi sonucunda görünür; hak geri verilmez.
+  rankEligible           Boolean              @default(true) @map("rank_eligible")
   /// Mutlak son tarih (sunucu saati). Serbest: startedAt + süre; takvimli:
   /// min(startedAt + süre, exam.endAt). Süre denetimi bunu esas alır.
   deadlineAt             DateTime?            @map("deadline_at")

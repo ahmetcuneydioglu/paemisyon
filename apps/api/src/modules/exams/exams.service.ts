@@ -18,6 +18,7 @@ import type { AuthenticatedUser } from '../auth/auth.types';
 import {
   ANSWERED_ATTEMPT,
   RANKING_MIN_SAMPLE,
+  minAnswersFor,
   mean,
   median,
   percentileBand,
@@ -157,6 +158,7 @@ export class ExamsService {
             correctCount: true,
             wrongCount: true,
             blankCount: true,
+            rankEligible: true,
             completedAt: true,
             deadlineAt: true,
             _count: { select: { answers: true } },
@@ -230,6 +232,7 @@ export class ExamsService {
       correctCount: number;
       wrongCount: number;
       blankCount: number;
+      rankEligible: boolean;
       completedAt: Date | null;
       deadlineAt: Date | null;
       _count: { answers: number };
@@ -295,6 +298,7 @@ export class ExamsService {
       examTypeId: e.examTypeId,
       liveAnswerReveal: e.liveAnswerReveal,
       practiceAfterEnd: e.practiceAfterEnd,
+      minAnswers: minAnswersFor(e._count.questions, e.minAnswerPercent),
       availability,
       myState,
       canStartOfficial: canStartOfficial(w, my, now),
@@ -305,6 +309,8 @@ export class ExamsService {
               attemptId: official.id,
               status: official.status,
               resultLocked: lockedResult,
+              // Eksik çözüm: sıralamaya girmedi (kart "eksik çözüm" yazar, sıra yok).
+              incomplete: official.status === 'completed' && !official.rankEligible,
               score: !lockedResult && official.score != null ? Number(official.score) : null,
               correct: lockedResult ? null : official.correctCount,
               wrong: lockedResult ? null : official.wrongCount,
@@ -566,6 +572,9 @@ export class ExamsService {
       plannedDurationSeconds,
       remainingSeconds: plannedDurationSeconds,
       liveAnswerReveal: exam.liveAnswerReveal || role === 'practice',
+      // Resmî çözümde sıralamaya girmek için en az cevap (teslim uyarısı); tekrar çözümde yok.
+      minAnswers:
+        role === 'official' ? minAnswersFor(questions.length, exam.minAnswerPercent) : null,
       questions,
       givenAnswers: [] as {
         questionId: string;
@@ -581,6 +590,7 @@ export class ExamsService {
       title: string;
       publishMode: 'serbest' | 'takvimli';
       liveAnswerReveal: boolean;
+      minAnswerPercent: number;
       questionPack: Prisma.JsonValue | null;
     },
     sessionId: string,
@@ -617,6 +627,9 @@ export class ExamsService {
       ),
       remainingSeconds: Math.max(0, Math.floor((deadlineAt.getTime() - now.getTime()) / 1000)),
       liveAnswerReveal: exam.liveAnswerReveal || role === 'practice',
+      // Resmî çözümde sıralamaya girmek için en az cevap (teslim uyarısı); tekrar çözümde yok.
+      minAnswers:
+        role === 'official' ? minAnswersFor(questions.length, exam.minAnswerPercent) : null,
       questions,
       // Devam senaryosu: verilmiş cevaplar da döner (yenileme/cihaz değişimi güvenli).
       givenAnswers: s.answers,
@@ -870,7 +883,9 @@ export class ExamsService {
       median: number | null;
       diff: number | null;
     } | null = null;
-    if (session.examId && role === 'official' && !kisisel) {
+    const incomplete =
+      Boolean(session.examId) && role === 'official' && !kisisel && !fresh.rankEligible;
+    if (session.examId && role === 'official' && !kisisel && !incomplete) {
       const ranked = await this.rankedRows(session.examId, examRow!);
       const me = ranked.rows.find((r) => r.row.key === user.id) ?? null;
       const total = ranked.rows.length;
@@ -924,6 +939,12 @@ export class ExamsService {
       wrongCount: fresh.wrongCount,
       blankCount: fresh.blankCount,
       score: fresh.score != null ? Number(fresh.score) : null, // NET
+      // Eksik çözüm: sıralama ve Türkiye kıyasına girmedi; istemci nedenini ve eşiği yazar.
+      incomplete,
+      minAnswers:
+        incomplete && examRow
+          ? minAnswersFor(fresh.totalQuestions, examRow.minAnswerPercent)
+          : null,
       rank,
       courses,
       turkey,
@@ -1048,6 +1069,7 @@ export class ExamsService {
         FROM quiz_answers qa
         JOIN quiz_sessions qs ON qs.id = qa.session_id
         WHERE qs.exam_id = ${examId}::uuid AND qs.status = 'completed' AND qs.attempt_role = 'official'
+          AND qs.rank_eligible
         GROUP BY qa.question_id`;
       rateOf = new Map(
         rows.map((r) => [
@@ -1317,6 +1339,7 @@ export class ExamsService {
         role: s.personalExam ? 'personal' : s.attemptRole,
         completedAt: s.completedAt,
         closedReason: s.closedReason,
+        incomplete: s.attemptRole === 'official' && !s.personalExam && !s.rankEligible,
         resultLocked: locked,
         resultAt: locked && s.exam ? examEndAt(this.window(s.exam)) : null,
         score: locked ? null : s.score != null ? Number(s.score) : null,
@@ -1337,6 +1360,7 @@ export class ExamsService {
           s.exam &&
           !s.exam.pastExam &&
           s.attemptRole === 'official' &&
+          s.rankEligible && // eksik çözüm geçmişte görünür, net gelişim çizgisine girmez
           !resultLocked(this.window(s.exam), 'official', now),
       )
       .slice(0, 6)
@@ -1592,7 +1616,7 @@ export class ExamsService {
       JOIN users u ON u.id = qs.user_id AND u.deleted_at IS NULL
       JOIN exams e ON e.id = qs.exam_id AND e.deleted_at IS NULL AND e.test_only = false
       WHERE qs.mode = 'deneme' AND qs.status = 'completed' AND qs.attempt_role = 'official'
-        AND (qs.correct_count > 0 OR qs.wrong_count > 0)
+        AND qs.rank_eligible
       GROUP BY qs.user_id, u.display_name, u.avatar_url
       ORDER BY avg_score DESC, attempts DESC`;
     const ranked = rows.map((r, i) => ({

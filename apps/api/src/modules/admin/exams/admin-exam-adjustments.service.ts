@@ -261,6 +261,7 @@ export class AdminExamAdjustmentsService {
           durationSeconds: true,
           completedAt: true,
           closedReason: true,
+          rankEligible: true,
         },
       }),
       this.prisma.quizSession.count({ where: { examId, status: 'in_progress' } }),
@@ -268,8 +269,11 @@ export class AdminExamAdjustmentsService {
         where: { examId, attemptRole: 'practice', status: 'completed' },
       }),
     ]);
-    const scores = completedOfficial.map((s) => (s.score != null ? Number(s.score) : 0));
-    const durations = completedOfficial.map((s) => s.durationSeconds ?? 0);
+    // Net ve süre özetleri yalnız sıralamaya giren çözümlerden; eksik çözümler ayrı sayılır.
+    const eligible = completedOfficial.filter((s) => s.rankEligible);
+    const incompleteCount = completedOfficial.length - eligible.length;
+    const scores = eligible.map((s) => (s.score != null ? Number(s.score) : 0));
+    const durations = eligible.map((s) => s.durationSeconds ?? 0);
     // Net dağılımı: 10'luk kovalar (−25..100).
     const buckets = new Map<number, number>();
     for (const sc of scores) {
@@ -296,6 +300,7 @@ export class AdminExamAdjustmentsService {
       FROM quiz_answers qa
       JOIN quiz_sessions qs ON qs.id = qa.session_id
       WHERE qs.exam_id = ${examId}::uuid AND qs.status = 'completed' AND qs.attempt_role = 'official'
+        AND qs.rank_eligible
       GROUP BY qa.question_id, qa.selected_option_id`;
     const examQs = await this.prisma.examQuestion.findMany({
       where: { examId },
@@ -325,7 +330,7 @@ export class AdminExamAdjustmentsService {
       arr.push(r);
       byQ.set(r.question_id, arr);
     }
-    const total = completedOfficial.length;
+    const total = eligible.length; // soru analizi paydası: sıralamaya giren çözümler
     const questions = examQs.map((q, i) => {
       const agg = byQ.get(q.questionId) ?? [];
       const answered = agg.filter((a) => a.option_id != null).reduce((s, a) => s + a.n, 0);
@@ -372,7 +377,7 @@ export class AdminExamAdjustmentsService {
       };
     });
     const ranked = rankWithTies(
-      completedOfficial.map((s) => ({
+      eligible.map((s) => ({
         key: s.userId,
         score: s.score != null ? Number(s.score) : 0,
         wrongCount: s.wrongCount,
@@ -391,6 +396,9 @@ export class AdminExamAdjustmentsService {
       summary: {
         started,
         completed: total,
+        /** Eksik çözüm: eşiğin altında cevaplayan, sıralama ve ortalamaya girmeyen resmî çözüm. */
+        incomplete: incompleteCount,
+        minAnswerPercent: exam.minAnswerPercent,
         inProgress,
         practice,
         timeouts: completedOfficial.filter((s) => s.closedReason === 'timeout').length,

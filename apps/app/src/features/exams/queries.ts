@@ -37,13 +37,15 @@ export interface ExamListItem {
   difficulty: ExamDifficulty | null;
   examTypeId: string | null;
   liveAnswerReveal: boolean;
+  /** Sıralamaya girmek için cevaplanması gereken en az soru (sunucu kararı; eski sunucuda yok). */
+  minAnswers?: number;
   practiceAfterEnd: boolean;
   availability: ExamAvailability;
   myState: MyExamState;
   canStartOfficial: boolean;
   canStartPractice: boolean;
   my: {
-    official: { attemptId: string; status: "in_progress" | "completed" | "abandoned"; resultLocked: boolean; score: number | null; correct: number | null; wrong: number | null; blank: number | null; rank: number | null; total: number; completedAt: string | null } | null;
+    official: { attemptId: string; status: "in_progress" | "completed" | "abandoned"; resultLocked: boolean; /** Eksik çözüm: eşiğin altında cevaplandı, sıralamaya girmedi. */ incomplete?: boolean; score: number | null; correct: number | null; wrong: number | null; blank: number | null; rank: number | null; total: number; completedAt: string | null } | null;
     active: { attemptId: string; role: AttemptRole | null; deadlineAt: string | null; answered: number } | null;
     practiceCount: number;
     lastPractice: { attemptId: string; score: number | null; completedAt: string | null } | null;
@@ -77,6 +79,8 @@ export interface ExamStartResponse {
   serverNow: string;
   remainingSeconds: number;
   liveAnswerReveal: boolean;
+  /** Resmî çözümde eşik; tekrar çözümde null. Teslim uyarısı bunu okur. */
+  minAnswers?: number | null;
   questions: ExamQuestion[];
   givenAnswers: { questionId: string; selectedOptionId: string | null; flagged?: boolean }[];
 }
@@ -117,6 +121,9 @@ export interface AttemptDetail {
   durationSeconds: number | null;
   totalQuestions: number;
   resultLocked: boolean;
+  /** Eksik çözüm: eşiğin (minAnswers) altında cevaplandı; sıra ve Türkiye kıyası yok. */
+  incomplete?: boolean;
+  minAnswers?: number | null;
   resultAt: string | null;
   /** Haftalık denemede üst dilim → mağaza değerlendirme istemi (Doc 57). */
   reviewPrompt?: ReviewPrompt | null;
@@ -173,6 +180,8 @@ export interface ExamHistoryItem {
   role: AttemptRole | "personal" | null;
   completedAt: string | null;
   closedReason: "submitted" | "timeout" | null;
+  /** Eksik çözüm (sunucu kararı): sıralama, kıyas ve net gelişim çizgisine girmez. */
+  incomplete?: boolean;
   resultLocked: boolean;
   resultAt: string | null;
   score: number | null;
@@ -416,7 +425,7 @@ export function examCardModel(e: ExamListItem): ExamCardModel {
   }
   if (official?.status === "completed") {
     const net = official.resultLocked ? "Sonuç bekliyor" : `${fmtNet(official.score)} net`;
-    const rank = official.resultLocked ? null : rankSentence(official.rank, official.total);
+    const rank = official.resultLocked ? null : official.incomplete ? "eksik çözüm, sıralamaya girmedi" : rankSentence(official.rank, official.total);
     return {
       kind: "done",
       primary: { label: official.resultLocked ? "Teslimi gör" : "Sonucunu gör", go: { kind: "result", attemptId: official.attemptId }, variant: "secondary" },

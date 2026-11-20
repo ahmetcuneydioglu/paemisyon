@@ -101,6 +101,11 @@ export default async function SonucPage({ params }: { params: Promise<{ attemptI
       {result.role === "practice" && !result.personal ? (
         <Notice tone="info">Bu çözüm sıralamaya girmedi; resmî sonucun kartta duruyor.</Notice>
       ) : null}
+      {result.incomplete ? (
+        <Notice tone="warning">
+          Eksik çözüm: sıralamaya girmek için en az {result.minAnswers ?? "—"} soru cevaplamak gerekiyor. Sonucun ve cevap incelemen burada; sıralama ve Türkiye kıyasında yer almıyorsun.
+        </Notice>
+      ) : null}
       {result.closedReason === "timeout" ? (
         <Notice tone="warning">Süre doldu; cevapların otomatik teslim edildi.</Notice>
       ) : null}

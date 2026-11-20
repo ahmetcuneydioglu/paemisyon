@@ -405,13 +405,19 @@ export function ExamMapSheet({ visible, onClose, cells, onSelect, onSubmit }: { 
 }
 
 /** Teslim onayı (Figma M3-e): sayım satırı + bilgi notu; "Teslim et" / "Sınava dön". */
-export function ExamSubmitSheet({ visible, onClose, onSubmit, answered, blank, flagged, remainingLabel, busy }: { visible: boolean; onClose: () => void; onSubmit: () => void; answered: number; blank: number; flagged: number; remainingLabel: string | null; busy?: boolean }) {
+export function ExamSubmitSheet({ visible, onClose, onSubmit, answered, blank, flagged, remainingLabel, busy, minAnswers }: { visible: boolean; onClose: () => void; onSubmit: () => void; answered: number; blank: number; flagged: number; remainingLabel: string | null; busy?: boolean; /** Resmî çözümde sıralamaya girmek için en az cevap (sunucudan); altındaysa uyarı ve "Sınava dön" birincil. */ minAnswers?: number | null }) {
   const { space } = useTheme();
+  const short = minAnswers != null && answered < minAnswers;
   return (
-    <Sheet visible={visible} onClose={onClose} title="Teslim edeyim mi?" footer={<View style={{ gap: space.s2 }}><Button title="Teslim et" onPress={onSubmit} loading={busy} /><Button title="Sınava dön" variant="ghost" onPress={onClose} disabled={busy} /></View>}>
+    <Sheet visible={visible} onClose={onClose} title="Teslim edeyim mi?" footer={<View style={{ gap: space.s2 }}>{short ? <><Button title="Sınava dön" onPress={onClose} disabled={busy} /><Button title="Yine de teslim et" variant="ghost" onPress={onSubmit} loading={busy} /></> : <><Button title="Teslim et" onPress={onSubmit} loading={busy} /><Button title="Sınava dön" variant="ghost" onPress={onClose} disabled={busy} /></>}</View>}>
       <AppText variant="bodySm" tone="soft" style={{ fontVariant: ["tabular-nums"] }}>
         {answered} cevaplandı · {blank} boş · {flagged} işaretli{remainingLabel ? ` · ${remainingLabel} kaldı` : ""}
       </AppText>
+      {short ? (
+        <Notice tone="warning" title="Bu çözüm sıralamaya girmez">
+          Sıralamaya girmek için en az {minAnswers} soru cevaplaman gerekiyor; şu an {answered}. Şimdi teslim edersen sonucunu görürsün ama sıralamada yer almazsın ve resmî hakkın kullanılmış olur.
+        </Notice>
+      ) : null}
       <Notice tone="info">Teslimden sonra cevaplar değiştirilemez. Boş sorular net&apos;e etki etmez.</Notice>
     </Sheet>
   );
