@@ -10,9 +10,12 @@
  *
  * plan.json: [{
  *   "soru": "<Question.id öneki>",
- *   "articleNo": "34",                                  // (isteğe bağlı) Question.articleNo — atlas bunu okur
+ *   "articleNo": "34",                                  // (isteğe bağlı) Question.articleNo — atlas bunu okur;
+ *                                                       //  null = boşalt (dayanak madde bankada yoksa)
  *   "baglar": [{ "mevzuat": "5326", "no": "34", "relation": "primary" }],   // (isteğe bağlı) verilirse mevcut
- *                                                       //  bağların YERİNE geçer; kaynak 'script' yazılır
+ *                                                       //  bağların YERİNE geçer; kaynak 'script' yazılır.
+ *                                                       //  [] = bütün bağları kaldır (gerçek dayanak bankada
+ *                                                       //  olmayan bir kanunsa; yanlış madde gösterilmesin)
  *   "aciklama": { "eski": "…", "yeni": "…" },           // (isteğe bağlı) parça açıklamada tam bir kez geçmeli
  *   "sik": { "label": "E", "eski": "…", "yeni": "…" },  // (isteğe bağlı) şıkkın TAM metni; yalnız yazım hatası
  *   "gerekce": "…"
@@ -33,7 +36,7 @@ const p = new PrismaClient({ datasources: { db: { url } } });
 const D32 = join(__dirname, '../../../docs/32-yayin-denetimi');
 
 type Bag = { mevzuat: string; no: string; relation: 'primary' | 'related' };
-type Satir = { soru: string; articleNo?: string; baglar?: Bag[]; aciklama?: { eski: string; yeni: string }; sik?: { label: string; eski: string; yeni: string }; gerekce: string };
+type Satir = { soru: string; articleNo?: string | null; baglar?: Bag[]; aciklama?: { eski: string; yeni: string }; sik?: { label: string; eski: string; yeni: string }; gerekce: string };
 
 (async () => {
   const planYol = process.argv[2];
@@ -55,9 +58,10 @@ type Satir = { soru: string; articleNo?: string; baglar?: Bag[]; aciklama?: { es
     if (q.currentVersion?.status !== 'published') throw new Error(`${s.soru}: yayında değil`);
     const is: (typeof isler)[number] = { s, q };
     console.log(`\n-- ${s.soru}  ${q.currentVersion.stem.replace(/\s+/g, ' ').slice(0, 110)}`);
-    if (s.articleNo !== undefined) console.log(`   articleNo: «${q.articleNo ?? '—'}» → «${s.articleNo}»`);
+    if (s.articleNo !== undefined) console.log(`   articleNo: «${q.articleNo ?? '—'}» → «${s.articleNo ?? '—'}»`);
     if (s.baglar) {
-      if (s.baglar.filter((b) => b.relation === 'primary').length !== 1) throw new Error(`${s.soru}: tam bir primary bağ olmalı`);
+      if (s.baglar.length && s.baglar.filter((b) => b.relation === 'primary').length !== 1) throw new Error(`${s.soru}: tam bir primary bağ olmalı`);
+      if (!s.baglar.length && s.articleNo !== null) throw new Error(`${s.soru}: bağlar kaldırılıyorsa articleNo da null verilmeli`);
       is.yeniBag = [];
       for (const b of s.baglar) {
         const a = await p.lawArticle.findFirst({
@@ -66,11 +70,11 @@ type Satir = { soru: string; articleNo?: string; baglar?: Bag[]; aciklama?: { es
           select: { id: true, topicId: true },
         });
         if (!a) throw new Error(`${s.soru}: ${b.mevzuat} md ${b.no} bankada yok`);
-        if (b.relation === 'primary' && s.articleNo !== undefined && (a.topicId !== q.topicId || b.no !== s.articleNo))
+        if (b.relation === 'primary' && s.articleNo != null && (a.topicId !== q.topicId || b.no !== s.articleNo))
           throw new Error(`${s.soru}: articleNo ile primary bağ uyuşmuyor (atlas (topicId, articleNo) anahtarını okur)`);
         is.yeniBag.push({ lawArticleId: a.id, relation: b.relation });
       }
-      console.log(`   bağ: [${q.articles.map((x) => `${x.lawArticle.legislation?.number}:${x.lawArticle.articleNo}:${x.relation}`).join(', ') || '—'}] → [${s.baglar.map((b) => `${b.mevzuat}:${b.no}:${b.relation}`).join(', ')}]`);
+      console.log(`   bağ: [${q.articles.map((x) => `${x.lawArticle.legislation?.number}:${x.lawArticle.articleNo}:${x.relation}`).join(', ') || '—'}] → [${s.baglar.map((b) => `${b.mevzuat}:${b.no}:${b.relation}`).join(', ') || '— (bağ kaldırılıyor)'}]`);
     }
     if (s.aciklama) {
       const e = q.currentVersion.explanation ?? '';
@@ -100,7 +104,7 @@ type Satir = { soru: string; articleNo?: string; baglar?: Bag[]; aciklama?: { es
       if (i.s.articleNo !== undefined) await tx.question.update({ where: { id: i.q.id }, data: { articleNo: i.s.articleNo } });
       if (i.yeniBag) {
         await tx.questionArticle.deleteMany({ where: { questionId: i.q.id } });
-        await tx.questionArticle.createMany({ data: i.yeniBag.map((b) => ({ questionId: i.q.id, lawArticleId: b.lawArticleId, relation: b.relation, source: 'script' as const })) });
+        if (i.yeniBag.length) await tx.questionArticle.createMany({ data: i.yeniBag.map((b) => ({ questionId: i.q.id, lawArticleId: b.lawArticleId, relation: b.relation, source: 'script' as const })) });
       }
       if (i.yeniAciklama !== undefined) await tx.questionVersion.update({ where: { id: i.q.currentVersion.id }, data: { explanation: i.yeniAciklama } });
       if (i.yeniSik) {

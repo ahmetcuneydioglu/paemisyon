@@ -36,5 +36,6 @@ Bankada olmayan kanunlara dayanan 7 soru ana oturumda mevzuat.gov.tr konsolide m
 
 - "2026 İPC uygulama tablosu" etiketli 23 sorunun hiçbiri tutar sormuyor; cevaplar kanun metninden çıkıyor.
 - 5326 md 22 ya da md 27'ye bağlı altı sorunun gerçek dayanağı bankada olmayan kanunlar (2860, 4207, 2920, 5199, 7258, 4250).
+  **21 Kas 2026 (kullanıcı onayı):** yayında kalan beşinde (`fa8fec6c`, `61cf72cf`, `3dc788e5`, `6f5938d5`, `9234e990`) 5326 md 22 bağı kaldırıldı; altıncısı (`30a457d0`, 2860) zaten arşivde. Ayrıca `3dea855a`'nın birincil bağı md 22'den md 32'ye alındı (md 22 ilgili madde). Plan: `planlar/2026-11-21-ozgun-bag.json`.
 - 9 İnkılap Tarihi sorusu mevzuatla doğrulanamaz; denetçilerin bilgisine göre cevapları tartışmasız.
 - Kör çözümde anahtarla uyuşmayan soru çıkmadı; 20 Kas'ta arşivlenen b178c67d ile bu rapordaki dört soru dışında bu grupta kusur görülmedi.
