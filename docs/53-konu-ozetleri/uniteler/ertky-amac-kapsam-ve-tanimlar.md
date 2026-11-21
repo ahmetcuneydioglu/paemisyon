@@ -71,7 +71,7 @@ Ast üst ilişkileri ile yetki, görev ve sorumluluklar belirlenirken bu tabloda
 <sub>md 10</sub>
 
 - Rütbe içinde **yurtdışı misyon koruma görevi, yurtdışı eğitim, yurtdışı kurs ve diğer görevler** sebebiyle geçirilen süreler ile **tedavi ve istirahat** süreleri, hangi rütbede geçirildiyse o rütbedeki fiili çalışma süresine sayılır.
-- **Ancak** bu şekilde geçirilen sürelerin toplamda **üç yılı aşan** kısmı rütbe terfiinde değerlendirilmez.
+- **Ancak** bu şekilde geçirilen sürelerin toplamda **üç yılı aşan** kısmı rütbe terfiinde değerlendirilmez. Bu sınırın kanundaki karşılığı, **yurtdışı misyon koruma** görevinde geçen süreler yönünden Anayasa Mahkemesi kararıyla iptal edilmiştir; misyon korumada geçen süreye bu sınır uygulanmaz. Yönetmelik metni değiştirilmemiştir.
 - Emniyet Teşkilatına girmeden önce yapılan **askerlik hizmeti**, atanılan ilk rütbede ve **adaylığın onanmasından sonra** fiili çalışma süresinden sayılır.
 - **Ancak** ilk derece amirlik eğitimi sınavına başvurmak için polis memuru rütbesinde fiilen en az **iki yıl** çalışmış olmak ve **iki yıl** iyi veya çok iyi performans puanı almış olmak şarttır.
 
@@ -88,7 +88,7 @@ Polis amirlerinin rütbe terfiinde şu süreler **değerlendirilmez**:
 - e) İyi veya çok iyi dışında alınan **her** performans değerlendirme puanı için **bir yıllık** süre.
 - f) Kazanılmış hak aylığında değerlendirilen her türlü uzmanlık, yüksek lisans, doktora ve avukatlık stajı süreleri.
 - g) Halen ikinci bölge hizmetini ifa eden üçüncü sınıf emniyet müdürünün geçici görev veya başka bir şekilde birinci bölgede görevlendirilmesi hâlinde, birinci bölgede geçirdiği **dört aydan fazla** süreler.
-- ğ) 10. maddenin birinci fıkrasındaki durumlarda **üç yılı aşan** süreler.
+- ğ) 10. maddenin birinci fıkrasındaki durumlarda **üç yılı aşan** süreler (yurtdışı misyon koruma süreleri için bu sınırın kanundaki karşılığı Anayasa Mahkemesi kararıyla iptal edilmiştir).
 
 ## Tuzak · Ertelenen hapis sayılır mı?
 
@@ -98,7 +98,7 @@ Sayılmaz. Hapis cezası paraya çevrilse de ertelense de süresi terfide değer
 
 Performans puanında da dikkatli ol: İyi veya çok iyi dışında alınan her puan, rütbedeki sürenin tamamını yakmaz; **her biri için bir yıl** düşülür.
 
-Yurtdışı görev, eğitim, kurs ve tedavi-istirahat sürelerinin hepsi silinmez. Bu süreler sayılır, yalnızca toplamda **üç yılı aşan** kısım dışarıda kalır.
+Yurtdışı görev, eğitim, kurs ve tedavi-istirahat sürelerinin hepsi silinmez. Bu süreler sayılır, yalnızca toplamda **üç yılı aşan** kısım dışarıda kalır. Yurtdışı misyon koruma süreleri bakımından bu sınırın kanundaki karşılığı Anayasa Mahkemesi kararıyla iptal edilmiştir.
 
 İkinci bölgedeki üçüncü sınıf emniyet müdürünün birinci bölgedeki geçici görevinde de sürenin tamamı gitmez; sadece **dört aydan fazla** olan kısım sayılmaz.
 
@@ -133,7 +133,7 @@ Polis amirinin üst rütbeye terfiinin Merkez veya Yüksek Değerlendirme Kurulu
 | Birinci Sınıf Emniyet Müdürü (2. derece) | En az 2 yıl | 9 |
 | Birinci Sınıf Emniyet Müdürü (1. derece) | Yaş haddi | 9 |
 | Sınıf Üstü Emniyet Müdürü (derece üstü) | Yaş haddi | 9 |
-| Yurtdışı görev, eğitim, kurs, tedavi ve istirahat süreleri | Toplamda 3 yılı aşan kısım sayılmaz | 10, 11 |
+| Yurtdışı görev, eğitim, kurs, tedavi ve istirahat süreleri (misyon koruma hariç; Anayasa Mahkemesi kararı) | Toplamda 3 yılı aşan kısım sayılmaz | 10, 11 |
 | İlk derece amirlik eğitimi sınavına başvuru | Polis memuru rütbesinde fiilen en az 2 yıl ve 2 yıl iyi/çok iyi performans puanı | 10 |
 | İyi/çok iyi dışındaki her performans puanı | 1 yıllık süre sayılmaz | 11 |
 | İkinci bölgedeki üçüncü sınıf emniyet müdürünün birinci bölgede geçirdiği süre | 4 aydan fazlası sayılmaz | 11 |

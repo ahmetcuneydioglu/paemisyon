@@ -138,20 +138,10 @@
     },
     {
       "kind": "qa",
-      "difficulty": 3,
-      "front": "Hakkında zorla getirme kararı bulunan kişinin yakalanması amacıyla aracında arama yapmak için ayrıca arama kararı gerekir mi?",
-      "back": "Hayır. Bu kişinin yakalanması amacıyla konutunda, işyerinde, yerleşim yerinde, bunların eklentilerinde ve aracında yapılan aramada ayrıca emir ya da karar aranmaz.",
-      "explanation": "Aynı kural, hakkında tutuklama kararı bulunan kişi ve gıyabî tutuklama kararı verilen kaçak için de geçerlidir. Bu kişiler yakalandığında üstleri de karar gerekmeden aranır.",
-      "articleRefs": [
-        "8"
-      ]
-    },
-    {
-      "kind": "qa",
       "difficulty": 2,
       "front": "Kapalı bir yerden gelen yardım çağrısı üzerine konuta girmek için ayrıca arama emri ya da kararı gerekir mi?",
       "back": "Hayır; kapalı yerlerden gelen yardım çağrıları üzerine konut, işyeri ve yerleşim yeri ile eklentilerine girmek için ayrıca emir ya da karar aranmaz.",
-      "explanation": "Toplum için veya kişiler bakımından hayatî tehlikeyi ortadan kaldırmak amacıyla girişte de aynı kural geçerlidir. Suçüstü hâlinde yapılan aramalar da bu kapsamdadır. 5237 sayılı Türk Ceza Kanununun 24, 25 ve 26 ncı maddelerindeki hukuka uygunluk sebepleriyle yapılan aramalar da kapsama girer.",
+      "explanation": "Toplum için veya kişiler bakımından hayatî tehlikeyi ortadan kaldırmak amacıyla girişte de aynı kural geçerlidir. Suçüstü hâlinde yapılan aramalar da bu kapsamdadır. 5237 sayılı Türk Ceza Kanununun 24 ve 25 inci maddelerindeki hukuka uygunluk sebepleri ile 26 ncı maddesindeki hakkın kullanılması da kapsama girer; bentteki “ilgilinin rızası ile” ibaresi Danıştay kararıyla iptal edilmiştir.",
       "articleRefs": [
         "8"
       ]

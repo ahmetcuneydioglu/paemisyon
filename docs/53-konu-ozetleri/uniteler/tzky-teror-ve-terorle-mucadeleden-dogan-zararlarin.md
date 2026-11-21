@@ -63,7 +63,7 @@ Burada iki ayrımı karıştırma.
 
 - **Kim:** Zarar gören, mirasçıları veya yetkili temsilcileri.
 - **Nereye:** Zararın gerçekleştiği veya olayın meydana geldiği **il valiliğine**. Başka valiliklere, kaymakamlıklara, dış temsilciliklere, bakanlıklara ve kamu kurumlarına yapılan başvurular ilgili valiliğe gönderilir.
-- **Süre:** Olayın öğrenilmesinden itibaren **60 gün** ve her hâlde olayın meydana gelmesinden itibaren **1 yıl**. Sonraki başvurular kabul edilmez.
+- **Süre:** Olayın öğrenilmesinden itibaren **60 gün** ve her hâlde olayın meydana gelmesinden itibaren **1 yıl**. Sonraki başvurular kabul edilmez. **Not:** Yönetmelik bu süreleri mirasçılar için de sayar; ancak Kanundaki karşılığı olan “veya mirasçılarının” ibaresi Anayasa Mahkemesi kararıyla iptal edilmiştir. Kanunda süreler artık yalnız zarar gören ve yetkili temsilcisi için yazılıdır; yönetmelik metni değiştirilmemiştir.
 - Yaralanma ve engelli hâle gelmede yaralının **hastaneye kabulünden çıkışına kadar geçen süre** hesaba katılmaz.
 - Süreden red bir **tutanağa** bağlanır ve ilgiliye yazılı tebliğ edilir.
 - Mirasçı veya temsilci başvurusunda **veraset ilâmı** ve **noterden tasdikli vekâletname** eklenir. Elden başvuruda alındı belgesi verilir.

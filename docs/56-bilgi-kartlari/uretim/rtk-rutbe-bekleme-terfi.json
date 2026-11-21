@@ -81,9 +81,9 @@
     {
       "kind": "trap",
       "difficulty": 3,
-      "front": "Yurtdışı görev, eğitim ve kurs süreleri ile tedavi ve istirahat sürelerinin tamamı rütbe terfiinde fiili çalışma süresinden sayılır mı?",
+      "front": "Yurtdışı eğitim, yurtdışı kurs ve diğer görevlerle geçen süreler ile tedavi ve istirahat sürelerinin tamamı rütbe terfiinde fiili çalışma süresinden sayılır mı?",
       "back": "Hayır. Bu süreler geçirildikleri rütbedeki fiili çalışma süresine sayılır; ancak toplamda üç yılı aşan kısmı rütbe terfiinde değerlendirilmez.",
-      "explanation": "Sayılan süreler arasında yurtdışı misyon koruma görevi, yurtdışı eğitim, yurtdışı kurs ve diğer görevler sebebiyle geçirilen süreler ile tedavi ve istirahat süreleri vardır.",
+      "explanation": "Yurtdışı misyon koruma görevinde geçen sürenin ise tamamı o rütbedeki fiili çalışma süresine sayılır; bu süreler için üç yıl sınırının kanundaki karşılığı Anayasa Mahkemesi kararıyla iptal edilmiştir, yönetmelik metni değiştirilmemiştir.",
       "articleRefs": [
         "10"
       ],

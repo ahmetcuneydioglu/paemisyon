@@ -201,11 +201,11 @@ Hâkim kararı, mülkî âmir tarafından dernek yöneticilerine **yazıyla** du
 **Silâh veya tehlikeli eşya şüphesi (yeterli şüphe):**
 - Koruyucu tedbir alınabilir.
 - Elbisenin çıkarılması ya da aracın içi görünmeyen bölümlerinin açılması istenemez.
-- El ile dıştan kontrol hariç, üst, eşya ve aracın görünmeyen bölümlerinin aranması için emir gerekir. Emri, **mülkî âmirin görevlendireceği kolluk âmiri** verir: yazılı olarak, acele hâllerde sonradan yazıyla teyit edilecek sözlü emirle.
+- Yönetmelik, el ile dıştan kontrol dışında üst, eşya ve aracın görünmeyen bölümlerinin aranmasını mülkî âmirin görevlendireceği kolluk âmirinin yazılı ya da sözlü emrine bağlar. Bu yolun kanundaki dayanağı Anayasa Mahkemesi kararıyla, yönetmelikteki bu hüküm de Danıştay kararıyla **iptal edilmiştir**; kolluk âmirinin emriyle bu arama yapılamaz.
 
 **Arama emrinde yer alacaklar:** sebep; konu ve kapsam; yer, tarih ve geçerlilik süresi; kişinin açık kimliği; aracın plaka, marka ve modeli. Uygulamada md 28 ve md 29 usulleri işler.
 
-**Sonrası:** Kolluk âmirinin kararı **yirmi dört saat** içinde görevli hâkimin onayına sunulur. Araç aramasında kişiye gerekçeli belge verilir. Bu işlemler **gece de** yapılabilir.
+**Sonrası:** Metinde kolluk âmirinin kararının **yirmi dört saat** içinde görevli hâkimin onayına sunulacağı yazar; bu karar yolu yukarıdaki iptallerle uygulanamaz hâle gelmiştir. Araç aramasında kişiye gerekçeli belge verilir. Bu işlemler **gece de** yapılabilir.
 
 ## Tuzak · Sık karıştırılan: durdurma
 
@@ -216,7 +216,7 @@ Hâkim kararı, mülkî âmir tarafından dernek yöneticilerine **yazıyla** du
 - Yoklama sırasında giysi çıkartılmaz. Kontrolü kişinin **cinsiyetindeki** görevli yapar.
 - Tutanak kendiliğinden değil, **talep üzerine** düzenlenir.
 - Delil elde edilirse kişi **yakalanır**.
-- Aracın içi görünmeyen bölümleri için hâkim kararı, savcı emri veya sürücü rızası aranmaz. Gereken, **mülkî âmirin görevlendireceği kolluk âmirinin yazılı emri**dir; acele hâllerde sonradan yazıyla teyit edilmek üzere sözlü emir de yeter.
+- Aracın içi görünmeyen bölümlerinin **mülkî âmirin görevlendireceği kolluk âmirinin** yazılı ya da sözlü emriyle aranabileceğini söyleyen hüküm Danıştay kararıyla iptal edilmiş, kanundaki karşılığı da Anayasa Mahkemesince iptal edilmiştir. Bu yolu doğru sayan bir şık bugün yanlıştır.
 
 ## Kural · Karar veya yazılı emir üzerine üst ve eşya araması
 
@@ -271,7 +271,7 @@ Delil çıkarsa kişi yakalanır. Bu işlemler **gece de** yapılabilir.
 
 <sub>md 30</sub>
 
-**Yakalama için arama:** Gıyabî tutuklama veya tutuklama kararı, yakalama emri ya da zorla getirme kararı bulunan kişi için ayrıca arama kararı gerekmez. Ancak yalnız o kişiyle ilgili işlem yapılır. Hakkında ayrıca karar yoksa oradaki diğer kişiler aranamaz.
+**Yakalama için arama:** Maddenin birinci fıkrası (yakalama kararı bulunan kişi için ayrıca arama kararı gerekmediğini, yalnız o kişiyle ilgili işlem yapılacağını ve oradaki diğer kişilerin aranamayacağını söyleyen fıkra) Danıştay kararıyla **iptal edilmiştir**; metinde durur ama uygulanmaz.
 
 **Giriş:** Güvenlik önlemi alınır ve kapı çalınır. Mümkünse girme izni vermeye yetkili kişiyle iletişim kurulur.
 
@@ -336,7 +336,7 @@ Diğer hâllerde arama kararı gösterilir. Gecikmesinde sakınca veya tehlike v
 
 | Konu | Değer | md |
 |---|---|---|
-| Durdurmada kolluk âmiri kararının hâkim onayına sunulması | 24 saat içinde | 27 |
+| Durdurmada kolluk âmiri kararının hâkim onayına sunulması (bu karar yolu iptal kararlarıyla uygulanamaz) | 24 saat içinde | 27 |
 | Hava meydanı, liman ve sınır kapısında kararsız arama | 5442 sayılı Kanun ek 1. madde | 25 |
 | Olağanüstü Hâl Valisinin emriyle arama | 2935 sayılı Kanun md 11 (Yönetmelik metni) | 25 |
 | Sıkıyönetim komutanının emriyle arama | 1402 sayılı Kanun md 3 (Yönetmelik metni) | 25 |

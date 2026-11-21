@@ -74,18 +74,18 @@ Sınavın en sevdiği cümle şudur: 'Kolluk âmirleri konutta, iş yerinde ve k
 <sub>md 8</sub>
 
 Şu hâllerde ayrıca bir arama emri ya da kararı **aranmaz**:
-- **Yakalama amacıyla arama:** Hakkında tutuklama kararı, yakalama emri, zorla getirme kararı bulunan kişi ya da hakkında gıyabî tutuklama kararı verilen kaçak yakalandığında aranabilir. Arama kişinin üstünde ve yakalanması amacıyla konutunda, işyerinde, yerleşim yerinde, bunların eklentilerinde ve aracında yapılır.
+- **Yakalanan kişinin üstü:** Hakkında tutuklama kararı, yakalama emri, zorla getirme kararı bulunan kişi ya da hakkında gıyabî tutuklama kararı verilen kaçak yakalandığında üstü aranabilir. Bentteki “yakalanması amacıyla konutunda, işyerinde, yerleşim yerinde, bunların eklentilerinde ve aracında yapılacak arama” ibaresi Danıştay kararıyla **iptal edilmiştir**; bu yerlerde yakalama amacıyla yapılacak arama artık karar aranmayan hâllerden değildir.
 - **Kaba üst araması:** Hâkim kararı, Cumhuriyet savcısının yazılı emri ya da doğrudan kolluk tarafından yakalanan kişi aranabilir. Amaç, kişinin kendisine, başkalarına veya görevlilere zarar vermesini önlemektir.
 - **Nezarethane öncesi:** Gözaltına alınan kişinin nezarethaneye konmadan önce yapılan üst araması.
 - **Takip:** Hukuka uygun yakalandıktan sonra kaçan kişi ya da işlenmekte olan, henüz işlenmiş veya pek az önce işlendiğine dair belirti bulunan suçun faili takip edilir. Bu kişinin girdiği araç, bina ve eklentilerde yakalama amacıyla arama yapılabilir.
 - **Gümrük:** 5607 sayılı Kaçakçılıkla Mücadele Kanunu kapsamında yapılan aramalar. Gümrük salonları ve kapılarında kaçak eşya sakladığından kuşkulanılan kişiler aranabilir. Belirlenen kapı ve yollardan başka yerlerden girilmesi, çıkılması ve geçilmesi yasak olan gümrük bölgesinde rastlanan kişiler ve taşıma araçları da yetkili memurlarca durdurularak aranabilir.
-- **Hukuka uygunluk ve acil durum:** 5237 sayılı Türk Ceza Kanunundaki hukuka uygunluk sebepleri geçerlidir: kanunun hükmü ve âmirin emri, meşru savunma ve zorunluluk hâli, hakkın kullanılması ve ilgilinin rızası. Diğer kanunlardaki hukuka uygunluk sebepleri ve suçüstü hâli de bu kapsamdadır. Hayatî tehlikeyi ortadan kaldırmak için ya da kapalı yerlerden gelen yardım çağrıları üzerine konut, işyeri, yerleşim yeri ve eklentilerine girilebilir.
+- **Hukuka uygunluk ve acil durum:** 5237 sayılı Türk Ceza Kanunundaki hukuka uygunluk sebepleri geçerlidir: kanunun hükmü ve âmirin emri, meşru savunma ve zorunluluk hâli ve hakkın kullanılması. Bentteki “ilgilinin rızası ile” ibaresi Danıştay kararıyla **iptal edilmiştir**; rıza artık bu istisnalar arasında değildir. Diğer kanunlardaki hukuka uygunluk sebepleri ve suçüstü hâli de bu kapsamdadır. Hayatî tehlikeyi ortadan kaldırmak için ya da kapalı yerlerden gelen yardım çağrıları üzerine konut, işyeri, yerleşim yeri ve eklentilerine girilebilir.
 
 ## Tuzak · 'Hangisinde karar gerekir?' sorusu
 
 <sub>md 8, 7</sub>
 
-Bu soru genelde tersten gelir. Md 8 listesindeki aramaların ortak noktasına bak: kişiyi yakalamak, zarar vermesini önlemek, nezarethane öncesi kontrol, gümrük kontrolü, hukuka uygunluk sebepleri ve acil durumlar. **Şüphelinin konutunda suç delillerini elde etmek için yapılacak arama bu listede yok.** O zaman md 7 devreye girer. Hâkim kararı ya da gecikmesinde sakınca bulunan hâlde Cumhuriyet savcısının yazılı emri gerekir. Buna karşılık zorla getirme kararı bulunan kişinin yakalanması amacıyla aracında yapılan arama listede yer alır. Orada karar aranmaz.
+Bu soru genelde tersten gelir. Md 8 listesindeki aramaların ortak noktasına bak: kişiyi yakalamak, zarar vermesini önlemek, nezarethane öncesi kontrol, gümrük kontrolü, hukuka uygunluk sebepleri ve acil durumlar. **Şüphelinin konutunda suç delillerini elde etmek için yapılacak arama bu listede yok.** O zaman md 7 devreye girer. Hâkim kararı ya da gecikmesinde sakınca bulunan hâlde Cumhuriyet savcısının yazılı emri gerekir. Zorla getirme kararı ya da yakalama emri bulunan kişinin yakalanması amacıyla konutunda, işyerinde veya aracında karar aranmadan arama yapılabileceğini söyleyen ibare Danıştay kararıyla iptal edilmiştir. Bu kişiler için listede kalan istisna, yakalandıklarında yapılan üst aramasıdır.
 
 ## Kural · Olay yeri inceleme
 

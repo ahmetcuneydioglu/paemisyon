@@ -87,16 +87,6 @@
       "counterNumbers": []
     },
     {
-      "kind": "qa",
-      "difficulty": 3,
-      "front": "Durdurulan aracın dışarıdan bakıldığında içi görünmeyen bölümleri kimin emriyle aranabilir?",
-      "back": "Mülki amirin görevlendireceği kolluk amirinin yazılı emriyle aranabilir. Acele hâllerde, sonradan yazıyla teyit edilmek üzere sözlü emir yeterlidir. Esasları İçişleri Bakanlığı belirler.",
-      "explanation": "Silâh veya tehlikeli eşya şüphesiyle alınan tedbirler kapsamında kişiden elbisesini çıkarması ya da aracın bu bölümlerini açması istenemez. El ile dıştan kontrol ise bu emir şartının dışında tutulmuştur.",
-      "articleRefs": [
-        "27"
-      ]
-    },
-    {
       "kind": "numeric",
       "difficulty": 3,
       "front": "Durdurma üzerine kişinin üstü, eşyası ve aracı aranacaksa hangi maddelerde belirtilen usuller uygulanır?",
@@ -166,17 +156,6 @@
       "articleRefs": [
         "29"
       ]
-    },
-    {
-      "kind": "trap",
-      "difficulty": 3,
-      "front": "Hakkında yakalama emri bulunan kişiyi yakalamak için yapılan aramada, o yerde bulunan diğer kişiler de aranabilir mi?",
-      "back": "Hayır. O yerde bulunan diğer kişiler hakkında ayrıca karar verilmemişse arama yapılamaz.",
-      "explanation": "Yakalanacak kişi için ayrıca arama kararı verilmesi gerekli değildir.",
-      "articleRefs": [
-        "30"
-      ],
-      "counterNumbers": []
     },
     {
       "kind": "qa",
@@ -262,15 +241,6 @@
       "back": "Silinme ve muhtemel bilgi kaybı riskine karşı gerekli önlemler alınır ve bilgiler yedeklenirse bilgisayar ortamında da tutulabilir.",
       "articleRefs": [
         "33"
-      ]
-    },
-    {
-      "kind": "numeric",
-      "difficulty": 3,
-      "front": "Adlî ve Önleme Aramaları Yönetmeliği, hangi Resmî Gazetede yayımlanan önceki yönetmeliği yürürlükten kaldırmıştır?",
-      "back": "24/5/2003 tarihli ve 25117 sayılı Resmî Gazetede yayımlanan Adlî ve Önleme Aramaları Yönetmeliğini yürürlükten kaldırmıştır.",
-      "articleRefs": [
-        "34"
       ]
     },
     {

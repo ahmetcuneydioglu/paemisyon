@@ -132,7 +132,7 @@ Bekleme sürelerini gruplayarak hatırla: Komiser Yardımcısı ve Komiser 4 yı
 
 **Sayılmayanlar:** Kazanılmış hak aylığında değerlendirilen uzmanlık, yüksek lisans, doktora ve avukatlık stajı rütbe kıdeminde değerlendirilmez.
 
-**Sayılanlar:** Yurt dışı misyon koruma, yurt dışı kurs ve diğer görevlerle geçen süreler ile tedavi ve istirahat süreleri, hangi rütbede geçtiyse o rütbenin fiili çalışma süresine sayılır. **Ancak** bu sürelerin toplamda **üç yılı aşan** kısmı terfide değerlendirilmez.
+**Sayılanlar:** Yurt dışı misyon koruma, yurt dışı kurs ve diğer görevlerle geçen süreler ile tedavi ve istirahat süreleri, hangi rütbede geçtiyse o rütbenin fiili çalışma süresine sayılır. **Ancak** misyon koruma dışındaki bu sürelerin toplamda **üç yılı aşan** kısmı terfide değerlendirilmez. Anayasa Mahkemesi üç yıl sınırını **yurt dışı misyon koruma** süreleri yönünden iptal ettiğinden misyon korumada geçen sürenin tamamı sayılır.
 
 **Askerlik:** Teşkilata girmeden önce yapılan askerlik, **atanılan ilk rütbede** ve **adaylığın onanmasından sonra** fiili çalışma süresinden sayılır.
 

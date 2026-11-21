@@ -208,12 +208,12 @@ Bu çocuklar hakkında şu kurallar uygulanır:
 **Soruşturma evresinde:**
 - Müdafi, dosya içeriğini inceleyebilir.
 - İstediği belgelerin bir örneğini **harçsız** alabilir.
-- **Kollukta** bulunan soruşturma dosyası için **yetkili Cumhuriyet savcısının yazılı emri** gerekir.
+- Birinci fıkradaki “Kollukta bulunan soruşturma dosyası için yetkili Cumhuriyet savcısının yazılı emri gerekir” ibaresi Danıştay kararıyla **iptal edilmiştir**; dosya kollukta olsa da inceleme bu emre bağlı değildir.
 
 **Kısıtlama fıkraları:** Bu yetkinin savcı talebi ve sulh ceza hâkimi kararıyla kısıtlanmasını öngören fıkra ile buna bağlı fıkra, Danıştay kararıyla yürütmesi durdurulan fıkralar olarak metinde yer alır.
 
 **İddianameden sonra:**
-- Müdafi, iddianamenin mahkemeye verildiği tarihten itibaren dosya içeriğini ve muhafaza altındaki delilleri inceleyebilir.
+- Müdafi, iddianamenin mahkemeye verildiği tarihten itibaren dosya içeriğini ve muhafaza altındaki delilleri inceleyebilir. (Ceza Muhakemesi Kanunu bu anı iddianamenin mahkemece kabul edildiği tarih olarak belirler.)
 - Bütün tutanak ve belgelerin örneklerini harçsız alabilir.
 
 **Suçtan zarar görenin vekili:** Bu haklardan o da yararlanır.

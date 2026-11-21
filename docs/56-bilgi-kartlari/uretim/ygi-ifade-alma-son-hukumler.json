@@ -47,16 +47,6 @@
       ]
     },
     {
-      "kind": "qa",
-      "difficulty": 2,
-      "front": "Müdafiin kollukta bulunan soruşturma dosyasını incelemesi için ne gerekir?",
-      "back": "Yetkili Cumhuriyet savcısının yazılı emri gerekir.",
-      "explanation": "Müdafi, soruşturma evresinde dosya içeriğini inceleyebilir. İstediği belgelerin bir örneğini de harçsız olarak alabilir.",
-      "articleRefs": [
-        "22"
-      ]
-    },
-    {
       "kind": "trap",
       "difficulty": 3,
       "front": "Müdafi, ifade alınırken şüpheliye sorulan soruya doğrudan cevap verebilir mi?",
