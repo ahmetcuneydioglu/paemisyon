@@ -241,7 +241,7 @@ Hırsızlık, kaçakçılık, fuhuş ve suçtan kaynaklanan malvarlığı değer
 - Sonucu olumlu olan ve temel eğitimi başarıyla bitirenlere **valilikçe** çalışma izni verilir.
 - Şirketlerde eğitici ve temsilci olacaklarda ve şirketin tüzel kişi ortaklarında da kurucularda aranan şartlar aranır.
 - Göreve başlayan görevli, işveren tarafından **onbeş gün** içinde valiliğe bildirilir.
-- Şartları taşımadığı veya sonradan kaybettiği tespit edilenlerin kimliği iptal edilir.
+- Şartları taşımadığı veya sonradan kaybettiği tespit edilenlerin kimliği iptal edilir. Ancak Anayasa Mahkemesi kararıyla, kimlik verildikten sonra hakkında kovuşturma başlaması tek başına kimlik iptali sebebi değildir.
 - Şu kişiler özel güvenlik şirket veya birimlerinde çalışamaz: terör örgütlerine ya da Milli Güvenlik Kurulunca Devletin milli güvenliğine karşı faaliyette bulunduğuna karar verilen yapı, oluşum veya gruplara iltisakı veya irtibatı tespit edilenler.
 
 **Kimlik kartı (md 12)**

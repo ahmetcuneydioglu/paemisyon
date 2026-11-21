@@ -8,53 +8,29 @@ Kaynak: 298 Sayılı Seçimlerin Temel Hükümleri Kanunu, md 94/B, 94/C, 94/D, 
 
 <sub>md 94/B, 94/C, 94/D, 94/E, 95, 96, 97, 98</sub>
 
-Seçim gününde sandık başında iki büyük iş var: oyları toplamak ve saymak. Bu ünitenin ilk maddeleri yurt dışındaki seçmeni anlatıyor. Kanun ona birden fazla yol açıyor: mektup, temsilciliklerdeki sandık, elektronik ortam ve gümrük kapısı. Her yolun kendi süresi, bitiş saati ve sayım düzeni var. Ama hepsi aynı yere varıyor: önce Yurt Dışı İlçe Seçim Kurulu, sonra Ankara İl Seçim Kurulu, en sonunda Yüksek Seçim Kurulu (YSK). Sonraki maddeler sandık açılmadan önceki hazırlığı ve zarfların tek tek kontrolünü anlatıyor. Okurken hep şu üç soruyu sor: kim, ne zaman, hangi tutanakla?
+Seçim gününde sandık başında iki büyük iş var: oyları toplamak ve saymak. Bu ünitenin ilk maddeleri yurt dışındaki seçmeni anlatıyor. Kanun ona şu yolları açıyor: temsilciliklerdeki sandık, gümrük kapısı ve elektronik ortam. Metinde mektupla oy da düzenlenmişti; bu yol Anayasa Mahkemesi kararıyla iptal edildi. Her yolun kendi süresi, bitiş saati ve sayım düzeni var. Ama hepsi aynı yere varıyor: önce Yurt Dışı İlçe Seçim Kurulu, sonra Ankara İl Seçim Kurulu, en sonunda Yüksek Seçim Kurulu (YSK). Sonraki maddeler sandık açılmadan önceki hazırlığı ve zarfların tek tek kontrolünü anlatıyor. Okurken hep şu üç soruyu sor: kim, ne zaman, hangi tutanakla?
 
-## Kural · Mektupla oy: pusula seçmene nasıl ulaşır?
-
-<sub>md 94/B</sub>
-
-**Gönderim zinciri:**
-- YSK, özel olarak imal ettirdiği oy pusulasını ve özel renkte bastırılmış oy zarflarını **Yurt Dışı İlçe Seçim Kuruluna** gönderir.
-- Yurt Dışı İlçe Seçim Kurulu, arkasını kendi mührüyle mühürlediği oy pusulasını ve oy zarflarını seçmenin yurt dışında kayıtlı olduğu adrese yollar. Gönderim, seçimin yapılacağı günden **yetmiş beş gün** önce yapılır.
-
-**Zarf düzeni (içten dışa):**
-1. Bir köşesinde Yurt Dışı İlçe Seçim Kurulunun mührü bulunan **küçük zarf**. Oy pusulası bu zarfa konur.
-2. Üzerinde “Yurt Dışı İlçe Seçim Kurulu Ankara/TÜRKİYE” yazan **orta boy ikinci zarf**.
-3. Üzerinde seçmenin yurt dışı adresi yazan **üçüncü büyük zarf**.
-
-## Kural · Mektupla oy: işaretleme, dönüş ve geç gelen mektup
+## Kural · Mektupla oy: iptal edilen yol
 
 <sub>md 94/B</sub>
 
-**Seçmen ne yapar?**
-- Kendi adresi yazılı zarfı açar.
-- Oy pusulasında tercih ettiği siyasi parti sütunundaki daireyi **(X) işaretiyle** işaretler. Cumhurbaşkanı seçimi ya da halkoylaması pusulasında ise tercih ettiği bölümü işaretler.
-- **Sadece oy pusulasını** küçük zarfa koyar ve zarfı kapatır.
-- Küçük zarfı “Yurt Dışı İlçe Seçim Kurulu Ankara/TÜRKİYE” adresli ikinci zarfa koyar.
-- Mektubu, **seçim günü saat 17:00'a kadar** Kurulda bulunacak şekilde postalar.
+**Mektupla oy yok:** Kanun, yurt dışındaki seçmenin oy pusulasını posta ile alıp yine posta ile geri göndermesini düzenlemişti (94/B). Bu usul Anayasa Mahkemesi kararıyla iptal edildi; aynı kararla 94/A'daki “mektup” sözcüğü de iptal edildi. Metinde duran gönderim zinciri, zarf düzeni ve süreler bu yüzden uygulanmaz.
 
-**Kurula ulaşan mektup:**
-- Önce seçmenin kimliği tespit edilir ve seçmen kütüğündeki ismi işaretlenir.
-- Mektubu **sandık kurulu** açar. Oy pusulasının bulunduğu zarf **açılmaksızın** sandığa atılır.
-- Sandık **her gün saat 17:00'da** açılır. Zarflar oy veren seçmen sayısıyla karşılaştırılır ve uygunluk tutanakla saptanır.
-- Zarflar açılmadan, tutanağın bir örneğiyle birlikte torbaya konur. Torbanın ağzı mühürlenir ve Yurt Dışı İlçe Seçim Kuruluna teslim edilir.
-- **Seçim günü saat 17:00'dan sonra gelen mektuplar** tutanakla tespit edilir, sonra **yakılarak imha edilir**.
+**Bugünkü yollar (94/A):** Yurt dışı seçmen temsilciliklerdeki sandıkta, gümrük kapısında ya da elektronik ortamda oy kullanır. Bu yollardan hangilerinin birlikte ya da ayrı ayrı uygulanacağına Dışişleri Bakanlığının görüşünü alarak YSK karar verir.
 
-**Usul ve gider:**
-- Mektupların gönderilmesi, güvenliği ve kimlik tespitine ilişkin usul ve esasları **YSK** belirler. Bunun için Posta ve Telgraf Teşkilatı Genel Müdürlüğünün görüşünü alır.
-- Posta giderlerini **YSK** karşılar.
+**94/B'den yaşayan kısım:** Yurt dışı oylarının ülke geneline ve seçim çevrelerine eklenmesine ilişkin hesap, öteki yollarla kullanılan oylara atıf yoluyla uygulanır.
 
-**Not:** Posta ve Telgraf Teşkilatı Genel Müdürlüğü adı madde metnindeki hâliyle verilmiştir.
+## Kural · Mektupla oy hükümleri uygulanmaz
+
+<sub>md 94/B</sub>
+
+Metinde duran mektupla oy ayrıntıları (pusulanın işaretlenip postalanması, Kurula ulaşan mektubun açılması, mektup sandığının her gün açılması, geç gelen mektubun yakılarak imhası, posta giderleri) mektupla oy usulüyle birlikte Anayasa Mahkemesi kararıyla iptal edildi; bu ayrıntılar bugünkü oy verme yollarına uygulanmaz. Temsilcilikteki sandık için 94/C'deki, gümrük kapısı için 94/E'deki, elektronik oy için 94/D'deki kurallara bak.
 
 ## Kural · Yurt dışı oyları toplama nasıl eklenir?
 
 <sub>md 94/B, 94/C, 94/D, 94/E</sub>
 
-**Mektupla gelen oyların sayımı ve sonucun iletilmesi (94/B):**
-- Seçim günü saat 17:00'dan itibaren oy torbalarını **Yurt Dışı İlçe Seçim Kurulu** açar. Sayım, döküm ve birleştirme işlemlerini yapar.
-- Sonuçlar **Ankara İl Seçim Kuruluna** iletilir.
-- Ankara İl Seçim Kurulu birleştirme tutanağını düzenleyip **YSK**'ya gönderir.
+**Mektupla oy (94/B):** Mektupla oy usulü, mektup torbalarının açılıp sayılması dahil, Anayasa Mahkemesi kararıyla iptal edildi. 94/B'nin aşağıdaki ülke geneli ve seçim çevresi hesabı ise öteki yollarla kullanılan oylara atıf yoluyla uygulanır.
 
 **Ülke geneli:** YSK, yurt dışı toplam geçerli oy sayısını Türkiye genelindeki toplam geçerli oy sayısına **ilave eder**. Böylece yurt düzeyinde genel oy miktarı ve her partinin ülke genelinde aldığı geçerli oy bulunur.
 
@@ -218,11 +194,11 @@ Başkan ayrıca Bilgisayar Destekli Merkezi Seçmen Kütüğü Sistemi üzerinde
 Soru gümrük kapısında oy vermenin kaç gün önce başladığını soruyor. Cevap: **kırk beş gün**.
 
 Çeldiriciler genellikle komşu maddelerdeki sürelerden gelir:
-- **Yetmiş beş gün:** mektupla oyda pusulanın seçmene gönderildiği gün (94/B).
+- **Yetmiş beş gün:** 94/B'deki mektupla oy usulünün süresiydi; bu usul Anayasa Mahkemesi kararıyla iptal edildiğinden bugün uygulanan bir süre değildir.
 - **Otuz gün:** elektronik oyun başlangıcı (94/D).
 - 15 ya da 60 gibi sayılar bu maddelerin hiçbirinde geçmez.
 
-Kısa kalıp: **mektup 75 → sandık ve gümrük 45 → elektronik 30**.
+Kısa kalıp: **sandık ve gümrük 45 → elektronik 30**.
 
 Bir ayrıntıya daha dikkat et. Temsilcilikteki sandık da 45 günle başlar, ama seçim gününden önceki **üçüncü gün** kapanır. Gümrük kapısı ise **seçim günü 17:00**'a kadar açıktır.
 
@@ -231,11 +207,10 @@ Bir ayrıntıya daha dikkat et. Temsilcilikteki sandık da 45 günle başlar, am
 <sub>md 94/B, 94/C, 94/E</sub>
 
 Yurt dışı yollarında torbaya giren tutanak her yolda aynı değildir. Her yolun ifadesi farklı:
-- **Mektup sandığı (94/B):** zarflar tutanağın **bir örneği** ile torbaya konur. Torba Yurt Dışı İlçe Seçim Kuruluna teslim edilir.
 - **Temsilcilik sandığı (94/C):** zarflar tutanağın **aslı** ile torbaya konur. **Sureti** temsilcilikte saklanır. Torbayı başkan ilgili **komisyona** teslim eder.
 - **Gümrük kapısı (94/E):** zarflar tutanağın **bir sureti** ile torbaya konur. Teslim **geçici gümrük kapısı seçim kuruluna** yapılır.
 
-Şıklarda “aslı” ile “sureti” yer değiştirmişse önce hangi yolun sorulduğuna bak.
+Şıklarda “aslı” ile “sureti” yer değiştirmişse önce hangi yolun sorulduğuna bak. 94/B'deki mektup sandığına ilişkin “tutanağın bir örneği” kuralı, mektupla oy usulüyle birlikte Anayasa Mahkemesi kararıyla iptal edildi.
 
 ## Sayılar · Yurt dışında oy: günler ve saatler
 
@@ -243,10 +218,6 @@ Yurt dışı yollarında torbaya giren tutanak her yolda aynı değildir. Her yo
 
 | Konu | Değer | md |
 |---|---|---|
-| Mektup: pusulanın seçmen adresine gönderilmesi | Seçimden 75 gün önce | 94/B |
-| Mektup: Kurulda bulunması gereken son an | Seçim günü 17:00 | 94/B |
-| Mektup: sandığın açılması | Her gün 17:00 | 94/B |
-| Mektup: geç gelen mektup | 17:00'dan sonra gelen yakılarak imha | 94/B |
 | Temsilcilik sandığı: başlangıç | Seçimden 45 gün önce | 94/C |
 | Temsilcilik sandığı: bitiş | Seçim gününden önceki 3. gün 17.00 | 94/C |
 | Temsilcilik sandığı: oy saatleri | Mahalli saatle 08.00–17.00 | 94/C |
@@ -362,8 +333,8 @@ Son olarak sayım kuralını hatırla: zarflar **iki** kez sayılır, fark çık
 | Sandığın açılabileceği en erken saat | 17.00 (YSK başka süre koymadıysa) | 96 |
 | Zarfların sayılması | İki defa, yüksek sesle | 98 |
 | İki sayım arasında fark | Üçüncü sayım | 98 |
-| Mektup ve temsilcilik sandığının günlük açılışı | Her gün 17.00 (temsilcilikte başka bir bitim saati belirlenmişse o saatte) | 94/B, 94/C |
-| Mektup ve elektronik oyların sayım başlangıcı | Seçim günü 17:00'dan itibaren | 94/B, 94/D |
+| Temsilcilik sandığının günlük açılışı | Her gün 17.00 (başka bir bitim saati belirlenmişse o saatte) | 94/C |
+| Elektronik oyların sayım başlangıcı | Seçim günü 17:00'dan itibaren | 94/D |
 | Gümrük kapısı sayım başlangıcı | Seçim günü 17.00'den itibaren | 94/E |
 | Yurt dışı sandık kurulunda parti temsilcisi | En çok oy alan üç partiden birer isim | 94/C |
 | Yurt dışı sandık kurulu asıl üye sayısı (başkan dâhil) | 5 | 94/C |

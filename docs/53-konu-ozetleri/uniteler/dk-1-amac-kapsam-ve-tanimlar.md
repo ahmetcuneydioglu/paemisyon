@@ -92,11 +92,13 @@ Her derneğin bir tüzüğü bulunur. Tüzükte şunların belirtilmesi **zorunl
 
 <sub>md 10</sub>
 
-**Maddî yardım:** Dernekler tüzükteki amaçlar için şu kuruluşlardan maddî yardım alabilir ve bunlara yardımda bulunabilir:
+**Maddî yardım:** Dernekler tüzükteki amaçlar için şu kuruluşlardan maddî yardım alabilir:
 - Benzer amaçlı dernekler
 - Siyasi partiler
 - İşçi ve işveren sendikaları
 - Meslekî kuruluşlar
+
+Dernekler bu kuruluşlara maddî yardımda da bulunabilir; **siyasi partiler bunun dışındadır**. Derneklerin siyasi partilere maddî yardımda bulunabileceğine ilişkin kısım Anayasa Mahkemesi kararıyla iptal edildi: bu madde derneğe siyasi partiye maddî yardım yetkisi vermez, siyasi partiden yardım almayı ise sürdürür.
 
 **Ortak proje:** Dernekler, kamu kurum ve kuruluşlarıyla onların görev alanına giren konularda ortak proje yürütebilir. Bu hüküm, Dernek ve Vakıfların Kamu Kurum ve Kuruluşları ile İlişkilerine Dair Kanun hükümleri saklı kalmak üzere uygulanır. Kamu, proje maliyetinin **en fazla %50**'si oranında aynî veya nakdî katkı sağlayabilir.
 

@@ -79,7 +79,7 @@ Denetimli serbestliği ve koşullu salıverilmeyi tam muafiyet listesine koyan �
 Trafikte dikkat ve özen yükümlülüğüne aykırı davranıp taksirli suçtan hapis alan bir sürücü düşün.
 - **Sürücü belgesi:** Üç ay ile üç yıl arasında geri alınabilir. Şıklarda 'iki yıl', 'altı ay' ya da 'beş yıl' sınırı görürsen yanlıştır.
 - **Araç:** Eşya müsaderesi **kasıtlı** suçta kullanılan eşya için öngörülür. Bu yüzden araç müsadere edilmez.
-- **Oy hakkı:** Hak yoksunluğu yalnızca **kasten** işlenen suçtan hapis mahkûmiyetinin sonucudur. Bu sürücü seçme hakkını kaybetmez.
+- **Oy hakkı:** Bu sürücü seçme hakkını kaybetmez; taksirli suç bu maddedeki hak yoksunluğunu doğurmaz. Kasten işlenen suçta da seçme ve seçilme ehliyetinden yoksunluk, Anayasa Mahkemesi kararıyla bugün bu maddenin kendiliğinden sonucu değildir; ceza infaz kurumundaki kasten hükümlünün oy kullanamaması Anayasa'dan doğar.
 
 ## Kural · Eşya müsaderesi
 

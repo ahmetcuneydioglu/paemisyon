@@ -119,7 +119,7 @@ Sonuç başvuranlara **en geç 2 ay** içinde bildirilir.
 |---|---|---|
 | İnternetteki izinsiz içeriğin sağlayıcıca çıkarılması | en geç 24 saat | 6 |
 | Başvuru sonucunun bildirilmesi | en geç 2 ay | 9 |
-| Yardım toplama süresi (üst sınır) | 1 yıl | 10 |
+| İzinde verilen yardım toplama süresi (üst sınır) | 1 yıl; haklı sebeple izin veren makamca uzatılabilir | 10 |
 | Gerçek kişilerde sorumlu kurul | en az 3 kişi | 11 |
 | Sorumlu kurul üyeleri ve değişikliklerin bildirimi | 10 gün | 11 |
 

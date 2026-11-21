@@ -231,6 +231,8 @@ Raporlarda da iki ayrı muhatap var:
 - Herhangi bir siyasi partinin yönetim ve denetim organlarında görevli veya yetkili bulunmamak.
 - En az **dört yıllık** lisans düzeyinde yükseköğrenim görmüş olmak.
 
+**Not:** Anayasa Mahkemesi kararıyla bilgi ve deneyim sahibi olma ve çalışma süresi şartları, çoğulcu temsil kuralı ile üyelerin görev süresi ve arka arkaya seçilme sınırına ilişkin hükümler yeniden yürürlüğe girmiştir; bu liste bu yüzden eksiktir. Resmî derlemede bu hükümler hâlâ mülga görünür, metinleri madde notunda yer alır.
+
 **Boşalma:** Görev süresi dolmadan boşalan üyeliğe **bir ay** içinde aynı usulle yeni üye seçilir. Yeni üye, yerine seçildiği üyenin kalan süresini tamamlar. Bu şekilde **iki yıl veya daha az** görev yapanların görevi seçilme dönemi sayılmaz.
 
 **Yemin:** Seçilen üyeler ilk toplantının başında yemin eder. Görevlerini tam bir tarafsızlık, dürüstlük, hakkaniyet ve adalet anlayışı içinde yerine getireceklerine namus ve şerefleri üzerine and içerler.

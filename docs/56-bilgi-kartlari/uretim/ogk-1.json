@@ -270,7 +270,7 @@
       "kind": "qa",
       "difficulty": 2,
       "front": "Özel güvenlik görevlisi olabilme şartlarından birini sonradan kaybettiği tespit edilen kişinin kimliğine ne olur?",
-      "back": "Kimliği iptal edilir. Aynı sonuç, şartları hiç taşımadığı tespit edilenler ve yöneticiler için de geçerlidir.",
+      "back": "Kimliği iptal edilir; şartları hiç taşımadığı tespit edilenler ve yöneticiler için de sonuç aynıdır. Ancak Anayasa Mahkemesi kararıyla, kimlik verildikten sonra hakkında kovuşturma başlaması tek başına kimlik iptali sebebi değildir.",
       "explanation": "Terör örgütlerine ya da Milli Güvenlik Kurulunca Devletin milli güvenliğine karşı faaliyette bulunduğuna karar verilen yapı, oluşum veya gruplara iltisakı veya irtibatı olduğu tespit edilen kişiler, özel güvenlik alanında faaliyet yürüten şirket veya birimlerde çalışamaz.",
       "articleRefs": [
         "11"

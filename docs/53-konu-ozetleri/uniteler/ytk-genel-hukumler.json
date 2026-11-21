@@ -149,11 +149,11 @@
           ]
         },
         {
-          "label": "Yardım toplama süresi (üst sınır)",
-          "value": "1 yıl",
           "refs": [
             "10"
-          ]
+          ],
+          "label": "İzinde verilen yardım toplama süresi (üst sınır)",
+          "value": "1 yıl; haklı sebeple izin veren makamca uzatılabilir"
         },
         {
           "label": "Gerçek kişilerde sorumlu kurul",

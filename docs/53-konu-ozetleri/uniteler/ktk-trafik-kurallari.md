@@ -343,7 +343,7 @@ Bu araçlar trafik kısıtlama ve yasaklarına bağlı değildir. Birbirleriyle 
 - Durak levhası ve geçiş üstünlüğü levhası: onbeş metre
 - Geçitler ve köprüler: on metre
 
-**Fazla yük:** Yola devam yasağı %20'den fazla aşımda başlar. %10, %15 ve %25 ceza basamaklarıdır.
+**Fazla yük:** Yola devam yasağı %20'den fazla aşımda başlar. Ceza basamakları ise %10, %15, %20, %25 ve %25'in üzeridir; %20 hem bir ceza basamağı hem de yola devam yasağının eşiğidir.
 
 **Elektrikli skuter:** Bisiklet şeridinde sürülebilir. Yasak olan, şerit varken taşıt yolunda sürmektir. 'En az bir el' kuralı bisiklet içindir; skuterde manevra dışında iki el gerekir.
 
