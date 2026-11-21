@@ -1,0 +1,178 @@
+[
+ {
+  "sinif": "bozuk",
+  "gerekce": "\"Özgün soru\" kör denetimi (21 Kas 2026), 492b4f42: 6458 md 102: 'hangisi yanlıştır' sorusunda anahtarın (D) yanında B şıkkı da yanlış; 'idare mahkemesine 30 gün içinde başvuru' maddede yok, md 102/5'teki otuz gün ödeme süresidir. İki yanlış ifade. Kullanıcı onayı 21 Kas 2026.",
+  "arsivlenen": {
+   "id": "77533b88-16e4-43cb-a3e8-9c3ea35d597a",
+   "questionId": "492b4f42-1ebb-4fe9-a256-3cb95f86be8f",
+   "stem": "Kolluk uygulamasında idarî para cezalarına karşı kanun yollarıyla ilgili aşağıdaki eşleştirmelerden hangisi yanlıştır?",
+   "explanation": "Dilencilik dâhil Kabahatler Kanunu'ndaki cezalarda kanun yolu, m.27 uyarınca 15 gün içinde SULH CEZA mahkemesine başvurudur; idare mahkemesi değil. Buna karşılık özel kanunlarında aksine hüküm bulunan 6458 sayılı Kanun (30 gün, idare mahkemesi) ve 4733 sayılı Kanun cezalarında idarî yargı yolu geçerlidir — Kabahatler Kanunu m.3 gereği kanun yolu hükümleri ancak diğer kanunlarda aksine hüküm yoksa uygulanır. 2026 uygulama tablosu bu merci ayrımını kabahat kabahat listeler.",
+   "sourceLabel": "Özgün soru · Kanun yolu karşılaştırması · 2026 İPC uygulama tablosu",
+   "options": [
+    {
+     "label": "A",
+     "text": "Kabahatler Kanunu'ndaki kumar cezası – sulh ceza mahkemesine 15 gün içinde başvuru",
+     "isCorrect": false
+    },
+    {
+     "label": "B",
+     "text": "6458 sayılı Kanun'daki Türkiye'ye yasa dışı giriş cezası – idare mahkemesine 30 gün içinde başvuru",
+     "isCorrect": false
+    },
+    {
+     "label": "C",
+     "text": "4733 sayılı Kanun'daki belgesiz tütün-alkol satışı cezası – idare mahkemesine başvuru",
+     "isCorrect": false
+    },
+    {
+     "label": "D",
+     "text": "Kabahatler Kanunu'ndaki dilencilik cezası – idare mahkemesine 30 gün içinde başvuru",
+     "isCorrect": true
+    },
+    {
+     "label": "E",
+     "text": "1774 sayılı Kanun'daki kimlik bildirimi cezaları – sulh ceza mahkemesine 15 gün içinde başvuru",
+     "isCorrect": false
+    }
+   ],
+   "question": {
+    "articleNo": "27",
+    "topic": {
+     "name": "5326 Sayılı Kabahatler Kanunu"
+    }
+   }
+  }
+ },
+ {
+  "sinif": "bozuk",
+  "gerekce": "\"Özgün soru\" kör denetimi (21 Kas 2026), a399ab37: 6458 md 102: anahtar bu maddedeki cezalarda itiraz merciinin idare mahkemesi (30 gün) olduğu kabulüne dayanıyor; maddede kanun yolu düzenlenmiyor. Kullanıcı onayı 21 Kas 2026.",
+  "arsivlenen": {
+   "id": "3740141f-c181-4242-8bf3-23eab5390305",
+   "questionId": "a399ab37-d223-407e-801c-364f9a702e4a",
+   "stem": "2026 idarî para cezası uygulamasında aşağıdaki fiillerden hangisinde itiraz mercii sulh ceza mahkemesi değildir?",
+   "explanation": "6458 sayılı Kanun m.102 kapsamındaki tüm kabahatlerde (idarî gözetimden kaçma dâhil) itiraz mercii İDARE MAHKEMESİ, süresi 30 gündür; bu, Kabahatler Kanunu genel rejiminden ayrılan başlıca kalemdir (4733 sayılı Kanun cezaları da idare mahkemesine tâbidir). 1593, 5199, 2860 ve 4250 sayılı kanun cezalarında ise genel kural işler: 15 gün içinde sulh ceza mahkemesi.",
+   "sourceLabel": "Özgün soru · İtiraz mercileri · 2026 İPC uygulama tablosu",
+   "options": [
+    {
+     "label": "A",
+     "text": "Umumi Hıfzıssıhha Kanunu'ndaki yasak ve zorunluluklara uymamak (1593 SK m.282)",
+     "isCorrect": false
+    },
+    {
+     "label": "B",
+     "text": "Hayvana kasıtlı kötü davranmak (5199 SK m.28)",
+     "isCorrect": false
+    },
+    {
+     "label": "C",
+     "text": "İdarî gözetimden veya geri gönderme merkezinden kaçmak (6458 SK m.102)",
+     "isCorrect": true
+    },
+    {
+     "label": "D",
+     "text": "İzinsiz yardım toplamak (2860 SK m.29)",
+     "isCorrect": false
+    },
+    {
+     "label": "E",
+     "text": "18 yaşını doldurmamış kişilere alkollü içki satmak (4250 SK m.7)",
+     "isCorrect": false
+    }
+   ],
+   "question": {
+    "articleNo": "22",
+    "topic": {
+     "name": "5326 Sayılı Kabahatler Kanunu"
+    }
+   }
+  }
+ },
+ {
+  "sinif": "eskime",
+  "gerekce": "\"Özgün soru\" kör denetimi (21 Kas 2026), 30a457d0: 2860 md 29: anahtar 'toplanan yardıma elkonularak mülkiyetin kamuya geçirilmesi' diyor; md 29'un üçüncü ve sekizinci fıkraları Anayasa Mahkemesinin 18/1/2024 tarihli kararıyla iptal edildi, güncel metinde elkoyma hükmü yok. Kullanıcı onayı 21 Kas 2026.",
+  "arsivlenen": {
+   "id": "fda4af68-85f0-4011-81cd-3f19ade38ca0",
+   "questionId": "30a457d0-10c6-486f-984e-692ac82cebcf",
+   "stem": "Sokakta izinsiz yardım topladığı tespit edilen kişi hakkında, 2026 idarî para cezası uygulamasına göre aşağıdakilerden hangisi doğrudur?",
+   "explanation": "2860 sayılı Yardım Toplama Kanunu m.29 uygulamasında izinsiz yardım toplayanlara idarî para cezası verilir ve toplanan mal-paraya elkonularak mülkiyetin kamuya geçirilmesi uygulanır; internet ortamında izinsiz yardım toplamada ceza katbekat daha yüksektir. Dilencilikten (Kabahatler K. m.33) farkı, yardım toplamanın bir organizasyon hâlinde ve bağış görüntüsü altında yapılması ile cezanın çok daha ağır olmasıdır; itiraz 15 gün içinde sulh ceza mahkemesinedir.",
+   "sourceLabel": "Özgün soru · 2860 SK m.29 · 2026 İPC uygulama tablosu",
+   "options": [
+    {
+     "label": "A",
+     "text": "2860 sayılı Yardım Toplama Kanunu uyarınca idarî para cezası verilir ve toplanan yardıma elkonularak mülkiyetin kamuya geçirilmesi gündeme gelir",
+     "isCorrect": true
+    },
+    {
+     "label": "B",
+     "text": "Fiil dilencilik kabahatiyle aynıdır; elli TL tabanlı ceza verilir",
+     "isCorrect": false
+    },
+    {
+     "label": "C",
+     "text": "İzinsiz yardım toplamak yaptırıma tâbi değildir; yalnızca dernekler denetlenir",
+     "isCorrect": false
+    },
+    {
+     "label": "D",
+     "text": "Ceza belediye encümeni tarafından verilir",
+     "isCorrect": false
+    },
+    {
+     "label": "E",
+     "text": "Toplanan yardım kişiye iade edilir; yalnızca uyarı yapılır",
+     "isCorrect": false
+    }
+   ],
+   "question": {
+    "articleNo": "22",
+    "topic": {
+     "name": "5326 Sayılı Kabahatler Kanunu"
+    }
+   }
+  }
+ },
+ {
+  "sinif": "bozuk",
+  "gerekce": "\"Özgün soru\" kör denetimi (21 Kas 2026), a5274e89: Anayasa md 101: kök yüzde beş oy şartını 'siyasi parti grupları'na bağlıyor; md 101/3'te parti grupları için oy şartı yok. Cevap değişmiyor ama kök maddeyi yanlış aktarıyor. Kullanıcı onayı 21 Kas 2026.",
+  "arsivlenen": {
+   "id": "8819cf40-f8b4-40e4-a2b7-1f25ce494f2a",
+   "questionId": "a5274e89-7da9-4f61-96ce-bcfdb73d7ce3",
+   "stem": "1982 Anayasası'na göre, siyasi parti gruplarının Cumhurbaşkanlığına aday gösterebilmesi için en son yapılan genel seçimlerde tek başına veya birlikte almış olmaları gereken asgari geçerli oy oranı nedir?",
+   "explanation": "Anayasa m.101/3'e göre en son yapılan milletvekili genel seçiminde geçerli oyların tek başına veya birlikte en az yüzde beşini almış olan siyasi partiler aday gösterebilir. Ayrıca en az yüz bin seçmen de aday gösterme hakkına sahiptir.",
+   "sourceLabel": "Özgün soru · T.C. Anayasası m.101",
+   "options": [
+    {
+     "label": "A",
+     "text": "Yüzde bir",
+     "isCorrect": false
+    },
+    {
+     "label": "B",
+     "text": "Yüzde üç",
+     "isCorrect": false
+    },
+    {
+     "label": "C",
+     "text": "Yüzde beş",
+     "isCorrect": true
+    },
+    {
+     "label": "D",
+     "text": "Yüzde yedi",
+     "isCorrect": false
+    },
+    {
+     "label": "E",
+     "text": "Yüzde on",
+     "isCorrect": false
+    }
+   ],
+   "question": {
+    "articleNo": "101",
+    "topic": {
+     "name": "T.C. Anayasası"
+    }
+   }
+  }
+ }
+]
