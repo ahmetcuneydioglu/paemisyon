@@ -3,12 +3,15 @@
  * Kaynak mevzuat.gov.tr konsolide metnidir; ceviri/duzeltme yapilmaz.
  *
  *   npx tsx scripts/mevzuat-json-import.ts --json <dosya> --ders <id> --ad "<konu adi>" \
- *     --slug <slug> --kisa <kisaltma> --no <kanun no> --url <kaynak> [--yaz]
+ *     --slug <slug> --kisa <kisaltma> --no <kanun no> --url <kaynak> [--sira <konu sırası>] [--anahtar "a|b"] [--yaz]
  */
 import { PrismaClient } from '@prisma/client';
 import { readFileSync } from 'fs';
 
-const p = new PrismaClient();
+// DB-yazma penceresi: connection_limit=1 (havuz canlı kullanıcılarla ortak).
+const base = process.env.DATABASE_URL!;
+const p = new PrismaClient({ datasources: { db: { url: base.includes('connection_limit')
+  ? base.replace(/connection_limit=\d+/, 'connection_limit=1') : `${base}${base.includes('?') ? '&' : '?'}connection_limit=1` } } });
 const arg = (k: string) => { const i = process.argv.indexOf(k); return i === -1 ? undefined : process.argv[i + 1]; };
 const sira = (no: string) => {
   const m = /^(Ek|Geçici)?\s*(\d+)/.exec(no.trim());
@@ -28,7 +31,7 @@ const sira = (no: string) => {
   if (!YAZ) { console.log('(KURU CALISMA — --yaz ile uygulanir)'); return; }
 
   const konu = (await p.topic.findFirst({ where: { courseId: DERS, name: AD } }))
-    ?? (await p.topic.create({ data: { courseId: DERS, name: AD, sortOrder: 9, matchKeywords: [] } }));
+    ?? (await p.topic.create({ data: { courseId: DERS, name: AD, sortOrder: Number(arg('--sira') ?? 9), matchKeywords: arg('--anahtar')?.split('|') ?? [] } }));
   const mev = await p.legislation.upsert({
     where: { slug: arg('--slug')! }, update: { lastVerifiedAt: new Date() },
     create: { slug: arg('--slug')!, name: AD, shortName: arg('--kisa') ?? null, number: arg('--no') ?? null,

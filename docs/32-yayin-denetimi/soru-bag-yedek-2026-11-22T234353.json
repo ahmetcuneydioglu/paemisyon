@@ -1,0 +1,330 @@
+[
+ {
+  "plan": {
+   "soru": "3dc788e5",
+   "baglar": [
+    {
+     "mevzuat": "4207",
+     "no": "5",
+     "relation": "primary"
+    },
+    {
+     "mevzuat": "4207",
+     "no": "2",
+     "relation": "related"
+    },
+    {
+     "mevzuat": "5326",
+     "no": "39",
+     "relation": "related"
+    }
+   ],
+   "gerekce": "4207 sayılı Kanun bankaya alındı (23 Kas 2026); cevabı md 5/1 ve md 5/16 belirliyor, yasak md 2'de, yetki 5326 md 39 yollamasıyla."
+  },
+  "onceki": {
+   "id": "3dc788e5-7618-4682-b135-64c4b61154a3",
+   "articleNo": null,
+   "topicId": "569628d2-5e1c-4788-ad66-1ef20d9374f6",
+   "currentVersion": {
+    "id": "e73f8746-5138-43b8-8036-16d7e33b7ec9",
+    "status": "published",
+    "stem": "Devriye görevindeki polis memurları, hususi otomobilinin sürücü koltuğunda sigara içen bir sürücüyü durdurmuştur. 2026 idarî para cezası uygulamasına göre bu olayda aşağıdakilerden hangisi doğrudur?",
+    "explanation": "4207 sayılı Kanun m.5/1 uygulamasında hususi araçların SÜRÜCÜ KOLTUĞUNDA tütün ürünü tüketmek kabahattir ve cezayı KOLLUK verir; bir yıllık dönemde ilk tekerrürde bir kat, ikinci tekerrürde iki kat artırım uygulanır. Kabahatler Kanunu m.39 kamu binaları ve toplu taşıma araçlarına ilişkindir; hususi araçtaki yasak 4207 sayılı özel kanundan gelir. Bu, polislerin sahada en sık uyguladığı tütün cezası kalemidir.",
+    "contentHash": "77b91534c005812b1f9cabc320ba3ed5a3c2bb17c166b1fdb36f07aef8825994",
+    "options": [
+     {
+      "id": "e66c9e73-cee5-4374-b2be-32fd0b8513c8",
+      "label": "A",
+      "text": "4207 sayılı Kanun uyarınca kolluk tarafından idarî para cezası verilir; bir yıllık dönemde tekerrürde ceza kademeli olarak artırılır"
+     },
+     {
+      "id": "d87c6245-fcd1-4c29-9fcd-7022e95d9566",
+      "label": "B",
+      "text": "Hususi araçta sigara içmek hiçbir yaptırıma tâbi değildir"
+     },
+     {
+      "id": "b8ae3fd8-f868-4b5e-b34c-9dd6852eef06",
+      "label": "C",
+      "text": "Kabahatler Kanunu m.39 uyarınca belediye zabıtası ceza verir"
+     },
+     {
+      "id": "f3175a94-d0c3-4781-b05b-ab835c4aaeec",
+      "label": "D",
+      "text": "Ceza ancak mülkî amir tarafından verilebilir"
+     },
+     {
+      "id": "aa6e5a83-6b19-40ba-a502-766bda4cf93e",
+      "label": "E",
+      "text": "Sürücüye ceza verilemez; yalnızca araç sahibine ceza verilir"
+     }
+    ]
+   },
+   "articles": []
+  }
+ },
+ {
+  "plan": {
+   "soru": "6f5938d5",
+   "baglar": [
+    {
+     "mevzuat": "7258",
+     "no": "5",
+     "relation": "primary"
+    }
+   ],
+   "gerekce": "7258 sayılı Kanun bankaya alındı (23 Kas 2026); cevabı md 5/1-d belirliyor (mahallin en büyük mülki idare amiri)."
+  },
+  "onceki": {
+   "id": "6f5938d5-6f47-4b68-9bd2-f0ea06e8aa96",
+   "articleNo": null,
+   "topicId": "569628d2-5e1c-4788-ad66-1ef20d9374f6",
+   "currentVersion": {
+    "id": "78a8809b-e6f6-4d7a-96eb-fcf19ba8fa13",
+    "status": "published",
+    "stem": "2026 idarî para cezası uygulamasında, aşağıdaki fiillerden hangisinde cezayı vermeye kolluk görevlileri yetkili değildir?",
+    "explanation": "7258 sayılı Kanun m.5/1-d'deki spor müsabakalarına dayalı bahis veya şans oyunu OYNAMA kabahatinde idarî para cezasını MÜLKÎ AMİR verir; kolluk yalnızca tespit ve tutanak düzenler. Diğer dört kalemde ceza doğrudan kolluk tarafından verilir. Yasa dışı bahis oynatmak ise kabahat değil, aynı Kanun'da suçtur — oynayan/oynatan ayrımıyla birlikte hatırlanmalıdır.",
+    "contentHash": "88cd0efe0f70c5333a337f433c1d70a0f96947906e75e8e37b8b6e9e963adfa0",
+    "options": [
+     {
+      "id": "596d4769-3397-4577-b846-5f9ba909b582",
+      "label": "A",
+      "text": "Türkiye'ye yasa dışı giren yabancıya ceza verilmesi (6458 SK m.102)"
+     },
+     {
+      "id": "6d30ff06-2af2-44e8-9f81-39cf8cd3b283",
+      "label": "B",
+      "text": "Hususi aracın sürücü koltuğunda sigara içene ceza verilmesi (4207 SK m.5)"
+     },
+     {
+      "id": "c8e258ac-68a5-4af0-aa82-4b046a17f471",
+      "label": "C",
+      "text": "Spor müsabakalarına dayalı yasa dışı bahis oynayana ceza verilmesi (7258 SK m.5)"
+     },
+     {
+      "id": "a626bd26-c4c3-4a2e-85e7-ea47b1645b95",
+      "label": "D",
+      "text": "Havalı tüfeği meydanda görünür şekilde taşıyana ceza verilmesi (5326 SK m.43)"
+     },
+     {
+      "id": "30946861-c89b-409e-ac88-0f90c72beb66",
+      "label": "E",
+      "text": "Kumar oynayana ceza verilmesi (5326 SK m.34)"
+     }
+    ]
+   },
+   "articles": []
+  }
+ },
+ {
+  "plan": {
+   "soru": "9234e990",
+   "baglar": [
+    {
+     "mevzuat": "4250",
+     "no": "7",
+     "relation": "primary"
+    },
+    {
+     "mevzuat": "4250",
+     "no": "6",
+     "relation": "related"
+    }
+   ],
+   "gerekce": "4250 sayılı Kanun bankaya alındı (23 Kas 2026); ceza, yetkili makam ve satış belgesi iptali md 7'de, yasak md 6'da."
+  },
+  "onceki": {
+   "id": "9234e990-82d2-43a9-bea5-036fed1ed73f",
+   "articleNo": null,
+   "topicId": "569628d2-5e1c-4788-ad66-1ef20d9374f6",
+   "currentVersion": {
+    "id": "44f1a738-b71b-4f71-9ff6-ef60a34cc9f7",
+    "status": "published",
+    "stem": "Bir market işletmecisinin 18 yaşını doldurmamış bir müşteriye alkollü içki sattığı tespit edilmiştir. 2026 idarî para cezası uygulamasına göre bu olayda aşağıdakilerden hangisi doğrudur?",
+    "explanation": "4250 sayılı İspirto ve İspirtolu İçkiler İnhisarı Kanunu m.7 uygulamasında 18 yaşını doldurmamış kişilere alkollü içki satmak veya sunmak kabahattir; cezayı MÜLKÎ AMİR verir ve 2026 tablosundaki en yüksek kalemlerdendir. Fiilin 5 yıl içinde ÜÇÜNCÜ defa işlenmesi hâlinde işletmenin satış belgesi iptal edilir; itiraz 15 gün içinde sulh ceza mahkemesinedir. Küçüğü çalıştırmak da ayrı bir ceza kalemidir; ancak satın alan küçüğe ceza öngörülmemiştir.",
+    "contentHash": "b7c7ecd198cc7bebff9de0c2bbe2221bd5aba08b1ee5eb80931e30e5a5abc17c",
+    "options": [
+     {
+      "id": "52c11e18-2049-446d-ad3b-4def3112525b",
+      "label": "A",
+      "text": "4250 sayılı Kanun uyarınca mülkî amir tarafından yüksek miktarda idarî para cezası verilir; fiilin 5 yıl içinde üçüncü defa işlenmesi hâlinde satış belgesi iptal edilir"
+     },
+     {
+      "id": "b842f8de-1a80-458d-b468-4057a68a774b",
+      "label": "B",
+      "text": "Kabahatler Kanunu m.34 uyarınca kolluk tarafından ceza verilir"
+     },
+     {
+      "id": "71c69fab-38f2-4e93-9a6e-2dbd1d331a4a",
+      "label": "C",
+      "text": "Yalnızca uyarı yapılır; ceza ilk tekrarda verilir"
+     },
+     {
+      "id": "1e055763-bf4b-45c0-9f99-01bdfb16cd2f",
+      "label": "D",
+      "text": "Ceza sulh ceza hâkimi tarafından verilir ve işyeri süresiz kapatılır"
+     },
+     {
+      "id": "42803c83-eeaf-4a79-be83-02059ea92cb3",
+      "label": "E",
+      "text": "İçkiyi satın alan küçüğe de ayrıca idarî para cezası verilir"
+     }
+    ]
+   },
+   "articles": []
+  }
+ },
+ {
+  "plan": {
+   "soru": "61cf72cf",
+   "baglar": [
+    {
+     "mevzuat": "5199",
+     "no": "Geçici 3",
+     "relation": "primary"
+    },
+    {
+     "mevzuat": "5199",
+     "no": "25",
+     "relation": "related"
+    },
+    {
+     "mevzuat": "5199",
+     "no": "17",
+     "relation": "related"
+    },
+    {
+     "mevzuat": "5199",
+     "no": "30",
+     "relation": "related"
+    }
+   ],
+   "gerekce": "5199 sayılı Kanun bankaya alındı (23 Kas 2026); yasak ve ceza Geçici md 3/3'te, ceza verme yetkisi md 25 → md 17, tekrar md 30."
+  },
+  "onceki": {
+   "id": "61cf72cf-e072-4881-920f-239220768fa5",
+   "articleNo": null,
+   "topicId": "569628d2-5e1c-4788-ad66-1ef20d9374f6",
+   "currentVersion": {
+    "id": "74b5f333-f383-4c8e-adfa-440894137638",
+    "status": "published",
+    "stem": "Bakanlıkça belirlenen tehlike arz eden ırklardan (pitbull, dogo argentino gibi) bir köpeği, kayıt altına aldırmış olmasına rağmen ağızlıksız ve tasmasız dolaştıran kişi hakkında 2026 idarî para cezası uygulamasına göre aşağıdakilerden hangisi doğrudur?",
+    "explanation": "5199 sayılı Kanun uygulamasında (Geçici m.3) kayıt altına alınmış tehlike arz eden hayvanı belgesiz, ağızlıksız ve tasmasız dolaştırmak, tehlikeli ırk üretme-sahiplendirme yasağıyla aynı ağır ceza kalemine tâbidir; cezayı MÜLKÎ AMİR verir, tekrarı hâlinde artırım uygulanır ve itiraz 15 gün içinde sulh ceza mahkemesinedir. Hayvana kötü davranma, dövme, aç-susuz bırakma gibi fiiller de aynı Kanun'da ayrı ceza kalemleridir.",
+    "contentHash": "5ba5009e2f2f0f3a119afd40e593710d8bc47405d4498d992546bfa68841a153",
+    "options": [
+     {
+      "id": "21a0993a-8009-4282-8d23-9839c64d0b2d",
+      "label": "A",
+      "text": "5199 sayılı Hayvanları Koruma Kanunu uyarınca mülkî amir tarafından yüksek miktarda idarî para cezası verilir; tekrarı hâlinde ceza artırılarak uygulanır"
+     },
+     {
+      "id": "e5443e22-59b4-4301-94c7-ee3c581b1fd8",
+      "label": "B",
+      "text": "Kabahatler Kanunu m.36 uyarınca kolluk tarafından maktu gürültü cezası verilir"
+     },
+     {
+      "id": "3bca5154-2820-4754-95ed-96a72bb972e8",
+      "label": "C",
+      "text": "Kayıt altına alınmış hayvan için hiçbir yükümlülük yoktur"
+     },
+     {
+      "id": "0c43f320-1631-4847-9bde-90c31315e416",
+      "label": "D",
+      "text": "Yalnızca hayvana el konulur; sahibine ceza verilemez"
+     },
+     {
+      "id": "28559a1a-53ae-4a35-980c-0b8cbfdb83ac",
+      "label": "E",
+      "text": "Ceza belediye zabıtası tarafından verilir ve hayvan itlaf edilir"
+     }
+    ]
+   },
+   "articles": []
+  }
+ },
+ {
+  "plan": {
+   "soru": "5e57ed04",
+   "baglar": [
+    {
+     "mevzuat": "5326",
+     "no": "34",
+     "relation": "primary"
+    },
+    {
+     "mevzuat": "5326",
+     "no": "42/A",
+     "relation": "related"
+    },
+    {
+     "mevzuat": "4207",
+     "no": "5",
+     "relation": "related"
+    }
+   ],
+   "gerekce": "D şıkkındaki tekerrür kademesi 4207 md 5/16'ya dayanıyor; kanun bankaya alındı (23 Kas 2026), ilgili madde olarak eklendi. Birincil bağ değişmedi."
+  },
+  "onceki": {
+   "id": "5e57ed04-eee9-48df-8380-116950f6127c",
+   "articleNo": "34",
+   "topicId": "569628d2-5e1c-4788-ad66-1ef20d9374f6",
+   "currentVersion": {
+    "id": "d254b76e-d9b2-4db1-a371-3effdbf4370b",
+    "status": "published",
+    "stem": "Kolluk uygulamasında farklı kanunlardaki idarî para cezalarının tekerrür rejimleri karşılaştırıldığında aşağıdaki eşleştirmelerden hangisi yanlıştır?",
+    "explanation": "Kabahatler Kanunu'ndaki kumar kabahatinde (m.34) TEKERRÜR HÜKMÜ YOKTUR; aynı kabahatin birden fazla işlenmesinde m.15/2 uyarınca her fiile ayrı ceza verilir ama artırım uygulanmaz. Diğer eşleştirmeler doğrudur ve 2026 uygulama tablosunda kabahat kabahat işlenmiştir: 42/A'da iki kat, 6458'de yarı oranında, 1774 Ek 1'de son cezanın iki katı, 4207'de kademeli bir kat/iki kat artırım.",
+    "contentHash": "d7777628528c06d9dfcfcdec4bd3346b7bb6c3740c3ef62f973801bafddf4b64",
+    "options": [
+     {
+      "id": "b7b7116b-6e2f-47ef-8e9e-0f8805857cce",
+      "label": "A",
+      "text": "Kabahatler Kanunu m.42/A (112 kabahatleri) – bir yıl içinde tekrarda ceza iki katı uygulanır"
+     },
+     {
+      "id": "6f5f14f8-f9d3-48f5-91cc-8713c6c44174",
+      "label": "B",
+      "text": "6458 sayılı Kanun m.102 – bir takvim yılı içinde tekrarda ceza yarı oranında artırılır"
+     },
+     {
+      "id": "87918763-1166-4eee-9454-3f0cfcf40f50",
+      "label": "C",
+      "text": "1774 sayılı Kanun Ek m.1 – takvim yılı içinde tekrarda en son kesilen cezanın iki katı uygulanır"
+     },
+     {
+      "id": "293b1541-6692-46a1-9441-0f9077bb5da3",
+      "label": "D",
+      "text": "4207 sayılı Kanun m.5 – bir yıllık dönemde ilk tekerrürde bir kat, ikinci tekerrürde iki kat artırılır"
+     },
+     {
+      "id": "3ba6c32f-c276-455d-8377-8d9e0806b01b",
+      "label": "E",
+      "text": "Kabahatler Kanunu'ndaki kumar kabahati – bir yıl içinde tekrarda ceza üç katına çıkarılır"
+     }
+    ]
+   },
+   "articles": [
+    {
+     "lawArticleId": "d575afac-2498-4aba-8a7e-c52291255d0e",
+     "relation": "related",
+     "source": "script",
+     "lawArticle": {
+      "articleNo": "42/A",
+      "legislation": {
+       "number": "5326"
+      }
+     }
+    },
+    {
+     "lawArticleId": "fc84a186-23ea-47dd-8828-ed00b87f35d1",
+     "relation": "primary",
+     "source": "script",
+     "lawArticle": {
+      "articleNo": "34",
+      "legislation": {
+       "number": "5326"
+      }
+     }
+    }
+   ]
+  }
+ }
+]
