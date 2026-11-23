@@ -197,3 +197,36 @@ maddenin dipnot artığı.
 **Sonuç (19 Kas 2026, kullanıcı çalıştırdı):** yedi ünite `--replace` ile yüklendi, toplu yayın 7/7, ilerleme
 dolduruldu. Prod: 195 ünite yayında; maddeli 4.071 sorunun 4.069'u bir üniteye düşüyor (dışarıdaki 2 soru:
 2911 Geçici 1 ve TCK "45-49"). `--replace` premium işaretini korudu (premium betiği 0 değişiklik yazdı).
+
+## 23 Kas 2026 — yeni alınan dört kanun (4207, 4250, 5199, 7258)
+
+Kullanıcı isteğiyle beş ünite ve beş kart destesi üretildi; hepsi prod'da `in_review`, yayın kararı kullanıcıda.
+
+| Ünite / deste | Mevzuat | Ünite kartı | Bilgi kartı |
+|---|---|---|---|
+| `tukk-tutun-yasaklari-ve-yaptirimlar` | 4207 md 1–5, 7 | 24 | 23 |
+| `iiik-alkollu-icki-yasaklari-ve-cezalar` | 4250 md 1, 3, 6, 7, 9 | 23 | 24 |
+| `hkk-ilkeler-ve-hayvanlarin-korunmasi` | 5199 md 1–13 | 24 | 23 |
+| `hkk-yasaklar-denetim-ve-cezalar` (sıra 2) | 5199 md 14–31, 28/A, Ek 1, Ek 2, Geçici 3 | 24 | 24 |
+| `bsok-bahis-ve-sans-oyunlari-ceza-hukumleri` | 7258 md 2, 5, Ek 1 | 16 | 16 |
+
+**Hat farkı (API'siz kip):** yerel `ANTHROPIC_API_KEY` geçersizdi (401). `ozet-uret.ts` ve `kart-uret.ts`'e
+`ISTEM_YAZ=<dosya>` (istemi yaz, çık) ve `HAM=<dosya>` (ham model çıktısını aynı son işlemden geçir) eklendi; istemi
+alt ajanlar işledi. Kart betiğinde stil kapısı bu kipte yalnız bildirir (onarım modeli yok). Sonrası aynı: betik
+doğrulaması → bağımsız denetçi → düzeltici/hakem → betik. Ünite denetim kayıtları `denetim-2026-11-23/`, kart
+denetim raporları `docs/56-bilgi-kartlari/denetim/`, talimatlar `yeni4-TALIMAT-*.md`.
+
+**Kararlar:** TL tutarı yok (18 Kas kararı); kalkmış kurumlar (Tütün ve Alkol Piyasası Düzenleme Kurumu/Kurulu, Tekel)
+ünitede "madde metnindeki hâliyle" notuyla durur, bilgi kartına hiç girmez; 5199 Geçici 3'te dolmuş altı aylık süre
+ve Bakanlık düzenlemesine bağlı ırk listesi kartlanmadı (ünitede kayıtla duruyor).
+
+**İnsan incelemesine kalanlar:**
+- 4207: bankadaki sürücü koltuğu sorusunun (`3dc788e5`) anahtarı "kolluk verir" diyor; md 5/1 yalnız Kabahatler
+  Kanunu md 39'a gönderir ve md 39 hususi araç için makam saymaz (kolluk: özel işletilen toplu taşıma ve şikâyet
+  üzerine özel binalar). Kartlar makam yazmıyor.
+- 5199: ceza verme yetkisi Bakanlıkta, mülkî amire devredilebilir (md 25 → 17); bankadaki soru (`61cf72cf`) "mülkî
+  amir verir" diyor. Geçici 3: Bakanlığın tehlikeli ırk düzenlemesini çıkarıp çıkarmadığı doğrulanamadı.
+- 5199 kaynak yazımı: "(l) bendi" resmî metinde "(1) bendi" (md 15, 28, Geçici 3). İçe aktarmada md 12/13, 16, 31/Ek 1
+  başlık kaymaları elle düzeltildi (`mevzuat-kaynaktan-json.ts` "(Değişik başlık: …)" şerhli başlığı ayıramıyor).
+- 7258: md 2'ye bağlı bilgi kartı yok (tanım cümlesi mülga). 4250: md 3'e bağlı kart yok.
+- Tuzak kartlarındaki olumsuz iddialar betikle doğrulanamaz.

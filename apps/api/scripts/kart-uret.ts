@@ -487,6 +487,38 @@ async function stilKapisi(
     console.error('topicId yok: ünite ve mevzuat konuya bağlı değil.');
     process.exit(2);
   }
+  // API'siz kip (23 Kas 2026; yerel anahtar geçersizken): ISTEM_YAZ=<dosya> istemi yazar ve çıkar; istemi bir alt
+  // ajan işler, ham `{"cards":[…]}` çıktısı HAM=<dosya> ile aynı deste başlığını alır. Stil kapısı burada yalnız
+  // BİLDİRİR (onarım modeli yok): kusur varsa çıkış 1, alt ajan düzeltip yeniden çalıştırır.
+  if (process.env.ISTEM_YAZ) {
+    writeFileSync(process.env.ISTEM_YAZ, `# SİSTEM İSTEMİ\n\n${girdi.source ? SYSTEM + KAYNAK_EKI : SYSTEM}\n\n# KULLANICI İLETİSİ\n\n${userMessage(girdi, unite)}\n`);
+    console.log(`İstem yazıldı: ${process.env.ISTEM_YAZ}`);
+    return;
+  }
+  if (process.env.HAM) {
+    const ham = readFileSync(process.env.HAM, 'utf8').trim().replace(/^```(?:json)?\s*/i, '').replace(/\s*```$/, '');
+    const p = JSON.parse(ham) as { cards: FlashcardJson[] };
+    if (!Array.isArray(p.cards) || !p.cards.length) { console.error('Çıktıda kart yok.'); process.exit(1); }
+    kaynakPasajlari = girdi.source ? new Map(girdi.articles.map((x) => [x.no, x.text])) : null;
+    const kusurlu = p.cards.map((c, i) => ({ i, k: stilKusuru(c) })).filter((x) => x.k);
+    for (const x of kusurlu) console.error(`  stil kapısı [${x.i + 1}] ${x.k}`);
+    if (kusurlu.length) { console.error(`Stil kapısı: ${kusurlu.length} kart kusurlu; düzeltip yeniden çalıştır.`); process.exit(1); }
+    const d: FlashcardDeckJson = {
+      deck: {
+        topicId,
+        ...(girdi.source ? { sourceSlug: girdi.source.slug } : { legislationSlug: girdi.legislation.slug }),
+        ...(unitePath === '-' ? {} : { unitSlug: unite.unit.slug }),
+        sourceLabel: girdi.source
+          ? `AI bilgi kartı — ${girdi.legislation.name}: ${baslik} (kaynak pasajı ${etiketPasaj(girdi)})`
+          : `AI bilgi kartı — ${girdi.legislation.name} md ${etiket(girdi)}`,
+        generatedBy: `claude alt ajanı (kart-uret.ts istemi, API'siz kip; kaynak: ${unitePath === '-' ? 'resmî madde metni + çıkmış sorular' : unite.unit.slug + ' özeti + resmî madde metni'}; stil kapısı geçti)`,
+      },
+      cards: p.cards,
+    };
+    writeFileSync(out, JSON.stringify(d, null, 2) + '\n');
+    console.log(`Üretildi (HAM): ${d.cards.length} kart → ${out}`);
+    return;
+  }
   const client = new Anthropic();
   const stream = client.beta.messages.stream({
     model: MODEL,

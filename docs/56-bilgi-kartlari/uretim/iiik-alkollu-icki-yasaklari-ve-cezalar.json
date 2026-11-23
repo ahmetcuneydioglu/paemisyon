@@ -1,0 +1,248 @@
+{
+  "deck": {
+    "topicId": "81ee6d38-eb64-48ed-a306-05e30f48f444",
+    "legislationSlug": "4250-sayili-ispirto-ve-ispirtolu-ickiler-inhisari-kanunu",
+    "unitSlug": "iiik-alkollu-icki-yasaklari-ve-cezalar",
+    "sourceLabel": "AI bilgi kartı — 4250 Sayılı İspirto ve İspirtolu İçkiler İnhisarı Kanunu md 1, 3, 6, 7, 9",
+    "generatedBy": "claude alt ajanı (kart-uret.ts istemi, API'siz kip; kaynak: iiik-alkollu-icki-yasaklari-ve-cezalar özeti + resmî madde metni; stil kapısı geçti)"
+  },
+  "cards": [
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "İspirto ve İspirtolu İçkiler İnhisarı Kanunu, kısmen mayalanmış olsa da içki niteliği taşımayan hangi maddeleri kapsamı dışında bırakır?",
+      "back": "Şıra ve boza gibi maddeleri.",
+      "articleRefs": [
+        "1"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Alkollü içkilerin reklamı ve tüketicilere yönelik tanıtımı yasakken, hangi faaliyetler yine de düzenlenebilir?",
+      "back": "Münhasıran alkollü içkilerin uluslararası düzeyde tanıtımına yönelik ihtisas fuarları ile bilimsel yayın ve faaliyetler.",
+      "explanation": "Kural geniştir: alkollü içkilerin her ne surette olursa olsun reklamı ve tüketicilere yönelik tanıtımı yapılamaz; kullanılmasını ve satışını özendiren veya teşvik eden kampanya, promosyon ve etkinlik de yapılamaz.",
+      "articleRefs": [
+        "6"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Alkollü içkiler, tüketilmek veya beraberinde götürülmek üzere hangi yaşı doldurmamış kişilere satılamaz veya sunulamaz?",
+      "back": "On sekiz yaşını doldurmamış kişilere.",
+      "explanation": "Yasak hem satışı hem sunumu kapsar. Aynı yaş sınırı istihdamda da geçerlidir: on sekiz yaşını doldurmamış kişiler alkollü içkilerin üretiminde, pazarlanmasında, satışında ve açık sunumunda istihdam edilemez.",
+      "articleRefs": [
+        "6"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "On sekiz yaşını doldurmamış kişilerin alkollü içki üretiminde, pazarlanmasında, satışında ve açık sunumunda istihdam edilmesi yasağının dışında kalan çalışmalar hangileridir?",
+      "back": "Yasal düzenlemeler uyarınca gerçekleştirilen eğitim amaçlı çalışmalar; bunlar istihdam yasağı hükmünün dışındadır.",
+      "articleRefs": [
+        "6"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Alkollü içkiler hangi saatler arasında perakende olarak satılamaz?",
+      "back": "22:00 ila 06:00 saatleri arasında.",
+      "explanation": "Yasağın konusu perakende satıştır. Sunum izni verilen yerlerde alkollü içkilerin açık olarak tüketilebilmesi ayrı bir hükümle düzenlenmiştir.",
+      "articleRefs": [
+        "6"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Alkollü içkilerin hangi makinelerle satılması yasaktır?",
+      "back": "Otomatik satış makineleriyle. Alkollü içkiler ayrıca her nevi oyun makineleri veya farklı yöntemlerle oyun ve bahse konu edilemez.",
+      "articleRefs": [
+        "6"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Alkollü içki sunum izni verilen bir yerde, tesis sınırları dışında tüketilmek üzere alkollü içki satışı yapılabilir mi?",
+      "back": "Hayır. Bu yerlerde alkollü içki açık olarak tüketilebilir; tesis sınırları dışında tüketilmek üzere satış yapılamaz.",
+      "articleRefs": [
+        "6"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Alkollü içkiler, perakende olarak nereden görülecek şekilde satışa arz edilemez?",
+      "back": "İşletme dışından görülecek şekilde.",
+      "explanation": "Yasak perakende satışa arzı konu alır ve bir saat aralığına bağlanmamıştır.",
+      "articleRefs": [
+        "6"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Otoyollardaki ve devlet karayollarındaki yapı ve tesislerde alkollü içki satışına ve tüketimine izin verilmemesi kuralının dışında kalan yerler hangileridir?",
+      "back": "Meskun mahaller ve konaklama yerleri.",
+      "explanation": "Bu yapı ve tesislerde yasak yalnız satışı değil tüketimi de kapsar.",
+      "articleRefs": [
+        "6"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Kahvehane, kıraathane ve pastanelerde alkollü içki satışı yapılabilir mi?",
+      "back": "Hayır. Kahvehane, kıraathane, pastane, bezik ve briç salonlarında alkollü içki satışı yapılamaz.",
+      "explanation": "Satış yapılamayan yerler arasında öğrenci yurtları, sağlık hizmeti verilen yerler, spor müsabakası yapılan stadyum ve kapalı spor salonları, her türlü eğitim ve öğretim kurumları ile akaryakıt istasyonlarının mağaza ve lokantaları da bulunur.",
+      "articleRefs": [
+        "6"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "On sekiz yaşını doldurmamış kişilere alkollü içki satışı ve sunumu yasağına aykırı hareket edene idari para cezası vermeye hangi makam yetkilidir?",
+      "back": "Mahalli mülki amir.",
+      "explanation": "Mahalli mülki amirin yetkisine giren diğer aykırılıklar arasında on sekiz yaşını doldurmamış kişilerin istihdamı, saat yasağına aykırı perakende satış, işletme dışından görülecek şekilde satışa arz ve satış yapılamayan yerlerde satış bulunur. Televizyon ve radyolara uygulanacak idari para cezalarını ise Radyo ve Televizyon Üst Kurulu verir.",
+      "articleRefs": [
+        "7",
+        "6"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "On sekiz yaşını doldurmamış kişiye alkollü içki satılması sonucunda çocuğun sağlığı tehlikeye sokulursa, fail hakkında idari para cezasından ayrı olarak hangi hükme göre cezaya hükmolunur?",
+      "back": "Türk Ceza Kanununun \"Sağlık için tehlikeli madde temini\" başlıklı 194 üncü maddesine göre.",
+      "explanation": "Bu sonuç için yasağa aykırı hareket edilmesi yetmez; çocuğun sağlığının tehlikeye sokulmuş olması aranır.",
+      "articleRefs": [
+        "7",
+        "6"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Alkollü içki satıcısının satış belgelerinin iptali için, on sekiz yaşını doldurmamış kişiye satış ya da saat yasağına aykırılık kabahati belirli süre içinde kaçıncı defa işlenmiş olmalıdır?",
+      "back": "Üçüncü defa işlenmiş olmalıdır.",
+      "explanation": "İptal, idari para cezasının yanında ayrıca verilen bir karardır.",
+      "articleRefs": [
+        "7",
+        "6"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Alkollü içki satış belgelerinin iptaline yol açan üçüncü ihlal, ilk fiilin işlenmesinden sonraki kaç yıl içinde gerçekleşmiş olmalıdır?",
+      "back": "Beş yıl içinde.",
+      "articleRefs": [
+        "7"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Alkollü içki satış belgelerinin iptali, hangi yasaklara aykırılığın tekrarında gündeme gelir?",
+      "back": "On sekiz yaşını doldurmamış kişilere satış veya sunum yasağı ile 22:00 ila 06:00 saatleri arasındaki perakende satış yasağına aykırılığın tekrarında.",
+      "articleRefs": [
+        "7",
+        "6"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Alkollü içki satış belgelerinin iptaline, idari para cezasını veren mahalli mülki amir mi karar verir?",
+      "back": "Hayır. Satış belgelerinin iptaline Tarım ve Orman Bakanlığı karar verir; mahalli mülki amirin yetkisi idari para cezasını vermektir.",
+      "articleRefs": [
+        "7"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Alkollü içki satıcısı hakkında iptal kararı verildiğinde yalnız perakende satış belgesi mi iptal edilir?",
+      "back": "Hayır. Satıcıya ait tüm perakende alkollü içki ve açık alkollü içki satış belgelerinin iptaline karar verilir.",
+      "articleRefs": [
+        "7"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Alkollü içki satış belgesi iptal edilen kişiye ne kadar süreyle yeni satış belgesi verilemez?",
+      "back": "İki yıl süreyle; yeni perakende alkollü içki ve açık alkollü içki satış belgesi verilemez.",
+      "articleRefs": [
+        "7"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Alkollü içki satılacak iş yeri için belediye veya il özel idaresi ruhsat vermeden önce yetkili kolluk kuvvetinin görüşünü alır. Kolluk kuvveti görüşünü kaç gün içinde verir?",
+      "back": "Yedi gün içinde.",
+      "explanation": "Görüş, belediye veya il özel idaresinin ruhsat vermesinden önce alınır.",
+      "articleRefs": [
+        "9"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Alkollü içkilerin perakende veya açık olarak satıldığı yerler ile örgün eğitim kurumları, dershaneler, öğrenci yurtları ve ibadethaneler arasında kapıdan kapıya en az kaç metre mesafe bulunmalıdır?",
+      "back": "En az yüz metre.",
+      "explanation": "Mesafe kapıdan kapıya ölçülür.",
+      "articleRefs": [
+        "9"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Alkollü içki satış yeri ile örgün eğitim kurumu, öğrenci yurdu ve ibadethane arasında aranan mesafe şartı turizm belgeli işletmeler için de uygulanır mı?",
+      "back": "Hayır. Bu mesafe şartı turizm belgeli işletmeler için uygulanmaz.",
+      "articleRefs": [
+        "9"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Alkollü içkilerin tüketicilere satışında ve gönderilmesinde hangi yollar yasaktır?",
+      "back": "Basın ve yayın yoluyla tüketicilere satılamaz; posta ile satış yöntemi kullanılarak gönderilemez.",
+      "articleRefs": [
+        "6"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Alkollü içki satılacak iş yerine iş yeri açma ruhsatını yetkili kolluk kuvveti mi verir?",
+      "back": "Hayır. Ruhsatı belediye veya il özel idaresi verir; yetkili kolluk kuvveti yalnız ruhsattan önce görüş bildirir.",
+      "articleRefs": [
+        "9"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Alkollü içki satış yeri ile eğitim kurumu, öğrenci yurdu ve ibadethane arasındaki mesafe şartı hangi tarih itibarıyla aranır?",
+      "back": "Satış belgesinin verildiği tarih itibarıyla.",
+      "articleRefs": [
+        "9"
+      ]
+    }
+  ]
+}

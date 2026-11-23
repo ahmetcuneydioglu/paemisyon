@@ -1,0 +1,169 @@
+{
+  "deck": {
+    "topicId": "efab2ead-b094-493b-b04e-2687afa82747",
+    "legislationSlug": "7258-sayili-futbol-ve-diger-spor-musabakalarinda-bahis-ve-sans-oyunlari-duzenlenmesi-hakkinda-kanun",
+    "unitSlug": "bsok-bahis-ve-sans-oyunlari-ceza-hukumleri",
+    "sourceLabel": "AI bilgi kartı — 7258 Sayılı Futbol ve Diğer Spor Müsabakalarında Bahis ve Şans Oyunları Düzenlenmesi Hakkında Kanun md 2, 5, Ek 1",
+    "generatedBy": "claude alt ajanı (kart-uret.ts istemi, API'siz kip; kaynak: bsok-bahis-ve-sans-oyunlari-ceza-hukumleri özeti + resmî madde metni; stil kapısı geçti)"
+  },
+  "cards": [
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "7258 sayılı Kanuna göre, Kanunun verdiği yetkiye dayalı olmaksızın spor müsabakalarına dayalı bahis veya şans oyunlarını oynatanların cezası nedir?",
+      "back": "Üç yıldan beş yıla kadar hapis ve on bin güne kadar adli para cezası.",
+      "explanation": "Oyunların oynanmasına yer veya imkân sağlayanlar da aynı bentte, oynatanlarla aynı cezayla cezalandırılır. Hapis ve adli para cezası birlikte verilir.",
+      "articleRefs": [
+        "5"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "7258 sayılı Kanuna göre, yurt dışında oynatılan spor bahislerinin Türkiye'den oynanmasına yetkisiz olarak erişim imkânı sağlayan kişinin cezası nedir?",
+      "back": "Dört yıldan altı yıla kadar hapis cezası.",
+      "explanation": "Bu bentte yaptırım olarak yalnız hapis cezası yazılıdır. Fiil internetle sınırlı tutulmamıştır: \"internet yoluyla ve sair suretle\" erişim sağlamak yeterlidir.",
+      "articleRefs": [
+        "5"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "7258 sayılı Kanuna göre, spor müsabakalarına dayalı bahis veya şans oyunlarıyla bağlantılı olarak yetkisiz biçimde para nakline aracılık eden kişiye verilecek adli para cezasının üst sınırı kaç gündür?",
+      "back": "Beş bin gün. Bu ceza, üç yıldan beş yıla kadar hapis cezasıyla birlikte verilir.",
+      "articleRefs": [
+        "5"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "7258 sayılı Kanuna göre, kişileri reklam vermek ve sair surette yetkisiz spor bahisleri veya şans oyunları oynamaya teşvik edenlerin cezası nedir?",
+      "back": "Bir yıldan üç yıla kadar hapis ve üç bin güne kadar adli para cezası.",
+      "explanation": "Teşvik yalnız reklamla sınırlı tutulmamıştır; \"reklam vermek ve sair surette\" teşvik etmek kapsamdadır.",
+      "articleRefs": [
+        "5"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "7258 sayılı Kanuna göre, Kanunun verdiği yetkiye dayalı olmayan spor bahislerini veya şans oyunlarını oynayanlar hangi tür yaptırımla karşılaşır ve bu cezayı kim verir?",
+      "back": "İdari para cezası; mahallin en büyük mülki idare amiri tarafından verilir.",
+      "explanation": "Oynatan, yer veya imkân sağlayan, para nakline aracılık eden ve teşvik eden kişiler için hapis cezası yazılıdır; oynayan için öngörülen yaptırım idari para cezasıdır.",
+      "articleRefs": [
+        "5"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "7258 sayılı Kanun kapsamındaki yetkisiz spor bahsi suçlarında oyunda kullanılan eşya ve oyundan elde edilen mal varlığı değerleri hangi hükümlere göre müsadere edilir?",
+      "back": "Türk Ceza Kanununun eşya ve kazanç müsaderesine ilişkin hükümlerine göre.",
+      "explanation": "Müsadere, oyunların oynanmasına tahsis edilen veya oynanmasında kullanılan ya da suçun konusunu oluşturan eşyayı ve oynanması için ortaya konulan veya oynanması suretiyle elde edilen her türlü mal varlığı değerini kapsar.",
+      "articleRefs": [
+        "5"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "7258 sayılı Kanun kapsamındaki yetkisiz spor bahsi suçlarından dolayı tüzel kişiler hakkında neye hükmolunur?",
+      "back": "Tüzel kişilere özgü güvenlik tedbirlerine hükmolunur.",
+      "articleRefs": [
+        "5"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "7258 sayılı Kanun kapsamındaki yetkisiz spor bahsi suçlarıyla ilgili olarak internet yayınları bakımından hangi hükümler uygulanır?",
+      "back": "5651 sayılı Kanunun erişimin engellenmesine ilişkin hükümleri uygulanır.",
+      "explanation": "Erişimin engellenmesi hükümleri için kip kesindir: \"uygulanır\". Ceza Muhakemesi Kanunundaki elkoyma, dinleme, gizli soruşturmacı ve teknik izleme tedbirleri için ise \"uygulanabilir\" denmiştir.",
+      "articleRefs": [
+        "5"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "7258 sayılı Kanuna göre yetkisiz spor bahsi suçlarının işlendiği işyeri ne kadar süreyle kapatılır?",
+      "back": "Üç ay süreyle; mahallin en büyük mülki idare amiri tarafından, ihtarda bulunmaksızın mühürlenerek kapatılır.",
+      "explanation": "Kapatma takdire bağlı değildir; suçun işlendiği işyeri kapatılır.",
+      "articleRefs": [
+        "5"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "7258 sayılı Kanuna göre, yetkisiz spor bahsi suçunun işlendiği işyerinin iş yeri açma ve çalışma ruhsatını mahallin en büyük mülki idare amiri mi iptal eder?",
+      "back": "Hayır. Ruhsatı, mülki idare amirinin bildirimi üzerine ruhsat vermeye yetkili idare beş iş günü içinde iptal eder.",
+      "explanation": "İki işlemde makam ayrıdır: işyerini mühürleyerek kapatan mahallin en büyük mülki idare amiridir; ruhsatı iptal eden ise ruhsat vermeye yetkili idaredir.",
+      "articleRefs": [
+        "5"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "7258 sayılı Kanuna göre spor bahsi oynatma, yurt dışı bahislere erişim sağlama, para nakline aracılık ve teşvik suçlarında Ceza Muhakemesi Kanununun hangi tedbirlerine ilişkin hükümler uygulanabilir?",
+      "back": "Taşınmazlara, hak ve alacaklara elkoyma; iletişimin tespiti, dinlenmesi ve kayda alınması; gizli soruşturmacı görevlendirilmesi; teknik araçlarla izleme.",
+      "explanation": "Bu tedbirler oynatma, erişim sağlama, para nakline aracılık ve teşvik suçları için öngörülmüştür; idari para cezası gerektiren oynama fiili sayılanlar arasında değildir. Tedbirler zorunlu değildir; \"uygulanabilir\".",
+      "articleRefs": [
+        "5"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "7258 sayılı Kanundaki spor bahsi suçlarında gizli soruşturmacı görevlendirilebilmesi için suçun örgüt faaliyeti çerçevesinde işlenmiş olması aranır mı?",
+      "back": "Hayır. Gizli soruşturmacı, suçun örgüt faaliyeti çerçevesinde işlenip işlenmediğine bakılmaksızın görevlendirilebilir.",
+      "explanation": "Örgüt şartı aranmaması, sayılan dört tedbirden yalnız gizli soruşturmacı görevlendirilmesi için öngörülmüştür.",
+      "articleRefs": [
+        "5"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "7258 sayılı Kanunda tanımlanan suçlara ilişkin delil veya emarelerin tespiti hâlinde Spor Toto Teşkilat Başkanlığı nereye başvurabilir?",
+      "back": "Doğrudan Cumhuriyet başsavcılığına başvuruda bulunabilir.",
+      "articleRefs": [
+        "5"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "7258 sayılı Kanunda tanımlanan suçlara ilişkin soruşturma sonunda verilen kovuşturmaya yer olmadığı kararı hangi kuruma tebliğ edilir ve bu kurum karara karşı ne yapabilir?",
+      "back": "Spor Toto Teşkilat Başkanlığına tebliğ edilir; Başkanlık bu karara itiraz edebilir.",
+      "articleRefs": [
+        "5"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "7258 sayılı Kanundaki suçlar nedeniyle açılan davada, iddianamenin bir örneği tebliğ edilen Spor Toto Teşkilat Başkanlığı kendiliğinden katılan sayılır mı?",
+      "back": "Hayır. Spor Toto Teşkilat Başkanlığı, başvuru yapılması hâlinde açılan davaya katılan olarak kabul edilir.",
+      "explanation": "İddianamenin bir örneğini Spor Toto Teşkilat Başkanlığına mahkeme tebliğ eder; katılan sıfatı ise başvuruya bağlıdır.",
+      "articleRefs": [
+        "5"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "7258 sayılı Kanuna göre spor müsabakaları üzerindeki bahis ve şans oyunlarından doğacak ikramiyeye ilişkin dava hakkı ne kadar sürede düşer?",
+      "back": "Bir yıl; süre, bahis ve şans oyunlarının tertip edildiği tarihten itibaren işler.",
+      "articleRefs": [
+        "Ek 1"
+      ]
+    }
+  ]
+}

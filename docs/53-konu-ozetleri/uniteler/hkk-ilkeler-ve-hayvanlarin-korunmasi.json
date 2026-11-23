@@ -1,0 +1,476 @@
+{
+  "unit": {
+    "slug": "hkk-ilkeler-ve-hayvanlarin-korunmasi",
+    "legislationSlug": "5199-sayili-hayvanlari-koruma-kanunu",
+    "topicId": "501582f0-50e1-430c-a98b-4a49595573aa",
+    "title": "Hayvanları Koruma: İlkeler ve Koruma Kuralları",
+    "subtitle": "Tanımlar, temel ilkeler, sahiplenme, yasak müdahaleler, deney, ticaret, kesim ve bakımevine alınan köpekler",
+    "articleFrom": "1",
+    "articleTo": "13",
+    "readingMinutes": 14,
+    "sourceLabel": "AI özeti — 5199 Sayılı Hayvanları Koruma Kanunu, md 1–13",
+    "articleNos": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12",
+      "13"
+    ],
+    "generatedBy": "claude alt ajanı (ozet-uret.ts istemi, API'siz kip)",
+    "sortOrder": 1
+  },
+  "blocks": [
+    {
+      "type": "concept",
+      "title": "Bu kanun neyi korur?",
+      "body": "Kanunun amacı hayvanların rahat yaşamlarını ve onlara iyi ve uygun muamele edilmesini temin etmek; acı, ıstırap ve eziyet çekmelerine karşı en iyi şekilde korunmalarını ve her türlü mağduriyetlerinin önlenmesini sağlamaktır. Dikkat etmen gereken kayıt şu: bu amaç **insan, hayvan ve çevre sağlığı gözetilmek kaydıyla** güdülür. Kapsam da amaca göre çizilir: yapılacak düzenlemeler, alınacak önlemler, sağlanacak eşgüdüm, denetim, sınırlama ve yükümlülükler ile tâbi olunacak cezaî hükümler.",
+      "articleRefs": [
+        "1",
+        "2"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Tanımlar: hayvan grupları",
+      "body": "- **Evcil hayvan:** İnsan tarafından kültüre alınmış ve eğitilmiş hayvanlar.\n- **Yabani hayvan:** Doğada serbest yaşayan, evcilleştirilmemiş ve kültüre alınmamış omurgalı ve omurgasız hayvanlar.\n- **Ev hayvanı:** Gerçek veya tüzel kişiler tarafından özellikle evde, iş yerlerinde ya da arazisinde **özel ilgi ve refakat amacıyla** muhafaza edilen, bakımı ve sorumluluğu sahiplerince üstlenilen her türlü hayvan.\n- **Sahipli hayvan:** Bir kişi, kuruluş, kurum ya da tüzel kişilik tarafından sahiplenilen, bakımı, aşıları, periyodik sağlık kontrolleri yapılan ve **Bakanlık veri tabanına kaydedilen** ev hayvanları.\n- **Sahipsiz hayvan:** Sahipli hayvanlar dışında kalan evcil hayvanlar.\n- **Güçten düşmüş hayvan:** Bulaşıcı ve salgın hayvan hastalıkları haricinde yaşlanma, sakatlanma, yaralanma ve hastalanma gibi nedenlerle fizikî olarak iş yapabilme yeteneğini kaybetmiş **binek ve yük hayvanları**.\n- **Deney hayvanı:** Deneyde kullanılan ya da kullanılacak olan hayvan.\n- **Kesim hayvanı:** Gıda amaçlı kesimi yapılan hayvanlar.",
+      "articleRefs": [
+        "3"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Evcil hayvan mı, ev hayvanı mı?",
+      "body": "Tanım sorularında birbirine en yakın duran terimler bunlar; ayırt edici sözcüğü yakala.\n\n- **Evcil hayvan** denince anahtar *kültüre alınmış ve eğitilmiş* olmaktır. **Ev hayvanı** denince anahtar *özel ilgi ve refakat amacıyla muhafaza* edilmektir.\n- **Sahipli hayvan** tanımı *ev hayvanı* üzerinden, **sahipsiz hayvan** tanımı ise *evcil hayvan* üzerinden kurulur: sahipsiz hayvan, sahipli hayvanlar dışında kalan evcil hayvandır.\n- Sahipli hayvanda sahiplenilmiş olmak tanımın tek unsuru değildir; bakımı, aşıları, periyodik sağlık kontrolleri yapılan ve Bakanlık veri tabanına kaydedilen ev hayvanı aranır.\n- **Güçten düşmüş hayvan** tanımı binek ve yük hayvanları için yapılmıştır ve bulaşıcı ve salgın hayvan hastalıkları tanımın dışında tutulmuştur.\n- Ev hayvanı yalnız evde bakılan hayvan değildir: tanım iş yerlerini ve araziyi de sayar.",
+      "articleRefs": [
+        "3"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Tanımlar: kavramlar ve kurumlar",
+      "body": "- **Yaşama ortamı:** Bir hayvanın veya hayvan topluluğunun doğal olarak yaşadığı yer.\n- **Etoloji:** Bir hayvan türünün doğuştan gelen, kendine özgü davranışlarını inceleyen bilim dalı.\n- **Ekosistem:** Canlıların kendi aralarında ve cansız çevreleriyle ilişkilerini bir düzen içinde yürüttükleri biyolojik, fiziksel ve kimyasal sistem.\n- **Tür:** Birbirleriyle çiftleşebilen ve üreme yeteneğine sahip verimli döller verebilen populasyonlar.\n- **Deney:** Herhangi bir hayvanın acı, eziyet, üzüntü veya uzun süreli hasara neden olacak deneysel ya da diğer bilimsel amaçlarla kullanılması.\n- **Hayvan bakımevi:** **Bakanlıktan izin alınmak suretiyle** kurulan, hayvanların sahiplendirilinceye kadar barındırıldığı ve rehabilite edildiği tesis.\n- **Rehabilitasyon:** Sahipsiz hayvanların tedavi ve parazit mücadelesinin yapılması, aşılanması, kısırlaştırılması ve dijital kimliklendirme yöntemleriyle işaretlenmesi.\n- **Bakanlık:** Tarım ve Orman Bakanlığı.",
+      "articleRefs": [
+        "3"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Temel ilkeler",
+      "body": "Hayvanların korunmasına ve rahat yaşamalarına ilişkin temel ilkelerden öne çıkanlar:\n\n- Bütün hayvanlar **eşit doğar** ve bu Kanun hükümleri çerçevesinde **yaşama hakkına** sahiptir.\n- Hayvanlar korunur, gözetilir, bakılır ve kötü muameleden uzak tutulur; bunun için gerekli önlemler alınmalıdır.\n- Sahipsiz ve güçten düşmüş hayvanları kazanç ve menfaat amacı gütmeden, insanî ve vicdanî sorumlulukla sahiplenmek isteyen ve Kanundaki koşulları taşıyan gerçek ve tüzel kişiler **teşvik edilir**; bu kapsamda eşgüdüm sağlanır.\n- Nesli yok olma tehlikesi altındaki türler ve yaşama ortamları korunur.\n- Yabani hayvan yaşama ortamından koparılmaz; doğada serbestçe yaşayan hayvan yakalanıp özgürlüğünden yoksun bırakılmaz.\n- Koruma sağlanırken insanların ve diğer hayvanların **hijyen, sağlık ve güvenlikleri** de dikkate alınır.\n- Hayvan türüne özgü şartlarda bakılır, beslenir, barındırılır ve taşınır.\n- Taşıyan ve taşıtan, hayvanı türüne ve özelliğine uygun ortam ve şartlarda taşır; taşıma sırasında besler ve bakımını yapar.",
+      "articleRefs": [
+        "4"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "İlkelerde yerel yönetimler ve kedi-köpek sahipleri",
+      "body": "**Yerel yönetimler:**\n- **Gönüllü kuruluşlarla iş birliği içerisinde**, sahipsiz hayvanların sahiplendirilinceye kadar bakılmaları için **hayvan bakımevleri kurar**, onların bakımlarını ve tedavilerini sağlar ve eğitim çalışmaları yapar.\n- **İlgili karar organının uygun görmesi halinde** hayvan hastanesi kurar.\n\n**Kedi ve köpek sahipleri:**\n- Kontrolsüz üremeyi önlemek amacıyla, **toplu yaşanan yerlerde** beslenen ve barındırılan kedi ve köpeklerin **sahiplerince** kısırlaştırılması esastır.\n- Kedi ve köpek sahipleri, hayvanlarını **dijital kimliklendirme yöntemleriyle kayıt altına aldırmakla** yükümlüdür.\n- Dijital kimliklendirme yöntemlerine ilişkin usul ve esaslar Bakanlıkça yürürlüğe konulacak yönetmelikle belirlenir.",
+      "articleRefs": [
+        "4"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Sahiplenenin yükümlülükleri",
+      "body": "**Sahiplenen kişi** şunlarla yükümlüdür:\n- hayvanı barındırmak,\n- hayvanın türüne ve üreme yöntemine uygun olan **etolojik ihtiyaçlarını** temin etmek,\n- sağlığına dikkat etmek,\n- insan, hayvan ve çevre sağlığı açısından gerekli tüm önlemleri almak.\n\n**Hayvan sahipleri**, hayvanlarından kaynaklanan çevre kirliliğini ve insanlara verilebilecek zarar ve rahatsızlıkları önleyici tedbirleri almakla yükümlüdür; zamanında ve yeterli seviyede tedbir alınmamasından kaynaklanan zararları **tazmin etmek zorundadır**.\n\n**Ev hayvanı satan kişiler**, bu hayvanların bakımı ve korunması ile ilgili olarak **yerel yönetimler** tarafından düzenlenen eğitim programlarına katılarak **sertifika almakla** yükümlüdür.\n\n**Yönetmelik:** Ev hayvanı sahiplenme şartları, hayvan bakımı ve korunması konularında verilecek eğitimin usul ve esasları ile sahiplenilerek bakılan hayvanların çevreye verecekleri zarar ve rahatsızlıkları önleyici tedbirler Bakanlıkça çıkarılacak yönetmelikle belirlenir.\n\n**Haciz yasağı:** Ticarî amaç güdülmeden bakılan ev hayvanları, sahiplerinin borcundan dolayı haczedilemez.",
+      "articleRefs": [
+        "5"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Sertifikayı kim alır, eğitimi kim düzenler?",
+      "body": "md 5'te roller kolayca yer değiştirir; şöyle sabitle:\n\n- Eğitim programını **yerel yönetimler** düzenler; eğitimin usul ve esaslarını ise **Bakanlık** yönetmelikle belirler. Programı düzenleyen ile kuralını koyan aynı makam değildir.\n- Sertifika alma yükümlülüğü maddede **ev hayvanı satan kişiler** için yazılmıştır.\n- Haciz yasağı her hayvanı kapsayacak biçimde yazılmamıştır: yasak, **ticarî amaç güdülmeden bakılan ev hayvanları** içindir.\n- Tazmin yükümlülüğünün koşulu, tedbirin **zamanında ve yeterli seviyede** alınmamış olmasıdır.",
+      "articleRefs": [
+        "5"
+      ]
+    },
+    {
+      "type": "numbers",
+      "title": "Kim neyle yükümlü? (md 4–5)",
+      "rows": [
+        {
+          "label": "Hayvan bakımevi kurmak, bakım ve tedaviyi sağlamak, eğitim çalışması yapmak",
+          "value": "Yerel yönetimler, gönüllü kuruluşlarla iş birliği içerisinde",
+          "refs": [
+            "4"
+          ]
+        },
+        {
+          "label": "Hayvan hastanesi kurmak",
+          "value": "Yerel yönetimler, ilgili karar organının uygun görmesi halinde",
+          "refs": [
+            "4"
+          ]
+        },
+        {
+          "label": "Toplu yaşanan yerlerde beslenen ve barındırılan kedi ve köpeklerin kısırlaştırılması",
+          "value": "Sahiplerince (esastır)",
+          "refs": [
+            "4"
+          ]
+        },
+        {
+          "label": "Dijital kimliklendirme yöntemleriyle kayıt altına aldırma",
+          "value": "Kedi ve köpek sahipleri",
+          "refs": [
+            "4"
+          ]
+        },
+        {
+          "label": "Dijital kimliklendirme usul ve esasları",
+          "value": "Bakanlıkça yürürlüğe konulacak yönetmelik",
+          "refs": [
+            "4"
+          ]
+        },
+        {
+          "label": "Eğitim programına katılıp sertifika alma",
+          "value": "Ev hayvanı satan kişiler",
+          "refs": [
+            "5"
+          ]
+        },
+        {
+          "label": "Eğitim programlarını düzenleyen",
+          "value": "Yerel yönetimler",
+          "refs": [
+            "5"
+          ]
+        },
+        {
+          "label": "Tedbir alınmamasından kaynaklanan zararı tazmin",
+          "value": "Hayvan sahipleri",
+          "refs": [
+            "5"
+          ]
+        },
+        {
+          "label": "Ev hayvanı sahiplenme şartları",
+          "value": "Bakanlıkça çıkarılacak yönetmelik",
+          "refs": [
+            "5"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "4",
+        "5"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Sahipsiz ve güçten düşmüş hayvanların korunması",
+      "body": "- Sahipsiz ya da güçten düşmüş hayvanların **kanuni istisnalar hariç** öldürülmeleri yasaktır.\n- Güçten düşmüş hayvanlar ticarî ve gösteri amaçlı veya herhangi bir şekilde binicilik ve taşımacılık amacıyla **çalıştırılamaz**.\n- Sahipsiz veya güçten düşmüş hayvanların **en hızlı şekilde**, yerel yönetimlerce **kurulan veya izin verilen** hayvan bakımevlerine götürülmesi zorunludur.\n- Bu hayvanların öncelikle bakımevlerinde oluşturulacak **müşahede yerlerinde** tutulması sağlanır.\n- Bakımevlerine alınan hayvanlar **Bakanlık veri sistemine kaydedilir**; rehabilite edilen köpekler, **sahiplendirilinceye kadar** hayvan bakımevlerinde barındırılır.\n\n**Yönetmelik (sahipsiz hayvanlar):** Sahipsiz hayvanların korunması, bakılması ve gözetimi için yerel yönetimlerin yetki ve sorumluluklarına ilişkin düzenlemeler ile insan ve çevre sağlığı için oluşabilecek olumsuz etkileri gidermeye yönelik tedbirler; **Çevre, Şehircilik ve İklim Değişikliği Bakanlığı ve İçişleri Bakanlığı ile eşgüdüm sağlanarak**, diğer ilgili kuruluşların da görüşü alınmak suretiyle Bakanlıkça çıkarılacak yönetmelikle belirlenir.",
+      "articleRefs": [
+        "6"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Bakımevleri: çalışma usulü ve arazi tahsisi",
+      "body": "**Yönetmelik:** Sahipsiz veya güçten düşmüş hayvanların toplatılması, hayvan bakımevlerinin çalışma usul ve esasları ile burada çalışan personelin niteliği, ilgili kurum ve kuruluşların görüşleri alınarak Bakanlıkça çıkarılacak yönetmelikle belirlenir.\n\n**Hazine arazisi:** Hayvan bakımevleri ve hastanelerin kurulması amacıyla Hazineye ait araziler **öncelikle tahsis edilir**. Amacı dışında kullanıldığı tespit edilen arazilerin tahsisi **iptal edilir**.\n\n**Gönüllülere tahsis:** Hiçbir kazanç ve menfaat sağlamamak kaydıyla, sadece insanî ve vicdanî amaçlarla sahipsiz ve güçten düşmüş hayvanları **hayvan bakımevi kurarak** sahiplenmek isteyen ve Kanundaki şartları taşıyan gerçek ve tüzel kişilere arazi ve buna ait binalar ve demirbaşlar **tahsis edilebilir**.\n- Tahsis edebilecekler: belediyeler, orman idareleri, Maliye Bakanlığı, Özelleştirme İdaresi Başkanlığı.\n- Koşul: **mülkiyet idarelerde kalır**.\n- Tahsis edilen arazilerin üzerinde amaca uygun tesisler ilgili Bakanlığın/İdarenin **izni ile** yapılır.\n\n**Not:** Maliye Bakanlığı adı madde metnindeki hâliyle verilmiştir.",
+      "articleRefs": [
+        "6"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "\"Tahsis edilir\" ile \"tahsis edilebilir\"",
+      "body": "md 6'da kip farkı soru çıkarmaya çok elverişli.\n\n- Bakımevi ve hastane kurulması için **Hazineye ait araziler öncelikle tahsis edilir**: burada kip kesindir.\n- Gönüllü gerçek ve tüzel kişilere arazi, bina ve demirbaş **tahsis edilebilir**: burada takdir vardır ve mülkiyet idarelerde kalır; kişiye geçmez.\n- Amacı dışında kullanıldığı tespit edilen arazinin tahsisi **iptal edilir**: kip yine kesindir.\n- Öldürme yasağı mutlak değildir: **kanuni istisnalar hariç** kaydı vardır.\n- Bakımevine götürme bir tavsiye değildir, **zorunludur** ve en hızlı şekilde yapılır.\n- Hayvanların götürüleceği yer, yerel yönetimlerce **kurulan veya izin verilen** bakımevleridir. Tanımda ise hayvan bakımevi **Bakanlıktan izin alınmak suretiyle** kurulan tesistir; iki ifadeyi birbirine karıştırma.\n- Sahipsiz hayvanlara ilişkin yönetmelikte eşgüdüm sağlanan bakanlıklar Çevre, Şehircilik ve İklim Değişikliği Bakanlığı ile İçişleri Bakanlığıdır; yönetmeliği çıkaran ise Bakanlıktır, yani Tarım ve Orman Bakanlığı.",
+      "articleRefs": [
+        "3",
+        "6"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Cerrahi müdahaleler ve yasak müdahaleler",
+      "body": "**Kim yapar:** Hayvanlara tıbbî ve cerrahi müdahaleler **sadece veteriner hekimler** tarafından yapılır.\n\n**Kısırlaştırma:** Kontrolsüz üremenin önlenmesi için, hayvanlara **acı vermeden** kısırlaştırma müdahaleleri yapılır.\n\n**Yasaklar:**\n- Bir hayvan neslini yok edecek her türlü müdahale yasaktır.\n- Hayvanların, yaşadıkları sürece, **tıbbî amaçlar dışında** organ veya dokularının tümü ya da bir bölümü çıkarılıp alınamaz veya tahrip edilemez.\n- Ev hayvanının dış görünüşünü değiştirmeye yönelik veya diğer tedavi edici olmayan **kuyruk ve kulak kesilmesi, ses tellerinin alınması, tırnak ve dişlerinin sökülmesine** yönelik cerrahi müdahale yasaktır.\n- Bir hayvana tıbbî amaçlar dışında, türüne ve etolojik özelliklerine aykırı hale getirecek şekilde ve dozda **hormon ve ilaç vermek**, çeşitli maddelerle **doping yapmak**, türlerine has davranış ve fizikî özelliklerini yapay yöntemlerle değiştirmek yasaktır.",
+      "articleRefs": [
+        "7",
+        "8"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Kuyruk ve kulak kesme yasağının istisnası",
+      "body": "Ev hayvanında kuyruk-kulak kesme, ses teli alma, tırnak ve diş sökme yasağı istisnasız değildir. Şu durumlarda **izin verilebilir**:\n\n- bir veteriner hekimin, veteriner hekimliği uygulamaları ile ilgili **tıbbî sebepler** veya özel bir hayvanın **yararı için** gerektiğinde tedavi edici olmayan müdahaleyi gerekli görmesi,\n- **üremenin önlenmesi**.\n\nKipe dikkat: hüküm \"izin verilir\" değil, \"izin verilebilir\" biçimindedir. Birinci hâlde müdahaleyi gerekli gören **veteriner hekimdir**. Üremenin önlenmesi ise ayrı bir hâldir.\n\nOrgan ve doku alma yasağında da benzer bir kayıt var: yasak **tıbbî amaçlar dışında** kalan müdahaleler içindir. Hormon, ilaç ve doping yasağı da aynı kayıtla başlar.",
+      "articleRefs": [
+        "8"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Hayvan deneyleri",
+      "body": "- Hayvanlar, **bilimsel olmayan** teşhis, tedavi ve deneylerde kullanılamaz.\n- Tıbbî ve bilimsel deneylerin hayvanları koruyacak şekilde yapılması, deneylerde kullanılacak hayvanların uygun biçimde bakılması ve barındırılması esastır.\n- **Başkaca bir seçenek olmaması halinde**, hayvanlar bilimsel çalışmalarda deney hayvanı olarak kullanılabilir.\n\n**İzin:** Hayvan deneyi yapan kurum ve kuruluşlarda deneylere, **kendi bünyelerinde** kurulmuş ve kurulacak **etik kurullar** yoluyla izin verilir.\n\n**Yönetmelikler:**\n- Etik kurulların kuruluşu, çalışma usul ve esasları: **Sağlık Bakanlığının ve ilgili kuruluşların görüşleri alınarak** Bakanlıkça çıkarılacak yönetmelik.\n- Deney hayvanlarının yetiştirilmesi, beslenmesi, barındırılması, bakılması; deney hayvanı besleyen, tedarik eden ve kullanıcı işletmelerin tescili, personelin nitelikleri, tutulacak kayıtlar, ne tür hayvanların yetiştirileceği ve bu işletmelerin uyacağı esaslar: Bakanlıkça çıkarılacak yönetmelik.",
+      "articleRefs": [
+        "9"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Hayvanların ticareti",
+      "body": "- **Satış şartı:** Satılırken hayvanların sağlıklarının iyi, barındırıldıkları yerin temiz ve sağlık şartlarına uygun olması zorunludur.\n- **Kedi ve köpek:** Ev hayvanı satış yerlerinde kedi ve köpek **bulundurulamaz**; ancak buralarda **Bakanlıkça izin verilen ev hayvanı üretim yerlerindeki** kedi ve köpeklerin satışı yapılabilir.\n- **Üretim ve ticaret yapanlar:** Ev hayvanlarının üretimini ve ticaretini yapanlar, hayvanların sağlığını tehlikeye atmamak için gerekli anatomik, fizyolojik ve davranış karakteristikleri ile ilgili önlemleri almakla yükümlüdür.\n- **Film ve reklam:** Hayvanların ticarî amaçla film çekimi ve reklam için kullanılması **izne tâbidir**. Bir hayvan acı, ıstırap ya da zarar görecek şekilde film çekimi, gösteri, reklam ve benzeri işler için kullanılamaz.\n- **Deney hayvanı ithalat ve ihracatı:** İzne tâbidir; izni **Bakanlık** verir.\n- **Devir yasağı:** Hasta, sakat ve yaşlı durumda bulunan veya iyileşemeyecek derecede ağrısı veya acısı olan bir hayvanı **usulüne uygun kesmek ya da ağrısız öldürme amacından başka bir amaçla** birine devretmek, satmak veya almak yasaktır.\n\n**Yönetmelikle belirlenenler (Bakanlık):** çiftlik hayvanlarının bakımı, beslenmesi, nakliyesi ve kesimi esnasında refah ve güvenliğin sağlanması; yabani hayvanların ticareti; film ve reklam iznine ait usul ve esaslar (ilgili kuruluşların görüşü alınarak).",
+      "articleRefs": [
+        "10"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Satış yerinde kedi-köpek: bulundurma ile satış ayrı",
+      "body": "md 10'un bu cümlesi iki ayrı şey söyler; ikisini birbirine karıştırma.\n\n- Ev hayvanı satış yerinde kedi ve köpek **bulundurulamaz**.\n- Aynı yerde, **Bakanlıkça izin verilen ev hayvanı üretim yerlerindeki** kedi ve köpeklerin **satışı yapılabilir**.\n\nYani yasak bulundurmaya, serbestlik satışa ilişkindir; bu cümlede sözü edilen izin, **üretim yerinin** Bakanlıktan aldığı izindir.\n\nDevir yasağında da kayıt var: hasta, sakat ve yaşlı hayvanın devri, satışı ve alınması her amaç için yasak değildir; usulüne uygun kesmek ya da ağrısız öldürme amacı yasağın dışında tutulmuştur. Yasak yalnız satana da yönelmez: **devretmek, satmak veya almak** birlikte sayılır.",
+      "articleRefs": [
+        "10"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Eğitim ve dövüştürme yasağı",
+      "body": "**Eğitim:** Hayvanlar şu yöntemlerle eğitilemez:\n- doğal kapasitesini veya gücünü aşacak şekilde,\n- yaralanmasına, gereksiz acı çekmesine, kötü alışkanlıklara özendirilmesine neden olacak yöntemlerle.\n\n**Dövüştürme:** Hayvanları **başka bir canlı hayvanla** dövüştürmek yasaktır.\n\n**Geleneksel gösteriler:** **Folklorik amaca yönelik, şiddet içermeyen** geleneksel gösteriler düzenlenebilir. Bunun için:\n- **Bakanlığın uygun görüşü** alınır,\n- **il hayvanları koruma kurullarından izin** alınır.\n\nİzni veren kurul, uygun görüş veren Bakanlıktır; ikisini yer değiştirme.",
+      "articleRefs": [
+        "11"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Hayvanların kesimi",
+      "body": "**Genel kural:** Hayvanların kesilmesi, dini kuralların gerektirdiği özel koşullar dikkate alınarak;\n- hayvanı **korkutmadan, ürkütmeden**,\n- **en az acı verecek şekilde**,\n- hijyenik kurallara uyularak,\n- usulüne uygun olarak **bir anda** yapılır.\n\nHayvanların kesiminin **ehliyetli kişilerce** yapılması sağlanır.\n\n**Kurban kesimi:** Dini amaçla kurban kesmek isteyenlerin kurbanlarını dini hükümlere, sağlık şartlarına, çevre temizliğine uygun olarak, hayvana en az acı verecek şekilde bir anda kesimi, kesim yerleri, ehliyetli kesim yapacak kişiler ve ilgili diğer hususlar yönetmelikle belirlenir.\n- Yönetmeliği çıkaran: madde metnine göre **Diyanet İşleri Başkanlığının bağlı olduğu Bakanlık**.\n- Görüşü alınanlar: Bakanlık, kurum ve kuruluşlar.\n\nBu ünitedeki yönetmeliklerin çoğunu Tarım ve Orman Bakanlığı çıkarır; kurban kesimi yönetmeliği için madde ayrı bir makam gösterir, Bakanlık burada görüşü alınanlar arasındadır.\n\n**Not:** Yönetmeliği çıkaracak makam madde metnindeki hâliyle verilmiştir.",
+      "articleRefs": [
+        "3",
+        "12"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Bakımevine alınan köpekler ve öldürme yasağı",
+      "body": "**Tedbir uygulanacak köpekler:** Bakımevine alınan köpeklerden;\n- insan ve hayvanların hayatı ve sağlığı için tehlike teşkil eden **ve** olumsuz davranışları kontrol edilemeyen,\n- bulaşıcı veya tedavi edilemeyen hastalığı bulunan,\n- ya da sahiplenilmesi yasak olanlara,\n\n5996 sayılı Veteriner Hizmetleri, Bitki Sağlığı, Gıda ve Yem Kanununun 9 uncu maddesinin üçüncü fıkrasında belirtilen tedbir uygulanır.\n\n**Yerel yönetimler:** Sahipsiz köpeklere ilişkin yürüttüğü iş ve işlemlerde, Bakanlar Kurulu kararı ile onaylanan Ev Hayvanlarının Korunmasına Dair Avrupa Sözleşmesi kapsamında gerekli **idari tedbirleri almaya yetkilidir**.\n\n**Öldürülemeyecek dönemler:** **Yavrulama, gebelik ve süt anneliği** dönemlerinde hayvanlar öldürülemez. Bunun dışında kalanlar: kanunî istisnalar, tıbbî ve bilimsel gerekçeler ve gıda amaçlı olmayan, insan ve çevre sağlığına yönelen **önlenemez tehditler bulunan acil durumlar**.\n\n**Bertaraf:** Öldürme işleminden sorumlu kişi ve kuruluşlar, hayvanın **kesin olarak öldüğünden emin olunduktan sonra**, ölüsünü usulüne uygun olarak bertaraf etmek veya ettirmekle yükümlüdür.\n\n**Yönetmelik:** Öldürme ve ötanazi işlemine ilişkin esas ve usuller Bakanlıkça çıkarılacak yönetmelikle belirlenir.",
+      "articleRefs": [
+        "13"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "md 13'te kim, hangi hayvan?",
+      "body": "Bu maddede özneler kolay kayar.\n\n- Tedbir hükmü bütün sahipsiz hayvanlar için değil, **bakımevine alınan köpeklerden** maddede sayılanlar için yazılmıştır.\n- Yerel yönetimlere tanınan yetki **idari tedbir** almaktır ve **sahipsiz köpeklere** ilişkin iş ve işlemlerle sınırlı yazılmıştır.\n- Yavrulama, gebelik ve süt anneliği dönemlerindeki öldürme yasağı ise köpeklerle sınırlı değildir; hüküm bütün **hayvanlar** içindir. Yasak mutlak da değildir: kanunî istisnalar, tıbbî ve bilimsel gerekçeler ve maddede tarif edilen acil durumlar dışarıda bırakılmıştır.\n- Bertaraf yükümlülüğünde seçenek vardır: sorumlu kişi ve kuruluş ölüyü bertaraf **eder veya ettirir**.\n- Öldürme ve ötanazi usulünü yerel yönetim değil, Bakanlık yönetmelikle belirler.",
+      "articleRefs": [
+        "13"
+      ]
+    },
+    {
+      "type": "numbers",
+      "title": "İzin, görüş ve yönetmelik makamları",
+      "rows": [
+        {
+          "label": "Sahipsiz hayvanlarda yerel yönetimlerin yetki ve sorumlulukları",
+          "value": "Bakanlık yönetmeliği; Çevre, Şehircilik ve İklim Değişikliği Bakanlığı ve İçişleri Bakanlığı ile eşgüdüm",
+          "refs": [
+            "6"
+          ]
+        },
+        {
+          "label": "Toplatma, bakımevlerinin çalışma usulü, personelin niteliği",
+          "value": "Bakanlık yönetmeliği; ilgili kurum ve kuruluşların görüşleri alınarak",
+          "refs": [
+            "6"
+          ]
+        },
+        {
+          "label": "Bakımevi ve hastane için Hazine arazisi",
+          "value": "Öncelikle tahsis edilir",
+          "refs": [
+            "6"
+          ]
+        },
+        {
+          "label": "Gönüllü gerçek ve tüzel kişilere arazi, bina, demirbaş",
+          "value": "Tahsis edilebilir; mülkiyet idarelerde kalır",
+          "refs": [
+            "6"
+          ]
+        },
+        {
+          "label": "Tıbbî ve cerrahi müdahale",
+          "value": "Sadece veteriner hekimler",
+          "refs": [
+            "7"
+          ]
+        },
+        {
+          "label": "Hayvan deneyine izin",
+          "value": "Kurum ve kuruluşların kendi bünyelerindeki etik kurullar",
+          "refs": [
+            "9"
+          ]
+        },
+        {
+          "label": "Etik kurulların kuruluşu ve çalışma usulü",
+          "value": "Bakanlık yönetmeliği; Sağlık Bakanlığının ve ilgili kuruluşların görüşleri alınarak",
+          "refs": [
+            "9"
+          ]
+        },
+        {
+          "label": "Deney hayvanı ithalat ve ihracat izni",
+          "value": "Bakanlık",
+          "refs": [
+            "10"
+          ]
+        },
+        {
+          "label": "Ticarî amaçla film çekimi ve reklam izninin usulü",
+          "value": "Bakanlık yönetmeliği; ilgili kuruluşların görüşü alınarak",
+          "refs": [
+            "10"
+          ]
+        },
+        {
+          "label": "Yabani hayvan ticareti; çiftlik hayvanlarının refahı",
+          "value": "Bakanlık yönetmeliği",
+          "refs": [
+            "10"
+          ]
+        },
+        {
+          "label": "Folklorik, şiddet içermeyen geleneksel gösteri",
+          "value": "Bakanlığın uygun görüşü + il hayvanları koruma kurullarının izni",
+          "refs": [
+            "11"
+          ]
+        },
+        {
+          "label": "Kurban kesimi yönetmeliği",
+          "value": "Diyanet İşleri Başkanlığının bağlı olduğu Bakanlık (makam madde metnindeki hâliyle verilmiştir)",
+          "refs": [
+            "12"
+          ]
+        },
+        {
+          "label": "Öldürme ve ötanazi işleminin esas ve usulleri",
+          "value": "Bakanlık yönetmeliği",
+          "refs": [
+            "13"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "6",
+        "7",
+        "9",
+        "10",
+        "11",
+        "12",
+        "13"
+      ]
+    },
+    {
+      "type": "exam_stats",
+      "title": "Sınav der ki",
+      "rows": [
+        {
+          "label": "Bu ünitenin maddelerinden yayındaki soru",
+          "value": "0",
+          "refs": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13"
+          ]
+        },
+        {
+          "label": "Hiç soru çıkmamış",
+          "value": "md 1, md 2, md 3, md 4, md 5, md 6, md 7, md 8, md 9, md 10, md 11, md 12, md 13",
+          "refs": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12",
+        "13"
+      ],
+      "generated": true
+    },
+    {
+      "type": "bridge",
+      "title": "Bu üniteden soru çöz",
+      "articleRefs": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12",
+        "13"
+      ],
+      "generated": true,
+      "rows": [
+        {
+          "label": "Madde kapsamlı seans",
+          "value": "md 1–13, 0 soru",
+          "refs": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13"
+          ]
+        }
+      ]
+    }
+  ]
+}

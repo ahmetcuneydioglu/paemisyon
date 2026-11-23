@@ -1,0 +1,601 @@
+{
+  "unit": {
+    "slug": "hkk-yasaklar-denetim-ve-cezalar",
+    "legislationSlug": "5199-sayili-hayvanlari-koruma-kanunu",
+    "topicId": "501582f0-50e1-430c-a98b-4a49595573aa",
+    "title": "Hayvanları Koruma: Yasaklar, Denetim ve Cezalar",
+    "subtitle": "Neler yasak, kim denetler, cezayı kim verir, hangi fiil suçtur",
+    "articleFrom": "14",
+    "articleTo": "Geçici 3",
+    "readingMinutes": 15,
+    "sourceLabel": "AI özeti — 5199 Sayılı Hayvanları Koruma Kanunu, md 14–17, 19–22, 24, 25, 28, 28/A, 30, 31, Ek 1, Ek 2, Geçici 3",
+    "articleNos": [
+      "14",
+      "15",
+      "16",
+      "17",
+      "19",
+      "20",
+      "21",
+      "22",
+      "24",
+      "25",
+      "28",
+      "28/A",
+      "30",
+      "31",
+      "Ek 1",
+      "Ek 2",
+      "Geçici 3"
+    ],
+    "generatedBy": "claude alt ajanı (ozet-uret.ts istemi, API'siz kip)",
+    "sortOrder": 2
+  },
+  "blocks": [
+    {
+      "type": "concept",
+      "title": "Yasaktan cezaya giden yol",
+      "body": "Bu ünitede bir zinciri takip edeceksin. Kanun önce hayvanlarla ilgili yasakları sayar. Sonra bu hükümlere uyulup uyulmadığını kimin denetleyeceğini söyler: denetleme yetkisi Bakanlığa aittir. Yasakların çoğuna aykırılık idarî para cezasıyla karşılanır ve bu cezayı denetime yetkili merci verir. Bazı fiiller ise suçtur: bunlarda hapis cezası öngörülür ve soruşturma Tarım ve Orman Bakanlığının il veya ilçe müdürlüklerinin Cumhuriyet başsavcılığına yazılı başvurusuna bağlıdır; suçüstü hâlinde ise soruşturma genel hükümlere göre yapılır. Soruların çoğu şu ayrımlarda döner: yaptırım idarî mi adlî mi, cezayı kim verir, tekrar hâlinde ne olur.",
+      "articleRefs": [
+        "14",
+        "17",
+        "25",
+        "28",
+        "28/A",
+        "30"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Yasaklar: kötü muamele, satış ve kesim",
+      "body": "Hayvanlarla ilgili yasakların ilk bölümü şunlardır:\n\n- **(a)** Kasıtlı kötü davranma: dövme, aç ve susuz bırakma, aşırı soğuğa ve sıcağa maruz bırakma, bakımı ihmal, fiziksel ve psikolojik acı çektirme.\n- **(b)** Hayvanı, gücünü aştığı **açıkça görülen** fiillere zorlama.\n- **(c)** Hayvan bakımı eğitimi almamış kişinin ev hayvanı satması.\n- **(d)** Ev hayvanını **onaltı yaşından küçüklere** satma.\n- **(e)** Ölümü kesinleşmeden hayvanın vücuduna tedavi amacı dışında müdahale.\n- **(f)** Kesim hayvanları, avlanmasına ve kesim hayvanı olarak üretimine izin verilen av hayvanları ve ticarete konu yabani hayvanlar **dışındaki** hayvanları et ihtiyacı amacıyla kesip ya da öldürüp piyasaya sürme.\n- **(g)** Kesim için yetiştirilmiş hayvanlar dışındakileri ödül, ikramiye ya da prim olarak dağıtma.\n- **(h)** Kanunî ve tıbbî gerekçeler dışında hayvana, ana karnındaki yavrusuna ya da (havyar üretimi hariç) yumurtasına zarar verebilecek sunî müdahale yapma, yabancı madde verme.",
+      "articleRefs": [
+        "14"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Yasaklar: çalıştırma, işkence, terk",
+      "body": "Yasakların devamı:\n\n- **(ı)** Hasta, gebelik süresinin **2/3'ünü tamamlamış** gebe ya da yeni ana olan hayvanı çalıştırma; uygun olmayan koşullarda barındırma.\n- **(j)** Hayvana cinsel saldırı veya tecavüz.\n- **(k)** Sağlık nedeniyle gerekli olmadıkça zorla yem yedirme; acı, ıstırap ya da zarar veren yiyecek, alkollü içki, sigara, uyuşturucu ve benzeri bağımlılık yapan yiyecek veya içecek verme.\n- **(l)** **Bakanlıkça belirlenen** tehlike arz eden hayvanları üretme, sahiplenme, sahiplendirme, barındırma, besleme, takas etme, sergileme, hediye etme; ülkeye girişini, satışını ve reklamını yapma.\n- **(m)** Hayvana işkence, acımasız ve zalimce muamele.\n- **(n)** Ev hayvanını terk.\n- **(o)** Yerel yönetimler adına toplanan sahipsiz hayvanları bakımevi dışında bir yere terk etme; bakımevinde barındırılan köpekleri bakımevi dışında bir yere bırakma.",
+      "articleRefs": [
+        "14"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Yasaklarda küçük kelimeler",
+      "body": "Yasak bentlerinde soru, çoğu zaman bir kelimenin değiştirilmesiyle kurulur. Şunlara dikkat et:\n\n- **Yaş sınırı satışta:** Ev hayvanı onaltı yaşından küçüklere satılamaz. Bent satışı yasaklar.\n- **Eğitim şartı satıcıda:** Ev hayvanını satacak kişinin hayvan bakımı eğitimi almış olması aranır.\n- **Gebe hayvan:** Çalıştırma yasağı gebelik süresinin 2/3'ünü tamamlamış gebe hayvan içindir; hasta ve yeni ana olan hayvan da aynı bentte sayılır.\n- **Ödül olarak dağıtma:** Yasak, kesim için yetiştirilmiş hayvanlar **dışındaki** hayvanlar içindir.\n- **Sunî müdahale:** Kanunî ve tıbbî gerekçeler ile havyar üretimi bentte **hariç** tutulmuştur.\n- **Tehlike arz eden hayvan:** Hangi hayvanların tehlike arz ettiğini **Bakanlık** belirler.\n- **Terk:** (n) bendi **ev hayvanını** terk etmeyi, (o) bendi ise yerel yönetimler adına toplanan **sahipsiz hayvanları** bakımevi dışına terk etmeyi ve bakımevindeki **köpekleri** dışarı bırakmayı yasaklar.",
+      "articleRefs": [
+        "14"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "İl hayvanları koruma kurulu: yapı",
+      "body": "**Başkan:** Kurul her ilde **valinin başkanlığında** toplanır. Gündemi sınırlıdır: sadece hayvanların korunması ve mevcut sorunlar ile çözümleri.\n\n**Katılanlar:** Belediye başkanları, ilgili il müdürleri (doğa koruma ve milli parklar il şube müdürü; tarım ve orman, çevre ve şehircilik, sağlık, millî eğitim il müdürleri), il müftüsü, veteriner ve baro temsilcileri. Gönüllü kuruluşlardan **valilik tarafından seçilecek en çok iki temsilci**, veteriner hekimler odasından **bir temsilci** katılır.\n\n**İşleyiş:**\n- Sekretaryayı **doğa koruma ve milli parklar il şube müdürlüğü** yürütür.\n- Kurul **en geç üç ayda bir**, başkanın çağrısı üzerine toplanır; gerektiğinde olağanüstü toplantılar yapılabilir.\n- Kurul çalışmalarının sonucunu Bakanlığa bildirir.\n\n**Not:** Çevre ve şehircilik il müdürü unvanı madde metnindeki hâliyle verilmiştir.",
+      "articleRefs": [
+        "15"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Kurulun görevleri",
+      "body": "Kurul, hayvanların korunması, sorunların tespiti ve çözümlerini karara bağlamak üzere çalışır; bunu yaparken **Merkez Av Komisyonu kararlarını göz önünde bulundurur**.\n\n- **Yasal temsilcilik:** Hayvanların korunması ve kullanılmasında onların **yasal temsilcisi** niteliğiyle görev yapar.\n- **Plan ve rapor:** İldeki sorunları, sahipsiz hayvanlardan kaynaklananlar dahil, belirler; **yıllık, beş yıllık ve on yıllık** plan ve projeler yapar; yıllık hedef raporlarını **Bakanlığın uygun görüşüne** sunar; Bakanlığın olumlu görüşünü alarak insan, hayvan ve çevre sağlığına ilişkin önlemleri alır.\n- **Eşgüdüm:** İl düzeyindeki faaliyetleri izler, yönlendirir; görevleri yerel yönetimler ve tarım ve orman il müdürlükleri ile eşgüdüm sağlayarak yaptırır.\n- **Bakımevi ve hastane:** Hayvan bakımevlerini ve hayvan hastanelerini destekler, geliştirir, **denetler**.\n- **Eğitim:** Hayvan sevgisi, korunması ve yaşatılması ile ilgili eğitici faaliyetler düzenler.",
+      "articleRefs": [
+        "16"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Kurulda kim ne yapar?",
+      "body": "Kurul sorularında roller yer değiştirilerek sorulur. Dağılım şöyle:\n\n- **Başkanlık validedir.** Belediye başkanları toplantıya katılır, başkanlık etmez.\n- **Sekretarya** doğa koruma ve milli parklar il şube müdürlüğündedir.\n- **Gönüllü kuruluş temsilcilerini valilik seçer;** sayı \"en çok iki\"dir. Veteriner hekimler odasından ise bir temsilci gelir.\n- **Toplantı aralığı** \"en geç üç ayda bir\"dir ve çağrıyı başkan yapar.\n- **Plan ve hedef raporları Bakanlığın uygun görüşüne sunulur;** önlemler Bakanlığın olumlu görüşü alınarak alınır.",
+      "articleRefs": [
+        "15",
+        "16"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Denetim ve ceza verme yetkisi",
+      "body": "**Denetim yetkisi:** Bu Kanun hükümlerine uyulup uyulmadığını denetleme yetkisi **Bakanlığa** aittir.\n\n**Yetki devri:** Gerektiğinde bu yetki Bakanlıkça **mahallin en büyük mülkî amirine** yetki devri suretiyle **devredilebilir**.\n\n**Yerel yönetimler:** Sahipsiz hayvanların kayıt altına alınması ile ilgili işlemleri yapmakla yükümlüdür.\n\n**İdarî para cezası:** Bu Kanunda öngörülen idarî para cezaları, md 17'de belirtilen **denetime yetkili merci** tarafından verilir. Zincir şöyle kurulur: cezayı denetime yetkili merci verir; denetim yetkisi Bakanlıktadır; yetki devredilmişse mahallin en büyük mülkî amiri bu yetkiyi kullanır.",
+      "articleRefs": [
+        "17",
+        "25"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Cezayı kim keser?",
+      "body": "İdarî para cezasını verecek merci Kanunda adıyla değil, atıfla gösterilir: \"md 17'de belirtilen denetime yetkili merci\". Bu yüzden iki maddeyi birlikte okuman gerekir.\n\n- Denetim yetkisi **Bakanlığa** aittir.\n- Yetki mahallin en büyük mülkî amirine **devredilebilir**; devri Bakanlık yapar ve devir \"gerektiğinde\" söz konusudur.\n- Cezayı, md 17'deki denetime yetkili merci verir: yetki Bakanlıktadır ve mahallin en büyük mülkî amirine devredilebilir.\n\nKoruma altına almada da aynı merci karşına çıkar: Kanunun korumaya yönelik hükümlerine aykırı hareket edenlerin hayvan bulundurmasını yasaklayan ve hayvanlarına el koyan, **denetimle yetkili merci**dir.",
+      "articleRefs": [
+        "17",
+        "24",
+        "25"
+      ]
+    },
+    {
+      "type": "numbers",
+      "title": "Yasaklar, kurul ve yayın: sayılar",
+      "rows": [
+        {
+          "label": "Ev hayvanı satılamayacak kişiler",
+          "value": "Onaltı yaşından küçükler",
+          "refs": [
+            "14"
+          ]
+        },
+        {
+          "label": "Çalıştırılamayacak gebe hayvan",
+          "value": "Gebelik süresinin 2/3'ünü tamamlamış",
+          "refs": [
+            "14"
+          ]
+        },
+        {
+          "label": "Kurula gönüllü kuruluşlardan katılacak temsilci",
+          "value": "En çok iki (valilik seçer)",
+          "refs": [
+            "15"
+          ]
+        },
+        {
+          "label": "Kurula veteriner hekimler odasından katılacak temsilci",
+          "value": "Bir",
+          "refs": [
+            "15"
+          ]
+        },
+        {
+          "label": "Kurulun toplanma aralığı",
+          "value": "En geç üç ayda bir",
+          "refs": [
+            "15"
+          ]
+        },
+        {
+          "label": "Kurulun plan ve projeleri",
+          "value": "Yıllık, beş yıllık ve on yıllık",
+          "refs": [
+            "16"
+          ]
+        },
+        {
+          "label": "Televizyonda eğitici yayın (TRT ve özel kanallar)",
+          "value": "Ayda en az iki saat",
+          "refs": [
+            "20"
+          ]
+        },
+        {
+          "label": "Özel radyo kanallarında eğitici yayın",
+          "value": "Ayda en az yarım saat",
+          "refs": [
+            "20"
+          ]
+        },
+        {
+          "label": "İzlenme ve dinlenme oranı en yüksek saatlerde yapılacak bölüm",
+          "value": "Yayınların % 20'si",
+          "refs": [
+            "20"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "14",
+        "15",
+        "16",
+        "20"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Mali destek ve eğitici yayınlar",
+      "body": "**Mali destek:**\n- Bakımevi, hastane ve ameliyathane kurmak, ilaç, alet ve ekipman temin etmek, bakımevlerinde bakım, rehabilitasyon ve sahiplendirme faaliyetlerini yürütmek için **başta yerel yönetimler olmak üzere** ilgili kurum ve kuruluşlara teşvik veya Bakanlıkça uygun görülen miktarlarda mali destek sağlanır.\n- Bu amaçla **Bakanlık bütçesine** ödenek konulur. Ödeneğin kullanım esas ve usulleri, **Hazine ve Maliye Bakanlığının olumlu görüşü** alınarak Bakanlıkça çıkarılacak yönetmelikle belirlenir.\n- Gerçek ve tüzel kişiler bu faaliyetlerde kullanılmak üzere Bakanlığa ve yerel yönetimlere **ayni veya nakdî bağış yapabilir**.\n\n**Eğitici yayınlar:**\n- Türkiye Radyo ve Televizyon Kurumu ile özel televizyon kanallarında **ayda en az iki saat**, özel radyo kanallarında **ayda en az yarım saat** eğitici yayın **zorunludur**.\n- Bu yayınların **% 20'sinin** izlenme ve dinlenme oranı en yüksek saatlerde yapılması esastır.\n- Maddenin takibi, görev alanına giren hususlarda **Radyo ve Televizyon Üst Kuruluna** aittir.",
+      "articleRefs": [
+        "19",
+        "20"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Trafik kazası, hayvanat bahçesi, koruma altına alma",
+      "body": "**Trafik kazaları:** Bir hayvana çarpan ve ona zarar veren sürücü, onu en yakın veteriner hekim ya da tedavi ünitesine **götürmek veya götürülmesini sağlamak** zorundadır.\n\n**Hayvanat bahçeleri:** İşletme sahipleri ve belediyeler, hayvanat bahçelerini doğal yaşama ortamına en uygun şekilde tanzim etmekle ve ettirmekle yükümlüdür.\n\n**Doğal yaşam parkları:** Gerçek veya tüzel kişiler, hayvanların etolojisine ve habitatına uygun, serbest dolaşımlarına imkan sağlayan doğal yaşam parkları **kurabilir**.\n\n**Koruma altına alma:** Şu kişilerin hayvan bulundurması denetimle yetkili merci tarafından **yasaklanır** ve hayvanlarına **el konulur**:\n- Kanunun hayvanları korumaya yönelik hükümlerine aykırı hareket edenler,\n- sahiplendiği hayvanların bakımını **ciddi şekilde** ihmal edenler,\n- hayvanlarına ağrı, acı veya zarar verenler.\n\nEl konulan hayvanlardan sahiplendirilme niteliği olanlar, sahiplendirilinceye kadar hayvan bakımevinde barındırılır.\n\n**Saklı hükümler:** 4915 sayılı Kara Avcılığı Kanunu, 5996 sayılı Kanun ile 1380 sayılı Su Ürünleri Kanunu hükümleri saklıdır.",
+      "articleRefs": [
+        "21",
+        "22",
+        "24",
+        "31"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "İdarî para cezaları ve tekrar",
+      "body": "Kanun hükümlerine aykırı davrananlara idarî para cezası **verilir**. Cezalar bentler hâlinde sayılmıştır ve çoğunda **hayvan başına** hesaplanır.\n\n**Yasaklardan (md 14) idarî para cezası gerektirenler (md 28):**\n- (a), (b), (e), (g), (h), (ı) ve (k) bentleri: hayvan başına idarî para cezası.\n- (f) ve (l) bentleri: hayvan başına idarî para cezası.\n- (d) bendi (ev hayvanını yaşı küçük olana satma): idarî para cezası.\n- (n) bendi (ev hayvanını terk) ve (o) bendi: hayvan başına idarî para cezası.\n\n**Adlî ceza gerektirenler (md 28/A):** (j) bendindeki cinsel saldırı veya tecavüz ile (m) bendindeki yasağa aykırı davranarak bir ev hayvanına veya evcil hayvana işkence, acımasız ve zalimce muamele.\n\n**Diğer aykırılıklar:**\n- Eğitici yayın yükümlülüğü: Radyo ve Televizyon Üst Kurulunun takibi sonucunda aykırılığı tespit edilen **ulusal** radyo ve televizyon kurum ve kuruluşlarına, maddenin ihlal edildiği **her ay için** idarî para cezası.\n- Trafik kazasında hayvanı tedaviye götürmeme: hayvan başına idarî para cezası.\n- Hayvanat bahçesi yükümlülüğüne ve yönetmeliğine aykırılık: hayvan başına idarî para cezası.\n\n**Görevlinin kabahati:** Kabahat veteriner hekim, veteriner sağlık teknisyeni, hayvan koruma derneği üyeleri, hayvan koruma vakfı üyeleri veya hayvanlara bakmak veya onları korumakla görevlendirilen kişiler tarafından işlenirse ceza **iki kat artırılarak** uygulanır.\n\n**Tekrar:** Ceza hükmü altına alınmış fiillerin tekrarı hâlinde para cezaları **bir kat**, daha fazla tekrarı hâlinde **üç kat** artırılarak verilir.",
+      "articleRefs": [
+        "28",
+        "28/A",
+        "30"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Adli cezalar: hangi fiil, hangi ceza",
+      "body": "Aşağıdaki fiiller suçtur ve hapis cezası gerektirir:\n\n- **Nesli yok olma tehlikesi altında olan bir hayvanı öldürmek:** bir yıldan beş yıla kadar hapis.\n- **Bir hayvan neslini yok etmek:** beş yıldan on yıla kadar hapis.\n- **Bir ev hayvanını veya evcil hayvanı kasten öldürmek:** altı aydan dört yıla kadar hapis. Md 12 kapsamındaki hayvan kesimleri ile md 13'ün birinci, ikinci ve üçüncü fıkrasında belirtilen hususlar bunun dışındadır.\n- **Hayvanlara cinsel saldırıda bulunmak veya tecavüz etmek:** altı aydan üç yıla kadar hapis **ve** yüz günden az olmamak üzere adli para cezası.\n- **Bir ev hayvanına veya evcil hayvana işkence etmek ya da acımasız ve zalimce muamelede bulunmak** (md 14'ün (m) bendindeki yasağa aykırı davranarak): altı aydan üç yıla kadar hapis.\n- **Hayvanları dövüştürmek:** üç aydan iki yıla kadar hapis **veya** adli para cezası. Md 11'in ikinci fıkrasının ikinci cümlesi saklıdır.",
+      "articleRefs": [
+        "28/A"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Adli cezalarda artırım ve soruşturma",
+      "body": "**Artırım:**\n- Suç **birden fazla hayvana karşı aynı anda** işlenirse ceza **yarı oranında** artırılır.\n- Suç veteriner hekim, veteriner sağlık teknisyeni, hayvan koruma derneği üyeleri, hayvan koruma vakfı üyeleri veya hayvanlara bakmak yahut onları korumakla görevlendirilen kişiler tarafından işlenirse ceza **yarı oranında** artırılır.\n\n**Soruşturma:**\n- Sahibi tarafından işlenen suçlar da dahil, soruşturma yapılması **Tarım ve Orman Bakanlığının il veya ilçe müdürlükleri** tarafından Cumhuriyet başsavcılığına **yazılı başvuruda** bulunulmasına bağlıdır.\n- Bu başvuru **muhakeme şartı** niteliğindedir.\n- **Suçüstü** hâlinde soruşturma genel hükümlere göre yapılır.\n- İkinci, üçüncü, dördüncü ve beşinci fıkralardaki suçlar **başka bir kişi tarafından sahipli hayvana karşı** işlenirse, hayvan sahibinin **şikayeti üzerine de** soruşturma yapılır.\n\n**El konulan hayvanlar:** Suça konu olan ve md 24 uyarınca el konulan kedi ve köpekler ile Bakanlıkça uygun görülen diğer hayvanlar koruma altına alınır; bakımevi bulunan en yakın belediye tarafından hayvan bakımevine götürülür.",
+      "articleRefs": [
+        "28/A"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "İki kat mı, yarı oranında mı, bir kat mı?",
+      "body": "Bu ünitede birbirine çok benzeyen artırım hükümleri var; bunlar kolayca karıştırılır.\n\n- **Görevli, md 28'deki kabahatlerden birini işlerse** (idarî para cezası): ceza **iki kat** artırılır.\n- **Görevli suç işlerse** (adli ceza): ceza **yarı oranında** artırılır.\n- **Suç birden fazla hayvana karşı aynı anda işlenirse:** ceza **yarı oranında** artırılır.\n- **Fiilin tekrarı:** para cezaları **bir kat**, daha fazla tekrarında **üç kat** artırılır.\n\n**\"Ve\" ile \"veya\"yı ayır:** Hayvanlara cinsel saldırıda hapis **ve** adli para cezası birlikte verilir. Hayvan dövüştürmede hapis **veya** adli para cezası verilir.\n\n**Başvuru şartı:** Soruşturma için yazılı başvuruyu Tarım ve Orman Bakanlığının il veya ilçe müdürlükleri yapar; bu başvuru muhakeme şartıdır. Suçüstü hâlinde soruşturma genel hükümlere göre yapılır.",
+      "articleRefs": [
+        "28",
+        "28/A",
+        "30"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Yerel yönetimlerin bakımevi sorumluluğu",
+      "body": "**Kim kurar:** Büyükşehir belediyeleri, il belediyeleri ve nüfusu **yirmi beş bini aşan** belediyeler hayvan bakımevleri **kurar**. Amaç; sahipsiz veya güçten düşmüş ya da tehlike arz eden hayvanların korunması, sahiplendirilinceye kadar bakımının yapılması ve rehabilitasyonunun sağlanmasıdır.\n\n**Kim götürür:**\n- Bu hayvanları ilgili belediyeler hayvan bakımevine götürür.\n- Bakımevi kurma zorunluluğu olmayan belediyeler ile il özel idareleri, sorumluluk alanındaki hayvanları **en yakın** hayvan bakımevine götürür.\n\n**Kayıt ve barındırma:** Bakımevlerine alınan hayvanlar **Bakanlık veri sistemine** kaydedilir. Rehabilite edilen köpekler, sahiplendirilinceye kadar hayvan bakımevlerinde barındırılır.\n\n**Hapis cezası (altı aydan iki yıla kadar):** Bakımevi kurmakla yükümlü belediyeler bakımından;\n- Geçici 4'ün ikinci fıkrasında belirtilen kaynağı **ayırmayan** belediye başkanı ve meclis üyelerine,\n- ayrılan kaynağı hayvan bakımevi kurmak, sahipsiz hayvanları toplamak, rehabilite etmek veya sahiplendirilinceye kadar bakmak için **sarf etmeyen** ya da **başka amaçlar için sarf eden** belediye başkanı ve belediye yetkililerine verilir.",
+      "articleRefs": [
+        "Ek 1"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Sirkler ve yunus parkları",
+      "body": "**Yeni kuruluş yasağı:** Maddenin yürürlüğe girdiği tarihten sonra hayvanların kullanıldığı **kara ve su sirkleri ile yunus parklarının kurulması yasaktır**.\n\n**Mevcut işletmeler:**\n- Herhangi bir nedenle eksilen hayvan sayısını tamamlama ya da artırma, yeni şube açma gibi yollarla **kapasite artırımına gidemez**.\n- **Üretim yapamaz.**\n- **Bakanlığın izni olmadan** işletme hakkını devredemez.\n- **On yılın sonunda** faaliyetine son verir.\n\n**Yönetmelik:** Bu işletmelerin hayvanların etolojisine uygun faaliyet göstermesini sağlayacak kriterleri Bakanlık yönetmelikle belirler.\n\n**Yaptırım:** Maddedeki yasaklara aykırı davrananlara **hayvan başına** idarî para cezası verilir.",
+      "articleRefs": [
+        "Ek 2"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Tehlike arz eden köpek türleri: geçiş hükmü",
+      "body": "**Kapsam:** Tehlike arz eden hayvanların belirlenmesine ilişkin **Bakanlıkça yapılacak düzenleme yürürlüğe konuluncaya kadar** şu türler ve melezleri: **Pitbull Terrier, Japanese Tosa, Dogo Argentino, Fila Brasilerio**.\n\n**Yasak fiiller ve yaptırım:** Bunları üreten, sahiplenen, sahiplendiren, barındıran, besleyen, takas eden, sergileyen, hediye eden ve ülkemize girişini, satışını ve reklamını yapana **hayvan başına** idarî para cezası verilir. Hayvanlara **el konulur**; hayvanlar **belediyeler tarafından** hayvan bakımevine götürülür.\n\n**Geçiş dönemi kaydı:** Bu hayvanları madde yürürlüğe girmeden önce sahiplenmiş olanlar için bir geçiş yolu öngörülmüştü: hayvanını süresinde **kısırlaştırıp** Bakanlık **veri tabanına kayıt ettirenler** hakkında birinci fıkradaki ve md 28'in birinci fıkrasının (j) bendindeki idarî yaptırım hükümleri uygulanmaz. Hayvanın ölümü hâlinde Bakanlığa bilgi verilir ve hayvan kayıttan düşürülür.\n\n**Kayıtlı hayvanın dolaştırılması:**\n- Kayıt belgesiz, ağızlıksız ve tasmasız dolaştırılamaz.\n- Halkın yoğun olarak bulunduğu yerler ile çocuk oyun alanları ve parklarına sokulamaz.\n- Aykırı hareket edene idarî para cezası verilir.\n- Aykırılığın **tekrarı** hâlinde idarî para cezası verilir **ve** hayvana el konulur; hayvan, konulabileceği bakımevi bulunan en yakın belediye tarafından bakımevine götürülür.\n\n**Bakımevine bırakma:** Bu madde kapsamında hayvan sahibi olanlar hayvanlarını en yakın bakımevine **bırakabilir**; yerel yönetimlerin kurduğu bakımevleri bu hayvanları **kabul etmek zorundadır**. Hayvanın sokağa terki hâlinde idarî para cezası verilir.",
+      "articleRefs": [
+        "Geçici 3"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Kayıtlı köpek ağızlıksız dolaşırsa",
+      "body": "Köpeğini kısırlaştırıp kayıt ettiren sahibin işi bitmiş sayılmaz. Kayıt, birinci fıkradaki ve md 28'in birinci fıkrasının (j) bendindeki idarî yaptırım hükümlerinin uygulanmasını önler; dolaştırma kuralları ise devam eder.\n\n- **Yükümlülük sürer:** Kayıtlı hayvan kayıt belgesiz, ağızlıksız ve tasmasız dolaştırılamaz; halkın yoğun olarak bulunduğu yerlere, çocuk oyun alanlarına ve parklara sokulamaz.\n- **İlk aykırılıkta** idarî para cezası verilir.\n- **Tekrarında** idarî para cezası verilir ve buna ek olarak hayvana el konulur. Yani tekrarda iki sonuç birlikte doğar: hem ceza verilir hem hayvana el konulur.\n- **El konulan hayvan** bakımevi bulunan en yakın belediye tarafından hayvan bakımevine götürülür.\n- **Cezayı,** md 17'deki denetime yetkili merci verir: yetki Bakanlıktadır ve mahallin en büyük mülkî amirine devredilebilir.\n- Kanunun genel tekrar hükmü de aklında olsun: ceza hükmü altına alınmış fiillerin tekrarında para cezaları artırılarak verilir.",
+      "articleRefs": [
+        "17",
+        "25",
+        "30",
+        "Geçici 3"
+      ]
+    },
+    {
+      "type": "numbers",
+      "title": "Cezalar ve süreler",
+      "rows": [
+        {
+          "label": "Nesli yok olma tehlikesi altındaki hayvanı öldürme",
+          "value": "Bir yıldan beş yıla kadar hapis",
+          "refs": [
+            "28/A"
+          ]
+        },
+        {
+          "label": "Bir hayvan neslini yok etme",
+          "value": "Beş yıldan on yıla kadar hapis",
+          "refs": [
+            "28/A"
+          ]
+        },
+        {
+          "label": "Ev hayvanını veya evcil hayvanı kasten öldürme",
+          "value": "Altı aydan dört yıla kadar hapis",
+          "refs": [
+            "28/A"
+          ]
+        },
+        {
+          "label": "Hayvanlara cinsel saldırı veya tecavüz",
+          "value": "Altı aydan üç yıla kadar hapis ve yüz günden az olmamak üzere adli para cezası",
+          "refs": [
+            "28/A"
+          ]
+        },
+        {
+          "label": "Ev hayvanına veya evcil hayvana işkence, acımasız ve zalimce muamele",
+          "value": "Altı aydan üç yıla kadar hapis",
+          "refs": [
+            "28/A"
+          ]
+        },
+        {
+          "label": "Hayvanları dövüştürme",
+          "value": "Üç aydan iki yıla kadar hapis veya adli para cezası",
+          "refs": [
+            "28/A"
+          ]
+        },
+        {
+          "label": "Suçun birden fazla hayvana karşı aynı anda ya da görevli tarafından işlenmesi",
+          "value": "Ceza yarı oranında artırılır",
+          "refs": [
+            "28/A"
+          ]
+        },
+        {
+          "label": "Kabahatin görevli tarafından işlenmesi",
+          "value": "Ceza iki kat artırılır",
+          "refs": [
+            "28"
+          ]
+        },
+        {
+          "label": "Fiilin tekrarı",
+          "value": "Para cezası bir kat artırılır",
+          "refs": [
+            "30"
+          ]
+        },
+        {
+          "label": "Fiilin daha fazla tekrarı",
+          "value": "Para cezası üç kat artırılır",
+          "refs": [
+            "30"
+          ]
+        },
+        {
+          "label": "Bakımevi kurma yükümlülüğünde nüfus eşiği",
+          "value": "Yirmi beş bini aşan belediyeler",
+          "refs": [
+            "Ek 1"
+          ]
+        },
+        {
+          "label": "Bakımevi kaynağını ayırmama ya da amacı dışında sarf etme",
+          "value": "Altı aydan iki yıla kadar hapis",
+          "refs": [
+            "Ek 1"
+          ]
+        },
+        {
+          "label": "Mevcut sirk ve yunus parklarının faaliyetine son vermesi",
+          "value": "On yılın sonunda",
+          "refs": [
+            "Ek 2"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "28",
+        "28/A",
+        "30",
+        "Ek 1",
+        "Ek 2"
+      ]
+    },
+    {
+      "type": "compare",
+      "title": "Kabahat ve suç yan yana",
+      "rows": [
+        {
+          "aspect": "Yaptırım",
+          "left": "İdarî para cezası",
+          "right": "Hapis cezası; bazı suçlarda adli para cezası",
+          "refs": [
+            "28",
+            "28/A"
+          ]
+        },
+        {
+          "aspect": "Yasaklardan (md 14) hangileri",
+          "left": "(a), (b), (d), (e), (f), (g), (h), (ı), (k), (l), (n) ve (o) bentleri",
+          "right": "Cinsel saldırı veya tecavüz; ev hayvanına veya evcil hayvana (m) bendindeki işkence ve acımasız, zalimce muamele",
+          "refs": [
+            "28",
+            "28/A"
+          ]
+        },
+        {
+          "aspect": "Kim uygular / nasıl başlar",
+          "left": "Denetime yetkili merci verir",
+          "right": "Tarım ve Orman Bakanlığının il veya ilçe müdürlüklerinin Cumhuriyet başsavcılığına yazılı başvurusu; suçüstünde genel hükümler",
+          "refs": [
+            "25",
+            "28/A"
+          ]
+        },
+        {
+          "aspect": "Görevli tarafından işlenirse",
+          "left": "Ceza iki kat artırılır",
+          "right": "Ceza yarı oranında artırılır",
+          "refs": [
+            "28",
+            "28/A"
+          ]
+        },
+        {
+          "aspect": "Birden fazla hayvan",
+          "left": "Çoğu bentte ceza hayvan başına hesaplanır",
+          "right": "Aynı anda işlenirse ceza yarı oranında artırılır",
+          "refs": [
+            "28",
+            "28/A"
+          ]
+        },
+        {
+          "aspect": "El konulan kedi ve köpekler",
+          "left": "Bakımevi bulunan en yakın belediye bakımevine götürür",
+          "right": "Bakımevi bulunan en yakın belediye bakımevine götürür",
+          "refs": [
+            "28",
+            "28/A"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "25",
+        "28",
+        "28/A"
+      ]
+    },
+    {
+      "type": "exam_stats",
+      "title": "Sınav der ki",
+      "rows": [
+        {
+          "label": "Bu ünitenin maddelerinden yayındaki soru",
+          "value": "1",
+          "refs": [
+            "14",
+            "15",
+            "16",
+            "17",
+            "19",
+            "20",
+            "21",
+            "22",
+            "24",
+            "25",
+            "28",
+            "28/A",
+            "30",
+            "31",
+            "Ek 1",
+            "Ek 2",
+            "Geçici 3"
+          ]
+        },
+        {
+          "label": "md 17 — Denetim",
+          "value": "1 soru",
+          "refs": [
+            "17"
+          ]
+        },
+        {
+          "label": "md 25 — İdarî para cezası verme yetkisi",
+          "value": "1 soru",
+          "refs": [
+            "25"
+          ]
+        },
+        {
+          "label": "md 30 — Fiillerin tekrarı",
+          "value": "1 soru",
+          "refs": [
+            "30"
+          ]
+        },
+        {
+          "label": "md Geçici 3",
+          "value": "1 soru",
+          "refs": [
+            "Geçici 3"
+          ]
+        },
+        {
+          "label": "Hiç soru çıkmamış",
+          "value": "md 14, md 15, md 16, md 19, md 20, md 21, md 22, md 24, md 28, md 28/A, md 31, md Ek 1, md Ek 2",
+          "refs": [
+            "14",
+            "15",
+            "16",
+            "17",
+            "19",
+            "20",
+            "21",
+            "22",
+            "24",
+            "25",
+            "28",
+            "28/A",
+            "30",
+            "31",
+            "Ek 1",
+            "Ek 2",
+            "Geçici 3"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "14",
+        "15",
+        "16",
+        "17",
+        "19",
+        "20",
+        "21",
+        "22",
+        "24",
+        "25",
+        "28",
+        "28/A",
+        "30",
+        "31",
+        "Ek 1",
+        "Ek 2",
+        "Geçici 3"
+      ],
+      "generated": true
+    },
+    {
+      "type": "bridge",
+      "title": "Bu üniteden soru çöz",
+      "articleRefs": [
+        "14",
+        "15",
+        "16",
+        "17",
+        "19",
+        "20",
+        "21",
+        "22",
+        "24",
+        "25",
+        "28",
+        "28/A",
+        "30",
+        "31",
+        "Ek 1",
+        "Ek 2",
+        "Geçici 3"
+      ],
+      "generated": true,
+      "rows": [
+        {
+          "label": "Madde kapsamlı seans",
+          "value": "md 14–17, 19–22, 24, 25, 28, 28/A, 30, 31, Ek 1, Ek 2, Geçici 3, 1 soru",
+          "refs": [
+            "14",
+            "15",
+            "16",
+            "17",
+            "19",
+            "20",
+            "21",
+            "22",
+            "24",
+            "25",
+            "28",
+            "28/A",
+            "30",
+            "31",
+            "Ek 1",
+            "Ek 2",
+            "Geçici 3"
+          ]
+        }
+      ]
+    }
+  ]
+}

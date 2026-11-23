@@ -1,0 +1,254 @@
+{
+  "deck": {
+    "topicId": "501582f0-50e1-430c-a98b-4a49595573aa",
+    "legislationSlug": "5199-sayili-hayvanlari-koruma-kanunu",
+    "unitSlug": "hkk-yasaklar-denetim-ve-cezalar",
+    "sourceLabel": "AI bilgi kartı — 5199 Sayılı Hayvanları Koruma Kanunu md 14–17, 19–22, 24, 25, 28/A, 28, 30, 31, Ek 1, Ek 2, Geçici 3",
+    "generatedBy": "claude alt ajanı (kart-uret.ts istemi, API'siz kip; kaynak: hkk-yasaklar-denetim-ve-cezalar özeti + resmî madde metni; stil kapısı geçti)"
+  },
+  "cards": [
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "5199 sayılı Hayvanları Koruma Kanununa göre ev hayvanlarını kaç yaşından küçüklere satmak yasaktır?",
+      "back": "Onaltı yaşından küçüklere. Yasak, ev hayvanının bu yaştan küçüklere satılmasıdır.",
+      "explanation": "Hayvan bakımı eğitimi almamış kişilerce ev hayvanı satılması da yasaktır.",
+      "articleRefs": [
+        "14"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "5199 sayılı Hayvanları Koruma Kanununa göre gebe bir hayvanın çalıştırılması, gebelik süresinin ne kadarı tamamlandığında yasaktır?",
+      "back": "2/3'ü tamamlandığında. Gebelik süresinin 2/3'ünü tamamlamış gebe hayvan çalıştırılamaz.",
+      "explanation": "Aynı bent hasta ve yeni ana olan hayvanın çalıştırılmasını, ayrıca hayvanın uygun olmayan koşullarda barındırılmasını da yasaklar.",
+      "articleRefs": [
+        "14"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "5199 sayılı Hayvanları Koruma Kanununa göre hayvanların yumurtalarına zarar verebilecek sunî müdahale yasağı, havyar üretimini de kapsar mı?",
+      "back": "Hayır. Havyar üretimi yasağın dışında tutulmuştur; kanunî ve tıbbî gerekçeler de hariçtir.",
+      "explanation": "Yasak; hayvanlara, ana karnındaki yavrularına veya yumurtalarına zarar verebilecek sunî müdahaleler yapmayı ve yabancı maddeler vermeyi kapsar.",
+      "articleRefs": [
+        "14"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "5199 sayılı Hayvanları Koruma Kanununa göre il hayvanları koruma kurulu kimin başkanlığında toplanır?",
+      "back": "Valinin başkanlığında.",
+      "explanation": "Kurul başkanı gerekli gördüğü durumlarda konuyla ilgili olarak diğer kurum ve kuruluşlardan yetkili isteyebilir.",
+      "articleRefs": [
+        "15"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "5199 sayılı Hayvanları Koruma Kanununa göre il hayvanları koruma kurulu en geç ne kadar sürede bir toplanır?",
+      "back": "En geç üç ayda bir; başkanın çağrısı üzerine toplanır.",
+      "explanation": "Gerektiğinde olağanüstü toplantılar da yapılabilir.",
+      "articleRefs": [
+        "15"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "5199 sayılı Hayvanları Koruma Kanununa göre bir hayvana çarpan ve ona zarar veren sürücünün yükümlülüğü nedir?",
+      "back": "Hayvanı en yakın veteriner hekim ya da tedavi ünitesine götürmek veya götürülmesini sağlamak zorundadır.",
+      "articleRefs": [
+        "21"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "5199 sayılı Hayvanları Koruma Kanununa göre sahiplendiği hayvanların bakımını ciddi şekilde ihmal eden kişi hakkında denetimle yetkili merci hangi tedbiri uygular?",
+      "back": "Hayvan bulundurmasını yasaklar ve hayvanlarına el koyar.",
+      "explanation": "Aynı tedbir, Kanunun hayvanları korumaya yönelik hükümlerine aykırı hareket eden ya da hayvanlarına ağrı, acı veya zarar veren kişilere de uygulanır. El konulan hayvanlardan sahiplendirilme niteliği olanlar sahiplendirilinceye kadar hayvan bakımevinde barındırılır.",
+      "articleRefs": [
+        "24"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "5199 sayılı Hayvanları Koruma Kanununa göre idarî para cezalarını her durumda mahallin en büyük mülkî amiri mi verir?",
+      "back": "Hayır. İdarî para cezalarını denetime yetkili merci verir. Denetleme yetkisi Bakanlığa aittir; gerektiğinde Bakanlıkça mahallin en büyük mülkî amirine devredilebilir.",
+      "explanation": "Ceza verme yetkisi denetleme yetkisini izler: mülkî amir, ancak Bakanlık yetkiyi devretmişse ceza verir.",
+      "articleRefs": [
+        "25",
+        "17"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "5199 sayılı Hayvanları Koruma Kanununa göre nesli yok olma tehlikesi altında olan bir hayvanı öldüren kişiye hangi ceza verilir?",
+      "back": "Bir yıldan beş yıla kadar hapis cezası.",
+      "explanation": "Bir hayvan neslini yok eden kişi ise beş yıldan on yıla kadar hapis cezası ile cezalandırılır.",
+      "articleRefs": [
+        "28/A"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "5199 sayılı Hayvanları Koruma Kanununa göre bir ev hayvanını veya evcil hayvanı kasten öldüren kişiye hangi ceza verilir?",
+      "back": "Altı aydan dört yıla kadar hapis cezası.",
+      "articleRefs": [
+        "28/A"
+      ],
+      "explanation": "Kanunun 12 nci maddesi kapsamındaki hayvan kesimleri ile 13 üncü maddesinin birinci, ikinci ve üçüncü fıkrasında belirtilen hususlar bu suçun dışındadır."
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "5199 sayılı Hayvanları Koruma Kanununa göre hayvanlara cinsel saldırıda bulunan kişiye hapis cezası yerine yalnız adli para cezası verilebilir mi?",
+      "back": "Hayır. Altı aydan üç yıla kadar hapis ve yüz günden az olmamak üzere adli para cezası birlikte verilir.",
+      "explanation": "Hapis ile adli para cezasının seçimlik olduğu fiil hayvanları dövüştürmektir: orada ceza hapis veya adli para cezasıdır.",
+      "articleRefs": [
+        "28/A"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "5199 sayılı Hayvanları Koruma Kanununa göre hayvanları dövüştüren kişiye hangi ceza verilir?",
+      "back": "Üç aydan iki yıla kadar hapis veya adli para cezası.",
+      "articleRefs": [
+        "28/A"
+      ],
+      "explanation": "Hapis ile adli para cezası burada seçimliktir; hayvanlara cinsel saldırıda ise ikisi birlikte verilir. Kanunun 11 inci maddesinin ikinci fıkrasının ikinci cümlesi saklıdır."
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "5199 sayılı Hayvanları Koruma Kanununa göre bir ev hayvanına veya evcil hayvana işkence eden ya da acımasız ve zalimce muamelede bulunan kişiye hangi ceza verilir?",
+      "back": "Altı aydan üç yıla kadar hapis cezası.",
+      "explanation": "Hayvanlara cinsel saldırıda ise aynı süredeki hapis cezasıyla birlikte adli para cezası da verilir.",
+      "articleRefs": [
+        "28/A"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "5199 sayılı Hayvanları Koruma Kanununun adli cezalar maddesinde düzenlenen suçlarda soruşturma yapılması kimin, nereye yapacağı yazılı başvuruya bağlıdır?",
+      "back": "Tarım ve Orman Bakanlığının il veya ilçe müdürlüklerinin Cumhuriyet başsavcılığına yazılı başvurusuna. Bu başvuru muhakeme şartı niteliğindedir.",
+      "explanation": "Sahibi tarafından işlenen suçlar da buna dahildir.",
+      "articleRefs": [
+        "28/A"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "5199 sayılı Hayvanları Koruma Kanununa göre ev hayvanını kasten öldürme, cinsel saldırı, işkence veya dövüştürme suçu başka bir kişi tarafından sahipli hayvana karşı işlenirse, soruşturma Bakanlık müdürlüğünün yazılı başvurusundan başka hangi yolla da yapılır?",
+      "back": "Hayvan sahibinin şikâyeti üzerine de soruşturma yapılır.",
+      "articleRefs": [
+        "28/A"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "5199 sayılı Hayvanları Koruma Kanununun adli cezalar maddesinde düzenlenen suçlarda suçüstü hâlinde soruşturma nasıl yapılır?",
+      "back": "Genel hükümlere göre yapılır.",
+      "explanation": "Bu suçlarda soruşturma yapılması Tarım ve Orman Bakanlığının il veya ilçe müdürlüklerinin Cumhuriyet başsavcılığına yazılı başvurusuna bağlıdır; suçüstü hâli bundan ayrı tutulmuştur.",
+      "articleRefs": [
+        "28/A"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "5199 sayılı Hayvanları Koruma Kanununun adli cezalar maddesinde düzenlenen bir suç birden fazla hayvana karşı aynı anda işlenirse ceza nasıl belirlenir?",
+      "back": "Yarı oranında artırılır.",
+      "explanation": "Aynı artırım, suçun veteriner hekim, veteriner sağlık teknisyeni, hayvan koruma derneği üyeleri, hayvan koruma vakfı üyeleri veya hayvanlara bakmak yahut onları korumakla görevlendirilen kişiler tarafından işlenmesinde de uygulanır.",
+      "articleRefs": [
+        "28/A"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "5199 sayılı Hayvanları Koruma Kanununun idarî para cezaları maddesinde düzenlenen bir kabahati veteriner hekim işlerse ceza nasıl uygulanır?",
+      "back": "İki kat artırılarak uygulanır.",
+      "explanation": "Veteriner sağlık teknisyeni, hayvan koruma derneği üyeleri, hayvan koruma vakfı üyeleri veya hayvanlara bakmak veya onları korumakla görevlendirilen kişiler için de aynı artırım geçerlidir.",
+      "articleRefs": [
+        "28"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "5199 sayılı Hayvanları Koruma Kanununa göre ceza hükmü altına alınmış bir fiilin ilk tekrarında para cezası üç kat mı artırılır?",
+      "back": "Hayır. Tekrar halinde para cezaları bir kat artırılır; üç kat artırım daha fazla tekrar halinde uygulanır.",
+      "articleRefs": [
+        "30"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "5199 sayılı Hayvanları Koruma Kanununa göre büyükşehir ve il belediyeleri dışında, nüfusu kaçı aşan belediyeler hayvan bakımevi kurar?",
+      "back": "Yirmi beş bini aşan belediyeler.",
+      "explanation": "Bakımevleri; sahipsiz veya güçten düşmüş ya da tehlike arz eden hayvanların korunması, sahiplendirilinceye kadar bakımının yapılması ve rehabilitasyonunun sağlanması amacıyla kurulur.",
+      "articleRefs": [
+        "Ek 1"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "5199 sayılı Hayvanları Koruma Kanununa göre büyükşehir, il ve nüfusu yirmi beş bini aşan belediyelerde, Kanunun geçici 4 üncü maddesinde belirtilen kaynağı başka amaçlar için sarf eden belediye başkanı ve belediye yetkililerine hangi ceza verilir?",
+      "back": "Altı aydan iki yıla kadar hapis cezası.",
+      "explanation": "Aynı ceza, kaynağı ayırmayan belediye başkanı ve meclis üyeleri ile ayrılan kaynağı bakımevi kurmak, sahipsiz hayvanları toplamak, rehabilite etmek veya sahiplendirilinceye kadar bakmak için sarf etmeyenler için de öngörülmüştür.",
+      "articleRefs": [
+        "Ek 1"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "5199 sayılı Hayvanları Koruma Kanununa göre hayvanların kullanıldığı hangi tesislerin yeni kurulması yasaktır?",
+      "back": "Kara ve su sirkleri ile yunus parklarının.",
+      "explanation": "Mevcut işletmeler kapasite artırımına gidemez, üretim yapamaz ve Bakanlığın izni olmadan işletme hakkını devredemez.",
+      "articleRefs": [
+        "Ek 2"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "5199 sayılı Hayvanları Koruma Kanununa göre kısırlaştırılıp kayıt altına alınmış Pitbull Terrier türü bir köpek ağızlıksız ve tasmasız dolaştırılabilir mi?",
+      "back": "Hayır. Bu hayvanlar kayıt belgesiz, ağızlıksız ve tasmasız dolaştırılamaz; halkın yoğun olarak bulunduğu yerler ile çocuk oyun alanları ve parklarına da sokulamaz.",
+      "explanation": "Bu kurallara aykırı hareket edenlere idarî para cezası verilir.",
+      "articleRefs": [
+        "Geçici 3"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "5199 sayılı Hayvanları Koruma Kanununa göre kısırlaştırılıp kayıt altına alınmış Pitbull Terrier türü bir köpeğin ağızlıksız dolaştırılması tekrarlanırsa idarî para cezasına ek olarak ne yapılır?",
+      "back": "Hayvana el konulur ve hayvan bakımevine götürülür.",
+      "explanation": "İlk aykırılıkta idarî para cezası verilir; el koyma, aykırılığın tekrarı hâlinde para cezasının yanında uygulanır.",
+      "articleRefs": [
+        "Geçici 3"
+      ]
+    }
+  ]
+}

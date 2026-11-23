@@ -10,6 +10,9 @@
  * exam_stats ve bridge kartlarını MODEL YAZMAZ (betik doldurur). Kaynak etiketi istemde yok.
  * Çıktı JSON şeması pilotla aynı (docs/53-konu-ozetleri/pilot/anayasa-yasama-1.json).
  *
+ * API'siz kip (23 Kas 2026; yerel anahtar geçersizken): `ISTEM_YAZ=<dosya>` istemi (sistem + kullanıcı iletisi)
+ * dosyaya yazar ve çıkar; istemi bir alt ajan işler, ham JSON çıktısı `HAM=<dosya>` ile aynı son işlemden geçer.
+ *
  * Model: claude-opus-5-5 (varsayılan, skill kuralı). Sunucu tarafı fallback açık: güvenlik
  * sınıflandırıcısı reddederse istek aynı çağrıda yedek modelde tamamlanır.
  */
@@ -107,6 +110,25 @@ function userMessage(g: OzetGirdi, topicId: string): string {
   if (!topicId) {
     console.error('topicId yok: mevzuat konuya bağlı değil; --topic ver.');
     process.exit(2);
+  }
+  if (process.env.ISTEM_YAZ) {
+    writeFileSync(process.env.ISTEM_YAZ, `# SİSTEM İSTEMİ\n\n${SYSTEM}\n\n# KULLANICI İLETİSİ\n\n${userMessage(girdi, topicId)}\n`);
+    console.log(`İstem yazıldı: ${process.env.ISTEM_YAZ}`);
+    return;
+  }
+  if (process.env.HAM) {
+    const ham = readFileSync(process.env.HAM, 'utf8').trim().replace(/^```(?:json)?\s*/i, '').replace(/\s*```$/, '');
+    const d = JSON.parse(ham) as SummaryUnitJson;
+    d.unit = {
+      ...d.unit, slug, legislationSlug: girdi.legislation.slug, topicId, title: d.unit?.title || title,
+      articleFrom: girdi.range.from, articleTo: girdi.range.to,
+      ...(girdi.articleNos?.length ? { articleNos: girdi.articleNos } : {}),
+      sourceLabel: `AI özeti — ${girdi.legislation.name}, md ${etiket(girdi)}`,
+      generatedBy: 'claude alt ajanı (ozet-uret.ts istemi, API\'siz kip)',
+    };
+    writeFileSync(out, JSON.stringify(d, null, 2) + '\n');
+    console.log(`Üretildi (HAM): ${d.blocks?.length ?? 0} kart → ${out}`);
+    return;
   }
   const client = new Anthropic();
   const stream = client.beta.messages.stream({

@@ -1,0 +1,421 @@
+{
+  "unit": {
+    "slug": "iiik-alkollu-icki-yasaklari-ve-cezalar",
+    "legislationSlug": "4250-sayili-ispirto-ve-ispirtolu-ickiler-inhisari-kanunu",
+    "topicId": "81ee6d38-eb64-48ed-a306-05e30f48f444",
+    "title": "Alkollü İçkiler: Yasaklar ve Cezalar",
+    "subtitle": "Kime, nerede, hangi saatte satılamaz; cezayı kim verir, satış belgesi ne zaman iptal edilir",
+    "articleFrom": "1",
+    "articleTo": "9",
+    "readingMinutes": 10,
+    "sourceLabel": "AI özeti — 4250 Sayılı İspirto ve İspirtolu İçkiler İnhisarı Kanunu, md 1, 3, 6, 7, 9",
+    "articleNos": [
+      "1",
+      "3",
+      "6",
+      "7",
+      "9"
+    ],
+    "generatedBy": "claude alt ajanı (ozet-uret.ts istemi, API'siz kip)",
+    "sortOrder": 1
+  },
+  "blocks": [
+    {
+      "type": "concept",
+      "title": "Bu kanun neyi düzenler?",
+      "body": "Bu kanun ispirto ve ispirtolu içkilerin üretimini, alım satımını, dağıtımını ve fiyatlandırılmasını düzenler. Senin için asıl değerli kısım ise satış ve tanıtım yasakları ile bunların yaptırımlarıdır: alkollü içki kime satılamaz, nerede ve hangi saatte satılamaz, yasağı çiğneyene cezayı kim verir. Bu soruların cevabı md 6 ve md 7'dedir; satış belgesi ve mesafe şartı ise md 9'da durur.",
+      "articleRefs": [
+        "1",
+        "6",
+        "7",
+        "9"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Kapsam: serbest olanlar ve kapsam dışı kalanlar",
+      "body": "**md 1'deki şartlar aranmadan serbest olanlar:**\n- Bira ve her türlü şarap ve meyve şaraplarının üretimi, fiyatlandırılması, dağıtılması ve satılması.\n- Viski ve tabii köpüren şarapların ithali, fiyatlandırılması, dağıtılması ve satılması.\n\n**Kapsam dışı:** Kısmen tahammür etmiş olmakla beraber içki vasfını haiz bulunmayan **şıra ve boza** gibi maddeler bu kanunun kapsamı dışındadır.\n\n**Ayrım yok:** Yurt içinde üretilen veya ithal edilen ürünler arasında ayrım yapılmaz.",
+      "articleRefs": [
+        "1"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Üretimde aranan şartlar",
+      "body": "- İspirto ve ispirtolu içkilerin **Türk Gıda Kodeksine uygun** olarak üretilmiş olması şarttır.\n- Her türlü alkollü içki üretiminde, tarımsal kökenli etil alkol veya distilatı dışındaki alkol ve alkol türevleri **kullanılamaz**.\n- **Rakı:** Türkiye'de üretilmesi ve üründeki toplam alkolün en az **% 65**'inin suma olması şarttır.",
+      "articleRefs": [
+        "3"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Reklam ve tanıtım yasağı",
+      "body": "**Kural:** Alkollü içkilerin **her ne surette olursa olsun** reklamı ve tüketicilere yönelik tanıtımı yapılamaz. Bu ürünlerin kullanılmasını ve satışını özendiren veya teşvik eden **kampanya, promosyon ve etkinlik** yapılamaz.\n\n**İstisna:** Münhasıran alkollü içkilerin **uluslararası düzeyde tanıtımına** yönelik ihtisas fuarları ile bilimsel yayın ve faaliyetler düzenlenebilir.\n\n**Ekran:** Televizyonlarda yayınlanan dizi, film ve müzik kliplerinde alkollü içkileri özendirici görüntülere yer verilemez.\n\n**Bedelsiz dağıtım:** Alkollü içkileri üretenler, ithal edenler ve pazarlayanlar her ne amaçla olursa olsun teşvik, hediye, eşantiyon, promosyon veya bedelsiz olarak alkollü içki **dağıtamaz**.",
+      "articleRefs": [
+        "6"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Destek olma ve marka görünürlüğü",
+      "body": "**Destek yasağı:** Alkollü içkileri üreten, ithal eden ve pazarlayanlar; ticaret unvanlarını, ürünlerinin marka, amblem ve logolarını ya da arz ambalajındaki ifade, şekil, isim, işaret ve görselleri kullanarak **hiçbir etkinliğe** veya her tür mecrada yapılacak yayın ve paylaşımlara destek olamaz.\n\n**Bulundurma yasağı:** Alkollü içkilerin veya bu firmaların isim, marka, logo ve amblemleri ile arz ambalajındaki ifade, şekil, isim, işaret ve görseller iş yerlerinin **içinde, dışında, vitrinlerinde, satış ünitelerinde** ve hiçbir etkinlik alanında bulundurulamaz.\n\n**İstisna:** Açık alkollü içki satışı yapmaya ilişkin izin belgesi olan işletmelerde **servis amaçlı materyallerde** marka, amblem ve logo kullanılabilir.",
+      "articleRefs": [
+        "6"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "On sekiz yaş sınırı: satış, sunum, istihdam",
+      "body": "**Satış ve sunum:** Alkollü içkiler, tüketilmek veya beraberinde götürülmek üzere **on sekiz yaşını doldurmamış** kişilere satılamaz veya sunulamaz.\n\n**İstihdam:** On sekiz yaşını doldurmamış kişiler alkollü içkilerin üretiminde, pazarlanmasında, satışında ve açık sunumunda istihdam edilemez.\n\n**İstisna (yalnız istihdamda):** Yasal düzenlemeler uyarınca gerçekleştirilen **eğitim amaçlı çalışmalar** bu hükmün dışındadır.",
+      "articleRefs": [
+        "6"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Satış yöntemi ve saat yasağı",
+      "body": "Alkollü içkiler:\n- **otomatik satış makineleri** ile satılamaz,\n- her nevi oyun makineleri veya farklı yöntemlerle **oyun ve bahse** konu edilemez,\n- **basın ve yayın yoluyla** tüketicilere satılamaz,\n- **posta ile satış** yöntemi kullanılarak gönderilemez,\n- **22:00 ila 06:00** saatleri arasında **perakende** olarak satılamaz.\n\nBu yasakların hepsi aynı fıkradadır; ama cezası sorulduğunda fıkranın cümleleri ayrılır. Saat yasağı fıkranın üçüncü cümlesidir ve yaptırımı ilk iki cümleden farklı bentte düzenlenir.",
+      "articleRefs": [
+        "6",
+        "7"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Saat yasağında neye dikkat edilir?",
+      "body": "Yasak aralığı **22:00 ila 06:00**'dır; başlangıç 21:00 ya da 23:00 değildir.\n\n**Yasak perakende satışadır:** bu saatlerde alkollü içki perakende olarak satılamaz. Sunum izni verilen yerlerde alkollü içkinin açık olarak tüketilebilmesi ise ayrı bir fıkrada düzenlenir; o fıkranın yasağı, bu yerlerde **tesis sınırları dışında tüketilmek üzere** satış yapılmasıdır.\n\n**Teşhir ayrı bir yasaktır:** Alkollü içkiler işletme dışından görülecek şekilde perakende olarak satışa arz edilemez. Bu yasak saate bağlı değildir.",
+      "articleRefs": [
+        "6"
+      ],
+      "counterNumbers": [
+        21,
+        23
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Alkollü içki satılamayan yerler",
+      "body": "**Otoyol ve devlet karayolu:** Otoyollardaki ve devlet karayollarındaki yapı ve tesislerde alkollü içki **satışına ve tüketimine** izin verilmez. **Meskun mahaller ve konaklama yerleri** bunun dışındadır.\n\n**Satış yapılamayan yerler:**\n- öğrenci yurtları,\n- sağlık hizmeti verilen yerler,\n- spor müsabakası yapılan stadyum ve kapalı spor salonları,\n- her türlü eğitim ve öğretim kurumları,\n- kahvehane, kıraathane, pastane, bezik ve briç salonları,\n- akaryakıt istasyonlarının mağaza ve lokantaları.",
+      "articleRefs": [
+        "6"
+      ]
+    },
+    {
+      "type": "numbers",
+      "title": "Yasaklardaki sınırlar",
+      "rows": [
+        {
+          "label": "Satış ve sunum yasağındaki yaş sınırı",
+          "value": "On sekiz yaşını doldurmamış olmak",
+          "refs": [
+            "6"
+          ]
+        },
+        {
+          "label": "İstihdam yasağındaki yaş sınırı",
+          "value": "On sekiz yaşını doldurmamış olmak (eğitim amaçlı çalışmalar hariç)",
+          "refs": [
+            "6"
+          ]
+        },
+        {
+          "label": "Perakende satışın yasak olduğu saatler",
+          "value": "22:00 ila 06:00",
+          "refs": [
+            "6"
+          ]
+        },
+        {
+          "label": "Rakıda toplam alkol içindeki en az suma oranı",
+          "value": "% 65",
+          "refs": [
+            "3"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "3",
+        "6"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Ambalaj: uyarı mesajı ve marka ayrımı",
+      "body": "**Uyarı mesajı:** Türkiye'de üretilen veya ithal edilen alkollü içkilerin ambalajları üzerine, zararlarını belirten **Türkçe yazılı** uyarı mesajları konulur. Mesajlar resim, şekil veya grafik biçimlerinde de olabilir. Uyarı mesajı taşımayan alkollü içkiler **satışa arz edilemez, satılamaz**. Mesajların şekli, boyutu ve içeriği, **Sağlık Bakanlığının uygun görüşü** alınarak Tütün ve Alkol Piyasası Düzenleme Kurumu tarafından belirlenir.\n\n**Marka ayrımı:** Alkollü içkilerin marka, tanıtıcı ve ayırt edici hiçbir işareti alkolsüz içki ve sair ürünlerde; onların işaretleri de alkollü içkilerde kullanılamaz. Fermente alkollü içki markası distile alkollü içki markası olarak, distile alkollü içki markası da fermente alkollü içki markası olarak kullanılamaz.\n\n**Ortak istisna:** İhraç amaçlı üretilenler bu hükümlerin dışındadır.\n\n**Not:** Tütün ve Alkol Piyasası Düzenleme Kurumu madde metnindeki hâliyle verilmiştir.",
+      "articleRefs": [
+        "6"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Hangi yasağa hangi bent?",
+      "body": "md 7, md 6'daki yasakları bentlere ayırır ve her biri için **idari para cezası verilir**; çoğu bentte alt ve üst sınır kanunda gösterilmiştir, (ç) ve (e) bentleri ayrıdır:\n\n- **(a)** Reklam, tanıtım, destek olma ve bedelsiz dağıtım yasakları (birinci ve ikinci fıkra): aykırı hareket edenlere **ve ilgili işletme sahiplerine**.\n- **(b)** On sekiz yaşını doldurmamışlara satış veya sunum, bunların istihdamı ve tesis sınırları dışında tüketilmek üzere satış (üçüncü, dördüncü ve altıncı fıkra).\n- **(c)** İşletme dışından görülecek şekilde satışa arz (yedinci fıkra).\n- **(ç)** Uyarı mesajı, marka ayrımı ve alkol miktarının yazılması yükümlülükleri (sekiz, dokuz ve onuncu fıkra): ihlal eden **üretici ve ithalatçılara**, alt sınırı kanunda gösterilmek kaydıyla, piyasaya sürülen malların **piyasa değeri kadar**.\n- **(d)** Satış yapılamayan yerlere ilişkin yasaklar (on birinci fıkra): ihlal eden **satıcılara**.\n- **(e)** Otomatik makine, oyun ve bahis, basın ve yayın yoluyla satış, posta ile gönderme (beşinci fıkranın birinci ve ikinci cümleleri): 4733 sayılı Kanunda öngörülen idari para cezası.\n- **(f)** Saat yasağı (beşinci fıkranın üçüncü cümlesi).",
+      "articleRefs": [
+        "6",
+        "7"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "İdari para cezasını kim verir?",
+      "body": "- **Tütün ve Alkol Piyasası Düzenleme Kurumu:** (a), (ç) ve (e) bentlerindeki idari para cezaları.\n- **Radyo ve Televizyon Üst Kurulu:** televizyon ve radyolara uygulanacak idari para cezaları.\n- **Mahalli mülki amir:** birinci fıkranın **diğer bentlerindeki** idari para cezaları. Yani (b), (c), (d) ve (f) bentleri.\n\n**Mülkiyetin kamuya geçirilmesi:** (ç) bendindeki kabahatin konusunu oluşturan ürünlerin **ayrıca** mülkiyetinin kamuya geçirilmesine karar verilir. Bu kararı vermeye de Tütün ve Alkol Piyasası Düzenleme Kurumu yetkilidir.\n\n**Not:** Tütün ve Alkol Piyasası Düzenleme Kurumu madde metnindeki hâliyle verilmiştir.",
+      "articleRefs": [
+        "7"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Çocuğa satışta ek sonuçlar",
+      "body": "On sekiz yaşını doldurmamış kişiye satış veya sunum yasağına aykırılık, (b) bendindeki idari para cezasıyla bitmeyebilir.\n\n**Ceza Kanunu:** Bu yasağa aykırı hareket edilmesi sonucunda **çocuğun sağlığının tehlikeye sokulması** hâlinde, fail hakkında **ayrıca** Türk Ceza Kanununun \"Sağlık için tehlikeli madde temini\" başlıklı md 194 hükmüne göre cezaya hükmolunur.\n\n**Satış belgesi iptali:** Bu kabahat ya da saat yasağına aykırılık, **ilk fiilin işlenmesinden sonraki beş yıl içinde üçüncü defa** işlenirse ayrıca **Tarım ve Orman Bakanlığı** tarafından, satıcıya ait **tüm** perakende alkollü içki ve açık alkollü içki satış belgelerinin iptaline karar verilir.\n\n**İptalden sonra:** Satış belgesi iptal edilen kişilere **iki yıl** süreyle yeni perakende alkollü içki ve açık alkollü içki satış belgesi verilemez.",
+      "articleRefs": [
+        "6",
+        "7"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Markette çocuğa içki satıldı: ne olur?",
+      "body": "Bu olayda sınavın sevdiği dört yanılgı var.\n\n**Cezayı kolluk kesmez.** Bu yasak (b) bendindedir; maddede bu bent için yetkili sayılan makam **mahalli mülki amirdir**. md 9'a göre kolluk, iş yeri açma ruhsatı verilmeden önce görüş bildirir.\n\n**Önce uyarı aşaması düzenlenmemiştir.** Yasağa aykırı hareket edene idari para cezası verilir; md 7'de cezadan önce bir uyarı aşaması yer almaz.\n\n**İptal ilk fiilde gelmez.** Satış belgesinin iptali için kabahatin, ilk fiilden sonraki beş yıl içinde **üçüncü defa** işlenmesi aranır. İptal ilk fiilde ya da ikinci defada gelmez.\n\n**md 7'deki yaptırım belge iptalidir.** İptal edilen kişiye iki yıl süreyle yeni belge verilemez; md 7'deki süre iki yıldır.",
+      "articleRefs": [
+        "7",
+        "9"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Para cezası ile belge iptalini aynı makam vermez",
+      "body": "Aynı fiilde iki ayrı makam devreye girer, bunları karıştırma.\n\n- **İdari para cezası:** on sekiz yaş yasağında ve saat yasağında **mahalli mülki amir** verir.\n- **Satış belgelerinin iptali:** aynı iki kabahatin beş yıl içinde üçüncü defa işlenmesinde kararı **Tarım ve Orman Bakanlığı** verir.\n\n**md 7'deki satış belgesi iptali şu iki kabahat için öngörülmüştür:** md 6'nın üçüncü fıkrası (on sekiz yaşını doldurmamışa satış veya sunum) ile beşinci fıkrasının üçüncü cümlesi (saat yasağı).\n\n**Beş yıl nereden başlar?** Son fiilden değil, **ilk fiilin işlenmesinden** itibaren sayılır.\n\n**Kapsam:** İptal tek bir belgeyle sınırlı değildir; satıcıya ait **tüm** perakende ve açık alkollü içki satış belgelerini kapsar.",
+      "articleRefs": [
+        "7"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Satış belgesi ve kolluğun görüşü",
+      "body": "**Satış belgesi zorunluluğu:** Tütün mamulü, etil alkol, metil alkol ve alkollü içki satmak isteyenlerin Tütün ve Alkol Piyasası Düzenleme Kurumundan satış belgesi almaları zorunludur.\n\n**Önce ruhsat ya da turizm belgesi:** Satış belgesi almak isteyenler öncelikle **belediye veya il özel idaresinden** iş yeri açma ruhsatı **ya da** Kültür ve Turizm Bakanlığından turizm belgesi almak zorundadır.\n\n**Kolluğun rolü:** Belediye veya il özel idaresi, ruhsat vermeden önce **yetkili kolluk kuvvetinin görüşünü** alır. Kolluk kuvveti görüşünü **yedi gün** içinde verir.\n\n**Not:** Tütün ve Alkol Piyasası Düzenleme Kurumu madde metnindeki hâliyle verilmiştir.",
+      "articleRefs": [
+        "9"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Yüz metre mesafe şartı",
+      "body": "**Kural:** Bu kanun kapsamına giren ürünlerin perakende veya açık olarak satışının yapıldığı yerler ile **örgün eğitim kurumları ve dershaneler, öğrenci yurtları ve ibadethaneler** arasında, **kapıdan kapıya en az yüz metre** mesafe bulunması zorunludur.\n\n**İstisna:** Mesafe şartı **turizm belgeli işletmeler** için uygulanmaz.\n\n**Hangi tarihe bakılır:** Mesafe şartı, satış belgesinin **verildiği tarih** itibarıyla aranır.\n\n**Süreli etkinlik:** Mesafe sınırları içindeki, taşınmaz kültür varlığı olarak tescilli yapılarda düzenlenecek süreli etkinlikler için açık alkollü içki sunum izni **verilebilir**. İzni Tütün ve Alkol Piyasası Düzenleme Kurumu verir.\n\n**Not:** Tütün ve Alkol Piyasası Düzenleme Kurumu madde metnindeki hâliyle verilmiştir.",
+      "articleRefs": [
+        "9"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Ruhsatta kolluk karar vermez, görüş verir",
+      "body": "İş yeri açma ruhsatını **belediye veya il özel idaresi** verir. Kolluk kuvvetinin payı görüş bildirmektir ve bunun için süresi **yedi gündür**. Süre 15 ya da 30 gün değildir.\n\n**Mesafe ölçüsü:** Yüz metre, **kapıdan kapıya** ölçülür ve \"en az\" yüz metredir.\n\n**Mesafe şartı ile satış yasağını ayır:** Öğrenci yurtlarında ve her türlü eğitim ve öğretim kurumlarında alkollü içki satışı md 6'ya göre zaten yapılamaz. md 9 ise satış yerinin bu tür yerlere **uzaklığını** düzenler; ibadethaneler de bu mesafe listesindedir.\n\n**Turizm belgesi:** Turizm belgeli işletmeler için uygulanmayan şey md 9'daki mesafe şartıdır.",
+      "articleRefs": [
+        "6",
+        "9"
+      ],
+      "counterNumbers": [
+        15,
+        30
+      ]
+    },
+    {
+      "type": "numbers",
+      "title": "Yaptırım ve belge süreleri",
+      "rows": [
+        {
+          "label": "Satış belgesi iptali için tekrar sayısı",
+          "value": "Üçüncü defa işlenme",
+          "refs": [
+            "7"
+          ]
+        },
+        {
+          "label": "Tekrarın arandığı süre",
+          "value": "İlk fiilin işlenmesinden sonraki beş yıl",
+          "refs": [
+            "7"
+          ]
+        },
+        {
+          "label": "İptalden sonra yeni satış belgesi verilemeyen süre",
+          "value": "İki yıl",
+          "refs": [
+            "7"
+          ]
+        },
+        {
+          "label": "Kolluk kuvvetinin ruhsat öncesi görüş süresi",
+          "value": "Yedi gün",
+          "refs": [
+            "9"
+          ]
+        },
+        {
+          "label": "Satış yeri ile eğitim kurumu, yurt ve ibadethane arası mesafe",
+          "value": "Kapıdan kapıya en az yüz metre",
+          "refs": [
+            "9"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "7",
+        "9"
+      ]
+    },
+    {
+      "type": "compare",
+      "title": "Kurumun cezaları ve mülki amirin cezaları",
+      "rows": [
+        {
+          "aspect": "Yetkili makam",
+          "left": "Tütün ve Alkol Piyasası Düzenleme Kurumu (Not: Kurum madde metnindeki hâliyle verilmiştir)",
+          "right": "Mahalli mülki amir",
+          "refs": [
+            "7"
+          ]
+        },
+        {
+          "aspect": "Bentler",
+          "left": "(a), (ç) ve (e)",
+          "right": "Diğer bentler: (b), (c), (d) ve (f)",
+          "refs": [
+            "7"
+          ]
+        },
+        {
+          "aspect": "Tanıtım ve dağıtım",
+          "left": "Reklam, tanıtım, destek olma, bedelsiz dağıtım",
+          "right": "—",
+          "refs": [
+            "6",
+            "7"
+          ]
+        },
+        {
+          "aspect": "Yaş ve saat",
+          "left": "—",
+          "right": "On sekiz yaşını doldurmamışa satış veya sunum, istihdam, saat yasağı",
+          "refs": [
+            "6",
+            "7"
+          ]
+        },
+        {
+          "aspect": "Satış yöntemi",
+          "left": "Otomatik makine, oyun ve bahis, basın ve yayın yoluyla satış, posta ile gönderme",
+          "right": "—",
+          "refs": [
+            "6",
+            "7"
+          ]
+        },
+        {
+          "aspect": "Satış yeri ve teşhir",
+          "left": "—",
+          "right": "Satış yapılamayan yerler, işletme dışından görülecek şekilde arz, tesis sınırları dışında tüketilmek üzere satış",
+          "refs": [
+            "6",
+            "7"
+          ]
+        },
+        {
+          "aspect": "Ambalaj yükümlülükleri",
+          "left": "Uyarı mesajı, marka ayrımı, alkol miktarının yazılması (üretici ve ithalatçı)",
+          "right": "—",
+          "refs": [
+            "6",
+            "7"
+          ]
+        },
+        {
+          "aspect": "Ek yaptırım",
+          "left": "(ç) bendinde ürünlerin mülkiyetinin kamuya geçirilmesi",
+          "right": "On sekiz yaşını doldurmamışa satış veya sunumda ve saat yasağında, ilk fiilden sonraki beş yıl içinde üçüncü defada satış belgelerinin iptali (kararı Tarım ve Orman Bakanlığı verir)",
+          "refs": [
+            "7"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "6",
+        "7"
+      ]
+    },
+    {
+      "type": "exam_stats",
+      "title": "Sınav der ki",
+      "rows": [
+        {
+          "label": "Bu ünitenin maddelerinden yayındaki soru",
+          "value": "1",
+          "refs": [
+            "1",
+            "3",
+            "6",
+            "7",
+            "9"
+          ]
+        },
+        {
+          "label": "md 6",
+          "value": "1 soru",
+          "refs": [
+            "6"
+          ]
+        },
+        {
+          "label": "md 7",
+          "value": "1 soru",
+          "refs": [
+            "7"
+          ]
+        },
+        {
+          "label": "Hiç soru çıkmamış",
+          "value": "md 1, md 3, md 9",
+          "refs": [
+            "1",
+            "3",
+            "6",
+            "7",
+            "9"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "1",
+        "3",
+        "6",
+        "7",
+        "9"
+      ],
+      "generated": true
+    },
+    {
+      "type": "bridge",
+      "title": "Bu üniteden soru çöz",
+      "articleRefs": [
+        "1",
+        "3",
+        "6",
+        "7",
+        "9"
+      ],
+      "generated": true,
+      "rows": [
+        {
+          "label": "Madde kapsamlı seans",
+          "value": "md 1, 3, 6, 7, 9, 1 soru",
+          "refs": [
+            "1",
+            "3",
+            "6",
+            "7",
+            "9"
+          ]
+        }
+      ]
+    }
+  ]
+}

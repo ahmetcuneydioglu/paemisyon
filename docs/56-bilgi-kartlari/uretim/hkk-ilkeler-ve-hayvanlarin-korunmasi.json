@@ -1,0 +1,244 @@
+{
+  "deck": {
+    "topicId": "501582f0-50e1-430c-a98b-4a49595573aa",
+    "legislationSlug": "5199-sayili-hayvanlari-koruma-kanunu",
+    "unitSlug": "hkk-ilkeler-ve-hayvanlarin-korunmasi",
+    "sourceLabel": "AI bilgi kartı — 5199 Sayılı Hayvanları Koruma Kanunu md 1–13",
+    "generatedBy": "claude alt ajanı (kart-uret.ts istemi, API'siz kip; kaynak: hkk-ilkeler-ve-hayvanlarin-korunmasi özeti + resmî madde metni; stil kapısı geçti)"
+  },
+  "cards": [
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "5199 sayılı Hayvanları Koruma Kanununa göre hayvanların rahat yaşamlarını ve iyi muamele görmelerini temin etme amacı hangi kayıtla güdülür?",
+      "back": "İnsan, hayvan ve çevre sağlığı gözetilmek kaydıyla.",
+      "explanation": "Kanun ayrıca hayvanların acı, ıstırap ve eziyete karşı en iyi şekilde korunmasını ve her türlü mağduriyetlerinin önlenmesini amaçlar.",
+      "articleRefs": [
+        "1"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Hayvanları Koruma Kanununa göre \"evcil hayvan\" nasıl tanımlanır?",
+      "back": "İnsan tarafından kültüre alınmış ve eğitilmiş hayvanlar olarak.",
+      "explanation": "Ev hayvanı ayrı bir terimdir: gerçek veya tüzel kişilerce özellikle evde, iş yerlerinde ya da arazisinde özel ilgi ve refakat amacıyla muhafaza edilen, bakımı ve sorumluluğu sahiplerince üstlenilen her türlü hayvandır.",
+      "articleRefs": [
+        "3"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Hayvanları Koruma Kanununa göre \"güçten düşmüş hayvan\" tanımı hangi hayvanlar için yapılmıştır?",
+      "back": "Binek ve yük hayvanları için: fizikî olarak iş yapabilme yeteneğini kaybetmiş olanlar.",
+      "explanation": "Yetenek kaybının nedeni yaşlanma, sakatlanma, yaralanma ve hastalanma gibi çeşitli nedenlerdir; bulaşıcı ve salgın hayvan hastalıkları tanımın dışında tutulur.",
+      "articleRefs": [
+        "3"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Hayvanları Koruma Kanununa göre bir ev hayvanının \"sahipli hayvan\" sayılması için bir kişi tarafından sahiplenilmiş olması yeterli midir?",
+      "back": "Hayır. Sahiplenilmenin yanında bakımı, aşıları, periyodik sağlık kontrolleri yapılmalı ve hayvan Bakanlık veri tabanına kaydedilmiş olmalıdır.",
+      "explanation": "Sahiplenen bir kişi, kuruluş, kurum ya da tüzel kişilik olabilir. Sahipsiz hayvan ise sahipli hayvanlar dışında kalan evcil hayvanlardır.",
+      "articleRefs": [
+        "3"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Hayvanları Koruma Kanununun temel ilkelerine göre eşit doğan bütün hayvanlar, Kanun hükümleri çerçevesinde hangi hakka sahiptir?",
+      "back": "Yaşama hakkına.",
+      "articleRefs": [
+        "4"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Hayvanları Koruma Kanununa göre yerel yönetimler hayvan hastanesini hangi hâlde kurar?",
+      "back": "İlgili karar organının uygun görmesi halinde.",
+      "explanation": "Yerel yönetimler ayrıca gönüllü kuruluşlarla iş birliği içerisinde, sahipsiz hayvanların sahiplendirilinceye kadar bakılmaları için hayvan bakımevleri kurar, bakım ve tedavilerini sağlar ve eğitim çalışmaları yapar.",
+      "articleRefs": [
+        "4"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Hayvanları Koruma Kanununa göre toplu yaşanan yerlerde beslenen ve barındırılan kedi ve köpeklerin kısırlaştırılmasının kimlerce yapılması esastır?",
+      "back": "Sahiplerince; amaç kontrolsüz üremeyi önlemektir.",
+      "explanation": "Kedi ve köpek sahipleri ayrıca hayvanlarını dijital kimliklendirme yöntemleriyle kayıt altına aldırmakla yükümlüdür; bu yöntemlerin usul ve esaslarını Bakanlık yönetmelikle belirler.",
+      "articleRefs": [
+        "4"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Hayvanları Koruma Kanununa göre hayvan sahipleri, hayvanlarından kaynaklanan zararları hangi hâlde tazmin etmek zorundadır?",
+      "back": "Zamanında ve yeterli seviyede tedbir alınmamışsa; bundan kaynaklanan zararları tazmin ederler.",
+      "explanation": "Hayvan sahipleri, hayvanlarından kaynaklanan çevre kirliliğini ve insanlara verilebilecek zarar ve rahatsızlıkları önleyici tedbirleri almakla yükümlüdür.",
+      "articleRefs": [
+        "5"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Hayvanları Koruma Kanununa göre güçten düşmüş hayvanlar hangi amaçlarla çalıştırılamaz?",
+      "back": "Ticarî ve gösteri amaçlı veya herhangi bir şekilde binicilik ve taşımacılık amacıyla.",
+      "explanation": "Sahipsiz ya da güçten düşmüş hayvanların öldürülmesi de kanuni istisnalar hariç yasaktır.",
+      "articleRefs": [
+        "6"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Hayvanları Koruma Kanununa göre sahipsiz veya güçten düşmüş hayvanların en hızlı şekilde nereye götürülmesi zorunludur?",
+      "back": "Yerel yönetimlerce kurulan veya izin verilen hayvan bakımevlerine.",
+      "explanation": "Hayvanlar öncelikle buralarda oluşturulacak müşahede yerlerinde tutulur. Bakımevlerine alınan hayvanlar Bakanlık veri sistemine kaydedilir; rehabilite edilen köpekler sahiplendirilinceye kadar hayvan bakımevlerinde barındırılır.",
+      "articleRefs": [
+        "6"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Hayvanları Koruma Kanununa göre hayvanlara tıbbî ve cerrahi müdahaleleri kimler yapabilir?",
+      "back": "Sadece veteriner hekimler.",
+      "explanation": "Kontrolsüz üremenin önlenmesi için yapılan kısırlaştırma müdahaleleri de hayvanlara acı vermeden yapılır.",
+      "articleRefs": [
+        "7"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Hayvanları Koruma Kanununa göre yaşayan bir hayvanın organ veya dokularının çıkarılıp alınması hangi amaçla yapılırsa yasağın dışında kalır?",
+      "back": "Tıbbî amaçlarla.",
+      "explanation": "Yasak hayvan yaşadığı sürece geçerlidir; organ veya dokuların tümünü de bir bölümünü de, çıkarıp almayı da tahrip etmeyi de kapsar. Bir hayvan neslini yok edecek her türlü müdahale de yasaktır.",
+      "articleRefs": [
+        "8"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Hayvanları Koruma Kanununa göre bir hayvana hormon ve ilaç verilmesi hangi hâlde yasaktır?",
+      "back": "Tıbbî amaçlar dışında, hayvanı türüne ve etolojik özelliklerine aykırı hale getirecek şekilde ve dozda verilmesi hâlinde.",
+      "explanation": "Aynı hüküm çeşitli maddelerle doping yapmayı ve hayvanların türlerine has davranış ve fizikî özelliklerini yapay yöntemlerle değiştirmeyi de yasaklar.",
+      "articleRefs": [
+        "8"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Hayvanları Koruma Kanununa göre hayvanlar bilimsel çalışmalarda hangi hâlde deney hayvanı olarak kullanılabilir?",
+      "back": "Başkaca bir seçenek olmaması halinde.",
+      "explanation": "Hayvanlar bilimsel olmayan teşhis, tedavi ve deneylerde kullanılamaz. Tıbbî ve bilimsel deneylerin hayvanları koruyacak şekilde yapılması, deneylerde kullanılacak hayvanların uygun biçimde bakılması ve barındırılması esastır.",
+      "articleRefs": [
+        "9"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Hayvanları Koruma Kanununa göre hayvan deneyi yapan kurum ve kuruluşlarda deneylerin yapılmasına Bakanlık mı izin verir?",
+      "back": "Hayır. İzin, bu kurum ve kuruluşların kendi bünyelerinde kurulmuş ve kurulacak etik kurullar yoluyla verilir.",
+      "explanation": "Bakanlık ise deney hayvanlarının yetiştirilmesi, bakılması, işletmelerin tescili ve personelin nitelikleri gibi konuları yönetmelikle belirler.",
+      "articleRefs": [
+        "9"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Hayvanları Koruma Kanununa göre ev hayvanı satış yerlerinde kedi ve köpek bulundurulabilir mi?",
+      "back": "Hayır. Bulundurulamaz; ancak buralarda Bakanlıkça izin verilen ev hayvanı üretim yerlerindeki kedi ve köpeklerin satışı yapılabilir.",
+      "explanation": "Satış sırasında genel şart da şudur: hayvanların sağlıklarının iyi, barındırıldıkları yerin temiz ve sağlık şartlarına uygun olması zorunludur.",
+      "articleRefs": [
+        "10"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Hayvanları Koruma Kanununa göre hasta, sakat ve yaşlı durumda bulunan bir hayvan hangi amaçlarla başkasına devredilebilir ya da satılabilir?",
+      "back": "Usulüne uygun kesmek ya da ağrısız öldürme amacıyla; başka bir amaçla devretmek, satmak veya almak yasaktır.",
+      "explanation": "Aynı yasak, iyileşemeyecek derecede ağrısı veya acısı olan hayvan için de geçerlidir ve devredeni, satanı ve alanı birlikte kapsar.",
+      "articleRefs": [
+        "10"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Hayvanları Koruma Kanununa göre hayvan dövüştürme yasağı karşısında hangi nitelikteki geleneksel gösteriler düzenlenebilir?",
+      "back": "Folklorik amaca yönelik, şiddet içermeyen geleneksel gösteriler.",
+      "explanation": "Hayvanları başka bir canlı hayvanla dövüştürmek yasaktır. Eğitimde de sınır vardır: hayvanlar doğal kapasitesini veya gücünü aşacak şekilde ya da yaralanmasına, gereksiz acı çekmesine, kötü alışkanlıklara özendirilmesine neden olacak yöntemlerle eğitilemez.",
+      "articleRefs": [
+        "11"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Hayvanları Koruma Kanununa göre folklorik amaca yönelik, şiddet içermeyen geleneksel gösteriler için izni Bakanlık mı verir?",
+      "back": "Hayır. İzin il hayvanları koruma kurullarından alınır; Bakanlığın rolü uygun görüş vermektir.",
+      "explanation": "Sıra şöyledir: Bakanlığın uygun görüşü alınır, ardından il hayvanları koruma kurullarından izin alınmak suretiyle gösteri düzenlenebilir.",
+      "articleRefs": [
+        "11"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Hayvanları Koruma Kanununa göre hayvanların kesiminin kimlerce yapılması sağlanır?",
+      "back": "Ehliyetli kişilerce.",
+      "explanation": "Kesim, dini kuralların gerektirdiği özel koşullar dikkate alınarak hayvanı korkutmadan, ürkütmeden, en az acı verecek şekilde, hijyenik kurallara uyularak ve usulüne uygun olarak bir anda yapılır.",
+      "articleRefs": [
+        "12"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Hayvanları Koruma Kanununa göre hayvanlar, istisnalar dışında, hangi dönemlerinde öldürülemez?",
+      "back": "Yavrulama, gebelik ve süt anneliği dönemlerinde.",
+      "explanation": "Yasağın dışında kalan hâller: kanunî istisnalar, tıbbî ve bilimsel gerekçeler ve gıda amaçlı olmayan, insan ve çevre sağlığına yönelen önlenemez tehditler bulunan acil durumlar.",
+      "articleRefs": [
+        "13"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Hayvanları Koruma Kanununa göre bakımevine alınan köpeklerden hangilerine 5996 sayılı Kanunda belirtilen tedbir uygulanır?",
+      "back": "İnsan ve hayvanların hayatı ve sağlığı için tehlike teşkil eden ve olumsuz davranışları kontrol edilemeyen, bulaşıcı veya tedavi edilemeyen hastalığı bulunan ya da sahiplenilmesi yasak olanlara.",
+      "explanation": "Hüküm bakımevine alınan köpekler için konulmuştur; uygulanacak tedbir 5996 sayılı Veteriner Hizmetleri, Bitki Sağlığı, Gıda ve Yem Kanununun 9 uncu maddesinin üçüncü fıkrasında belirtilen tedbirdir.",
+      "articleRefs": [
+        "13"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Hayvanları Koruma Kanununa göre bir hayvan film çekimi, gösteri, reklam ve benzeri işlerde hangi şekilde kullanılamaz?",
+      "back": "Acı, ıstırap ya da zarar görecek şekilde.",
+      "explanation": "Hayvanların ticarî amaçla film çekimi ve reklam için kullanılması ayrıca izne tâbidir.",
+      "articleRefs": [
+        "10"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,249 @@
+{
+  "deck": {
+    "topicId": "c9df7779-3911-4ba5-a03b-205982d119a3",
+    "legislationSlug": "4207-sayili-tutun-urunlerinin-zararlarinin-onlenmesi-ve-kontrolu-hakkinda-kanun",
+    "unitSlug": "tukk-tutun-yasaklari-ve-yaptirimlar",
+    "sourceLabel": "AI bilgi kartı — 4207 Sayılı Tütün Ürünlerinin Zararlarının Önlenmesi ve Kontrolü Hakkında Kanun md 1–5, 7",
+    "generatedBy": "claude alt ajanı (kart-uret.ts istemi, API'siz kip; kaynak: tukk-tutun-yasaklari-ve-yaptirimlar özeti + resmî madde metni; stil kapısı geçti)"
+  },
+  "cards": [
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Tütün Ürünlerinin Zararlarının Önlenmesi ve Kontrolü Hakkında Kanun'un amacı, kişileri ve gelecek nesilleri tütün ürünlerinin zararlarından korumanın yanında herkes için neyin sağlanmasına yöneliktir?",
+      "back": "Temiz hava soluyabilmenin; Kanun herkesin temiz hava soluyabilmesinin sağlanması yönünde düzenlemeler yapmayı amaçlar.",
+      "explanation": "Koruma yalnız ürünün zararlarına karşı değildir: alışkanlığı özendirici reklam, tanıtım ve teşvik kampanyalarından koruyucu tertip ve tedbirleri almak da amacın içindedir.",
+      "articleRefs": [
+        "1"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 1,
+      "front": "Kamu hizmet binalarında tütün ürünü tüketme yasağı binanın hangi alanları için konulmuştur?",
+      "back": "Kapalı alanları için; tütün ürünleri kamu hizmet binalarının kapalı alanlarında tüketilemez.",
+      "explanation": "Okul öncesi eğitim kurumları, ilk ve orta öğrenim kurumları ile kültür ve sosyal hizmet binalarında ise yasak kapalı ve açık alanların ikisini de kapsar.",
+      "articleRefs": [
+        "2"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 2,
+      "front": "Kişi, kendi hususi aracının sürücü koltuğunda tütün ürünü tüketebilir mi?",
+      "back": "Hayır. Hususi araçların sürücü koltukları, tütün ürünlerinin tüketilemeyeceği yerler arasında açıkça sayılır.",
+      "explanation": "Sürücü koltuğu, taksi hizmeti verenler dâhil karayolu, demiryolu, denizyolu ve havayolu toplu taşıma araçlarıyla aynı bentte yer alır.",
+      "articleRefs": [
+        "2"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Özel hukuk kişilerine ait olan ve birden çok kişinin girebileceği binaların kapalı alanlarındaki tütün ürünü tüketme yasağının dışında bırakılan yer hangisidir?",
+      "back": "İkamete mahsus konutlar; bu bentteki yasak onları kapsamaz.",
+      "explanation": "Bent, koridorları dahil olmak üzere her türlü eğitim, sağlık, üretim, ticaret, sosyal, kültürel, spor, eğlence ve benzeri amaçlı binaların kapalı alanlarını kapsar.",
+      "articleRefs": [
+        "2"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Yaşlı bakım evlerinde, ruh ve sinir hastalıkları hastanelerinde, cezaevlerinde ve şehirlerarası veya uluslararası güzergâhlarda yolcu taşıyan denizyolu araçlarının güvertelerinde oluşturulan tütün ürünü tüketim alanlarına kaç yaşını doldurmamış kişiler giremez?",
+      "back": "On sekiz yaşını doldurmamış kişiler bu alanlara giremez.",
+      "explanation": "Bu yerlerde tüketime mahsus alan kurmak zorunlu değildir; alan \"oluşturulabilir\".",
+      "articleRefs": [
+        "2"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Tütün Ürünlerinin Zararlarının Önlenmesi ve Kontrolü Hakkında Kanun'un uygulanmasında, tütün içermeyen nargile ve sigara hangi hâlde tütün ürünü kabul edilir?",
+      "back": "Tütün mamulünü taklit eder tarzda kullanılıyorsa; bu tarzda kullanılan her türlü nargile ve sigara tütün ürünü kabul edilir.",
+      "explanation": "Asıl tanım, tüttürme, emme, çiğneme ya da buruna çekerek kullanılmak üzere üretilmiş ve hammadde olarak tamamen veya kısmen tütün yaprağından imal edilmiş maddeyi anlatır.",
+      "articleRefs": [
+        "2"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Hangi hizmetlerin verildiği yerlerde ve bunların yerleşkelerinde tütün ürünlerinin satışı yapılamaz?",
+      "back": "Sağlık, eğitim ve öğretim, kültür ve spor hizmeti verilen yerlerde ve bunların yerleşkelerinde.",
+      "explanation": "Yasak, hizmetin verildiği yerle birlikte yerleşkeyi de kapsar. Bu yasağa aykırı hareket edenlere idarî para cezasını mahalli mülki amir verir.",
+      "articleRefs": [
+        "3",
+        "5"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Tütün ürünleri hangi araç ve ortamlar yoluyla satılamaz?",
+      "back": "Otomatik makinelerle, telefon, televizyon ve internet gibi elektronik ortamlarla satılamaz; satış amacıyla kargo yoluyla da taşınamaz.",
+      "explanation": "Tütün ürünleri ayrıca paket açılarak adet şeklinde veya daha küçük paketlere bölünerek de satılamaz.",
+      "articleRefs": [
+        "3"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "Tütün ürünleri, on sekiz yaşını doldurmamış kişiler bakımından hangi şekilde satışa arz edilemez?",
+      "back": "Bu kişilerin doğrudan ulaşacağı ve işletme dışından görülecek şekilde satışa arz edilemez.",
+      "explanation": "Aynı fıkra satış belgesini de arar: tütün ürünleri satış belgesi olmaksızın ve satış belgesinde belirtilen yerin dışında satışa sunulamaz.",
+      "articleRefs": [
+        "3"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Tütün ürünü izmaritini sokağa atan kişiye idarî para cezasını kim verir?",
+      "back": "Belediye zabıta görevlileri; sokak veya kamuya ait sair alanlar ile özel hukuk kişilerine ait ve herkesin girebileceği binaların kapalı ve açık alanlarında yetki onlardadır.",
+      "explanation": "Tütün ürünleriyle ilgili izmarit, paket, ağızlık, kağıt ve benzeri atıklar çevreye atılamaz.",
+      "articleRefs": [
+        "3",
+        "5"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Hususi aracın sürücü koltuğu gibi yasak bir alanda tütün ürünü tüketen kişi hangi hükme göre cezalandırılır?",
+      "back": "Kabahatler Kanununun 39 uncu maddesi hükmüne göre cezalandırılır.",
+      "explanation": "Ceza hükümlerinin birinci fıkrası, tütün ürünü tüketilmesi yasak alanlarda tüketenler için 5326 sayılı Kabahatler Kanununun 39 uncu maddesine gönderir.",
+      "articleRefs": [
+        "2",
+        "5"
+      ]
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Kamu hizmet binasının bahçesinde tütün ürünü atığını yere atan kişiye idarî para cezasını belediye zabıta görevlileri mi verir?",
+      "back": "Hayır. Kamu hizmet binalarının kapalı ve açık alanlarında cezayı, ilgili idari birim amirinin yetkili kıldığı kamu görevlileri verir.",
+      "explanation": "Belediye zabıta görevlileri, özel hukuk kişilerine ait ve herkesin girebileceği binaların kapalı ve açık alanları ile sokak veya kamuya ait sair alanlardaki aykırılıklarda yetkilidir.",
+      "articleRefs": [
+        "3",
+        "5"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "trap",
+      "difficulty": 3,
+      "front": "Tütün ürünü atığını çevreye atan kişi kirliliği derhal giderse de idarî para cezası verilmesi zorunlu mudur?",
+      "back": "Hayır. Meydana gelen çevre kirliliğinin ilgili kişi tarafından derhal giderilmesi hâlinde idari para cezasına karar verilmeyebilir.",
+      "explanation": "Hüküm takdir tanır: ceza kendiliğinden düşmez, yetkili görevli ceza vermeyebilir.",
+      "articleRefs": [
+        "5"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Bir lokantada tütün ürünü tüketme yasağının uygulanması ve tedbirlerin alınmasıyla ilgili yükümlülükler yerine getirilmezse idarî para cezası kime verilir?",
+      "back": "İşletme sorumlusuna; cezayı mahalli mülki amir verir.",
+      "explanation": "Tüketen kişinin sorumluluğu ayrıdır; işletme sorumlusu, yasakların uygulanması ve tedbirlerin alınması ile ilgili kendi yükümlülüğü nedeniyle cezalandırılır.",
+      "articleRefs": [
+        "2",
+        "5"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "On sekiz yaşını doldurmamış kişiye tütün ürünü satan ya da tüketimine sunan kişi hangi hükme göre cezalandırılır?",
+      "back": "Türk Ceza Kanununun \"Sağlık için tehlikeli madde temini\" başlıklı 194 üncü maddesi hükmüne göre.",
+      "explanation": "Yasak, tütün ürünleri ile tütün ürünü ihtiva eden ve etmeyen nargile ile benzerlerini kapsar; satmak da tüketime sunmak da yasaktır.",
+      "articleRefs": [
+        "3",
+        "5"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 3,
+      "front": "On sekiz yaşını doldurmamış kişileri tütün ürünü satışında istihdam eden kişiye idarî para cezası, birden çok kişi istihdam edilmişse nasıl verilir?",
+      "back": "Her bir kişiyle ilgili olarak verilir.",
+      "explanation": "Bu kişiler tütün ürünü işletmelerinde, pazarlanmasında ve satışında istihdam edilemez. Cezayı mahalli mülki amir verir.",
+      "articleRefs": [
+        "3",
+        "5"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 1,
+      "front": "Tütün ürünlerine ilişkin ceza hükümlerinde, cezayı gerektiren fiil bir yıllık dönemde ilk kez tekerrür ederse idari para cezası ne kadar artırılır?",
+      "back": "Bir kat artırılarak verilir.",
+      "explanation": "Tekerrür, bir yıllık dönem içinde aranır ve artırım basamaklıdır.",
+      "articleRefs": [
+        "5"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 2,
+      "front": "Tütün ürünlerine ilişkin ceza hükümlerinde, cezayı gerektiren fiilin bir yıllık dönemde ikinci tekerrüründe idari para cezası ne kadar artırılır?",
+      "back": "İki kat artırılarak verilir.",
+      "articleRefs": [
+        "5"
+      ]
+    },
+    {
+      "kind": "numeric",
+      "difficulty": 3,
+      "front": "Tütün ürünlerine ilişkin cezayı gerektiren fiilin bir yıllık dönemdeki üçüncü tekerrüründe iş yeri ne kadar süreyle kapatılır?",
+      "back": "On günden bir aya kadar kapatılır.",
+      "explanation": "Bir yıllık dönemde tekerrürde idari para cezası bir kat, ikinci tekerrürde iki kat artırılır; iş yerinin kapatılması aynı dönemdeki üçüncü tekerrüre bağlanmıştır.",
+      "articleRefs": [
+        "5"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Tütün ürünlerine benzeyecek şekilde üretilen sakız, şeker, oyuncak gibi eşyanın mülkiyetinin kamuya geçirilmesine kim karar verir?",
+      "back": "Mahalli mülki amir karar verir.",
+      "explanation": "Firma isim ve markalarını taşıyan kıyafet, takı ve aksesuar ile bedelsiz dağıtılan tütün ürünleri de aynı usule tabidir.",
+      "articleRefs": [
+        "3",
+        "7"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Okul öncesi eğitim kurumları ile ilk ve orta öğrenim kurumlarında tütün ürünü tüketme yasağı hangi alanları kapsar?",
+      "back": "Kapalı ve açık alanların ikisini de; yasak bu kurumların kapalı ve açık alanlarında geçerlidir.",
+      "explanation": "Dershaneler ile özel eğitim ve öğretim kurumları da ilk ve orta öğrenim kurumlarına dahildir. Kültür ve sosyal hizmet binaları aynı bentte sayılır.",
+      "articleRefs": [
+        "2"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Açık havada yapılan spor, kültür, sanat ve eğlence faaliyetlerinin yapıldığı yerler ile seyir yerlerinde tütün ürünü kullanımı bakımından kural ve istisna nedir?",
+      "back": "Tütün ürünleri kullanılamaz; ancak bu tesislerde tütün ürünlerinin tüketilmesine mahsus alanlar oluşturulabilir.",
+      "articleRefs": [
+        "2"
+      ]
+    },
+    {
+      "kind": "qa",
+      "difficulty": 2,
+      "front": "Tütün Ürünlerinin Zararlarının Önlenmesi ve Kontrolü Hakkında Kanun'la kendilerine yüklenen görevleri yerine getirmeyen memurlar ve diğer kamu görevlileri hakkında hangi hükümler uygulanır?",
+      "back": "Tabi oldukları mevzuatta yer alan disiplin hükümleri uygulanır; ceza hukuku sorumluluğu saklıdır.",
+      "articleRefs": [
+        "5"
+      ]
+    }
+  ]
+}
