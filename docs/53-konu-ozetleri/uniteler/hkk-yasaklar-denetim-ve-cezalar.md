@@ -268,7 +268,7 @@ Bu ünitede birbirine çok benzeyen artırım hükümleri var; bunlar kolayca ka
 
 <sub>md Geçici 3</sub>
 
-**Kapsam:** Tehlike arz eden hayvanların belirlenmesine ilişkin **Bakanlıkça yapılacak düzenleme yürürlüğe konuluncaya kadar** şu türler ve melezleri: **Pitbull Terrier, Japanese Tosa, Dogo Argentino, Fila Brasilerio**.
+**Kapsam:** Hangi hayvanların tehlike arz ettiğini **Bakanlık düzenlemesi** gösterir. Madde, bu düzenleme **yürürlüğe konuluncaya kadar** geçerli olmak üzere bazı köpek türlerini ve melezlerini adıyla sayar; bu sayım bir geçiş listesidir, kalıcı liste değildir.
 
 **Yasak fiiller ve yaptırım:** Bunları üreten, sahiplenen, sahiplendiren, barındıran, besleyen, takas eden, sergileyen, hediye eden ve ülkemize girişini, satışını ve reklamını yapana **hayvan başına** idarî para cezası verilir. Hayvanlara **el konulur**; hayvanlar **belediyeler tarafından** hayvan bakımevine götürülür.
 
@@ -334,12 +334,8 @@ Köpeğini kısırlaştırıp kayıt ettiren sahibin işi bitmiş sayılmaz. Kay
 
 | Konu | Değer | md |
 |---|---|---|
-| Bu ünitenin maddelerinden yayındaki soru | 1 | 14, 15, 16, 17, 19, 20, 21, 22, 24, 25, 28, 28/A, 30, 31, Ek 1, Ek 2, Geçici 3 |
-| md 17 — Denetim | 1 soru | 17 |
-| md 25 — İdarî para cezası verme yetkisi | 1 soru | 25 |
-| md 30 — Fiillerin tekrarı | 1 soru | 30 |
-| md Geçici 3 | 1 soru | Geçici 3 |
-| Hiç soru çıkmamış | md 14, md 15, md 16, md 19, md 20, md 21, md 22, md 24, md 28, md 28/A, md 31, md Ek 1, md Ek 2 | 14, 15, 16, 17, 19, 20, 21, 22, 24, 25, 28, 28/A, 30, 31, Ek 1, Ek 2, Geçici 3 |
+| Bu ünitenin maddelerinden yayındaki soru | 0 | 14, 15, 16, 17, 19, 20, 21, 22, 24, 25, 28, 28/A, 30, 31, Ek 1, Ek 2, Geçici 3 |
+| Hiç soru çıkmamış | md 14, md 15, md 16, md 17, md 19, md 20, md 21, md 22, md 24, md 25, md 28, md 28/A, md 30, md 31, md Ek 1, md Ek 2, md Geçici 3 | 14, 15, 16, 17, 19, 20, 21, 22, 24, 25, 28, 28/A, 30, 31, Ek 1, Ek 2, Geçici 3 |
 
 ## Köprü · Bu üniteden soru çöz
 
@@ -347,4 +343,4 @@ Köpeğini kısırlaştırıp kayıt ettiren sahibin işi bitmiş sayılmaz. Kay
 
 | Konu | Değer | md |
 |---|---|---|
-| Madde kapsamlı seans | md 14–17, 19–22, 24, 25, 28, 28/A, 30, 31, Ek 1, Ek 2, Geçici 3, 1 soru | 14, 15, 16, 17, 19, 20, 21, 22, 24, 25, 28, 28/A, 30, 31, Ek 1, Ek 2, Geçici 3 |
+| Madde kapsamlı seans | md 14–17, 19–22, 24, 25, 28, 28/A, 30, 31, Ek 1, Ek 2, Geçici 3, 0 soru | 14, 15, 16, 17, 19, 20, 21, 22, 24, 25, 28, 28/A, 30, 31, Ek 1, Ek 2, Geçici 3 |

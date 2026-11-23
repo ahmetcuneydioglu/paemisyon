@@ -230,3 +230,9 @@ ve Bakanlık düzenlemesine bağlı ırk listesi kartlanmadı (ünitede kayıtla
   başlık kaymaları elle düzeltildi (`mevzuat-kaynaktan-json.ts` "(Değişik başlık: …)" şerhli başlığı ayıramıyor).
 - 7258: md 2'ye bağlı bilgi kartı yok (tanım cümlesi mülga). 4250: md 3'e bağlı kart yok.
 - Tuzak kartlarındaki olumsuz iddialar betikle doğrulanamaz.
+
+**23 Kas 2026 — 5199 Geçici md 3 teyidi:** Bakanlık düzenlemesi çıkmış (Tarım ve Orman Bakanlığı, 7/12/2021 tarihli
+2021-48 sayılı genelge; altı ırk: kanundaki dört ırka American Staffordshire Terrier ve American Bully eklenmiş).
+Genelge bankada olmadığı için ırk adları karta yazılamaz; `hkk-yasaklar-denetim-ve-cezalar` kart 19'dan dört ırkın adı
+çıkarıldı, "Bakanlık düzenlemesi gösterir; maddedeki sayım geçiş listesidir" biçimine alındı
+(`ozet-yayindaki-duzelt.ts`, kullanıcı onayı). Genelgenin sonraki değişiklikleri doğrulanmadı.

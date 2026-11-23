@@ -263,7 +263,7 @@
     {
       "type": "rule",
       "title": "Tehlike arz eden köpek türleri: geçiş hükmü",
-      "body": "**Kapsam:** Tehlike arz eden hayvanların belirlenmesine ilişkin **Bakanlıkça yapılacak düzenleme yürürlüğe konuluncaya kadar** şu türler ve melezleri: **Pitbull Terrier, Japanese Tosa, Dogo Argentino, Fila Brasilerio**.\n\n**Yasak fiiller ve yaptırım:** Bunları üreten, sahiplenen, sahiplendiren, barındıran, besleyen, takas eden, sergileyen, hediye eden ve ülkemize girişini, satışını ve reklamını yapana **hayvan başına** idarî para cezası verilir. Hayvanlara **el konulur**; hayvanlar **belediyeler tarafından** hayvan bakımevine götürülür.\n\n**Geçiş dönemi kaydı:** Bu hayvanları madde yürürlüğe girmeden önce sahiplenmiş olanlar için bir geçiş yolu öngörülmüştü: hayvanını süresinde **kısırlaştırıp** Bakanlık **veri tabanına kayıt ettirenler** hakkında birinci fıkradaki ve md 28'in birinci fıkrasının (j) bendindeki idarî yaptırım hükümleri uygulanmaz. Hayvanın ölümü hâlinde Bakanlığa bilgi verilir ve hayvan kayıttan düşürülür.\n\n**Kayıtlı hayvanın dolaştırılması:**\n- Kayıt belgesiz, ağızlıksız ve tasmasız dolaştırılamaz.\n- Halkın yoğun olarak bulunduğu yerler ile çocuk oyun alanları ve parklarına sokulamaz.\n- Aykırı hareket edene idarî para cezası verilir.\n- Aykırılığın **tekrarı** hâlinde idarî para cezası verilir **ve** hayvana el konulur; hayvan, konulabileceği bakımevi bulunan en yakın belediye tarafından bakımevine götürülür.\n\n**Bakımevine bırakma:** Bu madde kapsamında hayvan sahibi olanlar hayvanlarını en yakın bakımevine **bırakabilir**; yerel yönetimlerin kurduğu bakımevleri bu hayvanları **kabul etmek zorundadır**. Hayvanın sokağa terki hâlinde idarî para cezası verilir.",
+      "body": "**Kapsam:** Hangi hayvanların tehlike arz ettiğini **Bakanlık düzenlemesi** gösterir. Madde, bu düzenleme **yürürlüğe konuluncaya kadar** geçerli olmak üzere bazı köpek türlerini ve melezlerini adıyla sayar; bu sayım bir geçiş listesidir, kalıcı liste değildir.\n\n**Yasak fiiller ve yaptırım:** Bunları üreten, sahiplenen, sahiplendiren, barındıran, besleyen, takas eden, sergileyen, hediye eden ve ülkemize girişini, satışını ve reklamını yapana **hayvan başına** idarî para cezası verilir. Hayvanlara **el konulur**; hayvanlar **belediyeler tarafından** hayvan bakımevine götürülür.\n\n**Geçiş dönemi kaydı:** Bu hayvanları madde yürürlüğe girmeden önce sahiplenmiş olanlar için bir geçiş yolu öngörülmüştü: hayvanını süresinde **kısırlaştırıp** Bakanlık **veri tabanına kayıt ettirenler** hakkında birinci fıkradaki ve md 28'in birinci fıkrasının (j) bendindeki idarî yaptırım hükümleri uygulanmaz. Hayvanın ölümü hâlinde Bakanlığa bilgi verilir ve hayvan kayıttan düşürülür.\n\n**Kayıtlı hayvanın dolaştırılması:**\n- Kayıt belgesiz, ağızlıksız ve tasmasız dolaştırılamaz.\n- Halkın yoğun olarak bulunduğu yerler ile çocuk oyun alanları ve parklarına sokulamaz.\n- Aykırı hareket edene idarî para cezası verilir.\n- Aykırılığın **tekrarı** hâlinde idarî para cezası verilir **ve** hayvana el konulur; hayvan, konulabileceği bakımevi bulunan en yakın belediye tarafından bakımevine götürülür.\n\n**Bakımevine bırakma:** Bu madde kapsamında hayvan sahibi olanlar hayvanlarını en yakın bakımevine **bırakabilir**; yerel yönetimlerin kurduğu bakımevleri bu hayvanları **kabul etmek zorundadır**. Hayvanın sokağa terki hâlinde idarî para cezası verilir.",
       "articleRefs": [
         "Geçici 3"
       ]
@@ -454,7 +454,7 @@
       "rows": [
         {
           "label": "Bu ünitenin maddelerinden yayındaki soru",
-          "value": "1",
+          "value": "0",
           "refs": [
             "14",
             "15",
@@ -476,36 +476,8 @@
           ]
         },
         {
-          "label": "md 17 — Denetim",
-          "value": "1 soru",
-          "refs": [
-            "17"
-          ]
-        },
-        {
-          "label": "md 25 — İdarî para cezası verme yetkisi",
-          "value": "1 soru",
-          "refs": [
-            "25"
-          ]
-        },
-        {
-          "label": "md 30 — Fiillerin tekrarı",
-          "value": "1 soru",
-          "refs": [
-            "30"
-          ]
-        },
-        {
-          "label": "md Geçici 3",
-          "value": "1 soru",
-          "refs": [
-            "Geçici 3"
-          ]
-        },
-        {
           "label": "Hiç soru çıkmamış",
-          "value": "md 14, md 15, md 16, md 19, md 20, md 21, md 22, md 24, md 28, md 28/A, md 31, md Ek 1, md Ek 2",
+          "value": "md 14, md 15, md 16, md 17, md 19, md 20, md 21, md 22, md 24, md 25, md 28, md 28/A, md 30, md 31, md Ek 1, md Ek 2, md Geçici 3",
           "refs": [
             "14",
             "15",
@@ -574,7 +546,7 @@
       "rows": [
         {
           "label": "Madde kapsamlı seans",
-          "value": "md 14–17, 19–22, 24, 25, 28, 28/A, 30, 31, Ek 1, Ek 2, Geçici 3, 1 soru",
+          "value": "md 14–17, 19–22, 24, 25, 28, 28/A, 30, 31, Ek 1, Ek 2, Geçici 3, 0 soru",
           "refs": [
             "14",
             "15",
