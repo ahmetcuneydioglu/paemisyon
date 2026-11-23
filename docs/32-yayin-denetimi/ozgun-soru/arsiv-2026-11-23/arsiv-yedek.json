@@ -1,0 +1,90 @@
+[
+ {
+  "sinif": "bozuk",
+  "gerekce": "3dc788e5: anahtar 'hususi aracın sürücü koltuğunda tütün tüketene cezayı kolluk verir' diyor; 4207 md 5/1 bu fiil için yalnız 5326 md 39'a gönderir, md 39 ise hususi araç için ceza verecek makamı saymaz (kolluk: özel işletilen toplu taşıma aracı ve şikâyet üzerine özel binalar). Anahtar madde metninden doğrulanamıyor. Kullanıcı kararı 23 Kas 2026.",
+  "arsivlenen": {
+   "id": "e73f8746-5138-43b8-8036-16d7e33b7ec9",
+   "questionId": "3dc788e5-7618-4682-b135-64c4b61154a3",
+   "stem": "Devriye görevindeki polis memurları, hususi otomobilinin sürücü koltuğunda sigara içen bir sürücüyü durdurmuştur. 2026 idarî para cezası uygulamasına göre bu olayda aşağıdakilerden hangisi doğrudur?",
+   "explanation": "4207 sayılı Kanun m.5/1 uygulamasında hususi araçların SÜRÜCÜ KOLTUĞUNDA tütün ürünü tüketmek kabahattir ve cezayı KOLLUK verir; bir yıllık dönemde ilk tekerrürde bir kat, ikinci tekerrürde iki kat artırım uygulanır. Kabahatler Kanunu m.39 kamu binaları ve toplu taşıma araçlarına ilişkindir; hususi araçtaki yasak 4207 sayılı özel kanundan gelir. Bu, polislerin sahada en sık uyguladığı tütün cezası kalemidir.",
+   "sourceLabel": "Özgün soru · 4207 SK m.5 · 2026 İPC uygulama tablosu",
+   "options": [
+    {
+     "label": "A",
+     "text": "4207 sayılı Kanun uyarınca kolluk tarafından idarî para cezası verilir; bir yıllık dönemde tekerrürde ceza kademeli olarak artırılır",
+     "isCorrect": true
+    },
+    {
+     "label": "B",
+     "text": "Hususi araçta sigara içmek hiçbir yaptırıma tâbi değildir",
+     "isCorrect": false
+    },
+    {
+     "label": "C",
+     "text": "Kabahatler Kanunu m.39 uyarınca belediye zabıtası ceza verir",
+     "isCorrect": false
+    },
+    {
+     "label": "D",
+     "text": "Ceza ancak mülkî amir tarafından verilebilir",
+     "isCorrect": false
+    },
+    {
+     "label": "E",
+     "text": "Sürücüye ceza verilemez; yalnızca araç sahibine ceza verilir",
+     "isCorrect": false
+    }
+   ],
+   "question": {
+    "articleNo": null,
+    "topic": {
+     "name": "5326 Sayılı Kabahatler Kanunu"
+    }
+   }
+  }
+ },
+ {
+  "sinif": "bozuk",
+  "gerekce": "61cf72cf: anahtar 'idarî para cezasını mülkî amir verir' diyor; 5199 md 25 cezayı md 17'deki denetime yetkili merciye bırakır, md 17'ye göre yetki Bakanlıktadır ve mahallin en büyük mülkî amirine ancak devredilebilir. Anahtar metinden daha kesin; yeni yayınlanan bilgi kartlarıyla çelişiyor. Kullanıcı kararı 23 Kas 2026.",
+  "arsivlenen": {
+   "id": "74b5f333-f383-4c8e-adfa-440894137638",
+   "questionId": "61cf72cf-e072-4881-920f-239220768fa5",
+   "stem": "Bakanlıkça belirlenen tehlike arz eden ırklardan (pitbull, dogo argentino gibi) bir köpeği, kayıt altına aldırmış olmasına rağmen ağızlıksız ve tasmasız dolaştıran kişi hakkında 2026 idarî para cezası uygulamasına göre aşağıdakilerden hangisi doğrudur?",
+   "explanation": "5199 sayılı Kanun uygulamasında (Geçici m.3) kayıt altına alınmış tehlike arz eden hayvanı belgesiz, ağızlıksız ve tasmasız dolaştırmak, tehlikeli ırk üretme-sahiplendirme yasağıyla aynı ağır ceza kalemine tâbidir; cezayı MÜLKÎ AMİR verir, tekrarı hâlinde artırım uygulanır ve itiraz 15 gün içinde sulh ceza mahkemesinedir. Hayvana kötü davranma, dövme, aç-susuz bırakma gibi fiiller de aynı Kanun'da ayrı ceza kalemleridir.",
+   "sourceLabel": "Özgün soru · 5199 SK · 2026 İPC uygulama tablosu",
+   "options": [
+    {
+     "label": "A",
+     "text": "5199 sayılı Hayvanları Koruma Kanunu uyarınca mülkî amir tarafından yüksek miktarda idarî para cezası verilir; tekrarı hâlinde ceza artırılarak uygulanır",
+     "isCorrect": true
+    },
+    {
+     "label": "B",
+     "text": "Kabahatler Kanunu m.36 uyarınca kolluk tarafından maktu gürültü cezası verilir",
+     "isCorrect": false
+    },
+    {
+     "label": "C",
+     "text": "Kayıt altına alınmış hayvan için hiçbir yükümlülük yoktur",
+     "isCorrect": false
+    },
+    {
+     "label": "D",
+     "text": "Yalnızca hayvana el konulur; sahibine ceza verilemez",
+     "isCorrect": false
+    },
+    {
+     "label": "E",
+     "text": "Ceza belediye zabıtası tarafından verilir ve hayvan itlaf edilir",
+     "isCorrect": false
+    }
+   ],
+   "question": {
+    "articleNo": null,
+    "topic": {
+     "name": "5326 Sayılı Kabahatler Kanunu"
+    }
+   }
+  }
+ }
+]

@@ -46,3 +46,9 @@ Bankada olmayan kanunlara dayanan 7 soru ana oturumda mevzuat.gov.tr konsolide m
 - Bağlanan sorular (`planlar/2026-11-23-ozgun-yeni-kanun-bag.json`): `3dc788e5` → 4207 md 5; `6f5938d5` → 7258 md 5; `9234e990` → 4250 md 7; `61cf72cf` → 5199 Geçici md 3; `5e57ed04`'e 4207 md 5 ilgili madde olarak eklendi. `fa8fec6c` (2920) maddesiz kaldı; 2920 alınmadı.
 - `61cf72cf`: md 25 cezayı "17 nci maddede belirtilen denetime yetkili merci"ye veriyor; md 17'ye göre yetki Bakanlığındır, mahallin en büyük mülkî amirine DEVREDİLEBİLİR. Şıktaki "mülkî amir tarafından" ifadesi devir hâlinde doğru; metin tek başına bunu kesin kılmıyor.
 - Dipnot kaybı: 7258'de md 1, 3, 4, Ek 2, Geçici 1–3 kaynakta "Mülga (KHK-703)" görünüyor; Anayasa Mahkemesi 7/12/2023 tarihli kararıyla (E: 2021/125, K: 2023/213) bu yürürlükten kaldırmayı iptal etmiş (dipnotta; bankada dipnot yok). Md 5 etkilenmiyor.
+
+## 23 Kas 2026 — iki soru daha arşivlendi (kullanıcı kararı)
+
+- `3dc788e5` (4207, sürücü koltuğu): anahtar "kolluk verir"; md 5/1 yalnız 5326 md 39'a gönderir, md 39 hususi araç için makam saymaz.
+- `61cf72cf` (5199, tehlikeli ırk): anahtar "mülkî amir verir"; md 25 → md 17'ye göre yetki Bakanlıkta, mülkî amire devredilebilir.
+- Plan: `planlar/2026-11-23-ozgun-arsiv.json`; yedek ve defter `arsiv-2026-11-23/`.
