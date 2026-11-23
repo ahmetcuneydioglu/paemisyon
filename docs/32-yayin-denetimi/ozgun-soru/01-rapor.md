@@ -52,3 +52,8 @@ Bankada olmayan kanunlara dayanan 7 soru ana oturumda mevzuat.gov.tr konsolide m
 - `3dc788e5` (4207, sürücü koltuğu): anahtar "kolluk verir"; md 5/1 yalnız 5326 md 39'a gönderir, md 39 hususi araç için makam saymaz.
 - `61cf72cf` (5199, tehlikeli ırk): anahtar "mülkî amir verir"; md 25 → md 17'ye göre yetki Bakanlıkta, mülkî amire devredilebilir.
 - Plan: `planlar/2026-11-23-ozgun-arsiv.json`; yedek ve defter `arsiv-2026-11-23/`.
+
+## 23 Kas 2026 — 2920 bankaya alındı (kullanıcı onayı)
+
+- 2920 sayılı Türk Sivil Havacılık Kanunu (154 madde) mevzuat.gov.tr konsolide metninden Polis Mevzuatı dersine alındı (`mevzuat-kaynak/2920.json`). İçe aktarmada md 150'nin sonuna yapışan ceza tutarı cetveli kesildi; "Son Hükümler" kısım başlığı Ek 1'in başlığından çıkarıldı.
+- `fa8fec6c` → 2920 md 144 (birincil). Anahtar ("mülkî amir") md 144'le uyumlu. Konu özeti ve bilgi kartı yok.

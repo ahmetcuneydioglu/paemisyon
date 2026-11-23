@@ -1,0 +1,55 @@
+[
+ {
+  "plan": {
+   "soru": "fa8fec6c",
+   "baglar": [
+    {
+     "mevzuat": "2920",
+     "no": "144",
+     "relation": "primary"
+    }
+   ],
+   "gerekce": "2920 sayılı Kanun bankaya alındı (23 Kas 2026, kullanıcı onayı); cevabı md 144 belirliyor (izinsiz ya da belirlenen alanlar dışında İHA uçurana cezayı mahallin en büyük mülki idare amiri uygular)."
+  },
+  "onceki": {
+   "id": "fa8fec6c-3fcf-4562-8b47-8625e619b04c",
+   "articleNo": null,
+   "topicId": "569628d2-5e1c-4788-ad66-1ef20d9374f6",
+   "currentVersion": {
+    "id": "6171aea8-5947-4634-b5e1-f627e004ae95",
+    "status": "published",
+    "stem": "Uçuş izni almadan ve belirlenen alanlar dışında insansız hava aracı (drone) uçuran kişi hakkında, 2026 idarî para cezası uygulamasına göre aşağıdakilerden hangisi doğrudur?",
+    "explanation": "2920 sayılı Türk Sivil Havacılık Kanunu m.144 uygulamasında; uçuş izni almadan veya Sivil Havacılık Genel Müdürlüğünce/mülkî idare amirlerince belirlenen alanlar dışında İHA uçurana idarî para cezasını MÜLKÎ AMİR verir; itiraz 15 gün içinde sulh ceza mahkemesinedir. Toplumsal etkinlikler ve korunan mekânlar çevresindeki drone ihlalleri sahada kolluğun sık tutanak tuttuğu güncel bir kalemdir.",
+    "contentHash": "14805d2736aeb0e9410c029aa41cf7b9e9ee713e1e51a0a352cb9d7e9a8d8f4c",
+    "options": [
+     {
+      "id": "9949126d-8a91-456d-84c5-d4360b16f617",
+      "label": "A",
+      "text": "2920 sayılı Türk Sivil Havacılık Kanunu uyarınca mülkî amir tarafından idarî para cezası verilir"
+     },
+     {
+      "id": "e0ee805d-689a-481d-a89d-a842a002c202",
+      "label": "B",
+      "text": "Kabahatler Kanunu m.32 uyarınca kolluk tarafından ceza verilir"
+     },
+     {
+      "id": "0c363817-25f7-4491-a5fd-6adf6a880d0e",
+      "label": "C",
+      "text": "Drone uçurmak yalnızca askerî yasak bölgelerde yaptırıma tâbidir"
+     },
+     {
+      "id": "5bfc2f38-64a3-4a24-9d6e-422bc135c26b",
+      "label": "D",
+      "text": "Ceza Sivil Havacılık Genel Müdürü tarafından verilir ve drone müsadere edilir"
+     },
+     {
+      "id": "518b08ab-455f-46de-bbf3-f4cc1bdef8d8",
+      "label": "E",
+      "text": "Fiil doğrudan casusluk suçu kapsamında değerlendirilir"
+     }
+    ]
+   },
+   "articles": []
+  }
+ }
+]
