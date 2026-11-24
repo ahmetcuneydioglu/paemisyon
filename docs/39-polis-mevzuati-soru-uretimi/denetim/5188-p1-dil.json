@@ -1,0 +1,62 @@
+[
+  {
+    "id": "5188-p1-01",
+    "karar": "ONAY",
+    "gerekce": "TUR 2: Birinci tur itirazı karşılandı. B artık 'Komisyon kararı şartıyla valinin izniyle'; komisyon kararını şart sayan ifade md 3/1'deki 'komisyon kararı aranmaksızın, valilik tarafından özel güvenlik izni verilebilir' ile her okumada çelişir, 'verilebilir' kipinden doğan açık kapandı. A 'Valiliğin izniyle' metne uygun ve doğru; C (md 3'te il emniyet müdürlüğüne izin yetkisi yok), D (md 5/1 faaliyet izni), E (md 3/4 sona erdirme) yanlış; tek doğru A. Kök–şık uyumu kabul edilebilir. Yeni kusur yok. (c) Açıklamadaki md 8 cümlesi ('para naklinde silah kullanılması 8 inci maddede ayrıca izne bağlanmıştır') silahı kimin temin ettiğini söylemiyor; 06'da en çok B'yi (şirket, izinle) çağrıştırır, C'yi sezdirmez. Aynı cümle, 06'nın açıklamasındaki 'komisyonun kararı ve valinin onayı' ile 01'in B'si arasındaki karışıklığı da gideriyor (iki izin ayrıldı). İl emniyet müdürlüğü cümlesi kısaltıldığı için 12'ye yönlendirme kalktı. (e) 'Valiliğin izniyle' 01'de doğru şık, 09'da hem doğru ifadede (D) hem yanlış ifadede (E) geçiyor; ibare hiçbir soruda ipucu değil, her sorunun cevabı kendi hükmüyle (md 3/1; md 14/2 ile md 13) belirleniyor. Not (kalite): A en kısa ve en genel şık, B 'A + yanlış şart' biçiminde; ayrım şartın bilinmesine dayanıyor, meşru bir 'şart ekleme' çeldiricisi."
+  },
+  {
+    "id": "5188-p1-02",
+    "karar": "ONAY",
+    "gerekce": "Tek yanlış C: md 4 'başvuran kişi ya da kuruluşun temsilcisi ilgili komisyon toplantısına üye olarak katılır'. A, B, D md 4'ün son cümlesiyle ('oy çokluğu ile alır; oyların eşitliği halinde başkanın bulunduğu taraf çoğunluk sayılır; çekimser oy kullanılamaz') birebir; E md 4 ('Sanayi odasının bulunmadığı illerde komisyona ticaret ve sanayi odası başkanlığının temsilcisi katılır') ile doğru. Not: E toplantı ve karar usulünden çok komisyonun oluşumuna ilişkin; 'katılır' başlıkla bağı kuruyor, ikinci yanlış ya da kapsam dışı şık tartışması doğurmuyor. Tırnaklı başlık ve olumsuz vurgu resmî kalıpta. Sızıntı yok: bankadaki 356ec355 (üyeler) ve e3f97dbc (başkan) bu sorunun cevabını vermiyor, bu soru da onlarınkini vermiyor."
+  },
+  {
+    "id": "5188-p1-03",
+    "karar": "ONAY",
+    "gerekce": "TUR 2: Birinci tur itirazı karşılandı: soru sözcüğü olumsuz koşul yan cümlesinden çıktı, kök olumlu kipli boşluk doldurmaya döndü ('…iptal edilmemesi için eksiklik - - - - içinde giderilmeli ya da bu kişiler değiştirilmelidir'); tek okumada anlaşılıyor, 359 karakter boşluk sorusu için resmî ölçüde. Sıra açık (1. boşluk şube bildirimi, 2. boşluk şartların kaybı). Tek doğru B: md 5/1 'şubelerini bir ay içinde … yazılı olarak … bildirirler', md 5/5 'iki ay içinde eksiklik giderilmediği veya … değiştirilmediği takdirde faaliyet izni iptal edilir'; A, C, D, E en az bir boşlukta yanlış. 'iptal edilmemesi için … giderilmeli' çevirisi md 5/5'in karşıt-tersi, metne sadık. (d) Kök ve açıklama şube bildiriminin alıcısını ('Bakanlığa ve ilgili valiliğe') yazmıyor; 12'nin cevabındaki 'İçişleri Bakanlığı ve valilikler' çifti sızmıyor. Yeni kusur yok. Not (kalite): iki ayrı fıkra tek önermede birleşmiş; 'üç ay' içeren iki şık, açıklamanın da söylediği gibi md 5'te geçmeyen değerle eleniyor."
+  },
+  {
+    "id": "5188-p1-04",
+    "karar": "ONAY",
+    "gerekce": "TUR 2: Birinci turda ONAY; değişiklik (B 'Lise – lise', kök 'şirketi yöneticileri ile güvenlik sorumlularında') yeni kusur doğurmadı. Tek doğru D (md 5/3 'lisans mezunu', md 5/4 'en az önlisans'); B'de yönetici için lise metne aykırı, yanlış. 'sırasıyla' eşlemesi (yönetici → güvenlik sorumlusu) açık; kökteki ad öbeği sorulan kişileri değiştirmiyor (güvenlik sorumlusunun şartı her yerde aynı). Sızıntı yok; açıklamanın silahlı/silahsız görevli öğrenim cümlesi bankadaki c1f78b7a'ya (Genel Kültür) değiyor, ders farklı olduğundan etkisi düşük. Not (kalite): birinci konumdaki 'Lise' yalnız B'de geçiyor."
+  },
+  {
+    "id": "5188-p1-05",
+    "karar": "ONAY",
+    "gerekce": "TUR 2: Birinci tur itirazı karşılandı. III artık 'Özel güvenlik görevlisine karşı görevi dolayısıyla işlenen suçların failleri…'; edilgen yapıda 'görevi'nin sahibi tek (görevli), öncül I–II'ye ya da köke yaslanmadan okunuyor; öncüller hem doğruluk hem anlam bakımından bağımsız. III md 23/2 ('kamu görevlisine karşı suç işlemiş gibi cezalandırılır') karşısında yanlış; I (md 7/d) ve II (md 7/ı) doğru; tek cevap C. md 23/1 cümlesi açıklamadan çıktı. Yeni sızıntı yok: 11'in açıklamasındaki 23 cümlesi yalnız 23/1'i (görevlinin işlediği suçlar) söylüyor, 23/2'yi söylemiyor; III hakkında iki yöne de çekilebilen bir bilgi, cevabı vermiyor. Not (kalite): iki yetki öncülü doğru, türü farklı tek öncül yanlış örüntüsü sürüyor."
+  },
+  {
+    "id": "5188-p1-06",
+    "karar": "ONAY",
+    "gerekce": "TUR 2: Birinci tur itirazı karşılandı: banka sorusu 06f9bd3f'nin cevabını veren 'ne miktar ve özellikte ateşli silah … belirler' cümlesi çıktı; yerine konan 'Komisyonun silah ve teçhizatı temin ettiğine dair bir hüküm yoktur; 8 inci maddede komisyon, istisnai silah izninde karar veren kuruldur.' komisyonun belirleme yetkisini söylemiyor. Tek doğru C (md 8 son fıkra: 'ilgili kişi veya kuruluş tarafından temin edilir'; 'Özel güvenlik şirketleri ateşli silah alamaz ve bulunduramazlar'). Yeni D 'Valilik' yanlış: metinde temin eden 'ilgili kişi veya kuruluş'tur; valinin md 8'deki rolü istisnai silah izninde 'onay'dır ve 'sürekli' kaydı bu istisnayı zaten dışarıda bırakıyor. İki doğru ya da sızıntı yok; açıklamadaki 'Valilik de bu istisnai izinde onay makamıdır' 01'in ve 12'nin cevabına değmiyor. Not (dil): kök '…hangisi tarafından temin edilir?' olunca B ('Şirket, komisyondan izin alarak') ad öbeği değil; 'Komisyondan izin alan şirket' gibi bir ad öbeği kökle daha düzgün birleşir. Anlamı bozmuyor, ret gerekçesi değil."
+  },
+  {
+    "id": "5188-p1-07",
+    "karar": "ONAY",
+    "gerekce": "Tek yanlış B: md 9/2 '…koruduğu kişi ile birlikte olduğunda ülke geneli, koruduğu kişi olmaksızın kişi koruma izni verilen ilin sınırlarıdır.' A, C, D md 9/2 ile, E md 9/1 ile doğru. E 'sadece' kaydını düşürmüş; kısaltılmış izin cümlesi yanlışa dönmüyor, ikinci yanlış doğmuyor. Kök tırnaklı başlıkla resmî kalıpta, tek okumada anlaşılır. Sızıntı yok: C'deki para nakli güzergâhı 01'in cevabını vermiyor."
+  },
+  {
+    "id": "5188-p1-08",
+    "karar": "ONAY",
+    "gerekce": "TUR 2: Birinci turda ONAY; kalite notum (A tek çoğul kategori) yeni C 'Kaçakçılık suçları' ve D 'Fuhuş suçları' ile giderildi. İkisi de yalnız md 10/1-d-2'de ('…kaçakçılık ve fuhuş suçlarından mahkûm olmamak') geçiyor, (3)'te yok; tek doğru A. Olası itiraz: fuhuşun (3)'teki 'cinsel dokunulmazlığa karşı suçlar' içinde sayılması. Metin bunu kapatıyor, çünkü (2) ikisini ayrı unsur olarak sayar ('cinsel dokunulmazlığa karşı suçlar ile … kaçakçılık ve fuhuş suçlarından'); açıklama da bunu açıkça söylüyor. D meşru bir 'kapsam genişletme' çeldiricisi, ikinci doğru değil; kaçakçılık için de aynı ayrı sayım geçerli. Sızıntı yok."
+  },
+  {
+    "id": "5188-p1-09",
+    "karar": "ONAY",
+    "gerekce": "TUR 2: Birinci tur itirazları karşılandı. E 'Valiliğin izniyle sivil kıyafetle görev yapabilir.' md 13'ün 'sivil kıyafetle görev yapılmasına komisyon izin verebilir' cümlesiyle doğrudan çelişiyor; lafzi okumayla doğru sayılma (cevapsızlık) riski kalktı. D 'Yenileme eğitimi, yeterli bina, araç, gereç ve personel varsa valiliğin izniyle hizmet yerinde verilebilir.' md 14/2'ye sadık; şartın yere ait olduğu açık ve özne eğitim olduğu için 'verilebilir' doğru. A, B, C md 17, 18, 16 ile doğru; tam bir yanlış (E). (b) 11'in açıklaması 'başka bir yasağa uymayan görevliler' diyor, grevi anmıyor; A'yı doğrulamıyor. (e) 'valiliğin izniyle' hem D'de (doğru) hem E'de (yanlış) geçtiği için ipucu olamaz; 01'deki aynı ibare ayrı bir hükme (md 3/1) dayanıyor, olası karışıklık sorunun ölçtüğü iki izin ayrımının kendisi. Yeni kusur yok."
+  },
+  {
+    "id": "5188-p1-10",
+    "karar": "ONAY",
+    "gerekce": "TUR 2: Birinci turda ONAY; değişiklik yeni kusur doğurmadı. Kök olumlu ve md 19'un kendi terimiyle kurulu ('Bu Kanunda öngörülen adlî suçlar'); 'değil' yapısı kalktı. Tek doğru E (md 19/e '…verdiğini ilân eden veya reklam yapan …'). A 20/a, B 20/e, yeni C 20/f ('izin verilen dışında teçhizat giydirerek çalıştıran'), yeni D 20/c ('6 ncı madde uyarınca mülki idare amirlerince istenen ilave tedbirleri almayan') idari yaptırım; hiçbiri md 19'da değil. Doğru şık artık tek başına en uzun değil. (a) 11'in açıklaması md 19'dan yalnız '(a), (b) ve (c) bentleri' diye harf anıyor, ilan ya da faaliyet izni içeriğini söylemiyor; E'ye ipucu yok. Notlar: C'de nesne ('görevliyi') düşmüş, bağlamdan anlaşılıyor. Bankadaki e6635560'ın (Genel Kültür) kökü D'nin idari para cezası olduğunu söylüyor; ders farklı ve yalnız bir çeldiriciyi eliyor. Kök 86 karakter, kısa (kalite)."
+  },
+  {
+    "id": "5188-p1-11",
+    "karar": "ONAY",
+    "gerekce": "TUR 2: Birinci tur itirazı karşılandı: kök 'uygulanacak yaptırım … hangisidir?' ve şıklar ad öbeği; kök–şık uyumu sağlandı, çift yüklem kalktı. Tek doğru D (md 20/d 'bir yıl süreyle özel güvenlik alanında görev alamazlar'). Eklenen 23 cümlesi metne sadık ve B'yi savunan itirazı karşılıyor: md 23/1 ceza miktarı belirlemez; 'üç aydan bir yıla kadar' bu Kanunda yalnız 19/a, b, c'de geçer, 20/d fiili orada yok. A (20/d para cezası öngörmez), C (20/ı), E (20/a, 20/h) yanlış; iki doğru yok. Sızıntı: (a) md 19 için yalnız bent harfleri anılıyor, 10'un cevabına ipucu yok; (b) altı aylık yasak 'başka bir yasağa uymayan görevliler' diye anılıyor, grev adı geçmiyor, 09'un A'sını doğrulamıyor. 23 cümlesi yalnız 23/1'i söylüyor, 05'in III'ünü (23/2) çözmüyor. Yeni kusur yok."
+  },
+  {
+    "id": "5188-p1-12",
+    "karar": "ONAY",
+    "gerekce": "TUR 2: Birinci turda ONAY. Yeni A 'Valilikler ve özel güvenlik komisyonları' yanlış: md 22/1 komisyonu saymaz; md 3/3 komisyona belirleme yetkisi verir, denetim yetkisi vermez. Her değer en az iki şıkta (valilik 2, İçişleri 3, il emniyet 2, komisyon 3); açıklamadaki 'il emniyet müdürlüğünü içeren iki seçenek' şıklarla tutarlı. Tek doğru B. (d) 03'ün kökü ve açıklaması bildirimin alıcısını yazmıyor; partide denetim yetkisi ve 'İçişleri Bakanlığı ve valilikler' çifti yalnız bu soruda geçiyor. 01'in açıklamasındaki il emniyet müdürlüğü yönlendirmesi kaldırıldı. 06, 09, 10 ve 11'in açıklamalarında valiliğin onay, izin ve iptal rolleri geçiyor ama denetim geçmiyor; cevap verilmiyor. Yeni kusur yok."
+  }
+]

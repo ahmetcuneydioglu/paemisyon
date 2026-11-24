@@ -1,0 +1,53 @@
+[
+  {
+    "id": "5326-p1-01",
+    "articleNo": "14",
+    "kok": "5326 sayılı Kanun'a göre, özel faillik niteliğini taşıyan kişi için suç, diğer kişiler için kabahat olarak tanımlanan bir fiilin, bu niteliği taşıyan ve taşımayan kişilerce ortaklaşa işlenmesi hâlinde aşağıdakilerden hangisi söz konusu olur?",
+    "siklar": {
+      "A": "Hepsine fail olarak idarî para cezası verilir.",
+      "B": "Niteliği taşıyan kişi hakkında suça, taşımayan kişiler hakkında kabahate ilişkin hükümler uygulanır.",
+      "C": "Suça iştirake ilişkin hükümler uygulanır.",
+      "D": "Niteliği taşımayan kişiler hakkında yaptırım uygulanmaz.",
+      "E": "Hepsi hakkında hem suçtan hem kabahatten dolayı yaptırım uygulanır."
+    },
+    "dogru": "C",
+    "aciklama": "14 üncü maddenin dördüncü fıkrası şöyledir: 'Kanunda özel faillik niteliğini taşıyan kişi açısından suç, diğer kişiler açısından kabahat olarak tanımlanan fiilin, bu niteliği taşıyan ve taşımayan kişiler tarafından ortaklaşa işlenmesi halinde suça iştirake ilişkin hükümler uygulanır.' Fıkra, fiili birlikte işleyenleri iki ayrı rejime bölmez; niteliği taşımayan kişi de suça iştirak hükümlerine tabi olur. Doğru cevap C'dir. A, kabahate iştirakin genel kuralıdır (birinci fıkra); o kural bir KABAHATİN işlenişine katılmayı düzenler, kökteki fiil ise niteliği taşıyan kişi açısından suçtur. B, fiilin tanımındaki ayrımı ortaklaşa işlenme hâlinde de sürdürür; dördüncü fıkra bu hâlde niteliği taşımayan kişiler için de suça iştirak hükümlerini gösterir. D, niteliği taşımayan kişileri sorumluluğun dışında bırakır; fıkra onları da kapsar. E iki rejimi birlikte uygular; fıkra ise tek bir rejim gösterir. Karıştırılan komşu hüküm ikinci fıkradır: özel faillik niteliği bir kabahat için aranıyorsa 'kabahate iştirak eden ve bu niteliği taşımayan kişi hakkında da fail olarak idarî para cezası verilir.' İki fıkrayı ayıran, fiilin niteliği taşıyan kişi açısından kabahat mi suç mu olduğudur.",
+    "dayanak": "5326 sayılı Kanun md 14/4 (karş. md 14/1, 14/2)",
+    "zorluk": "hard",
+    "tur": "kavram"
+  },
+  {
+    "id": "5326-p1-02",
+    "articleNo": "15",
+    "kok": "5326 sayılı Kanun'a göre, hem kabahat hem de suç olarak tanımlanmış bir fiil nedeniyle kabahat dolayısıyla yaptırım aşağıdaki hâllerin hangisinde uygulanır?",
+    "siklar": {
+      "A": "Fiilin taksirle işlenmiş olması",
+      "B": "Kabahat için öngörülen idarî para cezasının daha ağır olması",
+      "C": "Kabahat için idarî para cezasından başka bir idarî yaptırımın da öngörülmüş olması",
+      "D": "İlgili kamu kurum ve kuruluşunca idarî yaptırım kararı verilmemiş olması",
+      "E": "Suçtan dolayı yaptırım uygulanamaması"
+    },
+    "dogru": "E",
+    "aciklama": "15 inci maddenin üçüncü fıkrası şöyledir: 'Bir fiil hem kabahat hem de suç olarak tanımlanmış ise, sadece suçtan dolayı yaptırım uygulanabilir. Ancak, suçtan dolayı yaptırım uygulanamayan hallerde kabahat dolayısıyla yaptırım uygulanır.' Kural suçun önceliğidir; kabahat yaptırımı ancak ikinci cümledeki hâlde devreye girer. Doğru cevap E'dir. B ve C'deki ölçütler aynı maddenin birinci fıkrasına aittir; o fıkra 'Bir fiil ile birden fazla kabahatin işlenmesi' hâlini, yani iki KABAHAT arasındaki ilişkiyi düzenler. Fiil aynı zamanda suç olarak tanımlanmışsa üçüncü fıkra uygulanır ve bu fıkra, kabahat için öngörülen yaptırımın ağırlığına ya da türüne göre bir ayrım yapmadan 'sadece suçtan dolayı' yaptırım uygulanabileceğini söyler. A'daki kusur türü üçüncü fıkrada bir ölçüt olarak yer almaz. D'deki şart Kanunda Cumhuriyet savcısının karar verme yetkisini düzenleyen maddede geçer; içtima kuralının koşulu değildir.",
+    "dayanak": "5326 sayılı Kanun md 15/3 (karş. md 15/1)",
+    "zorluk": "medium",
+    "tur": "dogrudan"
+  },
+  {
+    "id": "5326-p1-03",
+    "articleNo": "20",
+    "kok": "5326 sayılı Kanun'a göre, kabahatin neticesinin gerçekleştiği zaman aşağıdakilerden hangisinin belirlenmesinde esas alınabilir?",
+    "siklar": {
+      "A": "Kabahatin işlenmiş sayıldığı zaman",
+      "B": "Failin yaşı",
+      "C": "Yerine getirme zamanaşımının başlangıcı",
+      "D": "Soruşturma zamanaşımının başlangıcı",
+      "E": "Başvuru süresinin başlangıcı"
+    },
+    "dogru": "D",
+    "aciklama": "20 nci maddenin dördüncü fıkrası soruşturma zamanaşımının başlangıcını gösterir: 'Zamanaşımı süresi, kabahate ilişkin tanımdaki fiilin işlenmesiyle veya neticenin gerçekleşmesiyle işlemeye başlar.' Neticenin gerçekleştiği zaman Kanunda bu süre için esas alınmıştır; doğru cevap D'dir. A, bu hükümle karıştırılan kuraldır: 'Kabahat, failin icraî veya ihmali davranışı gerçekleştirdiği zaman işlenmiş sayılır. Neticenin oluştuğu zaman, bu bakımdan dikkate alınmaz' (5/2). 'Bu bakımdan' kaydı kabahatin İŞLENME ZAMANININ belirlenmesine ilişkindir; zamanaşımının başlangıcı 20 nci maddede ayrıca düzenlenmiştir. İki hüküm birlikte okunduğunda netice, kabahatin ne zaman işlenmiş sayılacağını değiştirmez, ama soruşturma zamanaşımını başlatabilir. B'de ölçüt, çocuğun 'Fiili işlediği sırada' taşıdığı yaştır (11/1). C'deki süre fiile ya da neticeye değil, idarî yaptırım kararının kesinleşmesine göre başlar (21/4). E'deki başvuru süresi de kararın ilgiliye bildirilmesine bağlanmıştır (27/1).",
+    "dayanak": "5326 sayılı Kanun md 20/4 (karş. md 5/2, 11/1, 21/4, 27/1)",
+    "zorluk": "medium",
+    "tur": "kavram"
+  }
+]

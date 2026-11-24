@@ -1,0 +1,98 @@
+[
+  {
+    "id": "5253-p1-01",
+    "karar": "ONAY",
+    "korCevap": "C",
+    "metinCevap": "D",
+    "sinavDegeri": 4,
+    "ayirtEdicilik": 4,
+    "dogallik": 4,
+    "zorluk": "medium",
+    "gerekce": "TUR 2: Çekince (ters ayırt etme eğilimi, düşük-orta): lokal denetiminin amacı 'habersiz denetim' yorumunu çağırıyor; kolluk saha bilgisi ve bu yorumla bilmeyen aday D'ye ~%35–40 gidiyor, yalnız 19/2'yi bilen eksik aday ise C'ye (24 saat) ya da A'ya düşüyor. Bu turda bu ayrışma gözlendi: kör çözümüm C oldu, çünkü belleğimdeki 'yirmi dört saat' izi 19/2'nindi (genel bilgiyle D %40, C %30; salt şık + sağduyuyla D %35, C %25, E %20). Taze kör çözücü aynı silik izlerle amaç yorumundan D'yi seçti (genel %55, salt şık %40). Etkiyi sınırlayanlar: hiçbir çözücünün salt şık güveni yüksek değil; mekanik kestirmeler yanlış yere gidiyor (kesişim ve en sık değer E'ye, somutluk C'ye); md 20'yi (bankada Arama Yön. md 22) denetime taşıyan eksik aday B/E'de kalıyor; 'idari denetim arama değildir' muhakemesi meşru hukuk bilgisi. Metin 26/B/1 → D; anahtar D, metinle ayrışma yok (kör çözümüm C). B'nin ikinci, C'nin birinci yarısı doğru, öbür yarıları yanlış; tek doğru var. Birinci turdan bu yana C'nin 19/2'nin gerçek değerine çevrilmesi yeni kusur doğurmadı: 'kolluğa da' yarısını C ile D'ye paylaştırıp saha sezgisinin tek başına D'yi vermesini kesti, eksik bileni yakalayan gerçek bir komşu değer ekledi. Gerçek zorluk: medium.",
+    "oneri": ""
+  },
+  {
+    "id": "5253-p1-02",
+    "karar": "ONAY",
+    "korCevap": "A",
+    "metinCevap": "B",
+    "sinavDegeri": 4,
+    "ayirtEdicilik": 4,
+    "dogallik": 4,
+    "zorluk": "hard",
+    "gerekce": "TUR 2: Çekince yok. Kör çözümüm A (genel bilgiyle A %50, B %30; salt şık + sağduyuyla A %45, B %30): kökteki 'daha önce faaliyetten men edilmemiş' kaydı ve PVSK 8'in kademesi ilk tespitte geçici meni düşündürdü. Taze kör çözücü de A'yı seçti (genel %55, salt şık %45); birinci turda bu rol de A'ya gitmişti. Üç bağımsız kör çözüm baskın kestirmeyle yanlış şıkka gitti: soru lehine güçlü kanıt. B'ye giden kesişim (mülki idare amiri + lokal belgesi iptal) ve 'ağır fiile ağır yaptırım' sezgisi ~%30'da kalıyor; D'deki fesih ağırlık sezgisini bölüyor. PVSK 8'i bankadan bilen eksik aday A, C ya da E'ye gider; ters ayırt yok. Metin 26/B/3 birinci yol: 6136'ya aykırı silah satışının tespiti → lokal açma ve işletme belgesi mülki idare amirince iptal; 'tekrar' kaydı ikinci yola ait. Anahtar B, metin B; kör çözümle ayrışma (A). A'dan 'otuz gün'ün kaldırılması PVSK 8 değerinin sızmasını bitirdi; yeni kusur yok, A hâlâ 26/B/2'nin gerçek yaptırımı. Soru 26/B'ye özgü farkı ölçüyor (ilk tespitte iptal, merci mülki idare amiri); bankadaki PVSK 8 sorularını tekrar etmiyor. Gerçek zorluk: hard.",
+    "oneri": ""
+  },
+  {
+    "id": "5253-p1-03",
+    "karar": "ONAY",
+    "korCevap": "B",
+    "metinCevap": "B",
+    "sinavDegeri": 4,
+    "ayirtEdicilik": 5,
+    "dogallik": 4,
+    "zorluk": "hard",
+    "gerekce": "Çekince yok. Kör: B (genel bilgiyle ~0,25). TCK 53/2'yi bilen aday A'ya gider; bankadaki TCK sorusu da 'hak yoksunluğu infaz tamamlanıncaya kadar sürer' der. 6136 md 7 kalıbını bilen D'ye gider. Salt şıkla en sık öncüllerin bileşimi D çıkıyor (~0,35). Bütün kestirmeler yanlış şıkka gidiyor; soru lehine. Doğru bileşim, en sık öncülü (dört şıkta geçen I) içermeyen tek şık. Yanlış öncüller sağduyuyla değil, TCK 53 ve 'affa uğramış olsa bile' bilgisiyle tartılıyor. Metin 3/3 'süreler geçmiş veya affa uğramış olsa bile' der ve yasağı yalnız yasaklanmış hakların geri verilmesi kararına bağlar → Yalnız III. I, TCK 53/2'deki sürenin kendisi olduğu için iki okuma yok. III'ün I'i önvarsayması da 'hangileri sağlar' sorusunu bozmuyor. TCK 53 yalnız çeldirici; soru 3/3'ün ondan farkını ölçüyor (iki bilgi birlikte: zor). Öncüllü kök 304 krkt.",
+    "oneri": ""
+  },
+  {
+    "id": "5253-p1-04",
+    "karar": "ONAY",
+    "korCevap": "E",
+    "metinCevap": "E",
+    "sinavDegeri": 4,
+    "ayirtEdicilik": 4,
+    "dogallik": 4,
+    "zorluk": "medium",
+    "gerekce": "TUR 2: Çekince yok. Kör çözümüm E, ama silik bellekten (beyannameyi başkanın verdiğine dair iz). 5253'ü bilmeyen aday için tahminim: genel bilgiyle B %40, E %30, A %20; salt şık + sağduyuyla B %40, E %30. Taze kör çözücü B'yi seçti (genel %35, salt şık %35; E %30). Kesişim (B, B–C ve B–E ilişkilerinin göbeği) ve 'derneği yönetim kurulu temsil eder' varsayılanı yanlış şıkka gidiyor; soru lehine. İçeren çift (B ⊃ E) adayı B/E'ye indiriyor, ama çift içindeki kestirme de B'yi gösteriyor; 'başkan sorumludur' gündelik sezgisi E'yi ~%30'da tutuyor, baskın değil. Eksik bilen: 32/l'deki çoğul 'dernek yöneticileri'ni okuyup 33/2'yi atlayan B'ye, Kabahatler md 8'i bilen A'ya gider; ters ayırt yok. A ikinci doğru olamaz: kök '5253 sayılı Kanun'a göre … öngörülen' cezayı soruyor. Metin 32/l + 33/2 → E; anahtar E, ayrışma yok. Yeni kök çoğul ipucu taşımıyor; D'nin 32/d'nin gerçek muhatabına çevrilmesi partideki uydurma öğeyi ('sayman') kaldırdı; yeni kusur yok (C'nin md 9 gerekçesi metne uygun). Gerçek zorluk: medium.",
+    "oneri": ""
+  },
+  {
+    "id": "5253-p1-05",
+    "karar": "ONAY",
+    "korCevap": "E",
+    "metinCevap": "C",
+    "sinavDegeri": 4,
+    "ayirtEdicilik": 4,
+    "dogallik": 4,
+    "zorluk": "medium",
+    "gerekce": "TUR 2: Çekince yok. Kör çözümüm E (genel bilgiyle E %40, C %35; salt şık + sağduyuyla E %35, C %30, B %25): 'temsilcilik dernek ve şube birimidir, federasyon dışarıda kalır' hiyerarşi sezgisi. Taze kör çözücü de E'yi seçti (genel %50, salt şık %40), B'deki 'şube veya dernek genel kurulları' ifadesinden C'yi doğru sayan çapraz çıkarımla. İkiz kalıp (C/E) adayı ikiliye indiriyor, ama çift içindeki iki kestirme de yanlış şıkka (E) gidiyor; soru lehine. 'Alt birim alt birim açamaz' sezgisi C'yi ~%20–30'da tutuyor, baskın değil. 8/2'yi yalnız yasak olarak hatırlayan eksik aday da E'ye gider; ters ayırt yok. Metin md 24 'Şubeler temsilcilik açamazlar' → yanlış önerme C. E, 8/2 ('temsilcilik dışında … başka bir örgüt kuramazlar') ve md 36 ile doğru; A 2/i'nin, B ve D md 24'ün kendi cümleleri. Anahtar C, metin C; kör çözümle ayrışma (E). YANLIŞTIR biçimi yeni kusur doğurmadı: yanlış önerme doğru önermelerle çelişmiyor, doğru önermeler birbirini varsaymıyor, tırnaklı başlık cevabı vermiyor, partide tek olumsuz kök. Gerçek zorluk: medium.",
+    "oneri": ""
+  },
+  {
+    "id": "5253-p1-06",
+    "karar": "ONAY",
+    "korCevap": "A",
+    "metinCevap": "A",
+    "sinavDegeri": 4,
+    "ayirtEdicilik": 5,
+    "dogallik": 5,
+    "zorluk": "hard",
+    "gerekce": "Çekince yok. Kör: A (silik hafızayla). Genel bilgiyle de salt şıkla da B ~0,35; B en uzun, en ağır ve en sık öğeleri birleştiren şık, aynı zamanda kesişim göbeği. 'En ağır suça en ağır yaptırım' kestirmesi B'ye (30/b → 32/p) gidiyor. Rapor §8 kural 4'ün istediği gibi iki ağır yaptırım (fesih ve tesisin kapatılması) şıklarda birlikte duruyor; soru lehine. Metin 32/o ikinci cümle: hapis ve tesisin kapatılması. Dört çeldiricinin dördü de md 32'nin komşu bentlerindeki gerçek yaptırım bileşimi: B 32/p, C 32/n, D 32/m, E 32/o birinci cümle. Partinin en güçlü çeldirici takımı bu. Kolluk hizmetine hazırlayıcı eğitim kolluğa değer; fiil → ceza türü kalıbı resmî [51] ile aynı. Zorluk: çeldiriciler komşu hükmün gerçek değeri, doğru cevap da sezgiye aykırı. Üreticinin 'medium' etiketi düşük; soru zor (en az orta-zor).",
+    "oneri": ""
+  },
+  {
+    "id": "5253-p1-07",
+    "karar": "ONAY",
+    "korCevap": "A",
+    "metinCevap": "C",
+    "sinavDegeri": 4,
+    "ayirtEdicilik": 5,
+    "dogallik": 4,
+    "zorluk": "medium",
+    "gerekce": "TUR 2: Çekince yok. Birinci turdaki itiraz (tek konumlu şıklarda TMK varsayılanı, kesişim ve 'yargı atar' sezgisinin doğruda birleşmesi) karşılandı. Kör çözümüm A (genel bilgiyle A %50, E %20; salt şık + sağduyuyla A %45, C %15): 'kamu yararı → merkez' ve 'kayyım → sulh hukuk' sezgileri L'nin köşesinde (A) birleşti. Taze kör çözücü de A'yı seçti (genel %35, salt şık %30–32; C %10–12). Tekil eleme (B, E) ve köşe kestirmesi A'ya, kökteki 'suç' yankısı D/E'ye gidiyor; doğruya giden mekanik ya da sağduyu yolu yok, soru lehine. 'Yargı atar' sezgisi yalnız B'yi eliyor. 27/3'ü bilip 27/4'ü bilmeyen eksik aday A'ya ('uzaklaştıran ister') düşüyor; yalnız TMK bilen A ile C arasında kalıyor. Doğru cevap 5253'e özgü 'il valisi ister' bilgisini şart koşuyor. Metin 27/4 → C (vali ister, sulh hukuk mahkemesi bir hafta içinde atar); anahtar C, metinle ayrışma yok (kör çözümüm A). Izgara kuralı sağlam: İçişleri Bakanı iki konumda geçiyor, tek tekil değer metindeki gerçek aktör (Cumhuriyet savcısı, 19/7); 2×2 + 1 yok, iki doğru şık yok. Gerçek zorluk: medium (bilmeyen için zor).",
+    "oneri": ""
+  },
+  {
+    "id": "5253-p1-08",
+    "karar": "ONAY",
+    "korCevap": "E",
+    "metinCevap": "E",
+    "sinavDegeri": 4,
+    "ayirtEdicilik": 4,
+    "dogallik": 4,
+    "zorluk": "easy",
+    "gerekce": "TUR 2: Çekince (düşük): soru fiilen iki şıklı. B, C ve D komşu hükümlerin gerçek değerleri olsa da zayıf (taze kör çözücüde %2–5'er); bilmeyen aday ikiz A/E'ye inip yaklaşık yazı-tura oynuyor (~%45–50). Birinci tur itirazı (B'nin ızgara göbeğini kurup E'yi göstermesi) karşılandı: E'yi gösteren mekanik kestirme kalmadı; A ile E yalnız izin ↔ bildirim farkıyla ayrılıyor. Kör çözümüm E (genel bilgiyle E %60, A %25; salt şık + sağduyuyla E %50, A %35); bellekte md 21 izi güçlüydü, güvenler bununla şişmiş olabilir. Taze kör çözücü E (genel %65, bellek uyarılı; salt şık E %45, A %45). Birinci tur önerisinin beklediği 'bilmeyen A'ya gider' etkisi görülmedi, ama sezgiler doğruda birleşmiyor, bölünüyor (güvenlik, 2860 ve eski izin rejimi → A; Anayasa 33 'önceden izin almaksızın' → E); yüksek güvenli yol yok. Eksik bilen: 5/2'yi bilen C ya da A'ya, 2860'ın izin rejimini bilen A'ya gider. Metin 21/1 → E; anahtar E, ayrışma yok. Yeni B (md 22 kalıbı) ikinci doğru doğurmadı; en uzun şık olması yanlış şıkta, sızıntı değil. Partinin tek kolay sorusu; 5253'ün resmî soru profiliyle uyumlu. Gerçek zorluk: easy.",
+    "oneri": ""
+  }
+]

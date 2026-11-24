@@ -1,0 +1,119 @@
+# 5326-p1 — bankadaki en benzer sorular (bütün banka, 7720 soru; eşik 0.15, aday başına 5)
+# skor = aday kök+doğru şık sözcüklerinin (IDF ağırlıklı) ne kadarının o soruda geçtiği. Yüksek skor mükerrer DEMEK DEĞİLDİR; karar gözcünündür.
+
+## 5326-p1-01
+ADAY: 5326 sayılı Kanun'a göre, özel faillik niteliğini taşıyan kişi için suç, diğer kişiler için kabahat olarak tanımlanan bir fiilin, bu niteliği taşıyan ve taşımayan kişilerce ortaklaşa işlenmesi hâlinde aşağıdakilerden hangisi söz konusu olur?
+ADAY DOĞRU: Suça iştirake ilişkin hükümler uygulanır.
+  — skor 0.32 | Ceza Hukuku / Türk Ceza Kanunu | published | id a7e9cccc-927e-4e8c-aec2-5619355619be
+    Sadece özel faillik vasfını taşıyanlar tarafından işlenebilen suçlara gerçek özgü suç; herkes tarafından işlenebilen bir suçun, belirli özelliklere sahip bir kimse tarafından işlenmesinin suçu nitelikli hâle getirdiği suçlara görünüşte özgü suç denir. Buna göre aşağıdakilerden hangisi görünüşte özgü suça örnek teşkil eder?
+    A) Resmî belgede sahtecilik suçunun, bu belgeyi düzenlemeye yetkili kamu görevlisi tarafından işlenmesi  ✔
+    B) Bir kamu görevlisinin işkence suçunu işlemesi
+    C) İşkence suçunun işlenmesine kamu görevlisi haricindeki kişilerin iştirak etmesi
+    D) Bir kamu görevlisinin görevi nedeniyle zilyetliği kendisine devredilmiş malı zimmetine geçirmesi
+    E) Bir kamu görevlisinin görevinin sağladığı nüfuzu kötüye kullanmak suretiyle bir başkasını kendisine menfaat sağlamaya zorlaması
+  — skor 0.29 | Polis Mevzuatı / 5326 Sayılı Kabahatler Kanunu | published | id 850651a3-6475-4b01-9940-150722ebf4fc
+    Bir kişi, sekiz ay önce 112 Acil Çağrı Merkezine asılsız ihbarda bulunması nedeniyle idarî para cezası almış; bu kez yine 112'yi meşgul etmek amacıyla arayarak görevlilerle konuşmuştur. 5326 sayılı Kabahatler Kanunu'na göre bu kişiye uygulanacak yaptırım hakkında aşağıdakilerden hangisi doğrudur?
+    A) Fiilin bir yıl içinde tekrarı söz konusu olduğundan idarî para cezası iki katı olarak uygulanır  ✔
+    B) İkinci fiil farklı türde olduğundan tekerrür hükmü uygulanmaz ve ceza normal miktarda verilir
+    C) Tekerrür nedeniyle idarî para cezası yerine hapis cezası uygulanır
+    D) Ceza üç katı olarak uygulanır ve kişinin hattı iptal edilir
+    E) İkinci fiil için ceza verilemez; aynı kişiye yılda bir kez ceza verilebilir
+  — skor 0.26 | Polis Mevzuatı / 5326 Sayılı Kabahatler Kanunu | published | id 70a79a3e-9e66-41eb-ad17-5a29f309a621
+    5326 sayılı Kabahatler Kanunu'nun genel kanun niteliğiyle ilgili aşağıdakilerden hangisi doğrudur?
+    A) Kanunun idarî yaptırım kararlarına karşı kanun yoluna ilişkin hükümleri, diğer kanunlarda aksine hüküm bulunmaması hâlinde uygulanır; diğer genel hükümleri ise idarî para cezası veya mülkiyetin kamuya geçirilmesini gerektiren bütün fiiller hakkında uygulanır  ✔
+    B) Kanunun bütün hükümleri, diğer kanunlardaki aksine hükümlere rağmen her fiil hakkında uygulanır
+    C) Kanun yalnızca kendi içinde tanımlanan kabahatler hakkında uygulanır
+    D) Kanunun genel hükümleri yalnızca kolluk tarafından verilen idarî para cezaları hakkında uygulanır
+    E) Kanun, idarî tedbirler hakkında hiçbir şekilde uygulanmaz
+  — skor 0.24 | Ceza Hukuku / Türk Ceza Kanunu | published | id e4f62bc2-83bb-455a-a184-646888b48370
+    5237 sayılı Türk Ceza Kanunu'na göre; I. üst soy veya alt soy ilişkisinden doğan nüfuzu kullanmak suretiyle suça azmettiren, II. fiilin işlenmesinden sonra yardımda bulunacağını vaat eden, III. başkasının suç işleme kararını kuvvetlendiren kişilerden hangileri kural olarak suçun failinden daha fazla ceza alır?
+    A) Yalnız I  ✔
+    B) Yalnız II
+    C) Yalnız III
+    D) I ve II
+    E) I ve III
+  — skor 0.24 | Polis Mevzuatı / 5326 Sayılı Kabahatler Kanunu | published | id 80e0e3c0-6d6b-470b-9a45-a631fe334bf0
+    5326 sayılı Kabahatler Kanunu'na göre içtima kurallarıyla ilgili; I. Bir fiil ile birden fazla kabahatin işlenmesi hâlinde, tanımlarda sadece idarî para cezası öngörülmüşse en ağır idarî para cezası verilir. II. Aynı kabahatin birden fazla işlenmesi hâlinde her bir kabahatle ilgili olarak ayrı ayrı idarî para cezası verilir. III. Kesintisiz fiille işlenebilen kabahatlerde, idarî yaptırım kararı ve
+    A) Yalnız I ve II
+    B) Yalnız II ve III
+    C) I, II ve III  ✔
+    D) I, III ve IV
+    E) I, II, III ve IV
+
+## 5326-p1-02
+ADAY: 5326 sayılı Kanun'a göre, hem kabahat hem de suç olarak tanımlanmış bir fiil nedeniyle kabahat dolayısıyla yaptırım aşağıdaki hâllerin hangisinde uygulanır?
+ADAY DOĞRU: Suçtan dolayı yaptırım uygulanamaması
+  — skor 0.85 | Polis Mevzuatı / 5326 Sayılı Kabahatler Kanunu | published | id 80e0e3c0-6d6b-470b-9a45-a631fe334bf0
+    5326 sayılı Kabahatler Kanunu'na göre içtima kurallarıyla ilgili; I. Bir fiil ile birden fazla kabahatin işlenmesi hâlinde, tanımlarda sadece idarî para cezası öngörülmüşse en ağır idarî para cezası verilir. II. Aynı kabahatin birden fazla işlenmesi hâlinde her bir kabahatle ilgili olarak ayrı ayrı idarî para cezası verilir. III. Kesintisiz fiille işlenebilen kabahatlerde, idarî yaptırım kararı ve
+    A) Yalnız I ve II
+    B) Yalnız II ve III
+    C) I, II ve III  ✔
+    D) I, III ve IV
+    E) I, II, III ve IV
+  — skor 0.49 | Polis Mevzuatı / 5326 Sayılı Kabahatler Kanunu | published | id af22383b-9f1c-4c44-bd25-ac495ca68ed3
+    Bir soruşturmada Cumhuriyet savcısı, fiilin suç değil kabahat oluşturduğu gerekçesiyle kovuşturmaya yer olmadığı kararı vermiş ve idarî yaptırım kararı uygulamıştır. İlgili, hem kovuşturmaya yer olmadığı kararına itiraz etmiş hem de idarî yaptırım kararına karşı başvuruda bulunmak istemektedir. 5326 sayılı Kabahatler Kanunu'na göre idarî yaptırım kararına karşı başvuru nerede incelenir?
+    A) Her hâlükârda sulh ceza hâkimliğinde
+    B) Kovuşturmaya yer olmadığı kararına yapılan itirazı inceleyen merciide  ✔
+    C) İdare mahkemesinde
+    D) Ağır ceza mahkemesinde
+    E) Kararı veren Cumhuriyet savcısının bağlı olduğu başsavcılıkta
+  — skor 0.42 | Polis Mevzuatı / 5326 Sayılı Kabahatler Kanunu | published | id 22228818-850e-4814-83f1-afaed9d8452e
+    5326 sayılı Kabahatler Kanunu'na göre, kabahat dolayısıyla idarî yaptırım kararı vermeye yetkili makamın kanunda açıkça gösterilmediği hâllerde bu yetki kime aittir?
+    A) Mahallin en büyük mülkî amirine
+    B) İlgili kamu kurum ve kuruluşunun en üst amirine  ✔
+    C) Cumhuriyet savcısına
+    D) Sulh ceza hâkimine
+    E) Kolluk birim amirine
+  — skor 0.41 | Ceza Hukuku / Türk Ceza Kanunu | published | id 1b28a612-99ee-4a1d-9681-4084fe165284
+    5237 sayılı Türk Ceza Kanunu’nda, aşağıdakilerden hangisi “Biri diğerinin unsurunu veya ağırlaştırıcı nedenini oluşturması dolayısıyla tek fiil sayılan suç.” şeklinde tanımlanmıştır?
+    A) Kast
+    B) Faillik
+    C) Bileşik Suç  ✔
+    D) Fikri içtima
+    E) Zincirleme suç
+  — skor 0.40 | Polis Mevzuatı / 5326 Sayılı Kabahatler Kanunu | published | id acbfbd5d-534a-49fa-b5c9-f699848e0814
+    Bir anonim şirketin pazarlama müdürü, şirketin faaliyeti çerçevesinde üstlendiği görev kapsamında bir kabahat işlemiştir. 5326 sayılı Kabahatler Kanunu'na göre bu durumda aşağıdakilerden hangisi söylenebilir?
+    A) Müdür şirketin organı veya temsilcisi olmadığından yalnızca müdüre yaptırım uygulanabilir
+    B) Tüzel kişinin faaliyeti çerçevesinde görev üstlenen kişinin bu görev kapsamında işlediği kabahatten dolayı şirket hakkında da idarî yaptırım uygulanabilir  ✔
+    C) Kabahatten yalnızca şirket sorumlu tutulur; müdüre yaptırım uygulanamaz
+    D) Şirkete yaptırım uygulanabilmesi için müdürün önce mahkûm edilmesi gerekir
+    E) Tüzel kişiler hakkında idarî yaptırım uygulanması mümkün değildir
+
+## 5326-p1-03
+ADAY: 5326 sayılı Kanun'a göre, kabahatin neticesinin gerçekleştiği zaman aşağıdakilerden hangisinin belirlenmesinde esas alınabilir?
+ADAY DOĞRU: Soruşturma zamanaşımının başlangıcı
+  — skor 0.43 | Polis Mevzuatı / 5326 Sayılı Kabahatler Kanunu | published | id c80a919e-aac5-4299-ba98-a1a744d68b1d
+    5326 sayılı Kabahatler Kanunu'na göre, kabahatin ne zaman işlenmiş sayılacağıyla ilgili aşağıdakilerden hangisi doğrudur?
+    A) Kabahat, neticenin oluştuğu zaman işlenmiş sayılır
+    B) Kabahat, failin icraî veya ihmali davranışı gerçekleştirdiği zaman işlenmiş sayılır; neticenin oluştuğu zaman dikkate alınmaz  ✔
+    C) Kabahat, idarî yaptırım kararının verildiği tarihte işlenmiş sayılır
+    D) Kabahat, fiilin kamu görevlilerince öğrenildiği tarihte işlenmiş sayılır
+    E) Davranış ve netice farklı zamanlarda gerçekleşmişse fail lehine olan tarih esas alınır
+  — skor 0.34 | Polis Mevzuatı / 7068 Sayılı Genel Kolluk Disiplin Hükümleri Kanunu | published | id 52589821-1c93-4034-a80f-93ad2b876533
+    7068 sayılı Kanun'a göre, disiplin soruşturmasına başlanması için öngörülen zamanaşımı sürelerinin başlangıcı olarak Kanunda hangi an esas alınmıştır?
+    A) Fiil hakkındaki ihbar veya şikâyetin kuruma ulaştığı tarih
+    B) Soruşturma emrinin yetkili merci tarafından verildiği tarih
+    C) Fiille ilgili adli soruşturmanın sonuçlandırıldığı tarih
+    D) Personelin savunmasının alınmak üzere çağrıldığı tarih
+    E) Fiilin işlendiğinin disiplin amiri tarafından öğrenildiği tarih  ✔
+  — skor 0.33 | Polis Mevzuatı / 5326 Sayılı Kabahatler Kanunu | published | id a3ecae31-2f16-4350-b486-23902248a6df
+    5326 sayılı Kabahatler Kanunu'na göre, nispi idarî para cezasını gerektiren kabahatlerde soruşturma zamanaşımı süresi kaç yıldır?
+    A) Üç
+    B) Dört
+    C) Beş
+    D) Sekiz  ✔
+    E) On
+  — skor 0.31 | Polis Mevzuatı / 5326 Sayılı Kabahatler Kanunu | published | id 39da3442-cb8e-499c-b68d-afc43c9ff185
+    Kolluk görevlileri, gece boyunca yüksek sesle müzik yayını yaparak çevre sakinlerinin huzurunu bozan bir eğlence mekânı işletmecisi ile aynı sokakta bağırarak gürültü yapan bir kişi hakkında işlem yapmıştır. 5326 sayılı Kabahatler Kanunu'na göre bu iki faile verilecek idarî para cezaları bakımından aşağıdakilerden hangisi doğrudur?
+    A) Her ikisine de aynı miktarda maktu ceza verilir
+    B) Ticarî işletmenin faaliyeti çerçevesinde işlenen gürültü kabahatinde işletme sahibine, gerçek kişiye verilen cezadan çok daha yüksek ve alt-üst sınır arasında belirlenen bir ceza verilir  ✔
+    C) İşletmeciye ceza verilemez; yalnızca faaliyetten men uygulanır
+    D) Gerçek kişiye verilecek ceza işletmeciden daha yüksektir
+    E) İşletmeci hakkında yalnızca Cumhuriyet savcısı ceza verebilir
+  — skor 0.27 | Polis Mevzuatı / 5326 Sayılı Kabahatler Kanunu | published | id bdb9572b-8411-49f2-a194-34ee2fb33ac9
+    5326 sayılı Kabahatler Kanunu'na göre, yerine getirme zamanaşımıyla ilgili aşağıdakilerden hangisi doğrudur?
+    A) Zamanaşımı süresi, kararın verildiği tarihten itibaren işlemeye başlar
+    B) Zamanaşımı süresi, kararın kesinleşmesinin rastladığı takvim yılını takip eden takvim yılı başından itibaren işlemeye başlar  ✔
+    C) Zamanaşımı süresi, kararın ilgiliye tebliğ edildiği tarihten itibaren işlemeye başlar
+    D) Zamanaşımı süresi, fiilin işlendiği tarihten itibaren işlemeye başlar
+    E) Yerine getirme zamanaşımı hiçbir hâlde durmaz ve kesilmez

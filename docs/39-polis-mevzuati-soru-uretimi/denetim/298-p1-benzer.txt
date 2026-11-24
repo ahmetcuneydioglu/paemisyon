@@ -1,0 +1,157 @@
+# 298-p1 — bankadaki en benzer sorular (bütün banka, 7720 soru; eşik 0.15, aday başına 5)
+# skor = aday kök+doğru şık sözcüklerinin (IDF ağırlıklı) ne kadarının o soruda geçtiği. Yüksek skor mükerrer DEMEK DEĞİLDİR; karar gözcünündür.
+
+## 298-p1-01
+ADAY: 298 sayılı Kanun'a göre, seçime katılan bir siyasi parti adına ilçe merkezinde kapalı yer toplantısı yapmak isteyenler aşağıdakilerden hangisine haber verir?
+ADAY DOĞRU: En yakın zabıta amir veya memuruna
+  — skor 0.22 | Anayasa Hukuku / T.C. Anayasası | published | id b9bb5da7-cb35-48ed-8982-e2049a8fb43a
+    I. Seçime katılabilmek için illerin en az yarısında, oy verme gününden en az altı ay önce teşkilatlanmış ve büyük kongreyi yapmış olmak gerekir. II. TBMM'de grup bulunması tek başına seçime katılma hakkı sağlamaz. III. Bir ilde teşkilatlanmak için merkez ilçe dâhil ilçelerin en az dörtte birinde teşkilat kurmak gerekir. 2820 sayılı Kanuna göre yukarıdaki ifadelerden hangisi yanlıştır?
+    A) Yalnız I
+    B) Yalnız II
+    C) Yalnız III  ✔
+    D) I ve II
+    E) II ve III
+  — skor 0.21 | Anayasa Hukuku / T.C. Anayasası | published | id 96da28f8-888c-4162-8ff4-f185ed0c93e4
+    298 sayılı Kanuna göre bir siyasi partinin bir ilde teşkilatlanmış sayılması için aşağıdakilerden hangisi gerekir?
+    A) Merkez ilçe hariç ilçelerin en az üçte birinde teşkilat kurması
+    B) Merkez ilçe dâhil ilçelerin en az üçte birinde teşkilat kurması  ✔
+    C) Merkez ilçe hariç bütün ilçelerde teşkilat kurması
+    D) Merkez ilçe dâhil ilçelerin en az dörtte birinde teşkilat kurması
+    E) Merkez ilçede teşkilat kurması yeterlidir
+  — skor 0.18 | Polis Mevzuatı / 2918 Sayılı Karayolları Trafik Kanunu | published | id d75046ed-320a-4e66-8a71-37ddb99a4baa
+    2918 sayılı Karayolları Trafik Kanunu'na göre, tesislerine ölüm veya yaralanma ile sonuçlanan bir kaza geçirmiş olduğu belli olan ya da üzerinde suç belirtisi bulunan bir araç gelen tamirhane, servis istasyonu ve garaj sahip ve sorumluları ne yapmak zorundadır?
+    A) Aracı onarmadan önce sigorta şirketinden yazılı onay almak
+    B) Aracı en yakın trafik tescil kuruluşuna götürmek
+    C) Aracın fotoğraflarını çekerek bir yıl süreyle saklamak
+    D) Aracın sahibinden yazılı beyan alarak dosyada muhafaza etmek
+    E) Gecikmeksizin zabıtaya haber vermek ve aracı bir deftere işlemek  ✔
+  — skor 0.17 | Polis Mevzuatı / 5326 Sayılı Kabahatler Kanunu | published | id 753f0333-8b80-4df0-b988-3988a6fe34c6
+    I. Kolluk görevlileri II. Zabıta görevlileri III. Mülkî amir IV. Belediye encümeni 5326 sayılı Kabahatler Kanunu’na göre, verilenlerden hangileri dilencilik kabahati dolayısıyla mülkiyetin kamuya geçirilmesine karar verir?
+    A) Yalnız I
+    B) Yalnız II
+    C) I ve IV
+    D) II ve III
+    E) III ve IV  ✔
+  — skor 0.16 | Anayasa Hukuku / T.C. Anayasası | published | id ed64de59-a922-4244-a86a-f5ce20514e52
+    298 sayılı Kanuna göre yurt dışı seçmen kütüğüne kayıtlı seçmenlerle ilgili aşağıdaki ifadelerden hangisi yanlıştır?
+    A) Milletvekili genel seçimlerinde oy kullanabilir.
+    B) Cumhurbaşkanı seçiminde oy kullanabilir.
+    C) Halkoylamasında oy kullanabilir.
+    D) Yurt dışında propaganda yalnız seçimlere katılan siyasi partilerce yapılabilir.  ✔
+    E) Yurt dışı temsilciliklerinde seçim propagandası yapılamaz.
+
+## 298-p1-02
+ADAY: 298 sayılı Kanun'a göre, bu Kanun'da yazılı bir suçu görevi sebebiyle işlediği ileri sürülen polis memuru hakkında soruşturma nasıl yapılır?
+ADAY DOĞRU: Genel hükümlere göre
+  — skor 0.45 | Polis Mevzuatı / 4483 Sayılı Memurların Yargılanması Hakkında Kanun | published | id c9c5b22c-e89e-43d5-9c60-090283fc94f8
+    Kaymakamın yıllık izinde bulunduğu sırada kaymakama vekâlet eden ilçe müdürü hakkında, vekâlet görevi sebebiyle işlediği ileri sürülen bir suç nedeniyle soruşturma izni istenmiştir. 4483 sayılı Kanun'a göre bu kişi hakkında soruşturma izni vermeye yetkili merci aşağıdakilerden hangisidir?
+    A) Vali  ✔
+    B) Kaymakam
+    C) Bağlı olduğu il müdürü
+    D) Bağlı olduğu bakanlığın en üst idari amiri
+    E) İlgili bakan
+  — skor 0.37 | Polis Mevzuatı / 7068 Sayılı Genel Kolluk Disiplin Hükümleri Kanunu | published | id 981cf85a-7272-44ab-8c36-497265729add
+    Bir polis memuru hakkında işlediği iddia edilen bir fiil nedeniyle Cumhuriyet başsavcılığınca adli soruşturma başlatılmıştır. 7068 sayılı Genel Kolluk Disiplin Hükümleri Hakkında Kanun'a göre bu durumun disiplin süreci bakımından sonucu ne olur?
+    A) Adli soruşturma sonuçlanıncaya kadar disiplin soruşturması başlatılamaz.
+    B) Disiplin soruşturması yapılabilir, ancak ceza verilmesi kovuşturmanın sonuna bırakılır.
+    C) Disiplin cezası verilebilir, ancak kesinleşmiş mahkeme kararı olmadan yerine getirilemez.
+    D) Adli soruşturma veya kovuşturma; disiplin soruşturması yapılmasına, disiplin cezası verilmesine ve bu cezanın yerine getirilmesine engel olmaz.  ✔
+    E) Disiplin soruşturması yalnızca kovuşturmaya yer olmadığına dair karar verilmesi hâlinde yapılabilir.
+  — skor 0.35 | Ceza Muhakemesi Hukuku / 5271 Sayılı Ceza Muhakemesi Kanunu (CMK) | published | id 48a569d7-c2b6-4b3b-9397-0561e6438770
+    Orman muhafaza memuru (M) hakkında görevi kötüye kullanma suçunu işlediği savıyla yapılan yargılamada mahkeme, (M)'nin kendisine isnat edilen suçu işlemediği ve eylemin Memurlar ve Diğer Kamu Görevlilerinin Yargılanması Hakkında Yasa'ya tabi olduğu sonucuna varmıştır. 5271 sayılı Ceza Muhakemesi Yasası'na göre bu durumda mahkeme nasıl bir karar vermelidir?
+    A) Durma kararı
+    B) Düşme kararı
+    C) Beraat kararı  ✔
+    D) Ceza verilmesine yer olmadığı kararı
+    E) Ret kararı
+  — skor 0.33 | Ceza Muhakemesi Hukuku / 5271 Sayılı Ceza Muhakemesi Kanunu (CMK) | published | id a9e6a4e1-1c0d-44d2-8495-1bb3e6a10876
+    Hırsızlık suçu işlediği ileri sürülen (A) hakkında Cumhuriyet savcılığı bir iddianame düzenleyerek mahkemeye vermiş ve mahkemece iddianamenin kabulü kararı verildikten sonra (A)'nın, akıl hastası olduğu ileri sürülmüştür. Yargılama devam ederken toplanan kanıtlara göre (A)'nın suçu işlemediği kesin olarak saptanmıştır. Bu durumda mahkemenin vereceği karar aşağıdakilerden hangisi olmalıdır?
+    A) Durma
+    B) Ceza verilmesine yer olmadığı
+    C) Düşme
+    D) Ret
+    E) Beraat  ✔
+  — skor 0.28 | Polis Mevzuatı / 2559 Sayılı Polis Vazife ve Salâhiyet Kanunu (PVSK) | published | id cc91566c-acc8-4f58-b5fc-9576525e4d09
+    Trafik biriminde çalışan bir polis memuru, izinli olduğu bir gün görevli bulunduğu ilçenin sınırları içinde bir yağma olayına tanık olur ve olaya müdahale eder. Müdahale sırasında şüpheliyi kasten yaralar. 2559 sayılı PVSK'nın Ek 4 üncü maddesine göre polis memurunun bu fiili nasıl nitelendirilir?
+    A) Görevli memurun işlediği suç sayılır.  ✔
+    B) Görevli memura karşı işlenmiş suç sayılır.
+    C) İzinli olduğundan kişisel suç sayılır; görevle bağlantı kurulmaz.
+    D) Hizmet branşı dışında kaldığından görevli memur suçu sayılmaz.
+    E) Görevli memur suçu sayılıp sayılmayacağına mülkî amir karar verir.
+
+## 298-p1-03
+ADAY: 298 sayılı Kanun'a göre, sandık kurulu başkanının seçimin düzenli yürütülmesi için aldığı tedbire, ihtara rağmen uymayan kişiye verilecek idarî para cezasına aşağıdakilerden hangisi karar verir?
+ADAY DOĞRU: Cumhuriyet savcısı
+  — skor 0.29 | Ceza Hukuku / Türk Ceza Kanunu | published | id da7c4245-c310-4732-a2d3-1cafbb2c0532
+    I. Suç tanımında hapis cezası ile adli para cezasının seçenek olarak öngörüldüğü durumlarda, hapis cezasına hükmedilmişse bu ceza artık adli para cezasına çevrilmez. II. Bilinçli taksirle işlenen suçlardan dolayı hükmolunan hapis cezası uzun süreli de olsa bu ceza, diğer koşulların varlığı durumunda adli para cezasına çevrilebilir. III. Hüküm kesinleştikten sonra Cumhuriyet savcılığınca yapılan te
+    A) Yalnız I  ✔
+    B) Yalnız II
+    C) Yalnız III
+    D) I ve II
+    E) II ve III
+  — skor 0.26 | Polis Mevzuatı / 5326 Sayılı Kabahatler Kanunu | published | id 219ad9a5-b1ef-4200-a54b-14aedb9985ce
+    5326 sayılı Kabahatler Kanunu'nun 43/B maddesine göre, kendisine ibraz edilen paranın sahte olduğunu anlamasına rağmen bildirim yükümlülüğünü yerine getirmeyen bankaya idarî para cezasını vermeye yetkili olan aşağıdakilerden hangisidir?
+    A) Bankacılık Düzenleme ve Denetleme Kurumu
+    B) Cumhuriyet savcısı  ✔
+    C) Türkiye Cumhuriyet Merkez Bankası
+    D) Sulh ceza hâkimi
+    E) Mahallin en büyük mülkî amiri
+  — skor 0.24 | Polis Mevzuatı / 5326 Sayılı Kabahatler Kanunu | published | id 902542ba-bcfc-4899-8dd9-7a1b40dd3b7c
+    5326 sayılı Kabahatler Kanunu'nun 43/A maddesine göre, maddede sayılan suçların bir tüzel kişinin yararına olarak işlenmesi hâlinde bu tüzel kişiye verilecek idarî para cezasına karar vermeye yetkili olan aşağıdakilerden hangisidir?
+    A) İlgili kamu kurumunun en üst amiri
+    B) Sayılan suçlardan dolayı yargılama yapmakla görevli mahkeme  ✔
+    C) Cumhuriyet başsavcısı
+    D) Mahallin en büyük mülkî amiri
+    E) Mali Suçları Araştırma Kurulu
+  — skor 0.24 | Ceza Hukuku / Türk Ceza Kanunu | published | id 4d9f2cc9-e3cc-4ef5-86b9-bd4b579909fc
+    I. Suç tanımında hapis cezası ile adli para cezasının seçenek olarak öngörüldüğü durumlarda, hapis cezasına hükmedilmiş olsa bile bu ceza, adli para cezasına çevrilebilir. II. Taksirli suçlardan dolayı hükmolunan hapis cezası uzun süreli ise bu ceza, adli para cezasına çevrilemez. III. Hüküm kesinleştikten sonra Cumhuriyet savcılığınca yapılan tebligata rağmen 30 gün içinde seçenek tedbirin gerekl
+    A) Yalnız I
+    B) Yalnız II
+    C) I ve II  ✔
+    D) I ve III
+    E) II ve III
+  — skor 0.24 | Ceza Muhakemesi Hukuku / 5271 Sayılı Ceza Muhakemesi Kanunu (CMK) | published | id a493c421-3934-40dd-b57b-e7ff630f9fae
+    5271 sayılı Ceza Muhakemesi Yasası'na göre ifadesi alınmak amacıyla düzenlenen yakalama emri üzerine, mesai saatleri dışında yakalanıp taahhüt beyanı vererek serbest kalan ve daha sonra bu taahhüdünü yerine getirmeyen kişiye hangi yaptırım uygulanır?
+    A) Yakalama emrinin düzenlendiği yer Cumhuriyet savcısı tarafından disiplin para cezası verilir.
+    B) Yakalama emrinin düzenlendiği yer Cumhuriyet savcısı tarafından idari para cezası verilir.  ✔
+    C) Yerleşim yerinin bulunduğu yer Cumhuriyet savcısı tarafından idari para cezası verilir.
+    D) Yakalama emrinin düzenlendiği yer sulh ceza yargıçlığınca idari para cezası verilir.
+    E) Yakalama emrinin düzenlendiği yer sulh ceza yargıçlığınca disiplin para cezası verilir.
+
+## 298-p1-04
+ADAY: 298 sayılı Kanun'a göre, oy verme günü işlenen ve daha ağır cezayı gerektiren başka bir suç oluşturmayan aşağıdaki fiillerden hangisinin cezası adlî para cezasıdır?
+ADAY DOĞRU: Emniyet ve asayişi korumakla görevli olmadığı hâlde silah taşımak
+  — skor 0.46 | Polis Mevzuatı / 6136 Sayılı Ateşli Silahlar ve Bıçaklar Hakkında Kanun | published | id 98c42fcd-90de-4f30-8d4d-af6647529b0e
+    “(A), (B) ve (C) bentlerinde sayılan yerlere silahla giren veya buralarda silah taşıyan kişiler, fiilleri daha ağır cezayı gerektiren başka bir suç oluşturmadığı takdirde, - - - - günden az olmamak üzere adlî para cezası ile cezalandırılır.” 6136 sayılı Kanun'un Ek 1 inci maddesinde yer alan bu hükümde boş bırakılan yere aşağıdakilerden hangisi getirilmelidir?
+    A) 25
+    B) 30
+    C) 50  ✔
+    D) 100
+    E) 200
+  — skor 0.37 | Polis Mevzuatı / 2918 Sayılı Karayolları Trafik Kanunu | published | id ad32eb12-3186-4036-9741-9953dbb91049
+    2918 sayılı Karayolları Trafik Kanunu'na göre, karayolu üzeri park yerlerinde yetkisi olmadığı hâlde park ücreti alan veya almaya teşebbüs edenler hakkında, fiilleri daha ağır bir ceza gerektiren bir suç oluşturmadığı takdirde hangi yaptırım uygulanır?
+    A) 46.000 Türk lirası idari para cezası
+    B) 86.900 Türk lirası idari para cezası
+    C) Altı aydan iki yıla kadar hapis ve beş bin güne kadar adli para cezası  ✔
+    D) Bir yıldan üç yıla kadar hapis cezası
+    E) İki yıldan beş yıla kadar hapis ve beş bin güne kadar adli para cezası
+  — skor 0.34 | Polis Mevzuatı / 6136 Sayılı Ateşli Silahlar ve Bıçaklar Hakkında Kanun | published | id 28f3ef1a-a0ac-4b76-bc9c-c3ccdef82f6c
+    Kanun’un 7 nci maddesinin birinci fıkrasının (1)–(4) numaralı bentlerinde sayılanlardan olmayan ve silah taşıma ruhsatı bulunan bir esnaf, ruhsatlı tabancasıyla bir futbol karşılaşmasının oynandığı stadyuma girmiş ve tribünde yakalanmıştır; fiili daha ağır cezayı gerektiren başka bir suç oluşturmamaktadır. 6136 sayılı Kanun'a göre bu kişinin silah ruhsatı bakımından hangi sonuç doğar?
+    A) Taşıma ruhsatı iptal edilir; silahı tutanakla Millî Savunma Bakanlığı emrine verilir.
+    B) Ruhsatı iptal edilir ve tabancasına müsadere edilmek üzere el konulur.
+    C) Ruhsatı geçerliliğini korur; fiil için adlî para cezası verilmesiyle yetinilir.
+    D) Ruhsatı beş yıl süreyle askıya alınır ve sürenin sonunda yeniden geçerlilik kazanır.
+    E) Taşıma ruhsatı bulundurmaya çevrilir; silahını mesken veya iş yerinde tutabilir.  ✔
+  — skor 0.32 | Genel Kültür ve Güncel Olaylar / Genel Kültür | published | id f0d44646-a634-42f5-a0ca-c5e691c9103e
+    İhracı kanun gereği yasak olan eşyayı ülkeden çıkaran kişi, fiil daha ağır cezayı gerektiren başka bir suç oluşturmadığı takdirde, - - - - kadar hapis ve beş bin güne kadar adli para cezası ile cezalandırılır. 5607 sayılı Kaçakçılıkla Mücadele Kanunu’na göre, bu hükümde boş bırakılan yere aşağıdakilerden hangisi getirilmelidir?
+    A) altı aydan bir yıla
+    B) dokuz aydan iki yıla
+    C) bir yıldan üç yıla  ✔
+    D) üç yıldan beş yıla
+  — skor 0.25 | Polis Mevzuatı / 5326 Sayılı Kabahatler Kanunu | published | id 7e4ed7d1-c4f6-4843-b6eb-bef94b6e14a6
+    Bir kişi, tek bir fiille hem gürültü kabahatini hem de başka bir kanunda yalnızca idarî para cezası öngörülen bir kabahati işlemiştir. Ayrıca aynı gün, iki ayrı yerde iki kez daha gürültü kabahati işlediği tespit edilmiştir. 5326 sayılı Kabahatler Kanunu'na göre bu kişi hakkında aşağıdakilerden hangisi doğrudur?
+    A) Tek fiille işlenen iki kabahat için en ağır idarî para cezası; ayrı fiillerle işlenen her gürültü kabahati için ayrı ayrı idarî para cezası verilir  ✔
+    B) Tüm kabahatler için tek bir idarî para cezası verilir
+    C) Tek fiille işlenen iki kabahatin cezaları toplanır; tekrarlanan gürültü fiilleri tek sayılır
+    D) En hafif idarî para cezası esas alınarak fiil sayısıyla çarpılır
+    E) Tekerrür hükümleri uygulanarak en ağır ceza iki katına çıkarılır

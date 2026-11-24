@@ -1,0 +1,38 @@
+[
+  {
+    "id": "657-p2-01",
+    "karar": "ONAY",
+    "korCevap": "D",
+    "metinCevap": "D",
+    "sinavDegeri": 4,
+    "ayirtEdicilik": 4,
+    "dogallik": 4,
+    "zorluk": "medium",
+    "gerekce": "TUR 2: Kör çözümde bilgiyle D ama düşük güvenle (%40; C %30), salt şık ve sağduyuyla C (%30; artan dizide orta). metinCevap D (Ek 8/1-d ikinci cümle) = anahtar. Kök birinci fıkra rejimine kilitli (talep + izin), 'uzatma hariç' kaydı dört yılı (uzatılmış toplam) kapatıyor; tek doğru. Genel kuralı (altı ay; bankada) bilen eksik aday B'ye gider: doğru yönde ayırt eder. Hüküm yurt dışında görevlendirilen güvenlik görevlisine özgü; Misyon Koruma adayına doğrudan dokunur. Dizi artan, tek doğru değer uçta değil, üç gerçek değer (altı ay, iki yıl, dört yıl).",
+    "oneri": "Değişiklik gerekmez. Kök 213 krkt ve parantezli; kısaltılacaksa 'başka bir kamu kurumunun talebi ve kendi kurumunun izniyle' kaydı korunmalı (son fıkra rejimini dışlayan o)."
+  },
+  {
+    "id": "657-p2-02",
+    "karar": "ONAY",
+    "korCevap": "E",
+    "metinCevap": "E",
+    "sinavDegeri": 4,
+    "ayirtEdicilik": 3,
+    "dogallik": 5,
+    "zorluk": "medium",
+    "gerekce": "TUR 2: Kör çözümde bilgiyle E (%90); salt şık ve sağduyuyla da E ama düşük güvenle (%40; 'olağanüstü durum → en ağır sonuç' ve merdivenin ucu), D %30, C %20. metinCevap E (md 125/E-e) = anahtar. Kestirme var ama yüksek güven vermiyor: kökten savaş ve olağanüstü hâl çıkarılmış, yalnız 'genel afet' kalmış; 'emri yapmamak' için D (125/D-n) gerçek ve güçlü rakip. Eksik bilen D'ye gider, bilen E'yi bulur. Kalıp resmî sorularla aynı (stil [2], [9]); 125/E 7068 md 9/1 ile polise de uygulanır, bent bankada ölçülmemiş. Ayırt edicilik 3: bilmeyen aday şansın üstünde tutturabilir. Not: hükmü kör çözümde bildiğim için 'bilgisiz' tahminim tam bağımsız değil.",
+    "oneri": "Rötuş: tırnak içindeki ibare kanun cümlesinin kırpılmış hâli; tırnak kaldırılabilir ya da başına '…' konabilir (lafız alıntısı görüntüsü vermesin). Şıklar ve kök yapısı aynen kalsın; 'savaş' ve 'olağanüstü hâl' köke geri EKLENMEMELİ (kestirmeyi güçlendirir)."
+  },
+  {
+    "id": "657-p2-03",
+    "karar": "REVIZYON",
+    "korCevap": "D (bilgiyle %55); salt şık+sağduyu A (%35)",
+    "metinCevap": "D",
+    "sinavDegeri": 3,
+    "ayirtEdicilik": 4,
+    "dogallik": 4,
+    "zorluk": "hard",
+    "gerekce": "Metin (md 127 son fıkra c.2) = anahtar D. Biçim temiz: bilgiyle düşük güvenle buldum, sağduyu 'zamanaşımı dolduysa ceza verilemez' diye A'ya götürdü; B (126/3) ve C (127/1-a) gerçek komşu değerler; kestirme yok. Sorun sınav değeri: polise disiplinde 7068 uygulanır ve 7068 md 29/4 aynı durumda aynı sayıyı verir ('tebliğinden itibaren altı ay'); bankada bu hükmü ölçen iki 7068 sorusu var. 7068'i bilen aday 657'yi bilmeden D'yi bulur; ölçülen bilgi 657'ye özgü değil (22 Kas kural 4'ün yumuşak türü; metinler kelimesi kelimesine aynı değil). Hükmün 657'ye özgü kolu ('kalan süre içinde') hesap gerektirdiği için raporda kapalı. Misyon 657 disiplin sürelerini sorduğu için 'sorulabilir' = 3. Ayrıca 7573'ün Resmî Gazete metni ve geçiş hükmü doğrulanamamış (tur eki).",
+    "oneri": "Dürüst beyan: biçim değişikliği değeri 4'e çıkarmaz; 7068 aktarımı her biçimde sürer. Orkestratör 657 genel memur bilgisi olarak tutmak isterse 657'ye özgü unsuru öne alan biçim: kök '… iptal kararı idareye ulaştığında disiplin ceza zamanaşımı süresinin dolmasına iki ay kalmışsa, yeniden disiplin cezası en geç ne zamana kadar tesis edilebilir?'; şıklar A) Kararın idareye ulaştığı tarihten itibaren on beş gün içinde (126/3) B) … bir ay içinde (127/1-a) C) Kalan zamanaşımı süresi doluncaya kadar (aynı cümlenin genel kolu; en güçlü) D) … altı ay içinde ✔ E) … iki yıl içinde (127 son fıkra c.1). Sayım: artan dizi, doğru dördüncü; kök yankısı yanlış şıkka (C) gider; ikiz ve kesişim yok; tek farklı üslup C, yanlış; 'en geç ne zamana kadar' kökü iç içe küme itirazını kapatır. Riskleri: 'iki ay kalmış' hesaplı vaka yasağının sınırında (hesap yok, kanunun 'altı aydan az kalmış' kolu); kökte 'altı aydan az' yazılırsa doğru şıkla yankı olur, yazılmasın. Bu da kabul görmezse soru bırakılır."
+  }
+]

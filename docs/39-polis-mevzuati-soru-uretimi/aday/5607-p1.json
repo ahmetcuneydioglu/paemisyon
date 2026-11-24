@@ -1,0 +1,172 @@
+[
+  {
+    "id": "5607-p1-01",
+    "articleNo": "5",
+    "kok": "5607 sayılı Kanun'a göre, kaçakçılık suçlarından birine iştirak eden kişinin, resmî makamların haber almasından sonra fiilin bütünüyle ortaya çıkmasına hizmet ve yardım etmesi hâlinde Kanunda öngörülen sonuç aşağıdakilerden hangisidir?",
+    "siklar": {
+      "A": "Üçte bir oranında ceza indirimi",
+      "B": "Yarısına kadar ceza indirimi",
+      "C": "Yarı oranında ceza indirimi",
+      "D": "Üçte iki oranında ceza indirimi",
+      "E": "Cezalandırılmama"
+    },
+    "dogru": "D",
+    "aciklama": "Etkin pişmanlık 5 inci maddede iki ayrı yola bağlanmıştır: ihbar ve yardım (birinci fıkra) ile ödeme (ikinci fıkra). Kökteki davranış birinci fıkranın ikinci cümlesine girer: 'Haber alındıktan sonra fiilin bütünüyle ortaya çıkmasına hizmet ve yardım eden kişiye verilecek ceza ÜÇTE İKİ ORANINDA İNDİRİLİR.' Cezalandırılmama aynı fıkranın birinci cümlesindeki sonuçtur ve evreye bağlıdır: suça iştirak etmiş kişi fiili, diğer failleri ve kaçak eşyanın saklandığı yerleri 'resmî makamlar tarafından HABER ALINMADAN ÖNCE' merciine haber vermeli, verilen bilgi de 'faillerin yakalanmasını veya kaçak eşyanın ele geçirilmesini' sağlamalıdır. Resmî makamlar olayı öğrendikten sonra yapılan yardım bu sonucu doğurmaz; iki evreyi karıştıran aday cezasızlığı işaretler. Yarı ve üçte bir oranındaki indirimler ihbara ya da yardıma değil, ikinci fıkradaki ödeme yoluna aittir: orada indirim, suç konusu eşyanın değerine göre belirlenen paranın Devlet Hazinesine ödenmesine bağlanmış ve ödemenin yapıldığı evreye göre farklılaştırılmıştır. Yarısına kadar indirim ise failin davranışıyla değil, 3 üncü maddenin son fıkrasında suç konusu eşyanın değerinin hafif olmasıyla ilgilidir.",
+    "dayanak": "5607 sayılı Kanun md 5/1 (karş. md 5/2, 3/23)",
+    "zorluk": "hard",
+    "tur": "dogrudan"
+  },
+  {
+    "id": "5607-p1-02",
+    "articleNo": "5",
+    "kok": "5607 sayılı Kanun'a göre, etkin pişmanlık gösterip öngörülen parayı Devlet Hazinesine ödeyen faile ceza indirimi aşağıdaki hâllerden hangisinde UYGULANMAZ?",
+    "siklar": {
+      "A": "Suçun üç veya daha fazla kişi tarafından birlikte işlenmesi",
+      "B": "Eşyanın ithalinin kanunen yasak olması",
+      "C": "Suç konusu eşyanın akaryakıt olması",
+      "D": "Eşyanın değerinin fahiş olması",
+      "E": "Suçun kaçakçılığı önlemekle görevli kişilerce işlenmesi"
+    },
+    "dogru": "B",
+    "aciklama": "Ödeme yoluyla etkin pişmanlık 5 inci maddenin ikinci fıkrasındadır ve fıkra kendi kapsamını ilk sözcüklerinde daraltır: 'YEDİNCİ FIKRASI HARİÇ, 3 üncü maddede tanımlanan suçlardan birini işlemiş olan kişi, etkin pişmanlık göstererek suç konusu eşyanın gümrüklenmiş değerinin iki katı kadar parayı Devlet Hazinesine … ödediği takdirde … verilecek ceza … indirilir.' Hariç tutulan yedinci fıkra, ithali kanun gereği yasak olan eşyaya ilişkin suçları düzenler; bu suçlarda ödeme yapılsa da indirim uygulanmaz. Üçüncü fıkra yolu iki hâlde daha kapatır: 'İkinci fıkra hükmü, MÜKERRİRLER hakkında veya suçun bir ÖRGÜTÜN FAALİYETİ çerçevesinde işlenmesi hâlinde uygulanmaz.' Çeldiricilerin hiçbiri bu üç hâlden biri değildir. Suçun üç veya daha fazla kişi tarafından birlikte işlenmesi 4 üncü maddede örgütten ayrı bir nitelikli hâl olarak düzenlenmiştir; iki hâli karıştıran aday bu şıkkı işaretler. Eşyanın akaryakıt olması ve değerinin fahiş olması 3 üncü maddede cezayı artıran hâllerdir; suçun kaçakçılığı önlemekle görevli kişi tarafından işlenmesi de 4 üncü maddede cezayı artırır. Cezayı ağırlaştıran bir hâlin ödeme yolunu da kapattığını düşünen aday bu şıklardan birini işaretler; Kanun ise yolu ithali yasak eşyada, mükerrirde ve örgütte kapatmıştır.",
+    "dayanak": "5607 sayılı Kanun md 5/2, 5/3 (karş. md 3/7, 4/1, 4/2)",
+    "zorluk": "medium",
+    "tur": "dogrudan"
+  },
+  {
+    "id": "5607-p1-03",
+    "articleNo": "4",
+    "kok": "5607 sayılı Kanun'a göre, kaçakçılık fiillerini önlemek, izlemek ve araştırmakla görevli olduğu hâlde Kanunda tanımlanan suçların işlenmesine kasten göz yuman kişi hakkında öngörülen sonuç aşağıdakilerden hangisidir?",
+    "siklar": {
+      "A": "Cezasının yarı oranında artırılması",
+      "B": "Müşterek fail olarak sorumlu tutulması",
+      "C": "Cezasının iki kat artırılması",
+      "D": "Suça yardım eden olarak sorumlu tutulması",
+      "E": "Hapis cezasının on yıldan az olamaması"
+    },
+    "dogru": "B",
+    "aciklama": "Görevlinin göz yumması 4 üncü maddenin altıncı fıkrasında ayrıca düzenlenmiştir: 'Kaçakçılık fiillerini önlemek, izlemek ve araştırmakla görevli olup da bu Kanunda tanımlanan suçların işlenmesine KASTEN GÖZ YUMAN kişi, işlenen suçun MÜŞTEREK FAİLİ olarak sorumlu tutulur.' Kanun bu kişiyi suçu işleyenlerle birlikte fail sayar; sorumluluğunu suça yardım etme biçimine bağlamamıştır. Göz yummayı yardım saymak bu yüzden hükmün özünü kaçırır. Yarı oranında artırım dördüncü fıkradadır ve başka bir olguya bağlıdır: suçun bu görevliler 'tarafından … işlenmesi'. Görevlinin suçu bizzat işlemesi ile işlenmesine kasten göz yumması iki ayrı fıkrada düzenlenmiştir; ikisini tek hüküm sanan aday artırımı işaretler. İki kat artırım birinci fıkrada suçun bir örgütün faaliyeti çerçevesinde işlenmesine, on yıldan az olamayacak hapis cezası da yedinci fıkrada eşyanın Devletin siyasî, iktisadî veya askerî güvenliğini bozacak ya da çevre veya toplum sağlığını tehdit edecek nitelikte olmasına bağlanmıştır; ikisi de göz yumma fiilinin sonucu değildir.",
+    "dayanak": "5607 sayılı Kanun md 4/6 (karş. md 4/1, 4/4, 4/7)",
+    "zorluk": "medium",
+    "tur": "kavram"
+  },
+  {
+    "id": "5607-p1-04",
+    "articleNo": "3",
+    "kok": "5607 sayılı Kanun'a göre, “kaçakçılık suçları” ile ilgili aşağıdakilerden hangisi YANLIŞTIR?",
+    "siklar": {
+      "A": "İthali yasak eşyayı bilerek satın alan kişi, eşyayı ülkeye sokan kişiyle aynı ceza ile cezalandırılır.",
+      "B": "Akaryakıt kaçakçılığında artırılan ceza üç yıldan az olamaz.",
+      "C": "Teşebbüs aşamasında kalan fiil için verilecek ceza indirilir.",
+      "D": "Ulusal markeri yetkisiz kişilerden satın alan kişi cezalandırılır.",
+      "E": "Eşyanın değerinin hafif olması, cezada indirim sebebidir."
+    },
+    "dogru": "C",
+    "aciklama": "Yanlış ifade C'dir. 3 üncü maddenin yirmi ikinci fıkrası teşebbüs için indirim değil, tamamlanmış suçun cezasını öngörür: 'Yukarıdaki fıkralarda tanımlanan fiiller, teşebbüs aşamasında kalmış olsa bile, TAMAMLANMIŞ GİBİ cezalandırılır.' Kanun teşebbüsü tamamlanmış suçla aynı cezaya bağlamıştır; ifade bu kuralı tersine çevirmiştir. Öteki dört ifade doğrudur. İthali yasak eşyada alıcının cezası sokanınkinden ayrılmamıştır: 'İthali yasak eşyayı, bu özelliğini bilerek satın alan, satışa arz eden, satan, taşıyan veya saklayan kişi, AYNI CEZA ile cezalandırılır.' Akaryakıtta artırımın bir alt sınırı vardır: suçun konusunu oluşturan eşya akaryakıt ise verilecek cezalar '… artırılır, ancak bu fıkranın uygulanması suretiyle verilecek ceza ÜÇ YILDAN AZ OLAMAZ.' Ulusal marker fıkrası, markeri yetkisiz olarak üretenler ve satanların yanında 'yetkisiz kişilerden satın alan' kişiyi de cezalandırır. Değere bağlı indirim ise maddenin son fıkrasındadır: 'Eşyanın değerinin HAFİF olması hâlinde verilecek cezalar … İNDİRİLİR.' Seçeneklerdeki iki hafifletici ifadeden Kanunda karşılığı olan, eşyanın değerine bağlı indirimdir; teşebbüs bu Kanunda indirim sebebi değildir.",
+    "dayanak": "5607 sayılı Kanun md 3/22 (karş. md 3/7, 3/10, 3/15, 3/23)",
+    "zorluk": "medium",
+    "tur": "onerme"
+  },
+  {
+    "id": "5607-p1-05",
+    "articleNo": "10",
+    "kok": "5607 sayılı Kanun'a göre, kaçak eşyaya ilişkin olup taşıma aracının müsaderesine imkân veren aşağıdaki durumlardan hangisi, el konulan taşıtın alıkonulmasını da gerektirir?",
+    "siklar": {
+      "A": "Taşıt yükünün ağırlıklı bölümünü oluşturması",
+      "B": "Naklinin bu aracın kullanılmasını gerektirmesi",
+      "C": "Türkiye'ye girişinin yasak olması",
+      "D": "Özel hazırlanmış gizli tertibatta taşınması",
+      "E": "Çevre sağlığı açısından zararlı olması"
+    },
+    "dogru": "D",
+    "aciklama": "Taşıt hakkında Kanun iki ayrı tedbir öngörür ve koşulları farklıdır. Müsadere için 13 üncü maddenin birinci fıkrası, kaçak eşya taşımasında bilerek kullanılan taşıma aracında şu koşullardan birini arar: gizli tertibat; eşyanın 'taşıma aracı yüküne göre miktar veya hacim bakımından tamamını veya ağırlıklı bölümünü oluşturması veya naklinin, bu aracın kullanılmasını gerekli kılması'; eşyanın 'Türkiye'ye girmesi veya Türkiye'den çıkması yasak veya toplum veya çevre sağlığı açısından zararlı maddelerden olması'. Şıkların beşi de bu koşullardandır. Alıkoyma ise 10 uncu maddenin ikinci fıkrasındadır ve müsadere koşullarından yalnız birine atıf yapar: '13 üncü maddenin birinci fıkrasının (a) bendi kapsamına girmesi, Türkiye'de sicile kayıtlı olmaması ya da soruşturma ve kovuşturma devam ederken, kaçakçılık suçunun işlenmesinde tekrar kullanılması halinde, elkonulan taşıt, elkoyma kararı veren mercilerce ALIKONULUR.' Atıf yapılan (a) bendi, kaçak eşyanın 'suçun işlenmesini kolaylaştıracak veya fiilin ortaya çıkmasını engelleyecek şekilde ÖZEL OLARAK HAZIRLANMIŞ GİZLİ TERTİBAT içerisinde saklanmış veya taşınmış olması'dır. Yük oranı, naklin aracı gerektirmesi, giriş yasağı ve sağlığa zarar yalnız müsaderenin koşuludur; bunları alıkoyma sebebi de sayan aday iki listeyi birleştirmiş olur. İki rejim yalnız gizli tertibatta örtüşür.",
+    "dayanak": "5607 sayılı Kanun md 10/2, 13/1-a (karş. md 13/1-b, 13/1-c)",
+    "zorluk": "hard",
+    "tur": "kavram"
+  },
+  {
+    "id": "5607-p1-06",
+    "articleNo": "16",
+    "kok": "5607 sayılı Kanun'a göre, kaçak akaryakıt hariç olmak üzere kaçak şüphesiyle el konulan eşya hakkında soruşturma aşamasında tasfiye kararı aşağıdakilerden hangisi tarafından verilir?",
+    "siklar": {
+      "A": "Cumhuriyet savcısı",
+      "B": "Tasfiye idaresi",
+      "C": "Hâkim",
+      "D": "Gümrük idaresi",
+      "E": "Mahkeme"
+    },
+    "dogru": "C",
+    "aciklama": "Tasfiye kararının mercii 16 ncı maddenin birinci fıkrasında evreye göre belirlenmiştir: 'Kaçak şüphesiyle el konulan kaçak akaryakıt hariç her türlü eşya hakkında, el koyma tarihinden itibaren altı ay … içinde, gerekli tespitler yaptırılarak SORUŞTURMA AŞAMASINDA HÂKİM, kovuşturma aşamasında mahkeme tarafından tasfiye kararı verilir.' Kök soruşturma aşamasını sorduğu için Cumhuriyet savcısı güçlü bir çeldiricidir; ancak fıkra bu aşamadaki tasfiye kararını hâkime vermiştir. Savcıya bu Kanunda verilen işlerden biri, ödeme yoluyla etkin pişmanlık imkânını soruşturma evresinde şüpheliye ihtar etmektir; tasfiye kararı onun yetkisinde değildir. Mahkeme aynı cümlede yalnız kovuşturma aşaması için yetkilidir. Tasfiye idaresi kararı veren değil, tasfiyeyi yapan idaredir: 'Bu Kanunun uygulamasında tasfiye, tasfiye idaresi tarafından Gümrük Kanunu hükümlerine göre yapılır.' Kökteki 'tasfiye' sözcüğü bu idareyi çağrıştırır, ama karar ile uygulama ayrı aktörlere verilmiştir. Gümrük idaresi, kaçak şüphesiyle el konulan eşyanın tutanakla teslim edildiği idaredir; tasfiye kararı vermez. Kaçak akaryakıtın tasfiyesi ayrı bir maddede düzenlendiği için kök bu eşyayı dışarıda bırakmıştır.",
+    "dayanak": "5607 sayılı Kanun md 16/1 (karş. md 16/4, 11/1, 5/2)",
+    "zorluk": "medium",
+    "tur": "dogrudan"
+  },
+  {
+    "id": "5607-p1-07",
+    "articleNo": "11",
+    "kok": "5607 sayılı Kanun'a göre, il özel idaresi bulunmayan bir ildeki akaryakıt istasyonunda ele geçirilen kaçak akaryakıt, tutanakla ve yakalandığı yerde aşağıdakilerden hangisine teslim edilir?",
+    "siklar": {
+      "A": "Yatırım izleme ve koordinasyon başkanlığına",
+      "B": "En yakın gümrük idaresine",
+      "C": "Defterdarlığa",
+      "D": "Büyükşehir belediyesine",
+      "E": "Çevre, şehircilik ve iklim değişikliği il müdürlüğüne"
+    },
+    "dogru": "A",
+    "aciklama": "Kaçak akaryakıtın teslimi genel kuraldan ayrılır. 11 inci maddenin birinci fıkrasına göre kaçak şüphesiyle el konulan eşya tutanakla gümrük idaresine teslim edilir; kaçak akaryakıt için sekizinci fıkra ayrı bir alıcı belirler: 'Kaçak akaryakıt, yakalandığı ildeki il özel idaresine, İL ÖZEL İDARESİ BULUNMAYAN YERLERDE İSE YATIRIM İZLEME VE KOORDİNASYON BAŞKANLIĞINA, miktarı, cinsi ve özelliklerini gösterir bir tutanakla yakalandığı yerde teslim edilir.' Muhafaza, depolama, yükleme, boşaltma ve nakliye masraflarını da duruma göre il özel idaresi veya bu başkanlık karşılar. Kanun teslim alıcı olarak büyükşehir belediyesini saymaz; 11/8 yalnız il özel idaresi ile yatırım izleme ve koordinasyon başkanlığını anar. Mahalli idareler 16/A'da yalnız tasfiye aşamasında, akaryakıtın bedelsiz tahsis edilebileceği kurumlar arasında sayılır. En yakın gümrük idaresi, genel kuralı akaryakıta taşıyan adayın cevabıdır; Kanun bu idareyi kaçak akaryakıt tasfiye edildikten sonra teslim tutanağı ile numunenin teslim edileceği yer olarak anar. Defterdarlık ile çevre, şehircilik ve iklim değişikliği il müdürlüğü ise Kanunda yalnız geçici maddelerde geçer: kaçak akaryakıtın tasfiyesinde kullanılan tesis, depo ve araçların devri ile devirler gerçekleşinceye kadar tasfiye işlemlerinin bu idarelerce yürütülmeye devam edildiği geçiş dönemi bağlamında. Söz konusu varlıklar bulundukları yerdeki yatırım izleme ve koordinasyon başkanlığına devredilir.",
+    "dayanak": "5607 sayılı Kanun md 11/8 (karş. md 11/1, 16/A-1, Geçici 9, Geçici 15)",
+    "zorluk": "medium",
+    "tur": "dogrudan"
+  },
+  {
+    "id": "5607-p1-08",
+    "articleNo": "23",
+    "kok": "I. Kaçakçılığı önlemekle yükümlü görevli, ihbar ettiği olayda yakalamaya katılmamışsa muhbir ikramiyesi alır.\nII. İhbarın niteliği muhbir hakkında suç oluşturuyorsa muhbirin kimliği açıklanabilir.\nIII. Yakalamaya fiilen katılmayan, ancak analiz veya planlama çalışmasıyla katkı sağlayan görevli de elkoyma ikramiyesine hak kazanır.\n5607 sayılı Kanun'a göre, numaralanmış ifadelerden hangileri doğrudur?",
+    "siklar": {
+      "A": "Yalnız II",
+      "B": "Yalnız III",
+      "C": "I ve II",
+      "D": "II ve III",
+      "E": "I, II ve III"
+    },
+    "dogru": "D",
+    "aciklama": "I. ifade yanlıştır. 23 üncü maddenin ikinci fıkrası görevliler için muhbir ikramiyesini şarta bağlamadan kapatır: 'Kaçakçılığı önleme, izleme ve soruşturmakla yükümlü olanlara MUHBİR İKRAMİYESİ ÖDENMEZ.' Bu yasak, görevlinin yakalamaya katılıp katılmamasına bağlı değildir; ifadedeki şart Kanunda yer almaz. II. ifade doğrudur. 19 uncu maddenin dördüncü fıkrasına göre 'Bu Kanunun 3 üncü maddesi kapsamındaki suçları ihbar edenler ile 23 üncü maddesi gereğince ikramiye ödenmesi öngörülen muhbirlerin kimliği izinleri olmadıkça VEYA İHBARIN NİTELİĞİ HAKLARINDA SUÇ OLUŞTURMADIKÇA hiçbir şekilde açıklanamaz.' Gizliliğin iki istisnası vardır: muhbirin izni ve ihbarın niteliğinin muhbir hakkında suç oluşturması; ikincisi gerçekleştiğinde açıklama yasağı uygulanmaz. III. ifade doğrudur. Aynı fıkranın son cümlesi elkoyma ikramiyesini yakalamayı yapanlarla sınırlamaz: '…yakalama işlemine bizzat ve fiilen katılanlar ile … iletişimin tespiti … teknik araçla izleme tedbirlerinde görevlendirilmek veya bilgi toplama, ANALİZ, değerlendirme, fiziki takip ya da PLANLAMA veya sevk idare çalışmalarında bulunmak suretiyle KATKI SAĞLAYANLAR elkoyma ikramiyesine hak kazanır.' Yakalamaya katılmayan görevlinin elkoyma ikramiyesine hak kazanabilmesi, ona muhbir ikramiyesi ödenebileceği anlamına gelmez; iki ikramiyeyi karıştıran aday I'i de doğru sayar.",
+    "dayanak": "5607 sayılı Kanun md 19/4, 23/2",
+    "zorluk": "medium",
+    "tur": "onerme"
+  },
+  {
+    "id": "5607-p1-09",
+    "articleNo": "3",
+    "kok": "Eşyanın, gümrük kapıları dışından ülkeye sokulması hâlinde, verilecek ceza - - - - artırılır. 5607 sayılı Kanun'a göre, bu hükümde boş bırakılan yere aşağıdakilerden hangisi getirilmelidir?",
+    "siklar": {
+      "A": "üçte birinden yarısına kadar",
+      "B": "yarı oranında",
+      "C": "yarısından bir katına kadar",
+      "D": "yarısından iki katına kadar",
+      "E": "iki kat"
+    },
+    "dogru": "A",
+    "aciklama": "Boşluk 3 üncü maddenin birinci fıkrasının ikinci cümlesidir. Birinci cümle eşyayı gümrük işlemlerine tabi tutmaksızın ülkeye sokan kişinin cezasını belirler; ikinci cümle sokmanın gümrük kapıları dışından yapılmasını ayrı bir artırım sebebi sayar: 'Eşyanın, gümrük kapıları dışından ülkeye sokulması halinde, verilecek ceza ÜÇTE BİRİNDEN YARISINA KADAR artırılır.' Şıklardaki öteki ibareler de Kanunda geçer, ancak başka olgulara bağlıdır. Yarısından iki katına kadar artırım, suçun konusunu oluşturan eşyanın akaryakıt, tütün ve tütün mamulleri, makaron, yaprak sigara kâğıdı, etil alkol, metanol ya da alkollü içki olması hâlinde uygulanır. Yarısından bir katına kadar artırım eşyanın değerinin fahiş olmasına bağlıdır. Yarı oranında ve iki kat artırım ise 3 üncü maddede değil, 4 üncü maddedeki nitelikli hâllerde yer alır. Gümrük kapıları dışından sokma, eşyanın türüne ya da değerine değil, sokmanın yapıldığı yere ilişkin bir olgudur; bu artırımı eşya türüne bağlanan artırımla karıştıran aday daha geniş aralığı işaretler.",
+    "dayanak": "5607 sayılı Kanun md 3/1 (karş. md 3/10, 3/23, 4/1, 4/2)",
+    "zorluk": "hard",
+    "tur": "ayrinti"
+  },
+  {
+    "id": "5607-p1-10",
+    "articleNo": "3",
+    "kok": "Gümrük işlemlerine tabi tutulmadan ülkeye sokulduğunu bildiği bir kol saatini kendi kullanımı için satın alan kişi tespit edilmiştir. 5607 sayılı Kanun'a göre, bu kişi hakkında aşağıdakilerden hangisi doğrudur?",
+    "siklar": {
+      "A": "Adlî para cezasıyla cezalandırılır.",
+      "B": "Altı aydan iki yıla kadar hapisle cezalandırılır.",
+      "C": "Bir yıldan üç yıla kadar hapisle cezalandırılır.",
+      "D": "Bir yıldan beş yıla kadar hapisle cezalandırılır.",
+      "E": "Bu fiilden dolayı cezalandırılmaz."
+    },
+    "dogru": "E",
+    "aciklama": "Vakadaki saat, 3 üncü maddenin birinci fıkrasındaki fiilin (gümrük işlemlerine tabi tutmaksızın ülkeye sokma) konusudur; böyle bir eşyayı satın alan kişinin sorumluluğu aynı maddenin beşinci fıkrasındadır ve fıkra iki unsuru birlikte arar: 'Birinci ila dördüncü fıkralarda tanımlanan fiillerin işlenmesine iştirak etmeksizin, bunların konusunu oluşturan eşyayı, bu özelliğini BİLEREK VE TİCARÎ AMAÇLA satın alan, satışa arz eden, satan, taşıyan veya saklayan kişi, bir yıldan üç yıla kadar hapis … ile cezalandırılır.' Vakadaki kişi saatin kaçak olduğunu bilmektedir, ancak saati kendi kullanımı için almıştır; ticarî amaç bulunmadığından fıkranın unsurları tamamlanmaz. Bilmeyi yeterli sayan aday bu fıkranın cezasını işaretler. Şıklardaki öteki cezalar başka fiillere aittir. Altı aydan iki yıla kadar hapis, özel kanunları gereğince gümrük vergilerinden muaf olarak ithal edilen eşyaya ilişkin fıkradadır; vakadaki saat bu yolla ithal edilmemiş, gümrük işlemlerine tabi tutulmadan sokulmuştur. Bir yıldan beş yıla kadar hapis, eşyayı gümrük işlemlerine tabi tutmaksızın ülkeye sokan kişinin cezasıdır; vakadaki kişi eşyayı ülkeye sokmamış, sokulmuş eşyayı satın almıştır. Vakada bu Kanuna göre oluşmuş bir suç bulunmadığından adlî para cezası şıkkı da yanlıştır.",
+    "dayanak": "5607 sayılı Kanun md 3/5 (karş. md 3/1, 3/6)",
+    "zorluk": "medium",
+    "tur": "vaka"
+  }
+]

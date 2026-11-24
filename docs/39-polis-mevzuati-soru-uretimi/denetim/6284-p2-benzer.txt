@@ -1,0 +1,41 @@
+# 6284-p2 — bankadaki en benzer sorular (bütün banka, 7736 soru; eşik 0.15, aday başına 5)
+# skor = aday kök+doğru şık sözcüklerinin (IDF ağırlıklı) ne kadarının o soruda geçtiği. Yüksek skor mükerrer DEMEK DEĞİLDİR; karar gözcünündür.
+
+## 6284-p2-01
+ADAY: 6284 sayılı Kanun'a göre, gecikmesinde sakınca bulunan hâllerde tedbir kararı alan kolluk amiri, evrakı ne zaman onaya sunmak zorundadır?
+ADAY DOĞRU: Takip eden ilk işgünü içinde
+  — skor 0.35 | Polis Mevzuatı / 6284 Sayılı Kanuna İlişkin Uygulama Yönetmeliği | published | id f093494a-86a1-481d-bf33-5b52f7122d7b
+    I. Korunan kişinin gideceği yerdeki kolluk gecikmeksizin haberdar edilir ve tedbir uygulanmaya devam olunur. II. Fiziki koruma tedbirleri, gecikmesinde sakınca bulunan hâllerde kolluk tarafından belirlenir. III. Geçici koruma kararının kapsam ve içeriği korunan kişiye ŞÖNİM tarafından açıklanarak tutanağa geçirilir. 6284 sayılı Kanun'a İlişkin Uygulama Yönetmeliği'ne göre, geçici koruma ile ilgili
+    A) Yalnız I
+    B) Yalnız III
+    C) I ve II  ✔
+    D) II ve III
+    E) I, II ve III
+  — skor 0.31 | Polis Mevzuatı / 6284 Sayılı Ailenin Korunması Kanunu | published | id 86f2c82a-60a0-4807-aeb7-55d7509886f5
+    6284 sayılı Kanun'a göre, gecikmesinde sakınca bulunan hâllerde aşağıdaki önleyici tedbirlerden hangisi kolluk amirlerince alınamaz?
+    A) Şiddet mağduruna yönelik şiddet tehdidi, hakaret, aşağılama veya küçük düşürmeyi içeren söz ve davranışlarda bulunmaması
+    B) Bulundurulması veya taşınmasına kanunen izin verilen silahları kolluğa teslim etmesi  ✔
+    C) Müşterek konuttan veya bulunduğu yerden derhâl uzaklaştırılması
+    D) Korunan kişilere, bu kişilerin bulundukları konuta, okula ve işyerine yaklaşmaması
+    E) Korunan kişinin, şiddete uğramamış olsa bile yakınlarına ve tanıklarına yaklaşmaması
+  — skor 0.31 | Polis Mevzuatı / 6284 Sayılı Ailenin Korunması Kanunu | published | id 26c5b301-3a4c-48fb-a2cf-1755218bae54
+    I. Geçici maddi yardım yapılması II. Uygun barınma yeri sağlanması III. Rehberlik ve danışmanlık hizmeti verilmesi IV. Hayatî tehlike bulunması hâlinde geçici koruma altına alınması 6284 sayılı Kanun'a göre, gecikmesinde sakınca bulunan hâllerde numaralanmış koruyucu tedbirlerden hangileri kolluk amirlerince de alınabilir?
+    A) I ve II
+    B) I ve III
+    C) II ve IV  ✔
+    D) I, II ve IV
+    E) II, III ve IV
+  — skor 0.30 | Polis Mevzuatı / 6284 Sayılı Ailenin Korunması Kanunu | published | id 10b4d571-c146-4ab4-84e4-9a4c1b9117bf
+    Bir kolluk birimi, gecikmesinde sakınca bulunan hâlde şiddet uygulayan hakkında tedbir kararı vermiştir. 6284 sayılı Kanun'a göre bu kararın şiddet uygulayana tebliği ile ilgili aşağıdakilerden hangisi doğrudur?
+    A) Hâkim onayından sonra tebliğ edilir.
+    B) Mülkî amir onayından sonra tebliğ edilir.
+    C) Bir tutanakla derhâl tebliğ edilir.  ✔
+    D) Kararı izleyen ilk işgünü içinde tebliğ edilir.
+    E) Cumhuriyet başsavcılığı aracılığıyla tebliğ edilir.
+  — skor 0.26 | Polis Mevzuatı / 5726 Sayılı Tanık Koruma Kanunu | published | id 48aa9ac2-3674-4274-8a89-bdf2c7612773
+    I. Tanığın istemi aranmaz. II. Kolluk amirinin yazılı emri gerekir. III. Tedbir, geciktirilmeksizin mahkemenin bilgisine sunulur. 5726 sayılı Kanun'a göre, gecikmesinde sakınca bulunan hâllerde tanığa kolluk amirince geçici olarak fizikî koruma sağlanmasıyla ilgili numaralanmış ifadelerden hangileri doğrudur?
+    A) Yalnız I
+    B) Yalnız II  ✔
+    C) I ve II
+    D) I ve III
+    E) II ve III

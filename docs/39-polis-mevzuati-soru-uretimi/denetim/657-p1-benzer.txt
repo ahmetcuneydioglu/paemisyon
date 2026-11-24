@@ -1,0 +1,40 @@
+# 657-p1 — bankadaki en benzer sorular (bütün banka, 7720 soru; eşik 0.15, aday başına 5)
+# skor = aday kök+doğru şık sözcüklerinin (IDF ağırlıklı) ne kadarının o soruda geçtiği. Yüksek skor mükerrer DEMEK DEĞİLDİR; karar gözcünündür.
+
+## 657-p1-01
+ADAY: 657 sayılı Kanun'a göre, “ödevler ve sorumluluklar” ile ilgili aşağıdakilerden hangisi YANLIŞTIR?
+ADAY DOĞRU: Devlet dairesine teslim edilen paradan personelce zimmete geçirilen miktar, cezai takibat sonuçlandıktan sonra Hazinece hak sahibine ödenir.
+  — skor 0.28 | Polis Mevzuatı / 657 Sayılı Devlet Memurları Kanunu | published | id 95a07d13-4cf6-4a0e-971c-2ae873e301bd
+    657 sayılı Devlet Memurları Kanunu’na göre, “ödevler ve sorumluluklar” ile ilgili aşağıdakilerden hangisi yanlıştır?
+    A) Amir, maiyetindeki memurdan hediye kabul edemez ve borç alamaz.
+    B) Konusu suç teşkil eden emir, hiçbir suretle yerine getirilmez; yerine getiren kimse sorumluluktan kurtulamaz.
+    C) Devlet memurunun kasıt, kusur, ihmal veya tedbirsizliği sonucu idare zarara uğratılmışsa, bu zararın ilgili memur tarafından rayiç bedeli üzerinden ödenmesi esastır.
+    D) Kişiler kamu hukukuna tabi görevlerle ilgili olarak uğradıkları zararlardan dolayı bu görevleri yerine getiren personel aleyhine değil, ilgili kurum aleyhine dava açarlar.
+    E) Kişilerin uğradıkları zararların nevi, miktarlarının tespiti, takibi, amirlerin sorumlulukları ve yapılacak işlemlerle ilgili diğer hususlar Hazine ve Maliye Bakanlığınca düzenlenecek yönetmelikle belirlenir.  ✔
+  — skor 0.21 | Ceza Hukuku / Türk Ceza Kanunu | published | id 7ef32373-9700-4ea5-82a1-c95875461dae
+    Vergi dairesi veznedarı Burak, vatandaştan vezneye yatırması için teslim aldığı parayı yatırmayıp kumarda harcamıştır. Burak hangi suçtan sorumludur?
+    A) Güveni kötüye kullanma
+    B) Zimmet  ✔
+    C) İkna yoluyla irtikâp
+    D) Hırsızlık
+    E) Dolandırıcılık
+  — skor 0.16 | Polis Mevzuatı / 657 Sayılı Devlet Memurları Kanunu | published | id 7f5f72b5-548b-4a4c-84fa-3d9686faafcd
+    657 sayılı Devlet Memurları Kanunu’na göre, Devlet memurlarının “ödevler ve sorumlulukları” ile ilgili aşağıdakilerden hangisi yanlıştır?
+    A) Devlet memurları siyasi partilere üye olamazlar.
+    B) Devlet memurları derneklere üye olamazlar.  ✔
+    C) Devlet memurunun kasıt, kusur, ihmal veya tedbirsizliği sonucu idare zarara uğratılmışsa, bu zararın ilgili memur tarafından rayiç bedeli üzerinden ödenmesi esastır.
+    D) Devlet memurları, kamu görevleri hakkında basına, haber ajanslarına veya radyo ve televizyon kurumlarına bilgi veya demeç veremezler. Bu konuda gerekli bilgi ancak bakanın yetkili kılacağı görevli, illerde valiler veya yetkili kılacağı görevli tarafından verilebilir.
+    E) Kişiler kamu hukukuna tabi görevlerle ilgili olarak uğradıkları zararlardan dolayı bu görevleri yerine getiren personel aleyhine değil, ilgili kurum aleyhine dava açarlar.
+  — skor 0.16 | Polis Mevzuatı / 657 Sayılı Devlet Memurları Kanunu | published | id 99d64fb9-0149-40dc-b023-d16597a10910
+    657 sayılı Devlet Memurları Kanunu’na göre, hangisi ödevler ve sorumluluklar arasında sayılmamıştır?
+    A) Sendika kurma  ✔
+    B) Kişisel sorumluluk ve zarar
+    C) Davranış ve iş birliği
+    D) Sadakat
+  — skor 0.15 | Ceza Hukuku / Türk Ceza Kanunu | published | id 444ee03f-b276-4dbb-88a0-b0776e03a0db
+    Kamu görevlisi Ahmet, görevi nedeniyle zilyetliği kendisine devredilmiş olan bir eşyayı zimmetine geçirmek için kamu görevlisi olmayan Burak ile anlaşır. Ahmet, eşyanın zimmete nasıl geçirileceğine dair Burak'ın gösterdiği yol sayesinde eşyayı zimmetine geçirir. Buna göre Ahmet ve Burak'ın ceza sorumluluklarıyla ilgili aşağıdaki ifadelerden hangisi doğrudur?
+    A) Ahmet ve Burak zimmet suçundan müşterek fail sıfatı ile sorumludur.
+    B) Ahmet, zimmet suçunun faili; Burak ise azmettiren olarak sorumlu tutulur.
+    C) Ahmet, zimmet suçuna azmettiren; Burak ise fail sıfatıyla sorumludur.
+    D) Ahmet, zimmet suçunun dolaylı faili; Burak ise fail sıfatıyla sorumlu tutulur.
+    E) Ahmet, zimmet suçunun faili; Burak ise yardım eden olarak sorumludur.  ✔

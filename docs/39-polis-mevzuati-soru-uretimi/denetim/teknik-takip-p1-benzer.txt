@@ -1,0 +1,117 @@
+# teknik-takip-p1 — bankadaki en benzer sorular (bütün banka, 7720 soru; eşik 0.15, aday başına 5)
+# skor = aday kök+doğru şık sözcüklerinin (IDF ağırlıklı) ne kadarının o soruda geçtiği. Yüksek skor mükerrer DEMEK DEĞİLDİR; karar gözcünündür.
+
+## teknik-takip-p1-01
+ADAY: Teknik Yöntemlerle Takip Yönetmeliği'ne göre, takip sürecinde şiddet mağduru ve yükümlüye ilişkin işlemlerde farklı il emniyet müdürlüklerinin yetkili olması hâlinde işlemleri aşağıdakilerden hangisi yürütür?
+ADAY DOĞRU: Şiddet mağdurunun ikamet ettiği yerdeki kolluk birimi
+  — skor 0.26 | Polis Mevzuatı / 6284 Sayılı Ailenin Korunması Kanunu | published | id db5b4be2-56f1-4dcd-86f7-783be1cc9da5
+    Karakola başvuran şiddet mağduru bir kadın hakkında kolluk amirince tedbir kararı verilmiş ve uygulanmıştır. 6284 sayılı Kanun'a göre kolluk biriminin bu kadın hakkında yapacağı işlem aşağıdakilerden hangisidir?
+    A) Mülkî amirin huzuruna çıkarmak
+    B) Aile mahkemesi hâkimine götürmek
+    C) Cumhuriyet başsavcılığına teslim etmek
+    D) Barınma için yakınlarının yanına yerleştirmek
+    E) Bakanlığın il veya ilçe müdürlüğüne ulaştırmak  ✔
+  — skor 0.23 | Polis Mevzuatı / 6284 Sayılı Ailenin Korunması Kanunu | published | id d37d2f70-ed2f-4cdf-8512-134db05a9d2f
+    I. Günlük vardiya listesinin hazırlanmasını sağlamak ve kontrolünü yapmak II. Sisteme belirli sürelerde gelmesi gereken bilgilerin gelip gelmediğini düzenli şekilde kontrol etmek III. İletişim listesinin hazırlanmasını ve sürekli güncel tutulmasını sağlamak IV. Merkezin iş ve işlemlerinin geliştirilmesine ve iyileştirilmesine yönelik çalışmalar yapmak 6284 sayılı Kanun Kapsamında Teknik Yöntemlerl
+    A) I ve III  ✔
+    B) I ve IV
+    C) II ve III
+    D) I, II ve IV
+    E) II, III ve IV
+  — skor 0.22 | Polis Mevzuatı / 6284 Sayılı Ailenin Korunması Kanunu | published | id ec673d8d-33a1-487e-b0ef-e374d0bdd2e2
+    6284 Sayılı Kanun Kapsamında Teknik Yöntemlerle Takip Sistemlerinin Kullanılmasına Dair Yönetmelik’e göre, karar süresinin uzatılmasına ilişkin değerlendirme, sürenin sona ermesinden en az kaç gün önce ŞÖNİM tarafından kolluğun ilgili Büro/Kısım Amirliği ile izleme merkezine bildirilir?
+    A) Üç
+    B) Beş
+    C) Yedi  ✔
+    D) Dokuz
+    E) On bir
+  — skor 0.21 | Polis Mevzuatı / 6284 Sayılı Ailenin Korunması Kanunu | published | id 49b3d981-f10d-469d-a512-06eaed91b04e
+    6284 sayılı Ailenin Korunması ve Kadına Karşı Şiddetin Önlenmesine Dair Kanun’a göre teknik araç ve yöntemlerle takibe ilişkin usul ve esaslar aşağıdakilerden hangisi ile düzenlenir?
+    A) Kanun
+    B) Tüzük
+    C) Genelge
+    D) Yönetmelik  ✔
+  — skor 0.20 | Polis Mevzuatı / 2918 Sayılı Karayolları Trafik Kanunu | published | id c0511b63-5221-4f0f-9c6b-4dcd22b04e7d
+    2918 sayılı Karayolları Trafik Kanunu'na göre, araçların, sürücülerin ve trafik suçu işleyenlerin sicilleri ile bunlara ait hukuki ve teknik değişikliklere ve istatistiki bilgilere ait kayıtlar ve hizmetler hangi birim tarafından tutulur ve yürütülür?
+    A) Ulaştırma ve Altyapı Bakanlığı bünyesindeki veri işleme merkezi
+    B) Karayolları Genel Müdürlüğü bünyesindeki trafik istatistik birimi
+    C) Jandarma Genel Komutanlığı bünyesindeki trafik bilgi merkezi
+    D) İçişleri Bakanlığı bünyesindeki karayolu trafik güvenliği birimi
+    E) Emniyet Genel Müdürlüğü bünyesindeki Bilgi İşlem Merkezi  ✔
+
+## teknik-takip-p1-02
+ADAY: Teknik Yöntemlerle Takip Yönetmeliği'ne göre, vakanın teknik yöntemlerle takibe uygunluğu değerlendirilirken asgari mesafeye ilişkin değerlendirmeyi içeren rapor aşağıdakilerden hangisi tarafından hazırlanır?
+ADAY DOĞRU: İlgili kolluk birimi
+  — skor 0.29 | Polis Mevzuatı / 6284 Sayılı Ailenin Korunması Kanunu | published | id ec673d8d-33a1-487e-b0ef-e374d0bdd2e2
+    6284 Sayılı Kanun Kapsamında Teknik Yöntemlerle Takip Sistemlerinin Kullanılmasına Dair Yönetmelik’e göre, karar süresinin uzatılmasına ilişkin değerlendirme, sürenin sona ermesinden en az kaç gün önce ŞÖNİM tarafından kolluğun ilgili Büro/Kısım Amirliği ile izleme merkezine bildirilir?
+    A) Üç
+    B) Beş
+    C) Yedi  ✔
+    D) Dokuz
+    E) On bir
+  — skor 0.26 | Polis Mevzuatı / 6284 Sayılı Ailenin Korunması Kanunu | published | id 49b3d981-f10d-469d-a512-06eaed91b04e
+    6284 sayılı Ailenin Korunması ve Kadına Karşı Şiddetin Önlenmesine Dair Kanun’a göre teknik araç ve yöntemlerle takibe ilişkin usul ve esaslar aşağıdakilerden hangisi ile düzenlenir?
+    A) Kanun
+    B) Tüzük
+    C) Genelge
+    D) Yönetmelik  ✔
+  — skor 0.25 | Polis Mevzuatı / 6284 Sayılı Ailenin Korunması Kanunu | published | id d37d2f70-ed2f-4cdf-8512-134db05a9d2f
+    I. Günlük vardiya listesinin hazırlanmasını sağlamak ve kontrolünü yapmak II. Sisteme belirli sürelerde gelmesi gereken bilgilerin gelip gelmediğini düzenli şekilde kontrol etmek III. İletişim listesinin hazırlanmasını ve sürekli güncel tutulmasını sağlamak IV. Merkezin iş ve işlemlerinin geliştirilmesine ve iyileştirilmesine yönelik çalışmalar yapmak 6284 sayılı Kanun Kapsamında Teknik Yöntemlerl
+    A) I ve III  ✔
+    B) I ve IV
+    C) II ve III
+    D) I, II ve IV
+    E) II, III ve IV
+  — skor 0.20 | Polis Mevzuatı / Adli ve Önleme Aramaları Yönetmeliği | published | id 7b6ee724-4cec-4e35-b66e-e98a08758fc3
+    Kolluk, bir kişinin kanunlara göre izin verilmeyecek bir şey taşıdığına ilişkin makul şüphe bulunduğunu ve aramanın amacına başka türlü ulaşılamayacağını değerlendirerek giysiler çıkartılmak suretiyle üst araması yapmaya karar vermiştir. Adlî ve Önleme Aramaları Yönetmeliği’ne göre bu aramanın yapılışıyla ilgili aşağıdakilerden hangisi doğrudur?
+    A) Önce bedenin alt kısmındaki giysiler, bunlar giyildikten sonra da üst kısmındaki giysiler çıkarttırılır.
+    B) Arama, ilgilinin rızası bulunması hâlinde karşı cinsten görevlilerce de yapılabilir.
+    C) Arama, bedene dokunularak yapılan el ile kontrol biçiminde yürütülür.
+    D) Giysiler çıkartılarak yapılan üst araması gece vakti yapılamaz.
+    E) Aramanın gerekçesi ve nasıl yapılacağı, ilgiliye önceden birimin en üst kolluk âmirince bildirilir.  ✔
+  — skor 0.19 | Polis Mevzuatı / 5395 Sayılı Çocuk Koruma Kanunu | published | id b365e30c-b235-43c5-b104-7a84f63f4780
+    5395 sayılı Çocuk Koruma Kanunu’na göre, çocuğa uygulanacak denetimin yöntemini belirleyen plan, görevlendirmeyi takip eden kaç gün içinde hazırlanır?
+    A) Üç
+    B) Beş
+    C) On  ✔
+    D) On beş
+    E) Otuz
+
+## teknik-takip-p1-03
+ADAY: Teknik Yöntemlerle Takip Yönetmeliği'ne göre, teknik yöntemlerle takip kararı ve uygulanması ile ilgili aşağıdakilerden hangisi doğrudur?
+ADAY DOĞRU: İhlal ve uyarı görüşmelerinin kayıt altına alınacağı, sistemin aktivasyonu sırasında kişilere bildirilir.
+  — skor 0.30 | Polis Mevzuatı / 6284 Sayılı Ailenin Korunması Kanunu | published | id ec673d8d-33a1-487e-b0ef-e374d0bdd2e2
+    6284 Sayılı Kanun Kapsamında Teknik Yöntemlerle Takip Sistemlerinin Kullanılmasına Dair Yönetmelik’e göre, karar süresinin uzatılmasına ilişkin değerlendirme, sürenin sona ermesinden en az kaç gün önce ŞÖNİM tarafından kolluğun ilgili Büro/Kısım Amirliği ile izleme merkezine bildirilir?
+    A) Üç
+    B) Beş
+    C) Yedi  ✔
+    D) Dokuz
+    E) On bir
+  — skor 0.26 | Polis Mevzuatı / 6284 Sayılı Ailenin Korunması Kanunu | published | id d37d2f70-ed2f-4cdf-8512-134db05a9d2f
+    I. Günlük vardiya listesinin hazırlanmasını sağlamak ve kontrolünü yapmak II. Sisteme belirli sürelerde gelmesi gereken bilgilerin gelip gelmediğini düzenli şekilde kontrol etmek III. İletişim listesinin hazırlanmasını ve sürekli güncel tutulmasını sağlamak IV. Merkezin iş ve işlemlerinin geliştirilmesine ve iyileştirilmesine yönelik çalışmalar yapmak 6284 sayılı Kanun Kapsamında Teknik Yöntemlerl
+    A) I ve III  ✔
+    B) I ve IV
+    C) II ve III
+    D) I, II ve IV
+    E) II, III ve IV
+  — skor 0.21 | Polis Mevzuatı / 6284 Sayılı Ailenin Korunması Kanunu | published | id fb4a67f5-3109-4229-af4f-c27ad023fb9c
+    6284 sayılı Kanun'a göre, tedbir kararlarının uygulanmasında teknik araç ve yöntemlerin kullanılması ile ilgili aşağıdakilerden hangisi doğrudur?
+    A) Kolluk amirinin kararı ile kullanılabilir.
+    B) Hâkim kararı ile kullanılabilir.  ✔
+    C) Mülkî amirin onayı ile kullanılabilir.
+    D) Cumhuriyet savcısının yazılı emri ile kullanılabilir.
+    E) Şiddet önleme ve izleme merkezinin kararı ile kullanılabilir.
+  — skor 0.19 | Ceza Hukuku / Türk Ceza Kanunu | published | id 7a8731c7-40b9-433d-b3da-40e99187799d
+    I. Bu kişilerin güvenlik tedbiri olarak alkol ya da uyuşturucu veya uyarıcı madde bağımlılarına özgü sağlık kuruluşunda tedavi altına alınmasına karar verilir. II. Bu kişilerin tedavisi, alkol ya da uyuşturucu veya uyarıcı madde bağımlılığından kurtulmalarına kadar devam eder. III. Bu kişiler, yerleştirildiği kurumun sağlık kurulunca bu yönde düzenlenecek rapor üzerine hükmü veren mahkeme kararıyl
+    A) Yalnız I
+    B) Yalnız II
+    C) Yalnız III  ✔
+    D) I ve II
+    E) I ve III
+  — skor 0.17 | Polis Mevzuatı / 5395 Sayılı Çocuk Koruma Kanunu | published | id b365e30c-b235-43c5-b104-7a84f63f4780
+    5395 sayılı Çocuk Koruma Kanunu’na göre, çocuğa uygulanacak denetimin yöntemini belirleyen plan, görevlendirmeyi takip eden kaç gün içinde hazırlanır?
+    A) Üç
+    B) Beş
+    C) On  ✔
+    D) On beş
+    E) Otuz

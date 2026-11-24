@@ -1,0 +1,147 @@
+# 3628-p1 — bankadaki en benzer sorular (bütün banka, 7720 soru; eşik 0.15, aday başına 5)
+# skor = aday kök+doğru şık sözcüklerinin (IDF ağırlıklı) ne kadarının o soruda geçtiği. Yüksek skor mükerrer DEMEK DEĞİLDİR; karar gözcünündür.
+
+## 3628-p1-01
+ADAY: 3628 sayılı Kanun'a göre, aşağıdakilerden hangisi, hakkında soruşturma yapılan görevliler için 4483 sayılı Kanun hükümlerinin uygulanmayacağı suçlar arasında açıkça SAYILMAMIŞTIR?
+ADAY DOĞRU: Görevi kötüye kullanma
+  — skor 0.34 | Ceza Muhakemesi Hukuku / 5271 Sayılı Ceza Muhakemesi Kanunu (CMK) | published | id 48a569d7-c2b6-4b3b-9397-0561e6438770
+    Orman muhafaza memuru (M) hakkında görevi kötüye kullanma suçunu işlediği savıyla yapılan yargılamada mahkeme, (M)'nin kendisine isnat edilen suçu işlemediği ve eylemin Memurlar ve Diğer Kamu Görevlilerinin Yargılanması Hakkında Yasa'ya tabi olduğu sonucuna varmıştır. 5271 sayılı Ceza Muhakemesi Yasası'na göre bu durumda mahkeme nasıl bir karar vermelidir?
+    A) Durma kararı
+    B) Düşme kararı
+    C) Beraat kararı  ✔
+    D) Ceza verilmesine yer olmadığı kararı
+    E) Ret kararı
+  — skor 0.34 | Ceza Hukuku / Türk Ceza Kanunu | published | id 184351e0-8829-4692-9139-4339eb80b7e6
+    5237 sayılı Türk Ceza Yasası'na göre tüzel kişiler hakkında güvenlik tedbirleri hakkında, I. Bir kamu kurumunun verdiği izne dayalı olarak faaliyette bulunan özel hukuk tüzel kişisinin organ veya temsilcilerinin iştirakiyle ve bu iznin verdiği yetkinin kötüye kullanılması suretiyle tüzel kişi yararına işlenen kasıtlı veya taksirli suçlardan mahkûmiyet durumunda, iznin iptaline karar verilir. II. M
+    A) Yalnız I  ✔
+    B) Yalnız II
+    C) Yalnız III
+    D) I ve II
+    E) I ve III
+  — skor 0.31 | Ceza Muhakemesi Hukuku / 5271 Sayılı Ceza Muhakemesi Kanunu (CMK) | published | id 6f827b1d-e774-4aff-84dc-75d1aa847f77
+    I. Suç işlemek için örgüt kurmak suçları II. Kamu görevlisi tarafından görevi nedeniyle işlenen suçlar III. Cinsel dokunulmazlığa karşı işlenen suçlar 5271 sayılı Ceza Muhakemesi Yasası'na göre kamu davasının açılmasının ertelenmesi hükümleri, yukarıdaki suçların hangilerinde uygulanmaz?
+    A) Yalnız II
+    B) Yalnız III
+    C) I ve II
+    D) I ve III
+    E) I, II ve III  ✔
+  — skor 0.29 | Ceza Hukuku / Türk Ceza Kanunu | published | id 27647811-1b7d-4abd-bb0b-fd6a5e5163e5
+    5237 sayılı Türk Ceza Kanunu'nda aşağıdaki suçlardan hangisinin "kamu görevinin sağladığı nüfuz kötüye kullanılmak suretiyle" işlenmesi, daha fazla cezalandırılmayı gerektiren nitelikli hâl olarak düzenlenmemiştir?
+    A) Kişiyi hürriyetinden yoksun kılma
+    B) Konut dokunulmazlığının ihlali
+    C) Hırsızlık  ✔
+    D) Eğitim ve öğretimin engellenmesi
+    E) İş ve çalışma hürriyetinin ihlali
+  — skor 0.29 | Ceza Hukuku / Türk Ceza Kanunu | published | id c512df3b-9021-4ac9-9657-f1271a31c058
+    I. Açığa imzanın kötüye kullanılması II. Kişiyi hürriyetinden yoksun kılma III. Konut dokunulmazlığının ihlali IV. Hakaret Yukarıdaki suçlardan hangilerinde kamu görevinin sağladığı nüfuzun kötüye kullanılması cezayı artıran nitelikli hâl olarak düzenlenmiştir?
+    A) Yalnız I
+    B) I ve III
+    C) II ve III  ✔
+    D) I, II ve IV
+    E) I, III ve IV
+
+## 3628-p1-02
+ADAY: 3628 sayılı Kanun'a göre, soruşturmaya başlayan Cumhuriyet savcısının, hakkında soruşturma yapılan görevliden mal bildiriminde bulunmasını istemesi aşağıdaki şartlardan hangisine bağlıdır?
+ADAY DOĞRU: İhbarı doğrulayan emarelerin bulunması
+  — skor 0.31 | Polis Mevzuatı / Yakalama, Gözaltına Alma ve İfade Alma Yönetmeliği | published | id f6bdedf3-23c3-4a74-9e71-11908850b815
+    Gözaltı süresinin dolması üzerine serbest bırakılan bir kişi hakkında kolluk, yakalamaya neden olan aynı fiille ilgili olarak yeniden yakalama işlemi uygulamak istemektedir. Yakalama, Gözaltına Alma ve İfade Alma Yönetmeliği'ne göre bu işlem hangi şartla yapılabilir?
+    A) Yeni ve yeterli delil elde edilmesi hâlinde, ayrıca bir karara gerek olmaksızın
+    B) Cumhuriyet savcısının kararının bulunması hâlinde, yeni delil aranmaksızın
+    C) Serbest bırakılmasından itibaren gözaltı süresi kadar bir sürenin geçmiş olması hâlinde
+    D) Yeni ve yeterli delil elde edilmesi ve Cumhuriyet savcısının kararı bulunması hâlinde  ✔
+    E) Sulh ceza hâkiminin yeni bir yakalama kararı vermiş olması hâlinde
+  — skor 0.30 | Polis Mevzuatı / 5326 Sayılı Kabahatler Kanunu | published | id af22383b-9f1c-4c44-bd25-ac495ca68ed3
+    Bir soruşturmada Cumhuriyet savcısı, fiilin suç değil kabahat oluşturduğu gerekçesiyle kovuşturmaya yer olmadığı kararı vermiş ve idarî yaptırım kararı uygulamıştır. İlgili, hem kovuşturmaya yer olmadığı kararına itiraz etmiş hem de idarî yaptırım kararına karşı başvuruda bulunmak istemektedir. 5326 sayılı Kabahatler Kanunu'na göre idarî yaptırım kararına karşı başvuru nerede incelenir?
+    A) Her hâlükârda sulh ceza hâkimliğinde
+    B) Kovuşturmaya yer olmadığı kararına yapılan itirazı inceleyen merciide  ✔
+    C) İdare mahkemesinde
+    D) Ağır ceza mahkemesinde
+    E) Kararı veren Cumhuriyet savcısının bağlı olduğu başsavcılıkta
+  — skor 0.28 | Polis Mevzuatı / 3628 Sayılı Mal Bildiriminde Bulunulması Kanunu | published | id c6a997d6-4400-4d43-9727-7ff40371e0de
+    3628 sayılı Mal Bildiriminde Bulunulması, Rüşvet ve Yolsuzluklarla Mücadele Kanunu’na göre, “suçun ihbarı” ile ilgili aşağıdakilerden hangisi yanlıştır?
+    A) İhbar üzerine derhâl bir ihbar tutanağı düzenlenir ve bir örneği muhbire verilir.
+    B) Yapılan ihbar veya takipsizlik kararı ve iddianame Cumhuriyet başsavcılığınca, ilgili kamu kurum veya kuruluşlarına bildirilir.
+    C) İhbar konusu müsnet suç hakkında dava açılıncaya kadar bilgi vermek ve yayın yapmak yasak değildir.  ✔
+    D) Muhbirlerin kimlikleri, rızaları olmadıkça açıklanmaz.
+    E) İlgili kamu kurum veya kuruluşları tarafından yazılı başvuruda bulunulması hâlinde bu kurum veya kuruluşlar, başvuru tarihinde müdahil sıfatını kazanır.
+  — skor 0.27 | Polis Mevzuatı / 3628 Sayılı Mal Bildiriminde Bulunulması Kanunu | published | id 668120db-3dde-42e3-943d-401d8892a3ba
+    3628 sayılı Mal Bildiriminde Bulunulması, Rüşvet ve Yolsuzluklarla Mücadele Kanunu kapsamındaki görevlere devam edenler ile bunların mal bildirimlerini vereceği merci eşleştirmelerinden hangisi yanlıştır?
+    A) Noterler - Adalet Bakanlığı
+    B) Siyasi parti genel başkanları - Yargıtay Cumhuriyet Başsavcılığı
+    C) TBMM Üyeleri - Cumhurbaşkanlığı  ✔
+    D) Belediye Başkanları - İçişleri Bakanlığı
+    E) İl Genel Meclisi Üyeleri - Valiler
+  — skor 0.27 | Polis Mevzuatı / 2559 Sayılı Polis Vazife ve Salâhiyet Kanunu (PVSK) | published | id 74daca69-d85b-47c9-b3d4-9e13e5de2495
+    2559 sayılı Polis Vazife ve Salâhiyet Kanunu'na göre, bir suç işlendiği bilgisini edinen polis, olay yerinin korunması ve delillerin tespitine ilişkin acele tedbirleri aldıktan sonra ne yapar?
+    A) El koyduğu olayları, yakalanan kişiler ile uygulanan tedbirleri derhal Cumhuriyet savcısına bildirir ve savcının emri doğrultusunda soruşturma işlemlerini yapar.  ✔
+    B) Soruşturmayı kendi başına tamamlayarak dosyayı doğrudan mahkemeye gönderir.
+    C) Durumu yalnızca mülki amire bildirir.
+    D) Sulh ceza hâkiminden soruşturma izni ister.
+    E) Yirmi dört saat bekledikten sonra Cumhuriyet savcısına bilgi verir.
+
+## 3628-p1-03
+ADAY: 3628 sayılı Kanun'a göre, bir kamu kurumuna memur olarak atanmada mal bildiriminin ne zaman verilmesi gerekir?
+ADAY DOĞRU: Göreve giriş için gerekli belgelerle birlikte
+  — skor 0.28 | İdare Hukuku / İdare Hukuku | published | id 9c6a8ff1-d4e4-4a88-a53a-090fce40685c
+    Kemaliye Kaymakamlığında çalışan Memur Murat'ın 20 Mart 2020 tarihinde mal bildirimini yenilediği biliniyor. 3628 sayılı Mal Bildiriminde Bulunulması, Rüşvet ve Yolsuzluklarla Mücadele Kanunu'na göre Memur Murat; görevine devam etmesi kaydıyla en geç hangi yıl ve ayın sonuna kadar mal bildirimini tekrar yeniler?
+    A) 2024 yılının Aralık ayı
+    B) 2025 yılının Ocak ayı
+    C) 2025 yılının Şubat ayı  ✔
+    D) 2025 yılının Mart ayı
+    E) 2025 yılının Aralık ayı
+  — skor 0.28 | Polis Mevzuatı / 3628 Sayılı Mal Bildiriminde Bulunulması Kanunu | published | id 640cf854-8e83-47b3-96a8-a215bf232d00
+    3628 sayılı Mal Bildiriminde Bulunulması, Rüşvet ve Yolsuzluklarla Mücadele Kanunu’na göre mal bildiriminin şekli, düzenleniş biçimi, sayısı, neleri kapsayacağı ve mercine nasıl ulaştırılacağı hususları ile Kanun’un uygulanması bakımından gerekli görülecek diğer konular, aşağıdakilerden hangisi tarafından çıkarılacak bir yönetmelikle düzenlenir?
+    A) Cumhurbaşkanı  ✔
+    B) İçişleri Bakanlığı
+    C) Adalet Bakanlığı
+    D) Hazine ve Maliye Bakanlığı
+  — skor 0.28 | Polis Mevzuatı / 5395 Sayılı Çocuk Koruma Kanunu | published | id 03f0f9a3-340a-4279-9607-8d8add553cbf
+    5395 sayılı Çocuk Koruma Kanunu’na göre, çocuk hakkında kamu davası açılması hâlinde durumun, gerekli idari tedbirlerin alınması amacıyla bildirileceği birimler aşağıdakilerin hangisinde birlikte ve doğru olarak verilmiştir?
+    A) Aile ve Sosyal Hizmetler Bakanlığı il müdürlüğüne, baroya ve çocuğun velisine
+    B) Milli Eğitim Bakanlığı ile Sağlık Bakanlığı il veya ilçe müdürlüklerine
+    C) Aile ve Sosyal Hizmetler Bakanlığı ile Milli Eğitim Bakanlığı il veya ilçe müdürlüklerine  ✔
+    D) Aile ve Sosyal Hizmetler Bakanlığı ile Sağlık Bakanlığı il veya ilçe müdürlüklerine
+    E) Adli destek ve mağdur hizmetleri müdürlüğü ile denetimli serbestlik ve yardım merkezi şube müdürlüğüne
+  — skor 0.27 | Polis Mevzuatı / 657 Sayılı Devlet Memurları Kanunu | published | id 5acea304-fb37-4bd8-9719-8277f599c4fb
+    I. Refakat izninin bitiminden itibaren, sağlık kurulu raporuyla belgelendirilmesi şartıyla, istekleri üzerine 18 aya kadar aylıksız izin verilebilir. II. Üç yaşını doldurmamış bir çocuğu eşiyle birlikte veya münferit olarak evlat edinen memurlar ile memur olmayan eşin münferit olarak evlat edinmesi hâlinde memur olan eşlerine, istekleri üzerine 36 aya kadar aylıksız izin verilir. III. Aylıksız izi
+    A) Yalnız I
+    B) I ve II
+    C) I ve III  ✔
+    D) II ve III
+    E) I ve IV
+  — skor 0.26 | Analitik Düşünme ve Türkçe / Türkçe / Dil Bilgisi | published | id 03839088-d332-4e57-8a44-9b796fe0d5db
+    (I) Yazar, “Birinci Dünya Savaşı’nın Kökenleri Üzerine Osmanlı Diplomatik Belgeleri” adlı kitabı ile Osmanlı diplomasi tarihi çalışmalarına önemli bir katkı sunmaktadır. (II) Kitap, 1836 adet belgeden oluşmaktadır. (III) Yer ve kişi adlarına, orijinal belgelerde bulunan haliyle yer verilmiştir. (IV) Çalışmanın giriş, notlar ve indeksler kısmı İngilizce olmakla birlikte belgelerin dili Osmanlı Devl
+    A) I ve II
+    B) I ve V  ✔
+    C) II ve III
+    D) I, III ve IV
+    E) II, IV ve V
+
+## 3628-p1-04
+ADAY: Yurt dışında görevli bir emniyet müdürüne, görev yaptığı devletin makamlarınca, değeri on aylık net asgari ücret toplamını aşan bir kol saati hediye edilmiştir. 3628 sayılı Kanun'a göre bu görevlinin yükümlülüğü aşağıdakilerden hangisidir?
+ADAY DOĞRU: Bir ay içinde kendi kurumuna teslim etmek
+  — skor 0.31 | Polis Mevzuatı / 3628 Sayılı Mal Bildiriminde Bulunulması Kanunu | published | id 3c03c097-5068-4ec6-aacf-32e92a4111b2
+    Kıymet takdirini müteakip, takdir komisyonu tarafından ilgilisine geri verilen hediye veya hibe niteliğindeki eşyadan değeri net asgari ücretin - - - - aylık toplamını aşanlar, ilgilisi tarafından en geç - - - - gün içinde kendi kurumlarına verilir. Mal Bildiriminde Bulunulması Hakkında Yönetmelik’e göre verilen hükümde boş bırakılan yerlere sırasıyla hangisi getirilmelidir?
+    A) beş - yedi
+    B) yedi - on
+    C) on - on  ✔
+    D) on - on beş
+  — skor 0.18 | Polis Mevzuatı / 6284 Sayılı Ailenin Korunması Kanunu | published | id 625e5028-a824-44f7-8814-1553e13e9f70
+    6284 sayılı Ailenin Korunması ve Kadına Karşı Şiddetin Önlenmesine Dair Kanun’a göre geçici maddi yardım yapılmasına karar verilmesi hâlinde, kaç yaşından büyükler için her yıl belirlenen aylık net asgari ücret tutarının otuzda birine kadar günlük ödeme yapılır?
+    A) On üç
+    B) On dört
+    C) On beş
+    D) On altı  ✔
+  — skor 0.18 | Polis Mevzuatı / 6284 Sayılı Ailenin Korunması Kanunu | published | id 387ebeec-bf2f-49d5-aa7a-256485eb6c83
+    Bu Kanun hükümlerine göre geçici maddi yardım yapılmasına karar verilmesi hâlinde, - - - - yaşından büyükler için her yıl belirlenen aylık net asgari ücret tutarının - - - - kadar günlük ödeme yapılır. 6284 sayılı Ailenin Korunması ve Kadına Karşı Şiddetin Önlenmesine Dair Kanun’a göre, bu hükümde boş bırakılan yerlere aşağıdakilerden hangisi sırasıyla getirilmelidir?
+    A) on iki - onda birine
+    B) on dört - onda birine
+    C) on sekiz - otuzda birine
+    D) on altı - otuzda birine  ✔
+  — skor 0.16 | Polis Mevzuatı / 657 Sayılı Devlet Memurları Kanunu | published | id 09b702f4-1cb1-47bd-836b-f7a1c44e771c
+    Görevi sebebiyle, silah kullanmayla ilgisi bulunmayan bir eylemden dolayı hakkında kamu davası açılan bir polis memuru yargılama sonunda beraat etmiştir. Polis memuru, davada vekâlet verdiği avukata Avukatlık Asgari Ücret Tarifesine göre ücret ödemiş; dava ile ilgili yaptığı masrafların bir kısmını belgelendirebilmiş, bir kısmını belgelendirememiştir. 657 sayılı Kanun'a göre bu memurun ödediği ücr
+    A) Avukata ödenen ücret ile belgelendirilen masraflar, İçişleri Bakanlığınca uygun görülmesi şartıyla kurum bütçesinden karşılanır.
+    B) Avukata ödenen ücret kurumunun bütçesine konulan ödenekten karşılanır; dava ile ilgili masraflar memurun kendisine ait olur.
+    C) Avukata ödenen ücret ile belgelendirilen masraflar kurumunun bütçesine konulan ödenekten karşılanır; belgesiz masraflar karşılanmaz.  ✔
+    D) Avukata ödenen ücret ile belgelendirilen masraflar Hazinece karşılanır; belgelendirilemeyen dava masrafları memurun kendisine ait olur.
+    E) Belgelendirilen dava masrafları Hazinece karşılanır; avukata ödenen ücret ise memurun kendisine ait olur.

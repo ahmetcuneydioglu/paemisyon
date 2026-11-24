@@ -1,0 +1,19 @@
+[
+  {
+    "id": "2559-p4-01",
+    "articleNo": "13/A",
+    "kok": "2559 sayılı PVSK'ya göre, kaybolan çocukların bulunması amacıyla polisin başvurabileceği tedbirler arasında aşağıdakilerden hangisi YER ALMAZ?",
+    "siklar": {
+      "A": "Çocuğa ait banka hesabının hareketlerini talep etmek",
+      "B": "Başkasına ait olmakla birlikte çocuğun kullandığı banka hesabının hareketlerini talep etmek",
+      "C": "Çocuğun telekomünikasyon yoluyla iletişimini denetlemek",
+      "D": "Çocuğu kaçırdığı düşünülen kişinin telekomünikasyon yoluyla iletişimini denetlemek",
+      "E": "Çocuğun sinyal bilgilerini değerlendirmek"
+    },
+    "dogru": "D",
+    "aciklama": "PVSK md 13/A'ya göre polis, kaybolan çocukların bulunması amacıyla “kayıp çocuğa ait veya başkasına ait olmakla birlikte kayıp çocuk tarafından kullanılan her türlü banka hesap hareketlerini talep edebilir, telekomünikasyon yoluyla iletişimini denetleyebilir ve sinyal bilgilerini değerlendirebilir.” Madde tedbirin konusunu KAYIP ÇOCUK üzerinden çizer. A ve B maddede yer alır: hesap çocuğa ait olabileceği gibi başkasına ait olup çocuk tarafından KULLANILIYOR da olabilir; ikisinin hareketleri de talep edilebilir. C ve E de maddede yer alır: denetlenen iletişim ve değerlendirilen sinyal bilgileri kayıp çocuğa ilişkindir. D ise maddede sayılmamıştır: hüküm, çocuğu kaçırdığı düşünülen kişinin kendi iletişimini bu tedbirin konusu yapmaz. Karıştırılan nokta “başkasına ait” ibaresidir. Bu ibare maddede, kayıp çocuğun kullandığı banka hesabı için geçer; ölçüt hesabın kimin adına açıldığı değil, çocuğun onu kullanmasıdır. İbare, çocuğun kullanmadığı ve üçüncü bir kişiye ait olan iletişime uzanan bir yetki tanımlamaz.",
+    "dayanak": "PVSK md 13/A",
+    "zorluk": "medium",
+    "tur": "kavram"
+  }
+]

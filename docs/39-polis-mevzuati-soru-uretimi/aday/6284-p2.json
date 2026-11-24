@@ -1,0 +1,19 @@
+[
+  {
+    "id": "6284-p2-01",
+    "articleNo": "5",
+    "kok": "6284 sayılı Kanun'a göre, gecikmesinde sakınca bulunan hâllerde tedbir kararı alan kolluk amiri, evrakı ne zaman onaya sunmak zorundadır?",
+    "siklar": {
+      "A": "Derhâl",
+      "B": "Yirmi dört saat içinde",
+      "C": "Kırk sekiz saat içinde",
+      "D": "Üç gün içinde",
+      "E": "Takip eden ilk işgünü içinde"
+    },
+    "dogru": "E",
+    "aciklama": "Kanun, gecikmesinde sakınca bulunan hâllerde kolluk amirinin alabileceği tedbirleri koruyucu ve önleyici tedbirler için ayrı fıkralarda düzenler ve iki fıkrada da aynı cümleyi kullanır: “Kolluk amiri evrakı en geç kararın alındığı tarihi takip eden İLK İŞGÜNÜ içinde … onayına sunar.” Kolluk amirinin kendi yükümlülüğü budur ve tedbirin türüne göre değişmez. Yirmi dört saat ve kırk sekiz saat aynı fıkralarda geçer; ancak bunlar evrakın sunulmasına değil, ONAY makamına tanınan süreye ilişkindir: bu süreler içinde onaylanmayan tedbirler kendiliğinden kalkar. Biri kolluk amirini, öbürü onay makamını bağlayan bu iki süre birbirinin yerine kullanılamaz. Kanun “derhâl” kaydını başka işlemler için kullanır; evrakın onaya sunulması için saatle ya da “derhâl” ile değil, işgünüyle belirlenen bir üst sınır öngörmüştür. Üç gün ise Kanun'da evrakın sunulmasına ilişkin bir süre olarak yer almaz.",
+    "dayanak": "6284 sayılı Kanun md 5/2 ve md 3/2",
+    "zorluk": "medium",
+    "tur": "dogrudan"
+  }
+]

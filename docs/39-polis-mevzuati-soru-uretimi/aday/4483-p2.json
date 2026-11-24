@@ -1,0 +1,36 @@
+[
+  {
+    "id": "4483-p2-01",
+    "articleNo": "3",
+    "kok": "4483 sayılı Kanun'a göre, Cumhurbaşkanı kararıyla atanan ve bir bakanlığın il müdürlüğünde görev yapan kamu görevlisi hakkında soruşturma izni vermeye yetkili merci aşağıdakilerden hangisidir?",
+    "siklar": {
+      "A": "Kaymakam",
+      "B": "Vali",
+      "C": "Görev yaptığı kuruluşun en üst idari amiri",
+      "D": "İçişleri Bakanı",
+      "E": "Cumhurbaşkanı veya ilgili bakan"
+    },
+    "dogru": "B",
+    "aciklama": "Kanun'un 3 üncü maddesinin (e) bendi, Cumhurbaşkanı kararıyla atanan memurlar ve diğer kamu görevlileri hakkında soruşturma izni yetkisini Cumhurbaşkanına veya ilgili bakana verir; ancak bent bu yetkiyi “(b) ve (c) bentlerindeki hükümler SAKLI KALMAK KAYDIYLA” tanır. (b) bendine göre ilde görevli memurlar ve diğer kamu görevlileri hakkında izin vermeye VALİ yetkilidir. Bu nedenle Cumhurbaşkanı kararıyla atanmış olsa da bir bakanlığın il müdürlüğünde görev yapan kişi için belirleyici olan atanma biçimi değil, görev yeridir; izin validen istenir. “Cumhurbaşkanı veya ilgili bakan”, Cumhurbaşkanı kararıyla atananlardan (b) ve (c) bentlerinin kapsamına girmeyenler için geçerlidir. (d) bendindeki “o kuruluşun en üst idari amiri”, bakanlıkların merkez ve bağlı veya ilgili kuruluşlarında görev yapan diğer memur ve kamu görevlileri için öngörülmüştür; il müdürlüğündeki görevliyi kapsamaz. İçişleri Bakanı maddede başka bir görevli grubu için sayılmıştır; bakanlığın il müdürlüğündeki görevli o grupta yer almaz. Kaymakamın yetkisi ise ilçe düzeyindeki görevlilere ilişkindir.",
+    "dayanak": "4483 sayılı Kanun md 3-(e) ve md 3-(b)",
+    "zorluk": "hard",
+    "tur": "dogrudan"
+  },
+  {
+    "id": "4483-p2-02",
+    "articleNo": "11",
+    "kok": "Hakkında soruşturma izni verilen bir memur, kendisine tebliğ edilen bu karara süresi içinde itiraz etmiştir. 4483 sayılı Kanun'a göre dosya, yetkili ve görevli Cumhuriyet başsavcılığına ne zaman gönderilir?",
+    "siklar": {
+      "A": "İzin kararının memura tebliği üzerine",
+      "B": "İtiraz süresinin dolması üzerine",
+      "C": "İtirazın reddedilmesi üzerine",
+      "D": "Disiplin soruşturmasının tamamlanması üzerine",
+      "E": "Cumhuriyet başsavcılığının talebi üzerine"
+    },
+    "dogru": "C",
+    "aciklama": "Dosya, Kanun'un 11 inci maddesine göre soruşturma izninin “itiraz edilmeden veya itirazın reddi sonunda KESİNLEŞMESİ” üzerine derhâl yetkili ve görevli Cumhuriyet başsavcılığına gönderilir. Madde dosyanın gönderilmesini iznin verilmesine ya da tebliğine değil, kesinleşmesine bağlamıştır. Olayda memur karara süresi içinde itiraz ettiğinden izin, ancak İTİRAZIN REDDEDİLMESİYLE kesinleşir; 9 uncu maddeye göre itiraz üzerine verilen kararlar kesindir ve dosya bu aşamada gönderilir. Kararın memura tebliği itiraz yolunu açar, izni kesinleştirmez; bu nedenle tebliğ üzerine dosya gönderilmez. İtiraz süresinin dolması yalnız karara itiraz EDİLMEMİŞSE izni kesinleştirir; süresinde itiraz edilmişse sürenin dolması tek başına sonuç doğurmaz. Disiplin hükümleri Kanun'un 2 nci maddesinde saklı tutulmuştur; dosyanın gönderilmesi disiplin soruşturmasının sonucuna bağlanmamıştır. Madde dosyanın “derhal” gönderilmesini emrettiğinden Cumhuriyet başsavcılığının ayrıca talepte bulunması da aranmaz.",
+    "dayanak": "4483 sayılı Kanun md 11 (md 9 ile birlikte)",
+    "zorluk": "medium",
+    "tur": "vaka"
+  }
+]

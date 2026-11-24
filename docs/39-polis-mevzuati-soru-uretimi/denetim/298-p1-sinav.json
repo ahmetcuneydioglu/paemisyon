@@ -1,0 +1,50 @@
+[
+  {
+    "id": "298-p1-01",
+    "karar": "ONAY",
+    "korCevap": "D",
+    "metinCevap": "D",
+    "sinavDegeri": 3,
+    "ayirtEdicilik": 4,
+    "dogallik": 4,
+    "zorluk": "medium",
+    "gerekce": "TUR 2: Kör çözümde bilgiyle D (%75), salt şık ve sağduyuyla A (%40; varsayılan merci: seçim işi → ilçe seçim kurulu; ikinci sırada B, 2911 çağrışımı). metinCevap D (md 51/2) = anahtar. Varsayılan merci ve 2911'in bildirim mercii çeldiricide; 2911'i bilen eksik aday B'ye, hiç bilmeyen A'ya gider, hükmü bilen bulur. 'İlçe merkezinde' kaydı köy istisnasını (muhtar) kapatıyor ve A'yı güçlendiriyor. Sınav değeri 3: PAEM 298'i adıyla hiç sormadı; soruyu taşıyan, kolluğa doğrudan dokunması ve PAEM'in her dönem sorduğu 2911 ile ayırt ettirmesi.",
+    "oneri": "E ('Toplantı yerindeki Cumhuriyet başsavcılığına') sağduyuyla düşen tek şık; kalabilir."
+  },
+  {
+    "id": "298-p1-02",
+    "karar": "ONAY",
+    "korCevap": "B",
+    "metinCevap": "B",
+    "sinavDegeri": 4,
+    "ayirtEdicilik": 3,
+    "dogallik": 3,
+    "zorluk": "medium",
+    "gerekce": "TUR 2: Kör çözümde bilgiyle B (%80), salt şık ve sağduyuyla A (%50; 'memur + görev suçu → soruşturma izni' varsayılanı), B %30. metinCevap B (md 174/1) = anahtar; polis memuru 174/6–7'ye girmez, tek doğru. 4483'ü bilen eksik aday A'ya gider, hükmü bilen B'yi bulur: doğru yönde ayırt eder. Hüküm seçim günü görevli polise doğrudan uygulanır ve PAEM'in çekirdek 4483 kuralından sapmayı ölçer (değer 4). Çekince: C ve E polis memuru için sağduyuyla birlikte düşüyor, D de zayıf; soru fiilen A–B ikilisine iniyor (10-ek RED dersi 2'nin sınırında). 'Özel kanun soruyorsa genel izin kuralından sapma vardır' sınav sezgisi B'ye götürebilir, ama yüksek güven vermiyor; bu yüzden ayırt edicilik ve doğallık 3.",
+    "oneri": "Değişiklik şart değil; soru bu hâliyle geçer. Zayıf nokta C ve E'nin polis memuru için birlikte düşmesi. İleride rötuş yapılırsa yalnız biri değiştirilsin ve yeni şık A ile aynı temayı (izin) taşımasın."
+  },
+  {
+    "id": "298-p1-03",
+    "karar": "ONAY",
+    "korCevap": "B",
+    "metinCevap": "E",
+    "sinavDegeri": 3,
+    "ayirtEdicilik": 4,
+    "dogallik": 4,
+    "zorluk": "hard",
+    "gerekce": "TUR 2: Kör çözümde YANLIŞ şıkka gittim: bilgiyle B (%55), salt şık ve sağduyuyla A/B (%30'ar; tedbiri alan başkan, varsayılan seçim kurulu). metinCevap E (md 175; fiil 134/1) = anahtar. Doğru cevap sezgiye aykırı (idarî para cezasına savcı karar verir); bilmeyen bulamıyor, Kabahatler sezgisi olan eksik aday C ya da D'ye gidiyor. Bu soru lehine güçlü kanıt. Kök md 156'nın fiiliyle kurulmamış (iki okumalı 156 ↔ 175 dışarıda), TL tutarı yok, varsayılan merci doğru şık değil. Sınav değeri 3 ve sınırda: tek satırlık merci hükmü, PAEM 298'i sormadı; taşıyan, kolluğun sandık çevresinden uzaklaştırdığı kişiye cezayı kendisinin kesemeyeceği bilgisi ve PAEM'in sorduğu Kabahatler 'kim karar verir' kalıbı.",
+    "oneri": "Değişiklik gerekmez. Yayın kararında 5326 bankasındaki 'karar verme yetkisi' sorularıyla aynı kısa denemeye konmaması not edilsin."
+  },
+  {
+    "id": "298-p1-04",
+    "karar": "RED",
+    "korCevap": "D (bilgiyle %35, YANLIŞ); salt şık+sağduyu B (%30, YANLIŞ)",
+    "metinCevap": "A",
+    "sinavDegeri": 2,
+    "ayirtEdicilik": 3,
+    "dogallik": 3,
+    "zorluk": "hard",
+    "gerekce": "Metin (md 171) = anahtar A; öbür dört fiil hapis (170, 151/1, 168, 153). Kestirme yok, kör çözümde iki yoldan da yanlışa gittim. RED sebebi biçim değil hüküm: soru beş seçim suçunun ceza TÜRÜNÜ ezberletiyor (tablodaki tek değer; 10-ek'e göre hükmün özü değil). Yasağın kendisi bankada ölçülü; yaptırımın adlî para cezası olması kolluğun işlemini değiştirmiyor (beşi de suç, adlî işlem aynı). PAEM 298'i adıyla hiç sormadı, fiil → ceza kalıbını da yalnız disiplinde soruyor. Ters ayırt etme yok ama ayırt ettiği şey hazırlık değil tek satırlık ezber: eksik bilen de hiç bilmeyen de aynı yere (içki ya da tutanak) gidiyor. 'Hangisinin cezası adlî para cezasıdır' kalıbı korpusta yok. Ek: B çeldiricisi tur ekinin iki okumalı saydığı 79/1 ↔ 170 çiftinden kurulu (yanlışlığı okumaya bağlı değil, yine de bağlayıcı listeye değiyor).",
+    "oneri": "Bırakılsın. Analistin öbür biçimi (kökte silah, şıklarda yaptırım türleri) ceza aralığı yazmadan kurulamıyor ve aynı ezberi ölçüyor; biçim değeri yükseltmez."
+  }
+]

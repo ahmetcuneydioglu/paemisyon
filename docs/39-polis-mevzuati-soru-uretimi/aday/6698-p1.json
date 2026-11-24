@@ -1,0 +1,172 @@
+[
+  {
+    "id": "6698-p1-01",
+    "articleNo": "28",
+    "kok": "6698 sayılı Kanun'a göre, aşağıdakilerden hangisi Kanun hükümlerinin hiçbirinin uygulanmadığı kişisel veri işleme hâllerinden biridir?",
+    "siklar": {
+      "A": "Yargı makamlarınca yargılama için işlenmesi",
+      "B": "Suç soruşturması için gerekli olması",
+      "C": "İlgili kişinin alenileştirdiği verilerin işlenmesi",
+      "D": "Kamu kurumunca denetleme veya düzenleme görevi için işlenmesi",
+      "E": "Bir kişinin hayatının korunması için zorunlu olması"
+    },
+    "dogru": "A",
+    "aciklama": "Kanun hükümlerinin hiç uygulanmadığı hâller 28 inci maddenin birinci fıkrasında sayılır; cevap A'dır. (d) bendine göre Kanun, 'Kişisel verilerin soruşturma, kovuşturma, yargılama veya infaz işlemlerine ilişkin olarak yargı makamları veya infaz mercileri tarafından işlenmesi' hâlinde uygulanmaz. Bu bent hem işlemin türüne hem aktöre bağlıdır: istisna, sayılan işlemleri yargı makamının ya da infaz merciinin yapmasıyla doğar. B, C ve D aynı maddenin ikinci fıkrasındaki hâllerdir: B, (a) bendindeki 'suç işlenmesinin önlenmesi veya suç soruşturması için gerekli olması'; C, (b) bendindeki 'İlgili kişinin kendisi tarafından alenileştirilmiş kişisel verilerin işlenmesi'; D, (c) bendindeki 'kanunun verdiği yetkiye dayanılarak görevli ve yetkili kamu kurum ve kuruluşları … denetleme veya düzenleme görevlerinin yürütülmesi' için gerekli olmasıdır. İkinci fıkradaki hâllerde Kanun bütünüyle devre dışı kalmaz. 'Soruşturma' sözcüğü B'yi birinci fıkradaki tam istisna gibi gösterir; oysa (a) bendi işlemeyi kimin yaptığına değil, işlemenin amacına bakar. E ise bir istisna değil, 5 inci maddenin ikinci fıkrasının (b) bendindeki işleme şartıdır: 'Fiili imkânsızlık nedeniyle rızasını açıklayamayacak durumda bulunan veya rızasına hukuki geçerlilik tanınmayan kişinin kendisinin ya da bir başkasının hayatı veya beden bütünlüğünün korunması için zorunlu olması' hâlinde kişisel veriler ilgili kişinin açık rızası aranmaksızın işlenebilir; Kanunun öteki hükümleri bu hâlde de uygulanır.",
+    "dayanak": "6698 sayılı Kanun md 28/1-d (karş. md 28/2-a, b, c; md 5/2-b)",
+    "zorluk": "hard",
+    "tur": "kavram"
+  },
+  {
+    "id": "6698-p1-02",
+    "articleNo": "28",
+    "kok": "6698 sayılı Kanun'a göre, vergi alacağının tahsili için gerekli kişisel verilerin bir vergi dairesince Kanunun amacına ve temel ilkelerine uygun ve orantılı olarak işlenmesiyle ilgili aşağıdakilerden hangisi doğrudur?",
+    "siklar": {
+      "A": "Veri güvenliğine ilişkin yükümlülükler uygulanmaz.",
+      "B": "Vergi dairesinin ilgili kişiyi aydınlatma yükümlülüğü vardır.",
+      "C": "Veri Sorumluları Siciline kayıt yükümlülüğü uygulanmaz.",
+      "D": "Kişisel verilerin işlenme şartlarına ilişkin hükümler uygulanmaz.",
+      "E": "Zararın giderilmesini talep etme hakkı uygulanmaz."
+    },
+    "dogru": "C",
+    "aciklama": "Vergi alacağının tahsili için yapılan işleme, 28 inci maddenin ikinci fıkrasının (ç) bendindeki 'Kişisel veri işlemenin bütçe, vergi ve mali konulara ilişkin olarak Devletin ekonomik ve mali çıkarlarının korunması için gerekli olması' hâlidir; cevap C'dir. Fıkranın giriş cümlesi şöyledir: 'Bu Kanunun amacına ve temel ilkelerine uygun ve orantılı olmak kaydıyla veri sorumlusunun aydınlatma yükümlülüğünü düzenleyen 10 uncu, zararın giderilmesini talep etme hakkı hariç, ilgili kişinin haklarını düzenleyen 11 inci ve Veri Sorumluları Siciline kayıt yükümlülüğünü düzenleyen 16 ncı maddeleri aşağıdaki hâllerde uygulanmaz'. Bu yüzden 16 ncı madde bu işlemeye uygulanmaz. Fıkra yalnız bu üç maddeyi sayar; sayılmayan hükümler uygulanmaya devam eder. A yanlıştır: veri güvenliğine ilişkin yükümlülükler 12 nci maddede düzenlenmiştir ve fıkrada sayılmaz; bu hâlde de uygulanır. B yanlıştır: aydınlatma yükümlülüğü 10 uncu maddededir ve bu hâlde uygulanmaz. D yanlıştır: kişisel verilerin işlenme şartları 5 inci maddede, özel nitelikli kişisel verilerin işlenme şartları 6 ncı maddede düzenlenmiştir; ikisi de fıkrada sayılmaz, bu hâlde de uygulanır. E yanlıştır: fıkra, 11 inci maddedeki hakların uygulanmamasından zararın giderilmesini talep etme hakkını AÇIKÇA hariç tutar; ilgili kişi, kişisel verilerinin kanuna aykırı olarak işlenmesi sebebiyle zarara uğrarsa bu hakkı kullanabilir (11/ğ).",
+    "dayanak": "6698 sayılı Kanun md 28/2-ç (karş. md 5, 6, 10, 11/ğ, 12, 16)",
+    "zorluk": "hard",
+    "tur": "kavram"
+  },
+  {
+    "id": "6698-p1-03",
+    "articleNo": "6",
+    "kok": "6698 sayılı Kanun'a göre, aşağıdakilerden hangisi özel nitelikli kişisel verilerin işlenebileceği hâller arasında SAYILMAMIŞTIR?",
+    "siklar": {
+      "A": "İlgili kişinin alenileştirme iradesine uygun olması",
+      "B": "Bir hakkın korunması için zorunlu olması",
+      "C": "İstihdama ilişkin hukuki yükümlülük için zorunlu olması",
+      "D": "Bir sözleşmenin ifasıyla doğrudan ilgili olması",
+      "E": "Dini amaçlı derneğin üyelerine yönelik olması"
+    },
+    "dogru": "D",
+    "aciklama": "6 ncı maddenin 2024'te değiştirilen üçüncü fıkrasına göre 'Özel nitelikli kişisel verilerin işlenmesi yasaktır.' Bu verilerin işlenmesi ancak fıkrada sayılan hâllerde mümkündür ve bu sayımda sözleşmeye dayanan bir hâl yoktur; cevap D'dir. 'Bir sözleşmenin kurulması veya ifasıyla doğrudan doğruya ilgili olması' 5 inci maddenin ikinci fıkrasının (c) bendinde, yani özel nitelikli olmayan kişisel veriler için açık rıza aranmayan hâller arasındadır. İki liste karıştırıldığında öteki kişisel verilerde geçerli olan sözleşme dayanağı özel nitelikli veriler için de var sanılır. Öteki dört şık üçüncü fıkrada sayılır: A, '(ç) İlgili kişinin alenileştirdiği kişisel verilere ilişkin ve alenileştirme iradesine uygun olması'; B, '(d) Bir hakkın tesisi, kullanılması veya korunması için zorunlu olması'; C, (f) bendindeki istihdam, iş sağlığı ve güvenliği, sosyal güvenlik, sosyal hizmetler ve sosyal yardım alanlarındaki hukuki yükümlülüklerin yerine getirilmesi için zorunluluk; E, (g) bendindeki siyasi, felsefi, dini veya sendikal amaçlarla kurulan vakıf ve derneklerin, bentteki kayıtlara uyarak üyelerine yönelik işlemesi. A'daki alenileştirme hâli, 5 inci maddedeki karşılığından (5/2-d) farklı olarak alenileştirme İRADESİNE uygunluk şartı taşır. Sayılan hâllerden birine dayanılsa bile dördüncü fıkraya göre Kurul tarafından belirlenen yeterli önlemlerin alınması ayrıca şarttır.",
+    "dayanak": "6698 sayılı Kanun md 6/3 (karş. md 5/2-c, 5/2-f, 6/4)",
+    "zorluk": "medium",
+    "tur": "kavram"
+  },
+  {
+    "id": "6698-p1-04",
+    "articleNo": "9",
+    "kok": "6698 sayılı Kanun'a göre, yeterlilik kararı ve uygun güvence bulunmayan bir durumda kamu kurumu, kamu hukukuna tâbi faaliyeti için aşağıdakilerden hangisine dayanarak yurt dışına kişisel veri AKTARAMAZ?",
+    "siklar": {
+      "A": "Aktarımın üstün bir kamu yararı için zorunlu olması",
+      "B": "İlgili kişinin aktarıma açık rıza vermesi",
+      "C": "Bir hakkın tesisi için zorunlu olması",
+      "D": "Rızasını açıklayamayan kişinin hayatının korunması",
+      "E": "Kamuya açık bir sicilden aktarım yapılması"
+    },
+    "dogru": "B",
+    "aciklama": "Doğru cevap B'dir. 9 uncu madde yurt dışına aktarımı kademeli kurar: önce yeterlilik kararı aranır (9/1); karar yoksa dördüncü fıkradaki uygun güvencelerden biri (9/4); ikisi de yoksa altıncı fıkradaki hâller 'arızi olmak kaydıyla' uygulanır. Altıncı fıkranın (a) bendi 'İlgili kişinin, muhtemel riskler hakkında bilgilendirilmesi kaydıyla, aktarıma açık rıza vermesi'dir. Yedinci fıkra bu bendi kamu hukukuna tâbi faaliyetlerde dışarıda bırakır: 'Altıncı fıkranın (a), (b) ve (c) bentleri, kamu kurum ve kuruluşlarının kamu hukukuna tâbi faaliyetlerine uygulanmaz.' Bu yüzden kamu kurumu, kamu hukukuna tâbi faaliyetinde ilgili kişinin açık rızasına dayanarak arızi aktarım yapamaz; aynı kural (b) ve (c) bentlerindeki sözleşmeye dayalı hâller için de geçerlidir. Açık rıza varsa aktarımın her durumda serbest olduğu düşüncesi adayı yanıltır. Öteki şıklar yedinci fıkranın dışında kalan bentlerdir ve kamu kurumu için de uygulanır: A, '(ç) Aktarımın üstün bir kamu yararı için zorunlu olması'; C, (d) bendindeki bir hakkın tesisi, kullanılması veya korunması için zorunluluk; D, (e) bendindeki rızasını açıklayamayacak durumda bulunan kişinin hayatının veya beden bütünlüğünün korunması ve E, (f) bendindeki kamuya açık bir sicilden şartları sağlanarak yapılan aktarım.",
+    "dayanak": "6698 sayılı Kanun md 9/6-a, 9/7 (karş. md 9/1, 9/4, 9/6-ç, d, e, f)",
+    "zorluk": "hard",
+    "tur": "kavram"
+  },
+  {
+    "id": "6698-p1-05",
+    "articleNo": "14",
+    "kok": "6698 sayılı Kanun'a göre, veri sorumlusuna yaptığı başvuruya süresi içinde cevap verilmeyen ilgili kişi, başvuru tarihinden itibaren en geç kaç gün içinde Kurula şikâyette bulunabilir?",
+    "siklar": {
+      "A": "On",
+      "B": "On beş",
+      "C": "Otuz",
+      "D": "Kırk beş",
+      "E": "Altmış"
+    },
+    "dogru": "E",
+    "aciklama": "14 üncü maddenin birinci fıkrasına göre başvurunun reddedilmesi, verilen cevabın yetersiz bulunması veya 'süresinde başvuruya cevap verilmemesi hâllerinde; ilgili kişi, veri sorumlusunun cevabını öğrendiği tarihten itibaren otuz ve her hâlde başvuru tarihinden itibaren altmış gün içinde Kurula şikâyette bulunabilir.' Fıkra iki süre öngörür: cevabın öğrenilmesine bağlı otuz günlük süre ve başvuru tarihinden işleyen, 'her hâlde' aşılamayan altmış günlük üst sınır. Cevap hiç verilmediğinde öğrenilen bir cevap yoktur; kök başlangıç noktası olarak başvuru tarihini aldığından sınır altmış gündür (E). 'Otuz' çekici bir çeldiricidir: bu süre 13 üncü maddenin ikinci fıkrasında veri sorumlusunun başvuruyu sonuçlandırma süresidir ('en geç otuz gün içinde ücretsiz olarak') ve 14/1'de cevabın öğrenildiği tarihten işleyen şikâyet süresidir; başvuru tarihinden işleyen şikâyet süresi değildir. Şikâyetten önce başvuru yolunun tüketilmesi gerekir: '13 üncü madde uyarınca başvuru yolu tüketilmeden şikâyet yoluna başvurulamaz' (14/2). Altmış gün Kanunda Kurulun şikâyete cevap verme süresi olarak da geçer (15/4); kökteki süre ise ilgili kişinindir. 'On beş', veri sorumlusunun Kurulun istediği bilgi ve belgeleri gönderme süresidir (15/3); 'kırk beş' ve 'on' Kurul üyelerinin seçimine ilişkin sürelerdir (21/6, 21/5-b).",
+    "dayanak": "6698 sayılı Kanun md 14/1 (karş. md 13/2, 14/2, 15/3, 15/4)",
+    "zorluk": "medium",
+    "tur": "dogrudan"
+  },
+  {
+    "id": "6698-p1-06",
+    "articleNo": "10",
+    "kok": "6698 sayılı Kanun'a göre, veri sorumlusunun kişisel verilerin elde edilmesi sırasında aydınlatma yükümlülüğü kapsamında ilgili kişiye bilgi vermesi gereken konulardan biri aşağıdakilerden hangisidir?",
+    "siklar": {
+      "A": "Veri toplamanın hukuki sebebi",
+      "B": "Alınan veri güvenliği tedbirleri",
+      "C": "Verilerin işleneceği azami süre",
+      "D": "İşlenecek veri kategorileri",
+      "E": "Kurula şikâyet hakkı"
+    },
+    "dogru": "A",
+    "aciklama": "Aydınlatma yükümlülüğünün içeriği 10 uncu maddede sayılır: 'Kişisel verilerin elde edilmesi sırasında veri sorumlusu veya yetkilendirdiği kişi', ilgili kişilere şu konularda bilgi vermekle yükümlüdür: veri sorumlusunun ve varsa temsilcisinin kimliği; kişisel verilerin hangi amaçla işleneceği; işlenen kişisel verilerin kimlere ve hangi amaçla aktarılabileceği; '(ç) Kişisel veri toplamanın yöntemi ve hukuki sebebi'; 11 inci maddede sayılan diğer haklar. Cevap A'dır; bu, sayımın (ç) bendidir. B, C ve D'deki bilgiler aydınlatma sayımında değil, Veri Sorumluları Siciline kayıt başvurusunun yapıldığı bildirimin içeriğinde yer alır (16/3): veri konusu kişi grupları ve bu kişilere ait veri kategorileri (c), kişisel veri güvenliğine ilişkin alınan tedbirler (e) ve kişisel verilerin işlendikleri amaç için gerekli olan azami süre (f). İki sayım kısmen örtüştüğü için (veri sorumlusunun kimliği, işleme amacı, verilerin aktarılabileceği alıcılar) sicil bildirimine özgü unsurlar da aydınlatma kapsamında sanılır. E de sayımda yoktur: aydınlatma, haklar konusunda 11 inci maddede sayılanlara yollama yapar; Kurula şikâyet ise 14 üncü maddede düzenlenen ayrı bir yoldur.",
+    "dayanak": "6698 sayılı Kanun md 10/1-ç (karş. md 16/3-c, e, f; md 14)",
+    "zorluk": "medium",
+    "tur": "dogrudan"
+  },
+  {
+    "id": "6698-p1-07",
+    "articleNo": "17",
+    "kok": "6698 sayılı Kanun'a göre, Kanunda öngörülen yükümlülüklere aykırı aşağıdaki fiillerden hangisini işleyenler Türk Ceza Kanunu hükümlerine göre cezalandırılır?",
+    "siklar": {
+      "A": "Aydınlatma yükümlülüğünü yerine getirmemek",
+      "B": "Veri güvenliğine ilişkin tedbirleri almamak",
+      "C": "Kurulun verdiği kararları yerine getirmemek",
+      "D": "İşlenme sebebi kalmayan verileri silmemek",
+      "E": "Veri Sorumluları Siciline kaydolmamak"
+    },
+    "dogru": "D",
+    "aciklama": "Doğru cevap D'dir. 17 nci maddenin ikinci fıkrasına göre 'Bu Kanunun 7 nci maddesi hükmüne aykırı olarak; kişisel verileri silmeyen veya anonim hâle getirmeyenler' Türk Ceza Kanunu'nun fıkrada gösterilen maddesine göre cezalandırılır. 7 nci madde, Kanuna uygun olarak işlenmiş olsa bile 'işlenmesini gerektiren sebeplerin ortadan kalkması hâlinde' kişisel verilerin resen veya ilgili kişinin talebi üzerine veri sorumlusu tarafından silinmesini, yok edilmesini veya anonim hâle getirilmesini öngörür. Öteki dört fiil suç olarak değil, kabahat olarak düzenlenmiştir ve 18 inci maddenin birinci fıkrasına göre idari para cezası gerektirir: aydınlatma yükümlülüğünü yerine getirmemek (a), veri güvenliğine ilişkin yükümlülükleri yerine getirmemek (b), 15 inci madde uyarınca Kurul tarafından verilen kararları yerine getirmemek (c) ve Veri Sorumluları Siciline kayıt ve bildirim yükümlülüğüne aykırı hareket etmek (ç). Tuzak, veri güvenliğini ihmal etmek ya da Kurul kararına uymamak gibi ağır görünen aykırılıkların suç, verileri silmemek gibi pasif görünen bir aykırılığın ise idari yaptırım konusu olduğu düşüncesidir. Birinci fıkradaki fiiller kamu kurum ve kuruluşları bünyesinde işlenirse idari para cezası yerine, Kurulun bildirimi üzerine görevliler hakkında disiplin hükümlerine göre işlem yapılır (18/4); Kurulca verilen idari para cezalarına karşı ise idare mahkemelerinde dava açılabilir (18/3).",
+    "dayanak": "6698 sayılı Kanun md 17/2 (karş. md 7/1, 18/1, 18/3, 18/4)",
+    "zorluk": "medium",
+    "tur": "dogrudan"
+  },
+  {
+    "id": "6698-p1-08",
+    "articleNo": "2",
+    "kok": "6698 sayılı Kanun'a göre, kişisel verilerin otomatik olmayan yollarla işlenmesi aşağıdakilerden hangisinin varlığı hâlinde Kanun kapsamına girer?",
+    "siklar": {
+      "A": "İşlemenin ticari amaçla yapılması",
+      "B": "Verilerin özel nitelikli olması",
+      "C": "İşlemenin tüzel kişice yapılması",
+      "D": "İşlemenin ilgili kişinin açık rızasıyla yapılması",
+      "E": "Veri kayıt sisteminin parçası olması"
+    },
+    "dogru": "E",
+    "aciklama": "2 nci maddeye göre Kanun hükümleri, 'kişisel verileri işlenen gerçek kişiler ile bu verileri tamamen veya kısmen otomatik olan ya da herhangi bir veri kayıt sisteminin parçası olmak kaydıyla otomatik olmayan yollarla işleyen gerçek ve tüzel kişiler hakkında uygulanır.' Otomatik olmayan işleme ancak bir veri kayıt sisteminin parçasıysa kapsama girer; cevap E'dir. Veri kayıt sistemi, 'Kişisel verilerin belirli kriterlere göre yapılandırılarak işlendiği kayıt sistemi'dir (3/h); otomatik olmayan yollarla tutulan kayıtlar bu tanıma uyduğu ölçüde Kanunun kapsamındadır. A yanlıştır: madde, kapsamı işlemenin amacına bağlamaz; ticari amaç bir kapsam şartı değildir. B'deki özel nitelik, verinin hangi şartlarla işlenebileceğini belirler; Kanunun kapsamını belirlemez. C yanlıştır: madde, verileri işleyenleri 'gerçek ve tüzel kişiler' olarak birlikte sayar; işleyenin tüzel kişi olması aranmaz. D yanlıştır: açık rıza, 5 inci maddenin birinci fıkrasına göre bir işleme şartıdır ('Kişisel veriler ilgili kişinin açık rızası olmaksızın işlenemez.'); işlemenin Kanun kapsamına girip girmediğini değil, kapsama giren işlemenin hangi şartla yapılabileceğini belirler. Kanunun koruduğu kişi gerçek kişidir: ilgili kişi 'Kişisel verisi işlenen gerçek kişi'dir (3/ç).",
+    "dayanak": "6698 sayılı Kanun md 2 (karş. md 3/ç, 3/h, 5/1)",
+    "zorluk": "easy",
+    "tur": "kavram"
+  },
+  {
+    "id": "6698-p1-09",
+    "articleNo": "6",
+    "kok": "I. Kılık ve kıyafet\nII. Banka hesap hareketleri\nIII. Ceza mahkûmiyeti\nIV. Konum bilgisi\n6698 sayılı Kanun'a göre, numaralanmış verilerden hangileri özel nitelikli kişisel veridir?",
+    "siklar": {
+      "A": "Yalnız III",
+      "B": "I ve III",
+      "C": "II ve III",
+      "D": "III ve IV",
+      "E": "I, II ve IV"
+    },
+    "dogru": "B",
+    "aciklama": "Kılık ve kıyafet (I) ile ceza mahkûmiyeti (III), 6 ncı maddenin birinci fıkrasındaki sayımda açıkça yer alır; cevap B'dir. Fıkraya göre 'Kişilerin ırkı, etnik kökeni, siyasi düşüncesi, felsefi inancı, dini, mezhebi veya diğer inançları, kılık ve kıyafeti, dernek, vakıf ya da sendika üyeliği, sağlığı, cinsel hayatı, ceza mahkûmiyeti ve güvenlik tedbirleriyle ilgili verileri ile biyometrik ve genetik verileri özel nitelikli kişisel veridir.' Kılık ve kıyafet sıradan bir bilgi gibi göründüğü için sayımda olmadığı sanılır; 'Yalnız III' şıkkı bu yanılgıyı yakalar. Banka hesap hareketleri (II) ve konum bilgisi (IV) mahremiyet duygusu uyandırsa da fıkrada sayılmamıştır; bunlar 'Kimliği belirli veya belirlenebilir gerçek kişiye ilişkin her türlü bilgi' olarak kişisel veridir (3/d), ancak özel nitelikli değildir. Bir verinin özel nitelikli olup olmadığı, ne kadar hassas göründüğüne göre değil, fıkradaki sayıma göre belirlenir. Ayrımın sonucu önemlidir: özel nitelikli verilerin işlenmesi kural olarak yasaktır ve yalnız Kanunda sayılan hâllerde, Kurul tarafından belirlenen yeterli önlemler alınarak mümkündür (6/3, 6/4).",
+    "dayanak": "6698 sayılı Kanun md 6/1 (karş. md 3/d)",
+    "zorluk": "medium",
+    "tur": "onerme"
+  },
+  {
+    "id": "6698-p1-10",
+    "articleNo": "16",
+    "kok": "6698 sayılı Kanun'a göre, Veri Sorumluları Sicilini tutan ve bu sicile kayıt zorunluluğuna istisna getirebilen merciler sırasıyla aşağıdakilerden hangisidir?",
+    "siklar": {
+      "A": "Kurul – Başkanlık",
+      "B": "Kurul – Cumhurbaşkanlığı",
+      "C": "Başkanlık – Kurul",
+      "D": "Başkanlık – Cumhurbaşkanlığı",
+      "E": "Kurul – Kurul"
+    },
+    "dogru": "C",
+    "aciklama": "Doğru cevap C'dir. 16 ncı maddenin birinci fıkrasına göre 'Kurulun gözetiminde, Başkanlık tarafından kamuya açık olarak Veri Sorumluları Sicili tutulur.' Sicili tutmak, 25 inci maddenin dördüncü fıkrasında Başkanlığın görevleri arasında da ilk sırada sayılır. Kayıt zorunluluğuna istisnayı ise Kurul getirir: Kurulca belirlenecek objektif kriterler göz önüne alınmak suretiyle 'Kurul tarafından, Veri Sorumluları Siciline kayıt zorunluluğuna istisna getirilebilir' (16/2). Kurulun sicille ilgili görevi sicili tutmak değil, 'Veri Sorumluları Sicilinin tutulmasını sağlamak'tır (22/1-d). A ve E, Kurumun karar organı olan Kurulun (19/4) sicili de kendisinin tuttuğu düşüncesine dayanır; birinci fıkradaki 'Kurulun gözetiminde' ibaresi bu yanılgıyı besler. A ayrıca iki görevin yerini değiştirir. B ve D'deki Cumhurbaşkanlığı sicile ilişkin hükümlerde (16, 22/1-d, 25/4-a) geçmez; istisna yetkisi 16/2'de Kurula verilmiştir. Sicile kayıt için verilen bilgilerde meydana gelen değişiklikler de 'derhâl Başkanlığa bildirilir' (16/4).",
+    "dayanak": "6698 sayılı Kanun md 16/1-2 (karş. md 22/1-d, 25/4-a, 16/4)",
+    "zorluk": "medium",
+    "tur": "dogrudan"
+  }
+]

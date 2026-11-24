@@ -1,0 +1,80 @@
+# cocuk-uyg-p1 — bankadaki en benzer sorular (bütün banka, 7720 soru; eşik 0.15, aday başına 5)
+# skor = aday kök+doğru şık sözcüklerinin (IDF ağırlıklı) ne kadarının o soruda geçtiği. Yüksek skor mükerrer DEMEK DEĞİLDİR; karar gözcünündür.
+
+## cocuk-uyg-p1-01
+ADAY: Çocuk Koruma Kanunu Uygulama Yönetmeliği'ne göre, hakkında soruşturma veya kovuşturma yapılan çocukla ilgili düzenlenen sosyal inceleme raporunda aşağıdakilerden hangisine yer VERİLMEZ?
+ADAY DOĞRU: İşlediği fiilin hukuki anlamını kavrayabilme yeteneğinin olup olmadığı hakkında sonuç değerlendirmesi
+  — skor 0.39 | Polis Mevzuatı / 5395 Sayılı Çocuk Koruma Kanunu | published | id 9bde3d2c-af0c-4e42-adc3-f94c7dfc8906
+    Sosyal inceleme raporu, çocuğun, işlediği fiilin hukukî anlam ve sonuçlarını - - - - ve bu fiille ilgili olarak davranışlarını - - - - yeteneğinin mahkeme tarafından takdirinde göz önünde bulundurulur. 5395 sayılı Çocuk Koruma Kanunu’na göre, bu hükümde boş bırakılan yerlere aşağıdakilerden hangisi sırasıyla getirilmelidir?
+    A) değerlendirme - göz ardı etme
+    B) algılama - yönlendirme  ✔
+    C) algılama - değerlendirme
+    D) göz ardı etme - değerlendirme
+    E) gözden geçirme - değerlendirme
+  — skor 0.29 | Polis Mevzuatı / 5395 Sayılı Çocuk Koruma Kanunu | published | id 6894e641-cde9-4c1e-ae7a-687b2005ba13
+    Cumhuriyet savcısı, on dört yaşındaki bir çocuk hakkında yürüttüğü soruşturmada dosyadaki bilgileri yeterli görmüş ve sosyal inceleme yaptırmadan iddianame düzenlemeyi değerlendirmektedir. 5395 sayılı Çocuk Koruma Kanunu’na göre bu konuda aşağıdakilerden hangisi doğrudur?
+    A) Sosyal inceleme yaptırmayabilir; bu durumda gerekçesini iddianamede gösterir.
+    B) Sosyal inceleme gerektiğinde yaptırılır; yaptırılmaması gerekçe gösterilmesini gerektirmez.
+    C) Çocuk on beş yaşını doldurmadığından savcının sosyal inceleme yaptırması zorunludur.  ✔
+    D) Soruşturma evresinde sosyal inceleme yaptırma yetkisi savcıya değil çocuk hâkimine aittir.
+    E) Sosyal inceleme ancak derhâl tedbir alınmasını gerektiren bir durum varsa yaptırılır.
+  — skor 0.29 | Polis Mevzuatı / 5326 Sayılı Kabahatler Kanunu | published | id af22383b-9f1c-4c44-bd25-ac495ca68ed3
+    Bir soruşturmada Cumhuriyet savcısı, fiilin suç değil kabahat oluşturduğu gerekçesiyle kovuşturmaya yer olmadığı kararı vermiş ve idarî yaptırım kararı uygulamıştır. İlgili, hem kovuşturmaya yer olmadığı kararına itiraz etmiş hem de idarî yaptırım kararına karşı başvuruda bulunmak istemektedir. 5326 sayılı Kabahatler Kanunu'na göre idarî yaptırım kararına karşı başvuru nerede incelenir?
+    A) Her hâlükârda sulh ceza hâkimliğinde
+    B) Kovuşturmaya yer olmadığı kararına yapılan itirazı inceleyen merciide  ✔
+    C) İdare mahkemesinde
+    D) Ağır ceza mahkemesinde
+    E) Kararı veren Cumhuriyet savcısının bağlı olduğu başsavcılıkta
+  — skor 0.28 | Polis Mevzuatı / Adli ve Önleme Aramaları Yönetmeliği | published | id e71cc410-caee-4ede-bfb0-947050124b30
+    I. Hakkında arama işlemi uygulanan kimsenin belge veya kâğıtlarını inceleme yetkisi, kolluk amirine aittir. II. İnceleme sonucu soruşturma veya kovuşturma konusu suça ilişkin olmadığı anlaşılan belge veya kâğıtlar ilgilisine geri verilir. III. Kolluk, arama sırasında ele geçen belge veya kâğıtları, suçla ilgisi olup olmadığını tespit amacıyla inceleyebilir. Adlî ve Önleme Aramaları Yönetmeliği’ne 
+    A) D Y Y
+    B) D D Y
+    C) D D D
+    D) Y D Y  ✔
+    E) Y Y D
+  — skor 0.28 | Ceza Muhakemesi Hukuku / 5271 Sayılı Ceza Muhakemesi Kanunu (CMK) | published | id ddc92b88-9f9b-4224-a55d-83ea13edb858
+    5395 sayılı Çocuk Koruma Yasası'na göre adli süreçteki çocukların muhakemesi hakkında I. Kamu davasının açılmasının ertelenmesine esas alınacak hapis cezasının üst sınırı, 15 yaşını doldurmamış çocuklar bakımından 5 yıl olarak uygulanır. II. Adli süreçteki çocuklar hakkında kovuşturma evresinde Ceza Muhakemesi Yasası'nda sayılan adli kontrol tedbirleri uygulanamaz. III. 15 yaşını doldurmamış çocuk
+    A) I ve II
+    B) I ve III
+    C) II ve III  ✔
+    D) II ve IV
+    E) II, III ve IV
+
+## cocuk-uyg-p1-02
+ADAY: Çocuk Koruma Kanunu Uygulama Yönetmeliği'ne göre, çocuklarla ilgili; I. On iki yaşından küçük çocuğun işlediği iddia olunan suça dair, başka fail bulunup bulunmadığını belirlemek için soruşturma yapılabilir. II. Aileye teslimi gereken çocuğun teslim edileceği kimseler bulunamazsa kolluğun çocuk biri
+ADAY DOĞRU: I ve III
+  — skor 0.22 | Ceza Muhakemesi Hukuku / 5271 Sayılı Ceza Muhakemesi Kanunu (CMK) | published | id a9f318c9-3142-45f9-850a-98a43352c467
+    I. Gecikmesinde sakınca bulunan durumlarda Cumhuriyet savcısının yazılı emriyle de askeri makamların katılımıyla adli kolluk görevlileri tarafından arama yapılabilir. II. Eşya müsaderesinin konusunu oluşturan mal varlığı değerlerini yanında bulunduran ve istem üzerine teslim etmekten kaçınan şüpheli hakkında disiplin hapsine ilişkin hükümler uygulanabilir. III. Hakkında arama işlemi uygulanan kims
+    A) Yalnız II
+    B) Yalnız III
+    C) I ve II
+    D) II ve III  ✔
+    E) I, II ve III
+  — skor 0.20 | Polis Mevzuatı / 5395 Sayılı Çocuk Koruma Kanunu | published | id 56503f88-e117-4cf2-95e4-1489135e2459
+    Çocuk teslimine dair bir ilamın yerine getirilmesi sürecinde yükümlü anneye teslim emri tebliğ edilmiştir. Anne, emirde belirtilen gün ve saatte çocuğu belirlenen yere getirmemiş, haklı bir mazeret de bildirmemiştir. Müdürlük, çocuğu bulunduğu yerden almak için kolluktan yardım istemiştir. 5395 sayılı Çocuk Koruma Kanunu’na göre kolluk birimleri bu talep karşısında nasıl hareket eder?
+    A) Talebi, Cumhuriyet savcısından yazılı emir alındıktan sonra yerine getirir.
+    B) Talebi, aile mahkemesinden ayrı bir zorlama kararı alınmasını bekleyerek yerine getirir.
+    C) Talebi, zor kullanmaksızın, teslim işleminin güvenliğini sağlamakla sınırlı olarak derhâl yerine getirir.
+    D) Talebi, çocuk hâkiminden acil korunma kararı alınmış olması şartıyla yerine getirir.
+    E) Talebi, ayrıca bir emir veya karar aranmaksızın, zor kullanma dâhil derhâl yerine getirir.  ✔
+  — skor 0.19 | Polis Mevzuatı / 5395 Sayılı Çocuk Koruma Kanunu | published | id 5baeb7be-6ac8-4c3c-9283-6ef50c21ca5f
+    I. Çocuk teslimine dair ilamın yerine getirilmesine ilişkin teslim emrine aykırı hareket eden yükümlü II. Çocukla kişisel ilişki kurulmasına dair ilamın yerine getirilmesine ilişkin teslim emrine aykırı hareket eden yükümlü III. Kişisel ilişki kurulması için kendisine çocuk teslim edilen ve ilam veya tedbir kararında belirtilen sürenin bitiminde çocuğu belirlenen yere getirmeyen hak sahibi 5395 sa
+    A) Yalnız I
+    B) Yalnız III
+    C) I ve II
+    D) I ve III  ✔
+    E) I, II ve III
+  — skor 0.18 | Ceza Muhakemesi Hukuku / 5271 Sayılı Ceza Muhakemesi Kanunu (CMK) | published | id a871d3ad-5af6-4718-9b74-7082bba55a4c
+    Koruma tedbiri olan yakalamayla ilgili I. Kolluk görevlileri, tutuklama kararı veya yakalama emri düzenlenmesini gerektiren ve gecikmesinde sakınca bulunan durumlarda Cumhuriyet savcısına veya âmirlerine derhâl başvurma olanağı bulunmadığı takdirde, yakalama yetkisine sahiptirler. II. Kişiye suçu işlerken rastlanması veya suçüstü bir eylemden dolayı izlenen kişinin kaçması olasılığının bulunması v
+    A) Yalnız II  ✔
+    B) Yalnız III
+    C) I ve II
+    D) I ve III
+    E) I, II ve III
+  — skor 0.16 | Polis Mevzuatı / 6284 Sayılı Ailenin Korunması Kanunu | published | id 42ca66e8-b482-4b5d-ba8f-3b1c8b59a7f3
+    I. Hayati tehlikesinin bulunması hâlinde, ilgilinin talebi üzerine veya resen geçici koruma altına alınması II. Kişinin evli olması hâlinde, müşterek yerleşim yerinden ayrı yerleşim yeri belirlenmesi III. Kendisine ve gerekiyorsa beraberindeki çocuklara, bulunduğu yerde veya başka bir yerde uygun barınma yeri sağlanması IV. İşyerinin değiştirilmesi 6284 sayılı Ailenin Korunması ve Kadına Karşı Şid
+    A) I ve III  ✔
+    B) I ve IV
+    C) II ve III
+    D) I, II ve IV
+    E) II, III ve IV

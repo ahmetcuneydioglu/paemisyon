@@ -1,0 +1,117 @@
+# 657-p2 — bankadaki en benzer sorular (bütün banka, 7720 soru; eşik 0.15, aday başına 5)
+# skor = aday kök+doğru şık sözcüklerinin (IDF ağırlıklı) ne kadarının o soruda geçtiği. Yüksek skor mükerrer DEMEK DEĞİLDİR; karar gözcünündür.
+
+## 657-p2-01
+ADAY: 657 sayılı Kanun'a göre, başka bir kamu kurumunun talebi ve kendi kurumunun izniyle yurt dışında geçici süreli olarak görevlendirilen güvenlik görevlileri için görevlendirme süresi (uzatma hariç) en çok ne kadardır?
+ADAY DOĞRU: İki yıl
+  — skor 0.29 | Polis Mevzuatı / 657 Sayılı Devlet Memurları Kanunu | published | id 3a5e07e8-7955-4a78-9144-b2b496f8ffec
+    657 sayılı Kanun'a göre aşağıdaki memurlardan hangisine, eşinin bulunduğu bu durum sebebiyle eşinin görev veya öğrenim süresi içinde aylıksız izin verilemez?
+    A) Eşi dört ay süreyle yurt dışında geçici olarak görevlendirilen memur  ✔
+    B) Eşi bütçe imkânlarıyla yetiştirilmek üzere yurt dışına gönderilen memur
+    C) Eşi sürekli görevle yurt içinde başka bir ile atanan memur
+    D) Eşi kamu sermayeli bir kuruluşta çalışan ve yedi ay süreyle yurt dışında görevlendirilen memur
+    E) Eşine yabancı bir devletin resmî kurumunda görev alması için 77 nci madde uyarınca izin verilen memur
+  — skor 0.29 | Polis Mevzuatı / 657 Sayılı Devlet Memurları Kanunu | published | id 0b86dbb5-b36e-4522-82ec-cbf32390ec7f
+    Eşi yer değiştirme suretiyle başka bir ile atanan memura, eşinin atandığı yerde kurumunun teşkilatı bulunmadığı için talebi üzerine eşinin görev süresiyle sınırlı olarak izin verilmiştir. 657 sayılı Kanun’a göre bu memurun kadrosu, memuriyeti boyunca en çok ne kadar süreyle saklı tutulabilir?
+    A) 1 yıl
+    B) 18 ay
+    C) 3 yıl
+    D) 4 yıl  ✔
+    E) 10 yıl
+  — skor 0.28 | Ceza Muhakemesi Hukuku / 5271 Sayılı Ceza Muhakemesi Kanunu (CMK) | published | id 3b0d7d51-3924-4b0c-ba77-48680b4d50ae
+    15 yıldan fazla hapis cezasını gerektiren bir suçtan dolayı yargılanan sanık (A), mahkeme tarafından tutuklanmıştır. Buna göre (A)'nın tutuklu kalacağı süre, uzatma süresi hariç, en çok ne kadardır?
+    A) 2 yıl  ✔
+    B) 3 yıl
+    C) 5 yıl
+    D) 10 yıl
+    E) Ağır ceza mahkemesinin görevine giren işlerde tutuklulukta üst sınır yoktur.
+  — skor 0.25 | Polis Mevzuatı / 657 Sayılı Devlet Memurları Kanunu | published | id b871d1d3-d044-44b9-a5f5-9f6bd84ea204
+    Memurlarda geçici süreli görevlendirme süresi bir yılda en fazla ne kadardır?
+    A) 1 ay
+    B) 2 ay
+    C) 3 ay
+    D) 5 ay
+    E) 6 ay  ✔
+  — skor 0.25 | Ceza Hukuku / Türk Ceza Kanunu | published | id c5e807ea-c81c-4622-9a57-07149d890fa3
+    I. Kendi altsoyu üzerinde kayyımlık yapabilme II. Vakıf veya dernek yöneticisi olabilme III. Sürekli, süreli veya geçici bir kamu görevinde istihdam edilme IV. Bir kamu kurumunun iznine tabi bir meslek veya sanatı, kendi sorumluluğu altında serbest meslek erbabı veya tacir olarak icra etme 5237 sayılı Türk Ceza Yasası'na göre mahkûm olduğu hapis cezası ertelenen veya denetimli serbestlik tedbiri u
+    A) Yalnız I  ✔
+    B) Yalnız II
+    C) I ve III
+    D) I ve IV
+    E) III ve IV
+
+## 657-p2-02
+ADAY: 657 sayılı Kanun'a göre, “genel afetlere ilişkin konularda amirlerin verdiği görev veya emirleri yapmamak” fiili aşağıdaki disiplin cezalarından hangisini gerektirir?
+ADAY DOĞRU: Devlet memurluğundan çıkarma
+  — skor 0.37 | Polis Mevzuatı / 657 Sayılı Devlet Memurları Kanunu | published | id 0e0e50d3-2dd9-4530-a705-56382a3eaa14
+    657 sayılı Devlet Memurları Kanunu’na göre “eşlerinin, reşit olmayan veya mahcur olan çocuklarının kazanç getiren sürekli faaliyetlerini belirlenen sürede kurumuna bildirmemek” fiili aşağıdaki disiplin cezalarından hangisini gerektirir?
+    A) Uyarma
+    B) Kınama  ✔
+    C) Aylıktan kesme
+    D) Kademe ilerlemesinin durdurulması
+  — skor 0.37 | Polis Mevzuatı / 657 Sayılı Devlet Memurları Kanunu | published | id b0b6a94b-22e2-4525-ad57-592548ed482d
+    657 sayılı Devlet Memurları Kanunu’na göre, “belirlenen durum ve sürelerde mal bildiriminde bulunmamak” fiili aşağıdaki disiplin cezalarından hangisini gerektirir?
+    A) Uyarma
+    B) Kınama
+    C) Aylıktan kesme
+    D) Kademe ilerlemesinin durdurulması  ✔
+    E) Devlet memurluğundan çıkarma
+  — skor 0.37 | Polis Mevzuatı / 657 Sayılı Devlet Memurları Kanunu | published | id 27f55d36-1411-4f03-b1f4-63397eb52747
+    657 sayılı Devlet Memurları Kanunu’na göre, “özürsüz olarak bir veya iki gün göreve gelmemek” fiili aşağıdaki disiplin cezalarından hangisini gerektirir?
+    A) Aylıktan kesme  ✔
+    B) Devlet memurluğundan çıkarma
+    C) Kademe ilerlemesinin durdurulması
+    D) Kınama
+    E) Uyarma
+  — skor 0.37 | Polis Mevzuatı / 657 Sayılı Devlet Memurları Kanunu | published | id c42ea832-1439-4463-af06-f6c9baaa518d
+    657 sayılı Devlet Memurları Kanunu’na göre “Görevin yerine getirilmesinde dil, ırk, cinsiyet, siyasi düşünce, felsefi inanç, din ve mezhep ayrımı yapmak, kişilerin yarar veya zararını hedef tutan davranışlarda bulunmak” fiili aşağıdaki disiplin cezalarından hangisini gerektirir?
+    A) Kınama
+    B) Aylıktan kesme
+    C) Devlet memurluğundan çıkarma
+    D) Kademe ilerlemesinin durdurulması  ✔
+  — skor 0.35 | Polis Mevzuatı / 657 Sayılı Devlet Memurları Kanunu | published | id 95647f6e-6d34-40a3-a0ef-01e295bad47d
+    I. Disiplin amirleri uyarma, kınama ve aylıktan kesme cezalarını soruşturmanın tamamlandığı günden itibaren 15 gün içinde vermek zorundadırlar. II. Kademe ilerlemesinin durdurulması cezasını gerektiren hallerde soruşturma dosyası, kararını bildirmek üzere yetkili disiplin kuruluna 30 gün içinde tevdi edilir. III. Memurluktan çıkarma cezası için disiplin amirleri tarafından yaptırılan soruşturmaya 
+    A) I ve II
+    B) I ve III  ✔
+    C) II ve III
+    D) II ve IV
+    E) I ve IV
+
+## 657-p2-03
+ADAY: 657 sayılı Kanun'a göre, disiplin cezası yargı kararıyla iptal edilen memur hakkında, iptal kararı idareye ulaştığında disiplin ceza zamanaşımı süresi dolmuşsa aşağıdakilerden hangisi doğrudur?
+ADAY DOĞRU: En geç altı ay içinde yeniden disiplin cezası tesis edilebilir.
+  — skor 0.42 | İdare Hukuku / İdare Hukuku | published | id bc911b6a-cb49-4dd6-9e92-d96153e73ae4
+    Daha önce hiç disiplin cezası almamış memur Ayhan'a, özürsüz ve izinsiz olarak bir ay içinde 2 gün göreve geç geldiği gerekçesiyle kademe ilerlemesinin durdurulması cezası veriliyor. Ayhan, bu cezaya karşı iptal davası açıyor. Mahkeme, işlenen fiilin karşılığı 657 sayılı kanuna göre uyarma cezası iken davacıya kademe ilerlemesinin durdurulması cezası verilmesini hukuka aykırı bularak cezayı iptal 
+    A) Yetki
+    B) Şekil
+    C) Sebep
+    D) Konu  ✔
+    E) Amaç
+  — skor 0.24 | Polis Mevzuatı / 657 Sayılı Devlet Memurları Kanunu | published | id 83842d2a-a51e-4424-8d9c-14664e494e36
+    Kurumuna yazılı olarak çekilme isteğinde bulunan bir memur, yerine atanan kimse Kanunda öngörülen süre içinde gelmediği ve yerine vekil de atanmadığı için üstüne haber vererek görevini Kanuna uygun biçimde bırakmıştır; devir ve teslim yükümlülüğü bulunmamaktadır. 657 sayılı Kanun'a göre bu kişi ne kadar süre geçmeden yeniden Devlet memurluğuna alınamaz?
+    A) On gün
+    B) Bir ay
+    C) Üç ay
+    D) Altı ay  ✔
+    E) Bir yıl
+  — skor 0.23 | Polis Mevzuatı / 657 Sayılı Devlet Memurları Kanunu | published | id c6cd3262-728d-454e-8497-b4dc89b8a3e2
+    657 sayılı Devlet Memurları Kanunu'na göre disiplin amirleri tarafından verilen uyarma cezasına karşı itiraz süresi, ceza kararının ilgiliye tebliğ tarihinden itibaren kaç gündür?
+    A) 2
+    B) 3
+    C) 7  ✔
+    D) 15
+    E) 30
+  — skor 0.23 | Polis Mevzuatı / 7068 Sayılı Genel Kolluk Disiplin Hükümleri Kanunu | published | id 49e98860-fb9c-458e-92c4-e8c3e9456a64
+    7068 sayılı Kanun'a göre; meslekten çıkarma cezası ile Devlet memurluğundan çıkarma cezasını gerektiren fiillerde, disiplin soruşturmasına ne kadarlık bir süre içinde başlanmadığı takdirde disiplin cezası verme yetkisi zamanaşımına uğrar?
+    A) On beş gün
+    B) Dört ay
+    C) Altı ay  ✔
+    D) On ay
+    E) Bir yıl
+  — skor 0.22 | Polis Mevzuatı / 6136 Sayılı Ateşli Silahlar ve Bıçaklar Hakkında Kanun | published | id 116d0643-d59a-4858-8154-761b958cad45
+    Silah taşıma ruhsatının süresi dolduğu hâlde ruhsatını altı ay içinde yeniletmeyen (M)'nin ruhsatı iptal edilmiştir. M, ruhsat almak için gerekli şartları hâlen taşımaktadır. 6136 sayılı Kanun’a göre M hakkında aşağıdakilerden hangisi doğrudur?
+    A) Ruhsatı iptal edildiğinden kendisine bir daha silah ruhsatı verilemez.
+    B) İdari para cezası ödemesi kaydıyla kendisine tekrar ruhsat verilebilir.  ✔
+    C) İptal tarihinden itibaren beş yıl geçmedikçe kendisine ruhsat verilemez.
+    D) Tekrar ruhsat, Cumhuriyet başsavcılığının olumlu görüşüyle verilebilir.
+    E) Süreyi kaçırdığı için adlî para cezasıyla cezalandırılır, ruhsat alamaz.

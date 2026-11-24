@@ -1,0 +1,41 @@
+# 6458-p3 — bankadaki en benzer sorular (bütün banka, 7720 soru; eşik 0.15, aday başına 5)
+# skor = aday kök+doğru şık sözcüklerinin (IDF ağırlıklı) ne kadarının o soruda geçtiği. Yüksek skor mükerrer DEMEK DEĞİLDİR; karar gözcünündür.
+
+## 6458-p3-01
+ADAY: 6458 sayılı Kanun'a göre, sınır dışı edilecek yabancının geri gönderme merkezindeki idari gözetim süresi aşağıdaki hâllerden hangisinde uzatılabilir?
+ADAY DOĞRU: Ülkesiyle ilgili doğru bilgi ya da belgeleri vermemesi
+  — skor 0.32 | Polis Mevzuatı / 6458 Sayılı Yabancılar ve Uluslararası Koruma Kanunu | published | id eeac636d-e67d-42e2-b096-4921fcdfa1b5
+    6458 sayılı Kanun'a göre, sınır dışı etmek üzere idari gözetim kararını alan merci ile bu karara karşı başvurulacak merci sırasıyla aşağıdakilerden hangisidir?
+    A) Valilik – İdare mahkemesi
+    B) Valilik – Sulh ceza hâkimi  ✔
+    C) Kolluk – Sulh ceza hâkimi
+    D) Göç İdaresi Başkanlığı – İdare mahkemesi
+    E) Valilik – Göç İdaresi Başkanlığı
+  — skor 0.30 | Polis Mevzuatı / 6458 Sayılı Yabancılar ve Uluslararası Koruma Kanunu | published | id e7f1d193-7d3b-4265-9674-01f31b8a5399
+    Terör örgütü üyesi olduğu değerlendirilerek hakkında sınır dışı etme kararı alınan yabancı, süresi içinde dava açmış olup ülkeden kendi isteğiyle ayrılmak istememektedir. 6458 sayılı Kanun'a göre, bu karar en erken ne zaman yerine getirilebilir?
+    A) Kararın tebliğinden hemen sonra
+    B) Dava açma süresi dolduğunda
+    C) Yürütmeyi durdurma istemi reddedildiğinde
+    D) Yargılama süreci sonuçlandığında  ✔
+    E) Kanun yolu incelemesi tamamlandığında
+  — skor 0.25 | Polis Mevzuatı / 6458 Sayılı Yabancılar ve Uluslararası Koruma Kanunu | published | id f541367c-2319-47e5-be1c-0457dcb97ae3
+    6458 sayılı Kanun'a göre, ülkesine gönderilirse ülke genelindeki silahlı çatışmada ayrım gözetmeyen şiddet nedeniyle şahsına yönelik ciddi tehditle karşılaşacak yabancıya statü belirleme işlemleri sonrasında hangi statü verilir?
+    A) Mülteci
+    B) Geçici koruma
+    C) Şartlı mülteci
+    D) İnsani ikamet izni
+    E) İkincil koruma  ✔
+  — skor 0.21 | Polis Mevzuatı / 6458 Sayılı Yabancılar ve Uluslararası Koruma Kanunu | published | id ca4b3c11-7bd1-41f4-b849-b6965c072132
+    6458 sayılı Kanun'a göre, davete uymadığı için kolluk tarafından getirilen yabancıyla ilgili aşağıdakilerden hangisi doğrudur?
+    A) Kendisinden bilgi alma süresi dört saati geçemez.  ✔
+    B) Yirmi dört saate kadar gözaltında tutulabilir.
+    C) Getirilmesi Cumhuriyet savcısının talimatına bağlıdır.
+    D) Kendisine bildirimde bulunma yükümlülüğü getirilir.
+    E) Getirilebilmesi için hakkında sınır dışı etme kararı alınmış olması gerekir.
+  — skor 0.21 | Polis Mevzuatı / 6458 Sayılı Yabancılar ve Uluslararası Koruma Kanunu | published | id a77e6df5-a8ae-497a-b5e8-c910fb7daf8d
+    6458 sayılı Kanun'a göre, “sınır dışı etme kararı alınmayacaklar” ile ilgili aşağıdakilerden hangisi YANLIŞTIR?
+    A) Sınır dışı edileceği ülkede işkenceye maruz kalacağı konusunda ciddi emare bulunanlar hakkında karar alınmaz.
+    B) Hayati tehlike arz eden hastalığı için tedavisi devam ederken sınır dışı edileceği ülkede tedavi imkânı bulunmayanlar hakkında karar alınmaz.
+    C) Psikolojik, fiziksel veya cinsel şiddet mağdurları hakkında mağdur destek süreci tamamlanıncaya kadar karar alınmaz.  ✔
+    D) Ciddi sağlık sorunları, yaş ve hamilelik durumu nedeniyle seyahat etmesi riskli görülenler hakkında karar alınmaz.
+    E) Bu kapsamdaki yabancılardan belli bir adreste ikamet etmeleri istenebilir.

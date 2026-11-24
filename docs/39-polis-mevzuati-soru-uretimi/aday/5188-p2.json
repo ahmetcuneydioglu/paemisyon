@@ -1,0 +1,87 @@
+[
+  {
+    "id": "5188-p2-01",
+    "articleNo": "14",
+    "kok": "I. Güvenlikle ilgili bir meslek yüksekokulu bölümünden mezun olanlar silah eğitiminden muaftır.\nII. Genel kolluk kuvvetlerinden emekli olanlar, silahlı veya silahsız görev için öngörülen öğrenim şartından muaftır.\nIII. Milli İstihbarat Teşkilatında üç yıl çalıştıktan sonra kendi isteğiyle ayrılanlar özel güvenlik temel eğitiminden muaftır.\n5188 sayılı Kanun'a göre, numaralanmış ifadelerden hangileri doğrudur?",
+    "siklar": {
+      "A": "Yalnız I",
+      "B": "Yalnız II",
+      "C": "I ve II",
+      "D": "I ve III",
+      "E": "II ve III"
+    },
+    "dogru": "B",
+    "aciklama": "Muafiyetler 14 üncü maddenin birinci fıkrasında iki ayrı grup için ve farklı genişlikte düzenlenmiştir. I. ifade yanlıştır. Yükseköğretim kurumlarının güvenlikle ilgili fakülte ve meslek yüksek okullarından mezun olanlar ile fakülte veya meslek yüksek okullarının güvenlikle ilgili bölümlerinden mezun olanlarda 'SİLAH EĞİTİMİ DIŞINDA özel güvenlik temel eğitimi şartı aranmaz.' Temel eğitim 'teorik ve pratik eğitim ile silah eğitiminden' oluştuğu için bu mezunlar silah eğitimini yine alır; ifade, muafiyetin dışında bırakılan kısmı muafiyetin konusu yapmıştır. II. ifade doğrudur: 'Genel kolluk kuvvetlerinden ve Milli İstihbarat Teşkilatından emekli olanlar ile en az beş yıl bu görevlerde çalıştıktan sonra kendi istekleriyle görevlerinden ayrılmış olanlarda, özel güvenlik temel eğitimi şartı VE Kanunun 10 uncu maddesinin birinci fıkrasının (b) bendinde belirtilen EĞİTİM ŞARTI aranmaz.' (b) bendi silahlı ve silahsız görevliler için aranacak öğrenim düzeyini belirler; emekli kolluk mensubunda bu şart da aranmaz. III. ifade yanlıştır. Beş yıllık süre, emekli olmadan kendi isteğiyle ayrılanlar için konmuştur: muafiyet bu görevlerde EN AZ BEŞ YIL çalışmış olmaya bağlıdır; üç yıl çalışıp ayrılan kişi bundan yararlanamaz. Kolluk ve Milli İstihbarat Teşkilatı grubunun muafiyeti temel eğitimi ve öğrenim şartını birlikte kapsar; güvenlikle ilgili fakülte, yüksekokul ve bölüm mezunlarınınki temel eğitimle sınırlıdır ve silah eğitimini dışarıda bırakır. İki grubu tek muafiyet gibi ezberleyen aday I ve II'yi işaretler. Doğru cevap yalnız II'dir.",
+    "dayanak": "5188 sayılı Kanun md 14/1 (karş. md 10/1-b)",
+    "zorluk": "hard",
+    "tur": "onerme"
+  },
+  {
+    "id": "5188-p2-02",
+    "articleNo": "12",
+    "kok": "5188 sayılı Kanun'a göre, özel güvenlik görevlisinin Kanunda sayılan yetkilerini kullanabilmesi aşağıdakilerden hangisine bağlıdır?",
+    "siklar": {
+      "A": "Üniforma giymiş olmasına",
+      "B": "Güvenlik sorumlusunun talimatına",
+      "C": "İşverenin yazılı görevlendirmesine",
+      "D": "Üzerinde kimlik kartı bulunmasına",
+      "E": "Silahlı olarak görevlendirilmesine"
+    },
+    "dogru": "D",
+    "aciklama": "Yetkilerin kullanılması 12 nci maddenin ikinci fıkrasında kimlik kartına bağlanmıştır. Fıkraya göre kimlik kartı görev alanı ve süresi içerisinde herkes tarafından görülebilecek şekilde yakaya takılır ve 'ÜZERİNDE KİMLİK KARTI OLMAYAN özel güvenlik görevlileri Kanunun 7 nci maddesinde sayılan yetkileri KULLANAMAZLAR.' Kart böylece yetki kullanmanın şartlarından biridir; kartı üzerinde bulunmayan görevli kimlik sorma, dedektörle arama ya da X-ray cihazından geçirme gibi yetkilerin hiçbirini kullanamaz. Kartta görevlinin adı ve soyadı ile silahlı ya da silahsız olduğu belirtilir. Üniforma 13 üncü maddede görev alanı içinde ve süresince uyulacak bir kıyafet kuralıdır; Kanun yetkilerin kullanılmasını üniformaya bağlamamıştır. İki hükmü karıştıran aday üniformayı işaretler. Güvenlik sorumlusu 5 inci maddeye göre belirli yerlerde belirlenmesi gereken kişidir; görevlinin yetki kullanması onun talimatına bağlanmamıştır. İşverenin yazılı görevlendirmesini yetki şartı sayan bir hüküm de yoktur. Silahlı ya da silahsız olmak kimlik kartında yazılan bir niteliktir; 7 nci maddedeki yetkiler silahlı görevlilere ayrılmamıştır.",
+    "dayanak": "5188 sayılı Kanun md 12/2 (karş. md 12/1, 13)",
+    "zorluk": "easy",
+    "tur": "dogrudan"
+  },
+  {
+    "id": "5188-p2-03",
+    "articleNo": "11",
+    "kok": "5188 sayılı Kanun'a göre, özel güvenlik alanında çalışacaklar hakkında yapılan güvenlik soruşturması ve verilen “çalışma izni” ile ilgili aşağıdakilerden hangisi YANLIŞTIR?",
+    "siklar": {
+      "A": "Şirket kurucu ve yöneticileri hakkında da güvenlik soruşturması yapılır.",
+      "B": "Güvenlik soruşturması ve arşiv araştırması bir ay içinde tamamlanır.",
+      "C": "Güvenlik soruşturması ve arşiv araştırması her kimlik verilmesi veya ihtiyaç duyulması hâlinde yenilenir.",
+      "D": "Çalışma iznini valilik verir.",
+      "E": "Şartları sonradan kaybeden görevlinin kimliği, eksiklik iki ay içinde giderilmezse iptal edilir."
+    },
+    "dogru": "E",
+    "aciklama": "Çalışma izni ve güvenlik soruşturması 11 inci maddededir. Yanlış ifade E'dir. Şartların sonradan kaybedilmesinin sonucunu dördüncü fıkra belirler: 'Yönetici veya özel güvenlik görevlisi olabilme şartlarını taşımadığı veya bu şartlardan herhangi birini SONRADAN KAYBETTİĞİ tespit edilenlerin KİMLİĞİ İPTAL EDİLİR.' İptal, şart kaybının tespitine bağlanmıştır; fıkra görevliye eksikliği gidermesi için süre tanımaz. İki ay Kanunda 5 inci maddenin beşinci fıkrasında geçer ve hem öznesi hem sonucu farklıdır: 'Kurucu, temsilci ve yöneticilerde aranan şartların kaybedilmesi halinde iki ay içinde eksiklik giderilmediği veya bu kurucu, temsilci ve yöneticiler değiştirilmediği takdirde FAALİYET İZNİ İPTAL EDİLİR.' Bu süre şirketin kurucu, temsilci ve yöneticileri içindir, sonucu da şirketin faaliyet izninin iptalidir. Şirket hükmündeki süreyi görevliye aktaran ifade bu yüzden yanlıştır. Dört doğru ifadenin dayanağı 11 inci maddenin birinci fıkrasıdır. Güvenlik soruşturması ve arşiv araştırması yalnız görevliler için yapılmaz; özel güvenlik şirketlerinde, alarm izleme merkezlerinde ve özel güvenlik eğitimi verecek kurumlarda kurucu ve/veya yönetici olarak çalışacaklar hakkında da valilikçe yapılır. İzin makamını fıkra açıkça gösterir: 'Soruşturma sonucu olumlu olanlara … valilikçe çalışma izni verilir.' Süre ve yenileme de aynı fıkradadır: 'Güvenlik soruşturması ve arşiv araştırması BİR AY içinde tamamlanır. Güvenlik soruşturması ve arşiv araştırması her kimlik verilmesi veya ihtiyaç duyulması halinde YENİLENİR.'",
+    "dayanak": "5188 sayılı Kanun md 11/1, 11/4 (karş. md 5/5)",
+    "zorluk": "medium",
+    "tur": "onerme"
+  },
+  {
+    "id": "5188-p2-04",
+    "articleNo": "15",
+    "kok": "5188 sayılı Kanun'a göre, görevini yaparken yaralanan özel güvenlik görevlisine 2330 sayılı Nakdi Tazminat ve Aylık Bağlanması Hakkında Kanun'daki tazminat miktarının ödenmesi hangi hâlde mümkündür?",
+    "siklar": {
+      "A": "Görevli silahlı olarak çalışıyorsa",
+      "B": "Yaralanma görevliyi engelli hâle getirmişse",
+      "C": "Görevli bir kamu kurum veya kuruluşunda çalışıyorsa",
+      "D": "İş sözleşmesinde tazminat miktarı belirlenmemişse",
+      "E": "Mahkeme genel hükümlere göre daha yüksek tazminata hükmetmişse"
+    },
+    "dogru": "C",
+    "aciklama": "Tazminat 15 inci maddede iki ayrı kurala bağlanmıştır. Birinci fıkraya göre görevleri yerine getirirken yaralanan, engelli hâle gelen özel güvenlik görevlilerine veya ölen görevlinin kanunî mirasçılarına 'iş sözleşmesinde veya toplu iş sözleşmesinde belirlenen miktar ve esaslar çerçevesinde' tazminat ödenir. 2330 sayılı Kanun yalnız üçüncü fıkrada anılır: 'KAMU KURUM VE KURULUŞLARINDA bu Kanunda yazılı görevleri yerine getirirken yaralanan, engelli hâle gelen özel güvenlik görevlilerine … iş sözleşmesi, toplu iş sözleşmesi veya 2330 sayılı … Kanun hükümlerinde belirtilen tazminat miktarlarından HANGİSİ YÜKSEK İSE o miktar ödenir.' 2330 sayılı Kanun'daki miktarı devreye sokan unsur, görevlinin kamu kurum ve kuruluşlarında görev yapmasıdır; bu hâlde de o miktar ancak öteki ikisinden yüksekse ödenir. Yaralanmanın ağırlığı ölçüt değildir: yaralanma, engellilik ve ölüm iki fıkrada da birlikte sayılır. Mahkemenin genel hükümlere göre daha yüksek tazminata hükmetmesi birinci fıkranın ikinci cümlesinde ayrıca düzenlenmiştir; sonucu 2330 sayılı Kanun'a gidilmesi değil, iş sözleşmesine veya toplu iş sözleşmesine dayanılarak ödenen tutarların mahsubudur. Madde tazminatı görevlinin silahlı olup olmamasına göre ayırmaz; iş sözleşmesinde miktar belirlenmemiş olmasını da 2330 sayılı Kanun'a bağlamaz. İkinci fıkraya göre birinci fıkra gereğince ödenecek tazminat, 4857 sayılı İş Kanunu kapsamında ödenmesi gerekecek diğer tazminatlarla ilişkilendirilmez.",
+    "dayanak": "5188 sayılı Kanun md 15/3 (karş. md 15/1, 15/2)",
+    "zorluk": "medium",
+    "tur": "dogrudan"
+  },
+  {
+    "id": "5188-p2-05",
+    "articleNo": "7",
+    "kok": "5188 sayılı Kanun'a göre, özel güvenlik görevlisinin aramalar sırasında rastladığı ve delil olabilecek bir eşyayı emanete alabilmesinin şartı aşağıdakilerden hangisidir?",
+    "siklar": {
+      "A": "Genel kolluk kuvvetlerine derhal bildirilmesi",
+      "B": "Eşya sahibine tutanakla bildirilmesi",
+      "C": "Genel kolluk amirinin izin vermesi",
+      "D": "Cumhuriyet savcısının onay vermesi",
+      "E": "Aynı gün içinde valiliğe yazılı olarak bildirilmesi"
+    },
+    "dogru": "A",
+    "aciklama": "Yetki 7 nci maddenin (g) bendindedir ve bir şarta bağlanmıştır: 'Genel kolluk kuvvetlerine DERHAL BİLDİRMEK ŞARTIYLA, aramalar sırasında suç teşkil eden veya delil olabilecek ya da suç teşkil etmemekle birlikte tehlike doğurabilecek eşyayı emanete alma.' Şart bentte sayılan üç tür eşya için de geçerlidir: görevli eşyayı emanete alabilir, ancak durumu derhal genel kolluğa bildirmek zorundadır. Bent bir bildirim şartı koyar, izin ya da onay aramaz. Genel kolluk amirinin izni bu nedenle şart değildir; bentte kolluk amirinden izin alınması değil, genel kolluğa bildirimde bulunulması öngörülmüştür. Cumhuriyet savcısının onayı ve eşya sahibine tutanakla bildirim de bentte yer almaz. Aynı gün içinde valiliğe yazılı bildirim kalıbı 5 inci maddeden gelir ve başka bir işlem içindir: özel güvenlik şirketlerince üçüncü kişi, kurum ve kuruluşlara sağlanacak koruma ve güvenlik hizmetleri 'hizmetin başladığı gün mesai saati bitimine kadar ilgili valiliğe yazılı olarak bildirilir.' Bu, şirketin hizmet bildirimidir; (g) bendinde valiliğe bildirim yoktur. Emanete alma yetkilerinden derhal bildirim şartı yalnız (g) bendinde yer alır; aynı maddenin (h) bendindeki terk edilmiş ve bulunmuş eşyayı emanete alma yetkisi böyle bir şarta bağlanmamıştır.",
+    "dayanak": "5188 sayılı Kanun md 7/g (karş. md 7/h, 5/6)",
+    "zorluk": "medium",
+    "tur": "dogrudan"
+  }
+]

@@ -262,5 +262,264 @@
     }
    }
   }
+ },
+ {
+  "sinif": "bozuk",
+  "gerekce": "6458 md 102/2 (soru bff6766d, apart isletmecisi): kok 'ulkede kanunsuz olarak bulunan yabancilara ucret karsiligi barinma imkani' diyor ama failin bilip bilmedigini vermiyor. 102/2 yalniz 'kanunlarda ayrica suc olarak tanimlanmayan eylemler' icin uygulanir; Yargitay CGK 22/11/2023, E.2020/270, K.2023/620 gerekcesi kacak olduklarini bildigi gocmenlere rayic bedelle kiraya vermeyi TCK 79 sayiyor. Fail bildiyse A ('yalnizca gocmen kacakciligi sucu'), bilmediyse B dogru: cevap kokte olmayan olguya bagli. Aciklama ayrica suc ile kabahatin birlikte uygulanacagini ogretiyordu (5326 md 15/3'e aykiri). Iki curutucu bolundu (savci: cekilmeli, savunucu: aciklama duzeltilmeli); bagimsiz denetci aciklamanin soruyu kurtaramayacagini, tek yolun koku degistirmek oldugunu yazdi. Hicbir denemede kullanilmamis. Kullanici karari: 'Evet, uygula'.",
+  "arsivlenen": {
+   "id": "f8dcf576-473e-42c6-a49d-c6ab7ff9ac03",
+   "questionId": "bff6766d-8d5f-4f3a-86d4-fc7bdbad4524",
+   "stem": "Bir apart işletmecisi, ülkede kanunsuz olarak bulunan yabancılara ücret karşılığı barınma imkânı sağladığı tespit edilmiştir. 6458 sayılı Kanun'un 102 nci maddesi uygulamasına göre bu kişi hakkında aşağıdakilerden hangisi doğrudur?",
+   "explanation": "6458 sayılı Kanun m.102/2'ye göre kanunsuz olarak yabancıların ülkeye girmesine, çıkmasına, seyahatine veya barınmasına imkân sağlayanlara kolluk tarafından idarî para cezası verilir; takvim yılı içinde tekrarda ceza yarı oranında artırılır (m.102/3); verilen ceza tebliğ tarihinden itibaren otuz gün içinde ödenir (m.102/5). Fiilin ayrıca TCK m.79 göçmen kaçakçılığı boyutuna ulaşması hâlinde suç hükümleri saklıdır; ancak idarî boyut m.102'de düzenlenmiştir.",
+   "sourceLabel": "Özgün soru · 6458 SK m.102 · 2026 İPC uygulama tablosu",
+   "options": [
+    {
+     "label": "A",
+     "text": "Fiil yalnızca göçmen kaçakçılığı suçunu oluşturur; idarî yaptırım uygulanamaz",
+     "isCorrect": false
+    },
+    {
+     "label": "B",
+     "text": "Kanunsuz olarak yabancıların barınmasına imkân sağlamak m.102 kapsamında kabahattir; kolluk tarafından idarî para cezası verilir",
+     "isCorrect": true
+    },
+    {
+     "label": "C",
+     "text": "Yalnızca yabancıya ceza verilir; barındıran hakkında işlem yapılamaz",
+     "isCorrect": false
+    },
+    {
+     "label": "D",
+     "text": "Ceza mülkî amir tarafından verilir ve işyeri süresiz kapatılır",
+     "isCorrect": false
+    },
+    {
+     "label": "E",
+     "text": "Bu fiil için öngörülen tek yaptırım sınır dışı etmedir",
+     "isCorrect": false
+    }
+   ],
+   "question": {
+    "articleNo": "102",
+    "topic": {
+     "name": "6458 Sayılı Yabancılar ve Uluslararası Koruma Kanunu"
+    }
+   }
+  }
+ },
+ {
+  "sinif": "bozuk",
+  "gerekce": "6f5938d5 ('hangisinde cezayı vermeye kolluk görevlileri yetkili değildir', anahtar C, 7258 md 5/1-d): B ('Hususi aracın sürücü koltuğunda sigara içene ceza verilmesi (4207 SK m.5)') kolluk yetkisini metne dayandıramıyor. 4207 md 5/1 bu fiili yalnız 5326 md 39'a gönderir; md 39 hususi araç için makam saymaz; 5326 md 22/1 yetkiyi kanunda açıkça gösterilen makama, 22/2 açık hüküm yoksa ilgili kurumun en üst amirine verir. B de kökü karşılayan ikinci cevap. Aynı önerme 3dc788e5'te kullanıcı kararıyla arşivlendi (23 Kas 2026). İki bağımsız çürütücü ÇEKİLMELİ. Hiçbir denemede kullanılmamış.",
+  "arsivlenen": {
+   "id": "78a8809b-e6f6-4d7a-96eb-fcf19ba8fa13",
+   "questionId": "6f5938d5-6f47-4b68-9bd2-f0ea06e8aa96",
+   "stem": "2026 idarî para cezası uygulamasında, aşağıdaki fiillerden hangisinde cezayı vermeye kolluk görevlileri yetkili değildir?",
+   "explanation": "7258 sayılı Kanun m.5/1-d'deki spor müsabakalarına dayalı bahis veya şans oyunu OYNAMA kabahatinde idarî para cezasını MÜLKÎ AMİR verir; kolluk yalnızca tespit ve tutanak düzenler. Diğer dört kalemde ceza doğrudan kolluk tarafından verilir. Yasa dışı bahis oynatmak ise kabahat değil, aynı Kanun'da suçtur — oynayan/oynatan ayrımıyla birlikte hatırlanmalıdır.",
+   "sourceLabel": "Özgün soru · 7258 SK m.5 · 2026 İPC uygulama tablosu",
+   "options": [
+    {
+     "label": "A",
+     "text": "Türkiye'ye yasa dışı giren yabancıya ceza verilmesi (6458 SK m.102)",
+     "isCorrect": false
+    },
+    {
+     "label": "B",
+     "text": "Hususi aracın sürücü koltuğunda sigara içene ceza verilmesi (4207 SK m.5)",
+     "isCorrect": false
+    },
+    {
+     "label": "C",
+     "text": "Spor müsabakalarına dayalı yasa dışı bahis oynayana ceza verilmesi (7258 SK m.5)",
+     "isCorrect": true
+    },
+    {
+     "label": "D",
+     "text": "Havalı tüfeği meydanda görünür şekilde taşıyana ceza verilmesi (5326 SK m.43)",
+     "isCorrect": false
+    },
+    {
+     "label": "E",
+     "text": "Kumar oynayana ceza verilmesi (5326 SK m.34)",
+     "isCorrect": false
+    }
+   ],
+   "question": {
+    "articleNo": null,
+    "topic": {
+     "name": "5326 Sayılı Kabahatler Kanunu"
+    }
+   }
+  }
+ },
+ {
+  "sinif": "bozuk",
+  "gerekce": "bc821785 (1774, dört öncül, anahtar D 'I, II, III ve IV'): III ('Kimliğini resmî belgeyle ispat edemeyen kimseleri konut ve işyerinde barındırmak veya çalıştırmak yasaktır') md 9'a aykırı: kanun 'tesislerinde barındıramaz, konut ve işyerlerinde çalıştıramaz' der (Uygulama Yönetmeliği md 5 de aynı); konutta barındırma yasağı yok. III yanlış olunca D hiçbir okumada doğru değil; 'I, II ve IV' şıkkı yok, I de dar okunursa doğru cevap C. İki bağımsız çürütücü ÇEKİLMELİ. Hiçbir denemede kullanılmamış.",
+  "arsivlenen": {
+   "id": "5f5e9247-d98b-485f-a427-a845353f9a3b",
+   "questionId": "bc821785-07a4-4c9a-a185-9af3410b154d",
+   "stem": "1774 sayılı Kimlik Bildirme Kanunu uygulamasına göre;\nI. Konaklama tesisi dışındaki işyerlerinde çalışanların kimlik bildirimi 3 gün içinde yapılır.\nII. Aile reisleri, konutlarında 30 günden fazla kalan misafirleri 3 gün içinde kolluğa bildirir.\nIII. Kimliğini resmî belgeyle ispat edemeyen kimseleri konut ve işyerinde barındırmak veya çalıştırmak yasaktır.\nIV. İzinsiz sabahçı kahvesi işletmek bu Kanun kapsamında idarî para cezası gerektirir.\nifadelerinden hangileri doğrudur?",
+   "explanation": "Dördü de 1774 sayılı Kanun m.17 kapsamındaki yükümlülük ve yasaklardandır: işyeri/yurt benzeri yerlerde çalışan-barınan-ayrılanların 3 gün içinde bildirimi, konutta 30 günden fazla kalan misafirlerin veya mevsimlik göçerlerin 3 gün içinde bildirimi, kimliğini resmî belgeyle ispat edemeyenleri barındırma-çalıştırma yasağı ve izinsiz sabahçı kahvesi işletme yasağı. Tümünde idarî para cezasını mülkî amir verir.",
+   "sourceLabel": "Özgün soru · 1774 SK m.17 · 2026 İPC uygulama tablosu",
+   "options": [
+    {
+     "label": "A",
+     "text": "Yalnız I ve II",
+     "isCorrect": false
+    },
+    {
+     "label": "B",
+     "text": "Yalnız I, II ve III",
+     "isCorrect": false
+    },
+    {
+     "label": "C",
+     "text": "Yalnız II ve IV",
+     "isCorrect": false
+    },
+    {
+     "label": "D",
+     "text": "I, II, III ve IV",
+     "isCorrect": true
+    },
+    {
+     "label": "E",
+     "text": "Yalnız III ve IV",
+     "isCorrect": false
+    }
+   ],
+   "question": {
+    "articleNo": "17",
+    "topic": {
+     "name": "1774 Sayılı Kimlik Bildirme Kanunu"
+    }
+   }
+  }
+ },
+ {
+  "sinif": "eskime",
+  "gerekce": "02065cf0 (İnsan Hakları; JGK Dış Misyon 2023; dört şıklı): kök 5395 sayılı Kanun'daki tanımı soruyor, anahtar 'Suça sürüklenen çocuk'. Kanun'un güncel metninde bu terim yok; tanım 'adli süreçteki çocuk' adını taşıyor. İşaretli cevap yürürlükteki metne uymuyor; kök onarılırsa soru başka bir soru olur. Güncel terimi ölçen soru bankada var. Kullanıcı kararı (23 Kas 2026: 'Kesinleri uygula').",
+  "arsivlenen": {
+   "id": "0e510d14-5472-4c28-8a33-4c5fc2c62d78",
+   "questionId": "02065cf0-3601-4cad-aa4b-cd7a72a13c0e",
+   "stem": "5395 sayılı Çocuk Koruma Kanunu’nda “Kanunlarda suç olarak tanımlanan bir fiili işlediği iddiası ile hakkında soruşturma veya kovuşturma yapılan ya da işlediği fiilden dolayı hakkında güvenlik tedbirine karar verilen çocuk.” şeklinde tanımlanan kavram aşağıdakilerden hangisidir?",
+   "explanation": null,
+   "sourceLabel": "30 EYLÜL 2023 JGK DIŞ MİSYON KORUMA SINAVI",
+   "options": [
+    {
+     "label": "A",
+     "text": "Kanuni mümessil",
+     "isCorrect": false
+    },
+    {
+     "label": "B",
+     "text": "Suça sürüklenen çocuk",
+     "isCorrect": true
+    },
+    {
+     "label": "C",
+     "text": "Çocuğun fiziksel istismarı",
+     "isCorrect": false
+    },
+    {
+     "label": "D",
+     "text": "Korunma ihtiyacı olan çocuk",
+     "isCorrect": false
+    }
+   ],
+   "question": {
+    "articleNo": null,
+    "topic": {
+     "name": "İnsan Hakları"
+    }
+   }
+  }
+ },
+ {
+  "sinif": "yigilma",
+  "gerekce": "e7476f0d (PVSK Ek 1; Kaymakamlık 2022 Çeşme tiyatro sorusu): aynı soru 85db27e6 olarak da yayında (aynı kök, aynı anahtar C; yalnız E şıkkı farklı aktarılmış: '72 saat' ↔ '48 saat'). Madde etiketi olan 85db27e6 bırakıldı, etiketsiz kopya arşivlendi. Kullanıcı kararı (23 Kas 2026).",
+  "arsivlenen": {
+   "id": "a6197563-dfdc-4f4c-a25a-f068f42cd55b",
+   "questionId": "e7476f0d-600b-4ea3-ac7f-55fc25e9ef09",
+   "stem": "2559 sayılı Polis Vazife ve Salâhiyet Kanunu’na göre; İzmir’in Çeşme ilçesinde umuma açık bir yerde oyun sahnelemek isteyen bir tiyatro grubu en az kaç saat önce hangi merciye yazılı bildirimde bulunmalıdır?\n\nSÜRE — MERCİ",
+   "explanation": "2559 sayılı Polis Vazife ve Salâhiyet Kanunu'nun ek 1. maddesi, umumi veya umuma açık yerler ile umuma açık yer niteliğindeki ulaşım araçlarında oyun ve temsil verecek gerçek kişi ve toplulukların mahallin en büyük mülki amirine en az kırk sekiz saat önceden yazılı bildirimde bulunmasını arar. İlçe genel idaresinin başı ve mercii kaymakam olduğundan (5442 sayılı İl İdaresi Kanunu md 27), ilçe sınırları içindeki bir gösteri için bildirim kaymakamlığa yapılır; valilik ya da ilçe emniyet müdürlüğü bu bildirimin muhatabı değildir. Yetmiş iki saatlik sürenin madde metninde karşılığı yoktur.",
+   "sourceLabel": "2022 Kaymakamlık Sınavı (çıkmış sorular)",
+   "options": [
+    {
+     "label": "A",
+     "text": "48 saat önce — İzmir Valiliği",
+     "isCorrect": false
+    },
+    {
+     "label": "B",
+     "text": "72 saat önce — İzmir Valiliği",
+     "isCorrect": false
+    },
+    {
+     "label": "C",
+     "text": "48 saat önce — Çeşme Kaymakamlığı",
+     "isCorrect": true
+    },
+    {
+     "label": "D",
+     "text": "72 saat önce — Çeşme Kaymakamlığı",
+     "isCorrect": false
+    },
+    {
+     "label": "E",
+     "text": "72 saat önce — Çeşme İlçe Emniyet Müdürlüğü",
+     "isCorrect": false
+    }
+   ],
+   "question": {
+    "articleNo": null,
+    "topic": {
+     "name": "2559 Sayılı Polis Vazife ve Salâhiyet Kanunu (PVSK)"
+    }
+   }
+  }
+ },
+ {
+  "sinif": "yigilma",
+  "gerekce": "0820b062 (CMK; 'çocuk mağdurların dinlenmesi … yanlıştır'): aynı soru d7c9d7ec olarak da yayında (kök ve beş şık tek sözcük farkıyla aynı, anahtar D). Denemede kullanılmış olan d7c9d7ec bırakıldı, kullanılmamış kopya arşivlendi. Kullanıcı kararı (23 Kas 2026).",
+  "arsivlenen": {
+   "id": "a3d01ade-4ef8-43dc-8c22-1146b7594b3e",
+   "questionId": "0820b062-ebe9-46e8-be08-ef31dedd92ec",
+   "stem": "Aşağıdakilerden hangisi çocuk mağdurların dinlenmesiyle ilgili olarak yanlıştır?",
+   "explanation": "Çocuk Koruma Kanunu Uygulama Yönetmeliği'nin 13. maddesinin birinci fıkrasındaki kapalı duruşma ve kapalı hüküm açıklama kuralı, çocuğun SANIK (suça sürüklenen çocuk) olduğu davalarla ilgilidir; aynı maddenin dördüncü fıkrası, mağdur çocuğun tanık olarak dinlenmesinin CMK'nın tanıklığa ilişkin genel hükümlerine tabi olduğunu ayrıca belirtir. Dolayısıyla bir yetişkin sanığın yargılandığı davada mağdurun çocuk olması, duruşmanın mutlaka ve istisnasız kapalı yapılmasını gerektirmez; bu konudaki kapalılık kararı CMK m.182/2'de belirtilen koşullara bağlı olarak mahkemenin takdirine bırakılmıştır. Sıkça karıştırılan komşu kural, çocuk SANIĞIN yargılandığı davada hükmün mutlaka kapalı duruşmada açıklanmasıdır (Yönetmelik m.13/1) — bu kural sanık çocuk için geçerlidir, mağdur çocuk için değil.",
+   "sourceLabel": null,
+   "options": [
+    {
+     "label": "A",
+     "text": "Zorunluluk arz eden hâller dışında soruşturma ve kovuşturmada tanık olarak yalnız bir defa dinlenebilir.",
+     "isCorrect": false
+    },
+    {
+     "label": "B",
+     "text": "Tanık sıfatıyla dinlenirken yanlarında bir uzmanın bulundurulması gerekir.",
+     "isCorrect": false
+    },
+    {
+     "label": "C",
+     "text": "Tanıklıkları sırasındaki görüntü veya seslerinin kayda alınması zorunludur.",
+     "isCorrect": false
+    },
+    {
+     "label": "D",
+     "text": "CMK’ye göre mağdur olarak dinlenen çocuğun duruşması mutlaka gizli olarak yapılır.",
+     "isCorrect": true
+    },
+    {
+     "label": "E",
+     "text": "Çocuk sanığın yargılandığı davada hüküm kapalı duruşmada açıklanır.",
+     "isCorrect": false
+    }
+   ],
+   "question": {
+    "articleNo": null,
+    "topic": {
+     "name": "5271 Sayılı Ceza Muhakemesi Kanunu (CMK)"
+    }
+   }
+  }
  }
 ]

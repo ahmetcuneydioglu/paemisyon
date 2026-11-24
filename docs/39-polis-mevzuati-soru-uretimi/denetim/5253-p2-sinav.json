@@ -1,0 +1,26 @@
+[
+  {
+    "id": "5253-p2-01",
+    "karar": "RED",
+    "korCevap": "E",
+    "metinCevap": "E",
+    "sinavDegeri": 3,
+    "ayirtEdicilik": 2,
+    "dogallik": 4,
+    "zorluk": "easy",
+    "gerekce": "TUR 2: Kör çözümde md 3'ü hatırlayarak A, B, C'yi doğru saydım; D ve E'nin dayanağını (26/A/1, 33/1) bilmiyordum ve E'ye 'toptan ceza muafiyeti olmaz' sağduyusuyla vardım (bilgi %45, salt şık %50). metinCevap E = anahtar; soru hukuken temiz ve doğal. Ancak ölçtüğü ileri sürülen md 33/1 bilgisi gerekmeden çözülüyor: md 3'ü bilen hazırlıklı aday için soru D–E ikilisine iner ve yanlış önerme, kuralın düz olumsuzlaması olduğu için 'tek aşırı/mutlak önerme' olarak düşer. Ölçülen açı (çocuk derneklerinin ceza rejimi, lokal yasağı) kolluğa dokunmuyor; ikinci dalganın 'bankaya girmese bir şey kaybedilmez' ölçütünde kalıyor. Üreticinin 'medium' etiketi gerçekte 'easy'. Sınır kararıdır (puanlar 3/2/4); son turda REVIZYON olmadığı için RED.",
+    "oneri": "Yuva kapatılsın. Yeniden denenecekse yanlış önerme düz olumsuzlama değil, komşu kuralın gerçek değeriyle kurulmalı ve taze kör çözücüden geçmeli."
+  },
+  {
+    "id": "5253-p2-02",
+    "karar": "ONAY",
+    "korCevap": "C",
+    "metinCevap": "C",
+    "sinavDegeri": 3,
+    "ayirtEdicilik": 4,
+    "dogallik": 4,
+    "zorluk": "hard",
+    "gerekce": "TUR 2: Kör çözümde bilgiyle C (%45, soluk hatıra), salt şık ve sağduyuyla B (%50, varsayılan merci: İçişleri Bakanlığı) dedim; sağduyu yanlış şıkka gitti, bu soru lehine kanıttır. metinCevap C = anahtar (md 19 son fıkra lafzı). Doğru cevap sezgiye aykırı (suç tespiti dernekten gizlenmez); A ve B polis adayının iki varsayılanını çeldiriciye bağlıyor, yalnız D ve E zayıf. Kök tek cümle, şıklar kısa ve aynı karar uzayından; çıkmış merci sorularından ayırt edilmiyor. Sınav değeri orta (usul hükmü, ama mülki amir–savcılık hattı ve suç tespiti); 3 ile geçer. Zorluk 'hard' etiketi yerinde.",
+    "oneri": ""
+  }
+]

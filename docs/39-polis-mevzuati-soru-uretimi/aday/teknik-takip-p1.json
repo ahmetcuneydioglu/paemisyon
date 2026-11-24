@@ -1,0 +1,53 @@
+[
+  {
+    "id": "teknik-takip-p1-01",
+    "articleNo": "7",
+    "kok": "Teknik Yöntemlerle Takip Yönetmeliği'ne göre, takip sürecinde şiddet mağduru ve yükümlüye ilişkin işlemlerde farklı il emniyet müdürlüklerinin yetkili olması hâlinde işlemleri aşağıdakilerden hangisi yürütür?",
+    "siklar": {
+      "A": "Kararı veren aile mahkemesinin bulunduğu yerdeki kolluk birimi",
+      "B": "Şiddet mağdurunun ikamet ettiği yerdeki kolluk birimi",
+      "C": "Yükümlünün ikamet ettiği yerdeki kolluk birimi",
+      "D": "Vakayı tespit eden kolluk birimi",
+      "E": "İzleme merkezinin görevlendirdiği kolluk birimi"
+    },
+    "dogru": "B",
+    "aciklama": "Yönetmelik md 7/3: takip sürecinde şiddet mağduru ve yükümlüye ilişkin işlemlerin gerçekleştirilmesinde farklı il emniyet müdürlükleri ya da il jandarma komutanlıklarının yetkili olması hâlinde işlemler, ŞİDDET MAĞDURUNUN İKAMET ETTİĞİ yerdeki sorumlu kolluk birimi tarafından yürütülür. Elektronik kelepçe yükümlüye takıldığı için yetkinin yükümlünün ikamet ettiği yere bağlanacağı düşünülür; hüküm ölçüt olarak mağdurun ikametini seçmiştir (C yanlış). Kararı veren aile mahkemesinin yeri (A) ve vakayı tespit eden birim (D) bu fıkrada ölçüt değildir; md 8 vakayı tespit eden birimlere yalnız vakayı Komisyonca değerlendirilmek üzere ŞÖNİM'e gönderme işini verir. İzleme merkezi iller arasında birim görevlendirmez (E): md 7/2-f'ye göre mağdur ile yükümlünün farklı illerde ikamet ettiği vakalarda uygulama ekibi, ünite sevki ya da talebi gibi iller arası iş birliği gerektiren konularda koordinasyon için izleme merkezine bilgi verir.",
+    "dayanak": "Teknik Yöntemlerle Takip Yönetmeliği md 7/3",
+    "zorluk": "medium",
+    "tur": "dogrudan"
+  },
+  {
+    "id": "teknik-takip-p1-02",
+    "articleNo": "9",
+    "kok": "Teknik Yöntemlerle Takip Yönetmeliği'ne göre, vakanın teknik yöntemlerle takibe uygunluğu değerlendirilirken asgari mesafeye ilişkin değerlendirmeyi içeren rapor aşağıdakilerden hangisi tarafından hazırlanır?",
+    "siklar": {
+      "A": "Komisyon",
+      "B": "İzleme merkezi",
+      "C": "Aile mahkemesi",
+      "D": "ŞÖNİM'de görevli meslek elemanı",
+      "E": "İlgili kolluk birimi"
+    },
+    "dogru": "E",
+    "aciklama": "Asgari mesafeye ilişkin değerlendirmeyi içeren rapor, vakaya acil durumda etkin ve hızlı müdahalenin sağlanması amacıyla İLGİLİ KOLLUK BİRİMİ tarafından, polis irtibat görevlisi ya da jandarma personelinin koordinesinde gecikmeksizin hazırlanır ve nihai değerlendirme raporuna eklenmek üzere ŞÖNİM'e gönderilir (md 9/2-c). Değerlendirmede tarafların ev, iş, okul adreslerinin yakınlığı, gündelik güzergâhları, şehrin yüzölçümü, nüfus yoğunluğu, trafik durumu ve kolluğun etkin müdahale süresi gibi ölçütler gözetilir. Komisyon (A) bu raporu hazırlamaz; onun hazırladığı, vakanın takibe elverişli olup olmadığına ilişkin nihai değerlendirme raporudur ve asgari mesafe raporu buna eklenir (md 9/3). Meslek elemanı (D) şiddet mağduruyla yaptığı görüşmeye ilişkin durum değerlendirme raporunu düzenler (md 9/2-a). İzleme merkezinde (B) asgari mesafe bilgisi sisteme kaydedilir (md 12/3); izleme personelinin oluşturduğu rapor veri sisteminden çekilen teknik ayrıntılara ilişkindir (md 6/1-g). Aile mahkemesi (C) rapor hazırlayan değil, kendisine nihai değerlendirme raporu ve Karar talebi sunulan mercidir.",
+    "dayanak": "Teknik Yöntemlerle Takip Yönetmeliği md 9/2-c",
+    "zorluk": "medium",
+    "tur": "dogrudan"
+  },
+  {
+    "id": "teknik-takip-p1-03",
+    "articleNo": "20",
+    "kok": "Teknik Yöntemlerle Takip Yönetmeliği'ne göre, teknik yöntemlerle takip kararı ve uygulanması ile ilgili aşağıdakilerden hangisi doğrudur?",
+    "siklar": {
+      "A": "İzleme süreci, takip kararının taraflara tebliğ edilmesiyle başlar.",
+      "B": "Takip kararının kaldırılması talebi, Komisyon değerlendirmesi sonucunda izleme merkezi tarafından aile mahkemesine sunulur.",
+      "C": "İhlal ve uyarı görüşmelerinin kayıt altına alınacağı, sistemin aktivasyonu sırasında kişilere bildirilir.",
+      "D": "Takip kararı talep edilebilmesi için vakanın Komisyon değerlendirmesinden geçmiş olması gerekir.",
+      "E": "Takip kararı, ilgili tedbir kararları olmaksızın tek başına da uygulanabilir."
+    },
+    "dogru": "C",
+    "aciklama": "Dayanak md 20/2'dir: izleme süresince ihlal durumunda veya uyarı niteliğinde yükümlü ve şiddet mağduru ile izleme merkezi tarafından gerçekleştirilen görüşmelerin KAYIT ALTINA ALINACAĞI, sistemin aktivasyonu esnasında kişilere bildirilir; bunun haricinde kişilerin ses ve görüntüleri dinlenemez, izlenemez ve kayıt altına alınamaz. Yani Yönetmelik kayıt yasağını korurken izleme merkezinin bu görüşmelerini ayrı tutmuş ve önceden bildirim şartına bağlamıştır (C doğru). A yanlıştır: izleme süreci tebliğle değil, taraflara izleme ünitelerinin TESLİMİ ile başlar ve geri alınmasıyla sona erer (md 12/2). B yanlıştır: kaldırma talebini Komisyon değerlendirmesi sonucunda aile mahkemesine sunan ŞÖNİM'dir (md 15/3). D yanlıştır: Yönetmelik, Komisyon değerlendirmesinden geçmeden mahkemeye ulaşan vakaları ayrıca düzenler; bu vakalarda Komisyon ancak hâkimin talep etmesi hâlinde değerlendirme yapar (md 9/4). E yanlıştır: takip kararı, ilgili tedbir kararları olmaksızın tek başına uygulanamaz (md 12/1).",
+    "dayanak": "Teknik Yöntemlerle Takip Yönetmeliği md 20/2",
+    "zorluk": "hard",
+    "tur": "onerme"
+  }
+]

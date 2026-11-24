@@ -1,0 +1,19 @@
+# 5607-p2 — bankadaki en benzer sorular (bütün banka, 7997 soru; eşik 0.15, aday başına 5)
+# skor = aday kök+doğru şık sözcüklerinin (IDF ağırlıklı) ne kadarının o soruda geçtiği. Yüksek skor mükerrer DEMEK DEĞİLDİR; karar gözcünündür.
+
+## 5607-p2-01
+ADAY: 5607 sayılı Kanun'a göre, kaçak eşya naklinde kullanıldığı şüphesiyle elkonulan taşıtlarla ilgili aşağıdakilerden hangisi YANLIŞTIR?
+ADAY DOĞRU: Alıkonulan taşıt, muhafaza ve diğer masrafları karşılandığında sahibine iade edilir.
+  — skor 0.19 | Protokol Bilgisi / Protokol Bilgisi | published | id e7c9cdc5-444c-4b37-8099-e6415195b126
+    Taşıt protokolü ile ilgili aşağıdakilerden hangisi yanlıştır?
+    A) Otomobilde onur yeri direksiyonu solda olan araçlarda sağ arka koltuktur.
+    B) Resmi sıfatları olanların otomobillerde şoförlerin yanına oturmamaları genel kuraldır.
+    C) Kadınlar hiçbir zaman şoförün yanına oturtulmaz.
+    D) Makam taşıtlarında makam sahibinin yanında eşi varsa nezaketen eşi sağ arkaya oturur.  ✔
+  — skor 0.18 | Ceza Hukuku / Türk Ceza Kanunu | published | id 64a7593d-202d-4186-b1c1-f1829a22918c
+    5237 sayılı Türk Ceza Yasası'na göre kazanç müsaderesi hakkında, I. Suçun işlenmesi ile elde edilen veya suçun konusunu oluşturan ya da suçun işlenmesi için sağlanan maddi menfaatler ile bunların değerlendirilmesi veya dönüştürülmesi sonucu ortaya çıkan ekonomik kazançların müsaderesine karar verilir. II. Kazanç müsaderesi kararı verilebilmesi için maddi menfaatin suçun mağduruna geri verilip veri
+    A) I ve III
+    B) Yalnız II
+    C) II ve IV  ✔
+    D) I, II ve IV
+    E) II, III ve IV

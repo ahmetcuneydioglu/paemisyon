@@ -18,7 +18,12 @@ const SIK = ['A', 'B', 'C', 'D', 'E'] as const;
 const ALAN = ['id', 'articleNo', 'kok', 'siklar', 'dogru', 'aciklama', 'dayanak', 'zorluk', 'tur'];
 /** Olumsuz kök kalıpları. "değildir/yasaklanmamıştır" gibi küçük harfli ve
  *  çekimli biçimler ilk sürümde kaçmıştı — denetçi yakaladı, liste genişletildi. */
-const OLUMSUZ = /(DEĞİL|YANLIŞ|SAYILMAM|YER ALMAZ|OLAMAZ|VERİLEMEZ|KAPSAMAZ|değildir|yanlıştır|sayılmamıştır|yer almaz|yasaklanmamıştır|olamaz|verilemez|kapsamaz|gerekmez|aranmaz)/;
+const OLUMSUZ = /(DEĞİL|YANLIŞ|SAYILMAM|YER ALMAZ|OLAMAZ|VERİLEMEZ|KAPSAMAZ|GEREKTİRMEZ|UYGULANMAZ|değildir|yanlıştır|sayılmamıştır|yer almaz|yasaklanmamıştır|olamaz|verilemez|kapsamaz|gerekmez|gerektirmez|aranmaz|uygulanmaz|[A-ZÇĞİÖŞÜ]{3,}(?:MAZ|MEZ))/;
+/* Son seçenek: BÜYÜK HARFLE yazılmış her "-MAZ/-MEZ" fiili ("AKTARAMAZ", "KULLANAMAZ"); 6698-p1-04'ün
+ * olumsuz kökü listede olmadığı için sayılmamıştı (19 Kas 2026). */
+/** Olumsuzluk yalnız soru cümlesinde (kökün son satırı) aranır: öncüldeki "aranmaz"
+ *  kökü olumsuz yapmaz (5726-p1-02'de yanlış alarm verdi). */
+const soruCumlesi = (kok: string) => kok.trim().split('\n').pop() ?? '';
 const MUTLAK = /\b(yalnız|yalnızca|sadece|hiçbir|hiç bir|her hâlde|her halde|mutlaka|tamamen|asla|kesinlikle|daima|her zaman|kimse|bütün|tüm)\b/i;
 /** Binlik ayraçlı sayı ya da açık TL ibaresi: yeniden değerlemeyle eskiyen cevap. */
 const TUTAR = /\b\d{1,3}(?:\.\d{3})+\b|\d[\d.]{2,}\s*(TL|Türk liras)/i;
@@ -33,10 +38,12 @@ const hepsi: Soru[] = [];
 
 for (const p of partiler) {
   const d: Soru[] = JSON.parse(readFileSync(`${D}/${p}.json`, 'utf8'));
+  // Boş parti geçerli bir sonuçtur (hedef tavandır); istatistikler boş dizide çöküyordu.
+  if (!d.length) { console.log(`\n━━ ${p}: 0 soru (boş parti)`); continue; }
   hepsi.push(...d);
   const sema = d.filter((q) => ALAN.some((a) => !(a in q)) || SIK.some((l) => !q.siklar?.[l]?.trim()) || !SIK.includes(q.dogru as never));
   const ayni = d.filter((q) => new Set(SIK.map((l) => q.siklar[l].trim().toLocaleLowerCase('tr'))).size !== 5);
-  const olumsuz = d.filter((q) => OLUMSUZ.test(q.kok));
+  const olumsuz = d.filter((q) => OLUMSUZ.test(soruCumlesi(q.kok)));
   let md = 0, mc = 0;
   for (const q of d) for (const l of SIK) {
     const t = q.siklar[l].trim();

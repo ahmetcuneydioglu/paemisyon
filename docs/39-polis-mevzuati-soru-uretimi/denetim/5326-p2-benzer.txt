@@ -1,0 +1,119 @@
+# 5326-p2 — bankadaki en benzer sorular (bütün banka, 7720 soru; eşik 0.15, aday başına 5)
+# skor = aday kök+doğru şık sözcüklerinin (IDF ağırlıklı) ne kadarının o soruda geçtiği. Yüksek skor mükerrer DEMEK DEĞİLDİR; karar gözcünündür.
+
+## 5326-p2-01
+ADAY: 5326 sayılı Kanun'a göre, devlet hastanesinde hasta kayıt memurunun görevle bağlantılı olarak sorması üzerine kendi adresi hakkında gerçeğe aykırı beyanda bulunan kişiye idarî para cezasını aşağıdakilerden hangisi verir?
+ADAY DOĞRU: Soruyu soran görevli
+  — skor 0.24 | Polis Mevzuatı / 5326 Sayılı Kabahatler Kanunu | published | id 533f0720-8633-47fe-ba01-058a1d504e63
+    5326 sayılı Kabahatler Kanunu'na göre, sarhoşluk kabahatiyle ilgili aşağıdakilerden hangisi doğrudur?
+    A) Sarhoş olan herkese idarî para cezası verilir
+    B) Sarhoş olarak başkalarının huzur ve sükûnunu bozacak şekilde davranışlarda bulunan kişiye kolluk görevlilerince idarî para cezası verilir; kişi ayrıca sarhoşluğun etkisi geçinceye kadar kontrol altında tutulur  ✔
+    C) Cezaya belediye encümeni karar verir ve kişi yirmi dört saat gözaltında tutulur
+    D) Sarhoşluk yalnızca umuma açık yerlerde işlenirse kabahat oluşturur ve ceza mülkî amirce verilir
+    E) Sarhoş kişi hakkında idarî para cezası yerine yalnızca koruma altına alma tedbiri uygulanır
+  — skor 0.21 | Polis Mevzuatı / 5326 Sayılı Kabahatler Kanunu | published | id 902542ba-bcfc-4899-8dd9-7a1b40dd3b7c
+    5326 sayılı Kabahatler Kanunu'nun 43/A maddesine göre, maddede sayılan suçların bir tüzel kişinin yararına olarak işlenmesi hâlinde bu tüzel kişiye verilecek idarî para cezasına karar vermeye yetkili olan aşağıdakilerden hangisidir?
+    A) İlgili kamu kurumunun en üst amiri
+    B) Sayılan suçlardan dolayı yargılama yapmakla görevli mahkeme  ✔
+    C) Cumhuriyet başsavcısı
+    D) Mahallin en büyük mülkî amiri
+    E) Mali Suçları Araştırma Kurulu
+  — skor 0.21 | Polis Mevzuatı / 5326 Sayılı Kabahatler Kanunu | published | id 0ac08f37-c02d-4991-b6ab-8a3977b49534
+    5326 sayılı Kabahatler Kanunu'na göre, yetkili makamların açık ve yazılı izni olmaksızın kaldırımları işgal eden veya buralarda mal satışa arz eden kişiye idarî para cezası vermeye yetkili olan aşağıdakilerden hangisidir?
+    A) Kolluk veya belediye zabıta görevlileri
+    B) Yalnızca belediye zabıta görevlileri  ✔
+    C) Yalnızca kolluk görevlileri
+    D) Mahallin en büyük mülkî amiri
+    E) Belediye encümeni
+  — skor 0.21 | Polis Mevzuatı / 5326 Sayılı Kabahatler Kanunu | published | id 850651a3-6475-4b01-9940-150722ebf4fc
+    Bir kişi, sekiz ay önce 112 Acil Çağrı Merkezine asılsız ihbarda bulunması nedeniyle idarî para cezası almış; bu kez yine 112'yi meşgul etmek amacıyla arayarak görevlilerle konuşmuştur. 5326 sayılı Kabahatler Kanunu'na göre bu kişiye uygulanacak yaptırım hakkında aşağıdakilerden hangisi doğrudur?
+    A) Fiilin bir yıl içinde tekrarı söz konusu olduğundan idarî para cezası iki katı olarak uygulanır  ✔
+    B) İkinci fiil farklı türde olduğundan tekerrür hükmü uygulanmaz ve ceza normal miktarda verilir
+    C) Tekerrür nedeniyle idarî para cezası yerine hapis cezası uygulanır
+    D) Ceza üç katı olarak uygulanır ve kişinin hattı iptal edilir
+    E) İkinci fiil için ceza verilemez; aynı kişiye yılda bir kez ceza verilebilir
+  — skor 0.21 | Polis Mevzuatı / 5326 Sayılı Kabahatler Kanunu | published | id 21568f79-772f-4066-9a5c-92e5d961f43a
+    5326 sayılı Kabahatler Kanunu'na göre, çevreyi kirletme kabahatleriyle ilgili aşağıdakilerden hangisi doğrudur?
+    A) İdarî para cezasına belediye sınırları içinde belediye zabıta görevlileri, belediye sınırları dışında kolluk görevlileri karar verir; kirliliğin kişi tarafından derhal giderilmesi hâlinde ceza verilmeyebilir  ✔
+    B) İdarî para cezasına her yerde yalnızca kolluk görevlileri karar verir ve ceza hiçbir hâlde kaldırılamaz
+    C) İdarî para cezasına yalnızca çevre il müdürlükleri karar verir
+    D) Kirlilik derhal giderilse bile cezanın verilmesi zorunludur
+    E) Bu kabahatlerde ceza verme yetkisi mülkî amire aittir
+
+## 5326-p2-02
+ADAY: Denetimde, on dört yaşındaki bir çocuğun 6136 sayılı Kanun kapsamı dışında kalan bir bıçağı taşıyarak kabahat işlediği tespit edilmiştir. 5326 sayılı Kanun'a göre, bu çocuk hakkında çocuk hâkiminden tedbir talebinde aşağıdakilerden hangisi bulunur?
+ADAY DOĞRU: Mülkî amir
+  — skor 0.22 | Polis Mevzuatı / 5395 Sayılı Çocuk Koruma Kanunu | published | id a305044a-baaa-4025-ac73-2930aa87a070
+    Uyuşturucu madde bağımlılığı nedeniyle kendisi açısından ciddi tehlike oluşturduğu değerlendirilen bir çocuk, ailesi tarafından Sağlık Bakanlığına bağlı yataklı bir sağlık kurumuna getirilmiştir. İlgili uzman hekim, çocuğun tedaviye ihtiyacı bulunduğunu tespit ederek acil korunma kararı alınması amacıyla raporunu düzenlemiştir. 5395 sayılı Çocuk Koruma Kanunu’na göre sağlık kurumu, çocuk hâkimine 
+    A) Çocuğun sağlık kurumuna geldiği tarihten itibaren beş gün içinde
+    B) Uzman hekim raporunun düzenlendiği tarihten itibaren kırk sekiz saat içinde
+    C) Çocuğun sağlık kurumuna geldiği tarihten itibaren üç gün içinde
+    D) Sağlık kurulu raporunun düzenlendiği tarihten itibaren yirmi dört saat içinde
+    E) Uzman hekim raporunun düzenlendiği tarihten itibaren yirmi dört saat içinde  ✔
+  — skor 0.21 | Polis Mevzuatı / 5326 Sayılı Kabahatler Kanunu | published | id 7e4ed7d1-c4f6-4843-b6eb-bef94b6e14a6
+    Bir kişi, tek bir fiille hem gürültü kabahatini hem de başka bir kanunda yalnızca idarî para cezası öngörülen bir kabahati işlemiştir. Ayrıca aynı gün, iki ayrı yerde iki kez daha gürültü kabahati işlediği tespit edilmiştir. 5326 sayılı Kabahatler Kanunu'na göre bu kişi hakkında aşağıdakilerden hangisi doğrudur?
+    A) Tek fiille işlenen iki kabahat için en ağır idarî para cezası; ayrı fiillerle işlenen her gürültü kabahati için ayrı ayrı idarî para cezası verilir  ✔
+    B) Tüm kabahatler için tek bir idarî para cezası verilir
+    C) Tek fiille işlenen iki kabahatin cezaları toplanır; tekrarlanan gürültü fiilleri tek sayılır
+    D) En hafif idarî para cezası esas alınarak fiil sayısıyla çarpılır
+    E) Tekerrür hükümleri uygulanarak en ağır ceza iki katına çıkarılır
+  — skor 0.21 | Polis Mevzuatı / 5326 Sayılı Kabahatler Kanunu | published | id 62b7a975-41c6-4045-822f-5bddfc55b683
+    Bir işletme hakkında aynı denetim işlemi kapsamında hem idarî para cezası verilmiş hem de işyeri kapatma gibi idarî yargının görev alanına giren bir karar alınmıştır. 5326 sayılı Kabahatler Kanunu'na göre, idarî para cezasına ilişkin hukuka aykırılık iddiaları nerede görülür?
+    A) Sulh ceza hâkimliğinde
+    B) Kapatma işleminin iptali talebiyle birlikte idarî yargı merciinde  ✔
+    C) Ağır ceza mahkemesinde
+    D) Ayrı ayrı; ceza sulh cezada, kapatma idare mahkemesinde görülür ve birleştirilemez
+    E) Danıştayda ilk derece olarak
+  — skor 0.19 | Polis Mevzuatı / 5326 Sayılı Kabahatler Kanunu | published | id 753f0333-8b80-4df0-b988-3988a6fe34c6
+    I. Kolluk görevlileri II. Zabıta görevlileri III. Mülkî amir IV. Belediye encümeni 5326 sayılı Kabahatler Kanunu’na göre, verilenlerden hangileri dilencilik kabahati dolayısıyla mülkiyetin kamuya geçirilmesine karar verir?
+    A) Yalnız I
+    B) Yalnız II
+    C) I ve IV
+    D) II ve III
+    E) III ve IV  ✔
+  — skor 0.19 | Polis Mevzuatı / 5326 Sayılı Kabahatler Kanunu | published | id 1966e54c-6dda-4962-a8dd-28abdbb83fc2
+    5326 sayılı Kabahatler Kanunu'na göre, dilencilik kabahatinde idarî para cezası ile mülkiyetin kamuya geçirilmesine karar verecek makamlar aşağıdakilerden hangisinde doğru eşleştirilmiştir?
+    A) İdarî para cezası: mülkî amir — Mülkiyetin kamuya geçirilmesi: kolluk
+    B) İdarî para cezası: kolluk veya belediye zabıta görevlileri — Mülkiyetin kamuya geçirilmesi: mülkî amir veya belediye encümeni  ✔
+    C) İdarî para cezası: belediye encümeni — Mülkiyetin kamuya geçirilmesi: sulh ceza hâkimi
+    D) Her iki karar da yalnızca kolluk görevlileri tarafından verilir
+    E) Her iki karar da yalnızca Cumhuriyet savcısı tarafından verilir
+
+## 5326-p2-03
+ADAY: 5326 sayılı Kanun'a göre, aşağıdakilerden hangisi “emre aykırı davranış” kabahatine konu olan emrin veriliş sebep ve amaçları arasında açıkça SAYILMAMIŞTIR?
+ADAY DOĞRU: Genel ahlâkın korunması
+  — skor 0.42 | Polis Mevzuatı / 5326 Sayılı Kabahatler Kanunu | published | id 35bc24e0-6a93-4908-bd95-d2bc376e4b98
+    5326 sayılı Kabahatler Kanunu'nda düzenlenen "emre aykırı davranış" kabahatiyle ilgili aşağıdakilerden hangisi doğrudur?
+    A) Cezaya, emri veren makam tarafından karar verilir ve madde ancak ilgili kanunda açıkça hüküm bulunan hâllerde uygulanabilir  ✔
+    B) Cezaya her durumda kolluk görevlileri karar verir
+    C) Cezaya sulh ceza hâkimi karar verir ve maddenin uygulanması için başka bir kanunda hüküm bulunması gerekmez
+    D) Emre aykırı davranış yalnızca adlî para cezasıyla cezalandırılır
+    E) Cezaya mahallin en büyük mülkî amiri karar verir ve emrin yazılı olması zorunludur
+  — skor 0.23 | Polis Mevzuatı / 5326 Sayılı Kabahatler Kanunu | published | id d749c673-80cd-40dd-a1a7-fcc6433c01d6
+    İdarî yaptırım kararı, ilgili gerçek kişinin huzurunda verilmiş; kişi bilgilendirildikten sonra karar tutanağını imzalamaktan kaçınmıştır. 5326 sayılı Kabahatler Kanunu'na göre bu durumda aşağıdakilerden hangisi yapılır?
+    A) İmzadan kaçınıldığı tutanakta açıkça belirtilir ve karar tutanağının bir örneği kişiye verilir  ✔
+    B) Karar geçersiz sayılır ve Tebligat Kanunu'na göre yeniden tebliğ edilinceye kadar hüküm doğurmaz
+    C) İmzadan kaçınan kişiye ayrıca emre aykırı davranıştan idarî para cezası verilir
+    D) Kişi imzalayıncaya kadar karar yerine bekletilir
+    E) Tutanak iki tanık huzurunda yeniden düzenlenir; aksi hâlde karar düşer
+  — skor 0.23 | Polis Mevzuatı / 5326 Sayılı Kabahatler Kanunu | published | id 533f0720-8633-47fe-ba01-058a1d504e63
+    5326 sayılı Kabahatler Kanunu'na göre, sarhoşluk kabahatiyle ilgili aşağıdakilerden hangisi doğrudur?
+    A) Sarhoş olan herkese idarî para cezası verilir
+    B) Sarhoş olarak başkalarının huzur ve sükûnunu bozacak şekilde davranışlarda bulunan kişiye kolluk görevlilerince idarî para cezası verilir; kişi ayrıca sarhoşluğun etkisi geçinceye kadar kontrol altında tutulur  ✔
+    C) Cezaya belediye encümeni karar verir ve kişi yirmi dört saat gözaltında tutulur
+    D) Sarhoşluk yalnızca umuma açık yerlerde işlenirse kabahat oluşturur ve ceza mülkî amirce verilir
+    E) Sarhoş kişi hakkında idarî para cezası yerine yalnızca koruma altına alma tedbiri uygulanır
+  — skor 0.22 | Ceza Hukuku / Türk Ceza Kanunu | published | id eb708b42-568b-4b18-9b43-ff55161a5da1
+    (I) Anayasa (II) Yolsuzluğa Karşı Özel Hukuk Sözleşmesi (III) 5326 sayılı Kabahatler Kanunu (IV) Doktrin (V) Yargıtay Ceza Genel Kurulu kararları (VI) Avrupa Konseyi Çocukların Sömürü ve İstismara Karşı Korunması Sözleşmesi Yukarıdakiler hangileri ceza hukukunun doğrudan kaynağı değildir?
+    A) III, IV ve V
+    B) II, IV ve V
+    C) I, III, V ve VI
+    D) III ve IV
+    E) IV ve V  ✔
+  — skor 0.21 | Anayasa Hukuku / T.C. Anayasası | published | id 9c50a8cf-24ab-420a-8fa2-57bb7c3e4a95
+    1982 Anayasası'na göre aşağıdakilerden hangisi süreli veya süresiz yayınların toplatılma nedenleri arasında açıkça sayılmamıştır?
+    A) Devletin ülkesi ve milletiyle bölünmez bütünlüğünün korunması
+    B) Millî güvenliğin korunması
+    C) Özel hayatın gizliliğinin korunması  ✔
+    D) Suçların önlenmesi
+    E) Genel ahlakın korunması

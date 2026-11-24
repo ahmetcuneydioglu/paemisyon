@@ -1,0 +1,240 @@
+[
+  {
+    "id": "6222-p1-01",
+    "articleNo": "4",
+    "kok": "6222 sayılı Kanun'a göre, aşağıdakilerden hangisi il spor güvenlik kurulunda yer alanlar arasında SAYILMAMIŞTIR?",
+    "siklar": {
+      "A": "İl sağlık müdürlüğü temsilcisi",
+      "B": "Vali tarafından belirlenecek bir hukukçu",
+      "C": "Amatör spor kulüpleri konfederasyon temsilcisi",
+      "D": "İl milli eğitim müdürlüğü temsilcisi",
+      "E": "Taraftardan sorumlu kulüp temsilcisi"
+    },
+    "dogru": "E",
+    "aciklama": "Kurulun yapısı 4 üncü maddenin birinci fıkrasında tek tek sayılmıştır: belediye başkanlığı, il jandarma komutanlığı, il emniyet müdürlüğü, gençlik ve spor il müdürlüğü, İL SAĞLIK MÜDÜRLÜĞÜ, İL MİLLİ EĞİTİM MÜDÜRLÜĞÜ, ilgili federasyon ve AMATÖR SPOR KULÜPLERİ KONFEDERASYON temsilcileri, VALİ TARAFINDAN BELİRLENECEK BİR HUKUKÇU ile farklı spor kulüplerine mensup STAT GÜVENLİĞİNDEN SORUMLU YÖNETİM KURULU ÜYESİ; gerekli görüldüğünde basın kuruluşlarının ve ilgili kamu kuruluşlarının temsilcileri de davet edilir. Kulüpleri kurulda temsil eden kişi, taraftardan sorumlu kulüp temsilcisi değil stat güvenliğinden sorumlu yönetim kurulu üyesidir. İki görev 3 üncü maddenin (j) ve (k) bentlerinde ayrı ayrı tanımlanır ve ikisi de kulübün yönetim kurulu üyeleri arasından belirlenir; karışıklık buradan doğar. Taraftardan sorumlu kulüp temsilcisinin görevi 9 uncu maddededir: kimlik ve adres bilgileri kulübün bulunduğu yerdeki genel kolluk birimine bildirilir ve müsabaka güvenliğinin sağlanmasında genel kolluk ile özel güvenlik görevlilerine yardımcı olur. Sağlık ve milli eğitim müdürlükleri bir güvenlik kuruluna yabancı görünse de metinde açıkça sayılmıştır.",
+    "dayanak": "6222 sayılı Kanun md 4/1 (ayrıca md 3-(j), (k) ve md 9)",
+    "zorluk": "medium",
+    "tur": "kavram"
+  },
+  {
+    "id": "6222-p1-02",
+    "articleNo": "7",
+    "kok": "6222 sayılı Kanun'a göre, spor müsabakalarında görev yapan genel kolluk ve özel güvenlik görevlileri ile ilgili aşağıdakilerden hangisi doğrudur?",
+    "siklar": {
+      "A": "Müsabaka güvenlik amiri, tribünlerdeki genel kolluk görevlilerinin sayısını her zaman artırabilir.",
+      "B": "Özel güvenlik görevlileri, bu Kanundan doğan görevlerinin ifası sırasında ateşli silah taşıyabilir.",
+      "C": "Kulüp için görevlendirilen gözlemci kolluk görevlisi, kulübün deplasman maçlarında görev almaz.",
+      "D": "Görevde olmayan genel kolluk görevlileri, kulübün başvurusu üzerine federasyon tarafından görevlendirilir.",
+      "E": "Özel güvenlik görevlileri, genel kolluktan ayrı olarak ev sahibi kulübün emir ve denetiminde görev yapar."
+    },
+    "dogru": "A",
+    "aciklama": "Müsabaka ve seyir alanlarında genel kolluk görevlileri ile özel güvenlik görevlileri, müsabaka güvenlik amiri ve yardımcısının EMİR VE DENETİMİNDE BİRLİKTE görev yapar; aynı fıkraya göre müsabaka güvenlik amiri HER ZAMAN tribünlerdeki genel kolluk görevlilerinin sayısının artırılmasına karar verebilir (md 7/3). Şıktaki mutlak ifade kanunun kendisinden gelir; artırma kararı başka bir makamın onayına bağlanmamıştır. Özel güvenlik görevlilerinin kulübün emrinde ve genel kolluktan ayrı çalıştığını söyleyen şık bu fıkranın tersidir. Özel güvenlik görevlileri 5188 sayılı Kanunda belirtilen görev ve yetkileri haizdir; ancak bu Kanundan doğan görevlerinin ifası sırasında ATEŞLİ SİLAH TAŞIMALARI YASAKTIR (md 6/4). Gözlemci kolluk görevlisini futbolda en üst lig ve bir altındaki lig için her kulüp bakımından spor güvenlik birimi amiri görevlendirir; bu görevli DEPLASMAN MAÇLARI DAHİL kulübün bütün maçlarında görev alır (md 7/2). Görevde olmayan genel kolluk görevlileri de en üst profesyonel futbol ligi müsabakalarında görevlendirilebilir, fakat görevlendirmeyi kulübün başvurusu ve federasyonun talebi üzerine müsabakanın yapılacağı yerdeki YETKİLİ KOLLUK BİRİMİ yapar (md 6/3); federasyon görevlendiren değil, talep eden taraftır.",
+    "dayanak": "6222 sayılı Kanun md 7/3 (ayrıca md 6/3, 6/4, 7/2)",
+    "zorluk": "medium",
+    "tur": "ayrinti"
+  },
+  {
+    "id": "6222-p1-03",
+    "articleNo": "11",
+    "kok": "Küme düşme hattında bulunan (K) takımının taraftarı olan bir iş insanı, aynı hatta bulunan (L) takımıyla oynayacak (M) takımının futbolcularına, bu müsabakayı kazanmaları için para teklif etmiş; teklif kabul edilmiş ve para ödenmiştir. 6222 sayılı Kanun'a göre iş insanına verilecek ceza ile ilgili aşağıdakilerden hangisi doğrudur?",
+    "siklar": {
+      "A": "Fiil, başarı için verilen prim niteliğinde olduğundan cezalandırılmaz.",
+      "B": "Verilecek hapis ve adli para cezası yarı oranında indirilir.",
+      "C": "Ceza, şike suçundaki gibi indirim yapılmadan uygulanır.",
+      "D": "Verilecek ceza dörtte birinden dörtte üçüne kadar artırılır.",
+      "E": "Hapis cezası yerine, verilen prim miktarı kadar idari para cezası verilir."
+    },
+    "dogru": "B",
+    "aciklama": "İş insanı belirli bir müsabakanın sonucunu etkilemek amacıyla başkalarına menfaat temin etmiştir; fiil 11 inci maddenin birinci fıkrasındaki suçu oluşturur ve bu fıkranın cezası bir yıldan üç yıla kadar hapis ile yirmi bin güne kadar adli para cezasıdır. Ancak para bir takımın kaybetmesi için değil, müsabakayı KAZANMASI, yani başarılı olması için verilmiştir. Beşinci fıkraya göre suçun bir takımın BAŞARILI OLMASINI sağlamak amacıyla teşvik primi verilmesi veya vaat edilmesi suretiyle işlenmesi hâlinde bu madde hükümlerine göre verilecek ceza YARI ORANINDA İNDİRİLİR. Teşvik primini şikeyle aynı ağırlıkta gören aday cezayı birinci fıkradaki gibi indirimsiz uygular. Cezasızlık da doğru değildir: altıncı fıkradaki istisna yalnız milli takımlara veya milli sporculara ve spor kulüplerinin KENDİ TAKIM OYUNCULARINA ya da teknik heyetine verilen primi kapsar; üçüncü bir kişinin başka bir takımın futbolcularına para vermesi bu istisnaya girmez. Dörtte birinden dörtte üçüne kadar artırım, suçun bir suç işleme kararının icrası kapsamında değişik zamanlarda birden fazla işlenmesine ilişkindir (md 11/10). İdari para cezası ise suç bir spor kulübü veya sair bir tüzel kişi yararına işlendiğinde o tüzel kişiye, şike veya teşvik primi miktarı kadar AYRICA verilir (md 11/7); gerçek kişinin hapis cezasının yerine geçmez.",
+    "dayanak": "6222 sayılı Kanun md 11/5 (ayrıca md 11/1, 11/6)",
+    "zorluk": "hard",
+    "tur": "vaka"
+  },
+  {
+    "id": "6222-p1-04",
+    "articleNo": "11",
+    "kok": "I. Kazanç veya sair menfaat temini hususunda anlaşmaya varılmış olması hâlinde dahi suç tamamlanmış gibi cezaya hükmolunur.\nII. Verilen hapis cezası, şartları varsa seçenek yaptırımlara çevrilebilir veya ertelenebilir.\nIII. Şike suçu bakımından da Ceza Muhakemesi Kanunu'nun 135 inci maddesi hükümleri uygulanır.\n6222 sayılı Kanun'a göre, şike suçu ile ilgili verilenlerden hangileri doğrudur?",
+    "siklar": {
+      "A": "Yalnız I",
+      "B": "Yalnız II",
+      "C": "I ve II",
+      "D": "I ve III",
+      "E": "II ve III"
+    },
+    "dogru": "D",
+    "aciklama": "I doğrudur. 11 inci maddenin birinci fıkrasının son cümlesine göre kazanç veya sair menfaat temini hususunda ANLAŞMAYA VARILMIŞ OLMASI hâlinde dahi suç TAMAMLANMIŞ GİBİ cezaya hükmolunur; menfaatin fiilen el değiştirmesi beklenmez. Vaat veya teklifin anlaşmayla sonuçlanmadığı hâl ayrıca düzenlenmiş ve teşebbüs sayılmıştır (md 11/3). II yanlıştır. Dokuzuncu fıkra bu madde kapsamındaki suçlarda hükmün açıklanmasının geri bırakılması kararını yasaklar; verilen hapis cezası seçenek yaptırımlara ÇEVRİLEMEZ ve ERTELENEMEZ. Şartların varlığı sonucu değiştirmez; genel ceza hukukundaki erteleme ve seçenek yaptırım imkânlarından hareket eden aday burada yanılır. III doğrudur. 23 üncü maddenin ikinci fıkrasına göre Ceza Muhakemesi Kanunu'nun 135 inci maddesi hükümleri, 11 inci maddede tanımlanan suç bakımından DA uygulanır.",
+    "dayanak": "6222 sayılı Kanun md 11/1, 11/9; md 23/2",
+    "zorluk": "hard",
+    "tur": "onerme"
+  },
+  {
+    "id": "6222-p1-05",
+    "articleNo": "12",
+    "kok": "6222 sayılı Kanun'a göre, müsabaka güvenliği amacıyla spor alanına girişte izleyicilerin üstünün ve eşyasının teknik cihazlarla ve gerektiğinde el ile kontrol edilip aranması aşağıdakilerden hangisine istinaden yapılır?",
+    "siklar": {
+      "A": "Kolluk amirinin yazılı emrine",
+      "B": "Federasyonun talimatına",
+      "C": "Müsabaka güvenlik amirinin yazılı emrine",
+      "D": "İl spor güvenlik kurulunun kararına",
+      "E": "Mülki amirin yazılı emrine"
+    },
+    "dogru": "E",
+    "aciklama": "Dayanak 12 nci maddenin ikinci fıkrasıdır: müsabaka güvenliğinin sağlanması amacıyla genel kolluk görevlileri ile bunların gözetiminde olmak üzere özel güvenlik görevlileri, MÜLKİ AMİRİN YAZILI EMRİNE istinaden spor alanına girişte izleyicilerin üstünü ve eşyasını teknik cihazlarla ve gerektiğinde el ile kontrol edebilir ve arayabilir. Özel güvenlik görevlisi bu aramayı tek başına değil, GENEL KOLLUĞUN GÖZETİMİNDE yapar. Madde başka arama yollarını da açık tutar: spor alanında taraftarların üzeri ve eşyası 2559 sayılı Kanun'un önleme aramasına ilişkin hükümlerine göre de aranabilir (md 12/3) ve adli aramaya ilişkin hükümler saklıdır (md 12/4). Federasyonun Kanundaki giriş ve çıkış denetimi yetkisi elektronik kart ve bilet organizasyonuna ilişkindir (md 5/11-a); üst ve eşya aramasına dayanak oluşturmaz. Müsabaka güvenlik amiri de bir kolluk amiridir ve güvenlik önlemlerinin koordinasyonunu sağlar; fakat ne o ne başka bir kolluk amiri ne de il spor güvenlik kurulu bu aramanın emir makamı olarak düzenlenmiştir.",
+    "dayanak": "6222 sayılı Kanun md 12/2 (ayrıca md 12/3, 12/4)",
+    "zorluk": "easy",
+    "tur": "dogrudan"
+  },
+  {
+    "id": "6222-p1-06",
+    "articleNo": "13",
+    "kok": "Bir futbol müsabakası sırasında tribündeki bir seyirci, yanındaki taraftardan aldığı yanan meşaleyi sahaya atmış; hakem, sahayı kaplayan duman nedeniyle müsabakayı bir süre durdurmak zorunda kalmıştır. Olayda kimse yaralanmamış ve eşyaya zarar gelmemiştir. 6222 sayılı Kanun'a göre bu seyircinin fiili için öngörülen ceza aşağıdakilerden hangisidir?",
+    "siklar": {
+      "A": "Yüz gün adli para cezası",
+      "B": "Altı aydan iki yıla kadar hapis cezası",
+      "C": "Bir yıldan üç yıla kadar hapis cezası",
+      "D": "Bir yıldan beş yıla kadar hapis cezası",
+      "E": "İki yıldan beş yıla kadar hapis cezası"
+    },
+    "dogru": "D",
+    "aciklama": "Yanan meşale, 12 nci maddenin birinci fıkrasının (b) bendindeki parlayıcı, yanıcı veya yakıcı maddeler kapsamına girer; bu maddelerin müsabaka, seyir, özel seyir ve antrenman alanları ile takım veya taraftarların toplu olarak seyahat ettikleri araçlara sokulması yasaktır (md 12/1). 13 üncü madde bu maddelerle ilgili sokma, seyircilere temin etme ve kullanma fiillerini ayrı ayrı cezalandırır. Olaydaki seyirci meşaleyi kendisi SOKMAMIŞ, tribünde başkasından alıp KULLANMIŞ ve müsabakanın durmasına, yani MÜSABAKA DÜZENİNİN BOZULMASINA sebebiyet vermiştir. Dördüncü fıkraya göre bu alet veya maddeleri müsabaka, seyir veya antrenman alanlarında kullanarak düzenin bozulmasına sebebiyet veren kişi, fiili daha ağır cezayı gerektiren başka bir suç oluşturmadığı takdirde BİR YILDAN BEŞ YILA KADAR hapis cezası ile cezalandırılır. Komşu fıkralar şunlardır: bu maddeleri sayılan alanlara ve araçlara yalnızca SOKAN kişiye altı aydan iki yıla kadar (md 13/2), SEYİRCİLERE TEMİN ETMEK AMACIYLA sokan veya bu yerlerde seyircilere temin eden kişiye iki yıldan beş yıla kadar hapis (md 13/3); meşaleyi verenin durumu bu fıkra bakımından ayrıca değerlendirilir. Yüz gün adli para cezası ise sokulması YASAK OLMAYAN maddelerin kullanılmasıyla düzenin bozulması hâline uygulanır (md 13/5). Vakada kimse yaralanmadığı ve eşyaya zarar gelmediği belirtildiğinden 'daha ağır cezayı gerektiren başka bir suç' kaydı devreye girmez.",
+    "dayanak": "6222 sayılı Kanun md 13/4 (ayrıca md 12/1-b, 13/2, 13/3, 13/5)",
+    "zorluk": "hard",
+    "tur": "vaka"
+  },
+  {
+    "id": "6222-p1-07",
+    "articleNo": "14",
+    "kok": "Bir futbol müsabakasında tribündeki bir taraftar grubu, rakip takımın taraftarlarına yönelik, duyanlarca hakaret olarak algılanacak tarzda tezahüratta bulunmuştur.\nI. Belirli bir kişinin hedef alınmamış olması, suçun oluşmasına engel değildir.\nII. Failler hakkında soruşturma yapılması şikâyete bağlıdır.\nIII. Failler hapis cezası ile cezalandırılır.\n6222 sayılı Kanun'a göre, bu olayla ilgili verilenlerden hangileri doğrudur?",
+    "siklar": {
+      "A": "Yalnız I",
+      "B": "Yalnız II",
+      "C": "I ve II",
+      "D": "I ve III",
+      "E": "II ve III"
+    },
+    "dogru": "A",
+    "aciklama": "14 üncü maddenin birinci fıkrası, spor alanlarında taraftarların grup hâlinde veya münferiden, duyan veya gören kişilerce tehdit veya hakaret olarak algılanacak tarzda aleni söz ve davranışlarını cezalandırır. Fıkra iki özel kural koyar: tezahüratın BELİRLİ BİR KİŞİYİ hedef veya muhatap alıp almadığına BAKILMAZ ve failler hakkında ŞİKÂYET ŞARTI ARANMAKSIZIN işlem yapılır. Bu yüzden I doğru, II yanlıştır; hakaret suçunu şikâyete bağlı genel yapısıyla düşünen aday II'yi doğru sanır. III de yanlıştır: birinci fıkranın yaptırımı hapis değil, ELLİ GÜNDEN AZ OLMAMAK ÜZERE ADLİ PARA CEZASIDIR. Hapis cezası ikinci fıkradadır ve daha dar bir fiile bağlanmıştır: toplum kesimlerini din, dil, ırk, etnik köken, cinsiyet veya mezhep farkı gözeterek hakaret oluşturan söz ve davranışlarda bulunan kişi bir yıldan üç yıla kadar hapisle cezalandırılır. Olaydaki tezahürat bu nitelikte olmadığından birinci fıkra uygulanır. Fiilin pankartla ya da duvara yazı yazılarak işlenmesi ise cezayı yarı oranında artırır (md 14/3).",
+    "dayanak": "6222 sayılı Kanun md 14/1 (ayrıca md 14/2)",
+    "zorluk": "medium",
+    "tur": "onerme"
+  },
+  {
+    "id": "6222-p1-08",
+    "articleNo": "15",
+    "kok": "Spor müsabakalarına seyirci olarak katılmaktan yasaklanmış bir kişi, bileti olmaksızın bir müsabakayı izlemek amacıyla seyir alanına girmiştir. 6222 sayılı Kanun'a göre bu fiil nedeniyle kişiye verilecek adli para cezasının alt sınırı kaç gündür?",
+    "siklar": {
+      "A": "Elli",
+      "B": "Yüz",
+      "C": "İki yüz",
+      "D": "İki yüz elli",
+      "E": "Beş yüz"
+    },
+    "dogru": "C",
+    "aciklama": "Biletsiz girişin cezası 15 inci maddenin birinci fıkrasında iki kademeli bir alt sınırla düzenlenmiştir. Bu Kanun hükümlerine göre temin edilmiş bileti olmaksızın müsabakayı izlemek amacıyla müsabaka ve seyir alanlarına giren kişiye ELLİ GÜNDEN az olmamak üzere adli para cezası verilir; suç SEYİRCİ OLARAK KATILMAKTAN YASAKLANMIŞ kişi tarafından işlenirse adli para cezasının miktarı İKİ YÜZ GÜNDEN AZ OLAMAZ. Elli gün yasaklı olmayan seyircinin alt sınırıdır ve sorunun en güçlü çeldiricisidir. Diğer sayılar aynı maddenin başka fiillerine aittir: uygun görülen yerler dışında bilet satanlar için adli para cezası yüz günden, değerinin üstünde bilet satanlar için iki yüz elli günden başlar (md 15/6); elektronik kartı yetkisiz olarak üretenler veya satanlar için alt sınır beş yüz gündür (md 15/5).",
+    "dayanak": "6222 sayılı Kanun md 15/1",
+    "zorluk": "medium",
+    "tur": "dogrudan"
+  },
+  {
+    "id": "6222-p1-09",
+    "articleNo": "16",
+    "kok": "Müsabaka sona erdikten sonra, seyirciler henüz stattan tamamen tahliye edilmemişken bir taraftar, yetkisi olmadığı hâlde sporcu çıkış tüneline girmiştir. Fiil, müsabakanın güvenliğini bozacak bir sonuç doğurmamıştır. 6222 sayılı Kanun'a göre bu taraftarın durumu ile ilgili aşağıdakilerden hangisi doğrudur?",
+    "siklar": {
+      "A": "Elli günden az olmamak üzere adli para cezası verilir.",
+      "B": "Üç aydan bir yıla kadar hapis veya adli para cezası verilir.",
+      "C": "Altı aydan iki yıla kadar hapis cezası verilir.",
+      "D": "Bir yıldan üç yıla kadar hapis cezası verilir.",
+      "E": "Müsabaka sona erdiğinden fiil bu Kanun kapsamında suç oluşturmaz."
+    },
+    "dogru": "B",
+    "aciklama": "16 ncı madde yasak alanlara girme suçunu bir ZAMAN ARALIĞINA bağlar: müsabaka için seyircilerin kabulüne başlanmasından itibaren müsabaka sonrası TAMAMEN TAHLİYESİNE kadar geçen süre. Bu aralıkta yetkisiz olarak müsabaka alanına, soyunma odalarına, odaların koridorlarına veya sporcu çıkış tünellerine giren kişi ÜÇ AYDAN BİR YILA KADAR HAPİS VEYA ADLİ PARA CEZASI ile cezalandırılır; yaptırım seçimliktir. Olayda müsabaka bitmiş, fakat tahliye tamamlanmamıştır. 'Müsabaka sona erdi, suç oluşmaz' düşüncesi, maddenin zaman sınırını bitiş düdüğüne çeken klasik hatadır; kanun sınırı tahliyenin tamamlanmasına bağlamıştır. Aynı maddenin ikinci fıkrası fiilin MÜSABAKANIN SEYRİNİ VEYA GÜVENLİĞİNİ BOZMASI hâlini ayrıca düzenler ve bu hâlde fail hakkında bir yıldan üç yıla kadar hapis cezasına hükmolunur. Olayda böyle bir sonuç doğmadığından ağırlaştırılmış hâl uygulanmaz; bu şık, iki fıkrayı ayırt etmeyen adayın tercihidir. Elli günden az olmamak üzere adli para cezası ile altı aydan iki yıla kadar hapis cezası bu maddede yer almaz; Kanun'un başka fiillere bağladığı yaptırımlardır.",
+    "dayanak": "6222 sayılı Kanun md 16/1 (ayrıca md 16/2)",
+    "zorluk": "hard",
+    "tur": "vaka"
+  },
+  {
+    "id": "6222-p1-10",
+    "articleNo": "17",
+    "kok": "(T) Spor Kulübünün ev sahibi olduğu bir futbol müsabakasında, misafir (S) Spor Kulübünün taraftarları seyir alanındaki koltukları kırarak zarar vermiştir. 6222 sayılı Kanun'a göre bu olayla ilgili aşağıdakilerden hangisi doğrudur?",
+    "siklar": {
+      "A": "Faillerin cezalandırılması zarar görenin şikâyetine bağlıdır.",
+      "B": "Zarardan, zarar verenler ile ev sahibi (T) Spor Kulübü müteselsilen sorumludur.",
+      "C": "Stattaki eşya, mala zarar verme suçu bakımından kamu malı hükmündedir.",
+      "D": "(S) Spor Kulübü zarardan, kusuru bulunması şartıyla sorumlu tutulur.",
+      "E": "Zararı gideren (S) Spor Kulübü, zarar veren taraftarlarına rücu edemez."
+    },
+    "dogru": "C",
+    "aciklama": "Koltukların kırılması, 17 nci maddenin birinci fıkrasındaki spor alanlarında mala zarar verme suçudur. Fıkranın son cümlesine göre spor alanları ve bu alanlardaki eşya, mala zarar verme suçu bakımından KAMU MALI HÜKMÜNDEDİR; 'hükmündedir' ifadesi, bu eşyanın suç bakımından kamu malı gibi değerlendirileceğini gösterir. Aynı fıkraya göre spor alanlarında kasten yaralama veya mala zarar verme suçunun işlenmesi hâlinde ŞİKÂYET ŞARTI ARANMAKSIZIN Türk Ceza Kanunu'nun ilgili maddelerine göre verilecek ceza yarı oranında artırılır; bu yüzden faillerin cezalandırılması şikâyete bağlı değildir. Zararın tazmini ikinci fıkradadır: ZARAR VEREN KİŞİLER ve ONLARIN TARAFTARI OLDUĞU SPOR KULÜBÜ meydana gelen zarardan MÜTESELSİLEN sorumludur. Olayda bu kulüp misafir (S) Spor Kulübüdür; ev sahibi (T) Spor Kulübü bu sorumluluğun tarafı değildir. Kanun kulübün sorumluluğunu kusur şartına bağlamamıştır. Zararı gideren spor kulübünün SORUMLU TARAFTARLARINA RÜCU HAKKI ise açıkça SAKLI tutulmuştur.",
+    "dayanak": "6222 sayılı Kanun md 17/1 (ayrıca md 17/2)",
+    "zorluk": "medium",
+    "tur": "vaka"
+  },
+  {
+    "id": "6222-p1-11",
+    "articleNo": "18",
+    "kok": "6222 sayılı Kanun'a göre, hakkında ikinci kez seyirden yasaklanma yaptırımına karar verilen kişi bakımından bu yaptırım, cezanın infazı tamamlandıktan itibaren kaç yıl geçmesiyle sona erer?",
+    "siklar": {
+      "A": "Bir",
+      "B": "İki",
+      "C": "Üç",
+      "D": "Dört",
+      "E": "Beş"
+    },
+    "dogru": "C",
+    "aciklama": "Seyirden yasaklanma, bu Kanunda tanımlanan veya yollamada bulunulan kanunlardaki suçlardan dolayı mahkemece kurulan hükümde GÜVENLİK TEDBİRİ olarak verilir. 18 inci maddenin birinci fıkrasına göre hükmün kesinleşmesiyle infazına başlanan yaptırım, cezanın infazı tamamlandıktan itibaren BİR YIL geçmesiyle sona erer. Fıkranın son cümlesi bu süreyi tekrara göre kademelendirir: fıkradaki bir yıllık süreler İKİNCİ KEZ yasaklanmada ÜÇ YIL, ÜÇÜNCÜ KEZ yasaklanmada BEŞ YIL olarak uygulanır. Bir yıl cevabı kademelendirmeyi bilmeyen adayın, beş yıl cevabı ise ikinci ve üçüncü yasaklamayı karıştıran adayın tercihidir. Yasaklama kararı 5352 sayılı Adli Sicil Kanunu hükümlerine göre kaydedilir.",
+    "dayanak": "6222 sayılı Kanun md 18/1",
+    "zorluk": "easy",
+    "tur": "dogrudan"
+  },
+  {
+    "id": "6222-p1-12",
+    "articleNo": "18",
+    "kok": "6222 sayılı Kanun'a göre, koruma tedbiri olarak uygulanan seyirden yasaklama ile ilgili aşağıdakilerden hangisi doğrudur?",
+    "siklar": {
+      "A": "Soruşturma başlatılması hâlinde şüpheli hakkında derhal uygulamaya konulur.",
+      "B": "Şüpheli hakkında kamu davası açılmasıyla uygulanmaya başlanır.",
+      "C": "Taraftar gruplarınca spor alanlarının dışında işlenen kasten yaralama nedeniyle uygulanamaz.",
+      "D": "Kovuşturmaya yer olmadığı kararı verilse de bir yıl süreyle uygulanmaya devam eder.",
+      "E": "Tedbire ilişkin bilgiler, federasyon bünyesindeki merkezi veri tabanına kaydedilir."
+    },
+    "dogru": "A",
+    "aciklama": "Kural 18 inci maddenin üçüncü fıkrasındadır: bu madde kapsamına giren suçlardan dolayı soruşturma başlatılması hâlinde şüpheli hakkında spor müsabakalarını seyirden yasaklama tedbiri DERHAL uygulamaya konulur ve kaldırılmasına karar verilmedikçe yasağın uygulanmasına KORUMA TEDBİRİ olarak devam edilir. Tedbir için kamu davasının açılması ya da hüküm beklenmez; yasak, soruşturmanın başladığı anda işler. Beşinci fıkraya göre koruma tedbiri, kaldırılmasına karar verilmesi, KOVUŞTURMAYA YER OLMADIĞI kararı ya da beraat veya düşme kararı verilmesi hâlinde DERHAL kaldırılır; bu kararlar işlemi yapan kolluk birimine bildirilir ve kollukça elektronik bilgi bankasına işlenir. Tedbirin bir yıl daha sürdüğü hâller altıncı fıkrada ayrıca sayılmıştır; kovuşturmaya yer olmadığı kararı bunlardan değildir. Bilgilerin tutulduğu yer de karıştırılır: tedbire ilişkin bilgiler EMNİYET GENEL MÜDÜRLÜĞÜ bünyesindeki bu amaca özgü elektronik bilgi bankasına kaydedilir ve spor kulüpleri ile federasyonların bu bankaya erişimi sağlanır (md 18/4); federasyon bünyesindeki merkezi veri tabanı ise elektronik kart için alınan kişisel bilgilere ilişkindir (md 5/11-a). Tedbir spor alanlarıyla da sınırlı değildir: ikinci fıkra, madde hükümlerini taraftar gruplarınca spor alanlarının dışında işlenen kasten yaralama, hakaret veya tehdit içeren tezahürat ve mala zarar verme suçlarına da uygular.",
+    "dayanak": "6222 sayılı Kanun md 18/3 (ayrıca md 18/2, 18/4, 18/5)",
+    "zorluk": "medium",
+    "tur": "dogrudan"
+  },
+  {
+    "id": "6222-p1-13",
+    "articleNo": "23",
+    "kok": "6222 sayılı Kanun'da öngörülen idari para cezalarına ve diğer idari yaptırımlara karar vermeye aşağıdakilerden hangisi yetkilidir?",
+    "siklar": {
+      "A": "Kolluk amiri",
+      "B": "İl spor güvenlik kurulu",
+      "C": "Sulh ceza hâkimi",
+      "D": "Gençlik ve Spor Bakanlığı",
+      "E": "Cumhuriyet savcısı"
+    },
+    "dogru": "E",
+    "aciklama": "23 üncü maddenin üçüncü fıkrasına göre bu Kanun hükümlerine göre idari para cezasına ve diğer idari yaptırımlara karar vermeye CUMHURİYET SAVCISI yetkilidir. İdari para cezasının bir idari makamca ya da kollukça verileceğini düşünen aday bu noktada yanılır. Savcının yetkisi Kanundaki idari yaptırımların tamamını kapsar; sporda şiddeti teşvik edecek şekilde basın ve yayın yoluyla açıklamada bulunanlara verilen idari para cezası (md 22/1) ile özel güvenlik görevlisi bulundurma yükümlülüğüne aykırı davranan kulübe verilen ceza (md 21/1) bunlardandır. Federasyonların yaptırım yetkisi ayrı bir rejimdir; bu Kanuna göre bir kulübe veya mensubuna ceza verilmesi, federasyonun yaptırım uygulama yetkisini ortadan kaldırmaz (md 19/1). Gençlik ve Spor Bakanlığının Kanundaki rolü yaptırım kararı vermek değil, Kanun kapsamındaki suçlarla ilgili idari inceleme veya soruşturma yaptırmak ve yönetmelik çıkarmaktır (md 19/2, md 24). İl spor güvenlik kurulunun kararları ise güvenlik önlemlerine ilişkindir.",
+    "dayanak": "6222 sayılı Kanun md 23/3",
+    "zorluk": "medium",
+    "tur": "dogrudan"
+  },
+  {
+    "id": "6222-p1-14",
+    "articleNo": "18",
+    "kok": "Taraftarı olduğu takımın oynadığı bir müsabakada işlediği suç nedeniyle hakkında seyirden yasaklanma kararı verilen bir kişi yurt içindedir. Takımının bir sonraki müsabakası saat 20.00'de başlayacaktır. 6222 sayılı Kanun'a göre bu kişinin müsabaka günündeki yükümlülüğü aşağıdakilerden hangisidir?",
+    "siklar": {
+      "A": "Saat 19.00'da ve 22.00'de bulunduğu yere en yakın genel kolluk birimine başvurmak",
+      "B": "Saat 20.00'de ve 21.00'de bulunduğu yere en yakın genel kolluk birimine başvurmak",
+      "C": "Saat 20.00'de ve 21.00'de yerleşim yerindeki genel kolluk birimine başvurmak",
+      "D": "Saat 20.00'de ve 22.00'de bulunduğu yere en yakın genel kolluk birimine başvurmak",
+      "E": "Saat 20.00'de ve 22.00'de yerleşim yerindeki genel kolluk birimine başvurmak"
+    },
+    "dogru": "B",
+    "aciklama": "Yasaklanan kişinin müsabaka günündeki yükümlülüğü 18 inci maddenin sekizinci fıkrasındadır: yasaklama kararının sebebini oluşturan fiilin işlendiği müsabakanın tarafı olan ve TARAFTARI OLDUĞU TAKIMIN katıldığı spor müsabakalarının yapılacağı gün, yurt içinde bulunan kişi, MÜSABAKANIN BAŞLANGIÇ SAATİNDE ve BUNDAN BİR SAAT SONRA bulunduğu yere EN YAKIN genel kolluk birimine başvurur. Müsabaka 20.00'de başladığına göre başvuru saatleri 20.00 ve 21.00'dir. Saat çeldiricileri amaca uygun göründükleri için tehlikelidir: 22.00 ya da 19.00 gibi saatler kişiyi stattan uzak tutmaya daha elverişli görünse de Kanun ikinci başvuruyu başlangıçtan BİR SAAT SONRAYA bağlamıştır. Yer unsurunda da kural açıktır: başvuru yerleşim yerindeki birime değil, o gün BULUNDUĞU YERE EN YAKIN genel kolluk birimine yapılır. Yükümlülüğün takibi için biyometrik yöntemler de kullanılabilir; yükümlülüğe aykırı hareket eden kişi HER BİR MÜSABAKA İÇİN yirmi beş günden az olmamak üzere adli para cezası ile cezalandırılır (md 18/9).",
+    "dayanak": "6222 sayılı Kanun md 18/8 (ayrıca md 18/9)",
+    "zorluk": "medium",
+    "tur": "vaka"
+  }
+]

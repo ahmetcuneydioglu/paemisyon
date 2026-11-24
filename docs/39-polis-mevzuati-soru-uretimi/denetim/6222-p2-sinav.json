@@ -1,0 +1,26 @@
+[
+  {
+    "id": "6222-p2-01",
+    "karar": "ONAY",
+    "korCevap": "B",
+    "metinCevap": "C",
+    "sinavDegeri": 4,
+    "ayirtEdicilik": 4,
+    "dogallik": 4,
+    "zorluk": "hard",
+    "gerekce": "TUR 2: Kör çözümde iki yoldan da B dedim (bilgi %45: 'bir yıl'ı hatırladım, başlangıcı hatırlamadım; salt şık %50: kesişim — 'verildiği' iki şıkta, 'bir yıl' iki şıkta); ikisi de YANLIŞ. metinCevap C = anahtar (md 18/6: kararın kesinleştiği tarihten itibaren bir yıl). Kesişim kestirmesi yanlış şıkka, 'iki uç + orta' kestirmesi yalnız B–C ikilisine götürüyor; cevap salt şıkla bulunmuyor. B, md 22/3'ün gerçek başlangıcı; A (18/5) ve E (HAGB alışkanlığı) komşu hükmün ve CMK'nın alışkanlığını çeldiriciye bağlıyor. Yalnız D zayıf. md 18 kolluğun bu Kanundaki asıl işi. 'Zor' etiketi yerinde.",
+    "oneri": ""
+  },
+  {
+    "id": "6222-p2-02",
+    "karar": "ONAY",
+    "korCevap": "E",
+    "metinCevap": "E",
+    "sinavDegeri": 4,
+    "ayirtEdicilik": 3,
+    "dogallik": 4,
+    "zorluk": "medium",
+    "gerekce": "TUR 2: Kör çözümde E dedim (bilgi %50, bulanık hatıra; salt şık %40). Kullandığım kestirmeler: ikiz şıklar (C–E) ve 'kanunun alamet yaptırımı'; A'yı ve B'yi eledim. metinCevap E = anahtar (md 18/7). Yeni C, E ile ikiz kurdu ('eklenmiş şart yanlıştır' E'ye çeker); buna karşılık C 'önce çıkarılır, tekrarında yasaklanır' kademeli yaptırım sezgisini, D polis adayının sarhoşluk–idari para cezası alışkanlığını, A ise 21/4'ün gerçek kuralını yanlışa bağlıyor. Salt şıkla güven %40'ta kaldı; yüksek güvenle bulunmuyor. Hüküm kolluğun sahadaki işlemi ve bankada hiç geçmiyor. Kökün çıkarılmayı verip yalnız ek sonucu sorması 'en kapsamlı şık' kestirmesini kapatmış. Ayırt edicilik 3 ile geçer.",
+    "oneri": "İsteğe bağlı: ikiz baskısını azaltmak için C başka bir gerçek sonuçla (ör. md 18/9'un türü dışında, bu maddeye yabancı olmayan bir tedbirle) değiştirilebilir; değiştirilirse taze kör çözüm gerekir, bu yüzden bu turda dokunulmaması daha güvenli."
+  }
+]

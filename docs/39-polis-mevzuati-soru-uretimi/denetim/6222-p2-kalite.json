@@ -1,0 +1,16 @@
+[
+  {
+    "id": "6222-p2-01",
+    "karar": "ONAY",
+    "sinavDegeri": 4,
+    "gerekce": "TUR 2: Şıklar değişmedi; birinci turdaki ONAY ve çekinceler aynen geçerli. İstediğim açıklama rötuşu yapıldı ('özgüdür' → 'md 22/3'te … öngörülmüştür'). Kök rötuşu kestirme doğurmuyor. Dört çeldirici gerçek komşu, kurgu şık yok; kesişim ('bir yıl' B–C, 'verildiği' B–D) yanlış şıkka gidiyor; en uzun şık E (yanlış). 6222-p2-02 ile temas: ikisi de 'bir yıl' taşıyor, birbirinin cevabını vermiyor.",
+    "oneri": "Test derleme: 6222-p1-11, 6222-p1-12 ve 6222-p2-02 ile aynı kısa denemeye konmasın."
+  },
+  {
+    "id": "6222-p2-02",
+    "karar": "ONAY",
+    "sinavDegeri": 4,
+    "gerekce": "TUR 2: Birinci turdaki ana çekince (E yasak içeren tek şıktı) karşılandı: yasak artık iki şıkta (C ve E). D tek yüklemli oldu, en uzun ve tek bileşik şık olmaktan çıktı; polis adayının sarhoşluk alışkanlığını (idari para cezası; bankadaki iki 5326 md 35 sorusunun cevabı) yine yanlış şıkka bağlıyor, 5326'nın ikinci sonucu ve adı çıktığı için o soruların cevabı sızmıyor. Yeni kusur: C ile E tam ikiz (aynı yaptırım, biri şartlı) ve fark 'eklenmiş şart yanlıştır' kestirmesinin kalıbı. Karşı ağırlık var: 'önce çıkarılır, tekrarında yasaklanır' kademeli yaptırım sezgisi ve 'kayıtlı şık doğrudur' alışkanlığı C'ye, yani yanlışa çeker; kestirmeler çatışıyor. Yine de ikiz, yasak bilgisini iki şıkka indiriyor. En uzun şık C (yanlış). Kurgu şık bir tane (C). 18/7 bankada hiç geçmiyor; mükerrer yok. 6222-p2-01 ile ikisi de 'bir yıl' taşıyor, cevap vermiyor. Değer 4: müsabaka görevindeki kolluğun doğrudan uyguladığı hüküm; çeldiricilerin üçü gerçek komşu (21/4, 13/6, sarhoşluk alışkanlığı).",
+    "oneri": "C ikizliği yumuşatılsın: 'İlk seferde yazılı olarak uyarılır, tekrarı hâlinde seyirden yasaklanır.' Böylece C, E'nin şart eklenmiş kopyası olmaktan çıkar, kademeli yaptırım sezgisini açıkça taşır ve kısalır. Test derleme: 6222-p2-01 ve 5326 md 35 sorularıyla aynı kısa denemeye konmasın."
+  }
+]

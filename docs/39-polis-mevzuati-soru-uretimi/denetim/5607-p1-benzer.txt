@@ -1,0 +1,322 @@
+# 5607-p1 — bankadaki en benzer sorular (bütün banka, 7997 soru; eşik 0.15, aday başına 5)
+# skor = aday kök+doğru şık sözcüklerinin (IDF ağırlıklı) ne kadarının o soruda geçtiği. Yüksek skor mükerrer DEMEK DEĞİLDİR; karar gözcünündür.
+
+## 5607-p1-01
+ADAY: 5607 sayılı Kanun'a göre, kaçakçılık suçlarından birine iştirak eden kişinin, resmî makamların haber almasından sonra fiilin bütünüyle ortaya çıkmasına hizmet ve yardım etmesi hâlinde Kanunda öngörülen sonuç aşağıdakilerden hangisidir?
+ADAY DOĞRU: Üçte iki oranında ceza indirimi
+  — skor 0.23 | Ceza Hukuku / Türk Ceza Kanunu | published | id d832bf79-a584-4c22-9816-ac6efc7109b3
+    I. Taksirli sorumluluk istisnaidir. II. Birden çok kişinin işlediği taksirli suçlar bakımından iştirak hükümleri uygulanır. III. Bilinçli taksirle gerçekleştirilen hareket sonucu ortaya çıkan sonuç münhasıran failin kişisel ve ailevi durumu bakımından mağdur olmasına yol açmışsa ceza indirilebilir. IV. Bilinçli taksir cezayı artıran genel bir nedendir. 5237 sayılı Türk Ceza Yasası'na göre taksirle
+    A) Yalnız II  ✔
+    B) I ve II
+    C) II ve III
+    D) II ve IV
+    E) I, III ve IV
+  — skor 0.21 | Genel Kültür ve Güncel Olaylar / Genel Kültür | published | id 4aec441b-d6c3-4a5f-8403-03c37015842a
+    5607 sayılı Kaçakçılıkla Mücadele Kanunu’na göre, “nitelikli hâller” ile ilgili aşağıdakilerden hangisi yanlıştır?
+    A) Bu Kanun’da tanımlanan suçların, bir örgütün faaliyeti çerçevesinde işlenmesi hâlinde, verilecek ceza iki kat artırılır.
+    B) Bu Kanun’da tanımlanan suçların, beş veya daha fazla kişi tarafından birlikte işlenmesi hâlinde, verilecek ceza iki katı oranında artırılır.  ✔
+    C) Bu Kanun’da tanımlanan suçların, belgede sahtecilik yapılarak işlenmesi hâlinde, ayrıca bu suçtan dolayı da cezaya hükmolunur.
+    D) Bu Kanun’da tanımlanan suçların, tüzel kişinin faaliyeti çerçevesinde veya yararına olarak işlenmesi hâlinde, ayrıca bunlara özgü güvenlik tedbirlerine hükmolunur.
+  — skor 0.21 | Ceza Hukuku / Türk Ceza Kanunu | published | id fb79fe02-2417-4851-9a73-f37164014f3d
+    Uyuşturucu madde imal ve ticareti suçlarına iştirak eden kişi, resmî makamlar suçtan haberdar olmadan önce suç ortaklarını ve maddenin saklandığı yeri bildirmiş; bilgi maddenin ele geçirilmesini sağlamıştır. Sonuç nedir?
+    A) Ceza yarı oranında indirilir
+    B) Ceza dörtte bir oranında indirilir
+    C) Hakkında cezaya hükmolunmaz  ✔
+    D) Kamu davası beş yıl ertelenir
+    E) Yalnız adli para cezası verilir
+  — skor 0.19 | Ceza Hukuku / Türk Ceza Kanunu | published | id 6b399b78-a87b-4e43-a12e-179e4d14a2cd
+    İştirak kurumuyla ilgili aşağıdaki ifadelerden hangisi doğrudur?
+    A) Suçun işlenmesinde başkasını araç olarak kullanan kişi yalnız yardım eden olarak sorumludur.
+    B) Özgü suça iştirak mümkün değildir.
+    C) Azmettirenin kim olduğunun ortaya çıkmasını sağlayan fail veya suç ortağının cezasında kanundaki koşullarla indirim yapılabilir.  ✔
+    D) Tüm suç ortaklarına daima eşit ceza verilir.
+    E) Çok failli suçlara iştirak hiçbir durumda mümkün değildir.
+  — skor 0.18 | Polis Mevzuatı / 5607 Sayılı Kaçakçılıkla Mücadele Kanunu | published | id dfe14b96-2abd-41dc-a4c5-deed2ab2c45e
+    5607 sayılı Kaçakçılıkla Mücadele Kanunu’na göre, Kanun’da tanımlanan suçların nitelikli halleriyle ilgili aşağıdakilerden hangisi yanlıştır?
+    A) Bu suçların, örgütün faaliyeti çerçevesinde işlenmesi halinde verilecek ceza artırılır.
+    B) Bu suçların, kaçakçılık fiillerini önlemek, izlemek, araştırmak ve soruşturmakla görevli kişiler tarafından işlenmesi halinde verilecek ceza artırılır.
+    C) Bu suçların, üç veya daha fazla kişi tarafından birlikte işlenmesi halinde verilecek ceza artırılır.
+    D) Bu suçların, belgede sahtecilik yapılarak işlenmesi halinde verilecek ceza yarı oranında artırılır.  ✔
+
+## 5607-p1-02
+ADAY: 5607 sayılı Kanun'a göre, etkin pişmanlık gösterip öngörülen parayı Devlet Hazinesine ödeyen faile ceza indirimi aşağıdaki hâllerden hangisinde UYGULANMAZ?
+ADAY DOĞRU: Eşyanın ithalinin kanunen yasak olması
+  — skor 0.23 | Ceza Hukuku / Türk Ceza Kanunu | published | id d005a12e-e469-4cd2-a396-520c84b46ab4
+    Yağma suçu tamamlandıktan sonra, ancak bu suç nedeniyle kovuşturma başlamadan önce zararı tamamen gideren fail hakkında etkin pişmanlık uygulanırsa ceza ne ölçüde indirilebilir?
+    A) Altıda birine kadar
+    B) Üçte birine kadar
+    C) Yarısına kadar  ✔
+    D) Üçte ikisine kadar
+    E) Ceza verilmez
+  — skor 0.21 | Ceza Muhakemesi Hukuku / 5271 Sayılı Ceza Muhakemesi Kanunu (CMK) | published | id 62d90e34-ec0e-48c5-9208-6d800cd347c8
+    5271 sayılı Ceza Muhakemesi Kanunu’na göre, işlenen fiil, suç olma özelliğini devam ettirmesine rağmen etkin pişmanlık dolayısıyla faile ceza verilmemesi halinde aşağıdaki hüküm türlerinden hangisine karar verilmesi gerekir?
+    A) Beraat kararı
+    B) Ceza verilmesine yer olmadığı kararı  ✔
+    C) Düşme kararı
+    D) Davanın reddi kararı
+  — skor 0.21 | Ceza Hukuku / Türk Ceza Kanunu | published | id f73df0a4-ce87-490d-a72e-9cd96381b7b0
+    I. Failin duruşmada mahkemeyi etkilemeye yönelik saygılı tutum ve davranışları, takdiri indirim nedeni olarak gözetilmez. II. Takdiri indirim nedenlerinin uygulanması durumunda kararda gerekçesi gösterilir. III. Takdiri indirim nedenleri örnekleyici bir şekilde düzenlenmiş olup hangi nedenlerin bu kapsamda sayılacağı yargıcın takdirindedir. IV. Failin eylemden sonraki ve yargılama sürecindeki davr
+    A) I ve II
+    B) II ve III
+    C) I, II ve III
+    D) I, II ve IV  ✔
+    E) II, III ve IV
+  — skor 0.19 | Polis Mevzuatı / 2911 Sayılı Toplantı ve Gösteri Yürüyüşleri Kanunu | published | id bd841108-a27c-4e5c-a5b7-ed81bc93e43d
+    2911 sayılı Toplantı ve Gösteri Yürüyüşleri Kanunu'na göre, Kanunun 23 üncü maddesinde yazılı hâllerden biri gerçekleşmeden veya 24 üncü madde hükmü yerine getirilmeden YETKİ SINIRI AŞILARAK toplantı veya gösteri yürüyüşünün dağıtılması hâlinde, dağılmama fiilini işleyenler bakımından hangisi uygulanır?
+    A) Verilecek cezalar yarı oranında indirilerek uygulanır; ceza vermekten vazgeçilemez
+    B) Verilecek cezalar üçte bire kadar indirilerek uygulanabileceği gibi ceza vermekten de vazgeçilebilir
+    C) Verilecek cezalar dörtte bire kadar indirilerek uygulanabileceği gibi ceza vermekten de vazgeçilebilir  ✔
+    D) Verilecek cezalar dörtte bire kadar indirilerek uygulanır; bu indirim hâkimin takdirine bırakılmamıştır
+    E) Verilecek cezalarda indirim yapılmaz; yalnızca yetkisini aşan görevliler hakkında işlem yapılır
+  — skor 0.18 | Ceza Hukuku / Türk Ceza Kanunu | published | id 22aaa328-4dc7-4ca3-8511-d9a46d49533f
+    5237 sayılı Türk Ceza Yasası'na göre aşağıdaki suçlardan hangisi hakkında etkin pişmanlık hükümleri uygulanmaz?
+    A) İftira
+    B) Cinsel saldırı  ✔
+    C) Organ ve doku ticareti
+    D) Kişiyi özgürlüğünden yoksun bırakma
+    E) Suç işlemek amacıyla örgüt kurma
+
+## 5607-p1-03
+ADAY: 5607 sayılı Kanun'a göre, kaçakçılık fiillerini önlemek, izlemek ve araştırmakla görevli olduğu hâlde Kanunda tanımlanan suçların işlenmesine kasten göz yuman kişi hakkında öngörülen sonuç aşağıdakilerden hangisidir?
+ADAY DOĞRU: Müşterek fail olarak sorumlu tutulması
+  — skor 0.26 | Genel Kültür ve Güncel Olaylar / Genel Kültür | published | id 4aec441b-d6c3-4a5f-8403-03c37015842a
+    5607 sayılı Kaçakçılıkla Mücadele Kanunu’na göre, “nitelikli hâller” ile ilgili aşağıdakilerden hangisi yanlıştır?
+    A) Bu Kanun’da tanımlanan suçların, bir örgütün faaliyeti çerçevesinde işlenmesi hâlinde, verilecek ceza iki kat artırılır.
+    B) Bu Kanun’da tanımlanan suçların, beş veya daha fazla kişi tarafından birlikte işlenmesi hâlinde, verilecek ceza iki katı oranında artırılır.  ✔
+    C) Bu Kanun’da tanımlanan suçların, belgede sahtecilik yapılarak işlenmesi hâlinde, ayrıca bu suçtan dolayı da cezaya hükmolunur.
+    D) Bu Kanun’da tanımlanan suçların, tüzel kişinin faaliyeti çerçevesinde veya yararına olarak işlenmesi hâlinde, ayrıca bunlara özgü güvenlik tedbirlerine hükmolunur.
+  — skor 0.26 | Polis Mevzuatı / 5607 Sayılı Kaçakçılıkla Mücadele Kanunu | published | id 5514f422-0eb8-4bf6-bf82-71ac546de2ed
+    5607 sayılı Kaçakçılıkla Mücadele Kanunu’na göre nitelikli hâllerle ilgili aşağıdakilerden hangisi yanlıştır?
+    A) Bu Kanun’da tanımlanan suçların, bir örgütün faaliyeti çerçevesinde işlenmesi hâlinde, verilecek ceza iki kat artırılır.
+    B) Bu Kanun’da tanımlanan suçların, iki veya daha fazla kişi tarafından birlikte işlenmesi hâlinde, verilecek ceza iki kat artırılır.  ✔
+    C) Bu Kanun’da tanımlanan suçların, kaçakçılık fiillerini önlemek, izlemek, araştırmak ve soruşturmakla görevli kişiler tarafından veya meslek ve sanatın sağladığı kolaylıklardan yararlanmak suretiyle işlenmesi hâlinde, verilecek ceza yarı oranında artırılır.
+    D) Kaçakçılık suçunun konusunu oluşturan eşyanın, Devletin siyasî, iktisadî veya askerî güvenliğini bozacak ya da çevre veya toplum sağlığını tehdit edecek nitelikte olması hâlinde, fiil daha ağır cezayı gerektiren bir suç oluşturmadığı takdirde, verilecek hapis cezası on yıldan az olamaz.
+  — skor 0.24 | Ceza Hukuku / Türk Ceza Kanunu | published | id 781f568b-5e61-43fa-806f-3f73a414d3c6
+    Denetim görevinin ihmali suçuyla ilgili aşağıdaki ifadelerden hangisi doğrudur?
+    A) Herhangi bir kişi tarafından işlenebilir
+    B) Zimmet veya irtikâba kasten göz yuman denetim görevlisi işlenen suçun müşterek faili olur  ✔
+    C) Failin kamu görevlisi olması gerekmez
+    D) İhmalle suçun işlenmesine imkân sağlayan kişi yalnız görevi kötüye kullanmadan sorumlu olur
+    E) Kasten göz yumma hâlinde yalnız yardım eden sıfatı uygulanır
+  — skor 0.23 | Polis Mevzuatı / 5607 Sayılı Kaçakçılıkla Mücadele Kanunu | published | id dfe14b96-2abd-41dc-a4c5-deed2ab2c45e
+    5607 sayılı Kaçakçılıkla Mücadele Kanunu’na göre, Kanun’da tanımlanan suçların nitelikli halleriyle ilgili aşağıdakilerden hangisi yanlıştır?
+    A) Bu suçların, örgütün faaliyeti çerçevesinde işlenmesi halinde verilecek ceza artırılır.
+    B) Bu suçların, kaçakçılık fiillerini önlemek, izlemek, araştırmak ve soruşturmakla görevli kişiler tarafından işlenmesi halinde verilecek ceza artırılır.
+    C) Bu suçların, üç veya daha fazla kişi tarafından birlikte işlenmesi halinde verilecek ceza artırılır.
+    D) Bu suçların, belgede sahtecilik yapılarak işlenmesi halinde verilecek ceza yarı oranında artırılır.  ✔
+  — skor 0.22 | Ceza Hukuku / Türk Ceza Kanunu | published | id e55d7b19-4525-4231-9b23-fd0739f9463d
+    (A), (B), (C) ve (D) bir araya gelerek (K)'yı öldürmek amacıyla anlaşır ve pusu kurarlar. Hepsi (K)'ya ateş eder ancak yalnızca bir kurşun ona isabet eder ve ölümüne neden olur. Yapılan araştırmada kurşunun kimin silahından çıktığı ve ölümü doğuran davranışı kimin yaptığı saptanamaz. Buna göre (K)'nın ölümünden kim sorumlu olur?
+    A) (A), (B), (C) ve (D) dolaylı fail olarak
+    B) (A), (B), (C) ve (D) kasten öldürmeye teşebbüs hükümlerine göre ortaklaşa (müşterek) fail olarak
+    C) (A), (B), (C) ve (D) kasten öldürme suçundan dolayı azmettiren olarak
+    D) (A), (B), (C) ve (D) kasten öldürme suçundan dolayı yardımda bulunan olarak
+    E) (A), (B), (C) ve (D) kasten öldürme suçundan dolayı ortaklaşa (müşterek) fail olarak  ✔
+
+## 5607-p1-04
+ADAY: 5607 sayılı Kanun'a göre, “kaçakçılık suçları” ile ilgili aşağıdakilerden hangisi YANLIŞTIR?
+ADAY DOĞRU: Teşebbüs aşamasında kalan fiil için verilecek ceza indirilir.
+  — skor 0.46 | Ceza Hukuku / Türk Ceza Kanunu | published | id ec4c685e-0cef-4d6b-90b7-cb7221dce6d8
+    Göçmen kaçakçılığıyla ilgili aşağıdaki ifadelerden hangileri doğrudur? I. Suç teşebbüs aşamasında kalsa bile tamamlanmış gibi cezaya hükmolunur. II. Suç işlenirken sahte kimlik veya seyahat belgesi düzenlenirse ayrıca belge suçundan ceza verilebilir. III. Suçun örgüt faaliyeti çerçevesinde işlenmesi cezayı artırır.
+    A) Yalnız I
+    B) Yalnız III
+    C) I ve II
+    D) I ve III
+    E) I, II ve III  ✔
+  — skor 0.45 | Polis Mevzuatı / 5607 Sayılı Kaçakçılıkla Mücadele Kanunu | published | id dfe14b96-2abd-41dc-a4c5-deed2ab2c45e
+    5607 sayılı Kaçakçılıkla Mücadele Kanunu’na göre, Kanun’da tanımlanan suçların nitelikli halleriyle ilgili aşağıdakilerden hangisi yanlıştır?
+    A) Bu suçların, örgütün faaliyeti çerçevesinde işlenmesi halinde verilecek ceza artırılır.
+    B) Bu suçların, kaçakçılık fiillerini önlemek, izlemek, araştırmak ve soruşturmakla görevli kişiler tarafından işlenmesi halinde verilecek ceza artırılır.
+    C) Bu suçların, üç veya daha fazla kişi tarafından birlikte işlenmesi halinde verilecek ceza artırılır.
+    D) Bu suçların, belgede sahtecilik yapılarak işlenmesi halinde verilecek ceza yarı oranında artırılır.  ✔
+  — skor 0.45 | Genel Kültür ve Güncel Olaylar / Genel Kültür | published | id 4aec441b-d6c3-4a5f-8403-03c37015842a
+    5607 sayılı Kaçakçılıkla Mücadele Kanunu’na göre, “nitelikli hâller” ile ilgili aşağıdakilerden hangisi yanlıştır?
+    A) Bu Kanun’da tanımlanan suçların, bir örgütün faaliyeti çerçevesinde işlenmesi hâlinde, verilecek ceza iki kat artırılır.
+    B) Bu Kanun’da tanımlanan suçların, beş veya daha fazla kişi tarafından birlikte işlenmesi hâlinde, verilecek ceza iki katı oranında artırılır.  ✔
+    C) Bu Kanun’da tanımlanan suçların, belgede sahtecilik yapılarak işlenmesi hâlinde, ayrıca bu suçtan dolayı da cezaya hükmolunur.
+    D) Bu Kanun’da tanımlanan suçların, tüzel kişinin faaliyeti çerçevesinde veya yararına olarak işlenmesi hâlinde, ayrıca bunlara özgü güvenlik tedbirlerine hükmolunur.
+  — skor 0.45 | Polis Mevzuatı / 5607 Sayılı Kaçakçılıkla Mücadele Kanunu | published | id 5514f422-0eb8-4bf6-bf82-71ac546de2ed
+    5607 sayılı Kaçakçılıkla Mücadele Kanunu’na göre nitelikli hâllerle ilgili aşağıdakilerden hangisi yanlıştır?
+    A) Bu Kanun’da tanımlanan suçların, bir örgütün faaliyeti çerçevesinde işlenmesi hâlinde, verilecek ceza iki kat artırılır.
+    B) Bu Kanun’da tanımlanan suçların, iki veya daha fazla kişi tarafından birlikte işlenmesi hâlinde, verilecek ceza iki kat artırılır.  ✔
+    C) Bu Kanun’da tanımlanan suçların, kaçakçılık fiillerini önlemek, izlemek, araştırmak ve soruşturmakla görevli kişiler tarafından veya meslek ve sanatın sağladığı kolaylıklardan yararlanmak suretiyle işlenmesi hâlinde, verilecek ceza yarı oranında artırılır.
+    D) Kaçakçılık suçunun konusunu oluşturan eşyanın, Devletin siyasî, iktisadî veya askerî güvenliğini bozacak ya da çevre veya toplum sağlığını tehdit edecek nitelikte olması hâlinde, fiil daha ağır cezayı gerektiren bir suç oluşturmadığı takdirde, verilecek hapis cezası on yıldan az olamaz.
+  — skor 0.41 | Ceza Hukuku / Türk Ceza Kanunu | published | id d437b136-2cd0-44ce-b781-b5016b36aa43
+    I. Maddi iştirak, manevi iştirakten daha ağır biçimde cezalandırılır. II. İştiraki düzenleyen hükümler cezai sorumluluğu daraltır. III. Teşebbüs aşamasında kalan suçlara iştirak mümkündür. IV. İştirak iradesinin açıklanması cezai sorumluluk için yeterlidir. Suça iştirak ile ilgili yukarıdaki ifadelerden hangisi doğrudur?
+    A) Yalnız III  ✔
+    B) I ve III
+    C) I ve IV
+    D) III ve IV
+    E) I, III ve IV
+
+## 5607-p1-05
+ADAY: 5607 sayılı Kanun'a göre, kaçak eşyaya ilişkin olup taşıma aracının müsaderesine imkân veren aşağıdaki durumlardan hangisi, el konulan taşıtın alıkonulmasını da gerektirir?
+ADAY DOĞRU: Özel hazırlanmış gizli tertibatta taşınması
+  — skor 0.16 | Anayasa Hukuku / T.C. Anayasası | published | id a188898d-ae2a-4c0d-8f6a-58e926f19050
+    Milletvekili Murat, milletvekilliğiyle bağdaşmayan bir görevi sürdürmekte ısrar eder. Murat'ın durumu Başkanlık Divanınca incelenir. Sonuç, Başkanlık Divanı kararı olarak Anayasa ve Adalet Komisyonu üyelerinden kurulu Karma Komisyona gönderilir. Karma Komisyonun durumu usulüne uygun olarak inceleyip hazırladığı raporda Murat'ın milletvekilliğinin düşmesi gerektiği belirtilir. Buna göre Murat'ın mi
+    A) Rapor Başkanlık Divanınca uygun bulunur ve Genel Kurulun bilgisine sunulduğu anda Murat'ın milletvekilliği düşer.
+    B) Rapor Genel Kurulda görüşülür, Murat'ın milletvekilinin düşmesine ilişkin gizli oylama yapılır ve karar yeter sayısı açısından, Meclis üye tam sayısının 1/4'ünün bir fazlasından az olmamak üzere toplantıya katılanların salt çoğunluğu aranır.  ✔
+    C) Rapor Genel Kurulda görüşülür, Murat'ın milletvekilliğinin düşmesine ilişkin kural olarak işaretle oylama yapılır ve karar yeter sayısı açısından Meclis üye tam sayısının 1/4'ünün bir fazlasından az olmamak üzere toplantıya katılanların salt çoğunluğu aranır.
+    D) Rapor Genel Kurulda görüşülür, Murat'ın milletvekilliğinin düşmesine ilişkin kural olarak işaretle oylama yapılır ve karar yeter sayısı açısından Meclis üye tamsayısının salt çoğunluğu aranır.
+    E) Rapor Genel Kurulda görüşülür, Murat'ın milletvekilliğinin düşmesine ilişkin gizli oylama yapılır ve karar yeter sayısı açısından Meclis üye tam sayısının salt çoğunluğu aranır.
+  — skor 0.16 | Ceza Hukuku / Türk Ceza Kanunu | published | id a7bdd5dd-77a0-4b2f-a5bd-8c7c7ef10a05
+    I. Taşınmaz, hak ve alacaklara el koyma II. Suçta tekerrür III. Her türlü taşıtı kullanamama ve gerektiğinde sürücü belgesini teslim etme IV. Sınır dışı edilme Hangileri 5237 sayılı TCK'da düzenlenen güvenlik tedbirlerindendir?
+    A) I ve II
+    B) II ve III
+    C) II ve IV  ✔
+    D) I, II ve IV
+    E) II, III ve IV
+  — skor 0.16 | Ceza Hukuku / Türk Ceza Kanunu | published | id 66b666e1-952c-4f2d-9b9d-07ceec56dfc1
+    I. Geri verilmesi istenilen kişinin etnik kökeni nedeniyle bir soruşturma veya kovuşturmaya maruz bırakılacağına ilişkin kuvvetli şüphe nedenlerinin bulunması durumunda geri verme isteminin kabulü Cumhurbaşkanının takdirindedir. II. Geri verme isteminin, ölüm cezası veya insan onuru ile bağdaşmayan bir ceza gerektiren suçlara ilişkin olması durumunda geri verme istemi kabul edilmez. III. Geri veri
+    A) Yalnız I
+    B) I ve III  ✔
+    C) II ve IV
+    D) I, II ve III
+    E) I, III ve IV
+  — skor 0.15 | İdare Hukuku / İdare Hukuku | published | id 91d3e1ce-1a80-450e-a267-d585602cb6b0
+    Kamu hizmeti imtiyaz sözleşmelerinde, hizmetin ifası sırasında tarafların iradesi dışındaki mücbir nedenlerden dolayı imtiyazcının zararına olabilecek durumlar karşısında imtiyazcının idareden sözleşmenin yeni koşullara uydurulmasını ve zararının geçici olarak tanzimini istemesine imkân veren temel ilke aşağıdakilerden hangisidir?
+    A) Öngörülemezlik (imprevizyon)  ✔
+    B) Fait du prince (hükümdarın fiili)
+    C) Tahkim
+    D) Belirsizlik
+    E) Dengesizlik
+
+## 5607-p1-06
+ADAY: 5607 sayılı Kanun'a göre, kaçak akaryakıt hariç olmak üzere kaçak şüphesiyle el konulan eşya hakkında soruşturma aşamasında tasfiye kararı aşağıdakilerden hangisi tarafından verilir?
+ADAY DOĞRU: Hâkim
+  — skor 0.28 | Ceza Muhakemesi Hukuku / 5271 Sayılı Ceza Muhakemesi Kanunu (CMK) | published | id e0507e06-b2ae-4a16-809c-27cbb7746ede
+    5271 sayılı Ceza Muhakemesi Kanunu’na göre, “el konulan eşyanın muhafazası veya elden çıkarılması” ile ilgili aşağıdakilerden hangisi yanlıştır?
+    A) El konulan eşya, delil olarak saklanmasına gerek kalmaması hâlinde, rayiç değerinin derhâl ödenmesi karşılığında, ilgiliye teslim edilebilir.
+    B) Elden çıkarma kararı, soruşturma evresinde Cumhuriyet savcısı, kovuşturma evresinde hâkim tarafından verilir.  ✔
+    C) El konulan eşya, zarara uğraması veya değerinde esaslı ölçüde kayıp meydana gelme tehlikesinin varlığı hâlinde, hükmün kesinleşmesinden önce elden çıkarılabilir.
+    D) Karar verilmeden önce eşyanın sahibi olan şüpheli, sanık veya ilgili diğer kişiler dinlenir; elden çıkarma kararı, kendilerine bildirilir.
+    E) El konulan eşya, soruşturma evresinde Cumhuriyet Başsavcılığı, kovuşturma evresinde mahkeme tarafından, bakım ve gözetimiyle ilgili tedbirleri almak ve istendiğinde derhâl iade edilmek koşuluyla, muhafaza edilmek üzere, şüpheliye, sanığa veya diğer bir kişiye teslim edilebilir.
+  — skor 0.24 | Polis Mevzuatı / 6136 Sayılı Ateşli Silahlar ve Bıçaklar Hakkında Kanun | published | id 9e429569-378b-4e1d-8a13-032545304256
+    I. Soruşturma veya kovuşturma sonunda el konulan eşyanın iadesine karar verilirse eşya öncelikle aynen iade edilir; aynen iade mümkün değilse rayiç değeri ödenir. II. Tahsis talebi üzerine verilen kararlara karşı itiraz edilebilir. III. El konulan eşyanın delil olarak saklanmasına gerek bulunsa bile tahsis talep edilebilir. 6136 sayılı Kanun'un Ek 12 nci maddesinde düzenlenen el konulan eşyanın ta
+    A) Yalnız I
+    B) Yalnız II  ✔
+    C) I ve II
+    D) II ve III
+    E) I, II ve III
+  — skor 0.21 | Ceza Muhakemesi Hukuku / 5271 Sayılı Ceza Muhakemesi Kanunu (CMK) | published | id 0835ea3b-589d-4ba9-bbe4-1c31e452ba90
+    5271 sayılı Ceza Muhakemesi Kanunu’na göre; elden çıkarma kararı, soruşturma evresinde aşağıdakilerden hangisi tarafından verilir?
+    A) Cumhuriyet başsavcısı
+    B) Cumhuriyet savcısı
+    C) Kolluk amiri
+    D) Mahkeme
+    E) Hâkim  ✔
+  — skor 0.21 | Ceza Muhakemesi Hukuku / 5271 Sayılı Ceza Muhakemesi Kanunu (CMK) | published | id e76ba782-4cab-4486-b137-b4af467a61a3
+    (A) hakkında kuvvetli suç şüphesinin varlığını gösteren somut kanıtların varlığına dayanılarak zimmet suçunu işlediği gerekçesiyle soruşturma başlatılmıştır. Cumhuriyet savcısı (C), (A)'nın tutuklanmasını istemeyi düşünmektedir. Olayla ilgili aşağıdaki ifadelerden hangisi yanlıştır?
+    A) Hakkında tutuklama kararı istenildiğinde (A), kendisinin seçeceği veya baro tarafından görevlendirilecek bir müdafinin yardımından yararlanır.
+    B) (A)'nın tutuklanmasına (C)'nin istemi üzerine sulh ceza yargıcı tarafından karar verilebilir.
+    C) (A) hakkında tutuklama kararı verilmesi durumunda (C), soruşturma evresinde tutuklamanın artık gereksiz olduğu kanısına varırsa (A)'yı resen serbest bırakabilir.
+    D) Hakkında tutuklama kararı verilmesi durumunda (A), soruşturma evresinin her aşamasında salıverilmesini isteyebilir.
+    E) (A) hakkında soruşturma aşamasında tutukluluk süresi en çok 2 yıl olup gerekçesi gösterilerek 1 yıl daha uzatılabilir.  ✔
+  — skor 0.21 | Ceza Muhakemesi Hukuku / 5271 Sayılı Ceza Muhakemesi Kanunu (CMK) | published | id 644b6896-b45a-4c85-b1eb-fc2f72c36f48
+    A hakkında kuvvetli suç şüphesinin varlığını gösteren somut delillerin varlığına dayanılarak kasten öldürme suçunu işlediği gerekçesiyle soruşturma başlatılıyor. 5271 sayılı Ceza Muhakemesi Kanunu'na göre bu olayla ilgili aşağıdaki ifadelerden hangisi yanlıştır?
+    A) A hakkında tutuklama nedeni var sayılıp tutuklama kararı verilebilir.
+    B) A hakkında tutuklama kararı verilmesi hâlinde Cumhuriyet savcısı soruşturma evresinde tutuklamanın artık gereksiz olduğu kanısına vararak A'yı resen serbest bırakabilir.
+    C) Hakkında tutuklama kararı verilmesi hâlinde A, soruşturma evresinin her aşamasında salıverilmesini isteyebilir.
+    D) A hakkında soruşturma aşamasında tutukluluk süresi en çok 1 yıl 6 ay olup gerekçesi gösterilerek 6 ay daha uzatılabilir.  ✔
+    E) A'nın tutuklanmasına Cumhuriyet savcısının istemi üzerine sulh ceza hâkimi tarafından karar verilebilir.
+
+## 5607-p1-07
+ADAY: 5607 sayılı Kanun'a göre, il özel idaresi bulunmayan bir ildeki akaryakıt istasyonunda ele geçirilen kaçak akaryakıt, tutanakla ve yakalandığı yerde aşağıdakilerden hangisine teslim edilir?
+ADAY DOĞRU: Yatırım izleme ve koordinasyon başkanlığına
+  — skor 0.18 | Polis Mevzuatı / Yakalama, Gözaltına Alma ve İfade Alma Yönetmeliği | published | id aed5eb2f-f91a-4889-ba31-d145586e1459
+    Yakalama, Gözaltına Alma ve İfade Alma Yönetmeliği'ne göre, bir suçun tespiti veya aydınlatılmasına yönelik olarak müşteki ve suçtan zarar gören ile suç işleme şüphesi altında bulunmayan diğer kişilerin dinlenmesi ve tutanağa geçirilmesi aşağıdakilerden hangisidir?
+    A) Bilgi alma  ✔
+    B) İfade alma
+    C) Sorgu
+    D) Yer gösterme
+    E) Muhafaza altına alma
+  — skor 0.16 | Polis Mevzuatı / 657 Sayılı Devlet Memurları Kanunu | published | id 57b21fcc-20c0-4a15-a8b3-5addc654e99e
+    Bir bakanlıkta memur olan Ayşe Hanım'ın başka bir kurumda memur olan eşi, yer değiştirme suretiyle başka bir ile atanmıştır. Ayşe Hanım'ın kurumunun o ilde teşkilatı ve niteliğine uygun boş bir kadrosu bulunmaktadır. 657 sayılı Kanun'a göre Ayşe Hanım'ın ataması ile ilgili aşağıdakilerden hangisi doğrudur?
+    A) Eşinin atanmasıyla birlikte, ayrıca bir istek aranmadan eşinin bulunduğu ile resen atanır.
+    B) İsteği hâlinde, ataması yapılmaz; eşinin oradaki görevi sürdüğü müddetçe kendisine izin verilir.
+    C) İsteği hâlinde, kurumları arasında yapılacak koordinasyonla eşinin atandığı ildeki bir kadroya atanır.  ✔
+    D) Kurumunun bölgeler arası atama planına göre ve eşinin atamasından bağımsız olarak yer değiştirmeye tabi tutulur.
+    E) İsteği hâlinde, 74 ve 76 ncı maddelerdeki esaslara bağlı kalınmaksızın eşinin atandığı ildeki bir kadroya atanır.
+
+## 5607-p1-08
+ADAY: I. Kaçakçılığı önlemekle yükümlü görevli, ihbar ettiği olayda yakalamaya katılmamışsa muhbir ikramiyesi alır. II. İhbarın niteliği muhbir hakkında suç oluşturuyorsa muhbirin kimliği açıklanabilir. III. Yakalamaya fiilen katılmayan, ancak analiz veya planlama çalışmasıyla katkı sağlayan görevli de el
+ADAY DOĞRU: II ve III
+  — skor 0.17 | Polis Mevzuatı / 4483 Sayılı Memurların Yargılanması Hakkında Kanun | published | id 6e9af8ce-f05a-40a0-9dec-de0d0bf5ad2e
+    I. Soruşturma izni; şikâyet, ihbar veya iddia konusu olaylar ile bunlara bağlı olarak ileride soruşturma sırasında ortaya çıkabilecek konuları kapsar. II. Soruşturma sırasında izin verilen olay ve konudan tamamen ayrı veya farklı bir suç olarak nitelendirilebilecek bir fiilin ortaya çıkması, yeniden izin alınmasını gerektirmez. III. Suçun hukuki niteliği değiştiğinde yeniden izin alınması zorunlud
+    A) Yalnız I  ✔
+    B) Yalnız II
+    C) I ve III
+    D) II ve III
+  — skor 0.17 | Polis Mevzuatı / 5395 Sayılı Çocuk Koruma Kanunu | published | id 44724462-33ff-432e-996a-a79b5a7b69be
+    5395 sayılı Çocuk Koruma Kanunu’nda düzenlenen yönlendirme tedbirlerinin süreleriyle ilgili olarak; I. Sosyal ve toplumsal hizmetler tedbirinde çocuk, 20 saatten 300 saate kadar psikososyal gelişimine katkı sağlayacak görev alır. II. Dijital risklerden korunma tedbirinde cihazın tedbir kararından sonraki hareketleri, 3 aydan az ve 2 yıldan fazla olmamak üzere denetime açılır. III. Tütün, nikotin, 
+    A) Yalnız I
+    B) I ve II  ✔
+    C) I ve III
+    D) II ve III
+    E) I, II ve III
+
+## 5607-p1-09
+ADAY: Eşyanın, gümrük kapıları dışından ülkeye sokulması hâlinde, verilecek ceza - - - - artırılır. 5607 sayılı Kanun'a göre, bu hükümde boş bırakılan yere aşağıdakilerden hangisi getirilmelidir?
+ADAY DOĞRU: üçte birinden yarısına kadar
+  — skor 0.40 | Polis Mevzuatı / 5607 Sayılı Kaçakçılıkla Mücadele Kanunu | published | id ada842ea-4eb4-4ec4-a276-e86b52820c0c
+    Eşyayı, aldatıcı işlem ve davranışlarla gümrük vergileri kısmen veya tamamen ödenmeksizin ülkeye sokan kişi, - - - - yıldan - - - - yıla kadar hapis ve on bin güne kadar adlî para cezası ile cezalandırılır. 5607 sayılı Kaçakçılıkla Mücadele Kanunu’na göre yukarıdaki hükümde boş bırakılan yerlere sırasıyla hangileri getirilmelidir?
+    A) bir - üç
+    B) bir - beş
+    C) iki - beş  ✔
+    D) iki - dört
+  — skor 0.32 | Genel Kültür ve Güncel Olaylar / Genel Kültür | published | id f0d44646-a634-42f5-a0ca-c5e691c9103e
+    İhracı kanun gereği yasak olan eşyayı ülkeden çıkaran kişi, fiil daha ağır cezayı gerektiren başka bir suç oluşturmadığı takdirde, - - - - kadar hapis ve beş bin güne kadar adli para cezası ile cezalandırılır. 5607 sayılı Kaçakçılıkla Mücadele Kanunu’na göre, bu hükümde boş bırakılan yere aşağıdakilerden hangisi getirilmelidir?
+    A) altı aydan bir yıla
+    B) dokuz aydan iki yıla
+    C) bir yıldan üç yıla  ✔
+    D) üç yıldan beş yıla
+  — skor 0.28 | Genel Kültür ve Güncel Olaylar / Genel Kültür | published | id 0bca840a-8389-4097-bc6c-a2e2bbc95fd3
+    Yabancı bir mahkeme tarafından verilen ilamların tenfizi için açılacak davalardan, bu ilamlarda hükmolunmuş şeyin değeri, nevi ve mahiyetine göre - - - - tarife gereğince harç alınır. 492 sayılı Harçlar Kanunu’na göre, bu hükümde boş bırakılan yere aşağıdakilerden hangisi getirilmelidir?
+    A) (1) sayılı  ✔
+    B) (2) sayılı
+    C) (5) sayılı
+    D) (7) sayılı
+    E) (8) sayılı
+  — skor 0.28 | Polis Mevzuatı / 6136 Sayılı Ateşli Silahlar ve Bıçaklar Hakkında Kanun | published | id 097333fb-71d1-40bb-ba67-cf4afe45b2b4
+    Ateşli silahla işlenen suçlardan hükümlü bulunanlar ile taksirli suçlar hariç olmak üzere bir yıldan fazla hapis cezasına mahkûm olanlara, mahkûm olunan cezanın infazının tamamlandığı tarihten itibaren - - - - yıl geçmedikçe ve haklarında yasaklanmış hakların geri verilmesine ilişkin karar verilmedikçe, ateşli silah taşıma ve bulundurma izni verilemez. 6136 sayılı Ateşli Silahlar ve Bıçaklar ile D
+    A) bir
+    B) iki
+    C) üç
+    D) dört
+    E) beş  ✔
+  — skor 0.28 | Polis Mevzuatı / 657 Sayılı Devlet Memurları Kanunu | published | id 90c2da3c-b182-46ec-a29f-32717c5b9b1e
+    Disiplin cezasını gerektiren fiil ve hâllerin işlendiği tarihten itibaren nihayet - - - - içinde disiplin cezası verilmediği takdirde ceza verme yetkisi zaman aşımına uğrar. 657 sayılı Devlet Memurları Kanunu’na göre, bu hükümde boş bırakılan yere hangisi getirilmelidir?
+    A) altı ay
+    B) bir yıl
+    C) on sekiz ay
+    D) iki yıl  ✔
+
+## 5607-p1-10
+ADAY: Gümrük işlemlerine tabi tutulmadan ülkeye sokulduğunu bildiği bir kol saatini kendi kullanımı için satın alan kişi tespit edilmiştir. 5607 sayılı Kanun'a göre, bu kişi hakkında aşağıdakilerden hangisi doğrudur?
+ADAY DOĞRU: Bu fiilden dolayı cezalandırılmaz.
+  — skor 0.25 | Polis Mevzuatı / 5607 Sayılı Kaçakçılıkla Mücadele Kanunu | published | id ada842ea-4eb4-4ec4-a276-e86b52820c0c
+    Eşyayı, aldatıcı işlem ve davranışlarla gümrük vergileri kısmen veya tamamen ödenmeksizin ülkeye sokan kişi, - - - - yıldan - - - - yıla kadar hapis ve on bin güne kadar adlî para cezası ile cezalandırılır. 5607 sayılı Kaçakçılıkla Mücadele Kanunu’na göre yukarıdaki hükümde boş bırakılan yerlere sırasıyla hangileri getirilmelidir?
+    A) bir - üç
+    B) bir - beş
+    C) iki - beş  ✔
+    D) iki - dört
+  — skor 0.17 | Ceza Hukuku / Türk Ceza Kanunu | published | id f7333731-f057-4217-a262-e8b1dee3d700
+    Türk Ceza Kanunu'nun 7. maddesinde yer alan 'zaman bakımından uygulama' ilkesine göre, bir fiil işlendiği zaman yürürlükte bulunan kanuna göre suç sayılmıyorsa, sonradan suç sayılan bir kanunla cezalandırılabilme durumu ile ilgili aşağıdaki ifadelerden hangisi doğrudur?
+    A) Kanun koyucunun kararına bağlıdır.
+    B) Yargılamayı yapan hakimin takdirine bağlıdır.
+    C) Sadece ağır cezalık suçlarda cezalandırılabilir.
+    D) Kimseye işlendiği zaman yürürlükte bulunan kanuna göre suç sayılmayan bir fiilden dolayı ceza verilemez.  ✔
+    E) Kamu yararı varsa cezalandırılabilir.
+  — skor 0.16 | Polis Mevzuatı / 2559 Sayılı Polis Vazife ve Salâhiyet Kanunu (PVSK) | published | id d8e629ee-bbb5-42e3-881b-88f44366c85f
+    2559 sayılı Polis Vazife ve Salâhiyet Kanunu'na göre, kimliği belirlenemeyen kişi hakkında yapılacak işlemle ilgili aşağıdakilerden hangisi yanlıştır?
+    A) Kişi tutularak durumdan derhal Cumhuriyet savcısı haberdar edilir.
+    B) Kişi, kimliği açık bir şekilde anlaşılıncaya kadar gözaltına alınır ve gerekirse tutuklanır.
+    C) Gözaltına ve tutuklamaya karar verme yetkisi ve usulü bakımından Ceza Muhakemesi Kanunu hükümleri uygulanır.
+    D) Kişinin kimliğinin belirlenmesi durumunda gözaltına alınma veya tutuklanma hâline derhal son verilir.
+    E) Kimliğin tespiti amacıyla tutulan kişiye, talebi olmasa dahi tutulma süresini gösteren bir belge resen verilir.  ✔
+  — skor 0.15 | Polis Mevzuatı / 6284 Sayılı Kanuna İlişkin Uygulama Yönetmeliği | published | id 7dc1bfd7-6264-4f29-b17e-54bb11cb0808
+    Geçici maddi yardım yapılan korunan kişinin gerçeğe aykırı beyanda bulunduğu ŞÖNİM tarafından tespit edilmiştir. I. Tutanak tutulur ve sosyal inceleme raporu düzenlenir. II. Yapılan ödemeler korunan kişiden tahsil edilir. III. Korunan kişi hakkında verilen koruyucu tedbir kararı kendiliğinden kalkar. IV. Şiddet uygulayandan daha önce tahsil edilmiş tutar varsa şiddet uygulayana iade edilir. 6284 s
+    A) I ve II
+    B) II ve III
+    C) I, II ve IV  ✔
+    D) I, III ve IV
+    E) II, III ve IV

@@ -1,0 +1,34 @@
+# 7201-p2 — bankadaki en benzer sorular (bütün banka, 7720 soru; eşik 0.15, aday başına 5)
+# skor = aday kök+doğru şık sözcüklerinin (IDF ağırlıklı) ne kadarının o soruda geçtiği. Yüksek skor mükerrer DEMEK DEĞİLDİR; karar gözcünündür.
+
+## 7201-p2-01
+ADAY: Usulüne uygun tebligat yapılmış olan davalı adresini değiştirmiş, yenisini mahkemeye bildirmemiştir; adres kayıt sisteminde de yerleşim yeri adresi tespit edilememiştir. 7201 sayılı Kanun'a göre, bu kişiye çıkarılacak yeni tebligatta hangisi yapılır?
+ADAY DOĞRU: Evrakın bir nüshası eski adresteki binanın kapısına asılır.
+  — skor 0.34 | Polis Mevzuatı / 7201 Sayılı Tebligat Kanunu | published | id d08dc454-60a8-49e2-b021-8907bb03b5b7
+    7201 sayılı Kanun'a göre, adres kayıt sistemindeki adresine tebligat çıkarılan muhatabın o adreste hiç oturmadığı anlaşılırsa tebliğ memuru aşağıdakilerden hangisini yapar?
+    A) Adresin meçhul olduğunu muhtara şerh verdirir.
+    B) Evrakı o yerin muhtarına teslim eder.  ✔
+    C) Evrakı en yakın komşusuna bırakır.
+    D) Evrakın bir nüshasını binanın kapısına asar.
+    E) Evrakı tebliğ yapılamadığı şerhiyle merciine iade eder.
+  — skor 0.17 | İdare Hukuku / 2577 İdari Yargılama Usulü Kanunu (İYUK) | published | id 94cc6555-e33c-40cf-a524-24f15a1e08a9
+    Ahmet'in açtığı iptal davası sırasında gösterdiği adrese tebligat yapılamaması üzerine yeni adresini bildirmesine kadar dava dosyası işlemden kaldırılıyor. 2577 sayılı İYUK'a göre Ahmet, dosyanın işlemden kaldırıldığı tarihten itibaren en fazla ne kadar süre içinde yeni adres bildirerek dosyanın yeniden işleme konulmasını talep etmezse davanın açılmamış sayılmasına karar verilir?
+    A) Üç ay
+    B) Dört ay
+    C) Altı ay
+    D) Bir yıl  ✔
+    E) İki yıl
+  — skor 0.16 | Polis Mevzuatı / 7201 Sayılı Tebligat Kanunu | published | id c601308b-ddc4-4ce6-949d-2a490adcb5ff
+    7201 sayılı Kanun'a göre, talebi üzerine elektronik tebligat adresi verilen bir gerçek kişiye tebligat nasıl yapılır?
+    A) Kişinin tercihine göre elektronik yolla ya da adresine yapılır.
+    B) Yolu tebliği çıkaran merci belirler.
+    C) Önce adresine, yapılamazsa elektronik yolla yapılır.
+    D) Elektronik yolla yapılması zorunludur.  ✔
+    E) Elektronik yolla yapılır; ancak ilk tebligat adresine yapılır.
+  — skor 0.16 | Genel Kültür ve Güncel Olaylar / Genel Kültür | published | id 8a282fb7-6b0b-4d80-9411-6003a2c9f256
+    Tebligat yapılması gereken hâllerde bir kimse kendisine veya başkasına ait isim veya adresi yanlış olarak bildirir ise fail hakkında - - - - kadar hapis cezasına hükmolunur. 7201 sayılı Tebligat Kanunu’na göre, bu hükümde boş bırakılan yere aşağıdakilerden hangisi getirilmelidir?
+    A) üç aydan bir yıla
+    B) üç aydan iki yıla
+    C) altı aydan bir yıla
+    D) altı aydan iki yıla  ✔
+    E) altı aydan beş yıla

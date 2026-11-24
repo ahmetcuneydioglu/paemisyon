@@ -1,0 +1,41 @@
+# tedbir-yon-p1 — bankadaki en benzer sorular (bütün banka, 7720 soru; eşik 0.15, aday başına 5)
+# skor = aday kök+doğru şık sözcüklerinin (IDF ağırlıklı) ne kadarının o soruda geçtiği. Yüksek skor mükerrer DEMEK DEĞİLDİR; karar gözcünündür.
+
+## tedbir-yon-p1-01
+ADAY: Koruyucu ve Destekleyici Tedbir Kararlarının Uygulanması Hakkında Yönetmelik'e göre, tedbir kararının, gönderildiği ilde uygulanması mümkün olmazsa tedbirin nerede uygulanacağına aşağıdakilerden hangisi karar verir?
+ADAY DOĞRU: Kararı yerine getirmekle sorumlu kurum
+  — skor 0.43 | Polis Mevzuatı / 5395 Sayılı Çocuk Koruma Kanunu | published | id 797a1a9a-92cb-46cd-bc00-46e8d88f71a5
+    Çocuk Koruma Kanununa Göre Verilen Koruyucu ve Destekleyici Tedbir Kararlarının Uygulanması Hakkında Yönetmelik’inde, aşağıdakilerden hangisi danışmanlık tedbirini yerine getirmekle sorumlu kurumlar arasında sayılmıştır?
+    A) Millî Eğitim Bakanlığı  ✔
+    B) Adalet Bakanlığı
+    C) Çalışma ve Sosyal Güvenlik Bakanlığı bölge müdürlükleri
+    D) İl sağlık müdürlükleri
+    E) İçişleri Bakanlığı
+  — skor 0.37 | Polis Mevzuatı / 5395 Sayılı Çocuk Koruma Kanunu | published | id 15acf77a-235a-496a-94e6-e592c3292d32
+    Çocuk Koruma Kanununa Göre Verilen Koruyucu ve Destekleyici Tedbir Kararlarının Uygulanması Hakkında Yönetmelik’e göre, “acil korunma kararı alınması” ile ilgili aşağıdakilerden hangisi yanlıştır?
+    A) Hâkim tarafından, üç gün içinde talep hakkında karar verilir.
+    B) Acil korunma kararı en fazla otuz günlük süre ile sınırlı olmak üzere verilebilir.
+    C) Hâkim, çocuğun bulunduğu yerin gizli tutulmasına ve gerektiğinde kişisel ilişkinin tesisine karar verebilir.
+    D) Kurum tarafından çocuğun Kuruma geldiği tarihten itibaren en geç yedi gün içinde çocuk hâkimine müracaat edilir.  ✔
+    E) Çocuğun, ailesine teslim edilip edilmeyeceğine veya uygun görülen başkaca bir tedbire hâkim tarafından karar verilir.
+  — skor 0.37 | Polis Mevzuatı / 5395 Sayılı Çocuk Koruma Kanunu | published | id 54585d2a-0e59-409c-853f-8f88e49833e7
+    Çocuk Koruma Kanununa Göre Verilen Koruyucu ve Destekleyici Tedbir Kararlarının Uygulanması Hakkında Yönetmelik kapsamında, bakım tedbiri kararı aşağıdakilerden hangisine gönderilir?
+    A) İl sağlık müdürlükleri
+    B) Yerel yönetimler
+    C) Aile ve Sosyal Hizmetler Bakanlığı il müdürlükleri  ✔
+    D) İl millî eğitim müdürlükleri
+    E) Çalışma ve Sosyal Güvenlik Bakanlığı il müdürlükleri
+  — skor 0.33 | Polis Mevzuatı / 5395 Sayılı Çocuk Koruma Kanunu | published | id 4de44995-510a-4f70-92f2-811d291d9369
+    Çocuk Koruma Kanununa Göre Verilen Koruyucu ve Destekleyici Tedbir Kararlarının Uygulanması Hakkında Yönetmelik kapsamında, koruyucu ve destekleyici tedbirlerin yerine getirilmesinde merkezî koordinasyonun sekretarya hizmetleri Aile ve Sosyal Hizmetler Bakanlığının hangi birimi tarafından yürütülür?
+    A) Hukuk Hizmetleri Genel Müdürlüğü
+    B) Sosyal Yardımlar Genel Müdürlüğü
+    C) Engelli ve Yaşlı Hizmetleri Genel Müdürlüğü
+    D) Çocuk Hizmetleri Genel Müdürlüğü  ✔
+    E) Aile ve Toplum Hizmetleri Genel Müdürlüğü
+  — skor 0.33 | Polis Mevzuatı / 5395 Sayılı Çocuk Koruma Kanunu | published | id b2201d0b-13d8-4faf-a864-1834c1672a2b
+    Çocuk Koruma Kanununa Göre Verilen Koruyucu ve Destekleyici Tedbir Kararlarının Uygulanması Hakkında Yönetmelik’e göre, illerde koruyucu ve destekleyici tedbirlerin yerine getirilmesinde kurumlar arasında bağlantı, uyum, düzen ve eşgüdümün gerçekleştirilmesini sağlayanlar arasında aşağıdakilerden hangisi bulunmaz?
+    A) Cumhuriyet başsavcısı
+    B) İl emniyet müdürü
+    C) İl müftüsü  ✔
+    D) Gençlik ve spor il müdürü
+    E) Baro temsilcisi

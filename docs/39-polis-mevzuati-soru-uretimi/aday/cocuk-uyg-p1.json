@@ -1,0 +1,36 @@
+[
+ {
+  "id": "cocuk-uyg-p1-01",
+  "articleNo": "21",
+  "kok": "Çocuk Koruma Kanunu Uygulama Yönetmeliği'ne göre, hakkında soruşturma veya kovuşturma yapılan çocukla ilgili düzenlenen sosyal inceleme raporunda aşağıdakilerden hangisine yer VERİLMEZ?",
+  "siklar": {
+   "A": "Ailesinin toplumsal, ekonomik ve kültürel durumu",
+   "B": "İşlediği fiilin hukuki anlamını kavrayabilme yeteneğinin olup olmadığı hakkında sonuç değerlendirmesi",
+   "C": "Suçluluğuna ve topluma uyumsuzluğuna neden olan etkenler hakkında bilgiler",
+   "D": "Tedbir veya denetim kararlarının ne kadar süreyle uygulanması gerektiğine ilişkin öneriler",
+   "E": "İçinde bulunduğu hukuki durum ve adli mercilerin müdahalelerini gerektiren olaylar"
+  },
+  "dogru": "B",
+  "aciklama": "Yönetmeliğin 21 inci maddesinin birinci fıkrası, incelemenin özelliğine ve verilen görevin niteliğine göre raporda 'tamamına veya bir kısmına yer verilir' dediği hususları sayar. İkinci fıkra ise açık bir sınır koyar: 'Raporda çocuğun işlediği fiille ilgili olarak hukukî anlam ve sonuçları kavrayabilme ve … yeteneğinin olup olmadığı hakkında sonuç değerlendirmesinde bulunulmaz.' Doğru cevap B'dir: bu yeteneğin bulunup bulunmadığı sonucuna raporda yer VERİLMEZ. Öbür şıkların hepsi birinci fıkrada sayılmıştır. A, çocuğun 'ailesinin toplumsal, ekonomik ve kültürel durumu'dur (21/1-a). C, aynı bentteki 'suçluluklarına ve topluma uyumsuzluklarına … neden olan etkenler hakkında bilgiler'dir. E de aynı bentte yer alır: çocuğun 'içinde bulunduğu hukukî durum ve adlî mercilerin müdahalelerini gerektiren olaylar'. C ve E, raporun suça ve hukuki duruma ilişkin bilgi içermeyeceği düşüncesiyle işaretlenir; oysa ikisi de fıkrada açıkça sayılır. D, raporun süre konusunda görüş bildirmeyeceği düşüncesiyle işaretlenir; oysa fıkra 'tedbir veya denetim kararlarının ne kadar süre ile uygulanması gerektiğine ilişkin öneriler'i (21/1-d) raporun içeriğine dâhil eder.",
+  "dayanak": "Çocuk Koruma Kanunu Uygulama Yönetmeliği md 21/2 (karş. md 21/1-a, 21/1-d)",
+  "zorluk": "medium",
+  "tur": "dogrudan"
+ },
+ {
+  "id": "cocuk-uyg-p1-02",
+  "articleNo": "16",
+  "kok": "Çocuk Koruma Kanunu Uygulama Yönetmeliği'ne göre, çocuklarla ilgili;\nI. On iki yaşından küçük çocuğun işlediği iddia olunan suça dair, başka fail bulunup bulunmadığını belirlemek için soruşturma yapılabilir.\nII. Aileye teslimi gereken çocuğun teslim edileceği kimseler bulunamazsa kolluğun çocuk birimi, çocuk hâkiminin kararını alarak çocuğu ilgili kuruma teslim eder.\nIII. Çocuğu suça azmettirdiğinden şüphelenilen yakını, kollukta çocuğun yanında bulundurulmaz.\nifadelerinden hangileri doğrudur?",
+  "siklar": {
+   "A": "Yalnız II",
+   "B": "Yalnız III",
+   "C": "I ve III",
+   "D": "II ve III",
+   "E": "I, II ve III"
+  },
+  "dogru": "C",
+  "aciklama": "I doğrudur. Yönetmelik, fiili işlediği sırada on iki yaşından küçük olan çocukların 'işledikleri iddia olunan suçlara dair delillerin toplanması veya başka fail ya da faillerin bulunup bulunmadığının belirlenmesine ilişkin olarak … soruşturma yapılabilir' der (md 5/10). Tuzak, bu yaştaki çocuğun karıştığı fiilde hiçbir soruşturma yapılamayacağını sanmaktır; hüküm, sayılan amaçlarla soruşturmaya açıkça imkân tanır. II yanlıştır. Kolluğun çocuk birimi, aileye teslimi gereken hâllerde çocuğun teslim edileceği veli, vasi, kanunî temsilci veya bakımını üstlenen kimseleri bulamaz ya da bunların çocuğu suça azmettirdiğinden veya istismar ettiğinden şüphelenirse çocuğu 'bu kişilere teslim edemez. Cumhuriyet savcısının talimatını alarak … teslim eder' (md 16/5). Öncül merciyi değiştirmiştir: hüküm teslimi çocuk hâkiminin kararına değil, Cumhuriyet savcısının talimatına bağlar. III doğrudur: 'Çocuğu suça azmettirdiğinden veya istismar ettiğinden şüphelenilen yakınları yanında bulundurulmaz' (md 16/4). Doğru ifadeler I ve III'tür; cevap C'dir.",
+  "dayanak": "Çocuk Koruma Kanunu Uygulama Yönetmeliği md 5/10, 16/4, 16/5",
+  "zorluk": "hard",
+  "tur": "onerme"
+ }
+]

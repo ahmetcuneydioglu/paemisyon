@@ -1,0 +1,36 @@
+[
+  {
+    "id": "5253-p2-01",
+    "articleNo": "33",
+    "kok": "5253 sayılı Kanun'a göre, “çocuk dernekleri” ile ilgili aşağıdakilerden hangisi YANLIŞTIR?",
+    "siklar": {
+      "A": "On iki yaşını bitiren küçükler, yasal temsilcilerinin izniyle bu derneklere üye olabilir.",
+      "B": "On sekiz yaşından büyükler bu derneklere kurucu veya üye olamaz.",
+      "C": "Bu dernekler, küçüklerce yasal temsilcilerinin yazılı izniyle kurulabilir.",
+      "D": "Bu dernekler lokal açamaz.",
+      "E": "Kanunda belirtilen cezalar bu dernekler hakkında uygulanmaz."
+    },
+    "dogru": "E",
+    "aciklama": "Yanlış önerme E'dir. 33 üncü maddenin birinci fıkrasına göre “Bu Kanunda belirtilen cezalar çocuk dernekleri hakkında, yazılı olarak uyarılmasına rağmen tekrar edilmesi halinde uygulanır.” Kanun çocuk derneklerini cezaların dışında tutmaz; cezanın uygulanmasını ilk aykırılığa değil, yazılı uyarıdan sonraki tekrara bağlar. Öteki önermeler doğrudur. A, 3 üncü maddenin beşinci fıkrasına dayanır: “Oniki yaşını bitiren küçükler yasal temsilcilerinin izni ile çocuk derneklerine üye olabilirler ancak yönetim ve denetim kurullarında görev alamazlar.” B, aynı maddenin son fıkrasıdır: “Çocuk derneklerine onsekiz yaşından büyükler kurucu veya üye olamazlar.” C, dördüncü fıkraya dayanır: fıkradaki şartları taşıyan küçükler “yasal temsilcilerinin yazılı izni ile çocuk dernekleri kurabilir”. D, 26/A maddesinin birinci fıkrasının son cümlesidir: “Çocuk dernekleri lokal açamaz.” Aynı fıkrada öteki dernekler için aranan faaliyet süresi şartı, çocuk dernekleri bakımından bir yol açmaz.",
+    "dayanak": "5253 sayılı Kanun md 33/1 (karş. md 3/4, 3/5, 3/6, md 26/A/1)",
+    "zorluk": "medium",
+    "tur": "onerme"
+  },
+  {
+    "id": "5253-p2-02",
+    "articleNo": "19",
+    "kok": "5253 sayılı Kanun'a göre, bir derneğin denetimi sırasında suç teşkil eden fiillerin tespit edilmesi hâlinde mülki idare amiri durumu Cumhuriyet savcılığının yanı sıra aşağıdakilerden hangisine derhal bildirir?",
+    "siklar": {
+      "A": "Genel kolluğa",
+      "B": "İçişleri Bakanlığına",
+      "C": "Derneğe",
+      "D": "Sulh hukuk mahkemesine",
+      "E": "Derneğin üyesi olduğu federasyona"
+    },
+    "dogru": "C",
+    "aciklama": "19 uncu maddenin son fıkrasına göre “Denetim sırasında, suç teşkil eden fiillerin tespit edilmesi hâlinde, mülkî idare amiri durumu derhal Cumhuriyet savcılığına ve derneğe bildirir.” Bildirimin iki muhatabı vardır: Cumhuriyet savcılığı ve denetlenen derneğin kendisi; doğru cevap C'dir. Fıkra, suç tespitinin dernekten gizlenmesini değil, derneğe de derhal bildirilmesini öngörür. A'daki genel kolluk fıkrada sayılmaz; mülki idare amirinin bu fıkradaki bildirim yükümlülüğü savcılığa ve derneğe karşıdır. B'ye gelince, İçişleri Bakanı aynı maddenin ikinci fıkrasında dernekleri denetletebilen makamdır (“İçişleri Bakanı veya mülkî idare amiri tarafından”); son fıkra ise bildirimi Bakanlığa yöneltmez. D'deki sulh hukuk mahkemesi fıkrada geçmez. E'deki federasyon, derneklerin oluşturduğu üst kuruluştur (2/g); fıkra bildirimi üst kuruluşa değil, derneğe yaptırır. Suç teşkil etmeyen aykırılıkların yolu ayrıdır: 17 nci maddeye göre “konusu suç teşkil etmeyen hata ve noksanlıkların mülkî idare amirinin yazılı istemi üzerine, ilgili dernek tarafından otuz gün içerisinde giderilmesi zorunludur.”",
+    "dayanak": "5253 sayılı Kanun md 19/7 (karş. md 19/2, md 17)",
+    "zorluk": "hard",
+    "tur": "dogrudan"
+  }
+]

@@ -1,0 +1,190 @@
+# 5188-p2 — bankadaki en benzer sorular (bütün banka, 7981 soru; eşik 0.15, aday başına 5)
+# skor = aday kök+doğru şık sözcüklerinin (IDF ağırlıklı) ne kadarının o soruda geçtiği. Yüksek skor mükerrer DEMEK DEĞİLDİR; karar gözcünündür.
+
+## 5188-p2-01
+ADAY: I. Güvenlikle ilgili bir meslek yüksekokulu bölümünden mezun olanlar silah eğitiminden muaftır. II. Genel kolluk kuvvetlerinden emekli olanlar, silahlı veya silahsız görev için öngörülen öğrenim şartından muaftır. III. Milli İstihbarat Teşkilatında üç yıl çalıştıktan sonra kendi isteğiyle ayrılanlar
+ADAY DOĞRU: Yalnız II
+  — skor 0.19 | Polis Mevzuatı / 6136 Sayılı Ateşli Silahlar ve Bıçaklar Hakkında Kanun | published | id 11e3ddcb-5d69-4803-87ca-5e9680f60d39
+    6136 sayılı Kanun’a göre, emekli olmadan istifa ederek Emniyet Genel Müdürlüğünden ayrılan bir emniyet hizmetleri sınıfı personelinin, bu sıfatına dayanarak 7 nci maddenin birinci fıkrasının (4) numaralı bendi uyarınca ateşli silah taşıyabilmesi veya bulundurabilmesi aşağıdaki şartlardan hangisine bağlıdır?
+    A) En az beş yıl görev yapmış olmak
+    B) En az on yıl görev yapmış olmak  ✔
+    C) Mecburi hizmetini tamamlamış olmak
+    D) Kurum değiştirmeksizin ayrılmış olmak
+    E) Ayrılıştan itibaren altı ay içinde başvurmak
+  — skor 0.18 | Polis Mevzuatı / 3201 Sayılı Emniyet Teşkilat Kanunu | published | id dcfb24f8-e47e-4d0e-8569-956a1d7934d8
+    Polis meslek eğitim merkezinden mezun olarak Emniyet Genel Müdürlüğü kadrolarına atanan bir personel, atanmasından iki yıl sonra memuriyetten çekilmiştir. 3201 sayılı Emniyet Teşkilat Kanunu'na göre bu personelden aşağıdakilerden hangisi istenir?
+    A) Kendisine yapılmış olan öğretim masraflarının tamamı, kanuni faiziyle birlikte
+    B) Öğretim masraflarının, eksik kalan süreyle orantılı miktarı, kanuni faiziyle  ✔
+    C) Öğretim masraflarının tamamı, faizsiz olarak
+    D) Görevde geçirdiği süreyle orantılı öğretim masrafları, faizsiz olarak
+    E) Yalnızca eğitim süresince kendisine ödenen harçlıklar
+  — skor 0.16 | Polis Mevzuatı / 3201 Sayılı Emniyet Teşkilat Kanunu | published | id 680190c6-5d28-4378-a3ad-8f20ff9326f4
+    3201 sayılı Emniyet Teşkilat Kanunu'na göre, en yüksek Devlet memuru aylığının (ek gösterge dahil) % 35'ini geçmemek üzere fazla çalışma ücreti ödenmesi öngörülen personel aşağıdakilerden hangisidir?
+    A) Özel harekat ve istihbarat birimlerinde görev yapanlar  ✔
+    B) Çevik kuvvet birimlerinde fiilen çalışanlar
+    C) Köprü ve hassas bölgeleri koruma görevinde fiilen çalışanlar
+    D) Panzer sürücüsü ve operatörü olarak görev yapanlar
+    E) Emniyet Hizmetleri Sınıfının diğer birimlerinde görevli olanlar
+  — skor 0.16 | Polis Mevzuatı / 7068 Sayılı Genel Kolluk Disiplin Hükümleri Kanunu | published | id af2ffe8a-3406-42cd-8e02-01c949ce5c90
+    7068 sayılı Kanun'un disiplin ceza puanına bağlı olarak meslekten çıkarma cezası verilmesini düzenleyen 12 nci maddesine ilişkin aşağıdaki ifadelerden hangileri doğrudur? I. Aynı disiplin dosyası kapsamında birden fazla disiplin cezası verilmesi hâlinde bu cezaların puanları toplanarak değerlendirmeye esas alınır. II. Disiplinsizliği alışkanlık hâline getirme nedeniyle verilen meslekten çıkarma ce
+    A) Yalnız I
+    B) Yalnız II
+    C) I ve II
+    D) II ve III  ✔
+    E) I, II ve III
+
+## 5188-p2-02
+ADAY: 5188 sayılı Kanun'a göre, özel güvenlik görevlisinin Kanunda sayılan yetkilerini kullanabilmesi aşağıdakilerden hangisine bağlıdır?
+ADAY DOĞRU: Üzerinde kimlik kartı bulunmasına
+  — skor 0.35 | Polis Mevzuatı / 5188 Sayılı Özel Güvenlik Hizmetlerine Dair Kanun | published | id 4f3e03a2-fb94-46c7-8f2c-e578b06bec45
+    5188 sayılı Kanun'a göre, aşağıdakilerin hangisinden dolayı hakkında devam etmekte olan bir kovuşturma bulunması özel güvenlik görevlisi olmaya engeldir?
+    A) Uyuşturucu veya uyarıcı madde suçları  ✔
+    B) Hırsızlık
+    C) Kaçakçılık suçları
+    D) Fuhuş suçları
+    E) Suçtan kaynaklanan malvarlığı değerlerini aklama
+  — skor 0.35 | Polis Mevzuatı / 5188 Sayılı Özel Güvenlik Hizmetlerine Dair Kanun | published | id f40430d0-846d-4817-8b89-a8dd58e9554e
+    5188 sayılı Kanun'a göre, bir suçun işlendiğini göreviyle bağlantılı olarak öğrendiği hâlde yetkili genel kolluğa bilgi vermeyen özel güvenlik görevlisine uygulanacak yaptırım aşağıdakilerden hangisidir?
+    A) İdari para cezası
+    B) Üç aydan bir yıla kadar hapis cezası
+    C) Altı ay süreyle özel güvenlik alanında görev alamama
+    D) Bir yıl süreyle özel güvenlik alanında görev alamama  ✔
+    E) Özel güvenlik alanında bir daha çalışamama
+  — skor 0.35 | Polis Mevzuatı / 5188 Sayılı Özel Güvenlik Hizmetlerine Dair Kanun | published | id 4e46158e-65db-4f16-8626-946b3f0e521f
+    5188 sayılı Kanun'a göre, bir fabrikanın korunması sürekli olarak bir özel güvenlik şirketine gördürüldüğünde, görevlilerin kullanacağı silah ve teçhizat aşağıdakilerden hangisi tarafından temin edilir?
+    A) Özel güvenlik şirketi
+    B) Komisyondan izin alan şirket
+    C) Hizmeti talep eden kuruluş  ✔
+    D) Valilik
+    E) Özel güvenlik komisyonu
+  — skor 0.34 | Polis Mevzuatı / Adli ve Önleme Aramaları Yönetmeliği | published | id b5061330-f482-4739-9a7e-3d1a29b19afd
+    Adlî ve Önleme Aramaları Yönetmeliği’nde özel güvenlik görevlilerinin yetkileri sayılırken kimlik sorma yetkisi, aşağıdakilerin hangisinde AÇIKÇA öngörülmüştür?
+    A) Koruma ve güvenliğini sağladıkları alanlara girmek isteyenler bakımından
+    B) Yangın, deprem gibi tabiî afet durumlarında girdikleri işyeri ve konutlarda
+    C) Umuma açık istirahat ve eğlence yerlerinin genel güvenlik denetiminde
+    D) Yerleşim yerlerinin giriş ve çıkışlarında yapılan önleme amaçlı kontrollerde
+    E) Konser ve sahne gösterisi gibi etkinlikler ile cenaze ve düğün törenlerinde  ✔
+  — skor 0.30 | Polis Mevzuatı / 5188 Sayılı Özel Güvenlik Hizmetlerine Dair Kanun | published | id 06f9bd3f-06ea-4072-8ca8-1179476ea671
+    5188 sayılı Özel Güvenlik Hizmetlerine Dair Kanun hükümlerine göre koruma ve güvenlik hizmetini yerine getirecek personelin, bulundurulabilecek veya taşınabilecek silah ve teçhizatın azami miktarını ve niteliğini, gerekli hallerde diğer fiziki ve aletli güvenlik tedbirlerini belirlemeye yetkili olan makam aşağıdakilerden hangisidir?
+    A) İçişleri Bakanı
+    B) Vali
+    C) Özel Güvenlik Komisyonu  ✔
+    D) İl Emniyet Müdürü
+    E) Özel Güvenlik Denetleme Başbakanlığı
+
+## 5188-p2-03
+ADAY: 5188 sayılı Kanun'a göre, özel güvenlik alanında çalışacaklar hakkında yapılan güvenlik soruşturması ve verilen “çalışma izni” ile ilgili aşağıdakilerden hangisi YANLIŞTIR?
+ADAY DOĞRU: Şartları sonradan kaybeden görevlinin kimliği, eksiklik iki ay içinde giderilmezse iptal edilir.
+  — skor 0.24 | Polis Mevzuatı / 5188 Sayılı Özel Güvenlik Hizmetlerine Dair Kanun | published | id f40430d0-846d-4817-8b89-a8dd58e9554e
+    5188 sayılı Kanun'a göre, bir suçun işlendiğini göreviyle bağlantılı olarak öğrendiği hâlde yetkili genel kolluğa bilgi vermeyen özel güvenlik görevlisine uygulanacak yaptırım aşağıdakilerden hangisidir?
+    A) İdari para cezası
+    B) Üç aydan bir yıla kadar hapis cezası
+    C) Altı ay süreyle özel güvenlik alanında görev alamama
+    D) Bir yıl süreyle özel güvenlik alanında görev alamama  ✔
+    E) Özel güvenlik alanında bir daha çalışamama
+  — skor 0.24 | Polis Mevzuatı / 5188 Sayılı Özel Güvenlik Hizmetlerine Dair Kanun | published | id cf2114ad-3a47-4ce0-86f7-a1152d3ad3c1
+    I. Görev alanında, hakkında mahkûmiyet kararı bulunan kişiyi yakalayıp arayabilir. II. Bir kişiyi, vücudu veya sağlığı için mevcut bir tehlikeden korumak amacıyla yakalayabilir. III. Özel güvenlik görevlisine karşı görevi dolayısıyla işlenen suçların failleri, genel hükümlere göre cezalandırılır. 5188 sayılı Kanun'a göre, özel güvenlik görevlisi ile ilgili verilenlerden hangileri doğrudur?
+    A) Yalnız I
+    B) Yalnız III
+    C) I ve II  ✔
+    D) I ve III
+    E) II ve III
+  — skor 0.24 | Genel Kültür ve Güncel Olaylar / Genel Kültür | published | id c1f78b7a-1bd1-4503-b588-e1a1f8f96ad4
+    5188 sayılı Özel Güvenlik Hizmetlerine Dair Kanun’a göre, “özel güvenlik görevlilerinde aranacak şartlar” ile ilgili aşağıdakilerden hangisi yanlıştır?
+    A) 18 yaşını doldurmuş olmak
+    B) Silahlı olarak görev yapacaklar için en az ilköğretim mezunu olmak  ✔
+    C) İlgili maddede belirtilen özel güvenlik temel eğitimini başarıyla tamamlamış olmak
+    D) Görevin yapılmasına engel olabilecek vücut ve akıl hastalığı ile engelli bulunmamak
+    E) Kasten işlenen bir suçtan dolayı bir yıl veya daha fazla süreyle hapis cezasına mahkûm olmamak
+  — skor 0.23 | Polis Mevzuatı / 5188 Sayılı Özel Güvenlik Hizmetlerine Dair Kanun | published | id 2ea0eead-6024-44f6-941f-223dc3a519b7
+    5188 sayılı Kanun'a göre, özel güvenlik görevlilerinin çalışma koşulları ve eğitimi ile ilgili aşağıdakilerden hangisi YANLIŞTIR?
+    A) Greve katılamaz.
+    B) Lokavt dolayısıyla işten uzaklaştırılamaz.
+    C) Kanunda belirtilen koruma ve güvenlik hizmetleri dışında başka bir işte çalıştırılamaz.
+    D) Yenileme eğitimi, yeterli bina, araç, gereç ve personel varsa valiliğin izniyle hizmet yerinde verilebilir.
+    E) Valiliğin izniyle sivil kıyafetle görev yapabilir.  ✔
+  — skor 0.22 | Genel Kültür ve Güncel Olaylar / Genel Kültür | published | id 8c55bf79-95ac-4d1c-9c1b-e32610585667
+    5188 sayılı Özel Güvenlik Hizmetlerine Dair Kanun’a göre, göreve başlayan özel güvenlik görevlileri işveren tarafından en geç kaç gün içinde valiliğe bildirilir?
+    A) Yedi
+    B) On
+    C) On beş  ✔
+    D) Yirmi bir
+    E) Otuz
+
+## 5188-p2-04
+ADAY: 5188 sayılı Kanun'a göre, görevini yaparken yaralanan özel güvenlik görevlisine 2330 sayılı Nakdi Tazminat ve Aylık Bağlanması Hakkında Kanun'daki tazminat miktarının ödenmesi hangi hâlde mümkündür?
+ADAY DOĞRU: Görevli bir kamu kurum veya kuruluşunda çalışıyorsa
+  — skor 0.28 | Polis Mevzuatı / 5188 Sayılı Özel Güvenlik Hizmetlerine Dair Kanun | published | id f40430d0-846d-4817-8b89-a8dd58e9554e
+    5188 sayılı Kanun'a göre, bir suçun işlendiğini göreviyle bağlantılı olarak öğrendiği hâlde yetkili genel kolluğa bilgi vermeyen özel güvenlik görevlisine uygulanacak yaptırım aşağıdakilerden hangisidir?
+    A) İdari para cezası
+    B) Üç aydan bir yıla kadar hapis cezası
+    C) Altı ay süreyle özel güvenlik alanında görev alamama
+    D) Bir yıl süreyle özel güvenlik alanında görev alamama  ✔
+    E) Özel güvenlik alanında bir daha çalışamama
+  — skor 0.19 | Genel Kültür ve Güncel Olaylar / Genel Kültür | published | id e6635560-3ba7-4758-8102-ee9e63abc3b8
+    5188 sayılı Özel Güvenlik Hizmetlerine Dair Kanun’a göre, mülki idare amirlerince istenen ilave tedbirleri almayan kişi, kurum, kuruluş veya şirketlerin yöneticilerine kaç Türk lirası idari para cezası verilir?
+    A) Bin
+    B) Üç bin
+    C) Beş bin
+    D) Altı bin  ✔
+    E) On bin
+  — skor 0.19 | Polis Mevzuatı / 5188 Sayılı Özel Güvenlik Hizmetlerine Dair Kanun | published | id cf2114ad-3a47-4ce0-86f7-a1152d3ad3c1
+    I. Görev alanında, hakkında mahkûmiyet kararı bulunan kişiyi yakalayıp arayabilir. II. Bir kişiyi, vücudu veya sağlığı için mevcut bir tehlikeden korumak amacıyla yakalayabilir. III. Özel güvenlik görevlisine karşı görevi dolayısıyla işlenen suçların failleri, genel hükümlere göre cezalandırılır. 5188 sayılı Kanun'a göre, özel güvenlik görevlisi ile ilgili verilenlerden hangileri doğrudur?
+    A) Yalnız I
+    B) Yalnız III
+    C) I ve II  ✔
+    D) I ve III
+    E) II ve III
+  — skor 0.18 | Polis Mevzuatı / 5188 Sayılı Özel Güvenlik Hizmetlerine Dair Kanun | published | id 4e46158e-65db-4f16-8626-946b3f0e521f
+    5188 sayılı Kanun'a göre, bir fabrikanın korunması sürekli olarak bir özel güvenlik şirketine gördürüldüğünde, görevlilerin kullanacağı silah ve teçhizat aşağıdakilerden hangisi tarafından temin edilir?
+    A) Özel güvenlik şirketi
+    B) Komisyondan izin alan şirket
+    C) Hizmeti talep eden kuruluş  ✔
+    D) Valilik
+    E) Özel güvenlik komisyonu
+  — skor 0.18 | Polis Mevzuatı / 657 Sayılı Devlet Memurları Kanunu | published | id 186d90ef-002d-4202-8e60-cf067efbfb72
+    Görev yaptığı ilden yer değiştirme suretiyle başka bir ildeki göreve atanan bir memur, atama emrinin tebliğinden sonra Kanunda öngörülen süre içinde yola çıkmış, ancak belli yol süresinin sonunda yeni görevine başlamamıştır. Memurun belgeyle ispatı mümkün bir zorlayıcı sebebi bulunmamaktadır. 657 sayılı Kanun'a göre bu memurla ilgili aşağıdakilerden hangisi doğrudur?
+    A) Ataması iptal edilir ve belli bir süre Devlet memuru olarak istihdam edilemez.
+    B) Yol süresinin bitiminden başlamak üzere kendisine on beş günlük yeni bir süre verilir.
+    C) Kendisine ek bir süre tanınmaksızın memuriyetten çekilmiş sayılır.
+    D) Başlamadığı günler aylıksız izin sayılarak eski görevine geri döndürülür.
+    E) Aradaki günler için aylık ödenmemek şartıyla kendisine on gün daha süre tanınabilir.  ✔
+
+## 5188-p2-05
+ADAY: 5188 sayılı Kanun'a göre, özel güvenlik görevlisinin aramalar sırasında rastladığı ve delil olabilecek bir eşyayı emanete alabilmesinin şartı aşağıdakilerden hangisidir?
+ADAY DOĞRU: Genel kolluk kuvvetlerine derhal bildirilmesi
+  — skor 0.37 | Polis Mevzuatı / Adli ve Önleme Aramaları Yönetmeliği | published | id d503ee7d-d63e-4bab-b52f-c528545fdea4
+    • Güneşin batmasından bir saat sonra başlayan ve doğmasından bir saat evvele kadar devam eden süre • Jandarma, polis, sahil güvenlik ve gümrük muhafaza görevlileri • Suçun veya tehlikelerin önlenmesi ya da delil olabilecek veya müsadereye tabi olan yahut güvenliğin sağlanması amacıyla, eşyayı zilyedinin kendiliğinden vermesi veya el konulana kadar geçici olarak alıkoyma • İllerde vali veya bu konu
+    A) Kolluk
+    B) Gece vakti
+    C) Mülki amir
+    D) Kolluk amiri  ✔
+    E) Koruma altına alma
+  — skor 0.23 | Genel Kültür ve Güncel Olaylar / Genel Kültür | published | id 8c55bf79-95ac-4d1c-9c1b-e32610585667
+    5188 sayılı Özel Güvenlik Hizmetlerine Dair Kanun’a göre, göreve başlayan özel güvenlik görevlileri işveren tarafından en geç kaç gün içinde valiliğe bildirilir?
+    A) Yedi
+    B) On
+    C) On beş  ✔
+    D) Yirmi bir
+    E) Otuz
+  — skor 0.23 | Polis Mevzuatı / 5188 Sayılı Özel Güvenlik Hizmetlerine Dair Kanun | published | id f40430d0-846d-4817-8b89-a8dd58e9554e
+    5188 sayılı Kanun'a göre, bir suçun işlendiğini göreviyle bağlantılı olarak öğrendiği hâlde yetkili genel kolluğa bilgi vermeyen özel güvenlik görevlisine uygulanacak yaptırım aşağıdakilerden hangisidir?
+    A) İdari para cezası
+    B) Üç aydan bir yıla kadar hapis cezası
+    C) Altı ay süreyle özel güvenlik alanında görev alamama
+    D) Bir yıl süreyle özel güvenlik alanında görev alamama  ✔
+    E) Özel güvenlik alanında bir daha çalışamama
+  — skor 0.23 | Polis Mevzuatı / 5188 Sayılı Özel Güvenlik Hizmetlerine Dair Kanun | published | id cf2114ad-3a47-4ce0-86f7-a1152d3ad3c1
+    I. Görev alanında, hakkında mahkûmiyet kararı bulunan kişiyi yakalayıp arayabilir. II. Bir kişiyi, vücudu veya sağlığı için mevcut bir tehlikeden korumak amacıyla yakalayabilir. III. Özel güvenlik görevlisine karşı görevi dolayısıyla işlenen suçların failleri, genel hükümlere göre cezalandırılır. 5188 sayılı Kanun'a göre, özel güvenlik görevlisi ile ilgili verilenlerden hangileri doğrudur?
+    A) Yalnız I
+    B) Yalnız III
+    C) I ve II  ✔
+    D) I ve III
+    E) II ve III
+  — skor 0.22 | Polis Mevzuatı / Adli ve Önleme Aramaları Yönetmeliği | published | id 5139b039-093e-4b99-98eb-4b08663c222a
+    Adlî ve Önleme Aramaları Yönetmeliği’ne göre; spor alanlarının çevresinde, stadyum veya spor salonu girişleri ile turnike girişlerinde, müsabakayla ilgili olarak hâkim kararı veya gecikmesinde sakınca olan hâllerde aşağıdakilerden hangisinin yazılı izni ile kolluk tarafından veya kolluğun denetiminde, özel güvenlik görevlilerince üst araması yapılır?
+    A) Mülki amir  ✔
+    B) Kolluk amiri
+    C) Belediye başkanı
+    D) İçişleri Bakan Yardımcısı
+    E) Gençlik ve Spor Bakan Yardımcısı

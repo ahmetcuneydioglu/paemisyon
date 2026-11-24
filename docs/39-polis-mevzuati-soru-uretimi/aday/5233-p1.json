@@ -1,0 +1,104 @@
+[
+  {
+    "id": "5233-p1-01",
+    "articleNo": "2",
+    "kok": "Terör eylemi sonucunda iş yeri hasar gören bir esnaf süresinde valiliğe başvurmuştur; esnaf hakkında terör suçundan açılan ceza kovuşturması ise sürmektedir. 5233 sayılı Kanun'a göre bu başvuru hakkında uygulanacak hüküm aşağıdakilerden hangisidir?",
+    "siklar": {
+      "A": "Başvuru reddedilir.",
+      "B": "Zarar belirlenir, ödeme kovuşturmanın sonucuna bırakılır.",
+      "C": "Kovuşturma sonuçlanıncaya kadar işlem yapılmaz.",
+      "D": "Ödeme yapılır, mahkûmiyet hâlinde geri alınır.",
+      "E": "Başvuru, kovuşturmayı yürüten mahkemeye gönderilir."
+    },
+    "dogru": "C",
+    "aciklama": "İkinci maddenin üçüncü fıkrası bu durumu ayrıca düzenler: 'İkinci fıkranın (f) bendinde yazılı suçlardan dolayı CEZA KOVUŞTURMASI AÇILMIŞ bulunanlar hakkında KOVUŞTURMA SONUÇLANINCAYA KADAR bu Kanuna göre İŞLEM YAPILMAZ.' Esnaf hakkında terör suçundan açılan kovuşturma sürdüğü için başvuru reddedilmez, kovuşturmanın sonucu beklenir. Doğru cevap C'dir. Kapsam dışılık ise ikinci fıkranın (f) bendinde mahkûmiyete bağlanmıştır: bent, bu suçlardan 'mahkûm olanların bu fiillerinden dolayı uğradığı zararlar'ı kapsam dışında sayar. Vakada mahkûmiyet yoktur; Kanun kovuşturma sürerken başvurunun reddini değil, işlem yapılmamasını öngörür. Kovuşturmayı mahkûmiyetle bir tutan aday A'ya yönelir. Kanun zarar tespitini de bu Kanuna göre yapılan bir işlem sayar (on dördüncü madde 'zarar tespit işlemleri'nden söz eder); bu yüzden zararın belirlenip yalnız ödemenin ertelenmesi mümkün değildir (B). Ödemenin yapılıp mahkûmiyet hâlinde geri alınması (D) da aynı yasakla bağdaşmaz: kovuşturma sürerken ödeme aşamasına hiç geçilemez. Kanun başvurunun ceza mahkemesine gönderilmesini öngörmez; kovuşturma sürerken bu Kanuna göre işlem yapılmaz (E).",
+    "dayanak": "5233 sayılı Kanun md 2/3 (karş. md 2/2-f, md 14/2)",
+    "zorluk": "hard",
+    "tur": "vaka"
+  },
+  {
+    "id": "5233-p1-02",
+    "articleNo": "8",
+    "kok": "5233 sayılı Kanun'a göre, terör eylemi nedeniyle uğranılan zararın oluşmasında zarar görenin ihmalinin de etkisi bulunmasının sonucu aşağıdakilerden hangisidir?",
+    "siklar": {
+      "A": "Zarar, kapsam dışında kalır.",
+      "B": "Zarar belirlenirken dikkate alınır.",
+      "C": "Zarar, mahkemece belirlenir.",
+      "D": "Hakkaniyet gereği yarısı karşılanır.",
+      "E": "Bakan onayı aranır."
+    },
+    "dogru": "B",
+    "aciklama": "Zararın belirlenmesi sekizinci maddede düzenlenmiştir. Zararlar 'zarar görenin beyanı, adlî, idarî ve askerî mercilerdeki bilgi ve belgeler göz önünde tutularak olayın oluş şekli ve zarar görenin aldığı tedbirlere göre, ZARAR GÖRENİN VARSA KUSUR VEYA İHMALİNİN DE GÖZ ÖNÜNDE BULUNDURULMASI SURETİYLE, hakkaniyete ve günün ekonomik koşullarına uygun biçimde KOMİSYON TARAFINDAN doğrudan doğruya veya bilirkişi aracılığı ile belirlenir.' İhmal zararı Kanunun dışına çıkarmaz; miktar belirlenirken hesaba katılan ölçütlerden biridir. Doğru cevap B'dir. İkinci maddenin ikinci fıkrası kapsam dışı zararlar arasında '(e) Kişilerin kendi KASITLARI sonucunda oluşan zararlar'ı sayar; bentte ihmal anılmaz. Bu bendi ihmale de uygulayan aday A'yı seçer. Zararı ihmal bulunduğunda da komisyon belirler; Kanun böyle bir zararın mahkemece belirlenmesini öngörmez (C). Madde ihmal için sabit bir indirim oranı koymaz; ihmalin göz önünde bulundurulmasını ve zararın hakkaniyete uygun biçimde belirlenmesini ister. 'Yarısı' gibi bir oran Kanunda yoktur (D). Bakan onayı, on üçüncü maddenin ikinci fıkrasına göre Bakanlığın belirli bir tutarın üzerindeki ödemeler için kararlaştırabileceği bir usuldür; zarar görenin ihmaliyle bağlantılı değildir (E).",
+    "dayanak": "5233 sayılı Kanun md 8/1 (karş. md 2/2-e, md 13/2)",
+    "zorluk": "medium",
+    "tur": "kavram"
+  },
+  {
+    "id": "5233-p1-03",
+    "articleNo": "10",
+    "kok": "5233 sayılı Kanun'a göre, terörle mücadele kapsamında yürütülen faaliyetler nedeniyle kişinin mal varlığına ulaşamamasından doğan maddî zararın karşılanmasına ilişkin kural aşağıdakilerden hangisidir?",
+    "siklar": {
+      "A": "Gösterge üzerinden nakden ödenir.",
+      "B": "Hak sahibinin tercihi esastır.",
+      "C": "Kamulaştırma bedeli ödenir.",
+      "D": "Aynî ifaya öncelik verilir.",
+      "E": "Mal varlığına ulaşılıncaya kadar ertelenir."
+    },
+    "dogru": "D",
+    "aciklama": "Bu zarar yedinci maddenin (c) bendinde sulh yoluyla karşılanabilecek zararlar arasında sayılmıştır: 'Terörle mücadele kapsamında yürütülen faaliyetler nedeniyle kişilerin MAL VARLIKLARINA ULAŞAMAMALARINDAN kaynaklanan maddî zararlar.' Karşılanma şekli onuncu maddededir: '7 nci maddenin (a) ve (c) bentlerinde yazılı zararlar, AYNÎ VEYA NAKDÎ olarak karşılanır. Ancak, bu zararların karşılanmasında İMKÂNLAR ÖLÇÜSÜNDE AYNÎ İFAYA ÖNCELİK verilir.' Doğru cevap D'dir. Gösterge üzerinden nakdî ödeme dokuzuncu maddenin rejimidir ve 'Yaralanma, engelli hâle gelme ve ölüm hâllerinde' uygulanır (A). İfa tarzı hak sahibinin tercihine bırakılmamıştır; on ikinci maddeye göre komisyon '10 uncu maddeye göre ifa tarzını' dikkate alarak safi miktarı belirler (B). Kamulaştırma Kanunu'na sekizinci maddenin ikinci fıkrasında yalnız taşınmaz zararının tespiti için atıf yapılır: 'Taşınmaza ilişkin zarar tespitinde 2942 sayılı Kamulaştırma Kanununun 11 inci maddesinde belirtilen kıymet takdiri esasları kıyasen uygulanır.' Atıf zararın değerinin nasıl biçileceğini gösterir, mal varlığının kamulaştırılmasını öngörmez (C). Onuncu madde bu zararın aynî veya nakdî olarak karşılanacağını söyler ve karşılanmayı mal varlığına yeniden ulaşılmasına bağlamaz. Maddedeki 'imkânlar ölçüsünde' kaydı aynî ifanın önceliğine ilişkindir, ödemenin ertelenmesine değil (E).",
+    "dayanak": "5233 sayılı Kanun md 10/1, md 7/c (karş. md 9/1, md 8/2, md 12/1)",
+    "zorluk": "medium",
+    "tur": "dogrudan"
+  },
+  {
+    "id": "5233-p1-04",
+    "articleNo": "12",
+    "kok": "5233 sayılı Kanun'a göre, sulhname tasarısını imzalamaya davet edilen hak sahibinin davet yazısında belirtilen süre içinde gelmemesi ve yetkili bir temsilcisini de göndermemesi üzerine ortaya çıkan sonuç aşağıdakilerden hangisidir?",
+    "siklar": {
+      "A": "Sulhname tasarısını kabul etmiş sayılır.",
+      "B": "Karar tutanağı düzenlenir.",
+      "C": "Başvurusundan vazgeçmiş sayılır.",
+      "D": "Davet yenilenir.",
+      "E": "Uyuşmazlık tutanağı düzenlenir."
+    },
+    "dogru": "E",
+    "aciklama": "Davet yazısının içeriği on ikinci maddenin ikinci fıkrasında belirlenmiştir. Yazıda hak sahibinin 'sulhname tasarısını imzalamak üzere otuz gün içinde gelmesi veya yetkili bir temsilcisini göndermesi gerektiği, aksi takdirde sulhname tasarısını KABUL ETMEMİŞ SAYILACAĞI ve yargı yoluna başvurarak zararının tazmin edilmesini talep etme hakkının SAKLI olduğu' belirtilir. Dördüncü fıkra bu hâle bir belge bağlar: 'Sulhname tasarısının kabul edilmemesi veya ikinci fıkraya göre kabul edilmemiş sayılması hâllerinde bir UYUŞMAZLIK TUTANAĞI düzenlenerek bir örneği ilgiliye gönderilir.' Doğru cevap E'dir. Kanun susmayı kabul değil, kabul etmeme sayar (A). Karar tutanağı başka bir hâlin belgesidir; beşinci maddenin (d) bendine göre 'Başvuranın, bu Kanun kapsamına giren bir zararının bulunmadığının tespit edilmesi hâlinde' düzenlenir. Davet yazısı gönderilen hak sahibi için ise zarar tespit edilmiş ve sulhname tasarısı hazırlanmıştır (B). Kanun bu hâli başvurudan vazgeçme saymaz; uyuşmazlık sürer ve davet yazısı yargı yolunun saklı olduğunu bildirir. Beşinci fıkra da 'Sulh yoluyla çözülemeyen uyuşmazlıklarda ilgililerin yargı yoluna başvurma hakları saklıdır' der (C). Kanun, süresinde gelinmemesi hâlinde davetin yenilenmesini öngörmez; sonuç davet yazısında baştan bildirilmiştir (D).",
+    "dayanak": "5233 sayılı Kanun md 12/2, 12/4 (karş. md 5/c, md 5/d, md 12/5)",
+    "zorluk": "medium",
+    "tur": "dogrudan"
+  },
+  {
+    "id": "5233-p1-05",
+    "articleNo": "9",
+    "kok": "5233 sayılı Kanun'a göre, terör eyleminde yaralanan bir kişiye, özel bir sigorta şirketince ödenen tazminatla ilgili aşağıdakilerden hangisi doğrudur?",
+    "siklar": {
+      "A": "Sigorta şirketi, bu ödeme sebebiyle Devlete rücu edemez.",
+      "B": "Sigorta şirketinin ödediği tazminat, zarar miktarından mahsup edilmez.",
+      "C": "Sigorta şirketi, ödemeyi valiliğe bildirmekle yükümlüdür.",
+      "D": "Devlet, sigorta şirketinin ödediği tazminatı da sorumlulardan ister.",
+      "E": "Zarar gören, tazminatla Devlet ödemesinden birini seçer."
+    },
+    "dogru": "A",
+    "aciklama": "Dokuzuncu maddenin beşinci fıkrası açıktır: 'Bu Kanun kapsamındaki zararlardan dolayı, zarar gören kişilere GERÇEK VEYA ÖZEL HUKUK TÜZEL KİŞİLERİ tarafından yapılan ödemeler sebebiyle DEVLETE RÜCU EDİLEMEZ.' Özel sigorta şirketi özel hukuk tüzel kişisidir; bu ödeme sebebiyle Devlete rücu edemez. Doğru cevap A'dır. Beşinci maddenin (b) bendine göre sigorta şirketlerince ödenen tazminatlar zarar miktarından mahsup edilir; B bunun tersidir. Kanun sigorta şirketine böyle bir bildirim yükümlülüğü getirmez (C). Devletin rücuu on üçüncü maddenin üçüncü fıkrasındadır: 'Devlet, ÖDEME NEDENİYLE genel hükümlere göre sorumlulara rücu eder.' Fıkra Devletin rücuunu 'ödeme nedeniyle' tanır; birinci fıkraya göre sulhnamede belirlenen zararlar Bakanlık bütçesinden karşılanır. Mahsup edilen tazminat bu ödemenin dışında kaldığından Devletin rücu alacağına girmez; Devletin zararın tamamını faile ödeteceğini düşünen aday D'yi seçer. Kanun zarar görene tazminatla Devlet ödemesi arasında seçim yaptırmaz. Beşinci maddenin (b) bendine göre sulhname tasarısındaki ödeme miktarı, sigorta tazminatı zarar miktarından mahsup edilerek belirlenir (E).",
+    "dayanak": "5233 sayılı Kanun md 9/5 (karş. md 5/b, md 13/1, md 13/3)",
+    "zorluk": "medium",
+    "tur": "onerme"
+  },
+  {
+    "id": "5233-p1-06",
+    "articleNo": "4",
+    "kok": "5233 sayılı Kanun'a göre, “zarar tespit komisyonu” ile ilgili aşağıdakilerden hangisi YANLIŞTIR?",
+    "siklar": {
+      "A": "Avukat üyeyi baro yönetim kurulu görevlendirir.",
+      "B": "Aynı ilde birden fazla komisyon kurulabilir.",
+      "C": "Komisyon üyeleri her yıl ocak ayının ilk haftasında yeniden belirlenir.",
+      "D": "Komisyonun başkanlığını o ilin valisi yürütür.",
+      "E": "Kararlar, üye tam sayısının salt çoğunluğuyla alınır."
+    },
+    "dogru": "D",
+    "aciklama": "Yanlış olan D'dir: komisyonun başkanı vali değil, valinin görevlendirdiği vali yardımcısıdır. Dördüncü maddenin ikinci fıkrası şöyledir: 'VALİNİN GÖREVLENDİRECEĞİ VALİ YARDIMCISI komisyonun başkanı; ... o ilde görev yapan kamu görevlilerinden vali tarafından belirlenecek birer kişi ile BARO YÖNETİM KURULUNCA baroya kayıtlı olanlar arasından görevlendirilecek bir avukat komisyonun üyesidir.' Vali başkanı görevlendirir ve kamu görevlisi üyeleri belirler; başkanlık ise vali yardımcısınındır. İl düzeyindeki kurullarda başkanlığı valiye veren aday bu önermeyi doğru sayar. Öteki önermeler doğrudur. Avukat üyeyi baro yönetim kurulu görevlendirir (A). Aynı fıkraya göre 'İş yoğunluğuna göre aynı ilde birden fazla komisyon kurulabilir' (B) ve 'Komisyonun başkan ve üyeleri her yıl ocak ayının ilk haftasında yeniden belirlenir' (C). Dördüncü fıkraya göre de 'Komisyon salt çoğunlukla toplanır ve kararlar üye tam sayısının salt çoğunluğuyla alınır' (E).",
+    "dayanak": "5233 sayılı Kanun md 4/2, 4/4",
+    "zorluk": "medium",
+    "tur": "onerme"
+  }
+]

@@ -1,0 +1,38 @@
+[
+  {
+    "id": "5326-p1-01",
+    "karar": "ONAY",
+    "korCevap": "C (bilgiyle %85); salt şık+sağduyu B (%45)",
+    "metinCevap": "C",
+    "sinavDegeri": 3,
+    "ayirtEdicilik": 4,
+    "dogallik": 4,
+    "zorluk": "hard",
+    "gerekce": "TUR 2: Taze gözcü, gerçek kör çözüm. Metin (md 14/4) = anahtar C. Bilgiyle C'yi buldum; salt şık yapısı ve sağduyu beni B'ye (herkese kendi rejimi; en uzun/en ayrıntılı şık) götürdü, yani yapı yanlışa çıkıyor. Doğru şık en kısa ve sezgiye aykırı; A (14/1–14/2 kuralı) ve B gerçek komşu hükümden gelen güçlü çeldiriciler; yalnız E sağduyuyla düşüyor, D özgü suç mantığıyla savunulabilir. Zayıf yan: kök fıkranın neredeyse aynen aktarımı ve 'ortaklaşa işleme → iştirak' anlam yakınlığı; hüküm kolluk pratiğinde seyrek, sınav değeri sınırda (3) ama genel hükümler resmî sınavda sorulan bölge.",
+    "oneri": "Rötuş gerekmez. İstenirse B kısaltılabilir (\"Her biri hakkında kendi niteliğine göre hüküm uygulanır\" gibi) ki en uzun şık tek başına göze batmasın."
+  },
+  {
+    "id": "5326-p1-02",
+    "karar": "REVIZYON",
+    "korCevap": "E",
+    "metinCevap": "E",
+    "sinavDegeri": 4,
+    "ayirtEdicilik": 3,
+    "dogallik": 4,
+    "zorluk": "easy",
+    "gerekce": "Anahtar E; metin (15/3 ikinci cümle) E, tek cevap. Kör cevabım bilgiyle E (%92) ama salt şık + sağduyuyla da E (%50): İPUCU VAR. (1) Kök yankısı / tek farklı kategori: kök 'hem kabahat hem de suç … yaptırım' der; beş şıktan 'suç'u anan TEK şık E'dir, öbür dördü fiil/kabahat/idare tarafında kalır. (2) Kök istisnanın varlığını kendisi veriyor ('kabahat dolayısıyla yaptırım hangi hâlde uygulanır'); geriye kalan 'hangi hâl' sorusunu 'suçtan ceza verilemiyorsa kabahatten verilir' artık-hâl sağduyusu cevaplıyor. Analistin lehte saydığı 'suç varsa kabahat sorulmaz' sezgisi bu kök biçiminde devreye girmiyor. (3) A (taksir) ve D (kurumun karar vermemiş olması) sağduyuyla zayıf: iki şık birden düşüyor. Gerçek rakip yalnız B ve C (15/1'in iki ölçütü). Hüküm değerli (ilk cümle bankada, istisna açık; kolluk için de anlamlı) ama mevcut takımla bilmeyen aday ~%50 buluyor; üretici etiketi 'medium', gerçek zorluk kolay.",
+    "oneri": "Kök korunur; iki şık değişir ki 'suç' tek şıkta kalmasın ve zayıf iki şık güçlensin. Önerilen takım: A) Suçun taksirle işlenmiş olması · B) Kabahat için öngörülen idarî para cezasının daha ağır olması (aynı) · C) Kabahat için idarî para cezasından başka bir idarî yaptırımın da öngörülmüş olması (aynı) · D) Kabahatin bir suç soruşturması kapsamında öğrenilmesi · E) Suçtan dolayı yaptırım uygulanamaması (aynı). Dayanak: yeni D, 23/2'nin koşuludur ('Bir suç dolayısıyla başlatılan soruşturma kapsamında bir kabahatin işlendiğini öğrenmesi halinde…'); 15/3 karşısında öğrenilme yeri yaptırım rejimini değiştirmez, yanlış önerme nettir (mevzuat gözcüsü 23/2 ile iki doğru doğmadığını ayrıca sınasın). Yeni A yalnız 'Fiilin' → 'Suçun' değişikliğidir (partinin tek uydurma ölçütü olarak kalır). Kestirme sayımı: kök yankısı — 'suç' A, D, E'de, 'kabahat' B, C, D'de: tek farklı şık yok; kesişim yok; ikiz B–C (ikisi de yanlış, 15/1'in iki cümlesi — birlikte düşerse geriye A, D, E kalır, doğru hâlâ üçte bir); iki uç + orta yok; en uzun şık C (yanlış), doğru şık en kısa; varsayılan merci yok. Kalan risk: 'artık hâl' sağduyusu biçimle tam kırılmaz; ikinci turda taze kör çözücü salt şıkla yine E'yi %50 ve üstü güvenle buluyorsa yuva bırakılmalı (ters kök — koşul kökte, sonuç şıkta — 'uygulanır/uygulanamaz' ters çifti doğurduğu için önermiyorum)."
+  },
+  {
+    "id": "5326-p1-03",
+    "karar": "ONAY",
+    "korCevap": "D",
+    "metinCevap": "D",
+    "sinavDegeri": 4,
+    "ayirtEdicilik": 4,
+    "dogallik": 4,
+    "zorluk": "medium",
+    "gerekce": "Anahtar D; metin (20/4) D, tek cevap (A = 5/2 'netice dikkate alınmaz', B = 11/1 'fiili işlediği sırada', C = 21/4 kesinleşme, E = 27/1 tebliğ/tefhim). Kör cevabım bilgiyle D (%85); salt şık + sağduyuyla D ve A eşit (%35'er): ikiz şıklar (C–D iki zamanaşımı) D'ye, kök yankısı ('zaman' → 'işlenmiş sayıldığı zaman') A'ya çekiyor — net ipucu yok. Hiç bilmeyen aday A'ya gider (tuzak 5/2'nin kendisi); 5/2'yi bilen aday A'yı eler ve neticeyi karar öncesi bir ana bağlayarak D'ye muhakemeyle varır: ezber değil iki hükmü ayırt etme. Şıklar kısa (2–4 sözcük), hepsi aynı karar uzayından ('hangi anın belirlenmesi'), dördü metindeki gerçek komşu hüküm. Ters kurulmuş kök ('neticenin gerçekleştiği zaman neyin belirlenmesinde esas alınabilir') resmî kalıpların dışında ama kısa (127 krkt), açık ve 'veya' seçimliliğini 'alınabilir' ile doğru karşılıyor. Etiket 'medium' yerinde.",
+    "oneri": "Zorunlu değişiklik yok. Açıklama 21/4 ve 27/1'i değeriyle yazmıyor (kesinleşme / bildirilme diye anıyor) — uygun."
+  }
+]

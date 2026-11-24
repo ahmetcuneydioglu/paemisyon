@@ -1,0 +1,274 @@
+# 5726-p1 — bankadaki en benzer sorular (bütün banka, 7997 soru; eşik 0.15, aday başına 5)
+# skor = aday kök+doğru şık sözcüklerinin (IDF ağırlıklı) ne kadarının o soruda geçtiği. Yüksek skor mükerrer DEMEK DEĞİLDİR; karar gözcünündür.
+
+## 5726-p1-01
+ADAY: Kovuşturma evresinde tanıklık görevini yerine getirmiş bir kişinin güvenliği için yurt içinde başka bir yerleşim biriminde yaşamasının sağlanması gerekmektedir. 5726 sayılı Kanun'a göre, bu tedbire karar vermeye aşağıdakilerden hangisi yetkilidir?
+ADAY DOĞRU: Tanık Koruma Kurulu
+  — skor 0.24 | Polis Mevzuatı / 6284 Sayılı Ailenin Korunması Kanunu | published | id 42ca66e8-b482-4b5d-ba8f-3b1c8b59a7f3
+    I. Hayati tehlikesinin bulunması hâlinde, ilgilinin talebi üzerine veya resen geçici koruma altına alınması II. Kişinin evli olması hâlinde, müşterek yerleşim yerinden ayrı yerleşim yeri belirlenmesi III. Kendisine ve gerekiyorsa beraberindeki çocuklara, bulunduğu yerde veya başka bir yerde uygun barınma yeri sağlanması IV. İşyerinin değiştirilmesi 6284 sayılı Ailenin Korunması ve Kadına Karşı Şid
+    A) I ve III  ✔
+    B) I ve IV
+    C) II ve III
+    D) I, II ve IV
+    E) II, III ve IV
+  — skor 0.23 | Polis Mevzuatı / 5395 Sayılı Çocuk Koruma Kanunu | published | id 84471f12-5dc9-4cbc-815e-39d8b9f3c386
+    Çocuk hâkimi, korunma ihtiyacı olan bir çocuk hakkında sağlık tedbirine karar vermiştir. Kararı yerine getirmekle görevli kurumun personeli çocuğu tedavinin yapılacağı yere götürmek istediğinde çocuğun babası buna fiilen engel olmuştur. 5395 sayılı Çocuk Koruma Kanunu’na göre, tedbirin yerine getirilmesi bakımından aşağıdakilerden hangisi doğrudur?
+    A) Kurum, gerekmesi hâlinde tedbirin yerine getirilmesi için kolluktan yardım isteyebilir.  ✔
+    B) Kolluktan yardım istenebilmesi için çocuk hâkiminden ayrıca karar alınması gerekir.
+    C) Kolluk, ancak Cumhuriyet savcısının yazılı emri bulunursa bu talebi yerine getirebilir.
+    D) Engel olan baba hakkında kolluk amirince üç günden on güne kadar tazyik hapsi uygulanır.
+    E) Kurum, engellemeyi tutanağa bağlayarak dosyayı kararı veren hâkime iade etmekle yetinir.
+  — skor 0.22 | Polis Mevzuatı / 5726 Sayılı Tanık Koruma Kanunu | published | id 79af3abf-7d4c-4730-aa8e-4cb019b1972a
+    5726 sayılı Tanık Koruma Kanunu’na göre; Tanık Koruma Kurulu, koruma kararı verdiği kişiler ile uygulanan tedbirler hakkında hazırlayacağı faaliyet raporunu, her yıl hangi ayın sonuna kadar İçişleri ve Adalet bakanlıklarına sunar?
+    A) Ocak  ✔
+    B) Mart
+    C) Mayıs
+    D) Eylül
+    E) Kasım
+  — skor 0.21 | İnsan Hakları / İnsan Hakları | published | id 626edbb8-c7bb-42fd-bbf3-d914949010d1
+    • Toplumu düzenleyen yazılı ve yazılı olmayan kurallar bütünü çerçevesinde kişilerin sahip oldukları her türlü değer üzerindeki tasarruf yetkileridir. • Kişilerin, daha düzenli ve güven içerisinde yaşamalarının sağlanabilmesi için, topluma veya çevrelerine karşı yerine getirmek zorunda oldukları davranışlardır. • İnsanın, kurallara bağlı olarak başkasına zarar vermeden dilediğini yapabilmesidir. B
+    A) Hak
+    B) Ödev
+    C) Eşitlik  ✔
+    D) Özgürlük
+  — skor 0.19 | Polis Mevzuatı / 5726 Sayılı Tanık Koruma Kanunu | published | id 16d37ca5-bdb8-4339-981f-792f8ef2821d
+    5726 sayılı Tanık Koruma Kanunu hükümlerine göre aşağıdakilerden hangisi tanık koruma tedbir kararında bulunması gereken hususlar arasında yer almaz?
+    A) Korunmasına karar verilen kişilerin açık kimlik ve adres bilgileri.
+    B) Tanıklık konusu olay.
+    C) Tanıklığa ilişkin bilgiler.
+    D) Tedbir veya tedbirlerin şekli ve süresi.
+    E) Tanığa ilişkin geçmiş ikamet bilgileri.  ✔
+
+## 5726-p1-02
+ADAY: I. Tanığın istemi aranmaz. II. Kolluk amirinin yazılı emri gerekir. III. Tedbir, geciktirilmeksizin mahkemenin bilgisine sunulur. 5726 sayılı Kanun'a göre, gecikmesinde sakınca bulunan hâllerde tanığa kolluk amirince geçici olarak fizikî koruma sağlanmasıyla ilgili numaralanmış ifadelerden hangileri
+ADAY DOĞRU: Yalnız II
+  — skor 0.37 | Polis Mevzuatı / 6284 Sayılı Ailenin Korunması Kanunu | published | id 26c5b301-3a4c-48fb-a2cf-1755218bae54
+    I. Geçici maddi yardım yapılması II. Uygun barınma yeri sağlanması III. Rehberlik ve danışmanlık hizmeti verilmesi IV. Hayatî tehlike bulunması hâlinde geçici koruma altına alınması 6284 sayılı Kanun'a göre, gecikmesinde sakınca bulunan hâllerde numaralanmış koruyucu tedbirlerden hangileri kolluk amirlerince de alınabilir?
+    A) I ve II
+    B) I ve III
+    C) II ve IV  ✔
+    D) I, II ve IV
+    E) II, III ve IV
+  — skor 0.30 | Polis Mevzuatı / 6284 Sayılı Kanuna İlişkin Uygulama Yönetmeliği | published | id f093494a-86a1-481d-bf33-5b52f7122d7b
+    I. Korunan kişinin gideceği yerdeki kolluk gecikmeksizin haberdar edilir ve tedbir uygulanmaya devam olunur. II. Fiziki koruma tedbirleri, gecikmesinde sakınca bulunan hâllerde kolluk tarafından belirlenir. III. Geçici koruma kararının kapsam ve içeriği korunan kişiye ŞÖNİM tarafından açıklanarak tutanağa geçirilir. 6284 sayılı Kanun'a İlişkin Uygulama Yönetmeliği'ne göre, geçici koruma ile ilgili
+    A) Yalnız I
+    B) Yalnız III
+    C) I ve II  ✔
+    D) II ve III
+    E) I, II ve III
+  — skor 0.29 | Ceza Muhakemesi Hukuku / 5271 Sayılı Ceza Muhakemesi Kanunu (CMK) | published | id a871d3ad-5af6-4718-9b74-7082bba55a4c
+    Koruma tedbiri olan yakalamayla ilgili I. Kolluk görevlileri, tutuklama kararı veya yakalama emri düzenlenmesini gerektiren ve gecikmesinde sakınca bulunan durumlarda Cumhuriyet savcısına veya âmirlerine derhâl başvurma olanağı bulunmadığı takdirde, yakalama yetkisine sahiptirler. II. Kişiye suçu işlerken rastlanması veya suçüstü bir eylemden dolayı izlenen kişinin kaçması olasılığının bulunması v
+    A) Yalnız II  ✔
+    B) Yalnız III
+    C) I ve II
+    D) I ve III
+    E) I, II ve III
+  — skor 0.29 | Ceza Muhakemesi Hukuku / 5271 Sayılı Ceza Muhakemesi Kanunu (CMK) | published | id 1b2a6c75-bcf2-4caf-87cd-be93260044eb
+    Gecikmesinde sakınca bulunan hâllerde kolluk amirinin yazılı emri üzerine arama yapılabilmesi için aşağıdakilerden hangisinin varlığı aranır?
+    A) Suçun terör suçu olması
+    B) Şüpheli sayısının üçten fazla olması
+    C) Suçun Kaçakçılıkla Mücadele Kanunu kapsamında olması
+    D) Cumhuriyet savcısına ulaşılamaması  ✔
+    E) Suçun uzlaştırmaya tabi olması
+  — skor 0.27 | Polis Mevzuatı / Adli ve Önleme Aramaları Yönetmeliği | published | id 327794c4-251c-4105-a10d-015595f86f7c
+    Adli ve Önleme Aramaları Yönetmeliği'ne göre, avukat bürolarında arama yapılması ile ilgili aşağıdaki ifadelerden hangisi yanlıştır?
+    A) Avukat bürolarında arama yapılırken Baro başkanı veya onu temsil eden bir avukat aramada hazır bulundurulur.
+    B) Avukat büroları ancak mahkeme kararı ile ve kararda belirtilen olayla ilgili olarak Cumhuriyet savcısının denetiminde aranabilir.
+    C) Avukat büroları gecikmesinde sakınca bulunan hallerde kolluk amirinin yazılı emri ile aranabilir.  ✔
+    D) Cumhuriyet savcısı hazır olmaksızın avukat bürolarında arama yapılamaz.
+    E) Arama sonucu el konulmasına karar verilen şeyler bakımından, yetkili hakim o şeyin avukatla müvekkilin mesleki ilişkisine ait olduğunu tespit ederse o şey derhal avukata iade edilir.
+
+## 5726-p1-03
+ADAY: 5726 sayılı Kanun'a göre, terör örgütü dışında kalan bir suç örgütünün faaliyeti kapsamında işlenen suçlarda tanık koruma tedbiri alınabilmesi için suçun gerektirdiği hapis cezasının alt sınırı en az kaç yıl olmalıdır?
+ADAY DOĞRU: İki
+  — skor 0.35 | Ceza Hukuku / Türk Ceza Kanunu | published | id 7e029797-f450-4d9b-8c23-bd3aa017a13b
+    Bir yabancının, yabancı ülkede Türkiye'nin zararına işlediği ve TCK m.13 dışında kalan bir suç nedeniyle Türkiye'de cezalandırılabilmesi için suçun Türk kanunlarına göre hapis cezasının aşağı sınırı en az ne kadar olmalıdır?
+    A) 3 ay
+    B) 4 ay
+    C) 6 ay
+    D) 1 yıl  ✔
+    E) 2 yıl
+  — skor 0.29 | Ceza Muhakemesi Hukuku / 5271 Sayılı Ceza Muhakemesi Kanunu (CMK) | published | id 2503eec3-da94-49f0-b253-6d6740f7f860
+    5271 sayılı CMK'ya göre alt sınırı en az kaç yıl ve daha fazla hapis cezasını gerektiren suçlardan dolayı sanığın sorgusu istinabe suretiyle yapılamaz?
+    A) 3
+    B) 4
+    C) 5  ✔
+    D) 8
+    E) 10
+  — skor 0.29 | Ceza Muhakemesi Hukuku / 5271 Sayılı Ceza Muhakemesi Kanunu (CMK) | published | id 024b1867-0e97-46fd-9906-47929c55d966
+    5271 sayılı Ceza Muhakemesi Kanunu'na göre, tutuklama kararı verilemeyecek hâllerle ilgili aşağıdaki ifadelerden hangisi doğrudur?
+    A) Hapis cezasının üst sınırı iki yıldan fazla olmayan bütün suçlarda, istisnasız biçimde tutuklama kararı verilemez.
+    B) Sadece adlî para cezasını gerektiren suçlarda tutuklama kararı verilemez; hapis cezasının üst sınırı iki yıldan fazla olmayan suçlarda ise vücut dokunulmazlığına karşı kasten işlenenler bu yasağın dışındadır.  ✔
+    C) Hapis cezasının alt sınırı iki yıldan az olan suçlarda tutuklama kararı verilemez.
+    D) Sadece adlî para cezasını gerektiren suçlarda dahi tutuklama nedeni varsa tutuklama kararı verilebilir.
+    E) Tutuklama yasağı öngörülen hâllerde adlî kontrol hükümleri de uygulanamaz.
+  — skor 0.29 | Ceza Muhakemesi Hukuku / 5271 Sayılı Ceza Muhakemesi Kanunu (CMK) | published | id 103ce14d-89de-41ca-8e3c-a77589dd5ad4
+    Aşağıdakilerden hangisi kamu davasının açılmasının ertelenmesinin koşulları arasında yer almaz?
+    A) Uzlaştırma ve ön ödeme kapsamındaki suçlar hariç, üst sınırı üç yıl veya daha az süreli hapis cezasını gerektiren bir suçun bulunması  ✔
+    B) Şüphelinin daha önceden kasıtlı bir suçtan dolayı hapis cezasına mahkûm olmaması
+    C) Kamu davasının açılmasının ertelenmesi hâlinde şüphelinin suç işlemekten çekineceği kanaati oluşması
+    D) Kamu davasının açılmasının ertelenmesinin şüpheli ve toplum açısından kamu davası açılmasından daha yararlı olması
+    E) Suçun işlenmesiyle mağdurun veya kamunun uğradığı zararın aynen iade, suçtan önceki hâle getirme veya tazmin suretiyle, tamamen giderilmesi
+  — skor 0.27 | Polis Mevzuatı / 5726 Sayılı Tanık Koruma Kanunu | published | id 79af3abf-7d4c-4730-aa8e-4cb019b1972a
+    5726 sayılı Tanık Koruma Kanunu’na göre; Tanık Koruma Kurulu, koruma kararı verdiği kişiler ile uygulanan tedbirler hakkında hazırlayacağı faaliyet raporunu, her yıl hangi ayın sonuna kadar İçişleri ve Adalet bakanlıklarına sunar?
+    A) Ocak  ✔
+    B) Mart
+    C) Mayıs
+    D) Eylül
+    E) Kasım
+
+## 5726-p1-04
+ADAY: 5726 sayılı Kanun'a göre, tanık hakkındaki koruma kararının aşağıdaki sebeplerden hangisiyle kaldırılması hâlinde, kararı uygulayan makamlarca yapılan giderler kanuni faiziyle birlikte tanıktan tahsil edilir?
+ADAY DOĞRU: Kararda belirtilen tedbirlere aykırı davranması
+  — skor 0.25 | Polis Mevzuatı / 5726 Sayılı Tanık Koruma Kanunu | published | id 79af3abf-7d4c-4730-aa8e-4cb019b1972a
+    5726 sayılı Tanık Koruma Kanunu’na göre; Tanık Koruma Kurulu, koruma kararı verdiği kişiler ile uygulanan tedbirler hakkında hazırlayacağı faaliyet raporunu, her yıl hangi ayın sonuna kadar İçişleri ve Adalet bakanlıklarına sunar?
+    A) Ocak  ✔
+    B) Mart
+    C) Mayıs
+    D) Eylül
+    E) Kasım
+  — skor 0.22 | Polis Mevzuatı / 5726 Sayılı Tanık Koruma Kanunu | published | id 16d37ca5-bdb8-4339-981f-792f8ef2821d
+    5726 sayılı Tanık Koruma Kanunu hükümlerine göre aşağıdakilerden hangisi tanık koruma tedbir kararında bulunması gereken hususlar arasında yer almaz?
+    A) Korunmasına karar verilen kişilerin açık kimlik ve adres bilgileri.
+    B) Tanıklık konusu olay.
+    C) Tanıklığa ilişkin bilgiler.
+    D) Tedbir veya tedbirlerin şekli ve süresi.
+    E) Tanığa ilişkin geçmiş ikamet bilgileri.  ✔
+  — skor 0.21 | Polis Mevzuatı / 6284 Sayılı Kanuna İlişkin Uygulama Yönetmeliği | published | id 7dc1bfd7-6264-4f29-b17e-54bb11cb0808
+    Geçici maddi yardım yapılan korunan kişinin gerçeğe aykırı beyanda bulunduğu ŞÖNİM tarafından tespit edilmiştir. I. Tutanak tutulur ve sosyal inceleme raporu düzenlenir. II. Yapılan ödemeler korunan kişiden tahsil edilir. III. Korunan kişi hakkında verilen koruyucu tedbir kararı kendiliğinden kalkar. IV. Şiddet uygulayandan daha önce tahsil edilmiş tutar varsa şiddet uygulayana iade edilir. 6284 s
+    A) I ve II
+    B) II ve III
+    C) I, II ve IV  ✔
+    D) I, III ve IV
+    E) II, III ve IV
+  — skor 0.19 | Ceza Muhakemesi Hukuku / 5271 Sayılı Ceza Muhakemesi Kanunu (CMK) | published | id 9290116f-ee55-4036-a020-b58004e75b73
+    (A), Bakırköy 3. Asliye Ceza Mahkemesi'nde görülen yargılamada, kasten yaralama suçunu işlediği sabit bulunduğundan 1 yıl hapis cezasına mahkûm edilmiş ve mahkemece hükmün açıklanmasının geri bırakılmasına karar verilmiştir. Yapılan istinaf başvurusu üzerine İstanbul Bölge Adliye Mahkemesi; tanık beyanlarının yanlış değerlendirildiğini, hukuka aykırı kanıtların hükme esas alındığını ve bu nedenle 
+    A) Yalnız I
+    B) Yalnız II
+    C) I ve III
+    D) II ve III  ✔
+    E) I, II ve III
+  — skor 0.18 | Polis Mevzuatı / 5395 Sayılı Çocuk Koruma Kanunu | published | id 5baeb7be-6ac8-4c3c-9283-6ef50c21ca5f
+    I. Çocuk teslimine dair ilamın yerine getirilmesine ilişkin teslim emrine aykırı hareket eden yükümlü II. Çocukla kişisel ilişki kurulmasına dair ilamın yerine getirilmesine ilişkin teslim emrine aykırı hareket eden yükümlü III. Kişisel ilişki kurulması için kendisine çocuk teslim edilen ve ilam veya tedbir kararında belirtilen sürenin bitiminde çocuğu belirlenen yere getirmeyen hak sahibi 5395 sa
+    A) Yalnız I
+    B) Yalnız III
+    C) I ve II
+    D) I ve III  ✔
+    E) I, II ve III
+
+## 5726-p1-05
+ADAY: 5726 sayılı Kanun'a göre, hakkında aşağıdaki koruma tedbirlerinden hangisi uygulanan tanığın beyanı tek başına hükme esas teşkil etmez?
+ADAY DOĞRU: Kimlik bilgilerinin gizli tutulması
+  — skor 0.24 | Polis Mevzuatı / 5726 Sayılı Tanık Koruma Kanunu | published | id 16d37ca5-bdb8-4339-981f-792f8ef2821d
+    5726 sayılı Tanık Koruma Kanunu hükümlerine göre aşağıdakilerden hangisi tanık koruma tedbir kararında bulunması gereken hususlar arasında yer almaz?
+    A) Korunmasına karar verilen kişilerin açık kimlik ve adres bilgileri.
+    B) Tanıklık konusu olay.
+    C) Tanıklığa ilişkin bilgiler.
+    D) Tedbir veya tedbirlerin şekli ve süresi.
+    E) Tanığa ilişkin geçmiş ikamet bilgileri.  ✔
+  — skor 0.22 | Polis Mevzuatı / 5726 Sayılı Tanık Koruma Kanunu | published | id 79af3abf-7d4c-4730-aa8e-4cb019b1972a
+    5726 sayılı Tanık Koruma Kanunu’na göre; Tanık Koruma Kurulu, koruma kararı verdiği kişiler ile uygulanan tedbirler hakkında hazırlayacağı faaliyet raporunu, her yıl hangi ayın sonuna kadar İçişleri ve Adalet bakanlıklarına sunar?
+    A) Ocak  ✔
+    B) Mart
+    C) Mayıs
+    D) Eylül
+    E) Kasım
+  — skor 0.22 | Polis Mevzuatı / 5901 Sayılı Türk Vatandaşlığı Kanunu | published | id b225c8be-c098-47f6-95dd-c2c343cadfbc
+    5901 sayılı Türk Vatandaşlığı Kanunu'nun çıkma izni almak suretiyle Türk vatandaşlığını kaybedenlere ilişkin 28 inci maddesi hükümleri bakımından aşağıdakilerden hangileri doğrudur? I. Bu kişilere kimlik numarası verilmez; işlemlerinde yalnızca Mavi Kart numarası kullanılır. II. Mavi Kartlılar Kütüğünün elektronik ortamda tutulmasına ilişkin usul ve esaslar Bakanlıkça belirlenir. III. Kamu kurum v
+    A) Yalnız I
+    B) I ve II
+    C) II ve III  ✔
+    D) I ve III
+    E) I, II ve III
+  — skor 0.20 | Ceza Muhakemesi Hukuku / 5271 Sayılı Ceza Muhakemesi Kanunu (CMK) | published | id 34d82bf3-7860-4fe5-8869-fd5c9fcf769e
+    I. Taşınmazlara, hak ve alacaklara elkoyma II. İletişimin denetlenmesi III. Gizli soruşturmacı görevlendirilmesi Yukarıdakilerden hangileri yalnızca yargıç kararı ile uygulanabilecek koruma tedbirleri arasında yer almaz?
+    A) Yalnız II  ✔
+    B) Yalnız III
+    C) I ve II
+    D) I ve III
+    E) I, II ve III
+  — skor 0.20 | Polis Mevzuatı / 6284 Sayılı Kanuna İlişkin Uygulama Yönetmeliği | published | id 2565e58e-8308-432c-8800-02e4df6bc743
+    6284 sayılı Kanun'a İlişkin Uygulama Yönetmeliği'ne göre, hâkim tarafından verilen tedbir kararı ile kararın gönderildiği veya bildirildiği yer eşleştirmelerinden hangisi yanlıştır?
+    A) İş yerinin değiştirilmesi – Korunan kişinin iş yeri
+    B) Kimlik bilgilerinin değiştirilmesi – Nüfus müdürlüğü  ✔
+    C) Aile konutu şerhi konulması – Tapu sicil müdürlüğü
+    D) Kira sözleşmesinin feshedilmemesi – Kiralayan
+    E) Kamu konutu tahsisinin kaldırılmaması – İlgili kamu kurumu
+
+## 5726-p1-06
+ADAY: 5726 sayılı Kanun'a göre, “gizlilik kuralı” ve bu kurala aykırı davranarak bilgi açıklayanlar hakkında aşağıdakilerden hangisi YANLIŞTIR?
+ADAY DOĞRU: Açıklama fiili başka bir suç da oluşturuyorsa fail ayrıca cezalandırılmaz.
+  — skor 0.25 | Polis Mevzuatı / 4982 Sayılı Bilgi Edinme Hakkı Kanunu | published | id 4b268804-b95a-4533-a693-84b82511af61
+    4982 sayılı Bilgi Edinme Hakkı Kanunu'na göre aşağıdaki bilgilerden hangisinin açıklanması özel hayatın gizliliği kapsamında haksız müdahale oluşturabilir?
+    A) Kurumun yıllık faaliyet raporu
+    B) Kişinin sağlık bilgileri  ✔
+    C) Yayımlanmış ihale ilanı
+    D) Kamuya açıklanmış istatistikler
+    E) Kurumun teşkilat şeması
+  — skor 0.24 | Ceza Hukuku / Türk Ceza Kanunu | published | id fa9b6728-fc6a-4e86-b253-9914165c52dc
+    I. Suçun hukuksal konusu bireyin maddi ve manevi kişiliği ile vücut bütünlüğüdür. II. Suçun oluşması için ısrarla bir kimseye telefon edilmesi, gürültü yapılması veya hukuka aykırı başka davranışta bulunulması gerekir. III. Genel bir suçtur; herkes fail veya mağdur olabilir. IV. Belirli bir saikle işlenir. Israrlı takip suçu hakkında hangileri doğrudur?
+    A) Yalnız II
+    B) I ve III
+    C) III ve IV  ✔
+    D) II ve IV
+    E) II, III ve IV
+  — skor 0.24 | Ceza Hukuku / Türk Ceza Kanunu | published | id ca356855-e537-4d91-90cd-d968c1c4e6ed
+    I. Tehlike suçudur. II. Suçun oluşabilmesi için kast yeterlidir. III. Bu suçta mağdurun rızası bir hukuka uygunluk nedeni oluşturmaz. IV. Bu suçun işlenmesi için kullanılan tehdit, baskı, cebir, şiddet veya nüfuzu kötüye kullanma eylemleri nedeniyle fail ayrıca cezalandırılır. İnsan ticareti suçu hakkında yukarıdaki ifadelerden hangileri doğrudur?
+    A) Yalnız III  ✔
+    B) Yalnız IV
+    C) II ve III
+    D) I ve IV
+    E) II, III ve IV
+  — skor 0.22 | Polis Mevzuatı / 6136 Sayılı Ateşli Silahlar ve Bıçaklar Hakkında Kanun | published | id 28f3ef1a-a0ac-4b76-bc9c-c3ccdef82f6c
+    Kanun’un 7 nci maddesinin birinci fıkrasının (1)–(4) numaralı bentlerinde sayılanlardan olmayan ve silah taşıma ruhsatı bulunan bir esnaf, ruhsatlı tabancasıyla bir futbol karşılaşmasının oynandığı stadyuma girmiş ve tribünde yakalanmıştır; fiili daha ağır cezayı gerektiren başka bir suç oluşturmamaktadır. 6136 sayılı Kanun'a göre bu kişinin silah ruhsatı bakımından hangi sonuç doğar?
+    A) Taşıma ruhsatı iptal edilir; silahı tutanakla Millî Savunma Bakanlığı emrine verilir.
+    B) Ruhsatı iptal edilir ve tabancasına müsadere edilmek üzere el konulur.
+    C) Ruhsatı geçerliliğini korur; fiil için adlî para cezası verilmesiyle yetinilir.
+    D) Ruhsatı beş yıl süreyle askıya alınır ve sürenin sonunda yeniden geçerlilik kazanır.
+    E) Taşıma ruhsatı bulundurmaya çevrilir; silahını mesken veya iş yerinde tutabilir.  ✔
+  — skor 0.22 | Ceza Hukuku / Türk Ceza Kanunu | published | id bd43f266-8c8b-48eb-95b2-1047fa2782eb
+    Kişilerin huzur ve sükûnunu bozma suçuyla ilgili aşağıdaki ifadelerden hangisi doğrudur?
+    A) Suç, bir kimseye ısrarla telefon edilmesi, gürültü yapılması veya aynı maksatla hukuka aykırı başka davranışta bulunulmasıyla oluşur  ✔
+    B) Seçimlik hareketlerden birinin tek kez yapılması yeterlidir
+    C) Olası kastla işlenebilir
+    D) Ani suçtur
+    E) Soruşturma ve kovuşturma resen yapılır
+
+## 5726-p1-07
+ADAY: 5726 sayılı Kanun'a göre, “tanık koruma tedbiri kapsamına alınacak kişiler” ile ilgili aşağıdakilerden hangisi doğrudur?
+ADAY DOĞRU: Tanıkla yakın ilişki içinde olan kişiler de tanığın yakınları arasında sayılır.
+  — skor 0.38 | Polis Mevzuatı / 5726 Sayılı Tanık Koruma Kanunu | published | id 16d37ca5-bdb8-4339-981f-792f8ef2821d
+    5726 sayılı Tanık Koruma Kanunu hükümlerine göre aşağıdakilerden hangisi tanık koruma tedbir kararında bulunması gereken hususlar arasında yer almaz?
+    A) Korunmasına karar verilen kişilerin açık kimlik ve adres bilgileri.
+    B) Tanıklık konusu olay.
+    C) Tanıklığa ilişkin bilgiler.
+    D) Tedbir veya tedbirlerin şekli ve süresi.
+    E) Tanığa ilişkin geçmiş ikamet bilgileri.  ✔
+  — skor 0.35 | Polis Mevzuatı / 5726 Sayılı Tanık Koruma Kanunu | published | id 79af3abf-7d4c-4730-aa8e-4cb019b1972a
+    5726 sayılı Tanık Koruma Kanunu’na göre; Tanık Koruma Kurulu, koruma kararı verdiği kişiler ile uygulanan tedbirler hakkında hazırlayacağı faaliyet raporunu, her yıl hangi ayın sonuna kadar İçişleri ve Adalet bakanlıklarına sunar?
+    A) Ocak  ✔
+    B) Mart
+    C) Mayıs
+    D) Eylül
+    E) Kasım
+  — skor 0.25 | Anayasa Hukuku / T.C. Anayasası | published | id 7b332a16-a632-4945-b89d-742ab2f397e1
+    I. Toplu olarak işlenen suçlarda yakalanan kişilere yakalama sebepleri en geç hâkim huzuruna çıkarılıncaya kadar bildirilir. II. Yakalanan kişi tutulma yerine en yakın mahkemeye gönderilmesi için gerekli süre hariç en geç 1 hafta içinde hâkim önüne çıkarılabilir. III. Kişinin yakalandığı veya tutuklandığı yakınlarına derhal bildirilir. IV. Yakalanan kişiye yakalama sebepleri yakalanmasından itibar
+    A) Yalnız II
+    B) Yalnız IV
+    C) I ve II
+    D) I ve III  ✔
+    E) II ve IV
+  — skor 0.24 | Polis Mevzuatı / 5726 Sayılı Tanık Koruma Kanunu | published | id ec376dfc-6529-4599-9bce-a34208aa2014
+    5726 sayılı Tanık Koruma Kanunu’na göre, “Tanık Koruma Kurulu” ile ilgili aşağıdakilerden hangisi doğrudur?
+    A) Kurul kararlarını oy birliğiyle alır.
+    B) Kurul, en az ayda bir defa veya ihtiyaç duyulduğunda her zaman Başkanın çağrısı üzerine toplanır.  ✔
+    C) Kurul Başkanı, İçişleri Bakanı tarafından seçilir.
+    D) Kurulun çalışma esas ve usulleri kanunla düzenlenir.
+    E) Kurul toplam on altı üyeden oluşur.
+  — skor 0.21 | Ceza Muhakemesi Hukuku / 5271 Sayılı Ceza Muhakemesi Kanunu (CMK) | published | id 76139db4-ddfe-4bb5-a301-7c31ff2f1e33
+    I. Yasaya uygun olarak yakalandıktan sonra haklarında kovuşturmaya yer olmadığına karar verilenler II. Eşyası veya diğer mal varlığı değerleri zamanında geri verilmeyenler III. Yasal gözaltı süresi içinde yargıç önüne çıkarılmayanlar IV. Konutunu terk etmemek şeklindeki adli kontrol yükümlülükleri uygulandıktan sonra haklarında kovuşturmaya yer olmadığına karar verilenler Yukarıdaki kişilerden han
+    A) I ve III
+    B) I ve IV  ✔
+    C) II ve IV
+    D) I, II ve IV
+    E) I, III ve IV

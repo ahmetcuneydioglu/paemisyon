@@ -1,0 +1,57 @@
+[
+  {
+    "id": "7201-p1-01",
+    "kok": "7201 sayılı Kanun'a göre, adres kayıt sistemindeki adresine tebligat çıkarılan muhatabın o adreste hiç oturmadığı anlaşılırsa tebliğ memuru aşağıdakilerden hangisini yapar?",
+    "siklar": {
+      "A": "Adresin meçhul olduğunu muhtara şerh verdirir.",
+      "B": "Evrakı o yerin muhtarına teslim eder.",
+      "C": "Evrakı en yakın komşusuna bırakır.",
+      "D": "Evrakın bir nüshasını binanın kapısına asar.",
+      "E": "Evrakı tebliğ yapılamadığı şerhiyle merciine iade eder."
+    }
+  },
+  {
+    "id": "7201-p1-02",
+    "kok": "Muhatabın geçici olarak başka bir yere gittiğini bildiren ve onunla aynı konutta oturan yetişkin kişi tebliğ evrakını almaktan kaçınmış, ihbarname kapıya yapıştırılmıştır. 7201 sayılı Kanun'a göre, tebliğ ne zaman yapılmış sayılır?",
+    "siklar": {
+      "A": "İhbarnamenin yapıştırıldığı tarihte",
+      "B": "Yapıştırmadan yedi gün sonra",
+      "C": "Yapıştırmadan on beş gün sonra",
+      "D": "Yapıştırmadan otuz gün sonra",
+      "E": "Muhatabın öğrendiğini beyan ettiği tarihte"
+    }
+  },
+  {
+    "id": "7201-p1-03",
+    "kok": "7201 sayılı Kanun'a göre, ertelenmesinde zarar umulan işlerde tebligatın zabıta vasıtasıyla yaptırılması aşağıdakilerden hangisinin emriyle olur?",
+    "siklar": {
+      "A": "Tebliği çıkaran merciin",
+      "B": "İl ya da ilçe emniyet müdürünün",
+      "C": "Adalet Bakanlığının",
+      "D": "Köy ya da mahalle muhtarının",
+      "E": "Mahallî mülki idare amirinin"
+    }
+  },
+  {
+    "id": "7201-p1-04",
+    "kok": "7201 sayılı Kanun'a göre, talebi üzerine elektronik tebligat adresi verilen bir gerçek kişiye tebligat nasıl yapılır?",
+    "siklar": {
+      "A": "Kişinin tercihine göre elektronik yolla ya da adresine yapılır.",
+      "B": "Yolu tebliği çıkaran merci belirler.",
+      "C": "Önce adresine, yapılamazsa elektronik yolla yapılır.",
+      "D": "Elektronik yolla yapılması zorunludur.",
+      "E": "Elektronik yolla yapılır; ancak ilk tebligat adresine yapılır."
+    }
+  },
+  {
+    "id": "7201-p1-05",
+    "kok": "7201 sayılı Kanun'a göre, “ilanen tebligat” ile ilgili aşağıdakilerden hangisi YANLIŞTIR?",
+    "siklar": {
+      "A": "Merci, tebliğin yapılmış sayılacağı süreyi otuz güne kadar uzatabilir.",
+      "B": "Merci, adresi meçhul muhatabın adresini zabıta vasıtasıyla tahkik ve tespit ettirir.",
+      "C": "Yabancı ülkede oturana evrak ve ilan suretleri bilinen adresine ayrıca iadeli taahhütlü mektupla gönderilir.",
+      "D": "İlan, Basın İlân Kurumu İlan Portalında da yapılır.",
+      "E": "İki ilan arasındaki süre bir haftadan az olamaz."
+    }
+  }
+]

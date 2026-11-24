@@ -1,0 +1,70 @@
+[
+ {
+  "id": "3628-p1-01",
+  "articleNo": "17",
+  "kok": "3628 sayılı Kanun'a göre, aşağıdakilerden hangisi, hakkında soruşturma yapılan görevliler için 4483 sayılı Kanun hükümlerinin uygulanmayacağı suçlar arasında açıkça SAYILMAMIŞTIR?",
+  "siklar": {
+   "A": "İrtikâp",
+   "B": "Görevi kötüye kullanma",
+   "C": "Görev sırasında veya görevinden dolayı kaçakçılık",
+   "D": "Devlet sırlarının açıklanması",
+   "E": "Resmî ihale ve alım ve satımlara fesat karıştırma"
+  },
+  "dogru": "B",
+  "aciklama": "17 nci maddenin birinci fıkrası, bu Kanunda yazılı suçların yanında şu suçları adıyla sayar: '… irtikâp, rüşvet, basit ve nitelikli zimmet, görev sırasında veya görevinden dolayı kaçakçılık, resmî ihale ve alım ve satımlara fesat karıştırma, Devlet sırlarının açıklanması veya açıklanmasına sebebiyet verme …'. Fıkraya göre bu suçlardan ya da bu suçlara iştirakten dolayı hakkında soruşturma yapılanlara 4483 sayılı Kanun hükümleri uygulanmaz. Sayım açık uçlu bir kayıt taşımaz; A, C, D ve E şıklarındaki suçların her biri fıkrada adıyla geçer. Görevi kötüye kullanma ise sayılanlar arasında YOKTUR; doğru cevap B'dir. Yanıltan genelleme, görevle bağlantılı her suçta izin usulünün kalktığını düşünmektir: 4483 sayılı Kanun memurların ve diğer kamu görevlilerinin 'görevleri sebebiyle işledikleri suçlar' hakkında uygulanır (md 2); 3628 sayılı Kanun bu usulü yalnız kendi saydığı suçlar için devre dışı bırakır. Öbür yanılgı, sayımın yalnız menfaat sağlamaya dönük suçlardan oluştuğunu varsaymaktır: Devlet sırlarının açıklanması ile görev sırasında veya görevinden dolayı kaçakçılık da fıkradadır.",
+  "dayanak": "3628 sayılı Kanun md 17/1",
+  "zorluk": "hard",
+  "tur": "kavram"
+ },
+ {
+  "id": "3628-p1-02",
+  "articleNo": "19",
+  "kok": "3628 sayılı Kanun'a göre, soruşturmaya başlayan Cumhuriyet savcısının, hakkında soruşturma yapılan görevliden mal bildiriminde bulunmasını istemesi aşağıdaki şartlardan hangisine bağlıdır?",
+  "siklar": {
+   "A": "Yetkili merciden soruşturma izni alınmış olması",
+   "B": "Haksız edinilen malın kaçırıldığı yolunda delil elde edilmesi",
+   "C": "Durumun atamaya yetkili amire bildirilmiş olması",
+   "D": "İhbarı doğrulayan emarelerin bulunması",
+   "E": "Görevlinin süresinde mal bildiriminde bulunmamış olması"
+  },
+  "dogru": "D",
+  "aciklama": "Dayanak 19 uncu maddenin ikinci fıkrasıdır. Fıkraya göre Cumhuriyet savcısı soruşturmaya başladığında 'ihbarı doğrulayan emareler bulduğu takdirde' hakkında soruşturma yapılan görevliden, 'haksız edinilen malın kaçırıldığı yolunda delil ve emare elde edildiği takdirde' ise onun ikinci dereceye kadar kan ve sıhri hısımları ile gelini ve damadından mal bildiriminde bulunmalarını ister. Fıkra iki ayrı muhatap için iki ayrı şart kurar. Görevlinin kendisinden bildirim istenmesinin şartı, ihbarı doğrulayan emarelerin bulunmasıdır; doğru cevap D'dir. B aynı cümlenin öbür yarısıdır: malın kaçırıldığı yolundaki bulgu, görevli için değil, fıkrada sayılan hısımları ile gelini ve damadı için aranan şarttır. A'daki izin, fıkrada mal bildirimi istemenin şartı olarak yazılmamıştır: 17 nci maddenin birinci fıkrası, saydığı suçlarda 4483 sayılı Kanun hükümlerinin uygulanmayacağını söyler ve savcı soruşturmaya 'doğrudan doğruya' başlar (19 uncu maddenin birinci fıkrası). C'deki bildirim, savcının soruşturmaya başlarken yaptığı ayrı bir işlemdir (aynı fıkra); mal bildirimi istemenin şartı olarak yazılmamıştır. E başka bir hükmün konusudur: 6 ncı maddedeki sürelerde bildirimde bulunmayana bildirimin verileceği merci ihtarda bulunur (10 uncu madde); bu, savcının isteminin şartı değildir.",
+  "dayanak": "3628 sayılı Kanun md 19/2 (karş. md 17/1, 19/1, 10/1)",
+  "zorluk": "medium",
+  "tur": "dogrudan"
+ },
+ {
+  "id": "3628-p1-03",
+  "articleNo": "6",
+  "kok": "3628 sayılı Kanun'a göre, bir kamu kurumuna memur olarak atanmada mal bildiriminin ne zaman verilmesi gerekir?",
+  "siklar": {
+   "A": "Göreve giriş için gerekli belgelerle birlikte",
+   "B": "Göreve başladığı gün",
+   "C": "Atamayı izleyen bir ay içinde",
+   "D": "Göreve başlama tarihini izleyen bir ay içinde",
+   "E": "Atamayı izleyen ilk şubat ayının sonuna kadar"
+  },
+  "dogru": "A",
+  "aciklama": "6 ncı maddenin (a) bendi mal bildiriminin 'Bu Kanun kapsamındaki göreve atanmada, göreve giriş için gerekli belgelerle' verilmesini zorunlu kılar; son fıkra da bunu atamanın ön şartı yapar: '(a) Bendinde yazılı bildirim verilmedikçe göreve atama yapılamaz.' Bildirim atamadan ÖNCE verildiği için atamadan ya da göreve başlamadan sonra işleyen bir süre yoktur; doğru cevap A'dır. B de bu yüzden yanlıştır: atama bildirim verilmeden yapılamadığına göre bildirim göreve başlama gününe bırakılamaz. C ve D'deki süreler maddede yer alır, ama başka atanma ve seçilme hâllerine bağlanmıştır (b ve e bentleri). E'deki takvim ayrı bir yükümlülüğe aittir (7 nci madde).",
+  "dayanak": "3628 sayılı Kanun md 6/a ve son fıkra (karş. md 6/b, 6/e, md 7)",
+  "zorluk": "easy",
+  "tur": "dogrudan"
+ },
+ {
+  "id": "3628-p1-04",
+  "articleNo": "3",
+  "kok": "Yurt dışında görevli bir emniyet müdürüne, görev yaptığı devletin makamlarınca, değeri on aylık net asgari ücret toplamını aşan bir kol saati hediye edilmiştir. 3628 sayılı Kanun'a göre bu görevlinin yükümlülüğü aşağıdakilerden hangisidir?",
+  "siklar": {
+   "A": "Bir ay içinde mal bildiriminde bulunmak",
+   "B": "Hediyeyi verene iade etmek",
+   "C": "Bir ay içinde kendi kurumuna teslim etmek",
+   "D": "Atamaya yetkili amirinden izin almak",
+   "E": "Durumu Kamu Görevlileri Etik Kuruluna bildirmek"
+  },
+  "dogru": "C",
+  "aciklama": "Yükümlülük 3 üncü maddenin birinci fıkrasından doğar. Fıkraya göre mal bildiriminde bulunacak kamu görevlileri, hangi sebeple alınmış olursa olsun, 'yabancı devletlerden, milletlerarası kuruluşlardan … Türk uyruğunda olmayan herhangi bir özel veya tüzelkişi veya kuruluştan; aldıkları tarihteki değeri on aylık net asgari ücret toplamını aşan hediye veya hibe niteliğindeki eşyayı aldıkları tarihten itibaren bir ay içinde kendi kurumlarına teslim etmek zorundadırlar.' Olayda veren yabancı bir devlettir ve değer eşiğin üstündedir; yükümlülük TESLİMDİR, doğru cevap C'dir. A aynı süreyi taşıyan komşu hükümden gelir: mal varlığında önemli bir değişiklik olduğunda bir ay içinde mal bildirimi verilir (6 ncı madde, d bendi). 3 üncü madde ise bu eşya için bildirim değil teslim öngörür; bildirimde bulunmak teslimin yerini tutmaz. B'deki iade maddede düzenlenmemiştir; madde eşyanın verene dönmesini değil kuruma geçmesini ister. D'deki gibi teslimin yerine geçecek bir izin usulü de maddede yer almaz. E'deki Kamu Görevlileri Etik Kurulu bu Kanunda hediyenin muhatabı olarak değil, mal bildirimlerini gerektiğinde inceleme yetkisiyle anılır (9 uncu maddenin ikinci fıkrası).",
+  "dayanak": "3628 sayılı Kanun md 3/1 (karş. md 6/d, md 9/2)",
+  "zorluk": "medium",
+  "tur": "vaka"
+ }
+]

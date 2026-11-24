@@ -1,0 +1,207 @@
+# 7245-p1 — bankadaki en benzer sorular (bütün banka, 8013 soru; eşik 0.15, aday başına 5)
+# skor = aday kök+doğru şık sözcüklerinin (IDF ağırlıklı) ne kadarının o soruda geçtiği. Yüksek skor mükerrer DEMEK DEĞİLDİR; karar gözcünündür.
+
+## 7245-p1-01
+ADAY: I. Sürücüyü el ile dıştan kontrol etmek II. Sürücüden torpidoyu açmasını istemek III. Kolluk amirinin yazılı emriyle aracı aramak 7245 sayılı Kanun'a göre, durdurduğu aracın sürücüsünün üzerinde ya da araçta silah bulunduğuna dair yeterli şüpheye ulaşan çarşı ve mahalle bekçisi yukarıdakilerden hang
+ADAY DOĞRU: Yalnız I
+  — skor 0.27 | Polis Mevzuatı / Adli ve Önleme Aramaları Yönetmeliği | published | id fc6f02d1-d14b-40a7-9e20-fe8ad87d00d0
+    Kolluk görevlileri, durdurdukları bir araçta silâh bulunduğu hususunda yeterli şüphe duymakta ve aracın dışarıdan bakıldığında içerisi görünmeyen bölümlerini aramak istemektedir. Adlî ve Önleme Aramaları Yönetmeliği’ne göre bu arama için aşağıdakilerden hangisi gereklidir?
+    A) Sulh ceza hâkiminin kararı
+    B) Mülkî âmirin görevlendireceği kolluk âmirinin yazılı emri  ✔
+    C) Cumhuriyet savcısının yazılı emri
+    D) Mülkî âmirin doğrudan kendisi tarafından verilecek yazılı arama emri
+    E) Araç sürücüsünün yazılı rızası
+  — skor 0.17 | Polis Mevzuatı / 2559 Sayılı Polis Vazife ve Salâhiyet Kanunu (PVSK) | published | id a04fad17-c80b-496d-a276-f24f1473b44f
+    Devriye görevi sırasında bir kişiyi durduran polis memuru, kişinin üzerinde tehlike oluşturabilecek bir eşya bulunduğu yönünde yeterli şüpheye ulaşmıştır. 2559 sayılı Kanun'a göre polis memuru bu aşamada aşağıdakilerden hangisini yapamaz?
+    A) Kendisine veya başkalarına zarar verilmesini önlemeye yönelik gerekli tedbirleri almak
+    B) Kişiden üzerindeki elbisenin çıkarılmasını istemek  ✔
+    C) Kişiye durdurma sebebini bildirmek
+    D) Durdurma sebebine ilişkin sorular sormak
+    E) Kimliğinin veya bulundurulması gerekli diğer belgelerin ibraz edilmesini istemek
+  — skor 0.16 | Polis Mevzuatı / Adli ve Önleme Aramaları Yönetmeliği | published | id 4fa27f95-a650-45e1-a34b-44ae12266f1a
+    I. Yanında bulunduran kişinin rızasıyla teslim etmediği, ispat aracı olarak yararlı görülen eşyaya el konulabilir. II. İspat aracı olarak yararlı görülen eşyayı yanında bulunduran kişi, talep üzerine bu eşyayı göstermek ve teslim etmekle yükümlüdür. III. Cumhuriyet savcısına ulaşılamadığı hâllerde, arama sonucunda bulunan eşyaya kolluk âmirinin sözlü emriyle el konulabilir. Adlî ve Önleme Aramalar
+    A) Yalnız I
+    B) Yalnız II
+    C) I ve II  ✔
+    D) II ve III
+    E) I, II ve III
+
+## 7245-p1-02
+ADAY: 7245 sayılı Kanun'a göre, çarşı ve mahalle bekçisinin kişileri ve araçları durdurma yetkisine getirilen kayıt aşağıdakilerden hangisidir?
+ADAY DOĞRU: Görev bölgesi ve çalışma saatleri
+  — skor 0.22 | Polis Mevzuatı / 3201 Sayılı Emniyet Teşkilat Kanunu | published | id dfa868a5-0e7a-45de-b1cc-e505772d8c71
+    3201 sayılı Emniyet Teşkilat Kanunu'na göre, emniyet hizmetleri sınıfına dahil kadrolarda bulunan çarşı ve mahalle bekçilerine, en yüksek Devlet memuru aylığının (ek gösterge dahil) yüzde kaçını geçmemek üzere fazla çalışma ücreti ödenir?
+    A) % 6,67
+    B) % 13,34  ✔
+    C) % 13,50
+    D) % 15,50
+    E) % 17,50
+  — skor 0.21 | Polis Mevzuatı / 7068 Sayılı Genel Kolluk Disiplin Hükümleri Kanunu | published | id 82ca7b0a-635a-482b-b17a-9d73e55f2fc3
+    7068 sayılı Kanun'a göre "Görev sırasında kişilere veya herhangi bir nedenle kurum binalarına gelen ya da getirilenlere hakaret etmek" fiili hangi disiplin cezasını gerektirir?
+    A) Onbir ila onbeş günlüğe kadar aylıktan kesme
+    B) Dört ay kısa süreli durdurma
+    C) On ay kısa süreli durdurma
+    D) Oniki ay uzun süreli durdurma  ✔
+    E) Yirmi ay uzun süreli durdurma
+  — skor 0.18 | Polis Mevzuatı / 2559 Sayılı Polis Vazife ve Salâhiyet Kanunu (PVSK) | published | id b1a52a9d-55af-4d57-ae97-062ae5ec889c
+    2559 sayılı Polis Vazife ve Salâhiyet Kanunu'na göre, aşağıdakilerden hangisi polisin kişileri ve araçları durdurabileceği amaçlardan biri değildir?
+    A) Bir suç veya kabahatin işlenmesini önlemek
+    B) Suç işlendikten sonra kaçan faillerin yakalanmasını sağlamak
+    C) Hakkında yakalama emri ya da zorla getirme kararı verilmiş olan kişileri tespit etmek
+    D) Kişilerin hayatı, vücut bütünlüğü veya malvarlığı bakımından mevcut veya muhtemel bir tehlikeyi önlemek
+    E) Bölgedeki genel asayiş durumu hakkında istatistiki bilgi toplamak  ✔
+  — skor 0.16 | Polis Mevzuatı / 657 Sayılı Devlet Memurları Kanunu | published | id c42ea832-1439-4463-af06-f6c9baaa518d
+    657 sayılı Devlet Memurları Kanunu’na göre “Görevin yerine getirilmesinde dil, ırk, cinsiyet, siyasi düşünce, felsefi inanç, din ve mezhep ayrımı yapmak, kişilerin yarar veya zararını hedef tutan davranışlarda bulunmak” fiili aşağıdaki disiplin cezalarından hangisini gerektirir?
+    A) Kınama
+    B) Aylıktan kesme
+    C) Devlet memurluğundan çıkarma
+    D) Kademe ilerlemesinin durdurulması  ✔
+  — skor 0.16 | Polis Mevzuatı / 7068 Sayılı Genel Kolluk Disiplin Hükümleri Kanunu | published | id 5f1a7cfa-a894-4ace-a22a-d0ab84488d80
+    7068 sayılı Kanun'a göre il polis disiplin kurulları, kuruldukları il emniyet kadrosundaki polis memurları, çarşı ve mahalle bekçileri ile emniyet hizmetleri sınıfı dışındaki memurlar hakkında hangi disiplin cezalarını verebilir?
+    A) Yalnızca uyarma, kınama ve aylıktan kesme cezalarını
+    B) Durdurma cezaları ile daha alt cezaları
+    C) Meslekten çıkarma cezası dışında kalan diğer disiplin cezalarını
+    D) Meslekten çıkarma ve Devlet memurluğundan çıkarma cezaları dışında kalan disiplin cezalarını
+    E) Bütün disiplin cezalarını  ✔
+
+## 7245-p1-03
+ADAY: Devriyedeki bir çarşı ve mahalle bekçisi, iki yıl önce işlenen bir suç nedeniyle hakkında tutuklama kararı bulunduğunu bildiği bir kişiyi görmüştür. 7245 sayılı Kanun'a göre bekçinin bu kişi hakkındaki görevi aşağıdakilerden hangisidir?
+ADAY DOĞRU: Yakalayıp genel kolluğa teslim etmek
+  — skor 0.20 | Ceza Hukuku / Türk Ceza Kanunu | published | id b15f12bd-a235-443a-b5aa-2f2e83e2d6a3
+    I. Suçu ancak hukuken koruma ve gözetimle yükümlü bir kişi işleyebilir. II. Hamile olduğunu bildiği eşini çaresiz durumda terk etmek bu suçu oluşturur. III. Terk dolayısıyla mağdur bir hastalığa yakalanmış, yaralanmış veya ölmüşse sonucu nedeniyle ağırlaşmış suç hükümlerine göre cezaya hükmolunur. Terk suçu hakkında yukarıdaki ifadelerden hangileri yanlıştır?
+    A) Yalnız I
+    B) Yalnız II  ✔
+    C) I ve II
+    D) I ve III
+    E) I, II ve III
+  — skor 0.19 | Polis Mevzuatı / 5188 Sayılı Özel Güvenlik Hizmetlerine Dair Kanun | published | id cf2114ad-3a47-4ce0-86f7-a1152d3ad3c1
+    I. Görev alanında, hakkında mahkûmiyet kararı bulunan kişiyi yakalayıp arayabilir. II. Bir kişiyi, vücudu veya sağlığı için mevcut bir tehlikeden korumak amacıyla yakalayabilir. III. Özel güvenlik görevlisine karşı görevi dolayısıyla işlenen suçların failleri, genel hükümlere göre cezalandırılır. 5188 sayılı Kanun'a göre, özel güvenlik görevlisi ile ilgili verilenlerden hangileri doğrudur?
+    A) Yalnız I
+    B) Yalnız III
+    C) I ve II  ✔
+    D) I ve III
+    E) II ve III
+  — skor 0.18 | Polis Mevzuatı / 5326 Sayılı Kabahatler Kanunu | published | id 850651a3-6475-4b01-9940-150722ebf4fc
+    Bir kişi, sekiz ay önce 112 Acil Çağrı Merkezine asılsız ihbarda bulunması nedeniyle idarî para cezası almış; bu kez yine 112'yi meşgul etmek amacıyla arayarak görevlilerle konuşmuştur. 5326 sayılı Kabahatler Kanunu'na göre bu kişiye uygulanacak yaptırım hakkında aşağıdakilerden hangisi doğrudur?
+    A) Fiilin bir yıl içinde tekrarı söz konusu olduğundan idarî para cezası iki katı olarak uygulanır  ✔
+    B) İkinci fiil farklı türde olduğundan tekerrür hükmü uygulanmaz ve ceza normal miktarda verilir
+    C) Tekerrür nedeniyle idarî para cezası yerine hapis cezası uygulanır
+    D) Ceza üç katı olarak uygulanır ve kişinin hattı iptal edilir
+    E) İkinci fiil için ceza verilemez; aynı kişiye yılda bir kez ceza verilebilir
+  — skor 0.16 | Polis Mevzuatı / 6222 Sayılı Sporda Şiddetin Önlenmesine Dair Kanun | published | id 5a21ac13-1cf3-4dcf-a4a9-64ed7cc47e98
+    Taraftarı olduğu takımın oynadığı bir müsabakada işlediği suç nedeniyle hakkında seyirden yasaklanma kararı verilen bir kişi yurt içindedir. Takımının bir sonraki müsabakası saat 20.00'de başlayacaktır. 6222 sayılı Kanun'a göre bu kişinin müsabaka günündeki yükümlülüğü aşağıdakilerden hangisidir?
+    A) Saat 19.00'da ve 22.00'de bulunduğu yere en yakın genel kolluk birimine başvurmak
+    B) Saat 20.00'de ve 21.00'de bulunduğu yere en yakın genel kolluk birimine başvurmak  ✔
+    C) Saat 20.00'de ve 21.00'de yerleşim yerindeki genel kolluk birimine başvurmak
+    D) Saat 20.00'de ve 22.00'de bulunduğu yere en yakın genel kolluk birimine başvurmak
+    E) Saat 20.00'de ve 22.00'de yerleşim yerindeki genel kolluk birimine başvurmak
+  — skor 0.15 | Anayasa Hukuku / T.C. Anayasası | published | id fdf09265-f350-4d60-aa01-3428c42254c9
+    1982 Anayasası'nın "Kişi Hürriyeti ve Güvenliği" başlıklı 19'uncu maddesinde "Yakalanan veya tutuklanan kişi, tutulma yerine en yakın mahkemeye gönderilmesi için gerekli süre hariç en geç kırk sekiz saat ve toplu olarak işlenen suçlarda en çok dört gün içinde hâkim önüne çıkarılır. Kimse, bu süreler geçtikten sonra hakim kararı olmaksızın hürriyetinden yoksun bırakılamaz." hükmüne yer verilmiştir.
+    A) Olağanüstü hal  ✔
+    B) Sıkıyönetim
+    C) Ekonomik kriz
+    D) Siyasi istikrarsızlık
+    E) Seferberlik
+
+## 7245-p1-04
+ADAY: 7245 sayılı Kanun'a göre, çarşı ve mahalle bekçilerinin haftalık çalışma süresinin artırılmasında ve güneşin batışından doğuşuna kadar olan zaman dilimi dışında çalıştırılmalarında onay makamı sırasıyla aşağıdakilerden hangisidir?
+ADAY DOĞRU: Vali – İçişleri Bakanı
+  — skor 0.29 | Polis Mevzuatı / 2911 Sayılı Toplantı ve Gösteri Yürüyüşleri Kanunu | published | id e3cbed74-097c-4766-a224-d9c15d753d57
+    2911 sayılı Toplantı ve Gösteri Yürüyüşleri Kanunu’na göre ses yükselten veya ileten alet ya da araçlarla toplantı veya yürüyüş çağrısı yapılabilecek zaman dilimi aşağıdakilerden hangisidir?
+    A) Toplantının yapılacağı tarihten bir önceki günden toplantının başlayacağı saate kadar, güneşin batışından doğuşuna kadarki zaman içinde
+    B) Toplantının yapılacağı tarihten bir hafta öncesinden toplantının başlayacağı saate kadar, güneşin doğuşundan batışına kadarki zaman içinde
+    C) Toplantının yapılacağı günün başlangıcından toplantının bitiş saatine kadar, güneşin doğuşundan batışına kadarki zaman içinde
+    D) Toplantının yapılacağı tarihten bir önceki günden toplantının başlayacağı saate kadar, güneşin doğuşundan batışına kadarki zaman içinde  ✔
+    E) Toplantının yapılacağı tarihten bir önceki günden toplantının bitiş saatine kadar, gece ve gündüz ayrımı gözetilmeksizin
+  — skor 0.19 | Polis Mevzuatı / 3201 Sayılı Emniyet Teşkilat Kanunu | published | id dfa868a5-0e7a-45de-b1cc-e505772d8c71
+    3201 sayılı Emniyet Teşkilat Kanunu'na göre, emniyet hizmetleri sınıfına dahil kadrolarda bulunan çarşı ve mahalle bekçilerine, en yüksek Devlet memuru aylığının (ek gösterge dahil) yüzde kaçını geçmemek üzere fazla çalışma ücreti ödenir?
+    A) % 6,67
+    B) % 13,34  ✔
+    C) % 13,50
+    D) % 15,50
+    E) % 17,50
+  — skor 0.19 | Polis Mevzuatı / 7068 Sayılı Genel Kolluk Disiplin Hükümleri Kanunu | published | id 5f1a7cfa-a894-4ace-a22a-d0ab84488d80
+    7068 sayılı Kanun'a göre il polis disiplin kurulları, kuruldukları il emniyet kadrosundaki polis memurları, çarşı ve mahalle bekçileri ile emniyet hizmetleri sınıfı dışındaki memurlar hakkında hangi disiplin cezalarını verebilir?
+    A) Yalnızca uyarma, kınama ve aylıktan kesme cezalarını
+    B) Durdurma cezaları ile daha alt cezaları
+    C) Meslekten çıkarma cezası dışında kalan diğer disiplin cezalarını
+    D) Meslekten çıkarma ve Devlet memurluğundan çıkarma cezaları dışında kalan disiplin cezalarını
+    E) Bütün disiplin cezalarını  ✔
+
+## 7245-p1-05
+ADAY: 7245 sayılı Kanun'a göre, Emniyet Genel Müdürlüğü bünyesinde istihdam edilen çarşı ve mahalle bekçilerinin rütbece üstü aşağıdakilerden hangisidir?
+ADAY DOĞRU: Polis memuru ve üstü rütbelerdekiler
+  — skor 0.34 | Polis Mevzuatı / 3201 Sayılı Emniyet Teşkilat Kanunu | published | id dfa868a5-0e7a-45de-b1cc-e505772d8c71
+    3201 sayılı Emniyet Teşkilat Kanunu'na göre, emniyet hizmetleri sınıfına dahil kadrolarda bulunan çarşı ve mahalle bekçilerine, en yüksek Devlet memuru aylığının (ek gösterge dahil) yüzde kaçını geçmemek üzere fazla çalışma ücreti ödenir?
+    A) % 6,67
+    B) % 13,34  ✔
+    C) % 13,50
+    D) % 15,50
+    E) % 17,50
+  — skor 0.34 | Polis Mevzuatı / 7068 Sayılı Genel Kolluk Disiplin Hükümleri Kanunu | published | id 5f1a7cfa-a894-4ace-a22a-d0ab84488d80
+    7068 sayılı Kanun'a göre il polis disiplin kurulları, kuruldukları il emniyet kadrosundaki polis memurları, çarşı ve mahalle bekçileri ile emniyet hizmetleri sınıfı dışındaki memurlar hakkında hangi disiplin cezalarını verebilir?
+    A) Yalnızca uyarma, kınama ve aylıktan kesme cezalarını
+    B) Durdurma cezaları ile daha alt cezaları
+    C) Meslekten çıkarma cezası dışında kalan diğer disiplin cezalarını
+    D) Meslekten çıkarma ve Devlet memurluğundan çıkarma cezaları dışında kalan disiplin cezalarını
+    E) Bütün disiplin cezalarını  ✔
+  — skor 0.26 | Polis Mevzuatı / 3201 Sayılı Emniyet Teşkilat Kanunu | published | id 24a5cdf1-e30a-4b24-aceb-1cf0ffb45909
+    3201 sayılı Emniyet Teşkilat Kanunu'na göre, özel harekat birimlerinde istihdam edilmek üzere polis meslek eğitim merkezlerine alınacaklarla ilgili aşağıdakilerden hangisi YANLIŞTIR?
+    A) Alınabilmek için yirmisekiz yaşından gün almamış olmak şartı aranır.
+    B) Öğrenim şartı bakımından en az lise veya dengi okul mezunu olmak yeterlidir.
+    C) Eğitim süresi ve şekline ilişkin esaslar Emniyet Genel Müdürlüğünce belirlenir.  ✔
+    D) Alınacaklarda Kamu Personeli Seçme Sınavı puanı şartı aranmaz.
+    E) Eğitimini başarı ile tamamlayanlar aday polis memuru olarak atanır.
+  — skor 0.24 | Polis Mevzuatı / Emniyet Performans Değerlendirme Yönetmeliği | published | id 347e7771-8b6f-45a2-80cf-6bef115738d2
+    Bir ilçe emniyet müdürlüğünde görevli polis memuru, performans değerlendirme puanına süresi içinde itiraz etmiş; itiraz üzerine yapılan ilk incelemede maddi hata tespit edilememiştir. Emniyet Genel Müdürlüğü Kurum İçi Bireysel Performans Değerlendirme Yönetmeliği'ne göre bu itirazı kim değerlendirir?
+    A) Personelin hâlen çalıştığı İlçe Emniyet Müdürü
+    B) Personel Dairesi Başkanı
+    C) Performans Değerlendirme Kurulu
+    D) Emniyet Genel Müdürü
+    E) Personelin hâlen çalıştığı İl Emniyet Müdürü  ✔
+  — skor 0.24 | Polis Mevzuatı / Emniyet Performans Değerlendirme Yönetmeliği | published | id b080e46a-2952-48a4-ba95-2f695b1127c2
+    Bir polis memuru, bir değerlendirme döneminin tamamı boyunca görevden uzaklaştırılmış olduğundan o yıl hiçbir değerlendirme amiri yanında fiilen çalışmamıştır. Emniyet Genel Müdürlüğü Kurum İçi Bireysel Performans Değerlendirme Yönetmeliği'ne göre bu personel hakkında ne yapılır?
+    A) Değerlendirme amirleri cetvelindeki ikinci değerlendirme amirince değerlendirme yapılır.
+    B) Geçmiş dönemlere ait son üç performans değerlendirme puanının ortalaması esas alınır.
+    C) O yıl için kendisine yetersiz performans değerlendirme puanı verilir.
+    D) Değerlendirme, görevden uzaklaştırma tedbirinin kaldırılmasını izleyen ay içinde yapılır.
+    E) Çalışmadığı yıl için hakkında performans değerlendirme formu doldurulmaz.  ✔
+
+## 7245-p1-06
+ADAY: 7245 sayılı Kanun'a göre, emniyet ve jandarma teşkilatlarında istihdam edilen çarşı ve mahalle bekçileriyle ilgili aşağıdakilerden hangisi YANLIŞTIR?
+ADAY DOĞRU: Olağanüstü hâllerde kolluk hizmeti dışında da çalıştırılabilirler.
+  — skor 0.43 | Polis Mevzuatı / 7068 Sayılı Genel Kolluk Disiplin Hükümleri Kanunu | published | id 5f1a7cfa-a894-4ace-a22a-d0ab84488d80
+    7068 sayılı Kanun'a göre il polis disiplin kurulları, kuruldukları il emniyet kadrosundaki polis memurları, çarşı ve mahalle bekçileri ile emniyet hizmetleri sınıfı dışındaki memurlar hakkında hangi disiplin cezalarını verebilir?
+    A) Yalnızca uyarma, kınama ve aylıktan kesme cezalarını
+    B) Durdurma cezaları ile daha alt cezaları
+    C) Meslekten çıkarma cezası dışında kalan diğer disiplin cezalarını
+    D) Meslekten çıkarma ve Devlet memurluğundan çıkarma cezaları dışında kalan disiplin cezalarını
+    E) Bütün disiplin cezalarını  ✔
+  — skor 0.42 | Polis Mevzuatı / 3201 Sayılı Emniyet Teşkilat Kanunu | published | id dfa868a5-0e7a-45de-b1cc-e505772d8c71
+    3201 sayılı Emniyet Teşkilat Kanunu'na göre, emniyet hizmetleri sınıfına dahil kadrolarda bulunan çarşı ve mahalle bekçilerine, en yüksek Devlet memuru aylığının (ek gösterge dahil) yüzde kaçını geçmemek üzere fazla çalışma ücreti ödenir?
+    A) % 6,67
+    B) % 13,34  ✔
+    C) % 13,50
+    D) % 15,50
+    E) % 17,50
+  — skor 0.30 | Polis Mevzuatı / 7068 Sayılı Genel Kolluk Disiplin Hükümleri Kanunu | published | id 9b363b97-6dfa-4cc2-b630-2b118fb35d42
+    7068 sayılı Genel Kolluk Disiplin Hükümleri Hakkında Kanun'a göre meslekten çıkarma ile Devlet memurluğundan çıkarma cezaları arasındaki fark aşağıdakilerden hangisinde doğru verilmiştir?
+    A) Meslekten çıkarma personelin bir daha Devlet memurluğuna atanmamasını, Devlet memurluğundan çıkarma ise yalnızca kolluk teşkilatlarında çalıştırılmamasını gerektirir.
+    B) Meslekten çıkarma personelin emniyet, jandarma ve sahil güvenlik teşkilatlarında bir daha çalıştırılmamasını; Devlet memurluğundan çıkarma ise bir daha Devlet memurluğuna atanmamasını gerektirir.  ✔
+    C) İki ceza da personelin yalnızca bulunduğu teşkilattan çıkarılması sonucunu doğurur.
+    D) Meslekten çıkarma yalnızca sözleşmeli personele, Devlet memurluğundan çıkarma yalnızca memurlara uygulanır.
+    E) Meslekten çıkarma cezası alan personel belirli bir süre sonra teşkilata yeniden atanabilir, Devlet memurluğundan çıkarmada bu imkân yoktur.
+  — skor 0.25 | Polis Mevzuatı / 7068 Sayılı Genel Kolluk Disiplin Hükümleri Kanunu | published | id af2ffe8a-3406-42cd-8e02-01c949ce5c90
+    7068 sayılı Kanun'un disiplin ceza puanına bağlı olarak meslekten çıkarma cezası verilmesini düzenleyen 12 nci maddesine ilişkin aşağıdaki ifadelerden hangileri doğrudur? I. Aynı disiplin dosyası kapsamında birden fazla disiplin cezası verilmesi hâlinde bu cezaların puanları toplanarak değerlendirmeye esas alınır. II. Disiplinsizliği alışkanlık hâline getirme nedeniyle verilen meslekten çıkarma ce
+    A) Yalnız I
+    B) Yalnız II
+    C) I ve II
+    D) II ve III  ✔
+    E) I, II ve III
+  — skor 0.23 | Polis Mevzuatı / 7068 Sayılı Genel Kolluk Disiplin Hükümleri Kanunu | published | id c5c19aec-0cf5-425e-9b65-31cee7cbcba4
+    7068 sayılı Kanun'a göre disiplin soruşturmacısı olarak görevlendirilebilecek personel bakımından Kanunun getirdiği sınırlama aşağıdakilerden hangisidir?
+    A) Genel idare hizmetleri sınıfı da dâhil olmak üzere kurumun her sınıftan personeli görevlendirilebilir.
+    B) Mülki idare amirliği ve emniyet hizmetleri sınıflarından olanlar ile Jandarma Genel Komutanlığı ve Sahil Güvenlik Komutanlığı personeli dışında hiçbir personel görevlendirilemez.  ✔
+    C) Yalnızca emniyet hizmetleri sınıfından olanlar görevlendirilebilir; mülki idare amirliği hizmetleri sınıfından görevlendirme yapılamaz.
+    D) Yalnızca Bakanlık ile ilgisine göre Emniyet Genel Müdürlüğü, Jandarma Genel Komutanlığı ve Sahil Güvenlik Komutanlığı müfettişleri disiplin soruşturmacısı olarak görevlendirilebilir.
+    E) Avukatlık hizmetleri sınıfı ile teknik hizmetler sınıfından olanlar da görevlendirilebilir.

@@ -1,0 +1,68 @@
+[
+  {
+    "id": "adli-kolluk-p1-01",
+    "kok": "I. Adli kolluk görevlilerine, adli görevi bulunmayan üstleri tarafından, yürütülen soruşturma ile ilgili emir ve talimat verilemez.\nII. Adli kolluk, bağlı bulunduğu kolluk teşkilatının bir parçası olup, öncelikli görevi, karşılaştığı suçun delillerini toplamaktır.\nIII. Olay yerinde işlemlere engel olan kişi önce sözlü olarak ikaz edilir; ikaza uymaması hâlinde yakalanır.\nAdli Kolluk Yönetmeliği'ne göre yukarıdaki ifadelerden hangileri doğrudur?",
+    "siklar": {
+      "A": "Yalnız I",
+      "B": "I ve II",
+      "C": "I ve III",
+      "D": "II ve III",
+      "E": "I, II ve III"
+    }
+  },
+  {
+    "id": "adli-kolluk-p1-02",
+    "kok": "Adli Kolluk Yönetmeliği'ne göre, soruşturmada hukuka aykırı delil elde edildiğinin tespit edilmesi hâlinde bu hususa aşağıdakilerin hangisinde yer verilir?",
+    "siklar": {
+      "A": "Arama tutanağında",
+      "B": "Dizi pusulasında",
+      "C": "Üst yazıda",
+      "D": "Fezlekede",
+      "E": "Ayrı bir tespit tutanağında"
+    }
+  },
+  {
+    "id": "adli-kolluk-p1-03",
+    "kok": "Adli Kolluk Yönetmeliği'ne göre, adli görevlerde öncelikli olarak aşağıdakilerden hangisi görevlendirilir?",
+    "siklar": {
+      "A": "Aynı veya benzer görevlerde çalışmış kolluk personeli",
+      "B": "Sertifikası olan kolluk personeli",
+      "C": "Meslek içi kurslarla ihtisaslaşmış kolluk personeli",
+      "D": "Cumhuriyet başsavcısının önerdiği kolluk personeli",
+      "E": "Olumlu değerlendirme raporu olan kolluk personeli"
+    }
+  },
+  {
+    "id": "adli-kolluk-p1-04",
+    "kok": "Merkezi X ilçesinde bulunan bir adli kolluk birimi, hem X hem de Y ilçesi Cumhuriyet başsavcılıklarının yetki çevresinde faaliyet göstermekte ve soruşturma işlemlerinin çoğunu Y ilçesinde yapmaktadır. Adli Kolluk Yönetmeliği'ne göre bu birimin adli kolluk sorumlusu hakkındaki değerlendirme raporunu aşağıdakilerden hangisi düzenler?",
+    "siklar": {
+      "A": "Y ilçesi Cumhuriyet başsavcısı",
+      "B": "X ve Y ilçesi Cumhuriyet başsavcılarının her biri",
+      "C": "X ve Y ilçesi Cumhuriyet başsavcıları birlikte",
+      "D": "X ilçesi kaymakamı",
+      "E": "X ilçesi Cumhuriyet başsavcısı"
+    }
+  },
+  {
+    "id": "adli-kolluk-p1-05",
+    "kok": "Bilişim sistemleri kullanılarak işlenen bir dolandırıcılık olayında, olayın özelliği gereği soruşturma işlemlerini yapan birimde bilişim alanında ihtisaslaşmış personel görevlendirilmesi gerekmektedir. Adli Kolluk Yönetmeliği'ne göre bu görevlendirmeyi aşağıdakilerden hangisi yapar?",
+    "siklar": {
+      "A": "Cumhuriyet savcısı",
+      "B": "İlgili eğitim birimi",
+      "C": "Kolluk amiri",
+      "D": "Sulh ceza hâkimi",
+      "E": "Adalet Bakanlığı"
+    }
+  },
+  {
+    "id": "adli-kolluk-p1-06",
+    "kok": "Adli Kolluk Yönetmeliği'ne göre, adli kolluk hizmetinin denetimi kapsamında açıkça sayılan işlemler arasında aşağıdakilerden hangisi YER ALMAZ?",
+    "siklar": {
+      "A": "Adli kolluk görevlilerince ifa edilen adli işlemlerin her zaman denetlenmesi",
+      "B": "Soruşturma evrakının ilgili adli kolluk biriminde incelenmesi",
+      "C": "Evrakın ve tarafların bulunduğu hâl üzere başsavcılığa intikal ettirilmesi",
+      "D": "Yürütülen soruşturmanın başka bir kolluk birimine devredilmesi",
+      "E": "Gözaltına alınanların bulundurulduğu nezarethanelerin denetlenmesi"
+    }
+  }
+]

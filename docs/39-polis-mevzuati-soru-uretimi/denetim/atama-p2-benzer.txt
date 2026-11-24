@@ -1,0 +1,459 @@
+# atama-p2 — bankadaki en benzer sorular (bütün banka, 7959 soru; eşik 0.15, aday başına 5)
+# skor = aday kök+doğru şık sözcüklerinin (IDF ağırlıklı) ne kadarının o soruda geçtiği. Yüksek skor mükerrer DEMEK DEĞİLDİR; karar gözcünündür.
+
+## atama-p2-01
+ADAY: Atama ve Yer Değiştirme Yönetmeliği'ne göre, emniyet hizmetleri sınıfı personelinin “ikinci bölge hizmeti” ile ilgili aşağıdakilerden hangisi YANLIŞTIR?
+ADAY DOĞRU: Yönetmelikte öngörülen mazeretlerin bulunması hâlinde ikinci bölge hizmetinden sarfınazar edilebilir.
+  — skor 0.32 | Polis Mevzuatı / 3201 Sayılı Emniyet Teşkilat Kanunu | published | id 9cde5f8c-e155-4b56-9f2e-3637bab788ff
+    3201 sayılı Emniyet Teşkilat Kanunu'na göre, zorunlu ikinci bölge hizmeti şartının ne şekilde uygulanacağı yönetmelikle düzenlenecek olan kişiler aşağıdakilerden hangisidir?
+    A) İkinci bölgede en az üç yıl görev yapmış personelin eşleri
+    B) Emniyet teşkilatında görev yapan tüm engelli personel
+    C) Hayatını kaybeden veya ağır malul olan emniyet teşkilatı mensuplarının anne, baba ve kardeşleri
+    D) Hayatını kaybeden veya ağır malul olan emniyet teşkilatı mensuplarının eş ve çocukları  ✔
+    E) Hayatını kaybeden emniyet teşkilatı mensuplarının yalnızca çocukları
+  — skor 0.31 | Polis Mevzuatı / 3201 Sayılı Emniyet Teşkilat Kanunu | published | id b75f79ce-5857-4392-9232-945094abd6f2
+    3201 sayılı Emniyet Teşkilat Kanunu'nun 82 nci maddesinde düzenlenen kısa veya uzun süreli durdurma cezalarının sonuçları bakımından aşağıdakilerden hangisi YANLIŞTIR?
+    A) Uzun süreli durdurma cezası, derece yükselmesi için açılan kurslara girmeyi önler
+    B) Kısa süreli durdurma cezaları da derece yükselmesi için açılan kurslara girmeyi önler
+    C) Bu cezalar, yarışma sınavı veya seçmelerine girmeyi de önler
+    D) Bu cezalar, zorunlu ikinci bölge hizmeti kapsamındaki yer değiştirmeleri de önler  ✔
+    E) Bu engel, cezanın süresi ile sınırlıdır
+  — skor 0.27 | Polis Mevzuatı / 7068 Sayılı Genel Kolluk Disiplin Hükümleri Kanunu | published | id 6efb3de2-df2c-44ac-96bc-a5f9fda87c02
+    Bir polis memuru, idarece kabul edilebilir bir mazereti olmaksızın, emrinde çalışan personeli ve birime tahsis edilmiş hizmet aracını kendi ev taşıma işinde kullanmıştır. 7068 sayılı Kanun'a göre bu memur hakkında uygulanması gereken disiplin cezası aşağıdakilerden hangisidir?
+    A) Kınama
+    B) Üç günlüğe kadar aylıktan kesme  ✔
+    C) Dört ila on günlüğe kadar aylıktan kesme
+    D) Onbir ila onbeş günlüğe kadar aylıktan kesme
+    E) Dört ay kısa süreli durdurma
+  — skor 0.27 | Polis Mevzuatı / 3201 Sayılı Emniyet Teşkilat Kanunu | published | id 14019067-1566-4041-9db9-2765f51cc8a1
+    3201 sayılı Emniyet Teşkilat Kanunu'na göre, Ek 1 inci madde uyarınca emniyet hizmetleri sınıfı dışından atama yapılan kadroların hizmet sınıfı, atananların bu kadrolarda bulundukları süre boyunca hangi sınıf olarak kabul edilir?
+    A) Emniyet hizmetleri sınıfı
+    B) Teknik hizmetler sınıfı
+    C) Sağlık hizmetleri ve yardımcı sağlık hizmetleri sınıfı
+    D) Genel idare hizmetleri sınıfı  ✔
+    E) Atananın bu kadroya gelmeden önceki hizmet sınıfı
+  — skor 0.27 | Polis Mevzuatı / 657 Sayılı Devlet Memurları Kanunu | published | id 186d90ef-002d-4202-8e60-cf067efbfb72
+    Görev yaptığı ilden yer değiştirme suretiyle başka bir ildeki göreve atanan bir memur, atama emrinin tebliğinden sonra Kanunda öngörülen süre içinde yola çıkmış, ancak belli yol süresinin sonunda yeni görevine başlamamıştır. Memurun belgeyle ispatı mümkün bir zorlayıcı sebebi bulunmamaktadır. 657 sayılı Kanun'a göre bu memurla ilgili aşağıdakilerden hangisi doğrudur?
+    A) Ataması iptal edilir ve belli bir süre Devlet memuru olarak istihdam edilemez.
+    B) Yol süresinin bitiminden başlamak üzere kendisine on beş günlük yeni bir süre verilir.
+    C) Kendisine ek bir süre tanınmaksızın memuriyetten çekilmiş sayılır.
+    D) Başlamadığı günler aylıksız izin sayılarak eski görevine geri döndürülür.
+    E) Aradaki günler için aylık ödenmemek şartıyla kendisine on gün daha süre tanınabilir.  ✔
+
+## atama-p2-02
+ADAY: Atama ve Yer Değiştirme Yönetmeliği'ne göre, vazife malulü idari polisin eşi olan personelin ikinci bölge hizmetinden muaf tutulması aşağıdakilerden hangisine bağlıdır?
+ADAY DOĞRU: Talepte bulunmasına
+  — skor 0.21 | Polis Mevzuatı / 3201 Sayılı Emniyet Teşkilat Kanunu | published | id b75f79ce-5857-4392-9232-945094abd6f2
+    3201 sayılı Emniyet Teşkilat Kanunu'nun 82 nci maddesinde düzenlenen kısa veya uzun süreli durdurma cezalarının sonuçları bakımından aşağıdakilerden hangisi YANLIŞTIR?
+    A) Uzun süreli durdurma cezası, derece yükselmesi için açılan kurslara girmeyi önler
+    B) Kısa süreli durdurma cezaları da derece yükselmesi için açılan kurslara girmeyi önler
+    C) Bu cezalar, yarışma sınavı veya seçmelerine girmeyi de önler
+    D) Bu cezalar, zorunlu ikinci bölge hizmeti kapsamındaki yer değiştirmeleri de önler  ✔
+    E) Bu engel, cezanın süresi ile sınırlıdır
+  — skor 0.18 | İdare Hukuku / 2577 İdari Yargılama Usulü Kanunu (İYUK) | published | id 4584d878-b544-4f41-ba46-84e54a169d3f
+    Merkezi Ankara'da bulunan Karayolları Genel Müdürlüğü'ne bağlı, Van'daki Karayolları 11. Bölge Müdürlüğü'nde görev yapmakta olan Memur Murat; Antalya'daki Karayolları 13. Bölge Müdürlüğü'ne yer değiştirme yoluyla atanıyor. Murat, atama işlemine karşı iptal davası açıyor. 2577 sayılı İYUK'a göre bu davada; I. Van II. Antalya III. Ankara idare mahkemelerinden hangileri yetkilidir?
+    A) Yalnız I
+    B) Yalnız II
+    C) Yalnız III
+    D) I ve II  ✔
+    E) I, II ve III
+  — skor 0.17 | Ceza Hukuku / Türk Ceza Kanunu | published | id a4d5c17d-ad86-46e4-b2d3-c53011614847
+    Ayla ve Fransız vatandaşı eşi Bruno tatil için Bodrum'a gelmiştir. Gece otel odasında birlikte olmak isteyen Bruno, Ayla'nın istemediğini söylemesine rağmen anal yoldan cinsel ilişkide bulunmuştur. Hangisi doğrudur?
+    A) Bruno cinsel tacizden sorumludur
+    B) Cebir kullanma suçu oluşur
+    C) Cinsel saldırının temel şekli oluşur
+    D) Eşler arasında cinsellik ödev olduğundan suç oluşmaz
+    E) Soruşturma ve kovuşturma mağdurun şikâyetine bağlıdır  ✔
+  — skor 0.17 | Ceza Hukuku / Türk Ceza Kanunu | published | id 51d839bd-1993-450e-b1da-da8cc5745f13
+    (A) ve Fransa vatandaşı eşi (B), Bodrum'a tatil için gelmişlerdir. Gece otel odasındayken (B) birlikte olmak istemiş ancak (A) bunu istemediğini söylemiştir. (B), (A)'nın direnmesine rağmen anal yoldan cinsel ilişkide bulunmuştur. Buna göre olayla ilgili aşağıdaki ifadelerden hangisi doğrudur?
+    A) (B) cinsel taciz suçundan sorumludur.
+    B) Cebir kullanma suçu oluşur.
+    C) Cinsel saldırı suçunun temel şekli oluşmuştur.
+    D) Eşler arasında cinsellik bir ödev olduğundan (B)'nin eylemi suç oluşturmaz.
+    E) Suçun soruşturulması ve kovuşturulması şikâyete bağlıdır.  ✔
+  — skor 0.17 | Polis Mevzuatı / 657 Sayılı Devlet Memurları Kanunu | published | id 186d90ef-002d-4202-8e60-cf067efbfb72
+    Görev yaptığı ilden yer değiştirme suretiyle başka bir ildeki göreve atanan bir memur, atama emrinin tebliğinden sonra Kanunda öngörülen süre içinde yola çıkmış, ancak belli yol süresinin sonunda yeni görevine başlamamıştır. Memurun belgeyle ispatı mümkün bir zorlayıcı sebebi bulunmamaktadır. 657 sayılı Kanun'a göre bu memurla ilgili aşağıdakilerden hangisi doğrudur?
+    A) Ataması iptal edilir ve belli bir süre Devlet memuru olarak istihdam edilemez.
+    B) Yol süresinin bitiminden başlamak üzere kendisine on beş günlük yeni bir süre verilir.
+    C) Kendisine ek bir süre tanınmaksızın memuriyetten çekilmiş sayılır.
+    D) Başlamadığı günler aylıksız izin sayılarak eski görevine geri döndürülür.
+    E) Aradaki günler için aylık ödenmemek şartıyla kendisine on gün daha süre tanınabilir.  ✔
+
+## atama-p2-03
+ADAY: İkinci bölgeye ilk kez atanan bir komiser, hizmet süresi iki yıl olan ilde bir yıl çalışıp aynı bölgede hizmet süresi altı yıl olan bir ile atanmıştır. Atama ve Yer Değiştirme Yönetmeliği'ne göre komiserin bölge hizmeti yeni ilde kaç yıl sonra biter?
+ADAY DOĞRU: Üç
+  — skor 0.29 | Analitik Düşünme ve Türkçe / Analitik Akıl Yürütme | published | id b1dc4ae3-4d3d-4517-8c28-ad982da8d49d
+    Bir yerel radyonun akşam programında Ayna, Bulut, Çiçek, Dalga, Liman ve Rüzgâr adlı altı şarkı, her biri yalnızca bir kez olmak üzere sırayla çalınmış; programda başka şarkı çalınmamıştır. Her şarkı, yerli ve yabancı olmak üzere iki türden yalnızca birine aittir. Şarkıların çalınma sırası ve türleriyle ilgili bilinenler şunlardır: - Şarkıların üçü yerli, üçü yabancıdır. - Hiçbir iki yabancı şarkı
+    A) Rüzgâr  ✔
+    B) Ayna
+    C) Çiçek
+    D) Dalga
+    E) Liman
+  — skor 0.24 | Polis Mevzuatı / 657 Sayılı Devlet Memurları Kanunu | published | id 186d90ef-002d-4202-8e60-cf067efbfb72
+    Görev yaptığı ilden yer değiştirme suretiyle başka bir ildeki göreve atanan bir memur, atama emrinin tebliğinden sonra Kanunda öngörülen süre içinde yola çıkmış, ancak belli yol süresinin sonunda yeni görevine başlamamıştır. Memurun belgeyle ispatı mümkün bir zorlayıcı sebebi bulunmamaktadır. 657 sayılı Kanun'a göre bu memurla ilgili aşağıdakilerden hangisi doğrudur?
+    A) Ataması iptal edilir ve belli bir süre Devlet memuru olarak istihdam edilemez.
+    B) Yol süresinin bitiminden başlamak üzere kendisine on beş günlük yeni bir süre verilir.
+    C) Kendisine ek bir süre tanınmaksızın memuriyetten çekilmiş sayılır.
+    D) Başlamadığı günler aylıksız izin sayılarak eski görevine geri döndürülür.
+    E) Aradaki günler için aylık ödenmemek şartıyla kendisine on gün daha süre tanınabilir.  ✔
+  — skor 0.23 | Atatürk İlkeleri ve İnkılap Tarihi / Atatürk İlkeleri ve İnkılap Tarihi | published | id 068018f7-32d9-4a92-b2c2-33dcd3c03d63
+    Mondros Ateşkes Antlaşması’ndan sonra Antep, Urfa ve Maraş İngilizler tarafından işgal edilmiştir. İngilizler yaptıkları yeni antlaşma gereğince bölgeyi daha sonra Fransızlara bırakmıştır. Fransızlar, Ermenileri de teşkilatlandırarak bölgede yaşayan Türklere oldukça sert ve zalimce davranmışlardır. Buna göre; I. Bölge halkı İngilizlerin geri gelmesini istemiştir. II. Anadolu’nun paylaşımı ile ilgi
+    A) Yalnız I  ✔
+    B) Yalnız II
+    C) Yalnız III
+    D) I ve II
+    E) II ve III
+  — skor 0.22 | Polis Mevzuatı / 657 Sayılı Devlet Memurları Kanunu | published | id 90258f09-29cb-4e2c-a00e-60392be65bb6
+    Daha önce bir kez kendi isteğiyle memurluktan çekilip yeniden atanan Ahmet Bey, ikinci kez kendi isteğiyle çekilmiştir. Çekilmesinde Kanuna aykırı bir durum bulunmayan Ahmet Bey, ayrıldığı tarihte 8. derecenin 3. kademesinden aylık almaktadır. Aradan iki yıl geçtikten sonra memurluğa dönmek isteyen Ahmet Bey'in ayrıldığı sınıfta boş kadro bulunmakta ve kendisi bu sınıfın niteliklerini taşımaktadır
+    A) Daha önce iki kez çekildiği için bu hükümden yararlanarak memurluğa dönemez.
+    B) Ayrıldığı sınıfta 8. derecenin 1. kademesine atanabilir.
+    C) Ayrıldığı sınıfta bir alt derece olan 9. derecenin 3. kademesine atanabilir.
+    D) Ayrılırken bulunduğu 8. derecenin 3. kademesine atanabilir.  ✔
+    E) Yeniden adaylık sürecini tamamlamak şartıyla eski derecesinin aynı kademesine atanabilir.
+  — skor 0.21 | Analitik Düşünme ve Türkçe / Analitik Akıl Yürütme | published | id 75cd9d89-2d9e-436c-86e9-cb62686004e5
+    Bir yerel radyonun akşam programında Ayna, Bulut, Çiçek, Dalga, Liman ve Rüzgâr adlı altı şarkı, her biri yalnızca bir kez olmak üzere sırayla çalınmış; programda başka şarkı çalınmamıştır. Her şarkı, yerli ve yabancı olmak üzere iki türden yalnızca birine aittir. Şarkıların çalınma sırası ve türleriyle ilgili bilinenler şunlardır: - Şarkıların üçü yerli, üçü yabancıdır. - Hiçbir iki yabancı şarkı
+    A) Çiçek ile Dalga aynı türdendir.  ✔
+    B) Liman ikinci sırada çalınmıştır.
+    C) Ayna yabancı bir şarkıdır.
+    D) Bulut son sırada çalınmıştır.
+    E) Rüzgâr dördüncü sırada çalınmıştır.
+
+## atama-p2-04
+ADAY: Atama ve Yer Değiştirme Yönetmeliği'ne göre, doğrudan merkeze bağlı taşra teşkilatında görev yapan ve ikinci bölgeye atama sırası gelen personelin hizmet ihtiyacı sebebiyle yerinde kalmasını talep etmeye aşağıdakilerden hangisi yetkilidir?
+ADAY DOĞRU: Birim amiri
+  — skor 0.22 | İdare Hukuku / 2577 İdari Yargılama Usulü Kanunu (İYUK) | published | id 4584d878-b544-4f41-ba46-84e54a169d3f
+    Merkezi Ankara'da bulunan Karayolları Genel Müdürlüğü'ne bağlı, Van'daki Karayolları 11. Bölge Müdürlüğü'nde görev yapmakta olan Memur Murat; Antalya'daki Karayolları 13. Bölge Müdürlüğü'ne yer değiştirme yoluyla atanıyor. Murat, atama işlemine karşı iptal davası açıyor. 2577 sayılı İYUK'a göre bu davada; I. Van II. Antalya III. Ankara idare mahkemelerinden hangileri yetkilidir?
+    A) Yalnız I
+    B) Yalnız II
+    C) Yalnız III
+    D) I ve II  ✔
+    E) I, II ve III
+  — skor 0.22 | Polis Mevzuatı / 3201 Sayılı Emniyet Teşkilat Kanunu | published | id 37eb8bad-f85f-495b-a164-1745b2de0dc9
+    3201 sayılı Emniyet Teşkilat Kanunu'na göre kadro sayılarını aşmamak kaydıyla, her amir rütbesinde bulunması gereken toplam personel sayısını hizmet ihtiyacına göre her yıl tespit etmeye yetkili olan aşağıdakilerden hangisidir?
+    A) Genel Müdürlük Yüksek Değerlendirme Kurulu  ✔
+    B) Genel Müdürlük Merkez Değerlendirme Kurulu
+    C) İçişleri Bakanı
+    D) Emniyet Genel Müdürü
+    E) Cumhurbaşkanı
+  — skor 0.20 | Polis Mevzuatı / 3201 Sayılı Emniyet Teşkilat Kanunu | published | id 44a091a9-752e-40ef-b7b0-0d05fbb3a478
+    3201 sayılı Emniyet Teşkilat Kanunu'na göre, hangi meslek derecelerinde bulunan personel ihtiyaç hâlinde görev unvanlarına bakılmaksızın araştırma, inceleme ve denetleme gibi görevler verilmek üzere atandıkları birim amirinin emrine alınabilir?
+    A) 1, 2, 3, 4 ve 5 inci
+    B) 2, 3, 4, 5 ve 6 ncı  ✔
+    C) 3, 4, 5, 6 ve 7 nci
+    D) 4, 5, 6, 7 ve 8 inci
+    E) 6, 7, 8 ve 9 uncu
+  — skor 0.19 | Polis Mevzuatı / 7068 Sayılı Genel Kolluk Disiplin Hükümleri Kanunu | published | id 92801b68-e4d2-4201-b45f-e2a911c65188
+    Bir ilçe emniyet müdürü, maiyetinde görev yapan ve kendisinin ikinci derecede kayın hısmı olan bir polis memuru hakkında disiplin cezası verilmesini gerektiren bir olayla karşılaşmıştır. 7068 sayılı Kanun'a göre bu personel hakkında disiplin amirliği yetkisi kim tarafından kullanılır?
+    A) Üst konumdaki disiplin amiri tarafından  ✔
+    B) Yetkili disiplin kurulu tarafından
+    C) İlçe emniyet müdürü tarafından, kararın gerekçesinde hısımlık ilişkisi belirtilmek suretiyle
+    D) Aynı ilçe emniyet kadrosundaki en kıdemli amir tarafından
+    E) Vali tarafından bu iş için görevlendirilecek bir vali yardımcısı tarafından
+  — skor 0.18 | Polis Mevzuatı / 7068 Sayılı Genel Kolluk Disiplin Hükümleri Kanunu | published | id 17abf4ab-da2a-4e6a-9638-d5ee703ed773
+    Bir emniyet biriminde görev yapan personel hakkında disiplin cezası verme yetkisi, sıralı amirler içinde ilk olarak şube müdürüne tanınmıştır. Aynı personelden makam ve rütbece büyük olan il emniyet müdürü de yetkili sıralı amirdir. 7068 sayılı Genel Kolluk Disiplin Hükümleri Hakkında Kanun'a göre bu iki amirin sıfatları bakımından aşağıdakilerden hangisi doğrudur?
+    A) Her ikisi de disiplin amiri sayılır; üst disiplin amirliği yalnız Bakana aittir.
+    B) Yalnız il emniyet müdürü disiplin amiridir; şube müdürü üst disiplin amiridir.
+    C) Şube müdürü disiplin amiri, il emniyet müdürü üst disiplin amiridir.  ✔
+    D) Şube müdürü yalnızca üst sayılır; disiplin amirliği sıfatı il emniyet müdürüne aittir.
+    E) İkisi de yalnızca üst sayılır; disiplin amirliği sıfatı sadece disiplin kurullarına aittir.
+
+## atama-p2-05
+ADAY: Atama ve Yer Değiştirme Yönetmeliği'ne göre, hizmet ihtiyacı sebebiyle iki kez yerinde bırakılan personel için üçüncü kez erteleme teklif edilebilmesi aşağıdakilerden hangisine bağlıdır?
+ADAY DOĞRU: Uzmanlık gerektiren birimce istenmesine
+  — skor 0.24 | Polis Mevzuatı / 3201 Sayılı Emniyet Teşkilat Kanunu | published | id 00c5bee4-1c95-4b25-babb-5ad89659b384
+    Bir Üçüncü Sınıf Emniyet Müdürü, bu rütbeye 2018 yılında terfi etmiş, aradan geçen sürede bir üst rütbeye terfi edememiştir. Emeklilik aylığı bağlanabilmesi için gerekli şartları da taşıyan bu personelin hizmet ihtiyacı sebebiyle kadrosuzluktan emekliye sevki, 3201 sayılı Emniyet Teşkilat Kanunu'na göre en erken hangi yılda gündeme gelir?
+    A) 2020
+    B) 2021
+    C) 2022
+    D) 2023  ✔
+    E) 2024
+  — skor 0.20 | Polis Mevzuatı / 2911 Sayılı Toplantı ve Gösteri Yürüyüşleri Kanunu | published | id bed5f0e1-5a80-4a58-9ced-1fa659b68565
+    Bir il sınırı içinde aynı günde birden çok toplantı yapılmak istenmesi hâlinde vali, emrindeki güvenlik kuvvetlerinin ve gerektiğinde yararlanabileceği diğer güçlerin bu toplantıların güvenlik içinde yapılmasını sağlamaya yeterli olmadığı kanısına varmıştır. 2911 sayılı Toplantı ve Gösteri Yürüyüşleri Kanunu'na göre vali bu toplantılardan bir kısmını ne kadar süreyle erteleyebilir?
+    A) Yirmidört saati aşmamak üzere bir kez
+    B) Kırksekiz saati aşmamak üzere bir kez
+    C) On günü aşmamak üzere bir kez  ✔
+    D) On beş günü aşmamak üzere bir kez
+    E) Bir ayı aşmamak üzere bir kez
+  — skor 0.19 | Polis Mevzuatı / 3201 Sayılı Emniyet Teşkilat Kanunu | published | id 20a19444-81e3-4d94-92fc-b4bee3437ece
+    3201 sayılı Emniyet Teşkilat Kanunu'na göre bir üst rütbeye terfi etmek için belirlenen diğer şartları taşımakla birlikte, hizmet ihtiyacı sebebiyle kadrosuzluktan terfi edemeyen personel hakkında aşağıdakilerden hangisi uygulanır?
+    A) Bir üst rütbeye terfi etmiş sayılır.
+    B) Zorunlu en az bekleme süresi bir yıl uzatılır.
+    C) Kadrosuzluk tazminatı ödenmek suretiyle emekliye sevk edilir.
+    D) Terfii ertesi yıl kurulda öncelikle görüşülür.
+    E) Terfi eden emsallerinin ek gösterge, zam ve tazminatları ödenir.  ✔
+  — skor 0.18 | Polis Mevzuatı / 7068 Sayılı Genel Kolluk Disiplin Hükümleri Kanunu | published | id 3feb8128-c9bd-47c0-86f8-8bebabee0831
+    7068 sayılı Kanun'a göre izinsiz veya kurumunca kabul edilebilir bir özrü olmaksızın "iki günden fazla ve üç güne kadar (üçüncü gün dahil)" göreve gelmemek fiili hangi disiplin cezasını gerektirir?
+    A) Üç günlüğe kadar aylıktan kesme
+    B) Dört ila on günlüğe kadar aylıktan kesme
+    C) Onbir ila onbeş günlüğe kadar aylıktan kesme  ✔
+    D) Dört ay kısa süreli durdurma
+    E) Altı ay kısa süreli durdurma
+  — skor 0.18 | Polis Mevzuatı / 7068 Sayılı Genel Kolluk Disiplin Hükümleri Kanunu | published | id 4ae657e7-36c6-4cd1-bc2c-914507d0cf90
+    7068 sayılı Kanun'a göre aşağıda verilen fiillerden hangileri yirmi ay uzun süreli durdurma cezasını gerektirir? I. İzinsiz veya kurumca kabul edilebilir özrü olmaksızın kesintisiz olarak beş günden fazla ve dokuz güne kadar (dokuzuncu gün dahil) görevine gelmemek II. Kanunun verdiği yetkiye dayalı olmaksızın spor müsabakalarına dayalı sabit ihtimalli veya müşterek bahis oyunlarını oynamak III. Hi
+    A) Yalnız I
+    B) Yalnız II
+    C) I ve II  ✔
+    D) II ve III
+    E) I, II ve III
+
+## atama-p2-06
+ADAY: Atama ve Yer Değiştirme Yönetmeliği'ne göre, sağlık sebebiyle erteleme talebinde bulunan personelin raporunda belirtilen hastalık, atanacağı bölgedeki sağlık kurumlarında tedavi edilebilir nitelikteyse aşağıdakilerden hangisi uygulanır?
+ADAY DOĞRU: Tedavi kurumu bulunan illerden birine atanır.
+  — skor 0.24 | Polis Mevzuatı / 657 Sayılı Devlet Memurları Kanunu | published | id ec231212-0dd5-472a-8db6-09cab1f9b408
+    Uzun süreli tedavi gerektiren hastalığı nedeniyle verilen hastalık izni ve bu iznin uzatılmış süresi sonunda iyileşemediği için hakkında emeklilik hükümleri uygulanan, ancak emeklilik hakkını elde etmemiş bulunan bir kişinin gerekli sağlık şartlarını yeniden kazandığı resmî sağlık kurulunca tespit edilmiştir. Bu kişi memuriyete dönmek istemektedir. 657 sayılı Kanun'a göre bu kişinin durumu ile ilg
+    A) İyileştiğine dair raporu ibraz etmesiyle, emekliye ayrılmadan önceki kadrosunda yeniden göreve başlar.
+    B) Kurumunca resen, niteliklerine uyan kadrolardan birine öncelikle atanır.
+    C) İsteği üzerine, niteliklerine bakılmaksızın boş bir kadroya öncelikle atanır.
+    D) İsteği üzerine, niteliklerine uyan kadrolara atanmada kendisine öncelik tanınır.  ✔
+    E) İsteği üzerine öncelikli atanabilmesi için sağlık şartlarını kazandığının hekim raporuyla belgelenmesi yeterlidir.
+  — skor 0.21 | Polis Mevzuatı / 657 Sayılı Devlet Memurları Kanunu | published | id cd3d589b-d0c5-42f8-b19c-a64d69c78ae9
+    Bir il emniyet müdürlüğünde görevli polis memurunun, sağlık kurulu raporuyla hayatını başkasının yardım veya bakımı olmadan sürdüremeyecek derecede engelli olduğu tespit edilen çocuğunun, başka bir ilde bulunan özel eğitim kurumunda eğitim görmesi gerektiği özel eğitim değerlendirme kurulunca belgelendirilmiştir. 657 sayılı Kanun'a göre bu polis memuru ile ilgili aşağıdakilerden hangisi doğrudur?
+    A) Okulun bulunduğu ildeki herhangi bir kamu kurumunda durumuna uygun boş bir kadroya naklen atanır.
+    B) Talep etmesi hâlinde, okulun bulunduğu il veya ilçe sınırları içinde kendi kurumundaki durumuna uygun boş bir kadroya atanır.  ✔
+    C) Okulun bulunduğu yerde kendi kurumunda uygun boş kadro varsa ataması, hizmet gerekleri gözetilerek kurumunun takdirine göre yapılır.
+    D) Talebi aranmaksızın, okulun bulunduğu il veya ilçedeki kendi kurumuna ait durumuna uygun bir kadroya resen atanır.
+    E) Çocuğun eğitimi süresince, okulun bulunduğu yerdeki kendi kurumunun bir birimine geçici görevle gönderilir.
+  — skor 0.21 | Polis Mevzuatı / 657 Sayılı Devlet Memurları Kanunu | published | id 57b21fcc-20c0-4a15-a8b3-5addc654e99e
+    Bir bakanlıkta memur olan Ayşe Hanım'ın başka bir kurumda memur olan eşi, yer değiştirme suretiyle başka bir ile atanmıştır. Ayşe Hanım'ın kurumunun o ilde teşkilatı ve niteliğine uygun boş bir kadrosu bulunmaktadır. 657 sayılı Kanun'a göre Ayşe Hanım'ın ataması ile ilgili aşağıdakilerden hangisi doğrudur?
+    A) Eşinin atanmasıyla birlikte, ayrıca bir istek aranmadan eşinin bulunduğu ile resen atanır.
+    B) İsteği hâlinde, ataması yapılmaz; eşinin oradaki görevi sürdüğü müddetçe kendisine izin verilir.
+    C) İsteği hâlinde, kurumları arasında yapılacak koordinasyonla eşinin atandığı ildeki bir kadroya atanır.  ✔
+    D) Kurumunun bölgeler arası atama planına göre ve eşinin atamasından bağımsız olarak yer değiştirmeye tabi tutulur.
+    E) İsteği hâlinde, 74 ve 76 ncı maddelerdeki esaslara bağlı kalınmaksızın eşinin atandığı ildeki bir kadroya atanır.
+  — skor 0.19 | Ceza Muhakemesi Hukuku / 5271 Sayılı Ceza Muhakemesi Kanunu (CMK) | published | id 7429bb7d-4df8-4ce5-9158-77e1a724a917
+    Akıl hastalığı şüphesi bulunan şüpheli veya sanığın resmî sağlık kurumunda gözlem altına alınmasında, tek seferde uygulanacak gözlem süresi en fazla kaç haftadır?
+    A) 2 hafta
+    B) 4 hafta
+    C) 3 hafta  ✔
+    D) 6 hafta
+    E) 1 hafta
+  — skor 0.18 | Polis Mevzuatı / 5395 Sayılı Çocuk Koruma Kanunu | published | id a305044a-baaa-4025-ac73-2930aa87a070
+    Uyuşturucu madde bağımlılığı nedeniyle kendisi açısından ciddi tehlike oluşturduğu değerlendirilen bir çocuk, ailesi tarafından Sağlık Bakanlığına bağlı yataklı bir sağlık kurumuna getirilmiştir. İlgili uzman hekim, çocuğun tedaviye ihtiyacı bulunduğunu tespit ederek acil korunma kararı alınması amacıyla raporunu düzenlemiştir. 5395 sayılı Çocuk Koruma Kanunu’na göre sağlık kurumu, çocuk hâkimine 
+    A) Çocuğun sağlık kurumuna geldiği tarihten itibaren beş gün içinde
+    B) Uzman hekim raporunun düzenlendiği tarihten itibaren kırk sekiz saat içinde
+    C) Çocuğun sağlık kurumuna geldiği tarihten itibaren üç gün içinde
+    D) Sağlık kurulu raporunun düzenlendiği tarihten itibaren yirmi dört saat içinde
+    E) Uzman hekim raporunun düzenlendiği tarihten itibaren yirmi dört saat içinde  ✔
+
+## atama-p2-07
+ADAY: Atama ve Yer Değiştirme Yönetmeliği'ne göre, ikinci bölgeye atama sırası gelen personelden aşağıdakilerin hangisi çocuklarının öğrenimi sebebiyle erteleme talebinde bulunabilir?
+ADAY DOĞRU: İki çocuğu üniversitede okuyan
+  — skor 0.21 | Ceza Muhakemesi Hukuku / 5271 Sayılı Ceza Muhakemesi Kanunu (CMK) | published | id 61674ad7-1698-44a5-b474-6f513d01b2ea
+    Adli süreçteki çocukların muhakemesi hakkında I. Çocuğun ifadesinin alınması veya çocuk hakkındaki diğer işlemler sırasında, çocuğun yanında sosyal çalışma görevlisi bulundurulması zorunludur. II. Çocuklar gözaltına alınabilir. III. Çocuklara zincir, kelepçe ve benzeri aletler takılamaz. IV. Çocuğa yüklenen suçtan dolayı, Ceza Muhakemesi Yasası'ndaki koşulların varlığı durumunda, kamu davasının aç
+    A) Yalnız I
+    B) I ve II
+    C) I ve III
+    D) I ve IV  ✔
+    E) I, II ve IV
+  — skor 0.20 | Polis Mevzuatı / Yakalama, Gözaltına Alma ve İfade Alma Yönetmeliği | published | id 4a658552-f12f-4286-8c6d-37756c48dd91
+    Yakalama, Gözaltına Alma ve İfade Alma Yönetmeliği’ne göre, “on iki yaşını doldurmuş ancak on sekiz yaşını doldurmamış çocukların suç sebebi ile yakalanması” ile ilgili aşağıdakilerden hangisi yanlıştır?
+    A) Çocukların kimlikleri ve eylemleri mutlaka gizli tutulur.
+    B) Çocuklar, yetişkinlerden ayrı yerlerde tutulur.
+    C) Çocuğun gözaltına alındığı ana-baba veya vasisine bildirilir.
+    D) Müdafi hazır bulundurulsa dahi şüpheli çocuğun ifadesi alınamaz.  ✔
+  — skor 0.17 | Polis Mevzuatı / 657 Sayılı Devlet Memurları Kanunu | published | id 186d90ef-002d-4202-8e60-cf067efbfb72
+    Görev yaptığı ilden yer değiştirme suretiyle başka bir ildeki göreve atanan bir memur, atama emrinin tebliğinden sonra Kanunda öngörülen süre içinde yola çıkmış, ancak belli yol süresinin sonunda yeni görevine başlamamıştır. Memurun belgeyle ispatı mümkün bir zorlayıcı sebebi bulunmamaktadır. 657 sayılı Kanun'a göre bu memurla ilgili aşağıdakilerden hangisi doğrudur?
+    A) Ataması iptal edilir ve belli bir süre Devlet memuru olarak istihdam edilemez.
+    B) Yol süresinin bitiminden başlamak üzere kendisine on beş günlük yeni bir süre verilir.
+    C) Kendisine ek bir süre tanınmaksızın memuriyetten çekilmiş sayılır.
+    D) Başlamadığı günler aylıksız izin sayılarak eski görevine geri döndürülür.
+    E) Aradaki günler için aylık ödenmemek şartıyla kendisine on gün daha süre tanınabilir.  ✔
+  — skor 0.16 | Polis Mevzuatı / 6284 Sayılı Ailenin Korunması Kanunu | published | id 42ca66e8-b482-4b5d-ba8f-3b1c8b59a7f3
+    I. Hayati tehlikesinin bulunması hâlinde, ilgilinin talebi üzerine veya resen geçici koruma altına alınması II. Kişinin evli olması hâlinde, müşterek yerleşim yerinden ayrı yerleşim yeri belirlenmesi III. Kendisine ve gerekiyorsa beraberindeki çocuklara, bulunduğu yerde veya başka bir yerde uygun barınma yeri sağlanması IV. İşyerinin değiştirilmesi 6284 sayılı Ailenin Korunması ve Kadına Karşı Şid
+    A) I ve III  ✔
+    B) I ve IV
+    C) II ve III
+    D) I, II ve IV
+    E) II, III ve IV
+  — skor 0.16 | İdare Hukuku / 2577 İdari Yargılama Usulü Kanunu (İYUK) | published | id 4584d878-b544-4f41-ba46-84e54a169d3f
+    Merkezi Ankara'da bulunan Karayolları Genel Müdürlüğü'ne bağlı, Van'daki Karayolları 11. Bölge Müdürlüğü'nde görev yapmakta olan Memur Murat; Antalya'daki Karayolları 13. Bölge Müdürlüğü'ne yer değiştirme yoluyla atanıyor. Murat, atama işlemine karşı iptal davası açıyor. 2577 sayılı İYUK'a göre bu davada; I. Van II. Antalya III. Ankara idare mahkemelerinden hangileri yetkilidir?
+    A) Yalnız I
+    B) Yalnız II
+    C) Yalnız III
+    D) I ve II  ✔
+    E) I, II ve III
+
+## atama-p2-08
+ADAY: Atama ve Yer Değiştirme Yönetmeliği'ne göre, tutum ve davranışları nedeniyle bulunduğu yerde görev yapma niteliğini kaybettiği değerlendirilen personelin yer değişikliği teklifi, illerde ve merkez teşkilatında sırasıyla hangi makama yapılır?
+ADAY DOĞRU: Bakanlığa – Genel Müdürlüğe
+  — skor 0.25 | Genel Kültür ve Güncel Olaylar / Genel Kültür | published | id 03cf1e3d-e816-4e95-8626-58999f59a1f0
+    • Bakanlığa gönderilen kanun teklifleri hakkında görüş bildirmek • Yazılı olmayan hukuk kuralları ile örf ve adetleri ve eski hukuk kaynaklarını araştırmak, toplamak ve yayımlamak • Bakanlığın görev ve yetkisine giren konularla ilgili istatistiki bilgilerin belirlenmesi, toplanması, sınıflandırılması ve değerlendirilmesi ile ilgili hizmetleri yürütmek • Ceza muhakemesinde ön ödeme, uzlaştırma ve k
+    A) Eğitim Dairesi Başkanlığı
+    B) Mevzuat Genel Müdürlüğü
+    C) Ceza İşleri Genel Müdürlüğü
+    D) Bilgi İşlem Genel Müdürlüğü  ✔
+    E) Adli Sicil ve İstatistik Genel Müdürlüğü
+  — skor 0.24 | İdare Hukuku / 2577 İdari Yargılama Usulü Kanunu (İYUK) | published | id 4584d878-b544-4f41-ba46-84e54a169d3f
+    Merkezi Ankara'da bulunan Karayolları Genel Müdürlüğü'ne bağlı, Van'daki Karayolları 11. Bölge Müdürlüğü'nde görev yapmakta olan Memur Murat; Antalya'daki Karayolları 13. Bölge Müdürlüğü'ne yer değiştirme yoluyla atanıyor. Murat, atama işlemine karşı iptal davası açıyor. 2577 sayılı İYUK'a göre bu davada; I. Van II. Antalya III. Ankara idare mahkemelerinden hangileri yetkilidir?
+    A) Yalnız I
+    B) Yalnız II
+    C) Yalnız III
+    D) I ve II  ✔
+    E) I, II ve III
+  — skor 0.22 | Polis Mevzuatı / 3201 Sayılı Emniyet Teşkilat Kanunu | published | id b471e8e9-014c-463a-91a2-b4aa3f2f2bd3
+    Bir emniyet teşkilatı personeli, atandığı yerde bakmakla yükümlü olduğu kişinin sağlığı nedeniyle görevini yapamayacak duruma gelmiştir. 3201 sayılı Emniyet Teşkilat Kanunu'na göre bu personel hakkında ne yapılır?
+    A) Bakanlıkta Genel İdare Hizmetleri sınıfından bir göreve atanır  ✔
+    B) Sicillen tekaüde sevkedilir
+    C) Sağlık durumu elverişli olan başka bir ile naklen atanır
+    D) Emniyet hizmetleri sınıfında kalmak üzere merkez teşkilatına alınır
+    E) Sağlık durumu düzelinceye kadar izinli sayılır
+  — skor 0.21 | Polis Mevzuatı / 7068 Sayılı Genel Kolluk Disiplin Hükümleri Kanunu | published | id d1a71a73-6ff0-4540-ac1a-d88a2e494a37
+    Emniyet Genel Müdürlüğü kadrosunda bulunan bir personel, görevlendirme nedeniyle mensubu olduğu teşkilat dışında fiilen görev yapmaktadır. Bu personelin bu süre içinde işlediği bir disiplinsizlik öğrenilmiştir. 7068 sayılı Kanun'a göre bu olayda izlenecek usul aşağıdakilerden hangisidir?
+    A) Disiplin soruşturması mensubu olduğu teşkilat bünyesinde yapılır; karar da yine bu teşkilatın yetkili disiplin amiri ve kurullarınca verilir.
+    B) Disiplin soruşturması fiilen görevli olduğu teşkilatta yapılır; dosya her hâlde mensubu olduğu teşkilatın disiplin amiri ve kurullarına gönderilir.  ✔
+    C) Disiplin soruşturması fiilen görevli olduğu teşkilat bünyesinde yapılır; karar da yine bu teşkilatın yetkili disiplin amiri ve kurullarınca verilir.
+    D) Disiplin soruşturması Bakanlık müfettişlerince yapılır ve dosya doğrudan Bakanlık Yüksek Disiplin Kuruluna gönderilir.
+    E) Disiplin soruşturması, personelin görevlendirmeden önce çalıştığı birimin disiplin amirince yapılır ve dosya orada karara bağlanır.
+  — skor 0.21 | Genel Kültür ve Güncel Olaylar / Genel Kültür | published | id fce0f729-9e6f-4a1d-8a53-7d0f6fb9d1e4
+    Cumhurbaşkanlığı Teşkilatı Hakkında 1 sayılı Cumhurbaşkanlığı Kararnamesi’ne göre, hangisi Çevre, Şehircilik ve İklim Değişikliği Bakanlığı Tabiat Varlıklarını Koruma Genel Müdürlüğünün görev ve yetkilerinden değildir?
+    A) Millî parklar, tabiat parkları, tabiat anıtları, tabiatı koruma alanları, sulak alanlar ve benzeri koruma statüsü bulunan diğer alanların tescil, onay ve ilanına dair usul ve esasları belirlemek
+    B) Tabiat varlıkları ve doğal sit alanları ile özel çevre koruma bölgelerinin tespit, tescil, onay, değişiklik ve ilanına dair usul ve esasları belirlemek ve bu alanların sınırlarını tespit ve tescil etmek, yönetmek ve yönetilmesini sağlamak
+    C) Tabiat varlıkları, doğal, tarihî, arkeolojik ve kentsel sitler ile koruma statüsü bulunan diğer alanların çakıştığı yerlerde koruma ve kullanma esaslarını ilgili bakanlıkların görüşünü alarak belirlemek ve bu alanların kısmen veya tamamen hangi idarelerce yönetileceğine karar vermek
+    D) Tabiatın korunmasına yönelik politikalar geliştirilmesi amacıyla çalışmalar yapmak, korunan alanların tespiti, millî parklar, tabiat parkları, tabiat anıtları, tabiatı koruma alanları, sulak alanlar ve biyolojik çeşitlilik ile av ve yaban hayatının korunması, yönetimi, geliştirilmesi, işletilmesi ve işlettirilmesini sağlamak  ✔
+
+## atama-p2-09
+ADAY: İkinci bölgedeki birimlerde kesintisiz en az - - - - geçici görevle fiilen çalışan birinci bölge personelinin bu süreleri ikinci bölge hizmetinden sayılır; ikinci bölgeden birinci bölgeye kurs veya geçici görev gibi nedenlerle yapılan görevlendirmelerde ise toplamı - - - - fazla olan süreler sayılma
+ADAY DOĞRU: üç ay - dört aydan
+  — skor 0.20 | Polis Mevzuatı / 657 Sayılı Devlet Memurları Kanunu | published | id 3dd0d21c-87a4-44e1-8132-2df625253d44
+    Hizmetleri sırasında radyoaktif ışınlarla çalışan personele, her yıl yıllık izinlerine ilaveten - - - sağlık izni verilir. 657 sayılı Devlet Memurları Kanunu’na göre, bu hükümde boş bırakılan yere aşağıdakilerden hangisi getirilmelidir?
+    A) bir haftalık
+    B) on günlük
+    C) on beş günlük
+    D) bir aylık  ✔
+    E) kırk beş günlük
+  — skor 0.20 | Polis Mevzuatı / Yakalama, Gözaltına Alma ve İfade Alma Yönetmeliği | published | id 07607b8e-9c37-4899-a091-5f77ae6afe54
+    Gözaltı süresi, yakalama yerine en yakın hâkim veya mahkemeye gönderilmesi için zorunlu süre hariç, yakalama anından itibaren - - - - saati geçemez. Yakalama yerine en yakın hâkim veya mahkemeye gönderilme için zorunlu süre ise - - - - saatten fazla olamaz. Yakalama, Gözaltına Alma ve İfade Alma Yönetmeliği'ne göre bu hükümde boş bırakılan yerlere sırasıyla aşağıdakilerden hangileri getirilmelidir
+    A) kırk sekiz - yirmi dört
+    B) yirmi dört - yirmi dört
+    C) otuz altı - on iki
+    D) yirmi dört - on iki  ✔
+    E) kırk sekiz - on iki
+  — skor 0.19 | Polis Mevzuatı / Adli ve Önleme Aramaları Yönetmeliği | published | id 641f7adc-10a6-4d5b-b9f8-f28b4328b681
+    El koyma söz konusuysa, mülki âmirin kararı - - - - saat içinde görevli hâkimin onayına sunulur. Hâkim, kararını el koymadan itibaren - - - - saat içinde açıklar; aksi hâlde, el koyma kendiliğinden kalkar. Adli ve Önleme Aramaları Yönetmeliği’nin “derneklerde arama” ile ilgili bu hükmüne göre, boş bırakılan yerlere aşağıdakilerden hangisi sırasıyla getirilmelidir?
+    A) yirmi dört - yirmi dört
+    B) yirmi dört - kırk sekiz  ✔
+    C) yirmi dört - yetmiş iki
+    D) kırk sekiz - kırk sekiz
+    E) kırk sekiz - yetmiş iki
+  — skor 0.19 | Ceza Muhakemesi Hukuku / 5271 Sayılı Ceza Muhakemesi Kanunu (CMK) | published | id 982c6a5d-f539-44be-9260-e7c9d8940a50
+    Mağdur veya suçtan zarar gören davaya katıldığında ……………… suçu ile alt sınırı ……………… hapis cezasını gerektiren suçlarda, baro tarafından kendisine avukat görevlendirilmesini isteyebilir. Cümlede boş bırakılan yerlere sırasıyla aşağıdakilerden hangisi getirilmelidir?
+    A) cinsel saldırı – beş yıldan fazla  ✔
+    B) cinsel saldırı – en az beş yıl
+    C) cinsel saldırı – on yıl
+    D) kasten öldürme – en az on yıl
+    E) kasten öldürme – on yıldan fazla
+  — skor 0.18 | Genel Kültür ve Güncel Olaylar / Genel Kültür | published | id 761083c5-b4be-4c24-a884-ba01af9f3366
+    Emeklilik talebinin kabulü, müracaat tarihinden itibaren - - - - fazla geciktirilemez. Jandarma Genel Komutanlığı ve Sahil Güvenlik Komutanlığı Personel Yönetmeliği’ne göre, bu hükümde boş bırakılan yere aşağıdakilerden hangisi getirilmelidir?
+    A) bir haftadan
+    B) on beş günden
+    C) bir aydan  ✔
+    D) iki aydan
+
+## atama-p2-10
+ADAY: Atama ve Yer Değiştirme Yönetmeliği'ne göre, görev yaptığı birimin hizmet süresini tamamlayan ve kanuni yaş haddine beş yıl kalmış personelin isteği üzerine yerinde bırakılabilmesi için aşağıdakilerden hangisi aranan şartlardan biri DEĞİLDİR?
+ADAY DOĞRU: Atanamayacağı yerlere ilişkin bir engelinin bulunmaması
+  — skor 0.20 | Polis Mevzuatı / 657 Sayılı Devlet Memurları Kanunu | published | id 186d90ef-002d-4202-8e60-cf067efbfb72
+    Görev yaptığı ilden yer değiştirme suretiyle başka bir ildeki göreve atanan bir memur, atama emrinin tebliğinden sonra Kanunda öngörülen süre içinde yola çıkmış, ancak belli yol süresinin sonunda yeni görevine başlamamıştır. Memurun belgeyle ispatı mümkün bir zorlayıcı sebebi bulunmamaktadır. 657 sayılı Kanun'a göre bu memurla ilgili aşağıdakilerden hangisi doğrudur?
+    A) Ataması iptal edilir ve belli bir süre Devlet memuru olarak istihdam edilemez.
+    B) Yol süresinin bitiminden başlamak üzere kendisine on beş günlük yeni bir süre verilir.
+    C) Kendisine ek bir süre tanınmaksızın memuriyetten çekilmiş sayılır.
+    D) Başlamadığı günler aylıksız izin sayılarak eski görevine geri döndürülür.
+    E) Aradaki günler için aylık ödenmemek şartıyla kendisine on gün daha süre tanınabilir.  ✔
+  — skor 0.20 | Polis Mevzuatı / 3201 Sayılı Emniyet Teşkilat Kanunu | published | id d131c04f-5f37-4c11-a69a-093a5b6d206c
+    Aşağıdakiler verilmiştir: I. Bulunulan rütbedeki en az bekleme süresinin tamamlanması II. Bekleme süresi içindeki yıl sayısı kadar iyi veya çok iyi performans değerlendirme puanı alınması III. Dördüncü Sınıf Emniyet Müdürü rütbesine terfi için yapılacak yazılı ve sözlü sınavda başarılı olunması IV. Kıdem sırasında ilk sırada yer alınması 3201 sayılı Emniyet Teşkilat Kanunu'na göre yukarıdakilerden
+    A) Yalnız I
+    B) I, II ve III  ✔
+    C) I ve II
+    D) II ve III
+    E) I, II, III ve IV
+  — skor 0.18 | Polis Mevzuatı / 657 Sayılı Devlet Memurları Kanunu | published | id 5acea304-fb37-4bd8-9719-8277f599c4fb
+    I. Refakat izninin bitiminden itibaren, sağlık kurulu raporuyla belgelendirilmesi şartıyla, istekleri üzerine 18 aya kadar aylıksız izin verilebilir. II. Üç yaşını doldurmamış bir çocuğu eşiyle birlikte veya münferit olarak evlat edinen memurlar ile memur olmayan eşin münferit olarak evlat edinmesi hâlinde memur olan eşlerine, istekleri üzerine 36 aya kadar aylıksız izin verilir. III. Aylıksız izi
+    A) Yalnız I
+    B) I ve II
+    C) I ve III  ✔
+    D) II ve III
+    E) I ve IV
+  — skor 0.17 | Polis Mevzuatı / 657 Sayılı Devlet Memurları Kanunu | published | id 0b86dbb5-b36e-4522-82ec-cbf32390ec7f
+    Eşi yer değiştirme suretiyle başka bir ile atanan memura, eşinin atandığı yerde kurumunun teşkilatı bulunmadığı için talebi üzerine eşinin görev süresiyle sınırlı olarak izin verilmiştir. 657 sayılı Kanun’a göre bu memurun kadrosu, memuriyeti boyunca en çok ne kadar süreyle saklı tutulabilir?
+    A) 1 yıl
+    B) 18 ay
+    C) 3 yıl
+    D) 4 yıl  ✔
+    E) 10 yıl
+  — skor 0.17 | Polis Mevzuatı / 657 Sayılı Devlet Memurları Kanunu | published | id 26e5f682-adc6-4a53-9cc9-f2f4aa3608f3
+    657 sayılı Devlet Memurları Kanunu’na göre atama yapılacak boş kadroların sınıf ve dereceleri, kadroların bulundukları kurum ve yerler, kadrolara alınacak personel sayıları, alınacak personelin genel ve özel şartları, en son başvurma tarihi, başvurulacak merciler, sınav yerleri ve zamanları ile gerek görülen diğer bilgiler başvurma süresinin bitiminden en az kaç gün önce duyurulur?
+    A) 30
+    B) 25
+    C) 20
+    D) 15  ✔
+    E) 10
+
+## atama-p2-11
+ADAY: Atama ve Yer Değiştirme Yönetmeliği'ne göre, bölgelerdeki “hizmet süresinin belirlenmesi ve hesaplanması” ile ilgili aşağıdakilerden hangisi YANLIŞTIR?
+ADAY DOĞRU: İkinci bölgede doğrudan merkeze bağlı birimlerin hizmet süresi, bağlı oldukları il veya ilçe merkezinin süresinden iki yıl fazladır.
+  — skor 0.23 | İdare Hukuku / 5393 Belediye Kanunu | published | id 6667311a-7789-4d6b-b9fe-81bb7420ae1e
+    Belediye başkanı görevi süresince ve görevinin sona ermesinden itibaren - - - - yıl süreyle, meclis üyeleri ise görevleri süresince ve görevlerinin sona ermesinden itibaren - - - - yıl süreyle, belediye ve bağlı kuruluşlarına karşı doğrudan doğruya veya dolaylı olarak taahhüde giremez, komisyonculuk ve temsilcilik yapamaz. 5393 sayılı Belediye Kanunu’na göre verilen hükümde boş bırakılan yerlere s
+    A) bir - bir
+    B) bir - üç
+    C) iki - bir  ✔
+    D) iki - üç
+  — skor 0.22 | İdare Hukuku / 2577 İdari Yargılama Usulü Kanunu (İYUK) | published | id 4584d878-b544-4f41-ba46-84e54a169d3f
+    Merkezi Ankara'da bulunan Karayolları Genel Müdürlüğü'ne bağlı, Van'daki Karayolları 11. Bölge Müdürlüğü'nde görev yapmakta olan Memur Murat; Antalya'daki Karayolları 13. Bölge Müdürlüğü'ne yer değiştirme yoluyla atanıyor. Murat, atama işlemine karşı iptal davası açıyor. 2577 sayılı İYUK'a göre bu davada; I. Van II. Antalya III. Ankara idare mahkemelerinden hangileri yetkilidir?
+    A) Yalnız I
+    B) Yalnız II
+    C) Yalnız III
+    D) I ve II  ✔
+    E) I, II ve III
+  — skor 0.20 | İdare Hukuku / 5302 İl Özel İdaresi Kanunu | published | id 3b4528c4-b2cb-4702-a39c-0d444764c69b
+    5018 sayılı Kamu Mali Yönetimi ve Kontrol Kanunu’nda, aşağıdakilerden hangisi “Yetkileri belirli bir coğrafi alan ve hizmetlerle sınırlı olarak kamusal faaliyet gösteren belediye, il özel idaresi ile bunlara bağlı veya bunların kurdukları veya üye oldukları birlik ve idareler.” şeklinde tanımlanmıştır?
+    A) Özel bütçeli idare
+    B) Katma bütçeli idare
+    C) Mahallî idare  ✔
+    D) Özel İdare
+    E) Genel yönetim
+  — skor 0.20 | Analitik Düşünme ve Türkçe / Analitik Akıl Yürütme | published | id 2541c07c-a7f4-4c72-be72-00da6b3f0cdc
+    Beş katlı bir apartmanın her katında yalnızca bir hane oturmaktadır. Bu haneler Aksoy, Bulut, Çetin, Duman ve Ekinci aileleridir ve her aile katlardan yalnızca birinde oturmaktadır. Katlar aşağıdan yukarıya doğru numaralanmıştır: birinci kat en alttaki, beşinci kat en üstteki kattır. Her hanede bir, iki, üç ya da dört kişi yaşamaktadır. Apartmanla ilgili bilinenler şunlardır: - Apartmanda toplam o
+    A) Duman ailesinin oturduğu kat ile Bulut ailesinin hanesindeki kişi sayısı
+    B) Ekinci ailesinin oturduğu kat ile Çetin ailesinin hanesindeki kişi sayısı
+    C) Aksoy ailesinin hanesindeki kişi sayısı ile Bulut ailesinin hanesindeki kişi sayısı
+    D) Çetin ailesinin hanesindeki kişi sayısı ile Ekinci ailesinin hanesindeki kişi sayısı
+    E) Çetin ailesinin oturduğu kat ile Aksoy ailesinin hanesindeki kişi sayısı  ✔
+  — skor 0.20 | Polis Mevzuatı / 3201 Sayılı Emniyet Teşkilat Kanunu | published | id 3951ed18-ab84-4ef0-bb3b-e0d0b96fee04
+    3201 sayılı Emniyet Teşkilat Kanunu'na göre, emniyet teşkilatına Emniyet Hizmetleri Sınıfı dışından yapılacak personel alımları ile ilgili aşağıdakilerden hangisi YANLIŞTIR?
+    A) Alınacak personel sayısının hesabında Emniyet Hizmetleri Sınıfı dışındaki kadro sayısı esas alınır.
+    B) 657 sayılı Kanunun 53 üncü maddesinin birinci fıkrasındaki oran, emniyet teşkilatı için % 5 olarak uygulanır.
+    C) Alım ve ilk atamaya ilişkin sınav komisyonları ile aranacak nitelikler yönetmelikle düzenlenir.
+    D) Hesaplamada esas alınacak kadro sayısı her yıl Cumhurbaşkanı kararıyla belirlenir.  ✔
+    E) Hesap kuralı, 3713 ve 2828 sayılı Kanunlar ile 657 sayılı Kanunun 53 üncü maddesi kapsamındaki alımlar için geçerlidir.
+
+## atama-p2-12
+ADAY: Atama ve Yer Değiştirme Yönetmeliği'ne göre, deprem, sel ve benzeri doğal afetler nedeniyle olağanüstü hal ilan edilen il veya ilçelerin görev yeri puanları, aşağıdakilerden hangisinin teklifi üzerine geçici olarak artırılabilir?
+ADAY DOĞRU: Genel Müdür
+  — skor 0.18 | Anayasa Hukuku / T.C. Anayasası | published | id f2ed818d-bf67-44c7-b103-f4749f90ea67
+    Anayasaya göre, Cumhurbaşkanı'nın doğal afet veya tehlikeli salgın hastalık gibi hallerde olağanüstü hal ilan etme süresi en fazla ne kadardır?
+    A) 15 gün
+    B) 3 ay
+    C) 6 ay  ✔
+    D) 1 yıl
+    E) 2 yıl
+  — skor 0.17 | Anayasa Hukuku / T.C. Anayasası | published | id 11c5a315-6db0-41f2-9ee1-7e483dea4e5f
+    1982 Anayasası'na göre olağanüstü hal kararı ile ilgili aşağıda verilen ifadelerden hangisi yanlıştır?
+    A) Cumhurbaşkanınca karar verilir.
+    B) Şiddet olayları nedeniyle kamu düzeninin ciddi şekilde bozulması halinde, Milli Güvenlik Kurulunun da görüşü alındıktan sonra yurdun bir veya birden fazla bölgesinde veya bütününde, süresi 6 ayı geçmemek üzere olağanüstü hal ilan edilebilir.  ✔
+    C) Karar, Resmi Gazetede yayımlanır ve hemen TBMM'nin onayına sunulur.
+    D) Olağanüstü hal süresince olağanüstü halin gerekli kıldığı konularda Cumhurbaşkanlığı kararnamesi çıkarılabilir.
+    E) Karar, TBMM tarafından süresi kısaltılarak da onaylanabilir.
+  — skor 0.16 | Polis Mevzuatı / 2918 Sayılı Karayolları Trafik Kanunu | published | id 2e13fcd4-428d-47d0-b7e2-f07be59c1f5e
+    2918 sayılı Karayolları Trafik Kanunu'na göre, aşağıdakilerden hangisi il ve ilçe trafik komisyonlarının görev ve yetkilerindendir?
+    A) Trafik suçu işleyenler hakkında tutanak düzenlemek ve gerekli işlemleri takip etmek
+    B) Sürücü adaylarının uygulamalı sınavlarını yapmak ve sertifika verilmesini sağlamak
+    C) Karayolu yapısında yapılacak çalışmalar için ilgililere izin vermek
+    D) Otopark olmaya müsait boş alan, arazi ve arsaları geçici otopark yeri olarak ilan etmek  ✔
+    E) Araçların muayenesini yapan muayene istasyonlarını denetlemek
+  — skor 0.15 | Polis Mevzuatı / 6284 Sayılı Ailenin Korunması Kanunu | published | id 42ca66e8-b482-4b5d-ba8f-3b1c8b59a7f3
+    I. Hayati tehlikesinin bulunması hâlinde, ilgilinin talebi üzerine veya resen geçici koruma altına alınması II. Kişinin evli olması hâlinde, müşterek yerleşim yerinden ayrı yerleşim yeri belirlenmesi III. Kendisine ve gerekiyorsa beraberindeki çocuklara, bulunduğu yerde veya başka bir yerde uygun barınma yeri sağlanması IV. İşyerinin değiştirilmesi 6284 sayılı Ailenin Korunması ve Kadına Karşı Şid
+    A) I ve III  ✔
+    B) I ve IV
+    C) II ve III
+    D) I, II ve IV
+    E) II, III ve IV

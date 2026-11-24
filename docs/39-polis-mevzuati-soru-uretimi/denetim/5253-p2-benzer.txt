@@ -1,0 +1,80 @@
+# 5253-p2 — bankadaki en benzer sorular (bütün banka, 7736 soru; eşik 0.15, aday başına 5)
+# skor = aday kök+doğru şık sözcüklerinin (IDF ağırlıklı) ne kadarının o soruda geçtiği. Yüksek skor mükerrer DEMEK DEĞİLDİR; karar gözcünündür.
+
+## 5253-p2-01
+ADAY: 5253 sayılı Kanun'a göre, “çocuk dernekleri” ile ilgili aşağıdakilerden hangisi YANLIŞTIR?
+ADAY DOĞRU: Kanunda belirtilen cezalar bu dernekler hakkında uygulanmaz.
+  — skor 0.50 | Polis Mevzuatı / 5253 Sayılı Dernekler Kanunu | published | id 8b9fa452-eee3-401f-8edd-6821f186dc17
+    5253 sayılı Dernekler Kanunu hükümlerine göre kaç yaşını bitiren ayırt etme gücüne sahip küçükler; toplumsal, ruhsal, ahlaki, bedensel ve zihinsel yetenekleri ile spor, eğitim ve öğretim haklarını, sosyal ve kültürel varlıklarını, aile yapısını ve özel yaşantılarını korumak ve geliştirmek amacıyla yasal temsilcilerinin yazılı izni ile çocuk dernekleri kurabilir?
+    A) On
+    B) On iki
+    C) On beş  ✔
+    D) On sekiz
+    E) On üç
+  — skor 0.41 | Anayasa Hukuku / T.C. Anayasası | published | id f03b3afa-6c77-4b9f-b784-f8001d40c7be
+    T.C. Anayasası’na göre, “dernek kurma hürriyeti” ile ilgili aşağıdakilerden hangisi doğrudur?
+    A) Dernek kurma hürriyeti hiçbir şekilde sınırlanamaz.
+    B) Herkes, önceden izin almak kaydıyla dernek kurma hürriyetine sahiptir.
+    C) Dernekler, yönetmeliğin öngördüğü hâllerde vali tarafından kapatılabilir.
+    D) Derneği faaliyetten men ile yetkilendirilen mercinin kararı, kırk sekiz saat içinde görevli hâkimin onayına sunulur.
+    E) Dernek kurma hürriyetinin kullanılmasında uygulanacak şekil, şart ve usuller kanunda gösterilir.  ✔
+  — skor 0.41 | Ceza Hukuku / Türk Ceza Kanunu | published | id b1ace08e-d08d-427c-850b-265bb4dd1657
+    I. Suçun oluşması için kural olarak failin taksirli olması aranır. II. Öngörülü taksirde netice fail tarafından öngörülmüştür. III. Öngörülü taksirde ceza artırılır. IV. Taksirli fiiller ancak kanunda açıkça belirtilen hâllerde cezalandırılır. V. Neticesi sebebiyle ağırlaşan suçlarda failin netice yönünden en azından taksirle hareket etmesi gerekir. Taksirle ilgili yukarıdaki ifadelerden hangileri
+    A) Yalnız I
+    B) Yalnız III
+    C) I ve III
+    D) II, IV ve V
+    E) II, III, IV ve V  ✔
+  — skor 0.41 | Polis Mevzuatı / 2911 Sayılı Toplantı ve Gösteri Yürüyüşleri Kanunu | published | id f397ea92-fced-4304-9f8c-a12a716c8e9c
+    2911 sayılı Toplantı ve Gösteri Yürüyüşleri Kanunu'na göre, verilecek bildirimde düzenleme kurulu üyesi olarak gösterilenlerden Kanunda belirtilen nitelikleri taşımayanlar, toplantı veya yürüyüşün yapılması hâlinde hangi ceza ile cezalandırılır?
+    A) Bir yıla kadar adli para cezası
+    B) Bir yıl altı aydan üç yıla kadar hapis cezası
+    C) Altı aydan iki yıla kadar hapis cezası
+    D) İki yıldan beş yıla kadar hapis cezası
+    E) Bir yıla kadar hapis cezası  ✔
+  — skor 0.40 | Polis Mevzuatı / 5395 Sayılı Çocuk Koruma Kanunu | published | id 5baeb7be-6ac8-4c3c-9283-6ef50c21ca5f
+    I. Çocuk teslimine dair ilamın yerine getirilmesine ilişkin teslim emrine aykırı hareket eden yükümlü II. Çocukla kişisel ilişki kurulmasına dair ilamın yerine getirilmesine ilişkin teslim emrine aykırı hareket eden yükümlü III. Kişisel ilişki kurulması için kendisine çocuk teslim edilen ve ilam veya tedbir kararında belirtilen sürenin bitiminde çocuğu belirlenen yere getirmeyen hak sahibi 5395 sa
+    A) Yalnız I
+    B) Yalnız III
+    C) I ve II
+    D) I ve III  ✔
+    E) I, II ve III
+
+## 5253-p2-02
+ADAY: 5253 sayılı Kanun'a göre, bir derneğin denetimi sırasında suç teşkil eden fiillerin tespit edilmesi hâlinde mülki idare amiri durumu Cumhuriyet savcılığının yanı sıra aşağıdakilerden hangisine derhal bildirir?
+ADAY DOĞRU: Derneğe
+  — skor 0.30 | Polis Mevzuatı / 5253 Sayılı Dernekler Kanunu | published | id c4fc0457-b4ad-4865-8bbf-51bfba56688d
+    Denetimde yetkilendirilen görevliler, daha önce faaliyetten men edilmemiş bir dernek lokalinde 6136 sayılı Kanun'a aykırı olarak silah satıldığını tespit etmiştir. 5253 sayılı Kanun'a göre, bu tespitin sonucu aşağıdakilerden hangisidir?
+    A) Mülki idare amirince geçici süreyle faaliyetten men edilir.
+    B) Lokal belgesi mülki idare amirince iptal edilir.  ✔
+    C) Lokal belgesi belediyece iptal edilir.
+    D) Derneğin feshine karar verilir.
+    E) Önce yazılı uyarı yapılır, tekrarında men edilir.
+  — skor 0.28 | Polis Mevzuatı / 5253 Sayılı Dernekler Kanunu | published | id 00f25e2b-a96d-4dee-87ee-a505c4c4b330
+    5253 sayılı Kanun'a göre, bir derneğin yurt dışındaki kişi, kurum ve kuruluşlardan yardım alabilmesi aşağıdakilerden hangisine bağlıdır?
+    A) Mülki idare amirinden önceden izin almasına
+    B) Genel kurulun yetki vermesi üzerine yönetim kurulunun karar almasına
+    C) Dışişleri Bakanlığının olumlu görüşüne
+    D) En az bir yıldan beri faaliyette bulunmasına
+    E) Mülki idare amirliğine önceden bildirimde bulunmasına  ✔
+  — skor 0.26 | Polis Mevzuatı / 2559 Sayılı Polis Vazife ve Salâhiyet Kanunu (PVSK) | published | id 1a2875a2-36b9-46a2-a349-f94a05604f30
+    Bir tiyatro topluluğu, umuma açık bir kültür merkezinde sahneleyeceği oyun için gerekli bildirimi süresinde yapmış ve oyunu sahnelemiştir. Daha sonra oyunun Anayasal düzene aykırı olduğu tespit edilmiştir. 2559 sayılı PVSK'nın Ek 1 inci maddesine göre mahallin en büyük mülkî amiri bu tespit üzerine ne yapar?
+    A) Oyunu yasaklar ve kararını sulh ceza hâkiminin onayına sunar.
+    B) Topluluğa yazılı ihtarda bulunur; aykırılık tekrarlanırsa oyunu yasaklar.
+    C) Gecikmeksizin Cumhuriyet savcılığına suç duyurusunda bulunur.  ✔
+    D) Yerin ruhsatının iptali için belediyeye bildirimde bulunur.
+    E) Durumu İçişleri Bakanlığına bildirir ve Bakanlığın kararını bekler.
+  — skor 0.25 | Polis Mevzuatı / 2559 Sayılı Polis Vazife ve Salâhiyet Kanunu (PVSK) | published | id 7f98ab62-81b9-4d26-95d8-ac9efa20dfc9
+    Bir derneğe ait olup yalnız üyelerinin yararlanması için açılan bir lokal, iç yönetmeliğine aykırı faaliyet göstermektedir. 2559 sayılı PVSK'nın 8 inci maddesine göre bu lokalin faaliyetten men edilebilmesi için aşağıdakilerden hangisinin tespit edilmesi gerekir?
+    A) Birden fazla denetim sonunda ve yazılı ihtara rağmen umuma açık yer durumuna geldiğinin  ✔
+    B) Tek bir denetim sonunda ve yazılı ihtara rağmen umuma açık yer durumuna geldiğinin
+    C) Birden fazla denetim sonunda ve sözlü ihtara rağmen umuma açık yer durumuna geldiğinin
+    D) Bir yıl içinde yapılan üç ayrı denetimde umuma açık yer durumuna geldiğinin
+    E) Yazılı ihtar yapılmaksızın, birden fazla denetim sonunda umuma açık yer durumuna geldiğinin
+  — skor 0.24 | Polis Mevzuatı / 5253 Sayılı Dernekler Kanunu | published | id 376214b0-e74e-49c0-87d8-6495175bb55c
+    5253 sayılı Kanun'a göre, kamu yararına çalışan bir dernekte denetimde hapis cezası gerektiren suç tespit edilerek görevden uzaklaştırılan organların yerine kayyım atanmasını isteyen ve kayyımı atayan merciler sırasıyla aşağıdakilerden hangisidir?
+    A) İçişleri Bakanı – Sulh hukuk mahkemesi
+    B) Vali – İçişleri Bakanı
+    C) Vali – Sulh hukuk mahkemesi  ✔
+    D) İçişleri Bakanı – Sulh ceza hâkimliği
+    E) Cumhuriyet savcısı – Sulh ceza hâkimliği

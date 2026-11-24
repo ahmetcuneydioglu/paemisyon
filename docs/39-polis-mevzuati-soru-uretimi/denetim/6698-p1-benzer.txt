@@ -1,0 +1,347 @@
+# 6698-p1 — bankadaki en benzer sorular (bütün banka, 8013 soru; eşik 0.15, aday başına 5)
+# skor = aday kök+doğru şık sözcüklerinin (IDF ağırlıklı) ne kadarının o soruda geçtiği. Yüksek skor mükerrer DEMEK DEĞİLDİR; karar gözcünündür.
+
+## 6698-p1-01
+ADAY: 6698 sayılı Kanun'a göre, aşağıdakilerden hangisi Kanun hükümlerinin hiçbirinin uygulanmadığı kişisel veri işleme hâllerinden biridir?
+ADAY DOĞRU: Yargı makamlarınca yargılama için işlenmesi
+  — skor 0.32 | Ceza Hukuku / Türk Ceza Kanunu | published | id 07c315cd-d964-4f56-8c65-bd14cf3e8536
+    5237 sayılı Türk Ceza Kanunu'na göre bir suç işleme kararının icrası kapsamında; I. birer gün arayla aynı kişiye karşı 3 defa kasten yaralama, II. A adlı kişiye karşı farklı zamanlarda 3 defa hırsızlık, III. aynı kişiye karşı birer gün arayla yağma suçlarının işlenmesi hâllerinin hangilerinde zincirleme suç hükümleri uygulanır?
+    A) Yalnız I
+    B) Yalnız II  ✔
+    C) I ve III
+    D) I ve II
+    E) I, II ve III
+  — skor 0.27 | Ceza Muhakemesi Hukuku / 5271 Sayılı Ceza Muhakemesi Kanunu (CMK) | published | id c3e246d7-e891-46db-90b9-741b10c9c8f1
+    Beden muayenesi/örnek alma sonucu kişisel veri niteliğindeki inceleme sonuçları, diğer hâllerde mahkeme kararının kesinleşmesinden itibaren kaç yıl geçmesiyle Cumhuriyet savcısı huzurunda yok edilir?
+    A) 25 yıl
+    B) 5 yıl
+    C) 20 yıl  ✔
+    D) 10 yıl
+    E) 15 yıl
+  — skor 0.26 | Ceza Muhakemesi Hukuku / 5271 Sayılı Ceza Muhakemesi Kanunu (CMK) | published | id 6e4b5eb7-81f4-4aeb-a0ac-be11b3a68d37
+    I. Adli kontrol hükümleri kovuşturma evresinde uygulanabilir. II. Adli kontrol altında geçen süre, hiçbir şekilde kişisel özgürlüğü sınırlama nedeni sayılarak cezadan mahsup edilemez. III. Konutu terk etmeme yükümlülüğü, kişisel özgürlüğü sınırlama nedeni sayılarak cezadan mahsup edilemez. Adli kontrol tedbiri hakkında yukarıdaki ifadelerden hangileri yanlıştır?
+    A) Yalnız I
+    B) Yalnız III
+    C) I ve II
+    D) I ve III
+    E) II ve III  ✔
+  — skor 0.25 | Ceza Hukuku / Türk Ceza Kanunu | published | id 1d0d510a-d1e4-4635-bf8a-a14e4b34a13e
+    5237 sayılı Türk Ceza Yasası'na göre bir suç işleme kararının icrası kapsamında; I. aynı spor salonuna giden farklı kişilere ait dolaplarda aynı gece peş peşe hırsızlık, II. aynı kişiye karşı birer gün arayla işkence, III. birer hafta arayla aynı marketin deposundan beş kez hırsızlık suçlarının işlenmesi durumunda, hangi eylemler yönünden zincirleme suç hükümleri uygulanır?
+    A) Yalnız II
+    B) Yalnız III  ✔
+    C) I ve II
+    D) I ve III
+    E) II ve III
+  — skor 0.25 | Ceza Hukuku / Türk Ceza Kanunu | published | id 69fdc44e-bcc4-43eb-9c70-60f488c1ca3e
+    I. Aynı sitede oturan farklı kişilere ait konutlarda aynı gece art arda hırsızlık II. Aynı kişiye ait arabadan birer gün arayla beş kez hırsızlık III. Aynı aile mensuplarına karşı birer gün arayla yağma 5237 sayılı Türk Ceza Yasası'na göre bir suç işleme kararının icrası kapsamında yukarıdaki suçlardan hangilerinin işlenmesi durumunda zincirleme suç hükümleri uygulanır?
+    A) Yalnız I
+    B) Yalnız II  ✔
+    C) I ve II
+    D) I ve III
+    E) II ve III
+
+## 6698-p1-02
+ADAY: 6698 sayılı Kanun'a göre, vergi alacağının tahsili için gerekli kişisel verilerin bir vergi dairesince Kanunun amacına ve temel ilkelerine uygun ve orantılı olarak işlenmesiyle ilgili aşağıdakilerden hangisi doğrudur?
+ADAY DOĞRU: Veri Sorumluları Siciline kayıt yükümlülüğü uygulanmaz.
+  — skor 0.18 | Polis Mevzuatı / 6698 Sayılı Kişisel Verilerin Korunması Kanunu | published | id ddec895f-dbfd-4fd1-8b73-7f88907b8bcb
+    6698 sayılı Kişisel Verilerin Korunması Kanunu’na göre, Kişisel Verileri Koruma Kurulunun aşağıdaki çalışma esaslarından hangisi yanlıştır?
+    A) Başkan dâhil en az altı üye ile toplanır.
+    B) Üyeler; kendilerini, üçüncü dereceye kadar kan ve ikinci dereceye kadar kayın hısımlarını, evlatlıklarını ve aralarındaki evlilik bağı kalkmış olsa bile eşlerini ilgilendiren konularla ilgili toplantı ve oylamaya katılamaz.
+    C) Üyelerin görevden ayrılmalarından sonra, çalışmaları sırasında ilgililere ve üçüncü kişilere ait öğrendikleri sırları bu konuda kanunen yetkili kılınan mercilerden başkasına açıklamama yükümlülükleri ortadan kalkar.  ✔
+    D) Kararlar ve varsa karşı oy gerekçeleri karar tarihinden itibaren en geç on beş gün içinde yazılır.
+    E) Başkan gereken hâllerde Kurulu olağanüstü toplantıya çağırabilir.
+  — skor 0.17 | Atatürk İlkeleri ve İnkılap Tarihi / Atatürk İlkeleri ve İnkılap Tarihi | published | id e8107470-9e6e-4fd8-ac38-d1c984479e7f
+    Cumhuriyet Dönemi eğitiminin temel ilkeleri arasında yer alan; “Eğitim programı ulusun bugünkü durumuna ve değerlerine, toplumsal yaşamın gereksinimlerine, çevre koşulları ve çağın gereklerine tamamen uygun olmalıdır.” anlayışında eğitim sisteminin hangi özellikleri vurgulanmıştır?
+    A) Laik - Demokratik
+    B) Çağdaş - Laik
+    C) Millî - Çağdaş  ✔
+    D) Karma - Demokratik
+    E) Laik - Ulusal
+  — skor 0.17 | İdare Hukuku / İdare Hukuku | published | id 4344150f-3bfc-405a-87ee-87d57e933b81
+    Devlet Memurları Kanunu'nun temel ilkelerinden biri olan ve Devlet memurlarına, yaptıkları hizmetler için gerekli bilgi ve yetişme şartlarına uygun şekilde sınıfları içinde en yüksek derecelere kadar ilerleme imkânı sağlanmasını ifade eden ilke aşağıdakilerden hangisidir?
+    A) Sınıflandırma
+    B) Tarafsızlık
+    C) Liyakat
+    D) Hizmet içi eğitim
+    E) Kariyer  ✔
+  — skor 0.16 | Anayasa Hukuku / T.C. Anayasası | published | id ef5ed85f-bef5-4baa-9e69-efe951938de6
+    I. Vergi yükünün adaletli ve dengeli dağılımı, eşitliğin temel amacıdır. II. Herkes, kamu giderlerini karşılamak üzere, kamu hizmetlerinden yararlanmaları ölçüsünde vergi ödemekle yükümlüdür. III. Vergi, resim, harç ve benzeri mali yükümlülüklerin muaflık, istisnalar ve indirimleriyle oranlarına ilişkin hükümlerinde kanunun belirttiği yukarı ve aşağı sınırlar içinde değişiklik yapmak yetkisi Cumhu
+    A) Yalnız I
+    B) Yalnız II
+    C) Yalnız III  ✔
+    D) I ve II
+    E) II ve III
+  — skor 0.15 | Ceza Hukuku / Türk Ceza Kanunu | published | id b3a3904e-78c1-4d2c-93a4-124afeaae584
+    Aşağıdakilerden hangisi dolandırıcılık suçunun cezasını artıran nitelikli hâllerinden biri değildir?
+    A) Kişinin zor şartlarından yararlanılması
+    B) Basın ve yayın araçlarının sağladığı kolaylıktan yararlanılması
+    C) Sigorta bedelini almak amacıyla işlenmesi
+    D) Kamu görevlileri nezdinde hatırı sayıldığından söz edilerek menfaat sağlanması
+    E) Bir hukuki ilişkiye dayanan alacağı tahsil amacıyla işlenmesi  ✔
+
+## 6698-p1-03
+ADAY: 6698 sayılı Kanun'a göre, aşağıdakilerden hangisi özel nitelikli kişisel verilerin işlenebileceği hâller arasında SAYILMAMIŞTIR?
+ADAY DOĞRU: Bir sözleşmenin ifasıyla doğrudan ilgili olması
+  — skor 0.29 | İdare Hukuku / İdare Hukuku | published | id dcb96783-d66c-413c-8334-b8f2f2cf552f
+    Türk idare hukukuna göre idarenin sözleşmeleriyle ilgili I. Taraflarından en az birinin kamu tüzel kişisi olması, bir sözleşmenin idari sözleşme sayılması için yeterlidir. II. Kamu hizmetleriyle ilgili imtiyaz sözleşmelerinde milletlerarası tahkime, ancak yabancılık unsuru taşıyan uyuşmazlıklar için gidilebilir. III. 2886 sayılı Devlet İhale Kanunu uyarınca yapılan sözleşmeler idari sözleşme, 4734
+    A) Yalnız I
+    B) Yalnız II  ✔
+    C) I ve III
+    D) II ve III
+    E) I, II ve III
+  — skor 0.28 | Polis Mevzuatı / 657 Sayılı Devlet Memurları Kanunu | published | id 9687a5e8-758b-4de1-ba39-f2e47dcb82b3
+    657 sayılı Devlet Memurları Kanunu’na göre, aşağıdakilerden hangisi zorunlu hâllerde sözleşme ile istihdam edilebilecekler arasında açıkça sayılmamıştır?
+    A) Öğretmenler
+    B) Adli Tıp Müessesesi uzmanları
+    C) Devlet Konservatuvarları sanatçı öğretim üyeleri
+    D) İstanbul Belediyesi Konservatuvarı sanatçıları
+    E) Polisler  ✔
+  — skor 0.27 | Ceza Hukuku / Türk Ceza Kanunu | published | id e07a6b47-198c-4d6d-8f6e-6b18a77aa8f0
+    5237 sayılı TCK'da aşağıdakilerden hangisi kasten öldürme suçunun nitelikli hâlleri arasında sayılmamıştır?
+    A) Bir suçun işlenememesinden duyulan infialle işlenmesi
+    B) Birden fazla kişi tarafından birlikte işlenmesi  ✔
+    C) Kardeşe karşı işlenmesi
+    D) Kimyasal silah kullanılarak işlenmesi
+    E) Kadına karşı işlenmesi
+  — skor 0.27 | Polis Mevzuatı / 3201 Sayılı Emniyet Teşkilat Kanunu | published | id 85db7db1-626c-4dae-a9ec-15e6ff03fd3e
+    3201 sayılı Emniyet Teşkilat Kanunu'nda polis çevik kuvvet birimlerinin görevlendirileceği hâller arasında toplantı ve gösteri yürüyüşleri de açıkça sayılmıştır. Kanun metnine göre bu birimler, hangi nitelikteki toplantı ve gösteri yürüyüşlerinin düzeninin ve güvenliğinin sağlanmasında görevlendirilir?
+    A) Bildirim yükümlülüğü yerine getirilmiş olanların
+    B) Kanuna uygun olanların  ✔
+    C) Açık yerlerde yapılanların
+    D) Kapalı yer toplantısı niteliğinde olanların
+    E) İl sınırları içinde yapılanların
+  — skor 0.27 | Polis Mevzuatı / 6698 Sayılı Kişisel Verilerin Korunması Kanunu | published | id ddec895f-dbfd-4fd1-8b73-7f88907b8bcb
+    6698 sayılı Kişisel Verilerin Korunması Kanunu’na göre, Kişisel Verileri Koruma Kurulunun aşağıdaki çalışma esaslarından hangisi yanlıştır?
+    A) Başkan dâhil en az altı üye ile toplanır.
+    B) Üyeler; kendilerini, üçüncü dereceye kadar kan ve ikinci dereceye kadar kayın hısımlarını, evlatlıklarını ve aralarındaki evlilik bağı kalkmış olsa bile eşlerini ilgilendiren konularla ilgili toplantı ve oylamaya katılamaz.
+    C) Üyelerin görevden ayrılmalarından sonra, çalışmaları sırasında ilgililere ve üçüncü kişilere ait öğrendikleri sırları bu konuda kanunen yetkili kılınan mercilerden başkasına açıklamama yükümlülükleri ortadan kalkar.  ✔
+    D) Kararlar ve varsa karşı oy gerekçeleri karar tarihinden itibaren en geç on beş gün içinde yazılır.
+    E) Başkan gereken hâllerde Kurulu olağanüstü toplantıya çağırabilir.
+
+## 6698-p1-04
+ADAY: 6698 sayılı Kanun'a göre, yeterlilik kararı ve uygun güvence bulunmayan bir durumda kamu kurumu, kamu hukukuna tâbi faaliyeti için aşağıdakilerden hangisine dayanarak yurt dışına kişisel veri AKTARAMAZ?
+ADAY DOĞRU: İlgili kişinin aktarıma açık rıza vermesi
+  — skor 0.19 | Ceza Hukuku / Türk Ceza Kanunu | published | id 66b666e1-952c-4f2d-9b9d-07ceec56dfc1
+    I. Geri verilmesi istenilen kişinin etnik kökeni nedeniyle bir soruşturma veya kovuşturmaya maruz bırakılacağına ilişkin kuvvetli şüphe nedenlerinin bulunması durumunda geri verme isteminin kabulü Cumhurbaşkanının takdirindedir. II. Geri verme isteminin, ölüm cezası veya insan onuru ile bağdaşmayan bir ceza gerektiren suçlara ilişkin olması durumunda geri verme istemi kabul edilmez. III. Geri veri
+    A) Yalnız I
+    B) I ve III  ✔
+    C) II ve IV
+    D) I, II ve III
+    E) I, III ve IV
+  — skor 0.16 | Polis Mevzuatı / 5682 Sayılı Pasaport Kanunu | published | id 2905eb78-bf4b-4144-ad7f-e6cf31f5e573
+    Bir Türk vatandaşının umuma mahsus pasaportunun refakat hanesinde kayıtlı bulunan çocuk, pasaport sahibi beraberinde olmaksızın bu pasaportla yurt dışına çıkmak istemektedir. 5682 sayılı Pasaport Kanunu'na göre bu durumda aşağıdakilerden hangisi doğrudur?
+    A) Kanuni mümessilinin tasdikli muvafakatini ibraz ederek tek başına seyahat edebilir.
+    B) Refakat kaydı silinmek suretiyle kendisine umuma mahsus müşterek pasaport düzenlenir.
+    C) Kendisine bir ay süreli seyahat belgesi düzenlenerek çıkışına izin verilir.
+    D) Pasaport sahibi beraberinde bulunmadıkça o pasaportla seyahat edemez.  ✔
+    E) Bulunduğu yer valiliğinden alacağı izinle tek başına seyahat edebilir.
+
+## 6698-p1-05
+ADAY: 6698 sayılı Kanun'a göre, veri sorumlusuna yaptığı başvurusuna süresi içinde cevap verilmeyen ilgili kişi, başvuru tarihinden itibaren en geç kaç gün içinde Kurula şikâyette bulunabilir?
+ADAY DOĞRU: Altmış
+  — skor 0.37 | Anayasa Hukuku / T.C. Anayasası | published | id f2c87f22-c141-4840-bbd6-531edaf94093
+    Düzeltme ve cevap yayımlanmazsa, yayımlanmasının gerekip gerekmediğine hâkim tarafından ilgilinin başvuru tarihinden itibaren en geç kaç gün içinde karar verilir?
+    A) Yedi gün  ✔
+    B) On gün
+    C) On beş gün
+    D) Yirmi gün
+    E) Otuz gün
+  — skor 0.37 | Anayasa Hukuku / T.C. Anayasası | published | id 37e92b8b-3168-4315-a443-b72a78add0f3
+    “Düzeltme ve cevap hakkı, ancak kişilerin haysiyet ve şereflerine dokunulması veya kendileriyle ilgili gerçeğe aykırı yayınlar yapılması hallerinde tanınır ve kanunla düzenlenir”. 1982 Anayasası'na göre düzeltme ve cevap yayımlanmazsa, yayımlanmasının gerekip gerekmediğine hâkim tarafından ilgilinin başvuru tarihinden itibaren en geç kaç gün içinde karar verilir?
+    A) 7  ✔
+    B) 10
+    C) 15
+    D) 20
+    E) 30
+  — skor 0.34 | Genel Kültür ve Güncel Olaylar / Genel Kültür | published | id 0c6cab26-8ae5-4505-89e4-21be95e2c8ac
+    3071 sayılı Dilekçe Hakkının Kullanılmasına Dair Kanun’a göre, Türk vatandaşlarının ve Türkiye’de ikamet eden yabancıların kendileri ve kamu ile ilgili dilek ve şikâyetleri konusunda yetkili makamlara yaptıkları başvuruların sonucu veya yapılmakta olan işlemin safahatı hakkında dilekçe sahiplerine en geç kaç gün içinde gerekçeli olarak cevap verilir?
+    A) Yedi
+    B) On
+    C) On beş
+    D) Otuz  ✔
+    E) Kırk beş
+  — skor 0.34 | Polis Mevzuatı / 3071 Sayılı Dilekçe Kanunu | published | id a99401f0-3a23-4203-b40f-cf71281fda0e
+    3071 sayılı Dilekçe Hakkının Kullanılmasına Dair Kanun’a göre Türk vatandaşlarının ve Türkiye’de ikamet eden yabancıların kendileri ve kamu ile ilgili dilek ve şikâyetleri konusunda yetkili makamlara yaptıkları başvuruların sonucu veya yapılmakta olan işlemin safahatı hakkında dilekçe sahiplerine en geç kaç gün içinde gerekçeli olarak cevap verilir?
+    A) On
+    B) On beş
+    C) Yirmi
+    D) Otuz  ✔
+  — skor 0.33 | Polis Mevzuatı / 5326 Sayılı Kabahatler Kanunu | published | id fcc08cdc-48b8-4cf7-939c-2f0c62a0785f
+    5326 sayılı Kabahatler Kanunu'na göre, başvurunun usulden kabulü hâlinde ilgili kamu kurum ve kuruluşu, başvuru dilekçesinin tebliği tarihinden itibaren en geç hangi süre içinde mahkemeye cevap verir?
+    A) Yedi gün
+    B) On gün
+    C) On beş gün  ✔
+    D) Bir ay
+    E) İki hafta
+
+## 6698-p1-06
+ADAY: 6698 sayılı Kanun'a göre, veri sorumlusunun kişisel verilerin elde edilmesi sırasında aydınlatma yükümlülüğü kapsamında ilgili kişiye bilgi vermesi gereken konulardan biri aşağıdakilerden hangisidir?
+ADAY DOĞRU: Veri toplamanın hukuki sebebi
+  — skor 0.24 | İdare Hukuku / İdare Hukuku | published | id d2bd9ecb-2acd-407f-9cf5-c0a984683951
+    Görevi sebebiyle bir suç işlediği iddiası üzerine açılan adli soruşturma kapsamında Kişisel Verileri Koruma Kurulu üyesi A hakkında soruşturma izni isteniyor. 6698 sayılı Kişisel Verilerin Korunması Kanunu'na göre bu soruşturma izni aşağıdakilerin hangisi tarafından verilir?
+    A) Cumhurbaşkanı  ✔
+    B) TBMM Başkanı
+    C) Adalet Bakanı
+    D) Ankara Valisi
+    E) Kişisel Verileri Koruma Kurumu Başkanı
+  — skor 0.24 | Polis Mevzuatı / 6698 Sayılı Kişisel Verilerin Korunması Kanunu | published | id ddec895f-dbfd-4fd1-8b73-7f88907b8bcb
+    6698 sayılı Kişisel Verilerin Korunması Kanunu’na göre, Kişisel Verileri Koruma Kurulunun aşağıdaki çalışma esaslarından hangisi yanlıştır?
+    A) Başkan dâhil en az altı üye ile toplanır.
+    B) Üyeler; kendilerini, üçüncü dereceye kadar kan ve ikinci dereceye kadar kayın hısımlarını, evlatlıklarını ve aralarındaki evlilik bağı kalkmış olsa bile eşlerini ilgilendiren konularla ilgili toplantı ve oylamaya katılamaz.
+    C) Üyelerin görevden ayrılmalarından sonra, çalışmaları sırasında ilgililere ve üçüncü kişilere ait öğrendikleri sırları bu konuda kanunen yetkili kılınan mercilerden başkasına açıklamama yükümlülükleri ortadan kalkar.  ✔
+    D) Kararlar ve varsa karşı oy gerekçeleri karar tarihinden itibaren en geç on beş gün içinde yazılır.
+    E) Başkan gereken hâllerde Kurulu olağanüstü toplantıya çağırabilir.
+  — skor 0.21 | Polis Mevzuatı / 4483 Sayılı Memurların Yargılanması Hakkında Kanun | published | id 6e9af8ce-f05a-40a0-9dec-de0d0bf5ad2e
+    I. Soruşturma izni; şikâyet, ihbar veya iddia konusu olaylar ile bunlara bağlı olarak ileride soruşturma sırasında ortaya çıkabilecek konuları kapsar. II. Soruşturma sırasında izin verilen olay ve konudan tamamen ayrı veya farklı bir suç olarak nitelendirilebilecek bir fiilin ortaya çıkması, yeniden izin alınmasını gerektirmez. III. Suçun hukuki niteliği değiştiğinde yeniden izin alınması zorunlud
+    A) Yalnız I  ✔
+    B) Yalnız II
+    C) I ve III
+    D) II ve III
+  — skor 0.21 | Polis Mevzuatı / 4483 Sayılı Memurların Yargılanması Hakkında Kanun | published | id e36db6ca-e3c0-4965-8898-6eedff53c2a8
+    I. Soruşturma izni, şikâyet, ihbar veya iddia konusu olaylar ile bunlara bağlı olarak ileride soruşturma sırasında ortaya çıkabilecek konuları kapsar. II. Soruşturma sırasında izin verilen olay ve konudan tamamen ayrı veya farklı bir suç olarak nitelendirilebilecek bir fiil ortaya çıktığında, yeniden izin alınması zorunludur. III. Suçun hukuki niteliğinin değişmesi, yeniden izin alınmasını gerekti
+    A) Doğru Doğru Doğru  ✔
+    B) Doğru Doğru Yanlış
+    C) Doğru Yanlış Yanlış
+    D) Yanlış Yanlış Yanlış
+  — skor 0.18 | Polis Mevzuatı / 4982 Sayılı Bilgi Edinme Hakkı Kanunu | published | id 7d2d22b3-e3e9-4b93-8576-c44499c97e0f
+    4982 sayılı Bilgi Edinme Hakkı Kanunu'na göre, kurumların faaliyetlerini yürütürken elde ettikleri görüş ve tavsiyeler ile uzmanlık görüşlerinin bilgi edinme hakkı karşısındaki durumu hakkında aşağıdakilerden hangisi doğrudur?
+    A) Her türlü görüş ve tavsiye mutlak olarak kapsam dışındadır
+    B) Görüş ve tavsiyeler ancak sahibinin yazılı rızasıyla açıklanabilir
+    C) Kurumun elde ettiği görüş, bilgi notu, teklif ve tavsiyeler aksi kararlaştırılmadıkça kapsam içindedir; yasal görüş verme yükümlülüğü bulunan uzmanların karara esas görüşleri de erişime açıktır  ✔
+    D) Uzmanlık görüşleri yalnız nihai karar verildikten on yıl sonra açıklanabilir
+    E) Kurum içi görüşler ile tavsiye ve mütalaa talepleri Kanunda aynı kurala bağlanmıştır
+
+## 6698-p1-07
+ADAY: 6698 sayılı Kanun'a göre, Kanunda öngörülen yükümlülüklere aykırı aşağıdaki fiillerden hangisini işleyenler Türk Ceza Kanunu hükümlerine göre cezalandırılır?
+ADAY DOĞRU: İşlenme sebebi kalmayan verileri silmemek
+  — skor 0.32 | Ceza Hukuku / Türk Ceza Kanunu | published | id b1ace08e-d08d-427c-850b-265bb4dd1657
+    I. Suçun oluşması için kural olarak failin taksirli olması aranır. II. Öngörülü taksirde netice fail tarafından öngörülmüştür. III. Öngörülü taksirde ceza artırılır. IV. Taksirli fiiller ancak kanunda açıkça belirtilen hâllerde cezalandırılır. V. Neticesi sebebiyle ağırlaşan suçlarda failin netice yönünden en azından taksirle hareket etmesi gerekir. Taksirle ilgili yukarıdaki ifadelerden hangileri
+    A) Yalnız I
+    B) Yalnız III
+    C) I ve III
+    D) II, IV ve V
+    E) II, III, IV ve V  ✔
+  — skor 0.28 | Anayasa Hukuku / T.C. Anayasası | published | id ed9f7588-274c-4759-8d40-b36740c770aa
+    1982 Anayasası'na göre, “Uluslararası Ceza Divanına taraf olmanın gerektirdiği yükümlülükler hariç olmak üzere vatandaş, suç sebebiyle yabancı bir ülkeye verilemez”. Bu hüküm, aşağıdakilerin hangisinin kapsamı içinde düzenlenmiştir?
+    A) Yerleşme ve seyahat hürriyeti
+    B) Türk vatandaşlığı
+    C) Suç ve cezalara ilişkin esaslar  ✔
+    D) Yargı yolu
+    E) Hak arama hürriyeti
+  — skor 0.26 | Ceza Hukuku / Türk Ceza Kanunu | published | id 008be4f4-1df7-46c3-9bbc-f43718958c1e
+    5237 sayılı Türk Ceza Yasası'na göre suçta tekerrür hakkında, I. Önceden işlenen suçtan dolayı verilen hüküm kesinleştikten sonra yeni bir suçun işlenmesi ve cezanın infaz edilmiş olması durumunda, tekerrür hükümleri uygulanır. II. Tekerrür hükümleri, önceden işlenen suçtan dolayı 5 yıldan fazla süreyle hapis cezasına mahkûmiyet durumunda, bu cezanın infaz edildiği tarihten itibaren 5 yıl, 5 yıl v
+    A) I ve III
+    B) Yalnız IV
+    C) I ve IV  ✔
+    D) I, II ve IV
+    E) I, III ve IV
+  — skor 0.24 | Polis Mevzuatı / 7068 Sayılı Genel Kolluk Disiplin Hükümleri Kanunu | published | id 3e86d983-9b50-4258-a017-8e113501a44a
+    7068 sayılı Genel Kolluk Disiplin Hükümleri Hakkında Kanun'a göre disiplin cezalarının özlük dosyasından silinmesi ile ilgili aşağıdakilerden hangisi yanlıştır?
+    A) Devlet memurluğundan çıkarma ve meslekten çıkarma cezaları özlük dosyasından silinme talebine konu edilemez.
+    B) Silinme talebi atamaya yetkili amire yapılır.
+    C) İlgilinin süre içerisindeki davranışları isteğini haklı kılacak nitelikte görülürse ceza özlük dosyasından silinir.
+    D) Kanunda öngörülen süre dolduğunda ceza, başvuru aranmaksızın kendiliğinden özlük dosyasından silinir.  ✔
+    E) Uyarma ve kınama dışındaki cezalarda süre, cezanın uygulanmasından başlayarak on yıldır.
+  — skor 0.24 | Ceza Hukuku / Türk Ceza Kanunu | published | id 92d73145-fe96-45a0-9f09-6d3abc236c33
+    5237 sayılı Türk Ceza Yasası'na göre anayasayı ihlal suçunu işleyen bir fail hakkında, hangi durumda koşullu salıverilme hükümleri uygulanmaz?
+    A) Suçun bir örgütün faaliyeti çerçevesinde işlenmesi durumunda
+    B) Suçun bir örgütün faaliyeti çerçevesinde işlenmesi dolayısıyla müebbet hapis cezasına mahkûmiyeti durumunda
+    C) Ağırlaştırılmış müebbet hapis cezasına mahkûmiyeti durumunda
+    D) Suçun bir örgütün faaliyeti çerçevesinde işlenmesi dolayısıyla 20 yıldan fazla hapis cezasına mahkûmiyeti durumunda
+    E) Suçun bir örgütün faaliyeti çerçevesinde işlenmesi dolayısıyla ağırlaştırılmış müebbet hapis cezasına mahkûmiyeti durumunda  ✔
+
+## 6698-p1-08
+ADAY: 6698 sayılı Kanun'a göre, kişisel verilerin otomatik olmayan yollarla işlenmesi aşağıdakilerden hangisinin varlığı hâlinde Kanun kapsamına girer?
+ADAY DOĞRU: Veri kayıt sisteminin parçası olması
+  — skor 0.24 | İdare Hukuku / İdare Hukuku | published | id d2bd9ecb-2acd-407f-9cf5-c0a984683951
+    Görevi sebebiyle bir suç işlediği iddiası üzerine açılan adli soruşturma kapsamında Kişisel Verileri Koruma Kurulu üyesi A hakkında soruşturma izni isteniyor. 6698 sayılı Kişisel Verilerin Korunması Kanunu'na göre bu soruşturma izni aşağıdakilerin hangisi tarafından verilir?
+    A) Cumhurbaşkanı  ✔
+    B) TBMM Başkanı
+    C) Adalet Bakanı
+    D) Ankara Valisi
+    E) Kişisel Verileri Koruma Kurumu Başkanı
+  — skor 0.19 | Anayasa Hukuku / T.C. Anayasası | published | id 41647bb9-1da5-447d-80b3-5b1099abc969
+    Kişisel verilerin korunmasına ilişkin hükümler 1982 Anayasası'nda aşağıdakilerden hangisinin kapsamı içinde düzenlenmiştir?
+    A) Özel hayatın gizliliği  ✔
+    B) Haberleşme hürriyeti
+    C) Düşünce hürriyeti
+    D) Düzeltme ve cevap hakkı
+    E) Dilekçe ve bilgi edinme hakkı
+  — skor 0.19 | Polis Mevzuatı / 6698 Sayılı Kişisel Verilerin Korunması Kanunu | published | id ddec895f-dbfd-4fd1-8b73-7f88907b8bcb
+    6698 sayılı Kişisel Verilerin Korunması Kanunu’na göre, Kişisel Verileri Koruma Kurulunun aşağıdaki çalışma esaslarından hangisi yanlıştır?
+    A) Başkan dâhil en az altı üye ile toplanır.
+    B) Üyeler; kendilerini, üçüncü dereceye kadar kan ve ikinci dereceye kadar kayın hısımlarını, evlatlıklarını ve aralarındaki evlilik bağı kalkmış olsa bile eşlerini ilgilendiren konularla ilgili toplantı ve oylamaya katılamaz.
+    C) Üyelerin görevden ayrılmalarından sonra, çalışmaları sırasında ilgililere ve üçüncü kişilere ait öğrendikleri sırları bu konuda kanunen yetkili kılınan mercilerden başkasına açıklamama yükümlülükleri ortadan kalkar.  ✔
+    D) Kararlar ve varsa karşı oy gerekçeleri karar tarihinden itibaren en geç on beş gün içinde yazılır.
+    E) Başkan gereken hâllerde Kurulu olağanüstü toplantıya çağırabilir.
+  — skor 0.19 | İdare Hukuku / İdare Hukuku | published | id 27a761e0-2d3f-4d19-90ac-2f67547e8037
+    6698 sayılı Kişisel Verilerin Korunması Kanunu'na göre Kişisel Verileri Koruma Kurulunun kaç üyesi TBMM tarafından seçilir?
+    A) 3
+    B) 4
+    C) 5  ✔
+    D) 6
+    E) 9
+  — skor 0.19 | Polis Mevzuatı / 6698 Sayılı Kişisel Verilerin Korunması Kanunu | published | id 93008b7d-d84b-4a31-9d32-66332df37d74
+    6698 sayılı Kişisel Verilerin Korunması Kanunu'na göre, Kişisel Verileri Koruma Kurulu'nun üye sayısı ve üyelerinin seçimi ile ilgili aşağıdaki ifadelerden hangisi doğrudur?
+    A) Kurul onbir üyeden oluşur; altı üyesi TBMM, beş üyesi Cumhurbaşkanı tarafından seçilir.
+    B) Kurul dokuz üyeden oluşur; beş üyesi TBMM, dört üyesi Cumhurbaşkanı tarafından seçilir.  ✔
+    C) Kurul dokuz üyeden oluşur; dört üyesi TBMM, beş üyesi Cumhurbaşkanı tarafından seçilir.
+    D) Kurul yedi üyeden oluşur; dört üyesi TBMM, üç üyesi Cumhurbaşkanı tarafından seçilir.
+    E) Kurul yedi üyeden oluşur; beş üyesi TBMM, iki üyesi Cumhurbaşkanı tarafından seçilir.
+
+## 6698-p1-09
+ADAY: I. Kılık ve kıyafet II. Banka hesap hareketleri III. Ceza mahkûmiyeti IV. Konum bilgisi 6698 sayılı Kanun'a göre, numaralanmış verilerden hangileri özel nitelikli kişisel veridir?
+ADAY DOĞRU: I ve III
+  — skor 0.20 | Polis Mevzuatı / 6284 Sayılı Ailenin Korunması Kanunu | published | id 54466758-0ce6-4383-ad54-9b3527701997
+    6284 Sayılı Ailenin Korunması ve Kadına Karşı Şiddetin Önlenmesine Dair Kanuna İlişkin Uygulama Yönetmeliği’ne göre, “geçici maddi yardım yapılması” ile ilgili aşağıdakilerden hangisi doğrudur?
+    A) Korunan kişiye elden ödeme yapılır.
+    B) Geçici maddi yardım kararı ile on sekiz yaşından büyükler için her yıl belirlenen aylık net asgari ücret tutarının yirmide birine kadar günlük ödeme yapılır.
+    C) Aynı tedbir kararında birden fazla kişi hakkında geçici maddi yardım yapılmasına dair karar verilmesi hâlinde bu kişiler ayrı bordroda gösterilir.
+    D) Yapılan ödemeler, gelir vergisi ile veraset ve intikal vergisinden istisna değildir.
+    E) Geçici maddi yardım, korunan kişinin kimlik numarası ve banka hesap numarası beyanına istinaden, kararın ŞÖNİM’e tebliğ edilmesini müteakiben hazırlanan bordro ile ödenir.  ✔
+  — skor 0.18 | Analitik Düşünme ve Türkçe / Türkçe / Dil Bilgisi | published | id 41bcb232-d5a0-4233-9c18-95d3f846fb22
+    (I) Yeni açılan şehir kütüphanesi geçen ay hizmet vermeye başlamıştır. (II) Çalışma saatleri hafta içi 09.00-20.00, hafta sonu ise 10.00-18.00 olarak belirlenmiştir. (III) Kütüphanede 2.288 adet kitap ve oldukça kıymetli 50 el yazması eser bulunmaktadır. (IV) Kütüphanede çocuklar için özel okuma alanları da oluşturulmuştur. (V) 750 adet çocuk kitabının bulunduğu bölümde, çocuklar anne ve babalarıy
+    A) I ve VI
+    B) II ve IV
+    C) III ve VI  ✔
+    D) I, III ve VI
+    E) II, IV ve VI
+  — skor 0.18 | Ceza Hukuku / Türk Ceza Kanunu | published | id cc691134-3cb2-4f1b-a051-28f4db2547a2
+    Afla ilgili aşağıdaki ifadelerden hangisi doğrudur? I. Genel af yalnız kamu davasını ortadan kaldırır; hükmolunan cezaları etkilemez. II. Özel af ile hapis cezasının infazına son verilebilir, süresi kısaltılabilir veya ceza adlî para cezasına çevrilebilir. III. Cumhurbaşkanının sürekli hastalık, sakatlık ve kocama nedeniyle kullandığı af yetkisi genel af niteliğindedir. IV. Özel af, cezaya bağlı v
+    A) Yalnız II  ✔
+    B) I ve II
+    C) II ve III
+    D) I ve IV
+    E) II ve IV
+  — skor 0.18 | Ceza Hukuku / Türk Ceza Kanunu | published | id c84a4b9c-8976-4607-8612-5f9a5cb148f3
+    5237 sayılı Türk Ceza Yasası'na göre I. 3 aydan 1 yıla kadar hapis cezasını gerektiren özel işaret ve kıyafetleri usulsüz kullanma II. 3 aydan 2 yıla kadar hapis veya adli para cezası ile cezasını gerektiren sesli, yazılı veya görüntülü bir iletiyle işlenen hakaret suçu III. 3 aydan 2 yıla kadar hapis veya adli para cezasını gerektiren kişinin hatırasına hakaret suçlarından hangileri bakımından ön
+    A) Yalnız I
+    B) Yalnız III  ✔
+    C) I ve III
+    D) II ve III
+    E) I, II ve III
+  — skor 0.16 | Polis Mevzuatı / 6698 Sayılı Kişisel Verilerin Korunması Kanunu | published | id ddec895f-dbfd-4fd1-8b73-7f88907b8bcb
+    6698 sayılı Kişisel Verilerin Korunması Kanunu’na göre, Kişisel Verileri Koruma Kurulunun aşağıdaki çalışma esaslarından hangisi yanlıştır?
+    A) Başkan dâhil en az altı üye ile toplanır.
+    B) Üyeler; kendilerini, üçüncü dereceye kadar kan ve ikinci dereceye kadar kayın hısımlarını, evlatlıklarını ve aralarındaki evlilik bağı kalkmış olsa bile eşlerini ilgilendiren konularla ilgili toplantı ve oylamaya katılamaz.
+    C) Üyelerin görevden ayrılmalarından sonra, çalışmaları sırasında ilgililere ve üçüncü kişilere ait öğrendikleri sırları bu konuda kanunen yetkili kılınan mercilerden başkasına açıklamama yükümlülükleri ortadan kalkar.  ✔
+    D) Kararlar ve varsa karşı oy gerekçeleri karar tarihinden itibaren en geç on beş gün içinde yazılır.
+    E) Başkan gereken hâllerde Kurulu olağanüstü toplantıya çağırabilir.
+
+## 6698-p1-10
+ADAY: 6698 sayılı Kanun'a göre, Veri Sorumluları Sicilini tutan ve bu sicile kayıt zorunluluğuna istisna getirebilen merciler sırasıyla aşağıdakilerden hangisidir?
+ADAY DOĞRU: Başkanlık – Kurul
+  — skor 0.21 | Polis Mevzuatı / 6698 Sayılı Kişisel Verilerin Korunması Kanunu | published | id ddec895f-dbfd-4fd1-8b73-7f88907b8bcb
+    6698 sayılı Kişisel Verilerin Korunması Kanunu’na göre, Kişisel Verileri Koruma Kurulunun aşağıdaki çalışma esaslarından hangisi yanlıştır?
+    A) Başkan dâhil en az altı üye ile toplanır.
+    B) Üyeler; kendilerini, üçüncü dereceye kadar kan ve ikinci dereceye kadar kayın hısımlarını, evlatlıklarını ve aralarındaki evlilik bağı kalkmış olsa bile eşlerini ilgilendiren konularla ilgili toplantı ve oylamaya katılamaz.
+    C) Üyelerin görevden ayrılmalarından sonra, çalışmaları sırasında ilgililere ve üçüncü kişilere ait öğrendikleri sırları bu konuda kanunen yetkili kılınan mercilerden başkasına açıklamama yükümlülükleri ortadan kalkar.  ✔
+    D) Kararlar ve varsa karşı oy gerekçeleri karar tarihinden itibaren en geç on beş gün içinde yazılır.
+    E) Başkan gereken hâllerde Kurulu olağanüstü toplantıya çağırabilir.
+  — skor 0.16 | Polis Mevzuatı / 6698 Sayılı Kişisel Verilerin Korunması Kanunu | published | id 93008b7d-d84b-4a31-9d32-66332df37d74
+    6698 sayılı Kişisel Verilerin Korunması Kanunu'na göre, Kişisel Verileri Koruma Kurulu'nun üye sayısı ve üyelerinin seçimi ile ilgili aşağıdaki ifadelerden hangisi doğrudur?
+    A) Kurul onbir üyeden oluşur; altı üyesi TBMM, beş üyesi Cumhurbaşkanı tarafından seçilir.
+    B) Kurul dokuz üyeden oluşur; beş üyesi TBMM, dört üyesi Cumhurbaşkanı tarafından seçilir.  ✔
+    C) Kurul dokuz üyeden oluşur; dört üyesi TBMM, beş üyesi Cumhurbaşkanı tarafından seçilir.
+    D) Kurul yedi üyeden oluşur; dört üyesi TBMM, üç üyesi Cumhurbaşkanı tarafından seçilir.
+    E) Kurul yedi üyeden oluşur; beş üyesi TBMM, iki üyesi Cumhurbaşkanı tarafından seçilir.

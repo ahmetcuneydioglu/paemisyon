@@ -1,0 +1,70 @@
+[
+ {
+  "id": "298-p1-01",
+  "articleNo": "51",
+  "kok": "298 sayılı Kanun'a göre, seçime katılan bir siyasi parti adına ilçe merkezinde kapalı yer toplantısı yapmak isteyenler aşağıdakilerden hangisine haber verir?",
+  "siklar": {
+   "A": "İlçe seçim kuruluna",
+   "B": "Mahallin en büyük mülki amirine",
+   "C": "İl seçim kuruluna",
+   "D": "En yakın zabıta amir veya memuruna",
+   "E": "Toplantı yerindeki Cumhuriyet başsavcılığına"
+  },
+  "dogru": "D",
+  "aciklama": "51 inci maddenin ikinci fıkrası şöyledir: 'Kapalı yer toplantısı yapmak isteyenler, üç kişilik bir heyet kurar ve en yakın zabıta amir veya memuruna haber verirler. Köylerde, muhtara veya vekiline haber vermek kafidir.' Toplantı ilçe merkezinde yapılacağından haber EN YAKIN ZABITA AMİR VEYA MEMURUNA verilir; doğru cevap D'dir. Maddedeki 'zabıta' kolluğu anlatır; Kanun belediye zabıtasını 82 nci maddede belediye zabıtasını 'belediye zabıtaları' diye ayrıca adlandırır. B, iki ayrı hükmün bu toplantıya taşınmasından doğar. 2911 sayılı Kanun'un 10 uncu maddesindeki bildirim 'toplantının yapılacağı yerin bağlı bulunduğu valilik veya kaymakamlığa verilir'; 298 sayılı Kanun'un 51/A maddesinde 'mahallin en büyük mülki amirine' verilen bildirim ise SEÇİM BÜROSU açılmasına ilişkindir. A'daki ilçe seçim kurulu, 50 nci maddeye göre meydanlarda toplu olarak yapılacak sözlü propagandada 'toplantı, meydan, gün, sıra ve saatlerini' belirler. C'deki il seçim kurulu propaganda döneminde 60 ıncı maddede geçer: şehir dışında karayolları kenarındaki sabit ilan ve reklam yerlerini belirler ve tahsis eder. Kapalı yer toplantısı için 51 inci madde haber verilecek yer olarak zabıta amir veya memurunu, köylerde muhtarı veya vekilini gösterir; E'deki makam maddede geçmez. Haber verme yükümlülüğü yaptırıma da bağlanmıştır: 150 nci maddeye göre '51 inci maddede yazılı heyeti kurmıyan veya haber vermiyen toplantı tertipçileri' hapis cezasıyla cezalandırılır.",
+  "dayanak": "298 sayılı Kanun md 51/2 (karş. md 50/3, md 51/A/2, md 60, md 82, md 150; 2911 sayılı Kanun md 10/1)",
+  "zorluk": "medium",
+  "tur": "dogrudan"
+ },
+ {
+  "id": "298-p1-02",
+  "articleNo": "174",
+  "kok": "298 sayılı Kanun'a göre, bu Kanun'da yazılı bir suçu görevi sebebiyle işlediği ileri sürülen polis memuru hakkında soruşturma nasıl yapılır?",
+  "siklar": {
+   "A": "Soruşturma izni alınarak",
+   "B": "Genel hükümlere göre",
+   "C": "Hâkim ve savcıların tabi olduğu usule göre",
+   "D": "İlçe seçim kurulunun kararı alınarak",
+   "E": "Kaymakamlar için gösterilen usule göre"
+  },
+  "dogru": "B",
+  "aciklama": "174 üncü maddenin birinci fıkrasına göre, bu Kanun'da yazılı suçlardan birini işleyenlerin 'sıfat ve memuriyetleri ne olursa olsun haklarında umumi hükümler dairesinde soruşturma ve kovuşturma yapılır.' Failin polis memuru olması ve fiili görevi sebebiyle işlemesi usulü değiştirmez; doğru cevap B'dir. A, memur suçlarındaki izin usulünün buraya taşınmasıdır. 4483 sayılı Kanun memurların 'görevleri sebebiyle işledikleri suçlar hakkında uygulanır'; ancak aynı Kanun'un 2 nci maddesi 'suçun niteliği yönünden kanunlarda gösterilen soruşturma ve kovuşturma usullerine ilişkin hükümler saklıdır' der. 298 sayılı Kanun'daki suçlar için usulü 174 üncü madde gösterdiğinden soruşturma izne bağlı değildir. C ve E, maddenin sıfata bağlı iki ayrı düzenlemesini polis memuruna taşır. 174 üncü madde 'Hâkimler ve Savcılar Kanunu hükümleri mahfuzdur' diyerek yalnız o Kanun'a tabi olanların usulünü saklı tutar; kaymakamlar için de soruşturmayı yapacak merciyi ve kovuşturmayı yapacak mahkemeyi ayrıca gösterir. Polis memuru bu fıkraların ikisine de girmez; hakkında birinci fıkra uygulanır. D'deki karar şartı maddede yoktur: 174 üncü madde soruşturmayı bir seçim kurulunun kararına bağlamaz; 177 nci madde de 'İl ve ilçe seçim kurulu başkan ve üyeliklerini yapan yargıçlar kendi çevreleri içinde vukua gelecek seçim suçlarına mütaallik davalara bakamazlar' diyerek seçim kurulundaki hâkimi bu suçların yargılamasından ayrı tutar.",
+  "dayanak": "298 sayılı Kanun md 174/1 (karş. md 174/6, md 174/7, md 177/1; 4483 sayılı Kanun md 2)",
+  "zorluk": "medium",
+  "tur": "kavram"
+ },
+ {
+  "id": "298-p1-03",
+  "articleNo": "175",
+  "kok": "298 sayılı Kanun'a göre, sandık kurulu başkanının seçimin düzenli yürütülmesi için aldığı tedbire, ihtara rağmen uymayan kişiye verilecek idarî para cezasına aşağıdakilerden hangisi karar verir?",
+  "siklar": {
+   "A": "Sandık kurulu başkanı",
+   "B": "İlçe seçim kurulu",
+   "C": "Mahallin en büyük mülki amiri",
+   "D": "Kolluk görevlileri",
+   "E": "Cumhuriyet savcısı"
+  },
+  "dogru": "E",
+  "aciklama": "134 üncü maddenin birinci fıkrası fiili ve yaptırımın türünü gösterir: seçimin düzenli yürütülmesini sağlamak maksadıyla 'bu Kanunda yazılı kurullar veyahut kurul başkanları tarafından alınan karar ve tedbirlere, ihtara rağmen riayet etmeyen kişilere … idarî para cezası verilir.' Cezaya kimin karar vereceği 175 inci maddededir: 'Bu Kanun hükümlerine göre idarî para cezasına karar vermeye Cumhuriyet savcısı yetkilidir.' Doğru cevap E'dir. A, tedbiri alanın cezayı da vereceği düşüncesine dayanır; 82 nci maddeye göre sandık kurulu başkanı düzeni bozmaya kalkışanı uyarır, 'Bu uyarının gereğini yerine getirmeyen kimse, kolluk gücü çağrılarak sandık çevresinden uzaklaştırılır.' B ve C, Kanun'un bu makamlara verdiği başka yetkileri buraya taşır. 61 inci maddede ilan ve reklam yasaklarıyla ilgili 'işlem yapma yetkisi' döneme göre mülki makamlara ya da ilçe seçim kurullarına aittir; madde, aykırı ilan ve reklamların kaldırılmasını öngörür. 51/A maddesine göre de açılma şartlarını tamamlamayan seçim büroları 'mülki amirlerce kapatılır.' D'deki kolluk, 82 nci maddeye göre 'başkanın talebine veya kurulun kararına uymak zorundadır' ve ilgiliyi sandık çevresinden uzaklaştırır. Yetki 175 inci maddede açıkça CUMHURİYET SAVCISINA verilmiştir.",
+  "dayanak": "298 sayılı Kanun md 175 (karş. md 134/1, md 82/3, md 82/7, md 61/1, md 51/A/3)",
+  "zorluk": "hard",
+  "tur": "dogrudan"
+ },
+ {
+  "id": "298-p1-04",
+  "articleNo": "171",
+  "kok": "298 sayılı Kanun'a göre, oy verme günü işlenen ve daha ağır cezayı gerektiren başka bir suç oluşturmayan aşağıdaki fiillerden hangisinin cezası adlî para cezasıdır?",
+  "siklar": {
+   "A": "Emniyet ve asayişi korumakla görevli olmadığı hâlde silah taşımak",
+   "B": "Oy verme süresince umuma açık yerde ispirtolu içki içmek",
+   "C": "Umuma açık yerde seçim propagandası yapmak",
+   "D": "Oy verme sonucunu gösteren tutanağın asılı suretini yırtmak",
+   "E": "Kayıtlı seçmenin sandığın konulduğu binaya girmesine kanuna aykırı biçimde engel olmak"
+  },
+  "dogru": "A",
+  "aciklama": "79 uncu maddenin üçüncü fıkrasına göre 'Oy verme günü, emniyet ve asayişi korumakla görevli olanlardan başka hiçbir kimse, … silah taşıyamaz.' Yasağın yaptırımı 171 inci maddededir: aykırı hareket edenler hakkında, 'fiilleri daha ağır cezayı gerektiren bir suç oluşturmadığı takdirde, … adlî para cezasına hükmolunur.' Doğru cevap A'dır. Aynı madde, fiil diğer kanunlara göre daha ağır cezayı gerektiren bir suç oluşturuyorsa o kanunlara göre verilecek cezanın artırılmasını öngörür; kökteki kayıt bu ihtimali dışarıda bırakır. Öbür dört fiilin cezası HAPİSTİR. B için 170 inci madde: oy verme müddetince umuma açık yerlerde ispirtolu içki 'verenler, satanlar veya içenler … hapis cezasıyla cezalandırılırlar.' C için 151 inci madde: oy verme gününde 'umumi veya umuma açık yerlerde seçim propagandası için toplantı veya propaganda yapanlar' hapis cezasıyla cezalandırılır. D için 168 inci madde: oy verme ve seçim neticelerini gösteren tutanakların 'asılı suretlerini yırtan, bozan, kaldıran kimse hakkında' hapis cezası verilir. E için 153 üncü madde: seçim günü, kayıtlı seçmenin sandığın konulduğu binaya girmesine 'kanuna aykırı biçimde engel olan kimse' hapis cezasıyla cezalandırılır. Silahın en ağır yaptırımı gerektireceği beklentisi burada yanıltır: tek başına yasağa aykırılık, beş fiil içinde hapis öngörülmeyen tek fiildir.",
+  "dayanak": "298 sayılı Kanun md 171 (karş. md 79/3, md 151/1, md 153/3, md 168, md 170)",
+  "zorluk": "hard",
+  "tur": "kavram"
+ }
+]

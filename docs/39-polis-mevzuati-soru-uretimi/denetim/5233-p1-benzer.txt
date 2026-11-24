@@ -1,0 +1,212 @@
+# 5233-p1 — bankadaki en benzer sorular (bütün banka, 7696 soru; eşik 0.15, aday başına 5)
+# skor = aday kök+doğru şık sözcüklerinin (IDF ağırlıklı) ne kadarının o soruda geçtiği. Yüksek skor mükerrer DEMEK DEĞİLDİR; karar gözcünündür.
+
+## 5233-p1-01
+ADAY: Terör eylemi sonucunda iş yeri hasar gören bir esnaf süresinde valiliğe başvurmuştur; esnaf hakkında terör suçundan açılan ceza kovuşturması ise sürmektedir. 5233 sayılı Kanun'a göre bu başvuru hakkında uygulanacak hüküm aşağıdakilerden hangisidir?
+ADAY DOĞRU: Kovuşturma sonuçlanıncaya kadar işlem yapılmaz.
+  — skor 0.23 | Polis Mevzuatı / 3713 Sayılı Terörle Mücadele Kanunu | published | id 662afdab-7f45-49de-82ac-5826c36e4995
+    5233 sayılı Terör ve Terörle Mücadeleden Doğan Zararların Karşılanması Hakkında Kanun’a göre “başvurunun süresi, şekli, incelenmesi ve sonuçlandırılması” ile ilgili aşağıdakilerden hangisi yanlıştır?
+    A) Komisyon üyeleri bilirkişi olarak görevlendirilebilir.  ✔
+    B) Komisyonun giderleri Bakanlık ve/veya il özel idaresi bütçesinden karşılanır.
+    C) Komisyon, zarar görenlerce yapılacak her başvuru ile ilgili çalışmalarını, başvuru tarihinden itibaren altı ay içinde tamamlamak zorundadır.
+    D) Dava açma süresi içinde yapılan başvuru, nihai işlem sonucunun ilgiliye tebliğine kadar genel hükümlere göre dava açma sürelerini durdurur.
+  — skor 0.20 | Ceza Muhakemesi Hukuku / 5271 Sayılı Ceza Muhakemesi Kanunu (CMK) | published | id de5b726e-bff9-49ee-beae-a4bf823cf3ba
+    İstanbul Cumhuriyet Savcısı (C) yaptığı soruşturma sonucunda, kasten öldürmeye teşebbüs suçundan şüpheli (A) hakkında, yeterli şüphe oluşturacak kanıt elde edilememesi nedeniyle kovuşturmaya yer olmadığı (takipsizlik) kararı vermiştir. Suçtan zarar gören (B) bu karara karşı itiraz etmek istemektedir. (B)'nin ikamet ettiği Bakırköy ilçesi, aynı zamanda İstanbul Adliyesi'ne en yakın ağır ceza merkez
+    A) İtirazı Bakırköy Ağır Ceza Mahkemesi inceler.
+    B) İtiraz, kovuşturmaya yer olmadığına ilişkin kararın verildiği tarihten 1 hafta içinde yapılabilir.
+    C) İtiraz dilekçesinde, kamu davasının açılmasını gerektirebilecek olaylar ve kanıtlar belirtilmek zorundadır.  ✔
+    D) İtiraz mercii kararını vermek için soruşturmanın genişletilmesine gerek görür ise bu hususu açıkça belirterek o yer sulh ceza yargıcını görevlendirebilir.
+    E) İtirazın reddedilmesi durumunda Cumhuriyet savcısının, yeni kanıt varlığı nedeniyle kamu davasını açabilmesi mümkün değildir.
+  — skor 0.18 | Ceza Muhakemesi Hukuku / 5271 Sayılı Ceza Muhakemesi Kanunu (CMK) | published | id b4b5ef85-d0cb-48b8-91b2-606efe0da04d
+    Şüpheli (A) hakkında mağdur (B)'ye karşı 5237 sayılı Türk Ceza Yasası'nda üst sınırı 2 yıl olarak belirlenen tehdit suçunu işlediği iddiasıyla soruşturma başlatılmış ve soruşturma sonucunda kamu davasının açılmasının ertelenmesine karar verilmiştir. Erteleme süresi içinde (A), mağdur (C)'ye karşı kasten yaralama suçunu işlemiştir. 5271 sayılı Ceza Muhakemesi Yasası'na göre (A) hakkında nasıl bir i
+    A) Kamu davası açılması gerekir.  ✔
+    B) Yeniden soruşturma açılması gerekir.
+    C) Mahkûmiyet kararı verilmesi gerekir.
+    D) Ceza verilmesine yer olmadığı kararı verilmesi gerekir.
+    E) İşlem yapılması gerekmez.
+  — skor 0.15 | Ceza Muhakemesi Hukuku / 5271 Sayılı Ceza Muhakemesi Kanunu (CMK) | published | id 9e856ce8-2d00-492f-a4e6-ae8c872b5e96
+    Yargılamanın yenilenmesi yasa yolu hakkında I. Bu yola ancak kesin hüküm niteliği kazanmış kararlar için başvurulabilir. II. Hükmün infaz edilmesi durumunda bu yola başvurulamaz. III. Yeniden yapılacak duruşma sonucunda mahkeme önceki hükmü onaylar veya hükmün iptali ile dava hakkında yeniden hüküm verir. IV. İstem hükümlünün lehine olarak yapılmış olsa ile yeniden verilecek hüküm, önceki hükümle 
+    A) I ve II
+    B) I ve III  ✔
+    C) II ve III
+    D) III ve IV
+    E) I, III ve IV
+  — skor 0.15 | Ceza Muhakemesi Hukuku / 5271 Sayılı Ceza Muhakemesi Kanunu (CMK) | published | id 05c6c43f-9867-4ad8-8e43-c5642e0fe9fb
+    5271 sayılı Ceza Muhakemesi Yasası'na göre ihbar ve şikâyete ilişkin aşağıdaki ifadelerden hangisi yanlıştır?
+    A) Suça ilişkin ihbar veya şikâyet, Cumhuriyet Başsavcılığına veya kolluk makamlarına yapılabilir.
+    B) Yürütülen soruşturma sonucunda kovuşturma evresine geçildikten sonra suçun şikâyete bağlı olduğunun anlaşılması durumunda; mağdur açıkça şikâyetten vazgeçmediği takdirde yargılamaya devam olunur.
+    C) Valilik veya kaymakamlığa ya da mahkemeye yapılan ihbar veya şikâyet, ilgili Cumhuriyet Başsavcılığına gönderilir.
+    D) Yurt dışında işlenip ülkede takibi gereken suçlar hakkında Türkiye'nin elçilik ve konsolosluklarına da ihbar veya şikâyette bulunulabilir.
+    E) İhbar ve şikâyet konusu eylemin suç oluşturmadığının herhangi bir araştırma yapılmasını gerektirmeksizin açıkça anlaşılması veya ihbar ve şikâyetin soyut ve genel nitelikte olması durumunda kovuşturma yapılmasına yer olmadığına karar verilir.  ✔
+
+## 5233-p1-02
+ADAY: 5233 sayılı Kanun'a göre, terör eylemi nedeniyle uğranılan zararın oluşmasında zarar görenin ihmalinin de etkisi bulunmasının sonucu aşağıdakilerden hangisidir?
+ADAY DOĞRU: Zarar belirlenirken dikkate alınır.
+  — skor 0.25 | Polis Mevzuatı / 3713 Sayılı Terörle Mücadele Kanunu | published | id 97d3d5f0-be4b-4a20-8b4c-3a3d2bdfc0d4
+    5233 sayılı Terör ve Terörle Mücadeleden Doğan Zararların Karşılanması Hakkında Kanun’a göre zarar tespit komisyonunun çalışma esas ve usulleri aşağıdakilerden hangisi ile belirlenir?
+    A) Kanun
+    B) Tüzük
+    C) Genelge
+    D) Yönetmelik  ✔
+  — skor 0.23 | Polis Mevzuatı / 657 Sayılı Devlet Memurları Kanunu | published | id 87d7fe02-bba4-4225-8512-c9e28924a96a
+    Bir ilçe emniyet müdürlüğünde görevli polis memurunun dikkatsizliği sonucu birime ait bir telsiz cihazı hasar görmüştür. Zararın tutarı, fiilin meydana geldiği tarihte en alt derecenin birinci kademesindeki memurun brüt aylığının yarısını geçmemektedir ve polis memuru zararı ödemeyi kabul etmiştir. 657 sayılı Kanun'a göre bu zararın ödettirilmesi ile ilgili aşağıdakilerden hangisi doğrudur?
+    A) Zarar, disiplin amirinin ya da yetkili disiplin kurulunun vereceği karara göre memurca ödenir.  ✔
+    B) Zarar, disiplin soruşturması tamamlandıktan sonra kurumca genel hükümlere göre açılacak davayla tahsil edilir.
+    C) Zarar, atamaya yetkili amirin onayıyla memurun aylığından kesilmek suretiyle ödettirilir.
+    D) Zarar, memurun kusuru mahkemece tespit edildikten sonra kendisinden ödettirilir.
+    E) Zarar, kurum üst yöneticisinin kararıyla taksitlendirilerek memurdan tahsil edilir.
+  — skor 0.20 | Polis Mevzuatı / 2918 Sayılı Karayolları Trafik Kanunu | published | id a01338e9-53dc-44d4-b599-9174128c88fa
+    Motorlu araç kazalarından doğan maddi zararların tazminine ilişkin talepler, zarar görenin, zararı ve tazminat yükümlüsünü öğrendiği tarihten başlayarak - - - - yıl ve herhâlde, kaza gününden başlayarak - - - - yıl içinde zamanaşımına uğrar. 2918 sayılı Karayolları Trafik Kanunu’na göre yukarıdaki hükümde boş bırakılan yerlere sırasıyla hangileri getirilmelidir?
+    A) iki - on  ✔
+    B) iki - beş
+    C) bir - beş
+    D) bir - üç
+  — skor 0.19 | Polis Mevzuatı / 3713 Sayılı Terörle Mücadele Kanunu | published | id 7914e5dd-618f-4dd6-b4f4-77a093b1bd68
+    5233 sayılı Terör ve Terörle Mücadeleden Doğan Zararların Karşılanması Hakkında Kanun’a göre sulhnamede belirlenen zararlar, sulhnamenin imzalanmasından sonra kaç ay içerisinde karşılanır?
+    A) On iki
+    B) Dokuz
+    C) Altı
+    D) Üç  ✔
+  — skor 0.17 | Polis Mevzuatı / 3713 Sayılı Terörle Mücadele Kanunu | published | id 0a233854-2e1c-44a0-ad18-16cf019028df
+    I. Yurt dışındaki görevi sırasında terör eylemine muhatap olarak yaralanan kamu görevlisi II. Terör örgütüne yönelik operasyona giderken trafik kazasında hayatını kaybeden polis memuru III. Emekli olduktan sonra, terörle mücadele görevini yapmış olması nedeniyle terör örgütü mensuplarınca yaralanan eski polis memuru 3713 sayılı Kanun'a göre, verilenlerden hangileri “yardım” başlıklı 21 inci madded
+    A) Yalnız I
+    B) I ve II
+    C) I ve III
+    D) II ve III
+    E) I, II ve III  ✔
+
+## 5233-p1-03
+ADAY: 5233 sayılı Kanun'a göre, terörle mücadele kapsamında yürütülen faaliyetler nedeniyle kişinin mal varlığına ulaşamamasından doğan maddî zararın karşılanmasına ilişkin kural aşağıdakilerden hangisidir?
+ADAY DOĞRU: Aynî ifaya öncelik verilir.
+  — skor 0.24 | Polis Mevzuatı / 3713 Sayılı Terörle Mücadele Kanunu | published | id 662afdab-7f45-49de-82ac-5826c36e4995
+    5233 sayılı Terör ve Terörle Mücadeleden Doğan Zararların Karşılanması Hakkında Kanun’a göre “başvurunun süresi, şekli, incelenmesi ve sonuçlandırılması” ile ilgili aşağıdakilerden hangisi yanlıştır?
+    A) Komisyon üyeleri bilirkişi olarak görevlendirilebilir.  ✔
+    B) Komisyonun giderleri Bakanlık ve/veya il özel idaresi bütçesinden karşılanır.
+    C) Komisyon, zarar görenlerce yapılacak her başvuru ile ilgili çalışmalarını, başvuru tarihinden itibaren altı ay içinde tamamlamak zorundadır.
+    D) Dava açma süresi içinde yapılan başvuru, nihai işlem sonucunun ilgiliye tebliğine kadar genel hükümlere göre dava açma sürelerini durdurur.
+  — skor 0.24 | Polis Mevzuatı / 3713 Sayılı Terörle Mücadele Kanunu | published | id 7914e5dd-618f-4dd6-b4f4-77a093b1bd68
+    5233 sayılı Terör ve Terörle Mücadeleden Doğan Zararların Karşılanması Hakkında Kanun’a göre sulhnamede belirlenen zararlar, sulhnamenin imzalanmasından sonra kaç ay içerisinde karşılanır?
+    A) On iki
+    B) Dokuz
+    C) Altı
+    D) Üç  ✔
+  — skor 0.24 | Polis Mevzuatı / 3713 Sayılı Terörle Mücadele Kanunu | published | id 97d3d5f0-be4b-4a20-8b4c-3a3d2bdfc0d4
+    5233 sayılı Terör ve Terörle Mücadeleden Doğan Zararların Karşılanması Hakkında Kanun’a göre zarar tespit komisyonunun çalışma esas ve usulleri aşağıdakilerden hangisi ile belirlenir?
+    A) Kanun
+    B) Tüzük
+    C) Genelge
+    D) Yönetmelik  ✔
+
+## 5233-p1-04
+ADAY: 5233 sayılı Kanun'a göre, sulhname tasarısını imzalamaya davet edilen hak sahibinin davet yazısında belirtilen süre içinde gelmemesi ve yetkili bir temsilcisini de göndermemesi üzerine ortaya çıkan sonuç aşağıdakilerden hangisidir?
+ADAY DOĞRU: Uyuşmazlık tutanağı düzenlenir.
+  — skor 0.20 | İdare Hukuku / İdare Hukuku | published | id 85c2409d-6902-4f99-9ab5-c8c1644ee532
+    Bir kamu tüzel kişisi, başka bir kamu tüzel kişisine ait bir taşınmaza ihtiyaç duyuyor ve ödeyeceği bedeli de belirterek mal sahibi kamu tüzel kişisine yazılı olarak başvuruyor. Ancak mal sahibi kamu tüzel kişisi taşınmazın devrine muvafakat etmiyor. Bu durumda ortaya çıkan anlaşmazlığı, alıcı kurum tüzel kişisinin başvurusu üzerine kesin olarak karara bağlama yetkisi aşağıdakilerden hangisine ait
+    A) Danıştay Birinci Dairesi  ✔
+    B) Danıştayın ilgili İdari Dava Dairesi
+    C) Danıştay İdari Dava Daireleri Kurulu
+    D) Taşınmazın bulunduğu yerin yargı çevresine dâhil olduğu idare mahkemesi
+    E) Taşınmazın bulunduğu yerin yargı çevresine dâhil olduğu bölge idare mahkemesi
+  — skor 0.18 | Polis Mevzuatı / 3713 Sayılı Terörle Mücadele Kanunu | published | id 7914e5dd-618f-4dd6-b4f4-77a093b1bd68
+    5233 sayılı Terör ve Terörle Mücadeleden Doğan Zararların Karşılanması Hakkında Kanun’a göre sulhnamede belirlenen zararlar, sulhnamenin imzalanmasından sonra kaç ay içerisinde karşılanır?
+    A) On iki
+    B) Dokuz
+    C) Altı
+    D) Üç  ✔
+  — skor 0.17 | Polis Mevzuatı / 5395 Sayılı Çocuk Koruma Kanunu | published | id 8fe6e9c8-455d-452c-a558-c03c167ab201
+    Çocukla kişisel ilişki kurulmasına dair bir ilam kapsamında yükümlü anneye teslim emri tebliğ edilmiştir. Hak sahibi baba, sonraki dönemde çocuğu teslim almaya geleceğini süresi içinde müdürlüğe bildirdiği hâlde, haklı bir mazereti olmaksızın art arda iki kez teslim yerine gelmemiştir. 5395 sayılı Çocuk Koruma Kanunu’na göre bu durumda ne yapılır?
+    A) Müdürlük, dosyanın işlemden kaldırılmasına ve teslim emrinin hükümsüz hâle gelmesine karar verir.  ✔
+    B) Müdürlük, baba hakkında suç duyurusunda bulunur ve sonraki süreç hakkında yükümlü anneyi bilgilendirir.
+    C) Babanın kişisel ilişki hakkı, müdürlüğün bildirimi üzerine aile mahkemesince kaldırılır.
+    D) Baba, annenin şikâyeti üzerine aile mahkemesince disiplin hapsi ile cezalandırılır.
+    E) Teslim emri, babanın yeni bir başvurusuna kadar askıya alınır ve dosya müdürlükte bekletilir.
+  — skor 0.16 | Protokol Bilgisi / Protokol Bilgisi | published | id 86c9a49d-d866-4a7b-94f9-5ac4af744e9c
+    Resmi kabul, milli gün vesilesiyle düzenlenir, Davet sahibi konuklarını girişte karşılar, Ön görülen süre genelde iki saattir. Yukarıda bilgileri verilen davet türü aşağıdakilerden hangisidir?
+    A) Kokteyl
+    B) Resepsiyon  ✔
+    C) Suppe
+    D) Brunch
+  — skor 0.16 | Atatürk İlkeleri ve İnkılap Tarihi / Atatürk İlkeleri ve İnkılap Tarihi | published | id 43030c5c-cdd3-453d-9b5e-098d82dd5302
+    I. İnönü Muharebesi’nde Yunanlıların yenilgiye uğraması üzerine İtilaf Devletleri, Londra’da bir konferans yapılmasına karar vermişlerdir. Konferansa İstanbul Hükûmeti’nin yanında BMM’yi temsilen bir yetkiliyi de davet etmişlerdir. Buna göre aşağıdakilerden hangisine ulaşılabilir?
+    A) İtilaf Devletleri, I. İnönü yenilgisini kabul etmemişlerdir.
+    B) İtilaf Devletleri'nin Anadolu’daki işgalleri sona ermiştir.
+    C) I. İnönü Muharebesi'nden sonra İtilaf Devletleri barış yanlısıdır.
+    D) İtilaf Devletleri, BMM’nin hukuki varlığını kabul etmek istememişlerdir.  ✔
+    E) Londra Konferansı’ndan sonra Yunanlılar geri çekilmiştir.
+
+## 5233-p1-05
+ADAY: 5233 sayılı Kanun'a göre, terör eyleminde yaralanan bir kişiye özel bir sigorta şirketince ödenen tazminatla ilgili aşağıdakilerden hangisi doğrudur?
+ADAY DOĞRU: Sigorta şirketi, ödediği tazminat için Devlete rücu edemez.
+  — skor 0.28 | Ceza Muhakemesi Hukuku / 5271 Sayılı Ceza Muhakemesi Kanunu (CMK) | published | id c83fbfdf-efec-404e-8ac2-d5dfa0e0cbb8
+    5271 sayılı Ceza Muhakemesi Kanunu’na göre; kayyımların görevinin gereklerine aykırı hareket etmek suretiyle görevini kötüye kullanmasından dolayı Devlet ödediği tazminatı, kayyımlara en geç ne kadar süre içinde rücu eder?
+    A) Üç ay
+    B) Altı ay
+    C) Bir yıl  ✔
+    D) İki yıl
+    E) Üç yıl
+  — skor 0.19 | Polis Mevzuatı / 3713 Sayılı Terörle Mücadele Kanunu | published | id 0a233854-2e1c-44a0-ad18-16cf019028df
+    I. Yurt dışındaki görevi sırasında terör eylemine muhatap olarak yaralanan kamu görevlisi II. Terör örgütüne yönelik operasyona giderken trafik kazasında hayatını kaybeden polis memuru III. Emekli olduktan sonra, terörle mücadele görevini yapmış olması nedeniyle terör örgütü mensuplarınca yaralanan eski polis memuru 3713 sayılı Kanun'a göre, verilenlerden hangileri “yardım” başlıklı 21 inci madded
+    A) Yalnız I
+    B) I ve II
+    C) I ve III
+    D) II ve III
+    E) I, II ve III  ✔
+  — skor 0.19 | Polis Mevzuatı / 657 Sayılı Devlet Memurları Kanunu | published | id 906e50e5-02f7-4a37-aeee-b32249e94628
+    657 sayılı Devlet Memurları Kanunu’nda, aşağıdakilerden hangisi “Sayıştaya hesap vermekle yükümlü olan saymanlarla vezne açığından sorumlu veznedarlara ödenen para.” şeklinde tanımlanmıştır?
+    A) Mali sorumluluk tazminatı  ✔
+    B) Eleman teminindeki güçlük zammı
+    C) Fazla çalışma ücreti
+    D) İş riski zammı
+    E) İş güçlüğü zammı
+  — skor 0.18 | Ceza Hukuku / Türk Ceza Kanunu | published | id 09677744-b61e-4eb9-a737-bd194b599229
+    I. İsnat edilen ve suç oluşturan eylemin ispat edilmiş olması durumunda ceza verilmez. II. İspat edilmiş eylemden söz edilerek kişiye hakaret edilmesi durumunda ceza verilmez. III. Hakaret kasten yaralamaya tepki olarak işlenirse ceza verilmez. IV. Karşılıklı hakarette ceza indirilebilir veya cezadan vazgeçilebilir. Hakaret suçuyla ilgili hangileri doğrudur?
+    A) I ve II
+    B) I ve III
+    C) III ve IV
+    D) I, II ve IV
+    E) I, III ve IV  ✔
+  — skor 0.18 | Ceza Hukuku / Türk Ceza Kanunu | published | id 3e4f8034-2217-44a5-ade4-74274cce48b0
+    I. (A)'nın ödemediği kira borçları için hakkında icra takibi başlatan ev sahibini tehdit etmesi II. (B)'nin karşı tarafa baltayla saldırdıktan sonra, karşı tarafın kendini korumaya yönelik eylemine kızıp ona hakaret etmesi III. (C)'nin, marketinde hırsızlık yapan kişiye sinirlenerek onu yaralaması IV. (D)'nin, kendisine işlediği suç nedeniyle soruşturma açan savcıyı dolandırması Yukarıdakilerin ha
+    A) Yalnız I
+    B) Yalnız III  ✔
+    C) I ve III
+    D) II ve III
+    E) III ve IV
+
+## 5233-p1-06
+ADAY: 5233 sayılı Kanun'a göre, “zarar tespit komisyonu” ile ilgili aşağıdakilerden hangisi YANLIŞTIR?
+ADAY DOĞRU: Komisyonun başkanlığını o ilin valisi yürütür.
+  — skor 0.50 | Polis Mevzuatı / 3713 Sayılı Terörle Mücadele Kanunu | published | id 97d3d5f0-be4b-4a20-8b4c-3a3d2bdfc0d4
+    5233 sayılı Terör ve Terörle Mücadeleden Doğan Zararların Karşılanması Hakkında Kanun’a göre zarar tespit komisyonunun çalışma esas ve usulleri aşağıdakilerden hangisi ile belirlenir?
+    A) Kanun
+    B) Tüzük
+    C) Genelge
+    D) Yönetmelik  ✔
+  — skor 0.40 | İdare Hukuku / 5302 İl Özel İdaresi Kanunu | published | id 7d0d8981-762b-4c1a-8704-d9bb86bed91e
+    I. Mahkeme kararıyla tespit edilen hizmetlerde meydana gelen aksamanın giderilmesini İçişleri Bakanlığı, hizmetin özelliğine göre makul bir süre vererek il özel idaresinden ister. II. Hizmetlerde meydana gelen aksama il özel idaresi tarafından giderilmezse, söz konusu hizmetin yerine getirilmesi o ilin valisinden istenir. III. İl özel idaresinin aksayan hizmetlerinin vali tarafından yerine getiril
+    A) I ve II
+    B) I ve IV
+    C) I, II ve III  ✔
+    D) II, III ve IV
+    E) I, II, III ve IV
+  — skor 0.31 | İdare Hukuku / 2576 Bölge İdare Mahkemeleri Kanunu | published | id b4550f3c-c36f-49f5-b86e-4e05a712041f
+    2576 sayılı Bölge İdare Mahkemeleri, İdare Mahkemeleri ve Vergi Mahkemelerinin Kuruluşu ve Görevleri Hakkında Kanun’a göre, aşağıdakilerden hangisi bölge idare mahkemesi başkanının görevlerinden değildir?
+    A) Dairelerin benzer olaylarda kesin olarak verdikleri kararlar arasındaki uyuşmazlığın giderilmesi için başkanlar kuruluna başvurmak
+    B) Bölge idare mahkemesi memurlarını denetlemek veya denetletmek, personelden kendisine doğrudan bağlı olanlar hakkında ilgili kanunda belirtilen disiplin cezalarını uygulamak
+    C) Personelin özlük işlemlerinin yürütülmesini sağlamak ve izin isteklerini düşünceleriyle birlikte adalet komisyonuna aktarmak  ✔
+    D) Mahkemenin uyumlu, verimli ve düzenli çalışmasını sağlamak ve bu yolda uygun göreceği önlemleri almak
+    E) Bölge idare mahkemesi başkanlar kuruluna ve adalet komisyonuna başkanlık etmek, alınan kararları yürütmek
+  — skor 0.30 | Polis Mevzuatı / 2911 Sayılı Toplantı ve Gösteri Yürüyüşleri Kanunu | published | id 17d2edfe-5fe6-4584-bc92-9b11ecc0a6aa
+    Bir ile bağlı ilçenin, o ilin belediye sınırları içinde kalan kısmında toplantı yapılmak istenmektedir. 2911 sayılı Toplantı ve Gösteri Yürüyüşleri Kanunu'nun uygulanması yönünden bu yerin en büyük mülki amiri aşağıdakilerden hangisidir?
+    A) İlçe kaymakamı
+    B) İlin valisi  ✔
+    C) Bölge valisi
+    D) Belediye başkanı
+    E) İl emniyet müdürü
+  — skor 0.30 | Polis Mevzuatı / 3201 Sayılı Emniyet Teşkilat Kanunu | published | id 2a53b7c8-abbe-46f1-a5c2-a63906f9d8a6
+    3201 sayılı Emniyet Teşkilat Kanunu'na göre, emniyet ve asayişin gerektirdiği hâllerde geçici olarak başka illerde görevlendirme yapılması usulü bakımından aşağıdakilerden hangisi yanlıştır?
+    A) Öneri makamı, görevlendirmenin yapılacağı ilin valisidir  ✔
+    B) Süreç ilgili valinin istemiyle başlar
+    C) Onay makamı İçişleri Bakanıdır
+    D) Görevlendirme geçici nitelik taşır
+    E) Görevlendirme, emniyet ve asayişin gerektirdiği hâllerle sınırlıdır

@@ -1,0 +1,19 @@
+[
+  {
+    "id": "6698-p2-01",
+    "articleNo": "28",
+    "kok": "6698 sayılı Kanun'a göre, disiplin soruşturması için gerekli kişisel verileri Kanun'un amacına ve temel ilkelerine uygun ve orantılı olarak işleyen yetkili kamu kurumu, veri sorumlusu olarak aşağıdaki yükümlülüklerden hangisinden muaf tutulmuştur?",
+    "siklar": {
+      "A": "Kurulun istediği bilgi ve belgeleri gönderme",
+      "B": "Veri Sorumluları Siciline kaydolma",
+      "C": "Kurum içinde gerekli denetimleri yapma veya yaptırma",
+      "D": "Verilerin kanuni olmayan yollarla başkalarınca elde edildiğini ilgilisine bildirme",
+      "E": "Veri işleyenle birlikte güvenlik tedbirlerinden sorumlu olma"
+    },
+    "dogru": "B",
+    "aciklama": "Disiplin soruşturması için gerekli işleme, 28 inci maddenin ikinci fıkrasının (c) bendindeki hâldir. Fıkraya göre bu hâllerde, Kanun'un amacına ve temel ilkelerine uygun ve orantılı olmak kaydıyla üç hüküm uygulanmaz: aydınlatma yükümlülüğünü düzenleyen 10 uncu madde, zararın giderilmesini talep etme hakkı hariç ilgili kişinin haklarını düzenleyen 11 inci madde ve Veri Sorumluları Siciline kayıt yükümlülüğünü düzenleyen 16 ncı madde. Sicile kaydolma zorunluluğu 16 ncı maddededir; doğru cevap B'dir. Fıkrada sayılmayan hükümler bu işlemede de uygulanır. A, 15 inci maddenin üçüncü fıkrasındaki yükümlülüktür: Devlet sırrı niteliğindeki bilgi ve belgeler hariç, Kurulun inceleme konusuyla ilgili istediği bilgi ve belgeler gönderilir. E, C ve D sırasıyla 12 nci maddenin ikinci, üçüncü ve beşinci fıkralarındadır: veri sorumlusu, verilerin kendi adına başka bir kişi tarafından işlenmesi hâlinde güvenlik tedbirlerinin alınması hususunda bu kişiyle birlikte müştereken sorumludur; kendi kurumunda gerekli denetimleri yapar veya yaptırır; işlenen verilerin kanuni olmayan yollarla başkaları tarafından elde edilmesi hâlinde durumu ilgilisine ve Kurula bildirir. Bu bildirim 10 uncu maddedeki aydınlatma yükümlülüğünden ayrıdır; aydınlatma uygulanmasa da bildirim yapılır.",
+    "dayanak": "6698 sayılı Kanun md 28/2-c (karş. md 12/2, 12/3, 12/5, md 15/3, md 16)",
+    "zorluk": "hard",
+    "tur": "kavram"
+  }
+]

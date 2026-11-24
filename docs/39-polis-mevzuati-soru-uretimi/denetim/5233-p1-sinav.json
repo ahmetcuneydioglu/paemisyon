@@ -1,0 +1,74 @@
+[
+  {
+    "id": "5233-p1-01",
+    "karar": "ONAY",
+    "korCevap": "B",
+    "metinCevap": "C",
+    "sinavDegeri": 4,
+    "ayirtEdicilik": 5,
+    "dogallik": 4,
+    "zorluk": "hard",
+    "gerekce": "TUR 2: Çekince yok. ONAY. Kök, şıklar ve anahtar (C) tur 1'le aynı (kör dosyada denetlendi); yalnız açıklama ve dayanak değişti. Bu yüzden soru taze çözücüye verilmedi ve tur 1'deki temiz kör çözümüm geçerli. O çözümde B'yi seçmiştim (orta yol, en uzun şık, en çok kesişen şık); kestirme yanlış şıkka gitti, bu da soru lehine. Metnin cevabı md 2/3 → C; anahtarla ayrışma yok. Birinci turda bu soruya itirazım yoktu. Mevzuat gözcüsünün itirazı karşılanmış: açıklamadaki 'zarar tespiti de bu Kanuna göre yapılan bir işlemdir' yargısı artık metne bağlı (md 14/2: 'Bu Kanuna göre zarar tespit işlemlerinde görevlendirilen kişiler'). 2/2-f alıntısı metinle birebir. Düzeltme yeni kusur doğurmamış: açıklama partideki başka bir sorunun cevabını vermiyor (md 8, md 10, 12/4, 9/5 ve md 4 anılmıyor), metin dışı cümle yok, E için gereksiz md 6/2 atfı da kalkmış. Açıklama adaya cevaptan sonra göründüğü için kör çözümde yeni bir ipucu doğurmaz. Zorluk ölçümü: hard (üretici etiketiyle aynı).",
+    "oneri": ""
+  },
+  {
+    "id": "5233-p1-02",
+    "karar": "RED",
+    "korCevap": "B",
+    "metinCevap": "B",
+    "sinavDegeri": 3,
+    "ayirtEdicilik": 2,
+    "dogallik": 3,
+    "zorluk": "easy",
+    "gerekce": "Anahtar metinle doğru (md 8: kusur veya ihmal 'göz önünde bulundurulur'). Ama soru bilmeyene cevabı veriyor ve ters ayırt ediyor. Kör çözümde B'yi madde bilgisi olmadan buldum. Kökteki 'ihmalinin DE etkisi' kısmi katkıyı söylüyor ve 'dikkate alınır' en ılımlı, bağlayıcı olmayan şık. Borçlar hukukundaki müterafik kusur (indirim) bilgisi de aynı yere götürüyor. Sağduyuyla İKİ şık eleniyor: C 'mahkemece belirlenir' ve E 'Bakan onayı aranır'. D'deki 'yarısı' keyfî oran olarak düşüyor; soru A–B ikilisine iniyor. 2/2-e'yi 'kendi kusuruyla oluşan zarar kapsam dışı' diye yarım bilen aday A'da yanılıyor, hiç bilmeyen ise B'yi buluyor. Bu, rapor §8 kural 4'teki ve gözcü kontrol listesi 2'deki RED örüntüsüdür. Raporun öngördüğü 'kendi kusuru, ödenmez' sezgisi bu kökte devreye girmiyor: 'de' bağlacı dışlama sezgisini değil indirim sezgisini çağırıyor. Sınav değeri 3: kasıt ↔ ihmal ayrımı ölçülmeye değer, ama bu kalıpta 5233'e özgü bir kural değil genel tazminat ilkesi ölçülüyor. Doğallık 3: C ve E dolgu şık, kök adlaşmış ('bulunmasının sonucu'). Partideki tek uydurma değer de bu soruda (D). Gerçek zorluk kolay; üretici orta demiş.",
+    "oneri": "Bu hükümden bu kalıpla kestirmesiz soru kurulamıyor. md 8'in kuralı genel tazminat hukukundaki müterafik kusur sezgisiyle örtüşüyor; doğru şık hangi biçimde yazılırsa yazılsın bilmeyene en ılımlı ve en makul seçenek olarak görünür. 'İhmal oranında indirilerek belirlenir' gibi daha teknik bir rakip eklemek iki okuma doğurur, çünkü md 8 oran koymaz. Öneri: soru bırakılsın, yuva boş kalsın; parti raporun önerdiği 5 soruya iner. Yuva rapor §7'deki bir yedekle doldurulacaksa yeni soru taze kör çözücüye verilsin. 6/1 son cümle (hastane süresi) ve Ek 1 son fıkra (aylığın hükmün kesinleşmesiyle kesilmesi) de hakkaniyet ve masumiyet karinesi sezgisiyle çözülme riski taşıyor; yazılmadan önce o açıdan denetlensin."
+  },
+  {
+    "id": "5233-p1-03",
+    "karar": "ONAY",
+    "korCevap": "A",
+    "metinCevap": "D",
+    "sinavDegeri": 4,
+    "ayirtEdicilik": 4,
+    "dogallik": 4,
+    "zorluk": "medium",
+    "gerekce": "TUR 2: ONAY, hafif çekinceyle. Çekince: yeni E ('Mal varlığına ulaşılıncaya kadar ertelenir.') eski 'Karşılanmaz.'dan zayıf; 2/2-d tuzağını yitirdi ve sağduyuyla düşüyor. C ile birlikte iki zayıf şık soruyu A–B–D üçlüsüne indiriyor. Ama kalan üçlüde kestirme D'ye değil A ile B'ye gidiyor, bu yüzden kısa yol doğmuyor. Canlandırılmış çözüm (korCevap gerçek kör değil; anahtarı bilerek, metni bilmeyen aday): aday 'zarar parayla ödenir' sezgisiyle nakit geçen tek şık A'ya, ikinci olarak tercih ve hakkaniyet sezgisiyle B'ye çekilir. E en uzun şık ve kökü yankılıyor, ama 'ulaşamama sürdükçe ödeme yok' diye mantıkla düşer; C 'mülkiyet geçmiyor' diye düşer; D'ye giden yaygın bir sezgi yok. Tahminim, genel bilgiyle A %30, B %25, D %20; salt şıkla A %30, B %25, E %20, D %15. Taze kör çözücü B'yi seçti: genel bilgiyle B %35 (A %27, D %25), salt şıkla A %36 (B %26, D %26). Kirlilik notu: çözücünün istemindeki 'zarar parayla ödenir' örneği yanlış şık A'ya gidiyordu, yani kirlilik soru lehine işledi. Bu örnek düşülse de çözücünün genel bilgi yolu B'ye gitti: gösterge kişiye bağlı zararda kullanılır diye A'yı, aynî ifa fiziksel hasara uyar diye D'yi eledi. Tur 1'deki temiz kör çözümüm de A'ya gitmişti. İki bağımsız kör çözüm anahtarı kaçırdı ve kestirmeler yanlış şıklara (A, B, E) dağılıyor; bu, soru lehine kanıt. 'mal varlığı ↔ aynî' anlam yankısı D'ye yalnız yaklaşık %25 çekiyor. Metnin cevabı md 10 (aynî veya nakdî; imkânlar ölçüsünde aynî ifaya öncelik) → D; anahtarla ayrışma yok. Birinci turda itirazım yoktu. Düzeltme yeni kusur doğurmamış: yeni E metne göre yanlış (md 10 karşılamayı yeniden ulaşılmaya bağlamaz; açıklama 'imkânlar ölçüsünde' kaydının ertelemeyle ilgisi olmadığını da söylüyor), iki doğru şık yok, sızıntı ve metin dışı cümle yok. Zorluk ölçümü: medium. Tek bir bilgi soruluyor; sezgiye aykırı doğru cevap ve komşu hüküm çeldiricisi (md 9) yüzünden zor sınırında. Üretici etiketiyle aynı.",
+    "oneri": ""
+  },
+  {
+    "id": "5233-p1-04",
+    "karar": "ONAY",
+    "korCevap": "E",
+    "metinCevap": "E",
+    "sinavDegeri": 4,
+    "ayirtEdicilik": 4,
+    "dogallik": 4,
+    "zorluk": "medium",
+    "gerekce": "Çekince yok. Kör çözümde E'yi orta güvenle seçtim. Seçimi 'sulhname imzalanmadı → uyuşmazlık doğdu' anlam bağı ve idare hukukundaki 'susma kabul sayılmaz' bilgisi taşıdı. Bu bir yüzey kestirmesi değil, hukuki muhakemedir. Yüzey kestirmeleri yanlışa gidiyor: en uzun ve kökü en çok yankılayan şık A ('Sulhname tasarısını kabul etmiş sayılır'); A aynı zamanda 'itiraz etmeyen kabul etmiş sayılır' sezgisinin tuzağı. Halk sezgisi C'yi ('gelmeyen başvurusundan vazgeçmiş sayılır') gösterir. B, 5/d'deki karar tutanağı; iki tutanağı karıştıran eksik bileni yakalar. Sağduyuyla elenen tek şık D. Şıklar 2+2+1 düzeninde (A/C '… sayılır', B/E '… tutanağı düzenlenir'), ama çiftler birlikte düşmüyor; her çiftin bir üyesi güçlü. Metin 12/2: otuz gün içinde gelmeyen ya da yetkili temsilcisini göndermeyen tasarıyı kabul etmemiş sayılır, yargı yolu saklıdır. 12/4: bu hâlde uyuşmazlık tutanağı düzenlenir → E. Anahtar ve açıklama metinle uyumlu. Kök süreyi vermiyor; eski 'yirmi gün' kullanılmamış. Gerçek zorluk orta; üretici etiketiyle aynı.",
+    "oneri": ""
+  },
+  {
+    "id": "5233-p1-05",
+    "karar": "RED",
+    "korCevap": "A",
+    "metinCevap": "A",
+    "sinavDegeri": 4,
+    "ayirtEdicilik": 2,
+    "dogallik": 4,
+    "zorluk": "easy",
+    "gerekce": "TUR 2: RED. Birinci tur itirazım yarı yarıya karşılandı. İki ipucu kalktı: A artık kökü tek başına en çok yankılayan şık değil (B ve D köke daha çok dönüyor) ve A'nın aynası (eski E) çıktı. Ama yeni E ('Zarar gören, tazminatla Devlet ödemesinden birini seçer.') düzeltmenin kendisinden doğan yapısal bir kusur getirdi. B (tam birikim, mahsup yok) ile E (münhasır seçim) aynı eksenin iki ucu; doğru kural (mahsup) şıklarda yok. 'Zarar gören zararından fazlasını alamaz, öteki ödeme düşülür' sezgisi ikisini birlikte düşürüyor. Canlandırılmış çözüm (korCevap gerçek kör değil; anahtarı bilerek, metni bilmeyen aday): B ile E bu sezgiyle düşer; D 'rücu ödeyenin hakkıdır, Devlet ödemediğini isteyemez' mantığıyla düşer. A ↔ C kalır ve 'Devleti koruyan kural' sezgisi A'yı seçtirir. Tahminim, genel bilgiyle A %60, C %25; salt şıkla A %45, C %25. Taze kör çözücü A'yı seçti: genel bilgiyle %65, salt şık + sağduyuyla %50. Yolu aynı: Devleti koru → A; çifte tazmin yok → B ve E düşer; D mantık hatası. Bağımsız bir yolu daha var: sosyal risk tazminatı kişiye özgü, can sigortasında halefiyet yok → A. Kirlilik notu: çözücünün istemindeki 'Devleti koruyan kural' ve 'çifte tazmin olmaz' örnekleri soru aleyhine işledi. Ama ikisini de düşsem karar değişmiyor. 'Devleti koru' sezgisini tur 1'in temiz kör çözümünde istem olmadan kendim bulmuştum. 'Çifte tazmin' sezgisini de tur 1'de B için kendim yazmıştım; B ile E'nin bu sezgiyle birlikte düşmesi kirlilikten bağımsız bir yapı kusuru. D'yi düşüren 'rücu ödeyenin hakkıdır' adımı kirli listede yok; tur 1'de de D'yi zayıf saymıştım. Sonuç: birden çok yaygın sezgi doğru şıkta birleşiyor ve sağduyuyla üç şık eleniyor (kural: en çok bir). Tur 1'de koyduğum 'A yine yalnız şıklardan bulunuyorsa 9/5 bırakılsın' koşulu gerçekleşti. Metnin cevabı md 9/5 → A; anahtarla ayrışma yok. Öteki şıklar metne göre yanlış: 5/b ve md 11 mahsubu öngörür; 13/3 Devletin yalnız kendi ödemesi için rücuunu tanır; bildirim ve seçim hükmü yok. İki doğru şık ya da sızıntı yok; kusur doğrulukta değil, ayırt edicilikte. Zorluk ölçümü: easy (üretici medium demiş).",
+    "oneri": "Soru bırakılsın (son tur). 9/5 sıradan aday için sezgiye aykırı değil; 'Devleti koruyan kural' sezgisiyle örtüşüyor. 5/b ve 13/3'ten kurulan çeldiriciler de genel tazminat ilkeleriyle düşüyor (mahsup; rücu ödeyenin hakkıdır). Bu hükümden bu partide kestirmesiz soru kurulamıyor. Parti 01, 03, 04 ve 06 ile dört soru olarak kapanır."
+  },
+  {
+    "id": "5233-p1-06",
+    "karar": "ONAY",
+    "korCevap": "D",
+    "metinCevap": "D",
+    "sinavDegeri": 4,
+    "ayirtEdicilik": 4,
+    "dogallik": 5,
+    "zorluk": "medium",
+    "gerekce": "Çekince yok. Kör çözümde D'yi seçtim. Dayanağım genel idare bilgisiydi (il düzeyindeki tespit komisyonlarını kural olarak vali yardımcısı yönetir); buna zayıf bir gizli bellek eklendi. Salt şık çözücüsü ise C'ye gider: 'her yıl ocak ayının ilk haftası' uydurma gibi görünen özgül bir ayrıntı ve en uzun şık. Varsayılan merci sezgisi ('il komisyonunun başı validir') D'yi DOĞRU saydırır. Yani varsayılan, raporun vali ↔ vali yardımcısı çiftiyle (§8 kural 3) çeldiriciye bağlanmış. Kestirmeler yanlışa gidiyor (lehine). 'Başvuru valiliğe yapılır, ödemeyi vali onaylar' bilgisini taşıyan eksik bilen de D'yi doğru sayar. E, genel 'toplantıya katılanların çoğunluğu' kalıbını bilen adayı yakalar; 4/4'e göre kararlar 'üye tam sayısının salt çoğunluğuyla' alınır. Metin 4/2: başkan, valinin görevlendirdiği vali yardımcısıdır → D yanlış. A, B, C ve E metinle birebir doğru. Doğru önermeler birbirini varsaymıyor ve yanlış önermeyle çelişmiyor. Yönetmelik ([91]) ve md 6 ([92]) önermelerde yok; mükerrer yok. Tırnaklı başlık ve kısa önermeler var; büyük harf yalnız olumsuz sözcükte. Gerçek zorluk orta; üretici kolay demiş. Tek bir bilgi soruluyor ama cevap varsayılana aykırı ve E güçlü bir tuzak.",
+    "oneri": ""
+  }
+]

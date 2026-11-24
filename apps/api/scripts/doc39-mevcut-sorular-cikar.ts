@@ -11,6 +11,7 @@
  * kendi kardeşlerini tekrarlar.
  *
  *   npx tsx scripts/doc39-mevcut-sorular-cikar.ts <doc-dizini> <kanun-no>
+ *   ONEK=atama npx tsx scripts/doc39-mevcut-sorular-cikar.ts <doc-dizini> <slug>  (numarasız mevzuat)
  */
 import { writeFileSync } from 'node:fs';
 import { PrismaClient } from '@prisma/client';
@@ -20,8 +21,12 @@ const prisma = new PrismaClient();
 
 async function main() {
   const [doc, kanunNo] = process.argv.slice(2);
-  if (!doc || !kanunNo) throw new Error('kullanım: … <doc-dizini> <kanun-no>');
-  const leg = await prisma.legislation.findFirstOrThrow({ where: { number: kanunNo } });
+  if (!doc || !kanunNo) throw new Error('kullanım: … <doc-dizini> <kanun-no|slug>');
+  // Numarasız mevzuat (yönetmelik) slug ile bulunur; dosya adı öneki ONEK ile verilir
+  // (ör. ONEK=atama … emniyet-atama-ve-yer-degistirme-yonetmeligi → atama-mevcut-sorular.txt).
+  const leg = await prisma.legislation.findFirstOrThrow({
+    where: /^\d+$/.test(kanunNo) ? { number: kanunNo } : { slug: kanunNo },
+  });
   if (!leg.topicId) throw new Error(`${kanunNo} kanununun bağlı konusu yok`);
 
   const v = await prisma.questionVersion.findMany({
@@ -42,7 +47,7 @@ async function main() {
     const sik = x.options.map((o) => `   ${o.label}) ${o.text}${o.isCorrect ? '  ✔' : ''}`).join('\n');
     return `${md}${x.stem}\n${sik}`;
   });
-  const yol = `${doc}/mevzuat/${kanunNo}-mevcut-sorular.txt`;
+  const yol = `${doc}/mevzuat/${process.env.ONEK ?? kanunNo}-mevcut-sorular.txt`;
   writeFileSync(yol, satir.join('\n\n') + '\n', 'utf8');
   const turetme = v.filter((x) => x.sourceLabel?.startsWith('Mevzuat türetimi')).length;
   console.log(`${yol}: ${v.length} soru (${turetme}'i Doc 39 türetimi, ${v.length - turetme}'i mevcut banka)`);

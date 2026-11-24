@@ -1,0 +1,41 @@
+# 2559-p4 — bankadaki en benzer sorular (bütün banka, 7736 soru; eşik 0.15, aday başına 5)
+# skor = aday kök+doğru şık sözcüklerinin (IDF ağırlıklı) ne kadarının o soruda geçtiği. Yüksek skor mükerrer DEMEK DEĞİLDİR; karar gözcünündür.
+
+## 2559-p4-01
+ADAY: 2559 sayılı PVSK'ya göre, kaybolan çocukların bulunması amacıyla polisin başvurabileceği tedbirler arasında aşağıdakilerden hangisi YER ALMAZ?
+ADAY DOĞRU: Çocuğu kaçırdığı düşünülen kişinin telekomünikasyon yoluyla iletişimini denetlemek
+  — skor 0.48 | Polis Mevzuatı / 2559 Sayılı Polis Vazife ve Salâhiyet Kanunu (PVSK) | published | id c57c7064-be1d-4118-8ab1-9a51cf4f18e4
+    Polis, casusluk suçunun işlenmesini önlemek amacıyla, şüphelendiği bir kişinin telekomünikasyon yoluyla yaptığı iletişimin tespit edilmesini ve dinlenmesini planlamaktadır. 2559 sayılı PVSK'nın Ek 7 nci maddesine göre bu tedbirle ilgili aşağıdakilerden hangisi doğrudur?
+    A) Başvurulabilir; hâkim kararı ya da gecikmesinde sakınca bulunan hâlde yazılı emir yeterlidir.
+    B) Başvurulamaz; casusluk suçları, maddenin atıf yaptığı suçlardan açıkça hariç tutulmuştur.  ✔
+    C) Başvurulabilir; ancak tedbir kararı en çok bir ay için verilebilir.
+    D) Başvurulamaz; önleme amaçlı dinleme, soruşturması başlamış suçlarla sınırlıdır.
+    E) Başvurulabilir; ancak tedbir, Cumhuriyet savcısının talimatıyla uygulanır.
+  — skor 0.32 | Polis Mevzuatı / 2559 Sayılı Polis Vazife ve Salâhiyet Kanunu (PVSK) | published | id 14d0ac8c-e3c7-495c-9f05-0f08d9768da0
+    2559 sayılı Polis Vazife ve Salâhiyet Kanunu'na göre, suçların işlenmesinin önlenmesi amacıyla telekomünikasyon yoluyla yapılan iletişimin tespiti ve dinlenmesine, gecikmesinde sakınca bulunan hâllerde aşağıdakilerden hangisinin yazılı emriyle başvurulabilir?
+    A) Mahallin en büyük mülkî amiri
+    B) İçişleri Bakanı
+    C) Emniyet Genel Müdürü  ✔
+    D) İl emniyet müdürü
+    E) Cumhuriyet başsavcısı
+  — skor 0.32 | Ceza Muhakemesi Hukuku / 5271 Sayılı Ceza Muhakemesi Kanunu (CMK) | published | id beb4db1a-876d-4d9b-9c88-931424132786
+    Telekomünikasyon yoluyla yapılan iletişimin denetlenmesiyle ilgili olarak aşağıdakilerden hangisi yanlıştır?
+    A) Telekomünikasyon yoluyla iletişimin denetlenebilmesi için kuvvetli şüphe sebeplerinin, yani kuvvetli delillerin bulunması gerekmektedir.
+    B) İletişimin dinlenmesi, kayda alınması ve sinyal bilgilerinin değerlendirilmesi açısından aranan kuvvetli şüphe sebepleri, katalogda yer alan suçların işlendiği hususunda olmalıdır.
+    C) Telekomünikasyon yoluyla iletişimin denetlenmesi dışındaki başka yollarla delil elde etme imkânının bulunduğu durumlarda bu tedbire başvurulmaması gerekir.
+    D) İletişimin tespiti tedbirine bütün suçlar açısından başvurmak mümkündür.
+    E) Şüpheli veya sanığın tanıklıktan çekinebilecek kişilerle arasındaki iletişimi delil etmek amacıyla kayda alınabilir.  ✔
+  — skor 0.30 | Polis Mevzuatı / 2559 Sayılı Polis Vazife ve Salâhiyet Kanunu (PVSK) | published | id 30ceba0f-4cf0-4024-856e-4b39bbb274bc
+    2559 sayılı PVSK'nın Ek 7 nci maddesine göre bu maddede belirtilen telekomünikasyon yoluyla yapılan iletişime ilişkin işlemler ile 5271 sayılı Ceza Muhakemesi Kanunu'nun 135 inci maddesi kapsamında yapılacak dinlemeler nasıl yürütülür?
+    A) Siber Güvenlik Başkanlığı bünyesinde tek bir merkezden  ✔
+    B) Millî İstihbarat Teşkilatı bünyesinde tek bir merkezden
+    C) Emniyet Genel Müdürlüğü İstihbarat Dairesi Başkanlığı bünyesinde tek bir merkezden
+    D) Adalet Bakanlığı bünyesinde tek bir merkezden
+    E) Her kolluk teşkilatının kendi merkezinden, ayrı ayrı
+  — skor 0.30 | Polis Mevzuatı / 2559 Sayılı Polis Vazife ve Salâhiyet Kanunu (PVSK) | published | id f6efb722-8581-40a7-8e39-6169442fa9ad
+    2559 sayılı Polis Vazife ve Salâhiyet Kanunu'na göre, kaybolan çocukların bulunması amacıyla verilen tedbir kararının süresiyle ilgili aşağıdakilerden hangisi doğrudur?
+    A) En çok bir ay için verilebilir; bu süre bir defaya mahsus olmak üzere bir ay daha uzatılabilir.  ✔
+    B) En çok iki ay için verilebilir; bu süre bir ay daha uzatılabilir.
+    C) En çok üç ay için verilebilir ve uzatılamaz.
+    D) En çok on beş gün için verilebilir ve uzatılamaz.
+    E) Süre öngörülmemiştir; çocuk bulununcaya kadar devam eder.

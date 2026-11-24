@@ -1,0 +1,38 @@
+[
+  {
+    "id": "teknik-takip-p1-01",
+    "karar": "RED",
+    "korCevap": "B",
+    "metinCevap": "B",
+    "sinavDegeri": 3,
+    "ayirtEdicilik": 2,
+    "dogallik": 4,
+    "zorluk": "easy",
+    "gerekce": "Anahtar B; metin (7/3) B; kör cevabım B (%45) — madde bilgisi OLMADAN, salt 'koruma mağdur odaklıdır, mağdurun yeri yürütür' sağduyusuyla. İkiz şıklar (B/C: mağdurun ikameti ↔ yükümlünün ikameti) cevabı ikiye indiriyor, 'mağdur önce gelir' sezgisi de B'yi seçtiriyor. Analistin bu yuva için yazdığı düşme şartı ('kör çözücü salt şıkla buluyorsa yuva düşer') ve gözcü kontrol listesi md 6 gerçekleşti. Ters ayırt etme de var: 3/ğ tanımını (yerleşim yeri ya da kararın uygulanacağı yer) yarım hatırlayan ya da 'cihaz yükümlüde' diye düşünen hazırlıklı aday C'ye gider, hiç bilmeyen B'yi bulur. A ve E zayıf (ikisini de kör çözümde hemen eledim), D tek ciddi dış rakip. Hüküm iki seçenekli bir tercih olduğundan çeldirici değiştirmek sezgiyi kırmaz.",
+    "oneri": "Yeniden yazım önermiyorum; yuva bırakılmalı. Hüküm (iki il çakışınca mağdurun ikameti) hangi takımla kurulursa kurulsun 'mağdur önce' sezgisiyle bulunur; biçim değişikliği kurtarmaz."
+  },
+  {
+    "id": "teknik-takip-p1-02",
+    "karar": "ONAY",
+    "korCevap": "B",
+    "metinCevap": "E",
+    "sinavDegeri": 4,
+    "ayirtEdicilik": 4,
+    "dogallik": 4,
+    "zorluk": "medium",
+    "gerekce": "Anahtar E; metin (9/2-c: 'ilgili kolluk birimi tarafından … rapor hazırlanır') E; kör cevabım B (%35) — YANLIŞ, soru lehine kanıt. 'Asgari mesafe teknik iştir' diye izleme merkezine gittim; D (meslek elemanı, 9/2-a'nın raporu) ve E arasında da kararsızdım. Üç şık aynı karar uzayından ve inandırıcı; sağduyuyla yalnız C (aile mahkemesi) düşüyor. 'Polis sınavında cevap polis' varsayılanı beni E'ye götürmedi; doğru şık en sonda ve en yalın adla duruyor, kökte yankısı yok. Komisyon (A) iki okuma doğurmuyor: 9/3'te Komisyonun hazırladığı nihai değerlendirme raporudur, asgari mesafe raporu ona eklenir; polis irtibat görevlisi ve uygulama ekibi şıklarda yok (iç içe merci yok). Değer: bu, yönetmelikte sahadaki kolluk biriminin yaptığı tek hukuki değerlendirme; amir adayının bilmesi gereken kendi görevi. Yönetmelik PAEM'de hiç sorulmadığı için 5 değil 4. Şıklar kısa (1–4 sözcük), resmî merci sorusu görünümünde.",
+    "oneri": "Değişiklik şart değil. İsteğe bağlı rötuş: kökte 'değerlendiril-' üç kez geçiyor; 'vakanın teknik yöntemlerle takibe uygunluğu incelenirken asgari mesafeye ilişkin değerlendirmeyi içeren raporu aşağıdakilerden hangisi hazırlar?' daha akıcı. Etken çatı ('hangisi hazırlar') resmî kalıba da daha yakın."
+  },
+  {
+    "id": "teknik-takip-p1-03",
+    "karar": "REVIZYON",
+    "korCevap": "C",
+    "metinCevap": "C",
+    "sinavDegeri": 3,
+    "ayirtEdicilik": 3,
+    "dogallik": 4,
+    "zorluk": "medium",
+    "gerekce": "Anahtar C; metin (20/2) C, öbür dördü yanlış (12/2 teslimle başlar; 15/3 ŞÖNİM sunar; 9/4 Komisyon ön şart değil; 12/1 tek başına uygulanamaz) — tek cevap. Kör cevabım C (%55), madde bilgisi olmadan: E'yi sağduyuyla, A'yı 'cihaz takılmadan izleme başlamaz' mantığıyla, D'yi 'gerekir şartı şüpheli' diye eledim; C 'zararsız bilgilendirme cümlesi doğrudur' kestirmesiyle kaldı. Yani doğru şık, takımın sezgiye en az direnen önermesi. Ters ayırt etme eğilimi de var: Kanun md 12'deki kayıt yasağını bilen eksik aday C'yi yanlış sanıp A ya da D'ye gider, hiç bilmeyen C'yi bulur. Çeldiriciler iyi (A, B, D gerçek komşu değer; D sezgiye aykırı yanlış), kusur doğru önermenin seçiminde. Ayrıca 20/2'nin kendisi (kayıt bildiriminin zamanı) izleme merkezinin iç işleyişine yakın; değer 3. Üretici etiketi hard; kör çözümde eleme ile bulunduğu için gerçek zorluk medium. 'Doğrudur' kökü üç partide tek, sınır içinde.",
+    "oneri": "Doğru önerme sezgiye aykırı olan 9/4'e taşınsın, 20/2 Kanunu bilen eksik adayı çeken yanlış önermeye çevrilsin. Takım: A) aynen (tebliğle başlar; yanlış). B) aynen (izleme merkezi sunar; yanlış). C) 'İzleme merkezinin yükümlü ve şiddet mağduruyla yaptığı ihlal ve uyarı görüşmeleri kayıt altına alınamaz.' (yanlış; 20/2). D) 'Komisyon değerlendirmesinden geçmeden mahkemeye ulaşan vakada Komisyon, hâkimin talep etmesi hâlinde değerlendirme yapar.' (doğru; 9/4). E) aynen (sağduyuyla elenen tek şık). Kök aynen. Kestirme sayımım — kesişim: yok; ikiz: yok (B ve D 'Komisyon değerlendirmesi' sözünü paylaşıyor ama farklı işlem); iki uç + orta: yok ('Komisyon şarttır' / 'hiç yapılmaz' uçları şıklarda bulunmuyor, eski D kalktığı için eksen kurulmuyor); en ayrıntılı şık: D en uzun olur ama B'ye yakın (B ~115, D ~125 krkt) — D biraz kısaltılabilir ('…vakada Komisyon, hâkim talep ederse değerlendirme yapar'); mutlak ifade: yalnız C'de ve yanlış (elenirse zararsız); kök yankısı: yok; açık risk: 'mahkemedeki işte hâkim ister' varsayılanı D'yi destekleyebilir (analistin #4 için yazdığı risk) — önerme sorusunda merci takımı olmadığından zayıf, ama taze kör çözücüyle sınanmalı. Parti içi: yeni D, 02'nin cevabını vermez; 01 düşerse çakışma kalmaz. Bu takım da salt şıkla ≥%55 bulunuyorsa yuva bırakılsın."
+  }
+]

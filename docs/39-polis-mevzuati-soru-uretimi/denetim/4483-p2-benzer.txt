@@ -1,0 +1,80 @@
+# 4483-p2 — bankadaki en benzer sorular (bütün banka, 7736 soru; eşik 0.15, aday başına 5)
+# skor = aday kök+doğru şık sözcüklerinin (IDF ağırlıklı) ne kadarının o soruda geçtiği. Yüksek skor mükerrer DEMEK DEĞİLDİR; karar gözcünündür.
+
+## 4483-p2-01
+ADAY: 4483 sayılı Kanun'a göre, Cumhurbaşkanı kararıyla atanan ve bir bakanlığın il teşkilatında görev yapan kamu görevlisi hakkında soruşturma izni vermeye yetkili merci aşağıdakilerden hangisidir?
+ADAY DOĞRU: Vali
+  — skor 0.61 | Polis Mevzuatı / 4483 Sayılı Memurların Yargılanması Hakkında Kanun | published | id d4c472f3-ed9e-4b7c-8db7-b4cc6088b2ca
+    4483 sayılı Memurlar Ve Diğer Kamu Görevlilerinin Yargılanması Hakkında Kanun hükümlerine göre bölge düzeyinde teşkilatlanan kurum ve kuruluşlarda görev yapan memurlar ve diğer kamu görevlileri hakkında soruşturma izni vermeye yetkili makam aşağıdakilerden hangisidir?
+    A) Görev yaptıkları ilin valisi  ✔
+    B) Bağlı oldukları Bakanlık
+    C) Bağlı oldukları il müdürleri
+    D) İçişleri Bakanlığı
+    E) Kaymakam
+  — skor 0.55 | Polis Mevzuatı / 4483 Sayılı Memurların Yargılanması Hakkında Kanun | published | id 809ed895-3ecd-47a6-91e2-5622f7846f5c
+    4483 sayılı Kanuna göre aşağıda verilen "hakkında soruşturma yapılacak memur veya diğer kamu görevlisi - soruşturma izni vermeye yetkili merci" eşleştirmelerinden hangisi doğru değildir?
+    A) İlçede görevli memur - kaymakam
+    B) TBMM'de görevli memurlar - TBMM Genel Sekreteri
+    C) İl belediye başkanları - İçişleri bakanı
+    D) Cumhurbaşkanlığında görevli memurlar - Cumhurbaşkanı  ✔
+    E) Bölge düzeyinde teşkilatlanan kurumlarda görev yapan memurlar - Görev yaptıkları ilin valisi
+  — skor 0.52 | Polis Mevzuatı / 4483 Sayılı Memurların Yargılanması Hakkında Kanun | published | id 6d1fad30-342b-4350-aaf8-0204593afa75
+    Cumhurbaşkanlığına bağlı, ilgili veya ilişkili kuruluşlarda görev yapan memurlar ve diğer kamu görevlileri hakkında aşağıdaki mercilerden hangisi soruşturma izni vermeye yetkilidir?
+    A) Görev yaptıkları ilin valisi
+    B) İlgili bakan
+    C) Cumhurbaşkanı
+    D) O kuruluşun en üst idari amiri  ✔
+    E) Cumhurbaşkanlığı İdari İşler Başkanı
+  — skor 0.51 | Polis Mevzuatı / 4483 Sayılı Memurların Yargılanması Hakkında Kanun | published | id dba207bd-6a59-48b8-9ef2-5e47efce9ef6
+    4483 sayılı Memurlar ve Diğer Kamu Görevlilerinin Yargılanması Hakkında Kanun’a göre, Türkiye Büyük Millet Meclisinde görevli memurlar ve diğer kamu görevlileri hakkında soruşturma izni vermeye yetkili merci aşağıdakilerden hangisidir?
+    A) Adalet Bakanı
+    B) Cumhurbaşkanı
+    C) Cumhurbaşkanlığı İdari İşler Başkanı
+    D) Türkiye Büyük Millet Meclisi Başkanı
+    E) Türkiye Büyük Millet Meclisi Genel Sekreteri  ✔
+  — skor 0.51 | Polis Mevzuatı / 4483 Sayılı Memurların Yargılanması Hakkında Kanun | published | id 20ee8c6c-662e-4cdf-95f1-608618a185e2
+    4483 sayılı Memurlar ve Diğer Kamu Görevlilerinin Yargılanması Hakkında Kanun’a göre, il genel meclisi üyeleri hakkında soruşturma izni vermeye yetkili merci aşağıdakilerden hangisidir?
+    A) İl genel meclisi başkanı
+    B) İl özel idaresi genel sekreteri
+    C) İçişleri Bakanı  ✔
+    D) Vali yardımcısı
+    E) Vali
+
+## 4483-p2-02
+ADAY: Hakkında soruşturma izni verilen bir memur, kendisine tebliğ edilen bu karara süresi içinde itiraz etmiştir. 4483 sayılı Kanun'a göre dosya, yetkili ve görevli Cumhuriyet başsavcılığına ne zaman gönderilir?
+ADAY DOĞRU: İtirazın reddedilmesi üzerine
+  — skor 0.48 | Polis Mevzuatı / 4483 Sayılı Memurların Yargılanması Hakkında Kanun | published | id b7145577-f353-483b-9a20-c666f2f2702c
+    4483 sayılı Memurlar ve Diğer Kamu Görevlilerinin Yargılanması Hakkında Kanun’a göre, soruşturma izni verilmesine ilişkin karara karşı hakkında inceleme yapılan memur veya diğer kamu görevlisi, yetkili merciin kararının kendisine tebliğinden itibaren en fazla ne kadar süre içerisinde itiraz edebilir?
+    A) Beş gün
+    B) Bir hafta
+    C) On gün  ✔
+    D) Bir ay
+    E) Altmış gün
+  — skor 0.36 | Polis Mevzuatı / 4483 Sayılı Memurların Yargılanması Hakkında Kanun | published | id 59c22b05-d1fb-4c34-ab64-bb58d8abd97b
+    4483 sayılı Memurlar ve Diğer Kamu Görevlilerinin Yargılanması Hakkında Kanun’a göre, soruşturma izni verilmesi veya verilmemesi kararına karşı itiraz, yetkili merciin kararının tebliğinden itibaren en geç kaç gün içinde yapılmalıdır?
+    A) 7
+    B) 10  ✔
+    C) 15
+    D) 30
+    E) 60
+  — skor 0.34 | Polis Mevzuatı / 4483 Sayılı Memurların Yargılanması Hakkında Kanun | published | id 809ed895-3ecd-47a6-91e2-5622f7846f5c
+    4483 sayılı Kanuna göre aşağıda verilen "hakkında soruşturma yapılacak memur veya diğer kamu görevlisi - soruşturma izni vermeye yetkili merci" eşleştirmelerinden hangisi doğru değildir?
+    A) İlçede görevli memur - kaymakam
+    B) TBMM'de görevli memurlar - TBMM Genel Sekreteri
+    C) İl belediye başkanları - İçişleri bakanı
+    D) Cumhurbaşkanlığında görevli memurlar - Cumhurbaşkanı  ✔
+    E) Bölge düzeyinde teşkilatlanan kurumlarda görev yapan memurlar - Görev yaptıkları ilin valisi
+  — skor 0.32 | İdare Hukuku / İdare Hukuku | published | id f1ef8d7c-2fa0-443d-be0d-15ebb7ea49d7
+    4483 sayılı Memurlar ve Diğer Kamu Görevlilerinin Yargılanması Hakkında Kanun'a göre Cumhuriyet başsavcısı, memurların bu Kanun kapsamındaki suçlarına dair bir şikâyet aldığında; I. İvedilikle toplanması gerekli ve kaybolma ihtimali bulunan delillerin tespiti, II. Şikâyette bulunulan memurların ifadelerine başvurulması, III. Tanık beyanlarının alınması işlemlerinden hangilerini yaparak evrakın bir
+    A) Yalnız I  ✔
+    B) I ve II
+    C) I ve III
+    D) II ve III
+    E) I, II ve III
+  — skor 0.31 | Polis Mevzuatı / 4483 Sayılı Memurların Yargılanması Hakkında Kanun | published | id 5d2d856f-a972-44e3-8622-bf00d1c53136
+    4483 sayılı Memurlar ve Diğer Kamu Görevlilerinin Yargılanması Hakkında Kanun’a göre, Ankara iline bağlı bir ilçede bulunan devlet hastanesinde görevli bir doktor hakkında yetkili makam tarafından verilen soruşturma izni kararına karşı yapılacak itirazı incelemekle görevli ve yetkili merci aşağıdakilerden hangisidir?
+    A) Danıştay
+    B) Ankara Bölge İdare Mahkemesi  ✔
+    C) Ankara İdare Mahkemesi
+    D) Yargıtay
+    E) Ankara Ağır Ceza Mahkemesi

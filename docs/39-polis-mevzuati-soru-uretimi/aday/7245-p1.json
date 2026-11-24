@@ -1,0 +1,104 @@
+[
+  {
+    "id": "7245-p1-01",
+    "articleNo": "7",
+    "kok": "I. Sürücüyü el ile dıştan kontrol etmek\nII. Sürücüden torpido gözünü açmasını istemek\nIII. Kolluk amirinin yazılı emriyle aracı aramak\n7245 sayılı Kanun'a göre, durdurduğu aracın sürücüsünün üzerinde ya da araçta silah bulunduğuna dair yeterli şüpheye ulaşan çarşı ve mahalle bekçisi yukarıdakilerden hangilerini yapabilir?",
+    "siklar": {
+      "A": "Yalnız I",
+      "B": "Yalnız II",
+      "C": "I ve II",
+      "D": "I ve III",
+      "E": "II ve III"
+    },
+    "dogru": "A",
+    "aciklama": "Yeterli şüphe hâlinde bekçinin yapabileceği kontrol 7 nci maddenin altıncı fıkrasında sınırlanmıştır. Bekçi '… kişiler üzerinde YOKLAMA SURETİYLE EL İLE DIŞTAN KONTROL yapabilir. Araçlarda ise aracın dışarıdan bakıldığında İÇERİSİ GÖRÜNEN BÖLÜMLERİNİ kontrol edebilir. Bu amaçla ÜST VE ARAÇ ARAMASI YAPILAMAZ, … aracın, dışarıdan bakıldığında içerisi görünmeyen bölümlerinin AÇILMASI İSTENEMEZ.' Şüphe sürücünün üzerine ya da araca yöneldiğinden I yapılabilir. II yapılamaz: torpido gözü, aracın dışarıdan bakıldığında içerisi görünmeyen bölümüdür ve fıkra bu bölümün açılmasını istemeyi yasaklar. Sürücüden yalnız bir şey istemek elle yoklamaktan hafif görünür; fıkra ise ölçüyü işlemin ağırlığına değil, bölümün dışarıdan görünüp görünmediğine bağlar. III de yapılamaz: fıkra araç aramasını yasaklar ve bu yasağı kaldıran bir emir ya da izin öngörmez. Yazılı emrin bu yasağı kaldırdığını düşünen aday 'I ve III'ü, işlemin hafifliğine bakan aday ise II'yi içeren bir şıkkı seçer.",
+    "dayanak": "7245 sayılı Kanun md 7/6",
+    "zorluk": "hard",
+    "tur": "onerme"
+  },
+  {
+    "id": "7245-p1-02",
+    "articleNo": "7",
+    "kok": "7245 sayılı Kanun'a göre, çarşı ve mahalle bekçisinin kişileri ve araçları durdurma yetkisine getirilen kayıt aşağıdakilerden hangisidir?",
+    "siklar": {
+      "A": "Görevli olduğu mülki sınırlar",
+      "B": "Görev bölgesi ve gece vakti",
+      "C": "Mülki sınırlar ve çalışma saatleri",
+      "D": "Görev bölgesi ve çalışma saatleri",
+      "E": "Bağlı olduğu genel kolluk biriminin bölgesi"
+    },
+    "dogru": "D",
+    "aciklama": "Durdurma yetkisi 7 nci maddenin birinci fıkrasında bir kayıtla tanınmıştır: 'Çarşı ve mahalle bekçileri, GÖREV BÖLGESİ VE ÇALIŞMA SAATLERİ İLE SINIRLI OLMAK KAYDIYLA kişileri ve araçları; ... amacıyla durdurabilir.' Kayıt yer ve zaman olmak üzere iki unsurludur ve bekçiye özgüdür: PVSK 4/A'da polisin durdurma yetkisine böyle bir yer ve zaman kaydı konulmamıştır. 'Görevli oldukları mülki sınırlar' ibaresi Kanunda halka yardım görevini düzenleyen 5 inci maddededir; durdurmanın yer kaydı mülki sınır değil GÖREV BÖLGESİDİR (A, C). 'Gece vakti' Adli ve Önleme Aramaları Yönetmeliği'nin md 4'teki tanımıdır: güneşin 'batmasından bir saat sonra başlayan ve doğmasından bir saat evvele kadar devam eden' süre. Kanun durdurmayı gece vaktine değil ÇALIŞMA SAATLERİNE bağlar (B). Günlük çalışma saatleri 12 nci maddeye göre 'esas olarak güneşin batış saatinden doğuş saatine kadar olan zaman dilimini kapsayacak şekilde düzenlenir'; aynı madde, sayılan zorunluluk hâllerinde bu dilimin dışında çalıştırmaya da imkân verir. Zaman kaydı bu yüzden belirli bir saat aralığı değil, bekçinin çalışma saatleridir. 'Bağlı bulundukları genel kolluk birimleri' ibaresi ise Kanunda örneğin şüpheli durum ve kişilerin bildirileceği birimi gösterir; bir yer sınırı değildir (E).",
+    "dayanak": "7245 sayılı Kanun md 7/1 (karş. md 5, md 6/1-c, md 12/2; Adli ve Önleme Aramaları Yönetmeliği md 4)",
+    "zorluk": "medium",
+    "tur": "dogrudan"
+  },
+  {
+    "id": "7245-p1-03",
+    "articleNo": "8",
+    "kok": "Devriyedeki bir çarşı ve mahalle bekçisi, iki yıl önce işlenen bir suç nedeniyle hakkında tutuklama kararı bulunduğunu bildiği bir kişiyi görmüştür. 7245 sayılı Kanun'a göre bekçinin bu kişi hakkındaki görevi aşağıdakilerden hangisidir?",
+    "siklar": {
+      "A": "İzler kaybolduğundan durumu genel kolluğa bildirmek",
+      "B": "Kimliğini tespit etmekle yetinmek",
+      "C": "Yakalayıp genel kolluğa teslim etmek",
+      "D": "Yakalayıp Cumhuriyet savcısına götürmek",
+      "E": "Genel kolluk gelinceye kadar izlemek"
+    },
+    "dogru": "C",
+    "aciklama": "Bekçinin yakalama görevi 8 inci maddede iki ayrı dayanağa bağlanmıştır. Birinci fıkradaki yakalama, 'suç işlenirken veya işlendikten sonra, HENÜZ İZLERİ MEYDANDA İKEN' şüphelilere ilişkindir. İkinci fıkra böyle bir zaman şartı taşımaz: 'Çarşı ve mahalle bekçileri haklarında TUTUKLAMA VEYA YAKALAMA KARARI çıkarılmış kimseleri gördükleri takdirde YAKALAMAK ve bağlı bulunduğu genel kolluk kuvvetlerine TESLİM ETMEK ile görevli ve yetkilidir.' Olaydaki kişi hakkında tutuklama kararı bulunduğundan görev ikinci fıkradan doğar; suçun iki yıl önce işlenmiş olması bu görevi ortadan kaldırmaz. A, birinci fıkranın 'izleri meydanda' şartını karara dayanan yakalamaya taşır. B ve E, bekçinin görevini tespit ve gözetimle sınırlar. Durdurma yetkisinin amaçları arasında hakkında yakalama emri verilmiş kişileri 'tespit etmek' de sayılır; ama ikinci fıkra, kararı bulunan kişiyi gören bekçiye tespiti değil, yakalamayı ve teslimi görev olarak verir. D, PVSK'daki rejimi bekçiye taşır: PVSK 13'e göre polisin yakaladığı kişilerden 'suç işlediği şüphesi altında olanlar adlî mercilere sevk edilir'. Bekçi için ise teslimin muhatabı Kanunda bağlı bulunduğu genel kolluk kuvvetleridir.",
+    "dayanak": "7245 sayılı Kanun md 8/2 (karş. md 8/1, md 7/1-c; 2559 sayılı PVSK md 13)",
+    "zorluk": "hard",
+    "tur": "vaka"
+  },
+  {
+    "id": "7245-p1-04",
+    "articleNo": "12",
+    "kok": "7245 sayılı Kanun'a göre, çarşı ve mahalle bekçilerinin haftalık çalışma süresinin artırılmasında ve güneşin batışından doğuşuna kadar olan zaman dilimi dışında çalıştırılmalarında onay makamı sırasıyla aşağıdakilerden hangisidir?",
+    "siklar": {
+      "A": "İçişleri Bakanı – Vali",
+      "B": "İçişleri Bakanı – İçişleri Bakanı",
+      "C": "Kaymakam – Vali",
+      "D": "Vali – Kaymakam",
+      "E": "Vali – İçişleri Bakanı"
+    },
+    "dogru": "E",
+    "aciklama": "Çalışma rejiminde iki ayrı onay vardır. Süre artırımı 12 nci maddenin birinci fıkrasındadır: 'Personel yetersizliği, görev yoğunluğu ve benzeri durumlarda emniyet ve asayişin gerektirdiği hâllerin ortaya çıkması hâlinde VALİNİN ONAYI ile haftalık kırk saatlik çalışma süresi en fazla elli altı saate kadar artırılabilir.' Zaman dilimi ikinci fıkradadır: günlük çalışma saatleri 'esas olarak güneşin batış saatinden doğuş saatine kadar olan zaman dilimini kapsayacak şekilde düzenlenir.' Bu dilimin dışında çalıştırma üçüncü fıkradadır: 'Çarşı ve mahalle bekçileri olağanüstü hâl, terör, toplumsal olaylar, doğal afet, salgın hastalık, mevsim koşulları ve benzeri durumlarda güvenlik veya kamu düzeni ile görevi etkileyen zorunluluk hâllerinin ortaya çıkması hâlinde İÇİŞLERİ BAKANININ ONAYI ile ikinci fıkrada belirtilen zaman dilimi dışında çalıştırılabilir.' Sıra VALİ – İÇİŞLERİ BAKANI'dır. A iki makamın yerini değiştirir. B, Kanunda atamada, ilişik kesmede ve dilim dışında çalıştırmada onay makamı olan İçişleri Bakanını süre artırımına da yerleştirir. C süre artırımını, D ise dilim dışında çalıştırmayı kaymakama verir; kaymakam Kanunda çalışma rejimine ilişkin bir onay mercii olarak geçmez. Birinci fıkraya göre durumların ortadan kalkmasıyla fazla çalışılan süre istirahat süresine eklenir.",
+    "dayanak": "7245 sayılı Kanun md 12/1, 12/3 (karş. md 12/2, md 4/1, md 4/3)",
+    "zorluk": "medium",
+    "tur": "dogrudan"
+  },
+  {
+    "id": "7245-p1-05",
+    "articleNo": "2",
+    "kok": "7245 sayılı Kanun'a göre, Emniyet Genel Müdürlüğü bünyesinde istihdam edilen çarşı ve mahalle bekçilerinin rütbece üstü sayılmasının ölçütü aşağıdakilerden hangisidir?",
+    "siklar": {
+      "A": "Kadro ve kuruluş yönünden bağlılık",
+      "B": "Polis memuru ve üstü rütbede bulunma",
+      "C": "Başpolis memuru ve üstü rütbede bulunma",
+      "D": "Komiser yardımcısı ve üstü rütbede bulunma",
+      "E": "Polis memuru ve üstü rütbede bulunup amir olarak yetkilendirilmiş olma"
+    },
+    "dogru": "B",
+    "aciklama": "Rütbece üstü ile amir, 2 nci maddenin ikinci fıkrasında ayrı ölçütlerle tanımlanmıştır: 'POLİS MEMURU VE ÜSTÜ RÜTBELERDE bulunan personel, Emniyet Genel Müdürlüğü bünyesinde istihdam edilen çarşı ve mahalle bekçilerinin RÜTBECE ÜSTÜ, kadro ve kuruluş yönünden bağlı oldukları ve amir olarak yetkilendirilmiş olan diğer personel ise çarşı ve mahalle bekçilerinin AMİRİDİR.' Rütbece üstülüğün eşiği polis memurudur. C ve D eşiği yükseltir, polis memurunu dışarıda bırakır. A ve E, fıkranın AMİR için saydığı unsurları (kadro ve kuruluş yönünden bağlılık; amir olarak yetkilendirme) rütbece üstülüğe taşır; fıkra rütbece üstülüğe bu unsurları bağlamaz. Jandarma Genel Komutanlığı bünyesindeki bekçiler için aynı ayrım üçüncü fıkrada kurulmuştur; orada rütbece üstü olanlar 'Subay, astsubay ve uzman jandarma çavuşlar'dır.",
+    "dayanak": "7245 sayılı Kanun md 2/2 (karş. md 2/3)",
+    "zorluk": "medium",
+    "tur": "kavram"
+  },
+  {
+    "id": "7245-p1-06",
+    "articleNo": "11",
+    "kok": "7245 sayılı Kanun'a göre, emniyet ve jandarma teşkilatlarında istihdam edilen çarşı ve mahalle bekçileriyle ilgili aşağıdakilerden hangisi YANLIŞTIR?",
+    "siklar": {
+      "A": "Aday memur olarak atanmalarında sağlık kurulu raporu aranır.",
+      "B": "PVSK'daki zor ve silah kullanma yetkisine sahiptirler.",
+      "C": "Mevzuatla genel kolluğa verilen görevlerde ona yardımcı olurlar.",
+      "D": "Olağanüstü hâllerde kolluk hizmeti dışında da çalıştırılabilirler.",
+      "E": "Disiplin işlemlerinde istihdam edildikleri kolluğun hizmet sınıfı hükümleri uygulanır."
+    },
+    "dogru": "D",
+    "aciklama": "Başka görevde çalıştırma yasağı 11 inci maddededir: 'Çarşı ve mahalle bekçileri kolluk hizmet ve görevleri dışında HER NE SURETLE OLURSA OLSUN ÇALIŞTIRILAMAZLAR.' Madde olağanüstü hâl dahil hiçbir durum için ayrık hâl öngörmez. D bu yüzden yanlıştır. Öteki ifadeler Kanundadır: sağlık kurulu raporu atamayı düzenleyen 4 üncü maddede (A), PVSK'nın 16 ncı maddesine yollayan zor ve silah kullanma yetkisi 9 uncu maddede (B), genel kolluğa yardım görevi 10 uncu maddede (C), disiplinde 'emniyet ya da jandarma hizmetleri sınıfı mensuplarına uygulanan hükümler'in uygulanması 13 üncü maddede (E) yer alır.",
+    "dayanak": "7245 sayılı Kanun md 11 (karş. md 4/1, md 9, md 10, md 13)",
+    "zorluk": "easy",
+    "tur": "onerme"
+  }
+]

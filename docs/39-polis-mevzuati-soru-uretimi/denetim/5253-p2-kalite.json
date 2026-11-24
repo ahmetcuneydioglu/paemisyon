@@ -1,0 +1,16 @@
+[
+  {
+    "id": "5253-p2-01",
+    "karar": "ONAY",
+    "sinavDegeri": 3,
+    "gerekce": "TUR 2: Birinci turdaki itiraz (yanlış önerme 'çocuk + lokal' sağduyusuyla bulunuyordu) karşılandı: lokal hükmü doğru önermeye geçti, yanlış önerme 33/1'den kuruldu. Kestirme sayımı: olumsuz yüklemli üç şık (B, D, E), tek mutlak önerme yok; en uzun şık A (doğru önerme); yanlış önerme hiçbir doğru önermeyle çelişmiyor, doğru önermeler birbirini varsaymıyor (A üyelik, C kuruluş). İki sezgi çatışıyor: 'çocuğa ceza olmaz' E'yi doğru saydırır, 'bir kanun bir dernek türünü cezadan bütünüyle muaf tutmaz' E'yi yanlış saydırır; ikincisi gerçek bir kestirmedir ve madde bilgisi olmayan aday için E, sayı taşıyan A ile birlikte ilk iki şüpheliden biridir (tahminim salt şıkla %50 dolayı; ölçüsü kör çözümdür). Banka teması sürüyor: bankadaki 3/4 sorusunun kökü C'yi doğruluyor (bir şık eler), A ve B o sorunun 'On iki' ve 'On sekiz' çeldiricilerini zayıflatır; C'den yaş çıkarıldığı için o sorunun cevabı verilmiyor. Aynı denemeye konmaz. Kurgu şık yok (beşi de metin). Değer: dürüst tartı 3, alt sınırda. Lehine: İçişleri GYS bu alanı sormuş (kurma yaşı), soru beş ayrı hükmü (3/4, 3/5, 3/6, 26/A/1, 33/1) birlikte ölçüyor, 26/A 2024 metni ve bankada ölçülmemiş. Aleyhine: kolluğa dolaylı dokunur, PAEM 8–10'da 5253 yok. 'Kurum içi işleyiş' değil, derneklerin maddi rejimi; 2'ye düşürmüyorum. Zorluk 'medium' yerinde.",
+    "oneri": "Test derleme: bankadaki kurma yaşı sorusuyla aynı denemeye konmaz."
+  },
+  {
+    "id": "5253-p2-02",
+    "karar": "ONAY",
+    "sinavDegeri": 3,
+    "gerekce": "TUR 2: Birinci turdaki rötuş önerisi uygulandı (C 'Derneğe'); kök–şık yankısı azaldı, 'dernek' sözcüğü artık iki şıkta (C ve E) geçiyor. Yeni kusur: doğru şık takımın en kısa şıkkı (tek sözcük; öbürleri 2–4). 'En kısa şık' tek başına güvenilir bir kestirme değil ve sağduyu ('suç tespiti soruşturulana haber verilmez') adayı C'den uzaklaştırıyor; kestirmeler çatışıyor, kabul edilebilir. Birinci turdaki çekinceler aynen duruyor: D ve E zayıf (soru fiilen üç şıklı: A, B, C), hüküm 'ikinci muhatap kim' düzeyinde. Mükerrer ve sızıntı yok: 19/7'nin 'derneğe' yarısı bankada ve önceki açıklamalarda geçmiyor; kök savcılığı verdiği için 5253-p1-07 ile aynı denemeye konmaz. Değer: 3'ü yeniden tarttım. Bankaya girmese büyük kayıp olmaz; ama doğru cevap sezgiye aykırı, polis adayının iki varsayılanı (genel kolluk, İçişleri Bakanlığı) yanlış şıkta ve analiz raporunun işaretli yuvası. 3'te tutuyorum, üstüne çıkmaz. Zorluk 'hard' savunulabilir (cevap sezgiye aykırı).",
+    "oneri": "Test derleme: 5253-p1-07 ile aynı denemeye konmaz."
+  }
+]

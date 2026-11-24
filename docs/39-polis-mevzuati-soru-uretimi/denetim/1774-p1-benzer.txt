@@ -1,0 +1,210 @@
+# 1774-p1 — bankadaki en benzer sorular (bütün banka, 7997 soru; eşik 0.15, aday başına 5)
+# skor = aday kök+doğru şık sözcüklerinin (IDF ağırlıklı) ne kadarının o soruda geçtiği. Yüksek skor mükerrer DEMEK DEĞİLDİR; karar gözcünündür.
+
+## 1774-p1-01
+ADAY: 1774 sayılı Kanun'a göre, bir otelde kolluk örgütüne bildirilerek çalıştırılan kişiye verilecek kimlik kartı aşağıdakilerden hangisi tarafından doldurulup onaylanır?
+ADAY DOĞRU: Sorumlu işletici
+  — skor 0.42 | Polis Mevzuatı / 1774 Sayılı Kimlik Bildirme Kanunu | published | id 91325b37-ec40-48ba-bff5-93217d4afc4a
+    1774 sayılı Kimlik Bildirme Kanunu hükümlerine göre Öğrenci yurtları ve benzeri yerlerde çalışanlar ile bu yerlerde kalmakta olan öğrenciler için kimlik bildirimleri, mahalli kolluk örgütüne verilmeden evvel aşağıdakilerden hangisine onaylatılır?
+    A) Kolluk amiri
+    B) Cumhuriyet Savcisı
+    C) Mülki Amir
+    D) Köy veya Mahalle Muhtarı  ✔
+    E) Tesisten sorumlu işletici
+  — skor 0.35 | Polis Mevzuatı / 1774 Sayılı Kimlik Bildirme Kanunu | published | id a9edc0ef-2cde-40b3-921b-66046bfc77a0
+    1774 sayılı Kimlik Bildirme Kanunu uygulamasında, bir otelin sorumlu işletici değişikliğinin kolluğa bildirilmesiyle ilgili aşağıdakilerden hangisi doğrudur?
+    A) Değişiklik 24 saat içinde kolluğa bildirilir; bildirilmemesi hâlinde mülkî amir tarafından idarî para cezası verilir  ✔
+    B) Değişiklik 3 gün içinde bildirilir; bildirilmemesi hâlinde kolluk tarafından ceza verilir
+    C) Değişiklik 7 gün içinde bildirilir; bildirilmemesi hâlinde vali tarafından ceza verilir
+    D) Değişiklik bir ay içinde bildirilir; bildirilmemesi hâlinde tesis derhal kapatılır
+    E) Bildirim yükümlülüğü yalnızca tesisin ilk açılışında geçerlidir; değişiklikte bildirim gerekmez
+  — skor 0.34 | Polis Mevzuatı / 1774 Sayılı Kimlik Bildirme Kanunu | published | id 225a0d67-954e-486b-9715-47787b0fcfd0
+    1774 sayılı Kimlik Bildirme Kanunu’na göre, geçici yer değiştirmelerde yaylak ve kışlak gibi yerlere mevsimlik olarak göçenler için aile reisi tarafından, örneğine uygun bildirim kaç gün içinde kolluk örgütüne verilir?
+    A) Üç  ✔
+    B) Beş
+    C) Yedi
+    D) On
+  — skor 0.29 | Polis Mevzuatı / 1774 Sayılı Kimlik Bildirme Kanunu | published | id bc821785-07a4-4c9a-a185-9af3410b154d
+    1774 sayılı Kimlik Bildirme Kanunu uygulamasına göre; I. Konaklama tesisi dışındaki işyerlerinde çalışanların kimlik bildirimi 3 gün içinde yapılır. II. Aile reisleri, konutlarında 30 günden fazla kalan misafirleri 3 gün içinde kolluğa bildirir. III. Kimliğini resmî belgeyle ispat edemeyen kimseleri konut ve işyerinde barındırmak veya çalıştırmak yasaktır. IV. İzinsiz sabahçı kahvesi işletmek bu K
+    A) Yalnız I ve II
+    B) Yalnız I, II ve III
+    C) Yalnız II ve IV
+    D) I, II, III ve IV  ✔
+    E) Yalnız III ve IV
+  — skor 0.27 | Polis Mevzuatı / 1774 Sayılı Kimlik Bildirme Kanunu | published | id 244a9c7b-a980-41e5-8203-63fa0e42c95f
+    Bir otel, kayıtlarını genel kolluk kuvvetlerinin bilgisayar terminallerine bağlama yükümlülüğünü yerine getirmemiş ve aynı takvim yılı içinde bu fiili tekrar işlemiştir. 1774 sayılı Kimlik Bildirme Kanunu uygulamasına göre aşağıdakilerden hangisi doğrudur?
+    A) Tekrarda en son kesilen para cezasının iki katı uygulanır; fiilin aynı takvim yılında dördüncü defa işlenmesi hâlinde ruhsat iptali gündeme gelir  ✔
+    B) Tekrarda ceza yarı oranında artırılır; ruhsat iptali mümkün değildir
+    C) Tekrar hâlinde ceza değişmez; yalnızca uyarı yapılır
+    D) İlk fiilde doğrudan ruhsat iptal edilir
+    E) Tekrarda ceza üç katına çıkarılır ve işletici hakkında adlî soruşturma açılır
+
+## 1774-p1-02
+ADAY: 1774 sayılı Kanun'a göre, bir otelin sorumlu işleticisinin kimliğini otel açılmadan önce en yakın kolluk örgütüne bildirmekle yükümlü olan aşağıdakilerden hangisidir?
+ADAY DOĞRU: Sahibi veya kanuni temsilcisi
+  — skor 0.33 | Polis Mevzuatı / 1774 Sayılı Kimlik Bildirme Kanunu | published | id a9edc0ef-2cde-40b3-921b-66046bfc77a0
+    1774 sayılı Kimlik Bildirme Kanunu uygulamasında, bir otelin sorumlu işletici değişikliğinin kolluğa bildirilmesiyle ilgili aşağıdakilerden hangisi doğrudur?
+    A) Değişiklik 24 saat içinde kolluğa bildirilir; bildirilmemesi hâlinde mülkî amir tarafından idarî para cezası verilir  ✔
+    B) Değişiklik 3 gün içinde bildirilir; bildirilmemesi hâlinde kolluk tarafından ceza verilir
+    C) Değişiklik 7 gün içinde bildirilir; bildirilmemesi hâlinde vali tarafından ceza verilir
+    D) Değişiklik bir ay içinde bildirilir; bildirilmemesi hâlinde tesis derhal kapatılır
+    E) Bildirim yükümlülüğü yalnızca tesisin ilk açılışında geçerlidir; değişiklikte bildirim gerekmez
+  — skor 0.31 | Polis Mevzuatı / 1774 Sayılı Kimlik Bildirme Kanunu | published | id 244a9c7b-a980-41e5-8203-63fa0e42c95f
+    Bir otel, kayıtlarını genel kolluk kuvvetlerinin bilgisayar terminallerine bağlama yükümlülüğünü yerine getirmemiş ve aynı takvim yılı içinde bu fiili tekrar işlemiştir. 1774 sayılı Kimlik Bildirme Kanunu uygulamasına göre aşağıdakilerden hangisi doğrudur?
+    A) Tekrarda en son kesilen para cezasının iki katı uygulanır; fiilin aynı takvim yılında dördüncü defa işlenmesi hâlinde ruhsat iptali gündeme gelir  ✔
+    B) Tekrarda ceza yarı oranında artırılır; ruhsat iptali mümkün değildir
+    C) Tekrar hâlinde ceza değişmez; yalnızca uyarı yapılır
+    D) İlk fiilde doğrudan ruhsat iptal edilir
+    E) Tekrarda ceza üç katına çıkarılır ve işletici hakkında adlî soruşturma açılır
+  — skor 0.23 | Polis Mevzuatı / 1774 Sayılı Kimlik Bildirme Kanunu | published | id 225a0d67-954e-486b-9715-47787b0fcfd0
+    1774 sayılı Kimlik Bildirme Kanunu’na göre, geçici yer değiştirmelerde yaylak ve kışlak gibi yerlere mevsimlik olarak göçenler için aile reisi tarafından, örneğine uygun bildirim kaç gün içinde kolluk örgütüne verilir?
+    A) Üç  ✔
+    B) Beş
+    C) Yedi
+    D) On
+  — skor 0.23 | Polis Mevzuatı / 1774 Sayılı Kimlik Bildirme Kanunu | published | id 91325b37-ec40-48ba-bff5-93217d4afc4a
+    1774 sayılı Kimlik Bildirme Kanunu hükümlerine göre Öğrenci yurtları ve benzeri yerlerde çalışanlar ile bu yerlerde kalmakta olan öğrenciler için kimlik bildirimleri, mahalli kolluk örgütüne verilmeden evvel aşağıdakilerden hangisine onaylatılır?
+    A) Kolluk amiri
+    B) Cumhuriyet Savcisı
+    C) Mülki Amir
+    D) Köy veya Mahalle Muhtarı  ✔
+    E) Tesisten sorumlu işletici
+  — skor 0.23 | Ceza Muhakemesi Hukuku / 5271 Sayılı Ceza Muhakemesi Kanunu (CMK) | published | id a685d3dc-4423-452c-bf9d-7034784addce
+    5271 sayılı Ceza Muhakemesi Kanunu’na göre, bir örgütün faaliyeti çerçevesinde işlenen suçlarda “tanığa ilk önce sorulacak hususlar ve tanığın korunması” ile ilgili aşağıdakilerden hangisi yanlıştır?
+    A) Kimliğinin saklı tutulması için, tanığa ait kişisel bilgiler, kolluk kuvvetleri tarafından muhafaza edilir.  ✔
+    B) Tanık olarak dinlenecek kişilerin kimliklerinin ortaya çıkması kendileri veya yakınları açısından ağır bir tehlike oluşturacaksa; kimliklerinin saklı tutulması için gerekli önlemler alınır.
+    C) Tanıklık görevinin yapılmasından sonra, kişinin kimliğinin saklı tutulması veya güvenliğinin sağlanması hususunda alınacak önlemler, ilgili kanunda düzenlenir.
+    D) Hazır bulunanların huzurunda dinlenmesi, tanık için ağır bir tehlike teşkil edecek ve bu tehlike başka türlü önlenemeyecekse ya da maddi gerçeğin ortaya çıkarılması açısından tehlike oluşturacaksa; hâkim, hazır bulunma hakkına sahip bulunanlar olmadan da tanığı dinleyebilir.
+    E) Kimliği saklı tutulan tanık, tanıklık ettiği olayları hangi sebep ve vesile ile öğrenmiş olduğunu açıklamakla yükümlüdür.
+
+## 1774-p1-03
+ADAY: 1774 sayılı Kanun'a göre, bir lokantanın sorumlu işleticisinin çalıştırdığı kişiye ilişkin kimlik bildirimini genel kolluğa elektronik ortamda yapması hâlinde aşağıdakilerden hangisi doğrudur?
+ADAY DOĞRU: Genel kolluk tarafından muhtarla paylaşılır.
+  — skor 0.35 | Polis Mevzuatı / 1774 Sayılı Kimlik Bildirme Kanunu | published | id a9edc0ef-2cde-40b3-921b-66046bfc77a0
+    1774 sayılı Kimlik Bildirme Kanunu uygulamasında, bir otelin sorumlu işletici değişikliğinin kolluğa bildirilmesiyle ilgili aşağıdakilerden hangisi doğrudur?
+    A) Değişiklik 24 saat içinde kolluğa bildirilir; bildirilmemesi hâlinde mülkî amir tarafından idarî para cezası verilir  ✔
+    B) Değişiklik 3 gün içinde bildirilir; bildirilmemesi hâlinde kolluk tarafından ceza verilir
+    C) Değişiklik 7 gün içinde bildirilir; bildirilmemesi hâlinde vali tarafından ceza verilir
+    D) Değişiklik bir ay içinde bildirilir; bildirilmemesi hâlinde tesis derhal kapatılır
+    E) Bildirim yükümlülüğü yalnızca tesisin ilk açılışında geçerlidir; değişiklikte bildirim gerekmez
+  — skor 0.30 | Polis Mevzuatı / 1774 Sayılı Kimlik Bildirme Kanunu | published | id bc821785-07a4-4c9a-a185-9af3410b154d
+    1774 sayılı Kimlik Bildirme Kanunu uygulamasına göre; I. Konaklama tesisi dışındaki işyerlerinde çalışanların kimlik bildirimi 3 gün içinde yapılır. II. Aile reisleri, konutlarında 30 günden fazla kalan misafirleri 3 gün içinde kolluğa bildirir. III. Kimliğini resmî belgeyle ispat edemeyen kimseleri konut ve işyerinde barındırmak veya çalıştırmak yasaktır. IV. İzinsiz sabahçı kahvesi işletmek bu K
+    A) Yalnız I ve II
+    B) Yalnız I, II ve III
+    C) Yalnız II ve IV
+    D) I, II, III ve IV  ✔
+    E) Yalnız III ve IV
+  — skor 0.29 | Polis Mevzuatı / 1774 Sayılı Kimlik Bildirme Kanunu | published | id 91325b37-ec40-48ba-bff5-93217d4afc4a
+    1774 sayılı Kimlik Bildirme Kanunu hükümlerine göre Öğrenci yurtları ve benzeri yerlerde çalışanlar ile bu yerlerde kalmakta olan öğrenciler için kimlik bildirimleri, mahalli kolluk örgütüne verilmeden evvel aşağıdakilerden hangisine onaylatılır?
+    A) Kolluk amiri
+    B) Cumhuriyet Savcisı
+    C) Mülki Amir
+    D) Köy veya Mahalle Muhtarı  ✔
+    E) Tesisten sorumlu işletici
+  — skor 0.25 | Polis Mevzuatı / 1774 Sayılı Kimlik Bildirme Kanunu | published | id 244a9c7b-a980-41e5-8203-63fa0e42c95f
+    Bir otel, kayıtlarını genel kolluk kuvvetlerinin bilgisayar terminallerine bağlama yükümlülüğünü yerine getirmemiş ve aynı takvim yılı içinde bu fiili tekrar işlemiştir. 1774 sayılı Kimlik Bildirme Kanunu uygulamasına göre aşağıdakilerden hangisi doğrudur?
+    A) Tekrarda en son kesilen para cezasının iki katı uygulanır; fiilin aynı takvim yılında dördüncü defa işlenmesi hâlinde ruhsat iptali gündeme gelir  ✔
+    B) Tekrarda ceza yarı oranında artırılır; ruhsat iptali mümkün değildir
+    C) Tekrar hâlinde ceza değişmez; yalnızca uyarı yapılır
+    D) İlk fiilde doğrudan ruhsat iptal edilir
+    E) Tekrarda ceza üç katına çıkarılır ve işletici hakkında adlî soruşturma açılır
+  — skor 0.25 | Polis Mevzuatı / 1774 Sayılı Kimlik Bildirme Kanunu | published | id 8f277b5f-fd07-4cb3-8cb3-7be9d5fc25ed
+    1774 sayılı Kimlik Bildirme Kanunu’nun uygulanması sırasında genel kolluk kuvvetlerine ait karakollara, il merkezlerinden de sorgulanabilen bilgisayar terminalleri konulması için gerekli giderler aşağıdakilerden hangisinin bütçesine konulacak ödenekten karşılanır?
+    A) İçişleri Bakanlığı  ✔
+    B) Millî Savunma Bakanlığı
+    C) Ulaştırma ve Altyapı Bakanlığı
+    D) Çalışma ve Sosyal Güvenlik Bakanlığı
+
+## 1774-p1-04
+ADAY: 1774 sayılı Kanun'a göre, mevsimlik tarım işçisi olarak başka bir ilde çalışmak amacıyla geçici olarak yer değiştirenlerin kimlik bildirimlerinin yapılış biçimi aşağıdakilerden hangisidir?
+ADAY DOĞRU: Kolluk kuvvetlerince yerinde alınır.
+  — skor 0.38 | Polis Mevzuatı / 1774 Sayılı Kimlik Bildirme Kanunu | published | id 225a0d67-954e-486b-9715-47787b0fcfd0
+    1774 sayılı Kimlik Bildirme Kanunu’na göre, geçici yer değiştirmelerde yaylak ve kışlak gibi yerlere mevsimlik olarak göçenler için aile reisi tarafından, örneğine uygun bildirim kaç gün içinde kolluk örgütüne verilir?
+    A) Üç  ✔
+    B) Beş
+    C) Yedi
+    D) On
+  — skor 0.25 | Polis Mevzuatı / 1774 Sayılı Kimlik Bildirme Kanunu | published | id 244a9c7b-a980-41e5-8203-63fa0e42c95f
+    Bir otel, kayıtlarını genel kolluk kuvvetlerinin bilgisayar terminallerine bağlama yükümlülüğünü yerine getirmemiş ve aynı takvim yılı içinde bu fiili tekrar işlemiştir. 1774 sayılı Kimlik Bildirme Kanunu uygulamasına göre aşağıdakilerden hangisi doğrudur?
+    A) Tekrarda en son kesilen para cezasının iki katı uygulanır; fiilin aynı takvim yılında dördüncü defa işlenmesi hâlinde ruhsat iptali gündeme gelir  ✔
+    B) Tekrarda ceza yarı oranında artırılır; ruhsat iptali mümkün değildir
+    C) Tekrar hâlinde ceza değişmez; yalnızca uyarı yapılır
+    D) İlk fiilde doğrudan ruhsat iptal edilir
+    E) Tekrarda ceza üç katına çıkarılır ve işletici hakkında adlî soruşturma açılır
+  — skor 0.25 | Polis Mevzuatı / 1774 Sayılı Kimlik Bildirme Kanunu | published | id 8f277b5f-fd07-4cb3-8cb3-7be9d5fc25ed
+    1774 sayılı Kimlik Bildirme Kanunu’nun uygulanması sırasında genel kolluk kuvvetlerine ait karakollara, il merkezlerinden de sorgulanabilen bilgisayar terminalleri konulması için gerekli giderler aşağıdakilerden hangisinin bütçesine konulacak ödenekten karşılanır?
+    A) İçişleri Bakanlığı  ✔
+    B) Millî Savunma Bakanlığı
+    C) Ulaştırma ve Altyapı Bakanlığı
+    D) Çalışma ve Sosyal Güvenlik Bakanlığı
+  — skor 0.21 | Polis Mevzuatı / 1774 Sayılı Kimlik Bildirme Kanunu | published | id 771934ff-05fc-46ad-86a6-a6bc90015475
+    1774 sayılı Kimlik Bildirme Kanunu uygulamasına göre, araç kiralama şirketlerinin yükümlülükleriyle ilgili aşağıdakilerden hangisi yanlıştır?
+    A) Kiralayan şahıs ile kiralanan araç bilgileri, araç teslim edilmeden genel kolluğa sistem üzerinden anlık olarak bildirilir
+    B) Kiralanan araçlarda GPS cihazı bulundurulur ve konum kayıtları saklanır
+    C) Kira sözleşmesine ilişkin bilgi, belge ve kayıtlar bilgisayar ortamında tutulur
+    D) Bu yükümlülüklere aykırılıkta idarî para cezasını kolluk birim amiri verir  ✔
+    E) İşlenen suçun gizlenmesi amacıyla bilgilerin yok edilmesi hâlinde ruhsat iptali gündeme gelir
+  — skor 0.21 | Polis Mevzuatı / 1774 Sayılı Kimlik Bildirme Kanunu | published | id 91325b37-ec40-48ba-bff5-93217d4afc4a
+    1774 sayılı Kimlik Bildirme Kanunu hükümlerine göre Öğrenci yurtları ve benzeri yerlerde çalışanlar ile bu yerlerde kalmakta olan öğrenciler için kimlik bildirimleri, mahalli kolluk örgütüne verilmeden evvel aşağıdakilerden hangisine onaylatılır?
+    A) Kolluk amiri
+    B) Cumhuriyet Savcisı
+    C) Mülki Amir
+    D) Köy veya Mahalle Muhtarı  ✔
+    E) Tesisten sorumlu işletici
+
+## 1774-p1-05
+ADAY: Tren istasyonunda belediyece izin verilerek işletilen bir sabahçı kahvesinde birkaç yolcu geceyi geçirmiştir. 1774 sayılı Kanun'a göre bu durumda aşağıdakilerden hangisi uygulanır?
+ADAY DOĞRU: Bu yolcular için bildirim yapılmaz.
+  — skor 0.27 | Polis Mevzuatı / 1774 Sayılı Kimlik Bildirme Kanunu | published | id bc821785-07a4-4c9a-a185-9af3410b154d
+    1774 sayılı Kimlik Bildirme Kanunu uygulamasına göre; I. Konaklama tesisi dışındaki işyerlerinde çalışanların kimlik bildirimi 3 gün içinde yapılır. II. Aile reisleri, konutlarında 30 günden fazla kalan misafirleri 3 gün içinde kolluğa bildirir. III. Kimliğini resmî belgeyle ispat edemeyen kimseleri konut ve işyerinde barındırmak veya çalıştırmak yasaktır. IV. İzinsiz sabahçı kahvesi işletmek bu K
+    A) Yalnız I ve II
+    B) Yalnız I, II ve III
+    C) Yalnız II ve IV
+    D) I, II, III ve IV  ✔
+    E) Yalnız III ve IV
+  — skor 0.19 | Polis Mevzuatı / 1774 Sayılı Kimlik Bildirme Kanunu | published | id a9edc0ef-2cde-40b3-921b-66046bfc77a0
+    1774 sayılı Kimlik Bildirme Kanunu uygulamasında, bir otelin sorumlu işletici değişikliğinin kolluğa bildirilmesiyle ilgili aşağıdakilerden hangisi doğrudur?
+    A) Değişiklik 24 saat içinde kolluğa bildirilir; bildirilmemesi hâlinde mülkî amir tarafından idarî para cezası verilir  ✔
+    B) Değişiklik 3 gün içinde bildirilir; bildirilmemesi hâlinde kolluk tarafından ceza verilir
+    C) Değişiklik 7 gün içinde bildirilir; bildirilmemesi hâlinde vali tarafından ceza verilir
+    D) Değişiklik bir ay içinde bildirilir; bildirilmemesi hâlinde tesis derhal kapatılır
+    E) Bildirim yükümlülüğü yalnızca tesisin ilk açılışında geçerlidir; değişiklikte bildirim gerekmez
+
+## 1774-p1-06
+ADAY: 1774 sayılı Kanun'a göre, tutulan kayıtlar, yapılan bildirimler ve bunlara ilişkin yaptırımlar ile ilgili aşağıdakilerden hangisi YANLIŞTIR?
+ADAY DOĞRU: Bildirimlerden yetkili resmî örgütler ancak mahkeme kararıyla yararlanabilir.
+  — skor 0.30 | Ceza Muhakemesi Hukuku / 5271 Sayılı Ceza Muhakemesi Kanunu (CMK) | published | id 9e714241-1f91-419c-a0be-b816b3d7cecb
+    Telekomünikasyon yoluyla yapılan iletişimin denetlenmesine ilişkin kayıtların yok edilmesi hâlinde, bu durumun Cumhuriyet başsavcılığı veya mahkeme tarafından ilgilisine yazılı olarak bildirilmesi için öngörülen azami süre nedir?
+    A) 15 gün  ✔
+    B) 3 ay
+    C) 10 gün
+    D) 1 ay
+    E) 24 saat
+  — skor 0.29 | Polis Mevzuatı / 657 Sayılı Devlet Memurları Kanunu | published | id 95647f6e-6d34-40a3-a0ef-01e295bad47d
+    I. Disiplin amirleri uyarma, kınama ve aylıktan kesme cezalarını soruşturmanın tamamlandığı günden itibaren 15 gün içinde vermek zorundadırlar. II. Kademe ilerlemesinin durdurulması cezasını gerektiren hallerde soruşturma dosyası, kararını bildirmek üzere yetkili disiplin kuruluna 30 gün içinde tevdi edilir. III. Memurluktan çıkarma cezası için disiplin amirleri tarafından yaptırılan soruşturmaya 
+    A) I ve II
+    B) I ve III  ✔
+    C) II ve III
+    D) II ve IV
+    E) I ve IV
+  — skor 0.26 | Ceza Muhakemesi Hukuku / 5271 Sayılı Ceza Muhakemesi Kanunu (CMK) | published | id 3392c6e7-dba7-4312-b04d-2badf3f23016
+    Hükmün açıklanmasının geri bırakılması hakkında, I. Hükmün açıklanmasının geri bırakılması durumunda suç eşyası hakkında müsadere kararı verilemez. II. Hükmün açıklanmasının geri bırakılması kararı, bunlara özgü bir sisteme kaydedilir. Bu kayıtlar ancak bir soruşturma veya kovuşturmayla bağlantılı olarak Cumhuriyet savcısı, yargıç veya mahkeme tarafından istenmesi durumunda, yasada belirtilen amaç
+    A) Yalnız II
+    B) I ve II
+    C) II ve III
+    D) II ve IV  ✔
+    E) II, III ve IV
+  — skor 0.26 | Polis Mevzuatı / 5395 Sayılı Çocuk Koruma Kanunu | published | id 832d9bf8-b9f4-4a02-b572-3b2f779870c3
+    5395 sayılı Çocuk Koruma Kanunu’na göre, hakkında sosyal inceleme yapılacak çocuğun incelemeye tâbi tutulacak çevresi davayı gören mahkemenin yetki alanı dışındaysa ve bu yer büyükşehir belediye sınırları içinde kalmıyorsa inceleme nasıl yaptırılır?
+    A) Davayı gören mahkemeye bağlı olarak çalışan sosyal çalışma görevlilerince doğrudan yapılır.
+    B) Çocuğun bulunduğu yer Cumhuriyet başsavcılığının çocuk bürosuna dosya gönderilerek yaptırılır.
+    C) Çocuğun bulunduğu yerdeki kolluğun çocuk birimince araştırılarak sonucu rapora bağlanır.
+    D) Davayı gören mahkemenin talebi üzerine aile ve sosyal hizmetler il müdürlüğünce yapılıp gönderilir.
+    E) Davayı gören mahkemenin talimatına bağlı olarak çocuğun bulunduğu yerdeki mahkemece yaptırılır.  ✔
+  — skor 0.26 | Anayasa Hukuku / T.C. Anayasası | published | id 45851259-e727-4f24-8410-cac365162119
+    I. Süreli yayın çıkarabilmek için kanunun gösterdiği bilgi ve belgelerin, kanunda belirtilen yetkili mercie verilmesi yeterlidir. Bu bilgi ve belgelerin kanuna aykırılığının tespiti halinde yetkili merci, yayının durdurulması için mahkemeye başvurur. II. Kanun, haber, düşünce ve kanaatlerin serbestçe yayımlanmasını engelleyici veya zorlaştırıcı siyasal, ekonomik, mali ve teknik şartlar koyamaz. II
+    A) Yalnız I
+    B) Yalnız II
+    C) Yalnız III  ✔
+    D) I ve II
+    E) II ve III

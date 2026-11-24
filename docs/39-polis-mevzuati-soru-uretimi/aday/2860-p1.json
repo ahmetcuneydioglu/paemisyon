@@ -1,0 +1,87 @@
+[
+  {
+    "id": "2860-p1-01",
+    "articleNo": "7",
+    "kok": "2860 sayılı Kanun'a göre, yardım toplama faaliyeti birden fazla ili kapsıyorsa faaliyete girişecek kişi ya da kuruluş izni aşağıdakilerden hangisinden alır?",
+    "siklar": {
+      "A": "İçişleri Bakanlığından",
+      "B": "Faaliyetin kapsadığı illerin her birinin valisinden",
+      "C": "Faaliyetin başlayacağı ilin valisinden",
+      "D": "Yerleşim yerinin bulunduğu ilin valisinden",
+      "E": "Başvuranın seçtiği ilin valisinden"
+    },
+    "dogru": "D",
+    "aciklama": "Birden fazla ili kapsayan faaliyette izin mercii yedinci maddede faaliyetin yürütüleceği illere değil, faaliyete girişenin yerleşim yerine bağlanmıştır: 'Yardım toplama faaliyeti birden fazla ili kapsıyorsa yardım toplama faaliyetine girişecek gerçek veya tüzel kişilerin YERLEŞİM YERİNİN BULUNDUĞU İLİN VALİSİNDEN izin alınır ve izni veren valilik tarafından ilgili valiliklere ve İçişleri Bakanlığına BİLGİ VERİLİR.' İzin bu validen alınır. Faaliyetin kapsadığı öteki illerin valilikleri izin vermez; izni veren valilik onlara yalnız bilgi verir. Bu yüzden her ilin valisinden ayrı ayrı izin alındığını söyleyen B yanlıştır. Faaliyetin birden çok ilde yürütülmesi izni merkeze de taşımaz: İçişleri Bakanlığı maddede izin veren makam olarak değil, izni veren valilikçe bilgi verilen makam olarak geçer (A). Madde izni verecek valiyi faaliyetin başlayacağı ile göre belirlemez (C); başvurana il seçme olanağı da tanımaz, ölçüt girişenin yerleşim yeridir (E).",
+    "dayanak": "2860 sayılı Kanun md 7",
+    "zorluk": "hard",
+    "tur": "dogrudan"
+  },
+  {
+    "id": "2860-p1-02",
+    "articleNo": "29",
+    "kok": "İl merkezi dışındaki tek bir ilçede izinle yürütülen yardım toplama faaliyetinin sorumlu kurulu, kesinhesabı süresinde vermemiştir. 2860 sayılı Kanun'a göre, bu aykırılık nedeniyle verilecek idari para cezasına hangi makam karar verir?",
+    "siklar": {
+      "A": "Kaymakam",
+      "B": "Vali",
+      "C": "Vali yardımcısı",
+      "D": "İçişleri Bakanı",
+      "E": "İlçe emniyet müdürü"
+    },
+    "dogru": "A",
+    "aciklama": "İdari yaptırımların karar mercii yirmi dokuzuncu maddenin son fıkrasında faaliyetin izinli olup olmamasına göre ayrılmıştır: 'Bu maddede yazılı olan idari yaptırımlara karar vermeye YARDIM TOPLAMA İZNİNİ VEREN MAKAM yetkilidir. İZİNSİZ yardım toplanması hâlinde idari yaptırımlara vali karar verir. Vali bu yetkisini vali yardımcılarına veya kaymakamlara devredebilir.' Olaydaki faaliyet izinlidir ve aykırılık on yedinci maddedeki yükümlülüğe ilişkindir: 'Sorumlu kurullar, … toplanan yardımın kesinhesabını çıkarmak ve bir örneğini izin veren makama vermekle yükümlüdürler.' Bu aykırılığa yirmi dokuzuncu maddenin yedinci fıkrasına göre idari para cezası verilir: 'Bu Kanunun diğer hükümlerine aykırı davranışta bulunanlara, fiilleri suç oluşturmadığı takdirde, … idari para cezası verilir.' Faaliyet tek bir ilçede yürütüldüğünden izni veren makam yedinci maddeye göre o ilçenin kaymakamıdır: '… bir ilçenin sınırları içinde ise o ilçenin kaymakamından izin alınır.' Valinin karar yetkisi izinsiz yardım toplanması hâline ilişkindir (B). Vali yardımcıları fıkrada yalnız bu hâlde valinin yetkisini devredebileceği makamlar arasında sayılır (C). İçişleri Bakanı maddede idari yaptırım mercii olarak geçmez (D). Kanun güvenlik kuvvetlerine izinsiz faaliyeti menetme görevi verir ('… güvenlik kuvvetlerince derhal menedilir …'); idari para cezasına karar verme yetkisi tanımaz (E).",
+    "dayanak": "2860 sayılı Kanun md 29/9 (karş. md 7, 17/1, 29/7, 6/2)",
+    "zorluk": "hard",
+    "tur": "vaka"
+  },
+  {
+    "id": "2860-p1-03",
+    "articleNo": "6",
+    "kok": "2860 sayılı Kanun'a göre, internet ortamında izinsiz yardım toplandığı tespit edildiğinde içerik ve yer sağlayıcıya ilişkin bilgiler edinilemiyorsa izlenecek yol aşağıdakilerden hangisidir?",
+    "siklar": {
+      "A": "Sağlayıcıya ilan yoluyla bildirim yapılır.",
+      "B": "Erişimin engellenmesine valilik karar verir.",
+      "C": "Yirmi dört saatlik süre beklenir.",
+      "D": "Sulh ceza hâkimliği sitenin tamamına erişimi engeller.",
+      "E": "Sulh ceza hâkimliğinden erişim engeli istenir."
+    },
+    "dogru": "E",
+    "aciklama": "İnternet ortamındaki izinsiz yardım toplamada izlenecek yol altıncı maddenin üçüncü fıkrasındadır. İlk adımda içerik ve/veya yer sağlayıcıya, içeriğin çıkarılması için '… elde edilen bilgiler üzerinden elektronik posta veya diğer iletişim araçları ile bildirimde bulunulur.' Hâkimliğe başvuru üç ayrı hâle bağlanmıştır: 'İçeriğin en geç yirmi dört saat içinde içerik ve/veya yer sağlayıcı tarafından çıkarılmaması VEYA içerik ve yer sağlayıcıya ilişkin BİLGİLERİN EDİNİLEMEMESİ ya da teknik nedenlerle bildirimde bulunulamaması hâlinde ilgili valilik veya İçişleri Bakanlığı internet ortamındaki söz konusu içeriğe ilişkin erişimin engellenmesine karar verilmesi için SULH CEZA HÂKİMLİĞİNE BAŞVURUR.' Yirmi dört saat, bildirim yapılan sağlayıcının içeriği çıkarması için öngörülen süredir. Bilgiler edinilemediğinde bildirim yapılamaz; Kanun bu durumu ayrı bir başvuru sebebi saydığından bu süre beklenmez (C), bildirimin ilan gibi başka bir yolla yapılması da öngörülmemiştir (A). Valilik ve Bakanlık erişimin engellenmesine kendileri karar vermez, kararın verilmesi için hâkimliğe başvurur (B). Kararın yöntemi de belirlenmiştir: 'Bu fıkra kapsamında verilen erişimin engellenmesi kararı, içeriğe erişimin engellenmesi (URL vb.) yöntemiyle verilir.' Sitenin tamamına erişimin engellenmesi bu yöntemle bağdaşmaz (D).",
+    "dayanak": "2860 sayılı Kanun md 6/3",
+    "zorluk": "medium",
+    "tur": "dogrudan"
+  },
+  {
+    "id": "2860-p1-04",
+    "articleNo": "13",
+    "kok": "2860 sayılı Kanun'a göre, “yardım toplama faaliyetlerinde görev alanlar” ile ilgili aşağıdakilerden hangisi YANLIŞTIR?",
+    "siklar": {
+      "A": "Kamu görevlileri, bağlı oldukları kurumun amirinden izin almadıkça bu faaliyetlerde çalışamaz.",
+      "B": "Tüzel kişilerin yürüttüğü faaliyette sorumlu kurul, tüzel kişinin yönetim organlarıdır.",
+      "C": "Güvenlik kuvvetleri mensupları ile özel kolluk görevlilerinin bu faaliyetlerde çalışması yasaktır.",
+      "D": "Türk Hava Kurumu, kurban derisi toplamada görevlendirdiği kamu personeline ücret verebilir.",
+      "E": "Faaliyetten elde edilen parayı zimmetine geçiren görevli, kamu görevlisi olmasa da TCK'nın zimmet hükümlerine göre cezalandırılır."
+    },
+    "dogru": "A",
+    "aciklama": "Yanlış olan A'dır. Kamu görevlilerinin çalışması on üçüncü maddenin birinci fıkrasındadır: 'Kamu görevlileri, vali veya kaymakamdan izin almadıkça yardım toplama faaliyetlerinde çalışamazlar.' Fıkra izin merciini vali ya da kaymakam olarak belirler; kamu görevlisinin bağlı olduğu kurumun amirini anmaz. On birinci maddenin birinci fıkrasının ikinci cümlesi şöyledir: 'Tüzelkişilerin sorumlu kurulu, yönetim organlarıdır.' B bu cümleye dayanır. C on üçüncü maddenin üçüncü fıkrasına dayanır: '… güvenlik kuvvetleri mensupları ve özel kolluk görevlileri, yardım toplama faaliyetlerinde çalışamazlar.' Bu fıkrada birinci fıkradaki 'izin almadıkça' kaydı yer almaz. D aynı maddenin ikinci fıkrasının ikinci cümlesine dayanır: 'Ancak, Türk Hava Kurumu tarafından kurban derisi, bağırsak toplamak, fitre ve zekat zarfı dağıtmak suretiyle yardım toplama faaliyetlerinde görevlendirilen kamu personeline Kurumca ücret verilebilir.' Bu cümle, aynı fıkranın birinci cümlesindeki 'her ne ad altında olursa olsun ücret verilemez' kuralının ayrığıdır; ücreti Kurum verebilir. E yirmi sekizinci maddeye dayanır: 'Yardım toplama faaliyetinden elde edilen mal ve paraları zimmetine geçiren kişi, KAMU GÖREVLİSİ OLUP OLMADIĞINA BAKILMAKSIZIN, Türk Ceza Kanununun zimmet suçuna ilişkin hükümlerine göre cezalandırılır.' Madde failin sıfatını aramadığından görevlinin kamu görevlisi olmaması sonucu değiştirmez.",
+    "dayanak": "2860 sayılı Kanun md 13/1 (karş. md 11/1, 13/2, 13/3, md 28)",
+    "zorluk": "hard",
+    "tur": "onerme"
+  },
+  {
+    "id": "2860-p1-05",
+    "articleNo": "25",
+    "kok": "2860 sayılı Kanun'a göre, yardım toplama süresi sona erdiğinde toplanan yardım gerçekleştirilmek istenen işe yetmiyorsa bu yardım hakkında aşağıdakilerden hangisi yapılır?",
+    "siklar": {
+      "A": "Yardımda bulunanlara iade edilir.",
+      "B": "Hazineye gelir olarak kaydedilir.",
+      "C": "Aynı ya da benzer amaçlı kuruluşlara devrettirilir.",
+      "D": "Sorumlu kurulun belirleyeceği başka bir amaçta kullanılır.",
+      "E": "Muhtaç kişilere doğrudan dağıtılır."
+    },
+    "dogru": "C",
+    "aciklama": "Toplanan yardımın amaca yetmemesinin sonucu yirmi beşinci maddede düzenlenmiştir: 'Toplanan yardımın, amacı gerçekleştirecek miktara ulaşamaması veya amacın gerçekleşmesinden sonra bir miktarının artması hallerinde; söz konusu yardımlar, izin veren makamlarca, yardım hangi amaç için toplanmış ise, O VEYA BENZERİ AMACI GERÇEKLEŞTİREBİLECEK KURULUŞ VEYA KURULUŞLARA DEVRETTİRİLİR.' Aynı sonuç amaç gerçekleştikten sonra artan yardım için de geçerlidir. Madde yardımı toplandığı amaca bağlı tutar; yardımda bulunanlara geri verilmesini (A) ya da Hazineye gelir kaydedilmesini (B) öngörmez. Devri yaptıran izin veren makamdır; yardımın hangi amaçta kullanılacağını belirleme yetkisi sorumlu kurula tanınmamıştır (D). On dördüncü madde de faaliyete girişenleri toplanan para ve eşyanın 'amaca uygun şekilde kullanılmasından' sorumlu tutar. Devrin muhatabı kişiler değil, amacı gerçekleştirebilecek kuruluşlardır; muhtaç kişilere doğrudan dağıtım maddede yer almaz (E).",
+    "dayanak": "2860 sayılı Kanun md 25 (karş. md 14)",
+    "zorluk": "easy",
+    "tur": "dogrudan"
+  }
+]

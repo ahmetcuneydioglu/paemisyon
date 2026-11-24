@@ -1,0 +1,179 @@
+# 7201-p1 — bankadaki en benzer sorular (bütün banka, 7710 soru; eşik 0.15, aday başına 5)
+# skor = aday kök+doğru şık sözcüklerinin (IDF ağırlıklı) ne kadarının o soruda geçtiği. Yüksek skor mükerrer DEMEK DEĞİLDİR; karar gözcünündür.
+
+## 7201-p1-01
+ADAY: 7201 sayılı Kanun'a göre, adres kayıt sistemindeki adresine tebligat çıkarılan muhatabın o adreste hiç oturmadığı anlaşılırsa tebliğ memuru aşağıdakilerden hangisini yapar?
+ADAY DOĞRU: Evrakı o yerin muhtarına teslim eder.
+  — skor 0.20 | Polis Mevzuatı / 7201 Sayılı Tebligat Kanunu | published | id f06054fc-b3a4-4979-8bfc-b025079d40e2
+    7201 sayılı Tebligat Kanunu’na göre, tebliğ evrakının veya ihbarnamenin talikine karşı koyanlar ile talik edilen bu kabil evrakı bulunduğu yerden koparan, imha eden veya okunamaz hâle getirenler hakkında, - - - - günden - - - - güne kadar adli para cezasına hükmolunur. Bu hükümde boş bırakılan yerlere aşağıdakilerden hangileri sırasıyla getirilmelidir?
+    A) on - elli
+    B) on - yetmiş beş
+    C) yirmi - yüz
+    D) yirmi beş - yüz elli  ✔
+    E) elli - iki yüz
+  — skor 0.20 | Polis Mevzuatı / 5326 Sayılı Kabahatler Kanunu | published | id 1aed09e9-8976-4edf-b2f2-59b7cff0ed52
+    5326 sayılı Kabahatler Kanunu'na göre, idarî yaptırım kararlarının elektronik ortamda tebliği hâlinde tebligat ne zaman yapılmış sayılır?
+    A) Muhatabın elektronik adresine ulaştığı anda
+    B) Muhatabın elektronik adresine ulaştığı tarihi izleyen beşinci günün sonunda  ✔
+    C) Muhatabın elektronik adresine ulaştığı tarihi izleyen yedinci günün sonunda
+    D) Muhatabın iletiyi okuduğu anda
+    E) Muhatabın elektronik adresine ulaştığı tarihi izleyen on beşinci günün sonunda
+  — skor 0.17 | Genel Kültür ve Güncel Olaylar / Genel Kültür | published | id d0a384a5-7aa1-4164-908b-b5e42b01f06a
+    Resmî Yazışmalarda Uygulanacak Usul ve Esaslar Hakkında Yönetmelik’e göre “muhatap” ile ilgili aşağıdakilerden hangisi yanlıştır?
+    A) Bağlı, ilgili veya ilişkili idarelere gönderilecek belgeler doğrudan o idareye gönderilebilir.
+    B) Birden fazla muhataba iletilecek dağıtımlı belgelerin muhatap bölümüne “DAĞITIM YERLERİNE” ibaresi yazılır.
+    C) Muhatabın idare veya özel hukuk tüzel kişisi olması durumunda, adı büyük harflerle ve sonuna yönelme hâl eklerinden uygun olanı getirilerek yazılır.
+    D) İdare dışına gönderilen belgelerde, gerekiyorsa belgenin gideceği yerin adresi, muhatap satırının altına, satırın sol tarafına tüm harfleri büyük olarak yazılır.  ✔
+  — skor 0.16 | İdare Hukuku / 2577 İdari Yargılama Usulü Kanunu (İYUK) | published | id 94cc6555-e33c-40cf-a524-24f15a1e08a9
+    Ahmet'in açtığı iptal davası sırasında gösterdiği adrese tebligat yapılamaması üzerine yeni adresini bildirmesine kadar dava dosyası işlemden kaldırılıyor. 2577 sayılı İYUK'a göre Ahmet, dosyanın işlemden kaldırıldığı tarihten itibaren en fazla ne kadar süre içinde yeni adres bildirerek dosyanın yeniden işleme konulmasını talep etmezse davanın açılmamış sayılmasına karar verilir?
+    A) Üç ay
+    B) Dört ay
+    C) Altı ay
+    D) Bir yıl  ✔
+    E) İki yıl
+  — skor 0.16 | Genel Kültür ve Güncel Olaylar / Genel Kültür | published | id 8a282fb7-6b0b-4d80-9411-6003a2c9f256
+    Tebligat yapılması gereken hâllerde bir kimse kendisine veya başkasına ait isim veya adresi yanlış olarak bildirir ise fail hakkında - - - - kadar hapis cezasına hükmolunur. 7201 sayılı Tebligat Kanunu’na göre, bu hükümde boş bırakılan yere aşağıdakilerden hangisi getirilmelidir?
+    A) üç aydan bir yıla
+    B) üç aydan iki yıla
+    C) altı aydan bir yıla
+    D) altı aydan iki yıla  ✔
+    E) altı aydan beş yıla
+
+## 7201-p1-02
+ADAY: Muhatabın geçici olarak başka bir yere gittiğini bildiren ve onunla aynı konutta oturan yetişkin kişi tebliğ evrakını almaktan kaçınmış, ihbarname kapıya yapıştırılmıştır. 7201 sayılı Kanun'a göre, tebliğ hangi tarihte yapılmış sayılır?
+ADAY DOĞRU: Yapıştırmadan on beş gün sonra
+  — skor 0.20 | Polis Mevzuatı / 7201 Sayılı Tebligat Kanunu | published | id f06054fc-b3a4-4979-8bfc-b025079d40e2
+    7201 sayılı Tebligat Kanunu’na göre, tebliğ evrakının veya ihbarnamenin talikine karşı koyanlar ile talik edilen bu kabil evrakı bulunduğu yerden koparan, imha eden veya okunamaz hâle getirenler hakkında, - - - - günden - - - - güne kadar adli para cezasına hükmolunur. Bu hükümde boş bırakılan yerlere aşağıdakilerden hangileri sırasıyla getirilmelidir?
+    A) on - elli
+    B) on - yetmiş beş
+    C) yirmi - yüz
+    D) yirmi beş - yüz elli  ✔
+    E) elli - iki yüz
+  — skor 0.18 | Polis Mevzuatı / 7201 Sayılı Tebligat Kanunu | published | id 26b08687-3c74-42e3-a832-c788fb3e6420
+    7201 sayılı Tebligat Kanunu’na göre ilanen tebliğ, son ilan tarihinden itibaren kaç gün sonra yapılmış sayılır?
+    A) 1
+    B) 3
+    C) 5
+    D) 7  ✔
+  — skor 0.16 | Ceza Muhakemesi Hukuku / 5271 Sayılı Ceza Muhakemesi Kanunu (CMK) | published | id cbaece4f-cf83-407e-a6d1-606bca365302
+    Asliye ceza mahkemesi 10 Ocak 2025 tarihinde basit yargılama usulünün uygulanmasına karar vermiş ve iddianameyi sanığa aynı gün tebliğ etmiştir. Sanığın beyan ve savunmasını bildirebileceği sürenin son günü hangi tarihtir?
+    A) 24 Ocak 2025  ✔
+    B) 17 Ocak 2025
+    C) 20 Ocak 2025
+    D) 25 Ocak 2025
+    E) 10 Şubat 2025
+
+## 7201-p1-03
+ADAY: 7201 sayılı Kanun'a göre, ertelenmesinde zarar umulan işlerde tebligatın zabıta vasıtasıyla yaptırılması aşağıdakilerden hangisinin emriyle olur?
+ADAY DOĞRU: Mahallî mülki idare amirinin
+  — skor 0.28 | Genel Kültür ve Güncel Olaylar / Genel Kültür | published | id 06887b89-aae2-400a-a56a-da81ac677c0b
+    7201 sayılı Tebligat Kanunu’na göre, “tebligat esasları” ile ilgili aşağıdakilerden hangisi yanlıştır?
+    A) Hükmi şahıslara tebliğ; salahiyetli mümessillerine, bunlar birden ziyade ise, yalnız birine yapılır.
+    B) Astsubaylar hariç olmak üzere erata yapılacak tebliğler, kıta kumandanı ve müessese amiri gibi en yakın üste yapılır.
+    C) Mevkuf ve mahkûmlara ait tebliğlerin yapılmasını, bunların bulunduğu müessese müdür veya memuru temin eder.
+    D) Kendisine tebliğ yapılacak şahıs adresinde bulunmazsa tebliğ kendisi ile aynı konutta oturan kişilere veya hizmetçilerinden birine yapılır.
+    E) Vekil vasıtasıyla takip edilen işlerde vekil birden çok ise her birine tebligat yapılır.  ✔
+  — skor 0.22 | İdare Hukuku / 5393 Belediye Kanunu | published | id 012a75de-6aa7-42cf-bcf8-7db17cec296a
+    Belediye meclisi kararlarının kesinleşmesi ile ilgili aşağıdaki ifadelerden hangisi yanlıştır?
+    A) Belediye başkanı, hukuka aykırı gördüğü meclis kararlarını, gerekçesini de belirterek yeniden görüşülmek üzere 5 gün içinde meclise iade edebilir.
+    B) Yeniden görüşülmesi istenip de belediye meclisi üye tam sayısının salt çoğunluğuyla ısrar edilen kararlar kesinleşir.
+    C) Kararlar kesinleştiği tarihten itibaren en geç 15 gün içinde mahallin en büyük mülki idare amirine gönderilir.  ✔
+    D) Kesinleşen meclis kararlarının özetleri 7 gün içinde uygun araçlarla halka duyurulur.
+    E) Mülki idare amirine gönderilmeyen kararlar yürürlüğe girmez.
+  — skor 0.21 | Polis Mevzuatı / 7201 Sayılı Tebligat Kanunu | published | id 96dd9ce5-1aff-4768-83a9-6351328c04d0
+    7201 sayılı Tebligat Kanunu’na göre, yabancı bir memlekette resmî bir vazife ile bulunan Türk memurlarına tebligat, aşağıdakilerden hangisi vasıtasıyla yapılır?
+    A) İçişleri Bakanlığı
+    B) Adalet Bakanlığı
+    C) Dışişleri Bakanlığı  ✔
+    D) Cumhurbaşkanlığı
+    E) Millî Savunma Bakanlığı
+  — skor 0.19 | Polis Mevzuatı / 7245 Sayılı Çarşı ve Mahalle Bekçileri Kanunu | published | id 81336e5d-0a52-4656-a9a5-92e11c066224
+    I. Sürücüyü el ile dıştan kontrol etmek II. Sürücüden torpido gözünü açmasını istemek III. Kolluk amirinin yazılı emriyle aracı aramak 7245 sayılı Kanun'a göre, durdurduğu aracın sürücüsünün üzerinde ya da araçta silah bulunduğuna dair yeterli şüpheye ulaşan çarşı ve mahalle bekçisi yukarıdakilerden hangilerini yapabilir?
+    A) Yalnız I  ✔
+    B) Yalnız II
+    C) I ve II
+    D) I ve III
+    E) II ve III
+  — skor 0.19 | Polis Mevzuatı / 2559 Sayılı Polis Vazife ve Salâhiyet Kanunu (PVSK) | published | id 48cfebb6-4b6f-439f-aca2-a16be2b94b45
+    2559 sayılı Polis Vazife ve Salâhiyet Kanunu'nun Ek 3 üncü maddesine göre, polisin ikametgâh veya iş adresinden ayrılmamayı isteyebilmesi ve ilgilinin o yerden ayrılmasına izin verilmesiyle ilgili aşağıdakilerden hangisi doğrudur?
+    A) Polis istemi sözlü olarak yapar; ayrılma izni polis tarafından verilir
+    B) Polis istemi yazılı olarak yapar; bulunulabilecek yeni adresin bildirilmesi şartıyla ayrılmaya mahallin en büyük mülkî amirinin yazılı emriyle izin verilir  ✔
+    C) İstem sulh ceza hâkiminin kararıyla yapılır; izin de aynı hâkim tarafından verilir
+    D) Polis istemi yazılı olarak yapar; ayrılmaya hiçbir şekilde izin verilemez
+    E) İstem Cumhuriyet savcısının talimatıyla yapılır; izin İçişleri Bakanlığından alınır
+
+## 7201-p1-04
+ADAY: 7201 sayılı Kanun'a göre, elektronik tebligat zorunluluğu bulunmayan bir gerçek kişiye talebi üzerine elektronik tebligat adresi verilmişse bu kişiye tebligat nasıl yapılır?
+ADAY DOĞRU: Elektronik yolla yapılması zorunludur.
+  — skor 0.35 | Polis Mevzuatı / 2918 Sayılı Karayolları Trafik Kanunu | published | id 5c40df3c-d8cc-4c10-ae40-243dc70c9254
+    Bir aracın, trafik kural ihlalinin yapıldığı tarihte kiralanmış olduğu, genel kolluk kuvvetlerinin denetimine hazır bulundurulan kimlik bildirme verileri üzerinden tespit edilmiştir. Kiracının tebligata elverişli bir adresi de bulunmaktadır. 2918 sayılı Karayolları Trafik Kanunu'na göre bu ihlalin idari para cezası bakımından nasıl işlem yapılır?
+    A) Tutanak araç sahibi adına düzenlenir, ceza ondan tahsil edilerek kiracıya rücu edilir.
+    B) Tutanak, aracı kiraya veren işletmenin bağlı olduğu yetki belgesi sahibi taşımacı adına düzenlenir.
+    C) Ceza, araç sahibi ile kiracıdan müteselsilen tahsil edilir.
+    D) Tutanak kiracı adına düzenlenerek tebliğ edilir ve ceza kiracıdan tahsil edilir.  ✔
+    E) Tutanak, kiralama sözleşmesi ibraz edilinceye kadar askıya alınarak trafik kaydına şerh edilir.
+  — skor 0.33 | Genel Kültür ve Güncel Olaylar / Genel Kültür | published | id 8a282fb7-6b0b-4d80-9411-6003a2c9f256
+    Tebligat yapılması gereken hâllerde bir kimse kendisine veya başkasına ait isim veya adresi yanlış olarak bildirir ise fail hakkında - - - - kadar hapis cezasına hükmolunur. 7201 sayılı Tebligat Kanunu’na göre, bu hükümde boş bırakılan yere aşağıdakilerden hangisi getirilmelidir?
+    A) üç aydan bir yıla
+    B) üç aydan iki yıla
+    C) altı aydan bir yıla
+    D) altı aydan iki yıla  ✔
+    E) altı aydan beş yıla
+  — skor 0.31 | Polis Mevzuatı / 5326 Sayılı Kabahatler Kanunu | published | id 1aed09e9-8976-4edf-b2f2-59b7cff0ed52
+    5326 sayılı Kabahatler Kanunu'na göre, idarî yaptırım kararlarının elektronik ortamda tebliği hâlinde tebligat ne zaman yapılmış sayılır?
+    A) Muhatabın elektronik adresine ulaştığı anda
+    B) Muhatabın elektronik adresine ulaştığı tarihi izleyen beşinci günün sonunda  ✔
+    C) Muhatabın elektronik adresine ulaştığı tarihi izleyen yedinci günün sonunda
+    D) Muhatabın iletiyi okuduğu anda
+    E) Muhatabın elektronik adresine ulaştığı tarihi izleyen on beşinci günün sonunda
+  — skor 0.25 | Polis Mevzuatı / 7201 Sayılı Tebligat Kanunu | published | id 3c12f572-4244-488f-b193-fbd32b490d4f
+    7201 sayılı Tebligat Kanunu’na göre, elektronik tebligat maddesinin uygulanmasına ilişkin usul ve esaslar aşağıdakilerden hangisi ile belirlenir?
+    A) Kanun
+    B) Tüzük
+    C) Tebliğ
+    D) Yönetmelik  ✔
+    E) Genelge
+  — skor 0.25 | Ceza Muhakemesi Hukuku / 5271 Sayılı Ceza Muhakemesi Kanunu (CMK) | published | id c39e5939-8aed-45e6-8ad2-1e3ffa4753f4
+    5271 sayılı CMK'ya göre temyiz aşamasındaki duruşmalı incelemelerle ilgili; I. Tutuklu bulunan sanık, duruşmaya katılma talebinde bulunamaz. II. Tutuklu olmayan sanık, duruşmada hazır bulunmak zorundadır. III. Talep edilmesi hâlinde duruşma yapılması zorunludur. ifadelerinden hangileri kural olarak doğrudur?
+    A) Yalnız I  ✔
+    B) Yalnız II
+    C) Yalnız III
+    D) I ve II
+    E) II ve III
+
+## 7201-p1-05
+ADAY: 7201 sayılı Kanun'a göre, “ilanen tebligat” ile ilgili aşağıdakilerden hangisi YANLIŞTIR?
+ADAY DOĞRU: Merci, tebliğin yapılmış sayılacağı süreyi otuz güne kadar uzatabilir.
+  — skor 0.44 | Polis Mevzuatı / 7201 Sayılı Tebligat Kanunu | published | id 26b08687-3c74-42e3-a832-c788fb3e6420
+    7201 sayılı Tebligat Kanunu’na göre ilanen tebliğ, son ilan tarihinden itibaren kaç gün sonra yapılmış sayılır?
+    A) 1
+    B) 3
+    C) 5
+    D) 7  ✔
+  — skor 0.36 | Polis Mevzuatı / 7201 Sayılı Tebligat Kanunu | published | id f06054fc-b3a4-4979-8bfc-b025079d40e2
+    7201 sayılı Tebligat Kanunu’na göre, tebliğ evrakının veya ihbarnamenin talikine karşı koyanlar ile talik edilen bu kabil evrakı bulunduğu yerden koparan, imha eden veya okunamaz hâle getirenler hakkında, - - - - günden - - - - güne kadar adli para cezasına hükmolunur. Bu hükümde boş bırakılan yerlere aşağıdakilerden hangileri sırasıyla getirilmelidir?
+    A) on - elli
+    B) on - yetmiş beş
+    C) yirmi - yüz
+    D) yirmi beş - yüz elli  ✔
+    E) elli - iki yüz
+  — skor 0.26 | Genel Kültür ve Güncel Olaylar / Genel Kültür | published | id a8e37d8d-c50c-47e9-822b-0e619de6294c
+    7201 sayılı Tebligat Kanunu’na göre; ilan suretiyle tebliğde, ilanın ihtiva edeceği kayıtlar arasında aşağıdakilerden hangisi sayılmamıştır?
+    A) Alakalıların imzası  ✔
+    B) Alakalıların ad ve soyadları
+    C) Alakalıların ikametgâh veya mesken yahut iş yerleri
+    D) İlanın hangi merciden verildiği
+    E) Tebliğ olunacak evrak muhteviyatının hulasası
+  — skor 0.26 | Polis Mevzuatı / 7201 Sayılı Tebligat Kanunu | published | id 905d820b-25c3-4804-9b77-19eea803f969
+    7201 sayılı Tebligat Kanunu’na göre kendisine tebliğ yapılacak kimse imza edecek kadar yazı bilmez veya imza edemeyecek durumda ise (istisnai durumlar hariç) hangi parmağı bastırılmak suretiyle tebliğ yapılır?
+    A) Sol elinin başparmağı  ✔
+    B) Sağ elinin başparmağı
+    C) Sol elinin işaret parmağı
+    D) Sağ elinin işaret parmağı
+  — skor 0.25 | Genel Kültür ve Güncel Olaylar / Genel Kültür | published | id 8a282fb7-6b0b-4d80-9411-6003a2c9f256
+    Tebligat yapılması gereken hâllerde bir kimse kendisine veya başkasına ait isim veya adresi yanlış olarak bildirir ise fail hakkında - - - - kadar hapis cezasına hükmolunur. 7201 sayılı Tebligat Kanunu’na göre, bu hükümde boş bırakılan yere aşağıdakilerden hangisi getirilmelidir?
+    A) üç aydan bir yıla
+    B) üç aydan iki yıla
+    C) altı aydan bir yıla
+    D) altı aydan iki yıla  ✔
+    E) altı aydan beş yıla

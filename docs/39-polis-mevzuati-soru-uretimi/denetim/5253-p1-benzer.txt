@@ -1,0 +1,306 @@
+# 5253-p1 — bankadaki en benzer sorular (bütün banka, 7696 soru; eşik 0.15, aday başına 5)
+# skor = aday kök+doğru şık sözcüklerinin (IDF ağırlıklı) ne kadarının o soruda geçtiği. Yüksek skor mükerrer DEMEK DEĞİLDİR; karar gözcünündür.
+
+## 5253-p1-01
+ADAY: 5253 sayılı Kanun'a göre “dernek lokallerinin denetimi” ile ilgili aşağıdakilerden hangisi doğrudur?
+ADAY DOĞRU: Kolluğa da yaptırılabilir; önceden bildirim aranmaz.
+  — skor 0.25 | Polis Mevzuatı / 5253 Sayılı Dernekler Kanunu | published | id d1abdb6f-0920-47c0-ae11-3b8ca80e71d5
+    5253 sayılı Dernekler Kanunu’na göre “kamu yararına çalışan dernekler” ile ilgili aşağıdakilerden hangisi doğrudur?
+    A) Kamu yararına çalışan dernekler en az üç yılda bir denetlenir.
+    B) Kamu yararına çalışan dernekler, Cumhurbaşkanı kararıyla tespit edilir.  ✔
+    C) Kamu yararına çalışan dernek statüsünün kazanılması, kaybedilmesi ve gerekli belgeler ile diğer esas ve usuller genelge ile düzenlenir.
+    D) Bir derneğin kamu yararına çalışan derneklerden sayılabilmesi için, en az iki yıldan beri faaliyette bulunması şarttır.
+  — skor 0.25 | Polis Mevzuatı / 5253 Sayılı Dernekler Kanunu | published | id 13166e43-2e54-44ba-a7a7-6259ee87df8e
+    5253 sayılı Dernekler Kanunu’na göre dernekler, yılsonu itibarıyla faaliyetlerini, gelir ve gider işlemlerinin sonuçlarını düzenleyecekleri beyanname ile her yıl hangi ayın sonuna kadar mülki idare amirliğine vermekle yükümlüdürler?
+    A) Nisan  ✔
+    B) Haziran
+    C) Eylül
+    D) Aralık
+  — skor 0.25 | Polis Mevzuatı / 5253 Sayılı Dernekler Kanunu | published | id 8b9fa452-eee3-401f-8edd-6821f186dc17
+    5253 sayılı Dernekler Kanunu hükümlerine göre kaç yaşını bitiren ayırt etme gücüne sahip küçükler; toplumsal, ruhsal, ahlaki, bedensel ve zihinsel yetenekleri ile spor, eğitim ve öğretim haklarını, sosyal ve kültürel varlıklarını, aile yapısını ve özel yaşantılarını korumak ve geliştirmek amacıyla yasal temsilcilerinin yazılı izni ile çocuk dernekleri kurabilir?
+    A) On
+    B) On iki
+    C) On beş  ✔
+    D) On sekiz
+    E) On üç
+  — skor 0.22 | Anayasa Hukuku / T.C. Anayasası | published | id 42b0b1c2-0180-4f61-b7bd-aa9edc62afe3
+    Olağanüstü hallerde, temel hak ve özgürlükler için 1982 Anayasası'nda öngörülen aşağıdaki güvencelerden hangisi kaldırılabilir?
+    A) Dernekler önceden izin alınmaksızın kurulurlar.  ✔
+    B) Suç ve cezalar geçmişe yürütülemez.
+    C) Kişinin maddi ve manevi varlığının bütünlüğüne dokunulamaz.
+    D) Kimse din, vicdan, düşünce ve kanaatlerini açıklamaya zorlanamaz.
+    E) Suçluluğu mahkeme kararıyla saptanıncaya kadar kimse suçlu sayılamaz.
+  — skor 0.22 | Polis Mevzuatı / 2911 Sayılı Toplantı ve Gösteri Yürüyüşleri Kanunu | published | id df2938d3-e80d-4b89-adf8-c791bf5be261
+    2911 sayılı Toplantı ve Gösteri Yürüyüşleri Kanunu’na göre; 17 nci maddede belirtilen durumlarda toplantının ÖNCEDEN TEBLİĞ ŞARTI ARANMAKSIZIN bölge valiliği, valilik veya kaymakamlıklarca ertelenebileceği veya yasaklanabileceği hâller nerede gösterilir?
+    A) Kanunun kendisinde tek tek sayılır
+    B) Cumhurbaşkanlığı kararnamesinde gösterilir
+    C) İçişleri Bakanlığı genelgesinde gösterilir
+    D) Valilik takdirinde olup ayrıca düzenleme yapılmaz
+    E) Yönetmelikte gösterilir  ✔
+
+## 5253-p1-02
+ADAY: Denetimde yetkilendirilen görevliler, daha önce faaliyetten men edilmemiş bir dernek lokalinde 6136 sayılı Kanun'a aykırı olarak silah satıldığını tespit etmiştir. 5253 sayılı Kanun'a göre bu tespitin sonucu aşağıdakilerden hangisidir?
+ADAY DOĞRU: Lokal belgesi mülki idare amirince iptal edilir.
+  — skor 0.36 | Polis Mevzuatı / 2559 Sayılı Polis Vazife ve Salâhiyet Kanunu (PVSK) | published | id 7f98ab62-81b9-4d26-95d8-ac9efa20dfc9
+    Bir derneğe ait olup yalnız üyelerinin yararlanması için açılan bir lokal, iç yönetmeliğine aykırı faaliyet göstermektedir. 2559 sayılı PVSK'nın 8 inci maddesine göre bu lokalin faaliyetten men edilebilmesi için aşağıdakilerden hangisinin tespit edilmesi gerekir?
+    A) Birden fazla denetim sonunda ve yazılı ihtara rağmen umuma açık yer durumuna geldiğinin  ✔
+    B) Tek bir denetim sonunda ve yazılı ihtara rağmen umuma açık yer durumuna geldiğinin
+    C) Birden fazla denetim sonunda ve sözlü ihtara rağmen umuma açık yer durumuna geldiğinin
+    D) Bir yıl içinde yapılan üç ayrı denetimde umuma açık yer durumuna geldiğinin
+    E) Yazılı ihtar yapılmaksızın, birden fazla denetim sonunda umuma açık yer durumuna geldiğinin
+  — skor 0.23 | Polis Mevzuatı / 5253 Sayılı Dernekler Kanunu | published | id 13166e43-2e54-44ba-a7a7-6259ee87df8e
+    5253 sayılı Dernekler Kanunu’na göre dernekler, yılsonu itibarıyla faaliyetlerini, gelir ve gider işlemlerinin sonuçlarını düzenleyecekleri beyanname ile her yıl hangi ayın sonuna kadar mülki idare amirliğine vermekle yükümlüdürler?
+    A) Nisan  ✔
+    B) Haziran
+    C) Eylül
+    D) Aralık
+  — skor 0.20 | Polis Mevzuatı / 6136 Sayılı Ateşli Silahlar ve Bıçaklar Hakkında Kanun | published | id b229e1f1-5c8c-4d1f-b8d2-f3a8a3ee0cce
+    Evinde bulundurma ruhsatlı tabancası bulunan bir kişi, başka bir ile taşınırken nakil izin belgesi almadan silahını yeni evine götürmüştür. 6136 sayılı Kanun'a göre bu fiilin yaptırımı ve bu yaptırımı uygulamaya yetkili makam aşağıdakilerin hangisinde birlikte doğru verilmiştir?
+    A) Hapis ve adlî para cezası — ceza mahkemesi
+    B) İdari para cezası — Cumhuriyet başsavcılığı
+    C) İdari para cezası — il emniyet müdürü
+    D) Adlî para cezası — sulh ceza hâkimi
+    E) İdari para cezası — mülki idare amiri  ✔
+  — skor 0.18 | Polis Mevzuatı / 2918 Sayılı Karayolları Trafik Kanunu | published | id 5e00fd33-253c-4714-8a9c-37cbcf42aa7e
+    Bir trafik denetiminde görevliler, sürücü belgesi sahibi bir kişide sağlığı bakımından sürücülüğe engel aşikâr bir değişiklik bulunduğunu tespit etmiştir. 2918 sayılı Karayolları Trafik Kanunu'na göre bu durumda aşağıdakilerden hangisi yapılır?
+    A) Sürücü belgesi geri alınarak kişinin sağlık kuruluşlarında muayenesi istenir.  ✔
+    B) Sürücü belgesi kişide bırakılarak kendisine sağlık raporu getirmesi için süre verilir.
+    C) Sürücü belgesi, belge vermeye yetkili kurumca doğrudan iptal edilir.
+    D) Kişi hakkında idari para cezası uygulanarak araç trafikten menedilir.
+    E) Durum il trafik komisyonuna bildirilir ve komisyon kararına göre işlem yapılır.
+  — skor 0.18 | Polis Mevzuatı / 657 Sayılı Devlet Memurları Kanunu | published | id 87d7fe02-bba4-4225-8512-c9e28924a96a
+    Bir ilçe emniyet müdürlüğünde görevli polis memurunun dikkatsizliği sonucu birime ait bir telsiz cihazı hasar görmüştür. Zararın tutarı, fiilin meydana geldiği tarihte en alt derecenin birinci kademesindeki memurun brüt aylığının yarısını geçmemektedir ve polis memuru zararı ödemeyi kabul etmiştir. 657 sayılı Kanun'a göre bu zararın ödettirilmesi ile ilgili aşağıdakilerden hangisi doğrudur?
+    A) Zarar, disiplin amirinin ya da yetkili disiplin kurulunun vereceği karara göre memurca ödenir.  ✔
+    B) Zarar, disiplin soruşturması tamamlandıktan sonra kurumca genel hükümlere göre açılacak davayla tahsil edilir.
+    C) Zarar, atamaya yetkili amirin onayıyla memurun aylığından kesilmek suretiyle ödettirilir.
+    D) Zarar, memurun kusuru mahkemece tespit edildikten sonra kendisinden ödettirilir.
+    E) Zarar, kurum üst yöneticisinin kararıyla taksitlendirilerek memurdan tahsil edilir.
+
+## 5253-p1-03
+ADAY: I. Cezanın infazının tamamlanması II. Cezanın affa uğraması III. Yasaklanmış hakların geri verilmesi kararı verilmesi 5253 sayılı Kanun'a göre, uyuşturucu veya uyarıcı madde imal ve ticareti suçundan mahkûm olan bir kişinin derneğin yönetim kurulunda görev alabilmesini yukarıdakilerden hangileri sağ
+ADAY DOĞRU: Yalnız III
+  — skor 0.28 | Polis Mevzuatı / 6136 Sayılı Ateşli Silahlar ve Bıçaklar Hakkında Kanun | published | id 097333fb-71d1-40bb-ba67-cf4afe45b2b4
+    Ateşli silahla işlenen suçlardan hükümlü bulunanlar ile taksirli suçlar hariç olmak üzere bir yıldan fazla hapis cezasına mahkûm olanlara, mahkûm olunan cezanın infazının tamamlandığı tarihten itibaren - - - - yıl geçmedikçe ve haklarında yasaklanmış hakların geri verilmesine ilişkin karar verilmedikçe, ateşli silah taşıma ve bulundurma izni verilemez. 6136 sayılı Ateşli Silahlar ve Bıçaklar ile D
+    A) bir
+    B) iki
+    C) üç
+    D) dört
+    E) beş  ✔
+  — skor 0.23 | Ceza Hukuku / Türk Ceza Kanunu | published | id c5ddac85-592e-4769-b86a-5b011f144639
+    I. Zehirli madde katma II. Bozulmuş veya değiştirilmiş gıda ya da ilaçların ticareti III. Radyasyon yayma IV. Uyuşturucu veya uyarıcı madde imal ve ticareti Yukarıdakilerden hangileri kamunun sağlığına karşı suçlar arasında düzenlenmiştir?
+    A) I ve II
+    B) II ve III
+    C) I ve IV
+    D) II ve IV
+    E) I, II ve IV  ✔
+  — skor 0.22 | Ceza Hukuku / Türk Ceza Kanunu | published | id e5ba7044-c946-430f-9500-fd2a129e3aa9
+    Uyuşturucu veya uyarıcı madde imal ve ticareti suçunda aşağıdaki hâllerden hangisi cezayı bir kat artırır?
+    A) Maddenin eroin veya kokain olması
+    B) Suçun, suç işlemek için kurulmuş örgütün faaliyeti çerçevesinde işlenmesi  ✔
+    C) Suçun hastaneye iki yüz metreden yakın yerde işlenmesi
+    D) Suçun üç kişi tarafından birlikte işlenmesi
+    E) Suçun sağlık çalışanı tarafından işlenmesi
+  — skor 0.22 | Ceza Hukuku / Türk Ceza Kanunu | published | id 113614da-a13e-42a5-a8ef-53f204053e8e
+    I. Hapis cezasına mahkûmiyet hükümleri II. Adli para cezasına mahkûmiyet hükümleri III. Cezanın ertelenmesine ilişkin kararlar IV. Yasaklanmış hakların geri verilmesine ilişkin kararlar Yukarıdaki kararlardan hangileri adli sicil kaydına alınmayıp doğrudan arşive kaydedilir?
+    A) Yalnız III
+    B) I ve III
+    C) II ve IV
+    D) I, II ve IV
+    E) II, III ve IV  ✔
+  — skor 0.21 | Ceza Hukuku / Türk Ceza Kanunu | published | id 5e82cc0e-c903-4d1c-98ae-830d579c20fa
+    I. Fuhuş II. Kasten öldürme III. Dolandırıcılık IV. Uyuşturucu veya uyarıcı madde imal ve ticareti 5237 sayılı Türk Ceza Yasası'na göre yukarıdaki suçlardan hangileri, vatandaş veya yabancı tarafından yabancı ülkede işlense bile Türkiye'de kovuşturma yapılır?
+    A) I ve II
+    B) II ve III
+    C) I ve IV  ✔
+    D) III ve IV
+    E) I, II ve IV
+
+## 5253-p1-04
+ADAY: 5253 sayılı Kanun'a göre, yıllık faaliyetlerini ve gelir ve gider işlemlerinin sonuçlarını gösteren beyannameyi mülki idare amirliğine vermeyen bir dernek için öngörülen idarî para cezası aşağıdakilerden hangisine verilir?
+ADAY DOĞRU: Yönetim kurulu başkanına
+  — skor 0.57 | Polis Mevzuatı / 5253 Sayılı Dernekler Kanunu | published | id 13166e43-2e54-44ba-a7a7-6259ee87df8e
+    5253 sayılı Dernekler Kanunu’na göre dernekler, yılsonu itibarıyla faaliyetlerini, gelir ve gider işlemlerinin sonuçlarını düzenleyecekleri beyanname ile her yıl hangi ayın sonuna kadar mülki idare amirliğine vermekle yükümlüdürler?
+    A) Nisan  ✔
+    B) Haziran
+    C) Eylül
+    D) Aralık
+  — skor 0.27 | Genel Kültür ve Güncel Olaylar / Genel Kültür | published | id e6635560-3ba7-4758-8102-ee9e63abc3b8
+    5188 sayılı Özel Güvenlik Hizmetlerine Dair Kanun’a göre, mülki idare amirlerince istenen ilave tedbirleri almayan kişi, kurum, kuruluş veya şirketlerin yöneticilerine kaç Türk lirası idari para cezası verilir?
+    A) Bin
+    B) Üç bin
+    C) Beş bin
+    D) Altı bin  ✔
+    E) On bin
+  — skor 0.20 | Polis Mevzuatı / 5326 Sayılı Kabahatler Kanunu | published | id 3dc788e5-7618-4682-b135-64c4b61154a3
+    Devriye görevindeki polis memurları, hususi otomobilinin sürücü koltuğunda sigara içen bir sürücüyü durdurmuştur. 2026 idarî para cezası uygulamasına göre bu olayda aşağıdakilerden hangisi doğrudur?
+    A) 4207 sayılı Kanun uyarınca kolluk tarafından idarî para cezası verilir; bir yıllık dönemde tekerrürde ceza kademeli olarak artırılır  ✔
+    B) Hususi araçta sigara içmek hiçbir yaptırıma tâbi değildir
+    C) Kabahatler Kanunu m.39 uyarınca belediye zabıtası ceza verir
+    D) Ceza ancak mülkî amir tarafından verilebilir
+    E) Sürücüye ceza verilemez; yalnızca araç sahibine ceza verilir
+  — skor 0.20 | Polis Mevzuatı / 5395 Sayılı Çocuk Koruma Kanunu | published | id d23968e2-c5d1-4377-bc46-07240fe1bd57
+    5395 sayılı Çocuk Koruma Kanunu’na göre, çalıştırma yasağına aykırı olarak işçi çalıştıran kişiye ilk aşamada hangi makam tarafından ne miktarda idari para cezası verilir?
+    A) Aile mahkemesi tarafından, iş yeri başına brüt asgari ücretin yedi katı tutarında
+    B) Mahallîn mülki idare amiri tarafından, aykırı olarak çalıştırdığı her bir kişi başına brüt asgari ücretin yedi katı tutarında
+    C) Cumhuriyet başsavcılığı tarafından, aykırı olarak çalıştırdığı her bir kişi başına brüt asgari ücretin üç katı tutarında
+    D) Mahallîn mülki idare amiri tarafından, aykırı olarak çalıştırdığı her bir kişi başına brüt asgari ücretin üç katı tutarında  ✔
+    E) Aile ve Sosyal Hizmetler Bakanlığı il müdürlüğü tarafından, iş yeri başına brüt asgari ücretin üç katı tutarında
+  — skor 0.19 | Polis Mevzuatı / 5326 Sayılı Kabahatler Kanunu | published | id 80e0e3c0-6d6b-470b-9a45-a631fe334bf0
+    5326 sayılı Kabahatler Kanunu'na göre içtima kurallarıyla ilgili; I. Bir fiil ile birden fazla kabahatin işlenmesi hâlinde, tanımlarda sadece idarî para cezası öngörülmüşse en ağır idarî para cezası verilir. II. Aynı kabahatin birden fazla işlenmesi hâlinde her bir kabahatle ilgili olarak ayrı ayrı idarî para cezası verilir. III. Kesintisiz fiille işlenebilen kabahatlerde, idarî yaptırım kararı ve
+    A) Yalnız I ve II
+    B) Yalnız II ve III
+    C) I, II ve III  ✔
+    D) I, III ve IV
+    E) I, II, III ve IV
+
+## 5253-p1-05
+ADAY: 5253 sayılı Kanun'a göre, dernek faaliyetlerini yürütmek amacıyla gerekli görülen yerlerde açılabilen temsilciliği aşağıdakilerden hangisi AÇAMAZ?
+ADAY DOĞRU: Şubeler
+  — skor 0.33 | Polis Mevzuatı / 5253 Sayılı Dernekler Kanunu | published | id 8b9fa452-eee3-401f-8edd-6821f186dc17
+    5253 sayılı Dernekler Kanunu hükümlerine göre kaç yaşını bitiren ayırt etme gücüne sahip küçükler; toplumsal, ruhsal, ahlaki, bedensel ve zihinsel yetenekleri ile spor, eğitim ve öğretim haklarını, sosyal ve kültürel varlıklarını, aile yapısını ve özel yaşantılarını korumak ve geliştirmek amacıyla yasal temsilcilerinin yazılı izni ile çocuk dernekleri kurabilir?
+    A) On
+    B) On iki
+    C) On beş  ✔
+    D) On sekiz
+    E) On üç
+  — skor 0.26 | Polis Mevzuatı / 5253 Sayılı Dernekler Kanunu | published | id 13166e43-2e54-44ba-a7a7-6259ee87df8e
+    5253 sayılı Dernekler Kanunu’na göre dernekler, yılsonu itibarıyla faaliyetlerini, gelir ve gider işlemlerinin sonuçlarını düzenleyecekleri beyanname ile her yıl hangi ayın sonuna kadar mülki idare amirliğine vermekle yükümlüdürler?
+    A) Nisan  ✔
+    B) Haziran
+    C) Eylül
+    D) Aralık
+  — skor 0.21 | Polis Mevzuatı / 3201 Sayılı Emniyet Teşkilat Kanunu | published | id 65127cb8-206a-45a7-803a-94a0c7db3b27
+    3201 sayılı Emniyet Teşkilat Kanunu'na göre, İçişleri Bakanlığınca gerekli görülen yerlerde kurulan polis çevik kuvvet birimleri, ilçelerde hangi birime bağlı olarak kurulur?
+    A) Emniyet amirliklerine  ✔
+    B) Emniyet müdürlüklerine
+    C) Doğrudan kaymakamlığa
+    D) İl emniyet müdürlüğü çevik kuvvet şube müdürlüğüne
+    E) Doğrudan Emniyet Genel Müdürlüğüne
+  — skor 0.20 | Polis Mevzuatı / 2559 Sayılı Polis Vazife ve Salâhiyet Kanunu (PVSK) | published | id e3547779-3c68-4aad-a8e9-9242968ce770
+    2559 sayılı Polis Vazife ve Salahiyet Kanunu’na göre polisçe kat’i delil elde edilmesi hâlinde Devletin ülkesi ve milletiyle bölünmez bütünlüğüne, Anayasal düzenine, genel güvenliğe ve genel ahlâka zararı dokunacak oyun oynatılan, temsil verilen, film veya video bant gösterilen yerler ile internet üzerinden yapılan yayınlara izin verilen yerler mahallin en büyük mülkî amiri tarafından kaç günü geç
+    A) Otuz  ✔
+    B) Yirmi
+    C) On beş
+    D) On
+  — skor 0.20 | Ceza Muhakemesi Hukuku / 5271 Sayılı Ceza Muhakemesi Kanunu (CMK) | published | id 942c07d1-dd45-4649-969e-7316d962decc
+    Örgüt faaliyeti çerçevesinde işlenmeyen suçlarda teknik araçlarla izleme koruma tedbirine, kural olarak en fazla ………………….. için başvurulması mümkün olup bu süre gerekli ise ………….. uzatılabilir. Cümlede boş bırakılan yerlere sırasıyla aşağıdakilerden hangisi getirilmelidir?
+    A) üç hafta – bir hafta  ✔
+    B) dört hafta – bir kez
+    C) bir ay – bir kez
+    D) üç ay – bir ay
+    E) altı ay – birden fazla
+
+## 5253-p1-06
+ADAY: 5253 sayılı Kanun'a göre, bir derneğin genel kolluk hizmetlerine hazırlayıcı öğretim ve eğitim faaliyetinde bulunması hâlinde öngörülen yaptırım aşağıdakilerden hangisidir?
+ADAY DOĞRU: Hapis cezası ve tesisin kapatılması
+  — skor 0.28 | Ceza Hukuku / Türk Ceza Kanunu | published | id d9618711-f801-4def-80ac-f3fba7841606
+    Daha önce suç işlememiş olan 20 yaşındaki (A), motosikleti ile insanların kalabalık olarak bulunduğu bir caddede ilerlerken sürücülüğüne ve yeteneklerine güvenerek gözlerini kapatıp tek elini kullanarak ilerlerken aniden önüne çıkan (B)'nin yaralanmasına neden olur. Mahkemece suçun bilinçli taksirle işlendiği kabul edilerek (A), karşılığında hapis veya adli para cezasının seçimlik olarak öngörüldü
+    A) Adli para cezasına çevrilebilir.
+    B) Adli para cezasına çevrilmesi zorunludur.
+    C) Seçenek tedbirlere çevrilmesi zorunludur.
+    D) Seçenek tedbirlere çevrilmesi mümkün olup bu konuda yargıcın takdir yetkisi vardır.
+    E) Adli para cezasına veya diğer seçenek yaptırımlara çevrilemez.  ✔
+  — skor 0.22 | Polis Mevzuatı / 5253 Sayılı Dernekler Kanunu | published | id 8b9fa452-eee3-401f-8edd-6821f186dc17
+    5253 sayılı Dernekler Kanunu hükümlerine göre kaç yaşını bitiren ayırt etme gücüne sahip küçükler; toplumsal, ruhsal, ahlaki, bedensel ve zihinsel yetenekleri ile spor, eğitim ve öğretim haklarını, sosyal ve kültürel varlıklarını, aile yapısını ve özel yaşantılarını korumak ve geliştirmek amacıyla yasal temsilcilerinin yazılı izni ile çocuk dernekleri kurabilir?
+    A) On
+    B) On iki
+    C) On beş  ✔
+    D) On sekiz
+    E) On üç
+  — skor 0.21 | Ceza Hukuku / Türk Ceza Kanunu | published | id c714ffa6-0216-4b50-9623-0520abc41268
+    Daha önce suç işlememiş olan 19 yaşındaki Ahmet, taksirle yaralama suçu işler. Ahmet, karşılığında hapis veya adli para cezasının seçimlik olarak öngörüldüğü bu suç nedeniyle yedi ay süreyle hapis cezasına mahkûm edilir. Buna göre diğer koşulların varlığı hâlinde Ahmet'in cezasının kısa süreli hapis cezasının seçenek yaptırımlara çevrilmesi ile ilgili aşağıdaki ifadelerden hangisi doğrudur?
+    A) Suç taksirle işlendiği için seçenek yaptırımlara çevrilemez.
+    B) Seçenek yaptırımlardan adli para cezasına çevrilmesi zorunludur.
+    C) Seçenek yaptırımlardan adli para cezası dışındaki tedbirlere çevrilmesi zorunludur.
+    D) Seçenek yaptırımlara çevrildiği takdirde uygulamada asıl mahkûmiyet hapis cezasıdır.
+    E) Seçenek yaptırımlara çevrilmesi mümkün olup bu konuda hâkimin takdir yetkisi vardır.  ✔
+  — skor 0.21 | Ceza Hukuku / Türk Ceza Kanunu | published | id 438f79bd-f73c-41b6-9d44-e98608a9a1a6
+    Fail tarafından işlendiği sırada 1 yıldan 5 yıla kadar hapis cezası öngörülen bir suçun yaptırımı, yargılama sırasında gerçekleşen değişiklikle 2 yıldan 4 yıla kadar hapis cezası veya beş yüz günlük adli para cezası olarak belirleniyor. Buna göre ceza kanunlarının uygulanmasıyla ilgili aşağıdaki ifadelerden hangisi doğrudur?
+    A) Alt sınırın az olması dolayısıyla failin lehine olduğu için eski hüküm uygulanır.
+    B) Üst sınırın az olması dolayısıyla failin lehine olduğu için yeni hüküm uygulanır.
+    C) Hapis cezasının yanında adli para cezasını seçenek olarak öngördüğü için lehe olduğundan yeni hüküm uygulanır.
+    D) Her iki kanunun da ilgili bütün hükümleri olaya uygulanır ve ortaya çıkan sonuçlar birbiriyle karşılaştırılarak lehe olan hüküm belirlenir.  ✔
+    E) Alt sınır bakımından eski hüküm, üst sınır bakımından yeni hüküm olaya ayrı ayrı uygulanarak failin lehine olan hüküm belirlenir.
+  — skor 0.21 | Ceza Hukuku / Türk Ceza Kanunu | published | id aedfec9d-d367-4892-b183-39a766cde904
+    Bir suçun kanuni tanımında hapis ve adlî para cezası seçimlik olarak öngörülmüş, mahkeme daha önce suç işlememiş yirmi bir yaşındaki fail hakkında beş ay hapis cezasını seçmiştir. Buna göre hangisi doğrudur?
+    A) Hapis cezası mutlaka adlî para cezasına çevrilir.
+    B) Hapis cezası adlî para cezasına çevrilemez; koşulları varsa diğer seçenek yaptırımlara çevrilebilir.  ✔
+    C) Kısa süreli hapis hiçbir seçenek yaptırıma çevrilemez.
+    D) Beş ay hapis cezasının seçenek yaptırıma çevrilmesi zorunludur.
+    E) Hapis cezası yalnız sürücü belgesinin geri alınmasına çevrilebilir.
+
+## 5253-p1-07
+ADAY: 5253 sayılı Kanun'a göre, kamu yararına çalışan bir dernekte hapis cezası gerektiren suç işlendiğinin denetimle tespit edilmesi üzerine görevden uzaklaştırılan organların yerine kayyım atanmasına aşağıdakilerden hangisi karar verir?
+ADAY DOĞRU: Sulh hukuk mahkemesi
+  — skor 0.30 | Ceza Hukuku / Türk Ceza Kanunu | published | id c5e807ea-c81c-4622-9a57-07149d890fa3
+    I. Kendi altsoyu üzerinde kayyımlık yapabilme II. Vakıf veya dernek yöneticisi olabilme III. Sürekli, süreli veya geçici bir kamu görevinde istihdam edilme IV. Bir kamu kurumunun iznine tabi bir meslek veya sanatı, kendi sorumluluğu altında serbest meslek erbabı veya tacir olarak icra etme 5237 sayılı Türk Ceza Yasası'na göre mahkûm olduğu hapis cezası ertelenen veya denetimli serbestlik tedbiri u
+    A) Yalnız I  ✔
+    B) Yalnız II
+    C) I ve III
+    D) I ve IV
+    E) III ve IV
+  — skor 0.27 | Polis Mevzuatı / 5253 Sayılı Dernekler Kanunu | published | id d1abdb6f-0920-47c0-ae11-3b8ca80e71d5
+    5253 sayılı Dernekler Kanunu’na göre “kamu yararına çalışan dernekler” ile ilgili aşağıdakilerden hangisi doğrudur?
+    A) Kamu yararına çalışan dernekler en az üç yılda bir denetlenir.
+    B) Kamu yararına çalışan dernekler, Cumhurbaşkanı kararıyla tespit edilir.  ✔
+    C) Kamu yararına çalışan dernek statüsünün kazanılması, kaybedilmesi ve gerekli belgeler ile diğer esas ve usuller genelge ile düzenlenir.
+    D) Bir derneğin kamu yararına çalışan derneklerden sayılabilmesi için, en az iki yıldan beri faaliyette bulunması şarttır.
+  — skor 0.23 | Ceza Hukuku / Türk Ceza Kanunu | published | id da7c4245-c310-4732-a2d3-1cafbb2c0532
+    I. Suç tanımında hapis cezası ile adli para cezasının seçenek olarak öngörüldüğü durumlarda, hapis cezasına hükmedilmişse bu ceza artık adli para cezasına çevrilmez. II. Bilinçli taksirle işlenen suçlardan dolayı hükmolunan hapis cezası uzun süreli de olsa bu ceza, diğer koşulların varlığı durumunda adli para cezasına çevrilebilir. III. Hüküm kesinleştikten sonra Cumhuriyet savcılığınca yapılan te
+    A) Yalnız I  ✔
+    B) Yalnız II
+    C) Yalnız III
+    D) I ve II
+    E) II ve III
+  — skor 0.23 | Ceza Hukuku / Türk Ceza Kanunu | published | id 48c326d8-f5b0-4460-b8f3-91b5075185ad
+    I. Kamu yararına çalışan dernekler ya da kooperatiflere karşı girişilen taahhütlerin yerine getirilmesiyle ilgili usulsüzlükler bu suç kapsamında cezalandırılmaz. II. Suçun işlenmesi suretiyle yararına haksız menfaat sağlanan tüzel kişiler hakkında bunlara özgü güvenlik tedbirlerine hükmolunur. III. Suçun oluşabilmesi için failin saiki veya amacı önem taşımaz. Edimin ifasına fesat karıştırma suçuy
+    A) Yalnız I  ✔
+    B) Yalnız II
+    C) I ve II
+    D) I ve III
+    E) I, II ve III
+  — skor 0.20 | Anayasa Hukuku / T.C. Anayasası | published | id c34b6c03-96a0-401a-9a20-7d2ea72769ea
+    I. Yargısal örgütleri denetleyemez. II. Kamu kurumu niteliğindeki meslek kuruluşlarını denetleyebilir. III. Kamu yararına çalışan dernekleri denetleyebilir. IV. Askeri makamları denetleyemez. V. Vakıf iştiraklerini denetleyebilir. Devlet Denetleme Kurulunun denetim alanı ile ilgili yukarıda verilen ifadelerden hangileri söylenemez?
+    A) Yalnız IV  ✔
+    B) Yalnız V
+    C) I, II ve III
+    D) III, IV ve V
+    E) I, II, III ve V
+
+## 5253-p1-08
+ADAY: 5253 sayılı Kanun'a göre, bir derneğin yurt dışındaki kişi, kurum ve kuruluşlardan yardım alabilmesi aşağıdakilerden hangisine bağlıdır?
+ADAY DOĞRU: Mülki idare amirliğine önceden bildirimde bulunmasına
+  — skor 0.36 | Polis Mevzuatı / 2911 Sayılı Toplantı ve Gösteri Yürüyüşleri Kanunu | published | id 504f4ff5-f5e0-47cb-8480-5d5fa021d29a
+    Türkiye'de bulunan bir grup yabancı, hem kendileri bir gösteri yürüyüşü düzenlemek hem de aynı hafta Türk vatandaşlarınca düzenlenen bir toplantıda pankart taşıyıp topluluğa hitap etmek istemektedir. 2911 sayılı Toplantı ve Gösteri Yürüyüşleri Kanunu'na göre bu iki talep bakımından aşağıdakilerden hangisi doğrudur?
+    A) Yürüyüşü düzenlemeleri İçişleri Bakanlığının iznine, toplantıda topluluğa hitap etmeleri mülki idare amirliğine bildirimde bulunmaya bağlıdır.  ✔
+    B) Yürüyüşü düzenlemeleri mülki idare amirliğine bildirimde bulunmaya, toplantıda topluluğa hitap etmeleri İçişleri Bakanlığının iznine bağlıdır.
+    C) Her iki talep de İçişleri Bakanlığından önceden izin alınmasına bağlıdır; ayrıca bildirim aranmaz.
+    D) Her iki talep de mahallin en büyük mülki idare amirliğine bildirimde bulunulmasına bağlıdır; izin aranmaz.
+    E) Yürüyüşü düzenlemeleri valiliğin iznine, toplantıda topluluğa hitap etmeleri Dışişleri Bakanlığının iznine bağlıdır.
+  — skor 0.29 | Polis Mevzuatı / 5253 Sayılı Dernekler Kanunu | published | id 13166e43-2e54-44ba-a7a7-6259ee87df8e
+    5253 sayılı Dernekler Kanunu’na göre dernekler, yılsonu itibarıyla faaliyetlerini, gelir ve gider işlemlerinin sonuçlarını düzenleyecekleri beyanname ile her yıl hangi ayın sonuna kadar mülki idare amirliğine vermekle yükümlüdürler?
+    A) Nisan  ✔
+    B) Haziran
+    C) Eylül
+    D) Aralık
+  — skor 0.27 | Genel Kültür ve Güncel Olaylar / Genel Kültür | published | id e6635560-3ba7-4758-8102-ee9e63abc3b8
+    5188 sayılı Özel Güvenlik Hizmetlerine Dair Kanun’a göre, mülki idare amirlerince istenen ilave tedbirleri almayan kişi, kurum, kuruluş veya şirketlerin yöneticilerine kaç Türk lirası idari para cezası verilir?
+    A) Bin
+    B) Üç bin
+    C) Beş bin
+    D) Altı bin  ✔
+    E) On bin
+  — skor 0.25 | Polis Mevzuatı / 7068 Sayılı Genel Kolluk Disiplin Hükümleri Kanunu | published | id c5c19aec-0cf5-425e-9b65-31cee7cbcba4
+    7068 sayılı Kanun'a göre disiplin soruşturmacısı olarak görevlendirilebilecek personel bakımından Kanunun getirdiği sınırlama aşağıdakilerden hangisidir?
+    A) Genel idare hizmetleri sınıfı da dâhil olmak üzere kurumun her sınıftan personeli görevlendirilebilir.
+    B) Mülki idare amirliği ve emniyet hizmetleri sınıflarından olanlar ile Jandarma Genel Komutanlığı ve Sahil Güvenlik Komutanlığı personeli dışında hiçbir personel görevlendirilemez.  ✔
+    C) Yalnızca emniyet hizmetleri sınıfından olanlar görevlendirilebilir; mülki idare amirliği hizmetleri sınıfından görevlendirme yapılamaz.
+    D) Yalnızca Bakanlık ile ilgisine göre Emniyet Genel Müdürlüğü, Jandarma Genel Komutanlığı ve Sahil Güvenlik Komutanlığı müfettişleri disiplin soruşturmacısı olarak görevlendirilebilir.
+    E) Avukatlık hizmetleri sınıfı ile teknik hizmetler sınıfından olanlar da görevlendirilebilir.
+  — skor 0.24 | Polis Mevzuatı / 5901 Sayılı Türk Vatandaşlığı Kanunu | published | id 920b7e3e-176f-46bb-9d74-8f16c3ace110
+    5901 sayılı Türk Vatandaşlığı Kanunu'na göre, yabancı bir devletin Türkiye'nin menfaatlerine uymayan bir hizmetinde bulunan kişiye bu görevi bırakması gerektiği yurt içinde hangi makam tarafından bildirilir?
+    A) Dış temsilcilikler
+    B) Emniyet genel müdürlüğü
+    C) Cumhuriyet başsavcılığı
+    D) Mülki idare amirleri  ✔
+    E) Nüfus müdürlükleri

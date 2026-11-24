@@ -1,0 +1,104 @@
+[
+  {
+    "id": "6458-p1-01",
+    "articleNo": "57",
+    "kok": "6458 sayılı Kanun'a göre, sınır dışı etmek üzere idari gözetim kararını alan merci ile bu karara karşı başvurulacak merci sırasıyla aşağıdakilerden hangisidir?",
+    "siklar": {
+      "A": "Valilik – İdare mahkemesi",
+      "B": "Valilik – Sulh ceza hâkimi",
+      "C": "Kolluk – Sulh ceza hâkimi",
+      "D": "Göç İdaresi Başkanlığı – İdare mahkemesi",
+      "E": "Valilik – Göç İdaresi Başkanlığı"
+    },
+    "dogru": "B",
+    "aciklama": "Sınır dışı etmek üzere idari gözetimde karar ile karara karşı yol, 57 nci maddede ayrı mercilere verilmiştir. İkinci fıkraya göre hakkında sınır dışı etme kararı alınanlardan kaçma ve kaybolma riski bulunanlar gibi sayılan yabancılar hakkında 'valilik tarafından idari gözetim kararı alınır'. Karara karşı yolu altıncı fıkra gösterir: 'İdari gözetim altına alınan kişi veya yasal temsilcisi ya da avukatı, idari gözetim kararına karşı sulh ceza hâkimine başvurabilir.' Sıra valilik – sulh ceza hâkimidir; doğru cevap B'dir. A, sınır dışı etme kararının yargı yolunu gözetim kararına taşır: Kanun sınır dışı etme kararına karşı idare mahkemesine başvurmayı öngörür (53/3), gözetim kararına karşı ise sulh ceza hâkimini gösterir. C, birinci fıkradaki kolluk görevini karar yetkisi sanır: Kanun kolluğa yakalama ve bildirim görevi verir; gözetim kararını ikinci fıkra valiliğe verir. C'nin başvuru mercii doğrudur, ama kararı alan merci yanlıştır. D ve E'deki kurum Kanunda 'Genel Müdürlük' (bugün Göç İdaresi Başkanlığı) olarak geçer ve bu gözetimde ne kararı alan ne de karara karşı başvurulan mercidir. D'deki idare mahkemesi, A'daki gibi, sınır dışı etme kararına karşı başvurulan yerdir. E, gözetim kararına karşı başvurunun bu kuruma yapılacağını varsayar; altıncı fıkra ise başvuru mercii olarak sulh ceza hâkimini gösterir.",
+    "dayanak": "6458 sayılı Kanun md 57/2, 57/6 (karş. md 57/1, 53/3)",
+    "zorluk": "medium",
+    "tur": "dogrudan"
+  },
+  {
+    "id": "6458-p1-02",
+    "articleNo": "53",
+    "kok": "Terör örgütü üyesi olduğu değerlendirilerek hakkında sınır dışı etme kararı alınan yabancı, süresi içinde dava açmış olup ülkeden kendi isteğiyle ayrılmak istememektedir. 6458 sayılı Kanun'a göre, bu karar en erken ne zaman yerine getirilebilir?",
+    "siklar": {
+      "A": "Kararın tebliğinden hemen sonra",
+      "B": "Dava açma süresi dolduğunda",
+      "C": "Yürütmeyi durdurma istemi reddedildiğinde",
+      "D": "Yargılama süreci sonuçlandığında",
+      "E": "Kanun yolu incelemesi tamamlandığında"
+    },
+    "dogru": "D",
+    "aciklama": "53 üncü maddenin üçüncü fıkrası, dava konusu sınır dışı etme kararının yerine getirilmesini şu cümleye bağlar: 'Yabancının rızası saklı kalmak kaydıyla, dava açma süresi içinde veya yargı yoluna başvurulması hâlinde yargılama sonuçlanıncaya kadar yabancı sınır dışı edilmez.' Yabancı süresi içinde dava açmıştır ve ülkeden ayrılmaya razı değildir; karar ancak yargılama sonuçlandığında, dava reddedilmişse yerine getirilebilir. Doğru cevap D'dir. Bu yasak doğrudan Kanundan doğar ve kararın dayandığı sebebe göre ayrım yapmaz. A, terör örgütü üyeliğine dayanan kararın beklemeden yerine getirileceğini varsayar; fıkrada böyle bir istisna yoktur. Terör örgütü üyelerini bu korumanın dışında tutan istisna 2016–2019 arasında yürürlükteydi, bugünkü metinde yer almaz. B, cümlenin yalnız ilk kısmını uygular: dava açma süresi içinde yabancı sınır dışı edilmez, ama dava açılmışsa yasak yargılama sonuçlanıncaya kadar sürer. C, idari işleme karşı açılan davanın işlemi kendiliğinden durdurmadığı ve durmanın mahkemenin yürütmeyi durdurma kararına bağlı olduğu düşüncesine dayanır; 53/3'teki yasak bir mahkeme kararına bağlanmamıştır. E'deki kanun yolu bu davada yoktur: 'Mahkemenin bu konuda vermiş olduğu karar kesindir.' Yabancı ülkeden ayrılmaya razı olsaydı, rızası saklı tutulduğundan karar yargılama beklenmeden yerine getirilebilirdi.",
+    "dayanak": "6458 sayılı Kanun md 53/3",
+    "zorluk": "hard",
+    "tur": "vaka"
+  },
+  {
+    "id": "6458-p1-03",
+    "articleNo": "55",
+    "kok": "6458 sayılı Kanun'a göre, “sınır dışı etme kararı alınmayacaklar” ile ilgili aşağıdakilerden hangisi YANLIŞTIR?",
+    "siklar": {
+      "A": "Sınır dışı edileceği ülkede işkenceye maruz kalacağı konusunda ciddi emare bulunanlar hakkında karar alınmaz.",
+      "B": "Hayati tehlike arz eden hastalığı için tedavisi devam ederken sınır dışı edileceği ülkede tedavi imkânı bulunmayanlar hakkında karar alınmaz.",
+      "C": "Psikolojik, fiziksel veya cinsel şiddet mağdurları hakkında mağdur destek süreci tamamlanıncaya kadar karar alınmaz.",
+      "D": "Ciddi sağlık sorunları, yaş ve hamilelik durumu nedeniyle seyahat etmesi riskli görülenler hakkında karar alınmaz.",
+      "E": "Bu kapsamdaki yabancılardan belli bir adreste ikamet etmeleri istenebilir."
+    },
+    "dogru": "C",
+    "aciklama": "Yanlış ifade C'dir. 55 inci maddenin birinci fıkrası korumayı her grup için ayrı bir koşula bağlar. Şiddet mağdurlarında koşul tedavidir: '(d) Tedavileri tamamlanıncaya kadar, psikolojik, fiziksel veya cinsel şiddet mağdurları'. 'Mağdur destek süreci' ise aynı fıkrada başka bir grubun, insan ticareti mağdurlarının ölçütüdür: '(ç) Mağdur destek sürecinden yararlanmakta olan insan ticareti mağdurları'. C, (ç) bendindeki koşulu (d) bendindeki gruba aktarır; korumanın varlığını bilip koşulunu bilmeyen aday bu ifadeyi doğru sanar. Öteki ifadeler doğrudur. A, (a) bendinin kısaltılmış hâlidir: 'Sınır dışı edileceği ülkede ölüm cezasına, işkenceye, insanlık dışı ya da onur kırıcı ceza veya muameleye maruz kalacağı konusunda ciddi emare bulunanlar'. B, (c) bendidir ve iki koşulu birlikte arar: tedavinin devam etmesi ve gönderileceği ülkede tedavi imkânının bulunmaması. D, (b) bendidir: 'Ciddi sağlık sorunları, yaş ve hamilelik durumu nedeniyle seyahat etmesi riskli görülenler'. E, ikinci fıkranın ikinci cümlesidir: 'Bu kişilerden, belli bir adreste ikamet etmeleri, istenilen şekil ve sürelerde bildirimde bulunmaları istenebilir.' Hakkında karar alınmayan yabancıya yükümlülük getirilebileceğini beklemeyen aday E'yi yanlış sanar; fıkra bu yükümlülükleri 'istenebilir' diyerek takdire bırakır.",
+    "dayanak": "6458 sayılı Kanun md 55/1-d (karş. md 55/1-a, b, c, ç; 55/2)",
+    "zorluk": "hard",
+    "tur": "onerme"
+  },
+  {
+    "id": "6458-p1-04",
+    "articleNo": "97",
+    "kok": "6458 sayılı Kanun'a göre, davete uymadığı için kolluk tarafından getirilen yabancıyla ilgili aşağıdakilerden hangisi doğrudur?",
+    "siklar": {
+      "A": "Kendisinden bilgi alma süresi dört saati geçemez.",
+      "B": "Yirmi dört saate kadar gözaltında tutulabilir.",
+      "C": "Getirilmesi Cumhuriyet savcısının talimatına bağlıdır.",
+      "D": "Kendisine bildirimde bulunma yükümlülüğü getirilir.",
+      "E": "Getirilebilmesi için hakkında sınır dışı etme kararı alınmış olması gerekir."
+    },
+    "dogru": "A",
+    "aciklama": "Davete uyma yükümlülüğü 97 nci maddededir. Madde, davetin nedenlerini saydıktan sonra kolluğun yetkisini ve bu yetkinin sınırını birlikte koyar: 'Davete uyulmadığında veya uyulmayacağına ilişkin ciddi şüphe olması durumunda yabancılar davet edilmeksizin kolluk tarafından getirilebilirler. Bu işlem, idari gözetim olarak uygulanamaz ve bilgi alma süresi dört saati geçemez.' Getirilen yabancıdan en fazla dört saat bilgi alınabilir; doğru cevap A'dır. B, getirmeyi bir gözaltı gibi düşünür. Kanun ise bu işlemin idari gözetim olarak uygulanmasını yasaklar ve bilgi alma süresini dört saatle sınırlar; yirmi dört saatlik bir tutmaya yer vermez. C, getirmeyi bir adli makamın talimatına bağlar; madde yetkiyi doğrudan kolluğa tanır ve herhangi bir makamın talimatını aramaz. D'deki bildirimde bulunma, 57/A'da sayılan idari gözetime alternatif yükümlülüklerdendir. Bu yükümlülükler, hakkında sınır dışı etme kararı alınmış ve 57 nci maddenin ikinci fıkrası kapsamına giren yabancılar ile idari gözetimi sonlandırılan yabancılar içindir; davete uymamaya bağlanmış bir sonuç değildir. E, getirmeyi önceden alınmış bir sınır dışı etme kararına bağlar. Oysa birinci fıkra daveti, 'Hakkında sınır dışı etme kararı alınma ihtimalinin bulunması' gibi henüz karar bulunmayan hâllere de bağlar; kolluğun getirme yetkisi davete uyulmamasına ya da uyulmayacağına ilişkin ciddi şüpheye dayanır. Aynı dört saatlik üst sınır Kanunda, giriş ve çıkıştaki belge kontrolünde kapsamlı kontrole tabi tutulanların bekletilmesi için de konmuştur (6/5).",
+    "dayanak": "6458 sayılı Kanun md 97 (karş. md 57/A/1, 6/5)",
+    "zorluk": "easy",
+    "tur": "kavram"
+  },
+  {
+    "id": "6458-p1-05",
+    "articleNo": "Ek 1",
+    "kok": "6458 sayılı Kanun'a göre, göçmen kaçakçılığı suçunda kullanıldığı için elkonulan ve sahibine iade edilmeyen aracın değeri kadar teminat, elkoyma tarihinden itibaren otuz gün içinde verilmezse aşağıdakilerden hangisi uygulanır?",
+    "siklar": {
+      "A": "Araç, kovuşturma sonunda verilecek hükme kadar muhafaza altında tutulur.",
+      "B": "Araç sahibine iade edilir; teminat sonradan istenir.",
+      "C": "Sahibine doksan gün ek süre tanınır; bu sürede de teminat vermezse araç tasfiye edilir.",
+      "D": "Araç satılarak bedeli Hazineye gelir kaydedilir.",
+      "E": "Araç, soruşturma ve kovuşturma sonucu beklenmeden tasfiye edilir."
+    },
+    "dogru": "E",
+    "aciklama": "Göçmen kaçakçılığı suçunda kullanılan araca elkoyma Ek 1 inci maddededir. İkinci fıkra, saydığı dört hâlden birinde elkonulan aracın sahibine iade edilmeyeceğini söyler ve teminatın sonucunu şöyle bağlar: 'Bu durumda sahibinin, aracın değeri kadar teminatı elkoyma tarihinden itibaren otuz gün içinde … teslim etmesi halinde, araç sahibine iade edilir. Aksi takdirde, … soruşturma ve kovuşturma sonucu beklenmeksizin derhal tasfiye olunur.' Doğru cevap E'dir. A, elkonulan malın kovuşturma sonucunu beklemesi gerektiği düşüncesine dayanır; fıkra teminat verilmeyen araç için bu bekleyişi açıkça dışlar. B iadeyi öne alır; fıkrada iade, teminatın süresi içinde teslimine bağlıdır. C'deki doksan günlük ek süre Ek 1'de yer almaz; fıkra, teminatın otuz gün içinde teslim edilmemesini doğrudan tasfiyeye bağlar ('Aksi takdirde … derhal tasfiye olunur'). D'de satış tasfiyenin bir yolu olabilir, ama bedelin akıbeti yanlıştır: 'Tasfiyenin satış suretiyle gerçekleşmesi halinde, satıştan elde edilen gelirden aracın muhafaza edilmesi ve satışı için gerekli olan bütün masraflar karşılandıktan sonra kalan miktar, kovuşturma sonucuna göre işlem yapılmak üzere emanet hesabına alınır.' Kalan tutar Hazineye gelir kaydedilmez, emanette tutulur.",
+    "dayanak": "6458 sayılı Kanun Ek md 1/2",
+    "zorluk": "medium",
+    "tur": "dogrudan"
+  },
+  {
+    "id": "6458-p1-06",
+    "articleNo": "9",
+    "kok": "6458 sayılı Kanun'a göre, kamu düzenine veya kamu güvenliğine yönelik ciddi tehdit bulunan yabancı hakkında Türkiye'ye giriş yasağının süresi en fazla kaç yıl olabilir?",
+    "siklar": {
+      "A": "Beş",
+      "B": "Sekiz",
+      "C": "On",
+      "D": "On beş",
+      "E": "Yirmi"
+    },
+    "dogru": "D",
+    "aciklama": "Türkiye'ye giriş yasağının süresi 9 uncu maddenin üçüncü fıkrasında iki cümleyle belirlenir: 'Türkiye'ye giriş yasağının süresi en fazla beş yıldır. Ancak, kamu düzeni veya kamu güvenliği açısından ciddi tehdit bulunması hâlinde bu süre … en fazla on yıl daha artırılabilir.' Ciddi tehdit hâlinde beş yıllık genel üst sınıra en fazla on yıl eklenebilir; toplam üst sınır beş + on = on beş yıldır. Doğru cevap D'dir. A yalnız birinci cümleyi uygular; ikinci cümledeki artırımı hesaba katmaz. C, artırım tutarını toplam süre sanır; fıkra 'on yıl daha' der, yani on yıl genel sınırın üzerine eklenir. B'deki sekiz yıl, Kanunda uzun dönem ikamet izni için aranan kesintisiz ikamet süresidir (42/1, 43/1-a); giriş yasağıyla ilgisi yoktur. E'deki yirmi yıl Kanunda giriş yasağı için öngörülmüş bir süre değildir; artırım en çok on yıl olduğundan toplam süre on beş yılı aşamaz.",
+    "dayanak": "6458 sayılı Kanun md 9/3 (karş. md 42/1, 43/1-a)",
+    "zorluk": "medium",
+    "tur": "dogrudan"
+  }
+]

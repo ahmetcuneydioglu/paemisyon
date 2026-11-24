@@ -1,0 +1,121 @@
+[
+  {
+    "id": "5726-p1-01",
+    "articleNo": "6",
+    "kok": "Kovuşturma evresinde tanıklık görevini yerine getirmiş bir kişinin, güvenliği için yurt içinde başka bir yerleşim biriminde yaşamasının sağlanması gerekmektedir. 5726 sayılı Kanun'a göre, bu tedbire karar vermeye aşağıdakilerden hangisi yetkilidir?",
+    "siklar": {
+      "A": "Cumhuriyet savcısı",
+      "B": "Tanık koruma birimi",
+      "C": "İçişleri Bakanı",
+      "D": "Tanık Koruma Kurulu",
+      "E": "Kovuşturmayı yürüten mahkeme"
+    },
+    "dogru": "D",
+    "aciklama": "Karar mercii tedbirin türüne ve muhakemenin evresine göre değişir. 6 ncı maddenin birinci fıkrası; kimlik ve adres bilgilerinin gizli tutulması, hazır bulunma hakkına sahip olanlar olmadan dinleme, uygun ceza infaz kurumuna yerleştirme ve fizikî koruma tedbirleri için soruşturma evresinde Cumhuriyet savcısını, kovuşturma evresinde mahkemeyi yetkili kılar. Yurt içinde başka bir yerleşim biriminde yaşamanın sağlanması bu dört tedbirden biri değildir; bu tedbir için üçüncü fıkra ayrı bir merci gösterir: 'Kovuşturma evresinde tanıklık görevinin yapılmasından sonra, 5 inci maddenin birinci fıkrasının (d) ilâ (h) bentlerinde sayılan tanık koruma tedbirlerine ilişkin kararlar, tanığın istemi üzerine Kurul tarafından verilebilir.' Kurulun görevlerini sayan 14 üncü madde de (a) ilâ (c) bentleri dışında kalan tedbirlere karar vermeyi Kurula bırakır. Olay kovuşturma evresinde geçtiği için kovuşturmada kararı mahkemenin verdiği kuralını bütün tedbirlere uygulayan aday yanılır: birinci fıkranın mahkemeye tanıdığı yetki ilk dört tedbirle ilgilidir. Kurul İçişleri Bakanlığında kurulmuştur, ama bu kararı Bakan vermez; İçişleri Bakanı yabancı bir tanığın Türkiye’de korunmasına karar verir. Tanık koruma birimleri ise tedbirleri uygulayan kolluk birimleridir. Kurul, kovuşturma evresi sona erdikten sonra fizikî koruma tedbirine de karar verebilir.",
+    "dayanak": "5726 sayılı Kanun md 6/3; md 6/1, md 14/1-a",
+    "zorluk": "hard",
+    "tur": "vaka"
+  },
+  {
+    "id": "5726-p1-02",
+    "articleNo": "6",
+    "kok": "I. Tanığın istemi aranmaz.\nII. Kolluk amirinin yazılı emri gerekir.\nIII. Tedbir, geciktirilmeksizin mahkemenin bilgisine sunulur.\n5726 sayılı Kanun'a göre, gecikmesinde sakınca bulunan hâllerde tanığa kolluk amirince geçici olarak fizikî koruma sağlanmasıyla ilgili numaralanmış ifadelerden hangileri doğrudur?",
+    "siklar": {
+      "A": "Yalnız I",
+      "B": "Yalnız II",
+      "C": "I ve II",
+      "D": "I ve III",
+      "E": "II ve III"
+    },
+    "dogru": "B",
+    "aciklama": "Kolluk amirinin acil durum yetkisi 6 ncı maddenin ikinci fıkrasındadır: 'Gecikmesinde sakınca bulunan hâllerde, tanığın isteminin bulunması koşuluyla Cumhuriyet savcısından karar alınıncaya kadar, kolluk amirinin yazılı emriyle, geçici olarak 5 inci maddenin birinci fıkrasının (ç) bendinde belirtilen tedbir alınabilir. Bu tedbir, geciktirilmeksizin Cumhuriyet savcısının bilgisine sunulur.' I. ifade yanlıştır: fıkra, gecikmesinde sakınca bulunan hâlde de yetkiyi TANIĞIN İSTEMİ koşuluna bağlar. II. ifade doğrudur: tedbir kolluk amirinin YAZILI EMRİYLE alınır. III. ifade yanlıştır: tedbir geciktirilmeksizin CUMHURİYET SAVCISININ bilgisine sunulur; ifade, fıkradaki makamı mahkemeyle değiştirmiştir. Kolluk amirinin yetkisi (ç) bendindeki fizikî koruma tedbiriyle sınırlıdır ve Cumhuriyet savcısından karar alınıncaya kadar süren geçici bir yetkidir. Sorunun tuzağı, acil durumda tanığın isteminin aranmayacağını düşünmek ve tedbirin bildirileceği makamı karıştırmaktır.",
+    "dayanak": "5726 sayılı Kanun md 6/2; md 5/1-ç",
+    "zorluk": "hard",
+    "tur": "onerme"
+  },
+  {
+    "id": "5726-p1-03",
+    "articleNo": "3",
+    "kok": "5726 sayılı Kanun'a göre, terör örgütü dışında kalan bir suç örgütünün faaliyeti kapsamında işlenen suçlarda tanık koruma tedbiri alınabilmesi için bu suçların gerektirdiği hapis cezasının alt sınırı en az kaç yıl olmalıdır?",
+    "siklar": {
+      "A": "Bir",
+      "B": "İki",
+      "C": "Dört",
+      "D": "On",
+      "E": "On beş"
+    },
+    "dogru": "B",
+    "aciklama": "Kanunun uygulanacağı suçlar 3 üncü maddede iki bentte ve iki ayrı eşikle sayılmıştır. (a) bendi genel eşiği koyar: Türk Ceza Kanununda ve ceza hükmü içeren özel kanunlarda yer alan 'ağırlaştırılmış müebbet hapis, müebbet hapis ve alt sınırı on yıl veya daha fazla hapis cezasını gerektiren suçlar.' (b) bendi örgütlü suçlarda eşiği düşürür: 'Kanunun suç saydığı fiilleri işlemek amacıyla kurulan bir örgütün faaliyeti çerçevesinde işlenen alt sınırı iki yıl veya daha fazla hapis cezasını gerektiren suçlar ile terör örgütünün faaliyeti çerçevesinde işlenen suçlar.' Kökteki suç, terör örgütü dışında kalan bir suç örgütünün faaliyeti kapsamında işlendiği için aranan alt sınır İKİ YILDIR. On yıl genel eşiktir; iki bendi karıştıran aday bu değeri seçer. Terör örgütünün faaliyeti çerçevesinde işlenen suçlarda ise bent ceza eşiği aramaz. İki eşik de cezanın ALT sınırına bağlanmıştır: örgüt faaliyeti dışında işlenen bir suçta üst sınırın on yılı aşması tek başına yetmez. Dört yıl ve on beş yıl Kanunda Tanık Koruma Kurulu üyelerinin görev süresi ve mesleki kıdem şartıdır; birer yıl ise tedbirin süresi, değiştirilmesi ya da kaldırılması hakkında en geç hangi aralıklarla karar verileceğini gösterir.",
+    "dayanak": "5726 sayılı Kanun md 3/1-b; md 3/1-a",
+    "zorluk": "medium",
+    "tur": "dogrudan"
+  },
+  {
+    "id": "5726-p1-04",
+    "articleNo": "21",
+    "kok": "5726 sayılı Kanun'a göre, tanık hakkındaki koruma kararının aşağıdaki sebeplerden hangisiyle kaldırılması hâlinde, kararı uygulayan makamlarca yapılan giderler kanuni faiziyle birlikte tanıktan tahsil edilir?",
+    "siklar": {
+      "A": "Kararda belirtilen tedbirlere aykırı davranması",
+      "B": "Olay hakkında yanlış bilgi vermesi",
+      "C": "Tedbirin kaldırılmasını istemesi",
+      "D": "Önceki kimlik bilgileri hakkında yanlış beyanda bulunması",
+      "E": "Koruma sebeplerinin ortadan kalkması"
+    },
+    "dogru": "A",
+    "aciklama": "Tedbirin kaldırılması ile giderin tanıktan geri alınması ayrı düzenlenmiştir. 8 inci maddenin dördüncü fıkrasına göre tedbir; olay hakkında yanlış bilgi verme veya bildiklerini açıklamama, yalan tanıklık veya iftiradan mahkûmiyet, önceki kimlik bilgileri hakkında yanlış beyan, tedbirlere aykırı davranma ve koruma sebeplerinin ortadan kalkması hâllerinde KALDIRILABİLİR; birinci fıkraya göre kaldırmaya 're’sen veya hakkında tedbir uygulanan kişinin istemi üzerine' de karar verilir. Rücu ise 21 inci maddededir: 'Bu Kanunun 8 inci maddesinin dördüncü fıkrasının (b) ve (ç) bentlerinde belirtilen sebeplerle tanık koruma tedbiri kararının kaldırılması hâlinde, … kararı uygulayan makamlarca yapılan giderler kanuni faizleri ile birlikte tanıktan tahsil edilir'. (b) bendi yalan tanıklık veya iftiradan mahkûmiyet, (ç) bendi tedbirlere aykırı davranıştır; seçeneklerde rücu doğuran sebep tedbirlere aykırı davranmaktır. Birinci fıkradaki istem üzerine kaldırma gider tahsiline yol açmaz; 21 inci madde tahsili yalnız dördüncü fıkranın (b) ve (ç) bentlerine bağlar. Yanlış bilgi vermek ve önceki kimlik hakkında yanlış beyan da kaldırmaya yol açabilir, ama gideri tanığa yüklemez; yanlış bilgi vermeyi yalan tanıklıkla bir tutmak sorunun asıl tuzağıdır, çünkü Kanun bu yönden rücuyu MAHKÛMİYETE bağlamıştır. Koruma sebeplerinin ortadan kalkması da rücu sebepleri arasında sayılmamıştır.",
+    "dayanak": "5726 sayılı Kanun md 21; md 8/4",
+    "zorluk": "hard",
+    "tur": "kavram"
+  },
+  {
+    "id": "5726-p1-05",
+    "articleNo": "9",
+    "kok": "5726 sayılı Kanun'a göre, hakkında aşağıdaki koruma tedbirlerinden hangisi uygulanan tanığın beyanı tek başına hükme esas teşkil etmez?",
+    "siklar": {
+      "A": "Maddi yardımda bulunulması",
+      "B": "Kimlik ve belgelerinin değiştirilmesi",
+      "C": "Fizyolojik görünümünün değiştirilmesi",
+      "D": "Uygun ceza infaz kurumuna yerleştirilmesi",
+      "E": "Kimlik bilgilerinin gizli tutulması"
+    },
+    "dogru": "E",
+    "aciklama": "Beyanın delil değerine ilişkin sınır bütün tedbirler için değil, iki tedbir için konmuştur. 9 uncu maddenin sekizinci fıkrasına göre: 'Bu Kanunun 5 inci maddesinin birinci fıkrasının (a) ve (b) bentlerine göre, hakkında tedbir uygulanan tanığın beyanı tek başına hükme esas teşkil etmez.' (a) bendi kimlik ve adres bilgilerinin kayda alınarak gizli tutulması ve tebligatlar için ayrı bir adres tespit edilmesi, (b) bendi duruşmada hazır bulunma hakkına sahip olanlar olmadan ya da ses veya görüntü değiştirilerek özel ortamda dinlenmedir. Seçeneklerde bu iki tedbirden yalnız ilki vardır. Maddi yardım, uygun ceza infaz kurumuna yerleştirme, kimlik ve belgelerin değiştirilmesi ve fizyolojik görünümün değiştirilmesi de 5 inci maddede sayılan tedbirlerdir; ancak 9 uncu madde bunlar için böyle bir sınır öngörmez. İki seçenekte 'kimlik' sözcüğü geçer: sınır kimliğin GİZLİ TUTULMASINA bağlanmıştır, kimlik ve belgelerin DEĞİŞTİRİLMESİNE değil. Aynı maddeye göre bu usullerle alınan tanık ifadeleri, duruşma sırasında hazır bulunanlar huzurunda verilmiş ifade hükmündedir ve madde hükümleri savunma hakkını kısıtlayacak şekilde uygulanamaz.",
+    "dayanak": "5726 sayılı Kanun md 9/8; md 5/1-a, b",
+    "zorluk": "easy",
+    "tur": "kavram"
+  },
+  {
+    "id": "5726-p1-06",
+    "articleNo": "20",
+    "kok": "5726 sayılı Kanun'a göre, “gizlilik kuralı” ve bu kurala aykırı davranarak bilgi açıklayanlar hakkında aşağıdakilerden hangisi YANLIŞTIR?",
+    "siklar": {
+      "A": "Görevleri veya sıfatları nedeniyle özel soruşturma ve kovuşturma usulüne tâbi olanlara ilişkin kanun hükümleri saklıdır.",
+      "B": "Gizlilik kuralı, hakkında tedbir uygulanan kişi için de geçerlidir.",
+      "C": "Gizli bilgileri açıklayan polis memuru hakkında 4483 sayılı Kanun uygulanmaz, kaymakam hakkında uygulanır.",
+      "D": "Açıklama fiili başka bir suç da oluşturuyorsa fail ayrıca cezalandırılmaz.",
+      "E": "Gizlilik, tedbir sona erdikten sonra da devam eder."
+    },
+    "dogru": "D",
+    "aciklama": "Yaptırım 20 nci maddededir. Birinci fıkraya göre Kanunun uygulanması nedeniyle öğrenilen bilgi ve belgeleri açıklayan, yayınlayan veya başkalarının bunları edinmesini ya da erişimini kolaylaştıranlar 'fiil başka bir suç oluştursa bile ayrıca, Türk Ceza Kanununun 258 inci maddesi hükmüne göre cezalandırılır.' D'deki ifade bu kuralı tersine çevirir: açıklama başka bir suçu da oluştursa fail, 258 inci madde uyarınca AYRICA cezalandırılır. Diğer ifadeler doğrudur. İkinci fıkraya göre bu fiilleri işleyenler hakkında '… valiler ve kaymakamlar hariç olmak üzere' 4483 sayılı Kanun hükümleri uygulanmaz: polis memuru istisnaya girmediği için hakkında 4483 uygulanmaz, kaymakam ise kuralın dışında tutulduğu için hakkında uygulanır. Aynı fıkra, görevleri veya sıfatları sebebiyle özel soruşturma ve kovuşturma usulüne tâbi olan sanıklarla ilgili kanun hükümlerini saklı tutar. 18 inci madde gizliliği süre ve kişi yönünden geniş tutar: 'Gizlilik, tedbir sona erdikten sonra da devam eder' ve madde hükmü 'hakkında tedbir uygulananlar için de geçerlidir.' 4483'ün her kamu görevlisi hakkında uygulandığını düşünen ya da vali ve kaymakam istisnasını bilmeyen aday C'yi yanlış sayar; oysa yanlış olan, ayrıca cezalandırmaya ilişkin önermedir. Görevlerinin gereklerine aykırı davranan kamu görevlilerine tabi oldukları mevzuattaki disiplin cezaları da uygulanır.",
+    "dayanak": "5726 sayılı Kanun md 20/1; md 20/2, md 18/1, md 18/4",
+    "zorluk": "medium",
+    "tur": "onerme"
+  },
+  {
+    "id": "5726-p1-07",
+    "articleNo": "4",
+    "kok": "5726 sayılı Kanun'a göre, “tanık koruma tedbiri kapsamına alınacak kişiler” ile ilgili aşağıdakilerden hangisi doğrudur?",
+    "siklar": {
+      "A": "Tanığın yakınlarına tedbir uygulanabilmesi için onların da tanık olarak dinlenmiş olması gerekir.",
+      "B": "Tedbire konu tehlikeler arasında mal varlığına yönelik tehlike sayılmaz.",
+      "C": "Tanıkla yakın ilişki içinde olan kişiler de tanığın yakınları arasında sayılır.",
+      "D": "Bu Kanun kapsamındaki suçların soruşturmasında görev alan kolluk memurları bu Kanundan yararlanamaz.",
+      "E": "4959 sayılı Kanun'a göre koruma tedbiri uygulananlara da bu Kanun uygulanır."
+    },
+    "dogru": "C",
+    "aciklama": "Tedbir uygulanabilecek kişiler 4 üncü maddede sayılır. Birinci fıkranın (b) bendi, '(a) bendi hükümlerine göre dinlenenlerin' yakınlarını sayarken listeyi '… ile yakın ilişki içerisinde olduğu kişiler' ibaresiyle bitirir; bu nedenle tanıkla yakın ilişki içinde olan kişiler de tanığın yakınları arasındadır. Bu kayıt açık uçludur; Kanun yakın ilişkinin ölçütünü ayrıca tanımlamaz. Diğer ifadeler yanlıştır. (b) bendi yakınları dinlenen tanığa bağlı olarak sayar; yakının ayrıca tanık olarak dinlenmesi aranmaz ve 2 nci madde de tanık kavramına 'bu Kanunda belirtilen yakınlarını' katar. İkinci fıkra korunan değerleri 'hayatı, beden bütünlüğü veya mal varlığı' olarak gösterir; mal varlığının ağır ve ciddi bir tehlike içinde bulunması da, korunmanın zorunlu olması şartıyla, tedbire yol açabilir. 22 nci madde, 'bu Kanun kapsamına giren suçlara ait istihbaratta, soruşturmada veya kovuşturmada görev alan kolluk amir ve memurları' hakkında da Kanun hükümlerinin uygulanacağını öngörür. Aynı maddenin üçüncü fıkrası ise 4959 sayılı Topluma Kazandırma Yasası hükümlerine göre haklarında koruma tedbiri uygulananları bu Kanunun dışında bırakır. Yakınlar listesini kapalı bir liste sanmak, sorunun kurduğu asıl tuzaktır.",
+    "dayanak": "5726 sayılı Kanun md 4/1-b; md 2/1-a, md 4/2, md 22/1, md 22/3",
+    "zorluk": "medium",
+    "tur": "kavram"
+  }
+]

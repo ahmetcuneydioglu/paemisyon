@@ -1,0 +1,41 @@
+# 6698-p2 — bankadaki en benzer sorular (bütün banka, 7736 soru; eşik 0.15, aday başına 5)
+# skor = aday kök+doğru şık sözcüklerinin (IDF ağırlıklı) ne kadarının o soruda geçtiği. Yüksek skor mükerrer DEMEK DEĞİLDİR; karar gözcünündür.
+
+## 6698-p2-01
+ADAY: 6698 sayılı Kanun'a göre, disiplin soruşturması için gerekli kişisel verileri Kanun'un amacına ve temel ilkelerine uygun ve orantılı olarak işleyen yetkili kamu kurumu, veri sorumlusu olarak aşağıdaki yükümlülüklerden hangisinden muaf tutulmuştur?
+ADAY DOĞRU: Veri Sorumluları Siciline kaydolma
+  — skor 0.26 | Polis Mevzuatı / 6698 Sayılı Kişisel Verilerin Korunması Kanunu | published | id 2231a2bf-40cc-4de2-b35c-a167189db759
+    6698 sayılı Kanun'a göre, yeterlilik kararı ve uygun güvence bulunmayan bir durumda kamu kurumu, kamu hukukuna tâbi faaliyeti için aşağıdakilerden hangisine dayanarak yurt dışına kişisel veri AKTARAMAZ?
+    A) Aktarımın üstün bir kamu yararı için zorunlu olması
+    B) İlgili kişinin aktarıma açık rıza vermesi  ✔
+    C) Bir hakkın tesisi için zorunlu olması
+    D) Rızasını açıklayamayan kişinin hayatının korunması
+    E) Kamuya açık bir sicilden aktarım yapılması
+  — skor 0.25 | Polis Mevzuatı / 6698 Sayılı Kişisel Verilerin Korunması Kanunu | published | id 3cae0848-5094-4114-94bb-fc3394f00b22
+    6698 sayılı Kanun'a göre, veri sorumlusunun kişisel verilerin elde edilmesi sırasında aydınlatma yükümlülüğü kapsamında ilgili kişiye bilgi vermesi gereken konulardan biri aşağıdakilerden hangisidir?
+    A) Veri toplamanın hukuki sebebi  ✔
+    B) Alınan veri güvenliği tedbirleri
+    C) Verilerin işleneceği azami süre
+    D) İşlenecek veri kategorileri
+    E) Kurula şikâyet hakkı
+  — skor 0.21 | Polis Mevzuatı / 6698 Sayılı Kişisel Verilerin Korunması Kanunu | published | id bd1f1fca-f3a3-40db-b1fe-7855cd91fd48
+    6698 sayılı Kanun'a göre, Veri Sorumluları Sicilini tutan ve bu sicile kayıt zorunluluğuna istisna getirebilen merciler sırasıyla aşağıdakilerden hangisidir?
+    A) Kurul – Başkanlık
+    B) Kurul – Cumhurbaşkanlığı
+    C) Başkanlık – Kurul  ✔
+    D) Başkanlık – Cumhurbaşkanlığı
+    E) Kurul – Kurul
+  — skor 0.19 | Polis Mevzuatı / 6698 Sayılı Kişisel Verilerin Korunması Kanunu | published | id ddec895f-dbfd-4fd1-8b73-7f88907b8bcb
+    6698 sayılı Kişisel Verilerin Korunması Kanunu’na göre, Kişisel Verileri Koruma Kurulunun aşağıdaki çalışma esaslarından hangisi yanlıştır?
+    A) Başkan dâhil en az altı üye ile toplanır.
+    B) Üyeler; kendilerini, üçüncü dereceye kadar kan ve ikinci dereceye kadar kayın hısımlarını, evlatlıklarını ve aralarındaki evlilik bağı kalkmış olsa bile eşlerini ilgilendiren konularla ilgili toplantı ve oylamaya katılamaz.
+    C) Üyelerin görevden ayrılmalarından sonra, çalışmaları sırasında ilgililere ve üçüncü kişilere ait öğrendikleri sırları bu konuda kanunen yetkili kılınan mercilerden başkasına açıklamama yükümlülükleri ortadan kalkar.  ✔
+    D) Kararlar ve varsa karşı oy gerekçeleri karar tarihinden itibaren en geç on beş gün içinde yazılır.
+    E) Başkan gereken hâllerde Kurulu olağanüstü toplantıya çağırabilir.
+  — skor 0.16 | Ceza Muhakemesi Hukuku / 5271 Sayılı Ceza Muhakemesi Kanunu (CMK) | published | id b1920d03-520f-41af-bce0-fd423bf40cc4
+    Gizli soruşturmacı görevlendirilmesi ile ilgili olarak aşağıdakilerden hangisi yanlıştır?
+    A) Gizli soruşturmacı faaliyetlerini izlemek için görevlendirildiği örgüte ilişkin her türlü araştırmada bulunabilir.
+    B) Gizli soruşturmacı faaliyetlerini izlemek için görevlendirildiği örgütün faaliyetleri çerçevesinde işlenen suçlarla ilgili delilleri toplayabilir.
+    C) Gizli soruşturmacının kimliğinin gizli tutulması amacıyla yeni kimlik üretilebilir, buna ilişkin belgeler düzenlenebilir.
+    D) Gizli soruşturmacı faaliyetlerini izlemek için görevlendirildiği örgüt tarafından işlenen suçlardan sorumlu tutulmaz.
+    E) Gizli soruşturmacı görevini yerine getirirken suç işleyebilir ve bu suçtan dolayı sorumlu tutulmaz.  ✔

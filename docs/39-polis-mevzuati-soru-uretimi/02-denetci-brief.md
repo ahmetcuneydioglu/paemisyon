@@ -42,6 +42,13 @@ hükmü tam metin basıyorsa yeni soruların cevabını verebilir.
 - `articleNo` ve `dayanak` künyesi doğru maddeyi mi gösteriyor?
 - Açıklamadaki her cümle metinle uyumlu mu? (Açıklamada uydurma hüküm sık
   çıkar — özellikle "karıştırılan komşu hüküm" kısmını denetle.)
+- **Yönetmelik sorusunda dayanak kanunu da kontrol et** (20 Kas 2026): yönetmelik
+  metni değişmemiş olsa bile hükmün dayandığı kanun hükmü Anayasa Mahkemesince
+  iptal edilmiş olabilir; böyle bir hüküm doğru şıkta, çeldiricide ya da açıklamada
+  güncel kural gibi kullanılmaz. Emsal: Adli ve Önleme Aramaları Yönetmeliği md 27'deki
+  "mülki amirin görevlendireceği kolluk amirinin yazılı … emriyle" araç ve üst araması —
+  PVSK 4/A'daki karşılığı AYM'nin 4/5/2017, E.2015/41, K.2017/98 kararıyla iptal edildi
+  (yürürlük 3/2/2018); bu yola dayanan arama-p1-17 çekme kararı aldı, beş açıklama düzeltildi.
 
 ### B) KALİTE DENETÇİSİ
 - Bu soru gerçek bir PAEM/EGM sınavında çıkabilir mi? Ölçme değeri var mı?

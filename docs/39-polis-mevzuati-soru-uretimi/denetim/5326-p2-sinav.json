@@ -1,0 +1,38 @@
+[
+  {
+    "id": "5326-p2-01",
+    "karar": "ONAY",
+    "korCevap": "E (bilgiyle %80); salt şık+sağduyu A (%35) / D (%30), E %20",
+    "metinCevap": "E",
+    "sinavDegeri": 4,
+    "ayirtEdicilik": 4,
+    "dogallik": 3,
+    "zorluk": "medium",
+    "gerekce": "TUR 2: Metin (md 40/1 'bu görevli tarafından') = anahtar E. Bilgiyle buldum; salt şıkla varsayılan merci (kolluk) ve 'memur ceza kesemez, amiri keser' sağduyusu A ve D'ye götürdü. Varsayılan cevap yanlış şıkta, 22/2 gerçek komşu hüküm; görevlinin kolluk olmaması iki doğruyu kapatıyor. Kusur: ikinci turda D 'Soruyu soran görevlinin…' diye yeniden yazılınca D–E ikiz oldu (E, D'nin ön eki); ikiz kestirmesi alanı ikiye indiriyor ama sağduyu yanlış ikize ittiği için cevap vermiyor. Doğallık bu yüzden ve alışılmadık unvan (hasta kayıt memuru) nedeniyle 3.",
+    "oneri": "D'yi ikizlikten çıkar: \"Görevlinin bağlı olduğu kurumun en üst amiri\" ya da birinci turdaki \"İlgili kamu kurumunun en üst amiri\"; E \"Soruyu soran görevli\" kalır. Küçük rötuş, yayına engel değil."
+  },
+  {
+    "id": "5326-p2-02",
+    "karar": "ONAY",
+    "korCevap": "A (bilgiyle %35; D %30, B %25); salt şık+sağduyu A (%35) — anahtardan AYRIŞTI",
+    "metinCevap": "D",
+    "sinavDegeri": 5,
+    "ayirtEdicilik": 5,
+    "dogallik": 4,
+    "zorluk": "hard",
+    "gerekce": "TUR 2: Metin (md 43/C/5 'mülkî amir tarafından çocuk hâkiminden tedbir talebinde bulunulur') = anahtar D. Kör çözümde iki yoldan da yanlışa (A, Cumhuriyet savcısı) gittim: 5395 md 7 bilgisi ve 'hâkimden talep → savcı' varsayılanı yanlış şıkkı gösteriyor; bu soru lehine kanıt. Yeni (7593) ve kolluğun sahada uyguladığı hüküm; PAEM'in 'ikinci merci + yeni değişiklik' örüntüsüne tam oturuyor. A ve C 5395'in gerçek aktörleri, B 43/C/4'ün aktörü; yalnız E sağduyuyla düşüyor. Kök '5326 sayılı Kanun'a göre' ile kilitli; vaka iki cümle, unvansız ama olgusu net (yaş, 6136 dışı bıçak). Bent (a) ve TL yok.",
+    "oneri": "Rötuş gerekmez. Açıklamada A için '5395'e göre savcı da isteyebilir, ama kök 5326'nın gösterdiği makamı sorar' vurgusu korunmalı (itiraz gelirse dayanak budur)."
+  },
+  {
+    "id": "5326-p2-03",
+    "karar": "ONAY",
+    "korCevap": "A (bilgiyle %90); salt şık+sağduyu E (%50)",
+    "metinCevap": "A",
+    "sinavDegeri": 3,
+    "ayirtEdicilik": 4,
+    "dogallik": 4,
+    "zorluk": "medium",
+    "gerekce": "TUR 2: Metin (md 32/1: adlî işlemler; kamu güvenliği, kamu düzeni, genel sağlık) = anahtar A. Bilgiyle buldum; salt şıkla 'tek farklı kategori/üslup' kestirmesi E'ye (Adlî işlemler) götürdü, yani yapı yanlışa çıkıyor. Yanlış öğe uydurma değil, md 1'deki gerçek komşu değer (genel ahlâk); 'genel sağlık' iki listede de olduğu için eksik bilen ayırt etmek zorunda. Bilmeyen bulmuyor, ters ayırt etme yok. Zayıf yan: liste ezberi, sınav değeri sınırda (3); ama emre aykırı davranış kolluğun en sık uyguladığı kabahat ve resmî 'sayılmamıştır' kalıbında, tırnaklı başlıklı.",
+    "oneri": "İstenirse kök sadeleşir: \"…“emre aykırı davranış” kabahatine konu olan emrin verilme sebep ve amaçları arasında SAYILMAMIŞTIR?\" ('açıkça' atılabilir). Zorunlu değil."
+  }
+]

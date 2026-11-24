@@ -1,0 +1,74 @@
+[
+  {
+    "id": "7245-p1-01",
+    "karar": "ONAY",
+    "korCevap": "C",
+    "metinCevap": "A",
+    "sinavDegeri": 4,
+    "ayirtEdicilik": 4,
+    "dogallik": 4,
+    "zorluk": "hard",
+    "gerekce": "TUR 2: Çekince yok. Birinci turdaki çekince karşılandı: açıklama artık bankadaki Arama Yön. md 27 sorusunun cevabını vermiyor (md 27 alıntısı ve dayanaktaki karşılaştırma çıkarıldı). II'deki 'torpido gözü' ibaresi bölmenin kapalı olduğunu kesinleştiriyor ve 'torpido = gösterge paneli' okumasını kapatıyor. Düzeltme yeni bir iki doğru şık, sızıntı ya da metin dışı cümle doğurmamış. Canlandırılmış çözümüm (anahtarı bildiğim için gerçek kör değil): salt sağduyulu aday C'ye gider ('en hafif işlem', kökteki 'üzerinde ya da araçta' yankısı, en sık iki öncül); PVSK 4/A ve Arama Yön. md 27'yi doğru bilen aday A ile D arasında kalır. Taze kör çözücü C'yi seçti: genel bilgiyle %85, salt şık + sağduyuyla %70; A'ya yalnız %5 ve %12 verdi. Kestirmeler (ikiz öncüller, en sık öncüller, 'I, II ve III' şıkkının yokluğu) III'ü ve D/E'yi düşürüp soruyu A/C'ye indiriyor. Son adım madde bilgisi istiyor ve sezgi yanlış şıkka (C) çekiyor; bu, soru lehine kanıt. Metnin cevabı A (7/6: aracın 'dışarıdan bakıldığında içerisi görünmeyen bölümlerinin açılması istenemez'; 'üst ve araç araması yapılamaz'); anahtar A, ayrışma yok. Zorluk: hard. Not: kökteki III bankadaki md 27 sorusuna kısmi ipucu taşımayı sürdürüyor; o sorunun B ve D şıklarını ayırmadığı için esasa ilişkin değil.",
+    "oneri": "Değişiklik gerekmez."
+  },
+  {
+    "id": "7245-p1-02",
+    "karar": "RED",
+    "korCevap": "D",
+    "metinCevap": "D",
+    "sinavDegeri": 4,
+    "ayirtEdicilik": 2,
+    "dogallik": 3,
+    "zorluk": "easy",
+    "gerekce": "Kör çözümde D'yi madde bilgisi olmadan buldum. Yer bileşeni (mülki sınır A, C / görev bölgesi B, D) ile zaman bileşeni (çalışma saatleri C, D / gece B) çaprazında D iki bileşende de çoğunluğun kesişimi; 'mahalle bekçisi kendi bölgesinde ve kendi mesaisinde yetkilidir' sezgisi de doğrudan D'yi verir. B'deki 'gece vakti' iyi bir çeldirici ama sağduyu daha genel 'çalışma saatleri'ni seçer; 4. sorunun kökü bekçinin gün batımı–doğumu dilimi dışında da çalıştırılabildiğini söyleyerek B'yi ayrıca zayıflatıyor (parti içi yardım). Şık yapısı karışık: iki tek unsurlu (A, E), üç çift unsurlu şık; iki tekil değer (gece vakti, genel kolluk biriminin bölgesi) ızgara kuralını aşıyor. 'Getirilen kayıt' tekil, cevap iki unsurlu; kök yapay. Hüküm değerli (7/1'in giriş kaydı, PVSK'dan ayrışan unsur) ama bu biçimiyle bilenle bilmeyeni ayırmıyor. Gerçek zorluk easy (üretici medium).",
+    "oneri": "Yeniden yazılacaksa bütün şıklar iki unsurlu ve metinden gelsin, doğru şık kesişimde durmasın. Kök: '7245 sayılı Kanun'a göre, çarşı ve mahalle bekçisi kişileri ve araçları aşağıdakilerden hangisiyle sınırlı olarak durdurabilir?' A) Görevli olduğu mülki sınırlar ve gece vakti B) Görev bölgesi ve güneşin batışından doğuşuna kadar olan zaman dilimi C) Görevli olduğu mülki sınırlar ve çalışma saatleri D) Görev bölgesi ve çalışma saatleri ✔ E) Görevli olduğu mülki sınırlar ve güneşin batışından doğuşuna kadar olan zaman dilimi. Kesişim sayımı yanlış C ve E'yi öne çıkarır; md 5'i karıştıran mülki sınırlı şıklara, 12/2'yi bilen dilimli şıklara çekilir (dilimin sınır olmadığı 12/2'deki 'esas olarak' ve 12/3 ile kurulur); tek tekil değer 'gece vakti' (Arama Yön. md 4'teki gerçek terim). 'Görev saatleri' kullanılmasın: 6/a ve 6/c'de geçer, 'çalışma saatleri'yle eş okunur. 'Görev bölgesi dışında durdurma' vakasını önermiyorum: 'en dar yetki' sezgisi 'durduramaz'ı verir, 6/e'deki kayıtsız 'gerekli tedbirleri almak' da iki okuma açar. Yeni biçim taze kör çözücüyle denenmeli; yine bulunuyorsa yuva boş kalsın."
+  },
+  {
+    "id": "7245-p1-03",
+    "karar": "RED",
+    "korCevap": "C",
+    "metinCevap": "C",
+    "sinavDegeri": 3,
+    "ayirtEdicilik": 2,
+    "dogallik": 3,
+    "zorluk": "easy",
+    "gerekce": "Kör çözümde C'yi madde bilgisi olmadan buldum: 'hakkında karar olan aranan kişi yakalanır' (CMK genel bilgisi) ile 'bekçi yakaladığını genel kolluğa teslim eder' sezgisi yetiyor. Doğru şık 7245'in varsayılanı ('bağlı bulunduğu genel kolluk kuvvetlerine teslim'; raporun §4'teki 12 yerinden biri, 8/2): §6'nın ilk maddesi bu cevaplı soruyu yasaklıyor; §7 #3 bu açıyı önermiş olsa da §6 ve §8 k.4 bağlayıcı. Ters ayırt (§8 k.4): D'yi seçtiren PVSK 13 ('suç işlediği şüphesi altında olanlar adlî mercilere sevk edilir'); açıklama da 'D, PVSK'daki rejimi bekçiye taşır' diyor. PVSK'yı bilen eksik aday D'ye, hiç bilmeyen sezgiyle C'ye gider: 7/3 için yasaklanan 'genel kolluk ↔ savcı' farkının aynısı. 8/1 tuzağı (A) yalnız 8/1'i okuyup 8/2'yi atlayanı yakalar; A'daki 'izler kaybolduğundan' gerekçe yan cümlesi ve kökteki 'iki yıl önce' ayrıntısı tuzağı ele veriyor; B'deki 'yetinmek' zayıf. Gerçek zorluk easy (üretici hard).",
+    "oneri": "Yuva boş kalsın (hedef tavan). 8/1 ↔ 8/2 ayrımı yine de ölçülecekse doğru şık 'teslim' ya da 'bildirim' olmamalı, savcı çeldiricisi kullanılmamalı: yakalamanın dayanağını soran bir önerme sorusunda doğru önerme 'Hakkında tutuklama kararı bulunan kişiyi, suç yıllar önce işlenmiş olsa da yakalamakla görevlidir' olur; yanlışlar 8/1'in 'izleri meydanda' şartını karara taşıyan ve 7/1-c'nin 'tespit' sınırını karar bulunan kişiye taşıyan önermelerdir. Zorla getirme kararına ve CMK 90'a dayanan 'yakalayamaz' yargıları kullanılmaz (rapor §6). Bu biçimde de 'aranan kişi yakalanır' sezgisi güçlü kalır; taze kör çözücü bulursa vazgeçilsin. Partide 'doğrudur' kotası 5. sorunun önerilen yeni biçimiyle çakışır; ikisinden biri seçilir."
+  },
+  {
+    "id": "7245-p1-04",
+    "karar": "ONAY",
+    "korCevap": "A",
+    "metinCevap": "E",
+    "sinavDegeri": 4,
+    "ayirtEdicilik": 4,
+    "dogallik": 4,
+    "zorluk": "medium",
+    "gerekce": "TUR 2: Küçük çekince, esasa ilişkin değil. Yeni takımdaki iki kaymakamlı şık (C, D) 'kaymakam genel bir onay makamı olmaz' sezgisiyle birlikte düşüyor; taze kör çözücü C'ye %4, D'ye %3–4 verdi. Soru böylece A/B/E'ye, 'Vali en sık değer' sezgisiyle de A/E aynasına iniyor. Son adım madde bilgisi istiyor ve sezgi yanlış şıkka (A) çekiyor; bu yüzden çekince kararı değiştirmiyor. Birinci turda ONAY vermiştim. Yeni takım ızgara dışı tek şık sorununu (eski C) gideriyor: kaymakam iki şıkta geçiyor, tekil değer yok, partide tek uydurma değer. Yeni bir zayıflık var: artık tek bilgi yetiyor. 12/1'i (vali) bilen aday D'deki kaymakamı eleyip E'ye ulaşıyor; eski takımda Vali – Vali şıkkı bu adayı yakalıyordu. İki doğru şık yok (7245'te kaymakam geçmiyor). Sızıntı yok. Açıklamadaki 'kaymakam Kanunda … onay mercii olarak geçmez' cümlesi metinle doğrulanıyor. Canlandırılmış çözümüm A: 657 md 100'deki 'illerde valiler' benzetmesi ve 'haftalık süre merkez, dilim yerel' sezgisi. Taze kör çözücü de A'yı seçti: genel bilgiyle %45, salt şık + sağduyuyla %40; E'ye iki durumda da %30 verdi. Metnin cevabı E (12/1 valinin onayı, 12/3 İçişleri Bakanının onayı); anahtar E, ayrışma yok. Zorluk: medium. Tek bilgi ve şık yapısı yetiyor ama sezgi yanlışa çekiyor; birinci turda hard demiştim.",
+    "oneri": "Değişiklik gerekmez."
+  },
+  {
+    "id": "7245-p1-05",
+    "karar": "REVIZYON",
+    "korCevap": "B",
+    "metinCevap": "B",
+    "sinavDegeri": 4,
+    "ayirtEdicilik": 3,
+    "dogallik": 4,
+    "zorluk": "medium",
+    "gerekce": "Kör çözümde B'yi 'bekçi hiyerarşinin en altında; polis rütbesi taşıyan herkes üstüdür' sezgisiyle buldum (genel bilgiyle 0,55, salt sağduyuyla 0,45); B rütbe merdiveninin alt ucu. Sahada bekçiyle çalışan aday için bu neredeyse ortak bilgi. 2024 hükmünün asıl yeni ve sezgiye aykırı yanı olan rütbece üstü ↔ amir ayrımını yalnız A ölçüyor; kök 'rütbece' dediği için sınav bilen aday rütbe olmayan A'yı kolayca eliyor. Ayrıca C–E alt küme okumasına açık: komiser yardımcısı da bekçinin rütbece üstüdür; 've üstü' eşik okuması baskın olsa da itiraz kapısı aralık kalıyor. Hüküm değerli (adayın kendi konumu), çeldiriciler aynı karar uzayından, dil doğal. Ters ayırt yok. Gerçek zorluk medium.",
+    "oneri": "Ölçülen unsur ayrımın kendisi olsun (vaka değil, 'doğrudur'; partide ilk). Kök: '7245 sayılı Kanun'a göre, çarşı ve mahalle bekçileriyle ilgili aşağıdakilerden hangisi doğrudur?' A) Emniyet teşkilatında komiser yardımcısı rütbesinin altındaki personel bekçilerin rütbece üstü sayılmaz. B) Emniyet teşkilatında polis memuru ve üstü rütbelerdeki personel bekçilerin amiridir. C) Kadro ve kuruluş yönünden bağlı olunan personel, amir olarak yetkilendirilmemişse bekçinin amiri sayılmaz. ✔ D) Bekçilerin rütbece üstü, kadro ve kuruluş yönünden bağlı oldukları personeldir. E) Jandarma teşkilatında uzman jandarma çavuşlar bekçilerin rütbece üstü sayılmaz. 'Bekçi en alt' sezgisi A'yı düşürür ama yanlış B'yi güçlendirir; B ile D fıkranın iki yarısını yer değiştirerek eksik bileni yakalar; C'yi iki ölçütü ayıran bulur. Taze kör çözücüyle denenmeli. Mevcut biçim korunacaksa en az A amir tanımının tam hâli yapılsın ('Kadro ve kuruluş yönünden bağlı oldukları ve amir olarak yetkilendirilmiş personel'); bu tek başına ayırt ediciliği yükseltmez."
+  },
+  {
+    "id": "7245-p1-06",
+    "karar": "RED",
+    "korCevap": "D",
+    "metinCevap": "D",
+    "sinavDegeri": 2,
+    "ayirtEdicilik": 2,
+    "dogallik": 4,
+    "zorluk": "easy",
+    "gerekce": "TUR 2: Birinci turda ONAY vermiştim; soru metni değişmedi, yalnız açıklama değişti. Yeni açıklamada sızıntı ya da metin dışı cümle yok (12/3 göndermesi çıkmış). Ancak bu turun kanıtı esasa ilişkin iki kusur gösteriyor. (1) Ölçülen hüküm bekçiye özgü değil. md 11 ('kolluk hizmet ve görevleri dışında her ne suretle olursa olsun çalıştırılamazlar'), PVSK md 4'ün ('Polis hiç bir suretle vazifesinden başka bir işte kullanılamaz') bekçiye taşınmış hâli. Bankadaki PVSK md 4 sorusunda 'Polis, olağanüstü hâllerde her türlü işte kullanılabilir' zaten yanlış şık olarak duruyor; D aynı hükmün aynı çeldiricisini ad değiştirerek soruyor (rapor §8 k.6). Bunu birinci turda gözden kaçırdım. (2) Taze kör çözücü D'yi madde bilgisi olmadan buldu: genel bilgiyle %60 ('kolluk mevzuatında alışılmış … başka işte çalıştırılamaz yasağı'), salt şık + sağduyuyla %50 (istisna ekleme kalıbı, C ile çerçeve gerilimi, kökteki 'istihdam edilen' ifadesinin E'yi koruması); ikinci şık %20'de kaldı. Canlandırılmış çözümüm de düşük güvenle D'ydi. B'nin 'bekçinin yetkisi dardır' çekimi bilmeyeni kısmen yanıltıyor ama yetmiyor. Metnin cevabı D (md 11); anahtar D, ayrışma yok. Zorluk: easy.",
+    "oneri": "Yuva boş kalsın. md 11, PVSK md 4 ile aynı içerikte olduğundan bekçiye özgü bir fark ölçmüyor ve bankadaki PVSK md 4 sorusunun olağanüstü hâl çeldiricisini tekrarlıyor."
+  }
+]

@@ -1,0 +1,104 @@
+[
+  {
+    "id": "adli-kolluk-p1-01",
+    "articleNo": "5",
+    "kok": "I. Adli kolluk görevlilerine, adli görevi bulunmayan üstleri tarafından, yürütülen soruşturma ile ilgili emir ve talimat verilemez.\nII. Adli kolluk, bağlı bulunduğu kolluk teşkilatının bir parçası olup, öncelikli görevi, karşılaştığı suçun delillerini toplamaktır.\nIII. Olay yerinde işlemlere engel olan kişi önce sözlü olarak ikaz edilir; ikaza uymaması hâlinde yakalanır.\nAdli Kolluk Yönetmeliği'ne göre yukarıdaki ifadelerden hangileri doğrudur?",
+    "siklar": {
+      "A": "Yalnız I",
+      "B": "I ve II",
+      "C": "I ve III",
+      "D": "II ve III",
+      "E": "I, II ve III"
+    },
+    "dogru": "A",
+    "aciklama": "Yalnız I doğrudur. I, Yönetmeliğin 5 inci maddesinin (a) bendinde sayılan esaslardandır: adli kolluk görevlilerine, ADLİ GÖREVİ BULUNMAYAN ÜSTLERİ tarafından, yürütülen soruşturma ile ilgili emir ve talimat VERİLEMEZ. Adli kolluk adli görevler dışındaki hizmetlerde üstlerinin emrindedir; soruşturma işlemleri ise Cumhuriyet savcısının emir ve talimatları doğrultusunda yürür. II yanlıştır: aynı bende göre adli kolluk, bağlı bulunduğu kolluk teşkilatının bir parçasıdır ve ÖNCELİKLİ GÖREVİ, karşılaştığı SUÇUN İŞLENMESİNİ ÖNLEMEKTİR. Delil toplamak da adli kolluğun yükümlülükleri arasındadır, ama Yönetmelik öncelik sırasında önlemeyi başa koyar; 'adli' sıfatından hareketle görevin suç işlendikten sonra başladığını sanmak bu öncülün tuzağıdır. III de yanlıştır: 6 ncı maddenin son fıkrası, olay yerinde işlemlere engel olan veya alınan tedbirlere aykırı davranan kişi için KADEMELİ bir yol çizer. Görevli bu kişiyi işlemler sonuçlanıncaya kadar önce SÖZLÜ olarak İKAZ eder; uyulmazsa ZOR KULLANARAK OLAY YERİNDEN UZAKLAŞTIRIR; YAKALAMA ancak ilgilinin ISRARI hâlinde uygulanır. Polis Vazife ve Salâhiyet Kanunu'nun Ek 6 ncı maddesi aynı durumda işlemler sonuçlanıncaya kadar ve gerektiğinde zor kullanarak men etmekle yetinir; ikaz, uzaklaştırma ve yakalama sırası Yönetmeliğin ayrıntısıdır.",
+    "dayanak": "Adli Kolluk Yönetmeliği md 5/a ve md 6 son fıkra",
+    "zorluk": "hard",
+    "tur": "onerme"
+  },
+  {
+    "id": "adli-kolluk-p1-02",
+    "articleNo": "6",
+    "kok": "Adli Kolluk Yönetmeliği'ne göre, soruşturmada hukuka aykırı delil elde edildiğinin tespit edilmesi hâlinde bu hususa aşağıdakilerin hangisinde yer verilir?",
+    "siklar": {
+      "A": "Arama tutanağında",
+      "B": "Dizi pusulasında",
+      "C": "Üst yazıda",
+      "D": "Fezlekede",
+      "E": "Ayrı bir tespit tutanağında"
+    },
+    "dogru": "D",
+    "aciklama": "Dayanak Yönetmeliğin 6 ncı maddesinin fezlekeye ilişkin fıkrasıdır. Adli kolluk görevlileri, maddi gerçeğin araştırılması ve adil bir yargılamanın yapılabilmesi için Cumhuriyet savcısının emirleri doğrultusunda şüphelinin lehine veya aleyhine olan tüm delilleri kanundaki koşullara uyarak toplar, muhafaza altına alır ve bunları BİR FEZLEKE İLE Cumhuriyet savcısına sunar. Aynı fıkra şunu da öngörür: HUKUKA AYKIRI DELİL elde edildiğinin tespiti hâlinde FEZLEKEDE bu hususa da yer verilir. Hüküm kolluğa delilin kullanılıp kullanılamayacağına karar verme yetkisi tanımaz; kolluk tespitini saklamaz, delili ayıklamaz, durumu delillerle birlikte savcının önüne koyar. Yönetmelik bu kayıt için yalnız fezlekeyi anar; arama tutanağı, ayrı bir tespit tutanağı, dizi pusulası ya da üst yazı bu fıkrada yer almaz. Arama tutanağı ile ayrı tespit tutanağı, kaydın aykırılığın doğduğu işleme bağlanacağı sezgisini yoklar. Dizi pusulası ve üst yazı ise dosya savcılığa gönderilirken düzenlenen belgeler olduğu için fezlekeyle karıştırılır.",
+    "dayanak": "Adli Kolluk Yönetmeliği md 6 (fezlekeye ilişkin fıkra)",
+    "zorluk": "medium",
+    "tur": "dogrudan"
+  },
+  {
+    "id": "adli-kolluk-p1-03",
+    "articleNo": "10",
+    "kok": "Adli Kolluk Yönetmeliği'ne göre, adli görevlerde öncelikli olarak aşağıdakilerden hangisi görevlendirilir?",
+    "siklar": {
+      "A": "Aynı veya benzer görevlerde çalışmış kolluk personeli",
+      "B": "Sertifikası olan kolluk personeli",
+      "C": "Meslek içi kurslarla ihtisaslaşmış kolluk personeli",
+      "D": "Cumhuriyet başsavcısının önerdiği kolluk personeli",
+      "E": "Olumlu değerlendirme raporu olan kolluk personeli"
+    },
+    "dogru": "B",
+    "aciklama": "Yönetmeliğin 10 uncu maddesine göre adli kolluk eğitimini başarıyla bitiren personele İLGİLİ EĞİTİM BİRİMLERİNCE SERTİFİKA verilir ve adli görevlerde ÖNCELİKLİ OLARAK SERTİFİKASI OLAN kolluk personeli görevlendirilir. Yönetmelikte görevlendirmede öncelik doğuran ölçüt budur; sertifikanın dayandığı eğitim de 9 uncu maddede düzenlenen hizmet öncesi ve hizmet içi eğitimdir. Asıl tuzak, aynı Yönetmeliğin 12 nci maddesinden gelen iki çeldiricidedir. Personelin mümkün olduğunca aynı veya benzer görevlerde çalışması ve görevlilerin katılacakları meslek içi kurslar sonunda belirli branşlarda ihtisaslaşması, çalışma esaslarına ilişkin UZMANLAŞMA tedbirleridir; Yönetmelik bunları görevlendirmede bir öncelik sebebi olarak saymaz. Değerlendirme raporu, adli kolluk sorumluları hakkında yıl sonunda düzenlenen bir değerlendirmedir ve görevlendirmede öncelik doğurmaz. Cumhuriyet başsavcısının önerisi de 10 uncu maddede bir ölçüt olarak yer almaz.",
+    "dayanak": "Adli Kolluk Yönetmeliği md 10",
+    "zorluk": "medium",
+    "tur": "dogrudan"
+  },
+  {
+    "id": "adli-kolluk-p1-04",
+    "articleNo": "11",
+    "kok": "Merkezi X ilçesinde bulunan bir adli kolluk birimi, hem X hem de Y ilçesi Cumhuriyet başsavcılıklarının yetki çevresinde faaliyet göstermekte ve soruşturma işlemlerinin çoğunu Y ilçesinde yapmaktadır. Adli Kolluk Yönetmeliği'ne göre bu birimin adli kolluk sorumlusu hakkındaki değerlendirme raporunu aşağıdakilerden hangisi düzenler?",
+    "siklar": {
+      "A": "Y ilçesi Cumhuriyet başsavcısı",
+      "B": "X ve Y ilçesi Cumhuriyet başsavcılarının her biri",
+      "C": "X ve Y ilçesi Cumhuriyet başsavcıları birlikte",
+      "D": "X ilçesi kaymakamı",
+      "E": "X ilçesi Cumhuriyet başsavcısı"
+    },
+    "dogru": "E",
+    "aciklama": "Değerlendirme raporunun genel kuralı Ceza Muhakemesi Kanunu'nun 166 ncı maddesindedir: Cumhuriyet başsavcıları her yılın sonunda o yerdeki adli kolluğun sorumluları hakkında değerlendirme raporu düzenleyerek mülki idare amirlerine gönderir. Soru, Yönetmeliğin 11 inci maddesinin üçüncü fıkrasındaki özel kuralı ölçer: BİRDEN FAZLA Cumhuriyet başsavcılığının yetki çevresinde faaliyet gösteren adli kolluk sorumluları hakkındaki rapor, adli kolluk biriminin MERKEZİNİN BULUNDUĞU YER Cumhuriyet başsavcısı tarafından düzenlenir; DİĞER YER Cumhuriyet başsavcılıklarının GÖRÜŞÜ de alınır. Olayda birimin merkezi X ilçesindedir; raporu X ilçesi Cumhuriyet başsavcısı düzenler, Y ilçesi Cumhuriyet başsavcılığı görüş bildirir. Soruşturma işlemlerinin çoğunun Y ilçesinde yapılması sonucu değiştirmez; Yönetmelik iş yoğunluğunu değil birimin merkezini ölçü almıştır. Genel kuraldaki 'o yerdeki' ifadesinden hareketle her başsavcının ayrı rapor düzenleyeceğini düşünmek de yanıltır: üçüncü fıkra raporu yalnız merkezin bulunduğu yer başsavcısına düzenletir, diğer başsavcılığın katkısı görüş bildirmekle sınırlıdır; birlikte düzenleme de öngörülmemiştir. Kaymakam gibi mülki idare amirleri ise raporu düzenleyen değil, raporun gönderildiği makamdır.",
+    "dayanak": "Adli Kolluk Yönetmeliği md 11/3",
+    "zorluk": "hard",
+    "tur": "vaka"
+  },
+  {
+    "id": "adli-kolluk-p1-05",
+    "articleNo": "12",
+    "kok": "Bilişim sistemleri kullanılarak işlenen bir dolandırıcılık olayında, olayın özelliği gereği soruşturma işlemlerini yapan birimde bilişim alanında ihtisaslaşmış personel görevlendirilmesi gerekmektedir. Adli Kolluk Yönetmeliği'ne göre bu görevlendirmeyi aşağıdakilerden hangisi yapar?",
+    "siklar": {
+      "A": "Cumhuriyet savcısı",
+      "B": "İlgili eğitim birimi",
+      "C": "Kolluk amiri",
+      "D": "Sulh ceza hâkimi",
+      "E": "Adalet Bakanlığı"
+    },
+    "dogru": "C",
+    "aciklama": "Yönetmeliğin 12 nci maddesi adli kolluk görevlilerinin çalışma esaslarını düzenler. Son fıkra uyarınca, meydana gelen olayın özelliğine göre KOLLUK AMİRİ, soruşturma esnasında ihtiyaç duyduğu konularda İHTİSASLAŞMIŞ PERSONELİ GÖREVLENDİREREK soruşturmanın daha kapsamlı yapılmasını sağlar. Sorudaki tuzak, soruşturmayı Cumhuriyet savcısının yürüttüğü bilgisinden hareketle bu görevlendirmenin de savcıya ait olduğunu düşünmektir. Savcı soruşturma işlemlerine ilişkin emir ve talimat verir; soruşturma işlemlerini yapan birimde hangi ihtisaslaşmış personelin çalışacağını ise kolluk amiri belirler. Uzman bilgisine başvurmak için bilirkişi atanması ayrı bir kurumdur; vakadaki görevlendirme, soruşturma işlemlerini yapan birimdeki personele ilişkindir. Eğitim birimleri personeli yetiştirir, soruşturmaya personel görevlendirmez. Sulh ceza hâkimi ise suçüstü hâli ile gecikmesinde sakınca bulunan hâllerde, savcıya erişilemiyor ya da olay savcının iş gücünü aşıyorsa soruşturma işlemlerini yapabilir; vakada böyle bir durum yoktur. Adalet Bakanlığı da soruşturma birimine personel görevlendiren bir makam değildir.",
+    "dayanak": "Adli Kolluk Yönetmeliği md 12/3",
+    "zorluk": "hard",
+    "tur": "vaka"
+  },
+  {
+    "id": "adli-kolluk-p1-06",
+    "articleNo": "13",
+    "kok": "Adli Kolluk Yönetmeliği'ne göre, adli kolluk hizmetinin denetimi kapsamında açıkça sayılan işlemler arasında aşağıdakilerden hangisi YER ALMAZ?",
+    "siklar": {
+      "A": "Adli kolluk görevlilerince ifa edilen adli işlemlerin her zaman denetlenmesi",
+      "B": "Soruşturma evrakının ilgili adli kolluk biriminde incelenmesi",
+      "C": "Evrakın ve tarafların bulunduğu hâl üzere başsavcılığa intikal ettirilmesi",
+      "D": "Yürütülen soruşturmanın başka bir kolluk birimine devredilmesi",
+      "E": "Gözaltına alınanların bulundurulduğu nezarethanelerin denetlenmesi"
+    },
+    "dogru": "D",
+    "aciklama": "Yönetmeliğin 13 üncü maddesi adli kolluk hizmetinin denetimini Cumhuriyet başsavcılarına ve Cumhuriyet savcılarına bırakır ve denetimin araçlarını tek tek sayar. Birinci fıkranın (a) bendine göre adli kolluk görevlilerince ifa edilen adli işlemler HER ZAMAN denetlenir; denetim belirli bir döneme ya da önceden bildirime bağlı değildir. (b) bendine göre yürütülen soruşturma evrakı gerektiğinde İLGİLİ ADLİ KOLLUK BİRİMİNDE incelenir; bu inceleme sonunda soruşturmaya ilişkin eksiklerin ikmali emredilebileceği gibi, soruşturma evrakı ve taraflarının BULUNDUĞU HÂL ÜZERE Cumhuriyet başsavcılığına intikal ettirilmesi talimatı da verilebilir. İkinci fıkra, gözaltına alınan kişilerin bulundurulduğu NEZARETHANELERİN, varsa ifade alma odalarının, gözaltı sürelerinin ve gözaltına ilişkin bütün kayıt ve işlemlerin denetlenmesini ve sonucun nezarethane defterine kaydedilmesini düzenler. Soruşturmanın başka bir kolluk birimine devredilmesi ise bu sayımda YER ALMAZ. Seçeneklerde en çok yanıltan 'bulunduğu hâl üzere intikal' ifadesidir; alışılmadık göründüğü için Yönetmelikte bulunmadığı sanılır. Oysa bu talimat savcının, eksiklerin tamamlanmasını beklemeden evrakı ve tarafları olduğu gibi kendi önüne getirtmesini sağlar. (a) bendindeki 'her zaman' ifadesi de mutlak göründüğü için kuşku uyandırır, ama metnin kendi ifadesidir.",
+    "dayanak": "Adli Kolluk Yönetmeliği md 13/1-a, 13/1-b ve 13/2",
+    "zorluk": "medium",
+    "tur": "ayrinti"
+  }
+]

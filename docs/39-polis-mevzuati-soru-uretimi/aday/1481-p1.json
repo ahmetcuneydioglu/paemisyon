@@ -1,0 +1,53 @@
+[
+  {
+    "id": "1481-p1-01",
+    "articleNo": "1",
+    "kok": "1481 sayılı Kanun'a göre, “ilan ve mühlet usulüyle doğan silah kullanma yetkisi” ile ilgili aşağıdakilerden hangisi YANLIŞTIR?",
+    "siklar": {
+      "A": "Mühlet dolmadan da kişiye karşı PVSK'da yazılı hâllerde silah kullanılabilir.",
+      "B": "Yetkinin doğması için kişi hakkındaki mahkûmiyet hükmünün kesinleşmiş olması gerekir.",
+      "C": "İlanda kişinin adının yanında eylemlerinin de belirtilmesi gerekir.",
+      "D": "Kişinin mühlet sonuna kadar adli makamlar dışındaki bir resmî mercie teslim olması da yetkinin doğmasını önler.",
+      "E": "Çatışma sırasında kişinin kaçmasına yardım edenler hakkında da aynı silah kullanma hükmü uygulanır."
+    },
+    "dogru": "B",
+    "aciklama": "Yanlış olan B'dir. Birinci maddenin (B) bendindeki ek yetki, bentte sayılan suçlardan 'SANIK VEYA HÜKÜMLÜ olup da haklarında tevkif veya yakalama müzekkeresi çıkarılan' kişilere karşı doğar. Bent hükümlünün yanında sanığı da saydığından yetkinin doğması için hakkındaki mahkûmiyetin kesinleşmiş olması aranmaz; B, bentte bulunmayan bir şart eklemektedir. Öteki dört ifade doğrudur. Birinci maddenin giriş cümlesi yetkiyi 'diğer kanunlarda yazılı yetkileri SAKLI KALMAK ÜZERE' tanır. (A) bendi 2559 sayılı Kanun'un '16 ncı maddesinde yazılı hallerde' de yetki verir; (B) bendi ise '(A) bendindeki yetkiler SAKLI KALMAK ÜZERE' diye başlar. Mühlete bağlı olan, (B) bendindeki ek yetkidir; mühlet dolmadan da PVSK'daki hâllerde silah kullanılabilir. Mühlet içinde hiç silah kullanılamayacağını düşünen aday A'yı yanlış sanır. İlan, kişinin 'ad, san ve EYLEMLERİ de belirtilerek' yapılır. Yetki, ilan edilenlerin belirtilen süre sonuna kadar 'adli makamlara, zabıtaya VEYA HERHANGİ BİR RESMİ MERCİE teslim olmamaları' hâlinde doğar; teslimin adli makamlara yapılması şart değildir. Yardım edenler için ikinci maddenin ikinci fıkrası açıktır: 'Müsademe sırasında; sanık veya hükümlüye müsademede veya KAÇMADA YARDIMCI OLANLAR haklarında da birinci fıkra hükmü uygulanır.'",
+    "dayanak": "1481 sayılı Kanun md 1/B (karş. md 1 giriş cümlesi ve A bendi, md 2/2)",
+    "zorluk": "hard",
+    "tur": "onerme"
+  },
+  {
+    "id": "1481-p1-02",
+    "articleNo": "2",
+    "kok": "İlan edilerek aranan ve mühleti dolmuş olan bir kişi, önceki gün polise ateş etmiştir; polisle karşılaştığı anda ise silah kullanmaya teşebbüs etmemektedir. 1481 sayılı Kanun'a göre, bu kişiye karşı silah kullanma usulü aşağıdakilerden hangisidir?",
+    "siklar": {
+      "A": "İhtar yapılmaksızın silah kullanılır.",
+      "B": "Önce uyarı amacıyla ateş açılması gerekir.",
+      "C": "Cumhuriyet savcısının talimatıyla silah kullanılır.",
+      "D": "Teslim olması için ihtarda bulunulduktan sonra silah kullanılır.",
+      "E": "Polise yeniden ateş etmedikçe kendisine karşı silah kullanılamaz."
+    },
+    "dogru": "D",
+    "aciklama": "İkinci maddenin birinci fıkrası, birinci maddenin (B) bendinde sayılan hâllerde silahın iki usulle kullanılacağını söyler: 'a. Sanık veya hükümlünün teslim olması için yapılan (Teslim ol) ihtarından sonra,' ve 'b. Polis, jandarma veya sahil güvenliğe karşı silah kullanmaya filhal teşebbüs etmeleri halinde ise ihtara lüzum olmaksızın,' 'Silah kullanılır.' 'Filhal' o anda demektir. Kişinin önceki gün polise ateş etmiş olması, polisle karşılaştığı anda yapılmış bir teşebbüs değildir. O anda teşebbüs bulunmadığından (b) bendi uygulanmaz; silah, teslim olması için ihtarda bulunulduktan sonra kullanılır. Doğru cevap D'dir. Önceki günkü saldırıyı ihtarı kaldırmaya yeterli sayan aday A şıkkını işaretler. (b) bendi yalnız ihtarın aranmadığı durumu düzenler; (a) bendi, ihtardan sonra silah kullanılmasını kişinin yeniden ateş etmesine bağlamaz. Polisin yeni bir saldırıyı beklemesi gerektiğini söyleyen E şıkkı bu yüzden yanlıştır. İkinci madde bu hâl için uyarı amacıyla ateş açılmasını şart koşmamış, ihtar olarak yalnız (Teslim ol) ihtarını öngörmüştür (B şıkkı). İkinci madde silah kullanmayı Cumhuriyet savcısının talimatına bağlamaz (C şıkkı).",
+    "dayanak": "1481 sayılı Kanun md 2/1",
+    "zorluk": "hard",
+    "tur": "vaka"
+  },
+  {
+    "id": "1481-p1-03",
+    "articleNo": "4",
+    "kok": "1481 sayılı Kanun'a göre, ilan edilerek aranan ve mühleti dolmuş olan kişiye kardeşinin silah ve cephane temin etmesi hâlinde kardeş hakkında öngörülen sonuç aşağıdakilerden hangisidir?",
+    "siklar": {
+      "A": "Genel hükümdeki cezayla cezalandırılır.",
+      "B": "Hakkında ceza verilmez.",
+      "C": "Silah temini nedeniyle cezası artırılır.",
+      "D": "Kardeşinin teslim olmasını sağlaması hâlinde hakkında ceza verilmez.",
+      "E": "Yakını lehine işlendiğinden daha hafif cezalandırılır."
+    },
+    "dogru": "E",
+    "aciklama": "Dördüncü maddenin birinci fıkrası aranan kişiyi saklayanı da ona silah ya da cephane sağlayanı da cezalandırır: 'Her kim … saklar VEYA SİLAH, CEPHANE TEMİN EDER veyahut bunların sağlanmasında yardımcı olursa' cezalandırılır ve bu ceza 'asıl cürüm için kanunda tayin edilen cezanın yarısını' geçemez. İkinci fıkra, aynı fiil yakın lehine işlendiğinde daha dar bir sınır koyar: 'BU FİİLİ usul ve füruunun ve karı veya kocasının ve KARDEŞİNİN LEHİNDE olarak işleyen kimse, asıl cürüm için kanunda tayin edilen cezanın DÖRTTE BİRİNİ GEÇMEMEK ÜZERE cezalandırılır.' Kardeşine silah ve cephane temin eden kişi bu fıkraya girer ve genel hükümdekinden daha hafif cezalandırılır; cevap E'dir. İkinci fıkra 'Bu fiili' der ve birinci fıkradaki fiillerin hepsini kapsar. Yakınlık sınırını saklamaya özgü sanan aday genel hükmü (A) işaretler. Cezasızlık ise yalnız saklamaya tanınmıştır: 'Fiilin icrasında faillerle evvelce ittifak etmiş ve cürümü neticelendirmekte yardımı dokunmuş olmaksızın usul ve füruunu ve karı veya kocasını ve kardeşini SAKLAYAN kimseye ceza verilmez.' Silah ve cephane temini bu fıkrada sayılmamıştır. Yakınlara tanınan cezasızlığı bütün yardımlara yayan aday B'yi işaretler. Kanunda silah temini için ayrıca bir artırım öngörülmemiştir (C). Kişinin teslim olmasını sağlamaya bağlanmış bir cezasızlık hâli de yoktur (D).",
+    "dayanak": "1481 sayılı Kanun md 4/2 (karş. md 4/1, 4/3)",
+    "zorluk": "medium",
+    "tur": "dogrudan"
+  }
+]

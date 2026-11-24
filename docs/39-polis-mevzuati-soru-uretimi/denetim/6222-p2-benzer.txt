@@ -1,0 +1,80 @@
+# 6222-p2 — bankadaki en benzer sorular (bütün banka, 7736 soru; eşik 0.15, aday başına 5)
+# skor = aday kök+doğru şık sözcüklerinin (IDF ağırlıklı) ne kadarının o soruda geçtiği. Yüksek skor mükerrer DEMEK DEĞİLDİR; karar gözcünündür.
+
+## 6222-p2-01
+ADAY: 6222 sayılı Kanun'a göre, koruma tedbiri olarak seyirden yasaklama uygulanan sanık hakkında hükmün açıklanmasının geri bırakılmasına karar verilmesi hâlinde bu koruma tedbiri ile ilgili aşağıdakilerden hangisi doğrudur?
+ADAY DOĞRU: Kararın kesinleştiği tarihten itibaren bir yıl süreyle uygulanır.
+  — skor 0.51 | Ceza Muhakemesi Hukuku / 5271 Sayılı Ceza Muhakemesi Kanunu (CMK) | published | id ddc92b88-9f9b-4224-a55d-83ea13edb858
+    5395 sayılı Çocuk Koruma Yasası'na göre adli süreçteki çocukların muhakemesi hakkında I. Kamu davasının açılmasının ertelenmesine esas alınacak hapis cezasının üst sınırı, 15 yaşını doldurmamış çocuklar bakımından 5 yıl olarak uygulanır. II. Adli süreçteki çocuklar hakkında kovuşturma evresinde Ceza Muhakemesi Yasası'nda sayılan adli kontrol tedbirleri uygulanamaz. III. 15 yaşını doldurmamış çocuk
+    A) I ve II
+    B) I ve III
+    C) II ve III  ✔
+    D) II ve IV
+    E) II, III ve IV
+  — skor 0.45 | Ceza Muhakemesi Hukuku / 5271 Sayılı Ceza Muhakemesi Kanunu (CMK) | published | id 928b9bbd-1a89-49d7-9a6f-9baa9f5faf23
+    5271 sayılı Ceza Muhakemesi Kanunu'na göre, hükmün açıklanmasının geri bırakılmasına karar verilmesi hâlinde sanık ne kadar süreyle denetim süresine tâbi tutulur?
+    A) Bir yıl
+    B) İki yıl
+    C) Üç yıl
+    D) Beş yıl  ✔
+    E) Yedi yıl
+  — skor 0.43 | Ceza Muhakemesi Hukuku / 5271 Sayılı Ceza Muhakemesi Kanunu (CMK) | published | id 9290116f-ee55-4036-a020-b58004e75b73
+    (A), Bakırköy 3. Asliye Ceza Mahkemesi'nde görülen yargılamada, kasten yaralama suçunu işlediği sabit bulunduğundan 1 yıl hapis cezasına mahkûm edilmiş ve mahkemece hükmün açıklanmasının geri bırakılmasına karar verilmiştir. Yapılan istinaf başvurusu üzerine İstanbul Bölge Adliye Mahkemesi; tanık beyanlarının yanlış değerlendirildiğini, hukuka aykırı kanıtların hükme esas alındığını ve bu nedenle 
+    A) Yalnız I
+    B) Yalnız II
+    C) I ve III
+    D) II ve III  ✔
+    E) I, II ve III
+  — skor 0.43 | Polis Mevzuatı / 5395 Sayılı Çocuk Koruma Kanunu | published | id 9da858a5-3329-43f7-a91c-95d294b7b0c9
+    5395 sayılı Çocuk Koruma Kanunu’na göre, adli süreçteki bir çocuk hakkında yapılan yargılama sonunda hükmün açıklanmasının geri bırakılmasına karar verilmesi hâlinde, yönlendirme tedbirlerinden uygun görülenler hangi nitelikte uygulanır ve bu kapsamda hükmedilen yükümlülükler kimler tarafından yerine getirilir?
+    A) Denetimli serbestlik tedbiri olarak; 5/A maddesinde belirtilen kurumlarca  ✔
+    B) Çocuklara özgü güvenlik tedbiri olarak; denetimli serbestlik müdürlüğünce
+    C) Adli kontrol tedbiri olarak; Cumhuriyet başsavcılığı çocuk bürosunca
+    D) Denetimli serbestlik tedbiri olarak; denetimli serbestlik müdürlüğünce
+    E) Koruyucu ve destekleyici tedbir olarak; 5/A maddesinde belirtilen kurumlarca
+  — skor 0.43 | Ceza Hukuku / Türk Ceza Kanunu | published | id 47490909-ac58-407c-a53a-242a27dfd2e7
+    I. Mahkeme tarafından hükmün açıklanmasının geri bırakılmasına karar verilmesi II. Mahkeme tarafından sanık hakkında basit yargılama usulünün uygulanmasına karar verilmesi III. Mahkeme tarafından sanık hakkında kaçaklık kararı verilmesi IV. Soruşturma ve kovuşturma yapılmasının karar alınmasına bağlı olması Yukarıdakilerden hangileri dava zamanaşımını durduran nedenlerden arasında sayılmamıştır?
+    A) Yalnız I
+    B) Yalnız II  ✔
+    C) I ve II
+    D) II ve III
+    E) II ve IV
+
+## 6222-p2-02
+ADAY: 6222 sayılı Kanun'a göre, alkol etkisinde olduğu açıkça anlaşıldığı hâlde seyir alanına giren ve dışarı çıkmamakta ısrar ettiği için zor kullanılarak çıkarılan seyirci hakkında aşağıdakilerden hangisi doğrudur?
+ADAY DOĞRU: Bir yıl süreyle spor müsabakalarını seyirden yasaklanır.
+  — skor 0.32 | Polis Mevzuatı / 6222 Sayılı Sporda Şiddetin Önlenmesine Dair Kanun | published | id f92351de-50ea-48ef-a99c-6fbe0aca56e4
+    Spor müsabakalarına seyirci olarak katılmaktan yasaklanmış bir kişi, bileti olmaksızın bir müsabakayı izlemek amacıyla seyir alanına girmiştir. 6222 sayılı Kanun'a göre bu fiil nedeniyle kişiye verilecek adli para cezasının alt sınırı kaç gündür?
+    A) Elli
+    B) Yüz
+    C) İki yüz  ✔
+    D) İki yüz elli
+    E) Beş yüz
+  — skor 0.23 | Polis Mevzuatı / 6222 Sayılı Sporda Şiddetin Önlenmesine Dair Kanun | published | id 7754de12-401c-4a38-8481-8cf630b8f7c6
+    (T) Spor Kulübünün ev sahibi olduğu bir futbol müsabakasında, misafir (S) Spor Kulübünün taraftarları seyir alanındaki koltukları kırarak zarar vermiştir. 6222 sayılı Kanun'a göre bu olayla ilgili aşağıdakilerden hangisi doğrudur?
+    A) Faillerin cezalandırılması zarar görenin şikâyetine bağlıdır.
+    B) Zarardan, zarar verenler ile ev sahibi (T) Spor Kulübü müteselsilen sorumludur.
+    C) Stattaki eşya, mala zarar verme suçu bakımından kamu malı hükmündedir.  ✔
+    D) (S) Spor Kulübü zarardan, kusuru bulunması şartıyla sorumlu tutulur.
+    E) Zararı gideren (S) Spor Kulübü, zarar veren taraftarlarına rücu edemez.
+  — skor 0.19 | Polis Mevzuatı / 6222 Sayılı Sporda Şiddetin Önlenmesine Dair Kanun | published | id 9bd6af5b-b6db-4e9d-bacb-0a50af21adcc
+    Müsabaka sona erdikten sonra, seyirciler henüz stattan tamamen tahliye edilmemişken bir taraftar, yetkisi olmadığı hâlde sporcu çıkış tüneline girmiştir. Fiil, müsabakanın güvenliğini bozacak bir sonuç doğurmamıştır. 6222 sayılı Kanun'a göre bu taraftarın durumu ile ilgili aşağıdakilerden hangisi doğrudur?
+    A) Elli günden az olmamak üzere adli para cezası verilir.
+    B) Üç aydan bir yıla kadar hapis veya adli para cezası verilir.  ✔
+    C) Altı aydan iki yıla kadar hapis cezası verilir.
+    D) Bir yıldan üç yıla kadar hapis cezası verilir.
+    E) Müsabaka sona erdiğinden fiil bu Kanun kapsamında suç oluşturmaz.
+  — skor 0.19 | Polis Mevzuatı / 6222 Sayılı Sporda Şiddetin Önlenmesine Dair Kanun | published | id 5a21ac13-1cf3-4dcf-a4a9-64ed7cc47e98
+    Taraftarı olduğu takımın oynadığı bir müsabakada işlediği suç nedeniyle hakkında seyirden yasaklanma kararı verilen bir kişi yurt içindedir. Takımının bir sonraki müsabakası saat 20.00'de başlayacaktır. 6222 sayılı Kanun'a göre bu kişinin müsabaka günündeki yükümlülüğü aşağıdakilerden hangisidir?
+    A) Saat 19.00'da ve 22.00'de bulunduğu yere en yakın genel kolluk birimine başvurmak
+    B) Saat 20.00'de ve 21.00'de bulunduğu yere en yakın genel kolluk birimine başvurmak  ✔
+    C) Saat 20.00'de ve 21.00'de yerleşim yerindeki genel kolluk birimine başvurmak
+    D) Saat 20.00'de ve 22.00'de bulunduğu yere en yakın genel kolluk birimine başvurmak
+    E) Saat 20.00'de ve 22.00'de yerleşim yerindeki genel kolluk birimine başvurmak
+  — skor 0.17 | Polis Mevzuatı / 6222 Sayılı Sporda Şiddetin Önlenmesine Dair Kanun | published | id 447af614-9c7c-450c-ade9-55f910b9ab13
+    6222 sayılı Kanun'a göre, hakkında ikinci kez seyirden yasaklanma yaptırımına karar verilen kişi bakımından bu yaptırım, cezanın infazı tamamlandıktan itibaren kaç yıl geçmesiyle sona erer?
+    A) Bir
+    B) İki
+    C) Üç  ✔
+    D) Dört
+    E) Beş

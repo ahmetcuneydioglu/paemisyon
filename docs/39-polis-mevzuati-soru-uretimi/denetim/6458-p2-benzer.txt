@@ -1,0 +1,127 @@
+# 6458-p2 — bankadaki en benzer sorular (bütün banka, 7710 soru; eşik 0.15, aday başına 5)
+# skor = aday kök+doğru şık sözcüklerinin (IDF ağırlıklı) ne kadarının o soruda geçtiği. Yüksek skor mükerrer DEMEK DEĞİLDİR; karar gözcünündür.
+
+## 6458-p2-01
+ADAY: 6458 sayılı Kanun'a göre, Avrupa ülkeleri dışında meydana gelen olaylar nedeniyle siyasi düşüncelerinden dolayı zulme uğrayacağından haklı sebeplerle korkan yabancının statü belirleme işlemleri sonrasında alacağı statü aşağıdakilerden hangisidir?
+ADAY DOĞRU: Şartlı mülteci
+  (eşiği geçen benzer soru yok)
+
+## 6458-p2-02
+ADAY: 6458 sayılı Kanun'a göre, zulüm korkusu taşımayan, ancak ülkesine gönderilirse ülke genelindeki silahlı çatışmada ayrım gözetmeyen şiddet nedeniyle şahsına yönelik ciddi tehditle karşılaşacak yabancıya statü belirleme sonrasında hangi statü verilir?
+ADAY DOĞRU: İkincil koruma
+  (eşiği geçen benzer soru yok)
+
+## 6458-p2-03
+ADAY: Hırsızlık suçu şüphesiyle gözaltına alınan bir yabancı, gözaltı sırasında kolluk görevlilerine uluslararası koruma başvurusunda bulunmuştur. 6458 sayılı Kanun'a göre, bu başvuruyla ilgili aşağıdakilerden hangisi doğrudur?
+ADAY DOĞRU: Valiliğe derhâl bildirilir; adli işlemleri engellemez.
+  — skor 0.31 | Ceza Muhakemesi Hukuku / 5271 Sayılı Ceza Muhakemesi Kanunu (CMK) | published | id a871d3ad-5af6-4718-9b74-7082bba55a4c
+    Koruma tedbiri olan yakalamayla ilgili I. Kolluk görevlileri, tutuklama kararı veya yakalama emri düzenlenmesini gerektiren ve gecikmesinde sakınca bulunan durumlarda Cumhuriyet savcısına veya âmirlerine derhâl başvurma olanağı bulunmadığı takdirde, yakalama yetkisine sahiptirler. II. Kişiye suçu işlerken rastlanması veya suçüstü bir eylemden dolayı izlenen kişinin kaçması olasılığının bulunması v
+    A) Yalnız II  ✔
+    B) Yalnız III
+    C) I ve II
+    D) I ve III
+    E) I, II ve III
+  — skor 0.27 | Ceza Muhakemesi Hukuku / 5271 Sayılı Ceza Muhakemesi Kanunu (CMK) | published | id 6846ae03-d038-4d08-b075-a50d752b377d
+    5271 sayılı Ceza Muhakemesi Kanunu’na göre, “yakalama ve yakalanan kişi hakkında yapılacak işlemler” ile ilgili aşağıdakilerden hangisi doğrudur?
+    A) Soruşturma ve kovuşturması şikâyete bağlı olmakla birlikte; çocuklara, beden veya akıl hastalığı, malullük veya güçsüzlükleri nedeniyle kendilerini idareden aciz bulunanlara karşı işlenen suçüstü hâllerinde kişinin yakalanması şikâyete bağlıdır.
+    B) Cumhuriyet savcısı; yakalandığı sırada kaçmasını, kendisine veya başkalarına zarar vermesini önleyecek tedbirleri aldıktan sonra, yakalanan kişiye kanunî haklarını bildirir.
+    C) Yakalama emrine konu işlemin yerine getirilmesi nedeniyle yakalama emrinin çıkarılma amacının ortadan kalkması durumunda, emniyet amiri tarafından yakalama emrinin derhâl iadesi istenir.
+    D) Kolluk görevlileri, tutuklama kararı veya yakalama emri düzenlenmesini gerektiren ve gecikmesinde sakınca bulunan hâllerde; Cumhuriyet savcısına veya âmirlerine derhâl başvurma olanağı bulunmadığı takdirde, yakalama yetkisine sahiptirler.  ✔
+    E) Suçüstü bir fiilden dolayı izlenen kişinin kaçması olasılığının bulunması veya hemen kimliğini belirleme olanağının bulunmaması hâlinde, olay hakkında emniyet amirine hemen bilgi verilerek emri doğrultusunda işlem yapılır.
+  — skor 0.26 | Polis Mevzuatı / Yakalama, Gözaltına Alma ve İfade Alma Yönetmeliği | published | id b7d99d4c-d94d-4f40-bc60-b7e79fab4aac
+    Gözaltına alınan bir şüphelinin ifadesi alınmış ve kolluktaki işlemlerinin tamamı gözaltının dokuzuncu saatinde bitirilmiştir. Yakalama, Gözaltına Alma ve İfade Alma Yönetmeliği'ne göre kolluk bu aşamada nasıl hareket eder?
+    A) Gözaltı süresi azamî olduğundan şüpheliyi sürenin sonuna kadar tutar
+    B) Sevk için sulh ceza hâkiminin onayını alıncaya kadar şüpheliyi bekletir
+    C) Sevki, ertesi günün mesai başlangıcına kadar erteler
+    D) Gözaltı süresinin dolmasını beklemeden başsavcılığa derhâl sevk eder  ✔
+    E) Şüpheliyi kendi kararıyla serbest bırakıp başsavcılığa bilgi verir
+  — skor 0.23 | İdare Hukuku / İdare Hukuku | published | id 9840ab08-4f7a-42e0-9169-3a467585d164
+    Aşağıdakilerden hangisi adli kolluk faaliyetidir?
+    A) Adliye binasına girişlerde üst araması yapılması
+    B) Çocukların sağlığına zarar verebilecek kırtasiye malzemelerinin ithalatının önlenmesi
+    C) Ormanların korunması
+    D) Özel güvenlik hizmeti sunulması
+    E) Hırsızlık suçu şüphelisinin aranarak bulunması  ✔
+  — skor 0.22 | Ceza Muhakemesi Hukuku / 5271 Sayılı Ceza Muhakemesi Kanunu (CMK) | published | id 61674ad7-1698-44a5-b474-6f513d01b2ea
+    Adli süreçteki çocukların muhakemesi hakkında I. Çocuğun ifadesinin alınması veya çocuk hakkındaki diğer işlemler sırasında, çocuğun yanında sosyal çalışma görevlisi bulundurulması zorunludur. II. Çocuklar gözaltına alınabilir. III. Çocuklara zincir, kelepçe ve benzeri aletler takılamaz. IV. Çocuğa yüklenen suçtan dolayı, Ceza Muhakemesi Yasası'ndaki koşulların varlığı durumunda, kamu davasının aç
+    A) Yalnız I
+    B) I ve II
+    C) I ve III
+    D) I ve IV  ✔
+    E) I, II ve IV
+
+## 6458-p2-04
+ADAY: 6458 sayılı Kanun'a göre, “başvuru sahiplerinin idari gözetimi” ile ilgili aşağıdakilerden hangisi YANLIŞTIR?
+ADAY DOĞRU: Gözetim kararına karşı on gün içinde Uluslararası Koruma Değerlendirme Komisyonuna itiraz edilebilir.
+  — skor 0.31 | Polis Mevzuatı / 5326 Sayılı Kabahatler Kanunu | published | id d15d8e56-d3e8-41b5-bae5-6a305f7c7a01
+    5326 sayılı Kabahatler Kanunu’na göre idarî para cezası ve mülkiyetin kamuya geçirilmesine ilişkin idari yaptırım kararına karşı, kararın tebliği veya tefhimi tarihinden itibaren en geç kaç gün içinde, sulh ceza mahkemesine başvurulabilir?
+    A) On
+    B) On beş  ✔
+    C) Yirmi
+    D) Otuz
+  — skor 0.29 | Anayasa Hukuku / T.C. Anayasası | published | id ccfa24bb-3646-45ca-bcf2-4d9a9d76aee2
+    2820 sayılı Kanuna göre siyasi parti disiplin kurullarınca verilen disiplin cezalarına karşı hangi süre içinde ve nereye itiraz edilebilir?
+    A) 30 gün içinde asliye hukuk mahkemesine  ✔
+    B) 30 gün içinde Yargıtay Cumhuriyet Başsavcılığına
+    C) 30 gün içinde Anayasa Mahkemesine
+    D) 15 gün içinde sulh hukuk mahkemesine
+  — skor 0.29 | Anayasa Hukuku / T.C. Anayasası | published | id cf6f51ee-259b-4678-bb65-a2c10516cb9b
+    I. Milletvekilliğinin, istifanın kabulü üzerine düşürülmesi kararına karşı Anayasa Mahkemesine itiraz edilebilir. II. Meclis çalışmalarına özürsüz veya izinsiz olarak 1 ay içerisinde toplam 5 birleşim günü katılmayan milletvekilinin milletvekilliğinin düşmesine, durumun Meclis Başkanlık Divanınca tespit edilmesi üzerine Genel Kurulca üye tam sayısının salt çoğunluğunun gizli oyuyla karar verilebil
+    A) Yalnız I
+    B) Yalnız II
+    C) I ve II
+    D) II ve III  ✔
+    E) I, II ve III
+  — skor 0.28 | Polis Mevzuatı / 6458 Sayılı Yabancılar ve Uluslararası Koruma Kanunu | published | id 1eb06eb0-11c8-4ac0-8906-778091424e42
+    6458 sayılı Yabancılar ve Uluslararası Koruma Kanunu'nun 102 nci maddesi uygulamasında, maddede sayılan fiillerin bir takvim yılı içinde tekrarı hâlinde idarî para cezaları nasıl uygulanır?
+    A) Ceza değişmez; tekerrür hükmü yoktur
+    B) Ceza yarı oranında artırılır  ✔
+    C) Ceza iki katı olarak uygulanır
+    D) Ceza üç katına çıkarılır ve sınır dışı işlemi zorunlu hâle gelir
+    E) İkinci fiilden itibaren ceza yerine hapis uygulanır
+  — skor 0.28 | Polis Mevzuatı / 4982 Sayılı Bilgi Edinme Hakkı Kanunu | published | id 12afe939-9408-4d44-99cd-b9c0f92cbda0
+    4982 sayılı Bilgi Edinme Hakkı Kanunu'na göre, bilgi edinme talebi reddedilen başvuru sahibi, yargı yoluna başvurmadan önce kararın tebliğinden itibaren kaç gün içerisinde Bilgi Edinme Değerlendirme Kurulu'na itiraz edebilir?
+    A) 10
+    B) 15  ✔
+    C) 30
+    D) 45
+    E) 60
+
+## 6458-p2-05
+ADAY: 6458 sayılı Kanun'a göre, uluslararası koruma başvurusu geri çekilmiş sayılan bir yabancı yeni bir gerekçe öne sürerek yeniden başvurursa nasıl işlem yapılır?
+ADAY DOĞRU: Başvurusu hızlandırılmış olarak değerlendirilir.
+  — skor 0.33 | Polis Mevzuatı / 6458 Sayılı Yabancılar ve Uluslararası Koruma Kanunu | published | id 1eb06eb0-11c8-4ac0-8906-778091424e42
+    6458 sayılı Yabancılar ve Uluslararası Koruma Kanunu'nun 102 nci maddesi uygulamasında, maddede sayılan fiillerin bir takvim yılı içinde tekrarı hâlinde idarî para cezaları nasıl uygulanır?
+    A) Ceza değişmez; tekerrür hükmü yoktur
+    B) Ceza yarı oranında artırılır  ✔
+    C) Ceza iki katı olarak uygulanır
+    D) Ceza üç katına çıkarılır ve sınır dışı işlemi zorunlu hâle gelir
+    E) İkinci fiilden itibaren ceza yerine hapis uygulanır
+  — skor 0.20 | Ceza Muhakemesi Hukuku / 5271 Sayılı Ceza Muhakemesi Kanunu (CMK) | published | id 0bc6a0c5-361a-408e-aa0d-f1fe225dbcf6
+    (A), doğrudan kastla insan öldürme suçundan mahkûm olup verilen karara karşı istinaf yasa yoluna başvurur. Bölge adliye mahkemesi, kararı yerinde bularak istinaf başvurusunu esastan reddeder. Bu kararın temyizi üzerine Yargıtay olayda bilinçli taksirin bulunduğu gerekçesiyle kararı sanık lehine bozar. Mahkeme, bozma kararına uyar. Yeniden yapılan duruşma sonunda eylemin olası kastla insan öldürme 
+    A) Mahkeme ilk nitelendirmesine göre yargılama yapmak zorundadır.
+    B) Mahkeme, Yargıtay'ın aksi görüşünde olsa bile direnme kararı veremezdi.
+    C) Mahkeme ilk nitelendirmeye göre yargılama yapmak zorundadır. Ancak bozmaya uymuş olmasına rağmen daha ağır bir ceza vermek yetkisine sahiptir.
+    D) Bozmaya uyan mahkemenin, mahkûmiyet kararı vermesi yerindedir ancak mahkeme eski cezadan daha ağır bir ceza veremez.  ✔
+    E) Mahkeme bozmaya uymuş olmasına rağmen "bozmadan sonra serbestlik kuralı" gereği, yeni nitelendirmeye göre eskisinden daha ağır bir ceza da verebilir.
+  — skor 0.19 | Ceza Hukuku / Türk Ceza Kanunu | published | id ad5ac566-46ea-4834-b890-8d990df342cf
+    I. Geri verilmesi istenilen kişi bu durumu kabul ederse mahkeme, yabancı devletin istemi hakkında olumlu karar vermek zorundadır. II. Mahkemenin geri verme konusundaki yargısal kararına karşı itiraz yoluna başvurulabilir. III. Geri verme kararının yerine getirilmesi Adalet Bakanlığı'nın onayına bağlıdır. 6706 sayılı Cezai Konularda Uluslararası Adli İş Birliği Yasası'na göre rızaya dayalı geri ver
+    A) Yalnız I  ✔
+    B) Yalnız II
+    C) I ve II
+    D) II ve III
+    E) I, II ve III
+  — skor 0.18 | Atatürk İlkeleri ve İnkılap Tarihi / Atatürk İlkeleri ve İnkılap Tarihi | published | id 0904b04f-5904-491f-98d1-d8db335eb834
+    Türk dilini yabancı dillerin boyunduruğundan kurtarmalı ve Türk tarihi millî bir hassasiyetle yeniden yazılmalıdır. Bu görüşlerini dile getiren bir düşünce adamının aşağıdaki Atatürk İlkelerinden hangisini öne çıkartmak istediği söylenebilir?
+    A) Devletçilik
+    B) Cumhuriyetçilik
+    C) İnkılapçılık
+    D) Halkçılık
+    E) Milliyetçilik  ✔
+  — skor 0.17 | Polis Mevzuatı / Adli ve Önleme Aramaları Yönetmeliği | published | id f5ffeea5-b1c9-4038-bee4-a20e2fb3ca18
+    Adlî ve Önleme Aramaları Yönetmeliği’ne göre; avukat bürolarında arama sonucu el konulmasına karar verilen şeyler bakımından bürosunda arama yapılan avukat, baro başkanı veya onu temsil eden avukat, el konulanların avukat ile müvekkili arasındaki mesleki ilişkiye ait olduğunu öne sürerek karşı koyduğunda, el konulanlar ayrı bir zarf veya paket içerisine konularak hazır bulunanlarca mühürlenir ve b
+    A) Mahkeme
+    B) Kolluk amiri
+    C) Sulh ceza hâkimi  ✔
+    D) Cumhuriyet savcısı
+    E) Asliye hukuk hâkimi

@@ -1,0 +1,19 @@
+[
+  {
+    "id": "5607-p2-01",
+    "articleNo": "10",
+    "kok": "5607 sayılı Kanun'a göre, kaçak eşya naklinde kullanıldığı şüphesiyle elkonulan taşıtlarla ilgili aşağıdakilerden hangisi YANLIŞTIR?",
+    "siklar": {
+      "A": "Türkiye'de sicile kayıtlı olmayan taşıt, elkoyma kararı veren mercilerce alıkonulur.",
+      "B": "Alıkonulan taşıt, ayırıcı özelliklerini gösteren bir tutanakla gümrük idaresine teslim edilir.",
+      "C": "Satılarak tasfiye edilen taşıtın sahibine iadesine karar verilirse satış bedeli, kanuni faiziyle birlikte hak sahibine ödenir.",
+      "D": "Alıkonulan taşıt, muhafaza ve diğer masrafları karşılandığında sahibine iade edilir.",
+      "E": "Alıkonulan taşıt, soruşturma ve kovuşturma sonucu beklenmeksizin tasfiye edilebilir."
+    },
+    "dogru": "D",
+    "aciklama": "Yanlış ifade D'dir. Alıkonulan taşıtın sahibine iadesi 10 uncu maddenin ikinci fıkrasında masrafa değil, teminata bağlanmıştır: 'Sahibinin taşıtın DEĞERİ KADAR TEMİNATI alıkoyma tarihinden itibaren otuz gün içinde gümrük idaresine teslim etmesi halinde, taşıt sahibine iade edilir.' Muhafaza ve diğer masrafların karşılanması ise üçüncü fıkrada ALIKONULMAYAN taşıtın sahibince teslim alınmasına bağlanmış bir yükümlülüktür; iki fıkrayı karıştıran aday bu ifadeyi doğru sayar. Alıkonulan deniz taşıtında da masrafların karşılanması yalnız tasfiye yoluna gidilmemesini sağlar; teminatla teslim alınmayan taşıt sahibine değil, gümrük idaresince belirlenen liman işletme müdürlüğüne teslim edilir (11/3). Öteki dört ifade doğrudur. Alıkoyma sebeplerinden biri ikinci fıkrada sayılır: '… Türkiye’de sicile kayıtlı olmaması … halinde, elkonulan taşıt, elkoyma kararı veren mercilerce alıkonulur.' Alıkonulan taşıt, 11 inci maddenin birinci fıkrasına göre '… eşyanın ayırıcı özelliklerini gösterir bir tutanakla gümrük idaresine teslim edilir.' Teminat süresinde verilmezse ikinci fıkranın son cümlesi uygulanır: 'Aksi takdirde, tasfiye idaresi tarafından SORUŞTURMA VE KOVUŞTURMA SONUCU BEKLENMEKSİZİN derhal tasfiye olunur.' Yargılama bitmeden tasfiye yapılamayacağını düşünen aday bu doğru ifadeyi yanlış sayar. Tasfiyeden sonra verilen iade kararı da sonuçsuz kalmaz: 16 ncı maddenin ikinci fıkrasına göre 'Tasfiye edilen eşya veya taşıtların sahibine iadesine karar verilmesi halinde, satış bedeli Gümrük Kanununun 180 inci maddesi hükümleri çerçevesinde el koyma tarihinden iade tarihine kadar geçen süre için KANUNİ FAİZİ İLE BİRLİKTE hak sahibine ödenir.' Taşıtın satışında masraflar satış gelirinden düşülür ve kalan miktar emanet hesabına alınır (10/4); iade kararında ise satış bedeli kanuni faiziyle ödenir ve emanetteki tutar yetmezse fark gümrük idaresince genel bütçeden karşılanır (16/2).",
+    "dayanak": "5607 sayılı Kanun md 10/2 (karş. md 10/3, 11/1, 11/3, 16/2)",
+    "zorluk": "hard",
+    "tur": "onerme"
+  }
+]

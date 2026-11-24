@@ -1,0 +1,41 @@
+# 1774-p2 — bankadaki en benzer sorular (bütün banka, 7997 soru; eşik 0.15, aday başına 5)
+# skor = aday kök+doğru şık sözcüklerinin (IDF ağırlıklı) ne kadarının o soruda geçtiği. Yüksek skor mükerrer DEMEK DEĞİLDİR; karar gözcünündür.
+
+## 1774-p2-01
+ADAY: 1774 sayılı Kanun'a göre, kat mülkiyetine tabi bir binada oturan kiracı, binada bildirim dışı kimselerin oturup oturmadığı konusunda gereken bilgileri aşağıdakilerden hangisine vermek zorundadır?
+ADAY DOĞRU: Yöneticiye
+  — skor 0.23 | Analitik Düşünme ve Türkçe / Analitik Akıl Yürütme | published | id e6f05ad3-0969-4888-90d6-191d1bd25422
+    Beş katlı bir apartmanın her katında yalnızca bir hane oturmaktadır. Bu haneler Aksoy, Bulut, Çetin, Duman ve Ekinci aileleridir ve her aile katlardan yalnızca birinde oturmaktadır. Katlar aşağıdan yukarıya doğru numaralanmıştır: birinci kat en alttaki, beşinci kat en üstteki kattır. Her hanede bir, iki, üç ya da dört kişi yaşamaktadır. Apartmanla ilgili bilinenler şunlardır: - Apartmanda toplam o
+    A) Yalnız I
+    B) Yalnız II
+    C) Yalnız III
+    D) I ve II  ✔
+    E) I ve III
+  — skor 0.23 | Analitik Düşünme ve Türkçe / Analitik Akıl Yürütme | published | id a0529edd-6a7b-49a1-bd29-ff7d44fe8e5d
+    Beş katlı bir apartmanın her katında yalnızca bir hane oturmaktadır. Bu haneler Aksoy, Bulut, Çetin, Duman ve Ekinci aileleridir ve her aile katlardan yalnızca birinde oturmaktadır. Katlar aşağıdan yukarıya doğru numaralanmıştır: birinci kat en alttaki, beşinci kat en üstteki kattır. Her hanede bir, iki, üç ya da dört kişi yaşamaktadır. Apartmanla ilgili bilinenler şunlardır: - Apartmanda toplam o
+    A) Ekinci ailesi birinci katta oturmaktadır.
+    B) Aksoy ailesinin hanesinde iki kişi yaşamaktadır.  ✔
+    C) Çetin ailesi birinci katta oturmaktadır.
+    D) Bulut ailesi ikinci katta oturmaktadır.
+    E) Çetin ailesinin hanesinde dört kişi yaşamaktadır.
+  — skor 0.19 | Analitik Düşünme ve Türkçe / Analitik Akıl Yürütme | published | id 2541c07c-a7f4-4c72-be72-00da6b3f0cdc
+    Beş katlı bir apartmanın her katında yalnızca bir hane oturmaktadır. Bu haneler Aksoy, Bulut, Çetin, Duman ve Ekinci aileleridir ve her aile katlardan yalnızca birinde oturmaktadır. Katlar aşağıdan yukarıya doğru numaralanmıştır: birinci kat en alttaki, beşinci kat en üstteki kattır. Her hanede bir, iki, üç ya da dört kişi yaşamaktadır. Apartmanla ilgili bilinenler şunlardır: - Apartmanda toplam o
+    A) Duman ailesinin oturduğu kat ile Bulut ailesinin hanesindeki kişi sayısı
+    B) Ekinci ailesinin oturduğu kat ile Çetin ailesinin hanesindeki kişi sayısı
+    C) Aksoy ailesinin hanesindeki kişi sayısı ile Bulut ailesinin hanesindeki kişi sayısı
+    D) Çetin ailesinin hanesindeki kişi sayısı ile Ekinci ailesinin hanesindeki kişi sayısı
+    E) Çetin ailesinin oturduğu kat ile Aksoy ailesinin hanesindeki kişi sayısı  ✔
+  — skor 0.18 | Polis Mevzuatı / 657 Sayılı Devlet Memurları Kanunu | published | id 95647f6e-6d34-40a3-a0ef-01e295bad47d
+    I. Disiplin amirleri uyarma, kınama ve aylıktan kesme cezalarını soruşturmanın tamamlandığı günden itibaren 15 gün içinde vermek zorundadırlar. II. Kademe ilerlemesinin durdurulması cezasını gerektiren hallerde soruşturma dosyası, kararını bildirmek üzere yetkili disiplin kuruluna 30 gün içinde tevdi edilir. III. Memurluktan çıkarma cezası için disiplin amirleri tarafından yaptırılan soruşturmaya 
+    A) I ve II
+    B) I ve III  ✔
+    C) II ve III
+    D) II ve IV
+    E) I ve IV
+  — skor 0.16 | Polis Mevzuatı / 1774 Sayılı Kimlik Bildirme Kanunu | published | id bc821785-07a4-4c9a-a185-9af3410b154d
+    1774 sayılı Kimlik Bildirme Kanunu uygulamasına göre; I. Konaklama tesisi dışındaki işyerlerinde çalışanların kimlik bildirimi 3 gün içinde yapılır. II. Aile reisleri, konutlarında 30 günden fazla kalan misafirleri 3 gün içinde kolluğa bildirir. III. Kimliğini resmî belgeyle ispat edemeyen kimseleri konut ve işyerinde barındırmak veya çalıştırmak yasaktır. IV. İzinsiz sabahçı kahvesi işletmek bu K
+    A) Yalnız I ve II
+    B) Yalnız I, II ve III
+    C) Yalnız II ve IV
+    D) I, II, III ve IV  ✔
+    E) Yalnız III ve IV

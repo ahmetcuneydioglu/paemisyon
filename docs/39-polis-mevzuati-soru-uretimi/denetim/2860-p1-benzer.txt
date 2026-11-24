@@ -1,0 +1,175 @@
+# 2860-p1 — bankadaki en benzer sorular (bütün banka, 7696 soru; eşik 0.15, aday başına 5)
+# skor = aday kök+doğru şık sözcüklerinin (IDF ağırlıklı) ne kadarının o soruda geçtiği. Yüksek skor mükerrer DEMEK DEĞİLDİR; karar gözcünündür.
+
+## 2860-p1-01
+ADAY: 2860 sayılı Kanun'a göre, yardım toplama faaliyeti birden fazla ili kapsıyorsa faaliyete girişecek kişi ya da kuruluş izni aşağıdakilerden hangisinden alır?
+ADAY DOĞRU: Yerleşim yerinin bulunduğu ilin valisinden
+  — skor 0.26 | Polis Mevzuatı / 2860 Sayılı Yardım Toplama Kanunu | published | id 73ad5c29-de42-482a-82ba-5f369b827502
+    2860 sayılı Yardım Toplama Kanunu hükümlerine göre yardım toplama faaliyeti için gerçek kişiler tarafından oluşturulan sorumlu kurulda yer alanlarda değişiklik olması halinde en fazla kaç gün içinde izin veren makama değişiklik hakkında bilgi vermek zorundadır?
+    A) Beş
+    B) Üç
+    C) On  ✔
+    D) On beş
+    E) Otuz
+  — skor 0.21 | Polis Mevzuatı / 4483 Sayılı Memurların Yargılanması Hakkında Kanun | published | id d4c472f3-ed9e-4b7c-8db7-b4cc6088b2ca
+    4483 sayılı Memurlar Ve Diğer Kamu Görevlilerinin Yargılanması Hakkında Kanun hükümlerine göre bölge düzeyinde teşkilatlanan kurum ve kuruluşlarda görev yapan memurlar ve diğer kamu görevlileri hakkında soruşturma izni vermeye yetkili makam aşağıdakilerden hangisidir?
+    A) Görev yaptıkları ilin valisi  ✔
+    B) Bağlı oldukları Bakanlık
+    C) Bağlı oldukları il müdürleri
+    D) İçişleri Bakanlığı
+    E) Kaymakam
+  — skor 0.17 | Polis Mevzuatı / 2559 Sayılı Polis Vazife ve Salâhiyet Kanunu (PVSK) | published | id 7f98ab62-81b9-4d26-95d8-ac9efa20dfc9
+    Bir derneğe ait olup yalnız üyelerinin yararlanması için açılan bir lokal, iç yönetmeliğine aykırı faaliyet göstermektedir. 2559 sayılı PVSK'nın 8 inci maddesine göre bu lokalin faaliyetten men edilebilmesi için aşağıdakilerden hangisinin tespit edilmesi gerekir?
+    A) Birden fazla denetim sonunda ve yazılı ihtara rağmen umuma açık yer durumuna geldiğinin  ✔
+    B) Tek bir denetim sonunda ve yazılı ihtara rağmen umuma açık yer durumuna geldiğinin
+    C) Birden fazla denetim sonunda ve sözlü ihtara rağmen umuma açık yer durumuna geldiğinin
+    D) Bir yıl içinde yapılan üç ayrı denetimde umuma açık yer durumuna geldiğinin
+    E) Yazılı ihtar yapılmaksızın, birden fazla denetim sonunda umuma açık yer durumuna geldiğinin
+  — skor 0.17 | Ceza Hukuku / Türk Ceza Kanunu | published | id bade2a74-37c2-47b5-b234-ff8e89b7dfbc
+    5237 sayılı Türk Ceza Kanunu'na göre, "İşlediği bir fiil ile birden fazla farklı suçun oluşmasına sebebiyet veren kişi, bunlardan en ağır cezayı gerektiren suçtan dolayı cezalandırılır." ifadesi aşağıdakilerden hangisinin tanımıdır?
+    A) Zincirleme suç
+    B) Bileşik suç
+    C) Fikri içtima  ✔
+    D) Tekerrür
+    E) Aynı neviden fikri içtima
+  — skor 0.16 | Analitik Düşünme ve Türkçe / Analitik Akıl Yürütme | published | id 2541c07c-a7f4-4c72-be72-00da6b3f0cdc
+    Beş katlı bir apartmanın her katında yalnızca bir hane oturmaktadır. Bu haneler Aksoy, Bulut, Çetin, Duman ve Ekinci aileleridir ve her aile katlardan yalnızca birinde oturmaktadır. Katlar aşağıdan yukarıya doğru numaralanmıştır: birinci kat en alttaki, beşinci kat en üstteki kattır. Her hanede bir, iki, üç ya da dört kişi yaşamaktadır. Apartmanla ilgili bilinenler şunlardır: - Apartmanda toplam o
+    A) Duman ailesinin oturduğu kat ile Bulut ailesinin hanesindeki kişi sayısı
+    B) Ekinci ailesinin oturduğu kat ile Çetin ailesinin hanesindeki kişi sayısı
+    C) Aksoy ailesinin hanesindeki kişi sayısı ile Bulut ailesinin hanesindeki kişi sayısı
+    D) Çetin ailesinin hanesindeki kişi sayısı ile Ekinci ailesinin hanesindeki kişi sayısı
+    E) Çetin ailesinin oturduğu kat ile Aksoy ailesinin hanesindeki kişi sayısı  ✔
+
+## 2860-p1-02
+ADAY: İl merkezi dışındaki tek bir ilçede izinle yürütülen yardım toplama faaliyetinin sorumlu kurulu, kesinhesabı süresinde vermemiştir. 2860 sayılı Kanun'a göre, bu aykırılık nedeniyle verilecek idari para cezasına hangi makam karar verir?
+ADAY DOĞRU: Kaymakam
+  — skor 0.21 | Polis Mevzuatı / 2860 Sayılı Yardım Toplama Kanunu | published | id 73ad5c29-de42-482a-82ba-5f369b827502
+    2860 sayılı Yardım Toplama Kanunu hükümlerine göre yardım toplama faaliyeti için gerçek kişiler tarafından oluşturulan sorumlu kurulda yer alanlarda değişiklik olması halinde en fazla kaç gün içinde izin veren makama değişiklik hakkında bilgi vermek zorundadır?
+    A) Beş
+    B) Üç
+    C) On  ✔
+    D) On beş
+    E) Otuz
+  — skor 0.20 | Polis Mevzuatı / 5395 Sayılı Çocuk Koruma Kanunu | published | id d23968e2-c5d1-4377-bc46-07240fe1bd57
+    5395 sayılı Çocuk Koruma Kanunu’na göre, çalıştırma yasağına aykırı olarak işçi çalıştıran kişiye ilk aşamada hangi makam tarafından ne miktarda idari para cezası verilir?
+    A) Aile mahkemesi tarafından, iş yeri başına brüt asgari ücretin yedi katı tutarında
+    B) Mahallîn mülki idare amiri tarafından, aykırı olarak çalıştırdığı her bir kişi başına brüt asgari ücretin yedi katı tutarında
+    C) Cumhuriyet başsavcılığı tarafından, aykırı olarak çalıştırdığı her bir kişi başına brüt asgari ücretin üç katı tutarında
+    D) Mahallîn mülki idare amiri tarafından, aykırı olarak çalıştırdığı her bir kişi başına brüt asgari ücretin üç katı tutarında  ✔
+    E) Aile ve Sosyal Hizmetler Bakanlığı il müdürlüğü tarafından, iş yeri başına brüt asgari ücretin üç katı tutarında
+  — skor 0.19 | İdare Hukuku / İdare Hukuku | published | id bd1fbd17-001a-423b-a602-4413e10535d4
+    Devlet memuru (G) hakkında disiplin soruşturması yürütülmüş; ancak (G)'ye savunma süresi verilmeden disiplin cezası verilmiştir. Bu işlem, idari işlemin hangi unsuru bakımından hukuka aykırıdır?
+    A) Maksat
+    B) Şekil  ✔
+    C) Sebep
+    D) Yetki
+    E) Konu
+  — skor 0.19 | Polis Mevzuatı / 7068 Sayılı Genel Kolluk Disiplin Hükümleri Kanunu | published | id a87b033f-8398-47cc-9ab9-6202efe32b52
+    7068 sayılı Kanun'a göre, Emniyet Genel Müdürlüğü merkez ve taşra teşkilatındaki tıbbi, teknik ve mali hizmetler veren şube müdürlükleri ve daha üst kadrolara emniyet hizmetleri sınıfı dışından atananlar hakkında meslekten çıkarma cezası dışındaki disiplin cezalarını hangi kurul verir?
+    A) İl polis disiplin kurulu
+    B) Emniyet Genel Müdürlüğü Merkez Disiplin Kurulu
+    C) Emniyet Genel Müdürlüğü Yüksek Disiplin Kurulu  ✔
+    D) Atandıkları birimin bağlı olduğu daire başkanlığınca oluşturulan disiplin kurulu
+    E) Hakkında karar verilecek personelin geldiği kurumun disiplin kurulu
+  — skor 0.19 | Polis Mevzuatı / 2918 Sayılı Karayolları Trafik Kanunu | published | id 93797ec3-14ce-49cd-b84f-d0166f4066b6
+    2918 sayılı Karayolları Trafik Kanunu'na göre, yerleşim yeri DIŞINDA yönetmelikte belirlenen hız sınırının aşılması nedeniyle idari para cezası uygulanabilmesi için aşımın en az hangi aralıkta olması gerekir?
+    A) 6-10 km/s
+    B) 11-15 km/s  ✔
+    C) 16-20 km/s
+    D) 21-25 km/s
+    E) 26-30 km/s
+
+## 2860-p1-03
+ADAY: 2860 sayılı Kanun'a göre, internet ortamında izinsiz yardım toplandığı tespit edildiğinde içerik ve yer sağlayıcıya ilişkin bilgiler edinilemiyorsa izlenecek yol aşağıdakilerden hangisidir?
+ADAY DOĞRU: Sulh ceza hâkimliğinden erişim engeli istenir.
+  — skor 0.15 | İdare Hukuku / 5302 İl Özel İdaresi Kanunu | published | id 7d0d8981-762b-4c1a-8704-d9bb86bed91e
+    I. Mahkeme kararıyla tespit edilen hizmetlerde meydana gelen aksamanın giderilmesini İçişleri Bakanlığı, hizmetin özelliğine göre makul bir süre vererek il özel idaresinden ister. II. Hizmetlerde meydana gelen aksama il özel idaresi tarafından giderilmezse, söz konusu hizmetin yerine getirilmesi o ilin valisinden istenir. III. İl özel idaresinin aksayan hizmetlerinin vali tarafından yerine getiril
+    A) I ve II
+    B) I ve IV
+    C) I, II ve III  ✔
+    D) II, III ve IV
+    E) I, II, III ve IV
+  — skor 0.15 | Polis Mevzuatı / Adli ve Önleme Aramaları Yönetmeliği | published | id f5ffeea5-b1c9-4038-bee4-a20e2fb3ca18
+    Adlî ve Önleme Aramaları Yönetmeliği’ne göre; avukat bürolarında arama sonucu el konulmasına karar verilen şeyler bakımından bürosunda arama yapılan avukat, baro başkanı veya onu temsil eden avukat, el konulanların avukat ile müvekkili arasındaki mesleki ilişkiye ait olduğunu öne sürerek karşı koyduğunda, el konulanlar ayrı bir zarf veya paket içerisine konularak hazır bulunanlarca mühürlenir ve b
+    A) Mahkeme
+    B) Kolluk amiri
+    C) Sulh ceza hâkimi  ✔
+    D) Cumhuriyet savcısı
+    E) Asliye hukuk hâkimi
+
+## 2860-p1-04
+ADAY: 2860 sayılı Kanun'a göre, “yardım toplama faaliyetlerinde görev alanlar” ile ilgili aşağıdakilerden hangisi YANLIŞTIR?
+ADAY DOĞRU: Bu faaliyetlerde çalışan kamu görevlisine, izin veren makamın belirleyeceği miktarda ücret ödenebilir.
+  — skor 0.45 | Polis Mevzuatı / 2860 Sayılı Yardım Toplama Kanunu | published | id 73ad5c29-de42-482a-82ba-5f369b827502
+    2860 sayılı Yardım Toplama Kanunu hükümlerine göre yardım toplama faaliyeti için gerçek kişiler tarafından oluşturulan sorumlu kurulda yer alanlarda değişiklik olması halinde en fazla kaç gün içinde izin veren makama değişiklik hakkında bilgi vermek zorundadır?
+    A) Beş
+    B) Üç
+    C) On  ✔
+    D) On beş
+    E) Otuz
+  — skor 0.21 | Polis Mevzuatı / Emniyet Atama ve Yer Değiştirme Yönetmeliği | published | id 44b04a0f-8525-4c9a-977b-160913dcbc52
+    İkinci bölgedeki birimlerde kesintisiz en az - - - - geçici görevle fiilen çalışan birinci bölge personelinin bu süreleri ikinci bölge hizmetinden sayılır; ikinci bölgeden birinci bölgeye kurs veya geçici görev gibi nedenlerle yapılan görevlendirmelerde ise toplamı - - - - fazla olan süreler sayılmaz. Atama ve Yer Değiştirme Yönetmeliği'ne göre, boş bırakılan yerlere sırasıyla aşağıdakilerden hang
+    A) bir ay - dört aydan
+    B) üç ay - üç aydan
+    C) üç ay - dört aydan  ✔
+    D) dört ay - üç aydan
+    E) dört ay - dört aydan
+  — skor 0.19 | Genel Kültür ve Güncel Olaylar / Genel Kültür | published | id 03cf1e3d-e816-4e95-8626-58999f59a1f0
+    • Bakanlığa gönderilen kanun teklifleri hakkında görüş bildirmek • Yazılı olmayan hukuk kuralları ile örf ve adetleri ve eski hukuk kaynaklarını araştırmak, toplamak ve yayımlamak • Bakanlığın görev ve yetkisine giren konularla ilgili istatistiki bilgilerin belirlenmesi, toplanması, sınıflandırılması ve değerlendirilmesi ile ilgili hizmetleri yürütmek • Ceza muhakemesinde ön ödeme, uzlaştırma ve k
+    A) Eğitim Dairesi Başkanlığı
+    B) Mevzuat Genel Müdürlüğü
+    C) Ceza İşleri Genel Müdürlüğü
+    D) Bilgi İşlem Genel Müdürlüğü  ✔
+    E) Adli Sicil ve İstatistik Genel Müdürlüğü
+  — skor 0.19 | Anayasa Hukuku / T.C. Anayasası | published | id 8239a818-0720-4ac3-96ab-553cb76b0336
+    Aşağıdakilerden hangisi 2017 Anayasa değişikliğiyle Cumhurbaşkanına verilen görevlerden biridir?
+    A) Kanunları yayımlamak
+    B) Türk Silahlı Kuvvetlerinin kullanılmasına karar vermek
+    C) Millî Güvenlik Kurulunu toplantıya çağırmak ve Kurula başkanlık etmek
+    D) Milletlerarası antlaşmaları onaylamak
+    E) Mahallî idarelerin belirli kamu hizmetleri için kendi aralarında birlik kurmalarına izin vermek  ✔
+  — skor 0.18 | Polis Mevzuatı / 6284 Sayılı Ailenin Korunması Kanunu | published | id 625e5028-a824-44f7-8814-1553e13e9f70
+    6284 sayılı Ailenin Korunması ve Kadına Karşı Şiddetin Önlenmesine Dair Kanun’a göre geçici maddi yardım yapılmasına karar verilmesi hâlinde, kaç yaşından büyükler için her yıl belirlenen aylık net asgari ücret tutarının otuzda birine kadar günlük ödeme yapılır?
+    A) On üç
+    B) On dört
+    C) On beş
+    D) On altı  ✔
+
+## 2860-p1-05
+ADAY: 2860 sayılı Kanun'a göre, yardım toplama süresi sona erdiğinde toplanan yardım gerçekleştirilmek istenen işe yetmiyorsa bu yardım hakkında aşağıdakilerden hangisi yapılır?
+ADAY DOĞRU: Aynı ya da benzer amaçlı kuruluşlara devrettirilir.
+  — skor 0.24 | Polis Mevzuatı / 2860 Sayılı Yardım Toplama Kanunu | published | id 73ad5c29-de42-482a-82ba-5f369b827502
+    2860 sayılı Yardım Toplama Kanunu hükümlerine göre yardım toplama faaliyeti için gerçek kişiler tarafından oluşturulan sorumlu kurulda yer alanlarda değişiklik olması halinde en fazla kaç gün içinde izin veren makama değişiklik hakkında bilgi vermek zorundadır?
+    A) Beş
+    B) Üç
+    C) On  ✔
+    D) On beş
+    E) Otuz
+  — skor 0.22 | Analitik Düşünme ve Türkçe / Analitik Akıl Yürütme | published | id cac71583-2e03-40c6-8f04-0ea0f8d61af8
+    Bir kuruma iş başvurusunda bulunan Ahmet, Betül, Cemil, Derya, Emine, Füsun ve Gökhan işe alım mülakatlarına girmeye hak kazanmışlardır. Kurum adaylarla mülakatları birebir (yüz yüze) mülakat ya da telefon mülakatı olmak üzere iki farklı şekilde gerçekleştirmektedir. Adayların mülakat süreçleri ile ilgili olarak bilinenler şunlardır: - İlk üç mülakat birebir mülakat şeklinde; Betül, Derya ve Gökha
+    A) Derya
+    B) Betül  ✔
+    C) Cemil
+    D) Gökhan
+    E) Füsun
+  — skor 0.22 | Polis Mevzuatı / 2911 Sayılı Toplantı ve Gösteri Yürüyüşleri Kanunu | published | id 7079f37b-d5da-4543-96b1-c54e320af0de
+    2911 sayılı Toplantı ve Gösteri Yürüyüşleri Kanunu’na göre; Kanuna uygun olarak başlayan bir toplantı sonradan Kanuna aykırı toplantı hâline dönüşürse, toplantının sona erdiğini topluluğa ilan etmek ve durumu derhâl yetkili kolluk amirine bildirmek öncelikle kimin görevidir?
+    A) Düzenleme kurulu veya kurul başkanı  ✔
+    B) Mahallin en büyük mülki amiri
+    C) Olay yerindeki güvenlik amiri
+    D) Toplantının yapıldığı yerin belediye başkanı
+    E) İl emniyet müdürü
+  — skor 0.18 | İdare Hukuku / 2577 İdari Yargılama Usulü Kanunu (İYUK) | published | id 2a39bf9e-ab83-4e5b-b572-27a29930c1ca
+    2577 sayılı İYUK'a göre dava açma süresinin son gününün çalışmaya ara verme zamanına rastlaması hâlinde süre, ara vermenin sona erdiği günü izleyen tarihten itibaren kaç gün uzamış sayılır?
+    A) 1
+    B) 5
+    C) 7  ✔
+    D) 10
+    E) 15
+  — skor 0.18 | Analitik Düşünme ve Türkçe / Analitik Akıl Yürütme | published | id c86fad7c-6cb3-4402-8ff1-b21f0345eee0
+    Bir kuruma iş başvurusunda bulunan Ahmet, Betül, Cemil, Derya, Emine, Füsun ve Gökhan işe alım mülakatlarına girmeye hak kazanmışlardır. Kurum adaylarla mülakatları birebir (yüz yüze) mülakat ya da telefon mülakatı olmak üzere iki farklı şekilde gerçekleştirmektedir. Adayların mülakat süreçleri ile ilgili olarak bilinenler şunlardır: - İlk üç mülakat birebir mülakat şeklinde; Betül, Derya ve Gökha
+    A) Betül
+    B) Emine
+    C) Cemil  ✔
+    D) Derya
+    E) Ahmet

@@ -1,0 +1,63 @@
+# 1481-p1 — bankadaki en benzer sorular (bütün banka, 8013 soru; eşik 0.15, aday başına 5)
+# skor = aday kök+doğru şık sözcüklerinin (IDF ağırlıklı) ne kadarının o soruda geçtiği. Yüksek skor mükerrer DEMEK DEĞİLDİR; karar gözcünündür.
+
+## 1481-p1-01
+ADAY: 1481 sayılı Kanun'a göre, “ilan ve mühlet usulüyle doğan silah kullanma yetkisi” ile ilgili aşağıdakilerden hangisi YANLIŞTIR?
+ADAY DOĞRU: Yetkinin doğması için kişi hakkındaki mahkûmiyet hükmünün kesinleşmiş olması gerekir.
+  — skor 0.22 | Ceza Hukuku / Türk Ceza Kanunu | published | id 184351e0-8829-4692-9139-4339eb80b7e6
+    5237 sayılı Türk Ceza Yasası'na göre tüzel kişiler hakkında güvenlik tedbirleri hakkında, I. Bir kamu kurumunun verdiği izne dayalı olarak faaliyette bulunan özel hukuk tüzel kişisinin organ veya temsilcilerinin iştirakiyle ve bu iznin verdiği yetkinin kötüye kullanılması suretiyle tüzel kişi yararına işlenen kasıtlı veya taksirli suçlardan mahkûmiyet durumunda, iznin iptaline karar verilir. II. M
+    A) Yalnız I  ✔
+    B) Yalnız II
+    C) Yalnız III
+    D) I ve II
+    E) I ve III
+  — skor 0.21 | Polis Mevzuatı / 5901 Sayılı Türk Vatandaşlığı Kanunu | published | id 578fba0d-ee67-461b-9fe1-79213e342595
+    5901 sayılı Türk Vatandaşlığı Kanunu'na göre, Türk Ceza Kanununun belirli maddelerinde yazılı suçlar nedeniyle hakkında soruşturma veya kovuşturma yürütülen ve yabancı ülkede bulunması nedeniyle kendisine ulaşılamayan bir vatandaşın Türk vatandaşlığının kaybettirilebilmesi için aşağıdakilerden hangisi ARANMAZ?
+    A) Kanunda sayılan suçlardan biri nedeniyle soruşturma veya kovuşturma yürütülmesi
+    B) İlgilinin yabancı ülkede bulunması nedeniyle kendisine ulaşılamaması
+    C) Durumun kaybettirme amacıyla Bakanlığa bildirilmiş olması
+    D) Resmî Gazetede yapılan yurda dön ilanına süresinde uyulmamış olması
+    E) İlgili hakkındaki mahkûmiyet hükmünün kesinleşmiş olması  ✔
+  — skor 0.20 | Ceza Hukuku / Türk Ceza Kanunu | published | id 5465a1a4-1598-42fc-8646-337201e9d779
+    Trafik düzeninin gerektirdiği dikkat ve özen yükümlülüğüne aykırı olarak araç kullanan Ahmet, yaya geçidinden geçmekte olan bir yayaya çarparak yayanın ölümüne neden olur. Ahmet, yapılan yargılama sonucu taksirle öldürme suçundan dolayı 3 yıl hapis cezasına mahkûm edilir ve hükmün kesinleşmesi üzerine cezasının infazına başlanır. Buna göre; I. Ahmet'in trafik kazasına karıştığı aracın müsaderesine
+    A) Yalnız I
+    B) Yalnız III
+    C) I ve II
+    D) II ve III  ✔
+    E) I, II ve III
+  — skor 0.17 | Anayasa Hukuku / T.C. Anayasası | published | id 8627c0af-2cb1-48af-9681-f16e50907d52
+    Türk Silahlı Kuvvetlerinin kullanılmasına karar verme yetkisi Türkiye Büyük Millet Meclisine ait olmasına rağmen, 1982 Anayasası'nda sayılan durumlarda TBMM'den başka bu yetkinin kullanılabilmesi aşağıdakilerden hangisine aittir?
+    A) Milli Savunma Bakanına
+    B) Cumhurbaşkanına  ✔
+    C) Cumhurbaşkanı yardımcısına
+    D) Genelkurmay Başkanına
+    E) TBMM Başkanına
+  — skor 0.17 | İdare Hukuku / İdare Hukuku | published | id 1ebec02b-afe3-42c8-a3d6-d898d9dbe619
+    2942 sayılı Kamulaştırma Kanunu’na göre; mal sahibinin geri alma hakkı, bu hakkın doğmasından itibaren en geç ne kadar süre içinde kullanılabilir?
+    A) 3 ay
+    B) 6 ay
+    C) 1 yıl  ✔
+    D) 2 yıl
+
+## 1481-p1-02
+ADAY: 1481 sayılı Kanun'a göre, ilan edilerek aranan ve mühleti dolmuş olan kişi, önceki gün kolluğa ateş etmiş ve kollukla karşılaştığı anda silah kullanmaya teşebbüs etmiyorsa ona karşı silah kullanma usulü aşağıdakilerden hangisidir?
+ADAY DOĞRU: “Teslim ol” ihtarından sonra silah kullanılır.
+  — skor 0.17 | Polis Mevzuatı / 2559 Sayılı Polis Vazife ve Salâhiyet Kanunu (PVSK) | published | id 8c4a9b39-2078-48b8-b564-f51ce4e6dbd6
+    2559 sayılı Polis Vazife ve Salâhiyet Kanunu'nun Ek 9 uncu maddesine göre; I. Silah kullanması nedeniyle hakkında dava açılan sanık polis, duruşmadan vareste tutulabilir. II. Durumu İçişleri Bakanlığınca uygun görülen polisin vekâlet verdiği avukatın ücreti, Emniyet Genel Müdürlüğü bütçesine konulacak ödenekten karşılanır. III. İlan edilmek suretiyle aranan sanık ve hükümlülerin yakalanmasına yard
+    A) Yalnız I ve II
+    B) Yalnız III ve IV
+    C) I, II ve III
+    D) II, III ve IV
+    E) I, II, III ve IV  ✔
+  — skor 0.15 | Polis Mevzuatı / 3713 Sayılı Terörle Mücadele Kanunu | published | id 0a7d9ef8-b6a4-4b1f-97e4-d09147b69faa
+    Terör örgütü mensuplarının saklandığı bir eve düzenlenen operasyonda, örgüt mensuplarından biri kolluk görevlilerinin “teslim ol” emrine itaat etmemiştir. 3713 sayılı Kanun'a göre kolluk görevlilerinin silah kullanma yetkisiyle ilgili aşağıdakilerden hangisi doğrudur?
+    A) Tehlikeyi etkisiz kılabilecek ölçü ve orantıda, doğrudan ve duraksamadan hedefe karşı silah kullanabilirler.  ✔
+    B) Örgüt mensubu silah kullanmaya teşebbüs etmedikçe hedefe karşı silah kullanamazlar.
+    C) Önce uyarı ateşi açmak şartıyla hedefe karşı silah kullanabilirler.
+    D) Bedenî kuvvet ve maddî güç sonuç vermedikçe hedefe karşı silah kullanamazlar.
+    E) Zor kullanılacağını ayrıca ihtar etmek şartıyla hedefe karşı silah kullanabilirler.
+
+## 1481-p1-03
+ADAY: 1481 sayılı Kanun'a göre, ilan edilerek aranan ve mühleti dolmuş olan kişiye kardeşinin silah ve cephane temin etmesi hâlinde kardeş hakkında öngörülen sonuç aşağıdakilerden hangisidir?
+ADAY DOĞRU: Yakını lehine işlendiğinden daha hafif cezalandırılır.
+  (eşiği geçen benzer soru yok)

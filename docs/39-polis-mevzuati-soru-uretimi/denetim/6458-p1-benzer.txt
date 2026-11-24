@@ -1,0 +1,211 @@
+# 6458-p1 — bankadaki en benzer sorular (bütün banka, 7710 soru; eşik 0.15, aday başına 5)
+# skor = aday kök+doğru şık sözcüklerinin (IDF ağırlıklı) ne kadarının o soruda geçtiği. Yüksek skor mükerrer DEMEK DEĞİLDİR; karar gözcünündür.
+
+## 6458-p1-01
+ADAY: 6458 sayılı Kanun'a göre, sınır dışı etmek üzere idari gözetim kararını alan merci ile bu karara karşı başvurulacak merci sırasıyla aşağıdakilerden hangisidir?
+ADAY DOĞRU: Valilik – Sulh ceza hâkimi
+  — skor 0.29 | Polis Mevzuatı / 5326 Sayılı Kabahatler Kanunu | published | id 09c097ea-c64f-4b48-a35b-8c549e1b97e1
+    5326 sayılı Kabahatler Kanunu'na göre, sulh ceza mahkemesinin başvuru üzerine verdiği son karara karşı itiraz en geç hangi süre içinde yapılır?
+    A) Kararın tebliği tarihinden itibaren yedi gün içinde
+    B) Kararın tebliği tarihinden itibaren iki hafta içinde  ✔
+    C) Kararın tebliği tarihinden itibaren on beş gün içinde
+    D) Kararın tefhimi tarihinden itibaren bir ay içinde
+    E) Kararın tebliği tarihinden itibaren üç gün içinde
+  — skor 0.29 | Polis Mevzuatı / 5326 Sayılı Kabahatler Kanunu | published | id fe44c574-d01d-4636-87af-d859d41acf25
+    İdarî para cezasına karşı sulh ceza hâkimliğine başvuran kişinin başvurusu henüz karara bağlanmadan, cezayı veren belediye başvuruyu kabul ederek idarî yaptırım kararını geri almıştır. 5326 sayılı Kabahatler Kanunu'na göre belediyenin bu işlemi hakkında aşağıdakilerden hangisi doğrudur?
+    A) Geçersizdir; idare, verdiği yaptırım kararını ancak mahkeme kararıyla kaldırabilir
+    B) Hukuka uygundur; ilgili kamu kurum ve kuruluşu, mahkemece karar verilinceye kadar kanun yolu başvurusunu kabul ederek idarî yaptırım kararını geri alabilir  ✔
+    C) Ancak başvuranın ayrıca muvafakat etmesi hâlinde geçerlidir
+    D) Ancak valilik onayıyla geçerlilik kazanır
+    E) Geri alma yalnızca cezanın tahsilinden önce değil, kararın tebliğinden önce mümkündür
+  — skor 0.29 | Ceza Muhakemesi Hukuku / 5271 Sayılı Ceza Muhakemesi Kanunu (CMK) | published | id 3462ae28-b95e-4604-8a97-2ad3836b0be2
+    İstanbul 6. Sulh Ceza Yargıçlığı, göçmen kaçakçılığı suçundan şüpheli (A)'nın tutuklanması isteminin reddine karar verir. İtiraz üzerine İstanbul 3. Asliye Ceza Mahkemesi ret kararını kaldırır ve (A)'nın tutuklanmasına karar verir. Buna göre olayla ilgili aşağıdaki ifadelerden hangisi doğrudur?
+    A) Asliye Ceza Mahkemesi itiraz merci olduğu için (A)'nın adli kontrol altına alınmasına karar veremez.
+    B) Asliye Ceza Mahkemesi'nin verdiği karar kesin olmayıp bu karara karşı da itiraz yoluna başvurulabilmesi mümkündür.  ✔
+    C) 6. Sulh Ceza Yargıçlığının kararı kesin olduğundan Asliye Ceza Mahkemesi'nin kararı yok hükmündedir.
+    D) 6. Sulh Ceza Yargıçlığı itirazı yerinde görseydi kararını kendisi düzeltemezdi.
+    E) 6. Sulh Ceza Yargıçlığı itirazı üzerine dosyayı en çok 5 gün içinde, itirazı incelemeye yetkili olan mercie göndermek zorundadır.
+  — skor 0.28 | Polis Mevzuatı / 5326 Sayılı Kabahatler Kanunu | published | id a8b8faed-0d2a-4fc4-9e66-96a2a2d9dd80
+    İdarî para cezası ve mülkiyetin kamuya geçirilmesine ilişkin idarî yaptırım kararına karşı, kararın - - - - tarihinden itibaren en geç - - - - içinde, sulh ceza mahkemesine (hâkimliğine) başvurulabilir. 5326 sayılı Kabahatler Kanunu’na göre, boş bırakılan yerlere sırasıyla aşağıdakilerden hangisi getirilmelidir?
+    A) tebliği veya tefhimi - on beş gün  ✔
+    B) tebliği veya tefhimi - otuz gün
+    C) tebliği - yedi gün
+    D) tefhimi - bir hafta
+  — skor 0.28 | Polis Mevzuatı / 5326 Sayılı Kabahatler Kanunu | published | id d15d8e56-d3e8-41b5-bae5-6a305f7c7a01
+    5326 sayılı Kabahatler Kanunu’na göre idarî para cezası ve mülkiyetin kamuya geçirilmesine ilişkin idari yaptırım kararına karşı, kararın tebliği veya tefhimi tarihinden itibaren en geç kaç gün içinde, sulh ceza mahkemesine başvurulabilir?
+    A) On
+    B) On beş  ✔
+    C) Yirmi
+    D) Otuz
+
+## 6458-p1-02
+ADAY: Terör örgütü üyesi olduğu değerlendirilerek hakkında sınır dışı etme kararı alınan yabancı, süresi içinde dava açmış olup ülkeden kendi isteğiyle ayrılmak istememektedir. 6458 sayılı Kanun'a göre, bu karar en erken ne zaman yerine getirilebilir?
+ADAY DOĞRU: Yargılama süreci sonuçlandığında
+  — skor 0.17 | Ceza Hukuku / Türk Ceza Kanunu | published | id 6b272627-2524-441e-806e-c6d300f12867
+    5237 sayılı Türk Ceza Kanunu’na göre; işlediği suç nedeniyle hapis cezasına mahkûm edilen yabancı, denetimli serbestlik tedbiri uygulanarak cezasının infazına veya koşullu salıverilmesine karar verildikten ve her hâlde cezasının infazı tamamlandıktan sonra, durumu, sınır dışı işlemleriyle ilgili olarak değerlendirilmek üzere aşağıdakilerden hangisine bildirilir?
+    A) İçişleri Bakanlığı  ✔
+    B) Dışişleri Bakanlığı
+    C) Adalet Bakanlığı
+    D) Millî Savunma Bakanlığı
+    E) Cumhurbaşkanlığı
+  — skor 0.15 | Polis Mevzuatı / 5682 Sayılı Pasaport Kanunu | published | id 4041c4d6-96a0-4df9-8022-2555d74d9269
+    Bir Türk vatandaşı, bulunduğu yabancı ülkeden sınır dışı edilerek Türkiye'ye dönmüş ve bir süre sonra yeniden pasaport almak üzere başvurmuştur. 5682 sayılı Pasaport Kanunu'na göre bu kişi bakımından aşağıdakilerden hangisi doğrudur?
+    A) Sınır dışı edilmiş olması sebebiyle kendisine hiçbir surette pasaport veya seyahat vesikası verilemez.
+    B) Kendisine ancak Cumhurbaşkanının onayı alınmak suretiyle pasaport verilebilir.
+    C) Çıkarılış sebebi göz önünde tutularak kendisine pasaport veya vesika verilmeyebilir.  ✔
+    D) Kendisine yalnızca bir yıl süreli ve tek bir ülke için geçerli pasaport düzenlenir.
+    E) Sınır dışı edilmiş olması, pasaport talebinin değerlendirilmesinde dikkate alınamaz.
+
+## 6458-p1-03
+ADAY: 6458 sayılı Kanun'a göre, “sınır dışı etme kararı alınmayacaklar” ile ilgili aşağıdakilerden hangisi YANLIŞTIR?
+ADAY DOĞRU: Psikolojik, fiziksel veya cinsel şiddet mağdurları hakkında mağdur destek süreci tamamlanıncaya kadar karar alınmaz.
+  — skor 0.25 | Ceza Hukuku / Türk Ceza Kanunu | published | id 6b272627-2524-441e-806e-c6d300f12867
+    5237 sayılı Türk Ceza Kanunu’na göre; işlediği suç nedeniyle hapis cezasına mahkûm edilen yabancı, denetimli serbestlik tedbiri uygulanarak cezasının infazına veya koşullu salıverilmesine karar verildikten ve her hâlde cezasının infazı tamamlandıktan sonra, durumu, sınır dışı işlemleriyle ilgili olarak değerlendirilmek üzere aşağıdakilerden hangisine bildirilir?
+    A) İçişleri Bakanlığı  ✔
+    B) Dışişleri Bakanlığı
+    C) Adalet Bakanlığı
+    D) Millî Savunma Bakanlığı
+    E) Cumhurbaşkanlığı
+  — skor 0.20 | Ceza Hukuku / Türk Ceza Kanunu | published | id 1ba77a64-15f2-433b-96da-fa699569c61a
+    5237 sayılı Türk Ceza Kanunu’na göre işlediği suç nedeniyle hapis cezasına mahkûm edilen yabancı, koşullu salıverilmeden yararlandıktan ve her hâlde cezasının infazı tamamlandıktan sonra, durumu, sınır dışı işlemleriyle ilgili olarak değerlendirilmek üzere derhâl aşağıdakilerden hangisine bildirilir?
+    A) İçişleri Bakanlığı  ✔
+    B) Adalet Bakanlığı
+    C) Dışişleri Bakanlığı
+    D) Cumhurbaşkanlığı
+  — skor 0.19 | Ceza Hukuku / Türk Ceza Kanunu | published | id 633142a4-e0b6-4f20-8dbf-464583c01c76
+    5237 sayılı Türk Ceza Kanunu’na göre, “çocukların cinsel istismarı” ile ilgili aşağıdakilerden hangisi yanlıştır?
+    A) Çocuğu cinsel yönden istismar eden kişi, sekiz yıldan on beş yıla kadar hapis cezası ile cezalandırılır.
+    B) Cinsel istismarın sarkıntılık düzeyinde kalması hâlinde üç yıldan sekiz yıla kadar hapis cezasına hükmolunur.
+    C) Cinsel istismar için başvurulan cebir ve şiddetin kasten yaralama suçunun ağır neticelerine neden olması hâlinde, ayrıca kasten yaralama suçuna ilişkin hükümler uygulanır.
+    D) Suç sonucu mağdurun bitkisel hayata girmesi veya ölümü hâlinde, ağırlaştırılmış müebbet hapis cezasına hükmolunur.
+    E) Mağdurun on iki yaşını tamamlamamış olması hâlinde verilecek ceza, istismar durumunda on beş yıldan, sarkıntılık durumunda sekiz yıldan az olamaz.  ✔
+  — skor 0.17 | Polis Mevzuatı / 6284 Sayılı Kanuna İlişkin Uygulama Yönetmeliği | published | id a7491360-f600-41da-a311-917c51a4f07f
+    6284 sayılı Kanun'a İlişkin Uygulama Yönetmeliği'ne göre, koruyucu veya önleyici tedbir kararlarının alınması ve yerine getirilmesi aşamasında aşağıdakilerden hangisi yapılamaz?
+    A) Kararın, başvuruda bulunanlar tarafından kolluğa götürülmesine imkân tanınması
+    B) Korunan kişinin tedbir kararına uymamasının tutanakla tespit edilmesi
+    C) Kararın, kamu kurumlarınca ŞÖNİM ile iş birliği içinde yerine getirilmesi
+    D) Korunan kişinin, gideceği başka bir yer hakkında kolluğa bilgi vermesi
+    E) Şiddet mağduru ile şiddet uygulayan arasında uzlaşma önerilmesi  ✔
+  — skor 0.16 | Polis Mevzuatı / 6284 Sayılı Kanuna İlişkin Uygulama Yönetmeliği | published | id aef0666f-5616-45d3-bd4c-07ddb6493740
+    6284 sayılı Kanun'a İlişkin Uygulama Yönetmeliği'ne göre, barınma yeri sağlanması tedbirinin uygulanmasıyla ilgili aşağıdakilerden hangisi yanlıştır?
+    A) Sosyal tesis veya yurtta geçici olarak barındırılan korunan kişinin barınma ve iaşe giderleri ŞÖNİM tarafından ödenir.
+    B) Hayati tehlikesi bulunan korunan kişinin konukevine yerleştirilmesine kolluk refakat eder.
+    C) Geçici barınmanın sağlandığı yurtta kişinin güvenliği o yerin kolluğu tarafından sağlanır.
+    D) Kolluk amirinin kararıyla kamuya ait barınma yerine getirilen şiddet mağduru, mülki amirin onayıyla kabul edilir.  ✔
+    E) Korunan kişinin geçici olarak yerleştirildiği yere ilişkin bilgi ŞÖNİM'e bildirilir.
+
+## 6458-p1-04
+ADAY: 6458 sayılı Kanun'a göre, davete uymadığı için kolluk tarafından davet edilmeksizin getirilen yabancıyla ilgili aşağıdakilerden hangisi doğrudur?
+ADAY DOĞRU: Kendisinden bilgi alma süresi dört saati geçemez.
+  — skor 0.38 | Polis Mevzuatı / Yakalama, Gözaltına Alma ve İfade Alma Yönetmeliği | published | id 07607b8e-9c37-4899-a091-5f77ae6afe54
+    Gözaltı süresi, yakalama yerine en yakın hâkim veya mahkemeye gönderilmesi için zorunlu süre hariç, yakalama anından itibaren - - - - saati geçemez. Yakalama yerine en yakın hâkim veya mahkemeye gönderilme için zorunlu süre ise - - - - saatten fazla olamaz. Yakalama, Gözaltına Alma ve İfade Alma Yönetmeliği'ne göre bu hükümde boş bırakılan yerlere sırasıyla aşağıdakilerden hangileri getirilmelidir
+    A) kırk sekiz - yirmi dört
+    B) yirmi dört - yirmi dört
+    C) otuz altı - on iki
+    D) yirmi dört - on iki  ✔
+    E) kırk sekiz - on iki
+  — skor 0.27 | Ceza Muhakemesi Hukuku / 5271 Sayılı Ceza Muhakemesi Kanunu (CMK) | published | id 034b01fb-d4bb-4660-b54e-c007a751b713
+    5271 sayılı Ceza Muhakemesi kanunu hükümlerine göre "Gözaltı tedbiri" ile alakalı aşağıdakilerden hangisi yanlıştır?
+    A) Yakalanan kişi, Cumhuriyet Savcılığınca bırakılmazsa, soruşturmanın tamamlanması için gözaltına alınmasına karar verilebilir
+    B) Gözaltı süresi, yakalama yerine en yakın hâkim veya mahkemeye gönderilmesi için zorunlu süre hariç, gözaltı kararından itibaren yirmi dört saati geçemez.  ✔
+    C) Yakalama yerine en yakın hâkim veya mahkemeye gönderilme için zorunlu süre on iki saatten fazla olamaz
+    D) Gözaltına alma, bu tedbirin soruşturma yönünden zorunlu olmasına ve kişinin bir suçu işlediği şüphesini gösteren somut delillerin varlığına bağlıdır
+    E) Toplu olarak işlenen suçlarda, delillerin toplanmasındaki güçlük veya şüpheli sayısının çokluğu nedeniyle; Cumhuriyet savcısı gözaltı süresinin, her defasında bir günü geçmemek üzere, üç gün süreyle uzatılmasına yazılı olarak emir verebilir.
+  — skor 0.21 | Polis Mevzuatı / Yakalama, Gözaltına Alma ve İfade Alma Yönetmeliği | published | id 78f4487d-0fff-4353-a5aa-266cff0dab25
+    Suçüstü hâlinde yakalanan bir kişi ve olay hakkında kolluk görevlileri Cumhuriyet savcısına hemen bilgi vermiş, Cumhuriyet savcısı da sözlü emir vermiştir. Yakalama, Gözaltına Alma ve İfade Alma Yönetmeliği'ne göre bu emrin yerine getirilmesi bakımından aşağıdakilerden hangisi doğrudur?
+    A) Emrin yazılı hâle getirilmesi beklenmeden sözlü emrin gereği yerine getirilir  ✔
+    B) Sözlü emrin gereği, en yakın sulh ceza hâkimine bilgi verildikten sonra yerine getirilir
+    C) Sözlü emir, ancak gecikmesinde sakınca bulunan hâllerde yerine getirilebilir
+    D) Sözlü emrin gereği, ilgili kolluk âmirinin yazılı onayı alındıktan sonra yerine getirilir
+    E) Sözlü emir tutanağa geçirilip yakalanan kişiye imzalatıldıktan sonra yerine getirilir
+  — skor 0.21 | İdare Hukuku / İdare Hukuku | published | id 3d0d3c40-cc3b-4418-9a78-6871480d7579
+    4982 sayılı Bilgi Edinme Hakkı Kanunu'na göre yabancı bir kimsenin bilgi edinme hakkını kullanması için; I. Türkiye'de ikamet ediyor olması II. İsteyeceği bilginin kendisiyle ilgili olması III. Karşılıklılık ilkesinin gereğinin yerine getirilmiş olması koşullarından hangilerinin varlığı gerekir?
+    A) Yalnız I
+    B) Yalnız III
+    C) I ve II
+    D) II ve III
+    E) I, II ve III  ✔
+  — skor 0.21 | Polis Mevzuatı / Yakalama, Gözaltına Alma ve İfade Alma Yönetmeliği | published | id f6bdedf3-23c3-4a74-9e71-11908850b815
+    Gözaltı süresinin dolması üzerine serbest bırakılan bir kişi hakkında kolluk, yakalamaya neden olan aynı fiille ilgili olarak yeniden yakalama işlemi uygulamak istemektedir. Yakalama, Gözaltına Alma ve İfade Alma Yönetmeliği'ne göre bu işlem hangi şartla yapılabilir?
+    A) Yeni ve yeterli delil elde edilmesi hâlinde, ayrıca bir karara gerek olmaksızın
+    B) Cumhuriyet savcısının kararının bulunması hâlinde, yeni delil aranmaksızın
+    C) Serbest bırakılmasından itibaren gözaltı süresi kadar bir sürenin geçmiş olması hâlinde
+    D) Yeni ve yeterli delil elde edilmesi ve Cumhuriyet savcısının kararı bulunması hâlinde  ✔
+    E) Sulh ceza hâkiminin yeni bir yakalama kararı vermiş olması hâlinde
+
+## 6458-p1-05
+ADAY: 6458 sayılı Kanun'a göre, göçmen kaçakçılığı suçunda kullanıldığı için elkonulan ve sahibine iade edilmeyen aracın değeri kadar teminat, elkoyma tarihinden itibaren otuz gün içinde verilmezse aşağıdakilerden hangisi uygulanır?
+ADAY DOĞRU: Araç, soruşturma ve kovuşturma sonucu beklenmeden tasfiye edilir.
+  — skor 0.17 | Ceza Hukuku / Türk Ceza Kanunu | published | id 5465a1a4-1598-42fc-8646-337201e9d779
+    Trafik düzeninin gerektirdiği dikkat ve özen yükümlülüğüne aykırı olarak araç kullanan Ahmet, yaya geçidinden geçmekte olan bir yayaya çarparak yayanın ölümüne neden olur. Ahmet, yapılan yargılama sonucu taksirle öldürme suçundan dolayı 3 yıl hapis cezasına mahkûm edilir ve hükmün kesinleşmesi üzerine cezasının infazına başlanır. Buna göre; I. Ahmet'in trafik kazasına karıştığı aracın müsaderesine
+    A) Yalnız I
+    B) Yalnız III
+    C) I ve II
+    D) II ve III  ✔
+    E) I, II ve III
+  — skor 0.17 | İdare Hukuku / 2577 İdari Yargılama Usulü Kanunu (İYUK) | published | id a79f9b1a-2629-453a-9cc6-37124886d9f1
+    Hatice, Ticaret Bakanlığı tarafından çıkarılan ve ülke çapında uygulanacak bir yönetmeliğin iptaline ilişkin Danıştayda açılması gereken davasını Ankara asliye ticaret mahkemesinde açıyor. Bunun üzerine Ankara asliye ticaret mahkemesi, ilgili davada Danıştayın görevli olduğundan bahisle davayı görev yönünden reddediyor. Ankara asliye ticaret mahkemesinin başvurduğu tarihin Danıştaya başvuru tarihi
+    A) 3
+    B) 7
+    C) 15
+    D) 30  ✔
+    E) 60
+  — skor 0.16 | Polis Mevzuatı / 4982 Sayılı Bilgi Edinme Hakkı Kanunu | published | id 670501ac-1d27-4c97-ab9c-b73de53ce277
+    4982 sayılı Bilgi Edinme Hakkı Kanunu’na göre “bilgi edinme başvurusu” ile ilgili aşağıdakilerden hangisi yanlıştır?
+    A) Dilekçede, istenen bilgi veya belgeler açıkça belirtilir.
+    B) Kurula itiraz, başvuru sahibinin idarî yargıya başvurma süresini durdurur.
+    C) Kurum ve kuruluşlar, başvuru sahibine istenen belgenin onaylı bir kopyasını verirler.
+    D) Kurum ve kuruluşlar, bilgi edinme başvurularıyla ilgili cevaplarını yazılı olarak veya elektronik ortamda başvuru sahibine bildirirler.
+    E) Bilgi edinme istemi reddedilen başvuru sahibi, yargı yoluna başvurmadan önce kararın tebliğinden itibaren otuz gün içinde Kurula itiraz edebilir.  ✔
+  — skor 0.15 | Polis Mevzuatı / 6136 Sayılı Ateşli Silahlar ve Bıçaklar Hakkında Kanun | published | id 9e429569-378b-4e1d-8a13-032545304256
+    I. Soruşturma veya kovuşturma sonunda el konulan eşyanın iadesine karar verilirse eşya öncelikle aynen iade edilir; aynen iade mümkün değilse rayiç değeri ödenir. II. Tahsis talebi üzerine verilen kararlara karşı itiraz edilebilir. III. El konulan eşyanın delil olarak saklanmasına gerek bulunsa bile tahsis talep edilebilir. 6136 sayılı Kanun'un Ek 12 nci maddesinde düzenlenen el konulan eşyanın ta
+    A) Yalnız I
+    B) Yalnız II  ✔
+    C) I ve II
+    D) II ve III
+    E) I, II ve III
+  — skor 0.15 | Genel Kültür ve Güncel Olaylar / Genel Kültür | published | id 0c6cab26-8ae5-4505-89e4-21be95e2c8ac
+    3071 sayılı Dilekçe Hakkının Kullanılmasına Dair Kanun’a göre, Türk vatandaşlarının ve Türkiye’de ikamet eden yabancıların kendileri ve kamu ile ilgili dilek ve şikâyetleri konusunda yetkili makamlara yaptıkları başvuruların sonucu veya yapılmakta olan işlemin safahatı hakkında dilekçe sahiplerine en geç kaç gün içinde gerekçeli olarak cevap verilir?
+    A) Yedi
+    B) On
+    C) On beş
+    D) Otuz  ✔
+    E) Kırk beş
+
+## 6458-p1-06
+ADAY: 6458 sayılı Kanun'a göre, kamu düzenine veya kamu güvenliğine yönelik ciddi tehdit bulunan yabancı hakkında Türkiye'ye giriş yasağının süresi en fazla kaç yıl olabilir?
+ADAY DOĞRU: On beş
+  — skor 0.36 | İdare Hukuku / 5442 İl İdaresi Kanunu | published | id 6ba89fed-92e8-472d-b691-3ffeeb7b13ba
+    Bir vali, kamu düzeninin olağan hayatı durduracak şekilde bozulması üzerine, kamu düzenini bozabileceği şüphesi bulunan kişiler için ildeki belirli yerlere giriş ve çıkışı sınırlıyor. 5442 sayılı İl İdaresi Kanunu’na göre, vali tarafından yapılan söz konusu sınırlama, en fazla kaç gün sürebilir?
+    A) Yedi
+    B) On
+    C) On beş  ✔
+    D) Otuz
+    E) Kırk beş
+  — skor 0.32 | Anayasa Hukuku / T.C. Anayasası | published | id 11c5a315-6db0-41f2-9ee1-7e483dea4e5f
+    1982 Anayasası'na göre olağanüstü hal kararı ile ilgili aşağıda verilen ifadelerden hangisi yanlıştır?
+    A) Cumhurbaşkanınca karar verilir.
+    B) Şiddet olayları nedeniyle kamu düzeninin ciddi şekilde bozulması halinde, Milli Güvenlik Kurulunun da görüşü alındıktan sonra yurdun bir veya birden fazla bölgesinde veya bütününde, süresi 6 ayı geçmemek üzere olağanüstü hal ilan edilebilir.  ✔
+    C) Karar, Resmi Gazetede yayımlanır ve hemen TBMM'nin onayına sunulur.
+    D) Olağanüstü hal süresince olağanüstü halin gerekli kıldığı konularda Cumhurbaşkanlığı kararnamesi çıkarılabilir.
+    E) Karar, TBMM tarafından süresi kısaltılarak da onaylanabilir.
+  — skor 0.27 | İdare Hukuku / 5442 İl İdaresi Kanunu | published | id dab587d6-25af-4a0a-9824-9ff6153ea57c
+    5442 sayılı İl İdaresi Kanunu'na göre, kamu düzeni veya güvenliğinin olağan hayatı durduracak ya da kesintiye uğratacak şekilde bozulduğu hâllerde vali, ildeki belirli yerlere giriş ve çıkışı en çok ne kadar süreyle sınırlayabilir?
+    A) Yedi gün
+    B) On gün
+    C) On beş gün  ✔
+    D) Otuz gün
+    E) Üç ay
+  — skor 0.23 | Ceza Hukuku / Türk Ceza Kanunu | published | id 39ae2019-24ac-412c-bd1c-ce8f6305800d
+    5237 sayılı Türk Ceza Kanunu’na göre kanunda başka türlü yazılmış olan hâller dışında kamu davası, beş yıldan fazla ve yirmi yıldan az hapis cezasını gerektiren suçlarda kaç yıl geçmesiyle düşer?
+    A) On beş  ✔
+    B) On
+    C) Sekiz
+    D) Beş
+  — skor 0.22 | Polis Mevzuatı / 5901 Sayılı Türk Vatandaşlığı Kanunu | published | id e2333b3e-86d0-4691-b92c-067ca7a0eb7d
+    5901 sayılı Türk Vatandaşlığı Kanunu’na göre Türk vatandaşlığını kazanma talebinde bulunan bir yabancı başvuru için aranan ikamet süresi içinde toplam kaç ayı geçmemek üzere Türkiye dışında bulunabilir?
+    A) Üç
+    B) Altı
+    C) Dokuz
+    D) On iki  ✔
+    E) On sekiz

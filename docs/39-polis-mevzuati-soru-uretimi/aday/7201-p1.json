@@ -1,0 +1,87 @@
+[
+  {
+    "id": "7201-p1-01",
+    "articleNo": "21",
+    "kok": "7201 sayılı Kanun'a göre, adres kayıt sistemindeki adresine tebligat çıkarılan muhatabın o adreste hiç oturmadığı anlaşılırsa tebliğ memuru aşağıdakilerden hangisini yapar?",
+    "siklar": {
+      "A": "Adresin meçhul olduğunu muhtara şerh verdirir.",
+      "B": "Evrakı o yerin muhtarına teslim eder.",
+      "C": "Evrakı en yakın komşusuna bırakır.",
+      "D": "Evrakın bir nüshasını binanın kapısına asar.",
+      "E": "Evrakı tebliğ yapılamadığı şerhiyle merciine iade eder."
+    },
+    "dogru": "B",
+    "aciklama": "Bilinen en son adres tebligata elverişli değilse ya da oraya tebligat yapılamazsa muhatabın adres kayıt sistemindeki yerleşim yeri adresi bilinen en son adresi sayılır (10 uncu maddenin ikinci fıkrası). Muhatabın bu adreste hiç oturmamış olması tebligatı durdurmaz. 21 inci maddenin ikinci fıkrasına göre '… muhatap o adreste hiç oturmamış veya o adresten sürekli olarak ayrılmış olsa dahi, tebliğ memuru tebliğ olunacak evrakı, o yerin muhtar veya ihtiyar heyeti azasından birine veyahut zabıta amir veya memurlarına imza karşılığında teslim eder ve … ihbarnameyi gösterilen adresteki binanın kapısına yapıştırır.' Evrak muhtara, ihtiyar heyeti azasına ya da zabıtaya teslim edilir; doğru cevap B'dir. A, 28 inci maddedeki adresi meçhul olma hâlidir. Maddenin ikinci fıkrası şöyledir: 'Yukarıki maddeler mucibince tebligat yapılamıyan ve ikametgahı, meskeni veya iş yeri de bulunamıyan kimsenin adresi meçhul sayılır.' Adres kayıt sistemindeki adreste tebligatın nasıl yapılacağını 21 inci madde gösterdiğinden muhatap bu tanıma girmez; muhtara meçhul şerhi verdirilmez. C'deki komşu evrakı teslim alacak kişi değildir; 21 inci maddenin birinci fıkrası komşuya, yöneticiye ya da kapıcıya yalnız durumun haber verilmesini öngörür. D, 35 inci maddenin ikinci fıkrasındaki usuldür. O usul, adresini değiştirip yenisini bildirmeyen ve adres kayıt sisteminde yerleşim yeri adresi de tespit edilemeyen kişiye uygulanır; soruda tebligat zaten bu sistemdeki adrese çıkarılmıştır. Ayrıca 21 inci maddede kapıya yapıştırılan, evrakın nüshası değil ihbarnamedir. E, muhatap orada oturmadığı için tebligatın yapılamayacağını varsayar; fıkradaki 'hiç oturmamış … olsa dahi' ibaresi bu durumu açıkça kapsar.",
+    "dayanak": "7201 sayılı Kanun md 21/2, md 10/2 (karş. md 28/2–3, md 35/2, md 21/1)",
+    "zorluk": "medium",
+    "tur": "dogrudan"
+  },
+  {
+    "id": "7201-p1-02",
+    "articleNo": "20",
+    "kok": "Muhatabın geçici olarak başka bir yere gittiğini bildiren ve onunla aynı konutta oturan yetişkin kişi tebliğ evrakını almaktan kaçınmış, ihbarname kapıya yapıştırılmıştır. 7201 sayılı Kanun'a göre, tebliğ ne zaman yapılmış sayılır?",
+    "siklar": {
+      "A": "İhbarnamenin yapıştırıldığı tarihte",
+      "B": "Yapıştırmadan yedi gün sonra",
+      "C": "Yapıştırmadan on beş gün sonra",
+      "D": "Yapıştırmadan otuz gün sonra",
+      "E": "Muhatabın öğrendiğini beyan ettiği tarihte"
+    },
+    "dogru": "C",
+    "aciklama": "Muhatabın geçici olarak başka bir yere gittiğinin bildirilmesi 20 nci maddede düzenlenmiştir. Beyan tebliğ mazbatasına yazılır, evrak beyanda bulunana verilir ve bu kişi evrakı kabule mecburdur. Maddenin devamı şöyledir: '… Bu durumda ve tebliğ evrakının kabulden çekinme halinde tebligat, 21 inci maddeye göre yapılır. Bu maddeye göre yapılacak tebligatlarda tebliğ, tebliğ evrakının 13, 14, 16, 17 ve 18 inci maddelerde yazılı kişilere verildiği tarihte veya ihbarname kapıya yapıştırılmışsa bu tarihten itibaren onbeş gün sonra yapılmış sayılır.' Vakada evrakı aynı konutta oturan yetişkin kişi almamış, ihbarname yapıştırılmıştır. Tebliğ, yapıştırmadan itibaren on beş gün sonra yapılmış sayılır; doğru cevap C'dir. A, 21 inci maddenin birinci fıkrasındaki genel kuraldır: 'İhbarnamenin kapıya yapıştırıldığı tarih, tebliğ tarihi sayılır.' Bu vakada işlem 21 inci maddeye göre yapılsa da tebliğ tarihini 20 nci maddenin son cümlesi belirler, çünkü muhatabın geçici olarak başka yere gittiği bildirilmiştir. B'deki yedi gün ile D'deki otuz gün 20 nci maddede geçmez. E, 32 nci maddedeki usulsüz tebliğe ilişkin kuraldır. Vakadaki tebligat 20 ve 21 inci maddelere uygun yapılmıştır; tebliğ tarihi muhatabın öğrenmesine bağlanmaz.",
+    "dayanak": "7201 sayılı Kanun md 20 (karş. md 21/1, md 32)",
+    "zorluk": "hard",
+    "tur": "vaka"
+  },
+  {
+    "id": "7201-p1-03",
+    "articleNo": "2",
+    "kok": "7201 sayılı Kanun'a göre, ertelenmesinde zarar umulan işlerde tebligatın zabıta vasıtasıyla yaptırılması aşağıdakilerden hangisinin emriyle olur?",
+    "siklar": {
+      "A": "Tebliği çıkaran merciin",
+      "B": "İl ya da ilçe emniyet müdürünün",
+      "C": "Adalet Bakanlığının",
+      "D": "Köy ya da mahalle muhtarının",
+      "E": "Mahallî mülki idare amirinin"
+    },
+    "dogru": "E",
+    "aciklama": "Kanunun genel kuralına göre tebligat PTT ya da memur vasıtasıyla yapılır (1 inci madde). 2 nci maddenin birinci fıkrası üç hâlde başka bir yol açar: 'Diğer kanunlarda özel hüküm bulunması halinde veya tehirinde zarar umulan işlerde veya aynı yerde bulunan 1 inci maddede yazılı daire ve müesseseler arasında veya bu daire ve müesseselerde bulunan şahıslara yapılacak tebligat, kendi memurları veya mahalli mülkiye amirinin emriyle zabıta vasıtasıyla yaptırılır.' Ertelenmesinde zarar umulan bir işte tebligat zabıtaya yaptırılacaksa emri mahallî mülki idare amiri verir; doğru cevap E'dir. A'daki tebliği çıkaran merci bu işlerde tebligatı kendi memurlarıyla yaptırabilir; A ise merciin zabıtaya da doğrudan emir verebileceğini varsayar. Tebligat zabıta eliyle yapılacaksa fıkra emri merciye değil, mahallî mülki idare amirine bağlar. B, emri zabıtanın kendi teşkilatı içindeki bir amire verir; fıkra zabıta eliyle tebligatın emrini kolluk teşkilatındaki bir amire değil, mahallî mülki idare amirine bağlar. Fıkrada zabıtaya emir verecek makam olarak mahallî mülki idare amiri sayılmıştır; C'deki Adalet Bakanlığı ve D'deki muhtar bu fıkrada geçmez.",
+    "dayanak": "7201 sayılı Kanun md 2/1 (karş. md 1)",
+    "zorluk": "medium",
+    "tur": "dogrudan"
+  },
+  {
+    "id": "7201-p1-04",
+    "articleNo": "7/A",
+    "kok": "7201 sayılı Kanun'a göre, talebi üzerine elektronik tebligat adresi verilen bir gerçek kişiye tebligat nasıl yapılır?",
+    "siklar": {
+      "A": "Kişinin tercihine göre elektronik yolla ya da adresine yapılır.",
+      "B": "Yolu tebliği çıkaran merci belirler.",
+      "C": "Önce adresine, yapılamazsa elektronik yolla yapılır.",
+      "D": "Elektronik yolla yapılması zorunludur.",
+      "E": "Elektronik yolla yapılır; ancak ilk tebligat adresine yapılır."
+    },
+    "dogru": "D",
+    "aciklama": "Elektronik tebligatın zorunlu olduğu kişiler 7/A maddesinin birinci fıkrasında sayılmıştır. Listenin dışında kalanlar için ikinci fıkra şöyledir: 'Birinci fıkra kapsamı dışında kalan gerçek ve tüzel kişilere, talepleri hâlinde elektronik tebligat adresi verilir. Bu durumda bu kişilere tebligatın elektronik yolla yapılması zorunludur.' Adresi almak kişinin talebine bağlıdır; adres verildikten sonra elektronik yol tercih konusu olmaktan çıkar. Doğru cevap D'dir. A, adres verilen kişiye her tebligatta yolu seçme imkânı tanır; fıkra ise elektronik yolu zorunlu kılar. B, 7 nci maddede tebliği yaptıracak merciin tebligatın uçakla, seri ya da hususi vasıtalarla veya telgrafla yapılması arasında yaptığı seçimi elektronik tebligata taşır; talep üzerine adres verilen kişide yol merciin takdirine bırakılmamıştır. C sırayı tersine çevirir; Kanunda sıra elektronik yoldan diğer usullere doğrudur: 'Birinci ve ikinci fıkra hükümlerine göre elektronik yolla tebligatın zorunlu bir sebeple yapılamaması hâlinde bu Kanunda belirtilen diğer usullerle tebligat yapılır.' E, ilk tebligatı adrese bağlar; ikinci fıkra ilk tebligat için ayrık bir yol öngörmez, adres verilen kişiye tebligatın elektronik yolla yapılmasını zorunlu kılar.",
+    "dayanak": "7201 sayılı Kanun md 7/A/2 (karş. md 7/A/3, md 7)",
+    "zorluk": "medium",
+    "tur": "dogrudan"
+  },
+  {
+    "id": "7201-p1-05",
+    "articleNo": "31",
+    "kok": "7201 sayılı Kanun'a göre, “ilanen tebligat” ile ilgili aşağıdakilerden hangisi YANLIŞTIR?",
+    "siklar": {
+      "A": "Merci, tebliğin yapılmış sayılacağı süreyi otuz güne kadar uzatabilir.",
+      "B": "Merci, adresi meçhul muhatabın adresini zabıta vasıtasıyla tahkik ve tespit ettirir.",
+      "C": "Yabancı ülkede oturana evrak ve ilan suretleri bilinen adresine ayrıca iadeli taahhütlü mektupla gönderilir.",
+      "D": "İlan, Basın İlân Kurumu İlan Portalında da yapılır.",
+      "E": "İki ilan arasındaki süre bir haftadan az olamaz."
+    },
+    "dogru": "A",
+    "aciklama": "İlanen tebligatın hükümleri 28–31 inci maddelerdedir. Yanlış olan A'dır. 31 inci madde, ilana karar veren merciin belirleyebileceği daha uzun sürenin üst sınırını koyar: '… İlanen tebliğe karar veren merci, icabına göre daha uzun bir müddet tayin edebilir. Ancak, bu süre 15 günü geçemez.' Merci süreyi uzatabilir, ama üst sınır otuz değil on beş gündür. B, 28 inci maddenin üçüncü fıkrasıdır: '… tebliği çıkaran merci, muhatabın adresini resmî veya hususi müessese ve dairelerden gerekli gördüklerine sorar ve zabıta vasıtasıyla tahkik ve tespit ettirir.' Adresin araştırılmasını tebliğ memuru değil merci yaptırır. C, aynı maddenin son fıkrasıdır: yabancı ülkede oturana ilanen tebligat gerektiğinde merci 'tebliğ olunacak evrak ile ilan suretlerini yabancı memlekette bulunan kimsenin malüm adresine ayrıca iadeli taahhütlü mektupla gönderir'. Mektup ilanın yerine geçmez, ona ek olarak gönderilir. D, 29 uncu maddenin birinci bendinin bugünkü metnine dayanır: ilan '… bir internet haber sitesi ve ayrıca Basın İlân Kurumu İlan Portalında yapılır.' E, aynı maddenin son fıkrasıdır: 'Merci, icabına göre ikinci defa ilan yapılmasına karar verebilir. İki ilan arasındaki müddet bir haftadan aşağı olamaz.'",
+    "dayanak": "7201 sayılı Kanun md 31 (karş. md 28/3–4, md 29)",
+    "zorluk": "medium",
+    "tur": "onerme"
+  }
+]

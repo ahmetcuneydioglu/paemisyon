@@ -1,0 +1,36 @@
+[
+  {
+    "id": "6222-p2-01",
+    "articleNo": "18",
+    "kok": "6222 sayılı Kanun'a göre, koruma tedbiri olarak seyirden yasaklama uygulanan sanık hakkında hükmün açıklanmasının geri bırakılmasına karar verilmesi hâlinde bu koruma tedbiri ile ilgili aşağıdakilerden hangisi doğrudur?",
+    "siklar": {
+      "A": "Derhal kaldırılır.",
+      "B": "Kararın verildiği tarihten itibaren bir yıl süreyle uygulanır.",
+      "C": "Kararın kesinleştiği tarihten itibaren bir yıl süreyle uygulanır.",
+      "D": "Kararın verildiği tarihten itibaren üç yıl süreyle uygulanır.",
+      "E": "Geri bırakma kararındaki denetim süresi sona erinceye kadar uygulanır."
+    },
+    "dogru": "C",
+    "aciklama": "Hükmün açıklanmasının geri bırakılması, koruma tedbirini sona erdiren kararlardan değildir. 18 inci maddenin altıncı fıkrasına göre kamu davasının açılmasının ertelenmesine, HÜKMÜN AÇIKLANMASININ GERİ BIRAKILMASINA, hapis cezası yerine seçenek yaptırım olarak tedbire veya hapis cezasının ertelenmesine karar verilmesi hâlinde, KARARIN KESİNLEŞTİĞİ TARİHTEN İTİBAREN BİR YIL süreyle spor müsabakalarını seyirden yasaklama tedbirinin uygulanmasına devam edilir; önödeme hâlinde süre önödemede bulunulduğu tarihten işler. Tedbirin derhal kaldırılması beşinci fıkrada başka kararlara bağlanmıştır: kaldırma kararı, kovuşturmaya yer olmadığı kararı, beraat veya düşme kararı. Altıncı fıkra süreyi geri bırakma kararının denetim süresine bağlamaz ve bir yıldan uzun bir süre öngörmez. Yasağın kararın VERİLDİĞİ tarihten itibaren bir yıl uygulanması ise md 22/3'te, sporda şiddeti teşvik edecek şekilde basın ve yayın yoluyla açıklamada bulunanlara idari tedbir olarak verilen yasak için öngörülmüştür.",
+    "dayanak": "6222 sayılı Kanun md 18/6",
+    "zorluk": "hard",
+    "tur": "kavram"
+  },
+  {
+    "id": "6222-p2-02",
+    "articleNo": "18",
+    "kok": "6222 sayılı Kanun'a göre, alkol etkisinde olduğu açıkça anlaşıldığı hâlde seyir alanına giren ve dışarı çıkmamakta ısrar ettiği için zor kullanılarak çıkarılan seyirci hakkında aşağıdakilerden hangisi doğrudur?",
+    "siklar": {
+      "A": "Hakkında başka bir yaptırım uygulanmaz.",
+      "B": "Otuz gün adli para cezası ile cezalandırılır.",
+      "C": "İlk seferde yazılı olarak uyarılır, tekrarı hâlinde seyirden yasaklanır.",
+      "D": "İdari para cezası ile cezalandırılır.",
+      "E": "Bir yıl süreyle spor müsabakalarını seyirden yasaklanır."
+    },
+    "dogru": "E",
+    "aciklama": "Dayanak 18 inci maddenin yedinci fıkrasıdır. Alkol ya da uyuşturucu veya uyarıcı madde etkisinde olduğu AÇIKÇA ANLAŞILAN kişi müsabaka, antrenman ve seyir alanlarına alınmaz. Bu alanlara giren ve DIŞARI ÇIKMAMAKTA ISRAR EDEN kişi zor kullanılarak dışarı çıkarılır VE bu madde hükümlerine göre BİR YIL SÜREYLE spor müsabakalarını seyirden yasaklanır. Fıkra iki sonucu birlikte öngörür; kişinin dışarı çıkarılması yasağın yerine geçmez. Fıkra bir uyarı aşaması öngörmez; yasağı davranışın tekrarlanması şartına da bağlamaz: sayılan alanlara giren ve dışarı çıkmamakta ısrar eden kişi, fıkranın lafzıyla, zor kullanılarak dışarı çıkarılır ve bir yıl süreyle seyirden yasaklanır. Dışarı çıkarmakla yetinilen hâl başka bir davranışa aittir: seyir alanında kendisine tahsis edilenden başka yere oturmakta ısrar eden seyirci zor kullanılarak dışarı çıkarılır (md 21/4). Otuz gün adli para cezası alkol etkisinde olan kişiye değil, 13 üncü maddenin altıncı fıkrasında sayılan alanlara ve araçlara uyuşturucu veya uyarıcı madde ya da 12 nci maddenin birinci fıkrasının ikinci cümlesine aykırı olarak müsabaka, seyir ve antrenman alanlarına alkollü içecek SOKAN kişiye verilir (md 13/6). İdari para cezası bu Kanunda başka fiillere, örneğin spor kulüplerinin yükümlülüklerini yerine getirmemesine (md 21) ve sporda şiddeti teşvik edecek şekilde basın ve yayın yoluyla açıklamada bulunulmasına (md 22/1) bağlanmıştır; yedinci fıkranın öngördüğü sonuçlar dışarı çıkarılma ve seyirden yasaklanmadır.",
+    "dayanak": "6222 sayılı Kanun md 18/7",
+    "zorluk": "medium",
+    "tur": "dogrudan"
+  }
+]

@@ -1,0 +1,26 @@
+[
+  {
+    "id": "4483-p2-01",
+    "karar": "ONAY",
+    "korCevap": "E",
+    "metinCevap": "B",
+    "sinavDegeri": 4,
+    "ayirtEdicilik": 4,
+    "dogallik": 4,
+    "zorluk": "hard",
+    "gerekce": "TUR 2: Kör çözümde iki yoldan da E dedim (bilgi %55: 'atama usulüne göre özel bent yer kuralını aşar'; salt şık %45: kök yankısı + en kapsamlı şık); ikisi de YANLIŞ. metinCevap B = anahtar: 3/e bendi '(b) ve (c) bentlerindeki hükümler saklı kalmak kaydıyla' diyor. Analistin korktuğu 'ilde → vali' varsayılanı kökteki atama kaydıyla karşı yöne çekiliyor; salt şıkla B'ye güvenim %35'ti, %60 eşiğinin çok altında. Bilmeyen aday bulmuyor, (e) bendini bilip 2019 saklı kaydını bilmeyen yanılıyor, iki bilgiyi birlikte bilen çözüyor: 'zor' tanımına uygun, ters ayırt etme yok. md 3 mercileri en çok sorulan 4483 çekirdeği; bu açı bankada yok. Unvanın çıkarılması doğru.",
+    "oneri": ""
+  },
+  {
+    "id": "4483-p2-02",
+    "karar": "RED",
+    "korCevap": "C",
+    "metinCevap": "C",
+    "sinavDegeri": 3,
+    "ayirtEdicilik": 2,
+    "dogallik": 4,
+    "zorluk": "easy",
+    "gerekce": "Anahtar C = metinCevap (md 11). Kör çözümde C'yi bilgiyle %80, salt şık ve sağduyuyla %70 buldum: kök 'süresi içinde itiraz etmiştir' dedikten sonra A (tebliğ üzerine) ve B (sürenin dolması üzerine) itirazı anlamsız kılar, D (disiplin soruşturması) ve E (savcılığın talebi) konu dışıdır; cevap kökten okunuyor (kök yankısı + 'kesinleşmeden işlem olmaz' hukuk sezgisi). Bilmeyen aday da buluyor; ayırt edicilik 2. Üreticinin 'medium' etiketi tutmuyor, gerçek zorluk kolay. Hükmün kendisi usul ayrıntısı ve kolluğa özgü değil; analist de değeri 3–4 ve 'kesinleşme hukuk sezgisiyle bulunabilir' diye işaretlemişti. İtiraz olgusunu kökten çıkarmak da kurtarmıyor: 'tebliğ ↔ kesinleşme' ayrımı yine sağduyuyla çözülür; biçim değişikliği değeri yükseltmez.",
+    "oneri": "Yeniden yazılmasın; md 11 yuvası kapatılsın."
+  }
+]

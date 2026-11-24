@@ -1,0 +1,466 @@
+# 5188-p1 — bankadaki en benzer sorular (bütün banka, 7959 soru; eşik 0.15, aday başına 5)
+# skor = aday kök+doğru şık sözcüklerinin (IDF ağırlıklı) ne kadarının o soruda geçtiği. Yüksek skor mükerrer DEMEK DEĞİLDİR; karar gözcünündür.
+
+## 5188-p1-01
+ADAY: 5188 sayılı Kanun'a göre, para veya değerli eşya nakli için özel güvenlik izni verilmesinde öngörülen usul aşağıdakilerden hangisidir?
+ADAY DOĞRU: Valiliğin izniyle
+  — skor 0.31 | Genel Kültür ve Güncel Olaylar / Genel Kültür | published | id 8c55bf79-95ac-4d1c-9c1b-e32610585667
+    5188 sayılı Özel Güvenlik Hizmetlerine Dair Kanun’a göre, göreve başlayan özel güvenlik görevlileri işveren tarafından en geç kaç gün içinde valiliğe bildirilir?
+    A) Yedi
+    B) On
+    C) On beş  ✔
+    D) Yirmi bir
+    E) Otuz
+  — skor 0.28 | Genel Kültür ve Güncel Olaylar / Genel Kültür | published | id e6635560-3ba7-4758-8102-ee9e63abc3b8
+    5188 sayılı Özel Güvenlik Hizmetlerine Dair Kanun’a göre, mülki idare amirlerince istenen ilave tedbirleri almayan kişi, kurum, kuruluş veya şirketlerin yöneticilerine kaç Türk lirası idari para cezası verilir?
+    A) Bin
+    B) Üç bin
+    C) Beş bin
+    D) Altı bin  ✔
+    E) On bin
+  — skor 0.27 | Genel Kültür ve Güncel Olaylar / Genel Kültür | published | id 9ddcdc19-0397-4f2d-ad5f-cb468c1f8212
+    5188 sayılı Özel Güvenlik Hizmetlerine Dair Kanun’a göre, aşağıdakilerin hangisi silahlı özel güvenlik çalıştırılmasına izin verilmeyen yerler arasında sayılmamıştır?
+    A) Bankalar  ✔
+    B) İçkili yerler
+    C) Sağlık tesisleri
+    D) Talih oyunları işletmeleri
+    E) Eğitim ve öğretim kurumları
+  — skor 0.23 | Polis Mevzuatı / 7068 Sayılı Genel Kolluk Disiplin Hükümleri Kanunu | published | id af2ffe8a-3406-42cd-8e02-01c949ce5c90
+    7068 sayılı Kanun'un disiplin ceza puanına bağlı olarak meslekten çıkarma cezası verilmesini düzenleyen 12 nci maddesine ilişkin aşağıdaki ifadelerden hangileri doğrudur? I. Aynı disiplin dosyası kapsamında birden fazla disiplin cezası verilmesi hâlinde bu cezaların puanları toplanarak değerlendirmeye esas alınır. II. Disiplinsizliği alışkanlık hâline getirme nedeniyle verilen meslekten çıkarma ce
+    A) Yalnız I
+    B) Yalnız II
+    C) I ve II
+    D) II ve III  ✔
+    E) I, II ve III
+  — skor 0.22 | Genel Kültür ve Güncel Olaylar / Genel Kültür | published | id e3f97dbc-4bf0-4170-9cba-c5fea574be19
+    5188 sayılı Özel Güvenlik Hizmetlerine Dair Kanun’a göre, özel güvenlik komisyonu aşağıdakilerden hangisinin başkanlığında oluşturulur?
+    A) Vali yardımcısı  ✔
+    B) İl emniyet müdürü
+    C) İl jandarma komutanı
+    D) Ticaret odası başkanı
+    E) Sanayi odası başkanı
+
+## 5188-p1-02
+ADAY: 5188 sayılı Kanun'a göre, “özel güvenlik komisyonu”nun toplantı ve karar usulü ile ilgili aşağıdakilerden hangisi YANLIŞTIR?
+ADAY DOĞRU: Başvuran kuruluşun temsilcisi toplantıya gözlemci olarak katılır.
+  — skor 0.41 | Genel Kültür ve Güncel Olaylar / Genel Kültür | published | id 356ec355-467f-4f6d-b66d-ce58c68d2dd6
+    5188 sayılı Özel Güvenlik Hizmetlerine Dair Kanun’a göre, özel güvenlik komisyonunda aşağıdakilerden hangisi yer almaz?
+    A) İl sağlık müdürlüğü temsilcisi  ✔
+    B) İl emniyet müdürlüğü temsilcisi
+    C) Sanayi odası başkanlığı temsilcisi
+    D) Ticaret odası başkanlığı temsilcisi
+    E) İl jandarma komutanlığı temsilcisi
+  — skor 0.33 | Genel Kültür ve Güncel Olaylar / Genel Kültür | published | id e3f97dbc-4bf0-4170-9cba-c5fea574be19
+    5188 sayılı Özel Güvenlik Hizmetlerine Dair Kanun’a göre, özel güvenlik komisyonu aşağıdakilerden hangisinin başkanlığında oluşturulur?
+    A) Vali yardımcısı  ✔
+    B) İl emniyet müdürü
+    C) İl jandarma komutanı
+    D) Ticaret odası başkanı
+    E) Sanayi odası başkanı
+  — skor 0.33 | Polis Mevzuatı / 5188 Sayılı Özel Güvenlik Hizmetlerine Dair Kanun | published | id 06f9bd3f-06ea-4072-8ca8-1179476ea671
+    5188 sayılı Özel Güvenlik Hizmetlerine Dair Kanun hükümlerine göre koruma ve güvenlik hizmetini yerine getirecek personelin, bulundurulabilecek veya taşınabilecek silah ve teçhizatın azami miktarını ve niteliğini, gerekli hallerde diğer fiziki ve aletli güvenlik tedbirlerini belirlemeye yetkili olan makam aşağıdakilerden hangisidir?
+    A) İçişleri Bakanı
+    B) Vali
+    C) Özel Güvenlik Komisyonu  ✔
+    D) İl Emniyet Müdürü
+    E) Özel Güvenlik Denetleme Başbakanlığı
+  — skor 0.30 | Genel Kültür ve Güncel Olaylar / Genel Kültür | published | id e6635560-3ba7-4758-8102-ee9e63abc3b8
+    5188 sayılı Özel Güvenlik Hizmetlerine Dair Kanun’a göre, mülki idare amirlerince istenen ilave tedbirleri almayan kişi, kurum, kuruluş veya şirketlerin yöneticilerine kaç Türk lirası idari para cezası verilir?
+    A) Bin
+    B) Üç bin
+    C) Beş bin
+    D) Altı bin  ✔
+    E) On bin
+  — skor 0.28 | Anayasa Hukuku / T.C. Anayasası | published | id e8c0632c-fac7-4043-a4fe-f66bb06aae02
+    Olağan olarak toplanan Milli Güvenlik Kurulu toplantısına Kurulun gündemi gereği Kültür ve Turizm Bakanı ile Ticaret Bakanı da katılıyor. 1982 Anayasası'na göre mevcut toplantıya kural olarak toplam kaç bakan katılmıştır?
+    A) 4
+    B) 5
+    C) 6  ✔
+    D) 7
+    E) 8
+
+## 5188-p1-03
+ADAY: Özel güvenlik şirketleri şubelerini - - - - içinde yazılı olarak bildirir; kurucu, temsilci ve yöneticilerde aranan şartların kaybedilmesi hâlinde ise faaliyet izninin iptal edilmemesi için eksiklik - - - - içinde giderilmeli ya da bu kişiler değiştirilmelidir. 5188 sayılı Kanun'a göre, boş bırakıla
+ADAY DOĞRU: bir ay – iki ay
+  — skor 0.22 | İdare Hukuku / 5393 Belediye Kanunu | published | id 6667311a-7789-4d6b-b9fe-81bb7420ae1e
+    Belediye başkanı görevi süresince ve görevinin sona ermesinden itibaren - - - - yıl süreyle, meclis üyeleri ise görevleri süresince ve görevlerinin sona ermesinden itibaren - - - - yıl süreyle, belediye ve bağlı kuruluşlarına karşı doğrudan doğruya veya dolaylı olarak taahhüde giremez, komisyonculuk ve temsilcilik yapamaz. 5393 sayılı Belediye Kanunu’na göre verilen hükümde boş bırakılan yerlere s
+    A) bir - bir
+    B) bir - üç
+    C) iki - bir  ✔
+    D) iki - üç
+  — skor 0.21 | Polis Mevzuatı / 2911 Sayılı Toplantı ve Gösteri Yürüyüşleri Kanunu | published | id 7696e44a-2e2e-4723-8015-db24303dc12e
+    Güvenlik kuvvetlerine veya toplantı veya yürüyüş safahatının teknik araç ve gereçlerle tespit için görevlendirilenlere bu görevlerini yaptıkları sırada cebir ve şiddet veya tehdit veya nüfuz ve müessir kuvvet sarf etmek suretiyle mani olanlar hakkında, fiilleri daha ağır bir cezayı gerektirmediği takdirde, - - - - yıldan - - - - yıla kadar hapis cezası hükmolunur. 2911 sayılı Toplantı ve Gösteri Y
+    A) bir - beş
+    B) iki - beş  ✔
+    C) bir - yedi
+    D) iki - yedi
+    E) üç - altı
+  — skor 0.21 | Anayasa Hukuku / T.C. Anayasası | published | id 5e31ad96-7aaf-4551-8147-802e6ffa47cc
+    Türkiye Büyük Millet Meclisi Başkan adayları, Meclis üyeleri içinden, Meclisin toplandığı günden itibaren - - - - gün içinde, Başkanlık Divanına bildirilir, Başkan seçimi - - - - oyla yapılır. T.C. Anayasası’na göre, bu hükümde boş bırakılan yerlere hangileri sırasıyla getirilmelidir?
+    A) üç - açık
+    B) beş - gizli  ✔
+    C) yedi - açık
+    D) on - gizli
+    E) on beş - açık
+  — skor 0.21 | Polis Mevzuatı / 3628 Sayılı Mal Bildiriminde Bulunulması Kanunu | published | id 3c03c097-5068-4ec6-aacf-32e92a4111b2
+    Kıymet takdirini müteakip, takdir komisyonu tarafından ilgilisine geri verilen hediye veya hibe niteliğindeki eşyadan değeri net asgari ücretin - - - - aylık toplamını aşanlar, ilgilisi tarafından en geç - - - - gün içinde kendi kurumlarına verilir. Mal Bildiriminde Bulunulması Hakkında Yönetmelik’e göre verilen hükümde boş bırakılan yerlere sırasıyla hangisi getirilmelidir?
+    A) beş - yedi
+    B) yedi - on
+    C) on - on  ✔
+    D) on - on beş
+  — skor 0.21 | Polis Mevzuatı / 2918 Sayılı Karayolları Trafik Kanunu | published | id a01338e9-53dc-44d4-b599-9174128c88fa
+    Motorlu araç kazalarından doğan maddi zararların tazminine ilişkin talepler, zarar görenin, zararı ve tazminat yükümlüsünü öğrendiği tarihten başlayarak - - - - yıl ve herhâlde, kaza gününden başlayarak - - - - yıl içinde zamanaşımına uğrar. 2918 sayılı Karayolları Trafik Kanunu’na göre yukarıdaki hükümde boş bırakılan yerlere sırasıyla hangileri getirilmelidir?
+    A) iki - on  ✔
+    B) iki - beş
+    C) bir - beş
+    D) bir - üç
+
+## 5188-p1-04
+ADAY: 5188 sayılı Kanun'a göre, özel güvenlik şirketi yöneticileri ile güvenlik sorumlularında aranan en az öğrenim düzeyi sırasıyla aşağıdakilerden hangisidir?
+ADAY DOĞRU: Lisans – önlisans
+  — skor 0.39 | Genel Kültür ve Güncel Olaylar / Genel Kültür | published | id e6635560-3ba7-4758-8102-ee9e63abc3b8
+    5188 sayılı Özel Güvenlik Hizmetlerine Dair Kanun’a göre, mülki idare amirlerince istenen ilave tedbirleri almayan kişi, kurum, kuruluş veya şirketlerin yöneticilerine kaç Türk lirası idari para cezası verilir?
+    A) Bin
+    B) Üç bin
+    C) Beş bin
+    D) Altı bin  ✔
+    E) On bin
+  — skor 0.22 | Genel Kültür ve Güncel Olaylar / Genel Kültür | published | id e3f97dbc-4bf0-4170-9cba-c5fea574be19
+    5188 sayılı Özel Güvenlik Hizmetlerine Dair Kanun’a göre, özel güvenlik komisyonu aşağıdakilerden hangisinin başkanlığında oluşturulur?
+    A) Vali yardımcısı  ✔
+    B) İl emniyet müdürü
+    C) İl jandarma komutanı
+    D) Ticaret odası başkanı
+    E) Sanayi odası başkanı
+  — skor 0.22 | Genel Kültür ve Güncel Olaylar / Genel Kültür | published | id 356ec355-467f-4f6d-b66d-ce58c68d2dd6
+    5188 sayılı Özel Güvenlik Hizmetlerine Dair Kanun’a göre, özel güvenlik komisyonunda aşağıdakilerden hangisi yer almaz?
+    A) İl sağlık müdürlüğü temsilcisi  ✔
+    B) İl emniyet müdürlüğü temsilcisi
+    C) Sanayi odası başkanlığı temsilcisi
+    D) Ticaret odası başkanlığı temsilcisi
+    E) İl jandarma komutanlığı temsilcisi
+  — skor 0.22 | Genel Kültür ve Güncel Olaylar / Genel Kültür | published | id 9ddcdc19-0397-4f2d-ad5f-cb468c1f8212
+    5188 sayılı Özel Güvenlik Hizmetlerine Dair Kanun’a göre, aşağıdakilerin hangisi silahlı özel güvenlik çalıştırılmasına izin verilmeyen yerler arasında sayılmamıştır?
+    A) Bankalar  ✔
+    B) İçkili yerler
+    C) Sağlık tesisleri
+    D) Talih oyunları işletmeleri
+    E) Eğitim ve öğretim kurumları
+  — skor 0.22 | Genel Kültür ve Güncel Olaylar / Genel Kültür | published | id c1f78b7a-1bd1-4503-b588-e1a1f8f96ad4
+    5188 sayılı Özel Güvenlik Hizmetlerine Dair Kanun’a göre, “özel güvenlik görevlilerinde aranacak şartlar” ile ilgili aşağıdakilerden hangisi yanlıştır?
+    A) 18 yaşını doldurmuş olmak
+    B) Silahlı olarak görev yapacaklar için en az ilköğretim mezunu olmak  ✔
+    C) İlgili maddede belirtilen özel güvenlik temel eğitimini başarıyla tamamlamış olmak
+    D) Görevin yapılmasına engel olabilecek vücut ve akıl hastalığı ile engelli bulunmamak
+    E) Kasten işlenen bir suçtan dolayı bir yıl veya daha fazla süreyle hapis cezasına mahkûm olmamak
+
+## 5188-p1-05
+ADAY: I. Görev alanında, hakkında mahkûmiyet kararı bulunan kişiyi yakalayıp arayabilir. II. Bir kişiyi, vücudu veya sağlığı için mevcut bir tehlikeden korumak amacıyla yakalayabilir. III. Özel güvenlik görevlisine karşı görevi dolayısıyla işlenen suçların failleri, genel hükümlere göre cezalandırılır. 51
+ADAY DOĞRU: I ve II
+  — skor 0.26 | Ceza Muhakemesi Hukuku / 5271 Sayılı Ceza Muhakemesi Kanunu (CMK) | published | id a871d3ad-5af6-4718-9b74-7082bba55a4c
+    Koruma tedbiri olan yakalamayla ilgili I. Kolluk görevlileri, tutuklama kararı veya yakalama emri düzenlenmesini gerektiren ve gecikmesinde sakınca bulunan durumlarda Cumhuriyet savcısına veya âmirlerine derhâl başvurma olanağı bulunmadığı takdirde, yakalama yetkisine sahiptirler. II. Kişiye suçu işlerken rastlanması veya suçüstü bir eylemden dolayı izlenen kişinin kaçması olasılığının bulunması v
+    A) Yalnız II  ✔
+    B) Yalnız III
+    C) I ve II
+    D) I ve III
+    E) I, II ve III
+  — skor 0.25 | Ceza Hukuku / Türk Ceza Kanunu | published | id 02d90bbb-195e-4333-88ca-bf7a51020cd2
+    (F), aynı suç işleme kararıyla birer gün arayla (X) aşiretine mensup 10 kişiyi öldürmüş, 3 kişiyi de yaralamıştır. Cumhuriyet savcısı (C), zincirleme kasten öldürme ve yaralama suçlarından dolayı (F) hakkında iddianame düzenlemiş ancak mahkeme (F)'yi 10 kişiyi öldürmek ve 3 kişiyi yaralamaktan dolayı ayrı ayrı mahkûm etmiştir. Sanığın avukatının ve (C)'nin karara karşı yasa yoluna başvurması üzeri
+    A) Olayda öldürme ve yaralama suçları zincirleme suç olarak işlendiğinden Cumhuriyet savcısının iddianamede yaptığı nitelendirme doğrudur.
+    B) Aynı suç işleme kararıyla yasanın aynı hükmünün birden fazla ihlal edildiği durumlarda ihlal sayısı kadar suç olduğundan Yargıtay'ın bozma kararı yanlıştır.
+    C) Failde aynı suç işleme kararı olsa bile olayda yasanın aynı hükmünü birden fazla ihlal söz konusu olmadığından Yargıtay'ın bozma kararı yanlıştır.
+    D) Kasten öldürme ve yaralama suçlarında zincirleme suç hükümlerinin uygulanması mümkün olmadığından mahkemenin kararı doğrudur.  ✔
+    E) Mahkeme, Cumhuriyet savcısının iddianamesindeki nitelendirmeyle bağlı olduğundan verdiği karar yanlıştır.
+  — skor 0.24 | Ceza Hukuku / Türk Ceza Kanunu | published | id a9aa78f9-ad62-41f0-a7de-0cc3ce4371c2
+    Özel hukuk tüzel kişileri hakkında güvenlik tedbirleriyle ilgili aşağıdaki ifadelerden hangileri yanlıştır? I. İzinle faaliyette bulunan özel hukuk tüzel kişisinin organ veya temsilcilerinin iştirakiyle, iznin verdiği yetki kötüye kullanılarak tüzel kişi yararına işlenen taksirli suçtan mahkûmiyette iznin iptaline karar verilir. II. Müsadere hükümleri, yararına işlenen suçlarda özel hukuk tüzel ki
+    A) Yalnız I  ✔
+    B) Yalnız II
+    C) Yalnız III
+    D) I ve II
+    E) I ve III
+  — skor 0.24 | Ceza Hukuku / Türk Ceza Kanunu | published | id 184351e0-8829-4692-9139-4339eb80b7e6
+    5237 sayılı Türk Ceza Yasası'na göre tüzel kişiler hakkında güvenlik tedbirleri hakkında, I. Bir kamu kurumunun verdiği izne dayalı olarak faaliyette bulunan özel hukuk tüzel kişisinin organ veya temsilcilerinin iştirakiyle ve bu iznin verdiği yetkinin kötüye kullanılması suretiyle tüzel kişi yararına işlenen kasıtlı veya taksirli suçlardan mahkûmiyet durumunda, iznin iptaline karar verilir. II. M
+    A) Yalnız I  ✔
+    B) Yalnız II
+    C) Yalnız III
+    D) I ve II
+    E) I ve III
+  — skor 0.22 | Ceza Hukuku / Türk Ceza Kanunu | published | id 287d1c38-68f9-42c3-ba56-aa3968294d02
+    5237 sayılı Türk Ceza Yasası'na göre eşya müsaderesi hakkında, I. Suçun işlenmesinde kullanılmak üzere hazırlanan eşya, kamu güvenliği, kamu sağlığı veya genel ahlak açısından tehlikeli olması durumunda müsadere edilir. II. Eşya müsaderesine tabi eşyanın ortadan kaldırılması, elden çıkarılması, tüketilmesi veya müsaderesinin başka bir surette olanaksız kılınması durumunda müsadere kararı verilemez
+    A) Yalnız I
+    B) Yalnız III
+    C) I ve II
+    D) I ve III  ✔
+    E) II ve III
+
+## 5188-p1-06
+ADAY: 5188 sayılı Kanun'a göre, bir fabrikanın korunması sürekli olarak bir özel güvenlik şirketine gördürüldüğünde, görevlilerin kullanacağı silah ve teçhizat aşağıdakilerden hangisi tarafından temin edilir?
+ADAY DOĞRU: Hizmeti talep eden kuruluş
+  — skor 0.35 | Polis Mevzuatı / 5188 Sayılı Özel Güvenlik Hizmetlerine Dair Kanun | published | id 06f9bd3f-06ea-4072-8ca8-1179476ea671
+    5188 sayılı Özel Güvenlik Hizmetlerine Dair Kanun hükümlerine göre koruma ve güvenlik hizmetini yerine getirecek personelin, bulundurulabilecek veya taşınabilecek silah ve teçhizatın azami miktarını ve niteliğini, gerekli hallerde diğer fiziki ve aletli güvenlik tedbirlerini belirlemeye yetkili olan makam aşağıdakilerden hangisidir?
+    A) İçişleri Bakanı
+    B) Vali
+    C) Özel Güvenlik Komisyonu  ✔
+    D) İl Emniyet Müdürü
+    E) Özel Güvenlik Denetleme Başbakanlığı
+  — skor 0.31 | Genel Kültür ve Güncel Olaylar / Genel Kültür | published | id e6635560-3ba7-4758-8102-ee9e63abc3b8
+    5188 sayılı Özel Güvenlik Hizmetlerine Dair Kanun’a göre, mülki idare amirlerince istenen ilave tedbirleri almayan kişi, kurum, kuruluş veya şirketlerin yöneticilerine kaç Türk lirası idari para cezası verilir?
+    A) Bin
+    B) Üç bin
+    C) Beş bin
+    D) Altı bin  ✔
+    E) On bin
+  — skor 0.25 | Genel Kültür ve Güncel Olaylar / Genel Kültür | published | id c1f78b7a-1bd1-4503-b588-e1a1f8f96ad4
+    5188 sayılı Özel Güvenlik Hizmetlerine Dair Kanun’a göre, “özel güvenlik görevlilerinde aranacak şartlar” ile ilgili aşağıdakilerden hangisi yanlıştır?
+    A) 18 yaşını doldurmuş olmak
+    B) Silahlı olarak görev yapacaklar için en az ilköğretim mezunu olmak  ✔
+    C) İlgili maddede belirtilen özel güvenlik temel eğitimini başarıyla tamamlamış olmak
+    D) Görevin yapılmasına engel olabilecek vücut ve akıl hastalığı ile engelli bulunmamak
+    E) Kasten işlenen bir suçtan dolayı bir yıl veya daha fazla süreyle hapis cezasına mahkûm olmamak
+  — skor 0.25 | Genel Kültür ve Güncel Olaylar / Genel Kültür | published | id 8c55bf79-95ac-4d1c-9c1b-e32610585667
+    5188 sayılı Özel Güvenlik Hizmetlerine Dair Kanun’a göre, göreve başlayan özel güvenlik görevlileri işveren tarafından en geç kaç gün içinde valiliğe bildirilir?
+    A) Yedi
+    B) On
+    C) On beş  ✔
+    D) Yirmi bir
+    E) Otuz
+  — skor 0.22 | Polis Mevzuatı / 6136 Sayılı Ateşli Silahlar ve Bıçaklar Hakkında Kanun | published | id f88f3aaa-dc97-4c96-9a1a-d4ad573d4eda
+    6136 sayılı Kanun'un Ek 8 inci maddesine göre, Emniyet Genel Müdürlüğünce temin edilen tabanca ve mermilerin emniyet hizmetleri sınıfı personeline satışı hakkında aşağıdakilerden hangisi doğrudur?
+    A) Görevde kullanılmak üzere bedeli karşılığında zati demirbaş silah olarak satılır.  ✔
+    B) Takdir olunan bedelin yarısı bir bedelle ve bir adet olarak satılır.
+    C) Makina ve Kimya Endüstrisi Kurumu aracılığıyla bedel takdiri suretiyle satılır.
+    D) Satıştan elde edilen tutarlar Emniyet Genel Müdürlüğünün döner sermayesine aktarılır.
+    E) Satış işlemleri vergi, resim ve harca tabi olup ardiye ücretinden muaftır.
+
+## 5188-p1-07
+ADAY: 5188 sayılı Kanun'a göre, özel güvenlik görevlilerinin “görev alanı” ile ilgili aşağıdakilerden hangisi YANLIŞTIR?
+ADAY DOĞRU: Kişi korumasında, korunan kişiyle birlikte olunduğunda görev alanı il sınırlarıdır.
+  — skor 0.33 | Genel Kültür ve Güncel Olaylar / Genel Kültür | published | id c1f78b7a-1bd1-4503-b588-e1a1f8f96ad4
+    5188 sayılı Özel Güvenlik Hizmetlerine Dair Kanun’a göre, “özel güvenlik görevlilerinde aranacak şartlar” ile ilgili aşağıdakilerden hangisi yanlıştır?
+    A) 18 yaşını doldurmuş olmak
+    B) Silahlı olarak görev yapacaklar için en az ilköğretim mezunu olmak  ✔
+    C) İlgili maddede belirtilen özel güvenlik temel eğitimini başarıyla tamamlamış olmak
+    D) Görevin yapılmasına engel olabilecek vücut ve akıl hastalığı ile engelli bulunmamak
+    E) Kasten işlenen bir suçtan dolayı bir yıl veya daha fazla süreyle hapis cezasına mahkûm olmamak
+  — skor 0.28 | Polis Mevzuatı / 5188 Sayılı Özel Güvenlik Hizmetlerine Dair Kanun | published | id 06f9bd3f-06ea-4072-8ca8-1179476ea671
+    5188 sayılı Özel Güvenlik Hizmetlerine Dair Kanun hükümlerine göre koruma ve güvenlik hizmetini yerine getirecek personelin, bulundurulabilecek veya taşınabilecek silah ve teçhizatın azami miktarını ve niteliğini, gerekli hallerde diğer fiziki ve aletli güvenlik tedbirlerini belirlemeye yetkili olan makam aşağıdakilerden hangisidir?
+    A) İçişleri Bakanı
+    B) Vali
+    C) Özel Güvenlik Komisyonu  ✔
+    D) İl Emniyet Müdürü
+    E) Özel Güvenlik Denetleme Başbakanlığı
+  — skor 0.28 | Genel Kültür ve Güncel Olaylar / Genel Kültür | published | id e6635560-3ba7-4758-8102-ee9e63abc3b8
+    5188 sayılı Özel Güvenlik Hizmetlerine Dair Kanun’a göre, mülki idare amirlerince istenen ilave tedbirleri almayan kişi, kurum, kuruluş veya şirketlerin yöneticilerine kaç Türk lirası idari para cezası verilir?
+    A) Bin
+    B) Üç bin
+    C) Beş bin
+    D) Altı bin  ✔
+    E) On bin
+  — skor 0.27 | Genel Kültür ve Güncel Olaylar / Genel Kültür | published | id 8c55bf79-95ac-4d1c-9c1b-e32610585667
+    5188 sayılı Özel Güvenlik Hizmetlerine Dair Kanun’a göre, göreve başlayan özel güvenlik görevlileri işveren tarafından en geç kaç gün içinde valiliğe bildirilir?
+    A) Yedi
+    B) On
+    C) On beş  ✔
+    D) Yirmi bir
+    E) Otuz
+  — skor 0.24 | Polis Mevzuatı / 657 Sayılı Devlet Memurları Kanunu | published | id bbaee68f-6930-4e9f-b5e0-2f56718f18d4
+    657 sayılı Devlet Memurları Kanunu’na göre, bakanlıklarda özel önem ve öncelik taşıyan konularda bakana danışmanlık yapmak üzere atanabilen, bakanın görev süresiyle sınırlı olarak görev yapan ve doğrudan bakana bağlı olarak çalışan kişi aşağıdakilerden hangisidir?
+    A) Bakan müşaviri  ✔
+    B) Bakan vekili
+    C) Bakan yardımcısı
+    D) Bakanlık müsteşarı
+    E) Genel müdür
+
+## 5188-p1-08
+ADAY: 5188 sayılı Kanun'a göre, aşağıdakilerin hangisinden dolayı hakkında devam etmekte olan bir kovuşturma bulunması özel güvenlik görevlisi olmaya engeldir?
+ADAY DOĞRU: Uyuşturucu veya uyarıcı madde suçları
+  — skor 0.27 | Ceza Hukuku / Türk Ceza Kanunu | published | id 7a8731c7-40b9-433d-b3da-40e99187799d
+    I. Bu kişilerin güvenlik tedbiri olarak alkol ya da uyuşturucu veya uyarıcı madde bağımlılarına özgü sağlık kuruluşunda tedavi altına alınmasına karar verilir. II. Bu kişilerin tedavisi, alkol ya da uyuşturucu veya uyarıcı madde bağımlılığından kurtulmalarına kadar devam eder. III. Bu kişiler, yerleştirildiği kurumun sağlık kurulunca bu yönde düzenlenecek rapor üzerine hükmü veren mahkeme kararıyl
+    A) Yalnız I
+    B) Yalnız II
+    C) Yalnız III  ✔
+    D) I ve II
+    E) I ve III
+  — skor 0.26 | Ceza Hukuku / Türk Ceza Kanunu | published | id 5e82cc0e-c903-4d1c-98ae-830d579c20fa
+    I. Fuhuş II. Kasten öldürme III. Dolandırıcılık IV. Uyuşturucu veya uyarıcı madde imal ve ticareti 5237 sayılı Türk Ceza Yasası'na göre yukarıdaki suçlardan hangileri, vatandaş veya yabancı tarafından yabancı ülkede işlense bile Türkiye'de kovuşturma yapılır?
+    A) I ve II
+    B) II ve III
+    C) I ve IV  ✔
+    D) III ve IV
+    E) I, II ve IV
+  — skor 0.24 | Genel Kültür ve Güncel Olaylar / Genel Kültür | published | id 9ddcdc19-0397-4f2d-ad5f-cb468c1f8212
+    5188 sayılı Özel Güvenlik Hizmetlerine Dair Kanun’a göre, aşağıdakilerin hangisi silahlı özel güvenlik çalıştırılmasına izin verilmeyen yerler arasında sayılmamıştır?
+    A) Bankalar  ✔
+    B) İçkili yerler
+    C) Sağlık tesisleri
+    D) Talih oyunları işletmeleri
+    E) Eğitim ve öğretim kurumları
+  — skor 0.24 | Genel Kültür ve Güncel Olaylar / Genel Kültür | published | id e3f97dbc-4bf0-4170-9cba-c5fea574be19
+    5188 sayılı Özel Güvenlik Hizmetlerine Dair Kanun’a göre, özel güvenlik komisyonu aşağıdakilerden hangisinin başkanlığında oluşturulur?
+    A) Vali yardımcısı  ✔
+    B) İl emniyet müdürü
+    C) İl jandarma komutanı
+    D) Ticaret odası başkanı
+    E) Sanayi odası başkanı
+  — skor 0.23 | Genel Kültür ve Güncel Olaylar / Genel Kültür | published | id c1f78b7a-1bd1-4503-b588-e1a1f8f96ad4
+    5188 sayılı Özel Güvenlik Hizmetlerine Dair Kanun’a göre, “özel güvenlik görevlilerinde aranacak şartlar” ile ilgili aşağıdakilerden hangisi yanlıştır?
+    A) 18 yaşını doldurmuş olmak
+    B) Silahlı olarak görev yapacaklar için en az ilköğretim mezunu olmak  ✔
+    C) İlgili maddede belirtilen özel güvenlik temel eğitimini başarıyla tamamlamış olmak
+    D) Görevin yapılmasına engel olabilecek vücut ve akıl hastalığı ile engelli bulunmamak
+    E) Kasten işlenen bir suçtan dolayı bir yıl veya daha fazla süreyle hapis cezasına mahkûm olmamak
+
+## 5188-p1-09
+ADAY: 5188 sayılı Kanun'a göre, özel güvenlik görevlilerinin çalışma koşulları ve eğitimi ile ilgili aşağıdakilerden hangisi YANLIŞTIR?
+ADAY DOĞRU: Valiliğin izniyle sivil kıyafetle görev yapabilir.
+  — skor 0.36 | Genel Kültür ve Güncel Olaylar / Genel Kültür | published | id 8c55bf79-95ac-4d1c-9c1b-e32610585667
+    5188 sayılı Özel Güvenlik Hizmetlerine Dair Kanun’a göre, göreve başlayan özel güvenlik görevlileri işveren tarafından en geç kaç gün içinde valiliğe bildirilir?
+    A) Yedi
+    B) On
+    C) On beş  ✔
+    D) Yirmi bir
+    E) Otuz
+  — skor 0.33 | Genel Kültür ve Güncel Olaylar / Genel Kültür | published | id c1f78b7a-1bd1-4503-b588-e1a1f8f96ad4
+    5188 sayılı Özel Güvenlik Hizmetlerine Dair Kanun’a göre, “özel güvenlik görevlilerinde aranacak şartlar” ile ilgili aşağıdakilerden hangisi yanlıştır?
+    A) 18 yaşını doldurmuş olmak
+    B) Silahlı olarak görev yapacaklar için en az ilköğretim mezunu olmak  ✔
+    C) İlgili maddede belirtilen özel güvenlik temel eğitimini başarıyla tamamlamış olmak
+    D) Görevin yapılmasına engel olabilecek vücut ve akıl hastalığı ile engelli bulunmamak
+    E) Kasten işlenen bir suçtan dolayı bir yıl veya daha fazla süreyle hapis cezasına mahkûm olmamak
+  — skor 0.32 | İdare Hukuku / İdare Hukuku | published | id 7487b164-15b5-4727-8f18-e207efada88e
+    Valilik ve Kaymakamlık Birimleri Teşkilat, Görev ve Çalışma Yönetmeliği’ne göre aşağıdakilerden hangisi özel kalem müdürlüğünün görevlerindendir?
+    A) Valiliğe sorulan hukuki konular ile hukuki, mali, cezai sonuç doğuracak işlemler hakkında görüş bildirmek, hukuki danışmanlık hizmeti yapmak
+    B) Mevzuatın uygulanmasına ilişkin bilgileri toplamak, değerlendirmek ve söz konusu mevzuatın geliştirilmesine yönelik çalışmaları yürütmek
+    C) Sıkıyönetim ve olağanüstü hâllerde valilik makamının silahlı kuvvetlerle olan ilişkilerini valinin direktifi altında yürütmek  ✔
+    D) Valilik birimleri ve diğer müdürlüklerin hazırlamış oldukları yönerge ve diğer düzenleyici işlemler ile ilgili görüş bildirmek
+  — skor 0.23 | Polis Mevzuatı / 6222 Sayılı Sporda Şiddetin Önlenmesine Dair Kanun | published | id 7c69dd0b-b6f8-4807-8a4a-22b22f3ac964
+    6222 sayılı Kanun'a göre, spor müsabakalarında görev yapan genel kolluk ve özel güvenlik görevlileri ile ilgili aşağıdakilerden hangisi doğrudur?
+    A) Müsabaka güvenlik amiri, tribünlerdeki genel kolluk görevlilerinin sayısını her zaman artırabilir.  ✔
+    B) Özel güvenlik görevlileri, bu Kanundan doğan görevlerinin ifası sırasında ateşli silah taşıyabilir.
+    C) Kulüp için görevlendirilen gözlemci kolluk görevlisi, kulübün deplasman maçlarında görev almaz.
+    D) Görevde olmayan genel kolluk görevlileri, kulübün başvurusu üzerine federasyon tarafından görevlendirilir.
+    E) Özel güvenlik görevlileri, genel kolluktan ayrı olarak ev sahibi kulübün emir ve denetiminde görev yapar.
+  — skor 0.22 | İdare Hukuku / 5302 İl Özel İdaresi Kanunu | published | id 51d94415-2f02-4230-87c0-60cc31140ad5
+    Yozgat'ın belediye sınırları dışında sivil hava ulaşımına açık bir havaalanı hizmete açılıyor. Murat, bu havaalanı içerisinde bir kafeterya açmak istiyor. 5302 sayılı İl Özel İdaresi Kanunu'na göre Murat'ın açmak istediği kafeterya için iş yeri açma ve çalışma ruhsatı, aşağıdakilerin hangisi tarafından verilir?
+    A) Yozgat Valiliği
+    B) Yozgat İl Özel İdaresi
+    C) Yozgat Belediyesi
+    D) İçişleri Bakanlığı
+    E) Sivil Havacılık Genel Müdürlüğü  ✔
+
+## 5188-p1-10
+ADAY: 5188 sayılı Kanun'a göre, aşağıdaki fiillerden hangisi adlî suç olarak düzenlenmiştir?
+ADAY DOĞRU: Faaliyet izni olmadan hizmet verdiğini ilan etmek
+  — skor 0.25 | Polis Mevzuatı / 7068 Sayılı Genel Kolluk Disiplin Hükümleri Kanunu | published | id 4ae657e7-36c6-4cd1-bc2c-914507d0cf90
+    7068 sayılı Kanun'a göre aşağıda verilen fiillerden hangileri yirmi ay uzun süreli durdurma cezasını gerektirir? I. İzinsiz veya kurumca kabul edilebilir özrü olmaksızın kesintisiz olarak beş günden fazla ve dokuz güne kadar (dokuzuncu gün dahil) görevine gelmemek II. Kanunun verdiği yetkiye dayalı olmaksızın spor müsabakalarına dayalı sabit ihtimalli veya müşterek bahis oyunlarını oynamak III. Hi
+    A) Yalnız I
+    B) Yalnız II
+    C) I ve II  ✔
+    D) II ve III
+    E) I, II ve III
+  — skor 0.23 | Polis Mevzuatı / 6136 Sayılı Ateşli Silahlar ve Bıçaklar Hakkında Kanun | published | id 98c42fcd-90de-4f30-8d4d-af6647529b0e
+    “(A), (B) ve (C) bentlerinde sayılan yerlere silahla giren veya buralarda silah taşıyan kişiler, fiilleri daha ağır cezayı gerektiren başka bir suç oluşturmadığı takdirde, - - - - günden az olmamak üzere adlî para cezası ile cezalandırılır.” 6136 sayılı Kanun'un Ek 1 inci maddesinde yer alan bu hükümde boş bırakılan yere aşağıdakilerden hangisi getirilmelidir?
+    A) 25
+    B) 30
+    C) 50  ✔
+    D) 100
+    E) 200
+  — skor 0.23 | Polis Mevzuatı / 2911 Sayılı Toplantı ve Gösteri Yürüyüşleri Kanunu | published | id 7079f37b-d5da-4543-96b1-c54e320af0de
+    2911 sayılı Toplantı ve Gösteri Yürüyüşleri Kanunu’na göre; Kanuna uygun olarak başlayan bir toplantı sonradan Kanuna aykırı toplantı hâline dönüşürse, toplantının sona erdiğini topluluğa ilan etmek ve durumu derhâl yetkili kolluk amirine bildirmek öncelikle kimin görevidir?
+    A) Düzenleme kurulu veya kurul başkanı  ✔
+    B) Mahallin en büyük mülki amiri
+    C) Olay yerindeki güvenlik amiri
+    D) Toplantının yapıldığı yerin belediye başkanı
+    E) İl emniyet müdürü
+  — skor 0.21 | Polis Mevzuatı / 3713 Sayılı Terörle Mücadele Kanunu | published | id 8287a0e8-f52f-412f-8c31-c0f6daab71e9
+    I. Hükûmete karşı suç işlemek II. Türkiye Cumhuriyeti Hükûmetine karşı silahlı isyan etmek III. Silahlı örgüt kurmak IV. Savaş zamanında emirlere uymama V. Yabancı hizmetine asker yazma, yazılma 3713 sayılı Terörle Mücadele Kanunu hükümlerine göre yukarıdakilerden hangisi terör suçudur?
+    A) I II III IV V
+    B) IV V
+    C) II IV V
+    D) IV
+    E) I II III V  ✔
+  — skor 0.21 | Genel Kültür ve Güncel Olaylar / Güncel ve Kültürel Olaylar | published | id 3f3be2cc-ea7e-4a35-9677-509413947544
+    İçişleri Bakanı Mustafa Çiftçi'nin 1 Temmuz 2026'da Millî Güvenlik Kurulu Genel Sekreterliğinde düzenlenen Millî Güvenlik Konferansları programında açıkladığına göre İçişleri Bakanlığı 2026 yılını hangi adla ilan etmiştir?
+    A) Düzensiz Göçle Mücadele Yılı
+    B) Kadına Yönelik Şiddetle Mücadele Yılı
+    C) Yasa Dışı Bahisle Mücadele Yılı
+    D) Siber Dolandırıcılıkla Mücadele Yılı
+    E) Organize Suç Örgütleri ve Uyuşturucu ile Mücadele Yılı  ✔
+
+## 5188-p1-11
+ADAY: 5188 sayılı Kanun'a göre, bir suçun işlendiğini göreviyle bağlantılı olarak öğrendiği hâlde yetkili genel kolluğa bilgi vermeyen özel güvenlik görevlisine uygulanacak yaptırım aşağıdakilerden hangisidir?
+ADAY DOĞRU: Bir yıl süreyle özel güvenlik alanında görev alamama
+  — skor 0.22 | Ceza Hukuku / Türk Ceza Kanunu | published | id f0876891-3949-4765-802b-51623708dd57
+    Daha önce suç işlememiş olan 25 yaşındaki (A), yağmurlu havada uykusuz hâlde araç kullanarak karşıdan karşıya geçmekte olan (B)'nin ölümüne neden olur. Mahkemece suçun bilinçsiz taksirle işlendiği kabul edilerek (A), taksirli ölüme neden olma suçundan 3 yıl hapis cezasına mahkûm edilir. (A)'nın cezasının seçenek yaptırımlara çevrilmesiyle ilgili aşağıdaki ifadelerden hangisi doğrudur?
+    A) Uzun süreli hapis cezası olduğu için seçenek yaptırımlara çevrilemez.
+    B) Adli para cezasına çevrilmesi mümkün olup bu konuda yargıcın takdir yetkisi vardır.  ✔
+    C) Suç taksirle işlendiği için seçenek yaptırımlara çevrilemez.
+    D) Seçenek yaptırımlardan adli para cezasına çevrilmesi zorunludur.
+    E) Adli para cezası dışındaki seçenek yaptırımlara çevrilmesi zorunludur.
+  — skor 0.21 | Genel Kültür ve Güncel Olaylar / Genel Kültür | published | id c1f78b7a-1bd1-4503-b588-e1a1f8f96ad4
+    5188 sayılı Özel Güvenlik Hizmetlerine Dair Kanun’a göre, “özel güvenlik görevlilerinde aranacak şartlar” ile ilgili aşağıdakilerden hangisi yanlıştır?
+    A) 18 yaşını doldurmuş olmak
+    B) Silahlı olarak görev yapacaklar için en az ilköğretim mezunu olmak  ✔
+    C) İlgili maddede belirtilen özel güvenlik temel eğitimini başarıyla tamamlamış olmak
+    D) Görevin yapılmasına engel olabilecek vücut ve akıl hastalığı ile engelli bulunmamak
+    E) Kasten işlenen bir suçtan dolayı bir yıl veya daha fazla süreyle hapis cezasına mahkûm olmamak
+  — skor 0.20 | Ceza Hukuku / Türk Ceza Kanunu | published | id cba5a5c8-9c01-4762-838a-d07ea7edaad8
+    5237 sayılı Türk Ceza Yasası'na göre hapis cezası hakkında, I. Müebbet hapis cezası, hükümlünün yaşamı boyunca devam eder; yasa ve Cumhurbaşkanınca çıkarılan yönetmelikte belirtilen sıkı güvenlik rejimine göre çektirilir. II. Süreli hapis cezası, yasada aksi belirtilmeyen durumlarda 3 aydan az, 20 yıldan fazla olamaz. III. Süreli hapis cezası, suçlunun kişiliğine, sosyal ve ekonomik durumuna, yarg
+    A) I ve II
+    B) I ve III
+    C) II ve III
+    D) I, II ve III  ✔
+    E) II, III ve IV
+  — skor 0.20 | Polis Mevzuatı / 7068 Sayılı Genel Kolluk Disiplin Hükümleri Kanunu | published | id f98d7ce3-7001-4c85-a13e-72af6ddee66e
+    Emniyet Genel Müdürlüğü merkez teşkilatı kadrosunda görevli, emniyet hizmetleri sınıfında ve 5'inci meslek derecesinde bulunan bir Dördüncü Sınıf Emniyet Müdürü hakkında yürütülen disiplin soruşturması meslekten çıkarma cezasını gerektiren bir disiplinsizliğin işlendiğini ortaya koymuştur. 7068 sayılı Kanun'a göre bu cezayı vermeye yetkili kurul aşağıdakilerden hangisidir?
+    A) İl polis disiplin kurulu
+    B) Emniyet Genel Müdürlüğü Merkez Disiplin Kurulu
+    C) Eğitim ve öğretim kurumlarındaki polis disiplin kurulu
+    D) Emniyet Genel Müdürlüğü Yüksek Disiplin Kurulu  ✔
+    E) Bakanlık Yüksek Disiplin Kurulu
+  — skor 0.19 | Polis Mevzuatı / 6284 Sayılı Kanuna İlişkin Uygulama Yönetmeliği | published | id c57fbddd-94d2-44ba-ad90-623f0089da45
+    Hakkında geçici koruma kararı bulunan bir kadın, acil bir durum olmaksızın başka bir ildeki ailesinin yanına gidecektir. 6284 sayılı Kanun'a İlişkin Uygulama Yönetmeliği'ne göre bu kişi, gideceği yer hakkında görevli ve yetkili kolluğa en geç ne zaman bilgi vermelidir?
+    A) Yirmi dört saat öncesinden  ✔
+    B) Kırk sekiz saat öncesinden
+    C) Yetmiş iki saat öncesinden
+    D) Bir hafta öncesinden
+    E) İki hafta öncesinden
+
+## 5188-p1-12
+ADAY: 5188 sayılı Kanun'a göre, özel güvenlik birimlerini, özel güvenlik şirketlerini ve özel güvenlik eğitimi veren kurumları denetlemeye yetkili olanlar aşağıdakilerin hangisinde birlikte verilmiştir?
+ADAY DOĞRU: İçişleri Bakanlığı ve valilikler
+  — skor 0.31 | Polis Mevzuatı / 5395 Sayılı Çocuk Koruma Kanunu | published | id 03f0f9a3-340a-4279-9607-8d8add553cbf
+    5395 sayılı Çocuk Koruma Kanunu’na göre, çocuk hakkında kamu davası açılması hâlinde durumun, gerekli idari tedbirlerin alınması amacıyla bildirileceği birimler aşağıdakilerin hangisinde birlikte ve doğru olarak verilmiştir?
+    A) Aile ve Sosyal Hizmetler Bakanlığı il müdürlüğüne, baroya ve çocuğun velisine
+    B) Milli Eğitim Bakanlığı ile Sağlık Bakanlığı il veya ilçe müdürlüklerine
+    C) Aile ve Sosyal Hizmetler Bakanlığı ile Milli Eğitim Bakanlığı il veya ilçe müdürlüklerine  ✔
+    D) Aile ve Sosyal Hizmetler Bakanlığı ile Sağlık Bakanlığı il veya ilçe müdürlüklerine
+    E) Adli destek ve mağdur hizmetleri müdürlüğü ile denetimli serbestlik ve yardım merkezi şube müdürlüğüne
+  — skor 0.27 | Genel Kültür ve Güncel Olaylar / Genel Kültür | published | id 9ddcdc19-0397-4f2d-ad5f-cb468c1f8212
+    5188 sayılı Özel Güvenlik Hizmetlerine Dair Kanun’a göre, aşağıdakilerin hangisi silahlı özel güvenlik çalıştırılmasına izin verilmeyen yerler arasında sayılmamıştır?
+    A) Bankalar  ✔
+    B) İçkili yerler
+    C) Sağlık tesisleri
+    D) Talih oyunları işletmeleri
+    E) Eğitim ve öğretim kurumları
+  — skor 0.26 | Genel Kültür ve Güncel Olaylar / Genel Kültür | published | id e6635560-3ba7-4758-8102-ee9e63abc3b8
+    5188 sayılı Özel Güvenlik Hizmetlerine Dair Kanun’a göre, mülki idare amirlerince istenen ilave tedbirleri almayan kişi, kurum, kuruluş veya şirketlerin yöneticilerine kaç Türk lirası idari para cezası verilir?
+    A) Bin
+    B) Üç bin
+    C) Beş bin
+    D) Altı bin  ✔
+    E) On bin
+  — skor 0.26 | Genel Kültür ve Güncel Olaylar / Genel Kültür | published | id 8c55bf79-95ac-4d1c-9c1b-e32610585667
+    5188 sayılı Özel Güvenlik Hizmetlerine Dair Kanun’a göre, göreve başlayan özel güvenlik görevlileri işveren tarafından en geç kaç gün içinde valiliğe bildirilir?
+    A) Yedi
+    B) On
+    C) On beş  ✔
+    D) Yirmi bir
+    E) Otuz
+  — skor 0.25 | İdare Hukuku / İdare Hukuku | published | id 5c606693-d754-4492-bece-ddd986195cb7
+    Kamu hizmeti imtiyazı verme yetkisine sahip olanlar aşağıdakilerin hangisinde birlikte verilmiştir?
+    A) Bakanlıklar, köyler ve belediyeler
+    B) Danıştay, Cumhurbaşkanı ve il özel idareleri
+    C) Cumhurbaşkanı, belediyeler ve il özel idareleri  ✔
+    D) TBMM, valilikler ve belediyeler
+    E) Cumhurbaşkanı, valilikler ve köyler
