@@ -90,7 +90,9 @@ export const DEEP_LINKS: Record<DeepLinkTarget, Entry> = {
   exam: {
     param: 'examId',
     route: (p) => `/denemeler/${p}`,
-    webPath: (p) => `/denemeler/${p}`,
+    // Web'de /denemeler/<id> diye bir sayfa yok; deneme kapısı baslamadan-once
+    // (canlı/yaklaşan/bitmiş durumunu o sayfa yönetir). 25 Kas 2026: e-posta 404'ü.
+    webPath: (p) => `/denemeler/${p}/baslamadan-once`,
     minAppVersion: '2.0.0',
   },
   exam_result: {
@@ -184,6 +186,8 @@ export function webPathFromRoute(route: string | null | undefined): string {
   if (r === 'denemeler') return '/denemeler';
   if (r === 'leaderboard') return '/liderlik';
   if (r === 'store') return DEEP_LINKS.app_update.webPath('');
+  const deneme = r.match(/^\/denemeler\/([0-9a-fA-F-]{36})\/?$/);
+  if (deneme) return DEEP_LINKS.exam.webPath(deneme[1]);
   const sonuc = r.match(/^deneme-sonuc\/([0-9a-fA-F-]{36})$/);
   if (sonuc) return `/sonuc/${sonuc[1]}`;
   const soru = r.match(/^question:(.+)$/);

@@ -33,6 +33,9 @@ describe('derin bağlantı kayıt defteri', () => {
     });
     expect(resolveDeepLink({ target: 'daily_question' }).route).toBe('daily-quiz');
     expect(resolveDeepLink({ target: 'exams' }).webPath).toBe('/denemeler');
+    expect(resolveDeepLink({ target: 'exam', params: { examId: sid } }).webPath).toBe(
+      `/denemeler/${sid}/baslamadan-once`,
+    );
     expect(resolveDeepLink(null).webPath).toBe('/bugun');
   });
   it('uygulama güncellemesi: sürüm kapısı parametredeki mağaza sürümüdür', () => {
@@ -55,6 +58,8 @@ describe('derin bağlantı kayıt defteri', () => {
   it('eski rota dizgesini web yoluna çevirir (apps/web bildirimRotasi ile aynı)', () => {
     expect(webPathFromRoute(`deneme-sonuc/${sid}`)).toBe(`/sonuc/${sid}`);
     expect(webPathFromRoute('leaderboard')).toBe('/liderlik');
+    expect(webPathFromRoute(`/denemeler/${sid}`)).toBe(`/denemeler/${sid}/baslamadan-once`);
+    expect(webPathFromRoute(`/denemeler/${sid}/sorular`)).toBe(`/denemeler/${sid}/sorular`);
     expect(webPathFromRoute('//evil.com')).toBe('/bugun');
   });
 });
