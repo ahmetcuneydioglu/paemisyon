@@ -8,7 +8,7 @@ import { fillRecipient, htmlToText, renderCampaignHtml } from '../email/email-re
 import { SesService } from '../email/ses.service';
 import { CATEGORY_POLICY } from './notification.categories';
 import { notificationsProvider } from './notifications.config';
-import { firstName } from './template';
+import { emailBodyWithCta, firstName } from './template';
 
 /**
  * E-posta kanalı (Doc 52 karar 2): motorun bildirimi mevcut SES göndericisiyle
@@ -69,10 +69,11 @@ export class EmailChannelService {
 
     const data = (n.data ?? {}) as Record<string, unknown>;
     const subject = String(data.emailSubject ?? n.title);
-    const cta = n.webPath
-      ? `\n\n[${n.ctaLabel ?? 'Uygulamayı aç'}](${EMAIL_CONFIG.publicBaseUrl}${n.webPath})`
-      : '';
-    const bodyMarkdown = String(data.emailBody ?? n.body) + cta;
+    const bodyMarkdown = emailBodyWithCta(
+      String(data.emailBody ?? n.body),
+      n.ctaLabel,
+      n.webPath ? `${EMAIL_CONFIG.publicBaseUrl}${n.webPath}` : null,
+    );
     const html0 = renderCampaignHtml({
       subject,
       previewText: n.body.slice(0, 120),

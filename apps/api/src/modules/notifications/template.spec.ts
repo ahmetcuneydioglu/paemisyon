@@ -1,4 +1,5 @@
-import { fillTemplate, templateVariables, templateWarnings } from './template';
+import { emailBodyWithCta, fillTemplate, templateVariables, templateWarnings } from './template';
+import { markdownToHtml } from '../email/email-render';
 import { resolveDeepLink, webPathFromRoute } from './deep-links';
 
 describe('şablon', () => {
@@ -61,5 +62,21 @@ describe('derin bağlantı kayıt defteri', () => {
     expect(webPathFromRoute(`/denemeler/${sid}`)).toBe(`/denemeler/${sid}/baslamadan-once`);
     expect(webPathFromRoute(`/denemeler/${sid}/sorular`)).toBe(`/denemeler/${sid}/sorular`);
     expect(webPathFromRoute('//evil.com')).toBe('/bugun');
+  });
+});
+
+describe('e-posta eylem düğmesi', () => {
+  const url = 'https://paemisyon.com/denemeler/x/baslamadan-once';
+  it('gövde aynı adrese bağlanıyorsa düğme eklenmez (çift bağlantı yok)', () => {
+    const body = `Merhaba,\n\n[Denemeyi aç](${url})`;
+    expect(emailBodyWithCta(body, 'Denemeyi gör', url)).toBe(body);
+  });
+  it('bağlantısız gövdeye düğme bloğu eklenir ve buton olarak işlenir', () => {
+    const md = emailBodyWithCta('Yeni deneme yayında.', 'Denemeyi gör', url);
+    expect(md).toContain(`:::buton [Denemeyi gör](${url})`);
+    expect(markdownToHtml(md)).not.toContain(':::');
+  });
+  it('adres yoksa gövde değişmez', () => {
+    expect(emailBodyWithCta('Metin', 'X', null)).toBe('Metin');
   });
 });

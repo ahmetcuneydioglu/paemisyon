@@ -129,3 +129,14 @@ export function campaignVariableWarnings(
 export function firstName(displayName: string | null | undefined): string {
   return (displayName ?? '').trim().split(/\s+/)[0] || 'Aday';
 }
+
+/**
+ * E-posta gövdesine eylem düğmesi ekler — gövde aynı adrese zaten bağlanıyorsa
+ * (`[Denemeyi aç]({{link}})` gibi) eklemez: aynı hedefe iki bağlantı postada
+ * tekrar gibi duruyordu (25 Kas 2026). Düğme `:::buton` bloğuyla gerçek buton olur.
+ */
+export function emailBodyWithCta(body: string, ctaLabel: string | null, url: string | null): string {
+  if (!url || body.includes(`](${url})`)) return body;
+  const label = (ctaLabel ?? 'Uygulamayı aç').replace(/[[\]]/g, '');
+  return `${body}\n\n:::buton [${label}](${url})\n:::`;
+}
