@@ -23,6 +23,11 @@ Gerçek sınavın konu dağılımıyla kurulan 25 soruluk deneme; zayıf dersler
 **İpucu:** Denemeler arasındaki fark, hangi derste ilerlediğini gösterir. Bir sonraki denemeyi bitirince puanını öncekiyle karşılaştır.
 :::
 
+**Denemeleri her yerden çözebilirsin:** iPhone, Android ya da tarayıcından [paemisyon.com](https://www.paemisyon.com/denemeler) — hesabın ve sonuçların her cihazda aynı.
+
+:::magazalar
+:::
+
 Bir sorunla karşılaşırsan ya da bir önerin varsa **bu postayı yanıtla**; doğrudan bize ulaşır.
 
 Başarılar,

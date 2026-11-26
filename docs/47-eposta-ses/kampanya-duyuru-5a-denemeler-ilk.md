@@ -24,6 +24,8 @@ Gerçek sınavın konu dağılımıyla, sana göre kurulan 25 soruluk kısa dene
 **Neden şimdi?** Deneme, hangi derste puan kaybettiğini en hızlı gösteren yol. Bitirdiğinde sonuç ekranında ders ders nerede olduğunu görür, sorularını tek tek incelersin.
 :::
 
+**Denemeleri her yerden çözebilirsin:** iPhone, Android ya da tarayıcından [paemisyon.com](https://www.paemisyon.com/denemeler) — hesabın ve sonuçların her cihazda aynı.
+
 :::magazalar
 :::
 
