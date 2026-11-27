@@ -103,14 +103,44 @@ Anlık görüntü (`DuelSnapshot`) herkese aynıdır: faz, sunucu saati, faz bit
    - Doğrulama: `duel-e2e.ts` 179 kontrol; simülatörde rozet listesi, gizlilik anahtarı ve arkadaş
      bölümleri görüldü. Push'un gerçekten teslimi, kabul/ret dokunuşları ve rozet verme anı ekranda
      denenmedi; panel ve web yalnız tip denetiminden geçti.
-5. **Sağlamlaştırma:** yük sınaması, iki cihazlı tur, AX3 ve küçük ekran, koyu mod.
+5. **Sağlamlaştırma — BİTTİ (27 Kas 2026), commit bekliyor.**
+   - Durum okuması kilitsiz: `state()` önce `RepeatableRead` anlık görüntüsünden okur; yalnız fazın
+     süresi dolmuşsa maç satırını kilitleyip ilerletir. Yoklamalar birbirini beklemez.
+   - Yük sınaması `scripts/duel-yuk.ts` (yerel Postgres, gerçek motor, `connection_limit=4`):
+     240 oyuncu (20 salon + 40 düello), saniyede bir yoklama → 254 istek/sn, yoklama p50 6 ms /
+     p95 26 ms, cevap p95 71 ms, hata yok. 720 oyuncu → tavan ~316 istek/sn, p50 1,6 sn, havuz
+     zaman aşımı (P2028) ×663. İki yükte de veri tutarlı: çift cevap yok, puan = cevap toplamı,
+     ödül satırı = oyuncu sayısı, asılı oyuncu yok. Sonuç: dört bağlantılık payla aynı anda
+     ~250 oyuncu rahat; üstü için havuz payı ya da yoklama aralığı büyütülür (Realtime çalışırken
+     istemci yoklamayı seyreltebilir — henüz yapılmadı).
+   - Bağlantı koptu uyarısı hiç çıkmıyordu (React Query `isError` yalnız denemeler bitince döner):
+     `use-duel-match.ts` artık `failureCount` + `NetworkError`'a bakar, ağ hatasında süresiz dener.
+     Simülatörde sunucu kapatılıp açılarak doğrulandı: uyarı çıktı, sunucu dönünce maç kaldığı
+     sorudan sürdü.
+   - Simülatörde ek tur: sıralama koyu temada.
+   - YAPILMADI: Android (hazır derleme ve bağlı emülatör yok), iki gerçek cihazlı tur, Realtime
+     kanalı ve push teslimi (ikisi de gerçek Supabase/FCM ister).
 
-## 6. Canlıya geçiş (yapılmadı; sıra geldiğinde)
+## 6. Canlıya geçiş
 
-1. Backend durdurulur (pooler limiti), `prisma migrate deploy` (tek migration).
-2. Supabase'de migration sonundaki `realtime.messages` politikası ve `duel_can_listen`
-   fonksiyonunun oluştuğu doğrulanır (yerelde `realtime` şeması olmadığı için bu blok atlanır).
-3. Bayrak kapalı kalır; admin/beta hesabıyla iki cihazda tur. Mobil sürüm yayılınca açılır.
+**27 Kas 2026 — üç migration CANLIDA** (`prisma migrate deploy`; kullanıcı kararı). Doğrulandı: on
+tablo ve RLS, `duel_can_listen` (SECURITY DEFINER), `realtime.messages` üstünde
+`duel_listen_own_channels` politikası, `users.duel_seen_at` / `duel_discoverable`. Bayrak satırı yok
+(varsayılan kapalı).
+
+**Sekiz rozet satırı GERİ ALINDI.** Canlıdaki API hâlâ düellosuz eski kod; eski Prisma istemcisi
+`badges` tablosunu bütün kolonlarıyla okur ve tanımadığı `BadgeKind` değerinde hata verir
+(`/me/coach`). Satırlar birkaç dakika canlıda kaldı, kazanan yoktu, silindi. Aynı tuzak
+`notifications.category = 'duel'` için de geçerli: düello kodu canlı veritabanına eski API
+çalışırken BAĞLANMAMALI (davet bildirimi kuyruğa `duel` satırı yazar, eski işçi okuyamaz).
+
+Kalan sıra:
+1. Dal `origin/main` üstüne alınır (27 Kas'ta 44 ileri / 137 geri, yinelenen commit'ler var), API
+   yayınlanır (bayrak kapalı).
+2. API yayınlanınca rozet satırları yeniden eklenir: `20261127010100_duello_rozetler` içindeki
+   INSERT (ON CONFLICT'li) elle çalıştırılır; migration kaydı zaten "uygulandı".
+3. Admin/beta hesabıyla iki cihazda tur (Realtime ve push burada sınanır). Mobil sürüm yayılınca
+   bayrak açılır.
 
 ## 7. Açık noktalar
 
@@ -127,9 +157,11 @@ Anlık görüntü (`DuelSnapshot`) herkese aynıdır: faz, sunucu saati, faz bit
   iskelet, segment sekmesi büyük yazıda sola kırılıyordu (kit `ChoiceTabs` 1,3× + ortalı), geri sayım
   kartları eşit değildi ve ad kırpılıyordu, skor şeridi etiketi ve durum satırı AX3'te kırpılıyordu.
 - Hâlâ görülmeyenler: Android; klavye açıkken alt sayfa (düzeltme yazıldı, ekranda DOĞRULANMADI);
-  arkadaş çağır listesinin dolu hali; sıralama koyu tema; bağlantı koptu uyarısı; açıklama ve madde bağı
-  gerçek içerikle. Mevcut `QuestionOption` harfi AX3'te 28 pt daireden taşıyor (düello öncesi kusur).
+  arkadaş çağır listesinin dolu hali; açıklama ve madde bağı gerçek içerikle. Mevcut `QuestionOption` harfi AX3'te 28 pt daireden taşıyor (düello öncesi kusur).
 
 - Özel kanal yetkisi (`duel_can_listen`) gerçek Supabase'de henüz sınanmadı.
 - Mevcut tabloların RLS durumu bu işin kapsamında incelenmedi (migration'larda hiç RLS yok).
 - Zorluk dengesi yok: seçim rastgele, karışıkta konu başına tavanla. Gerekirse sonra.
+- Haftalık sıralama ve "Haftanın Lideri" galibiyet sayısına bakar: çok oynayanı ödüllendirir.
+  Bilinçli tercih; şikâyet gelirse en az maç eşiği ya da kazanma oranı karışımı düşünülür.
+- Yük tavanı havuz payına bağlı (Aşama 5 ölçümü); canlıda API'nin payı dört bağlantı.

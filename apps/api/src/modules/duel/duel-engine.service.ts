@@ -821,21 +821,55 @@ export class DuelEngineService {
 
   /** Oyuncunun gördüğü durum; okurken de maç sunucu saatine taşınır. */
   async state(matchId: string, userId: string): Promise<DuelStateForUser> {
-    return this.withMatch(matchId, async (tx, match, now) => {
-      const ben = await tx.duelParticipant.findUnique({
-        where: { matchId_userId: { matchId, userId } },
-      });
-      if (!ben || ben.kickedAt) throw new ForbiddenException('Bu maçı göremezsin.');
-      const snap = await this.snapshot(tx, match, now);
-      const benim =
-        match.phase === 'question'
-          ? await tx.duelAnswer.findUnique({
-              where: { matchId_index_userId: { matchId, index: match.currentIndex, userId } },
-              select: { optionId: true },
-            })
-          : null;
-      return { match, result: { ...snap, myOptionId: benim?.optionId ?? null } };
-    });
+    // Hızlı yol (yoklamaların neredeyse tamamı): maçın ilerlemesi gerekmiyorsa satır KİLİDİ
+    // alınmaz. Sekiz oyunculu salonda herkes saniyede bir yoklar; hepsini maç kilidinde sıraya
+    // sokmak bağlantı havuzunu (Supavisor 15) boşuna meşgul ederdi. Tutarlı tek görüntü için
+    // salt okunur RepeatableRead işlemi: araya giren bir soru kapanışı yarım görünmez.
+    const hizli = await this.prisma.$transaction(
+      async (tx) => {
+        const match = await tx.duelMatch.findUnique({ where: { id: matchId } });
+        if (!match) throw new NotFoundException('Maç bulunamadı.');
+        const now = new Date();
+        if (this.dueForAdvance(match, now)) return null;
+        return this.stateFor(tx, match, userId, now);
+      },
+      { isolationLevel: Prisma.TransactionIsolationLevel.RepeatableRead },
+    );
+    if (hizli) return hizli;
+    // Süre dolmuş: maç kilitlenir, sunucu saatine taşınır (soru kapanır / maç biter), yayınlanır.
+    return this.withMatch(matchId, async (tx, match, now) => ({
+      match,
+      result: await this.stateFor(tx, match, userId, now),
+    }));
+  }
+
+  /** Zamanla ilerlemesi gereken bir faz geçişi bekliyor mu? (Erken kapanış cevap yazılırken işlenir.) */
+  private dueForAdvance(match: DuelMatch, now: Date): boolean {
+    if (!YASAYAN.includes(match.phase)) return false;
+    return advance(engineState(match), engineRules(match), now.getTime(), false).events.length > 0;
+  }
+
+  private async stateFor(
+    tx: Tx,
+    match: DuelMatch,
+    userId: string,
+    now: Date,
+  ): Promise<DuelStateForUser> {
+    const snap = await this.snapshot(tx, match, now);
+    // Atılan oyuncu görüntüde yoktur (snapshot kickedAt'i eler): ayrı sorgu gerekmez.
+    if (!snap.players.some((p) => p.userId === userId)) {
+      throw new ForbiddenException('Bu maçı göremezsin.');
+    }
+    const benim =
+      match.phase === 'question'
+        ? await tx.duelAnswer.findUnique({
+            where: {
+              matchId_index_userId: { matchId: match.id, index: match.currentIndex, userId },
+            },
+            select: { optionId: true },
+          })
+        : null;
+    return { ...snap, myOptionId: benim?.optionId ?? null };
   }
 
   /** Herkese aynı giden anlık görüntü: cevap anahtarı ve seçilen şıklar soru kapanınca eklenir. */

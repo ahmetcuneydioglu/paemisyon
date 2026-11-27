@@ -55,7 +55,10 @@ export function useDuelMatch(matchId: string | null) {
       if (s.phase === "lobby") return channelUp ? 6_000 : 2_000;
       return channelUp ? 4_000 : 1_200;
     },
-    retry: (count, error) => !(error instanceof ApiError && error.status < 500) && count < 3,
+    // Ağ kopması: maç ekranı açık kaldıkça 1,5 sn arayla SÜREKLİ yeniden dener (bağlanınca kaldığı
+    // yerden devam eder). 4xx yinelenmez; 5xx üç kez.
+    retry: (count, error) => (error instanceof NetworkError ? true : !(error instanceof ApiError && error.status < 500) && count < 3),
+    retryDelay: 1_500,
   });
   const state = query.data;
 
@@ -116,7 +119,9 @@ export function useDuelMatch(matchId: string | null) {
     },
   });
 
-  const offline = query.isError && query.error instanceof NetworkError;
+  // İLK başarısız denemede bildir: `isError` ancak bütün denemeler bitince dolar; ağ koptuğunda
+  // denemeler bitmediği için uyarı hiç çıkmıyordu (27 Kas 2026 simülatör turu).
+  const offline = query.failureCount > 0 && query.failureReason instanceof NetworkError;
   const connection: DuelConnection = offline ? "offline" : channelUp ? "live" : "polling";
   const gone = query.isError && query.error instanceof ApiError && (query.error.status === 403 || query.error.status === 404);
 
