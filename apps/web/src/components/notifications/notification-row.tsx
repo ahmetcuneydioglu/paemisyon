@@ -2,8 +2,7 @@
 
 import { useRouter } from "next/navigation";
 import {
-  Bell, BookOpen, Calendar, ClipboardList, Flag, Flame, Mail, Medal, ShieldCheck, Sun, Trophy, BarChart3,
-} from "lucide-react";
+  Bell, BookOpen, Calendar, ClipboardList, Flag, Flame, Mail, Medal, ShieldCheck, Sun, Trophy, BarChart3, Swords } from "lucide-react";
 import type { ComponentType } from "react";
 import { apiClient } from "@/lib/api-client";
 import { cn } from "@/lib/cn";
@@ -11,7 +10,7 @@ import { relativeTime, safeWebPath, type InboxItem, type NotificationCategory } 
 
 const ICON: Record<NotificationCategory, ComponentType<{ size?: number; strokeWidth?: number; className?: string }>> = {
   daily_question: Sun, study_reminder: Bell, streak: Flame, exam: ClipboardList, exam_countdown: Calendar,
-  new_content: BookOpen, achievement: Medal, statistics: BarChart3, leaderboard: Trophy,
+  new_content: BookOpen, achievement: Medal, statistics: BarChart3, leaderboard: Trophy, duel: Swords,
   question_report: Flag, marketing: Mail, system: ShieldCheck,
 };
 

@@ -14,6 +14,8 @@ import { randomUUID } from 'node:crypto';
 import { PrismaService } from '../src/infra/prisma/prisma.service';
 import { SETTING_KEYS, SettingsService } from '../src/infra/settings/settings.service';
 import type { AuthenticatedUser } from '../src/modules/auth/auth.types';
+import { BadgeService } from '../src/modules/coach/badge.service';
+import { rankScore } from '../src/modules/coach/rank.logic';
 import { DUEL_RULES } from '../src/modules/duel/duel.config';
 import { DuelEngineService } from '../src/modules/duel/duel-engine.service';
 import { DuelQuestionsService } from '../src/modules/duel/duel-questions.service';
@@ -31,9 +33,20 @@ const prisma = new PrismaService();
 const yayinlar: DuelBroadcast[] = [];
 const realtime = { send: async (m: DuelBroadcast[]) => void yayinlar.push(...m) };
 const settings = new SettingsService(prisma);
-const engine = new DuelEngineService(prisma, realtime as never);
+const badges = new BadgeService(prisma);
+const engine = new DuelEngineService(prisma, realtime as never, badges);
 const questions = new DuelQuestionsService(prisma);
-const duel = new DuelService(prisma, settings, engine, questions);
+/** Bildirim kuyruğunun yerine kayıt tutan sahte: karar akışı (tercih, tavan) ayrı sınanır. */
+const bildirimler: {
+  userId: string;
+  category: string;
+  title: string;
+  dedupeKey?: string | null;
+}[] = [];
+const notifications = {
+  enqueue: async (i: (typeof bildirimler)[number]) => void bildirimler.push(i),
+};
+const duel = new DuelService(prisma, settings, engine, questions, notifications as never);
 const sweeper = new DuelSweeperService(prisma, engine);
 
 let gecen = 0;
@@ -124,6 +137,9 @@ async function tohum() {
   for (let i = 0; i < 3; i++) await soruEkle(dar.id, n++); // yetersiz havuz
   for (let i = 0; i < 12; i++) await soruEkle(dar.id, n++, 4); // dört şıklı: düelloya GİRMEZ
 
+  for (const key of ['user', 'admin', 'beta']) {
+    await prisma.role.upsert({ where: { key }, update: {}, create: { key, name: key } });
+  }
   await settings.set(SETTING_KEYS.duelEnabled, 'true');
   await settings.set(SETTING_KEYS.duelFreeDailyLimit, '0');
 }
@@ -134,7 +150,13 @@ async function kullanici(
   isPremium = false,
 ): Promise<AuthenticatedUser> {
   const u = await prisma.user.create({
-    data: { email: `${randomUUID()}@sinama.local`, displayName: ad, preferredModuleId: mod },
+    // duelSeenAt: düello ekranını açmış sayılır (açmayan kullanıcı davet alamaz).
+    data: {
+      email: `${randomUUID()}@sinama.local`,
+      displayName: ad,
+      preferredModuleId: mod,
+      duelSeenAt: new Date(),
+    },
   });
   return { id: u.id, email: u.email, roles: [], isPremium };
 }
@@ -411,9 +433,13 @@ async function main() {
     ok(cokSonra === null, 'uzun süre sonra: maç sunucu saatine göre çoktan bitmiş');
     const son = await duel.state(b, matchId);
     ok(son.phase === 'finished', 'kimse bağlı değilken maç kendi kendine bitti');
+    // Eşzamanlı iki cevaptan hangisinin kabul edildiği yarışa bağlı: sonuç ona göre beklenir.
+    const kabul = await prisma.duelAnswer.findFirstOrThrow({
+      where: { matchId, index: 0, userId: a.id },
+    });
     ok(
-      son.players.find((p) => p.userId === a.id)?.outcome === 'win',
-      'tek doğru cevabı veren kazandı',
+      son.players.find((p) => p.userId === a.id)?.outcome === (kabul.isCorrect ? 'win' : 'draw'),
+      'sonuç kabul edilen cevaba göre (doğruysa galibiyet, değilse beraberlik)',
     );
 
     console.log('\n10) İki oyuncu son soruyu aynı anda tamamlar');
@@ -866,7 +892,11 @@ async function main() {
     );
     ok(hafta.pointsLabel === 'net puan' && tum.pointsLabel === 'lig', 'sütun adı sunucudan');
     const salon = await duel.leaderboard(ben, 'room', 'all', 'all');
-    ok(salon.top.length >= 3 && salon.top[0].wins === 1, 'salon sıralaması ayrı tutulur');
+    ok(
+      salon.top.length >= 3 &&
+        salon.top.every((r, i) => i === 0 || salon.top[i - 1].points >= r.points),
+      'salon sıralaması ayrı tutulur',
+    );
     const diger = await kullanici('Öteki Kurumlu', digerModuleId);
     ok(
       (await duel.leaderboard(diger, 'duel', 'all', 'module')).top.length === 0,
@@ -915,6 +945,148 @@ async function main() {
     ok((await duel.blocks(hedef)).length === 1, 'engellenenler listesi');
     await duel.unblock(hedef, ben.id);
     ok((await duel.players(ben, 'zeyn')).items.length === 1, 'engel kalkınca yeniden görünür');
+  }
+
+  console.log('\n   Aşama 4: XP rütbeye, rozetler, haftanın lideri');
+  {
+    const kazanan = await prisma.user.findFirstOrThrow({ where: { displayName: 'Kazanan Aday' } });
+    const xp = await prisma.xpEvent.aggregate({
+      where: { userId: kazanan.id },
+      _sum: { amount: true },
+    });
+    ok(xp._sum.amount === 60, 'XP defterinde galibiyet +60');
+    ok(rankScore(0, 0, xp._sum.amount ?? 0) === 60, "düello XP'si rütbe puanına eklenir");
+    const rozet = await prisma.userBadge.findMany({ where: { userId: kazanan.id } });
+    ok(
+      rozet.some((r) => r.badgeKey === 'duel_win_1'),
+      'maç bitince "İlk Galibiyet" rozeti verildi',
+    );
+    ok(!rozet.some((r) => r.badgeKey === 'duel_win_5'), 'eşiği dolmayan rozet verilmedi');
+    const baskan = await prisma.user.findFirstOrThrow({ where: { displayName: 'Başkan Bey' } });
+    ok(
+      (await prisma.userBadge.count({
+        where: { userId: baskan.id, badgeKey: 'room_champion' },
+      })) === 1,
+      'salon birincisine "Salon Şampiyonu" rozeti',
+    );
+    const vitrin = await badges.listForUser(kazanan.id);
+    const seri = vitrin.items.find((b) => b.key === 'duel_streak_5');
+    ok(
+      seri?.earned === false && seri.progress === 1 && seri.threshold === 5,
+      'vitrin: kilitli rozette ilerleme 1/5',
+    );
+
+    // Haftanın lideri: geçen haftaya üç bitmiş maç taşı
+    const lider = await kullanici('Haftanın Adamı');
+    const rakip = await kullanici('Haftalık Rakip');
+    for (let i = 0; i < 3; i++) {
+      const m = await eslesmisMac(lider, rakip);
+      await duel.leave(rakip, m);
+      await prisma.duelMatch.update({
+        where: { id: m },
+        data: { finishedAt: new Date(Date.now() - 8 * 86_400_000 + i * 60_000) },
+      });
+    }
+    // sınama haftası sınırına takılmasın: "şimdi"yi bir hafta sonrası say
+    const buHafta = await sweeper.awardWeeklyLeaders(new Date());
+    const gecenHafta = await sweeper.awardWeeklyLeaders(new Date(Date.now() - 7 * 86_400_000));
+    const liderRozeti = await prisma.userBadge.count({
+      where: { userId: lider.id, badgeKey: 'duel_weekly' },
+    });
+    ok(
+      liderRozeti === 1,
+      `haftanın lideri rozeti verildi (bu hafta ${buHafta}, önceki ${gecenHafta})`,
+    );
+    await sweeper.awardWeeklyLeaders(new Date());
+    await sweeper.awardWeeklyLeaders(new Date(Date.now() - 7 * 86_400_000));
+    ok(
+      (await prisma.userBadge.count({ where: { badgeKey: 'duel_weekly', userId: lider.id } })) ===
+        1,
+      'yeniden çalıştırmak ikinci rozet yazmaz',
+    );
+    ok(
+      (await prisma.userBadge.count({ where: { badgeKey: 'duel_weekly', userId: rakip.id } })) ===
+        0,
+      'galibiyeti olmayan lider olmaz',
+    );
+  }
+
+  console.log('\n   Aşama 4: arkadaşlık, bulunabilirlik, davet bildirimi');
+  {
+    const a = await kullanici('Arda Yılmaz');
+    const b = await kullanici('Beren Çelik');
+    ok((await duel.friendRequest(a, b.id)).state === 'sent', 'arkadaşlık isteği gönderildi');
+    ok((await duel.friendRequest(a, b.id)).state === 'sent', 'aynı istek ikinci kez satır açmaz');
+    ok((await duel.hub(b)).friendRequestCount === 1, 'merkezde bekleyen istek sayısı');
+    ok((await duel.friends(b)).incoming[0]?.name === 'Arda Y.', 'gelen istek listede');
+    ok(
+      (await hata(() => duel.friendRespond(a, b.id, true)))?.status === 404,
+      'isteği gönderen kendi isteğini kabul edemez',
+    );
+    ok((await duel.friendRespond(b, a.id, true)).state === 'friend', 'kabul edildi');
+    ok((await duel.friends(a)).friends[0]?.friend === 'friend', 'iki taraf için arkadaş');
+    const c = await kullanici('Cem Aksoy');
+    const cift = await Promise.all([duel.friendRequest(a, c.id), duel.friendRequest(c, a.id)]);
+    ok(
+      (await prisma.friendship.count({ where: { OR: [{ userAId: c.id }, { userBId: c.id }] } })) ===
+        1,
+      'karşılıklı eşzamanlı istek tek satır',
+    );
+    ok(
+      cift.some((x) => x.state === 'friend') ||
+        (await duel.friendRequest(c, a.id)).state !== 'none',
+      'karşılıklı istek arkadaşlığa döner',
+    );
+
+    await duel.updateSettings(b, { discoverable: false });
+    ok(
+      (await duel.players(c, 'beren')).items.length === 0,
+      'bulunabilirlik kapalı: yabancı aramada göremez',
+    );
+    ok((await duel.players(a, 'beren')).items[0]?.friend === 'friend', 'arkadaşı yine görür');
+    ok((await duel.hub(b)).settings.discoverable === false, 'tercih merkezde okunur');
+
+    const eski = await prisma.user.create({
+      data: {
+        email: `${randomUUID()}@sinama.local`,
+        displayName: 'Eski Sürüm',
+        preferredModuleId: moduleId,
+      },
+    });
+    ok(
+      (await duel.players(a, 'eski')).items.length === 0,
+      'düello ekranını hiç açmamış kullanıcı aramada çıkmaz',
+    );
+    ok((await hata(() => duel.invite(a, eski.id)))?.status === 403, 've davet alamaz');
+
+    bildirimler.length = 0;
+    await duel.invite(a, b.id); // b az önce merkez açtı: çevrimiçi
+    ok(bildirimler.length === 0, 'çevrimiçi kişiye push gönderilmez (daveti canlı görür)');
+    await prisma.user.update({
+      where: { id: c.id },
+      data: { duelSeenAt: new Date(Date.now() - 10 * 60_000) },
+    });
+    const dv = await duel.invite(a, c.id);
+    ok(
+      bildirimler.length === 1 &&
+        bildirimler[0].userId === c.id &&
+        bildirimler[0].category === 'duel',
+      'çevrimdışı kişiye düello bildirimi kuyruklandı',
+    );
+    ok(bildirimler[0].dedupeKey === `duel-invite:${dv.id}`, 'bildirim davet başına tekil');
+    ok(Date.parse(dv.expiresAt) - Date.now() > 5 * 60_000, 'çevrimdışı davet 10 dakika geçerli');
+
+    await duel.block(b, a.id);
+    ok(
+      (await duel.friends(a)).friends.every((f) => f.userId !== b.id),
+      'engelleyince arkadaşlık düşer',
+    );
+    ok(
+      (await hata(() => duel.friendRequest(a, b.id)))?.status === 403,
+      'engelleyene istek gönderilemez',
+    );
+    await duel.unfriend(a, c.id);
+    ok((await duel.friends(a)).friends.length === 0, 'arkadaşlıktan çıkarma');
   }
 
   console.log('\n   Veritabanı kısıtları');

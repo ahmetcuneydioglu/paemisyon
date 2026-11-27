@@ -35,7 +35,10 @@ export const DUEL_RULES = {
     /** Bu süre sonunda istemci "rakip bulunamadı, tekrar dene" gösterir. */
     searchTimeoutMs: 45_000,
   },
-  invite: { ttlMs: 60_000 },
+  /** Çevrimiçi kişiye davet 60 sn; çevrimdışıysa bildirimle gider ve 10 dk geçerlidir. */
+  invite: { ttlMs: 60_000, offlineTtlMs: 10 * 60_000 },
+  /** Düello ekranı açıkken yarım dakikada bir sinyal gelir; bu süre içinde sinyali olan çevrimiçidir. */
+  onlineMs: 90_000,
   code: { ttlMs: 10 * 60_000, length: 6 },
   /** Bu kadar süre başlamayan lobi süpürücü tarafından kapatılır. */
   lobbyTtlMs: 15 * 60_000,

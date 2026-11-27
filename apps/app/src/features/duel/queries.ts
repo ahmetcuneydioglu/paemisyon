@@ -1,6 +1,7 @@
 import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
 import { api } from "@/lib/api";
 import type {
+  DuelFriends,
   DuelHub,
   DuelLeaderboard,
   DuelOpenRoom,
@@ -20,6 +21,7 @@ export const duelKeys = {
   match: (id: string) => ["duel", "match", id] as const,
   players: (q: string) => ["duel", "players", q] as const,
   rooms: ["duel", "rooms"] as const,
+  friends: ["duel", "friends"] as const,
   leaderboard: (mode: string, period: string, scope: string) => ["duel", "leaderboard", mode, period, scope] as const,
   review: (id: string) => ["duel", "review", id] as const,
 };
@@ -41,6 +43,10 @@ export function useDuelPlayers(q: string, enabled = true) {
     staleTime: 5_000,
     refetchInterval: term ? false : 30_000,
   });
+}
+
+export function useDuelFriends(enabled = true) {
+  return useQuery({ queryKey: duelKeys.friends, queryFn: () => api<DuelFriends>("/me/duel/friends"), enabled, staleTime: 5_000, refetchInterval: 30_000 });
 }
 
 export function useOpenRooms(enabled = true) {
@@ -77,6 +83,12 @@ export function useDuelActions() {
   const refresh = () => void qc.invalidateQueries({ queryKey: duelKeys.hub });
   const post = <T,>(path: string, body?: unknown) => api<T>(path, { method: "POST", body: body ?? {} });
   const opts = { onSettled: refresh };
+  /** Arkadaşlık değişince merkez (istek sayısı), arkadaş listesi ve oyuncu aramaları tazelenir. */
+  const people = () => {
+    refresh();
+    void qc.invalidateQueries({ queryKey: duelKeys.friends });
+    void qc.invalidateQueries({ queryKey: ["duel", "players"] });
+  };
   return {
     enqueue: useMutation({ mutationFn: (scope: DuelScope) => post<DuelQueueStatus>("/me/duel/queue", scopeBody(scope)), ...opts }),
     cancelQueue: useMutation({ mutationFn: () => api<DuelQueueStatus>("/me/duel/queue", { method: "DELETE" }), ...opts }),
@@ -111,6 +123,10 @@ export function useDuelActions() {
       mutationFn: (v: { id: string; userId: string }) => post<{ id: string }>(`/me/duel/rooms/${v.id}/invitations`, { userId: v.userId }),
       onSettled: () => void qc.invalidateQueries({ queryKey: ["duel", "players"] }),
     }),
+    friendRequest: useMutation({ mutationFn: (userId: string) => post<{ state: string }>("/me/duel/friends", { userId }), onSettled: people }),
+    friendRespond: useMutation({ mutationFn: (v: { userId: string; accept: boolean }) => post<{ state: string }>(`/me/duel/friends/${v.userId}/respond`, { accept: v.accept }), onSettled: people }),
+    unfriend: useMutation({ mutationFn: (userId: string) => api<{ state: string }>(`/me/duel/friends/${userId}`, { method: "DELETE" }), onSettled: people }),
+    setDiscoverable: useMutation({ mutationFn: (discoverable: boolean) => api<{ discoverable: boolean }>("/me/duel/settings", { method: "PATCH", body: { discoverable } }), ...opts }),
     leave: useMutation({ mutationFn: (id: string) => post<{ left: boolean }>(`/me/duel/matches/${id}/leave`), ...opts }),
     block: useMutation({ mutationFn: (userId: string) => post<{ blocked: boolean }>("/me/duel/blocks", { userId }), onSettled: () => void qc.invalidateQueries({ queryKey: duelKeys.all }) }),
   };

@@ -4,7 +4,9 @@
  */
 export type NotificationCategory =
   | "daily_question" | "study_reminder" | "streak" | "exam" | "exam_countdown" | "new_content"
-  | "achievement" | "statistics" | "leaderboard" | "question_report" | "marketing" | "system";
+  | "achievement" | "statistics" | "leaderboard" | "question_report" | "marketing" | "system"
+  /** Düello daveti (Doc 59): yalnız mobil push; web kutusuna düşmez. */
+  | "duel";
 
 export type InboxItem = {
   id: string;
@@ -53,6 +55,7 @@ export const CATEGORY_HINT: Record<NotificationCategory, string> = {
   achievement: "Yalnız uygulama içinde",
   statistics: "Pazartesi 09.00 · e-posta ve kutu",
   leaderboard: "Akşam 20.30, günde bir",
+  duel: "Mobil uygulamada; biri seni düelloya çağırınca",
   question_report: "Bildirdiğin soru sonuçlanınca",
   marketing: "Yalnız e-posta; ayrı rıza",
   system: "Hesap, bakım, güvenlik · kapatılamaz",

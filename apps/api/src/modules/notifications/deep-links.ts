@@ -28,6 +28,8 @@ export type DeepLinkTarget =
   | 'flashcards'
   /** Mağaza (uygulama güncellemesi): cihaz kendi platformunun mağazasını açar; mobil sözlüğü `store`. */
   | 'app_update'
+  /** Düello merkezi (Doc 59): bekleyen davet orada görünür; mobil sözlüğü `duello`. */
+  | 'duel'
   | 'home';
 
 export type DeepLink = { target: DeepLinkTarget; params?: Record<string, string> };
@@ -75,6 +77,8 @@ export const DEEP_LINKS: Record<DeepLinkTarget, Entry> = {
     minAppVersion: '2.0.0',
     minAppVersionOf: (v) => v,
   },
+  // Düello ekranları 2.1.0 ile mağazaya çıkar; eski uygulama kutuya düşer. Web'de düello yok.
+  duel: { route: () => 'duello', webPath: () => '/bugun', minAppVersion: '2.1.0' },
   daily_question: {
     route: () => 'daily-quiz',
     webPath: () => '/seans?mode=daily&source=notif',

@@ -1,11 +1,11 @@
 import { useEffect, useState } from "react";
 import { Pressable, View } from "react-native";
-import { BookOpen, Check, ChevronLeft, ChevronRight, Shuffle } from "lucide-react-native";
-import { AppText, Button, Card, Notice, Sheet, Skeleton, TextField } from "@/components/ui";
+import { BookOpen, Check, ChevronLeft, ChevronRight, Shuffle, UserPlus } from "lucide-react-native";
+import { AppText, Button, Card, IconButton, Notice, Sheet, Skeleton, TextField } from "@/components/ui";
 import { useCourses, useCourseTopics } from "@/features/catalog/queries";
 import { mmss } from "@/features/duel/clock";
-import { useDuelActions, useDuelHub, useDuelPlayers } from "@/features/duel/queries";
-import type { DuelScope } from "@/features/duel/types";
+import { useDuelActions, useDuelFriends, useDuelHub, useDuelPlayers } from "@/features/duel/queries";
+import type { DuelPlayerRow as DuelPlayerRowData, DuelScope } from "@/features/duel/types";
 import { useNow } from "@/lib/use-now";
 import { useTheme } from "@/theme/ThemeProvider";
 import { DuelPlayerRow } from "./duel";
@@ -121,6 +121,7 @@ export function DuelCodeSheet({ visible, onClose, onDismissed, onCreate, onJoin,
  * Arama en az iki harfle; boşken çevrimiçi olanlar listelenir. Bekleyen davet satırda geri sayar.
  */
 export function DuelInviteSheet({ visible, onClose, scope, roomId }: { visible: boolean; onClose: () => void; scope: DuelScope; roomId?: string }) {
+  const { space } = useTheme();
   const [q, setQ] = useState("");
   const [term, setTerm] = useState("");
   const [hata, setHata] = useState<string | null>(null);
@@ -129,22 +130,90 @@ export function DuelInviteSheet({ visible, onClose, scope, roomId }: { visible: 
     return () => clearTimeout(t);
   }, [q]);
   const list = useDuelPlayers(term, visible);
+  const friends = useDuelFriends(visible);
   const hub = useDuelHub(visible);
   const act = useDuelActions();
   const now = useNow(1000, visible);
   const outgoing = hub.data?.invitations.outgoing ?? [];
   const busy = act.invite.isPending || act.inviteToRoom.isPending;
+  const onError = (e: Error) => setHata(e.message);
   const call = (userId: string) => {
     setHata(null);
-    const onError = (e: Error) => setHata(e.message);
     if (roomId) act.inviteToRoom.mutate({ id: roomId, userId }, { onError });
     else act.invite.mutate({ toUserId: userId, scope }, { onError });
   };
+  const row = (p: DuelPlayerRowData, i: number) => {
+    const bekleyen = outgoing.find((d) => d.userId === p.userId);
+    const kalan = bekleyen ? Date.parse(bekleyen.expiresAt) - now : 0;
+    const davetli = !!bekleyen && kalan > 0;
+    const durum = p.inMatch ? "Şu an maçta" : `${p.online ? "Çevrimiçi" : "Çevrimdışı · bildirim gider"} · Lig ${p.rating.toLocaleString("tr-TR")}`;
+    return (
+      <DuelPlayerRow
+        key={p.userId}
+        divider={i > 0}
+        name={p.name}
+        avatarUrl={p.avatarUrl}
+        online={p.online}
+        noteTone={davetli ? "accent" : "soft"}
+        note={davetli ? `Davet gönderildi · ${mmss(kalan)}` : p.friend === "sent" ? `${durum} · istek gönderildi` : durum}
+        action={
+          <View style={{ flexDirection: "row", alignItems: "center", gap: space.s1 }}>
+            {p.friend === "none" ? <IconButton icon={UserPlus} label={`${p.name} arkadaş olarak ekle`} variant="ghost" onPress={() => act.friendRequest.mutate(p.userId, { onError })} /> : null}
+            {davetli ? (
+              <Button title="Geri al" size="sm" variant="ghost" onPress={() => act.cancelInvite.mutate(bekleyen.id)} />
+            ) : (
+              <Button title="Çağır" size="sm" variant={p.online ? "primary" : "secondary"} disabled={busy || p.inMatch} onPress={() => call(p.userId)} />
+            )}
+          </View>
+        }
+      />
+    );
+  };
   const items = list.data?.items ?? [];
+  const incoming = friends.data?.incoming ?? [];
+  const dostlar = friends.data?.friends ?? [];
   return (
     <Sheet visible={visible} onClose={onClose} title={roomId ? "Salona çağır" : "Arkadaşını çağır"}>
       <TextField label="Ada göre ara" placeholder="En az iki harf" value={q} onChangeText={setQ} autoCorrect={false} returnKeyType="search" />
       {hata ? <Notice tone="error">{hata}</Notice> : null}
+      {!term && incoming.length > 0 ? (
+        <>
+          <AppText variant="label" tone="subtle">
+            Arkadaşlık istekleri
+          </AppText>
+          <Card style={{ padding: 0, gap: 0 }}>
+            {incoming.map((p, i) => (
+              <DuelPlayerRow
+                key={p.userId}
+                divider={i > 0}
+                name={p.name}
+                avatarUrl={p.avatarUrl}
+                online={p.online}
+                note="Arkadaşlık isteği"
+                action={
+                  <View style={{ flexDirection: "row", gap: space.s1 }}>
+                    <Button title="Reddet" size="sm" variant="ghost" onPress={() => act.friendRespond.mutate({ userId: p.userId, accept: false })} />
+                    <Button title="Kabul et" size="sm" onPress={() => act.friendRespond.mutate({ userId: p.userId, accept: true }, { onError })} />
+                  </View>
+                }
+              />
+            ))}
+          </Card>
+        </>
+      ) : null}
+      {!term && dostlar.length > 0 ? (
+        <>
+          <AppText variant="label" tone="subtle">
+            Arkadaşların
+          </AppText>
+          <Card style={{ padding: 0, gap: 0 }}>{dostlar.map(row)}</Card>
+        </>
+      ) : null}
+      {!term ? (
+        <AppText variant="label" tone="subtle">
+          Şu an çevrimiçi
+        </AppText>
+      ) : null}
       {term.length === 1 ? (
         <AppText variant="bodySm" tone="soft">
           Aramak için en az iki harf yaz.
@@ -156,33 +225,10 @@ export function DuelInviteSheet({ visible, onClose, scope, roomId }: { visible: 
           {term ? "Bu adla kendi sınavından kimse bulunamadı." : "Şu an çevrimiçi kimse yok. Adını yazarak arayabilirsin; çevrimdışıysa davet bildirim olarak gider."}
         </AppText>
       ) : (
-        <Card style={{ padding: 0, gap: 0 }}>
-          {items.map((p, i) => {
-            const bekleyen = outgoing.find((d) => d.userId === p.userId);
-            const kalan = bekleyen ? Date.parse(bekleyen.expiresAt) - now : 0;
-            return (
-              <DuelPlayerRow
-                key={p.userId}
-                divider={i > 0}
-                name={p.name}
-                avatarUrl={p.avatarUrl}
-                online={p.online}
-                noteTone={bekleyen && kalan > 0 ? "accent" : "soft"}
-                note={bekleyen && kalan > 0 ? `Davet gönderildi · ${mmss(kalan)}` : p.inMatch ? "Şu an maçta" : `${p.online ? "Çevrimiçi" : "Çevrimdışı · bildirim gider"} · Lig ${p.rating.toLocaleString("tr-TR")}`}
-                action={
-                  bekleyen && kalan > 0 ? (
-                    <Button title="Geri al" size="sm" variant="ghost" onPress={() => act.cancelInvite.mutate(bekleyen.id)} />
-                  ) : (
-                    <Button title="Çağır" size="sm" variant={p.online ? "primary" : "secondary"} disabled={busy || p.inMatch} onPress={() => call(p.userId)} />
-                  )
-                }
-              />
-            );
-          })}
-        </Card>
+        <Card style={{ padding: 0, gap: 0 }}>{items.filter((p) => term || p.friend !== "friend").map(row)}</Card>
       )}
       <AppText variant="bodySm" tone="subtle">
-        Yalnız kendi sınavının adayları çıkar. Aynı kişiye bekleyen ikinci davet gönderilmez.
+        Yalnız kendi sınavının, düelloyu açmış adayları çıkar. Aynı kişiye bekleyen ikinci davet gönderilmez.
       </AppText>
     </Sheet>
   );

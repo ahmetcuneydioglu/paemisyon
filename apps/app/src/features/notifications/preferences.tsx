@@ -20,7 +20,7 @@ import {
 const GROUPS: { title: string; keys: NotificationCategory[] }[] = [
   { title: "Günlük", keys: ["daily_question", "study_reminder", "streak"] },
   { title: "Deneme ve sınav", keys: ["exam", "exam_countdown"] },
-  { title: "İçerik ve ilerleme", keys: ["new_content", "achievement", "statistics", "leaderboard"] },
+  { title: "İçerik ve ilerleme", keys: ["new_content", "achievement", "statistics", "leaderboard", "duel"] },
   { title: "Hesap", keys: ["question_report", "system"] },
 ];
 

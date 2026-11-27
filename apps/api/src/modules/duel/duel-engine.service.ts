@@ -8,6 +8,7 @@ import {
 import { Prisma, type DuelKind, type DuelMatch, type DuelParticipant } from '@prisma/client';
 import { publicName } from '../../common/kisi-adi';
 import { PrismaService } from '../../infra/prisma/prisma.service';
+import { BadgeService } from '../coach/badge.service';
 import { SORU_OZETI_SELECT, soruOzeti } from '../quiz/soru-ozeti';
 import { DUEL_RULES, duelTopic, duelUserTopic } from './duel.config';
 import type { DuelScope, PickedQuestion } from './duel-questions.service';
@@ -126,6 +127,7 @@ export class DuelEngineService {
   constructor(
     private readonly prisma: PrismaService,
     private readonly realtime: DuelRealtimeService,
+    private readonly badges: BadgeService,
   ) {}
 
   // ── Kilit + işlem + yayın ────────────────────────────────────────────────
@@ -136,17 +138,30 @@ export class DuelEngineService {
     fn: (tx: Tx, match: DuelMatch, now: Date) => Promise<{ match: DuelMatch; result: T }>,
     now: Date = new Date(),
   ): Promise<T> {
-    const { result, snapshot, changed } = await this.prisma.$transaction(
+    const { result, snapshot, changed, justFinished } = await this.prisma.$transaction(
       async (tx) => {
         const kilitli = await this.lock(tx, matchId);
         const guncel = await this.sync(tx, kilitli, now);
         const { match, result } = await fn(tx, guncel, now);
         const changed = match.seq !== kilitli.seq;
-        return { result, changed, snapshot: changed ? await this.snapshot(tx, match, now) : null };
+        const justFinished = kilitli.phase !== 'finished' && match.phase === 'finished';
+        return {
+          result,
+          changed,
+          justFinished,
+          snapshot: changed ? await this.snapshot(tx, match, now) : null,
+        };
       },
       { timeout: 15_000 },
     );
     if (changed && snapshot) await this.publish(snapshot);
+    // Rozetler commit'ten SONRA: istatistik yazılmış olmalı. Hata maçı bozmaz; verme idempotent
+    // olduğundan kaçan rozet bir sonraki maçta (ya da tur bitişinde) telafi edilir.
+    if (justFinished && snapshot) {
+      await Promise.all(
+        snapshot.players.map((p) => this.badges.checkAndAward(p.userId).catch(() => [])),
+      );
+    }
     return result;
   }
 

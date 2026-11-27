@@ -83,9 +83,26 @@ Anlık görüntü (`DuelSnapshot`) herkese aynıdır: faz, sunucu saati, faz bit
      (açık tema) bot rakiple tam 1'e 1 maç, yanlış inceleme ve iki botla hızlı salon oynandı.
      Bu turda Realtime YOKTU (sahte auth): yalnız yoklama yolu sınandı.
 3. **Salon:** sunucu ve tasarım Aşama 2'de bitti; ekranlar 1'e 1 ile birlikte yazılacak.
-4. **Ödül ve sosyal:** sıralama ekranı, XP'nin rütbeye eklenmesi, rozetler (`BadgeKind` genişler),
-   profil istatistikleri, arkadaşlar, engelleme uçları, push (`NotificationCategory` yeni değer,
-   yalnız `NotificationsService.enqueue`).
+4. **Ödül ve sosyal — BİTTİ (27 Kas 2026), commit bekliyor.**
+   - İki eklemeli migration: `20261127010000_duello_odul` (BadgeKind ve NotificationCategory'ye
+     yeni değerler, `users.duel_seen_at`, `users.duel_discoverable`) ve `20261127010100_duello_rozetler`
+     (sekiz rozet). Enum değeri aynı işlemde kullanılamadığı için rozet satırları ayrı dosyada.
+   - XP: `rankScore`'a `bonusXp` eklendi; `xp_events` toplamı rütbe puanına (koç, liderlik) girer.
+     Lig puanı rütbeyi etkilemez.
+   - Rozetler: maç bitince commit'ten sonra `BadgeService.checkAndAward`; ölçü `duel_stats`.
+     "Haftanın Lideri" pazartesi 04.10'da modül başına (en az 3 maç), tekil anahtarla.
+     Bayrak kapalıyken düello rozetleri vitrinde yalnız kazanana görünür.
+   - Çevrimiçi ve aranabilirlik `duel_seen_at`'e bakar (düello ekranını açış): düellosu olmayan eski
+     sürüm kullanıcısı listelenmez, davet alamaz. `duel_discoverable` kapalıysa yalnız arkadaş görür.
+   - Bildirim: yeni kategori `duel` (yalnız push, isteğe bağlı, sessiz saatte düşer), hedef `duel`
+     (mobil `duello`, en az 2.1.0). Yalnız `NotificationsService.enqueue`; kişi düello ekranında
+     değilse gönderilir, davet o zaman 10 dakika geçerlidir.
+   - Arkadaşlık: istek, kabul/ret, çıkarma; karşılıklı istek kabul sayılır; engelleyince düşer.
+   - Mobil: istatistikte rozetler ve "Ada göre bulunabileyim" anahtarı; davet sayfasında istekler ve
+     arkadaşlar; 1'e 1 sonucunda rakibi ekleme; Ben'de "Düello istatistikleri" satırı.
+   - Doğrulama: `duel-e2e.ts` 179 kontrol; simülatörde rozet listesi, gizlilik anahtarı ve arkadaş
+     bölümleri görüldü. Push'un gerçekten teslimi, kabul/ret dokunuşları ve rozet verme anı ekranda
+     denenmedi; panel ve web yalnız tip denetiminden geçti.
 5. **Sağlamlaştırma:** yük sınaması, iki cihazlı tur, AX3 ve küçük ekran, koyu mod.
 
 ## 6. Canlıya geçiş (yapılmadı; sıra geldiğinde)

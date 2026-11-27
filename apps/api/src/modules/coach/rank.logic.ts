@@ -36,8 +36,14 @@ export const RANKS: ReadonlyArray<{ level: number; name: string; minScore: numbe
 /** Aktif gün katsayısı — süreklilik primi (Doc 24 §2: ilerleme kanıtı bileşik faizdir). */
 export const ACTIVE_DAY_POINTS = 15;
 
-export function rankScore(totalSolved: number, activeDays: number): number {
-  return Math.max(0, totalSolved) + ACTIVE_DAY_POINTS * Math.max(0, activeDays);
+/**
+ * `bonusXp`: XP defterindeki (`xp_events`) ödüller — düello ve salon (Doc 59). Rütbe puanına
+ * eklenir; rekabetçi lig puanı bundan AYRIDIR ve rütbeyi etkilemez.
+ */
+export function rankScore(totalSolved: number, activeDays: number, bonusXp = 0): number {
+  return (
+    Math.max(0, totalSolved) + ACTIVE_DAY_POINTS * Math.max(0, activeDays) + Math.max(0, bonusXp)
+  );
 }
 
 export function computeRank(score: number): RankInfo {

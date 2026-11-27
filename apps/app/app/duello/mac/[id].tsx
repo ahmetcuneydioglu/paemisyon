@@ -31,7 +31,7 @@ import {
 } from "@/components/domain";
 import { AppText, Button, Card, EmptyState, IconButton, Notice, Skeleton } from "@/components/ui";
 import { mmss, points, seconds1, signed } from "@/features/duel/clock";
-import { useDuelActions } from "@/features/duel/queries";
+import { useDuelActions, useDuelFriends } from "@/features/duel/queries";
 import type { DuelPlayer, DuelState } from "@/features/duel/types";
 import { useDuelClock, useDuelMatch } from "@/features/duel/use-duel-match";
 import { useMyId } from "@/features/duel/use-my-id";
@@ -377,6 +377,10 @@ function Result({ state, me, others, onClose }: { state: DuelState; me: DuelPlay
   const room = state.kind === "room";
   const opp = others[0];
   const wrong = me.wrongCount + me.blankCount;
+  // 1'e 1 sonunda rakibi arkadaş ekleme; zaten arkadaş ya da istek bekliyorsa düğme çizilmez.
+  const friends = useDuelFriends(!room && !!opp);
+  const tanidik = friends.data ? [...friends.data.friends, ...friends.data.incoming, ...friends.data.outgoing].some((f) => f.userId === opp?.userId) : true;
+  const arkadasEklenebilir = !room && !!opp && !tanidik;
   const win = me.outcome === "win";
   const iconColor = win || (room && (me.placement ?? 9) <= 3) ? colors.accentInk : colors.inkSoft;
   const review = () => router.push({ pathname: "/duello/inceleme/[id]", params: { id: state.matchId } });
@@ -389,6 +393,9 @@ function Result({ state, me, others, onClose }: { state: DuelState; me: DuelPlay
   ];
   const secondary = (
     <View style={{ flexDirection: "row", flexWrap: "wrap", gap: space.s2 }}>
+      {arkadasEklenebilir ? (
+        <Button style={{ flexGrow: 1, flexBasis: 140 }} size="sm" variant="secondary" title={act.friendRequest.isSuccess ? "İstek gönderildi" : `${opp!.name} ekle`} icon={<UserPlus size={18} color={colors.ink} />} disabled={act.friendRequest.isSuccess} loading={act.friendRequest.isPending} onPress={() => act.friendRequest.mutate(opp!.userId, { onError: (e) => Alert.alert("İstek gönderilemedi", e.message) })} />
+      ) : null}
       {wrong > 0 ? <Button style={{ flexGrow: 1, flexBasis: 140 }} size="sm" variant="secondary" title={`Yanlışlarım (${wrong})`} icon={<ScrollText size={18} color={colors.ink} />} onPress={review} /> : null}
       <Button style={{ flexGrow: 1, flexBasis: 140 }} size="sm" variant="secondary" title={room ? "Salondan çık" : "Düelloya dön"} onPress={onClose} />
     </View>

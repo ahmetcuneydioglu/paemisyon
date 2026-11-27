@@ -1,7 +1,7 @@
 /** Bildirim Merkezi tipleri — API (apps/api/src/modules/notifications) ile birebir. */
 export type Category =
   | 'daily_question' | 'study_reminder' | 'streak' | 'exam' | 'exam_countdown' | 'new_content'
-  | 'achievement' | 'statistics' | 'leaderboard' | 'question_report' | 'marketing' | 'system';
+  | 'achievement' | 'statistics' | 'leaderboard' | 'question_report' | 'marketing' | 'system' | 'duel';
 export type Channel = 'push' | 'inbox' | 'email';
 export type Priority = 'low' | 'normal' | 'high' | 'critical';
 export type AudienceMode = 'all' | 'segment' | 'users' | 'testers';
@@ -13,12 +13,14 @@ export const CATEGORY_LABEL: Record<Category, string> = {
   daily_question: 'Günün sorusu', study_reminder: 'Çalışma hatırlatması', streak: 'Seri', exam: 'Denemeler',
   exam_countdown: 'Sınav geri sayımı', new_content: 'Yeni içerik', achievement: 'Rozetler', statistics: 'Haftalık rapor',
   leaderboard: 'Sıralama', question_report: 'Soru bildirimleri', marketing: 'Kampanyalar', system: 'Sistem',
+  duel: 'Düello davetleri',
 };
 /** Kanal politikası (sunucudaki notification.categories.ts ile aynı; sunucu yine doğrular). */
 export const CATEGORY_CHANNELS: Record<Category, Channel[]> = {
   daily_question: ['push', 'inbox'], study_reminder: ['push'], streak: ['push', 'inbox'], exam: ['push', 'inbox', 'email'],
   exam_countdown: ['push', 'inbox'], new_content: ['push', 'inbox', 'email'], achievement: ['inbox'], statistics: ['inbox', 'email'],
   leaderboard: ['push', 'inbox'], question_report: ['push', 'inbox'], marketing: ['email'], system: ['push', 'inbox', 'email'],
+  duel: ['push'],
 };
 export const CHANNEL_LABEL: Record<Channel, string> = { push: 'Push', inbox: 'Kutu', email: 'E-posta' };
 export const PRIORITY_LABEL: Record<Priority, string> = { low: 'Düşük', normal: 'Normal', high: 'Yüksek', critical: 'Kritik (yalnız sistem)' };
@@ -125,6 +127,7 @@ export const TARGET_LABEL: Record<string, string> = {
   past_exam: 'Çıkmış sınavlar', statistics: 'Performans', plan: 'Planım', badges: 'Rozetler', membership: 'Üyelik',
   notifications: 'Bildirimler', settings_notifications: 'Bildirim tercihleri', flashcards: 'Bilgi kartları',
   app_update: 'Mağaza — uygulama güncellemesi (iOS App Store / Google Play)',
+  duel: 'Düello merkezi',
 };
 
 export const fmtDate = (iso: string | null | undefined) =>

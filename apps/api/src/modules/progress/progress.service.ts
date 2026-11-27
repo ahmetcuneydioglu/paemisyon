@@ -270,6 +270,7 @@ export class ProgressService {
         totalSolved: number;
         totalCorrect: number;
         totalSessions: number;
+        bonusXp: number;
         activeDays: number;
         badges: number;
         lastActive: string | null;
@@ -277,7 +278,7 @@ export class ProgressService {
     >();
     if (ids.length === 0) return map;
 
-    const [users, stats, usage, badges, streaks] = await Promise.all([
+    const [users, stats, usage, badges, streaks, bonus] = await Promise.all([
       this.prisma.user.findMany({
         where: { id: { in: ids } },
         select: { id: true, displayName: true, avatarUrl: true },
@@ -301,7 +302,14 @@ export class ProgressService {
         where: { userId: { in: ids } },
         select: { userId: true, lastActiveDate: true },
       }),
+      // Düello/salon XP'si (Doc 59): rütbe puanına eklenir.
+      this.prisma.xpEvent.groupBy({
+        by: ['userId'],
+        where: { userId: { in: ids } },
+        _sum: { amount: true },
+      }),
     ]);
+    const bonusBy = new Map(bonus.map((b) => [b.userId, b._sum.amount ?? 0]));
 
     const statsBy = new Map(stats.map((s) => [s.userId, s]));
     const usageBy = new Map(usage.map((u) => [u.userId, u]));
@@ -319,6 +327,7 @@ export class ProgressService {
         totalCorrect: s?.totalCorrect ?? 0,
         totalSessions: s?.totalSessions ?? 0,
         activeDays: usg?._count._all ?? 0,
+        bonusXp: bonusBy.get(u.id) ?? 0,
         badges: badgeBy.get(u.id) ?? 0,
         lastActive: toIso(usg?._max.usageDate) ?? toIso(streakBy.get(u.id)),
       });
@@ -336,7 +345,7 @@ export class ProgressService {
     const e = map.get(userId);
     const solved = e?.totalSolved ?? 0;
     const correct = e?.totalCorrect ?? 0;
-    const xp = rankScore(solved, e?.activeDays ?? 0);
+    const xp = rankScore(solved, e?.activeDays ?? 0, e?.bonusXp ?? 0);
     const rk = computeRank(xp);
     return {
       rank,
@@ -551,7 +560,9 @@ export class ProgressService {
         ORDER BY points DESC
         LIMIT 1`),
     ]);
-    const totalXp = (solvedAgg._sum.totalSolved ?? 0) + ACTIVE_DAY_POINTS * activeDayRows;
+    const duelXp =
+      (await this.prisma.xpEvent.aggregate({ _sum: { amount: true } }))._sum.amount ?? 0;
+    const totalXp = (solvedAgg._sum.totalSolved ?? 0) + ACTIVE_DAY_POINTS * activeDayRows + duelXp;
     return {
       totalUsers,
       todayQuizCount,

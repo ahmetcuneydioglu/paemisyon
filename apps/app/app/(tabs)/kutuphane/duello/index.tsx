@@ -224,7 +224,7 @@ export default function DuelloMerkez() {
                 </AppText>
               </View>
               <View style={{ flexDirection: "row", flexWrap: "wrap", gap: space.s3 }}>
-                <Button style={{ flexGrow: 1, flexBasis: 150 }} size="sm" variant="secondary" title="Arkadaşını çağır" icon={<Search size={18} color={colors.ink} />} disabled={hakBitti} onPress={cagir.open} />
+                <Button style={{ flexGrow: 1, flexBasis: 150 }} size="sm" variant="secondary" title={d.friendRequestCount ? `Arkadaşlar · ${d.friendRequestCount} istek` : "Arkadaşını çağır"} icon={<Search size={18} color={colors.ink} />} disabled={hakBitti} onPress={cagir.open} />
                 <Button style={{ flexGrow: 1, flexBasis: 150 }} size="sm" variant="secondary" title="Kodla oyna" icon={<Link2 size={18} color={colors.ink} />} disabled={hakBitti} onPress={() => (setKodHata(null), kod.open())} />
               </View>
             </>

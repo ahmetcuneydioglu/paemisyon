@@ -10,6 +10,7 @@ import { randomBytes } from 'node:crypto';
 import { gunBaslangici, haftaBaslangici } from '../../common/gun';
 import { publicName } from '../../common/kisi-adi';
 import { PrismaService } from '../../infra/prisma/prisma.service';
+import { NotificationsService } from '../notifications/notifications.service';
 import { SETTING_KEYS, SettingsService } from '../../infra/settings/settings.service';
 import type { AuthenticatedUser } from '../auth/auth.types';
 import {
@@ -39,6 +40,7 @@ export class DuelService {
     private readonly settings: SettingsService,
     private readonly engine: DuelEngineService,
     private readonly questions: DuelQuestionsService,
+    private readonly notifications: NotificationsService,
   ) {}
 
   // ── Yetki ────────────────────────────────────────────────────────────────
@@ -106,14 +108,24 @@ export class DuelService {
     await this.touch(user.id, now);
     // Önce aktif maç: süresi dolmuşsa burada kapanır, istatistik güncel okunur.
     const matchId = (await this.active(user))?.matchId ?? null;
-    const [hak, stats, davetler] = await Promise.all([
+    const [hak, stats, davetler, ben, istekSayisi] = await Promise.all([
       this.daily(user, now),
       this.prisma.duelStats.findUnique({ where: { userId: user.id } }),
       this.invitations(user.id, now),
+      this.prisma.user.findUnique({ where: { id: user.id }, select: { duelDiscoverable: true } }),
+      this.prisma.friendship.count({
+        where: {
+          status: 'pending',
+          requestedById: { not: user.id },
+          OR: [{ userAId: user.id }, { userBId: user.id }],
+        },
+      }),
     ]);
     const oynanan = stats ? stats.wins + stats.losses + stats.draws : 0;
     return {
       daily: { ...hak, isPremium: user.isPremium },
+      settings: { discoverable: ben?.duelDiscoverable ?? true },
+      friendRequestCount: istekSayisi,
       activeMatchId: matchId,
       invitations: davetler,
       stats: {
@@ -406,11 +418,12 @@ export class DuelService {
 
     const hedef = await this.prisma.user.findFirst({
       where: { id: toUserId, deletedAt: null, status: 'active' },
-      select: { preferredModuleId: true },
+      select: { preferredModuleId: true, duelSeenAt: true },
     });
-    // Engel, başka kurum ve olmayan kullanıcı aynı cevabı alır: engellendiğini öğrenemez.
+    // Engel, başka kurum, düellosu olmayan sürüm ve olmayan kullanıcı aynı cevabı alır.
     const ulasilamaz = new ForbiddenException('Bu kişiye şu an davet gönderilemiyor.');
-    if (!hedef || hedef.preferredModuleId !== moduleId) throw ulasilamaz;
+    if (!hedef || hedef.preferredModuleId !== moduleId || !hedef.duelSeenAt) throw ulasilamaz;
+    const cevrimici = hedef.duelSeenAt >= this.onlineSince(now);
     if (await this.engine.blocked(this.prisma, user.id, toUserId)) throw ulasilamaz;
 
     // Süresi geçmiş bekleyenler kapanır ki tekil indeks yeni davete yer açsın.
@@ -431,7 +444,9 @@ export class DuelService {
           toUserId,
           scopeKind: scope.kind,
           scopeId: scope.id,
-          expiresAt: new Date(now.getTime() + DUEL_RULES.invite.ttlMs),
+          expiresAt: new Date(
+            now.getTime() + (cevrimici ? DUEL_RULES.invite.ttlMs : DUEL_RULES.invite.offlineTtlMs),
+          ),
         },
       });
     } catch (err) {
@@ -439,6 +454,7 @@ export class DuelService {
       throw err;
     }
     await this.engine.notifyUsers([toUserId], 'invite', { invitationId: davet.id });
+    if (!cevrimici) await this.invitePush(user.id, toUserId, davet.id, false);
     return { id: davet.id, expiresAt: davet.expiresAt.toISOString() };
   }
 
@@ -822,7 +838,7 @@ export class DuelService {
       }),
       this.prisma.user.findFirst({
         where: { id: toUserId, deletedAt: null, status: 'active' },
-        select: { preferredModuleId: true },
+        select: { preferredModuleId: true, duelSeenAt: true },
       }),
     ]);
     if (!match || match.kind !== 'room' || match.phase !== 'lobby') {
@@ -830,7 +846,8 @@ export class DuelService {
     }
     if (!ben || ben.leftAt || ben.kickedAt) throw new ForbiddenException('Bu salonda değilsin.');
     const ulasilamaz = new ForbiddenException('Bu kişiye şu an davet gönderilemiyor.');
-    if (!hedef || hedef.preferredModuleId !== match.moduleId) throw ulasilamaz;
+    if (!hedef || hedef.preferredModuleId !== match.moduleId || !hedef.duelSeenAt) throw ulasilamaz;
+    const cevrimici = hedef.duelSeenAt >= this.onlineSince(now);
     if (await this.engine.blocked(this.prisma, user.id, toUserId)) throw ulasilamaz;
     await this.prisma.duelInvitation.updateMany({
       where: { status: 'pending', expiresAt: { lte: now }, fromUserId: user.id },
@@ -848,10 +865,14 @@ export class DuelService {
           matchId,
           scopeKind: match.scopeKind,
           scopeId: match.scopeId,
-          expiresAt: new Date(now.getTime() + DUEL_RULES.invite.ttlMs * 2),
+          expiresAt: new Date(
+            now.getTime() +
+              (cevrimici ? DUEL_RULES.invite.ttlMs * 2 : DUEL_RULES.invite.offlineTtlMs),
+          ),
         },
       });
       await this.engine.notifyUsers([toUserId], 'invite', { invitationId: d.id, roomId: matchId });
+      if (!cevrimici) await this.invitePush(user.id, toUserId, d.id, true);
       return { id: d.id, expiresAt: d.expiresAt.toISOString() };
     } catch (err) {
       if (tekilIhlal(err)) throw new ConflictException('Bu kişiye bekleyen bir davetin var.');
@@ -889,17 +910,28 @@ export class DuelService {
   // ── Oyuncular: arama, çevrimiçi, engel ───────────────────────────────────
 
   /** Çevrimiçi sayılma penceresi: merkez ekranı açıkken istemci yarım dakikada bir yoklar. */
-  private static readonly ONLINE_MS = 90_000;
-
-  /** Merkez/arama çağrıları "buradayım" sinyalidir; en çok 30 sn'de bir yazılır. */
+  /** Düello ekranı çağrıları "buradayım" sinyalidir; en çok 30 sn'de bir yazılır. */
   private async touch(userId: string, now: Date) {
     await this.prisma.user.updateMany({
       where: {
         id: userId,
-        OR: [{ lastActiveAt: null }, { lastActiveAt: { lt: new Date(now.getTime() - 30_000) } }],
+        OR: [{ duelSeenAt: null }, { duelSeenAt: { lt: new Date(now.getTime() - 30_000) } }],
       },
-      data: { lastActiveAt: now },
+      data: { duelSeenAt: now },
     });
+  }
+
+  private onlineSince(now: Date): Date {
+    return new Date(now.getTime() - DUEL_RULES.onlineMs);
+  }
+
+  /** Kabul edilmiş arkadaşlarımın kimlikleri. */
+  private async friendIds(userId: string): Promise<string[]> {
+    const rows = await this.prisma.friendship.findMany({
+      where: { status: 'accepted', OR: [{ userAId: userId }, { userBId: userId }] },
+      select: { userAId: true, userBId: true },
+    });
+    return rows.map((r) => (r.userAId === userId ? r.userBId : r.userAId));
   }
 
   /**
@@ -913,12 +945,17 @@ export class DuelService {
     await this.touch(user.id, now);
     const ara = (q ?? '').trim();
     if (ara && ara.length < 2) return { items: [], onlineCount: 0 };
-    const esik = new Date(now.getTime() - DuelService.ONLINE_MS);
+    const esik = this.onlineSince(now);
+    const arkadaslar = await this.friendIds(user.id);
     const where: Prisma.UserWhereInput = {
       id: { not: user.id },
       deletedAt: null,
       status: 'active',
       preferredModuleId: moduleId,
+      // Düello ekranını hiç açmamış kullanıcı (eski sürüm) listelenmez: daveti göremez.
+      duelSeenAt: { not: null },
+      // "Bulunabileyim" kapalıysa yalnız arkadaşları görür.
+      OR: [{ duelDiscoverable: true }, { id: { in: arkadaslar } }],
       blocksGiven: { none: { blockedId: user.id } },
       blocksReceived: { none: { blockerId: user.id } },
     };
@@ -926,20 +963,105 @@ export class DuelService {
       this.prisma.user.findMany({
         where: ara
           ? { ...where, displayName: { contains: ara, mode: 'insensitive' } }
-          : { ...where, lastActiveAt: { gte: esik } },
-        orderBy: [{ lastActiveAt: { sort: 'desc', nulls: 'last' } }],
+          : { ...where, duelSeenAt: { gte: esik } },
+        orderBy: [{ duelSeenAt: { sort: 'desc', nulls: 'last' } }],
         take: ara ? 20 : 30,
         select: {
           id: true,
           displayName: true,
           avatarUrl: true,
-          lastActiveAt: true,
+          duelSeenAt: true,
           duelStats: { select: { rating: true, wins: true, losses: true, draws: true } },
           duelParticipations: { where: { active: true }, select: { matchId: true }, take: 1 },
         },
       }),
-      this.prisma.user.count({ where: { ...where, lastActiveAt: { gte: esik } } }),
+      this.prisma.user.count({ where: { ...where, duelSeenAt: { gte: esik } } }),
     ]);
+    const [bekleyenDavet, istekler] = await Promise.all([
+      this.prisma.duelInvitation.findMany({
+        where: { fromUserId: user.id, status: 'pending', expiresAt: { gt: now } },
+        select: { toUserId: true },
+      }),
+      this.prisma.friendship.findMany({
+        where: { status: 'pending', OR: [{ userAId: user.id }, { userBId: user.id }] },
+        select: { userAId: true, userBId: true, requestedById: true },
+      }),
+    ]);
+    const bekleyen = new Set(bekleyenDavet.map((d) => d.toUserId));
+    const dost = new Set(arkadaslar);
+    const istek = new Map(
+      istekler.map((f) => [
+        f.userAId === user.id ? f.userBId : f.userAId,
+        f.requestedById === user.id ? ('sent' as const) : ('received' as const),
+      ]),
+    );
+    return {
+      onlineCount,
+      items: rows.map((u) => this.playerRow(u, { esik, bekleyen, dost, istek })),
+    };
+  }
+
+  private playerRow(
+    u: {
+      id: string;
+      displayName: string;
+      avatarUrl: string | null;
+      duelSeenAt: Date | null;
+      duelStats: { rating: number; wins: number; losses: number; draws: number } | null;
+      duelParticipations: unknown[];
+    },
+    ctx: {
+      esik: Date;
+      bekleyen: Set<string>;
+      dost: Set<string>;
+      istek: Map<string, 'sent' | 'received'>;
+    },
+  ) {
+    const oynanan = u.duelStats ? u.duelStats.wins + u.duelStats.losses + u.duelStats.draws : 0;
+    return {
+      userId: u.id,
+      name: publicName(u.displayName),
+      avatarUrl: u.avatarUrl,
+      online: !!u.duelSeenAt && u.duelSeenAt >= ctx.esik,
+      inMatch: u.duelParticipations.length > 0,
+      invited: ctx.bekleyen.has(u.id),
+      /** 'friend' | 'sent' (ben istedim) | 'received' (o istedi) | 'none' */
+      friend: ctx.dost.has(u.id) ? ('friend' as const) : (ctx.istek.get(u.id) ?? ('none' as const)),
+      rating: u.duelStats?.rating ?? DUEL_RULES.rating.start,
+      winRate: oynanan > 0 ? Math.round((u.duelStats!.wins / oynanan) * 100) : null,
+    };
+  }
+
+  // ── Arkadaşlar ───────────────────────────────────────────────────────────
+
+  private pair(a: string, b: string) {
+    return a < b ? { userAId: a, userBId: b } : { userAId: b, userBId: a };
+  }
+
+  /** Arkadaş listesi (çevrimiçi olanlar üstte) ve bekleyen istekler. */
+  async friends(user: AuthenticatedUser) {
+    await this.assertEnabled(user);
+    const now = new Date();
+    const esik = this.onlineSince(now);
+    const rows = await this.prisma.friendship.findMany({
+      where: { OR: [{ userAId: user.id }, { userBId: user.id }] },
+      orderBy: { createdAt: 'desc' },
+      take: 200,
+      select: { userAId: true, userBId: true, status: true, requestedById: true },
+    });
+    const idOf = (f: (typeof rows)[number]) => (f.userAId === user.id ? f.userBId : f.userAId);
+    const kisiler = await this.prisma.user.findMany({
+      where: { id: { in: rows.map(idOf) }, deletedAt: null, status: 'active' },
+      select: {
+        id: true,
+        displayName: true,
+        avatarUrl: true,
+        duelSeenAt: true,
+        duelStats: { select: { rating: true, wins: true, losses: true, draws: true } },
+        duelParticipations: { where: { active: true }, select: { matchId: true }, take: 1 },
+      },
+    });
+    const by = new Map(kisiler.map((k) => [k.id, k]));
     const bekleyen = new Set(
       (
         await this.prisma.duelInvitation.findMany({
@@ -948,22 +1070,141 @@ export class DuelService {
         })
       ).map((d) => d.toUserId),
     );
-    return {
-      onlineCount,
-      items: rows.map((u) => {
-        const oynanan = u.duelStats ? u.duelStats.wins + u.duelStats.losses + u.duelStats.draws : 0;
-        return {
-          userId: u.id,
-          name: publicName(u.displayName),
-          avatarUrl: u.avatarUrl,
-          online: !!u.lastActiveAt && u.lastActiveAt >= esik,
-          inMatch: u.duelParticipations.length > 0,
-          invited: bekleyen.has(u.id),
-          rating: u.duelStats?.rating ?? DUEL_RULES.rating.start,
-          winRate: oynanan > 0 ? Math.round((u.duelStats!.wins / oynanan) * 100) : null,
-        };
-      }),
+    const dost = new Set(rows.filter((f) => f.status === 'accepted').map(idOf));
+    const istek = new Map(
+      rows
+        .filter((f) => f.status === 'pending')
+        .map((f) => [
+          idOf(f),
+          f.requestedById === user.id ? ('sent' as const) : ('received' as const),
+        ]),
+    );
+    const satir = (id: string) => {
+      const k = by.get(id);
+      return k ? this.playerRow(k, { esik, bekleyen, dost, istek }) : null;
     };
+    const dolu = <T>(x: T | null): x is T => x !== null;
+    return {
+      friends: [...dost]
+        .map(satir)
+        .filter(dolu)
+        .sort((a, b) => Number(b.online) - Number(a.online) || a.name.localeCompare(b.name, 'tr')),
+      incoming: [...istek]
+        .filter(([, v]) => v === 'received')
+        .map(([id]) => satir(id))
+        .filter(dolu),
+      outgoing: [...istek]
+        .filter(([, v]) => v === 'sent')
+        .map(([id]) => satir(id))
+        .filter(dolu),
+    };
+  }
+
+  /**
+   * Arkadaşlık isteği. Karşı taraf zaten istemişse istek kabul sayılır. Engel varsa ya da kişi
+   * yoksa aynı cevap döner (engellendiğini öğrenemez).
+   */
+  async friendRequest(user: AuthenticatedUser, targetId: string) {
+    await this.assertEnabled(user);
+    if (targetId === user.id) throw new BadRequestException('Kendini ekleyemezsin.');
+    const hedef = await this.prisma.user.findFirst({
+      where: { id: targetId, deletedAt: null, status: 'active' },
+      select: { id: true },
+    });
+    if (!hedef || (await this.engine.blocked(this.prisma, user.id, targetId))) {
+      throw new ForbiddenException('Bu kişiye şu an istek gönderilemiyor.');
+    }
+    const key = this.pair(user.id, targetId);
+    const mevcut = await this.prisma.friendship.findUnique({ where: { userAId_userBId: key } });
+    if (mevcut?.status === 'accepted') return { state: 'friend' as const };
+    if (mevcut && mevcut.requestedById !== user.id) {
+      await this.prisma.friendship.update({
+        where: { userAId_userBId: key },
+        data: { status: 'accepted', acceptedAt: new Date() },
+      });
+      return { state: 'friend' as const };
+    }
+    if (mevcut) return { state: 'sent' as const };
+    const bekleyen = await this.prisma.friendship.count({
+      where: { requestedById: user.id, status: 'pending' },
+    });
+    if (bekleyen >= 50) throw new ConflictException('Bekleyen çok fazla isteğin var.');
+    await this.prisma.friendship.createMany({
+      data: [{ ...key, requestedById: user.id }],
+      skipDuplicates: true, // iki taraf aynı anda isterse tek satır
+    });
+    await this.engine.notifyUsers([targetId], 'friend_request', {});
+    return { state: 'sent' as const };
+  }
+
+  /** Gelen isteği kabul et ya da reddet. */
+  async friendRespond(user: AuthenticatedUser, otherId: string, accept: boolean) {
+    const key = this.pair(user.id, otherId);
+    if (accept) {
+      const r = await this.prisma.friendship.updateMany({
+        where: { ...key, status: 'pending', requestedById: otherId },
+        data: { status: 'accepted', acceptedAt: new Date() },
+      });
+      if (r.count === 0) throw new NotFoundException('İstek bulunamadı.');
+      return { state: 'friend' as const };
+    }
+    await this.prisma.friendship.deleteMany({
+      where: { ...key, status: 'pending', requestedById: otherId },
+    });
+    return { state: 'none' as const };
+  }
+
+  /** Arkadaşlıktan çıkar ya da gönderdiğim isteği geri al. */
+  async unfriend(user: AuthenticatedUser, otherId: string) {
+    await this.prisma.friendship.deleteMany({ where: this.pair(user.id, otherId) });
+    return { state: 'none' as const };
+  }
+
+  // ── Tercih ───────────────────────────────────────────────────────────────
+
+  async updateSettings(user: AuthenticatedUser, dto: { discoverable?: boolean }) {
+    if (dto.discoverable !== undefined) {
+      await this.prisma.user.update({
+        where: { id: user.id },
+        data: { duelDiscoverable: dto.discoverable },
+      });
+    }
+    const u = await this.prisma.user.findUniqueOrThrow({
+      where: { id: user.id },
+      select: { duelDiscoverable: true },
+    });
+    return { discoverable: u.duelDiscoverable };
+  }
+
+  /**
+   * Davet bildirimi — yalnız `NotificationsService.enqueue` (tercih, tavan, sessiz saat orada).
+   * Kişi düello ekranındaysa gönderilmez: daveti zaten canlı görür. Hata daveti bozmaz.
+   */
+  private async invitePush(
+    fromUserId: string,
+    toUserId: string,
+    invitationId: string,
+    room: boolean,
+  ) {
+    try {
+      const from = await this.prisma.user.findUnique({
+        where: { id: fromUserId },
+        select: { displayName: true },
+      });
+      const ad = publicName(from?.displayName);
+      await this.notifications.enqueue({
+        userId: toUserId,
+        category: 'duel',
+        channels: ['push'],
+        title: room ? 'Salon daveti' : 'Düello daveti',
+        body: room ? `${ad} seni salona çağırıyor.` : `${ad} seni düelloya çağırıyor.`,
+        deepLink: { target: 'duel' },
+        dedupeKey: `duel-invite:${invitationId}`,
+        ttlHours: 1,
+      });
+    } catch {
+      /* bildirim gidemese de davet uygulama içinde görünür */
+    }
   }
 
   async blocks(user: AuthenticatedUser) {
@@ -979,13 +1220,14 @@ export class DuelService {
     }));
   }
 
-  /** Engelle: bekleyen karşılıklı davetler de kapanır. */
+  /** Engelle: bekleyen karşılıklı davetler kapanır, arkadaşlık düşer. */
   async block(user: AuthenticatedUser, targetId: string) {
     if (targetId === user.id) throw new BadRequestException('Kendini engelleyemezsin.');
     await this.prisma.userBlock.createMany({
       data: [{ blockerId: user.id, blockedId: targetId }],
       skipDuplicates: true,
     });
+    await this.prisma.friendship.deleteMany({ where: this.pair(user.id, targetId) });
     await this.prisma.duelInvitation.updateMany({
       where: {
         status: 'pending',

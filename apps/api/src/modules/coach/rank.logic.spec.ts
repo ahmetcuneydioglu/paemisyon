@@ -3,6 +3,9 @@ import { computeRank, rankScore, RANKS } from './rank.logic';
 describe('rankScore', () => {
   it('çözülen + 15×aktif gün — süreklilik hacim kadar değerli', () => {
     expect(rankScore(100, 10)).toBe(250);
+    // düello/salon XP'si eklenir; negatif değer yok sayılır
+    expect(rankScore(100, 10, 60)).toBe(310);
+    expect(rankScore(100, 10, -5)).toBe(250);
     expect(rankScore(0, 0)).toBe(0);
     expect(rankScore(-5, -1)).toBe(0); // savunmacı
   });

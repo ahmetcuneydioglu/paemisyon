@@ -21,7 +21,8 @@ export type NotificationCategory =
   | "leaderboard"
   | "question_report"
   | "marketing"
-  | "system";
+  | "system"
+  | "duel";
 
 export interface InboxItem {
   id: string;
@@ -79,6 +80,7 @@ export const CATEGORY_HINT: Record<NotificationCategory, string> = {
   achievement: "Yalnız uygulama içinde",
   statistics: "Pazartesi 09.00 · e-posta ve kutu",
   leaderboard: "Akşam 20.30, günde bir",
+  duel: "Biri seni düelloya ya da salona çağırınca",
   question_report: "Bildirdiğin soru sonuçlanınca · kapatılamaz",
   marketing: "Yalnız e-posta; ayrı rıza",
   system: "Hesap, bakım, güvenlik · kapatılamaz",

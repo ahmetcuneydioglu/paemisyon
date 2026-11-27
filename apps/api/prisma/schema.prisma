@@ -189,6 +189,11 @@ model User {
   /// Son etkileşim anı (Doc 52 §4.9): uygulama açılışı (saatte bir) ve cevap
   /// yazımı günceller. Kitle tablosunun `lastActiveDays` kaynağı.
   lastActiveAt          DateTime?  @map("last_active_at")
+  /// Düello ekranını son açış (Doc 59). Çevrimiçi listesi ve aranabilirlik BUNA bakar:
+  /// düello ekranı olmayan eski sürüm kullanıcısı listede görünmez, davet almaz.
+  duelSeenAt            DateTime?  @map("duel_seen_at")
+  /// "Düelloda ada göre bulunabileyim" tercihi; kapalıyken yalnız arkadaşları görür.
+  duelDiscoverable      Boolean    @default(true) @map("duel_discoverable")
   createdAt             DateTime   @default(now()) @map("created_at")
   updatedAt             DateTime   @updatedAt @map("updated_at")
   deletedAt             DateTime?  @map("deleted_at")
@@ -248,6 +253,7 @@ model User {
   blocksGiven         UserBlock[]       @relation("Blocker")
   blocksReceived      UserBlock[]       @relation("Blocked")
 
+  @@index([preferredModuleId, duelSeenAt])
   @@map("users")
 }
 
@@ -1894,6 +1900,10 @@ enum BadgeKind {
   solved // totalSolved >= threshold
   exam // tamamlanan deneme sayısı >= threshold
   accuracy // doğruluk %'si >= threshold (min 100 soru sonrası)
+  duel_wins // 1'e 1 galibiyet sayısı >= threshold (Doc 59)
+  duel_streak // en uzun 1'e 1 galibiyet serisi >= threshold
+  room_wins // salon birinciliği >= threshold
+  duel_weekly // haftanın düello lideri; kuralla değil haftalık görevle verilir
 }
 
 model UserBadge {
@@ -2258,6 +2268,8 @@ enum NotificationCategory {
   question_report
   marketing
   system
+  /// Düello daveti (Doc 59): yalnız push; kutuya düşmez (eski sürüm kutusu bu türü tanımaz).
+  duel
 }
 
 enum NotificationPriority {

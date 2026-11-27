@@ -1,4 +1,4 @@
-import { BarChart3, Bell, BookOpen, Calendar, ClipboardList, Flag, Flame, Mail, Medal, ShieldCheck, Sun, Trophy } from "lucide-react-native";
+import { BarChart3, Bell, BookOpen, Calendar, ClipboardList, Flag, Flame, Mail, Medal, ShieldCheck, Sun, Trophy, Swords } from "lucide-react-native";
 import type { ComponentType } from "react";
 import { Pressable, StyleSheet, View } from "react-native";
 import { AppText, Badge } from "@/components/ui";
@@ -18,6 +18,7 @@ const ICON: Record<NotificationCategory, ComponentType<IconProps>> = {
   achievement: Medal,
   statistics: BarChart3,
   leaderboard: Trophy,
+  duel: Swords,
   question_report: Flag,
   marketing: Mail,
   system: ShieldCheck,

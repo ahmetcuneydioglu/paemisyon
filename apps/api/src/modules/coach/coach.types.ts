@@ -161,6 +161,8 @@ export interface CoachContext {
   weekly: { activeDays: number; goalDays: number };
   /** Toplam aktif gün (rütbe puanı — Doc 24 §5: süreklilik primi). */
   activeDaysTotal: number;
+  /** XP defteri toplamı (düello/salon ödülleri, Doc 59); rütbe puanına eklenir. */
+  bonusXp?: number;
   maxDailyQuestions: number;
   /** Haftalık snapshot karşılaştırması (±%10 eşiği kuralda). */
   courseTrend: { courseName: string; deltaPct: number } | null;

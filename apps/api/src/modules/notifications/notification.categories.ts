@@ -103,6 +103,19 @@ export const CATEGORY_POLICY: Record<NotificationCategory, CategoryPolicy> = {
     dailyOnly: false,
     decayExempt: true,
   },
+  /**
+   * Düello daveti (Doc 59). Yalnız push: davet anlıktır, kutuda bayatlar; ayrıca mağazadaki
+   * eski sürümün kutusu bu türü tanımaz. `dailyOnly`: sessiz saatte ertelenmez, düşer —
+   * sabah gelen "dün gece çağrıldın" bildirimi işe yaramaz.
+   */
+  duel: {
+    label: 'Düello davetleri',
+    channels: ['push'],
+    optional: true,
+    emailTopic: null,
+    dailyOnly: true,
+    decayExempt: false,
+  },
   marketing: {
     label: 'Kampanyalar',
     channels: ['email'],

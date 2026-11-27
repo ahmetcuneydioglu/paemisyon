@@ -17,6 +17,8 @@ export function routeToHref(route: string | null | undefined): AppHref {
   if (r === "daily-quiz") return { pathname: "/seans", params: { mode: "daily", count: "10", source: "notif" } };
   if (r === "denemeler" || r === "/denemeler") return { pathname: "/(tabs)/denemeler" };
   if (r === "leaderboard" || r === "/leaderboard") return { pathname: "/(tabs)/ben/liderlik" };
+  // Düello daveti (Doc 59): merkez; bekleyen davet orada kabul edilir.
+  if (r === "duello" || r === "/duello") return { pathname: "/(tabs)/kutuphane/duello" };
   // "Sonucun açıklandı" ve "Netin güncellendi" push'ları (exams.service, admin-exam-adjustments).
   // 26 Eki 2026'ya kadar tanınmıyordu, Bugün'e düşüyordu.
   const sonuc = r.match(/^deneme-sonuc\/([0-9a-fA-F-]{36})$/);

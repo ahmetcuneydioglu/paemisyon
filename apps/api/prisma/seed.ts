@@ -121,6 +121,15 @@ async function main() {
     { key: 'first_exam', name: 'İlk Deneme', description: 'İlk canlı denemeni tamamla', kind: BadgeKind.exam, threshold: 1, sortOrder: 8 },
     { key: 'exam_5', name: 'Deneme Ustası', description: '5 canlı deneme tamamla', kind: BadgeKind.exam, threshold: 5, sortOrder: 9 },
     { key: 'accuracy_70', name: 'Keskin Nişancı', description: '100+ soruda %70 doğruluğa ulaş', kind: BadgeKind.accuracy, threshold: 70, sortOrder: 10 },
+    // Düello (Doc 59) — migration 20261127010100 ile aynı katalog.
+    { key: 'duel_win_1', name: 'İlk Galibiyet', description: 'İlk düellonu kazan', kind: BadgeKind.duel_wins, threshold: 1, sortOrder: 20 },
+    { key: 'duel_win_5', name: '5 Galibiyet', description: '5 düello kazan', kind: BadgeKind.duel_wins, threshold: 5, sortOrder: 21 },
+    { key: 'duel_win_10', name: '10 Galibiyet', description: '10 düello kazan', kind: BadgeKind.duel_wins, threshold: 10, sortOrder: 22 },
+    { key: 'duel_win_50', name: '50 Galibiyet', description: '50 düello kazan', kind: BadgeKind.duel_wins, threshold: 50, sortOrder: 23 },
+    { key: 'duel_win_100', name: '100 Galibiyet', description: '100 düello kazan', kind: BadgeKind.duel_wins, threshold: 100, sortOrder: 24 },
+    { key: 'duel_streak_5', name: '5 Maçlık Seri', description: 'Üst üste 5 düello kazan', kind: BadgeKind.duel_streak, threshold: 5, sortOrder: 25 },
+    { key: 'room_champion', name: 'Salon Şampiyonu', description: 'Bir salonu birinci bitir', kind: BadgeKind.room_wins, threshold: 1, sortOrder: 26 },
+    { key: 'duel_weekly', name: 'Haftanın Lideri', description: 'Haftalık düello sıralamasını birinci bitir', kind: BadgeKind.duel_weekly, threshold: 1, sortOrder: 27 },
   ];
   for (const b of badges) {
     await prisma.badge.upsert({

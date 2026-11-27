@@ -1,5 +1,6 @@
-import { Injectable, Logger } from '@nestjs/common';
+import { Injectable, Logger, Optional } from '@nestjs/common';
 import { PrismaService } from '../../infra/prisma/prisma.service';
+import { SETTING_KEYS, SettingsService } from '../../infra/settings/settings.service';
 
 export interface EarnedBadge {
   key: string;
@@ -11,6 +12,8 @@ export interface EarnedBadge {
  *  5 soruda %80 "Keskin Nişancı" yapmaz. */
 const ACCURACY_MIN_SOLVED = 100;
 
+const DUEL_BADGE_KINDS = new Set<string>(['duel_wins', 'duel_streak', 'room_wins', 'duel_weekly']);
+
 /**
  * Rozet verme (Doc 19 §3.2). Kural deterministik: kind + threshold.
  * completeSession sonunda çağrılır (stats/streak tazeyken); idempotenttir
@@ -20,7 +23,18 @@ const ACCURACY_MIN_SOLVED = 100;
 export class BadgeService {
   private readonly logger = new Logger(BadgeService.name);
 
-  constructor(private readonly prisma: PrismaService) {}
+  constructor(
+    private readonly prisma: PrismaService,
+    @Optional() private readonly settings?: SettingsService,
+  ) {}
+
+  /**
+   * Düello (Doc 59) herkese açılana kadar düello rozetleri vitrinde yalnız KAZANANA görünür:
+   * özelliği göremeyen adaya kazanamayacağı kilitli rozet gösterilmez.
+   */
+  private async duelBadgesVisible(): Promise<boolean> {
+    return this.settings ? this.settings.getBool(SETTING_KEYS.duelEnabled, false) : true;
+  }
 
   /**
    * Profil vitrini: kazanılan ve kilitli rozetleri katalog sırasıyla döndürür. Kilitli rozette
@@ -37,10 +51,14 @@ export class BadgeService {
       this.progressReader(userId),
     ]);
     const earnedAt = new Map(earnedRows.map((row) => [row.badgeKey, row.earnedAt]));
+    const duelAcik = await this.duelBadgesVisible();
+    const gorunen = catalog.filter(
+      (b) => duelAcik || earnedAt.has(b.key) || !DUEL_BADGE_KINDS.has(b.kind),
+    );
     return {
       earnedCount: earnedRows.length,
-      totalCount: catalog.length,
-      items: catalog.map((badge) => {
+      totalCount: gorunen.length,
+      items: gorunen.map((badge) => {
         const earned = earnedAt.has(badge.key);
         return {
           key: badge.key,
@@ -86,9 +104,13 @@ export class BadgeService {
 
   /** Kural ölçüleri (tek kaynak): rozet verme ve vitrin aynı ölçüyü kullanır. */
   private async progressReader(userId: string): Promise<(kind: string) => number> {
-    const [stats, streak, examCount] = await Promise.all([
+    const [stats, streak, duel, examCount] = await Promise.all([
       this.prisma.userStats.findUnique({ where: { userId } }),
       this.prisma.streak.findUnique({ where: { userId } }),
+      this.prisma.duelStats.findUnique({
+        where: { userId },
+        select: { wins: true, bestStreak: true, roomWins: true },
+      }),
       this.prisma.quizSession.count({
         where: { userId, mode: 'deneme', status: 'completed' },
       }),
@@ -108,6 +130,14 @@ export class BadgeService {
           return examCount;
         case 'accuracy':
           return totalSolved >= ACCURACY_MIN_SOLVED ? accuracyPct : 0;
+        // Düello (Doc 59): ölçü tamamlanmış maç kayıtlarından (duel_stats).
+        case 'duel_wins':
+          return duel?.wins ?? 0;
+        case 'duel_streak':
+          return duel?.bestStreak ?? 0;
+        case 'room_wins':
+          return duel?.roomWins ?? 0;
+        // 'duel_weekly' kuralla verilmez: haftalık görev (DuelSweeperService) yazar.
         default:
           return 0;
       }

@@ -69,6 +69,7 @@ function prismaMock(opts: {
       streak: {
         findUnique: jest.fn().mockResolvedValue({ longestStreak: opts.longestStreak ?? 0 }),
       },
+      duelStats: { findUnique: jest.fn().mockResolvedValue(null) },
       quizSession: { count: jest.fn().mockResolvedValue(opts.examCount ?? 0) },
     },
     createMany,
@@ -143,6 +144,7 @@ describe('BadgeService.listForUser', () => {
         findUnique: jest.fn().mockResolvedValue({ totalSolved: 140, totalCorrect: 70 }),
       },
       streak: { findUnique: jest.fn().mockResolvedValue({ longestStreak: 19 }) },
+      duelStats: { findUnique: jest.fn().mockResolvedValue(null) },
       quizSession: { count: jest.fn().mockResolvedValue(0) },
     };
 

@@ -49,6 +49,10 @@ export class DuelTargetDto {
   @IsUUID() userId!: string;
 }
 
+export class DuelSettingsDto {
+  @IsOptional() @IsBoolean() discoverable?: boolean;
+}
+
 export class DuelJoinDto {
   @IsString() @Length(4, 16) code!: string;
 }
@@ -238,6 +242,39 @@ export class DuelController {
   @Delete('blocks/:userId')
   unblock(@CurrentUser() user: AuthenticatedUser, @Param('userId', ParseUUIDPipe) userId: string) {
     return this.duel.unblock(user, userId);
+  }
+
+  // ── Arkadaşlar ve tercih
+  @Get('friends')
+  friends(@CurrentUser() user: AuthenticatedUser) {
+    return this.duel.friends(user);
+  }
+
+  @Post('friends')
+  @HttpCode(200)
+  @Throttle({ default: { ttl: 60_000, limit: 20 } })
+  friendRequest(@CurrentUser() user: AuthenticatedUser, @Body() dto: DuelTargetDto) {
+    return this.duel.friendRequest(user, dto.userId);
+  }
+
+  @Post('friends/:userId/respond')
+  @HttpCode(200)
+  friendRespond(
+    @CurrentUser() user: AuthenticatedUser,
+    @Param('userId', ParseUUIDPipe) userId: string,
+    @Body() dto: DuelRespondDto,
+  ) {
+    return this.duel.friendRespond(user, userId, dto.accept);
+  }
+
+  @Delete('friends/:userId')
+  unfriend(@CurrentUser() user: AuthenticatedUser, @Param('userId', ParseUUIDPipe) userId: string) {
+    return this.duel.unfriend(user, userId);
+  }
+
+  @Patch('settings')
+  updateSettings(@CurrentUser() user: AuthenticatedUser, @Body() dto: DuelSettingsDto) {
+    return this.duel.updateSettings(user, dto);
   }
 
   @Get('leaderboard')

@@ -174,7 +174,9 @@ export class CoachService {
       plan: ctx.plan ? { nextItem: ctx.plan.nextItem } : null,
     });
     // Doc 49/16 — Bugün v3: tek adım + rota + senin için (karar sunucuda).
-    const rank = computeRank(rankScore(ctx.stats.totalSolved, ctx.activeDaysTotal));
+    const rank = computeRank(
+      rankScore(ctx.stats.totalSolved, ctx.activeDaysTotal, ctx.bonusXp ?? 0),
+    );
     const homeV3Cekirdek = computeHomeV3({
       now: ctx.now,
       goal: ctx.user.dailyGoal,
@@ -787,6 +789,11 @@ export class CoachService {
       else prev7 += u.totalAnswered;
     }
 
+    // Düello/salon XP'si (Doc 59): tek indeksli toplam; rütbe puanına eklenir.
+    const bonusXp =
+      (await this.prisma.xpEvent.aggregate({ where: { userId: user.id }, _sum: { amount: true } }))
+        ._sum.amount ?? 0;
+
     return {
       now,
       // Türkiye saati sabit UTC+3 (2016'dan beri DST yok).
@@ -869,6 +876,7 @@ export class CoachService {
       nextBadge,
       weekly: { activeDays: weeklyUsage.length, goalDays: WEEKLY_GOAL_DAYS },
       activeDaysTotal,
+      bonusXp,
       maxDailyQuestions: maxDaily._max.totalAnswered ?? 0,
       courseTrend,
       weeklyPhoto,

@@ -102,6 +102,8 @@ export interface DuelStats {
 export interface DuelHub {
   daily: { limit: number; used: number; remaining: number | null; isPremium: boolean };
   activeMatchId: string | null;
+  settings?: { discoverable: boolean };
+  friendRequestCount?: number;
   invitations: { incoming: DuelInvitation[]; outgoing: DuelInvitation[] };
   stats: DuelStats;
   rules: {
@@ -124,6 +126,8 @@ export interface DuelPlayerRow {
   online: boolean;
   inMatch: boolean;
   invited: boolean;
+  /** Arkadaşlık durumu: arkadaş · ben istedim · o istedi · yok. Eski sunucuda alan yok. */
+  friend?: "friend" | "sent" | "received" | "none";
   rating: number;
   winRate: number | null;
 }
@@ -188,4 +192,10 @@ export interface DuelRoomInput {
   questionCount?: number;
   secondsPerQuestion?: number;
   maxPlayers?: number;
+}
+
+export interface DuelFriends {
+  friends: DuelPlayerRow[];
+  incoming: DuelPlayerRow[];
+  outgoing: DuelPlayerRow[];
 }
