@@ -1,9 +1,10 @@
 import { useRouter } from "expo-router";
 import { useState } from "react";
-import { BookOpen, RotateCcw, Shuffle } from "lucide-react-native";
+import { BookOpen, RotateCcw, Shuffle, Swords } from "lucide-react-native";
 import { PixelRatio, useWindowDimensions, View } from "react-native";
 import { CourseCard, ResumeStrip } from "@/components/domain";
 import { AppText, Notice, Screen, ShortcutButton, Skeleton } from "@/components/ui";
+import { useDuelEnabled } from "@/features/duel/queries";
 import { useStudyHub, type StudyCourse } from "@/features/rooms/queries";
 import { useTheme } from "@/theme/ThemeProvider";
 
@@ -23,6 +24,8 @@ export default function CalisScreen() {
   const { space } = useTheme();
   const { width } = useWindowDimensions();
   const q = useStudyHub();
+  // Düello girişi yalnız özellik bu kullanıcıya açıksa çizilir (bayrak + rol kararı sunucuda).
+  const duelAcik = useDuelEnabled();
   const d = q.data;
 
   const icerikEni = Math.min(width - space.screenGutter * 2, ICERIK_EN);
@@ -98,6 +101,7 @@ export default function CalisScreen() {
                   style={tekSutun ? undefined : { flex: 1 }}
                 />
               </View>
+              {duelAcik ? <ShortcutButton icon={Swords} label="Düello" onPress={() => router.push("/(tabs)/kutuphane/duello")} /> : null}
             </View>
 
             {!d.module ? (
